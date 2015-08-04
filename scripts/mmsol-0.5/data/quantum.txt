@@ -1,0 +1,58 @@
+title Quantum Logic
+
+info Reference:  M. Pavicic, Int. J. of Theoretical Physics 32, 1481-1505 (1993)
+usestype wff
+
+ # A1.  |-  A <-> - - A
+A1 wb $1 wn wn $1
+Axiom A1 for unified quantum logic AUQL
+
+# A2.  |-  A \/ B <-> B \/ A
+A2 wb wo $1 $2 wo $2 $1
+Axiom A2 for unified quantum logic AUQL
+
+# A3.  |-  ( A \/ B) \/ C  <-> A \/ ( B \/ C )
+A3 wb wo wo $1 $2 $3 wo $1 wo $2 $3
+Axiom A3 for unified quantum logic AUQL
+
+# A4.  |-  A \/ ( B \/ - B ) <-> B \/ - B
+A4 wb wo $1 wo $2 wn $2 wo $2 wn $2
+Axiom A4 for unified quantum logic AUQL
+
+# A5.  |-  A \/ - ( - A \/ - B ) <-> A
+A5 wb wo $1 wn wo wn $1 wn $2 $1
+Axiom A5 for unified quantum logic AUQL
+
+# A6.  |-  ( A <-> B ) <-> - ( - - A \/ - - B ) \/ - ( - A \/ - B )
+A6 wb wb $1 $2 wo wn wo wn wn $1 wn wn $2 wn wo wn $1 wn $2
+Axiom A6 for unified quantum logic AUQL
+
+# R1.  |-  A <-> B    <=>    |-  B <-> A
+R1 wb $2 $1
+Rule R1 for unified quantum logic AUQL
+hyp R1 wb $1 $2
+
+# R2.  |-  A <-> B    &    |-  B <-> C    =>    |-  A <-> C
+R2 wb $1 $3
+Rule R2 for unified quantum logic AUQL
+hyp R2 wb $2 $3
+hyp R2 wb $1 $2
+
+# R3.  |-  ( C \/ - C ) <-> ( A <-> B )     =>     |-   A <-> B
+R3 wb $1 $2
+Rule R3 for unified quantum logic AUQL
+hyp R3 wb wo $3 wn $3 wb $1 $2
+
+# R4.  |-  A <-> B   =>    |-  - A <-> - B
+R4 wb wn $1 wn $2
+Rule R4 for unified quantum logic AUQL
+hyp R4 wb $1 $2
+
+# R5.  |-  A <-> B   =>    |-  A \/ C <-> B \/ C
+R5 wb wo $1 $3 wo $2 $3
+Rule R5 for unified quantum logic AUQL
+hyp R5 wb $1 $2
+
+# D1.  |-  ( A /\ B ) <-> - ( - A \/ - B )
+D1 wb wa $1 $2 wn wo wn $1 wn $2
+Definition of conjunction for unified quantum logic AUQL

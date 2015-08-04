@@ -1,0 +1,63 @@
+<project name="mmsol" default="all" basedir=".">
+<description>Buildfile for Metamath Solitaire</description>
+
+<property name="src" location="mm" />
+<property name="build" location="build" />
+<property name="getopt" location="/usr/share/java/gnu-getopt.jar" />
+<property name="data" location="data" />
+
+<target name="init">
+<mkdir dir="${build}" />
+</target>
+
+<target name="support" depends="init">
+<javac srcdir="${src}" destdir="${build}">
+<exclude name="mm.java" />
+<exclude name="mmtxt.java" />
+<exclude name="DrawSymbols.java" />
+</javac>
+</target>
+
+<target name="text" depends="support">
+<javac srcdir="${src}" destdir="${build}">
+<classpath>
+<pathelement location="${getopt}"/>
+<pathelement path="${classpath}/"/>
+</classpath>
+<include name="mmtxt.java" />
+</javac>
+
+<jar destfile="text.jar">
+<manifest>
+<attribute name="Main-Class" value="mm/mmtxt" />
+</manifest>
+<fileset dir="${build}" />
+<fileset dir="${data}" />
+</jar>
+
+</target>
+
+<target name="gui" depends="support">
+<javac srcdir="${src}" destdir="${build}">
+<include name="mm.java" />
+</javac>
+
+<jar destfile="gui.jar">
+<manifest>
+<attribute name="Main-Class" value="mm/mm" />
+</manifest>
+<fileset dir="${build}" />
+<fileset dir="${data}" />
+</jar>
+
+</target>
+
+<target name="all" depends="gui,text" />
+
+<target name="clean">
+<delete dir="${build}" />
+<delete file="gui.jar" />
+<delete file="text.jar" />
+</target>
+
+</project>

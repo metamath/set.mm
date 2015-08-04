@@ -1,0 +1,95 @@
+# Connective definitions
+
+# Implication
+wi wff 2 ( $1 -> $2 )
+wff wff
+
+# Negation
+wn wff 1 -. $1
+wff 
+
+# Universal Quantification
+wal wff 2 A. $1 $2
+var wff
+
+# Equality (defined over classes for convenience)
+weq wff 2 $1 = $2
+class class
+
+# Equality (defined over variables for Euclidean geometry)
+weqV wff 2 $1 = $2
+var var
+
+# Set membership
+wel wff 2 $1 e. $2
+class class
+
+# Invisible syntax to transform variables into classes
+cv class 1 $1
+var
+
+# Biconditional
+wb wff 2 ( $1 <-> $2 )
+wff wff
+
+# Disjunction (Logical OR)
+wo wff 2 ( $1 \/ $2 )
+wff wff
+
+# Conjunction (Logical AND)
+wa wff 2 ( $1 /\ $2 )
+wff wff
+
+# Existential quantification
+wex wff 2 E. $1 $2
+var wff
+
+# Proper substitution
+wsb wff 3 [ $1 / $2 ] $3
+var var wff
+
+# Class abstraction
+cab class 2 { $1 | $2 }
+var wff
+
+# Subset predicate
+wss wff 2 $1 (_ $2
+class class
+
+# The null class
+cnul class 0 (/)
+
+# Union of two classes
+cun class 2 ( $1 u. $2 )
+class class
+
+# Intersection of two classes
+cin class 2 ( $1 i^i $2 )
+class class
+
+# Union of a class
+cuni class 1 U. $1
+class
+
+# Intersection of a class
+cint class 1 |^| $1
+class
+
+# Modal nessecity
+wnec wff 1 [] $1
+wff
+
+# Modal possibility
+wposs wff 1 <> $1
+wff
+
+# Logical false
+wfalse wff 0 _|_
+
+# Betweenness predicate for geometry
+wbt wff 3 B $1 $2 $3
+var var var
+
+# Equidistance predicate for geometry
+wd wff 4 D $1 $2 $3 $4
+var var var var

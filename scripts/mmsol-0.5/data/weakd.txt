@@ -1,0 +1,30 @@
+title Weak D-complete Logic
+# Source:  N. Megill & M. Bunder, "Weaker D-Complete Logics",
+#     J. of the IGPL, Vol. 4 No. 2, pp. 215-225 (1996)
+
+info Reference:  http://www.mpi-sb.mpg.de/igpl/Bulletin/V4-2/#Megill
+usestype wff
+
+# (P -> P)
+I wi $1 $1
+Principal type-scheme for combinator I
+
+# ((a->a)->((c->(b->b))->(c->((a->b)->(a->b)))))
+A1w wi wi $1 $1 wi wi $3 wi $2 $2 wi $3 wi wi $1 $2 wi $1 $2
+Axiom A1 for weak D-complete logic
+
+# ((b->b)->((c->(a->a))->(c->((a->b)->(a->b)))))
+A2w wi wi $2 $2 wi wi $3 wi $1 $1 wi $3 wi wi $1 $2 wi $1 $2
+Axiom A2 for weak D-complete logic
+
+# ((c->(a->a))->((c->(b->b))->(c->((a->b)->(a->b)))))
+A3w wi wi $3 wi $1 $1 wi wi $3 wi $2 $2 wi $3 wi wi $1 $2 wi $1 $2
+Axiom A3 for weak D-complete logic
+        
+# maj   $e |- ( P -> Q ) $.
+# min   $e |- P $.
+# ax-mp $a |- Q $.
+D $2
+Condensed detachment (modus ponens)
+hyp D $1
+hyp D wi $1 $2

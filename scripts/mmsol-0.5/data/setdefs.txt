@@ -1,0 +1,204 @@
+title ZFC Set Theory with Definitions
+
+usestype wff var class
+
+# ax-1 $a |- ( P -> ( Q -> P ) ) $.
+ax-1 wi $1 wi $2 $1
+Axiom of simplification (propositional calculus)
+
+# ax-2 $a |- ( ( P -> ( Q -> R ) ) -> ( ( P -> Q ) -> ( P -> R ) ) ) $.
+ax-2 wi wi $1 wi $2 $3 wi wi $1 $2 wi $1 $3
+Axiom of distribution (propositional calculus)
+
+# ax-3 $a |- ( ( -. P -> -. Q ) -> ( Q -> P ) ) $.
+ax-3 wi wi wn $1 wn $2 wi $2 $1
+Axiom of contraposition (propositional calculus)
+
+# maj   $e |- ( P -> Q ) $.
+# min   $e |- P $.
+# ax-mp $a |- Q $.
+ax-mp $2
+Inference rule of modus ponens (propositional calculus)
+hyp ax-mp $1
+hyp ax-mp wi $1 $2
+
+# ax-4 $a |- ( A. x P -> P ) $.
+ax-4 wi wal $1 $2 $2
+Axiom of specification (predicate calculus)
+
+# ax-5 $a |- ( A. x ( A. x P -> Q ) -> ( A. x P -> A. x Q ) ) $.
+ax-5 wi wal $1 wi wal $1 $2 $3 wi wal $1 $2 wal $1 $3
+Axiom of quantified implication (predicate calculus)
+
+# ax-6 $a |- ( -. A. x -. A. x P -> P ) $.
+ax-6 wi wn $1 wal $2 wn wal $2 $1
+Axiom of quantified negation (predicate calculus)
+
+# ax-7 $a |- ( A. x A. y P -> A. y A. x P ) $.
+ax-7 wi wal $1 wal $2 $3 wal $2 wal $1 $3
+Axiom of quantifier commutation (predicate calculus)
+
+# ax-g.1 $e |- P $.
+# ax-gen   $a |- A. x P $.
+ax-gen wal $2 $1
+Inference rule of generalization (predicate calculus)
+hyp ax-gen $1
+
+# ax-8  $a |- ( x = y -> ( x = z -> y = z ) ) $.
+ax-8 wi weq cv $1 cv $2 wi weq cv $1 cv $3 weq cv $2 cv $3
+Axiom of equality (predicate calculus)
+
+# ax-9 $a |- ( A. x ( x = y -> A. x P ) -> P ) $.
+ax-9 wi wal $1 wi weq cv $1 cv $2 wal $1 $3 $3
+Axiom of existence (predicate calculus)
+
+# ax-10 $a |- ( A. x x = y -> ( A. x P -> A. y P ) ) $.
+ax-10 wi wal $1 weq cv $1 cv $2 wi wal $1 $3 wal $2 $3
+Axiom of quantifier substitution (predicate calculus)
+
+# ax-11 $a |- ( -. A. x x = y -> ( x = y -> ( P -> A. x ( x = y -> P ) ) ) ) $.
+ax-11 wi wn wal $1 weq cv $1 cv $2 wi weq cv $1 cv $2 wi $3 wal $1 wi weq cv $1 cv $2 $3
+Axiom of variable substitution (predicate calculus)
+
+# ax-12 $a |- ( -. A. z z = x -> ( -. A. z z = y -> ( x = y -> A. z x = y ) ) ) $.
+ax-12 wi wn wal $1 weq cv $1 cv $2 wi wn wal $1 weq cv $1 cv $3 wi weq cv $2 cv $3 wal $1 weq cv $2 cv $3
+Axiom of quantifier introduction (predicate calculus)
+
+# ax-13 $a |- ( x = y -> ( x e. z -> y e. z ) ) $.
+ax-13 wi weq cv $1 cv $2 wi wel cv $1 cv $3 wel cv $2 cv $3
+Axiom of equality (predicate calculus)
+
+# ax-14 $a |- ( x = y -> ( z e. x -> z e. y ) ) $.
+ax-14 wi weq cv $1 cv $2 wi wel cv $3 cv $1 wel cv $3 cv $2
+Axiom of equality (predicate calculus)
+
+# ax-15 and ax-16 are called ax-16 and ax-17 in set.mm and Metamath book
+
+# ax-16 $a |- ( A. x x = y -> ( P -> A. x P ) ) $.
+ax-15 wi wal $1 weq cv $1 cv $2 wi $3 wal $1 $3
+Axiom of distinct variables (predicate calculus)
+dv ax-15 $1 $2
+ 
+# ax-17 $a |- ( P -> A. x P ) $.
+ax-16 wi $1 wal $2 $1
+Axiom of quantifier introduction (predicate calculus)
+dv ax-15 $1 $2
+
+# df-bi1 $a |- ( ( P <-> Q ) -> ( P -> Q ) ) $.
+df-bi1 wi wb $1 $2 wi $1 $2
+Definition of biconditional (part 1 of 3)
+
+# df-bi2 $a |- ( ( P <-> Q ) -> ( Q -> P ) ) $.
+df-bi2 wi wb $1 $2 wi $2 $1
+Definition of biconditional (part 2 of 3)
+
+# df-bi3 $a |- ( ( P -> Q ) -> ( ( Q -> P ) -> ( P <-> Q ) ) ) $.
+df-bi3 wi wi $1 $2 wi wi $2 $1 wb $1 $2
+Definition of biconditional (part 3 of 3)
+
+# df-or $a |- ( ( P \/ Q ) <-> ( -. P -> Q ) ) $.
+df-or wb wo $1 $2 wi wn $1 $2
+Definition of disjunction (logical OR)
+
+# df-an $a |- ( ( P /\ Q ) <-> -. ( P -> -. Q ) ) $.
+df-an wb wa $1 $2 wn wi $1 wn $2
+Definition of conjunction (logical AND)
+
+# df-ex $a |- ( E. x P <-> -. A. x -. P ) $.
+df-ex wb wex $1 $2 wn wal $1 wn $2
+Definition of existential quantifier
+
+# df-sub $a |- [ x / y ] P <-> ( ( y = x -> P ) /\ E. y ( y = x /\ P ) ) ) $.
+df-sub wb wsb $1 $2 $3 wa wi weq cv $2 cv $1 $3 wex $2 wa weq cv $2 cv $1 $3
+Definition of proper substitution of x for y in P(y) to result in P(x)
+
+# ax-ext $a |- ( A. x ( x e. y <-> x e. z ) -> y = z ) $.
+ax-ext wi wal $1 wb wel cv $1 cv $2 wel cv $1 cv $3 weq cv $2 cv $3
+Axiom of extensionality (set theory)
+dv ax-ext $1 $2
+dv ax-ext $1 $3
+
+# ax-rep $a |- E. x ( E. y A. z ( P -> z = y ) ->
+#                        A. z ( z e. x <-> E. x ( x e. y /\ P ) ) ) $.
+ax-rep wex $1 wi wex $2 wal $3 wi $4 weq cv $3 cv $2 wal $3 wb wel cv $3 cv $1 wex $1 wa wel cv $1 cv $2 $4
+Axiom of replacement (set theory)
+dv ax-rep $1 $2 $3
+dv ax-rep $2 $4
+
+# ax-un  $a |- E. x A. y ( E. x ( y e. x /\ x e. z ) -> y e. x ) $.
+ax-un wex $1 wal $2 wi wex $1 wa wel cv $2 cv $1 wel cv $1 cv $3 wel cv $2 cv $1
+Axiom of union (set theory)
+dv ax-un $1 $2 $3
+
+# ax-pow $a |- E. x A. y ( A. x ( x e. y -> x e. z ) -> y e. x ) $.
+ax-pow wex $1 wal $2 wi wal $1 wi wel cv $1 cv $2 wel cv $1 cv $3 wel cv $2 cv $1
+Axiom of power set (set theory)
+dv ax-pow $1 $2 $3
+
+# ax-reg $a |- ( x e. y ->
+#                 E. x ( x e. y /\ A. z ( z e. x -> -. z e. y ) ) ) $.
+ax-reg wi wel cv $1 cv $2 wex $1 wa wel cv $1 cv $2 wal $3 wi wel cv $3 cv $1 wn wel cv $3 cv $2
+Axiom of regularity (set theory)
+dv ax-reg $1 $2 $3
+
+# ax-inf $a |- E. x ( y e. x /\
+#              A. y ( y e. x -> E. z ( y e. z /\ z e. x ) ) ) $.
+ax-inf wex $1 wa wel cv $2 cv $1 wal $2 wi wel cv $2 cv $1 wex $3 wa wel cv $2 cv $3 wel cv $3 cv $1
+Axiom of infinity (set theory)
+dv ax-inf $1 $2 $3
+
+# ax-ac $a  |- E. x A. y A. z ( ( y e. z /\ z e. w ) -> E. w A. y ( E. w
+#              ( ( y e. z /\ z e. w ) /\ ( y e. w /\ w e. x ) ) <-> y = w ) ) $.
+ax-ac wex $1 wal $2 wal $3 wi wa wel cv $2 cv $3 wel cv $3 cv $4 wex $4 wal $2 wb wex $4 wa wa wel cv $2 cv $3 wel cv $3 cv $4 wa wel cv $2 cv $4 wel cv $4 cv $1 weq cv $2 cv $4
+Axiom of choice (set theory)
+dv ax-ac $1 $2 $3 $4
+
+# df-clab $a |- ( y e. { x | P } <-> [ y / x ] P ) $.
+df-ab wb wel cv $2 cab $1 $3 wsb $2 $1 $3
+Definition of class abstraction (set theory)
+
+# df-cleq $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $.
+df-ceq wb weq $1 $2 wal $3 wb wel cv $3 $1 wel cv $3 $2
+Definition of class equality (set theory)
+dv df-ceq $1 $3
+dv df-ceq $2 $3
+
+# df-cel $a |- ( A e. B <-> E. x ( x = A /\ x e. B ) ) $.
+df-cel wb wel $1 $2 wex $3 wa weq cv $3 $1 wel cv $3 $2
+Definition of class membership (set theory)
+dv df-cel $1 $3
+dv df-cel $2 $3
+
+# df-ss $a |- ( A (_ B <-> A. x ( x e. A -> x e. B ) ) $.
+df-ss wb wss $1 $2 wal $3 wi wel cv $3 $1 wel cv $3 $2
+Definition of subclass (set theory)
+dv df-ss $1 $3
+dv df-ss $2 $3
+
+# df-un $p |- ( A u. B ) = { x | ( x e. A \/ x e. B ) } $.
+df-un weq cun $1 $2 cab $3 wo wel cv $3 $1 wel cv $3 $2
+Definition of union of two classes (set theory)
+dv df-un $1 $3
+dv df-un $2 $3
+
+# df-in $p |- ( A i^i B ) = { x | ( x e. A /\ x e. B ) } $.
+df-in weq cin $1 $2 cab $3 wa wel cv $3 $1 wel cv $3 $2
+Definition of intersection of two classes (set theory)
+dv df-in $1 $3
+dv df-in $2 $3
+
+# df-nul $p |- (/) = { x | -. x = x } $.
+df-nul weq cnul cab $1 wn weq cv $1 cv $1
+Definition of empty set (set theory)
+
+# df-uni $a |- U. A = { x | E. y ( x e. y /\ y e. A ) } $.
+df-uni weq cuni $1 cab $2 wex $3 wa wel cv $2 cv $3 wel cv $3 $1
+Definition of union of a class (set theory)
+dv df-uni $1 $2
+dv df-uni $1 $3
+
+# df-int $a |- |^| A = { x | A. y ( y e. A -> x e. y ) } $.
+df-int weq cint $1 cab $2 wal $3 wi wel cv $3 $1 wel cv $2 cv $3
+Definition of intersection of a class (set theory)
+dv df-int $1 $2
+dv df-int $1 $3
