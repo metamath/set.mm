@@ -47,22 +47,22 @@ class toks:
         return self.tokbuf.pop()
 
     def readf(self):
-        tok = self.read()
+        tok = self.readc()
         while tok == '$[':
-            filename = self.read()
-            endbracket = self.read()
+            filename = self.readc()
+            endbracket = self.readc()
             if endbracket != '$]':
                 raise MMError('Incusion command not terminated')
             filename = os.path.realpath(filename)
             if filename not in self.imported_files:
                 self.lines_buf.append(open(filename, 'r'))
                 self.imported_files.add(filename)
-            tok = self.read()
+            tok = self.readc()
         return tok
 
     def readc(self):
         while 1:
-            tok = self.readf()
+            tok = self.read()
             if tok == None: return None
             if tok == '$(':
                 while tok != '$)':
