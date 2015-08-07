@@ -158,12 +158,9 @@ class MM:
     def __init__(self):
         self.fs = FrameStack()
         self.labels = {}
-        self.used_by = {}
-        self.uses = {}
-        self.level_to_label = {}
-        self.label_to_level = {}
+        self.proofs = {}
 
-    def read(self, toks):
+    def read(self, toks, stopat=None):
         self.fs.push()
         label = None
         tok = toks.readc()
@@ -179,17 +176,20 @@ class MM:
                 vprint(15, label, '$f', stat[0], stat[1], '$.')
                 self.fs.add_f(stat[1], stat[0], label)
                 self.labels[label] = ('$f', [stat[0], stat[1]])
+                if label == stopat: return
                 label = None
             elif tok == '$a':
                 if not label: raise MMError('$a must have label')
                 self.labels[label] = ('$a',
                                       self.fs.make_assertion(toks.readstat()))
+                if label == stopat: return
                 label = None
             elif tok == '$e':
                 if not label: raise MMError('$e must have label')
                 stat = toks.readstat()
                 self.fs.add_e(stat, label)
                 self.labels[label] = ('$e', stat)
+                if label == stopat: return
                 label = None
             elif tok == '$p':
                 if not label: raise MMError('$p must have label')
@@ -201,12 +201,13 @@ class MM:
                     stat = stat[:i]
                 except ValueError:
                      raise MMError('$p must contain proof after $=')
-                vprint(1, 'verifying', label)
+                vprint(2, 'verifying', label)
                 self.verify(label, stat, proof)
                 self.labels[label] = ('$p', self.fs.make_assertion(stat))
+                if label == stopat: return
                 label = None
             elif tok == '$d': self.fs.add_d(toks.readstat())
-            elif tok == '${': self.read(toks)
+            elif tok == '${': self.read(toks, stopat=stopat)
             elif tok[0] != '$': label = tok
             else: print('tok:', tok)
             tok = toks.readc()
@@ -292,7 +293,7 @@ class MM:
         stack = []
         stat_type = stat[0]
         if proof[0] == '(': proof = self.decompress_proof(stat, proof)
-
+        
         for label in proof:
             steptyp, stepdat = self.labels[label]
             vprint(10, label, ':', self.labels[label])
@@ -333,12 +334,6 @@ class MM:
                     sp += 1
                 del stack[len(stack) - npop:]
                 stack.append(self.apply_subst(result, subst))
-
-                if stat_type == result[0]:
-                    try: self.used_by[label].add(stat_label)
-                    except KeyError: self.used_by[label] = {stat_label}
-                    try: self.uses[stat_label].add(label)
-                    except KeyError: self.uses[stat_label] = {label}
             elif steptyp in ('$e', '$f'): stack.append(stepdat)
 
             vprint(12, 'st:', stack)
@@ -347,47 +342,27 @@ class MM:
 
     def dump(self): print(self.labels)
 
-    def calculate_level(self, label):
+    def print_pf(self, label, file=sys.stdout, toplev=True):
         try:
-            return self.label_to_level[label]
+            pf = self.proofs[label]
+            for step, typ in pf:
+                if typ == '$p':
+                    self.print_pf(step, file=file, toplev=False)
+                elif toplev or typ == '$a':
+                    print(step, file=file, end=' ')
+            if toplev: print(file=file)
         except KeyError:
-            uses = self.uses
-            level_to_label = self.level_to_label
-            if label not in uses.keys():
-                level = 0
-            else:
-                level = max(map(self.calculate_level, uses[label])) + 1
-            try:
-                level_to_label[level].add(label)
-            except KeyError:
-                level_to_label[level] = {label}
-            self.label_to_level[label] = level
-            return level
-
-    def build_levels(self):
-        for label in itertools.chain(self.uses.keys(), self.used_by.keys()):
-           self.calculate_level(label)
+            print('Not a theorem in this database', file=file)
+        
 
 if __name__ == '__main__':
+    if len(sys.argv) != 3:
+        print('usage:', sys.argv[0], '[mm database] [theorem]', file=sys.stderr)
+        sys.exit(-1)
+
+    db, thm = sys.argv[1], sys.argv[2]
+    print(db, thm)
     mm = MM()
-    mm.read(toks(sys.stdin))
-    mm.build_levels()
+    mm.read(toks(open(db,'r')), stopat=thm)
+    mm.print_pf(thm)
     #mm.dump()
-
-    print('digraph mm {')
-    for level, labels in mm.level_to_label.items():
-        print('subgraph level_%d {' % level)
-        print('rank=same')
-        for label in labels:
-            print('"%s"' % label)
-        print('}')
-
-    for labels in mm.level_to_label.values():
-        for label in labels:
-            try:
-                print('"%s" -> {' % (label,),
-                      ' '.join(['"%s"' % d for d in mm.used_by[label]]),
-                      '}')
-            except KeyError:
-                pass
-    print('}')
