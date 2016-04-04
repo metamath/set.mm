@@ -11,4 +11,4 @@ install:
 
 script:
   - ./metamath 'read set.mm' 'verify proof *' 'verify markup *' exit | tee mm.log
-  - "[ `grep '^\\?' < mm.log > /dev/null; echo $?` -eq 1 ]"
+  - "[ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]"
