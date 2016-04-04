@@ -1,6 +1,6 @@
 language: bash
 install:
-  - wget -q -r -np -A c,h http://us.metamath.org/metamath/
+  - wget -q -r -np -nd -A .c,.h http://us.metamath.org/metamath/
   - wget -q http://us.metamath.org/downloads/symbols.tar.bz2
   - wget -q http://us.metamath.org/mpegif/mmset.html
   - wget -q http://us.metamath.org/mpegif/mmhil.html
