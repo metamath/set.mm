@@ -1,0 +1,14 @@
+language: bash
+install:
+  - curl -sS http://us.metamath.org/downloads/metamath.tar.bz2 > metamath.tar.bz2
+  - curl -sS http://us.metamath.org/downloads/symbols.tar.bz2 > symbols.tar.bz2
+  - curl -sS http://us.metamath.org/mpegif/mmset.html > mmset.html
+  - curl -sS http://us.metamath.org/mpegif/mmhil.html > mmhil.html
+  - curl -sS http://us.metamath.org/mpegif/mmbiblio.html > mmbiblio.html
+  - tar --strip-components=1 -jxf metamath.tar.bz2
+  - tar --strip-components=1 -jxf symbols.tar.bz2
+  - gcc *.c -o metamath                                                                      
+
+script:
+  - ./metamath 'read set.mm' 'verify proof *' 'verify markup *' exit | tee mm.log
+  - "[ `grep '^\\?' < mm.log > /dev/null; echo $?` -eq 1 ]"
