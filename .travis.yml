@@ -1,12 +1,14 @@
 language: bash
 install:
-  - wget -q -r -np -nd -A .c,.h http://us.metamath.org/metamath/
-  - wget -q http://us.metamath.org/downloads/symbols.tar.bz2
-  - wget -q http://us.metamath.org/mpegif/mmset.html
-  - wget -q http://us.metamath.org/mpegif/mmhil.html
-  - wget -q http://us.metamath.org/mpegif/mmbiblio.html
+  - wget -q -r -np -nd -A .c,.h http://us2.metamath.org:88/metamath/
+  - wget -q http://us2.metamath.org:88/downloads/symbols.tar.bz2
+  - wget -q http://us2.metamath.org:88/mpegif/mmset.html
+  - wget -q http://us2.metamath.org:88/mpegif/mmhil.html
+  - wget -q http://us2.metamath.org:88/mpegif/mmbiblio.html
   - tar --strip-components=1 -jxf symbols.tar.bz2
-  - gcc *.c -o metamath                                                                      
+  - gcc *.c -o metamath
+  - wget -q http://us2.metamath.org:88/ocat/mmj2/mmj2jar.zip
+  - unzip -q mmj2jar.zip
 
 script:
   - ./metamath 'read set.mm' 'verify proof *' 'verify markup *' exit | tee mm.log
