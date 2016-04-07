@@ -1,5 +1,6 @@
 language: bash
 sudo: false
+jdk: oraclejdk8
 install:
   - wget -q -r -np -nd -A .c,.h http://us2.metamath.org:88/metamath/
   - wget -q http://us2.metamath.org:88/downloads/symbols.tar.bz2
