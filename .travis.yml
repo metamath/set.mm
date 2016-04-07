@@ -1,4 +1,5 @@
 language: bash
+sudo: false
 install:
   - wget -q -r -np -nd -A .c,.h http://us2.metamath.org:88/metamath/
   - wget -q http://us2.metamath.org:88/downloads/symbols.tar.bz2
@@ -9,7 +10,8 @@ install:
   - gcc *.c -o metamath
   - wget -q http://us2.metamath.org:88/ocat/mmj2/mmj2jar.zip
   - unzip -q mmj2jar.zip
+  - printf "LoadFile,set.mm\nParse,*\nRunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\n" > RunParms.txt
 
 script:
-  - ./metamath 'read set.mm' 'verify proof *' 'verify markup *' exit | tee mm.log
-  - "[ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]"
+  - ./metamath 'read set.mm' 'verify proof *' 'verify markup *' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
+  - java -Xms512M -Xmx1024M -jar mmj2.jar RunParms.txt | tee mmj2.log && [ `egrep '.-..-[0-9]{4}' < mmj2.log | egrep -qv 'I-UT-0015'; echo $?` -eq 1 ]
