@@ -1,5 +1,7 @@
-language: bash
+language: rust
 sudo: false
+# Cache for speed.  See: https://docs.travis-ci.com/user/caching/
+cache: cargo
 install:
   - wget -q -r -np -nd -A .c,.h http://us2.metamath.org:88/metamath/
   - wget -q http://us2.metamath.org:88/downloads/symbols.tar.bz2
@@ -7,12 +9,17 @@ install:
   - wget -q http://us2.metamath.org:88/mpegif/mmhil.html
   - wget -q http://us2.metamath.org:88/mpegif/mmbiblio.html
   - tar --strip-components=1 -jxf symbols.tar.bz2
+  # Compile metamath (C program)
   - gcc *.c -o metamath
+  # Get mmj2 (Java program) 
   - wget -q http://us2.metamath.org:88/ocat/mmj2/mmj2jar.zip
   - unzip -q mmj2jar.zip
   - printf "LoadFile,set.mm\nVerifyProof,*\nParse,*\nRunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\n" > RunParms.txt
   - jdk_switcher use oraclejdk8
-
+  # Install smetamath (Rust)
+  - cargo install smetamath --vers 3.0.0
 script:
   - ./metamath 'read set.mm' 'verify proof *' 'verify markup *' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
   - java -Xms512M -Xmx1024M -jar mmj2.jar RunParms.txt | tee mmj2.log && [ `egrep 'Exception|.-..-[0-9]{4}' < mmj2.log | egrep -qv 'I-UT-0015'; echo $?` -eq 1 ]
+  - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee ,1
+  - "! grep ':Error:' ,1"
