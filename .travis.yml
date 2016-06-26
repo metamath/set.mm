@@ -1,7 +1,5 @@
 language: rust
 sudo: false
-# Cache for speed.  See: https://docs.travis-ci.com/user/caching/
-cache: cargo
 install:
   - wget -q -r -np -nd -A .c,.h http://us2.metamath.org:88/metamath/
   - wget -q http://us2.metamath.org:88/downloads/symbols.tar.bz2
