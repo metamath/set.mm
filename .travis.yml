@@ -1,5 +1,7 @@
 language: rust
 sudo: false
+# Only one validator is necessary, but using multiple validators means that
+# it's unlikely theorems will validate even if a validator has a defect.
 install:
   - wget -q -r -np -nd -A .c,.h http://us2.metamath.org:88/metamath/
   - wget -q http://us2.metamath.org:88/downloads/symbols.tar.bz2
@@ -16,8 +18,12 @@ install:
   - jdk_switcher use oraclejdk8
   # Install smetamath (Rust)
   - cargo install smetamath --vers 3.0.0
+  # Get and compile checkmm (C++, by Eric Schmidt)
+  - wget -q http://us.metamath.org/downloads/checkmm.cpp
+  - g++ -O2 -o checkmm checkmm.cpp
 script:
   - ./metamath 'read set.mm' 'verify proof *' 'verify markup *' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
   - java -Xms512M -Xmx1024M -jar mmj2.jar RunParms.txt | tee mmj2.log && [ `egrep 'Exception|.-..-[0-9]{4}' < mmj2.log | egrep -qv 'I-UT-0015'; echo $?` -eq 1 ]
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee ,smm
   - "! grep -E '(:Error:|:Warning:)' ,smm"
+  - ./checkmm set.mm
