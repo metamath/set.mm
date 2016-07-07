@@ -40,6 +40,5 @@ install:
 script:
   - ./metamath 'read set.mm' 'verify proof *' 'verify markup *' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
   - java -Xms512M -Xmx1024M -jar mmj2.jar RunParms.txt | tee mmj2.log && [ `egrep 'Exception|.-..-[0-9]{4}' < mmj2.log | egrep -qv 'I-UT-0015'; echo $?` -eq 1 ]
-  - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee ,smm
-  - "! grep -E '(:Error:|:Warning:)' ,smm"
+  - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
   - ./checkmm set.mm
