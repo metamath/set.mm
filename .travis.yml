@@ -13,18 +13,20 @@ sudo: false
 cache:
   cargo: true # Cache Rust source/executables (takes time to get and recompile)
   timeout: 3600 # Cache for 1 hour (unit is seconds)
+before_install:
+  - gcc --version
 install:
   # Get metamath C program and supporting files (to validate against them)
-  - wget -q -r -np -nd -A .c,.h http://us2.metamath.org:88/metamath/
-  - wget -q http://us2.metamath.org:88/downloads/symbols.tar.bz2
-  - wget -q http://us2.metamath.org:88/mpegif/mmset.html
-  - wget -q http://us2.metamath.org:88/mpegif/mmhil.html
-  - wget -q http://us2.metamath.org:88/mpegif/mmbiblio.html
+  - wget -q -r -np -nd -A .c,.h http://us.metamath.org/metamath/
+  - wget -q http://us.metamath.org/downloads/symbols.tar.bz2
+  - wget -q http://us.metamath.org/mpegif/mmset.html
+  - wget -q http://us.metamath.org/mpegif/mmhil.html
+  - wget -q http://us.metamath.org/mpegif/mmbiblio.html
   - tar --strip-components=1 -jxf symbols.tar.bz2
   # Compile metamath, a C verifier (and more) by Norm Megill.
   - gcc *.c -O2 -o metamath
   # Get mmj2, a Java verifier (and more) by Mel O'Cat and Mario Carneiro
-  - wget -q http://us2.metamath.org:88/ocat/mmj2/mmj2jar.zip
+  - wget -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
   - unzip -q mmj2jar.zip
   - printf "LoadFile,set.mm\nVerifyProof,*\nParse,*\nRunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\n" > RunParms.txt
   - jdk_switcher use oraclejdk8
