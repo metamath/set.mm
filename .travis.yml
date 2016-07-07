@@ -15,6 +15,7 @@ cache:
   timeout: 3600 # Cache for 1 hour (unit is seconds)
 before_install:
   - gcc --version
+  - g++ --version
 install:
   # Get metamath C program and supporting files (to validate against them)
   - wget -q -r -np -nd -A .c,.h http://us.metamath.org/metamath/
