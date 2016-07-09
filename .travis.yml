@@ -9,6 +9,8 @@
 # Some of these verifiers also check for style,
 # so using multiple verifiers can also detect many different style problems.
 language: rust
+git:
+  depth: 3
 sudo: false
 cache:
   cargo: true # Cache Rust source/executables (takes time to get and recompile)
