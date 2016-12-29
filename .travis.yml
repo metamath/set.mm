@@ -43,7 +43,7 @@ script:
   - ./metamath 'read set.mm' 'verify proof *' 'verify markup *' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
   # Sort "show discouraged" results to ignore benign reordering
   # Regenerate "discouraged" in the same way if you *intend* for this to change
-  - echo 'Checking if "show discouraged" results are as expected...' && ./metamath 'read set.mm' 'set width 9999' 'show discouraged' quit | grep '^SHOW DISCOURAGED:' | sed -E -e 's/^SHOW DISCOURAGED:  ?//' | LC_ALL=C sort > discouraged.new && diff -u discouraged discouraged.new
+  - echo 'Checking if "show discouraged" results are as expected...' && ./metamath 'read set.mm' 'set width 9999' 'show discouraged' quit | grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' | LC_ALL=C sort > discouraged.new && diff -u discouraged discouraged.new
   - java -Xms512M -Xmx1024M -jar mmj2.jar RunParms.txt | tee mmj2.log && [ `egrep 'Exception|.-..-[0-9]{4}' < mmj2.log | egrep -qv 'I-UT-0015'; echo $?` -eq 1 ]
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
   - ./checkmm set.mm
