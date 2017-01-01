@@ -4491,6 +4491,10 @@
 "df-ginv" is used by "grpoinvfval".
 "df-giso" is used by "elgiso".
 "df-grpo" is used by "isgrpo".
+"df-gt" is used by "gt-lt".
+"df-gt" is used by "gt-lth".
+"df-gte" is used by "gte-lte".
+"df-gte" is used by "gte-lteh".
 "df-gx" is used by "gxfval".
 "df-h0op" is used by "ho0f".
 "df-h0op" is used by "ho0val".
@@ -6478,8 +6482,10 @@
 "grposn" is used by "ghomsn".
 "grposn" is used by "gidsn".
 "grposn" is used by "ginvsn".
+"gt-lth" is used by "ex-gt".
 "gt0srpr" is used by "mulgt0sr".
 "gt0srpr" is used by "recexsrlem".
+"gte-lteh" is used by "ex-gte".
 "gx0" is used by "gxcl".
 "gx0" is used by "gxcom".
 "gx0" is used by "gxdi".
@@ -15247,6 +15253,8 @@ New usage of "df-gid" is discouraged (2 uses).
 New usage of "df-ginv" is discouraged (1 uses).
 New usage of "df-giso" is discouraged (1 uses).
 New usage of "df-grpo" is discouraged (1 uses).
+New usage of "df-gt" is discouraged (2 uses).
+New usage of "df-gte" is discouraged (2 uses).
 New usage of "df-gx" is discouraged (1 uses).
 New usage of "df-h0op" is discouraged (3 uses).
 New usage of "df-h0v" is discouraged (4 uses).
@@ -15829,6 +15837,8 @@ New usage of "eumo0ENF" is discouraged (2 uses).
 New usage of "euorENF" is discouraged (0 uses).
 New usage of "eusvhbENF" is discouraged (0 uses).
 New usage of "euuni2OLD" is discouraged (0 uses).
+New usage of "ex-gt" is discouraged (0 uses).
+New usage of "ex-gte" is discouraged (0 uses).
 New usage of "exan3OLD" is discouraged (0 uses).
 New usage of "exatleN" is discouraged (1 uses).
 New usage of "exbir" is discouraged (0 uses).
@@ -15982,7 +15992,11 @@ New usage of "grporinv" is discouraged (20 uses).
 New usage of "grporn" is discouraged (17 uses).
 New usage of "grporndm" is discouraged (8 uses).
 New usage of "grposn" is discouraged (5 uses).
+New usage of "gt-lt" is discouraged (0 uses).
+New usage of "gt-lth" is discouraged (1 uses).
 New usage of "gt0srpr" is discouraged (2 uses).
+New usage of "gte-lte" is discouraged (0 uses).
+New usage of "gte-lteh" is discouraged (1 uses).
 New usage of "gx0" is discouraged (9 uses).
 New usage of "gx1" is discouraged (2 uses).
 New usage of "gxadd" is discouraged (3 uses).
