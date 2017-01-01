@@ -8,6 +8,20 @@
 # every reviewer is separately checking each step.
 # Some of these verifiers also check for style,
 # so using multiple verifiers can also detect many different style problems.
+#
+# Note that one of the checks is:
+#   metamath 'read set.mm' 'verify proof *' 'verify markup *' exit
+#
+# We report an error if the list of "discouraged" results is unexpected;
+# this makes it easy to detect changes (which can then be specially reviewed).
+# To regenerate the "discouraged" file, you can do:
+# metamath 'read set.mm' 'set width 9999' 'show discouraged' quit | 
+#    grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' |
+#    LC_ALL=C sort > discouraged.
+#
+# We typically rewrap the file using:
+#   metamath 'read set.mm' 'write source set.mm /rewrap' quit
+#
 language: rust
 git:
   depth: 3
