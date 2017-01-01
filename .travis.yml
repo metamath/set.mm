@@ -15,9 +15,9 @@
 # We report an error if the list of "discouraged" results is unexpected;
 # this makes it easy to detect changes (which can then be specially reviewed).
 # To regenerate the "discouraged" file, you can do:
-# metamath 'read set.mm' 'set width 9999' 'show discouraged' quit | 
-#    grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' |
-#    LC_ALL=C sort > discouraged.
+#   metamath 'read set.mm' 'set width 9999' 'show discouraged' quit | 
+#   grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' |
+#   LC_ALL=C sort > discouraged.
 #
 # We typically rewrap the file using:
 #   metamath 'read set.mm' 'write source set.mm /rewrap' quit
