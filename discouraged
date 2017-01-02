@@ -1451,7 +1451,6 @@
 "bafval" is used by "hhba".
 "bafval" is used by "hhshsslem1".
 "bafval" is used by "hhssabloi".
-"bafval" is used by "invfval".
 "bafval" is used by "ip0i".
 "bafval" is used by "ipdirilem".
 "bafval" is used by "isph".
@@ -1472,6 +1471,7 @@
 "bafval" is used by "nvgf".
 "bafval" is used by "nvi".
 "bafval" is used by "nvinv".
+"bafval" is used by "nvinvfval".
 "bafval" is used by "nvlcan".
 "bafval" is used by "nvlinv".
 "bafval" is used by "nvmfval".
@@ -2938,7 +2938,6 @@
 "cba" is used by "htth".
 "cba" is used by "imsmet".
 "cba" is used by "imsmetlem".
-"cba" is used by "invfval".
 "cba" is used by "isblo2".
 "cba" is used by "isblo3i".
 "cba" is used by "iscbn".
@@ -2964,6 +2963,7 @@
 "cba" is used by "nmooval".
 "cba" is used by "nmounbseqi".
 "cba" is used by "nvdm".
+"cba" is used by "nvinvfval".
 "cba" is used by "nvsz".
 "cba" is used by "nvvc".
 "cba" is used by "nvz0".
@@ -6296,7 +6296,7 @@
 "grpoinvf" is used by "ginvsn".
 "grpoinvf" is used by "grpodivzer".
 "grpoinvf" is used by "grpodlcan".
-"grpoinvf" is used by "invfval".
+"grpoinvf" is used by "nvinvfval".
 "grpoinvfval" is used by "grpoinvf".
 "grpoinvfval" is used by "grpoinvval".
 "grpoinvid" is used by "grpodivone".
@@ -8944,7 +8944,6 @@
 "int2" is used by "sspwimpcfVD".
 "int2" is used by "suctrALTcfVD".
 "int3" is used by "suctrALTcfVD".
-"invfval" is used by "hhssabloi".
 "iorlid" is used by "cmpidelt".
 "iorlid" is used by "expus".
 "iorlid" is used by "fincmpzer".
@@ -11019,13 +11018,13 @@
 "nvgf" is used by "sspg".
 "nvgf" is used by "vacn".
 "nvgrp" is used by "hhshsslem1".
-"nvgrp" is used by "invfval".
 "nvgrp" is used by "nv0lid".
 "nvgrp" is used by "nv0rid".
 "nvgrp" is used by "nvaddsubass".
 "nvgrp" is used by "nvass".
 "nvgrp" is used by "nvgcl".
 "nvgrp" is used by "nvgf".
+"nvgrp" is used by "nvinvfval".
 "nvgrp" is used by "nvlcan".
 "nvgrp" is used by "nvlinv".
 "nvgrp" is used by "nvmfval".
@@ -11045,12 +11044,13 @@
 "nvi" is used by "nvtri".
 "nvi" is used by "nvvc".
 "nvi" is used by "nvz".
-"nvinv" is used by "invfval".
+"nvinv" is used by "nvinvfval".
 "nvinv" is used by "nvlinv".
 "nvinv" is used by "nvmfval".
 "nvinv" is used by "nvmval".
 "nvinv" is used by "nvnegneg".
 "nvinv" is used by "nvrinv".
+"nvinvfval" is used by "hhssabloi".
 "nvlcan" is used by "nvsubadd".
 "nvlinv" is used by "imsmetlem".
 "nvlinv" is used by "lno0".
@@ -11206,7 +11206,7 @@
 "nvscl" is used by "ubthlem2".
 "nvscom" is used by "nvmdi".
 "nvsf" is used by "hlmulf".
-"nvsf" is used by "invfval".
+"nvsf" is used by "nvinvfval".
 "nvsf" is used by "smcnlem".
 "nvsf" is used by "ssps".
 "nvsge0" is used by "blocnilem".
@@ -16645,7 +16645,6 @@ New usage of "inpreimaOLD" is discouraged (0 uses).
 New usage of "int2" is discouraged (3 uses).
 New usage of "int3" is discouraged (1 uses).
 New usage of "intnatN" is discouraged (0 uses).
-New usage of "invfval" is discouraged (1 uses).
 New usage of "ioodisjOLD" is discouraged (0 uses).
 New usage of "iorlid" is discouraged (4 uses).
 New usage of "iota2dfENF" is discouraged (0 uses).
@@ -17412,6 +17411,7 @@ New usage of "nvgrp" is discouraged (18 uses).
 New usage of "nvgt0" is discouraged (4 uses).
 New usage of "nvi" is discouraged (5 uses).
 New usage of "nvinv" is discouraged (6 uses).
+New usage of "nvinvfval" is discouraged (1 uses).
 New usage of "nvlcan" is discouraged (1 uses).
 New usage of "nvlinv" is discouraged (3 uses).
 New usage of "nvlmcl" is discouraged (1 uses).
