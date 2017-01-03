@@ -3063,6 +3063,7 @@
 "cbvralfENF" is used by "ffnfvfENF".
 "cbvrexENF" is used by "cbviunENF".
 "cbvrexfENF" is used by "cbvrexENF".
+"cbvsbcvOLD" is used by "fpwwe2cbv".
 "cbvsumENF" is used by "cbvsumiENF".
 "cdj3lem1" is used by "cdj3i".
 "cdj3lem1" is used by "cdj3lem2b".
@@ -4277,6 +4278,8 @@
 "csbiebENF" is used by "csbiebgENF".
 "csbiebENF" is used by "csbiefENF".
 "csbiegftENF" is used by "csbiegfENF".
+"csbnestgOLD" is used by "cdleme31snd".
+"csbnestgOLD" is used by "cdlemeg46c".
 "cvati" is used by "cvbr4i".
 "cvbr" is used by "cvbr2".
 "cvbr" is used by "cvcon3".
@@ -5603,6 +5606,7 @@
 "elabgfENF" is used by "elrabfENF".
 "elabs2OLD" is used by "elabsbcOLD".
 "elabs2OLD" is used by "elabsgOLD".
+"elabsbcOLD" is used by "intabSBC".
 "elat2" is used by "atne0".
 "elat2" is used by "atom1d".
 "elat2" is used by "atss".
@@ -11456,6 +11460,10 @@
 "onfrALTlem5" is used by "onfrALTlem3".
 "onfrALTlem5" is used by "onfrALTlem3VD".
 "opelcn" is used by "axicn".
+"opelopabsbOLD" is used by "brabsb2".
+"opelopabsbOLD" is used by "brabsbOLD".
+"opelopabsbOLD" is used by "cnvopab".
+"opelopabsbOLD" is used by "inopab".
 "opelreal" is used by "ax1cn".
 "opelreal" is used by "axaddrcl".
 "opelreal" is used by "axcnre".
@@ -12358,6 +12366,16 @@
 "riota2fENF" is used by "riota5fENF".
 "riota2fENF" is used by "riotapropENF".
 "riota2fENF" is used by "riotaxfrdENF".
+"riota5OLD" is used by "adjvalval".
+"riota5OLD" is used by "cdlemefrs32fva".
+"riota5OLD" is used by "glb0N".
+"riota5OLD" is used by "lub0N".
+"riota5OLD" is used by "lubun".
+"riota5OLD" is used by "lubunNEW".
+"riota5OLD" is used by "odval2".
+"riota5OLD" is used by "sqr0".
+"riota5OLD" is used by "trlval2".
+"riota5OLD" is used by "unxpwdom3".
 "riotaocN" is used by "glbconN".
 "riotasv2dOLD" is used by "riotasv2sOLD".
 "riotasvdENF" is used by "riotasv2dENF".
@@ -12565,12 +12583,49 @@
 "sbc2iegfENF" is used by "opelopabafENF".
 "sbc3org" is used by "sbcoreleleq".
 "sbc3org" is used by "sbcoreleleqVD".
+"sbc5OLD" is used by "pm13.195".
+"sbc5gOLD" is used by "bnj1465".
+"sbc5gOLD" is used by "iotasbc".
+"sbc5gOLD" is used by "iotasbc5".
+"sbc5gOLD" is used by "pm13.192".
+"sbc5gOLD" is used by "sbc5OLD".
+"sbc5gOLD" is used by "sbc7gOLD".
+"sbc5gOLD" is used by "sbciegftENF".
 "sbcbi" is used by "onfrALTlem5".
 "sbcbi" is used by "onfrALTlem5VD".
 "sbcbi" is used by "sbcssVD".
 "sbcbi" is used by "trsbcVD".
 "sbcbidENF" is used by "csbeq2dENF".
 "sbcbidgENF" is used by "hbsbcgdENF".
+"sbcbiiOLD" is used by "2sbcrex".
+"sbcbiiOLD" is used by "bisig0".
+"sbcbiiOLD" is used by "bnj1452".
+"sbcbiiOLD" is used by "bnj524".
+"sbcbiiOLD" is used by "bnj89".
+"sbcbiiOLD" is used by "bnj984".
+"sbcbiiOLD" is used by "eqsbc3rVD".
+"sbcbiiOLD" is used by "isibg2".
+"sbcbiiOLD" is used by "sbc3org".
+"sbcbiiOLD" is used by "sbcabelENF".
+"sbcbiiOLD" is used by "sbcralgfENF".
+"sbcbiiOLD" is used by "sbcraltENF".
+"sbcbiiOLD" is used by "sbcrexgfENF".
+"sbcbiiOLD" is used by "sbcrextENF".
+"sbcbiiOLD" is used by "sbcss".
+"sbcbiiOLD" is used by "trsbc".
+"sbcco3gOLD" is used by "2rexfrabdioph".
+"sbcco3gOLD" is used by "3rexfrabdioph".
+"sbcco3gOLD" is used by "4rexfrabdioph".
+"sbcco3gOLD" is used by "6rexfrabdioph".
+"sbcco3gOLD" is used by "7rexfrabdioph".
+"sbcco3gOLD" is used by "fzshftral".
+"sbccogOLD" is used by "aomclem6".
+"sbccogOLD" is used by "bnj610".
+"sbccogOLD" is used by "bnj972".
+"sbccogOLD" is used by "elrabsfENF".
+"sbccogOLD" is used by "sbc7gOLD".
+"sbccogOLD" is used by "sbcralgfENF".
+"sbccogOLD" is used by "sbcraltENF".
 "sbcgfENF" is used by "csbconstgfENF".
 "sbcgfENF" is used by "sbc19.21gENF".
 "sbcgfENF" is used by "sbcabelENF".
@@ -14728,6 +14783,7 @@ New usage of "bra0" is discouraged (1 uses).
 New usage of "bra11" is discouraged (6 uses).
 New usage of "braadd" is discouraged (1 uses).
 New usage of "brabn" is discouraged (1 uses).
+New usage of "brabsbOLD" is discouraged (0 uses).
 New usage of "bracl" is discouraged (4 uses).
 New usage of "bracnln" is discouraged (1 uses).
 New usage of "bracnlnval" is discouraged (0 uses).
@@ -14782,6 +14838,7 @@ New usage of "cbvrexENF" is discouraged (1 uses).
 New usage of "cbvrexcsfENF" is discouraged (0 uses).
 New usage of "cbvrexfENF" is discouraged (1 uses).
 New usage of "cbvsbcENF" is discouraged (0 uses).
+New usage of "cbvsbcvOLD" is discouraged (1 uses).
 New usage of "cbvsumENF" is discouraged (1 uses).
 New usage of "cbvsumiENF" is discouraged (0 uses).
 New usage of "ccidOLD" is discouraged (0 uses).
@@ -15160,6 +15217,7 @@ New usage of "con5i" is discouraged (2 uses).
 New usage of "connsubOLD" is discouraged (0 uses).
 New usage of "conventions" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
+New usage of "csbco3gOLD" is discouraged (0 uses).
 New usage of "csbconstgfENF" is discouraged (0 uses).
 New usage of "csbeq2dENF" is discouraged (0 uses).
 New usage of "csbeq2g" is discouraged (6 uses).
@@ -15173,6 +15231,8 @@ New usage of "csbiegfENF" is discouraged (0 uses).
 New usage of "csbiegftENF" is discouraged (1 uses).
 New usage of "csbima12gALTVD" is discouraged (0 uses).
 New usage of "csbingVD" is discouraged (0 uses).
+New usage of "csbnest1gOLD" is discouraged (0 uses).
+New usage of "csbnestgOLD" is discouraged (2 uses).
 New usage of "csbresgVD" is discouraged (0 uses).
 New usage of "csbrngVD" is discouraged (0 uses).
 New usage of "csbsngVD" is discouraged (0 uses).
@@ -15484,6 +15544,8 @@ New usage of "dipfval" is discouraged (3 uses).
 New usage of "diporthcom" is discouraged (1 uses).
 New usage of "dipsubdi" is discouraged (2 uses).
 New usage of "dipsubdir" is discouraged (2 uses).
+New usage of "disjiunOLD" is discouraged (0 uses).
+New usage of "disjmoOLD" is discouraged (0 uses).
 New usage of "disjrOLD" is discouraged (0 uses).
 New usage of "distrlem1pr" is discouraged (1 uses).
 New usage of "distrlem4pr" is discouraged (1 uses).
@@ -15728,7 +15790,7 @@ New usage of "elab3gfENF" is discouraged (0 uses).
 New usage of "elabfENF" is discouraged (0 uses).
 New usage of "elabgfENF" is discouraged (2 uses).
 New usage of "elabs2OLD" is discouraged (2 uses).
-New usage of "elabsbcOLD" is discouraged (0 uses).
+New usage of "elabsbcOLD" is discouraged (1 uses).
 New usage of "elabsgOLD" is discouraged (0 uses).
 New usage of "elat2" is discouraged (4 uses).
 New usage of "elatcv0" is discouraged (0 uses).
@@ -17514,6 +17576,7 @@ New usage of "opelcn" is discouraged (1 uses).
 New usage of "opelopab4" is discouraged (0 uses).
 New usage of "opelopabafENF" is discouraged (0 uses).
 New usage of "opelopabfENF" is discouraged (0 uses).
+New usage of "opelopabsbOLD" is discouraged (4 uses).
 New usage of "opelreal" is discouraged (8 uses).
 New usage of "opelresiOLD" is discouraged (0 uses).
 New usage of "opidon" is discouraged (3 uses).
@@ -17963,6 +18026,7 @@ New usage of "riesz4" is discouraged (4 uses).
 New usage of "riesz4i" is discouraged (1 uses).
 New usage of "riota2dfENF" is discouraged (2 uses).
 New usage of "riota2fENF" is discouraged (3 uses).
+New usage of "riota5OLD" is discouraged (10 uses).
 New usage of "riota5fENF" is discouraged (0 uses).
 New usage of "riotaocN" is discouraged (1 uses).
 New usage of "riotapropENF" is discouraged (0 uses).
@@ -18035,11 +18099,20 @@ New usage of "sbc19.21gENF" is discouraged (0 uses).
 New usage of "sbc2iegfENF" is discouraged (1 uses).
 New usage of "sbc3org" is discouraged (2 uses).
 New usage of "sbc3orgVD" is discouraged (0 uses).
+New usage of "sbc5OLD" is discouraged (1 uses).
+New usage of "sbc5gOLD" is discouraged (7 uses).
+New usage of "sbc7gOLD" is discouraged (0 uses).
 New usage of "sbcabelENF" is discouraged (0 uses).
 New usage of "sbcbi" is discouraged (4 uses).
 New usage of "sbcbiVD" is discouraged (0 uses).
 New usage of "sbcbidENF" is discouraged (1 uses).
 New usage of "sbcbidgENF" is discouraged (1 uses).
+New usage of "sbcbidgvOLD" is discouraged (0 uses).
+New usage of "sbcbiiOLD" is discouraged (16 uses).
+New usage of "sbcco3gOLD" is discouraged (6 uses).
+New usage of "sbcco3gOLDNSB" is discouraged (0 uses).
+New usage of "sbccogOLD" is discouraged (7 uses).
+New usage of "sbccomgOLD" is discouraged (0 uses).
 New usage of "sbcgfENF" is discouraged (3 uses).
 New usage of "sbciedfENF" is discouraged (2 uses).
 New usage of "sbciegfENF" is discouraged (0 uses).
@@ -18348,6 +18421,7 @@ New usage of "tbwlem4" is discouraged (2 uses).
 New usage of "tbwlem5" is discouraged (1 uses).
 New usage of "tbwsyl" is discouraged (6 uses).
 New usage of "tendospcanN" is discouraged (1 uses).
+New usage of "tfinds2OLD" is discouraged (0 uses).
 New usage of "tfis2fENF" is discouraged (0 uses).
 New usage of "tpid3gVD" is discouraged (0 uses).
 New usage of "tpsexOLD" is discouraged (1 uses).
@@ -18402,6 +18476,7 @@ New usage of "untsucfENF" is discouraged (0 uses).
 New usage of "uun0.1" is discouraged (2 uses).
 New usage of "uzind3OLD" is discouraged (0 uses).
 New usage of "uzindOLD" is discouraged (1 uses).
+New usage of "uzindOLDSBC" is discouraged (0 uses).
 New usage of "uzm1OLD" is discouraged (0 uses).
 New usage of "uzp1OLD" is discouraged (0 uses).
 New usage of "uzwoOLD" is discouraged (0 uses).
@@ -18683,6 +18758,7 @@ Proof modification of "conventions" is discouraged (1 steps).
 Proof modification of "csbeq2g" is discouraged (33 steps).
 Proof modification of "csbeq2gVD" is discouraged (61 steps).
 Proof modification of "csbfv12gALT" is discouraged (150 steps).
+Proof modification of "csbfv12gALTSBC" is discouraged (150 steps).
 Proof modification of "csbfv12gALTVD" is discouraged (312 steps).
 Proof modification of "csbima12gALT" is discouraged (65 steps).
 Proof modification of "csbima12gALTVD" is discouraged (140 steps).
@@ -19354,7 +19430,6 @@ Proof modification of "unopnOLD" is discouraged (4 steps).
 Proof modification of "unpreimaOLD" is discouraged (4 steps).
 Proof modification of "uun0.1" is discouraged (32 steps).
 Proof modification of "uzind3OLD" is discouraged (98 steps).
-Proof modification of "uzindOLD" is discouraged (1553 steps).
 Proof modification of "uzm1OLD" is discouraged (3 steps).
 Proof modification of "uzp1OLD" is discouraged (3 steps).
 Proof modification of "uzwoOLD" is discouraged (560 steps).
