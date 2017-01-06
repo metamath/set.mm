@@ -12597,14 +12597,16 @@
 "sbcbi" is used by "trsbcVD".
 "sbcbidENF" is used by "csbeq2dENF".
 "sbcbidgENF" is used by "hbsbcgdENF".
+"sbcbiiNSBOLD" is used by "2sbcrexNSB".
+"sbcbiiNSBOLD" is used by "isibg2".
 "sbcbiiOLD" is used by "2sbcrex".
-"sbcbiiOLD" is used by "bisig0".
+"sbcbiiOLD" is used by "bisig0SBC".
 "sbcbiiOLD" is used by "bnj1452".
 "sbcbiiOLD" is used by "bnj524".
 "sbcbiiOLD" is used by "bnj89".
 "sbcbiiOLD" is used by "bnj984".
 "sbcbiiOLD" is used by "eqsbc3rVD".
-"sbcbiiOLD" is used by "isibg2".
+"sbcbiiOLD" is used by "isibg2SBC".
 "sbcbiiOLD" is used by "sbc3org".
 "sbcbiiOLD" is used by "sbcabelENF".
 "sbcbiiOLD" is used by "sbcralgfENF".
@@ -12619,7 +12621,13 @@
 "sbcco3gOLD" is used by "6rexfrabdioph".
 "sbcco3gOLD" is used by "7rexfrabdioph".
 "sbcco3gOLD" is used by "fzshftral".
-"sbccogOLD" is used by "aomclem6".
+"sbcco3gOLDNSB" is used by "2rexfrabdiophNSB".
+"sbcco3gOLDNSB" is used by "3rexfrabdiophNSB".
+"sbcco3gOLDNSB" is used by "4rexfrabdiophNSB".
+"sbcco3gOLDNSB" is used by "6rexfrabdiophNSB".
+"sbcco3gOLDNSB" is used by "7rexfrabdiophNSB".
+"sbcco3gOLDNSB" is used by "fzshftralNSB".
+"sbccogOLD" is used by "aomclem6SBC".
 "sbccogOLD" is used by "bnj610".
 "sbccogOLD" is used by "bnj972".
 "sbccogOLD" is used by "elrabsfENF".
@@ -18108,9 +18116,10 @@ New usage of "sbcbiVD" is discouraged (0 uses).
 New usage of "sbcbidENF" is discouraged (1 uses).
 New usage of "sbcbidgENF" is discouraged (1 uses).
 New usage of "sbcbidgvOLD" is discouraged (0 uses).
+New usage of "sbcbiiNSBOLD" is discouraged (2 uses).
 New usage of "sbcbiiOLD" is discouraged (16 uses).
 New usage of "sbcco3gOLD" is discouraged (6 uses).
-New usage of "sbcco3gOLDNSB" is discouraged (0 uses).
+New usage of "sbcco3gOLDNSB" is discouraged (6 uses).
 New usage of "sbccogOLD" is discouraged (7 uses).
 New usage of "sbccomgOLD" is discouraged (0 uses).
 New usage of "sbcgfENF" is discouraged (3 uses).
