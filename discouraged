@@ -2731,9 +2731,9 @@
 "bnj611SBC" is used by "bnj908SBC".
 "bnj62" is used by "bnj156".
 "bnj62" is used by "bnj581".
+"bnj62" is used by "bnj976".
 "bnj62SBC" is used by "bnj156SBC".
 "bnj62SBC" is used by "bnj581SBC".
-"bnj62SBC" is used by "bnj976".
 "bnj62SBC" is used by "bnj976SBC".
 "bnj642" is used by "bnj1110".
 "bnj642" is used by "bnj1232".
@@ -7646,7 +7646,6 @@
 "hbrnENF" is used by "hbfENF".
 "hbrnENF" is used by "hbfoENF".
 "hbrnENF" is used by "hbimaENF".
-"hbsb4ENF" is used by "hbsb".
 "hbsb4ENF" is used by "hbsb4tENF".
 "hbsb4ENF" is used by "sbco2ENF".
 "hbsb4tENF" is used by "dvelimdfENF".
@@ -15486,8 +15485,8 @@ New usage of "bnj610" is discouraged (2 uses).
 New usage of "bnj610SBC" is discouraged (2 uses).
 New usage of "bnj611" is discouraged (2 uses).
 New usage of "bnj611SBC" is discouraged (2 uses).
-New usage of "bnj62" is discouraged (2 uses).
-New usage of "bnj62SBC" is discouraged (4 uses).
+New usage of "bnj62" is discouraged (3 uses).
+New usage of "bnj62SBC" is discouraged (3 uses).
 New usage of "bnj642" is discouraged (5 uses).
 New usage of "bnj643" is discouraged (6 uses).
 New usage of "bnj645" is discouraged (8 uses).
@@ -17053,7 +17052,7 @@ New usage of "hbriotaENF" is discouraged (1 uses).
 New usage of "hbriotadENF" is discouraged (2 uses).
 New usage of "hbrnENF" is discouraged (4 uses).
 New usage of "hbs1fENF" is discouraged (0 uses).
-New usage of "hbsb4ENF" is discouraged (3 uses).
+New usage of "hbsb4ENF" is discouraged (2 uses).
 New usage of "hbsb4tENF" is discouraged (3 uses).
 New usage of "hbsbc1ENF" is discouraged (0 uses).
 New usage of "hbsbc1fENF" is discouraged (2 uses).
