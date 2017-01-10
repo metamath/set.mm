@@ -10428,8 +10428,6 @@
 "ltmpi" is used by "lterpq".
 "ltmpi" is used by "ltmnq".
 "ltmpi" is used by "ltsonq".
-"ltneOLD" is used by "axlowdimlem13".
-"ltneOLD" is used by "axlowdimlem16".
 "ltneOLD" is used by "coprm".
 "ltneOLD" is used by "dmse2".
 "ltneOLD" is used by "ltlen".
@@ -12982,7 +12980,6 @@
 "prcdnq" is used by "psslinpr".
 "prcdnq" is used by "reclem2pr".
 "prcdnq" is used by "suplem1pr".
-"predbrOLD" is used by "predbrgOLD".
 "prlem934" is used by "ltaddpr".
 "prlem934" is used by "ltexprlem7".
 "prlem934" is used by "prlem936".
@@ -18674,7 +18671,7 @@ New usage of "ltexprlem6" is discouraged (1 uses).
 New usage of "ltexprlem7" is discouraged (1 uses).
 New usage of "ltmnq" is discouraged (11 uses).
 New usage of "ltmpi" is discouraged (5 uses).
-New usage of "ltneOLD" is discouraged (10 uses).
+New usage of "ltneOLD" is discouraged (8 uses).
 New usage of "ltpiord" is discouraged (7 uses).
 New usage of "ltprord" is discouraged (6 uses).
 New usage of "ltpsrpr" is discouraged (1 uses).
@@ -19552,8 +19549,6 @@ New usage of "poml4N" is discouraged (3 uses).
 New usage of "poml5N" is discouraged (1 uses).
 New usage of "poml6N" is discouraged (1 uses).
 New usage of "prcdnq" is discouraged (14 uses).
-New usage of "predbrOLD" is discouraged (1 uses).
-New usage of "predbrgOLD" is discouraged (0 uses).
 New usage of "prfOLD" is discouraged (0 uses).
 New usage of "prfunOLD" is discouraged (0 uses).
 New usage of "prfv1OLD" is discouraged (0 uses).
@@ -20039,8 +20034,6 @@ New usage of "smgrpmgm" is discouraged (1 uses).
 New usage of "snatpsubN" is discouraged (3 uses).
 New usage of "snelpwrOLD" is discouraged (0 uses).
 New usage of "snelpwrVD" is discouraged (0 uses).
-New usage of "sneqbgOLD" is discouraged (0 uses).
-New usage of "sneqrgOLD" is discouraged (0 uses).
 New usage of "snexALT" is discouraged (14 uses).
 New usage of "snssiALT" is discouraged (0 uses).
 New usage of "snssiALTVD" is discouraged (0 uses).
@@ -21036,8 +21029,6 @@ Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
 Proof modification of "pm3.43OLD" is discouraged (17 steps).
 Proof modification of "pofunOLD" is discouraged (11 steps).
-Proof modification of "predbrOLD" is discouraged (34 steps).
-Proof modification of "predbrgOLD" is discouraged (88 steps).
 Proof modification of "prfOLD" is discouraged (9 steps).
 Proof modification of "prfunOLD" is discouraged (9 steps).
 Proof modification of "prfv1OLD" is discouraged (7 steps).
@@ -21159,8 +21150,6 @@ Proof modification of "simplbi2VD" is discouraged (24 steps).
 Proof modification of "simplbi2comgVD" is discouraged (42 steps).
 Proof modification of "snelpwrOLD" is discouraged (3 steps).
 Proof modification of "snelpwrVD" is discouraged (37 steps).
-Proof modification of "sneqbgOLD" is discouraged (4 steps).
-Proof modification of "sneqrgOLD" is discouraged (4 steps).
 Proof modification of "snex" is discouraged (64 steps).
 Proof modification of "snexALT" is discouraged (48 steps).
 Proof modification of "snssiALT" is discouraged (40 steps).
