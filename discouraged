@@ -13121,8 +13121,6 @@
 "wl-mps" is used by "wl-syls1".
 "wl-pm5.74lem" is used by "wl-pm5.32".
 "wl-pm5.74lem" is used by "wl-pm5.74".
-"wsbcSBC" is used by "sb7f".
-"wsbcSBC" is used by "wsb".
 "wvd2" is used by "dfvd2".
 "wvd2" is used by "dfvd2i".
 "wvd2" is used by "dfvd2imp".
@@ -17387,7 +17385,6 @@ New usage of "wl-pm5.74lem" is discouraged (2 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
 New usage of "wofiOLD" is discouraged (0 uses).
-New usage of "wsbcSBC" is discouraged (2 uses).
 New usage of "wvd2" is discouraged (5 uses).
 New usage of "wvd3" is discouraged (3 uses).
 New usage of "wvhc2" is discouraged (5 uses).
