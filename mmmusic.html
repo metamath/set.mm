@@ -110,7 +110,7 @@ score</A> for the play
 ...instead of turning in analysis homework, I'll just bring an electronic
 piano to class and play the proof for my professor.
 </I><BR>
-&mdash; MarcME222,
+&mdash; User MarcME222,
 <A HREF="https://web.archive.org/web/20080513193424/http://digg.com/music/Mathematical_Proofs_turned_into_Music">digg.com</A>
 </FONT>
 
@@ -620,8 +620,8 @@ you can download from <A
 HREF="http://www.hitsquad.com/smm/programs/mf2t/download.shtml">
 http://www.hitsquad.com/smm/programs/mf2t/download.shtml</A> [retrieved
 3-Feb-2017].  (You can also download and unzip <A
-HREF="../downloads/mf2t.zip">mft2.zip</A>.  The t2mf.exe file is located
-in the folder mf2t\mf2t-original\mf2f.)
+HREF="../downloads/mf2t.zip">mf2t.zip</A>.  The t2mf.exe file is located
+in the folder mf2t\mf2t-original\mf2t\.)
 
 <P><I>Step 2.</I> Extract the files <TT>metamath.exe</TT> (the Metamath
 program) and <TT>set.mm</TT> (the Metamath set theory database) from
@@ -741,10 +741,10 @@ before running <TT>t2mf.exe</TT>.  I am not the author of
 <TT>t2mf.exe</TT> and unfortunately have no other solution at this
 point.</FONT>
 
-<A NAME="howmac"></A> <P><B>MacOSX:</B><BR>:  In 2006, Luca Ciciriello
+<A NAME="howmac"></A> <P><B>MacOSX:</B><BR>  In 2006, Luca Ciciriello
 modified the program to run on MacOSX.  Download and unzip <A
-HREF="../downloads/mf2t.zip">mft2.zip</A>.  The files are located
-in mf2t/mf2t-Mac/.
+HREF="../downloads/mf2t.zip">mf2t.zip</A>.  The files are located
+in mf2t/mf2t-Mac/.  I have not tested it personally.
 
 
 <A NAME="howunix"></A>
@@ -753,14 +753,14 @@ in mf2t/mf2t-Mac/.
 The t2mf program was written in 1991, before C was standardized by ANSI,
 and it will not compile on modern compilers.  However, if you wish to
 attempt to convert it to modern C, download and unzip <A
-HREF="../downloads/mf2t.zip">mft2.zip</A>.  The source files are located
-in mf2t/mf2t-original/mf2tsrc, which includes the sources for t2mf.  You
+HREF="../downloads/mf2t.zip">mf2t.zip</A>.  The source files are located
+in mf2t/mf2t-original/mf2tsrc/, which includes the sources for t2mf.  You
 may also wish to consult the sources for Luca Ciciriello's Mac upgrade,
 located in
 mf2t/mf2t-Mac/Midi_MacOSX_Xcode/Midi_MacOSX_Xcode/midisrc/t2mf/.  If you
 are successful, let me know and I will add it to the mf2t.zip download.
 Note that the authors Tim Thompson (original author) and M. Czeiszperger
-agreed to release their code to public domain, but I was unable to
+agreed to place their code in the public domain, but I was unable to
 contact Piet van Oostrum who made some additional modifications to the
 code.
 
@@ -800,7 +800,11 @@ copyright issues are resolved.
 </BLOCKQUOTE>
 -->
 
-<P>Assuming you have successfully compiled t2mf,
+
+<P><B>For Unix/Linux and MacOSX:</B><BR>
+
+
+Assuming you have successfully compiled t2mf,
 next download the file
 <A HREF="../downloads/metamath.tar.gz"
 >metamath.tar.gz</A>.
@@ -825,6 +829,8 @@ create the MIDI file:
   MM> exit
   $ t2mf sbth.txt sbth.mid
 </PRE>
+
+<P>See the notes above for Windows for information on the parameters.
 
 <P><HR NOSHADE SIZE=1>
 
