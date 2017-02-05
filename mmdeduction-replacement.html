@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+
+<!-- improve mobile display -->
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+
+<META HTTP-EQUIV="Content-Type"
+ CONTENT="text/html; charset=iso-8859-1">
+ <TITLE>Deductions - Metamath Proof Explorer</TITLE>
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+
+<STYLE TYPE="text/css">
+<!--
+/* Math symbol image will be shifted down 4 pixels to align with normal
+  text for compatibility with various browsers.  The old ALIGN=TOP for
+  math symbol images did not align in all browsers and should be deleted.
+  All other images must override this shift with STYLE="margin-bottom:0px".
+  (2-Oct-2015 nm) */
+img { margin-bottom: -4px }
+-->
+</STYLE>
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" STYLE="padding: 0px 8px">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP><A HREF="mmset.html"><IMG SRC="mm.gif"
+      BORDER=0
+      ALT="Metamath Proof Explorer Home"
+      TITLE="Metamath Proof Explorer Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"></A>
+    </TD>
+    <TD ALIGN=CENTER VALIGN=TOP><FONT SIZE="+3"
+      COLOR="#006633"><B>Metamath Proof Explorer</B></FONT><BR>
+       <FONT SIZE="+2" COLOR="#006633"><B>Deductions</B>
+        </FONT>
+    </TD>
+    <TD NOWRAP ALIGN=RIGHT VALIGN=TOP> &nbsp;
+    </TD>
+  </TR>
+
+  <TR>
+    <TD COLSPAN=3 ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif>
+      <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
+        &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmset.html">MPE Home</A>&nbsp; &gt;
+      &nbsp;Deductions
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+<HR NOSHADE SIZE=1>
+
+<B>NOTE: This is an early draft replacement page.</B>
+
+<TABLE WIDTH="100%" BORDER=0><TR><TD WIDTH="50%">
+
+<B><FONT COLOR="#006633">Contents of this page</FONT></B>
+
+<MENU>
+<LI> <A HREF="#introduction">Introduction to deduction</A></LI>
+<LI> <A HREF="#current">Current approach</A></LI>
+<LI> <A HREF="#natural">Natural deduction</A></LI>
+</MENU>
+</TD><TD WIDTH="10%"></TD><TD ALIGN=right>
+
+
+<FONT COLOR="#006633"><I>
+A Theorem fine is Deduction,<BR>
+For it allows work-reduction:<BR>
+To show "A implies B",<BR>
+Assume A and prove B;<BR>
+Quite often a simpler production.<BR>
+</I><BR>
+
+--Stefan Bilaniuk<BR>
+  <A HREF="http://euclid.trentu.ca/math/sb/pcml/welcome.html"
+  ><I>A Problem Course in Mathematical Logic</I>, 2003</A> [external]
+</FONT>
+
+</TD></TR></TABLE>
+
+<P><HR NOSHADE SIZE=1><A NAME="introduction"></A><B><FONT
+COLOR="#006633">Introduction to deduction</FONT></B>
+&nbsp;&nbsp;&nbsp;
+A <B>deduction</B> (also called an <B>inference</B>) is a kind of
+statement that needs some hypotheses to be true in order for its
+conclusion to be true.  A <B>theorem</B>, on the other hand, has no
+hypotheses (or all its hypotheses are definition).
+(Informally we may call both of them theorems, but on this
+page we will stick to the strict definition.)
+
+<P>
+When being rigorous,
+it is surprisingly complicated to convert some deduction in the form
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='_sigma.gif' WIDTH=10 HEIGHT=19 ALT='si'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19
+ALT='=&gt;'>&nbsp;&nbsp;&nbsp; <IMG SRC='_vdash.gif' WIDTH=10
+HEIGHT=19 ALT='|-'> <IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19
+ALT='ta'>
+into some theorem in the form
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_sigma.gif' WIDTH=10 HEIGHT=19 ALT='si'> <IMG
+SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG
+SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'><IMG SRC='rp.gif'
+WIDTH=5 HEIGHT=19 ALT=')'>.
+The deduction says,
+"if we can prove
+<IMG SRC='_sigma.gif' WIDTH=10 HEIGHT=19 ALT='si'>
+ then we can prove
+<IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'>,&quot;
+which is in some
+sense weaker than saying
+&quot;<IMG SRC='_sigma.gif' WIDTH=10 HEIGHT=19 ALT='si'>
+implies
+<IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'>.&quot;
+In particular, there is no axiom of logic that
+permits us to directly obtain the theorem given the deduction.
+The conversion of a deduction to a theorem does not even hold in general
+for <A HREF="../qlegif/mmql.html#prop">quantum propositional calculus</A>,
+which is a weak subset of classical propositional calculus.
+It has been shown that adding the Standard Deduction Theorem
+(below) to quantum propositional calculus turns it into classical
+propositional calculus!
+
+<P>
+This is in contrast to going the other way;
+if we have the theorem, it is easy to recover the
+deduction using modus ponens <A HREF="ax-mp.html">ax-mp</A>.
+An example of this is the derivation of the inference
+<A HREF="simpli.html">simpli</A> from the theorem <A
+HREF="simpl.html">simpl</A>.
+
+<P>
+In traditional logic books, this is often resolved using a metatheorem
+called the <B>Deduction Theorem</B> (discovered independently
+by Herbrand and Tarski around 1930).
+The deduction theorem, aka the standard deduction theorem,
+provides an algorithm for constructing a proof of
+a theorem from the proof of its corresponding deduction.
+See, for example, Margaris, <I>First Order Mathematical Logic,</I> p. 56.
+To construct a proof for a theorem, the deduction theorem's algorithm
+looks at each step in the proof of the original deduction and rewrites
+the step with several steps wherein the hypothesis is eliminated and
+becomes an antecedent.
+Ordinary mathematical proofs invoke this algorithm when converting
+a deduction into a theorem.
+
+<P>
+However, in practice, no one actually carries out this conversion
+algorithm in ordinary mathematics.
+Instead, mathematicians often stop once they believe the conversion
+could be done.
+This sharply contrasts with Metamath's philosophical goal, which is
+to show all proofs <I>directly</I> from
+the axiom system in its database, and not skip steps or
+rely on higher-level metatheorems derived outside of that axiom system.
+
+<P>Metamath is capable of converting a hypothesis into an antecedent.
+We have found that in many cases where this is desired
+it easier to do this using a weakened form of the deduction theorem,
+called the <B>weak deduction theorem</B>
+(<A HREF="dedth.html">dedth</A> and its variants).
+For more information using the deduction theorem and the
+weak deduction theorem, see the
+<A HREF="mmdeduction-theorem.html">deduction theorem page</A>.
+
+<P><HR NOSHADE SIZE=1><A NAME="current"></A><B><FONT COLOR="#006633">Current approach</FONT></B> &nbsp;&nbsp;&nbsp; 
+
+<P>
+Using the deduction theorem, or a weak
+variant of it, is rarely used today in MPE when creating new proofs.
+
+<P>Current MPE conventions instead encourage using forms
+that are easier to deal with directly.
+In particular, there is a preference for
+instead writing assertions in "deduction form"
+(applying this approach is called "deduction style").
+In an assertion in deduction form, the conclusion is prefixed with
+<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>
+<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT=' -&gt;' TITLE='-&gt;'>,
+and every hypothesis is a definition or is also prefixed with
+<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>
+<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT=' -&gt;' TITLE='-&gt;'>.
+In this form the antecedent
+<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>
+mimics the context in a deduction proof system.
+For more information, see
+<A HREF="http://us.metamath.org/ocat/natded.pdf">"Natural Deductions in the
+Metamath Proof Language" by Mario Carneiro, 2014</A>.
+
+<P>
+Many other theorems are presented as "tautologies" or "tautology form"
+(a form with no hypotheses or where all hypotheses are definitions).
+Tautologies are not deductions and thus require no special treatment.
+These forms
+are much easier to deal with directly in Metamath as compared to deductions,
+produce clearer proofs.
+simplifies proof reuse,
+and leads to fewer situations where the deduction theorem
+(and its variants) are needed.
+
+<P><HR NOSHADE SIZE=1><A NAME="natural-deduction"></A><B><FONT COLOR="#006633">Natural Deduction</FONT></B> &nbsp;&nbsp;&nbsp; 
+
+It is possible to develop proofs in MPE that follow the style
+Gentzen's natural deduction rules.
+In short, use deduction form, and apply MPE theorems that are their
+logical equivalent.
+
+<P>
+For more more information, see
+<A HREF="natdef.html">natded</A>.
+
+<TABLE BORDER=0 WIDTH="100%"><TR>
+
+<TD ALIGN=left VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
+&nbsp;</FONT></TD>
+
+<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 2-Dec-2008.</I>
+<BR><FONT SIZE=-2 FACE=ARIAL>
+Copyright terms:
+<A HREF="../copyright.html#pd">Public domain</A>
+</FONT></TD>
+
+<TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT FACE="ARIAL" SIZE=-2>
+<A
+HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
+[external]
+</FONT>
+</TD>
+
+</TR></TABLE>
+
+<!-- <SCRIPT SRC="http://www.google-analytics.com/urchin.js" TYPE="text/javascript">
+</SCRIPT>
+<SCRIPT TYPE="text/javascript">
+_uacct = "UA-1862729-1";
+urchinTracker();
+</SCRIPT>
+-->
+
+</BODY></HTML>
