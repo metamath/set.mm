@@ -1529,15 +1529,22 @@ such theorems.
 
 <P>Ten other axioms, <A HREF="ax-4.html">ax-4</A>, <A
 HREF="ax-5o.html">ax-5o</A>, <A HREF="ax-6o.html">ax-6o</A>, <A
-HREF="ax-9o.html">ax-9o</A>, <A HREF="ax-10.html">ax-10</A>,
-<A HREF="ax-10o.html">ax-10o</A>, <A
-HREF="ax-11o.html">ax-11o</A>, <A
+HREF="ax-9o.html">ax-9o</A>, <A HREF="ax-10.html">ax-10</A>, <A
+HREF="ax-10o.html">ax-10o</A>, <A HREF="ax-11o.html">ax-11o</A>, <A
 HREF="ax-12o.html">ax-12o</A>, <A HREF="ax-15.html">ax-15</A>, and <A
 HREF="ax-16.html">ax-16</A>, are not included in the table above because
 they can be derived from the ones in the table.  From the set consisting
 of these 10 axioms plus the 10 axioms in the table above, several
 subsystems can be of interest for certain studies and are described
 below under <A HREF="#subsys">Some Predicate Calculus Subsystems</A>.
+Each of these omitted axioms is proved as a theorem whose name is the
+same with the "-" omitted.  For example, axiom <A
+HREF="ax-4.html">ax-4</A> is proved as theorem <A
+HREF="ax4.html">ax4</A> from the axioms in the table above.  Then later
+references to <A HREF="ax-4.html">ax-4</A> rather than <A
+HREF="ax4.html">ax4</A> provides better separation for the purpose of
+studying these subsystems.
+
 
 <!--
 <P>(This ends the section on predicate calculus.)
@@ -1928,43 +1935,53 @@ and that ever will be proved, from the most mundane to the most
 profound.
 -->
 
+<P>The ZFC axioms have several equivalent formalizations, and we
+generally selected ones that are the shortest to state in terms of set
+theory primitives.  Our <A HREF="ax-inf.html">ax-inf</A> and <A
+HREF="ax-ac.html">ax-ac</A> are slighly unconventional in order to make
+them shorter.  We also provide <A HREF="ax-inf2.html">ax-inf2</A> and <A
+HREF="ax-ac2.html">ax-ac2</A> for people who want to work with
+equivalents to the conventional versions.  Specifically, <A
+HREF="ax-reg.html">ax-reg</A> is needed to derive <A
+HREF="ax-inf2.html">ax-inf2</A> from <A HREF="ax-inf.html">ax-inf</A>
+and <A HREF="ax-ac.html">ax-ac</A> from <A
+HREF="ax-ac2.html">ax-ac2</A>.  The reverse derivations do not need <A
+HREF="ax-reg.html">ax-reg</A>.
+
 <P>There you have it, the axioms for (essentially) all of mathematics!
-Wonder at them and stare at them in awe.  If you keep a copy in your
+Marvel at them and stare at them in awe.  If you keep a copy in your
 wallet, you will carry with you the encoding for all theorems ever
 proved and that ever will be proved, from the most mundane to the most
 profound.
 
 <P><I>Note.</I> Books sometimes make statements like "(essentially) all
 of mathematics can be derived from the ZFC axioms."  This should not be
-taken literally&mdash;there's not much you can do with those 7 axioms by
+taken literally&mdash;there's not much you can do with these 7 axioms by
 themselves!  The authors are assuming that you will combine the ZFC
 axioms with logic (that is, the axioms and rules of propositional and
-predicate calculus).  Between ZFC axioms and logic there is a total of
-20 axioms and 2 rules in our system.
+predicate calculus).  Logic and ZFC comprise a total of 20 axioms and 2
+rules in our system.
 
 
-<P><A NAME="groth"></A><B><FONT COLOR="#006633">The Tarski-Grothendieck Axiom
-</FONT></B> &nbsp;&nbsp;&nbsp; Above we qualified the phrase "all of
-mathematics" with "essentially."  The main important missing piece is
+<P><A NAME="groth"></A><B><FONT COLOR="#006633">The Tarski-Grothendieck
+Axiom </FONT></B> &nbsp;&nbsp;&nbsp; Above we qualified the phrase "all
+of mathematics" with "essentially."  The main important missing piece is
 the ability to do category theory, which requires huge sets
 (inaccessible cardinals) larger than those postulated by the ZFC axioms.
-The Tarski-Grothendieck Axiom postulates the existence of such sets.  We have
-included it in a separate table below for two reasons:  first, it is not
-normally considered to be part of ZFC set theory, and second, unlike the
-ZFC axioms, it is not "elementary," in that the known forms of it are
-very long when expanded to set theory primitives.  Below we show it
-compacted with definitions.  Theorem <A
+The Tarski-Grothendieck Axiom postulates the existence of such sets.  We
+have included it in a separate table below for two reasons:  first, it
+is not normally considered to be part of ZFC set theory, and second,
+unlike the ZFC axioms, it is not "elementary," in that the known forms
+of it are very long when expanded to set theory primitives.  Below we
+show it compacted with definitions.  Theorem <A
 HREF="grothprim.html">grothprim</A> shows you what it looks like when
 the definitions are expanded into the primitives used by the other
-axioms.  The Tarski-Grothendieck axiom can be viewed as a very
-strong replacement
-of the Axiom of Infinity and implies that axiom (theorem
-<A HREF="grothomex.html">grothomex</A>)
-as well as the Axiom of Choice
-  (theorem <A HREF="grothac.html">grothac</A>)
-and the Axiom of Power Sets
-   (theorem
-<A HREF="grothpw.html">grothpw</A>).
+axioms.  The Tarski-Grothendieck axiom can be viewed as a very strong
+replacement of the Axiom of Infinity and implies that axiom (theorem <A
+HREF="grothomex.html">grothomex</A>) as well as the Axiom of Choice
+(theorem <A HREF="grothac.html">grothac</A>) and the Axiom of Power Sets
+(theorem <A HREF="grothpw.html">grothpw</A>).
+
 <!--
  and the Axiom of Choice
 (as show by theorem <A HREF="grothac.html">grothac</A>;
@@ -1986,8 +2003,9 @@ Solovay's note (see  theorem
 SUMMARY="The Tarski-Grothendieck axiom">
 <CAPTION><B>The Tarski-Grothendieck axiom</B></CAPTION>
 
-<TR ALIGN=LEFT><TD> <A HREF="ax-groth.html">The Tarski-Grothendieck Axiom</A></TD>
-<TD NOWRAP><FONT COLOR="#006633"><B>ax-groth</B></FONT></TD>
+<TR ALIGN=LEFT>
+<TD> <A HREF="ax-groth.html">The Tarski-Grothendieck Axiom</A></TD> <TD
+NOWRAP><FONT COLOR="#006633"><B>ax-groth</B></FONT></TD>
 <TD>
 <IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='exists.gif'
 WIDTH=9 HEIGHT=19 ALT='E.'><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19
@@ -2900,26 +2918,6 @@ uncountable</A></LI>
 <HR NOSHADE SIZE=1><A NAME="trivia"></A><B><FONT
 COLOR="#006633">2 + 2 = 4 Trivia</FONT></B>&nbsp;&nbsp;&nbsp;
 
-<!--
-<P><CENTER><FONT COLOR="#006633"><I>First and above all he was a logician.
-At least thirty-five years of the half-century or so of his existence
-had been devoted exclusively to proving that two and two always
-equal four, except in unusual cases, where they equal three or five,
-as the case may be.</I><BR>
-&mdash;Jacques Futrelle, <I>Best &quot;Thinking Machine&quot;
-Detective Stories</I></FONT></CENTER>
--->
-
-<!--
-Best &quot;Thinking Machine&quot; Detective Stories,
-Dover Publications, Inc., New York, 1973
--->
-
-<!--
-<P><CENTER><FONT COLOR="#006633"><I>This is a one line proof...if we
-start sufficiently far to the left.</I><BR> &mdash;Unknown</FONT></CENTER>
--->
-
 
 <P><CENTER><FONT COLOR="#006633"><I>We used to think that if we knew
 one, we knew two, because one and one are two.  We are finding that we
@@ -2927,13 +2925,31 @@ must learn a great deal more about 'and.'</I><BR>
 &mdash;Sir Arthur Eddington</FONT></CENTER>
 <!-- in Mackay, The Harvest of a Quiet Eye -->
 
+<P><CENTER><FONT COLOR="#006633"><I>First and above all he was a logician.
+At least thirty-five years of the half-century or so of his existence
+had been devoted exclusively to proving that two and two always
+equal four, except in unusual cases, where they equal three or five,
+as the case may be.</I><BR>
+&mdash;Jacques Futrelle, <I>Best &quot;Thinking Machine&quot;
+Detective Stories</I></FONT></CENTER>
+
+
+<!--
+Best &quot;Thinking Machine&quot; Detective Stories,
+Dover Publications, Inc., New York, 1973
+-->
+
+
+<P><CENTER><FONT COLOR="#006633"><I>This is a one line proof...if we
+start sufficiently far to the left.</I><BR> &mdash;Unknown</FONT></CENTER>
+
+
+
 <!--
 <P><CENTER><FONT COLOR="#006633"><I>One and one is two, and two and two
 is four, and five will get you ten if you know how to work it.  </I><BR>
 &mdash;Mae West</FONT></CENTER>
 -->
-
-
 
 <P>The complete proof of a theorem all the way back to axioms can be
 thought of as a tree of subtheorems, with the steps in each proof
@@ -2948,12 +2964,13 @@ ALT="Orange julia butterfly with 2+2=4 dots. Credit: N. Megill 2004. Public doma
 TITLE="Orange julia butterfly with 2+2=4 dots. Credit: N. Megill 2004. Public domain."
 WIDTH=102 HEIGHT=65 ALIGN=RIGHT STYLE="margin-bottom:0px">
 
-<P><B>Trivia Answer:</B> A longest path back to an axiom from 2 + 2 =
-4 is <B>180 layers</B> deep!  By following it you will encounter a broad
+<P><B>Trivia Answer:</B> A longest path back to an axiom from 2 + 2 = 4
+is <B>180 layers</B> deep!  By following it you will encounter a broad
 range of interesting and important set theory results along the way.
 You can follow them by drilling down this path.  Or you can start at the
 bottom and work your way up, watching mathematics unfold from its
-axioms.<P>
+axioms.  (Hint:  hovering the mouse over the links below will show their
+descriptions.)<P>
 
 
 <FONT SIZE=-1>
@@ -3140,23 +3157,28 @@ axioms.<P>
 &lt;- <A HREF="ax-2.html" TITLE="Axiom _Frege_. Axiom A2 of [Margaris] p. 49. One of the 3 axioms of propositional calculus. It...">ax-2</A>
 </FONT>
 
-<P>(The list above was produced by typing the commands "read set.mm" then
-"show trace_back 2p2e4 /essential /count_steps" in the <A
-HREF="../index.html#mmprog">Metamath program</A>, after changing the
-references to
-<A HREF="mmcomplex.html#axioms">complex number axioms</A>
-to their corresponding theorems, such as
-"ax-rnegex" to "axrnegex".   The complex numbers are a
-special case where we restate as axioms the theorems which derive their
-properties,
-in order to reduce clutter on the "This theorem was proved from axioms:"
-and "This theorem depends on definitions:" lists on the web pages.)  The
-complete proof of 2 + 2 = 4 involves <B>2,863 subtheorems</B> including
-the 150 above.  (The command "show trace_back 2p2e4 /essential" will list them.)
-These have a total of <B>27,426 steps</B> &mdash; this is how many steps
-you would have to examine if you wanted to verify the proof by hand in
-complete detail all the way back to the axioms.
+<P>(The list above was produced by typing the commands "read set.mm"
+then "show trace_back 2p2e4 /essential /count_steps" in the <A
+HREF="../index.html#mmprog">Metamath program</A>, after replacing the
+references to the <A HREF="mmcomplex.html#axioms">complex number
+axioms</A> to their corresponding theorems, such as "ax-rnegex" to
+"axrnegex".  The complex numbers are a special case where we restate as
+axioms the theorems that derive their properties, in order to reduce
+clutter in the axiom and definition lists on the web pages.)
 
+<!--
+axioms the theorems that derive their properties, in order to isolate
+them from their construction and also to reduce clutter on the "This
+theorem was proved from axioms:"  and "This theorem depends on
+definitions:" lists on the web pages.)
+-->
+
+<P> The complete proof of 2 + 2 = 4 involves <B>2,863 subtheorems</B>
+including the 180 above.  (The command "show trace_back 2p2e4
+/essential" will list them.)  These have a total of <B>27,426
+steps</B>&mdash;this is how many steps you would have to examine if you
+wanted to verify the proof by hand in complete detail all the way back
+to the axioms.
 
 <P>One of the reasons that the proof of 2 + 2 = 4 is so long is that 2
 and 4 are complex numbers&mdash;i.e. we are really proving (2+0i) +
@@ -3165,31 +3187,34 @@ and 4 are complex numbers&mdash;i.e. we are really proving (2+0i) +
 provide the most flexibility for the arithmetic in our set.mm database.
 In terms of textbook pages, the construction formalizes perhaps 70 pages
 from Takeuti and Zaring's <I>Introduction to Axiomatic Set Theory</I>
-  (and its predicate calculus
-  prerequisite) to obtain natural number (finite ordinal)
- arithmetic, followed by essentially all
-of Landau's 136-page <I>Foundations of Analysis</I>.
+(and its predicate calculus prerequisite) to obtain natural number
+(finite ordinal) arithmetic, followed by essentially all of Landau's
+136-page <I>Foundations of Analysis</I>.
 
 <P>We selected the theorem 2 + 2 = 4 for this example rather than 1 + 1
 = 2 because the latter is essentially the definition we chose for 2 and
 thus has a trivial proof.
+
 <!--
 , <A HREF="1p1e2.html">1p1e2</A> (shown
 primarily to support a lame attempt at humor, with apologies to
 frequent contributor Mel O'Cat).
 -->
-In <I>Principia
-Mathematica</I>, 1 and 2 are <I>cardinal</I>
+
+In <I>Principia Mathematica</I>, 1 and 2 are <I>cardinal</I>
+
 <!-- numbers rather than
 <I>real</I>
 -->
-numbers,
-so its proof of 1 + 1 = 2 is different:  see
+
+numbers, so its proof of 1 + 1 = 2 is different:  see
+
 <!--
 theorems <A HREF="pm54.43.html">pm54.43</A> and
 -->
-<A
-HREF="pm110.643.html">pm110.643</A> for a translation into modern notation.
+
+<A HREF="pm110.643.html">pm110.643</A> for a translation into modern
+notation.
 
 
 <!--
@@ -4823,18 +4848,17 @@ more or less obvious by inspection.
 convention that most definitions, beyond the basics needed for a
 practical development of set theory, consist of a single new class
 constant symbol followed by an equal sign followed by a class expression
-built from earlier symbols, for example the definition of power
-class <A HREF="df-pw.html">df-pw</A>.  Thus the definition is more or
-less a drop-in replacement that abbreviates a fixed, more complicated
+built from earlier symbols, for example the definition of power class <A
+HREF="df-pw.html">df-pw</A>.  Thus the definition is more or less a
+drop-in replacement that abbreviates a fixed, more complicated
 expression (with possible renaming of bound variables).  The soundness
 of such definitions is simple to check by inspection:  if (1) the
 left-hand constant symbol is new and doesn't appear in the right-hand
 side, (2) all variables are distinct (all of them appear in a single $d
-statement), and (3) we can prove (with a Metamath theorem,
-e.g. <A HREF="pwjust.html">pwjust</A> for
-<A HREF="df-pw.html">df-q</A>) that the
-right-hand expression equals itself with all variables renamed, then the
-definition is sound.  This convention allows all but 4 definitions
+statement), and (3) we can prove (with a Metamath theorem, e.g.  <A
+HREF="pwjust.html">pwjust</A> for <A HREF="df-pw.html">df-q</A>) that
+the right-hand expression equals itself with all variables renamed, then
+the definition is sound.  This convention allows all but 4 definitions
 to be verified automatically by mmj2 as described above.
 
 <P> A non-mathematical (human) issue with a definition is whether it
@@ -4866,11 +4890,10 @@ can continue to "feed" each other with new theorems developed on their
 respective platforms.
 -->
 
-<P>The <A HREF="mmdefinitions.html">definition list (3MB)</A> shows all of
-the definitions in the database.  The web page for each proof
-lists all definitions
-that were used somewhere along its path back to the axioms, so that
-nothing is hidden from the user in this sense.
+<P>The <A HREF="mmdefinitions.html">definition list (3MB)</A> shows all
+of the definitions in the database.  The web page for each proof lists
+all definitions that were used somewhere along its path back to the
+axioms, so that nothing is hidden from the user in this sense.
 
 <P> <I> (Thanks to Raph Levien, Freek Wiedijk, Bob Solovay, and
 Mario Carneiro for discussions on this
@@ -4895,11 +4918,9 @@ On</FONT></B>&nbsp;&nbsp;&nbsp; At the end of each proof there is a list
 called &quot;This theorem was proved from these axioms.&quot; These are
 the axioms needed to prove the theorem from scratch, if all definitions
 were eliminated.  (You can also do this from within the <A
-HREF="../index.html#mmprog">Metamath program</A>: after
-"read set.mm",  type "show trace_back
-tfr2 /essential /axioms" to get the list for Transfinite Recursion
-theorem <A
-HREF="tfr2.html">tfr2</A>.)
+HREF="../index.html#mmprog">Metamath program</A>:  after "read set.mm",
+type "show trace_back tfr2 /essential /axioms" to get the list for
+Transfinite Recursion theorem <A HREF="tfr2.html">tfr2</A>.)
 
 <P>You shouldn't expect to see immediately the relationship between the
 axioms and the proof you are looking at&mdash;it is typically not
@@ -4916,10 +4937,9 @@ HREF="tfr2.html">tfr2</A>, but we did need the Axiom of Replacement <A
 HREF="ax-rep.html">ax-rep</A>.
 
 <P>In order to find out all theorems in the path(s) from <A
-HREF="tfr2.html">tfr2</A> back to
-the Axiom of Replacement, type "show trace_back tfr2 /to ax-rep".  The
-following list results, with the theorems in the order that they occur
-in set.mm:
+HREF="tfr2.html">tfr2</A> back to the Axiom of Replacement, type "show
+trace_back tfr2 /to ax-rep".  The following list results, with the
+theorems in the order that they occur in set.mm:
 
 <BLOCKQUOTE>
  <A HREF="ax-rep.html">ax-rep</A>
@@ -4940,19 +4960,13 @@ shouldn't require a particular axiom.  It will let us identify where
 exactly the undesired axiom snuck in, so that the proof can be modified
 to avoid it if possible.
 
-<!--
-ax-rep
--&gt; <A HREF="axrep1.html">axrep1</A>
--&gt; <A HREF="axrep2.html">axrep2</A>
--&gt; <A HREF="axrep3.html">axrep3</A>
--&gt; <A HREF="axrep4.html">axrep4</A>
--&gt; <A HREF="funimaexg.html">funimaexg</A>
--&gt; <A HREF="resfunexg.html">resfunexg</A>
--&gt; <A HREF="fnex.html">fnex</A>
--&gt; <A HREF="funex.html">funex</A>
--&gt; <A HREF="tfrlem14.html">tfrlem14</A>
--&gt; <A HREF="tfr1.html">tfr1</A>
--->
+<P>Sometimes a proof becomes much longer if we want to avoid a certain
+axiom.  For example, theorems <A HREF="ondomon">ondomon</A> and <A
+HREF="hartogs">hartogs</A> are the same except for their proofs.
+Compare the relatively short proof of <A HREF="ondomon">ondomon</A>,
+which uses <A HREF="ax-ac2.html">ax-ac2</A>, with the much longer proof
+of <A HREF="hartogs">hartogs</A> and its lemmas needed to avoid <A
+HREF="ax-ac2.html">ax-ac2</A>.
 
 <!-- Why did we need Infinity?  Well, our
 number 2 is a real number, and the Axiom of Infinity is needed to prove
@@ -5941,7 +5955,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 4-Feb-2017.</FONT></I><BR><FONT
+ page was last updated on 5-Feb-2017.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
