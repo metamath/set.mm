@@ -3960,18 +3960,24 @@ HREF="http://euclid.trentu.ca/math/sb/pcml/"><I>A Problem Course in
 Mathematical Logic</I></A> [retrieved 21-Dec-2016], another free on-line book,
 provides a more extensive study of logic.
 
-<P>Even though the traditional axiom system looks different
-from Metamath's, <B>the two axiom systems generate exactly the same set
-of <I>actual</I> theorems.</B> (Read about <A
-HREF="#schemes">schemes</A> in the previous section to understand what
-"actual" means.)  Specifically, all of Metamath's axiom schemes <A
-HREF="#pcaxioms">ax-4 through ax-17</A> can be proved as theorem schemes
-of the traditional system.  Conversely, every instance of the
-traditional axiom schemes is an instance of a theorem scheme provable
-from Metamath's axiom schemes.
+<P>Even though the traditional axiom system looks different from
+Metamath's, the two axiom systems generate exactly the same set of
+<I>actual</I> theorems. (Read about <A HREF="#schemes">schemes</A>
+in the previous section to understand what "actual" means.)
+Specifically, all of Metamath's axiom schemes <A HREF="#pcaxioms">ax-4
+through ax-17</A> can be proved as theorem schemes of the traditional
+system.  Conversely, every instance of the traditional axiom schemes is
+an instance of a theorem scheme provable from Metamath's axiom schemes.
+This bears repeating, because people familiar with the traditional
+system have sometimes felt there is something wrong with ours,
+particularly since it dispenses with the alpha conversion required by
+proper substitution in the traditional axiom system.  <B>Our axiom
+schemes generate exactly the same axioms, no more and no fewer, as the
+traditional schemes</B> (Theorem 5 of [<A HREF="#Tarski">Tarski</A>],
+p. 78).
 
 <P>Although in some sense the traditional axiom schemes are more compact
-than Metamath's <A HREF="#pcaxioms">ax-4 through ax-17</A>, their goal
+than Metamath's <A HREF="#pcaxioms">ax-5 through ax-17</A>, their purpose
 is simply to provide recipes for generating actual axioms, from which we
 then prove actual theorems.  Theorem schemes can also be proved from the
 traditional axiom schemes, but their proofs use informal metalogical
@@ -3988,25 +3994,47 @@ the Metamath language.  However, we can emulate these notions (in either
 system, actually, since every scheme in Metamath's system <I>is</I> a
 scheme of the traditional system) with conventions that are based on a
 formula's <I>logical</I> properties (rather than its <I>structure,</I>
-as is the case with the traditional axioms).  To say that "<IMG
-SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'> is effectively not free in <IMG
-SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>," we can use the
-hypothesis <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG
-SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='forall.gif'
-WIDTH=10 HEIGHT=19 ALT='A.'  ><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19
-ALT='x'><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>.  This
-hypothesis holds in all cases where <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19
-ALT='x'> is not free in <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19
-ALT='ph'> in the traditional system (and in a few other cases as well,
-which is why we say "effectively"&mdash;for example, the wff <IMG
-SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'><IMG SRC='eq.gif' WIDTH=12
-HEIGHT=19 ALT='='><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'> will
-satisfy the hypothesis, as shown by theorem <A
+as is the case with the traditional axioms).
+
+<P>To say that "<IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'> is
+effectively not free in <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19
+ALT='ph'>," we can use the hypothesis <IMG SRC='_varphi.gif' WIDTH=11
+HEIGHT=19 ALT='ph'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
+<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT='A.'  ><IMG SRC='_x.gif'
+WIDTH=10 HEIGHT=19 ALT='x'><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19
+ALT='ph'>.  This hypothesis holds in all cases where <IMG SRC='_x.gif'
+WIDTH=10 HEIGHT=19 ALT='x'> is not free in <IMG SRC='_varphi.gif'
+WIDTH=11 HEIGHT=19 ALT='ph'> in the traditional system (and in a few
+other cases as well, which is why we say "effectively"&mdash;for
+example, the wff <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'><IMG
+SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='><IMG SRC='_x.gif' WIDTH=10
+HEIGHT=19 ALT='x'> will satisfy the hypothesis, as shown by theorem <A
 HREF="hbequid.html">hbequid</A>, even though <IMG SRC='_x.gif' WIDTH=10
 HEIGHT=19 ALT='x'> is technically free in it).
 
-We can emulate "free for" through the use of our definition of proper
-substitution <A HREF="df-sb.html">df-sb</A>.
+Because the idiom for "effectively not free in" is so frequently used,
+we define a special logical connective,
+
+<IMG SRC='finv.gif' WIDTH=9 HEIGHT=19 ALT=' F/' TITLE='F/'><IMG
+SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT=' x' TITLE='x'><IMG
+SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>,
+
+that stands for
+
+<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT='A.'  ><IMG SRC='_x.gif'
+WIDTH=10 HEIGHT=19 ALT='x'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
+ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG
+SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='forall.gif'
+WIDTH=10 HEIGHT=19 ALT='A.'  ><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19
+ALT='x'><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'><IMG
+SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>.
+
+See definition <A HREF="df-nf.html">df-nf</A>.
+
+<P>We can emulate "free for" through the use of our definition of proper
+substitution <A HREF="df-sb.html">df-sb</A>, as shown for example in
+the approximate equivalent to <A HREF="stdpc4.html">stdpc4</A> in the
+table above.
 
 <!-- In all, the traditional schemes requiring the notions of "not free
 in" and "free for" can be emulated with Metamath schemes <A
@@ -4022,13 +4050,18 @@ as <A HREF="hbim.html">hbim</A> and also <A
 HREF="ax-17.html">ax-17</A>).  -->
 
 <P>Both our system and the traditional system are called
-<B>Hilbert-style</B> systems.  Another very powerful approach, called a
-<B>Gentzen-style</B> system, embeds the <A HREF="mmdeduction.html">
-deduction (meta)theorem</A> into its axiom system, but we do not discuss
-it here.  Fr&eacute;d&eacute;ric Lin&eacute; has been developing a
-Gentzen-style system called <A
+<B>Hilbert-style</B> systems.  Two other approaches, called <B>natural
+deduction</B> and <B>Gentzen-style</B> systems, are closely related to
+each other and embed the <A HREF="mmdeduction.html"> deduction
+(meta)theorem</A> into its axiom system.  While it is possible to encode
+these in Metamath, as Fr&eacute;d&eacute;ric Lin&eacute; shows with his
+natural deduction system called <A
 HREF="https://web-beta.archive.org/web/20120402081711/http://wiki.planetmath.org/cgi-bin/wiki.pl/Natural_deduction_based_metamath_system">natural
-deduction</A> [retrieved 21-Dec-2016] in the Metamath language.
+deduction</A> [retrieved 21-Dec-2016], notationally it ends up awkward
+for practical use.  As the <A HREF="mmdeduction.html"> deduction
+(meta)theorem</A> page shows, natural deduction is straightforward to
+emulate in our Hilbert-style system by exploiting the properties
+of wff metavariables.
 
 
 
@@ -5955,7 +5988,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 5-Feb-2017.</FONT></I><BR><FONT
+ page was last updated on 7-Feb-2017.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
