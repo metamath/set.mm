@@ -3281,28 +3281,29 @@ set-theoretical objects.  In order to verify the proofs of his theorem
 schemes, a proof verifier would need a significant amount of set theory
 built into it.)
 
-<P><A NAME="simplemetalogic"></A>The Metamath axiom
-system (system S3' in Remark 9.6 of [<A
-HREF="#bibmegill">Megill</A>], shown as axioms <A HREF="#scaxioms">ax-1
-through ax-17</A> above, which we will call axiom schemes in this
-section) extends Tarski's system to eliminate this difficulty.  The
-additional axiom schemes endow it with a
-nice property called <B>metalogical
-completeness</B> (defined in Remark 9.6 of [<A
+<P><A NAME="simplemetalogic"></A>The Metamath axiom system (system S3'
+in Remark 9.6 of [<A HREF="#bibmegill">Megill</A>], shown as axioms <A
+HREF="#scaxioms">ax-1 through ax-17</A> above, which we will call axiom
+schemes in this section) extends Tarski's system to eliminate this
+difficulty.  The additional axiom schemes endow it with a nice property
+called <B>metalogical completeness</B> (defined in Remark 9.6 of [<A
 HREF="#bibmegill">Megill</A>]).  As a result, we can prove <I>any</I>
-theorem scheme expressable in the "simple metalogic"
- of Tarski's system by using <I>only</I> Metamath's direct
-substitution rule applied to the axiom system (and no other metalogical
-or set-theoretical notions "outside" of the system).
-<B>Simple metalogic</B> consists of schemes containing wff metavariables
-(with no arguments) and/or set (also called "individual") metavariables,
-accompanied by optional
-provisos each stating
- that two specified set metavariables must be distinct  or
-that a specified set metavariable may not occur in a
-specified wff
-metavariable.  Metamath's logic and set theory axiom schemes are
-examples of simple metalogic.
+theorem scheme expressable in the "simple metalogic" of Tarski's system
+by using <I>only</I> Metamath's direct substitution rule applied to the
+axiom system (and no other metalogical or set-theoretical notions
+"outside" of the system).  <B>Simple metalogic</B> consists of schemes
+containing wff metavariables (with no arguments) and/or set (also called
+"individual") metavariables, accompanied by optional provisos each
+stating that two specified set metavariables must be distinct or that a
+specified set metavariable may not occur in a specified wff
+metavariable.  Metamath's logic and set theory axiom and rule schemes
+are all examples of simple metalogic.  The schemes <A
+HREF="stdpc4.html">stdpc4</A>, <A HREF="stdpc5.html">stdpc5</A>, and <A
+HREF="stdpc7.html">stdpc7</A> of <A HREF="#traditional">traditional
+predicate calculus with equality</A> are examples which are <I>not</I>
+simple metalogic, because of their use of wff metavariables with
+arguments and their "free for" and "not free in" side conditions.
+
 
 <P><FONT SIZE="-1">[See also <A
 HREF="../mmsolitaire/mms.html#q15">Question 15</A> on the Metamath
@@ -3947,14 +3948,14 @@ WIDTH=5 HEIGHT=19 ALT=')'> </TD></TR>
 <P>Three of these axiom schemes have informal English-language
 conditions on them.  These conditions are somewhat awkward to formalize,
 but they are not hard to grasp intuitively.  You can look them up in any
-elementary logic book.  They are also explained in Hirst and Hirst's <A
+elementary logic book.  For example, they are explained in Hirst and
+Hirst's <A
 HREF="http://www.mathsci.appstate.edu/~jlh/primer/hirst.pdf"><I>A Primer
-for Logic and Proof</I></A> [retrieved 21-Dec-2016] (PDF, 0.5MB); Section
-2.4 (pp.
-36-37; add 6 for the PDF page number) defines "free variable," and
-Section 2.11 (pp. 48-51) defines "free for."  See pp. 15, 51, &amp; 64
-for the propositional calculus, predicate calculus, and equality axioms
-respectively.
+for Logic and Proof</I></A> [retrieved 21-Dec-2016] (PDF, 0.5MB);
+Section 2.4 (pp. 36-37; add 6 for the PDF page number) defines "free
+variable," and Section 2.11 (pp. 48-51) defines "free for."  See pp. 15,
+51, &amp; 64 for the propositional calculus, predicate calculus, and
+equality axioms respectively.
 
 <P>Stefan Bilaniuk's <A
 HREF="http://euclid.trentu.ca/math/sb/pcml/"><I>A Problem Course in
@@ -3969,24 +3970,27 @@ Specifically, all of Metamath's axiom schemes <A HREF="#pcaxioms">ax-4
 through ax-17</A> can be proved as theorem schemes of the traditional
 system.  Conversely, every instance of the traditional axiom schemes is
 an instance of a theorem scheme provable from Metamath's axiom schemes.
-This bears repeating, because people familiar with the traditional
+Because people familiar with the traditional
 system have sometimes felt there is something wrong with ours,
 particularly since it dispenses with the alpha conversion required by
-proper substitution in the traditional axiom system.  <B>Our axiom
-schemes generate exactly the same axioms, no more and no fewer, as the
-traditional schemes</B> (Theorem 5 of [<A HREF="#Tarski">Tarski</A>],
-p. 78).
+proper substitution in the traditional axiom system,
+this bears repeating: &nbsp;
+
+<B>Our axiom schemes generate precisely the same object-language axioms
+and rules, no more and no fewer, as the traditional
+schemes</B> (Theorem 5 of [<A HREF="#Tarski">Tarski</A>], p. 78).
 
 <P>Although in some sense the traditional axiom schemes are more compact
-than Metamath's <A HREF="#pcaxioms">ax-5 through ax-17</A>, their purpose
-is simply to provide recipes for generating actual axioms, from which we
-then prove actual theorems.  Theorem schemes can also be proved from the
-traditional axiom schemes, but their proofs use informal metalogical
-techniques that are not part of the axiom system.  In Metamath, on the
-other hand, we deal <I>only</I> with schemes and never with actual
-axioms, and its formalization is designed to let us prove directly all
-possible theorem schemes of a certain kind (specifically, all possible
-schemes expressible in  <A HREF="#simplemetalogic">simple metalogic</A>).
+than Metamath's <A HREF="#pcaxioms">ax-5 through ax-17</A> (4 schemes
+instead of 10), their purpose is simply to provide recipes for
+generating actual axioms, from which we then prove actual theorems.
+Theorem schemes can also be proved from the traditional axiom schemes,
+but their proofs use informal metalogical techniques that are not part
+of the axiom system.  In Metamath, on the other hand, we deal
+<I>only</I> with schemes and never with actual axioms, and its
+formalization is designed to let us prove directly all possible theorem
+schemes of a certain kind (specifically, all possible schemes
+expressible in <A HREF="#simplemetalogic">simple metalogic</A>).
 
 <P>Metamath's system does not have the traditional system's
 (metalogical) notions of "not free in" and "free for" built in, so the
@@ -5000,11 +5004,11 @@ exactly the undesired axiom snuck in, so that the proof can be modified
 to avoid it if possible.
 
 <P>Sometimes a proof becomes much longer if we want to avoid a certain
-axiom.  For example, theorems <A HREF="ondomon">ondomon</A> and <A
-HREF="hartogs">hartogs</A> are the same except for their proofs.
-Compare the relatively short proof of <A HREF="ondomon">ondomon</A>,
+axiom.  For example, theorems <A HREF="ondomon.html">ondomon</A> and <A
+HREF="hartogs.html">hartogs</A> are the same except for their proofs.
+Compare the relatively short proof of <A HREF="ondomon.html">ondomon</A>,
 which uses <A HREF="ax-ac2.html">ax-ac2</A>, with the much longer proof
-of <A HREF="hartogs">hartogs</A> and its lemmas needed to avoid <A
+of <A HREF="hartogs.html">hartogs</A> and its lemmas needed to avoid <A
 HREF="ax-ac2.html">ax-ac2</A>.
 
 <!-- Why did we need Infinity?  Well, our
@@ -5829,14 +5833,6 @@ second edition (2006) [QA248.M665 2006].</LI>
 <I>Topology:  a first course,</I> Prentice-Hall, Englewood Cliffs, New
 Jersey (1975) [QA611.M82].</LI>
 
-<LI><A NAME="Pfenning"></A> [Pfenning] Pfenning, Frank,
-<I>Automated Theorem Proving,</I> Carnegie-Mellon University (April 13, 2004);
-available at <A
-HREF="http://www.cs.cmu.edu/~fp/courses/atp/handouts/atp.pdf">http://www.cs.cmu.edu/~fp/courses/atp/handouts/atp.pdf</A>
-and <A
-HREF="http://web.archive.org/web/20160304013704/http://www.cs.cmu.edu/~fp/courses/atp/handouts/atp.pdf">http://web.archive.org/web/20160304013704/http://www.cs.cmu.edu/~fp/courses/atp/handouts/atp.pdf</A>
-(retrieved 7 Feb 2017).</LI>
-
 <LI><A NAME="Ponnusamy"></A> [Ponnusamy] Ponnusamy, S., <I>Foundations
 of Functional Analysis,</I> Alpha Science International Ltd., Pangbourne
 (2002) [QA320.P66 2002].</LI>
@@ -5852,7 +5848,7 @@ revised edition (1969) [QA248.Q7 1969].</LI>
 
 <LI><A NAME="ReedSimon"></A> [ReedSimon] Michael Reed and Barry Simon,
 <I>Methods of Modern Mathematical Physics</I>, Vol.  I:  Functional
-Analysis, Academic Press, New York (1972) [QC20.7.F84.R43].</LI>
+Analysis, Academic Press, New York (1972) [QC20.7.F84.R43].  </LI>
 
 <LI><A NAME="Rudin"></A> [Rudin] Rudin, Walter, <I>Principles of Mathematical
 Analysis,</I> McGraw-Hill, New York, second edition (1964) [QA300.R916
