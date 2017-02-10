@@ -65,8 +65,9 @@ img { margin-bottom: -4px }
 
 <MENU>
 <LI> <A HREF="#introduction">Introduction to deduction</A></LI>
-<LI> <A HREF="#current">Current approach</A></LI>
-<LI> <A HREF="#natural">Natural deduction</A></LI>
+<LI> <A HREF="#current">Current approach to deductions</A></LI>
+<LI> <A HREF="#introduction-natural-deduction">Introduction to Natural Deduction</A></LI>
+<LI> <A HREF="#natural-deduction-metamath">Natural deduction in Metamath</A></LI>
 </MENU>
 </TD><TD WIDTH="10%"></TD><TD ALIGN=right>
 
@@ -92,9 +93,9 @@ COLOR="#006633">Introduction to deduction</FONT></B>
 A <B>deduction</B> (also called an <B>inference</B>) is a kind of
 statement that needs some hypotheses to be true in order for its
 conclusion to be true.  A <B>theorem</B>, on the other hand, has no
-hypotheses (or all its hypotheses are definition).
-(Informally we may call both of them theorems, but on this
-page we will stick to the strict definition.)
+hypotheses (or all its hypotheses are definitions).
+Informally we may call both of them theorems, but on this
+page we will stick to the strict definition.
 
 <P>
 When being rigorous,
@@ -128,7 +129,7 @@ The conversion of a deduction to a theorem does not even hold in general
 for <A HREF="../qlegif/mmql.html#prop">quantum propositional calculus</A>,
 which is a weak subset of classical propositional calculus.
 It has been shown that adding the Standard Deduction Theorem
-(below) to quantum propositional calculus turns it into classical
+to quantum propositional calculus turns it into classical
 propositional calculus!
 
 <P>
@@ -158,78 +159,168 @@ a deduction into a theorem.
 However, in practice, no one actually carries out this conversion
 algorithm in ordinary mathematics.
 Instead, mathematicians often stop once they believe the conversion
-could be done.
+algorithm could be done.
 This sharply contrasts with Metamath's philosophical goal, which is
 to show all proofs <I>directly</I> from
 the axiom system in its database, and not skip steps or
 rely on higher-level metatheorems derived outside of that axiom system.
 
 <P>Metamath is capable of converting a hypothesis into an antecedent.
-We have found that in many cases where this is desired
-it easier to do this using a weakened form of the deduction theorem,
+We have found that in many cases only a weakened form
+f the deduction theorem is necessary,
 called the <B>weak deduction theorem</B>
 (<A HREF="dedth.html">dedth</A> and its variants).
-For more information using the deduction theorem and the
-weak deduction theorem, see the
-<A HREF="mmdeduction-theorem.html">deduction theorem page</A>.
-
-<P><HR NOSHADE SIZE=1><A NAME="current"></A><B><FONT COLOR="#006633">Current approach</FONT></B> &nbsp;&nbsp;&nbsp; 
+The weak deduction theorem is often easier to use, when it is necessary
+to use some version of the deduction theorem.
+Earlier versions of MPE applied the deduction theorem, or a weakened
+form of it, in a number of situations.
+For more information about using the deduction theorem and the
+weak deduction theorem, including more details of why this can be
+complicated, see the
+<A HREF="mmdeduction.html">deduction theorem page</A>.
 
 <P>
-Using the deduction theorem, or a weak
-variant of it, is rarely used today in MPE when creating new proofs.
+Today, the deduction theorem (including the weak variant of it)
+is rarely used in MPE when creating new proofs.
+That is because we have found much easier ways to achieve the same result.
+The rest of this page explains these easier ways.
 
-<P>Current MPE conventions instead encourage using forms
-that are easier to deal with directly.
+<P><HR NOSHADE SIZE=1><A NAME="current"></A><B><FONT COLOR="#006633">Current approach to deductions</FONT></B> &nbsp;&nbsp;&nbsp; Current MPE conventions
+encourage using forms that are easier to deal with directly.
+
+<P>
 In particular, there is a preference for
-instead writing assertions in "deduction form"
-(applying this approach is called "deduction style").
-In an assertion in deduction form, the conclusion is prefixed with
-<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>
-<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT=' -&gt;' TITLE='-&gt;'>,
-and every hypothesis is a definition or is also prefixed with
-<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>
-<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT=' -&gt;' TITLE='-&gt;'>.
-In this form the antecedent
-<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>
-mimics the context in a deduction proof system.
-For more information, see
+writing assertions in "deduction form"
+instead of writing a proof that would require use of the deduction theorem.
+Applying this approach is called "deduction style".
+An assertion is in deduction form if the conclusion is an implication with
+the antecedent
+<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>,
+and every hypothesis is a definition or is also an implication with the
+antecedent
+<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>.
+In practice, a proof in deduction form will also contain many steps
+that are implications where the antedent is either
+<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'> or is a 
+conjunction (...<IMG SRC='vee.gif' WIDTH=11 HEIGHT=19 ALT=' \/' TITLE='\/'>...)
+including
+<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>.
+In deduction form the antecedent
+(e.g., <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>)
+mimics the context handled in the deduction theorem.
+
+<P>
+The deduction form antecedent can be used to represent
+the context necessary to support
+<A HREF="#natural-deduction-metamath">natural deduction systems</A>.
+Before we discuss how to do natural deduction in MPE, we will first
+explain what natural deduction is.
+
+<P><HR NOSHADE SIZE=1><A NAME="introduction-natural-deduction"></A><B><FONT COLOR="#006633">Introduction to Natural Deduction</FONT></B> &nbsp;&nbsp;&nbsp; 
+
+<P>
+Natural deduction is a widely-taught approach to logic.
+Those unfamiliar with natural deduction, or logic more general, may find
+<A HREF="mmset.html#Laboreo">[Laboreo]</A>
+to be a useful gentle introduction (with many examples).
+More detailed information is available from sources such as
+<A HREF="mmset.html#Pfenning">[Pfenning]</A> and
+<A HREF="mmset.html#Indrzejczak">[Indrzejczak]</A> (especially chapter 2).
+What follows here is a very brief summary.
+
+<P>
+Natural deduction (ND) systems, as such, were originally introduced in 1934
+by two logicians working independently: Ja&sacute;kowski and Gentzen.
+ND systems are supposed to reconstruct, in a formally proper way,
+traditional ways of mathematical reasoning
+(such as conditional proof, indirect proof, and proof by cases).
+As reconstructions they were naturally influenced by previous work,
+and many specific ND systems and notations have been developed since their
+original work.
+
+<P>
+<A HREF="mmset.html#Indrzejczak">[Indrzejczak]</A> pages 31-32
+suggests that any natural deductive system must satisfy at least these
+three criteria:
+<OL>
+<LI>There are some means for entering assumptions into a proof and also
+for eliminating them. Usually it requires some bookkeeping devices
+for indicating the scope of an assumption, and showing that a part of
+a proof depending on eliminated assumption is discharged.</LI>
+<LI>There are no (or, at least, very limited set of) axioms, because their
+role is taken over by the set of primitive rules for introduction and
+elimination of logical constants which means that elementary inferences
+instead of formulae are taken as primitive.</LI>
+<LI>Genuine ND system admits a lot of freedom in proof construction and
+possibility of applying several proof search strategies, like conditional
+proof, proof by cases, proof by reductio ad absurdum e.t.c.</LI>
+</OL>
+
+<P><HR NOSHADE SIZE=1><A NAME="natural-deduction-metamath"></A><B><FONT COLOR="#006633">Natural Deduction in Metamath</FONT></B> &nbsp;&nbsp;&nbsp; 
+
+<P>
+It is possible to develop proofs in MPE using a
+natural deduction (ND) approach as originally developed by
+Ja&sacute;kowski and Gentzen.
+In short, use deduction form, and apply MPE proven assertions
+that are equivalent to the ND rules.
+This approach for applying a natural deduction approach within MPE
+is described in more detail in the presentation
 <A HREF="http://us.metamath.org/ocat/natded.pdf">"Natural Deductions in the
 Metamath Proof Language" by Mario Carneiro, 2014</A>.
 
 <P>
-Many other theorems are presented as "tautologies" or "tautology form"
-(a form with no hypotheses or where all hypotheses are definitions).
-Tautologies are not deductions and thus require no special treatment.
-These forms
-are much easier to deal with directly in Metamath as compared to deductions,
-produce clearer proofs.
-simplifies proof reuse,
-and leads to fewer situations where the deduction theorem
-(and its variants) are needed.
-
-<P><HR NOSHADE SIZE=1><A NAME="natural-deduction"></A><B><FONT COLOR="#006633">Natural Deduction</FONT></B> &nbsp;&nbsp;&nbsp; 
-
-It is possible to develop proofs in MPE that follow the style
-Gentzen's natural deduction rules.
-In short, use deduction form, and apply MPE theorems that are their
-logical equivalent.
+In this style
+many steps are an implication, whose antecedent mimics the context
+(<IMG SRC='cgamma.gif' WIDTH=10 HEIGHT=19 ALT=' _G' TITLE='_G'>)
+of most ND systems.
+To add an assumption, the antecedent is modified to include it,
+typically by using <A HREF="adantr.html">adantr</A>, though
+<A HREF="simpr.html">simpr</A> is useful when you
+want to depend directly on a new assumption.
 
 <P>
-For more more information, see
-<A HREF="natded.html">natded</A>.
-Much more information is available from
-<A HREF="mmset.html#Indrzejczak">[Indrzejczak]</A>,
-<A HREF="mmset.html#Pfenning">[Pfenning]</A>,
+For an annotated example where some traditional ND rules are
+directly applied in MPE, see
+<A HREF="ex-natded5.8.html">ex-natded5.8</A>.
+Other examples of natural deduction (directly applied) in Metamath are
+<A HREF="ex-natded5.2.html">ex-natded5.2</A>,
+<A HREF="ex-natded5.2i.html">ex-natded5.2i</A>,
+<A HREF="ex-natded5.3.html">ex-natded5.3</A>,
+<A HREF="ex-natded5.3i.html">ex-natded5.3i</A>,
+<A HREF="ex-natded5.7.html">ex-natded5.7</A>,
+<A HREF="ex-natded5.8.html">ex-natded5.8</A>,
+<A HREF="ex-natded5.13.html">ex-natded5.13</A>,
 and
-<A HREF="mmset.html#Laboreo">[Laboreo]</A>.
+<A HREF="ex-natded9.26.html">ex-natded9.26</A>.
+
+<P>
+Only using specific natural deduction rules directly can lead to
+very long proofs, for exactly the same reason that only using axioms directly
+can lead to long proofs.
+If the goal is short and clear proofs, then it is better to reuse
+already-proven proven assertions in deduction form than to start from
+scratch each time.
+For example, observe that proof
+<A HREF="ex-natded5.8-2.html">ex-natded5.8-2</A>
+(which directly reuses other proven statements)
+is far shorter than
+<A HREF="ex-natded5.8.html">ex-natded5.8</A>
+(which is a line-for-line translation of directly using only
+common ND rules).
+
+<P>
+For a list of specific natural deduction rules, and their
+equivalents in Metamath, see <A HREF="natded.html">natded</A>.
+<!-- We may eventually copy that here. -->
+
 
 <TABLE BORDER=0 WIDTH="100%"><TR>
 
 <TD ALIGN=left VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
 &nbsp;</FONT></TD>
 
-<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 2-Dec-2008.</I>
+<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 10-Feb-2017.</I>
 <BR><FONT SIZE=-2 FACE=ARIAL>
 Copyright terms:
 <A HREF="../copyright.html#pd">Public domain</A>
