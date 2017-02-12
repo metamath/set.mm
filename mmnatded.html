@@ -196,11 +196,11 @@ writing assertions in "deduction form"
 instead of writing a proof that would require use of the deduction theorem.
 Applying this approach is called "deduction style".
 An assertion is in deduction form if the conclusion is an implication with
-the antecedent
-<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>,
+a wff variable as the antecedent
+(usually <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>),
 and every hypothesis is a definition or is also an implication with the
-antecedent
-<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>.
+same wff variable as the antecedent
+(usually <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>).
 In practice, a proof in deduction form will also contain many steps
 that are implications where the antedent is either
 <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'> or is a 
@@ -215,6 +215,9 @@ mimics the context handled in the deduction theorem.
 The deduction form antecedent can be used to represent
 the context necessary to support
 <A HREF="#natural-deduction-metamath">natural deduction systems</A>.
+For example, if the antecedent is a conjunction, the other terms can
+represent the temporary assumptions that are sometimes used in
+natural deduction.
 Before we discuss how to do natural deduction in MPE, we will first
 explain what natural deduction is.
 
