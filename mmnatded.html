@@ -198,21 +198,37 @@ Applying this approach is called "deduction style".
 An assertion is in deduction form if the conclusion is an implication with
 a wff variable as the antecedent
 (usually <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>),
-and every hypothesis is a definition or is also an implication with the
-same wff variable as the antecedent
+and every hypothesis is either a definition or is also an implication
+with the same wff variable as the antecedent
 (usually <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>).
+A definition can be for a class variable
+(this is a class variable followed by "=") or a wff variable
+(this is a wff variable followed by ` <-> `).
 In practice, a proof in deduction form will also contain many steps
 that are implications where the antedent is either
-<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'> or is a 
-conjunction (...<IMG SRC='vee.gif' WIDTH=11 HEIGHT=19 ALT=' \/' TITLE='\/'>...)
-including
-<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>.
+that wff variable
+(normally
+<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>)
+or is a conjunction
+(...<IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT=' /\' TITLE='/\'>...)
+including that wff variable
+(<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>).
+
+<P>
+For example,
+<A HREF="lhop.html">lhop</A> (L'Hopital's rule) is in deduction form.
+Its conclusion and most of its hypotheses are implications with
+usually <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>
+as the antecent.
+One hypothesis is not an implication;
+instead, it is a definition of a class variable, which is
+also allowed in deduction form.
+
+<P>
 In deduction form the antecedent
 (e.g., <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>)
 mimics the context handled in the deduction theorem.
-
-<P>
-The deduction form antecedent can be used to represent
+The deduction form antecedent can also be used to represent
 the context necessary to support
 <A HREF="#natural-deduction-metamath">natural deduction systems</A>.
 For example, if the antecedent is a conjunction, the other terms can
