@@ -67,6 +67,7 @@ img { margin-bottom: -4px }
 <LI> <A HREF="#introduction-natural-deduction">Introduction to natural deduction</A></LI>
 <LI> <A HREF="#natural-deduction-metamath">Natural deduction in Metamath</A></LI>
 <LI> <A HREF="#other-natural-deduction">Other Approaches to Natural Deduction in Metamath</A></LI>
+<LI> <A HREF="#definitions-deduction">Definitions in deduction form</A></LI>
 <LI> <A HREF="#natural-deduction-rules">Natural deduction rules</A></LI>
 </MENU>
 </TD><TD WIDTH="10%"></TD><TD ALIGN=right>
@@ -223,6 +224,9 @@ as the antecent.
 One hypothesis is not an implication;
 instead, it is a definition of a class variable, which is
 also allowed in deduction form.
+(Later, in the section on
+<A HREF="#definitions-deduction">Definitions in deduction form</A>,
+we'll explain why it definitions are allowed in deduction form.)
 
 <P>
 In deduction form the antecedent
@@ -360,6 +364,7 @@ In practice, the simplest and clearest
 approach to creating a proof depends on what is to be proved.
 
 <P><HR NOSHADE SIZE=1><A NAME="other-natural-deduction"></A><B><FONT COLOR="#006633">Other Approaches to Natural Deduction in Metamath</FONT></B> &nbsp;&nbsp;&nbsp; 
+<!-- TODO: Reformat more of the mathematical statements -->
 
 <P>
 The text above describes the most common ways to implement
@@ -388,6 +393,105 @@ HREF="https://web-beta.archive.org/web/20120402081711/http://wiki.planetmath.org
 deduction</A> [retrieved 21-Dec-2016].
 He reports that his system was inspired by a slide show,
 <A HREF="http://web.archive.org/web/20070206192038/http://www.ags.uni-sb.de/~chris/papers/2002-pisa.pdf">"From Natural Deduction to Sequent Calculus (and back)"</A>.
+
+<P><HR NOSHADE SIZE=1><A NAME="definitions-deduction"></A><B><FONT COLOR="#006633">Definitions in deduction form</FONT></B> &nbsp;&nbsp;&nbsp; 
+
+<P>
+At this point it's probably useful to explain in more detail <I>why</I>
+definitions do not require an antecedent in deduction form.
+The actual purpose of the
+<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'> antecedent
+is to introduce a hypothesis that may not
+always be satisfiable without some assumptions (and the exact nature of
+those assumptions is not known inside the theorem, so the generic
+"<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>"
+is used). If we are dealing with a true abbreviation, just a short way to
+write some symbols, then a definition
+"D = ..." hypothesis will either be satisfied
+by a similar hypothesis, or by theorem <A HREF="eqid.html">eqid</A>,
+which will force the substitution of "..." for "D" in the rest of the theorem.
+Since in any
+case, the hypothesis can be discharged with no assumptions, the
+"<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>"
+is not necessary.
+
+<P>
+Sometimes, we wish to discharge these hypotheses with something that isn't
+just an abbreviation. For example, if "J e. ( TopOn ` X )", then X is the
+base set of the topology J, so X = U. J (toponuni), but since X = U. J is
+not always true in this situation, we can't prove it without the hypothesis
+"J e. ( TopOn ` X )". What you have to do here, if you want to use a
+theorem that has the hypothesis "|- X = U. J" (to prove some statement |-
+P(X)), is use eqid anyway, producing a proof of P(U. J), then use ( ph -> X
+= U. J ) and equality theorems to get ( ph -&gt; ( P(X) &lt;-&gt;
+P(U. J) ) ), then
+use the proof of |- P(U. J) to yield |- ( ph -&gt; P(X) ). An example of this
+procedure is the derivation of ishaus2 (which has X = U. J given the
+context) from ishaus (which assumes X = U. J with no context).
+
+<P>
+The above procedure is always possible to do, but it is not always
+convenient since many steps may be needed for the equality proof. In cases
+where we specifically intend to discharge the assumption with something
+other than eqid, we sometimes add ph -&gt; to the equalities as well. A common
+example of this is in structure builder theorems, where we want to use a
+self-referential expression for the left hand side. For example, we might
+define a group by
+<PRE>
+$e |- ( ph -&gt; B = my-base-set )
+$e |- ( ph -&gt; .+ = my-group-op(B) )
+mygroupval $p |- ( ph -&gt; MyGroup = { &lt;. ( Base ` ndx ) ,
+                   B &gt;. , &lt;. ( +g ` ndx ) , .+ &gt;. } )
+</PRE>
+
+<P>
+Suppose that my-base-set is a complicated expression, and my-group-op(B)
+has a lot of references to B, so the fully expanded
+my-group-op(my-base-set) is really big, and we don't want to use it too
+many times. In the same context, we then prove:
+
+<PRE>
+$e |- ( ph -&gt; B = my-base-set )
+$e |- ( ph -&gt; .+ = my-group-op(B) )
+mygroupbaslem $p |- ( ph -&gt; ( Base ` MyGroup ) = my-base-set )
+mygroupaddlem $p |- ( ph -&gt; ( +g ` MyGroup ) = my-group-op(B) )
+</PRE>
+
+<P>
+and now we can bootstrap the whole thing:
+
+<PRE>
+mygroupbas $p |- ( ph -&gt; ( Base ` MyGroup ) = my-base-set ) $=
+1::eqid |- ( ph -&gt; my-base-set = my-base-set )
+2::eqid |- ( ph -&gt; my-group-op = my-group-op(my-base-set) )
+qed:1,2:mygroupbaslem |- ( ph -&gt; ( Base ` MyGroup ) = my-base-set )
+
+mygroupadd $p |- ( ph -&gt; ( +g ` MyGroup ) = my-base-set ) $=
+1::mygroupbas |- ( ph -&gt; ( Base ` MyGroup ) = my-base-set )
+2::eqid |- ( ph -&gt; my-group-op( ( Base ` MyGroup ) ) = my-group-op( ( Base
+` MyGroup ) ) )
+qed:1,2:mygroupbaslem |- ( ph -&gt; ( +g ` MyGroup ) = my-group-op( ( Base `
+MyGroup ) ) )
+</PRE>
+
+<P>
+Note that the contained references of my-group-op are now referencing
+( Base ` MyGroup ), which makes this "definition" of a component of MyGroup
+self-referential. But that was the goal, and we have mygroupbas to expand
+it as necessary. A more elaborate version of this idea is done in prdsval,
+with prdsbas, prdsplusg, prdsmulr, etc pulling off components and
+bootstrapping using the previous theorems.
+
+<P>
+Finally, there are a few places where ( ph -&gt; X = ... ) definitions are
+used by convention, specifically grppropd and other *propd theorems, and
+isgrpd and other is*d theorems for structures.
+
+<P>
+As a rule of thumb: Use X = ... abbreviations unless you need to use a
+non-identity abbreviation for X later.
+
+
 
 <P><HR NOSHADE SIZE=1><A NAME="natural-deduction-rules"></A><B><FONT COLOR="#006633">Natural Deduction Rules</FONT></B> &nbsp;&nbsp;&nbsp; 
 
