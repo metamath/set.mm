@@ -310,28 +310,33 @@ MPE is fundamentally a <B>Hilbert-style</B> system.
 However, it is possible to develop proofs in MPE using a
 natural deduction (ND) approach as originally developed by
 Ja&sacute;kowski and Gentzen.
+
+<P>
 The most common and recommended approach is to
 use deduction form and apply MPE proven assertions
 that are equivalent to the ND rules.
+See the <A HREF="#natural-deduction-rules">MPE equivalents of typical
+natural deduction (ND) rules</A> for the MPE equivalents.
 This approach for applying a natural deduction approach within MPE
 is described in more detail in the presentation
 <A HREF="http://us.metamath.org/ocat/natded.pdf">"Natural Deductions in the
 Metamath Proof Language" by Mario Carneiro, 2014</A>.
-You can then use the
-<A HREF="#natural-deduction-rules">MPE equivalents of typical
-natural deduction rules</A>.
 
 <P>
 In this style
 many steps are an implication, whose antecedent mimics the context
 (<IMG SRC='cgamma.gif' WIDTH=10 HEIGHT=19 ALT=' _G' TITLE='_G'>)
 of most ND systems.
-To add an assumption, the antecedent is modified to include it,
-typically by using <A HREF="adantr.html">adantr</A>, though
-<A HREF="simpr.html">simpr</A> is useful when you
-want to depend directly on a new assumption.
+To add an assumption, you would typically use
+<A HREF="simpr.html">simpr</A> to show that adding the assumption to the
+antecedent implies the assumption in the consequence.
+Then, every time you want to use an assertion in the hypothesis scope
+that starts outside that scope, simply modify the assertion
+(typically using <A HREF="adantr.html">adantr</A>)
+to add the ND hypothesis assumption to the antecedent.
 
 <P>
+This is most easily understood by looking at some examples.
 For an annotated example where some traditional ND rules are
 directly applied in MPE, see
 <A HREF="ex-natded5.2.html">ex-natded5.2</A>,
@@ -345,7 +350,7 @@ and
 <P>
 Only using specific natural deduction rules directly can lead to
 very long proofs, for exactly the same reason that only using axioms directly
-can lead to long proofs.
+in Hilbert-style proofs can lead to long proofs.
 If the goal is short and clear proofs, then it is better to reuse
 already-proven proven assertions in deduction form than to start from
 scratch each time.
