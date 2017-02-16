@@ -1,0 +1,432 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+
+<!-- improve mobile display -->
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+
+<META HTTP-EQUIV="Content-Type"
+ CONTENT="text/html; charset=iso-8859-1">
+ <TITLE>Deduction Form and Natural Deduction - Metamath Proof Explorer</TITLE>
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+
+<STYLE TYPE="text/css">
+<!--
+/* Math symbol image will be shifted down 4 pixels to align with normal
+  text for compatibility with various browsers.  The old ALIGN=TOP for
+  math symbol images did not align in all browsers and should be deleted.
+  All other images must override this shift with STYLE="margin-bottom:0px".
+  (2-Oct-2015 nm) */
+img { margin-bottom: -4px }
+-->
+</STYLE>
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" STYLE="padding: 0px 8px">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP><A HREF="mmset.html"><IMG SRC="mm.gif"
+      BORDER=0
+      ALT="Metamath Proof Explorer Home"
+      TITLE="Metamath Proof Explorer Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"></A>
+    </TD>
+    <TD ALIGN=CENTER VALIGN=TOP><FONT SIZE="+3"
+      COLOR="#006633"><B>Metamath Proof Explorer</B></FONT><BR>
+       <FONT SIZE="+2" COLOR="#006633"><B>Deduction Form and
+        Natural Deduction</B></FONT>
+    </TD>
+    <TD NOWRAP ALIGN=RIGHT VALIGN=TOP> &nbsp;
+    </TD>
+  </TR>
+
+  <TR>
+    <TD COLSPAN=3 ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif>
+      <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
+        &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmset.html">MPE Home</A>&nbsp; &gt;
+      &nbsp;Deductions
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+<HR NOSHADE SIZE=1>
+
+<TABLE WIDTH="100%" BORDER=0><TR><TD WIDTH="50%">
+
+<B><FONT COLOR="#006633">Contents of this page</FONT></B>
+
+<MENU>
+<LI> <A HREF="#introduction">Introduction to deduction</A></LI>
+<LI> <A HREF="#current">Current approach to deductions</A></LI>
+<LI> <A HREF="#introduction-natural-deduction">Introduction to natural deduction</A></LI>
+<LI> <A HREF="#natural-deduction-metamath">Natural deduction in Metamath</A></LI>
+<LI> <A HREF="#other-natural-deduction">Other Approaches to Natural Deduction in Metamath</A></LI>
+<LI> <A HREF="#natural-deduction-rules">Natural deduction rules</A></LI>
+</MENU>
+</TD><TD WIDTH="10%"></TD><TD ALIGN=right>
+
+
+
+<FONT COLOR="#006633"><I>
+A Theorem fine is Deduction,<BR>
+For it allows work-reduction:<BR>
+To show "A implies B",<BR>
+Assume A and prove B;<BR>
+Quite often a simpler production.<BR>
+</I><BR>
+
+--Stefan Bilaniuk<BR>
+  <A HREF="http://euclid.trentu.ca/math/sb/pcml/welcome.html"
+  ><I>A Problem Course in Mathematical Logic</I>, 2003</A> [external]
+</FONT>
+
+</TD></TR></TABLE>
+
+<P><HR NOSHADE SIZE=1><A NAME="introduction"></A><B><FONT
+COLOR="#006633">Introduction to deduction</FONT></B>
+&nbsp;&nbsp;&nbsp;
+A <B>deduction</B> (also called an <B>inference</B>) is a kind of
+statement that needs some hypotheses to be true in order for its
+conclusion to be true.  A <B>theorem</B>, on the other hand, has no
+hypotheses (or all its hypotheses are definitions).
+Informally we may call both of them theorems, but on this
+page we will stick to the strict definition.
+
+<P>
+When being rigorous,
+it is surprisingly complicated to convert some deduction in the form
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='_sigma.gif' WIDTH=10 HEIGHT=19 ALT='si'
+ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19
+ALT='=&gt;'>&nbsp;&nbsp;&nbsp; <IMG SRC='_vdash.gif' WIDTH=10
+HEIGHT=19 ALT='|-'> <IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19
+ALT='ta'>
+into some theorem in the form
+<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
+ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
+SRC='_sigma.gif' WIDTH=10 HEIGHT=19 ALT='si'> <IMG
+SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG
+SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'><IMG SRC='rp.gif'
+WIDTH=5 HEIGHT=19 ALT=')'>.
+The deduction says,
+"if we can prove
+<IMG SRC='_sigma.gif' WIDTH=10 HEIGHT=19 ALT='si'>
+ then we can prove
+<IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'>,&quot;
+which is in some
+sense weaker than saying
+&quot;<IMG SRC='_sigma.gif' WIDTH=10 HEIGHT=19 ALT='si'>
+implies
+<IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'>.&quot;
+In particular, there is no axiom of logic that
+permits us to directly obtain the theorem given the deduction.
+The conversion of a deduction to a theorem does not even hold in general
+for <A HREF="../qlegif/mmql.html#prop">quantum propositional calculus</A>,
+which is a weak subset of classical propositional calculus.
+It has been shown that adding the Standard Deduction Theorem
+to quantum propositional calculus turns it into classical
+propositional calculus!
+
+<P>
+This is in contrast to going the other way;
+if we have the theorem, it is easy to recover the
+deduction using modus ponens <A HREF="ax-mp.html">ax-mp</A>.
+An example of this is the derivation of the inference
+<A HREF="simpli.html">simpli</A> from the theorem <A
+HREF="simpl.html">simpl</A>.
+
+<P>
+In traditional logic books, this is often resolved using a metatheorem
+called the <B>Deduction Theorem</B> (discovered independently
+by Herbrand and Tarski around 1930).
+The deduction theorem, aka the standard deduction theorem,
+provides an algorithm for constructing a proof of
+a theorem from the proof of its corresponding deduction.
+See, for example, Margaris, <I>First Order Mathematical Logic,</I> p. 56.
+To construct a proof for a theorem, the deduction theorem's algorithm
+looks at each step in the proof of the original deduction and rewrites
+the step with several steps wherein the hypothesis is eliminated and
+becomes an antecedent.
+Ordinary mathematical proofs invoke this algorithm when converting
+a deduction into a theorem.
+
+<P>
+However, in practice, no one actually carries out this conversion
+algorithm in ordinary mathematics.
+Instead, mathematicians often stop once they believe the conversion
+algorithm could be done.
+This sharply contrasts with Metamath's philosophical goal, which is
+to show all proofs <I>directly</I> from
+the axiom system in its database, and not skip steps or
+rely on higher-level metatheorems derived outside of that axiom system.
+
+<P>Metamath is capable of converting a hypothesis into an antecedent.
+We have found that in many cases only a weakened form
+of the deduction theorem is necessary,
+called the <B>weak deduction theorem</B>
+(<A HREF="dedth.html">dedth</A> and its variants).
+The weak deduction theorem is often easier to use, when it is necessary
+to use some version of the deduction theorem in the
+Metamath Proof Explorer (MPE).
+Earlier versions of MPE applied the deduction theorem, or a weakened
+form of it, in a number of situations.
+For more information about using the deduction theorem and the
+weak deduction theorem, including more details of why this can be
+complicated, see the
+<A HREF="mmdeduction.html">deduction theorem page</A>.
+
+<P>
+Today, the deduction theorem (including the weak variant of it)
+is rarely used in MPE when creating new proofs.
+That is because we have found much easier ways to achieve the same result.
+The rest of this page explains these easier ways.
+
+<P><HR NOSHADE SIZE=1><A NAME="current"></A><B><FONT COLOR="#006633">Current approach to deductions</FONT></B> &nbsp;&nbsp;&nbsp; Current MPE conventions
+encourage using forms that are easier to deal with directly.
+
+<P>
+In particular, there is a preference for
+writing assertions in "deduction form"
+instead of writing a proof that would require use of the deduction theorem.
+Applying this approach is called "deduction style".
+An assertion is in deduction form if the conclusion is an implication with
+a wff variable as the antecedent
+(usually <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>),
+and every hypothesis is either a definition or is also an implication
+with the same wff variable as the antecedent
+(usually <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>).
+A definition can be for a class variable
+(this is a class variable followed by "=") or a wff variable
+(this is a wff variable followed by ` <-> `).
+In practice, a proof in deduction form will also contain many steps
+that are implications where the antedent is either
+that wff variable
+(normally
+<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>)
+or is a conjunction
+(...<IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT=' /\' TITLE='/\'>...)
+including that wff variable
+(<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>).
+
+<P>
+For example,
+<A HREF="lhop.html">lhop</A> (L'Hopital's rule) is in deduction form.
+Its conclusion and most of its hypotheses are implications with
+usually <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>
+as the antecent.
+One hypothesis is not an implication;
+instead, it is a definition of a class variable, which is
+also allowed in deduction form.
+
+<P>
+In deduction form the antecedent
+(e.g., <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>)
+mimics the context handled in the deduction theorem.
+The deduction form antecedent can also be used to represent
+the context necessary to support
+<A HREF="#natural-deduction-metamath">natural deduction systems</A>.
+For example, if the antecedent is a conjunction, the other terms can
+represent the temporary assumptions that are sometimes used in
+natural deduction.
+Before we discuss how to do natural deduction in MPE, we will first
+explain what natural deduction is.
+
+<P><HR NOSHADE SIZE=1><A NAME="introduction-natural-deduction"></A><B><FONT COLOR="#006633">Introduction to Natural Deduction</FONT></B> &nbsp;&nbsp;&nbsp; 
+
+<P>
+Natural deduction is a widely-taught approach to logic.
+Those unfamiliar with natural deduction, or logic more general, may find
+<A HREF="mmset.html#Laboreo">[Laboreo]</A>
+to be a useful gentle introduction (with many examples).
+More detailed information is available from sources such as
+<A HREF="mmset.html#Pfenning">[Pfenning]</A> and
+<A HREF="mmset.html#Indrzejczak">[Indrzejczak]</A> (especially chapter 2).
+What follows here is a very brief summary.
+
+<P>
+Natural deduction (ND) systems, as such, were originally introduced in 1934
+by two logicians working independently: Ja&sacute;kowski and Gentzen.
+ND systems are supposed to reconstruct, in a formally proper way,
+traditional ways of mathematical reasoning
+(such as conditional proof, indirect proof, and proof by cases).
+As reconstructions they were naturally influenced by previous work,
+and many specific ND systems and notations have been developed since their
+original work.
+
+<P>
+<A HREF="mmset.html#Indrzejczak">[Indrzejczak]</A> pages 31-32
+suggests that any natural deductive system must satisfy at least these
+three criteria:
+<OL>
+<LI>"There are some means for entering assumptions into a proof and also
+for eliminating them. Usually it requires some bookkeeping devices
+for indicating the scope of an assumption, and showing that a part of
+a proof depending on eliminated assumption is discharged.</LI>
+<LI>There are no (or, at least, very limited set of) axioms, because their
+role is taken over by the set of primitive rules for introduction and
+elimination of logical constants which means that elementary inferences
+instead of formulae are taken as primitive.</LI>
+<LI>[A genuine] ND system admits a lot of freedom in proof construction and
+possibility of applying several proof search strategies, like conditional
+proof, proof by cases, proof by reductio ad absurdum etc."</LI>
+</OL>
+
+<P>
+There are many variations in ND systems.
+<A HREF="mmset.html#Indrzejczak">[Indrzejczak]</A> page 32 believes that
+two kinds of variations are especially important:
+<OL>
+<LI>The kind of basic items (data structures) on which inference rules are
+defined.  These notes of a proof tree
+"may be formulae (F-systems), sequents (S-systems),
+sets of formulae (generalized clauses) or other structured data
+(e.g. formulae with labels)".
+<LI>The overall format of proof representation, which are generally
+"trees (tree- or Gentzen-format or T-system...) or sequences
+(linear- or Ja&sacute;kowski format or L-system...)."
+</OL>
+The various Ja&sacute;kowski systems for creating a linear system
+of proof are popular.
+Many different graphic devices have been added to show groupings; a
+"simplified account, where each assumption is entered with the vertical
+line which continues until this subproof is in force, is due to Fitch,
+whereas [the] popular system of Copi applies bracketing to closed subproofs"
+(<A HREF="mmset.html#Indrzejczak">[Indrzejczak]</A> page 42).
+
+<P><HR NOSHADE SIZE=1><A NAME="natural-deduction-metamath"></A><B><FONT COLOR="#006633">Natural Deduction in Metamath</FONT></B> &nbsp;&nbsp;&nbsp; 
+
+<P>
+MPE is fundamentally a <B>Hilbert-style</B> system.
+However, it is possible to develop proofs in MPE using a
+natural deduction (ND) approach as originally developed by
+Ja&sacute;kowski and Gentzen.
+The most common and recommended approach is to
+use deduction form and apply MPE proven assertions
+that are equivalent to the ND rules.
+This approach for applying a natural deduction approach within MPE
+is described in more detail in the presentation
+<A HREF="http://us.metamath.org/ocat/natded.pdf">"Natural Deductions in the
+Metamath Proof Language" by Mario Carneiro, 2014</A>.
+You can then use the
+<A HREF="#natural-deduction-rules">MPE equivalents of typical
+natural deduction rules</A>.
+
+<P>
+In this style
+many steps are an implication, whose antecedent mimics the context
+(<IMG SRC='cgamma.gif' WIDTH=10 HEIGHT=19 ALT=' _G' TITLE='_G'>)
+of most ND systems.
+To add an assumption, the antecedent is modified to include it,
+typically by using <A HREF="adantr.html">adantr</A>, though
+<A HREF="simpr.html">simpr</A> is useful when you
+want to depend directly on a new assumption.
+
+<P>
+For an annotated example where some traditional ND rules are
+directly applied in MPE, see
+<A HREF="ex-natded5.2.html">ex-natded5.2</A>,
+<A HREF="ex-natded5.3.html">ex-natded5.3</A>,
+<A HREF="ex-natded5.7.html">ex-natded5.7</A>,
+<A HREF="ex-natded5.8.html">ex-natded5.8</A>,
+<A HREF="ex-natded5.13.html">ex-natded5.13</A>,
+and
+<A HREF="ex-natded9.26.html">ex-natded9.26</A>.
+
+<P>
+Only using specific natural deduction rules directly can lead to
+very long proofs, for exactly the same reason that only using axioms directly
+can lead to long proofs.
+If the goal is short and clear proofs, then it is better to reuse
+already-proven proven assertions in deduction form than to start from
+scratch each time.
+For example, observe that proof
+<A HREF="ex-natded5.8.html">ex-natded5.8</A> -
+which is a line-for-line translation of directly using only common ND rules -
+is much longer than
+<A HREF="ex-natded5.8-2.html">ex-natded5.8-2</A>
+(which directly reuses other proven statements)
+and <A HREF="ex-natded5.2i.html">ex-natded5.2i</A>
+(which doesn't worry about context).
+Similarly, <A HREF="ex-natded5.3.html">ex-natded5.3</A> is longer than
+<A HREF="ex-natded5.3-2.html">ex-natded5.3-2</A> and
+<A HREF="ex-natded5.3i.html">ex-natded5.3i</A>.
+In practice, the simplest and clearest
+approach to creating a proof depends on what is to be proved.
+
+<P><HR NOSHADE SIZE=1><A NAME="other-natural-deduction"></A><B><FONT COLOR="#006633">Other Approaches to Natural Deduction in Metamath</FONT></B> &nbsp;&nbsp;&nbsp; 
+
+<P>
+The text above describes the most common ways to implement
+natural deducation approaches in metamath and MPE.
+However, there are alternative approaches for using natural deduction
+in metamath.
+
+<P>
+Alan Sare has worked on an alternative within MPE, called virtual deduction.
+Much more information is available at <A HREF="wvd1.html">wvd1</A>,
+and an example is at <A HREF="vk15.4jVD.html">vk15.4jVD</A>
+(used to generate <A HREF="vk15.4j.html">vk15.4j</A>).
+This approach essentially replaces the outermost implication arrow
+<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT=' -&gt;' TITLE='-&gt;'>
+with a different symbol
+<IMG SRC='blacktriangleright.gif' WIDTH=11 HEIGHT=19 ALT=' -&gt;.' TITLE='-&gt;.'>.
+Alan Sare believes this change makes it easier to visualize proofs,
+while others disagree.
+The <A HREF="http://us.metamath.org/other.html#completeusersproof">completeusersproof tool</A>
+is available which supports this alternative approach.
+
+<P>
+Fr&eacute;d&eacute;ric Lin&eacute; has developed a different
+metamath-based system to support natural deduction system called <A
+HREF="https://web-beta.archive.org/web/20120402081711/http://wiki.planetmath.org/cgi-bin/wiki.pl/Natural_deduction_based_metamath_system">natural
+deduction</A> [retrieved 21-Dec-2016].
+He reports that his system was inspired by a slide show,
+<A HREF="http://web.archive.org/web/20070206192038/http://www.ags.uni-sb.de/~chris/papers/2002-pisa.pdf">"From Natural Deduction to Sequent Calculus (and back)"</A>.
+Notationally this system ends up being awkward for practical use.
+
+<P><HR NOSHADE SIZE=1><A NAME="natural-deduction-rules"></A><B><FONT COLOR="#006633">Natural Deduction Rules</FONT></B> &nbsp;&nbsp;&nbsp; 
+
+<P>
+For more information see
+<A HREF="natded.html">natded, which shows typical natural
+deduction rules and their metamath equivalents</A>.
+<!-- We may eventually copy that here, but then editing is a pain.
+     By having its own heading it should be more obvious. -->
+
+
+<TABLE BORDER=0 WIDTH="100%"><TR>
+
+<TD ALIGN=left VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
+&nbsp;</FONT></TD>
+
+<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 10-Feb-2017.</I>
+<BR><FONT SIZE=-2 FACE=ARIAL>
+Copyright terms:
+<A HREF="../copyright.html#pd">Public domain</A>
+</FONT></TD>
+
+<TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT FACE="ARIAL" SIZE=-2>
+<A
+HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
+[external]
+</FONT>
+</TD>
+
+</TR></TABLE>
+
+<!-- <SCRIPT SRC="http://www.google-analytics.com/urchin.js" TYPE="text/javascript">
+</SCRIPT>
+<SCRIPT TYPE="text/javascript">
+_uacct = "UA-1862729-1";
+urchinTracker();
+</SCRIPT>
+-->
+
+</BODY></HTML>
