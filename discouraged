@@ -12724,8 +12724,6 @@
 "ubthlem3" is used by "ubth".
 "un0.1" is used by "sspwimpVD".
 "un2122" is used by "suctrALT3".
-"unT1" is used by "sspwimpALT".
-"unT1" is used by "unT21".
 "unop" is used by "cnvunop".
 "unop" is used by "counop".
 "unop" is used by "unopadj".
@@ -12749,6 +12747,8 @@
 "unopnorm" is used by "nmopun".
 "uun0.1" is used by "sspwimp".
 "uun0.1" is used by "un0.1".
+"uunT1" is used by "sspwimpALT".
+"uunT1" is used by "uunT21".
 "uzindOLD" is used by "uzind3OLD".
 "vacn" is used by "dipcn".
 "vacn" is used by "hlimadd".
@@ -13217,11 +13217,14 @@ New usage of "2sb5ndVD" is discouraged (0 uses).
 New usage of "2uasban" is discouraged (0 uses).
 New usage of "2uasbanh" is discouraged (1 uses).
 New usage of "2uasbanhVD" is discouraged (0 uses).
+New usage of "3anidm12p1" is discouraged (0 uses).
+New usage of "3anidm12p2" is discouraged (0 uses).
 New usage of "3atnelvolN" is discouraged (2 uses).
 New usage of "3ax5" is discouraged (1 uses).
 New usage of "3ax5VD" is discouraged (0 uses).
 New usage of "3dimlem3OLDN" is discouraged (0 uses).
 New usage of "3dimlem4OLDN" is discouraged (0 uses).
+New usage of "3impdirp1" is discouraged (0 uses).
 New usage of "3impexpVD" is discouraged (0 uses).
 New usage of "3impexpbicom" is discouraged (1 uses).
 New usage of "3impexpbicomVD" is discouraged (0 uses).
@@ -13366,6 +13369,7 @@ New usage of "ajmoi" is discouraged (1 uses).
 New usage of "ajval" is discouraged (0 uses).
 New usage of "alrim3con13v" is discouraged (1 uses).
 New usage of "an43OLD" is discouraged (0 uses).
+New usage of "anabss7p1" is discouraged (0 uses).
 New usage of "anandii" is discouraged (2 uses).
 New usage of "ancomsimpVD" is discouraged (0 uses).
 New usage of "anim12OLD" is discouraged (0 uses).
@@ -14901,9 +14905,24 @@ New usage of "ee33VD" is discouraged (0 uses).
 New usage of "ee33an" is discouraged (3 uses).
 New usage of "ee3bir" is discouraged (0 uses).
 New usage of "ee7.2aOLD" is discouraged (0 uses).
+New usage of "eel000cT" is discouraged (0 uses).
+New usage of "eel00cT" is discouraged (0 uses).
 New usage of "eel021old" is discouraged (2 uses).
 New usage of "eel0321old" is discouraged (2 uses).
+New usage of "eel0T1" is discouraged (0 uses).
+New usage of "eel0TT" is discouraged (0 uses).
+New usage of "eel0cT" is discouraged (0 uses).
 New usage of "eel2122old" is discouraged (2 uses).
+New usage of "eelT" is discouraged (0 uses).
+New usage of "eelT0" is discouraged (0 uses).
+New usage of "eelT00" is discouraged (0 uses).
+New usage of "eelT01" is discouraged (0 uses).
+New usage of "eelT1" is discouraged (0 uses).
+New usage of "eelT11" is discouraged (0 uses).
+New usage of "eelT12" is discouraged (0 uses).
+New usage of "eelTT" is discouraged (0 uses).
+New usage of "eelTT1" is discouraged (0 uses).
+New usage of "eelTTT" is discouraged (0 uses).
 New usage of "eexinst01" is discouraged (2 uses).
 New usage of "eexinst11" is discouraged (2 uses).
 New usage of "efghgrp" is discouraged (1 uses).
@@ -16984,6 +17003,7 @@ New usage of "sbcoreleleqVD" is discouraged (0 uses).
 New usage of "sbcss" is discouraged (0 uses).
 New usage of "sbcssVD" is discouraged (0 uses).
 New usage of "sbmoOLD" is discouraged (0 uses).
+New usage of "sbtT" is discouraged (0 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
 New usage of "sh0" is discouraged (13 uses).
 New usage of "sh0le" is discouraged (6 uses).
@@ -17289,8 +17309,6 @@ New usage of "un0.1" is discouraged (1 uses).
 New usage of "un01" is discouraged (0 uses).
 New usage of "un10" is discouraged (0 uses).
 New usage of "un2122" is discouraged (1 uses).
-New usage of "unT1" is discouraged (2 uses).
-New usage of "unT21" is discouraged (0 uses).
 New usage of "undif3VD" is discouraged (0 uses).
 New usage of "unierri" is discouraged (0 uses).
 New usage of "unipwr" is discouraged (0 uses).
@@ -17306,6 +17324,36 @@ New usage of "unopnOLD" is discouraged (0 uses).
 New usage of "unopnorm" is discouraged (2 uses).
 New usage of "unpreimaOLD" is discouraged (0 uses).
 New usage of "uun0.1" is discouraged (2 uses).
+New usage of "uun111" is discouraged (0 uses).
+New usage of "uun121" is discouraged (0 uses).
+New usage of "uun121p1" is discouraged (0 uses).
+New usage of "uun123" is discouraged (0 uses).
+New usage of "uun123p1" is discouraged (0 uses).
+New usage of "uun123p2" is discouraged (0 uses).
+New usage of "uun123p3" is discouraged (0 uses).
+New usage of "uun123p4" is discouraged (0 uses).
+New usage of "uun132" is discouraged (0 uses).
+New usage of "uun132p1" is discouraged (0 uses).
+New usage of "uun2131" is discouraged (0 uses).
+New usage of "uun2131p1" is discouraged (0 uses).
+New usage of "uun2221" is discouraged (0 uses).
+New usage of "uun2221p1" is discouraged (0 uses).
+New usage of "uun2221p2" is discouraged (0 uses).
+New usage of "uunT1" is discouraged (2 uses).
+New usage of "uunT11" is discouraged (0 uses).
+New usage of "uunT11p1" is discouraged (0 uses).
+New usage of "uunT11p2" is discouraged (0 uses).
+New usage of "uunT12" is discouraged (0 uses).
+New usage of "uunT12p1" is discouraged (0 uses).
+New usage of "uunT12p2" is discouraged (0 uses).
+New usage of "uunT12p3" is discouraged (0 uses).
+New usage of "uunT12p4" is discouraged (0 uses).
+New usage of "uunT12p5" is discouraged (0 uses).
+New usage of "uunT1p1" is discouraged (0 uses).
+New usage of "uunT21" is discouraged (0 uses).
+New usage of "uunTT1" is discouraged (0 uses).
+New usage of "uunTT1p1" is discouraged (0 uses).
+New usage of "uunTT1p2" is discouraged (0 uses).
 New usage of "uzind3OLD" is discouraged (0 uses).
 New usage of "uzindOLD" is discouraged (1 uses).
 New usage of "uzm1OLD" is discouraged (0 uses).
@@ -17418,12 +17466,15 @@ Proof modification of "2sb5ndVD" is discouraged (230 steps).
 Proof modification of "2uasban" is discouraged (34 steps).
 Proof modification of "2uasbanh" is discouraged (214 steps).
 Proof modification of "2uasbanhVD" is discouraged (313 steps).
+Proof modification of "3anidm12p1" is discouraged (5 steps).
+Proof modification of "3anidm12p2" is discouraged (19 steps).
 Proof modification of "3ax5" is discouraged (29 steps).
 Proof modification of "3ax5VD" is discouraged (48 steps).
 Proof modification of "3dimlem3OLDN" is discouraged (335 steps).
 Proof modification of "3dimlem4OLDN" is discouraged (338 steps).
 Proof modification of "3imp21" is discouraged (11 steps).
 Proof modification of "3imp31" is discouraged (11 steps).
+Proof modification of "3impdirp1" is discouraged (29 steps).
 Proof modification of "3impexpVD" is discouraged (104 steps).
 Proof modification of "3impexpbicomVD" is discouraged (89 steps).
 Proof modification of "3impexpbicomiVD" is discouraged (28 steps).
@@ -17473,6 +17524,7 @@ Proof modification of "addsubeq4OLD" is discouraged (5 steps).
 Proof modification of "alephf1ALT" is discouraged (47 steps).
 Proof modification of "alrim3con13v" is discouraged (74 steps).
 Proof modification of "an43OLD" is discouraged (32 steps).
+Proof modification of "anabss7p1" is discouraged (5 steps).
 Proof modification of "anandii" is discouraged (36 steps).
 Proof modification of "ancomsimpVD" is discouraged (22 steps).
 Proof modification of "anmp" is discouraged (8 steps).
@@ -17758,9 +17810,24 @@ Proof modification of "ee33VD" is discouraged (68 steps).
 Proof modification of "ee33an" is discouraged (14 steps).
 Proof modification of "ee3bir" is discouraged (11 steps).
 Proof modification of "ee7.2aOLD" is discouraged (134 steps).
+Proof modification of "eel000cT" is discouraged (19 steps).
+Proof modification of "eel00cT" is discouraged (13 steps).
 Proof modification of "eel021old" is discouraged (10 steps).
 Proof modification of "eel0321old" is discouraged (11 steps).
+Proof modification of "eel0T1" is discouraged (62 steps).
+Proof modification of "eel0TT" is discouraged (28 steps).
+Proof modification of "eel0cT" is discouraged (8 steps).
 Proof modification of "eel2122old" is discouraged (50 steps).
+Proof modification of "eelT" is discouraged (8 steps).
+Proof modification of "eelT0" is discouraged (14 steps).
+Proof modification of "eelT00" is discouraged (47 steps).
+Proof modification of "eelT01" is discouraged (56 steps).
+Proof modification of "eelT1" is discouraged (10 steps).
+Proof modification of "eelT11" is discouraged (53 steps).
+Proof modification of "eelT12" is discouraged (52 steps).
+Proof modification of "eelTT" is discouraged (22 steps).
+Proof modification of "eelTT1" is discouraged (52 steps).
+Proof modification of "eelTTT" is discouraged (59 steps).
 Proof modification of "eexinst01" is discouraged (15 steps).
 Proof modification of "eexinst11" is discouraged (19 steps).
 Proof modification of "el021old" is discouraged (18 steps).
@@ -18155,6 +18222,7 @@ Proof modification of "sbcss" is discouraged (130 steps).
 Proof modification of "sbcssVD" is discouraged (223 steps).
 Proof modification of "sbmoOLD" is discouraged (5 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
+Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "shmulclOLD" is discouraged (101 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
 Proof modification of "simplbi2comgVD" is discouraged (42 steps).
@@ -18240,15 +18308,43 @@ Proof modification of "un0.1" is discouraged (21 steps).
 Proof modification of "un01" is discouraged (18 steps).
 Proof modification of "un10" is discouraged (18 steps).
 Proof modification of "un2122" is discouraged (44 steps).
-Proof modification of "unT1" is discouraged (34 steps).
-Proof modification of "unT21" is discouraged (6 steps).
 Proof modification of "undif3VD" is discouraged (295 steps).
 Proof modification of "unipwr" is discouraged (32 steps).
 Proof modification of "unipwrVD" is discouraged (41 steps).
-Proof modification of "unisnALT" is discouraged (146 steps).
+Proof modification of "unisnALT" is discouraged (519 steps).
 Proof modification of "unopnOLD" is discouraged (4 steps).
 Proof modification of "unpreimaOLD" is discouraged (4 steps).
 Proof modification of "uun0.1" is discouraged (32 steps).
+Proof modification of "uun111" is discouraged (31 steps).
+Proof modification of "uun121" is discouraged (14 steps).
+Proof modification of "uun121p1" is discouraged (14 steps).
+Proof modification of "uun123" is discouraged (15 steps).
+Proof modification of "uun123p1" is discouraged (6 steps).
+Proof modification of "uun123p2" is discouraged (6 steps).
+Proof modification of "uun123p3" is discouraged (6 steps).
+Proof modification of "uun123p4" is discouraged (6 steps).
+Proof modification of "uun132" is discouraged (16 steps).
+Proof modification of "uun132p1" is discouraged (36 steps).
+Proof modification of "uun2131" is discouraged (6 steps).
+Proof modification of "uun2131p1" is discouraged (29 steps).
+Proof modification of "uun2221" is discouraged (117 steps).
+Proof modification of "uun2221p1" is discouraged (154 steps).
+Proof modification of "uun2221p2" is discouraged (154 steps).
+Proof modification of "uunT1" is discouraged (34 steps).
+Proof modification of "uunT11" is discouraged (32 steps).
+Proof modification of "uunT11p1" is discouraged (48 steps).
+Proof modification of "uunT11p2" is discouraged (48 steps).
+Proof modification of "uunT12" is discouraged (31 steps).
+Proof modification of "uunT12p1" is discouraged (45 steps).
+Proof modification of "uunT12p2" is discouraged (63 steps).
+Proof modification of "uunT12p3" is discouraged (63 steps).
+Proof modification of "uunT12p4" is discouraged (49 steps).
+Proof modification of "uunT12p5" is discouraged (49 steps).
+Proof modification of "uunT1p1" is discouraged (20 steps).
+Proof modification of "uunT21" is discouraged (6 steps).
+Proof modification of "uunTT1" is discouraged (31 steps).
+Proof modification of "uunTT1p1" is discouraged (47 steps).
+Proof modification of "uunTT1p2" is discouraged (47 steps).
 Proof modification of "uzind3OLD" is discouraged (98 steps).
 Proof modification of "uzm1OLD" is discouraged (3 steps).
 Proof modification of "uzp1OLD" is discouraged (3 steps).
