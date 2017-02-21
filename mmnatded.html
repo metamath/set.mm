@@ -199,12 +199,16 @@ Applying this approach is called "deduction style".
 An assertion is in deduction form if the conclusion is an implication with
 a wff variable as the antecedent
 (usually <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>),
-and every hypothesis is either a definition or is also an implication
+and every MPE hypothesis ($e statement)
+is either a definition or is also an implication
 with the same wff variable as the antecedent
 (usually <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>).
 A definition can be for a class variable
 (this is a class variable followed by "=") or a wff variable
-(this is a wff variable followed by ` <-> `).
+(this is a wff variable followed by
+<IMG SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19
+     ALT=' &lt;-&gt;' TITLE='&lt;-&gt;'>); in practice
+definitions (if used) are for class variables.
 In practice, a proof in deduction form will also contain many steps
 that are implications where the antedent is either
 that wff variable
@@ -427,16 +431,21 @@ is not necessary.
 <P>
 Sometimes, we wish to discharge these hypotheses with something that isn't
 just an abbreviation. For example, if "J e. ( TopOn ` X )", then X is the
-base set of the topology J, so X = U. J (toponuni), but since X = U. J is
+base set of the topology J, so X = U. J
+(<A HREF="toponuni.html">toponuni</A>),
+but since X = U. J is
 not always true in this situation, we can't prove it without the hypothesis
 "J e. ( TopOn ` X )". What you have to do here, if you want to use a
-theorem that has the hypothesis "|- X = U. J" (to prove some statement |-
-P(X)), is use eqid anyway, producing a proof of P(U. J), then use ( ph -> X
-= U. J ) and equality theorems to get ( ph -&gt; ( P(X) &lt;-&gt;
-P(U. J) ) ), then
+theorem that has the hypothesis "|- X = U. J" (to prove some statement
+|- P(X)), is use
+<A HREF="eqid.html">eqid</A> anyway, producing a proof of P(U. J), then use
+( ph -&gt; X = U. J ) and equality theorems to get
+( ph -&gt; ( P(X) &lt;-&gt; P(U. J) ) ), then
 use the proof of |- P(U. J) to yield |- ( ph -&gt; P(X) ). An example of this
-procedure is the derivation of ishaus2 (which has X = U. J given the
-context) from ishaus (which assumes X = U. J with no context).
+procedure is the derivation of
+<A HREF="ishaus2.html">ishaus2</A> (which has X = U. J given the
+context) from
+<A HREF="ishaus.html">ishaus</A> (which assumes X = U. J with no context).
 
 <P>
 The above procedure is always possible to do, but it is not always
@@ -478,23 +487,30 @@ qed:1,2:mygroupbaslem |- ( ph -&gt; ( Base ` MyGroup ) = my-base-set )
 mygroupadd $p |- ( ph -&gt; ( +g ` MyGroup ) = my-base-set ) $=
 1::mygroupbas |- ( ph -&gt; ( Base ` MyGroup ) = my-base-set )
 2::eqid |- ( ph -&gt; my-group-op( ( Base ` MyGroup ) ) = my-group-op( ( Base
-` MyGroup ) ) )
+           ` MyGroup ) ) )
 qed:1,2:mygroupbaslem |- ( ph -&gt; ( +g ` MyGroup ) = my-group-op( ( Base `
-MyGroup ) ) )
+           MyGroup ) ) )
 </PRE>
 
 <P>
 Note that the contained references of my-group-op are now referencing
 ( Base ` MyGroup ), which makes this "definition" of a component of MyGroup
 self-referential. But that was the goal, and we have mygroupbas to expand
-it as necessary. A more elaborate version of this idea is done in prdsval,
+it as necessary. A more elaborate version of this idea is done in
+<A HREF="prdsval.html">prdsval</A>,
 with prdsbas, prdsplusg, prdsmulr, etc pulling off components and
 bootstrapping using the previous theorems.
 
 <P>
-Finally, there are a few places where ( ph -&gt; X = ... ) definitions are
+Finally, there are a few places where <IMG
+SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT=' (' TITLE='('><IMG SRC='_varphi.gif'
+WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
+ALT=' -&gt;' TITLE='-&gt;'>&nbsp;X&nbsp;=&nbsp;...<IMG SRC='rp.gif'
+WIDTH=5 HEIGHT=19 ALT=' )' TITLE=')'>
+definitions are
 used by convention, specifically grppropd and other *propd theorems, and
 isgrpd and other is*d theorems for structures.
+
 
 <P>
 As a rule of thumb: Use X = ... abbreviations unless you need to use a
