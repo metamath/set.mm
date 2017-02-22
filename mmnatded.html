@@ -65,7 +65,7 @@ img { margin-bottom: -4px }
 <LI> <A HREF="#introduction">Introduction to deduction</A></LI>
 <LI> <A HREF="#current">Current approach to deductions</A></LI>
 <LI> <A HREF="#introduction-natural-deduction">Introduction to natural deduction</A></LI>
-<LI> <A HREF="#natural-deduction-metamath">Natural deduction in Metamath</A></LI>
+<LI> <A HREF="#natural-deduction-metamath">Natural deduction in the Metamath Proof Explorer (MPE)</A></LI>
 <LI> <A HREF="#other-natural-deduction">Other Approaches to Natural Deduction in Metamath</A></LI>
 <LI> <A HREF="#definitions-deduction">Definitions in deduction form</A></LI>
 <LI> <A HREF="#natural-deduction-rules">Natural deduction rules</A></LI>
@@ -246,9 +246,7 @@ natural deduction.
 Before we discuss how to do natural deduction in MPE, we will first
 explain what natural deduction is.
 
-<P><HR NOSHADE SIZE=1><A NAME="introduction-natural-deduction"></A><B><FONT COLOR="#006633">Introduction to Natural Deduction</FONT></B> &nbsp;&nbsp;&nbsp; 
-
-<P>
+<P><HR NOSHADE SIZE=1><A NAME="introduction-natural-deduction"></A><B><FONT COLOR="#006633">Introduction to Natural Deduction</FONT></B> &nbsp;&nbsp;&nbsp;
 Natural deduction is a widely-taught approach to logic.
 Those unfamiliar with natural deduction, or logic more general, may find
 <A HREF="mmset.html#Laboreo">[Laboreo]</A>
@@ -308,21 +306,29 @@ line which continues until this subproof is in force, is due to Fitch,
 whereas [the] popular system of Copi applies bracketing to closed subproofs"
 (<A HREF="mmset.html#Indrzejczak">[Indrzejczak]</A> page 42).
 
-<P><HR NOSHADE SIZE=1><A NAME="natural-deduction-metamath"></A><B><FONT COLOR="#006633">Natural Deduction in Metamath</FONT></B> &nbsp;&nbsp;&nbsp; 
-
-<P>
+<P><HR NOSHADE SIZE=1><A NAME="natural-deduction-metamath"></A><B><FONT COLOR="#006633">Natural Deduction in the Metamath Proof Explorer (MPE)</FONT></B> &nbsp;&nbsp;&nbsp;
 MPE is fundamentally a <B>Hilbert-style</B> system.
-However, it is possible to develop proofs in MPE using a
+That is, MPE is based on a
+larger number of axioms (compared to natural deduction systems),
+a very small set of rules of inference (modus ponens),
+and the context is not changed
+by the rules of inference in the middle of a proof.
+That said, MPE proofs can be developed using the
 natural deduction (ND) approach as originally developed by
 Ja&sacute;kowski and Gentzen.
 
 <P>
-The most common and recommended approach is to
-use deduction form and apply MPE proven assertions
-that are equivalent to the ND rules.
-See the <A HREF="#natural-deduction-rules">MPE equivalents of typical
-natural deduction (ND) rules</A> for the MPE equivalents.
-This approach for applying a natural deduction approach within MPE
+The most common and recommended approach for applying ND
+in MPE is to use deduction form and apply the MPE proven assertions
+that are equivalent to ND rules.
+For example, MPE's <A HREF="jca.html">jca</A>
+is equivalent to ND rule
+<IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT=' /\' TITLE='/\'>I
+(and-insertion).
+See <A HREF="natded.html">MPE equivalents of typical
+natural deduction (ND) rules</A> for a list of equivalences.
+This approach for applying an ND approach within MPE
+relies on Metamath's wff metavariables in an essential way, and
 is described in more detail in the presentation
 <A HREF="http://us.metamath.org/ocat/natded.pdf">"Natural Deductions in the
 Metamath Proof Language" by Mario Carneiro, 2014</A>.
@@ -332,13 +338,17 @@ In this style
 many steps are an implication, whose antecedent mimics the context
 (<IMG SRC='cgamma.gif' WIDTH=10 HEIGHT=19 ALT=' _G' TITLE='_G'>)
 of most ND systems.
-To add an assumption, you would typically use
-<A HREF="simpr.html">simpr</A> to show that adding the assumption to the
-antecedent implies the assumption in the consequence.
-Then, every time you want to use an assertion in the hypothesis scope
-that starts outside that scope, simply modify the assertion
-(typically using <A HREF="adantr.html">adantr</A>)
-to add the ND hypothesis assumption to the antecedent.
+To add an assumption, simply add it to the implication antecedent
+(typically using <A HREF="simpr.html">simpr</A>), and use that
+new antecedent for all later claims in the same scope.
+If you wish to use an assertion in an ND hypothesis scope
+that is outside the current ND hypothesis scope,
+modify the assertion so that the
+ND hypothesis assumption is added to its antecedent
+(typically using <A HREF="adantr.html">adantr</A>).
+Most proof steps will be proved using rules that have hypotheses
+and results of the form
+<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>&nbsp;<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT=' -&gt;' TITLE='-&gt;'>...
 
 <P>
 This is most easily understood by looking at some examples.
@@ -372,13 +382,14 @@ and <A HREF="ex-natded5.2i.html">ex-natded5.2i</A>
 Similarly, <A HREF="ex-natded5.3.html">ex-natded5.3</A> is longer than
 <A HREF="ex-natded5.3-2.html">ex-natded5.3-2</A> and
 <A HREF="ex-natded5.3i.html">ex-natded5.3i</A>.
+In some cases the metamath.exe "minimize_with" proof command
+can significantly shorten a
+proof if the original only uses the equivalent of basic ND inference rules.
 In practice, the simplest and clearest
 approach to creating a proof depends on what is to be proved.
 
-<P><HR NOSHADE SIZE=1><A NAME="other-natural-deduction"></A><B><FONT COLOR="#006633">Other Approaches to Natural Deduction in Metamath</FONT></B> &nbsp;&nbsp;&nbsp; 
+<P><HR NOSHADE SIZE=1><A NAME="other-natural-deduction"></A><B><FONT COLOR="#006633">Other Approaches to Natural Deduction in Metamath</FONT></B> &nbsp;&nbsp;&nbsp;
 <!-- TODO: Reformat more of the mathematical statements -->
-
-<P>
 The text above describes the most common ways to implement
 natural deducation approaches in metamath and MPE.
 However, there are alternative approaches for using natural deduction
@@ -407,11 +418,11 @@ He reports that his system was inspired by a slide show,
 <A HREF="http://web.archive.org/web/20070206192038/http://www.ags.uni-sb.de/~chris/papers/2002-pisa.pdf">"From Natural Deduction to Sequent Calculus (and back)"</A>.
 Practically this system is equivalent to Mario Carneiro's work.
 
-<P><HR NOSHADE SIZE=1><A NAME="definitions-deduction"></A><B><FONT COLOR="#006633">Definitions in deduction form</FONT></B> &nbsp;&nbsp;&nbsp; 
-
-<P>
+<P><HR NOSHADE SIZE=1><A NAME="definitions-deduction"></A><B><FONT COLOR="#006633">Definitions in deduction form</FONT></B> &nbsp;&nbsp;&nbsp;
 At this point it's probably useful to explain in more detail <I>why</I>
 definitions do not require an antecedent in deduction form.
+
+<P>
 The actual purpose of the
 <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'> antecedent
 is to introduce a hypothesis that may not
@@ -518,9 +529,7 @@ non-identity abbreviation for X later.
 
 
 
-<P><HR NOSHADE SIZE=1><A NAME="natural-deduction-rules"></A><B><FONT COLOR="#006633">Natural Deduction Rules</FONT></B> &nbsp;&nbsp;&nbsp; 
-
-<P>
+<P><HR NOSHADE SIZE=1><A NAME="natural-deduction-rules"></A><B><FONT COLOR="#006633">Natural Deduction Rules</FONT></B> &nbsp;&nbsp;&nbsp;
 For more information see
 <A HREF="natded.html">natded, which shows typical natural
 deduction rules and their metamath equivalents</A>.
