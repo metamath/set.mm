@@ -35,15 +35,17 @@ before_install:
 install:
   # Get metamath C program and supporting files (to validate against them)
   - wget -q -r -np -nd -A .c,.h http://us.metamath.org/metamath/
-  - wget -q http://us.metamath.org/downloads/symbols.tar.bz2
-  - wget -q http://us.metamath.org/mpegif/mmset.html
-  - wget -q http://us.metamath.org/mpegif/mmhil.html
-  - wget -q http://us.metamath.org/mpegif/mmbiblio.html
+  - wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2
+  # These are now in the repo:
+  # - wget -N -q http://us.metamath.org/mpegif/mmset.html
+  # - wget -N -q http://us.metamath.org/mpegif/mmhil.html
+  # This will be updated, but we need a starting point:
+  - wget -N -q http://us.metamath.org/mpegif/mmbiblio.html
   - tar --strip-components=1 -jxf symbols.tar.bz2
   # Compile metamath, a C verifier (and more) by Norm Megill.
   - gcc *.c -O2 -o metamath
   # Get mmj2, a Java verifier (and more) by Mel O'Cat and Mario Carneiro
-  - wget -q http://us2.metamath.org:88/ocat/mmj2/mmj2jar.zip
+  - wget -N -q http://us2.metamath.org:88/ocat/mmj2/mmj2jar.zip
   - unzip -q mmj2jar.zip
   - printf "LoadFile,set.mm\nVerifyProof,*\nParse,*\nRunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\nRunMacro,showDiscouraged,discouraged.new\n" > RunParms.txt
   - jdk_switcher use oraclejdk8
@@ -51,14 +53,15 @@ install:
   # See: https://github.com/sorear/smetamath-rs
   - "[ -x  ~/.cargo/bin/smetamath ] || cargo install smetamath --vers 3.0.0"
   # Get and compile checkmm, a C++ verifier by Eric Schmidt
-  - wget -q http://us.metamath.org/downloads/checkmm.cpp
+  - wget -N -q http://us.metamath.org/downloads/checkmm.cpp
   - g++ -O2 -o checkmm checkmm.cpp
 script:
-  - ./metamath 'read set.mm' 'verify proof *' 'verify markup *' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
+  - ./metamath 'read set.mm' 'verify proof *' 'write bibliography mmbiblio.html' 'verify markup *' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
   # Sort "show discouraged" results to ignore benign reordering
   # Regenerate "discouraged" in the same way if you *intend* for this to change
   # - echo 'Checking if "show discouraged" results are as expected...' && ./metamath 'read set.mm' 'set width 9999' 'show discouraged' quit | grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' | LC_ALL=C sort > discouraged.new && diff -u discouraged discouraged.new
   - java -Xms512M -Xmx1024M -jar mmj2.jar RunParms.txt | tee mmj2.log && [ `egrep 'Exception|.-..-[0-9]{4}' < mmj2.log | egrep -qv 'I-UT-0015|I-MA-0001'; echo $?` -eq 1 ]
   - echo 'Checking if "show discouraged" results are as expected...' && diff -U 0 discouraged discouraged.new
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
+  - echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
   - ./checkmm set.mm
