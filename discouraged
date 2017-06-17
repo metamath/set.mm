@@ -217,6 +217,7 @@
 "2polvalN" is used by "pnonsingN".
 "2polvalN" is used by "poml4N".
 "2polvalN" is used by "sspmaplubN".
+"2reuswapOLD" is used by "reuxfr2dOLD".
 "2sb5nd" is used by "2uasbanh".
 "2sb5nd" is used by "2uasbanhVD".
 "2uasbanh" is used by "2uasban".
@@ -4781,6 +4782,22 @@
 "dfcnqs" is used by "axdistr".
 "dfcnqs" is used by "axmulass".
 "dfcnqs" is used by "axmulcom".
+"dfdisjOLD" is used by "cbvdisj".
+"dfdisjOLD" is used by "disjiun".
+"dfdisjOLD" is used by "disjiunOLD".
+"dfdisjOLD" is used by "disjmoOLD".
+"dfdisjOLD" is used by "disjor".
+"dfdisjOLD" is used by "disjss1".
+"dfdisjOLD" is used by "disjss2".
+"dfdisjOLD" is used by "disjss3".
+"dfdisjOLD" is used by "disjxsn".
+"dfdisjOLD" is used by "fsumiunOLD".
+"dfdisjOLD" is used by "hashiunOLD".
+"dfdisjOLD" is used by "invdisj".
+"dfdisjOLD" is used by "nfdisj".
+"dfdisjOLD" is used by "nfdisj1".
+"dfdisjOLD" is used by "sndisj".
+"dfdisjOLD" is used by "vitalilem3".
 "dfhnorm2" is used by "hilnormi".
 "dfhnorm2" is used by "normf".
 "dfhnorm2" is used by "normval".
@@ -11694,6 +11711,7 @@
 "poml4N" is used by "poml6N".
 "poml5N" is used by "osumcllem3N".
 "poml6N" is used by "osumcllem9N".
+"poslubmoOLD" is used by "poslubd".
 "prcdnq" is used by "1idpr".
 "prcdnq" is used by "addclprlem1".
 "prcdnq" is used by "distrlem4pr".
@@ -11883,6 +11901,39 @@
 "retbwax2" is used by "merco1lem2".
 "retbwax2" is used by "merco1lem3".
 "retbwax2" is used by "retbwax3".
+"reu5OLD" is used by "0frgp".
+"reu5OLD" is used by "catideu".
+"reu5OLD" is used by "cnlnadjeui".
+"reu5OLD" is used by "cvmlift2lem13".
+"reu5OLD" is used by "cvmlift3".
+"reu5OLD" is used by "cvmliftlem14".
+"reu5OLD" is used by "efgred2".
+"reu5OLD" is used by "enqeq".
+"reu5OLD" is used by "eqsqrd".
+"reu5OLD" is used by "evlseu".
+"reu5OLD" is used by "fncnv".
+"reu5OLD" is used by "frgpcyg".
+"reu5OLD" is used by "frgpnabllem2".
+"reu5OLD" is used by "frlmup4".
+"reu5OLD" is used by "ismgmid".
+"reu5OLD" is used by "linethrueu".
+"reu5OLD" is used by "mndideu".
+"reu5OLD" is used by "pjhtheu".
+"reu5OLD" is used by "pjpreeq".
+"reu5OLD" is used by "ply1divalg".
+"reu5OLD" is used by "poslubd".
+"reu5OLD" is used by "qtophmeo".
+"reu5OLD" is used by "resqreu".
+"reu5OLD" is used by "reu4".
+"reu5OLD" is used by "reueq".
+"reu5OLD" is used by "reusv1".
+"reu5OLD" is used by "sqreu".
+"reu5OLD" is used by "sqrneg".
+"reu5OLD" is used by "supeu".
+"reu5OLD" is used by "wereu".
+"reu5OLD" is used by "wereu2".
+"reuxfr2dOLD" is used by "reuxfr2OLD".
+"reuxfr2dOLD" is used by "reuxfrd".
 "riesz1" is used by "rnbra".
 "riesz3i" is used by "riesz1".
 "riesz3i" is used by "riesz4i".
@@ -11904,6 +11955,25 @@
 "riotaocN" is used by "glbconN".
 "riotasvdOLD" is used by "riotasv2dOLD".
 "riotasvdOLD" is used by "riotasv3dOLD".
+"rmo4OLD" is used by "catideu".
+"rmo4OLD" is used by "cvmliftmo".
+"rmo4OLD" is used by "disjor".
+"rmo4OLD" is used by "evlseu".
+"rmo4OLD" is used by "hilbert1.2".
+"rmo4OLD" is used by "idomsubgmo".
+"rmo4OLD" is used by "lspextmo".
+"rmo4OLD" is used by "ply1divmo".
+"rmo4OLD" is used by "poslubmoOLD".
+"rmo4OLD" is used by "reu4".
+"rmo4OLD" is used by "somoOLD".
+"rmobOLD" is used by "rmoiOLD".
+"rmoiOLD" is used by "cdleme0moN".
+"rmoiOLD" is used by "efgred2".
+"rmoiOLD" is used by "eqsqrd".
+"rmoiOLD" is used by "frgpcyg".
+"rmoiOLD" is used by "frgpnabllem2".
+"rmoiOLD" is used by "proot1mul".
+"rmoiOLD" is used by "qtophmeo".
 "rnbra" is used by "bra11".
 "rnbra" is used by "cnvbraval".
 "rnelshi" is used by "hmopidmchi".
@@ -12562,6 +12632,8 @@
 "snexALT" is used by "sgplpte21".
 "snexALT" is used by "sgplpte22".
 "snexALT" is used by "smbkle".
+"somoOLD" is used by "wereu".
+"somoOLD" is used by "wereu2".
 "spancl" is used by "elspancl".
 "spancl" is used by "shatomistici".
 "spancl" is used by "shsupcl".
@@ -13391,6 +13463,8 @@ New usage of "2polpmapN" is discouraged (2 uses).
 New usage of "2polssN" is discouraged (8 uses).
 New usage of "2polvalN" is discouraged (8 uses).
 New usage of "2ralorOLD" is discouraged (0 uses).
+New usage of "2reuswap2OLD" is discouraged (0 uses).
+New usage of "2reuswapOLD" is discouraged (1 uses).
 New usage of "2sb5nd" is discouraged (2 uses).
 New usage of "2sb5ndALT" is discouraged (0 uses).
 New usage of "2sb5ndVD" is discouraged (0 uses).
@@ -14818,6 +14892,8 @@ New usage of "dfadj2" is discouraged (7 uses).
 New usage of "dfch2" is discouraged (0 uses).
 New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfcon2OLD" is discouraged (0 uses).
+New usage of "dfdisjOLD" is discouraged (16 uses).
+New usage of "dffun9OLD" is discouraged (0 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
 New usage of "dfiop2" is discouraged (3 uses).
 New usage of "dfpjop" is discouraged (4 uses).
@@ -17069,6 +17145,7 @@ New usage of "polvalN" is discouraged (4 uses).
 New usage of "poml4N" is discouraged (3 uses).
 New usage of "poml5N" is discouraged (1 uses).
 New usage of "poml6N" is discouraged (1 uses).
+New usage of "poslubmoOLD" is discouraged (1 uses).
 New usage of "prcdnq" is discouraged (14 uses).
 New usage of "prfOLD" is discouraged (0 uses).
 New usage of "prfunOLD" is discouraged (0 uses).
@@ -17174,9 +17251,12 @@ New usage of "retbwax3" is discouraged (0 uses).
 New usage of "retbwax4" is discouraged (0 uses).
 New usage of "retopconOLD" is discouraged (0 uses).
 New usage of "retpsOLD" is discouraged (0 uses).
+New usage of "reu5OLD" is discouraged (31 uses).
 New usage of "reusv5OLD" is discouraged (0 uses).
 New usage of "reusv6OLD" is discouraged (0 uses).
 New usage of "reusv7OLD" is discouraged (0 uses).
+New usage of "reuxfr2OLD" is discouraged (0 uses).
+New usage of "reuxfr2dOLD" is discouraged (2 uses).
 New usage of "rexcom4aOLD" is discouraged (0 uses).
 New usage of "rexcom4bOLD" is discouraged (0 uses).
 New usage of "rexrabOLD" is discouraged (0 uses).
@@ -17192,6 +17272,10 @@ New usage of "riotaocN" is discouraged (1 uses).
 New usage of "riotasv2dOLD" is discouraged (0 uses).
 New usage of "riotasv3dOLD" is discouraged (0 uses).
 New usage of "riotasvdOLD" is discouraged (2 uses).
+New usage of "rmo3OLD" is discouraged (0 uses).
+New usage of "rmo4OLD" is discouraged (11 uses).
+New usage of "rmobOLD" is discouraged (1 uses).
+New usage of "rmoiOLD" is discouraged (7 uses).
 New usage of "rnbra" is discouraged (2 uses).
 New usage of "rnelshi" is discouraged (1 uses).
 New usage of "rngmgmbs4" is discouraged (1 uses).
@@ -17359,6 +17443,7 @@ New usage of "snssiALTVD" is discouraged (0 uses).
 New usage of "snssl" is discouraged (0 uses).
 New usage of "snsslVD" is discouraged (0 uses).
 New usage of "soirriOLD" is discouraged (0 uses).
+New usage of "somoOLD" is discouraged (2 uses).
 New usage of "son2lpiOLD" is discouraged (0 uses).
 New usage of "sotriOLD" is discouraged (0 uses).
 New usage of "span0" is discouraged (0 uses).
