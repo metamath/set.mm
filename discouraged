@@ -1462,26 +1462,6 @@
 "ax17el" is used by "gsumdixp".
 "ax17eq" is used by "dveeq1ALT".
 "ax17eq" is used by "dveeq2ALT".
-"ax1cn" is used by "fmul01lt1lem2".
-"ax1cn" is used by "refsum2cnlem1".
-"ax1cn" is used by "stoweidlem1".
-"ax1cn" is used by "stoweidlem10".
-"ax1cn" is used by "stoweidlem11".
-"ax1cn" is used by "stoweidlem13".
-"ax1cn" is used by "stoweidlem14".
-"ax1cn" is used by "stoweidlem16".
-"ax1cn" is used by "stoweidlem17".
-"ax1cn" is used by "stoweidlem26".
-"ax1cn" is used by "stoweidlem34".
-"ax1cn" is used by "stoweidlem37".
-"ax1cn" is used by "stoweidlem38".
-"ax1cn" is used by "stoweidlem41".
-"ax1cn" is used by "stoweidlem42".
-"ax1cn" is used by "stoweidlem45".
-"ax1cn" is used by "stoweidlem51".
-"ax1cn" is used by "stoweidlem7".
-"ax1ne0" is used by "stoweidlem13".
-"ax1ne0" is used by "stoweidlem7".
 "ax4" is used by "a9e2eqVD".
 "ax4" is used by "a9e2ndeq".
 "ax4" is used by "a9e2ndeqALT".
@@ -1532,17 +1512,7 @@
 "ax9vax9" is used by "ax9sep".
 "ax9vsep" is used by "ax9sep".
 "axaddf" is used by "axaddcl".
-"axaddrcl" is used by "stoweidlem26".
-"axmulass" is used by "fmul01lt1lem2".
-"axmulcom" is used by "stoweidlem10".
 "axmulf" is used by "axmulcl".
-"axmulrcl" is used by "fmul01".
-"axmulrcl" is used by "fmul01lt1lem1".
-"axmulrcl" is used by "fmul01lt1lem2".
-"axmulrcl" is used by "stoweidlem13".
-"axmulrcl" is used by "stoweidlem3".
-"axmulrcl" is used by "stoweidlem42".
-"axmulrcl" is used by "stoweidlem48".
 "axpjcl" is used by "pjcli".
 "axpjcl" is used by "pjcompi".
 "axpjcl" is used by "pjhcl".
@@ -1559,7 +1529,6 @@
 "axpjpj" is used by "pjpo".
 "axpjpj" is used by "pjtoi".
 "axresscn" is used by "ax1cn".
-"axresscn" is used by "refsumcn".
 "bafval" is used by "cnnvba".
 "bafval" is used by "hhba".
 "bafval" is used by "hhshsslem1".
@@ -13746,8 +13715,8 @@ New usage of "ax16" is discouraged (0 uses).
 New usage of "ax172" is discouraged (0 uses).
 New usage of "ax17el" is discouraged (2 uses).
 New usage of "ax17eq" is discouraged (2 uses).
-New usage of "ax1cn" is discouraged (18 uses).
-New usage of "ax1ne0" is discouraged (2 uses).
+New usage of "ax1cn" is discouraged (0 uses).
+New usage of "ax1ne0" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax2" is discouraged (0 uses).
 New usage of "ax3" is discouraged (0 uses).
@@ -13783,7 +13752,7 @@ New usage of "axac3OLD" is discouraged (0 uses).
 New usage of "axaddass" is discouraged (0 uses).
 New usage of "axaddcl" is discouraged (0 uses).
 New usage of "axaddf" is discouraged (1 uses).
-New usage of "axaddrcl" is discouraged (1 uses).
+New usage of "axaddrcl" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (0 uses).
 New usage of "axcnre" is discouraged (0 uses).
 New usage of "axdistr" is discouraged (0 uses).
@@ -13808,11 +13777,11 @@ New usage of "axhvmulid-zf" is discouraged (0 uses).
 New usage of "axi2m1" is discouraged (0 uses).
 New usage of "axicn" is discouraged (0 uses).
 New usage of "axinf2" is discouraged (0 uses).
-New usage of "axmulass" is discouraged (1 uses).
+New usage of "axmulass" is discouraged (0 uses).
 New usage of "axmulcl" is discouraged (0 uses).
-New usage of "axmulcom" is discouraged (1 uses).
+New usage of "axmulcom" is discouraged (0 uses).
 New usage of "axmulf" is discouraged (1 uses).
-New usage of "axmulrcl" is discouraged (7 uses).
+New usage of "axmulrcl" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
 New usage of "axpjcl" is discouraged (7 uses).
 New usage of "axpjpj" is discouraged (8 uses).
@@ -13822,7 +13791,7 @@ New usage of "axpre-lttri" is discouraged (0 uses).
 New usage of "axpre-lttrn" is discouraged (0 uses).
 New usage of "axpre-mulgt0" is discouraged (0 uses).
 New usage of "axpre-sup" is discouraged (0 uses).
-New usage of "axresscn" is discouraged (2 uses).
+New usage of "axresscn" is discouraged (1 uses).
 New usage of "axrnegex" is discouraged (0 uses).
 New usage of "axrrecex" is discouraged (0 uses).
 New usage of "axsep" is discouraged (0 uses).
