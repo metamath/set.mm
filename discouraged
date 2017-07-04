@@ -809,6 +809,7 @@
 "ax-9v" is used by "equidK".
 "ax-ac" is used by "ac2".
 "ax-ac" is used by "zfac".
+"ax-addass" is used by "addass".
 "ax-addcl" is used by "addcl".
 "ax-addrcl" is used by "readdcl".
 "ax-cnex" is used by "cnex".
@@ -13599,6 +13600,7 @@ New usage of "ax-6o" is discouraged (7 uses).
 New usage of "ax-9o" is discouraged (2 uses).
 New usage of "ax-9v" is discouraged (29 uses).
 New usage of "ax-ac" is discouraged (2 uses).
+New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
