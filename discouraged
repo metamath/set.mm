@@ -804,6 +804,7 @@
 "ax-9v" is used by "ax9OLD".
 "ax-9v" is used by "ax9X".
 "ax-9v" is used by "equidK".
+"ax-addcl" is used by "addcl".
 "ax-hcompl" is used by "chscllem2".
 "ax-hcompl" is used by "hhcms".
 "ax-hcompl" is used by "hhsscms".
@@ -13574,6 +13575,7 @@ New usage of "ax-5o" is discouraged (3 uses).
 New usage of "ax-6o" is discouraged (7 uses).
 New usage of "ax-9o" is discouraged (2 uses).
 New usage of "ax-9v" is discouraged (29 uses).
+New usage of "ax-addcl" is discouraged (1 uses).
 New usage of "ax-hcompl" is discouraged (6 uses).
 New usage of "ax-hfi" is discouraged (3 uses).
 New usage of "ax-hfvadd" is discouraged (14 uses).
