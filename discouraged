@@ -1177,6 +1177,7 @@
 "ax-meredith" is used by "merlem8".
 "ax-meredith" is used by "merlem9".
 "ax-mulcl" is used by "mulcl".
+"ax-mulrcl" is used by "remulcl".
 "ax10" is used by "e2ebindALT".
 "ax10lem16" is used by "a12stdy2-x12".
 "ax10lem16" is used by "a12study4".
@@ -13621,6 +13622,7 @@ New usage of "ax-hvmulid" is discouraged (18 uses).
 New usage of "ax-inf" is discouraged (1 uses).
 New usage of "ax-meredith" is discouraged (13 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
+New usage of "ax-mulrcl" is discouraged (1 uses).
 New usage of "ax1" is discouraged (0 uses).
 New usage of "ax10" is discouraged (1 uses).
 New usage of "ax10X" is discouraged (0 uses).
