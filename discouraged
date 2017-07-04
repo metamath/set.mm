@@ -804,6 +804,9 @@
 "ax-9v" is used by "ax9OLD".
 "ax-9v" is used by "ax9X".
 "ax-9v" is used by "equidK".
+"ax-addcl" is used by "addcl".
+"ax-addrcl" is used by "readdcl".
+"ax-cnex" is used by "cnex".
 "ax-hcompl" is used by "chscllem2".
 "ax-hcompl" is used by "hhcms".
 "ax-hcompl" is used by "hhsscms".
@@ -1167,6 +1170,7 @@
 "ax-meredith" is used by "merlem7".
 "ax-meredith" is used by "merlem8".
 "ax-meredith" is used by "merlem9".
+"ax-mulcl" is used by "mulcl".
 "ax10" is used by "e2ebindALT".
 "ax10lem16" is used by "a12stdy2-x12".
 "ax10lem16" is used by "a12study4".
@@ -13574,6 +13578,9 @@ New usage of "ax-5o" is discouraged (3 uses).
 New usage of "ax-6o" is discouraged (7 uses).
 New usage of "ax-9o" is discouraged (2 uses).
 New usage of "ax-9v" is discouraged (29 uses).
+New usage of "ax-addcl" is discouraged (1 uses).
+New usage of "ax-addrcl" is discouraged (1 uses).
+New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-hcompl" is discouraged (6 uses).
 New usage of "ax-hfi" is discouraged (3 uses).
 New usage of "ax-hfvadd" is discouraged (14 uses).
@@ -13593,6 +13600,7 @@ New usage of "ax-hvmul0" is discouraged (7 uses).
 New usage of "ax-hvmulass" is discouraged (17 uses).
 New usage of "ax-hvmulid" is discouraged (18 uses).
 New usage of "ax-meredith" is discouraged (13 uses).
+New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax1" is discouraged (0 uses).
 New usage of "ax10" is discouraged (1 uses).
 New usage of "ax10X" is discouraged (0 uses).
@@ -14784,6 +14792,7 @@ New usage of "df-vhc3" is discouraged (1 uses).
 New usage of "df-vs" is discouraged (1 uses).
 New usage of "df0op2" is discouraged (3 uses).
 New usage of "dfadj2" is discouraged (7 uses).
+New usage of "dfbi1gb" is discouraged (0 uses).
 New usage of "dfch2" is discouraged (0 uses).
 New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfcon2OLD" is discouraged (0 uses).
