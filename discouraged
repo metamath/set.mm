@@ -1162,6 +1162,7 @@
 "ax-hvmulid" is used by "mayete3i".
 "ax-hvmulid" is used by "mayete3iOLD".
 "ax-hvmulid" is used by "strlem1".
+"ax-inf" is used by "zfinf".
 "ax-meredith" is used by "luk-1".
 "ax-meredith" is used by "luk-2".
 "ax-meredith" is used by "merlem1".
@@ -1525,6 +1526,9 @@
 "axacndlem4" is used by "axacndlem5".
 "axacndlem5" is used by "axacnd".
 "axaddf" is used by "axaddcl".
+"axinfnd" is used by "axinfprim".
+"axinfnd" is used by "zfcndinf".
+"axinfndlem1" is used by "axinfnd".
 "axmulf" is used by "axmulcl".
 "axpjcl" is used by "pjcli".
 "axpjcl" is used by "pjcompi".
@@ -13300,6 +13304,8 @@
 "wvhc3" is used by "dfvd3ani".
 "wvhc3" is used by "dfvd3anir".
 "zfac" is used by "axacndlem4".
+"zfinf" is used by "axinf2".
+"zfinf" is used by "axinfndlem1".
 "zfpair" is used by "axpr".
 "zfpair" is used by "clatl".
 "zfpair" is used by "dfdir2".
@@ -13612,6 +13618,7 @@ New usage of "ax-hvdistr2" is discouraged (7 uses).
 New usage of "ax-hvmul0" is discouraged (7 uses).
 New usage of "ax-hvmulass" is discouraged (17 uses).
 New usage of "ax-hvmulid" is discouraged (18 uses).
+New usage of "ax-inf" is discouraged (1 uses).
 New usage of "ax-meredith" is discouraged (13 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax1" is discouraged (0 uses).
@@ -13803,6 +13810,9 @@ New usage of "axhvmulid-zf" is discouraged (0 uses).
 New usage of "axi2m1" is discouraged (0 uses).
 New usage of "axicn" is discouraged (0 uses).
 New usage of "axinf2" is discouraged (0 uses).
+New usage of "axinfnd" is discouraged (2 uses).
+New usage of "axinfndlem1" is discouraged (1 uses).
+New usage of "axinfprim" is discouraged (0 uses).
 New usage of "axmulass" is discouraged (0 uses).
 New usage of "axmulcl" is discouraged (0 uses).
 New usage of "axmulcom" is discouraged (0 uses).
@@ -17689,6 +17699,8 @@ New usage of "xpsspwOLD" is discouraged (0 uses).
 New usage of "zaddsubgo" is discouraged (0 uses).
 New usage of "zfac" is discouraged (1 uses).
 New usage of "zfcndac" is discouraged (0 uses).
+New usage of "zfcndinf" is discouraged (0 uses).
+New usage of "zfinf" is discouraged (2 uses).
 New usage of "zfpair" is discouraged (5 uses).
 New usage of "zfregs2VD" is discouraged (0 uses).
 New usage of "zrdivrng" is discouraged (2 uses).
