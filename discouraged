@@ -1535,6 +1535,7 @@
 "axinfnd" is used by "axinfprim".
 "axinfnd" is used by "zfcndinf".
 "axinfndlem1" is used by "axinfnd".
+"axlttrn" is used by "lttr".
 "axmulf" is used by "axmulcl".
 "axpjcl" is used by "pjcli".
 "axpjcl" is used by "pjcompi".
@@ -13827,6 +13828,7 @@ New usage of "axinf2" is discouraged (0 uses).
 New usage of "axinfnd" is discouraged (2 uses).
 New usage of "axinfndlem1" is discouraged (1 uses).
 New usage of "axinfprim" is discouraged (0 uses).
+New usage of "axlttrn" is discouraged (1 uses).
 New usage of "axmulass" is discouraged (0 uses).
 New usage of "axmulcl" is discouraged (0 uses).
 New usage of "axmulcom" is discouraged (0 uses).
