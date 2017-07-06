@@ -366,6 +366,9 @@
 "ablonnncan1" is used by "nvnnncan1".
 "ablosn" is used by "rngosn".
 "abshicom" is used by "bcs3".
+"ac2" is used by "ac3".
+"ac3" is used by "axac2".
+"ac3" is used by "axac3OLD".
 "addassnq" is used by "addasspr".
 "addassnq" is used by "ltaddnq".
 "addassnq" is used by "ltexprlem7".
@@ -804,9 +807,14 @@
 "ax-9v" is used by "ax9OLD".
 "ax-9v" is used by "ax9X".
 "ax-9v" is used by "equidK".
+"ax-ac" is used by "ac2".
+"ax-ac" is used by "zfac".
+"ax-addass" is used by "addass".
 "ax-addcl" is used by "addcl".
 "ax-addrcl" is used by "readdcl".
 "ax-cnex" is used by "cnex".
+"ax-cnre" is used by "cnre".
+"ax-distr" is used by "adddi".
 "ax-hcompl" is used by "chscllem2".
 "ax-hcompl" is used by "hhcms".
 "ax-hcompl" is used by "hhsscms".
@@ -1157,6 +1165,7 @@
 "ax-hvmulid" is used by "mayete3i".
 "ax-hvmulid" is used by "mayete3iOLD".
 "ax-hvmulid" is used by "strlem1".
+"ax-inf" is used by "zfinf".
 "ax-meredith" is used by "luk-1".
 "ax-meredith" is used by "luk-2".
 "ax-meredith" is used by "merlem1".
@@ -1170,7 +1179,10 @@
 "ax-meredith" is used by "merlem7".
 "ax-meredith" is used by "merlem8".
 "ax-meredith" is used by "merlem9".
+"ax-mulass" is used by "mulass".
 "ax-mulcl" is used by "mulcl".
+"ax-mulcom" is used by "mulcom".
+"ax-mulrcl" is used by "remulcl".
 "ax10" is used by "e2ebindALT".
 "ax10lem16" is used by "a12stdy2-x12".
 "ax10lem16" is used by "a12study4".
@@ -1515,7 +1527,15 @@
 "ax9vax9" is used by "ax9OLD".
 "ax9vax9" is used by "ax9sep".
 "ax9vsep" is used by "ax9sep".
+"axacnd" is used by "axacprim".
+"axacnd" is used by "zfcndac".
+"axacndlem4" is used by "axacndlem5".
+"axacndlem5" is used by "axacnd".
 "axaddf" is used by "axaddcl".
+"axinfnd" is used by "axinfprim".
+"axinfnd" is used by "zfcndinf".
+"axinfndlem1" is used by "axinfnd".
+"axlttrn" is used by "lttr".
 "axmulf" is used by "axmulcl".
 "axpjcl" is used by "pjcli".
 "axpjcl" is used by "pjcompi".
@@ -13290,6 +13310,9 @@
 "wvhc3" is used by "dfvd3an".
 "wvhc3" is used by "dfvd3ani".
 "wvhc3" is used by "dfvd3anir".
+"zfac" is used by "axacndlem4".
+"zfinf" is used by "axinf2".
+"zfinf" is used by "axinfndlem1".
 "zfpair" is used by "axpr".
 "zfpair" is used by "clatl".
 "zfpair" is used by "dfdir2".
@@ -13459,6 +13482,8 @@ New usage of "abrexex2gOLD" is discouraged (0 uses).
 New usage of "abshicom" is discouraged (1 uses).
 New usage of "absmod0OLD" is discouraged (0 uses).
 New usage of "abszOLD" is discouraged (0 uses).
+New usage of "ac2" is discouraged (1 uses).
+New usage of "ac3" is discouraged (2 uses).
 New usage of "add20OLD" is discouraged (0 uses).
 New usage of "addassnq" is discouraged (4 uses).
 New usage of "addasspi" is discouraged (1 uses).
@@ -13578,9 +13603,13 @@ New usage of "ax-5o" is discouraged (3 uses).
 New usage of "ax-6o" is discouraged (7 uses).
 New usage of "ax-9o" is discouraged (2 uses).
 New usage of "ax-9v" is discouraged (29 uses).
+New usage of "ax-ac" is discouraged (2 uses).
+New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
+New usage of "ax-cnre" is discouraged (1 uses).
+New usage of "ax-distr" is discouraged (1 uses).
 New usage of "ax-hcompl" is discouraged (6 uses).
 New usage of "ax-hfi" is discouraged (3 uses).
 New usage of "ax-hfvadd" is discouraged (14 uses).
@@ -13599,8 +13628,12 @@ New usage of "ax-hvdistr2" is discouraged (7 uses).
 New usage of "ax-hvmul0" is discouraged (7 uses).
 New usage of "ax-hvmulass" is discouraged (17 uses).
 New usage of "ax-hvmulid" is discouraged (18 uses).
+New usage of "ax-inf" is discouraged (1 uses).
 New usage of "ax-meredith" is discouraged (13 uses).
+New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
+New usage of "ax-mulcom" is discouraged (1 uses).
+New usage of "ax-mulrcl" is discouraged (1 uses).
 New usage of "ax1" is discouraged (0 uses).
 New usage of "ax10" is discouraged (1 uses).
 New usage of "ax10X" is discouraged (0 uses).
@@ -13756,13 +13789,20 @@ New usage of "ax9lem9" is discouraged (3 uses).
 New usage of "ax9sep" is discouraged (0 uses).
 New usage of "ax9vax9" is discouraged (2 uses).
 New usage of "ax9vsep" is discouraged (1 uses).
+New usage of "axac2" is discouraged (0 uses).
 New usage of "axac3OLD" is discouraged (0 uses).
+New usage of "axacnd" is discouraged (2 uses).
+New usage of "axacndlem4" is discouraged (1 uses).
+New usage of "axacndlem5" is discouraged (1 uses).
+New usage of "axacprim" is discouraged (0 uses).
 New usage of "axaddass" is discouraged (0 uses).
 New usage of "axaddcl" is discouraged (0 uses).
 New usage of "axaddf" is discouraged (1 uses).
 New usage of "axaddrcl" is discouraged (0 uses).
+New usage of "axcc" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (0 uses).
 New usage of "axcnre" is discouraged (0 uses).
+New usage of "axdc" is discouraged (0 uses).
 New usage of "axdistr" is discouraged (0 uses).
 New usage of "axhcompl-zf" is discouraged (0 uses).
 New usage of "axhfi-zf" is discouraged (0 uses).
@@ -13785,6 +13825,10 @@ New usage of "axhvmulid-zf" is discouraged (0 uses).
 New usage of "axi2m1" is discouraged (0 uses).
 New usage of "axicn" is discouraged (0 uses).
 New usage of "axinf2" is discouraged (0 uses).
+New usage of "axinfnd" is discouraged (2 uses).
+New usage of "axinfndlem1" is discouraged (1 uses).
+New usage of "axinfprim" is discouraged (0 uses).
+New usage of "axlttrn" is discouraged (1 uses).
 New usage of "axmulass" is discouraged (0 uses).
 New usage of "axmulcl" is discouraged (0 uses).
 New usage of "axmulcom" is discouraged (0 uses).
@@ -17669,6 +17713,10 @@ New usage of "xpnnenOLD" is discouraged (0 uses).
 New usage of "xpomenOLD" is discouraged (0 uses).
 New usage of "xpsspwOLD" is discouraged (0 uses).
 New usage of "zaddsubgo" is discouraged (0 uses).
+New usage of "zfac" is discouraged (1 uses).
+New usage of "zfcndac" is discouraged (0 uses).
+New usage of "zfcndinf" is discouraged (0 uses).
+New usage of "zfinf" is discouraged (2 uses).
 New usage of "zfpair" is discouraged (5 uses).
 New usage of "zfregs2VD" is discouraged (0 uses).
 New usage of "zrdivrng" is discouraged (2 uses).
