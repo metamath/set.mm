@@ -1630,6 +1630,25 @@
 "bafval" is used by "nvzcl".
 "bafval" is used by "phpar".
 "bafval" is used by "sspba".
+"basendx" is used by "2strstr".
+"basendx" is used by "catstr".
+"basendx" is used by "grpbasex".
+"basendx" is used by "grpplusgx".
+"basendx" is used by "indistpsx".
+"basendx" is used by "ipostr".
+"basendx" is used by "lmodstr".
+"basendx" is used by "matbas".
+"basendx" is used by "mgpress".
+"basendx" is used by "odubas".
+"basendx" is used by "oppcbas".
+"basendx" is used by "otpsstr".
+"basendx" is used by "rescabs".
+"basendx" is used by "rescbas".
+"basendx" is used by "resslem".
+"basendx" is used by "rngstr".
+"basendx" is used by "setsmsbas".
+"basendx" is used by "thlbas".
+"basendx" is used by "topgrpstr".
 "bcs" is used by "bcs2".
 "bcs" is used by "cnlnadjlem2".
 "bcs" is used by "cnlnadjlem7".
@@ -13900,6 +13919,8 @@ New usage of "baerlem5abmN" is discouraged (0 uses).
 New usage of "baerlem5amN" is discouraged (0 uses).
 New usage of "baerlem5bmN" is discouraged (0 uses).
 New usage of "bafval" is discouraged (43 uses).
+New usage of "basendx" is discouraged (19 uses).
+New usage of "baseval" is discouraged (0 uses).
 New usage of "bcs" is discouraged (6 uses).
 New usage of "bcs2" is discouraged (2 uses).
 New usage of "bcs3" is discouraged (0 uses).
@@ -14651,6 +14672,7 @@ New usage of "cmtidN" is discouraged (1 uses).
 New usage of "cmtvalN" is discouraged (4 uses).
 New usage of "cnaddabl" is discouraged (1 uses).
 New usage of "cnaddablo" is discouraged (11 uses).
+New usage of "cnaddablx" is discouraged (0 uses).
 New usage of "cnbn" is discouraged (2 uses).
 New usage of "cnchl" is discouraged (1 uses).
 New usage of "cncph" is discouraged (2 uses).
