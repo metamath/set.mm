@@ -6077,6 +6077,9 @@
 "glbconxN" is used by "polval2N".
 "golem1" is used by "golem2".
 "golem2" is used by "goeqi".
+"grpbasex" is used by "cnaddablx".
+"grpbasex" is used by "isgrpix".
+"grpbasex" is used by "zaddablx".
 "grpo2inv" is used by "ghomf1olem".
 "grpo2inv" is used by "grpodivinv".
 "grpo2inv" is used by "grpoinvdiv".
@@ -6513,6 +6516,9 @@
 "grposn" is used by "ghomsn".
 "grposn" is used by "gidsn".
 "grposn" is used by "ginvsn".
+"grpplusgx" is used by "cnaddablx".
+"grpplusgx" is used by "isgrpix".
+"grpplusgx" is used by "zaddablx".
 "gt-lth" is used by "ex-gt".
 "gt0srpr" is used by "mulgt0sr".
 "gt0srpr" is used by "recexsrlem".
@@ -8685,6 +8691,8 @@
 "isgrpda" is used by "isabloda".
 "isgrpda" is used by "isdrngo2".
 "isgrpda" is used by "isgrpod".
+"isgrpix" is used by "cnaddablx".
+"isgrpix" is used by "zaddablx".
 "isgrpo" is used by "grpoass".
 "isgrpo" is used by "grpofo".
 "isgrpo" is used by "grpolidinv".
@@ -15438,6 +15446,7 @@ New usage of "glbconxN" is discouraged (1 uses).
 New usage of "goeqi" is discouraged (0 uses).
 New usage of "golem1" is discouraged (1 uses).
 New usage of "golem2" is discouraged (1 uses).
+New usage of "grpbasex" is discouraged (3 uses).
 New usage of "grpinvnzOLD" is discouraged (0 uses).
 New usage of "grpinvnzclOLD" is discouraged (0 uses).
 New usage of "grpo2grp" is discouraged (0 uses).
@@ -15494,6 +15503,7 @@ New usage of "grporinv" is discouraged (20 uses).
 New usage of "grporn" is discouraged (17 uses).
 New usage of "grporndm" is discouraged (8 uses).
 New usage of "grposn" is discouraged (5 uses).
+New usage of "grpplusgx" is discouraged (3 uses).
 New usage of "gt-lt" is discouraged (0 uses).
 New usage of "gt-lth" is discouraged (1 uses).
 New usage of "gt0srpr" is discouraged (2 uses).
@@ -15990,6 +16000,7 @@ New usage of "in3" is discouraged (13 uses).
 New usage of "in3an" is discouraged (1 uses).
 New usage of "incldOLD" is discouraged (0 uses).
 New usage of "indexfiOLD" is discouraged (0 uses).
+New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
 New usage of "infleOLD" is discouraged (0 uses).
 New usage of "infmrlbOLD" is discouraged (0 uses).
@@ -16054,6 +16065,7 @@ New usage of "isexid2" is discouraged (2 uses).
 New usage of "isgrp2d" is discouraged (2 uses).
 New usage of "isgrp2i" is discouraged (0 uses).
 New usage of "isgrpda" is discouraged (3 uses).
+New usage of "isgrpix" is discouraged (2 uses).
 New usage of "isgrpo" is discouraged (8 uses).
 New usage of "isgrpo2" is discouraged (1 uses).
 New usage of "isgrpod" is discouraged (0 uses).
@@ -17753,6 +17765,7 @@ New usage of "xpeq2dOLD" is discouraged (0 uses).
 New usage of "xpnnenOLD" is discouraged (0 uses).
 New usage of "xpomenOLD" is discouraged (0 uses).
 New usage of "xpsspwOLD" is discouraged (0 uses).
+New usage of "zaddablx" is discouraged (0 uses).
 New usage of "zaddsubgo" is discouraged (0 uses).
 New usage of "zfac" is discouraged (1 uses).
 New usage of "zfcndac" is discouraged (0 uses).
