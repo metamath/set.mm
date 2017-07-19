@@ -4435,6 +4435,8 @@
 "df-1r" is used by "m1p1sr".
 "df-1r" is used by "recexsrlem".
 "df-ablo" is used by "isablo".
+"df-add" is used by "addcnsr".
+"df-add" is used by "axaddf".
 "df-adjh" is used by "adjeq".
 "df-adjh" is used by "dfadj2".
 "df-aj" is used by "ajfval".
@@ -4760,8 +4762,6 @@
 "df-plq" is used by "addpqnq".
 "df-plr" is used by "addsrpr".
 "df-plr" is used by "dmaddsr".
-"df-plus" is used by "addcnsr".
-"df-plus" is used by "axaddf".
 "df-pnf" is used by "mnfnre".
 "df-pnf" is used by "pnfnre".
 "df-pnf" is used by "pnfxr".
@@ -14771,6 +14771,7 @@ New usage of "df-1nq" is discouraged (5 uses).
 New usage of "df-1p" is discouraged (4 uses).
 New usage of "df-1r" is discouraged (6 uses).
 New usage of "df-ablo" is discouraged (1 uses).
+New usage of "df-add" is discouraged (2 uses).
 New usage of "df-adjh" is discouraged (2 uses).
 New usage of "df-aj" is discouraged (1 uses).
 New usage of "df-ass" is discouraged (1 uses).
@@ -14878,7 +14879,6 @@ New usage of "df-plpq" is discouraged (3 uses).
 New usage of "df-plpr" is discouraged (1 uses).
 New usage of "df-plq" is discouraged (2 uses).
 New usage of "df-plr" is discouraged (2 uses).
-New usage of "df-plus" is discouraged (2 uses).
 New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-r" is discouraged (6 uses).
 New usage of "df-recs" is discouraged (5 uses).
