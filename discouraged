@@ -12160,7 +12160,7 @@
 "sbcbiiOLD" is used by "eqsbc3rVD".
 "sbcbiiOLD" is used by "isibg2".
 "sbcbiiOLD" is used by "sbc3org".
-"sbcbiiOLD" is used by "sbcss".
+"sbcbiiOLD" is used by "sbcssOLD".
 "sbcbiiOLD" is used by "trsbc".
 "sbcco3gOLD" is used by "2rexfrabdioph".
 "sbcco3gOLD" is used by "3rexfrabdioph".
@@ -17343,7 +17343,7 @@ New usage of "sbcim2g" is discouraged (2 uses).
 New usage of "sbcim2gVD" is discouraged (0 uses).
 New usage of "sbcoreleleq" is discouraged (2 uses).
 New usage of "sbcoreleleqVD" is discouraged (0 uses).
-New usage of "sbcss" is discouraged (0 uses).
+New usage of "sbcssOLD" is discouraged (0 uses).
 New usage of "sbcssVD" is discouraged (0 uses).
 New usage of "sbmoOLD" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
@@ -18567,7 +18567,7 @@ Proof modification of "sbcim2g" is discouraged (83 steps).
 Proof modification of "sbcim2gVD" is discouraged (139 steps).
 Proof modification of "sbcoreleleq" is discouraged (90 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (127 steps).
-Proof modification of "sbcss" is discouraged (130 steps).
+Proof modification of "sbcssOLD" is discouraged (130 steps).
 Proof modification of "sbcssVD" is discouraged (223 steps).
 Proof modification of "sbmoOLD" is discouraged (5 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
