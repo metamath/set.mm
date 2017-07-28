@@ -783,8 +783,6 @@
 "ax-9v" is used by "a12study10n".
 "ax-9v" is used by "a16gALT".
 "ax-9v" is used by "a16gALTX".
-"ax-9v" is used by "a4imK".
-"ax-9v" is used by "a4imvK".
 "ax-9v" is used by "ax10".
 "ax-9v" is used by "ax10X".
 "ax-9v" is used by "ax10lem17ALT".
@@ -807,6 +805,8 @@
 "ax-9v" is used by "ax9OLD".
 "ax-9v" is used by "ax9X".
 "ax-9v" is used by "equidK".
+"ax-9v" is used by "spimK".
+"ax-9v" is used by "spimvK".
 "ax-ac" is used by "ac2".
 "ax-ac" is used by "zfac".
 "ax-addass" is used by "addass".
@@ -5365,7 +5365,7 @@
 "e13" is used by "en3lplem2VD".
 "e13" is used by "imbi12VD".
 "e13" is used by "imbi13VD".
-"e13" is used by "ra4sbc2VD".
+"e13" is used by "rspsbc2VD".
 "e13" is used by "ssralv2VD".
 "e13" is used by "truniALTVD".
 "e1_" is used by "19.41rgVD".
@@ -5516,7 +5516,7 @@
 "e23" is used by "e23an".
 "e23" is used by "imbi12VD".
 "e23" is used by "imbi13VD".
-"e23" is used by "ra4sbc2VD".
+"e23" is used by "rspsbc2VD".
 "e23" is used by "suctrALT2VD".
 "e23" is used by "tratrbVD".
 "e233" is used by "onfrALTlem2VD".
@@ -5609,7 +5609,7 @@
 "ee222" is used by "suctrALT2".
 "ee222" is used by "tratrb".
 "ee223" is used by "e223".
-"ee23" is used by "ra4sbc2".
+"ee23" is used by "rspsbc2".
 "ee23" is used by "tratrb".
 "ee23" is used by "tz7.49".
 "ee233" is used by "e233".
@@ -8286,8 +8286,8 @@
 "idn1" is used by "ordelordALTVD".
 "idn1" is used by "pwtrVD".
 "idn1" is used by "pwtrrVD".
-"idn1" is used by "ra4sbc2VD".
 "idn1" is used by "relopabVD".
+"idn1" is used by "rspsbc2VD".
 "idn1" is used by "sb5ALTVD".
 "idn1" is used by "sbc3orgVD".
 "idn1" is used by "sbcbiVD".
@@ -8338,8 +8338,8 @@
 "idn2" is used by "orbi1rVD".
 "idn2" is used by "pwtrVD".
 "idn2" is used by "pwtrrVD".
-"idn2" is used by "ra4sbc2VD".
 "idn2" is used by "relopabVD".
+"idn2" is used by "rspsbc2VD".
 "idn2" is used by "sb5ALTVD".
 "idn2" is used by "sbcbiVD".
 "idn2" is used by "sbcim2gVD".
@@ -8361,7 +8361,7 @@
 "idn3" is used by "imbi12VD".
 "idn3" is used by "imbi13VD".
 "idn3" is used by "onfrALTlem2VD".
-"idn3" is used by "ra4sbc2VD".
+"idn3" is used by "rspsbc2VD".
 "idn3" is used by "ssralv2VD".
 "idn3" is used by "suctrALT2VD".
 "idn3" is used by "tratrbVD".
@@ -8493,8 +8493,8 @@
 "in1" is used by "ordelordALTVD".
 "in1" is used by "pwtrVD".
 "in1" is used by "pwtrrVD".
-"in1" is used by "ra4sbc2VD".
 "in1" is used by "relopabVD".
+"in1" is used by "rspsbc2VD".
 "in1" is used by "sb5ALTVD".
 "in1" is used by "sbc3orgVD".
 "in1" is used by "sbcbiVD".
@@ -8547,8 +8547,8 @@
 "in2" is used by "orbi1rVD".
 "in2" is used by "pwtrVD".
 "in2" is used by "pwtrrVD".
-"in2" is used by "ra4sbc2VD".
 "in2" is used by "relopabVD".
+"in2" is used by "rspsbc2VD".
 "in2" is used by "sbcbiVD".
 "in2" is used by "sbcim2gVD".
 "in2" is used by "snssiALTVD".
@@ -8570,7 +8570,7 @@
 "in3" is used by "imbi12VD".
 "in3" is used by "imbi13VD".
 "in3" is used by "onfrALTlem2VD".
-"in3" is used by "ra4sbc2VD".
+"in3" is used by "rspsbc2VD".
 "in3" is used by "ssralv2VD".
 "in3" is used by "suctrALT2VD".
 "in3" is used by "tratrbVD".
@@ -11823,8 +11823,6 @@
 "psubspi2N" is used by "pclclN".
 "psubspi2N" is used by "pclfinN".
 "psubspi2N" is used by "pclfinclN".
-"ra4sbc2" is used by "tratrb".
-"ra4sbc2" is used by "tratrbVD".
 "rb-ax1" is used by "rblem1".
 "rb-ax1" is used by "rblem2".
 "rb-ax1" is used by "rblem4".
@@ -12146,6 +12144,8 @@
 "rngosn6" is used by "dvrunz".
 "rngoueqz" is used by "dvrunz".
 "rngoueqz" is used by "isdmn3".
+"rspsbc2" is used by "tratrb".
+"rspsbc2" is used by "tratrbVD".
 "sbc3org" is used by "sbcoreleleq".
 "sbc3org" is used by "sbcoreleleqVD".
 "sbcbi" is used by "onfrALTlem5".
@@ -17208,8 +17208,6 @@ New usage of "qredeqOLD" is discouraged (0 uses).
 New usage of "qredeuOLD" is discouraged (0 uses).
 New usage of "r19.21aivvaOLD" is discouraged (0 uses).
 New usage of "r1pwOLD" is discouraged (0 uses).
-New usage of "ra4sbc2" is discouraged (2 uses).
-New usage of "ra4sbc2VD" is discouraged (0 uses).
 New usage of "rabeq0OLD" is discouraged (0 uses).
 New usage of "rabeq12OLD" is discouraged (0 uses).
 New usage of "rabncOLD" is discouraged (0 uses).
@@ -17331,6 +17329,8 @@ New usage of "rngosn3" is discouraged (1 uses).
 New usage of "rngosn4" is discouraged (1 uses).
 New usage of "rngosn6" is discouraged (1 uses).
 New usage of "rngoueqz" is discouraged (2 uses).
+New usage of "rspsbc2" is discouraged (2 uses).
+New usage of "rspsbc2VD" is discouraged (0 uses).
 New usage of "sb5ALT" is discouraged (0 uses).
 New usage of "sb5ALTVD" is discouraged (0 uses).
 New usage of "sbc3org" is discouraged (2 uses).
@@ -18487,8 +18487,6 @@ Proof modification of "quoremnn0" is discouraged (443 steps).
 Proof modification of "r19.21aivvaOLD" is discouraged (8 steps).
 Proof modification of "r1omALT" is discouraged (13 steps).
 Proof modification of "r1pwOLD" is discouraged (151 steps).
-Proof modification of "ra4sbc2" is discouraged (65 steps).
-Proof modification of "ra4sbc2VD" is discouraged (90 steps).
 Proof modification of "rabeq0OLD" is discouraged (4 steps).
 Proof modification of "rabeq12OLD" is discouraged (9 steps).
 Proof modification of "rabncOLD" is discouraged (4 steps).
@@ -18552,6 +18550,8 @@ Proof modification of "rexunOLD" is discouraged (5 steps).
 Proof modification of "riotasv2dOLD" is discouraged (337 steps).
 Proof modification of "riotasv3dOLD" is discouraged (241 steps).
 Proof modification of "riotasvdOLD" is discouraged (295 steps).
+Proof modification of "rspsbc2" is discouraged (65 steps).
+Proof modification of "rspsbc2VD" is discouraged (90 steps).
 Proof modification of "ruALT" is discouraged (35 steps).
 Proof modification of "ruc" is discouraged (59 steps).
 Proof modification of "rusbcALT" is discouraged (77 steps).
