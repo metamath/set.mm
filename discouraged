@@ -257,6 +257,12 @@
 "a12study10" is used by "a12study11".
 "a12study10n" is used by "a12study11n".
 "a12study8" is used by "a12peros".
+"a16g-o" is used by "ax11inda2".
+"a5i-o" is used by "aev-o".
+"a5i-o" is used by "ax10-16".
+"a5i-o" is used by "ax11inda2ALT".
+"a5i-o" is used by "ax11indalem".
+"a5i-o" is used by "hbae-o".
 "a9e2eq" is used by "a9e2ndeq".
 "a9e2eq" is used by "a9e2ndeqALT".
 "a9e2eq" is used by "a9e2ndeqVD".
@@ -632,10 +638,21 @@
 "adjval" is used by "adjbdln".
 "adjval" is used by "adjval2".
 "adjvalval" is used by "nmopadjlei".
+"aev-o" is used by "a16g-o".
 "ajfuni" is used by "ajfun".
 "ajfval" is used by "ajfuni".
 "ajfval" is used by "ajval".
 "ajmoi" is used by "ajfuni".
+"alequcom-o" is used by "aev-o".
+"alequcom-o" is used by "alequcoms-o".
+"alequcom-o" is used by "ax11indalem".
+"alequcom-o" is used by "nalequcoms-o".
+"alequcoms-o" is used by "aev-o".
+"alequcoms-o" is used by "ax11inda2ALT".
+"alequcoms-o" is used by "ax11indalem".
+"alequcoms-o" is used by "dral1-o".
+"alequcoms-o" is used by "dvelimf-o".
+"alequcoms-o" is used by "hbae-o".
 "alrim3con13v" is used by "tratrbVD".
 "anandii" is used by "a12study8".
 "anandii" is used by "ax12conj2".
@@ -786,7 +803,6 @@
 "ax-4" is used by "ax46".
 "ax-4" is used by "ax467".
 "ax-4" is used by "ax5".
-"ax-4" is used by "ax5o".
 "ax-4" is used by "ax6".
 "ax-4" is used by "ax67to6".
 "ax-4" is used by "hba1-o".
@@ -1215,11 +1231,25 @@
 "ax-pre-mulgt0" is used by "axmulgt0".
 "ax-pre-sup" is used by "axsup".
 "ax10lem17ALT" is used by "ax10lem18ALT".
+"ax11inda2" is used by "ax11inda".
+"ax11indalem" is used by "ax11inda2".
+"ax11indn" is used by "ax11indi".
+"ax11v2-o" is used by "ax11a2-o".
 "ax12-2" is used by "ax12-3".
 "ax12-2" is used by "ax12OLD".
 "ax17el" is used by "dveel2ALT".
 "ax17eq" is used by "dveeq1ALT".
 "ax17eq" is used by "dveeq2ALT".
+"ax46" is used by "ax46to4".
+"ax46" is used by "ax46to6".
+"ax467" is used by "ax467to4".
+"ax467" is used by "ax467to6".
+"ax467" is used by "ax467to7".
+"ax467to4" is used by "ax467to6".
+"ax467to6" is used by "ax467to7".
+"ax67" is used by "ax67to6".
+"ax67" is used by "ax67to7".
+"ax67to6" is used by "ax67to7".
 "ax9lem1" is used by "ax9lem15".
 "ax9lem1" is used by "ax9lem2".
 "ax9lem1" is used by "ax9lem3".
@@ -4901,10 +4931,27 @@
 "docavalN" is used by "diaocN".
 "docavalN" is used by "docaclN".
 "dochfN" is used by "dochpolN".
+"dral1-o" is used by "a16g-o".
+"dral1-o" is used by "ax11".
+"dral1-o" is used by "ax11inda2ALT".
+"dral1-o" is used by "ax11indalem".
+"dral2-o" is used by "ax11el".
+"dral2-o" is used by "ax11eq".
+"dral2-o" is used by "ax11inda2ALT".
+"dral2-o" is used by "ax11indalem".
 "drngoi" is used by "dvrunz".
 "drngoi" is used by "fldcrng".
 "drngoi" is used by "fldi".
 "dvadiaN" is used by "diarnN".
+"dveeq1-o" is used by "ax11inda2ALT".
+"dveeq2-o" is used by "ax11el".
+"dveeq2-o" is used by "ax11eq".
+"dveeq2-o" is used by "ax11inda".
+"dveeq2-o" is used by "ax11v2-o".
+"dvelimf-o" is used by "a9e2ndALT".
+"dvelimf-o" is used by "ax11el".
+"dvelimf-o" is used by "dveeq1-o".
+"dvelimf-o" is used by "dveeq2-o".
 "dvelimfALT2OLD" is used by "a12study2".
 "dvh3dimatN" is used by "dvh2dimatN".
 "dvhopaddN" is used by "dvhopN".
@@ -6418,12 +6465,25 @@
 "hatomici" is used by "hatomistici".
 "hatomici" is used by "mdsymlem2".
 "hatomistici" is used by "chpssati".
+"hba1-o" is used by "a5i-o".
+"hba1-o" is used by "ax11inda".
+"hba1-o" is used by "ax11inda2ALT".
+"hba1-o" is used by "ax11indalem".
+"hba1-o" is used by "ax467to6".
+"hba1-o" is used by "ax67to6".
+"hba1-o" is used by "dvelimf-o".
+"hba1-o" is used by "nfa1-o".
 "hbae-o" is used by "aev-o".
 "hbae-o" is used by "dral1-o".
 "hbae-o" is used by "dral2-o".
 "hbae-o" is used by "hbnae-o".
 "hbae-x12" is used by "hbnae-x12".
 "hbalg" is used by "hbexgVD".
+"hbequid" is used by "equidq".
+"hbequid" is used by "nfequid".
+"hbnae-o" is used by "ax11inda2ALT".
+"hbnae-o" is used by "ax11indalem".
+"hbnae-o" is used by "dvelimf-o".
 "hbntal" is used by "hbexgVD".
 "hbntal" is used by "hbimpg".
 "hbntal" is used by "hbimpgVD".
@@ -9582,6 +9642,11 @@
 "mulsrpr" is used by "mulcomsr".
 "mulsrpr" is used by "mulgt0sr".
 "mulsrpr" is used by "recexsrlem".
+"nalequcoms-o" is used by "ax11inda2ALT".
+"nfa1-o" is used by "ax10-16".
+"nfa1-o" is used by "ax11el".
+"nfa1-o" is used by "ax11eq".
+"nfa1-o" is used by "ax11v2-o".
 "nic-ax" is used by "lukshef-ax1".
 "nic-ax" is used by "nic-id".
 "nic-ax" is used by "nic-idlem1".
@@ -13217,6 +13282,8 @@ New usage of "a12study6" is discouraged (0 uses).
 New usage of "a12study8" is discouraged (1 uses).
 New usage of "a12study9" is discouraged (0 uses).
 New usage of "a12studyALT" is discouraged (0 uses).
+New usage of "a16g-o" is discouraged (1 uses).
+New usage of "a5i-o" is discouraged (5 uses).
 New usage of "a9e2eq" is discouraged (3 uses).
 New usage of "a9e2eqVD" is discouraged (0 uses).
 New usage of "a9e2nd" is discouraged (3 uses).
@@ -13301,11 +13368,14 @@ New usage of "adjsym" is discouraged (5 uses).
 New usage of "adjval" is discouraged (2 uses).
 New usage of "adjval2" is discouraged (0 uses).
 New usage of "adjvalval" is discouraged (1 uses).
+New usage of "aev-o" is discouraged (1 uses).
 New usage of "ajfun" is discouraged (0 uses).
 New usage of "ajfuni" is discouraged (1 uses).
 New usage of "ajfval" is discouraged (2 uses).
 New usage of "ajmoi" is discouraged (1 uses).
 New usage of "ajval" is discouraged (0 uses).
+New usage of "alequcom-o" is discouraged (4 uses).
+New usage of "alequcoms-o" is discouraged (6 uses).
 New usage of "alrim3con13v" is discouraged (1 uses).
 New usage of "an43OLD" is discouraged (0 uses).
 New usage of "anabss7p1" is discouraged (0 uses).
@@ -13362,7 +13432,7 @@ New usage of "ax-12" is discouraged (1 uses).
 New usage of "ax-12o" is discouraged (7 uses).
 New usage of "ax-15" is discouraged (2 uses).
 New usage of "ax-16" is discouraged (4 uses).
-New usage of "ax-4" is discouraged (12 uses).
+New usage of "ax-4" is discouraged (11 uses).
 New usage of "ax-5o" is discouraged (3 uses).
 New usage of "ax-6o" is discouraged (7 uses).
 New usage of "ax-9" is discouraged (1 uses).
@@ -13410,7 +13480,18 @@ New usage of "ax10-16" is discouraged (0 uses).
 New usage of "ax10from10o" is discouraged (0 uses).
 New usage of "ax10lem17ALT" is discouraged (1 uses).
 New usage of "ax10lem18ALT" is discouraged (0 uses).
+New usage of "ax10o-o" is discouraged (0 uses).
 New usage of "ax11" is discouraged (0 uses).
+New usage of "ax11a2-o" is discouraged (0 uses).
+New usage of "ax11el" is discouraged (0 uses).
+New usage of "ax11eq" is discouraged (0 uses).
+New usage of "ax11inda" is discouraged (0 uses).
+New usage of "ax11inda2" is discouraged (1 uses).
+New usage of "ax11inda2ALT" is discouraged (0 uses).
+New usage of "ax11indalem" is discouraged (1 uses).
+New usage of "ax11indi" is discouraged (0 uses).
+New usage of "ax11indn" is discouraged (1 uses).
+New usage of "ax11v2-o" is discouraged (1 uses).
 New usage of "ax12" is discouraged (0 uses).
 New usage of "ax12-2" is discouraged (2 uses).
 New usage of "ax12-3" is discouraged (0 uses).
@@ -13425,8 +13506,18 @@ New usage of "ax1ne0" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax2" is discouraged (0 uses).
 New usage of "ax3" is discouraged (0 uses).
+New usage of "ax46" is discouraged (2 uses).
+New usage of "ax467" is discouraged (3 uses).
+New usage of "ax467to4" is discouraged (1 uses).
+New usage of "ax467to6" is discouraged (1 uses).
+New usage of "ax467to7" is discouraged (0 uses).
+New usage of "ax46to4" is discouraged (0 uses).
+New usage of "ax46to6" is discouraged (0 uses).
 New usage of "ax5" is discouraged (0 uses).
 New usage of "ax6" is discouraged (0 uses).
+New usage of "ax67" is discouraged (2 uses).
+New usage of "ax67to6" is discouraged (1 uses).
+New usage of "ax67to7" is discouraged (0 uses).
 New usage of "ax9OLD" is discouraged (0 uses).
 New usage of "ax9from9o" is discouraged (0 uses).
 New usage of "ax9lem1" is discouraged (5 uses).
@@ -14683,9 +14774,16 @@ New usage of "dochord2N" is discouraged (0 uses).
 New usage of "dochpolN" is discouraged (0 uses).
 New usage of "dochsordN" is discouraged (0 uses).
 New usage of "dochspocN" is discouraged (0 uses).
+New usage of "dral1-o" is discouraged (4 uses).
+New usage of "dral2-o" is discouraged (4 uses).
 New usage of "drngoi" is discouraged (3 uses).
 New usage of "dvadiaN" is discouraged (1 uses).
 New usage of "dveel2ALT" is discouraged (0 uses).
+New usage of "dveeq1-o" is discouraged (1 uses).
+New usage of "dveeq1ALT" is discouraged (0 uses).
+New usage of "dveeq2-o" is discouraged (4 uses).
+New usage of "dveeq2ALT" is discouraged (0 uses).
+New usage of "dvelimf-o" is discouraged (4 uses).
 New usage of "dvelimfALT2OLD" is discouraged (1 uses).
 New usage of "dvh2dimatN" is discouraged (0 uses).
 New usage of "dvh3dim3N" is discouraged (0 uses).
@@ -14953,7 +15051,9 @@ New usage of "eqrelrdv2OLD" is discouraged (0 uses).
 New usage of "eqrelrdvOLD" is discouraged (0 uses).
 New usage of "eqresr" is discouraged (4 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
+New usage of "equid1" is discouraged (0 uses).
 New usage of "equid1ALT" is discouraged (0 uses).
+New usage of "equidq" is discouraged (0 uses).
 New usage of "equncomVD" is discouraged (0 uses).
 New usage of "equncomiVD" is discouraged (0 uses).
 New usage of "equsexv-x12" is discouraged (1 uses).
@@ -15172,14 +15272,17 @@ New usage of "halfnq" is discouraged (1 uses).
 New usage of "hatomic" is discouraged (1 uses).
 New usage of "hatomici" is discouraged (6 uses).
 New usage of "hatomistici" is discouraged (1 uses).
+New usage of "hba1-o" is discouraged (8 uses).
 New usage of "hbae-o" is discouraged (4 uses).
 New usage of "hbae-x12" is discouraged (1 uses).
 New usage of "hbalg" is discouraged (1 uses).
 New usage of "hbalgVD" is discouraged (0 uses).
+New usage of "hbequid" is discouraged (2 uses).
 New usage of "hbexg" is discouraged (0 uses).
 New usage of "hbexgVD" is discouraged (0 uses).
 New usage of "hbimpg" is discouraged (0 uses).
 New usage of "hbimpgVD" is discouraged (0 uses).
+New usage of "hbnae-o" is discouraged (3 uses).
 New usage of "hbnae-x12" is discouraged (0 uses).
 New usage of "hbntal" is discouraged (3 uses).
 New usage of "hbra2VD" is discouraged (0 uses).
@@ -16156,8 +16259,11 @@ New usage of "mulpqf" is discouraged (5 uses).
 New usage of "mulpqnq" is discouraged (7 uses).
 New usage of "mulresr" is discouraged (4 uses).
 New usage of "mulsrpr" is discouraged (9 uses).
+New usage of "nalequcoms-o" is discouraged (1 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "negmod0OLD" is discouraged (0 uses).
+New usage of "nfa1-o" is discouraged (4 uses).
+New usage of "nfequid" is discouraged (0 uses).
 New usage of "nic-ax" is discouraged (7 uses).
 New usage of "nic-axALT" is discouraged (0 uses).
 New usage of "nic-bi1" is discouraged (3 uses).
