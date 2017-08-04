@@ -805,6 +805,7 @@
 "ax-4" is used by "ax5".
 "ax-4" is used by "ax6".
 "ax-4" is used by "ax67to6".
+"ax-4" is used by "equid1".
 "ax-4" is used by "hba1-o".
 "ax-4" is used by "hbae-o".
 "ax-5o" is used by "ax4567".
@@ -815,6 +816,7 @@
 "ax-6o" is used by "ax467".
 "ax-6o" is used by "ax6".
 "ax-6o" is used by "ax67".
+"ax-6o" is used by "ax9from9o".
 "ax-6o" is used by "equid1ALT".
 "ax-6o" is used by "hbntg".
 "ax-9" is used by "ax9v".
@@ -1247,9 +1249,11 @@
 "ax467" is used by "ax467to7".
 "ax467to4" is used by "ax467to6".
 "ax467to6" is used by "ax467to7".
+"ax6" is used by "equid1".
 "ax67" is used by "ax67to6".
 "ax67" is used by "ax67to7".
 "ax67to6" is used by "ax67to7".
+"ax9from9o" is used by "equid1".
 "ax9lem1" is used by "ax9lem15".
 "ax9lem1" is used by "ax9lem2".
 "ax9lem1" is used by "ax9lem3".
@@ -13432,9 +13436,9 @@ New usage of "ax-12" is discouraged (1 uses).
 New usage of "ax-12o" is discouraged (7 uses).
 New usage of "ax-15" is discouraged (2 uses).
 New usage of "ax-16" is discouraged (4 uses).
-New usage of "ax-4" is discouraged (11 uses).
+New usage of "ax-4" is discouraged (12 uses).
 New usage of "ax-5o" is discouraged (3 uses).
-New usage of "ax-6o" is discouraged (7 uses).
+New usage of "ax-6o" is discouraged (8 uses).
 New usage of "ax-9" is discouraged (1 uses).
 New usage of "ax-9o" is discouraged (2 uses).
 New usage of "ax-ac" is discouraged (2 uses).
@@ -13514,12 +13518,12 @@ New usage of "ax467to7" is discouraged (0 uses).
 New usage of "ax46to4" is discouraged (0 uses).
 New usage of "ax46to6" is discouraged (0 uses).
 New usage of "ax5" is discouraged (0 uses).
-New usage of "ax6" is discouraged (0 uses).
+New usage of "ax6" is discouraged (1 uses).
 New usage of "ax67" is discouraged (2 uses).
 New usage of "ax67to6" is discouraged (1 uses).
 New usage of "ax67to7" is discouraged (0 uses).
 New usage of "ax9OLD" is discouraged (0 uses).
-New usage of "ax9from9o" is discouraged (0 uses).
+New usage of "ax9from9o" is discouraged (1 uses).
 New usage of "ax9lem1" is discouraged (5 uses).
 New usage of "ax9lem10" is discouraged (1 uses).
 New usage of "ax9lem11" is discouraged (1 uses).
@@ -17617,7 +17621,7 @@ Proof modification of "ax67" is discouraged (37 steps).
 Proof modification of "ax67to6" is discouraged (37 steps).
 Proof modification of "ax67to7" is discouraged (32 steps).
 Proof modification of "ax9OLD" is discouraged (47 steps).
-Proof modification of "ax9from9o" is discouraged (21 steps).
+Proof modification of "ax9from9o" is discouraged (24 steps).
 Proof modification of "ax9lem1" is discouraged (46 steps).
 Proof modification of "ax9lem10" is discouraged (54 steps).
 Proof modification of "ax9lem11" is discouraged (34 steps).
@@ -17901,7 +17905,7 @@ Proof modification of "eqid1" is discouraged (9 steps).
 Proof modification of "eqrelrdv2OLD" is discouraged (43 steps).
 Proof modification of "eqrelrdvOLD" is discouraged (41 steps).
 Proof modification of "eqsbc3rVD" is discouraged (129 steps).
-Proof modification of "equid1" is discouraged (40 steps).
+Proof modification of "equid1" is discouraged (43 steps).
 Proof modification of "equid1ALT" is discouraged (36 steps).
 Proof modification of "equidq" is discouraged (27 steps).
 Proof modification of "equidqe" is discouraged (30 steps).
