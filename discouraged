@@ -653,28 +653,7 @@
 "alequcoms-o" is used by "dral1-o".
 "alequcoms-o" is used by "dvelimf-o".
 "alequcoms-o" is used by "hbae-o".
-"alimi-o" is used by "alequcom-o".
-"alimi-o" is used by "alrimih-o".
-"alimi-o" is used by "ax10-16".
-"alimi-o" is used by "ax10from10o".
-"alimi-o" is used by "ax11".
-"alimi-o" is used by "ax11el".
-"alimi-o" is used by "ax11eq".
-"alimi-o" is used by "ax11indi".
-"alimi-o" is used by "ax467".
-"alimi-o" is used by "ax467to6".
-"alimi-o" is used by "ax467to7".
-"alimi-o" is used by "ax67".
-"alimi-o" is used by "ax67to6".
-"alimi-o" is used by "ax67to7".
-"alimi-o" is used by "equid1ALT".
-"alimi-o" is used by "equidqe".
-"alimi-o" is used by "hba1-o".
-"alimi-o" is used by "hbequid".
 "alrim3con13v" is used by "tratrbVD".
-"alrimih-o" is used by "a5i-o".
-"alrimih-o" is used by "aev-o".
-"alrimih-o" is used by "equidq".
 "anandii" is used by "a12study8".
 "anandii" is used by "ax12conj2".
 "anmp" is used by "rblem1".
@@ -1274,7 +1253,6 @@
 "ax467" is used by "ax467to6".
 "ax467" is used by "ax467to7".
 "ax467to6" is used by "ax467to7".
-"ax5" is used by "alimi-o".
 "ax6" is used by "ax467".
 "ax6" is used by "equidq".
 "ax6" is used by "hba1-o".
@@ -5722,7 +5700,6 @@
 "eqresr" is used by "axpre-lttri".
 "eqresr" is used by "axrrecex".
 "eqresr" is used by "ltresr".
-"equid1" is used by "equcomi-o".
 "equsexv-x12" is used by "equvinv".
 "equveliv" is used by "equvelv".
 "erngbase-rN" is used by "erngdvlem1-rN".
@@ -13416,9 +13393,7 @@ New usage of "ajmoi" is discouraged (1 uses).
 New usage of "ajval" is discouraged (0 uses).
 New usage of "alequcom-o" is discouraged (4 uses).
 New usage of "alequcoms-o" is discouraged (6 uses).
-New usage of "alimi-o" is discouraged (18 uses).
 New usage of "alrim3con13v" is discouraged (1 uses).
-New usage of "alrimih-o" is discouraged (3 uses).
 New usage of "an43OLD" is discouraged (0 uses).
 New usage of "anabss7p1" is discouraged (0 uses).
 New usage of "anandii" is discouraged (2 uses).
@@ -13555,7 +13530,7 @@ New usage of "ax467to6" is discouraged (1 uses).
 New usage of "ax467to7" is discouraged (0 uses).
 New usage of "ax46to4" is discouraged (0 uses).
 New usage of "ax46to6" is discouraged (0 uses).
-New usage of "ax5" is discouraged (1 uses).
+New usage of "ax5" is discouraged (0 uses).
 New usage of "ax6" is discouraged (3 uses).
 New usage of "ax67" is discouraged (2 uses).
 New usage of "ax67to6" is discouraged (1 uses).
@@ -15093,7 +15068,7 @@ New usage of "eqrelrdv2OLD" is discouraged (0 uses).
 New usage of "eqrelrdvOLD" is discouraged (0 uses).
 New usage of "eqresr" is discouraged (4 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
-New usage of "equid1" is discouraged (1 uses).
+New usage of "equid1" is discouraged (0 uses).
 New usage of "equid1ALT" is discouraged (0 uses).
 New usage of "equidq" is discouraged (0 uses).
 New usage of "equncomVD" is discouraged (0 uses).
@@ -17612,9 +17587,7 @@ Proof modification of "add20OLD" is discouraged (3 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
 Proof modification of "addsubeq4OLD" is discouraged (5 steps).
 Proof modification of "alephf1ALT" is discouraged (47 steps).
-Proof modification of "alimi-o" is discouraged (17 steps).
 Proof modification of "alrim3con13v" is discouraged (74 steps).
-Proof modification of "alrimih-o" is discouraged (14 steps).
 Proof modification of "an43OLD" is discouraged (32 steps).
 Proof modification of "anabss7p1" is discouraged (5 steps).
 Proof modification of "anandii" is discouraged (36 steps).
@@ -17622,7 +17595,7 @@ Proof modification of "ancomsimpVD" is discouraged (22 steps).
 Proof modification of "anmp" is discouraged (8 steps).
 Proof modification of "avril1" is discouraged (198 steps).
 Proof modification of "ax1" is discouraged (3 steps).
-Proof modification of "ax10-16" is discouraged (157 steps).
+Proof modification of "ax10-16" is discouraged (154 steps).
 Proof modification of "ax10ext" is discouraged (277 steps).
 Proof modification of "ax10from10o" is discouraged (28 steps).
 Proof modification of "ax10lem17ALT" is discouraged (242 steps).
@@ -17630,15 +17603,15 @@ Proof modification of "ax10lem18ALT" is discouraged (95 steps).
 Proof modification of "ax10o" is discouraged (47 steps).
 Proof modification of "ax10o-o" is discouraged (47 steps).
 Proof modification of "ax11" is discouraged (57 steps).
-Proof modification of "ax11inda2ALT" is discouraged (223 steps).
+Proof modification of "ax11inda2ALT" is discouraged (220 steps).
 Proof modification of "ax12" is discouraged (72 steps).
 Proof modification of "ax12-2" is discouraged (116 steps).
 Proof modification of "ax12-3" is discouraged (58 steps).
 Proof modification of "ax12-4" is discouraged (103 steps).
 Proof modification of "ax12OLD" is discouraged (69 steps).
 Proof modification of "ax12conj2" is discouraged (89 steps).
-Proof modification of "ax15" is discouraged (79 steps).
-Proof modification of "ax16i" is discouraged (167 steps).
+Proof modification of "ax15" is discouraged (72 steps).
+Proof modification of "ax16i" is discouraged (135 steps).
 Proof modification of "ax172" is discouraged (14 steps).
 Proof modification of "ax17el" is discouraged (30 steps).
 Proof modification of "ax17eq" is discouraged (30 steps).
@@ -17656,9 +17629,9 @@ Proof modification of "ax467to7" is discouraged (57 steps).
 Proof modification of "ax46to4" is discouraged (17 steps).
 Proof modification of "ax46to6" is discouraged (18 steps).
 Proof modification of "ax4sp1" is discouraged (11 steps).
-Proof modification of "ax5" is discouraged (49 steps).
-Proof modification of "ax5o" is discouraged (61 steps).
-Proof modification of "ax6" is discouraged (58 steps).
+Proof modification of "ax5" is discouraged (45 steps).
+Proof modification of "ax5o" is discouraged (49 steps).
+Proof modification of "ax6" is discouraged (50 steps).
 Proof modification of "ax67" is discouraged (37 steps).
 Proof modification of "ax67to6" is discouraged (37 steps).
 Proof modification of "ax67to7" is discouraged (32 steps).
@@ -17682,7 +17655,7 @@ Proof modification of "ax9lem6" is discouraged (61 steps).
 Proof modification of "ax9lem7" is discouraged (37 steps).
 Proof modification of "ax9lem8" is discouraged (30 steps).
 Proof modification of "ax9lem9" is discouraged (84 steps).
-Proof modification of "ax9o" is discouraged (44 steps).
+Proof modification of "ax9o" is discouraged (37 steps).
 Proof modification of "ax9sep" is discouraged (47 steps).
 Proof modification of "ax9vax9" is discouraged (148 steps).
 Proof modification of "ax9vsep" is discouraged (73 steps).
@@ -17702,7 +17675,7 @@ Proof modification of "cbvexsv" is discouraged (29 steps).
 Proof modification of "ccidOLD" is discouraged (2 steps).
 Proof modification of "ceqsex3OLD" is discouraged (61 steps).
 Proof modification of "ceqsex3vOLD" is discouraged (7 steps).
-Proof modification of "cleljust" is discouraged (31 steps).
+Proof modification of "cleljust" is discouraged (25 steps).
 Proof modification of "cnaddcom" is discouraged (71 steps).
 Proof modification of "cnexALT" is discouraged (52 steps).
 Proof modification of "cnnvdemo" is discouraged (50 steps).
@@ -17763,9 +17736,9 @@ Proof modification of "dtruALT" is discouraged (79 steps).
 Proof modification of "dtruALT2" is discouraged (80 steps).
 Proof modification of "dveel2ALT" is discouraged (22 steps).
 Proof modification of "dveeq1ALT" is discouraged (22 steps).
-Proof modification of "dveeq2ALT" is discouraged (22 steps).
+Proof modification of "dveeq2ALT" is discouraged (18 steps).
 Proof modification of "dvelimALT" is discouraged (106 steps).
-Proof modification of "dvelimfALT" is discouraged (132 steps).
+Proof modification of "dvelimfALT" is discouraged (129 steps).
 Proof modification of "dvelimfALT2OLD" is discouraged (61 steps).
 Proof modification of "e00" is discouraged (7 steps).
 Proof modification of "e000" is discouraged (13 steps).
@@ -17947,7 +17920,7 @@ Proof modification of "eqid1" is discouraged (9 steps).
 Proof modification of "eqrelrdv2OLD" is discouraged (43 steps).
 Proof modification of "eqrelrdvOLD" is discouraged (41 steps).
 Proof modification of "eqsbc3rVD" is discouraged (129 steps).
-Proof modification of "equid1" is discouraged (51 steps).
+Proof modification of "equid1" is discouraged (50 steps).
 Proof modification of "equid1ALT" is discouraged (36 steps).
 Proof modification of "equidq" is discouraged (27 steps).
 Proof modification of "equidqe" is discouraged (30 steps).
@@ -18154,7 +18127,7 @@ Proof modification of "mplvscafvalOLD" is discouraged (39 steps).
 Proof modification of "mtordOLD" is discouraged (8 steps).
 Proof modification of "mulge0OLD" is discouraged (25 steps).
 Proof modification of "negmod0OLD" is discouraged (3 steps).
-Proof modification of "nfequid" is discouraged (9 steps).
+Proof modification of "nfequid" is discouraged (8 steps).
 Proof modification of "nic-ax" is discouraged (142 steps).
 Proof modification of "nic-axALT" is discouraged (245 steps).
 Proof modification of "nic-bi1" is discouraged (22 steps).
