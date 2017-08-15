@@ -1326,7 +1326,7 @@ WIDTH=10 HEIGHT=19 ALT='x'><IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19
 ALT='ps'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
 SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
 
-<TR ALIGN=LEFT><TD><A HREF="ax-17.html">Quantifier Introduction</A></TD> <TD
+<TR ALIGN=LEFT><TD><A HREF="ax-17.html">Distinctness</A></TD> <TD
 NOWRAP><FONT COLOR="#006633"><B>ax-17</B></FONT></TD> <TD> <IMG
 SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5
 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG
@@ -4321,14 +4321,23 @@ on distinct variables</FONT></B></CENTER>
 used inside of a proof but do not occur in the theorem being proved.
 Usually they must be distinct from other variables (this is always a
 safe assumption, whether they really need to be or not), but on the web
-pages <I>we always omit them</I> from the "Distinct variable group(s)".
+pages we omit them from the "Distinct variable group(s)".
 The purpose of the "Distinct variable group(s)" list is to show only those
 distinct variable requirements that need to be satisfied by any proof
 that <I>references</I> the theorem.  These are the only ones relevant
 the theorem itself (dummy variables can come and go as people find
 alternate proofs), and omitting dummy variables makes the list less
-cluttered and easier to read.  In Metamath language terminology, we show the
-mandatory distinct variable groups but omit the optional
+cluttered and easier to read.  Instead, we summarize the dummy
+variables (if any) in the next line, with a statement such as
+"Dummy variables <IMG SRC='_u.gif' WIDTH=10 HEIGHT=19 ALT=' u'
+TITLE='u'> <IMG SRC='_t.gif' WIDTH=7 HEIGHT=19 ALT=' t' TITLE='t'>
+ are mutually distinct
+ and distinct from all other variables."  See for example theorem
+<A
+HREF="aev.html">aev</A>.   This means you should
+imagine the corresponding distinct variable groups.
+In Metamath language terminology, we show explicitly any
+mandatory distinct variable groups but only a summary of the optional
 distinct variable groups.
 
 <P>The additional distinct variable requirements for dummy variables
@@ -4338,7 +4347,7 @@ example is the variable <IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 ALT='w'>
 that must be distinct from the others in the proof of <A
 HREF="ax15.html">ax15</A>.  You will find "$d w y $. $d w z $. $d w x
 $." above the statement of ax15 in the set.mm file, even though these
-are not shown on the web page.
+are not shown explicitly on the web page.
 
 <P><A NAME="dvnote2"></A><B><FONT COLOR="#006633">Note
 2</FONT></B>&nbsp;&nbsp;&nbsp; An issue that has been
@@ -4529,13 +4538,14 @@ substitution" (which involves analyzing the scopes of bound variables
 and renaming them if necessary), even though it is significantly
 <I>simpler</I> than the traditional approach.  (Indeed, as described
 above, this simplicity was a primary motivation for Tarski's predicate
-calculus that the Metamath/set.mm axioms are based on.)  Unless
+calculus that Metamath's set.mm axioms are based on.)  Unless
 otherwise restricted by a distinct variable condition, a quantified (or
 any other) variable is by default <I>not necessarily distinct</I> from
 other variables in the same expression, whether bound or not.  This is
 opposite the usual implicit assumption in traditional mathematics.  For
 example, in many textbooks, it would be implicit that the two variables
-in theorem scheme <A HREF="dtru.html">dtru</A> must be distinct (since
+in theorem scheme <A HREF="dtru.html">dtru</A> must be distinct
+(particularly since
 one is bound and the other is free), but in Metamath this requirement
 must be made explicit.  (On the other hand, in an <I>instance</I> of
 dtru in the <I>actual</I> logic, which Metamath cannot express directly,
@@ -6011,7 +6021,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 6-Aug-2017.</FONT></I><BR><FONT
+ page was last updated on 15-Aug-2017.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
