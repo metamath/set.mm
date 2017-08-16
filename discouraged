@@ -17571,6 +17571,7 @@ Proof modification of "a12study6" is discouraged (46 steps).
 Proof modification of "a12study8" is discouraged (95 steps).
 Proof modification of "a12study9" is discouraged (88 steps).
 Proof modification of "a12studyALT" is discouraged (126 steps).
+Proof modification of "a16g-o" is discouraged (40 steps).
 Proof modification of "a9e2eq" is discouraged (111 steps).
 Proof modification of "a9e2eqVD" is discouraged (269 steps).
 Proof modification of "a9e2nd" is discouraged (199 steps).
@@ -17587,6 +17588,7 @@ Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "add20OLD" is discouraged (3 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
 Proof modification of "addsubeq4OLD" is discouraged (5 steps).
+Proof modification of "aev-o" is discouraged (117 steps).
 Proof modification of "alephf1ALT" is discouraged (47 steps).
 Proof modification of "alrim3con13v" is discouraged (74 steps).
 Proof modification of "an43OLD" is discouraged (32 steps).
@@ -17604,7 +17606,16 @@ Proof modification of "ax10lem18ALT" is discouraged (95 steps).
 Proof modification of "ax10o" is discouraged (47 steps).
 Proof modification of "ax10o-o" is discouraged (47 steps).
 Proof modification of "ax11" is discouraged (57 steps).
+Proof modification of "ax11a2-o" is discouraged (22 steps).
+Proof modification of "ax11el" is discouraged (577 steps).
+Proof modification of "ax11eq" is discouraged (500 steps).
+Proof modification of "ax11inda" is discouraged (146 steps).
+Proof modification of "ax11inda2" is discouraged (51 steps).
 Proof modification of "ax11inda2ALT" is discouraged (220 steps).
+Proof modification of "ax11indalem" is discouraged (272 steps).
+Proof modification of "ax11indi" is discouraged (83 steps).
+Proof modification of "ax11indn" is discouraged (70 steps).
+Proof modification of "ax11v2-o" is discouraged (107 steps).
 Proof modification of "ax12" is discouraged (72 steps).
 Proof modification of "ax12-2" is discouraged (116 steps).
 Proof modification of "ax12-3" is discouraged (58 steps).
@@ -17733,12 +17744,16 @@ Proof modification of "dih2dimbALTN" is discouraged (450 steps).
 Proof modification of "disjrOLD" is discouraged (4 steps).
 Proof modification of "divcan7OLD" is discouraged (4 steps).
 Proof modification of "divides2OLD" is discouraged (3 steps).
+Proof modification of "dral2-o" is discouraged (14 steps).
 Proof modification of "dtruALT" is discouraged (79 steps).
 Proof modification of "dtruALT2" is discouraged (80 steps).
 Proof modification of "dveel2ALT" is discouraged (22 steps).
+Proof modification of "dveeq1-o" is discouraged (20 steps).
 Proof modification of "dveeq1ALT" is discouraged (22 steps).
+Proof modification of "dveeq2-o" is discouraged (20 steps).
 Proof modification of "dveeq2ALT" is discouraged (18 steps).
 Proof modification of "dvelimALT" is discouraged (106 steps).
+Proof modification of "dvelimf-o" is discouraged (129 steps).
 Proof modification of "dvelimfALT" is discouraged (129 steps).
 Proof modification of "dvelimfALT2OLD" is discouraged (61 steps).
 Proof modification of "e00" is discouraged (7 steps).
@@ -17997,6 +18012,7 @@ Proof modification of "hbexg" is discouraged (71 steps).
 Proof modification of "hbexgVD" is discouraged (205 steps).
 Proof modification of "hbimpg" is discouraged (88 steps).
 Proof modification of "hbimpgVD" is discouraged (165 steps).
+Proof modification of "hbnae-o" is discouraged (11 steps).
 Proof modification of "hbnae-x12" is discouraged (10 steps).
 Proof modification of "hbntal" is discouraged (48 steps).
 Proof modification of "hbra2VD" is discouraged (26 steps).
@@ -18126,7 +18142,9 @@ Proof modification of "mp4anOLD" is discouraged (11 steps).
 Proof modification of "mplvscafvalOLD" is discouraged (39 steps).
 Proof modification of "mtordOLD" is discouraged (8 steps).
 Proof modification of "mulge0OLD" is discouraged (25 steps).
+Proof modification of "nalequcoms-o" is discouraged (19 steps).
 Proof modification of "negmod0OLD" is discouraged (3 steps).
+Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfequid" is discouraged (8 steps).
 Proof modification of "nic-ax" is discouraged (142 steps).
 Proof modification of "nic-axALT" is discouraged (245 steps).
