@@ -4327,8 +4327,7 @@ SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>" and "where <IMG
 SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'> and <IMG SRC='_y.gif' WIDTH=9
 HEIGHT=19 ALT='y'> are distinct" respectively.  (Our official <A
 HREF="ax-9.html">ax-9</A> does not have a distinct variable condition
-because we prove that it isn't necessary in theorem <A
-HREF="ax9.html">ax9</A>.)
+in order to make it simpler to state and use.)
 
 <P><A NAME="dv-notes"></A><CENTER><B><FONT COLOR="#006633">Notes
 on distinct variables</FONT></B></CENTER>
@@ -4356,12 +4355,16 @@ depending on the preferences of the person who created the proof.
 
 <P>In principle, we could list on the web page only those pairs with
 dummy variables that are actually specified to be distinct in the set.mm
-file.  However, that would make the "Dummy variable" list cluttered and
-hard to read for some theorems with many variables.  So for simplicity,
-we assume that all possible variable pairs with dummy variables are
-distinct, which is a conservative assumption that will always work.  If
-you want to see which ones were actually specified for a particular
-proof, you can consult the set.mm source file.
+file.  However, that would make the "Dummy variable" list very long for
+some theorems with many variables, full of gaps and hard to read.  (We
+used to do something like that, and people didn't like it.)  So for
+simplicity, we just assume that all possible variable pairs with dummy
+variables are distinct, which is a conservative assumption that will
+always work.  This assumption makes it easiest to follow the proof
+since you don't have to keep checking a distinct variable list.
+If you want to see which ones were actually specified for
+a particular proof, you can consult the set.mm source file or use the
+metamath program command 'show statement ...  /full'.
 
 <P><A NAME="dvnote2"></A><B><FONT COLOR="#006633">Note
 2</FONT></B>&nbsp;&nbsp;&nbsp; An issue that has been
@@ -6054,7 +6057,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 16-Aug-2017.</FONT></I><BR><FONT
+ page was last updated on 18-Aug-2017.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
