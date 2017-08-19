@@ -4447,14 +4447,13 @@ convenience to help you more easily determine out what substitutions are
 allowed, in contrast to the "Distinct variable groups" which tell you
 which ones are forbidden.  There are six things to be aware of.
 
-<P>First, if the theorem has no "Distinct variable groups", such as <A
+<P>1. If the theorem has no "Distinct variable groups", such as <A
 HREF="mpteq2ia.html">mpteq2ia</A>, any substitution at all (honoring the
 variable types) is permissable, so an "Allowed substitution hints" list
 would be pointless and is not shown to reduce possibly-confusing
 clutter.
 
-
-<P>Second, if the theorem has "Distinct variable groups" and a wff or
+<P>2. If the theorem has "Distinct variable groups" and a wff or
 class variable is missing from the "Allowed substitution hints", such as
 the <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> in <A
 HREF="copsexg.html">copsexg</A>, it means (in this case) that neither of
@@ -4466,7 +4465,7 @@ WIDTH=11 HEIGHT=19 ALT='A'> that <I>doesn't</I> contain these two
 variables but possibly contains others such as <IMG SRC='_z.gif' WIDTH=9
 HEIGHT=19 ALT='z'>.
 
-<P>Third, if the theorem has "Distinct variable groups" but does not
+<P>3. If the theorem has "Distinct variable groups" but does not
 have an "Allowed substitution hints" list, such as <A
 HREF="dftr5.html">dftr5</A>, it means that none of the set variables in
 the theorem or its hypotheses may appear in expressions substituted for
@@ -4475,8 +4474,10 @@ WIDTH=10 HEIGHT=19 ALT='x'> nor <IMG SRC='_y.gif' WIDTH=9 HEIGHT=19
 ALT='y'> may appear in an expression substituted for <IMG SRC='_ca.gif'
 WIDTH=11 HEIGHT=19 ALT='A'>.  Other set variables such as <IMG
 SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'> may appear, though.
+This includes any dummy variables that may be used by the
+proof, since they do not appear in the theorem or its hypotheses.
 
-<P>Fourth, the list of variables in parentheses after a wff or class
+<P>4. The list of variables in parentheses after a wff or class
 variable shows the permissable set variables that may appear in a
 substitution <I>among those in the theorem</I> (or its hypotheses).
 There is nothing preventing the use of set variables that do not appear
@@ -4487,7 +4488,7 @@ SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>, but not <IMG
 SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'> or <IMG SRC='_z.gif' WIDTH=9
 HEIGHT=19 ALT='z'>.
 
-<P>Fifth, the set variable list in parentheses says nothing about
+<P>5. The set variable list in parentheses says nothing about
 whether those set variables need to be mutually distinct.  Only the
 "Distinct variable groups" list provides this information.  For example,
 <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>(<IMG SRC='_x.gif'
@@ -4498,7 +4499,7 @@ HREF="ralcom.html">ralcom</A> and <A HREF="ralcom2.html">ralcom2</A>;
 WIDTH=9 HEIGHT=19 ALT='y'> must be distinct in the former but not the
 latter.
 
-<P>Finally, the hypotheses of a theorem may impose additional
+<P>6. The hypotheses of a theorem may impose additional
 conditions on how the variables in parentheses may appear in the wff or
 class variable.  For example, in <A HREF="vtoclef.html">vtoclef</A>,
 although <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'> may appear in the
@@ -4522,8 +4523,6 @@ WIDTH=11 HEIGHT=19 ALT='ph'>.  The way to tell whether the meaning
 is "may occur free or bound" or "may occur
 if bound by a quantifier" is to look
 for a hypothesis of this form.
-
-
 
 
 
