@@ -765,10 +765,7 @@
 "atssch" is used by "shatomistici".
 "atsseq" is used by "atnemeq0".
 "atssma" is used by "atordi".
-"ax-10" is used by "2sb5ndALT".
-"ax-10" is used by "2sb5ndVD".
 "ax-10" is used by "ax10o-o".
-"ax-10" is used by "e2ebindVD".
 "ax-10o" is used by "2sb5ndALT".
 "ax-10o" is used by "a12stdy1".
 "ax-10o" is used by "a12stdy2".
@@ -778,9 +775,6 @@
 "ax-10o" is used by "dral1-o".
 "ax-10o" is used by "dvelimf-o".
 "ax-10o" is used by "hbae-o".
-"ax-11o" is used by "a12study".
-"ax-11o" is used by "a12study3".
-"ax-11o" is used by "a12studyALT".
 "ax-11o" is used by "ax11".
 "ax-12" is used by "ax12v".
 "ax-12o" is used by "ax12".
@@ -809,11 +803,9 @@
 "ax-4" is used by "hba1-o".
 "ax-4" is used by "hbae-o".
 "ax-4" is used by "sps-o".
-"ax-5o" is used by "ax4567".
 "ax-5o" is used by "ax5".
 "ax-5o" is used by "ax6".
 "ax-5o" is used by "equid1".
-"ax-6o" is used by "ax4567".
 "ax-6o" is used by "ax46".
 "ax-6o" is used by "ax467".
 "ax-6o" is used by "ax6".
@@ -821,7 +813,6 @@
 "ax-6o" is used by "ax9from9o".
 "ax-6o" is used by "equid1".
 "ax-6o" is used by "equid1ALT".
-"ax-6o" is used by "hbntg".
 "ax-9" is used by "ax9v".
 "ax-9o" is used by "ax9from9o".
 "ax-9o" is used by "equid1".
@@ -4958,7 +4949,6 @@
 "dveeq2-o" is used by "ax11eq".
 "dveeq2-o" is used by "ax11inda".
 "dveeq2-o" is used by "ax11v2-o".
-"dvelimf-o" is used by "a9e2ndALT".
 "dvelimf-o" is used by "ax11el".
 "dvelimf-o" is used by "dveeq1-o".
 "dvelimf-o" is used by "dveeq2-o".
@@ -13441,16 +13431,16 @@ New usage of "atssch" is discouraged (4 uses).
 New usage of "atsseq" is discouraged (1 uses).
 New usage of "atssma" is discouraged (1 uses).
 New usage of "avril1" is discouraged (0 uses).
-New usage of "ax-10" is discouraged (4 uses).
+New usage of "ax-10" is discouraged (1 uses).
 New usage of "ax-10o" is discouraged (9 uses).
-New usage of "ax-11o" is discouraged (4 uses).
+New usage of "ax-11o" is discouraged (1 uses).
 New usage of "ax-12" is discouraged (1 uses).
 New usage of "ax-12o" is discouraged (7 uses).
 New usage of "ax-15" is discouraged (2 uses).
 New usage of "ax-16" is discouraged (4 uses).
 New usage of "ax-4" is discouraged (13 uses).
-New usage of "ax-5o" is discouraged (4 uses).
-New usage of "ax-6o" is discouraged (9 uses).
+New usage of "ax-5o" is discouraged (3 uses).
+New usage of "ax-6o" is discouraged (7 uses).
 New usage of "ax-9" is discouraged (1 uses).
 New usage of "ax-9o" is discouraged (3 uses).
 New usage of "ax-ac" is discouraged (2 uses).
@@ -14802,7 +14792,7 @@ New usage of "dveeq1-o" is discouraged (1 uses).
 New usage of "dveeq1ALT" is discouraged (0 uses).
 New usage of "dveeq2-o" is discouraged (4 uses).
 New usage of "dveeq2ALT" is discouraged (0 uses).
-New usage of "dvelimf-o" is discouraged (4 uses).
+New usage of "dvelimf-o" is discouraged (3 uses).
 New usage of "dvelimfALT2OLD" is discouraged (1 uses).
 New usage of "dvh2dimatN" is discouraged (0 uses).
 New usage of "dvh3dim3N" is discouraged (0 uses).
