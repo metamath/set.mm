@@ -766,10 +766,6 @@
 "atsseq" is used by "atnemeq0".
 "atssma" is used by "atordi".
 "ax-10" is used by "ax10o-o".
-"ax-10o" is used by "2sb5ndALT".
-"ax-10o" is used by "a12stdy1".
-"ax-10o" is used by "a12stdy2".
-"ax-10o" is used by "a12stdy4".
 "ax-10o" is used by "alequcom-o".
 "ax-10o" is used by "ax10from10o".
 "ax-10o" is used by "dral1-o".
@@ -6480,7 +6476,7 @@
 "hbae-x12" is used by "hbnae-x12".
 "hbalg" is used by "hbexgVD".
 "hbequid" is used by "equidq".
-"hbequid" is used by "nfequid".
+"hbequid" is used by "nfequid-o".
 "hbnae-o" is used by "ax11inda2ALT".
 "hbnae-o" is used by "ax11indalem".
 "hbnae-o" is used by "dvelimf-o".
@@ -13432,7 +13428,7 @@ New usage of "atsseq" is discouraged (1 uses).
 New usage of "atssma" is discouraged (1 uses).
 New usage of "avril1" is discouraged (0 uses).
 New usage of "ax-10" is discouraged (1 uses).
-New usage of "ax-10o" is discouraged (9 uses).
+New usage of "ax-10o" is discouraged (5 uses).
 New usage of "ax-11o" is discouraged (1 uses).
 New usage of "ax-12" is discouraged (1 uses).
 New usage of "ax-12o" is discouraged (7 uses).
@@ -16273,7 +16269,7 @@ New usage of "nalequcoms-o" is discouraged (1 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "negmod0OLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
-New usage of "nfequid" is discouraged (0 uses).
+New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nic-ax" is discouraged (7 uses).
 New usage of "nic-axALT" is discouraged (0 uses).
 New usage of "nic-bi1" is discouraged (3 uses).
@@ -18136,7 +18132,7 @@ Proof modification of "mulge0OLD" is discouraged (25 steps).
 Proof modification of "nalequcoms-o" is discouraged (19 steps).
 Proof modification of "negmod0OLD" is discouraged (3 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
-Proof modification of "nfequid" is discouraged (8 steps).
+Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nic-ax" is discouraged (142 steps).
 Proof modification of "nic-axALT" is discouraged (245 steps).
 Proof modification of "nic-bi1" is discouraged (22 steps).
