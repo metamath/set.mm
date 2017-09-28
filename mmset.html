@@ -254,7 +254,7 @@ SIZE=-1><I>8-Aug-2003</I></FONT>
 
 <LI>
  <A HREF="mmrecent.html">Most Recent Proofs
- (this mirror)</A> (<A HREF="http://us2.metamath.org:88/mpegif/mmrecent.html">latest</A>)
+ (this mirror)</A> (<A HREF="http://us2.metamath.org:88/mpeuni/mmrecent.html">latest</A>)
     </LI>
 
 <LI> <A HREF="conventions.html">Conventions and Style</A>
@@ -3145,7 +3145,7 @@ definitions:" lists on the web pages.)
 -->
 
 <P> The complete proof of 2 + 2 = 4 involves <B>2,863 subtheorems</B>
-including the 180 above.  (The command "show trace_back 2p2e4
+including the 189 above.  (The command "show trace_back 2p2e4
 /essential" will list them.)  These have a total of <B>27,426
 steps</B>&mdash;this is how many steps you would have to examine if you
 wanted to verify the proof by hand in complete detail all the way back
@@ -3939,8 +3939,8 @@ conditions on them.  These conditions are somewhat awkward to formalize
 but they are not hard to grasp intuitively.  You can look them up in any
 elementary logic book.  For example, they are explained in Hirst and
 Hirst's <A
-HREF="http://www.mathsci.appstate.edu/~jlh/primer/hirst.pdf"><I>A Primer
-for Logic and Proof</I></A> [retrieved 21-Dec-2016] (PDF, 0.5MB);
+HREF="http://www.appstate.edu/~hirstjl/primer/hirst.pdf"><I>A Primer
+for Logic and Proof</I></A> [retrieved 17-Sep-2017] (PDF, 0.5MB);
 Section 2.4 (pp. 36-37; add 6 for the PDF page number) defines "free
 variable," and Section 2.11 (pp. 48-51) defines "free for."  See pp. 15,
 51, &amp; 64 for the propositional calculus, predicate calculus, and
@@ -5984,13 +5984,14 @@ COLOR="#006633">Browsers and Fonts</FONT></B>
 
 <P> <A NAME="unicode"></A><B><FONT COLOR="#006633">Browsing with the
 Unicode font </FONT></B>&nbsp;&nbsp;&nbsp; By default, the Metamath
-Proof Explorer uses GIF images for all math symbols.  Depending on your
-computer, browser, and Internet connection, this may result in slow
-rendering of large proofs.  On each page with a proof, at the top there
-is a link to switch to the Unicode font version.  You will stay in the
-Unicode font directory (you will see "mpeuni" instead of "mpegif" in the
-URL) until you switch back to the GIF version on a page with a proof.
+Proof Explorer uses a Unicode font for math symbols.  Some browsers may
+render Unicode incorrectly, although the problem is becoming less
+frequent.  On each page with a proof, at the top there
+is a link to switch to the GIF version.  You will stay in the
+GIF directory (you will see "mpegif" instead of "mpeuni" in the
+URL) until you switch back to the Unicode font version on a page with a proof.
 
+<!--
 <P>Unfortunately, Internet Explorer versions 6 and 7 do not implement
 some of the standard Unicode math symbols, which is <A
 HREF="../symbols/symbols.html#why">why</A> I chose GIF images as the
@@ -5999,8 +6000,9 @@ HREF="../fontcompare.gif">blank rectangular boxes</A>, making the page
 unreadable.  The free <A HREF="http://mozilla.org/">Firefox and
 Mozilla</A> [retrieved 21-Dec-2016] browsers implement them correctly.
 Safari on MacOS X (10.3.9) has also been reported to work.
+-->
 
-<P>If you know of any other browsers that work correctly with Metamath's
+<P>If you know of any browsers that work correctly with Metamath's
 Unicode symbols, let me know so that I can put the information here.  To
 check for correctness, compare the symbols in Unicode and GIF versions
 of the <A HREF="mmascii.html">ASCII token chart</A>.
@@ -6018,15 +6020,19 @@ math symbol GIF images.  By the way, the minty green background color
 been claimed to be less fatiguing for long periods of work, but most
 browsers will let you override it if you wish.
 
+<!--
 <P>If you are viewing the GIF version of these pages, the appearance may
 be more consistent if font antialiasing is turned off.  If you are
 viewing the Unicode version, the Unicode symbols may be more legible if
 it is turned on.
+-->
 
 <P> <B><FONT COLOR="#006633">Viewing with a text browser
-</FONT></B>&nbsp;&nbsp;&nbsp;The Metamath Proof Explorer can be viewed
-with a text-only browser.  All symbols will be shown as <A
-HREF="mmascii.html">ASCII tokens</A>.  The most common text browser,
+</FONT></B>&nbsp;&nbsp;&nbsp;The GIF version of the
+ Metamath Proof Explorer can be viewed
+with a text-only browser.  All symbols will be shown as the <A
+HREF="mmascii.html">ASCII tokens</A> shown in the set.mm source file.
+The most common text browser,
 Lynx, does not format tables, making proofs somewhat confusing to read.
 But good results are achieved with the table-formatting text browser <A
 HREF="http://w3m.sourceforge.net/">w3m</A> [retrieved 21-Dec-2016].
@@ -6066,7 +6072,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 22-Aug-2017.</FONT></I><BR><FONT
+ page was last updated on 26-Sep-2017.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
