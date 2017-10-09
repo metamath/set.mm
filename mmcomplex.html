@@ -158,20 +158,37 @@ To do this, we introduce two classes
 (plus) and
 <IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT='x.'>
 (times); and one binary relation
-<IMG SRC='_ltbbr.gif' WIDTH=20 HEIGHT=19 ALT=' &lt;RR' TITLE='&lt;RR'> 
+<IMG SRC='_ltbbr.gif' WIDTH=20 HEIGHT=19 ALT=' &lt;RR' TITLE='&lt;RR'>
 (less than for real numbers).
 We then assert that these eight objects have the
 properties specified by the axioms in the table below, as
 extensions to ZFC set theory.
 Note that the real number less-than relation
-<IMG SRC='_ltbbr.gif' WIDTH=20 HEIGHT=19 ALT=' &lt;RR' TITLE='&lt;RR'> 
+<IMG SRC='_ltbbr.gif' WIDTH=20 HEIGHT=19 ALT=' &lt;RR' TITLE='&lt;RR'>
 is the same as the traditional relation
 <IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT='&lt;'>, but
-<IMG SRC='_ltbbr.gif' WIDTH=20 HEIGHT=19 ALT=' &lt;RR' TITLE='&lt;RR'> 
+<IMG SRC='_ltbbr.gif' WIDTH=20 HEIGHT=19 ALT=' &lt;RR' TITLE='&lt;RR'>
 is limited to only comparing real numbers.
 <A HREF="conventions.html">As always with proven axioms</A>,
 each new axiom has a name in the form "ax-NAME",
 and each corresponding proof has a name in the form "axNAME".
+
+<P>
+In some cases, an alias for an axiom is created so that its name
+will follow other naming conventions.
+In these cases, the alias is used from then on.
+For example, the closure law for addition of complex numbers
+(axiom 4 of 22) is proven in
+<A HREF="axaddcl.html">axaddcl</A>,
+restated as axiom <A HREF="ax-addcl.html">ax-addcl</A>,
+and then aliased as <A HREF="addcl.html">addcl</A>
+so its name follows closure naming conventions;
+<A HREF="addcl.html">addcl</A> is used from then on.
+In these cases the axiom's comment
+is marked with "(New usage is discouraged.)"
+and identifies its conventional alias.
+This improves consistency by
+encouraging proofs to use our conventional aliases.
 
 <P>
 Many other concepts are derived from the postulates.
@@ -195,8 +212,9 @@ leading to the nice <A HREF="nthruc.html">relationships</A>
 We later define the set of extended reals
 (real numbers, positive infinity, and negative infinity), and once those
 are defined, we define
-the traditional relation <IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT='&lt;'>
-(less than) over the extended reals by building on the
+the traditional relation
+<A HREF="ltxr.html"><IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT='&lt;'>
+(less than)</A> over the extended reals by building on the
 previously-defined relation
 <IMG SRC='_ltbbr.gif' WIDTH=20 HEIGHT=19 ALT=' &lt;RR' TITLE='&lt;RR'>.
 
@@ -1114,7 +1132,7 @@ WIDTH=12 HEIGHT=19 ALT='CC'> itself.
 the traditional less-than operation
 <IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT='&lt;'> using the
 relation
-<IMG SRC='_ltbbr.gif' WIDTH=20 HEIGHT=19 ALT=' &lt;RR' TITLE='&lt;RR'> 
+<IMG SRC='_ltbbr.gif' WIDTH=20 HEIGHT=19 ALT=' &lt;RR' TITLE='&lt;RR'>
 (less than for real numbers) while
 accounting for positive and negative infinity.
 The full definition of
