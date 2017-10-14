@@ -667,12 +667,15 @@ anything for a constant.  Constants must match exactly.
 <P>Variables are always colored, and constants are always black (except
 the gray turnstile <IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'>,
 which you may ignore).  This makes them easy to recognize.
+<!--
 The variables in our database have 3 possible colors, <FONT
 COLOR="#0000FF">blue</FONT>, <FONT COLOR="#FF0000">red</FONT>, and <FONT
 COLOR="#CC33CC">purple</FONT>, representing wffs, sets, and classes
 respectively.  Don't worry about what these terms mean right now.  All
 variables, regardless of color, follow the same substitution rule.
-In our example, the purple letters are variables, whereas the symbols
+-->
+In our example, the purple uppercase italic letters are variables,
+whereas the symbols
 "(", ")", "1", "2", "=", and "+" are constants.
 
 <P>In this example, the constants are probably familiar symbols.  In
@@ -944,7 +947,7 @@ divided into three groups:  <B>propositional calculus,</B> <B>predicate
 calculus,</B> and <B>set theory</B>.  Each axiom is a string of
 mathematical symbols of two kinds:  <B>constants</B>, also called
 <B>connectives</B>, which we show in black; and <B>variables</B>, which
-we show using colors.  The constants that occur in the axioms are
+we show in color.  The constants that occur in the axioms are
 
 <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('>,
 <IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>,
@@ -959,17 +962,24 @@ in, for all).
 
 <P>Variables are placeholders that can be substituted with other
 expressions (strings of symbols).  There are two kinds of variables in
-the axioms, <B>set variables</B> (<FONT COLOR="#FF0000">red</FONT>) and
-<B>wff ("well-formed formula") variables</B> (<FONT
-COLOR="#0000FF">blue</FONT>).  A set variable can be substituted only
-with a set variable (in other words with an expression of length one,
-whose only symbol is a set variable), whereas a wff variable can be
+the axioms, <B>set variables</B> (lowercase italic letters in
+<FONT COLOR="#FF0000">red</FONT>) and
+<B>wff ("well-formed formula") variables</B> (lowercase Greek letters
+in <FONT
+COLOR="#0000FF">blue</FONT>). A wff variable can be
 substituted with any expression qualifying as a wff (see below).
+ A set variable can be substituted only
+with another set variable (in other words with an expression of length one,
+whose only symbol is a set variable) since there are no rules that
+let us construct more complex expressions for them;
+you may want to think of this as just
+renaming the set variable.
 
 
 <P><FONT SIZE="-1">[In later proofs you will see a third kind of
 variable, called a <B>class variable</B>, which is shown in <FONT
-COLOR="#CC33CC">purple</FONT> and is a kind of generalization of the set
+COLOR="#CC33CC">purple</FONT> (usually as uppercase italic letters)
+ and is a kind of generalization of the set
 variable.  The <A HREF="#class">theory of classes</A> will be discussed
 in the next section.]</FONT><P>
 
@@ -1003,7 +1013,11 @@ sets, a kind of machine inside of it that causes it to behave according
 to the laws for real numbers.  The square root operation is a set
 containing an infinite number of ordered pairs, one for each nonnegative
 real number; the first member of each pair is the number and the second
-member its square root.
+member its square root.  (Recall that a set variable can only be
+replaced with another set variable, so we cannot replace a set variable
+with say the symbol "2".  Manipulation of such symbols uses the
+definitional mechanism we will introduce in the <A HREF="#class">Theory
+of Classes</A> section below.)
 
 <P>A <B>wff</B> is an expression (string of symbols)
 constructed as follows.
@@ -6072,7 +6086,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 26-Sep-2017.</FONT></I><BR><FONT
+ page was last updated on 8-Oct-2017.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
