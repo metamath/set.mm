@@ -831,6 +831,7 @@
 "ax-addf" is used by "cnrngo".
 "ax-addf" is used by "efghgrp".
 "ax-addf" is used by "itg1addlem4".
+"ax-addf" is used by "raddcn".
 "ax-addf" is used by "readdsubgo".
 "ax-addf" is used by "rlimadd".
 "ax-addf" is used by "zaddsubgo".
@@ -1217,6 +1218,8 @@
 "ax-mulf" is used by "mulnzcnopr".
 "ax-mulf" is used by "nZdef".
 "ax-mulf" is used by "rlimmul".
+"ax-mulf" is used by "rmulccn".
+"ax-mulf" is used by "xrge0pluscn".
 "ax-mulrcl" is used by "remulcl".
 "ax-pre-ltadd" is used by "axltadd".
 "ax-pre-lttri" is used by "axlttri".
@@ -13443,7 +13446,7 @@ New usage of "ax-9o" is discouraged (3 uses).
 New usage of "ax-ac" is discouraged (2 uses).
 New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
-New usage of "ax-addf" is discouraged (18 uses).
+New usage of "ax-addf" is discouraged (19 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-cnre" is discouraged (1 uses).
@@ -13471,7 +13474,7 @@ New usage of "ax-meredith" is discouraged (13 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
-New usage of "ax-mulf" is discouraged (11 uses).
+New usage of "ax-mulf" is discouraged (13 uses).
 New usage of "ax-mulrcl" is discouraged (1 uses).
 New usage of "ax-pre-ltadd" is discouraged (1 uses).
 New usage of "ax-pre-lttri" is discouraged (1 uses).
