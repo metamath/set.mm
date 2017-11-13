@@ -235,7 +235,7 @@ intuitionistic predicate calculus.
 
 <P>Each of the 13 new axioms is a theorem of classical first order
 logic with equality.  But some axioms of classical first order logic
-with equality, like ax-3, cannot be derivefd in the intuitionistic
+with equality, like ax-3, cannot be derived in the intuitionistic
 predicate calculus.
 
 <P>One of the major interests of the intuitionistic predicate calculus
@@ -246,7 +246,118 @@ constructivist philosophical view of mathematics.
 <HR NOSHADE SIZE=1><A NAME="axioms"></A><B><FONT COLOR="#006633">
 The axioms</FONT></B>
 
-<P>(Placeholder for future use)
+<P>As with the <A HREF="mmset.html#axioms">classical axioms</A>
+we have propositional logic and predicate logic.
+
+<P>The axioms of intuitionistic propositional logic consist of some of the axioms from
+classical propositional logic, plus additional axioms for the operation of the 'and',
+'or' and 'not' connectives.
+
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Axioms of intuitionistic propositional calculus">
+<CAPTION><B>Axioms of intuitionistic propositional calculus</B></CAPTION>
+
+<TR ALIGN=LEFT><TD> <A HREF="ax-1.html"> Axiom <I>Simp</I></A></TD>
+<TD><FONT COLOR="#006633"><B>ax-1</B></FONT></TD>
+<TD><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; (<FONT
+COLOR="#0000FF"><I>&psi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>))</TD>
+</TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-2.html">Axiom <I>Frege</I></A></TD> <TD
+NOWRAP><FONT COLOR="#006633"><B>ax-2</B></FONT></TD>
+<TD>
+<FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>((<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; (<FONT
+COLOR="#0000FF"><I>&psi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&chi;</I></FONT>)) &rarr; ((<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr; (<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&chi;</I></FONT>)))</TD>
+</TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="ax-mp.html">Rule of Modus Ponens</A></TD> <TD NOWRAP><FONT
+COLOR="#006633"><B>ax-mp</B></FONT></TD>
+<TD><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &nbsp;&nbsp;&amp; &nbsp;&nbsp;<FONT
+COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT> &nbsp;&nbsp;=&gt; &nbsp;&nbsp;<FONT
+COLOR="#808080" FACE=sans-serif>&#8866;<FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>
+</TD>
+</TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="ax-ia1.html">Left 'and' elimination</A></TD><TD><FONT
+COLOR="#006633"><B>ax-ia1</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>((<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+<FONT FACE="sans-serif">&and;</FONT> <FONT COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr;
+<FONT COLOR="#0000FF"><I>&phi;</I></FONT>)</TD></TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="ax-ia2.html">Right 'and' elimination</A></TD><TD><FONT
+COLOR="#006633"><B>ax-ia2</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>((<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+<FONT FACE="sans-serif">&and;</FONT> <FONT COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>)</TD></TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="ax-ia3.html">'And' introduction</A></TD><TD><FONT
+COLOR="#006633"><B>ax-ia3</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>(<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+&rarr; (<FONT COLOR="#0000FF"><I>&psi;</I></FONT> &rarr; (<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+<FONT FACE="sans-serif">&and;</FONT> <FONT COLOR="#0000FF"><I>&psi;</I></FONT>)))</TD></TR>
+
+<TR ALIGN="LEFT"><TD><A
+HREF="ax-io.html">Definition of 'or'</A></TD><TD><FONT COLOR="#006633"><B>ax-io</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>(((<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+<FONT FACE="sans-serif"> &or;</FONT> <FONT COLOR="#0000FF"><I>&chi;</I></FONT>)
+&rarr; <FONT COLOR="#0000FF"><I>&psi;</I></FONT>)
+&#x2194; ((<FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>) <FONT FACE="sans-serif">&and;</FONT>
+(<FONT COLOR="#0000FF"><I>&chi;</I></FONT> &rarr; <FONT COLOR="#0000FF"><I>&psi;</I></FONT>)))
+
+<TR ALIGN="LEFT"><TD><A
+HREF="ax-in1.html">'Not' introduction</A></TD><TD><FONT COLOR="#006633"><b>ax-in1</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866;
+</FONT>((<FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>)
+&rarr; &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>)</TD></TR>
+
+<TR ALIGN="LEFT"><TD><A
+HREF="ax-in2.html">'Not' elimination</A></TD><TD><FONT COLOR="#006633"><B>ax-in2</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>(&not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+&rarr; (<FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT COLOR="#0000FF"><I>&psi;</I></FONT>))</TD></TR>
+
+</TABLE>
+
+</CENTER>
+
+<P>Unlike in classical propositional logic, 'and' and 'or' are not readily defined in terms of
+implication and 'not'. In particular, <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &or;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT> is not equivalent to &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>
+nor is <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT> equivalent to &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &or;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>.</P>
+
+<P>The ax-in1 axiom is a form of proof by contradiction which does hold intuitionistically. That is, if
+<FONT COLOR="#0000FF"><I>&phi;</I></FONT> implies a contradiction (such as its own negation),
+then one can conclude &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>. By contrast, assuming
+&not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+and then deriving a contradiction only serves to prove &not; &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>,
+which in intuitionistic logic is not the same as <FONT COLOR="#0000FF"><I>&phi;</I></FONT>.</P>
+
+<P>The biconditional can be defined as the conjunction of two implications, as in
+<A HREF="dfbi2.html">dfbi2</a> and <A HREF="df-bi.html">df-bi</a>. Other ways of understanding
+the biconditional, such as <A HREF="dfbi1.html">dfbi1</a> or <A HREF="dfbi3.html">dfbi3</a>,
+however, are classical rather than intuitionistic results (following the proofs on those pages shows they depend on ax-3).</P>
+
+<P>(Placeholder for future addition of predicate logic axioms)</P>
 
 <HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">
 Some theorems</FONT></B>
