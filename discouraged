@@ -15077,6 +15077,7 @@ New usage of "eqrelrdv2OLD" is discouraged (0 uses).
 New usage of "eqrelrdvOLD" is discouraged (0 uses).
 New usage of "eqresr" is discouraged (4 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
+New usage of "equequ1OLD" is discouraged (0 uses).
 New usage of "equid1" is discouraged (0 uses).
 New usage of "equid1ALT" is discouraged (0 uses).
 New usage of "equidq" is discouraged (0 uses).
@@ -16256,6 +16257,7 @@ New usage of "mod0OLD" is discouraged (0 uses).
 New usage of "morexOLD" is discouraged (0 uses).
 New usage of "mp4anOLD" is discouraged (0 uses).
 New usage of "mplvscafvalOLD" is discouraged (0 uses).
+New usage of "mpto2OLD" is discouraged (0 uses).
 New usage of "mpv" is discouraged (1 uses).
 New usage of "mtordOLD" is discouraged (0 uses).
 New usage of "mtp-orOLD" is discouraged (0 uses).
@@ -17980,6 +17982,7 @@ Proof modification of "eqid1" is discouraged (9 steps).
 Proof modification of "eqrelrdv2OLD" is discouraged (43 steps).
 Proof modification of "eqrelrdvOLD" is discouraged (41 steps).
 Proof modification of "eqsbc3rVD" is discouraged (129 steps).
+Proof modification of "equequ1OLD" is discouraged (29 steps).
 Proof modification of "equid1" is discouraged (50 steps).
 Proof modification of "equid1ALT" is discouraged (36 steps).
 Proof modification of "equidq" is discouraged (27 steps).
@@ -18186,6 +18189,7 @@ Proof modification of "mod0OLD" is discouraged (3 steps).
 Proof modification of "morexOLD" is discouraged (8 steps).
 Proof modification of "mp4anOLD" is discouraged (11 steps).
 Proof modification of "mplvscafvalOLD" is discouraged (39 steps).
+Proof modification of "mpto2OLD" is discouraged (29 steps).
 Proof modification of "mtordOLD" is discouraged (8 steps).
 Proof modification of "mtp-orOLD" is discouraged (16 steps).
 Proof modification of "mtp-xorOLD" is discouraged (34 steps).
