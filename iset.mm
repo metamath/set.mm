@@ -8435,13 +8435,14 @@ $)
   $( This is our first definition, which introduces and defines the
      biconditional connective ` <-> ` .  We define a wff of the form
      ` ( ph <-> ps ) ` as an abbreviation for
-     ` -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ` .
+     ` ( ( ph -> ps ) /\ ( ps -> ph ) ) ` .
 
      Unlike most traditional developments, we have chosen not to have a
      separate symbol such as "Df." to mean "is defined as."  Instead, we will
-     later use the biconditional connective for this purpose ( ~ df-or is its
-     first use), as it allows us to use logic to manipulate definitions
-     directly.  This greatly simplifies many proofs since it eliminates the
+     later use the biconditional connective for this purpose, as it allows us
+     to use logic to manipulate definitions directly. For an example of
+     such a definition, see ~ df-3or .
+     This greatly simplifies many proofs since it eliminates the
      need for a separate mechanism for introducing and eliminating
      definitions.  Of course, we cannot use this mechanism to define the
      biconditional itself, since it hasn't been introduced yet.  Instead, we
@@ -8458,12 +8459,12 @@ $)
 
      The justification for our definition is that if we mechanically replace
      ` ( ph <-> ps ) ` (the definiendum i.e. the thing being defined) with
-     ` -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ` (the definiens i.e. the
+     ` ( ( ph -> ps ) /\ ( ps -> ph ) ) ` (the definiens i.e. the
      defining expression) in the definition, the definition becomes the
-     previously proved theorem ~ bijust .  It is impossible to use ~ df-bi to
+     previously proved theorem ~ biijust .  It is impossible to use ~ df-bi to
      prove any statement expressed in the original language that can't be
      proved from the original axioms, because if we simply replace each
-     instance of ~ df-bi in the proof with the corresponding ~ bijust instance,
+     instance of ~ df-bi in the proof with the corresponding ~ biijust instance,
      we will end up with a proof from the original axioms.
 
      Note that from Metamath's point of view, a definition is just another
@@ -8473,11 +8474,12 @@ $)
      prefixing is an informal convention that means nothing to the Metamath
      proof verifier; it is just for human readability.)
 
-     See ~ dfbi1 , ~ dfbi2 , and ~ dfbi3 for theorems suggesting typical
-     textbook definitions of ` <-> ` , showing that our definition has the
-     properties we expect.  Theorem ~ dfbi shows this definition rewritten in
-     an abbreviated form after conjunction is introduced, for easier
-     understanding. $)
+     ~ df-bi itself is a conjunction of two implications (to avoid using
+     the biconditional in its own definition), but once we have the
+     biconditional, we can prove ~ dfbi2 which uses the biconditional instead.
+
+     Other textbook definitions of the biconditional, such as ~ dfbi1
+     and ~ dfbi3 , only hold clasically, not intuitionistically. $)
   df-bi $a |- ( ( ( ph <-> ps ) -> ( ( ph -> ps ) /\ ( ps -> ph ) ) )
         /\ ( ( ( ph -> ps ) /\ ( ps -> ph ) ) -> ( ph <-> ps ) ) ) $.
 
@@ -10512,16 +10514,6 @@ $)
     ( wb wi wa df-bi simpli simpri impbii ) ABCZABDBADEZJKDZKJDZABFZGLMNHI $.
     $( [31-Jan-2015] $) $( [5-Aug-1993] $)
 
-  $( Definition ~ df-bi rewritten in an abbreviated form to help intuitive
-     understanding of that definition.  Note that it is a conjunction of two
-     implications; one which asserts properties that follow from the
-     biconditional and one which asserts properties that imply the
-     biconditional. $)
-  dfbi $p |- ( ( ( ph <-> ps ) -> ( ( ph -> ps ) /\ ( ps -> ph ) ) )
-        /\ ( ( ( ph -> ps ) /\ ( ps -> ph ) ) -> ( ph <-> ps ) ) ) $=
-    ( wb wi wa dfbi2 biimpi biimpri pm3.2i ) ABCZABDBADEZDKJDJKABFZGJKLHI $.
-    $( [15-Aug-2008] $)
-
   $( Implication in terms of biconditional and conjunction.  Theorem *4.71 of
      [WhiteheadRussell] p. 120.  (The proof was shortened by Wolf Lammen,
      2-Dec-2012.) $)
@@ -11917,14 +11909,11 @@ $)
       $( [10-Sep-2013] $) $( [19-Aug-1993] $)
   $}
 
-  $( Theorem used to justify definition of biconditional ~ df-bi .  (The proof
-     was shortened by Josh Purinton, 29-Dec-2000.) $)
-  bijust $p |- -. ( ( -. ( ( ph -> ps ) -> -. ( ps -> ph ) )
-                      -> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) )
-               -> -. ( -. ( ( ph -> ps ) -> -. ( ps -> ph ) )
-                      -> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ) ) $=
-    ( wi wn id pm2.01 mt2 ) ABCBACDCDZHCZIDCIHEIFG $.
-    $( [18-Nov-2013] $) $( [11-May-1999] $)
+  $( Theorem used to justify definition of intuitionistic biconditional ~ df-bi . $)
+  biijust $p  |- ( ( ( ( ph -> ps ) /\ ( ps -> ph ) ) -> ( ( ph -> ps ) /\ ( ps -> ph ) ) )
+    /\ ( ( ( ph -> ps ) /\ ( ps -> ph ) ) -> ( ( ph -> ps ) /\ ( ps -> ph ) ) ) ) $=
+    ( wi wa id pm3.2i ) ABCBACDZGCZHGEZIF $.
+    $( [24-Nov-2017] $)
 
   $( Contraposition.  Theorem *2.16 of [WhiteheadRussell] p. 103.  (The proof
      was shortened by Wolf Lammen, 13-Feb-2013.) $)
@@ -13715,7 +13704,8 @@ $( This section makes our first use of the third axiom of propositonal
     ( wn wo notnot2 orc syl olc ja ) ACZBABDZJCAKAEABFGBAHI $.
     $( [3-Jan-2005] $)
 
-  $( Define disjunction (logical 'or').  Definition of [Margaris] p. 49. $)
+  $( Definition of 'or' in terms of negation and implication (classical).
+     Definition of [Margaris] p. 49. $)
   df-or $p |- ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) $=
     ( wo wn wi pm2.53 pm2.54 impbii ) ABCADBEABFABGH $.
     $( [31-Jan-2015] $)
@@ -17635,6 +17625,7 @@ $)
   $}
 
   ${
+
     ee21.1 $e |- ( ph -> ( ps -> ch ) ) $.
     ee21.2 $e |- ( ph -> th ) $.
     ee21.3 $e |- ( ch -> ( th -> ta ) ) $.
