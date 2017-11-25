@@ -831,6 +831,7 @@
 "ax-addf" is used by "cnrngo".
 "ax-addf" is used by "efghgrp".
 "ax-addf" is used by "itg1addlem4".
+"ax-addf" is used by "raddcn".
 "ax-addf" is used by "readdsubgo".
 "ax-addf" is used by "rlimadd".
 "ax-addf" is used by "zaddsubgo".
@@ -1217,6 +1218,8 @@
 "ax-mulf" is used by "mulnzcnopr".
 "ax-mulf" is used by "nZdef".
 "ax-mulf" is used by "rlimmul".
+"ax-mulf" is used by "rmulccn".
+"ax-mulf" is used by "xrge0pluscn".
 "ax-mulrcl" is used by "remulcl".
 "ax-pre-ltadd" is used by "axltadd".
 "ax-pre-lttri" is used by "axlttri".
@@ -13443,7 +13446,7 @@ New usage of "ax-9o" is discouraged (3 uses).
 New usage of "ax-ac" is discouraged (2 uses).
 New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
-New usage of "ax-addf" is discouraged (18 uses).
+New usage of "ax-addf" is discouraged (19 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-cnre" is discouraged (1 uses).
@@ -13471,7 +13474,7 @@ New usage of "ax-meredith" is discouraged (13 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
-New usage of "ax-mulf" is discouraged (11 uses).
+New usage of "ax-mulf" is discouraged (13 uses).
 New usage of "ax-mulrcl" is discouraged (1 uses).
 New usage of "ax-pre-ltadd" is discouraged (1 uses).
 New usage of "ax-pre-lttri" is discouraged (1 uses).
@@ -15074,6 +15077,7 @@ New usage of "eqrelrdv2OLD" is discouraged (0 uses).
 New usage of "eqrelrdvOLD" is discouraged (0 uses).
 New usage of "eqresr" is discouraged (4 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
+New usage of "equequ1OLD" is discouraged (0 uses).
 New usage of "equid1" is discouraged (0 uses).
 New usage of "equid1ALT" is discouraged (0 uses).
 New usage of "equidq" is discouraged (0 uses).
@@ -16253,8 +16257,11 @@ New usage of "mod0OLD" is discouraged (0 uses).
 New usage of "morexOLD" is discouraged (0 uses).
 New usage of "mp4anOLD" is discouraged (0 uses).
 New usage of "mplvscafvalOLD" is discouraged (0 uses).
+New usage of "mpto2OLD" is discouraged (0 uses).
 New usage of "mpv" is discouraged (1 uses).
 New usage of "mtordOLD" is discouraged (0 uses).
+New usage of "mtp-orOLD" is discouraged (0 uses).
+New usage of "mtp-xorOLD" is discouraged (0 uses).
 New usage of "mulassnq" is discouraged (10 uses).
 New usage of "mulasspi" is discouraged (12 uses).
 New usage of "mulasspr" is discouraged (1 uses).
@@ -17491,7 +17498,6 @@ New usage of "w-bnj13" is discouraged (5 uses).
 New usage of "w-bnj15" is discouraged (92 uses).
 New usage of "w-bnj17" is discouraged (103 uses).
 New usage of "w-bnj19" is discouraged (8 uses).
-New usage of "w5a" is discouraged (0 uses).
 New usage of "watfvalN" is discouraged (1 uses).
 New usage of "watvalN" is discouraged (1 uses).
 New usage of "wl-adnestant" is discouraged (0 uses).
@@ -17519,10 +17525,17 @@ New usage of "wl-syls2" is discouraged (0 uses).
 New usage of "wofiOLD" is discouraged (0 uses).
 New usage of "wvd2" is discouraged (5 uses).
 New usage of "wvd3" is discouraged (3 uses).
+New usage of "wvhc10" is discouraged (0 uses).
+New usage of "wvhc11" is discouraged (0 uses).
+New usage of "wvhc12" is discouraged (0 uses).
 New usage of "wvhc2" is discouraged (5 uses).
 New usage of "wvhc3" is discouraged (3 uses).
 New usage of "wvhc4" is discouraged (0 uses).
 New usage of "wvhc5" is discouraged (0 uses).
+New usage of "wvhc6" is discouraged (0 uses).
+New usage of "wvhc7" is discouraged (0 uses).
+New usage of "wvhc8" is discouraged (0 uses).
+New usage of "wvhc9" is discouraged (0 uses).
 New usage of "xihopellsmN" is discouraged (0 uses).
 New usage of "xpengOLD" is discouraged (0 uses).
 New usage of "xpeq1dOLD" is discouraged (0 uses).
@@ -17969,6 +17982,7 @@ Proof modification of "eqid1" is discouraged (9 steps).
 Proof modification of "eqrelrdv2OLD" is discouraged (43 steps).
 Proof modification of "eqrelrdvOLD" is discouraged (41 steps).
 Proof modification of "eqsbc3rVD" is discouraged (129 steps).
+Proof modification of "equequ1OLD" is discouraged (29 steps).
 Proof modification of "equid1" is discouraged (50 steps).
 Proof modification of "equid1ALT" is discouraged (36 steps).
 Proof modification of "equidq" is discouraged (27 steps).
@@ -18175,7 +18189,10 @@ Proof modification of "mod0OLD" is discouraged (3 steps).
 Proof modification of "morexOLD" is discouraged (8 steps).
 Proof modification of "mp4anOLD" is discouraged (11 steps).
 Proof modification of "mplvscafvalOLD" is discouraged (39 steps).
+Proof modification of "mpto2OLD" is discouraged (29 steps).
 Proof modification of "mtordOLD" is discouraged (8 steps).
+Proof modification of "mtp-orOLD" is discouraged (16 steps).
+Proof modification of "mtp-xorOLD" is discouraged (34 steps).
 Proof modification of "mulge0OLD" is discouraged (25 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "negmod0OLD" is discouraged (3 steps).
