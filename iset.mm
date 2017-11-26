@@ -17301,15 +17301,22 @@ $)
       ( wal wi wex wb ax-gen 19.23t ax-mp ) BBCEFZCEABFCEACGBFHLCDIABCJK $.
   $}
 
-  $( Theorem 19.7 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.)
-     (Revised by NM, 1-Feb-2015.) $)
+  $( Theorem 19.7 of [Margaris] p. 89.  To read this intuitionistically, think
+     of it as "if ` ph ` can be refuted for all ` x ` , then it is not possible
+     to find an ` x ` for which ` ph ` holds" (and likewise for the converse).
+     Comparing this with ~ df-ex illustrates that statements which look similar
+     (to someone used to classical logic) can be different intuitionistically
+     due to different placement of negations.  (Contributed by NM,
+     5-Aug-1993.)  (Revised by NM, 1-Feb-2015.)  (Revised by Mario Carneiro,
+     12-May-2015.) $)
   alnex $p |- ( A. x -. ph <-> -. E. x ph ) $=
     ( wfal wi wal wex wn notfal pm2.21i 19.23 dfneg albii 3bitr4i ) ACDZBEABFZC
     DAGZBEOGACBCCBEHIJPNBAKLOKM $.
 
-  $( Define existential quantification. ` E. x ph ` means "there exists at
-     least one set ` x ` such that ` ph ` is true."  Definition of [Margaris]
-     p. 49.  (Contributed by NM, 2-Feb-2015.) $)
+  $( Classical definition of existential quantification.  This does not hold
+     intuitionistically, so it depends on ~ ax-3 for its proof.  Definition of
+     [Margaris] p. 49.  (Contributed by NM, 2-Feb-2015.)  (Revised by Mario
+     Carneiro, 12-May-2015.) $)
   df-ex $p |- ( E. x ph <-> -. A. x -. ph ) $=
     ( wn wal wex alnex con2bii ) ACBDABEABFG $.
 
@@ -17537,12 +17544,6 @@ $)
      in the literature but is easily proved from textbook predicate calculus by
      cases.
 
-     An open problem is whether this axiom is redundant.  Note that the
-     analogous axiom for the membership connective, ~ ax-15 , has been shown to
-     be redundant.  It is also unknown whether this axiom can be replaced by a
-     shorter formula.  However, it can be derived from two slightly shorter
-     formulas, as shown by ~ a12study .
-
      This axiom has been modified from the original ~ ax-12 for compatibility
      with intuitionistic logic.  (Contributed by Mario Carneiro,
      31-Jan-2015.) $)
@@ -17571,13 +17572,11 @@ $)
      requires the assistance of equality axioms, and we deal with it later
      after we introduce the definition of proper substitution - see ~ stdpc4 .
 
-     An nice alternate axiomatization uses ~ ax467 and ~ ax-5o in place of
-     ~ ax-4 , ~ ax-5 , ~ ax-6 , and ~ ax-7 .
-
-     This axiom is redundant in the presence of certain other axioms, as shown
-     by theorem ~ ax4 .  (We replaced the older ~ ax-5o and ~ ax-6o with newer
-     versions ~ ax-5 and ~ ax-6 in order to prove this redundancy.)
-     (Contributed by NM, 5-Aug-1993.) $)
+     The relationship of this axiom to other predicate logic axioms is
+     different than in the classical case.  In particular, the current proof of
+     ~ ax4 (which derives ~ ax-4 from certain other axioms) relies on ~ ax-3
+     and so is not valid intuitionistically.  (Contributed by NM,
+     5-Aug-1993.) $)
   ax-4 $a |- ( A. x ph -> ph ) $.
 
   $( Rederive the original version of the axiom from ~ ax-i12 .  Note that we
