@@ -11452,14 +11452,13 @@ $)
   ax-in2 $a |- ( -. ph -> ( ph -> ps ) ) $.
 
   $( Reductio ad absurdum.  Theorem *2.01 of [WhiteheadRussell] p. 100.
-     (Contributed by NM, 18-Aug-1993.)  (Proof shortened by O'Cat,
-     21-Nov-2008.)  (Proof shortened by Wolf Lammen, 31-Oct-2012.) $)
+     (Contributed by Mario Carneiro, 12-May-2015.) $)
   pm2.01 $p |- ( ( ph -> -. ph ) -> -. ph ) $=
     ( ax-in1 ) AB $.
 
   $( From a wff and its negation, anything is true.  Theorem *2.21 of
      [WhiteheadRussell] p. 104.  Also called the Duns Scotus law.  (Contributed
-     by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen, 14-Sep-2012.) $)
+     by Mario Carneiro, 12-May-2015.) $)
   pm2.21 $p |- ( -. ph -> ( ph -> ps ) ) $=
     ( ax-in2 ) ABC $.
 
@@ -11573,9 +11572,9 @@ $)
       ( wn con3d com12 ) ACEBEABCDFG $.
   $}
 
-  $( Theorem *3.2 of [WhiteheadRussell] p. 111, expressed with primitive
-     connectives.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Josh
-     Purinton, 29-Dec-2000.) $)
+  $( In classical logic, this is just a restatement of ~ pm3.2 .  In
+     intuitionistic logic, it still holds, but is weaker than pm3.2.
+     (Contributed by Mario Carneiro, 12-May-2015.) $)
   pm3.2im $p |- ( ph -> ( ps -> -. ( ph -> -. ps ) ) ) $=
     ( wn wi pm2.27 con2d ) AABCZDBAGEF $.
 
@@ -11702,8 +11701,9 @@ $)
   expt $p |- ( ( -. ( ph -> -. ps ) -> ch ) -> ( ph -> ( ps -> ch ) ) ) $=
     ( wn wi pm3.2im imim1d com12 ) AABDEDZCEBCEABICABFGH $.
 
-  $( Elimination of a nested antecedent as a kind of reversal of inference
-     ~ ja .  (Contributed by Wolf Lammen, 10-May-2013.) $)
+  $( Elimination of a nested antecedent.  Although it is a kind of reversal of
+     inference ~ ja it holds intuitionistically, while ~ ja does not.
+     (Contributed by Wolf Lammen, 10-May-2013.) $)
   jarl $p |- ( ( ( ph -> ps ) -> ch ) -> ( -. ph -> ch ) ) $=
     ( wn wi pm2.21 imim1i ) ADABECABFG $.
 
