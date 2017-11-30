@@ -17505,14 +17505,9 @@ $)
      is based on Lemma 16 of [Tarski] p. 70 and Axiom C8 of [Monk2] p. 105,
      from which it can be proved by cases.
 
-     The original version of this axiom was ~ ax-11o ("o" for "old") and was
-     replaced with this shorter ~ ax-11 in Jan. 2007.  The old axiom is proved
-     from this one as theorem ~ ax11o .  Conversely, this axiom is proved from
-     ~ ax-11o as theorem ~ ax11 .
-
-     Juha Arpiainen proved the independence of this axiom (in the form of the
-     older axiom ~ ax-11o ) from the others on 19-Jan-2006.  See item 9a at
-     ~ http://us.metamath.org/award2003.html .
+     In classical logic, ~ ax-11o can be derived from this axiom, as can be
+     seen at ~ ax11o . However, the current proof of ~ ax11o is not valid
+     intuitionistically.
 
      Interestingly, if the wff expression substituted for ` ph ` contains no
      wff variables, the resulting statement _can_ be proved without invoking
@@ -17524,8 +17519,9 @@ $)
      for the basis steps and ~ ax11indn , ~ ax11indi , and ~ ax11inda for the
      induction steps.
 
-     See also ~ ax11v and ~ ax11v2 for other equivalents of this axiom that
-     (unlike this axiom) have distinct variable restrictions.  (Contributed by
+     Variants of this axiom which are equivalent in classical logic but
+     which have not been shown to be equivalent for intuitionistic logic
+     are ~ ax11v , ~ ax11v2 and ~ ax-11o .  (Contributed by
      NM, 5-Aug-1993.) $)
   ax-11 $a |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) $.
 
@@ -17863,20 +17859,19 @@ $)
      in an axiom system of Tarski (see Axiom B7' in footnote 1 of
      [KalishMontague] p. 81.)  It is equivalent to axiom scheme C10' in
      [Megill] p. 448 (p. 16 of the preprint); the equivalence is established by
-     ~ ax9o and ~ ax9 .  A more convenient form of this axiom is ~ a9e , which
+     ~ ax9o and ~ ax9 .  Another name for this theorem is ~ a9e , which
      has additional remarks.
 
-     Raph Levien proved the independence of this axiom from the other logical
-     axioms on 12-Apr-2005.  See item 16 at
-     ~ http://us.metamath.org/award2003.html .
-
-     ~ ax-9 can be proved from a weaker version requiring that the variables be
-     distinct; see theorem ~ a9wa9 .  (Contributed by Mario Carneiro,
+     At least in classical logic, ~ ax-9 can be proved from a weaker version
+     requiring that the variables be
+     distinct, but the current proof of theorem ~ a9wa9 is not valid
+     intuitionistically.  (Contributed by Mario Carneiro,
      31-Jan-2015.) $)
   ax-i9 $a |- E. x x = y $.
 
   $( Derive ~ ax-9 from ~ ax-i9 , the modified version for intuitionistic
-     logic.  (Contributed by NM, 3-Feb-2015.) $)
+     logic. Although ~ ax-9 does hold intuistionistically, in intuitionistic
+     logic it is weaker than ~ ax-i9 . (Contributed by NM, 3-Feb-2015.) $)
   ax-9 $p |- -. A. x -. x = y $=
     ( cv wceq wn wal wex ax-i9 notnoti alnex mtbir ) ACBCDZEAFLAGZEMABHILAJK $.
 
@@ -17970,7 +17965,8 @@ $)
      preprint).  It is a special case of Lemma 5 of [Monk2] p. 108 and Axiom 5
      of [Mendelson] p. 69.
 
-     This axiom is redundant, as shown by theorem ~ ax5o .
+     In classical logic, this axiom is redundant, as shown by theorem ~ ax5o .
+     The current proof of ~ ax5o is not valid intuitionistically.
 
      Normally, ~ ax5o should be used rather than ~ ax-5o , except by theorems
      specifically studying the latter's properties.  (Contributed by NM,
