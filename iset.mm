@@ -9398,9 +9398,8 @@ $)
   $( Axiom of Quantifier Commutation.  This axiom says universal quantifiers
      can be swapped.  One of the 4 axioms of pure predicate calculus.  Axiom
      scheme C6' in [Megill] p. 448 (p. 16 of the preprint).  Also appears as
-     Lemma 12 of [Monk2] p. 109 and Axiom C5-3 of [Monk2] p. 113.  An alternate
-     axiomatization could use ~ ax467 in place of ~ ax-4 , ~ ax-6o , and
-     ~ ax-7 .  (Contributed by NM, 5-Aug-1993.) $)
+     Lemma 12 of [Monk2] p. 109 and Axiom C5-3 of [Monk2] p. 113.  (Contributed
+     by NM, 5-Aug-1993.) $)
   ax-7 $a |- ( A. x A. y ph -> A. y A. x ph ) $.
 
   ${
@@ -10402,9 +10401,7 @@ $)
 
   $( Axiom of Quantified Negation.  This axiom is used to manipulate negated
      quantifiers.  One of the 4 axioms of pure predicate calculus.  Equivalent
-     to axiom scheme C7' in [Megill] p. 448 (p. 16 of the preprint).  An
-     alternate axiomatization could use ~ ax467 in place of ~ ax-4 , ~ ax-6o ,
-     and ~ ax-7 .
+     to axiom scheme C7' in [Megill] p. 448 (p. 16 of the preprint).
 
      This axiom is redundant, as shown by theorem ~ ax6o .
 
@@ -10541,72 +10538,6 @@ $)
      (Proof shortened by Wolf Lammen, 18-Aug-2014.) $)
   hbn1 $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
     ( ax-6 ) ABC $.
-
-  $( Proof of a single axiom that can replace ~ ax-4 and ~ ax-6o .  See
-     ~ ax46to4 and ~ ax46to6 for the re-derivation of those axioms.
-     (Contributed by Scott Fenton, 12-Sep-2005.) $)
-  ax46 $p |- ( ( A. x -. A. x ph -> A. x ph ) -> ph ) $=
-    ( wal wn ax-6o ax-4 ja ) ABCZDBCHAABEABFG $.
-
-  $( Re-derivation of ~ ax-4 from ~ ax46 .  Only propositional calculus is used
-     for the re-derivation.  (Contributed by Scott Fenton, 12-Sep-2005.) $)
-  ax46to4 $p |- ( A. x ph -> ph ) $=
-    ( wal wn wi ax-1 ax46 syl ) ABCZIDBCZIEAIJFABGH $.
-
-  $( Re-derivation of ~ ax-6o from ~ ax46 .  Only propositional calculus is
-     used for the re-derivation.  (Contributed by Scott Fenton,
-     12-Sep-2005.) $)
-  ax46to6 $p |- ( -. A. x -. A. x ph -> ph ) $=
-    ( wal wn wi pm2.21 ax46 syl ) ABCZDBCZDJIEAJIFABGH $.
-
-  $( Proof of a single axiom that can replace both ~ ax-6o and ~ ax-7 .  See
-     ~ ax67to6 and ~ ax67to7 for the re-derivation of those axioms.
-     (Contributed by NM, 18-Nov-2006.) $)
-  ax67 $p |- ( -. A. x -. A. y A. x ph -> A. y ph ) $=
-    ( wal wn ax-7 con3i alimi ax-6o syl ) ABDCDZEZBDZEACDZBDZEZBDZENQMPLBKOACBF
-    GHGNBIJ $.
-
-  $( Re-derivation of ~ ax-6o from ~ ax67 .  Note that ~ ax-6o and ~ ax-7 are
-     not used by the re-derivation.  (Contributed by NM, 18-Nov-2006.) $)
-  ax67to6 $p |- ( -. A. x -. A. x ph -> ph ) $=
-    ( wal wn hba1 con3i alimi ax67 ax-4 3syl ) ABCZDZBCZDKBCZDZBCZDKAPMOLBKNABE
-    FGFABBHABIJ $.
-
-  $( Re-derivation of ~ ax-7 from ~ ax67 .  Note that ~ ax-6o and ~ ax-7 are
-     not used by the re-derivation.  (Contributed by NM, 18-Nov-2006.) $)
-  ax67to7 $p |- ( A. x A. y ph -> A. y A. x ph ) $=
-    ( wal wn ax67to6 con4i ax67 alimi syl ) ACDBDZKEZCDEZCDZABDZCDNKLCFGMOCACBH
-    IJ $.
-
-  $( Proof of a single axiom that can replace ~ ax-4 , ~ ax-6o , and ~ ax-7 in
-     a subsystem that includes these axioms plus ~ ax-5o and ~ ax-gen (and
-     propositional calculus).  See ~ ax467to4 , ~ ax467to6 , and ~ ax467to7 for
-     the re-derivation of those axioms.  This theorem extends the idea in Scott
-     Fenton's ~ ax46 .  (Contributed by NM, 18-Nov-2006.) $)
-  ax467 $p |- ( ( A. x A. y -. A. x A. y ph -> A. x ph ) -> ph ) $=
-    ( wal wn ax-4 hbn1 ax-6o con1i alimi ax-7 3syl nsyl4 ja ) ACDZBDEZCDBDZABDA
-    OAQACFOEZRCDPBDZCDQACGRSCSOOBHIJPCBKLMABFN $.
-
-  $( Re-derivation of ~ ax-4 from ~ ax467 .  Only propositional calculus is
-     used by the re-derivation.  (Contributed by NM, 19-Nov-2006.) $)
-  ax467to4 $p |- ( A. x ph -> ph ) $=
-    ( wal wn wi ax-1 ax467 syl ) ABCZIBCDBCBCZIEAIJFABBGH $.
-
-  $( Re-derivation of ~ ax-6o from ~ ax467 .  Note that ~ ax-6o and ~ ax-7 are
-     not used by the re-derivation.  The use of ~ alimi (which uses ~ ax-4 ) is
-     allowed since we have already proved ~ ax467to4 .  (Contributed by NM,
-     19-Nov-2006.) $)
-  ax467to6 $p |- ( -. A. x -. A. x ph -> ph ) $=
-    ( wal wn wi ax467to4 hba1 con3i alimi syl pm2.21 ax467 3syl ) ABCZDZBCZDNBC
-    ZDZBCZBCZDTNEATPTSPSBFROBNQABGHIJHTNKABBLM $.
-
-  $( Re-derivation of ~ ax-7 from ~ ax467 .  Note that ~ ax-6o and ~ ax-7 are
-     not used by the re-derivation.  The use of ~ alimi (which uses ~ ax-4 ) is
-     allowed since we have already proved ~ ax467to4 .  (Contributed by NM,
-     19-Nov-2006.) $)
-  ax467to7 $p |- ( A. x A. y ph -> A. y A. x ph ) $=
-    ( wal wn ax467to6 con4i wi pm2.21 ax467 syl alimi nsyl4 ) ACDBDZNEZCDZEZCDZ
-    ABDZCDRNOCFGQSCPBDZEZBDSPUAABUATSHATSIABCJKLPBFMLK $.
 
   $( The analog in our "pure" predicate calculus of axiom 5 of modal logic S5.
      (Contributed by NM, 5-Oct-2005.) $)
