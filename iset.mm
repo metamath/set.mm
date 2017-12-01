@@ -10539,25 +10539,6 @@ $)
   hbn1 $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
     ( ax-6 ) ABC $.
 
-  $( Proof of a single axiom that can replace both ~ ax-6o and ~ ax-7 .  See
-     ~ ax67to6 and ~ ax67to7 for the re-derivation of those axioms.
-     (Contributed by NM, 18-Nov-2006.) $)
-  ax67 $p |- ( -. A. x -. A. y A. x ph -> A. y ph ) $=
-    ( wal wn ax-7 con3i alimi ax-6o syl ) ABDCDZEZBDZEACDZBDZEZBDZENQMPLBKOACBF
-    GHGNBIJ $.
-
-  $( Re-derivation of ~ ax-6o from ~ ax67 .  Note that ~ ax-6o and ~ ax-7 are
-     not used by the re-derivation.  (Contributed by NM, 18-Nov-2006.) $)
-  ax67to6 $p |- ( -. A. x -. A. x ph -> ph ) $=
-    ( wal wn hba1 con3i alimi ax67 ax-4 3syl ) ABCZDZBCZDKBCZDZBCZDKAPMOLBKNABE
-    FGFABBHABIJ $.
-
-  $( Re-derivation of ~ ax-7 from ~ ax67 .  Note that ~ ax-6o and ~ ax-7 are
-     not used by the re-derivation.  (Contributed by NM, 18-Nov-2006.) $)
-  ax67to7 $p |- ( A. x A. y ph -> A. y A. x ph ) $=
-    ( wal wn ax67to6 con4i ax67 alimi syl ) ACDBDZKEZCDEZCDZABDZCDNKLCFGMOCACBH
-    IJ $.
-
   $( The analog in our "pure" predicate calculus of axiom 5 of modal logic S5.
      (Contributed by NM, 5-Oct-2005.) $)
   modal-5 $p |- ( -. A. x -. ph -> A. x -. A. x -. ph ) $=
