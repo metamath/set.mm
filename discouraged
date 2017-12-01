@@ -773,7 +773,7 @@
 "ax-10o" is used by "hbae-o".
 "ax-11o" is used by "ax11".
 "ax-12" is used by "ax12v".
-"ax-12o" is used by "ax12".
+"ax-12o" is used by "ax12from12o".
 "ax-12o" is used by "ax17eq".
 "ax-12o" is used by "dvelimf-o".
 "ax-12o" is used by "equid1".
@@ -789,7 +789,7 @@
 "ax-4" is used by "ax11".
 "ax-4" is used by "ax11inda2ALT".
 "ax-4" is used by "ax11indalem".
-"ax-4" is used by "ax12".
+"ax-4" is used by "ax12from12o".
 "ax-4" is used by "ax46".
 "ax-4" is used by "ax467".
 "ax-4" is used by "ax5".
@@ -13502,13 +13502,13 @@ New usage of "ax11indalem" is discouraged (1 uses).
 New usage of "ax11indi" is discouraged (0 uses).
 New usage of "ax11indn" is discouraged (1 uses).
 New usage of "ax11v2-o" is discouraged (1 uses).
-New usage of "ax12" is discouraged (0 uses).
 New usage of "ax12-2" is discouraged (2 uses).
 New usage of "ax12-3" is discouraged (0 uses).
 New usage of "ax12-4" is discouraged (0 uses).
 New usage of "ax12OLD" is discouraged (0 uses).
 New usage of "ax12bOLD" is discouraged (0 uses).
 New usage of "ax12conj2" is discouraged (0 uses).
+New usage of "ax12from12o" is discouraged (0 uses).
 New usage of "ax16ALT" is discouraged (1 uses).
 New usage of "ax16ALT2" is discouraged (1 uses).
 New usage of "ax16ALT2OLD7" is discouraged (1 uses).
@@ -17667,12 +17667,12 @@ Proof modification of "ax11indalem" is discouraged (272 steps).
 Proof modification of "ax11indi" is discouraged (83 steps).
 Proof modification of "ax11indn" is discouraged (70 steps).
 Proof modification of "ax11v2-o" is discouraged (107 steps).
-Proof modification of "ax12" is discouraged (72 steps).
 Proof modification of "ax12-2" is discouraged (116 steps).
 Proof modification of "ax12-3" is discouraged (58 steps).
 Proof modification of "ax12-4" is discouraged (103 steps).
 Proof modification of "ax12OLD" is discouraged (69 steps).
 Proof modification of "ax12conj2" is discouraged (89 steps).
+Proof modification of "ax12from12o" is discouraged (72 steps).
 Proof modification of "ax15" is discouraged (72 steps).
 Proof modification of "ax16ALT" is discouraged (20 steps).
 Proof modification of "ax16ALT2" is discouraged (62 steps).
