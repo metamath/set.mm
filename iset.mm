@@ -10539,23 +10539,6 @@ $)
   hbn1 $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
     ( ax-6 ) ABC $.
 
-  $( Proof of a single axiom that can replace ~ ax-4 and ~ ax-6o .  See
-     ~ ax46to4 and ~ ax46to6 for the re-derivation of those axioms.
-     (Contributed by Scott Fenton, 12-Sep-2005.) $)
-  ax46 $p |- ( ( A. x -. A. x ph -> A. x ph ) -> ph ) $=
-    ( wal wn ax-6o ax-4 ja ) ABCZDBCHAABEABFG $.
-
-  $( Re-derivation of ~ ax-4 from ~ ax46 .  Only propositional calculus is used
-     for the re-derivation.  (Contributed by Scott Fenton, 12-Sep-2005.) $)
-  ax46to4 $p |- ( A. x ph -> ph ) $=
-    ( wal wn wi ax-1 ax46 syl ) ABCZIDBCZIEAIJFABGH $.
-
-  $( Re-derivation of ~ ax-6o from ~ ax46 .  Only propositional calculus is
-     used for the re-derivation.  (Contributed by Scott Fenton,
-     12-Sep-2005.) $)
-  ax46to6 $p |- ( -. A. x -. A. x ph -> ph ) $=
-    ( wal wn wi pm2.21 ax46 syl ) ABCZDBCZDJIEAJIFABGH $.
-
   $( Proof of a single axiom that can replace both ~ ax-6o and ~ ax-7 .  See
      ~ ax67to6 and ~ ax67to7 for the re-derivation of those axioms.
      (Contributed by NM, 18-Nov-2006.) $)
