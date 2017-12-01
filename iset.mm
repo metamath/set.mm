@@ -6959,108 +6959,12 @@ $)
   $}
 
   ${
-    4cases.1 $e |- ( ( ph /\ ps ) -> ch ) $.
-    4cases.2 $e |- ( ( ph /\ -. ps ) -> ch ) $.
-    4cases.3 $e |- ( ( -. ph /\ ps ) -> ch ) $.
-    4cases.4 $e |- ( ( -. ph /\ -. ps ) -> ch ) $.
-    $( Inference eliminating two antecedents from the four possible cases that
-       result from their true/false combinations.  (Contributed by NM,
-       25-Oct-2003.) $)
-    4cases $p |- ch $=
-      ( pm2.61ian wn pm2.61i ) BCABCDFHABICEGHJ $.
-  $}
-
-  ${
-    4casesdan.1 $e |- ( ( ph /\ ( ps /\ ch ) ) -> th ) $.
-    4casesdan.2 $e |- ( ( ph /\ ( ps /\ -. ch ) ) -> th ) $.
-    4casesdan.3 $e |- ( ( ph /\ ( -. ps /\ ch ) ) -> th ) $.
-    4casesdan.4 $e |- ( ( ph /\ ( -. ps /\ -. ch ) ) -> th ) $.
-    $( Deduction eliminating two antecedents from the four possible cases that
-       result from their true/false combinations.  (Contributed by NM,
-       19-Mar-2013.) $)
-    4casesdan $p |- ( ph -> th ) $=
-      ( wi wa expcom wn 4cases ) BCADIABCJDEKABCLZJDFKABLZCJDGKAONJDHKM $.
-  $}
-
-  ${
     niabn.1 $e |- ph $.
     $( Miscellaneous inference relating falsehoods.  (Contributed by NM,
        31-Mar-1994.) $)
     niabn $p |- ( -. ps -> ( ( ch /\ ps ) <-> -. ph ) ) $=
       ( wa wn simpr pm2.24i pm5.21ni ) CBEBAFCBGABDHI $.
   $}
-
-  $( Lemma for an alternate version of weak deduction theorem.  (Contributed by
-     NM, 2-Apr-1994.)  (Proof shortened by Andrew Salmon, 7-May-2011.)  (Proof
-     shortened by Wolf Lammen, 4-Dec-2012.) $)
-  dedlem0a $p |- ( ph -> ( ps <-> ( ( ch -> ph ) -> ( ps /\ ph ) ) ) ) $=
-    ( wa wi iba wb ax-1 biimt syl bitrd ) ABBADZCAEZLEZABFAMLNGACHMLIJK $.
-
-  $( Lemma for an alternate version of weak deduction theorem.  (Contributed by
-     NM, 2-Apr-1994.) $)
-  dedlem0b $p |- ( -. ph -> ( ps <-> ( ( ps -> ph ) -> ( ch /\ ph ) ) ) ) $=
-    ( wn wi wa pm2.21 imim2d com23 simpr imim12i con1d com12 impbid ) ADZBBAEZC
-    AFZEZOPBQOAQBAQGHIROBRBABDPQABAGCAJKLMN $.
-
-  $( Lemma for weak deduction theorem.  (Contributed by NM, 26-Jun-2002.)
-     (Proof shortened by Andrew Salmon, 7-May-2011.) $)
-  dedlema $p |- ( ph -> ( ps <-> ( ( ps /\ ph ) \/ ( ch /\ -. ph ) ) ) ) $=
-    ( wa wn wo orc expcom wi simpl a1i pm2.24 adantld jaod impbid ) ABBADZCAEZD
-    ZFZBASPRGHAPBRPBIABAJKAQBCABLMNO $.
-
-  $( Lemma for weak deduction theorem.  (Contributed by NM, 15-May-1999.)
-     (Proof shortened by Andrew Salmon, 7-May-2011.) $)
-  dedlemb $p |- ( -. ph -> ( ch <-> ( ( ps /\ ph ) \/ ( ch /\ -. ph ) ) ) ) $=
-    ( wn wa wo olc expcom pm2.21 adantld wi simpl a1i jaod impbid ) ADZCBAEZCPE
-    ZFZCPSRQGHPQCRPACBACIJRCKPCPLMNO $.
-
-  ${
-    elimh.1 $e |- ( ( ph <-> ( ( ph /\ ch ) \/ ( ps /\ -. ch ) ) )
-                     -> ( ch <-> ta ) ) $.
-    elimh.2 $e |- ( ( ps <-> ( ( ph /\ ch ) \/ ( ps /\ -. ch ) ) )
-                     -> ( th <-> ta ) ) $.
-    elimh.3 $e |- th $.
-    $( Hypothesis builder for weak deduction theorem.  For more information,
-       see the Deduction Theorem link on the Metamath Proof Explorer home
-       page.  (Contributed by NM, 26-Jun-2002.) $)
-    elimh $p |- ta $=
-      ( wa wn wo wb dedlema syl ibi dedlemb mpbii pm2.61i ) CECECAACIBCJZIKZLCE
-      LCABMFNOSDEHSBTLDELCABPGNQR $.
-  $}
-
-  ${
-    dedt.1 $e |- ( ( ph <-> ( ( ph /\ ch ) \/ ( ps /\ -. ch ) ) )
-                     -> ( th <-> ta ) ) $.
-    dedt.2 $e |- ta $.
-    $( The weak deduction theorem.  For more information, see the Deduction
-       Theorem link on the Metamath Proof Explorer home page.  (Contributed by
-       NM, 26-Jun-2002.) $)
-    dedt $p |- ( ch -> th ) $=
-      ( wa wn wo wb dedlema mpbiri syl ) CAACHBCIHJKZDCABLODEGFMN $.
-  $}
-
-  $( Contraposition.  Theorem *2.16 of [WhiteheadRussell] p. 103.  This version
-     of ~ con3 demonstrates the use of the weak deduction theorem to derive it
-     from ~ con3i .  (Contributed by NM, 27-Jun-2002.) $)
-  con3th $p |- ( ( ph -> ps ) -> ( -. ps -> -. ph ) ) $=
-    ( wi wn wa wo wb id notbid imbi1d imbi2d elimh con3i dedt ) BAABCZBDZADZCBO
-    EAODEFZDZQCBRGZPSQTBRTHZIJARBAOAACARCTBRAUAKARGZARAUBHKAHLMN $.
-
-  $( The consensus theorem.  This theorem and its dual (with ` \/ ` and ` /\ `
-     interchanged) are commonly used in computer logic design to eliminate
-     redundant terms from Boolean expressions.  Specifically, we prove that the
-     term ` ( ps /\ ch ) ` on the left-hand side is redundant.  (Contributed by
-     NM, 16-May-2003.)  (Proof shortened by Andrew Salmon, 13-May-2011.)
-     (Proof shortened by Wolf Lammen, 20-Jan-2013.) $)
-  consensus $p |- ( ( ( ( ph /\ ps ) \/ ( -. ph /\ ch ) ) \/ ( ps /\ ch ) ) <->
-                      ( ( ph /\ ps ) \/ ( -. ph /\ ch ) ) ) $=
-    ( wa wn wo id orc adantrr olc adantrl pm2.61ian jaoi impbii ) ABDZAEZCDZFZB
-    CDZFRRRSRGASRABRCOQHIPCRBQOJKLMRSHN $.
-
-  $( Theorem *4.42 of [WhiteheadRussell] p. 119.  (Contributed by Roy F.
-     Longton, 21-Jun-2005.) $)
-  pm4.42 $p |- ( ph <-> ( ( ph /\ ps ) \/ ( ph /\ -. ps ) ) ) $=
-    ( wa wn wo wb dedlema dedlemb pm2.61i ) BAABCABDCEFBAAGBAAHI $.
 
   ${
     ninba.1 $e |- ph $.
@@ -10007,23 +9911,24 @@ $)
      from which it can be proved by cases.
 
      In classical logic, ~ ax-11o can be derived from this axiom, as can be
-     seen at ~ ax11o . However, the current proof of ~ ax11o is not valid
+     seen at ~ ax11o .  However, the current proof of ~ ax11o is not valid
      intuitionistically.
 
-     Interestingly, if the wff expression substituted for ` ph ` contains no
-     wff variables, the resulting statement _can_ be proved without invoking
-     this axiom.  This means that even though this axiom is _metalogically_
-     independent from the others, it is not _logically_ independent.
-     Specifically, we can prove any wff-variable-free instance of axiom
-     ~ ax-11o (from which the ~ ax-11 instance follows by theorem ~ ax11 .)
-     The proof is by induction on formula length, using ~ ax11eq and ~ ax11el
-     for the basis steps and ~ ax11indn , ~ ax11indi , and ~ ax11inda for the
-     induction steps.
+     In classical logic, this axiom is _metalogically_ independent from the
+     others, but not _logically_ independent.  Lack of logical independence
+     means that if the wff expression substituted for ` ph ` contains no wff
+     variables, the resulting statement _can_ be proved without invoking this
+     axiom.  The current proofs of this are not valid in intuitionistic logic,
+     however.  Specifically, we can prove any wff-variable-free instance of
+     axiom ~ ax-11o (from which the ~ ax-11 instance follows by theorem
+     ~ ax11 .)  The proof is by induction on formula length, using ~ ax11eq and
+     ~ ax11el for the basis steps and ~ ax11indn , ~ ax11indi , and ~ ax11inda
+     for the induction steps.  Many of those theorems rely on classical logic
+     for their proofs.
 
-     Variants of this axiom which are equivalent in classical logic but
-     which have not been shown to be equivalent for intuitionistic logic
-     are ~ ax11v , ~ ax11v2 and ~ ax-11o .  (Contributed by
-     NM, 5-Aug-1993.) $)
+     Variants of this axiom which are equivalent in classical logic but which
+     have not been shown to be equivalent for intuitionistic logic are
+     ~ ax11v , ~ ax11v2 and ~ ax-11o .  (Contributed by NM, 5-Aug-1993.) $)
   ax-11 $a |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) $.
 
   $( Axiom of Variable Substitution for Existence.  This can be derived from
@@ -10360,19 +10265,18 @@ $)
      in an axiom system of Tarski (see Axiom B7' in footnote 1 of
      [KalishMontague] p. 81.)  It is equivalent to axiom scheme C10' in
      [Megill] p. 448 (p. 16 of the preprint); the equivalence is established by
-     ~ ax9o and ~ ax9 .  Another name for this theorem is ~ a9e , which
-     has additional remarks.
+     ~ ax9o and ~ ax9 .  Another name for this theorem is ~ a9e , which has
+     additional remarks.
 
      At least in classical logic, ~ ax-9 can be proved from a weaker version
-     requiring that the variables be
-     distinct, but the current proof of theorem ~ a9wa9 is not valid
-     intuitionistically.  (Contributed by Mario Carneiro,
+     requiring that the variables be distinct, but the current proof of theorem
+     ~ a9wa9 is not valid intuitionistically.  (Contributed by Mario Carneiro,
      31-Jan-2015.) $)
   ax-i9 $a |- E. x x = y $.
 
   $( Derive ~ ax-9 from ~ ax-i9 , the modified version for intuitionistic
-     logic. Although ~ ax-9 does hold intuistionistically, in intuitionistic
-     logic it is weaker than ~ ax-i9 . (Contributed by NM, 3-Feb-2015.) $)
+     logic.  Although ~ ax-9 does hold intuistionistically, in intuitionistic
+     logic it is weaker than ~ ax-i9 .  (Contributed by NM, 3-Feb-2015.) $)
   ax-9 $p |- -. A. x -. x = y $=
     ( cv wceq wn wal wex ax-i9 notnoti alnex mtbir ) ACBCDZEAFLAGZEMABHILAJK $.
 
@@ -13834,59 +13738,6 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d x u v $.  $d y u v $.  $d z u v $.  $d w u v $.
-    $( Basis step for constructing a substitution instance of ~ ax-11o without
-       using ~ ax-11o .  Atomic formula for equality predicate.  (Contributed
-       by NM, 22-Jan-2007.) $)
-    ax11eq $p |- ( -. A. x x = y ->
-               ( x = y -> ( z = w -> A. x ( x = y -> z = w ) ) ) ) $=
-      ( vu vv weq wal wn wi wa 19.26 a1i wb equequ1 equequ2 a4s imbi2d imbi12d
-      exp32 equid ax-gen sylan9bb hba1 albid adantr mpbii sylbir ad2antll ax-12
-      impcom adantrr equtrr alimi syl6 sylbid dral2 ad2antrr mpbid imp biimprcd
-      adantll adantlr ad2antlr wex a9e ax-1 alrimiv adantl im2anan9 syl exlimdv
-      dveeq2 sylibr mpi a1d 4cases ) ACGZAHZADGZAHZABGZAHIZWBCDGZWBWDJZAHZJZJZJ
-      ZVSWAKVRVTKZAHZWIVRVTALWKWCWBWGWKWCWBKZKAAGZWBWMJZAHZJZWGWOWMWNAWMWBAUAMU
-      BMWKWPWGNWLWKWMWDWOWFWJWMWDNAVRWMCAGZVTWDACAOADCPZUCQZWKWNWEAWJAUDWKWMWDW
-      BWSRUESUFUGTUHVSWAIZKZWCWBWGXAWLKVTWBVTJZAHZJZWGWTWLXDVSWTWLKZVTBDGZXCWBV
-      TXFNWTWCABDOUIXEXFXFAHZXCWTWCXFXGJZWBWCWTXHBDAUJUKULXFXBABDAUMUNUOUPVBVSX
-      DWGNWTWLVSVTWDXCWFVRVTWDNAACDOQZXBWEACAVSVTWDWBXIRUQSURUSTVSIZWAKZWCWBWGX
-      KWLKWQWBWQJZAHZJZWGXJWLXNWAXJWLKZWQCBGZXMWBWQXPNXJWCABCPZUIXOXPXPAHZXMXJW
-      CXPXRJZWBXJWCXSCBAUJUTULXPXLAWBWQXPXQVAUNUOUPVCWAXNWGNXJWLWAWQWDXMWFVTWQW
-      DNAWRQZXLWEADAWAWQWDWBXTRUQSVDUSTXJWTKZWHWCYAWGWBYAEDGZEVEWGEDVFYAYBWGEYA
-      FCGZFVEYBWGJZFCVFYAYCYDFYAYCYBWGYAYCYBKZKZFEGZWBYGJZAHZJWGYGYHAYGWBVGVHYF
-      YGWDYIWFYEYGWDNZYAYCYGCEGYBWDFCEOEDCPUCZVIYFYEAHZYIWFNYFYCAHZYBAHZKZYLYAY
-      EYOXJYCYMWTYBYNACFVMADEVMVJUTYCYBALVNYLYHWEAYEAUDYLYGWDWBYEYJAYKQRUEVKSUG
-      TVLVOVLVOVPVPVQ $.
-  $}
-
-  ${
-    $d x u v $.  $d y u v $.  $d z u v $.  $d w u v $.
-    $( Basis step for constructing a substitution instance of ~ ax-11o without
-       using ~ ax-11o .  Atomic formula for membership predicate.  (Contributed
-       by NM, 22-Jan-2007.) $)
-    ax11el $p |- ( -. A. x x = y ->
-               ( x = y -> ( z e. w -> A. x ( x = y -> z e. w ) ) ) ) $=
-      ( vv vu weq wal wn wel wi wa wb elequ1 elequ2 adantl imbi2d imbi12d exp32
-      a4s 19.26 bitrd ax-17 dvelimfALT biimprcd alimi syl6 adantr sylan9bb hba1
-      sylbid albid mpbid sylbir ad2antll ax-15 impcom adantrr adantll dral2 imp
-      ad2antrr adantlr ad2antlr wex a9e ax-1 alrimiv dveeq2 im2anan9 sylibr syl
-      mpbii exlimdv mpi a1d 4cases ) ACGZAHZADGZAHZABGZAHIZWBCDJZWBWDKZAHZKZKZK
-      ZVSWALVRVTLZAHZWIVRVTAUAWKWCWBWGWKWCWBLZLAAJZWBWMKZAHZKZWGWLWPWKWLWMBBJZW
-      OWBWMWQMWCWBWMBAJWQABANABBOUBZPWCWQWOKWBWCWQWQAHWOEEJZWQABEWSAUCWQEUCEBGW
-      SBEJWQEBENEBBOUBUDWQWNAWBWMWQWRUEUFUGUHUKPWKWPWGMWLWKWMWDWOWFWJWMWDMAVRWM
-      CAJZVTWDACANADCOZUITZWKWNWEAWJAUJWKWMWDWBXBQULRUHUMSUNVSWAIZLZWCWBWGXDWLL
-      ADJZWBXEKZAHZKZWGXCWLXHVSXCWLLZXEBDJZXGWBXEXJMXCWCABDNZUOXIXJXJAHZXGXCWCX
-      JXLKZWBWCXCXMBDAUPUQURXJXFAWBXEXJXKUEUFUGUKUSVSXHWGMXCWLVSXEWDXGWFVRXEWDM
-      AACDNTZXFWEACAVSXEWDWBXNQUTRVBUMSVSIZWALZWCWBWGXPWLLWTWBWTKZAHZKZWGXOWLXS
-      WAXOWLLZWTCBJZXRWBWTYAMXOWCABCOZUOXTYAYAAHZXRXOWCYAYCKZWBXOWCYDCBAUPVAURY
-      AXQAWBWTYAYBUEUFUGUKVCWAXSWGMXOWLWAWTWDXRWFVTWTWDMAXATZXQWEADAWAWTWDWBYEQ
-      UTRVDUMSXOXCLZWHWCYFWGWBYFFDGZFVEWGFDVFYFYGWGFYFECGZEVEYGWGKZECVFYFYHYIEY
-      FYHYGWGYFYHYGLZLZEFJZWBYLKZAHZKWGYLYMAYLWBVGVHYKYLWDYNWFYJYLWDMZYFYHYLCFJ
-      YGWDECFNFDCOUIZPYKYJAHZYNWFMYKYHAHZYGAHZLZYQYFYJYTXOYHYRXCYGYSACEVIADFVIV
-      JVAYHYGAUAVKYQYMWEAYJAUJYQYLWDWBYJYOAYPTQULVLRVMSVNVOVNVOVPVPVQ $.
-  $}
-
-  ${
     ax11f.1 $e |- ( ph -> A. x ph ) $.
     $( Basis step for constructing a substitution instance of ~ ax-11o without
        using ~ ax-11o .  We can start with any formula ` ph ` in which ` x ` is
@@ -14933,6 +14784,77 @@ $)
       ( vy wex wn cv wceq weu wal hbeu1 hba1 wi exists1 ax-16 sylbi exlimd alex
       com12 syl6ib con2d imp ) ABDZAEBDZBFZUDGZBHZEUBUFUCUBUFABIZUCEUFUBUGUFAUG
       BUEBJABKUFUDCFGBIAUGLBCMABCNOPRABQSTUA $.
+  $}
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+Classical (not intuitionistic) results
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+  ${
+    4cases.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    4cases.2 $e |- ( ( ph /\ -. ps ) -> ch ) $.
+    4cases.3 $e |- ( ( -. ph /\ ps ) -> ch ) $.
+    4cases.4 $e |- ( ( -. ph /\ -. ps ) -> ch ) $.
+    $( Inference eliminating two antecedents from the four possible cases that
+       result from their true/false combinations.  (Contributed by NM,
+       25-Oct-2003.) $)
+    4cases $p |- ch $=
+      ( pm2.61ian wn pm2.61i ) BCABCDFHABICEGHJ $.
+  $}
+
+  ${
+    $d x u v $.  $d y u v $.  $d z u v $.  $d w u v $.
+    $( Basis step for constructing a substitution instance of ~ ax-11o without
+       using ~ ax-11o .  Atomic formula for equality predicate.  (Contributed
+       by NM, 22-Jan-2007.) $)
+    ax11eq $p |- ( -. A. x x = y ->
+               ( x = y -> ( z = w -> A. x ( x = y -> z = w ) ) ) ) $=
+      ( vu vv weq wal wn wi wa 19.26 a1i wb equequ1 equequ2 a4s imbi2d imbi12d
+      exp32 equid ax-gen sylan9bb hba1 albid adantr mpbii sylbir ad2antll ax-12
+      impcom adantrr equtrr alimi syl6 sylbid dral2 ad2antrr mpbid imp biimprcd
+      adantll adantlr ad2antlr wex a9e ax-1 alrimiv adantl im2anan9 syl exlimdv
+      dveeq2 sylibr mpi a1d 4cases ) ACGZAHZADGZAHZABGZAHIZWBCDGZWBWDJZAHZJZJZJ
+      ZVSWAKVRVTKZAHZWIVRVTALWKWCWBWGWKWCWBKZKAAGZWBWMJZAHZJZWGWOWMWNAWMWBAUAMU
+      BMWKWPWGNWLWKWMWDWOWFWJWMWDNAVRWMCAGZVTWDACAOADCPZUCQZWKWNWEAWJAUDWKWMWDW
+      BWSRUESUFUGTUHVSWAIZKZWCWBWGXAWLKVTWBVTJZAHZJZWGWTWLXDVSWTWLKZVTBDGZXCWBV
+      TXFNWTWCABDOUIXEXFXFAHZXCWTWCXFXGJZWBWCWTXHBDAUJUKULXFXBABDAUMUNUOUPVBVSX
+      DWGNWTWLVSVTWDXCWFVRVTWDNAACDOQZXBWEACAVSVTWDWBXIRUQSURUSTVSIZWAKZWCWBWGX
+      KWLKWQWBWQJZAHZJZWGXJWLXNWAXJWLKZWQCBGZXMWBWQXPNXJWCABCPZUIXOXPXPAHZXMXJW
+      CXPXRJZWBXJWCXSCBAUJUTULXPXLAWBWQXPXQVAUNUOUPVCWAXNWGNXJWLWAWQWDXMWFVTWQW
+      DNAWRQZXLWEADAWAWQWDWBXTRUQSVDUSTXJWTKZWHWCYAWGWBYAEDGZEVEWGEDVFYAYBWGEYA
+      FCGZFVEYBWGJZFCVFYAYCYDFYAYCYBWGYAYCYBKZKZFEGZWBYGJZAHZJWGYGYHAYGWBVGVHYF
+      YGWDYIWFYEYGWDNZYAYCYGCEGYBWDFCEOEDCPUCZVIYFYEAHZYIWFNYFYCAHZYBAHZKZYLYAY
+      EYOXJYCYMWTYBYNACFVMADEVMVJUTYCYBALVNYLYHWEAYEAUDYLYGWDWBYEYJAYKQRUEVKSUG
+      TVLVOVLVOVPVPVQ $.
+  $}
+
+  ${
+    $d x u v $.  $d y u v $.  $d z u v $.  $d w u v $.
+    $( Basis step for constructing a substitution instance of ~ ax-11o without
+       using ~ ax-11o .  Atomic formula for membership predicate.  (Contributed
+       by NM, 22-Jan-2007.) $)
+    ax11el $p |- ( -. A. x x = y ->
+               ( x = y -> ( z e. w -> A. x ( x = y -> z e. w ) ) ) ) $=
+      ( vv vu weq wal wn wel wi wa wb elequ1 elequ2 adantl imbi2d imbi12d exp32
+      a4s 19.26 bitrd ax-17 dvelimfALT biimprcd alimi syl6 adantr sylan9bb hba1
+      sylbid albid mpbid sylbir ad2antll ax-15 impcom adantrr adantll dral2 imp
+      ad2antrr adantlr ad2antlr wex a9e ax-1 alrimiv dveeq2 im2anan9 sylibr syl
+      mpbii exlimdv mpi a1d 4cases ) ACGZAHZADGZAHZABGZAHIZWBCDJZWBWDKZAHZKZKZK
+      ZVSWALVRVTLZAHZWIVRVTAUAWKWCWBWGWKWCWBLZLAAJZWBWMKZAHZKZWGWLWPWKWLWMBBJZW
+      OWBWMWQMWCWBWMBAJWQABANABBOUBZPWCWQWOKWBWCWQWQAHWOEEJZWQABEWSAUCWQEUCEBGW
+      SBEJWQEBENEBBOUBUDWQWNAWBWMWQWRUEUFUGUHUKPWKWPWGMWLWKWMWDWOWFWJWMWDMAVRWM
+      CAJZVTWDACANADCOZUITZWKWNWEAWJAUJWKWMWDWBXBQULRUHUMSUNVSWAIZLZWCWBWGXDWLL
+      ADJZWBXEKZAHZKZWGXCWLXHVSXCWLLZXEBDJZXGWBXEXJMXCWCABDNZUOXIXJXJAHZXGXCWCX
+      JXLKZWBWCXCXMBDAUPUQURXJXFAWBXEXJXKUEUFUGUKUSVSXHWGMXCWLVSXEWDXGWFVRXEWDM
+      AACDNTZXFWEACAVSXEWDWBXNQUTRVBUMSVSIZWALZWCWBWGXPWLLWTWBWTKZAHZKZWGXOWLXS
+      WAXOWLLZWTCBJZXRWBWTYAMXOWCABCOZUOXTYAYAAHZXRXOWCYAYCKZWBXOWCYDCBAUPVAURY
+      AXQAWBWTYAYBUEUFUGUKVCWAXSWGMXOWLWAWTWDXRWFVTWTWDMAXATZXQWEADAWAWTWDWBYEQ
+      UTRVDUMSXOXCLZWHWCYFWGWBYFFDGZFVEWGFDVFYFYGWGFYFECGZEVEYGWGKZECVFYFYHYIEY
+      FYHYGWGYFYHYGLZLZEFJZWBYLKZAHZKWGYLYMAYLWBVGVHYKYLWDYNWFYJYLWDMZYFYHYLCFJ
+      YGWDECFNFDCOUIZPYKYJAHZYNWFMYKYHAHZYGAHZLZYQYFYJYTXOYHYRXCYGYSACEVIADFVIV
+      JVAYHYGAUAVKYQYMWEAYJAUJYQYLWDWBYJYOAYPTQULVLRVMSVNVOVNVOVPVPVQ $.
   $}
 
 $(
