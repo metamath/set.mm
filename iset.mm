@@ -14719,6 +14719,40 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+Constructive set theory
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+  $( This is a very abbreviated version, enough to keep mmj2 happy. $)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                   Class abstractions (a.k.a. class builders)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare variable symbols that will be used to represent classes.  Note
+     that later on ` R ` , ` S ` , ` F ` and ` G ` denote relations and
+     functions, but these letters serve as mnemonics only and in fact behave
+     no differently from the variables ` A ` through ` D ` . $)
+  $v A $.
+  $v B $.
+
+  $( Let ` A ` be a class variable. $)
+  cA $f class A $.
+  $( Let ` B ` be a class variable. $)
+  cB $f class B $.
+
+  $v f $.
+  $v g $.
+
+  $( Let ` f ` be an individual variable. $)
+  vf $f set f $.
+  $( Let ` g ` be an individual variable. $)
+  vg $f set g $.
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 Classical (not intuitionistic) results
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
