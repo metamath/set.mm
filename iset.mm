@@ -10750,12 +10750,6 @@ $)
     ( wi wal wex hba1 hbe1 19.8a imim2i a4s exlimd ) ABDZCEABCFZCMCGBCHMANDCBNA
     BCIJKL $.
 
-  $( Obsolete proof of ~ exim as of 4-Jul-2014.  (Contributed by NM,
-     5-Aug-1993.) $)
-  eximOLD $p |- ( A. x ( ph -> ps ) -> ( E. x ph -> E. x ps ) ) $=
-    ( wi wal wn wex con3 al2imi con3d df-ex 3imtr4g ) ABDZCEZAFZCEZFBFZCEZFACGB
-    CGNRPMQOCABHIJACKBCKL $.
-
   ${
     eximi.1 $e |- ( ph -> ps ) $.
     $( Inference adding existential quantifier to antecedent and consequent.
