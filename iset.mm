@@ -10876,11 +10876,6 @@ $)
   alexn $p |- ( A. x E. y -. ph <-> -. E. x A. y ph ) $=
     ( wn wex wal exnal albii alnex bitri ) ADCEZBFACFZDZBFLBEDKMBACGHLBIJ $.
 
-  $( Theorem *11.51 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
-     Salmon, 24-May-2011.)  (Proof shortened by Wolf Lammen, 25-Sep-2014.) $)
-  2exnexn $p |- ( E. x A. y ph <-> -. A. x E. y -. ph ) $=
-    ( wn wex wal alexn con2bii ) ADCEBFACFBEABCGH $.
-
   $( A transformation of quantifiers and logical connectives.  (Contributed by
      NM, 25-Mar-1996.)  (Proof shortened by Wolf Lammen, 4-Sep-2014.) $)
   exanali $p |- ( E. x ( ph /\ -. ps ) <-> -. A. x ( ph -> ps ) ) $=
@@ -14710,6 +14705,11 @@ $)
   2nalexn $p |- ( -. A. x A. y ph <-> E. x E. y -. ph ) $=
     ( wn wex wal df-ex alex albii xchbinxr bicomi ) ADCEZBEZACFZBFZDMLDZBFOLBGN
     PBACHIJK $.
+
+  $( Theorem *11.51 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
+     Salmon, 24-May-2011.)  (Proof shortened by Wolf Lammen, 25-Sep-2014.) $)
+  2exnexn $p |- ( E. x A. y ph <-> -. A. x E. y -. ph ) $=
+    ( wn wex wal alexn con2bii ) ADCEBFACFBEABCGH $.
 
   ${
     4cases.1 $e |- ( ( ph /\ ps ) -> ch ) $.
