@@ -10871,11 +10871,6 @@ $)
   exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
     ( wal wn wex alex con2bii ) ABCADBEABFG $.
 
-  $( A relationship between two quantifiers and negation.  (Contributed by NM,
-     18-Aug-1993.) $)
-  alexn $p |- ( A. x E. y -. ph <-> -. E. x A. y ph ) $=
-    ( wn wex wal exnal albii alnex bitri ) ADCEZBFACFZDZBFLBEDKMBACGHLBIJ $.
-
   $( A transformation of quantifiers and logical connectives.  (Contributed by
      NM, 25-Mar-1996.)  (Proof shortened by Wolf Lammen, 4-Sep-2014.) $)
   exanali $p |- ( E. x ( ph /\ -. ps ) <-> -. A. x ( ph -> ps ) ) $=
@@ -14705,6 +14700,11 @@ $)
   2nalexn $p |- ( -. A. x A. y ph <-> E. x E. y -. ph ) $=
     ( wn wex wal df-ex alex albii xchbinxr bicomi ) ADCEZBEZACFZBFZDMLDZBFOLBGN
     PBACHIJK $.
+
+  $( A relationship between two quantifiers and negation.  (Contributed by NM,
+     18-Aug-1993.) $)
+  alexn $p |- ( A. x E. y -. ph <-> -. E. x A. y ph ) $=
+    ( wn wex wal exnal albii alnex bitri ) ADCEZBFACFZDZBFLBEDKMBACGHLBIJ $.
 
   $( Theorem *11.51 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
      Salmon, 24-May-2011.)  (Proof shortened by Wolf Lammen, 25-Sep-2014.) $)
