@@ -10881,12 +10881,6 @@ $)
   2exnexn $p |- ( E. x A. y ph <-> -. A. x E. y -. ph ) $=
     ( wn wex wal alexn con2bii ) ADCEBFACFBEABCGH $.
 
-  $( Obsolete proof of ~ 2exnexn as of 25-Sep-2014.  (Contributed by NM,
-     24-May-2011.) $)
-  2exnexnOLD $p |- ( E. x A. y ph <-> -. A. x E. y -. ph ) $=
-    ( wal wex wn df-ex exnal albii notbii bitr4i ) ACDZBELFZBDZFAFCEZBDZFLBGPNO
-    MBACHIJK $.
-
   $( A transformation of quantifiers and logical connectives.  (Contributed by
      NM, 25-Mar-1996.)  (Proof shortened by Wolf Lammen, 4-Sep-2014.) $)
   exanali $p |- ( E. x ( ph /\ -. ps ) <-> -. A. x ( ph -> ps ) ) $=
