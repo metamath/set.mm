@@ -10750,12 +10750,6 @@ $)
     ( wi wal wex hba1 hbe1 19.8a imim2i a4s exlimd ) ABDZCEABCFZCMCGBCHMANDCBNA
     BCIJKL $.
 
-  $( Obsolete proof of ~ exim as of 4-Jul-2014.  (Contributed by NM,
-     5-Aug-1993.) $)
-  eximOLD $p |- ( A. x ( ph -> ps ) -> ( E. x ph -> E. x ps ) ) $=
-    ( wi wal wn wex con3 al2imi con3d df-ex 3imtr4g ) ABDZCEZAFZCEZFBFZCEZFACGB
-    CGNRPMQOCABHIJACKBCKL $.
-
   ${
     eximi.1 $e |- ( ph -> ps ) $.
     $( Inference adding existential quantifier to antecedent and consequent.
@@ -10873,31 +10867,9 @@ $)
   alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
     ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
 
-  $( Part of theorem *11.5 in [WhiteheadRussell] p. 164.  (Contributed by
-     Andrew Salmon, 24-May-2011.) $)
-  2nalexn $p |- ( -. A. x A. y ph <-> E. x E. y -. ph ) $=
-    ( wn wex wal df-ex alex albii xchbinxr bicomi ) ADCEZBEZACFZBFZDMLDZBFOLBGN
-    PBACHIJK $.
-
   $( Theorem 19.14 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
     ( wal wn wex alex con2bii ) ABCADBEABFG $.
-
-  $( A relationship between two quantifiers and negation.  (Contributed by NM,
-     18-Aug-1993.) $)
-  alexn $p |- ( A. x E. y -. ph <-> -. E. x A. y ph ) $=
-    ( wn wex wal exnal albii alnex bitri ) ADCEZBFACFZDZBFLBEDKMBACGHLBIJ $.
-
-  $( Theorem *11.51 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
-     Salmon, 24-May-2011.)  (Proof shortened by Wolf Lammen, 25-Sep-2014.) $)
-  2exnexn $p |- ( E. x A. y ph <-> -. A. x E. y -. ph ) $=
-    ( wn wex wal alexn con2bii ) ADCEBFACFBEABCGH $.
-
-  $( Obsolete proof of ~ 2exnexn as of 25-Sep-2014.  (Contributed by NM,
-     24-May-2011.) $)
-  2exnexnOLD $p |- ( E. x A. y ph <-> -. A. x E. y -. ph ) $=
-    ( wal wex wn df-ex exnal albii notbii bitr4i ) ACDZBELFZBDZFAFCEZBDZFLBGPNO
-    MBACHIJK $.
 
   $( A transformation of quantifiers and logical connectives.  (Contributed by
      NM, 25-Mar-1996.)  (Proof shortened by Wolf Lammen, 4-Sep-2014.) $)
@@ -13668,227 +13640,6 @@ $( The theorems in this section make use of the $d statement. $)
       ( vw wel ax17el elequ2 dvelimfALT ) CDECBEABDCDAFCBDFDBCGH $.
   $}
 
-  ${
-    ax11f.1 $e |- ( ph -> A. x ph ) $.
-    $( Basis step for constructing a substitution instance of ~ ax-11o without
-       using ~ ax-11o .  We can start with any formula ` ph ` in which ` x ` is
-       not free.  (Contributed by NM, 21-Jan-2007.) $)
-    ax11f $p |- ( -. A. x x = y ->
-               ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $=
-      ( weq wal wn wi ax-1 alrimi a1ii ) BCEZBFGLALAHZBFHAMBDALIJK $.
-  $}
-
-  ${
-    ax11indn.1 $e |- ( -. A. x x = y ->
-               ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $.
-    $( Induction step for constructing a substitution instance of ~ ax-11o
-       without using ~ ax-11o .  Negation case.  (Contributed by NM,
-       21-Jan-2007.) $)
-    ax11indn $p |- ( -. A. x x = y ->
-               ( x = y -> ( -. ph -> A. x ( x = y -> -. ph ) ) ) ) $=
-      ( weq wal wn wi wex 19.8a exanali hbn1 con3 syl6 com23 alrimd syl5bi syl5
-      wa exp3a ) BCEZBFGZUAAGZUAUCHZBFZUAUCSZUFBIZUBUEUFBJUGUAAHZBFZGZUBUEUAABK
-      UBUJUDBUABLUHBLUBUAUJUCUBUAAUIHUJUCHDAUIMNOPQRT $.
-
-    ${
-      ax11indi.2 $e |- ( -. A. x x = y ->
-                 ( x = y -> ( ps -> A. x ( x = y -> ps ) ) ) ) $.
-      $( Induction step for constructing a substitution instance of ~ ax-11o
-         without using ~ ax-11o .  Implication case.  (Contributed by NM,
-         21-Jan-2007.) $)
-      ax11indi $p |- ( -. A. x x = y ->
-           ( x = y -> ( ( ph -> ps ) -> A. x ( x = y -> ( ph -> ps ) ) ) ) ) $=
-        ( weq wal wn wi wa ax11indn imp pm2.21 imim2i alimi syl6 ax-1 jad ex )
-        CDGZCHIZUAABJZUAUCJZCHZJUBUAKZABUEUFAIZUAUGJZCHZUEUBUAUGUIJACDELMUHUDCU
-        GUCUAABNOPQUFBUABJZCHZUEUBUABUKJFMUJUDCBUCUABAROPQST $.
-    $}
-  $}
-
-  ${
-    ax11indalem.1 $e |- ( -. A. x x = y ->
-               ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $.
-    $( Lemma for ~ ax11inda2 and ~ ax11inda .  (Contributed by NM,
-       24-Jan-2007.) $)
-    ax11indalem $p |- ( -. A. y y = z -> ( -. A. x x = y ->
-               ( x = y -> ( A. z ph -> A. x ( x = y -> A. z ph ) ) ) ) ) $=
-      ( weq wal wn wi ax-1 a5i a1i biidd a1d wa alequcom con3i imp hbnae hban
-      dral1 imbi2d dral2 3imtr4d alequcoms adantr simplr ax-12 syl2an hba1 ax-4
-      adantlr sylan2 alimd syl2anc ax-7 alrimi 19.21t syl albid syl5ib ad2antrr
-      wb syld exp31 pm2.61ian ) BDFBGZCDFCGZHZBCFZBGHZVJADGZVJVLIZBGZIZIZIZVGVQ
-      VIVGVPVKVGVOVJVODBDBFDGZABGZVJVSIZBGZVLVNVSWAIVRAVTBVSVJJKLAADBVRAMUAZVMV
-      TDBBVRVLVSVJWBUBUCUDUENNUFVGHZVIOZVKVJVOWDVKOVJOZVLVJAIZBGZDGZVNWEVKVJDGZ
-      VLWHIWDVKVJUGWDVJWIVKWDVJWIWCVRHZDCFDGZHZVJWIIZVIVRVGDBPQWKVHDCPQWJWLWMBC
-      DUHRUIZRULVKWIOAWGDVKWIDBCDSVJDUJTWIVKVJAWGIZVJDUKVKVJWOERUMUNUOWDWHVNIVK
-      VJWHWFDGZBGWDVNWFDBUPWDWPVMBWCVIBBDBSCDBSTWDWMDGWPVMVCWDWMDWCVIDBDDSCDDST
-      WNUQVJADURUSUTVAVBVDVEVF $.
-  $}
-
-  ${
-    $d z y $.
-    ax11inda2.1 $e |- ( -. A. x x = y ->
-               ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $.
-    $( A proof of ~ ax11inda2 that is slightly more direct.  (Contributed by
-       NM, 4-May-2007.) $)
-    ax11inda2ALT $p |- ( -. A. x x = y ->
-               ( x = y -> ( A. z ph -> A. x ( x = y -> A. z ph ) ) ) ) $=
-      ( weq wal wn wi ax-1 a5i a1i biidd dral1 imbi2d dral2 a1d wa imp hbnae wb
-      3imtr4d alequcoms simplr dveeq1 nalequcoms adantlr hba1 hban sylan2 alimd
-      ax-4 syl2anc ax-7 alrimi 19.21t albid syl5ib ad2antrr syld exp31 pm2.61i
-      syl ) BDFBGZBCFZBGHZVEADGZVEVGIZBGZIZIZIVDVKVFVDVJVEVJDBDBFDGZABGZVEVMIZB
-      GZVGVIVMVOIVLAVNBVMVEJKLAADBVLAMNZVHVNDBBVLVGVMVEVPOPUBUCQQVDHZVFVEVJVQVF
-      RVERZVGVEAIZBGZDGZVIVRVFVEDGZVGWAIVQVFVEUDVQVEWBVFVQVEWBVEWBIZDBDBCUEUFZS
-      UGVFWBRAVTDVFWBDBCDTVEDUHUIWBVFVEAVTIZVEDULVFVEWEESUJUKUMVQWAVIIVFVEWAVSD
-      GZBGVQVIVSDBUNVQWFVHBBDBTVQWCDGWFVHUAVQWCDBDDTWDUOVEADUPVCUQURUSUTVAVB $.
-
-    $( Induction step for constructing a substitution instance of ~ ax-11o
-       without using ~ ax-11o .  Quantification case.  When ` z ` and ` y ` are
-       distinct, this theorem avoids the dummy variables needed by the more
-       general ~ ax11inda .  (Contributed by NM, 24-Jan-2007.) $)
-    ax11inda2 $p |- ( -. A. x x = y ->
-               ( x = y -> ( A. z ph -> A. x ( x = y -> A. z ph ) ) ) ) $=
-      ( weq wal wn wi ax-1 a16g syl5 a1d ax11indalem pm2.61i ) CDFCGZBCFZBGHZQA
-      DGZQSIZBGZIZIZIPUCRPUBQSTPUASQJTCDBKLMMABCDENO $.
-  $}
-
-  ${
-    $d w ph $.  $d w x $.  $d w y $.  $d w z $.
-    ax11inda.1 $e |- ( -. A. x x = w ->
-               ( x = w -> ( ph -> A. x ( x = w -> ph ) ) ) ) $.
-    $( Induction step for constructing a substitution instance of ~ ax-11o
-       without using ~ ax-11o .  Quantification case.  (When ` z ` and ` y `
-       are distinct, ~ ax11inda2 may be used instead to avoid the dummy
-       variable ` w ` in the proof.)  (Contributed by NM, 24-Jan-2007.) $)
-    ax11inda $p |- ( -. A. x x = y ->
-               ( x = y -> ( A. z ph -> A. x ( x = y -> A. z ph ) ) ) ) $=
-      ( weq wal wn wi wex a9e wa ax11inda2 wb dveeq2 imp albid syl imbi12d hba1
-      equequ2 a4s notbid adantl imbi1d imbi2d mpbii ex exlimdv mpi pm2.43i ) BC
-      GZBHZIZUMADHZUMUPJZBHZJZJZUOECGZEKUOUTJZECLUOVAVBEUOVAVBUOVAMZBEGZBHZIZVD
-      UPVDUPJZBHZJZJZJVBABEDFNVCVFUOVJUTVCVABHZVFUOOUOVAVKBCEPQZVKVEUNVKVDUMBVA
-      BUAZVAVDUMOZBECBUBZUCZRUDSVCVDUMVIUSVAVNUOVOUEVCVHURUPVCVKVHUROVLVKVGUQBV
-      MVKVDUMUPVPUFRSUGTTUHUIUJUKUL $.
-  $}
-
-  $( Part of a study related to ~ ax-12 .  The consequent introduces a new
-     variable ` z ` .  There are no distinct variable restrictions.
-     (Contributed by NM, 14-Jan-2008.) $)
-  a12stdy1 $p |- ( A. x x = y -> E. x y = z ) $=
-    ( weq wal wex a9e wn ax-10o con3d df-ex 3imtr4g mpi ) ABDAEZBCDZBFZOAFZBCGN
-    OHZBEZHRAEZHPQNTSRABIJOBKOAKLM $.
-
-  $( Part of a study related to ~ ax-12 .  The consequent is quantified with a
-     different variable.  There are no distinct variable restrictions.
-     (Contributed by NM, 14-Jan-2008.) $)
-  a12stdy2 $p |- ( A. z ( z = x /\ x = y ) -> A. y y = x ) $=
-    ( weq wa wal 19.26 ax-10o alequcom syl6 imp sylbi ) CADZABDZECFMCFZNCFZEBAD
-    BFZMNCGOPQOPNAFQNCAHABIJKL $.
-
-  $( Part of a study related to ~ ax-12 .  The consequent introduces two new
-     variables.  There are no distinct variable restrictions.  (Contributed by
-     NM, 14-Jan-2008.) $)
-  a12stdy3 $p |- ( A. z ( z = x /\ x = y ) -> A. v E. y x = w ) $=
-    ( weq wa wal wex a12stdy2 hbae a12stdy1 alimi 3syl ) CAFABFGCHBAFBHZOEHADFB
-    IZEHABCJBAEKOPEBADLMN $.
-
-  $( Part of a study related to ~ ax-12 .  The second antecedent of ~ ax-12 is
-     replaced.  There are no distinct variable restrictions.  (Contributed by
-     NM, 14-Jan-2008.) $)
-  a12stdy4 $p |- ( -. A. z z = x -> ( A. y z = x ->
-           ( x = y -> A. z x = y ) ) ) $=
-    ( weq wal wn wi wa ax-10o alequcoms con3d impcom pm2.21d ax-12 a1dd pm2.61d
-    ex ) CADZCEZFZCBDCEZRBEZABDZUCCEGZGZTUAUETUAHUBUDUATUBFUAUBSUBSGBCRBCIJKLMQ
-    TUAFUDUBABCNOP $.
-
-  $( Proof of first hypothesis of ~ a12study .  (Contributed by NM,
-     15-Jan-2008.) $)
-  a12lem1 $p |- ( -. A. z z = y ->
-                  ( A. z ( z = x -> z = y ) -> x = y ) ) $=
-    ( weq wal wn wi wb equequ1 imbi12d a4s dral2 equid a1bi biimpri syl6bi hbn1
-    a1d wa hban hbth a1i ax-12 imp hbimd alrimi equtr ax-8 imim12d ax-gen 19.26
-    a4imt sylbir sylancl mpii ex pm2.61i ) CADZCEZCBDZCEFZURUTGZCEZABDZGZGUSVEV
-    AUSVCAADZVDGZCEZVDVBVGCACURVBVGHCURURVFUTVDCAAICABIJKLVGVDCVDVGVFVDAMZNOKPR
-    USFZVAVEVJVASZVCVFVDVIVKVGVHGZCEZURVBVGGGZCEZVCVGGZVKVLCVJVACURCQUTCQTZVKVF
-    VDCVQVFVFCEGVKVFCVIUAUBVJVAVDVDCEGABCUCUDUEUFVNCURVFURUTVDCAAUGCABUHUIUJVMV
-    OSVLVNSCEVPVLVNCUKVBVGCAULUMUNUOUPUQ $.
-
-  $( Proof of second hypothesis of ~ a12study .  (Contributed by NM,
-     15-Jan-2008.) $)
-  a12lem2 $p |- ( A. z ( z = x -> -. z = y ) -> -. x = y ) $=
-    ( weq wn wi wal wa wex equcom imbi1i imnan bitri albii alnex equvini con3i
-    sylbi ) CADZCBDZEZFZCGZACDZTHZCIZEZABDZEUCUEEZCGUGUBUICUBUDUAFUISUDUACAJKUD
-    TLMNUECOMUHUFABCPQR $.
-
-  ${
-    a12study.1 $e |- ( -. A. z z = y
-         -> ( A. z ( z = x -> z = y ) -> x = y ) ) $.
-    a12study.2 $e |- ( A. z ( z = x -> -. z = y ) -> -. x = y ) $.
-    $( Rederivation of axiom ~ ax-12 from two shorter formulas, without using
-       ~ ax-12 .  See ~ a12lem1 and ~ a12lem2 for the proofs of the hypotheses
-       (using ~ ax-12 ).  This is the only known breakdown of ~ ax-12 into
-       shorter formulas.  See ~ a12studyALT for an alternate proof.  Note that
-       the proof depends on ~ ax-11o , whose proof ~ ax11o depends on ~ ax-12 ,
-       meaning that we would have to replace ~ ax-11 with ~ ax-11o in an
-       axiomatization that uses the hypotheses in place of ~ ax-12 .  Whether
-       this can be avoided is an open problem.  (Contributed by NM,
-       15-Jan-2008.) $)
-    a12study $p |- ( -. A. z z = x -> ( -. A. z z = y
-                     -> ( x = y -> A. z x = y ) ) ) $=
-      ( weq wa wex wal wn imnan equid1 ax-8 mpi imim1i sylbir alimi hbn1 hba1
-      wi con2i df-ex sylibr hban ax-11o syl5 imp3a alrimd sylan9 exlimd ex syl7
-      syl ) ABFZACFZCBFZGZCHZCAFZCIJZUPCIJZUNCIZUNUQJZCIZJURVDUNVDUSUPJZTZCIUNJ
-      VCVFCVCUOVETVFUOUPKUSUOVEUSCCFUOCLCACMNOPQEUMUAUQCUBUCUTVAURVBTUTVAGUQVBC
-      UTVACUSCRUPCRZUDUNCSUTUQUSUPTZCIZVAVBUTUOUPVIUOUSUTUPVITUOAAFUSALACAMNUPC
-      AUEUFUGVAVIUNCVGVHCSDUHUIUJUKUL $.
-
-    $( Alternate proof of ~ a12study , also without using ~ ax-12 .
-       (Contributed by NM, 17-Jan-2008.) $)
-    a12studyALT $p |- ( -. A. z z = x -> ( -. A. z z = y
-             -> ( x = y -> A. z x = y ) ) ) $=
-      ( weq wal wn wi wa hbn1 hban con3d wex exnal hba1 ax-11o ax11indn syl5bir
-      annim a5i syl8 imp3a exlimd sylan9r hbnd notnot albii 3imtr4g ex ) CAFZCG
-      HZCBFZCGHZABFZUOCGZIULUNJZUOHZHZUSCGUOUPUQURCULUNCUKCKZUMCKLUNURUKUMIZCGZ
-      HZULURCGZUNVBUODMVCVAHZCNULVDVACOULVEVDCUTURCPVEUKUMHZJULVDUKUMTULUKVFVDU
-      LUKVFUKVFIZCGVDUMCAUMCAQRVGURCEUAUBUCSUDSUEUFUOUGZUOUSCVHUHUIUJ $.
-  $}
-
-  ${
-    $d w x $.  $d w y $.  $d w z $.
-    a12study2.1 $e |- ( -. A. x x = z -> ( w = z -> A. x w = z ) ) $.
-    a12study2.2 $e |- ( -. A. x x = y -> ( w = y -> A. x w = y ) ) $.
-    $( Reprove ~ ax-12 using ~ dvelimfALT2 , showing that ~ ax-12 can be
-       replaced by ~ dveeq2 (whose needed instances are the hypotheses here) if
-       we allow distinct variables in axioms other than ~ ax-17 .  (Contributed
-       by Andrew Salmon, 21-Jul-2011.) $)
-    a12study2 $p |- ( -. A. x x = y
-      -> ( -. A. x x = z -> ( y = z -> A. x y = z ) ) ) $=
-      ( cv wceq wal wn hbn1 hbim1 ax-17 equequ1 imbi2d dvelimfALT2 19.21 syl6ib
-      wi pm2.86d ) AGZBGZHAIJZUACGZHZAIJZUBUDHZUGAIZUCUFUGSZUIAIUFUHSUFDGZUDHZS
-      UIABDUFUKAUEAKZELUIDMUJUBHUKUGUFDBCNOFPUFUGAULQRT $.
-  $}
-
-  ${
-    a12study3.1 $e |- ( x = y -> E. z ( x = z /\ z = y ) ) $.
-    a12study3.2 $e |- ( A. z ( z = x <-> z = y ) -> x = y ) $.
-    $( Rederivation of axiom ~ ax-12 from two other formulas, without using
-       ~ ax-12 .  See ~ equvini and ~ equveli for the proofs of the hypotheses
-       (using ~ ax-12 ).  Although the second hypothesis (when expanded to
-       primitives) is longer than ~ ax-12 , an open problem is whether it can
-       be derived without ~ ax-12 or from a simpler axiom.
-
-       Note also that the proof depends on ~ ax-11o , whose proof ~ ax11o
-       depends on ~ ax-12 , meaning that we would have to replace ~ ax-11 with
-       ~ ax-11o in an axiomatization that uses the hypotheses in place of
-       ~ ax-12 .  Whether this can be avoided is an open problem.  (Contributed
-       by NM, 1-Mar-2013.) $)
-    a12study3 $p |- ( -. A. z z = x -> ( -. A. z z = y
-       -> ( x = y -> A. z x = y ) ) ) $=
-      ( weq wal wn wi wa wb wex hbn1 hba1 equid1 ax-8 ax-11o syl5 imp3a exlimd
-      mpi syl7 ancomsd anim12ii albiim syl6ibr a5i syl6 ex ) CAFZCGHZCBFZCGHZAB
-      FZUNCGZIUKUMJZUNUJULKZCGZUOUPUNUJULIZCGZULUJIZCGZJZURUNACFZULJZCLZUPVCDUK
-      VFUTUMVBUKVEUTCUJCMUSCNUKVDULUTVDUJUKULUTIVDAAFUJAOACAPUAZULCAQRSTUMVEVBC
-      ULCMVACNUMULVDVBUMULVDVBVDUJUMULVBVGUJCBQUBSUCTUDRUJULCUEUFUQUNCEUGUHUI
-      $.
-  $}
-
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Existential uniqueness
@@ -14757,6 +14508,22 @@ Classical (not intuitionistic) results
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+  $( Part of theorem *11.5 in [WhiteheadRussell] p. 164.  (Contributed by
+     Andrew Salmon, 24-May-2011.) $)
+  2nalexn $p |- ( -. A. x A. y ph <-> E. x E. y -. ph ) $=
+    ( wn wex wal df-ex alex albii xchbinxr bicomi ) ADCEZBEZACFZBFZDMLDZBFOLBGN
+    PBACHIJK $.
+
+  $( A relationship between two quantifiers and negation.  (Contributed by NM,
+     18-Aug-1993.) $)
+  alexn $p |- ( A. x E. y -. ph <-> -. E. x A. y ph ) $=
+    ( wn wex wal exnal albii alnex bitri ) ADCEZBFACFZDZBFLBEDKMBACGHLBIJ $.
+
+  $( Theorem *11.51 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
+     Salmon, 24-May-2011.)  (Proof shortened by Wolf Lammen, 25-Sep-2014.) $)
+  2exnexn $p |- ( E. x A. y ph <-> -. A. x E. y -. ph ) $=
+    ( wn wex wal alexn con2bii ) ADCEBFACFBEABCGH $.
+
   ${
     4cases.1 $e |- ( ( ph /\ ps ) -> ch ) $.
     4cases.2 $e |- ( ( ph /\ -. ps ) -> ch ) $.
@@ -14767,6 +14534,16 @@ $)
        25-Oct-2003.) $)
     4cases $p |- ch $=
       ( pm2.61ian wn pm2.61i ) BCABCDFHABICEGHJ $.
+  $}
+
+  ${
+    ax11f.1 $e |- ( ph -> A. x ph ) $.
+    $( Basis step for constructing a substitution instance of ~ ax-11o without
+       using ~ ax-11o .  We can start with any formula ` ph ` in which ` x ` is
+       not free.  (Contributed by NM, 21-Jan-2007.) $)
+    ax11f $p |- ( -. A. x x = y ->
+               ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $=
+      ( weq wal wn wi ax-1 alrimi a1ii ) BCEZBFGLALAHZBFHAMBDALIJK $.
   $}
 
   ${
@@ -14820,6 +14597,217 @@ $)
       FYHYGWGYFYHYGLZLZEFJZWBYLKZAHZKWGYLYMAYLWBVGVHYKYLWDYNWFYJYLWDMZYFYHYLCFJ
       YGWDECFNFDCOUIZPYKYJAHZYNWFMYKYHAHZYGAHZLZYQYFYJYTXOYHYRXCYGYSACEVIADFVIV
       JVAYHYGAUAVKYQYMWEAYJAUJYQYLWDWBYJYOAYPTQULVLRVMSVNVOVNVOVPVPVQ $.
+  $}
+
+  ${
+    ax11indn.1 $e |- ( -. A. x x = y ->
+               ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $.
+    $( Induction step for constructing a substitution instance of ~ ax-11o
+       without using ~ ax-11o .  Negation case.  (Contributed by NM,
+       21-Jan-2007.) $)
+    ax11indn $p |- ( -. A. x x = y ->
+               ( x = y -> ( -. ph -> A. x ( x = y -> -. ph ) ) ) ) $=
+      ( weq wal wn wi wex 19.8a exanali hbn1 con3 syl6 com23 alrimd syl5bi syl5
+      wa exp3a ) BCEZBFGZUAAGZUAUCHZBFZUAUCSZUFBIZUBUEUFBJUGUAAHZBFZGZUBUEUAABK
+      UBUJUDBUABLUHBLUBUAUJUCUBUAAUIHUJUCHDAUIMNOPQRT $.
+
+    ${
+      ax11indi.2 $e |- ( -. A. x x = y ->
+                 ( x = y -> ( ps -> A. x ( x = y -> ps ) ) ) ) $.
+      $( Induction step for constructing a substitution instance of ~ ax-11o
+         without using ~ ax-11o .  Implication case.  (Contributed by NM,
+         21-Jan-2007.) $)
+      ax11indi $p |- ( -. A. x x = y ->
+           ( x = y -> ( ( ph -> ps ) -> A. x ( x = y -> ( ph -> ps ) ) ) ) ) $=
+        ( weq wal wn wi wa ax11indn imp pm2.21 imim2i alimi syl6 ax-1 jad ex )
+        CDGZCHIZUAABJZUAUCJZCHZJUBUAKZABUEUFAIZUAUGJZCHZUEUBUAUGUIJACDELMUHUDCU
+        GUCUAABNOPQUFBUABJZCHZUEUBUABUKJFMUJUDCBUCUABAROPQST $.
+    $}
+  $}
+
+  ${
+    ax11indalem.1 $e |- ( -. A. x x = y ->
+               ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $.
+    $( Lemma for ~ ax11inda2 and ~ ax11inda .  (Contributed by NM,
+       24-Jan-2007.) $)
+    ax11indalem $p |- ( -. A. y y = z -> ( -. A. x x = y ->
+               ( x = y -> ( A. z ph -> A. x ( x = y -> A. z ph ) ) ) ) ) $=
+      ( weq wal wn wi ax-1 a5i a1i biidd a1d wa alequcom con3i imp hbnae hban
+      dral1 imbi2d dral2 3imtr4d alequcoms adantr simplr ax-12 syl2an hba1 ax-4
+      adantlr sylan2 alimd syl2anc ax-7 alrimi 19.21t syl albid syl5ib ad2antrr
+      wb syld exp31 pm2.61ian ) BDFBGZCDFCGZHZBCFZBGHZVJADGZVJVLIZBGZIZIZIZVGVQ
+      VIVGVPVKVGVOVJVODBDBFDGZABGZVJVSIZBGZVLVNVSWAIVRAVTBVSVJJKLAADBVRAMUAZVMV
+      TDBBVRVLVSVJWBUBUCUDUENNUFVGHZVIOZVKVJVOWDVKOVJOZVLVJAIZBGZDGZVNWEVKVJDGZ
+      VLWHIWDVKVJUGWDVJWIVKWDVJWIWCVRHZDCFDGZHZVJWIIZVIVRVGDBPQWKVHDCPQWJWLWMBC
+      DUHRUIZRULVKWIOAWGDVKWIDBCDSVJDUJTWIVKVJAWGIZVJDUKVKVJWOERUMUNUOWDWHVNIVK
+      VJWHWFDGZBGWDVNWFDBUPWDWPVMBWCVIBBDBSCDBSTWDWMDGWPVMVCWDWMDWCVIDBDDSCDDST
+      WNUQVJADURUSUTVAVBVDVEVF $.
+  $}
+
+  ${
+    $d z y $.
+    ax11inda2.1 $e |- ( -. A. x x = y ->
+               ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $.
+    $( A proof of ~ ax11inda2 that is slightly more direct.  (Contributed by
+       NM, 4-May-2007.) $)
+    ax11inda2ALT $p |- ( -. A. x x = y ->
+               ( x = y -> ( A. z ph -> A. x ( x = y -> A. z ph ) ) ) ) $=
+      ( weq wal wn wi ax-1 a5i a1i biidd dral1 imbi2d dral2 a1d wa imp hbnae wb
+      3imtr4d alequcoms simplr dveeq1 nalequcoms adantlr hba1 hban sylan2 alimd
+      ax-4 syl2anc ax-7 alrimi 19.21t albid syl5ib ad2antrr syld exp31 pm2.61i
+      syl ) BDFBGZBCFZBGHZVEADGZVEVGIZBGZIZIZIVDVKVFVDVJVEVJDBDBFDGZABGZVEVMIZB
+      GZVGVIVMVOIVLAVNBVMVEJKLAADBVLAMNZVHVNDBBVLVGVMVEVPOPUBUCQQVDHZVFVEVJVQVF
+      RVERZVGVEAIZBGZDGZVIVRVFVEDGZVGWAIVQVFVEUDVQVEWBVFVQVEWBVEWBIZDBDBCUEUFZS
+      UGVFWBRAVTDVFWBDBCDTVEDUHUIWBVFVEAVTIZVEDULVFVEWEESUJUKUMVQWAVIIVFVEWAVSD
+      GZBGVQVIVSDBUNVQWFVHBBDBTVQWCDGWFVHUAVQWCDBDDTWDUOVEADUPVCUQURUSUTVAVB $.
+
+    $( Induction step for constructing a substitution instance of ~ ax-11o
+       without using ~ ax-11o .  Quantification case.  When ` z ` and ` y ` are
+       distinct, this theorem avoids the dummy variables needed by the more
+       general ~ ax11inda .  (Contributed by NM, 24-Jan-2007.) $)
+    ax11inda2 $p |- ( -. A. x x = y ->
+               ( x = y -> ( A. z ph -> A. x ( x = y -> A. z ph ) ) ) ) $=
+      ( weq wal wn wi ax-1 a16g syl5 a1d ax11indalem pm2.61i ) CDFCGZBCFZBGHZQA
+      DGZQSIZBGZIZIZIPUCRPUBQSTPUASQJTCDBKLMMABCDENO $.
+  $}
+
+  ${
+    $d w ph $.  $d w x $.  $d w y $.  $d w z $.
+    ax11inda.1 $e |- ( -. A. x x = w ->
+               ( x = w -> ( ph -> A. x ( x = w -> ph ) ) ) ) $.
+    $( Induction step for constructing a substitution instance of ~ ax-11o
+       without using ~ ax-11o .  Quantification case.  (When ` z ` and ` y `
+       are distinct, ~ ax11inda2 may be used instead to avoid the dummy
+       variable ` w ` in the proof.)  (Contributed by NM, 24-Jan-2007.) $)
+    ax11inda $p |- ( -. A. x x = y ->
+               ( x = y -> ( A. z ph -> A. x ( x = y -> A. z ph ) ) ) ) $=
+      ( weq wal wn wi wex a9e wa ax11inda2 wb dveeq2 imp albid syl imbi12d hba1
+      equequ2 a4s notbid adantl imbi1d imbi2d mpbii ex exlimdv mpi pm2.43i ) BC
+      GZBHZIZUMADHZUMUPJZBHZJZJZUOECGZEKUOUTJZECLUOVAVBEUOVAVBUOVAMZBEGZBHZIZVD
+      UPVDUPJZBHZJZJZJVBABEDFNVCVFUOVJUTVCVABHZVFUOOUOVAVKBCEPQZVKVEUNVKVDUMBVA
+      BUAZVAVDUMOZBECBUBZUCZRUDSVCVDUMVIUSVAVNUOVOUEVCVHURUPVCVKVHUROVLVKVGUQBV
+      MVKVDUMUPVPUFRSUGTTUHUIUJUKUL $.
+  $}
+
+  $( Part of a study related to ~ ax-12 .  The consequent introduces a new
+     variable ` z ` .  There are no distinct variable restrictions.
+     (Contributed by NM, 14-Jan-2008.) $)
+  a12stdy1 $p |- ( A. x x = y -> E. x y = z ) $=
+    ( weq wal wex a9e wn ax-10o con3d df-ex 3imtr4g mpi ) ABDAEZBCDZBFZOAFZBCGN
+    OHZBEZHRAEZHPQNTSRABIJOBKOAKLM $.
+
+  $( Part of a study related to ~ ax-12 .  The consequent is quantified with a
+     different variable.  There are no distinct variable restrictions.
+     (Contributed by NM, 14-Jan-2008.) $)
+  a12stdy2 $p |- ( A. z ( z = x /\ x = y ) -> A. y y = x ) $=
+    ( weq wa wal 19.26 ax-10o alequcom syl6 imp sylbi ) CADZABDZECFMCFZNCFZEBAD
+    BFZMNCGOPQOPNAFQNCAHABIJKL $.
+
+  $( Part of a study related to ~ ax-12 .  The consequent introduces two new
+     variables.  There are no distinct variable restrictions.  (Contributed by
+     NM, 14-Jan-2008.) $)
+  a12stdy3 $p |- ( A. z ( z = x /\ x = y ) -> A. v E. y x = w ) $=
+    ( weq wa wal wex a12stdy2 hbae a12stdy1 alimi 3syl ) CAFABFGCHBAFBHZOEHADFB
+    IZEHABCJBAEKOPEBADLMN $.
+
+  $( Part of a study related to ~ ax-12 .  The second antecedent of ~ ax-12 is
+     replaced.  There are no distinct variable restrictions.  (Contributed by
+     NM, 14-Jan-2008.) $)
+  a12stdy4 $p |- ( -. A. z z = x -> ( A. y z = x ->
+           ( x = y -> A. z x = y ) ) ) $=
+    ( weq wal wn wi wa ax-10o alequcoms con3d impcom pm2.21d ax-12 a1dd pm2.61d
+    ex ) CADZCEZFZCBDCEZRBEZABDZUCCEGZGZTUAUETUAHUBUDUATUBFUAUBSUBSGBCRBCIJKLMQ
+    TUAFUDUBABCNOP $.
+
+  $( Proof of first hypothesis of ~ a12study .  (Contributed by NM,
+     15-Jan-2008.) $)
+  a12lem1 $p |- ( -. A. z z = y ->
+                  ( A. z ( z = x -> z = y ) -> x = y ) ) $=
+    ( weq wal wn wi wb equequ1 imbi12d a4s dral2 equid a1bi biimpri syl6bi hbn1
+    a1d wa hban hbth a1i ax-12 imp hbimd alrimi equtr ax-8 imim12d ax-gen 19.26
+    a4imt sylbir sylancl mpii ex pm2.61i ) CADZCEZCBDZCEFZURUTGZCEZABDZGZGUSVEV
+    AUSVCAADZVDGZCEZVDVBVGCACURVBVGHCURURVFUTVDCAAICABIJKLVGVDCVDVGVFVDAMZNOKPR
+    USFZVAVEVJVASZVCVFVDVIVKVGVHGZCEZURVBVGGGZCEZVCVGGZVKVLCVJVACURCQUTCQTZVKVF
+    VDCVQVFVFCEGVKVFCVIUAUBVJVAVDVDCEGABCUCUDUEUFVNCURVFURUTVDCAAUGCABUHUIUJVMV
+    OSVLVNSCEVPVLVNCUKVBVGCAULUMUNUOUPUQ $.
+
+  $( Proof of second hypothesis of ~ a12study .  (Contributed by NM,
+     15-Jan-2008.) $)
+  a12lem2 $p |- ( A. z ( z = x -> -. z = y ) -> -. x = y ) $=
+    ( weq wn wi wal wa wex equcom imbi1i imnan bitri albii alnex equvini con3i
+    sylbi ) CADZCBDZEZFZCGZACDZTHZCIZEZABDZEUCUEEZCGUGUBUICUBUDUAFUISUDUACAJKUD
+    TLMNUECOMUHUFABCPQR $.
+
+  ${
+    a12study.1 $e |- ( -. A. z z = y
+         -> ( A. z ( z = x -> z = y ) -> x = y ) ) $.
+    a12study.2 $e |- ( A. z ( z = x -> -. z = y ) -> -. x = y ) $.
+    $( Rederivation of axiom ~ ax-12 from two shorter formulas, without using
+       ~ ax-12 .  See ~ a12lem1 and ~ a12lem2 for the proofs of the hypotheses
+       (using ~ ax-12 ).  This is the only known breakdown of ~ ax-12 into
+       shorter formulas.  See ~ a12studyALT for an alternate proof.  Note that
+       the proof depends on ~ ax-11o , whose proof ~ ax11o depends on ~ ax-12 ,
+       meaning that we would have to replace ~ ax-11 with ~ ax-11o in an
+       axiomatization that uses the hypotheses in place of ~ ax-12 .  Whether
+       this can be avoided is an open problem.  (Contributed by NM,
+       15-Jan-2008.) $)
+    a12study $p |- ( -. A. z z = x -> ( -. A. z z = y
+                     -> ( x = y -> A. z x = y ) ) ) $=
+      ( weq wa wex wal wn imnan equid1 ax-8 mpi imim1i sylbir alimi hbn1 hba1
+      wi con2i df-ex sylibr hban ax-11o syl5 imp3a alrimd sylan9 exlimd ex syl7
+      syl ) ABFZACFZCBFZGZCHZCAFZCIJZUPCIJZUNCIZUNUQJZCIZJURVDUNVDUSUPJZTZCIUNJ
+      VCVFCVCUOVETVFUOUPKUSUOVEUSCCFUOCLCACMNOPQEUMUAUQCUBUCUTVAURVBTUTVAGUQVBC
+      UTVACUSCRUPCRZUDUNCSUTUQUSUPTZCIZVAVBUTUOUPVIUOUSUTUPVITUOAAFUSALACAMNUPC
+      AUEUFUGVAVIUNCVGVHCSDUHUIUJUKUL $.
+
+    $( Alternate proof of ~ a12study , also without using ~ ax-12 .
+       (Contributed by NM, 17-Jan-2008.) $)
+    a12studyALT $p |- ( -. A. z z = x -> ( -. A. z z = y
+             -> ( x = y -> A. z x = y ) ) ) $=
+      ( weq wal wn wi wa hbn1 hban con3d wex exnal hba1 ax-11o ax11indn syl5bir
+      annim a5i syl8 imp3a exlimd sylan9r hbnd notnot albii 3imtr4g ex ) CAFZCG
+      HZCBFZCGHZABFZUOCGZIULUNJZUOHZHZUSCGUOUPUQURCULUNCUKCKZUMCKLUNURUKUMIZCGZ
+      HZULURCGZUNVBUODMVCVAHZCNULVDVACOULVEVDCUTURCPVEUKUMHZJULVDUKUMTULUKVFVDU
+      LUKVFUKVFIZCGVDUMCAUMCAQRVGURCEUAUBUCSUDSUEUFUOUGZUOUSCVHUHUIUJ $.
+  $}
+
+  ${
+    $d w x $.  $d w y $.  $d w z $.
+    a12study2.1 $e |- ( -. A. x x = z -> ( w = z -> A. x w = z ) ) $.
+    a12study2.2 $e |- ( -. A. x x = y -> ( w = y -> A. x w = y ) ) $.
+    $( Reprove ~ ax-12 using ~ dvelimfALT2 , showing that ~ ax-12 can be
+       replaced by ~ dveeq2 (whose needed instances are the hypotheses here) if
+       we allow distinct variables in axioms other than ~ ax-17 .  (Contributed
+       by Andrew Salmon, 21-Jul-2011.) $)
+    a12study2 $p |- ( -. A. x x = y
+      -> ( -. A. x x = z -> ( y = z -> A. x y = z ) ) ) $=
+      ( cv wceq wal wn hbn1 hbim1 ax-17 equequ1 imbi2d dvelimfALT2 19.21 syl6ib
+      wi pm2.86d ) AGZBGZHAIJZUACGZHZAIJZUBUDHZUGAIZUCUFUGSZUIAIUFUHSUFDGZUDHZS
+      UIABDUFUKAUEAKZELUIDMUJUBHUKUGUFDBCNOFPUFUGAULQRT $.
+  $}
+
+  ${
+    a12study3.1 $e |- ( x = y -> E. z ( x = z /\ z = y ) ) $.
+    a12study3.2 $e |- ( A. z ( z = x <-> z = y ) -> x = y ) $.
+    $( Rederivation of axiom ~ ax-12 from two other formulas, without using
+       ~ ax-12 .  See ~ equvini and ~ equveli for the proofs of the hypotheses
+       (using ~ ax-12 ).  Although the second hypothesis (when expanded to
+       primitives) is longer than ~ ax-12 , an open problem is whether it can
+       be derived without ~ ax-12 or from a simpler axiom.
+
+       Note also that the proof depends on ~ ax-11o , whose proof ~ ax11o
+       depends on ~ ax-12 , meaning that we would have to replace ~ ax-11 with
+       ~ ax-11o in an axiomatization that uses the hypotheses in place of
+       ~ ax-12 .  Whether this can be avoided is an open problem.  (Contributed
+       by NM, 1-Mar-2013.) $)
+    a12study3 $p |- ( -. A. z z = x -> ( -. A. z z = y
+       -> ( x = y -> A. z x = y ) ) ) $=
+      ( weq wal wn wi wa wb wex hbn1 hba1 equid1 ax-8 ax-11o syl5 imp3a exlimd
+      mpi syl7 ancomsd anim12ii albiim syl6ibr a5i syl6 ex ) CAFZCGHZCBFZCGHZAB
+      FZUNCGZIUKUMJZUNUJULKZCGZUOUPUNUJULIZCGZULUJIZCGZJZURUNACFZULJZCLZUPVCDUK
+      VFUTUMVBUKVEUTCUJCMUSCNUKVDULUTVDUJUKULUTIVDAAFUJAOACAPUAZULCAQRSTUMVEVBC
+      ULCMVACNUMULVDVBUMULVDVBVDUJUMULVBVGUJCBQUBSUCTUDRUJULCUEUFUQUNCEUGUHUI
+      $.
   $}
 
 $(
