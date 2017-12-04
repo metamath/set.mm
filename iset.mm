@@ -10867,10 +10867,6 @@ $)
   alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
     ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
 
-  $( Theorem 19.14 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-  exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
-    ( wal wn wex alex con2bii ) ABCADBEABFG $.
-
   $( Forward direction of Theorem 19.35 of [Margaris] p. 90.  (Contributed by
      Mario Carneiro, 2-Feb-2015.) $)
   19.35-1 $p |- ( E. x ( ph -> ps ) -> ( A. x ph -> E. x ps ) ) $=
@@ -14470,6 +14466,10 @@ $(
 Classical (not intuitionistic) results
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
+
+  $( Theorem 19.14 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+  exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
+    ( wal wn wex alex con2bii ) ABCADBEABFG $.
 
   $( Part of theorem *11.5 in [WhiteheadRussell] p. 164.  (Contributed by
      Andrew Salmon, 24-May-2011.) $)
