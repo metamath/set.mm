@@ -10871,18 +10871,6 @@ $)
   exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
     ( wal wn wex alex con2bii ) ABCADBEABFG $.
 
-  $( A transformation of quantifiers and logical connectives.  (Contributed by
-     NM, 25-Mar-1996.)  (Proof shortened by Wolf Lammen, 4-Sep-2014.) $)
-  exanali $p |- ( E. x ( ph /\ -. ps ) <-> -. A. x ( ph -> ps ) ) $=
-    ( wn wa wex wi wal annim exbii exnal bitri ) ABDEZCFABGZDZCFNCHDMOCABIJNCKL
-    $.
-
-  $( Obsolete proof of ~ exanali as of 4-Sep-2014.  (Contributed by NM,
-     25-Mar-1996.) $)
-  exanaliOLD $p |- ( E. x ( ph /\ -. ps ) <-> -. A. x ( ph -> ps ) ) $=
-    ( wi wal wn wa wex iman albii alnex bitri con2bii ) ABDZCEZABFGZCHZOPFZCEQF
-    NRCABIJPCKLM $.
-
   $( Forward direction of Theorem 19.35 of [Margaris] p. 90.  (Contributed by
      Mario Carneiro, 2-Feb-2015.) $)
   19.35-1 $p |- ( E. x ( ph -> ps ) -> ( A. x ph -> E. x ps ) ) $=
@@ -14523,6 +14511,12 @@ $)
      Salmon, 24-May-2011.)  (Proof shortened by Wolf Lammen, 25-Sep-2014.) $)
   2exnexn $p |- ( E. x A. y ph <-> -. A. x E. y -. ph ) $=
     ( wn wex wal alexn con2bii ) ADCEBFACFBEABCGH $.
+
+  $( A transformation of quantifiers and logical connectives.  (Contributed by
+     NM, 25-Mar-1996.)  (Proof shortened by Wolf Lammen, 4-Sep-2014.) $)
+  exanali $p |- ( E. x ( ph /\ -. ps ) <-> -. A. x ( ph -> ps ) ) $=
+    ( wn wa wex wi wal annim exbii exnal bitri ) ABDEZCFABGZDZCFNCHDMOCABIJNCKL
+    $.
 
   ${
     4cases.1 $e |- ( ( ph /\ ps ) -> ch ) $.
