@@ -10940,15 +10940,6 @@ $)
     FZPZUEUHUCUBUAPUMUAUBGUJUBULUABCHACHIJUEUJUFULUGUDUIACBAUIAQBAKLMUDUKBCABKM
     NORABCST $.
 
-  $( The antecedent provides a condition implying the converse of ~ 19.33 .
-     Compare Theorem 19.33 of [Margaris] p. 90.  (Contributed by NM,
-     27-Mar-2004.)  (Proof shortened by Wolf Lammen, 5-Jul-2014.)  (Proof
-     shortened by Mario Carneiro, 2-Feb-2015.) $)
-  19.33b $p |- ( -. ( E. x ph /\ E. x ps ) ->
-               ( A. x ( ph \/ ps ) <-> ( A. x ph \/ A. x ps ) ) ) $=
-    ( wex wa wn wo wal wb ianor 19.33b2 sylbi ) ACDZBCDZEFMFNFGABGCHACHBCHGIMNJ
-    ABCKL $.
-
   $( Theorem 19.40 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   19.40 $p |- ( E. x ( ph /\ ps ) -> ( E. x ph /\ E. x ps ) ) $=
     ( wa wex exsimpl simpr eximi jca ) ABDZCEACEBCEABCFJBCABGHI $.
@@ -14507,6 +14498,16 @@ $)
   19.30 $p |- ( A. x ( ph \/ ps ) -> ( A. x ph \/ E. x ps ) ) $=
     ( wn wi wal wex wo exnal exim syl5bir df-or albii 3imtr4i ) ADZBEZCFZACFZDZ
     BCGZEABHZCFRTHSOCGQTACIOBCJKUAPCABLMRTLN $.
+
+  $( The antecedent provides a condition implying the converse of ~ 19.33 .
+     Compare Theorem 19.33 of [Margaris] p. 90.  For an intuitionistically
+     valid variation, see ~ 19.33b2 (Contributed by NM, 27-Mar-2004.)  (Proof
+     shortened by Wolf Lammen, 5-Jul-2014.)  (Proof shortened by Mario
+     Carneiro, 2-Feb-2015.) $)
+  19.33b $p |- ( -. ( E. x ph /\ E. x ps ) ->
+               ( A. x ( ph \/ ps ) <-> ( A. x ph \/ A. x ps ) ) ) $=
+    ( wex wa wn wo wal wb ianor 19.33b2 sylbi ) ACDZBCDZEFMFNFGABGCHACHBCHGIMNJ
+    ABCKL $.
 
   ${
     4cases.1 $e |- ( ( ph /\ ps ) -> ch ) $.
