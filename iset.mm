@@ -10916,12 +10916,6 @@ $)
     ( wi wex wal 19.35-1 alimi exim syl ) ABECFZDGACGZBCFZEZDGMDFNDFELODABCHIMN
     DJK $.
 
-  $( Theorem 19.30 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
-     (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-  19.30 $p |- ( A. x ( ph \/ ps ) -> ( A. x ph \/ E. x ps ) ) $=
-    ( wn wi wal wex wo exnal exim syl5bir df-or albii 3imtr4i ) ADZBEZCFZACFZDZ
-    BCGZEABHZCFRTHSOCGQTACIOBCJKUAPCABLMRTLN $.
-
   $( Theorem 19.43 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
      (Proof shortened by Mario Carneiro, 2-Feb-2015.) $)
   19.43 $p |- ( E. x ( ph \/ ps ) <-> ( E. x ph \/ E. x ps ) ) $=
@@ -10954,16 +10948,6 @@ $)
                ( A. x ( ph \/ ps ) <-> ( A. x ph \/ A. x ps ) ) ) $=
     ( wex wa wn wo wal wb ianor 19.33b2 sylbi ) ACDZBCDZEFMFNFGABGCHACHBCHGIMNJ
     ABCKL $.
-
-  $( Obsolete proof of ~ 19.33b as of 22-Mar-2014.  (Contributed by NM,
-     27-Mar-2004.)  (Revised by NM, 25-May-2011.) $)
-  19.33bOLD $p |- ( -. ( E. x ph /\ E. x ps ) ->
-               ( A. x ( ph \/ ps ) <-> ( A. x ph \/ A. x ps ) ) ) $=
-    ( wex wa wn wo wal wi ianor alnex wb biorf alimi albi syl olc syl6bir 19.30
-    sylbir orc a1i pm2.21 jaod syl5 jaoi sylbi 19.33 impbid1 ) ACDZBCDZEFZABGZC
-    HZACHZBCHZGZULUJFZUKFZGUNUQIZUJUKJURUTUSURAFZCHZUTACKVBUNUPUQVBBUMLZCHUPUNL
-    VAVCCABMNBUMCOPUPUOQRTUNUOUKGUSUQABCSUSUOUQUKUOUQIUSUOUPUAUBUKUQUCUDUEUFUGA
-    BCUHUI $.
 
   $( Theorem 19.40 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   19.40 $p |- ( E. x ( ph /\ ps ) -> ( E. x ph /\ E. x ps ) ) $=
@@ -14517,6 +14501,12 @@ $)
   exanali $p |- ( E. x ( ph /\ -. ps ) <-> -. A. x ( ph -> ps ) ) $=
     ( wn wa wex wi wal annim exbii exnal bitri ) ABDEZCFABGZDZCFNCHDMOCABIJNCKL
     $.
+
+  $( Theorem 19.30 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
+     (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+  19.30 $p |- ( A. x ( ph \/ ps ) -> ( A. x ph \/ E. x ps ) ) $=
+    ( wn wi wal wex wo exnal exim syl5bir df-or albii 3imtr4i ) ADZBEZCFZACFZDZ
+    BCGZEABHZCFRTHSOCGQTACIOBCJKUAPCABLMRTLN $.
 
   ${
     4cases.1 $e |- ( ( ph /\ ps ) -> ch ) $.
