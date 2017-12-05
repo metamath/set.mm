@@ -5043,7 +5043,8 @@ $)
   pm5.19 $p |- -. ( ph <-> -. ph ) $=
     ( wn wb bi1 pm2.01d id mpbird pm2.65i ) AABZCZAJAIJAAIDEZJFGKH $.
 
-  $( Theorem *4.8 of [WhiteheadRussell] p. 122.  (Contributed by NM,
+  $( Theorem *4.8 of [WhiteheadRussell] p. 122.  This one is valid
+     in intuitionistic logic, whereas ~ pm4.81 is not. (Contributed by NM,
      3-Jan-2005.) $)
   pm4.8 $p |- ( ( ph -> -. ph ) <-> -. ph ) $=
     ( wn wi pm2.01 ax-1 impbii ) AABZCGADGAEF $.
@@ -6209,11 +6210,6 @@ $( This section makes our first use of the third axiom of propositonal
   biass $p |- ( ( ( ph <-> ps ) <-> ch ) <-> ( ph <-> ( ps <-> ch ) ) ) $=
     ( wb pm5.501 bibi1d bitr3d wn nbbn nbn2 syl5bbr pm2.61i ) AABDZCDZABCDZDZDA
     ONPABMCABEFAOEGAHZOHZNPRBHZCDQNBCIQSMCABJFKAOJGL $.
-
-  $( Theorem *4.81 of [WhiteheadRussell] p. 122.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.81 $p |- ( ( -. ph -> ph ) <-> ph ) $=
-    ( wn wi pm2.18 pm2.24 impbii ) ABACAADAAEF $.
 
   $( Definition of 'and' in terms of negation and implication (classical).
      (Contributed by NM, 31-Jan-2015.) $)
@@ -10863,26 +10859,6 @@ $)
     ( wal wex wa 19.29r 19.29 eximi syl ) ADEZCFBDFZCEGLMGZCFABGDFZCFLMCHNOCABD
     IJK $.
 
-  $( Theorem 19.6 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
-  alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
-    ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
-
-  $( Theorem 19.14 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-  exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
-    ( wal wn wex alex con2bii ) ABCADBEABFG $.
-
-  $( A transformation of quantifiers and logical connectives.  (Contributed by
-     NM, 25-Mar-1996.)  (Proof shortened by Wolf Lammen, 4-Sep-2014.) $)
-  exanali $p |- ( E. x ( ph /\ -. ps ) <-> -. A. x ( ph -> ps ) ) $=
-    ( wn wa wex wi wal annim exbii exnal bitri ) ABDEZCFABGZDZCFNCHDMOCABIJNCKL
-    $.
-
-  $( Obsolete proof of ~ exanali as of 4-Sep-2014.  (Contributed by NM,
-     25-Mar-1996.) $)
-  exanaliOLD $p |- ( E. x ( ph /\ -. ps ) <-> -. A. x ( ph -> ps ) ) $=
-    ( wi wal wn wa wex iman albii alnex bitri con2bii ) ABDZCEZABFGZCHZOPFZCEQF
-    NRCABIJPCKLM $.
-
   $( Forward direction of Theorem 19.35 of [Margaris] p. 90.  (Contributed by
      Mario Carneiro, 2-Feb-2015.) $)
   19.35-1 $p |- ( E. x ( ph -> ps ) -> ( A. x ph -> E. x ps ) ) $=
@@ -10928,12 +10904,6 @@ $)
     ( wi wex wal 19.35-1 alimi exim syl ) ABECFZDGACGZBCFZEZDGMDFNDFELODABCHIMN
     DJK $.
 
-  $( Theorem 19.30 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
-     (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-  19.30 $p |- ( A. x ( ph \/ ps ) -> ( A. x ph \/ E. x ps ) ) $=
-    ( wn wi wal wex wo exnal exim syl5bir df-or albii 3imtr4i ) ADZBEZCFZACFZDZ
-    BCGZEABHZCFRTHSOCGQTACIOBCJKUAPCABLMRTLN $.
-
   $( Theorem 19.43 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
      (Proof shortened by Mario Carneiro, 2-Feb-2015.) $)
   19.43 $p |- ( E. x ( ph \/ ps ) <-> ( E. x ph \/ E. x ps ) ) $=
@@ -10957,25 +10927,6 @@ $)
     wo wi com12 19.33 impbid1 ) ACDEZBCDEZPZABPZCFZACFZBCFZPZUEUCUHUCBEZCFZAEZC
     FZPZUEUHUCUBUAPUMUAUBGUJUBULUABCHACHIJUEUJUFULUGUDUIACBAUIAQBAKLMUDUKBCABKM
     NORABCST $.
-
-  $( The antecedent provides a condition implying the converse of ~ 19.33 .
-     Compare Theorem 19.33 of [Margaris] p. 90.  (Contributed by NM,
-     27-Mar-2004.)  (Proof shortened by Wolf Lammen, 5-Jul-2014.)  (Proof
-     shortened by Mario Carneiro, 2-Feb-2015.) $)
-  19.33b $p |- ( -. ( E. x ph /\ E. x ps ) ->
-               ( A. x ( ph \/ ps ) <-> ( A. x ph \/ A. x ps ) ) ) $=
-    ( wex wa wn wo wal wb ianor 19.33b2 sylbi ) ACDZBCDZEFMFNFGABGCHACHBCHGIMNJ
-    ABCKL $.
-
-  $( Obsolete proof of ~ 19.33b as of 22-Mar-2014.  (Contributed by NM,
-     27-Mar-2004.)  (Revised by NM, 25-May-2011.) $)
-  19.33bOLD $p |- ( -. ( E. x ph /\ E. x ps ) ->
-               ( A. x ( ph \/ ps ) <-> ( A. x ph \/ A. x ps ) ) ) $=
-    ( wex wa wn wo wal wi ianor alnex wb biorf alimi albi syl olc syl6bir 19.30
-    sylbir orc a1i pm2.21 jaod syl5 jaoi sylbi 19.33 impbid1 ) ACDZBCDZEFZABGZC
-    HZACHZBCHZGZULUJFZUKFZGUNUQIZUJUKJURUTUSURAFZCHZUTACKVBUNUPUQVBBUMLZCHUPUNL
-    VAVCCABMNBUMCOPUPUOQRTUNUOUKGUSUQABCSUSUOUQUKUOUQIUSUOUPUAUBUKUQUCUDUEUFUGA
-    BCUHUI $.
 
   $( Theorem 19.40 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   19.40 $p |- ( E. x ( ph /\ ps ) -> ( E. x ph /\ E. x ps ) ) $=
@@ -13642,6 +13593,21 @@ $( The theorems in this section make use of the $d statement. $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Classical logic theorems we'll need for existential uniqueness
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The theorems in this section are used in the section on existential
+     uniqueness. That section, at least for now, is heavily based on
+     classical logic, but probably intuitionistic proofs can be found
+     for much of it. $)
+
+  $( Theorem 19.6 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
+  alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
+    ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Existential uniqueness
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -14508,6 +14474,16 @@ Classical (not intuitionistic) results
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+  $( Theorem *4.81 of [WhiteheadRussell] p. 122.  This one does not hold
+     intuitionistically, but compare with ~ pm4.8 which does.  (Contributed by
+     NM, 3-Jan-2005.) $)
+  pm4.81 $p |- ( ( -. ph -> ph ) <-> ph ) $=
+    ( wn wi pm2.18 pm2.24 impbii ) ABACAADAAEF $.
+
+  $( Theorem 19.14 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+  exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
+    ( wal wn wex alex con2bii ) ABCADBEABFG $.
+
   $( Part of theorem *11.5 in [WhiteheadRussell] p. 164.  (Contributed by
      Andrew Salmon, 24-May-2011.) $)
   2nalexn $p |- ( -. A. x A. y ph <-> E. x E. y -. ph ) $=
@@ -14523,6 +14499,28 @@ $)
      Salmon, 24-May-2011.)  (Proof shortened by Wolf Lammen, 25-Sep-2014.) $)
   2exnexn $p |- ( E. x A. y ph <-> -. A. x E. y -. ph ) $=
     ( wn wex wal alexn con2bii ) ADCEBFACFBEABCGH $.
+
+  $( A transformation of quantifiers and logical connectives.  (Contributed by
+     NM, 25-Mar-1996.)  (Proof shortened by Wolf Lammen, 4-Sep-2014.) $)
+  exanali $p |- ( E. x ( ph /\ -. ps ) <-> -. A. x ( ph -> ps ) ) $=
+    ( wn wa wex wi wal annim exbii exnal bitri ) ABDEZCFABGZDZCFNCHDMOCABIJNCKL
+    $.
+
+  $( Theorem 19.30 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
+     (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+  19.30 $p |- ( A. x ( ph \/ ps ) -> ( A. x ph \/ E. x ps ) ) $=
+    ( wn wi wal wex wo exnal exim syl5bir df-or albii 3imtr4i ) ADZBEZCFZACFZDZ
+    BCGZEABHZCFRTHSOCGQTACIOBCJKUAPCABLMRTLN $.
+
+  $( The antecedent provides a condition implying the converse of ~ 19.33 .
+     Compare Theorem 19.33 of [Margaris] p. 90.  For an intuitionistically
+     valid variation, see ~ 19.33b2 (Contributed by NM, 27-Mar-2004.)  (Proof
+     shortened by Wolf Lammen, 5-Jul-2014.)  (Proof shortened by Mario
+     Carneiro, 2-Feb-2015.) $)
+  19.33b $p |- ( -. ( E. x ph /\ E. x ps ) ->
+               ( A. x ( ph \/ ps ) <-> ( A. x ph \/ A. x ps ) ) ) $=
+    ( wex wa wn wo wal wb ianor 19.33b2 sylbi ) ACDZBCDZEFMFNFGABGCHACHBCHGIMNJ
+    ABCKL $.
 
   ${
     4cases.1 $e |- ( ( ph /\ ps ) -> ch ) $.
