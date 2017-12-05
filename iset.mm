@@ -5043,7 +5043,8 @@ $)
   pm5.19 $p |- -. ( ph <-> -. ph ) $=
     ( wn wb bi1 pm2.01d id mpbird pm2.65i ) AABZCZAJAIJAAIDEZJFGKH $.
 
-  $( Theorem *4.8 of [WhiteheadRussell] p. 122.  (Contributed by NM,
+  $( Theorem *4.8 of [WhiteheadRussell] p. 122.  This one is valid
+     in intuitionistic logic, whereas ~ pm4.81 is not. (Contributed by NM,
      3-Jan-2005.) $)
   pm4.8 $p |- ( ( ph -> -. ph ) <-> -. ph ) $=
     ( wn wi pm2.01 ax-1 impbii ) AABZCGADGAEF $.
@@ -6209,11 +6210,6 @@ $( This section makes our first use of the third axiom of propositonal
   biass $p |- ( ( ( ph <-> ps ) <-> ch ) <-> ( ph <-> ( ps <-> ch ) ) ) $=
     ( wb pm5.501 bibi1d bitr3d wn nbbn nbn2 syl5bbr pm2.61i ) AABDZCDZABCDZDZDA
     ONPABMCABEFAOEGAHZOHZNPRBHZCDQNBCIQSMCABJFKAOJGL $.
-
-  $( Theorem *4.81 of [WhiteheadRussell] p. 122.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.81 $p |- ( ( -. ph -> ph ) <-> ph ) $=
-    ( wn wi pm2.18 pm2.24 impbii ) ABACAADAAEF $.
 
   $( Definition of 'and' in terms of negation and implication (classical).
      (Contributed by NM, 31-Jan-2015.) $)
@@ -14477,6 +14473,12 @@ $(
 Classical (not intuitionistic) results
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
+
+  $( Theorem *4.81 of [WhiteheadRussell] p. 122.  This one does not hold
+     intuitionistically, but compare with ~ pm4.8 which does.  (Contributed by
+     NM, 3-Jan-2005.) $)
+  pm4.81 $p |- ( ( -. ph -> ph ) <-> ph ) $=
+    ( wn wi pm2.18 pm2.24 impbii ) ABACAADAAEF $.
 
   $( Theorem 19.14 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
