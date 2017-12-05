@@ -10863,10 +10863,6 @@ $)
     ( wal wex wa 19.29r 19.29 eximi syl ) ADEZCFBDFZCEGLMGZCFABGDFZCFLMCHNOCABD
     IJK $.
 
-  $( Theorem 19.6 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
-  alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
-    ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
-
   $( Forward direction of Theorem 19.35 of [Margaris] p. 90.  (Contributed by
      Mario Carneiro, 2-Feb-2015.) $)
   19.35-1 $p |- ( E. x ( ph -> ps ) -> ( A. x ph -> E. x ps ) ) $=
@@ -13598,6 +13594,21 @@ $( The theorems in this section make use of the $d statement. $)
     dveel2ALT $p |- ( -. A. x x = y -> ( z e. y -> A. x z e. y ) ) $=
       ( vw wel ax17el elequ2 dvelimfALT ) CDECBEABDCDAFCBDFDBCGH $.
   $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Classical logic theorems we'll need for existential uniqueness
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The theorems in this section are used in the section on existential
+     uniqueness. That section, at least for now, is heavily based on
+     classical logic, but probably intuitionistic proofs can be found
+     for much of it. $)
+
+  $( Theorem 19.6 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
+  alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
+    ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
