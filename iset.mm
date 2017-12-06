@@ -6507,13 +6507,6 @@ $( This section makes our first use of the third axiom of propositonal
                 ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
     ( wb wn wa wo xor dfbi3 xchnxbi ) ABCABDZEBADZEFABEKJEFABGABHI $.
 
-  $( Obsolete proof of ~ jcab as of 27-Nov-2013 (Contributed by NM,
-     3-Apr-1994.) $)
-  jcabOLD $p |- ( ( ph -> ( ps /\ ch ) ) <->
-                 ( ( ph -> ps ) /\ ( ph -> ch ) ) ) $=
-    ( wn wa wo wi ordi imor anbi12i 3bitr4i ) ADZBCEZFLBFZLCFZEAMGABGZACGZELBCH
-    AMIPNQOABIACIJK $.
-
   $( Simplify an implication between implications.  (Contributed by Paul
      Chapman, 17-Nov-2012.)  (Proof shortened by Wolf Lammen, 3-Apr-2013.) $)
   imimorb $p |- ( ( ( ps -> ch ) -> ( ph -> ch ) ) <->
