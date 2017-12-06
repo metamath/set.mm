@@ -5043,8 +5043,8 @@ $)
   pm5.19 $p |- -. ( ph <-> -. ph ) $=
     ( wn wb bi1 pm2.01d id mpbird pm2.65i ) AABZCZAJAIJAAIDEZJFGKH $.
 
-  $( Theorem *4.8 of [WhiteheadRussell] p. 122.  This one is valid
-     in intuitionistic logic, whereas ~ pm4.81 is not. (Contributed by NM,
+  $( Theorem *4.8 of [WhiteheadRussell] p. 122.  This one is valid in
+     intuitionistic logic, whereas ~ pm4.81 is not.  (Contributed by NM,
      3-Jan-2005.) $)
   pm4.8 $p |- ( ( ph -> -. ph ) <-> -. ph ) $=
     ( wn wi pm2.01 ax-1 impbii ) AABZCGADGAEF $.
@@ -10089,165 +10089,6 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Derive ax-9 from a weaker version
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-
-
-  ${
-    $d x w $.  $d w z $.
-    a9wa9lem1.1 $e |- -. A. w -. w = x $.
-    $( Lemma for ~ a9wa9 .  Similar to ~ equcomi , without using ~ ax-9 or
-       ~ ax-4 .  (Contributed by NM, 12-Nov-2013.) $)
-    a9wa9lem1 $p |- ( x = y -> y = x ) $=
-      ( weq wn wal ax-8 pm2.43i con3i alimi mto ax-17 mt3 mpi ) ABEAAEZBAEPPFZC
-      GZRCAEZFZCGDQTCSPSPCAAHIJKLQCMNABAHO $.
-
-    a9wa9lem2.2 $e |- -. A. w -. w = z $.
-    $( Lemma for ~ a9wa9 .  Similar to ~ equequ2 , without using ~ ax-9 or
-       ~ ax-4 .  (Contributed by NM, 12-Nov-2013.)  (Revised by NM,
-       3-Apr-2014.) $)
-    a9wa9lem2 $p |- ( x = y -> ( z = x <-> z = y ) ) $=
-      ( weq a9wa9lem1 ax-8 com12 syl5 syl2im impbid ) ABGZCAGZCBGZOACGZNPCADFHQ
-      NPACBIJKNBAGZPBCGZOABDEHCBDFHSROBCAIJLM $.
-
-    $( Obsolete proof of ~ a9wa9lem2 as of 3-Apr-2014.  (Contributed by NM,
-       12-Nov-2013.) $)
-    a9wa9lem2OLD $p |- ( x = y -> ( z = x <-> z = y ) ) $=
-      ( weq wi a9wa9lem1 ax-8 syl com12 syl2im impbid ) ABGZCAGZCBGZPOQPACGOQHC
-      ADFIACBJKLOBAGZQBCGZPABDEICBDFISRPBCAJLMN $.
-  $}
-
-  ${
-    $d x w $.  $d w ph $.
-    a9wa9lem3.1 $e |- -. A. w -. w = x $.
-    a9wa9lem3.2 $e |- -. A. x -. x = w $.
-    $( Lemma for ~ a9wa9 .  Similar to ~ ax4 , without using ~ ax-9 or
-       ~ ax-4 .  (Contributed by NM, 12-Nov-2013.) $)
-    a9wa9lem3 $p |- ( A. x ph -> ph ) $=
-      ( wal wi weq wn ax-17 a9wa9lem1 ax-11 syl2im con2 al2imi mtoi con4d con3i
-      syl6 alrimi mt3 ) ABFZAGZCBHZIZCFDUCIZUECUFCJUDUCUDAUBUDAIZBCHZUGGZBFZUBI
-      UDUHUGUGCFUJCBBEKUGCJUGBCLMUJUBUHIZBFEUIAUKBUHANOPSQRTUA $.
-
-    $( Lemma for ~ a9wa9 .  Similar to ~ hba1 , without using ~ ax-9 or
-       ~ ax-4 .  (Contributed by NM, 12-Nov-2013.) $)
-    a9wa9lem4 $p |- ( A. x ph -> A. x A. x ph ) $=
-      ( wal wn a9wa9lem3 con2i ax-6 con1i alimi 3syl ) ABFZNGZBFZGZQBFNBFPNOBCD
-      EHIOBJQNBNPABJKLM $.
-
-    a9wa9lem5.3 $e |- ( ph -> A. x ph ) $.
-    $( Lemma for ~ a9wa9 .  Similar to ~ hbn , without using ~ ax-9 or
-       ~ ax-4 .  (Contributed by NM, 12-Nov-2013.) $)
-    a9wa9lem5 $p |- ( -. ph -> A. x -. ph ) $=
-      ( wn wal a9wa9lem3 con3i ax-6 alrimi syl ) AGZABHZGZNBHOAABCDEIJPNBABKAOF
-      JLM $.
-  $}
-
-  ${
-    $d x w $.  $d w ph $.  $d w ps $.
-    a9wa9lem6.1 $e |- -. A. w -. w = x $.
-    a9wa9lem6.2 $e |- -. A. x -. x = w $.
-    a9wa9lem6.3 $e |- ( ph -> A. x ph ) $.
-    a9wa9lem6.4 $e |- ( ph -> ( ps -> A. x ps ) ) $.
-    a9wa9lem6.5 $e |- ( ph -> ( ch -> A. x ch ) ) $.
-    $( Lemma for ~ a9wa9 .  Similar to ~ hbimd , without using ~ ax-9 or
-       ~ ax-4 .  (Contributed by NM, 12-Nov-2013.)  (Proof shortened by Wolf
-       Lammen, 3-Apr-2014.) $)
-    a9wa9lem6 $p |- ( ph -> ( ( ps -> ch ) -> A. x ( ps -> ch ) ) ) $=
-      ( wi wal wn alrimi a9wa9lem3 ax-6 nsyl4 con1i alimi syl6 con3 al2imi ax-1
-      syl2im pm2.21 jad ) ABCBCKZDLZABMZUIDLZUHABBDLZKZDLUIUKMZDLZUJAULDHINUNBU
-      KBUNBDEFGOBDPQRULUMUIDBUKUAUBUDUIUGDBCUESTACCDLUHJCUGDCBUCSTUF $.
-
-    $( Obsolete proof of ~ a9wa9lem6 as of 3-Apr-2014.  (Contributed by NM,
-       12-Nov-2013.) $)
-    a9wa9lem6OLD $p |- ( ph -> ( ( ps -> ch ) -> A. x ( ps -> ch ) ) ) $=
-      ( wi wal wn alrimi a9wa9lem3 ax-6 nsyl4 con1i alimi syl6com al2imi syl2im
-      con3 pm2.21 ax-1 ja com12 ) BCKZAUHDLZBCAUIKABMZUJDLZUIABBDLZKZDLUJULMZDL
-      ZUKAUMDHINUOBULBUOBDEFGOBDPQRUMUNUJDBULUCUAUBUJUHDBCUDSTACCDLUIJCUHDCBUES
-      TUFUG $.
-  $}
-
-  ${
-    $d x w $.  $d w ph $.  $d w ps $.
-    a9wa9lem7.1 $e |- -. A. w -. w = x $.
-    a9wa9lem7.2 $e |- -. A. x -. x = w $.
-    a9wa9lem7.3 $e |- ( ph -> A. x ph ) $.
-    a9wa9lem7.4 $e |- ( ps -> A. x ps ) $.
-    $( Lemma for ~ a9wa9 .  Similar to ~ hban , without using ~ ax-9 or
-       ~ ax-4 .  (Contributed by NM, 12-Nov-2013.) $)
-    a9wa9lem7 $p |- ( ( ph /\ ps ) -> A. x ( ph /\ ps ) ) $=
-      ( wa wn wi df-an wal a9wa9lem5 pm2.21 alrimi ax-1 ja hbxfrbi ) ABIABJZKZJ
-      CABLUACDEFATUACMAJUACACDEFGNATOPTUACBCDEFHNTAQPRNS $.
-  $}
-
-  ${
-    $d x v w z $.  $d y v w z $.  $d w x ph $.  $d w z ps $.
-    a9wa9.1 $e |- -. A. w -. w = x $.
-    a9wa9.2 $e |- -. A. x -. x = w $.
-    a9wa9.3 $e |- -. A. z -. z = y $.
-    a9wa9.4 $e |- -. A. w -. w = z $.
-    a9wa9.5 $e |- -. A. z -. z = w $.
-
-    ${
-      a9wa9lem8.6 $e |- ( z = y -> ( ph <-> ps ) ) $.
-      $( Lemma for ~ a9wa9 .  Similar to ~ dvelimfALT , without using ~ ax-9 or
-         ~ ax-4 .  (Contributed by NM, 12-Nov-2013.)  (Proof shortened by Wolf
-         Lammen, 18-Jul-2014.) $)
-      a9wa9lem8 $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
-        ( weq wal wn wi ax-17 alrimi alimi ax-6 a1d a9wa9lem3 syl5ibr a2i ax-10
-        wa syl con3i nalequcoms a9wa9lem7 ax-12 imp a17d a9wa9lem6 hbald biimpd
-        con3 al2imi mtoi con1i 3syl syl56 expcom ax-11 syl2im pm2.27 pm2.61d2
-        syld ) CDMZCNOZCEMZCNZBBCNZPZVLOZVJVNBEDMZAPZENZVOVJUFZVRCNVMBVPBENZPZE
-        NVRBWAEBEQZBVTVPWBUARWAVQEVPVTAVTAVPBBEFJKUBLUCUDSUGVSVQCEVOVJEFJKVOENE
-        CECMZENZOVOEWCETVLWDCEUEUHRUIVJEQUJVSVPACFGHVOVJCFGHVKCTVICTUJVOVJVPVPC
-        NPEDCUKULVSACUMUNUOVRBCVRVPBPZENZBOZENZOBVQWEEVPABVPABLUPUDSWFWHVPOZENI
-        WEWGWIEVPBUQURUSBWHWGEQUTVASVBVCVLBVKBPZCNZVMVLVKBVTWKVKCFGHUBWBBCEVDVE
-        VKWJBCVKBVFURVHVG $.
-
-      $( Obsolete proof of ~ a9wa9lem8 as of 18-Jul-2014.  (Contributed by NM,
-         12-Nov-2013.) $)
-      a9wa9lem8OLD $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
-        ( weq wi wal wn ax-17 a1d alimi ax-6 alrimi a9wa9lem3 syl5ibr a9wa9lem4
-        a2i syl ax-11 pm2.27 al2imi syld ax-10 con3i nalequcoms a9wa9lem7 ax-12
-        syl5 wa imp a17d a9wa9lem6 hbald ex pm2.61i biimpd con3 mtoi con1i 3syl
-        syl56 ) BEDMZANZEOZCDMZCOPZVLCOZBCOBVJBEOZNZEOVLBVQEBEQZBVPVJVRRUAVQVKE
-        VJVPAVPAVJBBEFJKUBLUCUESUFCEMZCOZVNVLVONZNVTWAVNVLVLEOZVTVOVKEFJKUDVTWB
-        VSVLNZCOZVOVTVSWBWDNVSCFGHUBVLCEUGUFVSWCVLCVSVLUHUIUJUPRVTPZVNWAWEVNUQZ
-        VKCEWEVNEFJKWEEOECECMZEOZPWEEWGETVTWHCEUKULUAUMVNEQUNWFVJACFGHWEVNCFGHV
-        SCTVMCTUNWEVNVJVJCONEDCUOURWFACUSUTVAVBVCVLBCVLVJBNZEOZBPZEOZPBVKWIEVJA
-        BVJABLVDUESWJWLVJPZEOIWIWKWMEVJBVEUIVFBWLWKEQVGVHSVI $.
-    $}
-
-    a9wa9.6 $e |- -. A. v -. v = y $.
-    a9wa9.7 $e |- -. A. w -. w = v $.
-    a9wa9.8 $e |- -. A. x -. x = v $.
-    $( Derive ~ ax-9 (which has no distinct variable requirement) from a weaker
-       version that requires that its two variables be distinct.  The
-       hypotheses are the instances of the weaker version that we need.
-       Neither ~ ax-9 nor ~ ax-4 (which can be derived from ~ ax-9 ) is used by
-       the proof.  Note that every other predicate calculus axiom (except
-       ~ ax-13 and ~ ax-14 ) is used by the proof.  (Contributed by NM,
-       12-Nov-2013.)  (Proof shortened by Wolf Lammen, 28-Mar-2014.) $)
-    a9wa9 $p |- -. A. x -. x = y $=
-      ( weq wal wn a9wa9lem3 nsyl3 wi a9wa9lem2 ax-17 a9wa9lem8 a9wa9lem4 albid
-      wb syl notbid mtbii syl6com con3i alrimi mt3 pm2.61i ) ABNZAOZUNPZAOZPZUQ
-      UNUOUPADFGQUNADFGQRUOPZURSZEBNZPZEOKUTPZVBEVCEUAVAUTUSVAVAAOZURECNVAABCDF
-      GHIJCBEDILTUBVDAENZPZAOUQMVDVFUPAVAADFGUCVDVEUNVDVAVEUNUEVAADFGQEBADLFTUF
-      UGUDUHUIUJUKULUM $.
-
-    $( Obsolete proof of ~ a9wa9 as of 28-Mar-2014.  (Contributed by NM,
-       12-Nov-2013.) $)
-    a9wa9OLD $p |- -. A. x -. x = y $=
-      ( cv wceq wal wn a9wa9lem3 syl a9wa9lem2 con2i a9wa9lem8 a9wa9lem4 notbid
-      wi ax-17 wb albid mpbii syl6com con3i alrimi mt3 pm2.61i ) ANZBNZOZAPZUQQ
-      ZAPZQZURUQVAUQADFGRUTUQUSADFGRUASURQZVAUEZENZUPOZQZEPKVCQZVFEVGEUFVEVCVBV
-      EVEAPZVAVDCNOVEABCDFGHIJCBEDILTUBVHUOVDOZQZAPZQVAMVHVKUTVHVJUSAVEADFGUCVH
-      VIUQVHVEVIUQUGVEADFGREBADLFTSUDUHUDUIUJUKULUMUN $.
-  $}
-
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Introduce Axiom of Existence ax-9
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -10261,12 +10102,7 @@ $)
      [KalishMontague] p. 81.)  It is equivalent to axiom scheme C10' in
      [Megill] p. 448 (p. 16 of the preprint); the equivalence is established by
      ~ ax9o and ~ ax9 .  Another name for this theorem is ~ a9e , which has
-     additional remarks.
-
-     At least in classical logic, ~ ax-9 can be proved from a weaker version
-     requiring that the variables be distinct, but the current proof of theorem
-     ~ a9wa9 is not valid intuitionistically.  (Contributed by Mario Carneiro,
-     31-Jan-2015.) $)
+     additional remarks.  (Contributed by Mario Carneiro, 31-Jan-2015.) $)
   ax-i9 $a |- E. x x = y $.
 
   $( Derive ~ ax-9 from ~ ax-i9 , the modified version for intuitionistic
