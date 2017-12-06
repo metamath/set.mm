@@ -10024,12 +10024,6 @@ $)
     ( cv wceq wal wi wo ax12or ax-8 pm2.43i alimi a1d ax-4 jaoi ax-mp ) BCACZDZ
     BEZRPPDZSBEZFZBEZGZGUAAABHRUAUCRTSQSBQSBAAIJKLZRUAUBUDUABMNNO $.
 
-  $( Obsolete proof of ~ hbequid as of 23-Mar-2014.  (Contributed by NM,
-     13-Jan-2011.) $)
-  hbequidOLD $p |- ( x = x -> A. y x = x ) $=
-    ( cv wceq wal wi ax-12 ax-8 pm2.43i ax-gen ax-5 ax-mp a1d pm2.61ii ) BCACZD
-    ZBEZQOODZRBEZFAABGQSRPRFZBEQSFTBPRBAAHIJPRBKLMZUAN $.
-
   $( Commutation law for identical variable specifiers.  The antecedent and
      consequent are true when ` x ` and ` y ` are substituted with the same
      variable.  Lemma L12 in [Megill] p. 445 (p. 12 of the preprint).
