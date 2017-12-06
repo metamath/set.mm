@@ -6386,11 +6386,6 @@ $( This section makes our first use of the third axiom of propositonal
   anor $p |- ( ( ph /\ ps ) <-> -. ( -. ph \/ -. ps ) ) $=
     ( wn wo wa ianor bicomi con2bii ) ACBCDZABEZJCIABFGH $.
 
-  $( Obsolete proof of ~ ioran as of 28-Sep-2014.  (Contributed by NM,
-     5-Aug-1993.)  (Revised by NM, 12-May-2011.) $)
-  ioranOLD $p |- ( -. ( ph \/ ps ) <-> ( -. ph /\ -. ps ) ) $=
-    ( wo wn wi wa df-or notbii annim bitr4i ) ABCZDADZBEZDLBDFKMABGHLBIJ $.
-
   $( Absorption of disjunction into equivalence.  (Contributed by NM,
      6-Aug-1995.)  (Proof shortened by Wolf Lammen, 3-Nov-2013.) $)
   oibabs $p |- ( ( ( ph \/ ps ) -> ( ph <-> ps ) ) <-> ( ph <-> ps ) ) $=
