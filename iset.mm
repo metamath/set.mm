@@ -6386,11 +6386,6 @@ $( This section makes our first use of the third axiom of propositonal
   anor $p |- ( ( ph /\ ps ) <-> -. ( -. ph \/ -. ps ) ) $=
     ( wn wo wa ianor bicomi con2bii ) ACBCDZABEZJCIABFGH $.
 
-  $( Obsolete proof of ~ ioran as of 28-Sep-2014.  (Contributed by NM,
-     5-Aug-1993.)  (Revised by NM, 12-May-2011.) $)
-  ioranOLD $p |- ( -. ( ph \/ ps ) <-> ( -. ph /\ -. ps ) ) $=
-    ( wo wn wi wa df-or notbii annim bitr4i ) ABCZDADZBEZDLBDFKMABGHLBIJ $.
-
   $( Absorption of disjunction into equivalence.  (Contributed by NM,
      6-Aug-1995.)  (Proof shortened by Wolf Lammen, 3-Nov-2013.) $)
   oibabs $p |- ( ( ( ph \/ ps ) -> ( ph <-> ps ) ) <-> ( ph <-> ps ) ) $=
@@ -6511,13 +6506,6 @@ $( This section makes our first use of the third axiom of propositonal
   pm5.24 $p |- ( -. ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) <->
                 ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
     ( wb wn wa wo xor dfbi3 xchnxbi ) ABCABDZEBADZEFABEKJEFABGABHI $.
-
-  $( Obsolete proof of ~ jcab as of 27-Nov-2013 (Contributed by NM,
-     3-Apr-1994.) $)
-  jcabOLD $p |- ( ( ph -> ( ps /\ ch ) ) <->
-                 ( ( ph -> ps ) /\ ( ph -> ch ) ) ) $=
-    ( wn wa wo wi ordi imor anbi12i 3bitr4i ) ADZBCEZFLBFZLCFZEAMGABGZACGZELBCH
-    AMIPNQOABIACIJK $.
 
   $( Simplify an implication between implications.  (Contributed by Paul
      Chapman, 17-Nov-2012.)  (Proof shortened by Wolf Lammen, 3-Apr-2013.) $)
@@ -6861,67 +6849,6 @@ $)
               \/ ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
     ( wb wn wo wa exmid dfbi3 xor orbi12i mpbi ) ABCZLDZEABFADZBDZFEZAOFBNFEZEL
     GLPMQABHABIJK $.
-
-  ${
-    ecase2d.1 $e |- ( ph -> ps ) $.
-    ecase2d.2 $e |- ( ph -> -. ( ps /\ ch ) ) $.
-    ecase2d.3 $e |- ( ph -> -. ( ps /\ th ) ) $.
-    ecase2d.4 $e |- ( ph -> ( ta \/ ( ch \/ th ) ) ) $.
-    $( Deduction for elimination by cases.  (Contributed by NM, 21-Apr-1994.)
-       (Proof shortened by Wolf Lammen, 22-Dec-2012.) $)
-    ecase2d $p |- ( ph -> ta ) $=
-      ( wo wn wa wi imnan sylibr mpd ioran sylanbrc ord mt3d ) AECDJZACKZDKZUAK
-      ABUBFABCLKBUBMGBCNOPABUCFABDLKBUCMHBDNOPCDQRAEUAIST $.
-  $}
-
-  ${
-    ecase3.1 $e |- ( ph -> ch ) $.
-    ecase3.2 $e |- ( ps -> ch ) $.
-    ecase3.3 $e |- ( -. ( ph \/ ps ) -> ch ) $.
-    $( Inference for elimination by cases.  (Contributed by NM, 23-Mar-1995.)
-       (Proof shortened by Wolf Lammen, 26-Nov-2012.) $)
-    ecase3 $p |- ch $=
-      ( wo jaoi pm2.61i ) ABGCACBDEHFI $.
-  $}
-
-  ${
-    ecase.1 $e |- ( -. ph -> ch ) $.
-    ecase.2 $e |- ( -. ps -> ch ) $.
-    ecase.3 $e |- ( ( ph /\ ps ) -> ch ) $.
-    $( Inference for elimination by cases.  (Contributed by NM,
-       13-Jul-2005.) $)
-    ecase $p |- ch $=
-      ( ex pm2.61nii ) ABCABCFGDEH $.
-  $}
-
-  ${
-    ecase3d.1 $e |- ( ph -> ( ps -> th ) ) $.
-    ecase3d.2 $e |- ( ph -> ( ch -> th ) ) $.
-    ecase3d.3 $e |- ( ph -> ( -. ( ps \/ ch ) -> th ) ) $.
-    $( Deduction for elimination by cases.  (Contributed by NM, 2-May-1996.)
-       (Proof shortened by Andrew Salmon, 7-May-2011.) $)
-    ecase3d $p |- ( ph -> th ) $=
-      ( wo jaod pm2.61d ) ABCHDABDCEFIGJ $.
-  $}
-
-  ${
-    ecased.1 $e |- ( ph -> ( -. ps -> th ) ) $.
-    ecased.2 $e |- ( ph -> ( -. ch -> th ) ) $.
-    ecased.3 $e |- ( ph -> ( ( ps /\ ch ) -> th ) ) $.
-    $( Deduction for elimination by cases.  (Contributed by NM, 8-Oct-2012.) $)
-    ecased $p |- ( ph -> th ) $=
-      ( wn wo wa pm3.11 syl5 ecase3d ) ABHZCHZDEFNOIHBCJADBCKGLM $.
-  $}
-
-  ${
-    ecase3ad.1 $e |- ( ph -> ( ps -> th ) ) $.
-    ecase3ad.2 $e |- ( ph -> ( ch -> th ) ) $.
-    ecase3ad.3 $e |- ( ph -> ( ( -. ps /\ -. ch ) -> th ) ) $.
-    $( Deduction for elimination by cases.  (Contributed by NM,
-       24-May-2013.) $)
-    ecase3ad $p |- ( ph -> th ) $=
-      ( wn notnot2 syl5 ecased ) ABHZCHZDLHBADBIEJMHCADCIFJGK $.
-  $}
 
   ${
     ccase.1 $e |- ( ( ph /\ ps ) -> ta ) $.
@@ -9134,17 +9061,6 @@ $)
       ABCDLBQHGBCDMNOP $.
   $}
 
-  ${
-    3ecase.1 $e |- ( -. ph -> th ) $.
-    3ecase.2 $e |- ( -. ps -> th ) $.
-    3ecase.3 $e |- ( -. ch -> th ) $.
-    3ecase.4 $e |- ( ( ph /\ ps /\ ch ) -> th ) $.
-    $( Inference for elimination by cases.  (Contributed by NM,
-       13-Jul-2005.) $)
-    3ecase $p |- th $=
-      ( wi 3exp wn a1d pm2.61i pm2.61nii ) BCDABCDIZIABCDHJAKZOBPDCELLMFGN $.
-  $}
-
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                 True and false constants
@@ -10023,12 +9939,6 @@ $)
   hbequid $p |- ( x = x -> A. y x = x ) $=
     ( cv wceq wal wi wo ax12or ax-8 pm2.43i alimi a1d ax-4 jaoi ax-mp ) BCACZDZ
     BEZRPPDZSBEZFZBEZGZGUAAABHRUAUCRTSQSBQSBAAIJKLZRUAUBUDUABMNNO $.
-
-  $( Obsolete proof of ~ hbequid as of 23-Mar-2014.  (Contributed by NM,
-     13-Jan-2011.) $)
-  hbequidOLD $p |- ( x = x -> A. y x = x ) $=
-    ( cv wceq wal wi ax-12 ax-8 pm2.43i ax-gen ax-5 ax-mp a1d pm2.61ii ) BCACZD
-    ZBEZQOODZRBEZFAABGQSRPRFZBEQSFTBPRBAAHIJPRBKLMZUAN $.
 
   $( Commutation law for identical variable specifiers.  The antecedent and
      consequent are true when ` x ` and ` y ` are substituted with the same
