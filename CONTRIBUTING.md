@@ -1,13 +1,21 @@
-### Recommendation prior to submitting a pull request
+If you are new to GitHub and git, the basic instructions for
+contributing changes to set.mm are described in the wiki,
+[Getting started with contributing](https://github.com/metamath/set.mm/wiki/Getting-started-with-contributing).
+(Feel free to enhance the wiki.)
+
+The rest of this note shows how to achieve the recommended
+formatting for set.mm prior to submitting your changes.
+
+### Formatting recommendation prior to submitting a pull request
 
 Periodically we rewrap set.mm to help conform to its formatting conventions.  This may affect your mathbox if you submitted it without rewrapping, possibly causing merge conflicts with your work in progress.
 
 Here is the procedure recommended prior to submitting a pull request:
 
 <PRE>
-metamath  
-MM> read set.mm 
-MM> write source set.mm /rewrap 
+metamath
+MM> read set.mm
+MM> write source set.mm /rewrap
 MM> erase
 MM> read set.mm
 MM> save proof */compressed/fast
