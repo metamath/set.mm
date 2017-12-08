@@ -10021,9 +10021,9 @@ $)
   ax-9 $p |- -. A. x -. x = y $=
     ( cv wceq wn wal wex ax-i9 notnoti alnex mtbir ) ACBCDZEAFLAGZEMABHILAJK $.
 
-  $( ~ equid with existential quantifier without using ~ ax-4 or ~ ax-17 .
-     (Contributed by NM, 13-Jan-2011.)  (Proof shortened by Wolf Lammen,
-     27-Feb-2014.) $)
+  $( ~ equid with some quantification and negation without using ~ ax-4 or
+     ~ ax-17 .  (Contributed by NM, 13-Jan-2011.)  (Proof shortened by Wolf
+     Lammen, 27-Feb-2014.) $)
   equidqe $p |- -. A. y -. x = x $=
     ( weq wn wal ax-9 ax-8 pm2.43i con3i alimi mto ) AACZDZBEBACZDZBEBAFMOBNLNL
     BAAGHIJK $.
@@ -10033,12 +10033,6 @@ $)
   equidqeOLD $p |- -. A. y -. x = x $=
     ( weq wn wal ax-9 wi ax-8 pm2.43i con3i ax-gen ax-5 ax-mp mto ) AACZDZBEZBA
     CZDZBEZBAFPSGZBEQTGUABROROBAAHIJKPSBLMN $.
-
-  $( ~ equid with universal quantifier without using ~ ax-4 or ~ ax-17 .
-     (Contributed by NM, 13-Jan-2011.) $)
-  equidq $p |- A. y x = x $=
-    ( weq wal wn equidqe ax-6 hbequid con3i alrimi mt3 ) AACZBDZLEZBDABFMENBLBG
-    LMABHIJK $.
 
   $( A special case of ~ ax-4 without using ~ ax-4 or ~ ax-17 .  (Contributed
      by NM, 13-Jan-2011.) $)
@@ -10656,13 +10650,6 @@ $)
     ( wo wex hbe1 hbor 19.8a orim12i exlimi orc eximi olc jaoi impbii ) ABDZCEZ
     ACEZBCEZDZPTCRSCACFBCFGARBSACHBCHIJRQSAPCABKLBPCBAMLNO $.
 
-  $( Obsolete proof of ~ 19.43 as of 27-Jun-2014.  (Contributed by NM,
-     5-Aug-1993.) $)
-  19.43OLD $p |- ( E. x ( ph \/ ps ) <-> ( E. x ph \/ E. x ps ) ) $=
-    ( wo wn wal wex wa ioran albii 19.26 alnex anbi12i 3bitri notbii df-ex oran
-    3bitr4i ) ABDZEZCFZEACGZEZBCGZEZHZESCGUBUDDUAUFUAAEZBEZHZCFUGCFZUHCFZHUFTUI
-    CABIJUGUHCKUJUCUKUEACLBCLMNOSCPUBUDQR $.
-
   $( The antecedent provides a condition implying the converse of ~ 19.33 .
      Compare Theorem 19.33 of [Margaris] p. 90.  This variation of ~ 19.33b is
      intuitionistically valid with a slight modification of the antecedent.
@@ -10934,13 +10921,6 @@ $)
      by NM, 5-Aug-1993.) $)
   ax9 $p |- -. A. x -. x = y $=
     ( weq wn wal wi ax-9o modal-b mpg ) ABCZJDAEDZAEFKAKABGJAHI $.
-
-  $( Identity law for equality (reflexivity).  Lemma 6 of [Tarski] p. 68.
-     Alternate proof of ~ equid from older axioms ~ ax-6o and ~ ax-9o .
-     (Contributed by NM, 5-Aug-1993.) $)
-  equidALT $p |- x = x $=
-    ( weq wal wn wi ax-12 pm2.43i alimi ax-9o syl ax-6o pm2.61i ) AABZACZDZACZM
-    PMNEZACMOQAOQAAAFGHMAAIJMAKL $.
 
   ${
     $d x y $.
