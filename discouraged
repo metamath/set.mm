@@ -1237,7 +1237,6 @@
 "ax16ALT" is used by "dvelimALT".
 "ax16ALT2" is used by "a16gALT".
 "ax16ALT2OLD7" is used by "a16gALTOLD7".
-"ax16ALTNEW7" is used by "dvelimALTOLD7".
 "ax17el" is used by "dveel2ALT".
 "ax17eq" is used by "dveeq1-o16".
 "ax17eq" is used by "dveeq2-o16".
@@ -13516,7 +13515,7 @@ New usage of "ax12from12o" is discouraged (0 uses).
 New usage of "ax16ALT" is discouraged (1 uses).
 New usage of "ax16ALT2" is discouraged (1 uses).
 New usage of "ax16ALT2OLD7" is discouraged (1 uses).
-New usage of "ax16ALTNEW7" is discouraged (1 uses).
+New usage of "ax16ALTNEW7" is discouraged (0 uses).
 New usage of "ax172" is discouraged (0 uses).
 New usage of "ax17el" is discouraged (1 uses).
 New usage of "ax17eq" is discouraged (2 uses).
@@ -14816,7 +14815,6 @@ New usage of "dveeq1-o16" is discouraged (0 uses).
 New usage of "dveeq2-o" is discouraged (4 uses).
 New usage of "dveeq2-o16" is discouraged (0 uses).
 New usage of "dvelimALT" is discouraged (1 uses).
-New usage of "dvelimALTOLD7" is discouraged (0 uses).
 New usage of "dvelimf-o" is discouraged (3 uses).
 New usage of "dvelimfALT2OLD" is discouraged (0 uses).
 New usage of "dvh2dimatN" is discouraged (0 uses).
@@ -15129,7 +15127,7 @@ New usage of "exlimexi" is discouraged (2 uses).
 New usage of "exlimivOLD" is discouraged (0 uses).
 New usage of "exp3acom23g" is discouraged (0 uses).
 New usage of "exsbOLD" is discouraged (0 uses).
-New usage of "exsbOLDOLD7" is discouraged (0 uses).
+New usage of "exsbOLDNEW7" is discouraged (0 uses).
 New usage of "f1elimaOLD" is discouraged (0 uses).
 New usage of "f1oweALT" is discouraged (0 uses).
 New usage of "fh1" is discouraged (3 uses).
@@ -17825,7 +17823,6 @@ Proof modification of "dveeq1-o16" is discouraged (22 steps).
 Proof modification of "dveeq2-o" is discouraged (20 steps).
 Proof modification of "dveeq2-o16" is discouraged (18 steps).
 Proof modification of "dvelimALT" is discouraged (106 steps).
-Proof modification of "dvelimALTOLD7" is discouraged (106 steps).
 Proof modification of "dvelimf-o" is discouraged (129 steps).
 Proof modification of "dvelimfALT2OLD" is discouraged (61 steps).
 Proof modification of "e00" is discouraged (7 steps).
