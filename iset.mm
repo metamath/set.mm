@@ -5957,17 +5957,6 @@ $( This section makes our first use of the third axiom of propositonal
       ( wi wn com12 ja ) BCGADBCADGABHDEIACDFIJI $.
   $}
 
-  $( Peirce's axiom.  This odd-looking theorem is the "difference" between an
-     intuitionistic system of propositional calculus and a classical system and
-     is not accepted by intuitionists.  When Peirce's axiom is added to an
-     intuitionistic system, the system becomes equivalent to our classical
-     system ~ ax-1 through ~ ax-3 .  A curious fact about this theorem is that
-     it requires ~ ax-3 for its proof even though the result has no negation
-     connectives in it.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
-     Wolf Lammen, 9-Oct-2012.) $)
-  peirce $p |- ( ( ( ph -> ps ) -> ph ) -> ph ) $=
-    ( wi simplim id ja ) ABCAAABDAEF $.
-
   $( Theorem *2.6 of [WhiteheadRussell] p. 107.  (Contributed by NM,
      3-Jan-2005.)  (Revised by NM, 22-Sep-2013.) $)
   pm2.6 $p |- ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) $=
@@ -6084,13 +6073,6 @@ $( This section makes our first use of the third axiom of propositonal
      2-Nov-2012.) $)
   loolin $p |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) $=
     ( wi pm2.521 id ja ) ABCBACZGABDGEF $.
-
-  $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
-     of Lukasiewicz.  Using ~ dfor2 , we can see that this essentially
-     expresses "disjunction commutes."  Theorem *2.69 of [WhiteheadRussell]
-     p. 108.  (Contributed by NM, 12-Aug-2004.) $)
-  looinv $p |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) $=
-    ( wi imim1 peirce syl6 ) ABCZBCBACGACAGBADABEF $.
 
   $( Contraposition.  Theorem *4.1 of [WhiteheadRussell] p. 116.  (Contributed
      by NM, 5-Aug-1993.) $)
@@ -13332,6 +13314,17 @@ $)
   alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
     ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
 
+  $( Peirce's axiom.  This odd-looking theorem is the "difference" between an
+     intuitionistic system of propositional calculus and a classical system and
+     is not accepted by intuitionists.  When Peirce's axiom is added to an
+     intuitionistic system, the system becomes equivalent to our classical
+     system ~ ax-1 through ~ ax-3 .  A curious fact about this theorem is that
+     it requires ~ ax-3 for its proof even though the result has no negation
+     connectives in it.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
+     Wolf Lammen, 9-Oct-2012.) $)
+  peirce $p |- ( ( ( ph -> ps ) -> ph ) -> ph ) $=
+    ( wi simplim id ja ) ABCAAABDAEF $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Existential uniqueness
@@ -14205,6 +14198,14 @@ $)
      NM, 3-Jan-2005.) $)
   pm4.81 $p |- ( ( -. ph -> ph ) <-> ph ) $=
     ( wn wi pm2.18 pm2.24 impbii ) ABACAADAAEF $.
+
+  $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
+     of Lukasiewicz.  Using ~ dfor2 , we can see that this essentially
+     expresses "disjunction commutes."  Theorem *2.69 of [WhiteheadRussell]
+     p. 108.  Our proofs of both ~ dfor2 and ~ looinv are classical, rather
+     than intuitionistic, results.  (Contributed by NM, 12-Aug-2004.) $)
+  looinv $p |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) $=
+    ( wi imim1 peirce syl6 ) ABCZBCBACGACAGBADABEF $.
 
   $( Theorem 19.14 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
