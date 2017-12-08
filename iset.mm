@@ -10021,9 +10021,9 @@ $)
   ax-9 $p |- -. A. x -. x = y $=
     ( cv wceq wn wal wex ax-i9 notnoti alnex mtbir ) ACBCDZEAFLAGZEMABHILAJK $.
 
-  $( ~ equid with existential quantifier without using ~ ax-4 or ~ ax-17 .
-     (Contributed by NM, 13-Jan-2011.)  (Proof shortened by Wolf Lammen,
-     27-Feb-2014.) $)
+  $( ~ equid with some quantification and negation without using ~ ax-4 or
+     ~ ax-17 .  (Contributed by NM, 13-Jan-2011.)  (Proof shortened by Wolf
+     Lammen, 27-Feb-2014.) $)
   equidqe $p |- -. A. y -. x = x $=
     ( weq wn wal ax-9 ax-8 pm2.43i con3i alimi mto ) AACZDZBEBACZDZBEBAFMOBNLNL
     BAAGHIJK $.
