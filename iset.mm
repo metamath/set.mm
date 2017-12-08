@@ -5957,17 +5957,6 @@ $( This section makes our first use of the third axiom of propositonal
       ( wi wn com12 ja ) BCGADBCADGABHDEIACDFIJI $.
   $}
 
-  $( Peirce's axiom.  This odd-looking theorem is the "difference" between an
-     intuitionistic system of propositional calculus and a classical system and
-     is not accepted by intuitionists.  When Peirce's axiom is added to an
-     intuitionistic system, the system becomes equivalent to our classical
-     system ~ ax-1 through ~ ax-3 .  A curious fact about this theorem is that
-     it requires ~ ax-3 for its proof even though the result has no negation
-     connectives in it.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
-     Wolf Lammen, 9-Oct-2012.) $)
-  peirce $p |- ( ( ( ph -> ps ) -> ph ) -> ph ) $=
-    ( wi simplim id ja ) ABCAAABDAEF $.
-
   $( Theorem *2.6 of [WhiteheadRussell] p. 107.  (Contributed by NM,
      3-Jan-2005.)  (Revised by NM, 22-Sep-2013.) $)
   pm2.6 $p |- ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) $=
@@ -6084,13 +6073,6 @@ $( This section makes our first use of the third axiom of propositonal
      2-Nov-2012.) $)
   loolin $p |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) $=
     ( wi pm2.521 id ja ) ABCBACZGABDGEF $.
-
-  $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
-     of Lukasiewicz.  Using ~ dfor2 , we can see that this essentially
-     expresses "disjunction commutes."  Theorem *2.69 of [WhiteheadRussell]
-     p. 108.  (Contributed by NM, 12-Aug-2004.) $)
-  looinv $p |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) $=
-    ( wi imim1 peirce syl6 ) ABCZBCBACGACAGBADABEF $.
 
   $( Contraposition.  Theorem *4.1 of [WhiteheadRussell] p. 116.  (Contributed
      by NM, 5-Aug-1993.) $)
@@ -10046,44 +10028,6 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  ${
-    $d x y $.  $d y ph $.
-    $( Theorem showing that ~ ax-4 can be derived from ~ ax-5 , ~ ax-gen ,
-       ~ ax-8 , ~ ax-9 , ~ ax-11 , and ~ ax-17 and is therefore redundant in a
-       system including these axioms.  The proof uses ideas from the proof of
-       Lemma 21 of [Monk2] p. 114.
-
-       This theorem should not be referenced in any proof.  Instead, we will
-       use ~ ax-4 below so that explicit uses of ~ ax-4 can be more easily
-       identified.  In particular, this will more cleanly separate out the
-       theorems of "pure" predicate calculus that don't involve equality or
-       distinct variables.  A beginner may wish to accept ~ ax-4 a priori, so
-       that the proof of this theorem ( ~ ax4 ), which involves equality as
-       well as the distinct variable requirements of ~ ax-17 , can be put off
-       until those axioms are studied.
-
-       Note:  All predicate calculus axioms introduced from this point forward
-       are redundant.  Immediately before their introduction, we prove them
-       from earlier axioms to demonstrate their redundancy.  Specifically,
-       redundant axioms ~ ax-4 , ~ ax-5o , ~ ax-6o , ~ ax-9o , ~ ax-10o ,
-       ~ ax-11o , ~ ax-15 , and ~ ax-16 are proved by theorems ~ ax4 , ~ ax5o ,
-       ~ ax6o , ~ ax9o , ~ ax10o , ~ ax11o , ~ ax15 , and ~ ax16 .  Except for
-       the ones suffixed with o ( ~ ax-5o etc.), we never reference those
-       theorems directly.  Instead, we use the axiom version that immediately
-       follows it.  This allow us to better isolate the uses of the redundant
-       axioms for easier study of subsystems containing them.
-
-       (Contributed by NM, 21-May-2008.)  (Proof shortened by Scott Fenton,
-       24-Jan-2011.) $)
-    ax4 $p |- ( A. x ph -> ph ) $=
-      ( vy wal wi weq ax-9 ax-8 pm2.43i con3i ax-gen ax-17 ax-5 mpsyl mt3 ax-11
-      wn mpi syl2im con2 ax-mp syl mtoi syl6 con4d ) ABDZAEZCBFZQZCDZCBGUGQZUIE
-      ZCDUKUKCDUJULCUHUGUHAUFUHAQZBCFZUMEZBDZUFQUHUNUMUMCDUPUHCCFZUNUQUNQZBDZBC
-      GZUQQZUREZBDVAVABDUSVBBUNUQUNUQBCCHIJKVABLVAURBMNOCBCHRUMCLUMBCPSUPUFUSUT
-      UPAUREZBDZUFUSEUOVCEZBDUPVDEVEBUNATKUOVCBMUAAURBMUBUCUDUEJKUKCLUKUICMNO
-      $.
-  $}
-
   $( Show that the original axiom ~ ax-5o can be derived from ~ ax-5 and
      others.  See ~ ax5 for the rederivation of ~ ax-5 from ~ ax-5o .
 
@@ -13332,6 +13276,17 @@ $)
   alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
     ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
 
+  $( Peirce's axiom.  This odd-looking theorem is the "difference" between an
+     intuitionistic system of propositional calculus and a classical system and
+     is not accepted by intuitionists.  When Peirce's axiom is added to an
+     intuitionistic system, the system becomes equivalent to our classical
+     system ~ ax-1 through ~ ax-3 .  A curious fact about this theorem is that
+     it requires ~ ax-3 for its proof even though the result has no negation
+     connectives in it.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
+     Wolf Lammen, 9-Oct-2012.) $)
+  peirce $p |- ( ( ( ph -> ps ) -> ph ) -> ph ) $=
+    ( wi simplim id ja ) ABCAAABDAEF $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Existential uniqueness
@@ -14206,6 +14161,14 @@ $)
   pm4.81 $p |- ( ( -. ph -> ph ) <-> ph ) $=
     ( wn wi pm2.18 pm2.24 impbii ) ABACAADAAEF $.
 
+  $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
+     of Lukasiewicz.  Using ~ dfor2 , we can see that this essentially
+     expresses "disjunction commutes."  Theorem *2.69 of [WhiteheadRussell]
+     p. 108.  Our proofs of both ~ dfor2 and ~ looinv are classical, rather
+     than intuitionistic, results.  (Contributed by NM, 12-Aug-2004.) $)
+  looinv $p |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) $=
+    ( wi imim1 peirce syl6 ) ABCZBCBACGACAGBADABEF $.
+
   $( Theorem 19.14 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
     ( wal wn wex alex con2bii ) ABCADBEABFG $.
@@ -14258,6 +14221,46 @@ $)
        25-Oct-2003.) $)
     4cases $p |- ch $=
       ( pm2.61ian wn pm2.61i ) BCABCDFHABICEGHJ $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.
+    $( Theorem showing that in classical logic ~ ax-4 can be derived from
+       ~ ax-5 , ~ ax-gen , ~ ax-8 , ~ ax-9 , ~ ax-11 , and ~ ax-17 .  This
+       makes ~ ax-4 redundant in a classical system including these axioms, but
+       we do not have a corresponding result (or proof of independence) for
+       intuitionistic logic yet.  The proof uses ideas from the proof of Lemma
+       21 of [Monk2] p. 114.
+
+       This theorem should not be referenced in any proof.  Instead, we will
+       use ~ ax-4 so that explicit uses of ~ ax-4 can be more easily
+       identified.  In particular, this will more cleanly separate out the
+       theorems of "pure" predicate calculus that don't involve equality or
+       distinct variables.  A beginner may wish to accept ~ ax-4 a priori, so
+       that the proof of this theorem ( ~ ax4 ), which involves equality as
+       well as the distinct variable requirements of ~ ax-17 , can be put off
+       until those axioms are studied.
+
+       Note:  In set.mm, predicate calculus axioms introduced from ax4 forward
+       are redundant.  We are still in the process of figuring out the
+       analogous situation in intuitionistic logic.  Specifically, some or all
+       of axioms ~ ax-4 , ~ ax-5o , ~ ax-6o , ~ ax-9o , ~ ax-10o , ~ ax-11o ,
+       ~ ax-15 , and ~ ax-16 may be proved by theorems ~ ax4 , ~ ax5o ,
+       ~ ax6o , ~ ax9o , ~ ax10o , ~ ax11o , ~ ax15 , and ~ ax16 .  Except for
+       the ones suffixed with o ( ~ ax-5o etc.), we never reference those
+       theorems directly.  Instead, we use the axiom version that immediately
+       follows it.  This allow us to better isolate the uses of the redundant
+       axioms for easier study of subsystems containing them.
+
+       (Contributed by NM, 21-May-2008.)  (Proof shortened by Scott Fenton,
+       24-Jan-2011.) $)
+    ax4 $p |- ( A. x ph -> ph ) $=
+      ( vy wal wi weq ax-9 ax-8 pm2.43i con3i ax-gen ax-17 ax-5 mpsyl mt3 ax-11
+      wn mpi syl2im con2 ax-mp syl mtoi syl6 con4d ) ABDZAEZCBFZQZCDZCBGUGQZUIE
+      ZCDUKUKCDUJULCUHUGUHAUFUHAQZBCFZUMEZBDZUFQUHUNUMUMCDUPUHCCFZUNUQUNQZBDZBC
+      GZUQQZUREZBDVAVABDUSVBBUNUQUNUQBCCHIJKVABLVAURBMNOCBCHRUMCLUMBCPSUPUFUSUT
+      UPAUREZBDZUFUSEUOVCEZBDUPVDEVEBUNATKUOVCBMUAAURBMUBUCUDUEJKUKCLUKUICMNO
+      $.
   $}
 
   ${
