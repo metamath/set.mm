@@ -10034,12 +10034,6 @@ $)
     ( weq wn wal ax-9 wi ax-8 pm2.43i con3i ax-gen ax-5 ax-mp mto ) AACZDZBEZBA
     CZDZBEZBAFPSGZBEQTGUABROROBAAHIJKPSBLMN $.
 
-  $( ~ equid with universal quantifier without using ~ ax-4 or ~ ax-17 .
-     (Contributed by NM, 13-Jan-2011.) $)
-  equidq $p |- A. y x = x $=
-    ( weq wal wn equidqe ax-6 hbequid con3i alrimi mt3 ) AACZBDZLEZBDABFMENBLBG
-    LMABHIJK $.
-
   $( A special case of ~ ax-4 without using ~ ax-4 or ~ ax-17 .  (Contributed
      by NM, 13-Jan-2011.) $)
   ax4sp1 $p |- ( A. y -. x = x -> -. x = x ) $=
