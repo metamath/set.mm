@@ -10650,13 +10650,6 @@ $)
     ( wo wex hbe1 hbor 19.8a orim12i exlimi orc eximi olc jaoi impbii ) ABDZCEZ
     ACEZBCEZDZPTCRSCACFBCFGARBSACHBCHIJRQSAPCABKLBPCBAMLNO $.
 
-  $( Obsolete proof of ~ 19.43 as of 27-Jun-2014.  (Contributed by NM,
-     5-Aug-1993.) $)
-  19.43OLD $p |- ( E. x ( ph \/ ps ) <-> ( E. x ph \/ E. x ps ) ) $=
-    ( wo wn wal wex wa ioran albii 19.26 alnex anbi12i 3bitri notbii df-ex oran
-    3bitr4i ) ABDZEZCFZEACGZEZBCGZEZHZESCGUBUDDUAUFUAAEZBEZHZCFUGCFZUHCFZHUFTUI
-    CABIJUGUHCKUJUCUKUEACLBCLMNOSCPUBUDQR $.
-
   $( The antecedent provides a condition implying the converse of ~ 19.33 .
      Compare Theorem 19.33 of [Margaris] p. 90.  This variation of ~ 19.33b is
      intuitionistically valid with a slight modification of the antecedent.
