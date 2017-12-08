@@ -10929,13 +10929,6 @@ $)
   ax9 $p |- -. A. x -. x = y $=
     ( weq wn wal wi ax-9o modal-b mpg ) ABCZJDAEDZAEFKAKABGJAHI $.
 
-  $( Identity law for equality (reflexivity).  Lemma 6 of [Tarski] p. 68.
-     Alternate proof of ~ equid from older axioms ~ ax-6o and ~ ax-9o .
-     (Contributed by NM, 5-Aug-1993.) $)
-  equidALT $p |- x = x $=
-    ( weq wal wn wi ax-12 pm2.43i alimi ax-9o syl ax-6o pm2.61i ) AABZACZDZACZM
-    PMNEZACMOQAOQAAAFGHMAAIJMAKL $.
-
   ${
     $d x y $.
     $( Identity law for equality (reflexivity).  Lemma 6 of [Tarski] p. 68.
