@@ -4236,6 +4236,75 @@ otherwise it will flag the proof step as invalid.  You can see this
 requirement in the "Distinct variable groups" list on the <A
 HREF="cleljust.html">cleljust</A> page.
 
+
+
+<P>This can be confusing if you don't understand how distinct variables
+restrictions are inherited from referenced axioms or theorems in order
+to satisfy their distinct variable restrictions.  Let us consider an
+example (courtesy of G&eacute;rard Lang).  Naively, one might think that
+<A HREF="ax-12.html">ax-12</A> (which has no distinct variable
+restrictions) is derivable from <A HREF="ax-17.html">ax-17</A>, arguing
+as follows.  Since the letter <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19
+ALT='x' TITLE='x'> has no occurrence in the wff <IMG SRC='_y.gif'
+WIDTH=9 HEIGHT=19 ALT='y' TITLE='y'> <IMG SRC='eq.gif' WIDTH=12
+HEIGHT=19 ALT='=' TITLE='='> <IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'
+TITLE='z'>, one might think that a direct application of <A
+HREF="ax-17.html">ax-17</A> would give (<IMG SRC='_y.gif' WIDTH=9
+HEIGHT=19 ALT='y' TITLE='y'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ALT='=' TITLE='='> <IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'
+TITLE='z'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'
+TITLE='-&gt;'> <IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT='A.'
+TITLE='A.'><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x' TITLE='x'> <IMG
+SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y' TITLE='y'> <IMG SRC='eq.gif'
+WIDTH=12 HEIGHT=19 ALT='=' TITLE='='> <IMG SRC='_z.gif' WIDTH=9
+HEIGHT=19 ALT='z' TITLE='z'>) as a theorem with no distinct variable
+restrictions, so that <A HREF="ax-12.html">ax-12</A> could then be
+easily derived from <A HREF="ax-17.html">ax-17</A> using <A
+HREF="a1i.html">a1i</A>.  In fact, this is not the case because to
+apply <A HREF="ax-17.html">ax-17</A>, we must explicitly ensure that
+<IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x' TITLE='x'> is distinct from
+both <IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y' TITLE='y'> and <IMG
+SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z' TITLE='z'> in <IMG SRC='_y.gif'
+WIDTH=9 HEIGHT=19 ALT='y' TITLE='y'> <IMG SRC='eq.gif' WIDTH=12
+HEIGHT=19 ALT='=' TITLE='='> <IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'
+TITLE='z'>.  This requires adding two distinct variable restrictions on
+<IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y' TITLE='y'> <IMG SRC='eq.gif'
+WIDTH=12 HEIGHT=19 ALT='=' TITLE='='> <IMG SRC='_z.gif' WIDTH=9
+HEIGHT=19 ALT='z' TITLE='z'>.  Otherwise, an allowable substitution
+instance of the unrestricted "theorem" (<IMG SRC='_y.gif' WIDTH=9
+HEIGHT=19 ALT='y' TITLE='y'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ALT='=' TITLE='='> <IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'
+TITLE='z'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'
+TITLE='-&gt;'> <IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT='A.'
+TITLE='A.'><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x' TITLE='x'> <IMG
+SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y' TITLE='y'> <IMG SRC='eq.gif'
+WIDTH=12 HEIGHT=19 ALT='=' TITLE='='> <IMG SRC='_z.gif' WIDTH=9
+HEIGHT=19 ALT='z' TITLE='z'>) would give us (<IMG SRC='_x.gif' WIDTH=10
+HEIGHT=19 ALT='x' TITLE='x'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ALT='=' TITLE='='> <IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'
+TITLE='z'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'
+TITLE='-&gt;'> <IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT='A.'
+TITLE='A.'><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x' TITLE='x'> <IMG
+SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x' TITLE='x'> <IMG SRC='eq.gif'
+WIDTH=12 HEIGHT=19 ALT='=' TITLE='='> <IMG SRC='_z.gif' WIDTH=9
+HEIGHT=19 ALT='z' TITLE='z'>), which violates the <A
+HREF="ax-17.html">ax-17</A> requirement since <IMG SRC='_x.gif' WIDTH=10
+HEIGHT=19 ALT='x' TITLE='x'> does appear in <IMG SRC='_x.gif' WIDTH=10
+HEIGHT=19 ALT='x' TITLE='x'> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19
+ALT='=' TITLE='='> <IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'
+TITLE='z'> for this substitution instance.  Another way to look at it is
+that we cannot "cheat" the distinct variable requirement of <A
+HREF="ax-17.html">ax-17</A> by going through two levels of substitution
+(and any Metamath proof verifier will complain if you try).  In fact, we
+can conclude from <A HREF="ax-17.html">ax-17</A> only the very
+restricted theorem <A HREF="ax12w.html">ax12w</A>, which because of its
+distinct variable restrictions is much weaker than axiom <A
+HREF="ax-12.html">ax-12</A>.  We say that the distinct variable
+conditions in <A HREF="ax12w.html">ax12w</A> are inherited from <A
+HREF="ax-17.html">ax-17</A>.
+
+
+
 <P>In the Metamath language, distinct variable requirements are
 specified with $d statements, placed before an assertion
 ($a or $p) and  in the same scope.  Each theorem must be accompanied by
@@ -4285,13 +4354,15 @@ understand it better.
 -->
 
 
-<P>For a dynamic example of distinct variables in action,
+<P>For a dynamic example of distinct variable inheritance in action,
 enter the <A HREF="../mmsolitaire/mms.html#q7">first proof</A> of
 <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'><IMG SRC='eq.gif'
 WIDTH=12 HEIGHT=19 ALT='='><IMG SRC='_x.gif' WIDTH=10
 HEIGHT=19 ALT='x'>
- into the Metamath Solitaire applet.  Watch the transformation of the
-distinct variable requirement that appears at the tenth step (ax-16).
+ into the Metamath Solitaire applet, which automatically computes
+the distinct variable requirements needed for a theorem being
+proved.  Watch the transformation of the
+distinct variable requirement that is inherited at the tenth step (ax-16).
 
 <P>Constants are considered distinct from all variables and never
 appear (nor are allowed to appear) in a distinct variable group.
@@ -6100,7 +6171,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 8-Oct-2017.</FONT></I><BR><FONT
+ page was last updated on 8-Dec-2017.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
