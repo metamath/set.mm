@@ -5318,8 +5318,9 @@ $)
       ( wn wo wi pm2.21 ax-1 jaoi ax-mp ) ADZBEABFZCKLBABGBAHIJ $.
   $}
 
-  $( Negated disjunction in terms of conjunction (DeMorgan's law).  Compare
-     Theorem *4.56 of [WhiteheadRussell] p. 120.  (Contributed by NM,
+  $( Negated disjunction in terms of conjunction.  This version of DeMorgan's
+     law holds in intuitionistic logic, unlike ~ oran , ~ anor , or ~ ianor .
+     Compare Theorem *4.56 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      5-Aug-1993.)  (Revised by Mario Carneiro, 31-Jan-2015.) $)
   ioran $p |- ( -. ( ph \/ ps ) <-> ( -. ph /\ -. ps ) ) $=
     ( wo wn wa pm2.45 pm2.46 jca simpl con2i simpr jaoi impbii ) ABCZDZADZBDZEZ
@@ -6356,18 +6357,6 @@ $( This section makes our first use of the third axiom of propositonal
   pm4.66 $p |- ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) $=
     ( wn pm4.64 ) ABCD $.
 
-  $( Negated conjunction in terms of disjunction (DeMorgan's law).  Theorem
-     *4.51 of [WhiteheadRussell] p. 120.  (Contributed by NM, 5-Aug-1993.)
-     (Proof shortened by Andrew Salmon, 13-May-2011.) $)
-  ianor $p |- ( -. ( ph /\ ps ) <-> ( -. ph \/ -. ps ) ) $=
-    ( wa wn wi wo imnan pm4.62 bitr3i ) ABCDABDZEADJFABGABHI $.
-
-  $( Conjunction in terms of disjunction (DeMorgan's law).  Theorem *4.5 of
-     [WhiteheadRussell] p. 120.  (Contributed by NM, 5-Aug-1993.)  (Proof
-     shortened by Wolf Lammen, 3-Nov-2012.) $)
-  anor $p |- ( ( ph /\ ps ) <-> -. ( -. ph \/ -. ps ) ) $=
-    ( wn wo wa ianor bicomi con2bii ) ACBCDZABEZJCIABFGH $.
-
   $( Absorption of disjunction into equivalence.  (Contributed by NM,
      6-Aug-1995.)  (Proof shortened by Wolf Lammen, 3-Nov-2013.) $)
   oibabs $p |- ( ( ( ph \/ ps ) -> ( ph <-> ps ) ) <-> ( ph <-> ps ) ) $=
@@ -6403,32 +6392,6 @@ $( This section makes our first use of the third axiom of propositonal
      3-Jan-2005.) $)
   pm4.56 $p |- ( ( -. ph /\ -. ps ) <-> -. ( ph \/ ps ) ) $=
     ( wo wn wa ioran bicomi ) ABCDADBDEABFG $.
-
-  $( Disjunction in terms of conjunction (DeMorgan's law).  Compare Theorem
-     *4.57 of [WhiteheadRussell] p. 120.  (Contributed by NM, 5-Aug-1993.)
-     (Proof shortened by Andrew Salmon, 7-May-2011.) $)
-  oran $p |- ( ( ph \/ ps ) <-> -. ( -. ph /\ -. ps ) ) $=
-    ( wn wa wo pm4.56 con2bii ) ACBCDABEABFG $.
-
-  $( Theorem *4.57 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.57 $p |- ( -. ( -. ph /\ -. ps ) <-> ( ph \/ ps ) ) $=
-    ( wo wn wa oran bicomi ) ABCADBDEDABFG $.
-
-  $( Theorem *3.11 of [WhiteheadRussell] p. 111.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm3.11 $p |- ( -. ( -. ph \/ -. ps ) -> ( ph /\ ps ) ) $=
-    ( wa wn wo anor biimpri ) ABCADBDEDABFG $.
-
-  $( Theorem *3.12 of [WhiteheadRussell] p. 111.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm3.12 $p |- ( ( -. ph \/ -. ps ) \/ ( ph /\ ps ) ) $=
-    ( wn wo wa pm3.11 orri ) ACBCDABEABFG $.
-
-  $( Theorem *3.13 of [WhiteheadRussell] p. 111.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm3.13 $p |- ( -. ( ph /\ ps ) -> ( -. ph \/ -. ps ) ) $=
-    ( wn wo wa pm3.11 con1i ) ACBCDABEABFG $.
 
   $( Theorem *4.78 of [WhiteheadRussell] p. 121.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 19-Nov-2012.) $)
@@ -6918,16 +6881,6 @@ $)
     ( wa an4 biimpi an42 biimpri jca adantl impbii ) ABECDEEZACEBDEEZADEBCEEZEM
     NOMNABCDFGOMADBCHZIJOMNOMPGKL $.
 
-  $( A single axiom for Boolean algebra known as DN_1.  See
-     ~ http://www-unix.mcs.anl.gov/~~mccune/papers/basax/v12.pdf .
-     (Contributed by Jeffrey Hankins, 3-Jul-2009.)  (Proof shortened by Andrew
-     Salmon, 13-May-2011.)  (Proof shortened by Wolf Lammen, 6-Jan-2013.) $)
-  dn1 $p |- ( -. ( -. ( -. ( ph \/ ps ) \/ ch ) \/
-            -. ( ph \/ -. ( -. ch \/ -. ( ch \/ th ) ) ) ) <-> ch ) $=
-    ( wo wn wa wi pm2.45 imnan mpbi biorfi orcom ordir 3bitri pm4.45 anor bitri
-    orbi2i anbi2i 3bitrri ) CABEFZCEZACEZGZUCACFCDEZFEFZEZGUCFUHFEFCCUBAGZEUICE
-    UEUICUBAFHUIFABIUBAJKLCUIMUBACNOUDUHUCCUGACCUFGUGCDPCUFQRSTUCUHQUA $.
-
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Abbreviated conjunction and disjunction of three wff's
@@ -6993,18 +6946,6 @@ $)
   $( Reversal law for triple conjunction.  (Contributed by NM, 21-Apr-1994.) $)
   3anrev $p |- ( ( ph /\ ps /\ ch ) <-> ( ch /\ ps /\ ph ) ) $=
     ( w3a 3ancoma 3anrot bitr4i ) ABCDBACDCBADABCECBAFG $.
-
-  $( Triple conjunction expressed in terms of triple disjunction.  (Contributed
-     by Jeff Hankins, 15-Aug-2009.) $)
-  3anor $p |- ( ( ph /\ ps /\ ch ) <-> -. ( -. ph \/ -. ps \/ -. ch ) ) $=
-    ( w3a wa wn w3o df-3an wo anor ianor orbi1i xchbinx df-3or xchbinxr bitri )
-    ABCDABEZCEZAFZBFZCFZGZFABCHRSTIZUAIZUBRQFZUAIUDQCJUEUCUAABKLMSTUANOP $.
-
-  $( Negated triple conjunction expressed in terms of triple disjunction.
-     (Contributed by Jeff Hankins, 15-Aug-2009.)  (Proof shortened by Andrew
-     Salmon, 13-May-2011.) $)
-  3ianor $p |- ( -. ( ph /\ ps /\ ch ) <-> ( -. ph \/ -. ps \/ -. ch ) ) $=
-    ( wn w3o w3a 3anor con2bii bicomi ) ADBDCDEZABCFZDKJABCGHI $.
 
   $( Negated triple disjunction as triple conjunction.  (Contributed by Scott
      Fenton, 19-Apr-2011.) $)
@@ -14160,6 +14101,74 @@ $)
      NM, 3-Jan-2005.) $)
   pm4.81 $p |- ( ( -. ph -> ph ) <-> ph ) $=
     ( wn wi pm2.18 pm2.24 impbii ) ABACAADAAEF $.
+
+  $( Negated conjunction in terms of disjunction (DeMorgan's law).  Theorem
+     *4.51 of [WhiteheadRussell] p. 120.  As an equivalence, this does not hold
+     intuitionistically, but the reverse direction does hold and is at
+     ~ pm3.14 .  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
+     Salmon, 13-May-2011.) $)
+  ianor $p |- ( -. ( ph /\ ps ) <-> ( -. ph \/ -. ps ) ) $=
+    ( wa wn wi wo imnan pm4.62 bitr3i ) ABCDABDZEADJFABGABHI $.
+
+  $( Conjunction in terms of disjunction (DeMorgan's law).  Theorem *4.5 of
+     [WhiteheadRussell] p. 120.  As an equivalence, this does not hold
+     intuitionistically, but the forward direction is proved intuitionistically
+     at ~ pm3.1 .  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
+     Lammen, 3-Nov-2012.) $)
+  anor $p |- ( ( ph /\ ps ) <-> -. ( -. ph \/ -. ps ) ) $=
+    ( wn wo wa ianor bicomi con2bii ) ACBCDZABEZJCIABFGH $.
+
+  $( Disjunction in terms of conjunction (DeMorgan's law).  Compare Theorem
+     *4.57 of [WhiteheadRussell] p. 120.  As an equivalence, this does not hold
+     intuitionistically, but it would be possible to prove the forward
+     direction.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
+     Salmon, 7-May-2011.) $)
+  oran $p |- ( ( ph \/ ps ) <-> -. ( -. ph /\ -. ps ) ) $=
+    ( wn wa wo pm4.56 con2bii ) ACBCDABEABFG $.
+
+  $( Theorem *3.11 of [WhiteheadRussell] p. 111.  This one does not hold
+     intuitionistically, but the converse, ~ pm3.1 , does.  (Contributed by NM,
+     3-Jan-2005.) $)
+  pm3.11 $p |- ( -. ( -. ph \/ -. ps ) -> ( ph /\ ps ) ) $=
+    ( wa wn wo anor biimpri ) ABCADBDEDABFG $.
+
+  $( Theorem *4.57 of [WhiteheadRussell] p. 120.  (Contributed by NM,
+     3-Jan-2005.) $)
+  pm4.57 $p |- ( -. ( -. ph /\ -. ps ) <-> ( ph \/ ps ) ) $=
+    ( wo wn wa oran bicomi ) ABCADBDEDABFG $.
+
+  $( Triple conjunction expressed in terms of triple disjunction.  (Contributed
+     by Jeff Hankins, 15-Aug-2009.) $)
+  3anor $p |- ( ( ph /\ ps /\ ch ) <-> -. ( -. ph \/ -. ps \/ -. ch ) ) $=
+    ( w3a wa wn w3o df-3an wo anor ianor orbi1i xchbinx df-3or xchbinxr bitri )
+    ABCDABEZCEZAFZBFZCFZGZFABCHRSTIZUAIZUBRQFZUAIUDQCJUEUCUAABKLMSTUANOP $.
+
+  $( Negated triple conjunction expressed in terms of triple disjunction.
+     (Contributed by Jeff Hankins, 15-Aug-2009.)  (Proof shortened by Andrew
+     Salmon, 13-May-2011.) $)
+  3ianor $p |- ( -. ( ph /\ ps /\ ch ) <-> ( -. ph \/ -. ps \/ -. ch ) ) $=
+    ( wn w3o w3a 3anor con2bii bicomi ) ADBDCDEZABCFZDKJABCGHI $.
+
+  $( Theorem *3.12 of [WhiteheadRussell] p. 111.  (Contributed by NM,
+     3-Jan-2005.) $)
+  pm3.12 $p |- ( ( -. ph \/ -. ps ) \/ ( ph /\ ps ) ) $=
+    ( wn wo wa pm3.11 orri ) ACBCDABEABFG $.
+
+  $( Theorem *3.13 of [WhiteheadRussell] p. 111.  This does not hold
+     intuitionistically, but the converse, ~ pm3.14 , does.  (Contributed by
+     NM, 3-Jan-2005.) $)
+  pm3.13 $p |- ( -. ( ph /\ ps ) -> ( -. ph \/ -. ps ) ) $=
+    ( wn wo wa pm3.11 con1i ) ACBCDABEABFG $.
+
+  $( A single axiom for Boolean algebra known as DN_1.  See
+     ~ http://www-unix.mcs.anl.gov/~~mccune/papers/basax/v12.pdf .
+     (Contributed by Jeffrey Hankins, 3-Jul-2009.)  (Proof shortened by Andrew
+     Salmon, 13-May-2011.)  (Proof shortened by Wolf Lammen, 6-Jan-2013.) $)
+  dn1 $p |- ( -. ( -. ( -. ( ph \/ ps ) \/ ch ) \/
+            -. ( ph \/ -. ( -. ch \/ -. ( ch \/ th ) ) ) ) <-> ch ) $=
+    ( wo wn wa wi pm2.45 imnan mpbi biorfi orcom ordir 3bitri pm4.45 anor bitri
+    orbi2i anbi2i 3bitrri ) CABEFZCEZACEZGZUCACFCDEZFEFZEZGUCFUHFEFCCUBAGZEUICE
+    UEUICUBAFHUIFABIUBAJKLCUIMUBACNOUDUHUCCUGACCUFGUGCDPCUFQRSTUCUHQUA $.
 
   $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
      of Lukasiewicz.  Using ~ dfor2 , we can see that this essentially
