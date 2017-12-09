@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Nov-2017
+$( iset.mm - Version of 9-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -8974,14 +8974,26 @@ $)
   $}
 
   ${
+    ecased.1 $e |- ( ph -> -. ch ) $.
+    ecased.2 $e |- ( ph -> ( ps \/ ch ) ) $.
+    $( Elimination by cases based on a disjunction (rather than an implication)
+       does hold intuitionistically.  However, it is more of a curiousity than
+       something useful in proofs, because in intuitionistic logic it will be
+       just as hard to prove ` ph \/ ps ` as it would be to prove one of ` ph `
+       or ` ps ` .  (Contributed by Jim Kingdon, 9-Dec-2017.) $)
+    ecased $p |- ( ph -> ps ) $=
+      ( wn wo wa jca orel2 imp syl ) ACFZBCGZHBAMNDEI
+      MNBCBJKL $.
+  $}
+
+  ${
     ecase23d.1 $e |- ( ph -> -. ch ) $.
     ecase23d.2 $e |- ( ph -> -. th ) $.
     ecase23d.3 $e |- ( ph -> ( ps \/ ch \/ th ) ) $.
-    $( Deduction for elimination by cases.  (Contributed by NM, 22-Apr-1994.)
-       (Revised by NM, 15-Jul-2005.) $)
+    $( Variation of ~ ecased with three disjuncts instead of two.  (Contributed
+       by NM, 22-Apr-1994.)  (Revised by Jim Kingdon, 9-Dec-2017.) $)
     ecase23d $p |- ( ph -> ps ) $=
-      ( wo wn ioran sylanbrc w3o 3orass sylib ord mt3d ) ABCDHZACIDIQIEFCDJKABQ
-      ABCDLBQHGBCDMNOP $.
+      ( wo w3o df-3or sylib ecased ) ABCEABCHZDFABCDIMDHGBCDJKLL $.
   $}
 
 $(
