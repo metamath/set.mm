@@ -5889,31 +5889,6 @@ $( This section makes our first use of the third axiom of propositonal
     ( wi pm2.21 con1i ) AABCABDE $.
 
   ${
-    mt4.1 $e |- ph $.
-    mt4.2 $e |- ( -. ps -> -. ph ) $.
-    $( The rule of modus tollens.  (Contributed by Wolf Lammen,
-       12-May-2013.) $)
-    mt4 $p |- ps $=
-      ( con4i ax-mp ) ABCBADEF $.
-  $}
-
-  ${
-    mt4d.1 $e |- ( ph -> ps ) $.
-    mt4d.2 $e |- ( ph -> ( -. ch -> -. ps ) ) $.
-    $( Modus tollens deduction.  (Contributed by NM, 9-Jun-2006.) $)
-    mt4d $p |- ( ph -> ch ) $=
-      ( con4d mpd ) ABCDACBEFG $.
-  $}
-
-  ${
-    mt4i.1 $e |- ch $.
-    mt4i.2 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
-    $( Modus tollens inference.  (Contributed by Wolf Lammen, 12-May-2013.) $)
-    mt4i $p |- ( ph -> ps ) $=
-      ( a1i mt4d ) ACBCADFEG $.
-  $}
-
-  ${
     pm2.61d.1 $e |- ( ph -> ( ps -> ch ) ) $.
     pm2.61d.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
     $( Deduction eliminating an antecedent.  (Contributed by NM, 27-Apr-1994.)
@@ -8977,7 +8952,7 @@ $)
     ecased.1 $e |- ( ph -> -. ch ) $.
     ecased.2 $e |- ( ph -> ( ps \/ ch ) ) $.
     $( Elimination by cases based on a disjunction (rather than an implication)
-       does hold intuitionistically.  However, it is more of a curiousity than
+       does hold intuitionistically.  However, it is more of a curiosity than
        something useful in proofs, because in intuitionistic logic it will be
        just as hard to prove ` ph \/ ps ` as it would be to prove one of ` ph `
        or ` ps ` .  (Contributed by Jim Kingdon, 9-Dec-2017.) $)
