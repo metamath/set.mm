@@ -213,8 +213,9 @@ accompanied by citations.  Some closely followed texts include the following:
       class abstractions, which is essential to our development.)
   Construction of real and complex numbers - [Gleason]
   Theorems about real numbers - [Apostol]
-  Intuitionistic propositional and predicate logic - (placeholder for
-    future citations)
+  Intuitionistic logic and constructive mathematics - [Bauer] is an sampling
+    of theorems and arguments which give a flavor of constructive mathematics.
+    [Heyting] is a more comprehensive treatment of intuitionistic logic.
 
 3. Convention:  All $a statements starting with "|-" have labels
 starting with "ax-" (axioms) or "df-" (definitions).  "ax-" corresponds
@@ -4562,7 +4563,8 @@ $)
       ( nsyl3 con2i ) CAABCDEFG $.
   $}
 
-  $( Converse of double negation.  Theorem *2.12 of [WhiteheadRussell] p. 101.
+  $( Adding double negation.  Theorem *2.12 of [WhiteheadRussell] p. 101.  This
+     one holds intuitionistically, but its converse, ~ notnot2 , does not.
      (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen,
      2-Mar-2013.) $)
   notnot1 $p |- ( ph -> -. -. ph ) $=
@@ -4728,8 +4730,13 @@ $)
     ( wn wi pm2.21 imim1i ) ADABECABFG $.
 
   $( Theorem *2.65 of [WhiteheadRussell] p. 107.  Proof by contradiction.
-     (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen,
-     8-Mar-2013.) $)
+     Proofs, such as this one, which assume a proposition, here ` ph ` , derive
+     a contradiction, and therefore conclude ` -. ph ` , are valid
+     intuitionistically (and can be called "proof of negation", for example by
+     [Bauer] p. 482).  By contrast, proofs which assume ` -. ph ` , derive a
+     contradiction, and conclude ` ph ` , such as ~ condan , are not valid
+     intuitionistically.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
+     Wolf Lammen, 8-Mar-2013.) $)
   pm2.65 $p |- ( ( ph -> ps ) -> ( ( ph -> -. ps ) -> -. ph ) ) $=
     ( wi wn pm2.27 con2d a2i ) ABCAABDZCZABIDAIBAHEFGF $.
 
@@ -5142,8 +5149,9 @@ $)
       ( wa wi adantrd adantld jaoi ) ABEHCIDABCEFJDECBGKL $.
   $}
 
-  $( Theorem *2.53 of [WhiteheadRussell] p. 107.  (Contributed by NM,
-     3-Jan-2005.)  (Revised by NM, 31-Jan-2015.) $)
+  $( Theorem *2.53 of [WhiteheadRussell] p. 107.  This holds
+     intuitionistically, although its converse, ~ pm2.54 , does not.
+     (Contributed by NM, 3-Jan-2005.)  (Revised by NM, 31-Jan-2015.) $)
   pm2.53 $p |- ( ( ph \/ ps ) -> ( -. ph -> ps ) ) $=
     ( wn wi pm2.24 ax-1 jaoi ) AACZBDBABEBHFG $.
 
@@ -5782,18 +5790,12 @@ $( This section makes our first use of the third axiom of propositonal
       ( wn wi pm2.18 syl ) ABDBEBCBFG $.
   $}
 
-  $( Converse of double negation.  Theorem *2.14 of [WhiteheadRussell] p. 102.
-     (Contributed by NM, 5-Aug-1993.)  (Proof shortened by David Harvey,
+  $( Double negation elimination.  Theorem *2.14 of [WhiteheadRussell] p. 102.
+     This does not hold intuitionistically, although its coverse, ~ notnot1 ,
+     does.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by David Harvey,
      5-Sep-1999.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
   notnot2 $p |- ( -. -. ph -> ph ) $=
     ( wn pm2.21 pm2.18d ) ABZBAEACD $.
-
-  ${
-    negai.1 $e |- -. -. ph $.
-    $( Inference from double negation.  (Contributed by NM, 27-Feb-2008.) $)
-    notnotri $p |- ph $=
-      ( wn notnot2 ax-mp ) ACCABADE $.
-  $}
 
   ${
     con1d.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
@@ -5823,15 +5825,6 @@ $( This section makes our first use of the third axiom of propositonal
        shortened by Wolf Lammen, 15-Sep-2012.) $)
     mt3i $p |- ( ph -> ps ) $=
       ( wn a1i mt3d ) ABCCFADGEH $.
-  $}
-
-  ${
-    mt3.1 $e |- -. ps $.
-    mt3.2 $e |- ( -. ph -> ps ) $.
-    $( A rule similar to modus tollens.  (Contributed by NM, 18-May-1994.)
-       (Proof shortened by Wolf Lammen, 11-Sep-2013.) $)
-    mt3 $p |- ph $=
-      ( wn mto notnotri ) AAEBCDFG $.
   $}
 
   ${
@@ -6227,15 +6220,6 @@ $( This section makes our first use of the third axiom of propositonal
   pm4.15 $p |- ( ( ( ph /\ ps ) -> -. ch ) <-> ( ( ps /\ ch ) -> -. ph ) ) $=
     ( wa wn wi con2b nan bitr2i ) BCDZAEFAJEFABDCEFJAGABCHI $.
 
-  ${
-    condan.1 $e |- ( ( ph /\ -. ps ) -> ch ) $.
-    condan.2 $e |- ( ( ph /\ -. ps ) -> -. ch ) $.
-    $( Proof by contradiction.  (Contributed by NM, 9-Feb-2006.)  (Proof
-       shortened by Wolf Lammen, 19-Jun-2014.) $)
-    condan $p |- ( ph -> ps ) $=
-      ( wn pm2.65da notnot2 syl ) ABFZFBAJCDEGBHI $.
-  $}
-
   $( Conjunction distributes over exclusive-or, using ` -. ( ph <-> ps ) ` to
      express exclusive-or.  This is one way to interpret the distributive law
      of multiplication over addition in modulo 2 arithmetic.  (Contributed by
@@ -6244,8 +6228,9 @@ $( This section makes our first use of the third axiom of propositonal
                 -. ( ( ph /\ ps ) <-> ( ph /\ ch ) ) ) $=
     ( wb wn wa wi annim pm5.32 xchbinx ) ABCDZEFAKGABFACFDAKHABCIJ $.
 
-  $( Theorem *2.54 of [WhiteheadRussell] p. 107.  (Contributed by NM,
-     3-Jan-2005.) $)
+  $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
+     intuitionistically, although its coverse, ~ pm2.53 , does.  (Contributed
+     by NM, 3-Jan-2005.) $)
   pm2.54 $p |- ( ( -. ph -> ps ) -> ( ph \/ ps ) ) $=
     ( wn wo notnot2 orc syl olc ja ) ACZBABDZJCAKAEABFGBAHI $.
 
@@ -14082,6 +14067,35 @@ $(
 Classical (not intuitionistic) results
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
+
+  ${
+    negai.1 $e |- -. -. ph $.
+    $( Inference from double negation.  (Contributed by NM, 27-Feb-2008.) $)
+    notnotri $p |- ph $=
+      ( wn notnot2 ax-mp ) ACCABADE $.
+  $}
+
+  ${
+    mt3.1 $e |- -. ps $.
+    mt3.2 $e |- ( -. ph -> ps ) $.
+    $( A rule similar to modus tollens.  (Contributed by NM, 18-May-1994.)
+       (Proof shortened by Wolf Lammen, 11-Sep-2013.) $)
+    mt3 $p |- ph $=
+      ( wn mto notnotri ) AAEBCDFG $.
+  $}
+
+  ${
+    condan.1 $e |- ( ( ph /\ -. ps ) -> ch ) $.
+    condan.2 $e |- ( ( ph /\ -. ps ) -> -. ch ) $.
+    $( Proof by contradiction.  This does not hold intuitionistically, as it is
+       part of the family of theorems which assume ` -. ps ` , derive a
+       contradiction, and therefore conclude ` ps ` .  By contrast, assuming
+       ` ps ` , deriving a contradiction, and therefore concluding ` -. ps ` ,
+       as in ~ pm2.65 , is valid intuitionistically.  (Contributed by NM,
+       9-Feb-2006.)  (Proof shortened by Wolf Lammen, 19-Jun-2014.) $)
+    condan $p |- ( ph -> ps ) $=
+      ( wn pm2.65da notnot2 syl ) ABFZFBAJCDEGBHI $.
+  $}
 
   $( Theorem *4.81 of [WhiteheadRussell] p. 122.  This one does not hold
      intuitionistically, but compare with ~ pm4.8 which does.  (Contributed by
