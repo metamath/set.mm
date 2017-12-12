@@ -10486,14 +10486,6 @@ $)
       ( wi wex wal 19.35-1 ax-mp ) ABECFACGBCFEDABCHI $.
   $}
 
-  ${
-    19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
-    $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
-    19.35ri $p |- E. x ( ph -> ps ) $=
-      ( wi wex wal 19.35 mpbir ) ABECFACGBCFEDABCHI $.
-  $}
-
   $( Theorem 19.25 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
      (Revised by NM, 2-Feb-2015.) $)
   19.25 $p |- ( A. y E. x ( ph -> ps ) ->
@@ -10727,11 +10719,6 @@ $)
       ( wo wex 19.45 exbii hbex 19.44 bitri ) ABGDHZCHABDHZGZCHACHOGNPCABDEIJAO
       CBCDFKLM $.
   $}
-
-  $( Quantified "excluded middle."  Exercise 9.2a of Boolos, p. 111,
-     _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
-  qexmid $p |- E. x ( ph -> A. x ph ) $=
-    ( wal 19.8a 19.35ri ) AABCZBFBDE $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -14232,6 +14219,19 @@ $)
     4cases $p |- ch $=
       ( pm2.61ian wn pm2.61i ) BCABCDFHABICEGHJ $.
   $}
+
+  ${
+    19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
+    $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
+       5-Aug-1993.) $)
+    19.35ri $p |- E. x ( ph -> ps ) $=
+      ( wi wex wal 19.35 mpbir ) ABECFACGBCFEDABCHI $.
+  $}
+
+  $( Quantified "excluded middle."  Exercise 9.2a of Boolos, p. 111,
+     _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
+  qexmid $p |- E. x ( ph -> A. x ph ) $=
+    ( wal 19.8a 19.35ri ) AABCZBFBDE $.
 
   ${
     $d x y $.  $d y ph $.
