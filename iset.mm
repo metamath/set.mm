@@ -10570,8 +10570,7 @@ $)
     ( wex excomim impbii ) ACDBDABDCDABCEACBEF $.
 
   $( Theorem 19.12 of [Margaris] p. 89.  Assuming the converse is a mistake
-     sometimes made by beginners!  But sometimes the converse does hold, as in
-     ~ 19.12vv .  (Contributed by NM, 5-Aug-1993.) $)
+     sometimes made by beginners!  (Contributed by NM, 5-Aug-1993.) $)
   19.12 $p |- ( E. x A. y ph -> A. y E. x ph ) $=
     ( wal wex hba1 hbex ax-4 eximi alrimi ) ACDZBEABECKCBACFGKABACHIJ $.
 
@@ -10580,13 +10579,6 @@ $)
     $( Theorem 19.19 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
     19.19 $p |- ( A. x ( ph <-> ps ) -> ( ph <-> E. x ps ) ) $=
       ( wex wb wal 19.9 exbi syl5bbr ) AACEABFCGBCEACDHABCIJ $.
-  $}
-
-  ${
-    19.36.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.36 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-    19.36 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
-      ( wi wex wal 19.35 19.9 imbi2i bitri ) ABECFACGZBCFZELBEABCHMBLBCDIJK $.
   $}
 
   ${
@@ -12404,29 +12396,11 @@ $)
 
   ${
     $d x ps $.
-    $( Special case of Theorem 19.36 of [Margaris] p. 90.  (Contributed by NM,
-       18-Aug-1993.) $)
-    19.36v $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
-      ( ax-17 19.36 ) ABCBCDE $.
-  $}
-
-  ${
-    $d x ps $.
     19.36aiv.1 $e |- E. x ( ph -> ps ) $.
     $( Inference from Theorem 19.36 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.) $)
     19.36aiv $p |- ( A. x ph -> ps ) $=
       ( ax-17 19.36i ) ABCBCEDF $.
-  $}
-
-  ${
-    $d x ps $.  $d y ph $.
-    $( Special case of ~ 19.12 where its converse holds.  (Contributed by NM,
-       18-Jul-2001.)  (Revised by Andrew Salmon, 11-Jul-2011.) $)
-    19.12vv $p |- ( E. x A. y ( ph -> ps ) <-> A. y E. x ( ph -> ps ) ) $=
-      ( wal wex 19.21v exbii ax-17 hbal 19.36 19.36v albii 19.21 bitr2i 3bitri
-      wi ) ABQZDEZCFABDEZQZCFACEZTQZRCFZDEZSUACABDGHATCBCDBCIJKUEUBBQZDEUCUDUFD
-      ABCLMUBBDADCADIJNOP $.
   $}
 
   ${
@@ -14165,6 +14139,33 @@ $)
      than intuitionistic, results.  (Contributed by NM, 12-Aug-2004.) $)
   looinv $p |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) $=
     ( wi imim1 peirce syl6 ) ABCZBCBACGACAGBADABEF $.
+
+  ${
+    19.36.1 $e |- ( ps -> A. x ps ) $.
+    $( Theorem 19.36 of [Margaris] p. 90.  Also see ~ 19.36i where we have an
+       intuitionistic proof of the forward direction of this theorem.
+       (Contributed by NM, 5-Aug-1993.) $)
+    19.36 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
+      ( wi wex wal 19.35 19.9 imbi2i bitri ) ABECFACGZBCFZELBEABCHMBLBCDIJK $.
+  $}
+
+  ${
+    $d x ps $.
+    $( Special case of Theorem 19.36 of [Margaris] p. 90.  (Contributed by NM,
+       18-Aug-1993.) $)
+    19.36v $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
+      ( ax-17 19.36 ) ABCBCDE $.
+  $}
+
+  ${
+    $d x ps $.  $d y ph $.
+    $( Special case of ~ 19.12 where its converse holds.  (Contributed by NM,
+       18-Jul-2001.)  (Revised by Andrew Salmon, 11-Jul-2011.) $)
+    19.12vv $p |- ( E. x A. y ( ph -> ps ) <-> A. y E. x ( ph -> ps ) ) $=
+      ( wal wex 19.21v exbii ax-17 hbal 19.36 19.36v albii 19.21 bitr2i 3bitri
+      wi ) ABQZDEZCFABDEZQZCFACEZTQZRCFZDEZSUACABDGHATCBCDBCIJKUEUBBQZDEUCUDUFD
+      ABCLMUBBDADCADIJNOP $.
+  $}
 
   $( Theorem 19.14 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
