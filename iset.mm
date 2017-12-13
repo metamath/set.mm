@@ -10228,22 +10228,6 @@ $)
   $}
 
   ${
-    19.32.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.32 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-    19.32 $p |- ( A. x ( ph \/ ps ) <-> ( ph \/ A. x ps ) ) $=
-      ( wn wi wal wo hbn 19.21 df-or albii 3bitr4i ) AEZBFZCGNBCGZFABHZCGAPHNBC
-      ACDIJQOCABKLAPKM $.
-  $}
-
-  ${
-    19.31.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.31 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-    19.31 $p |- ( A. x ( ph \/ ps ) <-> ( A. x ph \/ ps ) ) $=
-      ( wo wal 19.32 orcom albii 3bitr4i ) BAEZCFBACFZEABEZCFLBEBACDGMKCABHILBH
-      J $.
-  $}
-
-  ${
     hbim1.1 $e |- ( ph -> A. x ph ) $.
     hbim1.2 $e |- ( ph -> ( ps -> A. x ps ) ) $.
     $( A closed form of ~ hbim .  (Contributed by NM, 5-Aug-1993.) $)
@@ -13186,6 +13170,22 @@ $)
      Wolf Lammen, 9-Oct-2012.) $)
   peirce $p |- ( ( ( ph -> ps ) -> ph ) -> ph ) $=
     ( wi simplim id ja ) ABCAAABDAEF $.
+
+  ${
+    19.32.1 $e |- ( ph -> A. x ph ) $.
+    $( Theorem 19.32 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.32 $p |- ( A. x ( ph \/ ps ) <-> ( ph \/ A. x ps ) ) $=
+      ( wn wi wal wo hbn 19.21 df-or albii 3bitr4i ) AEZBFZCGNBCGZFABHZCGAPHNBC
+      ACDIJQOCABKLAPKM $.
+  $}
+
+  ${
+    19.31.1 $e |- ( ps -> A. x ps ) $.
+    $( Theorem 19.31 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.31 $p |- ( A. x ( ph \/ ps ) <-> ( A. x ph \/ ps ) ) $=
+      ( wo wal 19.32 orcom albii 3bitr4i ) BAEZCFBACFZEABEZCFLBEBACDGMKCABHILBH
+      J $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
