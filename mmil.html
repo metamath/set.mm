@@ -197,9 +197,9 @@ if &not;&not;<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
 <P>The next 4  new axioms
 (<A HREF="ax-ial.html">ax-ial</A>,
 <A HREF="ax-i5r.html">ax-i5r</A>,
-<A HREF="ax-ia1.html">ax-ia1</A>
+<A HREF="ax-ie1.html">ax-ie1</A>
 and
-<A HREF="ax-ia2.html">ax-ia2</A>)
+<A HREF="ax-ie2.html">ax-ie2</A>)
 being added to
 <A HREF="ax-4.html">ax-4</A>,
 <A HREF="ax-5.html">ax-5</A>,
@@ -359,7 +359,212 @@ which in intuitionistic logic is not the same as <FONT COLOR="#0000FF"><I>&phi;<
 the biconditional, such as <A HREF="dfbi1.html">dfbi1</a> or <A HREF="dfbi3.html">dfbi3</a>,
 however, are classical rather than intuitionistic results (following the proofs on those pages shows they depend on ax-3).</P>
 
-<P>(Placeholder for future addition of predicate logic axioms)</P>
+<P><A NAME="pcaxioms"></A><B><FONT COLOR="#006633">Predicate
+logic</FONT></B> adds set variables (individual variables) and the ability to quantify
+them with &#x2200; (for-all) and &#x2203; (there-exists). Unlike in classical logic, &#x2203;
+cannot be defined in terms of &#x2200;. As in classical logic, we also add = for equality
+(which is key to how we handle substitution in metamath) and &#x2208; (which for current
+purposes can just be thought of as an arbitrary predicate, but which will later come to
+mean set membership).</P>
+
+<p>Our axioms are based on the classical set.mm predicate logic axioms, but adapted for
+intuitionistic logic, chiefly by adding additional axioms for &#x2203; and also changing
+some aspects of how we handle negations.</p>
+
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Axioms of intuitionistic predicate logic">
+<CAPTION><B>Axioms of intuitionistic predicate logic</B></CAPTION>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-4.html">Axiom of Specialization</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-4</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD> <A HREF="ax-5.html">Axiom of Quantified Implication</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-5</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr; (<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-i5r.html">The converse of ax-5o</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-i5r</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>((<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-6.html">Axiom of Quantified Negation</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-6</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(&not; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I> &not;
+<FONT FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-7.html">Axiom of Quantifier Commutation</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-7</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-gen.html">Rule of Generalization</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-gen</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &nbsp;&nbsp;=&gt; &nbsp;&nbsp;<SPAN >
+<FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT></SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-ial.html"><SPAN ><I><FONT
+COLOR="#FF0000">x</FONT></I></SPAN> is bound in <SPAN ><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT></SPAN></A></TD>
+<TD><FONT COLOR="#006633"><B>ax-ial</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-ie1.html"><SPAN ><I><FONT
+COLOR="#FF0000">x</FONT></I></SPAN> is bound in <SPAN ><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT></SPAN></A></TD>
+<TD><FONT COLOR="#006633"><B>ax-ie1</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-ie2.html">Define existential
+quantification</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-ie2</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<FONT
+COLOR="#0000FF"><I>&psi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr; (<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &harr; (<FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>)))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-8.html">Axiom of Equality</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-8</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+(<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">z</FONT></I>
+&rarr; <I><FONT COLOR="#FF0000">y</FONT></I> = <I><FONT
+COLOR="#FF0000">z</FONT></I>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-i9.html">Axiom of Existence</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-i9</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I> <I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I></SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-10.html">Axiom of Quantifier
+Substitution</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-10</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I> <I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+<FONT FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">y</FONT></I>
+<I><FONT COLOR="#FF0000">y</FONT></I> = <I><FONT
+COLOR="#FF0000">x</FONT></I>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-11.html">Axiom of Variable
+Substitution</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-11</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+(<FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">y</FONT></I><FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">x</FONT></I>(<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I> &rarr; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-i11e.html">Axiom of Variable
+Substitution for Existence</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-i11e</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+(<FONT FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> <FONT
+FACE=sans-serif>&and;</FONT> <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-i12.html">Axiom of Quantifier
+Introduction</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-i12</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I> <I><FONT
+COLOR="#FF0000">z</FONT></I> = <I><FONT COLOR="#FF0000">x</FONT></I> <FONT
+FACE=sans-serif> &or;</FONT> (<FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">z</FONT></I> <I><FONT COLOR="#FF0000">z</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif> &or;</FONT> <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+<FONT FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>
+<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I>)))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-13.html">Left Membership Equality</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-13</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+(<I><FONT COLOR="#FF0000">x</FONT></I> <FONT FACE=sans-serif>&isin;</FONT>
+<I><FONT COLOR="#FF0000">z</FONT></I> &rarr; <I><FONT
+COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">z</FONT></I>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-14.html">Right Membership Equality</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-14</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+(<I><FONT COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT>
+<I><FONT COLOR="#FF0000">x</FONT></I> &rarr; <I><FONT
+COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">y</FONT></I>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-17.html">Distinctness</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-17</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN>,
+where <FONT COLOR="#FF0000">x</FONT> does not occur in <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT></TD></TR>
+
+</TABLE>
+</CENTER>
 
 <HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">
 Some theorems</FONT></B>
@@ -381,6 +586,11 @@ COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
 
 <OL>
 
+<LI><A NAME="Bauer"></A> [Bauer] Bauer, Andrej, &quot;Five stages of
+accepting constructive mathematics,&quot; <I>Bulletin (New Series) of
+the American Mathematical Society</I>, 54:481-498 (2017),
+DOI: <A HREF="http://dx.doi.org/10.1090/bull/1556">10.1090/bull/1556</A> .</LI>
+
 <LI><A NAME="BellMachover"></A> [BellMachover] Bell, J. L., and M.
 Machover, <I>A Course in Mathematical Logic,</I> North-Holland,
 Amsterdam (1977) [QA9.B3953].</LI>
@@ -388,6 +598,10 @@ Amsterdam (1977) [QA9.B3953].</LI>
 <LI><A NAME="Hamilton"></A> [Hamilton] Hamilton, A. G., <I>Logic for
 Mathematicians,</I> Cambridge University Press, Cambridge, revised
 edition (1988) [QA9.H298 1988].</LI>
+
+<LI><A NAME="Heyting"></A> [Heyting] Heyting, A., <I>Intuitionism: An
+introduction</I>, North-Holland publishing company, Amsterdam, second
+edition (1966).</LI>
 
 <LI><A NAME="KalishMontague"></A> [KalishMontague] Kalish, D. and R.
 Montague, &quot;On Tarski's formalization of predicate logic with
