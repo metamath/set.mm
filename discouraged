@@ -13293,6 +13293,7 @@ New usage of "ax11indalem" is discouraged (1 uses).
 New usage of "ax11indi" is discouraged (0 uses).
 New usage of "ax11indn" is discouraged (1 uses).
 New usage of "ax11v2-o" is discouraged (1 uses).
+New usage of "ax11vALT" is discouraged (0 uses).
 New usage of "ax12-2" is discouraged (2 uses).
 New usage of "ax12-3" is discouraged (0 uses).
 New usage of "ax12-4" is discouraged (0 uses).
@@ -15107,6 +15108,7 @@ New usage of "hatomic" is discouraged (1 uses).
 New usage of "hatomici" is discouraged (6 uses).
 New usage of "hatomistici" is discouraged (1 uses).
 New usage of "hba1-o" is discouraged (8 uses).
+New usage of "hba1OLD" is discouraged (0 uses).
 New usage of "hbae-o" is discouraged (4 uses).
 New usage of "hbae-x12" is discouraged (1 uses).
 New usage of "hbalg" is discouraged (1 uses).
@@ -15114,8 +15116,10 @@ New usage of "hbalgVD" is discouraged (0 uses).
 New usage of "hbequid" is discouraged (2 uses).
 New usage of "hbexg" is discouraged (0 uses).
 New usage of "hbexgVD" is discouraged (0 uses).
+New usage of "hbimdOLD" is discouraged (0 uses).
 New usage of "hbimpg" is discouraged (0 uses).
 New usage of "hbimpgVD" is discouraged (0 uses).
+New usage of "hbnOLD" is discouraged (0 uses).
 New usage of "hbnae-o" is discouraged (3 uses).
 New usage of "hbnae-x12" is discouraged (0 uses).
 New usage of "hbntal" is discouraged (3 uses).
@@ -17468,6 +17472,7 @@ Proof modification of "ax11indalem" is discouraged (272 steps).
 Proof modification of "ax11indi" is discouraged (83 steps).
 Proof modification of "ax11indn" is discouraged (70 steps).
 Proof modification of "ax11v2-o" is discouraged (107 steps).
+Proof modification of "ax11vALT" is discouraged (81 steps).
 Proof modification of "ax12-2" is discouraged (116 steps).
 Proof modification of "ax12-3" is discouraged (58 steps).
 Proof modification of "ax12-4" is discouraged (103 steps).

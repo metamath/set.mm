@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-Dec-2017
+$( iset.mm - Version of 16-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -12068,36 +12068,6 @@ $(
 $)
 
   ${
-    $d x y $.
-    $( This is a version of ~ ax-11o when the variables are distinct.  Axiom
-       (C8) of [Monk2] p. 105.  See theorem ~ ax11v2 for the rederivation of
-       ~ ax-11o from this theorem.  (Contributed by NM, 5-Aug-1993.) $)
-    ax11v $p |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) $=
-      ( weq wal wi ax-1 ax-16 syl5 a1d ax11o pm2.61i ) BCDZBEZMAMAFZBEZFZFNQMAO
-      NPAMGOBCHIJABCKL $.
-
-    $( Two equivalent ways of expressing the proper substitution of ` y ` for
-       ` x ` in ` ph ` , when ` x ` and ` y ` are distinct.  Theorem 6.2 of
-       [Quine] p. 40.  The proof does not involve ~ df-sb .  (Contributed by
-       NM, 14-Apr-2008.) $)
-    sb56 $p |- ( E. x ( x = y /\ ph ) <-> A. x ( x = y -> ph ) ) $=
-      ( weq wi wal hba1 ax11v ax-4 com12 impbid equsex ) ABCDZAEZBFZBCNBGMAOABC
-      HOMANBIJKL $.
-
-    $( Equivalence for substitution.  Compare Theorem 6.2 of [Quine] p. 40.
-       Also proved as Lemmas 16 and 17 of [Tarski] p. 70.  (Contributed by NM,
-       18-Aug-1993.)  (Revised by NM, 14-Apr-2008.) $)
-    sb6 $p |- ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) $=
-      ( weq wi wa wex wal wsb sb56 anbi2i df-sb ax-4 pm4.71ri 3bitr4i ) BCDZAEZ
-      PAFBGZFQQBHZFABCISRSQABCJKABCLSQQBMNO $.
-
-    $( Equivalence for substitution.  Similar to Theorem 6.1 of [Quine] p. 40.
-       (Contributed by NM, 18-Aug-1993.)  (Revised by NM, 14-Apr-2008.) $)
-    sb5 $p |- ( [ y / x ] ph <-> E. x ( x = y /\ ph ) ) $=
-      ( wsb weq wi wal wa wex sb6 sb56 bitr4i ) ABCDBCEZAFBGMAHBIABCJABCKL $.
-  $}
-
-  ${
     $d x y z $.  $d z ph $.
     ax16i.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
     ax16i.2 $e |- ( ps -> A. x ps ) $.
@@ -12351,6 +12321,41 @@ $)
        by NM, 25-Jul-2012.) $)
     exlimiv $p |- ( E. x ph -> ps ) $=
       ( ax-17 exlimi ) ABCBCEDF $.
+  $}
+
+  ${
+    $d x y $.  $d x z $.  $d y z $.  $d ph z $.
+    $( This is a version of ~ ax-11o when the variables are distinct.  Axiom
+       (C8) of [Monk2] p. 105.  (Contributed by NM, 5-Aug-1993.)  (Revised by
+       Jim Kingdon, 15-Dec-2017.) $)
+    ax11v $p |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) $=
+      ( vz cv wceq wex wi wal a9e ax-17 ax-11 syl5 imbi1d albidv imbi2d
+      equequ2 imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUCFZAUFAHZBIZH
+      ZHZDCJUDUJDUDUEUBFZAUKAHZBIZHZHUJAADIUKUMADKABDLMUDUKUFUNUIDCBQZU
+      DUMUHAUDULUGBUDUKUFAUONOPRSTUA $.
+  $}
+
+  ${
+    $d x y $.
+    $( Two equivalent ways of expressing the proper substitution of ` y ` for
+       ` x ` in ` ph ` , when ` x ` and ` y ` are distinct.  Theorem 6.2 of
+       [Quine] p. 40.  The proof does not involve ~ df-sb .  (Contributed by
+       NM, 14-Apr-2008.) $)
+    sb56 $p |- ( E. x ( x = y /\ ph ) <-> A. x ( x = y -> ph ) ) $=
+      ( weq wi wal hba1 ax11v ax-4 com12 impbid equsex ) ABCDZAEZBFZBCNBGMAOABC
+      HOMANBIJKL $.
+
+    $( Equivalence for substitution.  Compare Theorem 6.2 of [Quine] p. 40.
+       Also proved as Lemmas 16 and 17 of [Tarski] p. 70.  (Contributed by NM,
+       18-Aug-1993.)  (Revised by NM, 14-Apr-2008.) $)
+    sb6 $p |- ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) $=
+      ( weq wi wa wex wal wsb sb56 anbi2i df-sb ax-4 pm4.71ri 3bitr4i ) BCDZAEZ
+      PAFBGZFQQBHZFABCISRSQABCJKABCLSQQBMNO $.
+
+    $( Equivalence for substitution.  Similar to Theorem 6.1 of [Quine] p. 40.
+       (Contributed by NM, 18-Aug-1993.)  (Revised by NM, 14-Apr-2008.) $)
+    sb5 $p |- ( [ y / x ] ph <-> E. x ( x = y /\ ph ) ) $=
+      ( wsb weq wi wal wa wex sb6 sb56 bitr4i ) ABCDBCEZAFBGMAHBIABCJABCKL $.
   $}
 
   ${
@@ -12729,9 +12734,11 @@ $( The theorems in this section make use of the $d statement. $)
   ${
     $d x y $.
     $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are
-       distinct.  (Contributed by NM, 5-Aug-1993.) $)
+       distinct.  (Contributed by NM, 5-Aug-1993.) (Proof by Jim Kingdon,
+       16-Dec-2017.) $)
     hbs1 $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
-      ( weq wal wsb wi ax-16 hbsb2 pm2.61i ) BCDBEABCFZKBEGKBCHABCIJ $.
+      ( cv wsbc wceq wi wal sb6 ax-ial sylbi albii sylibr ) ABCDZEZBDNF
+      AGZBHZBHZOBHOQRABCIZPBJKOQBSLM $.
   $}
 
   ${
