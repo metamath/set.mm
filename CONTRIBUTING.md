@@ -34,6 +34,24 @@ This can also be done as a single command in bash:
    'write source set.mm' quit
 </PRE>
 
-The reason for doing /rewrap first is so that 'save proof' will adjust the proof indentation to match any indentation changes made by /rewrap.  'verify markup' will check that no lines became too long due to different indentation.  'verify proof' is there because you might as well.
+The reason for doing /rewrap first is so that 'save proof' will subsequently adjust the proof indentation to match any indentation changes made by /rewrap.  'verify markup' will check that no lines became too long due to different indentation.  'verify proof' is there because you might as well.
 
 (You can also check definitional soundness with mmj2 and any 'discouraged' markup changes before submission if you want, or you can just leave it up to Travis to check those.)
+
+
+### Regenerating the `discouraged` file
+
+Some statement descriptions in `set.mm` have one or both of the markup tags `(New usage is discouraged.)` and `(Proof modification is discouraged.)`  In order to monitor accidental violations of these tags in set.mm, we store the usage and proof lengths of statements with these tags set.mm in a file called `discouraged`.  The Travis check will return an error if this file doesn't exactly match that for a set.mm pull request.
+
+If you make modifications that affect the `discouraged` file, you should regenerate it with the following command under Linux or Cygwin bash:
+<pre>
+./metamath 'read set.mm' 'set width 9999' 'show discouraged' quit \
+    | tr -d '\015' | grep '^SHOW DISCOURAGED.' \
+    | sed -E -e 's/^SHOW DISCOURAGED.  ?//' | LC_ALL=C sort > discouraged              
+</pre>
+The "tr -d '\015'" is needed under Cygwin to strip carriage returns, and has no effect on Linux.
+
+
+The metamath.exe and mmj2 proof assistants will prevent most accidental violations.  The behavior of the metamath.exe proof assistant in the presence of these tags and how to override them is described in the 11-May-2016 entry of http://us.metamath.org/mpeuni/mmnotes.txt.
+
+
