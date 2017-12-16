@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Dec-2017
+$( iset.mm - Version of 16-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -12734,9 +12734,11 @@ $( The theorems in this section make use of the $d statement. $)
   ${
     $d x y $.
     $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are
-       distinct.  (Contributed by NM, 5-Aug-1993.) $)
+       distinct.  (Contributed by NM, 5-Aug-1993.) (Proof by Jim Kingdon,
+       16-Dec-2017.) $)
     hbs1 $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
-      ( weq wal wsb wi ax-16 hbsb2 pm2.61i ) BCDBEABCFZKBEGKBCHABCIJ $.
+      ( cv wsbc wceq wi wal sb6 ax-ial sylbi albii sylibr ) ABCDZEZBDNF
+      AGZBHZBHZOBHOQRABCIZPBJKOQBSLM $.
   $}
 
   ${
