@@ -1352,6 +1352,7 @@
 "basendx" is used by "setsmsbas".
 "basendx" is used by "thlbas".
 "basendx" is used by "topgrpstr".
+"basendx" is used by "tuslem".
 "bcs" is used by "bcs2".
 "bcs" is used by "cnlnadjlem2".
 "bcs" is used by "cnlnadjlem7".
@@ -13414,7 +13415,7 @@ New usage of "baerlem5abmN" is discouraged (0 uses).
 New usage of "baerlem5amN" is discouraged (0 uses).
 New usage of "baerlem5bmN" is discouraged (0 uses).
 New usage of "bafval" is discouraged (43 uses).
-New usage of "basendx" is discouraged (19 uses).
+New usage of "basendx" is discouraged (20 uses).
 New usage of "baseval" is discouraged (0 uses).
 New usage of "bcs" is discouraged (6 uses).
 New usage of "bcs2" is discouraged (2 uses).
