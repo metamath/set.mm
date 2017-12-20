@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Dec-2017
+$( iset.mm - Version of 18-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -12356,6 +12356,12 @@ $)
        (Contributed by NM, 18-Aug-1993.)  (Revised by NM, 14-Apr-2008.) $)
     sb5 $p |- ( [ y / x ] ph <-> E. x ( x = y /\ ph ) ) $=
       ( wsb weq wi wal wa wex sb6 sb56 bitr4i ) ABCDBCEZAFBGMAHBIABCJABCKL $.
+
+    $( Version of ~ sbn where ` x ` and ` y ` are distinct.  (Contributed by
+       Jim Kingdon, 18-Dec-2017.) $)
+    sbnv $p |- ( [ y / x ] -. ph <-> -. [ y / x ] ph ) $=
+      ( wn cv wsbc wceq wa wex wal sb6 alinexa bitri sb5 notbii bitr4i
+      wi ) ADZBCEZFZBESGZAHBIZDZABSFZDTUARQBJUCRBCKUAABLMUDUBABCNOP $.
   $}
 
   ${
@@ -12734,7 +12740,7 @@ $( The theorems in this section make use of the $d statement. $)
   ${
     $d x y $.
     $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are
-       distinct.  (Contributed by NM, 5-Aug-1993.) (Proof by Jim Kingdon,
+       distinct.  (Contributed by NM, 5-Aug-1993.)  (Proof by Jim Kingdon,
        16-Dec-2017.) $)
     hbs1 $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
       ( cv wsbc wceq wi wal sb6 ax-ial sylbi albii sylibr ) ABCDZEZBDNF
