@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-Dec-2017
+$( iset.mm - Version of 18-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -213,8 +213,9 @@ accompanied by citations.  Some closely followed texts include the following:
       class abstractions, which is essential to our development.)
   Construction of real and complex numbers - [Gleason]
   Theorems about real numbers - [Apostol]
-  Intuitionistic propositional and predicate logic - (placeholder for
-    future citations)
+  Intuitionistic logic and constructive mathematics - [Bauer] is an sampling
+    of theorems and arguments which give a flavor of constructive mathematics.
+    [Heyting] is a more comprehensive treatment of intuitionistic logic.
 
 3. Convention:  All $a statements starting with "|-" have labels
 starting with "ax-" (axioms) or "df-" (definitions).  "ax-" corresponds
@@ -4562,7 +4563,8 @@ $)
       ( nsyl3 con2i ) CAABCDEFG $.
   $}
 
-  $( Converse of double negation.  Theorem *2.12 of [WhiteheadRussell] p. 101.
+  $( Adding double negation.  Theorem *2.12 of [WhiteheadRussell] p. 101.  This
+     one holds intuitionistically, but its converse, ~ notnot2 , does not.
      (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen,
      2-Mar-2013.) $)
   notnot1 $p |- ( ph -> -. -. ph ) $=
@@ -4728,8 +4730,13 @@ $)
     ( wn wi pm2.21 imim1i ) ADABECABFG $.
 
   $( Theorem *2.65 of [WhiteheadRussell] p. 107.  Proof by contradiction.
-     (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen,
-     8-Mar-2013.) $)
+     Proofs, such as this one, which assume a proposition, here ` ph ` , derive
+     a contradiction, and therefore conclude ` -. ph ` , are valid
+     intuitionistically (and can be called "proof of negation", for example by
+     [Bauer] p. 482).  By contrast, proofs which assume ` -. ph ` , derive a
+     contradiction, and conclude ` ph ` , such as ~ condan , are not valid
+     intuitionistically.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
+     Wolf Lammen, 8-Mar-2013.) $)
   pm2.65 $p |- ( ( ph -> ps ) -> ( ( ph -> -. ps ) -> -. ph ) ) $=
     ( wi wn pm2.27 con2d a2i ) ABCAABDZCZABIDAIBAHEFGF $.
 
@@ -5142,8 +5149,9 @@ $)
       ( wa wi adantrd adantld jaoi ) ABEHCIDABCEFJDECBGKL $.
   $}
 
-  $( Theorem *2.53 of [WhiteheadRussell] p. 107.  (Contributed by NM,
-     3-Jan-2005.)  (Revised by NM, 31-Jan-2015.) $)
+  $( Theorem *2.53 of [WhiteheadRussell] p. 107.  This holds
+     intuitionistically, although its converse, ~ pm2.54 , does not.
+     (Contributed by NM, 3-Jan-2005.)  (Revised by NM, 31-Jan-2015.) $)
   pm2.53 $p |- ( ( ph \/ ps ) -> ( -. ph -> ps ) ) $=
     ( wn wi pm2.24 ax-1 jaoi ) AACZBDBABEBHFG $.
 
@@ -5782,18 +5790,12 @@ $( This section makes our first use of the third axiom of propositonal
       ( wn wi pm2.18 syl ) ABDBEBCBFG $.
   $}
 
-  $( Converse of double negation.  Theorem *2.14 of [WhiteheadRussell] p. 102.
-     (Contributed by NM, 5-Aug-1993.)  (Proof shortened by David Harvey,
+  $( Double negation elimination.  Theorem *2.14 of [WhiteheadRussell] p. 102.
+     This does not hold intuitionistically, although its coverse, ~ notnot1 ,
+     does.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by David Harvey,
      5-Sep-1999.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
   notnot2 $p |- ( -. -. ph -> ph ) $=
     ( wn pm2.21 pm2.18d ) ABZBAEACD $.
-
-  ${
-    negai.1 $e |- -. -. ph $.
-    $( Inference from double negation.  (Contributed by NM, 27-Feb-2008.) $)
-    notnotri $p |- ph $=
-      ( wn notnot2 ax-mp ) ACCABADE $.
-  $}
 
   ${
     con1d.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
@@ -5823,15 +5825,6 @@ $( This section makes our first use of the third axiom of propositonal
        shortened by Wolf Lammen, 15-Sep-2012.) $)
     mt3i $p |- ( ph -> ps ) $=
       ( wn a1i mt3d ) ABCCFADGEH $.
-  $}
-
-  ${
-    mt3.1 $e |- -. ps $.
-    mt3.2 $e |- ( -. ph -> ps ) $.
-    $( A rule similar to modus tollens.  (Contributed by NM, 18-May-1994.)
-       (Proof shortened by Wolf Lammen, 11-Sep-2013.) $)
-    mt3 $p |- ph $=
-      ( wn mto notnotri ) AAEBCDFG $.
   $}
 
   ${
@@ -5887,31 +5880,6 @@ $( This section makes our first use of the third axiom of propositonal
      Lammen, 21-Jul-2012.) $)
   simplim $p |- ( -. ( ph -> ps ) -> ph ) $=
     ( wi pm2.21 con1i ) AABCABDE $.
-
-  ${
-    mt4.1 $e |- ph $.
-    mt4.2 $e |- ( -. ps -> -. ph ) $.
-    $( The rule of modus tollens.  (Contributed by Wolf Lammen,
-       12-May-2013.) $)
-    mt4 $p |- ps $=
-      ( con4i ax-mp ) ABCBADEF $.
-  $}
-
-  ${
-    mt4d.1 $e |- ( ph -> ps ) $.
-    mt4d.2 $e |- ( ph -> ( -. ch -> -. ps ) ) $.
-    $( Modus tollens deduction.  (Contributed by NM, 9-Jun-2006.) $)
-    mt4d $p |- ( ph -> ch ) $=
-      ( con4d mpd ) ABCDACBEFG $.
-  $}
-
-  ${
-    mt4i.1 $e |- ch $.
-    mt4i.2 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
-    $( Modus tollens inference.  (Contributed by Wolf Lammen, 12-May-2013.) $)
-    mt4i $p |- ( ph -> ps ) $=
-      ( a1i mt4d ) ACBCADFEG $.
-  $}
 
   ${
     pm2.61d.1 $e |- ( ph -> ( ps -> ch ) ) $.
@@ -6252,15 +6220,6 @@ $( This section makes our first use of the third axiom of propositonal
   pm4.15 $p |- ( ( ( ph /\ ps ) -> -. ch ) <-> ( ( ps /\ ch ) -> -. ph ) ) $=
     ( wa wn wi con2b nan bitr2i ) BCDZAEFAJEFABDCEFJAGABCHI $.
 
-  ${
-    condan.1 $e |- ( ( ph /\ -. ps ) -> ch ) $.
-    condan.2 $e |- ( ( ph /\ -. ps ) -> -. ch ) $.
-    $( Proof by contradiction.  (Contributed by NM, 9-Feb-2006.)  (Proof
-       shortened by Wolf Lammen, 19-Jun-2014.) $)
-    condan $p |- ( ph -> ps ) $=
-      ( wn pm2.65da notnot2 syl ) ABFZFBAJCDEGBHI $.
-  $}
-
   $( Conjunction distributes over exclusive-or, using ` -. ( ph <-> ps ) ` to
      express exclusive-or.  This is one way to interpret the distributive law
      of multiplication over addition in modulo 2 arithmetic.  (Contributed by
@@ -6269,8 +6228,9 @@ $( This section makes our first use of the third axiom of propositonal
                 -. ( ( ph /\ ps ) <-> ( ph /\ ch ) ) ) $=
     ( wb wn wa wi annim pm5.32 xchbinx ) ABCDZEFAKGABFACFDAKHABCIJ $.
 
-  $( Theorem *2.54 of [WhiteheadRussell] p. 107.  (Contributed by NM,
-     3-Jan-2005.) $)
+  $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
+     intuitionistically, although its coverse, ~ pm2.53 , does.  (Contributed
+     by NM, 3-Jan-2005.) $)
   pm2.54 $p |- ( ( -. ph -> ps ) -> ( ph \/ ps ) ) $=
     ( wn wo notnot2 orc syl olc ja ) ACZBABDZJCAKAEABFGBAHI $.
 
@@ -8977,7 +8937,7 @@ $)
     ecased.1 $e |- ( ph -> -. ch ) $.
     ecased.2 $e |- ( ph -> ( ps \/ ch ) ) $.
     $( Elimination by cases based on a disjunction (rather than an implication)
-       does hold intuitionistically.  However, it is more of a curiousity than
+       does hold intuitionistically.  However, it is more of a curiosity than
        something useful in proofs, because in intuitionistic logic it will be
        just as hard to prove ` ph \/ ps ` as it would be to prove one of ` ph `
        or ` ps ` .  (Contributed by Jim Kingdon, 9-Dec-2017.) $)
@@ -10268,22 +10228,6 @@ $)
   $}
 
   ${
-    19.32.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.32 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-    19.32 $p |- ( A. x ( ph \/ ps ) <-> ( ph \/ A. x ps ) ) $=
-      ( wn wi wal wo hbn 19.21 df-or albii 3bitr4i ) AEZBFZCGNBCGZFABHZCGAPHNBC
-      ACDIJQOCABKLAPKM $.
-  $}
-
-  ${
-    19.31.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.31 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-    19.31 $p |- ( A. x ( ph \/ ps ) <-> ( A. x ph \/ ps ) ) $=
-      ( wo wal 19.32 orcom albii 3bitr4i ) BAEZCFBACFZEABEZCFLBEBACDGMKCABHILBH
-      J $.
-  $}
-
-  ${
     hbim1.1 $e |- ( ph -> A. x ph ) $.
     hbim1.2 $e |- ( ph -> ( ps -> A. x ps ) ) $.
     $( A closed form of ~ hbim .  (Contributed by NM, 5-Aug-1993.) $)
@@ -10526,14 +10470,6 @@ $)
       ( wi wex wal 19.35-1 ax-mp ) ABECFACGBCFEDABCHI $.
   $}
 
-  ${
-    19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
-    $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
-    19.35ri $p |- E. x ( ph -> ps ) $=
-      ( wi wex wal 19.35 mpbir ) ABECFACGBCFEDABCHI $.
-  $}
-
   $( Theorem 19.25 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
      (Revised by NM, 2-Feb-2015.) $)
   19.25 $p |- ( A. y E. x ( ph -> ps ) ->
@@ -10634,8 +10570,7 @@ $)
     ( wex excomim impbii ) ACDBDABDCDABCEACBEF $.
 
   $( Theorem 19.12 of [Margaris] p. 89.  Assuming the converse is a mistake
-     sometimes made by beginners!  But sometimes the converse does hold, as in
-     ~ 19.12vv .  (Contributed by NM, 5-Aug-1993.) $)
+     sometimes made by beginners!  (Contributed by NM, 5-Aug-1993.) $)
   19.12 $p |- ( E. x A. y ph -> A. y E. x ph ) $=
     ( wal wex hba1 hbex ax-4 eximi alrimi ) ACDZBEABECKCBACFGKABACHIJ $.
 
@@ -10644,13 +10579,6 @@ $)
     $( Theorem 19.19 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
     19.19 $p |- ( A. x ( ph <-> ps ) -> ( ph <-> E. x ps ) ) $=
       ( wex wb wal 19.9 exbi syl5bbr ) AACEABFCGBCEACDHABCIJ $.
-  $}
-
-  ${
-    19.36.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.36 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-    19.36 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
-      ( wi wex wal 19.35 19.9 imbi2i bitri ) ABECFACGZBCFZELBEABCHMBLBCDIJK $.
   $}
 
   ${
@@ -10767,11 +10695,6 @@ $)
       ( wo wex 19.45 exbii hbex 19.44 bitri ) ABGDHZCHABDHZGZCHACHOGNPCABDEIJAO
       CBCDFKLM $.
   $}
-
-  $( Quantified "excluded middle."  Exercise 9.2a of Boolos, p. 111,
-     _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
-  qexmid $p |- E. x ( ph -> A. x ph ) $=
-    ( wal 19.8a 19.35ri ) AABCZBFBDE $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -12145,36 +12068,6 @@ $(
 $)
 
   ${
-    $d x y $.
-    $( This is a version of ~ ax-11o when the variables are distinct.  Axiom
-       (C8) of [Monk2] p. 105.  See theorem ~ ax11v2 for the rederivation of
-       ~ ax-11o from this theorem.  (Contributed by NM, 5-Aug-1993.) $)
-    ax11v $p |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) $=
-      ( weq wal wi ax-1 ax-16 syl5 a1d ax11o pm2.61i ) BCDZBEZMAMAFZBEZFZFNQMAO
-      NPAMGOBCHIJABCKL $.
-
-    $( Two equivalent ways of expressing the proper substitution of ` y ` for
-       ` x ` in ` ph ` , when ` x ` and ` y ` are distinct.  Theorem 6.2 of
-       [Quine] p. 40.  The proof does not involve ~ df-sb .  (Contributed by
-       NM, 14-Apr-2008.) $)
-    sb56 $p |- ( E. x ( x = y /\ ph ) <-> A. x ( x = y -> ph ) ) $=
-      ( weq wi wal hba1 ax11v ax-4 com12 impbid equsex ) ABCDZAEZBFZBCNBGMAOABC
-      HOMANBIJKL $.
-
-    $( Equivalence for substitution.  Compare Theorem 6.2 of [Quine] p. 40.
-       Also proved as Lemmas 16 and 17 of [Tarski] p. 70.  (Contributed by NM,
-       18-Aug-1993.)  (Revised by NM, 14-Apr-2008.) $)
-    sb6 $p |- ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) $=
-      ( weq wi wa wex wal wsb sb56 anbi2i df-sb ax-4 pm4.71ri 3bitr4i ) BCDZAEZ
-      PAFBGZFQQBHZFABCISRSQABCJKABCLSQQBMNO $.
-
-    $( Equivalence for substitution.  Similar to Theorem 6.1 of [Quine] p. 40.
-       (Contributed by NM, 18-Aug-1993.)  (Revised by NM, 14-Apr-2008.) $)
-    sb5 $p |- ( [ y / x ] ph <-> E. x ( x = y /\ ph ) ) $=
-      ( wsb weq wi wal wa wex sb6 sb56 bitr4i ) ABCDBCEZAFBGMAHBIABCJABCKL $.
-  $}
-
-  ${
     $d x y z $.  $d z ph $.
     ax16i.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
     ax16i.2 $e |- ( ps -> A. x ps ) $.
@@ -12431,6 +12324,47 @@ $)
   $}
 
   ${
+    $d x y $.  $d x z $.  $d y z $.  $d ph z $.
+    $( This is a version of ~ ax-11o when the variables are distinct.  Axiom
+       (C8) of [Monk2] p. 105.  (Contributed by NM, 5-Aug-1993.)  (Revised by
+       Jim Kingdon, 15-Dec-2017.) $)
+    ax11v $p |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) $=
+      ( vz cv wceq wex wi wal a9e ax-17 ax-11 syl5 imbi1d albidv imbi2d
+      equequ2 imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUCFZAUFAHZBIZH
+      ZHZDCJUDUJDUDUEUBFZAUKAHZBIZHZHUJAADIUKUMADKABDLMUDUKUFUNUIDCBQZU
+      DUMUHAUDULUGBUDUKUFAUONOPRSTUA $.
+  $}
+
+  ${
+    $d x y $.
+    $( Two equivalent ways of expressing the proper substitution of ` y ` for
+       ` x ` in ` ph ` , when ` x ` and ` y ` are distinct.  Theorem 6.2 of
+       [Quine] p. 40.  The proof does not involve ~ df-sb .  (Contributed by
+       NM, 14-Apr-2008.) $)
+    sb56 $p |- ( E. x ( x = y /\ ph ) <-> A. x ( x = y -> ph ) ) $=
+      ( weq wi wal hba1 ax11v ax-4 com12 impbid equsex ) ABCDZAEZBFZBCNBGMAOABC
+      HOMANBIJKL $.
+
+    $( Equivalence for substitution.  Compare Theorem 6.2 of [Quine] p. 40.
+       Also proved as Lemmas 16 and 17 of [Tarski] p. 70.  (Contributed by NM,
+       18-Aug-1993.)  (Revised by NM, 14-Apr-2008.) $)
+    sb6 $p |- ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) $=
+      ( weq wi wa wex wal wsb sb56 anbi2i df-sb ax-4 pm4.71ri 3bitr4i ) BCDZAEZ
+      PAFBGZFQQBHZFABCISRSQABCJKABCLSQQBMNO $.
+
+    $( Equivalence for substitution.  Similar to Theorem 6.1 of [Quine] p. 40.
+       (Contributed by NM, 18-Aug-1993.)  (Revised by NM, 14-Apr-2008.) $)
+    sb5 $p |- ( [ y / x ] ph <-> E. x ( x = y /\ ph ) ) $=
+      ( wsb weq wi wal wa wex sb6 sb56 bitr4i ) ABCDBCEZAFBGMAHBIABCJABCKL $.
+
+    $( Version of ~ sbn where ` x ` and ` y ` are distinct.  (Contributed by
+       Jim Kingdon, 18-Dec-2017.) $)
+    sbnv $p |- ( [ y / x ] -. ph <-> -. [ y / x ] ph ) $=
+      ( wn cv wsbc wceq wa wex wal sb6 alinexa bitri sb5 notbii bitr4i
+      wi ) ADZBCEZFZBESGZAHBIZDZABSFZDTUARQBJUCRBCKUAABLMUDUBABCNOP $.
+  $}
+
+  ${
     $d ph y $.  $d ps x $.
     $( Theorem *11.53 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
        Salmon, 24-May-2011.) $)
@@ -12473,29 +12407,11 @@ $)
 
   ${
     $d x ps $.
-    $( Special case of Theorem 19.36 of [Margaris] p. 90.  (Contributed by NM,
-       18-Aug-1993.) $)
-    19.36v $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
-      ( ax-17 19.36 ) ABCBCDE $.
-  $}
-
-  ${
-    $d x ps $.
     19.36aiv.1 $e |- E. x ( ph -> ps ) $.
     $( Inference from Theorem 19.36 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.) $)
     19.36aiv $p |- ( A. x ph -> ps ) $=
       ( ax-17 19.36i ) ABCBCEDF $.
-  $}
-
-  ${
-    $d x ps $.  $d y ph $.
-    $( Special case of ~ 19.12 where its converse holds.  (Contributed by NM,
-       18-Jul-2001.)  (Revised by Andrew Salmon, 11-Jul-2011.) $)
-    19.12vv $p |- ( E. x A. y ( ph -> ps ) <-> A. y E. x ( ph -> ps ) ) $=
-      ( wal wex 19.21v exbii ax-17 hbal 19.36 19.36v albii 19.21 bitr2i 3bitri
-      wi ) ABQZDEZCFABDEZQZCFACEZTQZRCFZDEZSUACABDGHATCBCDBCIJKUEUBBQZDEUCUDUFD
-      ABCLMUBBDADCADIJNOP $.
   $}
 
   ${
@@ -12824,9 +12740,11 @@ $( The theorems in this section make use of the $d statement. $)
   ${
     $d x y $.
     $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are
-       distinct.  (Contributed by NM, 5-Aug-1993.) $)
+       distinct.  (Contributed by NM, 5-Aug-1993.)  (Proof by Jim Kingdon,
+       16-Dec-2017.) $)
     hbs1 $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
-      ( weq wal wsb wi ax-16 hbsb2 pm2.61i ) BCDBEABCFZKBEGKBCHABCIJ $.
+      ( cv wsbc wceq wi wal sb6 ax-ial sylbi albii sylibr ) ABCDZEZBDNF
+      AGZBHZBHZOBHOQRABCIZPBJKOQBSLM $.
   $}
 
   ${
@@ -13239,6 +13157,22 @@ $)
      Wolf Lammen, 9-Oct-2012.) $)
   peirce $p |- ( ( ( ph -> ps ) -> ph ) -> ph ) $=
     ( wi simplim id ja ) ABCAAABDAEF $.
+
+  ${
+    19.32.1 $e |- ( ph -> A. x ph ) $.
+    $( Theorem 19.32 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.32 $p |- ( A. x ( ph \/ ps ) <-> ( ph \/ A. x ps ) ) $=
+      ( wn wi wal wo hbn 19.21 df-or albii 3bitr4i ) AEZBFZCGNBCGZFABHZCGAPHNBC
+      ACDIJQOCABKLAPKM $.
+  $}
+
+  ${
+    19.31.1 $e |- ( ps -> A. x ps ) $.
+    $( Theorem 19.31 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.31 $p |- ( A. x ( ph \/ ps ) <-> ( A. x ph \/ ps ) ) $=
+      ( wo wal 19.32 orcom albii 3bitr4i ) BAEZCFBACFZEABEZCFLBEBACDGMKCABHILBH
+      J $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -14108,6 +14042,35 @@ Classical (not intuitionistic) results
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+  ${
+    negai.1 $e |- -. -. ph $.
+    $( Inference from double negation.  (Contributed by NM, 27-Feb-2008.) $)
+    notnotri $p |- ph $=
+      ( wn notnot2 ax-mp ) ACCABADE $.
+  $}
+
+  ${
+    mt3.1 $e |- -. ps $.
+    mt3.2 $e |- ( -. ph -> ps ) $.
+    $( A rule similar to modus tollens.  (Contributed by NM, 18-May-1994.)
+       (Proof shortened by Wolf Lammen, 11-Sep-2013.) $)
+    mt3 $p |- ph $=
+      ( wn mto notnotri ) AAEBCDFG $.
+  $}
+
+  ${
+    condan.1 $e |- ( ( ph /\ -. ps ) -> ch ) $.
+    condan.2 $e |- ( ( ph /\ -. ps ) -> -. ch ) $.
+    $( Proof by contradiction.  This does not hold intuitionistically, as it is
+       part of the family of theorems which assume ` -. ps ` , derive a
+       contradiction, and therefore conclude ` ps ` .  By contrast, assuming
+       ` ps ` , deriving a contradiction, and therefore concluding ` -. ps ` ,
+       as in ~ pm2.65 , is valid intuitionistically.  (Contributed by NM,
+       9-Feb-2006.)  (Proof shortened by Wolf Lammen, 19-Jun-2014.) $)
+    condan $p |- ( ph -> ps ) $=
+      ( wn pm2.65da notnot2 syl ) ABFZFBAJCDEGBHI $.
+  $}
+
   $( Theorem *4.81 of [WhiteheadRussell] p. 122.  This one does not hold
      intuitionistically, but compare with ~ pm4.8 which does.  (Contributed by
      NM, 3-Jan-2005.) $)
@@ -14190,6 +14153,33 @@ $)
   looinv $p |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) $=
     ( wi imim1 peirce syl6 ) ABCZBCBACGACAGBADABEF $.
 
+  ${
+    19.36.1 $e |- ( ps -> A. x ps ) $.
+    $( Theorem 19.36 of [Margaris] p. 90.  Also see ~ 19.36i where we have an
+       intuitionistic proof of the forward direction of this theorem.
+       (Contributed by NM, 5-Aug-1993.) $)
+    19.36 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
+      ( wi wex wal 19.35 19.9 imbi2i bitri ) ABECFACGZBCFZELBEABCHMBLBCDIJK $.
+  $}
+
+  ${
+    $d x ps $.
+    $( Special case of Theorem 19.36 of [Margaris] p. 90.  (Contributed by NM,
+       18-Aug-1993.) $)
+    19.36v $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
+      ( ax-17 19.36 ) ABCBCDE $.
+  $}
+
+  ${
+    $d x ps $.  $d y ph $.
+    $( Special case of ~ 19.12 where its converse holds.  (Contributed by NM,
+       18-Jul-2001.)  (Revised by Andrew Salmon, 11-Jul-2011.) $)
+    19.12vv $p |- ( E. x A. y ( ph -> ps ) <-> A. y E. x ( ph -> ps ) ) $=
+      ( wal wex 19.21v exbii ax-17 hbal 19.36 19.36v albii 19.21 bitr2i 3bitri
+      wi ) ABQZDEZCFABDEZQZCFACEZTQZRCFZDEZSUACABDGHATCBCDBCIJKUEUBBQZDEUCUDUFD
+      ABCLMUBBDADCADIJNOP $.
+  $}
+
   $( Theorem 19.14 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
     ( wal wn wex alex con2bii ) ABCADBEABFG $.
@@ -14243,6 +14233,19 @@ $)
     4cases $p |- ch $=
       ( pm2.61ian wn pm2.61i ) BCABCDFHABICEGHJ $.
   $}
+
+  ${
+    19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
+    $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
+       5-Aug-1993.) $)
+    19.35ri $p |- E. x ( ph -> ps ) $=
+      ( wi wex wal 19.35 mpbir ) ABECFACGBCFEDABCHI $.
+  $}
+
+  $( Quantified "excluded middle."  Exercise 9.2a of Boolos, p. 111,
+     _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
+  qexmid $p |- E. x ( ph -> A. x ph ) $=
+    ( wal 19.8a 19.35ri ) AABCZBFBDE $.
 
   ${
     $d x y $.  $d y ph $.
