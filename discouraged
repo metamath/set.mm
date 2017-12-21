@@ -4220,6 +4220,7 @@
 "df-cnfld" is used by "cnfldmul".
 "df-cnfld" is used by "cnfldstr".
 "df-cnfld" is used by "cnfldtset".
+"df-cnfld" is used by "cnfldunif".
 "df-cnfn" is used by "elcnfn".
 "df-cnfn" is used by "hhcnf".
 "df-cnop" is used by "elcnop".
@@ -14294,7 +14295,7 @@ New usage of "df-ch0" is discouraged (8 uses).
 New usage of "df-chj" is discouraged (1 uses).
 New usage of "df-chsup" is discouraged (1 uses).
 New usage of "df-cm" is discouraged (1 uses).
-New usage of "df-cnfld" is discouraged (8 uses).
+New usage of "df-cnfld" is discouraged (9 uses).
 New usage of "df-cnfn" is discouraged (2 uses).
 New usage of "df-cnop" is discouraged (2 uses).
 New usage of "df-com2" is discouraged (1 uses).

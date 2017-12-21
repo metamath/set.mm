@@ -1,4 +1,4 @@
-$( iset.mm - Version of 18-Dec-2017
+$( iset.mm - Version of 20-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11799,6 +11799,15 @@ $)
   sbim $p |- ( [ y / x ] ( ph -> ps ) <-> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
     ( wi wsb sbi1 sbi2 impbii ) ABECDFACDFBCDFEABCDGABCDHI $.
 
+  $( Reverse direction of ~ sbor .  (Contributed by Jim Kingdon,
+     20-Dec-2017.) $)
+  sborr $p |- ( ( [ y / x ] ph \/ [ y / x ] ps ) -> [ y / x ] ( ph \/ ps ) ) $=
+    ( wsb wo weq wi wex df-sb biimpi orim12i orc imim2i anim1i andi exbii bitri
+    wa olc 19.43 anbi2i sylibr syl ) ACDEZBCDEZFCDGZAHZUGASZCIZSZUGBHZUGBSZCIZS
+    ZFZABFZCDEZUEUKUFUOUEUKACDJKUFUOBCDJKLUPUGUQHZUJSZUSUNSZFZURUKUTUOVAUHUSUJA
+    UQUGABMNOULUSUNBUQUGBATNOLURUSUGUQSZCIZSZVBUQCDJVEUSUJUNFZSVBVDVFUSVDUIUMFZ
+    CIVFVCVGCUGABPQUIUMCUARUBUSUJUNPRRUCUD $.
+
   $( Logical OR inside and outside of substitution are equivalent.
      (Contributed by NM, 29-Sep-2002.) $)
   sbor $p |- ( [ y / x ] ( ph \/ ps ) <-> ( [ y / x ] ph \/ [ y / x ] ps ) ) $=
@@ -11820,6 +11829,16 @@ $)
     sblim $p |- ( [ y / x ] ( ph -> ps ) <-> ( [ y / x ] ph -> ps ) ) $=
       ( wi wsb sbim sbf imbi2i bitri ) ABFCDGACDGZBCDGZFLBFABCDHMBLBCDEIJK $.
   $}
+
+  $( Forward direction of ~ sban .  (Contributed by Jim Kingdon,
+     19-Dec-2017.) $)
+  sban-1 $p |- ( [ y / x ] ( ph /\ ps ) ->
+                 ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
+    ( wa cv wsbc wceq wi df-sb jcab biimpi anandi exbii 19.40 anim12i
+    wex sylbi an4 biimpri sylib syl ) ABEZCDFZGZCFUDHZAIZUFAEZCQZEZUF
+    BIZUFBEZCQZEZEZACUDGZBCUDGZEUEUGUKEZUIUMEZEZUOUEUFUCIZUFUCEZCQZEU
+    TUCCDJVAURVCUSVAURUFABKLVCUHULEZCQUSVBVDCUFABMNUHULCORPRUGUKUIUMS
+    UAUJUPUNUQUPUJACDJTUQUNBCDJTPUB $.
 
   $( Conjunction inside and outside of a substitution are equivalent.
      (Contributed by NM, 5-Aug-1993.) $)
