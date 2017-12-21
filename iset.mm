@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Dec-2017
+$( iset.mm - Version of 20-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11798,6 +11798,15 @@ $)
      (Contributed by NM, 5-Aug-1993.) $)
   sbim $p |- ( [ y / x ] ( ph -> ps ) <-> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
     ( wi wsb sbi1 sbi2 impbii ) ABECDFACDFBCDFEABCDGABCDHI $.
+
+  $( Reverse direction of ~ sbor .  (Contributed by Jim Kingdon,
+     20-Dec-2017.) $)
+  sborr $p |- ( ( [ y / x ] ph \/ [ y / x ] ps ) -> [ y / x ] ( ph \/ ps ) ) $=
+    ( wsb wo weq wi wex df-sb biimpi orim12i orc imim2i anim1i andi exbii bitri
+    wa olc 19.43 anbi2i sylibr syl ) ACDEZBCDEZFCDGZAHZUGASZCIZSZUGBHZUGBSZCIZS
+    ZFZABFZCDEZUEUKUFUOUEUKACDJKUFUOBCDJKLUPUGUQHZUJSZUSUNSZFZURUKUTUOVAUHUSUJA
+    UQUGABMNOULUSUNBUQUGBATNOLURUSUGUQSZCIZSZVBUQCDJVEUSUJUNFZSVBVDVFUSVDUIUMFZ
+    CIVFVCVGCUGABPQUIUMCUARUBUSUJUNPRRUCUD $.
 
   $( Logical OR inside and outside of substitution are equivalent.
      (Contributed by NM, 29-Sep-2002.) $)
