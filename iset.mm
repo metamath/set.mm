@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Dec-2017
+$( iset.mm - Version of 21-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -10900,6 +10900,14 @@ $)
     hbnaes $p |- ( -. A. x x = y -> ph ) $=
       ( weq wal wn hbnae syl ) BCFBGHZKDGABCDIEJ $.
   $}
+
+  $( Quantifier Substitution for existential quantifiers.  Analogue to ~ ax10o
+     but for ` E. ` rather than ` A. ` .  (Contributed by Jim Kingdon,
+     21-Dec-2017.) $)
+  ax10oe $p |- ( A. x x = y -> ( E. x ps -> E. y ps ) ) $=
+    ( cv wceq wal wex wa ax-10 wi ax-i11e equcoms a4s ax-ia2 a1i exim
+    alimi syl sylsyld ) BDZCDZEZBFUATEZCFZABGZUCAHZCGZACGZBCIUBUEUGJZ
+    BUICBACBKLMUDUFAJZCFUGUHJUCUJCUJUCUCANOQUFACPRS $.
 
   $( Lemma used in proofs of substitution properties.  (Contributed by NM,
      5-Aug-1993.)  (Proof shortened by Mario Carneiro, 20-May-2014.) $)
