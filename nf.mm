@@ -17414,18 +17414,18 @@ $)
     $d x y $.  $d y ph $.  $d y ps $.
     $( "At most one" is preserved through implication (notice wff reversal). 
        (Contributed by ?who?, 22-Apr-1995.) $)
-    immo $p |- ( A. x ( ph -> ps ) -> ( E* x ps -> E* x ph ) ) $=
+    moim $p |- ( A. x ( ph -> ps ) -> ( E* x ps -> E* x ph ) ) $=
       ( vy wi wal weq wex wmo imim1 al2imi eximdv ax-17 mo2 3imtr4g ) ABEZCFZBC
       DGZEZCFZDHAREZCFZDHBCIACIQTUBDPSUACABRJKLBCDBDMNACDADMNO $.
       $( [22-Apr-1995] $)
   $}
 
   ${
-    immoi.1 $e |- ( ph -> ps ) $.
+    moimi.1 $e |- ( ph -> ps ) $.
     $( "At most one" is preserved through implication (notice wff reversal). 
        (Contributed by ?who?, 15-Feb-2006.) $)
-    immoi $p |- ( E* x ps -> E* x ph ) $=
-      ( wi wmo immo mpg ) ABEBCFACFECABCGDH $.
+    moimi $p |- ( E* x ps -> E* x ph ) $=
+      ( wi wmo moim mpg ) ABEBCFACFECABCGDH $.
       $( [15-Feb-2006] $)
   $}
 
@@ -17433,7 +17433,7 @@ $)
     $d x y $.  $d x y ph $.  $d y ps $.
     $( Move antecedent outside of "at most one." 
        (Contributed by ?who?, 28-Jul-1995.) $)
-    moimv $p |- ( E* x ( ph -> ps ) -> ( ph -> E* x ps ) ) $=
+    morimv $p |- ( E* x ( ph -> ps ) -> ( ph -> E* x ps ) ) $=
       ( vy wi wmo weq wal wex ax-1 a1i imim1d alimdv eximdv ax-17 3imtr4g com12
       mo2 ) AABEZCFZBCFZASCDGZEZCHZDIBUBEZCHZDITUAAUDUFDAUCUECABSUBBSEABAJKLMNS
       CDSDORBCDBDORPQ $.
@@ -17443,7 +17443,7 @@ $)
   $( Uniqueness implies "at most one" through implication. 
      (Contributed by ?who?, 22-Apr-1995.) $)
   euimmo $p |- ( A. x ( ph -> ps ) -> ( E! x ps -> E* x ph ) ) $=
-    ( weu wmo wi wal eumo immo syl5 ) BCDBCEABFCGACEBCHABCIJ $.
+    ( weu wmo wi wal eumo moim syl5 ) BCDBCEABFCGACEBCHABCIJ $.
     $( [22-Apr-1995] $)
 
   $( Add existential uniqueness quantifiers to an implication.  Note the
@@ -17459,7 +17459,7 @@ $)
   $( "At most one" is still the case when a conjunct is added. 
      (Contributed by ?who?, 22-Apr-1995.) $)
   moan $p |- ( E* x ph -> E* x ( ps /\ ph ) ) $=
-    ( wa simpr immoi ) BADACBAEF $.
+    ( wa simpr moimi ) BADACBAEF $.
     $( [22-Apr-1995] $)
 
   ${
@@ -17474,7 +17474,7 @@ $)
   $( "At most one" is still the case when a disjunct is removed. 
      (Contributed by ?who?, 5-Apr-2004.) $)
   moor $p |- ( E* x ( ph \/ ps ) -> E* x ph ) $=
-    ( wo orc immoi ) AABDCABEF $.
+    ( wo orc moimi ) AABDCABEF $.
     $( [5-Apr-2004] $)
 
   $( "At most one" imports disjunction to conjunction.  (The proof was
@@ -17482,7 +17482,7 @@ $)
      (Contributed by ?who?, 5-Apr-2004.) 
      (Revised by ?who?, 9-Jul-2011.) $)
   mooran1 $p |- ( ( E* x ph \/ E* x ps ) -> E* x ( ph /\ ps ) ) $=
-    ( wmo wa simpl immoi moan jaoi ) ACDABEZCDBCDJACABFGBACHI $.
+    ( wmo wa simpl moimi moan jaoi ) ACDABEZCDBCDJACABFGBACHI $.
     $( [9-Jul-2011] $) $( [5-Apr-2004] $)
 
   $( "At most one" exports disjunction to conjunction.  (The proof was
@@ -17490,7 +17490,7 @@ $)
      (Contributed by ?who?, 5-Apr-2004.) 
      (Revised by ?who?, 9-Jul-2011.) $)
   mooran2 $p |- ( E* x ( ph \/ ps ) -> ( E* x ph /\ E* x ps ) ) $=
-    ( wo wmo moor olc immoi jca ) ABDZCEACEBCEABCFBJCBAGHI $.
+    ( wo wmo moor olc moimi jca ) ABDZCEACEBCEABCFBJCBAGHI $.
     $( [9-Jul-2011] $) $( [5-Apr-2004] $)
 
   ${
@@ -17624,7 +17624,7 @@ $)
        (Contributed by ?who?, 3-Dec-2001.) $)
     moexex $p |- ( ( E* x ph /\ A. x E* y ps ) -> E* y E. x ( ph /\ ps ) ) $=
       ( wmo wal wa wex wi hbmo1 hba1 hbe1 hbmo hbim mopick ex exlimi wn a1d ori
-      com3r alrimd immo a4sd syl6 hbex exsimpl con3i exmo syl pm2.61i imp ) ACF
+      com3r alrimd moim a4sd syl6 hbex exsimpl con3i exmo syl pm2.61i imp ) ACF
       ZBDFZCGZABHZCIZDFZACIZUNUPUSJZJZAVBCUNVACACKUPUSCUOCLURCDUQCMNOOAUNURBJZD
       GZVAAUNVCDEADCENUNURABUNURABJABCPQUBUCVDUOUSCURBDUDUEUFRUTSZVAUNVEUSUPVEU
       RDIZSUSVFUTURUTDADCEUGABCUHRUIVFUSURDUJUAUKTTULUM $.
@@ -17643,7 +17643,7 @@ $)
   $( Double quantification with "at most one." 
      (Contributed by ?who?, 3-Dec-2001.) $)
   2moex $p |- ( E* x E. y ph -> A. y E* x ph ) $=
-    ( wex wmo hbe1 hbmo 19.8a immoi alrimi ) ACDZBEABECKCBACFGAKBACHIJ $.
+    ( wex wmo hbe1 hbmo 19.8a moimi alrimi ) ACDZBEABECKCBACFGAKBACHIJ $.
     $( [3-Dec-2001] $)
 
   $( Double quantification with existential uniqueness.  (The proof was
@@ -17651,7 +17651,7 @@ $)
      (Contributed by ?who?, 3-Dec-2001.) 
      (Revised by ?who?, 9-Jul-2011.) $)
   2euex $p |- ( E! x E. y ph -> E. y E! x ph ) $=
-    ( wex weu wmo wa eu5 excom hbe1 19.8a immoi df-mo sylib eximd syl5bi impcom
+    ( wex weu wmo wa eu5 excom hbe1 19.8a moimi df-mo sylib eximd syl5bi impcom
     hbmo wi sylbi ) ACDZBEUABDZUABFZGABEZCDZUABHUCUBUEUBABDZCDUCUEABCIUCUFUDCUA
     CBACJRUCABFUFUDSAUABACKLABMNOPQT $.
     $( [9-Jul-2011] $) $( [3-Dec-2001] $)
@@ -17685,7 +17685,7 @@ $)
   $( Double existential uniqueness implies double uniqueness quantification. 
      (Contributed by ?who?, 3-Dec-2001.) $)
   2exeu $p |- ( ( E! x E. y ph /\ E! y E. x ph ) -> E! x E! y ph ) $=
-    ( wex wmo weu excom hbe1 19.41 19.8a immoi anim2i eximi sylbir sylanb simpl
+    ( wex wmo weu excom hbe1 19.41 19.8a moimi anim2i eximi sylbir sylanb simpl
     wa hbmo eu5 anbi12i adantl anim12i ancoms exbii mobii bitri 3imtr4i ) ACDZB
     DZUHBEZQZABDZCDZULCEZQZQUHACEZQZBDZUQBEZQZUHBFZULCFZQACFZBFZUOUKUTUOURUKUSU
     MUIUNURACBGUIUNQUHUNQZBDURUHUNBULBCABHRIVEUQBUNUPUHAULCABJKLMNOUJUSUIUQUHBU
@@ -17741,7 +17741,7 @@ $)
   2eu1 $p |- ( A. x E* y ph ->
         ( E! x E! y ph <-> ( E! x E. y ph /\ E! y E. x ph ) ) ) $=
     ( wmo wal weu wex wa wi eu5 exbii mobii anbi12i bitri simprbi anim2i ancoms
-    ax-4 sylib com12 immoi hba1 moanim ancrd 2moswap imdistani syl 2eu2ex excom
+    ax-4 sylib com12 moimi hba1 moanim ancrd 2moswap imdistani syl 2eu2ex excom
     syl6 jca jctild an4 syl6ibr 2exeu impbid1 ) ACDZBEZACFZBFZACGZBFZABGZCFZHZU
     TURVEUTURVABGZVCCGZHZVABDZVCCDZHZHZVEUTURVKVHUTVAUQHZBDZURVKIUTVMBGZVNUTUSB
     GZUSBDZHVOVNHUSBJVPVOVQVNUSVMBACJZKUSVMBVRLMNOVNURVIURHVKVNURVIVNURVAHZBDUR
@@ -25158,42 +25158,6 @@ $)
   $}
 
   ${
-    $d x y $.
-    $( Membership in a class abstraction, expressed in terms of class
-       substitution.  Theorem 6.13 of [Quine] p. 44. 
-       (Contributed by ?who?, 7-Mar-2004.) $)
-    elabs2 $p |- ( A e. { x | ph } <-> ( A e. _V /\ [ A / x ] ph ) ) $=
-      ( vy cab wcel cvv crab wsbc wa rabab eleq2i cv ax-17 elrabsf bitr3i ) CAB
-      EZFCABGHZFCGFABCIJRQCABKLABDCGDMGFBNOP $.
-      $( [7-Mar-2004] $)
-  $}
-
-  $( Membership in a class abstraction, expressed in terms of class
-     substitution.  Conveniently, this theorem has no distinct variable
-     restrictions.  Except for the antecedent, this theorem is "almost" like
-     ~ df-sbc but was proved using only ~ dfsbcq as its starting point (making
-     no other reference to ~ df-sbc ).  We prefer not to make direct reference
-     to ~ df-sbc (i.e. commit to it) since its behavior at proper classes is at
-     odds with Quine, whereas ~ dfsbcq is not.  (Quine's class substitution
-     cannot be expressed in closed form.)  This theorem serves as a weaker
-     Quine-compatible substitute for ~ df-sbc . 
-     (Contributed by ?who?, 4-Nov-2005.) $)
-  elabsg $p |- ( A e. V -> ( A e. { x | ph } <-> [ A / x ] ph ) ) $=
-    ( wcel cvv cab wsbc wb elex elabs2 baib syl ) CDECFEZCABGEZABCHZICDJONPABCK
-    LM $.
-    $( [4-Nov-2005] $)
-
-  ${
-    elabs.1 $e |- A e. _V $.
-    $( Membership in a class abstraction, expressed in terms of class
-       substitution. 
-       (Contributed by ?who?, 7-Mar-2004.) $)
-    elabsbc $p |- ( A e. { x | ph } <-> [ A / x ] ph ) $=
-      ( cab wcel cvv wsbc elabs2 mpbiran ) CABEFCGFABCHDABCIJ $.
-      $( [7-Mar-2004] $)
-  $}
-
-  ${
     $d x y B $.  $d y A $.
     $( Substitution applied to an atomic wff.  Set theory version of ~ eqsb3 .
        (Contributed by Andrew Salmon, 29-Jun-2011.) $)
@@ -30655,19 +30619,6 @@ $)
       $( [9-Oct-2006] $) $( [13-Aug-2002] $)
   $}
 
-  ${
-    $d x y A $.  $d y ph $.
-    $( Closure law for "the unique element in ` A ` such that ` ph ` ." 
-       (Contributed by ?who?, 22-Nov-1994.) $)
-    reucl $p |- ( E! x e. A ph -> U. { x e. A | ph } e. A ) $=
-      ( vy cv wcel weu cab cuni wreu crab csn wceq wex euabsn hbab1 hbuni ax-17
-      wa hbel unieq unisn syl6req snid eleq2 mpbiri abid simpld eqeltrrd exlimi
-      vex sylib sylbi df-reu df-rab unieqi eleq1i 3imtr4i ) BEZCFZASZBGZVABHZIZ
-      CFZABCJABCKZIZCFVBVCUSLZMZBNVEVABOVIVEBBDDVDCBDVCVABDPQDECFBRTVIUSVDCVIVD
-      VHIUSVCVHUAUSBUKZUBUCVIUTAVIUSVCFZVAVIVKUSVHFUSVJUDVCVHUSUEUFVABUGULUHUIU
-      JUMABCUNVGVDCVFVCABCUOUPUQUR $.
-      $( [22-Nov-1994] $)
-  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -30971,7 +30922,7 @@ $)
   $}
 
   ${
-    $d x z A $.  $d x z ph $.  $d x y z $.
+    $d x z w A $.  $d x z w ph $.  $d x y z w $.
     intab.1 $e |- A e. _V $.
     intab.2 $e |- { x | E. y ( ph /\ x = A ) } e. _V $.
     $( The intersection of a special case of a class abstraction. ` y ` may be
@@ -30980,19 +30931,15 @@ $)
        (Contributed by ?who?, 28-Jul-2006.) $)
     intab $p |- |^| { x | A. y ( ph -> A e. x ) } =
                 { x | E. y ( ph /\ x = A ) } $=
-      ( vz cv wcel wi wal cab wceq wa wex wsbc cvv wb ax-mp sylibr eqeq1 anbi2d
-      cint wss exbidv cbvabv eqeltri hbe1 hbeleq eleq2 imbi2d albid sbcie ax-17
-      hbab sbcgf biimpri csb csbvarg sbceq1g mpbir jctir sbcang 19.8a a4sbc mp2
-      ax-gen sbcimg mpbi syl elabsbc mpgbir intss1 hba1 hbint ax-4 com12 adantr
-      eleq1 adantl sylibrd alrimiv vex elintab exlimi abssi eqssi eqtri ) ADBHZ
-      IZJZCKZBLZUCZAGHZDMZNZCOZGLZAWIDMZNZCOZBLZWNWSWSWMIZWNWSUDXDWLBWSPZXEADWS
-      IZJZCWLXGCKBWSWSXCQWRXBGBWOWIMZWQXACXHWPWTAWOWIDUAUBUEUFZFUGZWIWSMZWKXGCC
-      BWSWRCGBWQCUHUOUIXKWJXFAWIWSDUJUKULUMAWRGDPZXFAWQGDPZXLAAGDPZWPGDPZNZXMAX
-      NXOXNADQIZXNAREAGDQAGUNUPSUQXOGDWOURDMZXQXREGDQUSSXQXOXRREGDWODQUTSVAVBXQ
-      XMXPREAWPGDQVCSTWQWRJZGDPZXMXLJZXQXSGKXTEXSGWQCVDVGXSGDQVEVFXQXTYAREWQWRG
-      DQVHSVIVJWRGDEVKTVLWLBWSXJVKVAWSWMVMSWRGWNWQWOWNIZCCGWMWLCBGWKCVNUOVOWQWL
-      WOWIIZJZBKYBWQYDBWQWLWJYCAWLWJJWPWLAWJWKCVPVQVRWPYCWJRAWODWIVSVTWAWBWLBWO
-      GWCWDTWEWFWGXIWH $.
+      ( vz vw cv wcel wi wal cab cint wceq wa wex ex alrimiv sylibr wss cvv weq
+      eqeq1 anbi2d exbidv cbvabv eqeltri wel ax-17 hbe1 hbab eleq2 imbi2d albid
+      hbeq elab wsbc 19.8a sbc6 df-sbc sylib mpgbir intss1 19.29r simplr pm3.35
+      ax-mp adantlr eqeltrd exlimiv syl vex elintab abssi eqssi eqtri ) ADBIZJZ
+      KZCLZBMZNZAGIZDOZPZCQZGMZAVRDOZPZCQZBMZWCWHWHWBJZWCWHUAWMADWHJZKZCWAWOCLB
+      WHWHWLUBWGWKGBGBUCZWFWJCWPWEWIAWDVRDUDUEUFUGZFUHVRWHOZVTWOCCGHVRWHGBUIZCU
+      JWGCGHWFCUKULUPWRVSWNAVRWHDUMUNUOUQAWGGDURZWNAWEWGKZGLWTAXAGAWEWGWFCUSRSW
+      GGDEUTTWGGDVAVBVCWHWBVDVHWGGWCWGWAWSKZBLWDWCJWGXBBWGWAWSWGWAPWFVTPZCQWSWF
+      VTCVEXCWSCXCWDDVRAWEVTVFAVTVSWEAVSVGVIVJVKVLRSWABWDGVMVNTVOVPWQVQ $.
       $( [28-Jul-2006] $)
   $}
 
@@ -34957,26 +34904,6 @@ $)
       $( [16-Jan-2015] $)
   $}
 
-
-  ${
-    $d x y z $.  $d y z ph $.
-    $( If ` ph ` is true for exactly one ` x ` , then ` U. { x | ph } ` is a
-       way to express "the unique element such that ` ph ` is true."  Some
-       books use a special symbol such as iota to denote "the unique element
-       such that." 
-       (Contributed by ?who?, 22-Feb-2004.) $)
-    euuni $p |- ( E! x ph -> ( ph <-> U. { x | ph } = x ) ) $=
-      ( vy vz weu cab cuni cv wceq wa wex cvv wcel euabex uniexg syl eueq ax-17
-      wb sylib eqcom eubii hbab1 hbuni hbeq eqeq2 cbveu 3bitri csn euabsn eleq2
-      vex snid mpbiri abid unieq unisn syl6eq jca eximi sylbi eupickb mpd3an23
-      ) ABEZABFZGZBHZIZBEZAVHJZBKZAVHSVDVFLMZVIVDVELMVLABNVELOPVLCHZVFIZCEVFVMI
-      ZCEVICVFQVNVOCVMVFUAUBVOVHCBBDDVFVMBDVEABDUCUDDHVMMBRUEVHCRVMVGVFUFUGUHTV
-      DVEVGUIZIZBKVKABUJVQVJBVQAVHVQVGVEMZAVQVRVGVPMVGBULZUMVEVPVGUKUNABUOTVQVF
-      VPGVGVEVPUPVGVSUQURUSUTVAAVHBVBVC $.
-      $( [22-Feb-2004] $)
-  $}
-
-
   ${
     $d A x $.  $d B x $.
     sspw1.1 $e |- A e. _V $.
@@ -35170,7 +35097,7 @@ $)
 
     $( Equivalence between two different forms of ` iota ` .  (Contributed by
        Andrew Salmon, 12-Jul-2011.) $)
-    iotaequ $p |- ( E! x ph -> ( iota x ph ) = U. { x | ph } ) $=
+    iotauni $p |- ( E! x ph -> ( iota x ph ) = U. { x | ph } ) $=
       ( vz weu cv wceq wb wal wex cio cuni df-eu iotaval uniabio eqtr4d exlimiv
       cab sylbi ) ABDABECEZFGBHZCIABJZABQKZFZABCLTUCCTUASUBABCMABCNOPR $.
       $( [20-Aug-2011] $) $( [12-Jul-2011] $)
@@ -35239,16 +35166,19 @@ $)
   $( Membership law for descriptions.  (Contributed by Andrew Salmon,
      1-Aug-2011.) $)
   iotacl $p |- ( E! x ph -> ( iota x ph ) e. { x | ph } ) $=
-    ( weu cio wsbc cab wcel iota4 iotaex elabsbc sylibr ) ABCABABDZELABFGABHABL
-    ABIJK $.
+    ( weu cio wsbc cab wcel iota4 df-sbc sylib ) ABCABABDZEKABFGABHABKIJ $.
     $( [1-Aug-2011] $)
 
-  $( Property of iota.  Compare ~ euuni . 
+  ${
+     $d x z $. $d ph z $.
+  $( Property of iota. 
      (Contributed by ?who?, 23-Aug-2011.) $)
   iota1 $p |- ( E! x ph -> ( ph <-> ( iota x ph ) = x ) ) $=
-    ( weu cab cuni cv wceq cio euuni iotaequ eqeq1d bitr4d ) ABCZAABDEZBFZGABHZ
-    OGABIMPNOABJKL $.
+    ( vz weu weq wb wal wex cio cv wceq df-eu ax-4 iotaval eqeq2d bitr4d syl6bb
+    eqcom exlimiv sylbi ) ABDABCEZFZBGZCHAABIZBJZKZFZABCLUCUGCUCAUEUDKZUFUCAUAU
+    HUBBMUCUDCJUEABCNOPUEUDRQST $.
     $( [23-Aug-2011] $)
+  $}
 
   $( Membership law for descriptions. 
      (Contributed by ?who?, 21-Aug-2011.) $)
@@ -35260,7 +35190,7 @@ $)
 
   ${
     $d x A $.
-    $( Membership law for descriptions.  Compare ~ reucl . 
+    $( Membership law for descriptions. 
        (Contributed by ?who?, 21-Aug-2011.) $)
     reiotacl $p |- ( E! x e. A ph
                     -> ( iota x ( x e. A /\ ph ) ) e. A ) $=
@@ -35362,7 +35292,7 @@ $)
     $( Alternate definition of iota in terms of the ` if ` operator. 
        (Contributed by ?who?, 29-Jan-2015.) $)
     dfiota3 $p |- ( iota x ph ) = if ( E! x ph , U. { x | ph } , (/) ) $=
-      ( weu cio cab cuni cif wceq iotaequ iftrue eqtr4d iotanul iffalse pm2.61i
+      ( weu cio cab cuni cif wceq iotauni iftrue eqtr4d iotanul iffalse pm2.61i
       c0 wn ) ABCZABDZQABEFZOGZHQRSTABIQSOJKQPROTABLQSOMKN $.
       $( [29-Jan-2015] $)
   $}
@@ -35371,7 +35301,7 @@ $)
     $( Alternate definition of iota in terms of ` 1c ` . 
        (Contributed by ?who?, 29-Jan-2015.) $)
     dfiota4 $p |- ( iota x ph ) = U. U. ( 1c i^i { { x | ph } } ) $=
-      ( weu cio c1c cab csn cin cuni wceq iotaequ wss wcel unieqd cvv eqtr4d wn
+      ( weu cio c1c cab csn cin cuni wceq iotauni wss wcel unieqd cvv eqtr4d wn
       dfeu2 c0 uni0 snssi sylbi df-ss incom eqeq1i bitri sylib euabex syl eqtrd
       unisng iotanul notbii disjsn bitr4i biimpi unieqi eqtri syl6eq pm2.61i )
       ABCZABDZEABFZGZHZIZIZJVAVBVCIVGABKVAVFVCVAVFVDIZVCVAVEVDVAVDELZVEVDJZVAVC
@@ -49451,7 +49381,7 @@ $)
        (Revised by ?who?, 22-Oct-2011.) $)
     nfunsn $p |- ( -. Fun ( F |` { A } ) -> ( F ` A ) = (/) ) $=
       ( vx vy cfv c0 wceq csn cres wfun wn wrel cv wbr wmo wal weu eumo sylbi
-      wa wcel brres wb vex elsn breq1 biimpac immoi syl tz6.12-2 alrimiv relres
+      wa wcel brres wb vex elsn breq1 biimpac moimi syl tz6.12-2 alrimiv relres
       nsyl4 jctil dffun6 sylibr con1i ) ABEFGZBAHZIZJZURKZUTLZCMZDMZUTNZDOZCPZT
       VAVBVHVCVBVGCAVEBNZDQZVGURVJVIDOVGVIDRVFVIDVFVDVEBNZVDUSUAZTVIVDVEBUSUBVL
       VKVIVLVDAGVKVIUCVDACUDUEVDAVEBUFSUGSUHUIDABUJUMUKBUSULUNCDUTUOUPUQ $.
@@ -49695,7 +49625,7 @@ $)
     funfv $p |- ( Fun F -> ( F ` A ) = U. ( F " { A } ) ) $=
       ( vx vy cvv cima cuni wceq cv wbr wmo wal wi wn c0 syl unieqd uni0 syl6eq
       eqtr4d wfun wcel cfv csn wrel dffun6 simprbi ax-17 breq1 mobid cla4gv cio
-      cab wex weu df-mo euex con3i iotanul alnex bitri biimpri iotaequ ja sylbi
+      cab wex weu df-mo euex con3i iotanul alnex bitri biimpri iotauni ja sylbi
       ab0 df-fv imasn unieqi 3eqtr4g syl6com fvprc biimpi imaeq2d ima0 pm2.61d1
       snprc eqtri ) BUAZAEUBZABUCZBAUDZFZGZHZVSCIZDIZBJZDKZCLZVTWEMVSBUEWJCDBUF
       UGVTWJAWGBJZDKZWEWIWLCAEWFAHZWHWKDWMDUHWFAWGBUIUJUKWLWKDULZWKDUMZGZWAWDWL
@@ -52078,7 +52008,7 @@ $)
 
   $( Extend class notation to include class abstraction (class builder) of
      nested ordered pairs. $)
-  copab2 $a class { <. <. x , y >. , z >. | ph } $.
+  coprab $a class { <. <. x , y >. , z >. | ph } $.
 
   $( Define the value of an operation.  Definition of operation value in
      [Enderton] p. 79.  Note that the syntax is simply three class expressions
@@ -52259,7 +52189,7 @@ $)
        (Contributed by Mario Carneiro, 20-Mar-2013.) $)
     oprabid $p |- ( <. <. x , y >. , z >. e.
         { <. <. x , y >. , z >. | ph } <-> ph ) $=
-      ( vw va vt vr vs cv cop wceq wa wex vex wi weq opth wal wn copab2 eqvinop
+      ( vw va vt vr vs cv cop wceq wa wex vex wi weq opth wal wn coprab eqvinop
       biimpi eqeq1 simplbi syl6bi opeq1 eqeq2d anbi1i bitri anass 3bitri 3exbii
       opex nd5 equcom albii 3imtr3g exdistrf eximi excom 3imtr4i 3imtr4g anim2i
       3syl sylbi w3a df-3an bitr4i weu euequ1 eupick mpan syl6 3impd com12 syl5
@@ -52370,7 +52300,7 @@ $)
        (Contributed by ?who?, 12-Mar-1995.) $)
     dfoprab2 $p |- { <. <. x , y >. , z >. | ph } =
                    { <. w , z >. | E. x E. y ( w = <. x , y >. /\ ph ) } $=
-      ( vv cv cop wceq wex cab copab2 copab excom exrot4 an12 exbii vex bitri
+      ( vv cv cop wceq wex cab coprab copab excom exrot4 an12 exbii vex bitri
       wa opex opeq1 eqeq2d anbi1d ceqsexv 3exbii 19.42vv 3bitr3i abbii df-oprab
       2exbii df-opab 3eqtr4i ) FGZBGZCGZHZDGZHZIZATZDJCJBJZFKUNEGZURHZIZVCUQIZA
       TZCJBJZTZDJEJZFKABCDLVHEDMVBVJFVEVGTZCJBJZEJDJZVLDJEJVBVJVLDENVMVKEJZDJCJ
@@ -52381,7 +52311,7 @@ $)
     $( An operation class abstraction is a relation. 
        (Contributed by ?who?, 16-Jun-2004.) $)
     reloprab $p |- Rel { <. <. x , y >. , z >. | ph } $=
-      ( vw cv cop wceq wa wex copab2 dfoprab2 relopabi ) EFBFCFGHAICJBJEDABCDKA
+      ( vw cv cop wceq wa wex coprab dfoprab2 relopabi ) EFBFCFGHAICJBJEDABCDKA
       BCDELM $.
       $( [16-Jun-2004] $)
   $}
@@ -52395,7 +52325,7 @@ $(
        hypothesis instead of distinct variable requirement. @)
     dfoprab2f @p |- { <. <. x , y >. , z >. | ph } =
                    { <. w , z >. | E. x E. y ( w = <. x , y >. /\ ph ) } @=
-      ( vv copab2 cv cop wceq wa wex copab dfoprab2 ax-17 hban hbex weq eqeq1
+      ( vv coprab cv cop wceq wa wex copab dfoprab2 ax-17 hban hbex weq eqeq1
       anbi1d 2exbidv cbvopab1
       eqtri ) ABCDHGIZBICIJZKZALZCMZBMZGDNEIZUFKZALZCMBM
       ZEDNABCDGOUJUNGDEUIEBUHECUGAEUGEPFQRRUNGPGESZUHUMBCUOUGULAUEUKUFTUAUBUCUD
@@ -52412,7 +52342,7 @@ $)
        (Revised by ?who?, 24-Jul-2012.) $)
     hboprab1 $p |- ( w e. { <. <. x , y >. , z >. | ph } ->
                    A. x w e. { <. <. x , y >. , z >. | ph } ) $=
-      ( vv copab2 cv cop wceq wa wex cab df-oprab hbe1 hbab hbxfreq ) BEABCDGFH
+      ( vv coprab cv cop wceq wa wex cab df-oprab hbe1 hbab hbxfreq ) BEABCDGFH
       BHCHIDHIJAKDLCLZBLZFMABCDFNSBFERBOPQ $.
       $( [24-Jul-2012] $) $( [25-Apr-1995] $)
   $}
@@ -52426,7 +52356,7 @@ $)
        (Revised by ?who?, 31-Jul-2012.) $)
     hboprab2 $p |- ( w e. { <. <. x , y >. , z >. | ph } ->
                    A. y w e. { <. <. x , y >. , z >. | ph } ) $=
-      ( vv copab2 cv cop wceq wa wex cab df-oprab hbe1 hbex hbab hbxfreq ) CEAB
+      ( vv coprab cv cop wceq wa wex cab df-oprab hbe1 hbex hbab hbxfreq ) CEAB
       CDGFHBHCHIDHIJAKDLZCLZBLZFMABCDFNUACFETCBSCOPQR $.
       $( [31-Jul-2012] $)  $( [25-Apr-1995] $)
   $}
@@ -52438,7 +52368,7 @@ $)
        (Contributed by ?who?, 22-Aug-2013.) $)
     hboprab3 $p |- ( w e. { <. <. x , y >. , z >. | ph } ->
                    A. z w e. { <. <. x , y >. , z >. | ph } ) $=
-      ( vv copab2 cv cop wceq wa wex cab df-oprab hbe1 hbex hbab hbxfreq ) DEAB
+      ( vv coprab cv cop wceq wa wex cab df-oprab hbe1 hbex hbab hbxfreq ) DEAB
       CDGFHBHCHIDHIJAKZDLZCLZBLZFMABCDFNUBDFEUADBTDCSDOPPQR $.
       $( [22-Aug-2013] $)
   $}
@@ -52450,7 +52380,7 @@ $)
        (Contributed by ?who?, 22-Aug-2013.) $)
     hboprab $p |- ( u e. { <. <. x , y >. , z >. | ph } ->
                    A. w u e. { <. <. x , y >. , z >. | ph } ) $=
-      ( vv copab2 cv cop wceq wa wex cab df-oprab ax-17 hban hbex hbab hbxfreq
+      ( vv coprab cv cop wceq wa wex cab df-oprab ax-17 hban hbex hbab hbxfreq
       ) EFABCDIHJBJCJKDJKLZAMZDNZCNZBNZHOABCDHPUFEHFUEEBUDECUCEDUBAEUBEQGRSSSTU
       A $.
       $( [22-Aug-2013] $)
@@ -52468,7 +52398,7 @@ $)
        (Revised by ?who?, 24-Jun-2014.) $)
     oprabbid $p |- ( ph ->
            { <. <. x , y >. , z >. | ps } = { <. <. x , y >. , z >. | ch } ) $=
-      ( vw cv cop wceq wa wex cab copab2 exbid df-oprab anbi2d abbidv 3eqtr4g )
+      ( vw cv cop wceq wa wex cab coprab exbid df-oprab anbi2d abbidv 3eqtr4g )
       AKLDLELMFLMNZBOZFPZEPZDPZKQUDCOZFPZEPZDPZKQBDEFRCDEFRAUHULKAUGUKDGAUFUJEH
       AUEUIFIABCUDJUASSSUBBDEFKTCDEFKTUC $.
       $( [24-Jun-2014] $) $( [21-Feb-2004] $)
@@ -52496,7 +52426,7 @@ $)
        (Revised by ?who?, 24-Jul-2012.) $)
     oprabbii $p |- { <. <. x , y >. , z >. | ph }
                  = { <. <. x , y >. , z >. | ps } $=
-      ( vw cv wceq copab2 eqid wb a1i oprabbidv ax-mp ) GHZPIZACDEJBCDEJIPKQABC
+      ( vw cv wceq coprab eqid wb a1i oprabbidv ax-mp ) GHZPIZACDEJBCDEJIPKQABC
       DEABLQFMNO $.
       $( [24-Jul-2012] $) $( [28-May-1995] $)
   $}
@@ -52525,7 +52455,7 @@ $)
        (Revised by ?who?, 22-Oct-2011.) $)
     cbvoprab1 $p |- { <. <. x , y >. , z >. | ph }
                   = { <. <. w , y >. , z >. | ps } $=
-      ( vv cv cop wceq wa wex copab copab2 ax-17 hban hbex opeq1 eqeq2d anbi12d
+      ( vv cv cop wceq wa wex copab coprab ax-17 hban hbex opeq1 eqeq2d anbi12d
       exbidv cbvex opabbii dfoprab2 3eqtr4i ) JKZCKZDKZLZMZANZDOZCOZJEPUIFKZUKL
       ZMZBNZDOZFOZJEPACDEQBFDEQUPVBJEUOVACFUNFDUMAFUMFRGSTUTCDUSBCUSCRHSTUJUQMZ
       UNUTDVCUMUSABVCULURUIUJUQUKUAUBIUCUDUEUFACDEJUGBFDEJUGUH $.
@@ -52546,7 +52476,7 @@ $)
        (Revised by ?who?, 22-Oct-2011.) $)
     cbvoprab12 $p |- { <. <. x , y >. , z >. | ph }
                    = { <. <. w , v >. , z >. | ps } $=
-      ( vu cv cop wceq wa wex ax-17 hban copab copab2 weq opeq12 eqeq2d anbi12d
+      ( vu cv cop wceq wa wex ax-17 hban copab coprab weq opeq12 eqeq2d anbi12d
       cbvex2 opabbii dfoprab2 3eqtr4i ) MNZCNZDNZOZPZAQZDRCRZMEUAUKFNZGNZOZPZBQ
       ZGRFRZMEUAACDEUBBFGEUBUQVCMEUPVBCDFGUOAFUOFSHTUOAGUOGSITVABCVACSJTVABDVAD
       SKTCFUCDGUCQZUOVAABVDUNUTUKULURUMUSUDUELUFUGUHACDEMUIBFGEMUIUJ $.
@@ -52575,7 +52505,7 @@ $)
        (Contributed by ?who?, 22-Aug-2013.) $)
     cbvoprab3 $p |- { <. <. x , y >. , z >. | ph } =
                      { <. <. x , y >. , w >. | ps } $=
-      ( vv cv wceq wa wex copab copab2 ax-17 hban hbex dfoprab2 anbi2d cbvopab2
+      ( vv cv wceq wa wex copab coprab ax-17 hban hbex dfoprab2 anbi2d cbvopab2
       cop 2exbidv 3eqtr4i ) JKCKDKUCLZAMZDNZCNZJEOUFBMZDNZCNZJFOACDEPBCDFPUIULJ
       EFUHFCUGFDUFAFUFFQGRSSUKECUJEDUFBEUFEQHRSSEKFKLZUGUJCDUMABUFIUAUDUBACDEJT
       BCDFJTUE $.
@@ -52618,7 +52548,7 @@ $)
        (Revised by ?who?, 24-Jul-2012.) $)
     dmoprab $p |- dom { <. <. x , y >. , z >. | ph } =
                   { <. x , y >. | E. z ph } $=
-      ( vw copab2 cdm cv cop wceq wa wex copab cab dfoprab2 dmeqi dmopab exrot3
+      ( vw coprab cdm cv cop wceq wa wex copab cab dfoprab2 dmeqi dmopab exrot3
       19.42v 2exbii bitri abbii df-opab eqtr4i 3eqtri ) ABCDFZGEHBHCHIJZAKZCLBL
       ZEDMZGUIDLZENZADLZBCMZUFUJABCDEOPUIEDQULUGUMKZCLBLZENUNUKUPEUKUHDLZCLBLUP
       UHDBCRUQUOBCUGADSTUAUBUMBCEUCUDUE $.
@@ -52631,7 +52561,7 @@ $)
        (Contributed by ?who?, 24-Aug-1995.) $)
     dmoprabss $p |- dom { <. <. x , y >. , z >. |
            ( ( x e. A /\ y e. B ) /\ ph ) } C_ ( A X. B ) $=
-      ( cv wcel wa copab2 cdm wex copab dmoprab 19.42v opabbii opabssxp eqsstri
+      ( cv wcel wa coprab cdm wex copab dmoprab 19.42v opabbii opabssxp eqsstri
       cxp ) BGEHCGFHIZAIZBCDJKUADLZBCMZEFSZUABCDNUCTADLZIZBCMUDUBUFBCTADOPUEBCE
       FQRR $.
       $( [24-Aug-1995] $)
@@ -52645,7 +52575,7 @@ $)
        (Revised by ?who?, 19-Apr-2013.) $)
     rnoprab $p |- ran { <. <. x , y >. , z >. | ph } =
                   { z | E. x E. y ph } $=
-      ( vw copab2 crn cv cop wceq wa wex copab cab dfoprab2 rneqi rnopab exrot3
+      ( vw coprab crn cv cop wceq wa wex copab cab dfoprab2 rneqi rnopab exrot3
       vex bitri 19.41v opex isseti biantrur bicomi 2exbii abbii 3eqtri ) ABCDFZ
       GEHBHZCHZIZJZAKZCLBLZEDMZGUOELZDNACLBLZDNUIUPABCDEOPUOEDQUQURDUQUNELZCLBL
       URUNEBCRUSABCUSUMELZAKZAUMAEUAAVAUTAEULUJUKBSCSUBUCUDUETUFTUGUH $.
@@ -52659,7 +52589,7 @@ $)
     rnoprab2 $p |- ran { <. <. x , y >. , z >. |
                           ( ( x e. A /\ y e. B ) /\ ph ) } =
                     { z | E. x e. A E. y e. B ph } $=
-      ( cv wcel wa copab2 crn wex cab wrex rnoprab r2ex abbii eqtr4i ) BGEHCGFH
+      ( cv wcel wa coprab crn wex cab wrex rnoprab r2ex abbii eqtr4i ) BGEHCGFH
       IAIZBCDJKSCLBLZDMACFNBENZDMSBCDOUATDABCEFPQR $.
       $( [22-Mar-2012] $) $( [21-Mar-2012] $)
   $}
@@ -52669,13 +52599,13 @@ $)
     $( The domain of an operation class abstraction is a relation. 
        (Contributed by ?who?, 17-Mar-1995.) $)
     reldmoprab $p |- Rel dom { <. <. x , y >. , z >. | ph } $=
-      ( wex copab2 cdm dmoprab relopabi ) ADEBCABCDFGABCDHI $.
+      ( wex coprab cdm dmoprab relopabi ) ADEBCABCDFGABCDHI $.
       $( [17-Mar-1995] $)
 
     $( Structure of an operation class abstraction. 
        (Contributed by ?who?, 28-Nov-2006.) $)
     oprabss $p |- { <. <. x , y >. , z >. | ph } C_ ( ( _V X. _V ) X. _V ) $=
-      ( copab2 cdm crn cxp wrel reloprab relssdmrn ax-mp reldmoprab df-rel mpbi
+      ( coprab cdm crn cxp wrel reloprab relssdmrn ax-mp reldmoprab df-rel mpbi
       cvv wss ssv xpss12 mp2an sstri ) ABCDEZUBFZUBGZHZPPHZPHZUBIUBUEQABCDJUBKL
       UCUFQZUDPQUEUGQUCIUHABCDMUCNOUDRUCUFUDPSTUA $.
       $( [28-Nov-2006] $)
@@ -52692,7 +52622,7 @@ $)
        (Contributed by ?who?, 19-Dec-2013.) $)
     eloprabga $p |- ( ( A e. V /\ B e. W /\ C e. X ) ->
        ( <. <. A , B >. , C >. e. { <. <. x , y >. , z >. | ph } <-> ps ) ) $=
-      ( vw wcel cvv cop wb wa wceq wex copab2 w3a opexg sylan 3impa wi cv eqeq1
+      ( vw wcel cvv cop wb wa wceq wex coprab w3a opexg sylan 3impa wi cv eqeq1
       elex eqcom opth anbi1i df-3an 3bitr4i bitri syl6bb anbi1d pm5.32i 3exbidv
       adantl cab df-oprab eleq2i bitr2i eleq1 syl5bb isset eeeanv bitr4i biimpi
       3anbi123i biantrurd 19.41vvv syl6rbbr adantr 3bitr3d expcom vtocleg mpcom
@@ -52734,7 +52664,7 @@ $)
        (Revised by ?who?, 24-Jul-2012.) $)
     ssoprab2i $p |- { <. <. x , y >. , z >. | ph } C_
                     { <. <. x , y >. , z >. | ps } $=
-      ( vw cv cop wceq wex copab copab2 anim2i 2eximi ssopab2i dfoprab2 3sstr4i
+      ( vw cv cop wceq wex copab coprab anim2i 2eximi ssopab2i dfoprab2 3sstr4i
       wa ) GHCHDHIJZASZDKCKZGELTBSZDKCKZGELACDEMBCDEMUBUDGEUAUCCDABTFNOPACDEGQB
       CDEGQR $.
       $( [24-Jul-2012] $) $( [11-Nov-1995] $)
@@ -52746,7 +52676,7 @@ $)
        (Contributed by ?who?, 10-Feb-2007.) $)
     resoprab $p |- ( { <. <. x , y >. , z >. | ph } |` ( A X. B ) ) =
                   { <. <. x , y >. , z >. | ( ( x e. A /\ y e. B ) /\ ph ) } $=
-      ( vw cv cop wceq wex copab cxp cres wcel copab2 resopab 19.42vv dfoprab2
+      ( vw cv cop wceq wex copab cxp cres wcel coprab resopab 19.42vv dfoprab2
       wa eleq1 opelxp syl6bb anbi1d pm5.32i bitri 2exbii bitr3i opabbii reseq1i
       an12 eqtri 3eqtr4i ) GHZBHZCHZIZJZATZCKBKZGDLZEFMZNZURUOEOUPFOTZATZTZCKBK
       ZGDLZABCDPZVBNVEBCDPVCUNVBOZUTTZGDLVHUTGDVBQVKVGGDVKVJUSTZCKBKVGVJUSBCRVL
@@ -52762,7 +52692,7 @@ $)
     resoprab2 $p |- ( ( C C_ A /\ D C_ B ) -> ( { <. <. x , y >. , z >. |
                   ( ( x e. A /\ y e. B ) /\ ph ) } |` ( C X. D ) ) =
               { <. <. x , y >. , z >. | ( ( x e. C /\ y e. D ) /\ ph ) } ) $=
-      ( wss wa cv wcel copab2 cxp wi wb ssel pm4.71 sylib bicomd resoprab anass
+      ( wss wa cv wcel coprab cxp wi wb ssel pm4.71 sylib bicomd resoprab anass
       cres an4 bi2anan9 syl5bb anbi1d syl5bbr oprabbidv syl5eq ) GEIZHFIZJZBKZE
       LZCKZFLZJZAJZBCDMGHNUCUNGLZUPHLZJZUSJZBCDMVBAJZBCDMUSBCDGHUAUMVCVDBCDVCVB
       URJZAJUMVDVBURAUBUMVEVBAVEUTUOJZVAUQJZJUMVBUTVAUOUQUDUKVFUTULVGVAUKUTVFUK
@@ -52777,7 +52707,7 @@ $)
        (Contributed by ?who?, 28-Aug-2007.) $)
     funoprabg $p |- ( A. x A. y E* z ph ->
                     Fun { <. <. x , y >. , z >. | ph } ) $=
-      ( vw wmo wal cv cop wceq wa wex copab2 wfun mosubopt alrimiv copab funeqi
+      ( vw wmo wal cv cop wceq wa wex coprab wfun mosubopt alrimiv copab funeqi
       dfoprab2 funopab bitr2i sylib ) ADFCGBGZEHZBHCHIJAKCLBLZDFZEGZABCDMZNZUCU
       FEADBCUDOPUIUEEDQZNUGUHUJABCDESRUEEDTUAUB $.
       $( [28-Aug-2007] $)
@@ -52790,7 +52720,7 @@ $)
        abstraction to be a function. 
        (Contributed by ?who?, 17-Mar-1995.) $)
     funoprab $p |- Fun { <. <. x , y >. , z >. | ph } $=
-      ( wmo wal copab2 wfun gen2 funoprabg ax-mp ) ADFZCGBGABCDHIMBCEJABCDKL $.
+      ( wmo wal coprab wfun gen2 funoprabg ax-mp ) ADFZCGBGABCDHIMBCEJABCDKL $.
       $( [17-Mar-1995] $)
   $}
 
@@ -52800,7 +52730,7 @@ $)
        (Contributed by ?who?, 28-Aug-2007.) $)
     fnoprabg $p |- ( A. x A. y ( ph -> E! z ps ) ->
   { <. <. x , y >. , z >. | ( ph /\ ps ) } Fn { <. x , y >. | ph } ) $=
-      ( weu wi wal wa copab2 wfun cdm copab wceq wfn wmo eumo imim2i wex a4s wb
+      ( weu wi wal wa coprab wfun cdm copab wceq wfn wmo eumo imim2i wex a4s wb
       moanimv sylibr 2alimi funoprabg syl dmoprab hba1 hba2 simpl exlimiv ancld
       euex 19.42v syl6ibr impbid2 opabbid syl5eq df-fn sylanbrc ) ABEFZGZDHZCHZ
       ABIZCDEJZKZVFLZACDMZNVFVIOVDVEEPZDHCHVGVBVJCDVBABEPZGVJVAVKABEQRABEUBUCUD
@@ -52816,7 +52746,7 @@ $)
        (Contributed by ?who?, 15-May-1995.) $)
     fnoprab $p |- { <. <. x , y >. , z >. | ( ph /\ ps ) } Fn
                     { <. x , y >. | ph } $=
-      ( weu wi wal wa copab2 copab wfn gen2 fnoprabg ax-mp ) ABEGHZDICIABJCDEKA
+      ( weu wi wal wa coprab copab wfn gen2 fnoprabg ax-mp ) ABEGHZDICIABJCDEKA
       CDLMQCDFNABCDEOP $.
       $( [15-May-1995] $)
   $}
@@ -52879,7 +52809,7 @@ $)
        (Contributed by ?who?, 7-Feb-2004.) $)
     fnov $p |- ( F Fn ( A X. B ) <-> F = { <. <. x , y >. , z >. |
                     ( ( x e. A /\ y e. B ) /\ z = ( x F y ) ) } ) $=
-      ( vw cxp wfn cv wcel cfv wceq wa copab co copab2 dffn5 wex bitri cop elxp
+      ( vw cxp wfn cv wcel cfv wceq wa copab co coprab dffn5 wex bitri cop elxp
       anbi1i 19.41vv anass syl6eqr eqeq2d anbi2d pm5.32i 2exbii 3bitr2i opabbii
       fveq2 df-ov dfoprab2 eqtr4i eqeq2i ) FDEHZIFGJZURKZCJZUSFLZMZNZGCOZMFAJZD
       KBJZEKNZVAVFVGFPZMZNZABCQZMGCURFRVEVLFVEUSVFVGUAZMZVKNZBSASZGCOVLVDVPGCVD
@@ -52897,7 +52827,7 @@ $)
     fov $p |- ( F : ( A X. B ) --> C <-> ( F = { <. <. x , y >. , z >. |
                   ( ( x e. A /\ y e. B ) /\ z = ( x F y ) ) }
                 /\ A. x e. A A. y e. B ( x F y ) e. C ) ) $=
-      ( cxp wf wfn cv co wcel wral wa wceq copab2 ffnov fnov anbi1i bitri ) DEH
+      ( cxp wf wfn cv co wcel wral wa wceq coprab ffnov fnov anbi1i bitri ) DEH
       ZFGIGUBJZAKZBKZGLZFMBENADNZOGUDDMUEEMOCKUFPOABCQPZUGOABDEFGRUCUHUGABCDEGS
       TUA $.
       $( [7-Feb-2004] $)
@@ -52912,7 +52842,7 @@ $)
        condition ` ( x e. R /\ y e. S ) ` is been removed.  (Contributed by
        Mario Carneiro, 29-Dec-2014.) $)
     ovidig $p |- ( ph -> ( x F y ) = z ) $=
-      ( cv co cop cfv df-ov wcel wceq copab2 eleq2i oprabid bitri wfun wi mpbir
+      ( cv co cop cfv df-ov wcel wceq coprab eleq2i oprabid bitri wfun wi mpbir
       funoprab funeqi funopfv ax-mp sylbir syl5eq ) ABHZCHZEIUHUIJZEKZDHZUHUIEL
       AUJULJZEMZUKULNZUNUMABCDOZMAEUPUMGPABCDQRESZUNUOTUQUPSABCDFUBEUPGUCUAUJUL
       EUDUEUFUG $.
@@ -52947,7 +52877,7 @@ $)
        (Contributed by ?who?, 16-May-1995.) 
        (Revised by ?who?, 24-Jul-2012.) $)
     ov $p |- ( ( A e. R /\ B e. S ) -> ( ( A F B ) = C <-> th ) ) $=
-      ( wcel wa co wceq cop cv copab2 cfv df-ov fveq1i eqtri eqeq1i wfn fnoprab
+      ( wcel wa co wceq cop cv coprab cfv df-ov fveq1i eqtri eqeq1i wfn fnoprab
       copab eleq1 anbi1d anbi2d opelopabg ibir fnopfvb sylancr anbi12d eloprabg
       wb cvv mp3an3 bitrd syl5bb bianabs ) HKTZILTZUAZHIMUBZJUCZDVNHIUDZEUEZKTZ
       FUEZLTZUAZAUAZEFGUFZUGZJUCZVLVLDUAZVMWCJVMVOMUGWCHIMUHVOMWBSUIUJUKVLWDVOJ
@@ -52967,7 +52897,7 @@ $)
        24-Mar-2007.) $)
     ovigg $p |- ( ( A e. V /\ B e. W /\ C e. X ) ->
                          ( ps -> ( A F B ) = C ) ) $=
-      ( wcel w3a cop cfv wceq copab2 co eloprabga wfun funoprab funopfv syl6bir
+      ( wcel w3a cop cfv wceq coprab co eloprabga wfun funoprab funopfv syl6bir
       wi ax-mp df-ov fveq1i eqtri eqeq1i syl6ibr ) FJPGKPHLPQZBFGRZACDEUAZSZHTZ
       FGIUBZHTUOBUPHRUQPZUSABCDEFGHJKLMUCUQUDVAUSUHACDENUEUPHUQUFUIUGUTURHUTUPI
       SURFGIUJUPIUQOUKULUMUN $.
@@ -53014,7 +52944,7 @@ $)
        (Contributed by ?who?, 17-Aug-2006.) 
        (Revised by ?who?, 19-Dec-2013.) $)
     ov2gf $p |- ( ( A e. C /\ B e. D /\ S e. H ) -> ( A F B ) = S ) $=
-      ( vt vu vv wcel w3a co cv wa csb copab2 weq eqeq1 anbi2d cbvoprab3v ax-17
+      ( vt vu vv wcel w3a co cv wa csb coprab weq eqeq1 anbi2d cbvoprab3v ax-17
       wceq wel hbcsb1f hbcsb hbeq eleq1 anbi1d csbeq1a eqeq2d anbi12d cbvoprab12
       hban sylan9bb 3eqtri oveqi eqid simp3 cvv vex hblem csbhypf csbeq2d mpan2
       hbeleq sylan9eq 3adant3 eqeq12d wmo moeq a1i ovig mpi syl5eq ) EGUGFHUGJM
@@ -53093,7 +53023,7 @@ $)
        (Contributed by ?who?, 19-Jul-2005.) 
        (Revised by ?who?, 24-Jul-2012.) $)
     ov5 $p |- ( ( A e. C /\ B e. D ) -> ( A F B ) = S ) $=
-      ( wcel cvv wceq elex cv co copab2 vex pm3.2i biantrur oprabbii ov2 syl2an
+      ( wcel cvv wceq elex cv co coprab vex pm3.2i biantrur oprabbii ov2 syl2an
       wa eqtri ) DFPDQPEQPDEJUAIREGPDFSEGSABCDEQQHIJKLMNJCTHRZABCUBATQPZBTQPZUI
       ZUKUIZABCUBOUKUOABCUNUKULUMAUCBUCUDUEUFUJUGUH $.
       $( [24-Jul-2012] $) $( [19-Jul-2005] $)
@@ -53115,7 +53045,7 @@ $)
        (Revised by ?who?, 29-Dec-2014.) $)
     ov3 $p |- ( ( ( A e. H /\ B e. H ) /\ ( C e. H /\ D e. H ) ) ->
         ( <. A , B >. F <. C , D >. ) = S ) $=
-      ( vt wex wcel wa cv wceq cop co isseti ax-17 copab2 hboprab3 hbxfreq hbov
+      ( vt wex wcel wa cv wceq cop co isseti ax-17 coprab hboprab3 hbxfreq hbov
       hbeq eqeq2d copsex4g wi opelxp hboprab1 ax17el hbim hboprab2 eqeq1 anbi1d
       cxp 4exbidv oveq1 eqeq1d imbi12d anbi2d oveq2 moeq mosubop 2exbii 19.42vv
       wmo anass bitri mobii mpbir ovidi vtocl2gaf syl2anbr sylbird eqeq2 mpbidi
@@ -53144,7 +53074,7 @@ $)
        (Contributed by ?who?, 21-Feb-2004.) $)
     ov4g $p |- ( ( x e. A /\ y e. B /\ C e. D ) -> ( x F y ) = C ) $=
       ( vw vv vf vu wcel cv cvv wceq wa ax-17 hbab co elex wsbc cab sbab eqcomd
-      equcoms copab2 hbs1 hbeleq hban eleq1 bi2anan9 sylan9eq eqeq2d cbvoprab12
+      equcoms coprab hbs1 hbeleq hban eleq1 bi2anan9 sylan9eq eqeq2d cbvoprab12
       hbsb anbi12d eqtr4i ov2g syl3an3 ) FGNAOZDNZBOZENZFPNVBVDHUAFQFGUBJKCVBVD
       DELOMOFNZBKOZUCZMUDZNZAJOZUCZLUDZFHVIPVMVIQAJVBVKQVIVMAJLVIUEUFUGZVIFQBKV
       DVGQFVIBKMFUEUFUGZHVCVERZCOZFQZRZABCUHVKDNZVGENZRZVQVMQZRZJKCUHIWDVSJKCAB
@@ -53166,7 +53096,7 @@ $)
                      -> ( A F B ) = S ) $=
       ( vw wcel wa cv wceq wex cop w3a co cfv df-ov eqid biidd copsex2g 3adant3
       mpbiri adantr wi eqeq1 anbi1d eqeq2d eqcoms pm5.32i syl6bb 2exbidv anbi2d
-      wb wmo moeq mosubop a1i copab2 copab dfoprab2 eleq1 bitr3i 2exbii 19.42vv
+      wb wmo moeq mosubop a1i coprab copab dfoprab2 eleq1 bitr3i 2exbii 19.42vv
       an12 bitri opabbii 3eqtri fvopab3ig 3ad2antl3 mpd syl5eq ) DJPZEKPZDEUAZF
       PZUBZHLPZQZDEIUCWCIUDZHDEIUEWGWCARZBRZUAZSZHHSZQZBTATZWHHSZWEWOWFWAWBWOWD
       WAWBQWOWMHUFWMWMABDEJKWIDSWJESQWMUGUHUJUIUKWDWAWFWOWPULWBORZWKSZCRZGSZQZB
@@ -53192,7 +53122,7 @@ $)
        Madsen, 10-Jun-2010.) $)
     ovg $p |- ( ( ta /\ ( A e. R /\ B e. S /\ C e. D ) )
                                             -> ( ( A F B ) = C <-> th ) ) $=
-      ( wcel w3a wa co wceq cop cv copab2 cfv df-ov fveq1i eqtri eqeq1i cxp wfn
+      ( wcel w3a wa co wceq cop cv coprab cfv df-ov fveq1i eqtri eqeq1i cxp wfn
       wb copab weu wi wal ex alrimivv fnoprabg syl fneq2i sylibr opelxp biimpri
       df-xp 3adant3 fnopfvb syl2an anbi1d anbi12d anbi2d eloprabg adantl syl5bb
       eleq1 bitrd biidd bianabs ) EIMUAZJNUAZKLUAZUBZUCZIJOUDZKUEZWCWDUCZDUCZDW
@@ -53764,7 +53694,7 @@ $)
         ( vv wcel co wceq wa cv wmo wi wal eleq1 eqeq1d anbi12d mo4 vex caovass
         oveq2 caov12 eqtri oveq1 id eqeq12d vtoclga sylan9eqr ad2ant2rl caovcom
         syl5eq elexi sylan9eq eqtr3d ax-gen mpgbir mpbiri ndmovrcl simprd ancri
-        ad2ant2lr syl immoi ax-mp ) DUAZGQZEVOHRZFSZTZDUBZVRDUBVTVSPUAZGQZEWAHR
+        ad2ant2lr syl moimi ax-mp ) DUAZGQZEVOHRZFSZTZDUBZVRDUBVTVSPUAZGQZEWAHR
         ZFSZTZTZVOWASZUCZPUDDVSWEDPWGVPWBVRWDVOWAGUEWGVQWCFVOWAEHUKUFUGUHWHPWFV
         QWAHRZVOWAVPWDWIVOSVRWBVPWDTWIVOWCHRZVOWIEVOWAHRHRWJABCEVOWAHIDUIZPUIZN
         UJABCEVOWAHIWKWLMNULUMWDVPWJVOFHRZVOWCFVOHUKAUAZFHRZWNSZWMVOSAVOGWNVOSZ
@@ -53908,7 +53838,7 @@ $)
        Carneiro, 16-Dec-2013.)  (Revised by Mario Carneiro, 19-Mar-2015.) $)
     mpt2eq123 $p |- ( ( A = D /\ A. x e. A ( B = E /\ A. y e. B C = F ) ) ->
                  ( x e. A , y e. B |-> C ) = ( x e. D , y e. E |-> F ) ) $=
-      ( vz wceq wral wa cv wcel copab2 cmpt2 ax-17 hbra1 hban wb hbral ra4 syl6
+      ( vz wceq wral wa cv wcel coprab cmpt2 ax-17 hbra1 hban wb hbral ra4 syl6
       eqeq2 pm5.32d eleq2 anbi1d sylan9bbr 3bitr4g oprabbid df-mpt2 3eqtr4g
       anass ) CFJZDGJZEHJZBDKZLZACKZLZAMZCNZBMZDNZLIMZEJZLZABIOVAFNZVCGNZLVEHJZ
       LZABIOABCDEPABFGHPUTVGVKABIUNUSAUNAQURACRSUNUSBUNBQURBACVBBQUOUQBUOBQUPBD
@@ -53938,7 +53868,7 @@ $)
        (Contributed by ?who?, 12-Sep-2011.) $)
     mpt2eq123dv $p |- ( ph
             -> ( x e. A , y e. B |-> C ) = ( x e. D , y e. E |-> F ) ) $=
-      ( vz cv wcel wa wceq copab2 cmpt2 eleq2d anbi12d eqeq2d oprabbidv df-mpt2
+      ( vz cv wcel wa wceq coprab cmpt2 eleq2d anbi12d eqeq2d oprabbidv df-mpt2
       3eqtr4g ) ABNZDOZCNZEOZPZMNZFQZPZBCMRUFGOZUHHOZPZUKIQZPZBCMRBCDEFSBCGHISA
       UMURBCMAUJUPULUQAUGUNUIUOADGUFJTAEHUHKTUAAFIUKLUBUAUCBCMDEFUDBCMGHIUDUE
       $.
@@ -54006,7 +53936,7 @@ $)
        (Revised by ?who?, 16-Dec-2013.) $)
     mpt2eq3dva $p |- ( ph -> ( x e. A , y e. B |-> C )
               = ( x e. A , y e. B |-> D ) ) $=
-      ( vz cv wcel wa wceq copab2 cmpt2 3expb eqeq2d pm5.32da oprabbidv df-mpt2
+      ( vz cv wcel wa wceq coprab cmpt2 3expb eqeq2d pm5.32da oprabbidv df-mpt2
       3eqtr4g ) ABJDKZCJEKZLZIJZFMZLZBCINUDUEGMZLZBCINBCDEFOBCDEGOAUGUIBCIAUDUF
       UHAUDLFGUEAUBUCFGMHPQRSBCIDEFTBCIDEGTUA $.
       $( [16-Dec-2013] $) $( [17-Oct-2013] $)
@@ -54051,7 +53981,7 @@ $)
        (Contributed by ?who?, 27-Aug-2013.) $)
     hbmpt21 $p |- ( z e. ( x e. A , y e. B |-> C )
          -> A. x z e. ( x e. A , y e. B |-> C ) ) $=
-      ( vw cmpt2 cv wcel wa wceq copab2 df-mpt2 hboprab1 hbxfreq ) ACABDEFHAIDJ
+      ( vw cmpt2 cv wcel wa wceq coprab df-mpt2 hboprab1 hbxfreq ) ACABDEFHAIDJ
       BIEJKGIFLKZABGMABGDEFNQABGCOP $.
       $( [27-Aug-2013] $)
   $}
@@ -54063,13 +53993,14 @@ $)
        (Contributed by ?who?, 27-Aug-2013.) $)
     hbmpt22 $p |- ( z e. ( x e. A , y e. B |-> C )
          -> A. y z e. ( x e. A , y e. B |-> C ) ) $=
-      ( vw cmpt2 cv wcel wa wceq copab2 df-mpt2 hboprab2 hbxfreq ) BCABDEFHAIDJ
+      ( vw cmpt2 cv wcel wa wceq coprab df-mpt2 hboprab2 hbxfreq ) BCABDEFHAIDJ
       BIEJKGIFLKZABGMABGDEFNQABGCOP $.
       $( [27-Aug-2013] $)
   $}
 
   ${
-    $d v w x z $.  $d v y z $.  $d v w A $.  $d v z B $.  $d v w C $.
+    $d A v $. $d A w $. $d B v $. $d B z $. $d C v $. $d C w $. $d v w $.
+    $d v x $. $d v y $. $d v z $. $d w z $. $d x z $. $d y z $. 
     hbmpt2.1 $e |- ( w e. A -> A. z w e. A ) $.
     hbmpt2.2 $e |- ( w e. B -> A. z w e. B ) $.
     hbmpt2.3 $e |- ( w e. C -> A. z w e. C ) $.
@@ -54077,7 +54008,7 @@ $)
        (Contributed by ?who?, 20-Feb-2013.) $)
     hbmpt2 $p |- ( w e. ( x e. A , y e. B |-> C ) ->
                   A. z w e. ( x e. A , y e. B |-> C ) ) $=
-      ( vv cmpt2 cv wcel wa wceq copab2 df-mpt2 ax-17 hban hbeq hboprab hbxfreq
+      ( vv cmpt2 cv wcel wa wceq coprab df-mpt2 ax-17 hban hbeq hboprab hbxfreq
       hblem ) CDABEFGLAMENZBMFNZOZKMZGPZOZABKQABKEFGRUJABKCDUGUICUEUFCCDAEHUDUF
       CSTCDDUHGDMUHNCSJUATUBUC $.
       $( [20-Feb-2013] $)
@@ -54124,7 +54055,7 @@ $)
        substitution. 
        (Contributed by ?who?, 17-Dec-2013.) $)
     cbvmpt2 $p |- ( x e. A , y e. B |-> C ) = ( z e. A , w e. B |-> D ) $=
-      ( vu cv wcel wa wceq ax-17 copab2 cmpt2 hbeq hban bi2anan9 eqeq2d anbi12d
+      ( vu cv wcel wa wceq ax-17 coprab cmpt2 hbeq hban bi2anan9 eqeq2d anbi12d
       eleq1 cbvoprab12 df-mpt2 3eqtr4i ) APZFQZBPZGQZRZOPZHSZRZABOUACPZFQZDPZGQ
       ZRZUQISZRZCDOUAABFGHUBCDFGIUBUSVFABOCDUPURCUPCTCEEUQHEPUQQZCTJUCUDUPURDUP
       DTDEEUQHVGDTKUCUDVDVEAVDATAEEUQIVGATLUCUDVDVEBVDBTBEEUQIVGBTMUCUDULUTSZUN
@@ -54285,7 +54216,7 @@ $)
     resmpt2 $p |- ( ( C C_ A /\ D C_ B ) ->
                     ( ( x e. A , y e. B |-> E ) |` ( C X. D ) ) =
                       ( x e. C , y e. D |-> E ) ) $=
-      ( vz wss wa cv wcel wceq copab2 cxp cres cmpt2 resoprab2 df-mpt2 reseq1i
+      ( vz wss wa cv wcel wceq coprab cxp cres cmpt2 resoprab2 df-mpt2 reseq1i
       3eqtr4g ) ECIFDIJAKZCLBKZDLJHKGMZJABHNZEFOZPUBELUCFLJUDJABHNABCDGQZUFPABE
       FGQUDABHCDEFRUGUEUFABHCDGSTABHEFGSUA $.
       $( [17-Dec-2013] $)
@@ -54387,7 +54318,7 @@ $)
        Mario Carneiro, 23-Dec-2013.) $)
     fnov2 $p |- ( F Fn ( A X. B ) <->
                     F = ( x e. A , y e. B |-> ( x F y ) ) ) $=
-      ( vz cxp wfn cv wcel wa co wceq copab2 cmpt2 fnov df-mpt2 eqeq2i bitr4i )
+      ( vz cxp wfn cv wcel wa co wceq coprab cmpt2 fnov df-mpt2 eqeq2i bitr4i )
       ECDGHEAIZCJBIZDJKFITUAELZMKABFNZMEABCDUBOZMABFCDEPUDUCEABFCDUBQRS $.
       $( [23-Dec-2013] $)
 
@@ -54399,7 +54330,7 @@ $)
     $( Express a two-argument function as a one-argument function, or
        vice-versa.  (Contributed by Mario Carneiro, 17-Dec-2013.) $)
     mpt2mpt $p |- ( z e. ( A X. B ) |-> C ) = ( x e. A , y e. B |-> D ) $=
-      ( vw cv cxp wcel wceq wa copab copab2 cmpt cmpt2 cop wex elxp anass bitri
+      ( vw cv cxp wcel wceq wa copab coprab cmpt cmpt2 cop wex elxp anass bitri
       anbi1i 19.41vv eqeq2d anbi2d pm5.32i 2exbii 3bitr2i opabbii eqtr4i df-mpt
       dfoprab2 df-mpt2 3eqtr4i ) CJZDEKZLZIJZFMZNZCIOZAJZDLBJZELNZUTGMZNZABIPZC
       URFQABDEGRVCUQVDVESMZVHNZBTATZCIOVIVBVLCIVBVJVFNZBTATZVANVMVANZBTATVLUSVN
@@ -54414,7 +54345,7 @@ $)
     $( Value of a function given by the "maps to" notation.  Analogous to
        ~ ov4g .  (Contributed by Mario Carneiro, 17-Dec-2013.) $)
     ovmpt4g $p |- ( ( x e. A /\ y e. B /\ C e. V ) -> ( x F y ) = C ) $=
-      ( vz cmpt2 cv wcel wa wceq copab2 df-mpt2 eqtri ov4g ) ABICDEGFFABCDEJAKC
+      ( vz cmpt2 cv wcel wa wceq coprab df-mpt2 eqtri ov4g ) ABICDEGFFABCDEJAKC
       LBKDLMIKENMABIOHABICDEPQR $.
       $( [17-Dec-2013] $)
   $}
@@ -54430,7 +54361,7 @@ $)
        Jeff Madsen, 10-Jun-2010.)  (Revised by Mario Carneiro, 20-Dec-2013.) $)
     ovmpt2x $p |- ( ( A e. C /\ B e. L /\ S e. H ) -> ( A F B ) = S ) $=
       ( vz wcel w3a wa wceq cv co 3simpa eqeq2d biimp3ar biantrud eleq1d eleq2d
-      wb simpl eleq1 sylan9bb anbi12d 3adant3 bitr3d moani cmpt2 copab2 df-mpt2
+      wb simpl eleq1 sylan9bb anbi12d 3adant3 bitr3d moani cmpt2 coprab df-mpt2
       moeq eqtri ovigg mpd ) CEPZDKPZHJPZQVCVDRZCDIUAHSVCVDVEUBATZEPZBTZFPZRZOT
       ZGSZRZVFABOCDHIEKJVGCSZVIDSZVLHSZQZVKVNVFVRVMVKVOVPVMVQVOVPRZGHVLLUCUDUEV
       OVPVKVFUHVQVSVHVCVJVDVSVGCEVOVPUIUFVOVJVIKPVPVDVOFKVIMUGVIDKUJUKULUMUNVMV
@@ -54446,7 +54377,7 @@ $)
     $( Value of an operation given by a maps-to rule.  Equivalent to ~ ov2ag .
        (Contributed by Mario Carneiro, 19-Dec-2013.) $)
     ovmpt2ga $p |- ( ( A e. C /\ B e. D /\ S e. H ) -> ( A F B ) = S ) $=
-      ( vz cmpt2 cv wcel wa wceq copab2 df-mpt2 eqtri ov2ag ) ABMCDEFGHIJKIABEF
+      ( vz cmpt2 cv wcel wa wceq coprab df-mpt2 eqtri ov2ag ) ABMCDEFGHIJKIABEF
       GNAOEPBOFPQMOGRQABMSLABMEFGTUAUB $.
       $( [19-Dec-2013] $)
 
@@ -54473,7 +54404,7 @@ $)
        (Contributed by ?who?, 2-Oct-2007.) 
        (Revised by ?who?, 24-Jul-2012.) $)
     ovmpt2g $p |- ( ( A e. C /\ B e. D /\ S e. H ) -> ( A F B ) = S ) $=
-      ( vz cmpt2 cv wcel wa wceq copab2 df-mpt2 eqtri ov2g ) ABOCDEFGHIJKLMIABE
+      ( vz cmpt2 cv wcel wa wceq coprab df-mpt2 eqtri ov2g ) ABOCDEFGHIJKLMIABE
       FGPAQERBQFRSOQGTSABOUANABOEFGUBUCUD $.
       $( [24-Jul-2012] $) $( [2-Oct-2007] $)
 
@@ -54494,7 +54425,7 @@ $)
     $( The range of an operation given by the "maps to" notation.  (Contributed
        by FL, 20-Jun-2011.) $)
     rnmpt2 $p |- ran F = { z | E. x e. A E. y e. B z = C } $=
-      ( crn cv wcel wa wceq copab2 wex cab wrex cmpt2 df-mpt2 eqtri r2ex bicomi
+      ( crn cv wcel wa wceq coprab wex cab wrex cmpt2 df-mpt2 eqtri r2ex bicomi
       rneqi rnoprab abbii 3eqtri ) GIAJDKBJEKLCJFMZLZABCNZIUHBOAOZCPUGBEQADQZCP
       GUIGABDEFRUIHABCDEFSTUCUHABCUDUJUKCUKUJUGABDEUAUBUEUF $.
       $( [20-Jun-2011] $)
@@ -54502,7 +54433,7 @@ $)
     $( The domain of an operation defined by maps-to notation is a relation.
        (Contributed by Stefan O'Rear, 27-Nov-2014.) $)
     reldmmpt2 $p |- Rel dom F $=
-      ( vz cdm wrel cv wcel wa wceq copab2 reldmoprab cmpt2 df-mpt2 eqtri dmeqi
+      ( vz cdm wrel cv wcel wa wceq coprab reldmoprab cmpt2 df-mpt2 eqtri dmeqi
       releqi mpbir ) FIZJAKCLBKDLMHKENMZABHOZIZJUDABHPUCUFFUEFABCDEQUEGABHCDERS
       TUAUB $.
       $( [27-Nov-2014] $)
@@ -54524,7 +54455,7 @@ $)
        (Contributed by ?who?, 16-Aug-2013.) $)
     mpt2v $p |- ( x e. _V , y e. _V |-> C )
                      = { <. <. x , y >. , z >. | z = C } $=
-      ( cvv cmpt2 cv wcel wa copab2 df-mpt2 vex pm3.2i biantrur oprabbii eqtr4i
+      ( cvv cmpt2 cv wcel wa coprab df-mpt2 vex pm3.2i biantrur oprabbii eqtr4i
       wceq ) ABEEDFAGEHZBGEHZIZCGDQZIZABCJUAABCJABCEEDKUAUBABCTUARSALBLMNOP $.
       $( [16-Aug-2013] $)
   $}
@@ -54609,14 +54540,14 @@ $)
     $( Alternate definition of ` Swap ` as an operator abstraction. 
        (Contributed by ?who?, 23-Feb-2015.) $)
     dfswap3 $p |- Swap = { <. <. x , y >. , z >. | z = <. y , x >. } $=
-      ( vw cswap cv cop wceq wa wex copab copab2 df-swap dfoprab2 eqtr4i ) EDFA
+      ( vw cswap cv cop wceq wa wex copab coprab df-swap dfoprab2 eqtr4i ) EDFA
       FZBFZGHCFQPGHZIBJAJDCKRABCLDCABMRABCDNO $.
       $( [23-Feb-2015] $)
 
     $( Alternate definition of ` Swap ` as an operator mapping. 
        (Contributed by ?who?, 23-Feb-2015.) $)
     dfswap4 $p |- Swap = ( x e. _V , y e. _V |-> <. y , x >. ) $=
-      ( vz cswap cv cop wceq copab2 cvv cmpt2 dfswap3 mpt2v eqtr4i ) DCEBEAEFZG
+      ( vz cswap cv cop wceq coprab cvv cmpt2 dfswap3 mpt2v eqtr4i ) DCEBEAEFZG
       ABCHABIINJABCKABCNLM $.
       $( [23-Feb-2015] $)
   $}
@@ -55327,7 +55258,7 @@ $)
        (Contributed by ?who?, 13-Feb-2015.) $)
     releqoprab $p |- ( ( ( _V X. _V ) X. _V ) i^i A ) =
                 { <. <. x , y >. , z >. | ph } $=
-      ( vw cvv cxp cin cv cop wceq wa wex cab copab2 wcel elvvv anbi1i 19.41vvv
+      ( vw cvv cxp cin cv cop wceq wa wex cab coprab wcel elvvv anbi1i 19.41vvv
       elin 3bitr4i eleq1 syl6bb pm5.32i 3exbii bitri abbi2i df-oprab eqtr4i ) H
       HIHIZEJZGKZBKCKLDKLZMZANZDOCOBOZGPABCDQURGUMUNUMRZUPUNERZNZDOCOBOZURUNULR
       ZUTNUPDOCOBOZUTNUSVBVCVDUTBCDUNSTUNULEUBUPUTBCDUAUCVAUQBCDUPUTAUPUTUOERAU
@@ -55345,7 +55276,7 @@ $)
     releqmpt2 $p |- ( ( ( A X. B ) X. _V ) \
      ( ( Ins2 SSet (+) Ins3 R ) " 1c ) ) = ( x e. A , y e. B |-> V ) $=
       ( vw cxp cvv csset cin cv wcel wa cop vex bitri wn cins2 csymdif c1c cima
-      cins3 ccompl wceq copab2 cdif cmpt2 inass xpss xpss1 ax-mp sseqin2 ineq1i
+      cins3 ccompl wceq coprab cdif cmpt2 inass xpss xpss1 ax-mp sseqin2 ineq1i
       wss mpbi elin opelxp mpbiran2 wel wal csn wex elima1c elsymdif opelssetsn
       opex otelins2 otelins3 bibi12i xchbinx exbii exnal 3bitri con2bii elcompl
       wb dfcleq 3bitr4ri anbi12i releqoprab 3eqtr3i df-dif df-mpt2 3eqtr4i ) DE
@@ -55403,7 +55334,7 @@ $)
        universe. 
        (Contributed by ?who?, 11-Feb-2015.) $)
     fncup $p |- Cup Fn ( _V X. _V ) $=
-      ( vx vy vz ccup cvv cxp wfn cv wcel cun wceq copab2 copab weu wex wmo vex
+      ( vx vy vz ccup cvv cxp wfn cv wcel cun wceq coprab copab weu wex wmo vex
       wa unex isset mpbi eu5 mpbir2an a1i fnoprab wb cmpt2 df-cup df-mpt2 eqtri
       moeq df-xp fneq1 fneq2 sylan9bb mp2an mpbir ) DEEFZGZAHZEIBHZEIRZCHUTVAJZ
       KZRABCLZVBABMZGZVBVDABCVDCNZVBVHVDCOZVDCPVCEIVIUTVAAQBQSCVCTUACVCUKVDCUBU
@@ -55537,7 +55468,7 @@ $)
     $( ` AddC ` is a function over all ordered pairs. 
        (Contributed by ?who?, 2-Mar-2015.) $)
     addcfn $p |- AddC Fn ( _V X. _V ) $=
-      ( vz vx vy caddcfn cvv cxp wfn wfun cdm wceq cv cplc copab2 moeq funoprab
+      ( vz vx vy caddcfn cvv cxp wfn wfun cdm wceq cv cplc coprab moeq funoprab
       cmpt2 eqtri copab wcel vex df-addcfn mpt2v funeqi mpbir wex addcex isseti
       wa pm3.2i 2th opabbii dmeqi dmoprab df-xp 3eqtr4i df-fn mpbir2an ) DEEFZG
       DHZDIZURJUSAKBKZCKZLZJZBCAMZHVDBCAAVCNODVEDBCEEVCPVEBCUABCAVCUBQZUCUDVDAU
@@ -55866,7 +55797,7 @@ $)
        (Contributed by ?who?, 24-Feb-2015.) $)
     dmcross $p |- dom Cross = ( _V X. _V ) $=
       ( vz vx vy cv cxp wceq wex copab cvv wcel wa ccross cdm vex isseti pm3.2i
-      xpex 2th opabbii eqtri copab2 cmpt2 df-cross mpt2v dmeqi dmoprab 3eqtr4i
+      xpex 2th opabbii eqtri coprab cmpt2 df-cross mpt2v dmeqi dmoprab 3eqtr4i
       df-xp ) ADBDZCDZEZFZAGZBCHZUIIJZUJIJZKZBCHLMZIIEUMUQBCUMUQAUKUIUJBNZCNZQO
       UOUPUSUTPRSURULBCAUAZMUNLVALBCIIUKUBVABCUCBCAUKUDTUEULBCAUFTBCIIUHUG $.
       $( [24-Feb-2015] $)
@@ -55874,7 +55805,7 @@ $)
     $( The cross product function is a function over ` ( _V X. _V ) ` 
        (Contributed by ?who?, 24-Feb-2015.) $)
     fncross $p |- Cross Fn ( _V X. _V ) $=
-      ( vz vx vy ccross cvv cxp wfn wfun cdm wceq cv copab2 moeq funoprab cmpt2
+      ( vz vx vy ccross cvv cxp wfn wfun cdm wceq cv coprab moeq funoprab cmpt2
       df-cross mpt2v eqtri funeqi mpbir dmcross df-fn mpbir2an ) DEEFZGDHZDIUDJ
       UEAKBKCKFZJZBCALZHUGBCAAUFMNDUHDBCEEUFOUHBCPBCAUFQRSTUADUDUBUC $.
       $( [24-Feb-2015] $)
@@ -58051,7 +57982,7 @@ $)
        (Contributed by ?who?, 8-Dec-2003.) 
        (Revised by ?who?, 8-Sep-2013.) $)
     fnmap $p |- ^m Fn ( _V X. _V ) $=
-      ( vz vy vx vf cmap cvv cxp wfn cv cab wceq copab2 wfun cdm funoprab copab
+      ( vz vy vx vf cmap cvv cxp wfn cv cab wceq coprab wfun cdm funoprab copab
       wf moeq wcel vex wex mapexi isseti pm3.2i 2th opabbii dmoprab df-xp df-fn
       wa 3eqtr4i mpbir2an cmpt2 df-map mpt2v eqtri fneq1i mpbir ) EFFGZHAIBIZCI
       ZDIQDJZKZCBALZUSHZVEVDMVDNZUSKVCCBAAVBROVCAUAZCBPVAFSZUTFSZUJZCBPVFUSVGVJ
@@ -58062,7 +57993,7 @@ $)
     $( Partial function exponentiation has a universal domain. 
        (Contributed by ?who?, 14-Nov-2013.) $)
     fnpm $p |- ^pm Fn ( _V X. _V ) $=
-      ( vz vf vy vx cpm cvv cxp wfn cv wfun cpw crab wceq copab2 cdm copab wcel
+      ( vz vf vy vx cpm cvv cxp wfn cv wfun cpw crab wceq coprab cdm copab wcel
       cfuns cin vex moeq funoprab wex wa dfrab2 df-funs ineq1i eqtr4i xpex pwex
       cab funsex inex eqeltri isseti pm3.2i opabbii dmoprab df-xp 3eqtr4i df-fn
       2th mpbir2an cmpt2 df-pm mpt2v eqtri fneq1i mpbir ) EFFGZHAIBIJZBCIZDIZGZ
@@ -60503,7 +60434,7 @@ $)
        (Contributed by ?who?, 6-Mar-2015.) $)
     fnce $p |- ^c Fn ( NC X. NC ) $=
       ( vn vm vp va vb vg cce cncs cxp wfn cv wcel wa cpw1 cmap cen wbr w3a wex
-      co cab wceq copab2 copab weu cvv ovcelem1 isset sylib wmo moeq eu5 sylibr
+      co cab wceq coprab copab weu cvv ovcelem1 isset sylib wmo moeq eu5 sylibr
       mpbiran2 fnoprab cmpt2 df-ce df-mpt2 eqtri fneq1i df-xp fneq2i bitri
       mpbir ) GHHIZJZAKZHLBKZHLMZCKDKZNVGLEKZNVHLFKVJVKOTPQRESDSFUAZUBZMABCUCZV
       IABUDZJZVIVMABCVIVMCSZVMCUEZVIVLUFLVQFVHVGHHDEUGCVLUHUIVRVQVMCUJCVLUKVMCU
