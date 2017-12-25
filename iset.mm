@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Dec-2017
+$( iset.mm - Version of 24-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6183,26 +6183,30 @@ $( This section makes our first use of the third axiom of propositonal
   dfbi1 $p |- ( ( ph <-> ps ) <-> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ) $=
     ( wb wi wa wn dfbi2 df-an bitri ) ABCABDZBADZEJKFDFABGJKHI $.
 
+  $( Express conjunction in terms of implication.  The biconditionalized
+     version of this theorem, ~ annim , is not valid intuitionistically.
+     (Contributed by Jim Kingdon, 24-Dec-2017.) $)
+  annimim $p |- ( ( ph /\ -. ps ) -> -. ( ph -> ps ) ) $=
+    ( wn wi pm2.27 con3 syl imp ) ABCZABDZCZAJBDIKDABEJBFGH $.
+
+  $( Express implication in terms of conjunction.  The biconditionalized
+     version of this theorem, ~ iman , is not valid intuitionistically.
+     (Contributed by Jim Kingdon, 24-Dec-2017.) $)
+  imanim $p |- ( ( ph -> ps ) -> -. ( ph /\ -. ps ) ) $=
+    ( wn wa wi annimim con2i ) ABCDABEABFG $.
+
   $( Express implication in terms of conjunction.  Theorem 3.4(27) of [Stoll]
-     p. 176.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
-     Lammen, 30-Oct-2012.) $)
+     p. 176.  Only the forward direction, ~ imanim , is valid
+     intuitionistically.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
+     Wolf Lammen, 30-Oct-2012.) $)
   iman $p |- ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) $=
     ( wi wn wa notnot imbi2i imnan bitri ) ABCABDZDZCAJEDBKABFGAJHI $.
 
-  $( Express conjunction in terms of implication.  (Contributed by NM,
+  $( Express conjunction in terms of implication.  Only the forward direction,
+     ~ annimim , is valid intuitionistically.  (Contributed by NM,
      2-Aug-1994.) $)
   annim $p |- ( ( ph /\ -. ps ) <-> -. ( ph -> ps ) ) $=
     ( wi wn wa iman con2bii ) ABCABDEABFG $.
-
-  $( Theorem *4.61 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.61 $p |- ( -. ( ph -> ps ) <-> ( ph /\ -. ps ) ) $=
-    ( wn wa wi annim bicomi ) ABCDABECABFG $.
-
-  $( Theorem *4.65 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.65 $p |- ( -. ( -. ph -> ps ) <-> ( -. ph /\ -. ps ) ) $=
-    ( wn pm4.61 ) ACBD $.
 
   $( Theorem *4.14 of [WhiteheadRussell] p. 117.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Oct-2012.) $)
@@ -14161,6 +14165,17 @@ $)
      NM, 3-Jan-2005.) $)
   pm3.13 $p |- ( -. ( ph /\ ps ) -> ( -. ph \/ -. ps ) ) $=
     ( wn wo wa pm3.11 con1i ) ACBCDABEABFG $.
+
+  $( Theorem *4.61 of [WhiteheadRussell] p. 120.  Only the reverse direction,
+     ~ annimim , is valid intuitionistically.  (Contributed by NM,
+     3-Jan-2005.) $)
+  pm4.61 $p |- ( -. ( ph -> ps ) <-> ( ph /\ -. ps ) ) $=
+    ( wn wa wi annim bicomi ) ABCDABECABFG $.
+
+  $( Theorem *4.65 of [WhiteheadRussell] p. 120.  The reverse direction is an
+     instance of ~ annimim .  (Contributed by NM, 3-Jan-2005.) $)
+  pm4.65 $p |- ( -. ( -. ph -> ps ) <-> ( -. ph /\ -. ps ) ) $=
+    ( wn pm4.61 ) ACBD $.
 
   $( A single axiom for Boolean algebra known as DN_1.  See
      ~ http://www-unix.mcs.anl.gov/~~mccune/papers/basax/v12.pdf .
