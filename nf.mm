@@ -1,7 +1,5 @@
+$( nf.mm - Version of 24-Dec-2017. $)
 $( -*-text-*- $)
-
-$( Scott - look for "16-Apr-2015" to see what I changed.  Then you
-   can delete those comments. -Norm $)
 
 $(
 ###############################################################################
@@ -15856,9 +15854,9 @@ $(
 Here we introduce New Foundations set theory.
 We first introduce the axiom of extensionality in ~ ax-ext .
 We later add set construction axioms from
-{{Hailperin}}, such as ~ ax-nin ,
+Hailperin, such as ~ ax-nin ,
 that are designed to implement the
-Stratification Axiom from {{Quine2}}.
+Stratification Axiom from Quine.
 
 We then introduce ordered pairs, relationships, and functions.
 Note that the definition of an ordered pair (in ~ df-op ) is different
@@ -23696,18 +23694,9 @@ $)
   ${
     $d x y A $.  $d x y B $.
 
-    $( Scott - all bib refs must be in the strict format "<keyword> ...
-       [bibref] p. nnn" where <keyword> is from the list:
-
-       Theorem Lemma Lemmas Definition Compare Proposition Corollary Axiom Rule
-       Remark Exercise Problem Notation Example Part Section Property Figure
-       Postulate Equation Scheme Item Chapter
-
-       I changed the brackets to {{...}} in the bad ones to prevent errors in
-       building mmbiblio.html -NM 16-Apr-2015. $)
-
     $( Define the anti-intersection of two classes.  This operation is used
-       implicitly in {{Hailperin}}, though there does not seem to be any
+       implicitly after Axiom P1 of [Hailperin] p. 6, though there does not
+       seem to be any
        notation for it in the literature. $)
     df-nin $a |- ( A -i^i B ) = { x | ( x e. A -/\ x e. B ) } $.
   $}
@@ -23724,8 +23713,8 @@ $)
   $( Define the difference of two classes.  See ~ eldif for membership. $)
   df-dif $a |- ( A \ B ) = ( A i^i ~ B ) $.
 
-  $( Define the symmetric difference of two classes.  Definition IX.9.10 of
-     {{Rosser}}, p. 238. $)
+  $( Define the symmetric difference of two classes.  Definition IX.9.10,
+     [Rosser] p. 238. $)
   df-symdif $a |- ( A (+) B ) = ( ( A \ B ) u. ( B \ A ) ) $.
 
   ${
@@ -26914,7 +26903,7 @@ $)
 
   ${
     $d A x $.  $d B x $.
-    $( Alternate definition of proper subset.  Theorem IX.4.21 of {{Rosser}},
+    $( Alternate definition of proper subset.  Theorem IX.4.21 of [Rosser]
        p. 236. $)
     dfpss4 $p |- ( A C. B <-> ( A C_ B /\ E. x e. B -. x e. A ) ) $=
       ( wpss wss wn wa wcel wrex dfpss3 wral dfss3 dfral2 bitr2i con1bii anbi2i
@@ -28586,13 +28575,14 @@ $)
 
   ${
     $d x y z w $.
-    $( State the axiom of anti-intersection.  Axiom P1 of {{Hailperin}}.  This
+    $( State the axiom of anti-intersection.  Axiom P1 of [Hailperin] p. 6.
+       This
        axiom sets up boolean operations on sets.
 
        Note on this and the following axioms: this axiom, ~ ax-xp , ~ ax-cnv ,
        ~ ax-1c , ~ ax-sset , ~ ax-si , ~ ax-ins2 , ~ ax-ins3 , and
-       ~ ax-typlower are from {{Hailperin}}, and are designed to implement the
-       Stratification Axiom from {{Quine2}}.
+       ~ ax-typlower are from Hailperin and are designed to implement the
+       Stratification Axiom of Quine.
 
        A well-formed formula using only propositional symbols, predicate
        symbols, and ` e. ` is "stratified" iff you can make a (metalogical)
@@ -28612,7 +28602,7 @@ $)
     $d x y z w t $.
     $( State the axiom of cross product.  This axiom guarantees the existence
        of the (Kuratowski) cross product of ` _V ` with ` x ` .  Axiom P5 of
-       {{Hailperin}}. $)
+       [Hailperin] p. 10. $)
     ax-xp $a |- E. y A. z ( z e. y <->
            E. w E. t ( z = << w , t >> /\ t e. x ) ) $.
   $}
@@ -28620,7 +28610,7 @@ $)
   ${
     $d x y z w $.
     $( State the axiom of converse.  This axiom guarantees the existence of the
-       Kuratowski converse of ` x ` .  Axiom P7 of {{Hailperin}}. $)
+       Kuratowski converse of ` x ` .  Axiom P7 of [Hailperin] p. 10. $)
     ax-cnv $a |- E. y A. z A. w ( << z , w >> e. y <-> << w , z >> e. x ) $.
   $}
 
@@ -28628,7 +28618,7 @@ $)
     $d x y z w $.
     $( State the axiom of cardinal one.  This axiom guarantees the existence of
        the set of all singletons, which will become cardinal one later in our
-       development.  Axiom P8 of {{Hailperin}}. $)
+       development.  Axiom P8 of [Hailperin] p. 10. $)
     ax-1c $a |- E. x A. y ( y e. x <-> E. z A. w ( w e. y <-> w = z ) ) $.
   $}
 
@@ -28636,7 +28626,7 @@ $)
     $d x y z w $.
     $( State the axiom of the subset relationship.  This axiom guarantees the
        existence of the Kuratowski relationship representing subset.  Slight
-       generalization of axiom P9 of {{Hailperin}}. $)
+       generalization of axiom P9 of [Hailperin] p. 10. $)
     ax-sset $a |- E. x A. y A. z ( << y , z >> e. x <->
       A. w ( w e. y -> w e. z ) ) $.
   $}
@@ -28645,7 +28635,7 @@ $)
     $d x y z w $.
     $( State the axiom of the singleton image.  This axiom guarantees that
        guarantees the existence of a set that raises the "type" of another set
-       when considered as a relationship.  Axiom P2 of {{Hailperin}}. $)
+       when considered as a relationship.  Axiom P2 of [Hailperin] p. 10. $)
     ax-si $a |- E. y A. z A. w ( << { z } , { w } >> e. y <->
           << z , w >> e. x ) $.
   $}
@@ -28654,13 +28644,13 @@ $)
     $d x y z w t $.
     $( State the insertion two axiom.  This axiom sets up a set that inserts an
        extra variable at the second place of the relationship described by
-       ` x ` .  Axiom P3 of {{Hailperin}}. $)
+       ` x ` .  Axiom P3 of [Hailperin] p. 10. $)
     ax-ins2 $a |- E. y A. z A. w A. t (
       << { { z } } , << w , t >> >> e. y <-> << z , t >> e. x ) $.
 
     $( State the insertion three axiom.  This axiom sets up a set that inserts
        an extra variable at the third place of the relationship described by
-       ` x ` .  Axiom P4 of {{Hailperin}}. $)
+       ` x ` .  Axiom P4 of [Hailperin] p. 10. $)
     ax-ins3 $a |- E. y A. z A. w A. t (
       << { { z } } , << w , t >> >> e. y <-> << z , w >> e. x ) $.
   $}
@@ -28669,7 +28659,7 @@ $)
     $d x y z w $.
     $( The type lowering axiom.  This axiom eventually sets up both the
        existence of the sum set and the existence of the range of a
-       relationship. Axiom P6 of {{Hailperin}}. $)
+       relationship. Axiom P6 of [Hailperin] p. 10. $)
     ax-typlower $a |- E. y A. z ( z e. y <-> A. w << w , { z } >> e. x ) $.
   $}
 
@@ -29263,12 +29253,12 @@ $)
     df-1c $a |- 1c = { x | E. y x = { y } } $.
   $}
 
-  $( Define unit power class.  Definition from {{Rosser}}. $)
+  $( Define unit power class.  Definition from [Rosser] p. 252. $)
   df-pw1 $a |- ~P1 A = ( ~P A i^i 1c ) $.
 
 
   $( Define the unit union of a class.  This operation is used implicitly in
-     both {{Holmes}} and {{Hailperin}} to complete their stratification
+     both Holmes and Hailperin to complete their stratification
      algorithms, although neither provide explicit notation for it.  See
      ~ eluni1 for membership condition. $)
   df-uni1 $a |- U.1 A = U. ( A i^i 1c ) $.
@@ -31344,7 +31334,7 @@ $)
     $d A x $.  $d B x $.
     sspw1.1 $e |- A e. _V $.
     $( A condition for being a subclass of a unit power class.  Corollary 2 of
-       theorem IX.6.14 of {{Rosser}}, p. 255. $)
+       theorem IX.6.14 of [Rosser] p. 255. $)
     sspw1 $p |- ( A C_ ~P1 B <-> E. x ( x C_ B /\ A = ~P1 x ) ) $=
       ( cpw1 wss cv wceq wa wex cuni uniss unipw1 syl6sseq c1c pw1ss1c eqpw1uni
       sstr mpan2 sseq1 uniex pw1eq eqeq2d anbi12d cla4ev syl2anc syl5ibr impcom
@@ -31755,18 +31745,18 @@ $)
 
   ${
     $d A x y z $.  $d B x y z $.
-    $( Define cardinal addition.  Definition from {{Rosser}}, p. 275. $)
+    $( Define cardinal addition.  Definition from [Rosser]  p. 275. $)
     df-addc $a |- ( A +c B ) =
       { x | E. y e. A E. z e. B ( ( y i^i z ) = (/) /\ x = ( y u. z ) ) } $.
   $}
 
   ${
     $d b y $.
-    $( Define the finite cardinals.  Definition from {{Rosser}}, p. 275. $)
+    $( Define the finite cardinals.  Definition from [Rosser] p. 275. $)
     df-nnc $a |- Nn = |^| { b | ( 0c e. b /\ A. y e. b ( y +c 1c ) e. b ) } $.
   $}
 
-  $( Define the set of all finite sets.  Definition from {{Rosser}}, p. 417. $)
+  $( Define the set of all finite sets.  Definition from [Rosser], p. 417. $)
   df-fin $a |- Fin = U. Nn $.
 
   ${
@@ -31958,7 +31948,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $d A a $.  $d a b $.  $d A b $.  $d a c $.  $d A c $.  $d b c $.  $d M a $.
     $d M b $.  $d M c $.  $d N a $.  $d N b $.  $d N c $.
 
-    $( Membership in cardinal addition.  Theorem X.1.1 of {{Rosser}},
+    $( Membership in cardinal addition.  Theorem X.1.1 of [Rosser]
        p. 275. $)
     eladdc $p |- ( A e. ( M +c N ) <->
         E. b e. M E. c e. N ( ( b i^i c ) = (/) /\ A = ( b u. c ) ) ) $=
@@ -31997,7 +31987,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
       $( [14-Jan-2015] $)
   $}
 
-  $( Cardinal zero is not a successor.  Compare Theorem X.1.2 of {{Rosser}},
+  $( Cardinal zero is not a successor.  Compare Theorem X.1.2 of [Rosser]
      p. 275. $)
   0cnsuc $p |- ( A +c 1c ) =/= 0c $=
     ( c1c cplc c0c wne wceq wn wcel 0nelsuc csn 0ex df-0c eleqtrri eleq2 mpbiri
@@ -32007,7 +31997,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
 
   ${
     $d x y $.
-    $( Cardinal zero is a finite cardinal.  Theorem X.1.4 of {{Rosser}},
+    $( Cardinal zero is a finite cardinal.  Theorem X.1.4 of [Rosser]
        p. 276. $)
     peano1 $p |- 0c e. Nn $=
       ( vx vy c0c cnnc wcel cv c1c cplc wral wa cab cint wal df-nnc eleq2i 0cex
@@ -32019,7 +32009,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   ${
     $d A a x y $.
     $( The finite cardinals are closed under addition of one.  Theorem X.1.5 of
-       {{Rosser}}, p. 276. $)
+       [Rosser] p. 276. $)
     peano2 $p |- ( A e. Nn -> ( A +c 1c ) e. Nn ) $=
       ( va vx vy cv c1c cplc cnnc wcel wceq addceq1 eleq1d c0c wa wi wal eleq2i
       wral elintab bitri wel weq rcla4cv adantl a2i alimi cab df-nnc vex addcex
@@ -32039,7 +32029,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   ${
     $d A x y z $.
     $( Cardinal zero is a fixed point for cardinal addition.  Theorem X.1.8 of
-       {{Rosser}}, p 276. $)
+       [Rosser] p. 276. $)
     addcid1 $p |- ( A +c 0c ) = A $=
       ( vx vy vz c0c cplc c0 csn df-0c addceq2i cv cin wceq cun wa wrex weq 0ex
       wcel ineq2 eqeq1d uneq2 eqeq2d anbi12d in0 biantrur syl6bbr eqeq2i equcom
@@ -32053,7 +32043,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
 
   ${
     $d A x y z $.  $d B x y z $.
-    $( Cardinal sum commutes.  Theorem X.1.9 of {{Rosser}}, p. 276. $)
+    $( Cardinal sum commutes.  Theorem X.1.9 of [Rosser] p. 276. $)
     addccom $p |- ( A +c B ) = ( B +c A ) $=
       ( vy vz vx cv cin c0 wceq cun wa wrex cab cplc incom eqeq1i uncom anbi12i
       eqeq2i df-addc 2rexbii rexcom bitri abbii 3eqtr4i ) CFZDFZGZHIZEFZUFUGJZI
@@ -32063,14 +32053,14 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   $}
 
   $( Cardinal zero is a fixed point for cardinal addition.  Theorem X.1.8 of
-     {{Rosser}}, p 276. $)
+     [Rosser] p. 276. $)
   addcid2 $p |- ( 0c +c A ) = A $=
     ( c0c cplc addccom addcid1 eqtri ) BACABCABADAEF $.
     $( [16-Jan-2015] $)
 
 
   ${
-    $( Cardinal one is a finite cardinal.  Theorem X.1.12 of {{Rosser}},
+    $( Cardinal one is a finite cardinal.  Theorem X.1.12 of [Rosser]
        p. 277. $)
     1cnnc $p |- 1c e. Nn $=
       ( c1c cplc cnnc addcid1 addccom eqtr3i wcel peano1 peano2 ax-mp eqeltri
@@ -32082,7 +32072,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $d A a x y $.
     $( The principle of mathematical induction: a set containing cardinal zero
        and closed under the successor operator is a superset of the finite
-       cardinals.  Theorem X.1.6 of {{Rosser}}, p. 276. $)
+       cardinals.  Theorem X.1.6 of [Rosser] p. 276. $)
     peano5 $p |- ( ( A e. V /\ 0c e. A /\
                       A. x e. Nn ( x e. A -> ( x +c 1c ) e. A ) ) ->
             Nn C_ A ) $=
@@ -32111,7 +32101,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $( Principle of finite induction over the finite cardinals, using implicit
        substitutions.  The first hypothesis ensures stratification of ` ph ` ,
        the next four set up the substitutions, and the last two set up the base
-       case and induction hypothesis.  Compare Theorem X.1.13 of {{Rosser}},
+       case and induction hypothesis.  Compare Theorem X.1.13 of [Rosser]
        p. 277. $)
     finds $p |- ( A e. Nn -> ta ) $=
       ( cnnc wcel cvv c0c elab cab cv c1c cplc wi wral wss 0cex vex 1cex addcex
@@ -32124,7 +32114,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   ${
     $d A x n m $.
     $( All naturals are either zero or a successor.  Theorem X.1.7 of
-       {{Rosser}}, p. 276. $)
+       [Rosser] p. 276. $)
     nnc0suc $p |- ( A e. Nn <->
              ( A = 0c \/ E. x e. Nn A = ( x +c 1c ) ) ) $=
       ( vn vm cnnc wcel c0c wceq cv c1c wrex cssetk cins3k cpw1 cimak cvv eqeq1
@@ -32148,7 +32138,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   ${
     $d A b $.  $d A x $.  $d A y $.  $d b x $.  $d b y $.  $d M b $.  $d M y $.
     $d x y $.
-    $( Membership in a successor.  Theorem X.1.16 of {{Rosser}}, p. 279. $)
+    $( Membership in a successor.  Theorem X.1.16 of [Rosser] p. 279. $)
     elsuc $p |- ( A e. ( M +c 1c ) <->
        E. b e. M E. x e. ~ b A = ( b u. { x } ) ) $=
       ( vy c1c wcel cv cin c0 wceq cun wa wrex bitr4i anbi1i bitri exbii df-rex
@@ -32186,7 +32176,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $d c x $.  $d C x $.  $d d x $.  $d e x $.
 
     $( Cardinal addition is associative.  Theorem X.1.11, corollary 1 of
-       {{Rosser}}, p. 277. $)
+       [Rosser] p. 277. $)
     addcass $p |- ( ( A +c B ) +c C ) = ( A +c ( B +c C ) ) $=
       ( va vb vd vc ve cv cin c0 wceq cun wex wrex bitri exbii rexbii rexcom4
       wa vx cplc wcel ancom anbi2i an12 indir eqeq1i un00 bitr4i 3bitr4i eqeq2i
@@ -32234,7 +32224,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   ${
     $d A a b c x $.  $d B a b c x $.
     $( The finite cardinals are closed under addition.  Theorem X.1.14 of
-       {{Rosser}}, p. 278. $)
+       [Rosser] p. 278. $)
     nncaddccl $p |- ( ( A e. Nn /\ B e. Nn ) -> ( A +c B ) e. Nn ) $=
       ( va vb vc vx cnnc wcel cplc cv wceq eleq1d imbi2d c1c cab cpw1 cimak cvv
       wi addceq2 addceq1 c0c wn cssetk cins3k cins2k cin ccompl csymdif cimagek
@@ -32396,7 +32386,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     nnsucelr.1 $e |- A e. _V $.
     nnsucelr.2 $e |- X e. _V $.
     $( Transfer membership in the successor of a natural into membership of the
-       natural itself.  Theorem X.1.17 of {{Rosser}}, p. 525. $)
+       natural itself.  Theorem X.1.17 of [Rosser] p. 525. $)
     nnsucelr $p |- ( ( M e. Nn /\
               ( -. X e. A /\ ( A u. { X } ) e. ( M +c 1c ) ) ) ->
               A e. M ) $=
@@ -32463,7 +32453,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $d b p $.  $d p x $.
 
     $( Either two naturals are disjoint or they are the same natural.  Theorem
-       X.1.18 of {{Rosser}}, p. 526. $)
+       X.1.18 of [Rosser] p. 526. $)
     nndisjeq $p |- ( ( M e. Nn /\ N e. Nn ) -> ( ( M i^i N ) = (/) \/ M = N ) )
         $=
       ( vn vp vm vq vb cnnc wcel cin c0 wceq wo cv wi weq wn c0c eqeq1d wa wral
@@ -32583,29 +32573,29 @@ $)
   ${
     $d x y z w $.
     $( Define the less than or equal to relationship for finite cardinals.
-       Definition from Ex.  X.1.4 of {{Rosser}}, p. 279. $)
+       Definition from Ex.  X.1.4 of [Rosser] p. 279. $)
     df-lefin $a |- <_[fin] = { x | E. y E. z ( x = << y , z >> /\
         E. w e. Nn z = ( y +c w ) ) } $.
   $}
 
   ${
-    $d m n p x y z w $.  $( 16-Apr-2015 NM added m n p to $d list $)
+    $d m n p x y z w $.  
     $( Define the less than relationship for finite cardinals.  Definition from
-       {{Rosser}}, p. 527. $)
+       [Rosser] p. 527. $)
     df-ltfin $a |- <[fin] = { x | E. m E. n ( x = << m , n >> /\
         ( m =/= (/) /\ E. p e. Nn n = ( ( m +c p ) +c 1c ) ) ) } $.
   $}
 
   ${
     $d A x $.
-    $( Define the finite cardinal function.  Definition from {{Rosser}},
+    $( Define the finite cardinal function.  Definition from [Rosser]
        p. 527. $)
     df-ncfin $a |- Nc[fin] A = ( iota x ( x e. Nn /\ A e. x ) ) $.
   $}
 
   ${
     $d M n a $.
-    $( Define the finite T operator.  Definition from {{Rosser}}, p. 528. $)
+    $( Define the finite T operator.  Definition from [Rosser] p. 528. $)
     df-tfin $a |- _T[fin] M = if ( M = (/) , (/) ,
        ( iota n ( n e. Nn /\ E. a e. M ~P1 a e. n ) ) ) $.
   $}
@@ -32614,7 +32604,7 @@ $)
     $d x n $.
     $( Define the temporary set of all even numbers.  This differs from the
        final definition due to the non-null condition.  Definition from
-       {{Rosser}}, p. 529. $)
+       [Rosser] p. 529. $)
     df-evenfin $a |- Even[fin] = { x |
                 ( E. n e. Nn x = ( n +c n ) /\ x =/= (/) ) } $.
   $}
@@ -32623,7 +32613,7 @@ $)
     $d x n $.
     $( Define the temporary set of all odd numbers.  This differs from the
        final definition due to the non-null condition.  Definition from
-       {{Rosser}}, p. 529. $)
+       [Rosser] p. 529. $)
     df-oddfin $a |- Odd[fin] = { x |
                 ( E. n e. Nn x = ( ( n +c n ) +c 1c ) /\
                             x =/= (/) ) } $.
@@ -32633,14 +32623,14 @@ $)
     $d M a $.  $d N a $.
     $( Define the finite S relationship.  This relationship encapsulates the
        idea of ` M ` being a "smaller" number than ` N ` .  Definition from
-       {{Rosser}}, p. 530. $)
+       [Rosser] p. 530. $)
     df-sfin $a |- ( _S[fin] ( M , N ) <-> ( M e. Nn /\ N e. Nn /\
              E. a ( ~P1 a e. M /\ ~P a e. N ) ) ) $.
   $}
 
   ${
     $d a x z $.
-    $( Define the finite Sp set.  Definition from {{Rosser}}, p. 533. $)
+    $( Define the finite Sp set.  Definition from [Rosser] p. 533. $)
     df-spfin $a |- Sp[fin] =
        |^| { a | ( Nc[fin] _V e. a /\
              A. x e. a A. z ( _S[fin] ( z , x ) -> z e. a ) ) } $.
@@ -32689,7 +32679,7 @@ $)
   ${
     $d M a b x $.  $d N a b x $.
     $( Assuming a non-null successor, cardinal successor is one-to-one.
-       Theorem X.1.19 of {{Rosser}}, p. 526. $)
+       Theorem X.1.19 of [Rosser] p. 526. $)
     prepeano4 $p |- ( ( ( M e. Nn /\ N e. Nn ) /\
      ( ( M +c 1c ) = ( N +c 1c ) /\ ( M +c 1c ) =/= (/) ) ) -> M = N ) $=
       ( va vb vx cnnc wcel wa c1c cplc wceq c0 wne cv wex csn wrex vex syl5bi
@@ -32706,7 +32696,7 @@ $)
   ${
     $d A a b c $.
     $( Cardinal addition with the empty set.  Theorem X.1.20, corollary 1 of
-       {{Rosser}}, p. 526. $)
+       [Rosser] p. 526. $)
     addcnul1 $p |- ( A +c (/) ) = (/) $=
       ( va vb vc c0 cplc wceq cv wcel wn eq0 cin cun wrex rex0 a1i eladdc mtbir
       wa nrex mpgbir ) AEFZEGBHZUBIZJBBUBKUDCHZDHZLEGUCUEUFMGSZDENZCANUHCAUHJUE
@@ -32715,7 +32705,7 @@ $)
   $}
 
   $( If cardinal addition is non-empty, then both addends are non-empty.
-     Theorem X.1.20 of {{Rosser}}, p. 526. $)
+     Theorem X.1.20 of [Rosser] p. 526. $)
   addcnnul $p |- ( ( A +c B ) =/= (/) -> ( A =/= (/) /\ B =/= (/) ) ) $=
     ( cplc wne wceq addceq1 addccom addcnul1 eqtri syl6eq necon3i addceq2 jca
     c0 ) ABCZNDANDBNDANONANEONBCZNANBFPBNCNNBGBHIJKBNONBNEOANCNBNALAHJKM $.
@@ -33109,7 +33099,7 @@ $)
     $d b n $.  $d b t $.  $d b x $.  $d c d $.  $d c k $.  $d c m $.  $d c x $.
     $d d k $.  $d d m $.  $d d x $.  $d k m $.  $d k x $.  $d m n $.  $d m t $.
     $( A subset of a finite set is itself finite.  Theorem X.1.21 of
-       {{Rosser}}, p. 527. $)
+       [Rosser] p. 527. $)
     ssfin $p |- ( ( A e. V /\ B e. Fin /\ A C_ B ) -> A e. Fin ) $=
       ( va vb vn vm vt vx wcel cfin wss cv wi wceq wa wal cssetk cvv wex imbi2d
       vd vk vc sseq1 eleq1 imbi12d sseq2 imbi1d wel cnnc wrex elfin c0 c1c cplc
@@ -33170,7 +33160,7 @@ $)
   ${
     $d A x y $.
     $( If the universe is finite, then there is a unique natural containing any
-       set.  Theorem X.1.22 of {{Rosser}}, p. 527. $)
+       set.  Theorem X.1.22 of [Rosser] p. 527. $)
     vfinnc $p |- ( ( A e. V /\ _V e. Fin ) -> E! x e. Nn A e. x ) $=
       ( vy wcel cvv cfin wa cv cnnc wrex weq wi wral wss ssv ssfin mp3an3 elfin
       wreu sylib nnceleq ex rgen2a a1i eleq2 reu4 sylanbrc ) BCEZFGEZHZBAIZEZAJ
@@ -33199,7 +33189,7 @@ $)
 
   ${
     $d A x $.
-    $( Properties of finite cardinal number.  Theorem X.1.23 of {{Rosser}},
+    $( Properties of finite cardinal number.  Theorem X.1.23 of [Rosser]
        p. 527 $)
     ncfinprop $p |- ( ( _V e. Fin /\ A e. V ) ->
                ( Nc[fin] A e. Nn /\ A e. Nc[fin] A ) ) $=
@@ -33236,7 +33226,7 @@ $)
   $}
 
   ${
-    $( Equality law for finite cardinality.  Theorem X.1.24 of {{Rosser}},
+    $( Equality law for finite cardinality.  Theorem X.1.24 of [Rosser]
        p. 527. $)
     ncfineleq $p |- ( ( _V e. Fin /\ A e. V /\ B e. W ) ->
        ( A e. Nc[fin] B <-> Nc[fin] A = Nc[fin] B ) ) $=
@@ -33358,7 +33348,7 @@ $)
 
 
     $( If two sets are in a particular finite cardinal, then their unit power
-       sets are in the same natural.  Theorem X.1.25 of {{Rosser}}, p. 527. $)
+       sets are in the same natural.  Theorem X.1.25 of [Rosser] p. 527. $)
     ncfinraise $p |- ( ( M e. Nn /\ A e. M /\ B e. M ) ->
        E. n e. Nn ( ~P1 A e. n /\ ~P1 B e. n ) ) $=
       ( va vb vc vx vd vy cnnc wcel cpw1 cv wa wrex wral c0c c0 wceq vm vk cplc
@@ -33466,7 +33456,7 @@ $)
     $d k w $.  $d k z $.  $d m w $.  $d m z $.  $d n w $.  $d n z $.  $d c m $.
     $d d m $.  $d m x $.  $d m y $.
     $( If the unit power classes of two sets are in the same natural, then so
-       are the sets themselves.  Theorem X.1.26 of {{Rosser}}, p. 527. $)
+       are the sets themselves.  Theorem X.1.26 of [Rosser] p. 527. $)
     ncfinlower $p |- ( ( M e. Nn /\ ~P1 A e. M /\ ~P1 B e. M ) ->
        E. n e. Nn ( A e. n /\ B e. n ) ) $=
       ( va vb vm vc vd ve vf cnnc wcel cv wa wrex wi c0 wceq eleq2 vk vx vy wel
@@ -33528,7 +33518,7 @@ $)
     $d a q $.  $d b q $.  $d M q $.  $d n q $.  $d p q $.
     $( For any non-empty finite cardinal, there is a unique natural containing
        a unit power class of one of its elements.  Theorem X.1.27 of
-       {{Rosser}}, p. 528. $)
+       [Rosser] p. 528. $)
     nnpw1ex $p |- ( ( M e. Nn /\ M =/= (/) ) ->
       E! n e. Nn E. a e. M ~P1 a e. n ) $=
       ( vp vb vq cnnc wcel cpw1 wrex weq wral wex w3a ncfinraise anbi2i nnceleq
@@ -33680,7 +33670,7 @@ $)
     $d a n $.  $d a z $.  $d M a $.  $d M n $.  $d M z $.  $d n z $.
 
     $( Properties of the finite T operator for a non-empty natural.  Theorem
-       X.1.28 of {{Rosser}}, p. 528. $)
+       X.1.28 of [Rosser] p. 528. $)
     tfinprop $p |- ( ( M e. Nn /\ M =/= (/) ) ->
       ( _T[fin] M e. Nn /\ E. a e. M ~P1 a e. _T[fin] M ) ) $=
       ( vn cnnc wcel c0 wne wa ctfin cv cpw1 wrex wceq cio cif df-tfin wn df-ne
@@ -33695,7 +33685,7 @@ $)
   ${
     $d M x $.
     $( If ` M ` is a non-empty natural, then ` _T[fin] M ` is also non-empty.
-       Corollary 1 of Theorem X.1.28 of {{Rosser}}, p. 528. $)
+       Corollary 1 of Theorem X.1.28 of [Rosser] p. 528. $)
     tfinnnul $p |- ( ( M e. Nn /\ M =/= (/) ) -> _T[fin] M =/= (/) ) $=
       ( vx cnnc wcel c0 wne wa ctfin cv cpw1 wrex tfinprop rexlimivw adantl syl
       ne0i ) ACDAEFGAHZCDZBIJZQDZBAKZGQEFZABLUAUBRTUBBAQSPMNO $.
@@ -33705,7 +33695,7 @@ $)
   ${
     $d x y $.
     $( The finite T operator applied to the empty set is empty.  Theorem X.1.29
-       of {{Rosser}}, p. 528. $)
+       of [Rosser] p. 528. $)
     tfinnul $p |- _T[fin] (/) = (/) $=
       ( vx vy c0 ctfin wceq cv cnnc wcel cpw1 wrex cio cif df-tfin iftrue ax-mp
       wa eqid eqtri ) CDCCEZCAFZGHBFITHBCJPAKZLZCACBMSUBCECQSCUANOR $.
@@ -33728,7 +33718,7 @@ $)
     $d N b $.  $d N p $.
 
     $( The finite T operator is one-to-one over the naturals.  Theorem X.1.30
-       of {{Rosser}}, p. 528. $)
+       of [Rosser] p. 528. $)
     tfin11 $p |- ( ( M e. Nn /\ N e. Nn /\ _T[fin] M = _T[fin] N ) ->
             M = N ) $=
       ( va vb vp cnnc wcel ctfin wceq w3a wi c0 wa tfinnnul ex necon4d 3ad2ant1
@@ -33754,7 +33744,7 @@ $)
   ${
     $d A b $.  $d A n $.  $d b n $.  $d M b $.  $d M n $.
     $( The finite T operator on a natural contains the unit power class of any
-       element of the natural.  Theorem X.1.31 of {{Rosser}}, p. 528. $)
+       element of the natural.  Theorem X.1.31 of [Rosser] p. 528. $)
     tfinpw1 $p |- ( ( M e. Nn /\ A e. M ) -> ~P1 A e. _T[fin] M ) $=
       ( vb vn cnnc wcel wa ctfin cv cpw1 wrex c0 wne ne0i tfinprop sylan2 3expa
       expr rexlimdva mpd ncfinraise adantrr w3a simp3rl wceq simp3l syl simp3rr
@@ -33769,7 +33759,7 @@ $)
   ${
     $d A x $.
     $( Relationship between finite T operator and finite Nc operation in a
-       finite universe.  Corollary of Theorem X.1.31 of {{Rosser}}, p. 529. $)
+       finite universe.  Corollary of Theorem X.1.31 of [Rosser] p. 529. $)
     ncfintfin $p |- ( ( _V e. Fin /\ A e. V ) ->
                _T[fin] Nc[fin] A = Nc[fin] ~P1 A ) $=
       ( cfin wcel wa cncfin ctfin cnnc cpw1 wceq ncfinprop simpld tfincl pw1exg
@@ -33782,7 +33772,7 @@ $)
   ${
     $d M a b c t $.  $d N a b c t $.
     $( The finite T operation distributes over non-empty cardinal sum.  Theorem
-       X.1.32 of {{Rosser}}, p. 529. $)
+       X.1.32 of [Rosser] p. 529. $)
     tfindi $p |- ( ( M e. Nn /\ N e. Nn /\ ( M +c N ) =/= (/) ) ->
        _T[fin] ( M +c N ) = ( _T[fin] M +c _T[fin] N ) ) $=
       ( va vb vc cnnc wcel cplc c0 ctfin wceq cv cpw1 nncaddccl 3adant3 tfinpw1
@@ -33830,7 +33820,7 @@ $)
   $}
 
   $( The finite T operator is idempotent over ` 1c ` .  Theorem X.1.34(a) of
-     {{Rosser}}, p. 529. $)
+     [Rosser] p. 529. $)
   tfin1c $p |- _T[fin] 1c = 1c $=
     ( c0c c1c cplc ctfin cnnc wcel wne wceq peano1 addcid2 csn 1cex snel1c ne0i
     c0 ax-mp eqnetri tfinsuc mp2an tfineq tfin0c addceq1i eqtri 3eqtr3i ) ABCZD
@@ -33869,7 +33859,7 @@ $)
   ${
     $d M x y $.  $d N x y $.
     $( Ordering rule for the finite T operation.  Corollary to theorem X.1.33
-       of {{Rosser}}, p. 529. $)
+       of [Rosser] p. 529. $)
     tfinltfin $p |- ( ( M e. Nn /\ N e. Nn ) ->
     ( << M , N >> e. <[fin] <->
       << _T[fin] M , _T[fin] N >> e. <[fin] ) ) $=
@@ -33892,7 +33882,7 @@ $)
       $( [1-Feb-2015] $)
   $}
 
-  $( Ordering rule for the finite T operation.  Theorem X.1.33 of {{Rosser}},
+  $( Ordering rule for the finite T operation.  Theorem X.1.33 of [Rosser]
      p. 529. $)
   tfinlefin $p |- ( ( M e. Nn /\ N e. Nn ) ->
     ( << M , N >> e. <_[fin] <->
@@ -34166,7 +34156,7 @@ $)
   ${
     $d x y k n m $.
     $( Every non-empty finite cardinal is either even or odd.  Theorem X.1.35
-       of {{Rosser}}, p. 529. $)
+       of [Rosser] p. 529. $)
     evenoddnnnul $p |- ( Even[fin] u. Odd[fin] ) = ( Nn \ { (/) } ) $=
       ( vx vn vm vk cevenfin coddfin cnnc c0 wss cv wcel wne ssriv wi c0c neeq1
       c1c wo eleq1 imbi12d cun cdif wa evennn evennnul eldifsn sylanbrc oddnnul
@@ -34318,7 +34308,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
 
     $( The even finite cardinals and the odd ones are disjoint.  Theorem X.1.36
-       of {{Rosser}}, p. 529. $)
+       of [Rosser] p. 529. $)
     evenodddisj $p |- ( Even[fin] i^i Odd[fin] ) = (/) $=
       ( vx vn vp cv cplc wceq c0 wne wa cnnc c1c wn wi wcel c0c addceq12 anidms
       wral neeq1d imbi12d vk vj vm vq cevenfin coddfin cin dfevenfin2 dfoddfin2
@@ -34371,7 +34361,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d M m n x $.
     $( If ` M ` is even , then so is ` _T[fin] M ` .  Theorem X.1.37 of
-       {{Rosser}}, p. 530. $)
+       [Rosser] p. 530. $)
     eventfin $p |- ( M e. Even[fin] -> _T[fin] M e. Even[fin] ) $=
       ( vn vx vm cevenfin wcel cv cplc wceq cnnc wrex c0 wa ctfin eqeq1 rexbidv
       wne neeq1 anbi12d wi df-evenfin elab2g ibi addceq2 addcnul1 cpw1 tfinprop
@@ -34391,7 +34381,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d M n m x $.
     $( If ` M ` is odd , then so is ` _T[fin] M ` .  Theorem X.1.38 of
-       {{Rosser}}, p. 530. $)
+       [Rosser] p. 530. $)
     oddtfin $p |- ( M e. Odd[fin] -> _T[fin] M e. Odd[fin] ) $=
       ( vn vx vm coddfin wcel cv cplc c1c wceq cnnc c0 wne wa ctfin eqeq1 neeq1
       wrex wi syl rexbidv anbi12d df-oddfin elab2g ibi addceq2 addcnul1 addceq1
@@ -34486,7 +34476,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d x z $.  $d y z $.
 
     $( Adjoining a new element to every member of ` L ` does not change its
-       size.  Theorem X.1.39 of {{Rosser}}, p. 530. $)
+       size.  Theorem X.1.39 of [Rosser] p. 530. $)
     nnadjoin $p |- ( ( N e. Nn /\ L e. N /\ X e. ~ U. L ) ->
          { x | E. b e. L x = ( b u. { X } ) } e. N ) $=
       ( vl vc vz wcel cuni ccompl cv cun wceq wrex cab wi c0 wn wa vy vn vk csn
@@ -34540,7 +34530,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d A a $.  $d a b $.  $d A b $.  $d a t $.  $d A t $.  $d b t $.  $d M b $.
     $d N b $.  $d X a $.  $d X b $.  $d X t $.
 
-    $( Adjoining an element to a power class.  Theorem X.1.40 of {{Rosser}},
+    $( Adjoining an element to a power class.  Theorem X.1.40 of [Rosser]
        p. 530. $)
     nnadjoinpw $p |- ( ( ( M e. Nn /\ N e. Nn ) /\ ( A e. M /\ X e. ~ A ) /\
          ~P A e. N ) -> ~P ( A u. { X } ) e. ( N +c N ) ) $=
@@ -34613,7 +34603,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d A a b c d e f x y m n j k $.  $d B a b c d e f x y m n j k $.
     $d M a b c d e f x y m n j k $.
     $( If two sets are the same finite size, then so are their power classes.
-       Theorem X.1.41 of {{Rosser}}, p. 530. $)
+       Theorem X.1.41 of [Rosser] p. 530. $)
     nnpweq $p |- ( ( M e. Nn /\ A e. M /\ B e. M ) ->
        E. n e. Nn ( ~P A e. n /\ ~P B e. n ) ) $=
       ( va vb ve vf cnnc wcel cpw cv wa wrex wral c0 c0c wceq pweq eleq1d vm vk
@@ -34737,7 +34727,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
       $( [27-Jan-2015] $)
   $}
 
-  $( Zero and one satisfy ` _S[fin] ` .  Theorem X.1.42 of {{Rosser}},
+  $( Zero and one satisfy ` _S[fin] ` .  Theorem X.1.42 of [Rosser]
      p. 530. $)
   sfin01 $p |- _S[fin] ( 0c , 1c ) $=
     ( va c0c c1c wsfin cnnc wcel cv cpw1 cpw wex peano1 1cnnc wceq csn pw10 0ex
@@ -34749,7 +34739,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $d M x y n k $.  $d N x y n k $.  $d P x y n k $.
-    $( Equality law for the finite S operator.  Theorem X.1.43 of {{Rosser}},
+    $( Equality law for the finite S operator.  Theorem X.1.43 of [Rosser]
        p. 530. $)
     sfin112 $p |- ( ( _S[fin] ( M , N ) /\ _S[fin] ( M , P ) ) -> N = P ) $=
       ( vx vy vn vk wsfin wa cnnc wcel cpw1 cpw wex w3a wceq df-sfin wel wrex
@@ -34775,7 +34765,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $( If the unit power set of a set is in the successor of a finite cardinal,
        then there is a natural that is smaller than the finite cardinal and
        whose double is smaller than the successor of the cardinal.  Theorem
-       X.1.44 of {{Rosser}}, p. 531. $)
+       X.1.44 of [Rosser] p. 531. $)
     sfindbl $p |- ( ( M e. Nn /\ ~P1 A e. ( M +c 1c ) ) ->
          E. n e. Nn ( _S[fin] ( M , n ) /\
             _S[fin] ( ( M +c 1c ) , ( n +c n ) ) ) ) $=
@@ -34848,7 +34838,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d M a b k m n p q $.  $d N a k n $.
     $( If two numbers obey ` _S[fin] ` , then do their T raisings.  Theorem
-       X.1.45 of {{Rosser}}, p. 532. $)
+       X.1.45 of [Rosser] p. 532. $)
     sfintfin $p |- ( _S[fin] ( M , N ) ->
               _S[fin] ( _T[fin] M , _T[fin] N ) ) $=
       ( va vn vk cnnc wcel wa wsfin ctfin wi c0c c1c wceq sfineq1 wb tfineq syl
@@ -34961,7 +34951,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d k y $.  $d k z $.  $d N n $.  $d n x $.  $d n z $.  $d w x $.  $d w y $.
     $d w z $.  $d x z $.  $d y z $.
 
-    $( T-raising of a set of naturals.  Theorem X.1.46 of {{Rosser}},
+    $( T-raising of a set of naturals.  Theorem X.1.46 of [Rosser]
        p. 532. $)
     tfinnn $p |- ( ( N e. Nn /\ A C_ Nn /\ A e. N ) ->
        { a | E. x e. A a = _T[fin] x } e. _T[fin] N ) $=
@@ -35021,7 +35011,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d m u $.  $d M u $.  $d N n $.  $d n r $.  $d n s $.  $d n t $.  $d n u $.
     $d N u $.  $d P n $.  $d P u $.  $d Q n $.  $d Q u $.  $d r u $.  $d s u $.
     $d t u $.
-    $( Ordering law for finite smaller than.  Theorem X.1.47 of {{Rosser}},
+    $( Ordering law for finite smaller than.  Theorem X.1.47 of [Rosser]
        p. 532. $)
     sfinltfin $p |- ( ( ( _S[fin] ( M , N ) /\ _S[fin] ( P , Q ) ) /\
         << M , P >> e. <[fin] ) -> << N , Q >> e. <[fin] ) $=
@@ -35103,7 +35093,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d M a $.  $d N a $.  $d P a $.
     $( The finite smaller relationship is one-to-one in its first argument.
-       Theorem X.1.48 of {{Rosser}}, p. 533. $)
+       Theorem X.1.48 of [Rosser] p. 533. $)
     sfin111 $p |- ( ( _S[fin] ( M , P ) /\ _S[fin] ( N , P ) ) ->
        M = N ) $=
       ( va wsfin wa copk cltfin wcel wo wn wceq cnnc wex df-sfin adantl simp1bi
@@ -35150,7 +35140,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d a x z $.
     $( The cardinality of the universe is in the finite Sp set.  Theorem X.1.49
-       of {{Rosser}}, p. 534. $)
+       of [Rosser] p. 534. $)
     ncvspfin $p |- Nc[fin] _V e. Sp[fin] $=
       ( va vz vx cvv cncfin cv wcel wsfin wel wi wal wral wa cab cspfin ncfinex
       cint elintab simpl mpgbir df-spfin eleqtrri ) DEZUCAFZGZBFCFHBAIJBKCUDLZM
@@ -35163,7 +35153,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d q z $.  $d X x $.  $d X y $.  $d x z $.  $d Z x $.  $d Z y $.  $d Z z $.
 
     $( If ` X ` is in ` Sp[fin] ` and ` Z ` is smaller than ` X ` , then ` Z `
-       is also in ` Sp[fin] ` .  Theorem X.1.50 of {{Rosser}}, p. 534. $)
+       is also in ` Sp[fin] ` .  Theorem X.1.50 of [Rosser] p. 534. $)
     spfinsfincl $p |- ( ( X e. Sp[fin] /\ _S[fin] ( Z , X ) ) ->
        Z e. Sp[fin] ) $=
       ( vy vz vx va vq vp wsfin cspfin wcel wi cnnc cv wa eleq1 imbi12d wel wal
@@ -35183,7 +35173,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d a x $.  $d a z $.  $d B a $.  $d B x $.  $d B z $.  $d x z $.
 
-    $( Inductive principle for ` Sp[fin] ` .  Theorem X.1.51 of {{Rosser}},
+    $( Inductive principle for ` Sp[fin] ` .  Theorem X.1.51 of [Rosser]
        p. 534. $)
     spfininduct $p |- ( ( B e. V /\ Nc[fin] _V e. B /\
        A. x e. Sp[fin] A. z ( ( x e. B /\ _S[fin] ( z , x ) ) -> z e. B ) ) ->
@@ -35207,7 +35197,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d x y z $.
     $( If the universe is finite, then ` Sp[fin] ` is a subset of the non-empty
-       naturals.  Theorem X.1.53 of {{Rosser}}, p. 534. $)
+       naturals.  Theorem X.1.53 of [Rosser] p. 534. $)
     vfinspnn $p |- ( _V e. Fin -> Sp[fin] C_ ( Nn \ { (/) } ) ) $=
       ( vx vz vy cvv cfin wcel cncfin cnnc c0 csn cv wsfin wa wi wal cspfin wne
       cdif ne0i eldifsn wral wss vvex ncfinprop mpan2 anim2i syl sylibr cpw wex
@@ -35222,7 +35212,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $( If the universe is finite, then ` Nc[fin] 1c ` is the base two log of
-       ` Nc[fin] _V ` .  Theorem X.1.54 of {{Rosser}}, p. 534. $)
+       ` Nc[fin] _V ` .  Theorem X.1.54 of [Rosser] p. 534. $)
     1cvsfin $p |- ( _V e. Fin -> _S[fin] ( Nc[fin] 1c , Nc[fin] _V ) ) $=
       ( va cvv cfin wcel c1c cncfin cnnc cpw1 cpw wex w3a 1cex ncfinprop simpld
       cv wa mpan2 vvex simprd eleq1d wsfin wceq pw1eq df1c2 syl6eqr pweq syl6eq
@@ -35236,7 +35226,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $( If the universe is finite, then the size of ` 1c ` is in ` Sp[fin] ` .
-       Corollary of Theorem X.1.54 of {{Rosser}}, p. 534. $)
+       Corollary of Theorem X.1.54 of [Rosser] p. 534. $)
     1cspfin $p |- ( _V e. Fin -> Nc[fin] 1c e. Sp[fin] ) $=
       ( cvv cfin wcel cncfin cspfin wsfin ncvspfin 1cvsfin spfinsfincl sylancr
       c1c ) ABCADZECKDZLFMECGHLMIJ $.
@@ -35245,7 +35235,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $( If the universe is finite, then the T-raising of the size of the
-       universe is equal to the size of ` 1c ` .  Theorem X.1.55 of {{Rosser}},
+       universe is equal to the size of ` 1c ` .  Theorem X.1.55 of [Rosser]
        p. 534. $)
     tncveqnc1fin $p |- ( _V e. Fin -> _T[fin] Nc[fin] _V = Nc[fin] 1c ) $=
       ( cvv cfin wcel cncfin ctfin cpw1 wceq vvex ncfintfin mpan2 df1c2 ncfineq
@@ -35256,7 +35246,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $( If the universe is finite, then the T-raising of the size of ` 1c ` is
        smaller than the size itself.  Corollary of theorem X.1.56 of
-       {{Rosser}}, p. 534. $)
+       [Rosser] p. 534. $)
     t1csfin1c $p |- ( _V e. Fin ->
                _S[fin] ( _T[fin] Nc[fin] 1c , Nc[fin] 1c ) ) $=
       ( cvv cfin wcel c1c cncfin ctfin wsfin 1cvsfin sfintfin wceq tncveqnc1fin
@@ -35267,7 +35257,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d N a $.
     $( If the universe is finite, then the T-raising of all non-empty naturals
-       are no greater than the size of ` 1c ` .  Theorem X.1.56 of {{Rosser}},
+       are no greater than the size of ` 1c ` .  Theorem X.1.56 of [Rosser]
        p. 534. $)
     vfintle $p |- ( ( _V e. Fin /\ N e. Nn /\ N =/= (/) ) ->
         << _T[fin] N , Nc[fin] 1c >> e. <_[fin] ) $=
@@ -35289,7 +35279,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $( If the universe is finite, then ` 1c ` is strictly smaller than the
-       universe.  Theorem X.1.57 of {{Rosser}}, p. 534. $)
+       universe.  Theorem X.1.57 of [Rosser] p. 534. $)
     vfin1cltv $p |- ( _V e. Fin ->
                << Nc[fin] 1c , Nc[fin] _V >> e. <[fin] ) $=
       ( cvv wcel c1c cncfin cplc copk cltfin wceq ax-mp 1cex wa c0 mpan2 wn c0c
@@ -35311,7 +35301,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d N a $.
     $( If the universe is finite, then the size of the universe is not the
-       T-raising of a natural.  Theorem X.1.58 of {{Rosser}}, p. 534. $)
+       T-raising of a natural.  Theorem X.1.58 of [Rosser] p. 534. $)
     vfinncvntnn $p |- ( ( _V e. Fin /\ N e. Nn ) ->
                  _T[fin] N =/= Nc[fin] _V ) $=
       ( va cvv wcel cnnc wa ctfin cncfin wi c0 wceq vvex ncfinprop mpan2 cltfin
@@ -35331,7 +35321,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d a x $.
     $( If the universe is finite, then its size is not a T raising of an
-       element of ` Sp[fin] ` .  Corollary of theorem X.1.58 of {{Rosser}},
+       element of ` Sp[fin] ` .  Corollary of theorem X.1.58 of [Rosser]
        p. 534. $)
     vfinncvntsp $p |- ( _V e. Fin ->
                  -. Nc[fin] _V e. { a | E. x e. Sp[fin] a = _T[fin] x } ) $=
@@ -35400,7 +35390,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d x z $.  $d n w $.  $d n x $.  $d n z $.
     $( If the universe is finite, then ` Sp[fin] ` is a subset of its ` T `
        raisings and the cardinality of the universe.  Theorem X.1.59 of
-       {{Rosser}}, p. 534. $)
+       [Rosser] p. 534. $)
     vfinspss $p |- ( _V e. Fin ->
               Sp[fin] C_
               ( { a | E. x e. Sp[fin] a = _T[fin] x } u. { Nc[fin] _V } ) ) $=
@@ -35439,7 +35429,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d X x y z $.
     $( If the universe is finite, then ` Sp[fin] ` is closed under T-raising.
-       Theorem X.1.60 of {{Rosser}}, p. 536. $)
+       Theorem X.1.60 of [Rosser] p. 536. $)
     vfinspclt $p |- ( ( _V e. Fin /\ X e. Sp[fin] ) ->
                _T[fin] X e. Sp[fin] ) $=
       ( vx vy vz cvv wcel cspfin wa cv ctfin c1c wceq tfineq eleq1d elab cssetk
@@ -35465,7 +35455,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d a x $.
     $( If the universe is finite, then ` Sp[fin] ` is equal to its T raisings
-       and the cardinality of the universe.  Theorem X.1.61 of {{Rosser}},
+       and the cardinality of the universe.  Theorem X.1.61 of [Rosser]
        p. 536. $)
     vfinspeqtncv $p |- ( _V e. Fin ->
                   Sp[fin] = ( { a | E. x e. Sp[fin] a = _T[fin] x } u.
@@ -35481,7 +35471,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d a x t $.
     $( If the universe is finite, then the size of ` Sp[fin] ` is equal to the
-       successor of its T-raising.  Theorem X.1.62 of {{Rosser}}, p. 536. $)
+       successor of its T-raising.  Theorem X.1.62 of [Rosser] p. 536. $)
     vfinncsp $p |- ( _V e. Fin ->
        Nc[fin] Sp[fin] = ( _T[fin] Nc[fin] Sp[fin] +c 1c ) ) $=
       ( va vx cvv wcel cspfin cncfin wceq wrex csn c1c cin cssetk cins2k cins3k
@@ -35506,7 +35496,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   $}
 
   ${
-    $( The universe is infinite.  Theorem X.1.63 of {{Rosser}}, p. 536. $)
+    $( The universe is infinite.  Theorem X.1.63 of [Rosser] p. 536. $)
     vinf $p |- -. _V e. Fin $=
       ( cvv cfin wcel cspfin cncfin noel cevenfin coddfin cin cnnc wne vfinncsp
       c0 wa adantr adantl eqnetrrd syl2anc eqeltrd ex cun csn spfinex ncfinprop
@@ -35523,7 +35513,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $d n m x a $.
-    $( The empty class is not a natural.  Theorem X.1.65 of {{Rosser}},
+    $( The empty class is not a natural.  Theorem X.1.65 of [Rosser]
        p. 536. $)
     nulnnn $p |- -. (/) e. Nn $=
       ( vx vn vm va c0 cnnc wcel cv wceq wne c0c csn ccompl cab cvv df-ne neeq1
@@ -35543,7 +35533,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   $}
 
   $( The successor operation is one-to-one over the finite cardinals.  Theorem
-     X.1.66 of {{Rosser}}, p. 537. $)
+     X.1.66 of [Rosser] p. 537. $)
   peano4 $p |- ( ( M e. Nn /\ N e. Nn /\ ( M +c 1c ) = ( N +c 1c ) ) ->
      M = N ) $=
     ( cnnc wcel c1c cplc wceq w3a wa c0 3simpa simp3 peano2 nulnnn eleq1 mtbiri
@@ -35612,19 +35602,19 @@ $)
     df-phi $a |- Phi A = { y |
        E. x e. A y = if ( x e. Nn , ( x +c 1c ) , x ) } $.
 
-    $( Define the type-level ordered pair.  Definition from {{Rosser}},
+    $( Define the type-level ordered pair.  Definition from [Rosser]
        p. 281. $)
     df-op $a |- <. A , B >. =
        ( { x | E. y e. A x = Phi y } u.
          { x | E. y e. B x = ( Phi y u. { 0c } ) } ) $.
 
     $( Define the first projection operation.  This operation recovers the
-       first element of an ordered pair.  Definition from {{Rosser}},
+       first element of an ordered pair.  Definition from [Rosser]
        p. 281. $)
     df-proj1 $a |- Proj1 A = { x | Phi x e. A } $.
 
     $( Define the second projection operation.  This operation recovers the
-       second element of an ordered pair.  Definition from {{Rosser}},
+       second element of an ordered pair.  Definition from [Rosser]
        p. 281. $)
     df-proj2 $a |- Proj2 A = { x | ( Phi x u. { 0c } ) e. A } $.
   $}
@@ -35974,7 +35964,7 @@ $)
       $( [3-Feb-2015] $)
   $}
 
-  $( The phi operator is one-to-one.  Theorem X.2.2 of {{Rosser}}, p. 282. $)
+  $( The phi operator is one-to-one.  Theorem X.2.2 of [Rosser] p. 282. $)
   phi11 $p |- ( A = B <-> Phi A = Phi B ) $=
     ( wceq cphi phieq phi11lem1 wss eqcoms eqssd impbii ) ABCADZBDZCZABEMABABFB
     AGLKBAFHIJ $.
@@ -35983,7 +35973,7 @@ $)
   ${
     $d A x y $.
     $( Cardinal zero is not a member of a phi operation.  Theorem X.2.3 of
-       {{Rosser}}, p. 282. $)
+       [Rosser] p. 282. $)
     0cnelphi $p |- -. 0c e. Phi A $=
       ( vy vx c0c cphi wcel cv cnnc c1c cplc cif wceq wrex wn 0cnsuc df-ne mpbi
       wne wa eqeq2d iffalse biimpac peano1 syl6eqelr iftrue eqcom syl6bb biimpd
@@ -36007,7 +35997,7 @@ $)
       $( [3-Feb-2015] $)
   $}
 
-  $( ` ( Phi A u. { 0c } ) ` is one-to-one.  Theorem X.2.4 of {{Rosser}},
+  $( ` ( Phi A u. { 0c } ) ` is one-to-one.  Theorem X.2.4 of [Rosser]
      p. 282. $)
   phi011 $p |- ( A = B <-> ( Phi A u. { 0c } ) = ( Phi B u. { 0c } ) ) $=
     ( wceq cphi c0c csn cun phi11 uneq1 phi011lem1 eqcoms eqssd impbii bitri
@@ -36017,7 +36007,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.
     $( The first projection operator applied to an ordered pair yields its
-       first member.  Theorem X.2.7 of {{Rosser}}, p. 282. $)
+       first member.  Theorem X.2.7 of [Rosser] p. 282. $)
     proj1op $p |- Proj1 <. A , B >. = A $=
       ( vz vy vx cop cproj1 cv cphi wcel c0c cun wceq wrex wo cab eqeq1 rexbidv
       weq elab csn df-op eleq2i phiex phi11 equcom bitr3i syl6bb risset syl6bbr
@@ -36034,7 +36024,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.
     $( The second projection operator applied to an ordered pair yields its
-       second member.  Theorem X.2.8 of {{Rosser}}, p. 283. $)
+       second member.  Theorem X.2.8 of [Rosser] p. 283. $)
     proj2op $p |- Proj2 <. A , B >. = B $=
       ( vz vy vx cv cphi c0c cun wcel wceq wrex wo cab rexbidv elab weq 3bitr4i
       eqeq1 bitri cop cproj2 csn df-op eleq2i elun vex phiex snex phi011 equcom
@@ -47124,7 +47114,7 @@ $)
       $( [26-Feb-2015] $)
 
     $( Calculate the domain of a singleton image.  Theorem X.4.29.I of
-       {{Rosser}}, p. 301. $)
+       [Rosser] p. 301. $)
     dmsi $p |- dom SI R = ~P1 dom R $=
       ( vx va vy vb csi cdm cpw1 cv csn wceq wbr wcel wa bitri exbii excom eldm
       wex 3bitr4i wrex 3anass 2exbii 19.42vv isseti 19.41v mpbiran anbi2i ancom
@@ -47157,7 +47147,7 @@ $)
   $}
 
   $( Calculate the range of a singleton image.  Theorem X.4.29.II of
-     {{Rosser}}, p. 302. $)
+     [Rosser] p. 302. $)
   rnsi $p |- ran SI R = ~P1 ran R $=
     ( csi ccnv cdm cpw1 cnvsi dmeqi dmsi eqtri dfrn4 wceq pw1eq ax-mp 3eqtr4i
     crn ) ABZCZDZACZDZEZPOAOZEZRSBZDUAQUDAFGSHIPJUBTKUCUAKAJUBTLMN $.
@@ -49634,7 +49624,7 @@ $)
      operation. $)
   cfullfun $a class FullFun F $.
 
-  $( Define the tail cross product of two classes.  Definition from {{Holmes}},
+  $( Define the tail cross product of two classes.  Definition from [Holmes]
      p. 40.  See ~ brtxp for membership. $)
   df-txp $a |- ( A (x) B ) = ( ( `' 1st o. A ) i^i ( `' 2nd o. B ) ) $.
 
@@ -49668,8 +49658,6 @@ $)
   $( Define the third insertion operation. $)
   df-ins3 $a |- Ins3 A = ( A (x) _V ) $.
 
-  $( 16-Apr-2015 NM Moved df-image down to here since it references
-     Ins2 and Ins3 $)
   $( Define the image function of a class. $)
   df-image $a |- Image A =
      ( ( _V X. _V ) \ ( ( Ins2 SSet (+) Ins3 ( SSet o. `' SI A ) ) " 1c ) ) $.
@@ -51037,7 +51025,7 @@ $)
   ${
     $d S a $.  $d R a $.
     $( Define the closure operation.  A modified version of the definition from
-       {{Rosser}}, p. 245. $)
+       [Rosser] p. 245. $)
     df-clos1 $a |- Clos1 ( S , R ) =
        |^| { a | ( S C_ a /\ ( R " a ) C_ a ) } $.
   $}
@@ -51090,7 +51078,7 @@ $)
     $d R a $.  $d S a $.
     clos1base.1 $e |- C = Clos1 ( S , R ) $.
     $( The initial set of a closure is a subset of the closure.  Theorem
-       IX.5.13 of {{Rosser}}, p. 246. $)
+       IX.5.13 of [Rosser] p. 246. $)
     clos1base $p |- S C_ C $=
       ( va cv wss cima wa cab cint ssmin cclos1 df-clos1 eqtr2i sseqtri ) CCEFZ
       GBQHQGZIEJKZARECLACBMSDBCENOP $.
@@ -51102,7 +51090,7 @@ $)
       $d R z $.  $d x z $.  $d y z $.
 
       $( If a class is connected to an element of a closure via ` R ` , then it
-         is a member of the closure.  Theorem IX.5.14 of {{Rosser}}, p. 246. $)
+         is a member of the closure.  Theorem IX.5.14 of [Rosser] p. 246. $)
       clos1conn $p |- ( ( A e. C /\ A R B ) -> B e. C ) $=
         ( vx vy va vz cvv wcel wa wbr cv wi wceq eleq1 breq1 wss adantl anbi12d
         brex imbi1d breq2 anbi2d imbi12d cima wel wal wrex rcla4ev elima sylibr
@@ -51128,7 +51116,7 @@ $)
       $d C a x z $.  $d R x z $.  $d X a x z $.
       $( Inductive law for closure.  If the base set is a subset of ` X ` , and
          ` X ` is closed under ` R ` , then the closure is a subset of ` X ` .
-         Theorem IX.5.15 of {{Rosser}}, p. 247. $)
+         Theorem IX.5.15 of [Rosser] p. 247. $)
       clos1induct $p |- ( ( X e. V /\ S C_ X /\
           A. x e. C A. z ( ( x e. X /\ x R z ) -> z e. X ) ) ->
           C C_ X ) $=
@@ -51185,7 +51173,7 @@ $)
     clos1basesuc.2 $e |- R e. _V $.
     clos1basesuc.3 $e |- C = Clos1 ( S , R ) $.
     $( A member of a closure is either in the base set or connected to another
-       member by ` R ` .  Theorem IX.5.16 of {{Rosser}}, p. 248. $)
+       member by ` R ` .  Theorem IX.5.16 of [Rosser] p. 248. $)
     clos1basesuc $p |- ( A e. C <-> ( A e. S \/ E. x e. C x R A ) ) $=
       ( vy vz vw wcel cv wbr wrex wo cab eleq1 breq2 rexbidv cima cun cvv abid2
       eqcomi df-ima uneq12i unab eqtri cclos1 clos1ex eqeltri unex eqeltrri weq
@@ -51202,7 +51190,7 @@ $)
 
     $d S x $.
     $( A closure is equal to the base set together with the image of the
-       closure under ` R ` .  Theorem X.4.37 of {{Rosser}}, p. 303. $)
+       closure under ` R ` .  Theorem X.4.37 of [Rosser] p. 303. $)
     clos1baseima $p |- C = ( S u. ( R " C ) ) $=
       ( vx vy cima cun cv wcel wbr wrex elima orbi2i elun clos1basesuc 3bitr4ri
       wo eqriv ) GACBAIZJZGKZCLZUDUBLZTUEHKUDBMHANZTUDUCLUDALUFUGUEHUDBAOPUDCUB
@@ -51213,7 +51201,7 @@ $)
   ${
     $d a x y z $.
     $( The finite cardinals as expressed via the closure operation.  Theorem
-       X.1.3 of {{Rosser}}, p. 276. $)
+       X.1.3 of [Rosser] p. 276. $)
     dfnnc3 $p |- Nn = Clos1 ( { 0c } , ( x e. _V |-> ( x +c 1c ) ) ) $=
       ( va vy vz c0c cv wcel c1c cplc wral wa cab cint wss cvv wi wal wceq 1cex
       vex csn cmpt cima cnnc cclos1 0cex snss wel cfv dfss2 ralcom4 wrex wfn wb
@@ -53525,7 +53513,7 @@ $)
     $d g x $.  $d g y $.  $d g z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.
     $d x z $.  $d y z $.
     $( Two classes are equinumerous iff their unit power classes are
-       equinumerous.  Theorem XI.1.33 of {{Rosser}}, p. 368. $)
+       equinumerous.  Theorem XI.1.33 of [Rosser] p. 368. $)
     enpw1 $p |- ( A ~~ B <-> ~P1 A ~~ ~P1 B ) $=
       ( vx vy vz vw cen wbr cvv wcel cpw1 wceq wex wfun cdm syl sylanbrc sylibr
       cv wal va vb vf vg wa brex pw1exb anbi12i sylib breq1 pw1eq bibi12d breq2
@@ -53682,7 +53670,7 @@ $)
     $d A a $.  $d a b $.  $d A b $.  $d a r $.  $d a s $.  $d B b $.  $d b r $.
     $d C a $.  $d C b $.  $d C r $.  $d C s $.  $d r s $.
     $( Set exponentiation preserves equinumerosity in the second argument.
-       Theorem XI.1.22 of {{Rosser}}, p. 357. $)
+       Theorem XI.1.22 of [Rosser] p. 357. $)
     enmap2 $p |- ( A ~~ B -> ( C ^m A ) ~~ ( C ^m B ) ) $=
       ( va vb vr vs cvv wcel wa cen wbr cmap co cv wi wceq oveq2 imbi12d wf1o
       brex breq1 breq1d breq2 breq2d wex bren ccnv ccom cmpt wfn cdm enmap2lem4
@@ -53817,7 +53805,7 @@ $)
     $d C a $.  $d C b $.  $d C r $.  $d C s $.  $d r s $.  $d A r $.  $d A s $.
     $d B r $.
     $( Set exponentiation preserves equinumerosity in the first argument.
-       Theorem XI.1.23 of {{Rosser}}, p. 357. $)
+       Theorem XI.1.23 of [Rosser] p. 357. $)
     enmap1 $p |- ( A ~~ B -> ( A ^m C ) ~~ ( B ^m C ) ) $=
       ( vr vs cen wbr cv wf1o wex cmap co bren ccom cmpt wfn ccnv wfun crn wceq
       eqid enmap1lem2 a1i enmap1lem4 enmap1lem5 dff1o2 syl3anbrc enmap1lem1 syl
@@ -53831,7 +53819,7 @@ $)
     $d A x y z $.
     enpw1pw.1 $e |- A e. _V $.
     $( Unit power class and power class commute within equivalence.  Theorem
-       XI.1.35 of {{Rosser}}, p. 368. $)
+       XI.1.35 of [Rosser] p. 368. $)
     enpw1pw $p |- ~P1 ~P A ~~ ~P ~P1 A $=
       ( vy vx vz cpw cpw1 cpw1fn wf1o wbr c1c wss ax-mp wceq cv wrex wa wex vex
       wcel cres cen cima wf1 pw1fnf1o f1of1 pw1ss1c f1ores mp2an wb df-ima elpw
@@ -54086,7 +54074,7 @@ $)
   ${
     $d A r $.  $d A x $.  $d r x $.
     $( No unit power class is equinumerous with the corresponding power class.
-       Theorem XI.1.6 of {{Rosser}}, p. 347. $)
+       Theorem XI.1.6 of [Rosser] p. 347. $)
     nenpw1pw $p |- -. ~P1 A ~~ ~P A $=
       ( vx vr cv csn cfv wcel wn crab eqid nenpw1pwlem2 ) BABDZLECDFGHBAIZCMJK
       $.
@@ -54096,7 +54084,7 @@ $)
   ${
     $d A a $.  $d a b $.  $d A b $.  $d B b $.
     $( If ` A ` and ` B ` are equinumerous, then so are their power sets.
-       Theorem XI.1.36 of {{Rosser}}, p. 369. $)
+       Theorem XI.1.36 of [Rosser] p. 369. $)
     enpw $p |- ( A ~~ B -> ~P A ~~ ~P B ) $=
       ( va vb cvv wcel cen wbr cpw cv wi wceq pweq imbi12d c0 cmap vn0 vvex 0ex
       co wa brex breq1 breq1d breq2 breq2d cpr enmap2 eqid enprmapc mp2an ensym
@@ -54159,26 +54147,26 @@ $)
   ctcfn $a class TcFn $.
 
   $( Define the set of all cardinal numbers.  We define them as equivalence
-     classes of sets of the same size.  Definition from {{Rosser}}, p. 372. $)
+     classes of sets of the same size.  Definition from [Rosser] p. 372. $)
   df-ncs $a |- NC = ( _V /. ~~ ) $.
 
   ${
     $d x y a b $.
-    $( Define cardinal less than or equal.  Definition from {{Rosser}},
+    $( Define cardinal less than or equal.  Definition from [Rosser]
        p. 375. $)
     df-lec $a |- <_c = { <. a , b >. | E. x e. a E. y e. b x C_ y } $.
   $}
 
-  $( Define cardinal less than.  Definition from {{Rosser}}, p. 375. $)
+  $( Define cardinal less than.  Definition from [Rosser] p. 375. $)
   df-ltc $a |- <c = ( <_c \ _I ) $.
 
   $( Define the cardinality operation.  This is the unique cardinal number
-     containing a given set.  Defintion from {{Rosser}}, p. 371. $)
+     containing a given set.  Definition from [Rosser] p. 371. $)
   df-nc $a |- Nc A = [ A ] ~~ $.
 
   ${
     $d m n a b g $.
-    $( Define cardinal multiplication.  Definition from {{Rosser}}, p. 378. $)
+    $( Define cardinal multiplication.  Definition from [Rosser] p. 378. $)
     df-muc $a |- .c = ( m e. NC , n e. NC |->
       { a | E. b e. m E. g e. n a ~~ ( b X. g ) } ) $.
   $}
@@ -54187,7 +54175,7 @@ $)
     $d A b x $.
     $( Define the type-raising operation on a cardinal number.  This is the
        unique cardinal containing the unit power classes of the elements of the
-       given cardinal.  Definition from {{Rosser}}, p.  XXX. $)
+       given cardinal.  Definition from [Rosser] p.  XXX. $)
     df-tc $a |- T_c A = ( iota b ( b e. NC /\ E. x e. A b = Nc ~P1 x ) ) $.
   $}
 
@@ -54201,7 +54189,7 @@ $)
 
   ${
     $d n m g a b $.
-    $( Define cardinal exponentiation.  Definition from {{Rosser}}, p. 381. $)
+    $( Define cardinal exponentiation.  Definition from [Rosser] p. 381. $)
     df-ce $a |- ^c = ( n e. NC , m e. NC |->
        { g | E. a E. b ( ~P1 a e. n /\ ~P1 b e. m /\
           g ~~ ( a ^m b ) ) } ) $.
@@ -54449,7 +54437,7 @@ $)
     mucnc.1 $e |- A e. _V $.
     mucnc.2 $e |- B e. _V $.
     $( Cardinal multiplication in terms of cardinality.  Theorem XI.2.27 of
-       {{Rosser}}, p. 378. $)
+       [Rosser] p. 378. $)
     mucnc $p |- ( Nc A .c Nc B ) = Nc ( A X. B ) $=
       ( vx vy vz cnc cv cxp cen wbr wrex cab cncs wcel wceq ncelncsi wa wex cec
       cmuc co ovmuc mp2an df-nc dfec2 elnc anbi12i ensym 2exbii enrflx bi2anan9
@@ -54506,7 +54494,7 @@ $)
 
   ${
     $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d x y $.
-    $( Cardinal multiplication commutes.  Theorem XI.2.28 of {{Rosser}},
+    $( Cardinal multiplication commutes.  Theorem XI.2.28 of [Rosser]
        p. 378. $)
     muccom $p |- ( ( A e. NC /\ B e. NC ) -> ( A .c B ) = ( B .c A ) ) $=
       ( vx vy cncs wcel wa cv cnc wceq wex co elncs anbi12i eeanv cxp vex mucnc
@@ -54521,7 +54509,7 @@ $)
   ${
     $d A x $.  $d A y $.  $d A z $.  $d B x $.  $d B y $.  $d B z $.  $d C x $.
     $d C y $.  $d C z $.  $d x y $.  $d x z $.  $d y z $.
-    $( Cardinal multiplication associates.  Theorem XI.2.29 of {{Rosser}},
+    $( Cardinal multiplication associates.  Theorem XI.2.29 of [Rosser]
        p. 378. $)
     mucass $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
        ( ( A .c B ) .c C ) = ( A .c ( B .c C ) ) ) $=
@@ -54617,7 +54605,7 @@ $)
 
   ${
     $d A x $.
-    $( Cardinal multiplication by zero.  Theorem XI.2.32 of {{Rosser}},
+    $( Cardinal multiplication by zero.  Theorem XI.2.32 of [Rosser]
        p. 379. $)
     muc0 $p |- ( A e. NC -> ( A .c 0c ) = 0c ) $=
       ( vx cncs wcel cv cnc wceq wex c0c cmuc co elncs oveq1 c0 cxp nceqi df0c2
@@ -54702,7 +54690,7 @@ $)
     $d f t $.  $d f x $.  $d f y $.  $d g t $.  $d g x $.  $d g y $.  $d t x $.
     $d t y $.  $d x y $.
     $( Successor is one-to-one over the cardinals.  Theorem XI.2.12 of
-       {{Rosser}}, p. 375. $)
+       [Rosser] p. 375. $)
     peano4nc $p |- ( ( A e. NC /\ B e. NC ) ->
              ( ( A +c 1c ) = ( B +c 1c ) <-> A = B ) ) $=
       ( vg vt vx vf vy cncs wcel wa c1c cplc wceq adantr cnc eqtr2 csn wrex vex
@@ -55071,7 +55059,7 @@ $)
   ${
     $d A g $.  $d A x $.  $d A y $.  $d g x $.  $d g y $.  $d M g $.  $d M x $.
     $d M y $.  $d N g $.  $d N x $.  $d N y $.  $d x y $.
-    $( Membership in cardinal exponentiation.  Theorem XI.2.38 of {{Rosser}},
+    $( Membership in cardinal exponentiation.  Theorem XI.2.38 of [Rosser]
        p. 382. $)
     elce $p |- ( ( N e. NC /\ M e. NC ) ->
         ( A e. ( N ^c M ) <-> E. x E. y ( ~P1 x e. N /\ ~P1 y e. M /\
@@ -55103,7 +55091,7 @@ $)
   ${
     $d a b $.  $d a g $.  $d b g $.  $d M a $.  $d M b $.  $d M g $.  $d m t $.
     $( A condition for cardinal exponentiation being non-empty.  Theorem
-       XI.2.42 of {{Rosser}}, p. 382. $)
+       XI.2.42 of [Rosser] p. 382. $)
     ce0nnul $p |- ( M e. NC -> ( ( M ^c 0c ) =/= (/) <->
        E. a ~P1 a e. M ) ) $=
       ( vg vb cncs wcel cv c0c cce co wex cpw1 cmap cen wbr w3a c0 wb wa wceq
@@ -55134,7 +55122,7 @@ $)
     $d g p $.  $d g q $.  $d M a $.  $d M b $.  $d M g $.  $d N a $.  $d N b $.
     $d N g $.  $d p q $.
     $( The sum of two cardinals raised to ` 0c ` is non-empty iff each addend
-       raised to ` 0c ` is non-empty.  Theorem XI.2.43 of {{Rosser}},
+       raised to ` 0c ` is non-empty.  Theorem XI.2.43 of [Rosser]
        p. 383. $)
     ce0addcnnul $p |- ( ( M e. NC /\ N e. NC ) ->
        ( ( ( M +c N ) ^c 0c ) =/= (/) <->
@@ -55177,7 +55165,7 @@ $)
   ${
     $d m t $.  $d m n $.  $d N m $.
     $( A natural raised to cardinal zero is non-empty.  Theorem XI.2.44 of
-       {{Rosser}}, p. 383. $)
+       [Rosser] p. 383. $)
     ce0nn $p |- ( N e. Nn -> ( N ^c 0c ) =/= (/) ) $=
       ( vm vn vt cv c0c cce co wne c1c c1st c2nd csn cima wcel wbr oveq1 neeq1d
       c0 wceq cplc ccnv cres cfullfun ccompl cab cvv wn vex elcompl cop wrex wa
@@ -55203,7 +55191,7 @@ $)
     cenc.1 $e |- A e. _V $.
     cenc.2 $e |- B e. _V $.
     $( Cardinal exponentiation in terms of cardinality.  Theorem XI.2.39 of
-       {{Rosser}}, p. 382. $)
+       [Rosser] p. 382. $)
     cenc $p |- ( Nc ~P1 A ^c Nc ~P1 B ) = Nc ( A ^m B ) $=
       ( vg vp vt va vb cpw1 cnc co cmap cv wcel cen wbr w3a wex wb cce wa enpw1
       elnc bitr4i enmap1 enmap2 entr syl2an syl2anb ancoms sylan 3impa exlimivv
@@ -55224,7 +55212,7 @@ $)
     $d a b $.  $d a g $.  $d b g $.  $d M a $.  $d M b $.  $d M g $.  $d N a $.
     $d N b $.  $d N g $.
     $( Cardinal exponentiation is non-empty iff the two sets raised to zero are
-       non-empty.  Theorem XI.2.47 of {{Rosser}}, p. 384. $)
+       non-empty.  Theorem XI.2.47 of [Rosser] p. 384. $)
     ce0nnulb $p |- ( ( N e. NC /\ M e. NC ) -> ( ( ( N ^c 0c ) =/= (/) /\ ( M
         ^c 0c ) =/= (/) ) <-> ( N ^c M ) =/= (/) ) ) $=
       ( va vb vg cncs wcel wa c0c cce co wne cpw1 wex ce0nnul bi2anan9 cnc wceq
@@ -55242,7 +55230,7 @@ $)
   ${
     $d a b $.  $d M a $.  $d M b $.  $d N a $.  $d N b $.
     $( Biconditional closure law for cardinal exponentiation.  Theorem XI.2.48
-       of {{Rosser}}, p. 384. $)
+       of [Rosser] p. 384. $)
     ceclb $p |- ( ( M e. NC /\ N e. NC ) ->
        ( ( ( M ^c 0c ) =/= (/) /\ ( N ^c 0c ) =/= (/) ) <-> ( M ^c N ) e. NC )
         ) $=
@@ -55258,7 +55246,7 @@ $)
 
   ${
     $( Cardinal exponentiation to zero is a cardinal iff it is non-empty.
-       Corollary 1 of theorem XI.2.38 of {{Rosser}}, p. 384. $)
+       Corollary 1 of theorem XI.2.38 of [Rosser] p. 384. $)
     ce0nulnc $p |- ( M e. NC -> ( ( M ^c 0c ) =/= (/) <-> ( M ^c 0c ) e. NC ) )
         $=
       ( vm c0c cce co c0 wne wa cncs wcel cpw1 wex nulel0c 0ex wceq pw1eq ax-mp
@@ -55272,7 +55260,7 @@ $)
     $d M a $.
     $( If cardinal exponentiation to zero is a cardinal, then the base is the
        cardinality of some unit power class.  Corollary 2 of theorem XI.2.48 of
-       {{Rosser}}, p. 384. $)
+       [Rosser] p. 384. $)
     ce0ncpw1 $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) -> E. a M = Nc ~P1 a ) $=
       ( cncs wcel c0c cce co cv cpw1 cnc wceq wex c0 wne nulnnc mtbiri necon2ai
       eleq1 ce0nnul ncseqnc exbidv bitr4d syl5ib imp ) ACDZAEFGZCDZABHIZJKZBLZU
@@ -55282,7 +55270,7 @@ $)
 
   ${
     $( Closure law for cardinal exponentiation.  Corollary 3 of theorem XI.2.48
-       of {{Rosser}}, p. 384. $)
+       of [Rosser] p. 384. $)
     cecl $p |- ( ( ( M e. NC /\ N e. NC ) /\
           ( ( M ^c 0c ) e. NC /\ ( N ^c 0c ) e. NC ) ) -> ( M ^c N ) e. NC ) $=
       ( cncs wcel wa c0c cce co c0 wne wceq nulnnc eleq1 necon2ai anim12i ceclb
@@ -55332,7 +55320,7 @@ $)
   ${
     $d M a $.
     $( The value of non-empty cardinal exponentiation.  Theorem XI.2.49 of
-       {{Rosser}}, p. 385. $)
+       [Rosser] p. 385. $)
     ce0 $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) -> ( M ^c 0c ) = 1c ) $=
       ( va cncs wcel c0c cce co wa c0 csn cnc c1c wceq cv cpw1 wex ce0ncpw1 vex
       cmap 0ex map0e ovex ncid eqeltrri cenc eleqtrri df0c2 nceqi eqtr4i oveq12
@@ -55411,7 +55399,7 @@ $)
   ${
     $d A x y $.
     $( A non-empty set is less than or equal to itself.  Theorem XI.2.14 of
-       {{Rosser}}, p. 375. $)
+       [Rosser] p. 375. $)
     lecidg $p |- ( ( A e. V /\ A =/= (/) ) -> A <_c A ) $=
       ( vx vy wcel c0 wne wa clec wbr cv wss wrex wex sseq2 rcla4ev mpan2 ancli
       ssid eximi n0 df-rex 3imtr4i adantl wb brlecg anidms adantr mpbird ) ABEZ
@@ -55421,7 +55409,7 @@ $)
   $}
 
   $( A cardinal is less than or equal to itself.  Corollary 1 of theorem
-     XI.2.14 of {{Rosser}}, p. 376. $)
+     XI.2.14 of [Rosser] p. 376. $)
   nclecid $p |- ( A e. NC -> A <_c A ) $=
     ( cncs wcel c0 wne clec wbr wceq nulnnc eleq1 mtbiri necon2ai lecidg mpdan
     ) ABCZADEAAFGOADADHODBCIADBJKLABMN $.
@@ -55430,7 +55418,7 @@ $)
   ${
     $d A x $.  $d A y $.  $d x y $.
     $( Cardinal zero is a minimal element of cardinal less than or equal.
-       Theorem XI.2.15 of {{Rosser}}, p. 376. $)
+       Theorem XI.2.15 of [Rosser] p. 376. $)
     lec0cg $p |- ( ( A e. V /\ A =/= (/) ) -> 0c <_c A ) $=
       ( vx vy wcel c0 wne wa c0c clec wbr cv wss wrex wex 0ss jctr wceq wb cvv
       eximi df-rex 3imtr4i csn df-0c rexeq ax-mp 0ex sseq1 rexbidv rexsn sylibr
@@ -55441,7 +55429,7 @@ $)
       $( [4-Mar-2015] $)
 
     $( The cardinality of ` _V ` is a maximal element of cardinal less than or
-       equal.  Theorem XI.2.16 of {{Rosser}}, p. 376. $)
+       equal.  Theorem XI.2.16 of [Rosser] p. 376. $)
     lecncvg $p |- ( ( A e. V /\ A =/= (/) ) -> A <_c Nc _V ) $=
       ( vx vy wcel c0 wne wa cvv cnc clec wbr wss wrex wex vvex ncid ssv sseq2
       cv rcla4ev mp2an jctr eximi n0 df-rex 3imtr4i adantl wb ncex brlecg mpan2
@@ -55452,7 +55440,7 @@ $)
   $}
 
   $( Cardinal zero is a minimal element of cardinal less than or equal.  Lemma
-     1 of theorem XI.2.15 of {{Rosser}}, p. 376. $)
+     1 of theorem XI.2.15 of [Rosser] p. 376. $)
   le0nc $p |- ( A e. NC -> 0c <_c A ) $=
     ( cncs wcel wne c0c clec wbr wceq nulnnc eleq1 mtbiri necon2ai lec0cg mpdan
     c0 ) ABCZAODEAFGPAOAOHPOBCIAOBJKLABMN $.
@@ -55460,7 +55448,7 @@ $)
 
   ${
     $( The cardinality of a unit power class is not equal to the cardinality of
-       the power class.  Theorem XI.2.4 of {{Rosser}}, p. 372. $)
+       the power class.  Theorem XI.2.4 of [Rosser] p. 372. $)
     ncpw1pwneg $p |- ( A e. V -> Nc ~P1 A =/= Nc ~P A ) $=
       ( wcel cpw1 cnc cpw wne cen wbr wn nenpw1pw cvv wceq wb pw1exg necon3abid
       eqncg syl mpbiri ) ABCZADZEZAFZEZGUAUCHIZJAKTUEUBUDTUALCUBUDMUENABOUAUCLQ
@@ -55471,7 +55459,7 @@ $)
   ${
     $d A x $.  $d A y $.  $d x y $.
     $( The cardinality of a unit power class is strictly less than the
-       cardinality of the power class.  Theorem XI.2.17 of {{Rosser}},
+       cardinality of the power class.  Theorem XI.2.17 of [Rosser]
        p. 376. $)
     ltcpw1pwg $p |- ( A e. V -> Nc ~P1 A <c Nc ~P A ) $=
       ( vx vy wcel cpw1 cnc cpw clec wbr wne cltc wss wrex cvv pw1exg ncidg syl
@@ -55491,7 +55479,7 @@ $)
     sbthlem1.6 $e |- C = ( ran R i^i G ) $.
     sbthlem1.7 $e |- D = ( ran R \ G ) $.
     $( Lemma for ~ sbth .  Set up similarity with a range.  Theorem XI.1.14 of
-       {{Rosser}}, p. 350. $)
+       [Rosser] p. 350. $)
     sbthlem1 $p |- ( ( ( Fun R /\ Fun `' R ) /\
        ( X C_ dom R /\ ran R C_ X ) ) -> ran R ~~ X ) $=
       ( wa wss cun cen cin c0 wfun ccnv cdm crn wbr cima cres wf1o wf1 wf df-f1
@@ -55530,7 +55518,7 @@ $)
     $d B b $.  $d R b $.
     sbthlem2.1 $e |- R e. _V $.
     $( Lemma for ~ sbth .  Eliminate hypotheses from ~ sbthlem1 .  Theorem
-       XI.1.14 of {{Rosser}}, p. 350. $)
+       XI.1.14 of [Rosser] p. 350. $)
     sbthlem2 $p |- ( ( ( Fun R /\ Fun `' R ) /\
        ( B e. V /\ B C_ dom R /\ ran R C_ B ) ) -> ran R ~~ B ) $=
       ( vb wcel cdm wss crn w3a wfun ccnv wa cen wbr wi cv cdif cin eqid imbi2d
@@ -55547,7 +55535,7 @@ $)
     $d D s $.  $d r s $.
     $( Lemma for ~ sbth .  If ` A ` is equinumerous with a subset of ` B ` and
        vice-versa, then ` A ` is equinumerous with ` B ` .  Theorem XI.1.15 of
-       {{Rosser}}, p. 353. $)
+       [Rosser] p. 353. $)
     sbthlem3 $p |- ( ( ( A ~~ C /\ C C_ B ) /\ ( B ~~ D /\ D C_ A ) ) ->
        A ~~ B ) $=
       ( vr vs cen wbr wss wf1o wex bitr4i crn cdm wceq syl ad2antlr wfun ccnv
@@ -55576,7 +55564,7 @@ $)
     $( The Schroder-Bernstein Theorem.  This theorem gives the antisymmetry law
        for cardinal less than or equal.  Translated out, it means that, if
        ` A ` is no larger than ` B ` and ` B ` is no larger than ` A ` , then
-       ` Nc A = Nc B ` .  Theorem XI.2.20 of {{Rosser}}, p. 376. $)
+       ` Nc A = Nc B ` .  Theorem XI.2.20 of [Rosser] p. 376. $)
     sbth $p |- ( ( A e. NC /\ B e. NC ) ->
           ( ( A <_c B /\ B <_c A ) -> A = B ) ) $=
       ( vg vb vd va cncs wcel wa clec wbr cv wss wrex wceq brlecg reeanv cnc wi
@@ -55596,7 +55584,7 @@ $)
   $}
 
   $( Cardinal less than is equivalent to one-way cardinal less than or equal.
-     Theorem XI.2.21 of {{Rosser}}, p. 377. $)
+     Theorem XI.2.21 of [Rosser] p. 377. $)
   ltlenlec $p |- ( ( M e. NC /\ N e. NC ) ->
     ( M <c N <-> ( M <_c N /\ -. N <_c M ) ) ) $=
     ( cltc wbr clec wa cncs wcel wn brltc wceq nclecid breq1 syl5ibcom ad2antrr
@@ -55609,7 +55597,7 @@ $)
     $d M x $.  $d M y $.  $d M z $.  $d N x $.  $d N y $.  $d N z $.  $d x y $.
     $d x z $.  $d y z $.
     $( For non-empty sets, cardinal sum always increases cardinal less than or
-       equal.  Theorem XI.2.19 of {{Rosser}}, p. 376. $)
+       equal.  Theorem XI.2.19 of [Rosser] p. 376. $)
     addlec $p |- ( ( M e. V /\ N e. W /\ ( M +c N ) =/= (/) ) ->
        M <_c ( M +c N ) ) $=
       ( vx vz vy wcel cplc c0 wne w3a clec cv wss wrex wex wa wceq cvv ssun1 n0
@@ -55624,7 +55612,7 @@ $)
 
   ${
     $( For cardinals, cardinal sum always increases cardinal less than or
-       equal.  Corollary of theorem XI.2.19 of {{Rosser}}, p. 376. $)
+       equal.  Corollary of theorem XI.2.19 of [Rosser] p. 376. $)
     addlecncs $p |- ( ( M e. NC /\ N e. NC ) -> M <_c ( M +c N ) ) $=
       ( cncs wcel cplc c0 wne clec wbr wa ncaddccl nulnnc eleq1 mtbiri necon2ai
       wceq syl addlec mpd3an3 ) ACDZBCDZABEZFGZAUBHITUAJUBCDZUCABKUDUBFUBFPUDFC
@@ -55636,7 +55624,7 @@ $)
     $d a b $.  $d a p $.  $d b p $.  $d M a $.  $d M b $.  $d M p $.  $d N a $.
     $d N b $.  $d N p $.
     $( Cardinal less than or equal in terms of cardinal addition.  Theorem
-       XI.2.22 of {{Rosser}}, p. 377. $)
+       XI.2.22 of [Rosser] p. 377. $)
     dflec2 $p |- ( ( M e. NC /\ N e. NC ) ->
        ( M <_c N <-> E. p e. NC N = ( M +c p ) ) ) $=
       ( va vb cncs wcel wa clec wbr cv cplc wceq wrex wss cnc ncseqnc vex cun
@@ -55694,7 +55682,7 @@ $)
 
   ${
     $d M x $.  $d N x $.  $d P x $.
-    $( Addition law for cardinal less than.  Theorem XI.2.23 of {{Rosser}},
+    $( Addition law for cardinal less than.  Theorem XI.2.23 of [Rosser]
        p. 377. $)
     leaddc1 $p |- ( ( ( M e. NC /\ N e. NC /\ P e. NC ) /\ M <_c N ) ->
                ( M +c P ) <_c ( N +c P ) ) $=
@@ -55706,7 +55694,7 @@ $)
       $( [12-Mar-2015] $)
   $}
 
-  $( Addition law for cardinal less than.  Theorem XI.2.23 of {{Rosser}},
+  $( Addition law for cardinal less than.  Theorem XI.2.23 of [Rosser]
      p. 377. $)
   leaddc2 $p |- ( ( ( M e. NC /\ N e. NC /\ P e. NC ) /\ N <_c P ) ->
                ( M +c N ) <_c ( M +c P ) ) $=
@@ -55718,7 +55706,7 @@ $)
   ${
     $d a p $.  $d a q $.  $d a x $.  $d N a $.  $d p q $.  $d p x $.  $d q x $.
     $( Any cardinal is either zero or no greater than one.  Theorem XI.2.24 of
-       {{Rosser}}, p. 377. $)
+       [Rosser] p. 377. $)
     nc0le1 $p |- ( N e. NC -> ( N = 0c \/ 1c <_c N ) ) $=
       ( va vx vq vp wcel cv cnc wceq wex c0c c1c clec wbr wo wss wrex vex sylbi
       c0 cncs elncs nceq df0c2 syl6eqr orcd wne wel csn snss snel1c sseq2 sseq1
@@ -55734,7 +55722,7 @@ $)
   ${
     $d N m $.
     $( Any cardinal is either zero or the successor of a cardinal.  Corollary
-       of theorem XI.2.24 of {{Rosser}}, p. 377. $)
+       of theorem XI.2.24 of [Rosser] p. 377. $)
     nc0suc $p |- ( N e. NC -> ( N = 0c \/ E. m e. NC N = ( m +c 1c ) ) ) $=
       ( cncs wcel c0c wceq c1c clec wbr wo cplc wrex nc0le1 1cnc dflec2 addccom
       cv wb wa eqeq2i rexbii syl6bb mpan orbi2d mpbid ) BCDZBEFZGBHIZJUGBAQZGKZ
@@ -55796,7 +55784,7 @@ $)
   ${
     $d M x $.
     $( Ordering law for cardinal exponentiation to two.  Theorem XI.2.71 of
-       {{Rosser}}, p. 390. $)
+       [Rosser] p. 390. $)
     ce2lt $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) -> M <c ( 2c ^c M ) ) $=
       ( vx cncs wcel c0c cce co wa cv cpw1 cnc wceq wex c2c wbr ce0ncpw1 cpw id
       cltc cvv vex ltcpw1pwg ax-mp syl6eqbr ce2 breqtrrd exlimiv syl ) ACDAEFGC
@@ -56260,7 +56248,7 @@ $)
     $d m n $.  $d M n $.  $d m p $.  $d m q $.  $d m x $.  $d N n $.  $d n p $.
     $d n q $.  $d n x $.  $d N x $.  $d p q $.
     $( A cardinal that is less than or equal to a natural is a natural.
-       Theorem XI.3.3 of {{Rosser}}, p. 391. $)
+       Theorem XI.3.3 of [Rosser] p. 391. $)
     nclenn $p |- ( ( M e. NC /\ N e. Nn /\ M <_c N ) -> M e. Nn ) $=
       ( vn vx vp vq cncs wcel cnnc clec wbr wi cv wral c0c c1c cplc wceq breq2
       wa vm nclennlem1 imbi1d ralbidv weq le0nc 0cnc sbth mpan2 peano1 syl6eqel
@@ -56435,7 +56423,7 @@ $)
   ${
     $d m x y $.
     $( Define the special class generator for the disproof of the axiom of
-       choice.  Definition 6.1 of {{Specker}}. $)
+       choice.  Definition 6.1 of [Specker] p. 973. $)
     df-spac $a |- Sp[ac] = ( m e. NC |->
         Clos1 ( { m } ,
         { <. x , y >. | ( x e. NC /\ y e. NC /\ y = ( 2c ^c x ) ) } ) ) $.
@@ -56515,7 +56503,7 @@ $)
   ${
     $d A n m a $.
     $( Divisibility by three rule for finite cardinals.  Part of Theorem 3.4 of
-       {{Specker}}. $)
+       [Specker] p. 973. $)
     nncdiv3 $p |- ( A e. Nn ->
       E. n e. Nn ( A = ( ( n +c n ) +c n ) \/
                    A = ( ( ( n +c n ) +c n ) +c 1c ) \/
@@ -56550,7 +56538,7 @@ $)
     $d A a $.  $d a m $.  $d a n $.  $d A n $.  $d a p $.  $d B n $.  $d m n $.
     $d m p $.  $d n p $.  $d n q $.  $d p q $.  $d p x $.  $d q x $.  $d m q $.
     $( Three times a natural is not one more than three times a natural.
-       Another part of Theorem 3.4 of {{Specker}}. $)
+       Another part of Theorem 3.4 of [Specker] p. 973. $)
     nnc3n3p1 $p |- ( ( A e. Nn /\ B e. Nn ) ->
         -. ( ( A +c A ) +c A ) = ( ( ( B +c B ) +c B ) +c 1c ) ) $=
       ( vn vp vq cnnc wcel cplc c1c wceq wn c0c caddcfn c1st c2nd cop wa anidms
@@ -56617,7 +56605,7 @@ $)
 
   ${
     $( Three times a natural is not two more than three times a natural.
-       Another part of Theorem 3.4 of {{Specker}}. $)
+       Another part of Theorem 3.4 of [Specker] p. 973. $)
     nnc3n3p2 $p |- ( ( A e. Nn /\ B e. Nn ) ->
         -. ( ( A +c A ) +c A ) = ( ( ( B +c B ) +c B ) +c 2c ) ) $=
       ( cnnc wcel wa cplc c1c c2c wceq peano2 nnc3n3p1 sylan ancoms eqcom addc4
@@ -56632,7 +56620,7 @@ $)
 
   ${
     $( One more than three times a natural is not two more than three times a
-       natural.  Final part of Theorem 3.4 of {{Specker}}. $)
+       natural.  Final part of Theorem 3.4 of [Specker] p. 973. $)
     nnc3p1n3p2 $p |- ( ( A e. Nn /\ B e. Nn ) ->
         -. ( ( ( A +c A ) +c A ) +c 1c ) =
            ( ( ( B +c B ) +c B ) +c 2c ) ) $=
@@ -56840,7 +56828,7 @@ $)
   ${
     $d M p $.  $d M x $.  $d M y $.  $d p x $.  $d p y $.  $d x y $.
     $( Lemma for ~ nchoice .  Compute the value of ` Sp[ac] ` when the argument
-       is not exponentiable.  Theorem 6.2 of {{Specker}}. $)
+       is not exponentiable.  Theorem 6.2 of [Specker] p. 973. $)
     nchoicelem3 $p |- ( ( M e. NC /\ -. ( M ^c 0c ) e. NC ) ->
         ( Sp[ac] ` M ) = { M } ) $=
       ( vx vy vp cncs wcel c0c cce co wn wa cspac cfv cv c2c wceq w3a cvv eleq1
@@ -56859,7 +56847,7 @@ $)
   ${
     $d M n $.  $d M p $.  $d n p $.  $d N p $.
     $( Lemma for ~ nchoice .  The initial value of ` Sp[ac] ` is a minimum
-       value.  Theorem 6.4 of {{Specker}}. $)
+       value.  Theorem 6.4 of [Specker] p. 973. $)
     nchoicelem4 $p |- ( ( M e. NC /\ N e. ( Sp[ac] ` M ) ) ->
        M <_c N ) $=
       ( vp vn cv clec wbr c2c cce co csn cima cab cvv imasn breq2 cncs wa sylan
@@ -56875,7 +56863,7 @@ $)
 
   ${
     $( Lemma for ~ nchoice .  A cardinal is not a member of the special set of
-       itself raised to two.  Theorem 6.5 of {{Specker}}. $)
+       itself raised to two.  Theorem 6.5 of [Specker] p. 973. $)
     nchoicelem5 $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) ->
        -. M e. ( Sp[ac] ` ( 2c ^c M ) ) ) $=
       ( cncs wcel c0c cce co wa c2c cspac cfv clec wbr wn cltc ce2lt wb jctl c0
@@ -56889,7 +56877,7 @@ $)
   ${
     $d M x $.
     $( Lemma for ~ nchoice .  Split the special set generator into base and
-       inductive values.  Theorem 6.6 of {{Specker}}. $)
+       inductive values.  Theorem 6.6 of [Specker] p. 973. $)
     nchoicelem6 $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) ->
        ( Sp[ac] ` M ) = ( { M } u. ( Sp[ac] ` ( 2c ^c M ) ) ) ) $=
       ( vx cncs wcel c0c cce co wa cspac cfv c2c cvv wi wral wss fvex adantr wo
@@ -56910,7 +56898,7 @@ $)
   $}
 
   $( Lemma for ~ nchoice .  Calculate the cardinality of a special set
-     generator.  Theorem 6.7 of {{Specker}}. $)
+     generator.  Theorem 6.7 of [Specker] p. 974. $)
   nchoicelem7 $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) ->
      Nc ( Sp[ac] ` M ) = ( Nc ( Sp[ac] ` ( 2c ^c M ) ) +c 1c ) ) $=
     ( cncs wcel c0c cce co cspac cfv cnc csn c2c cun c1c cplc nchoicelem6 nceqd
@@ -56928,7 +56916,7 @@ $)
     $d g p $.  $d g q $.  $d g x $.  $d g y $.  $d M y $.  $d p y $.  $d q y $.
     $d a x $.  $d a y $.
     $( Lemma for ~ nchoice .  An anti-closure condition for cardinal
-       exponentiation to zero.  Theorem 4.5 of {{Specker}}. $)
+       exponentiation to zero.  Theorem 4.5 of [Specker] p. 973. $)
     nchoicelem8 $p |- ( ( <_c We NC /\ M e. NC ) ->
            ( -. ( M ^c 0c ) e. NC <-> Nc 1c <c M ) ) $=
       ( clec cncs cwe wbr wcel wa wn c1c cstrict cfound cin breqi brin cpartial
@@ -56949,7 +56937,7 @@ $)
   ${
     $( Lemma for ~ nchoice .  Calculate the cardinality of the special set
        generator when near the end of raisability.  Theorem 6.8 of
-       {{Specker}}. $)
+       [Specker] p. 974. $)
     nchoicelem9 $p |- ( ( <_c We NC /\ M e. NC /\ -. ( M ^c 0c ) e. NC ) ->
        ( Nc ( Sp[ac] ` T_c M ) = 2c \/ Nc ( Sp[ac] ` T_c M ) = 3c ) ) $=
       ( clec cncs wbr wcel c0c cce co wn cspac cfv cnc c2c wceq c3c wo c1c cplc
@@ -57063,7 +57051,7 @@ $)
     $d m n $.  $d n t $.  $d t x $.
     $( Lemma for ~ nchoice .  If the T-raising of a cardinal yields a finite
        special set, then so does the initial set.  Theorem 7.1 of
-       {{Specker}}. $)
+       [Specker] p. 974. $)
     nchoicelem12 $p |- ( ( M e. NC /\ ( Sp[ac] ` T_c M ) e. Fin ) ->
         ( Sp[ac] ` M ) e. Fin ) $=
       ( vx vm vt vk cspac cfv wcel cncs cv cnc wceq cnnc wi c0c nceqd cce co wa
@@ -57244,7 +57232,7 @@ m ) e. Fin /\ ( Nc ( Sp[ac] ` T_c m ) = ( T_c Nc ( Sp[ac] ` m ) +c 1c ) \/ Nc (
     $d k t $.  $d k x $.  $d M t $.  $d M x $.  $d t x $.
     $( Lemma for ~ nchoice .  If the special set of a cardinal is finite, then
        so is the special set of its T-raising, and there is a calculable
-       relationship between their sizes.  Theorem 7.2 of {{Specker}}. $)
+       relationship between their sizes.  Theorem 7.2 of [Specker] p. 974. $)
     nchoicelem17 $p |- ( ( <_c We NC /\ M e. NC /\ ( Sp[ac] ` M ) e. Fin ) ->
        ( ( Sp[ac] ` T_c M ) e. Fin /\
          ( Nc ( Sp[ac] ` T_c M ) = ( T_c Nc ( Sp[ac] ` M ) +c 1c ) \/
@@ -57353,7 +57341,7 @@ m ) e. Fin /\ ( Nc ( Sp[ac] ` T_c m ) = ( T_c Nc ( Sp[ac] ` m ) +c 1c ) \/ Nc (
     $d m n $.  $d m x $.  $d n x $.  $d m p $.  $d n p $.
     $( Lemma for ~ nchoice .  Assuming well-ordering, there is a cardinal with
        a finite special set that is its own T-raising.  Theorem 7.3 of
-       {{Specker}}. $)
+       [Specker] p. 974. $)
     nchoicelem19 $p |- ( <_c We NC ->
         E. m e. NC ( ( Sp[ac] ` m ) e. Fin /\ T_c m = m ) ) $=
       ( vn vx vp clec cncs wbr cv cspac cfv cfin wcel wi wa wceq eleq1d cvv cnc
@@ -57391,7 +57379,7 @@ m ) e. Fin /\ ( Nc ( Sp[ac] ` T_c m ) = ( T_c Nc ( Sp[ac] ` m ) +c 1c ) \/ Nc (
     $d m n $.
     $( Cardinal less than or equal does not well-order the cardinals.  This is
        equivalent to saying that the axiom of choice from ZFC is false in NF.
-       Theorem 7.5 of {{Specker}}. $)
+       Theorem 7.5 of [Specker] p. 974. $)
     nchoice $p |- -. <_c We NC $=
       ( vn vm cncs cv ctc c1c cplc wceq c2c wo cnnc wrex wcel wn cspac cfv cfin
       wa cnc eqeq1d cwe wbr nchoicelem1 nchoicelem2 ioran sylanbrc nchoicelem19
@@ -57993,16 +57981,9 @@ htmldef "(+)" as
   althtmldef "(+)" as " &#x2295; ";
   latexdef "(+)" as "\oplus";
 
-
-/* _0c.gif is missing  NM 16-Apr-2015
-htmldef "0c" as "<IMG SRC='_0c.gif' WIDTH=13 HEIGHT=19 TITLE='1o' ALIGN=TOP>";
-*/
 htmldef "0c" as '0<SUB><I>c</I></SUB>';
   althtmldef "0c" as '0<SUB><I>c</I></SUB>';
   latexdef "0c" as "0_c";
-/* _1c.gif is missing  NM 16-Apr-2015
-htmldef "1c" as "<IMG SRC='_1c.gif' WIDTH=13 HEIGHT=19 TITLE='1o' ALIGN=TOP>";
-*/
 htmldef "1c" as '1<SUB><I>c</I></SUB>';
   althtmldef "1c" as '1<SUB><I>c</I></SUB>';
   latexdef "1c" as "1_c";
@@ -58086,10 +58067,6 @@ htmldef "SSet" as
     "<FONT FACE=sans-serif> SSet </FONT>";
   althtmldef "SSet" as '<FONT FACE=sans-serif> SSet </FONT>';
   latexdef "SSet" as "{\rm SSet}";
-/* bigcup1.gif is missing  NM 16-Apr-2015
-htmldef "U.1" as
-    "<IMG SRC='bigcup1.gif' WIDTH=13 HEIGHT=19 TITLE='U.1' ALIGN=TOP>";
-*/
 htmldef "U.1" as '&xcup;<SUB>1</SUB>';
   althtmldef "U.1" as '&xcup;<SUB>1</SUB>';
   latexdef "U.1" as "\bigcup_1";
@@ -58299,10 +58276,6 @@ htmldef "Nc" as
     " <FONT FACE=sans-serif>Nc</FONT> ";
   althtmldef "Nc" as ' <FONT FACE=sans-serif>Nc</FONT> ';
   latexdef "Nc" as "{\rm Nc}";
-/* _cdc.gif is missing  NM 16-Apr-2015
-htmldef ".c" as
-    " <IMG SRC='_cdc.gif' WIDTH=10 HEIGHT=19 TITLE='.c' ALIGN=TOP> ";
-*/
 htmldef ".c" as ' &middot;<SUB><I>c</I></SUB> ';
   althtmldef ".c" as ' &middot;<SUB><I>c</I></SUB> ';
   latexdef ".c" as "\cdot_c";
@@ -58310,22 +58283,12 @@ htmldef "T_c" as
     " <FONT FACE=sans-serif>T</FONT><SUB>c</SUB> ";
   althtmldef "T_c" as ' <FONT FACE=sans-serif>T</FONT><SUB>c</SUB> ';
   latexdef "T_c" as "{\rm T}_c ";
-/* _2c.gif is missing  NM 16-Apr-2015
-htmldef "2c" as "<IMG SRC='_2c.gif' WIDTH=13 HEIGHT=19 TITLE='2c' ALIGN=TOP>";
-*/
 htmldef "2c" as '2<SUB><I>c</I></SUB>';
   althtmldef "2c" as '2<SUB><I>c</I></SUB>';
   latexdef "2c" as "2_c";
-/* _3c.gif is missing  NM 16-Apr-2015
-htmldef "3c" as "<IMG SRC='_3c.gif' WIDTH=13 HEIGHT=19 TITLE='3c' ALIGN=TOP>";
-*/
 htmldef "3c" as '3<SUB><I>c</I></SUB>';
   althtmldef "3c" as '3<SUB><I>c</I></SUB>';
   latexdef "3c" as "3_c";
-/* _hatc.gif is missing  NM 16-Apr-2015
-htmldef "^c" as
-    " <IMG SRC='_hatc.gif' WIDTH=15 HEIGHT=19 TITLE='^c' ALIGN=TOP> ";
-*/
 htmldef "^c" as ' &uarr;<SUB><I>c</I></SUB> ';
   althtmldef "^c" as ' &uarr;<SUB><I>c</I></SUB> ';
   latexdef "^c" as "\uparrow_c";
@@ -58335,7 +58298,6 @@ htmldef "Sp[ac]" as
   althtmldef "Sp[ac]" as ' <FONT FACE=sans-serif>Sp</FONT><SUB>ac</SUB> ';
   latexdef "Sp[ac]" as "{\rm Sp}_{\rm ac}";
 
-/* The following missing ones were added by NM 16-Apr-2015 */
 htmldef "TcFn" as "TcFn";
   althtmldef "TcFn" as "TcFn";
   latexdef "TcFn" as "{\rm TcFn}";
