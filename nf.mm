@@ -11154,19 +11154,19 @@ $)
   $( Define incompatibility ('not-and' or 'nand').  This is also called the
      Sheffer stroke, represented by a vertical bar, but we use a different
      symbol to avoid ambiguity with other uses of the vertical bar. $)
-  df-nand $a |- ( ( ph -/\ ps ) <-> -. ( ph /\ ps ) ) $.
+  df-nan $a |- ( ( ph -/\ ps ) <-> -. ( ph /\ ps ) ) $.
 
   $( Nand commutes. 
      (Contributed by ?who?, 10-Jan-2015.) $)
   nandcom $p |- ( ( ph -/\ ps ) <-> ( ps -/\ ph ) ) $=
-    ( wa wn wnan ancom notbii df-nand 3bitr4i ) ABCZDBACZDABEBAEJKABFGABHBAHI
+    ( wa wn wnan ancom notbii df-nan 3bitr4i ) ABCZDBACZDABEBAEJKABFGABHBAHI
     $.
     $( [10-Jan-2015] $)
 
   $( Introduce a right anti-conjunct to both sides of a logical equivalence. 
      (Contributed by ?who?, 10-Jan-2015.) $)
   nandbi1 $p |- ( ( ph <-> ps ) -> ( ( ph -/\ ch ) <-> ( ps -/\ ch ) ) ) $=
-    ( wb wa wn wnan anbi1 notbid df-nand 3bitr4g ) ABDZACEZFBCEZFACGBCGLMNABCHI
+    ( wb wa wn wnan anbi1 notbid df-nan 3bitr4g ) ABDZACEZFBCEZFACGBCGLMNABCHI
     ACJBCJK $.
     $( [10-Jan-2015] $)
 
@@ -11183,7 +11183,7 @@ $)
        equivalence. 
        (Contributed by ?who?, 10-Jan-2015.) $)
     nandbi2i $p |- ( ( ch -/\ ph ) <-> ( ch -/\ ps ) ) $=
-      ( wa wn wnan wb anbi2 ax-mp notbii df-nand 3bitr4i ) CAEZFCBEZFCAGCBGNOAB
+      ( wa wn wnan wb anbi2 ax-mp notbii df-nan 3bitr4i ) CAEZFCBEZFCAGCBGNOAB
       HNOHDABCIJKCALCBLM $.
       $( [10-Jan-2015] $)
 
@@ -11191,7 +11191,7 @@ $)
        equivalence. 
        (Contributed by ?who?, 10-Jan-2015.) $)
     nandbi1i $p |- ( ( ph -/\ ch ) <-> ( ps -/\ ch ) ) $=
-      ( wa wn wnan wb anbi1 ax-mp notbii df-nand 3bitr4i ) ACEZFBCEZFACGBCGNOAB
+      ( wa wn wnan wb anbi1 ax-mp notbii df-nan 3bitr4i ) ACEZFBCEZFACGBCGNOAB
       HNOHDABCIJKACLBCLM $.
       $( [10-Jan-2015] $)
   $}
@@ -11212,7 +11212,7 @@ $)
        equivalence. 
        (Contributed by ?who?, 10-Jan-2015.) $)
     nandbi2d $p |- ( ph -> ( ( th -/\ ps ) <-> ( th -/\ ch ) ) ) $=
-      ( wa wn wnan wb anbi2 syl notbid df-nand 3bitr4g ) ADBFZGDCFZGDBHDCHAOPAB
+      ( wa wn wnan wb anbi2 syl notbid df-nan 3bitr4g ) ADBFZGDCFZGDBHDCHAOPAB
       CIOPIEBCDJKLDBMDCMN $.
       $( [10-Jan-2015] $)
 
@@ -11220,7 +11220,7 @@ $)
        equivalence. 
        (Contributed by ?who?, 10-Jan-2015.) $)
     nandbi1d $p |- ( ph -> ( ( ps -/\ th ) <-> ( ch -/\ th ) ) ) $=
-      ( wa wn wnan wb anbi1 syl notbid df-nand 3bitr4g ) ABDFZGCDFZGBDHCDHAOPAB
+      ( wa wn wnan wb anbi1 syl notbid df-nan 3bitr4g ) ABDFZGCDFZGBDHCDHAOPAB
       CIOPIEBCDJKLBDMCDMN $.
       $( [10-Jan-2015] $)
 
@@ -11243,32 +11243,32 @@ $)
   $( Lemma for handling nested 'nand's. 
      (Contributed by ?who?, 19-Nov-2007.) 
      (Revised by ?who?, 11-Dec-2008.) $)
-  nic-justlem $p |- ( ( ph -/\ ( ch -/\ ps ) ) <-> ( ph -> ( ch /\ ps ) ) ) $=
-    ( wnan wa wn wi df-nand anbi2i xchbinx iman bitr4i ) ACBDZDZACBEZFZEZFAOGNA
+  nannan $p |- ( ( ph -/\ ( ch -/\ ps ) ) <-> ( ph -> ( ch /\ ps ) ) ) $=
+    ( wnan wa wn wi df-nan anbi2i xchbinx iman bitr4i ) ACBDZDZACBEZFZEZFAOGNA
     MEQAMHMPACBHIJAOKL $.
     $( [11-Dec-2008] $) $( [19-Nov-2007] $)
 
   $( Show equivalence between implication and the Nicod version.  To derive
-     ~ nic-dfim , apply ~ nic-justbi . 
+     ~ nic-dfim , apply ~ nanbi . 
      (Contributed by ?who?, 19-Nov-2007.) 
      (Revised by ?who?, 17-Dec-2008.) $)
-  nic-justim $p |- ( ( ph -> ps ) <-> ( ph -/\ ( ps -/\ ps ) ) ) $=
-    ( wnan wa wi nic-justlem anidmdbi bitr2i ) ABBCCABBDEABEABBFABGH $.
+  nanim $p |- ( ( ph -> ps ) <-> ( ph -/\ ( ps -/\ ps ) ) ) $=
+    ( wnan wa wi nannan anidmdbi bitr2i ) ABBCCABBDEABEABBFABGH $.
     $( [17-Dec-2008] $) $( [19-Nov-2007] $)
 
   $( Show equivalence between negation and the Nicod version.  To derive
-     ~ nic-dfneg , apply ~ nic-justbi . 
+     ~ nic-dfneg , apply ~ nanbi . 
      (Contributed by ?who?, 19-Nov-2007.) 
      (Revised by ?who?, 16-Dec-2008.) $)
-  nic-justneg $p |- ( -. ps <-> ( ps -/\ ps ) ) $=
-    ( wnan wn wa df-nand anidm xchbinx bicomi ) AABZACIAADAAAEAFGH $.
+  nanneg $p |- ( -. ps <-> ( ps -/\ ps ) ) $=
+    ( wnan wn wa df-nan anidm xchbinx bicomi ) AABZACIAADAAAEAFGH $.
     $( [16-Dec-2008] $) $( [19-Nov-2007] $)
 
   $( Show equivalence between the bidirectional and the Nicod version.
      (Contributed by Jeff Hoffman, 19-Nov-2007.) $)
-  nic-justbi $p |- ( ( ph <-> ps ) <->
+  nanbi $p |- ( ( ph <-> ps ) <->
           ( ( ph -/\ ps ) -/\ ( ( ph -/\ ph ) -/\ ( ps -/\ ps ) ) ) ) $=
-    ( wa wn wo wnan df-nand nic-justneg anbi12i xchbinxr xchbinx dfbi3 3bitr4ri
+    ( wa wn wo wnan df-nan nanneg anbi12i xchbinxr xchbinx dfbi3 3bitr4ri
     wb pm4.57 ) ABCZDZADZBDZCZDZCZDPTEABFZAAFZBBFZFZFZABNPTOUGUCUFCUBUCUFGUCQUF
     UAABGUFUDUECTUDUEGRUDSUEAHBHIJIKABLM $.
     $( [11-Dec-2008] $) $( [19-Nov-2007] $)
@@ -11288,7 +11288,7 @@ $)
                    ( ( ( ph -/\ ( ps -/\ ps ) ) -/\ ( ph -/\ ( ps -/\ ps ) ) )
                           -/\
                      ( ( ph -> ps ) -/\ ( ph -> ps ) ) ) ) $=
-    ( wnan wi wb nic-justim bicomi nic-justbi mpbi ) ABBCCZABDZEJKCJJCKKCCCKJAB
+    ( wnan wi wb nanim bicomi nanbi mpbi ) ABBCCZABDZEJKCJJCKKCCCKJAB
     FGJKHI $.
     $( [11-Dec-2008] $)
 
@@ -11300,7 +11300,7 @@ $)
   nic-dfneg $p |- ( ( ( ph -/\ ph ) -/\ -. ph ) -/\
                     ( ( ( ph -/\ ph ) -/\ ( ph -/\ ph ) ) -/\
                       ( -. ph -/\ -. ph ) ) ) $=
-    ( wnan wn wb nic-justneg bicomi nic-justbi mpbi ) AABZACZDIJBIIBJJBBBJIAEFI
+    ( wnan wn wb nanneg bicomi nanbi mpbi ) AABZACZDIJBIIBJJBBBJIAEFI
     JGH $.
     $( [11-Dec-2008] $)
 
@@ -11316,13 +11316,13 @@ $)
        to an axiom ($a statement).  (Contributed by Jeff Hoffman,
        19-Nov-2007.) $)
     nic-mp $p |- ps $=
-      ( wnan wa wi nic-justlem mpbi simprd ax-mp ) ABDACBACBFFACBGHEABCIJKL $.
+      ( wnan wa wi nannan mpbi simprd ax-mp ) ABDACBACBFFACBGHEABCIJKL $.
       $( [11-Dec-2008] $) $( [19-Nov-2007] $)
 
     $( A direct proof of ~ nic-mp . 
        (Contributed by ?who?, 30-Dec-2008.) $)
     nic-mpALT $p |- ps $=
-      ( wa wi wn wnan df-nand anbi2i xchbinx mpbi iman mpbir simprd ax-mp ) ABD
+      ( wa wi wn wnan df-nan anbi2i xchbinx mpbi iman mpbir simprd ax-mp ) ABD
       ACBACBFZGARHZFZHZACBIZIZUAEUCAUBFTAUBJUBSACBJKLMARNOPQ $.
       $( [30-Dec-2008] $)
   $}
@@ -11339,8 +11339,8 @@ $)
                    ( ( ta -/\ ( ta -/\ ta ) ) -/\
                      ( ( th -/\ ch ) -/\
                        ( ( ph -/\ th ) -/\ ( ph -/\ th ) ) ) ) ) $=
-    ( wnan wa wi nic-justlem biimpi simpl imim2i wn imnan df-nand bitr4i imim2d
-    con3 con2b mpbir 3bitr4ri syl6ibr syl5bir nic-justim sylib pm4.24 jctil
+    ( wnan wa wi nannan biimpi simpl imim2i wn imnan df-nan bitr4i imim2d
+    con3 con2b mpbir 3bitr4ri syl6ibr syl5bir nanim sylib pm4.24 jctil
     3syl ) ACBFFZEEEFFZDCFZADFZULFFZFFUIUJUMGHUIUMUJUIACBGZHZACHZUMUIUOABCIJUNC
     ACBKLUPUKULHUMUKDCMZHZUPULURDCGMUKDCNDCOPUPURDAMZHZULUPUQUSDACRQADMHADGMUTU
     LADNDASADOUAUBUCUKULUDUEUHUJEEEGZHEVAEUFJEEEITUGUIUMUJIT $.
@@ -11350,7 +11350,7 @@ $)
      (Contributed by ?who?, 11-Dec-2008.) $)
   nic-axALT $p |- ( ( ph -/\ ( ch -/\ ps ) ) -/\ ( ( ta -/\ ( ta -/\ ta ) )
           -/\ ( ( th -/\ ch ) -/\ ( ( ph -/\ th ) -/\ ( ph -/\ th ) ) ) ) ) $=
-    ( wnan wa wn anidm df-nand anbi2i notbii iman 3bitr4i imnan xchbinx anbi12i
+    ( wnan wa wn anidm df-nan anbi2i notbii iman 3bitr4i imnan xchbinx anbi12i
     wi bitr4i mpbir simpl imim2i con3 imim2d biimpri jctil con2b bitr3i 3bitri
     syl ) ACBFZFZEEEFZFZDCFZADFZUPFZFZFZFULUSGZHZVAACBGZRZEEEGZRZDCHZRZDAHZRZRZ
     GZRZVCVJVEVCACRZVJVBCACBUAUBVMVFVHDACUCUDUJVDEEIUEUFVAVCVKHZGZHVLUTVOULVCUS
@@ -11594,7 +11594,7 @@ $)
 
   $( ` F. ` is not provable.  (Contributed by Anthony Hart, 22-Oct-2010.)  (The
      proof was shortened by Mel L. O'Cat, 11-Mar-2012.) $)
-  notfal $p |- -. F. $=
+  fal $p |- -. F. $=
     ( wfal wtru wn tru notnoti df-fal mtbir ) ABCBDEFG $.
     $( [11-Mar-2012] $) $( [22-Oct-2010] $)
   ${
@@ -12624,7 +12624,7 @@ $)
      The original version of this axiom was ~ ax-10o ("o" for "old") and was
      replaced with this shorter ~ ax-10 in May 2008.  The old axiom is proved
      from this one as theorem ~ ax10o .  Conversely, this axiom is proved from
-     ~ ax-10o as theorem ~ ax10 . $)
+     ~ ax-10o as theorem ~ ax10from10o . $)
   ax-10 $a |- ( A. x x = y -> A. y y = x ) $.
 
   $( Axiom of Variable Substitution.  One of the 5 equality axioms of predicate
@@ -12787,7 +12787,7 @@ $)
   ${
     $d x w $.  $d w z $.
     a9wa9lem1.1 $e |- -. A. w -. w = x $.
-    $( Lemma for ~ a9wa9 .  Similar to ~ equcomi , without using ~ ax-9 or
+    $( Lemma for ~ ax9vax9 .  Similar to ~ equcomi , without using ~ ax-9 or
        ~ ax-4 . 
        (Contributed by ?who?, 12-Nov-2013.) $)
     a9wa9lem1 $p |- ( x = y -> y = x ) $=
@@ -12796,7 +12796,7 @@ $)
       $( [12-Nov-2013] $)
 
     a9wa9lem2.2 $e |- -. A. w -. w = z $.
-    $( Lemma for ~ a9wa9 .  Similar to ~ equequ2 , without using ~ ax-9 or
+    $( Lemma for ~ ax9vax9 .  Similar to ~ equequ2 , without using ~ ax-9 or
        ~ ax-4 . 
        (Contributed by ?who?, 12-Nov-2013.) 
        (Revised by ?who?, 3-Apr-2014.) $)
@@ -12810,7 +12810,7 @@ $)
     $d x w $.  $d w ph $.
     a9wa9lem3.1 $e |- -. A. w -. w = x $.
     a9wa9lem3.2 $e |- -. A. x -. x = w $.
-    $( Lemma for ~ a9wa9 .  Similar to ~ ax4 , without using ~ ax-9 or
+    $( Lemma for ~ ax9vax9 .  Similar to ~ ax4 , without using ~ ax-9 or
        ~ ax-4 . 
        (Contributed by ?who?, 12-Nov-2013.) $)
     a9wa9lem3 $p |- ( A. x ph -> ph ) $=
@@ -12819,7 +12819,7 @@ $)
       UDUHUGUGCFUJCBBEKUGCJUGBCLMUJUBUHIZBFEUIAUKBUHANOPSQRTUA $.
       $( [12-Nov-2013] $)
 
-    $( Lemma for ~ a9wa9 .  Similar to ~ hba1 , without using ~ ax-9 or
+    $( Lemma for ~ ax9vax9 .  Similar to ~ hba1 , without using ~ ax-9 or
        ~ ax-4 . 
        (Contributed by ?who?, 12-Nov-2013.) $)
     a9wa9lem4 $p |- ( A. x ph -> A. x A. x ph ) $=
@@ -12828,7 +12828,7 @@ $)
       $( [12-Nov-2013] $)
 
     a9wa9lem5.3 $e |- ( ph -> A. x ph ) $.
-    $( Lemma for ~ a9wa9 .  Similar to ~ hbn , without using ~ ax-9 or
+    $( Lemma for ~ ax9vax9 .  Similar to ~ hbn , without using ~ ax-9 or
        ~ ax-4 . 
        (Contributed by ?who?, 12-Nov-2013.) $)
     a9wa9lem5 $p |- ( -. ph -> A. x -. ph ) $=
@@ -12844,7 +12844,7 @@ $)
     a9wa9lem6.3 $e |- ( ph -> A. x ph ) $.
     a9wa9lem6.4 $e |- ( ph -> ( ps -> A. x ps ) ) $.
     a9wa9lem6.5 $e |- ( ph -> ( ch -> A. x ch ) ) $.
-    $( Lemma for ~ a9wa9 .  Similar to ~ hbimd , without using ~ ax-9 or
+    $( Lemma for ~ ax9vax9 .  Similar to ~ hbimd , without using ~ ax-9 or
        ~ ax-4 .  (The proof was shortened by Wolf Lammen, 3-Apr-2014.) 
        (Contributed by ?who?, 12-Nov-2013.) 
        (Revised by ?who?, 3-Apr-2014.) $)
@@ -12861,7 +12861,7 @@ $)
     a9wa9lem7.2 $e |- -. A. x -. x = w $.
     a9wa9lem7.3 $e |- ( ph -> A. x ph ) $.
     a9wa9lem7.4 $e |- ( ps -> A. x ps ) $.
-    $( Lemma for ~ a9wa9 .  Similar to ~ hban , without using ~ ax-9 or
+    $( Lemma for ~ ax9vax9 .  Similar to ~ hban , without using ~ ax-9 or
        ~ ax-4 . 
        (Contributed by ?who?, 12-Nov-2013.) $)
     a9wa9lem7 $p |- ( ( ph /\ ps ) -> A. x ( ph /\ ps ) ) $=
@@ -12872,15 +12872,15 @@ $)
 
   ${
     $d x v w z $.  $d y v w z $.  $d w x ph $.  $d w z ps $.
-    a9wa9.1 $e |- -. A. w -. w = x $.
-    a9wa9.2 $e |- -. A. x -. x = w $.
-    a9wa9.3 $e |- -. A. z -. z = y $.
-    a9wa9.4 $e |- -. A. w -. w = z $.
-    a9wa9.5 $e |- -. A. z -. z = w $.
+    ax9vax9.1 $e |- -. A. w -. w = x $.
+    ax9vax9.2 $e |- -. A. x -. x = w $.
+    ax9vax9.3 $e |- -. A. z -. z = y $.
+    ax9vax9.4 $e |- -. A. w -. w = z $.
+    ax9vax9.5 $e |- -. A. z -. z = w $.
 
     ${
       a9wa9lem8.6 $e |- ( z = y -> ( ph <-> ps ) ) $.
-      $( Lemma for ~ a9wa9 .  Similar to ~ dvelimfALT , without using ~ ax-9 or
+      $( Lemma for ~ ax9vax9 .  Similar to ~ dvelimfALT , without using ~ ax-9 or
          ~ ax-4 .  (The proof was shortened by Wolf Lammen, 18-Jul-2014.) 
          (Contributed by ?who?, 12-Nov-2013.) 
          (Revised by ?who?, 18-Jul-2014.) $)
@@ -12897,9 +12897,9 @@ $)
         $( [18-Jul-2014] $) $( [12-Nov-2013] $)
     $}
 
-    a9wa9.6 $e |- -. A. v -. v = y $.
-    a9wa9.7 $e |- -. A. w -. w = v $.
-    a9wa9.8 $e |- -. A. x -. x = v $.
+    ax9vax9.6 $e |- -. A. v -. v = y $.
+    ax9vax9.7 $e |- -. A. w -. w = v $.
+    ax9vax9.8 $e |- -. A. x -. x = v $.
     $( Derive ~ ax-9 (which has no distinct variable requirement) from a weaker
        version that requires that its two variables be distinct.  The
        hypotheses are the instances of the weaker version that we need.
@@ -12909,7 +12909,7 @@ $)
        Wolf Lammen, 28-Mar-2014.) 
        (Contributed by ?who?, 12-Nov-2013.) 
        (Revised by ?who?, 28-Mar-2014.) $)
-    a9wa9 $p |- -. A. x -. x = y $=
+    ax9vax9 $p |- -. A. x -. x = y $=
       ( weq wal wn a9wa9lem3 nsyl3 wi a9wa9lem2 ax-17 a9wa9lem8 a9wa9lem4 albid
       wb syl notbid mtbii syl6com con3i alrimi mt3 pm2.61i ) ABNZAOZUNPZAOZPZUQ
       UNUOUPADFGQUNADFGQRUOPZURSZEBNZPZEOKUTPZVBEVCEUAVAUTUSVAVAAOZURECNVAABCDF
@@ -12933,7 +12933,7 @@ $)
      in an axiom system of Tarski (see Axiom B7' in footnote 1 of
      [KalishMontague] p. 81.)  It is equivalent to axiom scheme C10' in
      [Megill] p. 448 (p. 16 of the preprint); the equivalence is established by
-     ~ ax9o and ~ ax9 .  A more convenient form of this axiom is ~ a9e , which
+     ~ ax9o and ~ ax9from9o .  A more convenient form of this axiom is ~ a9e , which
      has additional remarks.
 
      Raph Levien proved the independence of this axiom from the other logical
@@ -12941,7 +12941,7 @@ $)
      ~ http://us.metamath.org/award2003.html .
 
      ~ ax-9 can be proved from a weaker version requiring that the variables be
-     distinct; see theorem ~ a9wa9 . $)
+     distinct; see theorem ~ ax9vax9 . $)
   ax-9 $a |- -. A. x -. x = y $.
 
   $( ~ equid with existential quantifier without using ~ ax-4 or ~ ax-17 .
@@ -13842,7 +13842,7 @@ $(
 $)
 
   $( Show that the original axiom ~ ax-9o can be derived from ~ ax-9 and
-     others.  See ~ ax9 for the rederivation of ~ ax-9 from ~ ax-9o .
+     others.  See ~ ax9from9o for the rederivation of ~ ax-9 from ~ ax-9o .
 
      Normally, ~ ax9o should be used rather than ~ ax-9o , except by theorems
      specifically studying the latter's properties. 
@@ -13868,7 +13868,7 @@ $)
      This theorem should not be referenced in any proof.  Instead, use ~ ax-9
      above so that uses of ~ ax-9 can be more easily identified. 
      (Contributed by ?who?, 5-Aug-1993.) $)
-  ax9 $p |- -. A. x -. x = y $=
+  ax9from9o $p |- -. A. x -. x = y $=
     ( weq wn wal wi ax-9o modal-b mpg ) ABCZJDAEDZAEFKAKABGJAHI $.
     $( [5-Aug-1993] $)
 
@@ -14016,7 +14016,7 @@ $)
 
   $( Show that ~ ax-10o can be derived from ~ ax-10 .  An open problem is
      whether this theorem can be derived from ~ ax-10 and the others when
-     ~ ax-11 is replaced with ~ ax-11o .  See theorem ~ ax10 for the
+     ~ ax-11 is replaced with ~ ax-11o .  See theorem ~ ax10from10o for the
      rederivation of ~ ax-10 from ~ ax10o .
 
      Normally, ~ ax10o should be used rather than ~ ax-10o , except by theorems
@@ -14044,7 +14044,7 @@ $)
      This theorem should not be referenced in any proof.  Instead, use ~ ax-10
      above so that uses of ~ ax-10 can be more easily identified. 
      (Contributed by ?who?, 16-May-2008.) $)
-  ax10 $p |- ( A. x x = y -> A. y y = x ) $=
+  ax10from10o $p |- ( A. x x = y -> A. y y = x ) $=
     ( weq wal ax-10o pm2.43i equcomi alimi syl ) ABCZADZJBDZBACZBDKLJABEFJMBABG
     HI $.
     $( [16-May-2008] $)
@@ -24866,7 +24866,7 @@ $)
     $( Bound-variable hypothesis builder for class substitution, "strong" form
        using the definition instead of ~ dfsbcq .  (Contributed by Mario
        Carneiro, 7-Dec-2014.) $)
-    hbsbc1 $p |- ( [ A / x ] ph -> A. x [ A / x ] ph ) $=
+    hbsbc1f $p |- ( [ A / x ] ph -> A. x [ A / x ] ph ) $=
       ( vz wsbc cab wcel df-sbc hbab1 hbel hbxfrbi ) ABDGDABHZIBABDJBCFDNEABFKL
       M $.
       $( [7-Dec-2014] $)
@@ -24879,7 +24879,7 @@ $)
        was shortened by Andrew Salmon, 8-Jun-2011.) 
        (Contributed by ?who?, 18-Aug-1993.) 
        (Revised by ?who?, 8-Jun-2011.) $)
-    hbsbc1v $p |- ( [ A / x ] ph -> A. x [ A / x ] ph ) $=
+    hbsbc1 $p |- ( [ A / x ] ph -> A. x [ A / x ] ph ) $=
       ( vy cvv wcel wsbc wal wi cv ax-17 hbsbc1g ax-mp ) CFGABCHZOBIJDABECFEKCG
       BLMN $.
       $( [8-Jun-2011] $) $( [18-Aug-1993] $)
@@ -26098,12 +26098,12 @@ $)
 
   ${
     $d y z A $.  $d z B $.  $d x y z $.
-    hbcsb1.1 $e |- ( y e. A -> A. x y e. A ) $.
+    hbcsb1f.1 $e |- ( y e. A -> A. x y e. A ) $.
     $( Bound-variable hypothesis builder for substitution into a class. 
        (Contributed by ?who?, 17-Aug-2006.) 
        (Revised by ?who?, 7-Dec-2014.) $)
-    hbcsb1 $p |- ( y e. [_ A / x ]_ B -> A. x y e. [_ A / x ]_ B ) $=
-      ( vz csb cv wcel wsbc cab df-csb hbsbc1 hbab hbxfreq ) ABACDGFHDIZACJZFKA
+    hbcsb1f $p |- ( y e. [_ A / x ]_ B -> A. x y e. [_ A / x ]_ B ) $=
+      ( vz csb cv wcel wsbc cab df-csb hbsbc1f hbab hbxfreq ) ABACDGFHDIZACJZFKA
       FCDLQAFBPABCEMNO $.
       $( [7-Dec-2014] $) $( [17-Aug-2006] $)
   $}
@@ -26172,7 +26172,7 @@ $)
        hypothesis.  See ~ sbhypf for class substitution version. 
        (Contributed by ?who?, 19-Dec-2008.) $)
     csbhypf $p |- ( y = A -> [_ y / x ]_ B = C ) $=
-      ( vw cv wceq wa wex csb wcel ax-17 vex eqvincf hbcsb1 hbeq csbeq1a exlimi
+      ( vw cv wceq wa wex csb wcel ax-17 vex eqvincf hbcsb1f hbeq csbeq1a exlimi
       sylan9req sylbi ) BKZDLAKZUFLZUGDLZMZANAUFEOZFLZACUFDCKUFPAQGBRSUJULAAJCU
       KFAJUFEJKUFPAQTHUAUHUIUKEFAUFEUBIUDUCUE $.
       $( [19-Dec-2008] $)
@@ -26202,7 +26202,7 @@ $)
        equivalent. 
        (Contributed by ?who?, 2-Mar-2008.) $)
     csbieb $p |- ( A. x ( x = A -> B = C ) <-> [_ A / x ]_ B = C ) $=
-      ( vz wceq csb cv wcel ax-17 hbcsb1 hbeq csbeq1a eqeq1d ceqsal ) DEIACDJZE
+      ( vz wceq csb cv wcel ax-17 hbcsb1f hbeq csbeq1a eqeq1d ceqsal ) DEIACDJZE
       IACAHBSEAHCDHKCLAMNGOFAKCIDSEACDPQR $.
       $( [2-Mar-2008] $)
   $}
@@ -26272,7 +26272,7 @@ $)
        (Contributed by ?who?, 3-Sep-2007.) $)
     csbie2t $p |- ( A. x A. y ( ( x = A /\ y = B ) -> C = D ) ->
                   [_ A / x ]_ [_ B / y ]_ C = D ) $=
-      ( vz cv wceq wa wi wal wex csb isseti hba1 wcel ax-17 hbcsb1 hbeq csbeq1a
+      ( vz cv wceq wa wi wal wex csb isseti hba1 wcel ax-17 hbcsb1f hbeq csbeq1a
       eeanv hbcsb sylan9eqr pm3.43 mpan eqtr2 syl6 a4s exlimd syl5bir mp2ani )
       AJCKZBJDKZLZEFKZMZBNZANZUOAOZUPBOZACBDEPZPZFKZACGQBDHQVBVCLUQBOZAOVAVFUOU
       PABUDVAVGVFAUTARAIIVEFAICVDIJZCSZATUAVHFSZATUBUTVGVFMAUTUQVFBUSBRBIIVEFBA
@@ -26430,7 +26430,7 @@ $)
        to be distinct from ` x ` or ` y ` .  Changes bound variables using
        implicit substitution.  (Contributed by Andrew Salmon, 13-Jul-2011.) $)
     cbvralcsf $p |- ( A. x e. A ph <-> A. y e. B ps ) $=
-      ( vz vv cv wcel wi wal ax-17 wral csb wsbc hbcsb1 hblem hbs1 hbim wceq id
+      ( vz vv cv wcel wi wal ax-17 wral csb wsbc hbcsb1f hblem hbs1 hbim wceq id
       csbeq1a eleq12d sbequ12 imbi12d cbval cvv hbcsbg ax-mp hbsb csbeq1 df-csb
       vex cab eleq2d sbie bicomi abbi2i eqtr4i syl6eq sbequ syl6bb bitri df-ral
       3bitr4i ) CPZFQZARZCSZDPZGQZBRZDSZACFUABDGUAVQNPZCWBFUBZQZACWBUCZRZNSWAVP
@@ -26454,7 +26454,7 @@ $)
        rextrictions.  Changes bound variables using implicit substitution.
        (Contributed by Andrew Salmon, 13-Jul-2011.) $)
     cbvreucsf $p |- ( E! x e. A ph <-> E! y e. B ps ) $=
-      ( vz vv cv wcel wa ax-17 hblem weu wreu csb wsbc hbcsb1 hbs1 hban wceq id
+      ( vz vv cv wcel wa ax-17 hblem weu wreu csb wsbc hbcsb1f hbs1 hban wceq id
       csbeq1a eleq12d sbequ12 anbi12d cbveu cvv wal wi hbcsbg ax-mp hbsb csbeq1
       vex cab df-csb eleq2d sbie bicomi abbi2i eqtr4i syl6eq sbequ syl6bb bitri
       df-reu 3bitr4i ) CPZFQZARZCUAZDPZGQZBRZDUAZACFUBBDGUBVSNPZCWDFUCZQZACWDUD
@@ -26468,7 +26468,7 @@ $)
     $( A more general version of ~ cbvrab with no distinct variable
        restrictions.  (Contributed by Andrew Salmon, 13-Jul-2011.) $)
     cbvrabcsf $p |- { x e. A | ph } = { y e. B | ps } $=
-      ( vz vv cv wcel cab ax-17 hblem wa crab csb wsbc hbcsb1 hbs1 hban wceq id
+      ( vz vv cv wcel cab ax-17 hblem wa crab csb wsbc hbcsb1f hbs1 hban wceq id
       csbeq1a eleq12d sbequ12 anbi12d cbvab cvv wal wi hbcsbg ax-mp hbsb csbeq1
       df-csb eleq2d sbie bicomi abbi2i eqtr4i syl6eq sbequ syl6bb eqtri 3eqtr4i
       vex df-rab ) CPZFQZAUAZCRZDPZGQZBUAZDRZACFUBBDGUBVRNPZCWCFUCZQZACWCUDZUAZ
@@ -26569,7 +26569,7 @@ $)
   $( Membership in class complement. 
      (Contributed by ?who?, 10-Jan-2015.) $)
   elcomplg $p |- ( A e. V -> ( A e. ~ B <-> -. A e. B ) ) $=
-    ( ccompl wcel cnin wn df-compl eleq2i wnan elning wa df-nand xchbinx syl6bb
+    ( ccompl wcel cnin wn df-compl eleq2i wnan elning wa df-nan xchbinx syl6bb
     anidm syl5bb ) ABDZEABBFZEZACEZABEZGZRSABHIUATUBUBJZUCABBCKUDUBUBLUBUBUBMUB
     PNOQ $.
     $( [10-Jan-2015] $)
@@ -26578,7 +26578,7 @@ $)
      (Contributed by ?who?, 10-Jan-2015.) $)
   elin $p |- ( A e. ( B i^i C ) <-> ( A e. B /\ A e. C ) ) $=
     ( cin wcel cvv wa elex adantr cnin ccompl wnan elcomplg elning notbid bitrd
-    wn df-in eleq2i df-nand con2bii 3bitr4g pm5.21nii ) ABCDZEZAFEZABEZACEZGZAU
+    wn df-in eleq2i df-nan con2bii 3bitr4g pm5.21nii ) ABCDZEZAFEZABEZACEZGZAU
     DHUGUFUHABHIUFABCJZKZEZUGUHLZQZUEUIUFULAUJEZQUNAUJFMUFUOUMABCFNOPUDUKABCRSU
     MUIUGUHTUAUBUC $.
     $( [10-Jan-2015] $)
@@ -26587,7 +26587,7 @@ $)
      (Contributed by ?who?, 10-Jan-2015.) $)
   elun $p |- ( A e. ( B u. C ) <-> ( A e. B \/ A e. C ) ) $=
     ( cun wcel wo elex jaoi ccompl cnin wn wnan elning elcomplg nandbi12d bitrd
-    cvv df-un eleq2i wa oran df-nand bitr4i 3bitr4g pm5.21nii ) ABCDZEZAQEZABEZ
+    cvv df-un eleq2i wa oran df-nan bitr4i 3bitr4g pm5.21nii ) ABCDZEZAQEZABEZ
     ACEZFZAUFGUIUHUJABGACGHUHABIZCIZJZEZUIKZUJKZLZUGUKUHUOAULEZAUMEZLURAULUMQMU
     HUSUPUTUQABQNACQNOPUFUNABCRSUKUPUQTKURUIUJUAUPUQUBUCUDUE $.
     $( [10-Jan-2015] $)
@@ -26654,7 +26654,7 @@ $)
     $( Hypothesis builder for anti-intersection. 
        (Contributed by ?who?, 10-Jan-2015.) $)
     hbnin $p |- ( x e. ( A -i^i B ) -> A. y x e. ( A -i^i B ) ) $=
-      ( cv cnin wcel wa wn wnan vex elnin df-nand bitri hban hbn hbxfrbi ) AGZC
+      ( cv cnin wcel wa wn wnan vex elnin df-nan bitri hban hbn hbxfrbi ) AGZC
       DHIZTCIZTDIZJZKZBUAUBUCLUETCDAMNUBUCOPUDBUBUCBEFQRS $.
       $( [10-Jan-2015] $)
 
@@ -27416,7 +27416,7 @@ $)
     csbing $p |- ( A e. B -> [_ A / x ]_ ( C i^i D ) =
                   ( [_ A / x ]_ C i^i [_ A / x ]_ D ) ) $=
       ( vy vz cv cin csb wceq csbeq1 ineq12d eqeq12d vex wel ax-17 hbin csbeq1a
-      hbcsb1 weq csbief vtoclg ) AFHZDEIZJZAUDDJZAUDEJZIZKABUEJZABDJZABEJZIZKFB
+      hbcsb1f weq csbief vtoclg ) AFHZDEIZJZAUDDJZAUDEJZIZKABUEJZABDJZABEJZIZKFB
       CUDBKZUFUJUIUMAUDBUELUNUGUKUHULAUDBDLAUDBELMNAGUDUEUIFOGAUGUHAGUDDGFPAQZT
       AGUDEUOTRAFUADUGEUHAUDDSAUDESMUBUC $.
       $( [22-Jul-2012] $)
@@ -29920,7 +29920,7 @@ $)
        by Andrew Salmon, 29-Jun-2011.) 
        (Contributed by ?who?, 16-Mar-2006.) 
        (Revised by ?who?, 29-Jun-2011.) $)
-    difprsn $p |- ( { A , B } \ { A } ) C_ { B } $=
+    difprsnss $p |- ( { A , B } \ { A } ) C_ { B } $=
       ( vx cpr csn cdif cv wcel wn wa wceq wo elpr elsn notbii biimparc syl2anb
       vex biorf eldif 3imtr4i ssriv ) CABDZAEZFZBEZCGZUCHZUGUDHZIZJUGBKZUGUEHUG
       UFHUHUGAKZUKLZULIZUKUJUGABCRZMUIULUGAUONOUNUKUMULUKSPQUGUCUDTUGBUONUAUB
@@ -30119,7 +30119,7 @@ $)
     sspr $p |- ( A C_ { B , C } <->
      ( ( A = (/) \/ A = { B } ) \/ ( A = { C } \/ A = { B , C } ) ) ) $=
       ( cpr wss c0 wceq csn wo wn wa wcel cdif difsn adantl adantr sseq1 mpbiri
-      ex jaoi simpll pm2.45 anim1i ioran sylibr ssdif difprsn syl6ss sssn con1d
+      ex jaoi simpll pm2.45 anim1i ioran sylibr ssdif difprsnss syl6ss sssn con1d
       eqsstr3d syl6ib imp sylan2 anassrs prcom sseq2i sylbi prssg syl2anc eqssd
       ibi orrd 0ss snsspr1 snsspr2 eqimss impbii ) ABCDZEZAFGZABHZGZIZACHZGZAVI
       GZIZIVJVNVRVJVNJZVRVJVSKZVPVQVTVPJZVQVTWAKZAVIVJVSWAUAWBBALZCALZVIAEZVJVS
@@ -31459,7 +31459,7 @@ $)
        (Contributed by ?who?, 24-Feb-2013.) $)
     csbifg $p |- ( A e. V -> [_ A / x ]_ if ( ph , B , C )
           = if ( [ A / x ] ph , [_ A / x ]_ B , [_ A / x ]_ C ) ) $=
-      ( vy cif csb wsb wceq wsbc csbeq1 dfsbcq ifbieq12d eqeq12d hbcsb1 csbeq1a
+      ( vy cif csb wsb wceq wsbc csbeq1 dfsbcq ifbieq12d eqeq12d hbcsb1f csbeq1a
       vz cv vex hbs1 wel ax-17 hbif weq sbceq1a csbief vtoclg ) BGTZADEHZIZABGJ
       ZBUJDIZBUJEIZHZKBCUKIZABCLZBCDIZBCEIZHZKGCFUJCKZULUQUPVABUJCUKMVBUMURUNUO
       USUTABUJCNBUJCDMBUJCEMOPBSUJUKUPGUAUMBSUNUOABGUBBSUJDSGUCBUDZQBSUJEVCQUEB
@@ -40752,7 +40752,7 @@ $)
        (Revised by ?who?, 9-Jul-2011.) $)
     sbcbrg $p |- ( A e. D -> ( [ A / x ] B R C <->
            [_ A / x ]_ B [_ A / x ]_ R [_ A / x ]_ C ) ) $=
-      ( vy vz wbr wsb csb wsbc dfsbcq wceq csbeq1 breq123d wel hbcsb1 csbeq1a
+      ( vy vz wbr wsb csb wsbc dfsbcq wceq csbeq1 breq123d wel hbcsb1f csbeq1a
       cv ax-17 hbbr weq sbie vtoclbg ) CDFIZAGJAGTZCKZAUGDKZAUGFKZIZUFABLABCKZA
       BDKZABFKZIGBEUFAUGBMUGBNUHULUIUMUJUNAUGBCOAUGBFOAUGBDOPUFUKAGAHUHUIUJAHUG
       CHGQAUAZRAHUGFUORAHUGDUORUBAGUCCUHDUIFUJAUGCSAUGFSAUGDSPUDUE $.
@@ -45165,7 +45165,7 @@ $)
        (Contributed by FL, 15-Dec-2006.) $)
     csbima12g $p |- ( A e. C -> [_ A / x ]_ ( F " B ) =
                  ( [_ A / x ]_ F " [_ A / x ]_ B ) ) $=
-      ( vy vz wcel cv cima ax-17 hbcsb1g hbcsb1 csbeq1a imaeq1d imaeq2d 3eqtr3d
+      ( vy vz wcel cv cima ax-17 hbcsb1g hbcsb1f csbeq1a imaeq1d imaeq2d 3eqtr3d
       csb wceq csbcog hbimad wel hbima vex weq vtoclef a1i 3eqtrd csbiegf eqtrd
       hbeq ) BDHZFBAFIZECJZRZRFBAUMERZRZFBAUMCRZRZJZABUNRABERZABCRZJZFGBUOUTDUL
       FGUQUSULFKFGBUPDGIBHFKZLFGBURDVDLUAUMBSZUOUPURJZUQURJUTUOVFSZVEVGAUMAGGUO
@@ -49246,7 +49246,7 @@ $)
        (Contributed by ?who?, 11-Nov-2005.) $)
     csbfv12g $p |- ( A e. C ->
                  [_ A / x ]_ ( F ` B ) = ( [_ A / x ]_ F ` [_ A / x ]_ B ) ) $=
-      ( vy vz wcel cv cfv csb ax-17 hbcsb1g hbfvd hbcsb1 csbeq1a fveq12d csbcog
+      ( vy vz wcel cv cfv csb ax-17 hbcsb1g hbfvd hbcsb1f csbeq1a fveq12d csbcog
       wceq wel hbfv vex weq eqtr3d vtoclef fveq1d fveq2d 3eqtrd csbiegf 3eqtr3d
       hbeq a1i ) BDHZFBAFIZCEJZKZKFBAUNCKZKZFBAUNEKZKZJZABUOKABCKZABEKZJFGBUPVA
       DUMFGURUTUMFLFGBUSDGIBHFLZMFGBUQDVDMNUNBSZUPUQUSJZUQUTJVAUPVFSZVEVGAUNAGG
@@ -49903,7 +49903,7 @@ $)
        (Contributed by ?who?, 8-Nov-2005.) 
        (Revised by ?who?, 20-Dec-2008.) $)
     fvopab4gf $p |- ( ( A e. D /\ C e. R ) -> ( F ` A ) = C ) $=
-      ( vw vv wcel wa cfv cv ax-17 csb wceq copab wel hbcsb1 hbeleq hban weq wb
+      ( vw vv wcel wa cfv cv ax-17 csb wceq copab wel hbcsb1f hbeleq hban weq wb
       eleq1 adantr csbeq1a eqeqan12rd anbi12d cbvopab eqtri fveq1i csbhypf eqid
       id1 fvopab4g syl5eq ) DGPFHPQDIRDNSZGPZOSZAVCEUAZUBZQZNOUCZRFDIVIIASZGPZB
       SZEUBZQZABUCVIMVNVHABNOVNNTVNOTVDVGAVDATAOVFAOVCEONUDATUEUFUGVHBTANUHZBOU
@@ -49923,7 +49923,7 @@ $)
        hypothesis. 
        (Contributed by ?who?, 26-Mar-2006.) $)
     fvopab4sf $p |- ( A e. C -> ( F ` A ) = [_ A / x ]_ B ) $=
-      ( wcel csb cvv cfv wceq csbex hbcsb1 csbeq1a fvopab4gf mpan2 ) DFLADEMZNL
+      ( wcel csb cvv cfv wceq csbex hbcsb1f csbeq1a fvopab4gf mpan2 ) DFLADEMZNL
       DGOUBPADEHIQABCDEUBFNGJACDEJRADESKTUA $.
       $( [26-Mar-2006] $)
   $}
@@ -49993,7 +49993,7 @@ $)
        (Contributed by ?who?, 21-Oct-2003.) $)
     fvopabgf $p |- ( ( A e. D /\ C e. R ) ->
                     ( { <. x , y >. | y = B } ` A ) = C ) $=
-      ( vv vw wcel cv wceq copab cfv ax-17 weq wa csb wel hbcsb1 hbeleq csbeq1a
+      ( vv vw wcel cv wceq copab cfv ax-17 weq wa csb wel hbcsb1f hbeleq csbeq1a
       wb id1 eqeqan12d ancoms cbvopab fveq1i csbhypf fvopabg syl5eq ) DGNFHNUAD
       BOZEPZABQZRDLOZAMOZEUBZPZMLQZRFDURVCUQVBABMLUQMSUQLSALVAALUTELMUCASUDUEVB
       BSBLTZAMTZUQVBUGVDVEUPUSEVAVDUHAUTEUFUIUJUKULMLDVAFGHAMCDEFIJKUMUNUO $.
@@ -50006,7 +50006,7 @@ $)
        (Contributed by ?who?, 21-Oct-2003.) 
        (Revised by ?who?, 21-Dec-2008.) $)
     fvopabnf $p |- ( -. C e. _V -> ( { <. x , y >. | y = B } ` A ) = (/) ) $=
-      ( vv vw cvv wcel wn cv wceq copab cfv ax-17 weq csb wel hbcsb1 hbeleq id1
+      ( vv vw cvv wcel wn cv wceq copab cfv ax-17 weq csb wel hbcsb1f hbeleq id1
       c0 wb csbeq1a eqeqan12d ancoms cbvopab fveq1i csbhypf fvopabn syl5eq ) FL
       MNDBOZEPZABQZRDJOZAKOZEUAZPZKJQZRUFDURVCUQVBABKJUQKSUQJSAJVAAJUTEJKUBASUC
       UDVBBSBJTZAKTZUQVBUGVDVEUPUSEVAVDUEAUTEUHUIUJUKULKJDVAFAKCDEFGHIUMUNUO $.
@@ -50066,7 +50066,7 @@ $)
        using class substitution. 
        (Contributed by ?who?, 25-Mar-2006.) $)
     fvopabs $p |- ( { <. x , y >. | y = B } ` A ) = [_ A / x ]_ B $=
-      ( vz csb cv wcel ax-17 hbcsb1 csbex csbeq1a fvopabf ) ABGCDACDHGICJAKZAGC
+      ( vz csb cv wcel ax-17 hbcsb1f csbex csbeq1a fvopabf ) ABGCDACDHGICJAKZAGC
       DPLEACDEFMACDNO $.
       $( [25-Mar-2006] $)
   $}
@@ -50112,7 +50112,7 @@ $)
        [TakeutiZaring] p. 28. 
        (Contributed by ?who?, 3-Aug-1994.) 
        (Revised by ?who?, 5-Feb-2004.) $)
-    eqfnfv $p |- ( ( F Fn A /\ G Fn B ) -> ( F = G <->
+    eqfnfv2 $p |- ( ( F Fn A /\ G Fn B ) -> ( F = G <->
                  ( A = B /\ A. x e. A ( F ` x ) = ( G ` x ) ) ) ) $=
       ( vy wfn wa wceq cv cfv wral wi wcel wb wal adantl fnopfvb syl5ib wn rgen
       fndmu eqidd jctir fneq1 anbi1d fveq1 eqeq1d ralbidv anbi2d imbi12d mpbiri
@@ -50135,9 +50135,9 @@ $)
        (The proof was shortened by Andrew Salmon, 22-Oct-2011.) 
        (Contributed by ?who?, 3-Aug-1994.) 
        (Revised by ?who?, 22-Oct-2011.) $)
-    eqfnfv2 $p |- ( ( F Fn A /\ G Fn A ) -> ( F = G <->
+    eqfnfv $p |- ( ( F Fn A /\ G Fn A ) -> ( F = G <->
                  A. x e. A ( F ` x ) = ( G ` x ) ) ) $=
-      ( wfn wa wceq cv cfv wral eqfnfv eqid biantrur syl6bbr ) CBEDBEFCDGBBGZAH
+      ( wfn wa wceq cv cfv wral eqfnfv2 eqid biantrur syl6bbr ) CBEDBEFCDGBBGZAH
       ZCIPDIGABJZFQABBCDKOQBLMN $.
       $( [22-Oct-2011] $) $( [3-Aug-1994] $)
 
@@ -50146,7 +50146,7 @@ $)
        (Contributed by Jeff Madsen, 2-Sep-2009.) $)
     eqfnfv3 $p |- ( ( F Fn A /\ G Fn B ) -> ( F = G <-> ( B C_ A /\ A. x e. A
                                   ( x e. B /\ ( F ` x ) = ( G ` x ) ) ) ) ) $=
-      ( wfn wa wceq cv cfv wral wcel eqfnfv eqss ancom bitri anbi1i anass dfss3
+      ( wfn wa wceq cv cfv wral wcel eqfnfv2 eqss ancom bitri anbi1i anass dfss3
       wss r19.26 bitr4i anbi2i 3bitri syl6bb ) DBFECFGDEHBCHZAIZDJUGEJHZABKZGZC
       BTZUGCLZUHGABKZGZABCDEMUJUKBCTZGZUIGUKUOUIGZGUNUFUPUIUFUOUKGUPBCNUOUKOPQU
       KUOUIRUQUMUKUQULABKZUIGUMUOURUIABCSQULUHABUAUBUCUDUE $.
@@ -50157,7 +50157,7 @@ $)
     $( Deduction for equality of functions.  (Contributed by Mario Carneiro,
        24-Jul-2014.) $)
     eqfnfvd $p |- ( ph -> F = G ) $=
-      ( wceq cv cfv wral ralrimiva wfn wb eqfnfv2 syl2anc mpbird ) ADEIZBJZDKTE
+      ( wceq cv cfv wral ralrimiva wfn wb eqfnfv syl2anc mpbird ) ADEIZBJZDKTE
       KIZBCLZAUABCHMADCNECNSUBOFGBCDEPQR $.
       $( [24-Jul-2014] $)
   $}
@@ -50168,13 +50168,13 @@ $)
     eqfnfvf2.2 $e |- ( y e. G -> A. x y e. G ) $.
     $( Equality of functions is determined by their values.  Special case of
        Exercise 4 of [TakeutiZaring] p. 28 (with domain equality omitted).
-       This version of ~ eqfnfv2 uses bound-variable hypotheses instead of
+       This version of ~ eqfnfv uses bound-variable hypotheses instead of
        distinct variable conditions. 
        (Contributed by ?who?, 29-Jan-2004.) 
        (Revised by ?who?, 22-Mar-2009.) $)
     eqfnfv2f $p |- ( ( F Fn A /\ G Fn A ) -> ( F = G <->
                  A. x e. A ( F ` x ) = ( G ` x ) ) ) $=
-      ( vz wfn wa wceq cv cfv wral eqfnfv2 wcel ax-17 hbfv hbeq fveq2 eqeq12d
+      ( vz wfn wa wceq cv cfv wral eqfnfv wcel ax-17 hbfv hbeq fveq2 eqeq12d
       cbvral syl6bb ) DCIECIJDEKHLZDMZUDEMZKZHCNALZDMZUHEMZKZACNHCDEOUGUKHACABB
       UEUFABUDDFBLUDPAQZRABUDEGULRSUKHQUDUHKUEUIUFUJUDUHDTUDUHETUAUBUC $.
       $( [22-Mar-2009] $) $( [29-Jan-2004] $)
@@ -50187,7 +50187,7 @@ $)
     eqfunfv $p |- ( ( Fun F /\ Fun G ) -> ( F = G <->
                     ( dom F = dom G /\
                       A. x e. dom F ( F ` x ) = ( G ` x ) ) ) ) $=
-      ( wfun cdm wfn wceq cv cfv wral wa wb funfn eqfnfv syl2anb ) BDBBEZFCCEZF
+      ( wfun cdm wfn wceq cv cfv wral wa wb funfn eqfnfv2 syl2anb ) BDBBEZFCCEZF
       BCGPQGAHZBIRCIGAPJKLCDBMCMAPQBCNO $.
       $( [10-Jul-2011] $) $( [19-Jun-2011] $)
   $}
@@ -50199,7 +50199,7 @@ $)
        (Revised by ?who?, 6-Feb-2004.) $)
     fvreseq $p |- ( ( ( F Fn A /\ G Fn A ) /\ B C_ A ) ->
          ( ( F |` B ) = ( G |` B ) <-> A. x e. B ( F ` x ) = ( G ` x ) ) ) $=
-      ( wfn wa wss cres wceq cv cfv wral fnssres anim12i anandirs eqfnfv2 fvres
+      ( wfn wa wss cres wceq cv cfv wral fnssres anim12i anandirs eqfnfv fvres
       wb wcel eqeq12d ralbiia syl6bb syl ) DBFZEBFZGCBHZGDCIZCFZECIZCFZGZUHUJJZ
       AKZDLZUNELZJZACMZSUEUFUGULUEUGGUIUFUGGUKBCDNBCENOPULUMUNUHLZUNUJLZJZACMUR
       ACUHUJQVAUQACUNCTUSUOUTUPUNCDRUNCERUAUBUCUD $.
@@ -50740,7 +50740,7 @@ $)
       ( vz wcel csb wceq cfv adantl wfn cvv crn wss ccom cv copab wral fvopab4s
       wa fnopab2 fnfvelrn mpan wi ssel adantr mpd eqeltrrd syl cdm dmopab2 wfun
       eleq2i fnfun ax-mp fvco sylbir fveq2d eqtrd eqid wal vex ax-gen csbnest1g
-      csbex mp2an syl6eq 3eqtr4d ralrimiva fnco mp3an12 eqfnfv2 sylancl mpbird
+      csbex mp2an syl6eq 3eqtr4d ralrimiva fnco mp3an12 eqfnfv sylancl mpbird
       wb ) HUAZCUBZGHUCZAUDDNBUDAFEOZPUHABUEZPZMUDZWFQZWJWHQZPZMDUFZWEWMMDWEWJD
       NZUHZAWJFOZGQZAWQEOZWKWLWPWQCNWRWSPWPWJHQZWQCWOWTWQPWEABWJFDHJLUGZRWPWTWD
       NZWTCNZWOXBWEHDSZWOXBABDFHJLUIZDWJHUJUKRWEXBXCULWOWDCWTUMUNUOUPABWQECGIKU
@@ -51036,7 +51036,7 @@ $)
        (Contributed by ?who?, 27-Nov-2007.) $)
     fconst2g $p |- ( B e. C -> ( F : A --> { B } <-> F = ( A X. { B } ) ) ) $=
       ( vx wcel csn wf cxp wceq wa cv cfv wral fvconst adantlr fvconst2g eqtr4d
-      adantll wfn ralrimiva wb fnconstg eqfnfv2 syl2an mpbird expcom syl5ibrcom
+      adantll wfn ralrimiva wb fnconstg eqfnfv syl2an mpbird expcom syl5ibrcom
       ffn fconstg feq1 impbid ) BCFZABGZDHZDAUNIZJZUOUMUQUOUMKZUQELZDMZUSUPMZJZ
       EANZURVBEAURUSAFZKUTBVAUOVDUTBJUMABUSDOPUMVDVABJUOABUSCQSRUAUODATUPATUQVC
       UBUMAUNDUIABCUCEADUPUDUEUFUGUMUOUQAUNUPHABCUJAUNDUPUKUHUL $.
@@ -52298,7 +52298,7 @@ $)
        (Revised by ?who?, 22-Oct-2011.) $)
     csbovg $p |- ( A e. D -> [_ A / x ]_ ( B F C ) =
            ( [_ A / x ]_ B [_ A / x ]_ F [_ A / x ]_ C ) ) $=
-      ( vy vz wcel csb cop cfv df-ov csbeq2i wceq csbeq1 opeq12d hbcsb1 csbeq1a
+      ( vy vz wcel csb cop cfv df-ov csbeq2i wceq csbeq1 opeq12d hbcsb1f csbeq1a
       co csbfv12g cv eqeq12d vex wel ax-17 hbop weq csbief vtoclg fveq2d 3eqtrd
       syl6eqr ) BEIZABCDFTZJABCDKZFLZJABUPJZABFJZLZABCJZABDJZUSTZABUOUQECDFMNAB
       UPEFUAUNUTVAVBKZUSLVCUNURVDUSAGUBZUPJZAVECJZAVEDJZKZOURVDOGBEVEBOZVFURVIV
@@ -52853,7 +52853,7 @@ $)
        (Contributed by ?who?, 1-Sep-2005.) $)
     eqfnov $p |- ( ( F Fn ( A X. B ) /\ G Fn ( C X. D ) ) -> ( F = G <->
 ( ( A X. B ) = ( C X. D ) /\ A. x e. A A. y e. B ( x F y ) = ( x G y ) ) ) ) $=
-      ( vz cxp wfn wa wceq cv cfv wral co eqfnfv fveq2 df-ov cop eqeq12d anbi2i
+      ( vz cxp wfn wa wceq cv cfv wral co eqfnfv2 fveq2 df-ov cop eqeq12d anbi2i
       eqeq12i syl6bbr ralxp syl6bb ) GCDJZKHEFJZKLGHMUHUIMZINZGOZUKHOZMZIUHPZLU
       JANZBNZGQZUPUQHQZMZBDPACPZLIUHUIGHRUOVAUJUNUTIABCDUKUPUQUAZMZUNVBGOZVBHOZ
       MUTVCULVDUMVEUKVBGSUKVBHSUBURVDUSVEUPUQGTUPUQHTUDUEUFUCUG $.
@@ -53015,7 +53015,7 @@ $)
        (Revised by ?who?, 19-Dec-2013.) $)
     ov2gf $p |- ( ( A e. C /\ B e. D /\ S e. H ) -> ( A F B ) = S ) $=
       ( vt vu vv wcel w3a co cv wa csb copab2 weq eqeq1 anbi2d cbvoprab3v ax-17
-      wceq wel hbcsb1 hbcsb hbeq eleq1 anbi1d csbeq1a eqeq2d anbi12d cbvoprab12
+      wceq wel hbcsb1f hbcsb hbeq eleq1 anbi1d csbeq1a eqeq2d anbi12d cbvoprab12
       hban sylan9bb 3eqtri oveqi eqid simp3 cvv vex hblem csbhypf csbeq2d mpan2
       hbeleq sylan9eq 3adant3 eqeq12d wmo moeq a1i ovig mpi syl5eq ) EGUGFHUGJM
       UGUHZEFKUIEFUDUJZGUGZUEUJZHUGZUKZUFUJZBWOAWMIULZULZUSZUKZUDUEUFUMZUIZJKXC
@@ -53923,8 +53923,8 @@ $)
        Carneiro, 16-Dec-2013.) $)
     mpt2eq12 $p |- ( ( A = C /\ B = D ) ->
                  ( x e. A , y e. B |-> E ) = ( x e. C , y e. D |-> E ) ) $=
-      ( wceq wral cmpt2 cv wcel wa eqidd rgen2 mpt2eq123 mp3an3 ) CEHDFHGGHZBDI
-      ACIABCDGJABEFGJHRABCDAKCLBKDLMGNOABCDGEFGPQ $.
+      ( wceq wral wa cmpt2 eqid rgenw jctr ralrimivw mpt2eq123 sylan2 ) DFHZCEH
+      RGGHZBDIZJZACIABCDGKABEFGKHRUAACRTSBDGLMNOABCDGEFGPQ $.
       $( [16-Dec-2013] $)
   $}
 
@@ -54358,7 +54358,7 @@ $)
     $( Value of a function given by the "maps to" notation.  (Contributed by
        Mario Carneiro, 23-Apr-2014.) $)
     fvmpt2i $p |- ( x e. A -> ( F ` x ) = ( _I ` B ) ) $=
-      ( vy vz csb weq csbeq1 csbid syl6eq cmpt wcel ax-17 ax17el hbcsb1 csbeq1a
+      ( vy vz csb weq csbeq1 csbid syl6eq cmpt wcel ax-17 ax17el hbcsb1f csbeq1a
       cv cbvmpt eqtri fvmpti ) FASZAFSZCHZCBDFAIUEAUCCHCAUDUCCJACKLDABCMFBUEMEA
       FGBCUEGSCNFOAGUDCGFAPQAUDCRTUAUB $.
       $( [23-Apr-2014] $)
@@ -57581,29 +57581,15 @@ $)
     ereldm.1 $e |- ( ph -> R Er _V ) $.
     ereldm.2 $e |- ( ph -> dom R = X ) $.
     ereldm.3 $e |- ( ph -> [ A ] R = [ B ] R ) $.
-    ${
-      ereldm.4 $e |- ( ph -> A e. X ) $.
-      ereldm.5 $e |- ( ph -> B e. V ) $.
-      $( Equality of equivalence classes implies equivalence of domain
-         membership. 
-         (Contributed by ?who?, 28-Jan-1996.) 
-         (Revised by ?who?, 9-Jul-2014.) $)
-      ereldm $p |- ( ph -> B e. X ) $=
-        ( cec ecss wbr wcel wceq erth mpbird elec sylibr sseldd ) ABDLZFCABDFGH
-        MABCDNZCUBOAUCUBCDLPIABCDEFGHJKQRCBDSTUA $.
-        $( [9-Jul-2014] $) $( [28-Jan-1996] $)
-    $}
-
-    ereldmb.4 $e |- ( ph -> A e. V ) $.
-    ereldmb.5 $e |- ( ph -> B e. W ) $.
+    ereldm.4 $e |- ( ph -> A e. V ) $.
+    ereldm.5 $e |- ( ph -> B e. W ) $.
     $( Equality of equivalence classes implies equivalence of domain
        membership. 
        (Contributed by ?who?, 28-Jan-1996.) 
        (Revised by ?who?, 9-Jul-2014.) $)
-    ereldmb $p |- ( ph -> ( A e. X <-> B e. X ) ) $=
-      ( wcel wa cvv adantr wceq cec simpr ereldm cer wbr cdm sylan9req impbida
-      eqidd ) ABGMZCGMZAUGNBCDFGADOUAUBZUGHPADUCGQZUGIPABDRZCDRZQUGJPAUGSACFMUG
-      LPTAUHNCBDEGAUIUHHPAUJUHIPAUHULUKUKJUHUKUFUDAUHSABEMUHKPTUE $.
+    ereldm $p |- ( ph -> ( A e. X <-> B e. X ) ) $=
+      ( cdm wcel cec c0 wne neeq1d ecdmn0 eleq2d 3bitr4g 3bitr3d ) ABDMZNZCUCNZ
+      BGNCGNABDOZPQCDOZPQUDUEAUFUGPJRBDSCDSUAAUCGBITAUCGCITUB $.
       $( [9-Jul-2014] $) $( [28-Jan-1996] $)
   $}
 
@@ -63860,3 +63846,4 @@ htmldef "Sp[ac]" as
 htmldef "TcFn" as "TcFn";
   althtmldef "TcFn" as "TcFn";
   latexdef "TcFn" as "{\rm TcFn}";
+$)
