@@ -1,9 +1,6 @@
 $( nf.mm - Version of 24-Dec-2017. $)
 $( -*-text-*- $)
 
-$( Scott - look for "16-Apr-2015" to see what I changed.  Then you
-   can delete those comments. -Norm $)
-
 $(
 ###############################################################################
             CLASSICAL FIRST ORDER LOGIC WITH EQUALITY
