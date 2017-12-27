@@ -52,6 +52,7 @@ The ones WITH "Notes" may have to be processed manually.
 
 DONE:
 Date      Old       New         Notes
+21-Dec-17 equid1    equid
 28-Jan-15 strssd    [--same--]  moved from NM's mathbox to main set.mm
 (older changes in set.mm than the above have already been applied to iset.mm;
 newer changes in set.mm might be worth applying here)
@@ -10724,22 +10725,17 @@ $)
   ${
     $d x y $.
     $( Identity law for equality (reflexivity).  Lemma 6 of [Tarski] p. 68.
+       This is often an axiom of equality in textbook systems, but we don't
+       need it as an axiom since it can be proved from our other axioms.
+
        This proof is similar to Tarski's and makes use of a dummy variable
-       ` y ` .  See ~ equid for a proof that avoids dummy variables (but is
-       less intuitive).  (Contributed by NM, 1-Apr-2005.) $)
-    equid1 $p |- x = x $=
+       ` y ` .  It also works in intuitionistic logic, unlike some other
+       possible ways of proving this theorem.  (Contributed by NM,
+       1-Apr-2005.) $)
+    equid $p |- x = x $=
       ( vy weq wex a9e ax-17 ax-8 pm2.43i exlimi ax-mp ) BACZBDAACZBAEKLBLBFKLB
       AAGHIJ $.
   $}
-
-  $( Identity law for equality (reflexivity).  Lemma 6 of [Tarski] p. 68.  This
-     is often an axiom of equality in textbook systems, but we don't need it as
-     an axiom since it can be proved from our other axioms.  (The proof has
-     been modified to use ~ equid1 for compatibility with intuitionistic
-     logic.)  (Contributed by NM, 30-Nov-2008.)  (Revised by NM,
-     3-Feb-2015.) $)
-  equid $p |- x = x $=
-    ( equid1 ) AB $.
 
   $( One of the two equality axioms of standard predicate calculus, called
      reflexivity of equality.  (The other one is ~ stdpc7 .)  Axiom 6 of
@@ -10752,7 +10748,7 @@ $)
   $( Commutative law for equality.  Lemma 7 of [Tarski] p. 69.  (Contributed by
      NM, 5-Aug-1993.) $)
   equcomi $p |- ( x = y -> y = x ) $=
-    ( weq equid1 ax-8 mpi ) ABCAACBACADABAEF $.
+    ( weq equid ax-8 mpi ) ABCAACBACADABAEF $.
 
   $( Commutative law for equality.  (Contributed by NM, 20-Aug-1993.) $)
   equcom $p |- ( x = y <-> y = x ) $=
@@ -12082,7 +12078,7 @@ $)
        without one or more of these axioms in special cases.  (Contributed by
        NM, 20-May-2008.) $)
     ax16i $p |- ( A. x x = y -> ( ph -> A. x ph ) ) $=
-      ( weq wal wi ax-17 ax-8 cbv3 a4imv equid1 mpi syl syl5com alimd mpcom
+      ( weq wal wi ax-17 ax-8 cbv3 a4imv equid mpi syl syl5com alimd mpcom
       alimi biimpcd biimprd syl6com ) CDHZCIZCEHZEIZAACIZJUFEDHZEIZUHUEUJCEUEEK
       ZUJCKCEDLMUKECHZEIZUHUEUKUNUJUEECECDLNUEUJUMEULUEDCHZUJUMUECCHUOCOCDCLPUJ
       DEHZUOUMJUJEEHZUPEOZEDELPDECLQRSTUMUGEUMUQUGURECELPZUAQQAUHBEIUIAUGBEAEKZ
@@ -14546,7 +14542,7 @@ $)
        15-Jan-2008.) $)
     a12study $p |- ( -. A. z z = x -> ( -. A. z z = y
                      -> ( x = y -> A. z x = y ) ) ) $=
-      ( weq wa wex wal wn imnan equid1 ax-8 mpi imim1i sylbir alimi hbn1 hba1
+      ( weq wa wex wal wn imnan equid ax-8 mpi imim1i sylbir alimi hbn1 hba1
       wi con2i df-ex sylibr hban ax-11o syl5 imp3a alrimd sylan9 exlimd ex syl7
       syl ) ABFZACFZCBFZGZCHZCAFZCIJZUPCIJZUNCIZUNUQJZCIZJURVDUNVDUSUPJZTZCIUNJ
       VCVFCVCUOVETVFUOUPKUSUOVEUSCCFUOCLCACMNOPQEUMUAUQCUBUCUTVAURVBTUTVAGUQVBC
@@ -14595,7 +14591,7 @@ $)
        by NM, 1-Mar-2013.) $)
     a12study3 $p |- ( -. A. z z = x -> ( -. A. z z = y
        -> ( x = y -> A. z x = y ) ) ) $=
-      ( weq wal wn wi wa wb wex hbn1 hba1 equid1 ax-8 ax-11o syl5 imp3a exlimd
+      ( weq wal wn wi wa wb wex hbn1 hba1 equid ax-8 ax-11o syl5 imp3a exlimd
       mpi syl7 ancomsd anim12ii albiim syl6ibr a5i syl6 ex ) CAFZCGHZCBFZCGHZAB
       FZUNCGZIUKUMJZUNUJULKZCGZUOUPUNUJULIZCGZULUJIZCGZJZURUNACFZULJZCLZUPVCDUK
       VFUTUMVBUKVEUTCUJCMUSCNUKVDULUTVDUJUKULUTIVDAAFUJAOACAPUAZULCAQRSTUMVEVBC
