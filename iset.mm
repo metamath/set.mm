@@ -12852,6 +12852,29 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
+    sbequif.1 $e |- ( ph -> A. x ph ) $.
+    sbequif.2 $e |- ( ph -> A. y ph ) $.
+    $( Version of ~ sbequi in which neither ` x ` nor ` y ` is free in
+       ` ph ` .  Like ~ sbequiv , this is a weaker version of ~ sbequi which we
+       have managed to prove in intuitionistic logic.  (Contributed by Jim
+       Kingdon, 26-Dec-2017.) $)
+    sbequif $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
+      ( cv wceq wsbc wex wal hbsb3 equvini stdpc7
+      wi wa sbequ1 sylan9 eximi syl 19.35-1 syl5 19.9 biimpi syl6 ) BGZ
+      CGZHZADUFIZADUGIZDJZUJUIUIDKZUHUKADBELUHUIUJOZDJZULUKOUHUFDGZHZUO
+      UGHZPZDJUNBCDMURUMDUPUIAUQUJABDNADCQRSTUIUJDUATUBUKUJUJDADCFLUCUD
+      UE $.
+
+    $( Version of ~ sbequ in which neither ` x ` nor ` y ` is free in ` ph ` .
+       Like ~ sbequv , this is a weaker version of ~ sbequ which we have
+       managed to prove in intuitionistic logic.  (Contributed by Jim Kingdon,
+       26-Dec-2017.) $)
+    sbequf $p |- ( x = y -> ( [ x / z ] ph <-> [ y / z ] ph ) ) $=
+      ( weq wsb sbequif wi equcoms impbid ) BCGADBHZADCHZABCDEFINMJCBACBDFEIKL
+      $.
+  $}
+
+  ${
     $d x z $.  $d y z $.
     hbsbv.1 $e |- ( ph -> A. z ph ) $.
     $( This is a version of ~ hbsb with an extra distinct variable constraint,
@@ -12886,6 +12909,19 @@ $( The theorems in this section make use of the $d statement. $)
        that is).  (Contributed by Jim Kingdon, 25-Dec-2017.) $)
     sbco2vALT $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
       ( wsb hbsbv sbequv sbie ) ABDFABCFDCABCDEGADCBHI $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.
+    sbco2vf.1 $e |- ( ph -> A. z ph ) $.
+    sbco2vf.2 $e |- ( ph -> A. y ph ) $.
+    $( Version of ~ sbco2 with additional constraints.  It requires that ` y `
+       (as well as ` z ` ) is not free in ` ph ` , and has a few distinct
+       variable constraints: ` z ` and the other two variables, but, unlike
+       ~ sbco2v , not ` x ` and ` y ` .  (Contributed by Jim Kingdon,
+       26-Dec-2017.) $)
+    sbco2vf $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
+      ( cv wsbc hbsbv sbequf sbie ) ABDGHABCGHDCABCDEIADCBEFJK $.
   $}
 
   ${
