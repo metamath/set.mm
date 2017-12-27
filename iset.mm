@@ -13066,7 +13066,8 @@ $( The theorems in this section make use of the $d statement. $)
     $d x y $.  $d x ph $.
     $( Elimination of substitution.  (Contributed by NM, 5-Aug-1993.) $)
     sbelx $p |- ( ph <-> E. x ( x = y /\ [ x / y ] ph ) ) $=
-      ( wsb weq wa wex sbid2v sb5 bitr3i ) AACBDZBCDBCEKFBGABCHKBCIJ $.
+      ( cv wsbc wceq wa wex ax-17 sbid2xy sb5 bitr3i ) AACBDZEZBCDZEM
+      OFNGBHABCABIJNBCKL $.
   $}
 
   ${
