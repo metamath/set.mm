@@ -12020,7 +12020,7 @@ $)
     sbid2.1 $e |- ( ph -> A. x ph ) $.
     $( An identity law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
     sbid2 $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
-      ( wsb sbco sbf bitri ) ACBEBCEABCEAABCFABCDGH $.
+      ( cv wsbc sbcof2 sbf bitri ) ACBEFBCEZFABJFAABCDGABCDHI $.
   $}
 
   $( An idempotent law for substitution.  (Contributed by NM, 30-Jun-1994.)
