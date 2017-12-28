@@ -12455,15 +12455,6 @@ $)
   $}
 
   ${
-    $d x y $.
-    sbid2xy.1 $e |- ( ph -> A. x ph ) $.
-    $( Version of ~ sbid2 where ` x ` and ` y ` are distinct.  (Contributed by
-       Jim Kingdon, 27-Dec-2017.) $)
-    sbid2xy $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
-      ( cv wsbc sbcov sbf bitri ) ACBEFBCEZFABJFAABCGABCDHI $.
-  $}
-
-  ${
     $d ph y $.  $d ps x $.
     $( Theorem *11.53 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
        Salmon, 24-May-2011.) $)
@@ -13119,7 +13110,7 @@ $( The theorems in this section make use of the $d statement. $)
     $d x y $.  $d x ph $.
     $( Elimination of substitution.  (Contributed by NM, 5-Aug-1993.) $)
     sbelx $p |- ( ph <-> E. x ( x = y /\ [ x / y ] ph ) ) $=
-      ( cv wsbc wceq wa wex ax-17 sbid2xy sb5 bitr3i ) AACBDZEZBCDZEM
+      ( cv wsbc wceq wa wex ax-17 sbid2 sb5 bitr3i ) AACBDZEZBCDZEM
       OFNGBHABCABIJNBCKL $.
   $}
 
