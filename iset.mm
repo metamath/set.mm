@@ -11450,6 +11450,19 @@ $)
       ( wsb wal sbimi hbsb2a syl ) ABCEZACFZBCEJBFAKBCDGABCHI $.
   $}
 
+  ${
+    sbanf.1 $e |- ( ph -> A. y ph ) $.
+    sbanf.2 $e |- ( ps -> A. y ps ) $.
+    $( Version of ~ sban where ` y ` is not free in ` ph ` or ` ps ` .
+       (Contributed by Jim Kingdon, 27-Dec-2017.) $)
+    sbanf $p |- ( [ y / x ] ( ph /\ ps )
+                  <-> ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
+      ( wa cv wsbc wceq wi wal hban sb6f anbi12i bitr4i
+      19.26 pm4.76 albii bitri ) ABGZCDHZICHUBJZUAKZCLZACUBIZBCUBIZGZUA
+      CDABDEFMNUHUCAKZUCBKZGZCLZUEUHUICLZUJCLZGULUFUMUGUNACDENBCDFNOUIU
+      JCQPUKUDCUCABRSTP $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
                   Predicate calculus with distinct variables
