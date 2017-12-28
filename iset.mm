@@ -11461,6 +11461,14 @@ $)
       19.26 pm4.76 albii bitri ) ABGZCDHZICHUBJZUAKZCLZACUBIZBCUBIZGZUA
       CDABDEFMNUHUCAKZUCBKZGZCLZUEUHUICLZUJCLZGULUFUMUGUNACDENBCDFNOUIU
       JCQPUKUDCUCABRSTP $.
+
+    $( Version of ~ sbi1 where ` y ` is not free in ` ph ` or ` ps ` .
+       (Contributed by Jim Kingdon, 25-Dec-2017.) $)
+    sbi1f $p |- ( [ y / x ] ( ph -> ps )
+                   -> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
+      ( cv wsbc wceq wal sb6f hbim ax-2 al2imi sb2 syl6
+      wi sylbi syl5bi ) ACDGZHCGTIZAQZCJZABQZCTHZBCTHZACDEKUEUAUDQZCJZU
+      CUFQUDCDABDEFLKUHUCUABQZCJUFUGUBUICUAABMNBCDOPRS $.
   $}
 
 $(
