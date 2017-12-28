@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Dec-2017
+$( iset.mm - Version of 28-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11479,6 +11479,32 @@ $)
       sbi1f anim12i sylibr sylbi ) ABGZCDHZIZABJZCUBIZBAJZCUBIZKZACUBIZ
       BCUBIZGZUCUDUFKZCUBIUHUAULCDABLMUDUFCDABDEFNBADFENOPUHUIUJJZUJUIJ
       ZKUKUEUMUGUNABCDEFQBACDFEQRUIUJLST $.
+  $}
+
+  ${
+    sbcof.1 $e |- ( ph -> A. y ph ) $.
+    $( Version of ~ sbco where ` y ` is not free in ` ph ` .  (Contributed by
+       Jim Kingdon, 28-Dec-2017.) $)
+    sbcof $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
+      ( cv wsbc sbf sbbii ) ACBEFABCACBDGH $.
+  $}
+
+  ${
+    sbcof2.1 $e |- ( ph -> A. x ph ) $.
+    $( Version of ~ sbco where ` x ` is not free in ` ph ` .  (Contributed by
+       Jim Kingdon, 28-Dec-2017.) $)
+    sbcof2 $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
+      ( cv wsbc wceq wi wal hbsb3 sb6f bitri imim2i syl alimi wex wa eximi sb5f
+      exbii imbi2i albii ax-11 equcomi imim1i pm2.43 imim2d pm2.43b sylbi ax-i9
+      syl6 exim mpi ax-ial 19.9 biimpi sb2 3syl sb1 ax-ia1 19.8a ax-i11e equcom
+      jca anbi1i biimpri ax-ia2 imim12i equcoms imdistani anbi2i sylibr impbii
+      ax-mp ) ACBEZFZBCEZFZABVQFZVRVOVQGZVTAHZBIZHZBIZWBVSVRVTVQVOGZAHZCIZHZBIZ
+      WDVRVTVPHZBIWIVPBCACBDJZKWJWHBVPWGVTACBDKUAUBLWHWCBWHVTWBVTWGWBVTVTWGVTWF
+      HZBIWBWFBCUCWLWABWLVTWAHWAWFWAVTVTWEABCUDUEMVTAUFNOUKUGUHOUIWDWBBPZWBWDVT
+      BPWMBCUJVTWBBULUMWMWBWBBWABUNUOUPNABCUQURVSVTWEAQZCPZQZBPZVRVSVTVTAQZBPZQ
+      ZBPZWQVSWSXAABCUSWRWTBWRVTWSVTAUTWRBVAVDRNWTWPBVTWSWOWSWOHZCBWEWNBPZWEWNQ
+      ZCPZHZHWEXBHWNCBVBXFXBWEWSXCXEWOXCWSWNWRBWEVTACBVCVETVFXDWNCWEWNVGRVHMVNV
+      IVJRNVRVTVPQZBPWQVPBCWKSXGWPBVPWOVTACBDSVKTLVLVM $.
   $}
 
 $(
