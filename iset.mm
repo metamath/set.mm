@@ -11469,6 +11469,16 @@ $)
       ( cv wsbc wceq wal sb6f hbim ax-2 al2imi sb2 syl6
       wi sylbi syl5bi ) ACDGZHCGTIZAQZCJZABQZCTHZBCTHZACDEKUEUAUDQZCJZU
       CUFQUDCDABDEFLKUHUCUABQZCJUFUGUBUICUAABMNBCDOPRS $.
+
+    $( Version of ~ sbi1f for substitution of a biconditional rather than an
+       implication (one direction of ~ sbbi where ` y ` is not free in ` ph `
+       or ` ps ` .  (Contributed by Jim Kingdon, 27-Dec-2017.) $)
+    sbbi1f $p |- ( [ y / x ] ( ph <-> ps )
+                    -> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
+      ( wb cv wsbc wi wa dfbi2 sbbii hbim sbanf bitri
+      sbi1f anim12i sylibr sylbi ) ABGZCDHZIZABJZCUBIZBAJZCUBIZKZACUBIZ
+      BCUBIZGZUCUDUFKZCUBIUHUAULCDABLMUDUFCDABDEFNBADFENOPUHUIUJJZUJUIJ
+      ZKUKUEUMUGUNABCDEFQBACDFEQRUIUJLST $.
   $}
 
 $(
