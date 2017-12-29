@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Dec-2017
+$( iset.mm - Version of 29-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11927,10 +11927,12 @@ $)
       ( wb wsb sbrbis sbf bibi2i bitri ) ACHDEIBCDEIZHBCHABCDEGJNCBCDEFKLM $.
   $}
 
-  $( A specialization theorem.  (Contributed by NM, 5-Aug-1993.) $)
+  $( A specialization theorem, mostly the same as Theorem 19.8 of [Margaris]
+     p. 89.  (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
+     29-Dec-2017.) $)
   a4sbe $p |- ( [ y / x ] ph -> E. x ph ) $=
-    ( wsb wn wal wex stdpc4 sbn sylib con2i df-ex sylibr ) ABCDZAEZBFZEABGPNPOB
-    CDNEOBCHABCIJKABLM $.
+    ( cv wsbc wceq wa wex sb1 ax-ia2 eximi syl ) ABCDZEBDMFZAGZBHABHA
+    BCIOABNAJKL $.
 
   $( Specialization of implication.  (Contributed by NM, 5-Aug-1993.)  (Proof
      shortened by Andrew Salmon, 25-May-2011.) $)
