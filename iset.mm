@@ -10923,6 +10923,22 @@ $)
   $}
 
   ${
+    equsexd.1 $e |- ( ph -> A. x ph ) $.
+    equsexd.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
+    equsexd.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
+    $( Deduction form of ~ equsex .  (Contributed by Jim Kingdon,
+       29-Dec-2017.) $)
+    equsexd $p |- ( ph -> ( E. x ( x = y /\ ps ) <-> ch ) ) $=
+      ( cv wceq wa wex wb wi bi1 imim2i 3syl wal a1i imp exlimd2 prth
+      pm3.31 a9e jca syl 19.26 syl6ibr anabsi5 idd bi2 jcad eximd mpi
+      pm2.04 ex impbid ) ADIEIJZBKZDLZCAUSCDFGAURBCMZNZURBCNZNUSCNHVA
+      VCURBCOPURBCUCQUAACUTACKZURDLUTDEUDVDURUSDACVDDRZAVDADRZCDRZKZV
+      EAAVFNZCVGNZKVDVHNAVIVJVIAFSGUEAVFCVGUBUFACDUGUHUIVDURURBACURUR
+      NZCVKNACURUJSTACURBNZAVBURCBNZNCVLNHVAVMURBCUKPURCBUOQTULUMUNUP
+      UQ $.
+  $}
+
+  ${
     dvelimfALT.1 $e |- ( ph -> A. x ph ) $.
     dvelimfALT.2 $e |- ( ps -> A. z ps ) $.
     dvelimfALT.3 $e |- ( z = y -> ( ph <-> ps ) ) $.
