@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Dec-2017
+$( iset.mm - Version of 30-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -10289,6 +10289,18 @@ $)
        5-Aug-1993.)  (Proof shortened by Andrew Salmon, 13-May-2011.) $)
     exlimi $p |- ( E. x ph -> ps ) $=
       ( wi wex 19.23 mpgbi ) ABFACGBFCABCDHEI $.
+  $}
+
+  ${
+    exlimd2.1 $e |- ( ph -> A. x ph ) $.
+    exlimd2.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
+    exlimd2.3 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Deduction from Theorem 19.23 of [Margaris] p. 90.  Similar to ~ exlimd
+       but with one slightly different hypothesis.  (Contributed by Jim
+       Kingdon, 30-Dec-2017.) $)
+    exlimd2 $p |- ( ph -> ( E. x ps -> ch ) ) $=
+      ( wal wi wex alrimi 19.23t biimpd sylc ) ACCDHIZDHZBCIZDHZBDJCI
+      ZAODEFKAQDEGKPRSBCDLMN $.
   $}
 
   ${
