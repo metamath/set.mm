@@ -12485,6 +12485,20 @@ $)
   $}
 
   ${
+    $d y z $.
+    $( Equality implies that variables behave similarly in substitution.
+       Although this theorem appears similar to ~ drsb1 , the additional
+       quantifier in the latter narrows it signficantly.  For a similar theorem
+       involving the variable being substituted, rather than the variable being
+       substituted for, see ~ sbequ .  (Contributed by Jim Kingdon,
+       30-Dec-2017.) $)
+    sbrequiv $p |- ( x = y -> ( [ z / x ] ph -> [ z / y ] ph ) ) $=
+      ( wsb wi weq wa wex sb1 ax-i11e equtr imp anim1i anasss eximi sb5 syl6ibr
+      syl56 equcoms ) ABDEZACDEZFCBCBGZUACDGZAHZCIZUBUABDGZAHZBIUCUCUHHZCIUFABD
+      JUHCBKUIUECUCUGAUEUCUGHUDAUCUGUDCBDLMNOPSACDQRT $.
+  $}
+
+  ${
     $d ph y $.  $d ps x $.
     $( Theorem *11.53 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
        Salmon, 24-May-2011.) $)
