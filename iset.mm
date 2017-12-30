@@ -13179,6 +13179,17 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
+    $d x y z $.
+    $( Move existential quantifier in and out of substitution.  Identical to
+       ~ sbex except that it has an additional distinct variable constraint on
+       ` y ` and ` z ` .  (Contributed by Jim Kingdon, 29-Dec-2017.) $)
+    sbexyz $p |- ( [ z / y ] E. x ph <-> E. x [ z / y ] ph ) $=
+      ( wex cv wsbc wceq wa sb5 ax-17 19.42 exbii excom 3bitr2i bitr4i
+      ) ABEZCDFZGZCFRHZAIZCEZBEZACRGZBESTQIZCEUABEZCEUCQCDJUFUECTABTBKL
+      MUACBNOUDUBBACDJMP $.
+  $}
+
+  ${
     $d x z $.  $d y z $.
     sbalv.1 $e |- ( [ y / x ] ph <-> ps ) $.
     $( Quantify with new variable inside substitution.  (Contributed by NM,
