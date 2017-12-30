@@ -13156,6 +13156,19 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
+    $d x y z $.
+    $( Move universal quantifier in and out of substitution.  Identical to
+       ~ sbal except that it has an additional distinct variable constraint on
+       ` y ` and ` z ` .  (Contributed by Jim Kingdon, 29-Dec-2017.) $)
+    sbalyz $p |- ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) $=
+      ( wal cv wsbc ax-ial hbsbv ax-4 sbimi alimi syl wceq wi sb6 albii
+      alcom bitri ax-17 alim syl5 sb2 sylbi impbii ) ABEZCDFZGZACUGGZBE
+      ZUHUHBEUJUFCDBABHIUHUIBUFACDABJKLMUJCFUGNZAOZBEZCEZUHUJULCEZBEUNU
+      IUOBACDPQULBCRSUNUKUFOZCEUHUMUPCUKUKBEUMUFUKBTUKABUAUBLUFCDUCMUDU
+      E $.
+  $}
+
+  ${
     $d x y $.  $d x z $.
     $( Move existential quantifier in and out of substitution.  (Contributed by
        NM, 27-Sep-2003.) $)
@@ -13163,6 +13176,17 @@ $( The theorems in this section make use of the $d statement. $)
       ( wn wal wsb wex sbn sbal albii bitri xchbinx df-ex sbbii 3bitr4i ) AEZBF
       ZEZCDGZACDGZEZBFZEABHZCDGUABHTRCDGZUCRCDIUEQCDGZBFUCQBCDJUFUBBACDIKLMUDSC
       DABNOUABNP $.
+  $}
+
+  ${
+    $d x y z $.
+    $( Move existential quantifier in and out of substitution.  Identical to
+       ~ sbex except that it has an additional distinct variable constraint on
+       ` y ` and ` z ` .  (Contributed by Jim Kingdon, 29-Dec-2017.) $)
+    sbexyz $p |- ( [ z / y ] E. x ph <-> E. x [ z / y ] ph ) $=
+      ( wex cv wsbc wceq wa sb5 ax-17 19.42 exbii excom 3bitr2i bitr4i
+      ) ABEZCDFZGZCFRHZAIZCEZBEZACRGZBESTQIZCEUABEZCEUCQCDJUFUECTABTBKL
+      MUACBNOUDUBBACDJMP $.
   $}
 
   ${
