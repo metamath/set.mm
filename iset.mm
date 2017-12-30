@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Dec-2017
+$( iset.mm - Version of 29-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11450,6 +11450,63 @@ $)
       ( wsb wal sbimi hbsb2a syl ) ABCEZACFZBCEJBFAKBCDGABCHI $.
   $}
 
+  ${
+    sbanf.1 $e |- ( ph -> A. y ph ) $.
+    sbanf.2 $e |- ( ps -> A. y ps ) $.
+    $( Version of ~ sban where ` y ` is not free in ` ph ` or ` ps ` .
+       (Contributed by Jim Kingdon, 27-Dec-2017.) $)
+    sbanf $p |- ( [ y / x ] ( ph /\ ps )
+                  <-> ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
+      ( wa cv wsbc wceq wi wal hban sb6f anbi12i bitr4i
+      19.26 pm4.76 albii bitri ) ABGZCDHZICHUBJZUAKZCLZACUBIZBCUBIZGZUA
+      CDABDEFMNUHUCAKZUCBKZGZCLZUEUHUICLZUJCLZGULUFUMUGUNACDENBCDFNOUIU
+      JCQPUKUDCUCABRSTP $.
+
+    $( Version of ~ sbi1 where ` y ` is not free in ` ph ` or ` ps ` .
+       (Contributed by Jim Kingdon, 25-Dec-2017.) $)
+    sbi1f $p |- ( [ y / x ] ( ph -> ps )
+                   -> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
+      ( cv wsbc wceq wal sb6f hbim ax-2 al2imi sb2 syl6
+      wi sylbi syl5bi ) ACDGZHCGTIZAQZCJZABQZCTHZBCTHZACDEKUEUAUDQZCJZU
+      CUFQUDCDABDEFLKUHUCUABQZCJUFUGUBUICUAABMNBCDOPRS $.
+
+    $( Version of ~ sbi1f for substitution of a biconditional rather than an
+       implication (one direction of ~ sbbi where ` y ` is not free in ` ph `
+       or ` ps ` .  (Contributed by Jim Kingdon, 27-Dec-2017.) $)
+    sbbi1f $p |- ( [ y / x ] ( ph <-> ps )
+                    -> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
+      ( wb cv wsbc wi wa dfbi2 sbbii hbim sbanf bitri
+      sbi1f anim12i sylibr sylbi ) ABGZCDHZIZABJZCUBIZBAJZCUBIZKZACUBIZ
+      BCUBIZGZUCUDUFKZCUBIUHUAULCDABLMUDUFCDABDEFNBADFENOPUHUIUJJZUJUIJ
+      ZKUKUEUMUGUNABCDEFQBACDFEQRUIUJLST $.
+  $}
+
+  ${
+    sbcof.1 $e |- ( ph -> A. y ph ) $.
+    $( Version of ~ sbco where ` y ` is not free in ` ph ` .  (Contributed by
+       Jim Kingdon, 28-Dec-2017.) $)
+    sbcof $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
+      ( cv wsbc sbf sbbii ) ACBEFABCACBDGH $.
+  $}
+
+  ${
+    sbcof2.1 $e |- ( ph -> A. x ph ) $.
+    $( Version of ~ sbco where ` x ` is not free in ` ph ` .  (Contributed by
+       Jim Kingdon, 28-Dec-2017.) $)
+    sbcof2 $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
+      ( cv wsbc wceq wi wal hbsb3 sb6f bitri imim2i syl alimi wex wa eximi sb5f
+      exbii imbi2i albii ax-11 equcomi imim1i pm2.43 imim2d pm2.43b sylbi ax-i9
+      syl6 exim mpi ax-ial 19.9 biimpi sb2 3syl sb1 ax-ia1 19.8a ax-i11e equcom
+      jca anbi1i biimpri ax-ia2 imim12i equcoms imdistani anbi2i sylibr impbii
+      ax-mp ) ACBEZFZBCEZFZABVQFZVRVOVQGZVTAHZBIZHZBIZWBVSVRVTVQVOGZAHZCIZHZBIZ
+      WDVRVTVPHZBIWIVPBCACBDJZKWJWHBVPWGVTACBDKUAUBLWHWCBWHVTWBVTWGWBVTVTWGVTWF
+      HZBIWBWFBCUCWLWABWLVTWAHWAWFWAVTVTWEABCUDUEMVTAUFNOUKUGUHOUIWDWBBPZWBWDVT
+      BPWMBCUJVTWBBULUMWMWBWBBWABUNUOUPNABCUQURVSVTWEAQZCPZQZBPZVRVSVTVTAQZBPZQ
+      ZBPZWQVSWSXAABCUSWRWTBWRVTWSVTAUTWRBVAVDRNWTWPBVTWSWOWSWOHZCBWEWNBPZWEWNQ
+      ZCPZHZHWEXBHWNCBVBXFXBWEWSXCXEWOXCWSWNWRBWEVTACBVCVETVFXDWNCWEWNVGRVHMVNV
+      IVJRNVRVTVPQZBPWQVPBCWKSXGWPBVPWOVTACBDSVKTLVLVM $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
                   Predicate calculus with distinct variables
@@ -11870,10 +11927,12 @@ $)
       ( wb wsb sbrbis sbf bibi2i bitri ) ACHDEIBCDEIZHBCHABCDEGJNCBCDEFKLM $.
   $}
 
-  $( A specialization theorem.  (Contributed by NM, 5-Aug-1993.) $)
+  $( A specialization theorem, mostly the same as Theorem 19.8 of [Margaris]
+     p. 89.  (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
+     29-Dec-2017.) $)
   a4sbe $p |- ( [ y / x ] ph -> E. x ph ) $=
-    ( wsb wn wal wex stdpc4 sbn sylib con2i df-ex sylibr ) ABCDZAEZBFZEABGPNPOB
-    CDNEOBCHABCIJKABLM $.
+    ( cv wsbc wceq wa wex sb1 ax-ia2 eximi syl ) ABCDZEBDMFZAGZBHABHA
+    BCIOABNAJKL $.
 
   $( Specialization of implication.  (Contributed by NM, 5-Aug-1993.)  (Proof
      shortened by Andrew Salmon, 25-May-2011.) $)
@@ -11963,7 +12022,7 @@ $)
     sbid2.1 $e |- ( ph -> A. x ph ) $.
     $( An identity law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
     sbid2 $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
-      ( wsb sbco sbf bitri ) ACBEBCEABCEAABCFABCDGH $.
+      ( cv wsbc sbcof2 sbf bitri ) ACBEFBCEZFABJFAABCDGABCDHI $.
   $}
 
   $( An idempotent law for substitution.  (Contributed by NM, 30-Jun-1994.)
@@ -12395,15 +12454,6 @@ $)
     sbcov $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
       ( cv wsbc wb wceq equsb2 sbequ12 bicomd sbimi ax-mp sbbi1v ) ACBD
       ZEZAFZBCDZEZOBQEABQEFQNGZBQERBCHSPBCSAOACBIJKLOABCML $.
-  $}
-
-  ${
-    $d x y $.
-    sbid2xy.1 $e |- ( ph -> A. x ph ) $.
-    $( Version of ~ sbid2 where ` x ` and ` y ` are distinct.  (Contributed by
-       Jim Kingdon, 27-Dec-2017.) $)
-    sbid2xy $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
-      ( cv wsbc sbcov sbf bitri ) ACBEFBCEZFABJFAABCGABCDHI $.
   $}
 
   ${
@@ -13062,7 +13112,7 @@ $( The theorems in this section make use of the $d statement. $)
     $d x y $.  $d x ph $.
     $( Elimination of substitution.  (Contributed by NM, 5-Aug-1993.) $)
     sbelx $p |- ( ph <-> E. x ( x = y /\ [ x / y ] ph ) ) $=
-      ( cv wsbc wceq wa wex ax-17 sbid2xy sb5 bitr3i ) AACBDZEZBCDZEM
+      ( cv wsbc wceq wa wex ax-17 sbid2 sb5 bitr3i ) AACBDZEZBCDZEM
       OFNGBHABCABIJNBCKL $.
   $}
 
