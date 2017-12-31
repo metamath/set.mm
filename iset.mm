@@ -12508,6 +12508,25 @@ $)
   $}
 
   ${
+    $d x y z $.  $d ph x $.
+
+    $( Fishy-looking theorem.  (Contributed by Jim Kingdon, 30-Dec-2017.) $)
+    sbrequv-paradox $p |- ( [ z / y ] ph <-> ph ) $=
+      ( vx cv wsbc ax-17 sbrequv sbie sbf sbbii bitr3i bitri ) ABCEZFZA
+      DBEZFZAOADNFZDPFQRODBODGADBCHIRADBADCADGZJKLADBSJM $.
+  $}
+
+  ${
+    $d x y $.
+    $( There is only one object in the universe.  Not completely sure we have
+       the ability to turn ~ sbrequv-paradox an outright contradiction without
+       set theory axioms (or perhaps we do), but this should be enough to
+       illustrate a problem.  (Contributed by Jim Kingdon, 30-Dec-2017.) $)
+    sbrequv-trouble $p |- x = y $=
+      ( cv wceq wsbc equsb2 sbrequv-paradox mpbi ) ACZBCDZBIEJBAFJBAGH $.
+  $}
+
+  ${
     $d ph y $.  $d ps x $.
     $( Theorem *11.53 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
        Salmon, 24-May-2011.) $)
