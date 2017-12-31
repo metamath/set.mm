@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Dec-2017
+$( iset.mm - Version of 30-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -10292,6 +10292,18 @@ $)
   $}
 
   ${
+    exlimd2.1 $e |- ( ph -> A. x ph ) $.
+    exlimd2.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
+    exlimd2.3 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Deduction from Theorem 19.23 of [Margaris] p. 90.  Similar to ~ exlimd
+       but with one slightly different hypothesis.  (Contributed by Jim
+       Kingdon, 30-Dec-2017.) $)
+    exlimd2 $p |- ( ph -> ( E. x ps -> ch ) ) $=
+      ( wal wi wex alrimi 19.23t biimpd sylc ) ACCDHIZDHZBCIZDHZBDJCI
+      ZAODEFKAQDEGKPRSBCDLMN $.
+  $}
+
+  ${
     exlimd.1 $e |- ( ph -> A. x ph ) $.
     exlimd.2 $e |- ( ch -> A. x ch ) $.
     exlimd.3 $e |- ( ph -> ( ps -> ch ) ) $.
@@ -10908,6 +10920,22 @@ $)
     equsex $p |- ( E. x ( x = y /\ ph ) <-> ps ) $=
       ( cv wceq wa wex biimpa exlimi a9e idd biimprcd jcad eximd mpi impbii ) C
       GDGHZAIZCJZBUABCETABFKLBTCJUBCDMBTUACEBTTABTNTABFOPQRS $.
+  $}
+
+  ${
+    equsexd.1 $e |- ( ph -> A. x ph ) $.
+    equsexd.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
+    equsexd.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
+    $( Deduction form of ~ equsex .  (Contributed by Jim Kingdon,
+       29-Dec-2017.) $)
+    equsexd $p |- ( ph -> ( E. x ( x = y /\ ps ) <-> ch ) ) $=
+      ( cv wceq wa wex wb wi bi1 imim2i 3syl wal a1i imp exlimd2 prth
+      pm3.31 a9e jca syl 19.26 syl6ibr anabsi5 idd bi2 jcad eximd mpi
+      pm2.04 ex impbid ) ADIEIJZBKZDLZCAUSCDFGAURBCMZNZURBCNZNUSCNHVA
+      VCURBCOPURBCUCQUAACUTACKZURDLUTDEUDVDURUSDACVDDRZAVDADRZCDRZKZV
+      EAAVFNZCVGNZKVDVHNAVIVJVIAFSGUEAVFCVGUBUFACDUGUHUIVDURURBACURUR
+      NZCVKNACURUJSTACURBNZAVBURCBNZNCVLNHVAVMURBCUKPURCBUOQTULUMUNUP
+      UQ $.
   $}
 
   ${
@@ -12690,10 +12718,14 @@ $)
 
     $( Deduction used to change bound variables, using implicit substitition,
        particularly useful in conjunction with ~ dvelim .  (Contributed by NM,
-       2-Jan-2002.) $)
+       2-Jan-2002.)  (Proof rewritten by Jim Kingdon, 30-Dec-2017.) $)
     cbvexd $p |- ( ph -> ( E. x ps <-> E. y ch ) ) $=
-      ( wn wal wex hbnd weq wb notbi syl6ib cbvald notbid df-ex 3bitr4g ) ABIZD
-      JZICIZEJZIBDKCEKAUBUDAUAUCDEFABEFGLADEMBCNUAUCNHBCOPQRBDSCEST $.
+      ( wex ax-17 cv wceq wa wb wi equsexd simpr eximi syl6bir wal
+      hbex equcomi bicom1 imim12i syl exlimd eximd 19.12 syl6 exlimd2
+      a1i impbid ) ABDIZCEIZABUNDADJZCDECDJZUAABEKZDKZLZCMZEIUNACBEDF
+      GAURUQLZBCNZOUSCBNZOHUSVAVBVCEDUBBCUCUDUEPUTCEUSCQRSUFACUMEFAUM
+      BETZDIUMETABVDDUOGUGBDEUHUIACVABMZDIUMABCDEUOCCDTOAUPUKHPVEBDVA
+      BQRSUJUL $.
   $}
 
   ${
