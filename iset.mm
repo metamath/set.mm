@@ -12486,16 +12486,25 @@ $)
 
   ${
     $d y z $.
+    $( Equality implies that variables behave similarly in substitution.  One
+       direction of ~ sbrequv .  (Contributed by Jim Kingdon, 30-Dec-2017.) $)
+    sbrequiv $p |- ( x = y -> ( [ z / x ] ph -> [ z / y ] ph ) ) $=
+      ( wsb wi weq wa wex sb1 ax-i11e equtr imp anim1i anasss eximi sb5 syl6ibr
+      syl56 equcoms ) ABDEZACDEZFCBCBGZUACDGZAHZCIZUBUABDGZAHZBIUCUCUHHZCIUFABD
+      JUHCBKUIUECUCUGAUEUCUGHUDAUCUGUDCBDLMNOPSACDQRT $.
+  $}
+
+  ${
+    $d y z $.  $d x z $.
     $( Equality implies that variables behave similarly in substitution.
        Although this theorem appears similar to ~ drsb1 , the additional
        quantifier in the latter narrows it signficantly.  For a similar theorem
        involving the variable being substituted, rather than the variable being
        substituted for, see ~ sbequ .  (Contributed by Jim Kingdon,
        30-Dec-2017.) $)
-    sbrequiv $p |- ( x = y -> ( [ z / x ] ph -> [ z / y ] ph ) ) $=
-      ( wsb wi weq wa wex sb1 ax-i11e equtr imp anim1i anasss eximi sb5 syl6ibr
-      syl56 equcoms ) ABDEZACDEZFCBCBGZUACDGZAHZCIZUBUABDGZAHZBIUCUCUHHZCIUFABD
-      JUHCBKUIUECUCUGAUEUCUGHUDAUCUGUDCBDLMNOPSACDQRT $.
+    sbrequv $p |- ( x = y -> ( [ z / x ] ph <-> [ z / y ] ph ) ) $=
+      ( cv wceq wsbc sbrequiv wi equcoms impbid ) BECEFABDEZGZACLGZABCD
+      HNMICBACBDHJK $.
   $}
 
   ${
