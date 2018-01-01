@@ -1,4 +1,4 @@
-$( iset.mm - Version of 30-Dec-2017
+$( iset.mm - Version of 31-Dec-2017
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -9720,8 +9720,9 @@ $)
   $( Axiom of Variable Substitution for Existence.  This can be derived from
      ~ ax-11 in a classical context but a separate axiom is needed for
      intuitionistic predicate calculus.  (Contributed by Mario Carneiro,
-     31-Jan-2015.) $)
-  ax-i11e $a |- ( x = y -> ( E. y ph -> E. x ( x = y /\ ph ) ) ) $.
+     31-Jan-2015.)  (Revised by Mario Carneiro and Jim Kingdon,
+     31-Dec-2017.) $)
+  ax-i11e $a |- ( x = y -> ( E. x ( x = y /\ ph ) -> E. y ph ) ) $.
 
   $( Axiom of Quantifier Introduction.  One of the equality and substitution
      axioms of predicate calculus with equality.  Informally, it says that
@@ -10892,9 +10893,8 @@ $)
      but for ` E. ` rather than ` A. ` .  (Contributed by Jim Kingdon,
      21-Dec-2017.) $)
   ax10oe $p |- ( A. x x = y -> ( E. x ps -> E. y ps ) ) $=
-    ( cv wceq wal wex wa ax-10 wi ax-i11e equcoms a4s ax-ia2 a1i exim
-    alimi syl sylsyld ) BDZCDZEZBFUATEZCFZABGZUCAHZCGZACGZBCIUBUEUGJZ
-    BUICBACBKLMUDUFAJZCFUGUHJUCUJCUJUCUCANOQUFACPRS $.
+    ( cv wceq wal wex wa wi ax-ia3 alimi exim syl ax-i11e a4s syld )
+    BDCDEZBFZABGZQAHZBGZACGZRATIZBFSUAIQUCBQAJKATBLMQUAUBIBABCNOP $.
 
   $( Lemma used in proofs of substitution properties.  (Contributed by NM,
      5-Aug-1993.)  (Proof shortened by Mario Carneiro, 20-May-2014.) $)
@@ -10982,10 +10982,11 @@ $)
        Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).
        (Contributed by NM, 27-Feb-2005.)  (Revised by NM, 3-Feb-2015.) $)
     drex1 $p |- ( A. x x = y -> ( E. x ph <-> E. y ps ) ) $=
-      ( cv wceq wal wex wa wi ax-i11e a4s alequcoms hbae biantrurd bitr3d exbid
-      equcomi sylibd ax-4 bitr2d impbid ) CFZDFZGZCHZACIZBDIZUGUHUEUDGZAJZDIZUI
-      UHULKZDCUJUMDADCLMNUGUKBDCDDOUGAUKBUGUJAUFUJCCDSMPEQRTUGUIUFBJZCIZUHUFUIU
-      OKCBCDLMUGUNACCDCOUGABUNEUGUFBUFCUAPUBRTUC $.
+      ( cv wceq wal wex wa hbae biantrurd bitr2d exbid wi ax-i11e a4s
+      ax-4 sylbird equcomi bitr3d alequcoms impbid ) CFZDFZGZCHZACIZB
+      DIZUGUHUFBJZCIZUIUGUJACCDCKUGABUJEUGUFBUFCRLMNUFUKUIOCBCDPQSUGU
+      IUEUDGZAJZDIZUHUGUMBDCDDKUGAUMBUGULAUFULCCDTQLEUANUNUHOZDCULUOD
+      ADCPQUBSUC $.
   $}
 
   ${
@@ -11522,17 +11523,18 @@ $)
     $( Version of ~ sbco where ` x ` is not free in ` ph ` .  (Contributed by
        Jim Kingdon, 28-Dec-2017.) $)
     sbcof2 $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
-      ( cv wsbc wceq wi wal hbsb3 sb6f bitri imim2i syl alimi wex wa eximi sb5f
-      exbii imbi2i albii ax-11 equcomi imim1i pm2.43 imim2d pm2.43b sylbi ax-i9
-      syl6 exim mpi ax-ial 19.9 biimpi sb2 3syl sb1 ax-ia1 19.8a ax-i11e equcom
-      jca anbi1i biimpri ax-ia2 imim12i equcoms imdistani anbi2i sylibr impbii
-      ax-mp ) ACBEZFZBCEZFZABVQFZVRVOVQGZVTAHZBIZHZBIZWBVSVRVTVQVOGZAHZCIZHZBIZ
-      WDVRVTVPHZBIWIVPBCACBDJZKWJWHBVPWGVTACBDKUAUBLWHWCBWHVTWBVTWGWBVTVTWGVTWF
-      HZBIWBWFBCUCWLWABWLVTWAHWAWFWAVTVTWEABCUDUEMVTAUFNOUKUGUHOUIWDWBBPZWBWDVT
-      BPWMBCUJVTWBBULUMWMWBWBBWABUNUOUPNABCUQURVSVTWEAQZCPZQZBPZVRVSVTVTAQZBPZQ
-      ZBPZWQVSWSXAABCUSWRWTBWRVTWSVTAUTWRBVAVDRNWTWPBVTWSWOWSWOHZCBWEWNBPZWEWNQ
-      ZCPZHZHWEXBHWNCBVBXFXBWEWSXCXEWOXCWSWNWRBWEVTACBVCVETVFXDWNCWEWNVGRVHMVNV
-      IVJRNVRVTVPQZBPWQVPBCWKSXGWPBVPWOVTACBDSVKTLVLVM $.
+      ( cv wsbc wceq wi wal sb6f bitri imim1i imim2i syl alimi wex wa
+      jca eximi sb5f hbsb3 imbi2i albii equcomi pm2.43 imim2d pm2.43b
+      ax-11 syl6 sylbi ax-i9 exim mpi ax-ial 19.9 biimpi sb2 3syl sb1
+      ax-ia1 19.8a ax-i11e anim1i ax-mp imdistani anbi2i exbii sylibr
+      idi impbii ) ACBEZFZBCEZFZABVMFZVNVKVMGZVPAHZBIZHZBIZVRVOVNVPVM
+      VKGZAHZCIZHZBIZVTVNVPVLHZBIWEVLBCACBDUAZJWFWDBVLWCVPACBDJUBUCKW
+      DVSBWDVPVRVPWCVRVPVPWCVPWBHZBIVRWBBCUHWHVQBWHVPVQHVQWBVQVPVPWAA
+      BCUDZLMVPAUENOUIUFUGOUJVTVRBPZVRVTVPBPWJBCUKVPVRBULUMWJVRVRBVQB
+      UNUOUPNABCUQURVOVPWAAQZCPZQZBPZVNVOVPVPAQZBPZQZBPZWNVOWPWRABCUS
+      WOWQBWOVPWPVPAUTZWOBVARSNWQWMBVPWPWLVPWPWLHZHZVPVPWKQZBPZWLHZHX
+      AWKBCVBXDWTVPWPXCWLWOXBBWOVPWKWSVPWAAWIVCRSLMVDVIVESNVNVPVLQZBP
+      WNVLBCWGTXEWMBVLWLVPACBDTVFVGKVHVJ $.
   $}
 
 $(
