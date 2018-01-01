@@ -12485,6 +12485,48 @@ $)
   $}
 
   ${
+    $d y z $.
+    $( Equality implies that variables behave similarly in substitution.  One
+       direction of ~ sbrequv .  (Contributed by Jim Kingdon, 30-Dec-2017.) $)
+    sbrequiv $p |- ( x = y -> ( [ z / x ] ph -> [ z / y ] ph ) ) $=
+      ( wsb wi weq wa wex sb1 ax-i11e equtr imp anim1i anasss eximi sb5 syl6ibr
+      syl56 equcoms ) ABDEZACDEZFCBCBGZUACDGZAHZCIZUBUABDGZAHZBIUCUCUHHZCIUFABD
+      JUHCBKUIUECUCUGAUEUCUGHUDAUCUGUDCBDLMNOPSACDQRT $.
+  $}
+
+  ${
+    $d y z $.  $d x z $.
+    $( Equality implies that variables behave similarly in substitution.
+       Although this theorem appears similar to ~ drsb1 , the additional
+       quantifier in the latter narrows it signficantly.  For a similar theorem
+       involving the variable being substituted, rather than the variable being
+       substituted for, see ~ sbequ .  (Contributed by Jim Kingdon,
+       30-Dec-2017.) $)
+    sbrequv $p |- ( x = y -> ( [ z / x ] ph <-> [ z / y ] ph ) ) $=
+      ( cv wceq wsbc sbrequiv wi equcoms impbid ) BECEFABDEZGZACLGZABCD
+      HNMICBACBDHJK $.
+  $}
+
+  ${
+    $d x y z $.  $d ph x $.
+
+    $( Fishy-looking theorem.  (Contributed by Jim Kingdon, 30-Dec-2017.) $)
+    sbrequv-paradox $p |- ( [ z / y ] ph <-> ph ) $=
+      ( vx cv wsbc ax-17 sbrequv sbie sbf sbbii bitr3i bitri ) ABCEZFZA
+      DBEZFZAOADNFZDPFQRODBODGADBCHIRADBADCADGZJKLADBSJM $.
+  $}
+
+  ${
+    $d x y $.
+    $( There is only one object in the universe.  Not completely sure we have
+       the ability to turn ~ sbrequv-paradox an outright contradiction without
+       set theory axioms (or perhaps we do), but this should be enough to
+       illustrate a problem.  (Contributed by Jim Kingdon, 30-Dec-2017.) $)
+    sbrequv-trouble $p |- x = y $=
+      ( cv wceq wsbc equsb2 sbrequv-paradox mpbi ) ACZBCDZBIEJBAFJBAGH $.
+  $}
+
+  ${
     $d ph y $.  $d ps x $.
     $( Theorem *11.53 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
        Salmon, 24-May-2011.) $)
