@@ -8915,7 +8915,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( Soundness theorem for ~ df-nin . 
-       (Contributed by ?who?, 10-Jan-2015.) $)
+       (Contributed by SF, 10-Jan-2015.) $)
     ninjust $p |- { x | ( x e. A -/\ x e. B ) } =
              { y | ( y e. A -/\ y e. B ) } $=
       ( cv wcel wnan weq eleq1 nanbi12d cbvabv ) AEZCFZLDFZGBEZCFZODFZGABABHMP
@@ -8969,7 +8969,7 @@ $)
     $( [10-Jan-2015] $)
 
   $( Membership in intersection. 
-     (Contributed by ?who?, 10-Jan-2015.) $)
+     (Contributed by SF, 10-Jan-2015.) $)
   elin $p |- ( A e. ( B i^i C ) <-> ( A e. B /\ A e. C ) ) $=
     ( cin wcel cvv wa elex adantr cnin ccompl wnan elcomplg elning notbid bitrd
     wn df-in eleq2i df-nan con2bii 3bitr4g pm5.21nii ) ABCDZEZAFEZABEZACEZGZAU
@@ -8978,7 +8978,7 @@ $)
     $( [10-Jan-2015] $)
 
   $( Membership in union. 
-     (Contributed by ?who?, 10-Jan-2015.) $)
+     (Contributed by SF, 10-Jan-2015.) $)
   elun $p |- ( A e. ( B u. C ) <-> ( A e. B \/ A e. C ) ) $=
     ( cun wcel wo elex jaoi ccompl cnin wn wnan elning elcomplg nanbi12d bitrd
     cvv df-un eleq2i wa oran df-nan bitr4i 3bitr4g pm5.21nii ) ABCDZEZAQEZABEZ
@@ -8987,7 +8987,7 @@ $)
     $( [10-Jan-2015] $)
 
   $( Membership in difference. 
-     (Contributed by ?who?, 10-Jan-2015.) $)
+     (Contributed by SF, 10-Jan-2015.) $)
   eldif $p |- ( A e. ( B \ C ) <-> ( A e. B /\ -. A e. C ) ) $=
     ( cdif wcel ccompl cin wa wn df-dif eleq2i elin elcomplg pm5.32i 3bitri ) A
     BCDZEABCFZGZEABEZAQEZHSACEIZHPRABCJKABQLSTUAACBMNO $.
@@ -9003,7 +9003,7 @@ $)
   $}
 
   $( Membership in symmetric difference. 
-     (Contributed by ?who?, 10-Jan-2015.) $)
+     (Contributed by SF, 10-Jan-2015.) $)
   elsymdif $p |- ( A e. ( B (+) C ) <-> -. ( A e. B <-> A e. C ) ) $=
     ( cdif cun wcel wn wa wo csymdif wb elun eldif orbi12i df-symdif eleq2i xor
     bitri 3bitr4i ) ABCDZCBDZEZFZABFZACFZGHZUEUDGHZIZABCJZFUDUEKGUCATFZAUAFZIUH
@@ -9088,7 +9088,6 @@ $)
       ( csymdif cdif cun df-symdif nfdif nfun nfcxfr ) ABCFBCGZCBGZHBCIAMNABCDE
       JACBEDJKL $.
   $}
-
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -10663,8 +10662,8 @@ $)
     $( Deduction from a wff to a restricted class abstraction.  (Contributed by
        NM, 14-Jan-2014.) $)
     rabbi2dva $p |- ( ph -> ( A i^i B ) = { x e. A | ps } ) $=
-      ( cin cv wcel crab dfin5 rabbidva syl5eq ) ADEGCHEIZCDJBCDJCDEKANBCDFLM
-      $.
+      ( cin cv wcel crab wa cab elin abbi2i df-rab eqtr4i rabbidva syl5eq ) ADE
+      GZCHZEIZCDJZBCDJSTDIUAKZCLUBUCCSTDEMNUACDOPAUABCDFQR $.
   $}
 
   ${
@@ -11529,10 +11528,9 @@ $)
     $( Two ways of saying that two classes are disjoint (have no members in
        common).  (Contributed by NM, 17-Feb-2004.) $)
     disj $p |- ( ( A i^i B ) = (/) <-> A. x e. A -. x e. B ) $=
-      ( cin c0 wceq cv wcel wn wi wal wral wa cab df-in eqeq1i abeq1 imnan noel
-      wb nbn bitr2i albii 3bitri df-ral bitr4i ) BCDZEFZAGZBHZUICHZIZJZAKZULABL
-      UHUJUKMZANZEFUOUIEHZTZAKUNUGUPEABCOPUOAEQURUMAUMUOIURUJUKRUQUOUISUAUBUCUD
-      ULABUEUF $.
+      ( cv cin wcel wn wal wi c0 wceq wral wa df-an bitr2i con1bii albii df-ral
+      elin eq0 3bitr4i ) ADZBCEZFZGZAHUBBFZUBCFZGZIZAHUCJKUHABLUEUIAUIUDUDUFUGM
+      UIGUBBCSUFUGNOPQAUCTUHABRUA $.
 
     $( Two ways of saying that two classes are disjoint.  (Contributed by Jeff
        Madsen, 19-Jun-2011.) $)
@@ -14354,11 +14352,11 @@ $)
     $( The union of a pair is the union of its members.  Proposition 5.7 of
        [TakeutiZaring] p. 16.  (Contributed by NM, 23-Aug-1993.) $)
     unipr $p |- U. { A , B } = ( A u. B ) $=
-      ( vx vy cv wcel wo cab cpr wa wex cun cuni wceq 19.43 bitri clel3 exancom
-      vex elpr anbi2i andi exbii orbi12i 3bitr4ri abbii df-un df-uni 3eqtr4ri )
-      EGZAHZULBHZIZEJULFGZHZUPABKZHZLZFMZEJABNUROUOVAEUQUPAPZLZUQUPBPZLZIZFMVCF
-      MZVEFMZIVAUOVCVEFQUTVFFUTUQVBVDIZLVFUSVIUQUPABFUAUBUCUQVBVDUDRUEUMVGUNVHU
-      MVBUQLFMVGFULACSVBUQFTRUNVDUQLFMVHFULBDSVDUQFTRUFUGUHEABUIEFURUJUK $.
+      ( vx vy cpr cuni cun wel cv wcel wa wex wceq wo vex bitri clel3 exancom
+      elpr anbi2i andi exbii 19.43 eluni elun orbi12i 3bitr4i eqriv ) EABGZHZAB
+      IZEFJZFKZUKLZMZFNZUNUOAOZMZFNZUNUOBOZMZFNZPZEKZULLVFUMLZURUTVCPZFNVEUQVHF
+      UQUNUSVBPZMVHUPVIUNUOABFQUAUBUNUSVBUCRUDUTVCFUERFVFUKUFVGVFALZVFBLZPVEVFA
+      BUGVJVAVKVDVJUSUNMFNVAFVFACSUSUNFTRVKVBUNMFNVDFVFBDSVBUNFTRUHRUIUJ $.
   $}
 
   ${
@@ -15643,9 +15641,10 @@ $)
        25-Jan-2012.) $)
     iinxprg $p |- ( ( A e. V /\ B e. W )
         -> |^|_ x e. { A , B } C = ( D i^i E ) ) $=
-      ( vy wcel wa cv cpr wral cab ciin wceq eleq2d ralprg abbidv df-in 3eqtr4g
-      cin df-iin ) BGLCHLMZKNZDLZABCOZPZKQUHELZUHFLZMZKQAUJDREFUEUGUKUNKUIULUMA
-      BCGHANZBSDEUHITUOCSDFUHJTUAUBAKUJDUFKEFUCUD $.
+      ( vy wcel wa cpr ciin cin cv wceq eleq2d cvv wral ralprg eliin ax-mp elin
+      wb vex 3bitr4g eqrdv ) BGLCHLMZKABCNZDOZEFPZUJKQZDLZAUKUAZUNELZUNFLZMUNUL
+      LZUNUMLUOUQURABCGHAQZBRDEUNISUTCRDFUNJSUBUNTLUSUPUFKUGAUNUKDTUCUDUNEFUEUH
+      UI $.
   $}
 
   ${
@@ -15705,10 +15704,10 @@ $)
        [Enderton] p. 33.  (Contributed by NM, 25-Nov-2003.)  (Proof shortened
        by Mario Carneiro, 17-Nov-2016.) $)
     iinuni $p |- ( A u. |^| B ) = |^|_ x e. B ( A u. x ) $=
-      ( vy cv wcel cint cab cun wral ciin r19.32v elun ralbii vex elint2 orbi2i
-      wo 3bitr4ri abbii df-un df-iin 3eqtr4i ) DEZBFZUDCGZFZRZDHUDBAEZIZFZACJZD
-      HBUFIACUJKUHULDUEUDUIFZRZACJUEUMACJZRULUHUEUMACLUKUNACUDBUIMNUGUOUEAUDCDO
-      PQSTDBUFUAADCUJUBUC $.
+      ( vy cint cun cv ciin wcel wral wel r19.32v elun ralbii vex elint2 orbi2i
+      wo 3bitr4ri cvv wb eliin ax-mp 3bitr4i eqriv ) DBCEZFZACBAGZFZHZDGZBIZUKU
+      FIZRZUKUIIZACJZUKUGIUKUJIZULDAKZRZACJULURACJZRUPUNULURACLUOUSACUKBUHMNUMU
+      TULAUKCDOZPQSUKBUFMUKTIUQUPUAVAAUKCUITUBUCUDUE $.
 
     $( A relationship involving union and indexed union.  Exercise 25 of
        [Enderton] p. 33.  (Contributed by NM, 25-Nov-2003.)  (Proof shortened
@@ -16172,21 +16171,21 @@ $)
 
 
   $( Equality theorem for ordered pairs. 
-     (Contributed by SF, 25-Jun-1998.) $)
+     (Contributed by NM, 25-Jun-1998.) $)
   opkeq1 $p |- ( A = B -> << A , C >> = << B , C >> ) $=
     ( wceq csn cpr copk sneq preq1 preq12d df-opk 3eqtr4g ) ABDZAEZACFZFBEZBCFZ
     FACGBCGMNPOQABHABCIJACKBCKL $.
     $( [25-Jun-1998] $)
 
   $( Equality theorem for ordered pairs. 
-     (Contributed by SF, 25-Jun-1998.) $)
+     (Contributed by NM, 25-Jun-1998.) $)
   opkeq2 $p |- ( A = B -> << C , A >> = << C , B >> ) $=
     ( wceq csn cpr copk preq2 preq2d df-opk 3eqtr4g ) ABDZCEZCAFZFMCBFZFCAGCBGL
     NOMABCHICAJCBJK $.
     $( [25-Jun-1998] $)
 
   $( Equality theorem for ordered pairs. 
-     (Contributed by SF, 28-May-1995.) $)
+     (Contributed by NM, 28-May-1995.) $)
   opkeq12 $p |- ( ( A = C /\ B = D ) -> << A , B >> = << C , D >> ) $=
     ( wceq copk opkeq1 opkeq2 sylan9eq ) ACEBDEABFCBFCDFACBGBDCHI $.
     $( [28-May-1995] $)
@@ -16194,13 +16193,13 @@ $)
   ${
     opkeq1i.1 $e |- A = B $.
     $( Equality inference for ordered pairs. 
-       (Contributed by SF, 16-Dec-2006.) $)
+       (Contributed by NM, 16-Dec-2006.) $)
     opkeq1i $p |- << A , C >> = << B , C >> $=
       ( wceq copk opkeq1 ax-mp ) ABEACFBCFEDABCGH $.
       $( [16-Dec-2006] $)
 
     $( Equality inference for ordered pairs. 
-       (Contributed by SF, 16-Dec-2006.) $)
+       (Contributed by NM, 16-Dec-2006.) $)
     opkeq2i $p |- << C , A >> = << C , B >> $=
       ( wceq copk opkeq2 ax-mp ) ABECAFCBFEDABCGH $.
       $( [16-Dec-2006] $)
@@ -16209,7 +16208,7 @@ $)
       opkeq12i.2 $e |- C = D $.
       $( Equality inference for ordered pairs.  (The proof was shortened by
          Eric Schmidt, 4-Apr-2007.) 
-         (Contributed by SF, 16-Dec-2006.) $)
+         (Contributed by NM, 16-Dec-2006.) $)
       opkeq12i $p |- << A , C >> = << B , D >> $=
         ( wceq copk opkeq12 mp2an ) ABGCDGACHBDHGEFACBDIJ $.
         $( [16-Dec-2006] $)
@@ -16219,13 +16218,13 @@ $)
   ${
     opkeq1d.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for ordered pairs. 
-       (Contributed by SF, 16-Dec-2006.) $)
+       (Contributed by NM, 16-Dec-2006.) $)
     opkeq1d $p |- ( ph -> << A , C >> = << B , C >> ) $=
       ( wceq copk opkeq1 syl ) ABCFBDGCDGFEBCDHI $.
       $( [16-Dec-2006] $)
 
     $( Equality deduction for ordered pairs. 
-       (Contributed by SF, 16-Dec-2006.) $)
+       (Contributed by NM, 16-Dec-2006.) $)
     opkeq2d $p |- ( ph -> << C , A >> = << C , B >> ) $=
       ( wceq copk opkeq2 syl ) ABCFDBGDCGFEBCDHI $.
       $( [16-Dec-2006] $)
@@ -16234,8 +16233,7 @@ $)
       opkeq12d.2 $e |- ( ph -> C = D ) $.
       $( Equality deduction for ordered pairs.  (The proof was shortened by
          Andrew Salmon, 29-Jun-2011.) 
-         (Contributed by SF, 16-Dec-2006.) 
-         (Revised by SF, 29-Jun-2011.) $)
+         (Contributed by NM, 16-Dec-2006.)  $)
       opkeq12d $p |- ( ph -> << A , C >> = << B , D >> ) $=
         ( wceq copk opkeq12 syl2anc ) ABCHDEHBDICEIHFGBDCEJK $.
         $( [29-Jun-2011] $) $( [16-Dec-2006] $)
