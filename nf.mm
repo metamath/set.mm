@@ -17965,11 +17965,10 @@ $)
        the existence of a set ` z ` given two arbitrary sets ` x ` and ` y ` .
        This way to express it follows the general idea of the other ZFC axioms,
        which is to postulate the existence of sets given other sets. 
-       (Contributed by ?who?, 28-Sep-2003.) $)
+       (Contributed by NM, 28-Sep-2003.) $)
     axext2 $p |- E. z ( ( z e. x <-> z e. y ) -> x = y ) $=
       ( cv wcel wb wceq wi wex wal ax-ext 19.36v mpbir ) CDZADZENBDZEFZOPGZHCIQ
       CJRHABCKQRCLM $.
-      $( [28-Sep-2003] $)
   $}
 
   ${
@@ -17977,23 +17976,21 @@ $)
     $( A generalization of the Axiom of Extensionality in which ` x ` and ` y `
        need not be distinct.  (The proof was shortened by Andrew Salmon,
        12-Aug-2011.) 
-       (Contributed by ?who?, 15-Sep-1993.) 
-       (Revised by ?who?, 12-Aug-2011.) $)
+       (Contributed by NM, 15-Sep-1993.) 
+       (Proof shortened by Andrew Salmon, 12-Aug-2011.) $)
     axext3 $p |- ( A. z ( z e. x <-> z e. y ) -> x = y ) $=
       ( vw cv wcel wb wal wi elequ2 bibi1d albidv equequ1 imbi12d ax-ext chvarv
       wceq ) CEZDEZFZRBEZFZGZCHZSUAQZIRAEZFZUBGZCHZUFUAQZIDASUFQZUDUIUEUJUKUCUH
       CUKTUGUBDACJKLDABMNDBCOP $.
-      $( [12-Aug-2011] $) $( [15-Sep-1993] $)
 
     $( A bidirectional version of Extensionality.  Although this theorem
        "looks" like it is just a definition of equality, it requires the Axiom
        of Extensionality for its proof under our axiomatization.  See the
        comments for ~ ax-ext and ~ df-cleq . 
-       (Contributed by ?who?, 14-Nov-2008.) $)
+       (Contributed by NM, 14-Nov-2008.) $)
     axext4 $p |- ( x = y <-> A. z ( z e. x <-> z e. y ) ) $=
       ( cv wceq wcel wb wal elequ2 alrimiv axext3 impbii ) ADZBDZEZCDZMFPNFGZCH
       OQCABCIJABCKL $.
-      $( [14-Nov-2008] $)
   $}
 
   ${
@@ -18001,7 +17998,7 @@ $)
     bm1.1.1 $e |- ( ph -> A. x ph ) $.
     $( Any set defined by a property is the only set defined by that property.
        Theorem 1.1 of [BellMachover] p. 462. 
-       (Contributed by ?who?, 30-Jun-1994.) $)
+       (Contributed by NM, 30-Jun-1994.) $)
     bm1.1 $p |- ( E. x A. y ( y e. x <-> ph ) ->
                   E! x A. y ( y e. x <-> ph ) ) $=
       ( vz cv wcel wb wal wex wsbc wa wceq wi weu ax-17 hbbi hbal elequ2 bibi1d
@@ -18009,7 +18006,6 @@ $)
       eu2 ) CFZBFZGZAHZCIZBJZUSURURBEFZKZLUOUTMZNZEIBIZLURBOUSVDVCBEVAURUNUTGZA
       HZCIZVBURVGBEVFBCVEABVEBPDQRVBUQVFCVBUPVEABECSTUAUBURVGLUQVFLZCIZVBUQVFCU
       CVIUPVEHZCIVBVHVJCUPAVEUDUEBECUFUGUHUIUJUKURBEUREPUMUL $.
-      $( [30-Jun-1994] $)
   $}
 
 
@@ -18264,33 +18260,40 @@ $( $v ._|_ $. $)
      Because class variables can be substituted with compound expressions and
      set variables cannot, it is often useful to convert a theorem containing a
      free set variable to a more general version with a class variable.  This
-     is done with theorems such as ~ vtoclg . $)
+     is done with theorems such as ~ vtoclg which is used, for example, to
+     convert ~ elirrv to ~ elirr .
+
+     This is called the "axiom of class comprehension" by [Levy] p. 338, who
+     treats the theory of classes as an extralogical extension to our logic and
+     set theory axioms.  He calls the construction ` { y | ph } ` a "class
+     term".
+
+     For a general discussion of the theory of classes, see
+     ~ http://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
+     5-Aug-1993.) $)
   df-clab $a |- ( x e. { y | ph } <-> [ x / y ] ph ) $.
 
   $( Simplification of class abstraction notation when the free and bound
      variables are identical. 
-     (Contributed by ?who?, 5-Aug-1993.) $)
+     (Contributed by NM, 5-Aug-1993.) $)
   abid $p |- ( x e. { x | ph } <-> ph ) $=
     ( cv cab wcel wsbc df-clab sbid bitri ) BCZABDEABJFAABBGABHI $.
-    $( [5-Aug-1993] $)
 
   ${
     $d x y $.
     $( Bound-variable hypothesis builder for a class abstraction. 
-       (Contributed by ?who?, 5-Aug-1993.) $)
+       (Contributed by NM, 5-Aug-1993.) $)
     hbab1 $p |- ( y e. { x | ph } -> A. x y e. { x | ph } ) $=
       ( cv cab wcel wsbc df-clab hbs1 hbxfrbi ) CDZABEFABKGBACBHABCIJ $.
-      $( [5-Aug-1993] $)
   $}
 
   ${
     $d x z $.
     hbab.1 $e |- ( ph -> A. x ph ) $.
     $( Bound-variable hypothesis builder for a class abstraction. 
-       (Contributed by ?who?, 1-Mar-1995.) $)
+       (Contributed by NM, 1-Mar-1995.) $)
     hbab $p |- ( z e. { y | ph } -> A. x z e. { y | ph } ) $=
       ( cv cab wcel wsbc df-clab hbsb hbxfrbi ) DFZACGHACMIBADCJACDBEKL $.
-      $( [1-Mar-1995] $)
   $}
 
   ${
@@ -18298,12 +18301,11 @@ $( $v ._|_ $. $)
     hbabd.1 $e |- ( ph -> A. x A. y ph ) $.
     hbabd.2 $e |- ( ph -> ( ps -> A. x ps ) ) $.
     $( Deduction form of bound-variable hypothesis builder ~ hbab . 
-       (Contributed by ?who?, 10-Nov-2005.) $)
+       (Contributed by NM, 10-Nov-2005.) $)
     hbabd $p |- ( ph -> ( z e. { y | ps } -> A. x z e. { y | ps } ) ) $=
       ( cv wsbc wal cab wcel wceq wi wn ax-7 syl 2alimi hbsb4t 3syl ax-16 albii
       pm2.61d2 df-clab 3imtr4g ) ABDEHZIZUGCJZUFBDKLZUICJACHUFMCJZUGUHNZAACJDJZ
       BBCJNZCJDJUJOUKNAADJCJULFACDPQAUMDCGRBDECSTUGCEUAUCBEDUDZUIUGCUNUBUE $.
-      $( [10-Nov-2005] $)
   $}
 
   ${
@@ -18346,10 +18348,9 @@ $( $v ._|_ $. $)
     $d x A $.  $d x B $.  $d x y z $.
     $( The same as ~ df-cleq with the hypothesis removed using the Axiom of
        Extensionality ~ ax-ext . 
-       (Contributed by ?who?, 15-Sep-1993.) $)
+       (Contributed by NM, 15-Sep-1993.) $)
     dfcleq $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
       ( vy vz ax-ext df-cleq ) ADEBCDEAFG $.
-      $( [15-Sep-1993] $)
   $}
 
   ${
@@ -18364,11 +18365,10 @@ $( $v ._|_ $. $)
        formalism of Metamath, for example as is done in Chapter 4 of Takeuti
        and Zaring.  See also the discussion under the definition of class in
        [Jech] p. 4 showing that "Every set can be considered to be a class." 
-       (Contributed by ?who?, 7-Nov-2006.) $)
+       (Contributed by NM, 7-Nov-2006.) $)
     cvjust $p |- x = { y | y e. x } $=
       ( vz cv wcel cab wceq wb dfcleq wsbc df-clab elsb3 bitr2i mpgbir ) ADZBDO
       EZBFZGCDZOEZRQEZHCCOQITPBRJSPCBKCBALMN $.
-      $( [7-Nov-2006] $)
   $}
 
   ${
@@ -18391,7 +18391,7 @@ $( $v ._|_ $. $)
     $d x A $.  $d x B $.
     eqriv.1 $e |- ( x e. A <-> x e. B ) $.
     $( Infer equality of classes from equivalence of membership. 
-       (Contributed by ?who?, 5-Aug-1993.) $)
+       (Contributed by , 5-Aug-1993.) $)
     eqriv $p |- A = B $=
       ( wceq cv wcel wb dfcleq mpgbir ) BCEAFZBGKCGHAABCIDJ $.
       $( [5-Aug-1993] $)
@@ -18413,7 +18413,6 @@ $( $v ._|_ $. $)
     eqrdav.1 $e |- ( ( ph /\ x e. A ) -> x e. C ) $.
     eqrdav.2 $e |- ( ( ph /\ x e. B ) -> x e. C ) $.
     eqrdav.3 $e |- ( ( ph /\ x e. C ) -> ( x e. A <-> x e. B ) ) $.
-    $( MAY BE REVISED - delete this if it is unused / not useful $)
     $( Deduce equality of classes from an equivalence of membership that
        depends on the membership variable. 
        (Contributed by ?who?, 7-Nov-2008.) $)
@@ -26508,7 +26507,7 @@ $)
   ${
     $d A x $.  $d B x $.  $d C x $.
     $( Membership in anti-intersection. 
-       (Contributed by ?who?, 10-Jan-2015.) $)
+       (Contributed by SF, 10-Jan-2015.) $)
     elning $p |- ( A e. V ->
             ( A e. ( B -i^i C ) <-> ( A e. B -/\ A e. C ) ) ) $=
       ( vx cv wcel wnan cnin wceq eleq1 nandbi12d df-nin elab2g ) EFZBGZOCGZHAB
@@ -26517,7 +26516,7 @@ $)
   $}
 
   $( Membership in class complement. 
-     (Contributed by ?who?, 10-Jan-2015.) $)
+     (Contributed by SF, 10-Jan-2015.) $)
   elcomplg $p |- ( A e. V -> ( A e. ~ B <-> -. A e. B ) ) $=
     ( ccompl wcel cnin wn df-compl eleq2i wnan elning wa df-nan xchbinx syl6bb
     anidm syl5bb ) ABDZEABBFZEZACEZABEZGZRSABHIUATUBUBJZUCABBCKUDUBUBLUBUBUBMUB
@@ -26560,13 +26559,13 @@ $)
   ${
     elbool.1 $e |- A e. _V $.
     $( Membership in anti-intersection. 
-       (Contributed by ?who?, 10-Jan-2015.) $)
+       (Contributed by SF, 10-Jan-2015.) $)
     elnin $p |- ( A e. ( B -i^i C ) <-> ( A e. B -/\ A e. C ) ) $=
       ( cvv wcel cnin wnan wb elning ax-mp ) AEFABCGFABFACFHIDABCEJK $.
       $( [10-Jan-2015] $)
 
     $( Membership in complement. 
-       (Contributed by ?who?, 10-Jan-2015.) $)
+       (Contributed by SF, 10-Jan-2015.) $)
     elcompl $p |- ( A e. ~ B <-> -. A e. B ) $=
       ( cvv wcel ccompl wn wb elcomplg ax-mp ) ADEABFEABEGHCABDIJ $.
       $( [10-Jan-2015] $)
@@ -26575,7 +26574,7 @@ $)
   ${
     $d A x $.  $d B x $.
     $( Anti-intersection commutes. 
-       (Contributed by ?who?, 10-Jan-2015.) $)
+       (Contributed by SF, 10-Jan-2015.) $)
     nincom $p |- ( A -i^i B ) = ( B -i^i A ) $=
       ( vx cnin cv wcel wnan nandcom vex elnin 3bitr4i eqriv ) CABDZBADZCEZAFZO
       BFZGQPGOMFONFPQHOABCIZJOBARJKL $.
@@ -26585,7 +26584,7 @@ $)
   ${
     $d A x $.
     $( Double complement law. 
-       (Contributed by ?who?, 10-Jan-2015.) $)
+       (Contributed by SF, 10-Jan-2015.) $)
     dblcompl $p |- ~ ~ A = A $=
       ( vx ccompl cv wcel wn vex elcompl con2bii bitr4i eqriv ) BACZCZABDZMENLE
       ZFNAEZNLBGZHOPNAQHIJK $.
@@ -26595,14 +26594,14 @@ $)
   ${
     hbbool.1 $e |- ( x e. A -> A. y x e. A ) $.
     $( Hypothesis builder for complement. 
-       (Contributed by ?who?, 10-Jan-2015.) $)
+       (Contributed by SF, 10-Jan-2015.) $)
     hbcompl $p |- ( x e. ~ A -> A. y x e. ~ A ) $=
       ( cv ccompl wcel wn vex elcompl hbn hbxfrbi ) AEZCFGMCGZHBMCAIJNBDKL $.
       $( [10-Jan-2015] $)
 
     hbbool.2 $e |- ( x e. B -> A. y x e. B ) $.
     $( Hypothesis builder for anti-intersection. 
-       (Contributed by ?who?, 10-Jan-2015.) $)
+       (Contributed by SF, 10-Jan-2015.) $)
     hbnin $p |- ( x e. ( A -i^i B ) -> A. y x e. ( A -i^i B ) ) $=
       ( cv cnin wcel wa wn wnan vex elnin df-nan bitri hban hbn hbxfrbi ) AGZC
       DHIZTCIZTDIZJZKZBUAUBUCLUETCDAMNUBUCOPUDBUBUCBEFQRS $.
@@ -26639,7 +26638,7 @@ $)
   ${
     $d A x $.  $d B x $.  $d C x $.
     $( Equality law for anti-intersection. 
-       (Contributed by ?who?, 11-Jan-2015.) $)
+       (Contributed by SF, 11-Jan-2015.) $)
     nineq1 $p |- ( A = B -> ( A -i^i C ) = ( B -i^i C ) ) $=
       ( vx wceq cv wcel wnan cab cnin eleq2 nandbi1d abbidv df-nin 3eqtr4g ) AB
       EZDFZAGZQCGZHZDIQBGZSHZDIACJBCJPTUBDPRUASABQKLMDACNDBCNO $.
@@ -26647,13 +26646,13 @@ $)
   $}
 
   $( Equality law for anti-intersection. 
-     (Contributed by ?who?, 11-Jan-2015.) $)
+     (Contributed by SF, 11-Jan-2015.) $)
   nineq2 $p |- ( A = B -> ( C -i^i A ) = ( C -i^i B ) ) $=
     ( wceq cnin nineq1 nincom 3eqtr3g ) ABDACEBCECAECBEABCFACGBCGH $.
     $( [11-Jan-2015] $)
 
   $( Equality law for anti-intersection. 
-     (Contributed by ?who?, 11-Jan-2015.) $)
+     (Contributed by SF, 11-Jan-2015.) $)
   nineq12 $p |- ( ( A = B /\ C = D ) -> ( A -i^i C ) = ( B -i^i D ) ) $=
     ( wceq cnin nineq1 nineq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
     $( [11-Jan-2015] $)
@@ -26661,20 +26660,20 @@ $)
   ${
     nineqi.1 $e |- A = B $.
     $( Equality inference for anti-intersection. 
-       (Contributed by ?who?, 11-Jan-2015.) $)
+       (Contributed by SF, 11-Jan-2015.) $)
     nineq1i $p |- ( A -i^i C ) = ( B -i^i C ) $=
       ( wceq cnin nineq1 ax-mp ) ABEACFBCFEDABCGH $.
       $( [11-Jan-2015] $)
 
     $( Equality inference for anti-intersection. 
-       (Contributed by ?who?, 11-Jan-2015.) $)
+       (Contributed by SF, 11-Jan-2015.) $)
     nineq2i $p |- ( C -i^i A ) = ( C -i^i B ) $=
       ( wceq cnin nineq2 ax-mp ) ABECAFCBFEDABCGH $.
       $( [11-Jan-2015] $)
 
     nineq12i.2 $e |- C = D $.
     $( Equality inference for anti-intersection. 
-       (Contributed by ?who?, 11-Jan-2015.) $)
+       (Contributed by SF, 11-Jan-2015.) $)
     nineq12i $p |- ( A -i^i C ) = ( B -i^i D ) $=
       ( wceq cnin nineq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
       $( [11-Jan-2015] $)
@@ -26683,27 +26682,27 @@ $)
   ${
     nineqd.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for anti-intersection. 
-       (Contributed by ?who?, 11-Jan-2015.) $)
+       (Contributed by SF, 11-Jan-2015.) $)
     nineq1d $p |- ( ph -> ( A -i^i C ) = ( B -i^i C ) ) $=
       ( wceq cnin nineq1 syl ) ABCFBDGCDGFEBCDHI $.
       $( [11-Jan-2015] $)
 
     $( Equality deduction for anti-intersection. 
-       (Contributed by ?who?, 11-Jan-2015.) $)
+       (Contributed by SF, 11-Jan-2015.) $)
     nineq2d $p |- ( ph -> ( C -i^i A ) = ( C -i^i B ) ) $=
       ( wceq cnin nineq2 syl ) ABCFDBGDCGFEBCDHI $.
       $( [11-Jan-2015] $)
 
     nineq12d.2 $e |- ( ph -> C = D ) $.
     $( Equality inference for anti-intersection. 
-       (Contributed by ?who?, 11-Jan-2015.) $)
+       (Contributed by SF, 11-Jan-2015.) $)
     nineq12d $p |- ( ph -> ( A -i^i C ) = ( B -i^i D ) ) $=
       ( wceq cnin nineq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
       $( [11-Jan-2015] $)
   $}
 
   $( Equality law for complement. 
-     (Contributed by ?who?, 11-Jan-2015.) $)
+     (Contributed by SF, 11-Jan-2015.) $)
   compleq $p |- ( A = B -> ~ A = ~ B ) $=
     ( wceq cnin ccompl nineq12 anidms df-compl 3eqtr4g ) ABCZAADZBBDZAEBEJKLCAB
     ABFGAHBHI $.
@@ -26712,7 +26711,7 @@ $)
   ${
     compleqi.1 $e |- A = B $.
     $( Equality inference for complement. 
-       (Contributed by ?who?, 11-Jan-2015.) $)
+       (Contributed by SF, 11-Jan-2015.) $)
     compleqi $p |- ~ A = ~ B $=
       ( wceq ccompl compleq ax-mp ) ABDAEBEDCABFG $.
       $( [11-Jan-2015] $)
@@ -26721,7 +26720,7 @@ $)
   ${
     compleqd.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for complement. 
-       (Contributed by ?who?, 11-Jan-2015.) $)
+       (Contributed by SF, 11-Jan-2015.) $)
     compleqd $p |- ( ph -> ~ A = ~ B ) $=
       ( wceq ccompl compleq syl ) ABCEBFCFEDBCGH $.
       $( [11-Jan-2015] $)
@@ -28617,21 +28616,21 @@ $)
 
 
   $( Equality theorem for ordered pairs. 
-     (Contributed by ?who?, 25-Jun-1998.) $)
+     (Contributed by SF, 25-Jun-1998.) $)
   opkeq1 $p |- ( A = B -> << A , C >> = << B , C >> ) $=
     ( wceq csn cpr copk sneq preq1 preq12d df-opk 3eqtr4g ) ABDZAEZACFZFBEZBCFZ
     FACGBCGMNPOQABHABCIJACKBCKL $.
     $( [25-Jun-1998] $)
 
   $( Equality theorem for ordered pairs. 
-     (Contributed by ?who?, 25-Jun-1998.) $)
+     (Contributed by SF, 25-Jun-1998.) $)
   opkeq2 $p |- ( A = B -> << C , A >> = << C , B >> ) $=
     ( wceq csn cpr copk preq2 preq2d df-opk 3eqtr4g ) ABDZCEZCAFZFMCBFZFCAGCBGL
     NOMABCHICAJCBJK $.
     $( [25-Jun-1998] $)
 
   $( Equality theorem for ordered pairs. 
-     (Contributed by ?who?, 28-May-1995.) $)
+     (Contributed by SF, 28-May-1995.) $)
   opkeq12 $p |- ( ( A = C /\ B = D ) -> << A , B >> = << C , D >> ) $=
     ( wceq copk opkeq1 opkeq2 sylan9eq ) ACEBDEABFCBFCDFACBGBDCHI $.
     $( [28-May-1995] $)
@@ -28639,13 +28638,13 @@ $)
   ${
     opkeq1i.1 $e |- A = B $.
     $( Equality inference for ordered pairs. 
-       (Contributed by ?who?, 16-Dec-2006.) $)
+       (Contributed by SF, 16-Dec-2006.) $)
     opkeq1i $p |- << A , C >> = << B , C >> $=
       ( wceq copk opkeq1 ax-mp ) ABEACFBCFEDABCGH $.
       $( [16-Dec-2006] $)
 
     $( Equality inference for ordered pairs. 
-       (Contributed by ?who?, 16-Dec-2006.) $)
+       (Contributed by SF, 16-Dec-2006.) $)
     opkeq2i $p |- << C , A >> = << C , B >> $=
       ( wceq copk opkeq2 ax-mp ) ABECAFCBFEDABCGH $.
       $( [16-Dec-2006] $)
@@ -28654,7 +28653,7 @@ $)
       opkeq12i.2 $e |- C = D $.
       $( Equality inference for ordered pairs.  (The proof was shortened by
          Eric Schmidt, 4-Apr-2007.) 
-         (Contributed by ?who?, 16-Dec-2006.) $)
+         (Contributed by SF, 16-Dec-2006.) $)
       opkeq12i $p |- << A , C >> = << B , D >> $=
         ( wceq copk opkeq12 mp2an ) ABGCDGACHBDHGEFACBDIJ $.
         $( [16-Dec-2006] $)
@@ -28664,13 +28663,13 @@ $)
   ${
     opkeq1d.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for ordered pairs. 
-       (Contributed by ?who?, 16-Dec-2006.) $)
+       (Contributed by SF, 16-Dec-2006.) $)
     opkeq1d $p |- ( ph -> << A , C >> = << B , C >> ) $=
       ( wceq copk opkeq1 syl ) ABCFBDGCDGFEBCDHI $.
       $( [16-Dec-2006] $)
 
     $( Equality deduction for ordered pairs. 
-       (Contributed by ?who?, 16-Dec-2006.) $)
+       (Contributed by SF, 16-Dec-2006.) $)
     opkeq2d $p |- ( ph -> << C , A >> = << C , B >> ) $=
       ( wceq copk opkeq2 syl ) ABCFDBGDCGFEBCDHI $.
       $( [16-Dec-2006] $)
@@ -28679,8 +28678,8 @@ $)
       opkeq12d.2 $e |- ( ph -> C = D ) $.
       $( Equality deduction for ordered pairs.  (The proof was shortened by
          Andrew Salmon, 29-Jun-2011.) 
-         (Contributed by ?who?, 16-Dec-2006.) 
-         (Revised by ?who?, 29-Jun-2011.) $)
+         (Contributed by SF, 16-Dec-2006.) 
+         (Revised by SF, 29-Jun-2011.) $)
       opkeq12d $p |- ( ph -> << A , C >> = << B , D >> ) $=
         ( wceq copk opkeq12 syl2anc ) ABCHDEHBDICEIHFGBDCEJK $.
         $( [29-Jun-2011] $) $( [16-Dec-2006] $)
@@ -28692,7 +28691,7 @@ $)
     hbopk.1 $e |- ( y e. A -> A. x y e. A ) $.
     hbopk.2 $e |- ( y e. B -> A. x y e. B ) $.
     $( Bound-variable hypothesis builder for ordered pairs. 
-       (Contributed by ?who?, 14-Nov-1995.) $)
+       (Contributed by SF, 14-Nov-1995.) $)
     hbopk $p |- ( y e. << A , B >> -> A. x y e. << A , B >> ) $=
       ( copk csn cpr df-opk hbsn hbpr hbxfreq ) ABCDGCHZCDIZICDJABNOABCEKABCDEF
       LLM $.
@@ -32033,7 +32032,7 @@ $)
     $d a c $.  $d B c $.
     $( Lemma for the primitive axioms.  Primitive form of equality to a
        singleton. 
-       (Contributed by ?who?, 25-Mar-2015.) $)
+       (Contributed by SF, 25-Mar-2015.) $)
     axprimlem1 $p |- ( a = { B } <-> A. c ( c e. a <-> c = B ) ) $=
       ( cv csn wceq wel wcel wb wal dfcleq vex elsn bibi2i albii bitri ) BDZAEZ
       FCBGZCDZRHZIZCJSTAFZIZCJCQRKUBUDCUAUCSTACLMNOP $.
@@ -32045,7 +32044,7 @@ $)
     $d d f $.
     $( Lemma for the primitive axioms.  Primitive form of equality to a
        Kuratowski ordered pair. 
-       (Contributed by ?who?, 25-Mar-2015.) $)
+       (Contributed by SF, 25-Mar-2015.) $)
     axprimlem2 $p |- ( a = << B , C >> <-> A. d ( d e. a <-> ( A. e ( e e. d
         <-> e = B ) \/ A. f ( f e. d <-> ( f = B \/ f = C ) ) ) ) ) $=
       ( cv wceq cpr wel wb wal wo wcel dfcleq vex elpr bibi2i albii bitri copk
@@ -32062,7 +32061,7 @@ $)
     $d c w $.  $d t w $.  $d t x $.  $d t y $.  $d t z $.  $d w x $.  $d w y $.
     $d w z $.  $d x y $.  $d x z $.  $d y z $.
     $( ~ ax-xp presented without any set theory definitions. 
-       (Contributed by ?who?, 25-Mar-2015.) $)
+       (Contributed by SF, 25-Mar-2015.) $)
     axxpprim $p |- E. y A. z ( z e. y <-> E. w E. t ( A. a ( a e. z <-> ( A. b
         ( b e. a <-> b = w ) \/ A. c ( c e. a <-> ( c = w \/ c = t ) ) ) ) /\ t
         e. x ) ) $=
@@ -32079,7 +32078,7 @@ $)
     $d e z $.  $d f g $.  $d f h $.  $d f w $.  $d f z $.  $d g w $.  $d h w $.
     $d h z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
     $( ~ ax-cnv presented without any set theory definitions. 
-       (Contributed by ?who?, 25-Mar-2015.) $)
+       (Contributed by SF, 25-Mar-2015.) $)
     axcnvprim $p |- E. y A. z A. w ( E. a ( A. b ( b e. a <-> ( A. c ( c e. b
         <-> c = z ) \/ A. d ( d e. b <-> ( d = z \/ d = w ) ) ) ) /\ a e. y )
         <-> E. e ( A. f ( f e. e <-> ( A. g ( g e. f <-> g = w ) \/ A. h ( h e.
@@ -32098,7 +32097,7 @@ $)
     $d b z $.  $d c y $.  $d d y $.  $d d z $.  $d e x $.  $d e y $.  $d e z $.
     $d x y $.  $d x z $.  $d y z $.
     $( ~ ax-sset presented without any set theory definitions. 
-       (Contributed by ?who?, 25-Mar-2015.) $)
+       (Contributed by SF, 25-Mar-2015.) $)
     axssetprim $p |- E. x A. y A. z ( E. a ( A. b ( b e. a <-> ( A. c ( c e. b
         <-> c = y ) \/ A. d ( d e. b <-> ( d = y \/ d = z ) ) ) ) /\ a e. x )
         <-> A. e ( e e. y -> e e. z ) ) $=
@@ -32116,7 +32115,7 @@ $)
     $d i j $.  $d i k $.  $d i w $.  $d i z $.  $d j z $.  $d k w $.  $d k z $.
     $d w x $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
     $( ~ ax-si presented without any set theory definitions. 
-       (Contributed by ?who?, 25-Mar-2015.) $)
+       (Contributed by SF, 25-Mar-2015.) $)
     axsiprim $p |- E. y A. z A. w ( E. a ( A. b ( b e. a <-> ( A. c ( c e. b
         <-> A. d ( d e. c <-> d = z ) ) \/ A. e ( e e. b <-> ( A. f ( f e. e
         <-> f = z ) \/ A. g ( g e. e <-> g = w ) ) ) ) ) /\ a e. y ) <-> E. h (
@@ -32139,7 +32138,7 @@ $)
     $d b z $.  $d c w $.  $d d e $.  $d d w $.  $d d z $.  $d e z $.  $d w x $.
     $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
     $( ~ ax-typlower presented without any set theory definitions. 
-       (Contributed by ?who?, 25-Mar-2015.) $)
+       (Contributed by SF, 25-Mar-2015.) $)
     axtyplowerprim $p |- E. y A. z ( z e. y <-> A. w E. a ( A. b ( b e. a <-> (
         A. c ( c e. b <-> c = w ) \/ A. d ( d e. b <-> ( d = w \/ A. e ( e e. d
         <-> e = z ) ) ) ) ) /\ a e. x ) ) $=
@@ -32162,7 +32161,7 @@ $)
     $d t y $.  $d t z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.
     $d y z $.
     $( ~ ax-ins2 presented without any set theory definitions. 
-       (Contributed by ?who?, 25-Mar-2015.) $)
+       (Contributed by SF, 25-Mar-2015.) $)
     axins2prim $p |- E. y A. z A. w A. t ( E. a ( A. b ( b e. a <-> ( A. c ( c
         e. b <-> A. d ( d e. c <-> A. e ( e e. d <-> e = z ) ) ) \/ A. f ( f e.
         b <-> ( A. g ( g e. f <-> A. e ( e e. g <-> e = z ) ) \/ A. h ( h e. f
@@ -32194,7 +32193,7 @@ $)
     $d t y $.  $d t z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.
     $d y z $.
     $( ~ ax-ins3 presented without any set theory definitions. 
-       (Contributed by ?who?, 25-Mar-2015.) $)
+       (Contributed by SF, 25-Mar-2015.) $)
     axins3prim $p |- E. y A. z A. w A. t ( E. a ( A. b ( b e. a <-> ( A. c ( c
         e. b <-> A. d ( d e. c <-> A. e ( e e. d <-> e = z ) ) ) \/ A. f ( f e.
         b <-> ( A. g ( g e. f <-> A. e ( e e. g <-> e = z ) ) \/ A. h ( h e. f
@@ -32226,7 +32225,7 @@ $)
   ${
     $d A x y z w $.  $d B x y z w $.
     $( The anti-intersection of two sets is a set. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     ninexg $p |- ( ( A e. V /\ B e. W ) -> ( A -i^i B ) e. _V ) $=
       ( vx vy vw vz cv cnin cvv wcel wceq nineq1 eleq1d wel wb wal wex bitri
       nineq2 wnan ax-nin isset dfcleq elnin bibi2i albii exbii mpbir vtocl2g
@@ -32240,42 +32239,42 @@ $)
     ninex.1 $e |- A e. _V $.
     ninex.2 $e |- B e. _V $.
     $( The anti-intersection of two sets is a set. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     ninex $p |- ( A -i^i B ) e. _V $=
       ( cvv wcel cnin ninexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [12-Jan-2015] $)
   $}
 
   $( The complement of a set is a set. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   complexg $p |- ( A e. V -> ~ A e. _V ) $=
     ( wcel ccompl cnin cvv df-compl ninexg anidms syl5eqel ) ABCZADAAEZFAGKLFCA
     ABBHIJ $.
     $( [12-Jan-2015] $)
 
   $( The intersection of two sets is a set. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   inexg $p |- ( ( A e. V /\ B e. W ) -> ( A i^i B ) e. _V ) $=
     ( wcel wa cin cnin ccompl cvv df-in ninexg complexg syl syl5eqel ) ACEBDEFZ
     ABGABHZIZJABKPQJERJEABCDLQJMNO $.
     $( [12-Jan-2015] $)
 
   $( The union of two sets is a set. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   unexg $p |- ( ( A e. V /\ B e. W ) -> ( A u. B ) e. _V ) $=
     ( wcel wa cun ccompl cnin cvv df-un complexg ninexg syl2an syl5eqel ) ACEZB
     DEZFABGAHZBHZIZJABKPRJESJETJEQACLBDLRSJJMNO $.
     $( [12-Jan-2015] $)
 
   $( The difference of two sets is a set. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   difexg $p |- ( ( A e. V /\ B e. W ) -> ( A \ B ) e. _V ) $=
     ( wcel wa cdif ccompl cin cvv df-dif complexg inexg sylan2 syl5eqel ) ACEZB
     DEZFABGABHZIZJABKQPRJESJEBDLARCJMNO $.
     $( [12-Jan-2015] $)
 
   $( The symmetric difference of two sets is a set. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   symdifexg $p |- ( ( A e. V /\ B e. W ) -> ( A (+) B ) e. _V ) $=
     ( wcel csymdif cdif cun cvv df-symdif difexg ancoms unexg syl2anc syl5eqel
     wa ) ACEZBDEZPZABFABGZBAGZHZIABJSTIEUAIEZUBIEABCDKRQUCBADCKLTUAIIMNO $.
@@ -32284,32 +32283,32 @@ $)
   ${
     boolex.1 $e |- A e. _V $.
     $( The complement of a set is a set. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     complex $p |- ~ A e. _V $=
       ( cvv wcel ccompl complexg ax-mp ) ACDAECDBACFG $.
       $( [12-Jan-2015] $)
 
     boolex.2 $e |- B e. _V $.
     $( The intersection of two sets is a set. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     inex $p |- ( A i^i B ) e. _V $=
       ( cvv wcel cin inexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [12-Jan-2015] $)
 
     $( The union of two sets is a set. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     unex $p |- ( A u. B ) e. _V $=
       ( cvv wcel cun unexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [12-Jan-2015] $)
 
     $( The difference of two sets is a set. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     difex $p |- ( A \ B ) e. _V $=
       ( cvv wcel cdif difexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [12-Jan-2015] $)
 
     $( The symmetric difference of two sets is a set. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     symdifex $p |- ( A (+) B ) e. _V $=
       ( cvv wcel csymdif symdifexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [12-Jan-2015] $)
@@ -32317,14 +32316,14 @@ $)
 
   $( The universal class exists.  This marks a major departure from ZFC set
      theory, where ` _V ` is a proper class. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   vvex $p |- _V e. _V $=
     ( vx cv ccompl cun cvv uncompl vex complex unex eqeltrri ) ABZKCZDEEKFKLAGZ
     KMHIJ $.
     $( [12-Jan-2015] $)
 
   $( The empty class exists. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   0ex $p |- (/) e. _V $=
     ( c0 cvv ccompl df-nul vvex complex eqeltri ) ABCBDBEFG $.
     $( [12-Jan-2015] $)
@@ -32332,7 +32331,7 @@ $)
   ${
     $d A x y z $.
     $( A singleton always exists. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     snex $p |- { A } e. _V $=
       ( vx vz vy cvv wcel csn cv wceq sneq eleq1d wel weq wal ax-sn isset bitri
       wb wex c0 dfcleq vex elsn bibi2i albii exbii mpbir vtoclg wn snprc biimpi
@@ -32343,20 +32342,20 @@ $)
   $}
 
   $( An unordered pair exists. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   prex $p |- { A , B } e. _V $=
     ( cpr csn cun cvv df-pr snex unex eqeltri ) ABCADZBDZEFABGKLAHBHIJ $.
     $( [12-Jan-2015] $)
 
   $( A Kuratowski ordered pair exists. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   opkex $p |- << A , B >> e. _V $=
     ( copk csn cpr cvv df-opk prex eqeltri ) ABCADZABEZEFABGJKHI $.
     $( [12-Jan-2015] $)
 
 
   $( A singleton of a set belongs to a power class of a set containing it. 
-     (Contributed by ?who?, 1-Feb-2015.) $)
+     (Contributed by SF, 1-Feb-2015.) $)
   snelpwg $p |- ( A e. V -> ( { A } e. ~P B <-> A e. B ) ) $=
     ( wcel csn wss cpw snssg snex elpw syl6rbbr ) ACDABDAEZBFLBGDABCHLBAIJK $.
     $( [1-Feb-2015] $)
@@ -32364,7 +32363,7 @@ $)
   ${
     snelpw.1 $e |- A e. _V $.
     $( A singleton of a set belongs to a power class of a set containing it. 
-       (Contributed by ?who?, 1-Feb-2015.) $)
+       (Contributed by SF, 1-Feb-2015.) $)
     snelpw $p |- ( { A } e. ~P B <-> A e. B ) $=
       ( cvv wcel csn cpw wb snelpwg ax-mp ) ADEAFBGEABEHCABDIJ $.
       $( [1-Feb-2015] $)
@@ -32383,8 +32382,8 @@ $)
     $( A class equals the union of its power class.  Exercise 6(a) of
        [Enderton] p. 38.  (The proof was shortened by Alan Sare,
        28-Dec-2008.) 
-       (Contributed by ?who?, 14-Oct-1996.) 
-       (Revised by ?who?, 29-Dec-2008.) $)
+       (Contributed by SF, 14-Oct-1996.) 
+       (Revised by SF, 29-Dec-2008.) $)
     unipw $p |- U. ~P A = A $=
       ( vx vy cpw cuni cv wcel wa wex eluni wss wi vex elpw ssel impcom exlimiv
       sylbi csn snid snelpwi elunii sylancr impbii eqriv ) BADZEZABFZUGGZUHAGZU
@@ -32398,7 +32397,7 @@ $)
     $d A x $.  $d B x $.
     $( Classes are subclasses if and only if their power classes are
        subclasses.  Exercise 18 of [TakeutiZaring] p. 18. 
-       (Contributed by ?who?, 13-Oct-1996.) $)
+       (Contributed by SF, 13-Oct-1996.) $)
     sspwb $p |- ( A C_ B <-> ~P A C_ ~P B ) $=
       ( vx wss cpw wcel sstr2 com12 vex elpw 3imtr4g ssrdv csn ssel snex bitr4i
       cv snss 3imtr3g impbii ) ABDZAEZBEZDZUACUBUCUACQZADZUEBDZUEUBFUEUCFUFUAUG
@@ -32413,7 +32412,7 @@ $)
     $d X a $.  $d X b $.  $d X x $.  $d x z $.  $d X z $.
 
     $( Compute the power class of an adjoinment. 
-       (Contributed by ?who?, 30-Jan-2015.) $)
+       (Contributed by SF, 30-Jan-2015.) $)
     pwadjoin $p |- ~P ( A u. { X } ) =
        ( ~P A u. { a | E. b e. ~P A a = ( b u. { X } ) } ) $=
       ( vz vx cun cpw cv wceq wrex wcel wo wss elpw wn wa wi sylib com12 orbi2i
@@ -32581,7 +32580,7 @@ $(
 $)
 
   $( Membership in a Kuratowski ordered pair. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   elopk $p |- ( A e. << B , C >> <-> ( A = { B } \/ A = { B , C } ) ) $=
     ( copk wcel csn cpr wceq wo df-opk eleq2i snex prex elpr2 bitri ) ABCDZEABF
     ZBCGZGZEAQHARHIPSABCJKAQRBLBCMNO $.
@@ -32589,7 +32588,7 @@ $)
 
   $( Equality of the first member of a Kuratowski ordered pair, which holds
      regardless of the sethood of the second members. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   opkth1g $p |- ( ( A e. V /\ << A , B >> = << C , D >> ) -> A = C ) $=
     ( wcel copk wceq wa csn cpr wo eqid orci elopk mpbir eleq2 snidg syl5ibrcom
     biimprd prid1g jaod syl5bi sylan9r mpi wb elsng adantr mpbid ) AEFZABGZCDGZ
@@ -32599,7 +32598,7 @@ $)
     $( [12-Jan-2015] $)
 
   $( Two Kuratowski ordered pairs are equal iff their components are equal. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   opkthg $p |- ( ( A e. V /\ B e. W /\ D e. T ) ->
     ( << A , B >> = << C , D >> <-> ( A = C /\ B = D ) ) ) $=
     ( wcel w3a copk wceq wa simp1 opkth1g sylan wi cpr df-opk prex syl5 jca csn
@@ -32616,7 +32615,7 @@ $)
     opkth.3 $e |- D e. _V $.
     $( Two Kuratowski ordered pairs are equal iff their components are
        equal. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     opkth $p |- ( << A , B >> = << C , D >> <-> ( A = C /\ B = D ) ) $=
       ( cvv wcel copk wceq wa wb opkthg mp3an ) AHIBHIDHIABJCDJKACKBDKLMEFGABCD
       HHHNO $.
@@ -32665,7 +32664,7 @@ $)
   ${
     $d A x y $.
     $( Membership in cardinal one. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     el1c $p |- ( A e. 1c <-> E. x A = { x } ) $=
       ( vy c1c wcel cvv cv csn wceq elex snex eleq1 mpbiri exlimiv eqeq1 exbidv
       wex df-1c elab2g pm5.21nii ) BDEBFEZBAGZHZIZAQZBDJUDUAAUDUAUCFEUBKBUCFLMN
@@ -32677,7 +32676,7 @@ $)
     $d A x $.
     snel1c.1 $e |- A e. _V $.
     $( A singleton is an element of cardinal one. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     snel1c $p |- { A } e. 1c $=
       ( vx csn c1c wcel cv wceq wex eqid sneq eqeq2d spcev ax-mp el1c mpbir )
       ADZEFQCGZDZHZCIZQQHZUAQJTUBCABRAHSQQRAKLMNCQOP $.
@@ -32687,7 +32686,7 @@ $)
   ${
     $d A x $.
     $( A singleton is an element of cardinal one. 
-       (Contributed by ?who?, 30-Jan-2015.) $)
+       (Contributed by SF, 30-Jan-2015.) $)
     snel1cg $p |- ( A e. V -> { A } e. 1c ) $=
       ( vx cv csn c1c wcel wceq sneq eleq1d vex snel1c vtoclg ) CDZEZFGAEZFGCAB
       NAHOPFNAIJNCKLM $.
@@ -32697,7 +32696,7 @@ $)
   ${
     $d x y z w $.
     $( Cardinal one is a set. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     1cex $p |- 1c e. _V $=
       ( vy vx vw vz c1c cvv wcel wel weq wb wal wex ax-1c cv isset bitri bibi2i
       wceq albii exbii csn cab df-1c eqeq2i abeq2 dfcleq df-sn abeq2i mpbir ) E
@@ -32708,7 +32707,7 @@ $)
   $}
 
   $( Equality theorem for unit power class. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   pw1eq $p |- ( A = B -> ~P1 A = ~P1 B ) $=
     ( wceq cpw c1c cin cpw1 pweq ineq1d df-pw1 3eqtr4g ) ABCZADZEFBDZEFAGBGLMNE
     ABHIAJBJK $.
@@ -32717,7 +32716,7 @@ $)
   ${
     $d A x y z w $.  $d B x y z w $.
     $( Membership in a unit power class. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     elpw1 $p |- ( A e. ~P1 B <-> E. x e. B A = { x } ) $=
       ( cpw1 wcel cpw c1c wa cv csn wceq wrex cin df-pw1 eleq2i elin bitri el1c
       wex bitr4i anbi2i 19.42v eleq1 wss snex elpw vex snss syl6bb exbii df-rex
@@ -32727,7 +32726,7 @@ $)
       $( [13-Jan-2015] $)
 
     $( Membership in a unit power class applied twice. 
-       (Contributed by ?who?, 15-Jan-2015.) $)
+       (Contributed by SF, 15-Jan-2015.) $)
     elpw12 $p |- ( A e. ~P1 ~P1 B <-> E. x e. B A = { { x } } ) $=
       ( vy cpw1 wcel cv csn wceq wrex wa wex elpw1 anbi1i r19.41v bitr4i df-rex
       exbii rexcom4 3bitr4i snex sneq eqeq2d ceqsexv rexbii 3bitri ) BCEZEFBDGZ
@@ -32740,7 +32739,7 @@ $)
   ${
     $d A x $.  $d B x $.
     $( Membership of a singleton in a unit power class. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     snelpw1 $p |- ( { A } e. ~P1 B <-> A e. B ) $=
       ( vx csn cv wceq wrex cpw1 wcel eqcom vex sneqb bitri rexbii elpw1 risset
       3bitr4i ) ADZCEZDZFZCBGSAFZCBGRBHIABIUAUBCBUATRFUBRTJSACKLMNCRBOCABPQ $.
@@ -32750,7 +32749,7 @@ $)
   ${
     $d A x y $.
     $( Membership in ` ~P1 1c ` 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     elpw11c $p |- ( A e. ~P1 1c <-> E. x A = { { x } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wrex wex elpw1 df-rex anbi1i 19.41v bitr4i
       wa el1c exbii bitri excom snex sneq eqeq2d ceqsexv 3bitri ) BDEFBCGZHZIZC
@@ -32760,7 +32759,7 @@ $)
       $( [13-Jan-2015] $)
 
     $( Membership in ` ~P1 ~P1 1c ` 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     elpw121c $p |- ( A e. ~P1 ~P1 1c <-> E. x A = { { { x } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wrex elpw1 wa df-rex elpw11c anbi1i 19.41v
       wex bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEZEFBCGZHZIZCUF
@@ -32771,7 +32770,7 @@ $)
 
 
     $( Membership in ` ~P1 ~P1 ~P1 1c ` 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     elpw131c $p |- ( A e. ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { x } } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw121c anbi1i 19.41v
@@ -32783,7 +32782,7 @@ $)
 
 
     $( Membership in ` ~P1 ~P1 ~P1 ~P1 1c ` 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     elpw141c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { x } } } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw131c anbi1i 19.41v
@@ -32794,7 +32793,7 @@ $)
       $( [14-Jan-2015] $)
 
     $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     elpw151c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { x } } } } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw141c anbi1i 19.41v
@@ -32805,7 +32804,7 @@ $)
       $( [14-Jan-2015] $)
 
     $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     elpw161c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { x } } } } } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw151c anbi1i 19.41v
@@ -32817,7 +32816,7 @@ $)
 
 
     $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
-       (Contributed by ?who?, 15-Jan-2015.) $)
+       (Contributed by SF, 15-Jan-2015.) $)
     elpw171c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { x } } } } } } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw161c anbi1i 19.41v
@@ -32829,7 +32828,7 @@ $)
 
 
     $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
-       (Contributed by ?who?, 15-Jan-2015.) $)
+       (Contributed by SF, 15-Jan-2015.) $)
     elpw181c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { { x } } } } } } } } } ) $=
@@ -32842,7 +32841,7 @@ $)
 
 
     $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
-       (Contributed by ?who?, 24-Jan-2015.) $)
+       (Contributed by SF, 24-Jan-2015.) $)
     elpw191c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { { { x } } } } } } } } } } ) $=
@@ -32854,7 +32853,7 @@ $)
       $( [24-Jan-2015] $)
 
     $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
-       (Contributed by ?who?, 24-Jan-2015.) $)
+       (Contributed by SF, 24-Jan-2015.) $)
     elpw1101c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { { { { x } } } } } } } } } } } ) $=
@@ -32867,7 +32866,7 @@ $)
 
 
     $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
-       (Contributed by ?who?, 24-Jan-2015.) $)
+       (Contributed by SF, 24-Jan-2015.) $)
     elpw1111c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { { { { { x } } } } } } } } } } } } ) $=
@@ -32881,13 +32880,13 @@ $)
 
 
   $( A unit power class is a subset of ` 1c ` . 
-     (Contributed by ?who?, 22-Jan-2015.) $)
+     (Contributed by SF, 22-Jan-2015.) $)
   pw1ss1c $p |- ~P1 A C_ 1c $=
     ( cpw1 cpw c1c cin df-pw1 inss2 eqsstri ) ABACZDEDAFIDGH $.
     $( [22-Jan-2015] $)
 
   $( The empty class is not a singleton. 
-     (Contributed by ?who?, 22-Jan-2015.) $)
+     (Contributed by SF, 22-Jan-2015.) $)
   0nel1c $p |- -. (/) e. 1c $=
     ( vx c0 c1c wcel cv csn wceq wex wn cvv vex snprc eqcom bitri con1bii mpbir
     nex el1c mtbir ) BCDBAEZFZGZAHUBAUBITJDZAKUCUBUCIUABGUBTLUABMNOPQABRS $.
@@ -32896,15 +32895,15 @@ $)
   $( Note that ` x ` is a dummy variable in the proof below. $)
   $( Compute the power set of the empty set.  Theorem 89 of [Suppes] p. 47.
      (The proof was shortened by Andrew Salmon, 29-Jun-2011.) 
-     (Contributed by ?who?, 5-Aug-1993.) 
-     (Revised by ?who?, 29-Jun-2011.) $)
+     (Contributed by SF, 5-Aug-1993.) 
+     (Revised by SF, 29-Jun-2011.) $)
   pw0 $p |- ~P (/) = { (/) } $=
     ( vx cv c0 wss cab wceq cpw csn ss0b abbii df-pw df-sn 3eqtr4i ) ABZCDZAENC
     FZAECGCHOPANIJACKACLM $.
     $( [29-Jun-2011] $) $( [5-Aug-1993] $)
 
   $( Compute the unit power class of ` (/) ` 
-     (Contributed by ?who?, 22-Jan-2015.) $)
+     (Contributed by SF, 22-Jan-2015.) $)
   pw10 $p |- ~P1 (/) = (/) $=
     ( vx c0 cpw1 cpw c1c cin csn df-pw1 pw0 ineq1i wceq cv wcel disj vex 0nel1c
     wn elsn eleq1 mtbiri sylbi mprgbir 3eqtri ) BCBDZEFBGZEFZBBHUDUEEIJUFBKALZE
@@ -32915,7 +32914,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( A condition for equality to unit power class. 
-       (Contributed by ?who?, 21-Jan-2015.) $)
+       (Contributed by SF, 21-Jan-2015.) $)
     eqpw1 $p |- ( A = ~P1 B <-> ( A C_ 1c /\ A. x ( { x } e. A <-> x e. B )
         ) ) $=
       ( vy cpw1 wceq c1c wss cv csn wcel wb pw1ss1c sseq1 wi bitr4i albii bitri
@@ -32931,7 +32930,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( Unit power class distributes over union. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     pw1un $p |- ~P1 ( A u. B ) = ( ~P1 A u. ~P1 B ) $=
       ( vx vy cun cpw1 cv wceq wrex wcel rexun elpw1 elun orbi12i bitri 3bitr4i
       csn wo eqriv ) CABEZFZAFZBFZEZCGZDGQHZDTIUFDAIZUFDBIZRZUEUAJUEUDJZUFDABKD
@@ -32942,7 +32941,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( Unit power class distributes over intersection. 
-       (Contributed by ?who?, 13-Feb-2015.) $)
+       (Contributed by SF, 13-Feb-2015.) $)
     pw1in $p |- ~P1 ( A i^i B ) = ( ~P1 A i^i ~P1 B ) $=
       ( vx vy cin cpw1 cv csn wceq wrex wcel wa ancom eleq1 snelpw1 syl6bb elin
       anbi2d elpw1 3bitr4i syl6bbr pm5.32ri an12 3bitr3i rexbii2 anbi1i r19.41v
@@ -32957,7 +32956,7 @@ $)
     $d A x y $.
     pw1sn.1 $e |- A e. _V $.
     $( Compute the unit power class of a singleton. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     pw1sn $p |- ~P1 { A } = { { A } } $=
       ( vx vy csn cpw1 cv wceq wrex wcel sneq eqeq2d rexsn elpw1 vex elsn eqriv
       3bitr4i ) CAEZFZSEZCGZDGZEZHZDSIUBSHZUBTJUBUAJUEUFDABUCAHUDSUBUCAKLMDUBSN
@@ -32969,7 +32968,7 @@ $)
     $d A x $.
     $( The unit power class of a class is empty iff the class itself is
        empty. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     pw10b $p |- ( ~P1 A = (/) <-> A = (/) ) $=
       ( vx cpw1 c0 wceq wne cv wcel wex csn snelpw1 ne0i sylbir exlimiv necon4i
       n0 sylbi pw1eq pw10 syl6eq impbii ) ACZDEADEZADUBDADFBGZAHZBIUBDFZBAPUEUF
@@ -32981,7 +32980,7 @@ $)
     $d A x y $.  $d B x y $.
     $( Two unit power classes are disjoint iff the classes themselves are
        disjoint. 
-       (Contributed by ?who?, 26-Jan-2015.) $)
+       (Contributed by SF, 26-Jan-2015.) $)
     pw1disj $p |- ( ( ~P1 A i^i ~P1 B ) = (/) <-> ( A i^i B ) = (/) ) $=
       ( vx vy cpw1 cin c0 wceq cv wcel wn wral csn wi disj eleq1 notbid snelpw1
       sylbi ralrimiv rspccv notbii 3imtr3g sylibr wrex elpw1 wa rsp imp syl6bb
@@ -32996,7 +32995,7 @@ $)
   ${
     $d x y $.
     $( Cardinal one is the unit power class of the universe. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     df1c2 $p |- 1c = ~P1 _V $=
       ( vx vy c1c cvv cpw1 cv csn wceq wrex wcel rexv elpw1 el1c 3bitr4ri eqriv
       wex ) ACDEZAFZBFGHZBDISBPRQJRCJSBKBRDLBRMNO $.
@@ -33004,7 +33003,7 @@ $)
   $}
 
   $( Unit power set preserves subset. 
-     (Contributed by ?who?, 3-Feb-2015.) $)
+     (Contributed by SF, 3-Feb-2015.) $)
   pw1ss $p |- ( A C_ B -> ~P1 A C_ ~P1 B ) $=
     ( wss cpw c1c cin cpw1 sspwb ssrin sylbi df-pw1 3sstr4g ) ABCZADZEFZBDZEFZA
     GBGMNPCOQCABHNPEIJAKBKL $.
@@ -33013,7 +33012,7 @@ $)
   ${
     $d A t $.  $d A x $.  $d B t $.  $d B x $.  $d t x $.
     $( The unit power class operation is one-to-one. 
-       (Contributed by ?who?, 26-Feb-2015.) $)
+       (Contributed by SF, 26-Feb-2015.) $)
     pw111 $p |- ( ~P1 A = ~P1 B <-> A = B ) $=
       ( vt vx cv csn wceq cpw1 wcel wb wi wal eleq1 snelpw1 bitri albii c1c wss
       snex pw1ss1c bibi12d ceqsalv bibi12i wral ssofeq mp2an df-ral el1c imbi1i
@@ -33026,7 +33025,7 @@ $)
   $}
 
   $( A unit power class is a subset of a power class. 
-     (Contributed by ?who?, 10-Mar-2015.) $)
+     (Contributed by SF, 10-Mar-2015.) $)
   pw1sspw $p |- ~P1 A C_ ~P A $=
     ( cpw1 cpw c1c cin df-pw1 inss1 eqsstri ) ABACZDEIAFIDGH $.
     $( [10-Mar-2015] $)
@@ -33034,7 +33033,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( Membership in a unit union. 
-       (Contributed by ?who?, 15-Mar-2015.) $)
+       (Contributed by SF, 15-Mar-2015.) $)
     eluni1g $p |- ( A e. V -> ( A e. U.1 B <-> { A } e. B ) ) $=
       ( vy vx cuni1 wcel wceq csn wex c1c cin cuni df-uni1 anbi1i bitr4i 3bitri
       cv wa exbii eleq2i eluni elin ancom el1c 19.41v anbi2i 19.42v excom eleq2
@@ -33051,7 +33050,7 @@ $)
   ${
     eluni1.1 $e |- A e. _V $.
     $( Membership in a unit union. 
-       (Contributed by ?who?, 15-Mar-2015.) $)
+       (Contributed by SF, 15-Mar-2015.) $)
     eluni1 $p |- ( A e. U.1 B <-> { A } e. B ) $=
       ( cvv wcel cuni1 csn wb eluni1g ax-mp ) ADEABFEAGBEHCABDIJ $.
       $( [15-Mar-2015] $)
@@ -33179,7 +33178,7 @@ $)
     $d A x y z w $.  $d B x y z w $.  $d C x y z w $.
 
     $( Membership in a Kuratowski cross product. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     elxpk $p |- ( A e. ( B X._k C ) <-> E. x E. y ( A = << x , y >> /\
                ( x e. B /\ y e. C ) ) ) $=
       ( vw cxpk wcel cvv cv copk wceq wa wex opkex eleq1 mpbiri adantr exlimivv
@@ -33190,7 +33189,7 @@ $)
 
 
     $( Membership in a cross product. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     elxpk2 $p |- ( A e. ( B X._k C ) <->
            E. x e. B E. y e. C A = << x , y >> ) $=
       ( cv wcel wa copk wceq wex wrex cxpk ancom 2exbii r2ex elxpk 3bitr4ri ) A
@@ -33201,14 +33200,14 @@ $)
 
     $d x y z A $.  $d x y z B $.  $d x y z C $.
     $( Equality theorem for Kuratowski cross product. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     xpkeq1 $p |- ( A = B -> ( A X._k C ) = ( B X._k C ) ) $=
       ( vx vy vz wceq cxpk cv copk wrex wcel rexeq elxpk2 3bitr4g eqrdv ) ABGZD
       ACHZBCHZQDIZEIFIJGFCKZEAKUAEBKTRLTSLUAEABMEFTACNEFTBCNOP $.
       $( [12-Jan-2015] $)
 
     $( Equality theorem for Kuratowski cross product. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     xpkeq2 $p |- ( A = B -> ( C X._k A ) = ( C X._k B ) ) $=
       ( vx vy vz wceq cxpk cv copk wrex wcel rexeq rexbidv elxpk2 3bitr4g eqrdv
       ) ABGZDCAHZCBHZRDIZEIFIJGZFAKZECKUBFBKZECKUASLUATLRUCUDECUBFABMNEFUACAOEF
@@ -33217,7 +33216,7 @@ $)
   $}
 
   $( Equality theorem for Kuratowski cross product. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   xpkeq12 $p |- ( ( A = B /\ C = D ) -> ( A X._k C ) = ( B X._k D ) ) $=
     ( wceq cxpk xpkeq1 xpkeq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
     $( [12-Jan-2015] $)
@@ -33225,13 +33224,13 @@ $)
   ${
     xpkeq1i.1 $e |- A = B $.
     $( Equality inference for Kuratowski cross product. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     xpkeq1i $p |- ( A X._k C ) = ( B X._k C ) $=
       ( wceq cxpk xpkeq1 ax-mp ) ABEACFBCFEDABCGH $.
       $( [12-Jan-2015] $)
 
     $( Equality inference for Kuratowski cross product. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     xpkeq2i $p |- ( C X._k A ) = ( C X._k B ) $=
       ( wceq cxpk xpkeq2 ax-mp ) ABECAFCBFEDABCGH $.
       $( [12-Jan-2015] $)
@@ -33241,7 +33240,7 @@ $)
     xpkeq12i.1 $e |- A = B $.
     xpkeq12i.2 $e |- C = D $.
     $( Equality inference for Kuratowski cross product. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     xpkeq12i $p |- ( A X._k C ) = ( B X._k D ) $=
       ( wceq cxpk xpkeq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
       $( [12-Jan-2015] $)
@@ -33250,20 +33249,20 @@ $)
   ${
     xpkeq1d.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for Kuratowski cross product. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     xpkeq1d $p |- ( ph -> ( A X._k C ) = ( B X._k C ) ) $=
       ( wceq cxpk xpkeq1 syl ) ABCFBDGCDGFEBCDHI $.
       $( [12-Jan-2015] $)
 
     $( Equality deduction for Kuratowski cross product. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     xpkeq2d $p |- ( ph -> ( C X._k A ) = ( C X._k B ) ) $=
       ( wceq cxpk xpkeq2 syl ) ABCFDBGDCGFEBCDHI $.
       $( [12-Jan-2015] $)
 
     xpkeq12d.2 $e |- ( ph -> C = D ) $.
     $( Equality deduction for Kuratowski cross product. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     xpkeq12d $p |- ( ph -> ( A X._k C ) = ( B X._k D ) ) $=
       ( wceq cxpk xpkeq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
       $( [12-Jan-2015] $)
@@ -33272,7 +33271,7 @@ $)
   ${
     $d A x y $.
     $( Membership in ` ( _V X._k _V ) ` 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     elvvk $p |- ( A e. ( _V X._k _V ) <-> E. x E. y A = << x , y >> ) $=
       ( cvv cxpk wcel cv copk wceq wex elxpk vex pm3.2i biantru 2exbii bitr4i
       wa ) CDDEFCAGZBGZHIZRDFZSDFZQZQZBJAJTBJAJABCDDKTUDABUCTUAUBALBLMNOP $.
@@ -33283,7 +33282,7 @@ $)
     $d t w $.  $d t y $.  $d t z $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.
     $( Any Kuratowski ordered pair abstraction is a subset of
        ` ( _V X._k _V ) ` . 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     opkabssvvk $p |- { x | E. y E. z ( x = << y , z >> /\ ph ) } C_
        ( _V X._k _V ) $=
       ( vw vt cv copk wceq wa wex cvv cxpk wcel eqid vex opkeq12 eqeq2d spc2ev
@@ -33298,7 +33297,7 @@ $)
     opkabssvvki.1 $e |- A = { x | E. y E. z ( x = << y , z >> /\ ph ) } $.
     $( Any Kuratowski ordered pair abstraction is a subset of
        ` ( _V X._k _V ) ` . 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     opkabssvvki $p |- A C_ ( _V X._k _V ) $=
       ( cv copk wceq wa wex cab cvv cxpk opkabssvvk eqsstri ) EBGCGDGHIAJDKCKBL
       MMNFABCDOP $.
@@ -33308,7 +33307,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.
     $( Any Kuratowski cross product is a subset of ` ( _V X._k _V ) ` . 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     xpkssvvk $p |- ( A X._k B ) C_ ( _V X._k _V ) $=
       ( vy vz vx cv wcel wa cxpk df-xpk opkabssvvki ) CFAGDFBGHECDABIECDABJK $.
       $( [13-Jan-2015] $)
@@ -33317,7 +33316,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.
     $( Subset for Kuratowski relationships. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     ssrelk $p |- ( A C_ ( _V X._k _V ) ->
        ( A C_ B <-> A. x A. y ( << x , y >> e. A -> << x , y >> e. B ) ) ) $=
       ( vz cvv cxpk wss cv wcel wi wral copk wal ssofss wceq df-ral bitri eleq1
@@ -33332,7 +33331,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.
     $( Equality for two Kuratowski relationships. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     eqrelk $p |- ( ( A C_ ( _V X._k _V ) /\ B C_ ( _V X._k _V ) ) ->
       ( A = B <-> A. x A. y ( << x , y >> e. A <-> << x , y >> e. B ) ) ) $=
       ( vz cvv cxpk wss wa wceq cv wcel wb wral copk wal ssofeq wi wex eleq1
@@ -33351,7 +33350,7 @@ $)
     ${
       eqrelkriiv.3 $e |- ( << x , y >> e. A <-> << x , y >> e. B ) $.
       $( Equality for two Kuratowski relationships. 
-         (Contributed by ?who?, 13-Jan-2015.) $)
+         (Contributed by SF, 13-Jan-2015.) $)
       eqrelkriiv $p |- A = B $=
         ( wceq cv copk wcel wb wal gen2 cvv cxpk wss eqrelk mp2an mpbir ) CDHZA
         IBIJZCKUBDKLZBMAMZUCABGNCOOPZQDUEQUAUDLEFABCDRST $.
@@ -33362,7 +33361,7 @@ $)
       $d ph x y $.
       eqrelkrdv.3 $e |- ( ph -> ( << x , y >> e. A <-> << x , y >> e. B ) ) $.
       $( Equality for two Kuratowski relationships. 
-         (Contributed by ?who?, 13-Jan-2015.) $)
+         (Contributed by SF, 13-Jan-2015.) $)
       eqrelkrdv $p |- ( ph -> A = B ) $=
         ( cv copk wcel wb wal wceq alrimivv cvv cxpk wss eqrelk mp2an sylibr )
         ABICIJZDKUBEKLZCMBMZDENZAUCBCHODPPQZREUFRUEUDLFGBCDESTUA $.
@@ -33373,7 +33372,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.
     $( Equality theorem for Kuratowski converse. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     cnvkeq $p |- ( A = B -> `'_k A = `'_k B ) $=
       ( vx vy vz wceq cv copk wcel wa wex cab ccnvk eleq2 anbi2d 2exbidv abbidv
       df-cnvk 3eqtr4g ) ABFZCGDGZEGZHFZUBUAHZAIZJZEKDKZCLUCUDBIZJZEKDKZCLAMBMTU
@@ -33385,7 +33384,7 @@ $)
   ${
     cnvkeqi.1 $e |- A = B $.
     $( Equality inference for Kuratowski converse. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     cnvkeqi $p |- `'_k A = `'_k B $=
       ( wceq ccnvk cnvkeq ax-mp ) ABDAEBEDCABFG $.
       $( [12-Jan-2015] $)
@@ -33394,7 +33393,7 @@ $)
   ${
     cnvkeqd.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for Kuratowski converse. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     cnvkeqd $p |- ( ph -> `'_k A = `'_k B ) $=
       ( wceq ccnvk cnvkeq syl ) ABCEBFCFEDBCGH $.
       $( [12-Jan-2015] $)
@@ -33403,7 +33402,7 @@ $)
   ${
     $d A x y z w t u $.  $d B x y z w t u $.
     $( Equality theorem for the Kuratowski insert two operator. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     ins2keq $p |- ( A = B -> Ins2_k A = Ins2_k B ) $=
       ( vx vy vz vw vt vu wceq cv copk csn w3a wex wa cab cins2k eleq2 df-ins2k
       wcel 3anbi3d 3exbidv anbi2d 2exbidv abbidv 3eqtr4g ) ABIZCJDJZEJZKIZUHFJZ
@@ -33413,7 +33412,7 @@ $)
       $( [12-Jan-2015] $)
 
     $( Equality theorem for the Kuratowski insert three operator. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     ins3keq $p |- ( A = B -> Ins3_k A = Ins3_k B ) $=
       ( vx vy vz vw vt vu wceq cv copk csn w3a wex wa cab cins3k eleq2 df-ins3k
       wcel 3anbi3d 3exbidv anbi2d 2exbidv abbidv 3eqtr4g ) ABIZCJDJZEJZKIZUHFJZ
@@ -33426,13 +33425,13 @@ $)
   ${
     inskeqi.1 $e |- A = B $.
     $( Equality inference for Kuratowski insert two operator. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     ins2keqi $p |- Ins2_k A = Ins2_k B $=
       ( wceq cins2k ins2keq ax-mp ) ABDAEBEDCABFG $.
       $( [12-Jan-2015] $)
 
     $( Equality inference for Kuratowski insert three operator. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     ins3keqi $p |- Ins3_k A = Ins3_k B $=
       ( wceq cins3k ins3keq ax-mp ) ABDAEBEDCABFG $.
       $( [12-Jan-2015] $)
@@ -33441,13 +33440,13 @@ $)
   ${
     inskeqd.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for Kuratowski insert two operator. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     ins2keqd $p |- ( ph -> Ins2_k A = Ins2_k B ) $=
       ( wceq cins2k ins2keq syl ) ABCEBFCFEDBCGH $.
       $( [12-Jan-2015] $)
 
     $( Equality deduction for Kuratowski insert three operator. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     ins3keqd $p |- ( ph -> Ins3_k A = Ins3_k B ) $=
       ( wceq cins3k ins3keq syl ) ABCEBFCFEDBCGH $.
       $( [12-Jan-2015] $)
@@ -33456,14 +33455,14 @@ $)
   ${
     $d A x y $.  $d B x y $.  $d C x y $.
     $( Equality theorem for Kuratowski image. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     imakeq1 $p |- ( A = B -> ( A "_k C ) = ( B "_k C ) ) $=
       ( vy vx wceq cv copk wcel wrex cimak eleq2 rexbidv abbidv df-imak 3eqtr4g
       cab ) ABFZDGEGHZAIZDCJZEQSBIZDCJZEQACKBCKRUAUCERTUBDCABSLMNEDACOEDBCOP $.
       $( [12-Jan-2015] $)
 
     $( Equality theorem for Kuratowski image. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     imakeq2 $p |- ( A = B -> ( C "_k A ) = ( C "_k B ) ) $=
       ( vy vx wceq cv copk wcel wrex cab cimak rexeq abbidv df-imak 3eqtr4g ) A
       BFZDGEGHCIZDAJZEKRDBJZEKCALCBLQSTERDABMNEDCAOEDCBOP $.
@@ -33474,13 +33473,13 @@ $)
   ${
     imakeq1i.1 $e |- A = B $.
     $( Equality theorem for image. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     imakeq1i $p |- ( A "_k C ) = ( B "_k C ) $=
       ( wceq cimak imakeq1 ax-mp ) ABEACFBCFEDABCGH $.
       $( [12-Jan-2015] $)
 
     $( Equality theorem for Kuratowski image. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     imakeq2i $p |- ( C "_k A ) = ( C "_k B ) $=
       ( wceq cimak imakeq2 ax-mp ) ABECAFCBFEDABCGH $.
       $( [12-Jan-2015] $)
@@ -33489,27 +33488,27 @@ $)
   ${
     imakeq1d.1 $e |- ( ph -> A = B ) $.
     $( Equality theorem for Kuratowski image. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     imakeq1d $p |- ( ph -> ( A "_k C ) = ( B "_k C ) ) $=
       ( wceq cimak imakeq1 syl ) ABCFBDGCDGFEBCDHI $.
       $( [12-Jan-2015] $)
 
     $( Equality theorem for Kuratowski image. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     imakeq2d $p |- ( ph -> ( C "_k A ) = ( C "_k B ) ) $=
       ( wceq cimak imakeq2 syl ) ABCFDBGDCGFEBCDHI $.
       $( [12-Jan-2015] $)
   $}
 
   $( Equality theorem for Kuratowski composition of two classes. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   cokeq1 $p |- ( A = B -> ( A o._k C ) = ( B o._k C ) ) $=
     ( wceq cins2k ccnvk cins3k cin cimak ins2keq ineq1d imakeq1d df-cok 3eqtr4g
     cvv ccomk ) ABDZAEZCFGZHZOIBEZSHZOIACPBCPQTUBOQRUASABJKLACMBCMN $.
     $( [12-Jan-2015] $)
 
   $( Equality theorem for Kuratowski composition of two classes. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   cokeq2 $p |- ( A = B -> ( C o._k A ) = ( C o._k B ) ) $=
     ( wceq cins2k ccnvk cins3k cin cimak cnvkeq ins3keqd ineq2d imakeq1d df-cok
     cvv ccomk 3eqtr4g ) ABDZCEZAFZGZHZOISBFZGZHZOICAPCBPRUBUEORUAUDSRTUCABJKLMC
@@ -33519,13 +33518,13 @@ $)
   ${
     cokeq1i.1 $e |- A = B $.
     $( Equality inference for Kuratowski composition of two classes. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     cokeq1i $p |- ( A o._k C ) = ( B o._k C ) $=
       ( wceq ccomk cokeq1 ax-mp ) ABEACFBCFEDABCGH $.
       $( [12-Jan-2015] $)
 
     $( Equality inference for Kuratowski composition of two classes. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     cokeq2i $p |- ( C o._k A ) = ( C o._k B ) $=
       ( wceq ccomk cokeq2 ax-mp ) ABECAFCBFEDABCGH $.
       $( [12-Jan-2015] $)
@@ -33534,13 +33533,13 @@ $)
   ${
     cokeq1d.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for Kuratowski composition of two classes. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     cokeq1d $p |- ( ph -> ( A o._k C ) = ( B o._k C ) ) $=
       ( wceq ccomk cokeq1 syl ) ABCFBDGCDGFEBCDHI $.
       $( [12-Jan-2015] $)
 
     $( Equality deduction for Kuratowski composition of two classes. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     cokeq2d $p |- ( ph -> ( C o._k A ) = ( C o._k B ) ) $=
       ( wceq ccomk cokeq2 syl ) ABCFDBGDCGFEBCDHI $.
       $( [12-Jan-2015] $)
@@ -33550,7 +33549,7 @@ $)
     cokeq12i.1 $e |- A = B $.
     cokeq12i.2 $e |- C = D $.
     $( Equality inference for Kuratowski composition of two classes. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     cokeq12i $p |- ( A o._k C ) = ( B o._k D ) $=
       ( ccomk cokeq1i cokeq2i eqtri ) ACGBCGBDGABCEHCDBFIJ $.
       $( [12-Jan-2015] $)
@@ -33560,7 +33559,7 @@ $)
     cokeq12d.1 $e |- ( ph -> A = B ) $.
     cokeq12d.2 $e |- ( ph -> C = D ) $.
     $( Equality deduction for Kuratowski composition of two classes. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     cokeq12d $p |- ( ph -> ( A o._k C ) = ( B o._k D ) ) $=
       ( ccomk cokeq1d cokeq2d eqtrd ) ABDHCDHCEHABCDFIADECGJK $.
       $( [12-Jan-2015] $)
@@ -33569,7 +33568,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( Equality theorem for P6 operation. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     p6eq $p |- ( A = B -> P6 A = P6 B ) $=
       ( vx wceq cvv cv csn cxpk wss cab cp6 sseq2 abbidv df-p6 3eqtr4g ) ABDZEC
       FGGHZAIZCJQBIZCJAKBKPRSCABQLMCANCBNO $.
@@ -33579,7 +33578,7 @@ $)
   ${
     p6eqi.1 $e |- A = B $.
     $( Equality inference for the P6 operation. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     p6eqi $p |- P6 A = P6 B $=
       ( wceq cp6 p6eq ax-mp ) ABDAEBEDCABFG $.
       $( [12-Jan-2015] $)
@@ -33588,7 +33587,7 @@ $)
   ${
     p6eqd.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for the P6 operation. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     p6eqd $p |- ( ph -> P6 A = P6 B ) $=
       ( wceq cp6 p6eq syl ) ABCEBFCFEDBCGH $.
       $( [12-Jan-2015] $)
@@ -33597,7 +33596,7 @@ $)
   ${
     $d A x y z w t u $.  $d B x y z w t u $.
     $( Equality theorem for Kuratowski singleton image. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     sikeq $p |- ( A = B -> SI_k A = SI_k B ) $=
       ( vx vy vz vw vt wceq cv copk csn wcel w3a wex wa cab csik 2exbidv df-sik
       eleq2 3anbi3d anbi2d abbidv 3eqtr4g ) ABHZCIDIZEIZJHZUFFIZKHZUGGIZKHZUIUK
@@ -33609,7 +33608,7 @@ $)
   ${
     sikeqi.1 $e |- A = B $.
     $( Equality inference for Kuratowski singleton image. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     sikeqi $p |- SI_k A = SI_k B $=
       ( wceq csik sikeq ax-mp ) ABDAEBEDCABFG $.
       $( [12-Jan-2015] $)
@@ -33618,14 +33617,14 @@ $)
   ${
     sikeqd.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for Kuratowski singleton image. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     sikeqd $p |- ( ph -> SI_k A = SI_k B ) $=
       ( wceq csik sikeq syl ) ABCEBFCFEDBCGH $.
       $( [12-Jan-2015] $)
   $}
 
   $( Equality theorem for image operation. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+     (Contributed by SF, 12-Jan-2015.) $)
   imagekeq $p |- ( A = B -> Image_k A = Image_k B ) $=
     ( wceq cvv cxpk cssetk cins2k csik ccnvk ccomk cins3k csymdif c1c cpw1 cdif
     cimak cimagek sikeq cnvkeqd df-imagek cokeq2d ins3keqd symdifeq2d imakeq1d
@@ -33641,7 +33640,7 @@ $)
     opkelopkabg.3 $e |- ( z = C -> ( ps <-> ch ) ) $.
     $( Kuratowski ordered pair membership in an abstraction of Kuratowski
        ordered pairs. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     opkelopkabg $p |- ( ( B e. V /\ C e. W ) ->
                  ( << B , C >> e. A <-> ch ) ) $=
       ( wcel wceq wa wex cvv wb copk cv opkex eqeq1 eqcom syl6bb anbi1d 2exbidv
@@ -33666,7 +33665,7 @@ $)
     opkelopkab.5 $e |- C e. _V $.
     $( Kuratowski ordered pair membership in an abstraction of Kuratowski
        ordered pairs. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     opkelopkab $p |- ( << B , C >> e. A <-> ch ) $=
       ( cvv wcel copk wb opkelopkabg mp2an ) HOPIOPHIQGPCRMNABCDEFGHIOOJKLST $.
       $( [12-Jan-2015] $)
@@ -33675,7 +33674,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.  $d C x y z $.  $d D x y z $.
     $( Kuratowski ordered pair membership in a Kuratowski cross product. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     opkelxpkg $p |- ( ( A e. V /\ B e. W ) ->
        ( << A , B >> e. ( C X._k D ) <-> ( A e. C /\ B e. D ) ) ) $=
       ( vx vy vz cv wcel wa cxpk df-xpk wceq eleq1 anbi1d anbi2d opkelopkabg )
@@ -33688,7 +33687,7 @@ $)
     opkelxpk.1 $e |- A e. _V $.
     opkelxpk.2 $e |- B e. _V $.
     $( Kuratowski ordered pair membership in a Kuratowski cross product. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     opkelxpk $p |- ( << A , B >> e. ( C X._k D ) <-> ( A e. C /\ B e. D ) ) $=
       ( cvv wcel copk cxpk wa wb opkelxpkg mp2an ) AGHBGHABICDJHACHBDHKLEFABCDG
       GMN $.
@@ -33698,7 +33697,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.  $d C x y z $.
     $( Kuratowski ordered pair membership in a Kuratowski converse. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     opkelcnvkg $p |- ( ( A e. V /\ B e. W ) ->
                 ( << A , B >> e. `'_k C <-> << B , A >> e. C ) ) $=
       ( vy vx vz copk wcel ccnvk df-cnvk wceq opkeq2 eleq1d opkeq1 opkelopkabg
@@ -33710,7 +33709,7 @@ $)
     opkelcnvk.1 $e |- A e. _V $.
     opkelcnvk.2 $e |- B e. _V $.
     $( Kuratowski ordered pair membership in a Kuratowski converse. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     opkelcnvk $p |- ( << A , B >> e. `'_k C <-> << B , A >> e. C ) $=
       ( cvv wcel copk ccnvk wb opkelcnvkg mp2an ) AFGBFGABHCIGBAHCGJDEABCFFKL
       $.
@@ -33720,7 +33719,7 @@ $)
   ${
     $d A x y z w t u $.  $d B x y z w t u $.  $d C x y z w t u $.
     $( Kuratowski ordered pair membership in Kuratowski insertion operator. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     opkelins2kg $p |- ( ( A e. V /\ B e. W ) ->
        ( << A , B >> e. Ins2_k C <->
          E. x E. y E. z ( A = { { x } } /\ B = << y , z >> /\
@@ -33732,7 +33731,7 @@ $)
       $( [12-Jan-2015] $)
 
     $( Kuratowski ordered pair membership in Kuratowski insertion operator. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     opkelins3kg $p |- ( ( A e. V /\ B e. W ) ->
        ( << A , B >> e. Ins3_k C <->
          E. x E. y E. z ( A = { { x } } /\ B = << y , z >> /\
@@ -33748,7 +33747,7 @@ $)
     $d A x y z $.  $d B x y z $.  $d C x y z $.  $d D x y z $.  $d T x y z $.
     $( Kuratowski ordered triple membership in Kuratowski insertion
        operator. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     otkelins2kg $p |- ( ( A e. V /\ B e. W /\ C e. T ) ->
       ( << { { A } } , << B , C >> >> e. Ins2_k D <->
         << A , C >> e. D ) ) $=
@@ -33768,7 +33767,7 @@ $)
 
     $( Kuratowski ordered triple membership in Kuratowski insertion
        operator. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     otkelins3kg $p |- ( ( A e. V /\ B e. W /\ C e. T ) ->
       ( << { { A } } , << B , C >> >> e. Ins3_k D <->
         << A , B >> e. D ) ) $=
@@ -33794,7 +33793,7 @@ $)
     otkelinsk.3 $e |- C e. _V $.
     $( Kuratowski ordered triple membership in Kuratowski insertion
        operator. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     otkelins2k $p |- ( << { { A } } , << B , C >> >> e. Ins2_k D <->
         << A , C >> e. D ) $=
       ( cvv wcel csn copk cins2k wb otkelins2kg mp3an ) AHIBHICHIAJJBCKKDLIACKD
@@ -33803,7 +33802,7 @@ $)
 
     $( Kuratowski ordered triple membership in Kuratowski insertion
        operator. 
-       (Contributed by ?who?, 12-Jan-2015.) $)
+       (Contributed by SF, 12-Jan-2015.) $)
     otkelins3k $p |- ( << { { A } } , << B , C >> >> e. Ins3_k D <->
         << A , B >> e. D ) $=
       ( cvv wcel csn copk cins3k wb otkelins3kg mp3an ) AHIBHICHIAJJBCKKDLIABKD
@@ -33814,7 +33813,7 @@ $)
   ${
     $d A x y $.  $d B x y $.  $d C x y $.
     $( Membership in a Kuratowski image. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     elimakg $p |- ( C e. V ->
              ( C e. ( A "_k B ) <-> E. y e. B << y , C >> e. A ) ) $=
       ( vx cv copk wcel wrex cimak wceq opkeq2 eleq1d rexbidv df-imak elab2g )
@@ -33822,7 +33821,7 @@ $)
       $( [13-Jan-2015] $)
 
     $( Membership in a Kuratowski image under ` _V ` . 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     elimakvg $p |- ( C e. V ->
              ( C e. ( A "_k _V ) <-> E. y << y , C >> e. A ) ) $=
       ( wcel cvv cimak cv copk wrex wex elimakg rexv syl6bb ) CDECBFGEAHCIBEZAF
@@ -33834,14 +33833,14 @@ $)
     $d A y $.  $d B y $.  $d C y $.
     elimak.1 $e |- C e. _V $.
     $( Membership in a Kuratowski image. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     elimak $p |- ( C e. ( A "_k B ) <-> E. y e. B << y , C >> e. A ) $=
       ( cvv wcel cimak cv copk wrex wb elimakg ax-mp ) DFGDBCHGAIDJBGACKLEABCDF
       MN $.
       $( [13-Jan-2015] $)
 
     $( Membership in a Kuratowski image under ` _V ` . 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     elimakv $p |- ( C e. ( A "_k _V ) <-> E. y << y , C >> e. A ) $=
       ( cvv wcel cimak cv copk wex wb elimakvg ax-mp ) CEFCBEGFAHCIBFAJKDABCELM
       $.
@@ -33851,7 +33850,7 @@ $)
   ${
     $d A x y z w $.  $d B x y z w $.  $d C x y z w $.  $d D x y z w $.
     $( Membership in a Kuratowski composition. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     opkelcokg $p |- ( ( A e. V /\ B e. W ) ->
        ( << A , B >> e. ( C o._k D ) <->
          E. x ( << A , x >> e. D /\ << x , B >> e. C ) ) ) $=
@@ -33881,7 +33880,7 @@ $)
     opkelcok.1 $e |- A e. _V $.
     opkelcok.2 $e |- B e. _V $.
     $( Membership in a Kuratowski composition. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     opkelcok $p |- ( << A , B >> e. ( C o._k D ) <->
          E. x ( << A , x >> e. D /\ << x , B >> e. C ) ) $=
       ( cvv wcel copk ccomk cv wa wex wb opkelcokg mp2an ) BHICHIBCJDEKIBALZJEI
@@ -33892,7 +33891,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( Membership in the P6 operator. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     elp6 $p |- ( A e. V -> ( A e. P6 B <-> A. x << x , { A } >> e. B ) ) $=
       ( vy wcel cp6 cvv csn cxpk wss cv copk wal wceq sneq wi vex albii bitri
       sneqd xpkeq2d sseq1d df-p6 elab2g xpkssvvk ssrelk ax-mp opkelxpk biantrur
@@ -33907,7 +33906,7 @@ $)
   ${
     $d A x y z t u $.  $d B x y z t u $.  $d C x y z t u $.
     $( Membership in Kuratowski singleton image. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     opkelsikg $p |- ( ( A e. V /\ B e. W ) ->
        ( << A , B >> e. SI_k C <->
          E. x E. y ( A = { x } /\ B = { y } /\ << x , y >> e. C ) ) ) $=
@@ -33924,7 +33923,7 @@ $)
     opksnelsik.2 $e |- B e. _V $.
     $( Membership of an ordered pair of singletons in a Kuratowski singleton
        image. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     opksnelsik $p |- ( << { A } , { B } >> e. SI_k C <-> << A , B >> e. C ) $=
       ( vx vy csn copk wcel cv wceq w3a wex cvv snex eqcom vex sneqb bitri csik
       wb opkelsikg mp2an biid 3anbi123i 2exbii opkeq1 eleq1d opkeq2 ceqsex2v )
@@ -33938,7 +33937,7 @@ $)
   ${
     $d A x y z t u $.
     $( A Kuratowski singleton image is a Kuratowski relationship. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     sikssvvk $p |- SI_k A C_ ( _V X._k _V ) $=
       ( vy vt vz vu vx cv csn wceq copk wcel w3a wex csik df-sik opkabssvvki )
       BGCGZHIDGEGZHIQRJAKLEMCMFBDANFBDECAOP $.
@@ -33948,7 +33947,7 @@ $)
   ${
     $d A x y z w t a b $.
     $( A Kuratowski singleton image is a subset of ` ( 1c X._k 1c ) ` . 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     sikss1c1c $p |- SI_k A C_ ( 1c X._k 1c ) $=
       ( vx vy va vb vz vw vt c1c cxpk wss cv copk wcel wal csn wceq w3a wex vex
       csik wi df-sik eqeq1 3anbi1d 2exbidv 3anbi2d opkelopkab wa opkeq12 snel1c
@@ -33965,7 +33964,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.
     $( Membership in the Kuratowski subset relationship. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     opkelssetkg $p |- ( ( A e. V /\ B e. W ) ->
       ( << A , B >> e. SSet_k <-> A C_ B ) ) $=
       ( vy vz vx cv wss cssetk df-ssetk sseq1 sseq2 opkelopkabg ) EHZFHZIAPIABI
@@ -33974,7 +33973,7 @@ $)
   $}
 
   $( Membership via the Kuratowski subset relationship. 
-     (Contributed by ?who?, 13-Jan-2015.) $)
+     (Contributed by SF, 13-Jan-2015.) $)
   elssetkg $p |- ( ( A e. V /\ B e. W ) ->
        ( << { A } , B >> e. SSet_k <-> A e. B ) ) $=
     ( wcel csn copk cssetk wss cvv snex opkelssetkg mpan snssg bicomd sylan9bbr
@@ -33985,7 +33984,7 @@ $)
     elssetk.1 $e |- A e. _V $.
     elssetk.2 $e |- B e. _V $.
     $( Membership via the Kuratowski subset relationship. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     elssetk $p |- ( << { A } , B >> e. SSet_k <-> A e. B ) $=
       ( cvv wcel csn copk cssetk wb elssetkg mp2an ) AEFBEFAGBHIFABFJCDABEEKL
       $.
@@ -33995,7 +33994,7 @@ $)
   ${
     $d A x y z $.  $d B x y $.  $d C x y z $.
     $( Membership in the Kuratowski image functor. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     opkelimagekg $p |- ( ( A e. V /\ B e. W ) ->
       ( << A , B >> e. Image_k C <-> B = ( C "_k A ) ) ) $=
       ( vx vy vz wcel cvv copk wb wa cssetk c1c wn wex csn exbii bitri cimak cv
@@ -34031,7 +34030,7 @@ $)
     opkelimagek.1 $e |- A e. _V $.
     opkelimagek.2 $e |- B e. _V $.
     $( Membership in the Kuratowski image functor. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     opkelimagek $p |- ( << A , B >> e. Image_k C <-> B = ( C "_k A ) ) $=
       ( cvv wcel copk cimagek cimak wceq wb opkelimagekg mp2an ) AFGBFGABHCIGBC
       AJKLDEABCFFMN $.
@@ -34040,7 +34039,7 @@ $)
 
 
   $( The Kuratowski image functor is a relationship. 
-     (Contributed by ?who?, 14-Jan-2015.) $)
+     (Contributed by SF, 14-Jan-2015.) $)
   imagekrelk $p |- Image_k A C_ ( _V X._k _V ) $=
     ( cimagek cvv cxpk cssetk cins2k csik ccnvk ccomk cins3k csymdif cpw1 cimak
     c1c cdif df-imagek difss eqsstri ) ABCCDZEFEAGHIJKNLLMZOSAPSTQR $.
@@ -34049,7 +34048,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.
     $( Membership in the Kuratowski identity relationship. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     opkelidkg $p |- ( ( A e. V /\ B e. W ) ->
               ( << A , B >> e. _I_k <-> A = B ) ) $=
       ( vx vy vz weq cv wceq cidk df-idk eqeq1 eqeq2 opkelopkabg ) EFHAFIZJABJG
@@ -34060,7 +34059,7 @@ $)
   ${
     $d A x y z $.
     $( A Kuratowski converse is a Kuratowski relationship. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     cnvkssvvk $p |- `'_k A C_ ( _V X._k _V ) $=
       ( vz vy vx cv copk wcel ccnvk df-cnvk opkabssvvki ) BECEFAGDCBAHDCBAIJ $.
       $( [13-Jan-2015] $)
@@ -34069,7 +34068,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( The converse of a Kuratowski cross product. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     cnvkxpk $p |- `'_k ( A X._k B ) = ( B X._k A ) $=
       ( vx vy cxpk ccnvk cnvkssvvk xpkssvvk cv wcel wa copk ancom vex opkelcnvk
       opkelxpk bitri 3bitr4i eqrelkriiv ) CDABEZFZBAEZTGBAHDIZAJZCIZBJZKZUFUDKU
@@ -34080,7 +34079,7 @@ $)
   ${
     $d A x y $.  $d B x y $.  $d C x y $.  $d D x y $.
     $( The intersection of two Kuratowski cross products. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     inxpk $p |- ( ( A X._k B ) i^i ( C X._k D ) ) =
            ( ( A i^i C ) X._k ( B i^i D ) ) $=
       ( vx vy cxpk cin cvv inss1 xpkssvvk sstri cv wcel wa vex opkelxpk anbi12i
@@ -34094,7 +34093,7 @@ $)
   ${
     $d x y z w $.
     $( The Kuratowski subset relationship is a Kuratowski relationship. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     ssetkssvvk $p |- SSet_k C_ ( _V X._k _V ) $=
       ( vy vz vx cv wss cssetk df-ssetk opkabssvvki ) ADBDECABFCABGH $.
       $( [13-Jan-2015] $)
@@ -34103,7 +34102,7 @@ $)
   ${
     $d A x y z t u w $.
     $( Subset law for ` Ins2_k A ` . 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     ins2kss $p |- Ins2_k A C_ ( ~P1 1c X._k ( _V X._k _V ) ) $=
       ( vy vz vw vt vu vx c1c cvv cxpk wss copk wcel wal csn wceq w3a wex vex
       cv cins2k cpw1 wi wb opkelins2kg mp2an wa opkeq12 snel1c snelpw1 opkelxpk
@@ -34117,7 +34116,7 @@ $)
       $( [14-Jan-2015] $)
 
     $( Subset law for ` Ins3_k A ` . 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     ins3kss $p |- Ins3_k A C_ ( ~P1 1c X._k ( _V X._k _V ) ) $=
       ( vy vz vt vu vw vx c1c cvv cxpk wss cv copk wcel wal csn wceq wex wb vex
       cins3k cpw1 wi opkelins3kg mp2an wa opkeq12 snel1c snelpw1 mpbir opkelxpk
@@ -34133,7 +34132,7 @@ $)
   ${
     $d x y z $.
     $( The Kuratowski identity relationship is a Kuratowski relationship. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     idkssvvk $p |- _I_k C_ ( _V X._k _V ) $=
       ( vy vz vx weq cidk df-idk opkabssvvki ) ABDCABECABFG $.
       $( [14-Jan-2015] $)
@@ -34142,7 +34141,7 @@ $)
   ${
     $d A x y z a b c $.  $d B x y z a b c $.  $d C x y z a b c $.
     $( Image under a composition. 
-       (Contributed by ?who?, 4-Feb-2015.) $)
+       (Contributed by SF, 4-Feb-2015.) $)
     imacok $p |- ( ( A o._k B ) "_k C ) = ( A "_k ( B "_k C ) ) $=
       ( vz vx vy ccomk cimak cv copk wcel wrex wa wex vex rexbii rexcom4 df-rex
       opkelcok elimak anbi1i r19.41v bitr4i exbii bitr2i 3bitri 3bitr4i eqriv )
@@ -34158,7 +34157,7 @@ $)
     elimaksn.1 $e |- B e. _V $.
     elimaksn.2 $e |- C e. _V $.
     $( Membership in a Kuratowski image of a singleton. 
-       (Contributed by ?who?, 4-Feb-2015.) $)
+       (Contributed by SF, 4-Feb-2015.) $)
     elimaksn $p |- ( C e. ( A "_k { B } ) <-> << B , C >> e. A ) $=
       ( vx csn cimak wcel cv copk wrex elimak wceq opkeq1 eleq1d rexsn bitri )
       CABGZHIFJZCKZAIZFSLBCKZAIZFASCEMUBUDFBDTBNUAUCATBCOPQR $.
@@ -34168,7 +34167,7 @@ $)
   ${
     $d A x y z a b c $.  $d B x y z a b c $.
     $( A Kuratowski composition is a Kuratowski relationship. 
-       (Contributed by ?who?, 4-Feb-2015.) $)
+       (Contributed by SF, 4-Feb-2015.) $)
     cokrelk $p |- ( A o._k B ) C_ ( _V X._k _V ) $=
       ( vx vy va vb vc ccomk cvv cxpk wcel copk cins2k wex vex csn wceq exlimiv
       cv sylbi ccnvk cins3k cimak df-cok eleq2i elimakv bitri inss1 opkelins2kg
@@ -34189,7 +34188,7 @@ $)
   ${
     $d A a b x y z $.
     $( The Kuratowski cross product of ` _V ` with a set is a set. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     xpkvexg $p |- ( A e. V -> ( _V X._k A ) e. _V ) $=
       ( vx vz vy va vb cvv cv cxpk wcel wceq xpkeq2 eleq1d wel wa wex wal bitri
       wb copk ax-xp isset dfcleq elxpk vex biantrur anbi2i 2exbii bitr4i bibi2i
@@ -34203,7 +34202,7 @@ $)
   ${
     $d A x y z w $.
     $( The Kuratowski converse of a set is a set. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     cnvkexg $p |- ( A e. V -> `'_k A e. _V ) $=
       ( vx vz vw vy cv ccnvk cvv wcel wceq cnvkeq eleq1d copk wal wex wss ax-mp
       wb vex ax-cnv cxpk inss1 cnvkssvvk eqrelk mp2an opkelxpk mpbir2an mpbiran
@@ -34218,14 +34217,14 @@ $)
   ${
     cnvkex.1 $e |- A e. _V $.
     $( The Kuratowski converse of a set is a set. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     cnvkex $p |- `'_k A e. _V $=
       ( cvv wcel ccnvk cnvkexg ax-mp ) ACDAECDBACFG $.
       $( [14-Jan-2015] $)
   $}
 
   $( The Kuratowski cross product of two sets is a set. 
-     (Contributed by ?who?, 13-Jan-2015.) $)
+     (Contributed by SF, 13-Jan-2015.) $)
   xpkexg $p |- ( ( A e. V /\ B e. W ) -> ( A X._k B ) e. _V ) $=
     ( wcel cvv cxpk ccnvk cnvkxpk xpkvexg cnvkexg syl syl5eqelr cin inxpk incom
     wa inv1 eqtri xpkeq12i inexg syl2an ) ACEZAFGZFEZFBGZFEZABGZFEBDEUCUDFAGZHZ
@@ -34237,7 +34236,7 @@ $)
     xpkex.1 $e |- A e. _V $.
     xpkex.2 $e |- B e. _V $.
     $( The Kuratowski cross product of two sets is a set. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     xpkex $p |- ( A X._k B ) e. _V $=
       ( cvv wcel cxpk xpkexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [14-Jan-2015] $)
@@ -34246,7 +34245,7 @@ $)
   ${
     $d A x y z w $.
     $( The P6 operator applied to a set yields a set. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     p6exg $p |- ( A e. V -> P6 A e. _V ) $=
       ( vx vz vy vw cv cp6 cvv wcel wceq p6eq eleq1d wel csn copk wal vex ax-mp
       wb ax-typlower dfcleq bibi2i albii bitri biimpri syl6eqelr exlimiv vtoclg
@@ -34259,7 +34258,7 @@ $)
   ${
     $d A x $.  $d A z $.  $d x z $.
     $( Alternate definition of unit union. 
-       (Contributed by ?who?, 15-Mar-2015.) $)
+       (Contributed by SF, 15-Mar-2015.) $)
     dfuni12 $p |- U.1 A = P6 ( _V X._k A ) $=
       ( vx vz cuni1 cvv cxpk cp6 cv csn wcel copk wal 19.27v vex opkelxpk albii
       wa snex ax-gen biantrur 3bitr4ri eluni1 wb elp6 ax-mp 3bitr4i eqriv ) BAD
@@ -34269,7 +34268,7 @@ $)
   $}
 
   $( The unit union operator preserves sethood. 
-     (Contributed by ?who?, 13-Jan-2015.) $)
+     (Contributed by SF, 13-Jan-2015.) $)
   uni1exg $p |- ( A e. V -> U.1 A e. _V ) $=
     ( wcel cuni1 cvv cxpk cp6 dfuni12 vvex xpkexg mpan p6exg syl syl5eqel ) ABC
     ZADEAFZGZEAHOPECZQECEECORIEAEBJKPELMN $.
@@ -34278,7 +34277,7 @@ $)
   ${
     uni1ex.1 $e |- A e. _V $.
     $( The unit union operator preserves sethood. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     uni1ex $p |- U.1 A e. _V $=
       ( cvv wcel cuni1 uni1exg ax-mp ) ACDAECDBACFG $.
       $( [14-Jan-2015] $)
@@ -34287,7 +34286,7 @@ $)
   ${
     $d x y z w $.
     $( The Kuratowski subset relationship is a set. 
-       (Contributed by ?who?, 13-Jan-2015.) $)
+       (Contributed by SF, 13-Jan-2015.) $)
     ssetkex $p |- SSet_k e. _V $=
       ( vy vz vx vw cv copk wcel wel wi wal wb wex cssetk cvv ax-sset wss mp2an
       vex bitri ax-mp cxpk cin wceq ssetkssvvk eqrelk opkelxpk mpbir2an mpbiran
@@ -34304,7 +34303,7 @@ $)
     sikexlem.1 $e |- A C_ ( 1c X._k 1c ) $.
     sikexlem.2 $e |- B C_ ( 1c X._k 1c ) $.
     $( Lemma for ~ sikexg .  Equality for two subsets of ` 1c ` squared . 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     sikexlem $p |- ( A = B <->
               A. x A. y ( << { x } , { y } >> e. A <->
                           << { x } , { y } >> e. B ) ) $=
@@ -34326,7 +34325,7 @@ $)
   ${
     $d A x y z w $.
     $( The Kuratowski singleton image of a set is a set. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     sikexg $p |- ( A e. V -> SI_k A e. _V ) $=
       ( vx vz vw vy cv csik cvv wcel wceq csn copk wal c1c vex snel1c snex 1cex
       wb sikeq eleq1d wex ax-si cxpk inss1 sikss1c1c sikexlem opkelxpk mpbir2an
@@ -34341,7 +34340,7 @@ $)
   ${
     sikex.1 $e |- A e. _V $.
     $( The Kuratowski singleton image of a set is a set. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     sikex $p |- SI_k A e. _V $=
       ( cvv wcel csik sikexg ax-mp ) ACDAECDBACFG $.
       $( [14-Jan-2015] $)
@@ -34352,7 +34351,7 @@ $)
     $( Alternate definition of Kuratowski image.  This is the first of a series
        of definitions throughout the file designed to prove existence of
        various operations. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     dfimak2 $p |- ( A "_k B ) =
        ~ P6 ( ~ ( 1c X._k _V ) u. SI_k ~ ( A i^i ( B X._k _V ) ) ) $=
       ( vx vy vz c1c cvv cxpk ccompl cv copk wcel wn wex csn vex elcompl 3bitri
@@ -34373,7 +34372,7 @@ $)
   $}
 
   $( The image of a set under a set is a set. 
-     (Contributed by ?who?, 14-Jan-2015.) $)
+     (Contributed by SF, 14-Jan-2015.) $)
   imakexg $p |- ( ( A e. V /\ B e. W ) -> ( A "_k B ) e. _V ) $=
     ( wcel wa cimak c1c cvv cxpk ccompl cin csik cun dfimak2 1cex vvex complexg
     cp6 3syl xpkex complex xpkexg mpan2 inexg sylan2 sikexg unexg sylancr p6exg
@@ -34386,7 +34385,7 @@ $)
     imakex.1 $e |- A e. _V $.
     imakex.2 $e |- B e. _V $.
     $( The image of a set under a set is a set. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     imakex $p |- ( A "_k B ) e. _V $=
       ( cvv wcel cimak imakexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [14-Jan-2015] $)
@@ -34396,7 +34395,7 @@ $)
   ${
     $d A x y z w $.
     $( Alternate expression for unit power classes. 
-       (Contributed by ?who?, 26-Jan-2015.) $)
+       (Contributed by SF, 26-Jan-2015.) $)
     dfpw12 $p |- ~P1 A = ( SI_k ( A X._k A ) "_k _V ) $=
       ( vx vy vz vw cpw1 cvv cv wcel csn wceq wex vex wb exbii bitr4i wa 3bitri
       copk weq cxpk csik cimak wrex elpw1 elimakv opkelsikg mp2an exrot3 df-3an
@@ -34412,7 +34411,7 @@ $)
   $}
 
   $( The unit power class preserves sethood. 
-     (Contributed by ?who?, 14-Jan-2015.) $)
+     (Contributed by SF, 14-Jan-2015.) $)
   pw1exg $p |- ( A e. V -> ~P1 A e. _V ) $=
     ( wcel cpw1 cxpk csik cvv cimak dfpw12 xpkexg anidms sikexg imakexg sylancl
     syl vvex syl5eqel ) ABCZADAAEZFZGHZGAIRTGCZGGCUAGCRSGCZUBRUCAABBJKSGLOPTGGG
@@ -34422,7 +34421,7 @@ $)
   ${
     pw1ex.1 $e |- A e. _V $.
     $( The unit power class preserves sethood. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     pw1ex $p |- ~P1 A e. _V $=
       ( cvv wcel cpw1 pw1exg ax-mp ) ACDAECDBACFG $.
       $( [14-Jan-2015] $)
@@ -34434,7 +34433,7 @@ $)
     insklem.2 $e |- B C_ ( ~P1 1c X._k ( _V X._k _V ) ) $.
     $( Lemma for ~ ins2kexg and ~ ins3kexg .  Equality for subsets of
        ` ( ~P1 1c X._k ( _V X._k _V ) ) ` . 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     insklem $p |- ( A = B <->
       A. x A. y A. z ( << { { x } } , << y , z >> >> e. A <->
                        << { { x } } , << y , z >> >> e. B ) ) $=
@@ -34461,7 +34460,7 @@ $)
   ${
     $d A x y z w t $.
     $( ` Ins2_k ` preserves sethood. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     ins2kexg $p |- ( A e. V -> Ins2_k A e. _V ) $=
       ( vx vz vw vt vy cv cins2k cvv wcel wceq csn copk wb wal c1c vex opkelxpk
       cxpk ins2keq eleq1d wex ax-ins2 cpw1 inss1 ins2kss insklem snel1c snelpw1
@@ -34475,7 +34474,7 @@ $)
       $( [14-Jan-2015] $)
 
     $( ` Ins3_k ` preserves sethood. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     ins3kexg $p |- ( A e. V -> Ins3_k A e. _V ) $=
       ( vx vz vw vt vy cv cins3k cvv wcel wceq csn copk wb wal c1c vex opkelxpk
       cxpk ins3keq eleq1d wex ax-ins3 cpw1 inss1 ins3kss insklem snel1c snelpw1
@@ -34492,20 +34491,20 @@ $)
   ${
     inskex.1 $e |- A e. _V $.
     $( ` Ins2_k ` preserves sethood. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     ins2kex $p |- Ins2_k A e. _V $=
       ( cvv wcel cins2k ins2kexg ax-mp ) ACDAECDBACFG $.
       $( [14-Jan-2015] $)
 
     $( ` Ins3_k ` preserves sethood. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     ins3kex $p |- Ins3_k A e. _V $=
       ( cvv wcel cins3k ins3kexg ax-mp ) ACDAECDBACFG $.
       $( [14-Jan-2015] $)
   $}
 
   $( The Kuratowski composition of two sets is a set. 
-     (Contributed by ?who?, 14-Jan-2015.) $)
+     (Contributed by SF, 14-Jan-2015.) $)
   cokexg $p |- ( ( A e. V /\ B e. W ) -> ( A o._k B ) e. _V ) $=
     ( wcel wa ccomk cins2k ccnvk cins3k cin cvv cimak ins2kexg cnvkexg ins3kexg
     df-cok syl inexg syl2an vvex imakexg sylancl syl5eqel ) ACEZBDEZFZABGAHZBIZ
@@ -34517,14 +34516,14 @@ $)
     cokex.1 $e |- A e. _V $.
     cokex.2 $e |- B e. _V $.
     $( The Kuratowski composition of two sets is a set. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     cokex $p |- ( A o._k B ) e. _V $=
       ( cvv wcel ccomk cokexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [14-Jan-2015] $)
   $}
 
   $( The Kuratowski image functor preserves sethood. 
-     (Contributed by ?who?, 14-Jan-2015.) $)
+     (Contributed by SF, 14-Jan-2015.) $)
   imagekexg $p |- ( A e. V -> Image_k A e. _V ) $=
     ( wcel cimagek cvv cxpk cssetk cins2k csik ccnvk ccomk csymdif c1c cpw1 syl
     cins3k ssetkex mpan pw1ex vvex cimak cdif df-imagek sikexg cnvkexg ins3kexg
@@ -34537,7 +34536,7 @@ $)
   ${
     imagekex.1 $e |- A e. _V $.
     $( The Kuratowski image functor preserves sethood. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     imagekex $p |- Image_k A e. _V $=
       ( cvv wcel cimagek imagekexg ax-mp ) ACDAECDBACFG $.
       $( [14-Jan-2015] $)
@@ -34546,7 +34545,7 @@ $)
   ${
     $d x y $.
     $( Definition of ` _I_k ` in terms of ` SSet_k ` . 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     dfidk2 $p |- _I_k = ( SSet_k i^i `'_k SSet_k ) $=
       ( vx vy cidk cssetk ccnvk cin idkssvvk cvv cxpk inss1 cv wss wa copk wcel
       wb vex mp2an opkelssetkg bitri ssetkssvvk weq eqss opkelidkg elin anbi12i
@@ -34558,7 +34557,7 @@ $)
   $}
 
   $( The Kuratowski identity relationship is a set. 
-     (Contributed by ?who?, 14-Jan-2015.) $)
+     (Contributed by SF, 14-Jan-2015.) $)
   idkex $p |- _I_k e. _V $=
     ( cidk cssetk ccnvk cin cvv dfidk2 ssetkex cnvkex inex eqeltri ) ABBCZDEFBK
     GBGHIJ $.
@@ -34567,7 +34566,7 @@ $)
   ${
     $d A x y $.
     $( Alternate definition of class union for existence proof. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     dfuni3 $p |- U. A = U.1 ( `'_k SSet_k "_k A ) $=
       ( vx vy cuni cssetk ccnvk cimak cuni1 cv csn copk wcel wrex wel opkelcnvk
       vex snex elssetk bitri rexbii eluni1 elimak eluni2 3bitr4ri eqriv ) BADZE
@@ -34577,7 +34576,7 @@ $)
   $}
 
   $( The sum class of a set is a set. 
-     (Contributed by ?who?, 14-Jan-2015.) $)
+     (Contributed by SF, 14-Jan-2015.) $)
   uniexg $p |- ( A e. V -> U. A e. _V ) $=
     ( wcel cuni cssetk ccnvk cimak cuni1 cvv dfuni3 ssetkex cnvkex imakexg mpan
     uni1exg syl syl5eqel ) ABCZADEFZAGZHZIAJRTICZUAICSICRUBEKLSAIBMNTIOPQ $.
@@ -34586,7 +34585,7 @@ $)
   ${
     uniex.1 $e |- A e. _V $.
     $( The sum class of a set is a set. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     uniex $p |- U. A e. _V $=
       ( cvv wcel cuni uniexg ax-mp ) ACDAECDBACFG $.
       $( [14-Jan-2015] $)
@@ -34595,7 +34594,7 @@ $)
   ${
     $d A x y z $.
     $( Alternate definition of class intersection for the existence proof. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     dfint3 $p |- |^| A = ~ U.1 ( `'_k ~ SSet_k "_k A ) $=
       ( vx vy cint cssetk ccompl ccnvk cimak cuni1 wel wral cv wcel wn csn copk
       wrex vex elcompl 3bitri eluni1 snex elimak bitri opkelcnvk elssetk notbii
@@ -34607,7 +34606,7 @@ $)
   $}
 
   $( The intersection of a set is a set. 
-     (Contributed by ?who?, 14-Jan-2015.) $)
+     (Contributed by SF, 14-Jan-2015.) $)
   intexg $p |- ( A e. V -> |^| A e. _V ) $=
     ( wcel cint cssetk ccompl ccnvk cimak dfint3 ssetkex complex cnvkex imakexg
     cuni1 cvv mpan uni1exg complexg 3syl syl5eqel ) ABCZADEFZGZAHZNZFZOAIUAUDOC
@@ -34617,7 +34616,7 @@ $)
   ${
     intex.1 $e |- A e. _V $.
     $( The intersection of a set is a set. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     intex $p |- |^| A e. _V $=
       ( cvv wcel cint intexg ax-mp ) ACDAECDBACFG $.
       $( [14-Jan-2015] $)
@@ -34626,7 +34625,7 @@ $)
   ${
     $d A x y $.
     $( Two ways to express the class of all sets that contain ` A ` . 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     setswith $p |- { x | A e. x } =
                 if ( A e. _V , ( SSet_k "_k { { A } } ) , (/) ) $=
       ( vy cvv wcel cv cab cssetk csn cimak c0 cif wceq copk wrex wa wex eqtr4d
@@ -34640,7 +34639,7 @@ $)
       $( [14-Jan-2015] $)
 
     $( The class of all sets that contain ` A ` exist. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     setswithex $p |- { x | A e. x } e. _V $=
       ( wcel cab cvv cssetk csn cimak cif setswith ssetkex snex imakex 0ex ifex
       cv c0 eqeltri ) BAPCADBECZFBGZGZHZQIEABJSUBQFUAKTLMNOR $.
@@ -34653,7 +34652,7 @@ $)
     ndisjrelk.2 $e |- B e. _V $.
     $( Membership in a particular Kuratowski relationship is equivalent to
        non-disjointedness. 
-       (Contributed by ?who?, 15-Jan-2015.) $)
+       (Contributed by SF, 15-Jan-2015.) $)
     ndisjrelk $p |- (
       << A , B >> e. ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
       <-> ( A i^i B ) =/= (/) ) $=
@@ -34739,7 +34738,7 @@ $)
   ${
     $d ph x $.
     $( When ` x ` does not occur in ` ph ` , ` { x | ph } ` is a set. 
-       (Contributed by ?who?, 17-Jan-2015.) $)
+       (Contributed by SF, 17-Jan-2015.) $)
     abexv $p |- { x | ph } e. _V $=
       ( cab cvv wceq c0 wo wcel abvor0 vvex eleq1 mpbiri 0ex jaoi ax-mp ) ABCZD
       EZPFEZGPDHZABIQSRQSDDHJPDDKLRSFDHMPFDKLNO $.
@@ -34749,7 +34748,7 @@ $)
   ${
     $d A x y z $.
     $( The union of a unit power class is the original set. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     unipw1 $p |- U. ~P1 A = A $=
       ( vx vy vz cpw1 cuni cv wcel wel wa wex csn wceq eluni elpw1 anbi1i ancom
       wrex weq 3bitri r19.41v 3bitr4i exbii risset ceqsexv abeq2i equcom rexbii
@@ -34761,7 +34760,7 @@ $)
   $}
 
   $( Biconditional existence for unit power class. 
-     (Contributed by ?who?, 20-Jan-2015.) $)
+     (Contributed by SF, 20-Jan-2015.) $)
   pw1exb $p |- ( ~P1 A e. _V <-> A e. _V ) $=
     ( cpw1 cvv wcel cuni unipw1 uniexg syl5eqelr pw1exg impbii ) ABZCDZACDLAKEC
     AFKCGHACIJ $.
@@ -34770,7 +34769,7 @@ $)
   ${
     $d A x y t $.
     $( Definition of power set for existence proof. 
-       (Contributed by ?who?, 21-Jan-2015.) $)
+       (Contributed by SF, 21-Jan-2015.) $)
     dfpw2 $p |- ~P A = ~ ( ( SSet_k \ ( ~P1 A X._k _V ) ) "_k 1c ) $=
       ( vx vy vt cpw cssetk cpw1 cvv c1c cv wcel wn copk wa wex vex exbii bitri
       3bitr4i 3bitri cxpk cdif cimak ccompl wel wal csn wceq wrex elimak anbi1i
@@ -34786,7 +34785,7 @@ $)
   $}
 
   $( The power class of a set is a set. 
-     (Contributed by ?who?, 21-Jan-2015.) $)
+     (Contributed by SF, 21-Jan-2015.) $)
   pwexg $p |- ( A e. V -> ~P A e. _V ) $=
     ( wcel cpw cssetk cpw1 cvv cxpk cdif cimak ccompl dfpw2 ssetkex pw1exg vvex
     c1c xpkexg sylancl difexg sylancr 1cex imakexg complexg syl syl5eqel ) ABCZ
@@ -34797,7 +34796,7 @@ $)
   ${
     pwex.1 $e |- A e. _V $.
     $( The power class of a set is a set. 
-       (Contributed by ?who?, 21-Jan-2015.) $)
+       (Contributed by SF, 21-Jan-2015.) $)
     pwex $p |- ~P A e. _V $=
       ( cvv wcel cpw pwexg ax-mp ) ACDAECDBACFG $.
       $( [21-Jan-2015] $)
@@ -34806,7 +34805,7 @@ $)
   ${
     $d A x y z $.
     $( A class of singletons is equal to the unit power class of its union. 
-       (Contributed by ?who?, 26-Jan-2015.) $)
+       (Contributed by SF, 26-Jan-2015.) $)
     eqpw1uni $p |- ( A C_ 1c -> A = ~P1 U. A ) $=
       ( vx vy vz c1c wss cuni cv wcel wi csn wceq wb el1c wa eleq2 eleq1 syl6bb
       wex syl5bi cpw1 ssel pw1ss1c sseli a1i wel snid snex anbi12d spcev eluni
@@ -34827,7 +34826,7 @@ $)
     pw1equn.1 $e |- A e. _V $.
     pw1equn.2 $e |- B e. _V $.
     $( A condition for a unit power class to equal a union. 
-       (Contributed by ?who?, 26-Jan-2015.) $)
+       (Contributed by SF, 26-Jan-2015.) $)
     pw1equn $p |- ( ~P1 C = ( A u. B ) <->
         E. x E. y ( C = ( x u. y ) /\ A = ~P1 x /\ B = ~P1 y ) ) $=
       ( cpw1 cun wceq cv w3a wex cuni c1c wss mpbiri eqeq2d wb pw1eq unipw1 syl
@@ -34847,7 +34846,7 @@ $)
     pw1eqadj.1 $e |- A e. _V $.
     pw1eqadj.2 $e |- B e. _V $.
     $( A condition for a unit power class to work out to an adjunction. 
-       (Contributed by ?who?, 26-Jan-2015.) $)
+       (Contributed by SF, 26-Jan-2015.) $)
     pw1eqadj $p |- ( ~P1 C = ( A u. { B } ) <->
        E. x E. y ( C = ( x u. { y } ) /\ A = ~P1 x /\ B = { y } ) ) $=
       ( cpw1 csn cun wceq cv wex cuni c1c wcel mpbiri wss eqeq2d wb unieq uniun
@@ -34871,7 +34870,7 @@ $)
     $d x y $.  $d y ph $.
     $( Alternate definition of existential uniqueness in terms of
        abstraction. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     dfeu2 $p |- ( E! x ph <-> { x | ph } e. 1c ) $=
       ( vy weq wb wal wex cab cv csn wceq weu c1c wcel abbi df-sn eqeq2i bitr4i
       exbii df-eu el1c 3bitr4i ) ABCDZEBFZCGABHZCIZJZKZCGABLUEMNUDUHCUDUEUCBHZK
@@ -34884,7 +34883,7 @@ $)
     $d x y $.  $d ph y $.
     $( If there is a unique object satisfying a property ` ph ` , then the set
        of all elements that satisfy ` ph ` exists. 
-       (Contributed by ?who?, 16-Jan-2015.) $)
+       (Contributed by SF, 16-Jan-2015.) $)
     euabex $p |- ( E! x ph -> { x | ph } e. _V ) $=
       ( weu cab c1c wcel cvv dfeu2 elex sylbi ) ABCABDZEFKGFABHKEIJ $.
       $( [16-Jan-2015] $)
@@ -34895,7 +34894,7 @@ $)
     sspw1.1 $e |- A e. _V $.
     $( A condition for being a subclass of a unit power class.  Corollary 2 of
        theorem IX.6.14 of [Rosser] p. 255. 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     sspw1 $p |- ( A C_ ~P1 B <-> E. x ( x C_ B /\ A = ~P1 x ) ) $=
       ( cpw1 wss cv wceq wa wex cuni uniss unipw1 syl6sseq c1c pw1ss1c eqpw1uni
       sstr mpan2 sseq1 uniex pw1eq eqeq2d anbi12d spcev syl2anc syl5ibr impcom
@@ -34911,7 +34910,7 @@ $)
     sspw12.1 $e |- A e. _V $.
     $( A set is a subset of cardinal one iff it is the unit power class of some
        other set. 
-       (Contributed by ?who?, 17-Mar-2015.) $)
+       (Contributed by SF, 17-Mar-2015.) $)
     sspw12 $p |- ( A C_ 1c <-> E. x A = ~P1 x ) $=
       ( c1c wss cv cpw1 wceq wex eqpw1uni uniex pw1eq eqeq2d spcev syl pw1ss1c
       cuni sseq1 mpbiri exlimiv impbii ) BDEZBAFZGZHZAIZUBBBQZGZHZUFBJUEUIAUGBC
@@ -35344,7 +35343,7 @@ $)
     $d A x y z t w $.  $d B x y z t w $.
     $( Alternate definition of cardinal addition to establish
        stratification. 
-       (Contributed by ?who?, 15-Jan-2015.) $)
+       (Contributed by SF, 15-Jan-2015.) $)
     dfaddc2 $p |- ( A +c B ) =
 ( ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
       ( ( Ins2_k Ins2_k SSet_k
@@ -35380,7 +35379,7 @@ $)
   $}
 
   $( The expression at the heart of ~ dfaddc2 is a set. 
-     (Contributed by ?who?, 17-Jan-2015.) $)
+     (Contributed by SF, 17-Jan-2015.) $)
   addcexlem $p |- ( Ins3_k
             ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
       ( ( Ins2_k Ins2_k SSet_k
@@ -35395,7 +35394,7 @@ $)
     $( [17-Jan-2015] $)
 
   $( Equality law for cardinal addition. 
-     (Contributed by ?who?, 15-Jan-2015.) $)
+     (Contributed by SF, 15-Jan-2015.) $)
   addceq1 $p |- ( A = B -> ( A +c C ) = ( B +c C ) ) $=
     ( wceq cssetk cins3k cins2k cin c1c cpw1 cimak ccompl csik cun csymdif cdif
     cplc imakeq2 dfaddc2 3eqtr4g ) ABDEFZEGZHIJJZKLFUBGUAGEMMFNOUCJJKPCJJKZAKUD
@@ -35403,7 +35402,7 @@ $)
     $( [15-Jan-2015] $)
 
   $( Equality law for cardinal addition. 
-     (Contributed by ?who?, 15-Jan-2015.) $)
+     (Contributed by SF, 15-Jan-2015.) $)
   addceq2 $p |- ( A = B -> ( C +c A ) = ( C +c B ) ) $=
     ( wceq cssetk cins3k cins2k cin c1c cpw1 cimak ccompl csik cun csymdif cdif
     cplc pw1eq syl dfaddc2 imakeq2d imakeq1d 3eqtr4g ) ABDZEFZEGZHIJJZKLFUFGUEG
@@ -35412,7 +35411,7 @@ $)
     $( [15-Jan-2015] $)
 
   $( Equality law for cardinal addition. 
-     (Contributed by ?who?, 15-Jan-2015.) $)
+     (Contributed by SF, 15-Jan-2015.) $)
   addceq12 $p |- ( ( A = C /\ B = D ) -> ( A +c B ) = ( C +c D ) ) $=
     ( wceq cplc addceq1 addceq2 sylan9eq ) ACEBDEABFCBFCDFACBGBDCHI $.
     $( [15-Jan-2015] $)
@@ -35420,20 +35419,20 @@ $)
   ${
     addceqi.1 $e |- A = B $.
     $( Equality inference for cardinal addition. 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     addceq1i $p |- ( A +c C ) = ( B +c C ) $=
       ( wceq cplc addceq1 ax-mp ) ABEACFBCFEDABCGH $.
       $( [3-Feb-2015] $)
 
     $( Equality inference for cardinal addition. 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     addceq2i $p |- ( C +c A ) = ( C +c B ) $=
       ( wceq cplc addceq2 ax-mp ) ABECAFCBFEDABCGH $.
       $( [3-Feb-2015] $)
 
     addceqi.2 $e |- C = D $.
     $( Equality inference for cardinal addition. 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     addceq12i $p |- ( A +c C ) = ( B +c D ) $=
       ( wceq cplc addceq12 mp2an ) ABGCDGACHBDHGEFACBDIJ $.
       $( [3-Feb-2015] $)
@@ -35442,33 +35441,33 @@ $)
   ${
     addceqd.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for cardinal addition. 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     addceq1d $p |- ( ph -> ( A +c C ) = ( B +c C ) ) $=
       ( wceq cplc addceq1 syl ) ABCFBDGCDGFEBCDHI $.
       $( [3-Feb-2015] $)
 
     $( Equality deduction for cardinal addition. 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     addceq2d $p |- ( ph -> ( C +c A ) = ( C +c B ) ) $=
       ( wceq cplc addceq2 syl ) ABCFDBGDCGFEBCDHI $.
       $( [3-Feb-2015] $)
 
     addceqd.2 $e |- ( ph -> C = D ) $.
     $( Equality deduction for cardinal addition. 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     addceq12d $p |- ( ph -> ( A +c C ) = ( B +c D ) ) $=
       ( wceq cplc addceq12 syl2anc ) ABCHDEHBDICEIHFGBDCEJK $.
       $( [3-Feb-2015] $)
   $}
 
   $( Cardinal zero is a set. 
-     (Contributed by ?who?, 14-Jan-2015.) $)
+     (Contributed by SF, 14-Jan-2015.) $)
   0cex $p |- 0c e. _V $=
     ( c0c c0 csn cvv df-0c snex eqeltri ) ABCDEBFG $.
     $( [14-Jan-2015] $)
 
   $( The cardinal sum of two sets is a set. 
-     (Contributed by ?who?, 15-Jan-2015.) $)
+     (Contributed by SF, 15-Jan-2015.) $)
   addcexg $p |- ( ( A e. V /\ B e. W ) -> ( A +c B ) e. _V ) $=
     ( wcel wa cplc cssetk cins3k cins2k cin c1c cpw1 ccompl csik cun cvv pw1exg
     cimak imakexg csymdif cdif dfaddc2 addcexlem mpan sylan ancoms syl5eqel
@@ -35480,7 +35479,7 @@ $)
     addcex.1 $e |- A e. _V $.
     addcex.2 $e |- B e. _V $.
     $( The cardinal sum of two sets is a set. 
-       (Contributed by ?who?, 25-Jan-2015.) $)
+       (Contributed by SF, 25-Jan-2015.) $)
     addcex $p |- ( A +c B ) e. _V $=
       ( cvv wcel cplc addcexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [25-Jan-2015] $)
@@ -35489,7 +35488,7 @@ $)
   ${
     $d x y z w t $.
     $( Definition of the finite cardinals for existence theorem. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     dfnnc2 $p |- Nn =
      |^| ( { x | 0c e. x } \
            ( ( SSet_k \ ( SSet_k o._k SI_k
@@ -35527,7 +35526,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   $}
 
   $( The class of all finite cardinals is a set. 
-     (Contributed by ?who?, 14-Jan-2015.) $)
+     (Contributed by SF, 14-Jan-2015.) $)
   nncex $p |- Nn e. _V $=
     ( vx cnnc c0c cv wcel cab cssetk cins3k cins2k cin c1c cpw1 cimak csik cdif
     ssetkex 1cex pw1ex imakex difex ccompl cun csymdif cimagek ccomk cvv dfnnc2
@@ -35537,7 +35536,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $( [14-Jan-2015] $)
 
   $( The class of all finite sets is a set. 
-     (Contributed by ?who?, 19-Jan-2015.) $)
+     (Contributed by SF, 19-Jan-2015.) $)
   finex $p |- Fin e. _V $=
     ( cfin cnnc cuni cvv df-fin nncex uniex eqeltri ) ABCDEBFGH $.
     $( [19-Jan-2015] $)
@@ -35548,7 +35547,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
 
     $( Membership in cardinal addition.  Theorem X.1.1 of [Rosser]
        p. 275. 
-       (Contributed by ?who?, 16-Jan-2015.) $)
+       (Contributed by SF, 16-Jan-2015.) $)
     eladdc $p |- ( A e. ( M +c N ) <->
         E. b e. M E. c e. N ( ( b i^i c ) = (/) /\ A = ( b u. c ) ) ) $=
       ( va cplc wcel cvv cv cin c0 wceq cun wa wrex elex id vex rexlimivw eqeq1
@@ -35562,7 +35561,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   ${
     $d A a b $.  $d B a b $.  $d M a b $.  $d N a b $.
     $( Inference form of membership in cardinal addition. 
-       (Contributed by ?who?, 26-Jan-2015.) $)
+       (Contributed by SF, 26-Jan-2015.) $)
     eladdci $p |- ( ( A e. M /\ B e. N /\ ( A i^i B ) = (/) ) ->
        ( A u. B ) e. ( M +c N ) ) $=
       ( va vb wcel cin c0 wceq w3a cv cun wrex cplc eqid eqeq1d eqeq2d anbi12d
@@ -35577,7 +35576,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   ${
     $d A n m $.
     $( The empty class is not a member of a successor. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     0nelsuc $p |- -. (/) e. ( A +c 1c ) $=
       ( vn vm c0 c1c cplc wcel cv cin wceq cun wa wrex csn el1c simpr nsyl nrex
       wn wex vex snid ax-mp eqeq1 mtbiri exlimiv sylbi eqcom bitri notbii sylib
@@ -35590,7 +35589,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
 
   $( Cardinal zero is not a successor.  Compare Theorem X.1.2 of [Rosser]
      p. 275. 
-     (Contributed by ?who?, 14-Jan-2015.) $)
+     (Contributed by SF, 14-Jan-2015.) $)
   0cnsuc $p |- ( A +c 1c ) =/= 0c $=
     ( c1c cplc c0c wne wceq wn wcel 0nelsuc csn 0ex df-0c eleqtrri eleq2 mpbiri
     c0 snid mto df-ne mpbir ) ABCZDEUADFZGUBPUAHZAIUBUCPDHPPJDPKQLMUADPNORUADST
@@ -35601,7 +35600,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $d x y $.
     $( Cardinal zero is a finite cardinal.  Theorem X.1.4 of [Rosser]
        p. 276. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     peano1 $p |- 0c e. Nn $=
       ( vx vy c0c cnnc wcel cv c1c cplc wral wa cab cint wal df-nnc eleq2i 0cex
       wi elintab bitri simpl mpgbir ) CDEZCAFZEZBFGHUCEBUCIZJZUDQZAUBCUFAKLZEUG
@@ -35613,7 +35612,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $d A a x y $.
     $( The finite cardinals are closed under addition of one.  Theorem X.1.5 of
        [Rosser] p. 276. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     peano2 $p |- ( A e. Nn -> ( A +c 1c ) e. Nn ) $=
       ( va vx vy cv c1c cplc cnnc wcel wceq addceq1 eleq1d c0c wa wi wal eleq2i
       wral elintab bitri wel weq rspccv adantl a2i alimi cab df-nnc vex addcex
@@ -35625,7 +35624,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   $}
 
   $( The successor of a finite cardinal is not zero. 
-     (Contributed by ?who?, 14-Jan-2015.) $)
+     (Contributed by SF, 14-Jan-2015.) $)
   peano3 $p |- ( A e. Nn -> ( A +c 1c ) =/= 0c ) $=
     ( c1c cplc c0c wne cnnc wcel 0cnsuc a1i ) ABCDEAFGAHI $.
     $( [14-Jan-2015] $)
@@ -35635,7 +35634,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $d A x y z $.
     $( Cardinal zero is a fixed point for cardinal addition.  Theorem X.1.8 of
        [Rosser] p. 276. 
-       (Contributed by ?who?, 16-Jan-2015.) $)
+       (Contributed by SF, 16-Jan-2015.) $)
     addcid1 $p |- ( A +c 0c ) = A $=
       ( vx vy vz c0c cplc c0 csn df-0c addceq2i cv cin wceq cun wa wrex weq 0ex
       wcel ineq2 eqeq1d uneq2 eqeq2d anbi12d in0 biantrur syl6bbr eqeq2i equcom
@@ -35650,7 +35649,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   ${
     $d A x y z $.  $d B x y z $.
     $( Cardinal sum commutes.  Theorem X.1.9 of [Rosser] p. 276. 
-       (Contributed by ?who?, 15-Jan-2015.) $)
+       (Contributed by SF, 15-Jan-2015.) $)
     addccom $p |- ( A +c B ) = ( B +c A ) $=
       ( vy vz vx cv cin c0 wceq cun wa wrex cab cplc incom eqeq1i uncom anbi12i
       eqeq2i df-addc 2rexbii rexcom bitri abbii 3eqtr4i ) CFZDFZGZHIZEFZUFUGJZI
@@ -35661,7 +35660,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
 
   $( Cardinal zero is a fixed point for cardinal addition.  Theorem X.1.8 of
      [Rosser] p. 276. 
-     (Contributed by ?who?, 16-Jan-2015.) $)
+     (Contributed by SF, 16-Jan-2015.) $)
   addcid2 $p |- ( 0c +c A ) = A $=
     ( c0c cplc addccom addcid1 eqtri ) BACABCABADAEF $.
     $( [16-Jan-2015] $)
@@ -35670,7 +35669,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   ${
     $( Cardinal one is a finite cardinal.  Theorem X.1.12 of [Rosser]
        p. 277. 
-       (Contributed by ?who?, 16-Jan-2015.) $)
+       (Contributed by SF, 16-Jan-2015.) $)
     1cnnc $p |- 1c e. Nn $=
       ( c1c cplc cnnc addcid1 addccom eqtr3i wcel peano1 peano2 ax-mp eqeltri
       c0c ) ALABZCALBAMADALEFLCGMCGHLIJK $.
@@ -35682,7 +35681,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $( The principle of mathematical induction: a set containing cardinal zero
        and closed under the successor operator is a superset of the finite
        cardinals.  Theorem X.1.6 of [Rosser] p. 276. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     peano5 $p |- ( ( A e. V /\ 0c e. A /\
                       A. x e. Nn ( x e. A -> ( x +c 1c ) e. A ) ) ->
             Nn C_ A ) $=
@@ -35713,7 +35712,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
        the next four set up the substitutions, and the last two set up the base
        case and induction hypothesis.  Compare Theorem X.1.13 of [Rosser]
        p. 277. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     finds $p |- ( A e. Nn -> ta ) $=
       ( cnnc wcel cvv c0c elab cab cv c1c cplc wi wral wss 0cex vex 1cex addcex
       mpbir 3imtr4g rgen peano5 mp3an sseli elabg mpbid ) HPQHAFUAZQEPUTHUTRQSU
@@ -35726,7 +35725,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $d A x n m $.
     $( All naturals are either zero or a successor.  Theorem X.1.7 of
        [Rosser] p. 276. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     nnc0suc $p |- ( A e. Nn <->
              ( A = 0c \/ E. x e. Nn A = ( x +c 1c ) ) ) $=
       ( vn vm cnnc wcel c0c wceq cv c1c wrex cssetk cins3k cpw1 cimak cvv eqeq1
@@ -35751,7 +35750,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $d A b $.  $d A x $.  $d A y $.  $d b x $.  $d b y $.  $d M b $.  $d M y $.
     $d x y $.
     $( Membership in a successor.  Theorem X.1.16 of [Rosser] p. 279. 
-       (Contributed by ?who?, 16-Jan-2015.) $)
+       (Contributed by SF, 16-Jan-2015.) $)
     elsuc $p |- ( A e. ( M +c 1c ) <->
        E. b e. M E. x e. ~ b A = ( b u. { x } ) ) $=
       ( vy c1c wcel cv cin c0 wceq cun wa wrex bitr4i anbi1i bitri exbii df-rex
@@ -35771,7 +35770,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     elsuci.1 $e |- X e. _V $.
     $( Lemma for ~ ncfinraise .  Take a natural and a disjoint union and
        compute membership in the successor natural. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     elsuci $p |- ( ( A e. N /\ -. X e. A ) ->
        ( A u. { X } ) e. ( N +c 1c ) ) $=
       ( va vx wcel wn wa csn cun cv wceq ccompl wrex c1c elcompl eqeq2d rspcev
@@ -35791,7 +35790,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
 
     $( Cardinal addition is associative.  Theorem X.1.11, corollary 1 of
        [Rosser] p. 277. 
-       (Contributed by ?who?, 17-Jan-2015.) $)
+       (Contributed by SF, 17-Jan-2015.) $)
     addcass $p |- ( ( A +c B ) +c C ) = ( A +c ( B +c C ) ) $=
       ( va vb vd vc ve cv cin c0 wceq cun wex wrex bitri exbii rexbii rexcom4
       wa vx cplc wcel ancom anbi2i an12 indir eqeq1i un00 bitr4i 3bitr4i eqeq2i
@@ -35818,21 +35817,21 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   $}
 
   $( Swap arguments two and three in cardinal addition. 
-     (Contributed by ?who?, 22-Jan-2015.) $)
+     (Contributed by SF, 22-Jan-2015.) $)
   addc32 $p |- ( ( A +c B ) +c C ) = ( ( A +c C ) +c B ) $=
     ( cplc addccom addceq2i addcass 3eqtr4i ) ABCDZDACBDZDABDCDACDBDIJABCEFABCG
     ACBGH $.
     $( [22-Jan-2015] $)
 
   $( Swap arguments two and three in quadruple cardinal addition. 
-     (Contributed by ?who?, 25-Jan-2015.) $)
+     (Contributed by SF, 25-Jan-2015.) $)
   addc4 $p |- ( ( A +c B ) +c ( C +c D ) ) = ( ( A +c C ) +c ( B +c D ) ) $=
     ( cplc addc32 addceq1i addcass 3eqtr3i ) ABEZCEZDEACEZBEZDEJCDEELBDEEKMDABC
     FGJCDHLBDHI $.
     $( [25-Jan-2015] $)
 
   $( Rearrange cardinal summation of six arguments. 
-     (Contributed by ?who?, 13-Mar-2015.) $)
+     (Contributed by SF, 13-Mar-2015.) $)
   addc6 $p |- ( ( ( A +c B ) +c ( C +c D ) ) +c ( E +c F ) ) =
      ( ( ( A +c C ) +c E ) +c ( ( B +c D ) +c F ) ) $=
     ( cplc addc4 addceq1i addc32 eqtri addcass 3eqtr3i ) ABGCDGGZEGZFGACGZEGZBD
@@ -35843,7 +35842,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $d A a b c x $.  $d B a b c x $.
     $( The finite cardinals are closed under addition.  Theorem X.1.14 of
        [Rosser] p. 278. 
-       (Contributed by ?who?, 17-Jan-2015.) $)
+       (Contributed by SF, 17-Jan-2015.) $)
     nncaddccl $p |- ( ( A e. Nn /\ B e. Nn ) -> ( A +c B ) e. Nn ) $=
       ( va vb vc vx cnnc wcel cplc cv wceq eleq1d imbi2d c1c cab cpw1 cimak cvv
       wi addceq2 addceq1 c0c wn cssetk cins3k cins2k cin ccompl csymdif cimagek
@@ -35867,7 +35866,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   ${
     $d A x $.
     $( Membership in the set of finite sets. 
-       (Contributed by ?who?, 19-Jan-2015.) $)
+       (Contributed by SF, 19-Jan-2015.) $)
     elfin $p |- ( A e. Fin <-> E. x e. Nn A e. x ) $=
       ( cfin wcel cnnc cuni cv wrex df-fin eleq2i eluni2 bitri ) BCDBEFZDBAGDAE
       HCMBIJABEKL $.
@@ -35875,20 +35874,20 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   $}
 
   $( Membership in cardinal zero. 
-     (Contributed by ?who?, 22-Jan-2015.) $)
+     (Contributed by SF, 22-Jan-2015.) $)
   el0c $p |- ( A e. 0c <-> A = (/) ) $=
     ( c0c wcel c0 csn wceq df-0c eleq2i 0ex elsn2 bitri ) ABCADEZCADFBLAGHADIJK
     $.
     $( [22-Jan-2015] $)
 
   $( The empty set is a member of cardinal zero. 
-     (Contributed by ?who?, 13-Feb-2015.) $)
+     (Contributed by SF, 13-Feb-2015.) $)
   nulel0c $p |- (/) e. 0c $=
     ( c0 c0c wcel wceq eqid el0c mpbir ) ABCAADAEAFG $.
     $( [13-Feb-2015] $)
 
   $( The empty set is finite. 
-     (Contributed by ?who?, 19-Jan-2015.) $)
+     (Contributed by SF, 19-Jan-2015.) $)
   0fin $p |- (/) e. Fin $=
     ( vn c0 cfin wcel cv cnnc wrex c0c wceq eqid el0c mpbir eleq2 rspcev mp2an
     peano1 elfin ) BCDBAEZDZAFGZHFDBHDZTPUABBIBJBKLSUAAHFRHBMNOABQL $.
@@ -35901,7 +35900,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $d w x $.
     $( Lemma for ~ nnsucelr .  Establish stratification for the inductive
        hypothesis. 
-       (Contributed by ?who?, 15-Jan-2015.) $)
+       (Contributed by SF, 15-Jan-2015.) $)
     nnsucelrlem1 $p |- { m |
      A. a A. x ( ( -. x e. a /\ ( a u. { x } ) e. ( m +c 1c ) ) -> a e. m ) }
      e. _V $=
@@ -35965,7 +35964,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     $d A x $.  $d B x $.
     $( Lemma for ~ nnsucelr .  Subtracting a non-element from a set adjoined
        with the non-element retrieves the original set. 
-       (Contributed by ?who?, 15-Jan-2015.) $)
+       (Contributed by SF, 15-Jan-2015.) $)
     nnsucelrlem2 $p |- ( -. B e. A -> ( ( A u. { B } ) \ { B } ) = A ) $=
       ( vx wcel wn csn cun cdif cv wceq wa wne eldifsn wo elun vex orbi2i bitri
       elsn df-ne anbi12i pm5.61 eleq1 biimpcd con3rr3 pm4.71rd syl6rbb syl5bb
@@ -35979,7 +35978,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     nnsucelrlem3.1 $e |- X e. _V $.
     $( Lemma for ~ nnsucelr .  Rearrange union and difference for a particular
        group of classes. 
-       (Contributed by ?who?, 15-Jan-2015.) $)
+       (Contributed by SF, 15-Jan-2015.) $)
     nnsucelrlem3 $p |-
        ( ( X =/= Y /\ ( A u. { X } ) = ( B u. { Y } ) /\
            -. Y e. B ) -> B = ( ( A \ { Y } ) u. { X } ) ) $=
@@ -35996,7 +35995,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
 
   ${
     $( Lemma for ~ nnsucelr .  Remove and re-adjoin an element to a set. 
-       (Contributed by ?who?, 15-Jan-2015.) $)
+       (Contributed by SF, 15-Jan-2015.) $)
     nnsucelrlem4 $p |- ( A e. B -> ( ( B \ { A } ) u. { A } ) = B ) $=
       ( wcel csn cdif cun undif1 wss wceq snssi ssequn2 sylib syl5eq ) ABCZBADZ
       EOFBOFZBBOGNOBHPBIABJOBKLM $.
@@ -36014,7 +36013,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
     nnsucelr.2 $e |- X e. _V $.
     $( Transfer membership in the successor of a natural into membership of the
        natural itself.  Theorem X.1.17 of [Rosser] p. 525. 
-       (Contributed by ?who?, 14-Jan-2015.) $)
+       (Contributed by SF, 14-Jan-2015.) $)
     nnsucelr $p |- ( ( M e. Nn /\
               ( -. X e. A /\ ( A u. { X } ) e. ( M +c 1c ) ) ) ->
               A e. M ) $=
@@ -36082,7 +36081,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
 
     $( Either two naturals are disjoint or they are the same natural.  Theorem
        X.1.18 of [Rosser] p. 526. 
-       (Contributed by ?who?, 17-Jan-2015.) $)
+       (Contributed by SF, 17-Jan-2015.) $)
     nndisjeq $p |- ( ( M e. Nn /\ N e. Nn ) -> ( ( M i^i N ) = (/) \/ M = N ) )
         $=
       ( vn vp vm vq vb cnnc wcel cin c0 wceq wo cv wi weq wn c0c eqeq1d wa wral
@@ -36138,7 +36137,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   $}
 
   $( If two naturals have an element in common, then they are equal. 
-     (Contributed by ?who?, 13-Feb-2015.) $)
+     (Contributed by SF, 13-Feb-2015.) $)
   nnceleq $p |- ( ( ( M e. Nn /\ N e. Nn ) /\ ( A e. M /\ A e. N ) ) ->
     M = N ) $=
     ( cnnc wcel wa cin c0 wceq wn wo elin n0i sylbir adantl nndisjeq orel1 sylc
@@ -36149,7 +36148,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
   ${
     $d A x $.
     $( A singleton is finite. 
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     snfi $p |- { A } e. Fin $=
       ( vx cvv wcel csn cfin cv cnnc wrex c1c 1cnnc snel1cg eleq2 rspcev elfin
       sylancr sylibr wn c0 wceq snprc 0fin eleq1 mpbiri sylbi pm2.61i ) ACDZAEZ
@@ -36271,7 +36270,7 @@ $)
   ${
     $d A x y z w $.  $d B x y z w $.
     $( Kuratowski ordered pair membership in finite less than or equal to. 
-       (Contributed by ?who?, 18-Jan-2015.) $)
+       (Contributed by SF, 18-Jan-2015.) $)
     opklefing $p |- ( ( A e. V /\ B e. W ) ->
        ( << A , B >> e. <_[fin] <-> E. x e. Nn B = ( A +c x ) ) ) $=
       ( vz vy vw cv cplc wceq cnnc clefin df-lefin addceq1 eqeq2d rexbidv eqeq1
@@ -36285,7 +36284,7 @@ $)
     $d B z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
 
     $( Kuratowski ordered pair membership in finite less than. 
-       (Contributed by ?who?, 27-Jan-2015.) $)
+       (Contributed by SF, 27-Jan-2015.) $)
     opkltfing $p |- ( ( A e. V /\ B e. W ) ->
       ( << A , B >> e. <[fin] <->
         ( A =/= (/) /\ E. x e. Nn B = ( ( A +c x ) +c 1c ) ) ) ) $=
@@ -36300,7 +36299,7 @@ $)
   ${
     $d A n $.  $d N n $.
     $( Cardinal sum always yields a larger set. 
-       (Contributed by ?who?, 27-Jan-2015.) $)
+       (Contributed by SF, 27-Jan-2015.) $)
     lefinaddc $p |- ( ( A e. V /\ N e. Nn ) ->
                << A , ( A +c N ) >> e. <_[fin] ) $=
       ( vn wcel cnnc wa cplc copk clefin cv wceq wrex eqid addceq2 eqeq2d mpan2
@@ -36314,7 +36313,7 @@ $)
     $d M a b x $.  $d N a b x $.
     $( Assuming a non-null successor, cardinal successor is one-to-one.
        Theorem X.1.19 of [Rosser] p. 526. 
-       (Contributed by ?who?, 18-Jan-2015.) $)
+       (Contributed by SF, 18-Jan-2015.) $)
     prepeano4 $p |- ( ( ( M e. Nn /\ N e. Nn ) /\
      ( ( M +c 1c ) = ( N +c 1c ) /\ ( M +c 1c ) =/= (/) ) ) -> M = N ) $=
       ( va vb vx cnnc wcel wa c1c cplc wceq c0 wne cv wex csn wrex vex syl5bi
@@ -36332,7 +36331,7 @@ $)
     $d A a b c $.
     $( Cardinal addition with the empty set.  Theorem X.1.20, corollary 1 of
        [Rosser] p. 526. 
-       (Contributed by ?who?, 18-Jan-2015.) $)
+       (Contributed by SF, 18-Jan-2015.) $)
     addcnul1 $p |- ( A +c (/) ) = (/) $=
       ( va vb vc c0 cplc wceq cv wcel wn eq0 cin cun wrex rex0 a1i eladdc mtbir
       wa nrex mpgbir ) AEFZEGBHZUBIZJBBUBKUDCHZDHZLEGUCUEUFMGSZDENZCANUHCAUHJUE
@@ -36342,7 +36341,7 @@ $)
 
   $( If cardinal addition is non-empty, then both addends are non-empty.
      Theorem X.1.20 of [Rosser] p. 526. 
-     (Contributed by ?who?, 18-Jan-2015.) $)
+     (Contributed by SF, 18-Jan-2015.) $)
   addcnnul $p |- ( ( A +c B ) =/= (/) -> ( A =/= (/) /\ B =/= (/) ) ) $=
     ( cplc wne wceq addceq1 addccom addcnul1 eqtri syl6eq necon3i addceq2 jca
     c0 ) ABCZNDANDBNDANONANEONBCZNANBFPBNCNNBGBHIJKBNONBNEOANCNBNALAHJKM $.
@@ -36351,7 +36350,7 @@ $)
   ${
     $d m n p x t $.
     $( Lemma for ~ preaddccan1 .  Establish stratification for induction. 
-       (Contributed by ?who?, 24-Jan-2015.) $)
+       (Contributed by SF, 24-Jan-2015.) $)
     preaddccan1lem1 $p |- { p | ( ( m e. Nn /\ n e. Nn ) -> ( ( (
            m +c p ) =/= (/) /\ ( m +c p ) = ( n +c p ) ) -> m = n ) ) } e. _V
         $=
@@ -36383,7 +36382,7 @@ $)
     $d k m $.  $d k n $.  $d k p $.  $d M m $.  $d m n $.  $d m p $.  $d N m $.
     $d N n $.  $d n p $.  $d P m $.  $d P n $.  $d P p $.
     $( Cancellation law for natural addition with a non-null condition. 
-       (Contributed by ?who?, 24-Jan-2015.) $)
+       (Contributed by SF, 24-Jan-2015.) $)
     preaddccan1 $p |- ( ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) /\
     ( M +c P ) =/= (/) ) -> ( ( M +c P ) = ( N +c P ) <-> M = N ) ) $=
       ( vm vn vp cnnc wcel cplc c0 wne wa wceq wi neeq1d imbi2d c0c c1c addceq2
@@ -36410,7 +36409,7 @@ $)
   $}
 
   $( Cancellation law for natural addition with a non-null condition. 
-     (Contributed by ?who?, 29-Jan-2015.) $)
+     (Contributed by SF, 29-Jan-2015.) $)
   preaddccan2 $p |- ( ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) /\
   ( M +c N ) =/= (/) ) -> ( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
     ( cplc wceq cnnc w3a c0 wne wa addccom eqeq12i wb 3anrot neeq1i preaddccan1
@@ -36421,7 +36420,7 @@ $)
   ${
     $d A x $.
     $( If the empty set is a finite cardinal, then it is a maximal element. 
-       (Contributed by ?who?, 19-Jan-2015.) $)
+       (Contributed by SF, 19-Jan-2015.) $)
     nulge $p |- ( ( (/) e. Nn /\ A e. V ) -> << A , (/) >> e. <_[fin] ) $=
       ( vx c0 cnnc wcel wa copk clefin cv cplc wceq wrex addcnul1 eqcomi eqeq2d
       addceq2 rspcev mpan2 adantr wb opklefing ancoms mpbird ) DEFZABFZGADHIFZ
@@ -36434,7 +36433,7 @@ $)
   ${
     $d A x $.
     $( Irreflexive law for finite less than. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     ltfinirr $p |- ( A e. Nn -> -. << A , A >> e. <[fin] ) $=
       ( vx cnnc wcel copk cltfin c0 wne cv cplc c1c wceq wa wn wi 0cnsuc necomi
       wrex c0c wb df-ne addcid1 eqcomi addcass eqeq12i simpll peano1 a1i peano2
@@ -36450,7 +36449,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.  $d C x y z $.
     $( Transitivity law for finite less than and less than or equal. 
-       (Contributed by ?who?, 2-Feb-2015.) $)
+       (Contributed by SF, 2-Feb-2015.) $)
     leltfintr $p |- ( ( A e. Nn /\ B e. Nn /\ C e. Nn ) ->
        ( ( << A , B >> e. <_[fin] /\ << B , C >> e. <[fin] ) ->
          << A , C >> e. <[fin] ) ) $=
@@ -36472,7 +36471,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.  $d C x y z $.
     $( Transitivity law for finite less than. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     ltfintr $p |- ( ( A e. Nn /\ B e. Nn /\ C e. Nn ) ->
        ( ( << A , B >> e. <[fin] /\ << B , C >> e. <[fin] ) ->
          << A , C >> e. <[fin] ) ) $=
@@ -36492,7 +36491,7 @@ $)
   $}
 
   $( Asymmetry law for finite less than. 
-     (Contributed by ?who?, 29-Jan-2015.) $)
+     (Contributed by SF, 29-Jan-2015.) $)
   ltfinasym $p |- ( ( A e. Nn /\ B e. Nn ) ->
    ( << A , B >> e. <[fin] -> -. << B , A >> e. <[fin] ) ) $=
     ( cnnc wcel wa copk cltfin wn ltfinirr ad2antrr wi ltfintr 3anidm13 expdimp
@@ -36501,7 +36500,7 @@ $)
     $( [29-Jan-2015] $)
 
   $( Cardinal zero is a minimal element for finite less than or equal. 
-     (Contributed by ?who?, 29-Jan-2015.) $)
+     (Contributed by SF, 29-Jan-2015.) $)
   0cminle $p |- ( A e. Nn -> << 0c , A >> e. <_[fin] ) $=
     ( cnnc wcel c0c copk cplc clefin addcid2 opkeq2i peano1 lefinaddc syl5eqelr
     mpan ) ABCZDAEDDAFZEZGOADAHIDBCNPGCJDABKML $.
@@ -36510,7 +36509,7 @@ $)
   ${
     $d A x $.
     $( One plus a finite cardinal is strictly greater. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     ltfinp1 $p |- ( ( A e. V /\ A =/= (/) ) ->
        << A , ( A +c 1c ) >> e. <[fin] ) $=
       ( vx wcel c0 wne wa c1c cplc copk cltfin wceq cnnc wrex simpr c0c addcid1
@@ -36525,7 +36524,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.
     $( Transfer from less than or equal to less than. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     lefinlteq $p |- ( ( A e. V /\ B e. W /\ A =/= (/) ) ->
        ( << A , B >> e. <_[fin] <-> ( << A , B >> e. <[fin] \/ A = B ) ) ) $=
       ( vx vy wcel cv cplc wceq cnnc wrex c1c wo wb c0c addceq2 eqeq1 rexbidv
@@ -36552,7 +36551,7 @@ $)
     $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
 
     $( Finite less than is stratified. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     ltfinex $p |- <[fin] e. _V $=
       ( vx vt vc va vb vd cssetk csik cpw1 csn copk wceq wrex wa wex opksnelsik
       wcel snex 3bitri sikex vy vz cltfin cvv cxpk cins3k cins2k cin c1c ccompl
@@ -36646,7 +36645,7 @@ $)
   ${
     $d m n t $.
     $( Lemma for ~ ltfintri .  Establish stratification for induction. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     ltfintrilem1 $p |- { m | ( n e. Nn -> ( m =/= (/) ->
      ( << m , n >> e. <[fin] \/ m = n \/ << n , m >> e. <[fin] ) )
                                                       ) } e. _V $=
@@ -36668,7 +36667,7 @@ $)
   ${
     $d M m n k p $.  $d N m n k p $.
     $( Trichotomy law for finite less than. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     ltfintri $p |- ( ( M e. Nn /\ N e. Nn /\
               M =/= (/) ) ->
        ( << M , N >> e. <[fin] \/ M = N \/ << N , M >> e. <[fin] ) ) $=
@@ -36706,7 +36705,7 @@ $)
   ${
     $d A x $.
     $( Less than or equal to is reflexive. 
-       (Contributed by ?who?, 2-Feb-2015.) $)
+       (Contributed by SF, 2-Feb-2015.) $)
     lefinrflx $p |- ( A e. V -> << A , A >> e. <_[fin] ) $=
       ( vx wcel copk clefin cv cplc wceq cnnc c0c peano1 addcid1 eqcomi addceq2
       wrex eqeq2d rspcev mp2an wb opklefing anidms mpbiri ) ABDZAAEFDZAACGZHZI
@@ -36717,7 +36716,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( Less than implies less than or equal. 
-       (Contributed by ?who?, 2-Feb-2015.) $)
+       (Contributed by SF, 2-Feb-2015.) $)
     ltlefin $p |- ( ( A e. V /\ B e. W ) ->
              ( << A , B >> e. <[fin] -> << A , B >> e. <_[fin] ) ) $=
       ( vx vy wcel wa c0 wne cv cplc c1c wceq cnnc wrex copk cltfin clefin wi
@@ -36731,7 +36730,7 @@ $)
   ${
     $d A x $.  $d B x $.
     $( Less than or equal is the same as negated less than. 
-       (Contributed by ?who?, 2-Feb-2015.) $)
+       (Contributed by SF, 2-Feb-2015.) $)
     lenltfin $p |- ( ( A e. Nn /\ B e. Nn ) ->
        ( << A , B >> e. <_[fin] <-> -. << B , A >> e. <[fin] ) ) $=
       ( cnnc wcel wa copk clefin cltfin wn ltfinirr adantr wi leltfintr expdimp
@@ -36754,7 +36753,7 @@ $)
     $d d k $.  $d d m $.  $d d x $.  $d k m $.  $d k x $.  $d m n $.  $d m t $.
     $( A subset of a finite set is itself finite.  Theorem X.1.21 of
        [Rosser] p. 527. 
-       (Contributed by ?who?, 19-Jan-2015.) $)
+       (Contributed by SF, 19-Jan-2015.) $)
     ssfin $p |- ( ( A e. V /\ B e. Fin /\ A C_ B ) -> A e. Fin ) $=
       ( va vb vn vm vt vx wcel cfin wss cv wi wceq wa wal cssetk cvv wex imbi2d
       vd vk vc sseq1 eleq1 imbi12d sseq2 imbi1d wel cnnc wrex elfin c0 c1c cplc
@@ -36816,7 +36815,7 @@ $)
     $d A x y $.
     $( If the universe is finite, then there is a unique natural containing any
        set.  Theorem X.1.22 of [Rosser] p. 527. 
-       (Contributed by ?who?, 19-Jan-2015.) $)
+       (Contributed by SF, 19-Jan-2015.) $)
     vfinnc $p |- ( ( A e. V /\ _V e. Fin ) -> E! x e. Nn A e. x ) $=
       ( vy wcel cvv cfin wa cv cnnc wrex weq wi wral wss ssv ssfin mp3an3 elfin
       wreu sylib nnceleq ex rgen2a a1i eleq2 reu4 sylanbrc ) BCEZFGEZHZBAIZEZAJ
@@ -36828,7 +36827,7 @@ $)
   ${
     $d A x $.
     $( The finite cardinality of a set exists. 
-       (Contributed by ?who?, 27-Jan-2015.) $)
+       (Contributed by SF, 27-Jan-2015.) $)
     ncfinex $p |- Nc[fin] A e. _V $=
       ( vx cncfin cv cnnc wcel wa cio cvv df-ncfin iotaex eqeltri ) ACBDZEFAMFG
       ZBHIBAJNBKL $.
@@ -36838,7 +36837,7 @@ $)
   ${
     $d A x $.  $d B x $.
     $( Equality theorem for finite cardinality. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     ncfineq $p |- ( A = B -> Nc[fin] A = Nc[fin] B ) $=
       ( vx wceq cv cnnc wcel cio cncfin eleq1 anbi2d iotabidv df-ncfin 3eqtr4g
       wa ) ABDZCEZFGZAQGZOZCHRBQGZOZCHAIBIPTUBCPSUARABQJKLCAMCBMN $.
@@ -36849,7 +36848,7 @@ $)
     $d A x $.
     $( Properties of finite cardinal number.  Theorem X.1.23 of [Rosser]
        p. 527 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     ncfinprop $p |- ( ( _V e. Fin /\ A e. V ) ->
                ( Nc[fin] A e. Nn /\ A e. Nc[fin] A ) ) $=
       ( vx wcel cvv cfin cncfin cnnc cio df-ncfin wreu vfinnc reiotacl syl5eqel
@@ -36861,7 +36860,7 @@ $)
 
   ${
     $( Distribution law for finite cardinality. 
-       (Contributed by ?who?, 30-Jan-2015.) $)
+       (Contributed by SF, 30-Jan-2015.) $)
     ncfindi $p |- ( ( ( _V e. Fin /\ A e. V ) /\ B e. W /\ ( A i^i B ) = (/) )
        -> Nc[fin] ( A u. B ) = ( Nc[fin] A +c Nc[fin] B ) ) $=
       ( cvv cfin wcel wa cin c0 wceq w3a cun cncfin cnnc cplc syl2anc ncfinprop
@@ -36877,7 +36876,7 @@ $)
   ${
     $( If the universe is finite, then the cardinality of a singleton is
        ` 1c ` . 
-       (Contributed by ?who?, 30-Jan-2015.) $)
+       (Contributed by SF, 30-Jan-2015.) $)
     ncfinsn $p |- ( ( _V e. Fin /\ A e. V ) -> Nc[fin] { A } = 1c ) $=
       ( cvv cfin wcel wa csn cncfin cnnc c1c wceq ncfinprop mpan2 adantr simpld
       snex 1cnnc a1i simprd snel1cg adantl nnceleq syl22anc ) CDEZABEZFZAGZHZIE
@@ -36889,7 +36888,7 @@ $)
   ${
     $( Equality law for finite cardinality.  Theorem X.1.24 of [Rosser]
        p. 527. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     ncfineleq $p |- ( ( _V e. Fin /\ A e. V /\ B e. W ) ->
        ( A e. Nc[fin] B <-> Nc[fin] A = Nc[fin] B ) ) $=
       ( cvv cfin wcel w3a cncfin wceq cnnc simpl ncfinprop 3adant3 3syl 3adant2
@@ -36905,7 +36904,7 @@ $)
     eqpwrelk.1 $e |- A e. _V $.
     eqpwrelk.2 $e |- B e. _V $.
     $( Represent equality to power class via a Kuratowski relationship. 
-       (Contributed by ?who?, 26-Jan-2015.) $)
+       (Contributed by SF, 26-Jan-2015.) $)
     eqpwrelk $p |- ( << { A } , B >> e.
               ~ ( ( Ins2_k SSet_k (+) Ins3_k SI_k SSet_k ) "_k
                   ~P1 ~P1 1c ) <-> B = ~P A ) $=
@@ -36929,7 +36928,7 @@ $)
     eqpw1relk.1 $e |- A e. _V $.
     eqpw1relk.2 $e |- B e. _V $.
     $( Represent equality to unit power class via a Kuratowski relationship. 
-       (Contributed by ?who?, 21-Jan-2015.) $)
+       (Contributed by SF, 21-Jan-2015.) $)
     eqpw1relk $p |- ( << A , { B } >> e. ( ( ~P 1c X._k _V ) \
   ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k )
     "_k ~P1 ~P1 ~P1 1c ) ) <-> A = ~P1 B ) $=
@@ -36953,7 +36952,7 @@ $)
     $d b t $.  $d b x $.  $d m t $.  $d n t $.  $d n x $.  $d t x $.
 
     $( Lemma for ~ ncfinraise .  Show stratification for induction. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     ncfinraiselem2 $p |- { m | A. a e. m A. b e. m E. n e. Nn
        ( ~P1 a e. n /\ ~P1 b e. n ) } e. _V $=
       ( vt vx cssetk cpw1 cvv wcel wa wrex snex copk bitr4i exbii df-rex 3bitri
@@ -37014,7 +37013,7 @@ $)
 
     $( If two sets are in a particular finite cardinal, then their unit power
        sets are in the same natural.  Theorem X.1.25 of [Rosser] p. 527. 
-       (Contributed by ?who?, 21-Jan-2015.) $)
+       (Contributed by SF, 21-Jan-2015.) $)
     ncfinraise $p |- ( ( M e. Nn /\ A e. M /\ B e. M ) ->
        E. n e. Nn ( ~P1 A e. n /\ ~P1 B e. n ) ) $=
       ( va vb vc vx vd vy cnnc wcel cpw1 cv wa wrex wral c0c c0 wceq vm vk cplc
@@ -37061,7 +37060,7 @@ $)
   ${
     $d m n a b t x $.
     $( Lemma for ~ ncfinlower .  Set up stratification for induction. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     ncfinlowerlem1 $p |- { m | A. a A. b ( ( ~P1 a e. m /\ ~P1 b
              e. m ) -> E. n e. Nn ( a e. n /\ b e. n ) ) } e. _V $=
       ( vt vx cvv cssetk cpw1 cnnc wcel wa wrex wex copk csn exbii 3bitr4i snex
@@ -37124,7 +37123,7 @@ $)
     $d d m $.  $d m x $.  $d m y $.
     $( If the unit power classes of two sets are in the same natural, then so
        are the sets themselves.  Theorem X.1.26 of [Rosser] p. 527. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     ncfinlower $p |- ( ( M e. Nn /\ ~P1 A e. M /\ ~P1 B e. M ) ->
        E. n e. Nn ( A e. n /\ B e. n ) ) $=
       ( va vb vm vc vd ve vf cnnc wcel cv wa wrex wi c0 wceq eleq2 vk vx vy wel
@@ -37187,7 +37186,7 @@ $)
     $( For any non-empty finite cardinal, there is a unique natural containing
        a unit power class of one of its elements.  Theorem X.1.27 of
        [Rosser] p. 528. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     nnpw1ex $p |- ( ( M e. Nn /\ M =/= (/) ) ->
       E! n e. Nn E. a e. M ~P1 a e. n ) $=
       ( vp vb vq cnnc wcel cpw1 wrex weq wral wex w3a ncfinraise anbi2i nnceleq
@@ -37211,7 +37210,7 @@ $)
   ${
     $d A x y $.
     $( The finite T operator is always a set. 
-       (Contributed by ?who?, 26-Jan-2015.) $)
+       (Contributed by SF, 26-Jan-2015.) $)
     tfinex $p |- _T[fin] A e. _V $=
       ( vx vy ctfin c0 wceq cv cnnc wcel cpw1 wa cio cif cvv df-tfin 0ex iotaex
       wrex ifex eqeltri ) ADAEFZEBGZHICGJUBICARKZBLZMNBACOUAEUDPUCBQST $.
@@ -37226,7 +37225,7 @@ $)
     eqtfinrelk.1 $e |- M e. _V $.
     eqtfinrelk.2 $e |- X e. _V $.
     $( Equality to a T raising expressed via a Kuratowski relationship. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     eqtfinrelk $p |- ( << { M } , X >> e. ( ( { { (/) } } X._k { (/) } ) u.
   ( ~ ( ( Ins2_k SSet_k (+)
       Ins3_k
@@ -37302,7 +37301,7 @@ $)
   $}
 
   $( The expression at the core of ~ eqtfinrelk exists. 
-     (Contributed by ?who?, 30-Jan-2015.) $)
+     (Contributed by SF, 30-Jan-2015.) $)
   tfinrelkex $p |- ( ( { { (/) } } X._k { (/) } ) u.
   ( ~ ( ( Ins2_k SSet_k (+)
       Ins3_k
@@ -37331,7 +37330,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( Equality theorem for the finite T operator. 
-       (Contributed by ?who?, 24-Jan-2015.) $)
+       (Contributed by SF, 24-Jan-2015.) $)
     tfineq $p |- ( A = B -> _T[fin] A = _T[fin] B ) $=
       ( vx vy wceq c0 cv cnnc wcel cpw1 wrex cio cif ctfin eqeq1 rexeq iotabidv
       wa anbi2d df-tfin ifbieq2d 3eqtr4g ) ABEZAFEZFCGZHIZDGJUEIZDAKZRZCLZMBFEZ
@@ -37344,7 +37343,7 @@ $)
 
     $( Properties of the finite T operator for a non-empty natural.  Theorem
        X.1.28 of [Rosser] p. 528. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     tfinprop $p |- ( ( M e. Nn /\ M =/= (/) ) ->
       ( _T[fin] M e. Nn /\ E. a e. M ~P1 a e. _T[fin] M ) ) $=
       ( vn cnnc wcel c0 wne wa ctfin cv cpw1 wrex wceq cio cif df-tfin wn df-ne
@@ -37360,7 +37359,7 @@ $)
     $d M x $.
     $( If ` M ` is a non-empty natural, then ` _T[fin] M ` is also non-empty.
        Corollary 1 of Theorem X.1.28 of [Rosser] p. 528. 
-       (Contributed by ?who?, 23-Jan-2015.) $)
+       (Contributed by SF, 23-Jan-2015.) $)
     tfinnnul $p |- ( ( M e. Nn /\ M =/= (/) ) -> _T[fin] M =/= (/) ) $=
       ( vx cnnc wcel c0 wne wa ctfin cv cpw1 wrex tfinprop rexlimivw adantl syl
       ne0i ) ACDAEFGAHZCDZBIJZQDZBAKZGQEFZABLUAUBRTUBBAQSPMNO $.
@@ -37371,7 +37370,7 @@ $)
     $d x y $.
     $( The finite T operator applied to the empty set is empty.  Theorem X.1.29
        of [Rosser] p. 528. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     tfinnul $p |- _T[fin] (/) = (/) $=
       ( vx vy c0 ctfin wceq cv cnnc wcel cpw1 wrex cio cif df-tfin iftrue ax-mp
       wa eqid eqtri ) CDCCEZCAFZGHBFITHBCJPAKZLZCACBMSUBCECQSCUANOR $.
@@ -37382,7 +37381,7 @@ $)
   ${
     $d N a $.
     $( Closure law for finite T operation. 
-       (Contributed by ?who?, 2-Feb-2015.) $)
+       (Contributed by SF, 2-Feb-2015.) $)
     tfincl $p |- ( N e. Nn -> _T[fin] N e. Nn ) $=
       ( va cnnc wcel ctfin wi c0 wceq tfinnul tfineq 3eqtr4a eleq1d biimprd wne
       id wa cv cpw1 wrex tfinprop simpld expcom pm2.61ine ) ACDZAEZCDZFAGAGHZUF
@@ -37396,7 +37395,7 @@ $)
 
     $( The finite T operator is one-to-one over the naturals.  Theorem X.1.30
        of [Rosser] p. 528. 
-       (Contributed by ?who?, 24-Jan-2015.) $)
+       (Contributed by SF, 24-Jan-2015.) $)
     tfin11 $p |- ( ( M e. Nn /\ N e. Nn /\ _T[fin] M = _T[fin] N ) ->
             M = N ) $=
       ( va vb vp cnnc wcel ctfin wceq w3a wi c0 wa tfinnnul ex necon4d 3ad2ant1
@@ -37423,7 +37422,7 @@ $)
     $d A b $.  $d A n $.  $d b n $.  $d M b $.  $d M n $.
     $( The finite T operator on a natural contains the unit power class of any
        element of the natural.  Theorem X.1.31 of [Rosser] p. 528. 
-       (Contributed by ?who?, 24-Jan-2015.) $)
+       (Contributed by SF, 24-Jan-2015.) $)
     tfinpw1 $p |- ( ( M e. Nn /\ A e. M ) -> ~P1 A e. _T[fin] M ) $=
       ( vb vn cnnc wcel wa ctfin cv cpw1 wrex c0 wne ne0i tfinprop sylan2 3expa
       expr rexlimdva mpd ncfinraise adantrr w3a simp3rl wceq simp3l syl simp3rr
@@ -37439,7 +37438,7 @@ $)
     $d A x $.
     $( Relationship between finite T operator and finite Nc operation in a
        finite universe.  Corollary of Theorem X.1.31 of [Rosser] p. 529. 
-       (Contributed by ?who?, 24-Jan-2015.) $)
+       (Contributed by SF, 24-Jan-2015.) $)
     ncfintfin $p |- ( ( _V e. Fin /\ A e. V ) ->
                _T[fin] Nc[fin] A = Nc[fin] ~P1 A ) $=
       ( cfin wcel wa cncfin ctfin cnnc cpw1 wceq ncfinprop simpld tfincl pw1exg
@@ -37453,7 +37452,7 @@ $)
     $d M a b c t $.  $d N a b c t $.
     $( The finite T operation distributes over non-empty cardinal sum.  Theorem
        X.1.32 of [Rosser] p. 529. 
-       (Contributed by ?who?, 26-Jan-2015.) $)
+       (Contributed by SF, 26-Jan-2015.) $)
     tfindi $p |- ( ( M e. Nn /\ N e. Nn /\ ( M +c N ) =/= (/) ) ->
        _T[fin] ( M +c N ) = ( _T[fin] M +c _T[fin] N ) ) $=
       ( va vb vc cnnc wcel cplc c0 ctfin wceq cv cpw1 nncaddccl 3adant3 tfinpw1
@@ -37474,7 +37473,7 @@ $)
 
   ${
     $( The finite T operator is fixed at ` 0c ` . 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     tfin0c $p |- _T[fin] 0c = 0c $=
       ( c0c ctfin cnnc wcel c0 wceq peano1 tfincl ax-mp cpw1 pw10 nulel0c mp2an
       tfinpw1 eqeltrri nnceleq mp4an ) ABZCDZACDZERDEADZRAFTSGAHIGEJZERKTUAUBRD
@@ -37485,7 +37484,7 @@ $)
   ${
     $d A a b x $.
     $( The finite T operator over a successor. 
-       (Contributed by ?who?, 30-Jan-2015.) $)
+       (Contributed by SF, 30-Jan-2015.) $)
     tfinsuc $p |- ( ( A e. Nn /\ ( A +c 1c ) =/= (/) ) ->
        _T[fin] ( A +c 1c ) = ( _T[fin] A +c 1c ) ) $=
       ( va vb vx cnnc wcel c1c cplc ctfin wceq cv cpw1 peano2 tfincl syl adantr
@@ -37504,7 +37503,7 @@ $)
 
   $( The finite T operator is idempotent over ` 1c ` .  Theorem X.1.34(a) of
      [Rosser] p. 529. 
-     (Contributed by ?who?, 30-Jan-2015.) $)
+     (Contributed by SF, 30-Jan-2015.) $)
   tfin1c $p |- _T[fin] 1c = 1c $=
     ( c0c c1c cplc ctfin cnnc wcel wne wceq peano1 addcid2 csn 1cex snel1c ne0i
     c0 ax-mp eqnetri tfinsuc mp2an tfineq tfin0c addceq1i eqtri 3eqtr3i ) ABCZD
@@ -37515,7 +37514,7 @@ $)
   ${
     $d M x y $.  $d N x y $.
     $( Lemma for ~ tfinltfin .  Prove the forward direction of the theorem. 
-       (Contributed by ?who?, 2-Feb-2015.) $)
+       (Contributed by SF, 2-Feb-2015.) $)
     tfinltfinlem1 $p |- ( ( M e. Nn /\ N e. Nn ) ->
     ( << M , N >> e. <[fin] ->
       << _T[fin] M , _T[fin] N >> e. <[fin] ) ) $=
@@ -37545,7 +37544,7 @@ $)
     $d M x y $.  $d N x y $.
     $( Ordering rule for the finite T operation.  Corollary to theorem X.1.33
        of [Rosser] p. 529. 
-       (Contributed by ?who?, 1-Feb-2015.) $)
+       (Contributed by SF, 1-Feb-2015.) $)
     tfinltfin $p |- ( ( M e. Nn /\ N e. Nn ) ->
     ( << M , N >> e. <[fin] <->
       << _T[fin] M , _T[fin] N >> e. <[fin] ) ) $=
@@ -37570,7 +37569,7 @@ $)
 
   $( Ordering rule for the finite T operation.  Theorem X.1.33 of [Rosser]
      p. 529. 
-     (Contributed by ?who?, 2-Feb-2015.) $)
+     (Contributed by SF, 2-Feb-2015.) $)
   tfinlefin $p |- ( ( M e. Nn /\ N e. Nn ) ->
     ( << M , N >> e. <_[fin] <->
       << _T[fin] M , _T[fin] N >> e. <_[fin] ) ) $=
@@ -37585,7 +37584,7 @@ $)
     $d t x $.
 
     $( The set of all even naturals exists. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     evenfinex $p |- Even[fin] e. _V $=
       ( vx vn va vt vc vb cssetk csik csn wrex wa wcel copk wn exbii snex bitri
       wex 3bitri opksnelsik cevenfin cins2k cvv cxpk cin cins3k c1c cpw1 ccompl
@@ -37644,7 +37643,7 @@ $)
     $d a y $.  $d b y $.  $d n y $.  $d t y $.  $d x y $.
 
     $( The set of all odd naturals exists. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     oddfinex $p |- Odd[fin] e. _V $=
       ( vx va vt vb vc vy cssetk csn wceq wrex wa wcel copk wn wex 3bitr4i snex
       exbii 3bitri opksnelsik coddfin cins2k cvv cxpk cin cins3k c1c cpw1 cimak
@@ -37737,7 +37736,7 @@ $)
   ${
     $d n x $.
     $( Cardinal zero is even. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     0ceven $p |- 0c e. Even[fin] $=
       ( vn vx c0c cevenfin wcel cv cplc wceq cnnc wrex c0 peano1 addcid2 eqcomi
       wne addceq12 anidms eqeq2d rspcev wa mp2an csn snid df-0c eleqtrri ax-mp
@@ -37751,7 +37750,7 @@ $)
   ${
     $d A n x $.
     $( An even finite cardinal is a finite cardinal. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     evennn $p |- ( A e. Even[fin] -> A e. Nn ) $=
       ( vn vx cevenfin wcel cv cplc wceq cnnc wrex c0 wne eqeq1 rexbidv anbi12d
       wa neeq1 df-evenfin elab2g syl wi nncaddccl anidms eleq1a rexlimiv adantr
@@ -37764,7 +37763,7 @@ $)
   ${
     $d A n x $.
     $( An odd finite cardinal is a finite cardinal. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     oddnn $p |- ( A e. Odd[fin] -> A e. Nn ) $=
       ( vn vx coddfin wcel cv cplc c1c wceq cnnc wrex c0 wa eqeq1 rexbidv neeq1
       wne anbi12d df-oddfin elab2g ibi wi nncaddccl anidms peano2 3syl rexlimiv
@@ -37777,7 +37776,7 @@ $)
   ${
     $d A n x $.
     $( An even number is non-empty. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     evennnul $p |- ( A e. Even[fin] -> A =/= (/) ) $=
       ( vn vx cevenfin wcel cv cplc wceq cnnc wrex c0 wne eqeq1 rexbidv anbi12d
       wa neeq1 df-evenfin elab2g ibi simprd ) ADEZABFZUCGZHZBIJZAKLZUBUFUGPZCFZ
@@ -37785,7 +37784,7 @@ $)
       $( [22-Jan-2015] $)
 
     $( An odd number is non-empty. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     oddnnul $p |- ( A e. Odd[fin] -> A =/= (/) ) $=
       ( vn vx coddfin wcel cv cplc c1c wceq cnnc wrex c0 wa eqeq1 rexbidv neeq1
       wne anbi12d df-oddfin elab2g ibi simprd ) ADEZABFZUDGHGZIZBJKZALQZUCUGUHM
@@ -37796,7 +37795,7 @@ $)
   ${
     $d A m n x $.
     $( The successor of an even natural is odd. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     sucevenodd $p |- ( ( A e. Even[fin] /\ ( A +c 1c ) =/= (/) ) ->
                ( A +c 1c ) e. Odd[fin] ) $=
       ( vm vx cevenfin wcel c1c cplc c0 wa coddfin wceq cnnc wrex eqeq1 rexbidv
@@ -37812,7 +37811,7 @@ $)
   ${
     $d A m n x $.
     $( The successor of an odd natural is even. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     sucoddeven $p |- ( ( A e. Odd[fin] /\ ( A +c 1c ) =/= (/) ) ->
                ( A +c 1c ) e. Even[fin] ) $=
       ( vm vn vx coddfin wcel c1c cplc c0 wa cevenfin cv wceq cnnc wrex rexbidv
@@ -37832,7 +37831,7 @@ $)
   ${
     $d x n $.
     $( Alternate definition of even number. 
-       (Contributed by ?who?, 25-Jan-2015.) $)
+       (Contributed by SF, 25-Jan-2015.) $)
     dfevenfin2 $p |- Even[fin] =
        { x | E. n e. Nn ( x = ( n +c n ) /\ ( n +c n ) =/= (/) ) } $=
       ( cevenfin cv cplc wceq cnnc wrex c0 wne df-evenfin r19.41v neeq1 pm5.32i
@@ -37841,7 +37840,7 @@ $)
       $( [25-Jan-2015] $)
 
     $( Alternate definition of odd number. 
-       (Contributed by ?who?, 25-Jan-2015.) $)
+       (Contributed by SF, 25-Jan-2015.) $)
     dfoddfin2 $p |- Odd[fin] =
        { x | E. n e. Nn ( x = ( ( n +c n ) +c 1c ) /\
              ( ( n +c n ) +c 1c ) =/= (/) ) } $=
@@ -37855,7 +37854,7 @@ $)
     $d x y k n m $.
     $( Every non-empty finite cardinal is either even or odd.  Theorem X.1.35
        of [Rosser] p. 529. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     evenoddnnnul $p |- ( Even[fin] u. Odd[fin] ) = ( Nn \ { (/) } ) $=
       ( vx vn vm vk cevenfin coddfin cnnc c0 wss cv wcel wne ssriv wi c0c neeq1
       c1c wo eleq1 imbi12d cun cdif wa evennn evennnul eldifsn sylanbrc oddnnul
@@ -37878,7 +37877,7 @@ $)
   ${
     $d j n x a b y t $.
     $( Lemma for ~ evenodddisj .  Establish stratification for induction. 
-       (Contributed by ?who?, 25-Jan-2015.) $)
+       (Contributed by SF, 25-Jan-2015.) $)
     evenodddisjlem1 $p |- { j | ( ( j +c j ) =/= (/) -> A.
 n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
                                  ) } e. _V $=
@@ -38009,7 +38008,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
     $( The even finite cardinals and the odd ones are disjoint.  Theorem X.1.36
        of [Rosser] p. 529. 
-       (Contributed by ?who?, 22-Jan-2015.) $)
+       (Contributed by SF, 22-Jan-2015.) $)
     evenodddisj $p |- ( Even[fin] i^i Odd[fin] ) = (/) $=
       ( vx vn vp cv cplc wceq c0 wne wa cnnc c1c wn wi wcel c0c addceq12 anidms
       wral neeq1d imbi12d vk vj vm vq cevenfin coddfin cin dfevenfin2 dfoddfin2
@@ -38063,7 +38062,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d M m n x $.
     $( If ` M ` is even , then so is ` _T[fin] M ` .  Theorem X.1.37 of
        [Rosser] p. 530. 
-       (Contributed by ?who?, 26-Jan-2015.) $)
+       (Contributed by SF, 26-Jan-2015.) $)
     eventfin $p |- ( M e. Even[fin] -> _T[fin] M e. Even[fin] ) $=
       ( vn vx vm cevenfin wcel cv cplc wceq cnnc wrex c0 wa ctfin eqeq1 rexbidv
       wne neeq1 anbi12d wi df-evenfin elab2g ibi addceq2 addcnul1 cpw1 tfinprop
@@ -38084,7 +38083,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d M n m x $.
     $( If ` M ` is odd , then so is ` _T[fin] M ` .  Theorem X.1.38 of
        [Rosser] p. 530. 
-       (Contributed by ?who?, 26-Jan-2015.) $)
+       (Contributed by SF, 26-Jan-2015.) $)
     oddtfin $p |- ( M e. Odd[fin] -> _T[fin] M e. Odd[fin] ) $=
       ( vn vx vm coddfin wcel cv cplc c1c wceq cnnc c0 wne wa ctfin eqeq1 neeq1
       wrex wi syl rexbidv anbi12d df-oddfin elab2g ibi addceq2 addcnul1 addceq1
@@ -38110,7 +38109,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d n z $.  $d t x $.  $d t y $.  $d t z $.  $d x z $.  $d y z $.
 
     $( Lemma for ~ nnadjoin .  Establish stratification. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     nnadjoinlem1 $p |- { n | A. l e. n ( y e. ~ U. l -> { x |
             E. b e. l x = ( b u. { y } ) } e. n ) } e. _V $=
       ( vz vt cssetk wel cvv c1c csn wcel wn copk wa wex exbii 3bitr4i 3bitri
@@ -38181,7 +38180,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
     $( Adjoining a new element to every member of ` L ` does not change its
        size.  Theorem X.1.39 of [Rosser] p. 530. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     nnadjoin $p |- ( ( N e. Nn /\ L e. N /\ X e. ~ U. L ) ->
          { x | E. b e. L x = ( b u. { X } ) } e. N ) $=
       ( vl vc vz wcel cuni ccompl cv cun wceq wrex cab wi c0 wn wa vy vn vk csn
@@ -38237,7 +38236,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
     $( Adjoining an element to a power class.  Theorem X.1.40 of [Rosser]
        p. 530. 
-       (Contributed by ?who?, 27-Jan-2015.) $)
+       (Contributed by SF, 27-Jan-2015.) $)
     nnadjoinpw $p |- ( ( ( M e. Nn /\ N e. Nn ) /\ ( A e. M /\ X e. ~ A ) /\
          ~P A e. N ) -> ~P ( A u. { X } ) e. ( N +c N ) ) $=
       ( va vb vt cnnc wcel wa ccompl cpw cun cv wceq wrex wss wn wral wal simp3
@@ -38258,7 +38257,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d m a b n t x $.
     $( Lemma for ~ nnpweq .  Establish stratification for induction. 
-       (Contributed by ?who?, 26-Jan-2015.) $)
+       (Contributed by SF, 26-Jan-2015.) $)
     nnpweqlem1 $p |- { m | A. a e. m A. b e. m E. n e. Nn ( ~P a
                                             e. n /\ ~P b e. n ) } e. _V $=
       ( vt vx cssetk cnnc wcel wa wrex csn copk snex bitri exbii df-rex 3bitr4i
@@ -38311,7 +38310,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d M a b c d e f x y m n j k $.
     $( If two sets are the same finite size, then so are their power classes.
        Theorem X.1.41 of [Rosser] p. 530. 
-       (Contributed by ?who?, 26-Jan-2015.) $)
+       (Contributed by SF, 26-Jan-2015.) $)
     nnpweq $p |- ( ( M e. Nn /\ A e. M /\ B e. M ) ->
        E. n e. Nn ( ~P A e. n /\ ~P B e. n ) ) $=
       ( va vb ve vf cnnc wcel cpw cv wa wrex wral c0 c0c wceq pweq eleq1d vm vk
@@ -38361,7 +38360,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     srelk.1 $e |- A e. _V $.
     srelk.2 $e |- B e. _V $.
     $( Binary relationship form of the ` _S[fin] ` relationship. 
-       (Contributed by ?who?, 23-Jan-2015.) $)
+       (Contributed by SF, 23-Jan-2015.) $)
     srelk $p |- ( << A , B >> e. ( ( Nn X._k Nn ) i^i ( (
  Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k SSet_k (+) Ins2_k SI_k
  SSet_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
@@ -38405,7 +38404,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   $}
 
   $( The expression at the core of ~ srelk exists. 
-     (Contributed by ?who?, 30-Jan-2015.) $)
+     (Contributed by SF, 30-Jan-2015.) $)
   srelkex $p |- ( ( Nn X._k Nn ) i^i ( (
  Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k SSet_k (+) Ins2_k SI_k
  SSet_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
@@ -38423,7 +38422,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d A y $.  $d B y $.  $d C y $.
     $( Equality theorem for the finite S relationship. 
-       (Contributed by ?who?, 27-Jan-2015.) $)
+       (Contributed by SF, 27-Jan-2015.) $)
     sfineq1 $p |- ( A = B -> ( _S[fin] ( A , C ) <-> _S[fin] ( B , C ) ) ) $=
       ( vy wceq cnnc wcel cv cpw1 cpw wex w3a wsfin eleq1 eleq2 anbi1d 3anbi13d
       wa exbidv df-sfin 3bitr4g ) ABEZAFGZCFGZDHZIZAGZUEJCGZRZDKZLBFGZUDUFBGZUH
@@ -38431,7 +38430,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
       $( [27-Jan-2015] $)
 
     $( Equality theorem for the finite S relationship. 
-       (Contributed by ?who?, 27-Jan-2015.) $)
+       (Contributed by SF, 27-Jan-2015.) $)
     sfineq2 $p |- ( A = B -> ( _S[fin] ( C , A ) <-> _S[fin] ( C , B ) ) ) $=
       ( vy wceq cnnc wcel cv cpw1 cpw wex w3a wsfin eleq1 eleq2 anbi2d 3anbi23d
       wa exbidv df-sfin 3bitr4g ) ABEZCFGZAFGZDHZICGZUEJZAGZRZDKZLUCBFGZUFUGBGZ
@@ -38441,7 +38440,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   $( Zero and one satisfy ` _S[fin] ` .  Theorem X.1.42 of [Rosser]
      p. 530. 
-     (Contributed by ?who?, 30-Jan-2015.) $)
+     (Contributed by SF, 30-Jan-2015.) $)
   sfin01 $p |- _S[fin] ( 0c , 1c ) $=
     ( va c0c c1c wsfin cnnc wcel cv cpw1 cpw wex peano1 1cnnc wceq csn pw10 0ex
     wa c0 snel1c el0c pw1eq eqeq1d syl5bb pweq pw0 syl6eq eleq1d anbi12d spcev
@@ -38454,7 +38453,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d M x y n k $.  $d N x y n k $.  $d P x y n k $.
     $( Equality law for the finite S operator.  Theorem X.1.43 of [Rosser]
        p. 530. 
-       (Contributed by ?who?, 27-Jan-2015.) $)
+       (Contributed by SF, 27-Jan-2015.) $)
     sfin112 $p |- ( ( _S[fin] ( M , N ) /\ _S[fin] ( M , P ) ) -> N = P ) $=
       ( vx vy vn vk wsfin wa cnnc wcel cpw1 cpw wex w3a wceq df-sfin wel wrex
       cv 3an6 eeanv 3anbi3i anbi12i 3bitr4ri simpllr simprll simprrl ncfinlower
@@ -38480,7 +38479,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
        then there is a natural that is smaller than the finite cardinal and
        whose double is smaller than the successor of the cardinal.  Theorem
        X.1.44 of [Rosser] p. 531. 
-       (Contributed by ?who?, 30-Jan-2015.) $)
+       (Contributed by SF, 30-Jan-2015.) $)
     sfindbl $p |- ( ( M e. Nn /\ ~P1 A e. ( M +c 1c ) ) ->
          E. n e. Nn ( _S[fin] ( M , n ) /\
             _S[fin] ( ( M +c 1c ) , ( n +c n ) ) ) ) $=
@@ -38515,7 +38514,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d m n t x y $.
     $( Lemma for ~ sfintfin .  Set up induction stratification. 
-       (Contributed by ?who?, 31-Jan-2015.) $)
+       (Contributed by SF, 31-Jan-2015.) $)
     sfintfinlem1 $p |- { m | A. n ( _S[fin] ( m , n ) ->
                   _S[fin] ( _T[fin] m , _T[fin] n ) ) } e. _V $=
       ( vt vy vx cxpk c1c cins3k cins2k cimak cin csn cv wcel wn wex copk exbii
@@ -38555,7 +38554,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d M a b k m n p q $.  $d N a k n $.
     $( If two numbers obey ` _S[fin] ` , then do their T raisings.  Theorem
        X.1.45 of [Rosser] p. 532. 
-       (Contributed by ?who?, 30-Jan-2015.) $)
+       (Contributed by SF, 30-Jan-2015.) $)
     sfintfin $p |- ( _S[fin] ( M , N ) ->
               _S[fin] ( _T[fin] M , _T[fin] N ) ) $=
       ( va vn vk cnnc wcel wa wsfin ctfin wi c0c c1c wceq sfineq1 wb tfineq syl
@@ -38607,7 +38606,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d x z $.  $d y z $.
 
     $( Lemma for ~ tfinnn .  Establish stratification. 
-       (Contributed by ?who?, 30-Jan-2015.) $)
+       (Contributed by SF, 30-Jan-2015.) $)
     tfinnnlem1 $p |- { n | A. y e. n ( y C_ Nn -> { a | E. x e.
                           y a = _T[fin] x } e. _T[fin] n ) } e. _V $=
       ( vt vz vw cssetk csn cimak wcel wn copk wa wex snex bitri 3bitri 3bitr4i
@@ -38671,7 +38670,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
     $( T-raising of a set of naturals.  Theorem X.1.46 of [Rosser]
        p. 532. 
-       (Contributed by ?who?, 30-Jan-2015.) $)
+       (Contributed by SF, 30-Jan-2015.) $)
     tfinnn $p |- ( ( N e. Nn /\ A C_ Nn /\ A e. N ) ->
        { a | E. x e. A a = _T[fin] x } e. _T[fin] N ) $=
       ( vy vb vw cnnc wcel wss cv ctfin wceq wrex cab wi c0 wn c0c wa vn vk wal
@@ -38732,7 +38731,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d t u $.
     $( Ordering law for finite smaller than.  Theorem X.1.47 of [Rosser]
        p. 532. 
-       (Contributed by ?who?, 30-Jan-2015.) $)
+       (Contributed by SF, 30-Jan-2015.) $)
     sfinltfin $p |- ( ( ( _S[fin] ( M , N ) /\ _S[fin] ( P , Q ) ) /\
         << M , P >> e. <[fin] ) -> << N , Q >> e. <[fin] ) $=
       ( va vb vr vx wa cltfin wcel cnnc cv wrex wceq c0 wn syl2anc syl cplc cpw
@@ -38814,7 +38813,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d M a $.  $d N a $.  $d P a $.
     $( The finite smaller relationship is one-to-one in its first argument.
        Theorem X.1.48 of [Rosser] p. 533. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     sfin111 $p |- ( ( _S[fin] ( M , P ) /\ _S[fin] ( N , P ) ) ->
        M = N ) $=
       ( va wsfin wa copk cltfin wcel wo wn wceq cnnc wex df-sfin adantl simp1bi
@@ -38832,7 +38831,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d a x $.  $d a z $.  $d t x $.  $d x z $.  $d a t $.  $d t z $.
     $( ` Sp[fin] ` is a set. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     spfinex $p |- Sp[fin] e. _V $=
       ( va vz vx vt cv wcel cssetk c1c cins3k csik cimak cin wa wn wex copk csn
       bitr4i exbii 3bitri cspfin cvv cncfin cab cnnc cxpk cpw csymdif cpw1 cdif
@@ -38863,7 +38862,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d a x z $.
     $( The cardinality of the universe is in the finite Sp set.  Theorem X.1.49
        of [Rosser] p. 534. 
-       (Contributed by ?who?, 27-Jan-2015.) $)
+       (Contributed by SF, 27-Jan-2015.) $)
     ncvspfin $p |- Nc[fin] _V e. Sp[fin] $=
       ( va vz vx cvv cncfin cv wcel wsfin wel wi wal wral wa cab cspfin ncfinex
       cint elintab simpl mpgbir df-spfin eleqtrri ) DEZUCAFZGZBFCFHBAIJBKCUDLZM
@@ -38877,7 +38876,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
     $( If ` X ` is in ` Sp[fin] ` and ` Z ` is smaller than ` X ` , then ` Z `
        is also in ` Sp[fin] ` .  Theorem X.1.50 of [Rosser] p. 534. 
-       (Contributed by ?who?, 27-Jan-2015.) $)
+       (Contributed by SF, 27-Jan-2015.) $)
     spfinsfincl $p |- ( ( X e. Sp[fin] /\ _S[fin] ( Z , X ) ) ->
        Z e. Sp[fin] ) $=
       ( vy vz vx va vq vp wsfin cspfin wcel wi cnnc cv wa eleq1 imbi12d wel wal
@@ -38899,7 +38898,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
     $( Inductive principle for ` Sp[fin] ` .  Theorem X.1.51 of [Rosser]
        p. 534. 
-       (Contributed by ?who?, 27-Jan-2015.) $)
+       (Contributed by SF, 27-Jan-2015.) $)
     spfininduct $p |- ( ( B e. V /\ Nc[fin] _V e. B /\
        A. x e. Sp[fin] A. z ( ( x e. B /\ _S[fin] ( z , x ) ) -> z e. B ) ) ->
        Sp[fin] C_ B ) $=
@@ -38923,7 +38922,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d x y z $.
     $( If the universe is finite, then ` Sp[fin] ` is a subset of the non-empty
        naturals.  Theorem X.1.53 of [Rosser] p. 534. 
-       (Contributed by ?who?, 27-Jan-2015.) $)
+       (Contributed by SF, 27-Jan-2015.) $)
     vfinspnn $p |- ( _V e. Fin -> Sp[fin] C_ ( Nn \ { (/) } ) ) $=
       ( vx vz vy cvv cfin wcel cncfin cnnc c0 csn cv wsfin wa wi wal cspfin wne
       cdif ne0i eldifsn wral wss vvex ncfinprop mpan2 anim2i syl sylibr cpw wex
@@ -38939,7 +38938,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $( If the universe is finite, then ` Nc[fin] 1c ` is the base two log of
        ` Nc[fin] _V ` .  Theorem X.1.54 of [Rosser] p. 534. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     1cvsfin $p |- ( _V e. Fin -> _S[fin] ( Nc[fin] 1c , Nc[fin] _V ) ) $=
       ( va cvv cfin wcel c1c cncfin cnnc cpw1 cpw wex w3a 1cex ncfinprop simpld
       cv wa mpan2 vvex simprd eleq1d wsfin wceq pw1eq df1c2 syl6eqr pweq syl6eq
@@ -38954,7 +38953,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $( If the universe is finite, then the size of ` 1c ` is in ` Sp[fin] ` .
        Corollary of Theorem X.1.54 of [Rosser] p. 534. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     1cspfin $p |- ( _V e. Fin -> Nc[fin] 1c e. Sp[fin] ) $=
       ( cvv cfin wcel cncfin cspfin wsfin ncvspfin 1cvsfin spfinsfincl sylancr
       c1c ) ABCADZECKDZLFMECGHLMIJ $.
@@ -38965,7 +38964,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $( If the universe is finite, then the T-raising of the size of the
        universe is equal to the size of ` 1c ` .  Theorem X.1.55 of [Rosser]
        p. 534. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     tncveqnc1fin $p |- ( _V e. Fin -> _T[fin] Nc[fin] _V = Nc[fin] 1c ) $=
       ( cvv cfin wcel cncfin ctfin cpw1 wceq vvex ncfintfin mpan2 df1c2 ncfineq
       c1c ax-mp syl6eqr ) ABCZADEZAFZDZMDZPAACQSGHAAIJMRGTSGKMRLNO $.
@@ -38976,7 +38975,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $( If the universe is finite, then the T-raising of the size of ` 1c ` is
        smaller than the size itself.  Corollary of theorem X.1.56 of
        [Rosser] p. 534. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     t1csfin1c $p |- ( _V e. Fin ->
                _S[fin] ( _T[fin] Nc[fin] 1c , Nc[fin] 1c ) ) $=
       ( cvv cfin wcel c1c cncfin ctfin wsfin 1cvsfin sfintfin wceq tncveqnc1fin
@@ -38989,7 +38988,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $( If the universe is finite, then the T-raising of all non-empty naturals
        are no greater than the size of ` 1c ` .  Theorem X.1.56 of [Rosser]
        p. 534. 
-       (Contributed by ?who?, 30-Jan-2015.) $)
+       (Contributed by SF, 30-Jan-2015.) $)
     vfintle $p |- ( ( _V e. Fin /\ N e. Nn /\ N =/= (/) ) ->
         << _T[fin] N , Nc[fin] 1c >> e. <_[fin] ) $=
       ( va cvv cfin wcel cnnc c0 w3a cncfin copk clefin ctfin wa wceq ncfinprop
@@ -39011,7 +39010,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $( If the universe is finite, then ` 1c ` is strictly smaller than the
        universe.  Theorem X.1.57 of [Rosser] p. 534. 
-       (Contributed by ?who?, 30-Jan-2015.) $)
+       (Contributed by SF, 30-Jan-2015.) $)
     vfin1cltv $p |- ( _V e. Fin ->
                << Nc[fin] 1c , Nc[fin] _V >> e. <[fin] ) $=
       ( cvv wcel c1c cncfin cplc copk cltfin wceq ax-mp 1cex wa c0 mpan2 wn c0c
@@ -39034,7 +39033,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d N a $.
     $( If the universe is finite, then the size of the universe is not the
        T-raising of a natural.  Theorem X.1.58 of [Rosser] p. 534. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     vfinncvntnn $p |- ( ( _V e. Fin /\ N e. Nn ) ->
                  _T[fin] N =/= Nc[fin] _V ) $=
       ( va cvv wcel cnnc wa ctfin cncfin wi c0 wceq vvex ncfinprop mpan2 cltfin
@@ -39056,7 +39055,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $( If the universe is finite, then its size is not a T raising of an
        element of ` Sp[fin] ` .  Corollary of theorem X.1.58 of [Rosser]
        p. 534. 
-       (Contributed by ?who?, 27-Jan-2015.) $)
+       (Contributed by SF, 27-Jan-2015.) $)
     vfinncvntsp $p |- ( _V e. Fin ->
                  -. Nc[fin] _V e. { a | E. x e. Sp[fin] a = _T[fin] x } ) $=
       ( cvv cfin wcel cncfin cv ctfin wceq cspfin wrex cab wa wne cnnc csn cdif
@@ -39070,7 +39069,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d n z x a b p g d $.
     $( Lemma for ~ vfinspss .  Establish part of the inductive step. 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     vfinspsslem1 $p |- (
       ( ( _V e. Fin /\ _T[fin] n e. Sp[fin] ) /\
         ( n e. Sp[fin] /\ _S[fin] ( z , _T[fin] n ) ) ) ->
@@ -39126,7 +39125,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $( If the universe is finite, then ` Sp[fin] ` is a subset of its ` T `
        raisings and the cardinality of the universe.  Theorem X.1.59 of
        [Rosser] p. 534. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     vfinspss $p |- ( _V e. Fin ->
               Sp[fin] C_
               ( { a | E. x e. Sp[fin] a = _T[fin] x } u. { Nc[fin] _V } ) ) $=
@@ -39166,7 +39165,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d X x y z $.
     $( If the universe is finite, then ` Sp[fin] ` is closed under T-raising.
        Theorem X.1.60 of [Rosser] p. 536. 
-       (Contributed by ?who?, 30-Jan-2015.) $)
+       (Contributed by SF, 30-Jan-2015.) $)
     vfinspclt $p |- ( ( _V e. Fin /\ X e. Sp[fin] ) ->
                _T[fin] X e. Sp[fin] ) $=
       ( vx vy vz cvv wcel cspfin wa cv ctfin c1c wceq tfineq eleq1d elab cssetk
@@ -39194,7 +39193,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $( If the universe is finite, then ` Sp[fin] ` is equal to its T raisings
        and the cardinality of the universe.  Theorem X.1.61 of [Rosser]
        p. 536. 
-       (Contributed by ?who?, 29-Jan-2015.) $)
+       (Contributed by SF, 29-Jan-2015.) $)
     vfinspeqtncv $p |- ( _V e. Fin ->
                   Sp[fin] = ( { a | E. x e. Sp[fin] a = _T[fin] x } u.
                   { Nc[fin] _V } ) ) $=
@@ -39210,7 +39209,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d a x t $.
     $( If the universe is finite, then the size of ` Sp[fin] ` is equal to the
        successor of its T-raising.  Theorem X.1.62 of [Rosser] p. 536. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     vfinncsp $p |- ( _V e. Fin ->
        Nc[fin] Sp[fin] = ( _T[fin] Nc[fin] Sp[fin] +c 1c ) ) $=
       ( va vx cvv wcel cspfin cncfin wceq wrex csn c1c cin cssetk cins2k cins3k
@@ -39236,7 +39235,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $( The universe is infinite.  Theorem X.1.63 of [Rosser] p. 536. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     vinf $p |- -. _V e. Fin $=
       ( cvv cfin wcel cspfin cncfin noel cevenfin coddfin cin cnnc wne vfinncsp
       c0 wa adantr adantl eqnetrrd syl2anc eqeltrd ex cun csn spfinex ncfinprop
@@ -39255,7 +39254,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d n m x a $.
     $( The empty class is not a natural.  Theorem X.1.65 of [Rosser]
        p. 536. 
-       (Contributed by ?who?, 20-Jan-2015.) $)
+       (Contributed by SF, 20-Jan-2015.) $)
     nulnnn $p |- -. (/) e. Nn $=
       ( vx vn vm va c0 cnnc wcel cv wceq wne c0c csn ccompl cab cvv df-ne neeq1
       wn wa ex wrex c1c cplc complab df-sn compleqi abbii 3eqtr4i snex eqeltrri
@@ -39275,7 +39274,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   $( The successor operation is one-to-one over the finite cardinals.  Theorem
      X.1.66 of [Rosser] p. 537. 
-     (Contributed by ?who?, 20-Jan-2015.) $)
+     (Contributed by SF, 20-Jan-2015.) $)
   peano4 $p |- ( ( M e. Nn /\ N e. Nn /\ ( M +c 1c ) = ( N +c 1c ) ) ->
      M = N ) $=
     ( cnnc wcel c1c cplc wceq w3a wa c0 3simpa simp3 peano2 nulnnn eleq1 mtbiri
@@ -39284,7 +39283,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $( [20-Jan-2015] $)
 
   $( Successor cancellation law for finite cardinals. 
-     (Contributed by ?who?, 3-Feb-2015.) $)
+     (Contributed by SF, 3-Feb-2015.) $)
   suc11nnc $p |- ( ( M e. Nn /\ N e. Nn ) ->
     ( ( M +c 1c ) = ( N +c 1c ) <-> M = N ) ) $=
     ( cnnc wcel wa c1c cplc wceq peano4 3expia addceq1 impbid1 ) ACDZBCDZEAFGBF
@@ -39292,7 +39291,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $( [3-Feb-2015] $)
 
   $( Cancellation law for natural addition. 
-     (Contributed by ?who?, 3-Feb-2015.) $)
+     (Contributed by SF, 3-Feb-2015.) $)
   addccan1 $p |- ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) ->
       ( ( M +c P ) = ( N +c P ) <-> M = N ) ) $=
     ( cnnc wcel w3a cplc c0 wne wceq wb wa nncaddccl nulnnn mtbiri necon2ai syl
@@ -39301,7 +39300,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $( [3-Feb-2015] $)
 
   $( Cancellation law for natural addition. 
-     (Contributed by ?who?, 3-Feb-2015.) $)
+     (Contributed by SF, 3-Feb-2015.) $)
   addccan2 $p |- ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) ->
       ( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
     ( cnnc wcel w3a cplc c0 wne wceq wb wa nncaddccl nulnnn mtbiri necon2ai syl
@@ -39368,7 +39367,7 @@ $)
     $d A x y z $.
     $( Express the phi operator in terms of the Kuratowski set construction
        functions. 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     dfphi2 $p |- Phi A = ( ( (
        Image_k
       ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
@@ -39398,7 +39397,7 @@ $)
   $}
 
   $( Equality law for the Phi operation. 
-     (Contributed by ?who?, 3-Feb-2015.) $)
+     (Contributed by SF, 3-Feb-2015.) $)
   phieq $p |- ( A = B -> Phi A = Phi B ) $=
     ( wceq cssetk cins3k cins2k cin c1c cpw1 cimak ccompl csik cun csymdif cdif
     cnnc cvv cxpk cphi dfphi2 cimagek cidk imakeq2 3eqtr4g ) ABCDEZDFZGHIIZJKEU
@@ -39406,7 +39405,7 @@ $)
     $( [3-Feb-2015] $)
 
   $( The phi operator preserves sethood. 
-     (Contributed by ?who?, 3-Feb-2015.) $)
+     (Contributed by SF, 3-Feb-2015.) $)
   phiexg $p |- ( A e. V -> Phi A e. _V ) $=
     ( wcel cssetk cins3k cins2k cin c1c cpw1 ccompl csik cun cnnc cvv cxpk cidk
     cimak pw1ex nncex vvex cphi csymdif cdif dfphi2 addcexlem 1cex imakex xpkex
@@ -39418,7 +39417,7 @@ $)
   ${
     phiex.1 $e |- A e. _V $.
     $( The phi operator preserves sethood. 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     phiex $p |- Phi A e. _V $=
       ( cvv wcel cphi phiexg ax-mp ) ACDAECDBACFG $.
       $( [3-Feb-2015] $)
@@ -39428,7 +39427,7 @@ $)
   ${
     $d x y z w t A $.  $d x y z w t B $.
     $( Lemma for ~ dfop2 and ~ dfproj22 . 
-       (Contributed by ?who?, 2-Jan-2015.) $)
+       (Contributed by SF, 2-Jan-2015.) $)
     dfop2lem1 $p |- ( << x , y >> e. ~ ( ( Ins2_k SSet_k (+) Ins3_k ( ( `'_k
         Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k )
         "_k ~P1 ~P1 1c ) \
@@ -39463,7 +39462,7 @@ $)
       $( [2-Jan-2015] $)
 
     $( Lemma for ~ dfop2 
-       (Contributed by ?who?, 2-Jan-2015.) $)
+       (Contributed by SF, 2-Jan-2015.) $)
     dfop2lem2 $p |- ( ~ ( ( Ins2_k SSet_k (+)
      Ins3_k ( ( `'_k Image_k ( ( Image_k
       ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
@@ -39485,7 +39484,7 @@ $)
       $( [2-Jan-2015] $)
 
     $( Express the ordered pair via the set construction functors. 
-       (Contributed by ?who?, 2-Jan-2015.) $)
+       (Contributed by SF, 2-Jan-2015.) $)
     dfop2 $p |- <. A , B >. =
        ( ( Image_k ( ( Image_k
       ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
@@ -39520,7 +39519,7 @@ $)
     $d x y A $.
     $( Express the first projection operator via the set construction
        functors. 
-       (Contributed by ?who?, 2-Jan-2015.) $)
+       (Contributed by SF, 2-Jan-2015.) $)
     dfproj12 $p |- Proj1 A =
      ( `'_k Image_k ( ( Image_k
       ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
@@ -39542,7 +39541,7 @@ $)
 
     $( Express the second projection operator via the set construction
        functors. 
-       (Contributed by ?who?, 2-Jan-2015.) $)
+       (Contributed by SF, 2-Jan-2015.) $)
     dfproj22 $p |- Proj2 A = ( `'_k ~ ( ( Ins2_k SSet_k (+)
     Ins3_k ( ( `'_k Image_k ( ( Image_k
       ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
@@ -39567,7 +39566,7 @@ $)
 
 
   $( Equality theorem for ordered pairs. 
-     (Contributed by ?who?, 2-Jan-2015.) $)
+     (Contributed by SF, 2-Jan-2015.) $)
   opeq1 $p |- ( A = B -> <. A , C >. = <. B , C >. ) $=
     ( cssetk cins3k cins2k cin cpw1 cimak ccompl csik csymdif cimagek cnnc cxpk
     cun cvv csn cop dfop2 wceq c1c cdif cidk ccnvk ccomk imakeq2 uneq1d 3eqtr4g
@@ -39576,7 +39575,7 @@ $)
     $( [2-Jan-2015] $)
 
   $( Equality theorem for ordered pairs. 
-     (Contributed by ?who?, 2-Jan-2015.) $)
+     (Contributed by SF, 2-Jan-2015.) $)
   opeq2 $p |- ( A = B -> <. C , A >. = <. C , B >. ) $=
     ( cssetk cins3k cins2k cin cpw1 cimak ccompl csik csymdif cimagek cnnc cxpk
     cun cvv csn cop dfop2 wceq c1c cdif cidk ccnvk ccomk imakeq2 uneq2d 3eqtr4g
@@ -39585,7 +39584,7 @@ $)
     $( [2-Jan-2015] $)
 
   $( Equality theorem for ordered pairs. 
-     (Contributed by ?who?, 2-Jan-2015.) $)
+     (Contributed by SF, 2-Jan-2015.) $)
   opeq12 $p |- ( ( A = B /\ C = D ) -> <. A , C >. = <. B , D >. ) $=
     ( wceq cop opeq1 opeq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
     $( [2-Jan-2015] $)
@@ -39594,13 +39593,13 @@ $)
   ${
     opeq1i.1 $e |- A = B $.
     $( Equality inference for ordered pairs. 
-       (Contributed by ?who?, 16-Dec-2006.) $)
+       (Contributed by SF, 16-Dec-2006.) $)
     opeq1i $p |- <. A , C >. = <. B , C >. $=
       ( wceq cop opeq1 ax-mp ) ABEACFBCFEDABCGH $.
       $( [16-Dec-2006] $)
 
     $( Equality inference for ordered pairs. 
-       (Contributed by ?who?, 16-Dec-2006.) $)
+       (Contributed by SF, 16-Dec-2006.) $)
     opeq2i $p |- <. C , A >. = <. C , B >. $=
       ( wceq cop opeq2 ax-mp ) ABECAFCBFEDABCGH $.
       $( [16-Dec-2006] $)
@@ -39609,7 +39608,7 @@ $)
       opeq12i.2 $e |- C = D $.
       $( Equality inference for ordered pairs.  (The proof was shortened by
          Eric Schmidt, 4-Apr-2007.) 
-         (Contributed by ?who?, 16-Dec-2006.) $)
+         (Contributed by SF, 16-Dec-2006.) $)
       opeq12i $p |- <. A , C >. = <. B , D >. $=
         ( cop opeq1i opeq2i eqtri ) ACGBCGBDGABCEHCDBFIJ $.
         $( [16-Dec-2006] $)
@@ -39619,13 +39618,13 @@ $)
   ${
     opeq1d.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for ordered pairs. 
-       (Contributed by ?who?, 16-Dec-2006.) $)
+       (Contributed by SF, 16-Dec-2006.) $)
     opeq1d $p |- ( ph -> <. A , C >. = <. B , C >. ) $=
       ( wceq cop opeq1 syl ) ABCFBDGCDGFEBCDHI $.
       $( [16-Dec-2006] $)
 
     $( Equality deduction for ordered pairs. 
-       (Contributed by ?who?, 16-Dec-2006.) $)
+       (Contributed by SF, 16-Dec-2006.) $)
     opeq2d $p |- ( ph -> <. C , A >. = <. C , B >. ) $=
       ( wceq cop opeq2 syl ) ABCFDBGDCGFEBCDHI $.
       $( [16-Dec-2006] $)
@@ -39634,8 +39633,8 @@ $)
       opeq12d.2 $e |- ( ph -> C = D ) $.
       $( Equality deduction for ordered pairs.  (The proof was shortened by
          Andrew Salmon, 29-Jun-2011.) 
-         (Contributed by ?who?, 16-Dec-2006.) 
-         (Revised by ?who?, 29-Jun-2011.) $)
+         (Contributed by SF, 16-Dec-2006.) 
+         (Revised by SF, 29-Jun-2011.) $)
       opeq12d $p |- ( ph -> <. A , C >. = <. B , D >. ) $=
         ( cop opeq1d opeq2d eqtrd ) ABDHCDHCEHABCDFIADECGJK $.
         $( [29-Jun-2011] $) $( [16-Dec-2006] $)
@@ -39644,7 +39643,7 @@ $)
 
 
   $( An ordered pair of two sets is a set. 
-     (Contributed by ?who?, 2-Jan-2015.) $)
+     (Contributed by SF, 2-Jan-2015.) $)
   opexg $p |- ( ( A e. V /\ B e. W ) -> <. A , B >. e. _V ) $=
     ( wcel cssetk cins3k cins2k cin c1c cpw1 ccompl csik cun cnnc cvv cxpk vvex
     cimak xpkex wa cop csymdif cdif cimagek ccnvk ccomk c0c csn dfop2 addcexlem
@@ -39661,14 +39660,14 @@ $)
     opex.1 $e |- A e. _V $.
     opex.2 $e |- B e. _V $.
     $( An ordered pair of two sets is a set. 
-       (Contributed by ?who?, 5-Jan-2015.) $)
+       (Contributed by SF, 5-Jan-2015.) $)
     opex $p |- <. A , B >. e. _V $=
       ( cvv wcel cop opexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [5-Jan-2015] $)
   $}
 
   $( Equality theorem for first projection operator. 
-     (Contributed by ?who?, 2-Jan-2015.) $)
+     (Contributed by SF, 2-Jan-2015.) $)
   proj1eq $p |- ( A = B -> Proj1 A = Proj1 B ) $=
     ( wceq cssetk cins3k cins2k cin c1c cpw1 cimak ccompl csik cun csymdif cnnc
     cimagek cvv cxpk cproj1 dfproj12 cdif cidk ccnvk imakeq2 3eqtr4g ) ABCDEZDF
@@ -39676,7 +39675,7 @@ $)
     $( [2-Jan-2015] $)
 
   $( Equality theorem for second projection operator. 
-     (Contributed by ?who?, 2-Jan-2015.) $)
+     (Contributed by SF, 2-Jan-2015.) $)
   proj2eq $p |- ( A = B -> Proj2 A = Proj2 B ) $=
     ( cssetk cins2k cins3k cin cpw1 cimak ccompl csik csymdif cimagek cnnc cxpk
     cun cvv ccnvk csn cproj2 dfproj22 wceq c1c cdif cidk ccomk imakeq2 3eqtr4g
@@ -39685,7 +39684,7 @@ $)
     $( [2-Jan-2015] $)
 
   $( The first projection of a set is a set. 
-     (Contributed by ?who?, 2-Jan-2015.) $)
+     (Contributed by SF, 2-Jan-2015.) $)
   proj1exg $p |- ( A e. V -> Proj1 A e. _V ) $=
     ( wcel cssetk cins3k cins2k cin c1c cpw1 cimak ccompl csik cun cimagek cnnc
     cvv cxpk cidk pw1ex imagekex cproj1 csymdif ccnvk dfproj12 addcexlem imakex
@@ -39696,7 +39695,7 @@ $)
     $( [2-Jan-2015] $)
 
   $( The second projection of a set is a set. 
-     (Contributed by ?who?, 2-Jan-2015.) $)
+     (Contributed by SF, 2-Jan-2015.) $)
   proj2exg $p |- ( A e. V -> Proj2 A e. _V ) $=
     ( wcel cssetk cins2k cins3k cin c1c cpw1 cimak ccompl csik cun csymdif cnnc
     cimagek cvv cxpk vvex xpkex cproj2 cdif cidk ccnvk c0c csn dfproj22 ssetkex
@@ -39711,7 +39710,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.
     $( Lemma for ~ phi11 . 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     phi11lem1 $p |- ( Phi A = Phi B -> A C_ B ) $=
       ( vz vy vx cphi wceq cv wcel cnnc wi wa wrex eqeq2d rexbidv elab2 biimpac
       c1c syl5 syl cplc cif iftrue eqcomd weq eleq1 addceq1 id ifbieq12d sylan2
@@ -39736,7 +39735,7 @@ $)
   $}
 
   $( The phi operator is one-to-one.  Theorem X.2.2 of [Rosser] p. 282. 
-     (Contributed by ?who?, 3-Feb-2015.) $)
+     (Contributed by SF, 3-Feb-2015.) $)
   phi11 $p |- ( A = B <-> Phi A = Phi B ) $=
     ( wceq cphi phieq phi11lem1 wss eqcoms eqssd impbii ) ABCADZBDZCZABEMABABFB
     AGLKBAFHIJ $.
@@ -39746,7 +39745,7 @@ $)
     $d A x y $.
     $( Cardinal zero is not a member of a phi operation.  Theorem X.2.3 of
        [Rosser] p. 282. 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     0cnelphi $p |- -. 0c e. Phi A $=
       ( vy vx c0c cphi wcel cv cnnc c1c cplc cif wceq wrex wn 0cnsuc df-ne mpbi
       wne wa eqeq2d iffalse biimpac peano1 syl6eqelr iftrue eqcom syl6bb biimpd
@@ -39760,7 +39759,7 @@ $)
   ${
     $d A z $.  $d B z $.
     $( Lemma for ~ phi011 . 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     phi011lem1 $p |- ( ( Phi A u. { 0c } ) = ( Phi B u. { 0c } ) ->
       Phi A C_ Phi B ) $=
       ( vz cphi c0c csn wceq cv wcel wn ssun1 sseli eleq2 syl5ib 0cnelphi eleq1
@@ -39773,7 +39772,7 @@ $)
 
   $( ` ( Phi A u. { 0c } ) ` is one-to-one.  Theorem X.2.4 of [Rosser]
      p. 282. 
-     (Contributed by ?who?, 3-Feb-2015.) $)
+     (Contributed by SF, 3-Feb-2015.) $)
   phi011 $p |- ( A = B <-> ( Phi A u. { 0c } ) = ( Phi B u. { 0c } ) ) $=
     ( wceq cphi c0c csn cun phi11 uneq1 phi011lem1 eqcoms eqssd impbii bitri
     wss ) ABCADZBDZCZPEFZGZQSGZCZABHRUBPQSIUBPQABJQPOUATBAJKLMN $.
@@ -39783,7 +39782,7 @@ $)
     $d A x y z $.  $d B x y z $.
     $( The first projection operator applied to an ordered pair yields its
        first member.  Theorem X.2.7 of [Rosser] p. 282. 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     proj1op $p |- Proj1 <. A , B >. = A $=
       ( vz vy vx cop cproj1 cv cphi wcel c0c cun wceq wrex wo cab eqeq1 rexbidv
       weq elab csn df-op eleq2i phiex phi11 equcom bitr3i syl6bb risset syl6bbr
@@ -39801,7 +39800,7 @@ $)
     $d A x y z $.  $d B x y z $.
     $( The second projection operator applied to an ordered pair yields its
        second member.  Theorem X.2.8 of [Rosser] p. 283. 
-       (Contributed by ?who?, 3-Feb-2015.) $)
+       (Contributed by SF, 3-Feb-2015.) $)
     proj2op $p |- Proj2 <. A , B >. = B $=
       ( vz vy vx cv cphi c0c cun wcel wceq wrex wo cab rexbidv elab weq 3bitr4i
       eqeq1 bitri cop cproj2 csn df-op eleq2i elun vex phiex snex phi011 equcom
@@ -39819,7 +39818,7 @@ $)
 
   $( The ordered pair theorem.  Two ordered pairs are equal iff their
      components are equal. 
-     (Contributed by ?who?, 2-Jan-2015.) $)
+     (Contributed by SF, 2-Jan-2015.) $)
   opth $p |- ( <. A , B >. = <. C , D >. <-> ( A = C /\ B = D ) ) $=
     ( cop wceq cproj1 proj1eq proj1op 3eqtr3g cproj2 proj2eq proj2op jca opeq12
     wa impbii ) ABEZCDEZFZACFZBDFZPTUAUBTRGSGACRSHABICDIJTRKSKBDRSLABMCDMJNACBD
@@ -39827,7 +39826,7 @@ $)
     $( [2-Jan-2015] $)
 
   $( An ordered pair is a set iff its components are sets. 
-     (Contributed by ?who?, 2-Jan-2015.) $)
+     (Contributed by SF, 2-Jan-2015.) $)
   opexb $p |- ( <. A , B >. e. _V <-> ( A e. _V /\ B e. _V ) ) $=
     ( cop cvv wcel wa cproj1 proj1op proj1exg syl5eqelr cproj2 proj2op proj2exg
     jca opexg impbii ) ABCZDEZADEZBDEZFRSTRAQGDABHQDIJRBQKDABLQDMJNABDDOP $.
@@ -39839,7 +39838,7 @@ $)
     hbop.1 $e |- ( y e. A -> A. x y e. A ) $.
     hbop.2 $e |- ( y e. B -> A. x y e. B ) $.
     $( Bound-variable hypothesis builder for ordered pairs. 
-       (Contributed by ?who?, 14-Nov-1995.) $)
+       (Contributed by NM, 14-Nov-1995.) $)
     hbop $p |- ( y e. <. A , B >. -> A. x y e. <. A , B >. ) $=
       ( vz vw cop cv cphi wceq wrex cab cun wel ax-17 hbel hbrex hbab c0c df-op
       csn wcel hbeq hbun hbxfreq ) ABCDIGJZHJZKZLZHCMZGNZUHUJUAUCOZLZHDMZGNZOGH
@@ -40000,7 +39999,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( The phi operation distributes over union. 
-       (Contributed by ?who?, 20-Feb-2015.) $)
+       (Contributed by SF, 20-Feb-2015.) $)
     phiun $p |- Phi ( A u. B ) = ( Phi A u. Phi B ) $=
       ( vx vy cv cnnc wcel c1c cplc cif wceq cun wrex cab wo rexun abbii df-phi
       cphi uneq12i unab eqtri 3eqtr4i ) CEDEZFGUDHIUDJKZDABLZMZCNUEDAMZUEDBMZOZ
@@ -40010,7 +40009,7 @@ $)
 
     $( The phi operation applied to a set disjoint from the naturals has no
        effect. 
-       (Contributed by ?who?, 20-Feb-2015.) $)
+       (Contributed by SF, 20-Feb-2015.) $)
     phidisjnn $p |- ( ( A i^i Nn ) = (/) -> Phi A = A ) $=
       ( vx vy cnnc cin c0 wceq cv wcel c1c cplc cif wrex wb wal cphi wa syl6bbr
       weq wn wral disj biimpi r19.21bi iffalse syl eqeq2d equcom risset alrimiv
@@ -41140,7 +41139,7 @@ $)
   ${
     $d A x y z w $.
     $( Membership in ` 1st ` . 
-       (Contributed by ?who?, 5-Jan-2015.) $)
+       (Contributed by SF, 5-Jan-2015.) $)
     el1st $p |- ( A e. 1st <-> E. x E. y A = <. <. x , y >. , x >. ) $=
       ( vz c1st wcel cv cop wceq wex wa copab df-1st eleq2i bitri excom exancom
       elopab vex exbii opex opeq1 eqeq2d ceqsexv exdistr 3bitr3ri ) CEFZCDGZAGZ
@@ -41153,7 +41152,7 @@ $)
   ${
     $d A x y z w $.  $d B x y z w $.  $d C x y z w $.
     $( The binary relationship over the ` 1st ` function. 
-       (Contributed by ?who?, 5-Jan-2015.) $)
+       (Contributed by SF, 5-Jan-2015.) $)
     br1stg $p |- ( ( A e. V /\ B e. W ) ->
        ( <. A , B >. 1st C <-> A = C ) ) $=
       ( vz vw vx vy cv cop c1st wbr wceq wb breq1d eqeq1 wex wa bitri opeq1 weq
@@ -41171,7 +41170,7 @@ $)
     setconslem1.1 $e |- A e. _V $.
     setconslem1.2 $e |- B e. _V $.
     $( Lemma for the set construction theorems. 
-       (Contributed by ?who?, 6-Jan-2015.) $)
+       (Contributed by SF, 6-Jan-2015.) $)
     setconslem1 $p |- ( << { A } , B >> e.
                  ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( (
         Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
@@ -41200,7 +41199,7 @@ $)
       $( [6-Jan-2015] $)
 
     $( Lemma for the set construction theorems. 
-       (Contributed by ?who?, 6-Jan-2015.) $)
+       (Contributed by SF, 6-Jan-2015.) $)
     setconslem2 $p |- ( << { A } , B >> e. ( ( Ins2_k SSet_k i^i
     Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
          Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
@@ -41252,7 +41251,7 @@ $)
     setconslem3.3 $e |- C e. _V $.
     $( Lemma for set construction functions.  Set up a mapping between
        Kuratowski and Quine ordered pairs. 
-       (Contributed by ?who?, 7-Jan-2015.) $)
+       (Contributed by SF, 7-Jan-2015.) $)
     setconslem3 $p |- ( << { { A } } , << B , C >> >> e.
         ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
           Ins2_k
@@ -41303,7 +41302,7 @@ $)
     $d A x y z t $.
     $( Lemma for set construction functions.  Create a mapping between the two
        types of ordered pair abstractions. 
-       (Contributed by ?who?, 7-Jan-2015.) $)
+       (Contributed by SF, 7-Jan-2015.) $)
     setconslem4 $p |- U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
      `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
           Ins2_k
@@ -41352,7 +41351,7 @@ $)
 
   $( Lemma for set construction theorems.  The big expression in the middle of
      ~ setconslem4 forms a set. 
-     (Contributed by ?who?, 7-Jan-2015.) $)
+     (Contributed by SF, 7-Jan-2015.) $)
   setconslem5 $p |- ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
           Ins2_k
             ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
@@ -41393,7 +41392,7 @@ $)
     $d A x y z w t $.
     $( Lemma for the set construction functions.  Invert the expression from
        ~ setconslem4 . 
-       (Contributed by ?who?, 7-Jan-2015.) $)
+       (Contributed by SF, 7-Jan-2015.) $)
     setconslem6 $p |- ( ( ( _V X._k ( _V X._k _V ) ) i^i
      ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
           Ins2_k
@@ -41449,7 +41448,7 @@ $)
     setconslem7.3 $e |- C e. _V $.
     $( Lemma for the set construction theorems.  Reorganized version of
        ~ setconslem3 . 
-       (Contributed by ?who?, 4-Feb-2015.) $)
+       (Contributed by SF, 4-Feb-2015.) $)
     setconslem7 $p |- ( << { { C } } , << A , B >> >> e. ~ ( ( Ins2_k Ins3_k
         SSet_k (+)
         ( Ins2_k Ins2_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k
@@ -41500,7 +41499,7 @@ $)
   ${
     $d x y z w a b c t $.
     $( Express the ` 1st ` function via the set construction functions. 
-       (Contributed by ?who?, 4-Feb-2015.) $)
+       (Contributed by SF, 4-Feb-2015.) $)
     df1st2 $p |- 1st = U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
      `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
           Ins2_k
@@ -41568,7 +41567,7 @@ $)
   $}
 
   $( The ` 1st ` function is a set. 
-     (Contributed by ?who?, 6-Jan-2015.) $)
+     (Contributed by SF, 6-Jan-2015.) $)
   1stex $p |- 1st e. _V $=
     ( cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun csymdif cnnc
     vvex xpkex inex ssetkex ins3kex ins2kex imakex c1st cdif cimagek cidk ccnvk
@@ -41585,7 +41584,7 @@ $)
   ${
     $d A x y z w t $.
     $( Membership in the ` Swap ` function. 
-       (Contributed by ?who?, 6-Jan-2015.) $)
+       (Contributed by SF, 6-Jan-2015.) $)
     elswap $p |- ( A e. Swap <->
             E. x E. y A = <. <. x , y >. , <. y , x >. >. ) $=
       ( vz vw cswap wcel cv cop wceq wex copab df-swap eleq2i bitri 2exbii opex
@@ -41601,7 +41600,7 @@ $)
   ${
     $d x y z w t u v $.
     $( Express the ` Swap ` function via set construction operators. 
-       (Contributed by ?who?, 6-Jan-2015.) $)
+       (Contributed by SF, 6-Jan-2015.) $)
     dfswap2 $p |- Swap = ( ( ~ ( ( Ins2_k Ins2_k SSet_k (+)
        ( ( ( Ins2_k
 ( Ins2_k Ins3_k ( SSet_k o._k
@@ -41736,7 +41735,7 @@ $)
   $}
 
   $( The ` Swap ` function is a set. 
-     (Contributed by ?who?, 6-Jan-2015.) $)
+     (Contributed by SF, 6-Jan-2015.) $)
   swapex $p |- Swap e. _V $=
     ( cssetk cins2k cins3k cin cpw1 cimak ccompl csik cun csymdif ins2kex pw1ex
     cnnc cvv imakex vvex inex unex sikex ins3kex cswap c1c cdif cxpk cidk ccnvk
@@ -41754,7 +41753,7 @@ $)
   ${
     $d x y $.
     $( Express the ` SSet ` relationship via the set construction functors. 
-       (Contributed by ?who?, 7-Jan-2015.) $)
+       (Contributed by SF, 7-Jan-2015.) $)
     dfsset2 $p |- SSet = U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
      `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
           Ins2_k
@@ -41792,7 +41791,7 @@ $)
   $}
 
   $( The subset relationship is a set. 
-     (Contributed by ?who?, 6-Jan-2015.) $)
+     (Contributed by SF, 6-Jan-2015.) $)
   ssetex $p |- SSet e. _V $=
     ( cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun csymdif cnnc
     cimagek ccnvk ccomk csn cuni1 vvex xpkex csset c1c cdif dfsset2 setconslem5
@@ -41804,7 +41803,7 @@ $)
   ${
     $d A x y z t w $.  $d B x y z t w $.
     $( Express the image functor in terms of the set construction functions. 
-       (Contributed by ?who?, 7-Jan-2015.) $)
+       (Contributed by SF, 7-Jan-2015.) $)
     dfima2 $p |- ( A " B ) =
       ( ( ( ( _V X._k ( _V X._k _V ) ) i^i
      ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
@@ -41845,7 +41844,7 @@ $)
   $}
 
   $( The image of a set under a set is a set. 
-     (Contributed by ?who?, 7-Jan-2015.) $)
+     (Contributed by SF, 7-Jan-2015.) $)
   imaexg $p |- ( ( A e. V /\ B e. W ) -> ( A " B ) e. _V ) $=
     ( wcel cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun csymdif
     cimagek cnnc vvex wa cima c1c cdif cidk ccnvk ccomk c0c dfima2 pw1exg xpkex
@@ -41859,7 +41858,7 @@ $)
     imaex.1 $e |- A e. _V $.
     imaex.2 $e |- B e. _V $.
     $( The image of a set under a set is a set. 
-       (Contributed by ?who?, 7-Jan-2015.) $)
+       (Contributed by SF, 7-Jan-2015.) $)
     imaex $p |- ( A " B ) e. _V $=
       ( cvv wcel cima imaexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [7-Jan-2015] $)
@@ -41868,7 +41867,7 @@ $)
   ${
     $d A a b c x y z $.  $d B a b c x y z $.
     $( Express Quine composition via Kuratowski composition. 
-       (Contributed by ?who?, 7-Jan-2015.) $)
+       (Contributed by SF, 7-Jan-2015.) $)
     dfco1 $p |- ( A o. B ) =
 U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
      `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
@@ -41967,7 +41966,7 @@ o._k
   $}
 
   $( The composition of two sets is a set. 
-     (Contributed by ?who?, 7-Jan-2015.) $)
+     (Contributed by SF, 7-Jan-2015.) $)
   coexg $p |- ( ( A e. V /\ B e. W ) -> ( A o. B ) e. _V ) $=
     ( wcel cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun csymdif
     ccomk vvex pw1exg ccom c1c cdif cimagek cnnc cidk ccnvk c0c csn cuni1 dfco1
@@ -41984,7 +41983,7 @@ o._k
     coex.1 $e |- A e. _V $.
     coex.2 $e |- B e. _V $.
     $( The composition of two sets is a set. 
-       (Contributed by ?who?, 7-Jan-2015.) $)
+       (Contributed by SF, 7-Jan-2015.) $)
     coex $p |- ( A o. B ) e. _V $=
       ( cvv wcel ccom coexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [7-Jan-2015] $)
@@ -41993,7 +41992,7 @@ o._k
   ${
     $d A x y z w a b c $.
     $( Express singleton image in terms of the Kuratowski singleton image. 
-       (Contributed by ?who?, 7-Jan-2015.) $)
+       (Contributed by SF, 7-Jan-2015.) $)
     dfsi2 $p |- SI A =
 U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
      `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
@@ -42064,7 +42063,7 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
   $}
 
   $( The singleton image of a set is a set. 
-     (Contributed by ?who?, 7-Jan-2015.) $)
+     (Contributed by SF, 7-Jan-2015.) $)
   siexg $p |- ( A e. V -> SI A e. _V ) $=
     ( wcel cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun csymdif
     cimagek cnnc vvex xpkex 3syl csi c1c cdif cidk ccnvk ccomk c0c cuni1 pw1exg
@@ -42078,7 +42077,7 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
   ${
     siex.1 $e |- A e. _V $.
     $( The singleton image of a set is a set. 
-       (Contributed by ?who?, 7-Jan-2015.) $)
+       (Contributed by SF, 7-Jan-2015.) $)
     siex $p |- SI A e. _V $=
       ( cvv wcel csi siexg ax-mp ) ACDAECDBACFG $.
       $( [7-Jan-2015] $)
@@ -42087,7 +42086,7 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
   ${
     $d x y A $.  $d x y B $.  $d x y C $.
     $( Membership in an image.  Theorem 34 of [Suppes] p. 65. 
-       (Contributed by ?who?, 19-Apr-2004.) $)
+       (Contributed by SF, 19-Apr-2004.) $)
     elima $p |- ( A e. ( B " C ) <-> E. x e. C x B A ) $=
       ( vy cima wcel cvv wbr wrex elex brex simprd rexlimivw wceq breq2 rexbidv
       cv df-ima elab2g pm5.21nii ) BCDFZGBHGZARZBCIZADJZBUBKUEUCADUEUDHGUCUDBCL
@@ -42095,14 +42094,14 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
       $( [19-Apr-2004] $)
 
     $( Membership in an image.  Theorem 34 of [Suppes] p. 65. 
-       (Contributed by ?who?, 11-Aug-2004.) $)
+       (Contributed by SF, 11-Aug-2004.) $)
     elima2 $p |- ( A e. ( B " C ) <-> E. x ( x e. C /\ x B A ) ) $=
       ( cima wcel cv wbr wrex wa wex elima df-rex bitri ) BCDEFAGZBCHZADIODFPJA
       KABCDLPADMN $.
       $( [11-Aug-2004] $)
 
     $( Membership in an image.  Theorem 34 of [Suppes] p. 65. 
-       (Contributed by ?who?, 14-Aug-1994.) $)
+       (Contributed by SF, 14-Aug-1994.) $)
     elima3 $p |- ( A e. ( B " C ) <-> E. x ( x e. C /\ <. x , A >. e. B ) ) $=
       ( cima wcel cv cop wrex wa wex wbr elima df-br rexbii bitri df-rex ) BCDE
       FZAGZBHCFZADIZSDFTJAKRSBCLZADIUAABCDMUBTADSBCNOPTADQP $.
@@ -42112,7 +42111,7 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
   ${
     $d A x y $.  $d B x y $.
     $( Binary relationship form of the subset relationship. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     brssetg $p |- ( ( A e. V /\ B e. W ) -> ( A SSet B <-> A C_ B ) ) $=
       ( vx vy cv wss csset sseq1 sseq2 df-sset brabg ) EGZFGZHAOHABHEFABCDINAOJ
       OBAKEFLM $.
@@ -42123,7 +42122,7 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
     brsset.1 $e |- A e. _V $.
     brsset.2 $e |- B e. _V $.
     $( Binary relationship form of the subset relationship. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     brsset $p |- ( A SSet B <-> A C_ B ) $=
       ( cvv wcel csset wbr wss wb brssetg mp2an ) AEFBEFABGHABIJCDABEEKL $.
       $( [11-Feb-2015] $)
@@ -42133,14 +42132,14 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
     brssetsn.1 $e |- A e. _V $.
     brssetsn.2 $e |- B e. _V $.
     $( Set membership in terms of the subset relationship. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     brssetsn $p |- ( { A } SSet B <-> A e. B ) $=
       ( csn csset wbr wss wcel snex brsset snss bitr4i ) AEZBFGNBHABINBAJDKABCL
       M $.
       $( [11-Feb-2015] $)
 
     $( Set membership in terms of the subset relationship. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     opelssetsn $p |- ( <. { A } , B >. e. SSet <-> A e. B ) $=
       ( csn cop csset wcel wbr df-br brssetsn bitr3i ) AEZBFGHMBGIABHMBGJABCDKL
       $.
@@ -42153,7 +42152,7 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
     $d w z $.  $d x y $.  $d x z $.  $d y z $.
 
     $( Binary relationship over a singleton image. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     brsi $p |- ( A SI R B <->
           E. x E. y ( A = { x } /\ B = { y } /\ x R y ) ) $=
       ( vz vw wbr cvv wcel wa cv csn wceq w3a wex snex eleq1 eqeq1 2exbidv brex
@@ -54694,7 +54693,7 @@ $)
     brsnsi.1 $e |- A e. _V $.
     brsnsi.2 $e |- B e. _V $.
     $( Binary relationship of singletons in a singleton image. 
-       (Contributed by ?who?, 9-Feb-2015.) $)
+       (Contributed by SF, 9-Feb-2015.) $)
     brsnsi $p |- ( { A } SI R { B } <-> A R B ) $=
       ( vx vy vz vw csn wbr cv wceq w3a wex snex eqeq1 eqcom vex bitri csi brab
       sneqb syl6bb 3anbi1d 2exbidv 3anbi2d df-si breq1 breq2 ceqsex2v ) AJZBJZC
@@ -54705,7 +54704,7 @@ $)
       $( [9-Feb-2015] $)
 
     $( Ordered pair membership of singletons in a singleton image. 
-       (Contributed by ?who?, 9-Feb-2015.) $)
+       (Contributed by SF, 9-Feb-2015.) $)
     opsnelsi $p |- ( <. { A } , { B } >. e. SI R <-> <. A , B >. e. R ) $=
       ( csn csi wbr cop wcel brsnsi df-br 3bitr3i ) AFZBFZCGZHABCHNOIPJABICJABC
       DEKNOPLABCLM $.
@@ -54718,7 +54717,7 @@ $)
     brsnsi1.1 $e |- A e. _V $.
     $( Binary relationship of a singleton to an arbitrary set in a singleton
        image. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     brsnsi1 $p |- ( { A } SI R B <-> E. x ( B = { x } /\ A R x ) ) $=
       ( vy csn csi wbr cv wceq w3a wex wa brsi excom eqcom vex bitri exbii
       sneqb 3anbi1i 3anass breq1 anbi2d ceqsexv ) BGZCDHIUGFJZGZKZCAJZGKZUHUKDI
@@ -54729,7 +54728,7 @@ $)
 
     $( Binary relationship of an arbitrary set to a singleton in a singleton
        image. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     brsnsi2 $p |- ( B SI R { A } <-> E. x ( B = { x } /\ x R A ) ) $=
       ( vy csn csi wbr cv wceq w3a wex wa brsi 3anass exbii 19.42v sneqb bitri
       eqcom anbi1i breq2 ceqsexv anbi2i ) CBGZDHICAJZGKZUFFJZGKZUGUIDIZLZFMZAMU
@@ -54745,7 +54744,7 @@ $)
     brco1st.1 $e |- A e. _V $.
     brco1st.2 $e |- B e. _V $.
     $( Binary relationship of composition with ` 1st ` . 
-       (Contributed by ?who?, 9-Feb-2015.) $)
+       (Contributed by SF, 9-Feb-2015.) $)
     brco1st $p |- ( <. A , B >. ( R o. 1st ) C <-> A R C ) $=
       ( vx cop c1st ccom wbr cv wa wex wceq brco opbr1st eqcom bitri anbi1i
       exbii breq1 ceqsexv 3bitri ) ABHZCDIJKUEGLZIKZUFCDKZMZGNUFAOZUHMZGNACDKZG
@@ -54753,7 +54752,7 @@ $)
       $( [9-Feb-2015] $)
 
     $( Binary relationship of composition with ` 2nd ` . 
-       (Contributed by ?who?, 9-Feb-2015.) $)
+       (Contributed by SF, 9-Feb-2015.) $)
     brco2nd $p |- ( <. A , B >. ( R o. 2nd ) C <-> B R C ) $=
       ( vx cop c2nd ccom wbr cv wa wex wceq brco opbr2nd eqcom bitri anbi1i
       exbii breq1 ceqsexv 3bitri ) ABHZCDIJKUEGLZIKZUFCDKZMZGNUFBOZUHMZGNBCDKZG
@@ -54767,7 +54766,7 @@ $)
     $d t x $.  $d t y $.  $d t z $.  $d x y $.  $d x z $.  $d y z $.
 
     $( Trinary relationship over a tail cross product. 
-       (Contributed by ?who?, 13-Feb-2015.) $)
+       (Contributed by SF, 13-Feb-2015.) $)
     trtxp $p |- ( A ( R (x) S ) <. B , C >. <-> ( A R B /\ A S C ) ) $=
       ( vy vz vt cop wbr cvv wcel wa brex wb cv breq2 wex weq 3bitri ctxp opexb
       vx anbi2i sylib anim12i anandi sylibr wi wceq breq1 anbi12d bibi12d opeq1
@@ -54788,7 +54787,7 @@ $)
   $}
 
   $( Ordered triple membership in a tail cross product. 
-     (Contributed by ?who?, 13-Feb-2015.) $)
+     (Contributed by SF, 13-Feb-2015.) $)
   oteltxp $p |- ( <. A , <. B , C >. >. e. ( R (x) S ) <->
        ( <. A , B >. e. R /\ <. A , C >. e. S ) ) $=
     ( cop ctxp wbr wa wcel trtxp df-br anbi12i 3bitr3i ) ABCFZDEGZHABDHZACEHZIA
@@ -54800,7 +54799,7 @@ $)
     $d S y $.  $d B w $.  $d B z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.
     $d x z $.  $d y z $.
     $( Binary relationship over a tail cross product. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     brtxp $p |- ( A ( R (x) S ) B <->
        E. x E. y ( B = <. x , y >. /\ A R x /\ A S y ) ) $=
       ( vz vw wbr cv c1st ccnv wa c2nd wex cop wceq ccom bitri weq ctxp w3a cin
@@ -54819,7 +54818,7 @@ $)
   $}
 
   $( The tail cross product of two sets is a set. 
-     (Contributed by ?who?, 9-Feb-2015.) $)
+     (Contributed by SF, 9-Feb-2015.) $)
   txpexg $p |- ( ( A e. V /\ B e. W ) -> ( A (x) B ) e. _V ) $=
     ( wcel ctxp c1st ccnv ccom c2nd cin cvv df-txp 1stex cnvex coexg mpan 2ndex
     wa inexg syl2an syl5eqel ) ACEZBDEZSABFGHZAIZJHZBIZKZLABMUCUFLEZUHLEZUILEUD
@@ -54830,14 +54829,14 @@ $)
     txpex.1 $e |- A e. _V $.
     txpex.2 $e |- B e. _V $.
     $( The tail cross product of two sets is a set. 
-       (Contributed by ?who?, 9-Feb-2015.) $)
+       (Contributed by SF, 9-Feb-2015.) $)
     txpex $p |- ( A (x) B ) e. _V $=
       ( cvv wcel ctxp txpexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [9-Feb-2015] $)
   $}
 
   $( A tail cross product is a relationship. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   reltxp $p |- Rel ( A (x) B ) $=
     ( ctxp wrel c1st ccnv ccom c2nd cin wss inss1 relco relss mp2 df-txp releqi
     mpbir ) ABCZDEFZAGZHFBGZIZDZUBTJTDUCTUAKSALUBTMNRUBABOPQ $.
@@ -54848,7 +54847,7 @@ $)
     $d B a $.  $d B b $.  $d b x $.  $d B x $.  $d b y $.  $d B y $.  $d C a $.
     $d C b $.  $d C x $.  $d C y $.  $d x y $.
     $( Restriction distributes over tail cross product. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     restxp $p |- ( ( A (x) B ) |` C ) = ( ( A |` C ) (x) ( B |` C ) ) $=
       ( vx vy va vb ctxp cres cv wbr w3a wex 3anass anbi1i bitri 3bitr4i 2exbii
       wa brres relres reltxp cop wceq wcel anandir anbi2i anass brtxp 3anbi123i
@@ -54864,7 +54863,7 @@ $)
   ${
     $d A x y $.  $d R x y $.
     $( Membership in the fixed points of a relationship. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     elfix $p |- ( A e. Fix R <-> A R A ) $=
       ( vx vy cfix wcel cvv wbr elex brex simpld cv eleq1 wceq wb breq12 cid wa
       wex 3bitri anidms cin crn df-fix eleq2i elrn brin ancom ideq anbi1i exbii
@@ -54876,7 +54875,7 @@ $)
   $}
 
   $( The fixed points of a set form a set. 
-     (Contributed by ?who?, 11-Feb-2015.) $)
+     (Contributed by SF, 11-Feb-2015.) $)
   fixexg $p |- ( R e. V -> Fix R e. _V ) $=
     ( wcel cfix cid cin crn cvv df-fix idex inexg mpan2 rnexg syl syl5eqel ) AB
     CZADAEFZGZHAIPQHCZRHCPEHCSJAEBHKLQHMNO $.
@@ -54885,7 +54884,7 @@ $)
   ${
     fixex.1 $e |- R e. _V $.
     $( The fixed points of a set form a set. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     fixex $p |- Fix R e. _V $=
       ( cvv wcel cfix fixexg ax-mp ) ACDAECDBACFG $.
       $( [11-Feb-2015] $)
@@ -54896,7 +54895,7 @@ $)
     op1st2nd.1 $e |- A e. _V $.
     op1st2nd.2 $e |- B e. _V $.
     $( Express equality to an ordered pair via ` 1st ` and ` 2nd ` . 
-       (Contributed by ?who?, 12-Feb-2015.) $)
+       (Contributed by SF, 12-Feb-2015.) $)
     op1st2nd $p |- ( ( C 1st A /\ C 2nd B ) <-> C = <. A , B >. ) $=
       ( vx c1st wbr c2nd wa cop wceq cv wex wi opbr2nd breq1 mpbiri eqid mpbir
       br1st vex biimpi opeq2d eqeq1 imbi12d exlimiv sylbi opbr1st pm3.2i impbii
@@ -54911,7 +54910,7 @@ $)
     $d A x $.  $d B x $.  $d C x $.  $d R x $.
     otelins2.1 $e |- B e. _V $.
     $( Ordered triple membership in ` Ins2 ` . 
-       (Contributed by ?who?, 13-Feb-2015.) $)
+       (Contributed by SF, 13-Feb-2015.) $)
     otelins2 $p |- ( <. A , <. B , C >. >. e. Ins2 R <-> <. A , C >. e. R ) $=
       ( vx cop cins2 wcel cvv elex opexb simplbi syl wceq opeq1 eleq1d vex opex
       cv ctxp wa df-ins2 eleq2i oteltxp bitri mpbiran vtoclbg pm5.21nii ) ABCGZ
@@ -54926,7 +54925,7 @@ $)
     $d A x $.  $d B x $.  $d C x $.  $d R x $.
     otelins3.1 $e |- C e. _V $.
     $( Ordered triple membership in ` Ins3 ` . 
-       (Contributed by ?who?, 13-Feb-2015.) $)
+       (Contributed by SF, 13-Feb-2015.) $)
     otelins3 $p |- ( <. A , <. B , C >. >. e. Ins3 R <-> <. A , B >. e. R ) $=
       ( vx cop cins3 wcel cvv elex opexb simplbi syl wceq opeq1 eleq1d vex opex
       cv ctxp wa df-ins3 eleq2i oteltxp bitri mpbiran2 vtoclbg pm5.21nii ) ABCG
@@ -54942,7 +54941,7 @@ $)
     brimage.1 $e |- A e. _V $.
     brimage.2 $e |- B e. _V $.
     $( Binary relationship over the image function. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     brimage $p |- ( A Image R B <-> B = ( R " A ) ) $=
       ( vx vt vy cop csset wcel wn cv wbr wex bitri wa exbii 3bitri cvv csymdif
       cins2 csi ccnv ccom c1c cima wb wal cimage wceq elima1c elsymdif otelins2
@@ -54969,7 +54968,7 @@ $)
     $d x y $.  $d x z $.  $d y z $.
     oqelins4.4 $e |- D e. _V $.
     $( Ordered quadruple membership in ` Ins4 ` . 
-       (Contributed by ?who?, 13-Feb-2015.) $)
+       (Contributed by SF, 13-Feb-2015.) $)
     oqelins4 $p |- ( <. A , <. B , <. C , D >. >. >. e. Ins4 R
        <-> <. A , <. B , C >. >. e. R ) $=
       ( vx vp vb va cop wcel cvv wa bitri wceq opeq1 c1st wbr wex vy cins4 elex
@@ -55002,14 +55001,14 @@ $)
   $}
 
   $( ` Ins2 ` preserves sethood. 
-     (Contributed by ?who?, 9-Mar-2015.) $)
+     (Contributed by SF, 9-Mar-2015.) $)
   ins2exg $p |- ( A e. V -> Ins2 A e. _V ) $=
     ( wcel cins2 cvv ctxp df-ins2 vvex txpexg mpan syl5eqel ) ABCZADEAFZEAGEECL
     MECHEAEBIJK $.
     $( [9-Mar-2015] $)
 
   $( ` Ins3 ` preserves sethood. 
-     (Contributed by ?who?, 22-Feb-2015.) $)
+     (Contributed by SF, 22-Feb-2015.) $)
   ins3exg $p |- ( A e. V -> Ins3 A e. _V ) $=
     ( wcel cins3 cvv ctxp df-ins3 vvex txpexg mpan2 syl5eqel ) ABCZADAEFZEAGLEE
     CMECHAEBEIJK $.
@@ -55018,19 +55017,19 @@ $)
   ${
     insex.1 $e |- A e. _V $.
     $( ` Ins2 ` preserves sethood. 
-       (Contributed by ?who?, 12-Feb-2015.) $)
+       (Contributed by SF, 12-Feb-2015.) $)
     ins2ex $p |- Ins2 A e. _V $=
       ( cvv wcel cins2 ins2exg ax-mp ) ACDAECDBACFG $.
       $( [12-Feb-2015] $)
 
     $( ` Ins3 ` preserves sethood. 
-       (Contributed by ?who?, 12-Feb-2015.) $)
+       (Contributed by SF, 12-Feb-2015.) $)
     ins3ex $p |- Ins3 A e. _V $=
       ( cvv wcel cins3 ins3exg ax-mp ) ACDAECDBACFG $.
       $( [12-Feb-2015] $)
 
     $( ` Ins4 ` preserves sethood. 
-       (Contributed by ?who?, 12-Feb-2015.) $)
+       (Contributed by SF, 12-Feb-2015.) $)
     ins4ex $p |- Ins4 A e. _V $=
       ( cins4 c1st c2nd ccom ctxp ccnv cima cvv df-ins4 1stex 2ndex txpex cnvex
       coex imaex eqeltri ) ACDDEFZSEFZGZGZHZAIJAKUCAUBDUALSTDELMPZSEUDMPNNOBQR
@@ -55040,7 +55039,7 @@ $)
 
 
   $( The image function of a set is a set. 
-     (Contributed by ?who?, 11-Feb-2015.) $)
+     (Contributed by SF, 11-Feb-2015.) $)
   imageexg $p |- ( A e. V -> Image A e. _V ) $=
     ( wcel cimage cvv cxp csset cins2 csi ccnv ccom cins3 csymdif c1c cima cdif
     vvex ssetex sylancr syl df-image siexg xpex ins2ex cnvexg ins3exg symdifexg
@@ -55052,7 +55051,7 @@ $)
   ${
     imageex.1 $e |- A e. _V $.
     $( The image function of a set is a set. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     imageex $p |- Image A e. _V $=
       ( cvv wcel cimage imageexg ax-mp ) ACDAECDBACFG $.
       $( [11-Feb-2015] $)
@@ -55061,7 +55060,7 @@ $)
   ${
     $d R x y z $.
     $( Subset law for tail cross product. 
-       (Contributed by ?who?, 18-Feb-2015.) $)
+       (Contributed by SF, 18-Feb-2015.) $)
     txpssvvv $p |- ( R (x) S ) C_ ( _V X. ( _V X. _V ) ) $=
       ( vx vy vz ctxp c1st ccnv ccom c2nd cvv cxp cv wbr wex cop opelxp exlimiv
       wcel vex cin df-txp inss1 relco wa wceq brcnv br1st bitri mpbir2an mpbiri
@@ -55078,7 +55077,7 @@ $)
     $d S p $.  $d S x $.  $d S y $.  $d S z $.  $d x y $.  $d x z $.  $d y z $.
     $( The domain of a tail cross product is the intersection of the domains of
        its arguments. 
-       (Contributed by ?who?, 18-Feb-2015.) $)
+       (Contributed by SF, 18-Feb-2015.) $)
     dmtxp $p |- dom ( R (x) S ) = ( dom R i^i dom S ) $=
       ( vx vp vy vz ctxp cdm cin cv wbr wex wa wcel cop exbii bitri bicomi eldm
       vex wceq w3a brtxp exrot3 3anass 19.41v opex isseti biantrur elin anbi12i
@@ -55099,7 +55098,7 @@ $)
     txpcofun.1 $e |- Fun F $.
     $( Composition distributes over tail cross product in the case of a
        function. 
-       (Contributed by ?who?, 18-Feb-2015.) $)
+       (Contributed by SF, 18-Feb-2015.) $)
     txpcofun $p |- ( ( R (x) S ) o. F ) = ( ( R o. F ) (x) ( S o. F ) ) $=
       ( vx vy vz vv vu wceq cv wcel wb cvv wss cdm cop wex wbr wa ctxp ccom cxp
       vt vs wral crn wrel relco relssdmrn ax-mp ssv rncoss txpssvvv rnss rnxpss
@@ -55135,7 +55134,7 @@ $)
     $d G d $.  $d G x $.  $d G y $.  $d G z $.  $d x y $.  $d x z $.  $d y z $.
     $( If ` F ` and ` G ` are functions, then their tail cross product is a
        function over the intersection of their domains. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     fntxp $p |- ( ( F Fn A /\ G Fn B ) -> ( F (x) G ) Fn ( A i^i B ) ) $=
       ( vx vy vz va vb vc vd wfun cdm wceq wa wfn cv wbr wi wex cin weq wal cop
       ctxp w3a anbi12i ee4anv bitr4i 3an6 bicomi fununiq 3expib im2anan9 eqeq12
@@ -55159,7 +55158,7 @@ $)
     otsnelsi3.2 $e |- B e. _V $.
     otsnelsi3.3 $e |- C e. _V $.
     $( Ordered triple membership in triple singleton image. 
-       (Contributed by ?who?, 12-Feb-2015.) $)
+       (Contributed by SF, 12-Feb-2015.) $)
     otsnelsi3 $p |- ( <. { A } , <. { B } , { C } >. >. e. SI_3 R <->
       <. A , <. B , C >. >. e. R ) $=
       ( vp vx csn cop c1st csi c2nd ccom ctxp wcel wa wbr cvv cv wrex wceq csi3
@@ -55180,7 +55179,7 @@ $)
   ${
     si3ex.1 $e |- A e. _V $.
     $( ` SI_3 ` preserves sethood. 
-       (Contributed by ?who?, 12-Feb-2015.) $)
+       (Contributed by SF, 12-Feb-2015.) $)
     si3ex $p |- SI_3 A e. _V $=
       ( csi3 c1st csi c2nd ccom ctxp cpw1 cima cvv df-si3 1stex siex 2ndex coex
       txpex pw1ex imaex eqeltri ) ACDEZDFGZEZFFGZEZHZHZAIZJKALUGUHUAUFDMNUCUEUB
@@ -55193,7 +55192,7 @@ $)
     releqel.1 $e |- T e. _V $.
     releqel.2 $e |- ( <. { y } , T >. e. R <-> y e. A ) $.
     $( Lemma to turn a membership condition into an equality condition. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     releqel $p |- ( <. x , T >. e. ~ ( ( Ins3 SSet (+) Ins2 R ) " 1c ) <->
      x = A ) $=
       ( cv cop csset cins3 cins2 csymdif c1c wcel wn wb wex vex bitri cima wceq
@@ -55209,7 +55208,7 @@ $)
     $d A x y z $.  $d ph z $.
     releqopab.1 $e |- ( <. x , y >. e. A <-> ph ) $.
     $( Equality condition for an ordered pair abstraction. 
-       (Contributed by ?who?, 18-Feb-2015.) $)
+       (Contributed by SF, 18-Feb-2015.) $)
     releqopab $p |- ( ( _V X. _V ) i^i A ) = { <. x , y >. | ph } $=
       ( vz cvv cxp cin cv cop wceq wa wex cab copab wcel elvv anbi1i elin eleq1
       19.41vv 3bitr4i syl6bb pm5.32i 2exbii bitri abbi2i df-opab eqtr4i ) GGHZD
@@ -55224,7 +55223,7 @@ $)
     $d x y $.  $d x z $.  $d y z $.
     releqmpt.1 $e |- ( <. { y } , x >. e. R <-> y e. V ) $.
     $( Equality condition for a mapping. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     releqmpt $p |- ( ( A X. _V ) i^i
       `' ~ ( ( Ins3 SSet (+) Ins2 R ) " 1c ) ) = ( x e. A |-> V ) $=
       ( vz cvv cxp csset cins3 cins2 cin cv wcel wceq wa cop vex bitri c1c cima
@@ -55241,7 +55240,7 @@ $)
     $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
     releqoprab.1 $e |- ( <. <. x , y >. , z >. e. A <-> ph ) $.
     $( Equality condition for an operator abstraction. 
-       (Contributed by ?who?, 13-Feb-2015.) $)
+       (Contributed by SF, 13-Feb-2015.) $)
     releqoprab $p |- ( ( ( _V X. _V ) X. _V ) i^i A ) =
                 { <. <. x , y >. , z >. | ph } $=
       ( vw cvv cxp cin cv cop wceq wa wex cab coprab wcel elvvv anbi1i 19.41vvv
@@ -55258,7 +55257,7 @@ $)
     $d w z $.  $d x y $.  $d x z $.  $d y z $.
     releqmpt2.1 $e |- ( <. { z } , <. x , y >. >. e. R <-> z e. V ) $.
     $( Equality condition for a mapping operation. 
-       (Contributed by ?who?, 13-Feb-2015.) $)
+       (Contributed by SF, 13-Feb-2015.) $)
     releqmpt2 $p |- ( ( ( A X. B ) X. _V ) \
      ( ( Ins2 SSet (+) Ins3 R ) " 1c ) ) = ( x e. A , y e. B |-> V ) $=
       ( vw cxp cvv csset cin cv wcel wa cop vex bitri wn cins2 csymdif c1c cima
@@ -55280,7 +55279,7 @@ $)
     mptexlem.1 $e |- A e. _V $.
     mptexlem.2 $e |- R e. _V $.
     $( Lemma for the existence of a mapping. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     mptexlem $p |- ( ( A X. _V ) i^i
       `' ~ ( ( Ins3 SSet (+) Ins2 R ) " 1c ) ) e. _V $=
       ( cvv cxp csset cins3 cins2 csymdif c1c cima ccompl ccnv vvex xpex ssetex
@@ -55294,7 +55293,7 @@ $)
     mpt2exlem.2 $e |- B e. _V $.
     mpt2exlem.3 $e |- R e. _V $.
     $( Lemma for the existence of a double mapping. 
-       (Contributed by ?who?, 13-Feb-2015.) $)
+       (Contributed by SF, 13-Feb-2015.) $)
     mpt2exlem $p |- ( ( ( A X. B ) X. _V ) \
      ( ( Ins2 SSet (+) Ins3 R ) " 1c ) ) e. _V $=
       ( cxp cvv csset cins2 cins3 csymdif cima xpex vvex ssetex ins2ex symdifex
@@ -55306,7 +55305,7 @@ $)
   ${
     $d A x y $.  $d B y $.
     $( The value of the little cup function. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     cupvalg $p |- ( ( A e. V /\ B e. W ) -> ( A Cup B ) = ( A u. B ) ) $=
       ( vx vy wcel cvv ccup co cun wceq elex unexg uneq1 df-cup ovmpt2g mpd3an3
       cv uneq2 syl2an ) ACGAHGZBHGZABIJABKZLZBDGACMBDMUBUCUDHGUEABHHNEFABHHESZF
@@ -55318,7 +55317,7 @@ $)
     $d x y z $.
     $( The cup function is a function over the cross product of the
        universe. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     fncup $p |- Cup Fn ( _V X. _V ) $=
       ( vx vy vz ccup cvv cxp wfn cv wcel cun wceq coprab copab weu wex wmo vex
       wa unex isset mpbi eu5 mpbir2an a1i fnoprab wb cmpt2 df-cup df-mpt2 eqtri
@@ -55330,7 +55329,7 @@ $)
   $}
 
   $( Binary relationship form of the cup function. 
-     (Contributed by ?who?, 11-Feb-2015.) $)
+     (Contributed by SF, 11-Feb-2015.) $)
   brcupg $p |- ( ( A e. V /\ B e. W ) -> ( <. A , B >. Cup C <-> C = ( A u. B
       ) ) ) $=
     ( wcel cvv cop ccup wbr cun wceq wb elex wa cfv cxp opelxp wfn fncup sylbir
@@ -55344,7 +55343,7 @@ $)
     brcup.1 $e |- A e. _V $.
     brcup.2 $e |- B e. _V $.
     $( Binary relationship form of the cup function. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     brcup $p |- ( <. A , B >. Cup C <-> C = ( A u. B ) ) $=
       ( cvv wcel cop ccup wbr cun wceq wb brcupg mp2an ) AFGBFGABHCIJCABKLMDEAB
       CFFNO $.
@@ -55354,7 +55353,7 @@ $)
   ${
     $d w x y z $.
     $( The little cup function is a set. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     cupex $p |- Cup e. _V $=
       ( vx vy vz ccup cvv cxp csset cins3 cun cv cop wcel wo wel vex opelssetsn
       bitri elun vvex ssetex cins2 c1c cima cdif cmpt2 df-cup otelins3 otelins2
@@ -55369,7 +55368,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( The binary relationship form of the ` Disj ` relationship. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     brdisjg $p |- ( ( A e. V /\ B e. W ) ->
              ( A Disj B <-> ( A i^i B ) = (/) ) ) $=
       ( vx vy cv cin c0 wceq cdisj ineq1 eqeq1d ineq2 df-disj brabg ) EGZFGZHZI
@@ -55381,7 +55380,7 @@ $)
     brdisj.1 $e |- A e. _V $.
     brdisj.2 $e |- B e. _V $.
     $( The binary relationship form of the ` Disj ` relationship. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     brdisj $p |- ( A Disj B <-> ( A i^i B ) = (/) ) $=
       ( cvv wcel cdisj wbr cin c0 wceq wb brdisjg mp2an ) AEFBEFABGHABIJKLCDABE
       EMN $.
@@ -55391,7 +55390,7 @@ $)
   ${
     $d x y z $.
     $( The disjointedness relationship is a set. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     disjex $p |- Disj e. _V $=
       ( vx vy vz cdisj cvv csset c1c cv wceq cop wa wex wcel wn 3bitr4i wel vex
       opelssetsn bitri vvex cxp ctxp cima cdif cin c0 copab cab df-opab df-disj
@@ -55410,7 +55409,7 @@ $)
   ${
     $d x y z w a b p t $.
     $( The cardinal addition function exists. 
-       (Contributed by ?who?, 12-Feb-2015.) $)
+       (Contributed by SF, 12-Feb-2015.) $)
     addcfnex $p |- AddC e. _V $=
       ( vx vy vz va vb vp cvv csset cdisj c1st c2nd ccup cv cop wcel wa wex wbr
       wrex bitri caddcfn cxp cins2 cins3 ccom ctxp cima cin csi3 cins4 c1c cdif
@@ -55452,7 +55451,7 @@ $)
   ${
     $d x y z $.
     $( ` AddC ` is a function over all ordered pairs. 
-       (Contributed by ?who?, 2-Mar-2015.) $)
+       (Contributed by SF, 2-Mar-2015.) $)
     addcfn $p |- AddC Fn ( _V X. _V ) $=
       ( vz vx vy caddcfn cvv cxp wfn wfun cdm wceq cv cplc coprab moeq funoprab
       cmpt2 eqtri copab wcel vex df-addcfn mpt2v funeqi mpbir wex addcex isseti
@@ -55468,7 +55467,7 @@ $)
     braddcfn.1 $e |- A e. _V $.
     braddcfn.2 $e |- B e. _V $.
     $( Binary relationship form of the ` AddC ` function. 
-       (Contributed by ?who?, 2-Mar-2015.) $)
+       (Contributed by SF, 2-Mar-2015.) $)
     braddcfn $p |- ( <. A , B >. AddC C <-> ( A +c B ) = C ) $=
       ( vx vy cop caddcfn wbr cfv wceq cplc cvv cxp wfn wcel wb mp2an cv addcfn
       opelxp mpbir2an fnbrfvb co addceq1 addceq2 df-addcfn addcex ovmpt2 eqtr3i
@@ -55484,7 +55483,7 @@ $)
        ` x e. y ` is not a stratified relationship, then it does not have a
        realization as a set of ordered pairs, but since ` x = x ` is
        stratified, then it does have a realization as a set. 
-       (Contributed by ?who?, 20-Feb-2015.) $)
+       (Contributed by SF, 20-Feb-2015.) $)
     epprc $p |- -. _E e. _V $=
       ( vx cep cvv wcel cv wnel cab wn ru df-nel mpbi cfix ccompl wel wbr elfix
       epel bitri notbii vex elcompl 3bitr4i abbi2i complexg syl syl5eqelr mto
@@ -55496,7 +55495,7 @@ $)
   ${
     $d f x y z p q $.
     $( The class of all functions forms a set. 
-       (Contributed by ?who?, 18-Feb-2015.) $)
+       (Contributed by SF, 18-Feb-2015.) $)
     funsex $p |- Funs e. _V $=
       ( vf vx vy vz vp vq c1st c2nd c1c csset cid cv wcel wn wa wbr df-br bitri
       wex cop cfuns cvv cxp cpw ccnv ctxp csi3 cima cins4 cins2 cin cdif ccompl
@@ -55535,7 +55534,7 @@ $)
     $d F f $.
     elfuns.1 $e |- F e. _V $.
     $( Membership in the set of all functions. 
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     elfuns $p |- ( F e. Funs <-> Fun F ) $=
       ( vf cv wfun cfuns funeq df-funs elab2 ) CDZEAECAFBJAGCHI $.
       $( [23-Feb-2015] $)
@@ -55544,7 +55543,7 @@ $)
   ${
     $d f a $.
     $( The function with domain relationship exists. 
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     fnsex $p |- Fns e. _V $=
       ( vf va cfns cvv cxp cfuns c1st cimage cin wfn copab df-fns wcel wceq vex
       cv wa vvex xpex inex cop wfun cdm opelxp mpbiran2 elfuns wbr cima brimage
@@ -55561,7 +55560,7 @@ $)
     $d A a b f $.  $d F a b f $.
     brfns.1 $e |- F e. _V $.
     $( Binary relationship form of ` Fns ` relationship. 
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     brfns $p |- ( F Fns A <-> F Fn A ) $=
       ( va vf vb cfns wbr cvv wcel wfn brex simprd cdm eqcomd dmexg ax-mp fneq2
       fndm cv syl6eqel breq2 vex fneq1 df-fns brab vtoclbg pm5.21nii ) BAGHZAIJ
@@ -55577,7 +55576,7 @@ $)
     $d S x $.  $d S y $.  $d S z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.
     $d x z $.  $d y z $.
     $( A quadratic relationship over a parallel product. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     qrpprod $p |- ( <. A , B >. PProd ( R , S ) <. C , D >. <->
        ( A R C /\ B S D ) ) $=
       ( vx vy va cop wbr cvv wcel wa wb cv wceq breq1 bibi12d bitri cpprod brex
@@ -55600,7 +55599,7 @@ $)
   $}
 
   $( The parallel product of two sets is a set. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   pprodexg $p |- ( ( A e. V /\ B e. W ) -> PProd ( A , B ) e. _V ) $=
     ( wcel wa cpprod c1st ccom c2nd cvv df-pprod 1stex coexg mpan2 2ndex txpexg
     ctxp syl2an syl5eqel ) ACEZBDEZFABGAHIZBJIZRZKABLUAUCKEZUDKEZUEKEUBUAHKEUFM
@@ -55611,7 +55610,7 @@ $)
     pprodex.1 $e |- A e. _V $.
     pprodex.2 $e |- B e. _V $.
     $( The parallel product of two sets is a set. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     pprodex $p |- PProd ( A , B ) e. _V $=
       ( cvv wcel cpprod pprodexg mp2an ) AEFBEFABGEFCDABEEHI $.
       $( [24-Feb-2015] $)
@@ -55619,7 +55618,7 @@ $)
 
   ${
     $( Parallel product is a relationship. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     relpprod $p |- Rel PProd ( A , B ) $=
       ( cpprod wrel c1st ccom c2nd ctxp reltxp df-pprod releqi mpbir ) ABCZDAEF
       ZBGFZHZDNOIMPABJKL $.
@@ -55632,7 +55631,7 @@ $)
     $d S y $.  $d S z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.
     $d y z $.
     $( Binary relationship over a parallel product. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     brpprod $p |- ( A PProd ( R , S ) B <->
        E. x E. y E. z E. w ( A = <. x , y >. /\ B = <. z , w >. /\
          ( x R z /\ y S w ) ) ) $=
@@ -55656,7 +55655,7 @@ $)
     $d B c $.  $d b d $.  $d B d $.  $d b x $.  $d B x $.  $d b y $.  $d B y $.
     $d c d $.  $d c x $.  $d c y $.  $d d x $.  $d d y $.  $d x y $.
     $( A subset law for parallel product. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     pprodss4v $p |- PProd ( A , B ) C_ ( ( _V X. _V ) X. ( _V X. _V ) ) $=
       ( vx vy va vb vc vd cvv cxp cop wcel wal wceq wbr wex vex opelxp mpbir2an
       cv cpprod wss wi wrel wb relpprod ssrel ax-mp wa w3a brpprod df-br bitr3i
@@ -55675,7 +55674,7 @@ $)
     $d A t $.  $d a u $.  $d A u $.  $d b t $.  $d B t $.  $d b u $.  $d B u $.
     $d c t $.  $d c u $.  $d d t $.  $d d u $.  $d t u $.  $d t x $.  $d u x $.
     $( The domain of a parallel product. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     dmpprod $p |- dom PProd ( A , B ) = ( dom A X. dom B ) $=
       ( va vb vx vc vd vt vu cdm cxp cvv wss cv cop wbr wa wex vex bitri cpprod
       wrel pprodss4v dmss ax-mp dmxpss sstri relxp relss mp2 wceq isseti 19.41v
@@ -55695,7 +55694,7 @@ $)
   $}
 
   $( The converse of a parallel product. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   cnvpprod $p |- `' PProd ( A , B ) = PProd ( `' A , `' B ) $=
     ( c1st ccnv ccom c2nd cin cpprod cnvco wrel wceq cvv wfo wf fof frel dfrel2
     mp2b mpbi eqtri cnvin cxp 1stfo coeq12i coass 3eqtri 2ndfo ineq12i df-pprod
@@ -55707,7 +55706,7 @@ $)
     $( [24-Feb-2015] $)
 
   $( The range of a parallel product. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   rnpprod $p |- ran PProd ( A , B ) = ( ran A X. ran B ) $=
     ( cpprod ccnv cdm cxp cnvpprod dmeqi dmpprod eqtri dfrn4 xpeq12i 3eqtr4i
     crn ) ABCZDZEZADZEZBDZEZFZONANZBNZFQRTCZEUBPUEABGHRTIJOKUCSUDUAAKBKLM $.
@@ -55730,7 +55729,7 @@ $)
     $d g z $.  $d G z $.  $d h x $.  $d h y $.  $d h z $.  $d x y $.  $d x z $.
     $d y z $.
     $( Functionhood law for parallel product. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     fnpprod $p |- ( ( F Fn A /\ G Fn B ) -> PProd ( F , G ) Fn ( A X. B ) ) $=
       ( vy vz va vb vc vd ve vf vg vh wceq wa cv wbr wi wex wfun cdm cpprod cxp
       vx wfn weq wal cop w3a ee4anv 2exbii brpprod anbi12i 3bitr4ri an4 fununiq
@@ -55757,7 +55756,7 @@ $)
   $}
 
   $( The parallel product of two bijections is a bijection. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   f1opprod $p |- ( ( F : A -1-1-onto-> C /\ G : B -1-1-onto-> D ) ->
      PProd ( F , G ) : ( A X. B ) -1-1-onto-> ( C X. D ) ) $=
     ( wfn ccnv wa cpprod cxp wf1o fnpprod cnvpprod fneq1i sylibr anim12i dff1o4
@@ -55769,7 +55768,7 @@ $)
   ${
     $d A x y $.  $d B y $.
     $( The value of the cross product function. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     ovcross $p |- ( ( A e. V /\ B e. W ) -> ( A Cross B ) = ( A X. B ) ) $=
       ( vx vy wcel cvv ccross co cxp wceq xpexg cv xpeq1 xpeq2 df-cross ovmpt2g
       elex mpd3an3 syl2an ) ACGAHGZBHGZABIJABKZLZBDGACSBDSUBUCUDHGUEABHHMEFABHH
@@ -55780,7 +55779,7 @@ $)
   ${
     $d x y z $.
     $( The domain of the cross product function. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     dmcross $p |- dom Cross = ( _V X. _V ) $=
       ( vz vx vy cv cxp wceq wex copab cvv wcel wa ccross cdm vex isseti pm3.2i
       xpex 2th opabbii eqtri coprab cmpt2 df-cross mpt2v dmeqi dmoprab 3eqtr4i
@@ -55789,7 +55788,7 @@ $)
       $( [24-Feb-2015] $)
 
     $( The cross product function is a function over ` ( _V X. _V ) ` 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     fncross $p |- Cross Fn ( _V X. _V ) $=
       ( vz vx vy ccross cvv cxp wfn wfun cdm wceq cv coprab moeq funoprab cmpt2
       df-cross mpt2v eqtri funeqi mpbir dmcross df-fn mpbir2an ) DEEFZGDHZDIUDJ
@@ -55799,7 +55798,7 @@ $)
 
   ${
     $( Binary relationship over the cross product function. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     brcrossg $p |- ( ( A e. V /\ B e. W ) ->
        ( <. A , B >. Cross C <-> C = ( A X. B ) ) ) $=
       ( wcel wa ccross wceq cop wbr cxp cfv eqcom df-ov eqeq1i bitri cvv elex
@@ -55814,7 +55813,7 @@ $)
     brcross.1 $e |- A e. _V $.
     brcross.2 $e |- B e. _V $.
     $( Binary relationship over the cross product function. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     brcross $p |- ( <. A , B >. Cross C <-> C = ( A X. B ) ) $=
       ( cvv wcel cop ccross wbr cxp wceq wb brcrossg mp2an ) AFGBFGABHCIJCABKLM
       DEABCFFNO $.
@@ -55824,7 +55823,7 @@ $)
   ${
     $d a b x y z $.
     $( The function mapping ` x ` and ` y ` to their cross product is a set. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     crossex $p |- Cross e. _V $=
       ( vx vy va vb cvv cxp csset c1st c2nd c1c cv cop wrex wex wa otelins2 vex
       wcel 3bitri wbr ccross cins2 ccnv cin csi3 cins4 cima cins3 csymdif cmpt2
@@ -55851,7 +55850,7 @@ $)
     $d A x $.
     pw1fnval.1 $e |- A e. _V $.
     $( The value of the unit power class function. 
-       (Contributed by ?who?, 25-Feb-2015.) $)
+       (Contributed by SF, 25-Feb-2015.) $)
     pw1fnval $p |- ( Pw1Fn ` { A } ) = ~P1 A $=
       ( vx csn c1c wcel cpw1fn cfv cpw1 wceq snel1c cv unieq unisn syl6eq pw1eq
       cuni syl df-pw1fn pw1ex fvmpt ax-mp ) ADZEFUCGHAIZJABKCUCCLZQZIZUDEGUEUCJ
@@ -55862,7 +55861,7 @@ $)
   ${
     $d x y t $.
     $( The unit power class function is a set. 
-       (Contributed by ?who?, 25-Feb-2015.) $)
+       (Contributed by SF, 25-Feb-2015.) $)
     pw1fnex $p |- Pw1Fn e. _V $=
       ( vx vy vt cpw1fn c1c cvv csset cid cima cv csn cop wcel wex wceq wbr vex
       wa bitri 1cex cxp cins3 ccnv csi ctxp cpw1 cins2 csymdif ccompl cuni cmpt
@@ -55882,7 +55881,7 @@ $)
 
   ${
     $( Functionhood statement for ` Pw1Fn ` 
-       (Contributed by ?who?, 25-Feb-2015.) $)
+       (Contributed by SF, 25-Feb-2015.) $)
     fnpw1fn $p |- Pw1Fn Fn 1c $=
       ( vx cuni cpw1 cvv wcel cpw1fn c1c wfn df-pw1fn fnmpt vex uniex pw1ex a1i
       cv mprg ) AOZBZCZDEZFGHAGAGSFDAIJTQGERQAKLMNP $.
@@ -55892,7 +55891,7 @@ $)
   ${
     brpw1fn.1 $e |- A e. _V $.
     $( Binary relationship form of ` Pw1Fn ` 
-       (Contributed by ?who?, 25-Feb-2015.) $)
+       (Contributed by SF, 25-Feb-2015.) $)
     brpw1fn $p |- ( { A } Pw1Fn B <-> B = ~P1 A ) $=
       ( csn cpw1fn cfv wceq cpw1 wbr pw1fnval eqeq1i c1c wcel wb fnpw1fn snel1c
       wfn fnbrfvb mp2an eqcom 3bitr3i ) ADZEFZBGZAHZBGUBBEIZBUEGUCUEBACJKELQUBL
@@ -55905,7 +55904,7 @@ $)
     $d y z $.
     $( ` Pw1Fn ` is a one-to-one function with domain ` 1c ` and range
        ` ~P 1c ` . 
-       (Contributed by ?who?, 26-Feb-2015.) $)
+       (Contributed by SF, 26-Feb-2015.) $)
     pw1fnf1o $p |- Pw1Fn : 1c -1-1-onto-> ~P 1c $=
       ( vx vy vz va vb c1c cpw1fn wceq cv cfv cpw1 wss wex cvv wa vex exbii csn
       wcel el1c cpw wf1o wfn crn wi wral fnpw1fn cuni wrex df-pw1fn rnmpt sspw1
@@ -55929,7 +55928,7 @@ $)
     $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d F x $.  $d F y $.  $d x y $.
     $( Lemma for ~ fnfullfun .  Binary relationship over part one of the full
        function definition. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     fnfullfunlem1 $p |- ( A ( ( _I o. F ) \ ( ~ _I o. F ) ) B <->
         ( A F B /\ A. x ( A F x -> x = B ) ) ) $=
       ( vy cid ccom wbr cvv wcel cv wceq wi wal wa brex simprd wb breq2 wn cdif
@@ -55948,7 +55947,7 @@ $)
     $d F x y z $.
     $( Lemma for ~ fnfullfun .  Part one of the full function operator yields a
        function. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     fnfullfunlem2 $p |- Fun ( ( _I o. F ) \ ( ~ _I o. F ) ) $=
       ( vx vy vz cid ccom ccompl cdif wfun wrel cv wbr wa wi relco reldif ax-mp
       weq wal fnfullfunlem1 ax467to4 impcom syl2anb ax-gen gen2 dffun2 mpbir2an
@@ -55959,7 +55958,7 @@ $)
   $}
 
   $( The full function operator yields a function over ` _V ` . 
-     (Contributed by ?who?, 9-Mar-2015.) $)
+     (Contributed by SF, 9-Mar-2015.) $)
   fnfullfun $p |- FullFun F Fn _V $=
     ( cfullfun cvv wfn cid ccom ccompl cdif cdm c0 csn cxp cun wa cin wceq wfun
     fnfullfunlem2 funfn mp2an mpbi 0ex fnconstg ax-mp pm3.2i incompl df-fullfun
@@ -55970,7 +55969,7 @@ $)
     $( [9-Mar-2015] $)
 
   $( The full function of a set is a set. 
-     (Contributed by ?who?, 9-Mar-2015.) $)
+     (Contributed by SF, 9-Mar-2015.) $)
   fullfunexg $p |- ( F e. V -> FullFun F e. _V ) $=
     ( wcel cfullfun cid ccom ccompl cdif cdm c0 csn cxp cun cvv df-fullfun idex
     coexg mpan complex syl2anc difexg dmexg complexg 3syl snex sylancl syl5eqel
@@ -55982,7 +55981,7 @@ $)
   ${
     fullfunex.1 $e |- F e. _V $.
     $( The full function of a set is a set. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     fullfunex $p |- FullFun F e. _V $=
       ( cvv wcel cfullfun fullfunexg ax-mp ) ACDAECDBACFG $.
       $( [9-Mar-2015] $)
@@ -55993,7 +55992,7 @@ $)
     $d F x $.  $d F y $.  $d F z $.  $d x y $.  $d x z $.  $d y z $.
     $( Lemma for ~ fvfullfun .  Calculate the domain of part one of the full
        function definition. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     fvfullfunlem1 $p |- dom ( ( _I o. F ) \ ( ~ _I o. F ) ) =
        { x | E! y x F y } $=
       ( vz cv wbr cid ccom wcel wex weq wi wal wa df-br vex notbii 3bitri exbii
@@ -56012,7 +56011,7 @@ $)
     $d F x $.  $d F y $.  $d F z $.  $d x y $.  $d x z $.  $d y z $.
     $( Lemma for ~ fvfullfun .  Part one of the full function definition is a
        subset of the function. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     fvfullfunlem2 $p |- ( ( _I o. F ) \ ( ~ _I o. F ) ) C_ F $=
       ( vx vy vz cid ccom ccompl cdif wss cv cop wcel wi wal wbr wa simpl df-br
       weq wrel fnfullfunlem1 bitr3i 3imtr3i gen2 relco reldif ssrel mp2b mpbir
@@ -56027,7 +56026,7 @@ $)
     $d y z $.
     $( Lemma for ~ fvfullfun .  Part one of the full function definition agrees
        with the set itself over its domain. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     fvfullfunlem3 $p |- ( A e. dom ( ( _I o. F ) \ ( ~ _I o. F ) ) ->
        ( ( ( _I o. F ) \ ( ~ _I o. F ) ) ` A ) = ( F ` A ) ) $=
       ( vx vy vz cid ccom wcel cfv wss wrel cv wbr wa wal weu anbi2i cvv ax-mp
@@ -56050,7 +56049,7 @@ $)
     $d A x $.  $d F x $.  $d F y $.  $d x y $.
     $( The value of the full function definition agrees with the function value
        everywhere. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     fvfullfun $p |- ( FullFun F ` A ) = ( F ` A ) $=
       ( vx vy cvv wcel cfv wceq cv fveq2 cid ccom ccompl c0 wfn wa mp3an12 mpan
       0ex eqtr4d cfullfun eqeq12d cdm csn cxp cun df-fullfun fveq1i cin incompl
@@ -56066,7 +56065,7 @@ $)
   $}
 
   $( Binary relationship of the full function operation. 
-     (Contributed by ?who?, 9-Mar-2015.) $)
+     (Contributed by SF, 9-Mar-2015.) $)
   brfullfung $p |- ( A e. V -> ( A FullFun F B <-> ( F ` A ) = B ) ) $=
     ( wcel cvv cfullfun wbr cfv wceq wb elex fvfullfun eqeq1i fnfullfun fnbrfvb
     wfn mpan syl5rbbr syl ) ADEAFEZABCGZHZACIZBJZKADLUEAUBIZBJZUAUCUFUDBACMNUBF
@@ -56076,7 +56075,7 @@ $)
   ${
     brfullfun.1 $e |- A e. _V $.
     $( Binary relationship of the full function operation. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     brfullfun $p |- ( A FullFun F B <-> ( F ` A ) = B ) $=
       ( cvv wcel cfullfun wbr cfv wceq wb brfullfung ax-mp ) AEFABCGHACIBJKDABC
       ELM $.
@@ -56088,7 +56087,7 @@ $)
     brfullfunop.2 $e |- B e. _V $.
     $( Binary relationship of the full function operation over an ordered
        pair. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     brfullfunop $p |- ( <. A , B >. FullFun F C <-> ( A F B ) = C ) $=
       ( cop cfullfun wbr cfv wceq co opex brfullfun df-ov eqeq1i bitr4i ) ABGZC
       DHIRDJZCKABDLZCKRCDABEFMNTSCABDOPQ $.
@@ -56117,7 +56116,7 @@ $)
   ${
     $d R a $.  $d S a $.  $d T a $.
     $( Equality law for closure. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     clos1eq1 $p |- ( S = T -> Clos1 ( S , R ) = Clos1 ( T , R ) ) $=
       ( va wceq cv wss cima wa cab cint cclos1 sseq1 anbi1d abbidv syl df-clos1
       inteq 3eqtr4g ) BCEZBDFZGZAUAHUAGZIZDJZKZCUAGZUCIZDJZKZBALCALTUEUIEUFUJET
@@ -56125,7 +56124,7 @@ $)
       $( [11-Feb-2015] $)
 
     $( Equality law for closure. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     clos1eq2 $p |- ( R = T -> Clos1 ( S , R ) = Clos1 ( S , T ) ) $=
       ( va wceq cv wss cima wa cab cclos1 imaeq1 sseq1d anbi2d abbidv inteq syl
       cint df-clos1 3eqtr4g ) ACEZBDFZGZAUBHZUBGZIZDJZRZUCCUBHZUBGZIZDJZRZBAKBC
@@ -56138,7 +56137,7 @@ $)
     clos1ex.1 $e |- S e. _V $.
     clos1ex.2 $e |- R e. _V $.
     $( The closure of a set under a set is a set. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     clos1ex $p |- Clos1 ( S , R ) e. _V $=
       ( va vb cv wss cima cvv csset wcel wbr vex brsset wex imaex bitri ssetex
       wa cclos1 cab cint df-clos1 csn cimage ccom cfix cin elin elimasn 3bitr2i
@@ -56155,7 +56154,7 @@ $)
   ${
     $d S s r $.  $d R s r $.
     $( The closure of a set under a set is a set. 
-       (Contributed by ?who?, 11-Feb-2015.) $)
+       (Contributed by SF, 11-Feb-2015.) $)
     clos1exg $p |- ( ( S e. V /\ R e. W ) -> Clos1 ( S , R ) e. _V ) $=
       ( vs vr cclos1 cvv wcel wceq clos1eq1 eleq1d clos1eq2 vex clos1ex vtocl2g
       cv ) EQZFQZGZHIBSGZHIBAGZHIEFBACDRBJTUAHSRBKLSAJUAUBHSBAMLSRENFNOP $.
@@ -56167,7 +56166,7 @@ $)
     clos1base.1 $e |- C = Clos1 ( S , R ) $.
     $( The initial set of a closure is a subset of the closure.  Theorem
        IX.5.13 of [Rosser] p. 246. 
-       (Contributed by ?who?, 13-Feb-2015.) $)
+       (Contributed by SF, 13-Feb-2015.) $)
     clos1base $p |- S C_ C $=
       ( va cv wss cima wa cab cint ssmin cclos1 df-clos1 eqtr2i sseqtri ) CCEFZ
       GBQHQGZIEJKZARECLACBMSDBCENOP $.
@@ -56180,7 +56179,7 @@ $)
 
       $( If a class is connected to an element of a closure via ` R ` , then it
          is a member of the closure.  Theorem IX.5.14 of [Rosser] p. 246. 
-         (Contributed by ?who?, 13-Feb-2015.) $)
+         (Contributed by SF, 13-Feb-2015.) $)
       clos1conn $p |- ( ( A e. C /\ A R B ) -> B e. C ) $=
         ( vx vy va vz cvv wcel wa wbr cv wi wceq eleq1 breq1 wss adantl anbi12d
         brex imbi1d breq2 anbi2d imbi12d cima wel wal wrex rspcev elima sylibr
@@ -56207,7 +56206,7 @@ $)
       $( Inductive law for closure.  If the base set is a subset of ` X ` , and
          ` X ` is closed under ` R ` , then the closure is a subset of ` X ` .
          Theorem IX.5.15 of [Rosser] p. 247. 
-         (Contributed by ?who?, 11-Feb-2015.) $)
+         (Contributed by SF, 11-Feb-2015.) $)
       clos1induct $p |- ( ( X e. V /\ S C_ X /\
           A. x e. C A. z ( ( x e. X /\ x R z ) -> z e. X ) ) ->
           C C_ X ) $=
@@ -56247,7 +56246,7 @@ $)
        existence properties, hypothesis four sets up stratification, hypotheses
        five through seven set up implicit substitution, and hypotheses eight
        and nine set up the base and induction steps. 
-       (Contributed by ?who?, 13-Feb-2015.) $)
+       (Contributed by SF, 13-Feb-2015.) $)
     clos1is $p |- ( A e. C -> th ) $=
       ( wcel cab cvv wss cv wbr wa wal wral ssab mpgbir 3expib vex anbi1i ancom
       wi elab bitri 3imtr4g alrimiv rgen clos1induct mp3an sseli elabg mpbid )
@@ -56266,7 +56265,7 @@ $)
     clos1basesuc.3 $e |- C = Clos1 ( S , R ) $.
     $( A member of a closure is either in the base set or connected to another
        member by ` R ` .  Theorem IX.5.16 of [Rosser] p. 248. 
-       (Contributed by ?who?, 13-Feb-2015.) $)
+       (Contributed by SF, 13-Feb-2015.) $)
     clos1basesuc $p |- ( A e. C <-> ( A e. S \/ E. x e. C x R A ) ) $=
       ( vy vz vw wcel cv wbr wrex wo cab eleq1 breq2 rexbidv cima cun cvv abid2
       eqcomi df-ima uneq12i unab eqtri cclos1 clos1ex eqeltri unex eqeltrri weq
@@ -56284,7 +56283,7 @@ $)
     $d S x $.
     $( A closure is equal to the base set together with the image of the
        closure under ` R ` .  Theorem X.4.37 of [Rosser] p. 303. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     clos1baseima $p |- C = ( S u. ( R " C ) ) $=
       ( vx vy cima cun cv wcel wbr wrex elima orbi2i elun clos1basesuc 3bitr4ri
       wo eqriv ) GACBAIZJZGKZCLZUDUBLZTUEHKUDBMHANZTUDUCLUDALUFUGUEHUDBAOPUDCUB
@@ -56296,7 +56295,7 @@ $)
     $d a x y z $.
     $( The finite cardinals as expressed via the closure operation.  Theorem
        X.1.3 of [Rosser] p. 276. 
-       (Contributed by ?who?, 12-Feb-2015.) $)
+       (Contributed by SF, 12-Feb-2015.) $)
     dfnnc3 $p |- Nn = Clos1 ( { 0c } , ( x e. _V |-> ( x +c 1c ) ) ) $=
       ( va vy vz c0c cv wcel c1c cplc wral wa cab cint wss cvv wi wal wceq 1cex
       vex csn cmpt cima cnnc cclos1 0cex snss wel cfv dfss2 ralcom4 wrex wfn wb
@@ -56319,7 +56318,7 @@ $)
     clos1nrel.3 $e |- C = Clos1 ( S , R ) $.
     $( The value of a closure when the base set is not related to anything in
        ` R ` . 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     clos1nrel $p |- ( ( R " S ) = (/) -> C = S ) $=
       ( vx vy cima c0 wceq cv wcel wbr wa wi wal wral wss cvv wn eq0 wrex elima
       rspe sylibr con3i pm2.21d alimi sylbi ralrimivw clos1induct syl clos1base
@@ -56448,7 +56447,7 @@ $)
     $d r s $.  $d r t $.  $d t y $.  $d t z $.  $d p t $.  $d t x $.  $d a t $.
 
     $( The class of all transitive relationships is a set. 
-       (Contributed by ?who?, 19-Feb-2015.) $)
+       (Contributed by SF, 19-Feb-2015.) $)
     transex $p |- Trans e. _V $=
       ( vx vy vz vp vq csset cins2 c1st c2nd wbr wa cop wcel wex otelins2 bitri
       3bitri df-br anbi12i 3bitr4i vr va ctrans cvv cxp ccnv ctxp csi3 c1c cima
@@ -56509,7 +56508,7 @@ $)
       $( [19-Feb-2015] $)
 
     $( The class of all reflexive relationships is a set. 
-       (Contributed by ?who?, 11-Mar-2015.) $)
+       (Contributed by SF, 11-Mar-2015.) $)
     refex $p |- Ref e. _V $=
       ( vx vr va vp vt cvv c1st c2nd ctxp c1c csset cv wbr cop vex wa wex df-br
       wcel 3bitri cref cxp ccnv cin csi cima ccompl wral df-ref wn opex elcompl
@@ -56533,7 +56532,7 @@ $)
       $( [11-Mar-2015] $)
 
     $( The class of all antisymmetric relationships is a set. 
-       (Contributed by ?who?, 11-Mar-2015.) $)
+       (Contributed by SF, 11-Mar-2015.) $)
     antisymex $p |- Antisym e. _V $=
       ( vx vy vr va vp vs vt cvv csset cid ccross cv wbr cop wcel vex wex df-br
       wa wceq cantisym cxp ccnv cswap ctxp crn cin cpw1 cdif c1st c2nd c1c cima
@@ -56572,7 +56571,7 @@ $)
       $( [11-Mar-2015] $)
 
     $( The class of all connected relationships is a set. 
-       (Contributed by ?who?, 11-Mar-2015.) $)
+       (Contributed by SF, 11-Mar-2015.) $)
     connexex $p |- Connex e. _V $=
       ( vx vr va vp vt csset ccnv c1st c2nd cv wbr cop wcel wa wceq bitri df-br
       wex 3bitri cnvex vy cconnex cvv cxp cin ctxp crn ccross cima cswap cimage
@@ -56611,7 +56610,7 @@ $)
       $( [11-Mar-2015] $)
 
     $( The class of all founded relationships is a set. 
-       (Contributed by ?who?, 19-Feb-2015.) $)
+       (Contributed by SF, 19-Feb-2015.) $)
     foundex $p |- Fr e. _V $=
       ( vx vy vz vt vp cvv csset c1st c2nd cid cv wa wbr cop wn wex bitri df-br
       wcel anbi12i va cfound cxp cins3 cins2 ccnv csi3 ctxp c1c cima cins4 ccom
@@ -56659,7 +56658,7 @@ $)
       $( [19-Feb-2015] $)
 
     $( The class of all extensional relationships is a set. 
-       (Contributed by ?who?, 19-Feb-2015.) $)
+       (Contributed by SF, 19-Feb-2015.) $)
     extex $p |- Ext e. _V $=
       ( vz vx vy vp vq csset cins2 cid c2nd wbr cop wcel wn wex otelins2 3bitri
       wa bitri df-br 3bitr4i vr cext cvv cxp c1st ccnv csi3 ctxp c1c cima cins4
@@ -56711,7 +56710,7 @@ $)
       $( [19-Feb-2015] $)
 
     $( The class of all symmetric relationships is a set. 
-       (Contributed by ?who?, 20-Feb-2015.) $)
+       (Contributed by SF, 20-Feb-2015.) $)
     symex $p |- Sym e. _V $=
       ( vx vy vr va vp cvv csset ccnv c1c cv wbr wral wcel cop brcnv wa 3bitr4i
       wex anbi12i 3bitri csym cxp cswap cimage ctxp crn cdif c1st c2nd cin csi3
@@ -56750,28 +56749,28 @@ $)
   $}
 
   $( The class of all partial orderings is a set. 
-     (Contributed by ?who?, 11-Mar-2015.) $)
+     (Contributed by SF, 11-Mar-2015.) $)
   partialex $p |- Po e. _V $=
     ( cpartial cref ctrans cin cantisym df-partial refex transex inex antisymex
     cvv eqeltri ) ABCDZEDKFMEBCGHIJIL $.
     $( [11-Mar-2015] $)
 
   $( The class of all strict orderings is a set. 
-     (Contributed by ?who?, 19-Feb-2015.) $)
+     (Contributed by SF, 19-Feb-2015.) $)
   strictex $p |- Or e. _V $=
     ( cstrict cpartial cconnex cin df-strict partialex connexex inex eqeltri
     cvv ) ABCDJEBCFGHI $.
     $( [19-Feb-2015] $)
 
   $( The class of all well orderings is a set. 
-     (Contributed by ?who?, 19-Feb-2015.) $)
+     (Contributed by SF, 19-Feb-2015.) $)
   weex $p |- We e. _V $=
     ( cwe cstrict cfound cin cvv df-we strictex foundex inex eqeltri ) ABCDEFBC
     GHIJ $.
     $( [19-Feb-2015] $)
 
   $( The class of all equivalence relationships is a set. 
-     (Contributed by ?who?, 20-Feb-2015.) $)
+     (Contributed by SF, 20-Feb-2015.) $)
   erex $p |- Er e. _V $=
     ( cer csym ctrans cin cvv df-er symex transex inex eqeltri ) ABCDEFBCGHIJ
     $.
@@ -56789,7 +56788,7 @@ $)
     trd.5 $e |- ( ph -> X R Y ) $.
     trd.6 $e |- ( ph -> Y R Z ) $.
     $( Transitivity law in natural deduction form. 
-       (Contributed by ?who?, 20-Feb-2015.) $)
+       (Contributed by SF, 20-Feb-2015.) $)
     trd $p |- ( ph -> X R Z ) $=
       ( vx vy vz wbr cv wa wi wral vr va ctrans cvv wcel brex wceq breq anbi12d
       wb imbi12d ralbidv 2ralbidv raleq raleqbi1dv df-trans brabg syl ibi breq1
@@ -56813,7 +56812,7 @@ $)
     frd.3 $e |- ( ph -> X C_ A ) $.
     frd.4 $e |- ( ph -> X =/= (/) ) $.
     $( Founded relationship in natural deduction form. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     frd $p |- ( ph -> E. y e. X A. z e. X ( z R y -> z = y ) ) $=
       ( vx va vr wss c0 cv wi wa cvv wne wbr weq wral wrex wcel wal cfound brex
       wceq breq imbi1d rexralbidv imbi2d albidv sseq2 anbi1d df-found brabg syl
@@ -56837,7 +56836,7 @@ $)
     extd.3 $e |- ( ph -> Y e. A ) $.
     extd.4 $e |- ( ( ph /\ z e. A ) -> ( z R X <-> z R Y ) ) $.
     $( Extensional relationship in natural deduction form. 
-       (Contributed by ?who?, 20-Feb-2015.) $)
+       (Contributed by SF, 20-Feb-2015.) $)
     extd $p |- ( ph -> X = Y ) $=
       ( vx vy wcel cv wbr wb wral wi wceq cvv vr weq jca cext brex breq bibi12d
       va wa ralbidv imbi1d 2ralbidv raleq raleqbi1dv df-ext brabg syl ralrimiva
@@ -56861,7 +56860,7 @@ $)
     symd.3 $e |- ( ph -> Y e. A ) $.
     symd.4 $e |- ( ph -> X R Y ) $.
     $( Symmetric relationship in natural deduction form. 
-       (Contributed by ?who?, 20-Feb-2015.) $)
+       (Contributed by SF, 20-Feb-2015.) $)
     symd $p |- ( ph -> Y R X ) $=
       ( vx vy vr va wcel cv wbr wi wral csym cvv wa jca brex wceq breq 2ralbidv
       imbi12d raleq raleqbi1dv df-sym brabg syl ibi breq1 breq2 rspc2v syl3c
@@ -56883,7 +56882,7 @@ $)
     trrd.3 $e |- ( ( ph /\ ( x e. A /\ y e. A /\ z e. A ) /\
            ( x R y /\ y R z ) ) -> x R z ) $.
     $( Deduce transitivity from its properties. 
-       (Contributed by ?who?, 22-Feb-2015.) $)
+       (Contributed by SF, 22-Feb-2015.) $)
     trrd $p |- ( ph -> R Trans A ) $=
       ( vr va ctrans wbr cv wa wral wcel breq wi w3a df-3an 3exp exp3a ralrimdv
       syl5bir ralrimivv wb wceq anbi12d imbi12d ralbidv 2ralbidv raleq df-trans
@@ -56902,7 +56901,7 @@ $)
     refrd.2 $e |- ( ph -> A e. W ) $.
     refrd.3 $e |- ( ( ph /\ x e. A ) -> x R x ) $.
     $( Deduce reflexitiviy from its properties. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     refrd $p |- ( ph -> R Ref A ) $=
       ( vr va cref wbr cv wral ralrimiva wcel wb wceq breq ralbidv raleq df-ref
       brabg syl2anc mpbird ) ADCLMZBNZUHDMZBCOZAUIBCIPADEQCFQUGUJRGHUHUHJNZMZBK
@@ -56916,7 +56915,7 @@ $)
     refd.1 $e |- ( ph -> R Ref A ) $.
     refd.2 $e |- ( ph -> X e. A ) $.
     $( Natural deduction form of reflexitivity. 
-       (Contributed by ?who?, 20-Mar-2015.) $)
+       (Contributed by SF, 20-Mar-2015.) $)
     refd $p |- ( ph -> X R X ) $=
       ( vx vr va cv wbr wral wcel cref cvv wa wb brex wceq syl breq raleq brabg
       ralbidv df-ref ibi id breq12d rspccv sylc ) AGJZUKCKZGBLZDBMDDCKZACBNKZU
@@ -56934,7 +56933,7 @@ $)
     antird.3 $e |- ( ( ph /\ ( x e. A /\ y e. A ) /\ ( x R y /\ y R x ) ) ->
        x = y ) $.
     $( Deduce antisymmetry from its properties. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     antird $p |- ( ph -> R Antisym A ) $=
       ( vr va cantisym wbr cv wa wi wral wcel breq 3expia ralrimivva wb anbi12d
       weq wceq imbi1d 2ralbidv raleq raleqbi1dv df-antisym brabg syl2anc mpbird
@@ -56955,7 +56954,7 @@ $)
     antid.4 $e |- ( ph -> X R Y ) $.
     antid.5 $e |- ( ph -> Y R X ) $.
     $( The antisymmetry property. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     antid $p |- ( ph -> X = Y ) $=
       ( vx vy wbr wceq cv wa wi wral cvv wcel vr weq cantisym brex breq anbi12d
       va wb imbi1d 2ralbidv raleq raleqbi1dv df-antisym brabg breq1 breq2 eqeq1
@@ -56977,7 +56976,7 @@ $)
     connexrd.2 $e |- ( ph -> A e. W ) $.
     connexrd.3 $e |- ( ( ph /\ x e. A /\ y e. A ) -> ( x R y \/ y R x ) ) $.
     $( Deduce connectivity from its properties. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     connexrd $p |- ( ph -> R Connex A ) $=
       ( vr va cconnex wbr cv wo wral wcel 3expib breq ralrimivv wb wceq orbi12d
       2ralbidv raleq raleqbi1dv df-connex brabg syl2anc mpbird ) AEDMNZBOZCOZEN
@@ -56995,7 +56994,7 @@ $)
     connexd.2 $e |- ( ph -> X e. A ) $.
     connexd.3 $e |- ( ph -> Y e. A ) $.
     $( The connectivity property. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     connexd $p |- ( ph -> ( X R Y \/ Y R X ) ) $=
       ( vx vy vr va cconnex wbr wo cv wral cvv wcel wceq wa wb orbi12d 2ralbidv
       brex breq raleq raleqbi1dv df-connex brabg syl ibi wi breq1 breq2 rspc2v
@@ -57008,14 +57007,14 @@ $)
   $}
 
   $( Equivalence relationship as symmetric, transitive relationship. 
-     (Contributed by ?who?, 22-Feb-2015.) $)
+     (Contributed by SF, 22-Feb-2015.) $)
   ersymtr $p |- ( R Er A <-> ( R Sym A /\ R Trans A ) ) $=
     ( cer wbr csym ctrans cin wa df-er breqi brin bitri ) BACDBAEFGZDBAEDBAFDHB
     ACMIJBAEFKL $.
     $( [22-Feb-2015] $)
 
   $( Partial ordering as reflexive, transitive, antisymmetric relationship. 
-     (Contributed by ?who?, 12-Mar-2015.) $)
+     (Contributed by SF, 12-Mar-2015.) $)
   porta $p |- ( R Po A <-> ( R Ref A /\ R Trans A /\ R Antisym A ) ) $=
     ( cref ctrans cin cantisym wbr wa cpartial w3a brin anbi1i bitri df-partial
     breqi df-3an 3bitr4i ) BACDEZFEZGZBACGZBADGZHZBAFGZHZBAIGUAUBUDJTBARGZUDHUE
@@ -57023,7 +57022,7 @@ $)
     $( [12-Mar-2015] $)
 
   $( Linear ordering as partial, connected relationship. 
-     (Contributed by ?who?, 12-Mar-2015.) $)
+     (Contributed by SF, 12-Mar-2015.) $)
   sopc $p |- ( R Or A <-> ( R Po A /\ R Connex A ) ) $=
     ( cstrict wbr cpartial cconnex cin wa df-strict breqi brin bitri ) BACDBAEF
     GZDBAEDBAFDHBACMIJBAEFKL $.
@@ -57038,7 +57037,7 @@ $)
     frds.4 $e |- ( ph -> R Fr A ) $.
     frds.5 $e |- ( ph -> E. x e. A ps ) $.
     $( Substitution schema verson of ~ frd . 
-       (Contributed by ?who?, 19-Mar-2015.) $)
+       (Contributed by SF, 19-Mar-2015.) $)
     frds $p |- ( ph -> E. y e. A ( ch /\ A. z e. A ( ( th /\ z R y ) -> z = y )
         ) ) $=
       ( cv wi wcel wa wrex cvv wbr weq cab wral cin dfrab2 df-rab eqtr3i cfound
@@ -57068,7 +57067,7 @@ $)
       x = y ) $.
     $( A reflexive, transitive, and anti-symmetric ordering is a partial
        ordering. 
-       (Contributed by ?who?, 22-Feb-2015.) $)
+       (Contributed by SF, 22-Feb-2015.) $)
     pod $p |- ( ph -> R Po A ) $=
       ( cref wbr ctrans cantisym cpartial refrd trrd antird porta syl3anbrc ) A
       FENOFEPOFEQOFEROABEFGHIJKSABCDEFGHIJLTABCEFGHIJMUAEFUBUC $.
@@ -57091,7 +57090,7 @@ $)
        ( x R y \/ y R x ) ) $.
     $( A reflexive, transitive, antisymmetric, and connected relationship is a
        strict ordering. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     sod $p |- ( ph -> R Or A ) $=
       ( cpartial wbr cconnex cstrict pod connexrd sopc sylanbrc ) AFEOPFEQPFERP
       ABCDEFGHIJKLMSABCEFGHIJNTEFUAUB $.
@@ -57109,7 +57108,7 @@ $)
     weds.5 $e |- ( ph -> E. x e. A ps ) $.
     $( Any property that holds for some element of a well-ordered set ` A ` has
        an ` R ` minimal element satisfying that property. 
-       (Contributed by ?who?, 20-Mar-2015.) $)
+       (Contributed by SF, 20-Mar-2015.) $)
     weds $p |- ( ph -> E. y e. A ( ch /\ A. z e. A ( th -> y R z ) ) ) $=
       ( wbr wa wi cfound cstrict syl cv weq wral wrex cwe cin df-we breqi bitri
       brin simprbi frds wcel impexp cconnex simplbi cpartial sopc adantr simprl
@@ -57130,7 +57129,7 @@ $)
     $d R x y z $.  $d ph x y z $.
     ord0.1 $e |- ( ph -> R e. V ) $.
     $( Anything partially orders the empty set. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     po0 $p |- ( ph -> R Po (/) ) $=
       ( vx vy vz c0 cvv wcel 0ex a1i cv wbr noel pm2.21i adantl w3a wa 3ad2ant2
       3ad2ant1 weq adantr pod ) AEFGHBCIDHIJAKLEMZHJZUEUEBNZAUFUGUEOZPQUFFMZHJZ
@@ -57139,14 +57138,14 @@ $)
       $( [12-Mar-2015] $)
 
     $( Anything is connected over the empty set. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     connex0 $p |- ( ph -> R Connex (/) ) $=
       ( vx vy c0 cvv wcel 0ex a1i cv wbr wo noel pm2.21i 3ad2ant2 connexrd ) AE
       FGBCHDGHIAJKELZGIZASFLZBMUASBMNZUAGITUBSOPQR $.
       $( [12-Mar-2015] $)
 
     $( Anything totally orders the empty set. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     so0 $p |- ( ph -> R Or (/) ) $=
       ( c0 cpartial wbr cconnex cstrict po0 connex0 sopc sylanbrc ) ABEFGBEHGBE
       IGABCDJABCDKEBLM $.
@@ -57165,7 +57164,7 @@ $)
     iserd.4 $e |- ( ( ph /\ ( x e. A /\ y e. A /\ z e. A ) /\
        ( x R y /\ y R z ) ) -> x R z ) $.
     $( A symmetric, transitive relationship is an equivalence relationship. 
-       (Contributed by ?who?, 22-Feb-2015.) $)
+       (Contributed by SF, 22-Feb-2015.) $)
     iserd $p |- ( ph -> R Er A ) $=
       ( vr va csym wbr cv wi wral wcel ctrans wa 3expia ralrimivva wb wceq breq
       cer imbi12d 2ralbidv raleq raleqbi1dv df-sym brabg syl2anc mpbird ersymtr
@@ -57180,7 +57179,7 @@ $)
     $d x y z $.
     $( The identity relationship is an equivalence relationship over the
        universe. 
-       (Contributed by ?who?, 22-Feb-2015.) $)
+       (Contributed by SF, 22-Feb-2015.) $)
     ider $p |- _I Er _V $=
       ( vx vy vz cid cvv cer wbr wtru wcel idex a1i vvex cv wa weq equcomi ideq
       vex 3imtr4i 3ad2ant3 w3a eqtr anbi12i iserd trud ) DEFGHABCEDEEDEIHJKEEIH
@@ -57193,7 +57192,7 @@ $)
   ${
     $d x y z $.
     $( The subset relationship partially orders the universe. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     ssetpov $p |- SSet Po _V $=
       ( vx vy vz csset cvv cpartial wbr wtru wcel ssetex a1i vvex cv wa wss vex
       ssid brsset anbi12i 3ad2ant3 w3a sstr 3imtr4i weq eqss bitr4i biimpri pod
@@ -58253,7 +58252,7 @@ $)
   ${
     $d x y f $.  $d x y f $.
     $( Equinumerosity is a relation. 
-       (Contributed by ?who?, 28-Mar-1998.) $)
+       (Contributed by SF, 28-Mar-1998.) $)
     relen $p |- Rel ~~ $=
       ( vx vy vf cv wf1o wex cen df-en relopabi ) ADBDCDECFABGABCHI $.
       $( [28-Mar-1998] $)
@@ -58262,7 +58261,7 @@ $)
   ${
     $d A f x y $.  $d B f x y $.
     $( Equinumerosity relationship. 
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     bren $p |- ( A ~~ B <-> E. f f : A -1-1-onto-> B ) $=
       ( vx vy cen wbr cvv wcel wa wf1o wex brex cdm crn vex eleq1d wceq exbidv
       cv dmex rnex pm3.2i f1odm wfo f1ofo forn syl anbi12d mpbii exlimiv f1oeq2
@@ -58276,7 +58275,7 @@ $)
   ${
     $d f g x y $.
     $( The equinumerosity relationship is a set. 
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     enex $p |- ~~ e. _V $=
       ( vx vy vf vg cen cvv cfns cswap ccnv ctxp crn cv wex cop wcel wbr wa wfn
       elrn bitri cxp cimage cin wf1o copab df-en brfns wceq df-br trtxp brimage
@@ -58294,7 +58293,7 @@ $)
   ${
     $d f A $.  $d f B $.  $d f F $.
     $( The domain and range of a one-to-one, onto function are equinumerous. 
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     f1oeng $p |- ( ( F e. C /\ F : A -1-1-onto-> B ) -> A ~~ B ) $=
       ( vf wcel wf1o wa cv wex cen wbr f1oeq1 spcegv imp bren sylibr ) DCFZABD
       GZHABEIZGZEJZABKLRSUBUASEDCABTDMNOABEPQ $.
@@ -58305,14 +58304,14 @@ $)
   ${
     f1oen.1 $e |- F e. _V $.
     $( The domain and range of a one-to-one, onto function are equinumerous. 
-       (Contributed by ?who?, 19-Jun-1998.) $)
+       (Contributed by SF, 19-Jun-1998.) $)
     f1oen $p |- ( F : A -1-1-onto-> B -> A ~~ B ) $=
       ( cvv wcel wf1o cen wbr f1oeng mpan ) CEFABCGABHIDABECJK $.
       $( [19-Jun-1998] $)
   $}
 
   $( Equinumerosity is reflexive. 
-     (Contributed by ?who?, 23-Feb-2015.) $)
+     (Contributed by SF, 23-Feb-2015.) $)
   enrflxg $p |- ( A e. V -> A ~~ A ) $=
     ( wcel cid cres cvv wf1o cen wbr idex resexg mpan f1oi f1oeng sylancl ) ABC
     ZDAEZFCZAAQGAAHIDFCPRJDAFBKLAMAAFQNO $.
@@ -58321,7 +58320,7 @@ $)
   ${
     enrflx.1 $e |- A e. _V $.
     $( Equinumerosity is reflexive. 
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     enrflx $p |- A ~~ A $=
       ( cvv wcel cen wbr enrflxg ax-mp ) ACDAAEFBACGH $.
       $( [23-Feb-2015] $)
@@ -58332,20 +58331,20 @@ $)
     $d A f g $.  $d B f g $.  $d C f g $.
 
     $( Equinumerosity is symmetric. 
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     ensymi $p |- ( A ~~ B -> B ~~ A ) $=
       ( vf cen wbr wf1o wex bren ccnv f1ocnv vex cnvex f1oen syl exlimiv sylbi
       cv ) ABDEABCQZFZCGBADEZABCHSTCSBARIZFTABRJBAUARCKLMNOP $.
       $( [23-Feb-2015] $)
 
     $( Equinumerosity is symmetric. 
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     ensym $p |- ( A ~~ B <-> B ~~ A ) $=
       ( cen wbr ensymi impbii ) ABCDBACDABEBAEF $.
       $( [23-Feb-2015] $)
 
     $( Equinumerosity is transitive. 
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     entr $p |- ( ( A ~~ B /\ B ~~ C ) -> A ~~ C ) $=
       ( vf vg cen wbr wa cv wf1o wex bren anbi12i eeanv bitr4i f1oco ancoms vex
       ccom coex f1oen syl exlimivv sylbi ) ABFGZBCFGZHZABDIZJZBCEIZJZHZEKDKZACF
@@ -58357,7 +58356,7 @@ $)
   ${
     $d x y z $.
     $( Equinumerosity is an equivalence relationship over the universe. 
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     ener $p |- ~~ Er _V $=
       ( vx vy vz cen cvv cer wbr wtru wcel enex a1i vvex cv ensymi 3ad2ant3 w3a
       wa entr iserd trud ) DEFGHABCEDEEDEIHJKEEIHLKAMZBMZDGZHUBUADGUAEIZUBEIZQU
@@ -58369,7 +58368,7 @@ $)
   ${
     $d x y $.
     $( Equality implies equinumerosity. 
-       (Contributed by ?who?, 30-Apr-1998.) $)
+       (Contributed by SF, 30-Apr-1998.) $)
     idssen $p |- _I C_ ~~ $=
       ( vx vy cid cen reli cv wbr cop wcel weq vex ideq cvv enrflxg ax-mp breq2
       mpbii sylbi df-br 3imtr3i relssi ) ABCDEAFZBFZCGZUBUCDGZUBUCHZCIUFDIUDABJ
@@ -58378,7 +58377,7 @@ $)
   $}
 
   $( The domain of equinumerosity. 
-     (Contributed by ?who?, 10-May-1998.) $)
+     (Contributed by SF, 10-May-1998.) $)
   dmen $p |- dom ~~ = _V $=
     ( cvv cen cdm wss wceq cid idssen dmi dmss syl5eqssr ax-mp vss mpbi ) ABCZD
     ZNAEFBDZOGPAFCNHFBIJKNLM $.
@@ -58388,7 +58387,7 @@ $)
     $d f A $.
     $( The empty set is equinumerous only to itself.  Exercise 1 of
        [TakeutiZaring] p. 88. 
-       (Contributed by ?who?, 27-May-1998.) $)
+       (Contributed by SF, 27-May-1998.) $)
     en0 $p |- ( A ~~ (/) <-> A = (/) ) $=
       ( vf c0 cen wbr wceq cv wf1o wex bren ccnv f1ocnv f1o00 simprbi syl sylbi
       exlimiv 0ex enrflx breq1 mpbiri impbii ) ACDEZACFZUCACBGZHZBIUDACBJUFUDBU
@@ -58401,7 +58400,7 @@ $)
     fundmen.1 $e |- F e. _V $.
     $( A function is equinumerous to its domain.  Exercise 4 of [Suppes]
        p. 98. 
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     fundmen $p |- ( Fun F -> dom F ~~ F ) $=
       ( vx vy vz va vb wfun cen wbr c1st wceq cvv cv wa wi wal wcel wex bitr4i
       cdm cres wf1o wfn ccnv crn cxp wss wrel funrel df-rel sylib wb 1stfo fofn
@@ -58590,7 +58589,7 @@ $)
     xpassen.3 $e |- C e. _V $.
     $( Associative law for equinumerosity of cross product.  Proposition
        4.22(e) of [Mendelson] p. 254. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     xpassen $p |- ( ( A X. B ) X. C ) ~~ ( A X. ( B X. C ) ) $=
       ( vx vy vt vu va c1st c2nd wbr cvv wceq cop wex wa weq vz vb vc vd vv cxp
       vq vp ccom ctxp cres wf1o cen cima wf1 wss wf cv wmo wal wfn cin wfun cdm
@@ -58668,7 +58667,7 @@ $)
     ensn.1 $e |- A e. _V $.
     ensn.2 $e |- B e. _V $.
     $( Two singletons are equinumerous.  Theorem XI.1.10 of {{Rosser}}. 
-       (Contributed by ?who?, 25-Feb-2015.) $)
+       (Contributed by SF, 25-Feb-2015.) $)
     ensn $p |- { A } ~~ { B } $=
       ( cvv wcel csn cen wbr en2sn mp2an ) AEFBEFAGBGHICDABEEJK $.
       $( [25-Feb-2015] $)
@@ -58677,7 +58676,7 @@ $)
   ${
     $d A x $.  $d B x $.  $d X x $.  $d Y x $.
     $( Lemma for ~ enadj .  Calculate equality of differences. 
-       (Contributed by ?who?, 25-Feb-2015.) $)
+       (Contributed by SF, 25-Feb-2015.) $)
     enadjlem1 $p |- ( ( ( A u. { X } ) = ( B u. { Y } ) /\
     ( -. X e. A /\ -. Y e. B ) /\ ( Y e. A /\ X e. B ) ) ->
     ( A \ { Y } ) = ( B \ { X } ) ) $=
@@ -58701,7 +58700,7 @@ $)
     enadj.3 $e |- X e. _V $.
     enadj.4 $e |- Y e. _V $.
     $( Equivalence law for adjunction.  Theorem XI.1.13 of {{Rosser}}. 
-       (Contributed by ?who?, 25-Feb-2015.) $)
+       (Contributed by SF, 25-Feb-2015.) $)
     enadj $p |- ( ( ( A u. { X } ) = ( B u. { Y } ) /\
         -. X e. A /\ -. Y e. B ) -> A ~~ B ) $=
       ( cun wceq wcel wn w3a cen wbr cdif wa cin c0 a1i csn uneq2d eqeq1d eleq1
@@ -58730,7 +58729,7 @@ $)
     $d b x $.  $d b y $.  $d g p $.  $d g x $.  $d g y $.  $d p t $.  $d p x $.
     $d p y $.  $d t u $.  $d t x $.  $d t y $.  $d u x $.  $d u y $.  $d x y $.
     $( Lemma for ~ enpw1 .  Set up stratification for the reverse direction. 
-       (Contributed by ?who?, 26-Feb-2015.) $)
+       (Contributed by SF, 26-Feb-2015.) $)
     enpw1lem1 $p |- { <. x , y >. | { x } g { y } } e. _V $=
       ( vp va vb cvv c1st c2nd cv csn wbr wceq wa wex ancom 3bitri anbi1i bitri
       weq cxp ccnv csi ccom cin cima cuni1 copab cop wcel wrex vex eluni1 elima
@@ -58758,7 +58757,7 @@ $)
     $d x z $.  $d y z $.
     $( Two classes are equinumerous iff their unit power classes are
        equinumerous.  Theorem XI.1.33 of [Rosser] p. 368. 
-       (Contributed by ?who?, 26-Feb-2015.) $)
+       (Contributed by SF, 26-Feb-2015.) $)
     enpw1 $p |- ( A ~~ B <-> ~P1 A ~~ ~P1 B ) $=
       ( vx vy vz vw cen wbr cvv wcel cpw1 wceq wex wfun cdm syl sylanbrc sylibr
       cv wal va vb vf vg wa brex pw1exb anbi12i sylib breq1 pw1eq bibi12d breq2
@@ -58812,7 +58811,7 @@ $)
     $d w z $.  $d y z $.  $d t z $.
     enmap2lem1.1 $e |- W = ( s e. ( G ^m A ) |-> ( s o. `' r ) ) $.
     $( Lemma for ~ enmap2 .  Set up stratification. 
-       (Contributed by ?who?, 26-Feb-2015.) $)
+       (Contributed by SF, 26-Feb-2015.) $)
     enmap2lem1 $p |- W e. _V $=
       ( vx vy vz vt cvv csset cv c1st c2nd cop wex wcel wa vex co cxp cins3 csi
       cmap cins2 ctxp csi3 cin c1c cima cpw1 cres csymdif ccompl ccnv ccom cmpt
@@ -58848,7 +58847,7 @@ $)
     enmap2lem2.1 $e |- W = ( s e. ( G ^m a ) |-> ( s o. `' r ) ) $.
     $( Lemma for ~ enmap2 .  Establish the functionhood and domain of
        ` W ` . 
-       (Contributed by ?who?, 26-Feb-2015.) $)
+       (Contributed by SF, 26-Feb-2015.) $)
     enmap2lem2 $p |- W Fn ( G ^m a ) $=
       ( cv ccnv ccom cvv wcel cmap co wfn fnmpt vex cnvex coex a1i mprg ) CGZDG
       ZHZIZJKZBAEGLMZNCUFCUFUDBJFOUEUAUFKUAUCCPUBDPQRST $.
@@ -58859,7 +58858,7 @@ $)
     $d a s $.  $d G s $.  $d r s $.  $d S s $.
     enmap2lem3.1 $e |- W = ( s e. ( G ^m a ) |-> ( s o. `' r ) ) $.
     $( Lemma for ~ enmap2 .  Binary relationship condition over ` W ` . 
-       (Contributed by ?who?, 26-Feb-2015.) $)
+       (Contributed by SF, 26-Feb-2015.) $)
     enmap2lem3 $p |- ( r : a -1-1-onto-> b ->
        ( S W T -> S = ( T o. r ) ) ) $=
       ( wbr cv cmap co wcel ccnv ccom wceq wa cvv coeq1 wf1o cdm wfn enmap2lem2
@@ -58881,7 +58880,7 @@ $)
     $d W x $.  $d W y $.  $d W z $.  $d x y $.  $d x z $.  $d y z $.
     enmap2lem4.1 $e |- W = ( s e. ( G ^m a ) |-> ( s o. `' r ) ) $.
     $( Lemma for ~ enmap2 .  The converse of ` W ` is a function. 
-       (Contributed by ?who?, 26-Feb-2015.) $)
+       (Contributed by SF, 26-Feb-2015.) $)
     enmap2lem4 $p |- ( r : a -1-1-onto-> b -> Fun `' W ) $=
       ( vy vx vz cv wf1o wbr wa weq wi wal wceq enmap2lem3 brcnv ccnv wfun ccom
       anim12d eqtr3 alrimiv alrimivv relcnv dffun2 mpbiran anbi12i imbi1i albii
@@ -58897,7 +58896,7 @@ $)
     $d p s $.  $d q r $.  $d r s $.  $d W p $.  $d W q $.
     enmap2lem5.1 $e |- W = ( s e. ( G ^m a ) |-> ( s o. `' r ) ) $.
     $( Lemma for ~ enmap2 .  Calculate the range of ` W ` . 
-       (Contributed by ?who?, 26-Feb-2015.) $)
+       (Contributed by SF, 26-Feb-2015.) $)
     enmap2lem5 $p |- ( r : a -1-1-onto-> b -> ran W = ( G ^m b ) ) $=
       ( vp cv cmap wcel ccom wceq vex coex adantl wf syl wb cvv wf1o crn co wfn
       cfv wral wss enmap2lem2 ccnv coeq1 cnvex fvmpt elmapi f1ocnv f1of syl2anr
@@ -58921,7 +58920,7 @@ $)
     $d C a $.  $d C b $.  $d C r $.  $d C s $.  $d r s $.
     $( Set exponentiation preserves equinumerosity in the second argument.
        Theorem XI.1.22 of [Rosser] p. 357. 
-       (Contributed by ?who?, 26-Feb-2015.) $)
+       (Contributed by SF, 26-Feb-2015.) $)
     enmap2 $p |- ( A ~~ B -> ( C ^m A ) ~~ ( C ^m B ) ) $=
       ( va vb vr vs cvv wcel wa cen wbr cmap co cv wi wceq oveq2 imbi12d wf1o
       brex breq1 breq1d breq2 breq2d wex bren ccnv ccom cmpt wfn cdm enmap2lem4
@@ -58946,7 +58945,7 @@ $)
     $d G t $.  $d r y $.  $d t z $.  $d y z $.
     enmap1lem1.1 $e |- W = ( s e. ( A ^m G ) |-> ( r o. s ) ) $.
     $( Lemma for ~ enmap1 .  Set up stratification. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enmap1lem1 $p |- W e. _V $=
       ( vx vy vz vt cvv c2nd c1st cv cop wex wcel wa wbr vex co cxp csset cins3
       cmap ctxp csi3 cins4 cins2 cin c1c cima ccnv ccom csi cpw1 csymdif ccompl
@@ -58986,7 +58985,7 @@ $)
     $d A s $.  $d G s $.
     enmap1lem2.1 $e |- W = ( s e. ( A ^m G ) |-> ( r o. s ) ) $.
     $( Lemma for ~ enmap1 .  Establish functionhood. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enmap1lem2 $p |- W Fn ( A ^m G ) $=
       ( cv ccom cvv wcel cmap co wfn fnmpt vex coex a1i mprg ) EGZDGZHZIJZCABKL
       ZMDUCDUCUACIFNUBTUCJSTEODOPQR $.
@@ -58997,7 +58996,7 @@ $)
     $d a s $.  $d G s $.  $d r s $.  $d S s $.  $d A s $.
     enmap1lem3.1 $e |- W = ( s e. ( A ^m G ) |-> ( r o. s ) ) $.
     $( Lemma for ~ enmap2 .  Binary relationship condition over ` W ` . 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enmap1lem3 $p |- ( r : A -1-1-onto-> B ->
        ( S W T -> S = ( `' r o. T ) ) ) $=
       ( wbr cmap co wcel cv ccom wceq wa mpan cvv coeq2 wf1o cdm wfn enmap1lem2
@@ -59019,7 +59018,7 @@ $)
     $d A x $.  $d A y $.  $d A z $.  $d B x $.  $d B y $.  $d B z $.
     enmap1lem4.1 $e |- W = ( s e. ( A ^m G ) |-> ( r o. s ) ) $.
     $( Lemma for ~ enmap2 .  The converse of ` W ` is a function. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enmap1lem4 $p |- ( r : A -1-1-onto-> B -> Fun `' W ) $=
       ( vy vx vz cv wf1o wbr wa wi wal ccnv wceq enmap1lem3 brcnv weq wfun ccom
       anim12d eqtr3 alrimiv alrimivv relcnv dffun2 mpbiran anbi12i imbi1i albii
@@ -59036,7 +59035,7 @@ $)
     $d B p $.
     enmap1lem5.1 $e |- W = ( s e. ( A ^m G ) |-> ( r o. s ) ) $.
     $( Lemma for ~ enmap2 .  Calculate the range of ` W ` . 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enmap1lem5 $p |- ( r : A -1-1-onto-> B -> ran W = ( B ^m G ) ) $=
       ( vp cv wf1o cmap wcel ccom wceq coex wf syl2an cvv wb syl crn co wfn cfv
       wral wss enmap1lem2 coeq2 vex fvmpt adantl f1of elmapi fco wfo f1ofo forn
@@ -59062,7 +59061,7 @@ $)
     $d B r $.
     $( Set exponentiation preserves equinumerosity in the first argument.
        Theorem XI.1.23 of [Rosser] p. 357. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enmap1 $p |- ( A ~~ B -> ( A ^m C ) ~~ ( B ^m C ) ) $=
       ( vr vs cen wbr cv wf1o wex cmap co bren ccom cmpt wfn ccnv wfun crn wceq
       eqid enmap1lem2 a1i enmap1lem4 enmap1lem5 dff1o2 syl3anbrc enmap1lem1 syl
@@ -59077,7 +59076,7 @@ $)
     enpw1pw.1 $e |- A e. _V $.
     $( Unit power class and power class commute within equivalence.  Theorem
        XI.1.35 of [Rosser] p. 368. 
-       (Contributed by ?who?, 26-Feb-2015.) $)
+       (Contributed by SF, 26-Feb-2015.) $)
     enpw1pw $p |- ~P1 ~P A ~~ ~P ~P1 A $=
       ( vy vx vz cpw cpw1 cpw1fn wf1o wbr c1c wss ax-mp wceq cv wrex wa wex vex
       wcel cres cen cima wf1 pw1fnf1o f1of1 pw1ss1c f1ores mp2an wb df-ima elpw
@@ -59099,7 +59098,7 @@ $)
     $d t x $.  $d t y $.
     enprmaplem1.1 $e |- W = ( r e. ( A ^m B ) |-> ( `' r " { x } ) ) $.
     $( Lemma for ~ enprmap .  Set up stratification. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmaplem1 $p |- W e. _V $=
       ( vy vt csset c1st c2nd ccnv cv cima cop wcel wbr wa vex bitri co cvv cxp
       cmap cins3 csn cres csi ctxp c1c csymdif ccompl cin cmpt wceq wel elima1c
@@ -59120,7 +59119,7 @@ $)
     $d A r $.  $d B r $.
     enprmaplem2.1 $e |- W = ( r e. ( A ^m B ) |-> ( `' r " { x } ) ) $.
     $( Lemma for ~ enprmap .  Establish functionhood. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmaplem2 $p |- W Fn ( A ^m B ) $=
       ( cv ccnv csn cima cvv wcel cmap co wfn fnmpt vex cnvex snex imaex mprg
       a1i ) EGZHZAGZIZJZKLZDBCMNZOEUIEUIUGDKFPUHUCUILUDUFUCEQRUESTUBUA $.
@@ -59134,7 +59133,7 @@ $)
     $d W q $.  $d w x $.  $d w y $.  $d w z $.  $d W z $.  $d x z $.  $d y z $.
     enprmaplem3.1 $e |- W = ( r e. ( A ^m B ) |-> ( `' r " { x } ) ) $.
     $( Lemma for ~ enprmap .  The converse of ` W ` is a function. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmaplem3 $p |- ( ( x =/= y /\ A = { x , y } ) -> Fun `' W ) $=
       ( vz vp vq vw cv wceq wa wbr weq wcel wb fnbrfvb syl wne cpr ccnv wi wfun
       wal cmap co csn cima brcnv cdm breldm wfn enprmaplem2 fndm ax-mp syl6eleq
@@ -59185,7 +59184,7 @@ $)
     enprmaplem4.1 $e |- R = ( u e. B |-> if ( u e. p , x , y ) ) $.
     enprmaplem4.2 $e |- B e. _V $.
     $( Lemma for ~ enprmap .  More stratification condition setup. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmaplem4 $p |- R e. _V $=
       ( vz cvv cxp cv cpw1 ccompl ccnv wel wcel wa bitri vex csset csymdif cima
       cins3 cun cins2 c1c cin cif cmpt csn cop wn wo elun opelxp snelpw1 anbi2i
@@ -59208,7 +59207,7 @@ $)
     enprmaplem5.3 $e |- B e. _V $.
     $( Lemma for ~ enprmap .  Establish that ` ~P B ` is a subset of the range
        of ` W ` . 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmaplem5 $p |- ( ( x =/= y /\ A = { x , y } ) -> ~P B C_ ran W ) $=
       ( vz cv wceq wa wcel vex cvv syl wne cpr cpw crn wss elpw wbr w3a cfv csn
       ccnv cima cmap co wf wel cif wral wo ifeqor ifex elpr syl5eleqr ralrimivw
@@ -59244,7 +59243,7 @@ $)
     enprmaplem6.1 $e |- W = ( r e. ( A ^m B ) |-> ( `' r " { x } ) ) $.
     enprmaplem6.2 $e |- B e. _V $.
     $( Lemma for ~ enprmap .  The range of ` W ` is ` ~P B ` . 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmaplem6 $p |- ( ( x =/= y /\ A = { x , y } ) -> ran W = ~P B ) $=
       ( vp vs vu cv wceq wa crn wss wcel cdm wb ccnv wne cpr cpw wbr wex co cfv
       cmap breldm wfn enprmaplem2 fndm syl6eleq fnbrfvb sylancr ibir jca wi w3a
@@ -59266,7 +59265,7 @@ $)
     enprmap.1 $e |- B e. _V $.
     $( A mapping from a two element pair onto a set is equinumerous with the
        power class of the set.  Theorem XI.1.28 of {{Rosser}}. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmap $p |- ( ( x =/= y /\ A = { x , y } ) -> ( A ^m B ) ~~ ~P B ) $=
       ( vr cv wne cpr wceq wa cmap co cpw ccnv csn cima cmpt wf1o cen wfun eqid
       wbr wfn crn enprmaplem2 a1i enprmaplem3 enprmaplem6 syl3anbrc enprmaplem1
@@ -59284,7 +59283,7 @@ $)
     enprmapc.3 $e |- C e. _V $.
     $( A mapping from a two element pair onto a set is equinumerous with the
        power class of the set.  Theorem XI.1.28 of {{Rosser}}. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmapc $p |- ( ( A =/= B /\ P = { A , B } ) -> ( P ^m C ) ~~ ~P C ) $=
       ( vx vy cv wne cpr wceq wa cmap wi eqeq2d anbi12d imbi1d vtocl co cpw cen
       wbr neeq1 preq1 neeq2 preq2 enprmap ) HJZBKZDUJBLZMZNZDCOUACUBUCUDZPZABKZ
@@ -59297,7 +59296,7 @@ $)
     $d A x $.  $d r x $.  $d r y $.  $d x y $.
     nenpw1pwlem1.1 $e |- S = { x e. A | -. x e. ( r ` { x } ) } $.
     $( Lemma for ~ nenpw1pw .  Set up stratification. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     nenpw1pwlem1 $p |- ( A e. V -> S e. _V ) $=
       ( vy wcel cv csn cfv wn cin cvv csset vex wceq wa wex bitri crab cfullfun
       cab dfrab2 eqtri cdm cuni1 ccompl elcompl wel cop elin wbr snex brfullfun
@@ -59317,7 +59316,7 @@ $)
     nenpw1pwlem2.1 $e |- S = { x e. A | -. x e. ( r ` { x } ) } $.
     $( Lemma for ~ nenpw1pw .  Establish the main theorem with an extra
        hypothesis. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     nenpw1pwlem2 $p |- -. ~P1 A ~~ ~P A $=
       ( vy vu wbr cv wcel wn wb wrex wex cvv syl csn cfv wceq eleq2d cpw pm5.19
       cpw1 cen a1i nrex nex wf1o bren cdm f1odm vex dmex syl6eqelr pw1exb sylib
@@ -59343,7 +59342,7 @@ $)
     $d A r $.  $d A x $.  $d r x $.
     $( No unit power class is equinumerous with the corresponding power class.
        Theorem XI.1.6 of [Rosser] p. 347. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     nenpw1pw $p |- -. ~P1 A ~~ ~P A $=
       ( vx vr cv csn cfv wcel wn crab eqid nenpw1pwlem2 ) BABDZLECDFGHBAIZCMJK
       $.
@@ -59354,7 +59353,7 @@ $)
     $d A a $.  $d a b $.  $d A b $.  $d B b $.
     $( If ` A ` and ` B ` are equinumerous, then so are their power sets.
        Theorem XI.1.36 of [Rosser] p. 369. 
-       (Contributed by ?who?, 17-Mar-2015.) $)
+       (Contributed by SF, 17-Mar-2015.) $)
     enpw $p |- ( A ~~ B -> ~P A ~~ ~P B ) $=
       ( va vb cvv wcel cen wbr cpw cv wi wceq pweq imbi12d c0 cmap vn0 vvex 0ex
       co wa brex breq1 breq1d breq2 breq2d cpr enmap2 eqid enprmapc mp2an ensym
@@ -59469,7 +59468,7 @@ $)
   df-tcfn $a |- TcFn = ( x e. 1c |-> T_c U. x ) $.
 
   $( Cardinality equality law. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   nceq $p |- ( A = B -> Nc A = Nc B ) $=
     ( wceq cen cec cnc eceq1 df-nc 3eqtr4g ) ABCADEBDEAFBFABDGAHBHI $.
     $( [24-Feb-2015] $)
@@ -59477,7 +59476,7 @@ $)
   ${
     nceqi.1 $e |- A = B $.
     $( Equality inference for cardinality. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     nceqi $p |- Nc A = Nc B $=
       ( wceq cnc nceq ax-mp ) ABDAEBEDCABFG $.
       $( [24-Feb-2015] $)
@@ -59486,14 +59485,14 @@ $)
   ${
     nceqd.1 $e |- ( ph -> A = B ) $.
     $( Equality deduction for cardinality. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     nceqd $p |- ( ph -> Nc A = Nc B ) $=
       ( wceq cnc nceq syl ) ABCEBFCFEDBCGH $.
       $( [24-Feb-2015] $)
   $}
 
   $( The class of all cardinal numbers is a set. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   ncsex $p |- NC e. _V $=
     ( cncs cvv cen cqs df-ncs enex vvex qsex eqeltri ) ABCDBEBCFGHI $.
     $( [24-Feb-2015] $)
@@ -59501,7 +59500,7 @@ $)
   ${
     $d A a b x $.  $d B a b x y $.
     $( Binary relationship form of cardinal less than or equal. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     brlecg $p |- ( ( A e. V /\ B e. W ) ->
        ( A <_c B <-> E. x e. A E. y e. B x C_ y ) ) $=
       ( vb va cv wss wrex clec rexeq wceq rexbidv df-lec brabg ) AIBIJZBGIZKZAH
@@ -59511,7 +59510,7 @@ $)
     brlec.1 $e |- A e. _V $.
     brlec.2 $e |- B e. _V $.
     $( Binary relationship form of cardinal less than or equal. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     brlec $p |- ( A <_c B <-> E. x e. A E. y e. B x C_ y ) $=
       ( cvv wcel clec wbr cv wss wrex wb brlecg mp2an ) CGHDGHCDIJAKBKLBDMACMNE
       FABCDGGOP $.
@@ -59519,7 +59518,7 @@ $)
   $}
 
   $( Binary relationship form of cardinal less than. 
-     (Contributed by ?who?, 4-Mar-2015.) $)
+     (Contributed by SF, 4-Mar-2015.) $)
   brltc $p |- ( A <c B <-> ( A <_c B /\ A =/= B ) ) $=
     ( cltc wbr cvv wcel clec wne wa brex simprd adantr cid wn cdif df-ltc breqi
     brdif bitri ideqg necon3bbid anbi2d syl5bb pm5.21nii ) ABCDZBEFZABGDZABHZIZ
@@ -59530,7 +59529,7 @@ $)
   ${
     $d a b x y $.
     $( Cardinal less than or equal is a relationship. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     rellec $p |- Rel <_c $=
       ( vx vy vb va cv wss wrex clec df-lec relopabi ) AEBEFBCEGADEGDCHABDCIJ
       $.
@@ -59542,7 +59541,7 @@ $)
     $d b x $.  $d b y $.  $d t u $.  $d t x $.  $d t y $.  $d u x $.  $d u y $.
     $d x y $.
     $( Cardinal less than or equal is a set. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     lecex $p |- <_c e. _V $=
       ( va vb vx vy vt vu clec csset ccom cv wrex wbr wa csn 2exbii bitri exbii
       wex vex ssetex csi ccnv cvv rellec relco wss wceq wel 19.41vv anass ancom
@@ -59563,20 +59562,20 @@ $)
   $}
 
   $( Cardinal strict less than is a set. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   ltcex $p |- <c e. _V $=
     ( cltc clec cid cdif cvv df-ltc lecex idex difex eqeltri ) ABCDEFBCGHIJ $.
     $( [24-Feb-2015] $)
 
   $( The cardinality of a class is a set. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   ncex $p |- Nc A e. _V $=
     ( cnc cen cec cvv df-nc wcel enex ecexg ax-mp eqeltri ) ABACDZEAFCEGLEGHAEC
     IJK $.
     $( [24-Feb-2015] $)
 
   $( The empty class is not a cardinal number. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   nulnnc $p |- -. (/) e. NC $=
     ( c0 wceq cncs wcel eqid wne cvv cen cqs cdm dmen elqsn0 mpan df-ncs eleq2s
     wn necon2bi ax-mp ) AABACDZPAESAAAAFZAGHIZCHJGBAUADTKGAHLMNOQR $.
@@ -59585,7 +59584,7 @@ $)
   ${
     $d A x $.
     $( Membership in the cardinals. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     elncs $p |- ( A e. NC <-> E. x A = Nc x ) $=
       ( cncs wcel cvv cen cqs cnc wceq wex df-ncs eleq2i elex ncex eleq1 mpbiri
       cv exlimiv cec wrex elqsg df-nc eqeq2i exbii rexv syl6bbr pm5.21nii bitri
@@ -59597,7 +59596,7 @@ $)
   ${
     $d A x $.
     $( The cardinality of a set is a cardinal number. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     ncelncs $p |- ( A e. V -> Nc A e. NC ) $=
       ( vx wcel cnc cv wceq wex cncs elisset nceq eqcoms eximi syl elncs sylibr
       ) ABDZAEZCFZEGZCHZRIDQSAGZCHUACABJUBTCTASASKLMNCROP $.
@@ -59607,14 +59606,14 @@ $)
   ${
     ncelncsi.1 $e |- A e. _V $.
     $( The cardinality of a set is a cardinal number. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     ncelncsi $p |- Nc A e. NC $=
       ( cvv wcel cnc cncs ncelncs ax-mp ) ACDAEFDBACGH $.
       $( [10-Mar-2015] $)
   $}
 
   $( A set is a member of its own cardinal. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   ncidg $p |- ( A e. V -> A e. Nc A ) $=
     ( wcel cen cec cnc wbr enrflxg elec sylibr df-nc syl6eleqr ) ABCZAADEZAFMAA
     DGANCABHAADIJAKL $.
@@ -59623,7 +59622,7 @@ $)
   ${
     ncid.1 $e |- A e. _V $.
     $( A set is a member of its own cardinal. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     ncid $p |- A e. Nc A $=
       ( cvv wcel cnc ncidg ax-mp ) ACDAAEDBACFG $.
       $( [24-Feb-2015] $)
@@ -59632,7 +59631,7 @@ $)
   ${
     $d A x $.
     $( The cardinality of a proper class is the empty set. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     ncprc $p |- ( -. A e. _V -> Nc A = (/) ) $=
       ( vx cvv wcel wn cv cnc wal wceq cen cec ecexr df-nc eleq2s con3i alrimiv
       c0 eq0 sylibr ) ACDZEZBFZAGZDZEZBHUCQIUAUEBUDTTUBAJKUCUBAJLAMNOPBUCRS $.
@@ -59640,7 +59639,7 @@ $)
   $}
 
   $( Membership in cardinality. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   elnc $p |- ( A e. Nc B <-> A ~~ B ) $=
     ( cnc wcel cvv wa cen wbr elex cec ecexr df-nc eleq2s jca brex eleq2i bitri
     elec cer ener a1i simpr simpl ersymb syl5bb pm5.21nii ) ABCZDZAEDZBEDZFZABG
@@ -59650,7 +59649,7 @@ $)
 
   ${
     $( Equality of cardinalities. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     eqncg $p |- ( A e. V -> ( Nc A = Nc B <-> A ~~ B ) ) $=
       ( wcel cvv cnc cen wbr wa cec ncidg adantr wb eleq2 adantl mpbid df-nc ex
       wceq a1i syl6eleq ecexr syl brex simprd cer ener cdm dmen elex simpr erth
@@ -59664,7 +59663,7 @@ $)
   ${
     eqnc.1 $e |- A e. _V $.
     $( Equality of cardinalities. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     eqnc $p |- ( Nc A = Nc B <-> A ~~ B ) $=
       ( cvv wcel cnc wceq cen wbr wb eqncg ax-mp ) ADEAFBFGABHIJCABDKL $.
       $( [24-Feb-2015] $)
@@ -59674,7 +59673,7 @@ $)
     $d A y $.  $d X y $.
     $( A cardinal is equal to the cardinality of a set iff it contains the
        set. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     ncseqnc $p |- ( A e. NC -> ( A = Nc X <-> X e. A ) ) $=
       ( vy cncs wcel cv cnc wceq wex elncs cen wbr cvv cec vex ncid eleq2 df-nc
       wb a1i mpbiri syl6eleq ecexr syl brex simpld cer ener cdm dmen id eqeq12i
@@ -59689,7 +59688,7 @@ $)
   ${
     eqnc2.1 $e |- X e. _V $.
     $( Alternate condition for equality to a cardinality. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     eqnc2 $p |- ( A = Nc X <-> ( A e. NC /\ X e. A ) ) $=
       ( cnc wceq cncs wcel ncelncsi eleq1 mpbiri ncseqnc biadan2 ) ABDZEZAFGZBA
       GNOMFGBCHAMFIJABKL $.
@@ -59701,7 +59700,7 @@ $)
     $d b m $.  $d b n $.  $d c g $.  $d g m $.  $d g n $.  $d M a $.  $d M b $.
     $d M m $.  $d m n $.  $d M n $.  $d N a $.  $d N b $.  $d N g $.  $d N n $.
     $( The value of cardinal multiplication. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     ovmuc $p |- ( ( M e. NC /\ N e. NC ) ->
        ( M .c N ) = { a | E. b e. M E. g e. N a ~~ ( b X. g ) } ) $=
       ( vc cncs wcel cv cen wbr wrex cvv wceq wa ccross c2nd c1st cop 3bitri vm
@@ -59732,7 +59731,7 @@ $)
     mucnc.2 $e |- B e. _V $.
     $( Cardinal multiplication in terms of cardinality.  Theorem XI.2.27 of
        [Rosser] p. 378. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     mucnc $p |- ( Nc A .c Nc B ) = Nc ( A X. B ) $=
       ( vx vy vz cnc cv cxp cen wbr wrex cab cncs wcel wceq ncelncsi wa wex cec
       cmuc co ovmuc mp2an df-nc dfec2 elnc anbi12i ensym 2exbii enrflx bi2anan9
@@ -59750,7 +59749,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( Closure law for cardinal multiplicaton. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     muccl $p |- ( ( A e. NC /\ B e. NC ) -> ( A .c B ) e. NC ) $=
       ( vx vy cncs wcel wa cv cnc wceq wex co elncs anbi12i eeanv bitr4i oveq12
       cmuc cxp vex mucnc xpex ncelncsi eqeltri syl6eqel exlimivv sylbi ) AEFZBE
@@ -59762,7 +59761,7 @@ $)
   ${
     $d a b c d m n $.
     $( Cardinal multiplication is a set. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     mucex $p |- .c e. _V $=
       ( vm vn va vb vc vd cncs csset cen c1c wbr wrex cop wcel wex otelins2 vex
       cv wa bitri cmuc cxp cvv cins2 ccnv cins4 cin crn csi3 cima cins3 csymdif
@@ -59793,7 +59792,7 @@ $)
     $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d x y $.
     $( Cardinal multiplication commutes.  Theorem XI.2.28 of [Rosser]
        p. 378. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     muccom $p |- ( ( A e. NC /\ B e. NC ) -> ( A .c B ) = ( B .c A ) ) $=
       ( vx vy cncs wcel wa cv cnc wceq wex co elncs anbi12i eeanv cxp vex mucnc
       cmuc oveq12 bitr4i cen wbr xpcomen xpex eqnc mpbir 3eqtr4i ancoms 3eqtr4a
@@ -59809,7 +59808,7 @@ $)
     $d C y $.  $d C z $.  $d x y $.  $d x z $.  $d y z $.
     $( Cardinal multiplication associates.  Theorem XI.2.29 of [Rosser]
        p. 378. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     mucass $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
        ( ( A .c B ) .c C ) = ( A .c ( B .c C ) ) ) $=
       ( vx vy vz cncs wcel w3a cv cnc wceq wex cmuc co elncs cxp vex xpex mucnc
@@ -59830,7 +59829,7 @@ $)
     ncdisjun.1 $e |- A e. _V $.
     ncdisjun.2 $e |- B e. _V $.
     $( Cardinality of disjoint union of two sets. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     ncdisjun $p |- ( ( A i^i B ) = (/) -> Nc ( A u. B ) = ( Nc A +c Nc B ) ) $=
       ( vr vp vq cin c0 wceq cv wcel cen wbr elnc wf1o ccnv wa cima adantl cplc
       vx cun cnc wex f1ocnv imaundi cdm crn imadmrn a1i f1odm imaeq2d wfo f1ofo
@@ -59855,14 +59854,14 @@ $)
   $}
 
   $( Cardinal zero is the cardinality of the empty set. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   df0c2 $p |- 0c = Nc (/) $=
     ( vx c0 cen cec cv wbr cab cnc c0c dfec2 df-nc wceq wcel en0 ensym 3bitr4ri
     el0c abbi2i 3eqtr4ri ) BCDBAEZCFZAGBHIABCJBKUAAITBCFTBLUATIMTNBTOTQPRS $.
     $( [24-Feb-2015] $)
 
   $( Cardinal zero is a cardinal number. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   0cnc $p |- 0c e. NC $=
     ( c0c c0 cnc cncs df0c2 0ex ncelncsi eqeltri ) ABCDEBFGH $.
     $( [24-Feb-2015] $)
@@ -59871,7 +59870,7 @@ $)
   ${
     $d f x $.  $d f y $.  $d f z $.  $d x y $.  $d x z $.  $d y z $.
     $( Cardinal one is a cardinal number. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     1cnc $p |- 1c e. NC $=
       ( vx vy vz vf c1c wcel cv cnc wceq wex csn cen wbr cvv vex exlimiv eqeq2d
       crn spcev sylbi cncs dfec2 df-nc el1c en2sn mp2an breq2 mpbiri wf1o bren
@@ -59891,7 +59890,7 @@ $)
   ${
     df1c3.1 $e |- A e. _V $.
     $( Cardinal one is the cardinality of a singleton. 
-       (Contributed by ?who?, 2-Mar-2015.) $)
+       (Contributed by SF, 2-Mar-2015.) $)
     df1c3 $p |- 1c = Nc { A } $=
       ( c1c csn cnc wceq wcel snel1c cncs wb 1cnc ncseqnc ax-mp mpbir ) CADZEFZ
       OCGZABHCIGPQJKCOLMN $.
@@ -59901,7 +59900,7 @@ $)
   ${
     $d A x $.
     $( Cardinal one is the cardinality of a singleton. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     df1c3g $p |- ( A e. V -> 1c = Nc { A } ) $=
       ( vx c1c cv csn cnc wceq sneq nceqd eqeq2d vex df1c3 vtoclg ) DCEZFZGZHDA
       FZGZHCABOAHZQSDTPROAIJKOCLMN $.
@@ -59912,7 +59911,7 @@ $)
     $d A x $.
     $( Cardinal multiplication by zero.  Theorem XI.2.32 of [Rosser]
        p. 379. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     muc0 $p |- ( A e. NC -> ( A .c 0c ) = 0c ) $=
       ( vx cncs wcel cv cnc wceq wex c0c cmuc co elncs oveq1 c0 cxp nceqi df0c2
       xp0 oveq2i vex 0ex mucnc eqtri 3eqtr4i syl6eq exlimiv sylbi ) ACDABEZFZGZ
@@ -59924,7 +59923,7 @@ $)
   ${
     $d A x $.
     $( Cardinal multiplication by one. 
-       (Contributed by ?who?, 11-Mar-2015.) $)
+       (Contributed by SF, 11-Mar-2015.) $)
     mucid1 $p |- ( A e. NC -> ( A .c 1c ) = A ) $=
       ( vx cncs wcel cv cnc wceq wex c1c cmuc co elncs csn cxp vex df1c3 oveq2i
       snex mucnc cen wbr xpsnen xpex eqnc mpbir 3eqtri oveq1 id 3eqtr4a exlimiv
@@ -59937,7 +59936,7 @@ $)
   ${
     $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d x y $.  $d x z $.  $d y z $.
     $( The cardinals are closed under cardinal addition. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     ncaddccl $p |- ( ( A e. NC /\ B e. NC ) -> ( A +c B ) e. NC ) $=
       ( vx vy vz cncs wcel cv cnc wceq wex elncs wa c0 csn cxp cen mpbir eqcomi
       cplc eeanv ccompl wbr vex 0ex complex xpsnen snex xpex eqnc eqtr addceq12
@@ -59952,7 +59951,7 @@ $)
   $}
 
   $( The successor of a cardinal is a cardinal. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   peano2nc $p |- ( A e. NC -> ( A +c 1c ) e. NC ) $=
     ( cncs wcel c1c cplc 1cnc ncaddccl mpan2 ) ABCDBCADEBCFADGH $.
     $( [24-Feb-2015] $)
@@ -59960,7 +59959,7 @@ $)
   ${
     $d A x n $.
     $( A finite cardinal number is a cardinal number. 
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     nnnc $p |- ( A e. Nn -> A e. NC ) $=
       ( vx vn cv cncs wcel c0c c1c cplc cab abid2 ncsex eqeltri eleq1 0cnc cnnc
       cvv wi peano2nc a1i finds ) BDZEFZGEFCDZEFZUDHIZEFZAEFBCAUCBJEQBEKLMUBGEN
@@ -59969,7 +59968,7 @@ $)
   $}
 
   $( The finite cardinals are a subset of the cardinals. 
-     (Contributed by ?who?, 24-Feb-2015.) $)
+     (Contributed by SF, 24-Feb-2015.) $)
   nnssnc $p |- Nn C_ NC $=
     ( vx cnnc cncs cv nnnc ssriv ) ABCADEF $.
     $( [24-Feb-2015] $)
@@ -59977,7 +59976,7 @@ $)
   ${
     $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d x y $.
     $( Two cardinals are either disjoint or equal. 
-       (Contributed by ?who?, 25-Feb-2015.) $)
+       (Contributed by SF, 25-Feb-2015.) $)
     ncdisjeq $p |- ( ( A e. NC /\ B e. NC ) ->
        ( ( A i^i B ) = (/) \/ A = B ) ) $=
       ( vx vy cncs wcel wa cv cnc wceq wex cin c0 wo elncs cen df-nc eqtr mpan2
@@ -59991,7 +59990,7 @@ $)
   $}
 
   $( If two cardinals have an element in common, then they are equal. 
-     (Contributed by ?who?, 25-Feb-2015.) $)
+     (Contributed by SF, 25-Feb-2015.) $)
   nceleq $p |- ( ( ( A e. NC /\ B e. NC ) /\ ( X e. A /\ X e. B ) ) ->
      A = B ) $=
     ( cncs wcel wa wceq cin c0 wn elin n0i sylbir ncdisjeq ord syl5 imp ) ADEBD
@@ -60004,7 +60003,7 @@ $)
     $d t y $.  $d x y $.
     $( Successor is one-to-one over the cardinals.  Theorem XI.2.12 of
        [Rosser] p. 375. 
-       (Contributed by ?who?, 25-Feb-2015.) $)
+       (Contributed by SF, 25-Feb-2015.) $)
     peano4nc $p |- ( ( A e. NC /\ B e. NC ) ->
              ( ( A +c 1c ) = ( B +c 1c ) <-> A = B ) ) $=
       ( vg vt vx vf vy cncs wcel wa c1c cplc wceq adantr cnc eqtr2 csn wrex vex
@@ -60028,7 +60027,7 @@ $)
   ${
     $d A x y $.
     $( A cardinal is finite iff it is a subset of ` Fin ` . 
-       (Contributed by ?who?, 25-Feb-2015.) $)
+       (Contributed by SF, 25-Feb-2015.) $)
     ncssfin $p |- ( A e. NC -> ( A e. Nn <-> A C_ Fin ) ) $=
       ( vx vy cncs wcel cnnc cfin wss cuni elssuni cv wrex wal c0c wne wex wceq
       wi c0 wa df-fin syl6sseqr dfss2 elfin imbi2i wb peano1 ne0i r19.37zv mp2b
@@ -60048,7 +60047,7 @@ $)
     ncpw1.1 $e |- A e. _V $.
     $( The cardinality of two sets are equal iff their unit power classes have
        the same cardinality. 
-       (Contributed by ?who?, 25-Feb-2015.) $)
+       (Contributed by SF, 25-Feb-2015.) $)
     ncpw1 $p |- ( Nc A = Nc B <-> Nc ~P1 A = Nc ~P1 B ) $=
       ( cen wbr cpw1 cnc wceq enpw1 eqnc pw1ex 3bitr4i ) ABDEAFZBFZDEAGBGHMGNGH
       ABIABCJMNACKJL $.
@@ -60058,7 +60057,7 @@ $)
   ${
     ncpwpw1.1 $e |- A e. _V $.
     $( Power class and unit power class commute within cardinality. 
-       (Contributed by ?who?, 26-Feb-2015.) $)
+       (Contributed by SF, 26-Feb-2015.) $)
     ncpwpw1 $p |- Nc ~P ~P1 A = Nc ~P1 ~P A $=
       ( cpw1 cpw cnc wceq cen wbr enpw1pw ensym mpbi pw1ex pwex eqnc mpbir ) AC
       ZDZEADCZEFQRGHZRQGHSABIRQJKQRPABLMNO $.
@@ -60066,7 +60065,7 @@ $)
   $}
 
   $( The cardinality of ` 1c ` is equal to that of its power class. 
-     (Contributed by ?who?, 26-Feb-2015.) $)
+     (Contributed by SF, 26-Feb-2015.) $)
   ncpw1c $p |- Nc ~P 1c = Nc 1c $=
     ( cvv cpw1 cpw cnc c1c vvex ncpwpw1 df1c2 pweqi nceqi wceq pwv pw1eq eqtr4i
     ax-mp 3eqtr4i ) ABZCZDACZBZDECZDEDAFGUAREQHIJETEQTHSAKTQKLSAMONJP $.
@@ -60075,7 +60074,7 @@ $)
   ${
     $( One plus one equals two.  Theorem *110.64 of {{WhiteheadRussell}}.  This
        theorem is occasionally useful. 
-       (Contributed by ?who?, 2-Mar-2015.) $)
+       (Contributed by SF, 2-Mar-2015.) $)
     1p1e2c $p |- ( 1c +c 1c ) = 2c $=
       ( c0 csn cvv cun cnc cplc c2c c1c cin wceq wcel 0ex ax-mp vvex elsn mtbir
       wn n0i snex df1c3 disjsn mpbir ncdisjun df-2c df-pr nceqi eqtri addceq12i
@@ -60085,7 +60084,7 @@ $)
   $}
 
   $( Two plus one equals three. 
-     (Contributed by ?who?, 2-Mar-2015.) $)
+     (Contributed by SF, 2-Mar-2015.) $)
   2p1e3c $p |- ( 2c +c 1c ) = 3c $=
     ( c0 cvv cpr csn cdif cun cnc cplc c3c c2c c1c cin wceq wcel vvex ax-mp 0ex
     wn mtbir snex wo wne vn0 eldifsn mpbir2an n0i wa notnoti intnan eldif eleq2
@@ -60099,7 +60098,7 @@ $)
   ${
     $d A x $.  $d A y $.  $d x y $.
     $( The cardinal T operation always yields a set. 
-       (Contributed by ?who?, 2-Mar-2015.) $)
+       (Contributed by SF, 2-Mar-2015.) $)
     tcex $p |- T_c A e. _V $=
       ( vx vy ctc cv cncs wcel cpw1 cnc wceq wrex cio cvv df-tc iotaex eqeltri
       wa ) ADBEZFGRCEHIJCAKQZBLMCABNSBOP $.
@@ -60109,7 +60108,7 @@ $)
   ${
     $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d x y $.
     $( Equality theorem for cardinal T operator. 
-       (Contributed by ?who?, 2-Mar-2015.) $)
+       (Contributed by SF, 2-Mar-2015.) $)
     tceq $p |- ( A = B -> T_c A = T_c B ) $=
       ( vx vy wceq cv cncs wcel cpw1 cnc wa cio ctc rexeq anbi2d iotabidv df-tc
       wrex 3eqtr4g ) ABEZCFZGHZUADFIJEZDARZKZCLUBUCDBRZKZCLAMBMTUEUGCTUDUFUBUCD
@@ -60122,7 +60121,7 @@ $)
     $d x y $.  $d x z $.  $d y z $.
     $( Given a cardinal, there is a unique cardinal that contains the unit
        power class of its members. 
-       (Contributed by ?who?, 2-Mar-2015.) $)
+       (Contributed by SF, 2-Mar-2015.) $)
     ncspw1eu $p |- ( A e. NC -> E! x e. NC E. y e. A x = Nc ~P1 y ) $=
       ( vz vw cncs wcel cv cpw1 cnc wceq wrex wa weq wi wral wex c0 sylib eqeq1
       wreu wne nulnnc eleq1 mtbiri necon2ai n0 vex pw1ex ncelncsi rspcev mp2an
@@ -60143,7 +60142,7 @@ $)
   ${
     $d A x y $.
     $( The cardinal T operation over a cardinal yields a cardinal. 
-       (Contributed by ?who?, 2-Mar-2015.) $)
+       (Contributed by SF, 2-Mar-2015.) $)
     tccl $p |- ( A e. NC -> T_c A e. NC ) $=
       ( vx vy cncs wcel ctc cv cpw1 cnc wceq wrex wa cio wreu ncspw1eu reiotacl
       df-tc syl syl5eqel ) ADEZAFBGZDEUACGHIJCAKZLBMZDCABQTUBBDNUCDEBCAOUBBDPRS
@@ -60154,7 +60153,7 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( The defining property of the cardinal T operation. 
-       (Contributed by ?who?, 2-Mar-2015.) $)
+       (Contributed by SF, 2-Mar-2015.) $)
     eqtc $p |- ( A e. NC -> ( T_c A = B <-> E. x e. A B = Nc ~P1 x ) ) $=
       ( vy cncs wcel ctc wceq cv cpw1 cnc wrex wa simpr tccl adantr eqeltrrd ex
       wi wb vex pw1ex ncelncsi eleq1 mpbiri rexlimivw a1i wreu ncspw1eu rexbidv
@@ -60169,7 +60168,7 @@ $)
     $d A y $.  $d B y $.
     $( The unit power class of an element of a cardinal is in the cardinal's T
        raising. 
-       (Contributed by ?who?, 2-Mar-2015.) $)
+       (Contributed by SF, 2-Mar-2015.) $)
     pw1eltc $p |- ( ( A e. NC /\ B e. A ) -> ~P1 B e. T_c A ) $=
       ( vy cncs wcel wa cpw1 cnc ctc cvv pw1exg ncidg syl adantl wceq wrex eqid
       cv pw1eq nceqd eqeq2d rspcev mpan2 wb eqtc adantr mpbird eleqtrrd ) ADEZ
@@ -60179,7 +60178,7 @@ $)
   $}
 
   $( The T raising of cardinal zero is still cardinal zero. 
-     (Contributed by ?who?, 2-Mar-2015.) $)
+     (Contributed by SF, 2-Mar-2015.) $)
   tc0c $p |- T_c 0c = 0c $=
     ( c0c ctc cncs wcel c0 wceq 0cnc tccl ax-mp cpw1 pw10 nulel0c pw1eltc mp2an
     eqeltrri nceleq mp4an ) ABZCDZACDZERDEADZRAFTSGAHIGEJZERKTUAUBRDGLAEMNOLRAE
@@ -60189,7 +60188,7 @@ $)
   ${
     $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d x y $.
     $( T raising distributes over addition. 
-       (Contributed by ?who?, 2-Mar-2015.) $)
+       (Contributed by SF, 2-Mar-2015.) $)
     tcdi $p |- ( ( A e. NC /\ B e. NC ) ->
        T_c ( A +c B ) = ( T_c A +c T_c B ) ) $=
       ( vx vy cncs wcel wa cv c0 cnc wceq wex cplc ctc cpw1 mp2an ax-mp pw1eltc
@@ -60211,7 +60210,7 @@ $)
   $}
 
   $( T raising does not change cardinal one. 
-     (Contributed by ?who?, 2-Mar-2015.) $)
+     (Contributed by SF, 2-Mar-2015.) $)
   tc1c $p |- T_c 1c = 1c $=
     ( c1c ctc cncs wcel c0 csn wceq 1cnc tccl ax-mp cpw1 0ex pw1sn snel1c mp2an
     pw1eltc eqeltrri snex nceleq mp4an ) ABZCDZACDZEFZFZUADUEADUAAGUCUBHAIJHUDK
@@ -60219,7 +60218,7 @@ $)
     $( [2-Mar-2015] $)
 
   $( T raising does not change cardinal two. 
-     (Contributed by ?who?, 2-Mar-2015.) $)
+     (Contributed by SF, 2-Mar-2015.) $)
   tc2c $p |- T_c 2c = 2c $=
     ( c1c cplc ctc c2c cncs wcel wceq 1cnc tcdi mp2an tc1c addceq12i eqtri tceq
     1p1e2c ax-mp 3eqtr3i ) AABZCZRDCZDSACZUABZRAEFZUCSUBGHHAAIJUAAUAAKKLMRDGSTG
@@ -60227,14 +60226,14 @@ $)
     $( [2-Mar-2015] $)
 
   $( Two is a finite cardinal. 
-     (Contributed by ?who?, 4-Mar-2015.) $)
+     (Contributed by SF, 4-Mar-2015.) $)
   2nnc $p |- 2c e. Nn $=
     ( c1c cplc c2c cnnc 1p1e2c wcel 1cnnc peano2 ax-mp eqeltrri ) AABZCDEADFKDF
     GAHIJ $.
     $( [4-Mar-2015] $)
 
   $( Two is a cardinal number. 
-     (Contributed by ?who?, 3-Mar-2015.) $)
+     (Contributed by SF, 3-Mar-2015.) $)
   2nc $p |- 2c e. NC $=
     ( c2c cnnc wcel cncs 2nnc nnnc ax-mp ) ABCADCEAFG $.
     $( [3-Mar-2015] $)
@@ -60242,7 +60241,7 @@ $)
   ${
     $d A m n $.
     $( The unit power class of a finite set is finite. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     pw1fin $p |- ( A e. Fin -> ~P1 A e. Fin ) $=
       ( vn vm cv wcel cnnc wrex cpw1 ncfinraise 3anidm23 rexlimiva simpl reximi
       cfin wa syl elfin 3imtr4i ) ABDZEZBFGZAHZCDEZCFGZANEUBNEUAUCUCOZCFGZUDTUF
@@ -60253,7 +60252,7 @@ $)
   ${
     $d A a $.  $d A m $.  $d a n $.  $d A n $.  $d m n $.
     $( Cardinal T is closed under the natural numbers. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     nntccl $p |- ( A e. Nn -> T_c A e. Nn ) $=
       ( vn vm va cnnc wcel cv wex c0 wceq sylib wa wrex cfin elfin syl ad2antrr
       cncs nnnc mpd ctc wne nulnnn eleq1 mtbiri necon2ai cpw1 wel eleq2 rspcev
@@ -60272,7 +60271,7 @@ $)
     $d f t $.  $d g t $.  $d M a $.  $d M b $.  $d M g $.  $d M t $.  $d N a $.
     $d N b $.  $d N g $.  $d N t $.
     $( Lemma for ~ ovce .  Set up stratification for the result. 
-       (Contributed by ?who?, 6-Mar-2015.) $)
+       (Contributed by SF, 6-Mar-2015.) $)
     ovcelem1 $p |- ( ( N e. V /\ M e. W ) -> { g | E. a E. b ( ~P1
        a e. N /\ ~P1 b e. M /\ g ~~ ( a ^m b ) ) } e. _V ) $=
       ( vt vf wcel wa cen wbr wex cpw1fn csset c1c cvv cop bitri cv cpw1 co w3a
@@ -60321,7 +60320,7 @@ $)
     $d N b $.  $d N m $.  $d N n $.  $d n p $.  $d N p $.  $d a g $.  $d b g $.
     $d g m $.  $d g n $.  $d M g $.  $d N g $.
     $( The value of cardinal exponentiation. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     ovce $p |- ( ( N e. NC /\ M e. NC ) ->
        ( N ^c M ) = { g | E. a E. b
          ( ~P1 a e. N /\ ~P1 b e. M /\ g ~~ ( a ^m b ) ) } ) $=
@@ -60337,7 +60336,7 @@ $)
     $d a n $.  $d a t $.  $d a u $.  $d a x $.  $d n t $.  $d n u $.  $d t u $.
     $d t x $.  $d u x $.
     $( Lemma for ~ ceex .  Set up part of the stratification. 
-       (Contributed by ?who?, 6-Mar-2015.) $)
+       (Contributed by SF, 6-Mar-2015.) $)
     ceexlem1 $p |- ( <. { { a } } , n >. e. ( SSet o. SI Pw1Fn ) <->
        ~P1 a e. n ) $=
       ( vu vt cv csn cpw1fn csi wbr csset wa wex cpw1 wceq wel wcel exbii bitri
@@ -60356,7 +60355,7 @@ $)
     $d b n $.  $d b x $.  $d g m $.  $d g n $.  $d g x $.  $d m n $.  $d a f $.
     $d b f $.  $d f g $.  $d f x $.  $d m x $.  $d n x $.
     $( Cardinal exponentiation is stratified. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     ceex $p |- ^c e. _V $=
       ( vn vm va vb vg vx cncs csset cins2 cen cv wcel wbr wex csn cop otelins2
       wa vex ins2ex vf cce cxp cvv cpw1fn ccom cins3 cfns c2nd cimage ctxp csi3
@@ -60399,7 +60398,7 @@ $)
     $d M y $.  $d N g $.  $d N x $.  $d N y $.  $d x y $.
     $( Membership in cardinal exponentiation.  Theorem XI.2.38 of [Rosser]
        p. 382. 
-       (Contributed by ?who?, 6-Mar-2015.) $)
+       (Contributed by SF, 6-Mar-2015.) $)
     elce $p |- ( ( N e. NC /\ M e. NC ) ->
         ( A e. ( N ^c M ) <-> E. x E. y ( ~P1 x e. N /\ ~P1 y e. M /\
           A ~~ ( x ^m y ) ) ) ) $=
@@ -60417,7 +60416,7 @@ $)
     $d b n $.  $d b p $.  $d g m $.  $d g n $.  $d g p $.  $d m n $.  $d m p $.
     $d n p $.
     $( Functionhood statement for cardinal exponentiation. 
-       (Contributed by ?who?, 6-Mar-2015.) $)
+       (Contributed by SF, 6-Mar-2015.) $)
     fnce $p |- ^c Fn ( NC X. NC ) $=
       ( vn vm vp va vb vg cce cncs cxp wfn cv wcel wa cpw1 cmap cen wbr w3a wex
       co cab wceq coprab copab weu cvv ovcelem1 isset sylib wmo moeq eu5 sylibr
@@ -60432,7 +60431,7 @@ $)
     $d a b $.  $d a g $.  $d b g $.  $d M a $.  $d M b $.  $d M g $.  $d m t $.
     $( A condition for cardinal exponentiation being non-empty.  Theorem
        XI.2.42 of [Rosser] p. 382. 
-       (Contributed by ?who?, 6-Mar-2015.) $)
+       (Contributed by SF, 6-Mar-2015.) $)
     ce0nnul $p |- ( M e. NC -> ( ( M ^c 0c ) =/= (/) <->
        E. a ~P1 a e. M ) ) $=
       ( vg vb cncs wcel cv c0c cce co wex cpw1 cmap cen wbr w3a c0 wb wa wceq
@@ -60450,7 +60449,7 @@ $)
   ${
     $d A a $.  $d M a $.
     $( Inference form of ~ ce0nnul . 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     ce0nnuli $p |- ( ( M e. NC /\ ~P1 A e. M ) -> ( M ^c 0c ) =/= (/) ) $=
       ( va cncs wcel cpw1 wa c0c cce co c0 wne cv wex cvv elex sylib wceq pw1eq
       pw1exb eleq1d spcegv mpcom adantl wb ce0nnul adantr mpbird ) BDEZAFZBEZG
@@ -60466,7 +60465,7 @@ $)
     $( The sum of two cardinals raised to ` 0c ` is non-empty iff each addend
        raised to ` 0c ` is non-empty.  Theorem XI.2.43 of [Rosser]
        p. 383. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     ce0addcnnul $p |- ( ( M e. NC /\ N e. NC ) ->
        ( ( ( M +c N ) ^c 0c ) =/= (/) <->
          ( ( M ^c 0c ) =/= (/) /\ ( N ^c 0c ) =/= (/) ) ) ) $=
@@ -60509,7 +60508,7 @@ $)
     $d m t $.  $d m n $.  $d N m $.
     $( A natural raised to cardinal zero is non-empty.  Theorem XI.2.44 of
        [Rosser] p. 383. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     ce0nn $p |- ( N e. Nn -> ( N ^c 0c ) =/= (/) ) $=
       ( vm vn vt cv c0c cce co wne c1c c1st c2nd csn cima wcel wbr oveq1 neeq1d
       c0 wceq cplc ccnv cres cfullfun ccompl cab cvv wn vex elcompl cop wrex wa
@@ -60536,7 +60535,7 @@ $)
     cenc.2 $e |- B e. _V $.
     $( Cardinal exponentiation in terms of cardinality.  Theorem XI.2.39 of
        [Rosser] p. 382. 
-       (Contributed by ?who?, 6-Mar-2015.) $)
+       (Contributed by SF, 6-Mar-2015.) $)
     cenc $p |- ( Nc ~P1 A ^c Nc ~P1 B ) = Nc ( A ^m B ) $=
       ( vg vp vt va vb cpw1 cnc co cmap cv wcel cen wbr w3a wex wb cce wa enpw1
       elnc bitr4i enmap1 enmap2 entr syl2an syl2anb ancoms sylan 3impa exlimivv
@@ -60558,7 +60557,7 @@ $)
     $d N b $.  $d N g $.
     $( Cardinal exponentiation is non-empty iff the two sets raised to zero are
        non-empty.  Theorem XI.2.47 of [Rosser] p. 384. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     ce0nnulb $p |- ( ( N e. NC /\ M e. NC ) -> ( ( ( N ^c 0c ) =/= (/) /\ ( M
         ^c 0c ) =/= (/) ) <-> ( N ^c M ) =/= (/) ) ) $=
       ( va vb vg cncs wcel wa c0c cce co wne cpw1 wex ce0nnul bi2anan9 cnc wceq
@@ -60577,7 +60576,7 @@ $)
     $d a b $.  $d M a $.  $d M b $.  $d N a $.  $d N b $.
     $( Biconditional closure law for cardinal exponentiation.  Theorem XI.2.48
        of [Rosser] p. 384. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     ceclb $p |- ( ( M e. NC /\ N e. NC ) ->
        ( ( ( M ^c 0c ) =/= (/) /\ ( N ^c 0c ) =/= (/) ) <-> ( M ^c N ) e. NC )
         ) $=
@@ -60594,7 +60593,7 @@ $)
   ${
     $( Cardinal exponentiation to zero is a cardinal iff it is non-empty.
        Corollary 1 of theorem XI.2.38 of [Rosser] p. 384. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     ce0nulnc $p |- ( M e. NC -> ( ( M ^c 0c ) =/= (/) <-> ( M ^c 0c ) e. NC ) )
         $=
       ( vm c0c cce co c0 wne wa cncs wcel cpw1 wex nulel0c 0ex wceq pw1eq ax-mp
@@ -60609,7 +60608,7 @@ $)
     $( If cardinal exponentiation to zero is a cardinal, then the base is the
        cardinality of some unit power class.  Corollary 2 of theorem XI.2.48 of
        [Rosser] p. 384. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     ce0ncpw1 $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) -> E. a M = Nc ~P1 a ) $=
       ( cncs wcel c0c cce co cv cpw1 cnc wceq wex c0 wne nulnnc mtbiri necon2ai
       eleq1 ce0nnul ncseqnc exbidv bitr4d syl5ib imp ) ACDZAEFGZCDZABHIZJKZBLZU
@@ -60620,7 +60619,7 @@ $)
   ${
     $( Closure law for cardinal exponentiation.  Corollary 3 of theorem XI.2.48
        of [Rosser] p. 384. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     cecl $p |- ( ( ( M e. NC /\ N e. NC ) /\
           ( ( M ^c 0c ) e. NC /\ ( N ^c 0c ) e. NC ) ) -> ( M ^c N ) e. NC ) $=
       ( cncs wcel wa c0c cce co c0 wne wceq nulnnc eleq1 necon2ai anim12i ceclb
@@ -60631,7 +60630,7 @@ $)
 
   ${
     $( Reverse closure law for cardinal exponentiation. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     ceclr $p |- ( ( M e. NC /\ N e. NC /\ ( M ^c N ) e. NC ) ->
        ( ( M ^c 0c ) e. NC /\ ( N ^c 0c ) e. NC ) ) $=
       ( cncs wcel cce co w3a c0c c0 wa ceclb biimp3ar ce0nulnc bi2anan9 3adant3
@@ -60644,7 +60643,7 @@ $)
     $d m n $.  $d m p $.  $d m x $.  $d m y $.  $d n p $.  $d n x $.  $d n y $.
     $d p x $.  $d p y $.  $d x y $.
     $( Full functionhood statement for cardinal exponentiation. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     fce $p |- ^c : ( NC X. NC ) --> ( NC u. { (/) } ) $=
       ( vp vn vm vx vy cncs c0 cce fnce cv cfv wcel wral co wa wne wex wo bitri
       wceq cxp csn cun wf wfn crn wss wn wi df-ne c0c n0 cpw1 cmap cen wbr elce
@@ -60662,7 +60661,7 @@ $)
   $}
 
   $( Closure law for cardinal exponentiation when the base is a natural. 
-     (Contributed by ?who?, 13-Mar-2015.) $)
+     (Contributed by SF, 13-Mar-2015.) $)
   ceclnn1 $p |- ( ( M e. Nn /\ N e. NC /\ ( N ^c 0c ) e. NC ) ->
      ( M ^c N ) e. NC ) $=
     ( cnnc wcel cncs c0c cce co w3a 3ad2ant1 simp2 c0 wne ce0nn wb ce0nulnc syl
@@ -60674,7 +60673,7 @@ $)
     $d M a $.
     $( The value of non-empty cardinal exponentiation.  Theorem XI.2.49 of
        [Rosser] p. 385. 
-       (Contributed by ?who?, 9-Mar-2015.) $)
+       (Contributed by SF, 9-Mar-2015.) $)
     ce0 $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) -> ( M ^c 0c ) = 1c ) $=
       ( va cncs wcel c0c cce co wa c0 csn cnc c1c wceq cv cpw1 wex ce0ncpw1 vex
       cmap 0ex map0e ovex ncid eqeltrri cenc eleqtrri df0c2 nceqi eqtr4i oveq12
@@ -60688,7 +60687,7 @@ $)
   ${
     $d A t $.  $d A x $.  $d A y $.  $d t x $.  $d t y $.  $d x y $.
     $( Membership in cardinal two. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     el2c $p |- ( A e. 2c <-> E. x E. y ( x =/= y /\ A = { x , y } ) ) $=
       ( vt c1c wcel cv csn wceq cun ccompl wa wex c2c df-rex bicomi bitri exbii
       wrex weq cplc wne cpr elsuc el1c anbi1i 19.41v 1p1e2c eleq2i snex compleq
@@ -60709,7 +60708,7 @@ $)
     ce2.1 $e |- A e. _V $.
     $( The value of base two cardinal exponentiation.  Theorem XI.2.70 of
        {{Rosser}}. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     ce2 $p |- ( M = Nc ~P1 A -> ( 2c ^c M ) = Nc ~P A ) $=
       ( vx vy cpw1 cnc wceq c2c cce co cvv c0 cpr wcel csn cun eqtri wne mpbir
       cpw oveq2 cmap df-pr pw1eq ax-mp pw1un pw1sn 0ex uneq12i eqtr4i cv wa wex
@@ -60727,7 +60726,7 @@ $)
 
   $( Compute an exponent of the cardinality of one.  Theorem 4.3 of
      {{Specker}}. 
-     (Contributed by ?who?, 4-Mar-2015.) $)
+     (Contributed by SF, 4-Mar-2015.) $)
   ce2nc1 $p |- ( 2c ^c Nc 1c ) = Nc _V $=
     ( c2c c1c cnc cce co cvv cpw cpw1 wceq df1c2 nceqi vvex ce2 ax-mp pwv eqtri
     ) ABCZDEZFGZCZFCQFHZCIRTIBUAJKFQLMNSFOKP $.
@@ -60735,7 +60734,7 @@ $)
 
   $( Compute an exponent of the cardinality of the unit power class of one.
      Theorem 4.4 of {{Specker}}. 
-     (Contributed by ?who?, 4-Mar-2015.) $)
+     (Contributed by SF, 4-Mar-2015.) $)
   ce2ncpw11c $p |- ( 2c ^c Nc ~P1 1c ) = Nc 1c $=
     ( c2c c1c cpw1 cnc cce co cpw wceq eqid 1cex ce2 ax-mp ncpw1c eqtri ) ABCDZ
     EFZBGDZBDOOHPQHOIBOJKLMN $.
@@ -60747,7 +60746,7 @@ $)
     nclec.1 $e |- A e. _V $.
     nclec.2 $e |- B e. _V $.
     $( A relationship between cardinality, subset, and cardinal less than. 
-       (Contributed by ?who?, 17-Mar-2015.) $)
+       (Contributed by SF, 17-Mar-2015.) $)
     nclec $p |- ( A C_ B -> Nc A <_c Nc B ) $=
       ( vx vy wss cnc wrex clec wbr wcel ncid sseq1 sseq2 rspc2ev mp3an12 ncex
       cv brlec sylibr ) ABGZESZFSZGZFBHZIEAHZIZUGUFJKAUGLBUFLUBUHACMBDMUEUBAUDG
@@ -60759,7 +60758,7 @@ $)
     $d A x y $.
     $( A non-empty set is less than or equal to itself.  Theorem XI.2.14 of
        [Rosser] p. 375. 
-       (Contributed by ?who?, 4-Mar-2015.) $)
+       (Contributed by SF, 4-Mar-2015.) $)
     lecidg $p |- ( ( A e. V /\ A =/= (/) ) -> A <_c A ) $=
       ( vx vy wcel c0 wne wa clec wbr cv wss wrex wex sseq2 rspcev mpan2 ancli
       ssid eximi n0 df-rex 3imtr4i adantl wb brlecg anidms adantr mpbird ) ABEZ
@@ -60770,7 +60769,7 @@ $)
 
   $( A cardinal is less than or equal to itself.  Corollary 1 of theorem
      XI.2.14 of [Rosser] p. 376. 
-     (Contributed by ?who?, 4-Mar-2015.) $)
+     (Contributed by SF, 4-Mar-2015.) $)
   nclecid $p |- ( A e. NC -> A <_c A ) $=
     ( cncs wcel c0 wne clec wbr wceq nulnnc eleq1 mtbiri necon2ai lecidg mpdan
     ) ABCZADEAAFGOADADHODBCIADBJKLABMN $.
@@ -60780,7 +60779,7 @@ $)
     $d A x $.  $d A y $.  $d x y $.
     $( Cardinal zero is a minimal element of cardinal less than or equal.
        Theorem XI.2.15 of [Rosser] p. 376. 
-       (Contributed by ?who?, 4-Mar-2015.) $)
+       (Contributed by SF, 4-Mar-2015.) $)
     lec0cg $p |- ( ( A e. V /\ A =/= (/) ) -> 0c <_c A ) $=
       ( vx vy wcel c0 wne wa c0c clec wbr cv wss wrex wex 0ss jctr wceq wb cvv
       eximi df-rex 3imtr4i csn df-0c rexeq ax-mp 0ex sseq1 rexbidv rexsn sylibr
@@ -60792,7 +60791,7 @@ $)
 
     $( The cardinality of ` _V ` is a maximal element of cardinal less than or
        equal.  Theorem XI.2.16 of [Rosser] p. 376. 
-       (Contributed by ?who?, 4-Mar-2015.) $)
+       (Contributed by SF, 4-Mar-2015.) $)
     lecncvg $p |- ( ( A e. V /\ A =/= (/) ) -> A <_c Nc _V ) $=
       ( vx vy wcel c0 wne wa cvv cnc clec wbr wss wrex wex vvex ncid ssv sseq2
       cv rspcev mp2an jctr eximi n0 df-rex 3imtr4i adantl wb ncex brlecg mpan2
@@ -60804,7 +60803,7 @@ $)
 
   $( Cardinal zero is a minimal element of cardinal less than or equal.  Lemma
      1 of theorem XI.2.15 of [Rosser] p. 376. 
-     (Contributed by ?who?, 12-Mar-2015.) $)
+     (Contributed by SF, 12-Mar-2015.) $)
   le0nc $p |- ( A e. NC -> 0c <_c A ) $=
     ( cncs wcel wne c0c clec wbr wceq nulnnc eleq1 mtbiri necon2ai lec0cg mpdan
     c0 ) ABCZAODEAFGPAOAOHPOBCIAOBJKLABMN $.
@@ -60813,7 +60812,7 @@ $)
   ${
     $( The cardinality of a unit power class is not equal to the cardinality of
        the power class.  Theorem XI.2.4 of [Rosser] p. 372. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     ncpw1pwneg $p |- ( A e. V -> Nc ~P1 A =/= Nc ~P A ) $=
       ( wcel cpw1 cnc cpw wne cen wbr wn nenpw1pw cvv wceq wb pw1exg necon3abid
       eqncg syl mpbiri ) ABCZADZEZAFZEZGUAUCHIZJAKTUEUBUDTUALCUBUDMUENABOUAUCLQ
@@ -60826,7 +60825,7 @@ $)
     $( The cardinality of a unit power class is strictly less than the
        cardinality of the power class.  Theorem XI.2.17 of [Rosser]
        p. 376. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     ltcpw1pwg $p |- ( A e. V -> Nc ~P1 A <c Nc ~P A ) $=
       ( vx vy wcel cpw1 cnc cpw clec wbr wne cltc wss wrex cvv pw1exg ncidg syl
       cv ncex pwexg pw1sspw sseq1 sseq2 rspc2ev mp3an3 brlec sylibr ncpw1pwneg
@@ -60846,7 +60845,7 @@ $)
     sbthlem1.7 $e |- D = ( ran R \ G ) $.
     $( Lemma for ~ sbth .  Set up similarity with a range.  Theorem XI.1.14 of
        [Rosser] p. 350. 
-       (Contributed by ?who?, 11-Mar-2015.) $)
+       (Contributed by SF, 11-Mar-2015.) $)
     sbthlem1 $p |- ( ( ( Fun R /\ Fun `' R ) /\
        ( X C_ dom R /\ ran R C_ X ) ) -> ran R ~~ X ) $=
       ( wa wss cun cen cin c0 wfun ccnv cdm crn wbr cima cres wf1o wf1 wf df-f1
@@ -60886,7 +60885,7 @@ $)
     sbthlem2.1 $e |- R e. _V $.
     $( Lemma for ~ sbth .  Eliminate hypotheses from ~ sbthlem1 .  Theorem
        XI.1.14 of [Rosser] p. 350. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     sbthlem2 $p |- ( ( ( Fun R /\ Fun `' R ) /\
        ( B e. V /\ B C_ dom R /\ ran R C_ B ) ) -> ran R ~~ B ) $=
       ( vb wcel cdm wss crn w3a wfun ccnv wa cen wbr wi cv cdif cin eqid imbi2d
@@ -60904,7 +60903,7 @@ $)
     $( Lemma for ~ sbth .  If ` A ` is equinumerous with a subset of ` B ` and
        vice-versa, then ` A ` is equinumerous with ` B ` .  Theorem XI.1.15 of
        [Rosser] p. 353. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     sbthlem3 $p |- ( ( ( A ~~ C /\ C C_ B ) /\ ( B ~~ D /\ D C_ A ) ) ->
        A ~~ B ) $=
       ( vr vs cen wbr wss wf1o wex bitr4i crn cdm wceq syl ad2antlr wfun ccnv
@@ -60934,7 +60933,7 @@ $)
        for cardinal less than or equal.  Translated out, it means that, if
        ` A ` is no larger than ` B ` and ` B ` is no larger than ` A ` , then
        ` Nc A = Nc B ` .  Theorem XI.2.20 of [Rosser] p. 376. 
-       (Contributed by ?who?, 11-Mar-2015.) $)
+       (Contributed by SF, 11-Mar-2015.) $)
     sbth $p |- ( ( A e. NC /\ B e. NC ) ->
           ( ( A <_c B /\ B <_c A ) -> A = B ) ) $=
       ( vg vb vd va cncs wcel wa clec wbr cv wss wrex wceq brlecg reeanv cnc wi
@@ -60955,7 +60954,7 @@ $)
 
   $( Cardinal less than is equivalent to one-way cardinal less than or equal.
      Theorem XI.2.21 of [Rosser] p. 377. 
-     (Contributed by ?who?, 11-Mar-2015.) $)
+     (Contributed by SF, 11-Mar-2015.) $)
   ltlenlec $p |- ( ( M e. NC /\ N e. NC ) ->
     ( M <c N <-> ( M <_c N /\ -. N <_c M ) ) ) $=
     ( cltc wbr clec wa cncs wcel wn brltc wceq nclecid breq1 syl5ibcom ad2antrr
@@ -60969,7 +60968,7 @@ $)
     $d x z $.  $d y z $.
     $( For non-empty sets, cardinal sum always increases cardinal less than or
        equal.  Theorem XI.2.19 of [Rosser] p. 376. 
-       (Contributed by ?who?, 11-Mar-2015.) $)
+       (Contributed by SF, 11-Mar-2015.) $)
     addlec $p |- ( ( M e. V /\ N e. W /\ ( M +c N ) =/= (/) ) ->
        M <_c ( M +c N ) ) $=
       ( vx vz vy wcel cplc c0 wne w3a clec cv wss wrex wex wa wceq cvv ssun1 n0
@@ -60985,7 +60984,7 @@ $)
   ${
     $( For cardinals, cardinal sum always increases cardinal less than or
        equal.  Corollary of theorem XI.2.19 of [Rosser] p. 376. 
-       (Contributed by ?who?, 11-Mar-2015.) $)
+       (Contributed by SF, 11-Mar-2015.) $)
     addlecncs $p |- ( ( M e. NC /\ N e. NC ) -> M <_c ( M +c N ) ) $=
       ( cncs wcel cplc c0 wne clec wbr wa ncaddccl nulnnc eleq1 mtbiri necon2ai
       wceq syl addlec mpd3an3 ) ACDZBCDZABEZFGZAUBHITUAJUBCDZUCABKUDUBFUBFPUDFC
@@ -60998,7 +60997,7 @@ $)
     $d N b $.  $d N p $.
     $( Cardinal less than or equal in terms of cardinal addition.  Theorem
        XI.2.22 of [Rosser] p. 377. 
-       (Contributed by ?who?, 11-Mar-2015.) $)
+       (Contributed by SF, 11-Mar-2015.) $)
     dflec2 $p |- ( ( M e. NC /\ N e. NC ) ->
        ( M <_c N <-> E. p e. NC N = ( M +c p ) ) ) $=
       ( va vb cncs wcel wa clec wbr cv cplc wceq wrex wss cnc ncseqnc vex cun
@@ -61018,7 +61017,7 @@ $)
   ${
     $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d C x $.  $d C y $.  $d x y $.
     $( Cardinal less than or equal is transitive. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     lectr $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
        ( ( A <_c B /\ B <_c C ) -> A <_c C ) ) $=
       ( vx vy cncs wcel w3a clec wa cv cplc wceq wrex wb dflec2 3adant3 3adant1
@@ -61033,7 +61032,7 @@ $)
 
   ${
     $( Transitivity law for cardinal less than or equal and less than. 
-       (Contributed by ?who?, 16-Mar-2015.) $)
+       (Contributed by SF, 16-Mar-2015.) $)
     leltctr $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
        ( ( A <_c B /\ B <c C ) -> A <c C ) ) $=
       ( cncs wcel w3a clec wbr cltc wa wne lectr expdimp adantrd wi wceq anbi1d
@@ -61048,7 +61047,7 @@ $)
   ${
     $d x y z $.
     $( Cardinal less than or equal partially orders the cardinals. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     lecponc $p |- <_c Po NC $=
       ( vx vy vz clec cncs cpartial wbr wtru cvv wcel lecex a1i ncsex cv adantl
       nclecid w3a wa imp 3adant1 lectr weq sbth pod trud ) DEFGHABCEDIIDIJHKLEI
@@ -61061,7 +61060,7 @@ $)
     $d M x $.  $d N x $.  $d P x $.
     $( Addition law for cardinal less than.  Theorem XI.2.23 of [Rosser]
        p. 377. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     leaddc1 $p |- ( ( ( M e. NC /\ N e. NC /\ P e. NC ) /\ M <_c N ) ->
                ( M +c P ) <_c ( N +c P ) ) $=
       ( vx cncs wcel w3a clec wbr cplc cv wceq wb dflec2 3adant3 wi wa ncaddccl
@@ -61074,7 +61073,7 @@ $)
 
   $( Addition law for cardinal less than.  Theorem XI.2.23 of [Rosser]
      p. 377. 
-     (Contributed by ?who?, 12-Mar-2015.) $)
+     (Contributed by SF, 12-Mar-2015.) $)
   leaddc2 $p |- ( ( ( M e. NC /\ N e. NC /\ P e. NC ) /\ N <_c P ) ->
                ( M +c N ) <_c ( M +c P ) ) $=
     ( cncs wcel w3a clec wbr wa cplc 3anrot leaddc1 sylanb addccom 3brtr4g ) BD
@@ -61086,7 +61085,7 @@ $)
     $d a p $.  $d a q $.  $d a x $.  $d N a $.  $d p q $.  $d p x $.  $d q x $.
     $( Any cardinal is either zero or no greater than one.  Theorem XI.2.24 of
        [Rosser] p. 377. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     nc0le1 $p |- ( N e. NC -> ( N = 0c \/ 1c <_c N ) ) $=
       ( va vx vq vp wcel cv cnc wceq wex c0c c1c clec wbr wo wss wrex vex sylbi
       c0 cncs elncs nceq df0c2 syl6eqr orcd wne wel csn snss snel1c sseq2 sseq1
@@ -61103,7 +61102,7 @@ $)
     $d N m $.
     $( Any cardinal is either zero or the successor of a cardinal.  Corollary
        of theorem XI.2.24 of [Rosser] p. 377. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     nc0suc $p |- ( N e. NC -> ( N = 0c \/ E. m e. NC N = ( m +c 1c ) ) ) $=
       ( cncs wcel c0c wceq c1c clec wbr wo cplc wrex nc0le1 1cnc dflec2 addccom
       cv wb wa eqeq2i rexbii syl6bb mpan orbi2d mpbid ) BCDZBEFZGBHIZJUGBAQZGKZ
@@ -61116,7 +61115,7 @@ $)
     $d A a $.  $d a m $.  $d a n $.  $d A n $.  $d B n $.  $d m n $.  $d m p $.
     $d n p $.
     $( Cardinal less than or equal is total over the naturals. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     leconnnc $p |- ( ( A e. Nn /\ B e. Nn ) -> ( A <_c B \/ B <_c A ) ) $=
       ( va vp cnnc wcel clec wbr wo cv wceq breq2 breq1 orbi12d imbi2d c0c cncs
       wi c1c wa vn vm cplc wn cab ccnv csn cima cun cvv elun eliniseg cop df-br
@@ -61150,7 +61149,7 @@ $)
   ${
     $d A p $.  $d B p $.
     $( The sum of two cardinals is zero iff both addends are zero. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     addceq0 $p |- ( ( A e. NC /\ B e. NC ) -> ( ( A +c B ) = 0c <->
        ( A = 0c /\ B = 0c ) ) ) $=
       ( vp cncs wcel wa cplc c0c wceq c1c wrex nc0suc ord wne 0cnsuc necon3bbid
@@ -61168,7 +61167,7 @@ $)
     $d M x $.
     $( Ordering law for cardinal exponentiation to two.  Theorem XI.2.71 of
        [Rosser] p. 390. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     ce2lt $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) -> M <c ( 2c ^c M ) ) $=
       ( vx cncs wcel c0c cce co wa cv cpw1 cnc wceq wex c2c wbr ce0ncpw1 cpw id
       cltc cvv vex ltcpw1pwg ax-mp syl6eqbr ce2 breqtrrd exlimiv syl ) ACDAEFGC
@@ -61183,7 +61182,7 @@ $)
     $d a b $.  $d a c $.  $d a f $.  $d b c $.  $d b f $.  $d c f $.  $d c x $.
     $d c y $.
     $( Another potential definition of cardinal inequality. 
-       (Contributed by ?who?, 23-Mar-2015.) $)
+       (Contributed by SF, 23-Mar-2015.) $)
     dflec3 $p |- ( ( M e. NC /\ N e. NC ) -> ( M <_c N <->
         E. a e. M E. b e. N E. f f : a -1-1-> b ) ) $=
       ( vx vy vc wcel wa cv cnc wceq wex clec wbr wf1 wrex wb vex elncs anbi12i
@@ -61215,7 +61214,7 @@ $)
     nclenc.1 $e |- A e. _V $.
     nclenc.2 $e |- B e. _V $.
     $( Comparison rule for cardinalities. 
-       (Contributed by ?who?, 24-Mar-2015.) $)
+       (Contributed by SF, 24-Mar-2015.) $)
     nclenc $p |- ( Nc A <_c Nc B <-> E. f f : A -1-1-> B ) $=
       ( vp vq vg vh vi va vb wbr cv wf1 wex wrex wcel wa wf1o cnc clec ncelncsi
       cncs wb dflec3 mp2an wi cen elnc bren bitri anbi12i eeanv bitr4i w3a ccom
@@ -61240,7 +61239,7 @@ $)
     $d q y $.  $d x y $.
     lenc.1 $e |- A e. _V $.
     $( Less than or equal condition for the cardinality of a number. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     lenc $p |- ( M e. NC -> ( M <_c Nc A <-> E. x e. M x C_ A ) ) $=
       ( vy vp vq vf vg wcel cv wex clec wbr wss wrex wf1o cen elnc vex cncs cnc
       wceq wb elncs ncex brlec wa bren bitri anbi12i eeanv bitr4i w3a cima cres
@@ -61264,7 +61263,7 @@ $)
   ${
     tcnc.1 $e |- A e. _V $.
     $( Compute the T-raising of a cardinality. 
-       (Contributed by ?who?, 4-Mar-2015.) $)
+       (Contributed by SF, 4-Mar-2015.) $)
     tcnc $p |- T_c Nc A = Nc ~P1 A $=
       ( cnc ctc cncs wcel cpw1 wceq ncelncsi tccl ax-mp pw1ex ncid mp2an nceleq
       pw1eltc mp4an ) ACZDZEFZAGZCZEFUASFZUAUBFSUBHREFZTABIZRJKUAABLZIUDARFUCUE
@@ -61274,14 +61273,14 @@ $)
 
   $( Compute the T-raising of the cardinality of the universe.  Part of Theorem
      5.2 of {{Specker}}. 
-     (Contributed by ?who?, 4-Mar-2015.) $)
+     (Contributed by SF, 4-Mar-2015.) $)
   tcncv $p |- T_c Nc _V = Nc 1c $=
     ( cvv cnc ctc cpw1 c1c vvex tcnc df1c2 nceqi eqtr4i ) ABCADZBEBAFGEKHIJ $.
     $( [4-Mar-2015] $)
 
   $( Compute the T-raising of the cardinality of one.  Part of Theorem 5.2 of
      {{Specker}}. 
-     (Contributed by ?who?, 4-Mar-2015.) $)
+     (Contributed by SF, 4-Mar-2015.) $)
   tcnc1c $p |- T_c Nc 1c = Nc ~P1 1c $=
     ( c1c 1cex tcnc ) ABC $.
     $( [4-Mar-2015] $)
@@ -61289,7 +61288,7 @@ $)
   ${
     $d M x $.  $d M y $.  $d N x $.  $d N y $.  $d x y $.
     $( Cardinal T is one-to-one.  Based on theorem 2.4 of {{Specker}}. 
-       (Contributed by ?who?, 10-Mar-2015.) $)
+       (Contributed by SF, 10-Mar-2015.) $)
     tc11 $p |- ( ( M e. NC /\ N e. NC ) -> ( T_c M = T_c N <-> M = N ) ) $=
       ( vx vy cncs wcel wa cv cnc wceq wex ctc elncs cpw1 vex tcnc cen wbr eqnc
       wb anbi12i eeanv bitr4i eqeq12i enpw1 pw1ex 3bitr4ri bitri tceq eqeqan12d
@@ -61307,7 +61306,7 @@ $)
     $d w y $.  $d w z $.  $d X c $.  $d X w $.  $d X x $.  $d x y $.  $d X y $.
     $d x z $.  $d X z $.  $d y z $.
     $( T raising rule for cardinal sum. 
-       (Contributed by ?who?, 11-Mar-2015.) $)
+       (Contributed by SF, 11-Mar-2015.) $)
     taddc $p |- ( ( ( A e. NC /\ B e. NC /\ X e. NC ) /\
        T_c A = ( T_c B +c X ) ) -> E. c e. NC X = T_c c ) $=
       ( vw vx vy vz va vb cncs wcel ctc wceq wa cv cnc wex vex sylbi cplc elncs
@@ -61337,7 +61336,7 @@ $)
   ${
     $d M p q $.  $d N p q $.
     $( T-raising perserves order for cardinals.  Theorem 5.5 of {{Specker}}. 
-       (Contributed by ?who?, 11-Mar-2015.) $)
+       (Contributed by SF, 11-Mar-2015.) $)
     tlecg $p |- ( ( M e. NC /\ N e. NC ) -> ( M <_c N <-> T_c M <_c T_c N ) )
         $=
       ( vp vq cncs wcel wa clec wbr ctc cv cplc wceq wrex dflec2 tccl rexlimdva
@@ -61364,7 +61363,7 @@ $)
     $d n x $.  $d n y $.  $d p q $.  $d p x $.  $d p y $.  $d x y $.
     $( If a cardinal is less than or equal to a T-raising, then it is also a
        T-raising.  Theorem 5.6 of {{Specker}}. 
-       (Contributed by ?who?, 11-Mar-2015.) $)
+       (Contributed by SF, 11-Mar-2015.) $)
     letc $p |- ( ( M e. NC /\ N e. NC /\ M <_c T_c N ) ->
        E. p e. NC M = T_c p ) $=
       ( vq va vb vc vx vy vn vm cncs wcel cv wceq wrex wa cnc wex vex clec cplc
@@ -61394,7 +61393,7 @@ $)
     $d M n $.  $d M x $.  $d n x $.
     $( If ` ( M ^c 0c ) ` is a cardinal, then ` M ` is a T-raising of some
        cardinal. 
-       (Contributed by ?who?, 17-Mar-2015.) $)
+       (Contributed by SF, 17-Mar-2015.) $)
     ce0t $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) -> E. n e. NC M = T_c n ) $=
       ( vx cncs wcel c0c cce co wa cpw1 cnc wceq wex ctc wrex ce0ncpw1 ncelncsi
       cv vex tcnc eqcomi tceq eqeq2d rspcev mp2an eqeq1 rexbidv mpbiri exlimiv
@@ -61410,7 +61409,7 @@ $)
     $d r s $.  $d r x $.  $d r y $.  $d s y $.  $d x y $.
     $( Partial ordering law for base two cardinal exponentiation.  Theorem 4.8
        of {{Specker}}. 
-       (Contributed by ?who?, 16-Mar-2015.) $)
+       (Contributed by SF, 16-Mar-2015.) $)
     ce2le $p |- ( ( ( M e. NC /\ N e. NC /\ ( N ^c 0c ) e. NC ) /\ M <_c N ) ->
        ( 2c ^c M ) <_c ( 2c ^c N ) ) $=
       ( vp vq vx vy vr cncs wcel cce co clec wbr wa cv wceq wrex c2c wi cnc c0c
@@ -61442,7 +61441,7 @@ $)
   ${
     $d M x $.  $d N x $.
     $( The exponent of a T-raising to a T-raising is always a cardinal. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     cet $p |- ( ( M e. NC /\ N e. NC ) -> ( T_c M ^c T_c N ) e. NC ) $=
       ( vx cncs wcel ctc c0c cce co tccl adantr adantl cnc wceq wex tceq oveq1d
       elncs ax-mp syl6eqel wa cv wne cpw1 vex ncelncsi pw1ex ncid tcnc eleqtrri
@@ -61456,7 +61455,7 @@ $)
 
   $( The exponent of two to a T-raising is always a cardinal.  Theorem 5.8 of
      {{Specker}}. 
-     (Contributed by ?who?, 13-Mar-2015.) $)
+     (Contributed by SF, 13-Mar-2015.) $)
   ce2t $p |- ( M e. NC -> ( 2c ^c T_c M ) e. NC ) $=
     ( cncs wcel c2c ctc cce co tc2c oveq1i 2nc cet mpan syl5eqelr ) ABCZDAEZFGD
     EZOFGZBPDOFHIDBCNQBCJDAKLM $.
@@ -61465,7 +61464,7 @@ $)
   ${
     $d M x $.
     $( Distributive law for T-raising and cardinal exponentiation to two. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     tce2 $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) ->
       T_c ( 2c ^c M ) = ( 2c ^c T_c M ) ) $=
       ( vx cncs wcel c0c cce co wa cpw1 cnc wceq c2c ctc cpw tcnc eqid ce2 tceq
@@ -61480,7 +61479,7 @@ $)
   ${
     $d M x $.
     $( A T-raising raised to zero is always a cardinal. 
-       (Contributed by ?who?, 16-Mar-2015.) $)
+       (Contributed by SF, 16-Mar-2015.) $)
     te0c $p |- ( M e. NC -> ( T_c M ^c 0c ) e. NC ) $=
       ( vx cncs wcel cv cpw1 ctc wex c0c cce cnc wceq elncs vex pw1ex ncid tceq
       co wb syl tcnc syl6eq syl5eleqr eximi c0 wne tccl ce0nnul ce0nulnc bitr3d
@@ -61495,7 +61494,7 @@ $)
     $d M n $.
     $( ` ( M ^c 0c ) ` is a cardinal iff ` M ` is a T-raising of some
        cardinal. 
-       (Contributed by ?who?, 17-Mar-2015.) $)
+       (Contributed by SF, 17-Mar-2015.) $)
     ce0tb $p |- ( M e. NC -> ( ( M ^c 0c ) e. NC <-> E. n e. NC M = T_c n ) )
         $=
       ( cncs wcel c0c cce co cv ctc wceq wrex ce0t te0c oveq1 eleq1d syl5ibrcom
@@ -61508,7 +61507,7 @@ $)
     $d M n $.  $d M x $.  $d n x $.  $d n y $.  $d x y $.
     $( Cardinal exponentiation to zero is a cardinal iff the number is less
        than the size of cardinal one. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     ce0lenc1 $p |- ( M e. NC -> ( ( M ^c 0c ) e. NC <-> M <_c Nc 1c ) ) $=
       ( vn vx vy cncs wcel cv ctc wceq wrex c1c cnc clec wbr wex cpw1 tceq tcnc
       vex wss c0c co ce0tb elncs syl6eq pw1ss1c pw1ex 1cex nclec ax-mp syl6eqbr
@@ -61527,7 +61526,7 @@ $)
   ${
     $d M x y z $.
     $( A T-raising is less than or equal to the cardinality of cardinal one. 
-       (Contributed by ?who?, 16-Mar-2015.) $)
+       (Contributed by SF, 16-Mar-2015.) $)
     tlenc1c $p |- ( M e. NC -> T_c M <_c Nc 1c ) $=
       ( vx vy vz cncs wcel cv cnc wceq wex ctc c1c clec wbr elncs cpw1 wss wrex
       ncid ncex tceq vex tcnc syl6eq pw1ex 1cex pw1ss1c sseq1 sseq2 mp3an brlec
@@ -61539,13 +61538,13 @@ $)
   $}
 
   $( Cardinal one is not zero. 
-     (Contributed by ?who?, 4-Mar-2015.) $)
+     (Contributed by SF, 4-Mar-2015.) $)
   1ne0c $p |- 1c =/= 0c $=
     ( c0c c1c cplc addcid2 0cnsuc eqnetrri ) ABCBABDAEF $.
     $( [4-Mar-2015] $)
 
   $( Cardinal two is not zero. 
-     (Contributed by ?who?, 4-Mar-2015.) $)
+     (Contributed by SF, 4-Mar-2015.) $)
   2ne0c $p |- 2c =/= 0c $=
     ( c1c cplc c2c c0c 1p1e2c 0cnsuc eqnetrri ) AABCDEAFG $.
     $( [4-Mar-2015] $)
@@ -61553,7 +61552,7 @@ $)
   ${
     $d A x $.
     $( A set is finite iff its cardinality is a natural. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     finnc $p |- ( A e. Fin <-> Nc A e. Nn ) $=
       ( vx cv cnc wceq cnnc wrex wcel cfin cncs nnnc ncseqnc syl rexbiia risset
       wb elfin 3bitr4ri ) BCZADZEZBFGASHZBFGTFHAIHUAUBBFSFHSJHUAUBPSKSALMNBTFOB
@@ -61565,7 +61564,7 @@ $)
     $d p q $.  $d p x $.  $d p z $.  $d q x $.  $d q z $.  $d x z $.  $d y z $.
     $d p t $.  $d p u $.  $d q t $.  $d q u $.  $d t u $.  $d t x $.  $d x y $.
     $( The stratified T raising function is a set. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     tcfnex $p |- TcFn e. _V $=
       ( vx vz vp vq vu vt c1c cvv csset cid cv cop wcel wex wbr vex bitri exbii
       wa 3bitri vy ctcfn cxp cins3 ccnv cncs cpw1fn csi ccom ctxp cima cpw1 cin
@@ -61606,7 +61605,7 @@ $)
 
   ${
     $( Functionhood statement for the stratified T-raising function. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     fntcfn $p |- TcFn Fn 1c $=
       ( vx cv cuni ctc cvv wcel ctcfn c1c wfn df-tcfn fnmpt tcex a1i mprg ) ABZ
       CZDZEFZGHIAHAHQGEAJKROHFPLMN $.
@@ -61617,7 +61616,7 @@ $)
     $d A x $.
     brtcfn.1 $e |- A e. _V $.
     $( Binary relationship form of the stratified T-raising function. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     brtcfn $p |- ( { A } TcFn B <-> B = T_c A ) $=
       ( vx csn ctcfn cfv wceq ctc wbr c1c wcel snel1c cv cuni unieq syl6eq tceq
       unisn syl df-tcfn tcex fvmpt ax-mp eqeq1i wb fntcfn fnbrfvb mp2an 3bitr3i
@@ -61631,7 +61630,7 @@ $)
     $d A n $.
     ncfin.1 $e |- A e. _V $.
     $( The cardinality of a set is a natural iff the set is finite. 
-       (Contributed by ?who?, 19-Mar-2015.) $)
+       (Contributed by SF, 19-Mar-2015.) $)
     ncfin $p |- ( Nc A e. Nn <-> A e. Fin ) $=
       ( vn cnc cnnc wcel cv wrex cfin ncid eleq2 rspcev mpan2 wa wceq eqcom wb
       cncs nnnc ncseqnc syl syl5bb biimpar eleq1d exbiri pm2.43a rexlimiv elfin
@@ -61644,7 +61643,7 @@ $)
   ${
     $d n x $.
     $( Lemma for ~ nclenn .  Set up stratification for induction. 
-       (Contributed by ?who?, 19-Mar-2015.) $)
+       (Contributed by SF, 19-Mar-2015.) $)
     nclennlem1 $p |- { x | A. n e. NC ( n <_c x -> n e. Nn ) } e. _V $=
       ( clec cnnc ccompl cres cncs cima cv wbr wcel wi wral wn vex elcompl wrex
       wa bitri complex cab cvv elima brres anbi2i rexbii 3bitrri con1bii abbi2i
@@ -61660,7 +61659,7 @@ $)
     $d n q $.  $d n x $.  $d N x $.  $d p q $.
     $( A cardinal that is less than or equal to a natural is a natural.
        Theorem XI.3.3 of [Rosser] p. 391. 
-       (Contributed by ?who?, 19-Mar-2015.) $)
+       (Contributed by SF, 19-Mar-2015.) $)
     nclenn $p |- ( ( M e. NC /\ N e. Nn /\ M <_c N ) -> M e. Nn ) $=
       ( vn vx vp vq cncs wcel cnnc clec wbr wi cv wral c0c c1c cplc wceq breq2
       wa vm nclennlem1 imbi1d ralbidv weq le0nc 0cnc sbth mpan2 peano1 syl6eqel
@@ -61690,7 +61689,7 @@ $)
   ${
     $d t u $.  $d t x $.  $d u x $.
     $( Lemma for ~ nnltp1c .  Set up stratification. 
-       (Contributed by ?who?, 25-Mar-2015.) $)
+       (Contributed by SF, 25-Mar-2015.) $)
     nnltp1clem1 $p |- { x | x <c ( x +c 1c ) } e. _V $=
       ( vt vu caddcfn c1st c2nd ccnv c1c ccom cltc cv wbr wcel wa wex brco wceq
       1cex 3bitri cnvex csn cima cres cfix cplc cab cvv elfix exancom cop brcnv
@@ -61709,7 +61708,7 @@ $)
   ${
     $d n x $.  $d N x $.
     $( Any natural is less than one plus itself. 
-       (Contributed by ?who?, 25-Mar-2015.) $)
+       (Contributed by SF, 25-Mar-2015.) $)
     nnltp1c $p |- ( N e. Nn -> N <c ( N +c 1c ) ) $=
       ( vx vn cv c1c cplc cltc wbr c0c wceq addceq1 breq12d clec cncs wcel 1cnc
       id wne brltc cnnc nnltp1clem1 0cnc addlecncs mp2an 0cnsuc necomi mpbir2an
@@ -61730,7 +61729,7 @@ $)
        link to commented out theorem nmembers1.  Change it back when
        nmembers1 is completed. $)
     $( Lemma for ~~? nmembers1 .  Set up stratification. 
-       (Contributed by ?who?, 25-Mar-2015.) $)
+       (Contributed by SF, 25-Mar-2015.) $)
     nmembers1lem1 $p |- { x | { m e. Nn | ( 1c <_c m /\ m <_c x ) } e. T_c
                                                   T_c x } e. _V $=
       ( vp vq vt clec c1c cnnc cvv ctcfn cin cv wbr wa wcel wex cop exbii bitri
@@ -61848,7 +61847,7 @@ $)
     $d b m $.  $d b s $.  $d m n $.  $d m s $.  $d m t $.  $d n s $.  $d n t $.
     $d s t $.
     $( Lemma for ~ nncdiv3 .  Set up a helper for stratification. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     nncdiv3lem1 $p |- ( <. n , b >. e. ran ( Ins3 `' ( ( ran ( `' 1st (x) ( 1st
         i^i 2nd ) ) (x) 2nd ) " AddC ) i^i ( ( ( 1st o. 1st ) (x) ( ( 2nd o.
         1st ) (x) 2nd ) ) " AddC ) ) <-> b = ( ( n +c n ) +c n ) ) $=
@@ -61880,7 +61879,7 @@ $)
     $d a b $.  $d a c $.  $d a m $.  $d a n $.  $d a p $.  $d b c $.  $d b m $.
     $d b n $.  $d b p $.  $d c n $.  $d c p $.  $d m n $.  $d m p $.  $d n p $.
     $( Lemma for ~ nncdiv3 .  Set up stratification for induction. 
-       (Contributed by ?who?, 2-Mar-2015.) $)
+       (Contributed by SF, 2-Mar-2015.) $)
     nncdiv3lem2 $p |- { a | E. n e. Nn ( a = ( ( n +c n ) +c n ) \/
    a = ( ( ( n +c n ) +c n ) +c 1c ) \/ a = ( ( ( n +c n ) +c n ) +c 2c ) ) }
         e. _V $=
@@ -61921,7 +61920,7 @@ $)
     $d A n m a $.
     $( Divisibility by three rule for finite cardinals.  Part of Theorem 3.4 of
        [Specker] p. 973. 
-       (Contributed by ?who?, 2-Mar-2015.) $)
+       (Contributed by SF, 2-Mar-2015.) $)
     nncdiv3 $p |- ( A e. Nn ->
       E. n e. Nn ( A = ( ( n +c n ) +c n ) \/
                    A = ( ( ( n +c n ) +c n ) +c 1c ) \/
@@ -61957,7 +61956,7 @@ $)
     $d m p $.  $d n p $.  $d n q $.  $d p q $.  $d p x $.  $d q x $.  $d m q $.
     $( Three times a natural is not one more than three times a natural.
        Another part of Theorem 3.4 of [Specker] p. 973. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     nnc3n3p1 $p |- ( ( A e. Nn /\ B e. Nn ) ->
         -. ( ( A +c A ) +c A ) = ( ( ( B +c B ) +c B ) +c 1c ) ) $=
       ( vn vp vq cnnc wcel cplc c1c wceq wn c0c caddcfn c1st c2nd cop wa anidms
@@ -62025,7 +62024,7 @@ $)
   ${
     $( Three times a natural is not two more than three times a natural.
        Another part of Theorem 3.4 of [Specker] p. 973. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     nnc3n3p2 $p |- ( ( A e. Nn /\ B e. Nn ) ->
         -. ( ( A +c A ) +c A ) = ( ( ( B +c B ) +c B ) +c 2c ) ) $=
       ( cnnc wcel wa cplc c1c c2c wceq peano2 nnc3n3p1 sylan ancoms eqcom addc4
@@ -62041,7 +62040,7 @@ $)
   ${
     $( One more than three times a natural is not two more than three times a
        natural.  Final part of Theorem 3.4 of [Specker] p. 973. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     nnc3p1n3p2 $p |- ( ( A e. Nn /\ B e. Nn ) ->
         -. ( ( ( A +c A ) +c A ) +c 1c ) =
            ( ( ( B +c B ) +c B ) +c 2c ) ) $=
@@ -62057,7 +62056,7 @@ $)
     $d x y t $.
     $( Lemma for ~ spacval .  Set up stratification for the recursive
        relationship. 
-       (Contributed by ?who?, 6-Mar-2015.) $)
+       (Contributed by SF, 6-Mar-2015.) $)
     spacvallem1 $p |- { <. x , y >. | ( x e. NC /\ y e. NC /\ y = ( 2c ^c x
         ) ) } e. _V $=
       ( vt cvv cxp cncs cce c2nd c1st ccnv c2c cin wcel wceq cop wbr wex 3bitri
@@ -62078,7 +62077,7 @@ $)
   ${
     $d N n $.  $d n x $.  $d n y $.  $d x y $.
     $( The value of the special set generator. 
-       (Contributed by ?who?, 4-Mar-2015.) $)
+       (Contributed by SF, 4-Mar-2015.) $)
     spacval $p |- ( N e. NC -> ( Sp[ac] ` N ) =
          Clos1 ( { N } , { <. x , y >. | ( x e. NC /\ y e. NC /\ y = ( 2c ^c x
         ) ) } ) ) $=
@@ -62091,7 +62090,7 @@ $)
   ${
     $d n x y $.
     $( The special set generator is a function over the cardinals. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     fnspac $p |- Sp[ac] Fn NC $=
       ( vn vx vy cv csn cncs wcel c2c cce co w3a copab cclos1 cvv cspac df-spac
       wceq wfn fnmpt snex spacvallem1 clos1ex a1i mprg ) ADZEZBDZFGCDZFGUHHUGIJ
@@ -62102,7 +62101,7 @@ $)
   ${
     $d x y $.
     $( The special set generator generates a set of cardinals. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     spacssnc $p |- ( N e. NC -> ( Sp[ac] ` N ) C_ NC ) $=
       ( vx vy cncs wcel cspac cfv csn cv c2c cce co wceq w3a copab spacval cima
       cclos1 cun wss snex spacvallem1 clos1baseima wa snssi crn imassrn wex cab
@@ -62116,7 +62115,7 @@ $)
   ${
     $d M x y $.
     $( The initial value of the special set generator is an element. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     spacid $p |- ( M e. NC -> M e. ( Sp[ac] ` M ) ) $=
       ( vx vy cncs wcel csn cv c2c cce wceq w3a copab cclos1 cspac cfv wss eqid
       co clos1base snssg mpbiri spacval eleqtrrd ) ADEZAAFZBGZDECGZDEUGHUFIRJKB
@@ -62127,7 +62126,7 @@ $)
   ${
     $d N x $.  $d N y $.  $d x y $.
     $( Closure law for the special set generator. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     spaccl $p |- ( ( M e. NC /\ N e. ( Sp[ac] ` M ) /\ ( N ^c 0c ) e. NC ) ->
         ( 2c ^c N ) e. ( Sp[ac] ` M ) ) $=
       ( vx vy cncs wcel cspac cfv c0c cce co w3a c2c csn wceq syl2anc cvv eleq1
@@ -62146,7 +62145,7 @@ $)
     $d M x $.  $d M z $.  $d p q $.  $d p x $.  $d p z $.  $d q x $.  $d q z $.
     $d S x $.  $d S z $.  $d x z $.
     $( Inductive law for the special set generator. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     spacind $p |- ( ( ( M e. NC /\ S e. V ) /\
       ( M e. S /\ A. x e. ( Sp[ac] ` M ) ( ( x e. S /\ ( x ^c 0c ) e. NC ) ->
       ( 2c ^c x ) e. S ) ) ) -> ( Sp[ac] ` M ) C_ S ) $=
@@ -62186,7 +62185,7 @@ $)
        ( ( ( M e. NC /\ y e. ( Sp[ac] ` M ) ) /\ ( ( y ^c 0c ) e. NC /\ ch ) )
           -> th ) $.
     $( Induction scheme for the special set generator. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     spacis $p |- ( ( M e. NC /\ N e. ( Sp[ac] ` M ) ) -> ta ) $=
       ( cncs wcel wa cce cspac cfv cab cvv cv c0c co c2c wral wss id1 a1i elabg
       wi mpbird ancom elab anbi2i bitri ovex sylibr ex syl5bi ralrimiva spacind
@@ -62201,7 +62200,7 @@ $)
     $d A n $.
     $( Lemma for ~ nchoice .  A finite cardinal is not one more than its
        T-raising. 
-       (Contributed by ?who?, 3-Mar-2015.) $)
+       (Contributed by SF, 3-Mar-2015.) $)
     nchoicelem1 $p |- ( A e. Nn -> -. A = ( T_c A +c 1c ) ) $=
       ( vn cnnc wcel cplc wceq c1c c2c ctc syl2anc cncs nnnc syl addceq1d eqtrd
       wn tcdi mtbird tceq addcass cv w3o wrex nncdiv3 nntccl nnc3n3p1 nncaddccl
@@ -62231,7 +62230,7 @@ $)
     $d A n $.
     $( Lemma for ~ nchoice .  A finite cardinal is not two more than its
        T-raising. 
-       (Contributed by ?who?, 12-Mar-2015.) $)
+       (Contributed by SF, 12-Mar-2015.) $)
     nchoicelem2 $p |- ( A e. Nn -> -. A = ( T_c A +c 2c ) ) $=
       ( vn cnnc wcel cplc wceq c1c c2c ctc wn nntccl syl2anc cncs nncaddccl syl
       tcdi addceq1d mtbird sylancl addceq2i cv w3o wrex nncdiv3 nnc3n3p2 anidms
@@ -62260,7 +62259,7 @@ $)
     $d M p $.  $d M x $.  $d M y $.  $d p x $.  $d p y $.  $d x y $.
     $( Lemma for ~ nchoice .  Compute the value of ` Sp[ac] ` when the argument
        is not exponentiable.  Theorem 6.2 of [Specker] p. 973. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     nchoicelem3 $p |- ( ( M e. NC /\ -. ( M ^c 0c ) e. NC ) ->
         ( Sp[ac] ` M ) = { M } ) $=
       ( vx vy vp cncs wcel c0c cce co wn wa cspac cfv cv c2c wceq w3a cvv eleq1
@@ -62280,7 +62279,7 @@ $)
     $d M n $.  $d M p $.  $d n p $.  $d N p $.
     $( Lemma for ~ nchoice .  The initial value of ` Sp[ac] ` is a minimum
        value.  Theorem 6.4 of [Specker] p. 973. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     nchoicelem4 $p |- ( ( M e. NC /\ N e. ( Sp[ac] ` M ) ) ->
        M <_c N ) $=
       ( vp vn cv clec wbr c2c cce co csn cima cab cvv imasn breq2 cncs wa sylan
@@ -62297,7 +62296,7 @@ $)
   ${
     $( Lemma for ~ nchoice .  A cardinal is not a member of the special set of
        itself raised to two.  Theorem 6.5 of [Specker] p. 973. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     nchoicelem5 $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) ->
        -. M e. ( Sp[ac] ` ( 2c ^c M ) ) ) $=
       ( cncs wcel c0c cce co wa c2c cspac cfv clec wbr wn cltc ce2lt wb jctl c0
@@ -62312,7 +62311,7 @@ $)
     $d M x $.
     $( Lemma for ~ nchoice .  Split the special set generator into base and
        inductive values.  Theorem 6.6 of [Specker] p. 973. 
-       (Contributed by ?who?, 13-Mar-2015.) $)
+       (Contributed by SF, 13-Mar-2015.) $)
     nchoicelem6 $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) ->
        ( Sp[ac] ` M ) = ( { M } u. ( Sp[ac] ` ( 2c ^c M ) ) ) ) $=
       ( vx cncs wcel c0c cce co wa cspac cfv c2c cvv wi wral wss fvex adantr wo
@@ -62334,7 +62333,7 @@ $)
 
   $( Lemma for ~ nchoice .  Calculate the cardinality of a special set
      generator.  Theorem 6.7 of [Specker] p. 974. 
-     (Contributed by ?who?, 13-Mar-2015.) $)
+     (Contributed by SF, 13-Mar-2015.) $)
   nchoicelem7 $p |- ( ( M e. NC /\ ( M ^c 0c ) e. NC ) ->
      Nc ( Sp[ac] ` M ) = ( Nc ( Sp[ac] ` ( 2c ^c M ) ) +c 1c ) ) $=
     ( cncs wcel c0c cce co cspac cfv cnc csn c2c cun c1c cplc nchoicelem6 nceqd
@@ -62353,7 +62352,7 @@ $)
     $d a x $.  $d a y $.
     $( Lemma for ~ nchoice .  An anti-closure condition for cardinal
        exponentiation to zero.  Theorem 4.5 of [Specker] p. 973. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     nchoicelem8 $p |- ( ( <_c We NC /\ M e. NC ) ->
            ( -. ( M ^c 0c ) e. NC <-> Nc 1c <c M ) ) $=
       ( clec cncs cwe wbr wcel wa wn c1c cstrict cfound cin breqi brin cpartial
@@ -62375,7 +62374,7 @@ $)
     $( Lemma for ~ nchoice .  Calculate the cardinality of the special set
        generator when near the end of raisability.  Theorem 6.8 of
        [Specker] p. 974. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     nchoicelem9 $p |- ( ( <_c We NC /\ M e. NC /\ -. ( M ^c 0c ) e. NC ) ->
        ( Nc ( Sp[ac] ` T_c M ) = 2c \/ Nc ( Sp[ac] ` T_c M ) = 3c ) ) $=
       ( clec cncs wbr wcel c0c cce co wn cspac cfv cnc c2c wceq c3c wo c1c cplc
@@ -62411,7 +62410,7 @@ $)
     nchoicelem10.1 $e |- S e. _V $.
     nchoicelem10.2 $e |- X e. _V $.
     $( Lemma for ~ nchoice .  Stratification helper lemma. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     nchoicelem10 $p |- ( <. c , X >. e. ~ ( ( Ins3 SSet (+) Ins2 ~ ran ( `' ~
                      SSet (x) ( `' SSet |` Fix ( SSet o. Image S ) ) ) ) " 1c )
         <-> c = Clos1 ( X , S ) ) $=
@@ -62436,7 +62435,7 @@ $)
     $d b t $.  $d b u $.  $d b x $.  $d b y $.  $d m t $.  $d m u $.  $d m x $.
     $d m y $.  $d t u $.  $d t x $.  $d t y $.  $d u x $.  $d u y $.  $d x y $.
     $( Lemma for ~ nchoice .  Set up stratification for ~ nchoicelem12 . 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     nchoicelem11 $p |- { t | A. m e. NC ( t = Nc ( Sp[ac] `
              T_c m ) -> Nc ( Sp[ac] ` m ) e. Nn ) } e. _V $=
       ( vu va vb cncs cvv csset cv wcel wceq cfin wn csn wa wex wbr bitri exbii
@@ -62492,7 +62491,7 @@ $)
     $( Lemma for ~ nchoice .  If the T-raising of a cardinal yields a finite
        special set, then so does the initial set.  Theorem 7.1 of
        [Specker] p. 974. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     nchoicelem12 $p |- ( ( M e. NC /\ ( Sp[ac] ` T_c M ) e. Fin ) ->
         ( Sp[ac] ` M ) e. Fin ) $=
       ( vx vm vt vk cspac cfv wcel cncs cv cnc wceq cnnc wi c0c nceqd cce co wa
@@ -62533,7 +62532,7 @@ $)
     $d M x $.
     $( Lemma for ~ nchoice .  The cardinality of a special set is at least
        one. 
-       (Contributed by ?who?, 18-Mar-2015.) $)
+       (Contributed by SF, 18-Mar-2015.) $)
     nchoicelem13 $p |- ( M e. NC -> 1c <_c Nc ( Sp[ac] ` M ) ) $=
       ( vx cncs wcel cv cspac cfv wss c1c wrex cnc wbr csn snel1cg spacid snssi
       clec syl sseq1 rspcev syl2anc wb 1cnc fvex lenc ax-mp sylibr ) ACDZBEZAF
@@ -62546,7 +62545,7 @@ $)
     $d M k $.
     $( Lemma for ~ nchoice .  When the special set generator yields a
        singleton, then the cardinal is not raisable. 
-       (Contributed by ?who?, 19-Mar-2015.) $)
+       (Contributed by SF, 19-Mar-2015.) $)
     nchoicelem14 $p |- ( ( M e. NC /\ Nc ( Sp[ac] ` M ) = 1c ) ->
        -. ( M ^c 0c ) e. NC ) $=
       ( vk cncs wcel cspac cfv cnc c1c wceq c0c cce co wn c2c cplc wne c0 bitri
@@ -62568,7 +62567,7 @@ $)
   ${
     $( Lemma for ~ nchoice .  When the special set generator does not yield a
        singleton, then the cardinal is raisable. 
-       (Contributed by ?who?, 19-Mar-2015.) $)
+       (Contributed by SF, 19-Mar-2015.) $)
     nchoicelem15 $p |- ( ( M e. NC /\ 1c <c Nc ( Sp[ac] ` M ) ) ->
        ( M ^c 0c ) e. NC ) $=
       ( cncs wcel c1c cspac cfv cnc cltc wbr c0c cce co clec brltc simprbi wceq
@@ -62583,7 +62582,7 @@ $)
     $d n u $.  $d n v $.  $d n x $.  $d n y $.  $d t u $.  $d t v $.  $d t x $.
     $d t y $.  $d u v $.  $d u x $.  $d u y $.  $d v x $.  $d v y $.  $d x y $.
     $( Lemma for ~ nchoice .  Set up stratification for ~ nchoicelem17 . 
-       (Contributed by ?who?, 19-Mar-2015.) $)
+       (Contributed by SF, 19-Mar-2015.) $)
     nchoicelem16 $p |- { t |
 ( <_c We NC -> A. m e. NC ( Nc ( Sp[ac] ` m ) = ( 1c +c t ) -> ( ( Sp[ac] ` T_c
 m ) e. Fin /\ ( Nc ( Sp[ac] ` T_c m ) = ( T_c Nc ( Sp[ac] ` m ) +c 1c ) \/ Nc (
@@ -62678,7 +62677,7 @@ m ) e. Fin /\ ( Nc ( Sp[ac] ` T_c m ) = ( T_c Nc ( Sp[ac] ` m ) +c 1c ) \/ Nc (
     $( Lemma for ~ nchoice .  If the special set of a cardinal is finite, then
        so is the special set of its T-raising, and there is a calculable
        relationship between their sizes.  Theorem 7.2 of [Specker] p. 974. 
-       (Contributed by ?who?, 19-Mar-2015.) $)
+       (Contributed by SF, 19-Mar-2015.) $)
     nchoicelem17 $p |- ( ( <_c We NC /\ M e. NC /\ ( Sp[ac] ` M ) e. Fin ) ->
        ( ( Sp[ac] ` T_c M ) e. Fin /\
          ( Nc ( Sp[ac] ` T_c M ) = ( T_c Nc ( Sp[ac] ` M ) +c 1c ) \/
@@ -62762,7 +62761,7 @@ m ) e. Fin /\ ( Nc ( Sp[ac] ` T_c m ) = ( T_c Nc ( Sp[ac] ` m ) +c 1c ) \/ Nc (
     $d c x $.  $d c y $.  $d x y $.  $d c p $.  $d c q $.  $d p q $.  $d p x $.
     $d q x $.
     $( Lemma for ~ nchoice .  Set up stratification for ~ nchoicelem19 . 
-       (Contributed by ?who?, 20-Mar-2015.) $)
+       (Contributed by SF, 20-Mar-2015.) $)
     nchoicelem18 $p |- { x | ( Sp[ac] ` x ) e. Fin } e. _V $=
       ( vp vq vc cncs ccompl csset ccnv cv wcel wceq c1c cima cspac wo wa bitri
       cfin complex ssetex cins3 c2c cce co w3a copab cimage ccom cfix cres ctxp
@@ -62789,7 +62788,7 @@ m ) e. Fin /\ ( Nc ( Sp[ac] ` T_c m ) = ( T_c Nc ( Sp[ac] ` m ) +c 1c ) \/ Nc (
     $( Lemma for ~ nchoice .  Assuming well-ordering, there is a cardinal with
        a finite special set that is its own T-raising.  Theorem 7.3 of
        [Specker] p. 974. 
-       (Contributed by ?who?, 20-Mar-2015.) $)
+       (Contributed by SF, 20-Mar-2015.) $)
     nchoicelem19 $p |- ( <_c We NC ->
         E. m e. NC ( ( Sp[ac] ` m ) e. Fin /\ T_c m = m ) ) $=
       ( vn vx vp clec cncs wbr cv cspac cfv cfin wcel wi wa wceq eleq1d cvv cnc
@@ -62828,7 +62827,7 @@ m ) e. Fin /\ ( Nc ( Sp[ac] ` T_c m ) = ( T_c Nc ( Sp[ac] ` m ) +c 1c ) \/ Nc (
     $( Cardinal less than or equal does not well-order the cardinals.  This is
        equivalent to saying that the axiom of choice from ZFC is false in NF.
        Theorem 7.5 of [Specker] p. 974. 
-       (Contributed by ?who?, 20-Mar-2015.) $)
+       (Contributed by SF, 20-Mar-2015.) $)
     nchoice $p |- -. <_c We NC $=
       ( vn vm cncs cv ctc c1c cplc wceq c2c wo cnnc wrex wcel wn cspac cfv cfin
       wa cnc eqeq1d cwe wbr nchoicelem1 nchoicelem2 ioran sylanbrc nchoicelem19
