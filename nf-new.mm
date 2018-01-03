@@ -9089,6 +9089,98 @@ $)
       JACBEDJKL $.
   $}
 
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Equality law for anti-intersection. 
+       (Contributed by SF, 11-Jan-2015.) $)
+    nineq1 $p |- ( A = B -> ( A -i^i C ) = ( B -i^i C ) ) $=
+      ( vx wceq cv wcel wnan cab cnin eleq2 nanbi1d abbidv df-nin 3eqtr4g ) AB
+      EZDFZAGZQCGZHZDIQBGZSHZDIACJBCJPTUBDPRUASABQKLMDACNDBCNO $.
+      $( [11-Jan-2015] $)
+  $}
+
+  $( Equality law for anti-intersection. 
+     (Contributed by SF, 11-Jan-2015.) $)
+  nineq2 $p |- ( A = B -> ( C -i^i A ) = ( C -i^i B ) ) $=
+    ( wceq cnin nineq1 nincom 3eqtr3g ) ABDACEBCECAECBEABCFACGBCGH $.
+    $( [11-Jan-2015] $)
+
+  $( Equality law for anti-intersection. 
+     (Contributed by SF, 11-Jan-2015.) $)
+  nineq12 $p |- ( ( A = B /\ C = D ) -> ( A -i^i C ) = ( B -i^i D ) ) $=
+    ( wceq cnin nineq1 nineq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
+    $( [11-Jan-2015] $)
+
+  ${
+    nineqi.1 $e |- A = B $.
+    $( Equality inference for anti-intersection. 
+       (Contributed by SF, 11-Jan-2015.) $)
+    nineq1i $p |- ( A -i^i C ) = ( B -i^i C ) $=
+      ( wceq cnin nineq1 ax-mp ) ABEACFBCFEDABCGH $.
+      $( [11-Jan-2015] $)
+
+    $( Equality inference for anti-intersection. 
+       (Contributed by SF, 11-Jan-2015.) $)
+    nineq2i $p |- ( C -i^i A ) = ( C -i^i B ) $=
+      ( wceq cnin nineq2 ax-mp ) ABECAFCBFEDABCGH $.
+      $( [11-Jan-2015] $)
+
+    nineq12i.2 $e |- C = D $.
+    $( Equality inference for anti-intersection. 
+       (Contributed by SF, 11-Jan-2015.) $)
+    nineq12i $p |- ( A -i^i C ) = ( B -i^i D ) $=
+      ( wceq cnin nineq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
+      $( [11-Jan-2015] $)
+  $}
+
+  ${
+    nineqd.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for anti-intersection. 
+       (Contributed by SF, 11-Jan-2015.) $)
+    nineq1d $p |- ( ph -> ( A -i^i C ) = ( B -i^i C ) ) $=
+      ( wceq cnin nineq1 syl ) ABCFBDGCDGFEBCDHI $.
+      $( [11-Jan-2015] $)
+
+    $( Equality deduction for anti-intersection. 
+       (Contributed by SF, 11-Jan-2015.) $)
+    nineq2d $p |- ( ph -> ( C -i^i A ) = ( C -i^i B ) ) $=
+      ( wceq cnin nineq2 syl ) ABCFDBGDCGFEBCDHI $.
+      $( [11-Jan-2015] $)
+
+    nineq12d.2 $e |- ( ph -> C = D ) $.
+    $( Equality inference for anti-intersection. 
+       (Contributed by SF, 11-Jan-2015.) $)
+    nineq12d $p |- ( ph -> ( A -i^i C ) = ( B -i^i D ) ) $=
+      ( wceq cnin nineq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
+      $( [11-Jan-2015] $)
+  $}
+
+  $( Equality law for complement. 
+     (Contributed by SF, 11-Jan-2015.) $)
+  compleq $p |- ( A = B -> ~ A = ~ B ) $=
+    ( wceq cnin ccompl nineq12 anidms df-compl 3eqtr4g ) ABCZAADZBBDZAEBEJKLCAB
+    ABFGAHBHI $.
+    $( [11-Jan-2015] $)
+
+  ${
+    compleqi.1 $e |- A = B $.
+    $( Equality inference for complement. 
+       (Contributed by SF, 11-Jan-2015.) $)
+    compleqi $p |- ~ A = ~ B $=
+      ( wceq ccompl compleq ax-mp ) ABDAEBEDCABFG $.
+      $( [11-Jan-2015] $)
+  $}
+
+  ${
+    compleqd.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for complement. 
+       (Contributed by SF, 11-Jan-2015.) $)
+    compleqd $p |- ( ph -> ~ A = ~ B ) $=
+      ( wceq ccompl compleq syl ) ABCEBFCFEDBCGH $.
+      $( [11-Jan-2015] $)
+  $}
+
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Subclasses and subsets
@@ -16250,3 +16342,42 @@ $)
       ( copk csn cpr df-opk nfsn nfpr nfcxfr ) ABCFBGZBCHZHBCIAMNABDJABCDEKKL
       $.
   $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        More Boolean set operations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Complement in terms of difference. (Contributed by SF, 2-Jan-2018.) $)
+  compldif $p |- ~ A = ( _V \ A ) $=
+    ( cvv cdif ccompl cin df-dif incom inv1 3eqtrri ) BACBADZEJBEJBAFBJGJHI $.
+  
+  $( The complement of the universe is the empty set. (Contributed by SF,
+     2-Jan-2018.) $)
+  complV $p |- ~ _V = (/) $=
+    ( cvv ccompl cdif c0 compldif df-nul eqtr4i ) ABAACDAEFG $.
+
+  $( The complement of the empty set is the universe.  (Contributed by SF,
+     2-Jan-2018.) $)
+  compl0 $p |- ~ (/) = _V $=
+    ( cvv ccompl c0 complV compleqi dblcompl eqtr3i ) ABZBCBAHCDEAFG $.
+
+  ${
+    $d x A $.
+    $( Anti-intersection with complement.  (Contributed by SF, 2-Jan-2018.) $)
+    nincompl $p |- ( A -i^i ~ A ) = _V $=
+      ( vx ccompl cnin cvv wceq cv wcel eqv wn wa pm3.24 wnan vex elnin elcompl
+      nanbi2i df-nan 3bitri mpbir mpgbir ) AACZDZEFBGZUCHZBBUCIUEUDAHZUFJZKJZUF
+      LUEUFUDUBHZMUFUGMUHUDAUBBNZOUIUGUFUDAUJPQUFUGRSTUA $.  
+  $}
+
+  $( Intersection with complement. (Contributed by SF, 2-Jan-2018.) $)
+  incompl $p |- ( A i^i ~ A ) = (/) $=
+    ( ccompl cin cnin cvv c0 df-in nincompl compleqi complV 3eqtri ) AABZCALDZB
+    EBFALGMEAHIJK $.
+
+  $( Union with complement.  (Contributed by SF, 2-Jan-2018.) $)
+  uncompl $p |- ( A u. ~ A ) = _V $=
+    ( ccompl cun cnin cvv df-un nincompl eqtri ) AABZCIIBDEAIFIGH $.
