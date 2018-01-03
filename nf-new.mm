@@ -13660,23 +13660,6 @@ $)
       ( cpr prid1 prcom eleqtri ) BBADABDBACEBAFG $.
   $}
 
-  $( A proper class vanishes in an unordered pair.  (Contributed by NM,
-     5-Aug-1993.) $)
-  prprc1 $p |- ( -. A e. _V -> { A , B } = { B } ) $=
-    ( cvv wcel wn csn c0 wceq cpr snprc cun uneq1 df-pr uncom un0 3eqtr4g sylbi
-    eqtr2i ) ACDEAFZGHZABIZBFZHAJTSUBKGUBKZUAUBSGUBLABMUCUBGKUBGUBNUBORPQ $.
-
-  $( A proper class vanishes in an unordered pair.  (Contributed by NM,
-     22-Mar-2006.) $)
-  prprc2 $p |- ( -. B e. _V -> { A , B } = { A } ) $=
-    ( cvv wcel wn cpr csn prcom prprc1 syl5eq ) BCDEABFBAFAGABHBAIJ $.
-
-  $( An unordered pair containing two proper classes is the empty set.
-     (Contributed by NM, 22-Mar-2006.) $)
-  prprc $p |- ( ( -. A e. _V /\ -. B e. _V ) -> { A , B } = (/) ) $=
-    ( cvv wcel wn cpr csn c0 prprc1 wceq snprc biimpi sylan9eq ) ACDEBCDEZABFBG
-    ZHABINOHJBKLM $.
-
   ${
     tpid1.1 $e |- A e. _V $.
     $( One of the three elements of an unordered triple.  (Contributed by NM,
@@ -14099,98 +14082,6 @@ $)
     prsspw $p |- ( { A , B } C_ ~P C <-> ( A C_ C /\ B C_ C ) ) $=
       ( cpr cpw wss wcel wa prss elpw anbi12i bitr3i ) ABFCGZHAOIZBOIZJACHZBCHZ
       JABODEKPRQSACDLBCELMN $.
-  $}
-
-  ${
-    preqr1.1 $e |- A e. _V $.
-    preqr1.2 $e |- B e. _V $.
-    $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
-       the same second element, the first elements are equal.  (Contributed by
-       NM, 18-Oct-1995.) $)
-    preqr1 $p |- ( { A , C } = { B , C } -> A = B ) $=
-      ( cpr wceq wcel wo prid1 eleq2 mpbii elpr sylib mpbiri eqcom eqeq2 oplem1
-      ) ACFZBCFZGZABGZACGZBAGZBCGZUAATHZUBUCIUAASHUFACDJSTAKLABCDMNUABSHZUDUEIU
-      AUGBTHBCEJSTBKOBACEMNABPACBQR $.
-  $}
-
-  ${
-    preqr2.1 $e |- A e. _V $.
-    preqr2.2 $e |- B e. _V $.
-    $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
-       the same first element, the second elements are equal.  (Contributed by
-       NM, 5-Aug-1993.) $)
-    preqr2 $p |- ( { C , A } = { C , B } -> A = B ) $=
-      ( cpr wceq prcom eqeq12i preqr1 sylbi ) CAFZCBFZGACFZBCFZGABGLNMOCAHCBHIA
-      BCDEJK $.
-  $}
-
-  ${
-    preq12b.1 $e |- A e. _V $.
-    preq12b.2 $e |- B e. _V $.
-    preq12b.3 $e |- C e. _V $.
-    preq12b.4 $e |- D e. _V $.
-    $( Equality relationship for two unordered pairs.  (Contributed by NM,
-       17-Oct-1996.) $)
-    preq12b $p |- ( { A , B } = { C , D } <->
-                   ( ( A = C /\ B = D ) \/ ( A = D /\ B = C ) ) ) $=
-      ( cpr wceq wa wo wcel preq1 eqeq1d preqr2 syl6bi com12 ancld prcom eqeq2i
-      prid1 eleq2 mpbii elpr sylib wi sylbi orim12d preq12 syl6eq sylan9eq jaoi
-      mpd impbii ) ABIZCDIZJZACJZBDJZKZADJZBCJZKZLZURUSVBLZVEURAUQMZVFURAUPMVGA
-      BEUBUPUQAUCUDACDEUEUFURUSVAVBVDURUSUTUSURUTUSURCBIZUQJUTUSUPVHUQACBNOBDCF
-      HPQRSURVBVCURUPDCIZJZVBVCUGUQVIUPCDTUAVBVJVCVBVJDBIZVIJVCVBUPVKVIADBNZOBC
-      DFGPQRUHSUIUNVAURVDABCDUJVBVCUPBDIZUQVBUPVKVMVLDBTUKBCDNULUMUO $.
-
-    $( Equality of two unordered pairs.  (Contributed by NM, 17-Oct-1996.) $)
-    prel12 $p |- ( -. A = B -> ( { A , B } = { C , D } <->
-                   ( A e. { C , D } /\ B e. { C , D } ) ) ) $=
-      ( wceq wn cpr wcel wa eleq2 mpbii wo wi elpr eqeq2 notbid prid1 prid2 jca
-      orel2 syl6bi com3l imp ancrd orel1 orim12d orcom bitri preq12b 3imtr4g ex
-      syl5bi imp3a impbid2 ) ABIZJZABKZCDKZIZAVBLZBVBLZMVCVDVEVCAVALVDABEUAVAVB
-      ANOVCBVALVEABFUBVAVBBNOUCUTVDVEVCVDACIZADIZPZUTVEVCQZACDERUTVHVIUTVHMZBDI
-      ZBCIZPZVFVKMZVGVLMZPVEVCVJVKVNVLVOVJVKVFUTVHVKVFQVKUTVHVFVKUTVGJVHVFQVKUS
-      VGBDASTVGVFUDUEUFUGUHVJVLVGUTVHVLVGQVLUTVHVGVLUTVFJVHVGQVLUSVFBCASTVFVGUI
-      UEUFUGUHUJVEVLVKPVMBCDFRVLVKUKULABCDEFGHUMUNUOUPUQUR $.
-
-    $( A way to represent ordered pairs using unordered pairs with distinct
-       members.  (Contributed by NM, 27-Mar-2007.) $)
-    opthpr $p |- ( A =/= D ->
-                 ( { A , B } = { C , D } <-> ( A = C /\ B = D ) ) ) $=
-      ( cpr wceq wa wo wne preq12b idd wn wi df-ne pm2.21 sylbi jaod orc syl5bb
-      imp3a impbid1 ) ABICDIJACJBDJKZADJZBCJZKZLZADMZUFABCDEFGHNUKUJUFUKUFUFUIU
-      KUFOUKUGUHUFUKUGPUGUHUFQZQADRUGULSTUDUAUFUIUBUEUC $.
-  $}
-
-  ${
-    $d A x y z w $.  $d B x y z w $.  $d C x y z w $.  $d D x y z w $.
-    $d V x y z w $.  $d W x y z w $.  $d X x y z w $.  $d Y x y z w $.
-    $( Closed form of ~ preq12b .  (Contributed by Scott Fenton,
-       28-Mar-2014.) $)
-    preq12bg $p |- ( ( ( A e. V /\ B e. W ) /\ ( C e. X /\ D e. Y ) ) ->
-       ( { A , B } = { C , D } <->
-         ( ( A = C /\ B = D ) \/ ( A = D /\ B = C ) ) ) ) $=
-      ( vx vy vz vw wcel wa cpr wceq wo wb wi cv weq preq1 eqeq1d eqeq1 orbi12d
-      anbi1d bibi12d imbi2d preq2 anbi2d eqeq2 w3a vex preq12b vtoclbg vtocl3ga
-      eqeq2d a1i 3expa impr ) AEMZBFMZNCGMZDHMZABOZCDOZPZACPZBDPZNZADPZBCPZNZQZ
-      RZVAVBVCVDVOSZVDITZJTZOZKTZDOZPZIKUAZVRDPZNZVQDPZJKUAZNZQZRZSZVDAVROZWAPZ
-      AVTPZWDNZVKWGNZQZRZSVDVEWAPZWNVINZVKBVTPZNZQZRZSVPIJKABCEFGVQAPZWJWRVDXEW
-      BWMWIWQXEVSWLWAVQAVRUBUCXEWEWOWHWPXEWCWNWDVQAVTUDUFXEWFVKWGVQADUDUFUEUGUH
-      VRBPZWRXDVDXFWMWSWQXCXFWLVEWAVRBAUIUCXFWOWTWPXBXFWDVIWNVRBDUDUJXFWGXAVKVR
-      BVTUDUJUEUGUHVTCPZXDVOVDXGWSVGXCVNXGWAVFVEVTCDUBUQXGWTVJXBVMXGWNVHVIVTCAU
-      KUFXGXAVLVKVTCBUKUJUEUGUHWKVQEMVRFMVTGMULVSVTLTZOZPWCJLUAZNZILUAZWGNZQWBW
-      ILDHXHDPZXIWAVSXHDVTUIUQXNXKWEXMWHXNXJWDWCXHDVRUKUJXNXLWFWGXHDVQUKUFUEVQV
-      RVTXHIUMJUMKUMLUMUNUOURUPUSUT $.
-  $}
-
-  ${
-    preqsn.1 $e |- A e. _V $.
-    preqsn.2 $e |- B e. _V $.
-    preqsn.3 $e |- C e. _V $.
-    $( Equivalence for a pair equal to a singleton.  (Contributed by NM,
-       3-Jun-2008.) $)
-    preqsn $p |- ( { A , B } = { C } <-> ( A = B /\ B = C ) ) $=
-      ( cpr csn wceq wa dfsn2 eqeq2i preq12b oridm eqtr3 simpr jca eqtr bitri
-      wo impbii ) ABGZCHZIUBCCGZIZABIZBCIZJZUCUDUBCKLUEACIZUGJZUJTZUHABCCDEFFMU
-      KUJUHUJNUJUHUJUFUGABCOUIUGPQUHUIUGABCRUFUGPQUASSS $.
   $}
 
   ${
@@ -16859,3 +16750,167 @@ $)
       XHDWQWRXEWTWHWIWJWKQWLWM $.
       $( [30-Jan-2015] $)
   $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Singletons and pairs (continued)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( A singleton is a subset of an unordered pair. 
+     (Contributed by ?who?, 12-Jan-2015.) $)
+  snprss1 $p |- { A } C_ { A , B } $=
+    ( csn cun cpr ssun1 df-pr sseqtr4i ) ACZIBCZDABEIJFABGH $.
+    $( [12-Jan-2015] $)
+
+  $( A singleton is a subset of an unordered pair. 
+     (Contributed by ?who?, 12-Jan-2015.) $)
+  snprss2 $p |- { A } C_ { B , A } $=
+    ( csn cpr snprss1 prcom sseqtri ) ACABDBADABEABFG $.
+    $( [12-Jan-2015] $)
+
+
+  $( An unordered pair of a proper class. 
+     (Contributed by ?who?, 12-Jan-2015.) $)
+  prprc2 $p |- ( -. A e. _V -> { B , A } = { B } ) $=
+    ( cvv wcel wn cpr csn cun df-pr wceq snprc biimpi uneq2d un0 syl6eq syl5eq
+    c0 ) ACDEZBAFBGZAGZHZSBAIRUASQHSRTQSRTQJAKLMSNOP $.
+    $( [12-Jan-2015] $)
+
+  $( An unordered pair of a proper class. 
+     (Contributed by ?who?, 12-Jan-2015.) $)
+  prprc1 $p |- ( -. A e. _V -> { A , B } = { B } ) $=
+    ( cvv wcel wn cpr csn prcom prprc2 syl5eq ) ACDEABFBAFBGABHABIJ $.
+    $( [12-Jan-2015] $)
+
+
+  ${
+    preqr1.1 $e |- A e. _V $.
+    preqr1.2 $e |- B e. _V $.
+    $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
+       the same second element, the first elements are equal. 
+       (Contributed by ?who?, 18-Oct-1995.) $)
+    preqr1 $p |- ( { A , C } = { B , C } -> A = B ) $=
+      ( cpr wceq wcel wo prid1 eleq2 mpbii elpr sylib mpbiri eqcom eqeq2 oplem1
+      ) ACFZBCFZGZABGZACGZBAGZBCGZUAATHZUBUCIUAASHUFACDJSTAKLABCDMNUABSHZUDUEIU
+      AUGBTHBCEJSTBKOBACEMNABPACBQR $.
+      $( [18-Oct-1995] $)
+  $}
+
+  ${
+    preqr2.1 $e |- A e. _V $.
+    preqr2.2 $e |- B e. _V $.
+    $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
+       the same first element, the second elements are equal. 
+       (Contributed by ?who?, 5-Aug-1993.) $)
+    preqr2 $p |- ( { C , A } = { C , B } -> A = B ) $=
+      ( cpr wceq prcom eqeq12i preqr1 sylbi ) CAFZCBFZGACFZBCFZGABGLNMOCAHCBHIA
+      BCDEJK $.
+      $( [5-Aug-1993] $)
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.
+    $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
+       the same first element, the second elements are equal. 
+       (Contributed by ?who?, 12-Jan-2015.) $)
+    preqr2g $p |- ( ( A e. V /\ B e. W ) ->
+           ( { C , A } = { C , B } -> A = B ) ) $=
+      ( vx vy cv cpr wceq weq wi preq2 eqeq1d eqeq1 imbi12d eqeq2d eqeq2 preqr2
+      vex vtocl2g ) CFHZIZCGHZIZJZFGKZLCAIZUEJZAUDJZLUHCBIZJZABJZLFGABDEUBAJZUF
+      UIUGUJUNUCUHUEUBACMNUBAUDOPUDBJZUIULUJUMUOUEUKUHUDBCMQUDBARPUBUDCFTGTSUA
+      $.
+      $( [12-Jan-2015] $)
+  $}
+
+
+  ${
+    preq12b.1 $e |- A e. _V $.
+    preq12b.2 $e |- B e. _V $.
+    preq12b.3 $e |- C e. _V $.
+    preq12b.4 $e |- D e. _V $.
+    $( Equality relationship for two unordered pairs. 
+       (Contributed by ?who?, 17-Oct-1996.) $)
+    preq12b $p |- ( { A , B } = { C , D } <->
+                   ( ( A = C /\ B = D ) \/ ( A = D /\ B = C ) ) ) $=
+      ( cpr wceq wa wo wcel preq1 eqeq1d preqr2 syl6bi com12 ancld prcom eqeq2i
+      prid1 eleq2 mpbii elpr sylib wi sylbi orim12d preq12 syl6eq sylan9eq jaoi
+      mpd impbii ) ABIZCDIZJZACJZBDJZKZADJZBCJZKZLZURUSVBLZVEURAUQMZVFURAUPMVGA
+      BEUBUPUQAUCUDACDEUEUFURUSVAVBVDURUSUTUSURUTUSURCBIZUQJUTUSUPVHUQACBNOBDCF
+      HPQRSURVBVCURUPDCIZJZVBVCUGUQVIUPCDTUAVBVJVCVBVJDBIZVIJVCVBUPVKVIADBNZOBC
+      DFGPQRUHSUIUNVAURVDABCDUJVBVCUPBDIZUQVBUPVKVMVLDBTUKBCDNULUMUO $.
+      $( [17-Oct-1996] $)
+  $}
+
+  ${
+    $d A x y z w $.  $d B x y z w $.  $d C x y z w $.  $d D x y z w $.
+    $d V x y z w $.  $d W x y z w $.  $d X x y z w $.  $d Y x y z w $.
+    $( Closed form of ~ preq12b .  (Contributed by Scott Fenton,
+       28-Mar-2014.) $)
+    preq12bg $p |- ( ( ( A e. V /\ B e. W ) /\ ( C e. X /\ D e. Y ) ) ->
+       ( { A , B } = { C , D } <->
+         ( ( A = C /\ B = D ) \/ ( A = D /\ B = C ) ) ) ) $=
+      ( vx vy vz vw wcel wa cpr wceq wo wb wi cv weq preq1 eqeq1d eqeq1 orbi12d
+      anbi1d bibi12d imbi2d preq2 anbi2d eqeq2 w3a vex preq12b vtoclbg vtocl3ga
+      eqeq2d a1i 3expa impr ) AEMZBFMZNCGMZDHMZABOZCDOZPZACPZBDPZNZADPZBCPZNZQZ
+      RZVAVBVCVDVOSZVDITZJTZOZKTZDOZPZIKUAZVRDPZNZVQDPZJKUAZNZQZRZSZVDAVROZWAPZ
+      AVTPZWDNZVKWGNZQZRZSVDVEWAPZWNVINZVKBVTPZNZQZRZSVPIJKABCEFGVQAPZWJWRVDXEW
+      BWMWIWQXEVSWLWAVQAVRUBUCXEWEWOWHWPXEWCWNWDVQAVTUDUFXEWFVKWGVQADUDUFUEUGUH
+      VRBPZWRXDVDXFWMWSWQXCXFWLVEWAVRBAUIUCXFWOWTWPXBXFWDVIWNVRBDUDUJXFWGXAVKVR
+      BVTUDUJUEUGUHVTCPZXDVOVDXGWSVGXCVNXGWAVFVEVTCDUBUQXGWTVJXBVMXGWNVHVIVTCAU
+      KUFXGXAVLVKVTCBUKUJUEUGUHWKVQEMVRFMVTGMULVSVTLTZOZPWCJLUAZNZILUAZWGNZQWBW
+      ILDHXHDPZXIWAVSXHDVTUIUQXNXKWEXMWHXNXJWDWCXHDVRUKUJXNXLWFWGXHDVQUKUFUEVQV
+      RVTXHIUMJUMKUMLUMUNUOURUPUSUT $.
+      $( [19-Apr-2014] $) $( [28-Mar-2014] $)
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Kuratowski ordered pairs (continued)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Membership in a Kuratowski ordered pair. 
+     (Contributed by SF, 12-Jan-2015.) $)
+  elopk $p |- ( A e. << B , C >> <-> ( A = { B } \/ A = { B , C } ) ) $=
+    ( copk wcel csn cpr wceq wo df-opk eleq2i snex prex elpr2 bitri ) ABCDZEABF
+    ZBCGZGZEAQHARHIPSABCJKAQRBLBCMNO $.
+    $( [12-Jan-2015] $)
+
+  $( Equality of the first member of a Kuratowski ordered pair, which holds
+     regardless of the sethood of the second members. 
+     (Contributed by SF, 12-Jan-2015.) $)
+  opkth1g $p |- ( ( A e. V /\ << A , B >> = << C , D >> ) -> A = C ) $=
+    ( wcel copk wceq wa csn cpr wo eqid orci elopk mpbir eleq2 snidg syl5ibrcom
+    biimprd prid1g jaod syl5bi sylan9r mpi wb elsncg adantr mpbid ) AEFZABGZCDGZ
+    HZIZACJZFZACHZUNUOULFZUPURUOUOHZUOCDKHZLUSUTUOMNUOCDOPUMURUOUKFZUJUPUMVAURU
+    KULUOQTVAUOAJZHZUOABKZHZLUJUPUOABOUJVCUPVEUJUPVCAVBFAERUOVBAQSUJUPVEAVDFABE
+    UAUOVDAQSUBUCUDUEUJUPUQUFUMACEUGUHUI $.
+    $( [12-Jan-2015] $)
+
+  $( Two Kuratowski ordered pairs are equal iff their components are equal. 
+     (Contributed by SF, 12-Jan-2015.) $)
+  opkthg $p |- ( ( A e. V /\ B e. W /\ D e. T ) ->
+    ( << A , B >> = << C , D >> <-> ( A = C /\ B = D ) ) ) $=
+    ( wcel w3a copk wceq wa simp1 opkth1g sylan wi cpr df-opk prex syl5 jca csn
+    simp2 simp3 opkeq1 eqeq1d biimpd impcom eqeq12i preqr2 sylbi exp3a imp jcai
+    preqr2g ex opkeq12 impbid1 ) AFHZBGHZDEHZIZABJZCDJZKZACKZBDKZLZVBVEVHVBVELV
+    FVGVBUSVEVFUSUTVAMABCDFNOVBUTVALZVEVFVGPZVBUTVAUSUTVAUCUSUTVAUDUAVIVEVJVIVE
+    VFVGVEVFLCBJZVDKZVIVGVFVEVLVFVEVLVFVCVKVDACBUEUFUGUHVLCBQZCDQZKZVIVGVLCUBZV
+    MQZVPVNQZKVOVKVQVDVRCBRCDRUIVMVNVPCBSCDSUJUKBDCGEUOTTULUMOUNUPABCDUQUR $.
+    $( [12-Jan-2015] $)
+
+  ${
+    opkth.1 $e |- A e. _V $.
+    opkth.2 $e |- B e. _V $.
+    opkth.3 $e |- D e. _V $.
+    $( Two Kuratowski ordered pairs are equal iff their components are
+       equal. 
+       (Contributed by SF, 12-Jan-2015.) $)
+    opkth $p |- ( << A , B >> = << C , D >> <-> ( A = C /\ B = D ) ) $=
+      ( cvv wcel copk wceq wa wb opkthg mp3an ) AHIBHIDHIABJCDJKACKBDKLMEFGABCD
+      HHHNO $.
+      $( [12-Jan-2015] $)
+  $}
+
