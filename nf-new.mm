@@ -13856,14 +13856,6 @@ $)
     ( wcel csn cdif cun uncom wss wceq snssi undif sylib syl5eq ) BACZABDZEZOFO
     PFZAPOGNOAHQAIBAJOAKLM $.
 
-  $( Note that ` x ` is a dummy variable in the proof below. $)
-  $( Compute the power set of the empty set.  Theorem 89 of [Suppes] p. 47.
-     (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
-     29-Jun-2011.) $)
-  pw0 $p |- ~P (/) = { (/) } $=
-    ( vx cv c0 wss cab wceq cpw csn ss0b abbii df-pw df-sn 3eqtr4i ) ABZCDZAENC
-    FZAECGCHOPANIJACKACLM $.
-
   ${
     $d x y $.
     $( Compute the power set of the power set of the empty set.  (See ~ pw0 for
@@ -14062,6 +14054,15 @@ $)
   sneqbg $p |- ( A e. V -> ( { A } = { B } <-> A = B ) ) $=
     ( wcel csn wceq sneqrg sneq impbid1 ) ACDAEBEFABFABCGABHI $.
 
+  ${
+    sneqb.1 $e |- A e. _V $.
+    $( Biconditional equality for singletons. 
+       (Contributed by SF, 14-Jan-2015.) $)
+    sneqb $p |- ( { A } = { B } <-> A = B ) $=
+      ( cvv wcel csn wceq wb sneqbg ax-mp ) ADEAFBFGABGHCABDIJ $.
+      $( [14-Jan-2015] $)
+  $}
+  
   ${
     $d x A $.
     $( The singleton of a class is a subset of its power class.  (Contributed
@@ -16207,7 +16208,6 @@ $)
       $.
   $}
 
-
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         More Boolean set operations
@@ -16245,6 +16245,36 @@ $)
   $( Union with complement.  (Contributed by SF, 2-Jan-2018.) $)
   uncompl $p |- ( A u. ~ A ) = _V $=
     ( ccompl cun cnin cvv df-un nincompl eqtri ) AABZCIIBDEAIFIGH $.
+
+
+
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Condition for subset when ` A ` is already known to be a subset. 
+       (Contributed by ?who?, 13-Jan-2015.) $)
+    ssofss $p |- ( A C_ C -> ( A C_ B <-> A. x e. C ( x e. A -> x e. B ) ) ) $=
+      ( wss cv wcel wi wral ccompl wa vex elcompl ssel con3d syl5bi imp pm2.21d
+      wn cvv ralrimiva biantrud cun wal ralv raleqi dfss2 3bitr4ri ralunb bitri
+      uncompl syl6rbbr ) BDEZAFZBGZUNCGZHZADIZURUQADJZIZKZBCEZUMUTURUMUQAUSUMUN
+      USGZKUOUPUMVCUOSZVCUNDGZSUMVDUNDALMUMUOVEBDUNNOPQRUAUBVBUQADUSUCZIZVAUQAT
+      IUQAUDVGVBUQAUEUQAVFTDUKUFABCUGUHUQADUSUIUJUL $.
+      $( [13-Jan-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( When ` A ` and ` B ` are subsets of ` C ` , equality depends only on the
+       elements of ` C ` . 
+       (Contributed by ?who?, 13-Jan-2015.) $)
+    ssofeq $p |- ( ( A C_ C /\ B C_ C ) ->
+        ( A = B <-> A. x e. C ( x e. A <-> x e. B ) ) ) $=
+      ( wss wa cv wcel wi wral wceq wb ssofss bi2anan9 eqss ralbiim 3bitr4g ) B
+      DEZCDEZFBCEZCBEZFAGZBHZUBCHZIADJZUDUCIADJZFBCKUCUDLADJRTUESUAUFABCDMACBDM
+      NBCOUCUDADPQ $.
+      $( [13-Jan-2015] $)
+  $}
+
 
 
 $(
@@ -16912,5 +16942,439 @@ $)
       ( cvv wcel copk wceq wa wb opkthg mp3an ) AHIBHIDHIABJCDJKACKBDKLMEFGABCD
       HHHNO $.
       $( [12-Jan-2015] $)
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Cardinal one, unit unions, and unit power classes
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c 1c $. $( Cardinal one $)
+  $c ~P1 $.  $( Unit power class: calligraphic P with subscript 1. $)
+  $c U.1 $. $( Unitary union. $)
+
+  $( Extend class notation to include the unit union of a class (read:  'unit
+     union ` A ` ') $)
+  cuni1 $a class U.1 A $.
+
+  $( Extend the definition of a class to include cardinal one. $)
+  c1c $a class 1c $.
+
+  $( Extend class notation to include unit power class. $)
+  cpw1 $a class ~P1 A $.
+
+  ${
+    $d x y $.
+    $( Define cardinal one.  This is the set of all singletons, or the set of
+       all sets of size one. $)
+    df-1c $a |- 1c = { x | E. y x = { y } } $.
+  $}
+
+  $( Define unit power class.  Definition from [Rosser] p. 252. $)
+  df-pw1 $a |- ~P1 A = ( ~P A i^i 1c ) $.
+
+
+  $( Define the unit union of a class.  This operation is used implicitly in
+     both Holmes and Hailperin to complete their stratification
+     algorithms, although neither provide explicit notation for it.  See
+     ~ eluni1 for membership condition. $)
+  df-uni1 $a |- U.1 A = U. ( A i^i 1c ) $.
+
+
+  ${
+    $d A x y $.
+    $( Membership in cardinal one. 
+       (Contributed by SF, 12-Jan-2015.) $)
+    el1c $p |- ( A e. 1c <-> E. x A = { x } ) $=
+      ( vy c1c wcel cvv cv csn wceq elex snex eleq1 mpbiri exlimiv eqeq1 exbidv
+      wex df-1c elab2g pm5.21nii ) BDEBFEZBAGZHZIZAQZBDJUDUAAUDUAUCFEUBKBUCFLMN
+      CGZUCIZAQUECBDFUFBIUGUDAUFBUCOPCARST $.
+      $( [12-Jan-2015] $)
+  $}
+
+  ${
+    $d A x $.
+    snel1c.1 $e |- A e. _V $.
+    $( A singleton is an element of cardinal one. 
+       (Contributed by SF, 13-Jan-2015.) $)
+    snel1c $p |- { A } e. 1c $=
+      ( vx csn c1c wcel cv wceq wex eqid sneq eqeq2d spcev ax-mp el1c mpbir )
+      ADZEFQCGZDZHZCIZQQHZUAQJTUBCABRAHSQQRAKLMNCQOP $.
+      $( [13-Jan-2015] $)
+  $}
+
+  ${
+    $d A x $.
+    $( A singleton is an element of cardinal one. 
+       (Contributed by SF, 30-Jan-2015.) $)
+    snel1cg $p |- ( A e. V -> { A } e. 1c ) $=
+      ( vx cv csn c1c wcel wceq sneq eleq1d vex snel1c vtoclg ) CDZEZFGAEZFGCAB
+      NAHOPFNAIJNCKLM $.
+      $( [30-Jan-2015] $)
+  $}
+
+  ${
+    $d x y z w $.
+    $( Cardinal one is a set. 
+       (Contributed by SF, 12-Jan-2015.) $)
+    1cex $p |- 1c e. _V $=
+      ( vy vx vw vz c1c cvv wcel wel weq wb wal wex ax-1c cv isset bitri bibi2i
+      wceq albii exbii csn cab df-1c eqeq2i abeq2 dfcleq df-sn abeq2i mpbir ) E
+      FGZABHZCAHZCDIZJZCKZDLZJZAKZBLZBADCMUJBNZERZBLUSBEOVAURBVAUKANZDNZUAZRZDL
+      ZJZAKZURVAUTVFAUBZRVHEVIUTADUCUDVFAUTUEPVGUQAVFUPUKVEUODVEULCNVDGZJZCKUOC
+      VBVDUFVKUNCVJUMULUMCVDCVCUGUHQSPTQSPTPUI $.
+      $( [12-Jan-2015] $)
+  $}
+
+  $( Equality theorem for unit power class. 
+     (Contributed by SF, 12-Jan-2015.) $)
+  pw1eq $p |- ( A = B -> ~P1 A = ~P1 B ) $=
+    ( wceq cpw c1c cin cpw1 pweq ineq1d df-pw1 3eqtr4g ) ABCZADZEFBDZEFAGBGLMNE
+    ABHIAJBJK $.
+    $( [12-Jan-2015] $)
+
+  ${
+    $d A x y z w $.  $d B x y z w $.
+    $( Membership in a unit power class. 
+       (Contributed by SF, 13-Jan-2015.) $)
+    elpw1 $p |- ( A e. ~P1 B <-> E. x e. B A = { x } ) $=
+      ( cpw1 wcel cpw c1c wa cv csn wceq wrex cin df-pw1 eleq2i elin bitri el1c
+      wex bitr4i anbi2i 19.42v eleq1 wss snex elpw vex snss syl6bb exbii df-rex
+      pm5.32ri ) BCDZEZBCFZEZBGEZHZBAIZJZKZACLZUNBUOGMZEURUMVCBCNOBUOGPQURUPVAH
+      ZASZVBURUPVAASZHVEUQVFUPABRUAUPVAAUBTVEUSCEZVAHZASVBVDVHAVAUPVGVAUPUTUOEZ
+      VGBUTUOUCVIUTCUDVGUTCUSUEUFUSCAUGUHTUIULUJVAACUKTQQ $.
+      $( [13-Jan-2015] $)
+
+    $( Membership in a unit power class applied twice. 
+       (Contributed by SF, 15-Jan-2015.) $)
+    elpw12 $p |- ( A e. ~P1 ~P1 B <-> E. x e. B A = { { x } } ) $=
+      ( vy cpw1 wcel cv csn wceq wrex wa wex elpw1 anbi1i r19.41v bitr4i df-rex
+      exbii rexcom4 3bitr4i snex sneq eqeq2d ceqsexv rexbii 3bitri ) BCEZEFBDGZ
+      HZIZDUGJZUHAGZHZIZUJKZDLZACJZBUMHZIZACJDBUGMUHUGFZUJKZDLUOACJZDLUKUQVAVBD
+      VAUNACJZUJKVBUTVCUJAUHCMNUNUJACOPRUJDUGQUOADCSTUPUSACUJUSDUMULUAUNUIURBUH
+      UMUBUCUDUEUF $.
+      $( [15-Jan-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( Membership of a singleton in a unit power class. 
+       (Contributed by SF, 13-Jan-2015.) $)
+    snelpw1 $p |- ( { A } e. ~P1 B <-> A e. B ) $=
+      ( vx csn cv wceq wrex cpw1 wcel eqcom vex sneqb bitri rexbii elpw1 risset
+      3bitr4i ) ADZCEZDZFZCBGSAFZCBGRBHIABIUAUBCBUATRFUBRTJSACKLMNCRBOCABPQ $.
+      $( [13-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y $.
+    $( Membership in ` ~P1 1c ` 
+       (Contributed by SF, 13-Jan-2015.) $)
+    elpw11c $p |- ( A e. ~P1 1c <-> E. x A = { { x } } ) $=
+      ( vy c1c cpw1 wcel cv csn wceq wrex wex elpw1 df-rex anbi1i 19.41v bitr4i
+      wa el1c exbii bitri excom snex sneq eqeq2d ceqsexv 3bitri ) BDEFBCGZHZIZC
+      DJZUGAGZHZIZUIQZAKZCKZBULHZIZAKZCBDLUJUGDFZUIQZCKUPUICDMVAUOCVAUMAKZUIQUO
+      UTVBUIAUGRNUMUIAOPSTUPUNCKZAKUSUNCAUAVCURAUIURCULUKUBUMUHUQBUGULUCUDUESTU
+      F $.
+      $( [13-Jan-2015] $)
+
+    $( Membership in ` ~P1 ~P1 1c ` 
+       (Contributed by SF, 13-Jan-2015.) $)
+    elpw121c $p |- ( A e. ~P1 ~P1 1c <-> E. x A = { { { x } } } ) $=
+      ( vy c1c cpw1 wcel cv csn wceq wrex elpw1 wa df-rex elpw11c anbi1i 19.41v
+      wex bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEZEFBCGZHZIZCUF
+      JZBAGHZHZHZIZAQZCBUFKUJUGULIZUILZAQZCQZUOUJUGUFFZUILZCQUSUICUFMVAURCVAUPA
+      QZUILURUTVBUIAUGNOUPUIAPRSTUSUQCQZAQUOUQCAUAVCUNAUIUNCULUKUBUPUHUMBUGULUC
+      UDUESTTT $.
+      $( [13-Jan-2015] $)
+
+
+    $( Membership in ` ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 14-Jan-2015.) $)
+    elpw131c $p |- ( A e. ~P1 ~P1 ~P1 1c <->
+                E. x A = { { { { x } } } } ) $=
+      ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw121c anbi1i 19.41v
+      wrex bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEEZEFBCGZHZIZC
+      UFQZBAGHHZHZHZIZAJZCBUFKUJUGULIZUILZAJZCJZUOUJUGUFFZUILZCJUSUICUFMVAURCVA
+      UPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUHUMBUGU
+      LUCUDUESTTT $.
+      $( [14-Jan-2015] $)
+
+
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 14-Jan-2015.) $)
+    elpw141c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 1c <->
+                E. x A = { { { { { x } } } } } ) $=
+      ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw131c anbi1i 19.41v
+      wrex bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEEEZEFBCGZHZIZ
+      CUFQZBAGHHHZHZHZIZAJZCBUFKUJUGULIZUILZAJZCJZUOUJUGUFFZUILZCJUSUICUFMVAURC
+      VAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUHUMBU
+      GULUCUDUESTTT $.
+      $( [14-Jan-2015] $)
+
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 14-Jan-2015.) $)
+    elpw151c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
+                E. x A = { { { { { { x } } } } } } ) $=
+      ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw141c anbi1i 19.41v
+      wrex bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEEEEZEFBCGZHZI
+      ZCUFQZBAGHHHHZHZHZIZAJZCBUFKUJUGULIZUILZAJZCJZUOUJUGUFFZUILZCJUSUICUFMVAU
+      RCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUHUM
+      BUGULUCUDUESTTT $.
+      $( [14-Jan-2015] $)
+
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 14-Jan-2015.) $)
+    elpw161c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
+                E. x A = { { { { { { { x } } } } } } } ) $=
+      ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw151c anbi1i 19.41v
+      wrex bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEEEEEZEFBCGZHZ
+      IZCUFQZBAGHHHHHZHZHZIZAJZCBUFKUJUGULIZUILZAJZCJZUOUJUGUFFZUILZCJUSUICUFMV
+      AURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUPUH
+      UMBUGULUCUDUESTTT $.
+      $( [14-Jan-2015] $)
+
+
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 15-Jan-2015.) $)
+    elpw171c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
+                E. x A = { { { { { { { { x } } } } } } } } ) $=
+      ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw161c anbi1i 19.41v
+      wrex bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEEEEEEZEFBCGZH
+      ZIZCUFQZBAGHHHHHHZHZHZIZAJZCBUFKUJUGULIZUILZAJZCJZUOUJUGUFFZUILZCJUSUICUF
+      MVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUBUP
+      UHUMBUGULUCUDUESTTT $.
+      $( [15-Jan-2015] $)
+
+
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 15-Jan-2015.) $)
+    elpw181c $p |- (
+     A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
+                E. x A = { { { { { { { { { x } } } } } } } } } ) $=
+      ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw171c anbi1i 19.41v
+      wrex bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEEEEEEEZEFBCGZ
+      HZIZCUFQZBAGHHHHHHHZHZHZIZAJZCBUFKUJUGULIZUILZAJZCJZUOUJUGUFFZUILZCJUSUIC
+      UFMVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUKUB
+      UPUHUMBUGULUCUDUESTTT $.
+      $( [15-Jan-2015] $)
+
+
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 24-Jan-2015.) $)
+    elpw191c $p |- (
+     A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
+                E. x A = { { { { { { { { { { x } } } } } } } } } } ) $=
+      ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw181c anbi1i 19.41v
+      wrex bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEEEEEEEEZEFBCG
+      ZHZIZCUFQZBAGHHHHHHHHZHZHZIZAJZCBUFKUJUGULIZUILZAJZCJZUOUJUGUFFZUILZCJUSU
+      ICUFMVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCULUK
+      UBUPUHUMBUGULUCUDUESTTT $.
+      $( [24-Jan-2015] $)
+
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 24-Jan-2015.) $)
+    elpw1101c $p |- (
+     A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
+                E. x A = { { { { { { { { { { { x } } } } } } } } } } } ) $=
+      ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw191c anbi1i 19.41v
+      wrex bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEEEEEEEEEZEFBC
+      GZHZIZCUFQZBAGHHHHHHHHHZHZHZIZAJZCBUFKUJUGULIZUILZAJZCJZUOUJUGUFFZUILZCJU
+      SUICUFMVAURCVAUPAJZUILURUTVBUIAUGNOUPUIAPRSTUSUQCJZAJUOUQCAUAVCUNAUIUNCUL
+      UKUBUPUHUMBUGULUCUDUESTTT $.
+      $( [24-Jan-2015] $)
+
+
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 24-Jan-2015.) $)
+    elpw1111c $p |- (
+     A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
+                E. x A = { { { { { { { { { { { { x } } } } } } } } } } } } ) $=
+      ( vy c1c cpw1 wcel csn wceq wrex wex elpw1 df-rex elpw1101c anbi1i 19.41v
+      cv wa bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEEEEEEEEEEZEF
+      BCPZGZHZCUFIZBAPGGGGGGGGGGZGZGZHZAJZCBUFKUJUGULHZUIQZAJZCJZUOUJUGUFFZUIQZ
+      CJUSUICUFLVAURCVAUPAJZUIQURUTVBUIAUGMNUPUIAORSTUSUQCJZAJUOUQCAUAVCUNAUIUN
+      CULUKUBUPUHUMBUGULUCUDUESTTT $.
+      $( [24-Jan-2015] $)
+  $}
+
+
+  $( A unit power class is a subset of ` 1c ` . 
+     (Contributed by SF, 22-Jan-2015.) $)
+  pw1ss1c $p |- ~P1 A C_ 1c $=
+    ( cpw1 cpw c1c cin df-pw1 inss2 eqsstri ) ABACZDEDAFIDGH $.
+    $( [22-Jan-2015] $)
+
+  $( The empty class is not a singleton. 
+     (Contributed by SF, 22-Jan-2015.) $)
+  0nel1c $p |- -. (/) e. 1c $=
+    ( vx c0 c1c wcel cv csn wceq wex wn cvv vex snprc eqcom bitri con1bii mpbir
+    nex el1c mtbir ) BCDBAEZFZGZAHUBAUBITJDZAKUCUBUCIUABGUBTLUABMNOPQABRS $.
+    $( [22-Jan-2015] $)
+
+  $( Note that ` x ` is a dummy variable in the proof below. $)
+  $( Compute the power set of the empty set.  Theorem 89 of [Suppes] p. 47.
+     (The proof was shortened by Andrew Salmon, 29-Jun-2011.) 
+     (Contributed by SF, 5-Aug-1993.) 
+     (Revised by SF, 29-Jun-2011.) $)
+  pw0 $p |- ~P (/) = { (/) } $=
+    ( vx cv c0 wss cab wceq cpw csn ss0b abbii df-pw df-sn 3eqtr4i ) ABZCDZAENC
+    FZAECGCHOPANIJACKACLM $.
+    $( [29-Jun-2011] $) $( [5-Aug-1993] $)
+
+  $( Compute the unit power class of ` (/) ` 
+     (Contributed by SF, 22-Jan-2015.) $)
+  pw10 $p |- ~P1 (/) = (/) $=
+    ( vx c0 cpw1 cpw c1c cin csn df-pw1 ineq1i wceq cv wcel wn disj 0nel1c elsn
+    pw0 wb eleq1 sylbi mtbiri mprgbir 3eqtri ) BCBDZEFBGZEFZBBHUDUEEQIUFBJAKZEL
+    ZMAUEAUEENUGUELZUHBELZOUIUGBJUHUJRABPUGBESTUAUBUC $.
+    $( [22-Jan-2015] $)
+
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( A condition for equality to unit power class. 
+       (Contributed by SF, 21-Jan-2015.) $)
+    eqpw1 $p |- ( A = ~P1 B <-> ( A C_ 1c /\ A. x ( { x } e. A <-> x e. B )
+        ) ) $=
+      ( vy cpw1 wceq c1c wss cv csn wcel wb pw1ss1c sseq1 wi bitr4i albii bitri
+      wal eleq1 mpbiri wral ssofeq mpan2 df-ral wex imbi1i 19.23v alcom bibi12d
+      el1c snex ceqsalv snelpw1 bibi2i syl6bb biadan2 ) BCEZFZBGHZAIZJZBKZVACKZ
+      LZASZUSUTURGHZCMZBURGNUAUTUSDIZBKZVIURKZLZDGUBZVFUTVGUSVMLVHDBURGUCUDVMVI
+      VBFZVLOZDSZASZVFVMVIGKZVLOZDSZVQVLDGUEVTVOASZDSVQVSWADVSVNAUFZVLOWAVRWBVL
+      AVIUKUGVNVLAUHPQVOADUIPRVPVEAVPVCVBURKZLZVEVLWDDVBVAULVNVJVCVKWCVIVBBTVIV
+      BURTUJUMWCVDVCVACUNUORQRUPUQ $.
+      $( [21-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( Unit power class distributes over union. 
+       (Contributed by SF, 22-Jan-2015.) $)
+    pw1un $p |- ~P1 ( A u. B ) = ( ~P1 A u. ~P1 B ) $=
+      ( vx vy cun cpw1 cv wceq wrex wcel rexun elpw1 elun orbi12i bitri 3bitr4i
+      csn wo eqriv ) CABEZFZAFZBFZEZCGZDGQHZDTIUFDAIZUFDBIZRZUEUAJUEUDJZUFDABKD
+      UETLUJUEUBJZUEUCJZRUIUEUBUCMUKUGULUHDUEALDUEBLNOPS $.
+      $( [22-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( Unit power class distributes over intersection. 
+       (Contributed by SF, 13-Feb-2015.) $)
+    pw1in $p |- ~P1 ( A i^i B ) = ( ~P1 A i^i ~P1 B ) $=
+      ( vx vy cin cpw1 cv csn wceq wrex wcel wa ancom eleq1 snelpw1 syl6bb elin
+      anbi2d elpw1 3bitr4i syl6bbr pm5.32ri an12 3bitr3i rexbii2 anbi1i r19.41v
+      eqriv ) CABEZFZAFZBFZEZCGZDGZHZIZDUIJUQUNULKZLZDAJZUNUJKUNUMKZUQUSDUIAUOA
+      KZURLZUQLUQVCLUOUIKZUQLVBUSLVCUQMUQVCVDUQVCVBUOBKZLVDUQURVEVBUQURUPULKVEU
+      NUPULNUOBOPRUOABQUAUBUQVBURUCUDUEDUNUISUNUKKZURLUQDAJZURLVAUTVFVGURDUNASU
+      FUNUKULQUQURDAUGTTUH $.
+      $( [13-Feb-2015] $)
+  $}
+
+  ${
+    $d A x y $.
+    pw1sn.1 $e |- A e. _V $.
+    $( Compute the unit power class of a singleton. 
+       (Contributed by SF, 22-Jan-2015.) $)
+    pw1sn $p |- ~P1 { A } = { { A } } $=
+      ( vx vy cpw1 cv wceq wrex wcel sneq eqeq2d rexsn elpw1 elsn 3bitr4i eqriv
+      csn ) CAQZEZRQZCFZDFZQZGZDRHUARGZUASIUATIUDUEDABUBAGUCRUAUBAJKLDUARMCRNOP
+      $.
+      $( [22-Jan-2015] $)
+  $}
+
+  ${
+    $d A x $.
+    $( The unit power class of a class is empty iff the class itself is
+       empty. 
+       (Contributed by SF, 22-Jan-2015.) $)
+    pw10b $p |- ( ~P1 A = (/) <-> A = (/) ) $=
+      ( vx cpw1 c0 wceq wne cv wcel wex csn snelpw1 ne0i sylbir exlimiv necon4i
+      n0 sylbi pw1eq pw10 syl6eq impbii ) ACZDEADEZADUBDADFBGZAHZBIUBDFZBAPUEUF
+      BUEUDJZUBHUFUDAKUBUGLMNQOUCUBDCDADRSTUA $.
+      $( [22-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( Two unit power classes are disjoint iff the classes themselves are
+       disjoint. 
+       (Contributed by SF, 26-Jan-2015.) $)
+    pw1disj $p |- ( ( ~P1 A i^i ~P1 B ) = (/) <-> ( A i^i B ) = (/) ) $=
+      ( vx vy cpw1 cin c0 wceq cv wcel wn wral csn wi disj eleq1 notbid snelpw1
+      sylbi ralrimiv rspccv notbii 3imtr3g sylibr wrex elpw1 wa rsp imp syl6bb
+      syl5ibrcom rexlimdva syl5bi impbii ) AEZBEZFGHZABFGHZUQCIZBJZKZCALURUQVAC
+      AUQUSMZUOJZVBUPJZKZUSAJVAUQDIZUPJZKZDUOLVCVENDUOUPOVHVEDVBUOVFVBHVGVDVFVB
+      UPPQUASUSARVDUTUSBRUBUCTCABOUDURUSUPJZKZCUOLUQURVJCUOUSUOJUSVFMZHZDAUEURV
+      JDUSAUFURVLVJDAURVFAJZUGVJVLVFBJZKZURVMVOURVODALVMVONDABOVODAUHSUIVLVIVNV
+      LVIVKUPJVNUSVKUPPVFBRUJQUKULUMTCUOUPOUDUN $.
+      $( [26-Jan-2015] $)
+  $}
+
+  ${
+    $d x y $.
+    $( Cardinal one is the unit power class of the universe. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    df1c2 $p |- 1c = ~P1 _V $=
+      ( vx vy c1c cvv cpw1 cv csn wceq wrex wcel rexv elpw1 el1c 3bitr4ri eqriv
+      wex ) ACDEZAFZBFGHZBDISBPRQJRCJSBKBRDLBRMNO $.
+      $( [29-Jan-2015] $)
+  $}
+
+  $( Unit power set preserves subset. 
+     (Contributed by SF, 3-Feb-2015.) $)
+  pw1ss $p |- ( A C_ B -> ~P1 A C_ ~P1 B ) $=
+    ( wss cpw c1c cin cpw1 sspwb ssrin sylbi df-pw1 3sstr4g ) ABCZADZEFZBDZEFZA
+    GBGMNPCOQCABHNPEIJAKBKL $.
+    $( [3-Feb-2015] $)
+
+  ${
+    $d A t $.  $d A x $.  $d B t $.  $d B x $.  $d t x $.
+    $( The unit power class operation is one-to-one. 
+       (Contributed by SF, 26-Feb-2015.) $)
+    pw111 $p |- ( ~P1 A = ~P1 B <-> A = B ) $=
+      ( vt vx cv csn wceq cpw1 wcel wb wi wal eleq1 snelpw1 bitri albii c1c wss
+      snex pw1ss1c bibi12d ceqsalv bibi12i wral ssofeq mp2an df-ral el1c imbi1i
+      wex 19.23v bitr4i alcom dfcleq 3bitr4i ) CEZDEZFZGZUPAHZIZUPBHZIZJZKZCLZD
+      LZUQAIZUQBIZJZDLUTVBGZABGVFVJDVFURUTIZURVBIZJZVJVDVNCURUQSUSVAVLVCVMUPURU
+      TMUPURVBMUAUBVLVHVMVIUQANUQBNUCOPVKVDCQUDZVGUTQRVBQRVKVOJATBTCUTVBQUEUFVO
+      UPQIZVDKZCLZVGVDCQUGVRVEDLZCLVGVQVSCVQUSDUJZVDKVSVPVTVDDUPUHUIUSVDDUKULPV
+      ECDUMOOODABUNUO $.
+      $( [26-Feb-2015] $)
+  $}
+
+  $( A unit power class is a subset of a power class. 
+     (Contributed by SF, 10-Mar-2015.) $)
+  pw1sspw $p |- ~P1 A C_ ~P A $=
+    ( cpw1 cpw c1c cin df-pw1 inss1 eqsstri ) ABACZDEIAFIDGH $.
+    $( [10-Mar-2015] $)
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( Membership in a unit union. 
+       (Contributed by SF, 15-Mar-2015.) $)
+    eluni1g $p |- ( A e. V -> ( A e. U.1 B <-> { A } e. B ) ) $=
+      ( vy vx cuni1 wcel wceq csn wex c1c cin cuni df-uni1 anbi1i bitr4i 3bitri
+      cv wa exbii eleq2i eluni elin ancom el1c 19.41v anbi2i 19.42v excom eleq2
+      an12 snex vex elsnc2 syl6bb eleq1 anbi12d ceqsexv eqcom sneq eleq1d syl5bb
+      ceqsexgv ) ABFZGZDRZAHZVFIZBGZSZDJZACGAIZBGZVEABKLZMZGAERZGZVPVNGZSZEJZVK
+      VDVOABNUAEAVNUBVTVQVPVHHZVPBGZSZSZDJZEJWDEJZDJVKVSWEEVSVQWCDJZSWEVRWGVQVR
+      WBVPKGZSWHWBSZWGVPBKUCWBWHUDWIWADJZWBSWGWHWJWBDVPUEOWAWBDUFPQUGVQWCDUHPTW
+      DEDUIWFVJDWFWAVQWBSZSZEJAVFHZVISZVJWDWLEVQWAWBUKTWKWNEVHVFULWAVQWMWBVIWAV
+      QAVHGWMVPVHAUJAVFDUMUNUOVPVHBUPUQURWMVGVIAVFUSOQTQQVIVMDACVGVHVLBVFAUTVAV
+      CVB $.
+      $( [15-Mar-2015] $)
+  $}
+
+  ${
+    eluni1.1 $e |- A e. _V $.
+    $( Membership in a unit union. 
+       (Contributed by SF, 15-Mar-2015.) $)
+    eluni1 $p |- ( A e. U.1 B <-> { A } e. B ) $=
+      ( cvv wcel cuni1 csn wb eluni1g ax-mp ) ADEABFEAGBEHCABDIJ $.
+      $( [15-Mar-2015] $)
   $}
 
