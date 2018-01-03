@@ -8914,8 +8914,7 @@ $)
 
   ${
     $d A x y $.  $d B x y $.
-    $( Soundness theorem for ~ df-nin . 
-       (Contributed by SF, 10-Jan-2015.) $)
+    $( Soundness theorem for ~ df-nin .  (Contributed by SF, 10-Jan-2015.) $)
     ninjust $p |- { x | ( x e. A -/\ x e. B ) } =
              { y | ( y e. A -/\ y e. B ) } $=
       ( cv wcel wnan weq eleq1 nanbi12d cbvabv ) AEZCFZLDFZGBEZCFZODFZGABABHMP
@@ -8928,8 +8927,7 @@ $)
 
     $( Define the anti-intersection of two classes.  This operation is used
        implicitly after Axiom P1 of [Hailperin] p. 6, though there does not
-       seem to be any
-       notation for it in the literature. $)
+       seem to be any notation for it in the literature. $)
     df-nin $a |- ( A -i^i B ) = { x | ( x e. A -/\ x e. B ) } $.
   $}
 
@@ -8951,8 +8949,7 @@ $)
 
   ${
     $d A x $.  $d B x $.  $d C x $.
-    $( Membership in anti-intersection. 
-       (Contributed by SF, 10-Jan-2015.) $)
+    $( Membership in anti-intersection.  (Contributed by SF, 10-Jan-2015.) $)
     elning $p |- ( A e. V ->
             ( A e. ( B -i^i C ) <-> ( A e. B -/\ A e. C ) ) ) $=
       ( vx cv wcel wnan cnin wceq eleq1 nanbi12d df-nin elab2g ) EFZBGZOCGZHAB
@@ -8960,16 +8957,14 @@ $)
       $( [10-Jan-2015] $)
   $}
 
-  $( Membership in class complement. 
-     (Contributed by SF, 10-Jan-2015.) $)
+  $( Membership in class complement.  (Contributed by SF, 10-Jan-2015.) $)
   elcomplg $p |- ( A e. V -> ( A e. ~ B <-> -. A e. B ) ) $=
     ( ccompl wcel cnin wn df-compl eleq2i wnan elning wa df-nan xchbinx syl6bb
     anidm syl5bb ) ABDZEABBFZEZACEZABEZGZRSABHIUATUBUBJZUCABBCKUDUBUBLUBUBUBMUB
     PNOQ $.
     $( [10-Jan-2015] $)
 
-  $( Membership in intersection. 
-     (Contributed by SF, 10-Jan-2015.) $)
+  $( Membership in intersection.  (Contributed by SF, 10-Jan-2015.) $)
   elin $p |- ( A e. ( B i^i C ) <-> ( A e. B /\ A e. C ) ) $=
     ( cin wcel cvv wa elex adantr cnin ccompl wnan elcomplg elning notbid bitrd
     wn df-in eleq2i df-nan con2bii 3bitr4g pm5.21nii ) ABCDZEZAFEZABEZACEZGZAU
@@ -8977,8 +8972,7 @@ $)
     MUIUGUHTUAUBUC $.
     $( [10-Jan-2015] $)
 
-  $( Membership in union. 
-     (Contributed by SF, 10-Jan-2015.) $)
+  $( Membership in union.  (Contributed by SF, 10-Jan-2015.) $)
   elun $p |- ( A e. ( B u. C ) <-> ( A e. B \/ A e. C ) ) $=
     ( cun wcel wo elex jaoi ccompl cnin wn wnan elning elcomplg nanbi12d bitrd
     cvv df-un eleq2i wa oran df-nan bitr4i 3bitr4g pm5.21nii ) ABCDZEZAQEZABEZ
@@ -8986,8 +8980,7 @@ $)
     HUSUPUTUQABQNACQNOPUFUNABCRSUKUPUQTKURUIUJUAUPUQUBUCUDUE $.
     $( [10-Jan-2015] $)
 
-  $( Membership in difference. 
-     (Contributed by SF, 10-Jan-2015.) $)
+  $( Membership in difference.  (Contributed by SF, 10-Jan-2015.) $)
   eldif $p |- ( A e. ( B \ C ) <-> ( A e. B /\ -. A e. C ) ) $=
     ( cdif wcel ccompl cin wa wn df-dif eleq2i elin elcomplg pm5.32i 3bitri ) A
     BCDZEABCFZGZEABEZAQEZHSACEIZHPRABCJKABQLSTUAACBMNO $.
@@ -9002,8 +8995,7 @@ $)
       HZAIQABJRAOPBCKLQABMN $.
   $}
 
-  $( Membership in symmetric difference. 
-     (Contributed by SF, 10-Jan-2015.) $)
+  $( Membership in symmetric difference.  (Contributed by SF, 10-Jan-2015.) $)
   elsymdif $p |- ( A e. ( B (+) C ) <-> -. ( A e. B <-> A e. C ) ) $=
     ( cdif cun wcel wn wa wo csymdif wb elun eldif orbi12i df-symdif eleq2i xor
     bitri 3bitr4i ) ABCDZCBDZEZFZABFZACFZGHZUEUDGHZIZABCJZFUDUEKGUCATFZAUAFZIUH
@@ -9012,14 +9004,12 @@ $)
 
   ${
     elbool.1 $e |- A e. _V $.
-    $( Membership in anti-intersection. 
-       (Contributed by SF, 10-Jan-2015.) $)
+    $( Membership in anti-intersection.  (Contributed by SF, 10-Jan-2015.) $)
     elnin $p |- ( A e. ( B -i^i C ) <-> ( A e. B -/\ A e. C ) ) $=
       ( cvv wcel cnin wnan wb elning ax-mp ) AEFABCGFABFACFHIDABCEJK $.
       $( [10-Jan-2015] $)
 
-    $( Membership in complement. 
-       (Contributed by SF, 10-Jan-2015.) $)
+    $( Membership in complement.  (Contributed by SF, 10-Jan-2015.) $)
     elcompl $p |- ( A e. ~ B <-> -. A e. B ) $=
       ( cvv wcel ccompl wn wb elcomplg ax-mp ) ADEABFEABEGHCABDIJ $.
       $( [10-Jan-2015] $)
@@ -9027,8 +9017,7 @@ $)
 
   ${
     $d A x $.  $d B x $.
-    $( Anti-intersection commutes. 
-       (Contributed by SF, 10-Jan-2015.) $)
+    $( Anti-intersection commutes.  (Contributed by SF, 10-Jan-2015.) $)
     nincom $p |- ( A -i^i B ) = ( B -i^i A ) $=
       ( vx cnin cv wcel wnan nancom vex elnin 3bitr4i eqriv ) CABDZBADZCEZAFZO
       BFZGQPGOMFONFPQHOABCIZJOBARJKL $.
@@ -9037,8 +9026,7 @@ $)
 
   ${
     $d A x $.
-    $( Double complement law. 
-       (Contributed by SF, 10-Jan-2015.) $)
+    $( Double complement law.  (Contributed by SF, 10-Jan-2015.) $)
     dblcompl $p |- ~ ~ A = A $=
       ( vx ccompl cv wcel wn vex elcompl con2bii bitr4i eqriv ) BACZCZABDZMENLE
       ZFNAEZNLBGZHOPNAQHIJK $.
@@ -9046,10 +9034,9 @@ $)
   $}
 
   ${
-    $d x y $. $d A y $. $d B y $.
+    $d x y $.  $d A y $.  $d B y $.
     nfnin.1 $e |- F/_ x A $.
     nfnin.2 $e |- F/_ x B $.
-
     $( Hypothesis builder for anti-intersection.  (Contributed by SF,
        2-Jan-2018.) $)
     nfnin $p |- F/_ x ( A -i^i B ) $=
@@ -9059,26 +9046,22 @@ $)
 
   ${
     nfbool.1 $e |- F/_ x A $.
-
     $( Hypothesis builder for complement.  (Contributed by SF, 2-Jan-2018.) $)
     nfcompl $p |- F/_ x ~ A $=
       ( ccompl cnin df-compl nfnin nfcxfr ) ABDBBEBFABBCCGH $.
 
     nfbool.2 $e |- F/_ x B $.
-
     $( Hypothesis builder for intersection.  (Contributed by SF,
        2-Jan-2018.) $)
     nfin $p |- F/_ x ( A i^i B ) $=
       ( cin cnin ccompl df-in nfnin nfcompl nfcxfr ) ABCFBCGZHBCIAMABCDEJKL $.
 
-    $( Hypothesis builder for union.  (Contributed by SF,
-       2-Jan-2018.) $)
+    $( Hypothesis builder for union.  (Contributed by SF, 2-Jan-2018.) $)
     nfun $p |- F/_ x ( A u. B ) $=
       ( cun ccompl cnin df-un nfcompl nfnin nfcxfr ) ABCFBGZCGZHBCIAMNABDJACEJK
       L $.
 
-    $( Hypothesis builder for difference.  (Contributed by SF,
-       2-Jan-2018.) $)
+    $( Hypothesis builder for difference.  (Contributed by SF, 2-Jan-2018.) $)
     nfdif $p |- F/_ x ( A \ B ) $=
       ( cdif ccompl cin df-dif nfcompl nfin nfcxfr ) ABCFBCGZHBCIABMDACEJKL $.
 
@@ -9091,43 +9074,41 @@ $)
 
   ${
     $d A x $.  $d B x $.  $d C x $.
-    $( Equality law for anti-intersection. 
-       (Contributed by SF, 11-Jan-2015.) $)
+    $( Equality law for anti-intersection.  (Contributed by SF,
+       11-Jan-2015.) $)
     nineq1 $p |- ( A = B -> ( A -i^i C ) = ( B -i^i C ) ) $=
       ( vx wceq cv wcel wnan cab cnin eleq2 nanbi1d abbidv df-nin 3eqtr4g ) AB
       EZDFZAGZQCGZHZDIQBGZSHZDIACJBCJPTUBDPRUASABQKLMDACNDBCNO $.
       $( [11-Jan-2015] $)
   $}
 
-  $( Equality law for anti-intersection. 
-     (Contributed by SF, 11-Jan-2015.) $)
+  $( Equality law for anti-intersection.  (Contributed by SF, 11-Jan-2015.) $)
   nineq2 $p |- ( A = B -> ( C -i^i A ) = ( C -i^i B ) ) $=
     ( wceq cnin nineq1 nincom 3eqtr3g ) ABDACEBCECAECBEABCFACGBCGH $.
     $( [11-Jan-2015] $)
 
-  $( Equality law for anti-intersection. 
-     (Contributed by SF, 11-Jan-2015.) $)
+  $( Equality law for anti-intersection.  (Contributed by SF, 11-Jan-2015.) $)
   nineq12 $p |- ( ( A = B /\ C = D ) -> ( A -i^i C ) = ( B -i^i D ) ) $=
     ( wceq cnin nineq1 nineq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
     $( [11-Jan-2015] $)
 
   ${
     nineqi.1 $e |- A = B $.
-    $( Equality inference for anti-intersection. 
-       (Contributed by SF, 11-Jan-2015.) $)
+    $( Equality inference for anti-intersection.  (Contributed by SF,
+       11-Jan-2015.) $)
     nineq1i $p |- ( A -i^i C ) = ( B -i^i C ) $=
       ( wceq cnin nineq1 ax-mp ) ABEACFBCFEDABCGH $.
       $( [11-Jan-2015] $)
 
-    $( Equality inference for anti-intersection. 
-       (Contributed by SF, 11-Jan-2015.) $)
+    $( Equality inference for anti-intersection.  (Contributed by SF,
+       11-Jan-2015.) $)
     nineq2i $p |- ( C -i^i A ) = ( C -i^i B ) $=
       ( wceq cnin nineq2 ax-mp ) ABECAFCBFEDABCGH $.
       $( [11-Jan-2015] $)
 
     nineq12i.2 $e |- C = D $.
-    $( Equality inference for anti-intersection. 
-       (Contributed by SF, 11-Jan-2015.) $)
+    $( Equality inference for anti-intersection.  (Contributed by SF,
+       11-Jan-2015.) $)
     nineq12i $p |- ( A -i^i C ) = ( B -i^i D ) $=
       ( wceq cnin nineq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
       $( [11-Jan-2015] $)
@@ -9135,28 +9116,27 @@ $)
 
   ${
     nineqd.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for anti-intersection. 
-       (Contributed by SF, 11-Jan-2015.) $)
+    $( Equality deduction for anti-intersection.  (Contributed by SF,
+       11-Jan-2015.) $)
     nineq1d $p |- ( ph -> ( A -i^i C ) = ( B -i^i C ) ) $=
       ( wceq cnin nineq1 syl ) ABCFBDGCDGFEBCDHI $.
       $( [11-Jan-2015] $)
 
-    $( Equality deduction for anti-intersection. 
-       (Contributed by SF, 11-Jan-2015.) $)
+    $( Equality deduction for anti-intersection.  (Contributed by SF,
+       11-Jan-2015.) $)
     nineq2d $p |- ( ph -> ( C -i^i A ) = ( C -i^i B ) ) $=
       ( wceq cnin nineq2 syl ) ABCFDBGDCGFEBCDHI $.
       $( [11-Jan-2015] $)
 
     nineq12d.2 $e |- ( ph -> C = D ) $.
-    $( Equality inference for anti-intersection. 
-       (Contributed by SF, 11-Jan-2015.) $)
+    $( Equality inference for anti-intersection.  (Contributed by SF,
+       11-Jan-2015.) $)
     nineq12d $p |- ( ph -> ( A -i^i C ) = ( B -i^i D ) ) $=
       ( wceq cnin nineq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
       $( [11-Jan-2015] $)
   $}
 
-  $( Equality law for complement. 
-     (Contributed by SF, 11-Jan-2015.) $)
+  $( Equality law for complement.  (Contributed by SF, 11-Jan-2015.) $)
   compleq $p |- ( A = B -> ~ A = ~ B ) $=
     ( wceq cnin ccompl nineq12 anidms df-compl 3eqtr4g ) ABCZAADZBBDZAEBEJKLCAB
     ABFGAHBHI $.
@@ -9164,8 +9144,7 @@ $)
 
   ${
     compleqi.1 $e |- A = B $.
-    $( Equality inference for complement. 
-       (Contributed by SF, 11-Jan-2015.) $)
+    $( Equality inference for complement.  (Contributed by SF, 11-Jan-2015.) $)
     compleqi $p |- ~ A = ~ B $=
       ( wceq ccompl compleq ax-mp ) ABDAEBEDCABFG $.
       $( [11-Jan-2015] $)
@@ -9173,8 +9152,7 @@ $)
 
   ${
     compleqd.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for complement. 
-       (Contributed by SF, 11-Jan-2015.) $)
+    $( Equality deduction for complement.  (Contributed by SF, 11-Jan-2015.) $)
     compleqd $p |- ( ph -> ~ A = ~ B ) $=
       ( wceq ccompl compleq syl ) ABCEBFCFEDBCGH $.
       $( [11-Jan-2015] $)
@@ -16262,36 +16240,33 @@ $)
   df-opk $a |- << A , B >> = { { A } , { A , B } } $.
 
 
-  $( Equality theorem for ordered pairs. 
-     (Contributed by NM, 25-Jun-1998.) $)
+  $( Equality theorem for ordered pairs.  (Contributed by NM, 25-Jun-1998.) $)
   opkeq1 $p |- ( A = B -> << A , C >> = << B , C >> ) $=
     ( wceq csn cpr copk sneq preq1 preq12d df-opk 3eqtr4g ) ABDZAEZACFZFBEZBCFZ
     FACGBCGMNPOQABHABCIJACKBCKL $.
     $( [25-Jun-1998] $)
 
-  $( Equality theorem for ordered pairs. 
-     (Contributed by NM, 25-Jun-1998.) $)
+  $( Equality theorem for ordered pairs.  (Contributed by NM, 25-Jun-1998.) $)
   opkeq2 $p |- ( A = B -> << C , A >> = << C , B >> ) $=
     ( wceq csn cpr copk preq2 preq2d df-opk 3eqtr4g ) ABDZCEZCAFZFMCBFZFCAGCBGL
     NOMABCHICAJCBJK $.
     $( [25-Jun-1998] $)
 
-  $( Equality theorem for ordered pairs. 
-     (Contributed by NM, 28-May-1995.) $)
+  $( Equality theorem for ordered pairs.  (Contributed by NM, 28-May-1995.) $)
   opkeq12 $p |- ( ( A = C /\ B = D ) -> << A , B >> = << C , D >> ) $=
     ( wceq copk opkeq1 opkeq2 sylan9eq ) ACEBDEABFCBFCDFACBGBDCHI $.
     $( [28-May-1995] $)
 
   ${
     opkeq1i.1 $e |- A = B $.
-    $( Equality inference for ordered pairs. 
-       (Contributed by NM, 16-Dec-2006.) $)
+    $( Equality inference for ordered pairs.  (Contributed by NM,
+       16-Dec-2006.) $)
     opkeq1i $p |- << A , C >> = << B , C >> $=
       ( wceq copk opkeq1 ax-mp ) ABEACFBCFEDABCGH $.
       $( [16-Dec-2006] $)
 
-    $( Equality inference for ordered pairs. 
-       (Contributed by NM, 16-Dec-2006.) $)
+    $( Equality inference for ordered pairs.  (Contributed by NM,
+       16-Dec-2006.) $)
     opkeq2i $p |- << C , A >> = << C , B >> $=
       ( wceq copk opkeq2 ax-mp ) ABECAFCBFEDABCGH $.
       $( [16-Dec-2006] $)
@@ -16299,8 +16274,7 @@ $)
     ${
       opkeq12i.2 $e |- C = D $.
       $( Equality inference for ordered pairs.  (The proof was shortened by
-         Eric Schmidt, 4-Apr-2007.) 
-         (Contributed by NM, 16-Dec-2006.) $)
+         Eric Schmidt, 4-Apr-2007.)  (Contributed by NM, 16-Dec-2006.) $)
       opkeq12i $p |- << A , C >> = << B , D >> $=
         ( wceq copk opkeq12 mp2an ) ABGCDGACHBDHGEFACBDIJ $.
         $( [16-Dec-2006] $)
@@ -16309,14 +16283,14 @@ $)
 
   ${
     opkeq1d.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for ordered pairs. 
-       (Contributed by NM, 16-Dec-2006.) $)
+    $( Equality deduction for ordered pairs.  (Contributed by NM,
+       16-Dec-2006.) $)
     opkeq1d $p |- ( ph -> << A , C >> = << B , C >> ) $=
       ( wceq copk opkeq1 syl ) ABCFBDGCDGFEBCDHI $.
       $( [16-Dec-2006] $)
 
-    $( Equality deduction for ordered pairs. 
-       (Contributed by NM, 16-Dec-2006.) $)
+    $( Equality deduction for ordered pairs.  (Contributed by NM,
+       16-Dec-2006.) $)
     opkeq2d $p |- ( ph -> << C , A >> = << C , B >> ) $=
       ( wceq copk opkeq2 syl ) ABCFDBGDCGFEBCDHI $.
       $( [16-Dec-2006] $)
@@ -16324,8 +16298,7 @@ $)
     ${
       opkeq12d.2 $e |- ( ph -> C = D ) $.
       $( Equality deduction for ordered pairs.  (The proof was shortened by
-         Andrew Salmon, 29-Jun-2011.) 
-         (Contributed by NM, 16-Dec-2006.)  $)
+         Andrew Salmon, 29-Jun-2011.)  (Contributed by NM, 16-Dec-2006.) $)
       opkeq12d $p |- ( ph -> << A , C >> = << B , D >> ) $=
         ( wceq copk opkeq12 syl2anc ) ABCHDEHBDICEIHFGBDCEJK $.
         $( [29-Jun-2011] $) $( [16-Dec-2006] $)
@@ -16336,8 +16309,8 @@ $)
     $d y A $.  $d y B $.  $d x y $.
     nfopk.1 $e |- F/_ x A $.
     nfopk.2 $e |- F/_ x B $.
-    $( Bound-variable hypothesis builder for ordered pairs. 
-       (Contributed by NM, 14-Nov-1995.) $)
+    $( Bound-variable hypothesis builder for ordered pairs.  (Contributed by
+       NM, 14-Nov-1995.) $)
     nfopk $p |- F/_ x << A , B >> $=
       ( copk csn cpr df-opk nfsn nfpr nfcxfr ) ABCFBGZBCHZHBCIAMNABDJABCDEKKL
       $.
@@ -16350,11 +16323,11 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Complement in terms of difference. (Contributed by SF, 2-Jan-2018.) $)
+  $( Complement in terms of difference.  (Contributed by SF, 2-Jan-2018.) $)
   compldif $p |- ~ A = ( _V \ A ) $=
     ( cvv cdif ccompl cin df-dif incom inv1 3eqtrri ) BACBADZEJBEJBAFBJGJHI $.
-  
-  $( The complement of the universe is the empty set. (Contributed by SF,
+
+  $( The complement of the universe is the empty set.  (Contributed by SF,
      2-Jan-2018.) $)
   complV $p |- ~ _V = (/) $=
     ( cvv ccompl cdif c0 compldif df-nul eqtr4i ) ABAACDAEFG $.
@@ -16370,10 +16343,10 @@ $)
     nincompl $p |- ( A -i^i ~ A ) = _V $=
       ( vx ccompl cnin cvv wceq cv wcel eqv wn wa pm3.24 wnan vex elnin elcompl
       nanbi2i df-nan 3bitri mpbir mpgbir ) AACZDZEFBGZUCHZBBUCIUEUDAHZUFJZKJZUF
-      LUEUFUDUBHZMUFUGMUHUDAUBBNZOUIUGUFUDAUJPQUFUGRSTUA $.  
+      LUEUFUDUBHZMUFUGMUHUDAUBBNZOUIUGUFUDAUJPQUFUGRSTUA $.
   $}
 
-  $( Intersection with complement. (Contributed by SF, 2-Jan-2018.) $)
+  $( Intersection with complement.  (Contributed by SF, 2-Jan-2018.) $)
   incompl $p |- ( A i^i ~ A ) = (/) $=
     ( ccompl cin cnin cvv c0 df-in nincompl compleqi complV 3eqtri ) AABZCALDZB
     EBFALGMEAHIJK $.
@@ -16381,3 +16354,508 @@ $)
   $( Union with complement.  (Contributed by SF, 2-Jan-2018.) $)
   uncompl $p |- ( A u. ~ A ) = _V $=
     ( ccompl cun cnin cvv df-un nincompl eqtri ) AABZCIIBDEAIFIGH $.
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+             NF Set Theory - add the Set Construction Axioms
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Introduce the set construction axioms
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z w $.
+    $( State the axiom of anti-intersection.  Axiom P1 of [Hailperin] p. 6.
+       This axiom sets up boolean operations on sets.
+
+       Note on this and the following axioms: this axiom, ~ ax-xp , ~ ax-cnv ,
+       ~ ax-1c , ~ ax-sset , ~ ax-si , ~ ax-ins2 , ~ ax-ins3 , and
+       ~ ax-typlower are from Hailperin and are designed to implement the
+       Stratification Axiom of Quine.
+
+       A well-formed formula using only propositional symbols, predicate
+       symbols, and ` e. ` is "stratified" iff you can make a (metalogical)
+       mapping from the variables to the natural numbers such that any formulas
+       of the form ` x = y ` have the same number, and any formulas of the form
+       ` x e. y ` have ` x ` as one less than ` y ` .  Quine's stratification
+       axiom states that there is a set corresponding to any stratified
+       formula.
+
+       Since we cannot state stratification from within the logic, we use
+       Hailperin's axioms and prove existence of stratified sets using
+       Hailperin's algorithm. $)
+    ax-nin $a |- E. z A. w ( w e. z <-> ( w e. x -/\ w e. y ) ) $.
+  $}
+
+  ${
+    $d x y z w t $.
+    $( State the axiom of cross product.  This axiom guarantees the existence
+       of the (Kuratowski) cross product of ` _V ` with ` x ` .  Axiom P5 of
+       [Hailperin] p. 10. $)
+    ax-xp $a |- E. y A. z ( z e. y <->
+           E. w E. t ( z = << w , t >> /\ t e. x ) ) $.
+  $}
+
+  ${
+    $d x y z w $.
+    $( State the axiom of converse.  This axiom guarantees the existence of the
+       Kuratowski converse of ` x ` .  Axiom P7 of [Hailperin] p. 10. $)
+    ax-cnv $a |- E. y A. z A. w ( << z , w >> e. y <-> << w , z >> e. x ) $.
+  $}
+
+  ${
+    $d x y z w $.
+    $( State the axiom of cardinal one.  This axiom guarantees the existence of
+       the set of all singletons, which will become cardinal one later in our
+       development.  Axiom P8 of [Hailperin] p. 10. $)
+    ax-1c $a |- E. x A. y ( y e. x <-> E. z A. w ( w e. y <-> w = z ) ) $.
+  $}
+
+  ${
+    $d x y z w $.
+    $( State the axiom of the subset relationship.  This axiom guarantees the
+       existence of the Kuratowski relationship representing subset.  Slight
+       generalization of axiom P9 of [Hailperin] p. 10. $)
+    ax-sset $a |- E. x A. y A. z ( << y , z >> e. x <->
+      A. w ( w e. y -> w e. z ) ) $.
+  $}
+
+  ${
+    $d x y z w $.
+    $( State the axiom of the singleton image.  This axiom guarantees that
+       guarantees the existence of a set that raises the "type" of another set
+       when considered as a relationship.  Axiom P2 of [Hailperin] p. 10. $)
+    ax-si $a |- E. y A. z A. w ( << { z } , { w } >> e. y <->
+          << z , w >> e. x ) $.
+  $}
+
+  ${
+    $d x y z w t $.
+    $( State the insertion two axiom.  This axiom sets up a set that inserts an
+       extra variable at the second place of the relationship described by
+       ` x ` .  Axiom P3 of [Hailperin] p. 10. $)
+    ax-ins2 $a |- E. y A. z A. w A. t (
+      << { { z } } , << w , t >> >> e. y <-> << z , t >> e. x ) $.
+
+    $( State the insertion three axiom.  This axiom sets up a set that inserts
+       an extra variable at the third place of the relationship described by
+       ` x ` .  Axiom P4 of [Hailperin] p. 10. $)
+    ax-ins3 $a |- E. y A. z A. w A. t (
+      << { { z } } , << w , t >> >> e. y <-> << z , w >> e. x ) $.
+  $}
+
+  ${
+    $d x y z w $.
+    $( The type lowering axiom.  This axiom eventually sets up both the
+       existence of the sum set and the existence of the range of a
+       relationship.  Axiom P6 of [Hailperin] p. 10. $)
+    ax-typlower $a |- E. y A. z ( z e. y <-> A. w << w , { z } >> e. x ) $.
+  $}
+
+  ${
+    $d x y z $.
+    $( The singleton axiom.  This axiom sets up the existence of a singleton
+       set.  This appears to have been an oversight on Hailperin's part, as it
+       is needed to prove the properties of Kuratowski ordered pairs. $)
+    ax-sn $a |- E. y A. z ( z e. y <-> z = x ) $.
+  $}
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Primitive forms for some axioms
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d a c $.  $d B c $.
+    $( Lemma for the primitive axioms.  Primitive form of equality to a
+       singleton.  (Contributed by SF, 25-Mar-2015.) $)
+    axprimlem1 $p |- ( a = { B } <-> A. c ( c e. a <-> c = B ) ) $=
+      ( cv csn wceq wel wcel wb wal dfcleq elsn bibi2i albii bitri ) BDZAEZFCBG
+      ZCDZQHZIZCJRSAFZIZCJCPQKUAUCCTUBRCALMNO $.
+      $( [25-Mar-2015] $)
+  $}
+
+  ${
+    $d a d $.  $d B d $.  $d B e $.  $d B f $.  $d C d $.  $d C f $.  $d d e $.
+    $d d f $.
+    $( Lemma for the primitive axioms.  Primitive form of equality to a
+       Kuratowski ordered pair.  (Contributed by SF, 25-Mar-2015.) $)
+    axprimlem2 $p |- ( a = << B , C >> <-> A. d ( d e. a <-> ( A. e ( e e. d
+        <-> e = B ) \/ A. f ( f e. d <-> ( f = B \/ f = C ) ) ) ) ) $=
+      ( cv wceq cpr wel wb wal wo wcel dfcleq vex elpr bibi2i albii bitri copk
+      csn df-opk eqeq2i axprimlem1 orbi12i ) EGZABUAZHUGAUBZABIZIZHZFEJZCFJCGAH
+      KCLZDFJZDGZAHUPBHMZKZDLZMZKZFLZUHUKUGABUCUDULUMFGZUKNZKZFLVBFUGUKOVEVAFVD
+      UTUMVDVCUIHZVCUJHZMUTVCUIUJFPQVFUNVGUSAFCUEVGUOUPUJNZKZDLUSDVCUJOVIURDVHU
+      QUOUPABDPQRSTUFTRSTT $.
+      $( [25-Mar-2015] $)
+  $}
+
+
+  ${
+    $d a b $.  $d a c $.  $d a t $.  $d a w $.  $d a z $.  $d b w $.  $d c t $.
+    $d c w $.  $d t w $.  $d t x $.  $d t y $.  $d t z $.  $d w x $.  $d w y $.
+    $d w z $.  $d x y $.  $d x z $.  $d y z $.
+    $( ~ ax-xp presented without any set theory definitions.  (Contributed by
+       SF, 25-Mar-2015.) $)
+    axxpprim $p |- E. y A. z ( z e. y <-> E. w E. t ( A. a ( a e. z <-> ( A. b
+        ( b e. a <-> b = w ) \/ A. c ( c e. a <-> ( c = w \/ c = t ) ) ) ) /\ t
+        e. x ) ) $=
+      ( wel cv copk wceq wa wex wb wal weq wo ax-xp axprimlem2 albii exbii mpbi
+      anbi1i 2exbii bibi2i ) CBIZCJDJZEJZKLZEAIZMZENDNZOZCPZBNUGFCIGFIGDQOGPHFI
+      HDQHEQROHPROFPZUKMZENDNZOZCPZBNABCDESUOUTBUNUSCUMURUGULUQDEUJUPUKUHUIGHCF
+      TUDUEUFUAUBUC $.
+      $( [25-Mar-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a w $.  $d a y $.  $d a z $.  $d b c $.  $d b d $.  $d b w $.
+    $d b z $.  $d c z $.  $d d w $.  $d d z $.  $d e f $.  $d e w $.  $d e x $.
+    $d e z $.  $d f g $.  $d f h $.  $d f w $.  $d f z $.  $d g w $.  $d h w $.
+    $d h z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
+    $( ~ ax-cnv presented without any set theory definitions.  (Contributed by
+       SF, 25-Mar-2015.) $)
+    axcnvprim $p |- E. y A. z A. w ( E. a ( A. b ( b e. a <-> ( A. c ( c e. b
+        <-> c = z ) \/ A. d ( d e. b <-> ( d = z \/ d = w ) ) ) ) /\ a e. y )
+        <-> E. e ( A. f ( f e. e <-> ( A. g ( g e. f <-> g = w ) \/ A. h ( h e.
+        f <-> ( h = w \/ h = z ) ) ) ) /\ e e. x ) ) $=
+      ( cv wb wal wex wel weq wo wa copk ax-cnv df-clel axprimlem2 anbi1i exbii
+      wcel wceq bitri bibi12i 2albii mpbi ) CMZDMZUAZBMZUGZUNUMUAZAMZUGZNZDOCOZ
+      BPJIQKJQKCRNKOLJQLCRLDRSNLOSNJOZIBQZTZIPZFEQGFQGDRNGOHFQHDRHCRSNHOSNFOZEA
+      QZTZEPZNZDOCOZBPABCDUBVBVLBVAVKCDUQVFUTVJUQIMUOUHZVDTZIPVFIUOUPUCVNVEIVMV
+      CVDUMUNKLIJUDUEUFUIUTEMURUHZVHTZEPVJEURUSUCVPVIEVOVGVHUNUMGHEFUDUEUFUIUJU
+      KUFUL $.
+      $( [25-Mar-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a x $.  $d a y $.  $d a z $.  $d b c $.  $d b d $.  $d b y $.
+    $d b z $.  $d c y $.  $d d y $.  $d d z $.  $d e x $.  $d e y $.  $d e z $.
+    $d x y $.  $d x z $.  $d y z $.
+    $( ~ ax-sset presented without any set theory definitions.  (Contributed by
+       SF, 25-Mar-2015.) $)
+    axssetprim $p |- E. x A. y A. z ( E. a ( A. b ( b e. a <-> ( A. c ( c e. b
+        <-> c = y ) \/ A. d ( d e. b <-> ( d = y \/ d = z ) ) ) ) /\ a e. x )
+        <-> A. e ( e e. y -> e e. z ) ) $=
+      ( cv copk wcel wel wi wal wb wex weq wo wa exbii ax-sset axprimlem2 bitri
+      wceq df-clel anbi1i bibi1i 2albii mpbi ) BIZCIZJZAIZKZDBLDCLMDNZOZCNBNZAP
+      FELGFLGBQOGNHFLHBQHCQROHNROFNZEALZSZEPZUOOZCNBNZAPABCDUAUQVCAUPVBBCUNVAUO
+      UNEIULUDZUSSZEPVAEULUMUEVEUTEVDURUSUJUKGHEFUBUFTUCUGUHTUI $.
+      $( [25-Mar-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a w $.  $d a y $.  $d a z $.  $d b c $.  $d b e $.  $d b w $.
+    $d b z $.  $d c d $.  $d c z $.  $d d z $.  $d e f $.  $d e g $.  $d e w $.
+    $d e z $.  $d f z $.  $d g w $.  $d h i $.  $d h w $.  $d h x $.  $d h z $.
+    $d i j $.  $d i k $.  $d i w $.  $d i z $.  $d j z $.  $d k w $.  $d k z $.
+    $d w x $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
+    $( ~ ax-si presented without any set theory definitions.  (Contributed by
+       SF, 25-Mar-2015.) $)
+    axsiprim $p |- E. y A. z A. w ( E. a ( A. b ( b e. a <-> ( A. c ( c e. b
+        <-> A. d ( d e. c <-> d = z ) ) \/ A. e ( e e. b <-> ( A. f ( f e. e
+        <-> f = z ) \/ A. g ( g e. e <-> g = w ) ) ) ) ) /\ a e. y ) <-> E. h (
+        A. i ( i e. h <-> ( A. j ( j e. i <-> j = z ) \/ A. k ( k e. i <-> ( k
+        = z \/ k = w ) ) ) ) /\ h e. x ) ) $=
+      ( cv wb wal wex wel csn copk wcel weq wo wa ax-si wceq df-clel axprimlem2
+      axprimlem1 bibi2i albii orbi12i bitri anbi1i exbii bibi12i 2albii mpbi )
+      CPZUAZDPZUAZUBZBPZUCZVAVCUBZAPZUCZQZDRCRZBSMLTZNMTZONTOCUDQORZQZNRZEMTZFE
+      TFCUDQFRZGETGDUDQGRZUEZQZERZUEZQZMRZLBTZUFZLSZIHTJITJCUDQJRKITKCUDKDUDUEQ
+      KRUEQIRZHATZUFZHSZQZDRCRZBSABCDUGVLWOBVKWNCDVGWIVJWMVGLPVEUHZWGUFZLSWILVE
+      VFUIWQWHLWPWFWGWPVMVNNPVBUHZQZNRZVREPZVBUHZXAVDUHZUEZQZERZUEZQZMRWFVBVDNE
+      LMUJXHWEMXGWDVMWTVQXFWCWSVPNWRVOVNVANOUKULUMXEWBEXDWAVRXBVSXCVTVAEFUKVCEG
+      UKUNULUMUNULUMUOUPUQUOVJHPVHUHZWKUFZHSWMHVHVIUIXJWLHXIWJWKVAVCJKHIUJUPUQU
+      OURUSUQUT $.
+      $( [25-Mar-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a w $.  $d a x $.  $d a z $.  $d b c $.  $d b d $.  $d b w $.
+    $d b z $.  $d c w $.  $d d e $.  $d d w $.  $d d z $.  $d e z $.  $d w x $.
+    $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
+    $( ~ ax-typlower presented without any set theory definitions.
+       (Contributed by SF, 25-Mar-2015.) $)
+    axtyplowerprim $p |- E. y A. z ( z e. y <-> A. w E. a ( A. b ( b e. a <-> (
+        A. c ( c e. b <-> c = w ) \/ A. d ( d e. b <-> ( d = w \/ A. e ( e e. d
+        <-> e = z ) ) ) ) ) /\ a e. x ) ) $=
+      ( wel cv wal wb wex weq wo wa wceq bibi2i albii csn copk wcel ax-typlower
+      df-clel axprimlem2 axprimlem1 orbi2i bitri anbi1i exbii mpbi ) CBJZDKZCKZ
+      UAZUBZAKZUCZDLZMZCLZBNUMGFJZHGJHDOMHLZIGJZIDOZEIJECOMELZPZMZILZPZMZGLZFAJ
+      ZQZFNZDLZMZCLZBNABCDUDVBVSBVAVRCUTVQUMUSVPDUSFKUQRZVNQZFNVPFUQURUEWAVOFVT
+      VMVNVTVCVDVEVFIKUPRZPZMZILZPZMZGLVMUNUPHIFGUFWGVLGWFVKVCWEVJVDWDVIIWCVHVE
+      WBVGVFUOIEUGUHSTUHSTUIUJUKUITSTUKUL $.
+      $( [25-Mar-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a t $.  $d a w $.  $d a y $.  $d a z $.  $d b c $.  $d b f $.
+    $d b t $.  $d b w $.  $d b z $.  $d c d $.  $d c z $.  $d d e $.  $d d z $.
+    $d e g $.  $d e z $.  $d f g $.  $d f h $.  $d f t $.  $d f w $.  $d f z $.
+    $d g z $.  $d h i $.  $d h j $.  $d h t $.  $d h w $.  $d i w $.  $d j t $.
+    $d j w $.  $d k l $.  $d k t $.  $d k x $.  $d k z $.  $d l m $.  $d l n $.
+    $d l t $.  $d l z $.  $d m z $.  $d n t $.  $d n z $.  $d t w $.  $d t x $.
+    $d t y $.  $d t z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.
+    $d y z $.
+    $( ~ ax-ins2 presented without any set theory definitions.  (Contributed by
+       SF, 25-Mar-2015.) $)
+    axins2prim $p |- E. y A. z A. w A. t ( E. a ( A. b ( b e. a <-> ( A. c ( c
+        e. b <-> A. d ( d e. c <-> A. e ( e e. d <-> e = z ) ) ) \/ A. f ( f e.
+        b <-> ( A. g ( g e. f <-> A. e ( e e. g <-> e = z ) ) \/ A. h ( h e. f
+        <-> ( A. i ( i e. h <-> i = w ) \/ A. j ( j e. h <-> ( j = w \/ j = t )
+        ) ) ) ) ) ) ) /\ a e. y ) <-> E. k ( A. l ( l e. k <-> ( A. m ( m e. l
+        <-> m = z ) \/ A. n ( n e. l <-> ( n = z \/ n = t ) ) ) ) /\ k e. x ) )
+        $=
+      ( wal cv csn copk wcel wb wex wel weq wo wa ax-ins2 axprimlem2 axprimlem1
+      wceq df-clel bibi2i albii bitri orbi12i anbi1i exbii bibi12i 2albii mpbi
+      ) CUAZUBZUBZDUAZEUAZUCZUCZBUAZUDZVEVIUCZAUAZUDZUEZETZDTCTZBUFPOUGZQPUGZRQ
+      UGZFRUGFCUHZUEFTZUEZRTZUEZQTZGPUGZHGUGZFHUGWCUEFTZUEZHTZIGUGJIUGJDUHUEJTK
+      IUGKDUHKEUHUIUEKTUIUEITZUIZUEZGTZUIZUEZPTZOBUGZUJZOUFZSLUGMSUGMCUHUEMTNSU
+      GNCUHNEUHUIUENTUIUESTZLAUGZUJZLUFZUEZETZDTCTZBUFABCDEUKVSXJBVRXICDVQXHEVM
+      XCVPXGVMOUAVKUNZXAUJZOUFXCOVKVLUOXLXBOXKWTXAXKVTWAQUAVGUNZUEZQTZWIGUAZVGU
+      NZXPVJUNZUIZUEZGTZUIZUEZPTWTVGVJQGOPULYCWSPYBWRVTXOWHYAWQXNWGQXMWFWAXMWBR
+      UAVFUNZUEZRTWFVFQRUMYEWERYDWDWBVERFUMUPUQURUPUQXTWPGXSWOWIXQWMXRWNXQWJHUA
+      VFUNZUEZHTWMVFGHUMYGWLHYFWKWJVEHFUMUPUQURVHVIJKGIULUSUPUQUSUPUQURUTVAURVP
+      LUAVNUNZXEUJZLUFXGLVNVOUOYIXFLYHXDXEVEVIMNLSULUTVAURVBUQVCVAVD $.
+      $( [25-Mar-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a t $.  $d a w $.  $d a y $.  $d a z $.  $d b c $.  $d b f $.
+    $d b t $.  $d b w $.  $d b z $.  $d c d $.  $d c z $.  $d d e $.  $d d z $.
+    $d e g $.  $d e z $.  $d f g $.  $d f h $.  $d f t $.  $d f w $.  $d f z $.
+    $d g z $.  $d h i $.  $d h j $.  $d h t $.  $d h w $.  $d i w $.  $d j t $.
+    $d j w $.  $d k l $.  $d k w $.  $d k x $.  $d k z $.  $d l m $.  $d l n $.
+    $d l w $.  $d l z $.  $d m z $.  $d n w $.  $d n z $.  $d t w $.  $d t x $.
+    $d t y $.  $d t z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.
+    $d y z $.
+    $( ~ ax-ins3 presented without any set theory definitions.  (Contributed by
+       SF, 25-Mar-2015.) $)
+    axins3prim $p |- E. y A. z A. w A. t ( E. a ( A. b ( b e. a <-> ( A. c ( c
+        e. b <-> A. d ( d e. c <-> A. e ( e e. d <-> e = z ) ) ) \/ A. f ( f e.
+        b <-> ( A. g ( g e. f <-> A. e ( e e. g <-> e = z ) ) \/ A. h ( h e. f
+        <-> ( A. i ( i e. h <-> i = w ) \/ A. j ( j e. h <-> ( j = w \/ j = t )
+        ) ) ) ) ) ) ) /\ a e. y ) <-> E. k ( A. l ( l e. k <-> ( A. m ( m e. l
+        <-> m = z ) \/ A. n ( n e. l <-> ( n = z \/ n = w ) ) ) ) /\ k e. x ) )
+        $=
+      ( wal cv csn copk wcel wb wex wel weq wo wa ax-ins3 axprimlem2 axprimlem1
+      wceq df-clel bibi2i albii bitri orbi12i anbi1i exbii bibi12i 2albii mpbi
+      ) CUAZUBZUBZDUAZEUAZUCZUCZBUAZUDZVEVHUCZAUAZUDZUEZETZDTCTZBUFPOUGZQPUGZRQ
+      UGZFRUGFCUHZUEFTZUEZRTZUEZQTZGPUGZHGUGZFHUGWCUEFTZUEZHTZIGUGJIUGJDUHUEJTK
+      IUGKDUHKEUHUIUEKTUIUEITZUIZUEZGTZUIZUEZPTZOBUGZUJZOUFZSLUGMSUGMCUHUEMTNSU
+      GNCUHNDUHUIUENTUIUESTZLAUGZUJZLUFZUEZETZDTCTZBUFABCDEUKVSXJBVRXICDVQXHEVM
+      XCVPXGVMOUAVKUNZXAUJZOUFXCOVKVLUOXLXBOXKWTXAXKVTWAQUAVGUNZUEZQTZWIGUAZVGU
+      NZXPVJUNZUIZUEZGTZUIZUEZPTWTVGVJQGOPULYCWSPYBWRVTXOWHYAWQXNWGQXMWFWAXMWBR
+      UAVFUNZUEZRTWFVFQRUMYEWERYDWDWBVERFUMUPUQURUPUQXTWPGXSWOWIXQWMXRWNXQWJHUA
+      VFUNZUEZHTWMVFGHUMYGWLHYFWKWJVEHFUMUPUQURVHVIJKGIULUSUPUQUSUPUQURUTVAURVP
+      LUAVNUNZXEUJZLUFXGLVNVOUOYIXFLYHXDXEVEVHMNLSULUTVAURVBUQVCVAVD $.
+      $( [25-Mar-2015] $)
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Initial existence theorems
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x y z w $.  $d B x y z w $.
+    $( The anti-intersection of two sets is a set.  (Contributed by SF,
+       12-Jan-2015.) $)
+    ninexg $p |- ( ( A e. V /\ B e. W ) -> ( A -i^i B ) e. _V ) $=
+      ( vx vy vw vz cv cnin cvv wcel wceq nineq1 eleq1d wel wb wal wex bitri
+      nineq2 wnan ax-nin isset dfcleq elnin bibi2i albii exbii mpbir vtocl2g
+      vex ) EIZFIZJZKLZAUNJZKLABJZKLEFABCDUMAMUOUQKUMAUNNOUNBMUQURKUNBAUAOUPGHP
+      ZGEPGFPUBZQZGRZHSZEFHGUCUPHIZUOMZHSVCHUOUDVEVBHVEUSGIZUOLZQZGRVBGVDUOUEVH
+      VAGVGUTUSVFUMUNGULUFUGUHTUITUJUK $.
+      $( [12-Jan-2015] $)
+  $}
+
+  ${
+    ninex.1 $e |- A e. _V $.
+    ninex.2 $e |- B e. _V $.
+    $( The anti-intersection of two sets is a set.  (Contributed by SF,
+       12-Jan-2015.) $)
+    ninex $p |- ( A -i^i B ) e. _V $=
+      ( cvv wcel cnin ninexg mp2an ) AEFBEFABGEFCDABEEHI $.
+      $( [12-Jan-2015] $)
+  $}
+
+  $( The complement of a set is a set.  (Contributed by SF, 12-Jan-2015.) $)
+  complexg $p |- ( A e. V -> ~ A e. _V ) $=
+    ( wcel ccompl cnin cvv df-compl ninexg anidms syl5eqel ) ABCZADAAEZFAGKLFCA
+    ABBHIJ $.
+    $( [12-Jan-2015] $)
+
+  $( The intersection of two sets is a set.  (Contributed by SF,
+     12-Jan-2015.) $)
+  inexg $p |- ( ( A e. V /\ B e. W ) -> ( A i^i B ) e. _V ) $=
+    ( wcel wa cin cnin ccompl cvv df-in ninexg complexg syl syl5eqel ) ACEBDEFZ
+    ABGABHZIZJABKPQJERJEABCDLQJMNO $.
+    $( [12-Jan-2015] $)
+
+  $( The union of two sets is a set.  (Contributed by SF, 12-Jan-2015.) $)
+  unexg $p |- ( ( A e. V /\ B e. W ) -> ( A u. B ) e. _V ) $=
+    ( wcel wa cun ccompl cnin cvv df-un complexg ninexg syl2an syl5eqel ) ACEZB
+    DEZFABGAHZBHZIZJABKPRJESJETJEQACLBDLRSJJMNO $.
+    $( [12-Jan-2015] $)
+
+  $( The difference of two sets is a set.  (Contributed by SF, 12-Jan-2015.) $)
+  difexg $p |- ( ( A e. V /\ B e. W ) -> ( A \ B ) e. _V ) $=
+    ( wcel wa cdif ccompl cin cvv df-dif complexg inexg sylan2 syl5eqel ) ACEZB
+    DEZFABGABHZIZJABKQPRJESJEBDLARCJMNO $.
+    $( [12-Jan-2015] $)
+
+  $( The symmetric difference of two sets is a set.  (Contributed by SF,
+     12-Jan-2015.) $)
+  symdifexg $p |- ( ( A e. V /\ B e. W ) -> ( A (+) B ) e. _V ) $=
+    ( wcel csymdif cdif cun cvv df-symdif difexg ancoms unexg syl2anc syl5eqel
+    wa ) ACEZBDEZPZABFABGZBAGZHZIABJSTIEUAIEZUBIEABCDKRQUCBADCKLTUAIIMNO $.
+    $( [12-Jan-2015] $)
+
+  ${
+    boolex.1 $e |- A e. _V $.
+    $( The complement of a set is a set.  (Contributed by SF, 12-Jan-2015.) $)
+    complex $p |- ~ A e. _V $=
+      ( cvv wcel ccompl complexg ax-mp ) ACDAECDBACFG $.
+      $( [12-Jan-2015] $)
+
+    boolex.2 $e |- B e. _V $.
+    $( The intersection of two sets is a set.  (Contributed by SF,
+       12-Jan-2015.) $)
+    inex $p |- ( A i^i B ) e. _V $=
+      ( cvv wcel cin inexg mp2an ) AEFBEFABGEFCDABEEHI $.
+      $( [12-Jan-2015] $)
+
+    $( The union of two sets is a set.  (Contributed by SF, 12-Jan-2015.) $)
+    unex $p |- ( A u. B ) e. _V $=
+      ( cvv wcel cun unexg mp2an ) AEFBEFABGEFCDABEEHI $.
+      $( [12-Jan-2015] $)
+
+    $( The difference of two sets is a set.  (Contributed by SF,
+       12-Jan-2015.) $)
+    difex $p |- ( A \ B ) e. _V $=
+      ( cvv wcel cdif difexg mp2an ) AEFBEFABGEFCDABEEHI $.
+      $( [12-Jan-2015] $)
+
+    $( The symmetric difference of two sets is a set.  (Contributed by SF,
+       12-Jan-2015.) $)
+    symdifex $p |- ( A (+) B ) e. _V $=
+      ( cvv wcel csymdif symdifexg mp2an ) AEFBEFABGEFCDABEEHI $.
+      $( [12-Jan-2015] $)
+  $}
+
+  $( The universal class exists.  This marks a major departure from ZFC set
+     theory, where ` _V ` is a proper class.  (Contributed by SF,
+     12-Jan-2015.) $)
+  vvex $p |- _V e. _V $=
+    ( vx cv ccompl cun cvv uncompl vex complex unex eqeltrri ) ABZKCZDEEKFKLAGZ
+    KMHIJ $.
+    $( [12-Jan-2015] $)
+
+  $( The empty class exists.  (Contributed by SF, 12-Jan-2015.) $)
+  0ex $p |- (/) e. _V $=
+    ( cvv ccompl c0 complV vvex complex eqeltrri ) ABCADAEFG $.
+    $( [12-Jan-2015] $)
+
+  ${
+    $d A x y z $.
+    $( A singleton always exists.  (Contributed by SF, 12-Jan-2015.) $)
+    snex $p |- { A } e. _V $=
+     ( vx vz vy cvv wcel csn cv wceq sneq eleq1d wel weq wb wal wex axprimlem1
+      ax-sn isset c0 exbii bitri mpbir vtoclg snprc biimpi 0ex syl6eqel pm2.61i
+      wn ) AEFZAGZEFZBHZGZEFZUMBAEUNAIUOULEUNAJKUPCDLCBMNCOZDPZBDCRUPDHUOIZDPUR
+      DUOSUSUQDUNDCQUAUBUCUDUKUJZULTEUTULTIAUEUFUGUHUI $.
+  $}
+
+  $( An unordered pair exists.  (Contributed by SF, 12-Jan-2015.) $)
+  prex $p |- { A , B } e. _V $=
+    ( cpr csn cun cvv df-pr snex unex eqeltri ) ABCADZBDZEFABGKLAHBHIJ $.
+    $( [12-Jan-2015] $)
+
+  $( A Kuratowski ordered pair exists.  (Contributed by SF, 12-Jan-2015.) $)
+  opkex $p |- << A , B >> e. _V $=
+    ( copk csn cpr cvv df-opk prex eqeltri ) ABCADZABEZEFABGJKHI $.
+    $( [12-Jan-2015] $)
+
+
+  $( A singleton of a set belongs to a power class of a set containing it.
+     (Contributed by SF, 1-Feb-2015.) $)
+  snelpwg $p |- ( A e. V -> ( { A } e. ~P B <-> A e. B ) ) $=
+    ( wcel csn wss cpw snssg snex elpw syl6rbbr ) ACDABDAEZBFLBGDABCHLBAIJK $.
+    $( [1-Feb-2015] $)
+
+  ${
+    snelpw.1 $e |- A e. _V $.
+    $( A singleton of a set belongs to a power class of a set containing it.
+       (Contributed by SF, 1-Feb-2015.) $)
+    snelpw $p |- ( { A } e. ~P B <-> A e. B ) $=
+      ( cvv wcel csn cpw wb snelpwg ax-mp ) ADEAFBGEABEHCABDIJ $.
+      $( [1-Feb-2015] $)
+  $}
+
+  ${
+    $( A singleton of a set belongs to the power class of a class containing
+       the set.  (Contributed by Alan Sare, 25-Aug-2011.) $)
+    snelpwi $p |- ( A e. B -> { A } e. ~P B ) $=
+      ( wcel csn wss cpw snssi snex elpw sylibr ) ABCADZBEKBFCABGKBAHIJ $.
+      $( [25-Aug-2011] $)
+  $}
+
+  ${
+    $d A x y $.
+    $( A class equals the union of its power class.  Exercise 6(a) of
+       [Enderton] p. 38.  (The proof was shortened by Alan Sare, 28-Dec-2008.)
+       (Contributed by SF, 14-Oct-1996.)  (Revised by SF, 29-Dec-2008.) $)
+    unipw $p |- U. ~P A = A $=
+      ( vx vy cpw cuni cv wcel wa wex eluni wss wi vex elpw ssel impcom exlimiv
+      sylbi csn snid snelpwi elunii sylancr impbii eqriv ) BADZEZABFZUGGZUHAGZU
+      IUHCFZGZUKUFGZHZCIUJCUHUFJUNUJCUMULUJUMUKAKULUJLUKACMNUKAUHORPQRUJUHUHSZG
+      UOUFGUIUHBMTUHAUAUHUOUFUBUCUDUE $.
+      $( [29-Dec-2008] $) $( [14-Oct-1996] $)
+  $}
+
+
+  ${
+    $d A x $.  $d B x $.
+    $( Classes are subclasses if and only if their power classes are
+       subclasses.  Exercise 18 of [TakeutiZaring] p. 18.  (Contributed by SF,
+       13-Oct-1996.) $)
+    sspwb $p |- ( A C_ B <-> ~P A C_ ~P B ) $=
+      ( vx wss cpw wcel sstr2 com12 vex elpw 3imtr4g ssrdv csn ssel snex bitr4i
+      cv snss 3imtr3g impbii ) ABDZAEZBEZDZUACUBUCUACQZADZUEBDZUEUBFUEUCFUFUAUG
+      UEABGHUEACIZJUEBUHJKLUDCABUDUEMZUBFZUIUCFZUEAFZUEBFZUBUCUINUJUIADULUIAUEO
+      ZJUEAUHRPUKUIBDUMUIBUNJUEBUHRPSLT $.
+      $( [13-Oct-1996] $)
+  $}
+
+
+  ${
+    $d A a $.  $d a b $.  $d A b $.  $d A x $.  $d a z $.  $d A z $.  $d b z $.
+    $d X a $.  $d X b $.  $d X x $.  $d x z $.  $d X z $.
+
+    $( Compute the power class of an adjoinment.  (Contributed by SF,
+       30-Jan-2015.) $)
+    pwadjoin $p |- ~P ( A u. { X } ) =
+       ( ~P A u. { a | E. b e. ~P A a = ( b u. { X } ) } ) $=
+      ( vz vx cun cpw cv wceq wrex wss wo wcel wn wa bitri vex elpw com12 uncom
+      csn cab cdif sseq2i ssundif biimpi adantr snex difex sylibr eqcomd adantl
+      difsnid uneq1 eqeq2d rspcev syl2anc ex con3d wel wi ssel elun elsn orbi2i
+      ax-1 eleq1 anbi1d pm2.21 impcom syl6bi jaoi sylbi exp3a syld imp3a orcomd
+      ssrdv orrd ssun3 unss1 sseq1 syl5ibrcom rexlimiv impbii weq eqeq1 rexbidv
+      elab orbi12i 3bitr4i eqriv ) EABUBZGZHZAHZCIZDIZWNGZJZDWQKZCUCZGZEIZWOLZX
+      EALZXEWTJZDWQKZMZXEWPNXEXDNZXFXJXFXIXGXFXIXGXFXIOBXENZOZXGXFXLXIXFXLXIXFX
+      LPZXEWNUDZWQNZXEXOWNGZJZXIXNXOALZXPXFXSXLXFXSXFXEWNAGZLXSWOXTXEAWNUAUEXEW
+      NAUFQUGUHXOAXEWNERZBUIUJSUKXLXRXFXLXQXEXEBUNULUMXHXRDXOWQWSXOJWTXQXEWSXOW
+      NUOUPUQURUSUTXFXMXGXFXMPZFXEAFEVAZYBFIZANZYCXFXMYEYCXFYDWONZXMYEVBZXFYCYF
+      XEWOYDVCTYFYCYGYFYCXMYEYFYEYDBJZMZYCXMPZYEVBZYFYEYDWNNZMYIYDAWNVDYLYHYEFB
+      VEVFQYEYKYHYEYJVGYHYJXLXMPYEYHYCXLXMYDBXEVHVIXMXLYEXLYEVJVKVLVMVNVOTVPVQT
+      VSUSVPVTVRXGXFXIXEAWNWAXHXFDWQWSWQNZXFXHWTWOLZYMWSALYNWSADRSWSAWNWBVNXEWT
+      WOWCWDWEVMWFXEWOYASXKXEWQNZXEXCNZMXJXEWQXCVDYOXGYPXIXEAYASXBXICXEYACEWGXA
+      XHDWQWRXEWTWHWIWJWKQWLWM $.
+      $( [30-Jan-2015] $)
+  $}
