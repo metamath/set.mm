@@ -6379,13 +6379,6 @@ $( This section makes our first use of the third axiom of propositonal
   xor2 $p |- ( -. ( ph <-> ps ) <-> ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) ) $=
     ( wb wn wo wa xor3 pm5.17 bitr4i ) ABCDABDCABEABFDFABGABHI $.
 
-  $( An alternate definition of the biconditional.  Theorem *5.23 of
-     [WhiteheadRussell] p. 124.  (Contributed by NM, 27-Jun-2002.)  (Proof
-     shortened by Wolf Lammen, 3-Nov-2013.) $)
-  dfbi3 $p |- ( ( ph <-> ps ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) ) $=
-    ( wn wb wa wo xor pm5.18 notnot anbi2i ancom orbi12i 3bitr4i ) ABCZDCANCZEZ
-    NACZEZFABDABEZQNEZFANGABHSPTRBOABIJQNKLM $.
-
   $( Simplify an implication between implications.  (Contributed by Paul
      Chapman, 17-Nov-2012.)  (Proof shortened by Wolf Lammen, 3-Apr-2013.) $)
   imimorb $p |- ( ( ( ps -> ch ) -> ( ph -> ch ) ) <->
@@ -14538,6 +14531,13 @@ are about a pair of propositions which are both true, both false, one
 true and one false, and the like, which are at least in general terms
 also part of this exclusive-or family.
 $)
+
+  $( An alternate definition of the biconditional.  Theorem *5.23 of
+     [WhiteheadRussell] p. 124.  (Contributed by NM, 27-Jun-2002.)  (Proof
+     shortened by Wolf Lammen, 3-Nov-2013.) $)
+  dfbi3 $p |- ( ( ph <-> ps ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) ) $=
+    ( wn wb wa wo xor pm5.18 notnot anbi2i ancom orbi12i 3bitr4i ) ABCZDCANCZEZ
+    NACZEZFABDABEZQNEZFANGABHSPTRBOABIJQNKLM $.
 
   $( Theorem *5.24 of [WhiteheadRussell] p. 124.  (Contributed by NM,
      3-Jan-2005.) $)
