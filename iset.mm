@@ -6727,14 +6727,6 @@ $)
     ( wi wa wb simpr ancr impbid2 bibi2d biimpa ) ABDZCBAEZFCAFLMACLMABAGABHIJK
     $.
 
-  $( The disjunction of the four possible combinations of two wffs and their
-     negations is always true.  (Contributed by David Abernethy,
-     28-Jan-2014.) $)
-  4exmid $p |- ( ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) )
-              \/ ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
-    ( wb wn wo wa exmid dfbi3 xor orbi12i mpbi ) ABCZLDZEABFADZBDZFEZAOFBNFEZEL
-    GLPMQABHABIJK $.
-
   ${
     ccase.1 $e |- ( ( ph /\ ps ) -> ta ) $.
     ccase.2 $e |- ( ( ch /\ ps ) -> ta ) $.
