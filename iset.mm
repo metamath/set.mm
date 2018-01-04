@@ -6133,14 +6133,6 @@ $( This section makes our first use of the third axiom of propositonal
       ( wb bi2 syli wn bi1 con3d pm2.61d ) ABFZBCBMACABGDHBIMAICMABABJKEHL $.
   $}
 
-  $( Theorem *5.18 of [WhiteheadRussell] p. 124.  This theorem says that
-     logical equivalence is the same as negated "exclusive-or."  (Contributed
-     by NM, 28-Jun-2002.)  (Proof shortened by Andrew Salmon, 20-Jun-2011.)
-     (Proof shortened by Wolf Lammen, 15-Oct-2013.) $)
-  pm5.18 $p |- ( ( ph <-> ps ) <-> -. ( ph <-> -. ps ) ) $=
-    ( wb wn pm5.501 con1bid bitr2d nbn2 pm2.61i ) AABCZABDZCZDZCAMBJABLAKEFABEG
-    ADZMKJNKLAKHFABHGI $.
-
   $( Definition of 'and' in terms of negation and implication (classical).
      (Contributed by NM, 31-Jan-2015.) $)
   df-an $p |- ( ( ph /\ ps ) <-> -. ( ph -> -. ps ) ) $=
@@ -14488,6 +14480,14 @@ $)
                 ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
     ( wn wa wo wb wi iman anbi12i dfbi2 ioran 3bitr4ri con1bii ) ABCDZBACDZEZAB
     FZABGZBAGZDNCZOCZDQPCRTSUAABHBAHIABJNOKLM $.
+
+  $( Theorem *5.18 of [WhiteheadRussell] p. 124.  This theorem says that
+     logical equivalence is the same as negated "exclusive-or."  (Contributed
+     by NM, 28-Jun-2002.)  (Proof shortened by Andrew Salmon, 20-Jun-2011.)
+     (Proof shortened by Wolf Lammen, 15-Oct-2013.) $)
+  pm5.18 $p |- ( ( ph <-> ps ) <-> -. ( ph <-> -. ps ) ) $=
+    ( wb wn pm5.501 con1bid bitr2d nbn2 pm2.61i ) AABCZABDZCZDZCAMBJABLAKEFABEG
+    ADZMKJNKLAKHFABHGI $.
 
   $( An alternate definition of the biconditional.  Theorem *5.23 of
      [WhiteheadRussell] p. 124.  (Contributed by NM, 27-Jun-2002.)  (Proof
