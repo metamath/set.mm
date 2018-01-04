@@ -10029,11 +10029,6 @@ $)
   modal-5 $p |- ( -. A. x -. ph -> A. x -. A. x -. ph ) $=
     ( wn hbn1 ) ACBD $.
 
-  $( The analog in our "pure" predicate calculus of the Brouwer axiom (B) of
-     modal logic S5.  (Contributed by NM, 5-Oct-2005.) $)
-  modal-b $p |- ( ph -> A. x -. A. x -. ph ) $=
-    ( wn wal ax6o con4i ) ACZBDCBDAGBEF $.
-
   ${
     19.3.1 $e |- ( ph -> A. x ph ) $.
     $( A wff may be quantified with a variable not free in it.  Theorem 19.3 of
@@ -10635,16 +10630,6 @@ $)
      specifically studying the latter's properties.  (Contributed by NM,
      5-Aug-1993.) $)
   ax-9o $a |- ( A. x ( x = y -> A. x ph ) -> ph ) $.
-
-  $( Rederivation of axiom ~ ax-9 from the orginal version, ~ ax-9o .  See
-     ~ ax9o for the derivation of ~ ax-9o from ~ ax-9 .  Lemma L18 in [Megill]
-     p. 446 (p. 14 of the preprint).
-
-     This theorem should not be referenced in any proof.  Instead, use ~ ax-9
-     above so that uses of ~ ax-9 can be more easily identified.  (Contributed
-     by NM, 5-Aug-1993.) $)
-  ax9 $p |- -. A. x -. x = y $=
-    ( weq wn wal wi ax-9o modal-b mpg ) ABCZJDAEDZAEFKAKABGJAHI $.
 
   ${
     $d x y $.
@@ -14553,11 +14538,26 @@ $(
 
 Theorems concerning which predicate logic axioms can be deduced from other
 axioms, or the metalogic of predicate logic axioms,
-which rely on classical logic (that is, ~ ax-3 ). This section
-will probably be removed at some point, as these theorems probably have
-relatively little to say about the independence or metalogic of the axioms
-in the intuitionistic context, and they can always be found in set.mm.
+which rely on classical logic (that is, ~ ax-3 ). This section may perhaps
+shed some light on the axioms we are using, even though the independence
+or metalogic of the axioms may be quite different in the intuitionistic
+case compared with the classical case.
 $)
+
+  $( The analog in our "pure" predicate calculus of the Brouwer axiom (B) of
+     modal logic S5.  (Contributed by NM, 5-Oct-2005.) $)
+  modal-b $p |- ( ph -> A. x -. A. x -. ph ) $=
+    ( wn wal ax6o con4i ) ACZBDCBDAGBEF $.
+
+  $( Rederivation of axiom ~ ax-9 from the orginal version, ~ ax-9o .  See
+     ~ ax9o for the derivation of ~ ax-9o from ~ ax-9 .  Lemma L18 in [Megill]
+     p. 446 (p. 14 of the preprint).
+
+     This theorem should not be referenced in any proof.  Instead, use ~ ax-9
+     above so that uses of ~ ax-9 can be more easily identified.  (Contributed
+     by NM, 5-Aug-1993.) $)
+  ax9 $p |- -. A. x -. x = y $=
+    ( weq wn wal wi ax-9o modal-b mpg ) ABCZJDAEDZAEFKAKABGJAHI $.
 
   ${
     $d x y $.  $d y ph $.
