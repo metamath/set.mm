@@ -6386,12 +6386,6 @@ $( This section makes our first use of the third axiom of propositonal
     ( wn wb wa wo xor pm5.18 notnot anbi2i ancom orbi12i 3bitr4i ) ABCZDCANCZEZ
     NACZEZFABDABEZQNEZFANGABHSPTRBOABIJQNKLM $.
 
-  $( Theorem *5.24 of [WhiteheadRussell] p. 124.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm5.24 $p |- ( -. ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) <->
-                ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
-    ( wb wn wa wo xor dfbi3 xchnxbi ) ABCABDZEBADZEFABEKJEFABGABHI $.
-
   $( Simplify an implication between implications.  (Contributed by Paul
      Chapman, 17-Nov-2012.)  (Proof shortened by Wolf Lammen, 3-Apr-2013.) $)
   imimorb $p |- ( ( ( ps -> ch ) -> ( ph -> ch ) ) <->
@@ -14524,6 +14518,45 @@ $)
      _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
   qexmid $p |- E. x ( ph -> A. x ph ) $=
     ( wal 19.8a 19.35ri ) AABCZBFBDE $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                  Exclusive or and related theorems (classical)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+In classical logic, we can talk about the exclusive-or of ` ph ` and ` ps ` ,
+which can be represented by ` -. ( ph <-> ps ) ` or
+` ( ph \/ ps ) /\ ( -. ph \/ -. ps ) `
+(which are equivalent in classical logic but not intuitionistic logic).
+We do not (yet at least) have an intuitionistic theory of exclusive or
+(or, relatedly at least in concept, existential uniqueness a la ~ df-eu ),
+but here we collect theorems which depend on ~ ax-3 for their proof and many
+of which probably do not hold intuitionistically.
+
+There are also a variety of results such as ~ pm5.24 and ~ pm5.18 which
+are about a pair of propositions which are both true, both false, one
+true and one false, and the like, which are at least in general terms
+also part of this exclusive-or family.
+$)
+
+  $( Theorem *5.24 of [WhiteheadRussell] p. 124.  (Contributed by NM,
+     3-Jan-2005.) $)
+  pm5.24 $p |- ( -. ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) <->
+                ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
+    ( wb wn wa wo xor dfbi3 xchnxbi ) ABCABDZEBADZEFABEKJEFABGABHI $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                     Predicate logic axioms (classical)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Theorems concerning which predicate logic axioms can be deduced from other
+axioms, or the metalogic of predicate logic axioms,
+which rely on classical logic (that is, ~ ax-3 ). This section
+will probably be removed at some point, as these theorems probably have
+relatively little to say about the independence or metalogic of the axioms
+in the intuitionistic context, and they can always be found in set.mm.
+$)
 
   ${
     $d x y $.  $d y ph $.
