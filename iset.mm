@@ -14246,18 +14246,6 @@ $)
   pm4.57 $p |- ( -. ( -. ph /\ -. ps ) <-> ( ph \/ ps ) ) $=
     ( wo wn wa oran bicomi ) ABCADBDEDABFG $.
 
-  $( Triple conjunction expressed in terms of triple disjunction.  (Contributed
-     by Jeff Hankins, 15-Aug-2009.) $)
-  3anor $p |- ( ( ph /\ ps /\ ch ) <-> -. ( -. ph \/ -. ps \/ -. ch ) ) $=
-    ( w3a wa wn w3o df-3an wo anor ianor orbi1i xchbinx df-3or xchbinxr bitri )
-    ABCDABEZCEZAFZBFZCFZGZFABCHRSTIZUAIZUBRQFZUAIUDQCJUEUCUAABKLMSTUANOP $.
-
-  $( Negated triple conjunction expressed in terms of triple disjunction.
-     (Contributed by Jeff Hankins, 15-Aug-2009.)  (Proof shortened by Andrew
-     Salmon, 13-May-2011.) $)
-  3ianor $p |- ( -. ( ph /\ ps /\ ch ) <-> ( -. ph \/ -. ps \/ -. ch ) ) $=
-    ( wn w3o w3a 3anor con2bii bicomi ) ADBDCDEZABCFZDKJABCGHI $.
-
   $( Theorem *3.12 of [WhiteheadRussell] p. 111.  (Contributed by NM,
      3-Jan-2005.) $)
   pm3.12 $p |- ( ( -. ph \/ -. ps ) \/ ( ph /\ ps ) ) $=
