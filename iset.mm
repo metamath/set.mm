@@ -6232,17 +6232,6 @@ $( This section makes our first use of the third axiom of propositonal
   pm2.68 $p |- ( ( ( ph -> ps ) -> ps ) -> ( ph \/ ps ) ) $=
     ( wi jarl orrd ) ABCBCABABBDE $.
 
-  $( Logical 'or' expressed in terms of implication only.  Theorem *5.25 of
-     [WhiteheadRussell] p. 124.  (Contributed by NM, 12-Aug-2004.)  (Proof
-     shortened by Wolf Lammen, 20-Oct-2012.) $)
-  dfor2 $p |- ( ( ph \/ ps ) <-> ( ( ph -> ps ) -> ps ) ) $=
-    ( wo wi pm2.62 pm2.68 impbii ) ABCABDBDABEABFG $.
-
-  $( Theorem *4.64 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.64 $p |- ( ( -. ph -> ps ) <-> ( ph \/ ps ) ) $=
-    ( wo wn wi df-or bicomi ) ABCADBEABFG $.
-
   $( Implication in terms of disjunction.  Theorem *4.6 of [WhiteheadRussell]
      p. 120.  (Contributed by NM, 5-Aug-1993.) $)
   imor $p |- ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) $=
@@ -6278,11 +6267,6 @@ $( This section makes our first use of the third axiom of propositonal
      3-Jan-2005.) $)
   pm4.62 $p |- ( ( ph -> -. ps ) <-> ( -. ph \/ -. ps ) ) $=
     ( wn imor ) ABCD $.
-
-  $( Theorem *4.66 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.66 $p |- ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) $=
-    ( wn pm4.64 ) ABCD $.
 
   $( Absorption of disjunction into equivalence.  (Contributed by NM,
      6-Aug-1995.)  (Proof shortened by Wolf Lammen, 3-Nov-2013.) $)
@@ -6327,12 +6311,6 @@ $( This section makes our first use of the third axiom of propositonal
   pm2.85 $p |- ( ( ( ph \/ ps ) -> ( ph \/ ch ) ) ->
                 ( ph \/ ( ps -> ch ) ) ) $=
     ( wi wo orimdi biimpri ) ABCDEABEACEDABCFG $.
-
-  $( Simplify an implication between implications.  (Contributed by Paul
-     Chapman, 17-Nov-2012.)  (Proof shortened by Wolf Lammen, 3-Apr-2013.) $)
-  imimorb $p |- ( ( ( ps -> ch ) -> ( ph -> ch ) ) <->
-                  ( ph -> ( ps \/ ch ) ) ) $=
-    ( wi wo bi2.04 dfor2 imbi2i bitr4i ) BCDZACDDAJCDZDABCEZDJACFLKABCGHI $.
 
   $( Theorem *2.26 of [WhiteheadRussell] p. 104.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Nov-2012.) $)
@@ -14249,21 +14227,6 @@ $)
   pm4.53 $p |- ( -. ( ph /\ -. ps ) <-> ( -. ph \/ ps ) ) $=
     ( wn wo wa pm4.52 con2bii bicomi ) ACBDZABCEZCJIABFGH $.
 
-  $( Theorem *4.54 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
-  pm4.54 $p |- ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) $=
-    ( wn wa wi wo df-an pm4.66 xchbinx ) ACZBDJBCZEAKFJBGABHI $.
-
-  $( Obsolete proof of ~ pm4.54 as of 28-Sep-2014.  (Contributed by NM,
-     3-Jan-2005.)  (Revised by NM, 5-Nov-2012.) $)
-  pm4.54OLD $p |- ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) $=
-    ( wn wa wi wo pm4.67 pm4.66 notbii bitr3i ) ACZBDKBCZEZCALFZCABGMNABHIJ $.
-
-  $( Theorem *4.55 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.55 $p |- ( -. ( -. ph /\ ps ) <-> ( ph \/ -. ps ) ) $=
-    ( wn wo wa pm4.54 con2bii bicomi ) ABCDZACBEZCJIABFGH $.
-
   $( Disjunction in terms of conjunction (DeMorgan's law).  Compare Theorem
      *4.57 of [WhiteheadRussell] p. 120.  As an equivalence, this does not hold
      intuitionistically, but it would be possible to prove the forward
@@ -14428,6 +14391,60 @@ $)
      _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
   qexmid $p |- E. x ( ph -> A. x ph ) $=
     ( wal 19.8a 19.35ri ) AABCZBFBDE $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Relationships between connectives (classical)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+In classical logic, the predicate logic connectives are connected with
+each other by theorems such as ~ oran or ~ imor . Intuitionistic logic
+has some such connections but they are fewer and some of the ones which
+are biconditionals in classical logic only hold in one direction in
+intuitionistic logic.
+
+Here we collect a number of theorems related to such relationships
+whose current proofs depend on ~ ax-3 . Many of them do not hold
+intuitionistically.
+
+$)
+
+  $( Theorem *4.64 of [WhiteheadRussell] p. 120.  Only the reverse direction
+     holds intuitionistically.  (Contributed by NM, 3-Jan-2005.) $)
+  pm4.64 $p |- ( ( -. ph -> ps ) <-> ( ph \/ ps ) ) $=
+    ( wo wn wi df-or bicomi ) ABCADBEABFG $.
+
+  $( Theorem *4.66 of [WhiteheadRussell] p. 120.  (Contributed by NM,
+     3-Jan-2005.) $)
+  pm4.66 $p |- ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) $=
+    ( wn pm4.64 ) ABCD $.
+
+  $( Theorem *4.54 of [WhiteheadRussell] p. 120.  (Contributed by NM,
+     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
+  pm4.54 $p |- ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) $=
+    ( wn wa wi wo df-an pm4.66 xchbinx ) ACZBDJBCZEAKFJBGABHI $.
+
+  $( Obsolete proof of ~ pm4.54 as of 28-Sep-2014.  (Contributed by NM,
+     3-Jan-2005.)  (Revised by NM, 5-Nov-2012.) $)
+  pm4.54OLD $p |- ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) $=
+    ( wn wa wi wo pm4.67 pm4.66 notbii bitr3i ) ACZBDKBCZEZCALFZCABGMNABHIJ $.
+
+  $( Theorem *4.55 of [WhiteheadRussell] p. 120.  (Contributed by NM,
+     3-Jan-2005.) $)
+  pm4.55 $p |- ( -. ( -. ph /\ ps ) <-> ( ph \/ -. ps ) ) $=
+    ( wn wo wa pm4.54 con2bii bicomi ) ABCDZACBEZCJIABFGH $.
+
+  $( Logical 'or' expressed in terms of implication only.  Theorem *5.25 of
+     [WhiteheadRussell] p. 124.  (Contributed by NM, 12-Aug-2004.)  (Proof
+     shortened by Wolf Lammen, 20-Oct-2012.) $)
+  dfor2 $p |- ( ( ph \/ ps ) <-> ( ( ph -> ps ) -> ps ) ) $=
+    ( wo wi pm2.62 pm2.68 impbii ) ABCABDBDABEABFG $.
+
+  $( Simplify an implication between implications.  (Contributed by Paul
+     Chapman, 17-Nov-2012.)  (Proof shortened by Wolf Lammen, 3-Apr-2013.) $)
+  imimorb $p |- ( ( ( ps -> ch ) -> ( ph -> ch ) ) <->
+                  ( ph -> ( ps \/ ch ) ) ) $=
+    ( wi wo bi2.04 dfor2 imbi2i bitr4i ) BCDZACDDAJCDZDABCEZDJACFLKABCGHI $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
