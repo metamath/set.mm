@@ -12419,15 +12419,6 @@ $)
   $}
 
   ${
-    $d x ph $.
-    19.37aiv.1 $e |- E. x ( ph -> ps ) $.
-    $( Inference from Theorem 19.37 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
-    19.37aiv $p |- ( ph -> E. x ps ) $=
-      ( wi wex 19.37v mpbi ) ABECFABCFEDABCGH $.
-  $}
-
-  ${
     $d x ps $.
     $( Special case of Theorem 19.41 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.) $)
