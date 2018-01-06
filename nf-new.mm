@@ -1,4 +1,4 @@
-$( nf.mm - Version of 2-Jan-2018. $)
+$( nf.mm - Version of 5-Jan-2018. $)
 
 $[ set-pred.mm $]
 
@@ -11520,6 +11520,11 @@ $)
       BIJOABABKLM $.
   $}
 
+  $( Empty class abstraction.  (Contributed by SF, 5-Jan-2018.) $)
+  ab0 $p |- ( { x | ph } = (/) <-> A. x -. ph ) $=
+    ( cab c0 wceq wn wal wne wex abn0 df-ne df-ex 3bitr3i con4bii ) ABCZDEZAFBG
+    ZODHABIPFQFABJODKABLMN $.
+
   $( Non-empty restricted class abstraction.  (Contributed by NM,
      29-Aug-1999.) $)
   rabn0 $p |- ( { x e. A | ph } =/= (/) <-> E. x e. A ph ) $=
@@ -18525,4 +18530,988 @@ $)
       RWALAKZVAZGNZFNENZVNVGIKVEIKVQWGULDOVPEFGVGVEAIIUIUMWFVNEFWEVNGWCVSVNWDWC
       VNWBVDKZWHVTIKWAIKFOZGOZVTWAIIWIWJUNUOVEWBVDUPUQURRUSTVBRTUT $.
       $( [4-Feb-2015] $)
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Kuratowski existence theorems
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A a b x y z $.
+    $( The Kuratowski cross product of ` _V ` with a set is a set.
+       (Contributed by SF, 13-Jan-2015.) $)
+    xpkvexg $p |- ( A e. V -> ( _V X._k A ) e. _V ) $=
+      ( vx vz vy va vb cvv cv cxpk wcel wceq xpkeq2 eleq1d wel wa wex wal bitri
+      wb copk ax-xp isset dfcleq elxpk vex biantrur anbi2i 2exbii bitr4i bibi2i
+      albii exbii mpbir vtoclg ) HCIZJZHKZHAJZHKCABUPALUQUSHUPAHMNURDEOZDIZFIZG
+      IUALZGCOZPZGQFQZTZDRZEQZCEDFGUBUREIZUQLZEQVIEUQUCVKVHEVKUTVAUQKZTZDRVHDVJ
+      UQUDVMVGDVLVFUTVLVCVBHKZVDPZPZGQFQVFFGVAHUPUEVEVPFGVDVOVCVNVDFUFUGUHUIUJU
+      KULSUMSUNUO $.
+      $( [13-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z w $.
+    $( The Kuratowski converse of a set is a set.  (Contributed by SF,
+       13-Jan-2015.) $)
+    cnvkexg $p |- ( A e. V -> `'_k A e. _V ) $=
+      ( vx vz vw vy cv ccnvk cvv wcel wceq cnvkeq eleq1d copk wal wex wss ax-mp
+      wb vex ax-cnv cxpk inss1 cnvkssvvk eqrelk mp2an opkelxpk mpbir2an mpbiran
+      cin elin opkelcnvk bibi12i 2albii bitri biimpri vvex xpkvexg inex exlimiv
+      syl6eqelr vtoclg ) CGZHZIJZAHZIJCABVCAKVDVFIVCALMDGZEGZNZFGZJZVHVGNVCJZSZ
+      EODOZFPVECFDEUAVNVEFVNVDIIUBZVJUJZIVPVDKZVNVQVIVPJZVIVDJZSZEODOZVNVPVOQVD
+      VOQVQWASVOVJUCVCUDDEVPVDUEUFVTVMDEVRVKVSVLVRVIVOJZVKWBVGIJVHIJDTZETZVGVHI
+      IWCWDUGUHVIVOVJUKUIVGVHVCWCWDULUMUNUOUPVOVJIIJVOIJUQIIURRFTUSVAUTRVB $.
+      $( [13-Jan-2015] $)
+  $}
+
+  ${
+    cnvkex.1 $e |- A e. _V $.
+    $( The Kuratowski converse of a set is a set.  (Contributed by SF,
+       14-Jan-2015.) $)
+    cnvkex $p |- `'_k A e. _V $=
+      ( cvv wcel ccnvk cnvkexg ax-mp ) ACDAECDBACFG $.
+      $( [14-Jan-2015] $)
+  $}
+
+  $( The Kuratowski cross product of two sets is a set.  (Contributed by SF,
+     13-Jan-2015.) $)
+  xpkexg $p |- ( ( A e. V /\ B e. W ) -> ( A X._k B ) e. _V ) $=
+    ( wcel cvv cxpk ccnvk cnvkxpk xpkvexg cnvkexg syl syl5eqelr cin inxpk incom
+    wa inv1 eqtri xpkeq12i inexg syl2an ) ACEZAFGZFEZFBGZFEZABGZFEBDEUCUDFAGZHZ
+    FFAIUCUIFEUJFEACJUIFKLMBDJUEUGQUHUDUFNZFUKAFNZFBNZGUHAFFBOULAUMBARUMBFNBFBP
+    BRSTSUDUFFFUAMUB $.
+    $( [13-Jan-2015] $)
+
+  ${
+    xpkex.1 $e |- A e. _V $.
+    xpkex.2 $e |- B e. _V $.
+    $( The Kuratowski cross product of two sets is a set.  (Contributed by SF,
+       14-Jan-2015.) $)
+    xpkex $p |- ( A X._k B ) e. _V $=
+      ( cvv wcel cxpk xpkexg mp2an ) AEFBEFABGEFCDABEEHI $.
+      $( [14-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z w $.
+    $( The P6 operator applied to a set yields a set.  (Contributed by SF,
+       13-Jan-2015.) $)
+    p6exg $p |- ( A e. V -> P6 A e. _V ) $=
+      ( vx vz vy vw cv cp6 cvv wcel wceq p6eq eleq1d wel csn copk wal vex ax-mp
+      wb ax-typlower dfcleq bibi2i albii bitri biimpri syl6eqelr exlimiv vtoclg
+      wex elp6 ) CGZHZIJZAHZIJCABULAKUMUOIULALMDENZFGDGZOPULJFQZTZDQZEUJUNCEDFU
+      AUTUNEUTUMEGZIVAUMKZUTVBUPUQUMJZTZDQUTDVAUMUBVDUSDVCURUPUQIJVCURTDRFUQULI
+      UKSUCUDUEUFERUGUHSUI $.
+      $( [13-Jan-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d A z $.  $d x z $.
+    $( Alternate definition of unit union.  (Contributed by SF,
+       15-Mar-2015.) $)
+    dfuni12 $p |- U.1 A = P6 ( _V X._k A ) $=
+      ( vx vz cuni1 cvv cxpk cp6 cv csn wcel copk wal 19.27v vex opkelxpk albii
+      wa snex ax-gen biantrur 3bitr4ri eluni1 wb elp6 ax-mp 3bitr4i eqriv ) BAD
+      ZEAFZGZBHZIZAJZCHZULKUIJZCLZUKUHJUKUJJZUNEJZUMQZCLURCLZUMQUPUMURUMCMUOUSC
+      UNULEACNZUKROPUTUMURCVASTUAUKABNZUBUKEJUQUPUCVBCUKUIEUDUEUFUG $.
+      $( [15-Mar-2015] $)
+  $}
+
+  $( The unit union operator preserves sethood.  (Contributed by SF,
+     13-Jan-2015.) $)
+  uni1exg $p |- ( A e. V -> U.1 A e. _V ) $=
+    ( wcel cuni1 cvv cxpk cp6 dfuni12 vvex xpkexg mpan p6exg syl syl5eqel ) ABC
+    ZADEAFZGZEAHOPECZQECEECORIEAEBJKPELMN $.
+    $( [13-Jan-2015] $)
+
+  ${
+    uni1ex.1 $e |- A e. _V $.
+    $( The unit union operator preserves sethood.  (Contributed by SF,
+       14-Jan-2015.) $)
+    uni1ex $p |- U.1 A e. _V $=
+      ( cvv wcel cuni1 uni1exg ax-mp ) ACDAECDBACFG $.
+      $( [14-Jan-2015] $)
+  $}
+
+  ${
+    $d x y z w $.
+    $( The Kuratowski subset relationship is a set.  (Contributed by SF,
+       13-Jan-2015.) $)
+    ssetkex $p |- SSet_k e. _V $=
+      ( vy vz vx vw cv copk wcel wel wi wal wb wex cssetk cvv ax-sset wss mp2an
+      vex bitri ax-mp cxpk cin wceq ssetkssvvk eqrelk opkelxpk mpbir2an mpbiran
+      inss1 elin opkelssetkg bibi12i 2albii biimpri vvex xpkvexg inex syl6eqelr
+      dfss2 exlimiv ) AEZBEZFZCEZGZDAHDBHIDJZKZBJAJZCLMNGZCABDOVHVICVHMNNUAZVDU
+      BZNVKMUCZVHVLVCVKGZVCMGZKZBJAJZVHVKVJPMVJPVLVPKVJVDUIUDABVKMUEQVOVGABVMVE
+      VNVFVMVCVJGZVEVQVANGZVBNGZARZBRZVAVBNNVTWAUFUGVCVJVDUJUHVNVAVBPZVFVRVSVNW
+      BKVTWAVAVBNNUKQDVAVBUSSULUMSUNVJVDNNGVJNGUONNUPTCRUQURUTT $.
+      $( [13-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z w t $.  $d B x y z w t $.
+    sikexlem.1 $e |- A C_ ( 1c X._k 1c ) $.
+    sikexlem.2 $e |- B C_ ( 1c X._k 1c ) $.
+    $( Lemma for ~ sikexg .  Equality for two subsets of ` 1c ` squared .
+       (Contributed by SF, 14-Jan-2015.) $)
+    sikexlem $p |- ( A = B <->
+              A. x A. y ( << { x } , { y } >> e. A <->
+                          << { x } , { y } >> e. B ) ) $=
+      ( vz vw vt wceq cv wcel wb c1c copk wal wex wa bitr4i bitri cxpk wral csn
+      wss ssofeq mp2an df-ral w3a elxpk el1c anbi12i eeanv anbi2i df-3an 2exbii
+      wi ancom 19.42vv exrot4 snex opkeq1 eqeq2d opkeq2 ceqsex2v 3bitri 19.23vv
+      imbi1i albii alrot3 opkex eleq1 bibi12d ceqsalv 2albii ) CDJZGKZCLZVPDLZM
+      ZGNNUAZUBZAKZUCZBKZUCZOZCLZWFDLZMZBPAPZCVTUDDVTUDVOWAMEFGCDVTUEUFWAVPVTLZ
+      VSUPZGPZVPWFJZVSUPZGPZBPAPZWJVSGVTUGWMWOBPAPZGPWQWLWRGWLWNBQAQZVSUPWRWKWS
+      VSWKVPHKZIKZOZJZWTNLZXANLZRZRZIQHQZWTWCJZXAWEJZXCUHZIQHQZBQAQZWSHIVPNNUIX
+      HXKBQAQZIQHQXMXGXNHIXGXCXIXJRZBQAQZRZXNXFXPXCXFXIAQZXJBQZRXPXDXRXEXSAWTUJ
+      BXAUJUKXIXJABULSUMXNXCXORZBQAQXQXKXTABXKXOXCRXTXIXJXCUNXOXCUQTUOXCXOABURT
+      SUOXKABHIUSSXLWNABXCVPWCXAOZJWNHIWCWEWBUTWDUTXIXBYAVPWTWCXAVAVBXJYAWFVPXA
+      WEWCVCVBVDUOVEVGWNVSABVFSVHWOGABVITWPWIABVSWIGWFWCWEVJWNVQWGVRWHVPWFCVKVP
+      WFDVKVLVMVNVET $.
+      $( [14-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z w $.
+    $( The Kuratowski singleton image of a set is a set.  (Contributed by SF,
+       14-Jan-2015.) $)
+    sikexg $p |- ( A e. V -> SI_k A e. _V ) $=
+      ( vx vz vw vy cv csik cvv wcel wceq csn copk wal c1c vex snel1c snex 1cex
+      wb sikeq eleq1d wex ax-si cxpk inss1 sikss1c1c sikexlem opkelxpk mpbir2an
+      elin mpbiran opksnelsik bibi12i 2albii bitri biimpri xpkex inex syl6eqelr
+      cin exlimiv ax-mp vtoclg ) CGZHZIJZAHZIJCABVEAKVFVHIVEAUAUBDGZLZEGZLZMZFG
+      ZJZVIVKMVEJZTZENDNZFUCVGCFDEUDVRVGFVRVFOOUEZVNVAZIVTVFKZVRWAVMVTJZVMVFJZT
+      ZENDNVRDEVTVFVSVNUFVEUGUHWDVQDEWBVOWCVPWBVMVSJZVOWEVJOJVLOJVIDPZQVKEPZQVJ
+      VLOOVIRVKRUIUJVMVSVNUKULVIVKVEWFWGUMUNUOUPUQVSVNOOSSURFPUSUTVBVCVD $.
+      $( [14-Jan-2015] $)
+  $}
+
+  ${
+    sikex.1 $e |- A e. _V $.
+    $( The Kuratowski singleton image of a set is a set.  (Contributed by SF,
+       14-Jan-2015.) $)
+    sikex $p |- SI_k A e. _V $=
+      ( cvv wcel csik sikexg ax-mp ) ACDAECDBACFG $.
+      $( [14-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z w $.  $d B x y z w $.
+    $( Alternate definition of Kuratowski image.  This is the first of a series
+       of definitions throughout the file designed to prove existence of
+       various operations.  (Contributed by SF, 14-Jan-2015.) $)
+    dfimak2 $p |- ( A "_k B ) =
+       ~ P6 ( ~ ( 1c X._k _V ) u. SI_k ~ ( A i^i ( B X._k _V ) ) ) $=
+      ( vx vy vz c1c cvv cxpk ccompl cv copk wcel wn wex csn vex elcompl 3bitri
+      wa bitri cimak cin csik cun cp6 wrex df-rex exancom wceq wb elp6 ax-mp wo
+      elun opkex snex opkelxpk mpbiran2 xchbinx orbi1i wi iman imor el1c anbi1i
+      19.41v bitr4i notbii 3bitr3i albii opkeq1 eleq1d opksnelsik syl6bb notbid
+      alnex excom ceqsexv elin notnot anbi2i exbii con2bii elimak 3bitr4i eqriv
+      wal ) CABUAZFGHZIZABGHZUBZIZUCZUDZUEZIZDJZCJZKZALZDBUFZWSWPLZMZWSWHLWSWQL
+      XBWRBLZXASDNXAXESZDNZXDXADBUGXEXADUHXCXGXCEJZWSOZKZWOLZEWGZXHWROZUIZXJWNL
+      ZMZSZDNZMZEWGZXGMWSGLZXCXLUJCPZEWSWOGUKULXKXSEXKXJWJLZXOUMXHFLZMZXOUMZXSX
+      JWJWNUNYCYEXOYCXJWILZYDXJWIXHXIUOQYGYDXIGLWSUPZXHXIFGEPYHUQURUSUTYDXOVAYD
+      XPSZMYFXSYDXOVBYDXOVCYIXRYIXNDNZXPSXRYDYJXPDXHVDVEXNXPDVFVGVHVIRVJXTXRENZ
+      XGXREVPYKXQENZDNXGXQEDVQYLXFDYLWTWLLZMZMZXFXPYOEXMWRUPXNXOYNXNXOXMXIKZWNL
+      ZYNXNXJYPWNXHXMXIVKVLYQWTWMLYNWRWSWMDPZYBVMWTWLWRWSUOQTVNVOVRYMXAWTWKLZSY
+      OXFWTAWKVSYMVTYSXEXAYSXEYAYBWRWSBGYRYBUQURWAVITWBTUSRWCRDABWSYBWDWSWPYBQW
+      EWF $.
+      $( [14-Jan-2015] $)
+  $}
+
+  $( The image of a set under a set is a set.  (Contributed by SF,
+     14-Jan-2015.) $)
+  imakexg $p |- ( ( A e. V /\ B e. W ) -> ( A "_k B ) e. _V ) $=
+    ( wcel wa cimak c1c cvv cxpk ccompl cin csik cun dfimak2 1cex vvex complexg
+    cp6 3syl xpkex complex xpkexg mpan2 inexg sylan2 sikexg unexg sylancr p6exg
+    syl5eqel ) ACEZBDEZFZABGHIJZKZABIJZLZKZMZNZSZKZIABOUNVAIEZVBIEVCIEUNUPIEUTI
+    EZVDUOHIPQUAUBUNURIEZUSIEVEUMULUQIEZVFUMIIEVGQBIDIUCUDAUQCIUEUFURIRUSIUGTUP
+    UTIIUHUIVAIUJVBIRTUK $.
+    $( [14-Jan-2015] $)
+
+  ${
+    imakex.1 $e |- A e. _V $.
+    imakex.2 $e |- B e. _V $.
+    $( The image of a set under a set is a set.  (Contributed by SF,
+       14-Jan-2015.) $)
+    imakex $p |- ( A "_k B ) e. _V $=
+      ( cvv wcel cimak imakexg mp2an ) AEFBEFABGEFCDABEEHI $.
+      $( [14-Jan-2015] $)
+  $}
+
+
+  ${
+    $d A x y z w $.
+    $( Alternate expression for unit power classes.  (Contributed by SF,
+       26-Jan-2015.) $)
+    dfpw12 $p |- ~P1 A = ( SI_k ( A X._k A ) "_k _V ) $=
+      ( vx vy vz vw cpw1 cvv cv wcel csn wceq wex vex wb exbii bitr4i wa 3bitri
+      copk weq cxpk csik cimak wrex elpw1 elimakv opkelsikg mp2an exrot3 df-3an
+      w3a opkelxpk anbi2i an4 2exbii 19.41vv eqeq12 sylan2 eleq1 adantl anbi12d
+      sneq spc2ev pm4.71ri ancom bitr3i df-rex eqriv ) BAFZAAUAZUBZGUCZBHZVIIV
+      MCHZJZKZCAUDZVMVLIZCVMAUEVRDHZVMSVKIZDLZVSEHZJZKZVPWBVNSVJIZUKZELDLZCLZVQ
+      DVKVMBMZUFWAWFCLELZDLWHVTWJDVSGIVMGIVTWJNDMWIECVSVMVJGGUGUHOWFCDEUIPWHVNA
+      IZVPQZCLVQWGWLCWGWDWBAIZQZVPWKQZQZELDLWNELDLZWOQZWLWFWPDEWFWDVPQZWEQWSWMW
+      KQZQWPWDVPWEUJWEWTWSWBVNAAEMCMZULUMWDVPWMWKUNRUOWNWODEUPWRWOWLWOWQWNWODEV
+      MVNWIXADBTZECTZQWDVPWMWKXCXBWCVOKWDVPNWBVNVBVSVMWCVOUQURXCWMWKNXBWBVNAUSU
+      TVAVCVDVPWKVEVFROVPCAVGPRPVH $.
+      $( [26-Jan-2015] $)
+  $}
+
+  $( The unit power class preserves sethood.  (Contributed by SF,
+     14-Jan-2015.) $)
+  pw1exg $p |- ( A e. V -> ~P1 A e. _V ) $=
+    ( wcel cpw1 cxpk csik cvv cimak dfpw12 xpkexg anidms sikexg imakexg sylancl
+    syl vvex syl5eqel ) ABCZADAAEZFZGHZGAIRTGCZGGCUAGCRSGCZUBRUCAABBJKSGLOPTGGG
+    MNQ $.
+    $( [14-Jan-2015] $)
+
+  ${
+    pw1ex.1 $e |- A e. _V $.
+    $( The unit power class preserves sethood.  (Contributed by SF,
+       14-Jan-2015.) $)
+    pw1ex $p |- ~P1 A e. _V $=
+      ( cvv wcel cpw1 pw1exg ax-mp ) ACDAECDBACFG $.
+      $( [14-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z w t u $.  $d B x y z w t u $.
+    insklem.1 $e |- A C_ ( ~P1 1c X._k ( _V X._k _V ) ) $.
+    insklem.2 $e |- B C_ ( ~P1 1c X._k ( _V X._k _V ) ) $.
+    $( Lemma for ~ ins2kexg and ~ ins3kexg .  Equality for subsets of
+       ` ( ~P1 1c X._k ( _V X._k _V ) ) ` .  (Contributed by SF,
+       14-Jan-2015.) $)
+    insklem $p |- ( A = B <->
+      A. x A. y A. z ( << { { x } } , << y , z >> >> e. A <->
+                       << { { x } } , << y , z >> >> e. B ) ) $=
+      ( vw vt vu wceq cv wcel copk wal wi wex albii wa bitri c1c cpw1 cxpk wral
+      wb cvv csn wss ssofeq mp2an 19.23v 19.23vv 19.42vv anbi2i 3bitr4ri 2exbii
+      elvvk elxpk exrot3 exancom elpw11c anbi1i 19.41v bitr4i exbii ancom opkex
+      an12 opkeq2 eqeq2d anbi1d ceqsexv snex opkeq1 excom bitr3i exrot4 3bitr4i
+      imbi1i df-ral alcom alrot3 eleq1 bibi12d ceqsalv 2albii 3bitrri ) DEKZHLZ
+      DMZWIEMZUEZHUAUBZUFUFUCZUCZUDZALUGZUGZBLZCLZNZNZDMZXBEMZUEZCOZBOAOZDWOUHE
+      WOUHWHWPUEFGHDEWOUIUJWIWOMZWLPZHOWIXBKZWLPZCOBOZAOZHOZWPXGXIXMHXJCQBQZWLP
+      ZAOXOAQZWLPXMXIXOWLAUKXLXPAXJWLBCULRXHXQWLWIILZJLZNZKZXRWMMZXSWNMZSZSZJQI
+      QYAYBXSXAKZSZSZCQBQZJQIQZXHXQYEYIIJYAYGCQBQZSYAYBYFCQBQZSZSYIYEYKYMYAYBYF
+      BCUMUNYAYGBCUMYDYMYAYCYLYBBCXSUQUNUNUOUPIJWIWMWNURXQXJAQZCQBQZYJXJABCUSYO
+      YHJQIQZCQBQYJYNYPBCWIXRXANZKZYBSZIQZXRWRKZYRSZAQZIQZYPYNYTYBYRSZIQUUDYRYB
+      IUTUUEUUCIUUEUUAAQZYRSUUCYBUUFYRAXRVAVBUUAYRAVCVDVETYPYFYAYBSZSZJQZIQYTYH
+      UUHIJYHYAYFYBSZSUUHYGUUJYAYBYFVFUNYAYFYBVHTUPUUIYSIUUGYSJXAWSWTVGYFYAYRYB
+      YFXTYQWIXSXAXRVIVJVKVLVETYNUUBIQZAQUUDUUKXJAYRXJIWRWQVMUUAYQXBWIXRWRXAVNV
+      JVLVEUUBAIVOVPUOUPYHBCIJVQTTVRVSUORWLHWOVTXNXLHOZAOXKHOZCOZBOZAOXGXLHAWAU
+      ULUUOAXKHBCWBRUUNXFABUUMXECWLXEHXBWRXAVGXJWJXCWKXDWIXBDWCWIXBEWCWDWERWFWG
+      VRT $.
+      $( [14-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z w t $.
+    $( ` Ins2_k ` preserves sethood.  (Contributed by SF, 14-Jan-2015.) $)
+    ins2kexg $p |- ( A e. V -> Ins2_k A e. _V ) $=
+      ( vx vz vw vt vy cv cins2k cvv wcel wceq csn copk wb wal c1c vex opkelxpk
+      cxpk ins2keq eleq1d wex ax-ins2 cpw1 inss1 ins2kss insklem snel1c snelpw1
+      cin mpbir mpbir2an snex opkex elin mpbiran otkelins2k bibi12i albii bitri
+      2albii biimpri 1cex pw1ex vvex xpkex inex syl6eqelr exlimiv ax-mp vtoclg
+      ) CHZIZJKZAIZJKCABVMALVNVPJVMAUAUBDHZMZMZEHZFHZNZNZGHZKZVQWANVMKZOZFPZEPD
+      PZGUCVOCGDEFUDWIVOGWIVNQUEZJJTZTZWDUKZJWMVNLZWIWNWCWMKZWCVNKZOZFPZEPDPWID
+      EFWMVNWLWDUFVMUGUHWRWHDEWQWGFWOWEWPWFWOWCWLKZWEWSVSWJKZWBWKKZWTVRQKVQDRZU
+      IVRQUJULXAVTJKWAJKERZFRZVTWAJJXCXDSUMVSWBWJWKVRUNVTWAUOSUMWCWLWDUPUQVQVTW
+      AVMXBXCXDURUSUTVBVAVCWLWDWJWKQVDVEJJVFVFVGVGGRVHVIVJVKVL $.
+      $( [14-Jan-2015] $)
+
+    $( ` Ins3_k ` preserves sethood.  (Contributed by SF, 14-Jan-2015.) $)
+    ins3kexg $p |- ( A e. V -> Ins3_k A e. _V ) $=
+      ( vx vz vw vt vy cv cins3k cvv wcel wceq csn copk wb wal c1c vex opkelxpk
+      cxpk ins3keq eleq1d wex ax-ins3 cpw1 inss1 ins3kss insklem snel1c snelpw1
+      cin mpbir mpbir2an snex opkex elin mpbiran otkelins3k bibi12i albii bitri
+      2albii biimpri 1cex pw1ex vvex xpkex inex syl6eqelr exlimiv ax-mp vtoclg
+      ) CHZIZJKZAIZJKCABVMALVNVPJVMAUAUBDHZMZMZEHZFHZNZNZGHZKZVQVTNVMKZOZFPEPZD
+      PZGUCVOCGDEFUDWIVOGWIVNQUEZJJTZTZWDUKZJWMVNLZWIWNWCWMKZWCVNKZOZFPEPZDPWID
+      EFWMVNWLWDUFVMUGUHWRWHDWQWGEFWOWEWPWFWOWCWLKZWEWSVSWJKZWBWKKZWTVRQKVQDRZU
+      IVRQUJULXAVTJKWAJKERZFRZVTWAJJXCXDSUMVSWBWJWKVRUNVTWAUOSUMWCWLWDUPUQVQVTW
+      AVMXBXCXDURUSVBUTVAVCWLWDWJWKQVDVEJJVFVFVGVGGRVHVIVJVKVL $.
+      $( [14-Jan-2015] $)
+  $}
+
+  ${
+    inskex.1 $e |- A e. _V $.
+    $( ` Ins2_k ` preserves sethood.  (Contributed by SF, 14-Jan-2015.) $)
+    ins2kex $p |- Ins2_k A e. _V $=
+      ( cvv wcel cins2k ins2kexg ax-mp ) ACDAECDBACFG $.
+      $( [14-Jan-2015] $)
+
+    $( ` Ins3_k ` preserves sethood.  (Contributed by SF, 14-Jan-2015.) $)
+    ins3kex $p |- Ins3_k A e. _V $=
+      ( cvv wcel cins3k ins3kexg ax-mp ) ACDAECDBACFG $.
+      $( [14-Jan-2015] $)
+  $}
+
+  $( The Kuratowski composition of two sets is a set.  (Contributed by SF,
+     14-Jan-2015.) $)
+  cokexg $p |- ( ( A e. V /\ B e. W ) -> ( A o._k B ) e. _V ) $=
+    ( wcel wa ccomk cins2k ccnvk cins3k cin cvv cimak ins2kexg cnvkexg ins3kexg
+    df-cok syl inexg syl2an vvex imakexg sylancl syl5eqel ) ACEZBDEZFZABGAHZBIZ
+    JZKZLMZLABQUGUKLEZLLEULLEUEUHLEUJLEZUMUFACNUFUILEUNBDOUILPRUHUJLLSTUAUKLLLU
+    BUCUD $.
+    $( [14-Jan-2015] $)
+
+  ${
+    cokex.1 $e |- A e. _V $.
+    cokex.2 $e |- B e. _V $.
+    $( The Kuratowski composition of two sets is a set.  (Contributed by SF,
+       14-Jan-2015.) $)
+    cokex $p |- ( A o._k B ) e. _V $=
+      ( cvv wcel ccomk cokexg mp2an ) AEFBEFABGEFCDABEEHI $.
+      $( [14-Jan-2015] $)
+  $}
+
+  $( The Kuratowski image functor preserves sethood.  (Contributed by SF,
+     14-Jan-2015.) $)
+  imagekexg $p |- ( A e. V -> Image_k A e. _V ) $=
+    ( wcel cimagek cvv cxpk cssetk cins2k csik ccnvk ccomk csymdif c1c cpw1 syl
+    cins3k ssetkex mpan pw1ex vvex cimak cdif df-imagek sikexg cnvkexg ins3kexg
+    cokexg ins2kex symdifexg 1cex imakexg mpan2 xpkex difexg syl5eqel ) ABCZADE
+    EFZGHZGAIZJZKZPZLZMNZNZUAZUBZEAUCUPVFECZVGECZUPVCECZVHUPVBECZVJUPVAECZVKUPU
+    TECZVLUPUSECVMABUDUSEUEOGECVMVLQGUTEEUGROVAEUFOURECVKVJGQUHURVBEEUIROVJVEEC
+    VHVDMUJSSVCVEEEUKULOUQECVHVIEETTUMUQVFEEUNROUO $.
+    $( [14-Jan-2015] $)
+
+  ${
+    imagekex.1 $e |- A e. _V $.
+    $( The Kuratowski image functor preserves sethood.  (Contributed by SF,
+       14-Jan-2015.) $)
+    imagekex $p |- Image_k A e. _V $=
+      ( cvv wcel cimagek imagekexg ax-mp ) ACDAECDBACFG $.
+      $( [14-Jan-2015] $)
+  $}
+
+  ${
+    $d x y $.
+    $( Definition of ` _I_k ` in terms of ` SSet_k ` .  (Contributed by SF,
+       14-Jan-2015.) $)
+    dfidk2 $p |- _I_k = ( SSet_k i^i `'_k SSet_k ) $=
+      ( vx vy cidk cssetk ccnvk cin idkssvvk cvv cxpk inss1 cv wss wa copk wcel
+      wb vex mp2an opkelssetkg bitri ssetkssvvk weq eqss opkelidkg elin anbi12i
+      sstri opkelcnvk 3bitr4i eqrelkriiv ) ABCDDEZFZGULDHHIDUKJUAUGABUBZAKZBKZL
+      ZUOUNLZMZUNUONZCOZUSULOZUNUOUCUNHOZUOHOZUTUMPAQZBQZUNUOHHUDRVAUSDOZUSUKOZ
+      MURUSDUKUEVFUPVGUQVBVCVFUPPVDVEUNUOHHSRVGUOUNNDOZUQUNUODVDVEUHVCVBVHUQPVE
+      VDUOUNHHSRTUFTUIUJ $.
+      $( [14-Jan-2015] $)
+  $}
+
+  $( The Kuratowski identity relationship is a set.  (Contributed by SF,
+     14-Jan-2015.) $)
+  idkex $p |- _I_k e. _V $=
+    ( cidk cssetk ccnvk cin cvv dfidk2 ssetkex cnvkex inex eqeltri ) ABBCZDEFBK
+    GBGHIJ $.
+    $( [14-Jan-2015] $)
+
+  ${
+    $d A x y $.
+    $( Alternate definition of class union for existence proof.  (Contributed
+       by SF, 14-Jan-2015.) $)
+    dfuni3 $p |- U. A = U.1 ( `'_k SSet_k "_k A ) $=
+      ( vx vy cuni cssetk ccnvk cimak cuni1 cv csn copk wcel wrex wel opkelcnvk
+      vex snex elssetk bitri rexbii eluni1 elimak eluni2 3bitr4ri eqriv ) BADZE
+      FZAGZHZCIZBIZJZKUGLZCAMZBCNZCAMUKUILZUKUFLUMUOCAUMULUJKELUOUJULECPZUKQZOU
+      KUJBPZUQRSTUPULUHLUNUKUHUSUACUGAULURUBSCUKAUCUDUE $.
+      $( [14-Jan-2015] $)
+  $}
+
+  $( The sum class of a set is a set.  (Contributed by SF, 14-Jan-2015.) $)
+  uniexg $p |- ( A e. V -> U. A e. _V ) $=
+    ( wcel cuni cssetk ccnvk cimak cuni1 cvv dfuni3 ssetkex cnvkex imakexg mpan
+    uni1exg syl syl5eqel ) ABCZADEFZAGZHZIAJRTICZUAICSICRUBEKLSAIBMNTIOPQ $.
+    $( [14-Jan-2015] $)
+
+  ${
+    uniex.1 $e |- A e. _V $.
+    $( The sum class of a set is a set.  (Contributed by SF, 14-Jan-2015.) $)
+    uniex $p |- U. A e. _V $=
+      ( cvv wcel cuni uniexg ax-mp ) ACDAECDBACFG $.
+      $( [14-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z $.
+    $( Alternate definition of class intersection for the existence proof.
+       (Contributed by SF, 14-Jan-2015.) $)
+    dfint3 $p |- |^| A = ~ U.1 ( `'_k ~ SSet_k "_k A ) $=
+      ( vx vy cint cssetk ccompl ccnvk cimak cuni1 wel wral cv wcel wn csn copk
+      wrex vex elcompl 3bitri eluni1 snex elimak bitri opkelcnvk elssetk notbii
+      opkex rexbii rexnal con2bii elint2 3bitr4i eqriv ) BADZEFZGZAHZIZFZBCJZCA
+      KZBLZUSMZNVCUOMVCUTMVDVBVDCLZVCOZPUQMZCAQZVANZCAQVBNVDVFURMVHVCURBRZUACUQ
+      AVFVCUBZUCUDVGVICAVGVFVEPZUPMVLEMZNVIVEVFUPCRZVKUEVLEVFVEUHSVMVAVCVEVJVNU
+      FUGTUIVACAUJTUKCVCAVJULVCUSVJSUMUN $.
+      $( [14-Jan-2015] $)
+  $}
+
+  $( The intersection of a set is a set.  (Contributed by SF, 14-Jan-2015.) $)
+  intexg $p |- ( A e. V -> |^| A e. _V ) $=
+    ( wcel cint cssetk ccompl ccnvk cimak dfint3 ssetkex complex cnvkex imakexg
+    cuni1 cvv mpan uni1exg complexg 3syl syl5eqel ) ABCZADEFZGZAHZNZFZOAIUAUDOC
+    ZUEOCUFOCUCOCUAUGUBEJKLUCAOBMPUDOQUEORST $.
+    $( [14-Jan-2015] $)
+
+  ${
+    intex.1 $e |- A e. _V $.
+    $( The intersection of a set is a set.  (Contributed by SF,
+       14-Jan-2015.) $)
+    intex $p |- |^| A e. _V $=
+      ( cvv wcel cint intexg ax-mp ) ACDAECDBACFG $.
+      $( [14-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y $.
+    $( Two ways to express the class of all sets that contain ` A ` .
+       (Contributed by SF, 14-Jan-2015.) $)
+    setswith $p |- { x | A e. x } =
+                if ( A e. _V , ( SSet_k "_k { { A } } ) , (/) ) $=
+      ( vy cvv wcel cv cab cssetk csn cimak c0 cif wceq copk wrex opkeq1 eleq1d
+      snex eqtr4d wn rexsn wb vex elssetkg mpan2 syl5rbb abbidv df-imak syl6eqr
+      iftrue wal elex con3i alrimiv ab0 sylibr iffalse pm2.61i ) BDEZBAFZEZAGZU
+      SHBIZIZJZKLZMUSVBVEVFUSVBCFZUTNZHEZCVDOZAGVEUSVAVJAVJVCUTNZHEZUSVAVIVLCVC
+      BRVGVCMVHVKHVGVCUTPQUAUSUTDEVLVAUBAUCBUTDDUDUEUFUGACHVDUHUIUSVEKUJSUSTZVB
+      KVFVMVATZAUKVBKMVMVNAVAUSBUTULUMUNVAAUOUPUSVEKUQSUR $.
+      $( [14-Jan-2015] $)
+
+    $( The class of all sets that contain ` A ` exist.  (Contributed by SF,
+       14-Jan-2015.) $)
+    setswithex $p |- { x | A e. x } e. _V $=
+      ( wcel cab cvv cssetk csn cimak cif setswith ssetkex snex imakex 0ex ifex
+      cv c0 eqeltri ) BAPCADBECZFBGZGZHZQIEABJSUBQFUAKTLMNOR $.
+      $( [14-Jan-2015] $)
+  $}
+
+  ${
+    $d A x t $.  $d B x t $.
+    ndisjrelk.1 $e |- A e. _V $.
+    ndisjrelk.2 $e |- B e. _V $.
+    $( Membership in a particular Kuratowski relationship is equivalent to
+       non-disjointedness.  (Contributed by SF, 15-Jan-2015.) $)
+    ndisjrelk $p |- (
+      << A , B >> e. ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
+      <-> ( A i^i B ) =/= (/) ) $=
+      ( vt vx cv csn copk cssetk cin wcel wa cpw1 snex elin elssetk bitri exbii
+      wex wceq cins3k cins2k c1c cimak wne opkeq1 eleq1d ceqsexv otkelins3k vex
+      otkelins2k anbi12i wrex opkex elimak elpw121c anbi1i 19.41v bitr4i df-rex
+      c0 excom 3bitr4i n0 ) EGZFGZHZHZHZUAZVFABIZIZJUBZJUCZKZLZMZETZFTZVGALZVGB
+      LZMZFTZVLVPUDNNZUELZABKZVBUFZVSWCFVSVJVLIZVPLZWCVQWJEVJVIOVKVMWIVPVFVJVLU
+      GUHUIWJWIVNLZWIVOLZMWCWIVNVOPWKWAWLWBWKVHAIJLWAVHABJVGOZCDUJVGAFUKZCQRWLV
+      HBIJLWBVHABJWMCDULVGBWNDQRUMRRSWFVQEWEUNZVTEVPWEVLABUOUPVFWELZVQMZETVRFTZ
+      ETWOVTWQWREWQVKFTZVQMWRWPWSVQFVFUQURVKVQFUSUTSVQEWEVAVRFEVCVDRWHVGWGLZFTW
+      DFWGVEWTWCFVGABPSRVD $.
+      $( [15-Jan-2015] $)
+  $}
+
+  ${
+    $d ph x $.
+    $( When ` x ` does not occur in ` ph ` , ` { x | ph } ` is a set.
+       (Contributed by SF, 17-Jan-2015.) $)
+    abexv $p |- { x | ph } e. _V $=
+      ( cab cvv wceq c0 wo wcel abvor0 vvex eleq1 mpbiri 0ex jaoi ax-mp ) ABCZD
+      EZPFEZGPDHZABIQSRQSDDHJPDDKLRSFDHMPFDKLNO $.
+      $( [17-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z $.
+    $( The union of a unit power class is the original set.  (Contributed by
+       SF, 20-Jan-2015.) $)
+    unipw1 $p |- U. ~P1 A = A $=
+      ( vx vy vz cpw1 cuni cv wcel wel wa wex csn wceq eluni elpw1 anbi1i ancom
+      wrex weq 3bitri r19.41v 3bitr4i exbii risset ceqsexv abeq2i equcom rexbii
+      snex eleq2 df-sn rexcom4 3bitr2ri eqriv ) BAEZFZABGZUPHBCIZCGZUOHZJZCKUSD
+      GZLZMZURJZDARZCKZUQAHZCUQUONVAVFCUTURJVDDARZURJVAVFUTVIURDUSAOPURUTQVDURD
+      AUAUBUCVHDBSZDARVECKZDARVGDUQAUDVKVJDAVKUQVCHZBDSZVJURVLCVCVBUIUSVCUQUJUE
+      VMBVCBVBUKUFBDUGTUHVEDCAULUMTUN $.
+      $( [20-Jan-2015] $)
+  $}
+
+  $( Biconditional existence for unit power class.  (Contributed by SF,
+     20-Jan-2015.) $)
+  pw1exb $p |- ( ~P1 A e. _V <-> A e. _V ) $=
+    ( cpw1 cvv wcel cuni unipw1 uniexg syl5eqelr pw1exg impbii ) ABZCDZACDLAKEC
+    AFKCGHACIJ $.
+    $( [20-Jan-2015] $)
+
+  ${
+    $d A x y t $.
+    $( Definition of power set for existence proof.  (Contributed by SF,
+       21-Jan-2015.) $)
+    dfpw2 $p |- ~P A = ~ ( ( SSet_k \ ( ~P1 A X._k _V ) ) "_k 1c ) $=
+      ( vx vy vt cpw cssetk cpw1 cvv c1c cv wcel wn copk wa wex vex exbii bitri
+      3bitr4i 3bitri cxpk cdif cimak ccompl wel wal csn wceq wrex elimak anbi1i
+      el1c 19.41v bitr4i df-rex excom snex opkeq1 eleq1d ceqsexv eldif opkelxpk
+      wi elssetk mpbiran2 snelpw1 notbii anbi12i annim exnal con2bii elpw dfss2
+      wss elcompl eqriv ) BAEZFAGZHUAZUBZIUCZUDZCBUEZCJZAKZVCZCUFZBJZWAKZLWHVQK
+      ZWHWBKWIWGWIDJZWDUGZUHZWKWHMZVTKZNZDOZCOZWFLZCOWGLWIWODIUIZWRDVTIWHBPZUJW
+      KIKZWONZDOWPCOZDOWTWRXCXDDXCWMCOZWONXDXBXEWOCWKULUKWMWOCUMUNQWODIUOWPCDUP
+      SRWQWSCWQWLWHMZVTKZWSWOXGDWLWDUQZWMWNXFVTWKWLWHURUSUTXGXFFKZXFVSKZLZNWCWE
+      LZNWSXFFVSVAXIWCXKXLWDWHCPXAVDXJWEXJWLVRKZWEXJXMWHHKXAWLWHVRHXHXAVBVEWDAV
+      FRVGVHWCWEVITRQWFCVJTVKWJWHAVNWGWHAXAVLCWHAVMRWHWAXAVOSVP $.
+      $( [21-Jan-2015] $)
+  $}
+
+  $( The power class of a set is a set.  (Contributed by SF, 21-Jan-2015.) $)
+  pwexg $p |- ( A e. V -> ~P A e. _V ) $=
+    ( wcel cpw cssetk cpw1 cvv cxpk cdif cimak ccompl dfpw2 ssetkex pw1exg vvex
+    c1c xpkexg sylancl difexg sylancr 1cex imakexg complexg syl syl5eqel ) ABCZ
+    ADEAFZGHZIZPJZKZGALUFUJGCZUKGCUFUIGCZPGCULUFEGCUHGCZUMMUFUGGCGGCUNABNOUGGGG
+    QREUHGGSTUAUIPGGUBRUJGUCUDUE $.
+    $( [21-Jan-2015] $)
+
+  ${
+    pwex.1 $e |- A e. _V $.
+    $( The power class of a set is a set.  (Contributed by SF, 21-Jan-2015.) $)
+    pwex $p |- ~P A e. _V $=
+      ( cvv wcel cpw pwexg ax-mp ) ACDAECDBACFG $.
+      $( [21-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z $.
+    $( A class of singletons is equal to the unit power class of its union.
+       (Contributed by SF, 26-Jan-2015.) $)
+    eqpw1uni $p |- ( A C_ 1c -> A = ~P1 U. A ) $=
+      ( vx vy vz c1c wss cuni cpw1 cv wcel ssel wi csn wceq wb el1c eleq2 sylbi
+      wex eleq1 pw1ss1c sseli a1i wel wrex vex snid rspcev weq elsn sneq eleq1d
+      mpan2 biimprcd imbi1d imbi12d mpbiri exlimiv syli rexlimdv impbid2 eluni2
+      syl6bbr snelpw1 syl6bb bibi12d syl5ibrcom exlimdv syl5bi pm5.21ndd eqrdv
+      ) AEFZBAAGZHZVLBIZEJZVOAJZVOVNJZAEVOKZVRVPLVLVNEVOVMUAUBUCVPVOCIZMZNZCSVL
+      VQVROZCVOPVLWBWCCVLWCWBWAAJZVTVMJZOVLWDCBUDZBAUEZWEVLWDWGWDVTWAJZWGVTCUFU
+      GWFWHBWAAVOWAVTQUHUMVLWFWDBAVQVLVPWFWDLZVSVPVODIZMZNZDSVQWILZDVOPWLWMDWLW
+      MWKAJZVTWKJZWDLZLWOWDWNWOCDUIZWDWNOCWJUJWQWAWKAVTWJUKULRUNWLVQWNWIWPVOWKA
+      TWLWFWOWDVOWKVTQUOUPUQURRUSUTVABVTAVBVCWBVQWDVRWEVOWAATWBVRWAVNJWEVOWAVNT
+      VTVMVDVEVFVGVHVIVJVK $.
+      $( [26-Jan-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d C x $.  $d C y $.  $d x y $.
+    pw1equn.1 $e |- A e. _V $.
+    pw1equn.2 $e |- B e. _V $.
+    $( A condition for a unit power class to equal a union.  (Contributed by
+       SF, 26-Jan-2015.) $)
+    pw1equn $p |- ( ~P1 C = ( A u. B ) <->
+        E. x E. y ( C = ( x u. y ) /\ A = ~P1 x /\ B = ~P1 y ) ) $=
+      ( cpw1 cun wceq cv w3a wex cuni c1c wss mpbiri eqeq2d wb pw1eq unipw1 syl
+      unieq syl5eqr ssun1 sseq2 pw1ss1c syl6ss eqpw1uni ssun2 wa uneq12 syl6eqr
+      uniex uniun adantr adantl 3anbi123d spc2ev syl3anc pw1un eqeqan12d 3impb
+      exlimivv impbii ) EHZCDIZJZEAKZBKZIZJZCVIHZJZDVJHZJZLZBMAMZVHEVGNZJZCCNZH
+      ZJZDDNZHZJZVRVHEVFNVSEUAVFVGUCUDVHCOPWCVHCVFOVHCVFPCVGPCDUEVFVGCUFQEUGZUH
+      CUIUBVHDOPWFVHDVFOVHDVFPDVGPDCUJVFVGDUFQWGUHDUIUBVQVTWCWFLABWAWDCFUNDGUNV
+      IWAJZVJWDJZUKZVLVTVNWCVPWFWJVKVSEWJVKWAWDIVSVIWAVJWDULCDUOUMRWHVNWCSWIWHV
+      MWBCVIWATRUPWIVPWFSWHWIVOWEDVJWDTRUQURUSUTVQVHABVQVHVKHZVMVOIZJZVIVJVAVLV
+      NVPVHWMSVLVNVPUKVFWKVGWLEVKTCVMDVOULVBVCQVDVE $.
+      $( [26-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y c $.  $d B x y c $.  $d C x y c $.
+    pw1eqadj.1 $e |- A e. _V $.
+    pw1eqadj.2 $e |- B e. _V $.
+    $( A condition for a unit power class to work out to an adjunction.
+       (Contributed by SF, 26-Jan-2015.) $)
+    pw1eqadj $p |- ( ~P1 C = ( A u. { B } ) <->
+       E. x E. y ( C = ( x u. { y } ) /\ A = ~P1 x /\ B = { y } ) ) $=
+      ( cpw1 csn cun wceq cv wex cuni c1c wcel mpbiri wss eqeq2d wb unieq uniun
+      w3a unipw1 3eqtr3g unisn pw1ss1c ssun2 snid sselii eleq2 sseldi vex sneqi
+      eqcomi id sneqd 3eqtr4a exlimiv sylbi syl syl5eq uneq2d eqtrd ssun1 sseq2
+      el1c syl6ss eqpw1uni uniex wa uneq12 sylan2 pw1eq adantr adantl 3anbi123d
+      spc2ev syl3anc pw1un pw1sn uneq2i eqtri eqeqan12d 3impb exlimivv impbii
+      sneq ) EHZCDIZJZKZEALZBLZIZJZKZCWMHZKZDWOKZUCZBMAMZWLECNZDNZIZJZKZCXCHZKZ
+      DXEKZXBWLEXCWJNZJZXFWLWINWKNEXLWIWKUAEUDCWJUBUEWLXKXEXCWLXKDXEDGUFWLDOPZX
+      JWLWIODEUGZWLDWIPDWKPWJWKDWJCUHDGUIUJWIWKDUKQULXMDWMIZKZAMXJADVGXPXJAXPXO
+      XONZIZDXEXRXOXQWMWMAUMUFUNUOXPUPXPXDXQDXOUAUQURUSUTVAZVBVCVDWLCORXIWLCWIO
+      WLCWIRCWKRCWJVEWIWKCVFQXNVHCVIVAXSXAXGXIXJUCABXCXDCFVJDGVJWMXCKZWNXDKZVKZ
+      WQXGWSXIWTXJYBWPXFEYAXTWOXEKWPXFKWNXDWHZWMXCWOXEVLVMSXTWSXITYAXTWRXHCWMXC
+      VNSVOYAWTXJTXTYAWOXEDYCSVPVQVRVSXAWLABXAWLWPHZWRWOIZJZKZYDWRWOHZJYFWMWOVT
+      YHYEWRWNBUMWAWBWCWQWSWTWLYGTWQWSWTVKWIYDWKYFEWPVNWTWSWJYEKWKYFKDWOWHCWRWJ
+      YEVLVMWDWEQWFWG $.
+      $( [26-Jan-2015] $)
+  $}
+
+  ${
+    $d x y $.  $d y ph $.
+    $( Alternate definition of existential uniqueness in terms of abstraction.
+       (Contributed by SF, 29-Jan-2015.) $)
+    dfeu2 $p |- ( E! x ph <-> { x | ph } e. 1c ) $=
+      ( vy weq wb wal wex cab cv csn wceq weu c1c wcel abbi df-sn eqeq2i bitr4i
+      exbii df-eu el1c 3bitr4i ) ABCDZEBFZCGABHZCIZJZKZCGABLUEMNUDUHCUDUEUCBHZK
+      UHAUCBOUGUIUEBUFPQRSABCTCUEUAUB $.
+      $( [29-Jan-2015] $)
+  $}
+
+
+  ${
+    $d x y $.  $d ph y $.
+    $( If there is a unique object satisfying a property ` ph ` , then the set
+       of all elements that satisfy ` ph ` exists.  (Contributed by SF,
+       16-Jan-2015.) $)
+    euabex $p |- ( E! x ph -> { x | ph } e. _V ) $=
+      ( weu cab c1c wcel cvv dfeu2 elex sylbi ) ABCABDZEFKGFABHKEIJ $.
+      $( [16-Jan-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    sspw1.1 $e |- A e. _V $.
+    $( A condition for being a subclass of a unit power class.  Corollary 2 of
+       theorem IX.6.14 of [Rosser] p. 255.  (Contributed by SF, 3-Feb-2015.) $)
+    sspw1 $p |- ( A C_ ~P1 B <-> E. x ( x C_ B /\ A = ~P1 x ) ) $=
+      ( cpw1 wss cv wceq wa wex cuni uniss unipw1 syl6sseq c1c pw1ss1c eqpw1uni
+      sstr mpan2 sseq1 uniex pw1eq eqeq2d anbi12d spcev syl2anc syl5ibr impcom
+      syl pw1ss exlimiv impbii ) BCEZFZAGZCFZBUOEZHZIZAJZUNBKZCFZBVAEZHZUTUNVAU
+      MKCBUMLCMNUNBOFZVDUNUMOFVECPBUMORSBQUIUSVBVDIAVABDUAUOVAHZUPVBURVDUOVACTV
+      FUQVCBUOVAUBUCUDUEUFUSUNAURUPUNUPUNURUQUMFUOCUJBUQUMTUGUHUKUL $.
+      $( [3-Feb-2015] $)
+  $}
+
+
+  ${
+    $d A x $.
+    sspw12.1 $e |- A e. _V $.
+    $( A set is a subset of cardinal one iff it is the unit power class of some
+       other set.  (Contributed by SF, 17-Mar-2015.) $)
+    sspw12 $p |- ( A C_ 1c <-> E. x A = ~P1 x ) $=
+      ( c1c wss cv cpw1 wceq wex eqpw1uni uniex pw1eq eqeq2d spcev syl pw1ss1c
+      cuni sseq1 mpbiri exlimiv impbii ) BDEZBAFZGZHZAIZUBBBQZGZHZUFBJUEUIAUGBC
+      KUCUGHUDUHBUCUGLMNOUEUBAUEUBUDDEUCPBUDDRSTUA $.
+      $( [17-Mar-2015] $)
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Definite description binder (inverted iota)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c iota $.
+  $( Extend class notation with Russell's definition description binder
+     (inverted iota). $)
+  cio $a class ( iota x ph ) $.
+
+  ${
+    $d w x z $.  $d ph w z $.  $d ph w y $.  $d x y $.
+    $( Soundness justification theorem for ~ df-iota .  (Contributed by Andrew
+       Salmon, 29-Jun-2011.) $)
+    iotajust $p |- U. { y | { x | ph } = { y } } =
+       U. { z | { x | ph } = { z } } $=
+      ( vw cab cv csn wceq sneq eqeq2d cbvabv eqtri unieqi ) ABFZCGZHZIZCFZODGZ
+      HZIZDFZSOEGZHZIZEFUCRUFCEPUDIQUEOPUDJKLUFUBEDUDTIUEUAOUDTJKLMN $.
+      $( [12-Jul-2011] $) $( [29-Jun-2011] $)
+  $}
+
+  ${
+    $d y x $.  $d y ph $.
+    $( Define Russell's definition description binder, which can be read as
+       "the unique ` x ` such that ` ph ` ," where ` ph ` ordinarily contains
+       ` x ` as a free variable.  Our definition is meaningful only when there
+       is exactly one ` x ` such that ` ph ` is true (see ~ iotaval );
+       otherwise, it evaluates to the empty set (see ~ iotanul ).  Russell used
+       the inverted iota symbol ` iota ` to represent the binder. $)
+    df-iota $a |- ( iota x ph ) = U. { y | { x | ph } = { y } } $.
+  $}
+
+  ${
+    $d y x $.  $d y ph $.
+    $( Alternate definition for descriptions.  Definition 8.18 in [Quine]
+       p. 56.  (Contributed by Andrew Salmon, 30-Jun-2011.) $)
+    dfiota2 $p |- ( iota x ph ) = U. { y | A. x ( ph <-> x = y ) } $=
+      ( cio cab cv csn wceq cuni wb wal df-iota df-sn eqeq2i abbi bitr4i unieqi
+      abbii eqtri ) ABDABEZCFZGZHZCEZIABFUAHZJBKZCEZIABCLUDUGUCUFCUCTUEBEZHUFUB
+      UHTBUAMNAUEBOPRQS $.
+      $( [12-Jul-2011] $) $( [30-Jun-2011] $)
+  $}
+
+  ${
+    $d x y $.  $d y ph $.
+    $( Bound-variable hypothesis builder for the ` iota ` class.  (Contributed
+       by Andrew Salmon, 11-Jul-2011.)  (Revised by Mario Carneiro,
+       15-Oct-2016.) $)
+    nfiota1 $p |- F/_ x ( iota x ph ) $=
+      ( vy cio cv wceq wb wal cab cuni dfiota2 nfaba1 nfuni nfcxfr ) BABDABECEF
+      GZBHCIZJABCKBPOBCLMN $.
+  $}
+
+  ${
+    $d z ps $.  $d z ph $.  $d x z $.  $d y z $.
+    nfiotad.1 $e |- F/ y ph $.
+    nfiotad.2 $e |- ( ph -> F/ x ps ) $.
+    $( Deduction version of ~ nfiota .  (Contributed by NM, 18-Feb-2013.) $)
+    nfiotad $p |- ( ph -> F/_ x ( iota y ps ) ) $=
+      ( vz cio cv wceq wb wal cab cuni dfiota2 nfv wn wa wnf adantr wnfc adantl
+      nfcvf nfcvd nfeqd nfbid nfald2 nfabd nfunid nfcxfrd ) ACBDHBDIZGIZJZKZDLZ
+      GMZNBDGOACUPAUOCGAGPAUNCDEACIUKJCLQZRZBUMCABCSUQFTURCUKULUQCUKUAACDUCUBUR
+      CULUDUEUFUGUHUIUJ $.
+  $}
+
+  ${
+    $d w z ph $.  $d w x z $.  $d w y z $.
+    nfiota.1 $e |- F/ x ph $.
+    $( Bound-variable hypothesis builder for the ` iota ` class.  (Contributed
+       by NM, 23-Aug-2011.) $)
+    nfiota $p |- F/_ x ( iota y ph ) $=
+      ( cio wnfc wtru nftru wnf a1i nfiotad trud ) BACEFGABCCHABIGDJKL $.
+  $}
+
+  ${
+    $d z w x $.  $d z w y $.  $d z w ph $.  $d z w ps $.
+    cbviota.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    cbviota.2 $e |- F/ y ph $.
+    cbviota.3 $e |- F/ x ps $.
+    $( Change bound variables in a description binder.  (Contributed by Andrew
+       Salmon, 1-Aug-2011.) $)
+    cbviota $p |- ( iota x ph ) = ( iota y ps ) $=
+      ( vw vz cv wceq wb wal cab cuni cio wsb nfv nfbi equequ1 nfs1v cbval nfsb
+      sbequ12 bibi12d sbequ sbie syl6bb bitri abbii unieqi dfiota2 3eqtr4i ) AC
+      JZHJZKZLZCMZHNZOBDJZUOKZLZDMZHNZOACPBDPUSVDURVCHURACIQZIJZUOKZLZIMVCUQVHC
+      IUQIRVEVGCACIUAVGCRSUNVFKAVEUPVGACIUDCIHTUEUBVHVBIDVEVGDACIDFUCVGDRSVBIRV
+      FUTKZVEBVGVAVIVEACDQBAIDCUFABCDGEUGUHIDHTUEUBUIUJUKACHULBDHULUM $.
+  $}
+
+  ${
+    $d ph y $.  $d ps x $.
+    cbviotav.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Change bound variables in a description binder.  (Contributed by Andrew
+       Salmon, 1-Aug-2011.) $)
+    cbviotav $p |- ( iota x ph ) = ( iota y ps ) $=
+      ( nfv cbviota ) ABCDEADFBCFG $.
+      $( [1-Aug-2011] $)
+  $}
+
+  ${
+    $d w z ph $.  $d w z x $.  $d w z y $.
+    sb8iota.1 $e |- F/ y ph $.
+    $( Variable substitution in description binder.  Compare ~ sb8eu .
+       (Contributed by NM, 18-Mar-2013.) $)
+    sb8iota $p |- ( iota x ph ) = ( iota y [ y / x ] ph ) $=
+      ( vz vw cv wceq wb wal cab cuni wsb cio nfv sb8 sbbi nfsb nfxfr dfiota2
+      eqsb3 nfbi sbequ cbval equsb3 sblbis albii 3bitri abbii unieqi 3eqtr4i )
+      ABGEGZHZIZBJZEKZLABCMZCGULHZIZCJZEKZLABNUQCNUPVAUOUTEUOUNBFMZFJUNBCMZCJUT
+      UNBFUNFOPVBVCFCVBABFMZUMBFMZICAUMBFQVDVECABFCDRVEFGULHZCFBULUAVFCOSUBSVCF
+      OUNFCBUCUDVCUSCUMURABCCBEUEUFUGUHUIUJABETUQCETUK $.
+  $}
+
+  ${
+    $d y z $.  $d x z $.  $d ph z $.
+    $( Equality theorem for descriptions.  (Contributed by Andrew Salmon,
+       30-Jun-2011.) $)
+    iotaeq $p |- ( A. x x = y -> ( iota x ph ) = ( iota y ph ) ) $=
+      ( vz cv wceq wal cab csn cuni cio wcel drsb1 df-clab 3bitr4g eqrdv eqeq1d
+      wsb abbidv df-iota unieqd 3eqtr4g ) BECEFBGZABHZDEZIZFZDHZJACHZUFFZDHZJAB
+      KACKUCUHUKUCUGUJDUCUDUIUFUCDUDUIUCABDRACDRUEUDLUEUILABCDMADBNADCNOPQSUAAB
+      DTACDTUB $.
+  $}
+
+  ${
+    $d ph z $.  $d ps z $.  $d x y z $.
+    $( Equivalence theorem for descriptions.  (Contributed by Andrew Salmon,
+       30-Jun-2011.) $)
+    iotabi $p |- ( A. x ( ph <-> ps ) -> ( iota x ph ) = ( iota x ps ) ) $=
+      ( vz wb wal cab cv csn wceq cuni abbi biimpi eqeq1d abbidv unieqd df-iota
+      cio 3eqtr4g ) ABECFZACGZDHIZJZDGZKBCGZUBJZDGZKACRBCRTUDUGTUCUFDTUAUEUBTUA
+      UEJABCLMNOPACDQBCDQS $.
+
+    $( Part of Theorem 8.17 in [Quine] p. 56.  This theorem serves as a lemma
+       for the fundamental property of iota.  (Contributed by Andrew Salmon,
+       11-Jul-2011.) $)
+    uniabio $p |- ( A. x ( ph <-> x = y ) -> U. { x | ph } = y ) $=
+      ( cv wceq wb wal cab cuni csn abbi biimpi df-sn syl6eqr unieqd vex syl6eq
+      unisn ) ABDCDZEZFBGZABHZISJZISUAUBUCUAUBTBHZUCUAUBUDEATBKLBSMNOSCPRQ $.
+
+    $( Theorem 8.19 in [Quine] p. 57.  This theorem is the fundamental property
+       of iota.  (Contributed by Andrew Salmon, 11-Jul-2011.) $)
+    iotaval $p |- ( A. x ( ph <-> x = y ) -> ( iota x ph ) = y ) $=
+      ( vz cv wceq wb wal cio cab cuni dfiota2 cvv wcel wa sbeqalb equcomi syl6
+      wi vex ax-mp ex equequ2 eqcoms bibi2d biimpd alimdv com12 alrimiv uniabio
+      impbid syl syl5eq ) ABEZCEZFZGZBHZABIAUNDEZFZGZBHZDJKZUOABDLURVBUSUOFZGZD
+      HVCUOFURVEDURVBVDURVBVDUOMNZURVBOZVDSCTVFVGUOUSFVDABUOUSMPCDQRUAUBVDURVBV
+      DUQVABVDUQVAVDUPUTAUPUTGUOUSCDBUCUDUEUFUGUHUKUIVBDCUJULUM $.
+
+    $( Equivalence between two different forms of ` iota ` .  (Contributed by
+       Andrew Salmon, 12-Jul-2011.) $)
+    iotauni $p |- ( E! x ph -> ( iota x ph ) = U. { x | ph } ) $=
+      ( vz weu cv wceq wb wal wex cio cuni df-eu iotaval uniabio eqtr4d exlimiv
+      cab sylbi ) ABDABECEZFGBHZCIABJZABQKZFZABCLTUCCTUASUBABCMABCNOPR $.
+
+    $( Equivalence between two different forms of ` iota ` .  (Contributed by
+       Mario Carneiro, 24-Dec-2016.) $)
+    iotaint $p |- ( E! x ph -> ( iota x ph ) = |^| { x | ph } ) $=
+      ( weu cio cab cuni cint iotauni wceq uniintab biimpi eqtrd ) ABCZABDABEZF
+      ZNGZABHMOPIABJKL $.
+
+    $( Property of iota.  (Contributed by NM, 23-Aug-2011.)  (Revised by Mario
+       Carneiro, 23-Dec-2016.) $)
+    iota1 $p |- ( E! x ph -> ( ph <-> ( iota x ph ) = x ) ) $=
+      ( vz weu cv wceq wb wal wex cio df-eu iotaval eqeq2d bitr4d eqcom exlimiv
+      sp syl6bb sylbi ) ABDABEZCEZFZGZBHZCIAABJZTFZGZABCKUDUGCUDATUEFZUFUDAUBUH
+      UCBQUDUEUATABCLMNTUEORPS $.
+
+    $( Theorem 8.22 in [Quine] p. 57.  This theorem is the result if there
+       isn't exactly one ` x ` that satisfies ` ph ` .  (Contributed by Andrew
+       Salmon, 11-Jul-2011.) $)
+    iotanul $p |- ( -. E! x ph -> ( iota x ph ) = (/) ) $=
+      ( vz weu cv wceq wb wal wex cio c0 df-eu wn cuni dfiota2 alnex ax-1 eqidd
+      cab impbid1 con2bid alimi abbi dfnul2 syl6eqr sylbir unieqd syl6eq syl5eq
+      sylib uni0 sylnbi ) ABDABECEZFGBHZCIZABJZKFABCLUOMZUPUNCSZNZKABCOUQUSKNKU
+      QURKUQUNMZCHZURKFUNCPVAURUMUMFZMZCSZKVAUNVCGZCHURVDFUTVECUTVBUNUTVBUTUTVB
+      QUTUMRTUAUBUNVCCUCUJCUDUEUFUGUKUHUIUL $.
+
+    $( The ` iota ` class is a subset of the union of all elements satisfying
+       ` ph ` .  (Contributed by Mario Carneiro, 24-Dec-2016.) $)
+    iotassuni $p |- ( iota x ph ) C_ U. { x | ph } $=
+      ( weu cio cab cuni wss iotauni eqimss syl wn c0 0ss iotanul sseq1d mpbiri
+      wceq pm2.61i ) ABCZABDZABEFZGZSTUAQUBABHTUAIJSKZUBLUAGUAMUCTLUAABNOPR $.
+
+    $( Theorem 8.23 in [Quine] p. 58.  This theorem proves the existence of the
+       ` iota ` class under our definition.  (Contributed by Andrew Salmon,
+       11-Jul-2011.) $)
+    iotaex $p |- ( iota x ph ) e. _V $=
+      ( vz weu cio cvv wcel cv wceq wb wal wex iotaval eqcomd eximi df-eu isset
+      3imtr4i wn c0 iotanul 0ex syl6eqel pm2.61i ) ABDZABEZFGZABHCHZIJBKZCLUHUF
+      IZCLUEUGUIUJCUIUFUHABCMNOABCPCUFQRUESUFTFABUAUBUCUD $.
+
+    $( Theorem *14.22 in [WhiteheadRussell] p. 190.  (Contributed by Andrew
+       Salmon, 12-Jul-2011.) $)
+    iota4 $p |- ( E! x ph -> [. ( iota x ph ) / x ]. ph ) $=
+      ( vz weu weq wb wal wex cio wsbc df-eu wsb bi2 alimi sb2 syl wceq iotaval
+      wi cv eqcomd dfsbcq2 mpbid exlimiv sylbi ) ABDABCEZFZBGZCHABABIZJZABCKUHU
+      JCUHABCLZUJUHUFASZBGUKUGULBAUFMNABCOPUHCTZUIQUKUJFUHUIUMABCRUAABCUIUBPUCU
+      DUE $.
+  $}
+
+  $( Theorem *14.23 in [WhiteheadRussell] p. 191.  (Contributed by Andrew
+     Salmon, 12-Jul-2011.) $)
+  iota4an $p |- ( E! x ( ph /\ ps )
+            -> [. ( iota x ( ph /\ ps ) ) / x ]. ph ) $=
+    ( wa weu cio wsbc iota4 wi cvv wcel iotaex simpl sbcth ax-mp wb sbcimg mpbi
+    syl ) ABDZCETCTCFZGZACUAGZTCHTAIZCUAGZUBUCIZUAJKZUETCLZUDCUAJABMNOUGUEUFPUH
+    TACUAJQORS $.
+
+  ${
+    $d x y A $.  $d x V $.  $d x ph $.  $d y ps $.
+    iota5.1 $e |- ( ( ph /\ A e. V ) -> ( ps <-> x = A ) ) $.
+    $( A method for computing iota.  (Contributed by NM, 17-Sep-2013.) $)
+    iota5 $p |- ( ( ph /\ A e. V ) -> ( iota x ps ) = A ) $=
+      ( vy wcel wa cv wceq wb wal cio alrimiv wi eqeq2 bibi2d albidv imbi12d
+      iotaval vtoclg adantl mpd ) ADEHZIZBCJZDKZLZCMZBCNZDKZUFUICFOUEUJULPZABUG
+      GJZKZLZCMZUKUNKZPUMGDEUNDKZUQUJURULUSUPUICUSUOUHBUNDUGQRSUNDUKQTBCGUAUBUC
+      UD $.
+  $}
+
+  ${
+    $d x ph $.
+    iotabidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building deduction rule for iota.  (Contributed by NM,
+       20-Aug-2011.) $)
+    iotabidv $p |- ( ph -> ( iota x ps ) = ( iota x ch ) ) $=
+      ( wb wal cio wceq alrimiv iotabi syl ) ABCFZDGBDHCDHIAMDEJBCDKL $.
+  $}
+
+  ${
+    iotabii.1 $e |- ( ph <-> ps ) $.
+    $( Formula-building deduction rule for iota.  (Contributed by Mario
+       Carneiro, 2-Oct-2015.) $)
+    iotabii $p |- ( iota x ph ) = ( iota x ps ) $=
+      ( wb cio wceq iotabi mpg ) ABEACFBCFGCABCHDI $.
+  $}
+
+  $( Membership law for descriptions.
+
+     This can useful for expanding an unbounded iota-based definition (see
+     ~ df-iota ).  If you have a bounded iota-based definition, ~ riotacl2 may
+     be useful.
+
+     (Contributed by Andrew Salmon, 1-Aug-2011.) $)
+  iotacl $p |- ( E! x ph -> ( iota x ph ) e. { x | ph } ) $=
+    ( weu cio wsbc cab wcel iota4 df-sbc sylib ) ABCABABDZEKABFGABHABKIJ $.
+
+  ${
+    $d x y $.  $d y B $.  $d y ps $.
+    iota2df.1 $e |- ( ph -> B e. V ) $.
+    iota2df.2 $e |- ( ph -> E! x ps ) $.
+    iota2df.3 $e |- ( ( ph /\ x = B ) -> ( ps <-> ch ) ) $.
+    ${
+      iota2df.4 $e |- F/ x ph $.
+      iota2df.5 $e |- ( ph -> F/ x ch ) $.
+      iota2df.6 $e |- ( ph -> F/_ x B ) $.
+      $( A condition that allows us to represent "the unique element such that
+         ` ph ` " with a class expression ` A ` .  (Contributed by NM,
+         30-Dec-2014.) $)
+      iota2df $p |- ( ph -> ( ch <-> ( iota x ps ) = B ) ) $=
+        ( wnfc cio wceq wb wnf cv wal alrimi wi wcel nfiota1 a1i nfeqd nfbid wa
+        simpr eqeq2d bibi12d ex weu iota1 syl vtoclgft syl221anc ) ADEMCBDNZEOZ
+        PZDQDRZEOZBUQUTOZPZUSPZUAZDSVCDSEFUBUSLACURDKADUQEDUQMABDUCUDLUEUFAVEDJ
+        AVAVDAVAUGZBCVBURIVFUTEUQAVAUHUIUJUKTAVCDJABDULVCHBDUMUNTGVCUSDEFUOUP
+        $.
+    $}
+
+    $d x B $.  $d x ph $.  $d x ch $.
+    $( A condition that allows us to represent "the unique element such that
+       ` ph ` " with a class expression ` A ` .  (Contributed by NM,
+       30-Dec-2014.) $)
+    iota2d $p |- ( ph -> ( ch <-> ( iota x ps ) = B ) ) $=
+      ( nfv nfvd nfcvd iota2df ) ABCDEFGHIADJACDKADELM $.
+  $}
+
+  ${
+    $d A x $.  $d ps x $.
+    iota2.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( The unique element such that ` ph ` .  (Contributed by Jeff Madsen,
+       1-Jun-2011.)  (Revised by Mario Carneiro, 23-Dec-2016.) $)
+    iota2 $p |- ( ( A e. B /\ E! x ph ) -> ( ps <-> ( iota x ph ) = A ) ) $=
+      ( wcel cvv weu cio wceq wb elex wa simpl simpr cv adantl nfv nfeu1 nfcvd
+      nfan nfvd iota2df sylan ) DEGDHGZACIZBACJDKLDEMUFUGNZABCDHUFUGOUFUGPCQDKA
+      BLUHFRUFUGCUFCSACTUBUHBCUCUHCDUAUDUE $.
+  $}
+
+  $( A class abstraction with a unique member can be expressed as a singleton.
+     (Contributed by Mario Carneiro, 23-Dec-2016.) $)
+  sniota $p |- ( E! x ph -> { x | ph } = { ( iota x ph ) } ) $=
+    ( weu cv cab wcel cio csn wb wal wceq nfeu1 iota1 eqcom syl6bb abid 3bitr4g
+    vex elsnc alrimi nfab1 nfiota1 nfsn cleqf sylibr ) ABCZBDZABEZFZUGABGZHZFZI
+    ZBJUHUKKUFUMBABLUFAUGUJKZUIULUFAUJUGKUNABMUJUGNOABPUGUJBRSQTBUHUKABUABUJABU
+    BUCUDUE $.
+
+  ${
+    $( The ` iota ` operation using the ` if ` operator.  (Contributed by Scott
+       Fenton, 6-Oct-2017.) $)
+    dfiota3 $p |- ( iota x ph ) = if ( E! x ph , U. { x | ph } , (/) ) $=
+      ( weu cio cab cuni cif wceq iotauni iftrue eqtr4d iotanul iffalse pm2.61i
+      c0 wn ) ABCZABDZQABEFZOGZHQRSTABIQSOJKQPROTABLQSOMKN $.
+  $}
+
+  ${
+    $d A y z $.  $d x y z $.  $d ph z $.
+    $( Class substitution within a description binder.  (Contributed by Scott
+       Fenton, 6-Oct-2017.) $)
+    csbiotag $p |- ( A e. V ->
+        [_ A / x ]_ ( iota y ph ) = ( iota y [. A / x ]. ph ) ) $=
+      ( vz cv cio csb wsb wceq csbeq1 dfsbcq2 iotabidv eqeq12d vex nfs1v nfiota
+      wsbc weq sbequ12 csbief vtoclg ) BFGZACHZIZABFJZCHZKBDUEIZABDSZCHZKFDEUDD
+      KZUFUIUHUKBUDDUELULUGUJCABFDMNOBUDUEUHFPUGBCABFQRBFTAUGCABFUANUBUC $.
+  $}
+
+  ${
+    $( Alternate definition of iota in terms of ` 1c ` . 
+       (Contributed by SF, 29-Jan-2015.) $)
+    dfiota4 $p |- ( iota x ph ) = U. U. ( 1c i^i { { x | ph } } ) $=
+      ( weu cio c1c cab csn cin cuni wceq iotauni wss wcel unieqd cvv eqtr4d wn
+      dfeu2 c0 uni0 snssi sylbi df-ss incom eqeq1i bitri sylib euabex syl eqtrd
+      unisng iotanul notbii disjsn bitr4i biimpi unieqi eqtri syl6eq pm2.61i )
+      ABCZABDZEABFZGZHZIZIZJVAVBVCIVGABKVAVFVCVAVFVDIZVCVAVEVDVAVDELZVEVDJZVAVC
+      EMZVIABRZVCEUAUBVIVDEHZVDJVJVDEUCVMVEVDVDEUDUEUFUGNVAVCOMVHVCJABUHVCOUKUI
+      UJNPVAQZVBSVGABULVNVGSIZIZSVNVFVOVNVESVNVESJZVNVKQVQVAVKVLUMEVCUNUOUPNNVP
+      VOSVOSTUQTURUSPUT $.
+      $( [29-Jan-2015] $)
   $}
