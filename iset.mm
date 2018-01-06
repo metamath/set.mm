@@ -12411,14 +12411,6 @@ $)
   $}
 
   ${
-    $d x ph $.
-    $( Special case of Theorem 19.37 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
-    19.37v $p |- ( E. x ( ph -> ps ) <-> ( ph -> E. x ps ) ) $=
-      ( ax-17 19.37 ) ABCACDE $.
-  $}
-
-  ${
     $d x ps $.
     $( Special case of Theorem 19.41 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.) $)
@@ -13287,6 +13279,14 @@ $)
     19.31 $p |- ( A. x ( ph \/ ps ) <-> ( A. x ph \/ ps ) ) $=
       ( wo wal 19.32 orcom albii 3bitr4i ) BAEZCFBACFZEABEZCFLBEBACDGMKCABHILBH
       J $.
+  $}
+
+  ${
+    $d x ph $.
+    $( Special case of Theorem 19.37 of [Margaris] p. 90.  (Contributed by NM,
+       5-Aug-1993.) $)
+    19.37v $p |- ( E. x ( ph -> ps ) <-> ( ph -> E. x ps ) ) $=
+      ( ax-17 19.37 ) ABCACDE $.
   $}
 
 $(
