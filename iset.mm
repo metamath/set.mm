@@ -13268,7 +13268,8 @@ $)
 
   ${
     19.31.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.31 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    $( Theorem 19.31 of [Margaris] p. 90.  Only the reverse direction is valid
+       intuitionistically.  (Contributed by NM, 5-Aug-1993.) $)
     19.31 $p |- ( A. x ( ph \/ ps ) <-> ( A. x ph \/ ps ) ) $=
       ( wo wal 19.32 orcom albii 3bitr4i ) BAEZCFBACFZEABEZCFLBEBACDGMKCABHILBH
       J $.
@@ -13276,10 +13277,9 @@ $)
 
   ${
     19.37.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.37 of [Margaris] p. 90.  The forward direction would follow
-       from ~ 19.35-1 and thus be valid intuitionistically, but our proof of
-       the other direction relies on ~ ax-3 .  (Contributed by NM,
-       5-Aug-1993.) $)
+    $( Theorem 19.37 of [Margaris] p. 90.  The forward direction is valid
+       intuitionistically (it could be proved from ~ 19.35-1 ), but the reverse
+       direction is not.  (Contributed by NM, 5-Aug-1993.) $)
     19.37 $p |- ( E. x ( ph -> ps ) <-> ( ph -> E. x ps ) ) $=
       ( wi wex wal 19.35 19.3 imbi1i bitri ) ABECFACGZBCFZEAMEABCHLAMACDIJK $.
   $}
@@ -14282,8 +14282,8 @@ $)
 
   ${
     19.36.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.36 of [Margaris] p. 90.  Also see ~ 19.36i where we have an
-       intuitionistic proof of the forward direction of this theorem.
+    $( Theorem 19.36 of [Margaris] p. 90.  The forward direction, ~ 19.36i , is
+       valid intuitionistically, but the reverse direction is not.
        (Contributed by NM, 5-Aug-1993.) $)
     19.36 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
       ( wi wex wal 19.35 19.9 imbi2i bitri ) ABECFACGZBCFZELBEABCHMBLBCDIJK $.
