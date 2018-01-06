@@ -6133,36 +6133,6 @@ $( This section makes our first use of the third axiom of propositonal
       ( wb bi2 syli wn bi1 con3d pm2.61d ) ABFZBCBMACABGDHBIMAICMABABJKEHL $.
   $}
 
-  $( Theorem *5.18 of [WhiteheadRussell] p. 124.  This theorem says that
-     logical equivalence is the same as negated "exclusive-or."  (Contributed
-     by NM, 28-Jun-2002.)  (Proof shortened by Andrew Salmon, 20-Jun-2011.)
-     (Proof shortened by Wolf Lammen, 15-Oct-2013.) $)
-  pm5.18 $p |- ( ( ph <-> ps ) <-> -. ( ph <-> -. ps ) ) $=
-    ( wb wn pm5.501 con1bid bitr2d nbn2 pm2.61i ) AABCZABDZCZDZCAMBJABLAKEFABEG
-    ADZMKJNKLAKHFABHGI $.
-
-  $( Two ways to express "exclusive or."  (Contributed by NM, 1-Jan-2006.) $)
-  xor3 $p |- ( -. ( ph <-> ps ) <-> ( ph <-> -. ps ) ) $=
-    ( wn wb pm5.18 con2bii bicomi ) ABCDZABDZCIHABEFG $.
-
-  $( Move negation outside of biconditional.  Compare Theorem *5.18 of
-     [WhiteheadRussell] p. 124.  (Contributed by NM, 27-Jun-2002.)  (Proof
-     shortened by Wolf Lammen, 20-Sep-2013.) $)
-  nbbn $p |- ( ( -. ph <-> ps ) <-> -. ( ph <-> ps ) ) $=
-    ( wb wn xor3 con2bi bicom 3bitrri ) ABCDABDCBADZCIBCABEABFBIGH $.
-
-  $( Associative law for the biconditional.  An axiom of system DS in Vladimir
-     Lifschitz, "On calculational proofs", Annals of Pure and Applied Logic,
-     113:207-224, 2002,
-     ~ http://www.cs.utexas.edu/users/ai-lab/pub-view.php?PubID=26805 .
-     Interestingly, this law was not included in _Principia Mathematica_ but
-     was apparently first noted by Jan Lukasiewicz circa 1923.  (Contributed by
-     NM, 8-Jan-2005.)  (Proof shortened by Juha Arpiainen, 19-Jan-2006.)
-     (Proof shortened by Wolf Lammen, 21-Sep-2013.) $)
-  biass $p |- ( ( ( ph <-> ps ) <-> ch ) <-> ( ph <-> ( ps <-> ch ) ) ) $=
-    ( wb pm5.501 bibi1d bitr3d wn nbbn nbn2 syl5bbr pm2.61i ) AABDZCDZABCDZDZDA
-    ONPABMCABEFAOEGAHZOHZNPRBHZCDQNBCIQSMCABJFKAOJGL $.
-
   $( Definition of 'and' in terms of negation and implication (classical).
      (Contributed by NM, 31-Jan-2015.) $)
   df-an $p |- ( ( ph /\ ps ) <-> -. ( ph -> -. ps ) ) $=
@@ -6225,14 +6195,6 @@ $( This section makes our first use of the third axiom of propositonal
   pm4.15 $p |- ( ( ( ph /\ ps ) -> -. ch ) <-> ( ( ps /\ ch ) -> -. ph ) ) $=
     ( wa wn wi con2b nan bitr2i ) BCDZAEFAJEFABDCEFJAGABCHI $.
 
-  $( Conjunction distributes over exclusive-or, using ` -. ( ph <-> ps ) ` to
-     express exclusive-or.  This is one way to interpret the distributive law
-     of multiplication over addition in modulo 2 arithmetic.  (Contributed by
-     NM, 3-Oct-2008.) $)
-  xordi $p |- ( ( ph /\ -. ( ps <-> ch ) ) <->
-                -. ( ( ph /\ ps ) <-> ( ph /\ ch ) ) ) $=
-    ( wb wn wa wi annim pm5.32 xchbinx ) ABCDZEFAKGABFACFDAKHABCIJ $.
-
   $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
      intuitionistically, although its coverse, ~ pm2.53 , does.  (Contributed
      by NM, 3-Jan-2005.) $)
@@ -6270,17 +6232,6 @@ $( This section makes our first use of the third axiom of propositonal
   pm2.68 $p |- ( ( ( ph -> ps ) -> ps ) -> ( ph \/ ps ) ) $=
     ( wi jarl orrd ) ABCBCABABBDE $.
 
-  $( Logical 'or' expressed in terms of implication only.  Theorem *5.25 of
-     [WhiteheadRussell] p. 124.  (Contributed by NM, 12-Aug-2004.)  (Proof
-     shortened by Wolf Lammen, 20-Oct-2012.) $)
-  dfor2 $p |- ( ( ph \/ ps ) <-> ( ( ph -> ps ) -> ps ) ) $=
-    ( wo wi pm2.62 pm2.68 impbii ) ABCABDBDABEABFG $.
-
-  $( Theorem *4.64 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.64 $p |- ( ( -. ph -> ps ) <-> ( ph \/ ps ) ) $=
-    ( wo wn wi df-or bicomi ) ABCADBEABFG $.
-
   $( Implication in terms of disjunction.  Theorem *4.6 of [WhiteheadRussell]
      p. 120.  (Contributed by NM, 5-Aug-1993.) $)
   imor $p |- ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) $=
@@ -6316,11 +6267,6 @@ $( This section makes our first use of the third axiom of propositonal
      3-Jan-2005.) $)
   pm4.62 $p |- ( ( ph -> -. ps ) <-> ( -. ph \/ -. ps ) ) $=
     ( wn imor ) ABCD $.
-
-  $( Theorem *4.66 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.66 $p |- ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) $=
-    ( wn pm4.64 ) ABCD $.
 
   $( Absorption of disjunction into equivalence.  (Contributed by NM,
      6-Aug-1995.)  (Proof shortened by Wolf Lammen, 3-Nov-2013.) $)
@@ -6366,38 +6312,6 @@ $( This section makes our first use of the third axiom of propositonal
                 ( ph \/ ( ps -> ch ) ) ) $=
     ( wi wo orimdi biimpri ) ABCDEABEACEDABCFG $.
 
-  $( Two ways to express "exclusive or."  Theorem *5.22 of [WhiteheadRussell]
-     p. 124.  (Contributed by NM, 3-Jan-2005.)  (Proof shortened by Wolf
-     Lammen, 22-Jan-2013.) $)
-  xor $p |- ( -. ( ph <-> ps ) <->
-                ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
-    ( wn wa wo wb wi iman anbi12i dfbi2 ioran 3bitr4ri con1bii ) ABCDZBACDZEZAB
-    FZABGZBAGZDNCZOCZDQPCRTSUAABHBAHIABJNOKLM $.
-
-  $( Two ways to express "exclusive or."  (Contributed by NM, 3-Jan-2005.)
-     (Proof shortened by Wolf Lammen, 24-Jan-2013.) $)
-  xor2 $p |- ( -. ( ph <-> ps ) <-> ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) ) $=
-    ( wb wn wo wa xor3 pm5.17 bitr4i ) ABCDABDCABEABFDFABGABHI $.
-
-  $( An alternate definition of the biconditional.  Theorem *5.23 of
-     [WhiteheadRussell] p. 124.  (Contributed by NM, 27-Jun-2002.)  (Proof
-     shortened by Wolf Lammen, 3-Nov-2013.) $)
-  dfbi3 $p |- ( ( ph <-> ps ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) ) $=
-    ( wn wb wa wo xor pm5.18 notnot anbi2i ancom orbi12i 3bitr4i ) ABCZDCANCZEZ
-    NACZEZFABDABEZQNEZFANGABHSPTRBOABIJQNKLM $.
-
-  $( Theorem *5.24 of [WhiteheadRussell] p. 124.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm5.24 $p |- ( -. ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) <->
-                ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
-    ( wb wn wa wo xor dfbi3 xchnxbi ) ABCABDZEBADZEFABEKJEFABGABHI $.
-
-  $( Simplify an implication between implications.  (Contributed by Paul
-     Chapman, 17-Nov-2012.)  (Proof shortened by Wolf Lammen, 3-Apr-2013.) $)
-  imimorb $p |- ( ( ( ps -> ch ) -> ( ph -> ch ) ) <->
-                  ( ph -> ( ps \/ ch ) ) ) $=
-    ( wi wo bi2.04 dfor2 imbi2i bitr4i ) BCDZACDDAJCDZDABCEZDJACFLKABCGHI $.
-
   $( Theorem *2.26 of [WhiteheadRussell] p. 104.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Nov-2012.) $)
   pm2.26 $p |- ( -. ph \/ ( ( ph -> ps ) -> ps ) ) $=
@@ -6422,11 +6336,6 @@ $( This section makes our first use of the third axiom of propositonal
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 14-Nov-2012.) $)
   pm5.13 $p |- ( ( ph -> ps ) \/ ( ps -> ph ) ) $=
     ( pm5.14 ) ABAC $.
-
-  $( Theorem *5.15 of [WhiteheadRussell] p. 124.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 15-Oct-2013.) $)
-  pm5.15 $p |- ( ( ph <-> ps ) \/ ( ph <-> -. ps ) ) $=
-    ( wb wn xor3 biimpi orri ) ABCZABDCZHDIABEFG $.
 
   $( Theorem *5.55 of [WhiteheadRussell] p. 125.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 20-Jan-2013.) $)
@@ -6664,11 +6573,6 @@ $)
   pm4.83 $p |- ( ( ( ph -> ps ) /\ ( -. ph -> ps ) ) <-> ps ) $=
     ( wn wo wi wa exmid a1bi jaob bitr2i ) BAACZDZBEABEKBEFLBAGHABKIJ $.
 
-  $( Negation inferred from embedded conjunct.  (Contributed by NM,
-     20-Aug-1993.)  (Proof shortened by Wolf Lammen, 25-Nov-2012.) $)
-  pclem6 $p |- ( ( ph <-> ( ps /\ -. ph ) ) -> -. ps ) $=
-    ( wn wa wb ibar nbbn sylib con2i ) BABACZDZEZBJKELCBJFAKGHI $.
-
   $( A transitive law of equivalence.  Compare Theorem *4.22 of
      [WhiteheadRussell] p. 117.  (Contributed by NM, 18-Aug-1993.) $)
   biantr $p |- ( ( ( ph <-> ps ) /\ ( ch <-> ps ) ) -> ( ph <-> ch ) ) $=
@@ -6683,13 +6587,6 @@ $)
                 ( ( ph \/ ps ) <-> ( ph \/ ch ) ) ) $=
     ( wn wb wi wo pm5.74 df-or bibi12i 3bitr4i ) ADZBCEZFLBFZLCFZEAMGABGZACGZEL
     BCHAMIPNQOABIACIJK $.
-
-  $( Lukasiewicz's shortest axiom for equivalential calculus.  Storrs McCall,
-     ed., _Polish Logic 1920-1939_ (Oxford, 1967), p. 96.  (Contributed by NM,
-     10-Jan-2005.) $)
-  biluk $p |- ( ( ph <-> ps ) <-> ( ( ch <-> ps ) <-> ( ph <-> ch ) ) ) $=
-    ( wb bicom bibi1i biass bitri mpbi bitr4i ) ABDZCBACDZDZDZCBDLDKCDZMDKNDOBA
-    DZCDMKPCABEFBACGHKCMGICBLGJ $.
 
   $( Disjunction distributes over the biconditional.  Theorem *5.7 of
      [WhiteheadRussell] p. 125.  This theorem is similar to ~ orbidi .
@@ -6726,14 +6623,6 @@ $)
                -> ( ch <-> ph ) ) $=
     ( wi wa wb simpr ancr impbid2 bibi2d biimpa ) ABDZCBAEZFCAFLMACLMABAGABHIJK
     $.
-
-  $( The disjunction of the four possible combinations of two wffs and their
-     negations is always true.  (Contributed by David Abernethy,
-     28-Jan-2014.) $)
-  4exmid $p |- ( ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) )
-              \/ ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
-    ( wb wn wo wa exmid dfbi3 xor orbi12i mpbi ) ABCZLDZEABFADZBDZFEZAOFBNFEZEL
-    GLPMQABHABIJK $.
 
   ${
     ccase.1 $e |- ( ( ph /\ ps ) -> ta ) $.
@@ -10118,11 +10007,6 @@ $)
   modal-5 $p |- ( -. A. x -. ph -> A. x -. A. x -. ph ) $=
     ( wn hbn1 ) ACBD $.
 
-  $( The analog in our "pure" predicate calculus of the Brouwer axiom (B) of
-     modal logic S5.  (Contributed by NM, 5-Oct-2005.) $)
-  modal-b $p |- ( ph -> A. x -. A. x -. ph ) $=
-    ( wn wal ax6o con4i ) ACZBDCBDAGBEF $.
-
   ${
     19.3.1 $e |- ( ph -> A. x ph ) $.
     $( A wff may be quantified with a variable not free in it.  Theorem 19.3 of
@@ -10724,16 +10608,6 @@ $)
      specifically studying the latter's properties.  (Contributed by NM,
      5-Aug-1993.) $)
   ax-9o $a |- ( A. x ( x = y -> A. x ph ) -> ph ) $.
-
-  $( Rederivation of axiom ~ ax-9 from the orginal version, ~ ax-9o .  See
-     ~ ax9o for the derivation of ~ ax-9o from ~ ax-9 .  Lemma L18 in [Megill]
-     p. 446 (p. 14 of the preprint).
-
-     This theorem should not be referenced in any proof.  Instead, use ~ ax-9
-     above so that uses of ~ ax-9 can be more easily identified.  (Contributed
-     by NM, 5-Aug-1993.) $)
-  ax9 $p |- -. A. x -. x = y $=
-    ( weq wn wal wi ax-9o modal-b mpg ) ABCZJDAEDZAEFKAKABGJAHI $.
 
   ${
     $d x y $.
@@ -14353,21 +14227,6 @@ $)
   pm4.53 $p |- ( -. ( ph /\ -. ps ) <-> ( -. ph \/ ps ) ) $=
     ( wn wo wa pm4.52 con2bii bicomi ) ACBDZABCEZCJIABFGH $.
 
-  $( Theorem *4.54 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
-  pm4.54 $p |- ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) $=
-    ( wn wa wi wo df-an pm4.66 xchbinx ) ACZBDJBCZEAKFJBGABHI $.
-
-  $( Obsolete proof of ~ pm4.54 as of 28-Sep-2014.  (Contributed by NM,
-     3-Jan-2005.)  (Revised by NM, 5-Nov-2012.) $)
-  pm4.54OLD $p |- ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) $=
-    ( wn wa wi wo pm4.67 pm4.66 notbii bitr3i ) ACZBDKBCZEZCALFZCABGMNABHIJ $.
-
-  $( Theorem *4.55 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.55 $p |- ( -. ( -. ph /\ ps ) <-> ( ph \/ -. ps ) ) $=
-    ( wn wo wa pm4.54 con2bii bicomi ) ABCDZACBEZCJIABFGH $.
-
   $( Disjunction in terms of conjunction (DeMorgan's law).  Compare Theorem
      *4.57 of [WhiteheadRussell] p. 120.  As an equivalence, this does not hold
      intuitionistically, but it would be possible to prove the forward
@@ -14386,18 +14245,6 @@ $)
      3-Jan-2005.) $)
   pm4.57 $p |- ( -. ( -. ph /\ -. ps ) <-> ( ph \/ ps ) ) $=
     ( wo wn wa oran bicomi ) ABCADBDEDABFG $.
-
-  $( Triple conjunction expressed in terms of triple disjunction.  (Contributed
-     by Jeff Hankins, 15-Aug-2009.) $)
-  3anor $p |- ( ( ph /\ ps /\ ch ) <-> -. ( -. ph \/ -. ps \/ -. ch ) ) $=
-    ( w3a wa wn w3o df-3an wo anor ianor orbi1i xchbinx df-3or xchbinxr bitri )
-    ABCDABEZCEZAFZBFZCFZGZFABCHRSTIZUAIZUBRQFZUAIUDQCJUEUCUAABKLMSTUANOP $.
-
-  $( Negated triple conjunction expressed in terms of triple disjunction.
-     (Contributed by Jeff Hankins, 15-Aug-2009.)  (Proof shortened by Andrew
-     Salmon, 13-May-2011.) $)
-  3ianor $p |- ( -. ( ph /\ ps /\ ch ) <-> ( -. ph \/ -. ps \/ -. ch ) ) $=
-    ( wn w3o w3a 3anor con2bii bicomi ) ADBDCDEZABCFZDKJABCGHI $.
 
   $( Theorem *3.12 of [WhiteheadRussell] p. 111.  (Contributed by NM,
      3-Jan-2005.) $)
@@ -14532,6 +14379,190 @@ $)
      _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
   qexmid $p |- E. x ( ph -> A. x ph ) $=
     ( wal 19.8a 19.35ri ) AABCZBFBDE $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Relationships between connectives (classical)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+In classical logic, the predicate logic connectives are connected with
+each other by theorems such as ~ oran or ~ imor . Intuitionistic logic
+has some such connections but they are fewer and some of the ones which
+are biconditionals in classical logic only hold in one direction in
+intuitionistic logic.
+
+Here we collect a number of theorems related to such relationships
+whose current proofs depend on ~ ax-3 . Many of them do not hold
+intuitionistically.
+
+$)
+
+  $( Theorem *4.64 of [WhiteheadRussell] p. 120.  Only the reverse direction
+     holds intuitionistically.  (Contributed by NM, 3-Jan-2005.) $)
+  pm4.64 $p |- ( ( -. ph -> ps ) <-> ( ph \/ ps ) ) $=
+    ( wo wn wi df-or bicomi ) ABCADBEABFG $.
+
+  $( Theorem *4.66 of [WhiteheadRussell] p. 120.  (Contributed by NM,
+     3-Jan-2005.) $)
+  pm4.66 $p |- ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) $=
+    ( wn pm4.64 ) ABCD $.
+
+  $( Theorem *4.54 of [WhiteheadRussell] p. 120.  (Contributed by NM,
+     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
+  pm4.54 $p |- ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) $=
+    ( wn wa wi wo df-an pm4.66 xchbinx ) ACZBDJBCZEAKFJBGABHI $.
+
+  $( Obsolete proof of ~ pm4.54 as of 28-Sep-2014.  (Contributed by NM,
+     3-Jan-2005.)  (Revised by NM, 5-Nov-2012.) $)
+  pm4.54OLD $p |- ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) $=
+    ( wn wa wi wo pm4.67 pm4.66 notbii bitr3i ) ACZBDKBCZEZCALFZCABGMNABHIJ $.
+
+  $( Theorem *4.55 of [WhiteheadRussell] p. 120.  (Contributed by NM,
+     3-Jan-2005.) $)
+  pm4.55 $p |- ( -. ( -. ph /\ ps ) <-> ( ph \/ -. ps ) ) $=
+    ( wn wo wa pm4.54 con2bii bicomi ) ABCDZACBEZCJIABFGH $.
+
+  $( Logical 'or' expressed in terms of implication only.  Theorem *5.25 of
+     [WhiteheadRussell] p. 124.  (Contributed by NM, 12-Aug-2004.)  (Proof
+     shortened by Wolf Lammen, 20-Oct-2012.) $)
+  dfor2 $p |- ( ( ph \/ ps ) <-> ( ( ph -> ps ) -> ps ) ) $=
+    ( wo wi pm2.62 pm2.68 impbii ) ABCABDBDABEABFG $.
+
+  $( Simplify an implication between implications.  (Contributed by Paul
+     Chapman, 17-Nov-2012.)  (Proof shortened by Wolf Lammen, 3-Apr-2013.) $)
+  imimorb $p |- ( ( ( ps -> ch ) -> ( ph -> ch ) ) <->
+                  ( ph -> ( ps \/ ch ) ) ) $=
+    ( wi wo bi2.04 dfor2 imbi2i bitr4i ) BCDZACDDAJCDZDABCEZDJACFLKABCGHI $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                  Exclusive or and related theorems (classical)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+In classical logic, we can talk about the exclusive-or of ` ph ` and ` ps ` ,
+which can be represented by ` -. ( ph <-> ps ) ` or
+` ( ph \/ ps ) /\ ( -. ph \/ -. ps ) `
+(which are equivalent in classical logic but not intuitionistic logic).
+We do not (yet at least) have an intuitionistic theory of exclusive or
+(or, relatedly at least in concept, existential uniqueness a la ~ df-eu ),
+but here we collect theorems which depend on ~ ax-3 for their proof and many
+of which probably do not hold intuitionistically.
+
+There are also a variety of related results about pairs of propositions
+which are both true, both false, one
+true and one false, and the like, which are at least in general terms
+also part of this exclusive-or family. Many are expressed in terms
+of the biconditional and negation.
+$)
+
+  $( Two ways to express "exclusive or."  Theorem *5.22 of [WhiteheadRussell]
+     p. 124.  (Contributed by NM, 3-Jan-2005.)  (Proof shortened by Wolf
+     Lammen, 22-Jan-2013.) $)
+  xor $p |- ( -. ( ph <-> ps ) <->
+                ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
+    ( wn wa wo wb wi iman anbi12i dfbi2 ioran 3bitr4ri con1bii ) ABCDZBACDZEZAB
+    FZABGZBAGZDNCZOCZDQPCRTSUAABHBAHIABJNOKLM $.
+
+  $( Theorem *5.18 of [WhiteheadRussell] p. 124.  This theorem says that
+     logical equivalence is the same as negated "exclusive-or."  (Contributed
+     by NM, 28-Jun-2002.)  (Proof shortened by Andrew Salmon, 20-Jun-2011.)
+     (Proof shortened by Wolf Lammen, 15-Oct-2013.) $)
+  pm5.18 $p |- ( ( ph <-> ps ) <-> -. ( ph <-> -. ps ) ) $=
+    ( wb wn pm5.501 con1bid bitr2d nbn2 pm2.61i ) AABCZABDZCZDZCAMBJABLAKEFABEG
+    ADZMKJNKLAKHFABHGI $.
+
+  $( An alternate definition of the biconditional.  Theorem *5.23 of
+     [WhiteheadRussell] p. 124.  (Contributed by NM, 27-Jun-2002.)  (Proof
+     shortened by Wolf Lammen, 3-Nov-2013.) $)
+  dfbi3 $p |- ( ( ph <-> ps ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) ) $=
+    ( wn wb wa wo xor pm5.18 notnot anbi2i ancom orbi12i 3bitr4i ) ABCZDCANCZEZ
+    NACZEZFABDABEZQNEZFANGABHSPTRBOABIJQNKLM $.
+
+  $( Theorem *5.24 of [WhiteheadRussell] p. 124.  (Contributed by NM,
+     3-Jan-2005.) $)
+  pm5.24 $p |- ( -. ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) <->
+                ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
+    ( wb wn wa wo xor dfbi3 xchnxbi ) ABCABDZEBADZEFABEKJEFABGABHI $.
+
+  $( Two ways to express "exclusive or."  (Contributed by NM, 1-Jan-2006.) $)
+  xor3 $p |- ( -. ( ph <-> ps ) <-> ( ph <-> -. ps ) ) $=
+    ( wn wb pm5.18 con2bii bicomi ) ABCDZABDZCIHABEFG $.
+
+  $( Theorem *5.15 of [WhiteheadRussell] p. 124.  (Contributed by NM,
+     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 15-Oct-2013.) $)
+  pm5.15 $p |- ( ( ph <-> ps ) \/ ( ph <-> -. ps ) ) $=
+    ( wb wn xor3 biimpi orri ) ABCZABDCZHDIABEFG $.
+
+  $( Two ways to express "exclusive or."  (Contributed by NM, 3-Jan-2005.)
+     (Proof shortened by Wolf Lammen, 24-Jan-2013.) $)
+  xor2 $p |- ( -. ( ph <-> ps ) <-> ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) ) $=
+    ( wb wn wo wa xor3 pm5.17 bitr4i ) ABCDABDCABEABFDFABGABHI $.
+
+  $( Move negation outside of biconditional.  Compare Theorem *5.18 of
+     [WhiteheadRussell] p. 124.  (Contributed by NM, 27-Jun-2002.)  (Proof
+     shortened by Wolf Lammen, 20-Sep-2013.) $)
+  nbbn $p |- ( ( -. ph <-> ps ) <-> -. ( ph <-> ps ) ) $=
+    ( wb wn xor3 con2bi bicom 3bitrri ) ABCDABDCBADZCIBCABEABFBIGH $.
+
+  $( Negation inferred from embedded conjunct.  (Contributed by NM,
+     20-Aug-1993.)  (Proof shortened by Wolf Lammen, 25-Nov-2012.) $)
+  pclem6 $p |- ( ( ph <-> ( ps /\ -. ph ) ) -> -. ps ) $=
+    ( wn wa wb ibar nbbn sylib con2i ) BABACZDZEZBJKELCBJFAKGHI $.
+
+  $( Associative law for the biconditional.  An axiom of system DS in Vladimir
+     Lifschitz, "On calculational proofs", Annals of Pure and Applied Logic,
+     113:207-224, 2002,
+     ~ http://www.cs.utexas.edu/users/ai-lab/pub-view.php?PubID=26805 .
+     Interestingly, this law was not included in _Principia Mathematica_ but
+     was apparently first noted by Jan Lukasiewicz circa 1923.  (Contributed by
+     NM, 8-Jan-2005.)  (Proof shortened by Juha Arpiainen, 19-Jan-2006.)
+     (Proof shortened by Wolf Lammen, 21-Sep-2013.) $)
+  biass $p |- ( ( ( ph <-> ps ) <-> ch ) <-> ( ph <-> ( ps <-> ch ) ) ) $=
+    ( wb pm5.501 bibi1d bitr3d wn nbbn nbn2 syl5bbr pm2.61i ) AABDZCDZABCDZDZDA
+    ONPABMCABEFAOEGAHZOHZNPRBHZCDQNBCIQSMCABJFKAOJGL $.
+
+  $( Lukasiewicz's shortest axiom for equivalential calculus.  Storrs McCall,
+     ed., _Polish Logic 1920-1939_ (Oxford, 1967), p. 96.  (Contributed by NM,
+     10-Jan-2005.) $)
+  biluk $p |- ( ( ph <-> ps ) <-> ( ( ch <-> ps ) <-> ( ph <-> ch ) ) ) $=
+    ( wb bicom bibi1i biass bitri mpbi bitr4i ) ABDZCBACDZDZDZCBDLDKCDZMDKNDOBA
+    DZCDMKPCABEFBACGHKCMGICBLGJ $.
+
+  $( Conjunction distributes over exclusive-or, using ` -. ( ph <-> ps ) ` to
+     express exclusive-or.  This is one way to interpret the distributive law
+     of multiplication over addition in modulo 2 arithmetic.  (Contributed by
+     NM, 3-Oct-2008.) $)
+  xordi $p |- ( ( ph /\ -. ( ps <-> ch ) ) <->
+                -. ( ( ph /\ ps ) <-> ( ph /\ ch ) ) ) $=
+    ( wb wn wa wi annim pm5.32 xchbinx ) ABCDZEFAKGABFACFDAKHABCIJ $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                     Predicate logic axioms (classical)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Theorems concerning which predicate logic axioms can be deduced from other
+axioms, or the metalogic of predicate logic axioms,
+which rely on classical logic (that is, ~ ax-3 ). This section may perhaps
+shed some light on the axioms we are using, even though the independence
+or metalogic of the axioms may be quite different in the intuitionistic
+case compared with the classical case.
+$)
+
+  $( The analog in our "pure" predicate calculus of the Brouwer axiom (B) of
+     modal logic S5.  (Contributed by NM, 5-Oct-2005.) $)
+  modal-b $p |- ( ph -> A. x -. A. x -. ph ) $=
+    ( wn wal ax6o con4i ) ACZBDCBDAGBEF $.
+
+  $( Rederivation of axiom ~ ax-9 from the orginal version, ~ ax-9o .  See
+     ~ ax9o for the derivation of ~ ax-9o from ~ ax-9 .  Lemma L18 in [Megill]
+     p. 446 (p. 14 of the preprint).
+
+     This theorem should not be referenced in any proof.  Instead, use ~ ax-9
+     above so that uses of ~ ax-9 can be more easily identified.  (Contributed
+     by NM, 5-Aug-1993.) $)
+  ax9 $p |- -. A. x -. x = y $=
+    ( weq wn wal wi ax-9o modal-b mpg ) ABCZJDAEDZAEFKAKABGJAHI $.
 
   ${
     $d x y $.  $d y ph $.
