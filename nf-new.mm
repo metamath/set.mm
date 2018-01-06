@@ -9159,84 +9159,6 @@ $)
   $}
 
 
-  $( Equality theorem for class difference.  (Contributed by NM, 10-Feb-1997.)
-     (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
-  difeq1 $p |- ( A = B -> ( A \ C ) = ( B \ C ) ) $=
-    ( wceq ccompl cnin cdif nineq1 compleqd cin df-dif df-in eqtri 3eqtr4g ) AB
-    DZACEZFZEZBPFZEZACGZBCGZOQSABPHIUAAPJRACKAPLMUBBPJTBCKBPLMN $.
-
-  $( Equality theorem for class difference.  (Contributed by NM, 10-Feb-1997.)
-     (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
-  difeq2 $p |- ( A = B -> ( C \ A ) = ( C \ B ) ) $=
-    ( wceq ccompl cnin cdif compleq nineq2d compleqd df-dif df-in eqtri 3eqtr4g
-    cin ) ABDZCAEZFZEZCBEZFZEZCAGZCBGZPRUAPQTCABHIJUCCQOSCAKCQLMUDCTOUBCBKCTLMN
-    $.
-
-
-  $( Equality law for intersection.  (Contributed by ?who?, 11-Jan-2015.) $)
-  symdifeq1 $p |- ( A = B -> ( A (+) C ) = ( B (+) C ) ) $=
-    ( wceq cdif ccompl cnin difeq1 compleqd difeq2 nineq12d cun df-symdif df-un
-    csymdif eqtri 3eqtr4g ) ABDZACEZFZCAEZFZGZBCEZFZCBEZFZGZACOZBCOZRTUEUBUGRSU
-    DABCHIRUAUFABCJIKUISUALUCACMSUANPUJUDUFLUHBCMUDUFNPQ $.
-    $( [11-Jan-2015] $)
-
-  $( Equality law for intersection.  (Contributed by ?who?, 11-Jan-2015.) $)
-  symdifeq2 $p |- ( A = B -> ( C (+) A ) = ( C (+) B ) ) $=
-    ( wceq cdif ccompl cnin difeq2 compleqd difeq1 nineq12d cun df-symdif df-un
-    csymdif eqtri 3eqtr4g ) ABDZCAEZFZACEZFZGZCBEZFZBCEZFZGZCAOZCBOZRTUEUBUGRSU
-    DABCHIRUAUFABCJIKUISUALUCCAMSUANPUJUDUFLUHCBMUDUFNPQ $.
-    $( [11-Jan-2015] $)
-
-  $( Equality law for intersection.  (Contributed by ?who?, 11-Jan-2015.) $)
-  symdifeq12 $p |- ( ( A = B /\ C = D ) -> ( A (+) C ) = ( B (+) D ) ) $=
-    ( wceq csymdif symdifeq1 symdifeq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
-    $( [11-Jan-2015] $)
-
-  ${
-    symdifeqi.1 $e |- A = B $.
-    $( Equality inference for symmetric difference.  (Contributed by ?who?,
-       11-Jan-2015.) $)
-    symdifeq1i $p |- ( A (+) C ) = ( B (+) C ) $=
-      ( wceq csymdif symdifeq1 ax-mp ) ABEACFBCFEDABCGH $.
-      $( [11-Jan-2015] $)
-
-    $( Equality inference for symmetric difference.  (Contributed by ?who?,
-       11-Jan-2015.) $)
-    symdifeq2i $p |- ( C (+) A ) = ( C (+) B ) $=
-      ( wceq csymdif symdifeq2 ax-mp ) ABECAFCBFEDABCGH $.
-      $( [11-Jan-2015] $)
-
-    symdifeq12i.2 $e |- C = D $.
-    $( Equality inference for symmetric difference.  (Contributed by ?who?,
-       11-Jan-2015.) $)
-    symdifeq12i $p |- ( A (+) C ) = ( B (+) D ) $=
-      ( wceq csymdif symdifeq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
-      $( [11-Jan-2015] $)
-  $}
-
-  ${
-    symdifeqd.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for symmetric difference.  (Contributed by ?who?,
-       11-Jan-2015.) $)
-    symdifeq1d $p |- ( ph -> ( A (+) C ) = ( B (+) C ) ) $=
-      ( wceq csymdif symdifeq1 syl ) ABCFBDGCDGFEBCDHI $.
-      $( [11-Jan-2015] $)
-
-    $( Equality deduction for symmetric difference.  (Contributed by ?who?,
-       11-Jan-2015.) $)
-    symdifeq2d $p |- ( ph -> ( C (+) A ) = ( C (+) B ) ) $=
-      ( wceq csymdif symdifeq2 syl ) ABCFDBGDCGFEBCDHI $.
-      $( [11-Jan-2015] $)
-
-    symdifeq12d.2 $e |- ( ph -> C = D ) $.
-    $( Equality inference for symmetric difference.  (Contributed by ?who?,
-       11-Jan-2015.) $)
-    symdifeq12d $p |- ( ph -> ( A (+) C ) = ( B (+) D ) ) $=
-      ( wceq csymdif symdifeq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
-      $( [11-Jan-2015] $)
-  $}
-
-
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Subclasses and subsets
@@ -10214,6 +10136,21 @@ $(
         The difference, union, and intersection of two classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Equality theorem for class difference.  (Contributed by NM,
+       10-Feb-1997.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    difeq1 $p |- ( A = B -> ( A \ C ) = ( B \ C ) ) $=
+      ( vx wceq cv wcel wn crab cdif rabeq dfdif2 3eqtr4g ) ABEDFCGHZDAINDBIACJ
+      BCJNDABKDACLDBCLM $.
+
+    $( Equality theorem for class difference.  (Contributed by NM,
+       10-Feb-1997.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    difeq2 $p |- ( A = B -> ( C \ A ) = ( C \ B ) ) $=
+      ( vx wceq cv wcel wn crab cdif eleq2 notbid rabbidv dfdif2 3eqtr4g ) ABEZ
+      DFZAGZHZDCIQBGZHZDCICAJCBJPSUADCPRTABQKLMDCANDCBNO $.
+  $}
 
   $( Equality theorem for class difference.  (Contributed by FL,
      31-Aug-2009.) $)
@@ -14119,13 +14056,13 @@ $)
 
   ${
     sneqb.1 $e |- A e. _V $.
-    $( Biconditional equality for singletons.  (Contributed by SF,
-       14-Jan-2015.) $)
+    $( Biconditional equality for singletons. 
+       (Contributed by SF, 14-Jan-2015.) $)
     sneqb $p |- ( { A } = { B } <-> A = B ) $=
       ( cvv wcel csn wceq wb sneqbg ax-mp ) ADEAFBFGABGHCABDIJ $.
       $( [14-Jan-2015] $)
   $}
-
+  
   ${
     $d x A $.
     $( The singleton of a class is a subset of its power class.  (Contributed
@@ -16310,9 +16247,11 @@ $)
     ( ccompl cun cnin cvv df-un nincompl eqtri ) AABZCIIBDEAIFIGH $.
 
 
+
+
   ${
     $d A x $.  $d B x $.  $d C x $.
-    $( Condition for subset when ` A ` is already known to be a subset.
+    $( Condition for subset when ` A ` is already known to be a subset. 
        (Contributed by ?who?, 13-Jan-2015.) $)
     ssofss $p |- ( A C_ C -> ( A C_ B <-> A. x e. C ( x e. A -> x e. B ) ) ) $=
       ( wss cv wcel wi wral ccompl wa vex elcompl ssel con3d syl5bi imp pm2.21d
@@ -16326,7 +16265,8 @@ $)
   ${
     $d A x $.  $d B x $.  $d C x $.
     $( When ` A ` and ` B ` are subsets of ` C ` , equality depends only on the
-       elements of ` C ` .  (Contributed by ?who?, 13-Jan-2015.) $)
+       elements of ` C ` . 
+       (Contributed by ?who?, 13-Jan-2015.) $)
     ssofeq $p |- ( ( A C_ C /\ B C_ C ) ->
         ( A = B <-> A. x e. C ( x e. A <-> x e. B ) ) ) $=
       ( wss wa cv wcel wi wral wceq wb ssofss bi2anan9 eqss ralbiim 3bitr4g ) B
@@ -16334,6 +16274,7 @@ $)
       NBCOUCUDADPQ $.
       $( [13-Jan-2015] $)
   $}
+
 
 
 $(
@@ -16847,28 +16788,28 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( A singleton is a subset of an unordered pair.  (Contributed by ?who?,
-     12-Jan-2015.) $)
+  $( A singleton is a subset of an unordered pair. 
+     (Contributed by ?who?, 12-Jan-2015.) $)
   snprss1 $p |- { A } C_ { A , B } $=
     ( csn cun cpr ssun1 df-pr sseqtr4i ) ACZIBCZDABEIJFABGH $.
     $( [12-Jan-2015] $)
 
-  $( A singleton is a subset of an unordered pair.  (Contributed by ?who?,
-     12-Jan-2015.) $)
+  $( A singleton is a subset of an unordered pair. 
+     (Contributed by ?who?, 12-Jan-2015.) $)
   snprss2 $p |- { A } C_ { B , A } $=
     ( csn cpr snprss1 prcom sseqtri ) ACABDBADABEABFG $.
     $( [12-Jan-2015] $)
 
 
-  $( An unordered pair of a proper class.  (Contributed by ?who?,
-     12-Jan-2015.) $)
+  $( An unordered pair of a proper class. 
+     (Contributed by ?who?, 12-Jan-2015.) $)
   prprc2 $p |- ( -. A e. _V -> { B , A } = { B } ) $=
     ( cvv wcel wn cpr csn cun df-pr wceq snprc biimpi uneq2d un0 syl6eq syl5eq
     c0 ) ACDEZBAFBGZAGZHZSBAIRUASQHSRTQSRTQJAKLMSNOP $.
     $( [12-Jan-2015] $)
 
-  $( An unordered pair of a proper class.  (Contributed by ?who?,
-     12-Jan-2015.) $)
+  $( An unordered pair of a proper class. 
+     (Contributed by ?who?, 12-Jan-2015.) $)
   prprc1 $p |- ( -. A e. _V -> { A , B } = { B } ) $=
     ( cvv wcel wn cpr csn prcom prprc2 syl5eq ) ACDEABFBAFBGABHABIJ $.
     $( [12-Jan-2015] $)
@@ -16878,8 +16819,8 @@ $)
     preqr1.1 $e |- A e. _V $.
     preqr1.2 $e |- B e. _V $.
     $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
-       the same second element, the first elements are equal.  (Contributed by
-       ?who?, 18-Oct-1995.) $)
+       the same second element, the first elements are equal. 
+       (Contributed by ?who?, 18-Oct-1995.) $)
     preqr1 $p |- ( { A , C } = { B , C } -> A = B ) $=
       ( cpr wceq wcel wo prid1 eleq2 mpbii elpr sylib mpbiri eqcom eqeq2 oplem1
       ) ACFZBCFZGZABGZACGZBAGZBCGZUAATHZUBUCIUAASHUFACDJSTAKLABCDMNUABSHZUDUEIU
@@ -16891,8 +16832,8 @@ $)
     preqr2.1 $e |- A e. _V $.
     preqr2.2 $e |- B e. _V $.
     $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
-       the same first element, the second elements are equal.  (Contributed by
-       ?who?, 5-Aug-1993.) $)
+       the same first element, the second elements are equal. 
+       (Contributed by ?who?, 5-Aug-1993.) $)
     preqr2 $p |- ( { C , A } = { C , B } -> A = B ) $=
       ( cpr wceq prcom eqeq12i preqr1 sylbi ) CAFZCBFZGACFZBCFZGABGLNMOCAHCBHIA
       BCDEJK $.
@@ -16902,8 +16843,8 @@ $)
   ${
     $d A x y $.  $d B x y $.  $d C x y $.
     $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
-       the same first element, the second elements are equal.  (Contributed by
-       ?who?, 12-Jan-2015.) $)
+       the same first element, the second elements are equal. 
+       (Contributed by ?who?, 12-Jan-2015.) $)
     preqr2g $p |- ( ( A e. V /\ B e. W ) ->
            ( { C , A } = { C , B } -> A = B ) ) $=
       ( vx vy cv cpr wceq weq wi preq2 eqeq1d eqeq1 imbi12d eqeq2d eqeq2 preqr2
@@ -16919,8 +16860,8 @@ $)
     preq12b.2 $e |- B e. _V $.
     preq12b.3 $e |- C e. _V $.
     preq12b.4 $e |- D e. _V $.
-    $( Equality relationship for two unordered pairs.  (Contributed by ?who?,
-       17-Oct-1996.) $)
+    $( Equality relationship for two unordered pairs. 
+       (Contributed by ?who?, 17-Oct-1996.) $)
     preq12b $p |- ( { A , B } = { C , D } <->
                    ( ( A = C /\ B = D ) \/ ( A = D /\ B = C ) ) ) $=
       ( cpr wceq wa wo wcel preq1 eqeq1d preqr2 syl6bi com12 ancld prcom eqeq2i
@@ -16960,16 +16901,16 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Membership in a Kuratowski ordered pair.  (Contributed by SF,
-     12-Jan-2015.) $)
+  $( Membership in a Kuratowski ordered pair. 
+     (Contributed by SF, 12-Jan-2015.) $)
   elopk $p |- ( A e. << B , C >> <-> ( A = { B } \/ A = { B , C } ) ) $=
     ( copk wcel csn cpr wceq wo df-opk eleq2i snex prex elpr2 bitri ) ABCDZEABF
     ZBCGZGZEAQHARHIPSABCJKAQRBLBCMNO $.
     $( [12-Jan-2015] $)
 
   $( Equality of the first member of a Kuratowski ordered pair, which holds
-     regardless of the sethood of the second members.  (Contributed by SF,
-     12-Jan-2015.) $)
+     regardless of the sethood of the second members. 
+     (Contributed by SF, 12-Jan-2015.) $)
   opkth1g $p |- ( ( A e. V /\ << A , B >> = << C , D >> ) -> A = C ) $=
     ( wcel copk wceq wa csn cpr wo eqid orci elopk mpbir eleq2 snidg syl5ibrcom
     biimprd prid1g jaod syl5bi sylan9r mpi wb elsncg adantr mpbid ) AEFZABGZCDGZ
@@ -16978,7 +16919,7 @@ $)
     UAUOVDAQSUBUCUDUEUJUPUQUFUMACEUGUHUI $.
     $( [12-Jan-2015] $)
 
-  $( Two Kuratowski ordered pairs are equal iff their components are equal.
+  $( Two Kuratowski ordered pairs are equal iff their components are equal. 
      (Contributed by SF, 12-Jan-2015.) $)
   opkthg $p |- ( ( A e. V /\ B e. W /\ D e. T ) ->
     ( << A , B >> = << C , D >> <-> ( A = C /\ B = D ) ) ) $=
@@ -16994,7 +16935,8 @@ $)
     opkth.1 $e |- A e. _V $.
     opkth.2 $e |- B e. _V $.
     opkth.3 $e |- D e. _V $.
-    $( Two Kuratowski ordered pairs are equal iff their components are equal.
+    $( Two Kuratowski ordered pairs are equal iff their components are
+       equal. 
        (Contributed by SF, 12-Jan-2015.) $)
     opkth $p |- ( << A , B >> = << C , D >> <-> ( A = C /\ B = D ) ) $=
       ( cvv wcel copk wceq wa wb opkthg mp3an ) AHIBHIDHIABJCDJKACKBDKLMEFGABCD
@@ -17035,15 +16977,16 @@ $)
 
 
   $( Define the unit union of a class.  This operation is used implicitly in
-     both Holmes and Hailperin to complete their stratification algorithms,
-     although neither provide explicit notation for it.  See ~ eluni1 for
-     membership condition. $)
+     both Holmes and Hailperin to complete their stratification
+     algorithms, although neither provide explicit notation for it.  See
+     ~ eluni1 for membership condition. $)
   df-uni1 $a |- U.1 A = U. ( A i^i 1c ) $.
 
 
   ${
     $d A x y $.
-    $( Membership in cardinal one.  (Contributed by SF, 12-Jan-2015.) $)
+    $( Membership in cardinal one. 
+       (Contributed by SF, 12-Jan-2015.) $)
     el1c $p |- ( A e. 1c <-> E. x A = { x } ) $=
       ( vy c1c wcel cvv cv csn wceq elex snex eleq1 mpbiri exlimiv eqeq1 exbidv
       wex df-1c elab2g pm5.21nii ) BDEBFEZBAGZHZIZAQZBDJUDUAAUDUAUCFEUBKBUCFLMN
@@ -17054,8 +16997,8 @@ $)
   ${
     $d A x $.
     snel1c.1 $e |- A e. _V $.
-    $( A singleton is an element of cardinal one.  (Contributed by SF,
-       13-Jan-2015.) $)
+    $( A singleton is an element of cardinal one. 
+       (Contributed by SF, 13-Jan-2015.) $)
     snel1c $p |- { A } e. 1c $=
       ( vx csn c1c wcel cv wceq wex eqid sneq eqeq2d spcev ax-mp el1c mpbir )
       ADZEFQCGZDZHZCIZQQHZUAQJTUBCABRAHSQQRAKLMNCQOP $.
@@ -17064,8 +17007,8 @@ $)
 
   ${
     $d A x $.
-    $( A singleton is an element of cardinal one.  (Contributed by SF,
-       30-Jan-2015.) $)
+    $( A singleton is an element of cardinal one. 
+       (Contributed by SF, 30-Jan-2015.) $)
     snel1cg $p |- ( A e. V -> { A } e. 1c ) $=
       ( vx cv csn c1c wcel wceq sneq eleq1d vex snel1c vtoclg ) CDZEZFGAEZFGCAB
       NAHOPFNAIJNCKLM $.
@@ -17074,7 +17017,8 @@ $)
 
   ${
     $d x y z w $.
-    $( Cardinal one is a set.  (Contributed by SF, 12-Jan-2015.) $)
+    $( Cardinal one is a set. 
+       (Contributed by SF, 12-Jan-2015.) $)
     1cex $p |- 1c e. _V $=
       ( vy vx vw vz c1c cvv wcel wel weq wb wal wex ax-1c cv isset bitri bibi2i
       wceq albii exbii csn cab df-1c eqeq2i abeq2 dfcleq df-sn abeq2i mpbir ) E
@@ -17084,8 +17028,8 @@ $)
       $( [12-Jan-2015] $)
   $}
 
-  $( Equality theorem for unit power class.  (Contributed by SF,
-     12-Jan-2015.) $)
+  $( Equality theorem for unit power class. 
+     (Contributed by SF, 12-Jan-2015.) $)
   pw1eq $p |- ( A = B -> ~P1 A = ~P1 B ) $=
     ( wceq cpw c1c cin cpw1 pweq ineq1d df-pw1 3eqtr4g ) ABCZADZEFBDZEFAGBGLMNE
     ABHIAJBJK $.
@@ -17093,7 +17037,8 @@ $)
 
   ${
     $d A x y z w $.  $d B x y z w $.
-    $( Membership in a unit power class.  (Contributed by SF, 13-Jan-2015.) $)
+    $( Membership in a unit power class. 
+       (Contributed by SF, 13-Jan-2015.) $)
     elpw1 $p |- ( A e. ~P1 B <-> E. x e. B A = { x } ) $=
       ( cpw1 wcel cpw c1c wa cv csn wceq wrex cin df-pw1 eleq2i elin bitri el1c
       wex bitr4i anbi2i 19.42v eleq1 wss snex elpw vex snss syl6bb exbii df-rex
@@ -17102,8 +17047,8 @@ $)
       VGBUTUOUCVIUTCUDVGUTCUSUEUFUSCAUGUHTUIULUJVAACUKTQQ $.
       $( [13-Jan-2015] $)
 
-    $( Membership in a unit power class applied twice.  (Contributed by SF,
-       15-Jan-2015.) $)
+    $( Membership in a unit power class applied twice. 
+       (Contributed by SF, 15-Jan-2015.) $)
     elpw12 $p |- ( A e. ~P1 ~P1 B <-> E. x e. B A = { { x } } ) $=
       ( vy cpw1 wcel cv csn wceq wrex wa wex elpw1 anbi1i r19.41v bitr4i df-rex
       exbii rexcom4 3bitr4i snex sneq eqeq2d ceqsexv rexbii 3bitri ) BCEZEFBDGZ
@@ -17115,8 +17060,8 @@ $)
 
   ${
     $d A x $.  $d B x $.
-    $( Membership of a singleton in a unit power class.  (Contributed by SF,
-       13-Jan-2015.) $)
+    $( Membership of a singleton in a unit power class. 
+       (Contributed by SF, 13-Jan-2015.) $)
     snelpw1 $p |- ( { A } e. ~P1 B <-> A e. B ) $=
       ( vx csn cv wceq wrex cpw1 wcel eqcom vex sneqb bitri rexbii elpw1 risset
       3bitr4i ) ADZCEZDZFZCBGSAFZCBGRBHIABIUAUBCBUATRFUBRTJSACKLMNCRBOCABPQ $.
@@ -17125,7 +17070,8 @@ $)
 
   ${
     $d A x y $.
-    $( Membership in ` ~P1 1c ` (Contributed by SF, 13-Jan-2015.) $)
+    $( Membership in ` ~P1 1c ` 
+       (Contributed by SF, 13-Jan-2015.) $)
     elpw11c $p |- ( A e. ~P1 1c <-> E. x A = { { x } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wrex wex elpw1 df-rex anbi1i 19.41v bitr4i
       wa el1c exbii bitri excom snex sneq eqeq2d ceqsexv 3bitri ) BDEFBCGZHZIZC
@@ -17134,7 +17080,8 @@ $)
       F $.
       $( [13-Jan-2015] $)
 
-    $( Membership in ` ~P1 ~P1 1c ` (Contributed by SF, 13-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 1c ` 
+       (Contributed by SF, 13-Jan-2015.) $)
     elpw121c $p |- ( A e. ~P1 ~P1 1c <-> E. x A = { { { x } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wrex elpw1 wa df-rex elpw11c anbi1i 19.41v
       wex bitr4i exbii bitri excom snex sneq eqeq2d ceqsexv ) BDEZEFBCGZHZIZCUF
@@ -17144,7 +17091,8 @@ $)
       $( [13-Jan-2015] $)
 
 
-    $( Membership in ` ~P1 ~P1 ~P1 1c ` (Contributed by SF, 14-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 14-Jan-2015.) $)
     elpw131c $p |- ( A e. ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { x } } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw121c anbi1i 19.41v
@@ -17155,8 +17103,8 @@ $)
       $( [14-Jan-2015] $)
 
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
-       14-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 14-Jan-2015.) $)
     elpw141c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { x } } } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw131c anbi1i 19.41v
@@ -17166,8 +17114,8 @@ $)
       GULUCUDUESTTT $.
       $( [14-Jan-2015] $)
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
-       14-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 14-Jan-2015.) $)
     elpw151c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { x } } } } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw141c anbi1i 19.41v
@@ -17177,8 +17125,8 @@ $)
       BUGULUCUDUESTTT $.
       $( [14-Jan-2015] $)
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
-       14-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 14-Jan-2015.) $)
     elpw161c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { x } } } } } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw151c anbi1i 19.41v
@@ -17189,8 +17137,8 @@ $)
       $( [14-Jan-2015] $)
 
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
-       15-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 15-Jan-2015.) $)
     elpw171c $p |- ( A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { x } } } } } } } } ) $=
       ( vy c1c cpw1 wcel cv csn wceq wex elpw1 wa df-rex elpw161c anbi1i 19.41v
@@ -17201,8 +17149,8 @@ $)
       $( [15-Jan-2015] $)
 
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by SF,
-       15-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 15-Jan-2015.) $)
     elpw181c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { { x } } } } } } } } } ) $=
@@ -17214,8 +17162,8 @@ $)
       $( [15-Jan-2015] $)
 
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` (Contributed by
-       SF, 24-Jan-2015.) $)
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
+       (Contributed by SF, 24-Jan-2015.) $)
     elpw191c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
                 E. x A = { { { { { { { { { { x } } } } } } } } } } ) $=
@@ -17226,7 +17174,7 @@ $)
       UBUPUHUMBUGULUCUDUESTTT $.
       $( [24-Jan-2015] $)
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c `
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
        (Contributed by SF, 24-Jan-2015.) $)
     elpw1101c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
@@ -17239,7 +17187,7 @@ $)
       $( [24-Jan-2015] $)
 
 
-    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c `
+    $( Membership in ` ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ` 
        (Contributed by SF, 24-Jan-2015.) $)
     elpw1111c $p |- (
      A e. ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c <->
@@ -17253,13 +17201,14 @@ $)
   $}
 
 
-  $( A unit power class is a subset of ` 1c ` .  (Contributed by SF,
-     22-Jan-2015.) $)
+  $( A unit power class is a subset of ` 1c ` . 
+     (Contributed by SF, 22-Jan-2015.) $)
   pw1ss1c $p |- ~P1 A C_ 1c $=
     ( cpw1 cpw c1c cin df-pw1 inss2 eqsstri ) ABACZDEDAFIDGH $.
     $( [22-Jan-2015] $)
 
-  $( The empty class is not a singleton.  (Contributed by SF, 22-Jan-2015.) $)
+  $( The empty class is not a singleton. 
+     (Contributed by SF, 22-Jan-2015.) $)
   0nel1c $p |- -. (/) e. 1c $=
     ( vx c0 c1c wcel cv csn wceq wex wn cvv vex snprc eqcom bitri con1bii mpbir
     nex el1c mtbir ) BCDBAEZFZGZAHUBAUBITJDZAKUCUBUCIUABGUBTLUABMNOPQABRS $.
@@ -17267,15 +17216,16 @@ $)
 
   $( Note that ` x ` is a dummy variable in the proof below. $)
   $( Compute the power set of the empty set.  Theorem 89 of [Suppes] p. 47.
-     (The proof was shortened by Andrew Salmon, 29-Jun-2011.)  (Contributed by
-     SF, 5-Aug-1993.)  (Revised by SF, 29-Jun-2011.) $)
+     (The proof was shortened by Andrew Salmon, 29-Jun-2011.) 
+     (Contributed by SF, 5-Aug-1993.) 
+     (Revised by SF, 29-Jun-2011.) $)
   pw0 $p |- ~P (/) = { (/) } $=
     ( vx cv c0 wss cab wceq cpw csn ss0b abbii df-pw df-sn 3eqtr4i ) ABZCDZAENC
     FZAECGCHOPANIJACKACLM $.
     $( [29-Jun-2011] $) $( [5-Aug-1993] $)
 
-  $( Compute the unit power class of ` (/) ` (Contributed by SF,
-     22-Jan-2015.) $)
+  $( Compute the unit power class of ` (/) ` 
+     (Contributed by SF, 22-Jan-2015.) $)
   pw10 $p |- ~P1 (/) = (/) $=
     ( vx c0 cpw1 cpw c1c cin csn df-pw1 ineq1i wceq cv wcel wn disj 0nel1c elsn
     pw0 wb eleq1 sylbi mtbiri mprgbir 3eqtri ) BCBDZEFBGZEFZBBHUDUEEQIUFBJAKZEL
@@ -17285,8 +17235,8 @@ $)
 
   ${
     $d A x y $.  $d B x y $.
-    $( A condition for equality to unit power class.  (Contributed by SF,
-       21-Jan-2015.) $)
+    $( A condition for equality to unit power class. 
+       (Contributed by SF, 21-Jan-2015.) $)
     eqpw1 $p |- ( A = ~P1 B <-> ( A C_ 1c /\ A. x ( { x } e. A <-> x e. B )
         ) ) $=
       ( vy cpw1 wceq c1c wss cv csn wcel wb pw1ss1c sseq1 wi bitr4i albii bitri
@@ -17301,8 +17251,8 @@ $)
 
   ${
     $d A x y $.  $d B x y $.
-    $( Unit power class distributes over union.  (Contributed by SF,
-       22-Jan-2015.) $)
+    $( Unit power class distributes over union. 
+       (Contributed by SF, 22-Jan-2015.) $)
     pw1un $p |- ~P1 ( A u. B ) = ( ~P1 A u. ~P1 B ) $=
       ( vx vy cun cpw1 cv wceq wrex wcel rexun elpw1 elun orbi12i bitri 3bitr4i
       csn wo eqriv ) CABEZFZAFZBFZEZCGZDGQHZDTIUFDAIZUFDBIZRZUEUAJUEUDJZUFDABKD
@@ -17312,8 +17262,8 @@ $)
 
   ${
     $d A x y $.  $d B x y $.
-    $( Unit power class distributes over intersection.  (Contributed by SF,
-       13-Feb-2015.) $)
+    $( Unit power class distributes over intersection. 
+       (Contributed by SF, 13-Feb-2015.) $)
     pw1in $p |- ~P1 ( A i^i B ) = ( ~P1 A i^i ~P1 B ) $=
       ( vx vy cin cpw1 cv csn wceq wrex wcel wa ancom eleq1 snelpw1 syl6bb elin
       anbi2d elpw1 3bitr4i syl6bbr pm5.32ri an12 3bitr3i rexbii2 anbi1i r19.41v
@@ -17327,8 +17277,8 @@ $)
   ${
     $d A x y $.
     pw1sn.1 $e |- A e. _V $.
-    $( Compute the unit power class of a singleton.  (Contributed by SF,
-       22-Jan-2015.) $)
+    $( Compute the unit power class of a singleton. 
+       (Contributed by SF, 22-Jan-2015.) $)
     pw1sn $p |- ~P1 { A } = { { A } } $=
       ( vx vy cpw1 cv wceq wrex wcel sneq eqeq2d rexsn elpw1 elsn 3bitr4i eqriv
       csn ) CAQZEZRQZCFZDFZQZGZDRHUARGZUASIUATIUDUEDABUBAGUCRUAUBAJKLDUARMCRNOP
@@ -17338,7 +17288,8 @@ $)
 
   ${
     $d A x $.
-    $( The unit power class of a class is empty iff the class itself is empty.
+    $( The unit power class of a class is empty iff the class itself is
+       empty. 
        (Contributed by SF, 22-Jan-2015.) $)
     pw10b $p |- ( ~P1 A = (/) <-> A = (/) ) $=
       ( vx cpw1 c0 wceq wne cv wcel wex csn snelpw1 ne0i sylbir exlimiv necon4i
@@ -17350,7 +17301,8 @@ $)
   ${
     $d A x y $.  $d B x y $.
     $( Two unit power classes are disjoint iff the classes themselves are
-       disjoint.  (Contributed by SF, 26-Jan-2015.) $)
+       disjoint. 
+       (Contributed by SF, 26-Jan-2015.) $)
     pw1disj $p |- ( ( ~P1 A i^i ~P1 B ) = (/) <-> ( A i^i B ) = (/) ) $=
       ( vx vy cpw1 cin c0 wceq cv wcel wn wral csn wi disj eleq1 notbid snelpw1
       sylbi ralrimiv rspccv notbii 3imtr3g sylibr wrex elpw1 wa rsp imp syl6bb
@@ -17364,15 +17316,16 @@ $)
 
   ${
     $d x y $.
-    $( Cardinal one is the unit power class of the universe.  (Contributed by
-       SF, 29-Jan-2015.) $)
+    $( Cardinal one is the unit power class of the universe. 
+       (Contributed by SF, 29-Jan-2015.) $)
     df1c2 $p |- 1c = ~P1 _V $=
       ( vx vy c1c cvv cpw1 cv csn wceq wrex wcel rexv elpw1 el1c 3bitr4ri eqriv
       wex ) ACDEZAFZBFGHZBDISBPRQJRCJSBKBRDLBRMNO $.
       $( [29-Jan-2015] $)
   $}
 
-  $( Unit power set preserves subset.  (Contributed by SF, 3-Feb-2015.) $)
+  $( Unit power set preserves subset. 
+     (Contributed by SF, 3-Feb-2015.) $)
   pw1ss $p |- ( A C_ B -> ~P1 A C_ ~P1 B ) $=
     ( wss cpw c1c cin cpw1 sspwb ssrin sylbi df-pw1 3sstr4g ) ABCZADZEFZBDZEFZA
     GBGMNPCOQCABHNPEIJAKBKL $.
@@ -17380,8 +17333,8 @@ $)
 
   ${
     $d A t $.  $d A x $.  $d B t $.  $d B x $.  $d t x $.
-    $( The unit power class operation is one-to-one.  (Contributed by SF,
-       26-Feb-2015.) $)
+    $( The unit power class operation is one-to-one. 
+       (Contributed by SF, 26-Feb-2015.) $)
     pw111 $p |- ( ~P1 A = ~P1 B <-> A = B ) $=
       ( vt vx cv csn wceq cpw1 wcel wb wi wal eleq1 snelpw1 bitri albii c1c wss
       snex pw1ss1c bibi12d ceqsalv bibi12i wral ssofeq mp2an df-ral el1c imbi1i
@@ -17393,15 +17346,16 @@ $)
       $( [26-Feb-2015] $)
   $}
 
-  $( A unit power class is a subset of a power class.  (Contributed by SF,
-     10-Mar-2015.) $)
+  $( A unit power class is a subset of a power class. 
+     (Contributed by SF, 10-Mar-2015.) $)
   pw1sspw $p |- ~P1 A C_ ~P A $=
     ( cpw1 cpw c1c cin df-pw1 inss1 eqsstri ) ABACZDEIAFIDGH $.
     $( [10-Mar-2015] $)
 
   ${
     $d A x y $.  $d B x y $.
-    $( Membership in a unit union.  (Contributed by SF, 15-Mar-2015.) $)
+    $( Membership in a unit union. 
+       (Contributed by SF, 15-Mar-2015.) $)
     eluni1g $p |- ( A e. V -> ( A e. U.1 B <-> { A } e. B ) ) $=
       ( vy vx cuni1 wcel wceq csn wex c1c cin cuni df-uni1 anbi1i bitr4i 3bitri
       cv wa exbii eleq2i eluni elin ancom el1c 19.41v anbi2i 19.42v excom eleq2
@@ -17417,1112 +17371,10 @@ $)
 
   ${
     eluni1.1 $e |- A e. _V $.
-    $( Membership in a unit union.  (Contributed by SF, 15-Mar-2015.) $)
+    $( Membership in a unit union. 
+       (Contributed by SF, 15-Mar-2015.) $)
     eluni1 $p |- ( A e. U.1 B <-> { A } e. B ) $=
       ( cvv wcel cuni1 csn wb eluni1g ax-mp ) ADEABFEAGBEHCABDIJ $.
       $( [15-Mar-2015] $)
   $}
 
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Kuratowski relationships
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-
-  $( Introduce new constant symbols. $)
-  $c X._k $. $( Times symbol (cross product symbol) (read: 'cross') $)
-  $c `'_k $. $( Small elevated smiley (converse operation) $)
-  $c "_k $. $( Left quote (image symbol) $)
-  $c o._k $. $( Small circle (composition symbol) $)
-  $c Ins2_k $. $( Insert two operator. $)
-  $c Ins3_k $. $( Insert three operator. $)
-  $c P6 $. $( P6 operator $)
-  $c SI_k $. $( Singleton image functor $)
-  $c SSet_k $. $( Subset relationship $)
-  $c Image_k $. $( Image functor $)
-  $c _I_k $. $( Identity relationship $)
-
-  $( Extend the definition of a class to include the Kuratowski cross
-     product. $)
-  cxpk $a class ( A X._k B ) $.
-
-  $( Extend the definition of a class to include the Kuratowski converse of a
-     class. $)
-  ccnvk $a class `'_k A $.
-
-  $( Extend the definition of a class to include the Kuratowski second
-     insertion operator. $)
-  cins2k $a class Ins2_k A $.
-
-  $( Extend the definition of a class to include the Kuratowski third insertion
-     operator. $)
-  cins3k $a class Ins3_k A $.
-
-  $( Extend the definition of a class to include the P6 operator (the set
-     guaranteed by ~ ax-typlower ). $)
-  cp6 $a class P6 A $.
-
-  $( Extend the definition of a class to include the Kuratowski image of a
-     class.  (Read:  The image of ` B ` under ` A ` .) $)
-  cimak $a class ( A "_k B ) $.
-
-  $( Extend the definition of a class to include the Kuratowski composition of
-     two classes.  (Read:  The composition of ` A ` and ` B ` .) $)
-  ccomk $a class ( A o._k B ) $.
-
-  $( Extend the definition of a class to include the Kuratowski singleton
-     image. $)
-  csik $a class SI_k A $.
-
-  $( Extend the definition of a class to include the Kuratowski image
-     functor. $)
-  cimagek $a class Image_k A $.
-
-  $( Extend the definition of a class to include the Kuratowski subset
-     relationship. $)
-  cssetk $a class SSet_k $.
-
-  $( Extend the definition of a class to include the Kuratowski identity
-     relationship. $)
-  cidk $a class _I_k $.
-
-  ${
-    $d A x y z w t u v $.  $d B x y z w t u v $.
-    $( Define the Kuratowski cross product.  This definition through ~ df-idk
-       set up the Kuratowski relationships.  These are used mainly to prove the
-       properties of ~ df-op , and are not used thereafter. $)
-    df-xpk $a |- ( A X._k B ) =
-            { x | E. y E. z ( x = << y , z >> /\ ( y e. A /\ z e. B ) ) } $.
-
-    $( Define the Kuratowski converse. $)
-    df-cnvk $a |- `'_k A =
-             { x | E. y E. z ( x = << y , z >> /\ << z , y >> e. A ) } $.
-
-    $( Define the Kuratowski second insertion operator. $)
-    df-ins2k $a |- Ins2_k A =
-       { x | E. y E. z ( x = << y , z >> /\
-         E. t E. u E. v ( y = { { t } } /\ z = << u , v >> /\
-            << t , v >> e. A ) ) } $.
-
-    $( Define the Kuratowski third insertion operator. $)
-    df-ins3k $a |- Ins3_k A =
-       { x | E. y E. z ( x = << y , z >> /\
-         E. t E. u E. v ( y = { { t } } /\ z = << u , v >> /\
-            << t , u >> e. A ) ) } $.
-
-    $( Define the Kuratowski image operator. $)
-    df-imak $a |- ( A "_k B ) = { x | E. y e. B << y , x >> e. A } $.
-
-    $( Define the Kuratowski composition operator. $)
-    df-cok $a |- ( A o._k B ) =
-       ( ( Ins2_k A i^i Ins3_k `'_k B ) "_k _V ) $.
-
-    $( Define the P6 operator.  This is the set guaranteed by
-       ~ ax-typlower . $)
-    df-p6 $a |- P6 A = { x | ( _V X._k { { x } } ) C_ A } $.
-
-    $( Define the Kuratowski singleton image operation. $)
-    df-sik $a |- SI_k A = { x |
-       E. y E. z ( x = << y , z >> /\
-          E. t E. u ( y = { t } /\ z = { u } /\ << t , u >> e. A ) ) } $.
-
-    $( Define the Kuratowski subset relationship. $)
-    df-ssetk $a |- SSet_k = { x | E. y E. z ( x = << y , z >> /\ y C_ z ) } $.
-
-    $( Define the Kuratowski image function.  See ~ opkelimagek for
-       membership. $)
-    df-imagek $a |- Image_k A =
-       ( ( _V X._k _V ) \
-         ( ( Ins2_k SSet_k (+) Ins3_k ( SSet_k o._k `'_k SI_k A ) ) "_k
-           ~P1 ~P1 1c ) ) $.
-
-    $( Define the Kuratowski identity relationship. $)
-    df-idk $a |- _I_k = { x | E. y E. z ( x = << y , z >> /\ y = z ) } $.
-  $}
-
-  ${
-    $d A x y z w $.  $d B x y z w $.  $d C x y z w $.
-
-    $( Membership in a Kuratowski cross product.  (Contributed by SF,
-       12-Jan-2015.) $)
-    elxpk $p |- ( A e. ( B X._k C ) <-> E. x E. y ( A = << x , y >> /\
-               ( x e. B /\ y e. C ) ) ) $=
-      ( vw cxpk wcel cvv cv copk wceq wa wex opkex eleq1 mpbiri adantr exlimivv
-      elex eqeq1 anbi1d 2exbidv df-xpk elab2g pm5.21nii ) CDEGZHCIHZCAJZBJZKZLZ
-      UIDHUJEHMZMZBNANZCUGTUNUHABULUHUMULUHUKIHUIUJOCUKIPQRSFJZUKLZUMMZBNANUOFC
-      UGIUPCLZURUNABUSUQULUMUPCUKUAUBUCFABDEUDUEUF $.
-      $( [12-Jan-2015] $)
-
-
-    $( Membership in a cross product.  (Contributed by SF, 12-Jan-2015.) $)
-    elxpk2 $p |- ( A e. ( B X._k C ) <->
-           E. x e. B E. y e. C A = << x , y >> ) $=
-      ( cv wcel wa copk wceq wex wrex cxpk ancom 2exbii r2ex elxpk 3bitr4ri ) A
-      FZDGBFZEGHZCSTIJZHZBKAKUBUAHZBKAKUBBELADLCDEMGUCUDABUAUBNOUBABDEPABCDEQR
-      $.
-      $( [12-Jan-2015] $)
-
-
-    $d x y z A $.  $d x y z B $.  $d x y z C $.
-    $( Equality theorem for Kuratowski cross product.  (Contributed by SF,
-       12-Jan-2015.) $)
-    xpkeq1 $p |- ( A = B -> ( A X._k C ) = ( B X._k C ) ) $=
-      ( vx vy vz wceq cxpk cv copk wrex wcel rexeq elxpk2 3bitr4g eqrdv ) ABGZD
-      ACHZBCHZQDIZEIFIJGFCKZEAKUAEBKTRLTSLUAEABMEFTACNEFTBCNOP $.
-      $( [12-Jan-2015] $)
-
-    $( Equality theorem for Kuratowski cross product.  (Contributed by SF,
-       12-Jan-2015.) $)
-    xpkeq2 $p |- ( A = B -> ( C X._k A ) = ( C X._k B ) ) $=
-      ( vx vy vz wceq cxpk cv copk wrex wcel rexeq rexbidv elxpk2 3bitr4g eqrdv
-      ) ABGZDCAHZCBHZRDIZEIFIJGZFAKZECKUBFBKZECKUASLUATLRUCUDECUBFABMNEFUACAOEF
-      UACBOPQ $.
-      $( [12-Jan-2015] $)
-  $}
-
-  $( Equality theorem for Kuratowski cross product.  (Contributed by SF,
-     12-Jan-2015.) $)
-  xpkeq12 $p |- ( ( A = B /\ C = D ) -> ( A X._k C ) = ( B X._k D ) ) $=
-    ( wceq cxpk xpkeq1 xpkeq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
-    $( [12-Jan-2015] $)
-
-  ${
-    xpkeq1i.1 $e |- A = B $.
-    $( Equality inference for Kuratowski cross product.  (Contributed by SF,
-       12-Jan-2015.) $)
-    xpkeq1i $p |- ( A X._k C ) = ( B X._k C ) $=
-      ( wceq cxpk xpkeq1 ax-mp ) ABEACFBCFEDABCGH $.
-      $( [12-Jan-2015] $)
-
-    $( Equality inference for Kuratowski cross product.  (Contributed by SF,
-       12-Jan-2015.) $)
-    xpkeq2i $p |- ( C X._k A ) = ( C X._k B ) $=
-      ( wceq cxpk xpkeq2 ax-mp ) ABECAFCBFEDABCGH $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    xpkeq12i.1 $e |- A = B $.
-    xpkeq12i.2 $e |- C = D $.
-    $( Equality inference for Kuratowski cross product.  (Contributed by SF,
-       12-Jan-2015.) $)
-    xpkeq12i $p |- ( A X._k C ) = ( B X._k D ) $=
-      ( wceq cxpk xpkeq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    xpkeq1d.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for Kuratowski cross product.  (Contributed by SF,
-       12-Jan-2015.) $)
-    xpkeq1d $p |- ( ph -> ( A X._k C ) = ( B X._k C ) ) $=
-      ( wceq cxpk xpkeq1 syl ) ABCFBDGCDGFEBCDHI $.
-      $( [12-Jan-2015] $)
-
-    $( Equality deduction for Kuratowski cross product.  (Contributed by SF,
-       12-Jan-2015.) $)
-    xpkeq2d $p |- ( ph -> ( C X._k A ) = ( C X._k B ) ) $=
-      ( wceq cxpk xpkeq2 syl ) ABCFDBGDCGFEBCDHI $.
-      $( [12-Jan-2015] $)
-
-    xpkeq12d.2 $e |- ( ph -> C = D ) $.
-    $( Equality deduction for Kuratowski cross product.  (Contributed by SF,
-       12-Jan-2015.) $)
-    xpkeq12d $p |- ( ph -> ( A X._k C ) = ( B X._k D ) ) $=
-      ( wceq cxpk xpkeq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y $.
-    $( Membership in ` ( _V X._k _V ) ` (Contributed by SF, 13-Jan-2015.) $)
-    elvvk $p |- ( A e. ( _V X._k _V ) <-> E. x E. y A = << x , y >> ) $=
-      ( cvv cxpk wcel cv copk wceq wex elxpk vex pm3.2i biantru 2exbii bitr4i
-      wa ) CDDEFCAGZBGZHIZRDFZSDFZQZQZBJAJTBJAJABCDDKTUDABUCTUAUBALBLMNOP $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d t w $.  $d t y $.  $d t z $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.
-    $( Any Kuratowski ordered pair abstraction is a subset of
-       ` ( _V X._k _V ) ` .  (Contributed by SF, 13-Jan-2015.) $)
-    opkabssvvk $p |- { x | E. y E. z ( x = << y , z >> /\ ph ) } C_
-       ( _V X._k _V ) $=
-      ( vw vt cv copk wceq wa wex cvv cxpk wcel eqid vex opkeq12 eqeq2d spc2ev
-      weq ax-mp elvvk mpbir eleq1 mpbiri adantr exlimivv abssi ) BGZCGZDGZHZIZA
-      JZDKCKBLLMZUNUIUONZCDUMUPAUMUPULUONZUQULEGZFGZHZIZFKEKZULULIZVBULOVAVCEFU
-      JUKCPDPECTFDTJUTULULURUSUJUKQRSUAEFULUBUCUIULUOUDUEUFUGUH $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d x y $.  $d x z $.
-    opkabssvvki.1 $e |- A = { x | E. y E. z ( x = << y , z >> /\ ph ) } $.
-    $( Any Kuratowski ordered pair abstraction is a subset of
-       ` ( _V X._k _V ) ` .  (Contributed by SF, 13-Jan-2015.) $)
-    opkabssvvki $p |- A C_ ( _V X._k _V ) $=
-      ( cv copk wceq wa wex cab cvv cxpk opkabssvvk eqsstri ) EBGCGDGHIAJDKCKBL
-      MMNFABCDOP $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z $.  $d B x y z $.
-    $( Any Kuratowski cross product is a subset of ` ( _V X._k _V ) ` .
-       (Contributed by SF, 13-Jan-2015.) $)
-    xpkssvvk $p |- ( A X._k B ) C_ ( _V X._k _V ) $=
-      ( vy vz vx cv wcel wa cxpk df-xpk opkabssvvki ) CFAGDFBGHECDABIECDABJK $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z $.  $d B x y z $.
-    $( Subset for Kuratowski relationships.  (Contributed by SF,
-       13-Jan-2015.) $)
-    ssrelk $p |- ( A C_ ( _V X._k _V ) ->
-       ( A C_ B <-> A. x A. y ( << x , y >> e. A -> << x , y >> e. B ) ) ) $=
-      ( vz cvv cxpk wss cv wcel wi wral copk wal ssofss wceq df-ral bitri eleq1
-      wex elvvk imbi1i 19.23vv bitr4i albii alrot3 opkex imbi12d ceqsalv 2albii
-      syl6bb ) CFFGZHCDHEIZCJZUMDJZKZEULLZAIZBIZMZCJZUTDJZKZBNANZECDULOUQUMUTPZ
-      UPKZENZBNANZVDUQUMULJZUPKZENZVHUPEULQVKVFBNANZENVHVJVLEVJVEBTATZUPKVLVIVM
-      UPABUMUAUBVEUPABUCUDUEVFEABUFRRVGVCABUPVCEUTURUSUGVEUNVAUOVBUMUTCSUMUTDSU
-      HUIUJRUK $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z $.  $d B x y z $.
-    $( Equality for two Kuratowski relationships.  (Contributed by SF,
-       13-Jan-2015.) $)
-    eqrelk $p |- ( ( A C_ ( _V X._k _V ) /\ B C_ ( _V X._k _V ) ) ->
-      ( A = B <-> A. x A. y ( << x , y >> e. A <-> << x , y >> e. B ) ) ) $=
-      ( vz cvv cxpk wss wa wceq cv wcel wb wral copk wal ssofeq wi wex eleq1
-      df-ral elvvk imbi1i 19.23vv bitr4i albii alrot3 bitri opkex 2albii 3bitri
-      bibi12d ceqsalv syl6bb ) CFFGZHDUOHICDJEKZCLZUPDLZMZEUONZAKZBKZOZCLZVCDLZ
-      MZBPAPZECDUOQUTUPUOLZUSRZEPZUPVCJZUSRZEPZBPAPZVGUSEUOUAVJVLBPAPZEPVNVIVOE
-      VIVKBSASZUSRVOVHVPUSABUPUBUCVKUSABUDUEUFVLEABUGUHVMVFABUSVFEVCVAVBUIVKUQV
-      DURVEUPVCCTUPVCDTULUMUJUKUN $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y $.  $d B x y $.
-    eqrelkriiv.1 $e |- A C_ ( _V X._k _V ) $.
-    eqrelkriiv.2 $e |- B C_ ( _V X._k _V ) $.
-    ${
-      eqrelkriiv.3 $e |- ( << x , y >> e. A <-> << x , y >> e. B ) $.
-      $( Equality for two Kuratowski relationships.  (Contributed by SF,
-         13-Jan-2015.) $)
-      eqrelkriiv $p |- A = B $=
-        ( wceq cv copk wcel wb wal gen2 cvv cxpk wss eqrelk mp2an mpbir ) CDHZA
-        IBIJZCKUBDKLZBMAMZUCABGNCOOPZQDUEQUAUDLEFABCDRST $.
-        $( [13-Jan-2015] $)
-    $}
-
-    ${
-      $d ph x y $.
-      eqrelkrdv.3 $e |- ( ph -> ( << x , y >> e. A <-> << x , y >> e. B ) ) $.
-      $( Equality for two Kuratowski relationships.  (Contributed by SF,
-         13-Jan-2015.) $)
-      eqrelkrdv $p |- ( ph -> A = B ) $=
-        ( cv copk wcel wb wal wceq alrimivv cvv cxpk wss eqrelk mp2an sylibr )
-        ABICIJZDKUBEKLZCMBMZDENZAUCBCHODPPQZREUFRUEUDLFGBCDESTUA $.
-        $( [13-Jan-2015] $)
-    $}
-  $}
-
-  ${
-    $d A x y z $.  $d B x y z $.
-    $( Equality theorem for Kuratowski converse.  (Contributed by SF,
-       12-Jan-2015.) $)
-    cnvkeq $p |- ( A = B -> `'_k A = `'_k B ) $=
-      ( vx vy vz wceq cv copk wcel wa wex cab ccnvk eleq2 anbi2d 2exbidv abbidv
-      df-cnvk 3eqtr4g ) ABFZCGDGZEGZHFZUBUAHZAIZJZEKDKZCLUCUDBIZJZEKDKZCLAMBMTU
-      GUJCTUFUIDETUEUHUCABUDNOPQCDEARCDEBRS $.
-      $( [12-Jan-2015] $)
-  $}
-
-
-  ${
-    cnvkeqi.1 $e |- A = B $.
-    $( Equality inference for Kuratowski converse.  (Contributed by SF,
-       12-Jan-2015.) $)
-    cnvkeqi $p |- `'_k A = `'_k B $=
-      ( wceq ccnvk cnvkeq ax-mp ) ABDAEBEDCABFG $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    cnvkeqd.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for Kuratowski converse.  (Contributed by SF,
-       12-Jan-2015.) $)
-    cnvkeqd $p |- ( ph -> `'_k A = `'_k B ) $=
-      ( wceq ccnvk cnvkeq syl ) ABCEBFCFEDBCGH $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z w t u $.  $d B x y z w t u $.
-    $( Equality theorem for the Kuratowski insert two operator.  (Contributed
-       by SF, 12-Jan-2015.) $)
-    ins2keq $p |- ( A = B -> Ins2_k A = Ins2_k B ) $=
-      ( vx vy vz vw vt vu wceq cv copk csn w3a wex wa cab cins2k eleq2 df-ins2k
-      wcel 3anbi3d 3exbidv anbi2d 2exbidv abbidv 3eqtr4g ) ABIZCJDJZEJZKIZUHFJZ
-      LLIZUIGJHJZKIZUKUMKZATZMZHNGNFNZOZENDNZCPUJULUNUOBTZMZHNGNFNZOZENDNZCPAQB
-      QUGUTVECUGUSVDDEUGURVCUJUGUQVBFGHUGUPVAULUNABUORUAUBUCUDUECDEHGFASCDEHGFB
-      SUF $.
-      $( [12-Jan-2015] $)
-
-    $( Equality theorem for the Kuratowski insert three operator.  (Contributed
-       by SF, 12-Jan-2015.) $)
-    ins3keq $p |- ( A = B -> Ins3_k A = Ins3_k B ) $=
-      ( vx vy vz vw vt vu wceq cv copk csn w3a wex wa cab cins3k eleq2 df-ins3k
-      wcel 3anbi3d 3exbidv anbi2d 2exbidv abbidv 3eqtr4g ) ABIZCJDJZEJZKIZUHFJZ
-      LLIZUIGJZHJKIZUKUMKZATZMZHNGNFNZOZENDNZCPUJULUNUOBTZMZHNGNFNZOZENDNZCPAQB
-      QUGUTVECUGUSVDDEUGURVCUJUGUQVBFGHUGUPVAULUNABUORUAUBUCUDUECDEHGFASCDEHGFB
-      SUF $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    inskeqi.1 $e |- A = B $.
-    $( Equality inference for Kuratowski insert two operator.  (Contributed by
-       SF, 12-Jan-2015.) $)
-    ins2keqi $p |- Ins2_k A = Ins2_k B $=
-      ( wceq cins2k ins2keq ax-mp ) ABDAEBEDCABFG $.
-      $( [12-Jan-2015] $)
-
-    $( Equality inference for Kuratowski insert three operator.  (Contributed
-       by SF, 12-Jan-2015.) $)
-    ins3keqi $p |- Ins3_k A = Ins3_k B $=
-      ( wceq cins3k ins3keq ax-mp ) ABDAEBEDCABFG $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    inskeqd.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for Kuratowski insert two operator.  (Contributed by
-       SF, 12-Jan-2015.) $)
-    ins2keqd $p |- ( ph -> Ins2_k A = Ins2_k B ) $=
-      ( wceq cins2k ins2keq syl ) ABCEBFCFEDBCGH $.
-      $( [12-Jan-2015] $)
-
-    $( Equality deduction for Kuratowski insert three operator.  (Contributed
-       by SF, 12-Jan-2015.) $)
-    ins3keqd $p |- ( ph -> Ins3_k A = Ins3_k B ) $=
-      ( wceq cins3k ins3keq syl ) ABCEBFCFEDBCGH $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y $.  $d B x y $.  $d C x y $.
-    $( Equality theorem for Kuratowski image.  (Contributed by SF,
-       12-Jan-2015.) $)
-    imakeq1 $p |- ( A = B -> ( A "_k C ) = ( B "_k C ) ) $=
-      ( vy vx wceq cv copk wcel wrex cimak eleq2 rexbidv abbidv df-imak 3eqtr4g
-      cab ) ABFZDGEGHZAIZDCJZEQSBIZDCJZEQACKBCKRUAUCERTUBDCABSLMNEDACOEDBCOP $.
-      $( [12-Jan-2015] $)
-
-    $( Equality theorem for Kuratowski image.  (Contributed by SF,
-       12-Jan-2015.) $)
-    imakeq2 $p |- ( A = B -> ( C "_k A ) = ( C "_k B ) ) $=
-      ( vy vx wceq cv copk wcel wrex cab cimak rexeq abbidv df-imak 3eqtr4g ) A
-      BFZDGEGHCIZDAJZEKRDBJZEKCALCBLQSTERDABMNEDCAOEDCBOP $.
-      $( [12-Jan-2015] $)
-  $}
-
-
-  ${
-    imakeq1i.1 $e |- A = B $.
-    $( Equality theorem for image.  (Contributed by SF, 12-Jan-2015.) $)
-    imakeq1i $p |- ( A "_k C ) = ( B "_k C ) $=
-      ( wceq cimak imakeq1 ax-mp ) ABEACFBCFEDABCGH $.
-      $( [12-Jan-2015] $)
-
-    $( Equality theorem for Kuratowski image.  (Contributed by SF,
-       12-Jan-2015.) $)
-    imakeq2i $p |- ( C "_k A ) = ( C "_k B ) $=
-      ( wceq cimak imakeq2 ax-mp ) ABECAFCBFEDABCGH $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    imakeq1d.1 $e |- ( ph -> A = B ) $.
-    $( Equality theorem for Kuratowski image.  (Contributed by SF,
-       12-Jan-2015.) $)
-    imakeq1d $p |- ( ph -> ( A "_k C ) = ( B "_k C ) ) $=
-      ( wceq cimak imakeq1 syl ) ABCFBDGCDGFEBCDHI $.
-      $( [12-Jan-2015] $)
-
-    $( Equality theorem for Kuratowski image.  (Contributed by SF,
-       12-Jan-2015.) $)
-    imakeq2d $p |- ( ph -> ( C "_k A ) = ( C "_k B ) ) $=
-      ( wceq cimak imakeq2 syl ) ABCFDBGDCGFEBCDHI $.
-      $( [12-Jan-2015] $)
-  $}
-
-  $( Equality theorem for Kuratowski composition of two classes.  (Contributed
-     by SF, 12-Jan-2015.) $)
-  cokeq1 $p |- ( A = B -> ( A o._k C ) = ( B o._k C ) ) $=
-    ( wceq cins2k ccnvk cins3k cin cimak ins2keq ineq1d imakeq1d df-cok 3eqtr4g
-    cvv ccomk ) ABDZAEZCFGZHZOIBEZSHZOIACPBCPQTUBOQRUASABJKLACMBCMN $.
-    $( [12-Jan-2015] $)
-
-  $( Equality theorem for Kuratowski composition of two classes.  (Contributed
-     by SF, 12-Jan-2015.) $)
-  cokeq2 $p |- ( A = B -> ( C o._k A ) = ( C o._k B ) ) $=
-    ( wceq cins2k ccnvk cins3k cin cimak cnvkeq ins3keqd ineq2d imakeq1d df-cok
-    cvv ccomk 3eqtr4g ) ABDZCEZAFZGZHZOISBFZGZHZOICAPCBPRUBUEORUAUDSRTUCABJKLMC
-    ANCBNQ $.
-    $( [12-Jan-2015] $)
-
-  ${
-    cokeq1i.1 $e |- A = B $.
-    $( Equality inference for Kuratowski composition of two classes.
-       (Contributed by SF, 12-Jan-2015.) $)
-    cokeq1i $p |- ( A o._k C ) = ( B o._k C ) $=
-      ( wceq ccomk cokeq1 ax-mp ) ABEACFBCFEDABCGH $.
-      $( [12-Jan-2015] $)
-
-    $( Equality inference for Kuratowski composition of two classes.
-       (Contributed by SF, 12-Jan-2015.) $)
-    cokeq2i $p |- ( C o._k A ) = ( C o._k B ) $=
-      ( wceq ccomk cokeq2 ax-mp ) ABECAFCBFEDABCGH $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    cokeq1d.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for Kuratowski composition of two classes.
-       (Contributed by SF, 12-Jan-2015.) $)
-    cokeq1d $p |- ( ph -> ( A o._k C ) = ( B o._k C ) ) $=
-      ( wceq ccomk cokeq1 syl ) ABCFBDGCDGFEBCDHI $.
-      $( [12-Jan-2015] $)
-
-    $( Equality deduction for Kuratowski composition of two classes.
-       (Contributed by SF, 12-Jan-2015.) $)
-    cokeq2d $p |- ( ph -> ( C o._k A ) = ( C o._k B ) ) $=
-      ( wceq ccomk cokeq2 syl ) ABCFDBGDCGFEBCDHI $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    cokeq12i.1 $e |- A = B $.
-    cokeq12i.2 $e |- C = D $.
-    $( Equality inference for Kuratowski composition of two classes.
-       (Contributed by SF, 12-Jan-2015.) $)
-    cokeq12i $p |- ( A o._k C ) = ( B o._k D ) $=
-      ( ccomk cokeq1i cokeq2i eqtri ) ACGBCGBDGABCEHCDBFIJ $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    cokeq12d.1 $e |- ( ph -> A = B ) $.
-    cokeq12d.2 $e |- ( ph -> C = D ) $.
-    $( Equality deduction for Kuratowski composition of two classes.
-       (Contributed by SF, 12-Jan-2015.) $)
-    cokeq12d $p |- ( ph -> ( A o._k C ) = ( B o._k D ) ) $=
-      ( ccomk cokeq1d cokeq2d eqtrd ) ABDHCDHCEHABCDFIADECGJK $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y $.  $d B x y $.
-    $( Equality theorem for P6 operation.  (Contributed by SF, 12-Jan-2015.) $)
-    p6eq $p |- ( A = B -> P6 A = P6 B ) $=
-      ( vx wceq cvv cv csn cxpk wss cab cp6 sseq2 abbidv df-p6 3eqtr4g ) ABDZEC
-      FGGHZAIZCJQBIZCJAKBKPRSCABQLMCANCBNO $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    p6eqi.1 $e |- A = B $.
-    $( Equality inference for the P6 operation.  (Contributed by SF,
-       12-Jan-2015.) $)
-    p6eqi $p |- P6 A = P6 B $=
-      ( wceq cp6 p6eq ax-mp ) ABDAEBEDCABFG $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    p6eqd.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for the P6 operation.  (Contributed by SF,
-       12-Jan-2015.) $)
-    p6eqd $p |- ( ph -> P6 A = P6 B ) $=
-      ( wceq cp6 p6eq syl ) ABCEBFCFEDBCGH $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z w t u $.  $d B x y z w t u $.
-    $( Equality theorem for Kuratowski singleton image.  (Contributed by SF,
-       12-Jan-2015.) $)
-    sikeq $p |- ( A = B -> SI_k A = SI_k B ) $=
-      ( vx vy vz vw vt wceq cv copk csn wcel w3a wex wa cab csik 2exbidv df-sik
-      eleq2 3anbi3d anbi2d abbidv 3eqtr4g ) ABHZCIDIZEIZJHZUFFIZKHZUGGIZKHZUIUK
-      JZALZMZGNFNZOZENDNZCPUHUJULUMBLZMZGNFNZOZENDNZCPAQBQUEURVCCUEUQVBDEUEUPVA
-      UHUEUOUTFGUEUNUSUJULABUMTUARUBRUCCDEGFASCDEGFBSUD $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    sikeqi.1 $e |- A = B $.
-    $( Equality inference for Kuratowski singleton image.  (Contributed by SF,
-       12-Jan-2015.) $)
-    sikeqi $p |- SI_k A = SI_k B $=
-      ( wceq csik sikeq ax-mp ) ABDAEBEDCABFG $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    sikeqd.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for Kuratowski singleton image.  (Contributed by SF,
-       12-Jan-2015.) $)
-    sikeqd $p |- ( ph -> SI_k A = SI_k B ) $=
-      ( wceq csik sikeq syl ) ABCEBFCFEDBCGH $.
-      $( [12-Jan-2015] $)
-  $}
-
-  $( Equality theorem for image operation.  (Contributed by SF,
-     12-Jan-2015.) $)
-  imagekeq $p |- ( A = B -> Image_k A = Image_k B ) $=
-    ( wceq cvv cxpk cssetk cins2k csik ccnvk ccomk cins3k csymdif c1c cpw1 cdif
-    cimak cimagek sikeq cnvkeqd df-imagek cokeq2d ins3keqd symdifeq2d imakeq1d
-    difeq2d 3eqtr4g ) ABCZDDEZFGZFAHZIZJZKZLZMNNZPZOUHUIFBHZIZJZKZLZUOPZOAQBQUG
-    UPVBUHUGUNVAUOUGUMUTUIUGULUSUGUKURFUGUJUQABRSUAUBUCUDUEATBTUF $.
-    $( [12-Jan-2015] $)
-
-  ${
-    $d A y z $.  $d B x $.  $d B y $.  $d B z $.  $d C x $.  $d C y $.
-    $d C z $.  $d ch z $.  $d ph x $.  $d ps y $.  $d x y z $.
-    opkelopkabg.1 $e |- A = { x | E. y E. z ( x = << y , z >> /\ ph ) } $.
-    opkelopkabg.2 $e |- ( y = B -> ( ph <-> ps ) ) $.
-    opkelopkabg.3 $e |- ( z = C -> ( ps <-> ch ) ) $.
-    $( Kuratowski ordered pair membership in an abstraction of Kuratowski
-       ordered pairs.  (Contributed by SF, 12-Jan-2015.) $)
-    opkelopkabg $p |- ( ( B e. V /\ C e. W ) ->
-                 ( << B , C >> e. A <-> ch ) ) $=
-      ( wcel wceq wa wex cvv wb copk cv opkex eqeq1 eqcom syl6bb anbi1d 2exbidv
-      elab2 elex vex opkthg mp3an12 adantl exbidv 19.42v anbi2d ceqsexgv adantr
-      anass 3bitrd syl2an syl5bb ) HIUAZGOEUBZFUBZUAZVDPZAQZFRZERZHJOZIKOZQCDUB
-      ZVGPZAQZFRERVKDVDGHIUCVNVDPZVPVIEFVQVOVHAVQVOVDVGPVHVNVDVGUDVDVGUEUFUGUHL
-      UIVLHSOZISOZVKCTVMHJUJIKUJVRVSQZVKVEHPZVFIPZAQZFRZQZERZWBBQZFRZCVTVJWEEVT
-      VJWAWCQZFRWEVTVIWIFVTVIWAWBQZAQWIVTVHWJAVSVHWJTZVRVESOVFSOVSWKEUKFUKVEVFH
-      ISSSULUMUNUGWAWBAUTUFUOWAWCFUPUFUOVRWFWHTVSWDWHEHSWAWCWGFWAABWBMUQUOURUSV
-      SWHCTVRBCFISNURUNVAVBVC $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    $d A y $.  $d A z $.  $d B x $.  $d B y $.  $d B z $.  $d C x $.  $d C y $.
-    $d C z $.  $d ch z $.  $d ph x $.  $d ps y $.  $d x y $.  $d x z $.
-    $d y z $.
-    opkelopkab.1 $e |- A = { x | E. y E. z ( x = << y , z >> /\ ph ) } $.
-    opkelopkab.2 $e |- ( y = B -> ( ph <-> ps ) ) $.
-    opkelopkab.3 $e |- ( z = C -> ( ps <-> ch ) ) $.
-    opkelopkab.4 $e |- B e. _V $.
-    opkelopkab.5 $e |- C e. _V $.
-    $( Kuratowski ordered pair membership in an abstraction of Kuratowski
-       ordered pairs.  (Contributed by SF, 12-Jan-2015.) $)
-    opkelopkab $p |- ( << B , C >> e. A <-> ch ) $=
-      ( cvv wcel copk wb opkelopkabg mp2an ) HOPIOPHIQGPCRMNABCDEFGHIOOJKLST $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d D x y z $.
-    $( Kuratowski ordered pair membership in a Kuratowski cross product.
-       (Contributed by SF, 12-Jan-2015.) $)
-    opkelxpkg $p |- ( ( A e. V /\ B e. W ) ->
-       ( << A , B >> e. ( C X._k D ) <-> ( A e. C /\ B e. D ) ) ) $=
-      ( vx vy vz cv wcel wa cxpk df-xpk wceq eleq1 anbi1d anbi2d opkelopkabg )
-      GJZCKZHJZDKZLACKZUCLUDBDKZLIGHCDMABEFIGHCDNTAOUAUDUCTACPQUBBOUCUEUDUBBDPR
-      S $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    opkelxpk.1 $e |- A e. _V $.
-    opkelxpk.2 $e |- B e. _V $.
-    $( Kuratowski ordered pair membership in a Kuratowski cross product.
-       (Contributed by SF, 13-Jan-2015.) $)
-    opkelxpk $p |- ( << A , B >> e. ( C X._k D ) <-> ( A e. C /\ B e. D ) ) $=
-      ( cvv wcel copk cxpk wa wb opkelxpkg mp2an ) AGHBGHABICDJHACHBDHKLEFABCDG
-      GMN $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z $.  $d B x y z $.  $d C x y z $.
-    $( Kuratowski ordered pair membership in a Kuratowski converse.
-       (Contributed by SF, 12-Jan-2015.) $)
-    opkelcnvkg $p |- ( ( A e. V /\ B e. W ) ->
-                ( << A , B >> e. `'_k C <-> << B , A >> e. C ) ) $=
-      ( vy vx vz copk wcel ccnvk df-cnvk wceq opkeq2 eleq1d opkeq1 opkelopkabg
-      cv ) FRZGRZIZCJSAIZCJBAIZCJHGFCKABDEHGFCLTAMUAUBCTASNOSBMUBUCCSBAPOQ $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    opkelcnvk.1 $e |- A e. _V $.
-    opkelcnvk.2 $e |- B e. _V $.
-    $( Kuratowski ordered pair membership in a Kuratowski converse.
-       (Contributed by SF, 14-Jan-2015.) $)
-    opkelcnvk $p |- ( << A , B >> e. `'_k C <-> << B , A >> e. C ) $=
-      ( cvv wcel copk ccnvk wb opkelcnvkg mp2an ) AFGBFGABHCIGBAHCGJDEABCFFKL
-      $.
-      $( [14-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z w t u $.  $d B x y z w t u $.  $d C x y z w t u $.
-    $( Kuratowski ordered pair membership in Kuratowski insertion operator.
-       (Contributed by SF, 12-Jan-2015.) $)
-    opkelins2kg $p |- ( ( A e. V /\ B e. W ) ->
-       ( << A , B >> e. Ins2_k C <->
-         E. x E. y E. z ( A = { { x } } /\ B = << y , z >> /\
-              << x , z >> e. C ) ) ) $=
-      ( vw vu vt cv csn wceq copk wcel w3a wex eqeq1 3exbidv cins2k opkelopkabg
-      df-ins2k 3anbi1d 3anbi2d ) ILZALZMMZNZJLZBLCLZOZNZUGUKOFPZQZCRBRARDUHNZUM
-      UNQZCRBRARUPEULNZUNQZCRBRARKIJFUADEGHKIJCBAFUCUFDNZUOUQABCUTUIUPUMUNUFDUH
-      SUDTUJENZUQUSABCVAUMURUPUNUJEULSUETUB $.
-      $( [12-Jan-2015] $)
-
-    $( Kuratowski ordered pair membership in Kuratowski insertion operator.
-       (Contributed by SF, 12-Jan-2015.) $)
-    opkelins3kg $p |- ( ( A e. V /\ B e. W ) ->
-       ( << A , B >> e. Ins3_k C <->
-         E. x E. y E. z ( A = { { x } } /\ B = << y , z >> /\
-              << x , y >> e. C ) ) ) $=
-      ( vw vu vt cv csn wceq copk wcel w3a wex eqeq1 3exbidv cins3k opkelopkabg
-      df-ins3k 3anbi1d 3anbi2d ) ILZALZMMZNZJLZBLZCLOZNZUGUKOFPZQZCRBRARDUHNZUM
-      UNQZCRBRARUPEULNZUNQZCRBRARKIJFUADEGHKIJCBAFUCUFDNZUOUQABCUTUIUPUMUNUFDUH
-      SUDTUJENZUQUSABCVAUMURUPUNUJEULSUETUB $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d D x y z $.  $d T x y z $.
-    $( Kuratowski ordered triple membership in Kuratowski insertion operator.
-       (Contributed by SF, 12-Jan-2015.) $)
-    otkelins2kg $p |- ( ( A e. V /\ B e. W /\ C e. T ) ->
-      ( << { { A } } , << B , C >> >> e. Ins2_k D <->
-        << A , C >> e. D ) ) $=
-      ( vx vy vz csn copk wcel cv wceq wa wex cvv wb bitri w3a snex opkelins2kg
-      cins2k opkex mp2an 3anass eqcom sneqb anbi1i 2exbii 19.42vv opkeq1 eleq1d
-      exbii anbi2d 2exbidv ceqsexgv 3ad2ant1 opkthg mp3an12 syl5bb anbi1d anass
-      vex 19.42v syl6bb adantl biidd opkeq2 sylan9bb bitrd 3adant1 ) AKZKZBCLZL
-      DUDMZHNZAOZVPINZJNZLZOZVRWALZDMZPZJQIQZPZHQZAFMZBGMZCEMZUAZACLZDMZVQVOVRK
-      ZKZOZWCWEUAZJQIQZHQZWIVORMVPRMVQXASVNUBBCUEHIJVOVPDRRUCUFWTWHHWTVSWFPZJQI
-      QWHWSXBIJWSWRWFPXBWRWCWEUGWRVSWFWRWQVOOZVSVOWQUHXCWPVNOVSWPVNVRUBUIVRAHVE
-      UITTUJTUKVSWFIJULTUOTWMWIWCAWALZDMZPZJQIQZWOWJWKWIXGSWLWGXGHAFVSWFXFIJVSW
-      EXEWCVSWDXDDVRAWAUMUNUPUQURUSWKWLXGWOSWJWKWLPXGVTBOZWACOZXEPZJQZPZIQZWOWL
-      XGXMSWKWLXGXHXIPZXEPZJQZIQXMWLXFXOIJWLWCXNXEWCWBVPOZWLXNVPWBUHVTRMWARMWLX
-      QXNSIVEJVEVTWABCERRUTVAVBVCUQXPXLIXPXHXJPZJQXLXOXRJXHXIXEVDUOXHXJJVFTUOVG
-      VHWKXMXKWLWOXKXKIBGXHXKVIURXEWOJCEXIXDWNDWACAVJUNURVKVLVMVLVB $.
-      $( [12-Jan-2015] $)
-
-    $( Kuratowski ordered triple membership in Kuratowski insertion operator.
-       (Contributed by SF, 12-Jan-2015.) $)
-    otkelins3kg $p |- ( ( A e. V /\ B e. W /\ C e. T ) ->
-      ( << { { A } } , << B , C >> >> e. Ins3_k D <->
-        << A , B >> e. D ) ) $=
-      ( vx vy vz csn copk wcel cv wceq wex cvv wb wa bitri w3a snex opkelins3kg
-      cins3k opkex mp2an 3anass eqcom sneqb anbi1i 2exbii 19.42vv opkeq1 eleq1d
-      exbii anbi2d 2exbidv ceqsexgv syl5bb 3ad2ant1 opkthg mp3an12 anbi1d anass
-      vex syl6bb exdistr adantl opkeq2 exbidv biidd sylan9bb bitrd 3adant1 ) AK
-      ZKZBCLZLDUDMZVPHNZKZKZOZVQINZJNZLZOZVSWCLZDMZUAZJPIPZHPZAFMZBGMZCEMZUAZAB
-      LZDMZVPQMVQQMVRWKRVOUBBCUEHIJVPVQDQQUCUFWOWKWFAWCLZDMZSZJPIPZWQWLWMWKXARW
-      NWKVSAOZWFWHSZJPIPZSZHPWLXAWJXEHWJXBXCSZJPIPXEWIXFIJWIWBXCSXFWBWFWHUGWBXB
-      XCWBWAVPOZXBVPWAUHXGVTVOOXBVTVOVSUBUIVSAHVEUITTUJTUKXBXCIJULTUOXDXAHAFXBX
-      CWTIJXBWHWSWFXBWGWRDVSAWCUMUNUPUQURUSUTWMWNXAWQRWLWMWNSXAWCBOZWDCOZWSSZJP
-      ZSIPZWQWNXAXLRWMWNXAXHXJSZJPIPXLWNWTXMIJWNWTXHXISZWSSXMWNWFXNWSWFWEVQOZWN
-      XNVQWEUHWCQMWDQMWNXOXNRIVEJVEWCWDBCEQQVAVBUSVCXHXIWSVDVFUQXHXJIJVGVFVHWMX
-      LXIWQSZJPZWNWQXKXQIBGXHXJXPJXHWSWQXIXHWRWPDWCBAVIUNUPVJURWQWQJCEXIWQVKURV
-      LVMVNVMUS $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    otkelinsk.1 $e |- A e. _V $.
-    otkelinsk.2 $e |- B e. _V $.
-    otkelinsk.3 $e |- C e. _V $.
-    $( Kuratowski ordered triple membership in Kuratowski insertion operator.
-       (Contributed by SF, 12-Jan-2015.) $)
-    otkelins2k $p |- ( << { { A } } , << B , C >> >> e. Ins2_k D <->
-        << A , C >> e. D ) $=
-      ( cvv wcel csn copk cins2k wb otkelins2kg mp3an ) AHIBHICHIAJJBCKKDLIACKD
-      IMEFGABCDHHHNO $.
-      $( [12-Jan-2015] $)
-
-    $( Kuratowski ordered triple membership in Kuratowski insertion operator.
-       (Contributed by SF, 12-Jan-2015.) $)
-    otkelins3k $p |- ( << { { A } } , << B , C >> >> e. Ins3_k D <->
-        << A , B >> e. D ) $=
-      ( cvv wcel csn copk cins3k wb otkelins3kg mp3an ) AHIBHICHIAJJBCKKDLIABKD
-      IMEFGABCDHHHNO $.
-      $( [12-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y $.  $d B x y $.  $d C x y $.
-    $( Membership in a Kuratowski image.  (Contributed by SF, 13-Jan-2015.) $)
-    elimakg $p |- ( C e. V ->
-             ( C e. ( A "_k B ) <-> E. y e. B << y , C >> e. A ) ) $=
-      ( vx cv copk wcel wrex cimak wceq opkeq2 eleq1d rexbidv df-imak elab2g )
-      AGZFGZHZBIZACJRDHZBIZACJFDBCKESDLZUAUCACUDTUBBSDRMNOFABCPQ $.
-      $( [13-Jan-2015] $)
-
-    $( Membership in a Kuratowski image under ` _V ` .  (Contributed by SF,
-       13-Jan-2015.) $)
-    elimakvg $p |- ( C e. V ->
-             ( C e. ( A "_k _V ) <-> E. y << y , C >> e. A ) ) $=
-      ( wcel cvv cimak cv copk wrex wex elimakg rexv syl6bb ) CDECBFGEAHCIBEZAF
-      JOAKABFCDLOAMN $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A y $.  $d B y $.  $d C y $.
-    elimak.1 $e |- C e. _V $.
-    $( Membership in a Kuratowski image.  (Contributed by SF, 13-Jan-2015.) $)
-    elimak $p |- ( C e. ( A "_k B ) <-> E. y e. B << y , C >> e. A ) $=
-      ( cvv wcel cimak cv copk wrex wb elimakg ax-mp ) DFGDBCHGAIDJBGACKLEABCDF
-      MN $.
-      $( [13-Jan-2015] $)
-
-    $( Membership in a Kuratowski image under ` _V ` .  (Contributed by SF,
-       13-Jan-2015.) $)
-    elimakv $p |- ( C e. ( A "_k _V ) <-> E. y << y , C >> e. A ) $=
-      ( cvv wcel cimak cv copk wex wb elimakvg ax-mp ) CEFCBEGFAHCIBFAJKDABCELM
-      $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z w $.  $d B x y z w $.  $d C x y z w $.  $d D x y z w $.
-    $( Membership in a Kuratowski composition.  (Contributed by SF,
-       13-Jan-2015.) $)
-    opkelcokg $p |- ( ( A e. V /\ B e. W ) ->
-       ( << A , B >> e. ( C o._k D ) <->
-         E. x ( << A , x >> e. D /\ << x , B >> e. C ) ) ) $=
-      ( vz vw vy wcel cvv copk cv wa wex wb wceq vex exbii ccomk elex csn ccnvk
-      cins3k cins2k cin cimak df-cok eleq2i opkex elimakv w3a opkelins2kg mp2an
-      3anass 2exbii 19.42vv bitri anbi1i elin 19.41v 3bitr4i excom anass opkeq1
-      snex eleq1d anbi2d 3bitri ancom otkelins3kg mp3an1 opkelcnvkg mpan adantr
-      ceqsexv bitrd eqcom opkthg mp3an12 anbi1d syl6bb 2exbidv adantl biantrurd
-      syl5bb elisset bicomd opkeq2 ceqsexgv sylan9bb anbi12d exbidv syl2an
-      eeanv ) BFKBLKZCLKZBCMZDEUAZKZBANZMEKZXBCMZDKZOZAPZQCGKBFUBCGUBXAWSHNZINZ
-      MZRZXBXIMZDKZOZIPHPZXBUCZUCZWSMZEUDZUEZKZOZAPZWQWROZXGXAWSDUFZXTUGZLUHZKJ
-      NZWSMZYFKZJPZYCWTYGWSDEUIUJJYFWSBCUKZULYKYHXQRZXOOZYIXTKZOZAPZJPYPJPZAPYC
-      YJYQJYIYEKZYOOYNAPZYOOYJYQYSYTYOYSYMXKXMUMZIPHPZAPZYTYHLKWSLKYSUUCQJSYLAH
-      IYHWSDLLUNUOUUBYNAUUBYMXNOZIPHPYNUUAUUDHIYMXKXMUPUQYMXNHIURUSTUSUTYIYEXTV
-      AYNYOAVBVCTYPJAVDYRYBAYRYMXOYOOZOZJPYBYPUUFJYMXOYOVETUUEYBJXQXPVGYMYOYAXO
-      YMYIXRXTYHXQWSVFVHVIVQUSTVJVJYDYBXFAYBYAXOOYDXFXOYAVKYDYAXCXOXEYDYAXBBMXS
-      KZXCXBLKZWQWRYAUUGQASZXBBCXSLLLVLVMWQUUGXCQZWRUUHWQUUJUUIXBBELLVNVOVPVRYD
-      XOXHBRZHPZXICRZXMOZIPZOZXEXOXJWSRZXMOZIPHPZYDUUPXNUURHIXKUUQXMWSXJVSUTUQY
-      DUUSUUKUUNOZIPHPZUUPWRUUSUVAQWQWRUURUUTHIWRUURUUKUUMOZXMOUUTWRUUQUVBXMXHL
-      KXILKWRUUQUVBQHSISXHXIBCLLLVTWAWBUUKUUMXMVEWCWDWEUUKUUNHIWPWCWGWQUUPUUOWR
-      XEWQUUOUUPWQUULUUOHBLWHWFWIXMXEICLUUMXLXDDXICXBWJVHWKWLVRWMWGWNWGWO $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x $.  $d B x $.  $d C x $.  $d D x $.
-    opkelcok.1 $e |- A e. _V $.
-    opkelcok.2 $e |- B e. _V $.
-    $( Membership in a Kuratowski composition.  (Contributed by SF,
-       13-Jan-2015.) $)
-    opkelcok $p |- ( << A , B >> e. ( C o._k D ) <->
-         E. x ( << A , x >> e. D /\ << x , B >> e. C ) ) $=
-      ( cvv wcel copk ccomk cv wa wex wb opkelcokg mp2an ) BHICHIBCJDEKIBALZJEI
-      RCJDIMANOFGABCDEHHPQ $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y $.  $d B x y $.
-    $( Membership in the P6 operator.  (Contributed by SF, 13-Jan-2015.) $)
-    elp6 $p |- ( A e. V -> ( A e. P6 B <-> A. x << x , { A } >> e. B ) ) $=
-      ( vy wcel cp6 cvv csn cxpk wss cv copk wal wceq sneq wi vex albii bitri
-      sneqd xpkeq2d sseq1d df-p6 elab2g xpkssvvk ssrelk ax-mp opkelxpk biantrur
-      wb wa df-sn abeq2i 3bitr2i imbi1i snex opkeq2 eleq1d ceqsalv syl6bb ) BDF
-      BCGZFHBIZIZJZCKZALZVCMZCFZANZHELZIZIZJZCKVFEBVBDVKBOZVNVECVOVMVDHVOVLVCVK
-      BPUAUBUCECUDUEVFVGVKMZVEFZVPCFZQZENZANZVJVEHHJKVFWAUKHVDUFAEVECUGUHVTVIAV
-      TVKVCOZVRQZENVIVSWCEVQWBVRVQVGHFZVKVDFZULWEWBVGVKHVDARZERUIWDWEWFUJWBEVDE
-      VCUMUNUOUPSVRVIEVCBUQWBVPVHCVKVCVGURUSUTTSTVA $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z t u $.  $d B x y z t u $.  $d C x y z t u $.
-    $( Membership in Kuratowski singleton image.  (Contributed by SF,
-       13-Jan-2015.) $)
-    opkelsikg $p |- ( ( A e. V /\ B e. W ) ->
-       ( << A , B >> e. SI_k C <->
-         E. x E. y ( A = { x } /\ B = { y } /\ << x , y >> e. C ) ) ) $=
-      ( vt vu vz cv csn wceq copk wcel w3a wex csik eqeq1 2exbidv opkelopkabg
-      df-sik 3anbi1d 3anbi2d ) HKZAKZLZMZIKZBKZLZMZUFUJNEOZPZBQAQCUGMZULUMPZBQA
-      QUODUKMZUMPZBQAQJHIERCDFGJHIBAEUBUECMZUNUPABUSUHUOULUMUECUGSUCTUIDMZUPURA
-      BUTULUQUOUMUIDUKSUDTUA $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y $.  $d B x y $.  $d C x y $.
-    opksnelsik.1 $e |- A e. _V $.
-    opksnelsik.2 $e |- B e. _V $.
-    $( Membership of an ordered pair of singletons in a Kuratowski singleton
-       image.  (Contributed by SF, 13-Jan-2015.) $)
-    opksnelsik $p |- ( << { A } , { B } >> e. SI_k C <-> << A , B >> e. C ) $=
-      ( vx vy csn copk wcel cv wceq w3a wex cvv snex eqcom vex sneqb bitri csik
-      wb opkelsikg mp2an biid 3anbi123i 2exbii opkeq1 eleq1d opkeq2 ceqsex2v )
-      AHZBHZICUAJZULFKZHZLZUMGKZHZLZUOURIZCJZMZGNFNZABIZCJZULOJUMOJUNVDUBAPBPFG
-      ULUMCOOUCUDVDUOALZURBLZVBMZGNFNVFVCVIFGUQVGUTVHVBVBUQUPULLVGULUPQUOAFRSTU
-      TUSUMLVHUMUSQURBGRSTVBUEUFUGVBAURIZCJVFFGABDEVGVAVJCUOAURUHUIVHVJVECURBAU
-      JUIUKTT $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z t u $.
-    $( A Kuratowski singleton image is a Kuratowski relationship.  (Contributed
-       by SF, 13-Jan-2015.) $)
-    sikssvvk $p |- SI_k A C_ ( _V X._k _V ) $=
-      ( vy vt vz vu vx cv csn wceq copk wcel w3a wex csik df-sik opkabssvvki )
-      BGCGZHIDGEGZHIQRJAKLEMCMFBDANFBDECAOP $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z w t a b $.
-    $( A Kuratowski singleton image is a subset of ` ( 1c X._k 1c ) ` .
-       (Contributed by SF, 13-Jan-2015.) $)
-    sikss1c1c $p |- SI_k A C_ ( 1c X._k 1c ) $=
-      ( vx vy va vb vz vw vt c1c cxpk wss cv copk wcel wal csn wceq w3a wex vex
-      csik wi df-sik eqeq1 3anbi1d 2exbidv 3anbi2d opkelopkab wa opkeq12 snel1c
-      wb opkelxpkg mp2an mpbir2an syl6eqel 3adant3 exlimivv sylbi gen2 sikssvvk
-      weq cvv ssrelk ax-mp mpbir ) AUAZIIJZKZBLZCLZMZVGNZVLVHNZUBZCOBOZVOBCVMVJ
-      DLZPZQZVKELZPZQZVQVTMANZRZESDSZVNFLZVRQZGLZWAQZWCRZESDSVSWIWCRZESDSWEHFGV
-      GVJVKHFGEDAUCFBVBZWJWKDEWLWGVSWIWCWFVJVRUDUEUFGCVBZWKWDDEWMWIWBVSWCWHVKWA
-      UDUGUFBTCTUHWDVNDEVSWBVNWCVSWBUIVLVRWAMZVHVJVKVRWAUJWNVHNZVRINZWAINZVQDTU
-      KZVTETUKZWPWQWOWPWQUIULWRWSVRWAIIIIUMUNUOUPUQURUSUTVGVCVCJKVIVPULAVABCVGV
-      HVDVEVF $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z $.  $d B x y z $.
-    $( Membership in the Kuratowski subset relationship.  (Contributed by SF,
-       13-Jan-2015.) $)
-    opkelssetkg $p |- ( ( A e. V /\ B e. W ) ->
-      ( << A , B >> e. SSet_k <-> A C_ B ) ) $=
-      ( vy vz vx cv wss cssetk df-ssetk sseq1 sseq2 opkelopkabg ) EHZFHZIAPIABI
-      GEFJABCDGEFKOAPLPBAMN $.
-      $( [13-Jan-2015] $)
-  $}
-
-  $( Membership via the Kuratowski subset relationship.  (Contributed by SF,
-     13-Jan-2015.) $)
-  elssetkg $p |- ( ( A e. V /\ B e. W ) ->
-       ( << { A } , B >> e. SSet_k <-> A e. B ) ) $=
-    ( wcel csn copk cssetk wss cvv snex opkelssetkg mpan snssg bicomd sylan9bbr
-    wb ) BDEZAFZBGHEZSBIZACEZABEZSJERTUAQAKSBJDLMUBUCUAABCNOP $.
-    $( [13-Jan-2015] $)
-
-  ${
-    elssetk.1 $e |- A e. _V $.
-    elssetk.2 $e |- B e. _V $.
-    $( Membership via the Kuratowski subset relationship.  (Contributed by SF,
-       13-Jan-2015.) $)
-    elssetk $p |- ( << { A } , B >> e. SSet_k <-> A e. B ) $=
-      ( cvv wcel csn copk cssetk wb elssetkg mp2an ) AEFBEFAGBHIFABFJCDABEEKL
-      $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z $.  $d B x y $.  $d C x y z $.
-    $( Membership in the Kuratowski image functor.  (Contributed by SF,
-       13-Jan-2015.) $)
-    opkelimagekg $p |- ( ( A e. V /\ B e. W ) ->
-      ( << A , B >> e. Image_k C <-> B = ( C "_k A ) ) ) $=
-      ( vx vy vz wcel cvv copk wb wa cssetk c1c wn wex csn exbii bitri cimak cv
-      cimagek wceq elex cxpk cins2k csik ccnvk ccomk csymdif cpw1 wal opkelxpkg
-      cins3k ibir biantrurd exnal wrex opkex elimak df-rex anbi1i 19.41v bitr4i
-      elpw121c excom snex opkeq1 eleq1d ceqsexv 3bitri elsymdif otkelins2kg vex
-      mp3an1 elssetkg mpan adantl otkelins3kg opkelcokg anbi1d exbidv opkelcnvk
-      bitrd sikss1c1c sseli opkelxpk el1c biimpi adantr sylbi syl anass anbi12d
-      pm4.71ri opksnelsik anbi2i syl6bb 3bitr4g syl6bbr bibi12d syl5rbb syl5bbr
-      ancom notbid syl5bb con1bid bitr3d df-imagek eleq2i eldif dfcleq syl2an
-      cdif ) ADIAJIZBJIZABKZCUCZIZBCAUAZUDZLBEIADUEBEUEXPXQMZXRJJUFZIZXRNUGZNCU
-      HZUIZUJZUOZUKZOULULZUAZIZPZMZFUBZBIZYQYAIZLZFUMZXTYBYCYOYPUUAYCYEYOYCYEAB
-      JJJJUNUPUQYCUUAYNUUAPYTPZFQZYCYNYTFURYNYQRZRZRZXRKZYKIZFQZYCUUCYNGUBZXRKZ
-      YKIZGYLUSUUJYLIZUULMZGQZUUIGYKYLXRABUTVAUULGYLVBUUOUUJUUFUDZUULMZFQZGQUUQ
-      GQZFQUUIUUNUURGUUNUUPFQZUULMUURUUMUUTUULFUUJVFVCUUPUULFVDVESUUQGFVGUUSUUH
-      FUULUUHGUUFUUEVHUUPUUKUUGYKUUJUUFXRVIVJVKSVLVLYCUUHUUBFUUHUUGYFIZUUGYJIZL
-      ZPYCUUBUUGYFYJVMYCUVCYTYCUVAYRUVBYSYCUVAUUDBKNIZYRUUDJIZXPXQUVAUVDLYQVHZU
-      UDABNJJJVNVPXQUVDYRLZXPYQJIXQUVGFVOZYQBJJVQVRVSWEYCUVBUUDAKYIIZYSUVEXPXQU
-      VBUVILUVFUUDABYIJJJVTVPXPUVIYSLXQXPUVIUUJYQKCIZGAUSZYSXPUVIUUDHUBZKYHIZUV
-      LAKZNIZMZHQZUVKUVEXPUVIUVQLUVFHUUDANYHJJWAVRXPUUJRZAKZNIZUVJMZGQZUUJAIZUV
-      JMZGQUVQUVKXPUWAUWDGXPUVTUWCUVJUUJJIXPUVTUWCLGVOZUUJAJJVQVRWBWCUVQUVLUVRU
-      DZUVLUUDKZYGIZUVOMZMZGQZHQUWJHQZGQUWBUVPUWKHUVPUWFGQZUWHMZUVOMZUWKUVMUWNU
-      VOUVMUWHUWNUUDUVLYGUVFHVOZWDUWHUWMUWHUWGOOUFZIZUWMYGUWQUWGCWFWGUWRUVLOIZU
-      UDOIZMUWMUVLUUDOOUWPUVFWHUWSUWMUWTUWSUWMGUVLWIWJWKWLWMWPTVCUWOUWMUWIMUWKU
-      WMUWHUVOWNUWFUWIGVDVETSUWJHGVGUWLUWAGUWIUWAHUVRUUJVHUWFUWIUVRUUDKZYGIZUVT
-      MZUWAUWFUWHUXBUVOUVTUWFUWGUXAYGUVLUVRUUDVIVJUWFUVNUVSNUVLUVRAVIVJWOUXCUVT
-      UXBMUWAUXBUVTXEUXBUVJUVTUUJYQCUWEUVHWQWRTWSVKSVLUVJGAVBWTWEGCAYQUVHVAXAWK
-      WEXBXFXGWCXCXDXHXIXTXRYDYMXOZIYPXSUXDXRCXJXKXRYDYMXLTFBYAXMWTXN $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    opkelimagek.1 $e |- A e. _V $.
-    opkelimagek.2 $e |- B e. _V $.
-    $( Membership in the Kuratowski image functor.  (Contributed by SF,
-       20-Jan-2015.) $)
-    opkelimagek $p |- ( << A , B >> e. Image_k C <-> B = ( C "_k A ) ) $=
-      ( cvv wcel copk cimagek cimak wceq wb opkelimagekg mp2an ) AFGBFGABHCIGBC
-      AJKLDEABCFFMN $.
-      $( [20-Jan-2015] $)
-  $}
-
-
-  $( The Kuratowski image functor is a relationship.  (Contributed by SF,
-     14-Jan-2015.) $)
-  imagekrelk $p |- Image_k A C_ ( _V X._k _V ) $=
-    ( cimagek cvv cxpk cssetk cins2k csik ccnvk ccomk cins3k csymdif cpw1 cimak
-    c1c cdif df-imagek difss eqsstri ) ABCCDZEFEAGHIJKNLLMZOSAPSTQR $.
-    $( [14-Jan-2015] $)
-
-  ${
-    $d A x y z $.  $d B x y z $.
-    $( Membership in the Kuratowski identity relationship.  (Contributed by SF,
-       13-Jan-2015.) $)
-    opkelidkg $p |- ( ( A e. V /\ B e. W ) ->
-              ( << A , B >> e. _I_k <-> A = B ) ) $=
-      ( vx vy vz weq cv wceq cidk df-idk eqeq1 eqeq2 opkelopkabg ) EFHAFIZJABJG
-      EFKABCDGEFLEIAPMPBANO $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z $.
-    $( A Kuratowski converse is a Kuratowski relationship.  (Contributed by SF,
-       13-Jan-2015.) $)
-    cnvkssvvk $p |- `'_k A C_ ( _V X._k _V ) $=
-      ( vz vy vx cv copk wcel ccnvk df-cnvk opkabssvvki ) BECEFAGDCBAHDCBAIJ $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y $.  $d B x y $.
-    $( The converse of a Kuratowski cross product.  (Contributed by SF,
-       13-Jan-2015.) $)
-    cnvkxpk $p |- `'_k ( A X._k B ) = ( B X._k A ) $=
-      ( vx vy cxpk ccnvk cnvkssvvk xpkssvvk cv wcel wa copk ancom vex opkelcnvk
-      opkelxpk bitri 3bitr4i eqrelkriiv ) CDABEZFZBAEZTGBAHDIZAJZCIZBJZKZUFUDKU
-      EUCLZUAJZUHUBJUDUFMUIUCUELTJUGUEUCTCNZDNZOUCUEABUKUJPQUEUCBAUJUKPRS $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y $.  $d B x y $.  $d C x y $.  $d D x y $.
-    $( The intersection of two Kuratowski cross products.  (Contributed by SF,
-       13-Jan-2015.) $)
-    inxpk $p |- ( ( A X._k B ) i^i ( C X._k D ) ) =
-           ( ( A i^i C ) X._k ( B i^i D ) ) $=
-      ( vx vy cxpk cin cvv inss1 xpkssvvk sstri cv wcel wa vex opkelxpk anbi12i
-      elin bitri copk an4 3bitr4i eqrelkriiv ) EFABGZCDGZHZACHZBDHZGZUGUEIIGUEU
-      FJABKLUHUIKEMZANZFMZBNZOZUKCNZUMDNZOZOZULUPOZUNUQOZOZUKUMUAZUGNZVCUJNZULU
-      NUPUQUBVDVCUENZVCUFNZOUSVCUEUFSVFUOVGURUKUMABEPZFPZQUKUMCDVHVIQRTVEUKUHNZ
-      UMUINZOVBUKUMUHUIVHVIQVJUTVKVAUKACSUMBDSRTUCUD $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d x y z w $.
-    $( The Kuratowski subset relationship is a Kuratowski relationship.
-       (Contributed by SF, 13-Jan-2015.) $)
-    ssetkssvvk $p |- SSet_k C_ ( _V X._k _V ) $=
-      ( vy vz vx cv wss cssetk df-ssetk opkabssvvki ) ADBDECABFCABGH $.
-      $( [13-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z t u w $.
-    $( Subset law for ` Ins2_k A ` .  (Contributed by SF, 14-Jan-2015.) $)
-    ins2kss $p |- Ins2_k A C_ ( ~P1 1c X._k ( _V X._k _V ) ) $=
-      ( vy vz vw vt vu vx c1c cvv cxpk wss copk wcel wal csn wceq w3a wex vex
-      cv cins2k cpw1 wi wb opkelins2kg mp2an wa opkeq12 snel1c snelpw1 opkelxpk
-      mpbir mpbir2an snex opkex syl6eqel 3adant3 exlimiv exlimivv gen2 df-ins2k
-      sylbi opkabssvvki ssrelk ax-mp ) AUAZHUBZIIJZJZKZBTZCTZLZVFMZVMVIMZUCZCNB
-      NZVPBCVNVKDTZOZOZPZVLETZFTZLZPZVRWCLAMZQZFRZERDRZVOVKIMVLIMVNWIUDBSCSDEFV
-      KVLAIIUEUFWHVODEWGVOFWAWEVOWFWAWEUGVMVTWDLZVIVKVLVTWDUHWJVIMVTVGMZWDVHMZW
-      KVSHMVRDSUIVSHUJULWLWBIMWCIMESZFSZWBWCIIWMWNUKUMVTWDVGVHVSUNWBWCUOUKUMUPU
-      QURUSVBUTVFVHKVJVQUDVKWBOOPVLWCVRLPWBVRLAMQDRFRERGBCVFGBCDFEAVAVCBCVFVIVD
-      VEUL $.
-      $( [14-Jan-2015] $)
-
-    $( Subset law for ` Ins3_k A ` .  (Contributed by SF, 14-Jan-2015.) $)
-    ins3kss $p |- Ins3_k A C_ ( ~P1 1c X._k ( _V X._k _V ) ) $=
-      ( vy vz vt vu vw vx c1c cvv cxpk wss cv copk wcel wal csn wceq wex wb vex
-      cins3k cpw1 wi opkelins3kg mp2an wa opkeq12 snel1c snelpw1 mpbir opkelxpk
-      mpbir2an snex opkex syl6eqel 3adant3 exlimiv exlimivv sylbi gen2 df-ins3k
-      w3a opkabssvvki ssrelk ax-mp ) AUAZHUBZIIJZJZKZBLZCLZMZVFNZVMVINZUCZCOBOZ
-      VPBCVNVKDLZPZPZQZVLELZFLZMZQZVRWBMANZVBZFRZERDRZVOVKINVLINVNWISBTCTDEFVKV
-      LAIIUDUEWHVODEWGVOFWAWEVOWFWAWEUFVMVTWDMZVIVKVLVTWDUGWJVINVTVGNZWDVHNZWKV
-      SHNVRDTUHVSHUIUJWLWBINWCINETZFTZWBWCIIWMWNUKULVTWDVGVHVSUMWBWCUNUKULUOUPU
-      QURUSUTVFVHKVJVQSWIGBCVFGBCFEDAVAVCBCVFVIVDVEUJ $.
-      $( [14-Jan-2015] $)
-  $}
-
-  ${
-    $d x y z $.
-    $( The Kuratowski identity relationship is a Kuratowski relationship.
-       (Contributed by SF, 14-Jan-2015.) $)
-    idkssvvk $p |- _I_k C_ ( _V X._k _V ) $=
-      ( vy vz vx weq cidk df-idk opkabssvvki ) ABDCABECABFG $.
-      $( [14-Jan-2015] $)
-  $}
-
-  ${
-    $d A x y z a b c $.  $d B x y z a b c $.  $d C x y z a b c $.
-    $( Image under a composition.  (Contributed by SF, 4-Feb-2015.) $)
-    imacok $p |- ( ( A o._k B ) "_k C ) = ( A "_k ( B "_k C ) ) $=
-      ( vz vx vy ccomk cimak cv copk wcel wrex wa wex vex rexbii rexcom4 df-rex
-      opkelcok elimak anbi1i r19.41v bitr4i exbii bitr2i 3bitri 3bitr4i eqriv )
-      DABGZCHZABCHZHZEIZDIZJUIKZECLZFIZUNJAKZFUKLZUNUJKUNULKUPUMUQJBKZURMZFNZEC
-      LVAECLZFNZUSUOVBECFUMUNABEODOZSPVAEFCQUSUQUKKZURMZFNVDURFUKRVGVCFVGUTECLZ
-      URMVCVFVHUREBCUQFOTUAUTURECUBUCUDUEUFEUICUNVETFAUKUNVETUGUH $.
-      $( [4-Feb-2015] $)
-  $}
-
-
-  ${
-    $d x A $.  $d x B $.  $d x C $.
-    elimaksn.1 $e |- B e. _V $.
-    elimaksn.2 $e |- C e. _V $.
-    $( Membership in a Kuratowski image of a singleton.  (Contributed by SF,
-       4-Feb-2015.) $)
-    elimaksn $p |- ( C e. ( A "_k { B } ) <-> << B , C >> e. A ) $=
-      ( vx csn cimak wcel cv copk wrex elimak wceq opkeq1 eleq1d rexsn bitri )
-      CABGZHIFJZCKZAIZFSLBCKZAIZFASCEMUBUDFBDTBNUAUCATBCOPQR $.
-      $( [4-Feb-2015] $)
-  $}
-
-  ${
-    $d A x y z a b c $.  $d B x y z a b c $.
-    $( A Kuratowski composition is a Kuratowski relationship.  (Contributed by
-       SF, 4-Feb-2015.) $)
-    cokrelk $p |- ( A o._k B ) C_ ( _V X._k _V ) $=
-      ( vx vy va vb vc ccomk cvv cxpk wcel copk cins2k wex vex csn wceq exlimiv
-      cv sylbi ccnvk cins3k cimak df-cok eleq2i elimakv bitri inss1 opkelins2kg
-      cin sseli wb mp2an opkelxpk mpbir2an eleq1 mpbiri 3ad2ant2 exlimivv ssriv
-      w3a syl ) CABHZIIJZCSZVCKZDSZVELZAMZBUAUBZUJZKZDNZVEVDKZVFVEVKIUCZKVMVCVO
-      VEABUDUEDVKVECOZUFUGVLVNDVLVHVIKZVNVKVIVHVIVJUHUKVQVGESZPPQZVEFSZGSZLZQZV
-      RWALAKZVAZGNZFNENZVNVGIKVEIKVQWGULDOVPEFGVGVEAIIUIUMWFVNEFWEVNGWCVSVNWDWC
-      VNWBVDKZWHVTIKWAIKFOZGOZVTWAIIWIWJUNUOVEWBVDUPUQURRUSTVBRTUT $.
-      $( [4-Feb-2015] $)
-  $}
