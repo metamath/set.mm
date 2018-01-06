@@ -28523,6 +28523,7 @@ $)
       $( [10-Jan-2015] $)
   $}
 
+
   ${
     $d x y $.  $d A y $.  $d B y $.
     nfnin.1 $e |- F/_ x A $.
@@ -28684,20 +28685,20 @@ $)
 
   ${
     symdifeqi.1 $e |- A = B $.
-    $( Equality inference for symmetric difference.  (Contributed by ?who?,
+    $( Equality inference for symmetric difference.  (Contributed by SF,
        11-Jan-2015.) $)
     symdifeq1i $p |- ( A (+) C ) = ( B (+) C ) $=
       ( wceq csymdif symdifeq1 ax-mp ) ABEACFBCFEDABCGH $.
       $( [11-Jan-2015] $)
 
-    $( Equality inference for symmetric difference.  (Contributed by ?who?,
+    $( Equality inference for symmetric difference.  (Contributed by SF,
        11-Jan-2015.) $)
     symdifeq2i $p |- ( C (+) A ) = ( C (+) B ) $=
       ( wceq csymdif symdifeq2 ax-mp ) ABECAFCBFEDABCGH $.
       $( [11-Jan-2015] $)
 
     symdifeq12i.2 $e |- C = D $.
-    $( Equality inference for symmetric difference.  (Contributed by ?who?,
+    $( Equality inference for symmetric difference.  (Contributed by SF,
        11-Jan-2015.) $)
     symdifeq12i $p |- ( A (+) C ) = ( B (+) D ) $=
       ( wceq csymdif symdifeq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
@@ -28706,20 +28707,20 @@ $)
 
   ${
     symdifeqd.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for symmetric difference.  (Contributed by ?who?,
+    $( Equality deduction for symmetric difference.  (Contributed by SF,
        11-Jan-2015.) $)
     symdifeq1d $p |- ( ph -> ( A (+) C ) = ( B (+) C ) ) $=
       ( wceq csymdif symdifeq1 syl ) ABCFBDGCDGFEBCDHI $.
       $( [11-Jan-2015] $)
 
-    $( Equality deduction for symmetric difference.  (Contributed by ?who?,
+    $( Equality deduction for symmetric difference.  (Contributed by SF,
        11-Jan-2015.) $)
     symdifeq2d $p |- ( ph -> ( C (+) A ) = ( C (+) B ) ) $=
       ( wceq csymdif symdifeq2 syl ) ABCFDBGDCGFEBCDHI $.
       $( [11-Jan-2015] $)
 
     symdifeq12d.2 $e |- ( ph -> C = D ) $.
-    $( Equality inference for symmetric difference.  (Contributed by ?who?,
+    $( Equality inference for symmetric difference.  (Contributed by SF,
        11-Jan-2015.) $)
     symdifeq12d $p |- ( ph -> ( A (+) C ) = ( B (+) D ) ) $=
       ( wceq csymdif symdifeq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
@@ -30307,6 +30308,8 @@ $)
       UGUBUCSABJMSAQJNO $.
   $}
 
+
+
   $( A rearrangement of intersection.  (Contributed by NM, 21-Apr-2001.) $)
   in12 $p |- ( A i^i ( B i^i C ) ) = ( B i^i ( A i^i C ) ) $=
     ( cin incom ineq1i inass 3eqtr3i ) ABDZCDBADZCDABCDDBACDDIJCABEFABCGBACGH
@@ -30714,6 +30717,14 @@ $)
       ( vy cab wn wcel wsb df-clab sban bicomi xchbinxr anbi12i 3bitrri difeqri
       wa cv sbn ) DACEZBCEZABFZPZCEZDQZUCGUBCDHACDHZUACDHZPUDSGZUDTGZFZPUBDCIAU
       ACDJUEUGUFUIUGUEADCIKUFBCDHUHBCDRBDCILMNO $.
+
+    $( Complement of a class abstraction.  (Contributed by SF, 12-Jan-2015.) $)
+    complab $p |- ~ { x | ph } = { x | -. ph } $=
+      ( vy cab ccompl wn wcel wsb df-clab notbii sbn bitr4i vex elcompl 3bitr4i
+      cv eqriv ) CABDZEZAFZBDZCPZRGZFZTBCHZUBSGUBUAGUDABCHZFUEUCUFACBIJABCKLUBR
+      CMNTCBIOQ $.
+
+
   $}
 
   $( A class builder defined by a negation.  (Contributed by FL,
@@ -30864,6 +30875,50 @@ $)
       IUKABEZUGUHABSZCDGZUIUKULEZEUGBUMEZCDFUHUNEUFUPCDBALMBUMCDNOUIUNUOUIUNUKU
       LABCDPQRTUAUJUKUFUGUHUKUFEUIUFCDUBUCUDUE $.
   $}
+
+
+  $( Symmetric difference commutes. 
+     (Contributed by SF, 11-Jan-2015.) $)
+  symdifcom $p |- ( A (+) B ) = ( B (+) A ) $=
+    ( cdif cun csymdif uncom df-symdif 3eqtr4i ) ABCZBACZDJIDABEBAEIJFABGBAGH
+    $.
+    $( [11-Jan-2015] $)
+
+  $( Two classes are equal iff their complements are equal. 
+     (Contributed by SF, 11-Jan-2015.) $)
+  compleqb $p |- ( A = B <-> ~ A = ~ B ) $=
+    ( wceq ccompl compleq dblcompl 3eqtr3g impbii ) ABCADZBDZCZABEKIDJDABIJEAFB
+    FGH $.
+    $( [11-Jan-2015] $)
+
+
+  $( Definition of intersection in terms of union. 
+     (Contributed by ?who?, 12-Jan-2015.) $)
+  dfin5 $p |- ( A i^i B ) = ~ ( ~ A u. ~ B ) $=
+    ( ccompl cnin cun cin dblcompl nineq12i compleqi df-un df-in 3eqtr4ri ) ACZ
+    CZBCZCZDZCABDZCMOEZCABFQRNAPBAGBGHISQMOJIABKL $.
+    $( [12-Jan-2015] $)
+
+  $( Definition of union in terms of intersection. 
+     (Contributed by ?who?, 12-Jan-2015.) $)
+  dfun4 $p |- ( A u. B ) = ~ ( ~ A i^i ~ B ) $=
+    ( ccompl cin cun dfin5 compleqi dblcompl uneq12i 3eqtrri ) ACZBCZDZCKCZLCZE
+    ZCZCPABEMQKLFGPHNAOBAHBHIJ $.
+    $( [12-Jan-2015] $)
+
+  $( Intersection of two complements is equal to the complement of a union. 
+     (Contributed by ?who?, 12-Jan-2015.) $)
+  iunin $p |- ~ ( A u. B ) = ( ~ A i^i ~ B ) $=
+    ( ccompl cin cun dfin5 dblcompl uneq12i compleqi eqtr2i ) ACZBCZDKCZLCZEZCA
+    BEZCKLFOPMANBAGBGHIJ $.
+    $( [12-Jan-2015] $)
+
+  $( Complement of intersection is equal to union of complements. 
+     (Contributed by ?who?, 12-Jan-2015.) $)
+  iinun $p |- ~ ( A i^i B ) = ( ~ A u. ~ B ) $=
+    ( ccompl cun cin dfun4 dblcompl ineq12i compleqi eqtr2i ) ACZBCZDKCZLCZEZCA
+    BEZCKLFOPMANBAGBGHIJ $.
+    $( [12-Jan-2015] $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -38882,6 +38937,8 @@ $)
       sp syl6bb sylbi ) ABDABEZCEZFZGZBHZCIAABJZTFZGZABCKUDUGCUDATUEFZUFUDAUBUH
       UCBQUDUEUATABCLMNTUEORPS $.
 
+
+
     $( Theorem 8.22 in [Quine] p. 57.  This theorem is the result if there
        isn't exactly one ` x ` that satisfies ` ph ` .  (Contributed by Andrew
        Salmon, 11-Jul-2011.) $)
@@ -38960,6 +39017,27 @@ $)
      (Contributed by Andrew Salmon, 1-Aug-2011.) $)
   iotacl $p |- ( E! x ph -> ( iota x ph ) e. { x | ph } ) $=
     ( weu cio wsbc cab wcel iota4 df-sbc sylib ) ABCABABDZEKABFGABHABKIJ $.
+
+
+  $( Membership law for descriptions. 
+     (Contributed by ?who?, 21-Aug-2011.) $)
+  reiotacl2 $p |- ( E! x e. A ph
+                  -> ( iota x ( x e. A /\ ph ) ) e. { x e. A | ph } ) $=
+    ( wreu cv wcel wa cio cab crab weu df-reu iotacl sylbi df-rab syl6eleqr ) A
+    BCDZBECFAGZBHZRBIZABCJQRBKSTFABCLRBMNABCOP $.
+    $( [21-Aug-2011] $)
+
+  ${
+    $d x A $.
+    $( Membership law for descriptions. 
+       (Contributed by ?who?, 21-Aug-2011.) $)
+    reiotacl $p |- ( E! x e. A ph
+                    -> ( iota x ( x e. A /\ ph ) ) e. A ) $=
+      ( wreu crab cv wcel wa cio wss ssrab2 a1i reiotacl2 sseldd ) ABCDZABCEZCB
+      FCGAHBIPCJOABCKLABCMN $.
+      $( [21-Aug-2011] $)
+  $}
+
 
   ${
     $d x y $.  $d y B $.  $d y ps $.
@@ -39040,6 +39118,7 @@ $)
       VOSVOSTUQTURUSPUT $.
       $( [29-Jan-2015] $)
   $}
+
 
 
 $(
@@ -39880,3 +39959,3155 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
       DUBUHSFUCUDUEUF $.
       $( [23-Feb-2015] $)
   $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Deriving infinity
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c <_[fin] $.
+  $c <[fin] $.
+  $c Nc[fin] $.
+  $c _T[fin] $.
+  $c Even[fin] $.
+  $c Odd[fin] $.
+  $c _S[fin] $.
+  $c Sp[fin] $.
+
+  $( Extend class notation to include the less than or equal to relationship
+     for finite cardinals. $)
+  clefin $a class <_[fin] $.
+
+  $( Extend class notation to include the less than relationship for finite
+     cardinals. $)
+  cltfin $a class <[fin] $.
+
+  $( Extend class notation to include the finite cardinal function. $)
+  cncfin $a class Nc[fin] A $.
+
+  $( Extend class notation to include the finite T operation. $)
+  ctfin $a class _T[fin] A $.
+
+  $( Extend class notation to include the (temporary) set of all even
+     numbers. $)
+  cevenfin $a class Even[fin] $.
+
+  $( Extend class notation to include the (temporary) set of all odd
+     numbers. $)
+  coddfin $a class Odd[fin] $.
+
+  $( Extend wff notation to include the finite S relationship. $)
+  wsfin $a wff _S[fin] ( A , B ) $.
+
+  $( Extend class notation to include the finite Sp set. $)
+  cspfin $a class Sp[fin] $.
+
+  ${
+    $d x y z w $.
+    $( Define the less than or equal to relationship for finite cardinals.
+       Definition from Ex.  X.1.4 of [Rosser] p. 279. $)
+    df-lefin $a |- <_[fin] = { x | E. y E. z ( x = << y , z >> /\
+        E. w e. Nn z = ( y +c w ) ) } $.
+  $}
+
+  ${
+    $d m n p x y z w $.  
+    $( Define the less than relationship for finite cardinals.  Definition from
+       [Rosser] p. 527. $)
+    df-ltfin $a |- <[fin] = { x | E. m E. n ( x = << m , n >> /\
+        ( m =/= (/) /\ E. p e. Nn n = ( ( m +c p ) +c 1c ) ) ) } $.
+  $}
+
+  ${
+    $d A x $.
+    $( Define the finite cardinal function.  Definition from [Rosser]
+       p. 527. $)
+    df-ncfin $a |- Nc[fin] A = ( iota x ( x e. Nn /\ A e. x ) ) $.
+  $}
+
+  ${
+    $d M n a $.
+    $( Define the finite T operator.  Definition from [Rosser] p. 528. $)
+    df-tfin $a |- _T[fin] M = if ( M = (/) , (/) ,
+       ( iota n ( n e. Nn /\ E. a e. M ~P1 a e. n ) ) ) $.
+  $}
+
+  ${
+    $d x n $.
+    $( Define the temporary set of all even numbers.  This differs from the
+       final definition due to the non-null condition.  Definition from
+       [Rosser] p. 529. $)
+    df-evenfin $a |- Even[fin] = { x |
+                ( E. n e. Nn x = ( n +c n ) /\ x =/= (/) ) } $.
+  $}
+
+  ${
+    $d x n $.
+    $( Define the temporary set of all odd numbers.  This differs from the
+       final definition due to the non-null condition.  Definition from
+       [Rosser] p. 529. $)
+    df-oddfin $a |- Odd[fin] = { x |
+                ( E. n e. Nn x = ( ( n +c n ) +c 1c ) /\
+                            x =/= (/) ) } $.
+  $}
+
+  ${
+    $d M a $.  $d N a $.
+    $( Define the finite S relationship.  This relationship encapsulates the
+       idea of ` M ` being a "smaller" number than ` N ` .  Definition from
+       [Rosser] p. 530. $)
+    df-sfin $a |- ( _S[fin] ( M , N ) <-> ( M e. Nn /\ N e. Nn /\
+             E. a ( ~P1 a e. M /\ ~P a e. N ) ) ) $.
+  $}
+
+  ${
+    $d a x z $.
+    $( Define the finite Sp set.  Definition from [Rosser] p. 533. $)
+    df-spfin $a |- Sp[fin] =
+       |^| { a | ( Nc[fin] _V e. a /\
+             A. x e. a A. z ( _S[fin] ( z , x ) -> z e. a ) ) } $.
+  $}
+
+
+  ${
+    $d A x y z w $.  $d B x y z w $.
+    $( Kuratowski ordered pair membership in finite less than or equal to. 
+       (Contributed by SF, 18-Jan-2015.) $)
+    opklefing $p |- ( ( A e. V /\ B e. W ) ->
+       ( << A , B >> e. <_[fin] <-> E. x e. Nn B = ( A +c x ) ) ) $=
+      ( vz vy vw cv cplc wceq cnnc clefin df-lefin addceq1 eqeq2d rexbidv eqeq1
+      wrex opkelopkabg ) FIZGIZAIZJZKZALSUABUCJZKZALSCUFKZALSHGFMBCDEHGFANUBBKZ
+      UEUGALUIUDUFUAUBBUCOPQUACKUGUHALUACUFRQT $.
+      $( [18-Jan-2015] $)
+  $}
+
+  ${
+    $d A w $.  $d A x $.  $d A y $.  $d A z $.  $d B w $.  $d B x $.  $d B y $.
+    $d B z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
+
+    $( Kuratowski ordered pair membership in finite less than. 
+       (Contributed by SF, 27-Jan-2015.) $)
+    opkltfing $p |- ( ( A e. V /\ B e. W ) ->
+      ( << A , B >> e. <[fin] <->
+        ( A =/= (/) /\ E. x e. Nn B = ( ( A +c x ) +c 1c ) ) ) ) $=
+      ( vz vw vy cv c0 wne cplc c1c wceq cnnc wrex wa cltfin df-ltfin rexbidv
+      neeq1 addceq1 addceq1d eqeq2d anbi12d eqeq1 anbi2d opkelopkabg ) FIZJKZGI
+      ZUIAIZLZMLZNZAOPZQBJKZUKBULLZMLZNZAOPZQUQCUSNZAOPZQHFGRBCDEHFGASUIBNZUJUQ
+      UPVAUIBJUAVDUOUTAOVDUNUSUKVDUMURMUIBULUBUCUDTUEUKCNZVAVCUQVEUTVBAOUKCUSUF
+      TUGUH $.
+      $( [27-Jan-2015] $)
+  $}
+
+  ${
+    $d A n $.  $d N n $.
+    $( Cardinal sum always yields a larger set. 
+       (Contributed by SF, 27-Jan-2015.) $)
+    lefinaddc $p |- ( ( A e. V /\ N e. Nn ) ->
+               << A , ( A +c N ) >> e. <_[fin] ) $=
+      ( vn wcel cnnc wa cplc copk clefin cv wceq wrex eqid addceq2 eqeq2d mpan2
+      rspcev adantl cvv wb addcexg opklefing syldan mpbird ) ACEZBFEZGAABHZIJE
+      ZUHADKZHZLZDFMZUGUMUFUGUHUHLZUMUHNULUNDBFUJBLUKUHUHUJBAOPRQSUFUGUHTEUIUMU
+      AABCFUBDAUHCTUCUDUE $.
+      $( [27-Jan-2015] $)
+  $}
+
+  ${
+    $d M a b x $.  $d N a b x $.
+    $( Assuming a non-null successor, cardinal successor is one-to-one.
+       Theorem X.1.19 of [Rosser] p. 526. 
+       (Contributed by SF, 18-Jan-2015.) $)
+    prepeano4 $p |- ( ( ( M e. Nn /\ N e. Nn ) /\
+     ( ( M +c 1c ) = ( N +c 1c ) /\ ( M +c 1c ) =/= (/) ) ) -> M = N ) $=
+      ( va vb vx cnnc wcel wa c1c cplc wceq c0 wne cv wex csn wrex vex syl5bi
+      n0 cun ccompl elsuc simplll simpllr simprl wn simprr elcompl sylib elsuci
+      wel sylan2b adantl eleqtrd nnsucelr syl12anc nnceleq syl22anc a1d exlimdv
+      simplr rexlimdvva impr ) AFGZBFGZHZAIJZBIJZKZVHLMZABKZVKCNZVHGZCOVGVJHZVL
+      CVHTVOVNVLCVNVMDNZENZPUAZKZEVPUBZQDAQVOVLEVMADUCVOVSVLDEAVTVOVPAGZVQVTGZH
+      ZHZVLVSWDVEVFWAVPBGZVLVEVFVJWCUDVEVFVJWCUEZVOWAWBUFWDVFEDULUGZVRVIGWEWFWD
+      WBWGVOWAWBUHVQVPERZUIZUJWDVRVHVIWCVRVHGZVOWBWAWGWJWIVPAVQWHUKUMUNVGVJWCVB
+      UOVPBVQDRWHUPUQVPABURUSUTVCSVASVD $.
+      $( [18-Jan-2015] $)
+  $}
+
+  ${
+    $d A a b c $.
+    $( Cardinal addition with the empty set.  Theorem X.1.20, corollary 1 of
+       [Rosser] p. 526. 
+       (Contributed by SF, 18-Jan-2015.) $)
+    addcnul1 $p |- ( A +c (/) ) = (/) $=
+      ( va vb vc c0 cplc wceq cv wcel wn eq0 cin cun wrex rex0 a1i eladdc mtbir
+      wa nrex mpgbir ) AEFZEGBHZUBIZJBBUBKUDCHZDHZLEGUCUEUFMGSZDENZCANUHCAUHJUE
+      AIUGDOPTUCAECDQRUA $.
+      $( [18-Jan-2015] $)
+  $}
+
+  $( If cardinal addition is non-empty, then both addends are non-empty.
+     Theorem X.1.20 of [Rosser] p. 526. 
+     (Contributed by SF, 18-Jan-2015.) $)
+  addcnnul $p |- ( ( A +c B ) =/= (/) -> ( A =/= (/) /\ B =/= (/) ) ) $=
+    ( cplc wne wceq addceq1 addccom addcnul1 eqtri syl6eq necon3i addceq2 jca
+    c0 ) ABCZNDANDBNDANONANEONBCZNANBFPBNCNNBGBHIJKBNONBNEOANCNBNALAHJKM $.
+    $( [18-Jan-2015] $)
+
+  ${
+    $d m n p x t $.
+    $( Lemma for ~ preaddccan1 .  Establish stratification for induction. 
+       (Contributed by SF, 24-Jan-2015.) $)
+    preaddccan1lem1 $p |- { p | ( ( m e. Nn /\ n e. Nn ) -> ( ( (
+           m +c p ) =/= (/) /\ ( m +c p ) = ( n +c p ) ) -> m = n ) ) } e. _V
+        $=
+      ( vt vx cv wcel wa wn cab cpw1 cimak ccompl wceq copk bitri eqtri 3bitr4i
+      cun c0 cnnc cssetk cins3k cin c1c csik csymdif cdif cimagek ccnvk csn cvv
+      cins2k weq cplc wne wi wo elin wrex vex elimak 0ex opkeq1 rexsn opkelcnvk
+      eleq1d eqcom opkelimagek addccom dfaddc2 eqeq1i notbii elcompl wex eqeq2i
+      df-ne anbi12i elimakv addcex eqvinc abbi2i compleqi complab uneq1i uneq2i
+      exbii unab imor orbi2i bitr2i abbii abexv addcexlem pw1ex imakex imagekex
+      cnvkex snex complex inex vvex unex eqeltrri ) AFZUAGBFZUAGHZIZCJZUBUCZUBU
+      MZUDUEKKZLMUCXKUMXJUMUBUFUFUCSUGXLKKLUHZXEKZKZLZUIZUJZTUKZLZMZXRXMXFKZKZL
+      ZUIZUJZUDZULLZUDZMZABUNZCJZSZSZXGXECFZUOZTUPZYPXFYOUOZNZHZYKUQZUQZCJZULYN
+      XHYTIZYKURZURZCJZUUCYNXIUUECJZSUUGYMUUHXIYMUUDCJZYLSUUHYJUUIYLYJYTCJZMUUI
+      YIUUJYTCYIYOYIGYOYAGZYOYHGZHYTYOYAYHUSUUKYQUULYSYOXTGZIYPTNZIUUKYQUUMUUNU
+      UMTYOOZXRGZUUNUUMDFZYOOZXRGZDXSUTUUPDXRXSYOCVAZVBUUSUUPDTVCUUQTNUURUUOXRU
+      UQTYOVDVGVEPUUPYOTOXQGZUUNTYOXQVCUUTVFTXPYOLZNUVBTNUVAUUNTUVBVHYOTXPUUTVC
+      VIYPUVBTYPYOXEUOUVBXEYOVJYOXEVKQZVLRPPVMYOXTUUTVNYPTVQREFZYOOZYGGZEVOUVDY
+      PNZUVDYRNZHZEVOUULYSUVFUVIEUVFUVEXRGZUVEYFGZHUVIUVEXRYFUSUVJUVGUVKUVHYOUV
+      DOZXQGUVDUVBNUVJUVGYOUVDXPUUTEVAZVIUVDYOXQUVMUUTVFYPUVBUVDUVCVPRUVLYEGUVD
+      YDYOLZNUVKUVHYOUVDYDUUTUVMVIUVDYOYEUVMUUTVFYRUVNUVDYRYOXFUOUVNXFYOVJYOXFV
+      KQVPRVRPWGEYGYOUUTVSEYPYRXEYOAVAZUUTVTWARVRPWBWCYTCWDQWEUUDYKCWHQWFXHUUEC
+      WHQUUFUUBCUUBXHUUAURUUFXGUUAWIUUAUUEXHYTYKWIWJWKWLQXIYMXHCWMYJYLYIYAYHXTX
+      RXSXQXPXMXOWNXNXEUVOWOWOWPWQWRZTWSWPWTYGULXRYFUVPYEYDXMYCWNYBXFBVAWOWOWPW
+      QWRXAXBWPXAWTYKCWMXCXCXD $.
+      $( [24-Jan-2015] $)
+  $}
+
+  ${
+    $d k m $.  $d k n $.  $d k p $.  $d M m $.  $d m n $.  $d m p $.  $d N m $.
+    $d N n $.  $d n p $.  $d P m $.  $d P n $.  $d P p $.
+    $( Cancellation law for natural addition with a non-null condition. 
+       (Contributed by SF, 24-Jan-2015.) $)
+    preaddccan1 $p |- ( ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) /\
+    ( M +c P ) =/= (/) ) -> ( ( M +c P ) = ( N +c P ) <-> M = N ) ) $=
+      ( vm vn vp cnnc wcel cplc c0 wne wa wceq wi neeq1d imbi2d c0c c1c addceq2
+      cv vk w3a addceq1 eqeq1d eqeq1 imbi12d weq eqeq2d preaddccan1lem1 addcid1
+      eqeq2 syl6eq eqeq12d anbi12d imbi1d addcass syl6eqr impexp simpr addcnnul
+      syl6bb a1i simpld simpl2 simpl1 nncaddccl syl2anc simpl3 simprr prepeano4
+      ad2antrl simprl syl22anc jca ex imim1d 3expib finds com12 vtoclga impbid1
+      a2d 3imp1 ) BGHZCGHZAGHZUBBAIZJKZLWGCAIZMZBCMZWDWEWFWHWJWKNZWEWFDTZAIZJKZ
+      WNWIMZWMCMZNZNZNZNWEWFWHWLNZNZNDBGWMBMZWTXBWEXCWSXAWFXCWOWHWRWLXCWNWGJWMB
+      AUCZOXCWPWJWQWKXCWNWGWIXDUDWMBCUEUFUFPPWEWMGHZWTXEWFWOWNETZAIZMZDEUGZNZNZ
+      NZNXEWTNECGXFCMZXLWTXEXMXKWSWFXMXJWRWOXMXHWPXIWQXMXGWIWNXFCAUCUHXFCWMUKUF
+      PPPXEXFGHZXLXEXNXLWFXEXNLZXKXOWMFTZIZJKZXQXFXPIZMZLZXINZNXOWMQIZJKZXILZXI
+      NZNXOWMUATZIZJKZYHXFYGIZMZLZXINZNXOYHRIZJKZYNYJRIZMZLZXINZNXOXKNFUAADEFUI
+      XPQMZYBYFXOYTYAYEXIYTXRYDXTXIYTXQYCJXPQWMSZOYTXQWMXSXFYTXQYCWMUUAWMUJULYT
+      XSXFQIXFXPQXFSXFUJULUMUNUOPFUAUGZYBYMXOUUBYAYLXIUUBXRYIXTYKUUBXQYHJXPYGWM
+      SZOUUBXQYHXSYJUUCXPYGXFSUMUNUOPXPYGRIZMZYBYSXOUUEYAYRXIUUEXRYOXTYQUUEXQYN
+      JUUEXQWMUUDIYNXPUUDWMSWMYGRUPUQZOUUEXQYNXSYPUUFUUEXSXFUUDIYPXPUUDXFSXFYGR
+      UPUQUMUNUOPXPAMZYBXKXOUUGYBWOXHLZXINXKUUGYAUUHXIUUGXRWOXTXHUUGXQWNJXPAWMS
+      ZOUUGXQWNXSXGUUIXPAXFSUMUNUOWOXHXIURVAPYFXOYDXIUSVBYGGHZXOYMYSUUJXEXNYMYS
+      NUUJXEXNUBZYRYLXIUUKYRYLUUKYRLZYIYKYOYIUUKYQYOYIRJKYHRUTVCVKUULYHGHZYJGHZ
+      YQYOYKUULXEUUJUUMUUJXEXNYRVDUUJXEXNYRVEZWMYGVFVGUULXNUUJUUNUUJXEXNYRVHUUO
+      XFYGVFVGUUKYOYQVIUUKYOYQVLYHYJVJVMVNVOVPVQWBVRVSVOVSVTVSVTWCBCAUCWA $.
+      $( [24-Jan-2015] $)
+  $}
+
+  $( Cancellation law for natural addition with a non-null condition. 
+     (Contributed by SF, 29-Jan-2015.) $)
+  preaddccan2 $p |- ( ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) /\
+  ( M +c N ) =/= (/) ) -> ( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
+    ( cplc wceq cnnc w3a c0 wne wa addccom eqeq12i wb 3anrot neeq1i preaddccan1
+    wcel syl2anb syl5bb ) BCDZBADZECBDZABDZEZBFQZCFQZAFQZGZTHIZJCAEZTUBUAUCBCKZ
+    BAKLUHUFUGUEGUBHIUDUJMUIUEUFUGNTUBHUKOBCAPRS $.
+    $( [29-Jan-2015] $)
+
+  ${
+    $d A x $.
+    $( If the empty set is a finite cardinal, then it is a maximal element. 
+       (Contributed by SF, 19-Jan-2015.) $)
+    nulge $p |- ( ( (/) e. Nn /\ A e. V ) -> << A , (/) >> e. <_[fin] ) $=
+      ( vx c0 cnnc wcel wa copk clefin cv cplc wceq wrex addcnul1 eqcomi eqeq2d
+      addceq2 rspcev mpan2 adantr wb opklefing ancoms mpbird ) DEFZABFZGADHIFZ
+      DACJZKZLZCEMZUEUKUFUEDADKZLZUKULDANOUJUMCDEUHDLUIULDUHDAQPRSTUFUEUGUKUACA
+      DBEUBUCUD $.
+      $( [19-Jan-2015] $)
+  $}
+
+
+  ${
+    $d A x $.
+    $( Irreflexive law for finite less than. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    ltfinirr $p |- ( A e. Nn -> -. << A , A >> e. <[fin] ) $=
+      ( vx cnnc wcel copk cltfin c0 wne cv cplc c1c wceq wa wn wi 0cnsuc necomi
+      wrex c0c wb df-ne addcid1 eqcomi addcass eqeq12i simpll peano1 a1i peano2
+      mpbi adantl neeq1i biimpri ad2antlr preaddccan2 syl31anc syl5bb mtbiri ex
+      nrexdv imnan sylib opkltfing anidms mtbird ) ACDZAAEFDZAGHZAABIZJKJZLZBCR
+      ZMZVFVHVLNZOVMNVFVHVNVFVHMZVKBCVOVICDZMZVKSVIKJZLZSVRHVSNVRSVIPQSVRUAUJVK
+      ASJZAVRJZLZVQVSAVTVJWAVTAAUBZUCAVIKUDUEVQVFSCDZVRCDZVTGHZWBVSTVFVHVPUFWDV
+      QUGUHVPWEVOVIUIUKVHWFVFVPWFVHVTAGWCULUMUNVRASUOUPUQURUTUSVHVLVAVBVFVGVMTB
+      AACCVCVDVE $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d C x y z $.
+    $( Transitivity law for finite less than and less than or equal. 
+       (Contributed by SF, 2-Feb-2015.) $)
+    leltfintr $p |- ( ( A e. Nn /\ B e. Nn /\ C e. Nn ) ->
+       ( ( << A , B >> e. <_[fin] /\ << B , C >> e. <[fin] ) ->
+         << A , C >> e. <[fin] ) ) $=
+      ( vx vy vz cnnc wcel copk cltfin cv cplc wceq wrex wi wb wa c0 wne c1c
+      w3a clefin opklefing 3adant3 simpld a1i nncaddccl 3adant1 addcass addceq1
+      addcnnul ax-mp addceq2 syl rspcev syl2anc eqeq1 rexbidv syl5ibrcom 3expa
+      eqeq2d adantllr rexlimdva anim12d addcexg adantlr simplr opkltfing adantr
+      cvv 3imtr4d opkeq1 eleq1d imbi1d 3adant2 sylbid imp3a ) AGHZBGHZCGHZUAZAB
+      IUBHZBCIZJHZACIJHZWAWBBADKZLZMZDGNZWDWEOZVRVSWBWIPVTDABGGUCUDVRVTWIWJOVSV
+      RVTQZWHWJDGWKWFGHZQZWJWHWGCIZJHZWEOWMWGRSZCWGEKZLZTLZMZEGNZQZARSZCAFKZLZT
+      LZMZFGNZQZWOWEWMWPXCXAXHWPXCOWMWPXCWFRSAWFUKUEUFWMWTXHEGVRWLWQGHZWTXHOZVT
+      VRWLXJXKVRWLXJUAZXHWTWSXFMZFGNZXLWFWQLZGHZWSAXOLZTLZMZXNWLXJXPVRWFWQUGUHX
+      SXLWRXQMXSAWFWQUIWRXQTUJULUFXMXSFXOGXDXOMZXFXRWSXTXEXQMXFXRMXDXOAUMXEXQTU
+      JUNVAUOUPWTXGXMFGCWSXFUQURUSUTVBVCVDWMWGVJHZVTWOXBPVRWLYAVTAWFGGVEVFVRVTW
+      LVGEWGCVJGVHUPWKWEXIPWLFACGGVHVIVKWHWDWOWEWHWCWNJBWGCVLVMVNUSVCVOVPVQ $.
+      $( [2-Feb-2015] $)
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d C x y z $.
+    $( Transitivity law for finite less than. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    ltfintr $p |- ( ( A e. Nn /\ B e. Nn /\ C e. Nn ) ->
+       ( ( << A , B >> e. <[fin] /\ << B , C >> e. <[fin] ) ->
+         << A , C >> e. <[fin] ) ) $=
+      ( vx vy vz cnnc wcel c0 cv cplc c1c wceq wrex wa cltfin addceq1 opkltfing
+      copk wb w3a wne an4 wi simpl a1i reeanv addccom peano2 syl5eqel nncaddccl
+      sylan2 adantl syl eqeq2d biimpa addceq2 addcass syl6eqr rspcev ex syl2im
+      rexlimdvva syl5bir anim12d syl5bi 3adant3 3adant1 anbi12d 3adant2 3imtr4d
+      eqtri ) AGHZBGHZCGHZUAZAIUBZBADJZKZLKZMZDGNZOZBIUBZCBEJZKZLKZMZEGNZOZOZVQ
+      CAFJZKZLKZMZFGNZOZABSPHZBCSPHZOACSPHZWKVQWDOZWBWIOZOVPWQVQWBWDWIUCVPXAVQX
+      BWPXAVQUDVPVQWDUEUFXBWAWHOZEGNDGNVPWPWAWHDEGGUGVPXCWPDEGGVPVRGHZWEGHZOZOV
+      RLWEKZKZGHZXCCVTWEKZLKZMZWPXFXIVPXEXDXGGHXIXEXGWELKGLWEUHWEUIUJVRXGUKULUM
+      WAWHXLWAWGXKCWAWFXJMWGXKMBVTWEQWFXJLQUNUOUPXIXLWPWOXLFXHGWLXHMZWNXKCXMWMX
+      JMWNXKMXMWMAXHKZXJWLXHAUQXJVSXGKXNVSLWEURAVRXGURVLUSWMXJLQUNUOUTVAVBVCVDV
+      EVFVPWRWCWSWJVMVNWRWCTVODABGGRVGVNVOWSWJTVMEBCGGRVHVIVMVOWTWQTVNFACGGRVJV
+      K $.
+      $( [29-Jan-2015] $)
+  $}
+
+  $( Asymmetry law for finite less than. 
+     (Contributed by SF, 29-Jan-2015.) $)
+  ltfinasym $p |- ( ( A e. Nn /\ B e. Nn ) ->
+   ( << A , B >> e. <[fin] -> -. << B , A >> e. <[fin] ) ) $=
+    ( cnnc wcel wa copk cltfin wn ltfinirr ad2antrr wi ltfintr 3anidm13 expdimp
+    mtod ex ) ACDZBCDZEZABFGDZBAFGDZHSTEUAAAFGDZQUBHRTAIJSTUAUBQRTUAEUBKABALMNO
+    P $.
+    $( [29-Jan-2015] $)
+
+  $( Cardinal zero is a minimal element for finite less than or equal. 
+     (Contributed by SF, 29-Jan-2015.) $)
+  0cminle $p |- ( A e. Nn -> << 0c , A >> e. <_[fin] ) $=
+    ( cnnc wcel c0c copk cplc clefin addcid2 opkeq2i peano1 lefinaddc syl5eqelr
+    mpan ) ABCZDAEDDAFZEZGOADAHIDBCNPGCJDABKML $.
+    $( [29-Jan-2015] $)
+
+  ${
+    $d A x $.
+    $( One plus a finite cardinal is strictly greater. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    ltfinp1 $p |- ( ( A e. V /\ A =/= (/) ) ->
+       << A , ( A +c 1c ) >> e. <[fin] ) $=
+      ( vx wcel c0 wne wa c1c cplc copk cltfin wceq cnnc wrex simpr c0c addcid1
+      cv peano1 cvv addceq1i eqcomi addceq2 addceq1d eqeq2d rspcev mp2an jctir
+      wb 1cex addcexg mpan2 opkltfing mpdan adantr mpbird ) ABDZAEFZGZAAHIZJKDZ
+      URUTACRZIZHIZLZCMNZGZUSURVFUQUROPMDUTAPIZHIZLZVFSVIUTVHAHAQUAUBVEVJCPMVBP
+      LZVDVIUTVKVCVHHVBPAUCUDUEUFUGUHUQVAVGUIZURUQUTTDZVLUQHTDVMUJAHBTUKULCAUTB
+      TUMUNUOUP $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.
+    $( Transfer from less than or equal to less than. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    lefinlteq $p |- ( ( A e. V /\ B e. W /\ A =/= (/) ) ->
+       ( << A , B >> e. <_[fin] <-> ( << A , B >> e. <[fin] \/ A = B ) ) ) $=
+      ( vx vy wcel cv cplc wceq cnnc wrex c1c wo wb c0c addceq2 eqeq1 rexbidv
+      wa c0 wne w3a copk clefin nnc0suc addcid1 syl6req addcass syl6eqr orim12i
+      cltfin reximi sylbi orcomd eqeq2 syl5ibrcom rexlimiv eqeq2i peano2 eqeq2d
+      orbi12d rspcev sylan rexlimiva peano1 eqcomi mp2an mpbii jaoi impbii a1i
+      sylan2b opklefing 3adant3 adantr ibar adantl bitr4d orbi1d 3impa 3bitr4d
+      opkltfing ) ACGZBDGZAUAUBZUCZBAEHZIZJZEKLZBAFHZIMIZJZFKLZABJZNZABUDZUEGZW
+      RULGZWPNZWKWQOWGWKWQWJWQEKWHKGZWQWJWIWMJZFKLZAWIJZNXBXEXDXBWHPJZWHWLMIZJZ
+      FKLZNXEXDNFWHUFXFXEXIXDXFWIAPIZAWHPAQZAUGZUHXHXCFKXHWIAXGIZWMWHXGAQZAWLMU
+      IZUJUMUKUNUOWJWOXDWPXEWJWNXCFKBWIWMRSBWIAUPVBUQURWOWKWPWNWKFKWNWLKGZBXMJZ
+      WKWMXMBXOUSXPXGKGXQWKWLUTWJXQEXGKXHWIXMBXNVAVCVDVMVEWPXEEKLZWKPKGAXJJZXRV
+      FXJAXLVGXEXSEPKXFWIXJAXKVAVCVHWPXEWJEKABWIRSVIVJVKVLWDWEWSWKOWFEABCDVNVOW
+      DWEWFXAWQOWDWETZWFTZWTWOWPYAWTWFWOTZWOXTWTYBOWFFABCDWCVPWFWOYBOXTWFWOVQVR
+      VSVTWAWB $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a c $.  $d a d $.  $d a t $.  $d a w $.  $d a y $.  $d a z $.
+    $d b c $.  $d b d $.  $d b t $.  $d b w $.  $d b y $.  $d b z $.  $d c d $.
+    $d c t $.  $d c w $.  $d c x $.  $d c y $.  $d c z $.  $d d t $.  $d d w $.
+    $d d y $.  $d d z $.  $d t w $.  $d t x $.  $d t y $.  $d t z $.  $d w x $.
+    $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
+
+    $( Finite less than is stratified. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    ltfinex $p |- <[fin] e. _V $=
+      ( vx vt vc va vb vd cssetk csik cpw1 csn copk wceq wrex wa wex opksnelsik
+      wcel snex 3bitri sikex vy vz cltfin cvv cxpk cins3k cins2k cin c1c ccompl
+      vw cimak cun csymdif cdif cimagek cnnc c0 cv wne cplc df-ltfin elin elvvk
+      cab anbi1i 19.41vv eleq1 opkex elimak elpw12 r19.41v bitr4i exbii rexcom4
+      wn df-rex 3bitr4i opkeq1 eleq1d ceqsexv elpw131c 19.41v excom wb elpw161c
+      wel elsymdif otkelins3k vex elssetk otkelins2k elpw181c ndisjrelk elcompl
+      bitri notbii df-ne con2bii elpw1111c orbi12i elun bibi12i wal dfcleq alex
+      wo anbi12i rexcom df-addc eqeq2i abeq2 opkelimagek dfaddc2 addcex addceq1
+      eqeq2d rexbii opkelxpk mpbiran2 eldif anbi2i syl6bb pm5.32i 2exbii bitr3i
+      elsnc ancom abbi2i eqtr4i vvex xpkex ssetkex ins3kex ins2kex pw1ex complex
+      inex imakex symdifex 1cex unex addcexlem imagekex nncex difex eqeltri ) U
+      CUDUDUEZGHZHZHZHZUFZUUJUFZUGZGUFZUGZUGZUGZUUPGUGZUHZUIIZIZULZUJZHZHZHZHZH
+      ZHZHZUFZUULHZUFZUGZUGZUVNHZHZHZHZUFZUVSUFZUGZUMZUNZUVCIZIZIZIZIZIZIZIZIZU
+      LZUJZUHZUHZUWLULZUHZUWJULZUGZUNZUWJULZUJZUVEUFUUTUGUUQUUNUMUNUWHULUOZUVCU
+      LZUPZUGZUGZUHZUWGULZUQIZIZULZURJZUDUEZUOZUHZUDUCAUSZUAUSZUBUSZKZLZUYBURUT
+      ZUYCUYBUKUSZVAZUIVAZLZUKUQMZNZNZUBOUAOZAVEUXTAUAUBUKVBUYNAUXTUYAUXTQUYAUU
+      HQZUYAUXSQZNUYEUBOUAOZUYPNZUYNUYAUUHUXSVCUYOUYQUYPUAUBUYAVDVFUYRUYEUYPNZU
+      BOUAOUYNUYEUYPUAUBVGUYSUYMUAUBUYEUYPUYLUYEUYPUYDUXSQZUYLUYAUYDUXSVHUYDUXP
+      QZUYDUXRQZVPZNUYKUYBURLZVPZNZUYTUYLVUAUYKVUCVUEVUABUSZUYDKZUXMQZBUXOMZVUG
+      UYGJZJZLZVUINZBOZUKUQMZUYKBUXMUXOUYDUYBUYCVIZVJVUGUXOQZVUINZBOVUNUKUQMZBO
+      VUJVUPVUSVUTBVUSVUMUKUQMZVUINVUTVURVVAVUIUKVUGUQVKVFVUMVUIUKUQVLVMVNVUIBU
+      XOVQVUNUKBUQVOVRVUOUYJUKUQVUOVULUYDKZUXMQZUYAUYHLZUYCUYAUIVAZLZNZAOZUYJVU
+      IVVCBVULVUKRZVUMVUHVVBUXMVUGVULUYDVSVTWAVVCVUGVVBKZUXLQZBUWGMZVUGUYAJZJZJ
+      ZJZLZVVKNZBOZAOZVVHBUXLUWGVVBVULUYDVIZVJVUGUWGQZVVKNZBOVVRAOZBOVVLVVTVWCV
+      WDBVWCVVQAOZVVKNVWDVWBVWEVVKAVUGWBVFVVQVVKAWCVMVNVVKBUWGVQVVRABWDVRVVSVVG
+      AVVSVVPVVBKZUXLQZVWFUXFQZVWFUXKQZNVVGVVKVWGBVVPVVORZVVQVVJVWFUXLVUGVVPVVB
+      VSVTWAVWFUXFUXKVCVWHVVDVWIVVFVWFUXEQZVPCAWGZDUSZEUSZUHZURLZCUSZVWMVWNUMZL
+      ZNZEUYGMDUYBMZWEZVPZCOZVPZVWHVVDVWKVXDVWKVUGVWFKZUXDQZBUWJMZVUGVWQJZJZJZJ
+      ZJZJZJZLZVXGNZBOZCOZVXDBUXDUWJVWFVVPVVBVIZVJVUGUWJQZVXGNZBOVXQCOZBOVXHVXS
+      VYBVYCBVYBVXPCOZVXGNVYCVYAVYDVXGCVUGWFVFVXPVXGCWCVMVNVXGBUWJVQVXQCBWDVRVX
+      RVXCCVXRVXOVWFKZUXDQZVYEUUMQZVYEUXCQZWEZVPVXCVXGVYFBVXOVXNRVXPVXFVYEUXDVU
+      GVXOVWFVSVTWAVYEUUMUXCWHVYIVXBVYGVWLVYHVXAVYGVXMVVPKUULQVXLVVOKUUKQZVWLVX
+      MVVPVVBUULVXLRZVWJVWAWIVXLVVOUUKVXKRZVVNRPVYJVXKVVNKUUJQVXJVVMKUUIQZVWLVX
+      KVVNUUJVXJRZVVMRZPVXJVVMUUIVXIRZUYARPVYMVXIUYAKGQVWLVXIUYAGVWQRZAWJZPVWQU
+      YACWJZVYRWKWPSSVXMVVBKZUXBQZEUKWGZVWTDUYBMZNZEOZVYHVXAWUAVUGVYTKZUXAQZBUW
+      JMZVUGVWNJZJZJZJZJZJZJZLZWUGNZBOZEOZWUEBUXAUWJVYTVXMVVBVIZVJVYAWUGNZBOWUQ
+      EOZBOWUHWUSWVAWVBBWVAWUPEOZWUGNWVBVYAWVCWUGEVUGWFVFWUPWUGEWCVMVNWUGBUWJVQ
+      WUQEBWDVRWURWUDEWURWUOVYTKZUXAQZWVDUUOQZWVDUWTQZNWUDWUGWVEBWUOWUNRZWUPWUF
+      WVDUXAVUGWUOVYTVSVTWAWVDUUOUWTVCWVFWUBWVGWUCWVFWUMVVBKUUNQWUKVULKUUJQZWUB
+      WUMVXMVVBUUNWULRZVYKVWAWLWUKVULUYDUUJWUJRZVVIVUQWIWVIWUJVUKKUUIQWUIUYGKGQ
+      WUBWUJVUKUUIWUIRZUYGRPWUIUYGGVWNRZUKWJZPVWNUYGEWJZWVNWKSSWVGDUAWGZVWTNZDO
+      ZWUCWVGVUGWVDKZUWSQZBUWLMZVUGVWMJZJZJZJZJZJZJZJZJZLZWVTNZBOZDOZWVRBUWSUWL
+      WVDWUOVYTVIZVJVUGUWLQZWVTNZBOWWLDOZBOWWAWWNWWQWWRBWWQWWKDOZWVTNWWRWWPWWSW
+      VTDVUGWMVFWWKWVTDWCVMVNWVTBUWLVQWWLDBWDVRWWMWVQDWWMWWJWVDKZUWSQZWWTUUSQZW
+      WTUWRQZNWVQWVTWXABWWJWWIRZWWKWVSWWTUWSVUGWWJWVDVSVTWAWWTUUSUWRVCWXBWVPWXC
+      VWTWXBWWHVYTKUURQWWFVVBKUUQQZWVPWWHWUOVYTUURWWGRZWVHWUTWLWWFVXMVVBUUQWWER
+      ZVYKVWAWLWXEWWDUYDKUUPQWWBUYBKGQWVPWWDVULUYDUUPWWCRZVVIVUQWLWWBUYBUYCGVWM
+      RZUAWJZUBWJZWIVWMUYBDWJZWXJWKSSWXCWWTUVMQZWWTUWQQZNVWTWWTUVMUWQVCWXMVWPWX
+      NVWSWXMWWHWUOKUVLQWWGWUNKUVKQZVWPWWHWUOVYTUVLWXFWVHWUTWIWWGWUNUVKWWFRZWUM
+      RZPWXOWWFWUMKUVJQWWEWULKUVIQZVWPWWFWUMUVJWXGWVJPWWEWULUVIWWDRZWUKRZPWXRWW
+      DWUKKUVHQWWCWUJKUVGQZVWPWWDWUKUVHWXHWVKPWWCWUJUVGWWBRZWVLPWYAWWBWUIKUVFQV
+      WMVWNKZUVEQZVWPWWBWUIUVFWXIWVMPVWMVWNUVEWXLWVOPWYCUVDQZVPVWOURUTZVPWYDVWP
+      WYEWYFVWMVWNWXLWVOWNWQWYCUVDVWMVWNVIWOWYFVWPVWOURWRWSVRSSSSWWTUWPQZVPFCWG
+      ZFUSZVWRQZWEZVPZFOZVPZWXNVWSWYGWYMWYGVUGWWTKZUWFQZBUWOMZVUGWYIJZJZJZJZJZJ
+      ZJZJZJZJZJZJZLZWYPNZBOZFOZWYMBUWFUWOWWTWWJWVDVIZVJVUGUWOQZWYPNZBOXUKFOZBO
+      WYQXUMXUPXUQBXUPXUJFOZWYPNXUQXUOXURWYPFVUGWTVFXUJWYPFWCVMVNWYPBUWOVQXUKFB
+      WDVRXULWYLFXULXUIWWTKZUWFQZXUSUVQQZXUSUWEQZWEZVPWYLWYPXUTBXUIXUHRXUJWYOXU
+      SUWFVUGXUIWWTVSVTWAXUSUVQUWEWHXVCWYKXVAWYHXVBWYJXVAXUGWVDKZUVPQXUEVYTKUVO
+      QZWYHXUGWWJWVDUVPXUFRZWXDWWOWLXUEWUOVYTUVOXUDRZWVHWUTWLXVEXUCVXMKUVNQXUBV
+      XLKUULQZWYHXUCVXMVVBUVNXUBRZVYKVWAWIXUBVXLUULXUARZVYLPXVHXUAVXKKUUKQWYTVX
+      JKUUJQZWYHXUAVXKUUKWYTRZVYNPWYTVXJUUJWYSRZVYPPXVKWYSVXIKUUIQWYRVWQKGQWYHW
+      YSVXIUUIWYRRZVYQPWYRVWQGWYIRZVYSPWYIVWQFWJZVYSWKSSSSXUSUWBQZXUSUWDQZXGFDW
+      GZFEWGZXGXVBWYJXVQXVSXVRXVTXVQXUGWWJKUWAQXUFWWIKUVTQZXVSXUGWWJWVDUWAXVFWX
+      DWWOWIXUFWWIUVTXUERWWHRPXWAXUEWWHKUVSQXUDWWGKUVRQZXVSXUEWWHUVSXVGWXFPXUDW
+      WGUVRXUCRZWXPPXWBXUCWWFKUVNQXUBWWEKUULQZXVSXUCWWFUVNXVIWXGPXUBWWEUULXVJWX
+      SPXWDXUAWWDKUUKQWYTWWCKUUJQZXVSXUAWWDUUKXVLWXHPWYTWWCUUJXVMWYBPXWEWYSWWBK
+      UUIQWYRVWMKGQXVSWYSWWBUUIXVNWXIPWYRVWMGXVOWXLPWYIVWMXVPWXLWKSSSSSXVRXVDUW
+      CQXUEWUOKUVSQZXVTXUGWWJWVDUWCXVFWXDWWOWLXUEWUOVYTUVSXVGWVHWUTWIXWFXUDWUNK
+      UVRQXUCWUMKUVNQZXVTXUDWUNUVRXWCWXQPXUCWUMUVNXVIWVJPXWGXUBWULKUULQXUAWUKKU
+      UKQZXVTXUBWULUULXVJWXTPXUAWUKUUKXVLWVKPXWHWYTWUJKUUJQWYSWUIKUUIQZXVTWYTWU
+      JUUJXVMWVLPWYSWUIUUIXVNWVMPXWIWYRVWNKGQXVTWYRVWNGXVOWVOPWYIVWNXVPWVOWKWPS
+      SSSXAXUSUWBUWDXBWYIVWMVWNXBVRXCWQSVNSWQWWTUWPXUNWOVWSWYKFXDWYNFVWQVWRXEWY
+      KFXFWPVRXHWPXHSVNSVWTDUYBVQVMXHSVNSVXMVVPVVBUXBVYKVWJVWAWLVXAWUCEUYGMWUEV
+      WTDEUYBUYGXIWUCEUYGVQWPVRXCWQSVNSWQVWFUXEVXTWOVVDUYAVXACVEZLVXBCXDVXEUYHX
+      WJUYACDEUYBUYGXJXKVXACUYAXLVXBCXFSVRVWIVVNUYDKUXJQUYAUYCKUXIQZVVFVVNVULUY
+      DUXJVYOVVIVUQWLUYAUYBUYCUXIVYRWXJWXKWLXWKUYCUXHUYAULZLVVFUYAUYCUXHVYRWXKX
+      MVVEXWLUYCUYAUIXNXKVMSXHSVNSVVFUYJAUYHUYBUYGWXJWVNXOVVDVVEUYIUYCUYAUYHUIX
+      PXQWASXRSVUBVUDVUBUYBUXQQZVUDVUBXWMUYCUDQWXKUYBUYCUXQUDWXJWXKXSXTUYBURWXJ
+      YGWPWQXHUYDUXPUXRYAUYLUYKUYFNVUFUYFUYKYHUYFVUEUYKUYBURWRYBWPVRYCYDYEYFSYI
+      YJUUHUXSUDUDYKYKYLUXPUXRUXMUXOUXLUWGUXFUXKUXEUXDUWJUUMUXCUULUUKUUJUUIGYMT
+      TZTTZYNUXBUXAUWJUUOUWTUUNUUJXWNYNYOUWSUWLUUSUWRUURUUQUUPGYMYNZYOYOYOUVMUW
+      QUVLUVKUVJUVIUVHUVGUVFUVEUVDUVAUVCUUPUUTXWPGYMYOYRUVBUIUUAYPYPZYSYQTTTTTT
+      TYNUWPUWFUWOUVQUWEUVPUVOUVNUULXWOTZYNYOYOUWBUWDUWAUVTUVSUVRUVNXWRTTZTTYNU
+      WCUVSXWSYNYOUUBYTUWNUWMUWLUWKUWJUWIUWHUWGUVCXWQYPZYPYPYPZYPYPZYPYPYPYSYQY
+      RYRXXBYSYRXXAYSYOYTXXAYSYQUXJUXIUXHUXGUVCUUCXWQYSUUDYOYOYRXWTYSUXNUQUUEYP
+      YPYSUXQUDURRYKYLUUFYRUUG $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d m n t $.
+    $( Lemma for ~ ltfintri .  Establish stratification for induction. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    ltfintrilem1 $p |- { m | ( n e. Nn -> ( m =/= (/) ->
+     ( << m , n >> e. <[fin] \/ m = n \/ << n , m >> e. <[fin] ) )
+                                                      ) } e. _V $=
+      ( vt cv wcel wn cab c0 csn cltfin cimak cun copk weq wi wo unab elun unex
+      bitri cnnc ccnvk wne w3o cvv wceq wrex vex elimak opkeq1 eleq1d opkelcnvk
+      df-sn rexsn elsnc orbi12i df-3or 3bitr4i abbi2i uneq12i eqtri uneq2i df-ne
+      imor imbi1i df-or bitr4i orbi2i abbii 3eqtr4i abexv ltfinex cnvkex imakex
+      snex eqeltrri ) BDZUAEZFZAGZHIZJUBZVQIZKZWCLZJWCKZLZLZLZVRADZHUCZWJVQMJEZ
+      ABNZVQWJMZJEZUDZOZOZAGZUEVTWJHUFZWPPZAGZLVSXAPZAGWIWSVSXAAQWHXBVTWHWTAGZW
+      PAGZLXBWAXDWGXEAHUMWPAWGWJWEEZWJWFEZPWLWMPZWOPWJWGEWPXFXHXGWOXFWJWDEZWJWC
+      EZPXHWJWDWCRXIWLXJWMXIWNWBEZWLXICDZWJMZWBEZCWCUGXKCWBWCWJAUHZUIXNXKCVQBUH
+      ZCBNZXMWNWBXLVQWJUJZUKUNTVQWJJXPXOULTWJVQXOUOUPTXGXMJEZCWCUGWOCJWCWJXOUIX
+      SWOCVQXPXQXMWNJXRUKUNTUPWJWEWFRWLWMWOUQURUSUTWTWPAQVAVBWRXCAWRVSWQPXCVRWQ
+      VDWQXAVSWQWTFZWPOXAWKXTWPWJHVCVEWTWPVFVGVHTVIVJVTWHVSAVKWAWGHVOWEWFWDWCWB
+      WCJVLVMVQVOZVNYASJWCVLYAVNSSSVP $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d M m n k p $.  $d N m n k p $.
+    $( Trichotomy law for finite less than. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    ltfintri $p |- ( ( M e. Nn /\ N e. Nn /\
+              M =/= (/) ) ->
+       ( << M , N >> e. <[fin] \/ M = N \/ << N , M >> e. <[fin] ) ) $=
+      ( vn vk cnnc wcel wne copk cltfin wceq w3o opkeq2 eleq1d opkeq1 3orbi123d
+      vp c0 wi imbi2d c0c vm cv eqeq2 weq cplc ltfintrilem1 neeq1 eqeq1 imbi12d
+      c1c wa wo clefin 0cminle adantr cvv wb 0cex lefinlteq mp3an1 orcom syl6bb
+      mpbid 3mix2 3mix1 jaoi syl ex addcnnul simpld 3ad2ant3 wrex addc32 eqeq2i
+      w3a rexbii biimpi adantl a1i opkltfing 3adant3 simp1 peano2 simp2 syl2anc
+      opklefing 3imtr4d syl3an1 sylibd ltfinp1 sylan2 3adant2 syl5ibcom ltfintr
+      syl6 3mix3 syl3anc mpan2d 3jaod embantd 3expia com23 a2d finds com12 3imp
+      vtoclga ) AEFZBEFZAQGZABHZIFZABJZBAHZIFZKZXIXHXJXPRZXHXJACUBZHZIFZAXRJZXR
+      AHZIFZKZRZRXHXQRCBEXRBJZYEXQXHYFYDXPXJYFXTXLYAXMYCXOYFXSXKIXRBALMXRBAUCYF
+      YBXNIXRBANMOSSXHXREFZYEYGDUBZQGZYHXRHZIFZDCUDZXRYHHZIFZKZRZRYGTQGZTXRHZIF
+      ZTXRJZXRTHZIFZKZRZRYGUAUBZQGZUUEXRHZIFZUACUDZXRUUEHZIFZKZRZRYGUUEUJUEZQGZ
+      UUNXRHZIFZUUNXRJZXRUUNHZIFZKZRZRYGYERDUAADCUFYHTJZYPUUDYGUVCYIYQYOUUCYHTQ
+      UGUVCYKYSYLYTYNUUBUVCYJYRIYHTXRNMYHTXRUHUVCYMUUAIYHTXRLMOUISDUAUDZYPUUMYG
+      UVDYIUUFYOUULYHUUEQUGUVDYKUUHYLUUIYNUUKUVDYJUUGIYHUUEXRNMYHUUEXRUHUVDYMUU
+      JIYHUUEXRLMOUISYHUUNJZYPUVBYGUVEYIUUOYOUVAYHUUNQUGUVEYKUUQYLUURYNUUTUVEYJ
+      UUPIYHUUNXRNMYHUUNXRUHUVEYMUUSIYHUUNXRLMOUISYHAJZYPYEYGUVFYIXJYOYDYHAQUGU
+      VFYKXTYLYAYNYCUVFYJXSIYHAXRNMYHAXRUHUVFYMYBIYHAXRLMOUISYGYQUUCYGYQUKZYTYS
+      ULZUUCUVGYRUMFZUVHYGUVIYQXRUNUOUVGUVIYSYTULZUVHTUPFYGYQUVIUVJUQURTXRUPEUS
+      UTYSYTVAVBVCYTUUCYSYTYSUUBVDYSYTUUBVEVFVGVHUUEEFZYGUUMUVBUVKYGUUMUVBRUVKY
+      GUKUUOUUMUVAUVKYGUUOUUMUVARUVKYGUUOVOZUUFUULUVAUUOUVKUUFYGUUOUUFUJQGUUEUJ
+      VIVJZVKUVLUUHUVAUUIUUKUVLUUHUUQUURULZUVAUVLUUHUUPUMFZUVNUVLUUFXRUUEPUBZUE
+      UJUEZJZPEVLZUKZXRUUNUVPUEZJZPEVLZUUHUVOUVTUWCRUVLUVSUWCUUFUVSUWCUVRUWBPEU
+      VQUWAXRUUEUVPUJVMVNVPVQVRVSUVKYGUUHUVTUQUUOPUUEXREEVTWAUVLUUNEFZYGUVOUWCU
+      QUVLUVKUWDUVKYGUUOWBZUUEWCZVGZUVKYGUUOWDZPUUNXREEWFWEWGUVKUWDYGUUOUVOUVNU
+      QUWFUUNXREEUSWHWIUUQUVAUURUUQUURUUTVEUURUUQUUTVDVFWOUVLUUIUUTUVAUVLUUEUUN
+      HZIFZUUIUUTUVKUUOUWJYGUUOUVKUUFUWJUVMUUEEWJWKWLZUUIUWIUUSIUUEXRUUNNMWMUUT
+      UUQUURWPZWOUVLUUKUUTUVAUVLUUKUWJUUTUWKUVLYGUVKUWDUUKUWJUKUUTRUWHUWEUWGXRU
+      UEUUNWNWQWRUWLWOWSWTXAXBVHXCXDXEXGXEXF $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d A x $.
+    $( Less than or equal to is reflexive. 
+       (Contributed by SF, 2-Feb-2015.) $)
+    lefinrflx $p |- ( A e. V -> << A , A >> e. <_[fin] ) $=
+      ( vx wcel copk clefin cv cplc wceq cnnc c0c peano1 addcid1 eqcomi addceq2
+      wrex eqeq2d rspcev mp2an wb opklefing anidms mpbiri ) ABDZAAEFDZAACGZHZI
+      ZCJPZKJDAAKHZIZUILUJAAMNUHUKCKJUFKIUGUJAUFKAOQRSUDUEUITCAABBUAUBUC $.
+      $( [2-Feb-2015] $)
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( Less than implies less than or equal. 
+       (Contributed by SF, 2-Feb-2015.) $)
+    ltlefin $p |- ( ( A e. V /\ B e. W ) ->
+             ( << A , B >> e. <[fin] -> << A , B >> e. <_[fin] ) ) $=
+      ( vx vy wcel wa c0 wne cv cplc c1c wceq cnnc wrex copk cltfin clefin wi
+      addcass eqeq2i peano2 addceq2 eqeq2d rspcev sylan2b rexlimiva adantl a1i
+      sylan opkltfing opklefing 3imtr4d ) ACGBDGHZAIJZBAEKZLMLZNZEOPZHZBAFKZLZN
+      ZFOPZABQZRGVFSGVAVETUOUTVEUPUSVEEOUSUQOGZBAUQMLZLZNZVEURVIBAUQMUAUBVGVHOG
+      VJVEUQUCVDVJFVHOVBVHNVCVIBVBVHAUDUEUFUKUGUHUIUJEABCDULFABCDUMUN $.
+      $( [2-Feb-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( Less than or equal is the same as negated less than. 
+       (Contributed by SF, 2-Feb-2015.) $)
+    lenltfin $p |- ( ( A e. Nn /\ B e. Nn ) ->
+       ( << A , B >> e. <_[fin] <-> -. << B , A >> e. <[fin] ) ) $=
+      ( cnnc wcel wa copk clefin cltfin wn ltfinirr adantr wi leltfintr expdimp
+      3anidm13 c0 wceq opkeq2 eleq1d wo mtod nulge ancoms anbi2d imbi12d mpbiri
+      ex eleq1 a1dd wne w3o simplr simpll simpr ltfintri 3orass sylib lefinrflx
+      syl3anc ord syl5ibrcom ltlefin jaod syld expcom pm2.61ine impbid ) ACDZBC
+      DZEZABFZGDZBAFHDZIZVJVLVNVJVLEVMAAFZHDZVJVPIZVLVHVQVIAJKKVJVLVMVPVHVIVLVM
+      EVPLABAMONUAUGVJVNVLLZLBPBPQZVJVLVNVSVJVLLVHPCDZEZAPFZGDZLVTVHWCACUBUCVSV
+      JWAVLWCVSVIVTVHBPCUHUDVSVKWBGBPARSUEUFUIVJBPUJZVRVJWDEZVNBAQZVKHDZTZVLWEV
+      MWHWEVMWFWGUKZVMWHTWEVIVHWDWIVHVIWDULVHVIWDUMVJWDUNBAUOUSVMWFWGUPUQUTWEWF
+      VLWGVJWFVLLWDVJVLWFVOGDZVHWJVIACURKWFVKVOGBAARSVAKVJWGVLLWDABCCVBKVCVDVEV
+      FVG $.
+      $( [2-Feb-2015] $)
+  $}
+
+  ${
+    $d A a $.  $d a b $.  $d a c $.  $d a d $.  $d a k $.  $d a m $.  $d a n $.
+    $d a x $.  $d B a $.  $d B b $.  $d b c $.  $d b d $.  $d b k $.  $d b m $.
+    $d b n $.  $d b t $.  $d b x $.  $d c d $.  $d c k $.  $d c m $.  $d c x $.
+    $d d k $.  $d d m $.  $d d x $.  $d k m $.  $d k x $.  $d m n $.  $d m t $.
+    $( A subset of a finite set is itself finite.  Theorem X.1.21 of
+       [Rosser] p. 527. 
+       (Contributed by SF, 19-Jan-2015.) $)
+    ssfin $p |- ( ( A e. V /\ B e. Fin /\ A C_ B ) -> A e. Fin ) $=
+      ( va vb vn vm vt vx wcel cfin wss cv wi wceq wa wal cssetk cvv wex imbi2d
+      vd vk vc sseq1 eleq1 imbi12d sseq2 imbi1d wel cnnc wrex elfin c0 c1c cplc
+      ccompl cimak cpw1 cxpk cin cab wn elcompl alcom impexp albii 19.21v bitri
+      vex copk elimak csn df-rex anbi1i 19.41v bitr4i exbii excom opkeq1 eleq1d
+      el1c ceqsexv elssetk opkelxpk mpbiran2 snelpw1 ancom wb opkelssetkg mp2an
+      snex elin anbi12i exanali 3bitri con2bii abbi2i ssetkex finex imakex vvex
+      complex pw1ex xpkex inex 1cex eqeltrri c0c eleq2 df-0c eleq2i elsnc syl6bb
+      anbi1d 2albidv weq elequ2 adantl sseq12 anbi12d adantr cbval2v ss0b sylib
+      biimpa 0fin syl6eqel wo w3a cun 3ad2ant2 syl5eq df-dif df-ss sylibr com23
+      cdif imp3a ex gen2 wpss sspss dfpss4 orbi1i simp1 snid simprbi mt2 undif1
+      eldif snssi ssequn2 simp3r eqeltrd difex nnsucelr syl12anc inass 3eqtr4ri
+      a1i ineq2i 3ad2ant3 difeq1d difsn eqtrd jca 3adant1r spc2gv 3ad2ant1 mpd
+      biimpi 3exp rexlimdv peano2 rspcev syl biimprd syl9 jaod syl5bi alrimivv
+      exp5c finds 19.21bbi exp3a rexlimiv sylbi vtoclga vtoclg 3imp ) ACJBKJZAB
+      LZAKJZUWLDMZBLZUWOKJZNZNUWLUWMUWNNZNDACUWOAOZUWRUWSUWLUWTUWPUWMUWQUWNUWOA
+      BUEUWOAKUFUGUAUWOEMZLZUWQNZUWREBKUXABOUXBUWPUWQUXABUWOUHUIUXAKJZEFUJZFUKU
+      LUXCFUXAUMUXEUXCFUKFMZUKJZUXEUXBUWQUXGUXEUXBPZUWQNZDEEGUJZUXBPZUWQNZEQDQZ
+      UXAUNOZUXBPZUWQNZEQDQUBUCUJZUDMZUBMZLZPZUXRKJZNZUBQUDQZUXAUCMZUOUPZJZUXBP
+      ZUWQNZEQDQZUXIEQDQGUCUXFRRKUQZURZUSZSUTZVAZUOURZUQZUXMGVBSUXMGUYQGMZUYQJU
+      YRUYPJZVCZUXMUYRUYPGVJZVDUXMUXLDQZEQUXJUXCDQZNZEQZUYTUXLDEVEVUBVUDEVUBUXJ
+      UXCNZDQVUDUXLVUFDUXJUXBUWQVFVGUXJUXCDVHVIVGUYSVUEUYSHMZUYRVKZUYOJZHUOULZU
+      XJVUCVCZPZETZVUEVCHUYOUOUYRVUAVLVUJVUGUOJZVUIPZHTZVUGUXAVMZOZVUIPZHTZETZV
+      UMVUIHUOVNVUPVUSETZHTVVAVUOVVBHVUOVURETZVUIPVVBVUNVVCVUIEVUGWBVOVURVUIEVP
+      VQVRVUSEHVSVQVUTVULEVUTVUQUYRVKZUYOJZVVDRJZVVDUYNJZPVULVUIVVEHVUQUXAWLZVU
+      RVUHVVDUYOVUGVUQUYRVTWAWCVVDRUYNWMVVFUXJVVGVUKUXAUYREVJZVUAWDVVGVUQUYMJZU
+      XAUYLJZVUKVVGVVJUYRSJVUAVUQUYRUYMSVVHVUAWEWFUXAUYLWGVVKUWOUXAVKRJZDUYKULZ
+      UXBUWQVCZPZDTZVUKDRUYKUXAVVIVLVVMUWOUYKJZVVLPZDTVVPVVLDUYKVNVVRVVODVVRVVL
+      VVQPVVOVVQVVLWHVVLUXBVVQVVNUWOSJZUXASJVVLUXBWIDVJZVVIUWOUXASSWJWKUWOKVVTV
+      DWNVIVRVIUXBUWQDWOWPWPWNWPVRWPUXJVUCEWOWPWQWPVQWRUYPUYOUORUYNWSUYMSUYLRUY
+      KWSKWTXCXAXDXBXEXFXGXAXCXHUYRXIOZUXLUXPDEVWAUXKUXOUWQVWAUXJUXNUXBVWAUXJUX
+      AXIJZUXNUYRXIUXAXJVWBUXAUNVMZJUXNXIVWCUXAXKXLUXAUNVVIXMVIXNXOUIXPGUCXQZUX
+      MEUCUJZUXBPZUWQNZEQDQUYDVWDUXLVWGDEVWDUXKVWFUWQVWDUXJVWEUXBGUCEXRXOUIXPVW
+      GUYCDEUDUBDUDXQZEUBXQZPZVWFUYAUWQUYBVWJVWEUXQUXBUXTVWIVWEUXQWIVWHUXAUXSUY
+      EUFXSUWOUXRUXAUXSXTYAVWHUWQUYBWIVWIUWOUXRKUFYBUGYCXNUYRUYFOZUXLUYIDEVWKUX
+      KUYHUWQVWKUXJUYGUXBUYRUYFUXAXJXOUIXPGFXQZUXLUXIDEVWLUXKUXHUWQVWLUXJUXEUXB
+      GFEXRXOUIXPUXPDEUXOUWOUNKUXOUWOUNLZUWOUNOUXNUXBVWMUXAUNUWOUHYFUWOYDYEYGYH
+      UUAUYEUKJZUYDUYJVWNUYDPZUYIDEVWOUYGUXBUWQVWOUXBUYGUWQUXBUXBIDUJVCZIUXAULZ
+      PZDEXQZYIZVWOUYGUWQNZUXBUWOUXAUUBZVWSYIVWTUWOUXAUUCVXBVWRVWSIUWOUXAUUDUUE
+      VIVWOVWRVXAVWSVWOUXBVWQVXAVWOVWQUXBVXAVWOVWPUXBVXANIUXAVWOIEUJZVWPUXBUYGU
+      WQVWOVXCVWPPZUXBUYGPZUWQVWOVXDVXEYJUXAIMZVMZYRZUYEJZUWOVXHLZPZUWQVWNVXDVX
+      EVXKUYDVWNVXDVXEYJZVXIVXJVXLVWNVXFVXHJZVCZVXHVXGYKZUYFJVXIVWNVXDVXEUUFVXN
+      VXLVXMVXFVXGJZVXFIVJZUUGVXMVXCVXPVCVXFUXAVXGUUKUUHUUIUVAVXLVXOUXAUYFVXLVX
+      OUXAVXGYKZUXAUXAVXGUUJVXDVWNVXRUXAOZVXEVXCVXSVWPVXCVXGUXALVXSVXFUXAUULVXG
+      UXAUUMYEYBYLYMVWNVXDUXBUYGUUNUUOVXHUYEVXFUXAVXGVVIVXFWLUUPZVXQUUQUURVXLUW
+      OVXHVAZUWOOVXJVXLVYAUWOUXAVAZVXGYRZUWOVYBVXGUQZVAUWOUXAVYDVAZVAVYCVYAUWOU
+      XAVYDUUSVYBVXGYNVXHVYEUWOUXAVXGYNUVBUUTVXLVYCUWOVXGYRZUWOVXLVYBUWOVXGVXEV
+      WNVYBUWOOZVXDUXBVYGUYGUXBVYGUWOUXAYOUVLYBUVCUVDVXDVWNVYFUWOOZVXEVWPVYHVXC
+      VXFUWOUVEXSYLUVFYMUWOVXHYOYPUVGUVHVWOVXDVXKUWQNZVXEUYDVYIVWNVVSVXHSJUYDVY
+      INVVTVXTUYCVYIUDUBUWOVXHSSUDDXQZUXSVXHOZPZUYAVXKUYBUWQVYLUXQVXIUXTVXJVYKU
+      XQVXIWIVYJUXSVXHUYEUFXSUXRUWOUXSVXHXTYAVYJUYBUWQWIVYKUXRUWOKUFYBUGUVIWKXS
+      UVJUVKUVMUWCUVNYQYSVWNVWSVXANUYDVWNUYGUXDVWSUWQVWNUYFUKJZUYGUXDNUYEUVOVYM
+      UYGUXDVYMUYGPEIUJZIUKULUXDVYNUYGIUYFUKVXFUYFUXAXJUVPIUXAUMYPYTUVQVWSUWQUX
+      DUWOUXAKUFUVRUVSYBUVTUWAYQYSUWBYTUWDUWEUWFUWGUWHUWIUWJUWK $.
+      $( [19-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y $.
+    $( If the universe is finite, then there is a unique natural containing any
+       set.  Theorem X.1.22 of [Rosser] p. 527. 
+       (Contributed by SF, 19-Jan-2015.) $)
+    vfinnc $p |- ( ( A e. V /\ _V e. Fin ) -> E! x e. Nn A e. x ) $=
+      ( vy wcel cvv cfin wa cv cnnc wrex weq wi wral wss ssv ssfin mp3an3 elfin
+      wreu sylib nnceleq ex rgen2a a1i eleq2 reu4 sylanbrc ) BCEZFGEZHZBAIZEZAJ
+      KZUMBDIZEZHZADLZMZDJNAJNZUMAJTUKBGEZUNUIUJBFOVABPBFCQRABSUAUTUKUSADJULJEU
+      OJEHUQURBULUOUBUCUDUEUMUPADJULUOBUFUGUH $.
+      $( [19-Jan-2015] $)
+  $}
+
+  ${
+    $d A x $.
+    $( The finite cardinality of a set exists. 
+       (Contributed by SF, 27-Jan-2015.) $)
+    ncfinex $p |- Nc[fin] A e. _V $=
+      ( vx cncfin cv cnnc wcel wa cio cvv df-ncfin iotaex eqeltri ) ACBDZEFAMFG
+      ZBHIBAJNBKL $.
+      $( [27-Jan-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( Equality theorem for finite cardinality. 
+       (Contributed by SF, 20-Jan-2015.) $)
+    ncfineq $p |- ( A = B -> Nc[fin] A = Nc[fin] B ) $=
+      ( vx wceq cv cnnc wcel cio cncfin eleq1 anbi2d iotabidv df-ncfin 3eqtr4g
+      wa ) ABDZCEZFGZAQGZOZCHRBQGZOZCHAIBIPTUBCPSUARABQJKLCAMCBMN $.
+      $( [20-Jan-2015] $)
+  $}
+
+  ${
+    $d A x $.
+    $( Properties of finite cardinal number.  Theorem X.1.23 of [Rosser]
+       p. 527 
+       (Contributed by SF, 20-Jan-2015.) $)
+    ncfinprop $p |- ( ( _V e. Fin /\ A e. V ) ->
+               ( Nc[fin] A e. Nn /\ A e. Nc[fin] A ) ) $=
+      ( vx wcel cvv cfin cncfin cnnc cio df-ncfin wreu vfinnc reiotacl syl5eqel
+      wa cv syl wceq eqcomi wb eleq2 reiota2 syl2anc mpbiri jca ancoms ) ABDZEF
+      DZAGZHDZAUIDZOUGUHOZUJUKULUICPZHDAUMDZOCIZHCAJZULUNCHKZUOHDCABLZUNCHMQNZU
+      LUKUOUIRZUIUOUPSULUJUQUKUTTUSURUNUKCHUIUMUIAUAUBUCUDUEUF $.
+      $( [20-Jan-2015] $)
+  $}
+
+  ${
+    $( Distribution law for finite cardinality. 
+       (Contributed by SF, 30-Jan-2015.) $)
+    ncfindi $p |- ( ( ( _V e. Fin /\ A e. V ) /\ B e. W /\ ( A i^i B ) = (/) )
+       -> Nc[fin] ( A u. B ) = ( Nc[fin] A +c Nc[fin] B ) ) $=
+      ( cvv cfin wcel wa cin c0 wceq w3a cun cncfin cnnc cplc syl2anc ncfinprop
+      simpld simprd simp1l simp1r simp2 unexg nncaddccl eladdci syl3anc nnceleq
+      simp3 syl22anc ) EFGZACGZHZBDGZABIJKZLZABMZNZOGZANZBNZPZOGZUQURGZUQVBGZUR
+      VBKUPUSVDUPUKUQEGZUSVDHUKULUNUOUAZUPULUNVFUKULUNUOUBZUMUNUOUCZABCDUDQUQER
+      QZSUPUTOGZVAOGZVCUPVKAUTGZUPUKULVKVMHVGVHACRQZSUPVLBVAGZUPUKUNVLVOHVGVIBD
+      RQZSUTVAUEQUPUSVDVJTUPVMVOUOVEUPVKVMVNTUPVLVOVPTUMUNUOUIABUTVAUFUGUQURVBU
+      HUJ $.
+      $( [30-Jan-2015] $)
+  $}
+
+  ${
+    $( If the universe is finite, then the cardinality of a singleton is
+       ` 1c ` . 
+       (Contributed by SF, 30-Jan-2015.) $)
+    ncfinsn $p |- ( ( _V e. Fin /\ A e. V ) -> Nc[fin] { A } = 1c ) $=
+      ( cvv cfin wcel wa csn cncfin cnnc c1c wceq ncfinprop mpan2 adantr simpld
+      snex 1cnnc a1i simprd snel1cg adantl nnceleq syl22anc ) CDEZABEZFZAGZHZIE
+      ZJIEZUGUHEZUGJEZUHJKUFUIUKUDUIUKFZUEUDUGCEUMAPUGCLMNZOUJUFQRUFUIUKUNSUEUL
+      UDABTUAUGUHJUBUC $.
+      $( [30-Jan-2015] $)
+  $}
+
+  ${
+    $( Equality law for finite cardinality.  Theorem X.1.24 of [Rosser]
+       p. 527. 
+       (Contributed by SF, 20-Jan-2015.) $)
+    ncfineleq $p |- ( ( _V e. Fin /\ A e. V /\ B e. W ) ->
+       ( A e. Nc[fin] B <-> Nc[fin] A = Nc[fin] B ) ) $=
+      ( cvv cfin wcel w3a cncfin wceq cnnc simpl ncfinprop 3adant3 3syl 3adant2
+      wa simpld adantr simprd simpr nnceleq syl22anc ex eleq2 syl5ibcom impbid
+      ) EFGZACGZBDGZHZABIZGZAIZULJZUKUMUOUKUMQZUNKGZULKGZAUNGZUMUOUPUKUQUSQZUQU
+      KUMLUHUIUTUJACMNZUQUSLOUKURUMUKURBULGZUHUJURVBQUIBDMPRSUKUSUMUKUQUSVATZSU
+      KUMUAAUNULUBUCUDUKUSUOUMVCUNULAUEUFUG $.
+      $( [20-Jan-2015] $)
+  $}
+
+  ${
+    $d A x t $.  $d B x t $.
+    eqpwrelk.1 $e |- A e. _V $.
+    eqpwrelk.2 $e |- B e. _V $.
+    $( Represent equality to power class via a Kuratowski relationship. 
+       (Contributed by SF, 26-Jan-2015.) $)
+    eqpwrelk $p |- ( << { A } , B >> e.
+              ~ ( ( Ins2_k SSet_k (+) Ins3_k SI_k SSet_k ) "_k
+                  ~P1 ~P1 1c ) <-> B = ~P A ) $=
+      ( vx vt csn copk cssetk cpw1 wcel wn cv wb wex wceq wa snex cvv 3bitri
+      cins2k csik cins3k csymdif c1c cimak wss ccompl cpw opkex elimak elpw121c
+      anbi1i 19.41v bitr4i exbii df-rex excom 3bitr4i opkeq1 ceqsexv otkelins2k
+      eleq1d elsymdif vex elssetk bitri otkelins3k opksnelsik opkelssetkg mp2an
+      wrex bibi12i notbii elcompl cab wal df-pw eqeq2i abeq2 alex ) AGZBHZIUAZI
+      UBZUCZUDZUEJJZUFZKZLEMZBKZWKAUGZNZLZEOZLZWCWIUHKBAUIZPZWJWPWJFMZWCHZWGKZF
+      WHVLZWTWKGZGZGZPZXBQZFOZEOZWPFWGWHWCWBBUJZUKWTWHKZXBQZFOXHEOZFOXCXJXMXNFX
+      MXGEOZXBQXNXLXOXBEWTULUMXGXBEUNUOUPXBFWHUQXHEFURUSXIWOEXIXFWCHZWGKZXPWDKZ
+      XPWFKZNZLWOXBXQFXFXERXGXAXPWGWTXFWCUTVCVAXPWDWFVDXTWNXRWLXSWMXRXDBHIKWLXD
+      WBBIWKRZARZDVBWKBEVEZDVFVGXSXDWBHWEKWKAHIKZWMXDWBBWEYAYBDVHWKAIYCCVIWKSKA
+      SKYDWMNYCCWKASSVJVKTVMVNTUPTVNWCWIXKVOWSBWMEVPZPWNEVQWQWRYEBEAVRVSWMEBVTW
+      NEWATUS $.
+      $( [26-Jan-2015] $)
+  $}
+
+  ${
+    $d A x t $.  $d B x t $.
+    eqpw1relk.1 $e |- A e. _V $.
+    eqpw1relk.2 $e |- B e. _V $.
+    $( Represent equality to unit power class via a Kuratowski relationship. 
+       (Contributed by SF, 21-Jan-2015.) $)
+    eqpw1relk $p |- ( << A , { B } >> e. ( ( ~P 1c X._k _V ) \
+  ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k )
+    "_k ~P1 ~P1 ~P1 1c ) ) <-> A = ~P1 B ) $=
+      ( vx vt csn copk c1c cvv wcel cssetk cpw1 wn wa cv wb snex bitri wex cxpk
+      cpw cins3k csik cins2k csymdif cimak wss cdif wceq opkelxpk mpbiran2 elpw
+      wal opkex elimak elpw131c anbi1i 19.41v bitr4i exbii df-rex excom 3bitr4i
+      wrex opkeq1 ceqsexv elsymdif otkelins3k elssetk otkelins2k opksnelsik vex
+      eleq1d bibi12i xchbinx exnal 3bitrri con1bii anbi12i eldif eqpw1 ) ABGZHZ
+      IUBZJUAZKZWDLUCZLUDZUEZUFZIMMMZUGZKZNZOAIUHZEPZGZAKZWQBKZQZEUNZOWDWFWMUIK
+      ABMUJWGWPWOXBWGAWEKZWPWGXCWCJKBRZAWCWEJCXDUKULAICUMSXBWNWNFPZWRGZGZGZUJZX
+      EWDHZWKKZOZFTZETZXANZETXBNWNXKFWLVEZXNFWKWLWDAWCUOUPXEWLKZXKOZFTXLETZFTXP
+      XNXRXSFXRXIETZXKOXSXQXTXKEXEUQURXIXKEUSUTVAXKFWLVBXLEFVCVDSXMXOEXMXHWDHZW
+      KKZXOXKYBFXHXGRXIXJYAWKXEXHWDVFVNVGYBYAWHKZYAWJKZQXAYAWHWJVHYCWSYDWTYCXFA
+      HLKWSXFAWCLWRRZCXDVIWRAWQRZCVJSYDXFWCHWIKZWTXFAWCWIYECXDVKYGWRBHLKWTWRBLY
+      FDVLWQBEVMDVJSSVOVPSVAXAEVQVRVSVTWDWFWMWAEABWBVD $.
+      $( [21-Jan-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a m $.  $d a n $.  $d a t $.  $d a x $.  $d b m $.  $d b n $.
+    $d b t $.  $d b x $.  $d m t $.  $d n t $.  $d n x $.  $d t x $.
+
+    $( Lemma for ~ ncfinraise .  Show stratification for induction. 
+       (Contributed by SF, 22-Jan-2015.) $)
+    ncfinraiselem2 $p |- { m | A. a e. m A. b e. m E. n e. Nn
+       ( ~P1 a e. n /\ ~P1 b e. n ) } e. _V $=
+      ( vt vx cssetk cpw1 cvv wcel wa wrex snex copk bitr4i exbii df-rex 3bitri
+      csn wex csik cins2k cnnc cxpk c1c cpw cins3k csymdif cimak cdif cin cuni1
+      ccompl cv wral wn elcompl wceq elimak elpw11c anbi1i 19.41v excom 3bitr4i
+      cab wel opkeq1 eleq1d ceqsexv vex opksnelsik elssetk bitri opkex elpw131c
+      elin eldif otkelins2k opkelxpk mpbiran2 snelpw1 eqpw1relk anbi12i df-clel
+      elpw121c notbii rexnal xchbinx eluni1 dfral2 abbi2i ssetkex sikex ins2kex
+      otkelins3k nncex pw1ex vvex xpkex 1cex pwex ins3kex symdifex imakex difex
+      inex complex uni1ex eqeltrri ) GUAZXJUBZUCHZHZIUDZUEUFZIUDZGUGZXKUHZUEHZH
+      ZHZUIZUJZUAZUBZXQUKZXTUIZUBZYGUGZUKZUKZXSUIZUGZUJZYAUIZUKZXSUIZUMZULZCUNZ
+      HZBUNZJZDUNZHZUUBJZKZBUCLZDAUNZUOZCUUIUOZAVEIUUKAYSUUISZYRJZUUJUPZCUUILZU
+      PUUIYSJUUKUUMUULYQJZUUOUULYQUUIMZUQUUPEUNZUULNZYPJZEXSLZUURYTSZSZURZUUTKZ
+      ETZCTZUUOEYPXSUULUUQUSUURXSJZUUTKZETUVECTZETUVAUVGUVIUVJEUVIUVDCTZUUTKUVJ
+      UVHUVKUUTCUURUTVAUVDUUTCVBOPUUTEXSQUVECEVCVDUVGCAVFZUUNKZCTUUOUVFUVMCUVFU
+      VCUULNZYPJZUVNXJJZUVNYOJZKUVMUUTUVOEUVCUVBMZUVDUUSUVNYPUURUVCUULVGVHVIUVN
+      XJYOVPUVPUVLUVQUUNUVPUVBUUINGJUVLUVBUUIGYTMZAVJZVKYTUUICVJZUVTVLVMUVQUURU
+      UDSZSZSZSZURZUURUVNNZYNJZKZETZDTZUUHUPZDUUILZUUNUVQUWHEYALUURYAJZUWHKZETZ
+      UWKEYNYAUVNUVCUULVNUSUWHEYAQUWPUWIDTZETUWKUWOUWQEUWOUWFDTZUWHKUWQUWNUWRUW
+      HDUURVOVAUWFUWHDVBOPUWIDEVCORUWKDAVFZUWLKZDTUWMUWJUWTDUWJUWEUVNNZYNJZUXAX
+      KJZUXAYMJZUPZKUWTUWHUXBEUWEUWDMUWFUWGUXAYNUURUWEUVNVGVHVIUXAXKYMVQUXCUWSU
+      XEUWLUXCUWCUULNXJJUWBUUINGJUWSUWCUVCUULXJUWBMZUVRUUQVRUWBUUIGUUDMZUVTVKUU
+      DUUIDVJZUVTVLRUXDUUHUXDUWCUVCNZYLJZUURUUBSZSZURZUURUXINZYKJZKZETZBTZUUHUW
+      CUVCUULYLUXFUVRUUQWOUXOEXSLZUXPBTZETZUXJUXRUXSUVHUXOKZETUYAUXOEXSQUYBUXTE
+      UYBUXMBTZUXOKUXTUVHUYCUXOBUURUTVAUXMUXOBVBOPVMEYKXSUXIUWCUVCVNZUSUXPBEVCV
+      DUXRUUBUCJZUUGKZBTUUHUXQUYFBUXQUXLUXINZYKJZUYGXNJZUYGYJJZKUYFUXOUYHEUXLUX
+      KMZUXMUXNUYGYKUURUXLUXIVGVHVIUYGXNYJVPUYIUYEUYJUUGUYIUXLXMJZUXKXLJUYEUYIU
+      YLUXIIJUYDUXLUXIXMIUYKUYDVSVTUXKXLWAUUBUCWARUYJUYGYHJZUYGYIJZKUUGUYGYHYIV
+      PUYMUUCUYNUUFUYMUUBUVCNZYGJZUURFUNZSZSZSZURZUURUYONZYFJZKZETZFTZUUCUUBUWC
+      UVCYGBVJZUXFUVRVRUYPVUCEXTLUURXTJZVUCKZETZVUFEYFXTUYOUUBUVCVNUSVUCEXTQVUJ
+      VUDFTZETVUFVUIVUKEVUIVUAFTZVUCKVUKVUHVULVUCFUURWEZVAVUAVUCFVBOPVUDFEVCORV
+      UFUYQUUAURZFBVFZKZFTUUCVUEVUPFVUEUYTUYONZYFJZVUQYEJZVUQXQJZKVUPVUCVUREUYT
+      UYSMZVUAVUBVUQYFUURUYTUYOVGVHVIVUQYEXQVPVUSVUNVUTVUOVUSUYRUVCNYDJUYQUVBNY
+      CJVUNUYRUUBUVCYDUYQMZVUGUVRVRUYQUVBYCFVJZUVSVKUYQYTVVCUWAWBRVUTUYRUUBNGJZ
+      VUOUYRUUBUVCGVVBVUGUVRWOUYQUUBVVCVUGVLZVMWCRPFUUAUUBWDORUUBUWCNZYGJZUYQUU
+      EURZVUOKZFTZUYNUUFVVGUURVVFNZYFJZEXTLZVUAVVLKZETZFTZVVJEYFXTVVFUUBUWCVNUS
+      VUHVVLKZETVVNFTZETVVMVVPVVQVVREVVQVULVVLKVVRVUHVULVVLVUMVAVUAVVLFVBOPVVLE
+      XTQVVNFEVCVDVVOVVIFVVOUYTVVFNZYFJZVVSYEJZVVSXQJZKVVIVVLVVTEUYTVVAVUAVVKVV
+      SYFUURUYTVVFVGVHVIVVSYEXQVPVWAVVHVWBVUOVWAUYRUWCNYDJUYQUWBNYCJVVHUYRUUBUW
+      CYDVVBVUGUXFVRUYQUWBYCVVCUXGVKUYQUUDVVCUXHWBRVWBVVDVUOUYRUUBUWCGVVBVUGUXF
+      WOVVEVMWCRPRUUBUWCUVCYGVUGUXFUVRWOFUUEUUBWDVDWCVMWCRPUUGBUCQORWFWCRPUWLDU
+      UIQOUUHDUUIWGRWCRPUUNCUUIQORWHUUIYRUVTWIUUJCUUIWJVDWKYRYQYPXSXJYOGWLWMZYN
+      YAXKYMXJVWCWNZYLYKXSXNYJXMIXLUCWPWQWQWRWSYHYIYGYFXTYEXQYDYCXPYBXOIUEWTXAW
+      RWSXRYAXQXKGWLXBZVWDXCXTXSUEWTWQZWQZWQZXDXEWMWNVWEXFVWGXDZWNYGVWIXBXFXFVW
+      FXDXBXEVWHXDXFVWFXDXGXHXI $.
+      $( [22-Jan-2015] $)
+  $}
+
+  ${
+    $d A a $.  $d a b $.  $d A b $.  $d a m $.  $d a n $.  $d A n $.  $d a t $.
+    $d B b $.  $d b m $.  $d b n $.  $d B n $.  $d b t $.  $d M a $.  $d M b $.
+    $d n t $.  $d a c $.  $d a d $.  $d a k $.  $d a x $.  $d a y $.  $d b c $.
+    $d b d $.  $d b k $.  $d b x $.  $d b y $.  $d c d $.  $d c k $.  $d c x $.
+    $d c y $.  $d d k $.  $d d x $.  $d d y $.  $d k m $.  $d k n $.  $d M m $.
+    $d m n $.  $d x y $.  $d c n $.  $d d n $.  $d k x $.  $d k y $.  $d n x $.
+    $d n y $.  $d c m $.  $d d m $.  $d m x $.  $d m y $.
+
+
+    $( If two sets are in a particular finite cardinal, then their unit power
+       sets are in the same natural.  Theorem X.1.25 of [Rosser] p. 527. 
+       (Contributed by SF, 21-Jan-2015.) $)
+    ncfinraise $p |- ( ( M e. Nn /\ A e. M /\ B e. M ) ->
+       E. n e. Nn ( ~P1 A e. n /\ ~P1 B e. n ) ) $=
+      ( va vb vc vx vd vy cnnc wcel cpw1 cv wa wrex wral c0c c0 wceq vm vk cplc
+      c1c ncfinraiselem2 raleq raleqbi1dv el0c peano1 eqid mpbir pm3.2i anbi12d
+      eleq2 rspcev mp2an pw1eq pw10 syl6eq eleq1d rexbidv mpbiri syl2anb ax-17
+      bi2anan9 rgen2a hbra1 hban hbra2 csn ccompl reeanv 2rexbii elsuc 3bitr4ri
+      cun anbi12i wel weq anbi1d anbi2d rspc2v com12 vex elcompl anbi2i peano2
+      wi ad3antrrr simplrl simprrl snelpw1 sylnibr snex syl2anc simplrr simprrr
+      wn adantr elsuci syl12anc rexlimiva cbvrexv syl8ib imp pw1un pw1sn uneq2i
+      ex eqtri syl5ibrcom sylan2b anasss rexlimdvv exp32 sylan9r pm2.43d syl5bi
+      expr exp3a ralrimd ralrimi finds syl5com 3impib ) DKLZADLZBDLZAMZCNZLZBMZ
+      YJLZOZCKPZYFENZMZYJLZFNZMZYJLZOZCKPZFDQZEDQZYGYHOYOUUCFUANZQZEUUFQUUCFRQZ
+      ERQUUCFUBNZQZEUUIQZUUCFUUIUDUCZQZEUULQZUUEUAUBDUACEFUEUUGUUHEUUFRUUCFUUFR
+      UFUGUUGUUJEUUFUUIUUCFUUFUUIUFUGUUGUUMEUUFUULUUCFUUFUULUFUGUUGUUDEUUFDUUCF
+      UUFDUFUGUUCEFRYPRLYPSTZYSSTZUUCYSRLYPUHYSUHUUOUUPOZUUCSYJLZUUROZCKPZRKLSR
+      LZUVAOZUUTUIUVAUVAUVASSTSUJSUHUKZUVCULUUSUVBCRKYJRTUURUVAUURUVAYJRSUNZUVD
+      UMUOUPUUQUUBUUSCKUUOYRUURUUPUUAUURUUOYQSYJUUOYQSMZSYPSUQURUSUTUUPYTSYJUUP
+      YTUVESYSSUQURUSUTVEVAVBVCVFUUIKLZUUKUUNUVFUUKOZUUMEUULUVFUUKEUVFEVDUUJEUU
+      IVGVHUVGYPUULLZUUCFUULUVFUUKFUVFFVDUUCEFUUIUUIVIVHUVHFVDUVGUVHYSUULLZUUCU
+      VHUVIOZYPGNZHNZVJZVPZTZYSINZJNZVJZVPZTZOZJUVPVKZPHUVKVKZPZIUUIPGUUIPZUVGU
+      UCUVOHUWCPZUVTJUWBPZOZIUUIPGUUIPUWFGUUIPZUWGIUUIPZOUWEUVJUWFUWGGIUUIUUIVL
+      UWDUWHGIUUIUUIUVOUVTHJUWCUWBVLVMUVHUWIUVIUWJHYPUUIGVNJYSUUIIVNVQVOUVGUWDU
+      UCGIUUIUUIUVGGUBVRIUBVROZUWDUUCWHZUUKUWKUVKMZYJLZUVPMZYJLZOZCKPZUVFUWKUWL
+      WHUWKUUKUWRUUCUWRUWNUUAOZCKPEFUVKUVPUUIUUIEGVSZUUBUWSCKUWTYRUWNUUAUWTYQUW
+      MYJYPUVKUQUTVTVAFIVSZUWSUWQCKUXAUUAUWPUWNUXAYTUWOYJYSUVPUQUTWAVAWBWCUVFUW
+      RUWKUWLUVFUWRUWKOOUWAUUCHJUWCUWBUVFUWRUWKUVLUWCLZUVQUWBLZOZUWAUUCWHZWHUVF
+      UWROZUWKUXDUXEUWKUXDOUXFUWKHGVRZWRZJIVRZWRZOZOZUXEUXDUXKUWKUXBUXHUXCUXJUV
+      LUVKHWDZWEUVQUVPJWDZWEVQWFUXFUXLOUUCUWAUWMUVMVJZVPZYJLZUWOUVRVJZVPZYJLZOZ
+      CKPZUXFUXLUYBUVFUWRUXLUYBWHZUWRUVFUYCUWRUVFUXLUXPUUFLZUXSUUFLZOZUAKPZUYBU
+      WQUVFUXLUYGWHZWHCKYJKLZUWQOZUVFUYHUYJUVFOZUXLUYGUYKUXLOZYJUDUCZKLZUXPUYML
+      ZUXSUYMLZUYGUYIUYNUWQUVFUXLYJWGWIUYLUWNUVMUWMLZWRUYOUYKUWNUXLUYIUWNUWPUVF
+      WJWSUYLUXGUYQUYKUWKUXHUXJWKUVLUVKWLWMUWMYJUVMUVLWNWTWOUYLUWPUVRUWOLZWRUYP
+      UYKUWPUXLUYIUWNUWPUVFWPWSUYLUXIUYRUYKUWKUXHUXJWQUVQUVPWLWMUWOYJUVRUVQWNWT
+      WOUYFUYOUYPOUAUYMKUUFUYMTUYDUYOUYEUYPUUFUYMUXPUNUUFUYMUXSUNUMUOXAXIXIXBUY
+      FUYAUACKUACVSUYDUXQUYEUXTUUFYJUXPUNUUFYJUXSUNUMXCXDWCXEXEUWAUUBUYACKUVOYR
+      UXQUVTUUAUXTUVOYQUXPYJUVOYQUVNMZUXPYPUVNUQUYSUWMUVMMZVPUXPUVKUVMXFUYTUXOU
+      WMUVLUXMXGXHXJUSUTUVTYTUXSYJUVTYTUVSMZUXSYSUVSUQVUAUWOUVRMZVPUXSUVPUVRXFV
+      UBUXRUWOUVQUXNXGXHXJUSUTVEVAXKXLXSXMXNXOXPXQXNXRXTYAYBXIYCUUCYOYKUUAOZCKP
+      EFABDDYPATZUUBVUCCKVUDYRYKUUAVUDYQYIYJYPAUQUTVTVAYSBTZVUCYNCKVUEUUAYMYKVU
+      EYTYLYJYSBUQUTWAVAWBYDYE $.
+      $( [21-Jan-2015] $)
+  $}
+
+  ${
+    $d m n a b t x $.
+    $( Lemma for ~ ncfinlower .  Set up stratification for induction. 
+       (Contributed by SF, 22-Jan-2015.) $)
+    ncfinlowerlem1 $p |- { m | A. a A. b ( ( ~P1 a e. m /\ ~P1 b
+             e. m ) -> E. n e. Nn ( a e. n /\ b e. n ) ) } e. _V $=
+      ( vt vx cvv cssetk cpw1 cnnc wcel wa wrex wex copk csn exbii 3bitr4i snex
+      3bitri c1c cpw cxpk cins3k csik cins2k csymdif cimak cdif ccnvk ccompl cv
+      cin wel wi wal cab wn wceq vex elimak elpw11c anbi1i 19.41v bitr4i df-rex
+      excom opkeq1 eleq1d ceqsexv opkex elpw131c eldif elin elpw121c otkelins3k
+      opksnelsik eqpw1relk elssetk bitri anbi12i mpbiran df-clel elpw12 r19.41v
+      opkelxpk rexcom4 opkelcnvk rexbii notbii exanali elcompl alex abbi2i vvex
+      otkelins2k 1cex xpkex ssetkex ins3kex sikex ins2kex symdifex pw1ex imakex
+      pwex difex inex cnvkex nncex complex eqeltrri ) GUAUBZGUCZHUDZHUEZUFZUGZU
+      AIZIZIZUHZUIZUEZUDZHUFZUMZXTUHZUCZYHUFZUMZHUJZUFZYLUDZUMZJIZIZUHZUEZUDZUI
+      ZYAUHZXSUHZUKZCULZIZAULZKZDULZIZUUGKZLZCBUNZDBUNZLZBJMZUODUPZCUPZAUQGUURA
+      UUDUUGUUCKZURUUQURZCNZURUUGUUDKUURUUSUVAUUSEULZUUGOZUUBKZEXSMZUVBUUEPZPZU
+      SZUVDLZENZCNZUVAEUUBXSUUGAUTZVAUVBXSKZUVDLZENUVICNZENUVEUVKUVNUVOEUVNUVHC
+      NZUVDLUVOUVMUVPUVDCUVBVBVCUVHUVDCVDVEQUVDEXSVFUVICEVGRUVJUUTCUVJUVGUUGOZU
+      UBKZUULUUPURZLZDNZUUTUVDUVREUVGUVFSZUVHUVCUVQUUBUVBUVGUUGVHVIVJUVRUVBUVQO
+      ZUUAKZEYAMZUVBUUIPZPZPZPZUSZUWDLZENZDNZUWAEUUAYAUVQUVGUUGVKZVAUVBYAKZUWDL
+      ZENUWKDNZENUWEUWMUWPUWQEUWPUWJDNZUWDLUWQUWOUWRUWDDUVBVLVCUWJUWDDVDVEQUWDE
+      YAVFUWKDEVGRUWLUVTDUWLUWIUVQOZUUAKZUWSYKKZUWSYTKZURZLUVTUWDUWTEUWIUWHSZUW
+      JUWCUWSUUAUVBUWIUVQVHVIVJUWSYKYTVMUXAUULUXCUVSUXAUWSYIKZUWSYJKZLUULUWSYIY
+      JVNUXEUUHUXFUUKUVQYHKZFULZUUFUSZFAUNZLZFNZUXEUUHUXGUWCYGKZEXTMZUVBUXHPZPZ
+      PZUSZUXMLZENZFNZUXLEYGXTUVQUWNVAUVBXTKZUXMLZENUXSFNZENUXNUYAUYCUYDEUYCUXR
+      FNZUXMLUYDUYBUYEUXMFUVBVOZVCUXRUXMFVDVEQUXMEXTVFUXSFEVGRUXTUXKFUXTUXQUVQO
+      ZYGKZUYGYEKZUYGYFKZLUXKUXMUYHEUXQUXPSZUXRUWCUYGYGUVBUXQUVQVHVIVJUYGYEYFVN
+      UYIUXIUYJUXJUYIUXOUVGOYDKUXHUVFOYCKUXIUXOUVGUUGYDUXHSZUWBUVLVPUXHUVFYCFUT
+      ZUUESZVQUXHUUEUYMCUTZVRTUYJUXOUUGOHKZUXJUXOUVGUUGHUYLUWBUVLWPUXHUUGUYMUVL
+      VSZVTWATQTUXEUWIGKUXGUXDUWIUVQGYHUXDUWNWFWBFUUFUUGWCRUWGUUGOZYHKZUXHUUJUS
+      ZUXJLZFNZUXFUUKUYSUVBUYROZYGKZEXTMZUXRVUDLZENZFNZVUBEYGXTUYRUWGUUGVKVAUYB
+      VUDLZENVUFFNZENVUEVUHVUIVUJEVUIUYEVUDLVUJUYBUYEVUDUYFVCUXRVUDFVDVEQVUDEXT
+      VFVUFFEVGRVUGVUAFVUGUXQUYROZYGKZVUKYEKZVUKYFKZLVUAVUDVULEUXQUYKUXRVUCVUKY
+      GUVBUXQUYRVHVIVJVUKYEYFVNVUMUYTVUNUXJVUMUXOUWGOYDKUXHUWFOYCKUYTUXOUWGUUGY
+      DUYLUWFSZUVLVPUXHUWFYCUYMUUISZVQUXHUUIUYMDUTZVRTVUNUYPUXJUXOUWGUUGHUYLVUO
+      UVLWPUYQVTWATQTUWGUVGUUGYHVUOUWBUVLWPFUUJUUGWCRWAVTUXBUUPUXBUWGUVGOYSKUWF
+      UVFOZYRKZUUPUWGUVGUUGYSVUOUWBUVLVPUWFUVFYRVUPUYNVQVUSUVBVUROZYOKZEYQMZUVB
+      BULZPZPZUSZVVALZENZBJMZUUPEYOYQVURUWFUVFVKVAUVBYQKZVVALZENVVGBJMZENVVBVVI
+      VVKVVLEVVKVVFBJMZVVALVVLVVJVVMVVABUVBJWDVCVVFVVABJWEVEQVVAEYQVFVVGBEJWGRV
+      VHUUOBJVVHVVEVUROZYOKZVVNYMKZVVNYNKZLUUOVVAVVOEVVEVVDSVVFVUTVVNYOUVBVVEVU
+      RVHVIVJVVNYMYNVNVVPUUMVVQUUNVVPVVCUVFOYLKUVFVVCOHKUUMVVCUWFUVFYLBUTZVUPUY
+      NWPVVCUVFHVVRUYNWHUUEVVCUYOVVRVSTVVQVVCUWFOYLKUWFVVCOHKUUNVVCUWFUVFYLVVRV
+      UPUYNVPVVCUWFHVVRVUPWHUUIVVCVUQVVRVSTWATWITTWJWATQTUULUUPDWKTQTWJUUGUUCUV
+      LWLUUQCWMRWNUUCUUBXSUUAYAYKYTYIYJGYHWOYGXTYEYFYDYCXNYBXMGUAWQXFWOWRXRYAXO
+      XQHWSWTXPHWSXAXBXCXTXSUAWQXDZXDZXDZXEXGXAWTHWSXBXHVVTXEZWRYHVWBXBXHYSYRYO
+      YQYMYNYLHWSXIZXBYLVWCWTXHYPJXJXDXDXEXAWTXGVWAXEVVSXEXKXL $.
+      $( [22-Jan-2015] $)
+  $}
+
+  ${
+    $d A a $.  $d a b $.  $d A b $.  $d a m $.  $d a n $.  $d A n $.  $d B a $.
+    $d B b $.  $d b m $.  $d b n $.  $d B n $.  $d M a $.  $d M b $.  $d a k $.
+    $d b k $.  $d k m $.  $d k n $.  $d M m $.  $d m n $.  $d a c $.  $d a d $.
+    $d a x $.  $d a y $.  $d b c $.  $d b d $.  $d b x $.  $d b y $.  $d c d $.
+    $d c k $.  $d c x $.  $d c y $.  $d d k $.  $d d x $.  $d d y $.  $d x y $.
+    $d a e $.  $d a f $.  $d a w $.  $d a z $.  $d b e $.  $d b f $.  $d b w $.
+    $d b z $.  $d c e $.  $d c f $.  $d c n $.  $d c w $.  $d c z $.  $d d e $.
+    $d d f $.  $d d n $.  $d d w $.  $d d z $.  $d e f $.  $d e w $.  $d e x $.
+    $d e y $.  $d e z $.  $d f w $.  $d f x $.  $d f y $.  $d f z $.  $d k x $.
+    $d k y $.  $d n x $.  $d n y $.  $d w x $.  $d w y $.  $d w z $.  $d x z $.
+    $d y z $.  $d e k $.  $d e m $.  $d e n $.  $d f k $.  $d f m $.  $d f n $.
+    $d k w $.  $d k z $.  $d m w $.  $d m z $.  $d n w $.  $d n z $.  $d c m $.
+    $d d m $.  $d m x $.  $d m y $.
+    $( If the unit power classes of two sets are in the same natural, then so
+       are the sets themselves.  Theorem X.1.26 of [Rosser] p. 527. 
+       (Contributed by SF, 22-Jan-2015.) $)
+    ncfinlower $p |- ( ( M e. Nn /\ ~P1 A e. M /\ ~P1 B e. M ) ->
+       E. n e. Nn ( A e. n /\ B e. n ) ) $=
+      ( va vb vm vc vd ve vf cnnc wcel cv wa wrex wi c0 wceq eleq2 vk vx vy wel
+      vz vw cpw1 wal c1c cplc ncfinlowerlem1 c0c el0c pw10b bitri syl6bb imbi1d
+      anbi12d 2albidv weq peano1 eqid mpbir pm3.2i rspcev mp2an eleq1 bi2anan9
+      rexbidv mpbiri gen2 ax-17 hba1 hban csn cun ccompl reeanv 2rexbii anbi12i
+      hba2 elsuc 3bitr4ri w3a wex wn cvv vex pw1eq eleq1d imbi12d spc2gv com12
+      elequ1 ad2antrl peano2 simprrl adantr syl2anc simprrr expr rexlimdva syld
+      elsuci syl12anc imp an32s wb 3ad2ant2 compleq eleq12 snex elcompl snelpw1
+      xchbinx sylan2 ancoms 3adant1 anbi2d 3ad2ant1 eeanv 2exbii elequ2 cbvrexv
+      exlimdvv pw1eqadj 3imtr4g rexlimdvv rexlimdvva syl5bi alrimi finds pw1exb
+      ex elex sylib syl2an pm2.43b syl 3impib ) DLMZAUGZDMZBUGZDMZACNZMZBUUFMZO
+      ZCLPZUUAENZUGZDMZFNZUGZDMZOZECUDZFCUDZOZCLPZQZFUHEUHZUUCUUEOZUUJQZUULGNZM
+      ZUUOUVFMZOZUVAQZFUHEUHUUKRSZUUNRSZOZUVAQZFUHEUHUULUANZMZUUOUVOMZOZUVAQZFU
+      HZEUHZUULUVOUIUJZMZUUOUWBMZOZUVAQZFUHZEUHZUVCGUADGCEFUKUVFULSZUVJUVNEFUWI
+      UVIUVMUVAUWIUVGUVKUVHUVLUWIUVGUULULMZUVKUVFULUULTUWJUULRSUVKUULUMUUKUNUOU
+      PUWIUVHUUOULMZUVLUVFULUUOTUWKUUORSUVLUUOUMUUNUNUOUPURUQUSGUAUTZUVJUVSEFUW
+      LUVIUVRUVAUWLUVGUVPUVHUVQUVFUVOUULTUVFUVOUUOTURUQUSUVFUWBSZUVJUWFEFUWMUVI
+      UWEUVAUWMUVGUWCUVHUWDUVFUWBUULTUVFUWBUUOTURUQUSUVFDSZUVJUVBEFUWNUVIUUQUVA
+      UWNUVGUUMUVHUUPUVFDUULTUVFDUUOTURUQUSUVNEFUVMUVARUUFMZUWOOZCLPZULLMRULMZU
+      WROZUWQVAUWRUWRUWRRRSRVBRUMVCZUWTVDUWPUWSCULLUUFULSUWOUWRUWOUWRUUFULRTZUX
+      AURVEVFUVMUUTUWPCLUVKUURUWOUVLUUSUWOUUKRUUFVGUUNRUUFVGVHVIVJVKUVOLMZUWAUW
+      HUXBUWAOZUWGEUXBUWAEUXBEVLUVTEVMVNUXCUWFFUXBUWAFUXBFVLUVSFEWAVNUWEUULHNZU
+      BNZVOVPSZUUOINZUCNZVOVPSZOZUCUXGVQZPUBUXDVQZPZIUVOPHUVOPZUXCUVAUXFUBUXLPZ
+      UXIUCUXKPZOZIUVOPHUVOPUXOHUVOPZUXPIUVOPZOUXNUWEUXOUXPHIUVOUVOVRUXMUXQHIUV
+      OUVOUXFUXIUBUCUXLUXKVRVSUWCUXRUWDUXSUBUULUVOHWBUCUUOUVOIWBVTWCUXCUXMUVAHI
+      UVOUVOUXCHUAUDZIUAUDZOZOUXJUVAUBUCUXLUXKUXCUYBUXEUXLMZUXHUXKMZOZUXJUVAQUX
+      CUYBUYEOZOZUUKJNZUENZVOZVPZSZUXDUYHUGZSZUXEUYJSZWDZUUNKNZUFNZVOZVPZSZUXGU
+      YQUGZSZUXHUYSSZWDZOZUFWEUEWEZKWEJWEZEGUDZFGUDZOZGLPZUXJUVAUYGVUGVULJKUYGV
+      UFVULUEUFVUFUYGVULVUFUYGVULQUXCUYMUVOMZVUBUVOMZOZUEJUDZWFZUFKUDZWFZOZOZOZ
+      UYKUVFMZUYTUVFMZOZGLPZQUXBVVAUWAVVFUXBVVAOZUWAVVFVVGUWAJCUDZKCUDZOZCLPZVV
+      FVUOUWAVVKQUXBVUTUWAVUOVVKUYHWGMUYQWGMUWAVUOVVKQZQJWHKWHUVSVVLEFUYHUYQWGW
+      GEJUTZFKUTZOZUVRVUOUVAVVKVVMUVPVUMVVNUVQVUNVVMUULUYMUVOUUKUYHWIWJVVNUUOVU
+      BUVOUUNUYQWIWJVHVVOUUTVVJCLVVMUURVVHVVNUUSVVIEJCWNFKCWNVHVIWKWLVFWMWOVVGV
+      VJVVFCLVVGUUFLMZVVJVVFVVGVVPVVJOZOZUUFUIUJZLMZUYKVVSMZUYTVVSMZVVFVVPVVTVV
+      GVVJUUFWPWOVVRVVHVUQVWAVVGVVPVVHVVIWQVVGVUQVVQUXBVUOVUQVUSWQWRUYHUUFUYIUE
+      WHXDWSVVRVVIVUSVWBVVGVVPVVHVVIWTVVGVUSVVQUXBVUOVUQVUSWTWRUYQUUFUYRUFWHXDW
+      SVVEVWAVWBOGVVSLUVFVVSSVVCVWAVVDVWBUVFVVSUYKTUVFVVSUYTTURVEXEXAXBXCXFXGVU
+      FUYGVVBVULVVFVUFUYFVVAUXCVUFUYBVUOUYEVUTUYPUXTVUMVUEUYAVUNUYNUYLUXTVUMXHU
+      YOUXDUYMUVOVGXIVUCVUAUYAVUNXHVUDUXGVUBUVOVGXIVHUYPUYCVUQVUEUYDVUSUYNUYOUY
+      CVUQXHZUYLUYOUYNVWCUYNUYOUXLUYMVQZSZVWCUXDUYMXJUYOVWEOUYCUYJVWDMZVUQUXEUY
+      JUXLVWDXKVWFUYJUYMMVUPUYJUYMUYIXLXMUYIUYHXNXOUPXPXQXRVUCVUDUYDVUSXHZVUAVU
+      DVUCVWGVUDVUCOUYDUYSVUBVQZMZVUSVUCVUDUXKVWHSUYDVWIXHUXGVUBXJUXHUYSUXKVWHX
+      KXPVWIUYSVUBMVURUYSVUBUYRXLXMUYRUYQXNXOUPXQXRVHURXSVUFVUKVVEGLUYPVUIVVCVU
+      EVUJVVDUYLUYNVUIVVCXHUYOUUKUYKUVFVGXTVUAVUCVUJVVDXHVUDUUNUYTUVFVGXTVHVIWK
+      VJWMYEYEUYPUEWEZVUEUFWEZOZKWEJWEVWJJWEZVWKKWEZOVUHUXJVWJVWKJKYAVUGVWLJKUY
+      PVUEUEUFYAYBUXFVWMUXIVWNJUEUXDUXEUUKHWHUBWHYFKUFUXGUXHUUNIWHUCWHYFVTWCUUT
+      VUKCGLCGUTUURVUIUUSVUJCGEYCCGFYCURYDYGXAYHYIYJYKYKYNYLUVCUVDUUJUUCAWGMZBW
+      GMZUVCUVEQUUEUUCUUBWGMVWOUUBDYOAYMYPUUEUUDWGMVWPUUDDYOBYMYPUVBUVEEFABWGWG
+      UUKASZUUNBSZOZUUQUVDUVAUUJVWQUUMUUCVWRUUPUUEVWQUULUUBDUUKAWIWJVWRUUOUUDDU
+      UNBWIWJVHVWSUUTUUICLVWQUURUUGVWRUUSUUHUUKAUUFVGUUNBUUFVGVHVIWKWLYQYRYSYT
+      $.
+      $( [22-Jan-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a n $.  $d a p $.  $d b n $.  $d b p $.  $d M a $.  $d M b $.
+    $d M n $.  $d M p $.  $d n p $.  $d a m $.  $d b m $.  $d m n $.  $d m p $.
+    $d a q $.  $d b q $.  $d M q $.  $d n q $.  $d p q $.
+    $( For any non-empty finite cardinal, there is a unique natural containing
+       a unit power class of one of its elements.  Theorem X.1.27 of
+       [Rosser] p. 528. 
+       (Contributed by SF, 22-Jan-2015.) $)
+    nnpw1ex $p |- ( ( M e. Nn /\ M =/= (/) ) ->
+      E! n e. Nn E. a e. M ~P1 a e. n ) $=
+      ( vp vb vq cnnc wcel cpw1 wrex weq wral wex w3a ncfinraise anbi2i nnceleq
+      wa cv syl22anc c0 wne wi wreu anidm rexbii sylib 3anidm23 ex ancld eximdv
+      n0 rexcom df-rex bitri 3imtr4i pw1eq eleq1d cbvrexv reeanv bitr4i simplll
+      imp simprll simprlr syl3anc simp1rl simp3l simp2rl simp3rl simp1rr eqtr4d
+      simp2rr simp3rr 3expa exp32 mpd rexlimdvv syl5bi ralrimivva eleq2 rexbidv
+      rexlimdv reu4 sylanbrc ) BGHZBUAUBZRZCSZIZASZHZCBJZAGJZWMWJDSZHZCBJZRZADK
+      ZUCZDGLAGLWMAGUDWFWIBHZCMZRXAWLAGJZRZCMZWHWNWFXBXEWFXAXDCWFXAXCWFXAXCWFXA
+      XCWFXAXANWLWLRZAGJXCWIWIABOXFWLAGWLUEUFUGUHUIUJUKVCWGXBWFCBULPWNXCCBJXEWL
+      ACGBUMXCCBUNUOUPWHWTADGGWRWLESZIZWOHZRZEBJCBJZWHWKGHZWOGHZRZRZWSWRWMXIEBJ
+      ZRXKWQXPWMWPXICEBCEKWJXHWOWIXGUQURUSPWLXICEBBUTVAXOXJWSCEBBXOXAXGBHZRZXJW
+      SXOXRXJRZRZWJFSZHZXHYAHZRZFGJZWSXTWFXAXQYEWFWGXNXSVBXOXAXQXJVDXOXAXQXJVEW
+      IXGFBOVFXTYDWSFGXTYAGHZYDWSXOXSYFYDRZWSXOXSYGNZWKYAWOYHXLYFWLYBAFKXLXMWHX
+      SYGVGXOXSYFYDVHZWLXIXRXOYGVIYBYCYFXOXSVJWJWKYAQTYHXMYFXIYCDFKXLXMWHXSYGVK
+      YIWLXIXRXOYGVMYBYCYFXOXSVNXHWOYAQTVLVOVPWCVQVPVRVSVTWMWQADGWSWLWPCBWKWOWJ
+      WAWBWDWE $.
+      $( [22-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y $.
+    $( The finite T operator is always a set. 
+       (Contributed by SF, 26-Jan-2015.) $)
+    tfinex $p |- _T[fin] A e. _V $=
+      ( vx vy ctfin c0 wceq cv cnnc wcel cpw1 wa cio cif cvv df-tfin 0ex iotaex
+      wrex ifex eqeltri ) ADAEFZEBGZHICGJUBICARKZBLZMNBACOUAEUDPUCBQST $.
+      $( [26-Jan-2015] $)
+  $}
+
+  ${
+    $d M n $.  $d M t $.  $d M w $.  $d M y $.  $d M z $.  $d n t $.  $d n w $.
+    $d n x $.  $d n y $.  $d n z $.  $d t w $.  $d t x $.  $d t y $.  $d t z $.
+    $d w y $.  $d w z $.  $d X t $.  $d x y $.  $d X z $.  $d y z $.  $d a n $.
+    $d a t $.  $d a x $.  $d a y $.  $d a z $.  $d M a $.
+    eqtfinrelk.1 $e |- M e. _V $.
+    eqtfinrelk.2 $e |- X e. _V $.
+    $( Equality to a T raising expressed via a Kuratowski relationship. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    eqtfinrelk $p |- ( << { M } , X >> e. ( ( { { (/) } } X._k { (/) } ) u.
+  ( ~ ( ( Ins2_k SSet_k (+)
+      Ins3_k
+( ( Ins3_k `'_k SSet_k \
+    Ins2_k
+( ( Ins2_k ( ( Nn X._k _V ) i^i
+     ( ( Ins2_k SI_k SSet_k i^i
+         Ins3_k
+           ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \
+  ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k )
+    "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) )
+       "_k ~P1 ~P1 ~P1 1c ) ) (+)
+    Ins3_k _I_k ) "_k ~P1 1c ) ) "_k ~P1 1c ) )
+      "_k ~P1 ~P1 1c )
+    \ ( { { (/) } } X._k _V ) ) ) <-> X = _T[fin] M ) $=
+      ( vy va vz vt vn vx csn copk c0 cssetk cvv wcel wceq wa snex wex cxpk c1c
+      cins2k ccnvk cins3k cnnc csik cpw csymdif cpw1 cimak cdif cin cidk ccompl
+      cun cv wrex cio cif ctfin wb snid opkelxpk mpbiran elsnc bitri orbi1i elun
+      wo wn mpbir2an notnoti intnan eldif mtbir biorfi 3bitr4i a1i sneq opkeq1d
+      eleq1d iftrue eqeq2d 3bitr4d iffalse elimak elpw121c anbi1i 19.41v bitr4i
+      opkex exbii df-rex opkeq1 ceqsexv elsymdif otkelins2k vex elssetk wel weq
+      excom wal otkelins3k opkelcnvk elpw11c elin mpbiran2 opksnelsik eqpw1relk
+      3bitri anbi12i df-clel elpw131c opkelidkg bibi12i xchbinx 3bitrri con1bii
+      mp2an exnal cab cuni dfiota2 eleq2i eluniab notbii elcompl dfcleq biantru
+      alex sneqb 3bitr2i biimpi con3i biantrud simpl biorf syl6bbr syl 3bitr2rd
+      bitrd orbi12i pm2.61i df-tfin eqeq2i ) AKZBLZMKZKZUUJUAZNUCZNUDZUEZUFOUAZ
+      NUGZUCZUBUHOUANUEUURUIUBUJZUJZUJZUKULZUGZUEZUUMUMZUUTUKZUEZUMZUVAUKZUMZUC
+      ZUNUEZUIZUUSUKZUCZULZUUSUKZUEZUIZUUTUKZUOZUUKOUAZULZUPZPZBAMQZMEUQZUFPZFU
+      QZUJZUWGPZFAURZRZEUSZUTZQZBAVAZQUWFUWEUWPVBUWFUUJBLZUWDPZBMQZUWEUWPUWSUWT
+      VBUWFUWRUULPZUWRUWCPZVJUWTUXBVJUWSUWTUXAUWTUXBUXABUUJPZUWTUXAUUJUUKPZUXCU
+      UJMSZVCZUUJBUUKUUJUXEDVDVEBMDVFZVGVHUWRUULUWCVIUXBUWTUXBUWRUWAPZUWRUWBPZV
+      KZRUXJUXHUXIUXIUXDBOPZUXFDUUJBUUKOUXEDVDVLVMVNUWRUWAUWBVOVPVQVRVSUWFUUIUW
+      RUWDUWFUUHUUJBAMVTWAWBUWFUWOMBUWFMUWNWCWDWEUWFVKZUWPBUWNQZUUIUWAPZUWEUXLU
+      WOUWNBUWFMUWNWFWDUXNUXMVBUXLUUIUVTPZVKGUQZBPZUXPUWNPZVBZVKZGTZVKZUXNUXMUX
+      OUYAUXOHUQZUUILZUVSPZHUUTURZUYCUXPKZKZKZQZUYERZHTZGTZUYAHUVSUUTUUIUUHBWLZ
+      WGUYCUUTPZUYERZHTUYKGTZHTUYFUYMUYPUYQHUYPUYJGTZUYERUYQUYOUYRUYEGUYCWHWIUY
+      JUYEGWJWKWMUYEHUUTWNUYKGHXCVRUYLUXTGUYLUYIUUILZUVSPZUXTUYEUYTHUYIUYHSUYJU
+      YDUYSUVSUYCUYIUUIWOWBWPUYTUYSUUMPZUYSUVRPZVBUXSUYSUUMUVRWQVUAUXQVUBUXRVUA
+      UYGBLNPUXQUYGUUHBNUXPSZASZDWRUXPBGWSZDWTVGUYCIUQZKZKZQZUYCUYGUUHLZLZUVPPZ
+      RZHTZITZGIXAZUWMEIXBZVBZEXDZRZITZVUBUXRVUNVUTIVUNVUHVUJLZUVPPZVVBUUOPZVVB
+      UVOPZVKZRVUTVULVVCHVUHVUGSVUIVUKVVBUVPUYCVUHVUJWOWBWPVVBUUOUVOVOVVDVUPVVF
+      VUSVVDVUFUYGLUUNPUYGVUFLNPVUPVUFUYGUUHUUNIWSZVUCVUDXEVUFUYGNVVGVUCXFUXPVU
+      FVUEVVGWTXLVUSVVEVVEVUFUUHLZUVNPZVURVKZETZVUSVKVUFUYGUUHUVNVVGVUCVUDWRVVI
+      UYCVVHLZUVMPZHUUSURZUYCUWGKZKZQZVVMRZHTZETZVVKHUVMUUSVVHVUFUUHWLWGUYCUUSP
+      ZVVMRZHTVVRETZHTVVNVVTVWBVWCHVWBVVQETZVVMRVWCVWAVWDVVMEUYCXGWIVVQVVMEWJWK
+      WMVVMHUUSWNVVREHXCVRVVSVVJEVVSVVPVVHLZUVMPZVVJVVMVWFHVVPVVOSVVQVVLVWEUVMU
+      YCVVPVVHWOWBWPVWFVWEUVKPZVWEUVLPZVBVURVWEUVKUVLWQVWGUWMVWHVUQVWGUWGUUHLZU
+      VJPVWIUUPPZVWIUVIPZRUWMUWGVUFUUHUVJEWSZVVGVUDWRVWIUUPUVIXHVWJUWHVWKUWLVWJ
+      UWHUUHOPVUDUWGUUHUFOVWLVUDVDXIUYCUWIKZKZKZKZQZUYCVWILZUVHPZRZHTZFTZUWIAPZ
+      UWKRZFTVWKUWLVXAVXDFVXAVWPVWILZUVHPZVXEUURPZVXEUVGPZRVXDVWSVXFHVWPVWOSVWQ
+      VWRVXEUVHUYCVWPVWIWOWBWPVXEUURUVGXHVXGVXCVXHUWKVXGVWNUUHLUUQPVWMALNPVXCVW
+      NUWGUUHUUQVWMSZVWLVUDWRVWMANUWISZCXJUWIAFWSZCWTXLVWNUWGLZUVFPZJUQZUWJQZJE
+      XAZRZJTZVXHUWKVXMUYCVXLLZUVEPZHUUTURZUYCVXNKZKZKZQZVXTRZHTZJTZVXRHUVEUUTV
+      XLVWNUWGWLWGUYOVXTRZHTVYFJTZHTVYAVYHVYIVYJHVYIVYEJTZVXTRVYJUYOVYKVXTJUYCW
+      HWIVYEVXTJWJWKWMVXTHUUTWNVYFJHXCVRVYGVXQJVYGVYDVXLLZUVEPZVYLUVDPZVYLUUMPZ
+      RVXQVXTVYMHVYDVYCSVYEVXSVYLUVEUYCVYDVXLWOWBWPVYLUVDUUMXHVYNVXOVYOVXPVYNVY
+      BVWNLUVCPVXNVWMLUVBPVXOVYBVWNUWGUVCVXNSZVXIVWLXEVXNVWMUVBJWSZVXJXJVXNUWIV
+      YQVXKXKXLVYOVYBUWGLNPVXPVYBVWNUWGNVYPVXIVWLWRVXNUWGVYQVWLWTVGXMXLWMXLVWNU
+      WGUUHUVFVXIVWLVUDXEJUWJUWGXNVRXMXLWMVWSHUVAURZVWTFTZHTZVWKVXBVYRUYCUVAPZV
+      WSRZHTVYTVWSHUVAWNWUBVYSHWUBVWQFTZVWSRVYSWUAWUCVWSFUYCXOWIVWQVWSFWJWKWMVG
+      HUVHUVAVWIUWGUUHWLWGVWTFHXCVRUWKFAWNVRXMXLVWHUWGVUFLUNPZVUQUWGVUFUUHUNVWL
+      VVGVUDXEUWGOPVUFOPWUDVUQVBVWLVVGUWGVUFOOXPYAVGXQXRVGWMXLVUREYBXSXTXMXLWMV
+      UBVUJUVQPVULHUUSURZVUOUYGUUHBUVQVUCVUDDXEHUVPUUSVUJUYGUUHWLWGVWAVULRZHTVU
+      MITZHTWUEVUOWUFWUGHWUFVUIITZVULRWUGVWAWUHVULIUYCXGWIVUIVULIWJWKWMVULHUUSW
+      NVUMIHXCVRXLUXRUXPVUSIYCYDZPVVAUWNWUIUXPUWMEIYEYFVUSIUXPYGVGVRXQXRVGWMXLY
+      HUUIUVTUYNYIUXMUXSGXDUYBGBUWNYJUXSGYLVGVRVSUXLUXNUUIUULPZUUIUWCPZVJZUWEUX
+      LUXNUWFUWTRZUXNUUIUWBPZVKZRZVJZWULUXLUXNWUPWUQUXLWUOUXNWUNUWFWUNUWFWUNUUH
+      UUKPZUXKRWURUWFUUHBUUKOVUDDVDUXKWURDYKWURUUHUUJQUWFUUHUUJVUDVFAMCYMVGZYNY
+      OYPYQUXLWUMVKWUPWUQVBWUMUWFUWFUWTYRYPWUMWUPYSUUAUUCWUJWUMWUKWUPWUJWURUXCR
+      WUMUUHBUUKUUJVUDDVDWURUWFUXCUWTWUSUXGXMVGUUIUWAUWBVOUUDYTUUIUULUWCVIYTUUB
+      UUEUWQUWOBEAFUUFUUGWK $.
+      $( [29-Jan-2015] $)
+  $}
+
+  $( The expression at the core of ~ eqtfinrelk exists. 
+     (Contributed by SF, 30-Jan-2015.) $)
+  tfinrelkex $p |- ( ( { { (/) } } X._k { (/) } ) u.
+  ( ~ ( ( Ins2_k SSet_k (+)
+      Ins3_k
+( ( Ins3_k `'_k SSet_k \
+    Ins2_k
+( ( Ins2_k ( ( Nn X._k _V ) i^i
+     ( ( Ins2_k SI_k SSet_k i^i
+         Ins3_k
+           ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \
+  ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k )
+    "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) )
+       "_k ~P1 ~P1 ~P1 1c ) ) (+)
+    Ins3_k _I_k ) "_k ~P1 1c ) ) "_k ~P1 1c ) )
+      "_k ~P1 ~P1 1c )
+    \ ( { { (/) } } X._k _V ) ) ) e. _V $=
+    ( cxpk cssetk cins2k cins3k cvv c1c csymdif cpw1 cimak cdif ssetkex ins2kex
+    cin xpkex ins3kex vvex symdifex pw1ex imakex difex csn ccnvk cnnc csik cidk
+    c0 cpw ccompl snex cnvkex nncex sikex 1cex pwex inex idkex complex unex ) U
+    FUAZUAZUSABCZBUBZDZUCEAZBUDZCZFUGZEAZBDZVFGZFHZHZHZIZJZUDZDZVAMZVLIZDZMZVMI
+    ZMZCZUEDZGZVKIZCZJZVKIZDZGZVLIZUHZUTEAZJUTUSUSUIZUFUINWNWOWMWLVLVAWKBKLZWJW
+    IVKVCWHVBBKUJOWGWFVKWDWEWCVDWBUCEUKPNWAVMVFVTVEBKULLZVSVRVLVQVAVPVOVHVNVGEF
+    UMUNPNVJVMVIVFBKOWRQVLVKFUMRZRZRZSTULOWQUOWTSOUOXASUOLUEUPOQWSSLTWSSOQWTSUQ
+    UTEWPPNTUR $.
+    $( [30-Jan-2015] $)
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( Equality theorem for the finite T operator. 
+       (Contributed by SF, 24-Jan-2015.) $)
+    tfineq $p |- ( A = B -> _T[fin] A = _T[fin] B ) $=
+      ( vx vy wceq c0 cv cnnc wcel cpw1 wrex cio cif ctfin eqeq1 rexeq iotabidv
+      wa anbi2d df-tfin ifbieq2d 3eqtr4g ) ABEZAFEZFCGZHIZDGJUEIZDAKZRZCLZMBFEZ
+      FUFUGDBKZRZCLZMANBNUCUDUKUJUNFABFOUCUIUMCUCUHULUFUGDABPSQUACADTCBDTUB $.
+      $( [24-Jan-2015] $)
+  $}
+
+  ${
+    $d a n $.  $d a z $.  $d M a $.  $d M n $.  $d M z $.  $d n z $.
+
+    $( Properties of the finite T operator for a non-empty natural.  Theorem
+       X.1.28 of [Rosser] p. 528. 
+       (Contributed by SF, 22-Jan-2015.) $)
+    tfinprop $p |- ( ( M e. Nn /\ M =/= (/) ) ->
+      ( _T[fin] M e. Nn /\ E. a e. M ~P1 a e. _T[fin] M ) ) $=
+      ( vn cnnc wcel c0 wne wa ctfin cv cpw1 wrex wceq cio cif df-tfin wn df-ne
+      syl jca iffalse sylbi adantl nnpw1ex reiotacl eqeltrd syl5eqel syl5req wb
+      wreu eleq2 rexbidv reiota2 mpbird ) ADEZAFGZHZAIZDEZBJKZUREZBALZUQURAFMZF
+      CJZDEUTVDEZBALZHCNZOZDCABPZUQVHVGDUPVHVGMZUOUPVCQVJAFRVCFVGUAUBUCZUQVFCDU
+      JZVGDECABUDZVFCDUESUFUGZUQVBVGURMZUQURVHVGVIVKUHUQUSVLHVBVOUIUQUSVLVNVMTV
+      FVBCDURVDURMVEVABAVDURUTUKULUMSUNT $.
+      $( [22-Jan-2015] $)
+  $}
+
+  ${
+    $d M x $.
+    $( If ` M ` is a non-empty natural, then ` _T[fin] M ` is also non-empty.
+       Corollary 1 of Theorem X.1.28 of [Rosser] p. 528. 
+       (Contributed by SF, 23-Jan-2015.) $)
+    tfinnnul $p |- ( ( M e. Nn /\ M =/= (/) ) -> _T[fin] M =/= (/) ) $=
+      ( vx cnnc wcel c0 wne wa ctfin cv cpw1 wrex tfinprop rexlimivw adantl syl
+      ne0i ) ACDAEFGAHZCDZBIJZQDZBAKZGQEFZABLUAUBRTUBBAQSPMNO $.
+      $( [23-Jan-2015] $)
+  $}
+
+  ${
+    $d x y $.
+    $( The finite T operator applied to the empty set is empty.  Theorem X.1.29
+       of [Rosser] p. 528. 
+       (Contributed by SF, 22-Jan-2015.) $)
+    tfinnul $p |- _T[fin] (/) = (/) $=
+      ( vx vy c0 ctfin wceq cv cnnc wcel cpw1 wrex cio cif df-tfin iftrue ax-mp
+      wa eqid eqtri ) CDCCEZCAFZGHBFITHBCJPAKZLZCACBMSUBCECQSCUANOR $.
+      $( [22-Jan-2015] $)
+  $}
+
+
+  ${
+    $d N a $.
+    $( Closure law for finite T operation. 
+       (Contributed by SF, 2-Feb-2015.) $)
+    tfincl $p |- ( N e. Nn -> _T[fin] N e. Nn ) $=
+      ( va cnnc wcel ctfin wi c0 wceq tfinnul tfineq 3eqtr4a eleq1d biimprd wne
+      id wa cv cpw1 wrex tfinprop simpld expcom pm2.61ine ) ACDZAEZCDZFAGAGHZUF
+      UDUGUEACUGGEGUEAIAGJUGOKLMUDAGNZUFUDUHPUFBQRUEDBASABTUAUBUC $.
+      $( [2-Feb-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a p $.  $d b p $.  $d M a $.  $d M b $.  $d M p $.  $d N a $.
+    $d N b $.  $d N p $.
+
+    $( The finite T operator is one-to-one over the naturals.  Theorem X.1.30
+       of [Rosser] p. 528. 
+       (Contributed by SF, 24-Jan-2015.) $)
+    tfin11 $p |- ( ( M e. Nn /\ N e. Nn /\ _T[fin] M = _T[fin] N ) ->
+            M = N ) $=
+      ( va vb vp cnnc wcel ctfin wceq w3a wi c0 wa tfinnnul ex necon4d 3ad2ant1
+      wne cv wrex impcom eqeq1 adantl adantr sylbid 3adant1 eqtr4d neeq1 biimpd
+      wb ancld tfineq tfinnul syl6eq necon3i anim12i 3ad2ant3 tfinprop 3ad2ant2
+      syl6 reeanv wel simp31 tfincl syl simp2l simp2r simp33 ncfinlower syl3anc
+      eleqtrrd simpl31 simpl1l simprrl nnceleq syl22anc simpl32 simpl1r simprrr
+      cpw1 simprl expr rexlimdva mpd 3exp rexlimivv ad2ant2l com12 syl2and syld
+      sylbir pm2.61ine ) AFGZBFGZAHZBHZIZJZABIZKZWOLWOLIZWRWSXAWRMALBWRXAALIZWM
+      WNXAXBKWQWMALWOLWMALRZWOLRZANOPQUAWRXABLIZWNWQXAXEKWMWNWQMXAWPLIZXEWQXAXF
+      UJWNWOWPLUBUCWNXFXEKWQWNBLWPLWNBLRZWPLRZBNOPUDUEUFUAUGOWRXDWSWRXDXCXGMZWS
+      WQWMXDXIKWNWQXDXDXHMXIWQXDXHWQXDXHWOWPLUHUIUKXDXCXHXGALWOLXBWOLHZLALULUMU
+      NUOBLWPLXEWPXJLBLULUMUNUOUPUTUQWRXCWOFGZCSZVTWOGZCATZMZXGWPFGZDSZVTZWPGZD
+      BTZMZWSWMWNXCXOKWQWMXCXOACUROQWNWMXGYAKWQWNXGYABDUROUSXOYAMWRWSXNXTWTXKXP
+      XNXTMXMXSMZDBTCATWTXMXSCDABVAYBWTCDABXLAGZXQBGZMZYBWRWSYEYBWRJZCEVBZDEVBZ
+      MZEFTZWSYFXKXMXRWOGYJYFWMXKYEYBWMWNWQVCAVDVEYEXMXSWRVFYFXRWPWOYEXMXSWRVGY
+      EYBWMWNWQVHVKXLXQEWOVIVJYFYIWSEFYFESZFGZYIWSYFYLYIMZMZAYKBYNWMYLYCYGAYKIW
+      MWNWQYEYBYMVLYFYLYIWAZYCYDYBWRYMVMYFYLYGYHVNXLAYKVOVPYNWNYLYDYHBYKIWMWNWQ
+      YEYBYMVQYOYCYDYBWRYMVRYFYLYGYHVSXQBYKVOVPUGWBWCWDWEWFWKWGWHWIWJWHWL $.
+      $( [24-Jan-2015] $)
+  $}
+
+  ${
+    $d A b $.  $d A n $.  $d b n $.  $d M b $.  $d M n $.
+    $( The finite T operator on a natural contains the unit power class of any
+       element of the natural.  Theorem X.1.31 of [Rosser] p. 528. 
+       (Contributed by SF, 24-Jan-2015.) $)
+    tfinpw1 $p |- ( ( M e. Nn /\ A e. M ) -> ~P1 A e. _T[fin] M ) $=
+      ( vb vn cnnc wcel wa ctfin cv cpw1 wrex c0 wne ne0i tfinprop sylan2 3expa
+      expr rexlimdva mpd ncfinraise adantrr w3a simp3rl wceq simp3l syl simp3rr
+      simp1l tfincl simp2r nnceleq syl22anc eleqtrd adantld ) BEFZABFZGZBHZEFZC
+      IZJZUSFZCBKZGZAJZUSFZUQUPBLMVEBANBCOPURVDVGUTURVCVGCBURVABFZVCVGURVHVCGZG
+      ZVFDIZFZVBVKFZGZDEKZVGURVHVOVCUPUQVHVOAVADBUAQUBVJVNVGDEVJVKEFZVNVGURVIVP
+      VNGZVGURVIVQUCZVFVKUSVLVMVPURVIUDVRVPUTVMVCVKUSUEURVIVPVNUFVRUPUTUPUQVIVQ
+      UIBUJUGVLVMVPURVIUHURVHVCVQUKVBVKUSULUMUNQRSTRSUOT $.
+      $( [24-Jan-2015] $)
+  $}
+
+  ${
+    $d A x $.
+    $( Relationship between finite T operator and finite Nc operation in a
+       finite universe.  Corollary of Theorem X.1.31 of [Rosser] p. 529. 
+       (Contributed by SF, 24-Jan-2015.) $)
+    ncfintfin $p |- ( ( _V e. Fin /\ A e. V ) ->
+               _T[fin] Nc[fin] A = Nc[fin] ~P1 A ) $=
+      ( cfin wcel wa cncfin ctfin cnnc cpw1 wceq ncfinprop simpld tfincl pw1exg
+      cvv syl sylan2 tfinpw1 simprd nnceleq syl22anc ) OCDZABDZEZAFZGZHDZAIZFZH
+      DZUHUFDZUHUIDZUFUIJUDUEHDZUGUDUMAUEDZABKZLUEMPUDUJULUCUBUHODUJULEABNUHOKQ
+      ZLUDUMUNEUKUOAUERPUDUJULUPSUHUFUITUA $.
+      $( [24-Jan-2015] $)
+  $}
+
+  ${
+    $d M a b c t $.  $d N a b c t $.
+    $( The finite T operation distributes over non-empty cardinal sum.  Theorem
+       X.1.32 of [Rosser] p. 529. 
+       (Contributed by SF, 26-Jan-2015.) $)
+    tfindi $p |- ( ( M e. Nn /\ N e. Nn /\ ( M +c N ) =/= (/) ) ->
+       _T[fin] ( M +c N ) = ( _T[fin] M +c _T[fin] N ) ) $=
+      ( va vb vc cnnc wcel cplc c0 ctfin wceq cv cpw1 nncaddccl 3adant3 tfinpw1
+      wa tfincl syl2anc cin wne wex n0 w3a syl syl2an simp3 wrex eladdc simplll
+      cun simplrl simpllr simplrr pw1eq pw1in pw10 3eqtr3g adantl eladdci pw1un
+      syl3anc syl6eq eleq1d syl5ibrcom expimpd rexlimdvva syl5bi 3impia nnceleq
+      syl22anc 3expia exlimdv ) AFGZBFGZABHZIUAZVPJZAJZBJZHZKZVQCLZVPGZCUBVNVOQ
+      ZWBCVPUCWEWDWBCVNVOWDWBVNVOWDUDZVRFGZWAFGZWCMZVRGZWIWAGZWBVNVOWGWDWEVPFGZ
+      WGABNZVPRUEOVNVOWHWDVNVSFGVTFGWHVOARBRVSVTNUFOWFWLWDWJVNVOWLWDWMOVNVOWDUG
+      WCVPPSVNVOWDWKWDDLZELZTZIKZWCWNWOUKZKZQZEBUHDAUHWEWKWCABDEUIWEWTWKDEABWEW
+      NAGZWOBGZQZQZWQWSWKXDWQQZWKWSWNMZWOMZUKZWAGZXEXFVSGZXGVTGZXFXGTZIKZXIXEVN
+      XAXJVNVOXCWQUJWEXAXBWQULWNAPSXEVOXBXKVNVOXCWQUMWEXAXBWQUNWOBPSWQXMXDWQWPM
+      IMXLIWPIUOWNWOUPUQURUSXFXGVSVTUTVBWSWIXHWAWSWIWRMXHWCWRUOWNWOVAVCVDVEVFVG
+      VHVIWIVRWAVJVKVLVMVHVI $.
+      $( [26-Jan-2015] $)
+  $}
+
+
+  ${
+    $( The finite T operator is fixed at ` 0c ` . 
+       (Contributed by SF, 29-Jan-2015.) $)
+    tfin0c $p |- _T[fin] 0c = 0c $=
+      ( c0c ctfin cnnc wcel c0 wceq peano1 tfincl ax-mp cpw1 pw10 nulel0c mp2an
+      tfinpw1 eqeltrri nnceleq mp4an ) ABZCDZACDZERDEADZRAFTSGAHIGEJZERKTUAUBRD
+      GLEANMOLERAPQ $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d A a b x $.
+    $( The finite T operator over a successor. 
+       (Contributed by SF, 30-Jan-2015.) $)
+    tfinsuc $p |- ( ( A e. Nn /\ ( A +c 1c ) =/= (/) ) ->
+       _T[fin] ( A +c 1c ) = ( _T[fin] A +c 1c ) ) $=
+      ( va vb vx cnnc wcel c1c cplc ctfin wceq cv cpw1 peano2 tfincl syl adantr
+      wa tfinpw1 csn cun c0 wne wex sylan ccompl wrex elsuc adantrr wel elcompl
+      n0 wn vex snelpw1 xchbinxr biimpi ad2antll snex syl2anc pw1eq pw1un pw1sn
+      elsuci uneq2i syl6eq eleq1d syl5ibrcom rexlimdvva syl5bi nnceleq syl22anc
+      eqtri imp ex exlimdv ) AEFZAGHZUAUBZVQIZAIZGHZJZVRBKZVQFZBUCVPWBBVQUKVPWD
+      WBBVPWDWBVPWDQVSEFZWAEFZWCLZVSFZWGWAFZWBVPWEWDVPVQEFZWEAMZVQNOPVPWFWDVPVT
+      EFWFANVTMOPVPWJWDWHWKWCVQRUDVPWDWIWDWCCKZDKZSZTZJZDWLUEZUFCAUFVPWIDWCACUG
+      VPWPWICDAWQVPWLAFZWMWQFZQQZWIWPWLLZWNSZTZWAFZWTXAVTFZWNXAFZULZXDVPWRXEWSW
+      LARUHWSXGVPWRWSXGWSDCUIXFWMWLDUMZUJWMWLUNUOUPUQXAVTWNWMURVCUSWPWGXCWAWPWG
+      WOLZXCWCWOUTXIXAWNLZTXCWLWNVAXJXBXAWMXHVBVDVLVEVFVGVHVIVMWGVSWAVJVKVNVOVI
+      VM $.
+      $( [30-Jan-2015] $)
+  $}
+
+  $( The finite T operator is idempotent over ` 1c ` .  Theorem X.1.34(a) of
+     [Rosser] p. 529. 
+     (Contributed by SF, 30-Jan-2015.) $)
+  tfin1c $p |- _T[fin] 1c = 1c $=
+    ( c0c c1c cplc ctfin cnnc wcel wne wceq peano1 addcid2 csn 1cex snel1c ne0i
+    c0 ax-mp eqnetri tfinsuc mp2an tfineq tfin0c addceq1i eqtri 3eqtr3i ) ABCZD
+    ZADZBCZBDZBAEFUEOGUFUHHIUEBOBJZBKZBFBOGBLMBUKNPQARSUEBHUFUIHUJUEBTPUHUEBUGA
+    BUAUBUJUCUD $.
+    $( [30-Jan-2015] $)
+
+  ${
+    $d M x y $.  $d N x y $.
+    $( Lemma for ~ tfinltfin .  Prove the forward direction of the theorem. 
+       (Contributed by SF, 2-Feb-2015.) $)
+    tfinltfinlem1 $p |- ( ( M e. Nn /\ N e. Nn ) ->
+    ( << M , N >> e. <[fin] ->
+      << _T[fin] M , _T[fin] N >> e. <[fin] ) ) $=
+      ( vx vy cnnc wcel wa c0 wne cv cplc wceq wrex ctfin copk addceq1d syl2anc
+      c1c wi cvv cltfin tfinnnul adantrd adantr addcnul1 addccom eqtr3i addceq2
+      ex syl6eq eqeq2d rspcev mpan2 eleq1 tfineq tfinnul eqeq1d rexbidv mpbiri
+      imbi12d adantld a1dd simp2r simp3r simp3l eqnetrrd addcnnul simpld simprd
+      w3a cpw1 tfinprop adantl 3ad2ant3 simp1l nncaddccl tfinsuc tfindi syl3anc
+      syl eqtrd 3expa exp32 com12 pm2.61ine expr rexlimdv jcad opkltfing tfinex
+      imp3a wb mp2an a1i 3imtr4d ) AEFZBEFZGZAHIZBACJZKZRKZLZCEMZGZANZHIZBNZXFD
+      JZKZRKZLZDEMZGZABOUAFXFXHOUAFZWRXEXGXMWPXEXGSWQWPWSXGXDWPWSXGAUBUIUCUDWRW
+      SXDXMWRWSXDXMSWRWSGXCXMCEWRWSWTEFZXCXMSZWRWSXPGZGZXQSBHBHLZXSXMXCXTWRXMXR
+      XTWQXMWPXTWQXMSHEFZHXKLZDEMZSYAHHRKZLZYCRHKHYDRUERHUFUGYBYEDHEXIHLZXKYDHY
+      FXJHRYFXJXFHKHXIHXFUHXFUEUJPUKULUMXTWQYAXMYCBHEUNXTXLYBDEXTXHHXKXTXHHNHBH
+      UOUPUJUQURUTUSVAUCVBXSBHIZXQXSYGXCXMWRXRYGXCGZXMWRXRYHVJZWTNZEFZXHXFYJKZR
+      KZLZXMYIXPWTHIZYKWRWSXPYHVCZYIWSYOYIXAHIZWSYOGYIYQRHIZYIXBHIZYQYRGYIBXBHW
+      RXRYGXCVDWRXRYGXCVEVFZXARVGVTVHZAWTVGVTVIXPYOGYKXIVKYJFDWTMWTDVLVHQYIXHXA
+      NZRKZYMYIXHXBNZUUCYHWRXHUUDLZXRXCUUEYGBXBUOVMVNYIXAEFZYSUUDUUCLYIWPXPUUFW
+      PWQXRYHVOZYPAWTVPQYTXAVQQWAYIUUBYLRYIWPXPYQUUBYLLUUGYPUUAAWTVRVSPWAXLYNDY
+      JEXIYJLZXKYMXHUUHXJYLRXIYJXFUHPUKULQWBWCWDWEWFWGUIWKWHCABEEWIXOXNWLZWRXFT
+      FXHTFUUIAWJBWJDXFXHTTWIWMWNWO $.
+      $( [2-Feb-2015] $)
+  $}
+
+
+  ${
+    $d M x y $.  $d N x y $.
+    $( Ordering rule for the finite T operation.  Corollary to theorem X.1.33
+       of [Rosser] p. 529. 
+       (Contributed by SF, 1-Feb-2015.) $)
+    tfinltfin $p |- ( ( M e. Nn /\ N e. Nn ) ->
+    ( << M , N >> e. <[fin] <->
+      << _T[fin] M , _T[fin] N >> e. <[fin] ) ) $=
+      ( vx vy cnnc wcel wa copk cltfin ctfin tfinltfinlem1 wi c0 wceq cplc wrex
+      wne wn cvv jca cv c1c tfineq tfinnul syl6eq df-ne con2bii intnanrd tfinex
+      sylib wb opkltfing mp2an sylnibr pm2.21d a1d w3a tfinprop simpld ltfinirr
+      cpw1 syl 3adant2 opkeq2 eleq1d notbid syl5ibcom con2d nsyl simpl1 syl2anc
+      imp simpl3 simpl2 simprr simprl ltfinasym sylc expr imnan ancoms simprbda
+      3adant3 adantrl mtod w3o ltfintri adantr ecase23d expcom pm2.61ine impbid
+      ex 3expa ) AEFZBEFZGZABHIFZAJZBJZHZIFZABKWQXBWRLZLAMAMNZXCWQXDXBWRXDWSMQZ
+      WTWSCUAOUBONCEPZGZXBXDXEXFXDWSMNZXERXDWSMJMAMUCUDUEXEXHWSMUFUGUJUHWSSFWTS
+      FXBXGUKAUIBUICWSWTSSULUMUNUOUPWQAMQZXCWOWPXIXCWOWPXIUQZXBWRXJXBGZWRABNZBA
+      HIFZXKWSWTNZXLXJXBXNRXJXNXBXJWSWSHZIFZRZXNXBRWOXIXQWPWOXIGZWSEFZXQXRXSDUA
+      ZVAZWSFDAPADURUSZWSUTVBVCXNXPXBXNXOXAIWSWTWSVDVEVFVGVHVLABUCVIXKXMBMQZWTW
+      SHIFZGZXKYCYDRZLYERXJXBYCYFXJXBYCGZGZXSWTEFZGXBYFYHXSYIYHWOXIXSWOWPXIYGVJ
+      WOWPXIYGVMYBVKYHWPYCYIWOWPXIYGVNXJXBYCVOWPYCGYIYAWTFDBPBDURUSVKTXJXBYCVPW
+      SWTVQVRVSYCYDVTUJXJXBXMYEXJXBXMGZGZYCYDXJXMYCXBXJXMYCABXTOUBONDEPZWOWPXMY
+      CYLGUKZXIWPWOYMDBAEEULWAWCWBWDYKWPWOGXMYDYKWPWOWOWPXIYJVNWOWPXIYJVJTXJXBX
+      MVOBAKVRTVSWEXJWRXLXMWFXBABWGWHWIWMWNWJWKWL $.
+      $( [1-Feb-2015] $)
+  $}
+
+  $( Ordering rule for the finite T operation.  Theorem X.1.33 of [Rosser]
+     p. 529. 
+     (Contributed by SF, 2-Feb-2015.) $)
+  tfinlefin $p |- ( ( M e. Nn /\ N e. Nn ) ->
+    ( << M , N >> e. <_[fin] <->
+      << _T[fin] M , _T[fin] N >> e. <_[fin] ) ) $=
+    ( cnnc wcel wa copk cltfin wn ctfin clefin tfinltfin ancoms notbid lenltfin
+    wb tfincl syl2an 3bitr4d ) ACDZBCDZEZBAFGDZHBIZAIZFGDZHZABFJDUDUCFJDZUAUBUE
+    TSUBUEOBAKLMABNSUDCDUCCDUGUFOTAPBPUDUCNQR $.
+    $( [2-Feb-2015] $)
+
+  ${
+    $d a b $.  $d a c $.  $d a n $.  $d a t $.  $d a x $.  $d b c $.  $d b n $.
+    $d b t $.  $d b x $.  $d c n $.  $d c t $.  $d c x $.  $d n x $.  $d n t $.
+    $d t x $.
+
+    $( The set of all even naturals exists. 
+       (Contributed by SF, 20-Jan-2015.) $)
+    evenfinex $p |- Even[fin] e. _V $=
+      ( vx vn va vt vc vb cssetk csik csn wrex wa wcel copk wn exbii snex bitri
+      wex 3bitri opksnelsik cevenfin cins2k cvv cxpk cin cins3k c1c cpw1 ccompl
+      cimak cun csymdif cnnc c0 cdif cv cplc wceq wne df-evenfin eldifsn elimak
+      cab vex wb opkex elpw121c anbi1i 19.41v bitr4i df-rex excom opkeq1 eleq1d
+      3bitr4i ceqsexv elsymdif otkelins2k elssetk otkelins3k r2ex elpw141c elin
+      eladdc opkelxpk mpbiran anbi12i ndisjrelk notbii elcompl con2bii elpw171c
+      wel df-ne wo orbi12i elun bibi12i wal dfcleq rexbii abbi2i eqtr4i ssetkex
+      alex ins2kex vvex xpkex inex ins3kex 1cex pw1ex imakex complex sikex unex
+      symdifex nncex difex eqeltri ) UAGUBZYAUBZUCYAUDZUEZGUFZYAUEZUGUHZUHZUJZU
+      IZHZHZHZUFZGHZUFZUBZUBZYOHZHZHZHZUFZYTUFZUBZUKZULZYHUHZUHZUHZUHZUHZUJZUIZ
+      UEZUEZUUIUJZYHUJZUFZULZYHUJZUIZUMUJZUNIZUOZUCUAAUPZBUPZUVGUQZURZBUMJZUVFU
+      NUSZKZAVCUVEABUTUVLAUVEUVFUVELUVFUVCLZUVKKUVLUVFUVCUNVAUVMUVJUVKUVMUVGUVF
+      MZUVBLZBUMJUVJBUVBUMUVFAVDZVBUVOUVIBUMUVNUVALZNCAWMZCUPZUVHLZVEZNZCRZNZUV
+      OUVIUVQUWCUVQDUPZUVNMZUUTLZDYHJZUWEUVSIZIZIZURZUWGKZDRZCRZUWCDUUTYHUVNUVG
+      UVFVFZVBUWEYHLZUWGKZDRUWMCRZDRUWHUWOUWRUWSDUWRUWLCRZUWGKUWSUWQUWTUWGCUWEV
+      GVHUWLUWGCVIVJOUWGDYHVKUWMCDVLVOUWNUWBCUWNUWKUVNMZUUTLZUXAYALZUXAUUSLZVEZ
+      NUWBUWGUXBDUWKUWJPUWLUWFUXAUUTUWEUWKUVNVMVNVPUXAYAUUSVQUXEUWAUXCUVRUXDUVT
+      UXCUWIUVFMGLUVRUWIUVGUVFGUVSPZBVDZUVPVRUVSUVFCVDZUVPVSQUWIUVGMZUURLZUWEEU
+      PZIZIZIZURZUWEUXIMZUUQLZKZDRZERZUXDUVTUXJUXQDYHJUWQUXQKZDRZUXTDUUQYHUXIUW
+      IUVGVFZVBUXQDYHVKUYBUXRERZDRUXTUYAUYDDUYAUXOERZUXQKUYDUWQUYEUXQEUWEVGVHUX
+      OUXQEVIVJOUXREDVLVJSUWIUVGUVFUURUXFUXGUVPVTUVTFUPZUXKUEZUNURZUVSUYFUXKUKZ
+      URZKZEUVGJFUVGJFBWMZEBWMZKZUYKKZERFRZUXTUVSUVGUVGFEWDUYKFEUVGUVGWAUYPUYOF
+      RZERUXTUYOFEVLUXSUYQEUXSUXNUXIMZUUQLZUWEUYFIZIZIZIZIZURZUWEUYRMZUUPLZKZDR
+      ZFRZUYQUXQUYSDUXNUXMPZUXOUXPUYRUUQUWEUXNUXIVMVNVPUYSVUGDUUIJUWEUUILZVUGKZ
+      DRZVUJDUUPUUIUYRUXNUXIVFZVBVUGDUUIVKVUNVUHFRZDRVUJVUMVUPDVUMVUEFRZVUGKVUP
+      VULVUQVUGFUWEWBVHVUEVUGFVIVJOVUHFDVLVJSVUIUYOFVUIVUDUYRMZUUPLZVURYDLZVURU
+      UOLZKUYOVUGVUSDVUDVUCPZVUEVUFVURUUPUWEVUDUYRVMVNVPVURYDUUOWCVUTUYNVVAUYKV
+      UTVURYBLZVURYCLZKUYNVURYBYCWCVVCUYLVVDUYMVVCVUBUXIMYALUYTUVGMGLUYLVUBUXNU
+      XIYAVUAPZVUKUYCVRUYTUWIUVGGUYFPZUXFUXGVRUYFUVGFVDZUXGVSSVVDUYRYALZUXLUVGM
+      GLUYMVVDVUDUCLVVHVVBVUDUYRUCYAVVBVUOWEWFUXLUWIUVGGUXKPZUXFUXGVRUXKUVGEVDZ
+      UXGVSSWGQVVAVURYNLZVURUUNLZKUYKVURYNUUNWCVVKUYHVVLUYJVVKVUBUXNMYMLVUAUXMM
+      YLLZUYHVUBUXNUXIYMVVEVUKUYCVTVUAUXMYLUYTPZUXLPZTVVMUYTUXLMYKLUYFUXKMZYJLZ
+      UYHUYTUXLYKVVFVVITUYFUXKYJVVGVVJTVVPYILZNUYGUNUSZNVVQUYHVVRVVSUYFUXKVVGVV
+      JWHWIVVPYIUYFUXKVFWJVVSUYHUYGUNWNWKVOSSVURUUMLZNACWMZUVFUYILZVEZNZARZNZVV
+      LUYJVVTVWEVVTUWEVURMZUUGLZDUULJZUWEUVFIZIZIZIZIZIZIZIZURZVWHKZDRZARZVWEDU
+      UGUULVURVUDUYRVFZVBUWEUULLZVWHKZDRVWSARZDRVWIVXAVXDVXEDVXDVWRARZVWHKVXEVX
+      CVXFVWHAUWEWLVHVWRVWHAVIVJOVWHDUULVKVWSADVLVOVWTVWDAVWTVWQVURMZUUGLZVXGYR
+      LZVXGUUFLZVEZNVWDVWHVXHDVWQVWPPVWRVWGVXGUUGUWEVWQVURVMVNVPVXGYRUUFVQVXKVW
+      CVXIVWAVXJVWBVXIVWOUYRMZYQLVWMUXIMYPLZVWAVWOVUDUYRYQVWNPZVVBVUOVRVWMUXNUX
+      IYPVWLPZVUKUYCVRVXMVWKUWIMYOLVWJUVSMGLVWAVWKUWIUVGYOVWJPZUXFUXGVTVWJUVSGU
+      VFPZUXHTUVFUVSUVPUXHVSSSVXGUUCLZVXGUUELZWOAFWMZAEWMZWOVXJVWBVXRVXTVXSVYAV
+      XRVWOVUDMUUBLVWNVUCMUUALZVXTVWOVUDUYRUUBVXNVVBVUOVTVWNVUCUUAVWMPVUBPTVYBV
+      WMVUBMYTLVWLVUAMYSLZVXTVWMVUBYTVXOVVETVWLVUAYSVWKPZVVNTVYCVWKUYTMYOLVWJUY
+      FMGLVXTVWKUYTYOVXPVVFTVWJUYFGVXQVVGTUVFUYFUVPVVGVSSSSVXSVXLUUDLVWMUXNMYTL
+      ZVYAVWOVUDUYRUUDVXNVVBVUOVRVWMUXNUXIYTVXOVUKUYCVTVYEVWLUXMMYSLVWKUXLMYOLZ
+      VYAVWLUXMYSVYDVVOTVWKUXLYOVXPVVITVYFVWJUXKMGLVYAVWJUXKGVXQVVJTUVFUXKUVPVV
+      JVSQSSWPVXGUUCUUEWQUVFUYFUXKWQVOWRWISOSWIVURUUMVXBWJUYJVWCAWSVWFAUVSUYIWT
+      VWCAXEQVOWGQWGSOSOVJSVOWRWISOSWIUVNUVAUWPWJUVIUWACWSUWDCUVFUVHWTUWACXEQVO
+      XAQVHQXBXCUVCUVDUVBUMUVAUUTYHYAUUSGXDXFZUURUUQYHUUPUUIYDUUOYBYCYAVYGXFUCY
+      AXGVYGXHXIYNUUNYMYLYKYJYIYFYHYEYAGXDXJVYGXIYGUGXKXLXLZXMXNXOXOXOXJUUMUUGU
+      ULYRUUFYQYPYOGXDXOZXJXFXFUUCUUEUUBUUAYTYSYOVYIXOXOZXOXOXJUUDYTVYJXJXFXPXQ
+      UUKUUJUUIUUHYHVYHXLXLZXLXLXLXMXNXIXIVYKXMVYHXMXJXQVYHXMXNXRXMUNPXSXT $.
+      $( [20-Jan-2015] $)
+
+    $d a y $.  $d b y $.  $d n y $.  $d t y $.  $d x y $.
+
+    $( The set of all odd naturals exists. 
+       (Contributed by SF, 20-Jan-2015.) $)
+    oddfinex $p |- Odd[fin] e. _V $=
+      ( vx va vt vb vc vy cssetk csn wceq wrex wa wcel copk wn wex 3bitr4i snex
+      exbii 3bitri opksnelsik coddfin cins2k cvv cxpk cin cins3k c1c cpw1 cimak
+      vn ccompl csik cun csymdif ccnvk cidk cnnc c0 cdif cplc wne cab df-oddfin
+      cv eldifsn vex elimak wb opkex elpw121c anbi1i 19.41v bitr4i df-rex excom
+      opkeq1 eleq1d ceqsexv elsymdif otkelins2k elssetk bitri elpw131c elpw141c
+      elin opkelxpk mpbiran anbi12i otkelins3k ndisjrelk notbii elcompl con2bii
+      wel df-ne elpw171c wo orbi12i elun bibi12i wal dfcleq alex r2ex opkelcnvk
+      eladdc weq sneqb opkelidkg mp2an elsnc elsuc rexbii abbi2i ssetkex ins2kex
+      eqtr4i vvex xpkex inex ins3kex pw1ex imakex complex sikex symdifex cnvkex
+      1cex unex idkex nncex difex eqeltri ) UAGUBZYNUBZUCYNUDZUEZGUFZYNUEZUGUHZ
+      UHZUIZUKZULZULZULZUFZGULZUFZUBZUBZUUHULZULZULZULZUFZUUMUFZUBZUMZUNZUUAUHZ
+      UHZUHZUHZUHZUIZUKZUEZUEZUVBUIZUUAUIZUBZUBZGUKZULZULZULZUOZUFZUEZUUKUUPUPU
+      FZUBZUMZUNZUVEUIZUKZUEZUVBUIZUVAUIZUFZUNZUUAUIZUKZUQUIZURHZUSZUCUAAVDZUJV
+      DZUWRUTZUGUTZIZUJUQJZUWQURVAZKZAVBUWPAUJVCUXDAUWPUWQUWPLUWQUWNLZUXCKUXDUW
+      QUWNURVEUXEUXBUXCUXEUWRUWQMZUWMLZUJUQJUXBUJUWMUQUWQAVFZVGUXGUXAUJUQUXFUWL
+      LZNBAWNZBVDZUWTLZVHZNZBOZNZUXGUXAUXIUXOUXICVDZUXFMZUWKLZCUUAJZUXQUXKHZHZH
+      ZIZUXSKZCOZBOZUXOCUWKUUAUXFUWRUWQVIZVGUXQUUALZUXSKZCOUYEBOZCOUXTUYGUYJUYK
+      CUYJUYDBOZUXSKUYKUYIUYLUXSBUXQVJVKUYDUXSBVLVMRUXSCUUAVNUYEBCVOPUYFUXNBUYF
+      UYCUXFMZUWKLZUYMYNLZUYMUWJLZVHZNUXNUXSUYNCUYCUYBQZUYDUXRUYMUWKUXQUYCUXFVP
+      VQVRUYMYNUWJVSUYQUXMUYOUXJUYPUXLUYOUYAUWQMGLUXJUYAUWRUWQGUXKQZUJVFZUXHVTU
+      XKUWQBVFZUXHWAWBUYAUWRMZUWILZDVDZUWSLZUWQVUDUKZLZKZUXKVUDUWQHZUMZIZKZDOZA
+      OZUYPUXLVUCUXQVUBMZUWHLZCUVAJZUXQVUIHZHZHZIZVUPKZCOZAOZVUNCUWHUVAVUBUYAUW
+      RVIZVGVUQUXQUVALZVUPKZCOVVBAOZCOVVDVUPCUVAVNVVGVVHCVVGVVAAOZVUPKVVHVVFVVI
+      VUPAUXQWCVKVVAVUPAVLVMRVVBCAVOSVVCVUMAVVCVUTVUBMZUWHLZUXQVUDHZHZHZHZHZIZU
+      XQVVJMZUWGLZKZCOZDOZVUMVUPVVKCVUTVUSQZVVAVUOVVJUWHUXQVUTVUBVPVQVRVVKVVSCU
+      VBJUXQUVBLZVVSKZCOZVWBCUWGUVBVVJVUTVUBVIZVGVVSCUVBVNVWFVVTDOZCOVWBVWEVWHC
+      VWEVVQDOZVVSKVWHVWDVWIVVSDUXQWDVKVVQVVSDVLVMRVVTDCVOVMSVWAVULDVWAVVPVVJMZ
+      UWGLZVWJUVTLZVWJUWFLZKVULVVSVWKCVVPVVOQZVVQVVRVWJUWGUXQVVPVVJVPVQVRVWJUVT
+      UWFWEVWLVUHVWMVUKVWLVWJUVMLZVWJUVSLZKVUHVWJUVMUVSWEVWOVUEVWPVUGVWOVVNVUBM
+      UVLLVVLUWRMZUVKLZVUEVVNVUTVUBUVLVVMQZVWCVVEVTVVLUYAUWRUVKVUDQZUYSUYTVTVWR
+      BUJWNZEUJWNZKZUXKEVDZUEZURIZVUDUXKVXDUMZIZKZKZBOZEOZVUEVWRUXQVWQMZUVJLZCU
+      UAJZUXQVXDHZHZHZIZVXNKZCOZEOZVXLCUVJUUAVWQVVLUWRVIZVGUYIVXNKZCOVXTEOZCOVX
+      OVYBVYDVYECVYDVXSEOZVXNKVYEUYIVYFVXNEUXQVJVKVXSVXNEVLVMRVXNCUUAVNVXTECVOP
+      VYAVXKEVYAVXRVWQMZUVJLZUXQUYCHZHZIZUXQVYGMZUVILZKZCOZBOZVXKVXNVYHCVXRVXQQ
+      ZVXSVXMVYGUVJUXQVXRVWQVPVQVRVYHVYMCUVBJVWDVYMKZCOZVYPCUVIUVBVYGVXRVWQVIZV
+      GVYMCUVBVNVYSVYNBOZCOVYPVYRWUACVYRVYKBOZVYMKWUAVWDWUBVYMBUXQWDVKVYKVYMBVL
+      VMRVYNBCVOVMSVYOVXJBVYOVYJVYGMZUVILZWUCYQLZWUCUVHLZKVXJVYMWUDCVYJVYIQZVYK
+      VYLWUCUVIUXQVYJVYGVPVQVRWUCYQUVHWEWUEVXCWUFVXIWUEWUCYOLZWUCYPLZKVXCWUCYOY
+      PWEWUHVXAWUIVXBWUHUYCVWQMYNLVUBGLVXAUYCVXRVWQYNUYRVYQVYCVTUYAVVLUWRGUYSVW
+      TUYTVTUXKUWRVUAUYTWASWUIVYGYNLZVXPUWRMGLVXBWUIVYJUCLWUJWUGVYJVYGUCYNWUGVY
+      TWFWGVXPVVLUWRGVXDQZVWTUYTVTVXDUWREVFZUYTWASWHWBWUFWUCUUGLZWUCUVGLZKVXIWU
+      CUUGUVGWEWUMVXFWUNVXHWUMUYCVXRMUUFLUYBVXQMUUELZVXFUYCVXRVWQUUFUYRVYQVYCWI
+      UYBVXQUUEUYAQZVXPQZTWUOUYAVXPMUUDLUXKVXDMZUUCLZVXFUYAVXPUUDUYSWUKTUXKVXDU
+      UCVUAWULTWURUUBLZNVXEURVAZNWUSVXFWUTWVAUXKVXDVUAWULWJWKWURUUBUXKVXDVIWLWV
+      AVXFVXEURWOWMPSSWUCUVFLZNADWNZUWQVXGLZVHZNZAOZNZWUNVXHWVBWVGWVBUXQWUCMZUU
+      TLZCUVEJZUXQVUTHZHZHZHZIZWVJKZCOZAOZWVGCUUTUVEWUCVYJVYGVIZVGUXQUVELZWVJKZ
+      COWVQAOZCOWVKWVSWWBWWCCWWBWVPAOZWVJKWWCWWAWWDWVJAUXQWPVKWVPWVJAVLVMRWVJCU
+      VEVNWVQACVOPWVRWVFAWVRWVOWUCMZUUTLZWWEUUKLZWWEUUSLZVHZNWVFWVJWWFCWVOWVNQW
+      VPWVIWWEUUTUXQWVOWUCVPVQVRWWEUUKUUSVSWWIWVEWWGWVCWWHWVDWWGWVMVYGMZUUJLVUT
+      VWQMUUILZWVCWVMVYJVYGUUJWVLQZWUGVYTVTVUTVXRVWQUUIVWCVYQVYCVTWWKVURVVLMZUU
+      HLVUIVUDMZGLZWVCVURVVLUWRUUHVUIQZVWTUYTWIVUIVUDGUWQQZDVFZTUWQVUDUXHWWRWAZ
+      SSWWEUUPLZWWEUURLZWQABWNZAEWNZWQWWHWVDWWTWXBWXAWXCWWTWVMVYJMUUOLWVLVYIMUU
+      NLZWXBWVMVYJVYGUUOWWLWUGVYTWIWVLVYIUUNVUTQUYCQTWXDVUTUYCMUUMLVUSUYBMUULLZ
+      WXBVUTUYCUUMVWCUYRTVUSUYBUULVURQZWUPTWXEVURUYAMUUHLVUIUXKMGLWXBVURUYAUUHW
+      WPUYSTVUIUXKGWWQVUATUWQUXKUXHVUAWASSSWXAWWJUUQLVUTVXRMUUMLZWXCWVMVYJVYGUU
+      QWWLWUGVYTVTVUTVXRVWQUUMVWCVYQVYCWIWXGVUSVXQMUULLVURVXPMUUHLZWXCVUSVXQUUL
+      WXFWUQTVURVXPUUHWWPWUKTWXHVUIVXDMGLWXCVUIVXDGWWQWULTUWQVXDUXHWULWAWBSSWRW
+      WEUUPUURWSUWQUXKVXDWSPWTWKSRSWKWUCUVFWVTWLVXHWVEAXAWVHAVUDVXGXBWVEAXCWBPW
+      HWBWHSRSRSVUEVXIEUWRJBUWRJVXJEOBOVXLVUDUWRUWRBEXFVXIBEUWRUWRXDVXJBEVOSVMS
+      VWPVVNVUTMUVRLVUTVVNMUVQLZVUGVVNVUTVUBUVRVWSVWCVVEWIVVNVUTUVQVWSVWCXEWXIV
+      USVVMMUVPLWWMUVOLZVUGVUSVVMUVPWXFVVLQZTVURVVLUVOWWPVWTTWXJWWNUVNLZVUGVUIV
+      UDUVNWWQWWRTWWONWVCNWXLVUGWWOWVCWWSWKWWNGVUIVUDVIWLUWQVUDUXHWLPWBSSWHWBVW
+      JUWELZNFBWNZFVDZVUJLZVHZNZFOZNZVWMVUKWXMWXSWXMUXQVWJMZUWDLZCUVEJZUXQWXOHZ
+      HZHZHZHZHZHZHZIZWYBKZCOZFOZWXSCUWDUVEVWJVVPVVJVIZVGWWAWYBKZCOWYMFOZCOWYCW
+      YOWYQWYRCWYQWYLFOZWYBKWYRWWAWYSWYBFUXQWPVKWYLWYBFVLVMRWYBCUVEVNWYMFCVOPWY
+      NWXRFWYNWYKVWJMZUWDLZWYTUUKLZWYTUWCLZVHZNWXRWYBXUACWYKWYJQWYLWYAWYTUWDUXQ
+      WYKVWJVPVQVRWYTUUKUWCVSXUDWXQXUBWXNXUCWXPXUBWYIVVJMZUUJLWYGVUBMUUILZWXNWY
+      IVVPVVJUUJWYHQZVWNVWGVTWYGVUTVUBUUIWYFQZVWCVVEVTXUFWYEUYAMUUHLWYDUXKMGLWX
+      NWYEUYAUWRUUHWYDQZUYSUYTWIWYDUXKGWXOQZVUATWXOUXKFVFZVUAWASSWYTUUPLZWYTUWB
+      LZWQFDWNZWXOVUILZWQXUCWXPXULXUNXUMXUOXULWYIVVPMUUOLWYHVVOMUUNLZXUNWYIVVPV
+      VJUUOXUGVWNVWGWIWYHVVOUUNWYGQVVNQTXUPWYGVVNMUUMLWYFVVMMUULLZXUNWYGVVNUUMX
+      UHVWSTWYFVVMUULWYEQZWXKTXUQWYEVVLMUUHLWYDVUDMGLXUNWYEVVLUUHXUIVWTTWYDVUDG
+      XUJWWRTWXOVUDXUKWWRWASSSXUMXUEUWALWYGVUTMUPLZXUOWYIVVPVVJUWAXUGVWNVWGVTWY
+      GVUTVUBUPXUHVWCVVEWIWYGVUTIZFAXGZXUSXUOXUTWYFVUSIWYEVURIZXVAWYFVUSXURXHWY
+      EVURXUIXHXVBWYDVUIIXVAWYDVUIXUJXHWXOUWQXUKXHWBSWYGUCLVUTUCLXUSXUTVHXUHVWC
+      WYGVUTUCUCXIXJWXOUWQXUKXKPSWRWYTUUPUWBWSWXOVUDVUIWSPWTWKSRSWKVWJUWEWYPWLV
+      UKWXQFXAWXTFUXKVUJXBWXQFXCWBPWHSRSRSUYAUWRUWQUWIUYSUYTUXHWIUXLVUKAVUFJDUW
+      SJVULAODOVUNAUXKUWSDXLVUKDAUWSVUFXDVULDAVOSPWTWKSRSWKUXFUWLUYHWLUXAUXMBXA
+      UXPBUWQUWTXBUXMBXCWBPXMWBVKWBXNXQUWNUWOUWMUQUWLUWKUUAYNUWJGXOXPZUWIUWHUVA
+      UWGUVBUVTUWFUVMUVSUVLUVKUVJUUAUVIUVBYQUVHYOYPYNXVCXPUCYNXRXVCXSXTUUGUVGUU
+      FUUEUUDUUCUUBYSUUAYRYNGXOYAXVCXTYTUGYHYBYBZYCYDYEYEYEYAUVFUUTUVEUUKUUSUUJ
+      UUIUUHGXOYEZYAXPXPZUUPUURUUOUUNUUMUULUUHXVEYEYEZYEYEYAZUUQUUMXVGYAXPYIYFU
+      VDUVCUVBUVAUUAXVDYBZYBZYBYBYBZYCYDXTXTXVJYCXVDYCXPXPUVRUVQUVPUVOUVNGXOYDY
+      EYEYEYGYAXTUWEUWDUVEUUKUWCXVFUUPUWBXVHUWAUPYJYAXPYIYFXVKYCYDXTXVJYCXVIYCY
+      AYFXVDYCYDYKYCURQYLYM $.
+      $( [20-Jan-2015] $)
+  $}
+
+  ${
+    $d n x $.
+    $( Cardinal zero is even. 
+       (Contributed by SF, 20-Jan-2015.) $)
+    0ceven $p |- 0c e. Even[fin] $=
+      ( vn vx c0c cevenfin wcel cv cplc wceq cnnc wrex c0 peano1 addcid2 eqcomi
+      wne addceq12 anidms eqeq2d rspcev wa mp2an csn snid df-0c eleqtrri ax-mp
+      0ex ne0i 0cex eqeq1 rexbidv neeq1 anbi12d df-evenfin elab2 mpbir2an ) CDE
+      CAFZUQGZHZAIJZCKOZCIECCCGZHZUTLVBCCMNUSVCACIUQCHZURVBCVDURVBHUQUQCCPQRSUA
+      KCEVAKKUBCKUGUCUDUECKUHUFBFZURHZAIJZVEKOZTUTVATBCDUIVECHZVGUTVHVAVIVFUSAI
+      VECURUJUKVECKULUMBAUNUOUP $.
+      $( [20-Jan-2015] $)
+  $}
+
+  ${
+    $d A n x $.
+    $( An even finite cardinal is a finite cardinal. 
+       (Contributed by SF, 20-Jan-2015.) $)
+    evennn $p |- ( A e. Even[fin] -> A e. Nn ) $=
+      ( vn vx cevenfin wcel cv cplc wceq cnnc wrex c0 wne eqeq1 rexbidv anbi12d
+      wa neeq1 df-evenfin elab2g syl wi nncaddccl anidms eleq1a rexlimiv adantr
+      ibi ) ADEZABFZUIGZHZBIJZAKLZPZAIEZUHUNCFZUJHZBIJZUPKLZPUNCADDUPAHZURULUSU
+      MUTUQUKBIUPAUJMNUPAKQOCBRSUGULUOUMUKUOBIUIIEZUJIEZUKUOUAVAVBUIUIUBUCUJIAU
+      DTUEUFT $.
+      $( [20-Jan-2015] $)
+  $}
+
+  ${
+    $d A n x $.
+    $( An odd finite cardinal is a finite cardinal. 
+       (Contributed by SF, 20-Jan-2015.) $)
+    oddnn $p |- ( A e. Odd[fin] -> A e. Nn ) $=
+      ( vn vx coddfin wcel cv cplc c1c wceq cnnc wrex c0 wa eqeq1 rexbidv neeq1
+      wne anbi12d df-oddfin elab2g ibi wi nncaddccl anidms peano2 3syl rexlimiv
+      eleq1a adantr syl ) ADEZABFZULGZHGZIZBJKZALQZMZAJEZUKURCFZUNIZBJKZUTLQZMU
+      RCADDUTAIZVBUPVCUQVDVAUOBJUTAUNNOUTALPRCBSTUAUPUSUQUOUSBJULJEZUMJEZUNJEUO
+      USUBVEVFULULUCUDUMUEUNJAUHUFUGUIUJ $.
+      $( [20-Jan-2015] $)
+  $}
+
+  ${
+    $d A n x $.
+    $( An even number is non-empty. 
+       (Contributed by SF, 22-Jan-2015.) $)
+    evennnul $p |- ( A e. Even[fin] -> A =/= (/) ) $=
+      ( vn vx cevenfin wcel cv cplc wceq cnnc wrex c0 wne eqeq1 rexbidv anbi12d
+      wa neeq1 df-evenfin elab2g ibi simprd ) ADEZABFZUCGZHZBIJZAKLZUBUFUGPZCFZ
+      UDHZBIJZUIKLZPUHCADDUIAHZUKUFULUGUMUJUEBIUIAUDMNUIAKQOCBRSTUA $.
+      $( [22-Jan-2015] $)
+
+    $( An odd number is non-empty. 
+       (Contributed by SF, 22-Jan-2015.) $)
+    oddnnul $p |- ( A e. Odd[fin] -> A =/= (/) ) $=
+      ( vn vx coddfin wcel cv cplc c1c wceq cnnc wrex c0 wa eqeq1 rexbidv neeq1
+      wne anbi12d df-oddfin elab2g ibi simprd ) ADEZABFZUDGHGZIZBJKZALQZUCUGUHM
+      ZCFZUEIZBJKZUJLQZMUICADDUJAIZULUGUMUHUNUKUFBJUJAUENOUJALPRCBSTUAUB $.
+      $( [22-Jan-2015] $)
+  $}
+
+  ${
+    $d A m n x $.
+    $( The successor of an even natural is odd. 
+       (Contributed by SF, 20-Jan-2015.) $)
+    sucevenodd $p |- ( ( A e. Even[fin] /\ ( A +c 1c ) =/= (/) ) ->
+               ( A +c 1c ) e. Odd[fin] ) $=
+      ( vm vx cevenfin wcel c1c cplc c0 wa coddfin wceq cnnc wrex eqeq1 rexbidv
+      wne cv neeq1 anbi12d cvv df-evenfin elab2g ibi addceq1 reximi adantr 1cex
+      syl anim1i wb addcexg mpan2 df-oddfin mpbird ) ADEZAFGZHPZIUPJEZUPBQZUSGZ
+      FGZKZBLMZUQIZUOVCUQUOAUTKZBLMZAHPZIZVCUOVHCQZUTKZBLMZVIHPZIVHCADDVIAKZVKV
+      FVLVGVMVJVEBLVIAUTNOVIAHRSCBUAUBUCVFVCVGVEVBBLAUTFUDUEUFUHUIUOURVDUJZUQUO
+      UPTEZVNUOFTEVOUGAFDTUKULVIVAKZBLMZVLIVDCUPJTVIUPKZVQVCVLUQVRVPVBBLVIUPVAN
+      OVIUPHRSCBUMUBUHUFUN $.
+      $( [20-Jan-2015] $)
+  $}
+
+  ${
+    $d A m n x $.
+    $( The successor of an odd natural is even. 
+       (Contributed by SF, 22-Jan-2015.) $)
+    sucoddeven $p |- ( ( A e. Odd[fin] /\ ( A +c 1c ) =/= (/) ) ->
+               ( A +c 1c ) e. Even[fin] ) $=
+      ( vm vn vx coddfin wcel c1c cplc c0 wa cevenfin cv wceq cnnc wrex rexbidv
+      wne eqeq1 syl cvv neeq1 anbi12d df-oddfin elab2g wi peano2 addc32 addcass
+      addceq1i eqtri addceq12 anidms eqeq2d rspcev mpan2 addceq1 biimprd com12
+      ibi eqeq1d rexlimiv adantr anim1i wb 1cex addcexg df-evenfin mpbird ) AEF
+      ZAGHZIQZJVJKFZVJBLZVMHZMZBNOZVKJZVIVPVKVIACLZVRHGHZMZCNOZAIQZJZVPVIWCDLZV
+      SMZCNOZWDIQZJWCDAEEWDAMZWFWAWGWBWHWEVTCNWDAVSRPWDAIUAUBDCUCUDUSWAVPWBVTVP
+      CNVRNFZVSGHZVNMZBNOZVTVPUEWIVRGHZNFZWLVRUFWNWJWMWMHZMZWLWJWMVRHZGHWOVSWQG
+      VRVRGUGUIWMVRGUHUJWKWPBWMNVMWMMZVNWOWJWRVNWOMVMVMWMWMUKULUMUNUOSVTWLVPVTV
+      PWLVTVOWKBNVTVJWJVNAVSGUPUTPUQURSVAVBSVCVIVLVQVDZVKVIVJTFZWSVIGTFWTVEAGET
+      VFUOWDVNMZBNOZWGJVQDVJKTWDVJMZXBVPWGVKXCXAVOBNWDVJVNRPWDVJIUAUBDBVGUDSVBV
+      H $.
+      $( [22-Jan-2015] $)
+  $}
+
+  ${
+    $d x n $.
+    $( Alternate definition of even number. 
+       (Contributed by SF, 25-Jan-2015.) $)
+    dfevenfin2 $p |- Even[fin] =
+       { x | E. n e. Nn ( x = ( n +c n ) /\ ( n +c n ) =/= (/) ) } $=
+      ( cevenfin cv cplc wceq cnnc wrex c0 wne df-evenfin r19.41v neeq1 pm5.32i
+      wa cab rexbii bitr3i abbii eqtri ) CADZBDZUBEZFZBGHUAIJZOZAPUDUCIJZOZBGHZ
+      APABKUFUIAUFUDUEOZBGHUIUDUEBGLUJUHBGUDUEUGUAUCIMNQRST $.
+      $( [25-Jan-2015] $)
+
+    $( Alternate definition of odd number. 
+       (Contributed by SF, 25-Jan-2015.) $)
+    dfoddfin2 $p |- Odd[fin] =
+       { x | E. n e. Nn ( x = ( ( n +c n ) +c 1c ) /\
+             ( ( n +c n ) +c 1c ) =/= (/) ) } $=
+      ( coddfin cv cplc c1c wceq cnnc wrex c0 wne cab df-oddfin r19.41v pm5.32i
+      wa neeq1 rexbii bitr3i abbii eqtri ) CADZBDZUCEFEZGZBHIUBJKZPZALUEUDJKZPZ
+      BHIZALABMUGUJAUGUEUFPZBHIUJUEUFBHNUKUIBHUEUFUHUBUDJQORSTUA $.
+      $( [25-Jan-2015] $)
+  $}
+
+  ${
+    $d x y k n m $.
+    $( Every non-empty finite cardinal is either even or odd.  Theorem X.1.35
+       of [Rosser] p. 529. 
+       (Contributed by SF, 20-Jan-2015.) $)
+    evenoddnnnul $p |- ( Even[fin] u. Odd[fin] ) = ( Nn \ { (/) } ) $=
+      ( vx vn vm vk cevenfin coddfin cnnc c0 wss cv wcel wne ssriv wi c0c neeq1
+      c1c wo eleq1 imbi12d cun cdif wa evennn evennnul eldifsn sylanbrc oddnnul
+      csn oddnn pm3.2i unss mpbi cplc cab cvv wceq vex elsnc df-ne con2bii bitri
+      orbi1i elun imor 3bitr4i abbi2i snex evenfinex oddfinex unex eqeltrri weq
+      wn 0ceven sselii a1i addcnnul simpld sucevenodd expcom sucoddeven orim12d
+      ssun1 orcom 3imtr4g embantd com12 finds imp sylbi eqssi ) EFUAZGHUIZUBZEW
+      OIZFWOIZUCWMWOIWPWQAEWOAJZEKWRGKZWRHLZWRWOKZWRUDWRUEWRGHUFZUGMAFWOWRFKWSW
+      TXAWRUJWRUHXBUGMUKEFWOULUMBWOWMBJZWOKXCGKZXCHLZUCXCWMKZXCGHUFXDXEXFCJZHLZ
+      XGWMKZNZOHLZOWMKZNDJZHLZXMWMKZNZXMQUNZHLZXQWMKZNZXEXFNCDXCWNWMUAZXJCUOUPX
+      JCYAXGWNKZXIRXHVNZXIRXGYAKXJYBYCXIYBXGHUQZYCXGHCURUSXHYDXGHUTVAVBVCXGWNWM
+      VDXHXIVEVFVGWNWMHVHEFVIVJVKVKVLXGOUQXHXKXIXLXGOHPXGOWMSTCDVMXHXNXIXOXGXMH
+      PXGXMWMSTXGXQUQXHXRXIXSXGXQHPXGXQWMSTCBVMXHXEXIXFXGXCHPXGXCWMSTXLXKEWMOEF
+      WDVOVPVQXPXTNXMGKXRXPXSXRXNXOXSXRXNQHLXMQVRVSXRXMEKZXMFKZRXQFKZXQEKZRZXOX
+      SXRYEYGYFYHYEXRYGXMVTWAYFXRYHXMWBWAWCXMEFVDXSYHYGRYIXQEFVDYHYGWEVBWFWGWHV
+      QWIWJWKMWL $.
+      $( [20-Jan-2015] $)
+  $}
+
+  ${
+    $d j n x a b y t $.
+    $( Lemma for ~ evenodddisj .  Establish stratification for induction. 
+       (Contributed by SF, 25-Jan-2015.) $)
+    evenodddisjlem1 $p |- { j | ( ( j +c j ) =/= (/) -> A.
+n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
+                                 ) } e. _V $=
+      ( vx vy va vb vt cssetk csn wceq wn wcel copk wex wrex exbii 3bitr4i snex
+      wa 3bitri cins3k cins2k cin c1c cpw1 cimak ccompl csik csymdif ccnvk cdif
+      cun c0 cimagek cidk cvv cxpk cnnc cv cplc wne wi cab wo df-or vex elimakv
+      wral elin wel wal opkex elimak elpw121c anbi1i 19.41v bitr4i df-rex excom
+      wb opkeq1 ceqsexv elsymdif otkelins3k elssetk bitri otkelins2k opksnelsik
+      eleq1d elpw141c ndisjrelk notbii elcompl con2bii elpw171c orbi12i bibi12i
+      df-ne elun dfcleq alex anbi12i rexcom eqeq2i abeq2 opkelxpk mpbiran2 elsnc
+      df-addc elpw11c opkelcnvk opkelimagek dfaddc2 addcex addceq1 eqeq2d eldif
+      weq opkelidkg mp2an equcom 1cex eqeq2 eqeq1 notbid anbi12d rexbii ssetkex
+      annim ins3kex ins2kex inex pw1ex imakex complex sikex unex symdifex xpkex
+      vvex imbi12i con34b ralbii dfral2 imbi2d ralbidv orbi12d imbi1i addcexlem
+      neeq1 abbi2i cnvkex imagekex idkex difex nncex eqeltrri ) HUAZHUBZUUSUBZU
+      URUUSUCZUDUEZUEZUFZUGZUHZUHZUHZUAZHUHZUAZUBZUBZUVJUHZUHZUHZUHZUAZUVOUAZUB
+      ZULZUIZUVCUEZUEZUEZUEZUEZUFZUGZUCZUCZUWDUFZUCZUVCUFZUBZUIZUVCUFZUGZUMIZUU
+      RUUSUUTUVDUHZUHZUHZUJZUAZUGZUVMUVTUVRULZUIZUWGUFZUGZUCZUCZUWDUFZUCZUVCUFZ
+      UBZUIZUVCUFZUGZUBZUVEUAUUTUURUBUVNUAULUIUWDUFUKZUVCUFZUNZUAZUCZUVBUFZUAZU
+      OUWSUPUQZUKZUBZUCZUVBUFZURUFZUGZULZUPUQZUCZUPUFZAUSZUYRUTZUMVAZBUSZVUAUTZ
+      UDUTZUMVAZUYSVUCVAZVBZBURVHZVBZAVCUPVUHAUYQUYSUMJZVUGVDZVUIKZVUGVBUYRUYQL
+      ZVUHVUIVUGVEVULCUSZUYRMZUYPLZCNVUMUYSJZVUMUMJZVUDVUMVUCVAZVBZBURVHZVDZSZC
+      NVUJCUYPUYRAVFZVGVUOVVBCVUOVUNUWRLZVUNUYOLZSVVBVUNUWRUYOVIVVDVUPVVEVVAVVD
+      DCVJZEUSZFUSZUCZUMJZDUSZVVGVVHULZJZSZFUYROEUYROZVTZDVKZVUPVUNUWQLZKVVPKZD
+      NZKVVDVVQVVRVVTVVRGUSZVUNMZUWPLZGUVCOZVWAVVKIZIZIZJZVWCSZGNZDNZVVTGUWPUVC
+      VUNVUMUYRVLZVMVWAUVCLZVWCSZGNVWIDNZGNVWDVWKVWNVWOGVWNVWHDNZVWCSVWOVWMVWPV
+      WCDVWAVNZVOVWHVWCDVPVQPVWCGUVCVRVWIDGVSQVWJVVSDVWJVWGVUNMZUWPLZVWRUURLZVW
+      RUWOLZVTZKVVSVWCVWSGVWGVWFRZVWHVWBVWRUWPVWAVWGVUNWAWIWBVWRUURUWOWCVXBVVPV
+      WTVVFVXAVVOVWTVWEVUMMHLZVVFVWEVUMUYRHVVKRZCVFZVVCWDVVKVUMDVFZVXFWEZWFVXAV
+      WEUYRMZUWNLZVVNEUYROZFUYROZVVOVWEVUMUYRUWNVXEVXFVVCWGVXJFAVJZVXKSZFNZVXLV
+      XJVWAVXIMZUWMLZGUVCOZVWAVVHIZIZIZJZVXQSZGNZFNZVXOGUWMUVCVXIVWEUYRVLZVMVWM
+      VXQSZGNVYCFNZGNVXRVYEVYGVYHGVYGVYBFNZVXQSVYHVWMVYIVXQFVWAVNVOVYBVXQFVPVQP
+      VXQGUVCVRVYCFGVSQVYDVXNFVYDVYAVXIMZUWMLZVYJUUSLZVYJUWLLZSVXNVXQVYKGVYAVXT
+      RZVYBVXPVYJUWMVWAVYAVXIWAWIWBVYJUUSUWLVIVYLVXMVYMVXKVYLVXSUYRMHLVXMVXSVWE
+      UYRHVVHRZVXEVVCWGVVHUYRFVFZVVCWEWFVYMEAVJZVVNSZENZVXKVYMVWAVYJMZUWKLZGUWD
+      OZVWAVVGIZIZIZIZIZJZWUASZGNZENZVYSGUWKUWDVYJVYAVXIVLZVMVWAUWDLZWUASZGNWUI
+      ENZGNWUBWUKWUNWUOGWUNWUHENZWUASWUOWUMWUPWUAEVWAWJVOWUHWUAEVPVQPWUAGUWDVRW
+      UIEGVSQWUJVYREWUJWUGVYJMZUWKLZWUQUUTLZWUQUWJLZSVYRWUAWURGWUGWUFRZWUHVYTWU
+      QUWKVWAWUGVYJWAWIWBWUQUUTUWJVIWUSVYQWUTVVNWUSWUEVXIMUUSLWUCUYRMHLVYQWUEVY
+      AVXIUUSWUDRZVYNVYFWGWUCVWEUYRHVVGRZVXEVVCWGVVGUYREVFZVVCWETWUTWUQUVILZWUQ
+      UWILZSVVNWUQUVIUWIVIWVEVVJWVFVVMWVEWUEVYAMZUVHLWUDVXTMZUVGLZVVJWUEVYAVXIU
+      VHWVBVYNVYFWDWUDVXTUVGWUCRZVXSRZWHWVIWUCVXSMZUVFLVVGVVHMZUVELZVVJWUCVXSUV
+      FWVCVYOWHVVGVVHUVEWVDVYPWHWVMUVDLZKVVIUMVAZKZWVNVVJWVOWVPVVGVVHWVDVYPWKZW
+      LWVMUVDVVGVVHVLWMWVPVVJVVIUMWRWNZQTTWUQUWHLZKCDVJZVUMVVLLZVTZKZCNZKZWVFVV
+      MWVTWWEWVTVWAWUQMZUWBLZGUWGOZVWAVUMIZIZIZIZIZIZIZIZJZWWHSZGNZCNZWWEGUWBUW
+      GWUQWUGVYJVLZVMVWAUWGLZWWHSZGNWWSCNZGNWWIWXAWXDWXEGWXDWWRCNZWWHSWXEWXCWXF
+      WWHCVWAWOZVOWWRWWHCVPVQPWWHGUWGVRWWSCGVSQWWTWWDCWWTWWQWUQMZUWBLZWXHUVMLZW
+      XHUWALZVTZKWWDWWHWXIGWWQWWPRZWWRWWGWXHUWBVWAWWQWUQWAWIWBWXHUVMUWAWCWXLWWC
+      WXJWWAWXKWWBWXJWWOVYJMZUVLLWWMVXIMUVKLZWWAWWOWUGVYJUVLWWNRZWVAWULWGWWMVYA
+      VXIUVKWWLRZVYNVYFWGWXOWWKVWEMUVJLZWWJVVKMHLZWWAWWKVWEUYRUVJWWJRZVXEVVCWDW
+      WJVVKHVUMRZVXGWHZVUMVVKVXFVXGWEZTTWXHUVRLZWXHUVTLZVDCEVJZCFVJZVDZWXKWWBWY
+      DWYFWYEWYGWYDWWOWUGMUVQLWWNWUFMUVPLZWYFWWOWUGVYJUVQWXPWVAWULWDWWNWUFUVPWW
+      MRZWUERWHWYIWWMWUEMUVOLZWWLWUDMUVNLZWYFWWMWUEUVOWXQWVBWHWWLWUDUVNWWKRZWVJ
+      WHZWYLWWKWUCMUVJLZWWJVVGMHLZWYFWWKWUCUVJWXTWVCWHZWWJVVGHWYAWVDWHZVUMVVGVX
+      FWVDWEZTTTWYEWXNUVSLWWMVYAMUVOLZWYGWWOWUGVYJUVSWXPWVAWULWGWWMVYAVXIUVOWXQ
+      VYNVYFWDWYTWWLVXTMUVNLZWWKVXSMUVJLZWYGWWLVXTUVNWYMWVKWHZWWKVXSUVJWXTVYOWH
+      ZXUBWWJVVHMHLZWYGWWJVVHHWYAVYPWHZVUMVVHVXFVYPWEZWFTTWPWXHUVRUVTWSVUMVVGVV
+      HWSZQWQWLTPTWLWUQUWHWXBWMVVMWWCCVKWWFCVVKVVLWTWWCCXAWFZQXBWFXBTPTVVNEUYRV
+      RVQXBTPTVXKFUYRVRVQVVNFEUYRUYRXCTWQWLTPTWLVUNUWQVWLWMVVPDXAQVUPVUMVVODVCZ
+      JVVQUYSXUJVUMDEFUYRUYRXIXDVVODVUMXEWFVQVVEVUMUYNLZVUMUWSLZVUMUYMLZVDVVAVV
+      EXUKUYRUPLVVCVUMUYRUYNUPVXFVVCXFXGVUMUWSUYMWSXULVUQXUMVUTVUMUMVXFXHVUMUYL
+      LZKVUMVUCJZVUCUMJZVBZKZBUROZKZXUMVUTXUNXUSXUNVUAVUMMZUYKLZBUROXUSBUYKURVU
+      MVXFVMXVBXURBURXVBVVKVUCJZCDXRZVVKUMJZKZSZSZDNZXUOXUPKZSZXURXVBVWAXVAMZUY
+      JLZGUVBOZVWAVWFJZXVMSZGNZDNZXVIGUYJUVBXVAVUAVUMVLVMVWAUVBLZXVMSZGNXVPDNZG
+      NXVNXVRXVTXWAGXVTXVODNZXVMSXWAXVSXWBXVMDVWAXJVOXVOXVMDVPVQPXVMGUVBVRXVPDG
+      VSQXVQXVHDXVQVWFXVAMZUYJLZXWCUYFLZXWCUYILZSXVHXVMXWDGVWFVWERXVOXVLXWCUYJV
+      WAVWFXVAWAWIWBXWCUYFUYIVIXWEXVCXWFXVGXWEVVKVUAMZUYELZVUMVUBJZVVKVUMUDUTZJ
+      ZSZCNZXVCVVKVUAVUMUYEVXGBVFZVXFWDXWHVWAXWGMZUYDLZGUVBOZVWAWWKJZXWPSZGNZCN
+      ZXWMGUYDUVBXWGVVKVUAVLVMXVSXWPSZGNXWSCNZGNXWQXXAXXBXXCGXXBXWRCNZXWPSXXCXV
+      SXXDXWPCVWAXJVOXWRXWPCVPVQPXWPGUVBVRXWSCGVSQXWTXWLCXWTWWKXWGMZUYDLZXXEUXS
+      LZXXEUYCLZSXWLXWPXXFGWWKWXTXWRXWOXXEUYDVWAWWKXWGWAWIWBXXEUXSUYCVIXXGXWIXX
+      HXWKVUMVUAMZUXRLZVVFVVNFVUAOZEVUAOZVTZDVKZXXGXWIXXIUXQLZKXXMKZDNZKXXJXXNX
+      XOXXQXXOVWAXXIMZUXPLZGUVCOZVWHXXSSZGNZDNZXXQGUXPUVCXXIVUMVUAVLZVMVWMXXSSZ
+      GNXYADNZGNXXTXYCXYEXYFGXYEVWPXXSSXYFVWMVWPXXSVWQVOVWHXXSDVPVQPXXSGUVCVRXY
+      ADGVSQXYBXXPDXYBVWGXXIMZUXPLZXYGUURLZXYGUXOLZVTZKXXPXXSXYHGVWGVXCVWHXXRXY
+      GUXPVWAVWGXXIWAWIWBXYGUURUXOWCXYKXXMXYIVVFXYJXXLXYIVXDVVFVWEVUMVUAHVXEVXF
+      XWNWDVXHWFVWEVUAMZUXNLZEBVJZXXKSZENZXYJXXLXYMVWAXYLMZUXMLZGUVCOZVWAWUEJZX
+      YRSZGNZENZXYPGUXMUVCXYLVWEVUAVLZVMVWMXYRSZGNYUAENZGNXYSYUCYUEYUFGYUEXYTEN
+      ZXYRSYUFVWMYUGXYREVWAVNVOXYTXYREVPVQPXYRGUVCVRYUAEGVSQYUBXYOEYUBWUEXYLMZU
+      XMLZYUHUUSLZYUHUXLLZSXYOXYRYUIGWUEWVBXYTXYQYUHUXMVWAWUEXYLWAWIWBYUHUUSUXL
+      VIYUJXYNYUKXXKYUJWUCVUAMHLXYNWUCVWEVUAHWVCVXEXWNWGVVGVUAWVDXWNWEWFYUKFBVJ
+      ZVVNSZFNZXXKYUKVWAYUHMZUXKLZGUWDOZVWAVYAIZIZJZYUPSZGNZFNZYUNGUXKUWDYUHWUE
+      XYLVLZVMWUMYUPSZGNYVAFNZGNYUQYVCYVEYVFGYVEYUTFNZYUPSYVFWUMYVGYUPFVWAWJVOY
+      UTYUPFVPVQPYUPGUWDVRYVAFGVSQYVBYUMFYVBYUSYUHMZUXKLZYVHUUTLZYVHUXJLZSYUMYU
+      PYVIGYUSYURRZYUTYUOYVHUXKVWAYUSYUHWAWIWBYVHUUTUXJVIYVJYULYVKVVNYVJVYAXYLM
+      UUSLVXSVUAMHLYULVYAWUEXYLUUSVYNWVBYUDWGVXSVWEVUAHVYOVXEXWNWGVVHVUAVYPXWNW
+      ETYVKYVHUXELZYVHUXILZSVVNYVHUXEUXIVIYVMVVJYVNVVMYVHUXDLZKWVQYVMVVJYVOWVPY
+      VOVYAWUEMUXCLWVGUXBLZWVPVYAWUEXYLUXCVYNWVBYUDWDVYAWUEUXBVYNWVBXKYVPWVHUXA
+      LWVLUWTLZWVPWUDVXTUXAWVJWVKWHWUCVXSUWTWVCVYOWHYVQWVOWVPVVGVVHUVDWVDVYPWHW
+      VRWFTTWLYVHUXDYUSYUHVLZWMWVSQYVHUXHLZKWWFYVNVVMYVSWWEYVSVWAYVHMZUXGLZGUWG
+      OZWWRYWASZGNZCNZWWEGUXGUWGYVHYVRVMWXCYWASZGNYWCCNZGNYWBYWEYWFYWGGYWFWXFYW
+      ASYWGWXCWXFYWAWXGVOWWRYWACVPVQPYWAGUWGVRYWCCGVSQYWDWWDCYWDWWQYVHMZUXGLZYW
+      HUVMLZYWHUXFLZVTZKWWDYWAYWIGWWQWXMWWRYVTYWHUXGVWAWWQYVHWAWIWBYWHUVMUXFWCY
+      WLWWCYWJWWAYWKWWBYWJWWOYUHMZUVLLWWMXYLMUVKLZWWAWWOYUSYUHUVLWXPYVLYVDWGWWM
+      WUEXYLUVKWXQWVBYUDWGYWNWXRWXSWWAWWKVWEVUAUVJWXTVXEXWNWDWYBWYCTTYWHUVTLZYW
+      HUVRLZVDWYHYWKWWBYWOWYFYWPWYGYWOYWMUVSLWYKWYFWWOYUSYUHUVSWXPYVLYVDWGWWMWU
+      EXYLUVOWXQWVBYUDWDWYKWYLWYOWYFWYNWYQWYOWYPWYFWYRWYSWFTTYWPWWOYUSMUVQLWWNY
+      URMUVPLZWYGWWOYUSYUHUVQWXPYVLYVDWDWWNYURUVPWYJVYARWHYWQWYTXUAWYGWWMVYAUVO
+      WXQVYNWHXUCXUAXUBXUEWYGXUDXUFXUGTTTWPYWHUVTUVRWSXUHQWQWLTPTWLYVHUXHYVRWMX
+      UIQXBWFXBTPTVVNFVUAVRVQXBTPTVWEVUMVUAUXNVXEVXFXWNWGXXKEVUAVRQWQWLTPTWLXXI
+      UXQXYDWMXXMDXAQVUMVVKVUAUXRVXFVXGXWNWGXWIVUMXXLDVCZJXXNVUBYWRVUMDEFVUAVUA
+      XIXDXXLDVUMXEWFQVUMVVKMUYBLVVKUYAVUMUFZJXXHXWKVUMVVKUYAVXFVXGXLVUMVVKVUAU
+      YBVXFVXGXWNWDXWJYWSVVKVUMUDXMXDQXBTPTXWKXVCCVUBVUAVUAXWNXWNXNZXWIXWJVUCVV
+      KVUMVUBUDXOXPWBTXWFVVKVUMMZUYHLYXAUOLZYXAUYGLZKZSXVGVVKVUAVUMUYHVXGXWNVXF
+      WGYXAUOUYGXQYXBXVDYXDXVFYXBDCXRZXVDVVKUPLVUMUPLZYXBYXEVTVXGVXFVVKVUMUPUPX
+      SXTDCYAWFYXCXVEYXCVVKUWSLZXVEYXCYXGYXFVXFVVKVUMUWSUPVXGVXFXFXGVVKUMVXGXHW
+      FWLXBTXBTPTXVGXVKDVUCVUBUDYWTYBXNXVCXVDXUOXVFXVJVVKVUCVUMYCXVCXVEXUPVVKVU
+      CUMYDYEYFWBXUOXUPYITYGWFWLVUMUYLVXFWMVUTXUQBURVHXUTVUSXUQBURVUSXVJXUOKZVB
+      XUQVUDXVJVURYXHVUCUMWRVUMVUCWRUUAXUOXUPUUBVQUUCXUQBURUUDWFQWPTXBWFPVVAVUJ
+      CUYSUYRUYRVVCVVCXNVUPVUQVUIVUTVUGVUMUYSUMYDVUPVUSVUFBURVUPVURVUEVUDVUMUYS
+      VUCUUJUUEUUFUUGWBTUYTVUKVUGUYSUMWRUUHQUUKUYPUPUWRUYOUWQUWPUVCUURUWOHYHYJZ
+      UWNUWMUVCUUSUWLHYHYKZUWKUWDUUTUWJUUSYXJYKZUVIUWIUVHUVGUVFUVEUVDUVAUVCUURU
+      USYXIYXJYLUVBUDYBYMZYMZYNZYOYPYPYPYJUWHUWBUWGUVMUWAUVLUVKUVJHYHYPZYJYKYKZ
+      UVRUVTUVQUVPUVOUVNUVJYXOYPYPZYPYPYJZUVSUVOYXQYJYKZYQYRUWFUWEUWDUWCUVCYXMY
+      MYMZYMYMYMZYNYOYLYLYXTYNYLYXMYNYKYRYXMYNYOUYNUPUWSUYMUMRZUYLUYKURUYJUVBUY
+      FUYIUYEUYDUVBUXSUYCUXRUXQUXPUVCUURUXOYXIUXNUXMUVCUUSUXLYXJUXKUWDUUTUXJYXK
+      UXEUXIUXDUXCUXBUXAUWTUVDYXNYPYPYPUULYJYOUXHUXGUWGUVMUXFYXPUVTUVRYXSYXRYQY
+      RYYAYNYOYLYLYXTYNYLYXMYNYKYRYXMYNYOYKUYBUYAUXTUVCUUIYXMYNUUMYJYLYXLYNYJUY
+      HUOUYGUUNUWSUPYYBYTYSUUOYKYLYXLYNUUPYNYOYQYTYSYLYTYNUUQ $.
+      $( [25-Jan-2015] $)
+  $}
+
+  ${
+    $d m n $.  $d m x $.  $d n x $.  $d k n $.  $d k m $.  $d k p $.  $d k q $.
+    $d n p $.  $d n q $.  $d p q $.  $d j k $.  $d j m $.  $d j n $.  $d j p $.
+    $d k x $.  $d m p $.  $d m q $.
+
+
+    $( The even finite cardinals and the odd ones are disjoint.  Theorem X.1.36
+       of [Rosser] p. 529. 
+       (Contributed by SF, 22-Jan-2015.) $)
+    evenodddisj $p |- ( Even[fin] i^i Odd[fin] ) = (/) $=
+      ( vx vn vp cv cplc wceq c0 wne wa cnnc c1c wn wi wcel c0c addceq12 anidms
+      wral neeq1d imbi12d vk vj vm vq cevenfin coddfin cin dfevenfin2 dfoddfin2
+      wrex cab ineq12i inab eqtri evenodddisjlem1 addcid2 syl6eq imbi2d ralbidv
+      addceq1d neeq2d cbvralv syl6bb addc32 addceq1i eqtr3i 0cnsuc necomi rgenw
+      weq addcass a1i neeq1i addcnnul simpld sylbi adantl simprl nnc0suc mpbiri
+      sylib simpr rspcv syl addc4 adantr eqeq2i simplll nncaddccl simplrr 3syl
+      wo peano2 simpllr prepeano4 syl22anc ex syl5bir necon3d embantd syld expr
+      com23 imp31 anbi2d syl5ibrcom rexlimiv adantrl jaod mpd simplrl ralrimiva
+      com12 finds df-ne imbi2i con2b ralbii ralnex syl6ib anbi1d rexbidv notbid
+      bitri imnan eqeq1 imp3a mpbi abf ) UEUFUGZADZUADZYLEZFZYMGHZIZUAJUJZYKBDZ
+      YREZKEZFZYTGHZIZBJUJZIZAUKZGYJYQAUKZUUDAUKZUGUUFUEUUGUFUUHAUAUHABUIULYQUU
+      DAUMUNUUEAYQUUDLZMUUELYPUUIUAJYLJNZYNYOUUIUUJYOUUIMYNYOYMYTFZUUBIZBJUJZLZ
+      MUUJYOUUBYMYTHZMZBJRZUUNUBDZUUREZGHZUUBUUSYTHZMZBJRZMOGHZUUBOYTHZMZBJRZMU
+      CDZUVHEZGHZCDZUVKEZKEZGHZUVIUVMHZMZCJRZMZUVIKEZKEZGHZUUBUVTYTHZMZBJRZMYOU
+      UQMUBUCYLUBBUOUUROFZUUTUVDUVCUVGUWEUUSOGUWEUUSOOEZOUWEUUSUWFFUURUUROOPQOU
+      PZUQZSUWEUVBUVFBJUWEUVAUVEUUBUWEUUSOYTUWHSURUSTUBUCVJZUUTUVJUVCUVQUWIUUSU
+      VIGUWIUUSUVIFUURUURUVHUVHPQZSUWIUVCUUBUVIYTHZMZBJRUVQUWIUVBUWLBJUWIUVAUWK
+      UUBUWIUUSUVIYTUWJSURUSUWLUVPBCJBCVJZUUBUVNUWKUVOUWMYTUVMGUWMYSUVLKUWMYSUV
+      LFYRYRUVKUVKPQUTZSUWMYTUVMUVIUWNVATVBVCTUURUVHKEZFZUUTUWAUVCUWDUWPUUSUVTG
+      UWPUUSUWOUWOEZUVTUWPUUSUWQFUURUURUWOUWOPQUWOUVHEZKEUWQUVTUWOUVHKVKUWRUVSK
+      UVHKUVHVDVEVFUQZSUWPUVBUWCBJUWPUVAUWBUUBUWPUUSUVTYTUWSSURUSTUBUAVJZUUTYOU
+      VCUUQUWTUUSYMGUWTUUSYMFUURUURYLYLPQZSUWTUVBUUPBJUWTUVAUUOUUBUWTUUSYMYTUXA
+      SURUSTUVGUVDUVFBJUVEUUBYTOYSVGVHVLVIVLUVHJNZUWAUVRUWDUXBUWAUVRUWDMUXBUWAI
+      ZUVJUVQUWDUWAUVJUXBUWAUVIKKEZEZGHZUVJUVTUXEGUVIKKVKVMUXFUVJUXDGHZUVIUXDVN
+      VOVPVQUXCUVQUWDUXCUVQIZUWCBJUXHYRJNZUUBUWBUXHUXIUUBIZIZUVSYSHZUWBUXKYROFZ
+      YRUDDZKEZFZUDJUJZWLZUXLUXKUXIUXRUXHUXIUUBVRUDYRVSWAUXKUXMUXLUXQUXMUXLMUXK
+      UXMUXLUVSOHUVIVGUXMYSOUVSUXMYSUWFOUXMYSUWFFYRYROOPQUWGUQVAVTVLUXHUUBUXQUX
+      LMUXIUXQUXHUUBIZUXLUXPUXSUXLMZUDJUXNJNZUXTUXPUXHUXOUXOEZKEZGHZIZUVSUYBHZM
+      UYEUYAUYFUXCUVQUYDUYAUYFMZUXCUYDUVQUYGUXCUYDUVQUYGMUXCUYDIUYAUVQUYFUXCUYD
+      UYAUVQUYFMUXCUYDUYAIZIZUVQUXNUXNEZKEZGHZUVIUYKHZMZUYFUYIUYAUVQUYNMUYHUYAU
+      XCUYDUYAWBVQUVPUYNCUXNJCUDVJZUVNUYLUVOUYMUYOUVMUYKGUYOUVLUYJKUYOUVLUYJFUV
+      KUVKUXNUXNPQUTZSUYOUVMUYKUVIUYPVATWCWDUYIUYLUYMUYFUYHUYLUXCUYDUYLUYAUYDUY
+      KUXDEZGHZUYLUYCUYQGUYCUYJUXDEZKEUYQUYBUYSKUXNKUXNKWEVEUYJUXDKVDUNVMUYRUYL
+      UXGUYKUXDVNVOVPWFVQUYIUVSUYBUVIUYKUVSUYBFUVSUYKKEZFZUYIUVIUYKFZUYTUYBUVSU
+      YTUXOUXNEZKEUYBUYKVUCKUXNUXNKVDVEUXOUXNKVKUNWGUYIVUAVUBUYIVUAIZUVIJNZUYKJ
+      NZVUAUVSGHZVUBVUDUXBVUEUXBUWAUYHVUAWHUXBVUEUVHUVHWIQZWDVUDUYAUYJJNZVUFUXC
+      UYDUYAVUAWJUYAVUIUXNUXNWIQUYJWMWKUYIVUAWBVUDUWAVUGUXBUWAUYHVUAWNUWAVUGKGH
+      UVSKVNVOWDUVIUYKWOWPWQWRWSWTXAXBXCWQXCXDXMUXPUXSUYEUXLUYFUXPUUBUYDUXHUXPY
+      TUYCGUXPYSUYBKUXPYSUYBFYRYRUXOUXOPQZUTSXEUXPYSUYBUVSVUJVATXFXGXMXHXIXJUXK
+      UVTYTUVSYSUXKUVTYTFZUVSYSFZUXKVUKIZUVSJNZYSJNZVUKUWAVULVUMUXBVUEVUNUXKUXB
+      VUKUXBUWAUVQUXJWHWFVUHUVIWMWKVUMUXIVUOUXHUXIUUBVUKXKUXIVUOYRYRWIQWDUXKVUK
+      WBUXKUWAVUKUXBUWAUVQUXJWNWFUVSYSWOWPWQWSXJXBXLWQWTWQXCXNUUQUULLZBJRUUNUUP
+      VUPBJUUPUUKUUBLMZVUPUUPUUBUUKLZMVUQUUOVURUUBYMYTXOXPUUBUUKXQYDUUKUUBYEYDX
+      RUULBJXSYDXTYNUUIUUNYOYNUUDUUMYNUUCUULBJYNUUAUUKUUBYKYMYTYFYAYBYCURXFYGXG
+      YQUUDYEYHYIUN $.
+      $( [22-Jan-2015] $)
+  $}
+
+  ${
+    $d M m n x $.
+    $( If ` M ` is even , then so is ` _T[fin] M ` .  Theorem X.1.37 of
+       [Rosser] p. 530. 
+       (Contributed by SF, 26-Jan-2015.) $)
+    eventfin $p |- ( M e. Even[fin] -> _T[fin] M e. Even[fin] ) $=
+      ( vn vx vm cevenfin wcel cv cplc wceq cnnc wrex c0 wa ctfin eqeq1 rexbidv
+      wne neeq1 anbi12d wi df-evenfin elab2g ibi addceq2 addcnul1 cpw1 tfinprop
+      syl6eq necon3i simpld sylan2 3anidm12 addceq12 rspcev nncaddccl tfinnnul
+      tfindi anidms eqeq2d syl2anc sylan jca tfinex elab2 sylibr tfineq imbi12d
+      ex eleq1d biimprd com12 syl rexlimiv imp ) AEFZABGZVPHZIZBJKZALQZMZANZEFZ
+      VOWACGZVQIZBJKZWDLQZMWACAEEWDAIZWFVSWGVTWHWEVRBJWDAVQOPWDALRSCBUAUBUCVSVT
+      WCVRVTWCTZBJVPJFZVQLQZVQNZEFZTZVRWITWJWKWMWJWKMZWLDGZWPHZIZDJKZWLLQZMZWMW
+      OWSWTWOVPNZJFZWLXBXBHZIZWSWKWJVPLQZXCVPLVQLVPLIVQVPLHLVPLVPUDVPUEUHUIWJXF
+      MXCWDUFXBFCVPKVPCUGUJUKWJWKXEVPVPUQULWRXEDXBJWPXBIZWQXDWLXGWQXDIWPWPXBXBU
+      MURUSUNUTWJVQJFZWKWTWJXHVPVPUOURVQUPVAVBWDWQIZDJKZWGMXACWLEVQVCWDWLIZXJWS
+      WGWTXKXIWRDJWDWLWQOPWDWLLRSCDUAVDVEVHVRWNWIVRWIWNVRVTWKWCWMAVQLRVRWBWLEAV
+      QVFVIVGVJVKVLVMVNVL $.
+      $( [26-Jan-2015] $)
+  $}
+
+  ${
+    $d M n m x $.
+    $( If ` M ` is odd , then so is ` _T[fin] M ` .  Theorem X.1.38 of
+       [Rosser] p. 530. 
+       (Contributed by SF, 26-Jan-2015.) $)
+    oddtfin $p |- ( M e. Odd[fin] -> _T[fin] M e. Odd[fin] ) $=
+      ( vn vx vm coddfin wcel cv cplc c1c wceq cnnc c0 wne wa ctfin eqeq1 neeq1
+      wrex wi syl rexbidv anbi12d df-oddfin elab2g ibi addceq2 addcnul1 addceq1
+      syl6eq addccom eqtri necon3i cpw1 tfinprop simpld sylan2 nncaddccl anidms
+      1cnnc tfindi mp3an2 sylan addcnnul 3anidm12 tfin1c addceq12 mpan2 rspcev
+      eqtrd eqeq2d syl2anc peano2 tfinnnul tfinex elab2 sylibr ex tfineq eleq1d
+      jca imbi12d biimprd com12 rexlimiv imp ) AEFZABGZWGHZIHZJZBKRZALMZNZAOZEF
+      ZWFWMCGZWIJZBKRZWPLMZNWMCAEEWPAJZWRWKWSWLWTWQWJBKWPAWIPUAWPALQUBCBUCUDUEW
+      KWLWOWJWLWOSZBKWGKFZWILMZWIOZEFZSZWJXASXBXCXEXBXCNZXDDGZXHHZIHZJZDKRZXDLM
+      ZNZXEXGXLXMXGWGOZKFZXDXOXOHZIHZJZXLXCXBWGLMZXPWGLWILWGLJZWILIHZLYAWHLJWIY
+      BJYAWHWGLHLWGLWGUFWGUGUIWHLIUHTYBILHLLIUJIUGUKUIULXBXTNXPWPUMXOFCWGRWGCUN
+      UOUPXGXDWHOZIOZHZXRXBWHKFZXCXDYEJZXBYFWGWGUQURZYFIKFXCYGUSWHIUTVAVBXGYCXQ
+      JZYEXRJZXCXBWHLMZYIXCYKILMWHIVCUOXBYKYIWGWGUTVDUPYIYDIJYJVEYCYDXQIVFVGTVI
+      XKXSDXOKXHXOJZXJXRXDYLXIXQJZXJXRJYLYMXHXHXOXOVFURXIXQIUHTVJVHVKXBWIKFZXCX
+      MXBYFYNYHWHVLTWIVMVBVTWPXJJZDKRZWSNXNCXDEWIVNWPXDJZYPXLWSXMYQYOXKDKWPXDXJ
+      PUAWPXDLQUBCDUCVOVPVQWJXFXAWJXAXFWJWLXCWOXEAWILQWJWNXDEAWIVRVSWAWBWCTWDWE
+      T $.
+      $( [26-Jan-2015] $)
+  $}
+
+  ${
+    $d n l y x b $.  $d b t $.  $d b z $.  $d l t $.  $d l z $.  $d n t $.
+    $d n z $.  $d t x $.  $d t y $.  $d t z $.  $d x z $.  $d y z $.
+
+    $( Lemma for ~ nnadjoin .  Establish stratification. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    nnadjoinlem1 $p |- { n | A. l e. n ( y e. ~ U. l -> { x |
+            E. b e. l x = ( b u. { y } ) } e. n ) } e. _V $=
+      ( vz vt cssetk wel cvv c1c csn wcel wn copk wa wex exbii 3bitr4i 3bitri
+      cab cpw1 cxpk cin ccompl cins3k cins2k cv cun csymdif csik cdif cuni wceq
+      cimak wrex wral snex opkeq1 eleq1d ceqsexv elin vex elssetk eldif elcompl
+      wi elimak el1c anbi1i 19.41v bitr4i df-rex excom opkelxpk mpbiran2 elequ2
+      snelpw1 elab anbi12i eluni xchbinx wb wal abeq2 opkex elpw121c otkelins3k
+      df-clel opksnelsik elsymdif bitri otkelins2k alex dfcleq weq elsnc orbi12i
+      sneqb elun bibi12i 3bitr4ri notbii annim dfral2 abbi2i ssetkex setswithex
+      wo pw1ex vvex xpkex inex 1cex complex ins3kex ins2kex unex symdifex sikex
+      imakex difex eqeltrri ) HBFIZFUAZUBZJUCZHUDZKUOZUBZUEZJUCZHUFZHUGZYNHBUHZ
+      LZLZJUCZUIZUFZUJZKUBZUBZUOZUEZUKZUFZUDZUUCUOZUGZUJZUUCUOZUEZUKZUFZYNUDZUU
+      CUOZULZUDZKUOZUEZYOEUHZUMZUEMZAUHZDUHZYPUIZUNZDUVBUPZAUAZCUHZMZVGZEUVKUQZ
+      CUAJUVNCUVAUVKUUTMZNUVMNZEUVKUPZNUVKUVAMUVNUVOUVQGUHZUVBLZUNZUVRUVKOZUUSM
+      ZPZGQZEQZECIZUVPPZEQUVOUVQUWDUWGEUWDUVSUVKOZUUSMZUWHHMZUWHUURMZPUWGUWBUWI
+      GUVSUVBURZUVTUWAUWHUUSUVRUVSUVKUSUTVAUWHHUURVBUWJUWFUWKUVPUVBUVKEVCZCVCZV
+      DUWKUWHYLMZUWHUUQMZNZPUVDUVLNZPUVPUWHYLUUQVEUWOUVDUWQUWRUVSYKMZYOUVCMZNUW
+      OUVDUWSUVSYJMZUWTUVSYJUWLVFUVBYIMZBAIZAEIZPZAQZUXAUWTUXBUVRUVBOZYHMZGKUPZ
+      UVRUVELZUNZUXHPZGQZAQZUXFGYHKUVBUWMVHUVRKMZUXHPZGQUXLAQZGQUXIUXNUXPUXQGUX
+      PUXKAQZUXHPUXQUXOUXRUXHAUVRVIVJUXKUXHAVKVLRUXHGKVMUXLAGVNSUXMUXEAUXMUXJUV
+      BOZYHMZUXSYGMZUXSHMZPUXEUXHUXTGUXJUVEURZUXKUXGUXSYHUVRUXJUVBUSUTVAUXSYGHV
+      BUYAUXCUYBUXDUYAUXJYFMZUVEYEMUXCUYAUYDUVBJMUWMUXJUVBYFJUYCUWMVOVPUVEYEVRY
+      DUXCFUVEAVCZFABVQVSTUVEUVBUYEUWMVDVTTRTUVBYIVRAYOUVBWASWBUWOUWSUVKJMUWNUV
+      SUVKYKJUWLUWNVOVPYOUVCBVCVFSUWPUVLFUHZUVJUNZFCIZPZFQAFIZUVIWCZAWDZUYHPZFQ
+      ZUVLUWPUYIUYMFUYGUYLUYHUVIAUYFWEVJRFUVJUVKWIUWPUVRUWHOZUUPMZGUUCUPZUVRUYF
+      LZLZLZUNZUYPPZGQZFQZUYNGUUPUUCUWHUVSUVKWFVHUVRUUCMZUYPPZGQVUBFQZGQUYQVUDV
+      UFVUGGVUFVUAFQZUYPPVUGVUEVUHUYPFUVRWGZVJVUAUYPFVKVLRUYPGUUCVMVUBFGVNSVUCU
+      YMFVUCUYTUWHOZUUPMZVUJUUOMZVUJYNMZPUYMUYPVUKGUYTUYSURZVUAUYOVUJUUPUVRUYTU
+      WHUSUTVAVUJUUOYNVBVULUYLVUMUYHVULUYRUVSOUUNMUYFUVBOZUUMMZUYLUYRUVSUVKUUNU
+      YFURZUWLUWNWHUYFUVBUUMFVCZUWMWJVUOUULMZNUYKNZAQZNVUPUYLVUSVVAVUSUVRVUOOZU
+      UKMZGUUCUPZUVRUXJLZLZUNZVVCPZGQZAQZVVAGUUKUUCVUOUYFUVBWFZVHVUEVVCPZGQVVHA
+      QZGQVVDVVJVVLVVMGVVLVVGAQZVVCPVVMVUEVVNVVCAUVRWGVJVVGVVCAVKVLRVVCGUUCVMVV
+      HAGVNSVVIVUTAVVIVVFVUOOZUUKMZVUTVVCVVPGVVFVVEURVVGVVBVVOUUKUVRVVFVUOUSUTV
+      AVVPVVOYMMZVVOUUJMZWCUYKVVOYMUUJWKVVQUYJVVRUVIVVQUXJUYFOHMUYJUXJUYFUVBHUY
+      CVURUWMWHUVEUYFUYEVURVDWLUXSUUIMZDEIZUVHPZDQZVVRUVIVVSUVRUXSOZUUHMZGUUCUP
+      ZUVRUVFLZLZLZUNZVWDPZGQZDQZVWBGUUHUUCUXSUXJUVBWFVHVUEVWDPZGQVWJDQZGQVWEVW
+      LVWMVWNGVWMVWIDQZVWDPVWNVUEVWOVWDDUVRWGVJVWIVWDDVKVLRVWDGUUCVMVWJDGVNSVWK
+      VWADVWKVWHUXSOZUUHMZVWPYNMZVWPUUGMZPVWAVWDVWQGVWHVWGURVWIVWCVWPUUHUVRVWHU
+      XSUSUTVAVWPYNUUGVBVWRVVTVWSUVHVWRVWFUVBOHMVVTVWFUXJUVBHUVFURZUYCUWMWMUVFU
+      VBDVCZUWMVDWLVWSVWFUXJOUUFMUVFUVEOZUUEMZUVHVWFUXJUVBUUFVWTUYCUWMWHUVFUVEU
+      UEVXAUYEWJFAIZUYFUVGMZWCZFWDVXFNZFQZNUVHVXCVXFFWNFUVEUVGWOVXCVXBUUDMZVXHV
+      XBUUDUVFUVEWFZVFVXIUVRVXBOZUUAMZGUUCUPZVUAVXLPZGQZFQZVXHGUUAUUCVXBVXJVHVU
+      EVXLPZGQVXNFQZGQVXMVXPVXQVXRGVXQVUHVXLPVXRVUEVUHVXLVUIVJVUAVXLFVKVLRVXLGU
+      UCVMVXNFGVNSVXOVXGFVXOUYTVXBOZUUAMZVXGVXLVXTGUYTVUNVUAVXKVXSUUAUVRUYTVXBU
+      SUTVAVXTVXSYNMZVXSYTMZWCVXFVXSYNYTWKVYAVXDVYBVXEVYAUYRUVEOHMVXDUYRUVFUVEH
+      VUQVXAUYEWMUYFUVEVURUYEVDWLVYBUYRUVFOZYSMZVXEUYRUVFUVEYSVUQVXAUYEWHVYCHMZ
+      VYCYRMZXIFDIZUYFYPMZXIVYDVXEVYEVYGVYFVYHUYFUVFVURVXAVDUYRYQMZFBWPZVYFVYHV
+      YIUYRYPUNVYJUYRYPVUQWQUYFYOVURWSWLVYFVYIUVFJMVXAUYRUVFYQJVUQVXAVOVPUYFYOV
+      URWQSWRVYCHYRWTUYFUVFYPWTSWLXAWBWLRTWBXBTVTTRTUXJUYFUVBUUIUYCVURUWMWMUVHD
+      UVBVMSXAWBWLRTXCVUOUULVVKVFUYKAWNSTVUMUYRUVKOHMUYHUYRUVSUVKHVUQUWLUWNWMUY
+      FUVKVURUWNVDWLVTTRTXBXCVTUVDUVLXDTVTTRUVOUWBGKUPZUWEGUUSKUVKUWNVHUXOUWBPZ
+      GQUWCEQZGQVYKUWEVYLVYMGVYLUVTEQZUWBPVYMUXOVYNUWBEUVRVIVJUVTUWBEVKVLRUWBGK
+      VMUWCEGVNSWLUVPEUVKVMSXCUVKUUTUWNVFUVMEUVKXESXFUUTUUSKHUURXGYLUUQYKJYJYIY
+      HKYGHYFJYEFYOXHXJXKXLXGXMXNYAXJXOXKXLUUPUUCUUOYNUUNUUMUULUUKUUCYMUUJHXGXP
+      UUIUUHUUCYNUUGHXGXQZUUFUUEUUDUUAUUCYNYTVYOYSHYRXGYQJYPURXKXLXRXPXSUUBKXNX
+      JXJZYAXOXTXPXMVYPYAXQXSVYPYAXOXTXPVYOXMVYPYAYBXMXNYAXOYC $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d b l $.  $d b y $.  $d L b $.  $d L l $.  $d l n $.  $d l x $.  $d L x $.
+    $d l y $.  $d L y $.  $d N l $.  $d N y $.  $d X b $.  $d X x $.  $d x y $.
+    $d X y $.  $d a b $.  $d a c $.  $d a k $.  $d a l $.  $d a n $.  $d a x $.
+    $d a y $.  $d a z $.  $d b c $.  $d b k $.  $d b n $.  $d b x $.  $d b z $.
+    $d c k $.  $d c l $.  $d c x $.  $d c y $.  $d c z $.  $d k l $.  $d k n $.
+    $d k x $.  $d k y $.  $d k z $.  $d l z $.  $d N n $.  $d n x $.  $d n y $.
+    $d x z $.  $d y z $.
+
+    $( Adjoining a new element to every member of ` L ` does not change its
+       size.  Theorem X.1.39 of [Rosser] p. 530. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    nnadjoin $p |- ( ( N e. Nn /\ L e. N /\ X e. ~ U. L ) ->
+         { x | E. b e. L x = ( b u. { X } ) } e. N ) $=
+      ( vl vc vz wcel cuni ccompl cv cun wceq wrex cab wi c0 wn wa vy vn vk csn
+      va cnnc sneq uneq2d eqeq2d rexbidv abbidv eleq1d imbi2d wral wal c1c cplc
+      nnadjoinlem1 c0c eleq2 el0c ab0 bitri syl6bb raleqbi1dv df-ral imbi1i 0ex
+      albii unieq compleqd eleq2d notbid albidv imbi12d ceqsalv 3bitrri syl6bbr
+      rexeq weq cbvralv rex0 ax-gen a1i elsuc wel cin rspcv adantr adantl elin
+      w3a simp3l unisn compleqi eleq2i anbi2i simpr simpl2r elcompl eleq1a mtod
+      vex sylib wb simpl3r elunii expcom con3d mpan9 adj11 syl2anc mtbird eqeq1
+      nrexdv elabg ibi nsyl snex elsuci ex syl3an3b embantd 3expia syl5bi com23
+      unex syld an32s uniun iunin eqtri syl6eq wo unab df-sn uneq2i rexun uneq1
+      imp rexsn abbii 3eqtr4ri syl5ibrcom rexlimdvva ralrimiv finds rspccv syl
+      orbi2i com3r vtoclga com3l 3imp ) CUFIZBCIZDBJZKZIZALZELZDUDZMZNZEBOZAPZC
+      IZUUSUUOUUPUVGUUOUUPUUTUVAUALZUDZMZNZEBOZAPZCIZQZQUUOUUPUVGQZQUADUURUVHDN
+      ZUVOUVPUUOUVQUVNUVGUUPUVQUVMUVFCUVQUVLUVEAUVQUVKUVDEBUVQUVJUVCUUTUVQUVIUV
+      BUVAUVHDUGUHUIUJUKULUMUMUUOUUPUVHUURIZUVNUUOUVHFLZJZKZIZUVKEUVSOZAPZCIZQZ
+      FCUNZUUPUVRUVNQZQUWBUWDUBLZIZQZFUWIUNZUVHRJZKZIZUVKEROZSZAUOZQZUWBUWDUCLZ
+      IZQZFUWTUNZUVHUELZJZKZIZUVKEUXDOZAPZUWTUPUQZIZQZUEUXJUNZUWGUBUCCAUAUBEFUR
+      UWIUSNZUWLUWBUWCSZAUOZQZFUSUNZUWSUWKUXQFUWIUSUXNUWJUXPUWBUXNUWJUWDUSIZUXP
+      UWIUSUWDUTUXSUWDRNUXPUWDVAUWCAVBVCVDUMVEUXRUVSUSIZUXQQZFUOUVSRNZUXQQZFUOU
+      WSUXQFUSVFUYAUYCFUXTUYBUXQUVSVAVGVIUXQUWSFRVHUYBUWBUWOUXPUWRUYBUWAUWNUVHU
+      YBUVTUWMUVSRVJVKVLUYBUXOUWQAUYBUWCUWPUVKEUVSRVSVMVNVOVPVQVRUWKUXBFUWIUWTU
+      BUCVTUWJUXAUWBUWIUWTUWDUTUMVEUWIUXJNZUWLUWBUWDUXJIZQZFUXJUNUXMUWKUYFFUWIU
+      XJUYDUWJUYEUWBUWIUXJUWDUTUMVEUYFUXLFUEUXJFUEVTZUWBUXGUYEUXKUYGUWAUXFUVHUY
+      GUVTUXEUVSUXDVJVKVLUYGUWDUXIUXJUYGUWCUXHAUVKEUVSUXDVSUKULVOWAVDUWKUWFFUWI
+      CUWICNUWJUWEUWBUWICUWDUTUMVEUWRUWOUWQAUVKEWBWCWDUWTUFIZUXCUXMUYHUXCTZUXLU
+      EUXJUXDUXJIUXDGLZHLZUDZMZNZHUYJKZOGUWTOUYIUXLHUXDUWTGWEUYIUYNUXLGHUWTUYOU
+      YIGUCWFZUYKUYOIZTZTUXLUYNUVHUYJJZKZUYLJZKZWGZIZUVKEUYJOZAPZUYKUVIMZUDZMZU
+      XJIZQZUYHUYRUXCVUKUYHUYRTZUXCVUKVULUXCUVHUYTIZVUFUWTIZQZVUKUYRUXCVUOQZUYH
+      UYPVUPUYQUXBVUOFUYJUWTFGVTZUWBVUMUXAVUNVUQUWAUYTUVHVUQUVTUYSUVSUYJVJVKVLV
+      UQUWDVUFUWTVUQUWCVUEAUVKEUVSUYJVSUKULVOWHWIWJVULVUDVUOVUJVUDVUMUVHVUBIZTZ
+      VULVUOVUJQZUVHUYTVUBWKUYHUYRVUSVUTUYHUYRVUSWLVUMVUNVUJUYHUYRVUMVURWMVUSUY
+      HUYRVUMUVHUYKKZIZTZVUNVUJQVURVVBVUMVUBVVAUVHVUAUYKUYKHXCZWNWOWPWQUYHUYRVV
+      CWLZVUNVUJVVEVUNTVUNVUGVUFIZSZVUJVVEVUNWRVVEVVGVUNVVEVUGUVJNZEUYJOZVVFVVE
+      VVHEUYJVVEEGWFZTZVVHHEVTZVVKVVLHGWFZVVKUYQVVMSUYPUYQUYHVVCVVJWSUYKUYJVVDW
+      TXDVVJVVLVVMQVVEUVAUYJUYKXAWJXBVVKUAHWFSZUAEWFZSZVVHVVLXEVVKVVBVVNVUMVVBU
+      YHUYRVVJXFUVHUYKUAXCZWTXDVVEUVHUYSIZSZVVJVVPVVEVUMVVSUYHUYRVUMVVBWMUVHUYS
+      VVQWTXDVVJVVOVVRVVOVVJVVRUVHUVAUYJXGXHXIXJUYKUVAUVHXKXLXMXOVVFVVIVUEVVIAV
+      UGVUFUUTVUGNZUVKVVHEUYJUUTVUGUVJXNUJXPXQXRWIVUFUWTVUGUYKUVIVVDUVHXSYGXTXL
+      YAYBYCYDYEYFYHYTYIUYNUXGVUDUXKVUJUYNUXFVUCUVHUYNUXFUYMJZKZVUCUYNUXEVWAUXD
+      UYMVJVKVWBUYSVUAMZKVUCVWAVWCUYJUYLYJWOUYSVUAYKYLYMVLUYNUXIVUIUXJUYNUXIUVK
+      EUYMOZAPZVUIUYNUXHVWDAUVKEUXDUYMVSUKVUFVVTAPZMVUEVVTYNZAPVUIVWEVUEVVTAYOV
+      UHVWFVUFAVUGYPYQVWDVWGAVWDVUEUVKEUYLOZYNVWGUVKEUYJUYLYRVWHVVTVUEUVKVVTEUY
+      KVVDEHVTUVJVUGUUTUVAUYKUVIYSUIUUAUUJVCUUBUUCYMULVOUUDUUEYEUUFYAUUGUWFUWHF
+      BCUVSBNZUWBUVRUWEUVNVWIUWAUURUVHVWIUVTUUQUVSBVJVKVLVWIUWDUVMCVWIUWCUVLAUV
+      KEUVSBVSUKULVOUUHUUIUUKUULUUMUUN $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d A a $.  $d a b $.  $d A b $.  $d a t $.  $d A t $.  $d b t $.  $d M b $.
+    $d N b $.  $d X a $.  $d X b $.  $d X t $.
+
+    $( Adjoining an element to a power class.  Theorem X.1.40 of [Rosser]
+       p. 530. 
+       (Contributed by SF, 27-Jan-2015.) $)
+    nnadjoinpw $p |- ( ( ( M e. Nn /\ N e. Nn ) /\ ( A e. M /\ X e. ~ A ) /\
+         ~P A e. N ) -> ~P ( A u. { X } ) e. ( N +c N ) ) $=
+      ( va vb vt cnnc wcel wa ccompl cpw cun cv wceq wrex wss wn wral wal simp3
+      w3a csn cab cplc pwadjoin cin cuni simp1r simp2r unipw compleqi syl6eleqr
+      c0 nnadjoin syl3anc elcomplg ibi syl wb snssg mtbid intnand ralrimivw weq
+      disjr eqeq1 rexbidv ralab ralcom4 vex snex unex eleq1 notbid ceqsalv elpw
+      unss bitr4i xchbinx ralbii r19.23v albii 3bitr3ri 3bitri eladdci syl5eqel
+      wi sylibr ) BHIZCHIZJZABIZDAKZIZJZALZCIZUBZADUCZMLWQENZFNZWTMZOZFWQPZEUDZ
+      MZCCUEZADEFUFWSWRXFCIZWQXFUGUNOZXGXHIWLWPWRUAZWSWKWRDWQUHZKZIXIWJWKWPWRUI
+      XKWSDWNXMWLWMWOWRUJZXLAAUKULUMEWQCDFUOUPWSXBAQZWTAQZJZRZFWQSZXJWSXRFWQWSX
+      PXOWSDAIZXPWSWOXTRZXNWOYADAWNUQURUSWSWOXTXPUTXNDAWNVAUSVBVCVDXJGNZWQIZRZG
+      XFSYBXCOZFWQPZYDWHZGTZXSGWQXFVFXEYFYDGEEGVEXDYEFWQXAYBXCVGVHVIYEYDWHZGTZF
+      WQSYIFWQSZGTXSYHYIFGWQVJYJXRFWQYJXCWQIZXQYDYLRGXCXBWTFVKDVLVMZYEYCYLYBXCW
+      QVNVOVPYLXCAQXQXCAYMVQXBWTAVRVSVTWAYKYGGYEYDFWQWBWCWDWEWIWQXFCCWFUPWG $.
+      $( [27-Jan-2015] $)
+  $}
+
+  ${
+    $d m a b n t x $.
+    $( Lemma for ~ nnpweq .  Establish stratification for induction. 
+       (Contributed by SF, 26-Jan-2015.) $)
+    nnpweqlem1 $p |- { m | A. a e. m A. b e. m E. n e. Nn ( ~P a
+                                            e. n /\ ~P b e. n ) } e. _V $=
+      ( vt vx cssetk cnnc wcel wa wrex csn copk snex bitri exbii df-rex 3bitr4i
+      wex 3bitri csik cins2k cins3k csymdif c1c cpw1 cimak ccnvk cin cdif cuni1
+      ccompl cv cpw wral cab cvv vex eluni1 wceq wel opkeq1 eleq1d ceqsexv elin
+      opksnelsik elssetk opkex elimak elpw131c anbi1i 19.41v bitr4i excom eldif
+      wn otkelins2k otkelins3k elpw12 r19.41v rexcom4 elpw121c eqpwrelk anbi12i
+      df-clel rexbii notbii rexnal 3bitr2i elpw11c elcompl dfral2 ssetkex sikex
+      opkelcnvk abbi2i ins2kex ins3kex symdifex 1cex imakex complex cnvkex inex
+      pw1ex nncex difex uni1ex eqeltrri ) GUAZXJUBZGUBZXJUCZUDZUEUFZUFZUGZULZUH
+      ZUAZUBZGUCZUIZXPUGZUBZXRUAZUHZUBZYBUIZXPUGZUCZUIZHUFZUFZUGZUCZUJZXPUFZUGZ
+      UIZXOUGZULZUKZCUMZUNZBUMZIZDUMZUNZUUFIZJZBHKZDAUMZUOZCUUMUOZAUPUQUUOAUUCU
+      UMUUCIUUMLZUUBIZUUOUUMUUBAURZUSUUPUUAIZVPUUNVPZCUUMKZVPUUQUUOUUSUVAEUMZUU
+      DLZLZUTZUVBUUPMZYTIZJZESZCSZCAVAZUUTJZCSUUSUVAUVIUVLCUVIUVDUUPMZYTIZUVMXJ
+      IZUVMYSIZJUVLUVGUVNEUVDUVCNZUVEUVFUVMYTUVBUVDUUPVBVCVDUVMXJYSVEUVOUVKUVPU
+      UTUVOUVCUUMMGIUVKUVCUUMGUUDNZUURVFUUDUUMCURZUURVGOUVPDAVAZUULVPZJZDSZUWAD
+      UUMKUUTUVPUVBUVMMZYQIZEYRKZUVBUUHLZLZLZLZUTZUWEJZESZDSZUWCEYQYRUVMUVDUUPV
+      HVIUVBYRIZUWEJZESUWLDSZESUWFUWNUWPUWQEUWPUWKDSZUWEJUWQUWOUWRUWEDUVBVJVKUW
+      KUWEDVLVMPUWEEYRQUWLDEVNRUWMUWBDUWMUWJUVMMZYQIZUWSXKIZUWSYPIZVPZJUWBUWEUW
+      TEUWJUWINUWKUWDUWSYQUVBUWJUVMVBVCVDUWSXKYPVOUXAUVTUXCUWAUXAUWHUUPMXJIUWGU
+      UMMGIUVTUWHUVDUUPXJUWGNZUVQUUMNZVQUWGUUMGUUHNZUURVFUUHUUMDURZUURVGTUXBUUL
+      UXBUWHUVDMZYOIZUVBUUFLZLZUTZUVBUXHMZYLIZJZESZBHKZUULUWHUVDUUPYOUXDUVQUXEV
+      RUXIUXNEYNKZUXQEYLYNUXHUWHUVDVHVIUVBYNIZUXNJZESUXOBHKZESUXRUXQUXTUYAEUXTU
+      XLBHKZUXNJUYAUXSUYBUXNBUVBHVSVKUXLUXNBHVTVMPUXNEYNQUXOBEHWAROUXPUUKBHUXPU
+      XKUXHMZYLIZUYCYEIZUYCYKIZJUUKUXNUYDEUXKUXJNUXLUXMUYCYLUVBUXKUXHVBVCVDUYCY
+      EYKVEUYEUUGUYFUUJUUFUVDMZYDIZFUMZUUEUTZFBVAZJZFSZUYEUUGUYHUVBUYGMZYCIZEXP
+      KZUVBUYILZLZLZUTZUYOJZESZFSZUYMEYCXPUYGUUFUVDVHVIUVBXPIZUYOJZESVUAFSZESUY
+      PVUCVUEVUFEVUEUYTFSZUYOJVUFVUDVUGUYOFUVBWBZVKUYTUYOFVLVMPUYOEXPQVUAFEVNRV
+      UBUYLFVUBUYSUYGMZYCIZVUIYAIZVUIYBIZJUYLUYOVUJEUYSUYRNZUYTUYNVUIYCUVBUYSUY
+      GVBVCVDVUIYAYBVEVUKUYJVULUYKVUKUYQUVDMXTIUYIUVCMXSIZUYJUYQUUFUVDXTUYINZBU
+      RZUVQVQUYIUVCXSFURZUVRVFVUNUVCUYIMXRIUYJUYIUVCXRVUQUVRWOUUDUYIUVSVUQWCOTV
+      ULUYQUUFMGIZUYKUYQUUFUVDGVUOVUPUVQVRUYIUUFVUQVUPVGZOWDTPTUUFUWHUVDYDVUPUX
+      DUVQVQFUUEUUFWERUUFUWHMZYJIZUYIUUIUTZUYKJZFSZUYFUUJVVAUVBVUTMZYIIZEXPKZUY
+      TVVFJZESZFSZVVDEYIXPVUTUUFUWHVHVIVUDVVFJZESVVHFSZESVVGVVJVVKVVLEVVKVUGVVF
+      JVVLVUDVUGVVFVUHVKUYTVVFFVLVMPVVFEXPQVVHFEVNRVVIVVCFVVIUYSVUTMZYIIZVVMYHI
+      ZVVMYBIZJVVCVVFVVNEUYSVUMUYTVVEVVMYIUVBUYSVUTVBVCVDVVMYHYBVEVVOVVBVVPUYKV
+      VOUYQUWHMYGIUWHUYQMYFIZVVBUYQUUFUWHYGVUOVUPUXDVQUYQUWHYFVUOUXDWOVVQUWGUYI
+      MXRIVVBUWGUYIXRUXFVUQVFUUHUYIUXGVUQWCOTVVPVURUYKUYQUUFUWHGVUOVUPUXDVRVUSO
+      WDTPTUUFUWHUVDYJVUPUXDUVQVRFUUIUUFWERWDTWFTWGWDTPTUWADUUMQUULDUUMWHWIWDTP
+      UUSUVGEXOKZUVJEYTXOUUPUXEVIUVBXOIZUVGJZESUVHCSZESVVRUVJVVTVWAEVVTUVECSZUV
+      GJVWAVVSVWBUVGCUVBWJVKUVEUVGCVLVMPUVGEXOQUVHCEVNROUUTCUUMQRWGUUPUUAUXEWKU
+      UNCUUMWLROWPUUBUUAYTXOXJYSGWMWNZYQYRXKYPXJVWCWQYOYLYNYEYKYDYCXPYAYBXTXSXR
+      XQXNXPXLXMGWMWQXJVWCWRWSXOUEWTXEZXEZXAXBZXCWNWQGWMWRZXDVWEXAWQYJYIXPYHYBY
+      GYFXRVWFWNXCWQVWGXDVWEXAWRXDYMHXFXEXEXAWRXGXPVWEXEXAXDVWDXAXBXHXI $.
+      $( [26-Jan-2015] $)
+  $}
+
+  ${
+    $d A a b c d e f x y m n j k $.  $d B a b c d e f x y m n j k $.
+    $d M a b c d e f x y m n j k $.
+    $( If two sets are the same finite size, then so are their power classes.
+       Theorem X.1.41 of [Rosser] p. 530. 
+       (Contributed by SF, 26-Jan-2015.) $)
+    nnpweq $p |- ( ( M e. Nn /\ A e. M /\ B e. M ) ->
+       E. n e. Nn ( ~P A e. n /\ ~P B e. n ) ) $=
+      ( va vb ve vf cnnc wcel cpw cv wa wrex wral c0 c0c wceq pweq eleq1d vm vk
+      vc vj vd vx vy csn c1c cplc nnpweqlem1 raleq raleqbi1dv wal df-ral imbi1i
+      wi albii 0ex pw0 syl6eq anbi1d rexbidv ralbidv ceqsalv bitri anbi2d anidm
+      el0c syl6bb 3bitri weq eleq2 anbi12d cbvrexv 2ralbii 1cnnc snel1c rspcev
+      cbvral2v mp2an cun ccompl reeanv 2rexbii elsuc anbi12i wel rspc2v adantl
+      3bitr4ri nncaddccl anidms simp1l simp1r simp2ll simp3l simp2rl nnadjoinpw
+      w3a 3ad2ant1 syl221anc simp2lr simp3r syl12anc bi2anan9 syl5ibrcom 3expia
+      simp2rr rexlimdvv expr an32s rexlimdva imp rexlimdvva syl5bi ralrimivv ex
+      syld finds syl5com 3impib ) DIJZADJZBDJZAKZCLZJZBKZYGJZMZCINZYCELZKZYGJZF
+      LZKZYGJZMZCINZFDOZEDOZYDYEMYLYTFUALZOZEUUCOZPUHZYGJZCINZYTFUBLZOZEUUIOZUC
+      LZKZUDLZJZUELZKZUUNJZMZUDINZUEUUIUIUJZOUCUVAOZUUBUAUBDUACEFUKUUCQRUUEYTFQ
+      OZEQOZUUHUUDUVCEUUCQYTFUUCQULUMUVDYMQJZUVCUQZEUNYMPRZUVCUQZEUNZUUHUVCEQUO
+      UVFUVHEUVEUVGUVCYMVIUPURUVIUUGYRMZCINZFQOZYPPRZUVKUQZFUNZUUHUVCUVLEPUSUVG
+      YTUVKFQUVGYSUVJCIUVGYOUUGYRUVGYNUUFYGUVGYNPKZUUFYMPSUTVATVBVCVDVEUVLYPQJZ
+      UVKUQZFUNUVOUVKFQUOUVRUVNFUVQUVMUVKYPVIUPURVFUVKUUHFPUSUVMUVJUUGCIUVMUVJU
+      UGUUGMUUGUVMYRUUGUUGUVMYQUUFYGUVMYQUVPUUFYPPSUTVATVGUUGVHVJVCVEVKVKVJUUDU
+      UJEUUCUUIYTFUUCUUIULUMUUCUVARUUEYTFUVAOZEUVAOZUVBUUDUVSEUUCUVAYTFUUCUVAUL
+      UMUVTUUMYGJZUUQYGJZMZCINZUEUVAOUCUVAOUVBYTUWDUWAYRMZCINEFUCUEUVAUVAEUCVLZ
+      YSUWECIUWFYOUWAYRUWFYNUUMYGYMUULSTVBVCFUEVLZUWEUWCCIUWGYRUWBUWAUWGYQUUQYG
+      YPUUPSTVGVCVTUWDUUTUCUEUVAUVAUWCUUSCUDICUDVLUWAUUOUWBUURYGUUNUUMVMYGUUNUU
+      QVMVNVOVPVFVJUUDUUAEUUCDYTFUUCDULUMUIIJUUFUIJZUUHVQPUSVRUUGUWHCUIIYGUIUUF
+      VMVSWAUUIIJZUUKUVBUWIUUKMZUUTUCUEUVAUVAUULUVAJZUUPUVAJZMZUULGLZUFLZUHWBZR
+      ZUUPHLZUGLZUHWBZRZMZUGUWRWCZNUFUWNWCZNZHUUINGUUINZUWJUUTUWQUFUXDNZUXAUGUX
+      CNZMZHUUINGUUINUXGGUUINZUXHHUUINZMUXFUWMUXGUXHGHUUIUUIWDUXEUXIGHUUIUUIUWQ
+      UXAUFUGUXDUXCWDWEUWKUXJUWLUXKUFUULUUIGWFUGUUPUUIHWFWGWKUWJUXEUUTGHUUIUUIU
+      WIGUBWHZHUBWHZMZUUKUXEUUTUQZUWIUXNMZUUKUXOUXPUUKUWNKZYGJZUWRKZYGJZMZCINZU
+      XOUXNUUKUYBUQUWIYTUYBUXRYRMZCINEFUWNUWRUUIUUIEGVLZYSUYCCIUYDYOUXRYRUYDYNU
+      XQYGYMUWNSTVBVCFHVLZUYCUYACIUYEYRUXTUXRUYEYQUXSYGYPUWRSTVGVCWIWJUXPUYAUXO
+      CIUWIYGIJZUXNUYAUXOUQUWIUYFMZUXNUYAUXOUYGUXNUYAMZMUXBUUTUFUGUXDUXCUYGUYHU
+      WOUXDJZUWSUXCJZMZUXBUUTUQUYGUYHUYKWTZUUTUXBUWPKZUUNJZUWTKZUUNJZMZUDINZUYL
+      YGYGUJZIJZUYMUYSJZUYOUYSJZUYRUYGUYHUYTUYKUYFUYTUWIUYFUYTYGYGWLWMWJXAUYLUW
+      IUYFUXLUYIUXRVUAUWIUYFUYHUYKWNZUWIUYFUYHUYKWOZUXLUXMUYAUYGUYKWPUYGUYHUYIU
+      YJWQUXRUXTUXNUYGUYKWRUWNUUIYGUWOWSXBUYLUWIUYFUXMUYJUXTVUBVUCVUDUXLUXMUYAU
+      YGUYKXCUYGUYHUYIUYJXDUXRUXTUXNUYGUYKXIUWRUUIYGUWSWSXBUYQVUAVUBMUDUYSIUUNU
+      YSRUYNVUAUYPVUBUUNUYSUYMVMUUNUYSUYOVMVNVSXEUXBUUSUYQUDIUWQUUOUYNUXAUURUYP
+      UWQUUMUYMUUNUULUWPSTUXAUUQUYOUUNUUPUWTSTXFVCXGXHXJXKXLXMXSXNXLXOXPXQXRXTY
+      TYLYHYRMZCINEFABDDYMARZYSVUECIVUFYOYHYRVUFYNYFYGYMASTVBVCYPBRZVUEYKCIVUGY
+      RYJYHVUGYQYIYGYPBSTVGVCWIYAYB $.
+      $( [26-Jan-2015] $)
+  $}
+
+  ${
+    $d A t $.  $d A x $.  $d A y $.  $d B t $.  $d B x $.  $d B y $.  $d t x $.
+    $d t y $.  $d t z $.  $d x y $.  $d x z $.  $d y z $.
+    srelk.1 $e |- A e. _V $.
+    srelk.2 $e |- B e. _V $.
+    $( Binary relationship form of the ` _S[fin] ` relationship. 
+       (Contributed by SF, 23-Jan-2015.) $)
+    srelk $p |- ( << A , B >> e. ( ( Nn X._k Nn ) i^i ( (
+ Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k SSet_k (+) Ins2_k SI_k
+ SSet_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
+    i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k ) "_k
+    ~P1 ~P1 1c ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1
+                                                             ~P1 1c ) ) <->
+        _S[fin] ( A , B ) ) $=
+      ( vx vt vy vz copk cnnc wcel cssetk wa wex wceq exbii 3bitr4i snex 3bitri
+      csn cxpk c1c cpw cvv cins3k csik cins2k csymdif cpw1 cimak cdif ccompl cv
+      cin wsfin opkelxpk wrex opkex elimak elpw131c anbi1i 19.41v bitr4i df-rex
+      excom opkeq1 eleq1d ceqsexv elin elpw121c otkelins3k opksnelsik eqpw1relk
+      w3a vex otkelins2k elssetk bitri anbi12i df-clel wel elsymdif opkelssetkg
+      wss wb wal wn mp2an bibi12i notbii elcompl alex df-pw eqeq2i abeq2 df-3an
+      cab df-sfin ) ABIZJJUAZKZWSUBUCUDUALUEZLUFZUGZUHZUBUIUIZUIZUJUKZUFZUEZLUG
+      ZUNZXFUJZUEZXEXFUJZULZUFZUEZXKUNZXFUJZUGZUNZXGUJZKZMZAJKZBJKZEUMZUIZAKZYH
+      UCZBKZMZENZVNZWSWTYCUNKABUOYEYFYGMZYNMYOXAYPYDYNABJJCDUPYDFUMZWSIZYBKZFXG
+      UQZYQYHTZTZTZTZOZYSMZFNZENZYNFYBXGWSABURUSYQXGKZYSMZFNUUFENZFNYTUUHUUJUUK
+      FUUJUUEENZYSMUUKUUIUULYSEYQUTVAUUEYSEVBVCPYSFXGVDUUFEFVEQUUGYMEUUGUUDWSIZ
+      YBKZUUMXNKZUUMYAKZMYMYSUUNFUUDUUCRUUEYRUUMYBYQUUDWSVFVGVHUUMXNYAVIUUOYJUU
+      PYLUUBAIZXMKZGUMZYIOZUUSAKZMZGNZUUOYJUURYQUUQIZXLKZFXFUQZYQUUSTZTZTZOZUVE
+      MZFNZGNZUVCFXLXFUUQUUBAURUSYQXFKZUVEMZFNUVKGNZFNUVFUVMUVOUVPFUVOUVJGNZUVE
+      MUVPUVNUVQUVEGYQVJZVAUVJUVEGVBVCPUVEFXFVDUVKGFVEQUVLUVBGUVLUVIUUQIZXLKZUV
+      SXJKZUVSXKKZMUVBUVEUVTFUVIUVHRZUVJUVDUVSXLYQUVIUUQVFVGVHUVSXJXKVIUWAUUTUW
+      BUVAUWAUVGUUBIZXIKUUSUUAIZXHKUUTUVGUUBAXIUUSRZUUARZCVKUUSUUAXHGVOZYHRZVLU
+      USYHUWHEVOZVMSUWBUVGAILKUVAUVGUUBALUWFUWGCVPUUSAUWHCVQVRVSSPSUUBABXMUWGCD
+      VKGYIAVTQUUBBIZXTKZUUSYKOZUUSBKZMZGNZUUPYLUWLYQUWKIZXSKZFXFUQZUVJUWRMZFNZ
+      GNZUWPFXSXFUWKUUBBURUSUVNUWRMZFNUWTGNZFNUWSUXBUXCUXDFUXCUVQUWRMUXDUVNUVQU
+      WRUVRVAUVJUWRGVBVCPUWRFXFVDUWTGFVEQUXAUWOGUXAUVIUWKIZXSKZUXEXRKZUXEXKKZMU
+      WOUWRUXFFUVIUWCUVJUWQUXEXSYQUVIUWKVFVGVHUXEXRXKVIUXGUWMUXHUWNUXGUWDXQKUWE
+      XPKZUWMUVGUUBBXQUWFUWGDVKUUSUUAXPUWHUWIVLUXIHGWAZHUMZYHWDZWEZHWFZUWMUWEXO
+      KZWGUXMWGZHNZWGUXIUXNUXOUXQUXOYQUWEIZXEKZFXFUQZYQUXKTZTZTZOZUXSMZFNZHNZUX
+      QFXEXFUWEUUSUUAURZUSUVNUXSMZFNUYEHNZFNUXTUYGUYIUYJFUYIUYDHNZUXSMUYJUVNUYK
+      UXSHYQVJVAUYDUXSHVBVCPUXSFXFVDUYEHFVEQUYFUXPHUYFUYCUWEIZXEKZUYLXBKZUYLXDK
+      ZWEZWGUXPUXSUYMFUYCUYBRUYDUXRUYLXEYQUYCUWEVFVGVHUYLXBXDWBUYPUXMUYNUXJUYOU
+      XLUYNUYAUUSILKUXJUYAUUSUUALUXKRZUWHUWIVKUXKUUSHVOZUWHVQVRUYOUYAUUAIXCKUXK
+      YHILKZUXLUYAUUSUUAXCUYQUWHUWIVPUXKYHLUYRUWJVLUXKUDKYHUDKUYSUXLWEUYRUWJUXK
+      YHUDUDWCWHSWIWJSPSWJUWEXOUYHWKUXMHWLQUWMUUSUXLHWQZOUXNYKUYTUUSHYHWMWNUXLH
+      UUSWOVRVCSUXHUVGBILKUWNUVGUUBBLUWFUWGDVPUUSBUWHDVQVRVSSPSUUBABXTUWGCDVPGY
+      KBVTQVSSPSVSYFYGYNWPVCWSWTYCVIABEWRQ $.
+      $( [23-Jan-2015] $)
+  $}
+
+  $( The expression at the core of ~ srelk exists. 
+     (Contributed by SF, 30-Jan-2015.) $)
+  srelkex $p |- ( ( Nn X._k Nn ) i^i ( (
+ Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k SSet_k (+) Ins2_k SI_k
+ SSet_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
+    i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k ) "_k
+    ~P1 ~P1 1c ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1
+                                                       ~P1 1c ) ) e. _V $=
+    ( cnnc cxpk c1c cvv cssetk cins3k csik cins2k cimak cin nncex xpkex ssetkex
+    cpw1 ins3kex sikex ins2kex pw1ex imakex inex cpw cdif ccompl 1cex pwex vvex
+    csymdif symdifex difex complex ) AABCUAZDBZEFZEGZHZUGZCNZNZNZIZUBZGZFZEHZJZ
+    URIZFZUPURIZUCZGZFZVDJZURIZHZJZUSIAAKKLVOUSVGVNVFVEURVCVDVBVAULUTUKDCUDUEUF
+    LUPUSUMUOEMOUNEMPQUHZURUQCUDRRZRZSUIPOEMQZTVQSOVMVLURVKVDVJVIVHUPURVPVQSUJP
+    OVSTVQSQTVRST $.
+    $( [30-Jan-2015] $)
+
+  ${
+    $d A y $.  $d B y $.  $d C y $.
+    $( Equality theorem for the finite S relationship. 
+       (Contributed by SF, 27-Jan-2015.) $)
+    sfineq1 $p |- ( A = B -> ( _S[fin] ( A , C ) <-> _S[fin] ( B , C ) ) ) $=
+      ( vy wceq cnnc wcel cv cpw1 cpw wex w3a wsfin eleq1 eleq2 anbi1d 3anbi13d
+      wa exbidv df-sfin 3bitr4g ) ABEZAFGZCFGZDHZIZAGZUEJCGZRZDKZLBFGZUDUFBGZUH
+      RZDKZLACMBCMUBUCUKUJUNUDABFNUBUIUMDUBUGULUHABUFOPSQACDTBCDTUA $.
+      $( [27-Jan-2015] $)
+
+    $( Equality theorem for the finite S relationship. 
+       (Contributed by SF, 27-Jan-2015.) $)
+    sfineq2 $p |- ( A = B -> ( _S[fin] ( C , A ) <-> _S[fin] ( C , B ) ) ) $=
+      ( vy wceq cnnc wcel cv cpw1 cpw wex w3a wsfin eleq1 eleq2 anbi2d 3anbi23d
+      wa exbidv df-sfin 3bitr4g ) ABEZCFGZAFGZDHZICGZUEJZAGZRZDKZLUCBFGZUFUGBGZ
+      RZDKZLCAMCBMUBUDUKUJUNUCABFNUBUIUMDUBUHULUFABUGOPSQCADTCBDTUA $.
+      $( [27-Jan-2015] $)
+  $}
+
+  $( Zero and one satisfy ` _S[fin] ` .  Theorem X.1.42 of [Rosser]
+     p. 530. 
+     (Contributed by SF, 30-Jan-2015.) $)
+  sfin01 $p |- _S[fin] ( 0c , 1c ) $=
+    ( va c0c c1c wsfin cnnc wcel cv cpw1 cpw wex peano1 1cnnc wceq csn pw10 0ex
+    wa c0 snel1c el0c pw1eq eqeq1d syl5bb pweq pw0 syl6eq eleq1d anbi12d spcev
+    mp2an df-sfin mpbir3an ) BCDBEFCEFAGZHZBFZUMIZCFZQZAJZKLRHZRMZRNZCFZUSORPSU
+    RVAVCQARPUMRMZUOVAUQVCUOUNRMVDVAUNTVDUNUTRUMRUAUBUCVDUPVBCVDUPRIVBUMRUDUEUF
+    UGUHUIUJBCAUKUL $.
+    $( [30-Jan-2015] $)
+
+  ${
+    $d M x y n k $.  $d N x y n k $.  $d P x y n k $.
+    $( Equality law for the finite S operator.  Theorem X.1.43 of [Rosser]
+       p. 530. 
+       (Contributed by SF, 27-Jan-2015.) $)
+    sfin112 $p |- ( ( _S[fin] ( M , N ) /\ _S[fin] ( M , P ) ) -> N = P ) $=
+      ( vx vy vn vk wsfin wa cnnc wcel cpw1 cpw wex w3a wceq df-sfin wel wrex
+      cv 3an6 eeanv 3anbi3i anbi12i 3bitr4ri simpllr simprll simprrl ncfinlower
+      syl3anc nnpweq 3expb simp1rl simp3l simp2lr simp3rl nnceleq simp1rr 3expa
+      syl22anc simp2rr simp3rr eqtr4d expr rexlimdva syl5 exp3a rexlimdv mpd ex
+      exlimdvv 3impia sylbi ) BCHZBAHZIZBJKZVQIZCJKZAJKZIZDTZLBKZWBMZCKZIZETZLB
+      KZWGMZAKZIZIZENDNZOZCAPZVRWAWFDNZWKENZIZOVQVSWPOZVQVTWQOZIWNVPVQVQVSVTWPW
+      QUAWMWRVRWAWFWKDEUBUCVNWSVOWTBCDQBAEQUDUEVRWAWMWOVRWAIZWLWODEXAWLWOXAWLIZ
+      DFRZEFRZIZFJSZWOXBVQWCWHXFVQVQWAWLUFXAWCWEWKUGXAWFWHWJUHWBWGFBUIUJXBXEWOF
+      JXBFTZJKZXEWOXHXEIWDGTZKZWIXIKZIZGJSZXBWOXHXCXDXMWBWGGXGUKULXBXLWOGJXBXIJ
+      KZXLWOXAWLXNXLIZWOXAWLXOOZCXIAXPVSXNWEXJCXIPVSVTVRWLXOUMXAWLXNXLUNZWCWEWK
+      XAXOUOXJXKXNXAWLUPWDCXIUQUTXPVTXNWJXKAXIPVSVTVRWLXOURXQWHWJWFXAXOVAXJXKXN
+      XAWLVBWIAXIUQUTVCUSVDVEVFVGVHVIVJVKVLVM $.
+      $( [27-Jan-2015] $)
+  $}
+
+  ${
+    $d A b $.  $d a n $.  $d A x $.  $d a y $.  $d A y $.  $d a z $.  $d A z $.
+    $d b n $.  $d b x $.  $d b y $.  $d b z $.  $d k n $.  $d k y $.  $d k z $.
+    $d M a $.  $d M b $.  $d M k $.  $d M n $.  $d M x $.  $d M y $.  $d M z $.
+    $d n x $.  $d n y $.  $d n z $.  $d x y $.  $d x z $.  $d y z $.
+    $( If the unit power set of a set is in the successor of a finite cardinal,
+       then there is a natural that is smaller than the finite cardinal and
+       whose double is smaller than the successor of the cardinal.  Theorem
+       X.1.44 of [Rosser] p. 531. 
+       (Contributed by SF, 30-Jan-2015.) $)
+    sfindbl $p |- ( ( M e. Nn /\ ~P1 A e. ( M +c 1c ) ) ->
+         E. n e. Nn ( _S[fin] ( M , n ) /\
+            _S[fin] ( ( M +c 1c ) , ( n +c n ) ) ) ) $=
+      ( vb vx vy vz vk va cpw1 wcel cnnc cv cun wceq wrex wa wex vex eleq1d c1c
+      cplc csn ccompl wsfin elsuc w3a pw1eqadj wi wel wn wb eleq1 adantr eleq12
+      compleq snex elcompl snelpw1 xchbinx syl6bb sylan2 ancoms anbi2d 3anidm23
+      anbi12d ncfinlower adantrr cpw simp3l simp3rr syl3anc simpl2l simprrr weq
+      nnpweq simpl1 simprl pw1eq pweq spcev syl2anc syl3anbrc peano2 nncaddccl
+      df-sfin anidms pw1un pw1sn uneq2i simpl2r sylnibr elsuci syl5eqel simpl3l
+      syl eqtri nnadjoinpw syl221anc unex jca expr reximdva mpd 3expa rexlimdva
+      sylibr syl6bi 3adant1 com12 exlimdvv syl5bi rexlimdvva imp sylan2b ) AJZC
+      UAUBZKCLKZXPDMZEMZUCNOZEXSUDZPDCPZCBMZUEZXQYDYDUBZUEZQZBLPZEXPCDUFXRYCYIX
+      RYAYIDECYBYAAFMZGMZUCZNZOZXSYJJZOZXTYLOZUGZGRFRXRXSCKZXTYBKZQZQZYIFGXSXTA
+      DSESUHUUBYRYIFGYRUUBYIYPYQUUBYIUIYNYPYQQZUUBXRYOCKZGFUJZUKZQZQZYIUUCUUAUU
+      GXRUUCYSUUDYTUUFYPYSUUDULYQXSYOCUMUNYQYPYTUUFULZYPYQYBYOUDZOZUUIXSYOUPYQU
+      UKQYTYLUUJKZUUFXTYLYBUUJUOUULYLYOKZUUEYLYOYKUQZURYKYJUSZUTVAVBVCVFVDUUHFH
+      UJZUUPQZHLPZYIXRUUDUURUUFXRUUDUURYJYJHCVGVEVHUUHUUQYIHLUUHHMZLKZUUQYIXRUU
+      GUUTUUQQZYIXRUUGUVAUGZYJVIZYDKZUVDQZBLPZYIUVBUUTUUPUUPUVFXRUUGUUTUUQVJUUP
+      UUPUUTXRUUGVKZUVGYJYJBUUSVPVLUVBUVEYHBLUVBYDLKZUVEYHUVBUVHUVEQZQZYEYGUVJX
+      RUVHIMZJZCKZUVKVIZYDKZQZIRZYEXRUUGUVAUVIVQZUVBUVHUVEVRZUVJUUDUVDUVQUUDUUF
+      XRUVAUVIVMZUVBUVHUVDUVDVNZUVPUUDUVDQIYJFSZIFVOZUVMUUDUVOUVDUWCUVLYOCUVKYJ
+      VSTUWCUVNUVCYDUVKYJVTTVFWAWBCYDIWFWCUVJXQLKZYFLKZUVLXQKZUVNYFKZQZIRZYGUVJ
+      XRUWDUVRCWDWPUVJUVHUWEUVSUVHUWEYDYDWEWGWPUVJYMJZXQKZYMVIZYFKZUWIUVJUWJYOY
+      LUCZNZXQUWJYOYLJZNUWOYJYLWHUWPUWNYOYKGSZWIWJWQUVJUUDUUMUKUWOXQKUVTUVJUUEU
+      UMUUDUUFXRUVAUVIWKZUUOWLYOCYLUUNWMWBWNUVJUUTUVHUUPYKYJUDKZUVDUWMUUTUUQXRU
+      UGUVIWOUVSUVBUUPUVIUVGUNUVJUUFUWSUWRYKYJUWQURXGUWAYJUUSYDYKWRWSUWHUWKUWMQ
+      IYMYJYLUWBUUNWTUVKYMOZUWFUWKUWGUWMUWTUVLUWJXQUVKYMVSTUWTUVNUWLYFUVKYMVTTV
+      FWAWBXQYFIWFWCXAXBXCXDXEXBXFXDXHXIXJXKXLXMXNXO $.
+      $( [30-Jan-2015] $)
+  $}
+
+  ${
+    $d m n t x y $.
+    $( Lemma for ~ sfintfin .  Set up induction stratification. 
+       (Contributed by SF, 31-Jan-2015.) $)
+    sfintfinlem1 $p |- { m | A. n ( _S[fin] ( m , n ) ->
+                  _S[fin] ( _T[fin] m , _T[fin] n ) ) } e. _V $=
+      ( vt vy vx cxpk c1c cins3k cins2k cimak cin csn cv wcel wn wex copk exbii
+      wa 3bitri cnnc cpw cvv cssetk csik csymdif cpw1 cdif ccompl c0 ccnvk cidk
+      cun cuni1 wsfin ctfin wi wal cab eluni1 wrex wceq snex elimak el1c anbi1i
+      vex 19.41v bitr4i df-rex excom 3bitr4i opkeq1 eleq1d opkelcnvk opksnelsik
+      ceqsexv eldif srelk elpw11c elin otkelins2k eqtfinrelk otkelins3k anbi12i
+      bitri opkex tfinex sfineq1 sfineq2 notbii annim elcompl alex abbi2i sikex
+      srelkex tfinrelkex cnvkex ins2kex ins3kex inex pw1ex imakex difex complex
+      1cex uni1ex eqeltrri ) UAUAFGUBUCFUDHUDUEIZUFZGUGZUGZUGZJUHUEHUDIZKXMJHZX
+      KXMJUIUEHXOKXMJIKXNJKZUEZUJLZLZXSFXOUDUKHUAUCFXJXPKXNJKIULHUFXLJIUHXLJHUF
+      XMJUIXTUCFUHUMZUKZIZYCXQHZKZXLJZHZKZXLJZUHZUKZGJZUIZUNZAMZBMZUOZYOUPZYPUP
+      ZUOZUQZBURZAUSUCUUBAYNYOYNNYOLZYMNZUUBYOYMAVGZUTUUCYLNZOUUAOZBPZOUUDUUBUU
+      FUUHUUFCMZUUCQZYKNZCGVAZUUIYPLZVBZUUKSZCPZBPZUUHCYKGUUCYOVCZVDUUIGNZUUKSZ
+      CPUUOBPZCPUULUUQUUTUVACUUTUUNBPZUUKSUVAUUSUVBUUKBUUIVEVFUUNUUKBVHVIRUUKCG
+      VJUUOBCVKVLUUPUUGBUUPUUMUUCQZYKNZUUCUUMQZYJNZUUGUUKUVDCUUMYPVCZUUNUUJUVCY
+      KUUIUUMUUCVMVNVQUUMUUCYJUVGUURVOUVFUVEXRNZUVEYINZOZSYQYTOZSUUGUVEXRYIVRUV
+      HYQUVJUVKUVHYOYPQXQNYQYOYPXQUUEBVGZVPYOYPUUEUVLVSWFUVIYTUVIUUIDMZLZLZVBZU
+      UIUVEQZYHNZSZCPZDPZUVMYSVBZYRUVMUOZSZDPYTUVIUVRCXLVAUUIXLNZUVRSZCPZUWACYH
+      XLUVEUUCUUMWGVDUVRCXLVJUWGUVSDPZCPUWAUWFUWHCUWFUVPDPZUVRSUWHUWEUWIUVRDUUI
+      VTVFUVPUVRDVHVIRUVSDCVKVITUVTUWDDUVTUVOUVEQZYHNZUWJYCNZUWJYGNZSUWDUVRUWKC
+      UVOUVNVCUVPUVQUWJYHUUIUVOUVEVMVNVQUWJYCYGWAUWLUWBUWMUWCUWLUVMUUMQYBNUUMUV
+      MQYANUWBUVMUUCUUMYBDVGZUURUVGWBUVMUUMYAUWNUVGVOYPUVMUVLUWNWCTUWMUVMUUCQZY
+      FNZEMZYRVBZUWQUVMUOZSZEPZUWCUVMUUCUUMYFUWNUURUVGWDUWPUUIUWOQZYENZCXLVAZUU
+      IUWQLZLZVBZUXCSZCPZEPZUXACYEXLUWOUVMUUCWGVDUWEUXCSZCPUXHEPZCPUXDUXJUXKUXL
+      CUXKUXGEPZUXCSUXLUWEUXMUXCEUUIVTVFUXGUXCEVHVIRUXCCXLVJUXHECVKVLUXIUWTEUXI
+      UXFUWOQZYENZUXNYCNZUXNYDNZSUWTUXCUXOCUXFUXEVCUXGUXBUXNYEUUIUXFUWOVMVNVQUX
+      NYCYDWAUXPUWRUXQUWSUXPUWQUUCQYBNUUCUWQQYANUWRUWQUVMUUCYBEVGZUWNUURWBUWQUU
+      CYAUXRUURVOYOUWQUUEUXRWCTUXQUWQUVMQXQNUWSUWQUVMUUCXQUXRUWNUURWDUWQUVMUXRU
+      WNVSWFWETRTUWSUWCEYRYOWHUWQYRUVMWIVQTWETRUWCYTDYSYPWHUVMYSYRWJVQTWKWEYQYT
+      WLTTRTWKUUCYLUURWMUUABWNVLWFWOYMYLYKGYJXRYIXQWQWPYHXLYCYGYBYAWRWSWTZYFYEX
+      LYCYDUXSXQWQXAXBGXGXCZXDXAXBUXTXDXEWSXGXDXFXHXI $.
+      $( [31-Jan-2015] $)
+  $}
+
+  ${
+    $d M a b k m n p q $.  $d N a k n $.
+    $( If two numbers obey ` _S[fin] ` , then do their T raisings.  Theorem
+       X.1.45 of [Rosser] p. 532. 
+       (Contributed by SF, 30-Jan-2015.) $)
+    sfintfin $p |- ( _S[fin] ( M , N ) ->
+              _S[fin] ( _T[fin] M , _T[fin] N ) ) $=
+      ( va vn vk cnnc wcel wa wsfin ctfin wi c0c c1c wceq sfineq1 wb tfineq syl
+      imbi12d sfineq2 vm vp vq cv cpw wex w3a df-sfin 3simpa sylbi sfintfinlem1
+      cpw1 wal cplc tfin0c syl6eq albidv weq cbvalv syl6bb sfin01 sfin112 mpan2
+      tfin1c mpbiri simp3bi 3ad2ant3 wrex sfindbl 3ad2antl1 spv simprrl simplrl
+      ax-gen adantl simprrr ad2antlr syl2anc simp2 simp1bi simp1l simp3 tfinpw1
+      peano2 c0 wne ne0i tfinsuc eleqtrd simp3l addceq12 anidms biimprcd 3expia
+      mpd rexlimdvw 3adant3 adantrd exlimdv simpll adantr exlimiv 3syl sylan9bb
+      tfindi syl3anc mpbird ex embantd exp32 com34 com23 exp3a rexlimdv alrimiv
+      syl5 3imp finds spcgv mpan9 mpcom ) AFGZBFGZHZABIZAJZBJZIZYEYBYCCUDZULZA
+      GYIUEZBGHCUFZUGYDABCUHYBYCYLUIUJYBADUDZIZYFYMJZIZKZDUMZYCYEYHKZEUDZYMIZYT
+      JZYOIZKZDUMZLYMIZLYOIZKZDUMUAUDZUBUDZIZUUIJZUUJJZIZKZUBUMZUUIMUNZYMIZUUQJ
+      ZYOIZKZDUMZYREUAAEDUKYTLNZUUDUUHDUVCUUAUUFUUCUUGYTLYMOUVCUUBLNUUCUUGPUVCU
+      UBLJLYTLQUOUPUUBLYOORSUQEUAURZUUEUUIYMIZUULYOIZKZDUMUUPUVDUUDUVGDUVDUUAUV
+      EUUCUVFYTUUIYMOUVDUUBUULNUUCUVFPYTUUIQUUBUULYOORSUQUVGUUODUBDUBURZUVEUUKU
+      VFUUNYMUUJUUITUVHYOUUMNUVFUUNPYMUUJQYOUUMUULTRSUSUTYTUUQNZUUDUVADUVIUUAUU
+      RUUCUUTYTUUQYMOUVIUUBUUSNUUCUUTPYTUUQQUUBUUSYOORSUQYTANZUUDYQDUVJUUAYNUUC
+      YPYTAYMOUVJUUBYFNUUCYPPYTAQUUBYFYOORSUQUUHDUUFYMMNZUUGUUFLMIZUVKVAMLYMVBV
+      CUVKUUGUVLVAUVKYOMNUUGUVLPUVKYOMJMYMMQVDUPYOMLTRVERVNUUIFGZUUPUVBUVMUUPHU
+      VADUVMUUPUURUUTUVMUUPUURUGZYJUUQGZYKYMGZHZCUFZUUTUURUVMUVRUUPUURUUQFGZYMF
+      GUVRUUQYMCUHVFVGUVNUVQUUTCUVNUVOUUTUVPUVNUVOUUTUVNUVOHUUIUCUDZIZUUQUVTUVT
+      UNZIZHZUCFVHZUUTUVMUUPUVOUWEUURYIUCUUIVIVJUVNUWEUUTKUVOUVNUWDUUTUCFUVNUVT
+      FGZUWDUUTUVMUUPUURUWFUWDHZUUTKZUVMUURUUPUWHUVMUURUWGUUPUUTUVMUURUWGUUPUUT
+      KUUPUWAUULUVTJZIZKZUVMUURUWGHZHZUUTUUOUWKUBUCUBUCURZUUKUWAUUNUWJUUJUVTUUI
+      TUWNUUMUWINUUNUWJPUUJUVTQUUMUWIUULTRSVKUWMUWAUWJUUTUWLUWAUVMUURUWFUWAUWCV
+      LVOUWMUWJUUTUWMUWJHZYMUWBNZUUTUWOUURUWCUWPUVMUURUWGUWJVMUWLUWCUVMUWJUURUW
+      FUWAUWCVPVQZUWBUUQYMVBVRUWOUUSUWBJZIZUWPUUTKUWOUWSUULMUNZUWIUWIUNZIZUWOUV
+      OYKUWBGZHZCUFZUXBUWOUWCUXEUWQUWCUVSUWBFGUXEUUQUWBCUHVFZRUWOUXDUXBCUWOUVOU
+      XBUXCUWMUWJUVOUXBUWMUWJUVOUGZUULYTIZUWTYTYTUNZIZHZEFVHZUXBUXGUULFGZYJULZU
+      WTGUXLUXGUWJUXMUWMUWJUVOVSUWJUXMUWIFGYJUULGYKUWIGHCUFUULUWICUHVTRUXGUXNUU
+      SUWTUXGUVSUVOUXNUUSGUXGUVMUVSUVMUWLUWJUVOWAZUUIWDRUWMUWJUVOWBYJUUQWCVRUXG
+      UVMUUQWEWFZUUSUWTNZUXOUVOUWMUXPUWJUUQYJWGZVGUUIWHZVRWIYJEUULVIVRUWMUWJUXL
+      UXBKUVOUWOUXKUXBEFUWMUWJUXKUXBUWMUWJUXKUGZUWIYTNZUXBUXTUWJUXHUYAUWMUWJUXK
+      VSUWMUWJUXHUXJWJYTUULUWIVBVRUXKUWMUYAUXBKZUWJUXJUYBUXHUYAUXBUXJUYAUXAUXIN
+      ZUXBUXJPUYAUYCUWIUWIYTYTWKWLUXAUXIUWTTRWMVOVGWOWNWPWQWOWNWRWSWOUWOUXQUWRU
+      XANZUWSUXBPUWOUVMUXPUXQUVMUWLUWJWTUWOUWCUXEUXPUWQUXFUXDUXPCUVOUXPUXCUXRXA
+      XBXCUXSVRUWOUWFUWFUWBWEWFZUYDUWMUWFUWJUVMUURUWFUWDVLXAZUYFUWOUWCUXEUYEUWQ
+      UXFUXDUYECUXCUYEUVOUWBYKWGVOXBXCUVTUVTXEXFUXQUWSUWTUWRIUYDUXBUUSUWTUWROUW
+      RUXAUWTTXDVRXGUWPUUTUWSUWPYOUWRNUUTUWSPYMUWBQYOUWRUUSTRWMRWOXHXIXPXJXKXLX
+      QXMXNXAWOXHWRWSWOWNXOXHXRYQYSDBFYMBNZYNYEYPYHYMBATUYGYOYGNYPYHPYMBQYOYGYF
+      TRSXSXTYA $.
+      $( [30-Jan-2015] $)
+  $}
+
+  ${
+    $d n y a x $.  $d a t $.  $d a w $.  $d a z $.  $d n t $.  $d n z $.
+    $d t w $.  $d t x $.  $d t y $.  $d t z $.  $d w x $.  $d w y $.  $d w z $.
+    $d x z $.  $d y z $.
+
+    $( Lemma for ~ tfinnn .  Establish stratification. 
+       (Contributed by SF, 30-Jan-2015.) $)
+    tfinnnlem1 $p |- { n | A. y e. n ( y C_ Nn -> { a | E. x e.
+                          y a = _T[fin] x } e. _T[fin] n ) } e. _V $=
+      ( vt vz vw cssetk csn cimak wcel wn copk wa wex snex bitri 3bitri 3bitr4i
+      exbii csik cnnc cpw cpw1 cvv cxpk c0 cins2k ccnvk cins3k c1c csymdif cdif
+      cin cidk ccompl cun cuni1 cv wss ctfin wceq wrex cab wi vex eluni1 opkeq1
+      wral wel eleq1d ceqsexv elin opksnelsik elssetk opkelxpk mpbiran2 snelpw1
+      eldif otkelins2k opkelcnvk eqtfinrelk opkex elimak elpw121c anbi1i 19.41v
+      bitr4i df-rex excom wb elsymdif otkelins3k anbi12i bibi12i notbii elcompl
+      elpw abeq2 df-clel elpw11c tfinex clel3 annim dfral2 abbi2i ssetkex sikex
+      wal alex nncex pwex pw1ex vvex xpkex tfinrelkex ins2kex ins3kex inex 1cex
+      cnvkex imakex symdifex complex difex uni1ex eqeltrri ) HUAZUBUCZUDZUEUFZU
+      AZUGIZIZYMUFHUHZHUIUJUBUEUFYHUHZUKUCUEUFHUJZYPULUKUDZUDZUDZJUMUAUJYOUNYSJ
+      UJUNYTJUNUHUOUJULYRJUHUMYRJUJULYSJUPYNUEUFUMUQZUIZUHZYQYOUUAUJZUNZYSJZUAZ
+      UHZULZYSJZUPZUAZUHZYQUNZYSJZUJZUNZYRJZUMZUNZYRJZUPZURZBUSZUBUTZDUSZAUSZVA
+      VBZAUVDVCZDVDZCUSZVAZKZVEZBUVKVIZCVDUEUVOCUVCUVKUVCKUVKIZUVBKZUVOUVKUVBCV
+      FZVGUVPUVAKZLUVNLZBUVKVCZLUVQUVOUVSUWAEUSZUVDIZIZVBZUWBUVPMZUUTKZNZEOZBOZ
+      BCVJZUVTNZBOUVSUWAUWIUWLBUWIUWDUVPMZUUTKZUWMYHKZUWMUUSKZNUWLUWGUWNEUWDUWC
+      PZUWEUWFUWMUUTUWBUWDUVPVHVKVLUWMYHUUSVMUWOUWKUWPUVTUWOUWCUVKMZHKUWKUWCUVK
+      HUVDPZUVRVNUVDUVKBVFZUVRVOQUWPUWMYLKZUWMUURKZLZNUVEUVMLZNUVTUWMYLUURVSUXA
+      UVEUXCUXDUXAUWRYKKZUVDYIKZUVEUWCUVKYKUWSUVRVNUXEUWCYJKZUXFUXEUXGUVKUEKUVR
+      UWCUVKYJUEUWSUVRVPVQUVDYIVRQUVDUBUWTWRRUXBUVMUWBFUSZIZIZVBZUWBUWMMZUUQKZN
+      ZEOZFOZUXHUVLVBZUVJUXHKZNZFOUXBUVMUXOUXSFUXOUXJUWMMZUUQKZUXTUUCKZUXTUUPKZ
+      NUXSUXMUYAEUXJUXIPUXKUXLUXTUUQUWBUXJUWMVHVKVLUXTUUCUUPVMUYBUXQUYCUXRUYBUX
+      HUVPMUUBKUVPUXHMUUAKUXQUXHUWDUVPUUBFVFZUWQUVKPZVTUXHUVPUUAUYDUYEWAUVKUXHU
+      VRUYDWBRUXHUWDMZUUOKZGUSZUVJVBZGFVJZNZGOZUYCUXRUYGUWBUYFMZUUNKZEYSVCZUWBU
+      YHIZIZIZVBZUYNNZEOZGOZUYLEUUNYSUYFUXHUWDWCWDUWBYSKZUYNNZEOUYTGOZEOUYOVUBV
+      UDVUEEVUDUYSGOZUYNNVUEVUCVUFUYNGUWBWEWFUYSUYNGWGWHTUYNEYSWIUYTGEWJSVUAUYK
+      GVUAUYRUYFMZUUNKZVUGUUMKZVUGYQKZNUYKUYNVUHEUYRUYQPUYSUYMVUGUUNUWBUYRUYFVH
+      VKVLVUGUUMYQVMVUIUYIVUJUYJVUIUYPUWDMUULKUYHUWCMZUUKKZUYIUYPUXHUWDUULUYHPZ
+      UYDUWQVTUYHUWCUUKGVFZUWSVNVUKUUJKZLDGVJZUVIWKZLZDOZLZVULUYIVUOVUSVUOUWBVU
+      KMZUUIKZEYSVCZUWBUVFIZIZIZVBZVVBNZEOZDOZVUSEUUIYSVUKUYHUWCWCZWDVUCVVBNZEO
+      VVHDOZEOVVCVVJVVLVVMEVVLVVGDOZVVBNVVMVUCVVNVVBDUWBWEWFVVGVVBDWGWHTVVBEYSW
+      IVVHDEWJSVVIVURDVVIVVFVUKMZUUIKZVVOYQKZVVOUUHKZWKZLVURVVBVVPEVVFVVEPVVGVV
+      AVVOUUIUWBVVFVUKVHVKVLVVOYQUUHWLVVSVUQVVQVUPVVRUVIVVQVVDUYHMHKVUPVVDUYHUW
+      CHUVFPZVUNUWSWMUVFUYHDVFZVUNVOQVVRVVDUWCMUUGKZUVIVVDUYHUWCUUGVVTVUNUWSVTU
+      VFUVDMZUUFKZABVJZUVHNZAOZVWBUVIVWDUWBVWCMZUUEKZEYSVCZUWBUVGIZIZIZVBZVWINZ
+      EOZAOZVWGEUUEYSVWCUVFUVDWCWDVUCVWINZEOVWOAOZEOVWJVWQVWRVWSEVWRVWNAOZVWINV
+      WSVUCVWTVWIAUWBWEWFVWNVWIAWGWHTVWIEYSWIVWOAEWJSVWPVWFAVWPVWMVWCMZUUEKZVXA
+      YOKZVXAUUDKZNVWFVWIVXBEVWMVWLPVWNVWHVXAUUEUWBVWMVWCVHVKVLVXAYOUUDVMVXCVWE
+      VXDUVHVXCVWKUVDMHKVWEVWKUVFUVDHUVGPZVWAUWTVTUVGUVDAVFZUWTVOQVXDVWKUVFMUUA
+      KUVHVWKUVFUVDUUAVXEVWAUWTWMUVGUVFVXFVWAWBQWNRTRUVFUVDUUFVWAUWTVNUVHAUVDWI
+      SQWOWPRTRWPVUKUUJVVKWQUYIVUQDXIVUTUVIDUYHWSVUQDXJQSRVUJUYPUXHMHKUYJUYPUXH
+      UWDHVUMUYDUWQWMUYHUXHVUNUYDVOQWNRTRUXHUWDUVPUUOUYDUWQUYEWMGUVJUXHWTSWNRTU
+      XBUXMEYRVCZUXPEUUQYRUWMUWDUVPWCWDUWBYRKZUXMNZEOUXNFOZEOVXGUXPVXIVXJEVXIUX
+      KFOZUXMNVXJVXHVXKUXMFUWBXAWFUXKUXMFWGWHTUXMEYRWIUXNFEWJSQFUVJUVLUVKXBXCSW
+      PWNUVEUVMXDRWNRTUVSUWGEYRVCZUWJEUUTYRUVPUYEWDVXHUWGNZEOUWHBOZEOVXLUWJVXMV
+      XNEVXMUWEBOZUWGNVXNVXHVXOUWGBUWBXAWFUWEUWGBWGWHTUWGEYRWIUWHBEWJSQUVTBUVKW
+      ISWPUVPUVAUYEWQUVNBUVKXESQXFUVBUVAUUTYRYHUUSHXGXHYLUURYKYJUEYIUBXKXLXMXNX
+      OXHUUQYRUUCUUPUUBUUAXPYAXQUUOUUNYSUUMYQUULUUKUUJUUIYSYQUUHHXGXRZUUGUUFUUE
+      YSYOUUDHXGXQUUAXPXRXSYRUKXTXMZXMZYBXHXQYCVXRYBYDXHXQVXPXSVXRYBXRXSVXQYBYE
+      XSVXQYBYDYFYG $.
+      $( [30-Jan-2015] $)
+  $}
+
+  ${
+    $d N a x $.  $d A a x $.  $d a y $.  $d A y $.  $d n y $.  $d N y $.
+    $d x y $.  $d a b $.  $d a k $.  $d a n $.  $d a w $.  $d a z $.  $d b k $.
+    $d b w $.  $d b x $.  $d b y $.  $d b z $.  $d k n $.  $d k w $.  $d k x $.
+    $d k y $.  $d k z $.  $d N n $.  $d n x $.  $d n z $.  $d w x $.  $d w y $.
+    $d w z $.  $d x z $.  $d y z $.
+
+    $( T-raising of a set of naturals.  Theorem X.1.46 of [Rosser]
+       p. 532. 
+       (Contributed by SF, 30-Jan-2015.) $)
+    tfinnn $p |- ( ( N e. Nn /\ A C_ Nn /\ A e. N ) ->
+       { a | E. x e. A a = _T[fin] x } e. _T[fin] N ) $=
+      ( vy vb vw cnnc wcel wss cv ctfin wceq wrex cab wi c0 wn c0c wa vn vk wal
+      vz wral c1c cplc tfinnnlem1 tfineq tfin0c syl6eq eleq2d imbi2d raleqbi1dv
+      df-ral el0c ab0 bitri imbi2i imbi12i albii 0ex sseq1 rexeq notbid imbi12d
+      albidv ceqsalv 3bitri syl6bb weq abbidv eleq1d cbvralv ax-gen a1i csn cun
+      rex0 ccompl elsuc wel rspcv ad2antrl w3a simp3 simplrr vex elcompl sylib
+      simprl elequ1 syl5ibcom con2d imp simpll simprr syl simplr sseldd syl3anc
+      simpr tfin11 mtand nrexdv 3adant3 tfinex eqeq1 rexbidv elab elsuci 3expia
+      sylnibr syl2anc embantd ex com23 snss anbi2i bitr2i wo rexun df-sn eqeq2d
+      unss rexsn abbii eqtr4i uneq2i unab eqtr2i biimprcd syl6 an32s rexlimdvva
+      syld syl5bi imp32 wne ne0i tfinsuc eleqtrrd expr ralrimiva finds rspccv
+      3imp ) CHIZBHJZBCIZDKZAKZLZMZABNZDOZCLZIZUUHUUJUUIUURUUHEKZHJZUUNAUUSNZDO
+      ZUUQIZPZECUEZUUJUUIUURPZPUUTUVBUAKZLZIZPZEUVGUEZQHJZUUNAQNZRZDUCZPZUUTUVB
+      UBKZLZIZPZEUVQUEZUDKZHJZUUNAUWBNZDOZUVQUFUGZLZIZPZUDUWFUEZUVEUAUBCAEUADUH
+      UVGSMZUVKUUTUVBSIZPZESUEZUVPUVJUWMEUVGSUWKUVIUWLUUTUWKUVHSUVBUWKUVHSLSUVG
+      SUIUJUKULUMUNUWNUUSSIZUWMPZEUCUUSQMZUUTUVARZDUCZPZPZEUCUVPUWMESUOUWPUXAEU
+      WOUWQUWMUWTUUSUPUWLUWSUUTUWLUVBQMUWSUVBUPUVADUQURUSUTVAUWTUVPEQVBUWQUUTUV
+      LUWSUVOUUSQHVCUWQUWRUVNDUWQUVAUVMUUNAUUSQVDVEVGVFVHVIVJUVJUVTEUVGUVQUAUBV
+      KZUVIUVSUUTUXBUVHUVRUVBUVGUVQUIULUMUNUVGUWFMZUVKUUTUVBUWGIZPZEUWFUEUWJUVJ
+      UXEEUVGUWFUXCUVIUXDUUTUXCUVHUWGUVBUVGUWFUIULUMUNUXEUWIEUDUWFEUDVKZUUTUWCU
+      XDUWHUUSUWBHVCUXFUVBUWEUWGUXFUVAUWDDUUNAUUSUWBVDVLVMVFVNVJUVJUVDEUVGCUVGC
+      MZUVIUVCUUTUXGUVHUUQUVBUVGCUIULUMUNUVOUVLUVNDUUNAVSVOVPUVQHIZUWAUWJUXHUWA
+      TZUWIUDUWFUXIUWBUWFIZUWCUWHUXIUXJUWCTZTZUWEUVRUFUGZUWGUXIUXJUWCUWEUXMIZUX
+      JUWBFKZGKZVQZVRZMZGUXOVTZNFUVQNUXIUWCUXNPZGUWBUVQFWAUXIUXSUYAFGUVQUXTUXHF
+      UBWBZUXPUXTIZTZUWAUXSUYAPZUXHUYDTZUWAUYEUYFUWAUXOHJZUUNAUXONZDOZUVRIZPZUY
+      EUYBUWAUYKPUXHUYCUVTUYKEUXOUVQEFVKZUUTUYGUVSUYJUUSUXOHVCUYLUVBUYIUVRUYLUV
+      AUYHDUUNAUUSUXOVDVLVMVFWCWDUYFUYKUYGUXPHIZTZUYIUXPLZVQZVRZUXMIZPZUYEUYFUY
+      NUYKUYRUYFUYNUYKUYRPUYFUYNTZUYGUYJUYRUYFUYGUYMWKZUYFUYNUYJUYRUYFUYNUYJWEZ
+      UYJUYOUYIIZRUYRUYFUYNUYJWFVUBUYOUUMMZAUXONZVUCUYFUYNVUERUYJUYTVUDAUXOUYTA
+      FWBZTZVUDGAVKZUYTVUFVUHRUYTVUHVUFUYTGFWBZRZVUHVUFRUYTUYCVUJUXHUYBUYCUYNWG
+      UXPUXOGWHZWIWJVUHVUIVUFGAFWLVEWMWNWOVUGVUDTZUYMUULHIVUDVUHVULUYTUYMUYTVUF
+      VUDWPZUYFUYGUYMWQWRVULUXOHUULVULUYTUYGVUMVUAWRUYTVUFVUDWSWTVUGVUDXBUXPUUL
+      XCXAXDXEXFUYHVUEDUYOUXPXGZUUKUYOMZUUNVUDAUXOUUKUYOUUMXHXIXJXMUYIUVRUYOVUN
+      XKXNXLXOXPXQUXSUYAUYSUXSUWCUYNUXNUYRUXSUWCUXRHJZUYNUWBUXRHVCUYNUYGUXQHJZT
+      VUPUYMVUQUYGUXPHVUKXRXSUXOUXQHYEXTVJUXSUWEUYQUXMUXSUWEUYHUUNAUXQNZYAZDOZU
+      YQUXSUWDVUSDUXSUWDUUNAUXRNVUSUUNAUWBUXRVDUUNAUXOUXQYBVJVLUYQUYIVURDOZVRVU
+      TUYPVVAUYIUYPVUODOVVADUYOYCVURVUODUUNVUOAUXPVUKAGVKUUMUYOUUKUULUXPUIYDYFY
+      GYHYIUYHVURDYJYKUKVMVFYLYMYPWOYNYOYQYRUXLUXHUWFQYSZUWGUXMMUXHUWAUXKWPUXJV
+      VBUXIUWCUWFUWBYTWDUVQUUAXNUUBUUCUUDXPUUEUVDUVFEBCUUSBMZUUTUUIUVCUURUUSBHV
+      CVVCUVBUUPUUQVVCUVAUUODUUNAUUSBVDVLVMVFUUFWRXQUUG $.
+      $( [30-Jan-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a r $.  $d a s $.  $d b r $.  $d b s $.  $d M a $.  $d M b $.
+    $d M r $.  $d M s $.  $d N a $.  $d N b $.  $d N r $.  $d N s $.  $d P a $.
+    $d P b $.  $d P r $.  $d P s $.  $d Q a $.  $d Q b $.  $d Q r $.  $d Q s $.
+    $d r s $.  $d a d $.  $d a g $.  $d a t $.  $d a x $.  $d b d $.  $d b g $.
+    $d b t $.  $d b x $.  $d d g $.  $d d r $.  $d d s $.  $d d t $.  $d d x $.
+    $d g r $.  $d g s $.  $d g t $.  $d g x $.  $d M d $.  $d M g $.  $d M t $.
+    $d M x $.  $d N d $.  $d N g $.  $d N t $.  $d N x $.  $d P d $.  $d P g $.
+    $d P t $.  $d P x $.  $d Q d $.  $d Q g $.  $d Q t $.  $d Q x $.  $d r t $.
+    $d r x $.  $d s t $.  $d s x $.  $d t x $.  $d a n $.  $d a u $.  $d b n $.
+    $d b u $.  $d d n $.  $d d u $.  $d g n $.  $d g u $.  $d m n $.  $d M n $.
+    $d m u $.  $d M u $.  $d N n $.  $d n r $.  $d n s $.  $d n t $.  $d n u $.
+    $d N u $.  $d P n $.  $d P u $.  $d Q n $.  $d Q u $.  $d r u $.  $d s u $.
+    $d t u $.
+    $( Ordering law for finite smaller than.  Theorem X.1.47 of [Rosser]
+       p. 532. 
+       (Contributed by SF, 30-Jan-2015.) $)
+    sfinltfin $p |- ( ( ( _S[fin] ( M , N ) /\ _S[fin] ( P , Q ) ) /\
+        << M , P >> e. <[fin] ) -> << N , Q >> e. <[fin] ) $=
+      ( va vb vr vx wa cltfin wcel cnnc cv wrex wceq c0 wn syl2anc syl cplc cpw
+      vs vt vg vd vu vn vm wsfin copk cpw1 wex w3a wi df-sfin 3an6 eeanv simp1l
+      wel simp3ll ncfinlower syl3anc simp1r simp3rl reeanv simpl anim12i cin wo
+      ctfin simprll simprrl tfinpw1 elin sylanbrc n0i simpl1l wne ne0i tfinprop
+      adantr simpld nndisjeq sylc simprlr simprrr simpl1r wb tfinltfin ad2antrl
+      orel1 c1c opkltfing simp2rr simp3r eleqtrd addcass syl6eleq 0nelsuc eleq1
+      cun eladdc syl5ibcom mtoi df-ne sylibr wss ssun2 sseq2 mpbiri sseld disjr
+      n0 rsp sylbi anim12ii ancoms ad2antll vex snelpw sylib eleq2 imp 3ad2ant1
+      wral ad2antrr cfin cvv pwex c0c syl5bir eleq1d syl5ibrcom mpd 3expa exp32
+      rexlimdv syl5bi rexlimdvv mp2and csn notbii anbi12i ssun1 adantl biimprcd
+      sspwb anim2i dfpss2 simp2ll simp2rl nnpweq simpr2l simp3lr simpr1 simp12l
+      wpss con3d cdif simp3rr simp12r elunii df-fin syl6eleqr difex difss ssfin
+      mp3an13 elfin undif1 eqtr3i simp23 pssssd ssequn2 syl5eqr simp22r disjdif
+      uncom a1i eladdci eqeltrrd simp21 simp3l nncaddccl df-pss ssdif0 simplbi2
+      cuni necon3d biimpcd syl6ib necon3ad nnc0suc addceq2 syl6eqr reximi mp2an
+      eqss el0c addcex opkeq2 opkeq1 3exp2 mpand exlimdv adantld sylbid sylbird
+      syl5 syld opkeq12 imbi1d syl7 3expia exlimdvv 3impia sylbir syl2anb ) CDU
+      IZABUIZICAUJZJKZDBUJZJKZUXSCLKZDLKZEMZUKZCKZUYGUAZDKZIZEULZUMZALKZBLKZFMZ
+      UKZAKZUYQUAZBKZIZFULZUMZUYBUYDUNZUXTCDEUOABFUOUYNVUDIUYEUYOIZUYFUYPIZUYMV
+      UCIZUMVUEUYEUYOUYFUYPUYMVUCUPVUFVUGVUHVUEVUHUYLVUBIZFULEULVUFVUGIZVUEUYLV
+      UBEFUQVUJVUIVUEEFVUFVUGVUIVUEVUFVUGVUIUMZEGUSZVULIZGLNZFUBUSZVUOIZUBLNZVU
+      EVUKUYEUYIUYIVUNUYEUYOVUGVUIURUYIUYKVUBVUFVUGUTZVURUYGUYGGCVAVBVUKUYOUYSU
+      YSVUQUYEUYOVUGVUIVCUYSVUAUYLVUFVUGVDZVUSUYQUYQUBAVAVBVUNVUQIVUMVUPIZUBLNG
+      LNVUKVUEVUMVUPGUBLLVEVUKVUTVUEGUBLLVUTVULVUOIZVUKGMZLKZUBMZLKZIZVUEVUMVUL
+      VUPVUOVULVULVFVUOVUOVFVGVUKVVFVVAVUEVUKVVFVVAIZIZCVVBVJZOZAVVDVJZOZVUEVVH
+      CVVIVHZPOZQZVVNVVJVIZVVJVVHUYHVVMKZVVOVVHUYIUYHVVIKZVVQVUKUYIVVGVURWAVVHV
+      VCVULVVRVUKVVCVVEVVAVKZVUKVVFVULVUOVLZUYGVVBVMRUYHCVVIVNVOVVMUYHVPSVVHUYE
+      VVILKZVVPUYEUYOVUGVUIVVGVQVVHVVCVVBPVRZVWAVVSVVHVULVWBVVTVVBUYGVSSVVCVWBI
+      VWAVVREVVBNVVBEVTWBRCVVIWCRVVNVVJWKWDVVHAVVKVHZPOZQZVWDVVLVIZVVLVVHUYRVWC
+      KZVWEVVHUYSUYRVVKKZVWGVUKUYSVVGVUSWAVVHVVEVUOVWHVUKVVCVVEVVAWEZVUKVVFVULV
+      UOWFZUYQVVDVMRUYRAVVKVNVOVWCUYRVPSVVHUYOVVKLKZVWFUYEUYOVUGVUIVVGWGVVHVVEV
+      VDPVRZVWKVWIVVHVUOVWLVWJVVDUYQVSSVVEVWLIVWKUYHVVKKEVVDNVVDEVTWBRAVVKWCRVW
+      DVVLWKWDVVHVUEVVJVVLIZVVIVVKUJZJKZUYDUNVVHVWOVVBVVDUJJKZUYDVVFVWPVWOWHVUK
+      VVAVVBVVDWIWJVVHVWPVWBVVDVVBUCMZTWLTZOZUCLNZIZUYDVVFVWPVXAWHVUKVVAUCVVBVV
+      DLLWMWJVVHVWTUYDVWBVVHVWSUYDUCLVVHVWQLKZVWSUYDVUKVVGVXBVWSIZUYDVUKVVGVXCU
+      MZUYQVVBVWQWLTZTZKZUYDVXDUYQVWRVXFVXDUYQVVDVWRVULVUOVVFVUKVXCWNVUKVVGVXBV
+      WSWOWPVVBVWQWLWQWRVXGUDMZUEMZVHPOZUYQVXHVXIXAZOZIZUEVXENUDVVBNVXDUYDUYQVV
+      BVXEUDUEXBVXDVXMUYDUDUEVVBVXEVXDUDGUSZVXIVXEKZIZVXMUYDVXDVXPVXMIZIZVXIPVR
+      ZUYDVXRVXIPOZQVXSVXRVXTPVXEKZVWQWSVXRVXOVXTVYAVXDVXNVXOVXMWEVXIPVXEWTXCXD
+      VXIPXEXFVXSHUEUSZHULVXRUYDHVXIXMVXRVYBUYDHVXRVYBHFUSZHUDUSZQZIZUYDVXMVYBV
+      YFUNZVXDVXPVXLVXJVYGVXLVYBVYCVXJVYEVXLVXIUYQHMZVXLVXIUYQXGVXIVXKXGVXIVXHX
+      HUYQVXKVXIXIXJXKVXJVYEHVXIYEVYBVYEUNHVXHVXIXLVYEHVXIXNXOXPXQXRVYFVYHUUAZU
+      YTKZVYIVXHUAZKZQZIZVXRUYDVYJVYCVYMVYEVYHUYQHXSZXTVYLVYDVYHVXHVYOXTUUBUUCV
+      XRVYKUYTXGZVYNUYDVXMVYPVXDVXPVXLVYPVXJVXLVXHUYQXGZVYPVXLVYQVXHVXKXGVXHVXI
+      UUDUYQVXKVXHXIXJVXHUYQUUGYAUUEXRVYPVYNIZVYKUYTUUQZVXRUYDVYRVYPVYKUYTOZQZI
+      VYSVYNWUAVYPVYJVYMWUAVYJVYTVYLVYTVYLVYJVYKUYTVYIYBUUFUURYCUUHVYKUYTUUIXFV
+      XRUYJUFMZKZVYKWUBKZIZUFLNZVYSUYDUNZVXRVVCVULVXNWUFVXDVVCVXQVVCVVEVVAVUKVX
+      CUUJWAVXDVULVXQVULVUOVVFVUKVXCUUKWAVXDVXNVXOVXMVKUYGVXHUFVVBUULVBVXRWUEWU
+      GUFLVXRWUBLKZWUEVYSUYDVXRWUHWUEVYSUMZIZWUBDOZUYDWUJWUBDVHZPOZQZWUMWUKVIZW
+      UKWUJUYJWULKZWUNWUJWUCUYKWUPWUCWUDWUHVYSVXRUUMVXDUYKVXQWUIVUKVVGUYKVXCUYI
+      UYKVUBVUFVUGUUNYDYFUYJWUBDVNVOWULUYJVPSWUJWUHUYFWUOVXRWUHWUEVYSUUOVXDUYFV
+      XQWUIUYFUYPVUFVUIVVGVXCUUPYFWUBDWCRWUMWUKWKWDWUJWUBBUJZJKZWUKUYDWUJUYTVYK
+      UUSZYGKZWURWUJUYTYGKZWUTWUJUYTLUWHZYGWUJVUAUYPUYTWVBKVXDVUAVXQWUIVUKVVGVU
+      AVXCUYSVUAUYLVUFVUGUUTYDZYFVXDUYPVXQWUIUYFUYPVUFVUIVVGVXCUVAZYFUYTBLUVBRU
+      VCUVDWUSYHKWVAWUSUYTXGWUTUYTVYKUYQFXSYIVXHUDXSYIUVEUYTVYKUVFWUSUYTYHUVGUV
+      HSWUTWUSUGMZKZUGLNWUJWURUGWUSUVIWUJWVFWURUGLWUJWVELKZWVFWURVXRWUIWVGWVFIZ
+      WURVXRWUIWVHUMZBWUBWVETZOZWURWVIBWVJVHZPOZQZWVMWVKVIZWVKWVIUYTWVLKZWVNWVI
+      VUAUYTWVJKWVPVXRWUIVUAWVHVXDVUAVXQWVCWAYDWVIVYKWUSXAZUYTWVJWVIWVQUYTVYKXA
+      ZUYTWUSVYKXAWVRWVQUYTVYKUVJWUSVYKUVRUVKWVIVYPWVRUYTOWVIVYKUYTVXRWUHWUEVYS
+      WVHUVLZUVMVYKUYTUVNYAUVOWVIWUDWVFVYKWUSVHPOZWVQWVJKWUCWUDWUHVYSVXRWVHUVPZ
+      VXRWUIWVGWVFWOZWVTWVIVYKUYTUVQUVSVYKWUSWUBWVEUVTVBUWAUYTBWVJVNVOWVLUYTVPS
+      WVIUYPWVJLKZWVOVXRWUIUYPWVHVXDUYPVXQWVDWAYDWVIWUHWVGWWCVXRWUHWUEVYSWVHUWB
+      VXRWUIWVGWVFUWCZWUBWVEUWDRBWVJWCRWVMWVKWKWDWVIWURWVKWUBWVJUJZJKZWVIWUBPVR
+      ZWVJWUBUHMZTWLTZOZUHLNZWWFWVIWUDWWGWWAWUBVYKVSSWVIWVEWWHWLTZOZUHLNZWWKWVI
+      WVEYJOZQZWWOWWNVIZWWNWVIWVFWUSPVRZWWPWWBWVIVYSWWRWVSVYSVYPVYKUYTVRZIWWRVY
+      KUYTUWEVYPWWSWWRVYPWUSPVYKUYTWUSPOZUYTVYKXGZVYPVYTUYTVYKUWFVYTVYPWXAVYKUY
+      TUWRUWGYKUWIYCXOSWVFWWOWUSPWVFWWOWUSYJKZWWTWWOWVFWXBWVEYJWUSYBUWJWUSUWSUW
+      KUWLWDWVIWVGWWQWWDUHWVEUWMYAWWOWWNWKWDWWMWWJUHLWWMWVJWUBWWLTWWIWVEWWLWUBU
+      WNWUBWWHWLWQUWOUWPSWUBYHKWVJYHKWWFWWGWWKIWHUFXSZWUBWVEWXCUGXSUWTUHWUBWVJY
+      HYHWMUWQVOWVKWUQWWEJBWVJWUBUXAYLYMYNYOYPYQYRYNWUKWUQUYCJWUBDBUXBYLXCYNUXC
+      YQYNUXIUXDYKUXJUXEYRYNYPYSYRYNYOYPYQUXFUXGUXHVWMUYBVWOUYDVWMUYAVWNJCAVVIV
+      VKUXKYLUXLYMYTYPUXMYSYKYTUXNUXOYKUXPUXQUXRYC $.
+      $( [30-Jan-2015] $)
+  $}
+
+  ${
+    $d M a $.  $d N a $.  $d P a $.
+    $( The finite smaller relationship is one-to-one in its first argument.
+       Theorem X.1.48 of [Rosser] p. 533. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    sfin111 $p |- ( ( _S[fin] ( M , P ) /\ _S[fin] ( N , P ) ) ->
+       M = N ) $=
+      ( va wsfin wa copk cltfin wcel wo wn wceq cnnc wex df-sfin adantl simp1bi
+      sfinltfin adantr sylib cv cpw1 cpw simp2bi ltfinirr syl mtand ancoms mtod
+      wi ex ioran sylanbrc w3o wne ne0i exlimiv 3ad2ant3 sylbi ltfintri syl3anc
+      c0 w3a df-3or or32 orel1 sylc ) BAEZCAEZFZBCGHIZCBGHIZJZKZVMBCLZJZVOVJVKK
+      VLKVNVJVKAAGHIZVJAMIZVQKVIVRVHVICMIZVRDUAZUBZCIVTUCAIZFDNZCADOZUDPAUEUFZC
+      ABARUGVJVLVQWEVIVHVLVQUJVIVHFVLVQBACARUKUHUIVKVLULUMVJVKVOJVLJZVPVJVKVOVL
+      UNZWFVJBMIZVSBVBUOZWGVHWHVIVHWHVRWABIZWBFZDNZBADOZQSVIVSVHVIVSVRWCWDQPVHW
+      IVIVHWHVRWLVCWIWMWLWHWIVRWKWIDWJWIWBBWAUPSUQURUSSBCUTVAVKVOVLVDTVKVOVLVET
+      VMVOVFVG $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d a x $.  $d a z $.  $d t x $.  $d x z $.  $d a t $.  $d t z $.
+    $( ` Sp[fin] ` is a set. 
+       (Contributed by SF, 20-Jan-2015.) $)
+    spfinex $p |- Sp[fin] e. _V $=
+      ( va vz vx vt cv wcel cssetk c1c cins3k csik cimak cin wa wn wex copk csn
+      bitr4i exbii 3bitri cspfin cvv cncfin cab cnnc cxpk cpw csymdif cpw1 cdif
+      cins2k ccompl cint wsfin wel wi wal wral df-spfin wrex wceq elimak anbi1i
+      el1c 19.41v df-rex excom 3bitr4i snex opkeq1 eleq1d ceqsexv elssetk opkex
+      elin elpw121c eldif otkelins3k opksnelsik srelk otkelins2k notbii anbi12i
+      bitri exanali elcompl dfral2 abbi2i ineq2i eqtri inteqi eqtr4i setswithex
+      vex inab ssetkex srelkex sikex ins3kex ins2kex difex pw1ex imakex complex
+      1cex inex intex eqeltri ) UAUBUCZAEZFZAUDZGUEUEUFHUGUBUFGIGJUKUHZHUIZUIZU
+      IZKUJJIGUKZLXOKIXMXOKULJIXQLXOKUKLXPKLZJZIZXQUJZXOKZLZHKZULZLZUMZUBUAXKBE
+      ZCEZUNZBAUOZUPBUQZCXJURZMAUDZUMYGCBAUSYFYNYFXLYMAUDZLYNYEYOXLYMAYEXJYDFZN
+      YLNZCXJUTZNXJYEFYMYPYRYPCAUOZYQMZCOZYRYPDEZXJPZYCFZDHUTZUUBYIQZVAZUUDMZDO
+      ZCOZUUADYCHXJAWNZVBUUBHFZUUDMZDOUUHCOZDOUUEUUJUUMUUNDUUMUUGCOZUUDMUUNUULU
+      UOUUDCUUBVDVCUUGUUDCVERSUUDDHVFUUHCDVGVHUUIYTCUUIUUFXJPZYCFZUUPGFZUUPYBFZ
+      MYTUUDUUQDUUFYIVIZUUGUUCUUPYCUUBUUFXJVJVKVLUUPGYBVOUURYSUUSYQYIXJCWNZUUKV
+      MUUSUUBYHQZQZQZVAZUUBUUPPZYAFZMZDOZBOZYJYKNZMZBOYQUUSUVGDXOUTUUBXOFZUVGMZ
+      DOZUVJDYAXOUUPUUFXJVNVBUVGDXOVFUVOUVHBOZDOUVJUVNUVPDUVNUVEBOZUVGMUVPUVMUV
+      QUVGBUUBVPVCUVEUVGBVERSUVHBDVGRTUVIUVLBUVIUVDUUPPZYAFZUVRXTFZUVRXQFZNZMUV
+      LUVGUVSDUVDUVCVIUVEUVFUVRYAUUBUVDUUPVJVKVLUVRXTXQVQUVTYJUWBUVKUVTUVBUUFPX
+      SFYHYIPXRFYJUVBUUFXJXSYHVIZUUTUUKVRYHYIXRBWNZUVAVSYHYIUWDUVAVTTUWAYKUWAUV
+      BXJPGFYKUVBUUFXJGUWCUUTUUKWAYHXJUWDUUKVMWDWBWCTSYJYKBWETWCTSTYQCXJVFRWBXJ
+      YDUUKWFYLCXJWGVHWHWIXKYMAWOWJWKWLYFXLYEAXIWMYDYCHGYBWPYAXOXTXQXSXRWQWRWSG
+      WPWTXAXNHXEXBXBXCXFXEXCXDXFXGXH $.
+      $( [20-Jan-2015] $)
+  $}
+
+  ${
+    $d a x z $.
+    $( The cardinality of the universe is in the finite Sp set.  Theorem X.1.49
+       of [Rosser] p. 534. 
+       (Contributed by SF, 27-Jan-2015.) $)
+    ncvspfin $p |- Nc[fin] _V e. Sp[fin] $=
+      ( va vz vx cvv cncfin cv wcel wsfin wel wi wal wral wa cab cspfin ncfinex
+      cint elintab simpl mpgbir df-spfin eleqtrri ) DEZUCAFZGZBFCFHBAIJBKCUDLZM
+      ZANQZOUCUHGUGUEJAUGAUCDPRUEUFSTCBAUAUB $.
+      $( [27-Jan-2015] $)
+  $}
+
+  ${
+    $d a p $.  $d a q $.  $d a x $.  $d a z $.  $d p q $.  $d p x $.  $d q x $.
+    $d q z $.  $d X x $.  $d X y $.  $d x z $.  $d Z x $.  $d Z y $.  $d Z z $.
+
+    $( If ` X ` is in ` Sp[fin] ` and ` Z ` is smaller than ` X ` , then ` Z `
+       is also in ` Sp[fin] ` .  Theorem X.1.50 of [Rosser] p. 534. 
+       (Contributed by SF, 27-Jan-2015.) $)
+    spfinsfincl $p |- ( ( X e. Sp[fin] /\ _S[fin] ( Z , X ) ) ->
+       Z e. Sp[fin] ) $=
+      ( vy vz vx va vq vp wsfin cspfin wcel wi cnnc cv wa eleq1 imbi12d wel wal
+      wceq cpw1 cpw wex w3a df-sfin sfineq1 imbi2d sfineq2 imbi1d cncfin albidv
+      cvv wral weq rspcv spv com12 syl9r com23 adantld a2d alimdv cab df-spfin
+      cint eleq2i elintab bitri 3imtr4g vtocl2g 3adant3 sylbi pm2.43i impcom
+      vex ) BAIZAJKZBJKZVPVQVRLZVPBMKZAMKZCNZUABKWBUBAKOCUCZUDVPVSLZBACUEVTWAWD
+      WCDNZENZIZWFJKZWEJKZLZLBWFIZWHVRLZLWDDEBAMMWEBTZWGWKWJWLWEBWFUFWMWIVRWHWE
+      BJPUGQWFATZWKVPWLVSWFABUHWNWHVQVRWFAJPUIQWGULUJFNZKZGNZHNZIZGFRZLZGSZHWOU
+      MZOZEFRZLZFSZXDDFRZLZFSZWHWIWGXFXIFWGXDXEXHWGXCXEXHLWPWGXEXCXHXEXCWQWFIZW
+      TLZGSZWGXHXBXMHWFWOHEUNZXAXLGXNWSXKWTWRWFWQUHUIUKUOXMWGXHXLWGXHLGDGDUNXKW
+      GWTXHWQWEWFUFWQWEWOPQUPUQURUSUTVAVBWHWFXDFVCVEZKXGJXOWFHGFVDZVFXDFWFEVOVG
+      VHWIWEXOKXJJXOWEXPVFXDFWEDVOVGVHVIVJVKVLVMVN $.
+      $( [27-Jan-2015] $)
+  $}
+
+  ${
+    $d a x $.  $d a z $.  $d B a $.  $d B x $.  $d B z $.  $d x z $.
+
+    $( Inductive principle for ` Sp[fin] ` .  Theorem X.1.51 of [Rosser]
+       p. 534. 
+       (Contributed by SF, 27-Jan-2015.) $)
+    spfininduct $p |- ( ( B e. V /\ Nc[fin] _V e. B /\
+       A. x e. Sp[fin] A. z ( ( x e. B /\ _S[fin] ( z , x ) ) -> z e. B ) ) ->
+       Sp[fin] C_ B ) $=
+      ( va wcel cspfin cvv cv wa wi wal wral wss mpan elin df-ral 19.21v bitr4i
+      albii cin cncfin wsfin spfinex inexg ncvspfin biimpri spfinsfincl adantrl
+      a1d ancrd syl6ibr ex a2d exp4a a2i syl5bi 2alimi 3imtr4i w3a wel cab cint
+      imp3a df-spfin wceq eleq2 imbi2d albidv raleqbi1dv anbi12d biimprd 3impib
+      elabg intss1 syl syl5eqss inss2 syl6ss syl3an ) CDFZGCUAZHFZHUBZCFZWDWBFZ
+      AIZCFZBIZWGUCZJZWICFZKZBLZAGMZWJWIWBFZKZBLZAWBMZGCNGHFWAWCUDGCHDUEOWDGFZW
+      EWFUFWFWTWEJWDGCPUGOWGGFZWMKZBLZALZWGWBFZWQKZBLZALZWOWSXBXFABXEXAWHJXBWQW
+      GGCPXBXAWHWQXAWMWHWQKXAWMWHWJWPXAWKWLWPXAWKWLWPKXAWKJZWLWIGFZWLJWPXIWLXJX
+      IXJWLXAWJXJWHWGWIUHUIUJUKWIGCPULUMUNUOUPVDUQURWOXAWNKZALXDWNAGQXCXKAXAWMB
+      RTSWSXEWRKZALXHWRAWBQXGXLAXEWQBRTSUSWCWFWSUTZGWBCXMGWDEIZFZWJBEVAZKZBLZAX
+      NMZJZEVBZVCZWBABEVEXMWBYAFZYBWBNWCWFWSYCWCYCWFWSJZXTYDEWBHXNWBVFZXOWFXSWS
+      XNWBWDVGXRWRAXNWBYEXQWQBYEXPWPWJXNWBWIVGVHVIVJVKVNVLVMWBYAVOVPVQGCVRVSVT
+      $.
+      $( [27-Jan-2015] $)
+  $}
+
+  ${
+    $d x y z $.
+    $( If the universe is finite, then ` Sp[fin] ` is a subset of the non-empty
+       naturals.  Theorem X.1.53 of [Rosser] p. 534. 
+       (Contributed by SF, 27-Jan-2015.) $)
+    vfinspnn $p |- ( _V e. Fin -> Sp[fin] C_ ( Nn \ { (/) } ) ) $=
+      ( vx vz vy cvv cfin wcel cncfin cnnc c0 csn cv wsfin wa wi wal cspfin wne
+      cdif ne0i eldifsn wral wss vvex ncfinprop mpan2 anim2i syl sylibr cpw wex
+      cpw1 w3a df-sfin adantr exlimiv biimpri sylan2 3adant2 sylbi adantl rgenw
+      ax-gen nncex snex difex spfininduct mp3an1 sylancl ) DEFZDGZHIJZRZFZAKZVL
+      FZBKZVNLZMVPVLFZNZBOZAPUAZPVLUBZVIVJHFZVJIQZMZVMVIWCDVJFZMZWEVIDDFWGUCDDU
+      DUEWFWDWCVJDSUFUGVJHITUHVTAPVSBVQVRVOVQVPHFZVNHFZCKZUKZVPFZWJUIVNFZMZCUJZ
+      ULVRVPVNCUMWHWOVRWIWOWHVPIQZVRWNWPCWLWPWMVPWKSUNUOVRWHWPMVPHITUPUQURUSUTV
+      BVAVLDFVMWAWBHVKVCIVDVEABVLDVFVGVH $.
+      $( [27-Jan-2015] $)
+  $}
+
+  ${
+    $( If the universe is finite, then ` Nc[fin] 1c ` is the base two log of
+       ` Nc[fin] _V ` .  Theorem X.1.54 of [Rosser] p. 534. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    1cvsfin $p |- ( _V e. Fin -> _S[fin] ( Nc[fin] 1c , Nc[fin] _V ) ) $=
+      ( va cvv cfin wcel c1c cncfin cnnc cpw1 cpw wex w3a 1cex ncfinprop simpld
+      cv wa mpan2 vvex simprd eleq1d wsfin wceq pw1eq df1c2 syl6eqr pweq syl6eq
+      pwv anbi12d spcev syl2anc 3jca df-sfin sylibr ) BCDZEFZGDZBFZGDZAOZHZUPD
+      ZUTIZURDZPZAJZKUPURUAUOUQUSVFUOEBDZUQLUOVGPUQEUPDZEBMZNQUOBBDZUSRUOVJPUSB
+      URDZBBMZNQUOVHVKVFUOUQVHUOVGUQVHPLVIQSUOUSVKUOVJUSVKPRVLQSVEVHVKPABRUTBUB
+      ZVBVHVDVKVMVAEUPVMVABHEUTBUCUDUETVMVCBURVMVCBIBUTBUFUHUGTUIUJUKULUPURAUMU
+      N $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $( If the universe is finite, then the size of ` 1c ` is in ` Sp[fin] ` .
+       Corollary of Theorem X.1.54 of [Rosser] p. 534. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    1cspfin $p |- ( _V e. Fin -> Nc[fin] 1c e. Sp[fin] ) $=
+      ( cvv cfin wcel cncfin cspfin wsfin ncvspfin 1cvsfin spfinsfincl sylancr
+      c1c ) ABCADZECKDZLFMECGHLMIJ $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $( If the universe is finite, then the T-raising of the size of the
+       universe is equal to the size of ` 1c ` .  Theorem X.1.55 of [Rosser]
+       p. 534. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    tncveqnc1fin $p |- ( _V e. Fin -> _T[fin] Nc[fin] _V = Nc[fin] 1c ) $=
+      ( cvv cfin wcel cncfin ctfin cpw1 wceq vvex ncfintfin mpan2 df1c2 ncfineq
+      c1c ax-mp syl6eqr ) ABCZADEZAFZDZMDZPAACQSGHAAIJMRGTSGKMRLNO $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $( If the universe is finite, then the T-raising of the size of ` 1c ` is
+       smaller than the size itself.  Corollary of theorem X.1.56 of
+       [Rosser] p. 534. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    t1csfin1c $p |- ( _V e. Fin ->
+               _S[fin] ( _T[fin] Nc[fin] 1c , Nc[fin] 1c ) ) $=
+      ( cvv cfin wcel c1c cncfin ctfin wsfin 1cvsfin sfintfin wceq tncveqnc1fin
+      syl wb sfineq2 mpbid ) ABCZDEZFZAEZFZGZRQGZPQSGUAHQSILPTQJUAUBMKTQRNLO $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d N a $.
+    $( If the universe is finite, then the T-raising of all non-empty naturals
+       are no greater than the size of ` 1c ` .  Theorem X.1.56 of [Rosser]
+       p. 534. 
+       (Contributed by SF, 30-Jan-2015.) $)
+    vfintle $p |- ( ( _V e. Fin /\ N e. Nn /\ N =/= (/) ) ->
+        << _T[fin] N , Nc[fin] 1c >> e. <_[fin] ) $=
+      ( va cvv cfin wcel cnnc c0 w3a cncfin copk clefin ctfin wa wceq ncfinprop
+      simp2 simpld mpan2 adantr 3ad2ant1 wne c1c cv wex n0 3adant2 simp3 simprd
+      nnceleq syl22anc 3expia wi ccompl simpr cun uncompl ncfineq ax-mp vex cin
+      complex incompl ncfindi mp3an23 syl5eqr ncfinex lefinaddc sylancr eqeltrd
+      cplc ex syld exlimdv syl5bi 3impia wb vvex tfinlefin syl2anc tncveqnc1fin
+      opkeq12d opkeq2d eleq1d bitrd mpbid ) CDEZAFEZAGUAZHZACIZJZKEZALZUBIZJZKE
+      ZWFWGWHWLWHBUCZAEZBUDWFWGMZWLBAUEWSWRWLBWSWRAWQIZNZWLWFWGWRXAWFWGWRHZWGWT
+      FEZWRWQWTEZXAWFWGWRPXBXCXDWFWRXCXDMWGWQAOUFZQWFWGWRUGXBXCXDXEUHWQAWTUIUJU
+      KWFXAWLULWGWFXAWLWFXAMZWKWTWTWQUMZIZVJZJZKXFAWTWJXIWFXAUNWFWJXINXAWFWJWQX
+      GUOZIZXIXKCNXLWJNWQUPXKCUQURWFWQCEZXLXINZBUSZWFXMMXGCEZWQXGUTGNXNWQXOVAZW
+      QVBWQXGCCVCVDRVESWAWFXJKEZXAWFWTCEXHFEZXRWQVFWFXSXGXHEZWFXPXSXTMXQXGCORQW
+      TXHCVGVHSVIVKSVLVMVNVOWIWLWMWJLZJZKEZWPWIWGWJFEZWLYCVPWFWGWHPWIYDCWJEZWFW
+      GYDYEMZWHWFCCEYFVQCCORTQAWJVRVSWIYBWOKWIYAWNWMWFWGYAWNNWHVTTWBWCWDWE $.
+      $( [30-Jan-2015] $)
+  $}
+
+  ${
+    $( If the universe is finite, then ` 1c ` is strictly smaller than the
+       universe.  Theorem X.1.57 of [Rosser] p. 534. 
+       (Contributed by SF, 30-Jan-2015.) $)
+    vfin1cltv $p |- ( _V e. Fin ->
+               << Nc[fin] 1c , Nc[fin] _V >> e. <[fin] ) $=
+      ( cvv wcel c1c cncfin cplc copk cltfin wceq ax-mp 1cex wa c0 mpan2 wn c0c
+      cnnc ncfinprop simprd wne wb cfin cun uncompl ncfineq cin complex incompl
+      ccompl ncfindi mp3an23 syl5reqr opkeq2d 0nel1c 0ex elcompl n0i syl5ibrcom
+      mpbir eleq2 el0c syl6ib mtoi addcid1 eqeq1i simpld peano1 a1i syl eqnetrd
+      ne0i preaddccan2 syl31anc syl5bbr mtbird clefin ncfinex lefinaddc sylancr
+      wo addcex lefinlteq mp3an12 mpbid orcomd ord mpd eqeltrrd ) AUABZCDZWICUH
+      ZDZEZFZWIADZFGWHWLWNWIWHWNCWJUBZDZWLWOAHWPWNHCUCWOAUDIWHCABZWPWLHZJWHWQKW
+      JABZCWJUELHWRCJUFZCUGCWJAAUIUJMUKULWHWIWLHZNWMGBZWHXAOWKHZWHXCWJLHZLWJBZX
+      DNXELCBNUMLCUNUOURWJLUPIWHXCWJOBZXDWHXFXCWJWKBZWHWKPBZXGWHWSXHXGKWTWJAQMZ
+      ROWKWJUSUQWJUTVAVBXAWIOEZWLHZWHXCXJWIWLWIVCZVDWHWIPBZOPBZXHXJLSXKXCTWHXMC
+      WIBZWHWQXMXOKJCAQMZVEXNWHVFVGWHXHXGXIVEZWHXJWILXJWIHWHXLVGWHXOWILSZWHXMXO
+      XPRWICVJVHZVIWKWIOVKVLVMVNWHXAXBWHXBXAWHWMVOBZXBXAVSZWHWIABZXHXTCVPZXQWIW
+      KAVQVRWHXRXTYATZXSYBWLABXRYDYCWIWKYCWJVPVTWIWLAAWAWBVHWCWDWEWFWG $.
+      $( [30-Jan-2015] $)
+  $}
+
+  ${
+    $d N a $.
+    $( If the universe is finite, then the size of the universe is not the
+       T-raising of a natural.  Theorem X.1.58 of [Rosser] p. 534. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    vfinncvntnn $p |- ( ( _V e. Fin /\ N e. Nn ) ->
+                 _T[fin] N =/= Nc[fin] _V ) $=
+      ( va cvv wcel cnnc wa ctfin cncfin wi c0 wceq vvex ncfinprop mpan2 cltfin
+      wne copk simpld 3ad2ant1 c1c cfin simprd syl necomd tfineq tfinnul syl6eq
+      ne0i neeq1d syl5ibr adantrd w3a wn ltfinirr clefin vfintle vfin1cltv cpw1
+      cv wrex tfinprop 3adant1 leltfintr syl3anc mp2and opkeq1 eleq1d syl5ibcom
+      1cex mtod df-ne sylibr 3expa expcom pm2.61ine ) CUADZAEDZFZAGZCHZPZIAJAJK
+      ZVPWAVQVPWAWBJVTPVPVTJVPCVTDZVTJPVPVTEDZWCVPCCDZWDWCFLCCMZNUBVTCUHUCUDWBV
+      SJVTWBVSJGJAJUEUFUGUIUJUKVRAJPZWAVPVQWGWAVPVQWGULZVSVTKZUMWAWHWIVTVTQZODZ
+      VPVQWKUMZWGVPWDWLVPWEWDLVPWEFWDWCWFRNZVTUNUCSWHVSVTQZODZWIWKWHVSTHZQUODZW
+      PVTQODZWOAUPVPVQWRWGUQSWHVSEDZWPEDZWDWQWRFWOIVQWGWSVPVQWGFWSBUSURVSDBAUTA
+      BVARVBVPVQWTWGVPTCDZWTVIVPXAFWTTWPDTCMRNSVPVQWDWGWMSVSWPVTVCVDVEWIWNWJOVS
+      VTVTVFVGVHVJVSVTVKVLVMVNVO $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d a x $.
+    $( If the universe is finite, then its size is not a T raising of an
+       element of ` Sp[fin] ` .  Corollary of theorem X.1.58 of [Rosser]
+       p. 534. 
+       (Contributed by SF, 27-Jan-2015.) $)
+    vfinncvntsp $p |- ( _V e. Fin ->
+                 -. Nc[fin] _V e. { a | E. x e. Sp[fin] a = _T[fin] x } ) $=
+      ( cvv cfin wcel cncfin cv ctfin wceq cspfin wrex cab wa wne cnnc csn cdif
+      wn c0 vfinspnn difss syl6ss sselda vfinncvntnn syldan necomd df-ne nrexdv
+      sylib ncfinex eqeq1 rexbidv elab sylnibr ) CDEZCFZAGZHZIZAJKZUPBGZURIZAJK
+      ZBLEUOUSAJUOUQJEZMZUPURNUSRVEURUPUOVDUQOEURUPNUOJOUQUOJOSPZQOTOVFUAUBUCUQ
+      UDUEUFUPURUGUIUHVCUTBUPCUJVAUPIVBUSAJVAUPURUKULUMUN $.
+      $( [27-Jan-2015] $)
+  $}
+
+  ${
+    $d n z x a b p g d $.
+    $( Lemma for ~ vfinspss .  Establish part of the inductive step. 
+       (Contributed by SF, 3-Feb-2015.) $)
+    vfinspsslem1 $p |- (
+      ( ( _V e. Fin /\ _T[fin] n e. Sp[fin] ) /\
+        ( n e. Sp[fin] /\ _S[fin] ( z , _T[fin] n ) ) ) ->
+      E. x e. Sp[fin] z = _T[fin] x ) $=
+      ( vp va vb vd vg cvv wcel cv cspfin wa c1c wceq cnnc wrex syl cpw1 wex c0
+      cfin ctfin wsfin cncfin cplc copk clefin simpl cdif vfinspnn difss syl6ss
+      wne csn sselda eldifsn simprbi vfintle syl3anc cltfin wn t1csfin1c adantr
+      ad2ant2r wi simpr sfinltfin ex syl2an con3d wb tfincl 1cex mpan2 ad2antrr
+      ncfinprop simpld lenltfin syl2anc df-sfin simp1bi ad2antll 3imtr4d tfinex
+      cpw mpd vex opklefing mp2an sylib df1c2 pw1eq tfinpw1 syl5eqelr syl5ibcom
+      ax-mp eleq2 cin cun eladdc wel wss ssun1 sseq2 mpbiri ssv biantrur bitr4i
+      sspw1 exbii anbi1i 19.41v excom pw1ex eqeq2d ceqsexv bitri 3bitri biimpac
+      eleq1 nnceleq syl22anc pwex simprr simprd eleq1d anbi12d spcev syl3anbrc
+      weq pweq sfintfin sfin112 tfin11 simprl eqeltrrd anbi2d syld syl5 sfineq1
+      spfinsfincl risset tfineq eqcomd reximi sylbi eqeq1 rexbidv imbi12d com12
+      expdimp exlimdv adantld adantrr rexlimdvva syl5bi rexlimdvw ) IUBJZCKZUCZ
+      LJZMZUUTLJZBKZUVAUDZMZMZNUEZUCZUVEDKZUFZOZDPQZUVEAKZUCZOZALQZUVHUVEUVJUGU
+      HJZUVNUVHUVAUVIUGUHJZUVSUUSUVDUVTUVBUVFUUSUVDMZUUSUUTPJZUUTUAUNZUVTUUSUVD
+      UIUUSLPUUTUUSLPUAUOZUJZPUKPUWDULUMUPZUWAUUTUWEJZUWCUUSLUWEUUTUKUPUWGUWBUW
+      CUUTPUAUQURRUUTUSUTVEUVHUVIUVAUGVAJZVBZUVJUVEUGVAJZVBZUVTUVSUVHUWJUWHUVCU
+      VJUVIUDZUVFUWJUWHVFUVGUUSUWLUVBVCVDUVDUVFVGUWLUVFMUWJUWHUVEUVAUVJUVIVHVIV
+      JVKUVHUVAPJZUVIPJZUVTUWIVLUVHUWBUWMUUSUVDUWBUVBUVFUWFVEUUTVMRUVHUWNNUVIJZ
+      UUSUWNUWOMZUVBUVGUUSNIJUWPVNNIVQVOVPZVRZUVAUVIVSVTUVHUVEPJZUVJPJZUVSUWKVL
+      UVFUWSUVCUVDUVFUWSUWMEKZSZUVEJUXAWFZUVAJMETUVEUVAEWAWBWCZUVHUWNUWTUWRUVIV
+      MRUVEUVJVSVTWDWGUVEIJUVJIJUVSUVNVLBWHUVIWEDUVEUVJIIWIWJWKUVHUVMUVRDPUVHUV
+      MISZSZUVLJZUVRUVHUXFUVJJUVMUXGUVHUXFNSZUVJNUXEOUXHUXFOWLNUXEWMWQUVHUWPUXH
+      UVJJUWQNUVIWNRWOUVJUVLUXFWRWPUXGUXAFKZWSUAOZUXFUXAUXIWTZOZMZFUVKQEUVEQUVH
+      UVRUXFUVEUVKEFXAUVHUXMUVREFUVEUVKUVHEBXBZUXMUVRVFFDXBUVHUXNMZUXLUVRUXJUXL
+      UXAGKZSZSZOZGTZUXOUVRUXLUXAUXFXCZUXTUXLUYAUXAUXKXCUXAUXIXDUXFUXKUXAXEXFUY
+      AHKZUXEXCZUXAUYBSZOZMZHTUYBUXQOZUYEMZGTZHTZUXTHUXAUXEEWHXJUYFUYIHUYFUYGGT
+      ZUYEMUYIUYCUYKUYEUYCUXPIXCZUYGMZGTUYKGUYBIHWHXJUYGUYMGUYLUYGUXPXGXHXKXIXL
+      UYGUYEGXMXIXKUYJUYHHTZGTUXTUYHHGXNUYNUXSGUYEUXSHUXQUXPGWHZXOZUYGUYDUXRUXA
+      UYBUXQWMXPXQXKXRXSWKUXOUXSUVRGUVHUXNUXSUVRUXNUXSMUXRUVEJZUVHUVRUXSUXNUYQU
+      XAUXRUVEYAXTUVHUYQUVEUXQUEZUCZOZUVRUVHUYQUYTUVHUYQMUWSUYSPJZUYQUXRUYSJZUY
+      TUVHUWSUYQUXDVDUVHVUAUYQUVHUYRPJZVUAUVHVUCUXQUYRJZUUSVUCVUDMZUVBUVGUUSUXQ
+      IJVUEUYPUXQIVQVOZVPZVRUYRVMRVDUVHUYQVGUVHVUBUYQUVHVUEVUBVUGUXQUYRWNRVDUXR
+      UVEUYSYBYCVIUYTUVHUVRUYTUVHUVRVFUVCUVDUYSUVAUDZMZMZUYSUVPOZALQZVFVUJUYRLJ
+      ZVULVUJUXPWFZUEZLJUYRVUOUDZVUMVUJUUTVUOLVUJUWBVUOPJZUVAVUOUCZOZUUTVUOOUUS
+      UVDUWBUVBVUHUWFVEUUSVUQUVBVUIUUSVUQVUNVUOJZUUSVUNIJVUQVUTMUXPUYOYDVUNIVQV
+      OZVRZVPVUJVUHUYSVURUDZVUSUVCUVDVUHYEVUJVUPVVCUUSVUPUVBVUIUUSVUCVUQUXBUYRJ
+      ZUXCVUOJZMZETZVUPUUSVUCVUDVUFVRVVBUUSVUDVUTVVGUUSVUCVUDVUFYFUUSVUQVUTVVAY
+      FVVFVUDVUTMEUXPUYOEGYKZVVDVUDVVEVUTVVHUXBUXQUYRUXAUXPWMYGVVHUXCVUNVUOUXAU
+      XPYLYGYHYIVTUYRVUOEWAYJVPZUYRVUOYMRVURUYSUVAYNVTUUTVUOYOUTUVCUVDVUHYPYQVV
+      IVUOUYRUUBVTVUMUVOUYROZALQVULAUYRLUUCVVJVUKALVVJUVPUYSUVOUYRUUDUUEUUFUUGR
+      UYTUVHVUJUVRVULUYTUVGVUIUVCUYTUVFVUHUVDUVEUYSUVAUUAYRYRUYTUVQVUKALUVEUYSU
+      VPUUHUUIUUJXFUUKYSYTUULUUMYTUUNUUOUUPUUQYSUURWG $.
+      $( [3-Feb-2015] $)
+  $}
+
+  ${
+    $d a t $.  $d a w $.  $d a x $.  $d a z $.  $d t x $.  $d w x $.  $d w z $.
+    $d x z $.  $d n w $.  $d n x $.  $d n z $.
+    $( If the universe is finite, then ` Sp[fin] ` is a subset of its ` T `
+       raisings and the cardinality of the universe.  Theorem X.1.59 of
+       [Rosser] p. 534. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    vfinspss $p |- ( _V e. Fin ->
+              Sp[fin] C_
+              ( { a | E. x e. Sp[fin] a = _T[fin] x } u. { Nc[fin] _V } ) ) $=
+      ( vw vz vn vt cvv wcel cv wceq cspfin wrex wsfin wa wi bitri cins3k cimak
+      csn vex cfin ctfin cab cncfin cun wal wral wss wo weq tfineq vfinspsslem1
+      eqeq2d cbvrexv expr anbi2d anbi1d sfineq2 imbi1d imbi12d mpbiri rexlimdva
+      eleq1 com12 syl5bi biimpa c1c 1cvsfin sfin111 tncveqnc1fin eqcomd rspcev
+      ncvspfin mpan syl eqeq1 rexbidv biimpd syl5 mpand exp3a adantr jaod imp3a
+      elun elab elsnc orbi12i 3imtr4g ssun1 sseli syl6 alrimiv ralrimiva c0 cxpk
+      anbi1i cssetk cins2k cnnc csik cpw csymdif cpw1 cdif cin cidk ccompl copk
+      ccnvk elimak df-rex elpw1 r19.41v bitr4i exbii rexcom4 snex opkeq1 eleq1d
+      ceqsexv eqtfinrelk rexbii abbi2i tfinrelkex spfinex pw1ex imakex eqeltrri
+      wex unex ssun2 ncfinex snid sselii spfininduct mp3an12 ) GUAHZCIZBIZAIZUB
+      ZJZAKLZBUCZGUDZSZUEZHZDIZYSMZNZUUJUUHHZOZDUFZCKUGZKUUHUHZYRUUOCKYRYSKHZNZ
+      UUNDUUSUULUUJUUEHZUUMUUSYSUUBJZAKLZYSUUFJZUIZUUKNUUJUUBJZAKLZUULUUTUUSUVD
+      UUKUVFUUSUVBUUKUVFOZUVCUVBYSEIZUBZJZEKLUUSUVGUVAUVJAEKAEUJUUBUVIYSUUAUVHU
+      KUMUNUUSUVJUVGEKUVJUUSUVHKHZNZUVGUVJUVLUVGOYRUVIKHZNZUVKNZUUJUVIMZUVFOZOU
+      VNUVKUVPUVFADEULUOUVJUVLUVOUVGUVQUVJUUSUVNUVKUVJUURUVMYRYSUVIKVCUPUQUVJUU
+      KUVPUVFYSUVIUUJURUSUTVAVDVBVEYRUVCUVGOUURYRUVCUUKUVFUVCUUKNUUJUUFMZYRUVFU
+      VCUUKUVRYSUUFUUJURVFYRVGUDZUUFMZUVRUVFVHUVTUVRNUVSUUJJZYRUVFUUFUVSUUJVIYR
+      UVSUUBJZAKLZUWAUVFOYRUVSUUFUBZJZUWCYRUWDUVSVJVKUUFKHUWEUWCVMUWBUWEAUUFKUU
+      AUUFJUUBUWDUVSUUAUUFUKUMVLVNVOUWAUWCUVFUWAUWCUVFUWAUWBUVEAKUVSUUJUUBVPVQV
+      RVDVOVSVTVSWAWBWCWDUUIUVDUUKUUIYSUUEHZYSUUGHZUIUVDYSUUEUUGWEUWFUVBUWGUVCU
+      UDUVBBYSCTZBCUJUUCUVAAKYTYSUUBVPVQWFYSUUFUWHWGWHPWQUUDUVFBUUJDTBDUJUUCUVE
+      AKYTUUJUUBVPVQWFWIUUEUUHUUJUUEUUGWJWKWLWMWNUUHGHUUFUUHHUUPUUQUUEUUGWOSZSZ
+      UWIWPWRWSZWRXJQWTGWPWRXAWSZVGXBGWPWRQUWLXCVGXDZXDZXDZRXEXAQUWKXFUWNRQXFUW
+      ORXFWSXGQXCUWMRWSXEUWMRQXCUWNRXHUWJGWPXEUEZKXDZRZUUEGUUDBUWRYTUWRHZFIZUUA
+      SZJZUWTYTXIZUWPHZNZFYJZAKLZUUDUWSUXDFUWQLZUXGFUWPUWQYTBTZXKUXHUWTUWQHZUXD
+      NZFYJZUXGUXDFUWQXLUXLUXEAKLZFYJUXGUXKUXMFUXKUXBAKLZUXDNUXMUXJUXNUXDAUWTKX
+      MWQUXBUXDAKXNXOXPUXEAFKXQXOPPUXFUUCAKUXFUXAYTXIZUWPHZUUCUXDUXPFUXAUUAXRUX
+      BUXCUXOUWPUWTUXAYTXSXTYAUUAYTATUXIYBPYCPYDUWPUWQYEKYFYGYHYIUUFXRYKUUGUUHU
+      UFUUGUUEYLUUFGYMYNYOCDUUHGYPYQVO $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d X x y z $.
+    $( If the universe is finite, then ` Sp[fin] ` is closed under T-raising.
+       Theorem X.1.60 of [Rosser] p. 536. 
+       (Contributed by SF, 30-Jan-2015.) $)
+    vfinspclt $p |- ( ( _V e. Fin /\ X e. Sp[fin] ) ->
+               _T[fin] X e. Sp[fin] ) $=
+      ( vx vy vz cvv wcel cspfin wa cv ctfin c1c wceq tfineq eleq1d elab cssetk
+      cxpk cins2k cins3k cimak cfin cab cncfin wi wal wral tncveqnc1fin 1cspfin
+      wsfin eqeltrd ncfinex sylibr simprl sfintfin ad2antll spfinsfincl syl2anc
+      wss ex vex weq anbi1i 3imtr4g alrimiv ralrimiva c0 csn ccnvk cnnc csymdif
+      csik cpw cpw1 cdif cin cidk ccompl cuni1 wrex copk snex elimak eqtfinrelk
+      cun opkelcnvk bitri rexbii eluni1 risset 3bitr4i abbi2i tfinrelkex cnvkex
+      spfinex imakex uni1ex eqeltrri spfininduct mp3an1 sselda wb elabg adantl
+      mpbid ) EUAFZAGFZHABIZJZGFZBUBZFZAJZGFZXEGXJAXEEUCZXJFZCIZXJFZDIZXPUIZHZX
+      RXJFZUDZDUEZCGUFZGXJURZXEXNJZGFZXOXEYFKUCGUGUHUJXIYGBXNEUKXGXNLXHYFGXGXNM
+      NOULXEYCCGXEXPGFHZYBDYHXPJZGFZXSHZXRJZGFZXTYAYHYKYMYHYKHYJYLYIUIZYMYHYJXS
+      UMXSYNYHYJXRXPUNUOYIYLUPUQUSXQYJXSXIYJBXPCUTZBCVAXHYIGXGXPMNOVBXIYMBXRDUT
+      BDVAXHYLGXGXRMNOVCVDVEXJEFXOYDYEVFVGZVGZYPQPRZPVHSVIEQPVKRZKVLEQPSYSVJKVM
+      ZVMZVMZTVNVKSYRVOUUATSVOUUBTVORVPSVJYTTRVNYTTSVJUUATVQYQEQVNWDZVHZGTZVRZX
+      JEXIBUUFXGVGZUUEFZXPXHLZCGVSZXGUUFFXIUUHXPUUGVTUUDFZCGVSUUJCUUDGUUGXGWAZW
+      BUUKUUICGUUKUUGXPVTUUCFUUIXPUUGUUCYOUULWEXGXPBUTZYOWCWFWGWFXGUUEUUMWHCXHG
+      WIWJWKUUEUUDGUUCWLWMWNWOWPWQCDXJEWRWSUQWTXFXKXMXAXEXIXMBAGXGALXHXLGXGAMNX
+      BXCXD $.
+      $( [30-Jan-2015] $)
+  $}
+
+  ${
+    $d a x $.
+    $( If the universe is finite, then ` Sp[fin] ` is equal to its T raisings
+       and the cardinality of the universe.  Theorem X.1.61 of [Rosser]
+       p. 536. 
+       (Contributed by SF, 29-Jan-2015.) $)
+    vfinspeqtncv $p |- ( _V e. Fin ->
+                  Sp[fin] = ( { a | E. x e. Sp[fin] a = _T[fin] x } u.
+                  { Nc[fin] _V } ) ) $=
+      ( cvv cfin wcel cspfin cv ctfin wceq wrex cab cncfin csn cun vfinspss wss
+      wa wi vfinspclt eleq1 biimprd com12 syl rexlimdva abssdv ncvspfin ncfinex
+      snss mpbi jctir unss sylib eqssd ) CDEZFBGZAGZHZIZAFJZBKZCLZMZNZABOUNUTFP
+      ZVBFPZQVCFPUNVDVEUNUSBFUNURUOFEZAFUNUPFEQUQFEZURVFRUPSURVGVFURVFVGUOUQFTU
+      AUBUCUDUEVAFEVEUFVAFCUGUHUIUJUTVBFUKULUM $.
+      $( [29-Jan-2015] $)
+  $}
+
+  ${
+    $d a x t $.
+    $( If the universe is finite, then the size of ` Sp[fin] ` is equal to the
+       successor of its T-raising.  Theorem X.1.62 of [Rosser] p. 536. 
+       (Contributed by SF, 20-Jan-2015.) $)
+    vfinncsp $p |- ( _V e. Fin ->
+       Nc[fin] Sp[fin] = ( _T[fin] Nc[fin] Sp[fin] +c 1c ) ) $=
+      ( va vx cvv wcel cspfin cncfin wceq wrex csn c1c cin cssetk cins2k cins3k
+      vt cxpk cnnc cpw1 cimak wa cfin cv ctfin cab cun vfinspeqtncv ncfineq syl
+      cplc c0 vfinncvntsp disjsn sylibr ccnvk csik cpw csymdif cdif cidk ccompl
+      wn copk wex elimak df-rex elpw1 anbi1i r19.41v bitr4i exbii rexcom4 bitri
+      vex snex opkeq1 eleq1d ceqsexv eqtfinrelk rexbii tfinrelkex spfinex pw1ex
+      abbi2i imakex eqeltrri ncfindi mp3an2 mpanl2 mpdan ncfinprop mpan2 simpld
+      tfincl simprd wss vfinspnn syl6ss tfinnn syl3anc nnceleq syl22anc ncfinex
+      difss ncfinsn addceq12d 3eqtrd ) CUADZEFZAUBZBUBZUCGZBEHZAUDZCFZIZUEZFZXM
+      FZXOFZUIZXHUCZJUIXGEXPGXHXQGBAUFEXPUGUHXGXMXOKUJGZXQXTGZXGXNXMDVAYBBAUKXM
+      XNULUMXGXMCDZYBYCUJIZIZYEPLMZLUNNQCPLUOMZJUPCPLNYHUQJRZRZRZSURUONYGKYJSNK
+      YKSKMUSNUQYISMURYISNUQYJSUTYFCPURUEZERZSZXMCXLAYNXIYNDZOUBZXJIZGZYPXIVBZY
+      LDZTZOVCZBEHZXLYOYTOYMHZUUCOYLYMXIAVMZVDUUDYPYMDZYTTZOVCZUUCYTOYMVEUUHUUA
+      BEHZOVCUUCUUGUUIOUUGYRBEHZYTTUUIUUFUUJYTBYPEVFVGYRYTBEVHVIVJUUABOEVKVIVLV
+      LUUBXKBEUUBYQXIVBZYLDZXKYTUULOYQXJVNYRYSUUKYLYPYQXIVOVPVQXJXIBVMUUEVRVLVS
+      VLWCYLYMVTEWAWBWDWEZXGYDTXOCDYBYCXNVNXMXOCCWFWGWHWIXGXRYAXSJXGXRQDZYAQDZX
+      MXRDZXMYADZXRYAGXGUUNUUPXGYDUUNUUPTUUMXMCWJWKZWLXGXHQDZUUOXGUUSEXHDZXGECD
+      UUSUUTTWAECWJWKZWLZXHWMUHXGUUNUUPUURWNXGUUSEQWOUUTUUQUVBXGEQYEURQWPQYEXCW
+      QXGUUSUUTUVAWNBEXHAWRWSXMXRYAWTXAXGXNCDXSJGCXBXNCXDWKXEXF $.
+      $( [20-Jan-2015] $)
+  $}
+
+  ${
+    $( The universe is infinite.  Theorem X.1.63 of [Rosser] p. 536. 
+       (Contributed by SF, 20-Jan-2015.) $)
+    vinf $p |- -. _V e. Fin $=
+      ( cvv cfin wcel cspfin cncfin noel cevenfin coddfin cin cnnc wne vfinncsp
+      c0 wa adantr adantl eqnetrrd syl2anc eqeltrd ex cun csn spfinex ncfinprop
+      cdif mpan2 ne0i anim2i syl eldifsn sylibr evenoddnnnul syl6eleqr wo ctfin
+      c1c cplc wceq eventfin evennnul sucevenodd ancld oddtfin sucoddeven ancrd
+      oddnnul jaod elun elin 3imtr4g mpd evenodddisj syl6eleq mto ) ABCZDEZMCVP
+      FVOVPGHIZMVOVPGHUAZCZVPVQCZVOVPJMUBUEZVRVOVPJCZVPMKZNZVPWACVOWBDVPCZNZWDV
+      ODACWFUCDAUDUFWEWCWBVPDUGUHUIVPJMUJUKULUMVOVPGCZVPHCZUNWGWHNZVSVTVOWGWIWH
+      VOWGWHVOWGWHVOWGNZVPVPUOZUPUQZHVOVPWLURZWGLOZWJWKGCZWLMKZWLHCWGWOVOVPUSPW
+      JVPWLMWNWGWCVOVPUTPQWKVARSTVBVOWHWGVOWHWGVOWHNZVPWLGVOWMWHLOZWQWKHCZWPWLG
+      CWHWSVOVPVCPWQVPWLMWRWHWCVOVPVFPQWKVDRSTVEVGVPGHVHVPGHVIVJVKVLVMVN $.
+      $( [20-Jan-2015] $)
+  $}
+
+  ${
+    $d n m x a $.
+    $( The empty class is not a natural.  Theorem X.1.65 of [Rosser]
+       p. 536. 
+       (Contributed by SF, 20-Jan-2015.) $)
+    nulnnn $p |- -. (/) e. Nn $=
+      ( vx vn vm va c0 cnnc wcel cv wceq wne c0c cab csn ccompl cvv wn neeq1 wa
+      ne0i ex wrex c1c cplc complab df-sn compleqi df-ne abbii 3eqtr4ri complex
+      snex eqeltri nulel0c ax-mp wel wex n0 cfin vinf cuni elunii ancoms df-fin
+      syl6eleqr mtoi eleq1 notbid syl5ibrcom necon2ad compleqb necon3bii complV
+      imp sylib neeq2i vex elcompl cun elsuci syl sylan2b adantl exlimdv syl5bi
+      wi mpd finds neneqd nrex risset mtbir ) EFGAHZEIZAFUAWMAFWLFGWLEBHZEJZKEJ
+      ZCHZEJZWQUBUCZEJZWLEJBCWLWOBLZEMZNZOWNEIZBLZNXDPZBLXCXAXDBUDXBXEBEUEUFWOX
+      FBWNEUGUHUIXBEUKUJULWNKEQWNWQEQWNWSEQWNWLEQEKGWPUMKESUNWRDCUOZDUPWQFGZWTD
+      WQUQXHXGWTDXHXGWTXHXGRZDHZNZEJZWTXIXKONZJZXLXIXJOJZXNXHXGXOXHXGXJOXHXGPXJ
+      OIZOWQGZPXHXQOURGZUSXHXQXRXHXQROFUTZURXQXHOXSGOWQFVAVBVCVDTVEXPXGXQXJOWQV
+      FVGVHVIVMXJOXKXMXJOVJVKVNXMEXKVLVOVNXLWLXKGZAUPXIWTAXKUQXIXTWTAXGXTWTWEXH
+      XGXTWTXTXGADUOPZWTWLXJAVPZVQXGYARXJWLMVRZWSGWTXJWQWLYBVSWSYCSVTWATWBWCWDW
+      FTWCWDWGWHWIAEFWJWK $.
+  $}
+
+  $( The successor operation is one-to-one over the finite cardinals.  Theorem
+     X.1.66 of [Rosser] p. 537. 
+     (Contributed by SF, 20-Jan-2015.) $)
+  peano4 $p |- ( ( M e. Nn /\ N e. Nn /\ ( M +c 1c ) = ( N +c 1c ) ) ->
+     M = N ) $=
+    ( cnnc wcel c1c cplc wceq w3a wa c0 3simpa simp3 peano2 nulnnn eleq1 mtbiri
+    wne necon2ai syl 3ad2ant1 prepeano4 syl12anc ) ACDZBCDZAEFZBEFGZHUCUDIUFUEJ
+    QZABGUCUDUFKUCUDUFLUCUDUGUFUCUECDZUGAMUHUEJUEJGUHJCDNUEJCOPRSTABUAUB $.
+    $( [20-Jan-2015] $)
+
+  $( Successor cancellation law for finite cardinals. 
+     (Contributed by SF, 3-Feb-2015.) $)
+  suc11nnc $p |- ( ( M e. Nn /\ N e. Nn ) ->
+    ( ( M +c 1c ) = ( N +c 1c ) <-> M = N ) ) $=
+    ( cnnc wcel wa c1c cplc wceq peano4 3expia addceq1 impbid1 ) ACDZBCDZEAFGBF
+    GHZABHZMNOPABIJABFKL $.
+    $( [3-Feb-2015] $)
+
+  $( Cancellation law for natural addition. 
+     (Contributed by SF, 3-Feb-2015.) $)
+  addccan1 $p |- ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) ->
+      ( ( M +c P ) = ( N +c P ) <-> M = N ) ) $=
+    ( cnnc wcel w3a cplc c0 wne wceq wb wa nncaddccl nulnnn mtbiri necon2ai syl
+    eleq1 3adant2 preaddccan1 mpdan ) BDEZCDEZADEZFBAGZHIZUECAGJBCJKUBUDUFUCUBU
+    DLUEDEZUFBAMUGUEHUEHJUGHDENUEHDROPQSABCTUA $.
+    $( [3-Feb-2015] $)
+
+  $( Cancellation law for natural addition. 
+     (Contributed by SF, 3-Feb-2015.) $)
+  addccan2 $p |- ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) ->
+      ( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
+    ( cnnc wcel w3a cplc c0 wne wceq wb wa nncaddccl nulnnn mtbiri necon2ai syl
+    eleq1 3adant3 preaddccan2 mpdan ) BDEZCDEZADEZFBCGZHIZUEBAGJCAJKUBUCUFUDUBU
+    CLUEDEZUFBCMUGUEHUEHJUGHDENUEHDROPQSABCTUA $.
+    $( [3-Feb-2015] $)
+
