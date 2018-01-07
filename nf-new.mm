@@ -10819,7 +10819,6 @@ $)
   $}
 
 
-
   $( A rearrangement of intersection.  (Contributed by NM, 21-Apr-2001.) $)
   in12 $p |- ( A i^i ( B i^i C ) ) = ( B i^i ( A i^i C ) ) $=
     ( cin incom ineq1i inass 3eqtr3i ) ABDZCDBADZCDABCDDBACDDIJCABEFABCGBACGH
@@ -11387,44 +11386,43 @@ $)
   $}
 
 
-  $( Symmetric difference commutes. 
-     (Contributed by SF, 11-Jan-2015.) $)
+  $( Symmetric difference commutes.  (Contributed by SF, 11-Jan-2015.) $)
   symdifcom $p |- ( A (+) B ) = ( B (+) A ) $=
     ( cdif cun csymdif uncom df-symdif 3eqtr4i ) ABCZBACZDJIDABEBAEIJFABGBAGH
     $.
     $( [11-Jan-2015] $)
 
-  $( Two classes are equal iff their complements are equal. 
-     (Contributed by SF, 11-Jan-2015.) $)
+  $( Two classes are equal iff their complements are equal.  (Contributed by
+     SF, 11-Jan-2015.) $)
   compleqb $p |- ( A = B <-> ~ A = ~ B ) $=
     ( wceq ccompl compleq dblcompl 3eqtr3g impbii ) ABCADZBDZCZABEKIDJDABIJEAFB
     FGH $.
     $( [11-Jan-2015] $)
 
 
-  $( Definition of intersection in terms of union. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+  $( Definition of intersection in terms of union.  (Contributed by ?who?,
+     12-Jan-2015.) $)
   dfin5 $p |- ( A i^i B ) = ~ ( ~ A u. ~ B ) $=
     ( ccompl cnin cun cin dblcompl nineq12i compleqi df-un df-in 3eqtr4ri ) ACZ
     CZBCZCZDZCABDZCMOEZCABFQRNAPBAGBGHISQMOJIABKL $.
     $( [12-Jan-2015] $)
 
-  $( Definition of union in terms of intersection. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+  $( Definition of union in terms of intersection.  (Contributed by ?who?,
+     12-Jan-2015.) $)
   dfun4 $p |- ( A u. B ) = ~ ( ~ A i^i ~ B ) $=
     ( ccompl cin cun dfin5 compleqi dblcompl uneq12i 3eqtrri ) ACZBCZDZCKCZLCZE
     ZCZCPABEMQKLFGPHNAOBAHBHIJ $.
     $( [12-Jan-2015] $)
 
-  $( Intersection of two complements is equal to the complement of a union. 
+  $( Intersection of two complements is equal to the complement of a union.
      (Contributed by ?who?, 12-Jan-2015.) $)
   iunin $p |- ~ ( A u. B ) = ( ~ A i^i ~ B ) $=
     ( ccompl cin cun dfin5 dblcompl uneq12i compleqi eqtr2i ) ACZBCZDKCZLCZEZCA
     BEZCKLFOPMANBAGBGHIJ $.
     $( [12-Jan-2015] $)
 
-  $( Complement of intersection is equal to union of complements. 
-     (Contributed by ?who?, 12-Jan-2015.) $)
+  $( Complement of intersection is equal to union of complements.  (Contributed
+     by ?who?, 12-Jan-2015.) $)
   iinun $p |- ~ ( A i^i B ) = ( ~ A u. ~ B ) $=
     ( ccompl cun cin dfun4 dblcompl ineq12i compleqi eqtr2i ) ACZBCZDKCZLCZEZCA
     BEZCKLFOPMANBAGBGHIJ $.
@@ -19448,7 +19446,6 @@ $)
       UCBQUDUEUATABCLMNTUEORPS $.
 
 
-
     $( Theorem 8.22 in [Quine] p. 57.  This theorem is the result if there
        isn't exactly one ` x ` that satisfies ` ph ` .  (Contributed by Andrew
        Salmon, 11-Jul-2011.) $)
@@ -19529,8 +19526,7 @@ $)
     ( weu cio wsbc cab wcel iota4 df-sbc sylib ) ABCABABDZEKABFGABHABKIJ $.
 
 
-  $( Membership law for descriptions. 
-     (Contributed by ?who?, 21-Aug-2011.) $)
+  $( Membership law for descriptions.  (Contributed by ?who?, 21-Aug-2011.) $)
   reiotacl2 $p |- ( E! x e. A ph
                   -> ( iota x ( x e. A /\ ph ) ) e. { x e. A | ph } ) $=
     ( wreu cv wcel wa cio cab crab weu df-reu iotacl sylbi df-rab syl6eleqr ) A
@@ -19539,8 +19535,8 @@ $)
 
   ${
     $d x A $.
-    $( Membership law for descriptions. 
-       (Contributed by ?who?, 21-Aug-2011.) $)
+    $( Membership law for descriptions.  (Contributed by ?who?,
+       21-Aug-2011.) $)
     reiotacl $p |- ( E! x e. A ph
                     -> ( iota x ( x e. A /\ ph ) ) e. A ) $=
       ( wreu crab cv wcel wa cio wss ssrab2 a1i reiotacl2 sseldd ) ABCDZABCEZCB
@@ -19589,9 +19585,8 @@ $)
   $}
 
   ${
-    $d x y A $. $d x y B $. $d x y ps $.
+    $d x y A $.  $d x y B $.  $d x y ps $.
     reiota2.1 $e |- ( x = B -> ( ph <-> ps ) ) $.
-
     $( A condition allowing us to represent "the unique element in ` A ` such
        that ` ph ` " with a class expression ` B ` .  (Contributed by Scott
        Fenton, 7-Jan-2018.) $)
@@ -19642,7 +19637,6 @@ $)
       VOSVOSTUQTURUSPUT $.
       $( [29-Jan-2015] $)
   $}
-
 
 
 $(
@@ -20537,7 +20531,7 @@ $)
   $}
 
   ${
-    $d m n p x y z w $.  
+    $d m n p x y z w $.
     $( Define the less than relationship for finite cardinals.  Definition from
        [Rosser] p. 527. $)
     df-ltfin $a |- <[fin] = { x | E. m E. n ( x = << m , n >> /\
@@ -20597,7 +20591,7 @@ $)
 
   ${
     $d A x y z w $.  $d B x y z w $.
-    $( Kuratowski ordered pair membership in finite less than or equal to. 
+    $( Kuratowski ordered pair membership in finite less than or equal to.
        (Contributed by SF, 18-Jan-2015.) $)
     opklefing $p |- ( ( A e. V /\ B e. W ) ->
        ( << A , B >> e. <_[fin] <-> E. x e. Nn B = ( A +c x ) ) ) $=
@@ -20611,8 +20605,8 @@ $)
     $d A w $.  $d A x $.  $d A y $.  $d A z $.  $d B w $.  $d B x $.  $d B y $.
     $d B z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
 
-    $( Kuratowski ordered pair membership in finite less than. 
-       (Contributed by SF, 27-Jan-2015.) $)
+    $( Kuratowski ordered pair membership in finite less than.  (Contributed by
+       SF, 27-Jan-2015.) $)
     opkltfing $p |- ( ( A e. V /\ B e. W ) ->
       ( << A , B >> e. <[fin] <->
         ( A =/= (/) /\ E. x e. Nn B = ( ( A +c x ) +c 1c ) ) ) ) $=
@@ -20626,8 +20620,8 @@ $)
 
   ${
     $d A n $.  $d N n $.
-    $( Cardinal sum always yields a larger set. 
-       (Contributed by SF, 27-Jan-2015.) $)
+    $( Cardinal sum always yields a larger set.  (Contributed by SF,
+       27-Jan-2015.) $)
     lefinaddc $p |- ( ( A e. V /\ N e. Nn ) ->
                << A , ( A +c N ) >> e. <_[fin] ) $=
       ( vn wcel cnnc wa cplc copk clefin cv wceq wrex eqid addceq2 eqeq2d mpan2
@@ -20640,8 +20634,7 @@ $)
   ${
     $d M a b x $.  $d N a b x $.
     $( Assuming a non-null successor, cardinal successor is one-to-one.
-       Theorem X.1.19 of [Rosser] p. 526. 
-       (Contributed by SF, 18-Jan-2015.) $)
+       Theorem X.1.19 of [Rosser] p. 526.  (Contributed by SF, 18-Jan-2015.) $)
     prepeano4 $p |- ( ( ( M e. Nn /\ N e. Nn ) /\
      ( ( M +c 1c ) = ( N +c 1c ) /\ ( M +c 1c ) =/= (/) ) ) -> M = N ) $=
       ( va vb vx cnnc wcel wa c1c cplc wceq c0 wne cv wex csn wrex vex syl5bi
@@ -20658,8 +20651,7 @@ $)
   ${
     $d A a b c $.
     $( Cardinal addition with the empty set.  Theorem X.1.20, corollary 1 of
-       [Rosser] p. 526. 
-       (Contributed by SF, 18-Jan-2015.) $)
+       [Rosser] p. 526.  (Contributed by SF, 18-Jan-2015.) $)
     addcnul1 $p |- ( A +c (/) ) = (/) $=
       ( va vb vc c0 cplc wceq cv wcel wn eq0 cin cun wrex rex0 a1i eladdc mtbir
       wa nrex mpgbir ) AEFZEGBHZUBIZJBBUBKUDCHZDHZLEGUCUEUFMGSZDENZCANUHCAUHJUE
@@ -20668,8 +20660,7 @@ $)
   $}
 
   $( If cardinal addition is non-empty, then both addends are non-empty.
-     Theorem X.1.20 of [Rosser] p. 526. 
-     (Contributed by SF, 18-Jan-2015.) $)
+     Theorem X.1.20 of [Rosser] p. 526.  (Contributed by SF, 18-Jan-2015.) $)
   addcnnul $p |- ( ( A +c B ) =/= (/) -> ( A =/= (/) /\ B =/= (/) ) ) $=
     ( cplc wne wceq addceq1 addccom addcnul1 eqtri syl6eq necon3i addceq2 jca
     c0 ) ABCZNDANDBNDANONANEONBCZNANBFPBNCNNBGBHIJKBNONBNEOANCNBNALAHJKM $.
@@ -20677,7 +20668,7 @@ $)
 
   ${
     $d m n p x t $.
-    $( Lemma for ~ preaddccan1 .  Establish stratification for induction. 
+    $( Lemma for ~ preaddccan1 .  Establish stratification for induction.
        (Contributed by SF, 24-Jan-2015.) $)
     preaddccan1lem1 $p |- { p | ( ( m e. Nn /\ n e. Nn ) -> ( ( (
            m +c p ) =/= (/) /\ ( m +c p ) = ( n +c p ) ) -> m = n ) ) } e. _V
@@ -20709,7 +20700,7 @@ $)
   ${
     $d k m $.  $d k n $.  $d k p $.  $d M m $.  $d m n $.  $d m p $.  $d N m $.
     $d N n $.  $d n p $.  $d P m $.  $d P n $.  $d P p $.
-    $( Cancellation law for natural addition with a non-null condition. 
+    $( Cancellation law for natural addition with a non-null condition.
        (Contributed by SF, 24-Jan-2015.) $)
     preaddccan1 $p |- ( ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) /\
     ( M +c P ) =/= (/) ) -> ( ( M +c P ) = ( N +c P ) <-> M = N ) ) $=
@@ -20736,7 +20727,7 @@ $)
       $( [24-Jan-2015] $)
   $}
 
-  $( Cancellation law for natural addition with a non-null condition. 
+  $( Cancellation law for natural addition with a non-null condition.
      (Contributed by SF, 29-Jan-2015.) $)
   preaddccan2 $p |- ( ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) /\
   ( M +c N ) =/= (/) ) -> ( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
@@ -20747,7 +20738,7 @@ $)
 
   ${
     $d A x $.
-    $( If the empty set is a finite cardinal, then it is a maximal element. 
+    $( If the empty set is a finite cardinal, then it is a maximal element.
        (Contributed by SF, 19-Jan-2015.) $)
     nulge $p |- ( ( (/) e. Nn /\ A e. V ) -> << A , (/) >> e. <_[fin] ) $=
       ( vx c0 cnnc wcel wa copk clefin cv cplc wceq wrex addcnul1 eqcomi eqeq2d
@@ -20760,8 +20751,8 @@ $)
 
   ${
     $d A x $.
-    $( Irreflexive law for finite less than. 
-       (Contributed by SF, 29-Jan-2015.) $)
+    $( Irreflexive law for finite less than.  (Contributed by SF,
+       29-Jan-2015.) $)
     ltfinirr $p |- ( A e. Nn -> -. << A , A >> e. <[fin] ) $=
       ( vx cnnc wcel copk cltfin c0 wne cv cplc c1c wceq wa wn wi 0cnsuc necomi
       wrex c0c wb df-ne addcid1 eqcomi addcass eqeq12i simpll peano1 a1i peano2
@@ -20776,7 +20767,7 @@ $)
 
   ${
     $d A x y z $.  $d B x y z $.  $d C x y z $.
-    $( Transitivity law for finite less than and less than or equal. 
+    $( Transitivity law for finite less than and less than or equal.
        (Contributed by SF, 2-Feb-2015.) $)
     leltfintr $p |- ( ( A e. Nn /\ B e. Nn /\ C e. Nn ) ->
        ( ( << A , B >> e. <_[fin] /\ << B , C >> e. <[fin] ) ->
@@ -20798,8 +20789,8 @@ $)
 
   ${
     $d A x y z $.  $d B x y z $.  $d C x y z $.
-    $( Transitivity law for finite less than. 
-       (Contributed by SF, 29-Jan-2015.) $)
+    $( Transitivity law for finite less than.  (Contributed by SF,
+       29-Jan-2015.) $)
     ltfintr $p |- ( ( A e. Nn /\ B e. Nn /\ C e. Nn ) ->
        ( ( << A , B >> e. <[fin] /\ << B , C >> e. <[fin] ) ->
          << A , C >> e. <[fin] ) ) $=
@@ -20818,8 +20809,7 @@ $)
       $( [29-Jan-2015] $)
   $}
 
-  $( Asymmetry law for finite less than. 
-     (Contributed by SF, 29-Jan-2015.) $)
+  $( Asymmetry law for finite less than.  (Contributed by SF, 29-Jan-2015.) $)
   ltfinasym $p |- ( ( A e. Nn /\ B e. Nn ) ->
    ( << A , B >> e. <[fin] -> -. << B , A >> e. <[fin] ) ) $=
     ( cnnc wcel wa copk cltfin wn ltfinirr ad2antrr wi ltfintr 3anidm13 expdimp
@@ -20827,7 +20817,7 @@ $)
     P $.
     $( [29-Jan-2015] $)
 
-  $( Cardinal zero is a minimal element for finite less than or equal. 
+  $( Cardinal zero is a minimal element for finite less than or equal.
      (Contributed by SF, 29-Jan-2015.) $)
   0cminle $p |- ( A e. Nn -> << 0c , A >> e. <_[fin] ) $=
     ( cnnc wcel c0c copk cplc clefin addcid2 opkeq2i peano1 lefinaddc syl5eqelr
@@ -20836,8 +20826,8 @@ $)
 
   ${
     $d A x $.
-    $( One plus a finite cardinal is strictly greater. 
-       (Contributed by SF, 29-Jan-2015.) $)
+    $( One plus a finite cardinal is strictly greater.  (Contributed by SF,
+       29-Jan-2015.) $)
     ltfinp1 $p |- ( ( A e. V /\ A =/= (/) ) ->
        << A , ( A +c 1c ) >> e. <[fin] ) $=
       ( vx wcel c0 wne wa c1c cplc copk cltfin wceq cnnc wrex simpr c0c addcid1
@@ -20851,8 +20841,8 @@ $)
 
   ${
     $d A x y z $.  $d B x y z $.
-    $( Transfer from less than or equal to less than. 
-       (Contributed by SF, 29-Jan-2015.) $)
+    $( Transfer from less than or equal to less than.  (Contributed by SF,
+       29-Jan-2015.) $)
     lefinlteq $p |- ( ( A e. V /\ B e. W /\ A =/= (/) ) ->
        ( << A , B >> e. <_[fin] <-> ( << A , B >> e. <[fin] \/ A = B ) ) ) $=
       ( vx vy wcel cv cplc wceq cnnc wrex c1c wo wb c0c addceq2 eqeq1 rexbidv
@@ -20878,8 +20868,7 @@ $)
     $d d y $.  $d d z $.  $d t w $.  $d t x $.  $d t y $.  $d t z $.  $d w x $.
     $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
 
-    $( Finite less than is stratified. 
-       (Contributed by SF, 29-Jan-2015.) $)
+    $( Finite less than is stratified.  (Contributed by SF, 29-Jan-2015.) $)
     ltfinex $p |- <[fin] e. _V $=
       ( vx vt vc va vb vd cssetk csik cpw1 csn copk wceq wrex wa wex opksnelsik
       wcel snex 3bitri sikex vy vz cltfin cvv cxpk cins3k cins2k cin c1c ccompl
@@ -20972,7 +20961,7 @@ $)
 
   ${
     $d m n t $.
-    $( Lemma for ~ ltfintri .  Establish stratification for induction. 
+    $( Lemma for ~ ltfintri .  Establish stratification for induction.
        (Contributed by SF, 29-Jan-2015.) $)
     ltfintrilem1 $p |- { m | ( n e. Nn -> ( m =/= (/) ->
      ( << m , n >> e. <[fin] \/ m = n \/ << n , m >> e. <[fin] ) )
@@ -20994,8 +20983,8 @@ $)
 
   ${
     $d M m n k p $.  $d N m n k p $.
-    $( Trichotomy law for finite less than. 
-       (Contributed by SF, 29-Jan-2015.) $)
+    $( Trichotomy law for finite less than.  (Contributed by SF,
+       29-Jan-2015.) $)
     ltfintri $p |- ( ( M e. Nn /\ N e. Nn /\
               M =/= (/) ) ->
        ( << M , N >> e. <[fin] \/ M = N \/ << N , M >> e. <[fin] ) ) $=
@@ -21032,8 +21021,7 @@ $)
 
   ${
     $d A x $.
-    $( Less than or equal to is reflexive. 
-       (Contributed by SF, 2-Feb-2015.) $)
+    $( Less than or equal to is reflexive.  (Contributed by SF, 2-Feb-2015.) $)
     lefinrflx $p |- ( A e. V -> << A , A >> e. <_[fin] ) $=
       ( vx wcel copk clefin cv cplc wceq cnnc c0c peano1 addcid1 eqcomi addceq2
       wrex eqeq2d rspcev mp2an wb opklefing anidms mpbiri ) ABDZAAEFDZAACGZHZI
@@ -21043,8 +21031,8 @@ $)
 
   ${
     $d A x y $.  $d B x y $.
-    $( Less than implies less than or equal. 
-       (Contributed by SF, 2-Feb-2015.) $)
+    $( Less than implies less than or equal.  (Contributed by SF,
+       2-Feb-2015.) $)
     ltlefin $p |- ( ( A e. V /\ B e. W ) ->
              ( << A , B >> e. <[fin] -> << A , B >> e. <_[fin] ) ) $=
       ( vx vy wcel wa c0 wne cv cplc c1c wceq cnnc wrex copk cltfin clefin wi
@@ -21057,8 +21045,8 @@ $)
 
   ${
     $d A x $.  $d B x $.
-    $( Less than or equal is the same as negated less than. 
-       (Contributed by SF, 2-Feb-2015.) $)
+    $( Less than or equal is the same as negated less than.  (Contributed by
+       SF, 2-Feb-2015.) $)
     lenltfin $p |- ( ( A e. Nn /\ B e. Nn ) ->
        ( << A , B >> e. <_[fin] <-> -. << B , A >> e. <[fin] ) ) $=
       ( cnnc wcel wa copk clefin cltfin wn ltfinirr adantr wi leltfintr expdimp
@@ -21079,9 +21067,8 @@ $)
     $d a x $.  $d B a $.  $d B b $.  $d b c $.  $d b d $.  $d b k $.  $d b m $.
     $d b n $.  $d b t $.  $d b x $.  $d c d $.  $d c k $.  $d c m $.  $d c x $.
     $d d k $.  $d d m $.  $d d x $.  $d k m $.  $d k x $.  $d m n $.  $d m t $.
-    $( A subset of a finite set is itself finite.  Theorem X.1.21 of
-       [Rosser] p. 527. 
-       (Contributed by SF, 19-Jan-2015.) $)
+    $( A subset of a finite set is itself finite.  Theorem X.1.21 of [Rosser]
+       p. 527.  (Contributed by SF, 19-Jan-2015.) $)
     ssfin $p |- ( ( A e. V /\ B e. Fin /\ A C_ B ) -> A e. Fin ) $=
       ( va vb vn vm vt vx wcel cfin wss cv wi wceq wa wal cssetk cvv wex imbi2d
       vd vk vc sseq1 eleq1 imbi12d sseq2 imbi1d wel cnnc wrex elfin c0 c1c cplc
@@ -21142,8 +21129,8 @@ $)
   ${
     $d A x y $.
     $( If the universe is finite, then there is a unique natural containing any
-       set.  Theorem X.1.22 of [Rosser] p. 527. 
-       (Contributed by SF, 19-Jan-2015.) $)
+       set.  Theorem X.1.22 of [Rosser] p. 527.  (Contributed by SF,
+       19-Jan-2015.) $)
     vfinnc $p |- ( ( A e. V /\ _V e. Fin ) -> E! x e. Nn A e. x ) $=
       ( vy wcel cvv cfin wa cv cnnc wrex weq wi wral wss ssv ssfin mp3an3 elfin
       wreu sylib nnceleq ex rgen2a a1i eleq2 reu4 sylanbrc ) BCEZFGEZHZBAIZEZAJ
@@ -21154,8 +21141,8 @@ $)
 
   ${
     $d A x $.
-    $( The finite cardinality of a set exists. 
-       (Contributed by SF, 27-Jan-2015.) $)
+    $( The finite cardinality of a set exists.  (Contributed by SF,
+       27-Jan-2015.) $)
     ncfinex $p |- Nc[fin] A e. _V $=
       ( vx cncfin cv cnnc wcel wa cio cvv df-ncfin iotaex eqeltri ) ACBDZEFAMFG
       ZBHIBAJNBKL $.
@@ -21164,8 +21151,8 @@ $)
 
   ${
     $d A x $.  $d B x $.
-    $( Equality theorem for finite cardinality. 
-       (Contributed by SF, 20-Jan-2015.) $)
+    $( Equality theorem for finite cardinality.  (Contributed by SF,
+       20-Jan-2015.) $)
     ncfineq $p |- ( A = B -> Nc[fin] A = Nc[fin] B ) $=
       ( vx wceq cv cnnc wcel cio cncfin eleq1 anbi2d iotabidv df-ncfin 3eqtr4g
       wa ) ABDZCEZFGZAQGZOZCHRBQGZOZCHAIBIPTUBCPSUARABQJKLCAMCBMN $.
@@ -21174,8 +21161,7 @@ $)
 
   ${
     $d A x $.
-    $( Properties of finite cardinal number.  Theorem X.1.23 of [Rosser]
-       p. 527 
+    $( Properties of finite cardinal number.  Theorem X.1.23 of [Rosser] p. 527
        (Contributed by SF, 20-Jan-2015.) $)
     ncfinprop $p |- ( ( _V e. Fin /\ A e. V ) ->
                ( Nc[fin] A e. Nn /\ A e. Nc[fin] A ) ) $=
@@ -21187,8 +21173,8 @@ $)
   $}
 
   ${
-    $( Distribution law for finite cardinality. 
-       (Contributed by SF, 30-Jan-2015.) $)
+    $( Distribution law for finite cardinality.  (Contributed by SF,
+       30-Jan-2015.) $)
     ncfindi $p |- ( ( ( _V e. Fin /\ A e. V ) /\ B e. W /\ ( A i^i B ) = (/) )
        -> Nc[fin] ( A u. B ) = ( Nc[fin] A +c Nc[fin] B ) ) $=
       ( cvv cfin wcel wa cin c0 wceq w3a cun cncfin cnnc cplc syl2anc ncfinprop
@@ -21203,8 +21189,7 @@ $)
 
   ${
     $( If the universe is finite, then the cardinality of a singleton is
-       ` 1c ` . 
-       (Contributed by SF, 30-Jan-2015.) $)
+       ` 1c ` .  (Contributed by SF, 30-Jan-2015.) $)
     ncfinsn $p |- ( ( _V e. Fin /\ A e. V ) -> Nc[fin] { A } = 1c ) $=
       ( cvv cfin wcel wa csn cncfin cnnc c1c wceq ncfinprop mpan2 adantr simpld
       snex 1cnnc a1i simprd snel1cg adantl nnceleq syl22anc ) CDEZABEZFZAGZHZIE
@@ -21215,8 +21200,7 @@ $)
 
   ${
     $( Equality law for finite cardinality.  Theorem X.1.24 of [Rosser]
-       p. 527. 
-       (Contributed by SF, 20-Jan-2015.) $)
+       p. 527.  (Contributed by SF, 20-Jan-2015.) $)
     ncfineleq $p |- ( ( _V e. Fin /\ A e. V /\ B e. W ) ->
        ( A e. Nc[fin] B <-> Nc[fin] A = Nc[fin] B ) ) $=
       ( cvv cfin wcel w3a cncfin wceq cnnc simpl ncfinprop 3adant3 3syl 3adant2
@@ -21231,7 +21215,7 @@ $)
     $d A x t $.  $d B x t $.
     eqpwrelk.1 $e |- A e. _V $.
     eqpwrelk.2 $e |- B e. _V $.
-    $( Represent equality to power class via a Kuratowski relationship. 
+    $( Represent equality to power class via a Kuratowski relationship.
        (Contributed by SF, 26-Jan-2015.) $)
     eqpwrelk $p |- ( << { A } , B >> e.
               ~ ( ( Ins2_k SSet_k (+) Ins3_k SI_k SSet_k ) "_k
@@ -21255,7 +21239,7 @@ $)
     $d A x t $.  $d B x t $.
     eqpw1relk.1 $e |- A e. _V $.
     eqpw1relk.2 $e |- B e. _V $.
-    $( Represent equality to unit power class via a Kuratowski relationship. 
+    $( Represent equality to unit power class via a Kuratowski relationship.
        (Contributed by SF, 21-Jan-2015.) $)
     eqpw1relk $p |- ( << A , { B } >> e. ( ( ~P 1c X._k _V ) \
   ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k )
@@ -21279,7 +21263,7 @@ $)
     $d a b $.  $d a m $.  $d a n $.  $d a t $.  $d a x $.  $d b m $.  $d b n $.
     $d b t $.  $d b x $.  $d m t $.  $d n t $.  $d n x $.  $d t x $.
 
-    $( Lemma for ~ ncfinraise .  Show stratification for induction. 
+    $( Lemma for ~ ncfinraise .  Show stratification for induction.
        (Contributed by SF, 22-Jan-2015.) $)
     ncfinraiselem2 $p |- { m | A. a e. m A. b e. m E. n e. Nn
        ( ~P1 a e. n /\ ~P1 b e. n ) } e. _V $=
@@ -21340,7 +21324,7 @@ $)
 
 
     $( If two sets are in a particular finite cardinal, then their unit power
-       sets are in the same natural.  Theorem X.1.25 of [Rosser] p. 527. 
+       sets are in the same natural.  Theorem X.1.25 of [Rosser] p. 527.
        (Contributed by SF, 21-Jan-2015.) $)
     ncfinraise $p |- ( ( M e. Nn /\ A e. M /\ B e. M ) ->
        E. n e. Nn ( ~P1 A e. n /\ ~P1 B e. n ) ) $=
@@ -21386,7 +21370,7 @@ $)
 
   ${
     $d m n a b t x $.
-    $( Lemma for ~ ncfinlower .  Set up stratification for induction. 
+    $( Lemma for ~ ncfinlower .  Set up stratification for induction.
        (Contributed by SF, 22-Jan-2015.) $)
     ncfinlowerlem1 $p |- { m | A. a A. b ( ( ~P1 a e. m /\ ~P1 b
              e. m ) -> E. n e. Nn ( a e. n /\ b e. n ) ) } e. _V $=
@@ -21449,60 +21433,59 @@ $)
     $d k w $.  $d k z $.  $d m w $.  $d m z $.  $d n w $.  $d n z $.  $d c m $.
     $d d m $.  $d m x $.  $d m y $.
     $( If the unit power classes of two sets are in the same natural, then so
-       are the sets themselves.  Theorem X.1.26 of [Rosser] p. 527. 
+       are the sets themselves.  Theorem X.1.26 of [Rosser] p. 527.
        (Contributed by SF, 22-Jan-2015.) $)
     ncfinlower $p |- ( ( M e. Nn /\ ~P1 A e. M /\ ~P1 B e. M ) ->
        E. n e. Nn ( A e. n /\ B e. n ) ) $=
-      ( va vb vm vc vd ve vf cnnc wcel cv wa wrex wi c0 wceq eleq2 vk vx vy wel
-      vz vw cpw1 wal c1c cplc ncfinlowerlem1 c0c el0c pw10b bitri syl6bb imbi1d
-      anbi12d 2albidv weq peano1 eqid mpbir pm3.2i rspcev mp2an eleq1 bi2anan9
-      rexbidv mpbiri gen2 ax-17 hba1 hban csn cun ccompl reeanv 2rexbii anbi12i
-      hba2 elsuc 3bitr4ri w3a wex wn cvv vex pw1eq eleq1d imbi12d spc2gv com12
-      elequ1 ad2antrl peano2 simprrl adantr syl2anc simprrr expr rexlimdva syld
+      ( va vb vm vc vd ve vf cnnc wcel cv wa wrex wel wi wceq eleq2 vk vx vy vz
+      vw cpw1 wal c0c c1c cplc ncfinlowerlem1 anbi12d imbi1d 2albidv el0c pw10b
+      weq bitri peano1 nulel0c rspcev mp2an eleq1 bi2anan9 anidm syl6bb rexbidv
+      c0 mpbiri syl2anb gen2 nfv nfa1 nfan nfa2 csn ccompl reeanv 2rexbii elsuc
+      cun anbi12i 3bitr4ri w3a wex wn cvv vex pw1eq eleq1d elequ1 imbi12d com12
+      spc2gv ad2antrl peano2 simprrl adantr syl2anc simprrr expr rexlimdva syld
       elsuci syl12anc imp an32s wb 3ad2ant2 compleq eleq12 snex elcompl snelpw1
-      xchbinx sylan2 ancoms 3adant1 anbi2d 3ad2ant1 eeanv 2exbii elequ2 cbvrexv
+      sylan2 xchbinx ancoms 3adant1 anbi2d 3ad2ant1 eeanv 2exbii elequ2 cbvrexv
       exlimdvv pw1eqadj 3imtr4g rexlimdvv rexlimdvva syl5bi alrimi finds pw1exb
-      ex elex sylib syl2an pm2.43b syl 3impib ) DLMZAUGZDMZBUGZDMZACNZMZBUUFMZO
-      ZCLPZUUAENZUGZDMZFNZUGZDMZOZECUDZFCUDZOZCLPZQZFUHEUHZUUCUUEOZUUJQZUULGNZM
-      ZUUOUVFMZOZUVAQZFUHEUHUUKRSZUUNRSZOZUVAQZFUHEUHUULUANZMZUUOUVOMZOZUVAQZFU
-      HZEUHZUULUVOUIUJZMZUUOUWBMZOZUVAQZFUHZEUHZUVCGUADGCEFUKUVFULSZUVJUVNEFUWI
-      UVIUVMUVAUWIUVGUVKUVHUVLUWIUVGUULULMZUVKUVFULUULTUWJUULRSUVKUULUMUUKUNUOU
-      PUWIUVHUUOULMZUVLUVFULUUOTUWKUUORSUVLUUOUMUUNUNUOUPURUQUSGUAUTZUVJUVSEFUW
-      LUVIUVRUVAUWLUVGUVPUVHUVQUVFUVOUULTUVFUVOUUOTURUQUSUVFUWBSZUVJUWFEFUWMUVI
-      UWEUVAUWMUVGUWCUVHUWDUVFUWBUULTUVFUWBUUOTURUQUSUVFDSZUVJUVBEFUWNUVIUUQUVA
-      UWNUVGUUMUVHUUPUVFDUULTUVFDUUOTURUQUSUVNEFUVMUVARUUFMZUWOOZCLPZULLMRULMZU
-      WROZUWQVAUWRUWRUWRRRSRVBRUMVCZUWTVDUWPUWSCULLUUFULSUWOUWRUWOUWRUUFULRTZUX
-      AURVEVFUVMUUTUWPCLUVKUURUWOUVLUUSUWOUUKRUUFVGUUNRUUFVGVHVIVJVKUVOLMZUWAUW
-      HUXBUWAOZUWGEUXBUWAEUXBEVLUVTEVMVNUXCUWFFUXBUWAFUXBFVLUVSFEWAVNUWEUULHNZU
-      BNZVOVPSZUUOINZUCNZVOVPSZOZUCUXGVQZPUBUXDVQZPZIUVOPHUVOPZUXCUVAUXFUBUXLPZ
-      UXIUCUXKPZOZIUVOPHUVOPUXOHUVOPZUXPIUVOPZOUXNUWEUXOUXPHIUVOUVOVRUXMUXQHIUV
-      OUVOUXFUXIUBUCUXLUXKVRVSUWCUXRUWDUXSUBUULUVOHWBUCUUOUVOIWBVTWCUXCUXMUVAHI
-      UVOUVOUXCHUAUDZIUAUDZOZOUXJUVAUBUCUXLUXKUXCUYBUXEUXLMZUXHUXKMZOZUXJUVAQUX
-      CUYBUYEOZOZUUKJNZUENZVOZVPZSZUXDUYHUGZSZUXEUYJSZWDZUUNKNZUFNZVOZVPZSZUXGU
-      YQUGZSZUXHUYSSZWDZOZUFWEUEWEZKWEJWEZEGUDZFGUDZOZGLPZUXJUVAUYGVUGVULJKUYGV
-      UFVULUEUFVUFUYGVULVUFUYGVULQUXCUYMUVOMZVUBUVOMZOZUEJUDZWFZUFKUDZWFZOZOZOZ
-      UYKUVFMZUYTUVFMZOZGLPZQUXBVVAUWAVVFUXBVVAOZUWAVVFVVGUWAJCUDZKCUDZOZCLPZVV
-      FVUOUWAVVKQUXBVUTUWAVUOVVKUYHWGMUYQWGMUWAVUOVVKQZQJWHKWHUVSVVLEFUYHUYQWGW
-      GEJUTZFKUTZOZUVRVUOUVAVVKVVMUVPVUMVVNUVQVUNVVMUULUYMUVOUUKUYHWIWJVVNUUOVU
-      BUVOUUNUYQWIWJVHVVOUUTVVJCLVVMUURVVHVVNUUSVVIEJCWNFKCWNVHVIWKWLVFWMWOVVGV
-      VJVVFCLVVGUUFLMZVVJVVFVVGVVPVVJOZOZUUFUIUJZLMZUYKVVSMZUYTVVSMZVVFVVPVVTVV
-      GVVJUUFWPWOVVRVVHVUQVWAVVGVVPVVHVVIWQVVGVUQVVQUXBVUOVUQVUSWQWRUYHUUFUYIUE
-      WHXDWSVVRVVIVUSVWBVVGVVPVVHVVIWTVVGVUSVVQUXBVUOVUQVUSWTWRUYQUUFUYRUFWHXDW
-      SVVEVWAVWBOGVVSLUVFVVSSVVCVWAVVDVWBUVFVVSUYKTUVFVVSUYTTURVEXEXAXBXCXFXGVU
-      FUYGVVBVULVVFVUFUYFVVAUXCVUFUYBVUOUYEVUTUYPUXTVUMVUEUYAVUNUYNUYLUXTVUMXHU
-      YOUXDUYMUVOVGXIVUCVUAUYAVUNXHVUDUXGVUBUVOVGXIVHUYPUYCVUQVUEUYDVUSUYNUYOUY
-      CVUQXHZUYLUYOUYNVWCUYNUYOUXLUYMVQZSZVWCUXDUYMXJUYOVWEOUYCUYJVWDMZVUQUXEUY
-      JUXLVWDXKVWFUYJUYMMVUPUYJUYMUYIXLXMUYIUYHXNXOUPXPXQXRVUCVUDUYDVUSXHZVUAVU
-      DVUCVWGVUDVUCOUYDUYSVUBVQZMZVUSVUCVUDUXKVWHSUYDVWIXHUXGVUBXJUXHUYSUXKVWHX
-      KXPVWIUYSVUBMVURUYSVUBUYRXLXMUYRUYQXNXOUPXQXRVHURXSVUFVUKVVEGLUYPVUIVVCVU
-      EVUJVVDUYLUYNVUIVVCXHUYOUUKUYKUVFVGXTVUAVUCVUJVVDXHVUDUUNUYTUVFVGXTVHVIWK
-      VJWMYEYEUYPUEWEZVUEUFWEZOZKWEJWEVWJJWEZVWKKWEZOVUHUXJVWJVWKJKYAVUGVWLJKUY
-      PVUEUEUFYAYBUXFVWMUXIVWNJUEUXDUXEUUKHWHUBWHYFKUFUXGUXHUUNIWHUCWHYFVTWCUUT
-      VUKCGLCGUTUURVUIUUSVUJCGEYCCGFYCURYDYGXAYHYIYJYKYKYNYLUVCUVDUUJUUCAWGMZBW
-      GMZUVCUVEQUUEUUCUUBWGMVWOUUBDYOAYMYPUUEUUDWGMVWPUUDDYOBYMYPUVBUVEEFABWGWG
-      UUKASZUUNBSZOZUUQUVDUVAUUJVWQUUMUUCVWRUUPUUEVWQUULUUBDUUKAWIWJVWRUUOUUDDU
-      UNBWIWJVHVWSUUTUUICLVWQUURUUGVWRUUSUUHUUKAUUFVGUUNBUUFVGVHVIWKWLYQYRYSYT
-      $.
+      ex elex sylib syl2an pm2.43b syl 3impib ) DLMZAUFZDMZBUFZDMZACNZMZBUUFMZO
+      ZCLPZUUAENZUFZDMZFNZUFZDMZOZECQZFCQZOZCLPZRZFUGEUGZUUCUUEOZUUJRZUULGNZMZU
+      UOUVFMZOZUVARZFUGEUGUULUHMZUUOUHMZOZUVARZFUGEUGUULUANZMZUUOUVOMZOZUVARZFU
+      GZEUGZUULUVOUIUJZMZUUOUWBMZOZUVARZFUGZEUGZUVCGUADGCEFUKUVFUHSZUVJUVNEFUWI
+      UVIUVMUVAUWIUVGUVKUVHUVLUVFUHUULTUVFUHUUOTULUMUNGUAUQZUVJUVSEFUWJUVIUVRUV
+      AUWJUVGUVPUVHUVQUVFUVOUULTUVFUVOUUOTULUMUNUVFUWBSZUVJUWFEFUWKUVIUWEUVAUWK
+      UVGUWCUVHUWDUVFUWBUULTUVFUWBUUOTULUMUNUVFDSZUVJUVBEFUWLUVIUUQUVAUWLUVGUUM
+      UVHUUPUVFDUULTUVFDUUOTULUMUNUVNEFUVKUUKVHSZUUNVHSZUVAUVLUVKUULVHSUWMUULUO
+      UUKUPURUVLUUOVHSUWNUUOUOUUNUPURUWMUWNOZUVAVHUUFMZCLPZUHLMVHUHMZUWQUSUTUWP
+      UWRCUHLUUFUHVHTVAVBUWOUUTUWPCLUWOUUTUWPUWPOUWPUWMUURUWPUWNUUSUWPUUKVHUUFV
+      CUUNVHUUFVCVDUWPVEVFVGVIVJVKUVOLMZUWAUWHUWSUWAOZUWGEUWSUWAEUWSEVLUVTEVMVN
+      UWTUWFFUWSUWAFUWSFVLUVSFEVOVNUWEUULHNZUBNZVPWASZUUOINZUCNZVPWASZOZUCUXDVQ
+      ZPUBUXAVQZPZIUVOPHUVOPZUWTUVAUXCUBUXIPZUXFUCUXHPZOZIUVOPHUVOPUXLHUVOPZUXM
+      IUVOPZOUXKUWEUXLUXMHIUVOUVOVRUXJUXNHIUVOUVOUXCUXFUBUCUXIUXHVRVSUWCUXOUWDU
+      XPUBUULUVOHVTUCUUOUVOIVTWBWCUWTUXJUVAHIUVOUVOUWTHUAQZIUAQZOZOUXGUVAUBUCUX
+      IUXHUWTUXSUXBUXIMZUXEUXHMZOZUXGUVARUWTUXSUYBOZOZUUKJNZUDNZVPZWAZSZUXAUYEU
+      FZSZUXBUYGSZWDZUUNKNZUENZVPZWAZSZUXDUYNUFZSZUXEUYPSZWDZOZUEWEUDWEZKWEJWEZ
+      EGQZFGQZOZGLPZUXGUVAUYDVUDVUIJKUYDVUCVUIUDUEVUCUYDVUIVUCUYDVUIRUWTUYJUVOM
+      ZUYSUVOMZOZUDJQZWFZUEKQZWFZOZOZOZUYHUVFMZUYQUVFMZOZGLPZRUWSVURUWAVVCUWSVU
+      ROZUWAVVCVVDUWAJCQZKCQZOZCLPZVVCVULUWAVVHRUWSVUQUWAVULVVHUYEWGMUYNWGMUWAV
+      ULVVHRZRJWHKWHUVSVVIEFUYEUYNWGWGEJUQZFKUQZOZUVRVULUVAVVHVVJUVPVUJVVKUVQVU
+      KVVJUULUYJUVOUUKUYEWIWJVVKUUOUYSUVOUUNUYNWIWJVDVVLUUTVVGCLVVJUURVVEVVKUUS
+      VVFEJCWKFKCWKVDVGWLWNVBWMWOVVDVVGVVCCLVVDUUFLMZVVGVVCVVDVVMVVGOZOZUUFUIUJ
+      ZLMZUYHVVPMZUYQVVPMZVVCVVMVVQVVDVVGUUFWPWOVVOVVEVUNVVRVVDVVMVVEVVFWQVVDVU
+      NVVNUWSVULVUNVUPWQWRUYEUUFUYFUDWHXDWSVVOVVFVUPVVSVVDVVMVVEVVFWTVVDVUPVVNU
+      WSVULVUNVUPWTWRUYNUUFUYOUEWHXDWSVVBVVRVVSOGVVPLUVFVVPSVUTVVRVVAVVSUVFVVPU
+      YHTUVFVVPUYQTULVAXEXAXBXCXFXGVUCUYDVUSVUIVVCVUCUYCVURUWTVUCUXSVULUYBVUQUY
+      MUXQVUJVUBUXRVUKUYKUYIUXQVUJXHUYLUXAUYJUVOVCXIUYTUYRUXRVUKXHVUAUXDUYSUVOV
+      CXIVDUYMUXTVUNVUBUYAVUPUYKUYLUXTVUNXHZUYIUYLUYKVVTUYLUYKOUXTUYGUYJVQZMZVU
+      NUYKUYLUXIVWASUXTVWBXHUXAUYJXJUXBUYGUXIVWAXKXOVWBUYGUYJMVUMUYGUYJUYFXLXMU
+      YFUYEXNXPVFXQXRUYTVUAUYAVUPXHZUYRVUAUYTVWCVUAUYTOUYAUYPUYSVQZMZVUPUYTVUAU
+      XHVWDSUYAVWEXHUXDUYSXJUXEUYPUXHVWDXKXOVWEUYPUYSMVUOUYPUYSUYOXLXMUYOUYNXNX
+      PVFXQXRVDULXSVUCVUHVVBGLUYMVUFVUTVUBVUGVVAUYIUYKVUFVUTXHUYLUUKUYHUVFVCXTU
+      YRUYTVUGVVAXHVUAUUNUYQUVFVCXTVDVGWLVIWMYEYEUYMUDWEZVUBUEWEZOZKWEJWEVWFJWE
+      ZVWGKWEZOVUEUXGVWFVWGJKYAVUDVWHJKUYMVUBUDUEYAYBUXCVWIUXFVWJJUDUXAUXBUUKHW
+      HUBWHYFKUEUXDUXEUUNIWHUCWHYFWBWCUUTVUHCGLCGUQUURVUFUUSVUGCGEYCCGFYCULYDYG
+      XAYHYIYJYKYKYNYLUVCUVDUUJUUCAWGMZBWGMZUVCUVERUUEUUCUUBWGMVWKUUBDYOAYMYPUU
+      EUUDWGMVWLUUDDYOBYMYPUVBUVEEFABWGWGUUKASZUUNBSZOZUUQUVDUVAUUJVWMUUMUUCVWN
+      UUPUUEVWMUULUUBDUUKAWIWJVWNUUOUUDDUUNBWIWJVDVWOUUTUUICLVWMUURUUGVWNUUSUUH
+      UUKAUUFVCUUNBUUFVCVDVGWLWNYQYRYSYT $.
       $( [22-Jan-2015] $)
   $}
 
@@ -21511,9 +21494,8 @@ $)
     $d M n $.  $d M p $.  $d n p $.  $d a m $.  $d b m $.  $d m n $.  $d m p $.
     $d a q $.  $d b q $.  $d M q $.  $d n q $.  $d p q $.
     $( For any non-empty finite cardinal, there is a unique natural containing
-       a unit power class of one of its elements.  Theorem X.1.27 of
-       [Rosser] p. 528. 
-       (Contributed by SF, 22-Jan-2015.) $)
+       a unit power class of one of its elements.  Theorem X.1.27 of [Rosser]
+       p. 528.  (Contributed by SF, 22-Jan-2015.) $)
     nnpw1ex $p |- ( ( M e. Nn /\ M =/= (/) ) ->
       E! n e. Nn E. a e. M ~P1 a e. n ) $=
       ( vp vb vq cnnc wcel cpw1 wrex weq wral wex w3a ncfinraise anbi2i nnceleq
@@ -21536,8 +21518,8 @@ $)
 
   ${
     $d A x y $.
-    $( The finite T operator is always a set. 
-       (Contributed by SF, 26-Jan-2015.) $)
+    $( The finite T operator is always a set.  (Contributed by SF,
+       26-Jan-2015.) $)
     tfinex $p |- _T[fin] A e. _V $=
       ( vx vy ctfin c0 wceq cv cnnc wcel cpw1 wa cio cif cvv df-tfin 0ex iotaex
       wrex ifex eqeltri ) ADAEFZEBGZHICGJUBICARKZBLZMNBACOUAEUDPUCBQST $.
@@ -21551,7 +21533,7 @@ $)
     $d a t $.  $d a x $.  $d a y $.  $d a z $.  $d M a $.
     eqtfinrelk.1 $e |- M e. _V $.
     eqtfinrelk.2 $e |- X e. _V $.
-    $( Equality to a T raising expressed via a Kuratowski relationship. 
+    $( Equality to a T raising expressed via a Kuratowski relationship.
        (Contributed by SF, 29-Jan-2015.) $)
     eqtfinrelk $p |- ( << { M } , X >> e. ( ( { { (/) } } X._k { (/) } ) u.
   ( ~ ( ( Ins2_k SSet_k (+)
@@ -21627,8 +21609,8 @@ $)
       $( [29-Jan-2015] $)
   $}
 
-  $( The expression at the core of ~ eqtfinrelk exists. 
-     (Contributed by SF, 30-Jan-2015.) $)
+  $( The expression at the core of ~ eqtfinrelk exists.  (Contributed by SF,
+     30-Jan-2015.) $)
   tfinrelkex $p |- ( ( { { (/) } } X._k { (/) } ) u.
   ( ~ ( ( Ins2_k SSet_k (+)
       Ins3_k
@@ -21656,8 +21638,8 @@ $)
 
   ${
     $d A x y $.  $d B x y $.
-    $( Equality theorem for the finite T operator. 
-       (Contributed by SF, 24-Jan-2015.) $)
+    $( Equality theorem for the finite T operator.  (Contributed by SF,
+       24-Jan-2015.) $)
     tfineq $p |- ( A = B -> _T[fin] A = _T[fin] B ) $=
       ( vx vy wceq c0 cv cnnc wcel cpw1 wrex cio cif ctfin eqeq1 rexeq iotabidv
       wa anbi2d df-tfin ifbieq2d 3eqtr4g ) ABEZAFEZFCGZHIZDGJUEIZDAKZRZCLZMBFEZ
@@ -21669,8 +21651,7 @@ $)
     $d a n $.  $d a z $.  $d M a $.  $d M n $.  $d M z $.  $d n z $.
 
     $( Properties of the finite T operator for a non-empty natural.  Theorem
-       X.1.28 of [Rosser] p. 528. 
-       (Contributed by SF, 22-Jan-2015.) $)
+       X.1.28 of [Rosser] p. 528.  (Contributed by SF, 22-Jan-2015.) $)
     tfinprop $p |- ( ( M e. Nn /\ M =/= (/) ) ->
       ( _T[fin] M e. Nn /\ E. a e. M ~P1 a e. _T[fin] M ) ) $=
       ( vn cnnc wcel c0 wne wa ctfin cv cpw1 wrex wceq cio cif df-tfin wn df-ne
@@ -21685,8 +21666,8 @@ $)
   ${
     $d M x $.
     $( If ` M ` is a non-empty natural, then ` _T[fin] M ` is also non-empty.
-       Corollary 1 of Theorem X.1.28 of [Rosser] p. 528. 
-       (Contributed by SF, 23-Jan-2015.) $)
+       Corollary 1 of Theorem X.1.28 of [Rosser] p. 528.  (Contributed by SF,
+       23-Jan-2015.) $)
     tfinnnul $p |- ( ( M e. Nn /\ M =/= (/) ) -> _T[fin] M =/= (/) ) $=
       ( vx cnnc wcel c0 wne wa ctfin cv cpw1 wrex tfinprop rexlimivw adantl syl
       ne0i ) ACDAEFGAHZCDZBIJZQDZBAKZGQEFZABLUAUBRTUBBAQSPMNO $.
@@ -21696,8 +21677,7 @@ $)
   ${
     $d x y $.
     $( The finite T operator applied to the empty set is empty.  Theorem X.1.29
-       of [Rosser] p. 528. 
-       (Contributed by SF, 22-Jan-2015.) $)
+       of [Rosser] p. 528.  (Contributed by SF, 22-Jan-2015.) $)
     tfinnul $p |- _T[fin] (/) = (/) $=
       ( vx vy c0 ctfin wceq cv cnnc wcel cpw1 wrex cio cif df-tfin iftrue ax-mp
       wa eqid eqtri ) CDCCEZCAFZGHBFITHBCJPAKZLZCACBMSUBCECQSCUANOR $.
@@ -21707,8 +21687,7 @@ $)
 
   ${
     $d N a $.
-    $( Closure law for finite T operation. 
-       (Contributed by SF, 2-Feb-2015.) $)
+    $( Closure law for finite T operation.  (Contributed by SF, 2-Feb-2015.) $)
     tfincl $p |- ( N e. Nn -> _T[fin] N e. Nn ) $=
       ( va cnnc wcel ctfin wi c0 wceq tfinnul tfineq 3eqtr4a eleq1d biimprd wne
       id wa cv cpw1 wrex tfinprop simpld expcom pm2.61ine ) ACDZAEZCDZFAGAGHZUF
@@ -21721,8 +21700,7 @@ $)
     $d N b $.  $d N p $.
 
     $( The finite T operator is one-to-one over the naturals.  Theorem X.1.30
-       of [Rosser] p. 528. 
-       (Contributed by SF, 24-Jan-2015.) $)
+       of [Rosser] p. 528.  (Contributed by SF, 24-Jan-2015.) $)
     tfin11 $p |- ( ( M e. Nn /\ N e. Nn /\ _T[fin] M = _T[fin] N ) ->
             M = N ) $=
       ( va vb vp cnnc wcel ctfin wceq w3a wi c0 wa tfinnnul ex necon4d 3ad2ant1
@@ -21748,7 +21726,7 @@ $)
   ${
     $d A b $.  $d A n $.  $d b n $.  $d M b $.  $d M n $.
     $( The finite T operator on a natural contains the unit power class of any
-       element of the natural.  Theorem X.1.31 of [Rosser] p. 528. 
+       element of the natural.  Theorem X.1.31 of [Rosser] p. 528.
        (Contributed by SF, 24-Jan-2015.) $)
     tfinpw1 $p |- ( ( M e. Nn /\ A e. M ) -> ~P1 A e. _T[fin] M ) $=
       ( vb vn cnnc wcel wa ctfin cv cpw1 wrex c0 wne ne0i tfinprop sylan2 3expa
@@ -21764,7 +21742,7 @@ $)
   ${
     $d A x $.
     $( Relationship between finite T operator and finite Nc operation in a
-       finite universe.  Corollary of Theorem X.1.31 of [Rosser] p. 529. 
+       finite universe.  Corollary of Theorem X.1.31 of [Rosser] p. 529.
        (Contributed by SF, 24-Jan-2015.) $)
     ncfintfin $p |- ( ( _V e. Fin /\ A e. V ) ->
                _T[fin] Nc[fin] A = Nc[fin] ~P1 A ) $=
@@ -21778,8 +21756,7 @@ $)
   ${
     $d M a b c t $.  $d N a b c t $.
     $( The finite T operation distributes over non-empty cardinal sum.  Theorem
-       X.1.32 of [Rosser] p. 529. 
-       (Contributed by SF, 26-Jan-2015.) $)
+       X.1.32 of [Rosser] p. 529.  (Contributed by SF, 26-Jan-2015.) $)
     tfindi $p |- ( ( M e. Nn /\ N e. Nn /\ ( M +c N ) =/= (/) ) ->
        _T[fin] ( M +c N ) = ( _T[fin] M +c _T[fin] N ) ) $=
       ( va vb vc cnnc wcel cplc c0 ctfin wceq cv cpw1 nncaddccl 3adant3 tfinpw1
@@ -21799,8 +21776,8 @@ $)
 
 
   ${
-    $( The finite T operator is fixed at ` 0c ` . 
-       (Contributed by SF, 29-Jan-2015.) $)
+    $( The finite T operator is fixed at ` 0c ` .  (Contributed by SF,
+       29-Jan-2015.) $)
     tfin0c $p |- _T[fin] 0c = 0c $=
       ( c0c ctfin cnnc wcel c0 wceq peano1 tfincl ax-mp cpw1 pw10 nulel0c mp2an
       tfinpw1 eqeltrri nnceleq mp4an ) ABZCDZACDZERDEADZRAFTSGAHIGEJZERKTUAUBRD
@@ -21810,8 +21787,8 @@ $)
 
   ${
     $d A a b x $.
-    $( The finite T operator over a successor. 
-       (Contributed by SF, 30-Jan-2015.) $)
+    $( The finite T operator over a successor.  (Contributed by SF,
+       30-Jan-2015.) $)
     tfinsuc $p |- ( ( A e. Nn /\ ( A +c 1c ) =/= (/) ) ->
        _T[fin] ( A +c 1c ) = ( _T[fin] A +c 1c ) ) $=
       ( va vb vx cnnc wcel c1c cplc ctfin wceq cv cpw1 peano2 tfincl syl adantr
@@ -21829,8 +21806,7 @@ $)
   $}
 
   $( The finite T operator is idempotent over ` 1c ` .  Theorem X.1.34(a) of
-     [Rosser] p. 529. 
-     (Contributed by SF, 30-Jan-2015.) $)
+     [Rosser] p. 529.  (Contributed by SF, 30-Jan-2015.) $)
   tfin1c $p |- _T[fin] 1c = 1c $=
     ( c0c c1c cplc ctfin cnnc wcel wne wceq peano1 addcid2 csn 1cex snel1c ne0i
     c0 ax-mp eqnetri tfinsuc mp2an tfineq tfin0c addceq1i eqtri 3eqtr3i ) ABCZD
@@ -21840,7 +21816,7 @@ $)
 
   ${
     $d M x y $.  $d N x y $.
-    $( Lemma for ~ tfinltfin .  Prove the forward direction of the theorem. 
+    $( Lemma for ~ tfinltfin .  Prove the forward direction of the theorem.
        (Contributed by SF, 2-Feb-2015.) $)
     tfinltfinlem1 $p |- ( ( M e. Nn /\ N e. Nn ) ->
     ( << M , N >> e. <[fin] ->
@@ -21870,8 +21846,7 @@ $)
   ${
     $d M x y $.  $d N x y $.
     $( Ordering rule for the finite T operation.  Corollary to theorem X.1.33
-       of [Rosser] p. 529. 
-       (Contributed by SF, 1-Feb-2015.) $)
+       of [Rosser] p. 529.  (Contributed by SF, 1-Feb-2015.) $)
     tfinltfin $p |- ( ( M e. Nn /\ N e. Nn ) ->
     ( << M , N >> e. <[fin] <->
       << _T[fin] M , _T[fin] N >> e. <[fin] ) ) $=
@@ -21895,8 +21870,7 @@ $)
   $}
 
   $( Ordering rule for the finite T operation.  Theorem X.1.33 of [Rosser]
-     p. 529. 
-     (Contributed by SF, 2-Feb-2015.) $)
+     p. 529.  (Contributed by SF, 2-Feb-2015.) $)
   tfinlefin $p |- ( ( M e. Nn /\ N e. Nn ) ->
     ( << M , N >> e. <_[fin] <->
       << _T[fin] M , _T[fin] N >> e. <_[fin] ) ) $=
@@ -21910,8 +21884,8 @@ $)
     $d b t $.  $d b x $.  $d c n $.  $d c t $.  $d c x $.  $d n x $.  $d n t $.
     $d t x $.
 
-    $( The set of all even naturals exists. 
-       (Contributed by SF, 20-Jan-2015.) $)
+    $( The set of all even naturals exists.  (Contributed by SF,
+       20-Jan-2015.) $)
     evenfinex $p |- Even[fin] e. _V $=
       ( vx vn va vt vc vb cssetk csik csn wrex wa wcel copk wn exbii snex bitri
       wex 3bitri opksnelsik cevenfin cins2k cvv cxpk cin cins3k c1c cpw1 ccompl
@@ -21969,8 +21943,8 @@ $)
 
     $d a y $.  $d b y $.  $d n y $.  $d t y $.  $d x y $.
 
-    $( The set of all odd naturals exists. 
-       (Contributed by SF, 20-Jan-2015.) $)
+    $( The set of all odd naturals exists.  (Contributed by SF,
+       20-Jan-2015.) $)
     oddfinex $p |- Odd[fin] e. _V $=
       ( vx va vt vb vc vy cssetk csn wceq wrex wa wcel copk wn wex 3bitr4i snex
       exbii 3bitri opksnelsik coddfin cins2k cvv cxpk cin cins3k c1c cpw1 cimak
@@ -22062,8 +22036,7 @@ $)
 
   ${
     $d n x $.
-    $( Cardinal zero is even. 
-       (Contributed by SF, 20-Jan-2015.) $)
+    $( Cardinal zero is even.  (Contributed by SF, 20-Jan-2015.) $)
     0ceven $p |- 0c e. Even[fin] $=
       ( vn vx c0c cevenfin wcel cv cplc wceq cnnc wrex c0 peano1 addcid2 eqcomi
       wne addceq12 anidms eqeq2d rspcev wa mp2an csn snid df-0c eleqtrri ax-mp
@@ -22076,8 +22049,8 @@ $)
 
   ${
     $d A n x $.
-    $( An even finite cardinal is a finite cardinal. 
-       (Contributed by SF, 20-Jan-2015.) $)
+    $( An even finite cardinal is a finite cardinal.  (Contributed by SF,
+       20-Jan-2015.) $)
     evennn $p |- ( A e. Even[fin] -> A e. Nn ) $=
       ( vn vx cevenfin wcel cv cplc wceq cnnc wrex c0 wne eqeq1 rexbidv anbi12d
       wa neeq1 df-evenfin elab2g syl wi nncaddccl anidms eleq1a rexlimiv adantr
@@ -22089,8 +22062,8 @@ $)
 
   ${
     $d A n x $.
-    $( An odd finite cardinal is a finite cardinal. 
-       (Contributed by SF, 20-Jan-2015.) $)
+    $( An odd finite cardinal is a finite cardinal.  (Contributed by SF,
+       20-Jan-2015.) $)
     oddnn $p |- ( A e. Odd[fin] -> A e. Nn ) $=
       ( vn vx coddfin wcel cv cplc c1c wceq cnnc wrex c0 wa eqeq1 rexbidv neeq1
       wne anbi12d df-oddfin elab2g ibi wi nncaddccl anidms peano2 3syl rexlimiv
@@ -22102,16 +22075,14 @@ $)
 
   ${
     $d A n x $.
-    $( An even number is non-empty. 
-       (Contributed by SF, 22-Jan-2015.) $)
+    $( An even number is non-empty.  (Contributed by SF, 22-Jan-2015.) $)
     evennnul $p |- ( A e. Even[fin] -> A =/= (/) ) $=
       ( vn vx cevenfin wcel cv cplc wceq cnnc wrex c0 wne eqeq1 rexbidv anbi12d
       wa neeq1 df-evenfin elab2g ibi simprd ) ADEZABFZUCGZHZBIJZAKLZUBUFUGPZCFZ
       UDHZBIJZUIKLZPUHCADDUIAHZUKUFULUGUMUJUEBIUIAUDMNUIAKQOCBRSTUA $.
       $( [22-Jan-2015] $)
 
-    $( An odd number is non-empty. 
-       (Contributed by SF, 22-Jan-2015.) $)
+    $( An odd number is non-empty.  (Contributed by SF, 22-Jan-2015.) $)
     oddnnul $p |- ( A e. Odd[fin] -> A =/= (/) ) $=
       ( vn vx coddfin wcel cv cplc c1c wceq cnnc wrex c0 wa eqeq1 rexbidv neeq1
       wne anbi12d df-oddfin elab2g ibi simprd ) ADEZABFZUDGHGZIZBJKZALQZUCUGUHM
@@ -22121,8 +22092,8 @@ $)
 
   ${
     $d A m n x $.
-    $( The successor of an even natural is odd. 
-       (Contributed by SF, 20-Jan-2015.) $)
+    $( The successor of an even natural is odd.  (Contributed by SF,
+       20-Jan-2015.) $)
     sucevenodd $p |- ( ( A e. Even[fin] /\ ( A +c 1c ) =/= (/) ) ->
                ( A +c 1c ) e. Odd[fin] ) $=
       ( vm vx cevenfin wcel c1c cplc c0 wa coddfin wceq cnnc wrex eqeq1 rexbidv
@@ -22137,8 +22108,8 @@ $)
 
   ${
     $d A m n x $.
-    $( The successor of an odd natural is even. 
-       (Contributed by SF, 22-Jan-2015.) $)
+    $( The successor of an odd natural is even.  (Contributed by SF,
+       22-Jan-2015.) $)
     sucoddeven $p |- ( ( A e. Odd[fin] /\ ( A +c 1c ) =/= (/) ) ->
                ( A +c 1c ) e. Even[fin] ) $=
       ( vm vn vx coddfin wcel c1c cplc c0 wa cevenfin cv wceq cnnc wrex rexbidv
@@ -22157,8 +22128,8 @@ $)
 
   ${
     $d x n $.
-    $( Alternate definition of even number. 
-       (Contributed by SF, 25-Jan-2015.) $)
+    $( Alternate definition of even number.  (Contributed by SF,
+       25-Jan-2015.) $)
     dfevenfin2 $p |- Even[fin] =
        { x | E. n e. Nn ( x = ( n +c n ) /\ ( n +c n ) =/= (/) ) } $=
       ( cevenfin cv cplc wceq cnnc wrex c0 wne df-evenfin r19.41v neeq1 pm5.32i
@@ -22166,8 +22137,8 @@ $)
       APABKUFUIAUFUDUEOZBGHUIUDUEBGLUJUHBGUDUEUGUAUCIMNQRST $.
       $( [25-Jan-2015] $)
 
-    $( Alternate definition of odd number. 
-       (Contributed by SF, 25-Jan-2015.) $)
+    $( Alternate definition of odd number.  (Contributed by SF,
+       25-Jan-2015.) $)
     dfoddfin2 $p |- Odd[fin] =
        { x | E. n e. Nn ( x = ( ( n +c n ) +c 1c ) /\
              ( ( n +c n ) +c 1c ) =/= (/) ) } $=
@@ -22180,8 +22151,7 @@ $)
   ${
     $d x y k n m $.
     $( Every non-empty finite cardinal is either even or odd.  Theorem X.1.35
-       of [Rosser] p. 529. 
-       (Contributed by SF, 20-Jan-2015.) $)
+       of [Rosser] p. 529.  (Contributed by SF, 20-Jan-2015.) $)
     evenoddnnnul $p |- ( Even[fin] u. Odd[fin] ) = ( Nn \ { (/) } ) $=
       ( vx vn vm vk cevenfin coddfin cnnc c0 wss cv wcel wne ssriv wi c0c neeq1
       c1c wo eleq1 imbi12d cun cdif wa evennn evennnul eldifsn sylanbrc oddnnul
@@ -22203,7 +22173,7 @@ $)
 
   ${
     $d j n x a b y t $.
-    $( Lemma for ~ evenodddisj .  Establish stratification for induction. 
+    $( Lemma for ~ evenodddisj .  Establish stratification for induction.
        (Contributed by SF, 25-Jan-2015.) $)
     evenodddisjlem1 $p |- { j | ( ( j +c j ) =/= (/) -> A.
 n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
@@ -22334,8 +22304,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
 
     $( The even finite cardinals and the odd ones are disjoint.  Theorem X.1.36
-       of [Rosser] p. 529. 
-       (Contributed by SF, 22-Jan-2015.) $)
+       of [Rosser] p. 529.  (Contributed by SF, 22-Jan-2015.) $)
     evenodddisj $p |- ( Even[fin] i^i Odd[fin] ) = (/) $=
       ( vx vn vp cv cplc wceq c0 wne wa cnnc c1c wn wi wcel c0c addceq12 anidms
       wral neeq1d imbi12d vk vj vm vq cevenfin coddfin cin dfevenfin2 dfoddfin2
@@ -22388,8 +22357,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d M m n x $.
     $( If ` M ` is even , then so is ` _T[fin] M ` .  Theorem X.1.37 of
-       [Rosser] p. 530. 
-       (Contributed by SF, 26-Jan-2015.) $)
+       [Rosser] p. 530.  (Contributed by SF, 26-Jan-2015.) $)
     eventfin $p |- ( M e. Even[fin] -> _T[fin] M e. Even[fin] ) $=
       ( vn vx vm cevenfin wcel cv cplc wceq cnnc wrex c0 wa ctfin eqeq1 rexbidv
       wne neeq1 anbi12d wi df-evenfin elab2g ibi addceq2 addcnul1 cpw1 tfinprop
@@ -22408,9 +22376,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $d M n m x $.
-    $( If ` M ` is odd , then so is ` _T[fin] M ` .  Theorem X.1.38 of
-       [Rosser] p. 530. 
-       (Contributed by SF, 26-Jan-2015.) $)
+    $( If ` M ` is odd , then so is ` _T[fin] M ` .  Theorem X.1.38 of [Rosser]
+       p. 530.  (Contributed by SF, 26-Jan-2015.) $)
     oddtfin $p |- ( M e. Odd[fin] -> _T[fin] M e. Odd[fin] ) $=
       ( vn vx vm coddfin wcel cv cplc c1c wceq cnnc c0 wne wa ctfin eqeq1 neeq1
       wrex wi syl rexbidv anbi12d df-oddfin elab2g ibi addceq2 addcnul1 addceq1
@@ -22435,8 +22402,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d n l y x b $.  $d b t $.  $d b z $.  $d l t $.  $d l z $.  $d n t $.
     $d n z $.  $d t x $.  $d t y $.  $d t z $.  $d x z $.  $d y z $.
 
-    $( Lemma for ~ nnadjoin .  Establish stratification. 
-       (Contributed by SF, 29-Jan-2015.) $)
+    $( Lemma for ~ nnadjoin .  Establish stratification.  (Contributed by SF,
+       29-Jan-2015.) $)
     nnadjoinlem1 $p |- { n | A. l e. n ( y e. ~ U. l -> { x |
             E. b e. l x = ( b u. { y } ) } e. n ) } e. _V $=
       ( vz vt cssetk wel cvv c1c csn wcel wn copk wa wex exbii 3bitr4i 3bitri
@@ -22506,8 +22473,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d x z $.  $d y z $.
 
     $( Adjoining a new element to every member of ` L ` does not change its
-       size.  Theorem X.1.39 of [Rosser] p. 530. 
-       (Contributed by SF, 29-Jan-2015.) $)
+       size.  Theorem X.1.39 of [Rosser] p. 530.  (Contributed by SF,
+       29-Jan-2015.) $)
     nnadjoin $p |- ( ( N e. Nn /\ L e. N /\ X e. ~ U. L ) ->
          { x | E. b e. L x = ( b u. { X } ) } e. N ) $=
       ( vl vc vz wcel cuni ccompl cv cun wceq wrex cab wi c0 wn wa vy vn vk csn
@@ -22562,8 +22529,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d N b $.  $d X a $.  $d X b $.  $d X t $.
 
     $( Adjoining an element to a power class.  Theorem X.1.40 of [Rosser]
-       p. 530. 
-       (Contributed by SF, 27-Jan-2015.) $)
+       p. 530.  (Contributed by SF, 27-Jan-2015.) $)
     nnadjoinpw $p |- ( ( ( M e. Nn /\ N e. Nn ) /\ ( A e. M /\ X e. ~ A ) /\
          ~P A e. N ) -> ~P ( A u. { X } ) e. ( N +c N ) ) $=
       ( va vb vt cnnc wcel wa ccompl cpw cun cv wceq wrex wss wn wral wal simp3
@@ -22583,7 +22549,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $d m a b n t x $.
-    $( Lemma for ~ nnpweq .  Establish stratification for induction. 
+    $( Lemma for ~ nnpweq .  Establish stratification for induction.
        (Contributed by SF, 26-Jan-2015.) $)
     nnpweqlem1 $p |- { m | A. a e. m A. b e. m E. n e. Nn ( ~P a
                                             e. n /\ ~P b e. n ) } e. _V $=
@@ -22636,8 +22602,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d A a b c d e f x y m n j k $.  $d B a b c d e f x y m n j k $.
     $d M a b c d e f x y m n j k $.
     $( If two sets are the same finite size, then so are their power classes.
-       Theorem X.1.41 of [Rosser] p. 530. 
-       (Contributed by SF, 26-Jan-2015.) $)
+       Theorem X.1.41 of [Rosser] p. 530.  (Contributed by SF, 26-Jan-2015.) $)
     nnpweq $p |- ( ( M e. Nn /\ A e. M /\ B e. M ) ->
        E. n e. Nn ( ~P A e. n /\ ~P B e. n ) ) $=
       ( va vb ve vf cnnc wcel cpw cv wa wrex wral c0 c0c wceq pweq eleq1d vm vk
@@ -22686,8 +22651,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d t y $.  $d t z $.  $d x y $.  $d x z $.  $d y z $.
     srelk.1 $e |- A e. _V $.
     srelk.2 $e |- B e. _V $.
-    $( Binary relationship form of the ` _S[fin] ` relationship. 
-       (Contributed by SF, 23-Jan-2015.) $)
+    $( Binary relationship form of the ` _S[fin] ` relationship.  (Contributed
+       by SF, 23-Jan-2015.) $)
     srelk $p |- ( << A , B >> e. ( ( Nn X._k Nn ) i^i ( (
  Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k SSet_k (+) Ins2_k SI_k
  SSet_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
@@ -22730,8 +22695,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
       $( [23-Jan-2015] $)
   $}
 
-  $( The expression at the core of ~ srelk exists. 
-     (Contributed by SF, 30-Jan-2015.) $)
+  $( The expression at the core of ~ srelk exists.  (Contributed by SF,
+     30-Jan-2015.) $)
   srelkex $p |- ( ( Nn X._k Nn ) i^i ( (
  Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k SSet_k (+) Ins2_k SI_k
  SSet_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
@@ -22748,16 +22713,16 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $d A y $.  $d B y $.  $d C y $.
-    $( Equality theorem for the finite S relationship. 
-       (Contributed by SF, 27-Jan-2015.) $)
+    $( Equality theorem for the finite S relationship.  (Contributed by SF,
+       27-Jan-2015.) $)
     sfineq1 $p |- ( A = B -> ( _S[fin] ( A , C ) <-> _S[fin] ( B , C ) ) ) $=
       ( vy wceq cnnc wcel cv cpw1 cpw wex w3a wsfin eleq1 eleq2 anbi1d 3anbi13d
       wa exbidv df-sfin 3bitr4g ) ABEZAFGZCFGZDHZIZAGZUEJCGZRZDKZLBFGZUDUFBGZUH
       RZDKZLACMBCMUBUCUKUJUNUDABFNUBUIUMDUBUGULUHABUFOPSQACDTBCDTUA $.
       $( [27-Jan-2015] $)
 
-    $( Equality theorem for the finite S relationship. 
-       (Contributed by SF, 27-Jan-2015.) $)
+    $( Equality theorem for the finite S relationship.  (Contributed by SF,
+       27-Jan-2015.) $)
     sfineq2 $p |- ( A = B -> ( _S[fin] ( C , A ) <-> _S[fin] ( C , B ) ) ) $=
       ( vy wceq cnnc wcel cv cpw1 cpw wex w3a wsfin eleq1 eleq2 anbi2d 3anbi23d
       wa exbidv df-sfin 3bitr4g ) ABEZCFGZAFGZDHZICGZUEJZAGZRZDKZLUCBFGZUFUGBGZ
@@ -22765,8 +22730,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
       $( [27-Jan-2015] $)
   $}
 
-  $( Zero and one satisfy ` _S[fin] ` .  Theorem X.1.42 of [Rosser]
-     p. 530. 
+  $( Zero and one satisfy ` _S[fin] ` .  Theorem X.1.42 of [Rosser] p. 530.
      (Contributed by SF, 30-Jan-2015.) $)
   sfin01 $p |- _S[fin] ( 0c , 1c ) $=
     ( va c0c c1c wsfin cnnc wcel cv cpw1 cpw wex peano1 1cnnc wceq csn pw10 0ex
@@ -22779,8 +22743,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d M x y n k $.  $d N x y n k $.  $d P x y n k $.
     $( Equality law for the finite S operator.  Theorem X.1.43 of [Rosser]
-       p. 530. 
-       (Contributed by SF, 27-Jan-2015.) $)
+       p. 530.  (Contributed by SF, 27-Jan-2015.) $)
     sfin112 $p |- ( ( _S[fin] ( M , N ) /\ _S[fin] ( M , P ) ) -> N = P ) $=
       ( vx vy vn vk wsfin wa cnnc wcel cpw1 cpw wex w3a wceq df-sfin wel wrex
       cv 3an6 eeanv 3anbi3i anbi12i 3bitr4ri simpllr simprll simprrl ncfinlower
@@ -22805,8 +22768,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $( If the unit power set of a set is in the successor of a finite cardinal,
        then there is a natural that is smaller than the finite cardinal and
        whose double is smaller than the successor of the cardinal.  Theorem
-       X.1.44 of [Rosser] p. 531. 
-       (Contributed by SF, 30-Jan-2015.) $)
+       X.1.44 of [Rosser] p. 531.  (Contributed by SF, 30-Jan-2015.) $)
     sfindbl $p |- ( ( M e. Nn /\ ~P1 A e. ( M +c 1c ) ) ->
          E. n e. Nn ( _S[fin] ( M , n ) /\
             _S[fin] ( ( M +c 1c ) , ( n +c n ) ) ) ) $=
@@ -22840,8 +22802,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $d m n t x y $.
-    $( Lemma for ~ sfintfin .  Set up induction stratification. 
-       (Contributed by SF, 31-Jan-2015.) $)
+    $( Lemma for ~ sfintfin .  Set up induction stratification.  (Contributed
+       by SF, 31-Jan-2015.) $)
     sfintfinlem1 $p |- { m | A. n ( _S[fin] ( m , n ) ->
                   _S[fin] ( _T[fin] m , _T[fin] n ) ) } e. _V $=
       ( vt vy vx cxpk c1c cins3k cins2k cimak cin csn cv wcel wn wex copk exbii
@@ -22880,8 +22842,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d M a b k m n p q $.  $d N a k n $.
     $( If two numbers obey ` _S[fin] ` , then do their T raisings.  Theorem
-       X.1.45 of [Rosser] p. 532. 
-       (Contributed by SF, 30-Jan-2015.) $)
+       X.1.45 of [Rosser] p. 532.  (Contributed by SF, 30-Jan-2015.) $)
     sfintfin $p |- ( _S[fin] ( M , N ) ->
               _S[fin] ( _T[fin] M , _T[fin] N ) ) $=
       ( va vn vk cnnc wcel wa wsfin ctfin wi c0c c1c wceq sfineq1 wb tfineq syl
@@ -22932,8 +22893,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d t w $.  $d t x $.  $d t y $.  $d t z $.  $d w x $.  $d w y $.  $d w z $.
     $d x z $.  $d y z $.
 
-    $( Lemma for ~ tfinnn .  Establish stratification. 
-       (Contributed by SF, 30-Jan-2015.) $)
+    $( Lemma for ~ tfinnn .  Establish stratification.  (Contributed by SF,
+       30-Jan-2015.) $)
     tfinnnlem1 $p |- { n | A. y e. n ( y C_ Nn -> { a | E. x e.
                           y a = _T[fin] x } e. _T[fin] n ) } e. _V $=
       ( vt vz vw cssetk csn cimak wcel wn copk wa wex snex bitri 3bitri 3bitr4i
@@ -22995,8 +22956,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d k y $.  $d k z $.  $d N n $.  $d n x $.  $d n z $.  $d w x $.  $d w y $.
     $d w z $.  $d x z $.  $d y z $.
 
-    $( T-raising of a set of naturals.  Theorem X.1.46 of [Rosser]
-       p. 532. 
+    $( T-raising of a set of naturals.  Theorem X.1.46 of [Rosser] p. 532.
        (Contributed by SF, 30-Jan-2015.) $)
     tfinnn $p |- ( ( N e. Nn /\ A C_ Nn /\ A e. N ) ->
        { a | E. x e. A a = _T[fin] x } e. _T[fin] N ) $=
@@ -23057,8 +23017,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d N u $.  $d P n $.  $d P u $.  $d Q n $.  $d Q u $.  $d r u $.  $d s u $.
     $d t u $.
     $( Ordering law for finite smaller than.  Theorem X.1.47 of [Rosser]
-       p. 532. 
-       (Contributed by SF, 30-Jan-2015.) $)
+       p. 532.  (Contributed by SF, 30-Jan-2015.) $)
     sfinltfin $p |- ( ( ( _S[fin] ( M , N ) /\ _S[fin] ( P , Q ) ) /\
         << M , P >> e. <[fin] ) -> << N , Q >> e. <[fin] ) $=
       ( va vb vr vx wa cltfin wcel cnnc cv wrex wceq c0 wn syl2anc syl cplc cpw
@@ -23139,8 +23098,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d M a $.  $d N a $.  $d P a $.
     $( The finite smaller relationship is one-to-one in its first argument.
-       Theorem X.1.48 of [Rosser] p. 533. 
-       (Contributed by SF, 29-Jan-2015.) $)
+       Theorem X.1.48 of [Rosser] p. 533.  (Contributed by SF, 29-Jan-2015.) $)
     sfin111 $p |- ( ( _S[fin] ( M , P ) /\ _S[fin] ( N , P ) ) ->
        M = N ) $=
       ( va wsfin wa copk cltfin wcel wo wn wceq cnnc wex df-sfin adantl simp1bi
@@ -23157,8 +23115,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $d a x $.  $d a z $.  $d t x $.  $d x z $.  $d a t $.  $d t z $.
-    $( ` Sp[fin] ` is a set. 
-       (Contributed by SF, 20-Jan-2015.) $)
+    $( ` Sp[fin] ` is a set.  (Contributed by SF, 20-Jan-2015.) $)
     spfinex $p |- Sp[fin] e. _V $=
       ( va vz vx vt cv wcel cssetk c1c cins3k csik cimak cin wa wn wex copk csn
       bitr4i exbii 3bitri cspfin cvv cncfin cab cnnc cxpk cpw csymdif cpw1 cdif
@@ -23188,8 +23145,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d a x z $.
     $( The cardinality of the universe is in the finite Sp set.  Theorem X.1.49
-       of [Rosser] p. 534. 
-       (Contributed by SF, 27-Jan-2015.) $)
+       of [Rosser] p. 534.  (Contributed by SF, 27-Jan-2015.) $)
     ncvspfin $p |- Nc[fin] _V e. Sp[fin] $=
       ( va vz vx cvv cncfin cv wcel wsfin wel wi wal wral wa cab cspfin ncfinex
       cint elintab simpl mpgbir df-spfin eleqtrri ) DEZUCAFZGZBFCFHBAIJBKCUDLZM
@@ -23202,7 +23158,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d q z $.  $d X x $.  $d X y $.  $d x z $.  $d Z x $.  $d Z y $.  $d Z z $.
 
     $( If ` X ` is in ` Sp[fin] ` and ` Z ` is smaller than ` X ` , then ` Z `
-       is also in ` Sp[fin] ` .  Theorem X.1.50 of [Rosser] p. 534. 
+       is also in ` Sp[fin] ` .  Theorem X.1.50 of [Rosser] p. 534.
        (Contributed by SF, 27-Jan-2015.) $)
     spfinsfincl $p |- ( ( X e. Sp[fin] /\ _S[fin] ( Z , X ) ) ->
        Z e. Sp[fin] ) $=
@@ -23224,8 +23180,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d a x $.  $d a z $.  $d B a $.  $d B x $.  $d B z $.  $d x z $.
 
     $( Inductive principle for ` Sp[fin] ` .  Theorem X.1.51 of [Rosser]
-       p. 534. 
-       (Contributed by SF, 27-Jan-2015.) $)
+       p. 534.  (Contributed by SF, 27-Jan-2015.) $)
     spfininduct $p |- ( ( B e. V /\ Nc[fin] _V e. B /\
        A. x e. Sp[fin] A. z ( ( x e. B /\ _S[fin] ( z , x ) ) -> z e. B ) ) ->
        Sp[fin] C_ B ) $=
@@ -23248,8 +23203,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d x y z $.
     $( If the universe is finite, then ` Sp[fin] ` is a subset of the non-empty
-       naturals.  Theorem X.1.53 of [Rosser] p. 534. 
-       (Contributed by SF, 27-Jan-2015.) $)
+       naturals.  Theorem X.1.53 of [Rosser] p. 534.  (Contributed by SF,
+       27-Jan-2015.) $)
     vfinspnn $p |- ( _V e. Fin -> Sp[fin] C_ ( Nn \ { (/) } ) ) $=
       ( vx vz vy cvv cfin wcel cncfin cnnc c0 csn cv wsfin wa wi wal cspfin wne
       cdif ne0i eldifsn wral wss vvex ncfinprop mpan2 anim2i syl sylibr cpw wex
@@ -23264,8 +23219,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $( If the universe is finite, then ` Nc[fin] 1c ` is the base two log of
-       ` Nc[fin] _V ` .  Theorem X.1.54 of [Rosser] p. 534. 
-       (Contributed by SF, 29-Jan-2015.) $)
+       ` Nc[fin] _V ` .  Theorem X.1.54 of [Rosser] p. 534.  (Contributed by
+       SF, 29-Jan-2015.) $)
     1cvsfin $p |- ( _V e. Fin -> _S[fin] ( Nc[fin] 1c , Nc[fin] _V ) ) $=
       ( va cvv cfin wcel c1c cncfin cnnc cpw1 cpw wex w3a 1cex ncfinprop simpld
       cv wa mpan2 vvex simprd eleq1d wsfin wceq pw1eq df1c2 syl6eqr pweq syl6eq
@@ -23279,8 +23234,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $( If the universe is finite, then the size of ` 1c ` is in ` Sp[fin] ` .
-       Corollary of Theorem X.1.54 of [Rosser] p. 534. 
-       (Contributed by SF, 29-Jan-2015.) $)
+       Corollary of Theorem X.1.54 of [Rosser] p. 534.  (Contributed by SF,
+       29-Jan-2015.) $)
     1cspfin $p |- ( _V e. Fin -> Nc[fin] 1c e. Sp[fin] ) $=
       ( cvv cfin wcel cncfin cspfin wsfin ncvspfin 1cvsfin spfinsfincl sylancr
       c1c ) ABCADZECKDZLFMECGHLMIJ $.
@@ -23290,8 +23245,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $( If the universe is finite, then the T-raising of the size of the
        universe is equal to the size of ` 1c ` .  Theorem X.1.55 of [Rosser]
-       p. 534. 
-       (Contributed by SF, 29-Jan-2015.) $)
+       p. 534.  (Contributed by SF, 29-Jan-2015.) $)
     tncveqnc1fin $p |- ( _V e. Fin -> _T[fin] Nc[fin] _V = Nc[fin] 1c ) $=
       ( cvv cfin wcel cncfin ctfin cpw1 wceq vvex ncfintfin mpan2 df1c2 ncfineq
       c1c ax-mp syl6eqr ) ABCZADEZAFZDZMDZPAACQSGHAAIJMRGTSGKMRLNO $.
@@ -23300,9 +23254,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $( If the universe is finite, then the T-raising of the size of ` 1c ` is
-       smaller than the size itself.  Corollary of theorem X.1.56 of
-       [Rosser] p. 534. 
-       (Contributed by SF, 29-Jan-2015.) $)
+       smaller than the size itself.  Corollary of theorem X.1.56 of [Rosser]
+       p. 534.  (Contributed by SF, 29-Jan-2015.) $)
     t1csfin1c $p |- ( _V e. Fin ->
                _S[fin] ( _T[fin] Nc[fin] 1c , Nc[fin] 1c ) ) $=
       ( cvv cfin wcel c1c cncfin ctfin wsfin 1cvsfin sfintfin wceq tncveqnc1fin
@@ -23314,8 +23267,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d N a $.
     $( If the universe is finite, then the T-raising of all non-empty naturals
        are no greater than the size of ` 1c ` .  Theorem X.1.56 of [Rosser]
-       p. 534. 
-       (Contributed by SF, 30-Jan-2015.) $)
+       p. 534.  (Contributed by SF, 30-Jan-2015.) $)
     vfintle $p |- ( ( _V e. Fin /\ N e. Nn /\ N =/= (/) ) ->
         << _T[fin] N , Nc[fin] 1c >> e. <_[fin] ) $=
       ( va cvv cfin wcel cnnc c0 w3a cncfin copk clefin ctfin wa wceq ncfinprop
@@ -23336,8 +23288,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $( If the universe is finite, then ` 1c ` is strictly smaller than the
-       universe.  Theorem X.1.57 of [Rosser] p. 534. 
-       (Contributed by SF, 30-Jan-2015.) $)
+       universe.  Theorem X.1.57 of [Rosser] p. 534.  (Contributed by SF,
+       30-Jan-2015.) $)
     vfin1cltv $p |- ( _V e. Fin ->
                << Nc[fin] 1c , Nc[fin] _V >> e. <[fin] ) $=
       ( cvv wcel c1c cncfin cplc copk cltfin wceq ax-mp 1cex wa c0 mpan2 wn c0c
@@ -23359,7 +23311,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d N a $.
     $( If the universe is finite, then the size of the universe is not the
-       T-raising of a natural.  Theorem X.1.58 of [Rosser] p. 534. 
+       T-raising of a natural.  Theorem X.1.58 of [Rosser] p. 534.
        (Contributed by SF, 29-Jan-2015.) $)
     vfinncvntnn $p |- ( ( _V e. Fin /\ N e. Nn ) ->
                  _T[fin] N =/= Nc[fin] _V ) $=
@@ -23381,8 +23333,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d a x $.
     $( If the universe is finite, then its size is not a T raising of an
        element of ` Sp[fin] ` .  Corollary of theorem X.1.58 of [Rosser]
-       p. 534. 
-       (Contributed by SF, 27-Jan-2015.) $)
+       p. 534.  (Contributed by SF, 27-Jan-2015.) $)
     vfinncvntsp $p |- ( _V e. Fin ->
                  -. Nc[fin] _V e. { a | E. x e. Sp[fin] a = _T[fin] x } ) $=
       ( cvv cfin wcel cncfin cv ctfin wceq cspfin wrex cab wa wne cnnc csn cdif
@@ -23395,7 +23346,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $d n z x a b p g d $.
-    $( Lemma for ~ vfinspss .  Establish part of the inductive step. 
+    $( Lemma for ~ vfinspss .  Establish part of the inductive step.
        (Contributed by SF, 3-Feb-2015.) $)
     vfinspsslem1 $p |- (
       ( ( _V e. Fin /\ _T[fin] n e. Sp[fin] ) /\
@@ -23451,8 +23402,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d x z $.  $d n w $.  $d n x $.  $d n z $.
     $( If the universe is finite, then ` Sp[fin] ` is a subset of its ` T `
        raisings and the cardinality of the universe.  Theorem X.1.59 of
-       [Rosser] p. 534. 
-       (Contributed by SF, 29-Jan-2015.) $)
+       [Rosser] p. 534.  (Contributed by SF, 29-Jan-2015.) $)
     vfinspss $p |- ( _V e. Fin ->
               Sp[fin] C_
               ( { a | E. x e. Sp[fin] a = _T[fin] x } u. { Nc[fin] _V } ) ) $=
@@ -23491,8 +23441,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d X x y z $.
     $( If the universe is finite, then ` Sp[fin] ` is closed under T-raising.
-       Theorem X.1.60 of [Rosser] p. 536. 
-       (Contributed by SF, 30-Jan-2015.) $)
+       Theorem X.1.60 of [Rosser] p. 536.  (Contributed by SF, 30-Jan-2015.) $)
     vfinspclt $p |- ( ( _V e. Fin /\ X e. Sp[fin] ) ->
                _T[fin] X e. Sp[fin] ) $=
       ( vx vy vz cvv wcel cspfin wa cv ctfin c1c wceq tfineq eleq1d elab cssetk
@@ -23519,8 +23468,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $d a x $.
     $( If the universe is finite, then ` Sp[fin] ` is equal to its T raisings
        and the cardinality of the universe.  Theorem X.1.61 of [Rosser]
-       p. 536. 
-       (Contributed by SF, 29-Jan-2015.) $)
+       p. 536.  (Contributed by SF, 29-Jan-2015.) $)
     vfinspeqtncv $p |- ( _V e. Fin ->
                   Sp[fin] = ( { a | E. x e. Sp[fin] a = _T[fin] x } u.
                   { Nc[fin] _V } ) ) $=
@@ -23535,7 +23483,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   ${
     $d a x t $.
     $( If the universe is finite, then the size of ` Sp[fin] ` is equal to the
-       successor of its T-raising.  Theorem X.1.62 of [Rosser] p. 536. 
+       successor of its T-raising.  Theorem X.1.62 of [Rosser] p. 536.
        (Contributed by SF, 20-Jan-2015.) $)
     vfinncsp $p |- ( _V e. Fin ->
        Nc[fin] Sp[fin] = ( _T[fin] Nc[fin] Sp[fin] +c 1c ) ) $=
@@ -23561,7 +23509,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   $}
 
   ${
-    $( The universe is infinite.  Theorem X.1.63 of [Rosser] p. 536. 
+    $( The universe is infinite.  Theorem X.1.63 of [Rosser] p. 536.
        (Contributed by SF, 20-Jan-2015.) $)
     vinf $p |- -. _V e. Fin $=
       ( cvv cfin wcel cspfin cncfin noel cevenfin coddfin cin cnnc wne vfinncsp
@@ -23579,8 +23527,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
 
   ${
     $d n m x a $.
-    $( The empty class is not a natural.  Theorem X.1.65 of [Rosser]
-       p. 536. 
+    $( The empty class is not a natural.  Theorem X.1.65 of [Rosser] p. 536.
        (Contributed by SF, 20-Jan-2015.) $)
     nulnnn $p |- -. (/) e. Nn $=
       ( vx vn vm va c0 cnnc wcel cv wceq wne c0c cab csn ccompl cvv wn neeq1 wa
@@ -23599,8 +23546,7 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   $}
 
   $( The successor operation is one-to-one over the finite cardinals.  Theorem
-     X.1.66 of [Rosser] p. 537. 
-     (Contributed by SF, 20-Jan-2015.) $)
+     X.1.66 of [Rosser] p. 537.  (Contributed by SF, 20-Jan-2015.) $)
   peano4 $p |- ( ( M e. Nn /\ N e. Nn /\ ( M +c 1c ) = ( N +c 1c ) ) ->
      M = N ) $=
     ( cnnc wcel c1c cplc wceq w3a wa c0 3simpa simp3 peano2 nulnnn eleq1 mtbiri
@@ -23608,16 +23554,16 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     QZABGUCUDUFKUCUDUFLUCUDUGUFUCUECDZUGAMUHUEJUEJGUHJCDNUEJCOPRSTABUAUB $.
     $( [20-Jan-2015] $)
 
-  $( Successor cancellation law for finite cardinals. 
-     (Contributed by SF, 3-Feb-2015.) $)
+  $( Successor cancellation law for finite cardinals.  (Contributed by SF,
+     3-Feb-2015.) $)
   suc11nnc $p |- ( ( M e. Nn /\ N e. Nn ) ->
     ( ( M +c 1c ) = ( N +c 1c ) <-> M = N ) ) $=
     ( cnnc wcel wa c1c cplc wceq peano4 3expia addceq1 impbid1 ) ACDZBCDZEAFGBF
     GHZABHZMNOPABIJABFKL $.
     $( [3-Feb-2015] $)
 
-  $( Cancellation law for natural addition. 
-     (Contributed by SF, 3-Feb-2015.) $)
+  $( Cancellation law for natural addition.  (Contributed by SF,
+     3-Feb-2015.) $)
   addccan1 $p |- ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) ->
       ( ( M +c P ) = ( N +c P ) <-> M = N ) ) $=
     ( cnnc wcel w3a cplc c0 wne wceq wb wa nncaddccl nulnnn mtbiri necon2ai syl
@@ -23625,8 +23571,8 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     DLUEDEZUFBAMUGUEHUEHJUGHDENUEHDROPQSABCTUA $.
     $( [3-Feb-2015] $)
 
-  $( Cancellation law for natural addition. 
-     (Contributed by SF, 3-Feb-2015.) $)
+  $( Cancellation law for natural addition.  (Contributed by SF,
+     3-Feb-2015.) $)
   addccan2 $p |- ( ( M e. Nn /\ N e. Nn /\ P e. Nn ) ->
       ( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
     ( cnnc wcel w3a cplc c0 wne wceq wb wa nncaddccl nulnnn mtbiri necon2ai syl
