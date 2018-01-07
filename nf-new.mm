@@ -23580,3 +23580,685 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     CLUEDEZUFBCMUGUEHUEHJUGHDENUEHDROPQSABCTUA $.
     $( [3-Feb-2015] $)
 
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+                Ordered Pairs, Relationships, and Functions
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Ordered Pairs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+
+  $( Declare the constant symbols for ordered pairs. $)
+  $c <. >. Phi Proj1 Proj2 $.
+
+  $( Declare the syntax for an ordered pair. $)
+  cop $a class <. A , B >. $.
+
+  $( Declare the syntax for the Phi operation. $)
+  cphi $a class Phi A $.
+
+  $( Declare the syntax for the first projection operation. $)
+  cproj1 $a class Proj1 A $.
+
+  $( Declare the syntax for the second projection operation. $)
+  cproj2 $a class Proj2 A $.
+
+  ${
+    $d x y A $.  $d x y B $.
+
+    $( Define the phi operator.  This operation increments all the naturals in
+       ` A ` and leaves all its other members the same. $)
+    df-phi $a |- Phi A = { y |
+       E. x e. A y = if ( x e. Nn , ( x +c 1c ) , x ) } $.
+
+    $( Define the type-level ordered pair.  Definition from [Rosser] p. 281. $)
+    df-op $a |- <. A , B >. =
+       ( { x | E. y e. A x = Phi y } u.
+         { x | E. y e. B x = ( Phi y u. { 0c } ) } ) $.
+
+    $( Define the first projection operation.  This operation recovers the
+       first element of an ordered pair.  Definition from [Rosser] p. 281. $)
+    df-proj1 $a |- Proj1 A = { x | Phi x e. A } $.
+
+    $( Define the second projection operation.  This operation recovers the
+       second element of an ordered pair.  Definition from [Rosser] p. 281. $)
+    df-proj2 $a |- Proj2 A = { x | ( Phi x u. { 0c } ) e. A } $.
+  $}
+
+  ${
+    $d A x y z $.
+    $( Express the phi operator in terms of the Kuratowski set construction
+       functions.  (Contributed by SF, 3-Feb-2015.) $)
+    dfphi2 $p |- Phi A = ( ( (
+       Image_k
+      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+            "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+       ( _I_k i^i ( ~ Nn X._k _V ) ) ) "_k A ) $=
+      ( vx vy vz cssetk cins3k cins2k cin c1c cpw1 cimak cnnc cidk cv wcel wceq
+      cvv wa wo wb cphi ccompl csik cun csymdif cdif cimagek cxpk cplc cif wrex
+      copk weq wn iftrue eqeq2d iba simpr con2i biorf syl syl6bb 3bitrd iffalse
+      orcom con3i pm2.61i equcom elcompl anbi12i orbi2i bitr4i elun opkelimagek
+      vex dfaddc2 eqeq2i opkelxpk mpbiran2 bitri opkelidkg mp2an orbi12i rexbii
+      elin eqeq1 rexbidv df-phi elab2 elimak 3bitr4i eqriv ) BAUAZEFZEGZHIJJZKU
+      BFWOGWNGEUCUCFUDUEWPJJKUFWPKZUGZLQUHZHZMLUBZQUHZHZUDZAKZBNZCNZLOZXGIUIZXG
+      UJZPZCAUKZXGXFULZXDOZCAUKXFWMOXFXEOXKXNCAXKXFXIPZXHRZCBUMZXGXAOZRZSZXNXKX
+      PBCUMZXHUNZRZSZXTXHXKYDTXHXKXOXPYDXHXJXIXFXHXIXGUOUPXHXOUQXHXPYCXPSZYDXHY
+      CUNXPYETYCXHYAYBURUSYCXPUTVAYCXPVEVBVCYBXKYAYCYDYBXJXGXFXHXIXGVDUPYBYAUQY
+      BXPUNYCYDTXPXHXOXHURVFXPYCUTVAVCVGXSYCXPXQYAXRYBCBVHXGLCVOZVIVJVKVLXNXMWT
+      OZXMXCOZSXTXMWTXCVMYGXPYHXSYGXMWROZXMWSOZRXPXMWRWSWEYIXOYJXHYIXFWQXGKZPXO
+      XGXFWQYFBVOZVNXIYKXFXGIVPVQVLYJXHXFQOZYLXGXFLQYFYLVRVSVJVTYHXMMOZXMXBOZRX
+      SXMMXBWEYNXQYOXRXGQOYMYNXQTYFYLXGXFQQWAWBYOXRYMYLXGXFXAQYFYLVRVSVJVTWCVTV
+      LWDDNZXJPZCAUKXLDXFWMYLDBUMYQXKCAYPXFXJWFWGCDAWHWICXDAXFYLWJWKWL $.
+      $( [3-Feb-2015] $)
+  $}
+
+  $( Equality law for the Phi operation.  (Contributed by SF, 3-Feb-2015.) $)
+  phieq $p |- ( A = B -> Phi A = Phi B ) $=
+    ( wceq cssetk cins3k cins2k cin c1c cpw1 cimak ccompl csik cun csymdif cdif
+    cnnc cvv cxpk cphi dfphi2 cimagek cidk imakeq2 3eqtr4g ) ABCDEZDFZGHIIZJKEU
+    FFUEFDLLEMNUGIIJOUGJUAPQRGUBPKQRGMZAJUHBJASBSABUHUCATBTUD $.
+    $( [3-Feb-2015] $)
+
+  $( The phi operator preserves sethood.  (Contributed by SF, 3-Feb-2015.) $)
+  phiexg $p |- ( A e. V -> Phi A e. _V ) $=
+    ( wcel cssetk cins3k cins2k cin c1c cpw1 ccompl csik cun cnnc cvv cxpk cidk
+    cimak pw1ex nncex vvex cphi csymdif cdif dfphi2 addcexlem 1cex imakex xpkex
+    cimagek imagekex inex idkex complex unex imakexg mpan syl5eqel ) ABCZAUADEZ
+    DFZGHIZIZQJEUTFUSFDKKELUBVBIIQUCZVBQZUIZMNOZGZPMJZNOZGZLZAQZNAUDVKNCURVLNCV
+    GVJVEVFVDVCVBUEVAHUFRRUGUJMNSTUHUKPVIULVHNMSUMTUHUKUNVKANBUOUPUQ $.
+    $( [3-Feb-2015] $)
+
+  ${
+    phiex.1 $e |- A e. _V $.
+    $( The phi operator preserves sethood.  (Contributed by SF, 3-Feb-2015.) $)
+    phiex $p |- Phi A e. _V $=
+      ( cvv wcel cphi phiexg ax-mp ) ACDAECDBACFG $.
+      $( [3-Feb-2015] $)
+  $}
+
+
+  ${
+    $d x y z w t A $.  $d x y z w t B $.
+    $( Lemma for ~ dfop2 and ~ dfproj22 .  (Contributed by SF, 2-Jan-2015.) $)
+    dfop2lem1 $p |- ( << x , y >> e. ~ ( ( Ins2_k SSet_k (+) Ins3_k ( ( `'_k
+        Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k )
+        "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+     ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) )
+        ) "_k
+     ~P1 ~P1 1c ) <-> y = ( Phi x u. { 0c } ) ) $=
+      ( vz vt cv copk cssetk cins3k cpw1 cimak cun cvv c0c csn wcel wn wex wceq
+      wa 3bitr4i cins2k cin c1c ccompl csik csymdif cdif cimagek cnnc cxpk cidk
+      ccnvk ccomk cphi wb wrex opkex elimak elpw121c anbi1i 19.41v bitr4i exbii
+      wel df-rex excom snex opkeq1 eleq1d ceqsexv elsymdif vex otkelins2k bitri
+      elssetk otkelins3k elun ancom opkelimagek opkelcnvk dfphi2 eqeq2i anbi12i
+      opkelcok phiex clel3 opkelxpk mpbiran2 sneqb elsnc 3bitr4ri orbi12i 3bitri
+      wo bibi12i notbii elcompl wal dfcleq alex ) AEZBEZFZGUAZGHZXDUBUCIIZJUDHX
+      DUAXEUAGUEUEHKUFXFIIJUGXFJUHUILUJUBUKUIUDLUJUBKZUHZULZGUMZMNZNZLUJZKZHZUF
+      ZXFJZOZPCBVDZCEZXAUNZXKKZOZUOZPZCQZPZXCXQUDOXBYBRZXRYFXRDEZXCFZXPOZDXFUPZ
+      YIXTNZNZNZRZYKSZDQZCQZYFDXPXFXCXAXBUQZURYIXFOZYKSZDQYQCQZDQYLYSUUBUUCDUUB
+      YPCQZYKSUUCUUAUUDYKCYIUSUTYPYKCVAVBVCYKDXFVEYQCDVFTYRYECYRYOXCFZXPOZUUEXD
+      OZUUEXOOZUOZPYEYKUUFDYOYNVGYPYJUUEXPYIYOXCVHVIVJUUEXDXOVKUUIYDUUGXSUUHYCU
+      UGYMXBFGOZXSYMXAXBGXTVGZAVLZBVLZVMXTXBCVLZUUMVOZVNUUHYMXAFZXNOUUPXJOZUUPX
+      MOZWNZYCYMXAXBXNUUKUULUUMVPUUPXJXMVQUUSXTYAOZXTXKOZWNYCUUQUUTUURUVAUUJXBX
+      AFXIOZSZBQXBYARZXSSZBQUUQUUTUVCUVEBUVCUVBUUJSUVEUUJUVBVRUVBUVDUUJXSXCXHOX
+      BXGXAJZRUVBUVDXAXBXGUULUUMVSXBXAXHUUMUULVTYAUVFXBXAWAWBTUUOWCVNVCBYMXAXIG
+      UUKUULWDBXTYAXAUULWEWFTUURYMXLOZUVAUURUVGXALOUULYMXAXLLUUKUULWGWHYMXKRXTM
+      RUVGUVAXTMUUNWIYMXKUUKWJXTMUUNWJWKVBWLXTYAXKVQVBWMWOWPWMVCWMWPXCXQYTWQYHY
+      DCWRYGCXBYBWSYDCWTVNT $.
+      $( [2-Jan-2015] $)
+
+    $( Lemma for ~ dfop2 (Contributed by SF, 2-Jan-2015.) $)
+    dfop2lem2 $p |- ( ~ ( ( Ins2_k SSet_k (+)
+     Ins3_k ( ( `'_k Image_k ( ( Image_k
+      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+            "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V
+        ) ) ) o._k
+              SSet_k ) u. ( { { 0c } } X._k _V ) ) ) "_k ~P1 ~P1 1c ) "_k B
+        )
+     = { x | E. y e. B x = ( Phi y u. { 0c } ) } $=
+      ( cv csn cun wrex cssetk cins2k cins3k cin cpw1 cimak ccompl csik csymdif
+      cimagek cnnc cvv cxpk cphi c0c wceq c1c cdif cidk ccnvk ccomk wcel elimak
+      copk vex dfop2lem1 rexbii bitri abbi2i ) ADZBDZUAUBEZFUCZBCGZAHIZHJZVBKUD
+      LLZMNJVBIVCIHOOJFPVDLLMUEVDMQRSTKUFRNSTKFQUGHUHUSESTFJPVDMNZCMZUQVFUIURUQ
+      UKVEUIZBCGVABVECUQAULUJVGUTBCBAUMUNUOUP $.
+      $( [2-Jan-2015] $)
+
+    $( Express the ordered pair via the set construction functors.
+       (Contributed by SF, 2-Jan-2015.) $)
+    dfop2 $p |- <. A , B >. =
+       ( ( Image_k ( ( Image_k
+      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+            "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V
+        ) ) ) "_k A ) u.
+         ( ~ ( ( Ins2_k SSet_k (+) Ins3_k ( ( `'_k Image_k ( ( Image_k
+      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+            "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+               ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u.
+               ( { { 0c } } X._k _V ) ) ) "_k ~P1 ~P1 1c ) "_k B ) ) $=
+      ( vx vy cv wceq wrex cab csn cun cssetk cins3k cins2k cin cpw1 cimak csik
+      ccompl cvv cxpk cop cphi c0c c1c csymdif cdif cnnc cidk ccnvk ccomk df-op
+      wcel copk vex elimak dfphi2 eqeq2i opkelimagek bitr4i rexbii bicomi bitri
+      cimagek abbi2i dfop2lem2 uneq12i eqtr4i ) ABUACEZDEZUBZFZDAGZCHZVHVJUCIZJ
+      FDBGCHZJKLZKMZNUDOOZPRLVQMVPMKQQLJUEVROOPUFVRPVCUGSTNUHUGRSTNJZVCZAPZVQVT
+      UIKUJVNISTJLUEVRPRBPZJCDABUKWAVMWBVOVLCWAVHWAULVIVHUMVTULZDAGZVLDVTAVHCUN
+      ZUOVLWDVKWCDAVKVHVSVIPZFWCVJWFVHVIUPUQVIVHVSDUNWEURUSUTVAVBVDCDBVEVFVG $.
+      $( [2-Jan-2015] $)
+  $}
+
+  ${
+    $d x y A $.
+    $( Express the first projection operator via the set construction
+       functors.  (Contributed by SF, 2-Jan-2015.) $)
+    dfproj12 $p |- Proj1 A =
+     ( `'_k Image_k ( ( Image_k
+      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+            "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V
+        ) ) ) "_k A ) $=
+      ( vx vy wcel cssetk cins3k cins2k cin cpw1 cimak ccompl csik cimagek cnnc
+      cv cun cvv cxpk wceq wrex cproj1 cphi cab c1c csymdif cdif ccnvk df-proj1
+      cidk copk opkelimagek opkelcnvk dfphi2 eqeq2i rexbii risset elimak abbi2i
+      vex 3bitr4ri eqtr4i ) AUABOZUBZADZBUCEFZEGZHUDIIZJKFVFGVEGELLFPUEVGIIJUFV
+      GJMNQRHUINKQRHPZMZUGZAJZBAUHVDBVKCOZVCSZCATVLVBUJVJDZCATVDVBVKDVMVNCAVBVL
+      UJVIDVLVHVBJZSVNVMVBVLVHBUSZCUSZUKVLVBVIVQVPULVCVOVLVBUMUNUTUOCVCAUPCVJAV
+      BVPUQUTURVA $.
+      $( [2-Jan-2015] $)
+
+    $( Express the second projection operator via the set construction
+       functors.  (Contributed by SF, 2-Jan-2015.) $)
+    dfproj22 $p |- Proj2 A = ( `'_k ~ ( ( Ins2_k SSet_k (+)
+    Ins3_k ( ( `'_k Image_k ( ( Image_k
+      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+            "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+            ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k
+    SSet_k ) u. ( { { 0c } } X._k _V ) ) ) "_k ~P1 ~P1 1c ) "_k A ) $=
+      ( vx vy cv csn cun wcel cssetk cins2k cins3k cin cpw1 ccompl csik csymdif
+      cimak cimagek cnnc cvv cxpk cproj2 cphi c0c cab c1c cdif cidk ccnvk ccomk
+      df-proj2 copk wrex opkelcnvk dfop2lem1 bitri rexbii elimak risset 3bitr4i
+      wceq vex abbi2i eqtr4i ) AUABDZUBUCEZFZAGZBUDHIZHJZVHKUELLZPMJVHIVIIHNNJF
+      OVJLLPUFVJPQRSTKUGRMSTKFQUHHUIVEESTFJOVJPMZUHZAPZBAUJVGBVMCDZVDUKVLGZCAUL
+      VNVFUTZCAULVDVMGVGVOVPCAVOVDVNUKVKGVPVNVDVKCVABVAZUMBCUNUOUPCVLAVDVQUQCVF
+      AURUSVBVC $.
+      $( [2-Jan-2015] $)
+
+  $}
+
+
+  $( Equality theorem for ordered pairs.  (Contributed by SF, 2-Jan-2015.) $)
+  opeq1 $p |- ( A = B -> <. A , C >. = <. B , C >. ) $=
+    ( cssetk cins3k cins2k cin cpw1 cimak ccompl csik csymdif cimagek cnnc cxpk
+    cun cvv csn cop dfop2 wceq c1c cdif cidk ccnvk ccomk imakeq2 uneq1d 3eqtr4g
+    c0c ) ABUAZDEZDFZGUBHHZIJEUMFULFDKKEPLUNHHIUCUNIMNQOGUDNJQOGPMZAIZUMUOUEDUF
+    UJRRQOPELUNIJCIZPUOBIZUQPACSBCSUKUPURUQABUOUGUHACTBCTUI $.
+    $( [2-Jan-2015] $)
+
+  $( Equality theorem for ordered pairs.  (Contributed by SF, 2-Jan-2015.) $)
+  opeq2 $p |- ( A = B -> <. C , A >. = <. C , B >. ) $=
+    ( cssetk cins3k cins2k cin cpw1 cimak ccompl csik csymdif cimagek cnnc cxpk
+    cun cvv csn cop dfop2 wceq c1c cdif cidk ccnvk ccomk imakeq2 uneq2d 3eqtr4g
+    c0c ) ABUAZDEZDFZGUBHHZIJEUMFULFDKKEPLUNHHIUCUNIMNQOGUDNJQOGPMZCIZUMUOUEDUF
+    UJRRQOPELUNIJZAIZPUPUQBIZPCASCBSUKURUSUPABUQUGUHCATCBTUI $.
+    $( [2-Jan-2015] $)
+
+  $( Equality theorem for ordered pairs.  (Contributed by SF, 2-Jan-2015.) $)
+  opeq12 $p |- ( ( A = B /\ C = D ) -> <. A , C >. = <. B , D >. ) $=
+    ( wceq cop opeq1 opeq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
+    $( [2-Jan-2015] $)
+
+
+  ${
+    opeq1i.1 $e |- A = B $.
+    $( Equality inference for ordered pairs.  (Contributed by SF,
+       16-Dec-2006.) $)
+    opeq1i $p |- <. A , C >. = <. B , C >. $=
+      ( wceq cop opeq1 ax-mp ) ABEACFBCFEDABCGH $.
+      $( [16-Dec-2006] $)
+
+    $( Equality inference for ordered pairs.  (Contributed by SF,
+       16-Dec-2006.) $)
+    opeq2i $p |- <. C , A >. = <. C , B >. $=
+      ( wceq cop opeq2 ax-mp ) ABECAFCBFEDABCGH $.
+      $( [16-Dec-2006] $)
+
+    ${
+      opeq12i.2 $e |- C = D $.
+      $( Equality inference for ordered pairs.  (The proof was shortened by
+         Eric Schmidt, 4-Apr-2007.)  (Contributed by SF, 16-Dec-2006.) $)
+      opeq12i $p |- <. A , C >. = <. B , D >. $=
+        ( cop opeq1i opeq2i eqtri ) ACGBCGBDGABCEHCDBFIJ $.
+        $( [16-Dec-2006] $)
+    $}
+  $}
+
+  ${
+    opeq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for ordered pairs.  (Contributed by SF,
+       16-Dec-2006.) $)
+    opeq1d $p |- ( ph -> <. A , C >. = <. B , C >. ) $=
+      ( wceq cop opeq1 syl ) ABCFBDGCDGFEBCDHI $.
+      $( [16-Dec-2006] $)
+
+    $( Equality deduction for ordered pairs.  (Contributed by SF,
+       16-Dec-2006.) $)
+    opeq2d $p |- ( ph -> <. C , A >. = <. C , B >. ) $=
+      ( wceq cop opeq2 syl ) ABCFDBGDCGFEBCDHI $.
+      $( [16-Dec-2006] $)
+
+    ${
+      opeq12d.2 $e |- ( ph -> C = D ) $.
+      $( Equality deduction for ordered pairs.  (The proof was shortened by
+         Andrew Salmon, 29-Jun-2011.)  (Contributed by SF, 16-Dec-2006.)
+         (Revised by SF, 29-Jun-2011.) $)
+      opeq12d $p |- ( ph -> <. A , C >. = <. B , D >. ) $=
+        ( cop opeq1d opeq2d eqtrd ) ABDHCDHCEHABCDFIADECGJK $.
+        $( [29-Jun-2011] $) $( [16-Dec-2006] $)
+    $}
+  $}
+
+
+  $( An ordered pair of two sets is a set.  (Contributed by SF, 2-Jan-2015.) $)
+  opexg $p |- ( ( A e. V /\ B e. W ) -> <. A , B >. e. _V ) $=
+    ( wcel cssetk cins3k cins2k cin c1c cpw1 ccompl csik cun cnnc cvv cxpk vvex
+    cimak xpkex wa cop csymdif cdif cimagek ccnvk ccomk c0c csn dfop2 addcexlem
+    cidk 1cex pw1ex imagekex nncex inex idkex complex unex imakexg mpan ssetkex
+    imakex ins2kex cnvkex cokex snex ins3kex symdifex unexg syl2an syl5eqel ) A
+    CEZBDEZUAABUBFGZFHZIJKZKZSLGVQHVPHFMMGNUCVSKKSUDZVSSZUEZOPQZIZULOLZPQZIZNZU
+    EZASZVQWIUFZFUGZUHUIZUIZPQZNZGZUCZVSSZLZBSZNZPABUJVNWJPEZXAPEZXBPEVOWIPEVNX
+    CWHWDWGWBWCWAVTVSUKVRJUMUNUNZVDUOOPUPRTUQULWFURWEPOUPUSRTUQUTUOZWIAPCVAVBWT
+    PEVOXDWSWRVSVQWQFVCVEWPWLWOWKFWIXFVFVCVGWNPWMVHRTUTVIVJXEVDUSWTBPDVAVBWJXAP
+    PVKVLVM $.
+    $( [2-Jan-2015] $)
+
+  ${
+    opex.1 $e |- A e. _V $.
+    opex.2 $e |- B e. _V $.
+    $( An ordered pair of two sets is a set.  (Contributed by SF,
+       5-Jan-2015.) $)
+    opex $p |- <. A , B >. e. _V $=
+      ( cvv wcel cop opexg mp2an ) AEFBEFABGEFCDABEEHI $.
+      $( [5-Jan-2015] $)
+  $}
+
+  $( Equality theorem for first projection operator.  (Contributed by SF,
+     2-Jan-2015.) $)
+  proj1eq $p |- ( A = B -> Proj1 A = Proj1 B ) $=
+    ( wceq cssetk cins3k cins2k cin c1c cpw1 cimak ccompl csik cun csymdif cnnc
+    cimagek cvv cxpk cproj1 dfproj12 cdif cidk ccnvk imakeq2 3eqtr4g ) ABCDEZDF
+    ZGHIIZJKEUGFUFFDLLEMNUHIIJUAUHJPOQRGUBOKQRGMPUCZAJUIBJASBSABUIUDATBTUE $.
+    $( [2-Jan-2015] $)
+
+  $( Equality theorem for second projection operator.  (Contributed by SF,
+     2-Jan-2015.) $)
+  proj2eq $p |- ( A = B -> Proj2 A = Proj2 B ) $=
+    ( cssetk cins2k cins3k cin cpw1 cimak ccompl csik csymdif cimagek cnnc cxpk
+    cun cvv ccnvk csn cproj2 dfproj22 wceq c1c cdif cidk ccomk imakeq2 3eqtr4g
+    c0c ) ABUACDZCEZUIFUBGGZHIEUIDUJDCJJEOKUKGGHUCUKHLMPNFUDMIPNFOLQCUEUHRRPNOE
+    KUKHIQZAHULBHASBSABULUFATBTUG $.
+    $( [2-Jan-2015] $)
+
+  $( The first projection of a set is a set.  (Contributed by SF,
+     2-Jan-2015.) $)
+  proj1exg $p |- ( A e. V -> Proj1 A e. _V ) $=
+    ( wcel cssetk cins3k cins2k cin c1c cpw1 cimak ccompl csik cun cimagek cnnc
+    cvv cxpk cidk pw1ex imagekex cproj1 csymdif ccnvk dfproj12 addcexlem imakex
+    cdif 1cex nncex vvex xpkex inex idkex complex unex cnvkex imakexg syl5eqel
+    mpan ) ABCZAUADEZDFZGHIZIZJKEVBFVAFDLLEMUBVDIIJUGZVDJZNZOPQZGZROKZPQZGZMZNZ
+    UCZAJZPAUDVOPCUTVPPCVNVMVIVLVGVHVFVEVDUEVCHUHSSUFTOPUIUJUKULRVKUMVJPOUIUNUJ
+    UKULUOTUPVOAPBUQUSUR $.
+    $( [2-Jan-2015] $)
+
+  $( The second projection of a set is a set.  (Contributed by SF,
+     2-Jan-2015.) $)
+  proj2exg $p |- ( A e. V -> Proj2 A e. _V ) $=
+    ( wcel cssetk cins2k cins3k cin c1c cpw1 cimak ccompl csik cun csymdif cnnc
+    cimagek cvv cxpk vvex xpkex cproj2 cdif cidk ccnvk c0c csn dfproj22 ssetkex
+    ccomk ins2kex addcexlem 1cex pw1ex imakex imagekex nncex inex idkex complex
+    unex cnvkex cokex snex ins3kex symdifex imakexg mpan syl5eqel ) ABCZAUADEZD
+    FZVJGHIZIZJKFVJEVKEDLLFMNVMIIJUBZVMJZPZOQRZGZUCOKZQRZGZMZPZUDZDUIZUEUFZUFZQ
+    RZMZFZNZVMJZKZUDZAJZQAUGWNQCVIWOQCWMWLWKVMVJWJDUHUJWIWEWHWDDWCWBVRWAVPVQVOV
+    NVMUKVLHULUMUMZUNUOOQUPSTUQUCVTURVSQOUPUSSTUQUTUOVAUHVBWGQWFVCSTUTVDVEWPUNU
+    SVAWNAQBVFVGVH $.
+    $( [2-Jan-2015] $)
+
+  ${
+    $d A x y z $.  $d B x y z $.
+    $( Lemma for ~ phi11 .  (Contributed by SF, 3-Feb-2015.) $)
+    phi11lem1 $p |- ( Phi A = Phi B -> A C_ B ) $=
+      ( vz vy vx cphi wceq cv wcel cnnc wi wa wrex eqeq2d rexbidv elab2 biimpac
+      c1c syl5 syl cplc cif iftrue eqcomd weq eleq1 addceq1 id ifbieq12d sylan2
+      rspcev ancoms vex addcex eqeq1 df-phi sylibr eleq2 w3a wn iffalse peano2
+      syl5ibcom expdimp pm2.18d simpl simpr eqtr2d peano4 syl3anc 3adant2 simp2
+      1cex eqeltrrd 3expia rexlimdva syl5bi exp3a adantr mpd eleq1a com12 con3d
+      sylbid impcom adantlr simplr ex pm2.61ian ssrdv ) AFZBFZGZCABCHZAIZWMWNBI
+      ZWNJIZWOWMWPKZWQWOLZWNRUAZWKIZWRWSWTDHZJIZXBRUAZXBUBZGZDAMZXAWOWQXGWQWOWT
+      WQWTWNUBZGZXGWQXHWTWQWTWNUCUDXFXIDWNADCUEZXEXHWTXJXCWQXDXBWTWNXBWNJUFXBWN
+      RUGXJUHUIZNUKUJULEHZXEGZDAMZXGEWTWKWNRCUMZVMUNZXLWTGZXMXFDAXLWTXEUOZODEAU
+      PZPUQWQXAWRKWOWQXAWMWPXAWMLWTWLIZWQWPWMXAXTWKWLWTURQXTXFDBMZWQWPXMDBMZYAE
+      WTWLXPXQXMXFDBXRODEBUPZPWQXFWPDBWQXBBIZXFWPWQYDXFUSXBWNBWQXFXJYDWQXFLZXCW
+      QXDWTGXJYEXCWQXFXCUTZXCXFYFLWTXBGZWQXCYFXFYGYFXEXBWTXCXDXBVAZNQWQWTJIYGXC
+      WNVBWTXBJUFVCSVDVEZWQXFVFYEWTXEXDWQXFVGYEXCXEXDGYIXCXDXBUCZTVHXBWNVIVJVKW
+      QYDXFVLVNVOVPVQSVRVSVTWQUTZWOLZWNWKIZWRYLWNXEGZDAMZYMWOYKYOYKWOWNXHGZYOYK
+      XHWNWQWTWNVAUDYNYPDWNAXJXEXHWNXKNUKUJULXNYOEWNWKXOECUEZXMYNDAXLWNXEUOZOXS
+      PUQYKYMWRKWOYKYMWMWPYMWMLWNWLIZYKWPWMYMYSWKWLWNURQYSYNDBMZYKWPYBYTEWNWLXO
+      YQXMYNDBYROYCPYKYNWPDBYKYDLZYNWPUUAYNLXBWNBYKYNXJYDYKYNLZWNXEXBYKYNVGUUBY
+      FXEXBGYNYKYFYNXCWQXCYNWQXCYNWNXDGZWQXCXEXDWNYJNXCXDJIUUCWQKXBVBXDJWNWATWD
+      WBWCWEYHTVHWFYKYDYNWGVNWHVPVQSVRVSVTWIWBWJ $.
+      $( [3-Feb-2015] $)
+  $}
+
+  $( The phi operator is one-to-one.  Theorem X.2.2 of [Rosser] p. 282.
+     (Contributed by SF, 3-Feb-2015.) $)
+  phi11 $p |- ( A = B <-> Phi A = Phi B ) $=
+    ( wceq cphi phieq phi11lem1 wss eqcoms eqssd impbii ) ABCADZBDZCZABEMABABFB
+    AGLKBAFHIJ $.
+    $( [3-Feb-2015] $)
+
+  ${
+    $d A x y $.
+    $( Cardinal zero is not a member of a phi operation.  Theorem X.2.3 of
+       [Rosser] p. 282.  (Contributed by SF, 3-Feb-2015.) $)
+    0cnelphi $p |- -. 0c e. Phi A $=
+      ( vy vx c0c cphi wcel cv cnnc c1c cplc cif wceq wrex wn 0cnsuc df-ne mpbi
+      wne wa eqeq2d iffalse biimpac peano1 syl6eqelr iftrue eqcom syl6bb biimpd
+      ex pm2.18d mpcom mto a1i nrex 0cex eqeq1 rexbidv df-phi elab2 mtbir ) DAE
+      ZFDBGZHFZVBIJZVBKZLZBAMZVFBAVFNVBAFVFVDDLZVDDRVHNVBOVDDPQVCVFVHVFVCVFVCNZ
+      VCVFVISVBDHVIVFDVBLVIVEVBDVCVDVBUATUBUCUDUIUJVCVFVHVCVFDVDLVHVCVEVDDVCVDV
+      BUETDVDUFUGUHUKULUMUNCGZVELZBAMVGCDVAUOVJDLVKVFBAVJDVEUPUQBCAURUSUT $.
+      $( [3-Feb-2015] $)
+  $}
+
+  ${
+    $d A z $.  $d B z $.
+    $( Lemma for ~ phi011 .  (Contributed by SF, 3-Feb-2015.) $)
+    phi011lem1 $p |- ( ( Phi A u. { 0c } ) = ( Phi B u. { 0c } ) ->
+      Phi A C_ Phi B ) $=
+      ( vz cphi c0c csn wceq cv wcel wn ssun1 sseli eleq2 syl5ib 0cnelphi eleq1
+      cun wi mtbiri wo con2i a1i elun df-sn abeq2i orbi2i bitri biimpi ord ee22
+      orcomd ssrdv ) ADZEFZQZBDZUNQZGZCUMUPURCHZUMIZUSUQIZUSEGZJZUSUPIZUTUSUOIU
+      RVAUMUOUSUMUNKLUOUQUSMNUTVCRURVBUTVBUTEUMIAOUSEUMPSUAUBVAVBVDVAVDVBVAVDVB
+      TZVAVDUSUNIZTVEUSUPUNUCVFVBVDVBCUNCEUDUEUFUGUHUKUIUJUL $.
+      $( [3-Feb-2015] $)
+  $}
+
+  $( ` ( Phi A u. { 0c } ) ` is one-to-one.  Theorem X.2.4 of [Rosser] p. 282.
+     (Contributed by SF, 3-Feb-2015.) $)
+  phi011 $p |- ( A = B <-> ( Phi A u. { 0c } ) = ( Phi B u. { 0c } ) ) $=
+    ( wceq cphi c0c csn cun phi11 uneq1 phi011lem1 eqcoms eqssd impbii bitri
+    wss ) ABCADZBDZCZPEFZGZQSGZCZABHRUBPQSIUBPQABJQPOUATBAJKLMN $.
+    $( [3-Feb-2015] $)
+
+  ${
+    $d A x y z $.  $d B x y z $.
+    $( The first projection operator applied to an ordered pair yields its
+       first member.  Theorem X.2.7 of [Rosser] p. 282.  (Contributed by SF,
+       3-Feb-2015.) $)
+    proj1op $p |- Proj1 <. A , B >. = A $=
+      ( vz vy vx cop cproj1 cv cphi wcel c0c cun wceq wrex wo cab eqeq1 rexbidv
+      weq elab csn df-op eleq2i phiex phi11 equcom bitr3i syl6bb risset syl6bbr
+      elun vex orbi12i 3bitri phieq eleq1d df-proj1 elab2 wn 0cnelphi 0cex snid
+      ssun2 sselii eleq2 mpbiri mto a1i nrex biorfi 3bitr4i eqriv ) CABFZGZACHZ
+      IZVMJZVOAJZVPDHZIZKUAZLZMZDBNZOZVOVNJVRVQVPEHZVTMZDANZEPZWFWBMZDBNZEPZLZJ
+      VPWIJZVPWLJZOWEVMWMVPEDABUBUCVPWIWLUKWNVRWOWDWHVREVPVOCULZUDZWFVPMZWHDCSZ
+      DANVRWRWGWSDAWRWGVPVTMZWSWFVPVTQWTCDSWSVOVSUECDUFUGUHRDVOAUIUJTWKWDEVPWQW
+      RWJWCDBWFVPWBQRTUMUNWFIZVMJVQEVOVNWPECSXAVPVMWFVOUOUPEVMUQURWDVRWCDBWCUSV
+      SBJWCKVPJZVOUTWCXBKWBJWAWBKWAVTVCKVAVBVDVPWBKVEVFVGVHVIVJVKVL $.
+      $( [3-Feb-2015] $)
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.
+    $( The second projection operator applied to an ordered pair yields its
+       second member.  Theorem X.2.8 of [Rosser] p. 283.  (Contributed by SF,
+       3-Feb-2015.) $)
+    proj2op $p |- Proj2 <. A , B >. = B $=
+      ( vz vy vx cv cphi c0c cun wcel wceq wrex wo cab rexbidv elab weq 3bitr4i
+      eqeq1 bitri cop cproj2 csn df-op eleq2i elun vex phiex snex phi011 equcom
+      unex bitr3i rexbii risset orbi12i phieq uneq1d df-proj2 elab2 wn 0cnelphi
+      eleq1d ssun2 0cex snid sselii eleq2 mpbii mto a1i nrex biorfi orcom eqriv
+      ) CABUAZUBZBCFZGZHUCZIZVPJZWADFZGZKZDALZVRBJZMZVRVQJWGWBWAEFZWDKZDALZENZW
+      IWDVTIZKZDBLZENZIZJZWHVPWQWAEDABUDUEWRWAWLJZWAWPJZMWHWAWLWPUFWSWFWTWGWKWF
+      EWAVSVTVRCUGZUHHUIULZWIWAKZWJWEDAWIWAWDSOPWAWMKZDBLZDCQZDBLWTWGXDXFDBXDCD
+      QXFVRWCUJCDUKUMUNWOXEEWAXBXCWNXDDBWIWAWMSOPDVRBUORUPTTWIGZVTIZVPJWBEVRVQX
+      AECQZXHWAVPXIXGVSVTWIVRUQURVCEVPUSUTWGWGWFMWHWFWGWEDAWEVAWCAJWEHWDJZWCVBW
+      EHWAJXJVTWAHVTVSVDHVEVFVGWAWDHVHVIVJVKVLVMWGWFVNTRVO $.
+      $( [3-Feb-2015] $)
+  $}
+
+
+  $( The ordered pair theorem.  Two ordered pairs are equal iff their
+     components are equal.  (Contributed by SF, 2-Jan-2015.) $)
+  opth $p |- ( <. A , B >. = <. C , D >. <-> ( A = C /\ B = D ) ) $=
+    ( cop wceq cproj1 proj1eq proj1op 3eqtr3g cproj2 proj2eq proj2op jca opeq12
+    wa impbii ) ABEZCDEZFZACFZBDFZPTUAUBTRGSGACRSHABICDIJTRKSKBDRSLABMCDMJNACBD
+    OQ $.
+    $( [2-Jan-2015] $)
+
+  $( An ordered pair is a set iff its components are sets.  (Contributed by SF,
+     2-Jan-2015.) $)
+  opexb $p |- ( <. A , B >. e. _V <-> ( A e. _V /\ B e. _V ) ) $=
+    ( cop cvv wcel wa cproj1 proj1op proj1exg syl5eqelr cproj2 proj2op proj2exg
+    jca opexg impbii ) ABCZDEZADEZBDEZFRSTRAQGDABHQDIJRBQKDABLQDMJNABDDOP $.
+    $( [2-Jan-2015] $)
+
+
+  ${
+    $d y z w A $.  $d y z w B $.  $d x y z w $.
+    nfop.1 $e |- F/_ x A $.
+    nfop.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for ordered pairs.  (Contributed by
+       SF, 2-Jan-2015.) $)
+    nfop $p |- F/_ x <. A , B >. $=
+      ( vz vw cop cv cphi wceq wrex cab c0c csn cun df-op nfv nfrex nfab nfcxfr
+      nfun ) ABCHFIZGIJZKZGBLZFMZUCUDNOPKZGCLZFMZPFGBCQAUGUJUFAFUEAGBDUEARSTUIA
+      FUHAGCEUHARSTUBUA $.
+  $}
+
+
+  ${
+    $d x z $.  $d A z $.  $d B z $.  $d ph z $.
+    nfopd.1 $e |- ( ph -> F/_ x A ) $.
+    nfopd.2 $e |- ( ph -> F/_ x B ) $.
+    $( Deduction version of bound-variable hypothesis builder ~ nfop .
+       (Contributed by SF, 2-Jan-2015.) $)
+    nfopd $p |- ( ph -> F/_ x <. A , B >. ) $=
+      ( vz cv wcel wal cab cop wnfc nfaba1 nfop wb wa nfnfc1 wceq abidnf adantr
+      nfan adantl opeq12d nfceqdf syl2anc mpbii ) ABGHZCIZBJGKZUHDIZBJGKZLZMZBC
+      DLZMZBUJULUIBGNUKBGNOABCMZBDMZUNUPPEFUQURQZBUMUOUQURBBCRBDRUBUSUJCULDUQUJ
+      CSURBGCTUAURULDSUQBGDTUCUDUEUFUG $.
+      $( [4-Feb-2008] $)
+  $}
+
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    eqvinop.1 $e |- B e. _V $.
+    eqvinop.2 $e |- C e. _V $.
+    $( A variable introduction law for ordered pairs.  Analog of Lemma 15 of
+       [Monk2] p. 109.  (Contributed by ?who?, 28-May-1995.) $)
+    eqvinop $p |- ( A = <. B , C >. <-> E. x E. y ( A = <. x , y >. /\
+                  <. x , y >. = <. B , C >. ) ) $=
+      ( cv cop wceq wa wex opth ancom bitri anbi2i an13 exbii eqeq2d ceqsexv
+      19.42v opeq2 3bitri opeq1 bitr2i ) CAHZBHZIZJZUHDEIZJZKZBLZALUFDJZCUFEIZJ
+      ZKZALCUJJZUMUQAUMUNUGEJZUIKZKZBLUNUTBLZKUQULVABULUIUSUNKZKVAUKVCUIUKUNUSK
+      VCUFUGDEMUNUSNOPUIUSUNQORUNUTBUAVBUPUNUIUPBEGUSUHUOCUGEUFUBSTPUCRUPURADFU
+      NUOUJCUFDEUDSTUE $.
+      $( [28-May-1995] $)
+  $}
+
+  ${
+    $d x z w A $.  $d y z w A $.  $d z w ph $.
+    $( Substitution of class ` A ` for ordered pair ` <. x , y >. ` .
+       (Unnecessary distinct variable restrictions were removed by Andrew
+       Salmon, 11-Jul-2011.)  (Contributed by ?who?, 27-Dec-1996.)  (Revised by
+       ?who?, 25-Jul-2011.) $)
+    copsexg $p |- ( A = <. x , y >. ->
+                  ( ph <-> E. x E. y ( A = <. x , y >. /\ ph ) ) ) $=
+      ( vz vw cv cop wceq wa wex wb wi vex 19.8a weq syl5bi syl5 weu euequ1 syl
+      eqvinop ex opth anbi1i 2exbii nfe1 wal anass a1i anim2d eximd biidd drex1
+      nfae sylibd exbii 19.40 nfnae dveeq2 nfd 19.9d anim1d syl6 pm2.61i exlimi
+      wn equcom eubii mpbi eupick mpan com12 sylan9 sylbi impbid anbi1d 2exbidv
+      eqeq1 bibi2d imbi12d mpbiri adantr exlimivv pm2.43i ) DBGZCGZHZIZAWIAJZCK
+      BKZLZWIDEGZFGZHZIZWOWHIZJZFKEKWIWLMZEFDWFWGBNCNUBWRWSEFWPWSWQWPWSWQAWQAJZ
+      CKZBKZLZMWQAXBWQAXBWTXAXBWTCOXABOUAUCWQEBPZFCPZJZXBAMWMWNWFWGUDZXBXFAJZCK
+      ZBKZXFAWTXHBCWQXFAXGUEUFXJXDXEAJZCKZJZBKZXFAXIXNBXMBUGCBPCUHZXIXNMXOXIXMC
+      KXNXOXHXMCCBCUOXHXDXKJZXOXMXDXEAUIZXOXKXLXDXKXLMXOXKCOUJUKQULXMXMCBXOXMUM
+      UNUPXOVGZXIXMXNXIXPCKZXRXMXHXPCXQUQXSXDCKZXLJXRXMXDXKCURXRXTXDXLXDXRCXRXD
+      CCBCUSCBEUTVAVBVCRQXMBOVDVEVFXDXNXLXEAXNXDXLXDBSZXNXDXLMBEPZBSYABETYBXDBB
+      EVHVIVJXDXLBVKVLVMXLXEAXECSZXLXEAMCFPZCSYCCFTYDXECCFVHVIVJXEACVKVLVMVNRQV
+      OVPWPWIWQWLXCDWOWHVSZWPWKXBAWPWJWTBCWPWIWQAYEVQVRVTWAWBWCWDVOWE $.
+      $( [25-Jul-2011] $) $( [27-Dec-1996] $)
+  $}
+
+
+  ${
+    $d x y ps $.  $d x y A $.  $d x y B $.
+    $( Closed theorem form of ~ copsex2g .  (Contributed by NM,
+       17-Feb-2013.) $)
+    copsex2t $p |- ( ( A. x A. y ( ( x = A /\ y = B ) -> ( ph <-> ps ) )
+      /\ ( A e. V /\ B e. W ) ) ->
+                  ( E. x E. y ( <. A , B >. = <. x , y >. /\ ph ) <-> ps ) ) $=
+      ( wcel wa cv wceq wb wal wex cop elisset nfe1 nfv nfbi anim12i eeanv nfa1
+      wi sylibr nfa2 nfex opeq12 copsexg eqcoms syl adantl sp 19.21bi bitr3d ex
+      imp exlimd sylan2 ) EGIZFHIZJZCKZELZDKZFLZJZABMZUDZDNZCNZVGDOZCOZEFPZVCVE
+      PZLAJZDOZCOZBMZVBVDCOZVFDOZJVMUTVTVAWACEGQDFHQUAVDVFCDUBUEVKVMVSVKVLVSCVJ
+      CUCVRBCVQCRBCSTVKVGVSDVIDCUFVRBDVQDCVPDRUGBDSTVKVGVSVKVGJAVRBVGAVRMZVKVGV
+      OVNLWBVCEVEFUHWBVNVOACDVNUIUJUKULVKVGVHVKVIDVJCUMUNUQUOUPURURUQUS $.
+  $}
+
+  ${
+    $d x y ps $.  $d x y A $.  $d x y B $.
+    copsex2g.1 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
+    $( Implicit substitution inference for ordered pairs.  (Contributed by NM,
+       28-May-1995.) $)
+    copsex2g $p |- ( ( A e. V /\ B e. W ) ->
+                  ( E. x E. y ( <. A , B >. = <. x , y >. /\ ph ) <-> ps ) ) $=
+      ( wcel cv wceq wex cop wa wb elisset nfe1 nfv nfbi eeanv nfex copsexg syl
+      opeq12 eqcoms bitr3d exlimi sylbir syl2an ) EGJCKZELZCMZDKZFLZDMZEFNZUKUN
+      NZLAOZDMZCMZBPZFHJCEGQDFHQUMUPOULUOOZDMZCMVBULUOCDUAVDVBCVABCUTCRBCSTVCVB
+      DVABDUTDCUSDRUBBDSTVCAVABVCURUQLAVAPZUKEUNFUEVEUQURACDUQUCUFUDIUGUHUHUIUJ
+      $.
+  $}
+
+  ${
+    $d x y z w A $.  $d x y z w B $.  $d x y z w C $.  $d x y z w D $.
+    $d x y z w ps $.  $d x y z w R $.  $d x y z w S $.
+    copsex4g.1 $e |- ( ( ( x = A /\ y = B ) /\ ( z = C /\ w = D ) ) ->
+                     ( ph <-> ps ) ) $.
+    $( An implicit substitution inference for 2 ordered pairs.  (Contributed by
+       ?who?, 5-Aug-1995.) $)
+    copsex4g $p |- ( ( ( A e. R /\ B e. S ) /\ ( C e. R /\ D e. S ) ) ->
+                      ( E. x E. y E. z E. w ( ( <. A , B >. = <. x , y >. /\
+                      <. C , D >. = <. z , w >. ) /\ ph ) <-> ps ) ) $=
+      ( cop cv wceq wa wex wcel eqcom opth anbi12i anbi1i 2exbii cgsex4g syl5bb
+      bitri id ) GHNZCOZDOZNZPZIJNZEOZFOZNZPZQZAQZFRERZDRCRUJGPUKHPQZUOIPUPJPQZ
+      QZAQZFRERZDRCRGKSHLSQIKSJLSQQBVAVFCDUTVEEFUSVDAUMVBURVCUMULUIPVBUIULTUJUK
+      GHUAUGURUQUNPVCUNUQTUOUPIJUAUGUBUCUDUDABVDCDEFGHIJKLVDUHMUEUF $.
+      $( [5-Aug-1995] $)
+  $}
+
+
+  ${
+    $d A z w t u v $.  $d B z w t u v $.  $d C t z $.
+    $( Express equality to an ordered pair.  (Contributed by ?who?,
+       6-Jan-2015.) $)
+    eqop $p |- ( A = <. B , C >. <->
+       A. z ( z e. A <->
+          ( E. t e. B z = Phi t \/ E. t e. C z = ( Phi t u. { 0c } ) ) ) ) $=
+      ( cop wceq cv wcel wb wal cphi wrex c0c csn cun wo cab bitri abid orbi12i
+      dfcleq df-op eleq2i elun bibi2i albii ) CDEFZGAHZCIZUIUHIZJZAKUJUIBHLZGBD
+      MZUIUMNOPGBEMZQZJZAKACUHUBULUQAUKUPUJUKUIUNARZIZUIUOARZIZQZUPUKUIURUTPZIV
+      BUHVCUIABDEUCUDUIURUTUESUSUNVAUOUNATUOATUASUFUGS $.
+      $( [6-Jan-2015] $)
+  $}
+
+
+  ${
+    $d x y z A $.
+    $( "At most one" remains true inside ordered pair quantification.
+       (Contributed by NM, 28-Aug-2007.) $)
+    mosubopt $p |- ( A. y A. z E* x ph ->
+                 E* x E. y E. z ( A = <. y , z >. /\ ph ) ) $=
+      ( wmo wal cv cop wceq wex wa nfa1 nfe1 nfmo wi nfex sps exlimd wn copsexg
+      mobidv biimpcd simpl 2eximi exlimiv con3i exmo ori syl pm2.61d1 ) ABFZDGZ
+      CGZECHDHIJZDKZCKZUOALZDKZCKZBFZUNUPVACUMCMUTCBUSCNOUMUPVAPCUMUOVADULDMUTD
+      BUSDCURDNQOULUOVAPDUOULVAUOAUTBACDEUAUBUCRSRSUQTUTBKZTVAVBUQUTUQBURUOCDUO
+      AUDUEUFUGVBVAUTBUHUIUJUK $.
+  $}
+
+
+  ${
+    $d x y z A $.
+    mosubop.1 $e |- E* x ph $.
+    $( "At most one" remains true inside ordered pair quantification.
+       (Contributed by ?who?, 28-May-1995.) $)
+    mosubop $p |- E* x E. y E. z ( A = <. y , z >. /\ ph ) $=
+      ( wmo wal cv cop wceq wa wex gen2 mosubopt ax-mp ) ABGZDHCHECIDIJKALDMCMB
+      GQCDFNABCDEOP $.
+      $( [28-May-1995] $)
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( The phi operation distributes over union.  (Contributed by SF,
+       20-Feb-2015.) $)
+    phiun $p |- Phi ( A u. B ) = ( Phi A u. Phi B ) $=
+      ( vx vy cv cnnc wcel c1c cplc cif wceq cun wrex cab wo rexun abbii df-phi
+      cphi uneq12i unab eqtri 3eqtr4i ) CEDEZFGUDHIUDJKZDABLZMZCNUEDAMZUEDBMZOZ
+      CNZUFSASZBSZLZUGUJCUEDABPQDCUFRUNUHCNZUICNZLUKULUOUMUPDCARDCBRTUHUICUAUBU
+      C $.
+      $( [20-Feb-2015] $)
+
+    $( The phi operation applied to a set disjoint from the naturals has no
+       effect.  (Contributed by SF, 20-Feb-2015.) $)
+    phidisjnn $p |- ( ( A i^i Nn ) = (/) -> Phi A = A ) $=
+      ( vx vy cnnc cin c0 wceq cv wcel c1c cplc cif wrex wb wal cphi wa syl6bbr
+      weq wn wral disj biimpi r19.21bi iffalse syl eqeq2d equcom risset alrimiv
+      rexbidva cab df-phi eqeq1i abeq1 bitri sylibr ) ADEFGZBHZCHZDIZUTJKZUTLZG
+      ZCAMZUSAIZNZBOZAPZAGZURVGBURVECBSZCAMVFURVDVKCAURUTAIQZVDBCSVKVLVCUTUSVLV
+      ATZVCUTGURVMCAURVMCAUACADUBUCUDVAVBUTUEUFUGCBUHRUKCUSAUIRUJVJVEBULZAGVHVI
+      VNACBAUMUNVEBAUOUPUQ $.
+      $( [20-Feb-2015] $)
+  $}
+
