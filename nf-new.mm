@@ -25278,3 +25278,1104 @@ $)
       $( [10-Oct-2007] $)
   $}
 
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Set construction functions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c 1st $. $( First member of an ordered pair $)
+  $c Swap $.
+  $c SSet $.
+  $c o. $.
+  $c " $.
+  $c SI $.
+
+  $( Extend the definition of a class to include the first member an ordered
+     pair function. $)
+  c1st $a class 1st $.
+
+  $( Extend the definition of a class to include the swap function. $)
+  cswap $a class Swap $.
+
+  $( Extend the definition of a class to include the subset relationship. $)
+  csset $a class SSet $.
+
+  $( Extend the definition of a class to include the singleton image. $)
+  csi $a class SI A $.
+
+  $( Extend the definition of a class to include the composition of two
+     classes. $)
+  ccom $a class ( A o. B ) $.
+
+  $( Extend the definition of a class to include the image of one class under
+     another. $)
+  cima $a class ( A " B ) $.
+
+  ${
+    $d x y z $.
+    $( Define a function that extracts the first member, or abscissa, of an
+       ordered pair. $)
+    df-1st $a |- 1st = { <. x , y >. | E. z x = <. y , z >. } $.
+  $}
+
+  ${
+    $d x y z w $.
+    $( Define a function that swaps the two elements of an ordered pair. $)
+    df-swap $a |- Swap = { <. x , y >. |
+             E. z E. w ( x = <. z , w >. /\ y = <. w , z >. ) } $.
+  $}
+
+  ${
+    $d x y $.
+    $( Define a relationship that holds between subsets. $)
+    df-sset $a |- SSet = { <. x , y >. | x C_ y } $.
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.
+    $( Define the composition of two classes. $)
+    df-co $a |- ( A o. B ) = { <. x , y >. | E. z ( x B z /\ z A y ) } $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( Define the image of one class under another. $)
+    df-ima $a |- ( A " B ) = { x | E. y e. B y A x } $.
+  $}
+
+  ${
+    $d A x y z w $.
+    $( Define the singleton image of a class. $)
+    df-si $a |- SI A = { <. x , y >. |
+       E. z E. w ( x = { z } /\ y = { w } /\ z A w ) } $.
+  $}
+
+  ${
+    $d A x y z w $.
+    $( Membership in ` 1st ` . 
+       (Contributed by SF, 5-Jan-2015.) $)
+    el1st $p |- ( A e. 1st <-> E. x E. y A = <. <. x , y >. , x >. ) $=
+      ( vz c1st wcel cv cop wceq wex wa copab df-1st eleq2i bitri excom exancom
+      elopab vex exbii opex opeq1 eqeq2d ceqsexv exdistr 3bitr3ri ) CEFZCDGZAGZ
+      HZIZUHUIBGZHZIZBJZKZAJDJZCUMUIHZIZBJZAJZUGCUODALZFUQEVBCDABMNUODACROUQUPD
+      JZAJVAUPDAPVCUTAUKUNKZDJZBJVDBJDJUTVCVDBDPVEUSBVEUNUKKDJUSUKUNDQUKUSDUMUI
+      ULASBSUAUNUJURCUHUMUIUBUCUDOTUKUNDBUEUFTOO $.
+      $( [5-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z w $.  $d B x y z w $.  $d C x y z w $.
+    $( The binary relationship over the ` 1st ` function. 
+       (Contributed by SF, 5-Jan-2015.) $)
+    br1stg $p |- ( ( A e. V /\ B e. W ) ->
+       ( <. A , B >. 1st C <-> A = C ) ) $=
+      ( vz vw vx vy cv cop c1st wbr wceq wb breq1d eqeq1 wex wa bitri opeq1 weq
+      bibi12d opeq2 bibi1d wcel df-br el1st w3a eqcom opth anbi1i df-3an bitr4i
+      2exbii vex biidd ceqsex2v 3bitri vtocl2g ) FJZGJZKZCLMZVACNZOAVBKZCLMZACN
+      ZOABKZCLMZVHOFGABDEVAANZVDVGVEVHVKVCVFCLVAAVBUAPVAACQUCVBBNZVGVJVHVLVFVIC
+      LVBBAUDPUEVDVCCKZLUFVMHJZIJZKZVNKZNZIRHRZVEVCCLUGHIVMUHVSHFUBZIGUBZVNCNZU
+      IZIRHRVEVRWCHIVRVQVMNZWCVMVQUJWDVPVCNZWBSZWCVPVNVCCUKWFVTWASZWBSWCWEWGWBV
+      NVOVAVBUKULVTWAWBUMUNTTUOWBVEVEHIVAVBFUPGUPVNVACQWAVEUQURTUSUT $.
+      $( [5-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z w t $.  $d B x y z w t $.
+    setconslem1.1 $e |- A e. _V $.
+    setconslem1.2 $e |- B e. _V $.
+    $( Lemma for the set construction theorems. 
+       (Contributed by SF, 6-Jan-2015.) $)
+    setconslem1 $p |- ( << { A } , B >> e.
+                 ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( (
+        Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) <->
+                E. x e. B A = Phi x ) $=
+      ( vt vz csn cv copk cssetk cins3k cpw1 cimak cvv wcel wa wex wceq exbii
+      cins2k cin c1c ccompl csik csymdif cdif cimagek cnnc cxpk cidk ccnvk cphi
+      cun ccomk wrex w3a wb snex opkelsikg mp2an excom 3anass eqcom sneqb bitri
+      vex anbi1i opkeq1 eleq1d anbi2d ceqsexv 3bitri 19.41v 3bitr2i opkelimagek
+      anass opkelcnvk dfphi2 eqeq2i 3bitr4i elssetk anbi12i opkelcok df-rex
+      ancom ) BHZFIZJKLZKUAZUBUCMMZNUDLWJUAWIUAKUEUELUNUFWKMMNUGWKNUHUIOUJUBUKU
+      IUDOUJUBUNZUHZULZUEZPZWHCJZKPZQZFRZAIZCPZBXAUMZSZQZARZWGCJKWOUOPXDACUPWTW
+      HXAHZSZBXAJZWNPZWRQZQZARZFRXLFRZARXFWSXMFWSXHXJQZARZWRQXOWRQZARXMWPXPWRWP
+      WGGIZHZSZXHXRXAJZWNPZUQZARGRZYCGRZARXPWGOPWHOPWPYDURBUSZFVGGAWGWHWNOOUTVA
+      YCGAVBYEXOAYEXRBSZXHYBQZQZGRXOYCYIGYCXTYHQYIXTXHYBVCXTYGYHXTXSWGSYGWGXSVD
+      XRBGVGVEVFVHVFTYHXOGBDYGYBXJXHYGYAXIWNXRBXAVIVJVKVLVFTVMVHXOWRAVNXQXLAXHX
+      JWRVQTVOTXLAFVBXNXEAXNXJXGCJZKPZQZXDXBQXEXKYLFXGXAUSXHWRYKXJXHWQYJKWHXGCV
+      IVJVKVLXJXDYKXBXABJWMPBWLXANZSXJXDXABWLAVGZDVPBXAWMDYNVRXCYMBXAVSVTWAXACY
+      NEWBWCXDXBWFVMTVOFWGCKWOYFEWDXDACWEWA $.
+      $( [6-Jan-2015] $)
+
+    $( Lemma for the set construction theorems. 
+       (Contributed by SF, 6-Jan-2015.) $)
+    setconslem2 $p |- ( << { A } , B >> e. ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) <->
+         E. x e. B A = ( Phi x u. { 0c } ) ) $=
+      ( vt vy vz csn copk cssetk cins3k cimak cvv wcel wceq wex 3bitr4i bitri
+      wa cv cins2k cin c1c cpw1 ccompl csik csymdif cdif cimagek cnnc cxpk cidk
+      cun ccnvk ccomk c0c wrex elpw121c anbi1i 19.41v bitr4i exbii df-rex excom
+      cphi snex opkeq1 eleq1d ceqsexv elin otkelins2k vex otkelins3k opksnelsik
+      elssetk wb wal wn elimak elsymdif wel opkelimagek opkelcnvk dfphi2 eqeq2i
+      opkex wo anbi12i ancom opkelcok phiex opkelxpk mpbiran2 elsnc orbi12i elun
+      clel3 sneqb bibi12i xchbinx exnal 3bitri con2bii dfcleq elcompl 3bitr4ri
+      ) FUAZBIZCJZJZKUBZXLKLZXLUCUDUEUEZMUFLXLUBXMUBKUGUGLUNUHXNUEUEMUIXNMUJUKN
+      ULUCUMUKUFNULUCUNZUJZUOZKUPZUQIZIZNULZUNZLZUHZXNMZUFZUGZLZUCZOZFXNURZAUAZ
+      COZBYLVFZXSUNZPZTZAQZXJYIXNMOYPACURYKXHYLIZIZIZPZYJTZFQZAQZYRXHXNOZYJTZFQ
+      UUCAQZFQYKUUEUUGUUHFUUGUUBAQZYJTUUHUUFUUIYJAXHUSUTUUBYJAVAVBVCYJFXNVDUUCA
+      FVERUUDYQAUUDUUAXJJZYIOZUUJXLOZUUJYHOZTYQYJUUKFUUAYTVGUUBXKUUJYIXHUUAXJVH
+      VIVJUUJXLYHVKUULYMUUMYPUULYSCJKOYMYSXICKYLVGZBVGZEVLYLCAVMZEVPSUUMYSXIJYG
+      OYLBJZYFOZYPYSXICYGUUNUUOEVNYLBYFUUPDVOGUAZBOZUUSYOOZVQZGVRZUUQYEOZVSYPUU
+      RUVDUVCUVDXHUUSIZIZIZPZXHUUQJZYDOZTZFQZGQZUVBVSZGQUVCVSUVDUVJFXNURZUVMFYD
+      XNUUQYLBWGZVTUUFUVJTZFQUVKGQZFQUVOUVMUVQUVRFUVQUVHGQZUVJTUVRUUFUVSUVJGXHU
+      SUTUVHUVJGVAVBVCUVJFXNVDUVKGFVERSUVLUVNGUVLUVGUUQJZYDOZUVNUVJUWAFUVGUVFVG
+      UVHUVIUVTYDXHUVGUUQVHVIVJUWAUVTXLOZUVTYCOZVQUVBUVTXLYCWAUWBUUTUWCUVAUWBUV
+      EBJKOUUTUVEYLBKUUSVGZUUPDVLUUSBGVMZDVPSUWCUVEYLJZYBOZUVAUVEYLBYBUWDUUPDVN
+      UWFXROZUWFYAOZWHUUSYNOZUUSXSOZWHUWGUVAUWHUWJUWIUWKUVEHUAZJKOZUWLYLJXQOZTZ
+      HQUWLYNPZGHWBZTZHQUWHUWJUWOUWRHUWOUWQUWPTUWRUWMUWQUWNUWPUUSUWLUWEHVMZVPYL
+      UWLJXPOUWLXOYLMZPUWNUWPYLUWLXOUUPUWSWCUWLYLXPUWSUUPWDYNUWTUWLYLWEWFRWIUWQ
+      UWPWJSVCHUVEYLXQKUWDUUPWKHUUSYNYLUUPWLWRRUWIUVEXTOZUWKUWIUXAYLNOUUPUVEYLX
+      TNUWDUUPWMWNUVEXSPUUSUQPUXAUWKUUSUQUWEWSUVEXSUWDWOUUSUQUWEWORSWPUWFXRYAWQ
+      UUSYNXSWQRSWTXASVCUVBGXBXCXDGBYOXEUUQYEUVPXFXGXCWIXCVCSFYIXNXJXICWGVTYPAC
+      VDR $.
+      $( [6-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y t $.  $d B x y t $.  $d C x y t $.
+    setconslem3.1 $e |- A e. _V $.
+    setconslem3.2 $e |- B e. _V $.
+    setconslem3.3 $e |- C e. _V $.
+    $( Lemma for set construction functions.  Set up a mapping between
+       Kuratowski and Quine ordered pairs. 
+       (Contributed by SF, 7-Jan-2015.) $)
+    setconslem3 $p |- ( << { { A } } , << B , C >> >> e.
+        ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+          Ins2_k
+            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+              Ins2_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) ) "_k
+          ~P1 ~P1 ~P1 ~P1 1c ) <-> A = <. B , C >. ) $=
+      ( vx vy vt wcel wceq csn cun copk cssetk cins3k cins2k cimak wex snex c0c
+      cv cphi wrex wo wb wal csik cin c1c cpw1 ccompl csymdif cdif cimagek cnnc
+      cvv cxpk ccnvk ccomk wn cop wa opkex elimak df-rex elpw141c anbi1i 19.41v
+      bitr4i exbii excom 3bitri opkeq1 eleq1d ceqsexv otkelins3k opksnelsik vex
+      elsymdif elssetk bitri otkelins2k setconslem1 setconslem2 orbi12i bibi12i
+      cidk elun xchbinx exnal con2bii eqop elcompl 3bitr4ri ) GUBZAJZWPHUBUCZKH
+      BUDZWPWRUALZMKHCUDZUEZUFZGUGZALZLZBCNZNZOUHZUHZPZOOPZOQZUIUJUKUKZRULPXMQX
+      LQXKMUMXNUKUKZRUNXNRUOUPUQURUIWHUPULUQURUIMUOUSZUHUTZPZXMXMXPOUTWTLUQURMP
+      UMXNRULUHPUIXNRZQZMZQZUMZXORZJZVAABCVBKXHYDULJYEXDYEIUBZWPLZLZLZLZLZKZYFX
+      HNZYCJZVCZISZGSZXCVAZGSXDVAYEYNIXOUDYFXOJZYNVCZISZYQIYCXOXHXFXGVDZVEYNIXO
+      VFUUAYOGSZISYQYTUUCIYTYLGSZYNVCUUCYSUUDYNGYFVGVHYLYNGVIVJVKYOGIVLVJVMYPYR
+      GYPYKXHNZYCJZYRYNUUFIYKYJTYLYMUUEYCYFYKXHVNVOVPUUFUUEXKJZUUEYBJZUFXCUUEXK
+      YBVTUUGWQUUHXBUUGYIXFNXJJYHXENXIJZWQYIXFXGXJYHTZXETZBCVDZVQYHXEXIYGTATVRU
+      UIYGANOJWQYGAOWPTZDVRWPAGVSZDWAWBVMUUHYIXGNZYAJUUOXRJZUUOXTJZUEXBYIXFXGYA
+      UUJUUKUULWCUUOXRXTWIUUPWSUUQXAUUPYGBNXQJWSYGBCXQUUMEFVQHWPBUUNEWDWBUUQYGC
+      NXSJXAYGBCXSUUMEFWCHWPCUUNFWEWBWFVMWGWJWBVKXCGWKVMWLGHABCWMXHYDUUBWNWO $.
+      $( [7-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z t $.
+    $( Lemma for set construction functions.  Create a mapping between the two
+       types of ordered pair abstractions. 
+       (Contributed by SF, 7-Jan-2015.) $)
+    setconslem4 $p |- U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
+     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+          Ins2_k
+            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+              Ins2_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) ) "_k
+          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k A ) =
+    { <. x , y >. | << x , y >> e. A } $=
+      ( vt cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun wcel wa
+      csn wex bitri vz c1c csymdif cdif cimagek cnnc cidk ccnvk ccomk c0c cuni1
+      copk copab cop wceq wrex snex elimak df-rex elin anbi2i an12 vex opkelxpk
+      cv mpbiran2 elvvk anbi1i 19.41vv bitr4i exbii exrot3 opkex opkeq1 anbi12d
+      eleq1 eleq1d ceqsexv setconslem3 ancom 2exbii eluni1 elopab 3bitr4i eqriv
+      opkelcnvk ) UAEEFZEFZGHHIZGGIZGJZKUBLLZMNIWKJWJJWIOUCWLLLZMUDWLMUEUFEFKUG
+      UFNEFKOUEUHZHUIIWKWKWNGUIUJRREFOIUCWLMNHIKWLMJOJUCWMMNZUHZKZCMZUKZUKZAVEZ
+      BVEZULZCPZABUMZUAVEZRZRZWRPZXFXAXBUNUOZXDQZBSASZXFWTPZXFXEPXIDVEZXHULZWQP
+      ZDCUPZXLDWQCXHXGUQZURXQXNXCUOZXNCPZXOWPPZQZQZDSZBSASZXLXQXTXPQZDSZYEXPDCU
+      SYGYCBSASZDSYEYFYHDYFXTXOWHPZYAQZQZYHXPYJXTXOWHWPUTVAYKYIYBQZYHXTYIYAVBYL
+      XSBSASZYBQYHYIYMYBYIXNWGPZYMYIYNXHEPXRXNXHWGEDVCXRVDVFABXNVGTVHXSYBABVIVJ
+      TTVKYCDABVLTTYDXKABYDXDXCXHULZWPPZQZXKYBYQDXCXAXBVMZXSXTXDYAYPXNXCCVPXSXO
+      YOWPXNXCXHVNVQVOVRYQXDXJQXKYPXJXDYPXHXCULWOPXJXCXHWOYRXRWFXFXAXBUAVCZAVCB
+      VCVSTVAXDXJVTTTWATTXMXGWSPXIXFWSYSWBXGWRXFUQWBTXDABXFWCWDWE $.
+      $( [7-Jan-2015] $)
+  $}
+
+
+  $( Lemma for set construction theorems.  The big expression in the middle of
+     ~ setconslem4 forms a set. 
+     (Contributed by SF, 7-Jan-2015.) $)
+  setconslem5 $p |- ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+          Ins2_k
+            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+      ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+              Ins2_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+      Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+      "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) ) "_k
+          ~P1 ~P1 ~P1 ~P1 1c ) e. _V $=
+    ( cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun csymdif cnnc cvv cxpk
+    ssetkex sikex ins3kex pw1ex imakex vvex xpkex cdif cimagek cidk ccnvk ccomk
+    c1c c0c csn addcexlem 1cex imagekex nncex inex idkex complex cnvkex ins2kex
+    unex cokex snex symdifex ) ABZBZCZAACZADZEUFFZFZGHCVFDVEDVDIJVHFZFZGUAZVHGZ
+    UBZKLMZEZUCKHZLMZEZIZUBZUDZBZUEZCZVFVFWAAUEZUGUHZUHZLMZIZCZJZVHGZHZBZCZEZVH
+    GZDZIZDZJZVJGXAVJVDWTVCVBANOOPWSWDWRWCAWBNWAVTVSVOVRVMVNVLVKVHUIVGUFUJQQZRU
+    KKLULSTUMUCVQUNVPLKULUOSTUMURUKUPZOUSPWQWPVHVFWOANUQZWNWMWLWKVHVFWJXDWIWEWH
+    WAAXCNUSWGLWFUTSTURPVAXBRUOOPUMXBRUQURUQVAVIVHXBQQRUO $.
+    $( [7-Jan-2015] $)
+
+  ${
+    $d A x y z w t $.
+    $( Lemma for the set construction functions.  Invert the expression from
+       ~ setconslem4 . 
+       (Contributed by SF, 7-Jan-2015.) $)
+    setconslem6 $p |- ( ( ( _V X._k ( _V X._k _V ) ) i^i
+     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+          Ins2_k
+            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+              Ins2_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) ) "_k
+          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k ~P1 ~P1 A ) =
+    { z | E. x E. y ( z = << x , y >> /\ <. x , y >. e. A ) } $=
+      ( vt vw cv copk wcel wa wex cvv cxpk cssetk cins3k cins2k cpw1 cimak wrex
+      cin wceq cop csik c1c ccompl cun csymdif cdif cimagek cnnc cidk ccnvk c0c
+      ccomk csn elimak df-rex elpw12 anbi1i r19.41v bitr4i exbii rexcom4 opkeq1
+      vex snex eleq1d ceqsexv 3bitr2i bitri exancom opkelxpk mpbiran elvvk elin
+      rexbii 19.41vv 3bitr4i exrot3 anass 19.42v opkeq2 setconslem3 syl6bb opex
+      anbi1d exbidv eleq1 pm5.32i 3bitri 2exbii abbi2i ) CGZAGZBGZHZUAZWNWOUBZD
+      IZJZBKAKZCLLLMZMZNUCUCOZNNOZNPZTUDQQZRUEOXFPXEPXDUFUGXGQQZRUHXGRUIUJLMTUK
+      UJUELMTUFUIULZUCUNOXFXFXINUNUMUOUOLMUFOUGXGRUEUCOTXGRPUFPUGXHRUEZTZDQQZRZ
+      WMXMIEGZWMHZXKIZEXLSZFGZUOZUOZWMHZXKIZFDSZXAEXKXLWMCVEZUPXQXNXLIZXPJZEKZY
+      CXPEXLUQYGXNXTUAZXPJZFDSZEKYIEKZFDSYCYFYJEYFYHFDSZXPJYJYEYLXPFXNDURUSYHXP
+      FDUTVAVBYIFEDVCYKYBFDXPYBEXTXSVFZYHXOYAXKXNXTWMVDVGVHVPVIVJYCXRDIZYBJFKYB
+      YNJZFKZXAYBFDUQYNYBFVKYPWQYAXJIZJZYNJZFKZBKAKZXAYPYRBKAKZYNJZFKYSBKAKZFKU
+      UAYOUUCFYBUUBYNYAXCIZYQJWQBKAKZYQJYBUUBUUEUUFYQUUEWMXBIZUUFUUEXTLIUUGYMXT
+      WMLXBYMYDVLVMABWMVNVJUSYAXCXJVOWQYQABVQVRUSVBUUDUUCFYRYNABVQVBYSFABVSVIYT
+      WTABYTWQYQYNJZJZFKWQUUHFKZJWTYSUUIFWQYQYNVTVBWQUUHFWAWQUUJWSWQUUJXRWRUAZY
+      NJZFKWSWQUUHUULFWQYQUUKYNWQYQXTWPHZXJIUUKWQYAUUMXJWMWPXTWBVGXRWNWOFVEAVEZ
+      BVEZWCWDWFWGYNWSFWRWNWOUUNUUOWEXRWRDWHVHWDWIWJWKVJWJWJWL $.
+      $( [7-Jan-2015] $)
+  $}
+
+  ${
+    $d A t x y $.  $d B t x y $.  $d C t x y $.
+    setconslem7.1 $e |- A e. _V $.
+    setconslem7.2 $e |- B e. _V $.
+    setconslem7.3 $e |- C e. _V $.
+    $( Lemma for the set construction theorems.  Reorganized version of
+       ~ setconslem3 . 
+       (Contributed by SF, 4-Feb-2015.) $)
+    setconslem7 $p |- ( << { { C } } , << A , B >> >> e. ~ ( ( Ins2_k Ins3_k
+        SSet_k (+)
+        ( Ins2_k Ins2_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k
+        ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+          Ins3_k SI_k SI_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) )
+      "_k ~P1 ~P1 ~P1 ~P1 1c ) <-> A = <. B , C >. ) $=
+      ( vx vy vt wcel csn cun copk cssetk cins3k cimak csik wex bitri snex cphi
+      cv wceq wrex c0c wal cins2k cin c1c cpw1 ccompl csymdif cdif cimagek cnnc
+      wo wb cvv cxpk cidk ccnvk ccomk wn wa opkex elimak df-rex elpw141c anbi1i
+      cop 19.41v bitr4i exbii excom opkeq1 eleq1d ceqsexv otkelins2k otkelins3k
+      elsymdif elssetk setconslem1 opksnelsik setconslem2 orbi12i bibi12i exnal
+      vex elun notbii con2bii eqop elcompl 3bitr4ri ) GUBZAJZWOHUBUAZUCHBUDZWOW
+      QUEKZLUCHCUDZUPZUQZGUFZCKZKZABMZMZNOZUGZNXHNUGZUHUIUJUJZPUKOXJUGXINQQOLUL
+      XKUJUJZPUMXKPUNUOURUSUHUTUOUKURUSUHLUNVAZQVBZUGZUGZXJXJXMNVBWSKURUSLOULXK
+      PUKQOUHXKPZQZQZOZLZULZXLPZJZVCABCVJUCXGYCUKJYDXCYDXBVCZGRZXCVCYDIUBZWOKZK
+      ZKZKZKZUCZYGXGMZYBJZVDZIRZGRZYFYDYOIXLUDZYRIYBXLXGXEXFVEZVFYSYGXLJZYOVDZI
+      RZYRYOIXLVGUUCYPGRZIRYRUUBUUDIUUBYMGRZYOVDUUDUUAUUEYOGYGVHVIYMYOGVKVLVMYP
+      GIVNVLSSYQYEGYQYLXGMZYBJZYEYOUUGIYLYKTYMYNUUFYBYGYLXGVOVPVQUUGUUFXIJZUUFY
+      AJZUQZVCYEUUFXIYAVTUUJXBUUHWPUUIXAUUHYJXFMZXHJZWPYJXEXFXHYITZXDTZABVEZVRU
+      ULYHAMNJWPYHABNWOTZDEVSWOAGWHZDWASSUUIUUFXPJZUUFXTJZUPXAUUFXPXTWIUURWRUUS
+      WTUURUUKXOJZWRYJXEXFXOUUMUUNUUOVRUUTYHBMXNJWRYHABXNUUPDEVRHWOBUUQEWBSSUUS
+      YJXEMXSJZWTYJXEXFXSUUMUUNUUOVSUVAYIXDMXRJZWTYIXDXRYHTCTWCUVBYHCMXQJWTYHCX
+      QUUPFWCHWOCUUQFWDSSSWESWFWJSSVMSXBGWGSWKGHABCWLXGYCYTWMWN $.
+      $( [4-Feb-2015] $)
+  $}
+
+
+  ${
+    $d x y z w a b c t $.
+    $( Express the ` 1st ` function via the set construction functions. 
+       (Contributed by SF, 4-Feb-2015.) $)
+    df1st2 $p |- 1st = U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
+     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+          Ins2_k
+            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+              Ins2_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) ) "_k
+          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k (
+~ ( ( Ins2_k Ins3_k SSet_k (+)
+        ( Ins2_k Ins2_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k
+        ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+          Ins3_k SI_k SI_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) )
+      "_k ~P1 ~P1 ~P1 ~P1 1c ) "_k ~P1 1c ) ) $=
+      ( vx vy vz vt cssetk cins3k cins2k cin cpw1 cimak ccompl csik cun csymdif
+      cv cvv cxpk csn wcel wex copk c1c cdif cimagek cnnc ccnvk ccomk c0c copab
+      cidk cop wceq cuni1 c1st wa wrex opkex elimak df-rex anbi1i 19.41v bitr4i
+      elpw11c exbii excom bitri snex opkeq1 ceqsexv vex setconslem7 setconslem4
+      eleq1d opabbii df-1st 3eqtr4ri ) AOZBOZUAZEFZGZEVTEGZHUBIZIZJKFWBGWAELLFZ
+      MNWDIIZJUCWDJUDUEPQHUJUEKPQHMUDUFZLUGZGGWBWBWGEUGUHRRPQMFNWDJKLFHWDJZLLFM
+      NWFJKZWCJZSZABUIVQVRCOZUKULZCTZABUIPPQPQWEWHFWIGMGNWFJKUFHWKJUMUMUNWLWOAB
+      WLDOZWMRZRZULZWPVSUAZWJSZUOZDTZCTZWOWLXADWCUPZXDDWJWCVSVQVRUQURXEWPWCSZXA
+      UOZDTZXDXADWCUSXHXBCTZDTXDXGXIDXGWSCTZXAUOXIXFXJXACWPVCUTWSXACVAVBVDXBCDV
+      EVBVFVFXCWNCXCWRVSUAZWJSZWNXAXLDWRWQVGWSWTXKWJWPWRVSVHVMVIVQVRWMAVJBVJCVJ
+      VKVFVDVFVNABWKVLABCVOVP $.
+      $( [4-Feb-2015] $)
+  $}
+
+  $( The ` 1st ` function is a set. 
+     (Contributed by SF, 6-Jan-2015.) $)
+  1stex $p |- 1st e. _V $=
+    ( cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun csymdif cnnc
+    vvex xpkex inex ssetkex ins3kex ins2kex imakex c1st cdif cimagek cidk ccnvk
+    c1c ccomk c0c cuni1 df1st2 setconslem5 cnvkex addcexlem 1cex pw1ex imagekex
+    csn nncex idkex complex unex sikex cokex snex symdifex uni1ex eqeltri ) UAA
+    ABZABZCDDEZCCEZCFZGUFHZHZIJEVLFVKFZVJKLVNHZHZIUBZVNIZUCZMABZGZUDMJZABZGZKZU
+    CZUEZDZUGZEVLVLWHCUGZUHUQZUQZABZKZEZLZVNIZJZDZEZGZVNIZFKFLVQIJZUEZGZVOWJFZF
+    ZXCDZDZEZKZLZVQIZJZVMIZIZUIZUIAUJXRXQXFXPVIXEVHAAANNONOXDUKULPXOVMXNXMVQVOX
+    LVKCQRSXHXKXGWJCWIQWHWGWFWBWEVTWAVSVRVNUMVMUFUNUOZUOZTUPMAURNOPUDWDUSWCAMUR
+    UTNOPVAUPULZVBVCSSXJXIXCXBVNVLXACQSZWTWSWRWQVNVLWPYBWOWKWNWHCYAQVCWMAWLVDNO
+    VARVEXTTUTVBRPXTTVBVBRVAVEVPVNXTUOUOTUTXSTTVFVFVG $.
+    $( [6-Jan-2015] $)
+
+  ${
+    $d A x y z w t $.
+    $( Membership in the ` Swap ` function. 
+       (Contributed by SF, 6-Jan-2015.) $)
+    elswap $p |- ( A e. Swap <->
+            E. x E. y A = <. <. x , y >. , <. y , x >. >. ) $=
+      ( vz vw cswap wcel cv cop wceq wex copab df-swap eleq2i bitri 2exbii opex
+      wa vex eqeq2d elopab exrot4 19.42vv w3a df-3an ancom opeq1 opeq2 ceqsex2v
+      bitr2i 3bitr3i ) CFGZCDHZEHZIZJZUMAHZBHZIZJZUNURUQIZJZRZBKAKZRZEKDKZCUSVA
+      IZJZBKAKZULCVDDELZGVFFVJCDEABMNVDDECUAOUPVCRZBKAKZEKDKVKEKDKZBKAKVFVIVKDE
+      ABUBVLVEDEUPVCABUCPVMVHABVMUTVBUPUDZEKDKVHVKVNDEVNVCUPRVKUTVBUPUEVCUPUFUJ
+      PUPCUSUNIZJVHDEUSVAUQURASZBSZQURUQVQVPQUTUOVOCUMUSUNUGTVBVOVGCUNVAUSUHTUI
+      OPUKO $.
+      $( [6-Jan-2015] $)
+  $}
+
+  ${
+    $d x y z w t u v $.
+    $( Express the ` Swap ` function via set construction operators. 
+       (Contributed by SF, 6-Jan-2015.) $)
+    dfswap2 $p |- Swap = ( ( ~ ( ( Ins2_k Ins2_k SSet_k (+)
+       ( ( ( Ins2_k
+( Ins2_k Ins3_k ( SSet_k o._k
+              SI_k
+               `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+  Ins3_k SI_k SI_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) i^i
+          Ins3_k SI_k SI_k SI_k SI_k SI_k
+          Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k
+        ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V ) ) ) )
+        "_k
+           ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ) u.
+         ( ( Ins2_k
+( Ins3_k SI_k SI_k
+  ( SSet_k o._k
+    SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k
+        SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+  Ins2_k Ins3_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) i^i
+            Ins3_k SI_k SI_k SI_k SI_k SI_k
+                 ~ ( ( Ins2_k SSet_k (+)
+                       Ins3_k
+( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k )
+        "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k
+        SSet_k ) u.
+                              ( { { 0c } } X._k _V ) ) ) "_k
+                   ~P1 ~P1 1c ) ) "_k
+           ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ) ) )
+                    "_k ~P1 ~P1 ~P1 ~P1 1c )
+               "_k ~P1 1c ) "_k _V ) $=
+      ( vz vt vw vv vu cins3k cimak csik cun csn wceq wex copk wcel wrex bitr4i
+      wa 3bitri snex opksnelsik vx vy cssetk cins2k cin c1c cpw1 ccompl csymdif
+      cswap cdif cimagek cnnc cvv cxpk cidk ccnvk ccomk c0c cv cop opkex elimak
+      df-rex elpw11c anbi1i 19.41v exbii excom opkeq1 eleq1d ceqsexv wel wb wal
+      wn elpw141c elsymdif otkelins2k vex elssetk wo cphi elpw161c 3bitr4i elin
+      otkelins3k setconslem1 setconslem2 bitri orbi12i df-op eleq2i opkelimagek
+      elun cab abid dfphi2 eqeq2i anbi12i dfop2lem1 bibi12i notbii exnal dfcleq
+      con2bii elcompl 3bitr4ri bitr2i elswap elimakv eqriv ) UAUJUCUDZUDZUCUCFZ
+      XMUEUFUGZUGZGUHFXNXOUDUCHHFIUIXQUGUGZGUKXQGULUMUNUOUEUPUMUHUNUOUEIZULZUQZ
+      HURZFZUDZXMXMYAUCURUSJZJUNUOIFUIXQGUHZHZFUEXQGZHZHZFZIZUDZXTHZHZHZHZHZFZU
+      EZXRUGUGZGZYBHZHZFZYHFZUDZIZUDZYGHZHZHZHZFZUEZUUAGZIZUIZXRGZUHZXPGZUNGZUA
+      UTZUBUTZAUTZVAZUVEUVDVAZVAZKZALZUBLUVDUVCMZUVANZUBLUVCUJNUVCUVBNUVJUVLUBU
+      VLBUTZUVEJZJZKZUVMUVKMZUUTNZQZBLZALZUVJUVLUVRBXPOUVMXPNZUVRQZBLZUWABUUTXP
+      UVKUVDUVCVBZVCUVRBXPVDUWDUVSALZBLUWAUWCUWFBUWCUVPALZUVRQUWFUWBUWGUVRAUVMV
+      EVFUVPUVRAVGPVHUVSABVIPRUVTUVIAUVTUVOUVKMZUUTNZUVIUVRUWIBUVOUVNSZUVPUVQUW
+      HUUTUVMUVOUVKVJVKVLCUAVMZCUTZUVHNZVNZCVOZUWHUUSNZVPUVIUWIUWPUWOUWPUVMUWLJ
+      ZJZJZJZJZKZUVMUWHMZUURNZQZBLZCLZUWNVPZCLUWOVPUWPUXDBXROUVMXRNZUXDQZBLZUXG
+      BUURXRUWHUVOUVKVBZVCUXDBXRVDUXKUXECLZBLUXGUXJUXMBUXJUXBCLZUXDQUXMUXIUXNUX
+      DCUVMVQVFUXBUXDCVGPVHUXECBVIPRUXFUXHCUXFUXAUWHMZUURNZUXOXNNZUXOUUQNZVNZVP
+      UXHUXDUXPBUXAUWTSZUXBUXCUXOUURUVMUXAUWHVJVKVLUXOXNUUQVRUXSUWNUXQUWKUXRUWM
+      UXQUWSUVKMXMNUWQUVCMUCNUWKUWSUVOUVKXMUWRSZUWJUWEVSUWQUVDUVCUCUWLSZUBVTZUA
+      VTZVSUWLUVCCVTZUYDWARUXOUUBNZUXOUUPNZWBUWLDUTZWCZKZDUVFOZUWLUYIYEIKZDUVGO
+      ZWBZUXRUWMUYFUYKUYGUYMUYFUYHUVFNZUYJQZDLZUYKUYFUVMUXOMZYTNZBUUAOZUVMUYHJZ
+      JZJZJZJZJZJZKZUYSQZBLZDLZUYQBYTUUAUXOUXAUWHVBZVCUVMUUANZUYSQZBLVUIDLZBLUY
+      TVUKVUNVUOBVUNVUHDLZUYSQVUOVUMVUPUYSDUVMWDZVFVUHUYSDVGPVHUYSBUUAVDVUIDBVI
+      WEVUJUYPDVUJVUGUXOMZYTNZVURYMNZVURYSNZQUYPUYSVUSBVUGVUFSZVUHUYRVURYTUVMVU
+      GUXOVJZVKVLVURYMYSWFVUTUYOVVAUYJVUEUWHMZYLNZUYHEUTWCZKZEUVDOZUYHVVFYEIKZE
+      UVEOZWBZVUTUYOVVEVVDYDNZVVDYKNZWBVVKVVDYDYKWOVVLVVHVVMVVJVVLVUCUVKMZYCNVU
+      AUVDMZYBNVVHVUCUVOUVKYCVUBSZUWJUWEVSVUAUVDUVCYBUYHSZUYCUYDWGEUYHUVDDVTZUY
+      CWHRVVMVUCUVOMZYJNVUBUVNMZYINZVVJVUCUVOUVKYJVVPUWJUWEWGVUBUVNYIVUASZUVESZ
+      TVWAVUAUVEMZYHNVVJVUAUVEYHVVQAVTZTEUYHUVEVVRVWEWIWJRWKWJVUEUXAUWHYLVUDSZU
+      XTUXLVSUYOUYHVVHDWPZVVJDWPZIZNUYHVWGNZUYHVWHNZWBVVKUVFVWIUYHDEUVDUVEWLWMU
+      YHVWGVWHWOVWJVVHVWKVVJVVHDWQVVJDWQWKRWEVVAVUEUXAMZYRNVUDUWTMZYQNZUYJVUEUX
+      AUWHYRVWFUXTUXLWGVUDUWTYQVUCSZUWSSZTVWNVUCUWSMZYPNVUBUWRMZYONZUYJVUCUWSYP
+      VVPUYATVUBUWRYOVWBUWQSZTVWSVUAUWQMZYNNUYHUWLMZXTNZUYJVUAUWQYNVVQUYBTUYHUW
+      LXTVVRUYETVXCUWLXSUYHGZKUYJUYHUWLXSVVRUYEWNUYIVXDUWLUYHWRWSPRRRWTRVHRUYJD
+      UVFVDPVUHUYRUUONZQZBLZDLZUYHUVGNZUYLQZDLUYGUYMVXGVXJDVXGVURUUONZVURUUINZV
+      URUUNNZQVXJVXEVXKBVUGVVBVUHUYRVURUUOVVCVKVLVURUUIUUNWFVXLVXIVXMUYLVXLVVGE
+      UVEOZVVIEUVDOZWBZVXIVXLVVDUUHNVVDUUENZVVDUUGNZWBVXPVUEUXAUWHUUHVWFUXTUXLV
+      SVVDUUEUUGWOVXQVXNVXRVXOVXQVVSUUDNVVTUUCNZVXNVUCUVOUVKUUDVVPUWJUWEWGVUBUV
+      NUUCVWBVWCTVXSVWDYBNVXNVUAUVEYBVVQVWETEUYHUVEVVRVWEWHWJRVXRVVNUUFNVVOYHNV
+      XOVUCUVOUVKUUFVVPUWJUWEVSVUAUVDUVCYHVVQUYCUYDWGEUYHUVDVVRUYCWIRWKRVXIUYHV
+      XNDWPZVXODWPZIZNUYHVXTNZUYHVYANZWBVXPUVGVYBUYHDEUVEUVDWLWMUYHVXTVYAWOVYCV
+      XNVYDVXOVXNDWQVXODWQWKRPVXMVWLUUMNVWMUULNZUYLVUEUXAUWHUUMVWFUXTUXLWGVUDUW
+      TUULVWOVWPTVYEVWQUUKNVWRUUJNZUYLVUCUWSUUKVVPUYATVUBUWRUUJVWBVWTTVYFVXAYGN
+      VXBYFNUYLVUAUWQYGVVQUYBTUYHUWLYFVVRUYETDCXARRRWTRVHUYGVXEBUUAOZVXFDLZBLZV
+      XHBUUOUUAUXOVULVCVYGVUMVXEQZBLVYIVXEBUUAVDVYJVYHBVYJVUPVXEQVYHVUMVUPVXEVU
+      QVFVUHVXEDVGPVHWJVXFBDVIRUYLDUVGVDWEWKUXOUUBUUPWOUWMUWLUYKCWPZUYMCWPZIZNU
+      WLVYKNZUWLVYLNZWBUYNUVHVYMUWLCDUVFUVGWLWMUWLVYKVYLWOVYNUYKVYOUYMUYKCWQUYM
+      CWQWKRWEXBXCRVHUWNCXDRXFCUVCUVHXEUWHUUSUXLXGXHWJVHXIVHUBAUVCXJUBUVAUVCUYD
+      XKWEXL $.
+      $( [6-Jan-2015] $)
+  $}
+
+  $( The ` Swap ` function is a set. 
+     (Contributed by SF, 6-Jan-2015.) $)
+  swapex $p |- Swap e. _V $=
+    ( cssetk cins2k cins3k cin cpw1 cimak ccompl csik cun csymdif ins2kex pw1ex
+    cnnc cvv imakex vvex inex unex sikex ins3kex cswap c1c cdif cxpk cidk ccnvk
+    cimagek ccomk c0c dfswap2 ssetkex addcexlem 1cex imagekex nncex xpkex idkex
+    csn complex cnvkex cokex snex symdifex eqeltri ) UAABZBZAACZVEDUBEZEZFGCVFV
+    GBAHHCIJVIEZEZFUCZVIFZUGZMNUDZDZUEMGZNUDZDZIZUGZUFZHZUHZCZBZVEVEWBAUHZUIURZ
+    URZNUDZIZCZJZVIFZGZHZCZDZVIFZHZHZCZIZBZWAHZHZHZHZHZCZDZVKEZEZFZWDHZHZCZWSCZ
+    BZIZBZWPHZHZHZHZCZDZXMFZIZJZVKFZGZVHFZNFNUJYMNYLVHYKYJVKVFYIVEAUKKZKXNYHXKX
+    MXDXJXCWFXBWEWDAWCUKWBWAVTVPVSVNVOVMVLVIULVHUBUMLZLZOUNMNUOPUPQUEVRUQVQNMUO
+    USPUPQRUNZUTZSVAZTKXAWTWSWRVIVEWQYNWPWOWNWMVIVEWLYNWKWGWJWBAYRUKVAWINWHVBPU
+    PRTVCYPOUSSZTQYPOZSSTRKXIXHXGXFXEWAYQSSSSSTQXLVKVJVIYPLLZLLZOYGXMYAYFXTXQXS
+    XPXOWDYSSSTXRWSUUATKRKYEYDYCYBWPYTSSSSTQUUCORVCUUBOUSYOOPOVD $.
+    $( [6-Jan-2015] $)
+
+  ${
+    $d x y $.
+    $( Express the ` SSet ` relationship via the set construction functors. 
+       (Contributed by SF, 7-Jan-2015.) $)
+    dfsset2 $p |- SSet = U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
+     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+          Ins2_k
+            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+              Ins2_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) ) "_k
+          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k SSet_k ) $=
+      ( vx vy cv cssetk wcel copab cvv cxpk csik cins3k cins2k cin cimak ccompl
+      cpw1 cun csymdif cimagek cnnc ccnvk copk wss c1c cdif ccomk c0c csn cuni1
+      cidk csset wb vex opkelssetkg mp2an opabbii setconslem4 df-sset 3eqtr4ri
+      ) ACZBCZUADEZABFUSUTUBZABFGGHGHDIIJZDDJZDKZLUCOOZMNJVEKVDKVCPQVFOOZMUDVFM
+      RSGHLUISNGHLPRTZIUEJVEVEVHDUEUFUGUGGHPJQVFMNIJLVFMKPKQVGMNTLDMUHUHUJVAVBA
+      BUSGEUTGEVAVBUKAULBULUSUTGGUMUNUOABDUPABUQUR $.
+      $( [7-Jan-2015] $)
+  $}
+
+  $( The subset relationship is a set. 
+     (Contributed by SF, 6-Jan-2015.) $)
+  ssetex $p |- SSet e. _V $=
+    ( cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun csymdif cnnc
+    cimagek ccnvk ccomk csn cuni1 vvex xpkex csset c1c cdif dfsset2 setconslem5
+    cidk c0c cnvkex inex ssetkex imakex uni1ex eqeltri ) UAAABZABZCDDEZCCEZCFZG
+    UBHHZIJEURFUQFUPKLUSHHZIUCUSINMABGUFMJABGKNOZDPEURURVACPUGQQABKELUSIJDEGUSI
+    FKFLUTIJZOZGZCIZRZRAUDVFVEVDCUOVCUNAAASSTSTVBUEUHUIUJUKULULUM $.
+    $( [6-Jan-2015] $)
+
+  ${
+    $d A x y z t w $.  $d B x y z t w $.
+    $( Express the image functor in terms of the set construction functions. 
+       (Contributed by SF, 7-Jan-2015.) $)
+    dfima2 $p |- ( A " B ) =
+      ( ( ( ( _V X._k ( _V X._k _V ) ) i^i
+     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+          Ins2_k
+            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+              Ins2_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) ) "_k
+          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k ~P1 ~P1 A ) "_k B ) $=
+      ( vx vy vw vt cv cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl
+      cun csymdif wcel cima wbr wrex cab c1c cdif cimagek cnnc cidk ccnvk ccomk
+      vz c0c csn df-ima copk vex elimak cop setconslem6 opeq1 eleq1d opkelopkab
+      weq opeq2 df-br bitr4i rexbii bitri abbi2i eqtr4i ) ABUACGZDGZAUBZCBUCZDU
+      DHHHIIJKKLZJJLZJMZNUEOOZPQLVRMVQMVPRSVSOOZPUFVSPUGUHHINUIUHQHINRUGUJZKUKL
+      VRVRWAJUKUMUNUNHIRLSVSPQKLNVSPMRMSVTPQNAOOPZBPZDCABUOVODWCVMWCTVLVMUPWBTZ
+      CBUCVOCWBBVMDUQZURWDVNCBWDVLVMUSZATZVNEGZFGZUSZATVLWIUSZATWGULEFWBVLVMEFU
+      LAUTECVDWJWKAWHVLWIVAVBFDVDWKWFAWIVMVLVEVBCUQWEVCVLVMAVFVGVHVIVJVK $.
+      $( [7-Jan-2015] $)
+  $}
+
+  $( The image of a set under a set is a set. 
+     (Contributed by SF, 7-Jan-2015.) $)
+  imaexg $p |- ( ( A e. V /\ B e. W ) -> ( A " B ) e. _V ) $=
+    ( wcel cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun csymdif
+    cimagek cnnc vvex wa cima c1c cdif cidk ccnvk ccomk c0c dfima2 pw1exg xpkex
+    csn setconslem5 inex imakexg mpan 3syl sylan syl5eqel ) ACEZBDEZUAABUBFFFGZ
+    GZHIIJZHHJZHKZLUCMMZNOJVFKVEKVDPQVGMMZNUDVGNRSFGLUESOFGLPRUFZIUGJVFVFVIHUGU
+    HULULFGPJQVGNOIJLVGNKPKQVHNOZLZAMZMZNZBNZFABUIUTVNFEZVAVOFEUTVLFEVMFEZVPACU
+    JVLFUJVKFEVQVPVCVJFVBTFFTTUKUKUMUNVKVMFFUOUPUQVNBFDUOURUS $.
+    $( [7-Jan-2015] $)
+
+  ${
+    imaex.1 $e |- A e. _V $.
+    imaex.2 $e |- B e. _V $.
+    $( The image of a set under a set is a set. 
+       (Contributed by SF, 7-Jan-2015.) $)
+    imaex $p |- ( A " B ) e. _V $=
+      ( cvv wcel cima imaexg mp2an ) AEFBEFABGEFCDABEEHI $.
+      $( [7-Jan-2015] $)
+  $}
+
+  ${
+    $d A a b c x y z $.  $d B a b c x y z $.
+    $( Express Quine composition via Kuratowski composition. 
+       (Contributed by SF, 7-Jan-2015.) $)
+    dfco1 $p |- ( A o. B ) =
+U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
+     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+          Ins2_k
+            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+              Ins2_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) ) "_k
+          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k
+( ( ( ( _V X._k ( _V X._k _V ) ) i^i
+     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+          Ins2_k
+            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+              Ins2_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) ) "_k
+          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k ~P1 ~P1 A )
+o._k
+( ( ( _V X._k ( _V X._k _V ) ) i^i
+     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+          Ins2_k
+            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+              Ins2_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) ) "_k
+          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k ~P1 ~P1 B ) ) ) $=
+      ( vx vy vz va vb vc cv cvv cxpk cssetk csik cins3k cins2k cpw1 cimak wcel
+      cin cop copk c1c ccompl cun csymdif cdif cimagek cnnc ccnvk ccomk c0c csn
+      cidk copab wbr wa wex cuni1 ccom vex opkelcok setconslem6 weq opeq1 opeq2
+      eleq1d opkelopkab df-br bitr4i anbi12i exbii opabbii setconslem4 3eqtr4ri
+      bitri df-co ) CIZDIZUAJJJKZKLMMNZLLNZLOZSUBPPZQUCNWBOWAOVTUDUEWCPPZQUFWCQ
+      UGUHJKSUMUHUCJKSUDUGUIZMUJNWBWBWELUJUKULULJKUDNUEWCQUCMNSWCQOUDOUEWDQUCZS
+      ZAPPQZWGBPPQZUJZRZCDUNVQEIZBUOZWLVRAUOZUPZEUQZCDUNVSJKWFUISWJQURURABUSWKW
+      PCDWKVQWLUAWIRZWLVRUAWHRZUPZEUQWPEVQVRWHWICUTZDUTZVAWSWOEWQWMWRWNWQVQWLTZ
+      BRZWMFIZGIZTZBRVQXETZBRXCHFGWIVQWLFGHBVBFCVCXFXGBXDVQXEVDVFGEVCXGXBBXEWLV
+      QVEVFWTEUTZVGVQWLBVHVIWRWLVRTZARZWNXFARWLXETZARXJHFGWHWLVRFGHAVBFEVCXFXKA
+      XDWLXEVDVFGDVCXKXIAXEVRWLVEVFXHXAVGWLVRAVHVIVJVKVOVLCDWJVMCDEABVPVN $.
+      $( [7-Jan-2015] $)
+  $}
+
+  $( The composition of two sets is a set. 
+     (Contributed by SF, 7-Jan-2015.) $)
+  coexg $p |- ( ( A e. V /\ B e. W ) -> ( A o. B ) e. _V ) $=
+    ( wcel cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun csymdif
+    ccomk vvex pw1exg ccom c1c cdif cimagek cnnc cidk ccnvk c0c csn cuni1 dfco1
+    wa xpkex setconslem5 cnvkex inex imakexg sylancr cokexg syl2an uni1exg 3syl
+    syl syl5eqel ) ACEZBDEZULZABUAFFGZFGZHIIJZHHJZHKZLUBMMZNOJVLKVKKVJPQVMMMZNU
+    CVMNUDUEFGLUFUEOFGLPUDUGZIRJVLVLVOHRUHUIUIFGPJQVMNOIJLVMNKPKQVNNOZUGZLZFVHG
+    ZVPLZAMZMZNZVTBMZMZNZRZNZUJZUJZFABUKVGWHFEZWIFEWJFEVGVRFEWGFEZWKVIVQVHFFFSS
+    UMZSUMVPUNUOUPVEWCFEZWFFEZWLVFVEVTFEZWBFEZWNVSVPFVHSWMUMUNUPZVEWAFEWQACTWAF
+    TVCVTWBFFUQURVFWPWEFEZWOWRVFWDFEWSBDTWDFTVCVTWEFFUQURWCWFFFUSUTVRWGFFUQURWH
+    FVAWIFVAVBVD $.
+    $( [7-Jan-2015] $)
+
+  ${
+    coex.1 $e |- A e. _V $.
+    coex.2 $e |- B e. _V $.
+    $( The composition of two sets is a set. 
+       (Contributed by SF, 7-Jan-2015.) $)
+    coex $p |- ( A o. B ) e. _V $=
+      ( cvv wcel ccom coexg mp2an ) AEFBEFABGEFCDABEEHI $.
+      $( [7-Jan-2015] $)
+  $}
+
+  ${
+    $d A x y z w a b c $.
+    $( Express singleton image in terms of the Kuratowski singleton image. 
+       (Contributed by SF, 7-Jan-2015.) $)
+    dfsi2 $p |- SI A =
+U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
+     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+          Ins2_k
+            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+              Ins2_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) ) "_k
+          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k
+SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
+     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+          Ins2_k
+            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
+              Ins2_k ( ( Ins2_k SSet_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
+        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k SSet_k
+          (+)
+          ( Ins2_k Ins3_k SSet_k u.
+            Ins3_k SI_k SI_k SSet_k ) )
+            "_k ~P1 ~P1 ~P1 ~P1 1c ) )
+  "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+        "_k
+         ~P1 ~P1 1c ) )
+    "_k ~P1 ~P1 1c ) ) ) "_k
+          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k ~P1 ~P1 A ) ) $=
+      ( vz vw vx vy va vb cv cvv cxpk cssetk csik cins3k cins2k cin cpw1 ccompl
+      cimak cun wcel vc copk c1c csymdif cdif cimagek cnnc cidk ccnvk ccomk c0c
+      csn copab wceq wbr w3a wex cuni1 csi wb vex opkelsikg cop setconslem6 weq
+      mp2an opeq1 eleq1d opeq2 opkelopkab df-br bitr4i 2exbii bitri setconslem4
+      3anbi3i opabbii df-si 3eqtr4ri ) BHZCHZUBIIIJZJKLLMZKKMZKNZOUCPPZRQMWENWD
+      NWCSUDWFPPZRUEWFRUFUGIJOUHUGQIJOSUFUIZLUJMWEWEWHKUJUKULULIJSMUDWFRQLMOWFR
+      NSNUDWGRQZOAPPRZLZTZBCUMVTDHZULUNZWAEHZULUNZWMWOAUOZUPZEUQDUQZBCUMWBIJWIU
+      IOWKRURURAUSWLWSBCWLWNWPWMWOUBWJTZUPZEUQDUQZWSVTITWAITWLXBUTBVACVADEVTWAW
+      JIIVBVFXAWRDEWTWQWNWPWTWMWOVCZATZWQFHZGHZVCZATWMXFVCZATXDUAFGWJWMWOFGUAAV
+      DFDVEXGXHAXEWMXFVGVHGEVEXHXCAXFWOWMVIVHDVAEVAVJWMWOAVKVLVPVMVNVQBCWKVOBCD
+      EAVRVS $.
+      $( [7-Jan-2015] $)
+  $}
+
+  $( The singleton image of a set is a set. 
+     (Contributed by SF, 7-Jan-2015.) $)
+  siexg $p |- ( A e. V -> SI A e. _V ) $=
+    ( wcel cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun csymdif
+    cimagek cnnc vvex xpkex 3syl csi c1c cdif cidk ccnvk ccomk c0c cuni1 pw1exg
+    csn dfsi2 setconslem5 inex imakexg mpan sikexg cnvkex uni1exg syl5eqel ) AB
+    CZAUADDEZDEZFGGHZFFHZFIZJUBKKZLMHVEIVDIVCNOVFKKZLUCVFLPQDEJUDQMDEJNPUEZGUFH
+    VEVEVHFUFUGUJUJDENHOVFLMGHJVFLINIOVGLMZUEZJZDVAEZVIJZAKZKZLZGZLZUHZUHZDAUKU
+    TVRDCZVSDCVTDCUTVPDCZVQDCZWAUTVNDCVODCZWBABUIVNDUIVMDCWDWBVLVIDVARDDRRSZSUL
+    UMVMVODDUNUOTVPDUPVKDCWCWAVBVJVADWERSVIULUQUMVKVQDDUNUOTVRDURVSDURTUS $.
+    $( [7-Jan-2015] $)
+
+  ${
+    siex.1 $e |- A e. _V $.
+    $( The singleton image of a set is a set. 
+       (Contributed by SF, 7-Jan-2015.) $)
+    siex $p |- SI A e. _V $=
+      ( cvv wcel csi siexg ax-mp ) ACDAECDBACFG $.
+      $( [7-Jan-2015] $)
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( Membership in an image.  Theorem 34 of [Suppes] p. 65. 
+       (Contributed by SF, 19-Apr-2004.) $)
+    elima $p |- ( A e. ( B " C ) <-> E. x e. C x B A ) $=
+      ( vy cima wcel cvv wbr wrex elex brex simprd rexlimivw wceq breq2 rexbidv
+      cv df-ima elab2g pm5.21nii ) BCDFZGBHGZARZBCIZADJZBUBKUEUCADUEUDHGUCUDBCL
+      MNUDERZCIZADJUFEBUBHUGBOUHUEADUGBUDCPQEACDSTUA $.
+      $( [19-Apr-2004] $)
+
+    $( Membership in an image.  Theorem 34 of [Suppes] p. 65. 
+       (Contributed by SF, 11-Aug-2004.) $)
+    elima2 $p |- ( A e. ( B " C ) <-> E. x ( x e. C /\ x B A ) ) $=
+      ( cima wcel cv wbr wrex wa wex elima df-rex bitri ) BCDEFAGZBCHZADIODFPJA
+      KABCDLPADMN $.
+      $( [11-Aug-2004] $)
+
+    $( Membership in an image.  Theorem 34 of [Suppes] p. 65. 
+       (Contributed by SF, 14-Aug-1994.) $)
+    elima3 $p |- ( A e. ( B " C ) <-> E. x ( x e. C /\ <. x , A >. e. B ) ) $=
+      ( cima wcel cv cop wrex wa wex wbr elima df-br rexbii bitri df-rex ) BCDE
+      FZAGZBHCFZADIZSDFTJAKRSBCLZADIUAABCDMUBTADSBCNOPTADQP $.
+      $( [14-Aug-1994] $)
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( Binary relationship form of the subset relationship. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    brssetg $p |- ( ( A e. V /\ B e. W ) -> ( A SSet B <-> A C_ B ) ) $=
+      ( vx vy cv wss csset sseq1 sseq2 df-sset brabg ) EGZFGZHAOHABHEFABCDINAOJ
+      OBAKEFLM $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    brsset.1 $e |- A e. _V $.
+    brsset.2 $e |- B e. _V $.
+    $( Binary relationship form of the subset relationship. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    brsset $p |- ( A SSet B <-> A C_ B ) $=
+      ( cvv wcel csset wbr wss wb brssetg mp2an ) AEFBEFABGHABIJCDABEEKL $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    brssetsn.1 $e |- A e. _V $.
+    brssetsn.2 $e |- B e. _V $.
+    $( Set membership in terms of the subset relationship. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    brssetsn $p |- ( { A } SSet B <-> A e. B ) $=
+      ( csn csset wbr wss wcel snex brsset snss bitr4i ) AEZBFGNBHABINBAJDKABCL
+      M $.
+      $( [11-Feb-2015] $)
+
+    $( Set membership in terms of the subset relationship. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    opelssetsn $p |- ( <. { A } , B >. e. SSet <-> A e. B ) $=
+      ( csn cop csset wcel wbr df-br brssetsn bitr3i ) AEZBFGHMBGIABHMBGJABCDKL
+      $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    $d A w $.  $d A x $.  $d A y $.  $d A z $.  $d B w $.  $d B x $.  $d B y $.
+    $d B z $.  $d R w $.  $d R x $.  $d R y $.  $d R z $.  $d w x $.  $d w y $.
+    $d w z $.  $d x y $.  $d x z $.  $d y z $.
+
+    $( Binary relationship over a singleton image. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    brsi $p |- ( A SI R B <->
+          E. x E. y ( A = { x } /\ B = { y } /\ x R y ) ) $=
+      ( vz vw wbr cvv wcel wa cv csn wceq w3a wex snex eleq1 eqeq1 2exbidv brex
+      csi pm3.2i bi2anan9 mpbiri 3adant3 exlimivv 3anbi1d df-si brabg pm5.21nii
+      3anbi2d ) CDEUBZHCIJZDIJZKZCALZMZNZDBLZMZNZUQUTEHZOZBPAPZCDUMUAVDUPABUSVB
+      UPVCUSVBKUPURIJZVAIJZKVFVGUQQUTQUCUSUNVFVBUOVGCURIRDVAIRUDUEUFUGFLZURNZGL
+      ZVANZVCOZBPAPUSVKVCOZBPAPVEFGCDIIUMVHCNZVLVMABVNVIUSVKVCVHCURSUHTVJDNZVMV
+      DABVOVKVBUSVCVJDVASULTFGABEUIUJUK $.
+      $( [11-Feb-2015] $)
+  $}
