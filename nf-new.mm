@@ -27467,11 +27467,11 @@ $)
        ?who?, 30-Sep-2002.) $)
     inopab $p |- ( { <. x , y >. | ph } i^i { <. x , y >. | ps } ) =
                { <. x , y >. | ( ph /\ ps ) } $=
-      ( vz vw copab cin wrel relopab relin1 ax-mp cop wcel wsbc sban opelopabsb
-      wa cv sbbii anbi12i 3bitr4ri elin 3bitr4i eqrelriiv ) EFACDGZBCDGZHZABRZC
-      DGZUFIUHIACDJUFUGKLUICDJESZFSZMZUFNZUMUGNZRZUICUKOZDULOZUMUHNUMUJNACUKOZB
-      CUKOZRZDULOUSDULOZUTDULOZRURUPUSUTDFPUQVADFABCEPTUNVBUOVCACDEFQBCDEFQUAUB
-      UMUFUGUCUICDEFQUDUE $.
+      ( vz vw copab cin wa wrel relopab relin1 ax-mp cop wcel wsbc sbcan sbcbii
+      cv opelopabsb anbi12i 3bitr4ri elin 3bitr4i eqrelriiv ) EFACDGZBCDGZHZABI
+      ZCDGZUFJUHJACDKUFUGLMUICDKESZFSZNZUFOZUMUGOZIZUIDULPZCUKPZUMUHOUMUJOADULP
+      ZBDULPZIZCUKPUSCUKPZUTCUKPZIURUPUSUTCUKQUQVACUKABDULQRUNVBUOVCACDUKULTBCD
+      UKULTUAUBUMUFUGUCUICDUKULTUDUE $.
       $( [30-Sep-2002] $)
 
     $( The intersection of two cross products.  Exercise 9 of [TakeutiZaring]
