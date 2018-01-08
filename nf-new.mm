@@ -11402,8 +11402,8 @@ $)
 
   ${
     $d A x $.
-    $( A class is not equal to its complement. 
-       (Contributed by SF, 11-Jan-2015.) $)
+    $( A class is not equal to its complement.  (Contributed by SF,
+       11-Jan-2015.) $)
     necompl $p |- ~ A =/= A $=
       ( vx ccompl wne cv wcel wb wn wex pm5.19 elcompl bibi2i mtbir 19.8a ax-mp
       vex wal dfcleq necon3abii exnal bitr4i mpbir necomi ) AACZAUDDZBEZAFZUFUD
@@ -30323,15 +30323,15 @@ $)
       $( [27-Jan-2004] $)
   $}
 
+
   ${
     $d x y z $.  $d z ph $.
     $( A class of ordered pairs is a function when there is at most one second
-       member for each pair.  (Contributed by ?who?, 16-May-1995.) $)
+       member for each pair.  (Contributed by NM, 16-May-1995.) $)
     funopab $p |- ( Fun { <. x , y >. | ph } <-> A. x E* y ph ) $=
-      ( copab wfun wbr wmo wal wrel relopab hbopab1 hbopab2 dffun6f mpbiran cop
-      vz cv wcel df-br bitri opabid mobii albii ) ABCDZEZBQZCQZUDFZCGZBHZACGZBH
-      UEUDIUJABCJBCPUDABCPKABCPLMNUIUKBUHACUHUFUGOUDRAUFUGUDSABCUATUBUCT $.
-      $( [16-May-1995] $)
+      ( copab wfun wbr wmo wal wrel relopab nfopab1 nfopab2 dffun6f mpbiran cop
+      cv wcel df-br opabid bitri mobii albii ) ABCDZEZBPZCPZUCFZCGZBHZACGZBHUDU
+      CIUIABCJBCUCABCKABCLMNUHUJBUGACUGUEUFOUCQAUEUFUCRABCSTUAUBT $.
   $}
 
   ${
@@ -30353,15 +30353,13 @@ $)
   ${
     $d x y z F $.  $d x y z G $.
     $( The composition of two functions is a function.  Exercise 29 of
-       [TakeutiZaring] p. 25.  (The proof was shortened by Andrew Salmon,
-       17-Sep-2011.)  (Contributed by ?who?, 26-Jan-1997.)  (Revised by ?who?,
-       18-Sep-2011.) $)
+       [TakeutiZaring] p. 25.  (Contributed by NM, 26-Jan-1997.)  (Proof
+       shortened by Andrew Salmon, 17-Sep-2011.) $)
     funco $p |- ( ( Fun F /\ Fun G ) -> Fun ( F o. G ) ) $=
       ( vx vz vy wfun wa cv wbr wex copab wmo wal funmo alrimiv moexexv syl2anr
-      ccom funopab sylibr df-co funeqi ) AFZBFZGZCHDHZBIZUFEHAIZGDJZCEKZFZABRZF
-      UEUIELZCMUKUEUMCUDUGDLUHELZDMUMUCCDBNUCUNDDEANOUGUHDEPQOUICESTULUJCEDABUA
-      UBT $.
-      $( [18-Sep-2011] $) $( [26-Jan-1997] $)
+      ccom funopab sylibr df-co funeqi ) AFZBFZGZCHZDHZBIZUGEHAIZGDJZCEKZFZABRZ
+      FUEUJELZCMULUEUNCUDUHDLUIELZDMUNUCDUFBNUCUODEUGANOUHUIDEPQOUJCESTUMUKCEDA
+      BUAUBT $.
   $}
 
   ${
@@ -30376,19 +30374,17 @@ $)
   ${
     $d x y F $.  $d x y G $.  $d x y A $.
     $( The restriction of a function to the domain of a subclass equals the
-       subclass.  (Contributed by ?who?, 15-Aug-1994.)  (Revised by ?who?,
-       19-Mar-2004.) $)
+       subclass.  (Contributed by NM, 15-Aug-1994.) $)
     funssres $p |- ( ( Fun F /\ G C_ F ) -> ( F |` dom G ) = G ) $=
       ( vx vy wfun wss wa cdm cres wceq cv cop wcel wb wal wi ssel wex imp wrel
-      opeldm a1i jcad adantl weu funeu2 eldm2 ancrd eximdv syl5bi eupick syl2an
+      adantl opeldm a1i jcad weu funeu2 eldm2 ancrd eximdv syl5bi eupick syl2an
       exp43 com23 com34 pm2.43d imp3a impbid syl6rbbr relres funrel relss mpan9
       opelres alrimivv eqrel sylancr mpbird ) AEZBAFZGZABHZIZBJZCKZDKZLZVMMZVQB
-      MZNZDOCOZVKVTCDVKVSVQAMZVOVLMZGZVRVKVSWDVJVSWDPVIVJVSWBWCBAVQQZVSWCPVJVOV
-      PBUAUBUCUDVKWBWCVSVKWBWCVSPVKWBWCWBVSVIVJWBWCWBVSPZPZPVIWBVJWGVIWBVJWCWFV
-      IWBGWBDUEWBVSGZDRZWFVJWCGCDAUFVJWCWIWCVSDRVJWIDVOBUGVJVSWHDVJVSWBWEUHUIUJ
-      SWBVSDUKULUMUNSUOUPUQURVOVPAVLVDUSVEVKVMTBTZVNWANAVLUTVIATVJWJAVABAVBVCCD
-      VMBVFVGVH $.
-      $( [19-Mar-2004] $) $( [15-Aug-1994] $)
+      MZNZDOCOZVKVTCDVKVSVQAMZVOVLMZGZVRVKVSWDVKVSWBWCVJVSWBPVIBAVQQZUAVSWCPVKV
+      OVPBUBUCUDVKWBWCVSVKWBWCVSPVKWBWCWBVSVIVJWBWCWBVSPZPZPVIWBVJWGVIWBVJWCWFV
+      IWBGWBDUEWBVSGZDRZWFVJWCGDVOVPAUFVJWCWIWCVSDRVJWIDVOBUGVJVSWHDVJVSWBWEUHU
+      IUJSWBVSDUKULUMUNSUOUPUQURVOVPAVLVDUSVEVKVMTBTZVNWANAVLUTVIATVJWJAVABAVBV
+      CCDVMBVFVGVH $.
   $}
 
   $( Equality of restrictions of a function and a subclass.  (Contributed by
@@ -30422,19 +30418,17 @@ $)
   $}
 
   ${
-    $d x y A $.  $d x y B $.
+    $d A x y $.  $d B x y $.
     funsn.1 $e |- A e. _V $.
     funsn.2 $e |- B e. _V $.
     $( A singleton of an ordered pair is a function.  Theorem 10.5 of [Quine]
-       p. 65.  (Contributed by ?who?, 12-Aug-1994.)  (Revised by ?who?,
-       1-Oct-2013.) $)
+       p. 65.  (Contributed by NM, 12-Aug-1994.) $)
     funsn $p |- Fun { <. A , B >. } $=
       ( vx vy cop csn wfun wrel cv wbr wmo wal relsnop wceq wi moeq vex bitri
-      a1i wcel df-br opex elsn opth mobii moanimv mpbir ax-gen dffun6 mpbir2an
+      a1i wcel df-br opex elsnc opth mobii moanimv mpbir ax-gen dffun6 mpbir2an
       wa ) ABGZHZIUOJEKZFKZUOLZFMZENABCDOUSEUSUPAPZUQBPZFMZQZVBUTFBRUAUSUTVAUMZ
       FMVCURVDFURUPUQGZUOUBZVDUPUQUOUCVFVEUNPVDVEUNUPUQESFSUDUEUPUQABUFTTUGUTVA
       FUHTUIUJEFUOUKUL $.
-      $( [1-Oct-2013] $) $( [12-Aug-1994] $)
   $}
 
   ${
@@ -30492,7 +30486,7 @@ $)
          -> { <. A , C >. , <. B , D >. } Fn { A , B } ) $=
       ( wne wcel wa w3a cop cpr wfun cdm wceq wfn funprg dmpropg 3ad2ant3 df-fn
       sylanbrc ) ABIZAGJBHJKZCEJDFJKZLACMBDMNZOUGPABNZQZUGUHRABCDEFGHSUFUDUIUEA
-      BCDEFTUAUGUHUBUC $.
+      CBDEFTUAUGUHUBUC $.
       $( [1-Oct-2013] $) $( [26-Jun-2011] $)
   $}
 
