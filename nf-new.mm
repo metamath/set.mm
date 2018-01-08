@@ -14332,6 +14332,19 @@ $)
       $( [29-Jan-2015] $)
   $}
 
+
+  ${
+    $d A x $.  $d B x $.
+    $( Two ways of saying that two classes are disjoint.  (Contributed by SF,
+       5-Feb-2015.) $)
+    disj5 $p |- ( ( A i^i B ) = (/) <-> A C_ ~ B ) $=
+      ( vx cv wcel wn wral ccompl wi wal cin wceq wss vex elcompl ralbii df-ral
+      c0 bitr3i disj dfss2 3bitr4i ) CDZBEFZCAGZUCAEUCBHZEZICJZABKRLAUFMUEUGCAG
+      UHUGUDCAUCBCNOPUGCAQSCABTCAUFUAUB $.
+      $( [5-Feb-2015] $)
+  $}
+
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                        The union of a class
@@ -26585,15 +26598,13 @@ $)
 
   ${
     $d x y z A $.  $d x y z B $.  $d x y z C $.
-    $( Equality theorem for cross product.  (Contributed by NM,
-       4-Jul-1994.) $)
+    $( Equality theorem for cross product.  (Contributed by NM, 4-Jul-1994.) $)
     xpeq1 $p |- ( A = B -> ( A X. C ) = ( B X. C ) ) $=
       ( vx vy wceq cv wcel wa copab cxp eleq2 anbi1d opabbidv df-xp 3eqtr4g ) A
       BFZDGZAHZEGCHZIZDEJRBHZTIZDEJACKBCKQUAUCDEQSUBTABRLMNDEACODEBCOP $.
       $( [4-Jul-1994] $)
 
-    $( Equality theorem for cross product.  (Contributed by NM,
-       5-Jul-1994.) $)
+    $( Equality theorem for cross product.  (Contributed by NM, 5-Jul-1994.) $)
     xpeq2 $p |- ( A = B -> ( C X. A ) = ( C X. B ) ) $=
       ( vx vy wceq cv wcel wa copab cxp eleq2 anbi2d opabbidv df-xp 3eqtr4g ) A
       BFZDGCHZEGZAHZIZDEJRSBHZIZDEJCAKCBKQUAUCDEQTUBRABSLMNDECAODECBOP $.
@@ -26798,8 +26809,8 @@ $)
     ralxpf.2 $e |- F/ z ph $.
     ralxpf.3 $e |- F/ x ps $.
     ralxpf.4 $e |- ( x = <. y , z >. -> ( ph <-> ps ) ) $.
-    $( Version of ~ ralxp with bound-variable hypotheses.  (Contributed by
-       NM, 18-Aug-2006.)  (Revised by ?who?, 20-Dec-2008.) $)
+    $( Version of ~ ralxp with bound-variable hypotheses.  (Contributed by NM,
+       18-Aug-2006.)  (Revised by ?who?, 20-Dec-2008.) $)
     ralxpf $p |- ( A. x e. ( A X. B ) ph <-> A. y e. A A. z e. B ps ) $=
       ( vw vu vv wral wsb nfv cv wceq nfsb cxp cbvralsv nfcv nfs1 nfral sbequ12
       ralbii weq ralbidv cbvral cop wa wex wb eqvinop nfbi sbhypf opth sylan9bb
@@ -26811,8 +26822,8 @@ $)
       VBVBVAVCVDVE $.
       $( [20-Dec-2008] $) $( [18-Aug-2006] $)
 
-    $( Version of ~ rexxp with bound-variable hypotheses.  (Contributed by
-       NM, 19-Dec-2008.) $)
+    $( Version of ~ rexxp with bound-variable hypotheses.  (Contributed by NM,
+       19-Dec-2008.) $)
     rexxpf $p |- ( E. x e. ( A X. B ) ph <-> E. y e. A E. z e. B ps ) $=
       ( wn cxp wral wrex nfn cv cop wb dfrex2 notbi ralxpf notbii rexbii rexnal
       wceq sylib bitri 3bitr4i ) ALZCFGMZNZLBLZEGNZDFNZLZACUKOBEGOZDFOZULUOUJUM
@@ -27843,17 +27854,17 @@ $)
   $}
 
   ${
-    $d x y z w v $.  $d z w v A $.
-    dfdmf.1 $e |- ( z e. A -> A. x z e. A ) $.
-    dfdmf.2 $e |- ( z e. A -> A. y z e. A ) $.
+    $d x y w v $.  $d w v A $.
+    dfdmf.1 $e |- F/_ x A $.
+    dfdmf.2 $e |- F/_ y A $.
     $( Definition of domain, using bound-variable hypotheses instead of
-       distinct variable conditions.  (Contributed by ?who?, 8-Mar-1995.) $)
-    dfdmf $p |- dom A = { x | E. y <. x , y >. e. A } $=
-      ( vw vv cdm cv cop wcel wex cab dfdm3 ax-17 hbel wceq opeq2 eleq1d exbidv
-      cbvex abbii hbex opeq1 cbvab 3eqtri ) DIGJZHJZKZDLZHMZGNUHBJZKZDLZBMZGNAJ
-      ZUMKZDLZBMZANGHDOULUPGUKUOHBBCCUJDCJZUJLBPFQUOHPUIUMRUJUNDUIUMUHSTUBUCUPU
-      TGAUOABACCUNDVAUNLAPEQUDUTGPUHUQRZUOUSBVBUNURDUHUQUMUETUAUFUG $.
-      $( [8-Mar-1995] $)
+       distinct variable conditions.  (Contributed by NM, 8-Mar-1995.)
+       (Revised by Mario Carneiro, 15-Oct-2016.) $)
+    dfdmf $p |- dom A = { x | E. y x A y } $=
+      ( vw vv cdm cv wbr wex cab dfdm2 nfcv nfbr nfv breq2 cbvex abbii nfex weq
+      breq1 exbidv cbvab 3eqtri ) CHFIZGIZCJZGKZFLUFBIZCJZBKZFLAIZUJCJZBKZALFGC
+      MUIULFUHUKGBBUFUGCBUFNEBUGNOUKGPUGUJUFCQRSULUOFAUKABAUFUJCAUFNDAUJNOTUOFP
+      FAUAUKUNBUFUMUJCUBUCUDUE $.
   $}
 
   ${
@@ -27942,14 +27953,15 @@ $)
       $( [3-Feb-2004] $)
   $}
 
+
   ${
     $d x y z $.  $d z ph $.
-    $( The domain of a class of ordered pairs.  (Contributed by ?who?,
-       16-May-1995.) $)
+    $( The domain of a class of ordered pairs.  (Contributed by NM,
+       16-May-1995.)  (Revised by Mario Carneiro, 4-Dec-2016.) $)
     dmopab $p |- dom { <. x , y >. | ph } = { x | E. y ph } $=
-      ( vz copab cdm cv cop wcel wex cab hbopab1 dfdmf opabid exbii abbii eqtri
-      hbopab2 ) ABCEZFBGCGHSIZCJZBKACJZBKBCDSABCDLABCDRMUAUBBTACABCNOPQ $.
-      $( [16-May-1995] $)
+      ( copab cdm wbr wex cab nfopab1 nfopab2 dfdmf cop wcel df-br opabid bitri
+      cv exbii abbii eqtri ) ABCDZEBQZCQZUAFZCGZBHACGZBHBCUAABCIABCJKUEUFBUDACU
+      DUBUCLUAMAUBUCUANABCOPRST $.
   $}
 
   ${
@@ -28189,8 +28201,12 @@ $)
     imaeq2d $p |- ( ph -> ( C " A ) = ( C " B ) ) $=
       ( wceq cima imaeq2 syl ) ABCFDBGDCGFEBCDHI $.
       $( [12-Dec-2006] $)
-  $}
 
+    imaeq12d.2 $e |- ( ph -> C = D ) $.
+    $( Equality theorem for image.  (Contributed by SF, 8-Jan-2018.) $)
+    imaeq12d $p |- ( ph -> ( A " C ) = ( B " D ) ) $=
+      ( cima imaeq1d imaeq2d eqtrd ) ABDHCDHCEHABCDFIADECGJK $.
+  $}
 
   ${
     $d A t x $.  $d B t x $.  $d C t x $.
@@ -28318,20 +28334,17 @@ $)
       LUNUPUICUKBGCTUAUQUKDCBGDTUBUCUDUEUF $.
   $}
 
+
   ${
     $d A y z $.  $d B y z $.  $d C y z $.  $d x y z $.  $d F y z $.
     $( Move class substitution in and out of the image of a function.
-       (Contributed by FL, 15-Dec-2006.) $)
+       (Contributed by FL, 15-Dec-2006.)  (Proof shortened by Mario Carneiro,
+       4-Dec-2016.) $)
     csbima12g $p |- ( A e. C -> [_ A / x ]_ ( F " B ) =
                  ( [_ A / x ]_ F " [_ A / x ]_ B ) ) $=
-      ( vy vz wcel cv cima ax-17 hbcsb1g hbcsb1f csbeq1a imaeq1d imaeq2d 3eqtr3d
-      csb wceq csbcog hbimad wel hbima vex weq vtoclef a1i 3eqtrd csbiegf eqtrd
-      hbeq ) BDHZFBAFIZECJZRZRFBAUMERZRZFBAUMCRZRZJZABUNRABERZABCRZJZFGBUOUTDUL
-      FGUQUSULFKFGBUPDGIBHFKZLFGBURDVDLUAUMBSZUOUPURJZUQURJUTUOVFSZVEVGAUMAGGUO
-      VFAGUMUNGFUBAKZMAGUPURAGUMEVHMAGUMCVHMUCUKFUDAFUEZUNUPCJUOVFVIEUPCAUMENOA
-      UMUNNVICURUPAUMCNPQUFUGVEUPUQURFBUPNOVEURUSUQFBURNPUHUIAFBUNDTULUTVAUSJVC
-      ULUQVAUSAFBEDTOULUSVBVAAFBCDTPUJQ $.
-      $( [13-Dec-2006] $)
+      ( vy cv cima csb csbeq1 imaeq12d eqeq12d vex nfcsb1v nfima csbeq1a csbief
+      wceq vtoclg ) AFGZECHZIZATEIZATCIZHZRABUAIZABEIZABCIZHZRFBDTBRZUBUFUEUIAT
+      BUAJUJUCUGUDUHATBEJATBCJKLATUAUEFMAUCUDATENATCNOAGTREUCCUDATEPATCPKQS $.
   $}
 
   $( Equality theorem for range.  (Contributed by ?who?, 29-Dec-1996.) $)
@@ -28374,18 +28387,19 @@ $)
     ( cop wcel wbr crn df-br brelrn sylbir ) ABDCEABCFBCGEABCHABCIJ $.
     $( [8-Jan-2015] $)
 
+
   ${
-    $d x y z w v $.  $d z w v A $.
-    dfrnf.1 $e |- ( z e. A -> A. x z e. A ) $.
-    dfrnf.2 $e |- ( z e. A -> A. y z e. A ) $.
+    $d x y w v $.  $d w v A $.
+    dfrnf.1 $e |- F/_ x A $.
+    dfrnf.2 $e |- F/_ y A $.
     $( Definition of range, using bound-variable hypotheses instead of distinct
-       variable conditions.  (Contributed by ?who?, 14-Aug-1995.) $)
-    dfrnf $p |- ran A = { y | E. x <. x , y >. e. A } $=
-      ( vv vw crn cv cop wcel wex cab dfrn3 ax-17 hbel wceq opeq1 eleq1d exbidv
-      cbvex abbii hbex opeq2 cbvab 3eqtri ) DIGJZHJZKZDLZGMZHNAJZUIKZDLZAMZHNUM
-      BJZKZDLZAMZBNGHDOULUPHUKUOGAACCUJDCJZUJLAPEQUOGPUHUMRUJUNDUHUMUISTUBUCUPU
-      THBUOBABCCUNDVAUNLBPFQUDUTHPUIUQRZUOUSAVBUNURDUIUQUMUETUAUFUG $.
-      $( [14-Aug-1995] $)
+       variable conditions.  (Contributed by NM, 14-Aug-1995.)  (Revised by
+       Mario Carneiro, 15-Oct-2016.) $)
+    dfrnf $p |- ran A = { y | E. x x A y } $=
+      ( vv vw crn cv wbr wex cab dfrn2 nfcv nfbr nfv breq1 cbvex abbii nfex
+      wceq breq2 exbidv cbvab 3eqtri ) CHFIZGIZCJZFKZGLAIZUGCJZAKZGLUJBIZCJZAKZ
+      BLFGCMUIULGUHUKFAAUFUGCAUFNDAUGNOUKFPUFUJUGCQRSULUOGBUKBABUJUGCBUJNEBUGNO
+      TUOGPUGUMUAUKUNAUGUMUJCUBUCUDUE $.
   $}
 
 
@@ -28404,36 +28418,35 @@ $)
 
   $}
 
+
   ${
     $d A z $.  $d B z $.  $d x z $.
     $( Domain of an intersection.  (Contributed by FL, 15-Oct-2012.) $)
     dmiin $p |- dom |^|_ x e. A B C_ |^|_ x e. A dom B $=
-      ( vz ciin cdm wss hbii1 hbdm ssiinf cv wcel iinss2 dmss syl mprgbir ) ABC
-      EZFZABCFZEGRSGZABADBSRADQADBCHIJAKBLQCGTABCMQCNOP $.
-      $( [15-Oct-2012] $)
+      ( ciin cdm wss nfii1 nfdm ssiinf cv wcel iinss2 dmss syl mprgbir ) ABCDZE
+      ZABCEZDFQRFZABABRQAPABCGHIAJBKPCFSABCLPCMNO $.
   $}
+
 
   ${
     $d A w y $.  $d B w y $.  $d V w y $.  $d x w y $.
     $( Distribute proper substitution through the range of a class.
-       (Contributed by Alan Sare, 10-Nov-2012. ) (Contributed by ?who?,
-       10-Nov-2012.) $)
+       (Contributed by Alan Sare, 10-Nov-2012.) $)
     csbrng $p |- ( A e. V -> [_ A / x ]_ ran B = ran [_ A / x ]_ B ) $=
-      ( vw vy wcel crn csb cop wex cab wsbc dfrn3 csbeq2i csbabg sbcexg sbcel2g
-      cv exbidv bitrd abbidv 3eqtrd syl6eqr ) BDGZABCHZIZESFSJZABCIZGZEKZFLZUIH
-      UEUGABUHCGZEKZFLZIUNABMZFLULABUFUODEFCNOUNAFBDPUEUPUKFUEUPUMABMZEKUKUMEAB
-      DQUEUQUJEABUHCDRTUAUBUCEFUINUD $.
-      $( [10-Nov-2012] $)
+      ( vw vy wcel cv cop wex cab csb crn wsbc csbabg sbcexg exbidv bitrd dfrn3
+      sbcel2g abbidv eqtrd csbeq2i 3eqtr4g ) BDGZABEHFHIZCGZEJZFKZLZUFABCLZGZEJ
+      ZFKZABCMZLUKMUEUJUHABNZFKUNUHAFBDOUEUPUMFUEUPUGABNZEJUMUGEABDPUEUQULEABUF
+      CDTQRUAUBABUOUIEFCSUCEFUKSUD $.
   $}
 
   ${
     $d x y z $.  $d z ph $.
-    $( The range of a class of ordered pairs.  (Contributed by ?who?,
-       14-Aug-1995.) $)
+    $( The range of a class of ordered pairs.  (Contributed by NM,
+       14-Aug-1995.)  (Revised by Mario Carneiro, 4-Dec-2016.) $)
     rnopab $p |- ran { <. x , y >. | ph } = { y | E. x ph } $=
-      ( vz copab crn cv cop wcel wex cab hbopab1 dfrnf opabid exbii abbii eqtri
-      hbopab2 ) ABCEZFBGCGHSIZBJZCKABJZCKBCDSABCDLABCDRMUAUBCTABABCNOPQ $.
-      $( [14-Aug-1995] $)
+      ( copab crn wbr wex cab nfopab1 nfopab2 dfrnf cop wcel df-br opabid bitri
+      cv exbii abbii eqtri ) ABCDZEBQZCQZUAFZBGZCHABGZCHBCUAABCIABCJKUEUFCUDABU
+      DUBUCLUAMAUBUCUANABCOPRST $.
   $}
 
   ${
@@ -28509,16 +28522,16 @@ $)
     IBJKUASLMUJUDUKUEUJUICZDUDUIJULUCABNOPAJKQ $.
     $( [19-Mar-1998] $)
 
+
   $( Distribute proper substitution through the restriction of a class.
-     (Contributed by Alan Sare, 10-Nov-2012. ) (Contributed by ?who?,
-     10-Nov-2012.) $)
+     ~ csbresg is derived from the virtual deduction proof ~ csbresgVD .
+     (Contributed by Alan Sare, 10-Nov-2012.) $)
   csbresg $p |- ( A e. V -> [_ A / x ]_ ( B |` C ) =
                  ( [_ A / x ]_ B |` [_ A / x ]_ C ) ) $=
-    ( wcel cres csb cvv cxp cin df-res csbeq2i csbing csbxpg csbconstgfv xpeq2d
-    eqtrd ineq2d 3eqtrd syl6eqr ) BEFZABCDGZHZABCHZABDHZIJZKZUEUFGUBUDABCDIJZKZ
-    HUEABUIHZKUHABUCUJECDLMABECUINUBUKUGUEUBUKUFABIHZJUGABDIEOUBULIUFABIEPQRSTU
-    EUFLUA $.
-    $( [10-Nov-2012] $)
+    ( wcel cvv cxp cin cres csbing csbxpg csbconstg xpeq2d eqtrd ineq2d csbeq2i
+    csb df-res 3eqtr4g ) BEFZABCDGHZIZRZABCRZABDRZGHZIZABCDJZRUEUFJUAUDUEABUBRZ
+    IUHABECUBKUAUJUGUEUAUJUFABGRZHUGABDGELUAUKGUFABGEMNOPOABUIUCCDSQUEUFST $.
+
 
   $( A restriction to the empty set is empty.  (Contributed by ?who?,
      12-Nov-1994.) $)
@@ -29028,20 +29041,20 @@ $)
       CVBUOUPCUFUGRSUSUOUPFMVEUOUPFQUOUPBUHUISUJUKR $.
       $( [27-Aug-2011] $) $( [9-Sep-2004] $)
 
+
     $( Two ways of saying a relation is irreflexive.  Definition of
-       irreflexivity in [Schechter] p. 51.  (The proof was shortened by Andrew
-       Salmon, 27-Aug-2011.)  (Contributed by ?who?, 9-Sep-2004.)  (Revised by
-       ?who?, 27-Aug-2011.) $)
+       irreflexivity in [Schechter] p. 51.  (Contributed by NM, 9-Sep-2004.)
+       (Revised by Andrew Salmon, 27-Aug-2011.) $)
     intirr $p |- ( ( R i^i _I ) = (/) <-> A. x -. x R x ) $=
       ( vy cid cin c0 wceq cv cop wcel ccompl wi wal weq wbr wn wss df-br albii
-      vex incom eqeq1i disj4 wrel wb reli ssrel ax-mp 3bitri ideq bitr3i notbii
+      vex incom eqeq1i disj5 wrel wb reli ssrel ax-mp 3bitri ideq bitr3i notbii
       elcompl bitr4i imbi12i 2albii equcom imbi1i breq2 notbid ceqsalv 3bitr2i
       opex bitri ) BDEZFGZAHZCHZIZDJZVIBKZJZLZCMAMZACNZVGVHBOZPZLZCMZAMVGVGBOZP
       ZAMVFDBEZFGDVKQZVNVEWBFBDUAUBDBUCDUDWCVNUEUFACDVKUGUHUIVRVMACVOVJVQVLVOVG
       VHDOVJVGVHCTZUJVGVHDRUKVQVIBJZPVLVPWEVGVHBRULVIBVGVHATZWDVCUMUNUOUPVSWAAV
       SCANZVQLZCMWAVRWHCVOWGVQACUQURSVQWACVGWFWGVPVTVHVGVGBUSUTVAVDSVB $.
-      $( [27-Aug-2011] $) $( [9-Sep-2004] $)
   $}
+
 
   ${
     $d x y z w $.  $d z w ph $.
@@ -29049,9 +29062,9 @@ $)
        shortened by Andrew Salmon, 27-Aug-2011.)  (Contributed by ?who?,
        11-Dec-2003.)  (Revised by ?who?, 27-Aug-2011.) $)
     cnvopab $p |- `' { <. x , y >. | ph } = { <. y , x >. | ph } $=
-      ( vz vw copab ccnv relcnv relopab cv cop wcel wsb opelopabsb sbcom2 bitri
-      opelcnv 3bitr4i eqrelriiv ) DEABCFZGZACBFZTHACBIEJZDJZKTLZACDMBEMZUDUCKZU
-      ALUGUBLUEABEMCDMUFABCEDNABECDOPUDUCTQACBDENRS $.
+      ( vz vw copab ccnv relcnv relopab cop wcel wsbc opelopabsb sbccom opelcnv
+      cv bitri 3bitr4i eqrelriiv ) DEABCFZGZACBFZTHACBIEPZDPZJTKZABUCLCUDLZUDUC
+      JZUAKUGUBKUEACUDLBUCLUFABCUCUDMABCUCUDNQUDUCTOACBUDUCMRS $.
       $( [27-Aug-2011] $) $( [11-Dec-2003] $)
   $}
 
@@ -29394,18 +29407,18 @@ $)
   cnvcnvss $p |- `' `' A C_ A $=
     ( ccnv cvv cxp cin cnvcnv inss1 eqsstri ) ABBACCDZEAAFAIGH $.
     $( [23-Jul-2004] $)
+
+  
   ${
     $d x y A $.
     $( The domain of a singleton is nonzero iff the singleton argument is an
-       ordered pair.  (The proof was shortened by Andrew Salmon, 27-Aug-2011.)
-       (Contributed by ?who?, 14-Dec-2008.)  (Revised by ?who?,
-       27-Aug-2011.) $)
+       ordered pair.  (Contributed by NM, 14-Dec-2008.)  (Proof shortened by
+       Andrew Salmon, 27-Aug-2011.) $)
     dmsnn0 $p |- ( A e. ( _V X. _V ) <-> dom { A } =/= (/) ) $=
-      ( vx vy cv cop wceq wex csn cdm wcel cvv cxp c0 wne eldm2 opex elsn bitri
-      vex exbii eqcom bicomi elvv n0 3bitr4i ) ABDZCDZEZFZCGZBGZUFAHZIZJZBGZAKK
-      LJUMMNUOUKUNUJBUNUHULJZCGUJCUFULOUPUICUPUHAFUIUHAUFUGBSCSPQUHAUARTRTUBBCA
-      UCBUMUDUE $.
-      $( [27-Aug-2011] $) $( [14-Dec-2008] $)
+      ( vx vy cv cop wceq wex csn cdm wcel cvv cxp wne wbr vex eldm df-br exbii
+      c0 opex elsnc eqcom 3bitri bitr2i elvv n0 3bitr4i ) ABDZCDZEZFZCGZBGUHAHZ
+      IZJZBGAKKLJUNSMULUOBUOUHUIUMNZCGULCUHUMBOPUPUKCUPUJUMJUJAFUKUHUIUMQUJAUHU
+      ITUAUJAUBUCRUDRBCAUEBUNUFUG $.
   $}
 
   $( The range of a singleton is nonzero iff the singleton argument is an
