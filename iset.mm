@@ -1,4 +1,4 @@
-$( iset.mm - Version of 31-Dec-2017
+$( iset.mm - Version of 7-Jan-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -3937,6 +3937,12 @@ $)
     anbi12d $p |- ( ph -> ( ( ps /\ th ) <-> ( ch /\ ta ) ) ) $=
       ( wa anbi1d anbi2d bitrd ) ABDHCDHCEHABCDFIADECGJK $.
   $}
+
+  $( Modus ponens mixed with several conjunctions.  (Contributed by Jim
+     Kingdon, 7-Jan-2018.) $)
+  mpan10 $p |- ( ( ( ( ph -> ps ) /\ ch ) /\ ph ) -> ( ps /\ ch ) ) $=
+    ( wi wa ancom anbi2i anass 3bitr4i id imp anim1i sylbi ) ABDZCEAEZNAEZCEZBC
+    ENCAEZENACEZEOQRSNCAFGNCAHNACHIPBCNABNJKLM $.
 
   $( Theorem *5.3 of [WhiteheadRussell] p. 125.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Andrew Salmon, 7-May-2011.) $)
@@ -12726,6 +12732,24 @@ $( The theorems in this section make use of the $d statement. $)
        (Contributed by Jim Kingdon, 24-Dec-2017.) $)
     sbidmv $p |- ( [ y / x ] [ y / x ] ph <-> [ y / x ] ph ) $=
       ( cv wsbc hbs1 wceq biidd sbie ) ABCDZEZKBCABCFBDJGKHI $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.
+    sbco2iv.1 $e |- ( ph -> A. z ph ) $.
+    $( One direction of ~ sbco2v but without a distinct variable constraint on
+       ` x ` and ` y ` .  (Contributed by Jim Kingdon, 7-Jan-2018.) $)
+    sbco2iv $p |- ( [ y / z ] [ z / x ] ph -> [ y / x ] ph ) $=
+      ( wsb weq wi wa wex equvini df-sb simplbi 19.9 sb5 bitri anim1i eximi syl
+      19.41 hbs1 syl6 com23 imp3a eximd syl5 syl6ib sbbii sylbi ax-i11e equcoms
+      ax-ie1 mpan10 ax-17 sylibr sylbir excomim 3syl hban exbii pm3.22 sylanbrc
+      hbex sylib ) ABDFZDCFZBCGZAHVGAIZBJZABCFVFVGADJZAVGBDGZDCGZIZDJVFVJBCDKVF
+      VMADVEDCUAVFVKVLAVFVLVKAVFVLVEVKAHZVFVLVEHVLVEIDJVEDCLMVEVNVKAIZBJZABDLMU
+      BUCUDUEUFADENUGVFAVGIZBJZVIVFVRDJZDJZVRVFDBGZVGIZBJZVPIZDJZVQDJZBJZDJVTVF
+      VLVPIZDJZWEVFVPDCFWIVEVPDCABDOUHVPDCOPWHWDDVLWCVPDCBKQRUIWDWGDWDWBVPIZBJZ
+      WGWBVPBVOBULTWKVPVJHZVGIZVPIZBJWGWJWNBWBWMVPWAWLVGWLBDABDUJUKQQRWNWFBWNVJ
+      VGIWFVPVJVGUMAVGDVGDUNZTUORSUPRWGVSDVQBDUQRURVTVSVRVSVRDVRDVQDBAVGDEWOUSV
+      CNZUTWPPVDVQVHBAVGVARSABCLVB $.
   $}
 
   ${
