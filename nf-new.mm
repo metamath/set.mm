@@ -26770,69 +26770,54 @@ $)
   ${
     $d x y z A $.  $d x z B $.  $d y z ph $.  $d x ps $.
     ralxp.1 $e |- ( x = <. y , z >. -> ( ph <-> ps ) ) $.
-    $( Write a double restricted quantification as one universal quantifier.
-       In this version of ~ ralxp , ` B ( y ) ` is not assumed to be constant.
-       (Contributed by Mario Carneiro, 29-Dec-2014.) $)
-    raliunxp $p |- ( A. x e. U_ y e. A ( { y } X. B ) ph <->
-      A. y e. A A. z e. B ps ) $=
-      ( cv csn cxp ciun wcel wi wal wa wral wex albii bitri wceq eliunxp imbi1i
-      cop 19.23vv bitr4i alrot3 impexp opex imbi2d ceqsalv 2albii r2al 3bitr4i
-      df-ral ) CIZDFDIZJGKLZMZANZCOZUQFMEIZGMPZBNZEODOZACURQBEGQDFQVAUPUQVBUDZU
-      AZVCPZANZEODOZCOZVEUTVJCUTVHERDRZANVJUSVLADEFGUPUBUCVHADEUEUFSVKVICOZEODO
-      VEVICDEUGVMVDDEVMVGVCANZNZCOVDVIVOCVGVCAUHSVNVDCVFUQVBUIVGABVCHUJUKTULTTA
-      CURUOBDEFGUMUN $.
-
-    $( Write a double restricted quantification as one universal quantifier.
-       In this version of ~ rexxp , ` B ( y ) ` is not assumed to be constant.
-       (Contributed by Mario Carneiro, 14-Feb-2015.) $)
-    rexiunxp $p |- ( E. x e. U_ y e. A ( { y } X. B ) ph <->
-      E. y e. A E. z e. B ps ) $=
-      ( wn cv csn cxp ciun wral wrex cop wceq notbid raliunxp dfrex2 3bitr4i
-      ralnex ralbii bitri notbii ) AIZCDFDJZKGLMZNZIBEGOZIZDFNZIACUHOUJDFOUIULU
-      IBIZEGNZDFNULUFUMCDEFGCJUGEJPQABHRSUNUKDFBEGUBUCUDUEACUHTUJDFTUA $.
-
     $d y B $.
     $( Universal quantification restricted to a cross product is equivalent to
        a double restricted quantification.  The hypothesis specifies an
        implicit substitution.  (Contributed by NM, 7-Feb-2004.)  (Revised by
        Mario Carneiro, 29-Dec-2014.) $)
     ralxp $p |- ( A. x e. ( A X. B ) ph <-> A. y e. A A. z e. B ps ) $=
-      ( cxp wral cv csn ciun iunxpconst raleqi raliunxp bitr3i ) ACFGIZJACDFDKL
-      GIMZJBEGJDFJACSRDFGNOABCDEFGHPQ $.
+      ( cxp wral cv wcel wa cop opelxp wex wi nfv nfim exlimi syl5bir ralrimivv
+      rspccv wceq elxp nfra1 nfra2 rsp2 impcom syl5ibr exp3a a1dd sylbi pm2.43b
+      imp ralrimiv impbii ) ACFGIZJZBEGJZDFJZUSBDEFGDKZFLEKZGLMZVBVCNZURLUSBVBV
+      CFGOABCVEURHUCUAUBVAACURVACKZURLZAVGVFVEUDZVDMZEPZDPVAVGAQZQZDEVFFGUEVJVL
+      DVAVKDUTDFUFVKDRSVIVLEVAVKEBDEFGUGVKERSVIVAAVGVHVDVAAQVHVDVAAVDVAMAVHBVAV
+      DBBDEFGUHUIHUJUKUOULTTUMUNUPUQ $.
 
     $( Existential quantification restricted to a cross product is equivalent
        to a double restricted quantification.  (Contributed by NM,
        11-Nov-1995.)  (Revised by Mario Carneiro, 14-Feb-2015.) $)
     rexxp $p |- ( E. x e. ( A X. B ) ph <-> E. y e. A E. z e. B ps ) $=
-      ( cxp wrex cv csn ciun iunxpconst rexeqi rexiunxp bitr3i ) ACFGIZJACDFDKL
-      GIMZJBEGJDFJACSRDFGNOABCDEFGHPQ $.
+      ( wn cxp wral wrex cv cop wceq notbid ralxp notbii dfrex2 rexbii 3bitr4i
+      rexnal bitri ) AIZCFGJZKZIBIZEGKZDFKZIZACUELBEGLZDFLZUFUIUDUGCDEFGCMDMEMN
+      OABHPQRACUESULUHIZDFLUJUKUMDFBEGSTUHDFUBUCUA $.
   $}
 
   ${
     $d u v w x y A $.  $d u v w x y z B $.  $d u v w ph $.  $d u v w ps $.
-    ralxpf.1 $e |- ( ph -> A. y ph ) $.
-    ralxpf.2 $e |- ( ph -> A. z ph ) $.
-    ralxpf.3 $e |- ( ps -> A. x ps ) $.
+    ralxpf.1 $e |- F/ y ph $.
+    ralxpf.2 $e |- F/ z ph $.
+    ralxpf.3 $e |- F/ x ps $.
     ralxpf.4 $e |- ( x = <. y , z >. -> ( ph <-> ps ) ) $.
     $( Version of ~ ralxp with bound-variable hypotheses.  (Contributed by
        ?who?, 18-Aug-2006.)  (Revised by ?who?, 20-Dec-2008.) $)
     ralxpf $p |- ( A. x e. ( A X. B ) ph <-> A. y e. A A. z e. B ps ) $=
-      ( vw vu vv wral wsb cbvralsv cv wceq hbsb cxp ralbii ax-17 wcel hbral weq
-      hbs1 sbequ12 ralbidv cbvral cop wex vex eqvinop hbbi sbhypf opth sylan9bb
-      wa wb sylbi exlimi ralxp 3bitr4ri bitri ) ACFGUAZOACLPZLVFOZBEGOZDFOZACLV
-      FQBDMPZEGOZMFOVKENPZNGOZMFOVJVHVLVNMFVKENGQUBVIVLDMFVIMUCVKDEGERZGUDDUCBD
-      MUGZUEDMUFZBVKEGBDMUHZUIUJVGVMLMNFGLRZMRZNRZUKZSVSDRZVOUKZSZWDWBSZUSZEULZ
-      DULVGVMUTZDEVSVTWAMUMNUMUNWHWIDVGVMDACLDHTVKENDVPTUOWGWIEVGVMEACLEITVKENU
-      GUOWEVGBWFVMABCLWDJKUPWFVQENUFZUSBVMUTWCVOVTWAUQVQBVKWJVMVRVKENUHURVAURVB
-      VBVAVCVDVE $.
+      ( vw vu vv wral wsb nfv cv wceq nfsb cxp cbvralsv nfcv nfs1 nfral sbequ12
+      ralbii weq ralbidv cbvral cop wa wex wb eqvinop nfbi sbhypf opth sylan9bb
+      vex sylbi exlimi ralxp 3bitr4ri bitri ) ACFGUAZOACLPZLVFOZBEGOZDFOZACLVFU
+      BBDMPZEGOZMFOVKENPZNGOZMFOVJVHVLVNMFVKENGUBUGVIVLDMFVIMQVKDEGDGUCBDMBMQUD
+      ZUEDMUHZBVKEGBDMUFZUIUJVGVMLMNFGLRZMRZNRZUKZSVRDRZERZUKZSZWDWASZULZEUMZDU
+      MVGVMUNZDEVRVSVTMUTNUTUOWHWIDVGVMDACLDHTVKENDVOTUPWGWIEVGVMEACLEITVKENVKN
+      QUDUPWEVGBWFVMABCLWDJKUQWFVPENUHZULBVMUNWBWCVSVTURVPBVKWJVMVQVKENUFUSVAUS
+      VBVBVAVCVDVE $.
       $( [20-Dec-2008] $) $( [18-Aug-2006] $)
 
     $( Version of ~ rexxp with bound-variable hypotheses.  (Contributed by
        ?who?, 19-Dec-2008.) $)
     rexxpf $p |- ( E. x e. ( A X. B ) ph <-> E. y e. A E. z e. B ps ) $=
-      ( wn cxp wral wrex hbn cv cop wceq dfrex2 notbid ralxpf ralnex 3bitr4i
-      ralbii bitri notbii ) ALZCFGMZNZLBEGOZLZDFNZLACUIOUKDFOUJUMUJBLZEGNZDFNUM
-      UHUNCDEFGADHPAEIPBCJPCQDQEQRSABKUAUBUOULDFBEGUCUEUFUGACUITUKDFTUD $.
+      ( wn cxp wral wrex nfn cv cop wb dfrex2 notbi ralxpf notbii rexbii rexnal
+      wceq sylib bitri 3bitr4i ) ALZCFGMZNZLBLZEGNZDFNZLZACUKOBEGOZDFOZULUOUJUM
+      CDEFGADHPAEIPBCJPCQDQEQRUFABSUJUMSKABUAUGUBUCACUKTURUNLZDFOUPUQUSDFBEGTUD
+      UNDFUEUHUI $.
       $( [19-Dec-2008] $)
   $}
 
@@ -26915,6 +26900,16 @@ $)
       UNCMZUONZFTZABLVEABLZFTVCVAVEAFBUBVBVFABUOFCOPUTVGFUTVDABLZUONVGUSVHUOAUN
       BCQUCVDUOABUDUEUFUGUOFUIOUQVBABFGUMCDRPSFGUMUIDRAUMBUKQSUH $.
       $( [27-Apr-2014] $)
+  $}
+
+
+  ${
+    $d x A $.  $d x B $.
+    $( Membership in a union of cross products when the second factor is
+       constant.  (Contributed by Mario Carneiro, 29-Dec-2014.) $)
+    iunxpconst $p |- U_ x e. A ( { x } X. B ) = ( A X. B ) $=
+      ( cv csn ciun cxp xpiundir iunid xpeq1i eqtr3i ) ABADEZFZCGABLCGFBCGABLCH
+      MBCABIJK $.
   $}
 
 
@@ -34323,29 +34318,21 @@ $)
     $( [26-May-2006] $)
 
   ${
-    $d x A $.  $d y B $.  $d x y F $.  $d y ph $.  $d x ps $.
+    $d x y A $.  $d y B $.  $d x y F $.  $d y ph $.  $d x ps $.
     cbvfo.1 $e |- ( ( F ` x ) = y -> ( ph <-> ps ) ) $.
     $( Change bound variable between domain and range of function.
-       (Contributed by ?who?, 23-Feb-1997.) $)
+       (Contributed by NM, 23-Feb-1997.)  (Proof shortened by Mario Carneiro,
+       21-Mar-2015.) $)
     cbvfo $p |- ( F : A -onto-> B -> ( A. x e. A ph <-> A. y e. B ps ) ) $=
-      ( wral cv wcel wi wal wceq wa wex a1i jcad eximdv syl5bi wfo cdm crn wfun
-      wb fofun cfv wbr elrn breldm funbrfv hba1 ax-17 biimpcd imim2i sps exlimd
-      imp3a syl9 alrimdv eldm brelrn biimprcd impbid syl df-ral 3bitr4g fof fdm
-      wf raleqdv forn 3bitr3d ) EFGUAZACGUBZIZBDGUCZIZACEIBDFIVNCJZVOKZALZCMZDJ
-      ZVQKZBLZDMZVPVRVNGUDZWBWFUEEFGUFWGWBWFWGWBWEDWGWDVTVSGUGWCNZOZCPZWBBWDVSW
-      CGUHZCPWGWJCWCGUIWGWKWICWGWKVTWHWKVTLWGVSWCGUJQVSWCGUKZRSTWBWIBCWACULBCUM
-      WAWIBLCWAVTWHBAWHBLVTWHABHUNUOURUPUQUSUTWGWFWACWGVTWDWHOZDPZWFAVTWKDPWGWN
-      DVSGVAWGWKWMDWGWKWDWHWKWDLWGVSWCGVBQWLRSTWFWMADWEDULADUMWEWMALDWEWDWHABWH
-      ALWDWHABHVCUOURUPUQUSUTVDVEACVOVFBDVQVFVGVNACVOEVNEFGVJVOENEFGVHEFGVIVEVK
-      VNBDVQFEFGVLVKVM $.
-      $( [23-Feb-1997] $)
+      ( wfo crn wral wfn wb fofn cv cfv wceq bicomd eqcoms ralrn raleqdv bitr3d
+      syl forn ) EFGIZBDGJZKZACEKZBDFKUEGELUGUHMEFGNBADCEGBAMCOGPZDOZUIUJQABHRS
+      TUCUEBDUFFEFGUDUAUB $.
 
     $( Change bound variable between domain and range of function.
-       (Contributed by ?who?, 23-Feb-1997.) $)
+       (Contributed by NM, 23-Feb-1997.) $)
     cbvexfo $p |- ( F : A -onto-> B -> ( E. x e. A ph <-> E. y e. B ps ) ) $=
       ( wfo wn wral wrex cv cfv wceq notbid cbvfo dfrex2 3bitr4g ) EFGIZAJZCEKZ
       JBJZDFKZJACELBDFLTUBUDUAUCCDEFGCMGNDMOABHPQPACERBDFRS $.
-      $( [23-Feb-1997] $)
   $}
 
   ${
@@ -34412,7 +34399,7 @@ $)
     $( Bound-variable hypothesis builder for an isomorphism.  (Contributed by
        NM, 17-May-2004.)  (Proof shortened by Andrew Salmon, 22-Oct-2011.) $)
     nfiso $p |- F/ x H Isom R , S ( A , B ) $=
-      ( vy vz cv wbr cfv wral nfcv nfbr nffv wiso wf1o wb wa df-isom nff1o nfbi
+      ( vy vz cv wbr cfv wral nfcv nfbr nffv wiso wf1o wb wa df-iso nff1o nfbi
       nfral nfan nfxfr ) BCDEFUABCFUBZLNZMNZDOZULFPZUMFPZEOZUCZMBQZLBQZUDALMBCD
       EFUEUKUTAABCFGJKUFUSALBJURAMBJUNUQAAULUMDAULRZHAUMRZSAUOUPEAULFGVATIAUMFG
       VBTSUGUHUHUIUJ $.
