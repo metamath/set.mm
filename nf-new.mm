@@ -24488,37 +24488,37 @@ $)
      find uses for this definition when ` R ` is a proper class. $)
   df-br $a |- ( A R B <-> <. A , B >. e. R ) $.
 
-  $( Equality theorem for binary relations. 
-     (Contributed by ?who?, 4-Jun-1995.) $)
+  $( Equality theorem for binary relations.  (Contributed by ?who?,
+     4-Jun-1995.) $)
   breq $p |- ( R = S -> ( A R B <-> A S B ) ) $=
     ( wceq cop wcel wbr eleq2 df-br 3bitr4g ) CDEABFZCGLDGABCHABDHCDLIABCJABDJK
     $.
     $( [4-Jun-1995] $)
 
-  $( Equality theorem for a binary relation. 
-     (Contributed by ?who?, 31-Dec-1993.) $)
+  $( Equality theorem for a binary relation.  (Contributed by ?who?,
+     31-Dec-1993.) $)
   breq1 $p |- ( A = B -> ( A R C <-> B R C ) ) $=
     ( wceq cop wcel wbr opeq1 eleq1d df-br 3bitr4g ) ABEZACFZDGBCFZDGACDHBCDHMN
     ODABCIJACDKBCDKL $.
     $( [31-Dec-1993] $)
 
-  $( Equality theorem for a binary relation. 
-     (Contributed by ?who?, 31-Dec-1993.) $)
+  $( Equality theorem for a binary relation.  (Contributed by ?who?,
+     31-Dec-1993.) $)
   breq2 $p |- ( A = B -> ( C R A <-> C R B ) ) $=
     ( wceq cop wcel wbr opeq2 eleq1d df-br 3bitr4g ) ABEZCAFZDGCBFZDGCADHCBDHMN
     ODABCIJCADKCBDKL $.
     $( [31-Dec-1993] $)
 
-  $( Equality theorem for a binary relation. 
-     (Contributed by ?who?, 8-Feb-1996.) $)
+  $( Equality theorem for a binary relation.  (Contributed by ?who?,
+     8-Feb-1996.) $)
   breq12 $p |- ( ( A = B /\ C = D ) -> ( A R C <-> B R D ) ) $=
     ( wceq wbr breq1 breq2 sylan9bb ) ABFACEGBCEGCDFBDEGABCEHCDBEIJ $.
     $( [8-Feb-1996] $)
 
   ${
     breqi.1 $e |- R = S $.
-    $( Equality inference for binary relations. 
-       (Contributed by ?who?, 19-Feb-2005.) $)
+    $( Equality inference for binary relations.  (Contributed by ?who?,
+       19-Feb-2005.) $)
     breqi $p |- ( A R B <-> A S B ) $=
       ( wceq wbr wb breq ax-mp ) CDFABCGABDGHEABCDIJ $.
       $( [19-Feb-2005] $)
@@ -24526,14 +24526,14 @@ $)
 
   ${
     breq1i.1 $e |- A = B $.
-    $( Equality inference for a binary relation. 
-       (Contributed by ?who?, 8-Feb-1996.) $)
+    $( Equality inference for a binary relation.  (Contributed by ?who?,
+       8-Feb-1996.) $)
     breq1i $p |- ( A R C <-> B R C ) $=
       ( wceq wbr wb breq1 ax-mp ) ABFACDGBCDGHEABCDIJ $.
       $( [8-Feb-1996] $)
 
-    $( Equality inference for a binary relation. 
-       (Contributed by ?who?, 8-Feb-1996.) $)
+    $( Equality inference for a binary relation.  (Contributed by ?who?,
+       8-Feb-1996.) $)
     breq2i $p |- ( C R A <-> C R B ) $=
       ( wceq wbr wb breq2 ax-mp ) ABFCADGCBDGHEABCDIJ $.
       $( [8-Feb-1996] $)
@@ -24541,8 +24541,7 @@ $)
     ${
       breq12i.2 $e |- C = D $.
       $( Equality inference for a binary relation.  (The proof was shortened by
-         Eric Schmidt, 4-Apr-2007.) 
-         (Contributed by ?who?, 8-Feb-1996.) 
+         Eric Schmidt, 4-Apr-2007.)  (Contributed by ?who?, 8-Feb-1996.)
          (Revised by ?who?, 4-Apr-2007.) $)
       breq12i $p |- ( A R C <-> B R D ) $=
         ( wceq wbr wb breq12 mp2an ) ABHCDHACEIBDEIJFGABCDEKL $.
@@ -24552,20 +24551,20 @@ $)
 
   ${
     breq1d.1 $e |- ( ph -> A = B ) $.
-    $( Equality deduction for a binary relation. 
-       (Contributed by ?who?, 8-Feb-1996.) $)
+    $( Equality deduction for a binary relation.  (Contributed by ?who?,
+       8-Feb-1996.) $)
     breq1d $p |- ( ph -> ( A R C <-> B R C ) ) $=
       ( wceq wbr wb breq1 syl ) ABCGBDEHCDEHIFBCDEJK $.
       $( [8-Feb-1996] $)
 
-    $( Equality deduction for a binary relation. 
-       (Contributed by ?who?, 29-Oct-2011.) $)
+    $( Equality deduction for a binary relation.  (Contributed by ?who?,
+       29-Oct-2011.) $)
     breqd $p |- ( ph -> ( C A D <-> C B D ) ) $=
       ( wceq wbr wb breq syl ) ABCGDEBHDECHIFDEBCJK $.
       $( [29-Oct-2011] $)
 
-    $( Equality deduction for a binary relation. 
-       (Contributed by ?who?, 8-Feb-1996.) $)
+    $( Equality deduction for a binary relation.  (Contributed by ?who?,
+       8-Feb-1996.) $)
     breq2d $p |- ( ph -> ( C R A <-> C R B ) ) $=
       ( wceq wbr wb breq2 syl ) ABCGDBEHDCEHIFBCDEJK $.
       $( [8-Feb-1996] $)
@@ -24573,8 +24572,7 @@ $)
     ${
       breq12d.2 $e |- ( ph -> C = D ) $.
       $( Equality deduction for a binary relation.  (The proof was shortened by
-         Andrew Salmon, 9-Jul-2011.) 
-         (Contributed by ?who?, 8-Feb-1996.) 
+         Andrew Salmon, 9-Jul-2011.)  (Contributed by ?who?, 8-Feb-1996.)
          (Revised by ?who?, 9-Jul-2011.) $)
       breq12d $p |- ( ph -> ( A R C <-> B R D ) ) $=
         ( wceq wbr wb breq12 syl2anc ) ABCIDEIBDFJCEFJKGHBCDEFLM $.
@@ -24584,8 +24582,8 @@ $)
     ${
       breq123d.2 $e |- ( ph -> R = S ) $.
       breq123d.3 $e |- ( ph -> C = D ) $.
-      $( Equality deduction for a binary relation. 
-         (Contributed by ?who?, 29-Oct-2011.) $)
+      $( Equality deduction for a binary relation.  (Contributed by ?who?,
+         29-Oct-2011.) $)
       breq123d $p |- ( ph -> ( A R C <-> B S D ) ) $=
         ( wbr breq12d breqd bitrd ) ABDFKCEFKCEGKABCDEFHJLAFGCEIMN $.
         $( [29-Oct-2011] $)
@@ -24593,14 +24591,14 @@ $)
 
     ${
       breqan12i.2 $e |- ( ps -> C = D ) $.
-      $( Equality deduction for a binary relation. 
-         (Contributed by ?who?, 8-Feb-1996.) $)
+      $( Equality deduction for a binary relation.  (Contributed by ?who?,
+         8-Feb-1996.) $)
       breqan12d $p |- ( ( ph /\ ps ) -> ( A R C <-> B R D ) ) $=
         ( wceq wbr wb breq12 syl2an ) ACDJEFJCEGKDFGKLBHICDEFGMN $.
         $( [8-Feb-1996] $)
 
-      $( Equality deduction for a binary relation. 
-         (Contributed by ?who?, 8-Feb-1996.) $)
+      $( Equality deduction for a binary relation.  (Contributed by ?who?,
+         8-Feb-1996.) $)
       breqan12rd $p |- ( ( ps /\ ph ) -> ( A R C <-> B R D ) ) $=
         ( wbr wb breqan12d ancoms ) ABCEGJDFGJKABCDEFGHILM $.
         $( [8-Feb-1996] $)
@@ -24608,16 +24606,14 @@ $)
   $}
 
   $( Two classes are different if they don't have the same relationship to a
-     third class. 
-     (Contributed by ?who?, 3-Jun-2012.) $)
+     third class.  (Contributed by ?who?, 3-Jun-2012.) $)
   nbrne1 $p |- ( ( A R B /\ -. A R C ) -> B =/= C ) $=
     ( wbr wn wne wceq breq2 biimpcd necon3bd imp ) ABDEZACDEZFBCGMNBCBCHMNBCADI
     JKL $.
     $( [3-Jun-2012] $)
 
   $( Two classes are different if they don't have the same relationship to a
-     third class. 
-     (Contributed by ?who?, 3-Jun-2012.) $)
+     third class.  (Contributed by ?who?, 3-Jun-2012.) $)
   nbrne2 $p |- ( ( A R C /\ -. B R C ) -> A =/= B ) $=
     ( wbr wn wne wceq breq1 biimpcd necon3bd imp ) ACDEZBCDEZFABGMNABABHMNABCDI
     JKL $.
@@ -24626,8 +24622,8 @@ $)
   ${
     eqbrtr.1 $e |- A = B $.
     eqbrtr.2 $e |- B R C $.
-    $( Substitution of equal classes into a binary relation. 
-       (Contributed by ?who?, 5-Aug-1993.) $)
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       ?who?, 5-Aug-1993.) $)
     eqbrtri $p |- A R C $=
       ( wbr breq1i mpbir ) ACDGBCDGFABCDEHI $.
       $( [5-Aug-1993] $)
@@ -24636,8 +24632,8 @@ $)
   ${
     eqbrtrd.1 $e |- ( ph -> A = B ) $.
     eqbrtrd.2 $e |- ( ph -> B R C ) $.
-    $( Substitution of equal classes into a binary relation. 
-       (Contributed by ?who?, 8-Oct-1999.) $)
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       ?who?, 8-Oct-1999.) $)
     eqbrtrd $p |- ( ph -> A R C ) $=
       ( wbr breq1d mpbird ) ABDEHCDEHGABCDEFIJ $.
       $( [8-Oct-1999] $)
@@ -24646,8 +24642,8 @@ $)
   ${
     eqbrtrr.1 $e |- A = B $.
     eqbrtrr.2 $e |- A R C $.
-    $( Substitution of equal classes into a binary relation. 
-       (Contributed by ?who?, 5-Aug-1993.) $)
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       ?who?, 5-Aug-1993.) $)
     eqbrtrri $p |- B R C $=
       ( eqcomi eqbrtri ) BACDABEGFH $.
       $( [5-Aug-1993] $)
@@ -24656,8 +24652,8 @@ $)
   ${
     eqbrtrrd.1 $e |- ( ph -> A = B ) $.
     eqbrtrrd.2 $e |- ( ph -> A R C ) $.
-    $( Substitution of equal classes into a binary relation. 
-       (Contributed by ?who?, 24-Oct-1999.) $)
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       ?who?, 24-Oct-1999.) $)
     eqbrtrrd $p |- ( ph -> B R C ) $=
       ( eqcomd eqbrtrd ) ACBDEABCFHGI $.
       $( [24-Oct-1999] $)
@@ -24666,8 +24662,8 @@ $)
   ${
     breqtr.1 $e |- A R B $.
     breqtr.2 $e |- B = C $.
-    $( Substitution of equal classes into a binary relation. 
-       (Contributed by ?who?, 5-Aug-1993.) $)
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       ?who?, 5-Aug-1993.) $)
     breqtri $p |- A R C $=
       ( wbr breq2i mpbi ) ABDGACDGEBCADFHI $.
       $( [5-Aug-1993] $)
@@ -24676,8 +24672,8 @@ $)
   ${
     breqtrd.1 $e |- ( ph -> A R B ) $.
     breqtrd.2 $e |- ( ph -> B = C ) $.
-    $( Substitution of equal classes into a binary relation. 
-       (Contributed by ?who?, 24-Oct-1999.) $)
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       ?who?, 24-Oct-1999.) $)
     breqtrd $p |- ( ph -> A R C ) $=
       ( wbr breq2d mpbid ) ABCEHBDEHFACDBEGIJ $.
       $( [24-Oct-1999] $)
@@ -24686,8 +24682,8 @@ $)
   ${
     breqtrr.1 $e |- A R B $.
     breqtrr.2 $e |- C = B $.
-    $( Substitution of equal classes into a binary relation. 
-       (Contributed by ?who?, 5-Aug-1993.) $)
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       ?who?, 5-Aug-1993.) $)
     breqtrri $p |- A R C $=
       ( eqcomi breqtri ) ABCDECBFGH $.
       $( [5-Aug-1993] $)
@@ -24696,8 +24692,8 @@ $)
   ${
     breqtrrd.1 $e |- ( ph -> A R B ) $.
     breqtrrd.2 $e |- ( ph -> C = B ) $.
-    $( Substitution of equal classes into a binary relation. 
-       (Contributed by ?who?, 24-Oct-1999.) $)
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       ?who?, 24-Oct-1999.) $)
     breqtrrd $p |- ( ph -> A R C ) $=
       ( eqcomd breqtrd ) ABCDEFADCGHI $.
       $( [24-Oct-1999] $)
@@ -24707,7 +24703,7 @@ $)
     3brtr3.1 $e |- A R B $.
     3brtr3.2 $e |- A = C $.
     3brtr3.3 $e |- B = D $.
-    $( Substitution of equality into both sides of a binary relation. 
+    $( Substitution of equality into both sides of a binary relation.
        (Contributed by ?who?, 11-Aug-1999.) $)
     3brtr3i $p |- C R D $=
       ( eqbrtrri breqtri ) CBDEACBEGFIHJ $.
@@ -24718,7 +24714,7 @@ $)
     3brtr4.1 $e |- A R B $.
     3brtr4.2 $e |- C = A $.
     3brtr4.3 $e |- D = B $.
-    $( Substitution of equality into both sides of a binary relation. 
+    $( Substitution of equality into both sides of a binary relation.
        (Contributed by ?who?, 11-Aug-1999.) $)
     3brtr4i $p |- C R D $=
       ( eqbrtri breqtrri ) CBDECABEGFIHJ $.
@@ -24729,7 +24725,7 @@ $)
     3brtr3d.1 $e |- ( ph -> A R B ) $.
     3brtr3d.2 $e |- ( ph -> A = C ) $.
     3brtr3d.3 $e |- ( ph -> B = D ) $.
-    $( Substitution of equality into both sides of a binary relation. 
+    $( Substitution of equality into both sides of a binary relation.
        (Contributed by ?who?, 18-Oct-1999.) $)
     3brtr3d $p |- ( ph -> C R D ) $=
       ( wbr breq12d mpbid ) ABCFJDEFJGABDCEFHIKL $.
@@ -24740,7 +24736,7 @@ $)
     3brtr4d.1 $e |- ( ph -> A R B ) $.
     3brtr4d.2 $e |- ( ph -> C = A ) $.
     3brtr4d.3 $e |- ( ph -> D = B ) $.
-    $( Substitution of equality into both sides of a binary relation. 
+    $( Substitution of equality into both sides of a binary relation.
        (Contributed by ?who?, 21-Feb-2005.) $)
     3brtr4d $p |- ( ph -> C R D ) $=
       ( wbr breq12d mpbird ) ADEFJBCFJGADBECFHIKL $.
@@ -24751,7 +24747,7 @@ $)
     3brtr3g.1 $e |- ( ph -> A R B ) $.
     3brtr3g.2 $e |- A = C $.
     3brtr3g.3 $e |- B = D $.
-    $( Substitution of equality into both sides of a binary relation. 
+    $( Substitution of equality into both sides of a binary relation.
        (Contributed by ?who?, 16-Jan-1997.) $)
     3brtr3g $p |- ( ph -> C R D ) $=
       ( wbr breq12i sylib ) ABCFJDEFJGBDCEFHIKL $.
@@ -24762,7 +24758,7 @@ $)
     3brtr4g.1 $e |- ( ph -> A R B ) $.
     3brtr4g.2 $e |- C = A $.
     3brtr4g.3 $e |- D = B $.
-    $( Substitution of equality into both sides of a binary relation. 
+    $( Substitution of equality into both sides of a binary relation.
        (Contributed by ?who?, 16-Jan-1997.) $)
     3brtr4g $p |- ( ph -> C R D ) $=
       ( wbr breq12i sylibr ) ABCFJDEFJGDBECFHIKL $.
@@ -24772,8 +24768,8 @@ $)
   ${
     syl5eqbr.1 $e |- A = B $.
     syl5eqbr.2 $e |- ( ph -> B R C ) $.
-    $( B chained equality inference for a binary relation. 
-       (Contributed by ?who?, 11-Oct-1999.) $)
+    $( B chained equality inference for a binary relation.  (Contributed by
+       ?who?, 11-Oct-1999.) $)
     syl5eqbr $p |- ( ph -> A R C ) $=
       ( eqid 3brtr4g ) ACDBDEGFDHI $.
       $( [11-Oct-1999] $)
@@ -24782,8 +24778,8 @@ $)
   ${
     syl5eqbrr.1 $e |- B = A $.
     syl5eqbrr.2 $e |- ( ph -> B R C ) $.
-    $( B chained equality inference for a binary relation. 
-       (Contributed by ?who?, 17-Sep-2004.) $)
+    $( B chained equality inference for a binary relation.  (Contributed by
+       ?who?, 17-Sep-2004.) $)
     syl5eqbrr $p |- ( ph -> A R C ) $=
       ( eqid 3brtr3g ) ACDBDEGFDHI $.
       $( [17-Sep-2004] $)
@@ -24792,8 +24788,8 @@ $)
   ${
     syl5breq.1 $e |- A R B $.
     syl5breq.2 $e |- ( ph -> B = C ) $.
-    $( B chained equality inference for a binary relation. 
-       (Contributed by ?who?, 11-Oct-1999.) $)
+    $( B chained equality inference for a binary relation.  (Contributed by
+       ?who?, 11-Oct-1999.) $)
     syl5breq $p |- ( ph -> A R C ) $=
       ( wbr a1i breqtrd ) ABCDEBCEHAFIGJ $.
       $( [11-Oct-1999] $)
@@ -24802,8 +24798,8 @@ $)
   ${
     syl5breqr.1 $e |- A R B $.
     syl5breqr.2 $e |- ( ph -> C = B ) $.
-    $( B chained equality inference for a binary relation. 
-       (Contributed by ?who?, 24-Apr-2005.) $)
+    $( B chained equality inference for a binary relation.  (Contributed by
+       ?who?, 24-Apr-2005.) $)
     syl5breqr $p |- ( ph -> A R C ) $=
       ( eqcomd syl5breq ) ABCDEFADCGHI $.
       $( [24-Apr-2005] $)
@@ -24812,8 +24808,8 @@ $)
   ${
     syl6eqbr.1 $e |- ( ph -> A = B ) $.
     syl6eqbr.2 $e |- B R C $.
-    $( A chained equality inference for a binary relation. 
-       (Contributed by ?who?, 12-Oct-1999.) $)
+    $( A chained equality inference for a binary relation.  (Contributed by
+       ?who?, 12-Oct-1999.) $)
     syl6eqbr $p |- ( ph -> A R C ) $=
       ( wbr breq1d mpbiri ) ABDEHCDEHGABCDEFIJ $.
       $( [12-Oct-1999] $)
@@ -24822,8 +24818,8 @@ $)
   ${
     syl6eqbrr.1 $e |- ( ph -> B = A ) $.
     syl6eqbrr.2 $e |- B R C $.
-    $( A chained equality inference for a binary relation. 
-       (Contributed by ?who?, 4-Jan-2006.) $)
+    $( A chained equality inference for a binary relation.  (Contributed by
+       ?who?, 4-Jan-2006.) $)
     syl6eqbrr $p |- ( ph -> A R C ) $=
       ( eqcomd syl6eqbr ) ABCDEACBFHGI $.
       $( [4-Jan-2006] $)
@@ -24832,8 +24828,8 @@ $)
   ${
     syl6breq.1 $e |- ( ph -> A R B ) $.
     syl6breq.2 $e |- B = C $.
-    $( A chained equality inference for a binary relation. 
-       (Contributed by ?who?, 11-Oct-1999.) $)
+    $( A chained equality inference for a binary relation.  (Contributed by
+       ?who?, 11-Oct-1999.) $)
     syl6breq $p |- ( ph -> A R C ) $=
       ( eqid 3brtr3g ) ABCBDEFBHGI $.
       $( [11-Oct-1999] $)
@@ -24842,8 +24838,8 @@ $)
   ${
     syl6breqr.1 $e |- ( ph -> A R B ) $.
     syl6breqr.2 $e |- C = B $.
-    $( A chained equality inference for a binary relation. 
-       (Contributed by ?who?, 24-Apr-2005.) $)
+    $( A chained equality inference for a binary relation.  (Contributed by
+       ?who?, 24-Apr-2005.) $)
     syl6breqr $p |- ( ph -> A R C ) $=
       ( eqcomi syl6breq ) ABCDEFDCGHI $.
       $( [24-Apr-2005] $)
@@ -24852,7 +24848,7 @@ $)
 
   ${
     ssbrd.1 $e |- ( ph -> A C_ B ) $.
-    $( Deduction from a subclass relationship of binary relations. 
+    $( Deduction from a subclass relationship of binary relations.
        (Contributed by ?who?, 30-Apr-2004.) $)
     ssbrd $p |- ( ph -> ( C A D -> C B D ) ) $=
       ( cop wcel wbr sseld df-br 3imtr4g ) ADEGZBHMCHDEBIDECIABCMFJDEBKDECKL $.
@@ -24862,9 +24858,8 @@ $)
   ${
     ssbri.1 $e |- A C_ B $.
     $( Inference from a subclass relationship of binary relations.  (The proof
-       was shortened by Andrew Salmon, 9-Jul-2011.) 
-       (Contributed by ?who?, 28-Mar-2007.) 
-       (Revised by ?who?, 9-Jul-2011.) $)
+       was shortened by Andrew Salmon, 9-Jul-2011.)  (Contributed by ?who?,
+       28-Mar-2007.)  (Revised by ?who?, 9-Jul-2011.) $)
     ssbri $p |- ( C A D -> C B D ) $=
       ( wss wbr wi ssid a1i ssbrd ax-mp ) AAFZCDAGCDBGHAIMABCDABFMEJKL $.
       $( [9-Jul-2011] $) $( [28-Mar-2007] $)
@@ -24947,16 +24942,15 @@ $)
       JZFHCQFHABCDEFKOPCQFABCELMN $.
   $}
 
-  $( Binary relationship implies sethood of both parts. 
-     (Contributed by SF, 7-Jan-2015.) $)
+  $( Binary relationship implies sethood of both parts.  (Contributed by SF,
+     7-Jan-2015.) $)
   brex $p |- ( A R B -> ( A e. _V /\ B e. _V ) ) $=
     ( cop wcel cvv wbr wa elex df-br opexb bicomi 3imtr4i ) ABDZCENFEZABCGAFEBF
     EHZNCIABCJOPABKLM $.
     $( [7-Jan-2015] $)
 
 
-  $( The union of two binary relations. 
-     (Contributed by NM, 21-Dec-2008.) $)
+  $( The union of two binary relations.  (Contributed by NM, 21-Dec-2008.) $)
   brun $p |- ( A ( R u. S ) B <-> ( A R B \/ A S B ) ) $=
     ( cop cun wcel wo wbr elun df-br orbi12i 3bitr4i ) ABEZCDFZGNCGZNDGZHABOIAB
     CIZABDIZHNCDJABOKRPSQABCKABDKLM $.
@@ -24974,3 +24968,313 @@ $)
     ( cop cdif wcel wn wa wbr eldif df-br notbii anbi12i 3bitr4i ) ABEZCDFZGPCG
     ZPDGZHZIABQJABCJZABDJZHZIPCDKABQLUARUCTABCLUBSABDLMNO $.
     $( [12-Apr-2012] $) $( [11-Apr-2011] $)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Ordered-pair class abstractions (cont.)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x z w v $.  $d y z w v $.  $d ph z w v $.
+    $( The law of concretion.  Special case of Theorem 9.5 of [Quine] p. 61.
+       (The proof was shortened by Andrew Salmon, 25-Jul-2011.)  (Contributed
+       by ?who?, 14-Apr-1995.)  (Revised by ?who?, 25-Jul-2011.) $)
+    opabid $p |- ( <. x , y >. e. { <. x , y >. | ph } <-> ph ) $=
+      ( vz cv cop wceq wa wex copab vex opex copsexg bicomd df-opab elab2 ) DEZ
+      BEZCEZFZGZAHCIBIZADTABCJRSBKCKLUAAUBABCQMNABCDOP $.
+      $( [25-Jul-2011] $) $( [14-Apr-1995] $)
+  $}
+
+  ${
+    $d x z A $.  $d y z A $.  $d z ph $.
+    $( Membership in a class abstraction of pairs.  (Contributed by ?who?,
+       24-Mar-1998.) $)
+    elopab $p |- ( A e. { <. x , y >. | ph } <->
+                 E. x E. y ( A = <. x , y >. /\ ph ) ) $=
+      ( vz copab wcel cvv cv cop wceq wex elex vex eleq1 mpbiri adantr exlimivv
+      wa opex eqeq1 anbi1d 2exbidv df-opab elab2g pm5.21nii ) DABCFZGDHGZDBIZCI
+      ZJZKZASZCLBLZDUGMUMUHBCULUHAULUHUKHGUIUJBNCNTDUKHOPQREIZUKKZASZCLBLUNEDUG
+      HUODKZUQUMBCURUPULAUODUKUAUBUCABCEUDUEUF $.
+      $( [24-Mar-1998] $)
+  $}
+
+  ${
+    $d x z v $.  $d y z v $.  $d w z $.  $d ph v $.
+    hbopab.1 $e |- ( ph -> A. z ph ) $.
+    $( Bound-variable hypothesis builder for class abstraction.  (Unnecessary
+       distinct variable restrictions were removed by Andrew Salmon,
+       11-Jul-2011.)  (Contributed by ?who?, 1-Sep-1999.)  (Revised by ?who?,
+       25-Jul-2011.) $)
+    hbopab $p |- ( w e. { <. x , y >. | ph } ->
+                 A. z w e. { <. x , y >. | ph } ) $=
+      ( vv copab cv cop wceq wa wex cab df-opab ax-17 hban hbex hbab hbxfreq )
+      DEABCHGIBICIJKZALZCMZBMZGNABCGOUDDGEUCDBUBDCUAADUADPFQRRST $.
+      $( [25-Jul-2011] $) $( [1-Sep-1999] $)
+  $}
+
+  ${
+    $d x w $.  $d y w $.  $d x z $.  $d w ph $.
+    $( The first abstraction variable in an ordered-pair class abstraction
+       (class builder) is effectively not free.  (Contributed by ?who?,
+       16-May-1995.) $)
+    hbopab1 $p |- ( z e. { <. x , y >. | ph } ->
+                 A. x z e. { <. x , y >. | ph } ) $=
+      ( vw copab cv cop wceq wa wex cab df-opab hbe1 hbab hbxfreq ) BDABCFEGBGC
+      GHIAJCKZBKZELABCEMRBEDQBNOP $.
+      $( [16-May-1995] $)
+  $}
+
+  ${
+    $d x w $.  $d y w $.  $d y z $.  $d w ph $.
+    $( The second abstraction variable in an ordered-pair class abstraction
+       (class builder) is effectively not free.  (Contributed by ?who?,
+       16-May-1995.) $)
+    hbopab2 $p |- ( z e. { <. x , y >. | ph } ->
+                 A. y z e. { <. x , y >. | ph } ) $=
+      ( vw copab cv cop wceq wa wex cab df-opab hbe1 hbex hbab hbxfreq ) CDABCF
+      EGBGCGHIAJZCKZBKZELABCEMTCEDSCBRCNOPQ $.
+      $( [16-May-1995] $)
+  $}
+
+  ${
+    $d x y z w $.  $d w z A $.  $d w x B $.  $d w z ph $.
+    $( The law of concretion in terms of substitutions.  (Contributed by NM,
+       30-Sep-2002.)  (Revised by Mario Carneiro, 18-Nov-2016.) $)
+    opelopabsb $p |- ( <. A , B >. e. { <. x , y >. | ph }
+                 <-> [. A / x ]. [. B / y ]. ph ) $=
+      ( vz vw cop wcel cvv wsbc sbcex cv wsb wceq opeq1 eleq1d dfsbcq2 bibi12d
+      wb copab wbr df-br brex sylbir wex spesbc exlimiv syl jca sbcbidv nfopab1
+      opeq2 nfel2 nfs1v nfbi weq sbequ12 nfopab2 opabid chvar vtocl2g pm5.21nii
+      wa ) DEHZABCUAZIZDJIZEJIZVDZACEKZBDKZVGDEVFUBVJDEVFUCDEVFUDUEVLVHVIVKBDLV
+      LVKBUFVIVKBDUGVKVIBACELUHUIUJFMZGMZHZVFIZACGNZBFNZTZDVNHZVFIZVQBDKZTVGVLT
+      FGDEJJVMDOZVPWAVRWBWCVOVTVFVMDVNPQVQBFDRSVNEOZWAVGWBVLWDVTVEVFVNEDUMQWDVQ
+      VKBDACGERUKSBMZVNHZVFIZVQTZVSBFVPVRBBVOVFABCULUNVQBFUOUPBFUQZWGVPVQVRWIWF
+      VOVFWEVMVNPQVQBFURSWECMZHZVFIZATWHCGWGVQCCWFVFABCUSUNACGUOUPCGUQZWLWGAVQW
+      MWKWFVFWJVNWEUMQACGURSABCUTVAVAVBVC $.
+
+    brabsb.1 $e |- R = { <. x , y >. | ph } $.
+    $( The law of concretion in terms of substitutions.  (Contributed by NM,
+       17-Mar-2008.) $)
+    brabsb $p |- ( A R B <-> [. A / x ]. [. B / y ]. ph ) $=
+      ( wbr cop wcel copab wsbc df-br eleq2i opelopabsb 3bitri ) DEFHDEIZFJQABC
+      KZJACELBDLDEFMFRQGNABCDEOP $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y ch $.  $d z ph $.
+    $( Closed theorem form of ~ opelopab .  (Contributed by ?who?,
+       19-Feb-2013.) $)
+    opelopabt $p |- ( ( A. x A. y ( x = A -> ( ph <-> ps ) )
+                     /\ A. x A. y ( y = B -> ( ps <-> ch ) )
+                     /\ ( A e. V /\ B e. W ) ) ->
+                    ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) ) $=
+      ( cop copab wcel cv wceq wa wex wb wi wal w3a elopab prth 2alimi copsex2t
+      19.26-2 bitr syl6 sylbir sylan 3impa syl5bb ) FGJZADEKLULDMZEMZJNAOEPDPZU
+      MFNZABQZRZESDSZUNGNZBCQZRZESDSZFHLGILOZTCADEULUAUSVCVDUOCQZUSVCOZUPUTOZAC
+      QZRZESDSZVDVEVFURVBOZESDSVJURVBDEUEVKVIDEVKVGUQVAOVHUPUQUTVAUBABCUFUGUCUH
+      ACDEFGHIUDUIUJUK $.
+      $( [19-Feb-2013] $)
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ps $.
+    opelopabga.1 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  (Contributed by
+       Mario Carneiro, 19-Dec-2013.) $)
+    opelopabga $p |- ( ( A e. V /\ B e. W ) ->
+                    ( <. A , B >. e. { <. x , y >. | ph } <-> ps ) ) $=
+      ( cop copab wcel cv wceq wa wex elopab copsex2g syl5bb ) EFJZACDKLTCMDMJN
+      AODPCPEGLFHLOBACDTQABCDEFGHIRS $.
+      $( [19-Dec-2013] $)
+
+    ${
+      brabga.2 $e |- R = { <. x , y >. | ph } $.
+      $( The law of concretion for a binary relation.  (Contributed by Mario
+         Carneiro, 19-Dec-2013.) $)
+      brabga $p |- ( ( A e. V /\ B e. W ) -> ( A R B <-> ps ) ) $=
+        ( wbr cop copab wcel wa df-br eleq2i bitri opelopabga syl5bb ) EFGLZEFM
+        ZACDNZOZEHOFIOPBUBUCGOUEEFGQGUDUCKRSABCDEFHIJTUA $.
+        $( [19-Dec-2013] $)
+    $}
+
+    $d x y C $.  $d x y D $.
+    $( Ordered pair membership in an ordered pair class abstraction.
+       (Contributed by Mario Carneiro, 19-Dec-2013.) $)
+    opelopab2a $p |- ( ( A e. C /\ B e. D ) -> ( <. A , B >. e.
+                 { <. x , y >. | ( ( x e. C /\ y e. D ) /\ ph ) } <-> ps ) ) $=
+      ( wcel wa cop cv copab wceq eleq1 bi2anan9 anbi12d opelopabga bianabs ) E
+      GJZFHJZKZEFLCMZGJZDMZHJZKZAKZCDNJBUIUCBKCDEFGHUDEOZUFFOZKUHUCABUJUEUAUKUG
+      UBUDEGPUFFHPQIRST $.
+      $( [19-Dec-2013] $)
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ps $.
+    opelopaba.1 $e |- A e. _V $.
+    opelopaba.2 $e |- B e. _V $.
+    opelopaba.3 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  (Contributed by
+       Mario Carneiro, 19-Dec-2013.) $)
+    opelopaba $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ps ) $=
+      ( cvv wcel cop copab wb opelopabga mp2an ) EJKFJKEFLACDMKBNGHABCDEFJJIOP
+      $.
+      $( [19-Dec-2013] $)
+
+    ${
+      braba.4 $e |- R = { <. x , y >. | ph } $.
+      $( The law of concretion for a binary relation.  (Contributed by ?who?,
+         19-Dec-2013.) $)
+      braba $p |- ( A R B <-> ps ) $=
+        ( cvv wcel wbr wb brabga mp2an ) ELMFLMEFGNBOHIABCDEFGLLJKPQ $.
+        $( [19-Dec-2013] $)
+    $}
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ch $.
+    opelopabg.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopabg.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  (Contributed by
+       ?who?, 28-May-1995.)  (Revised by ?who?, 19-Dec-2013.) $)
+    opelopabg $p |- ( ( A e. V /\ B e. W ) ->
+                    ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) ) $=
+      ( cv wceq sylan9bb opelopabga ) ACDEFGHIDLFMABELGMCJKNO $.
+      $( [19-Dec-2013] $) $( [28-May-1995] $)
+
+    ${
+      brabg.5 $e |- R = { <. x , y >. | ph } $.
+      $( The law of concretion for a binary relation.  (Contributed by ?who?,
+         16-Aug-1999.)  (Revised by ?who?, 19-Dec-2013.) $)
+      brabg $p |- ( ( A e. C /\ B e. D ) -> ( A R B <-> ch ) ) $=
+        ( cv wceq sylan9bb brabga ) ACDEFGJHIDNFOABENGOCKLPMQ $.
+        $( [19-Dec-2013] $) $( [16-Aug-1999] $)
+    $}
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.  $d x y D $.  $d x y ch $.
+    opelopab2.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopab2.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( Ordered pair membership in an ordered pair class abstraction.
+       (Contributed by ?who?, 14-Oct-2007.)  (Revised by ?who?,
+       19-Dec-2013.) $)
+    opelopab2 $p |- ( ( A e. C /\ B e. D ) -> ( <. A , B >. e.
+                 { <. x , y >. | ( ( x e. C /\ y e. D ) /\ ph ) } <-> ch ) ) $=
+      ( cv wceq sylan9bb opelopab2a ) ACDEFGHIDLFMABELGMCJKNO $.
+      $( [19-Dec-2013] $) $( [14-Oct-2007] $)
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ch $.
+    opelopab.1 $e |- A e. _V $.
+    opelopab.2 $e |- B e. _V $.
+    opelopab.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopab.4 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  (Contributed by
+       ?who?, 16-May-1995.) $)
+    opelopab $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) $=
+      ( cvv wcel cop copab wb opelopabg mp2an ) FLMGLMFGNADEOMCPHIABCDEFGLLJKQR
+      $.
+      $( [16-May-1995] $)
+
+    ${
+      brab.5 $e |- R = { <. x , y >. | ph } $.
+      $( The law of concretion for a binary relation.  (Contributed by ?who?,
+         16-Aug-1999.) $)
+      brab $p |- ( A R B <-> ch ) $=
+        ( cvv wcel wbr wb brabg mp2an ) FNOGNOFGHPCQIJABCDEFGNNHKLMRS $.
+        $( [16-Aug-1999] $)
+    $}
+  $}
+
+  ${
+    $d w x y z A $.  $d w x y z B $.  $d w z ph $.  $d w z ps $.
+    opelopabaf.x $e |- F/ x ps $.
+    opelopabaf.y $e |- F/ y ps $.
+    opelopabaf.1 $e |- A e. _V $.
+    opelopabaf.2 $e |- B e. _V $.
+    opelopabaf.3 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  This version of
+       ~ opelopab uses bound-variable hypotheses in place of distinct variable
+       conditions."  (Contributed by Mario Carneiro, 19-Dec-2013.)  (Proof
+       shortened by Mario Carneiro, 18-Nov-2016.) $)
+    opelopabaf $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ps ) $=
+      ( cop copab wcel wsbc opelopabsb cvv wb nfv sbc2iegf mp2an bitri ) EFLACD
+      MNADFOCEOZBACDEFPEQNFQNZUCBRIJABCDEFQQGHUDCSKTUAUB $.
+  $}
+
+  ${
+    $d w x y z A $.  $d w x y z B $.  $d w z ch $.  $d w z ph $.
+    opelopabf.x $e |- F/ x ps $.
+    opelopabf.y $e |- F/ y ch $.
+    opelopabf.1 $e |- A e. _V $.
+    opelopabf.2 $e |- B e. _V $.
+    opelopabf.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopabf.4 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  This version of
+       ~ opelopab uses bound-variable hypotheses in place of distinct variable
+       conditions."  (Contributed by NM, 19-Dec-2008.) $)
+    opelopabf $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) $=
+      ( cop wcel wsbc cvv wb sbciegf ax-mp copab opelopabsb nfcv cv wceq 3bitri
+      nfsbc sbcbidv ) FGNADEUAOAEGPZDFPZBEGPZCADEFGUBFQOUJUKRJUIUKDFQBDEGDGUCHU
+      GDUDFUEABEGLUHSTGQOUKCRKBCEGQIMSTUF $.
+  $}
+
+  ${
+    $d ph z $.  $d ps z $.  $d x z $.  $d y z $.
+    $( Equivalence of ordered pair abstraction subclass and implication.
+       (Contributed by NM, 27-Dec-1996.)  (Revised by Mario Carneiro,
+       19-May-2013.) $)
+    ssopab2 $p |- ( A. x A. y ( ph -> ps ) ->
+        { <. x , y >. | ph } C_ { <. x , y >. | ps } ) $=
+      ( vz wi wal cv cop wceq wa wex cab copab nfa1 sp anim2d eximd sps df-opab
+      ss2abdv 3sstr4g ) ABFZDGZCGZEHCHDHIJZAKZDLZCLZEMUFBKZDLZCLZEMACDNBCDNUEUI
+      ULEUEUHUKCUDCOUDUHUKFCUDUGUJDUCDOUDABUFUCDPQRSRUAACDETBCDETUB $.
+  $}
+
+
+  ${
+    $d ph z $.  $d ps z $.  $d x z $.  $d y z $.
+    $( Equivalence of ordered pair abstraction subclass and implication.
+       (Contributed by NM, 27-Dec-1996.)  (Proof shortened by Mario Carneiro,
+       18-Nov-2016.) $)
+    ssopab2b $p |- ( { <. x , y >. | ph } C_ { <. x , y >. | ps } <->
+               A. x A. y ( ph -> ps ) ) $=
+      ( copab wss wi wal nfopab1 nfss nfopab2 cv cop wcel opabid 3imtr3g alrimi
+      ssel ssopab2 impbii ) ACDEZBCDEZFZABGZDHZCHUCUECCUAUBACDIBCDIJUCUDDDUAUBA
+      CDKBCDKJUCCLDLMZUANUFUBNABUAUBUFRACDOBCDOPQQABCDST $.
+  $}
+
+  ${
+    ssopab2i.1 $e |- ( ph -> ps ) $.
+    $( Inference of ordered pair abstraction subclass from implication.
+       (Contributed by NM, 5-Apr-1995.) $)
+    ssopab2i $p |- { <. x , y >. | ph } C_ { <. x , y >. | ps } $=
+      ( wi wal copab wss ssopab2 ax-gen mpg ) ABFZDGACDHBCDHICABCDJMDEKL $.
+  $}
+
+  ${
+    $d x ph $.  $d y ph $.
+    ssopab2dv.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Inference of ordered pair abstraction subclass from implication.
+       (Contributed by NM, 19-Jan-2014.)  (Revised by Mario Carneiro,
+       24-Jun-2014.) $)
+    ssopab2dv $p |- ( ph -> { <. x , y >. | ps } C_ { <. x , y >. | ch } ) $=
+      ( wi wal copab wss alrimivv ssopab2 syl ) ABCGZEHDHBDEICDEIJANDEFKBCDELM
+      $.
+  $}
+
+  ${
+    $d z ph $.  $d z x $.  $d z y $.
+    $( Non-empty ordered pair class abstraction.  (Contributed by NM,
+       10-Oct-2007.) $)
+    opabn0 $p |- ( { <. x , y >. | ph } =/= (/) <-> E. x E. y ph ) $=
+      ( vz copab c0 wne cv wcel wex cop wceq wa n0 elopab exbii exrot3 vex opex
+      isseti 19.41v mpbiran 2exbii bitri 3bitri ) ABCEZFGDHZUFIZDJUGBHZCHZKZLZA
+      MZCJBJZDJZACJBJZDUFNUHUNDABCUGOPUOUMDJZCJBJUPUMDBCQUQABCUQULDJADUKUIUJBRC
+      RSTULADUAUBUCUDUE $.
+      $( [10-Oct-2007] $)
+  $}
+
