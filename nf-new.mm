@@ -26823,17 +26823,18 @@ $)
 
   ${
     $d w x y A $.  $d w x y z B $.  $d w C $.  $d w D $.
-    iunxpf.1 $e |- ( w e. C -> A. y w e. C ) $.
-    iunxpf.2 $e |- ( w e. C -> A. z w e. C ) $.
-    iunxpf.3 $e |- ( w e. D -> A. x w e. D ) $.
+    iunxpf.1 $e |- F/_ y C $.
+    iunxpf.2 $e |- F/_ z C $.
+    iunxpf.3 $e |- F/_ x D $.
     iunxpf.4 $e |- ( x = <. y , z >. -> C = D ) $.
     $( Indexed union on a cross product is equals a double indexed union.  The
        hypothesis specifies an implicit substitution.  (Contributed by ?who?,
        19-Dec-2008.) $)
     iunxpf $p |- U_ x e. ( A X. B ) C = U_ y e. A U_ z e. B D $=
-      ( cxp ciun cv wcel wrex cop wceq eliun eleq2d rexxpf rexbii bitri 3bitr4i
-      eqriv ) DAEFMZGNZBECFHNZNZDOZGPZAUGQUKHPZCFQZBEQZUKUHPUKUJPZULUMABCEFIJKA
-      OBOCORSGHUKLUAUBAUKUGGTUPUKUIPZBEQUOBUKEUITUQUNBECUKFHTUCUDUEUF $.
+      ( vw cxp ciun cv wcel wrex nfel2 cop eliun wceq eleq2d rexxpf bitri eqriv
+      rexbii 3bitr4i ) LADEMZFNZBDCEGNZNZLOZFPZAUHQULGPZCEQZBDQZULUIPULUKPZUMUN
+      ABCDEBULFHRCULFIRAULGJRAOBOCOSUAFGULKUBUCAULUHFTUQULUJPZBDQUPBULDUJTURUOB
+      DCULEGTUFUDUGUE $.
       $( [19-Dec-2008] $)
   $}
 
@@ -34051,17 +34052,17 @@ $)
       $( [23-Mar-2004] $)
   $}
 
+
   ${
     $d x y F $.
-    $( Upper bound for the class of values of a class.  (Contributed by ?who?,
+    $( Upper bound for the class of values of a class.  (Contributed by NM,
        9-Nov-1995.) $)
     fvclss $p |- { y | E. x y = ( F ` x ) } C_ ( ran F u. { (/) } ) $=
-      ( cv cfv wceq wex crn c0 csn cun wcel wo wn wne wbr eqcom tz6.12i syl6ibr
-      syl5bi eximdv com12 elrn necon1bd vex elsn orrd elun sylibr abssi ) BDZAD
-      ZCEZFZAGZBCHZIJZKZUOUKUPLZUKUQLZMUKURLUOUSUTUOUSNUKIFUTUOUSUKIUOUKIOZULUK
-      CPZAGZUSVAUOVCVAUNVBAUNUMUKFVAVBUKUMQULUKCRTUAUBAUKCUCSUDUKIBUEUFSUGUKUPU
-      QUHUIUJ $.
-      $( [9-Nov-1995] $)
+      ( cv cfv wceq wex cab crn wcel c0 csn wo cun wn wne eqcom tz6.12i syl6ibr
+      wbr syl5bi eximdv vex elrn com12 necon1bd elsn orrd ss2abi df-un sseqtr4i
+      ) BDZADZCEZFZAGZBHULCIZJZULKLZJZMZBHUQUSNUPVABUPURUTUPUROULKFUTUPURULKULK
+      PZUPURVBUPUMULCTZAGURVBUOVCAUOUNULFVBVCULUNQUMULCRUAUBAULCBUCUDSUEUFBKUGS
+      UHUIBUQUSUJUK $.
   $}
 
   ${
@@ -34138,20 +34139,17 @@ $)
       $( [26-Mar-2006] $)
   $}
 
+
   ${
     $d x z A $.  $d y z F $.  $d x y $.
-    funiunfvf.1 $e |- ( y e. F -> A. x y e. F ) $.
+    funiunfvf.1 $e |- F/_ x F $.
     $( The indexed union of a function's values is the union of its image under
        the index class.  This version of ~ funiunfv uses a bound-variable
-       hypothesis in place of a distinct variable condition.  (Unnecessary
-       distinct variable restrictions were removed by David Abernethy,
-       15-Apr-2013.)  (Contributed by ?who?, 26-Mar-2006.)  (Revised by ?who?,
-       15-Apr-2013.) $)
+       hypothesis in place of a distinct variable condition.  (Contributed by
+       NM, 26-Mar-2006.)  (Revised by David Abernethy, 15-Apr-2013.) $)
     funiunfvf $p |- ( Fun F -> U_ x e. A ( F ` x ) = U. ( F " A ) ) $=
-      ( vz wfun cv ciun cima cuni wcel ax-17 hbfv fveq2 cbviun funiunfv syl5eqr
-      cfv ) DGACAHZDSZIFCFHZDSZIDCJKFABCUCUAABUBDEBHZUBLAMNUDUALFMUBTDOPFCDQR
-      $.
-      $( [15-Apr-2013] $)  $( [26-Mar-2006] $)
+      ( vz wfun cv cfv ciun cima cuni nfcv nffv fveq2 cbviun funiunfv syl5eqr )
+      CFABAGZCHZIEBEGZCHZICBJKEABUASATCDATLMESLTRCNOEBCPQ $.
   $}
 
   ${
@@ -34195,23 +34193,22 @@ $)
       $( [29-Oct-1996] $)
   $}
 
+
   ${
     $d x y w v A $.  $d w v B $.  $d z w v F $.  $d x y z $.
-    f1fvf.1 $e |- ( z e. F -> A. x z e. F ) $.
-    f1fvf.2 $e |- ( z e. F -> A. y z e. F ) $.
+    dff13f.1 $e |- F/_ x F $.
+    dff13f.2 $e |- F/_ y F $.
     $( A one-to-one function in terms of function values.  Compare Theorem
-       4.8(iv) of [Monk1] p. 43.  (Contributed by ?who?, 31-Jul-2003.) $)
+       4.8(iv) of [Monk1] p. 43.  (Contributed by NM, 31-Jul-2003.) $)
     dff13f $p |- ( F : A -1-1-> B <-> ( F : A --> B /\
              A. x e. A A. y e. A ( ( F ` x ) = ( F ` y ) -> x = y ) ) ) $=
-      ( vw vv cv cfv wceq wi wral wa wcel ax-17 hbfv hbim wf1 dff13 hbeq eqeq2d
-      fveq2 eqeq2 imbi12d cbvral ralbii hbral eqeq1d eqeq1 ralbidv bitri anbi2i
-      wf ) DEFUADEFUPZIKZFLZJKZFLZMZURUTMZNZJDOZIDOZPUQAKZFLZBKZFLZMZVGVIMZNZBD
-      OZADOZPIJDEFUBVFVOUQVFUSVJMZURVIMZNZBDOZIDOVOVEVSIDVDVRJBDVBVCBBCCUSVABCU
-      RFHCKZURQZBRSBCUTFHVTUTQBRSUCVCBRTVPVQJVPJRVQJRTUTVIMZVBVPVCVQWBVAVJUSUTV
-      IFUEUDUTVIURUFUGUHUIVSVNIADVRABDVIDQARVPVQAACCUSVJACURFGWAARSACVIFGVTVIQA
-      RSUCVQARTUJVNIRURVGMZVRVMBDWCVPVKVQVLWCUSVHVJURVGFUEUKURVGVIULUGUMUHUNUOU
-      N $.
-      $( [31-Jul-2003] $)
+      ( vw vv cv cfv wceq wi wral wa nfcv nffv nfeq nfv nfim wf1 wf dff13 fveq2
+      eqeq2d eqeq2 imbi12d cbvral ralbii nfral eqeq1d eqeq1 ralbidv anbi2i
+      bitri ) CDEUACDEUBZHJZEKZIJZEKZLZUQUSLZMZICNZHCNZOUPAJZEKZBJZEKZLZVFVHLZM
+      ZBCNZACNZOHICDEUCVEVNUPVEURVILZUQVHLZMZBCNZHCNVNVDVRHCVCVQIBCVAVBBBURUTBU
+      QEGBUQPQBUSEGBUSPQRVBBSTVQISUSVHLZVAVOVBVPVSUTVIURUSVHEUDUEUSVHUQUFUGUHUI
+      VRVMHACVQABCACPVOVPAAURVIAUQEFAUQPQAVHEFAVHPQRVPASTUJVMHSUQVFLZVQVLBCVTVO
+      VJVPVKVTURVGVIUQVFEUDUKUQVFVHULUGUMUHUOUNUO $.
   $}
 
   ${
@@ -34317,23 +34314,6 @@ $)
     HOBAPEQABDJBAPKLBACPMN $.
     $( [26-May-2006] $)
 
-  ${
-    $d x y A $.  $d y B $.  $d x y F $.  $d y ph $.  $d x ps $.
-    cbvfo.1 $e |- ( ( F ` x ) = y -> ( ph <-> ps ) ) $.
-    $( Change bound variable between domain and range of function.
-       (Contributed by NM, 23-Feb-1997.)  (Proof shortened by Mario Carneiro,
-       21-Mar-2015.) $)
-    cbvfo $p |- ( F : A -onto-> B -> ( A. x e. A ph <-> A. y e. B ps ) ) $=
-      ( wfo crn wral wfn wb fofn cv cfv wceq bicomd eqcoms ralrn raleqdv bitr3d
-      syl forn ) EFGIZBDGJZKZACEKZBDFKUEGELUGUHMEFGNBADCEGBAMCOGPZDOZUIUJQABHRS
-      TUCUEBDUFFEFGUDUAUB $.
-
-    $( Change bound variable between domain and range of function.
-       (Contributed by NM, 23-Feb-1997.) $)
-    cbvexfo $p |- ( F : A -onto-> B -> ( E. x e. A ph <-> E. y e. B ps ) ) $=
-      ( wfo wn wral wrex cv cfv wceq notbid cbvfo dfrex2 3bitr4g ) EFGIZAJZCEKZ
-      JBJZDFKZJACELBDFLTUBUDUAUCCDEFGCMGNDMOABHPQPACERBDFRS $.
-  $}
 
   ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y H $.  $d x y G $.
