@@ -26585,14 +26585,14 @@ $)
 
   ${
     $d x y z A $.  $d x y z B $.  $d x y z C $.
-    $( Equality theorem for cross product.  (Contributed by ?who?,
+    $( Equality theorem for cross product.  (Contributed by NM,
        4-Jul-1994.) $)
     xpeq1 $p |- ( A = B -> ( A X. C ) = ( B X. C ) ) $=
       ( vx vy wceq cv wcel wa copab cxp eleq2 anbi1d opabbidv df-xp 3eqtr4g ) A
       BFZDGZAHZEGCHZIZDEJRBHZTIZDEJACKBCKQUAUCDEQSUBTABRLMNDEACODEBCOP $.
       $( [4-Jul-1994] $)
 
-    $( Equality theorem for cross product.  (Contributed by ?who?,
+    $( Equality theorem for cross product.  (Contributed by NM,
        5-Jul-1994.) $)
     xpeq2 $p |- ( A = B -> ( C X. A ) = ( C X. B ) ) $=
       ( vx vy wceq cv wcel wa copab cxp eleq2 anbi2d opabbidv df-xp 3eqtr4g ) A
@@ -26600,7 +26600,7 @@ $)
       $( [5-Jul-1994] $)
 
     $( Membership in a cross product.  Uses fewer axioms than ~ elxp .
-       (Contributed by ?who?, 4-Jul-1994.) $)
+       (Contributed by NM, 4-Jul-1994.) $)
     elxpi $p |- ( A e. ( B X. C ) -> E. x E. y ( A = <. x , y >. /\
                ( x e. B /\ y e. C ) ) ) $=
       ( vz cv cop wceq wcel wa wex cab cxp eqeq1 anbi1d 2exbidv elabg ibi copab
@@ -26609,14 +26609,14 @@ $)
       UCUD $.
       $( [4-Jul-1994] $)
 
-    $( Membership in a cross product.  (Contributed by ?who?, 4-Jul-1994.) $)
+    $( Membership in a cross product.  (Contributed by NM, 4-Jul-1994.) $)
     elxp $p |- ( A e. ( B X. C ) <-> E. x E. y ( A = <. x , y >. /\
                ( x e. B /\ y e. C ) ) ) $=
       ( cxp wcel cv wa copab cop wceq wex df-xp eleq2i elopab bitri ) CDEFZGCAH
       ZDGBHZEGIZABJZGCSTKLUAIBMAMRUBCABDENOUAABCPQ $.
       $( [4-Jul-1994] $)
 
-    $( Membership in a cross product.  (Contributed by ?who?, 23-Feb-2004.) $)
+    $( Membership in a cross product.  (Contributed by NM, 23-Feb-2004.) $)
     elxp2 $p |- ( A e. ( B X. C ) <-> E. x e. B E. y e. C A = <. x , y >. ) $=
       ( cv wcel cop wceq wrex wa wex cxp df-rex r19.42v an13 exbii 3bitr3i elxp
       3bitr4ri ) AFZDGZCUABFZHIZBEJZKZALUDUBUCEGZKKZBLZALUEADJCDEMGUFUIAUBUDKZB
@@ -26631,13 +26631,13 @@ $)
 
   ${
     xpeq1i.1 $e |- A = B $.
-    $( Equality inference for cross product.  (Contributed by ?who?,
+    $( Equality inference for cross product.  (Contributed by NM,
        21-Dec-2008.) $)
     xpeq1i $p |- ( A X. C ) = ( B X. C ) $=
       ( wceq cxp xpeq1 ax-mp ) ABEACFBCFEDABCGH $.
       $( [21-Dec-2008] $)
 
-    $( Equality inference for cross product.  (Contributed by ?who?,
+    $( Equality inference for cross product.  (Contributed by NM,
        21-Dec-2008.) $)
     xpeq2i $p |- ( C X. A ) = ( C X. B ) $=
       ( wceq cxp xpeq2 ax-mp ) ABECAFCBFEDABCGH $.
@@ -26669,7 +26669,7 @@ $)
       $( [17-Jun-2010] $)
 
     xpeq12d.2 $e |- ( ph -> C = D ) $.
-    $( Equality deduction for cross product.  (Contributed by ?who?,
+    $( Equality deduction for cross product.  (Contributed by NM,
        8-Dec-2013.) $)
     xpeq12d $p |- ( ph -> ( A X. C ) = ( B X. D ) ) $=
       ( wceq cxp xpeq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
@@ -26691,7 +26691,7 @@ $)
   ${
     $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.
     $( Ordered pair membership in a cross product.  (The proof was shortened by
-       Andrew Salmon, 12-Aug-2011.)  (Contributed by ?who?, 15-Nov-1994.)
+       Andrew Salmon, 12-Aug-2011.)  (Contributed by NM, 15-Nov-1994.)
        (Revised by ?who?, 12-Aug-2011.) $)
     opelxp $p |- ( <. A , B >. e. ( C X. D ) <-> ( A e. C /\ B e. D ) ) $=
       ( vx vy cop cv wceq wcel wa wex cxp eqcom bitri anbi1i an4 2exbii df-clel
@@ -26731,7 +26731,7 @@ $)
     $d x y z A $.  $d x y z B $.  $d y z ph $.  $d x ps $.
     rabxp.1 $e |- ( x = <. y , z >. -> ( ph <-> ps ) ) $.
     $( Membership in a class builder restricted to a cross product.
-       (Contributed by ?who?, 20-Feb-2014.) $)
+       (Contributed by NM, 20-Feb-2014.) $)
     rabxp $p |- { x e. ( A X. B ) | ph }
              = { <. y , z >. | ( y e. A /\ z e. B /\ ps ) } $=
       ( cv cxp wcel wa cab cop wceq w3a wex crab copab elxp anbi1i anass anbi2d
@@ -26745,7 +26745,7 @@ $)
   ${
     $d x y A $.  $d x y B $.
     $( Representation of a constant function using ordered pairs.  (Contributed
-       by ?who?, 12-Oct-1999.) $)
+       by NM, 12-Oct-1999.) $)
     fconstopab $p |- ( A X. { B } ) = { <. x , y >. | ( x e. A /\ y = B ) } $=
       ( csn cxp cv wcel wa copab wceq df-xp df-sn abeq2i anbi2i opabbii eqtri )
       CDEZFAGCHZBGZRHZIZABJSTDKZIZABJABCRLUBUDABUAUCSUCBRBDMNOPQ $.
@@ -26756,7 +26756,7 @@ $)
     $d x y A $.  $d y B $.  $d x y z C $.  $d x y z R $.
     vtoclr.2 $e |- ( ( x R y /\ y R z ) -> x R z ) $.
     $( Variable to class conversion of transitive relation.  (Contributed by
-       ?who?, 9-Jun-1998.) $)
+       NM, 9-Jun-1998.) $)
     vtoclr $p |- ( ( A R B /\ B R C ) -> A R C ) $=
       ( cvv wcel wa wbr brex wi cv wceq breq1 imbi12d imbi2d breq2 simprd mpcom
       anim12i anbi1d anbi12d imbi1d anbi2d vtoclg vtocl2g imp ) DIJEIJZKZFIJZKD
@@ -26799,7 +26799,7 @@ $)
     ralxpf.3 $e |- F/ x ps $.
     ralxpf.4 $e |- ( x = <. y , z >. -> ( ph <-> ps ) ) $.
     $( Version of ~ ralxp with bound-variable hypotheses.  (Contributed by
-       ?who?, 18-Aug-2006.)  (Revised by ?who?, 20-Dec-2008.) $)
+       NM, 18-Aug-2006.)  (Revised by ?who?, 20-Dec-2008.) $)
     ralxpf $p |- ( A. x e. ( A X. B ) ph <-> A. y e. A A. z e. B ps ) $=
       ( vw vu vv wral wsb nfv cv wceq nfsb cxp cbvralsv nfcv nfs1 nfral sbequ12
       ralbii weq ralbidv cbvral cop wa wex wb eqvinop nfbi sbhypf opth sylan9bb
@@ -26812,7 +26812,7 @@ $)
       $( [20-Dec-2008] $) $( [18-Aug-2006] $)
 
     $( Version of ~ rexxp with bound-variable hypotheses.  (Contributed by
-       ?who?, 19-Dec-2008.) $)
+       NM, 19-Dec-2008.) $)
     rexxpf $p |- ( E. x e. ( A X. B ) ph <-> E. y e. A E. z e. B ps ) $=
       ( wn cxp wral wrex nfn cv cop wb dfrex2 notbi ralxpf notbii rexbii rexnal
       wceq sylib bitri 3bitr4i ) ALZCFGMZNZLBLZEGNZDFNZLZACUKOBEGOZDFOZULUOUJUM
@@ -26828,7 +26828,7 @@ $)
     iunxpf.3 $e |- F/_ x D $.
     iunxpf.4 $e |- ( x = <. y , z >. -> C = D ) $.
     $( Indexed union on a cross product is equals a double indexed union.  The
-       hypothesis specifies an implicit substitution.  (Contributed by ?who?,
+       hypothesis specifies an implicit substitution.  (Contributed by NM,
        19-Dec-2008.) $)
     iunxpf $p |- U_ x e. ( A X. B ) C = U_ y e. A U_ z e. B D $=
       ( vw cxp ciun cv wcel wrex nfel2 cop eliun wceq eleq2d rexxpf bitri eqriv
@@ -26841,7 +26841,7 @@ $)
   ${
     brelg.1 $e |- R C_ ( C X. D ) $.
     $( Two things in a binary relation belong to the relation's domain.
-       (Contributed by ?who?, 17-May-1996.) $)
+       (Contributed by NM, 17-May-1996.) $)
     brel $p |- ( A R B -> ( A e. C /\ B e. D ) ) $=
       ( wbr cxp wcel wa ssbri brxp sylib ) ABEGABCDHZGACIBDIJENABFKABCDLM $.
       $( [17-May-1996] $)
@@ -27464,7 +27464,7 @@ $)
       $( [11-Dec-2006] $)
 
     $( Intersection of two ordered pair class abstractions.  (Contributed by
-       ?who?, 30-Sep-2002.) $)
+       NM, 30-Sep-2002.) $)
     inopab $p |- ( { <. x , y >. | ph } i^i { <. x , y >. | ps } ) =
                { <. x , y >. | ( ph /\ ps ) } $=
       ( vz vw copab cin wa wrel relopab relin1 ax-mp cop wcel wsbc sbcan sbcbii
