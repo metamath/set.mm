@@ -24962,6 +24962,16 @@ $)
     EHZNCIABCJOPABKLM $.
     $( [7-Jan-2015] $)
 
+  $( Binary relationship implies sethood of domain.  (Contributed by SF,
+     7-Jan-2018.) $)
+  brreldmex $p |- ( A R B -> A e. _V ) $=
+    ( wbr cvv wcel brex simpld ) ABCDAEFBEFABCGH $.
+
+
+  $( Binary relationship implies sethood of range.  (Contributed by SF,
+     7-Jan-2018.) $)
+  brrelrnex $p |- ( A R B -> B e. _V ) $=
+    ( wbr cvv wcel brex simprd ) ABCDAEFBEFABCGH $.
 
   $( The union of two binary relations.  (Contributed by NM, 21-Dec-2008.) $)
   brun $p |- ( A ( R u. S ) B <-> ( A R B \/ A S B ) ) $=
@@ -29408,17 +29418,17 @@ $)
     ( ccnv cvv cxp cin cnvcnv inss1 eqsstri ) ABBACCDZEAAFAIGH $.
     $( [23-Jul-2004] $)
 
-  
+
   ${
     $d x y A $.
     $( The domain of a singleton is nonzero iff the singleton argument is an
        ordered pair.  (Contributed by NM, 14-Dec-2008.)  (Proof shortened by
        Andrew Salmon, 27-Aug-2011.) $)
     dmsnn0 $p |- ( A e. ( _V X. _V ) <-> dom { A } =/= (/) ) $=
-      ( vx vy cv cop wceq wex csn cdm wcel cvv cxp wne wbr vex eldm df-br exbii
-      c0 opex elsnc eqcom 3bitri bitr2i elvv n0 3bitr4i ) ABDZCDZEZFZCGZBGUHAHZ
-      IZJZBGAKKLJUNSMULUOBUOUHUIUMNZCGULCUHUMBOPUPUKCUPUJUMJUJAFUKUHUIUMQUJAUHU
-      ITUAUJAUBUCRUDRBCAUEBUNUFUG $.
+      ( vx vy cv cop wceq wex csn cdm wcel cvv cxp c0 wne eldm2 vex elsnc bitri
+      opex exbii eqcom bicomi elvv n0 3bitr4i ) ABDZCDZEZFZCGZBGZUFAHZIZJZBGZAK
+      KLJUMMNUOUKUNUJBUNUHULJZCGUJCUFULOUPUICUPUHAFUIUHAUFUGBPCPSQUHAUARTRTUBBC
+      AUCBUMUDUE $.
   $}
 
   $( The range of a singleton is nonzero iff the singleton argument is an
@@ -29428,52 +29438,62 @@ $)
     ZGHNIZGHAJOGPGNKLM $.
     $( [14-Dec-2008] $)
 
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x z V $.
+    $( The domain of a singleton of an ordered pair is the singleton of the
+       first member.  (Contributed by Mario Carneiro, 26-Apr-2015.) $)
+    dmsnopg $p |- ( B e. V -> dom { <. A , B >. } = { A } ) $=
+      ( vy vx vz cv cop csn cdm wceq opeq2 sneqd dmeqd eqeq1d wex wcel wa bitri
+      vex wbr weq df-br opex elsnc opth ancom 3bitri exbii ceqsexv eldm 3bitr4i
+      biidd elsn eqriv vtoclg ) ADGZHZIZJZAIZKABHZIZJZVAKDBCUQBKZUTVDVAVEUSVCVE
+      URVBUQBALMNOEUTVAEGZFGZUSUAZFPZVFAKZVFUTQVFVAQVIFDUBZVJRZFPVJVHVLFVHVFVGH
+      ZUSQVMURKZVLVFVGUSUCVMURVFVGETFTUDUEVNVJVKRVLVFVGAUQUFVJVKUGSUHUIVJVJFUQD
+      TVKVJUMUJSFVFUSUKEAUNULUOUP $.
+
+    $( The domain of a singleton of an ordered pair is a subset of the
+       singleton of the first member (with no sethood assumptions on ` B ` ).
+       (Contributed by Mario Carneiro, 30-Apr-2015.) $)
+    dmsnopss $p |- dom { <. A , B >. } C_ { A } $=
+      ( cvv wcel cop csn cdm wss wceq dmsnopg eqimss syl wn opexb simprbi con3i
+      c0 snprc sylib dmeqd dm0 syl6eq 0ss syl6eqss pm2.61i ) BCDZABEZFZGZAFZHZU
+      FUIUJIUKABCJUIUJKLUFMZUIQUJULUIQGQULUHQULUGCDZMUHQIUMUFUMACDUFABNOPUGRSTU
+      AUBUJUCUDUE $.
+
+    $( The domain of an unordered pair of ordered pairs.  (Contributed by Mario
+       Carneiro, 26-Apr-2015.) $)
+    dmpropg $p |- ( ( B e. V /\ D e. W ) ->
+        dom { <. A , B >. , <. C , D >. } = { A , C } ) $=
+      ( wcel wa cop csn cdm cun cpr wceq dmsnopg uneq12 syl2an df-pr dmeqi dmun
+      eqtri 3eqtr4g ) BEGZDFGZHABIZJZKZCDIZJZKZLZAJZCJZLZUEUHMZKZACMUCUGULNUJUM
+      NUKUNNUDABEOCDFOUGULUJUMPQUPUFUILZKUKUOUQUEUHRSUFUITUAACRUB $.
+  $}
+
   ${
     $d x y A $.  $d x y B $.
     dmsnop.1 $e |- B e. _V $.
     $( The domain of a singleton of an ordered pair is the singleton of the
-       first member.  (Contributed by ?who?, 30-Jan-2004.)  (Revised by ?who?,
-       27-Aug-2011.) $)
+       first member.  (Contributed by NM, 30-Jan-2004.)  (Proof shortened by
+       Andrew Salmon, 27-Aug-2011.)  (Revised by Mario Carneiro,
+       26-Apr-2015.) $)
     dmsnop $p |- dom { <. A , B >. } = { A } $=
-      ( vx vy cop csn cdm cv wbr wex wceq wcel df-br vex opex elsn opth 3bitri
-      wa exbii exancom biidd ceqsexv eldm 3bitr4i eqriv ) DABFZGZHZAGZDIZEIZUIJ
-      ZEKZULALZULUJMULUKMUOUPUMBLZTZEKUQUPTEKUPUNUREUNULUMFZUIMUSUHLURULUMUINUS
-      UHULUMDOZEOPQULUMABRSUAUPUQEUBUPUPEBCUQUPUCUDSEULUIUEULAUTQUFUG $.
-      $( [27-Aug-2011] $) $( [30-Jan-2004] $)
-  $}
+      ( cvv wcel cop csn cdm wceq dmsnopg ax-mp ) BDEABFGHAGICABDJK $.
 
-  ${
-    $d A x $.  $d B x $.
-    $( The domain of a singleton of an ordered pair is the singleton of the
-       first member.  (Contributed by ?who?, 9-Jan-2015.) $)
-    dmsnopg $p |- ( B e. V -> dom { <. A , B >. } = { A } ) $=
-      ( vx cv cop csn cdm wceq opeq2 sneqd dmeqd eqeq1d vex dmsnop vtoclg ) ADE
-      ZFZGZHZAGZIABFZGZHZUAIDBCQBIZTUDUAUESUCUERUBQBAJKLMAQDNOP $.
-      $( [9-Jan-2015] $)
-  $}
+    dmprop.1 $e |- D e. _V $.
+    $( The domain of an unordered pair of ordered pairs.  (Contributed by NM,
+       13-Sep-2011.) $)
+    dmprop $p |- dom { <. A , B >. , <. C , D >. } = { A , C } $=
+      ( cvv wcel cop cpr cdm wceq dmpropg mp2an ) BGHDGHABICDIJKACJLEFABCDGGMN
+      $.
 
-  ${
-    dmprop.1 $e |- C e. _V $.
-    dmprop.2 $e |- D e. _V $.
-    $( The domain of an unordered pair of ordered pairs.  (Contributed by
-       ?who?, 13-Sep-2011.) $)
-    dmprop $p |- dom { <. A , C >. , <. B , D >. } = { A , B } $=
-      ( cop csn cdm cun cpr dmsnop uneq12i df-pr dmeqi dmun eqtri 3eqtr4i ) ACG
-      ZHZIZBDGZHZIZJZAHZBHZJSUBKZIZABKUAUFUDUGACELBDFLMUITUCJZIUEUHUJSUBNOTUCPQ
-      ABNR $.
-      $( [13-Sep-2011] $)
-  $}
-
-  ${
-    $d A x y $.  $d B x y $.  $d C x y $.  $d D x y $.
-    $( The domain of an unordered pair of ordered pairs.  (Contributed by
-       ?who?, 9-Jan-2015.) $)
-    dmpropg $p |- ( ( C e. V /\ D e. W ) ->
-             dom { <. A , C >. , <. B , D >. } = { A , B } ) $=
-      ( vx vy cv cop cpr cdm wceq opeq2 preq1d dmeqd eqeq1d preq2d vex dmprop
-      vtocl2g ) AGIZJZBHIZJZKZLZABKZMACJZUEKZLZUHMUIBDJZKZLZUHMGHCDEFUBCMZUGUKU
-      HUOUFUJUOUCUIUEUBCANOPQUDDMZUKUNUHUPUJUMUPUEULUIUDDBNRPQABUBUDGSHSTUA $.
-      $( [9-Jan-2015] $)
+    dmtpop.1 $e |- F e. _V $.
+    $( The domain of an unordered triple of ordered pairs.  (Contributed by NM,
+       14-Sep-2011.) $)
+    dmtpop $p |- dom { <. A , B >. , <. C , D >. , <. E , F >. }
+                        = { A , C , E } $=
+      ( cop ctp cdm cpr csn cun df-tp dmeqi dmun dmprop dmsnop uneq12i 3eqtri
+      eqtr4i ) ABJZCDJZEFJZKZLZACMZENZOZACEKUHUDUEMZUFNZOZLULLZUMLZOUKUGUNUDUEU
+      FPQULUMRUOUIUPUJABCDGHSEFITUAUBACEPUC $.
   $}
 
   ${
@@ -29490,13 +29510,13 @@ $)
     $d x y A $.  $d x y B $.
     cnvsn.1 $e |- A e. _V $.
     cnvsn.2 $e |- B e. _V $.
-    $( Converse of a singleton of an ordered pair.  (Contributed by ?who?,
+    $( Converse of a singleton of an ordered pair.  (Contributed by NM,
        11-May-1998.) $)
     cnvsn $p |- `' { <. A , B >. } = { <. B , A >. } $=
-      ( vy vx cop csn ccnv relcnv relsnop cv wceq wcel opth ancom vex opex elsn
-      wa bitri opelcnv 3bitri 3bitr4ri eqrelriiv ) EFABGZHZIZBAGZHZUGJBADCKELZF
-      LZGZUIMZULAMZUKBMZTZUMUJNUMUHNZUNUPUOTUQUKULBAOUPUOPUAUMUIUKULEQZFQZRSURU
-      LUKGZUGNVAUFMUQUKULUGUBVAUFULUKUTUSRSULUKABOUCUDUE $.
+      ( vx vy cop csn ccnv relcnv relsnop wcel wceq vex opex elsnc opth 3bitr4i
+      cv wa ancom bitri opelcnv eqrelriiv ) EFABGZHZIZBAGZHZUFJBADCKFSZESZGZUFL
+      ZUKUJGZUHMZUNUGLUNUILUMULUEMZUOULUEUJUKFNZENZOPUJAMZUKBMZTUTUSTUPUOUSUTUA
+      UJUKABQUKUJBAQRUBUKUJUFUCUNUHUKUJURUQOPRUD $.
       $( [11-May-1998] $)
 
     $( Swap the members of an ordered pair.  (Contributed by ?who?,
@@ -29513,7 +29533,7 @@ $)
     $( The range of a singleton of an ordered pair is the singleton of the
        second member.  (Contributed by ?who?, 24-Jul-2004.) $)
     rnsnop $p |- ran { <. A , B >. } = { B } $=
-      ( vy vx cop csn crn cv wbr wex wceq wcel df-br vex opex elsn opth bitri
+      ( vy vx cop csn crn cv wbr wex wceq wcel df-br vex opex elsnc opth bitri
       wa exbii biidd ceqsexv elrn 3bitr4i eqriv ) DABFZGZHZBGZEIZDIZUHJZEKZULBL
       ZULUIMULUJMUNUKALZUOTZEKUOUMUQEUMUKULFZUHMZUQUKULUHNUSURUGLUQURUGUKULEODO
       ZPQUKULABRSSUAUOUOEACUPUOUBUCSEULUHUDULBUTQUEUF $.
@@ -30098,14 +30118,13 @@ $)
       TUJVDABCUKTSUMS $.
       $( [23-Apr-2004] $) $( [29-Dec-1996] $)
 
-    $( Alternate definition of function.  (Contributed by ?who?, 29-Dec-1996.)
-       (Revised by ?who?, 23-Apr-2004.) $)
+
+    $( Alternate definition of function.  (Contributed by NM, 29-Dec-1996.) $)
     dffun3 $p |- ( Fun A <-> ( Rel A /\
                  A. x E. z A. y ( x A y -> y = z ) ) ) $=
-      ( wfun wrel cv wbr wa wceq wal wex dffun2 wmo breq2 mo4 ax-17 mo2 bitr3i
-      wi albii anbi2i bitri ) DEDFZAGZBGZDHZUECGZDHZIUFUHJZTCKBKZAKZIUDUGUJTBKC
-      LZAKZIABCDMULUNUDUKUMAUKUGBNUMUGUIBCUFUHUEDOPUGBCUGCQRSUAUBUC $.
-      $( [23-Apr-2004] $) $( [29-Dec-1996] $)
+      ( wfun wrel cv wbr wa wceq wi wal wex dffun2 wmo breq2 mo4 nfv mo2 bitr3i
+      albii anbi2i bitri ) DEDFZAGZBGZDHZUECGZDHZIUFUHJZKCLBLZALZIUDUGUJKBLCMZA
+      LZIABCDNULUNUDUKUMAUKUGBOUMUGUIBCUFUHUEDPQUGBCUGCRSTUAUBUC $.
 
     $( Alternate definition of a function.  Definition 6.4(4) of
        [TakeutiZaring] p. 24.  (Contributed by ?who?, 29-Dec-1996.) $)
@@ -30128,37 +30147,37 @@ $)
       $( [29-Dec-1996] $)
   $}
 
+
   ${
-    $d x y z w v u $.  $d z A w v u $.
-    dffunmof.1 $e |- ( z e. A -> A. x z e. A ) $.
-    dffunmof.2 $e |- ( z e. A -> A. y z e. A ) $.
+    $d x y w v u $.  $d A w v u $.
+    dffun6f.1 $e |- F/_ x A $.
+    dffun6f.2 $e |- F/_ y A $.
     $( Definition of function, using bound-variable hypotheses instead of
-       distinct variable conditions.  (Contributed by ?who?, 9-Mar-1995.)
-       (Revised by ?who?, 15-Aug-2004.) $)
+       distinct variable conditions.  (Contributed by NM, 9-Mar-1995.)
+       (Revised by Mario Carneiro, 15-Oct-2016.) $)
     dffun6f $p |- ( Fun A <-> ( Rel A /\ A. x E* y x A y ) ) $=
-      ( vw vv vu wfun cv wbr wceq wal wa wmo wcel ax-17 hbbr albii wi wex breq2
-      wrel dffun3 cbvmo mo2 hbmo breq1 mobid cbval 3bitr3ri anbi2i bitr4i ) DJD
-      UDZGKZHKZDLZUQIKMUAHNIUBZGNZOUOAKZBKZDLZBPZANZOGHIDUEVEUTUOURHPZGNUPVBDLZ
-      BPZGNUTVEVFVHGURVGHBBCUPUQDCKZUPQZBRFVIUQQBRSVGHRUQVBUPDUCUFTVFUSGURHIURI
-      RUGTVHVDGAVGABACUPVBDVJAREVIVBQARSUHVDGRUPVAMZVGVCBVKBRUPVAVBDUIUJUKULUMU
-      N $.
-      $( [15-Aug-2004] $) $( [9-Mar-1995] $)
+      ( vw vv vu wfun wrel cv wbr wceq wal wa wmo nfcv nfbr nfv albii wi dffun3
+      wex breq2 cbvmo mo2 nfmo breq1 mobidv cbval 3bitr3ri anbi2i bitr4i ) CICJ
+      ZFKZGKZCLZUPHKMUAGNHUCZFNZOUNAKZBKZCLZBPZANZOFGHCUBVDUSUNUQGPZFNUOVACLZBP
+      ZFNUSVDVEVGFUQVFGBBUOUPCBUOQEBUPQRVFGSUPVAUOCUDUETVEURFUQGHUQHSUFTVGVCFAV
+      FABAUOVACAUOQDAVAQRUGVCFSUOUTMVFVBBUOUTVACUHUIUJUKULUM $.
   $}
 
   ${
-    $d x y z A $.
+    $d x y A $.  $d x y z F $.
     $( Alternate definition of a function using "at most one" notation.
-       (Contributed by ?who?, 9-Mar-1995.)  (Revised by ?who?, 15-Aug-2004.) $)
-    dffun6 $p |- ( Fun A <-> ( Rel A /\ A. x E* y x A y ) ) $=
-      ( vz cv wcel ax-17 dffun6f ) ABDCDECFZAGIBGH $.
-      $( [15-Aug-2004] $) $( [9-Mar-1995] $)
+       (Contributed by NM, 9-Mar-1995.) $)
+    dffun6 $p |- ( Fun F <-> ( Rel F /\ A. x E* y x F y ) ) $=
+      ( nfcv dffun6f ) ABCACDBCDE $.
 
-    $( A function has at most one value for each argument.  (Contributed by
-       ?who?, 24-May-1998.)  (Revised by ?who?, 15-Aug-2004.) $)
-    funmo $p |- ( Fun A -> E* y x A y ) $=
-      ( wfun cv wbr wmo wrel wal dffun6 simprbi 19.21bi ) CDZAEBECFBGZAMCHNAIAB
-      CJKL $.
-      $( [15-Aug-2004] $) $( [24-May-1998] $)
+    $( A function has at most one value for each argument.  (Contributed by NM,
+       24-May-1998.) $)
+    funmo $p |- ( Fun F -> E* y A F y ) $=
+      ( vx wfun cv wbr cvv wcel wa wi wal wmo brreldmex id jca ax-gen a1i breq1
+      wceq mobidv imbi2d wrel dffun6 simprbi 19.21bi vtoclg moanimv sylibr moim
+      com12 sylc ) CEZBAFZCGZBHIZUOJZKZALZUQAMZUOAMZUSUMURAUOUPUOBUNCNUOOPQRUMU
+      PVAKUTUPUMVAUMDFZUNCGZAMZKUMVAKDBHVBBTZVDVAUMVEVCUOAVBBUNCSUAUBUMVDDUMCUC
+      VDDLDACUDUEUFUGUKUPUOAUHUIUOUQAUJUL $.
   $}
 
   $( A function is a relation.  (Contributed by ?who?, 1-Aug-1994.) $)
@@ -30213,21 +30232,19 @@ $)
   $}
 
   ${
-    $d x y z F $.
-    $( There is exactly one value of a function.  (The proof was shortened by
-       Andrew Salmon, 17-Sep-2011.)  (Contributed by ?who?, 22-Apr-2004.)
-       (Revised by ?who?, 17-Aug-2011.) $)
-    funeu $p |- ( ( Fun F /\ x F y ) -> E! y x F y ) $=
-      ( wfun cv wbr weu wex 19.8a wmo wi funmo df-mo sylib syl5 imp ) CDZAEBECF
-      ZRBGZRRBHZQSRBIQRBJTSKABCLRBMNOP $.
-      $( [17-Aug-2011] $) $( [22-Apr-2004] $)
+    $d y A $.  $d y F $.
+    $( There is exactly one value of a function.  (Contributed by NM,
+       22-Apr-2004.)  (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
+    funeu $p |- ( ( Fun F /\ A F B ) -> E! y A F y ) $=
+      ( wfun wbr wa cv wex weu cdm wcel wrel funrel releldm sylan eldmg ibi syl
+      wmo wi funmo adantr df-mo sylib mpd ) DEZBCDFZGZBAHDFZAIZUJAJZUIBDKZLZUKU
+      GDMUHUNDNBCDOPUNUKABDUMQRSUIUJATZUKULUAUGUOUHABDUBUCUJAUDUEUF $.
 
-    $( There is exactly one value of a function.  (Contributed by ?who?,
+    $( There is exactly one value of a function.  (Contributed by NM,
        3-Aug-1994.) $)
-    funeu2 $p |- ( ( Fun F /\ <. x , y >. e. F ) -> E! y <. x , y >. e. F ) $=
-      ( wfun cv wbr wa weu cop wcel funeu df-br anbi2i eubii 3imtr3i ) CDZAEZBE
-      ZCFZGSBHPQRICJZGTBHABCKSTPQRCLZMSTBUANO $.
-      $( [3-Aug-1994] $)
+    funeu2 $p |- ( ( Fun F /\ <. A , B >. e. F ) -> E! y <. A , y >. e. F ) $=
+      ( cop wcel wfun wbr cv weu df-br wa funeu eubii sylib sylan2br ) BCEDFDGZ
+      BCDHZBAIZEDFZAJZBCDKQRLBSDHZAJUAABCDMUBTABSDKNOP $.
   $}
 
   ${
