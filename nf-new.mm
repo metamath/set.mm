@@ -11400,6 +11400,18 @@ $)
     $( [11-Jan-2015] $)
 
 
+  ${
+    $d A x $.
+    $( A class is not equal to its complement. 
+       (Contributed by SF, 11-Jan-2015.) $)
+    necompl $p |- ~ A =/= A $=
+      ( vx ccompl wne cv wcel wb wn wex pm5.19 elcompl bibi2i mtbir 19.8a ax-mp
+      vex wal dfcleq necon3abii exnal bitr4i mpbir necomi ) AACZAUDDZBEZAFZUFUD
+      FZGZHZBIZUJUKUIUGUGHZGUGJUHULUGUFABPKLMUJBNOUEUIBQZHUKUMAUDBAUDRSUIBTUAUB
+      UC $.
+      $( [11-Jan-2015] $)
+  $}
+
   $( Definition of intersection in terms of union.  (Contributed by ?who?,
      12-Jan-2015.) $)
   dfin5 $p |- ( A i^i B ) = ~ ( ~ A u. ~ B ) $=
@@ -30236,9 +30248,9 @@ $)
     $( There is exactly one value of a function.  (Contributed by NM,
        22-Apr-2004.)  (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
     funeu $p |- ( ( Fun F /\ A F B ) -> E! y A F y ) $=
-      ( wfun wbr wa cv wex weu cdm wcel wrel funrel releldm sylan eldmg ibi syl
-      wmo wi funmo adantr df-mo sylib mpd ) DEZBCDFZGZBAHDFZAIZUJAJZUIBDKZLZUKU
-      GDMUHUNDNBCDOPUNUKABDUMQRSUIUJATZUKULUAUGUOUHABDUBUCUJAUDUEUF $.
+      ( wfun wbr wa cv wex wmo weu cdm wcel breldm eldm sylib adantl adantr jca
+      funmo eu5 sylibr ) DEZBCDFZGZBAHDFZAIZUFAJZGUFAKUEUGUHUDUGUCUDBDLMUGBCDNA
+      BDOPQUCUHUDABDTRSUFAUAUB $.
 
     $( There is exactly one value of a function.  (Contributed by NM,
        3-Aug-1994.) $)
