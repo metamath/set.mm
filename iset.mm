@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Jan-2018
+$( iset.mm - Version of 9-Jan-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -12292,6 +12292,17 @@ $)
       equequ2 imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUCFZAUFAHZBIZH
       ZHZDCJUDUJDUDUEUBFZAUKAHZBIZHZHUJAADIUKUMADKABDLMUDUKUFUNUIDCBQZU
       DUMUHAUDULUGBUDUKUFAUONOPRSTUA $.
+  $}
+
+  ${
+    $d x y $.  $d x z $.  $d y z $.  $d ph z $.
+    $( Analogue to ~ ax11v for existential quantification.  (Contributed by Jim
+       Kingdon, 9-Jan-2018.) $)
+    ax11ev $p |- ( x = y -> ( E. x ( x = y /\ ph ) -> ph ) ) $=
+      ( vz cv wceq wex wa wi ax-i11e ax-17 syl6ib equequ2 anbi1d exbidv
+      a9e 19.9 imbi1d imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUDFZUG
+      AHZBGZAIZIZDCPUEUKDUEUFUCFZULAHZBGZAIZIUKULUNADGAABDJADADKQLUEULU
+      GUOUJDCBMZUEUNUIAUEUMUHBUEULUGAUPNORSTUAUB $.
   $}
 
   ${
