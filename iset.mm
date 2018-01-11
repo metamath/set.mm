@@ -1,4 +1,4 @@
-$( iset.mm - Version of 31-Dec-2017
+$( iset.mm - Version of 7-Jan-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -3937,6 +3937,12 @@ $)
     anbi12d $p |- ( ph -> ( ( ps /\ th ) <-> ( ch /\ ta ) ) ) $=
       ( wa anbi1d anbi2d bitrd ) ABDHCDHCEHABCDFIADECGJK $.
   $}
+
+  $( Modus ponens mixed with several conjunctions.  (Contributed by Jim
+     Kingdon, 7-Jan-2018.) $)
+  mpan10 $p |- ( ( ( ( ph -> ps ) /\ ch ) /\ ph ) -> ( ps /\ ch ) ) $=
+    ( wi wa ancom anbi2i anass 3bitr4i id imp anim1i sylbi ) ABDZCEAEZNAEZCEZBC
+    ENCAEZENACEZEOQRSNCAFGNCAHNACHIPBCNABNJKLM $.
 
   $( Theorem *5.3 of [WhiteheadRussell] p. 125.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Andrew Salmon, 7-May-2011.) $)
@@ -10467,13 +10473,6 @@ $)
       ( wal wex 19.35i id exlimi syl ) ACFBCGBABCEHBBCDBIJK $.
   $}
 
-  ${
-    19.37.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.37 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-    19.37 $p |- ( E. x ( ph -> ps ) <-> ( ph -> E. x ps ) ) $=
-      ( wi wex wal 19.35 19.3 imbi1i bitri ) ABECFACGZBCFZEAMEABCHLAMACDIJK $.
-  $}
-
   $( Theorem 19.38 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   19.38 $p |- ( ( E. x ph -> A. x ps ) -> A. x ( ph -> ps ) ) $=
     ( wex wal wi hbe1 hba1 hbim 19.8a ax-4 imim12i alrimi ) ACDZBCEZFABFCNOCACG
@@ -10482,11 +10481,6 @@ $)
   $( Theorem 19.39 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   19.39 $p |- ( ( E. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $=
     ( wex wi wal 19.2 imim1i 19.35 sylibr ) ACDZBCDZEACFZLEABECDMKLACCGHABCIJ
-    $.
-
-  $( Theorem 19.24 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-  19.24 $p |- ( ( A. x ph -> A. x ps ) -> E. x ( ph -> ps ) ) $=
-    ( wal wi wex 19.2 imim2i 19.35 sylibr ) ACDZBCDZEKBCFZEABECFLMKBCCGHABCIJ
     $.
 
   ${
@@ -12411,23 +12405,6 @@ $)
   $}
 
   ${
-    $d x ph $.
-    $( Special case of Theorem 19.37 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
-    19.37v $p |- ( E. x ( ph -> ps ) <-> ( ph -> E. x ps ) ) $=
-      ( ax-17 19.37 ) ABCACDE $.
-  $}
-
-  ${
-    $d x ph $.
-    19.37aiv.1 $e |- E. x ( ph -> ps ) $.
-    $( Inference from Theorem 19.37 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
-    19.37aiv $p |- ( ph -> E. x ps ) $=
-      ( wi wex 19.37v mpbi ) ABECFABCFEDABCGH $.
-  $}
-
-  ${
     $d x ps $.
     $( Special case of Theorem 19.41 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.) $)
@@ -12750,6 +12727,24 @@ $( The theorems in this section make use of the $d statement. $)
        (Contributed by Jim Kingdon, 24-Dec-2017.) $)
     sbidmv $p |- ( [ y / x ] [ y / x ] ph <-> [ y / x ] ph ) $=
       ( cv wsbc hbs1 wceq biidd sbie ) ABCDZEZKBCABCFBDJGKHI $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.
+    sbco2iv.1 $e |- ( ph -> A. z ph ) $.
+    $( One direction of ~ sbco2v but without a distinct variable constraint on
+       ` x ` and ` y ` .  (Contributed by Jim Kingdon, 7-Jan-2018.) $)
+    sbco2iv $p |- ( [ y / z ] [ z / x ] ph -> [ y / x ] ph ) $=
+      ( wsb weq wi wa wex equvini df-sb simplbi 19.9 sb5 bitri anim1i eximi syl
+      19.41 hbs1 syl6 com23 imp3a eximd syl5 syl6ib sbbii sylbi ax-i11e equcoms
+      ax-ie1 mpan10 ax-17 sylibr sylbir excomim 3syl hban exbii pm3.22 sylanbrc
+      hbex sylib ) ABDFZDCFZBCGZAHVGAIZBJZABCFVFVGADJZAVGBDGZDCGZIZDJVFVJBCDKVF
+      VMADVEDCUAVFVKVLAVFVLVKAVFVLVEVKAHZVFVLVEHVLVEIDJVEDCLMVEVNVKAIZBJZABDLMU
+      BUCUDUEUFADENUGVFAVGIZBJZVIVFVRDJZDJZVRVFDBGZVGIZBJZVPIZDJZVQDJZBJZDJVTVF
+      VLVPIZDJZWEVFVPDCFWIVEVPDCABDOUHVPDCOPWHWDDVLWCVPDCBKQRUIWDWGDWDWBVPIZBJZ
+      WGWBVPBVOBULTWKVPVJHZVGIZVPIZBJWGWJWNBWBWMVPWAWLVGWLBDABDUJUKQQRWNWFBWNVJ
+      VGIWFVPVJVGUMAVGDVGDUNZTUORSUPRWGVSDVQBDUQRURVTVSVRVSVRDVRDVQDBAVGDEWOUSV
+      CNZUTWPPVDVQVHBAVGVARSABCLVB $.
   $}
 
   ${
@@ -13292,10 +13287,28 @@ $)
 
   ${
     19.31.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.31 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    $( Theorem 19.31 of [Margaris] p. 90.  Only the reverse direction is valid
+       intuitionistically.  (Contributed by NM, 5-Aug-1993.) $)
     19.31 $p |- ( A. x ( ph \/ ps ) <-> ( A. x ph \/ ps ) ) $=
       ( wo wal 19.32 orcom albii 3bitr4i ) BAEZCFBACFZEABEZCFLBEBACDGMKCABHILBH
       J $.
+  $}
+
+  ${
+    19.37.1 $e |- ( ph -> A. x ph ) $.
+    $( Theorem 19.37 of [Margaris] p. 90.  The forward direction is valid
+       intuitionistically (it could be proved from ~ 19.35-1 ), but the reverse
+       direction is not.  (Contributed by NM, 5-Aug-1993.) $)
+    19.37 $p |- ( E. x ( ph -> ps ) <-> ( ph -> E. x ps ) ) $=
+      ( wi wex wal 19.35 19.3 imbi1i bitri ) ABECFACGZBCFZEAMEABCHLAMACDIJK $.
+  $}
+
+  ${
+    $d x ph $.
+    $( Special case of Theorem 19.37 of [Margaris] p. 90.  (Contributed by NM,
+       5-Aug-1993.) $)
+    19.37v $p |- ( E. x ( ph -> ps ) <-> ( ph -> E. x ps ) ) $=
+      ( ax-17 19.37 ) ABCACDE $.
   $}
 
 $(
@@ -14288,8 +14301,8 @@ $)
 
   ${
     19.36.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.36 of [Margaris] p. 90.  Also see ~ 19.36i where we have an
-       intuitionistic proof of the forward direction of this theorem.
+    $( Theorem 19.36 of [Margaris] p. 90.  The forward direction, ~ 19.36i , is
+       valid intuitionistically, but the reverse direction is not.
        (Contributed by NM, 5-Aug-1993.) $)
     19.36 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
       ( wi wex wal 19.35 19.9 imbi2i bitri ) ABECFACGZBCFZELBEABCHMBLBCDIJK $.
@@ -14302,6 +14315,14 @@ $)
     19.36v $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
       ( ax-17 19.36 ) ABCBCDE $.
   $}
+
+  $( Theorem 19.24 of [Margaris] p. 90.  This is an example of a theorem which
+     asserts that something exists, but provides no way of constructing it.  It
+     does not hold in intuitionistic logic.  (Contributed by NM,
+     5-Aug-1993.) $)
+  19.24 $p |- ( ( A. x ph -> A. x ps ) -> E. x ( ph -> ps ) ) $=
+    ( wal wi wex 19.2 imim2i 19.35 sylibr ) ACDZBCDZEKBCFZEABECFLMKBCCGHABCIJ
+    $.
 
   ${
     $d x ps $.  $d y ph $.
