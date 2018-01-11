@@ -55009,39 +55009,6 @@ $)
       $( [19-Dec-2013] $) $( [14-Sep-1999] $)
   $}
 
-  ${
-    $d t u v w A $.  $d t u v w B $.  $d t u v x y z C $.  $d t u v x y z D $.
-    $d w G $.  $d t u v w z R $.  $d t u v w S $.  $d x y w $.
-    ov2gf.a $e |- ( w e. A -> A. x w e. A ) $.
-    ov2gf.c $e |- ( w e. A -> A. y w e. A ) $.
-    ov2gf.cz $e |- ( w e. A -> A. z w e. A ) $.
-    ov2gf.d $e |- ( w e. B -> A. y w e. B ) $.
-    ov2gf.dz $e |- ( w e. B -> A. z w e. B ) $.
-    ov2gf.1 $e |- ( w e. G -> A. x w e. G ) $.
-    ov2gf.2 $e |- ( w e. S -> A. y w e. S ) $.
-    ov2gf.3 $e |- ( x = A -> R = G ) $.
-    ov2gf.4 $e |- ( y = B -> G = S ) $.
-    ov2gf.5 $e |- F = { <. <. x , y >. , z >. | ( ( x e. C /\ y e. D )
-                      /\ z = R ) } $.
-    $( The value of an operation class abstraction.  A version of ~ ov2g using
-       bound-variable hypotheses.  (Contributed by ?who?, 17-Aug-2006.)
-       (Revised by ?who?, 19-Dec-2013.) $)
-    ov2gf $p |- ( ( A e. C /\ B e. D /\ S e. H ) -> ( A F B ) = S ) $=
-      ( vt vu vv wcel w3a co cv wa csb coprab weq eqeq1 anbi2d cbvoprab3v ax-17
-      wceq wel hbcsb1f hbcsb hbeq eleq1 anbi1d csbeq1a eqeq2d anbi12d cbvoprab12
-      hban sylan9bb 3eqtri oveqi eqid simp3 cvv vex hblem csbhypf csbeq2d mpan2
-      hbeleq sylan9eq 3adant3 eqeq12d wmo moeq a1i ovig mpi syl5eq ) EGUGFHUGJM
-      UGUHZEFKUIEFUDUJZGUGZUEUJZHUGZUKZUFUJZBWOAWMIULZULZUSZUKZUDUEUFUMZUIZJKXC
-      EFKAUJZGUGZBUJZHUGZUKZCUJZIUSZUKZABCUMXIWRIUSZUKZABUFUMXCUCXLXNABCUFCUFUN
-      XKXMXIXJWRIUOUPUQXNXBABUFUDUEXNUDURXNUEURWQXAAWQAURADDWRWTDUFUTZAURABDWOW
-      SDUEUTZAURADWMIDUDUTAURVAVBVCVJWQXABWQBURBDDWRWTXOBURBDWOWSXPBURVAVCVJAUD
-      UNZXNWNXHUKZWRWSUSZUKBUEUNZXBXQXIXRXMXSXQXFWNXHXEWMGVDVEXQIWSWRAWMIVFVGVH
-      XTXRWQXSXAXTXHWPWNXGWOHVDUPXTWSWTWRBWOWSVFVGVHVKVIVLVMWLJJUSZXDJUSJVNXAYA
-      UDUEUFEFJMGHXCWMEUSZWOFUSZWRJUSZUHWRJWTJYBYCYDVOYBYCWTJUSYDYBYCWTBWOLULZJ
-      YBWOVPUGWTYEUSUEVQYBBWOWSLVPBUDEBDUDEOVRWBAUDDEILNSUAVSVTWABUEDFLJQTUBVSW
-      CWDWEXAUFWFWQUFWTWGWHXCVNWIWJWK $.
-      $( [19-Dec-2013] $) $( [17-Aug-2006] $)
-  $}
 
   ${
     $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.  $d z R $.
@@ -55056,57 +55023,6 @@ $)
       ) DFNEGNIKNOIIPZDEJQIPIRCSZHPZUIABCDEIKFGJASZDPZBSZEPZUJIPZOUJIHIUMUOUPTU
       MUOHIPUPLUAUBUKCUCULFNUNGNUDCHUEUFMUGUH $.
       $( [19-Dec-2013] $)
-  $}
-
-  ${
-    $d w x y z A $.  $d w y z B $.  $d x y z C $.  $d x y z D $.  $d x w G $.
-    $d w z R $.  $d w y S $.
-    ov2g.1 $e |- ( x = A -> R = G ) $.
-    ov2g.2 $e |- ( y = B -> G = S ) $.
-    ov2g.3 $e |- F = { <. <. x , y >. , z >. | ( ( x e. C /\ y e. D )
-                      /\ z = R ) } $.
-    $( The value of an operation class abstraction.  Special case.
-       (Unnecessary distinct variable restrictions were removed by David
-       Abernethy, 19-Jun-2012.)  (Contributed by ?who?, 14-Sep-1999.)  (Revised
-       by ?who?, 19-Dec-2013.) $)
-    ov2g $p |- ( ( A e. C /\ B e. D /\ S e. H ) -> ( A F B ) = S ) $=
-      ( vw cv wcel ax-17 ov2gf ) ABCPDEFGHIJKLPQZDRZASUBBSUBCSUAERZBSUCCSUAKRAS
-      UAIRBSMNOT $.
-      $( [19-Dec-2013] $) $( [14-Sep-1999] $)
-  $}
-
-  ${
-    $d x y z A $.  $d y z B $.  $d x y z C $.  $d x y z D $.  $d x G $.
-    $d z R $.  $d y z S $.
-    ov2.1 $e |- S e. _V $.
-    ov2.2 $e |- ( x = A -> R = G ) $.
-    ov2.3 $e |- ( y = B -> G = S ) $.
-    ov2.4 $e |- F = { <. <. x , y >. , z >. | ( ( x e. C /\ y e. D )
-                      /\ z = R ) } $.
-    $( The value of an operation class abstraction.  Special case.
-       (Unnecessary distinct variable restrictions were removed by David
-       Abernethy, 19-Jun-2012.)  (Contributed by ?who?, 16-May-1995.)  (Revised
-       by ?who?, 24-Jul-2012.) $)
-    ov2 $p |- ( ( A e. C /\ B e. D ) -> ( A F B ) = S ) $=
-      ( wcel cvv co wceq ov2g mp3an3 ) DFPEGPIQPDEJRISLABCDEFGHIJKQMNOTUA $.
-      $( [24-Jul-2012] $) $( [16-May-1995] $)
-  $}
-
-  ${
-    $d x y z A $.  $d y z B $.  $d x G $.  $d z R $.  $d y z S $.
-    ov5.1 $e |- S e. _V $.
-    ov5.2 $e |- ( x = A -> R = G ) $.
-    ov5.3 $e |- ( y = B -> G = S ) $.
-    ov5.4 $e |- F = { <. <. x , y >. , z >. | z = R } $.
-    $( The value of an operation class abstraction.  Special case.
-       (Unnecessary distinct variable restrictions were removed by David
-       Abernethy, 19-Jun-2012.)  (Contributed by ?who?, 19-Jul-2005.)  (Revised
-       by ?who?, 24-Jul-2012.) $)
-    ov5 $p |- ( ( A e. C /\ B e. D ) -> ( A F B ) = S ) $=
-      ( wcel cvv wceq elex cv co coprab vex pm3.2i biantrur oprabbii ov2 syl2an
-      wa eqtri ) DFPDQPEQPDEJUAIREGPDFSEGSABCDEQQHIJKLMNJCTHRZABCUBATQPZBTQPZUI
-      ZUKUIZABCUBOUKUOABCUNUKULUMAUCBUCUDUEUFUJUGUH $.
-      $( [24-Jul-2012] $) $( [19-Jul-2005] $)
   $}
 
   ${
@@ -55126,20 +55042,20 @@ $)
     ov3 $p |- ( ( ( A e. H /\ B e. H ) /\ ( C e. H /\ D e. H ) ) ->
         ( <. A , B >. F <. C , D >. ) = S ) $=
       ( wa wex wcel cv wceq cop isseti nfv nfcv cxp coprab nfoprab3 nfcxfr nfov
-      co nfeq1 eqeq2d copsex4g wi opelxpi nfoprab1 nfim nfoprab2 anbi1d 4exbidv
-      eqeq1 oveq1 eqeq1d imbi12d anbi2d oveq2 moeq mosubop anass 2exbii 19.42vv
-      wmo bitri mobii mpbir a1i ovidi vtocl2gaf syl2an sylbird eqeq2 mpbidi mpi
-      exlimd ) GOUAHOUASZIOUAJOUASZSZCUBZLUCZCTGHUDZIJUDZNUMZLUCZCLPUEWJWLWPCWJ
-      CUFCWOLCWMWNNCWMUGCNAUBZOOUHZUABUBZWRUASZWQDUBZEUBZUDZUCZWSFUBZMUBZUDZUCZ
-      SZWKKUCZSZMTFTZETDTZSZABCUIZRXNABCUJUKCWNUGULUNWLWOWKUCZWPWJWJWLWMXCUCZWN
-      XGUCZSZXJSZMTFTETDTZXPXJWLDEFMGHIJOOXAGUCXBHUCSXEIUCXFJUCSSKLWKQUOUPWHWMW
-      RUAWNWRUAYAXPUQZWIGHOOURIJOOURXMWQWSNUMZWKUCZUQXQXHSZXJSZMTFTETDTZWMWSNUM
-      ZWKUCZUQYBABWMWNWRWRAWMUGZBWMUGZBWNUGZYGYIAYGAUFAYHWKAWMWSNYJANXORXNABCUS
-      UKAWSUGULUNUTYAXPBYABUFBWOWKBWMWNNYKBNXORXNABCVAUKYLULUNUTWQWMUCZXMYGYDYI
-      YMXKYFDEFMYMXIYEXJYMXDXQXHWQWMXCVDVBVBVCYMYCYHWKWQWMWSNVEVFVGWSWNUCZYGYAY
-      IXPYNYFXTDEFMYNYEXSXJYNXHXRXQWSWNXGVDVHVBVCYNYHWOWKWSWNWMNVIVFVGXMABCWRWR
-      NXMCVOZWTYOXDXHXJSZMTFTZSZETDTZCVOYQCDEWQXJCFMWSCKVJVKVKXMYSCXLYRDEXLXDYP
-      SZMTFTYRXKYTFMXDXHXJVLVMXDYPFMVNVPVMVQVRVSRVTWAWBWCWKLWOWDWEWGWF $.
+      co nfeq1 eqeq2d copsex4g wi opelxp nfoprab1 nfoprab2 eqeq1 anbi1d 4exbidv
+      nfim oveq1 eqeq1d imbi12d anbi2d oveq2 mosubop anass 2exbii 19.42vv bitri
+      wmo moeq mobii mpbir ovidi vtocl2gaf syl2anbr sylbird eqeq2 mpbidi exlimd
+      a1i mpi ) GOUAHOUASZIOUAJOUASZSZCUBZLUCZCTGHUDZIJUDZNUMZLUCZCLPUEWJWLWPCW
+      JCUFCWOLCWMWNNCWMUGCNAUBZOOUHZUABUBZWRUASZWQDUBZEUBZUDZUCZWSFUBZMUBZUDZUC
+      ZSZWKKUCZSZMTFTZETDTZSZABCUIZRXNABCUJUKCWNUGULUNWLWOWKUCZWPWJWJWLWMXCUCZW
+      NXGUCZSZXJSZMTFTETDTZXPXJWLDEFMGHIJOOXAGUCXBHUCSXEIUCXFJUCSSKLWKQUOUPWHWM
+      WRUAWNWRUAYAXPUQZWIGHOOURIJOOURXMWQWSNUMZWKUCZUQXQXHSZXJSZMTFTETDTZWMWSNU
+      MZWKUCZUQYBABWMWNWRWRAWMUGZBWMUGZBWNUGZYGYIAYGAUFAYHWKAWMWSNYJANXORXNABCU
+      SUKAWSUGULUNVDYAXPBYABUFBWOWKBWMWNNYKBNXORXNABCUTUKYLULUNVDWQWMUCZXMYGYDY
+      IYMXKYFDEFMYMXIYEXJYMXDXQXHWQWMXCVAVBVBVCYMYCYHWKWQWMWSNVEVFVGWSWNUCZYGYA
+      YIXPYNYFXTDEFMYNYEXSXJYNXHXRXQWSWNXGVAVHVBVCYNYHWOWKWSWNWMNVIVFVGXMABCWRW
+      RNXMCVOZWTYOXDXHXJSZMTFTZSZETDTZCVOYQCDEWQXJCFMWSCKVPVJVJXMYSCXLYRDEXLXDY
+      PSZMTFTYRXKYTFMXDXHXJVKVLXDYPFMVMVNVLVQVRWFRVSVTWAWBWKLWOWCWDWEWG $.
   $}
 
   ${
@@ -56424,6 +56340,7 @@ $)
       $( [17-Dec-2013] $)
   $}
 
+
   ${
     $d x y z $.  $d z A $.  $d z B $.  $d z C $.  $d z F $.
     ovmpt4g.3 $e |- F = ( x e. A , y e. B |-> C ) $.
@@ -56435,6 +56352,31 @@ $)
       df-mpt2 eqeq2 mpbidi exlimdv syl5 3impia ) AJZCKZBJZDKZEGKZUJULFLZEMZUNIJ
       ZEMZINUKUMOZUPIEGPUSURUPIURUOUQMUPUSURABICDFURIQUSIERSFABCDETUSUROABIUAHA
       BICDEUDUBUCUQEUOUEUFUGUHUI $.
+  $}
+
+
+  ${
+    $d t u v w A $.  $d t u v w B $.  $d t u v w x y z C $.  $d t u v w z R $.
+    $d t u v w x y z D $.  $d w F $.  $d w G $.  $d t u v w S $.
+    ov2gf.a $e |- F/_ x A $.
+    ov2gf.c $e |- F/_ y A $.
+    ov2gf.d $e |- F/_ y B $.
+    ov2gf.1 $e |- F/_ x G $.
+    ov2gf.2 $e |- F/_ y S $.
+    ov2gf.3 $e |- ( x = A -> R = G ) $.
+    ov2gf.4 $e |- ( y = B -> G = S ) $.
+    ov2gf.5 $e |- F = ( x e. C , y e. D |-> R ) $.
+    $( The value of an operation class abstraction.  A version of ~ ovmpt2g
+       using bound-variable hypotheses.  (Contributed by NM, 17-Aug-2006.)
+       (Revised by Mario Carneiro, 19-Dec-2013.) $)
+    ov2gf $p |- ( ( A e. C /\ B e. D /\ S e. H ) -> ( A F B ) = S ) $=
+      ( wcel co wceq cvv wa elex cv wi nfel1 nfmpt21 nfcxfr nfcv nfov nfeq nfim
+      cmpt2 nfmpt22 eleq1d oveq1 eqeq12d imbi12d oveq2 ovmpt4g 3expia vtocl2gaf
+      syl5 3impia ) CETZDFTZHKTZCDIUAZHUBZVIHUCTZVGVHUDVKHKUEGUCTZAUFZBUFZIUAZG
+      UBZUGJUCTZCVOIUAZJUBZUGVLVKUGABCDEFLMNVRVTAAJUCOUHAVSJACVOILAIABEFGUOZSAB
+      EFGUIUJAVOUKULOUMUNVLVKBBHUCPUHBVJHBCDIMBIWASABEFGUPUJNULPUMUNVNCUBZVMVRV
+      QVTWBGJUCQUQWBVPVSGJVNCVOIURQUSUTVODUBZVRVLVTVKWCJHUCRUQWCVSVJJHVODCIVARU
+      SUTVNETVOFTVMVQABEFGIUCSVBVCVDVEVF $.
   $}
 
   ${
@@ -56480,7 +56422,7 @@ $)
 
   ${
     $d x y z A $.  $d B y z $.  $d x C y z $.  $d x D y z $.  $d x G $.
-    $d z R $.  $d y S z $.
+    $d z R $.  $d y S z $. $d x S $. $d B x $.
     ovmpt2g.1 $e |- ( x = A -> R = G ) $.
     ovmpt2g.2 $e |- ( y = B -> G = S ) $.
     ovmpt2g.3 $e |- F = ( x e. C , y e. D |-> R ) $.
@@ -56489,8 +56431,7 @@ $)
        Abernethy, 19-Jun-2012.)  (Contributed by ?who?, 2-Oct-2007.)  (Revised
        by ?who?, 24-Jul-2012.) $)
     ovmpt2g $p |- ( ( A e. C /\ B e. D /\ S e. H ) -> ( A F B ) = S ) $=
-      ( vz cmpt2 cv wcel wa wceq coprab df-mpt2 eqtri ov2g ) ABOCDEFGHIJKLMIABE
-      FGPAQERBQFRSOQGTSABOUANABOEFGUBUCUD $.
+      ( cv wceq sylan9eq ovmpt2ga ) ABCDEFGHIKAOCPBODPGJHLMQNR $.
       $( [24-Jul-2012] $) $( [2-Oct-2007] $)
 
     ${
