@@ -58762,7 +58762,7 @@ $)
       QZBRZEUCZUDZFWKSZCDWERWFPZGHUDZRZFHSZAFGHITWKMAWKBEUCZHUEZTBEHUJWSWKBEHUF
       BEHUGUHAWRTQHTQZWSTQJAITQZWTAIHUIUAXAWTRMIHUIUKULUMWRHTTUNUOUPWKHUQABEHUR
       USAWJEUTZWKVCVAABEHSXBNBEHVBVDWJEVEVFVGWOFWKSZWDHQZWPRZFUTZWMWQXCXDCRZWOR
-      ZFUTXFWJXGWOEFEFUBWIXDBCWHWDHVHKVIVJXHXEFXDCWOVKVLVMWLWOFWKWCHQZDRZWGPZGV
+      ZFUTXFWJXGWOFEEFUBWIXDBCWHWDHVHKVIVJXHXEFXDCWOVKVLVMWLWOFWKWCHQZDRZWGPZGV
       NXIWNPZGVNWLWOXKXLGXKXIDWGPZPXLXIDWGVOWNXMXIDWEWFVOVPVQVRWJXJWGGEEGUBWIXI
       BDWHWCHVHLVIVSWNGHVTWAWBWPFHVBWAVD $.
       $( [19-Mar-2015] $)
@@ -61416,6 +61416,7 @@ $)
     $d a b $.  $d a c $.  $d a g $.  $d a m $.  $d a n $.  $d b c $.  $d b g $.
     $d b m $.  $d b n $.  $d c g $.  $d g m $.  $d g n $.  $d M a $.  $d M b $.
     $d M m $.  $d m n $.  $d M n $.  $d N a $.  $d N b $.  $d N g $.  $d N n $.
+    $d N m $.
     $( The value of cardinal multiplication. 
        (Contributed by SF, 10-Mar-2015.) $)
     ovmuc $p |- ( ( M e. NC /\ N e. NC ) ->
@@ -61793,7 +61794,7 @@ $)
        theorem is occasionally useful. 
        (Contributed by SF, 2-Mar-2015.) $)
     1p1e2c $p |- ( 1c +c 1c ) = 2c $=
-      ( c0 csn cvv cun cnc cplc c2c c1c cin wceq wcel 0ex ax-mp vvex elsn mtbir
+      ( c0 csn cvv cun cnc cplc c2c c1c cin wceq wcel 0ex ax-mp vvex elsnc mtbir
       wn n0i snex df1c3 disjsn mpbir ncdisjun df-2c df-pr nceqi eqtri addceq12i
       cpr 3eqtr4ri ) ABZCBZDZEZUKEZULEZFZGHHFUKULIAJZUNUQJURCUKKZQUSCAJZACKUTQL
       CARMCANOPUKCUAUBUKULASCSUCMGACUIZEUNUDVAUMACUEUFUGHUOHUPALTCNTUHUJ $.
@@ -62035,7 +62036,7 @@ $)
     $d a b $.  $d a m $.  $d a n $.  $d a p $.  $d b m $.  $d b n $.  $d b p $.
     $d M a $.  $d M b $.  $d M m $.  $d m n $.  $d m p $.  $d M p $.  $d N a $.
     $d N b $.  $d N m $.  $d N n $.  $d n p $.  $d N p $.  $d a g $.  $d b g $.
-    $d g m $.  $d g n $.  $d M g $.  $d N g $.
+    $d g m $.  $d g n $.  $d M g $.  $d N g $.  $d M n $.
     $( The value of cardinal exponentiation. 
        (Contributed by SF, 3-Mar-2015.) $)
     ovce $p |- ( ( N e. NC /\ M e. NC ) ->
@@ -62366,7 +62367,7 @@ $)
       wceq cxp csn cun wf wfn crn wss wn wi df-ne c0c n0 cpw1 cmap cen wbr elce
       w3a 3simpa ce0nnuli ex im2anan9 syl5 exlimdvv sylbid exlimdv syl5bi ceclb
       sylibd syl5bir elun ovex orbi2i orcom df-or sylibr rgen2a cop fveq2 df-ov
-      elsn syl6eqr eleq1d ralxp mpbir fnfvrnss mp2an df-f mpbir2an ) FFUAZFGUBZ
+      elsnc syl6eqr eleq1d ralxp mpbir fnfvrnss mp2an df-f mpbir2an ) FFUAZFGUBZ
       UCZHUDHWJUEZHUFWLUGZIWMAJZHKZWLLZAWJMZWNIWRBJZCJZHNZWLLZCFMBFMXBBCFWSFLZW
       TFLZOZXAGTZUHZXAFLZUIZXBXGXAGPZXEXHXAGUJXEXJWSUKHNGPZWTUKHNGPZOZXHXJWOXAL
       ZAQXEXMAXAULXEXNXMAXEXNDJZUMWSLZEJZUMWTLZWOXOXQUNNUOUPZURZEQDQXMDEWOWTWSU
