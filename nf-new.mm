@@ -55099,48 +55099,26 @@ $)
                       y e. ( H X. H ) ) /\
                       E. w E. v E. u E. f ( ( x = <. w , v >. /\
                       y = <. u , f >. ) /\ z = R ) ) } $.
-    $( The value of an operation class abstraction.  Special case. 
-       (Contributed by ?who?, 28-May-1995.) 
-       (Revised by ?who?, 29-Dec-2014.) $)
+    $( The value of an operation class abstraction.  Special case.
+       (Contributed by NM, 28-May-1995.)  (Revised by Mario Carneiro,
+       29-Dec-2014.) $)
     ov3 $p |- ( ( ( A e. H /\ B e. H ) /\ ( C e. H /\ D e. H ) ) ->
         ( <. A , B >. F <. C , D >. ) = S ) $=
-      ( vt wex wcel wa cv wceq cop co isseti ax-17 coprab hboprab3 hbxfreq hbov
-      hbeq eqeq2d copsex4g wi opelxp hboprab1 ax17el hbim hboprab2 eqeq1 anbi1d
-      cxp 4exbidv oveq1 eqeq1d imbi12d anbi2d oveq2 moeq mosubop 2exbii 19.42vv
-      wmo anass bitri mobii mpbir ovidi vtocl2gaf syl2anbr sylbird eqeq2 mpbidi
-      a1i exlimd mpi ) GOUAHOUAUBZIOUAJOUAUBZUBZCUCZLUDZCTGHUEZIJUEZNUFZLUDZCLP
-      UGWKWMWQCWKCUHCSSWPLCSWNWONSUCZWNUAZCUHCSNAUCZOOVDZUABUCZXAUAUBZWTDUCZEUC
-      ZUEZUDZXBFUCZMUCZUEZUDZUBZWLKUDZUBZMTFTZETDTZUBZABCUIZRXQABCSUJUKWRWOUAZC
-      UHULWRLUACUHUMWMWPWLUDZWQWKWKWMWNXFUDZWOXJUDZUBZXMUBZMTFTETDTZXTXMWMDEFMG
-      HIJOOXDGUDXEHUDUBXHIUDXIJUDUBUBKLWLQUNUOWIWNXAUAWOXAUAYEXTUPZWJGHOOUQIJOO
-      UQXPWTXBNUFZWLUDZUPYAXKUBZXMUBZMTFTETDTZWNXBNUFZWLUDZUPYFABSWNWOXAXAWSAUH
-      ZWSBUHZXSBUHZYKYMAYKAUHASSYLWLASWNXBNYNASNXRRXQABCSURUKSBAUSULSCAUSUMUTYE
-      XTBYEBUHBSSWPWLBSWNWONYOBSNXRRXQABCSVAUKYPULSCBUSUMUTWTWNUDZXPYKYHYMYQXNY
-      JDEFMYQXLYIXMYQXGYAXKWTWNXFVBVCVCVEYQYGYLWLWTWNXBNVFVGVHXBWOUDZYKYEYMXTYR
-      YJYDDEFMYRYIYCXMYRXKYBYAXBWOXJVBVIVCVEYRYLWPWLXBWOWNNVJVGVHXPABCXAXANXPCV
-      OZXCYSXGXKXMUBZMTFTZUBZETDTZCVOUUACDEWTXMCFMXBCKVKVLVLXPUUCCXOUUBDEXOXGYT
-      UBZMTFTUUBXNUUDFMXGXKXMVPVMXGYTFMVNVQVMVRVSWFRVTWAWBWCWLLWPWDWEWGWH $.
-      $( [29-Dec-2014] $) $( [28-May-1995] $)
-  $}
-
-  ${
-    $d x y z w v u f A $.  $d x y z w v u f B $.  $d z w v u f C $.
-    $d w v D $.
-    ov4g.1 $e |- F =
-          { <. <. x , y >. , z >. | ( ( x e. A /\ y e. B ) /\ z = C ) } $.
-    $( Value of an operation given by an ordered-pair class abstraction.  (This
-       is the operation analog of ~ fvopab2 .) 
-       (Contributed by ?who?, 21-Feb-2004.) $)
-    ov4g $p |- ( ( x e. A /\ y e. B /\ C e. D ) -> ( x F y ) = C ) $=
-      ( vw vv vf vu wcel cv cvv wceq wa ax-17 hbab co elex wsbc cab sbab eqcomd
-      equcoms coprab hbs1 hbeleq hban eleq1 bi2anan9 sylan9eq eqeq2d cbvoprab12
-      hbsb anbi12d eqtr4i ov2g syl3an3 ) FGNAOZDNZBOZENZFPNVBVDHUAFQFGUBJKCVBVD
-      DELOMOFNZBKOZUCZMUDZNZAJOZUCZLUDZFHVIPVMVIQAJVBVKQVIVMAJLVIUEUFUGZVIFQBKV
-      DVGQFVIBKMFUEUFUGZHVCVERZCOZFQZRZABCUHVKDNZVGENZRZVQVMQZRZJKCUHIWDVSJKCAB
-      WBWCAWBASACVMVLALCVJAJUITUJUKWBWCBWBBSBCVMVLBLCVJAJBVHBMLVFBKUITUQTUJUKVS
-      JSVSKSVKVBQZVGVDQZRZWBVPWCVRWEVTVCWFWAVEVKVBDULVGVDEULUMWGVMFVQWEWFVMVIFV
-      NVOUNUOURUPUSUTVA $.
-      $( [21-Feb-2004] $)
+      ( wa wex wcel cv wceq cop isseti nfv nfcv cxp coprab nfoprab3 nfcxfr nfov
+      co nfeq1 eqeq2d copsex4g wi opelxpi nfoprab1 nfim nfoprab2 anbi1d 4exbidv
+      eqeq1 oveq1 eqeq1d imbi12d anbi2d oveq2 moeq mosubop anass 2exbii 19.42vv
+      wmo bitri mobii mpbir a1i ovidi vtocl2gaf syl2an sylbird eqeq2 mpbidi mpi
+      exlimd ) GOUAHOUASZIOUAJOUASZSZCUBZLUCZCTGHUDZIJUDZNUMZLUCZCLPUEWJWLWPCWJ
+      CUFCWOLCWMWNNCWMUGCNAUBZOOUHZUABUBZWRUASZWQDUBZEUBZUDZUCZWSFUBZMUBZUDZUCZ
+      SZWKKUCZSZMTFTZETDTZSZABCUIZRXNABCUJUKCWNUGULUNWLWOWKUCZWPWJWJWLWMXCUCZWN
+      XGUCZSZXJSZMTFTETDTZXPXJWLDEFMGHIJOOXAGUCXBHUCSXEIUCXFJUCSSKLWKQUOUPWHWMW
+      RUAWNWRUAYAXPUQZWIGHOOURIJOOURXMWQWSNUMZWKUCZUQXQXHSZXJSZMTFTETDTZWMWSNUM
+      ZWKUCZUQYBABWMWNWRWRAWMUGZBWMUGZBWNUGZYGYIAYGAUFAYHWKAWMWSNYJANXORXNABCUS
+      UKAWSUGULUNUTYAXPBYABUFBWOWKBWMWNNYKBNXORXNABCVAUKYLULUNUTWQWMUCZXMYGYDYI
+      YMXKYFDEFMYMXIYEXJYMXDXQXHWQWMXCVDVBVBVCYMYCYHWKWQWMWSNVEVFVGWSWNUCZYGYAY
+      IXPYNYFXTDEFMYNYEXSXJYNXHXRXQWSWNXGVDVHVBVCYNYHWOWKWSWNWMNVIVFVGXMABCWRWR
+      NXMCVOZWTYOXDXHXJSZMTFTZSZETDTZCVOYQCDEWQXJCFMWSCKVJVKVKXMYSCXLYRDEXLXDYP
+      SZMTFTYRXKYTFMXDXHXJVLVMXDYPFMVNVPVMVQVRVSRVTWAWBWCWKLWOWDWEWGWF $.
   $}
 
   ${
@@ -55832,12 +55810,11 @@ $)
        Carneiro, 16-Dec-2013.) $)
     mpteq12f $p |- ( ( A. x A = C /\ A. x e. A B = D ) ->
                     ( x e. A |-> B ) = ( x e. C |-> D ) ) $=
-      ( vy wceq wal wral wa cv wcel copab cmpt hba1 hbra1 hban ax-17 rsp df-mpt
-      imp eqeq2d pm5.32da ax-4 eleq2d anbi1d sylan9bbr opabbid 3eqtr4g ) BDGZAH
-      ZCEGZABIZJZAKZBLZFKZCGZJZAFMUODLZUQEGZJZAFMABCNADENUNUSVBAFUKUMAUJAOULABP
-      QUNFRUMUSUPVAJUKVBUMUPURVAUMUPJCEUQUMUPULULABSUAUBUCUKUPUTVAUKBDUOUJAUDUE
-      UFUGUHAFBCTAFDETUI $.
-      $( [16-Dec-2013] $)
+      ( vy wceq wal wral wa cv wcel copab cmpt nfa1 nfra1 nfan nfv rsp df-mpt
+      imp eqeq2d pm5.32da sp eleq2d anbi1d sylan9bbr opabbid 3eqtr4g ) BDGZAHZC
+      EGZABIZJZAKZBLZFKZCGZJZAFMUODLZUQEGZJZAFMABCNADENUNUSVBAFUKUMAUJAOULABPQU
+      NFRUMUSUPVAJUKVBUMUPURVAUMUPJCEUQUMUPULULABSUAUBUCUKUPUTVAUKBDUOUJAUDUEUF
+      UGUHAFBCTAFDETUI $.
 
     mpteq12dv.1 $e |- ( ph -> A = C ) $.
     mpteq12dv.2 $e |- ( ph -> B = D ) $.
@@ -55897,13 +55874,13 @@ $)
        Carneiro, 16-Dec-2013.)  (Revised by Mario Carneiro, 19-Mar-2015.) $)
     mpt2eq123 $p |- ( ( A = D /\ A. x e. A ( B = E /\ A. y e. B C = F ) ) ->
                  ( x e. A , y e. B |-> C ) = ( x e. D , y e. E |-> F ) ) $=
-      ( vz wceq wral wa cv wcel coprab cmpt2 ax-17 hbra1 hban wb hbral rsp syl6
-      eqeq2 pm5.32d eleq2 anbi1d sylan9bbr 3bitr4g oprabbid df-mpt2 3eqtr4g
-      anass ) CFJZDGJZEHJZBDKZLZACKZLZAMZCNZBMZDNZLIMZEJZLZABIOVAFNZVCGNZLVEHJZ
-      LZABIOABCDEPABFGHPUTVGVKABIUNUSAUNAQURACRSUNUSBUNBQURBACVBBQUOUQBUOBQUPBD
-      RSUASUTIQUTVBVDVFLZLZVHVIVJLZLZVGVKUSVMVBVNLUNVOUSVBVLVNUSVBURVLVNTURACUB
-      UQVLVDVJLUOVNUQVDVFVJUQVDUPVFVJTUPBDUBEHVEUDUCUEUOVDVIVJDGVCUFUGUHUCUEUNV
-      BVHVNCFVAUFUGUHVBVDVFUMVHVIVJUMUIUJABICDEUKABIFGHUKUL $.
+      ( vz wceq wral wa cv wcel coprab cmpt2 nfv nfra1 nfan wb nfcv nfral eqeq2
+      rsp pm5.32d eleq2 anbi1d sylan9bbr anass 3bitr4g oprabbid df-mpt2 3eqtr4g
+      syl6 ) CFJZDGJZEHJZBDKZLZACKZLZAMZCNZBMZDNZLIMZEJZLZABIOVBFNZVDGNZLVFHJZL
+      ZABIOABCDEPABFGHPVAVHVLABIUOUTAUOAQUSACRSUOUTBUOBQUSBACBCUAUPURBUPBQUQBDR
+      SUBSVAIQVAVCVEVGLZLZVIVJVKLZLZVHVLUTVNVCVOLUOVPUTVCVMVOUTVCUSVMVOTUSACUDU
+      RVMVEVKLUPVOURVEVGVKURVEUQVGVKTUQBDUDEHVFUCUNUEUPVEVJVKDGVDUFUGUHUNUEUOVC
+      VIVOCFVBUFUGUHVCVEVGUIVIVJVKUIUJUKABICDEULABIFGHULUM $.
   $}
 
   ${
@@ -55957,14 +55934,14 @@ $)
   $}
 
   ${
-    mpteq2da.1 $e |- ( ph -> A. x ph ) $.
+    mpteq2da.1 $e |- F/ x ph $.
     mpteq2da.2 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
     $( Slightly more general equality inference for the maps to notation.
-       (Contributed by FL, 14-Sep-2013.) $)
+       (Contributed by FL, 14-Sep-2013.)  (Revised by Mario Carneiro,
+       16-Dec-2013.) $)
     mpteq2da $p |- ( ph -> ( x e. A |-> B ) = ( x e. A |-> C ) ) $=
       ( wceq wal wral cmpt eqid ax-gen cv wcel ex ralrimi mpteq12f sylancr ) AC
       CHZBIDEHZBCJBCDKBCEKHTBCLMAUABCFABNCOUAGPQBCDCERS $.
-      $( [16-Dec-2013] $) $( [14-Sep-2013] $)
   $}
 
   ${
@@ -55973,8 +55950,7 @@ $)
     $( Slightly more general equality inference for the maps to notation.
        (Contributed by Scott Fenton, 25-Apr-2012.) $)
     mpteq2dva $p |- ( ph -> ( x e. A |-> B ) = ( x e. A |-> C ) ) $=
-      ( ax-17 mpteq2da ) ABCDEABGFH $.
-      $( [25-Apr-2012] $)
+      ( nfv mpteq2da ) ABCDEABGFH $.
   $}
 
   ${
@@ -56062,53 +56038,65 @@ $)
   $}
 
   ${
-    $d v w x A $.  $d v w y A $.  $d v w z B $.  $d v w z C $.
-    cbvmpt.1 $e |- ( z e. B -> A. y z e. B ) $.
-    cbvmpt.2 $e |- ( z e. C -> A. x z e. C ) $.
+    $d w z x A $.  $d w z y A $.  $d w z B $.  $d w z C $.
+    cbvmpt.1 $e |- F/_ y B $.
+    cbvmpt.2 $e |- F/_ x C $.
     cbvmpt.3 $e |- ( x = y -> B = C ) $.
     $( Rule to change the bound variable in a maps-to function, using implicit
        substitution.  This version has bound-variable hypotheses in place of
-       distinct variable conditions. 
-       (Contributed by ?who?, 11-Sep-2011.) $)
+       distinct variable conditions.  (Contributed by NM, 11-Sep-2011.) $)
     cbvmpt $p |- ( x e. A |-> B ) = ( y e. A |-> C ) $=
-      ( vw vv cv wcel wceq wa copab cmpt wsb ax-17 weq hbs1 hban eleq1 cbvopab1
-      sbequ12 anbi12d hblem hbeleq hbsb sbequ eqeq2d sbie syl6bb df-mpt 3eqtr4i
-      eqtri ) ALZDMZJLZENZOZAJPZBLZDMZUSFNZOZBJPZADEQBDFQVBKLZDMZUTAKRZOZKJPVGV
-      AVKAJKVAKSVIVJAVIASUTAKUAUBAKTURVIUTVJUQVHDUCUTAKUEUFUDVKVFKJBVIVJBVIBSUT
-      AKBBJEBCJEGUGUHUIUBVFKSKBTZVIVDVJVEVHVCDUCVLVJUTABRVEUTKBAUJUTVEABAJFACJF
-      HUGUHABTEFUSIUKULUMUFUDUPAJDEUNBJDFUNUO $.
-      $( [11-Sep-2011] $)
+      ( vz vw cv wcel wceq wa copab cmpt wsb nfv nfan eleq1 nfs1v sbequ12 nfeq2
+      anbi12d cbvopab1 nfsb sbequ eqeq2d sbie syl6bb eqtri df-mpt 3eqtr4i ) AKZ
+      CLZIKZDMZNZAIOZBKZCLZUPEMZNZBIOZACDPBCEPUSJKZCLZUQAJQZNZJIOVDURVHAIJURJRV
+      FVGAVFARUQAJUASUNVEMUOVFUQVGUNVECTUQAJUBUDUEVHVCJIBVFVGBVFBRUQAJBBUPDFUCU
+      FSVCJRVEUTMZVFVAVGVBVEUTCTVIVGUQABQVBUQJBAUGUQVBABAUPEGUCUNUTMDEUPHUHUIUJ
+      UDUEUKAICDULBICEULUM $.
   $}
 
   ${
-    $d A x $.  $d A y $.  $d B y z $.  $d C x z $.
+    $d A x $.  $d A y $.  $d B y $.  $d C x $.
     cbvmptv.1 $e |- ( x = y -> B = C ) $.
     $( Rule to change the bound variable in a maps-to function, using implicit
        substitution.  (Contributed by Mario Carneiro, 19-Feb-2013.) $)
     cbvmptv $p |- ( x e. A |-> B ) = ( y e. A |-> C ) $=
-      ( vz cv wcel ax-17 cbvmpt ) ABGCDEGHZDIBJLEIAJFK $.
-      $( [11-Sep-2011] $)
+      ( nfcv cbvmpt ) ABCDEBDGAEGFH $.
+  $}
+  ${
+    $d u v w x y z $.  $d u w x y z A $.  $d u w B $.  $d u C $.  $d u y D $.
+    $d u E $.
+    cbvmpt2x.1 $e |- F/_ z B $.
+    cbvmpt2x.2 $e |- F/_ x D $.
+    cbvmpt2x.3 $e |- F/_ z C $.
+    cbvmpt2x.4 $e |- F/_ w C $.
+    cbvmpt2x.5 $e |- F/_ x E $.
+    cbvmpt2x.6 $e |- F/_ y E $.
+    cbvmpt2x.7 $e |- ( x = z -> B = D ) $.
+    cbvmpt2x.8 $e |- ( ( x = z /\ y = w ) -> C = E ) $.
+    $( Rule to change the bound variable in a maps-to function, using implicit
+       substitution.  This version of ~ cbvmpt2 allows ` B ` to be a function
+       of ` x ` .  (Contributed by NM, 29-Dec-2014.) $)
+    cbvmpt2x $p |- ( x e. A , y e. B |-> C ) = ( z e. A , w e. D |-> E ) $=
+      ( vu cv nfan wcel wa wceq coprab cmpt2 nfv nfcri nfeq2 nfcv adantr eleq2d
+      wb eleq1 sylan9bb anbi12d eqeq2d cbvoprab12 df-mpt2 3eqtr4i ) ASZEUAZBSZF
+      UAZUBZRSZGUCZUBZABRUDCSZEUAZDSZHUAZUBZVEIUCZUBZCDRUDABEFGUECDEHIUEVGVNABR
+      CDVDVFCVAVCCVACUFCBFJUGTCVEGLUHTVDVFDVAVCDVADUFDBFDFUIUGTDVEGMUHTVLVMAVIV
+      KAVIAUFADHKUGTAVEINUHTVLVMBVLBUFBVEIOUHTUTVHUCZVBVJUCZUBZVDVLVFVMVQVAVIVC
+      VKVOVAVIULVPUTVHEUMUJVOVCVBHUAVPVKVOFHVBPUKVBVJHUMUNUOVQGIVEQUPUOUQABREFG
+      URCDREHIURUS $.
   $}
 
   ${
-    $d v w x y z $.  $d u w x y z A $.  $d u w x y z B $.  $d u v C $.
-    $d u v D $.
-    cbvmpt2.1 $e |- ( v e. C -> A. z v e. C ) $.
-    cbvmpt2.2 $e |- ( v e. C -> A. w v e. C ) $.
-    cbvmpt2.3 $e |- ( v e. D -> A. x v e. D ) $.
-    cbvmpt2.4 $e |- ( v e. D -> A. y v e. D ) $.
+    $d w x y z A $.  $d w x y z B $.
+    cbvmpt2.1 $e |- F/_ z C $.
+    cbvmpt2.2 $e |- F/_ w C $.
+    cbvmpt2.3 $e |- F/_ x D $.
+    cbvmpt2.4 $e |- F/_ y D $.
     cbvmpt2.5 $e |- ( ( x = z /\ y = w ) -> C = D ) $.
     $( Rule to change the bound variable in a maps-to function, using implicit
-       substitution. 
-       (Contributed by ?who?, 17-Dec-2013.) $)
+       substitution.  (Contributed by NM, 17-Dec-2013.) $)
     cbvmpt2 $p |- ( x e. A , y e. B |-> C ) = ( z e. A , w e. B |-> D ) $=
-      ( vu cv wcel wa wceq ax-17 coprab cmpt2 hbeq hban bi2anan9 eqeq2d anbi12d
-      eleq1 cbvoprab12 df-mpt2 3eqtr4i ) APZFQZBPZGQZRZOPZHSZRZABOUACPZFQZDPZGQ
-      ZRZUQISZRZCDOUAABFGHUBCDFGIUBUSVFABOCDUPURCUPCTCEEUQHEPUQQZCTJUCUDUPURDUP
-      DTDEEUQHVGDTKUCUDVDVEAVDATAEEUQIVGATLUCUDVDVEBVDBTBEEUQIVGBTMUCUDULUTSZUN
-      VBSZRZUPVDURVEVHUMVAVIUOVCULUTFUHUNVBGUHUEVJHIUQNUFUGUIABOFGHUJCDOFGIUJUK
-      $.
-      $( [17-Dec-2013] $)
+      ( nfcv cv wceq eqidd cbvmpt2x ) ABCDEFGFHCFNAFNIJKLAOCOPFQMR $.
   $}
 
   ${
@@ -56117,12 +56105,11 @@ $)
     cbvmpt2v.2 $e |- ( y = w -> E = D ) $.
     $( Rule to change the bound variable in a maps-to function, using implicit
        substitution.  With a longer proof analogous to ~ cbvmpt , some distinct
-       variable requirements could be eliminated. 
-       (Contributed by ?who?, 11-Jun-2013.) $)
+       variable requirements could be eliminated.  (Contributed by NM,
+       11-Jun-2013.) $)
     cbvmpt2v $p |- ( x e. A , y e. B |-> C ) = ( z e. A , w e. B |-> D ) $=
-      ( vv cv wcel ax-17 wceq sylan9eq cbvmpt2 ) ABCDLEFGHLMZGNZCOTDOSHNZAOUABO
-      AMCMPBMDMPGIHJKQR $.
-      $( [11-Jun-2013] $)
+      ( nfcv cv wceq sylan9eq cbvmpt2 ) ABCDEFGHCGLDGLAHLBHLAMCMNBMDMNGIHJKOP
+      $.
   $}
 
   ${
@@ -56211,14 +56198,39 @@ $)
   $}
 
   ${
-    $d A x y $.  $d B x y $.  $d C y $.
+    $d w x y z A $.  $d x y z B $.  $d y z C $.  $d w y z F $.
     fmpt.1 $e |- F = ( x e. A |-> C ) $.
     $( Functionality of the mapping operation.  (Contributed by Mario Carneiro,
-       26-Jul-2013.) $)
+       26-Jul-2013.)  (Revised by Mario Carneiro, 31-Aug-2015.) $)
     fmpt $p |- ( A. x e. A C e. B <-> F : A --> B ) $=
-      ( vy cmpt cv wcel wceq wa copab df-mpt eqtri fopab2 ) AGBCDEEABDHAIBJGIDK
-      LAGMFAGBDNOP $.
-      $( [26-Jul-2013] $)
+      ( vy wcel wral wf wfn crn wss fnmpt cv wceq wrex cab rnmpt wa biimparc ex
+      r19.29 rexlimivw syl abssdv syl5eqss df-f sylanbrc crab ccnv cima fimacnv
+      eleq1 mptpreima syl5reqr rabid2 sylib impbii ) DCHZABIZBCEJZVAEBKELZCMVBA
+      BDECFNVAVCGOZDPZABQZGRCAGBDEFSVAVFGCVAVFVDCHZVAVFTUTVETZABQVGUTVEABUCVHVG
+      ABVEVGUTVDDCUNUAUDUEUBUFUGBCEUHUIVBBUTABUJZPVAVBVIEUKCULBABDCEFUOBCEUMUPU
+      TABUQURUS $.
+
+    $( Express bijection for a mapping operation.  (Contributed by Mario
+       Carneiro, 30-May-2015.)  (Revised by Mario Carneiro, 4-Dec-2016.) $)
+    f1ompt $p |- ( F : A -1-1-onto-> B <->
+        ( A. x e. A C e. B /\ A. y e. B E! x e. A y = C ) ) $=
+      ( vz wa cv wceq wral wcel wfn wbr weu nfcv bitri vex 3bitr4i wf wf1o wreu
+      ccnv wb ffn dff1o4 baib syl cres fnres cmpt nfmpt1 nfcxfr nfv breq1 copab
+      nfbr df-mpt eqtri breqi cop df-br opabid syl6bb cbveu brcnv df-reu ralbii
+      eubii wrel cdm wss relcnv crn df-rn frn syl5eqssr relssres sylancr fneq1d
+      syl5bbr bitr4d pm5.32i f1of pm4.71ri fmpt anbi1i ) CDFUAZCDFUBZIWIBJZEKZA
+      CUCZBDLZIWJEDMACLZWNIWIWJWNWIWJFUDZDNZWNWIFCNZWJWQUECDFUFWJWRWQCDFUGUHUIW
+      NWPDUJZDNZWIWQWTWKHJZWPOZHPZBDLWNBHDWPUKXCWMBDXAWKFOZHPAJZCMWLIZAPXCWMXDX
+      FHAAXAWKFAXAQAFACEULZGACEUMUNAWKQURXFHUOXAXEKXDXEWKFOZXFXAXEWKFUPXHXEWKXF
+      ABUQZOZXFXEWKFXIFXGXIGABCEUSUTVAXJXEWKVBXIMXFXEWKXIVCXFABVDRRVEVFXBXDHWKX
+      AFBSHSVGVJWLACVHTVIRWIDWSWPWIWPVKWPVLZDVMWSWPKFVNWIXKFVODFVPCDFVQVRWPDVSV
+      TWAWBWCWDWJWICDFWEWFWOWIWNACDEFGWGWHT $.
+
+    fmpti.2 $e |- ( x e. A -> C e. B ) $.
+    $( Functionality of the mapping operation.  (Contributed by NM,
+       19-Mar-2005.)  (Revised by Mario Carneiro, 1-Sep-2015.) $)
+    fmpti $p |- F : A --> B $=
+      ( wcel wral wf rgen fmpt mpbi ) DCHZABIBCEJNABGKABCDEFLM $.
   $}
 
   ${
@@ -56302,32 +56314,29 @@ $)
   $}
 
   ${
-    $d y B $.  $d x y C $.
-    fvmpts.1 $e |- B e. _V $.
-    fvmpts.2 $e |- F = ( x e. C |-> B ) $.
+    $d y A $.  $d y z B $.  $d x y z C $.
+    fvmpts.1 $e |- F = ( x e. C |-> B ) $.
     $( Value of a function given in maps-to notation, using explicit class
-       substitution. 
-       (Contributed by ?who?, 17-Jul-2013.) $)
-    fvmpts $p |- ( A e. C -> ( F ` A ) = [_ A / x ]_ B ) $=
-      ( vy cmpt cv wcel wceq wa copab df-mpt eqtri fvopab4s ) AHBCDEFEADCIAJDKH
-      JCLMAHNGAHDCOPQ $.
-      $( [17-Jul-2013] $)
+       substitution.  (Contributed by Scott Fenton, 17-Jul-2013.)  (Revised by
+       Mario Carneiro, 31-Aug-2015.) $)
+    fvmpts $p |- ( ( A e. C /\ [_ A / x ]_ B e. V ) ->
+        ( F ` A ) = [_ A / x ]_ B ) $=
+      ( vy cv csb csbeq1 cmpt nfcv nfcsb1v csbeq1a cbvmpt eqtri fvmptg ) HBAHIZ
+      CJZABCJDFEASBCKEADCLHDTLGAHDCTHCMASCNASCOPQR $.
   $}
 
-
   ${
-    $d x y A $.  $d y B $.  $d x C y $.  $d x D y $.  $d y ph $.
-    fvmptd.1 $e |- ( ph -> A. x ph ) $.
+    $d x A $.  $d x C $.  $d x D $.  $d x ph $.
+    fvmptd.1 $e |- ( ph -> F = ( x e. D |-> B ) ) $.
     fvmptd.2 $e |- ( ( ph /\ x = A ) -> B = C ) $.
-    fvmptd.3 $e |- ( ph -> F = ( x e. D |-> B ) ) $.
-    $( Deduction version of ~ fvmpt . 
-       (Contributed by ?who?, 18-Feb-2013.) $)
-    fvmptd $p |- ( ( ph /\ A e. D /\ C e. V ) -> ( F ` A ) = C ) $=
-      ( vy wcel w3a cv wceq wal wa alrimi 3ad2ant1 wi copab cfv ax-17 ex 2alimi
-      syl cmpt df-mpt syl6eq 3simpc fvopab4t syl3anc ) ACFMZEHMZNBOZCPZDEPZUAZL
-      QBQZGUPFMLODPRBLUBZPZBQZUNUORCGUCEPAUNUTUOAALQZBQUTAVDBIALUDSAUSBLAUQURJU
-      EUFUGTAUNVCUOAVBBIAGBFDUHVAKBLFDUIUJSTAUNUOUKBLCDEFGHULUM $.
-      $( [18-Feb-2013] $)
+    fvmptd.3 $e |- ( ph -> A e. D ) $.
+    fvmptd.4 $e |- ( ph -> C e. V ) $.
+    $( Deduction version of ~ fvmpt .  (Contributed by Scott Fenton,
+       18-Feb-2013.)  (Revised by Mario Carneiro, 31-Aug-2015.) $)
+    fvmptd $p |- ( ph -> ( F ` A ) = C ) $=
+      ( cfv cmpt csb fveq1d wcel wceq csbied eqeltrd eqid fvmpts syl2anc 3eqtrd
+      ) ACGMCBFDNZMZBCDOZEACGUEIPACFQUGHQUFUGRKAUGEHABCDEFKJSZLTBCDFUEHUEUAUBUC
+      UHUD $.
   $}
 
   ${
@@ -56336,16 +56345,14 @@ $)
     $( Value of a function given by the "maps to" notation.  (Contributed by
        Mario Carneiro, 23-Apr-2014.) $)
     fvmpt2i $p |- ( x e. A -> ( F ` x ) = ( _I ` B ) ) $=
-      ( vy vz csb weq csbeq1 csbid syl6eq cmpt wcel ax-17 ax17el hbcsb1f csbeq1a
-      cv cbvmpt eqtri fvmpti ) FASZAFSZCHZCBDFAIUEAUCCHCAUDUCCJACKLDABCMFBUEMEA
-      FGBCUEGSCNFOAGUDCGFAPQAUDCRTUAUB $.
-      $( [23-Apr-2014] $)
+      ( vy csb wceq csbeq1 csbid syl6eq cmpt nfcv nfcsb1v csbeq1a cbvmpt fvmpti
+      cv eqtri ) FARZAFRZCGZCBDUATHUBATCGCAUATCIACJKDABCLFBUBLEAFBCUBFCMAUACNAU
+      ACOPSQ $.
 
-    $( Value of a function given by the "maps to" notation.  Analogous to
-       ~ fvopab2 .  (Contributed by FL, 21-Jun-2010.) $)
+    $( Value of a function given by the "maps to" notation.  (Contributed by
+       FL, 21-Jun-2010.) $)
     fvmpt2 $p |- ( ( x e. A /\ B e. C ) -> ( F ` x ) = B ) $=
       ( cv wcel cfv cid fvmpt2i fvi sylan9eq ) AGZBHCDHNEICJICABCEFKCDLM $.
-      $( [21-Jun-2010] $)
   $}
 
   ${
@@ -56387,14 +56394,16 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d x y z B $.  $d z C $.
+    $d x y z $.  $d z A $.  $d z B $.  $d z C $.  $d z F $.
     ovmpt4g.3 $e |- F = ( x e. A , y e. B |-> C ) $.
-    $( Value of a function given by the "maps to" notation.  Analogous to
-       ~ ov4g .  (Contributed by Mario Carneiro, 17-Dec-2013.) $)
+    $( Value of a function given by the "maps to" notation.  (This is the
+       operation analog of ~ fvmpt2 .)  (Contributed by NM, 21-Feb-2004.)
+       (Revised by Mario Carneiro, 1-Sep-2015.) $)
     ovmpt4g $p |- ( ( x e. A /\ y e. B /\ C e. V ) -> ( x F y ) = C ) $=
-      ( vz cmpt2 cv wcel wa wceq coprab df-mpt2 eqtri ov4g ) ABICDEGFFABCDEJAKC
-      LBKDLMIKENMABIOHABICDEPQR $.
-      $( [17-Dec-2013] $)
+      ( vz cv wcel co wceq wex wa elisset wmo moeq a1i cmpt2 coprab eqtri ovidi
+      df-mpt2 eqeq2 mpbidi exlimdv syl5 3impia ) AJZCKZBJZDKZEGKZUJULFLZEMZUNIJ
+      ZEMZINUKUMOZUPIEGPUSURUPIURUOUQMUPUSURABICDFURIQUSIERSFABCDETUSUROABIUAHA
+      BICDEUDUBUCUQEUOUEUFUGUHUI $.
   $}
 
   ${
@@ -56517,36 +56526,41 @@ $)
       $( [25-Apr-2012] $)
   $}
 
-  ${
-    $d x y A $.  $d x y C $.  $d x y D $.  $d y B $.
-    fvmptn.1 $e |- ( x = D -> B = C ) $.
-    fvmptn.2 $e |- F = ( x e. A |-> B ) $.
-    $( When the mapping operation would otherwise evaluate to a proper class,
-       it instead evaluates to the empty set.  (Contributed by Mario Carneiro,
-       9-Sep-2013.) $)
-    fvmptn $p |- ( -. C e. _V -> ( F ` D ) = (/) ) $=
-      ( vy wcel cvv wn cfv c0 wceq wa cmpt fveq1i cv copab wi cres resmpt ax-mp
-      wss ssv eqtr4i fvres mptv fvopabn syl5eq sylan9eq df-mpt eqtri fvopab4ndm
-      ex a1d pm2.61i ) EBJZDKJLZEFMZNOZUAUSUTVBUSUTPVAEAKCQZBUBZMZNEFVDFABCQZVD
-      HBKUEVDVFOBUFAKBCUCUDUGRUSUTVEEVCMZNEBVCUHUTVGEISCOZAITZMNEVCVIAICUIRAIEC
-      DGUJUKULUKUPUSLVBUTVHAIBEFFVFASBJVHPAITHAIBCUMUNUOUQUR $.
-      $( [9-Sep-2013] $)
-  $}
 
   ${
-    $d x A $.  $d w x B $.  $d w F $.
+    $d x y A $.  $d y B $.  $d x y C $.  $d x y D $.  $d y F $.
+    fvmptn.1 $e |- ( x = D -> B = C ) $.
+    fvmptn.2 $e |- F = ( x e. A |-> B ) $.
+    $( This somewhat non-intuitive theorem tells us the value of its function
+       is the empty set when the class ` C ` it would otherwise map to is a
+       proper class.  This is a technical lemma that can help eliminate
+       redundant sethood antecedents otherwise required by ~ fvmptg .
+       (Contributed by NM, 21-Oct-2003.)  (Revised by Mario Carneiro,
+       9-Sep-2013.) $)
+    fvmptn $p |- ( -. C e. _V -> ( F ` D ) = (/) ) $=
+      ( nfcv fvmptnf ) AECDBFAEIADIGHJ $.
+
+    $( A mapping always evaluates to a subset of the substituted expression in
+       the mapping, even if this is a proper class, or we are out of the
+       domain.  (Contributed by Mario Carneiro, 13-Feb-2015.) $)
+    fvmptss2 $p |- ( F ` D ) C_ C $=
+      ( cdm wcel cfv wss cvv wa cv wceq eleq1d dmmpt elrab2 c0 fvmptg syl sylbi
+      eqimss wn ndmfv 0ss a1i eqsstrd pm2.61i ) EFIZJZEFKZDLZULEBJDMJZNZUNCMJUO
+      AEBUKAOEPCDMGQABCFHRSUPUMDPUNAECDBMFGHUAUMDUDUBUCULUEZUMTDEFUFTDLUQDUGUHU
+      IUJ $.
+  $}
+
+
+  ${
+    $d x w A $.  $d w B $.  $d w F $.
     relmptopab.1 $e |- F = ( x e. A |-> { <. y , z >. | ph } ) $.
     $( Any function to sets of ordered pairs produces a relation on function
-       value unconditionally.  (Contributed by Mario Carneiro, 7-Aug-2014.) $)
+       value unconditionally.  (Contributed by Mario Carneiro, 7-Aug-2014.)
+       (Proof shortened by Mario Carneiro, 24-Dec-2016.) $)
     relmptopab $p |- Rel ( F ` B ) $=
-      ( vw cdm wcel cfv wrel cvv cv wi wceq releqd mpbiri c0 ax-17 copab hbmpt1
-      elex cmpt hbxfreq hbdm hbel hbfv hbrel hbim eleq1 imbi12d relopab rabeq2i
-      fveq2 wa dmmpt fvmpt2 sylbi vtoclgf mpcom wn rel0 ndmfv pm2.61i ) FGJZKZF
-      GLZMZFNKVHVJFVGUDBOZVGKZVKGLZMZPVHVJPBIFNIOFKBUAZVHVJBBIIFVGVOBIGBIGBEACD
-      UBZUEHBIEVPUCUFZUGUHBIVIBIFGVQVOUIUJUKVKFQZVLVHVNVJVKFVGULVRVMVIVKFGUPRUM
-      VLVNVPMACDUNVLVMVPVLVKEKVPNKZUQVMVPQVSBVGEBEVPGHURUOBEVPNGHUSUTRSVAVBVHVC
-      ZVJTMVDVTVITFGVERSVF $.
-      $( [7-Aug-2014] $)
+      ( cfv wrel cvv cxp wss copab fvmptss cv wcel relopab df-rel mpbi a1i mprg
+      mpbir ) FGIZJUDKKLZMZACDNZUEMZUFBEBEUGUEFGHOUHBPEQUGJUHACDRUGSTUAUBUDSUC
+      $.
   $}
 
   ${
