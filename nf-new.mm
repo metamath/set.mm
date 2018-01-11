@@ -1,4 +1,4 @@
-$( nf.mm - Version of 9-Jan-2018. $)
+$( nf.mm - Version of 10-Jan-2018. $)
 
 $( Begin $[ set-pred.mm $] $)
 
@@ -52392,21 +52392,20 @@ $)
       $( [24-Jul-2014] $)
   $}
 
+
   ${
     $d x z A $.  $d y z F $.  $d y z G $.  $d x y $.
-    eqfnfvf2.1 $e |- ( y e. F -> A. x y e. F ) $.
-    eqfnfvf2.2 $e |- ( y e. G -> A. x y e. G ) $.
+    eqfnfv2f.1 $e |- F/_ x F $.
+    eqfnfv2f.2 $e |- F/_ x G $.
     $( Equality of functions is determined by their values.  Special case of
        Exercise 4 of [TakeutiZaring] p. 28 (with domain equality omitted).
        This version of ~ eqfnfv uses bound-variable hypotheses instead of
-       distinct variable conditions.  (Contributed by ?who?, 29-Jan-2004.)
-       (Revised by ?who?, 22-Mar-2009.) $)
+       distinct variable conditions.  (Contributed by NM, 29-Jan-2004.) $)
     eqfnfv2f $p |- ( ( F Fn A /\ G Fn A ) -> ( F = G <->
                  A. x e. A ( F ` x ) = ( G ` x ) ) ) $=
-      ( vz wfn wa wceq cv cfv wral eqfnfv wcel ax-17 hbfv hbeq fveq2 eqeq12d
-      cbvral syl6bb ) DCIECIJDEKHLZDMZUDEMZKZHCNALZDMZUHEMZKZACNHCDEOUGUKHACABB
-      UEUFABUDDFBLUDPAQZRABUDEGULRSUKHQUDUHKUEUIUFUJUDUHDTUDUHETUAUBUC $.
-      $( [22-Mar-2009] $) $( [29-Jan-2004] $)
+      ( vz wfn wa wceq cv cfv wral eqfnfv nfcv nffv nfeq nfv fveq2 eqeq12d
+      cbvral syl6bb ) CBHDBHICDJGKZCLZUCDLZJZGBMAKZCLZUGDLZJZABMGBCDNUFUJGABAUD
+      UEAUCCEAUCOZPAUCDFUKPQUJGRUCUGJUDUHUEUIUCUGCSUCUGDSTUAUB $.
   $}
 
   ${
@@ -52788,65 +52787,6 @@ $)
       UTVNVSUSABVKEUDTUTVNWAUSABVKDEUETVPWAGVRBVDVROVEVTVLVDVRDUFULUGUHVMVFVPGB
       VCVLVEUIUJUKUMUNUOUPUQGFBCDURUA $.
       $( [16-Jun-2011] $)
-  $}
-
-  ${
-    $d x y z A $.  $d x y z B $.  $d y z C $.  $d z F $.
-    fopab2.1 $e |- F = { <. x , y >. | ( x e. A /\ y = C ) } $.
-    $( Functionality of an ordered-pair class abstraction.  (Contributed by
-       ?who?, 29-Jan-2004.) $)
-    fopab2 $p |- ( A. x e. A C e. B <-> F : A --> B ) $=
-      ( vz wcel wral wf crn wss cv wceq cvv sylib wa wi ax-17 wfn weu elex eueq
-      ralimi fnopabg copab rneqi wal wex rnopab abeq2i rsp eleq1a imim2i exlimd
-      hbra1 imp3a syl syl5bi alrimiv hbopab2 hbrn dfss2f syl5eqss df-f sylanbrc
-      sylibr cdm fdm dmopab3 isset ralbii dmeqi eqeq1i 3bitr4ri hbopab1 hbxfrbi
-      feq1i hbf ffvelrn adantr wb fveq1i fvopab2 syl5eq eleq1d adantll mpbid ex
-      cfv ralimdaa mpd impbii ) EDIZACJZCDFKZWPFCUAZFLZDMWQWPBNZEOZBUBZACJWRWOX
-      BACWOEPIZXBEDUCBEUDQUEXAABCFGUFQWPWSANZCIZXARZABUGZLZDFXGGUHWPWTXHIZWTDIZ
-      SZBUIXHDMWPXKBXIXFAUJZWPXJXLBXHXFABUKULWPXFXJAWOACUQXJATWPXEWOSZXFXJSWOAC
-      UMXMXEXAXJWOXAXJSXEEDWTUNUOURUSUPUTVABHXHDBHXGXFABHVBVCHNZDIZBTVDVHVECDFV
-      FVGWQXCACJZWPWQFVIZCOZXPCDFVJXABUJZACJXGVIZCOXPXRXAABCVKXCXSACBEVLVMXQXTC
-      FXGGVNVOVPQWQXCWOACWQCDXGKACDFXGGVSAHCDXGXFABHVQXNCIATXOATVTVRWQXERZXCWOY
-      AXCRXDFWKZDIZWOYAYCXCCDXDFWAWBXEXCYCWOWCWQXEXCRZYBEDYDYBXDXGWKEXDFXGGWDAB
-      CEPWEWFWGWHWIWJWLWMWN $.
-      $( [29-Jan-2004] $)
-
-    $( Inclusion of a function in a cross product.  (Contributed by ?who?,
-       5-Jun-2007.) $)
-    fopabssxp $p |- ( A. x e. A C e. B -> F C_ ( A X. B ) ) $=
-      ( wcel wral wf cxp wss fopab2 fssxp sylbi ) EDHACICDFJFCDKLABCDEFGMCDFNO
-      $.
-      $( [5-Jun-2007] $)
-
-    ${
-      rnssopab.2 $e |- C e. _V $.
-      $( Range of a function that is expressed as an ordered-pair class
-         abstraction.  (Contributed by ?who?, 23-May-2006.) $)
-      rnssopab $p |- ( A. x e. A C e. B <-> ran F C_ B ) $=
-        ( vz wcel wral crn wss wf fopab2 frn cv wceq cfv cvv wa hbopab1 hbxfreq
-        sylbi copab hbrn ax-17 fveq1i fvopab2 mpan2 syl5eq wfn fnopab2 fnfvelrn
-        hbss mpan eqeltrrd ssel syl5 ralrimi impbii ) EDJZACKZFLZDMZVCCDFNVEABC
-        DEFGOCDFPUDVEVBACAIVDDAIFAIFAQZCJZBQERUAZABUEZGVHABIUBUCUFIQDJAUGUOVGEV
-        DJVEVBVGVFFSZEVDVGVJVFVISZEVFFVIGUHVGETJVKERHABCETUIUJUKFCULVGVJVDJABCE
-        FHGUMCVFFUNUPUQVDDEURUSUTVA $.
-        $( [23-May-2006] $)
-
-      $( Functionality of an ordered-pair class abstraction.  (Contributed by
-         ?who?, 23-May-2006.) $)
-      fopab3 $p |- ( ran F C_ B <-> F : A --> B ) $=
-        ( crn wss wcel wral wf rnssopab fopab2 bitr3i ) FIDJEDKACLCDFMABCDEFGHN
-        ABCDEFGOP $.
-        $( [23-May-2006] $)
-    $}
-
-    ${
-      fopab.2 $e |- ( x e. A -> C e. B ) $.
-      $( Functionality of an ordered-pair class abstraction.  (Contributed by
-         ?who?, 19-Mar-2005.) $)
-      fopab $p |- F : A --> B $=
-        ( wcel wral wf rgen fopab2 mpbi ) EDIZACJCDFKOACHLABCDEFGMN $.
-        $( [19-Mar-2005] $)
-    $}
   $}
 
   ${
