@@ -26593,10 +26593,8 @@ $)
     df-f1o $a |- ( F : A -1-1-onto-> B <->
                 ( F : A -1-1-> B /\ F : A -onto-> B ) ) $.
 
-    $( Define the value of a function.  Definition taken from dffv4 in set.mm.
-       This works for a general definition here due to the different existence
-       properties of our ordered pairs. $)
-    dffv4 $a |- ( F ` A ) = ( iota x A F x ) $.
+    $( Define the value of a function. $)
+    df-fv $a |- ( F ` A ) = ( iota x A F x ) $.
   $}
 
   ${
@@ -28929,21 +28927,6 @@ $)
       KZUGBCALZUIBHGUGBCAMNOUGCBDPZAKZDQZGUIUFUHULUIDCHUKCBARSUEUMCDBATUAUIUHUJ
       UBUCUD $.
       $( [27-Aug-2011] $) $( [15-Mar-2004] $)
-  $}
-
-  ${
-    $d y F $.  $d x y $.
-    $( Two ways to express the class of unique-valued arguments of ` F ` ,
-       which is the same as the domain of ` F ` whenever ` F ` is a function.
-       The left-hand side of the equality is from Definition 10.2 of [Quine]
-       p. 65.  Quine uses the notation "arg ` F ` " for this class (for which
-       we have no separate notation).  Observe the resemblance to our ~ dffv4 ,
-       which was based on the idea in Quine's definition.  (Contributed by
-       ?who?, 8-May-2005.) $)
-    args $p |- { x | E. y ( F " { x } ) = { y } } = { x | E! y x F y } $=
-      ( cv csn cima wceq wex wbr weu cab imasn eqeq1i exbii euabsn bitr4i abbii
-      ) CADZEFZBDZEZGZBHZRTCIZBJZAUCUDBKZUAGZBHUEUBUGBSUFUABRCLMNUDBOPQ $.
-      $( [8-May-2005] $)
   $}
 
   ${
@@ -32120,7 +32103,7 @@ $)
        (Contributed by ?who?, 30-Apr-2004.)  (Revised by ?who?,
        18-Sep-2011.) $)
     fv2 $p |- ( F ` A ) = U. { x | A. y ( A F y <-> y = x ) } $=
-      ( cfv cv wbr cio weq wb wal cab cuni dffv4 dfiota2 eqtri ) CDECBFDGZBHQBA
+      ( cfv cv wbr cio weq wb wal cab cuni df-fv dfiota2 eqtri ) CDECBFDGZBHQBA
       IJBKALMBCDNQBAOP $.
       $( [18-Sep-2011] $) $( [30-Apr-2004] $)
   $}
@@ -32130,7 +32113,7 @@ $)
     $( A function's value at a proper class is the empty set.  (Contributed by
        ?who?, 20-May-1998.) $)
     fvprc $p |- ( -. A e. _V -> ( F ` A ) = (/) ) $=
-      ( vx cvv wcel wn cfv cv wbr cio c0 dffv4 weu wceq wex euex simpld exlimiv
+      ( vx cvv wcel wn cfv cv wbr cio c0 df-fv weu wceq wex euex simpld exlimiv
       brex syl con3i iotanul syl5eq ) ADEZFZABGACHZBIZCJZKCABLUEUGCMZFUHKNUIUDU
       IUGCOUDUGCPUGUDCUGUDUFDEAUFBSQRTUAUGCUBTUC $.
       $( [20-May-1998] $)
@@ -32151,14 +32134,14 @@ $)
     $( Equality theorem for function value.  (Contributed by ?who?,
        29-Dec-1996.) $)
     fveq1 $p |- ( F = G -> ( F ` A ) = ( G ` A ) ) $=
-      ( vx wceq cv wbr cio cfv breq iotabidv dffv4 3eqtr4g ) BCEZADFZBGZDHAOCGZ
+      ( vx wceq cv wbr cio cfv breq iotabidv df-fv 3eqtr4g ) BCEZADFZBGZDHAOCGZ
       DHABIACINPQDAOBCJKDABLDACLM $.
       $( [29-Dec-1996] $)
 
     $( Equality theorem for function value.  (Contributed by ?who?,
        29-Dec-1996.) $)
     fveq2 $p |- ( A = B -> ( F ` A ) = ( F ` B ) ) $=
-      ( vx wceq cv wbr cio cfv breq1 iotabidv dffv4 3eqtr4g ) ABEZADFZCGZDHBOCG
+      ( vx wceq cv wbr cio cfv breq1 iotabidv df-fv 3eqtr4g ) ABEZADFZCGZDHBOCG
       ZDHACIBCINPQDABOCJKDACLDBCLM $.
       $( [29-Dec-1996] $)
   $}
@@ -32275,7 +32258,7 @@ $)
     $( The value of a class exists.  Corollary 6.13 of [TakeutiZaring] p. 27.
        (Contributed by ?who?, 30-Dec-1996.) $)
     fvex $p |- ( F ` A ) e. _V $=
-      ( vx cfv cv wbr cio cvv dffv4 iotaex eqeltri ) ABDACEBFZCGHCABILCJK $.
+      ( vx cfv cv wbr cio cvv df-fv iotaex eqeltri ) ABDACEBFZCGHCABILCJK $.
       $( [30-Dec-1996] $)
   $}
 
@@ -32308,7 +32291,7 @@ $)
     $( The value of a restricted function.  (Contributed by ?who?,
        2-Aug-1994.)  (Revised by ?who?, 16-Feb-2004.) $)
     fvres $p |- ( A e. B -> ( ( F |` B ) ` A ) = ( F ` A ) ) $=
-      ( vx wcel cv cres wbr cio cfv iba brres syl6rbbr iotabidv dffv4 3eqtr4g
+      ( vx wcel cv cres wbr cio cfv iba brres syl6rbbr iotabidv df-fv 3eqtr4g
       wa ) ABEZADFZCBGZHZDIASCHZDIATJACJRUAUBDRUBUBRQUARUBKASCBLMNDATODACOP $.
       $( [16-Feb-2004] $) $( [2-Aug-1994] $)
   $}
@@ -32321,42 +32304,35 @@ $)
     3impa ) BDZCBEZACFZGZABHZACHZIUARSJZUBABTKZHZUCUAUFUBATBLMUDAUECBCNOPQ $.
     $( [29-May-2007] $) $( [15-Aug-1994] $)
 
+
   ${
-    $d y z w F $.  $d y z w A $.  $d z w B $.
+    $d y z F $.  $d y z A $.
     $( Function value.  Theorem 6.12(1) of [TakeutiZaring] p. 27.  (Contributed
-       by ?who?, 30-Apr-2004.) $)
-    tz6.12-1 $p |- ( ( A F B /\ E! y A F y ) -> ( F ` A ) = B ) $=
-      ( vw vz cv wbr weu wceq ax-17 breq2 wa wcel wi wex bitri cvv syl com12
-      cfv cbveu wel fv3 abeq2i ancom exancom anbi2i eupicka brex simprd imbi12d
-      wal eleq2 spcgv pm2.43d sylbi adantr adantl anbi12d spcegv mpcom anim1i
-      anasss sylibr expcom impbid eqrdv sylan2b ) BAGZDHZAIBCDHZBEGZDHZEIZBDUAZ
-      CJVKVNAEVKEKVNAKVJVMBDLUBVLVOMZFVPCVQFGZVPNZVRCNZVLVSVTOVOVSVLVTVSVOVNFEU
-      CZMEPZMZVLVTOZVSWAVNMZEPZVOMZWCWGFVPFEBDUDUEZWGVOWFMWCWFVOUFWFWBVOWAVNEUG
-      UHQQWCVNWAOZEUMZWDVNWAEUIWJVLVTVLWJWDVLCRNZWJWDOVLBRNWKBCDUJUKZWIWDECRVMC
-      JZVNVLWAVTVMCBDLZVMCVRUNZULUOSTUPSUQTURVTVQVSVTVQMWGVSVTVLVOWGVTVLMZWFVOW
-      KWPWFVLWKVTWLUSWEWPECRWMWAVTVNVLWOWNUTVAVBVCVDWHVEVFVGVHVI $.
-      $( [30-Apr-2004] $)
+       by NM, 30-Apr-2004.) $)
+    tz6.12-1 $p |- ( ( A F y /\ E! y A F y ) -> ( F ` A ) = y ) $=
+      ( cv wbr weu wa cfv cio df-fv wceq iota1 biimpd impcom syl5eq ) BADZCEZQA
+      FZGBCHQAIZPABCJRQSPKZRQTQALMNO $.
 
     $( Function value.  Theorem 6.12(1) of [TakeutiZaring] p. 27.  (Contributed
-       by ?who?, 10-Jul-1994.) $)
-    tz6.12 $p |- ( ( <. A , B >. e. F /\ E! y <. A , y >. e. F ) ->
-                 ( F ` A ) = B ) $=
-      ( cop wcel wbr cv weu cfv wceq df-br eubii tz6.12-1 syl2anbr ) BCEDFBCDGB
-      AHZDGZAIBDJCKBPEDFZAIBCDLQRABPDLMABCDNO $.
-      $( [10-Jul-1994] $)
+       by NM, 10-Jul-1994.) $)
+    tz6.12 $p |- ( ( <. A , y >. e. F /\ E! y <. A , y >. e. F ) ->
+                 ( F ` A ) = y ) $=
+      ( cv cop wcel wbr weu cfv wceq df-br eubii tz6.12-1 syl2anbr ) BADZECFZBO
+      CGZQAHBCIOJPAHBOCKZQPARLABCMN $.
   $}
 
+
   ${
-    $d x y z w $.  $d z w v F $.
-    tz6.12f.1 $e |- ( w e. F -> A. y w e. F ) $.
+    $d A y z w $.  $d z w v F $.
+    tz6.12f.1 $e |- F/_ y F $.
     $( Function value, using bound-variable hypotheses instead of distinct
-       variable conditions.  (Contributed by ?who?, 30-Aug-1999.) $)
-    tz6.12f $p |- ( ( <. x , y >. e. F /\ E! y <. x , y >. e. F ) ->
-                 ( F ` x ) = y ) $=
-      ( vz cv cop wcel weu cfv wceq ax-17 weq opeq2 eleq1d cbveu tz6.12 sylan2b
-      hbel ) AGZBGZHZDIZBJUDUAFGZHZDIZFJUADKUBLUDUGBFUDFMBCCUFDCGUFIBMETBFNUCUF
-      DUBUEUAOPQFUAUBDRS $.
-      $( [30-Aug-1999] $)
+       variable conditions.  (Contributed by NM, 30-Aug-1999.) $)
+    tz6.12f $p |- ( ( <. A , y >. e. F /\ E! y <. A , y >. e. F ) ->
+                 ( F ` A ) = y ) $=
+      ( vz cv cop wcel weu wa cfv wceq wi opeq2 eleq1d wb nfel2 nfv cbveu a1i
+      anbi12d eqeq2 imbi12d tz6.12 chvarv ) BEFZGZCHZUHEIZJZBCKZUFLZMBAFZGZCHZU
+      OAIZJZUKUMLZMEAUFUMLZUJUQULURUSUHUOUIUPUSUGUNCUFUMBNOZUIUPPUSUHUOEAAUGCDQ
+      UOERUTSTUAUFUMUKUBUCEBCUDUE $.
   $}
 
   ${
@@ -32370,6 +32346,7 @@ $)
       HDEAUBTUCTUDUEUAUFUG $.
       $( [30-Apr-2004] $)
   $}
+
 
   ${
     $d y F $.  $d y A $.  $d y B $.
@@ -32674,7 +32651,7 @@ $)
       ( vx vy cvv cima cuni wceq cv wbr wmo wal wi wn c0 syl unieqd uni0 syl6eq
       eqtr4d wfun wcel cfv csn wrel dffun6 simprbi ax-17 breq1 mobid spcgv cio
       cab wex weu df-mo euex con3i iotanul alnex bitri biimpri iotauni ja sylbi
-      ab0 dffv4 imasn unieqi 3eqtr4g syl6com fvprc biimpi imaeq2d ima0 pm2.61d1
+      ab0 df-fv imasn unieqi 3eqtr4g syl6com fvprc biimpi imaeq2d ima0 pm2.61d1
       snprc eqtri ) BUAZAEUBZABUCZBAUDZFZGZHZVSCIZDIZBJZDKZCLZVTWEMVSBUEWJCDBUF
       UGVTWJAWGBJZDKZWEWIWLCAEWFAHZWHWKDWMDUHWFAWGBUIUJUKWLWKDULZWKDUMZGZWAWDWL
       WKDUNZWKDUOZMWNWPHZWKDUPWQWRWSWQNZWNOWPWTWRNWNOHWRWQWKDUQURWKDUSPWTWPOGZO
@@ -32765,7 +32742,7 @@ $)
        22-Oct-2011.) $)
     fvco2 $p |- ( ( G Fn A /\ C e. A ) ->
              ( ( F o. G ) ` C ) = ( F ` ( G ` C ) ) ) $=
-      ( vy vz csn cima cv wceq cab cfv wbr cio df-iota dffv4 imasn eqeq1i abbii
+      ( vy vz csn cima cv wceq cab cfv wbr cio df-iota df-fv imasn eqeq1i abbii
       cuni wfn wcel wa ccom fnsnfv imaeq2d syl6reqr eqeq1d abbidv unieqd unieqi
       imaco 3eqtr4i 3eqtr4g ) DAUABAUBUCZCDUDZBGZHZEIGZJZEKZTZCBDLZGZHZUSJZEKZT
       ZBUPLZVCCLZUOVAVGUOUTVFEUOURVEUSUOVECDUQHZHURUOVDVKCABDUEUFCDUQULUGUHUIUJ
@@ -32946,7 +32923,7 @@ $)
        redundant sethood antecedents otherwise required by ~ fvopabg .
        (Contributed by ?who?, 21-Oct-2003.) $)
     fvopabn $p |- ( -. C e. _V -> ( { <. x , y >. | y = B } ` A ) = (/) ) $=
-      ( vz cvv wcel wn cv wceq copab cfv wbr cio c0 dffv4 weu syl wex euex brex
+      ( vz cvv wcel wn cv wceq copab cfv wbr cio c0 df-fv weu syl wex euex brex
       wa eqeq2d eqeq1 eqid brabg ibi vex syl6eqelr exlimiv con3i iotanul syl5eq
       wb ) EHIZJZCBKZDLZABMZNCGKZVAOZGPZQGCVARURVCGSZJVDQLVEUQVEVCGUAUQVCGUBVCU
       QGVCEVBHVCVBELZVCCHIVBHIUDVCVFUPCVBVAUCUTUSELVFABCVBHHVAAKCLDEUSFUEUSVBEU
