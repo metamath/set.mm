@@ -52143,18 +52143,18 @@ $)
       $( [11-May-2005] $) $( [22-May-1998] $)
   $}
 
+
   ${
     $d w z A $.  $d w z F $.  $d w y z $.
-    funfv2f.1 $e |- ( z e. A -> A. y z e. A ) $.
-    funfv2f.2 $e |- ( z e. F -> A. y z e. F ) $.
+    funfv2f.1 $e |- F/_ y A $.
+    funfv2f.2 $e |- F/_ y F $.
     $( The value of a function.  Version of ~ funfv2 using a bound-variable
-       hypotheses instead of distinct variable conditions.  (Contributed by
-       ?who?, 19-Feb-2006.) $)
+       hypotheses instead of distinct variable conditions.  (Contributed by NM,
+       19-Feb-2006.) $)
     funfv2f $p |- ( Fun F -> ( F ` A ) = U. { y | A F y } ) $=
-      ( vw wfun cfv cv wbr cab cuni funfv2 wcel ax-17 hbbr breq2 cbvab unieqi
-      syl6eq ) DHCDICGJZDKZGLZMCAJZDKZALZMGCDNUDUGUCUFGAABCUBDEFBJUBOAPQUFGPUBU
-      ECDRSTUA $.
-      $( [19-Feb-2006] $)
+      ( vw wfun cfv wbr cab cuni funfv2 nfcv nfbr nfv breq2 cbvab unieqi syl6eq
+      cv ) CGBCHBFTZCIZFJZKBATZCIZAJZKFBCLUCUFUBUEFAABUACDEAUAMNUEFOUAUDBCPQRS
+      $.
   $}
 
   $( Value of the union of two functions when the domains are separate.
@@ -52315,54 +52315,6 @@ $)
   $}
 
   ${
-    $d v w z A $.  $d u v w y B $.  $d z w v C $.  $d v w x y D $.  $d u x z $.
-    fvopab4gf.1 $e |- ( z e. A -> A. x z e. A ) $.
-    fvopab4gf.2 $e |- ( z e. C -> A. x z e. C ) $.
-    fvopab4gf.3 $e |- ( x = A -> B = C ) $.
-    fvopab4gf.4 $e |- F = { <. x , y >. | ( x e. D /\ y = B ) } $.
-    $( Value of a function given by an ordered-pair class abstraction.  This
-       version of ~ fvopab4g uses bound-variable hypotheses instead of distinct
-       variable conditions.  (Contributed by ?who?, 8-Nov-2005.)  (Revised by
-       ?who?, 20-Dec-2008.) $)
-    fvopab4gf $p |- ( ( A e. D /\ C e. R ) -> ( F ` A ) = C ) $=
-      ( vw vv wcel wa cfv cv ax-17 csb wceq copab wel hbcsb1f hbeleq hban weq wb
-      eleq1 adantr csbeq1a eqeqan12rd anbi12d cbvopab eqtri fveq1i csbhypf eqid
-      id1 fvopab4g syl5eq ) DGPFHPQDIRDNSZGPZOSZAVCEUAZUBZQZNOUCZRFDIVIIASZGPZB
-      SZEUBZQZABUCVIMVNVHABNOVNNTVNOTVDVGAVDATAOVFAOVCEONUDATUEUFUGVHBTANUHZBOU
-      HZQVKVDVMVGVOVKVDUIVPVJVCGUJUKVPVOVLVEEVFVPUTAVCEULUMUNUOUPUQNODVFFGHVIAN
-      CDEFJKLURVIUSVAVB $.
-      $( [20-Dec-2008] $) $( [8-Nov-2005] $)
-  $}
-
-  ${
-    $d z A $.  $d y B $.  $d z B $.  $d x y C $.  $d x z $.
-    fvopab4sf.1 $e |- A e. _V $.
-    fvopab4sf.2 $e |- B e. _V $.
-    fvopab4sf.3 $e |- ( z e. A -> A. x z e. A ) $.
-    fvopab4sf.4 $e |- F = { <. x , y >. | ( x e. C /\ y = B ) } $.
-    $( Value of a function given by ordered-pair class abstraction, using
-       explicit class substitution.  TODO:  Eliminate redundant first
-       hypothesis.  (Contributed by ?who?, 26-Mar-2006.) $)
-    fvopab4sf $p |- ( A e. C -> ( F ` A ) = [_ A / x ]_ B ) $=
-      ( wcel csb cvv cfv wceq csbex hbcsb1f csbeq1a fvopab4gf mpan2 ) DFLADEMZNL
-      DGOUBPADEHIQABCDEUBFNGJACDEJRADESKTUA $.
-      $( [26-Mar-2006] $)
-  $}
-
-  ${
-    $d w A $.  $d w y z B $.  $d w x y z C $.  $d w F $.
-    fvopab4s.1 $e |- B e. _V $.
-    fvopab4s.2 $e |- F = { <. x , y >. | ( x e. C /\ y = B ) } $.
-    $( Value of a function given by ordered-pair class abstraction, using
-       explicit class substitution.  (Contributed by ?who?, 26-Mar-2006.) $)
-    fvopab4s $p |- ( A e. C -> ( F ` A ) = [_ A / x ]_ B ) $=
-      ( vw vz cv cfv csb wceq fveq2 csbeq1 eqeq12d vex wcel ax-17 fvopab4sf
-      vtoclga ) IKZFLZAUCDMZNCFLZACDMZNICEUCCNUDUFUEUGUCCFOAUCCDPQABJUCDEFIRGJK
-      UCSATHUAUB $.
-      $( [26-Mar-2006] $)
-  $}
-
-  ${
     $d x y A $.
     fvopab4ndm.1 $e |- F = { <. x , y >. | ( x e. A /\ ph ) } $.
     $( Value of a function given by an ordered-pair class abstraction, outside
@@ -52384,141 +52336,6 @@ $)
       ( wcel cvv cv wceq copab cfv elex wa vex biantrur opabbii fvopab4g sylan
       ) CFICJIEGICBKDLZABMZNELCFOABCDEJGUCHUBAKJIZUBPABUDUBAQRSTUA $.
       $( [2-Sep-2003] $)
-  $}
-
-  ${
-    $d x y z w A $.  $d z w B $.  $d x y z w C $.
-    fvopabn.1 $e |- ( x = A -> B = C ) $.
-    $( This somewhat non-intuitive theorem tells us the value of its function
-       is the empty set when the class ` C ` it would otherwise map to is a
-       proper class.  This is a technical lemma that can help eliminate
-       redundant sethood antecedents otherwise required by ~ fvopabg .
-       (Contributed by ?who?, 21-Oct-2003.) $)
-    fvopabn $p |- ( -. C e. _V -> ( { <. x , y >. | y = B } ` A ) = (/) ) $=
-      ( vz cvv wcel wn cv wceq copab cfv wbr cio c0 df-fv weu syl wex euex brex
-      wa eqeq2d eqeq1 eqid brabg ibi vex syl6eqelr exlimiv con3i iotanul syl5eq
-      wb ) EHIZJZCBKZDLZABMZNCGKZVAOZGPZQGCVARURVCGSZJVDQLVEUQVEVCGUAUQVCGUBVCU
-      QGVCEVBHVCVBELZVCCHIVBHIUDVCVFUPCVBVAUCUTUSELVFABCVBHHVAAKCLDEUSFUEUSVBEU
-      FVAUGUHTUIGUJUKULTUMVCGUNTUO $.
-      $( [21-Oct-2003] $)
-  $}
-
-  ${
-    $d z w v A $.  $d y w v B $.  $d z w v C $.  $d x y w v $.  $d x z $.
-    fvopabgf.1 $e |- ( z e. A -> A. x z e. A ) $.
-    fvopabgf.2 $e |- ( z e. C -> A. x z e. C ) $.
-    fvopabgf.3 $e |- ( x = A -> B = C ) $.
-    $( The value of a function given by ordered-pair class abstraction.
-       (Contributed by ?who?, 21-Oct-2003.) $)
-    fvopabgf $p |- ( ( A e. D /\ C e. R ) ->
-                    ( { <. x , y >. | y = B } ` A ) = C ) $=
-      ( vv vw wcel cv wceq copab cfv ax-17 weq wa csb wel hbcsb1f hbeleq csbeq1a
-      wb id1 eqeqan12d ancoms cbvopab fveq1i csbhypf fvopabg syl5eq ) DGNFHNUAD
-      BOZEPZABQZRDLOZAMOZEUBZPZMLQZRFDURVCUQVBABMLUQMSUQLSALVAALUTELMUCASUDUEVB
-      BSBLTZAMTZUQVBUGVDVEUPUSEVAVDUHAUTEUFUIUJUKULMLDVAFGHAMCDEFIJKUMUNUO $.
-      $( [21-Oct-2003] $)
-
-    $( The value of a function given by an ordered-pair class abstraction is
-       the empty set when the class it would otherwise map to is a proper
-       class.  This version of ~ fvopabn uses bound-variable hypotheses instead
-       of distinct variable conditions.  (Contributed by ?who?, 21-Oct-2003.)
-       (Revised by ?who?, 21-Dec-2008.) $)
-    fvopabnf $p |- ( -. C e. _V -> ( { <. x , y >. | y = B } ` A ) = (/) ) $=
-      ( vv vw cvv wcel wn cv wceq copab cfv ax-17 weq csb wel hbcsb1f hbeleq id1
-      c0 wb csbeq1a eqeqan12d ancoms cbvopab fveq1i csbhypf fvopabn syl5eq ) FL
-      MNDBOZEPZABQZRDJOZAKOZEUAZPZKJQZRUFDURVCUQVBABKJUQKSUQJSAJVAAJUTEJKUBASUC
-      UDVBBSBJTZAKTZUQVBUGVDVEUPUSEVAVDUEAUTEUHUIUJUKULKJDVAFAKCDEFGHIUMUNUO $.
-      $( [21-Dec-2008] $) $( [21-Oct-2003] $)
-  $}
-
-  ${
-    $d z A $.  $d y B $.  $d z C $.  $d x y $.  $d x u $.  $d x z $.
-    fvopabf.1 $e |- ( z e. A -> A. x z e. A ) $.
-    fvopabf.2 $e |- ( z e. C -> A. x z e. C ) $.
-    fvopabf.3 $e |- A e. _V $.
-    fvopabf.4 $e |- C e. _V $.
-    fvopabf.5 $e |- ( x = A -> B = C ) $.
-    $( The value of a function given by ordered-pair class abstraction.
-       (Contributed by ?who?, 14-Sep-2003.) $)
-    fvopabf $p |- ( { <. x , y >. | y = B } ` A ) = C $=
-      ( cvv wcel cv wceq copab cfv fvopabgf mp2an ) DLMFLMDBNEOABPQFOIJABCDEFLL
-      GHKRS $.
-      $( [14-Sep-2003] $)
-  $}
-
-  ${
-    $d x z A $.  $d y B $.  $d x z C $.  $d x y z $.
-    fvopab.1 $e |- A e. _V $.
-    fvopab.2 $e |- C e. _V $.
-    fvopab.3 $e |- ( x = A -> B = C ) $.
-    $( The value of a function given by an ordered-pair class abstraction.
-       (Contributed by ?who?, 17-Apr-1995.) $)
-    fvopab $p |- ( { <. x , y >. | y = B } ` A ) = C $=
-      ( vz cv wcel ax-17 fvopabf ) ABICDEIJZCKALNEKALFGHM $.
-      $( [17-Apr-1995] $)
-  $}
-
-  ${
-    $d y z A $.  $d y z B $.  $d x y z $.
-    $( Value of a function given by an ordered-pair class abstraction.
-       (Contributed by ?who?, 30-Aug-1999.)  (Revised by ?who?, 2-Feb-2004.) $)
-    fvopab2 $p |- ( ( x e. A /\ B e. C ) ->
-                   ( { <. x , y >. | ( x e. A /\ y = B ) } ` x ) = B ) $=
-      ( vz wcel cv wceq wa copab cfv wex wi elisset ax-17 hbopab2 hbfv cvv weu
-      hbeq hbim vex eleq1 mpbii euanv opabid eubii eueq anbi2i 3bitr4ri tz6.12f
-      cop sylanbr sylan2b exp43 pm2.43a mpdi com12 eqeq2 sylibd exlimi impcom
-      syl ) DEGZAHZCGZVFVGBHZDIZJZABKZLZDIZVEVIBMVGVMNZBDEOVIVNBVGVMBVGBPBFFVLD
-      BFVFVKVJABFQZFHZVFGBPRVPDGBPUAUBVIVGVLVHIZVMVGVIVQVGVIDSGZVQVIVHSGVRBUCVH
-      DSUDUEVIVGVRVQNVGVIVGVRVQVGVRJZVJVFVHUMVKGZBTZVQVJBTVGVIBTZJWAVSVGVIBUFVT
-      VJBVJABUGZUHVRWBVGBDUIUJUKVJVTWAVQWCABFVKVOULUNUOUPUQURUSVHDVLUTVAVBVDVC
-      $.
-      $( [2-Feb-2004] $) $( [30-Aug-1999] $)
-  $}
-
-  ${
-    $d x z A $.  $d y z B $.  $d x y $.
-    fvopabs.1 $e |- A e. _V $.
-    fvopabs.2 $e |- B e. _V $.
-    $( The value of a function given by an ordered-pair class abstraction,
-       using class substitution.  (Contributed by ?who?, 25-Mar-2006.) $)
-    fvopabs $p |- ( { <. x , y >. | y = B } ` A ) = [_ A / x ]_ B $=
-      ( vz csb cv wcel ax-17 hbcsb1f csbex csbeq1a fvopabf ) ABGCDACDHGICJAKZAGC
-      DPLEACDEFMACDNO $.
-      $( [25-Mar-2006] $)
-  $}
-
-  ${
-    $d x y z A $.  $d z F $.  $d z ph $.  $d x ps $.
-    fvopab5.1 $e |- F = { <. x , y >. | ph } $.
-    fvopab5.2 $e |- ( x = A -> ( ph <-> ps ) ) $.
-    $( The value of a function that is expressed as an ordered pair
-       abstraction.  (Contributed by ?who?, 19-Feb-2006.) $)
-    fvopab5 $p |- ( ( Fun F /\ A e. B ) -> ( F ` A ) = U. { y | ps } ) $=
-      ( vz wfun wcel cfv cv cab cuni ax-17 wceq cop syl5bb copab hbopab2 eleq2i
-      wbr hbxfreq funfv2f elisset df-br bitri wb hbopab1 hbel hbbi opeq1 eleq1d
-      wex opabid bitr3d exlimi abbidv syl unieqd sylan9eq ) GKEFLZEGMEDNZGUDZDO
-      ZPBDOZPDJEGJNZELDQDJGACDUAZHACDJUBUEUFVDVGVHVDCNZERZCUPZVGVHRCEFUGVMVFBDV
-      FEVESZVJLZVMBVFVNGLVOEVEGUHGVJVNHUCUIVLVOBUJCVOBCCJJVNVJVIVNLCQACDJUKULBC
-      QUMVLVKVESZVJLZVOBVLVPVNVJVKEVEUNUOVQAVLBACDUQITURUSTUTVAVBVC $.
-      $( [19-Feb-2006] $)
-  $}
-
-  ${
-    $d A x y $.  $d ps x y $.  $d B y $.  $d C x y $.
-    fvopab6.1 $e |- F = { <. x , y >. | ( ph /\ y = B ) } $.
-    fvopab6.2 $e |- ( x = A -> ( ph <-> ps ) ) $.
-    fvopab6.3 $e |- ( x = A -> B = C ) $.
-    $( Value of a function given by ordered-pair class abstraction.
-       (Contributed by Jeff Madsen, 2-Sep-2009.) $)
-    fvopab6 $p |- ( ( A e. D /\ C e. R /\ ps ) -> ( F ` A ) = C ) $=
-      ( wcel cv wceq wa cab cuni wfun w3a cfv wmo copab wal funeqi funopab moeq
-      bitri moani mpgbir simp1 eqeq2d anbi12d fvopab5 simpr pm3.2 abbidv unieqd
-      sylancr impbid2 df-sn eqcomi unieqi unisng syl5eq sylan9eqr 3adant1 eqtrd
-      csn ) EHNZGINZBUAZEJUBZBDOZGPZQZDRZSZGVMJTZVKVNVSPVTAVOFPZQZDUCZCVTWBCDUD
-      ZTWCCUEJWDKUFWBCDUGUIWAADDFUHUJUKVKVLBULWBVQCDEHJKCOEPZABWAVPLWEFGVOMUMUN
-      UOUTVLBVSGPVKBVLVSVPDRZSZGBVRWFBVQVPDBVQVPBVPUPBVPUQVAURUSVLWGGVJZSGWFWHW
-      HWFDGVBVCVDGIVEVFVGVHVI $.
-      $( [2-Sep-2009] $)
   $}
 
   ${
