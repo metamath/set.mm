@@ -53795,7 +53795,7 @@ $)
     opbr1st.1 $e |- A e. _V $.
     opbr1st.2 $e |- B e. _V $.
     $( Binary relationship of an ordered pair over ` 1st ` .  (Contributed by
-       ?who?, 6-Feb-2015.) $)
+       SF, 6-Feb-2015.) $)
     opbr1st $p |- ( <. A , B >. 1st C <-> A = C ) $=
       ( vx vy cop c1st wbr cvv wcel wceq brex simprd cv wex wa eqcom bitri opth
       eleq1 mpbii breq2 eqeq2 br1st biidd ceqsexv ancom exbii 3bitr4i pm5.21nii
@@ -53805,7 +53805,7 @@ $)
       $( [6-Feb-2015] $)
 
     $( Binary relationship of an ordered pair over ` 2nd ` .  (Contributed by
-       ?who?, 6-Feb-2015.) $)
+       SF, 6-Feb-2015.) $)
     opbr2nd $p |- ( <. A , B >. 2nd C <-> B = C ) $=
       ( vx vy cop c2nd wbr cvv wcel wceq brex simprd eleq1 cv wex eqcom bitri
       mpbii breq2 eqeq2 vex br2nd wa biidd ceqsexv opth exbii 3bitr4i pm5.21nii
@@ -53817,7 +53817,7 @@ $)
 
   ${
     $d x y $.
-    $( The subset relationship is a relationship.  (Contributed by ?who?,
+    $( The subset relationship is a relationship.  (Contributed by SF,
        11-Feb-2015.) $)
     relsset $p |- Rel SSet $=
       ( vx vy cv wss csset df-sset relopabi ) ACBCDABEABFG $.
@@ -53827,7 +53827,7 @@ $)
   ${
     $d x y $.
     $( Alternate definition of the identity relationship.  (Contributed by
-       ?who?, 11-Feb-2015.) $)
+       SF, 11-Feb-2015.) $)
     dfid4 $p |- _I = ( SSet i^i `' SSet ) $=
       ( vx vy cid csset ccnv cin reli wss inss1 relsset relss mp2 weq cv wa wbr
       wrel vex brsset bitri eqss ideq brin brcnv anbi12i 3bitr4i eqbrriv ) ABCD
@@ -53837,7 +53837,7 @@ $)
       $( [11-Feb-2015] $)
   $}
 
-  $( The identity relationship is a set.  (Contributed by ?who?,
+  $( The identity relationship is a set.  (Contributed by SF,
      11-Feb-2015.) $)
   idex $p |- _I e. _V $=
     ( cid csset ccnv cin cvv dfid4 ssetex cnvex inex eqeltri ) ABBCZDEFBKGBGHIJ
@@ -53847,7 +53847,7 @@ $)
   ${
     $d x y z w t $.
     $( ` 1st ` is a mapping from ` ( _V X. _V ) ` onto the universe.
-       (Contributed by ?who?, 12-Feb-2015.) $)
+       (Contributed by SF, 12-Feb-2015.) $)
     1stfo $p |- 1st : ( _V X. _V ) -onto-> _V $=
       ( vx vy vz vw vt cvv c1st wceq cv wbr weq wal cop wex br1st mpbir2an wcel
       wa vex mpbir cxp wfo wfn crn wfun cdm wrel df-1st relopabi anbi12i bitr4i
@@ -53862,7 +53862,7 @@ $)
       $( [12-Feb-2015] $)
 
     $( ` 2nd ` is a mapping from ` ( _V X. _V ) ` onto the universe.
-       (Contributed by ?who?, 12-Feb-2015.) $)
+       (Contributed by SF, 12-Feb-2015.) $)
     2ndfo $p |- 2nd : ( _V X. _V ) -onto-> _V $=
       ( vx vy vz vw vt cvv c2nd wceq cv wbr wa weq wal cop wex vex br2nd bitr4i
       mpbir2an wcel cxp wfo wfn crn wfun cdm wrel df-2nd relopabi anbi12i eeanv
@@ -53880,7 +53880,7 @@ $)
 
   ${
     $d A x y z $.
-    $( Alternate definition of domain.  (Contributed by ?who?, 23-Feb-2015.) $)
+    $( Alternate definition of domain.  (Contributed by SF, 23-Feb-2015.) $)
     dfdm4 $p |- dom A = ( 1st " A ) $=
       ( vx vy vz cdm c1st cima cv cop wcel wex wbr wrex wceq rexcom4 vex rexbii
       br1st risset exbii 3bitr4ri eldm2 elima 3bitr4i eqriv ) BAEZFAGZBHZCHIZAJ
@@ -53888,7 +53888,7 @@ $)
       UQCDUIASTUACUHAUBDUHFAUCUDUE $.
       $( [23-Feb-2015] $)
 
-    $( Alternate definition of range.  (Contributed by ?who?, 23-Feb-2015.) $)
+    $( Alternate definition of range.  (Contributed by SF, 23-Feb-2015.) $)
     dfrn5 $p |- ran A = ( 2nd " A ) $=
       ( vy vx vz crn c2nd cima cv cop wcel wex wbr wrex wceq rexcom4 vex rexbii
       br2nd risset exbii 3bitr4ri elrn2 elima 3bitr4i eqriv ) BAEZFAGZCHBHZIZAJ
@@ -53901,7 +53901,7 @@ $)
     $d A a $.  $d a b $.  $d A b $.  $d a x $.  $d A x $.  $d a y $.  $d A y $.
     $d B a $.  $d B b $.  $d b x $.  $d B x $.  $d b y $.  $d B y $.  $d x y $.
 
-    $( Binary relationship of ` Swap ` .  (Contributed by ?who?,
+    $( Binary relationship of ` Swap ` .  (Contributed by SF,
        23-Feb-2015.) $)
     brswap $p |- ( A Swap B <-> E. x E. y ( A = <. x , y >. /\ B = <. y , x >.
         ) ) $=
@@ -53915,7 +53915,7 @@ $)
 
   ${
     $d a b x y $.
-    $( The converse of ` Swap ` is ` Swap ` .  (Contributed by ?who?,
+    $( The converse of ` Swap ` is ` Swap ` .  (Contributed by SF,
        23-Feb-2015.) $)
     cnvswap $p |- `' Swap = Swap $=
       ( va vb vy vx cswap ccnv relcnv relswap cv cop wceq wa ancom 2exbii brcnv
@@ -53927,7 +53927,7 @@ $)
 
   ${
     $d p q r x y z w $.
-    $( ` Swap ` is a bijection over all ordered pairs.  (Contributed by ?who?,
+    $( ` Swap ` is a bijection over all ordered pairs.  (Contributed by SF,
        23-Feb-2015.) $)
     swapf1o $p |- Swap : ( _V X. _V ) -1-1-onto-> ( _V X. _V ) $=
       ( vp vq vr vx vy vz vw cvv cswap wfn wceq cv wbr weq wal cop wex mpbir2an
@@ -53946,7 +53946,7 @@ $)
   $}
 
   ${
-    $( Bijection law for restrictions of ` Swap ` .  (Contributed by ?who?,
+    $( Bijection law for restrictions of ` Swap ` .  (Contributed by SF,
        23-Feb-2015.) $)
     swapresrel $p |- ( Rel A -> ( Swap |` A ) : A -1-1-onto-> `' A ) $=
       ( cvv cxp wss cswap cima cres wf1o wrel ccnv wf1 swapf1o f1of1 ax-mp mpan
@@ -53961,7 +53961,7 @@ $)
     xpnedisj.1 $e |- C e. _V $.
     xpnedisj.2 $e |- C =/= D $.
     $( Cross products with non-equal singletons are disjoint.  (Contributed by
-       ?who?, 23-Feb-2015.) $)
+       SF, 23-Feb-2015.) $)
     xpnedisj $p |- ( ( A X. { C } ) i^i ( B X. { D } ) ) = (/) $=
       ( vx vy vz csn cxp cin c0 wceq cv wcel wn disj cop wrex elxp2 opeq2 rexsn
       eqeq2d rexbii bitri wa df-ne mpbi elsni intnan eleq1 opelxp syl6bb mtbiri
@@ -53976,7 +53976,7 @@ $)
     opfv1st.1 $e |- A e. _V $.
     opfv1st.2 $e |- B e. _V $.
     $( The value of the ` 1st ` function on an ordered pair.  (Contributed by
-       ?who?, 23-Feb-2015.) $)
+       SF, 23-Feb-2015.) $)
     opfv1st $p |- ( 1st ` <. A , B >. ) = A $=
       ( cop c1st cfv wceq wbr eqid opbr1st mpbir wfun cdm wcel wb cvv cxp 1stfo
       mp2b wfo wf fof ffun opelxp mpbir2an fdm eleqtrri funbrfvb mp2an ) ABEZFG
@@ -53985,7 +53985,7 @@ $)
       $( [23-Feb-2015] $)
 
     $( The value of the ` 2nd ` function on an ordered pair.  (Contributed by
-       ?who?, 23-Feb-2015.) $)
+       SF, 23-Feb-2015.) $)
     opfv2nd $p |- ( 2nd ` <. A , B >. ) = B $=
       ( cop c2nd cfv wceq wbr eqid opbr2nd mpbir wfun cdm wcel wb cvv cxp 2ndfo
       wfo wf fof ffun mp2b opelxp mpbir2an ax-mp fdmi eleqtrri funbrfvb mp2an )
@@ -53997,7 +53997,7 @@ $)
   ${
     $d A x y $.  $d B x y $.  $d C x y $.
     $( Reconstruction of a member of a cross product in terms of its ordered
-       pair components.  (Contributed by ?who?, 20-Oct-2013.) $)
+       pair components.  (Contributed by SF, 20-Oct-2013.) $)
     1st2nd2 $p |- ( A e. ( B X. C ) -> A = <. ( 1st ` A ) , ( 2nd ` A ) >. ) $=
       ( vx vy cxp wcel cv cop wceq wrex c1st cfv c2nd elxp2 vex opfv1st opfv2nd
       fveq2 rexlimivw opeq12i eqcomi id opeq12d 3eqtr4a sylbi ) ABCFGADHZEHZIZJ
