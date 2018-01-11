@@ -52789,32 +52789,31 @@ $)
       $( [16-Jun-2011] $)
   $}
 
+
   ${
     $d x y A $.  $d x y B $.  $d x y F $.
     $( A function maps to a class to which all values belong.  (Contributed by
-       ?who?, 3-Dec-2003.) $)
+       NM, 3-Dec-2003.) $)
     ffnfv $p |- ( F : A --> B <-> ( F Fn A /\ A. x e. A ( F ` x ) e. B ) ) $=
       ( vy wf wfn cv cfv wcel wral ffn ffvelrn ralrimiva jca crn wss simpl wceq
-      wa wrex fvelrnb biimpd hbra1 ax-17 wi rsp eleq1 biimpcd syl6 sylan9 ssrdv
-      rexlimd df-f sylanbrc impbii ) BCDFZDBGZAHZDIZCJZABKZTZUQURVBBCDLUQVAABBC
-      USDMNOVCURDPZCQUQURVBRVCEVDCUREHZVDJZUTVESZABUAZVBVECJZURVFVHABVEDUBUCVBV
-      GVIABVAABUDVIAUEVBUSBJVAVGVIUFVAABUGVGVAVIUTVECUHUIUJUMUKULBCDUNUOUP $.
-      $( [3-Dec-2003] $)
+      wa wrex fvelrnb biimpd nfra1 nfv wi rsp eleq1 biimpcd syl6 rexlimd sylan9
+      ssrdv df-f sylanbrc impbii ) BCDFZDBGZAHZDIZCJZABKZTZUQURVBBCDLUQVAABBCUS
+      DMNOVCURDPZCQUQURVBRVCEVDCUREHZVDJZUTVESZABUAZVBVECJZURVFVHABVEDUBUCVBVGV
+      IABVAABUDVIAUEVBUSBJVAVGVIUFVAABUGVGVAVIUTVECUHUIUJUKULUMBCDUNUOUP $.
   $}
 
   ${
     $d y z A $.  $d y z B $.  $d y z F $.  $d x y z $.
-    ffnfvf.1 $e |- ( y e. A -> A. x y e. A ) $.
-    ffnfvf.2 $e |- ( y e. B -> A. x y e. B ) $.
-    ffnfvf.3 $e |- ( y e. F -> A. x y e. F ) $.
+    ffnfvf.1 $e |- F/_ x A $.
+    ffnfvf.2 $e |- F/_ x B $.
+    ffnfvf.3 $e |- F/_ x F $.
     $( A function maps to a class to which all values belong.  This version of
        ~ ffnfv uses bound-variable hypotheses instead of distinct variable
-       conditions.  (Contributed by ?who?, 28-Sep-2006.) $)
+       conditions.  (Contributed by NM, 28-Sep-2006.) $)
     ffnfvf $p |- ( F : A --> B <-> ( F Fn A /\ A. x e. A ( F ` x ) e. B ) ) $=
-      ( vz wf wfn cv cfv wcel wral wa ffnfv ax-17 hbfv hbel wceq eleq1d cbvralf
-      fveq2 anbi2i bitri ) CDEJECKZILZEMZDNZICOZPUGALZEMZDNZACOZPICDEQUKUOUGUJU
-      NIABCBLZCNIRFABBUIDABUHEHUPUHNARSGTUNIRUHULUAUIUMDUHULEUDUBUCUEUF $.
-      $( [28-Sep-2006] $)
+      ( vz wf wfn cv cfv wcel wral wa ffnfv nfcv nffv nfel nfv wceq fveq2 bitri
+      eleq1d cbvralf anbi2i ) BCDIDBJZHKZDLZCMZHBNZOUGAKZDLZCMZABNZOHBCDPUKUOUG
+      UJUNHABHBQEAUICAUHDGAUHQRFSUNHTUHULUAUIUMCUHULDUBUDUEUFUC $.
   $}
 
   ${
@@ -52853,65 +52852,6 @@ $)
       VGVHVI $.
       $( [14-Nov-2013] $)
   $}
-
-  ${
-    $d x y A $.  $d u x B $.  $d w z B $.  $d u F $.  $d u x G $.  $d u H $.
-    $d w S $.  $d y R $.  $d w R z $.  $d w T z $.  $d x v A $.  $d v T $.
-    fopabco.1 $e |- R e. _V $.
-    fopabco.2 $e |- S e. _V $.
-    fopabco.3 $e |- T e. _V $.
-    fopabco.4 $e |- ( z = R -> S = T ) $.
-    fopabco.5 $e |- F = { <. x , y >. | ( x e. A /\ y = R ) } $.
-    fopabco.6 $e |- G = { <. z , w >. | ( z e. B /\ w = S ) } $.
-    fopabco.7 $e |- H = { <. x , v >. | ( x e. A /\ v = T ) } $.
-    $( Composition of two functions expressed as ordered-pair class
-       abstractions.  Note that ` v ` may be assigned to ` w ` , ` y ` , or
-       ` z ` if desired.  (Unnecessary distinct variable restrictions were
-       removed by David Abernethy, 21-Jan-2012.)  (Contributed by ?who?,
-       21-Aug-2007.)  (Revised by ?who?, 21-Jan-2012.) $)
-    fopabco $p |- ( ran F C_ B -> ( G o. F ) = H ) $=
-      ( vu crn wss ccom wceq cv wral wcel copab hbopab1 hbxfreq hbrn ax-17 hbss
-      cfv wa fveq1i cvv fvopab2 mpan2 syl5eq fveq2d adantl fnopab2 df-f biimpri
-      wf wfn ffvelrn sylan wb eleq1d mpbid fvopab4 syl eqtrd cdm dmopab2 eleq2i
-      mpan wfun fnfun fvco sylbir 3eqtr4d ex ralrimi fnco mp3an12 hbco eqfnfv2f
-      ax-mp sylancl mpbird ) KUBZGUCZLKUDZMUEZAUFZWQUOZWSMUOZUEZAFUGZWPXBAFAUAW
-      OGAUAKAUAKWSFUHZBUFHUEUPZABUIZRXEABUAUJUKZULUAUFZGUHAUMUNWPXDXBWPXDUPZWSK
-      UOZLUOZJWTXAXIXKHLUOZJXDXKXLUEWPXDXJHLXDXJWSXFUOZHWSKXFRUQXDHURUHXMHUENAB
-      FHURUSUTVAZVBVCXIHGUHZXLJUEXIXJGUHZXOWPFGKVGZXDXPKFVHZWPXQABFHKNRVDZXQXRW
-      PUPFGKVEVFVTFGWSKVIVJXDXPXOVKWPXDXJHGXNVLVCVMCDHIJGLQSPVNVOVPXDWTXKUEZWPX
-      DWSKVQZUHZXTYAFWSABFHKNRVRVSKWAZYBXTXRYCXSFKWBWLWSLKWCVTWDVCXDXAJUEZWPXDJ
-      URUHZYDPXDYEUPXAWSXDEUFJUEUPZAEUIZUOJWSMYGTUQAEFJURUSVAUTVCWEWFWGWPWQFVHZ
-      MFVHWRXCVKLGVHXRWPYHCDGILOSVDXSGFLKWHWIAEFJMPTVDAUAFWQMAUALKXHLUHAUMXGWJA
-      UAMYGTYFAEUAUJUKWKWMWN $.
-      $( [21-Jan-2012] $) $( [21-Aug-2007] $)
-  $}
-
-  ${
-    $d x y z A $.  $d w x y z B $.  $d w y z C $.  $d w y z D $.  $d w z F $.
-    $d w z G $.
-    fopabcos.1 $e |- C e. _V $.
-    fopabcos.2 $e |- D e. _V $.
-    fopabcos.3 $e |- F = { <. x , y >. | ( x e. A /\ y = C ) } $.
-    fopabcos.4 $e |- G = { <. x , y >. | ( x e. B /\ y = D ) } $.
-    $( MAY BE REVISED - prove from fopabco4? $)
-    $( Composition of two functions expressed as ordered-pair class
-       abstractions.  (Contributed by ?who?, 22-May-2006.) $)
-    fopabcos $p |- ( ran G C_ A -> ( F o. G ) =
-                  { <. x , y >. | ( x e. B /\ y = [_ D / x ]_ C ) } ) $=
-      ( vz wcel csb wceq cfv adantl wfn cvv crn wss ccom cv copab wral fvopab4s
-      wa fnopab2 fnfvelrn mpan wi ssel adantr mpd eqeltrrd syl cdm dmopab2 wfun
-      eleq2i fnfun ax-mp fvco sylbir fveq2d eqtrd eqid wal vex ax-gen csbnest1g
-      csbex mp2an syl6eq 3eqtr4d ralrimiva fnco mp3an12 eqfnfv sylancl mpbird
-      wb ) HUAZCUBZGHUCZAUDDNBUDAFEOZPUHABUEZPZMUDZWFQZWJWHQZPZMDUFZWEWMMDWEWJD
-      NZUHZAWJFOZGQZAWQEOZWKWLWPWQCNWRWSPWPWJHQZWQCWOWTWQPWEABWJFDHJLUGZRWPWTWD
-      NZWTCNZWOXBWEHDSZWOXBABDFHJLUIZDWJHUJUKRWEXBXCULWOWDCWTUMUNUOUPABWQECGIKU
-      GUQWOWKWRPWEWOWKWTGQZWRWOWJHURZNZWKXFPZXGDWJABDFHJLUSVAHUTZXHXIXDXJXEDHVB
-      VCWJGHVDUKVEWOWTWQGXAVFVGRWOWLWSPWEWOWLAWJWGOZWSABWJWGDWHAFEJIVMZWHVHZUGW
-      JTNFTNZAVIXKWSPMVJXNAJVKAWJFETTVLVNVORVPVQWEWFDSZWHDSWIWNWCGCSXDWEXOABCEG
-      IKUIXECDGHVRVSABDWGWHXLXMUIMDWFWHVTWAWB $.
-      $( [22-May-2006] $)
-  $}
-
 
   ${
     $d x y A $.  $d x y B $.  $d x y F $.
@@ -53049,25 +52989,6 @@ $)
       ( csn cxp cop cv wcel wceq wa copab xpsn fconstopab eqtr3i ) CGZDGHCDIGAJ
       RKBJDLMABNCDEFOABRDPQ $.
       $( [22-Oct-2011] $) $( [6-Jun-2006] $)
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.
-    fopabap.0a $e |- A e. _V $.
-    fopabap.0b $e |- B e. _V $.
-    fopabap.1 $e |- ( R u. { A } ) = S $.
-    fopabap.2 $e |- ( x = A -> C = B ) $.
-    $( Append an additional value to a function.  (Contributed by ?who?,
-       6-Jun-2006.)  (Revised by ?who?, 15-Jun-2007.) $)
-    fopabap $p |- ( { <. x , y >. | ( x e. R /\ y = C ) } u. { <. A , B >. } )
-                  = { <. x , y >. | ( x e. S /\ y = C ) } $=
-      ( cv wcel wceq wa copab cop csn cun wo uneq2i unopab eleq2i bitr3i anbi1i
-      fopabsn andir wb elsn2 eqeq2d sylbi pm5.32i orbi2i 3bitrri opabbii 3eqtri
-      elun ) ALZFMZBLZENZOZABPZCDQRZSVCURCRZMZUTDNZOZABPZSVBVHTZABPURGMZVAOZABP
-      VDVIVCABCDHIUFUAVBVHABUBVJVLABVLUSVFTZVAOVBVFVAOZTVJVKVMVAVKURFVESZMVMVOG
-      URJUCURFVEUQUDUEUSVFVAUGVNVHVBVFVAVGVFURCNZVAVGUHURCHUIVPEDUTKUJUKULUMUNU
-      OUP $.
-      $( [15-Jun-2007] $) $( [6-Jun-2006] $)
   $}
 
   ${
@@ -53227,20 +53148,19 @@ $)
   ${
     $d x y z A $.  $d x y z B $.  $d x y z F $.
     $( A constant function expressed in terms of its functionality, domain, and
-       value.  See also ~ fconst2 .  (Contributed by ?who?, 27-Aug-2004.) $)
+       value.  See also ~ fconst2 .  (Contributed by NM, 27-Aug-2004.) $)
     fconstfv $p |- ( F : A --> { B } <->
                    ( F Fn A /\ A. x e. A ( F ` x ) = B ) ) $=
       ( vy vz csn wf wfn cv cfv wceq wral wa syl6bb wcel wrex eqeq1d sylan9bbr
       c0 ffn fvconst ralrimiva jca wi fneq2 fn0 feq1 mpbiri syl6bi feq2 sylibrd
-      f0 adantrd wne crn wb fvelrnb weq fveq2 rspccva rexbidva r19.9rzv bicomd
-      an32s vex elsn eqcom bitr2i eqrdv exp31 imdistand wfo df-fo fof pm2.61ine
-      sylbir syl6 impbii ) BCGZDHZDBIZAJZDKZCLZABMZNZWAWBWFBVTDUAWAWEABBCWCDUBU
-      CUDWGWAUEBTBTLZWBWAWFWHWBTVTDHZWAWHWBDTLZWIWHWBDTIWJBTDUFDUGOWJWITVTTHVTU
-      MTVTDTUHUIUJBTVTDUKULUNBTUOZWGWBDUPZVTLZNZWAWKWBWFWMWKWBWFWMWKWBNWFNZEWLV
-      TWOEJZWLPZCWPLZWPVTPZWKWFWBWQWRUQWBWQFJZDKZWPLZFBQZWKWFNWRFBWPDURWFXCWRFB
-      QZWKWRWFXBWRFBWFWTBPNXACWPWEXACLAWTBAFUSWDXACWCWTDUTRVARVBWKWRXDWRFBVCVDS
-      SVEWSWPCLWRWPCEVFVGWPCVHVIOVJVKVLWNBVTDVMWABVTDVNBVTDVOVQVRVPVS $.
-      $( [27-Aug-2004] $)
+      adantrd wne crn fvelrnb fveq2 rspccva rexbidva r19.9rzv bicomd elsn eqcom
+      f0 bitr2i eqrdv an32s exp31 imdistand wfo df-fo fof sylbir syl6 pm2.61ine
+      impbii ) BCGZDHZDBIZAJZDKZCLZABMZNZVRVSWCBVQDUAVRWBABBCVTDUBUCUDWDVRUEBTB
+      TLZVSVRWCWEVSTVQDHZVRWEVSDTLZWFWEVSDTIWGBTDUFDUGOWGWFTVQTHVQVDTVQDTUHUIUJ
+      BTVQDUKULUMBTUNZWDVSDUOZVQLZNZVRWHVSWCWJWHVSWCWJWHWCVSWJWHWCNZVSNZEWIVQWM
+      EJZWIPZCWNLZWNVQPZVSWOFJZDKZWNLZFBQZWLWPFBWNDUPWCXAWPFBQZWHWPWCWTWPFBWCWR
+      BPNWSCWNWBWSCLAWRBVTWRLWAWSCVTWRDUQRURRUSWHWPXBWPFBUTVASSWQWNCLWPECVBWNCV
+      CVEOVFVGVHVIWKBVQDVJVRBVQDVKBVQDVLVMVNVOVP $.
 
     $( Two ways to express a constant function.  (Contributed by ?who?,
        15-Mar-2007.) $)
@@ -54091,7 +54011,7 @@ $)
     $d C y $.  $d C z $.  $d F x $.  $d F y $.  $d F z $.  $d x y $.  $d x z $.
     $d y z $.
     $( Implicational form of part of the definition of a function.
-       (Contributed by ?who?, 24-Feb-2015.) $)
+       (Contributed by SF, 24-Feb-2015.) $)
     fununiq $p |- ( ( Fun F /\ A F B /\ A F C ) -> B = C ) $=
       ( vx vy vz cvv wcel wa wbr w3a wceq brex 3adant1 wi cv wal wb breq12 wfun
       anim12i anandi sylibr wrel dffun2 simprbi 3adant3 3adant2 anbi12d imbi12d
@@ -54107,14 +54027,14 @@ $)
   ${
     $d a b $.  $d a x $.  $d a y $.  $d b x $.  $d b y $.  $d R a $.  $d R b $.
     $d R x $.  $d R y $.  $d x y $.
-    $( A singleton image is a relationship.  (Contributed by ?who?,
+    $( A singleton image is a relationship.  (Contributed by SF,
        26-Feb-2015.) $)
     relsi $p |- Rel SI R $=
       ( vx va vy vb cv csn wceq wbr w3a wex csi df-si relopabi ) BFCFZGHDFEFZGH
       OPAIJEKCKBDALBDCEAMN $.
       $( [26-Feb-2015] $)
 
-    $( Calculate the converse of a singleton image.  (Contributed by ?who?,
+    $( Calculate the converse of a singleton image.  (Contributed by SF,
        26-Feb-2015.) $)
     cnvsi $p |- `' SI R = SI `' R $=
       ( vx vy vb va csi ccnv relcnv relsi cv csn wceq wbr w3a wex 3ancoma brcnv
@@ -54125,7 +54045,7 @@ $)
       $( [26-Feb-2015] $)
 
     $( Calculate the domain of a singleton image.  Theorem X.4.29.I of [Rosser]
-       p. 301.  (Contributed by ?who?, 26-Feb-2015.) $)
+       p. 301.  (Contributed by SF, 26-Feb-2015.) $)
     dmsi $p |- dom SI R = ~P1 dom R $=
       ( vx va vy vb csi cdm cpw1 cv csn wceq wbr wcel wa bitri exbii excom eldm
       wex 3bitr4i wrex 3anass 2exbii 19.42vv isseti 19.41v mpbiran anbi2i ancom
@@ -54140,7 +54060,7 @@ $)
     $d c x $.  $d c y $.  $d c z $.  $d d x $.  $d d y $.  $d d z $.  $d F a $.
     $d F b $.  $d F c $.  $d F d $.  $d F x $.  $d F y $.  $d F z $.  $d x z $.
     $d y z $.
-    $( The singleton image of a function is a function.  (Contributed by ?who?,
+    $( The singleton image of a function is a function.  (Contributed by SF,
        26-Feb-2015.) $)
     funsi $p |- ( Fun F -> Fun SI F ) $=
       ( vx vy vz va vb vc vd wfun cv wbr wa weq wi wal csn wceq w3a wex wb brsi
@@ -54159,7 +54079,7 @@ $)
   $}
 
   $( Calculate the range of a singleton image.  Theorem X.4.29.II of [Rosser]
-     p. 302.  (Contributed by ?who?, 26-Feb-2015.) $)
+     p. 302.  (Contributed by SF, 26-Feb-2015.) $)
   rnsi $p |- ran SI R = ~P1 ran R $=
     ( csi ccnv cdm cpw1 cnvsi dmeqi dmsi eqtri dfrn4 wceq pw1eq ax-mp 3eqtr4i
     crn ) ABZCZDZACZDZEZPOAOZEZRSBZDUAQUDAFGSHIPJUBTKUCUAKAJUBTLMN $.
