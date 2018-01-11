@@ -50474,6 +50474,23 @@ $)
     ( wfn cin wss cres inss2 fnssres mpan2 ) CADBAEZAFCKGKDBAHAKCIJ $.
     $( [9-Aug-1994] $)
 
+
+  ${
+    $d x y A $.  $d x y F $.
+    $( An equivalence for functionality of a restriction.  Compare ~ dffun8 .
+       (Contributed by Mario Carneiro, 20-May-2015.) $)
+    fnres $p |- ( ( F |` A ) Fn A <-> A. x e. A E! y x F y ) $=
+      ( cres wfun cdm wceq wa wbr wmo wral ancom wal wcel bitri mpbiran 3bitr4i
+      cv wss wex wfn weu wi brres mobii moanimv albii wrel relres dffun6 df-ral
+      cin dmres inss1 eqsstri eqss dfss3 elin2 baib eldm syl6bb ralbiia anbi12i
+      r19.26 df-fn eu5 ralbii ) DCEZFZVIGZCHZIZASZBSZDJZBUAZVPBKZIZACLZVICUBVPB
+      UCZACLVRACLZVQACLZIWCWBIVMVTWBWCMVJWBVLWCVNVOVIJZBKZANZVNCOZVRUDZANVJWBWE
+      WHAWEWGVPIZBKWHWDWIBWDVPWGIWIVNVODCUEVPWGMPUFWGVPBUGPUHVJVIUIWFDCUJABVIUK
+      QVRACULRVLCVKTZWCVLVKCTWJVKCDGZUMCDCUNZCWKUOUPVKCUQQWJVNVKOZACLWCACVKURWM
+      VQACWGWMVNWKOZVQWMWGWNVNCWKVKWLUSUTBVNDVAVBVCPPVDVQVRACVERVICVFWAVSACVPBV
+      GVHR $.
+  $}
+
   $( Functionality and domain of restricted identity.  (Contributed by ?who?,
      27-Aug-2004.) $)
   fnresi $p |- ( _I |` A ) Fn A $=
@@ -56156,8 +56173,19 @@ $)
   $}
 
   ${
-    $d x y $.  $d y A $.  $d y B $.
+    $d x y C $.  $d y A $.  $d y B $.
     dmmpt2.1 $e |- F = ( x e. A |-> B ) $.
+    $( The preimage of a function in maps-to notation.  (Contributed by Stefan
+       O'Rear, 25-Jan-2015.) $)
+    mptpreima $p |- ( `' F " C ) = { x e. A | B e. C } $=
+      ( vy ccnv cima cv wcel wceq wa copab crab eqtri crn wex cab bitri cnvopab
+      cmpt df-mpt cnveqi imaeq1i dfima3 resopab rneqi ancom anass exbii df-clel
+      cres 19.42v bicomi anbi2i abbii rnopab df-rab 3eqtr4i ) EHZDIAJBKZGJZCLZM
+      ZGANZDIZCDKZABOZVAVFDVAVEAGNZHVFEVJEABCUBVJFAGBCUCPUDVEAGUAPUEVGVFDUMZQZV
+      IVFDUFVLVCDKZVEMZGANZQZVIVKVOVEGADUGUHVNGRZASVBVHMZASVPVIVQVRAVQVBVDVMMZM
+      ZGRZVRVNVTGVNVEVMMVTVMVEUIVBVDVMUJTUKWAVBVSGRZMVRVBVSGUNWBVHVBVHWBGCDULUO
+      UPTTUQVNGAURVHABUSUTPPP $.
+
     $( The domain of the mapping operation in general.  (Contributed by Mario
        Carneiro, 13-Sep-2013.) $)
     dmmpt $p |- dom F = { x e. A | B e. _V } $=
@@ -56230,6 +56258,23 @@ $)
   $}
 
   ${
+    $d x y A $.  $d y B $.
+    fnmpti.1 $e |- B e. _V $.
+    fnmpti.2 $e |- F = ( x e. A |-> B ) $.
+    $( Functionality and domain of an ordered-pair class abstraction.
+       (Contributed by NM, 29-Jan-2004.)  (Revised by Mario Carneiro,
+       31-Aug-2015.) $)
+    fnmpti $p |- F Fn A $=
+      ( cvv wcel wral wfn rgenw mptfng mpbi ) CGHZABIDBJNABEKABCDFLM $.
+
+    $( Domain of an ordered-pair class abstraction that specifies a function.
+       (Contributed by NM, 6-Sep-2005.)  (Revised by Mario Carneiro,
+       31-Aug-2015.) $)
+    dmmpti $p |- dom F = A $=
+      ( wfn cdm wceq fnmpti fndm ax-mp ) DBGDHBIABCDEFJBDKL $.
+  $}
+
+  ${
     $d w x y z A $.  $d x y z B $.  $d y z C $.  $d w y z F $.
     fmpt.1 $e |- F = ( x e. A |-> C ) $.
     $( Functionality of the mapping operation.  (Contributed by Mario Carneiro,
@@ -56241,22 +56286,6 @@ $)
       BDECFNVAVCGOZDPZABQZGRCAGBDEFSVAVFGCVAVFVDCHZVAVFTUTVETZABQVGUTVEABUCVHVG
       ABVEVGUTVDDCUNUAUDUEUBUFUGBCEUHUIVBBUTABUJZPVAVBVIEUKCULBABDCEFUOBCEUMUPU
       TABUQURUS $.
-
-    $( Express bijection for a mapping operation.  (Contributed by Mario
-       Carneiro, 30-May-2015.)  (Revised by Mario Carneiro, 4-Dec-2016.) $)
-    f1ompt $p |- ( F : A -1-1-onto-> B <->
-        ( A. x e. A C e. B /\ A. y e. B E! x e. A y = C ) ) $=
-      ( vz wa cv wceq wral wcel wfn wbr weu nfcv bitri vex 3bitr4i wf wf1o wreu
-      ccnv wb ffn dff1o4 baib syl cres fnres cmpt nfmpt1 nfcxfr nfv breq1 copab
-      nfbr df-mpt eqtri breqi cop df-br opabid syl6bb cbveu brcnv df-reu ralbii
-      eubii wrel cdm wss relcnv crn df-rn frn syl5eqssr relssres sylancr fneq1d
-      syl5bbr bitr4d pm5.32i f1of pm4.71ri fmpt anbi1i ) CDFUAZCDFUBZIWIBJZEKZA
-      CUCZBDLZIWJEDMACLZWNIWIWJWNWIWJFUDZDNZWNWIFCNZWJWQUECDFUFWJWRWQCDFUGUHUIW
-      NWPDUJZDNZWIWQWTWKHJZWPOZHPZBDLWNBHDWPUKXCWMBDXAWKFOZHPAJZCMWLIZAPXCWMXDX
-      FHAAXAWKFAXAQAFACEULZGACEUMUNAWKQURXFHUOXAXEKXDXEWKFOZXFXAXEWKFUPXHXEWKXF
-      ABUQZOZXFXEWKFXIFXGXIGABCEUSUTVAXJXEWKVBXIMXFXEWKXIVCXFABVDRRVEVFXBXDHWKX
-      AFBSHSVGVJWLACVHTVIRWIDWSWPWIWPVKWPVLZDVMWSWPKFVNWIXKFVODFVPCDFVQVRWPDVSV
-      TWAWBWCWDWJWICDFWEWFWOWIWNACDEFGWGWHT $.
 
     fmpti.2 $e |- ( x e. A -> C e. B ) $.
     $( Functionality of the mapping operation.  (Contributed by NM,
@@ -56575,6 +56604,58 @@ $)
       $( [25-Apr-2012] $)
   $}
 
+
+  ${
+    $d x z $.  $d x y A $.  $d y z B $.  $d y C $.
+    fvmptex.1 $e |- F = ( x e. A |-> B ) $.
+    fvmptex.2 $e |- G = ( x e. A |-> ( _I ` B ) ) $.
+    $( Express a function ` F ` whose value ` B ` may not always be a set in
+       terms of another function ` G ` for which sethood is guaranteed.  (Note
+       that ` ( _I `` B ) ` is just shorthand for
+       ` if ( B e. _V , B , (/) ) ` , and it is always a set by ~ fvex .)  Note
+       also that these functions are not the same; wherever ` B ( C ) ` is not
+       a set, ` C ` is not in the domain of ` F ` (so it evaluates to the empty
+       set), but ` C ` is in the domain of ` G ` , and ` G ( C ) ` is defined
+       to be the empty set.  (Contributed by Mario Carneiro, 14-Jul-2013.)
+       (Revised by Mario Carneiro, 23-Apr-2014.) $)
+    fvmptex $p |- ( F ` C ) = ( G ` C ) $=
+      ( vy wcel cfv wceq csb cid cv cmpt nfcv cbvmpt eqtri c0 nfcsb1v nffv fvex
+      csbeq1 csbeq1a fvmpti fveq2d fvmpt eqtr4d wn cdm sseli con3i ndmfv dmmpti
+      dmmptss syl eleq2i sylnbir pm2.61i ) DBJZDEKZDFKZLVAVBADCMZNKZVCIDAIOZCMZ
+      VDBEAVFDCUDZEABCPIBVGPGAIBCVGICQAVFCUAZAVFCUEZRSUFIDVGNKZVEBFVFDLVGVDNVHU
+      GFABCNKZPIBVKPHAIBVLVKIVLQAVGNANQVIUBAOVFLCVGNVJUGRSVDNUCUHUIVAUJZVBTVCVM
+      DEUKZJZUJVBTLVOVAVNBDABCEGUPULUMDEUNUQVADFUKZJVCTLVPBDABVLFCNUCHUOURDFUNU
+      SUIUT $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y C $.  $d x y D $.  $d y F $.
+    fvmptf.1 $e |- F/_ x A $.
+    fvmptf.2 $e |- F/_ x C $.
+    fvmptf.3 $e |- ( x = A -> B = C ) $.
+    fvmptf.4 $e |- F = ( x e. D |-> B ) $.
+    $( Value of a function given by an ordered-pair class abstraction.  This
+       version of ~ fvmptg uses bound-variable hypotheses instead of distinct
+       variable conditions.  (Contributed by NM, 8-Nov-2005.)  (Revised by
+       Mario Carneiro, 15-Oct-2016.) $)
+    fvmptf $p |- ( ( A e. D /\ C e. V ) -> ( F ` A ) = C ) $=
+      ( wcel cfv wceq cvv elex cv wi nfel1 cmpt nfmpt1 nfcxfr nffv eleq1d fveq2
+      nfeq nfim eqeq12d imbi12d fvmpt2 ex vtoclgaf syl5 imp ) BELZDGLZBFMZDNZUP
+      DOLZUOURDGPCOLZAQZFMZCNZRUSURRABEHUSURAADOISAUQDABFAFAECTKAECUAUBHUCIUFUG
+      VABNZUTUSVCURVDCDOJUDVDVBUQCDVABFUEJUHUIVAELUTVCAECOFKUJUKULUMUN $.
+
+    $( The value of a function given by an ordered-pair class abstraction is
+       the empty set when the class it would otherwise map to is a proper
+       class.  This version of ~ fvmptn uses bound-variable hypotheses instead
+       of distinct variable conditions.  (Contributed by NM, 21-Oct-2003.)
+       (Revised by Mario Carneiro, 11-Sep-2015.) $)
+    fvmptnf $p |- ( -. C e. _V -> ( F ` A ) = (/) ) $=
+      ( cvv wcel wn cdm cfv c0 wceq dmmptss sseli cid cmpt eqid fvmptex fvex cv
+      nfcv nffv fveq2d fvmptf mpan2 syl5eq fvprc sylan9eq expcom ndmfv pm2.61d1
+      syl5 ) DKLMZBFNZLZBFOZPQZUTBELZURVBUSEBAECFJRSVCURVBVCURVADTOZPVCVABAECTO
+      ZUAZOZVDAECBFVFJVFUBZUCVCVDKLVGVDQDTUDABVEVDEVFKGADTATUFHUGAUEBQCDTIUHVHU
+      IUJUKDTULUMUNUQBFUOUP $.
+  $}
 
   ${
     $d x y A $.  $d y B $.  $d x y C $.  $d x y D $.  $d y F $.
