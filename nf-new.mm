@@ -35425,385 +35425,6 @@ $)
     cin df-ss sylib syl5eq ) BACZDBEFGZABHZQUCAQZUCAUCIUBUCADUDUCJUBUCUAKZABUAL
     UAUADUEADUAMUAANOPUCARST $.
 
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                     Disjointness
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-
-  $c Disj_ $.
-
-  $( Extend wff notation to include the statement that a family of classes
-     ` B ( x ) ` , for ` x e. A ` , is a disjoint family. $)
-  wdisj $a wff Disj_ x e. A B $.
-
-  ${
-    $d x y $.  $d y A $.  $d y B $.
-    $( A collection of classes ` B ( x ) ` is disjoint when for each element
-       ` y ` , it is in ` B ( x ) ` for at most one ` x ` .  (Contributed by
-       Mario Carneiro, 14-Nov-2016.)  (Revised by NM, 16-Jun-2017.) $)
-    df-disj $a |- ( Disj_ x e. A B <-> A. y E* x e. A y e. B ) $.
-  $}
-
-  ${
-    $d x y $.  $d y A $.  $d y B $.
-    $( Alternate definition for disjoint classes.  (Contributed by NM,
-       17-Jun-2017.) $)
-    dfdisj2 $p |- ( Disj_ x e. A B <-> A. y E* x ( x e. A /\ y e. B ) ) $=
-      ( wdisj cv wcel wrmo wal wa wmo df-disj df-rmo albii bitri ) ACDEBFDGZACH
-      ZBIAFCGPJAKZBIABCDLQRBPACMNO $.
-  $}
-
-  ${
-    $d x y $.  $d y A $.  $d y B $.  $d y C $.
-    $( If each element of a collection is contained in a disjoint collection,
-       the original collection is also disjoint.  (Contributed by Mario
-       Carneiro, 14-Nov-2016.) $)
-    disjss2 $p |- ( A. x e. A B C_ C ->
-      ( Disj_ x e. A C -> Disj_ x e. A B ) ) $=
-      ( vy wss wral cv wcel wrmo wal wdisj ssel ralimi rmoim syl alimdv df-disj
-      wi 3imtr4g ) CDFZABGZEHZDIZABJZEKUCCIZABJZEKABDLABCLUBUEUGEUBUFUDSZABGUEU
-      GSUAUHABCDUCMNUFUDABOPQAEBDRAEBCRT $.
-  $}
-
-  $( Equality theorem for disjoint collection.  (Contributed by Mario Carneiro,
-     14-Nov-2016.) $)
-  disjeq2 $p |- ( A. x e. A B = C ->
-    ( Disj_ x e. A B <-> Disj_ x e. A C ) ) $=
-    ( wceq wral wdisj wss wi eqimss2 ralimi disjss2 syl eqimss impbid ) CDEZABF
-    ZABCGZABDGZQDCHZABFRSIPTABDCJKABDCLMQCDHZABFSRIPUAABCDNKABCDLMO $.
-
-  ${
-    $d x ph $.
-    disjeq2dv.1 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
-    $( Equality deduction for disjoint collection.  (Contributed by Mario
-       Carneiro, 14-Nov-2016.) $)
-    disjeq2dv $p |- ( ph -> ( Disj_ x e. A B <-> Disj_ x e. A C ) ) $=
-      ( wceq wral wdisj wb ralrimiva disjeq2 syl ) ADEGZBCHBCDIBCEIJANBCFKBCDEL
-      M $.
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.  $d y C $.
-    $( A subset of a disjoint collection is disjoint.  (Contributed by Mario
-       Carneiro, 14-Nov-2016.) $)
-    disjss1 $p |- ( A C_ B -> ( Disj_ x e. B C -> Disj_ x e. A C ) ) $=
-      ( vy wss cv wcel wa wmo wal wdisj wi ssel anim1d alrimiv moim syl dfdisj2
-      alimdv 3imtr4g ) BCFZAGZCHZEGDHZIZAJZEKUCBHZUEIZAJZEKACDLABDLUBUGUJEUBUIU
-      FMZAKUGUJMUBUKAUBUHUDUEBCUCNOPUIUFAQRTAECDSAEBDSUA $.
-
-    $( Equality theorem for disjoint collection.  (Contributed by Mario
-       Carneiro, 14-Nov-2016.) $)
-    disjeq1 $p |- ( A = B -> ( Disj_ x e. A C <-> Disj_ x e. B C ) ) $=
-      ( wceq wdisj wss wi eqimss2 disjss1 syl eqimss impbid ) BCEZABDFZACDFZNCB
-      GOPHCBIACBDJKNBCGPOHBCLABCDJKM $.
-
-    disjeq1d.1 $e |- ( ph -> A = B ) $.
-    $( Equality theorem for disjoint collection.  (Contributed by Mario
-       Carneiro, 14-Nov-2016.) $)
-    disjeq1d $p |- ( ph -> ( Disj_ x e. A C <-> Disj_ x e. B C ) ) $=
-      ( wceq wdisj wb disjeq1 syl ) ACDGBCEHBDEHIFBCDEJK $.
-
-    $d x ph $.
-    disjeq12d.1 $e |- ( ph -> C = D ) $.
-    $( Equality theorem for disjoint collection.  (Contributed by Mario
-       Carneiro, 14-Nov-2016.) $)
-    disjeq12d $p |- ( ph -> ( Disj_ x e. A C <-> Disj_ x e. B D ) ) $=
-      ( wdisj disjeq1d wceq cv wcel adantr disjeq2dv bitrd ) ABCEIBDEIBDFIABCDE
-      GJABDEFAEFKBLDMHNOP $.
-  $}
-
-  ${
-    $d x y z A $.  $d z B $.  $d z C $.
-    cbvdisj.1 $e |- F/_ y B $.
-    cbvdisj.2 $e |- F/_ x C $.
-    cbvdisj.3 $e |- ( x = y -> B = C ) $.
-    $( Change bound variables in a disjoint collection.  (Contributed by Mario
-       Carneiro, 14-Nov-2016.) $)
-    cbvdisj $p |- ( Disj_ x e. A B <-> Disj_ y e. A C ) $=
-      ( vz cv wcel wrmo wal wdisj nfcri weq eleq2d cbvrmo albii df-disj 3bitr4i
-      ) IJZDKZACLZIMUBEKZBCLZIMACDNBCENUDUFIUCUEABCBIDFOAIEGOABPDEUBHQRSAICDTBI
-      CETUA $.
-  $}
-
-  ${
-    $d x y A $.  $d y B $.  $d x C $.
-    cbvdisjv.1 $e |- ( x = y -> B = C ) $.
-    $( Change bound variables in a disjoint collection.  (Contributed by Mario
-       Carneiro, 11-Dec-2016.) $)
-    cbvdisjv $p |- ( Disj_ x e. A B <-> Disj_ y e. A C ) $=
-      ( nfcv cbvdisj ) ABCDEBDGAEGFH $.
-  $}
-
-  ${
-    $d z A $.  $d z B $.  $d x z $.  $d y z $.
-    nfdisj.1 $e |- F/_ y A $.
-    nfdisj.2 $e |- F/_ y B $.
-    $( Bound-variable hypothesis builder for disjoint collection.  (Contributed
-       by Mario Carneiro, 14-Nov-2016.) $)
-    nfdisj $p |- F/ y Disj_ x e. A B $=
-      ( vz wdisj cv wcel wa wmo wal wrmo df-disj df-rmo albii wnf wtru a1i wnfc
-      bitri nftru weq wn nfcvf nfeld nfcri nfand adantl nfmod2 trud nfal nfxfr
-      ) ACDHZAIZCJZGIDJZKZALZGMZBUOURACNZGMVAAGCDOVBUTGURACPQUBUTBGUTBRSUSBAAUC
-      BAUDBMUEZUSBRSVCUQURBVCBUPCBAUFBCUAVCETUGURBRVCBGDFUHTUIUJUKULUMUN $.
-  $}
-
-  ${
-    $d y A $.  $d y B $.  $d x y $.
-    $( Bound-variable hypothesis builder for disjoint collection.  (Contributed
-       by Mario Carneiro, 14-Nov-2016.) $)
-    nfdisj1 $p |- F/ x Disj_ x e. A B $=
-      ( vy wdisj cv wcel wrmo wal df-disj nfrmo1 nfal nfxfr ) ABCEDFCGZABHZDIAA
-      DBCJOADNABKLM $.
-  $}
-
-  ${
-    $d i j x A $.  $d j x B $.  $d i x C $.
-    disjmo.1 $e |- ( i = j -> B = C ) $.
-    $( Two ways to say that a collection ` B ( i ) ` for ` i e. A ` is
-       disjoint.  (Contributed by Mario Carneiro, 26-Mar-2015.)  (Revised by
-       Mario Carneiro, 14-Nov-2016.) $)
-    disjor $p |- ( Disj_ i e. A B <->
-      A. i e. A A. j e. A ( i = j \/ ( B i^i C ) = (/) ) ) $=
-      ( vx wdisj cv wcel wrmo wal wo wral wi ralcom4 wex bitri bitr4i ralbii c0
-      weq cin wceq df-disj wa orcom df-or neq0 elin imbi1i 19.23v 3bitri eleq2d
-      wn exbii rmo4 albii 3bitr4i ) DABHGIZBJZDAKZGLZDEUBZBCUCZUAUDZMZEANZDANZD
-      GABUEVAUTCJZUFZVDOZEANZGLZDANVMDANZGLVIVCVMDGAPVHVNDAVHVLGLZEANVNVGVPEAVG
-      VFVDMVFUOZVDOZVPVDVFUGVFVDUHVRVKGQZVDOVPVQVSVDVQUTVEJZGQVSGVEUIVTVKGUTBCU
-      JUPRUKVKVDGULSUMTVLEGAPRTVBVOGVAVJDEAVDBCUTFUNUQURUSS $.
-
-    $( Two ways to say that a collection ` B ( i ) ` for ` i e. A ` is
-       disjoint.  (Contributed by Mario Carneiro, 26-Mar-2015.)
-       (New usage is discouraged.) $)
-    disjmoOLD $p |- ( A. x E* i ( i e. A /\ x e. B ) <->
-      A. i e. A A. j e. A ( i = j \/ ( B i^i C ) = (/) ) ) $=
-      ( cv wcel wa wmo wal wdisj wceq cin c0 wo wral dfdisj2 disjor bitr3i ) EH
-      ZBIAHCIJEKALEBCMUBFHNCDOPNQFBREBREABCSBCDEFGTUA $.
-  $}
-
-  ${
-    $d i j x A $.  $d i j B $.
-    $( Two ways to say that a collection ` B ( i ) ` for ` i e. A ` is
-       disjoint.  (Contributed by Mario Carneiro, 14-Nov-2016.) $)
-    disjors $p |- ( Disj_ x e. A B <-> A. i e. A A. j e. A
-      ( i = j \/ ( [_ i / x ]_ B i^i [_ j / x ]_ B ) = (/) ) ) $=
-      ( wdisj cv csb wceq c0 wo wral nfcv nfcsb1v csbeq1a cbvdisj csbeq1 disjor
-      cin bitri ) ABCFDBADGZCHZFUAEGZIUBAUCCHZSJIKEBLDBLADBCUBDCMAUACNAUACOPBUB
-      UDDEAUAUCCQRT $.
-  $}
-
-  ${
-    $d x y z A $.  $d y z B $.  $d x y z C $.  $d x z D $.  $d x y z X $.
-    $d x z Y $.
-    disji.1 $e |- ( x = X -> B = C ) $.
-    disji.2 $e |- ( x = Y -> B = D ) $.
-    $( Property of a disjoint collection: if ` B ( X ) = C ` and
-       ` B ( Y ) = D ` , and ` X =/= Y ` , then ` C ` and ` D ` are disjoint.
-       (Contributed by Mario Carneiro, 14-Nov-2016.) $)
-    disji2 $p |- ( ( Disj_ x e. A B /\ ( X e. A /\ Y e. A ) /\
-      X =/= Y ) -> ( C i^i D ) = (/) ) $=
-      ( vy vz wcel wa cin c0 wceq wo cv csb nfcv wdisj df-ne wral disjors eqeq1
-      wn csbhypf ineq1d eqeq1d orbi12d eqeq2 ineq2d rspc2v syl5bi impcom 3impia
-      wne ord ) ABCUAZFBLGBLMZFGUQZDENZOPZVAFGPZUFUSUTMZVCFGUBVEVDVCUTUSVDVCQZU
-      SJRZKRZPZAVGCSZAVHCSZNZOPZQZKBUCJBUCUTVFABCJKUDVNVFFVHPZDVKNZOPZQJKFGBBVG
-      FPZVIVOVMVQVGFVHUEVRVLVPOVRVJDVKAJFCDAFTADTHUGUHUIUJVHGPZVOVDVQVCVHGFUKVS
-      VPVBOVSVKEDAKGCEAGTAETIUGULUIUJUMUNUOURUNUP $.
-
-    $( Property of a disjoint collection: if ` B ( X ) = C ` and
-       ` B ( Y ) = D ` have a common element ` Z ` , then ` X = Y ` .
-       (Contributed by Mario Carneiro, 14-Nov-2016.) $)
-    disji $p |- ( ( Disj_ x e. A B /\ ( X e. A /\ Y e. A ) /\
-      ( Z e. C /\ Z e. D ) ) -> X = Y ) $=
-      ( wcel wa wdisj cin c0 wne wceq inelcm disji2 3expia necon1d syl3an3
-      3impia ) HDKHEKLABCMZFBKGBKLZDENZOPZFGQZHDERUDUEUGUHUDUELFGUFOUDUEFGPUFOQ
-      ABCDEFGIJSTUAUCUB $.
-  $}
-
-  ${
-    $d x y $.  $d y A $.  $d y B $.  $d x C $.
-    $( If there is a function ` C ( y ) ` such that ` C ( y ) = x ` for all
-       ` y e. B ( x ) ` , then the sets ` B ( x ) ` for distinct ` x e. A ` are
-       disjoint.  (Contributed by Mario Carneiro, 10-Dec-2016.) $)
-    invdisj $p |- ( A. x e. A A. y e. B C = x -> Disj_ x e. A B ) $=
-      ( cv wceq wral wcel wa wmo wal wdisj nfra2 df-ral rsp eqcom syl6ib imim2i
-      wi imp3a alimi sylbi mo2icl alrimi wrmo df-disj df-rmo albii bitri sylibr
-      syl ) EAFZGZBDHZACHZUMCIZBFDIZJZAKZBLZACDMZUPUTBUNABCDNUPUSUMEGZTZALZUTUP
-      UQUOTZALVEUOACOVFVDAVFUQURVCUOURVCTUQUOURUNVCUNBDPEUMQRSUAUBUCUSAEUDULUEV
-      BURACUFZBLVAABCDUGVGUTBURACUHUIUJUK $.
-  $}
-
-  ${
-    $d x y z A $.  $d y z B $.  $d x y z C $.  $d x y z D $.
-    $( A disjoint collection yields disjoint indexed unions for disjoint index
-       sets.  (Contributed by Mario Carneiro, 26-Mar-2015.)  (Revised by Mario
-       Carneiro, 14-Nov-2016.) $)
-    disjiun $p |- ( ( Disj_ x e. A B /\
-      ( C C_ A /\ D C_ A /\ ( C i^i D ) = (/) ) ) ->
-        ( U_ x e. C B i^i U_ x e. D B ) = (/) ) $=
-      ( vy vz wss cin c0 wceq wa cv wcel wi wrex wral impcom syl syl5bi ciun wn
-      wdisj w3a wal wrmo df-disj wne elin eliun anbi12i weq wex nfv rmo2 ssralv
-      bitri an4 r19.29 id imp eleq1d biimpcd rexlimiv ex expimpd anim12d inelcm
-      syl6 exlimiv exp3a sylbi necon2bd impancom 3impa alimdv eq0 sylibr ) ABCU
-      CZDBHZEBHZDEIZJKZUDZLFMZADCUAZAECUAZIZNZUBZFUEZWHJKWDVSWKVSWECNZABUFZFUEW
-      DWKAFBCUGWDWMWJFVTWAWCWMWJOVTWALZWMWCWJWNWMLZWIWBJWIWLADPZWLAEPZLZWOWBJUH
-      ZWIWEWFNZWEWGNZLWRWEWFWGUIWTWPXAWQAWEDCUJAWEECUJUKUQWMWNWRWSOZWMWLAGULZOZ
-      ABQZGUMZWNXBOWLAGBWLGUNUOXFWNWRWSWNWRLVTWPLZWAWQLZLZXFWSVTWAWPWQURXEXIWSO
-      GXEXIGMZDNZXJENZLWSXEXGXKXHXLXEVTWPXKXEVTLXDADQZWPXKOVTXEXMXDADBUPRXMWPXK
-      XMWPLXDWLLZADPXKXDWLADUSXNXKADXNAMZDNXKXNXOXJDXDWLXCXDUTVAZVBVCVDSVESVFXE
-      WAWQXLXEWALXDAEQZWQXLOWAXEXQXDAEBUPRXQWQXLXQWQLXNAEPXLXDWLAEUSXNXLAEXNXOE
-      NXLXNXOXJEXPVBVCVDSVESVFVGXJDEVHVIVJTVKVLRTVMVNVOVPTRFWHVQVR $.
-
-    $( A disjoint collection yields disjoint indexed unions for disjoint index
-       sets.  (Contributed by Mario Carneiro, 26-Mar-2015.)
-       (New usage is discouraged.) $)
-    disjiunOLD $p |- ( ( A. y E* x ( x e. A /\ y e. B ) /\
-      ( C C_ A /\ D C_ A /\ ( C i^i D ) = (/) ) ) ->
-        ( U_ x e. C B i^i U_ x e. D B ) = (/) ) $=
-      ( cv wcel wa wmo wal wdisj wss cin c0 wceq w3a ciun dfdisj2 disjiun
-      sylanbr ) AGCHBGDHIAJBKACDLECMFCMEFNOPQAEDRAFDRNOPABCDSACDEFTUA $.
-  $}
-
-  ${
-    $d x y $.  $d y A $.
-    $( Any collection of singletons is disjoint.  (Contributed by Mario
-       Carneiro, 14-Nov-2016.) $)
-    sndisj $p |- Disj_ x e. A { x } $=
-      ( vy cv csn wdisj wcel wa dfdisj2 wceq moeq simpr elsn sylib eqcomd moimi
-      wmo ax-mp mpgbir ) ABADZEZFTBGZCDZUAGZHZAQZCACBUAITUCJZAQUFAUCKUEUGAUEUCT
-      UEUDUCTJUBUDLCTMNOPRS $.
-  $}
-
-  $( Any collection of empty sets is disjoint.  (Contributed by Mario Carneiro,
-     14-Nov-2016.) $)
-  0disj $p |- Disj_ x e. A (/) $=
-    ( c0 cv csn wss wral wdisj 0ss rgenw sndisj disjss2 mp2 ) CADEZFZABGABNHABC
-    HOABNIJABKABCNLM $.
-
-  ${
-    $d x y A $.  $d y B $.
-    $( A singleton collection is disjoint.  (Contributed by Mario Carneiro,
-       14-Nov-2016.) $)
-    disjxsn $p |- Disj_ x e. { A } B $=
-      ( vy csn wdisj cv wcel wa wmo dfdisj2 wceq moeq elsni adantr moimi mpgbir
-      ax-mp ) ABEZCFAGZSHZDGCHZIZAJZDADSCKTBLZAJUDABMUCUEAUAUEUBTBNOPRQ $.
-
-    $( An empty collection is disjoint.  (Contributed by Mario Carneiro,
-       14-Nov-2016.) $)
-    disjx0 $p |- Disj_ x e. (/) B $=
-      ( c0 csn wss wdisj 0ss disjxsn disjss1 mp2 ) CCDZEAKBFACBFKGACBHACKBIJ $.
-  $}
-
-  ${
-    $d x y z A $.  $d x y z B $.  $d y z C $.  $d x y z D $.  $d x y z E $.
-    disjprg.1 $e |- ( x = A -> C = D ) $.
-    disjprg.2 $e |- ( x = B -> C = E ) $.
-    $( A pair collection is disjoint iff the two sets in the family have empty
-       intersection.  (Contributed by Mario Carneiro, 14-Nov-2016.) $)
-    disjprg $p |- ( ( A e. V /\ B e. V /\ A =/= B ) ->
-      ( Disj_ x e. { A , B } C <-> ( D i^i E ) = (/) ) ) $=
-      ( vy vz wceq cin c0 wo wral wa wb nfcv wtru wcel wne w3a cv csb cpr wdisj
-      eqeq1 csbhypf ineq1d eqeq1d orbi12d ralbidv ralprg 3adant3 id eqcomd orcd
-      a1tru 2thd eqeq2 ineq2d simp3 neneqd biorf syl tru biantrur syl6bb bitr4d
-      wn eqcom incom syl6eq biantru anbi12d bitrd disjors pm4.24 3bitr4g ) BGUA
-      ZCGUAZBCUBZUCZJUDZKUDZLZAWEDUEZAWFDUEZMZNLZOZKBCUFZPZJWMPZEFMZNLZWQQZAWMD
-      UGWQWDWOBWFLZEWIMZNLZOZKWMPZCWFLZFWIMZNLZOZKWMPZQZWRWAWBWOXIRWCWNXCXHJBCG
-      GWEBLZWLXBKWMXJWGWSWKXAWEBWFUHXJWJWTNXJWHEWIAJBDEABSZAESZHUIUJUKULUMWECLZ
-      WLXGKWMXMWGXDWKXFWECWFUHXMWJXENXMWHFWIAJCDFACSZAFSZIUIUJUKULUMUNUOWDXCWQX
-      HWQWDXCTBCLZWQOZQZWQWAWBXCXRRWCXBTXQKBCGGWFBLZXBTXSWSXAXSWFBXSUPUQURXSUSU
-      TWFCLZWSXPXAWQWFCBVAXTWTWPNXTWIFEAKCDFXNXOIUIVBUKULUNUOWDWQXQXRWDXPVKWQXQ
-      RWDBCWAWBWCVCVDXPWQVEVFZTXQVGVHVIVJWDXHXQTQZWQWAWBXHYBRWCXGXQTKBCGGXSXDXP
-      XFWQXSXDCBLXPWFBCVACBVLVIXSXEWPNXSXEFEMWPXSWIEFAKBDEXKXLHUIVBFEVMVNUKULXT
-      XGTXTXDXFXTWFCXTUPUQURXTUSUTUNUOWDWQXQYBYATXQVGVOVIVJVPVQAWMDJKVRWQVSVT
-      $.
-  $}
-
-  ${
-    $d r s u v x y z A $.  $d r s u v x z B $.  $d r s u v y z C $.
-    $( An indexed union of a disjoint collection of disjoint collections is
-       disjoint if each component is disjoint, and the disjoint unions in the
-       collection are also disjoint.  Note that ` B ( y ) ` and ` C ( x ) ` may
-       have the displayed free variables.  (Contributed by Mario Carneiro,
-       14-Nov-2016.) $)
-    disjxiun $p |- ( Disj_ y e. A B -> ( Disj_ x e. U_ y e. A B C <->
-      ( A. y e. A Disj_ x e. B C /\ Disj_ y e. A U_ x e. B C ) ) ) $=
-      ( vu vv vr vs vz wdisj ciun wral wa nfcv cv wcel wss syl wceq nfiu1 com12
-      wi nfdisj ssiun2 disjss1 ralrimi a1i csb cin c0 wo simplr simprll nfcsb1v
-      csbeq1a cbviun syl6sseqr simprlr csbeq1 sseq1d vtoclga simpl sylib disjor
-      wn cbvdisj rsp2 imp ord impr disjiun syl13anc expr orrd ralrimivva sylibr
-      iuneq1d nfiun jcad wrex eleq2i eliun anbi12i reeanv bitr4i simplrr simprl
-      ex bitri simplrl disjeq1d rspc sylc ad2antrr disjors simpld simprd adantl
-      eleqtrrd jca mpd wne ss2in simprr simpr disji2 syl121anc sseq0 pm2.61dane
-      syl2anc rexlimdvva syl5bi ralrimivv impbid ) BCDKZABCDLZEKZADEKZBCMZBCADE
-      LZKZNZXPXRXTYBXRXTUCXPXRXSBCABXQEBCDUABEOZUDBPZCQZXRXSYFDXQRXRXSUCBCDUEAD
-      XQEUFSUBUGUHXPXRYBXPXRNZFCABFPZDUIZELZKZYBYGYHGPZTZYJABYLDUIZELZUJZUKTZUL
-      ZGCMFCMYKYGYRFGCCYGYHCQZYLCQZNZNZYMYQYGUUAYMVFZYQYGUUAUUCNZNZXRYIXQRZYNXQ
-      RZYIYNUJUKTZYQXPXRUUDUMUUEYSUUFYGYSYTUUCUNYSYIFCYILZXQFCYIUEBFCDYIFDOZBYH
-      DUOZBYHDUPZUQZURZSUUEYTUUGYGYSYTUUCUSUUFUUGFYLCYMYIYNXQBYHYLDUTZVAUUNVBSY
-      GUUAUUCUUHUUBYMUUHYGUUAYMUUHULZYGUUPGCMFCMZUUAUUPUCYGFCYIKZUUQYGXPUURXPXR
-      VCBFCDYIUUJUUKUULVGVDCYIYNFGUUOVEVDUUPFGCCVHSVIVJVKAXQEYIYNVLVMVNVOVPCYJY
-      OFGYMAYIYNEUUOVRVEVQBFCYAYJFYAOABYIEUUKYDVSYEYHTZADYIEUULVRVGVQWIVTXPYCXR
-      XPYCNZHPZIPZTZAUVAEUIZAUVBEUIZUJZUKTZULZIXQMHXQMXRUUTUVHHIXQXQUVAXQQZUVBX
-      QQZNZUVAYIQZUVBYNQZNZGCWAFCWAZUUTUVHUVKUVLFCWAZUVMGCWAZNUVOUVIUVPUVJUVQUV
-      IUVAUUIQUVPXQUUIUVAUUMWBFUVACYIWCWJUVJUVBGCYNLZQUVQXQUVRUVBBGCDYNGDOBYLDU
-      OBYLDUPUQWBGUVBCYNWCWJWDUVLUVMFGCCWEWFUUTUVNUVHFGCCUUTUUANZUVNUVHUVSUVNNU
-      VCUVGUVSUVNUVCVFZUVGUVSUVNUVTNZNZUVGYHYLUWBYMNZUVTUVGUVSUVNUVTYMWGUWCUVCU
-      VGUWCUVHIYIMHYIMZUVLUVBYIQZNUVHUWCAYIEKZUWDUVSUWFUWAYMUVSYSXTUWFUUTYSYTWH
-      ZXPXTYBUUAWKXSUWFBYHCABYIEUUKYDUDUUSADYIEUULWLWMWNWOAYIEHIWPVDUWCUVLUWEUW
-      CUVLUVMUVSUVNUVTYMWKZWQUWCUVBYNYIUWCUVLUVMUWHWRYMYIYNTUWBUUOWSWTXAUVHHIYI
-      YIVHWNVJXBUWBYHYLXCZNZUVFYPRZYQUVGUWJUVDYJRZUVEYORZUWKUWJUVLUWLUWJUVLUVMU
-      VSUVNUVTUWIWKZWQUVLUVDHYIUVDLYJHYIUVDUEAHYIEUVDHEOAUVAEUOAUVAEUPUQURSUWJU
-      VMUWMUWJUVLUVMUWNWRUVMUVEIYNUVELYOIYNUVEUEAIYNEUVEIEOAUVBEUOAUVBEUPUQURSU
-      VDYJUVEYOXDXKUWJJCABJPZDUIZELZKZYSYTUWIYQUWJYBUWRUVSYBUWAUWIXPXTYBUUAWGWO
-      BJCYAUWQJYAOABUWPEBUWODUOYDVSYEUWOTADUWPEBUWODUPVRVGVDUVSYSUWAUWIUWGWOUVS
-      YTUWAUWIUUTYSYTXEWOUWBUWIXFJCUWQYJYOYHYLUWOYHTAUWPYIEBUWOYHDUTVRUWOYLTAUW
-      PYNEBUWOYLDUTVRXGXHUVFYPXIXKXJVNVOWIXLXMXNAXQEHIWPVQWIXO $.
-  $}
-
-  ${
-    $d w x y z A $.  $d w x y z B $.  $d w y z C $.  $d w x z D $.
-    disjxun.1 $e |- ( x = y -> C = D ) $.
-    $( The union of two disjoint collections.  (Contributed by Mario Carneiro,
-       14-Nov-2016.) $)
-    disjxun $p |- ( ( A i^i B ) = (/) -> ( Disj_ x e. ( A u. B ) C <->
-      ( Disj_ x e. A C /\ Disj_ x e. B C /\
-        A. x e. A A. y e. B ( C i^i D ) = (/) ) ) ) $=
-      ( vz vw cin c0 wceq cv wo wral wa wdisj eqeq1d orbi12d bitri csb cun wcel
-      w3a wn wb disjel eleq1 notbid syl5ibcom con2d impr biorf bicomd 2ralbidva
-      syl anbi2d ralunb ralbii nfcv nfcsb1v nfin nfeq1 nfor nfral eqeq2 csbhypf
-      ineq2d cbvralv eqeq1 csbeq1a ineq1d ralbidv syl5bbr cbvral r19.26 3bitr3i
-      nfv disjor anbi1i 3bitr4g eqcom syl6bb incom syl6eq ralcom syl5bb disjors
-      anbi1d anbi2ci anbi12d df-3an anandir ) CDJKLZHMZIMZLZAWOEUAZAWPEUAZJZKLZ
-      NZICDUBZOZHCOZXDHDOZPZACEQZEFJZKLZBDOACOZPZADEQZXKPZPZAXCEQZXHXMXKUDZWNXE
-      XLXFXNWNAMZBMZLZXJNZBCOZACOZYABDOZACOZPZYCXKPXEXLWNYEXKYCWNYAXJABCDWNXRCU
-      CZXSDUCZPPZXJYAYIXTUEZXJYAUFWNYGYHYJWNYGPZXTYHYKXRDUCZUEXTYHUECDXRUGXTYLY
-      HXRXSDUHUIUJUKULXTXJUMUPUNUOZUQYABXCOZACOYBYDPZACOXEYFYNYOACYABCDURUSYNXD
-      AHCYNHVRXBAIXCAXCUTWQXAAWQAVRAWTKAWRWSAWOEVAAWPEVAVBVCVDZVEYNXRWPLZEWSJZK
-      LZNZIXCOXRWOLZXDYTYAIBXCWPXSLZYQXTYSXJWPXSXRVFUUBYRXIKUUBWSFEAIXSEFAXSUTZ
-      AFUTZGVGVHRSVIUUAYTXBIXCUUAYQWQYSXAXRWOWPVJUUAYRWTKUUAEWRWSAWOEVKVLRSVMVN
-      VOYBYDACVPVQXHYCXKCEFABGVSVTWAWNXBICOZHDOZXBIDOZHDOZPZXKUUHPXFXNWNUUFXKUU
-      HUUFYEWNXKUUFYAACOZBDOYEUUEUUJHBDUUEWOXRLZWREJZKLZNZACOWOXSLZUUJUUNXBAICU
-      UNIVRYPYQUUKWQUUMXAXRWPWOVFYQUULWTKYQEWSWRAWPEVKVHRSVOUUOUUNYAACUUOUUKXTU
-      UMXJUUOUUKXSXRLXTWOXSXRVJXSXRWBWCUUOUULXIKUUOUULFEJXIUUOWRFEAHXSEFUUCUUDG
-      VGVLFEWDWERSVMVNVIYABADCWFTYMWGWIXFUUEUUGPZHDOUUIXDUUPHDXBICDURUSUUEUUGHD
-      VPTXMUUHXKADEHIWHWJWAWKXPXDHXCOXGAXCEHIWHXDHCDURTXQXHXMPXKPXOXHXMXKWLXHXM
-      XKWMTWA $.
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.  $d y C $.
-    $( Expand a disjoint collection with any number of empty sets.
-       (Contributed by Mario Carneiro, 15-Nov-2016.) $)
-    disjss3 $p |- ( ( A C_ B /\ A. x e. ( B \ A ) C = (/) ) ->
-      ( Disj_ x e. A C <-> Disj_ x e. B C ) ) $=
-      ( vy wss c0 wceq cdif wa wdisj cv wcel wmo wal wi wn syl alimdv dfdisj2
-      wral df-ral w3a simp3r n0i simp3l eldif simp2 syl5bir mpand mt3d jca 3exp
-      syl5bi imp moim 3imtr4g disjss1 adantr impbid ) BCFZDGHZACBIZUAZJZABDKZAC
-      DKZVEALZBMZELZDMZJZANZEOVHCMZVKJZANZEOVFVGVEVMVPEVEVOVLPZAOZVMVPPVAVDVRVD
-      VHVCMZVBPZAOVAVRVBAVCUBVAVTVQAVAVTVOVLVAVTVOUCZVIVKWAVIVBWAVKVBQVAVTVNVKU
-      DZDVJUERWAVNVIQZVBVAVTVNVKUFVNWCJVSWAVBVHCBUGVAVTVOUHUIUJUKWBULUMSUNUOVOV
-      LAUPRSAEBDTAECDTUQVAVGVFPVDABCDURUSUT $.
-  $}
-
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -56620,17 +56241,1568 @@ $)
   ${
     $d x y z w $.
     $( Alternate definition of ` Swap ` as an operator abstraction.
-       (Contributed by ?who?, 23-Feb-2015.) $)
+       (Contributed by SF, 23-Feb-2015.) $)
     dfswap3 $p |- Swap = { <. <. x , y >. , z >. | z = <. y , x >. } $=
       ( vw cswap cv cop wceq wa wex copab coprab df-swap dfoprab2 eqtr4i ) EDFA
       FZBFZGHCFQPGHZIBJAJDCKRABCLDCABMRABCDNO $.
       $( [23-Feb-2015] $)
 
     $( Alternate definition of ` Swap ` as an operator mapping.  (Contributed
-       by ?who?, 23-Feb-2015.) $)
+       by SF, 23-Feb-2015.) $)
     dfswap4 $p |- Swap = ( x e. _V , y e. _V |-> <. y , x >. ) $=
       ( vz cswap cv cop wceq coprab cvv cmpt2 dfswap3 mpt2v eqtr4i ) DCEBEAEFZG
       ABCHABIINJABCKABCNLM $.
       $( [23-Feb-2015] $)
   $}
 
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Set construction lemmas
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c (x) $. $( Tail cross product $)
+  $c Fix $. $( Fixed points $)
+  $c Image $. $( Image function $)
+  $c Cup $. $( Cup function $)
+  $c Disj $. $( Disjointedness relationship. $)
+  $c AddC $. $( Cardinal sum function. $)
+  $c Ins2 $. $( Second insertion operation $)
+  $c Ins3 $. $( Third insertion operation $)
+  $c Ins4 $. $( Fourth insertion operation $)
+  $c SI_3 $. $( Triple singleton image. $)
+  $c Funs $. $( Class of functions. $)
+  $c Fns $. $( Function with domain relationship. $)
+  $c PProd $. $( Parallel product. $)
+  $c Cross $. $( Cross product function. $)
+  $c Pw1Fn $. $( The unit power class function. $)
+  $c FullFun $. $( The full function operation. $)
+
+  $( Extend the definition of a class to include the tail cross product. $)
+  ctxp $a class ( A (x) B ) $.
+
+  $( Extend the definition of a class to include the parallel product
+     operation. $)
+  cpprod $a class PProd ( A , B ) $.
+
+  $( Extend the definition of a class to include the fixed points of a
+     relationship. $)
+  cfix $a class Fix A $.
+
+  $( Extend the definition of a class to include the image function. $)
+  cimage $a class Image A $.
+
+  $( Extend the definition of a class to include the cup function. $)
+  ccup $a class Cup $.
+
+  $( Extend the definition of a class to include the disjoint relationship. $)
+  cdisj $a class Disj $.
+
+  $( Extend the definition of a class to include the cardinal sum function. $)
+  caddcfn $a class AddC $.
+
+  $( Extend the definition of a class to include the second insertion
+     operation. $)
+  cins2 $a class Ins2 A $.
+
+  $( Extend the definition of a class to include the third insertion
+     operation. $)
+  cins3 $a class Ins3 A $.
+
+  $( Extend the definition of a class to include the fourth insertion
+     operation. $)
+  cins4 $a class Ins4 A $.
+
+  $( Extend the definition of a class to include the triple singleton image. $)
+  csi3 $a class SI_3 A $.
+
+  $( Extend the definition of a class to include the set of all functions. $)
+  cfuns $a class Funs $.
+
+  $( Extend the definition of a class to include the function with domain
+     relationship. $)
+  cfns $a class Fns $.
+
+  $( Extend the definition of a class to include the cross product function. $)
+  ccross $a class Cross $.
+
+  $( Extend the definition of a class to include the unit power class
+     function. $)
+  cpw1fn $a class Pw1Fn $.
+
+  $( Extend the definition of a class to include the full function
+     operation. $)
+  cfullfun $a class FullFun F $.
+
+  $( Define the tail cross product of two classes.  Definition from [Holmes]
+     p. 40.  See ~ brtxp for membership. $)
+  df-txp $a |- ( A (x) B ) = ( ( `' 1st o. A ) i^i ( `' 2nd o. B ) ) $.
+
+  $( Define the parallel product operation. $)
+  df-pprod $a |- PProd ( A , B ) = ( ( A o. 1st ) (x) ( B o. 2nd ) ) $.
+
+  $( Define the fixed points of a relationship. $)
+  df-fix $a |- Fix A = ran ( A i^i _I ) $.
+
+  ${
+    $d x y $.
+    $( Define the cup function. $)
+    df-cup $a |- Cup = ( x e. _V , y e. _V |-> ( x u. y ) ) $.
+  $}
+
+  ${
+    $d x y $.
+    $( Define the relationship of all disjoint sets. $)
+    df-disj $a |- Disj = { <. x , y >. | ( x i^i y ) = (/) } $.
+  $}
+
+  ${
+    $d x y $.
+    $( Define the function representing cardinal sum. $)
+    df-addcfn $a |- AddC = ( x e. _V , y e. _V |-> ( x +c y ) ) $.
+  $}
+
+  $( Define the second insertion operation. $)
+  df-ins2 $a |- Ins2 A = ( _V (x) A ) $.
+
+  $( Define the third insertion operation. $)
+  df-ins3 $a |- Ins3 A = ( A (x) _V ) $.
+
+  $( Define the image function of a class. $)
+  df-image $a |- Image A =
+     ( ( _V X. _V ) \ ( ( Ins2 SSet (+) Ins3 ( SSet o. `' SI A ) ) " 1c ) ) $.
+
+  $( Define the fourth insertion operation. $)
+  df-ins4 $a |- Ins4 A =
+   ( `' ( 1st (x) ( ( 1st o. 2nd ) (x) ( ( 1st o. 2nd ) o. 2nd ) ) ) " A ) $.
+
+  $( Define the triple singleton image. $)
+  df-si3 $a |- SI_3 A =
+  ( ( SI 1st (x) ( SI ( 1st o. 2nd ) (x) SI ( 2nd o. 2nd ) ) ) " ~P1 A ) $.
+
+  $( Define the class of all functions. $)
+  df-funs $a |- Funs = { f | Fun f } $.
+
+  ${
+    $d f a $.
+    $( Define the function with domain relationship. $)
+    df-fns $a |- Fns = { <. f , a >. | f Fn a } $.
+  $}
+
+  ${
+    $d x y $.
+    $( Define the cross product function. $)
+    df-cross $a |- Cross = ( x e. _V , y e. _V |-> ( x X. y ) ) $.
+  $}
+
+  $( Define the function that takes a singleton to the unit power class of its
+     member.  This function is defined in such a way as to ensure
+     stratification. $)
+  df-pw1fn $a |- Pw1Fn = ( x e. 1c |-> ~P1 U. x ) $.
+
+  $( Define the full function operator.  This is a function over ` _V ` that
+     agrees with the function value of ` F ` at every point. $)
+  df-fullfun $a |- FullFun F =
+   ( ( ( _I o. F ) \ ( ~ _I o. F ) ) u.
+     ( ~ dom ( ( _I o. F ) \ ( ~ _I o. F ) ) X. { (/) } ) ) $.
+
+  ${
+    $d A x y z w $.  $d B x y z w $.  $d R x y z w $.
+    brsnsi.1 $e |- A e. _V $.
+    brsnsi.2 $e |- B e. _V $.
+    $( Binary relationship of singletons in a singleton image. 
+       (Contributed by SF, 9-Feb-2015.) $)
+    brsnsi $p |- ( { A } SI R { B } <-> A R B ) $=
+      ( vx vy vz vw csn wbr cv wceq w3a wex snex eqeq1 eqcom vex bitri csi brab
+      sneqb syl6bb 3anbi1d 2exbidv 3anbi2d df-si breq1 breq2 ceqsex2v ) AJZBJZC
+      UAZKFLZAMZGLZBMZUOUQCKZNZGOFOZABCKZHLZUOJZMZILZUQJZMZUSNZGOFOUPVHUSNZGOFO
+      VAHIULUMUNAPBPVCULMZVIVJFGVKVEUPVHUSVKVEULVDMZUPVCULVDQVLVDULMUPULVDRUOAF
+      SUCTUDUEUFVFUMMZVJUTFGVMVHURUPUSVMVHUMVGMZURVFUMVGQVNVGUMMURUMVGRUQBGSUCT
+      UDUGUFHIFGCUHUBUSAUQCKVBFGABDEUOAUQCUIUQBACUJUKT $.
+      $( [9-Feb-2015] $)
+
+    $( Ordered pair membership of singletons in a singleton image. 
+       (Contributed by SF, 9-Feb-2015.) $)
+    opsnelsi $p |- ( <. { A } , { B } >. e. SI R <-> <. A , B >. e. R ) $=
+      ( csn csi wbr cop wcel brsnsi df-br 3bitr3i ) AFZBFZCGZHABCHNOIPJABICJABC
+      DEKNOPLABCLM $.
+      $( [9-Feb-2015] $)
+
+  $}
+
+  ${
+    $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d R x $.  $d R y $.  $d x y $.
+    brsnsi1.1 $e |- A e. _V $.
+    $( Binary relationship of a singleton to an arbitrary set in a singleton
+       image. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    brsnsi1 $p |- ( { A } SI R B <-> E. x ( B = { x } /\ A R x ) ) $=
+      ( vy csn csi wbr cv wceq w3a wex wa brsi excom eqcom vex bitri exbii
+      sneqb 3anbi1i 3anass breq1 anbi2d ceqsexv ) BGZCDHIUGFJZGZKZCAJZGKZUHUKDI
+      ZLZAMFMZULBUKDIZNZAMZFAUGCDOUOUNFMZAMURUNFAPUSUQAUSUHBKZULUMNZNZFMUQUNVBF
+      UNUTULUMLVBUJUTULUMUJUIUGKUTUGUIQUHBFRUASUBUTULUMUCSTVAUQFBEUTUMUPULUHBUK
+      DUDUEUFSTSS $.
+      $( [9-Mar-2015] $)
+
+    $( Binary relationship of an arbitrary set to a singleton in a singleton
+       image. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    brsnsi2 $p |- ( B SI R { A } <-> E. x ( B = { x } /\ x R A ) ) $=
+      ( vy csn csi wbr cv wceq w3a wex wa brsi 3anass exbii 19.42v sneqb bitri
+      eqcom anbi1i breq2 ceqsexv anbi2i ) CBGZDHICAJZGKZUFFJZGKZUGUIDIZLZFMZAMU
+      HUGBDIZNZAMAFCUFDOUMUOAUMUHUJUKNZNZFMZUOULUQFUHUJUKPQURUHUPFMZNUOUHUPFRUS
+      UNUHUSUIBKZUKNZFMUNUPVAFUJUTUKUJBUIKUTBUIESBUIUATUBQUKUNFBEUIBUGDUCUDTUET
+      TQT $.
+      $( [9-Mar-2015] $)
+
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.  $d R x $.
+    brco1st.1 $e |- A e. _V $.
+    brco1st.2 $e |- B e. _V $.
+    $( Binary relationship of composition with ` 1st ` . 
+       (Contributed by SF, 9-Feb-2015.) $)
+    brco1st $p |- ( <. A , B >. ( R o. 1st ) C <-> A R C ) $=
+      ( vx cop c1st ccom wbr cv wa wex wceq brco opbr1st eqcom bitri anbi1i
+      exbii breq1 ceqsexv 3bitri ) ABHZCDIJKUEGLZIKZUFCDKZMZGNUFAOZUHMZGNACDKZG
+      UECDIPUIUKGUGUJUHUGAUFOUJABUFEFQAUFRSTUAUHULGAEUFACDUBUCUD $.
+      $( [9-Feb-2015] $)
+
+    $( Binary relationship of composition with ` 2nd ` . 
+       (Contributed by SF, 9-Feb-2015.) $)
+    brco2nd $p |- ( <. A , B >. ( R o. 2nd ) C <-> B R C ) $=
+      ( vx cop c2nd ccom wbr cv wa wex wceq brco opbr2nd eqcom bitri anbi1i
+      exbii breq1 ceqsexv 3bitri ) ABHZCDIJKUEGLZIKZUFCDKZMZGNUFBOZUHMZGNBCDKZG
+      UECDIPUIUKGUGUJUHUGBUFOUJABUFEFQBUFRSTUAUHULGBFUFBCDUBUCUD $.
+      $( [9-Feb-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d B y $.  $d B z $.  $d C x $.  $d C z $.  $d R t $.
+    $d R x $.  $d R y $.  $d R z $.  $d S t $.  $d S x $.  $d S y $.  $d S z $.
+    $d t x $.  $d t y $.  $d t z $.  $d x y $.  $d x z $.  $d y z $.
+
+    $( Trinary relationship over a tail cross product. 
+       (Contributed by SF, 13-Feb-2015.) $)
+    trtxp $p |- ( A ( R (x) S ) <. B , C >. <-> ( A R B /\ A S C ) ) $=
+      ( vy vz vt cop wbr cvv wcel wa brex wb cv breq2 wex weq 3bitri ctxp opexb
+      vx anbi2i sylib anim12i anandi sylibr wi wceq breq1 anbi12d bibi12d opeq1
+      imbi2d breq2d anbi1d opeq2 anbi2d c1st ccnv ccom c2nd cin breqi brin brco
+      df-txp ancom brcnv vex opbr1st equcom bitri exbii ceqsexv opbr2nd anbi12i
+      anbi1i vtocl2g vtoclg imp pm5.21nii ) ABCIZDEUAZJZAKLZBKLZCKLZMZMZABDJZAC
+      EJZMZWFWGWDKLZMWKAWDWENWOWJWGBCUBUDUEWNWGWHMZWGWIMZMWKWLWPWMWQABDNACENUFW
+      GWHWIUGUHWGWJWFWNOZWJUCPZWDWEJZWSBDJZWSCEJZMZOZUIWJWRUIUCAKWSAUJZXDWRWJXE
+      WTWFXCWNWSAWDWEUKXEXAWLXBWMWSABDUKWSACEUKULUMUOWSFPZGPZIZWEJZWSXFDJZWSXGE
+      JZMZOWSBXGIZWEJZXAXKMZOXDFGBCKKXFBUJZXIXNXLXOXPXHXMWSWEXFBXGUNUPXPXJXAXKX
+      FBWSDQUQUMXGCUJZXNWTXOXCXQXMWDWSWEXGCBURUPXQXKXBXAXGCWSEQUSUMXIWSXHUTVAZD
+      VBZVCVAZEVBZVDZJWSXHXSJZWSXHYAJZMXLWSXHWEYBDEVHVEWSXHXSYAVFYCXJYDXKYCWSHP
+      ZDJZYEXHXRJZMZHRHFSZYFMZHRXJHWSXHXRDVGYHYJHYHYGYFMYJYFYGVIYGYIYFYGXHYEUTJ
+      FHSYIYEXHUTVJXFXGYEFVKZGVKZVLFHVMTVSVNVOYFXJHXFYKYEXFWSDQVPTYDWSYEEJZYEXH
+      XTJZMZHRHGSZYMMZHRXKHWSXHXTEVGYOYQHYOYNYMMYQYMYNVIYNYPYMYNXHYEVCJGHSYPYEX
+      HVCVJXFXGYEYKYLVQGHVMTVSVNVOYMXKHXGYLYEXGWSEQVPTVRTVTWAWBWC $.
+      $( [13-Feb-2015] $)
+  $}
+
+  $( Ordered triple membership in a tail cross product. 
+     (Contributed by SF, 13-Feb-2015.) $)
+  oteltxp $p |- ( <. A , <. B , C >. >. e. ( R (x) S ) <->
+       ( <. A , B >. e. R /\ <. A , C >. e. S ) ) $=
+    ( cop ctxp wbr wa wcel trtxp df-br anbi12i 3bitr3i ) ABCFZDEGZHABDHZACEHZIA
+    OFPJABFDJZACFEJZIABCDEKAOPLQSRTABDLACELMN $.
+    $( [13-Feb-2015] $)
+
+  ${
+    $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d R x $.  $d R y $.  $d S x $.
+    $d S y $.  $d B w $.  $d B z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.
+    $d x z $.  $d y z $.
+    $( Binary relationship over a tail cross product. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    brtxp $p |- ( A ( R (x) S ) B <->
+       E. x E. y ( B = <. x , y >. /\ A R x /\ A S y ) ) $=
+      ( vz vw wbr cv c1st ccnv wa c2nd wex cop wceq ccom bitri weq ctxp w3a cin
+      brin anbi12i df-txp breqi eeanv 3bitr4i an4 ancom brcnv br1st br2nd eqtr2
+      brco vex opth simplbi eqcomd opeq1d wb eqeq1 adantl mpbird exlimivv opeq2
+      eqeq2d opeq1 bi2anan9 spc2ev anidms impbii 3bitr2i anbi2i 3anass 2exbii
+      syl ) CDEFUAZIZCAJZEIZWADKLZIZMZCBJZFIZWFDNLZIZMZMZBOAOZDWAWFPZQZWBWGUBZB
+      OAOCDWCERZWHFRZUCZIZWEAOZWJBOZMZVTWLWSCDWPIZCDWQIZMXBCDWPWQUDXCWTXDXAACDW
+      CEUPBCDWHFUPUESCDVSWREFUFUGWEWJABUHUIWKWOABWKWBWGMZWDWIMZMZWOWBWDWGWIUJXE
+      WNMWNXEMXGWOXEWNUKXFWNXEXFDWAGJZPZQZGOZDHJZWFPZQZHOZMXJXNMZHOGOZWNWDXKWIX
+      OWDDWAKIXKWADKULGDWAAUQZUMSWIDWFNIXOWFDNULHDWFBUQZUNSUEXJXNGHUHXQWNXPWNGH
+      XPWNXMWMQZXPXIXMQZXTDXIXMUOYAXLWAWFYAWAXLYAAHTGBTZWAXHXLWFURUSUTVAVRXNWNX
+      TVBXJDXMWMVCVDVEVFWNXQXPWNWNMGHWFWAXSXRYBXJWNHATZXNWNYBXIWMDXHWFWAVGVHYCX
+      MWMDXLWAWFVIVHVJVKVLVMVNVOWNWBWGVPUISVQS $.
+      $( [11-Feb-2015] $)
+  $}
+
+  $( The tail cross product of two sets is a set. 
+     (Contributed by SF, 9-Feb-2015.) $)
+  txpexg $p |- ( ( A e. V /\ B e. W ) -> ( A (x) B ) e. _V ) $=
+    ( wcel ctxp c1st ccnv ccom c2nd cin cvv df-txp 1stex cnvex coexg mpan 2ndex
+    wa inexg syl2an syl5eqel ) ACEZBDEZSABFGHZAIZJHZBIZKZLABMUCUFLEZUHLEZUILEUD
+    UELEUCUJGNOUEALCPQUGLEUDUKJROUGBLDPQUFUHLLTUAUB $.
+    $( [9-Feb-2015] $)
+
+  ${
+    txpex.1 $e |- A e. _V $.
+    txpex.2 $e |- B e. _V $.
+    $( The tail cross product of two sets is a set. 
+       (Contributed by SF, 9-Feb-2015.) $)
+    txpex $p |- ( A (x) B ) e. _V $=
+      ( cvv wcel ctxp txpexg mp2an ) AEFBEFABGEFCDABEEHI $.
+      $( [9-Feb-2015] $)
+  $}
+
+  $( A tail cross product is a relationship. 
+     (Contributed by SF, 24-Feb-2015.) $)
+  reltxp $p |- Rel ( A (x) B ) $=
+    ( ctxp wrel c1st ccnv ccom c2nd cin wss inss1 relco relss mp2 df-txp releqi
+    mpbir ) ABCZDEFZAGZHFBGZIZDZUBTJTDUCTUAKSALUBTMNRUBABOPQ $.
+    $( [24-Feb-2015] $)
+
+  ${
+    $d A a $.  $d a b $.  $d A b $.  $d a x $.  $d A x $.  $d a y $.  $d A y $.
+    $d B a $.  $d B b $.  $d b x $.  $d B x $.  $d b y $.  $d B y $.  $d C a $.
+    $d C b $.  $d C x $.  $d C y $.  $d x y $.
+    $( Restriction distributes over tail cross product. 
+       (Contributed by SF, 24-Feb-2015.) $)
+    restxp $p |- ( ( A (x) B ) |` C ) = ( ( A |` C ) (x) ( B |` C ) ) $=
+      ( vx vy va vb ctxp cres cv wbr w3a wex 3anass anbi1i bitri 3bitr4i 2exbii
+      wa brres relres reltxp cop wceq wcel anandir anbi2i anass brtxp 3anbi123i
+      19.41vv biid eqbrriv ) DEABHZCIZACIZBCIZHZUNCUAUPUQUBEJZFJZGJZUCUDZDJZUTA
+      KZVCVABKZLZVCCUEZSZGMFMZVBVDVGSZVEVGSZLZGMFMZVCUSUOKZVCUSURKZVHVLFGVBVDVE
+      SZVGSZSZVBVJVKSZSVHVLVQVSVBVDVEVGUFUGVHVBVPSZVGSVRVFVTVGVBVDVENOVBVPVGUHP
+      VBVJVKNQRVCUSUNKZVGSVFGMFMZVGSVNVIWAWBVGFGVCUSABUIOVCUSUNCTVFVGFGUKQVOVBV
+      CUTUPKZVCVAUQKZLZGMFMVMFGVCUSUPUQUIWEVLFGVBVBWCVJWDVKVBULVCUTACTVCVABCTUJ
+      RPQUM $.
+      $( [24-Feb-2015] $)
+  $}
+
+  ${
+    $d A x y $.  $d R x y $.
+    $( Membership in the fixed points of a relationship. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    elfix $p |- ( A e. Fix R <-> A R A ) $=
+      ( vx vy cfix wcel cvv wbr elex brex simpld cv eleq1 wceq wb breq12 cid wa
+      wex 3bitri anidms cin crn df-fix eleq2i elrn brin ancom ideq anbi1i exbii
+      weq vex bitri breq1 ceqsexv vtoclbg pm5.21nii ) ABEZFZAGFZAABHZAUSIVBVAVA
+      AABJKCLZUSFZVCVCBHZUTVBCAGVCAUSMVCANVEVBOVCAVCABPUAVDVCBQUBZUCZFZDCULZDLZ
+      VCBHZRZDSZVEUSVGVCBUDUEVHVJVCVFHZDSVMDVCVFUFVNVLDVNVKVJVCQHZRVOVKRVLVJVCB
+      QUGVKVOUHVOVIVKVJVCCUMZUIUJTUKUNVKVEDVCVPVJVCVCBUOUPTUQUR $.
+      $( [11-Feb-2015] $)
+  $}
+
+  $( The fixed points of a set form a set. 
+     (Contributed by SF, 11-Feb-2015.) $)
+  fixexg $p |- ( R e. V -> Fix R e. _V ) $=
+    ( wcel cfix cid cin crn cvv df-fix idex inexg mpan2 rnexg syl syl5eqel ) AB
+    CZADAEFZGZHAIPQHCZRHCPEHCSJAEBHKLQHMNO $.
+    $( [11-Feb-2015] $)
+
+  ${
+    fixex.1 $e |- R e. _V $.
+    $( The fixed points of a set form a set. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    fixex $p |- Fix R e. _V $=
+      ( cvv wcel cfix fixexg ax-mp ) ACDAECDBACFG $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    op1st2nd.1 $e |- A e. _V $.
+    op1st2nd.2 $e |- B e. _V $.
+    $( Express equality to an ordered pair via ` 1st ` and ` 2nd ` . 
+       (Contributed by SF, 12-Feb-2015.) $)
+    op1st2nd $p |- ( ( C 1st A /\ C 2nd B ) <-> C = <. A , B >. ) $=
+      ( vx c1st wbr c2nd wa cop wceq cv wex wi opbr2nd breq1 mpbiri eqid mpbir
+      br1st vex biimpi opeq2d eqeq1 imbi12d exlimiv sylbi opbr1st pm3.2i impbii
+      imp anbi12d ) CAGHZCBIHZJZCABKZLZUNUOURUNCAFMZKZLZFNUOUROZFCADUAVAVBFVAVB
+      UTBIHZUTUQLZOVCUSBAVCUSBLAUSBDFUBPUCUDVAUOVCURVDCUTBIQCUTUQUEUFRUGUHULURU
+      PUQAGHZUQBIHZJVEVFVEAALASABADEUITVFBBLBSABBDEPTUJURUNVEUOVFCUQAGQCUQBIQUM
+      RUK $.
+      $( [12-Feb-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.  $d R x $.
+    otelins2.1 $e |- B e. _V $.
+    $( Ordered triple membership in ` Ins2 ` . 
+       (Contributed by SF, 13-Feb-2015.) $)
+    otelins2 $p |- ( <. A , <. B , C >. >. e. Ins2 R <-> <. A , C >. e. R ) $=
+      ( vx cop cins2 wcel cvv elex opexb simplbi syl wceq opeq1 eleq1d vex opex
+      cv ctxp wa df-ins2 eleq2i oteltxp bitri mpbiran vtoclbg pm5.21nii ) ABCGZ
+      GZDHZIZAJIZACGZDIZUMUKJIZUNUKULKUQUNUJJIAUJLMNUPUOJIZUNUODKURUNCJIACLMNFT
+      ZUJGZULIZUSCGZDIZUMUPFAJUSAOZUTUKULUSAUJPQVDVBUODUSACPQVAUSBGJIZVCUSBFRES
+      VAUTJDUAZIVEVCUBULVFUTDUCUDUSBCJDUEUFUGUHUI $.
+      $( [13-Feb-2015] $)
+  $}
+
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.  $d R x $.
+    otelins3.1 $e |- C e. _V $.
+    $( Ordered triple membership in ` Ins3 ` . 
+       (Contributed by SF, 13-Feb-2015.) $)
+    otelins3 $p |- ( <. A , <. B , C >. >. e. Ins3 R <-> <. A , B >. e. R ) $=
+      ( vx cop cins3 wcel cvv elex opexb simplbi syl wceq opeq1 eleq1d vex opex
+      cv ctxp wa df-ins3 eleq2i oteltxp bitri mpbiran2 vtoclbg pm5.21nii ) ABCG
+      ZGZDHZIZAJIZABGZDIZUMUKJIZUNUKULKUQUNUJJIAUJLMNUPUOJIZUNUODKURUNBJIABLMNF
+      TZUJGZULIZUSBGZDIZUMUPFAJUSAOZUTUKULUSAUJPQVDVBUODUSABPQVAVCUSCGJIZUSCFRE
+      SVAUTDJUAZIVCVEUBULVFUTDUCUDUSBCDJUEUFUGUHUI $.
+      $( [13-Feb-2015] $)
+  $}
+
+
+  ${
+    $d A x y s t $.  $d B x y s t $.  $d R x y s t $.
+    brimage.1 $e |- A e. _V $.
+    brimage.2 $e |- B e. _V $.
+    $( Binary relationship over the image function. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    brimage $p |- ( A Image R B <-> B = ( R " A ) ) $=
+      ( vx vt vy cop csset wcel wn cv wbr wex bitri wa exbii 3bitri cvv csymdif
+      cins2 csi ccnv ccom c1c cima wb wal cimage wceq elima1c elsymdif otelins2
+      cins3 csn vex opelssetsn otelins3 brcnv brsnsi2 anbi1i 19.41v excom anass
+      bitr4i breq1 anbi2d ceqsexv brssetsn anbi2i opelco elima2 3bitr4i bibi12i
+      snex ancom xchbinx exnal 3bitrri con1bii cxp df-br df-image eleq2i opelxp
+      cdif mpbir2an eldif mpbiran dfcleq ) ABIZJUBZJCUCZUDZUEZUOZUAZUFUGZKZLZFM
+      ZBKZXBCAUGZKZUHZFUIZABCUJZNZBXDUKXGWTWTXBUPZWLIZWRKZFOXFLZFOXGLFWLWRULXLX
+      MFXLXKWMKZXKWQKZUHXFXKWMWQUMXNXCXOXEXNXJBIJKXCXJABJDUNXBBFUQZEURPXOXJAIWP
+      KZXEXJABWPEUSXJGMZWONZXRAJNZQZGOZHMZAKZYCXBCNZQZHOZXQXEYBXRYCUPZUKZYEQZXT
+      QZHOZGOYKGOZHOYGYAYLGYAYJHOZXTQYLXSYNXTXSXRXJWNNYNXJXRWNUTHXBXRCXPVAPVBYJ
+      XTHVCVFRYKGHVDYMYFHYMYIYEXTQZQZGOYEYHAJNZQZYFYKYPGYIYEXTVERYOYRGYHYCVPYIX
+      TYQYEXRYHAJVGVHVIYRYEYDQYFYQYDYEYCAHUQDVJVKYEYDVQPSRSGXJAJWOVLHXBCAVMVNPV
+      OVRRXFFVSVTWAXIWLXHKWLTTWBZWSWGZKZXAABXHWCXHYTWLCWDWEUUAWLYSKZXAUUBATKBTK
+      DEABTTWFWHWLYSWSWIWJSFBXDWKVN $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a p $.  $d a x $.  $d A x $.  $d a y $.  $d a z $.  $d b p $.
+    $d b x $.  $d B x $.  $d b y $.  $d B y $.  $d b z $.  $d B z $.  $d C x $.
+    $d C z $.  $d D a $.  $d D b $.  $d D p $.  $d D x $.  $d D y $.  $d D z $.
+    $d p x $.  $d p y $.  $d p z $.  $d R p $.  $d R x $.  $d R y $.  $d R z $.
+    $d x y $.  $d x z $.  $d y z $.
+    oqelins4.4 $e |- D e. _V $.
+    $( Ordered quadruple membership in ` Ins4 ` . 
+       (Contributed by SF, 13-Feb-2015.) $)
+    oqelins4 $p |- ( <. A , <. B , <. C , D >. >. >. e. Ins4 R
+       <-> <. A , <. B , C >. >. e. R ) $=
+      ( vx vp vb va cop wcel cvv wa bitri wceq opeq1 c1st wbr wex vy cins4 elex
+      vz opexb anbi2i simplbi anim2i sylbi sylib wb cv wi eleq1d bibi12d imbi2d
+      syl opeq2d opeq2 c2nd ccom ctxp ccnv cima df-ins4 eleq2i wrex brcnv brtxp
+      w3a weq 3ancoma 3anass vex opex opbr1st equcom anbi1i 3bitri exbii 19.42v
+      eqeq2d anbi1d exbidv ceqsexv ancom 3anrot brco2nd biid 3anbi123i ceqsex2v
+      2exbii rexbii elima risset 3bitr4i vtocl2g vtoclg imp pm5.21nii ) ABCDKZK
+      ZKZEUBZLZAMLZBMLZCMLZNZNZABCKZKZELZXEXCMLZXJXCXDUCXNXFXGXAMLZNZNZXJXNXFXB
+      MLZNXQAXBUEXRXPXFBXAUEUFOXPXIXFXOXHXGXOXHDMLCDUEUGUHUHUIUQXMXLMLZXJXLEUCX
+      SXFXKMLZNXJAXKUEXTXIXFBCUEUFOUJXFXIXEXMUKZXIGULZXBKZXDLZYBXKKZELZUKZUMXIY
+      AUMGAMYBAPZYGYAXIYHYDXEYFXMYHYCXCXDYBAXBQUNYHYEXLEYBAXKQUNUOUPYBUAULZUDUL
+      ZDKZKZKZXDLZYBYIYJKZKZELZUKYBBYKKZKZXDLZYBBYJKZKZELZUKYGUAUDBCMMYIBPZYNYT
+      YQUUCUUDYMYSXDUUDYLYRYBYIBYKQURUNUUDYPUUBEUUDYOUUAYBYIBYJQURUNUOYJCPZYTYD
+      UUCYFUUEYSYCXDUUEYRXBYBUUEYKXABYJCDQURURUNUUEUUBYEEUUEUUAXKYBYJCBUSURUNUO
+      YNYMRRUTVAZUUFUTVAZVBZVBZVCZEVDZLZYQXDUUKYMEVEVFHULZYMUUJSZHEVGUUMYPPZHEV
+      GUULYQUUNUUOHEUUNYMUUMUUISZUUMYBIULZKZPZYMUUQUUHSZNZITZUUOUUMYMUUIVHUUPUU
+      MJULZUUQKZPZYMUVCRSZUUTVJZITZJTJGVKZUVEUUTNZITZNZJTUVBJIYMUUMRUUHVIUVHUVL
+      JUVHUVIUVJNZITUVLUVGUVMIUVGUVFUVEUUTVJUVFUVJNUVMUVEUVFUUTVLUVFUVEUUTVMUVF
+      UVIUVJUVFGJVKUVIYBYLUVCGVNZYIYKUAVNZYJDUDVNZFVOZVOZVPGJVQOVRVSVTUVIUVJIWA
+      OVTUVKUVBJYBUVNUVIUVJUVAIUVIUVEUUSUUTUVIUVDUURUUMUVCYBUUQQWBWCWDWEVSUVBUU
+      QYOPZUUSNZITUUOUVAUVTIUVAUUTUUSNUVTUUSUUTWFUUTUVSUUSUUTUUQUUMUVCKZPZYMUUM
+      UUFSZYMUVCUUGSZVJZJTHTHUAVKZJUDVKZUWBVJZJTHTUVSHJYMUUQUUFUUGVIUWEUWHHJUWE
+      UWCUWDUWBVJUWHUWBUWCUWDWGUWCUWFUWDUWGUWBUWBUWCYLUUMRSUAHVKUWFYBYLUUMRUVNU
+      VRWHYIYKUUMUVOUVQVPUAHVQVSUWDYLUVCUUFSZUDJVKZUWGYBYLUVCUUFUVNUVRWHUWIYKUV
+      CRSUWJYIYKUVCRUVOUVQWHYJDUVCUVPFVPOUDJVQVSUWBWIWJOWLUWBUUQYIUVCKZPUVSHJYI
+      YJUVOUVPUWFUWAUWKUUQUUMYIUVCQWBUWGUWKYOUUQUVCYJYIUSWBWKVSVROVTUUSUUOIYOYI
+      YJUVOUVPVOUVSUURYPUUMUUQYOYBUSWBWEOVSWMHYMUUJEWNHYPEWOWPOWQWRWSWT $.
+      $( [13-Feb-2015] $)
+  $}
+
+  $( ` Ins2 ` preserves sethood. 
+     (Contributed by SF, 9-Mar-2015.) $)
+  ins2exg $p |- ( A e. V -> Ins2 A e. _V ) $=
+    ( wcel cins2 cvv ctxp df-ins2 vvex txpexg mpan syl5eqel ) ABCZADEAFZEAGEECL
+    MECHEAEBIJK $.
+    $( [9-Mar-2015] $)
+
+  $( ` Ins3 ` preserves sethood. 
+     (Contributed by SF, 22-Feb-2015.) $)
+  ins3exg $p |- ( A e. V -> Ins3 A e. _V ) $=
+    ( wcel cins3 cvv ctxp df-ins3 vvex txpexg mpan2 syl5eqel ) ABCZADAEFZEAGLEE
+    CMECHAEBEIJK $.
+    $( [22-Feb-2015] $)
+
+  ${
+    insex.1 $e |- A e. _V $.
+    $( ` Ins2 ` preserves sethood. 
+       (Contributed by SF, 12-Feb-2015.) $)
+    ins2ex $p |- Ins2 A e. _V $=
+      ( cvv wcel cins2 ins2exg ax-mp ) ACDAECDBACFG $.
+      $( [12-Feb-2015] $)
+
+    $( ` Ins3 ` preserves sethood. 
+       (Contributed by SF, 12-Feb-2015.) $)
+    ins3ex $p |- Ins3 A e. _V $=
+      ( cvv wcel cins3 ins3exg ax-mp ) ACDAECDBACFG $.
+      $( [12-Feb-2015] $)
+
+    $( ` Ins4 ` preserves sethood. 
+       (Contributed by SF, 12-Feb-2015.) $)
+    ins4ex $p |- Ins4 A e. _V $=
+      ( cins4 c1st c2nd ccom ctxp ccnv cima cvv df-ins4 1stex 2ndex txpex cnvex
+      coex imaex eqeltri ) ACDDEFZSEFZGZGZHZAIJAKUCAUBDUALSTDELMPZSEUDMPNNOBQR
+      $.
+      $( [12-Feb-2015] $)
+  $}
+
+
+  $( The image function of a set is a set. 
+     (Contributed by SF, 11-Feb-2015.) $)
+  imageexg $p |- ( A e. V -> Image A e. _V ) $=
+    ( wcel cimage cvv cxp csset cins2 csi ccnv ccom cins3 csymdif c1c cima cdif
+    vvex ssetex sylancr syl df-image siexg xpex ins2ex cnvexg ins3exg symdifexg
+    coexg 1cex imaexg sylancl difexg syl5eqel ) ABCZADEEFZGHZGAIZJZKZLZMZNOZPZE
+    AUAUNUQECZVCECZABUBVDUOECVBECZVEEEQQUCVDVAECZNECVFVDUPECUTECZVGGRUDVDUSECZV
+    HVDGECURECVIRUQEUEGUREEUHSUSEUFTUPUTEEUGSUIVANEEUJUKUOVBEEULSTUM $.
+    $( [11-Feb-2015] $)
+
+  ${
+    imageex.1 $e |- A e. _V $.
+    $( The image function of a set is a set. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    imageex $p |- Image A e. _V $=
+      ( cvv wcel cimage imageexg ax-mp ) ACDAECDBACFG $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    $d R x y z $.
+    $( Subset law for tail cross product. 
+       (Contributed by SF, 18-Feb-2015.) $)
+    txpssvvv $p |- ( R (x) S ) C_ ( _V X. ( _V X. _V ) ) $=
+      ( vx vy vz ctxp c1st ccnv ccom c2nd cvv cxp cv wbr wex cop opelxp exlimiv
+      wcel vex cin df-txp inss1 relco wa wceq brcnv br1st bitri mpbir2an mpbiri
+      eleq1 sylbi adantl opelco mpbiran 3imtr4i relssi sstri eqsstri ) ABFGHZAI
+      ZJHBIZUAZKKKLZLZABUBVDVBVFVBVCUCCDVBVFVAAUDCMZEMZANZVHDMZVANZUEZEOVJVESZV
+      GVJPZVBSVNVFSZVLVMEVKVMVIVKVJVHVGPZUFZCOZVMVKVJVHGNVRVHVJGUGCVJVHETZUHUIV
+      QVMCVQVMVPVESZVTVHKSVGKSZVSCTZVHVGKKQUJVJVPVEULUKRUMUNREVGVJVAAUOVOWAVMWB
+      VGVJKVEQUPUQURUSUT $.
+      $( [18-Feb-2015] $)
+  $}
+
+  ${
+    $d p x $.  $d p y $.  $d p z $.  $d R p $.  $d R x $.  $d R y $.  $d R z $.
+    $d S p $.  $d S x $.  $d S y $.  $d S z $.  $d x y $.  $d x z $.  $d y z $.
+    $( The domain of a tail cross product is the intersection of the domains of
+       its arguments. 
+       (Contributed by SF, 18-Feb-2015.) $)
+    dmtxp $p |- dom ( R (x) S ) = ( dom R i^i dom S ) $=
+      ( vx vp vy vz ctxp cdm cin cv wbr wex wa wcel cop exbii bitri bicomi eldm
+      vex wceq w3a brtxp exrot3 3anass 19.41v opex isseti biantrur elin anbi12i
+      2exbii eeanv 3bitr4i eqriv ) CABGZHZAHZBHZIZCJZDJZUPKZDLZVAEJZAKZVAFJZBKZ
+      MZFLELZVAUQNVAUTNZVDVBVEVGOZUAZVFVHUBZDLZFLELZVJVDVNFLELZDLVPVCVQDEFVAVBA
+      BUCPVNDEFUDQVOVIEFVOVMDLZVIMZVIVOVMVIMZDLVSVNVTDVMVFVHUEPVMVIDUFQVIVSVRVI
+      DVLVEVGETFTUGUHUIRQULQDVAUPSVKVAURNZVAUSNZMZVJVAURUSUJWCVFELZVHFLZMZVJWAW
+      DWBWEEVAASFVABSUKVJWFVFVHEFUMRQQUNUO $.
+      $( [18-Feb-2015] $)
+  $}
+
+  ${
+    $d F t $.  $d F x $.  $d F y $.  $d F z $.  $d R t $.  $d R x $.  $d R y $.
+    $d R z $.  $d s t $.  $d S t $.  $d s x $.  $d S x $.  $d s y $.  $d S y $.
+    $d s z $.  $d S z $.  $d t x $.  $d t y $.  $d t z $.  $d x y $.  $d x z $.
+    $d y z $.  $d F u $.  $d F v $.  $d R v $.  $d S u $.  $d S v $.  $d u v $.
+    $d u x $.  $d u z $.  $d v x $.  $d v y $.  $d v z $.
+    txpcofun.1 $e |- Fun F $.
+    $( Composition distributes over tail cross product in the case of a
+       function. 
+       (Contributed by SF, 18-Feb-2015.) $)
+    txpcofun $p |- ( ( R (x) S ) o. F ) = ( ( R o. F ) (x) ( S o. F ) ) $=
+      ( vx vy vz vv vu wceq cv wcel wb cvv wss cdm cop wex wbr wa ctxp ccom cxp
+      vt vs wral crn wrel relco relssdmrn ax-mp ssv rncoss txpssvvv rnss rnxpss
+      sstri xpss12 mp2an ssofeq wrex elxp2 rexv opeq2 eqeq2d rexxp exbii 3bitri
+      dmcoss opeldm sseldi df-br dmtxp inss1 eqsstri breldm sylbir trtxp anbi2i
+      cin anass bitr4i wfun wi funbrfv fvex breq1 ceqsexv eqcom funbrfvb syl5bb
+      cfv anbi1d exbidv syl5bbr bibi1d syl5ibcom adantrd pm5.32d opelco anbi12i
+      mpan syl5 oteltxp 19.41v 3bitr4i 3bitr4g pm5.21nii bibi12d mpbiri exlimiv
+      eleq1 exlimivv sylbi mprgbir ) ABUAZCUBZACUBZBCUBZUAZJZUDKZXQLZYBXTLZMZUD
+      NNNUCZUCZXQYGOXTYGOYAYEUDYGUFMXQXQPZXQUGZUCZYGXQUHXQYJOXPCUIXQUJUKYHNOYIY
+      FOYJYGOYHULYIXPUGZYFXPCUMYKYGUGZYFXPYGOYKYLOABUNXPYGUOUKNYFUPUQUQYHNYIYFU
+      RUSUQXRXSUNUDXQXTYGUTUSYBYGLZYBEKZFKZGKZQZQZJZGRZFRZERZYEYMYBYNUEKZQZJZUE
+      YFVAZENVAUUFERUUBEUEYBNYFVBUUFEVCUUFUUAEUUFYSGNVAZFNVAUUGFRUUAUUEYSUEFGNN
+      UUCYQJUUDYRYBUUCYQYNVDVEVFUUGFVCUUGYTFYSGVCVGVHVGVHYTYEEFYSYEGYSYEYRXQLZY
+      RXTLZMUUHYNCPZLZUUIUUHYHUUJYNXPCVIYNYQXQVJVKUUIYNYQXTSZUUKYNYQXTVLUULXTPZ
+      UUJYNUUMXRPZXSPZVTZUUJXRXSVMUUPUUNUUJUUNUUOVNACVIUQVOYNYQXTVPVKVQUUKYNHKZ
+      CSZUUQYQXPSZTZHRUURUUQYOASZTZYNIKZCSZUVCYPBSZTZIRZTZHRZUUHUUIUUKUUTUVHHUU
+      TUVBUUQYPBSZTZUUKUVHUUTUURUVAUVJTZTUVKUUSUVLUURUUQYOYPABVRVSUURUVAUVJWAWB
+      UUKUVBUVJUVGUUKUURUVJUVGMZUVAUURYNCWLZUUQJZUUKUVMCWCZUURUVOWDDYNUUQCWEUKU
+      UKUVNYPBSZUVGMUVOUVMUVQUVCUVNJZUVETZIRUUKUVGUVEUVQIUVNYNCWFUVCUVNYPBWGWHU
+      UKUVSUVFIUUKUVRUVDUVEUVRUVNUVCJZUUKUVDUVCUVNWIUVPUUKUVTUVDMDYNUVCCWJXBWKW
+      MWNWOUVOUVQUVJUVGUVNUUQYPBWGWPWQXCWRWSWKWNHYNYQXPCWTYNYOQXRLZYNYPQXSLZTUV
+      BHRZUVGTUUIUVIUWAUWCUWBUVGHYNYOACWTIYNYPBCWTXAYNYOYPXRXSXDUVBUVGHXEXFXGXH
+      YSYCUUHYDUUIYBYRXQXLYBYRXTXLXIXJXKXMXNXO $.
+      $( [18-Feb-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a c $.  $d a d $.  $d a x $.  $d a y $.  $d a z $.  $d b c $.
+    $d b d $.  $d b x $.  $d b y $.  $d b z $.  $d c d $.  $d c x $.  $d c y $.
+    $d c z $.  $d d x $.  $d d y $.  $d d z $.  $d F a $.  $d F b $.  $d F c $.
+    $d F d $.  $d F x $.  $d F y $.  $d F z $.  $d G a $.  $d G b $.  $d G c $.
+    $d G d $.  $d G x $.  $d G y $.  $d G z $.  $d x y $.  $d x z $.  $d y z $.
+    $( If ` F ` and ` G ` are functions, then their tail cross product is a
+       function over the intersection of their domains. 
+       (Contributed by SF, 24-Feb-2015.) $)
+    fntxp $p |- ( ( F Fn A /\ G Fn B ) -> ( F (x) G ) Fn ( A i^i B ) ) $=
+      ( vx vy vz va vb vc vd wfun cdm wceq wa wfn cv wbr wi wex cin weq wal cop
+      ctxp w3a anbi12i ee4anv bitr4i 3an6 bicomi fununiq 3expib im2anan9 eqeq12
+      brtxp opth syl6bb imbi2d biimprcd syl exp4a 3impd syl5bi exlimdvv alrimiv
+      alrimivv wrel reltxp dffun2 mpbiran sylibr dmtxp ineq12 syl5eq an4s df-fn
+      anim12i 3imtr4i ) CLZCMZANZOZDLZDMZBNZOZOCDUEZLZWHMZABUAZNZOZCAPZDBPZOWHW
+      KPVTWDWBWFWMVTWDOZWIWBWFOZWLWPEQZFQZWHRZWRGQZWHRZOZFGUBZSZGUCZFUCEUCZWIWP
+      XFEFWPXEGXCWSHQZIQZUDZNZWRXHCRZWRXIDRZUFZXAJQZKQZUDZNZWRXOCRZWRXPDRZUFZOZ
+      KTJTZITHTZWPXDXCXNITHTZYAKTJTZOYDWTYEXBYFHIWRWSCDUPJKWRXACDUPUGXNYAHIJKUH
+      UIWPYCXDHIWPYBXDJKYBXKXROZXLXSOZXMXTOZUFZWPXDYJYBXKXRXLXSXMXTUJUKWPYGYHYI
+      XDWPYGYHYIXDWPYHYIOZHJUBZIKUBZOZSZYGYKXDSZSVTYHYLWDYIYMVTXLXSYLWRXHXOCULU
+      MWDXMXTYMWRXIXPDULUMUNYGYPYOYGXDYNYKYGXDXJXQNYNWSXJXAXQUOXHXIXOXPUQURUSUT
+      VAVBVCVDVEVEVDVFVGWIWHVHXGCDVIEFGWHVJVKVLWQWJWAWEUAWKCDVMWAAWEBVNVOVRVPWN
+      WCWOWGCAVQDBVQUGWHWKVQVS $.
+      $( [24-Feb-2015] $)
+  $}
+
+  ${
+    $d A p x $.  $d B x p $.  $d C x p $.  $d R x p $.
+    otsnelsi3.1 $e |- A e. _V $.
+    otsnelsi3.2 $e |- B e. _V $.
+    otsnelsi3.3 $e |- C e. _V $.
+    $( Ordered triple membership in triple singleton image. 
+       (Contributed by SF, 12-Feb-2015.) $)
+    otsnelsi3 $p |- ( <. { A } , <. { B } , { C } >. >. e. SI_3 R <->
+      <. A , <. B , C >. >. e. R ) $=
+      ( vp vx csn cop c1st csi c2nd ccom ctxp wcel wa wbr cvv cv wrex wceq csi3
+      oteltxp df-br vex brsnsi bitr3i cxp wfo 2ndfo fofun ax-mp txpcofun eleq2i
+      wfun opsnelsi anbi12i 3bitr4ri opelco exancom trtxp op1st2nd bitri anbi1i
+      wex exbii opex breq2 ceqsexv 3bitri rexbii df-si3 elimapw1 risset 3bitr4i
+      cpw1 cima ) HUAZJZAJZBJZCJZKZKZKLMZLNOZMZNNOZMZPZPZQZHDUBZVTABCKZKZUCZHDU
+      BWFDUDZQZWQDQWNWRHDWNWAWBKWGQZWAWEKWLQZRVTALSZVTWPNSZRWRWAWBWEWGWLUEXAXCX
+      BXDXAWAWBWGSXCWAWBWGUFVTALHUGZEUHUIXBWAWCKWIQZWAWDKWKQZRZVTWPKZLNPZNOZQZX
+      DWAWCWDWIWKUEXIWHWJPZQVTBKWHQZVTCKWJQZRXLXHVTBCWHWJUEXKXMXILNNTTUJZTNUKNU
+      QULXPTNUMUNUOUPXFXNXGXOVTBWHXEFURVTCWJXEGURUSUTXLVTIUAZNSZXQWPXJSZRIVGXSX
+      RRZIVGZXDIVTWPXJNVAXRXSIVBYAXQWPUCZXRRZIVGXDXTYCIXSYBXRXSXQBLSXQCNSRYBXQB
+      CLNVCBCXQFGVDVEVFVHXRXDIWPBCFGVIZXQWPVTNVJVKVEVLVLUSAWPVTEYDVDVLVMWTWFWMD
+      VRVSZQWOWSYEWFDVNUPHWFWMDVOVEHWQDVPVQ $.
+      $( [12-Feb-2015] $)
+  $}
+
+  ${
+    si3ex.1 $e |- A e. _V $.
+    $( ` SI_3 ` preserves sethood. 
+       (Contributed by SF, 12-Feb-2015.) $)
+    si3ex $p |- SI_3 A e. _V $=
+      ( csi3 c1st csi c2nd ccom ctxp cpw1 cima cvv df-si3 1stex siex 2ndex coex
+      txpex pw1ex imaex eqeltri ) ACDEZDFGZEZFFGZEZHZHZAIZJKALUGUHUAUFDMNUCUEUB
+      DFMOPNUDFFOOPNQQABRST $.
+      $( [12-Feb-2015] $)
+  $}
+
+  ${
+    $d A y $.  $d R y $.  $d T y $.  $d x y $.
+    releqel.1 $e |- T e. _V $.
+    releqel.2 $e |- ( <. { y } , T >. e. R <-> y e. A ) $.
+    $( Lemma to turn a membership condition into an equality condition. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    releqel $p |- ( <. x , T >. e. ~ ( ( Ins3 SSet (+) Ins2 R ) " 1c ) <->
+     x = A ) $=
+      ( cv cop csset cins3 cins2 csymdif c1c wcel wn wb wex vex bitri cima wceq
+      wel wal csn elima1c elsymdif otelins3 opelssetsn otelins2 bibi12i xchbinx
+      ccompl exbii exnal 3bitrri con1bii opex elcompl dfcleq 3bitr4i ) AHZEIZJK
+      ZDLZMZNUAZOZPBAUCZBHZCOZQZBUDZVCVGUMOVBCUBVMVHVHVJUEZVCIZVFOZBRVLPZBRVMPB
+      VCVFUFVPVQBVPVOVDOZVOVEOZQVLVOVDVEUGVRVIVSVKVRVNVBIJOVIVNVBEJFUHVJVBBSASZ
+      UITVSVNEIDOVKVNVBEDVTUJGTUKULUNVLBUOUPUQVCVGVBEVTFURUSBVBCUTVA $.
+      $( [9-Mar-2015] $)
+  $}
+
+  ${
+    $d A x y z $.  $d ph z $.
+    releqopab.1 $e |- ( <. x , y >. e. A <-> ph ) $.
+    $( Equality condition for an ordered pair abstraction. 
+       (Contributed by SF, 18-Feb-2015.) $)
+    releqopab $p |- ( ( _V X. _V ) i^i A ) = { <. x , y >. | ph } $=
+      ( vz cvv cxp cin cv cop wceq wa wex cab copab wcel elvv anbi1i elin eleq1
+      19.41vv 3bitr4i syl6bb pm5.32i 2exbii bitri abbi2i df-opab eqtr4i ) GGHZD
+      IZFJZBJCJKZLZAMZCNBNZFOABCPUQFULUMULQZUOUMDQZMZCNBNZUQUMUKQZUSMUOCNBNZUSM
+      URVAVBVCUSBCUMRSUMUKDTUOUSBCUBUCUTUPBCUOUSAUOUSUNDQAUMUNDUAEUDUEUFUGUHABC
+      FUIUJ $.
+      $( [18-Feb-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d A z $.  $d R x $.  $d R y $.  $d R z $.  $d V y $.  $d V z $.
+    $d x y $.  $d x z $.  $d y z $.
+    releqmpt.1 $e |- ( <. { y } , x >. e. R <-> y e. V ) $.
+    $( Equality condition for a mapping. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    releqmpt $p |- ( ( A X. _V ) i^i
+      `' ~ ( ( Ins3 SSet (+) Ins2 R ) " 1c ) ) = ( x e. A |-> V ) $=
+      ( vz cvv cxp csset cins3 cins2 cin cv wcel wceq wa cop vex bitri c1c cima
+      csymdif ccompl ccnv copab cmpt inass xpss sseqin2 mpbi ineq1i elin opelxp
+      wss mpbiran2 opelcnv releqel anbi12i releqopab 3eqtr3i df-mpt eqtr4i ) CH
+      IZJKDLUCUAUBUDZUEZMZANZCOZGNZEPZQZAGUFZACEUGHHIZVDMZVFMVNVGMVGVMVNVDVFUHV
+      OVDVFVDVNUOVOVDPCHUIVDVNUJUKULVLAGVGVHVJRZVGOVPVDOZVPVFOZQVLVPVDVFUMVQVIV
+      RVKVQVIVJHOGSVHVJCHUNUPVRVJVHRVEOVKVHVJVEUQGBEDVHASFURTUSTUTVAAGCEVBVC $.
+      $( [9-Mar-2015] $)
+  $}
+
+  ${
+    $d A w $.  $d A x $.  $d A y $.  $d A z $.  $d ph w $.  $d w x $.
+    $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
+    releqoprab.1 $e |- ( <. <. x , y >. , z >. e. A <-> ph ) $.
+    $( Equality condition for an operator abstraction. 
+       (Contributed by SF, 13-Feb-2015.) $)
+    releqoprab $p |- ( ( ( _V X. _V ) X. _V ) i^i A ) =
+                { <. <. x , y >. , z >. | ph } $=
+      ( vw cvv cxp cin cv cop wceq wa wex cab coprab wcel elvvv anbi1i 19.41vvv
+      elin 3bitr4i eleq1 syl6bb pm5.32i 3exbii bitri abbi2i df-oprab eqtr4i ) H
+      HIHIZEJZGKZBKCKLDKLZMZANZDOCOBOZGPABCDQURGUMUNUMRZUPUNERZNZDOCOBOZURUNULR
+      ZUTNUPDOCOBOZUTNUSVBVCVDUTBCDUNSTUNULEUBUPUTBCDUAUCVAUQBCDUPUTAUPUTUOERAU
+      NUOEUDFUEUFUGUHUIABCDGUJUK $.
+      $( [13-Feb-2015] $)
+  $}
+
+  ${
+    $d A w $.  $d A x $.  $d A y $.  $d B w $.  $d B x $.  $d B y $.  $d R w $.
+    $d R x $.  $d R y $.  $d R z $.  $d V w $.  $d V z $.  $d w x $.  $d w y $.
+    $d w z $.  $d x y $.  $d x z $.  $d y z $.
+    releqmpt2.1 $e |- ( <. { z } , <. x , y >. >. e. R <-> z e. V ) $.
+    $( Equality condition for a mapping operation. 
+       (Contributed by SF, 13-Feb-2015.) $)
+    releqmpt2 $p |- ( ( ( A X. B ) X. _V ) \
+     ( ( Ins2 SSet (+) Ins3 R ) " 1c ) ) = ( x e. A , y e. B |-> V ) $=
+      ( vw cxp cvv csset cin cv wcel wa cop vex bitri wn cins2 csymdif c1c cima
+      cins3 ccompl wceq coprab cdif cmpt2 inass xpss xpss1 ax-mp sseqin2 ineq1i
+      wss mpbi elin opelxp mpbiran2 wel wal csn wex elima1c elsymdif opelssetsn
+      opex otelins2 otelins3 bibi12i xchbinx exbii exnal 3bitri con2bii elcompl
+      wb dfcleq 3bitr4ri anbi12i releqoprab 3eqtr3i df-dif df-mpt2 3eqtr4i ) DE
+      JZKJZLUAZFUEZUBZUCUDZUFZMZANZDOBNZEOPZINZGUGZPZABIUHZWIWMUIABDEGUJKKJZKJZ
+      WIMZWNMXDWOMWOXBXDWIWNUKXEWIWNWIXDUQZXEWIUGWHXCUQXFDEULWHXCKUMUNWIXDUOURU
+      PXAABIWOWPWQQZWSQZWOOXHWIOZXHWNOZPXAXHWIWNUSXIWRXJWTXIXGWHOZWRXIXKWSKOIRZ
+      XGWSWHKUTVAWPWQDEUTSCIVBZCNZGOZVSZCVCZXHWMOZTWTXJXRXQXRXNVDZXHQZWLOZCVEXP
+      TZCVEXQTCXHWLVFYAYBCYAXTWJOZXTWKOZVSXPXTWJWKVGYCXMYDXOYCXSWSQLOXMXSXGWSLW
+      PWQARBRVIZVJXNWSCRXLVHSYDXSXGQFOXOXSXGWSFXLVKHSVLVMVNXPCVOVPVQCWSGVTXHWMX
+      GWSYEXLVIVRWAWBSWCWDWIWMWEABIDEGWFWG $.
+      $( [13-Feb-2015] $)
+  $}
+
+  ${
+    mptexlem.1 $e |- A e. _V $.
+    mptexlem.2 $e |- R e. _V $.
+    $( Lemma for the existence of a mapping. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    mptexlem $p |- ( ( A X. _V ) i^i
+      `' ~ ( ( Ins3 SSet (+) Ins2 R ) " 1c ) ) e. _V $=
+      ( cvv cxp csset cins3 cins2 csymdif c1c cima ccompl ccnv vvex xpex ssetex
+      ins3ex ins2ex symdifex 1cex imaex complex cnvex inex ) AEFGHZBIZJZKLZMZNA
+      ECOPUJUIUHKUFUGGQRBDSTUAUBUCUDUE $.
+      $( [9-Mar-2015] $)
+  $}
+
+  ${
+    mpt2exlem.1 $e |- A e. _V $.
+    mpt2exlem.2 $e |- B e. _V $.
+    mpt2exlem.3 $e |- R e. _V $.
+    $( Lemma for the existence of a double mapping. 
+       (Contributed by SF, 13-Feb-2015.) $)
+    mpt2exlem $p |- ( ( ( A X. B ) X. _V ) \
+     ( ( Ins2 SSet (+) Ins3 R ) " 1c ) ) e. _V $=
+      ( cxp cvv csset cins2 cins3 csymdif cima xpex vvex ssetex ins2ex symdifex
+      c1c ins3ex 1cex imaex difex ) ABGZHGIJZCKZLZSMUDHABDENONUGSUEUFIPQCFTRUAU
+      BUC $.
+      $( [13-Feb-2015] $)
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( The value of the little cup function. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    cupvalg $p |- ( ( A e. V /\ B e. W ) -> ( A Cup B ) = ( A u. B ) ) $=
+      ( vx vy wcel cvv ccup co cun wceq elex unexg uneq1 df-cup ovmpt2g mpd3an3
+      cv uneq2 syl2an ) ACGAHGZBHGZABIJABKZLZBDGACMBDMUBUCUDHGUEABHHNEFABHHESZF
+      SZKUDIAUGKHUFAUGOUGBATEFPQRUA $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    $d x y z $.
+    $( The cup function is a function over the cross product of the
+       universe. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    fncup $p |- Cup Fn ( _V X. _V ) $=
+      ( vx vy vz ccup cvv cxp wfn cv wcel cun wceq coprab copab weu wex wmo vex
+      wa unex isset mpbi eu5 mpbir2an a1i fnoprab wb cmpt2 df-cup df-mpt2 eqtri
+      moeq df-xp fneq1 fneq2 sylan9bb mp2an mpbir ) DEEFZGZAHZEIBHZEIRZCHUTVAJZ
+      KZRABCLZVBABMZGZVBVDABCVDCNZVBVHVDCOZVDCPVCEIVIUTVAAQBQSCVCTUACVCUKVDCUBU
+      CUDUEDVEKZURVFKZUSVGUFDABEEVCUGVEABUHABCEEVCUIUJABEEULVJUSVEURGVKVGURDVEU
+      MURVFVEUNUOUPUQ $.
+      $( [11-Feb-2015] $)
+  $}
+
+  $( Binary relationship form of the cup function. 
+     (Contributed by SF, 11-Feb-2015.) $)
+  brcupg $p |- ( ( A e. V /\ B e. W ) -> ( <. A , B >. Cup C <-> C = ( A u. B
+      ) ) ) $=
+    ( wcel cvv cop ccup wbr cun wceq wb elex wa cfv cxp opelxp wfn fncup sylbir
+    fnbrfvb mpan co df-ov cupvalg syl5eqr eqeq1d eqcom syl6bb bitr3d syl2an ) A
+    DFAGFZBGFZABHZCIJZCABKZLZMBEFADNBENUMUNOZUOIPZCLZUPURUSUOGGQZFZVAUPMZABGGRI
+    VBSVCVDTVBUOCIUBUCUAUSVAUQCLURUSUTUQCUSUTABIUDUQABIUEABGGUFUGUHUQCUIUJUKUL
+    $.
+    $( [11-Feb-2015] $)
+
+  ${
+    brcup.1 $e |- A e. _V $.
+    brcup.2 $e |- B e. _V $.
+    $( Binary relationship form of the cup function. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    brcup $p |- ( <. A , B >. Cup C <-> C = ( A u. B ) ) $=
+      ( cvv wcel cop ccup wbr cun wceq wb brcupg mp2an ) AFGBFGABHCIJCABKLMDEAB
+      CFFNO $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    $d w x y z $.
+    $( The little cup function is a set. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    cupex $p |- Cup e. _V $=
+      ( vx vy vz ccup cvv cxp csset cins3 cun cv cop wcel wo wel vex opelssetsn
+      bitri elun vvex ssetex cins2 c1c cima cdif cmpt2 df-cup otelins3 otelins2
+      csymdif csn orbi12i 3bitr4i releqmpt2 eqtr4i ins3ex ins2ex unex mpt2exlem
+      eqeltri ) DEEFEFGUAZGHZUTIZHUIUBUCUDZEDABEEAJZBJZIZUEVCABUFABCEEVBVFCJZUJ
+      ZVDVEKKZVALZVIUTLZMCANZCBNZMVIVBLVGVFLVJVLVKVMVJVHVDKGLVLVHVDVEGBOZUGVGVD
+      COZAOZPQVKVHVEKGLVMVHVDVEGVPUHVGVEVOVNPQUKVIVAUTRVGVDVERULUMUNEEVBSSVAUTG
+      TUOGTUPUQURUS $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( The binary relationship form of the ` Disj ` relationship. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    brdisjg $p |- ( ( A e. V /\ B e. W ) ->
+             ( A Disj B <-> ( A i^i B ) = (/) ) ) $=
+      ( vx vy cv cin c0 wceq cdisj ineq1 eqeq1d ineq2 df-disj brabg ) EGZFGZHZI
+      JARHZIJABHZIJEFABCDKQAJSTIQARLMRBJTUAIRBANMEFOP $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    brdisj.1 $e |- A e. _V $.
+    brdisj.2 $e |- B e. _V $.
+    $( The binary relationship form of the ` Disj ` relationship. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    brdisj $p |- ( A Disj B <-> ( A i^i B ) = (/) ) $=
+      ( cvv wcel cdisj wbr cin c0 wceq wb brdisjg mp2an ) AEFBEFABGHABIJKLCDABE
+      EMN $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    $d x y z $.
+    $( The disjointedness relationship is a set. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    disjex $p |- Disj e. _V $=
+      ( vx vy vz cdisj cvv csset c1c cv wceq cop wa wex wcel wn 3bitr4i wel vex
+      opelssetsn bitri vvex cxp ctxp cima cdif cin c0 copab cab df-opab df-disj
+      elvv anbi1i eldif 19.41vv eleq1 notbid wral disj wrex csn oteltxp anbi12i
+      elima1c df-rex dfrex2 con2bii bitr2i syl6bb pm5.32i 2exbii abbi2i 3eqtr4i
+      exbii xpex ssetex txpex 1cex imaex difex eqeltri ) DEEUAZFFUBZGUCZUDZEAHZ
+      BHZUEUFIZABUGCHZWEWFJZIZWGKZBLALZCUHDWDWGABCUIABUJWLCWDWHWDMZWJWHWCMZNZKZ
+      BLALZWLWHWAMZWOKWJBLALZWOKWMWQWRWSWOABWHUKULWHWAWCUMWJWOABUNOWPWKABWJWOWG
+      WJWOWIWCMZNZWGWJWNWTWHWIWCUOUPWGCBPZNCWEUQZXACWEWFURWTXCWTXBCWEUSZXCNWHUT
+      ZWIJWBMZCLCAPZXBKZCLWTXDXFXHCXFXEWEJFMZXEWFJFMZKXHXEWEWFFFVAXIXGXJXBWHWEC
+      QZAQRWHWFXKBQRVBSVMCWIWBVCXBCWEVDOXBCWEVESVFVGVHVIVJSVKVLWAWCEETTVNWBGFFV
+      OVOVPVQVRVSVT $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    $d x y z w a b p t $.
+    $( The cardinal addition function exists. 
+       (Contributed by SF, 12-Feb-2015.) $)
+    addcfnex $p |- AddC e. _V $=
+      ( vx vy vz va vb vp cvv csset cdisj c1st c2nd ccup cv cop wcel wa wex wbr
+      wrex bitri caddcfn cxp cins2 cins3 ccom ctxp cima cin csi3 cins4 c1c cdif
+      csymdif cplc cmpt2 df-addcfn csn c0 wceq cun wel elin otelins2 opelssetsn
+      snex 3bitri oqelins4 otsnelsi3 otelins3 df-br brdisj 3bitr2i trtxp anbi2i
+      vex anass 3bitr4i brco br1st 19.42v bitr4i exbii excom exancom opex breq2
+      weq ceqsexv anbi1i 19.41v wb breq1 brco1st opbr2nd syl6bb exlimiv pm5.32i
+      sylbi opeq2 breq2d rexbii elima risset brcup anbi12i df-rex eladdc rexcom
+      op1st2nd elima1c releqmpt2 eqtr4i ssetex ins2ex disjex ins3ex 1stex 2ndex
+      vvex coex txpex cupex imaex inex si3ex ins4ex 1cex mpt2exlem eqeltri ) UA
+      GGUBGUBHUCZYJUCZYKIUDZJJUEZKJUEZKUFZUFZLUGZUHZUIZUJZUHZUKUGZUJZUHZUKUGZUD
+      UMUKUGULZGUAABGGAMZBMZUNZUOUUFABUPABCGGUUEUUICMZUQZUUGUUHNZNZUUEOZDMZEMZU
+      HURUSZUUJUUOUUPUTUSZPZDUUGSZEUUHSZUUJUUIOZUUPUQZUUMNZUUDOZEQEBVAZUUTPZEQU
+      UNUVAUVEUVGEUVEUVDYKOZUVDUUCOZPUVGUVDYKUUCVBUVHUVFUVIUUTUVHUVCUULNYJOUVCU
+      UHNHOUVFUVCUUKUULYJUUJVEZVCUVCUUGUUHHAVOZVCUUPUUHEVOZBVOZVDVFUVIUVCUUKUUG
+      NZNZUUBOZUUTUVCUUKUUGUUHUUBUVMVGUUOUQZUVONZUUAOZDQDAVAZUUSPZDQUVPUUTUVSUW
+      ADUVSUVRYKOZUVRYTOZPUWAUVRYKYTVBUWBUVTUWCUUSUWBUVQUVNNYJOUVQUUGNHOUVTUVQU
+      VCUVNYJUUPVEVCUVQUUKUUGHUVJVCUUOUUGDVOZUVKVDVFUWCUVQUVCUUKNNYSOUUOUUPUUJN
+      ZNZYROZUUSUVQUVCUUKUUGYSUVKVGUUOUUPUUJYRUWDUVLCVOZVHUWGUWFYLOZUWFYQOZPUUS
+      UWFYLYQVBUWIUUQUWJUURUWIUUOUUPNZIOUUOUUPIRUUQUUOUUPUUJIUWHVIUUOUUPIVJUUOU
+      UPUWDUVLVKVLUWJUWKUUJNZLOZUWKUUJLRUURFMZUWFYPRZFLSUWNUWLUSZFLSUWJUWMUWOUW
+      PFLUWOUWNUUOYMRZUWNUUPYNRZPZUWNUUJKRZPZUWNUWKJRZUWTPUWPUWQUWNUWEYORZPUWQU
+      WRUWTPZPUWOUXAUXCUXDUWQUWNUUPUUJYNKVMVNUWNUUOUWEYMYOVMUWQUWRUWTVPVQUWSUXB
+      UWTUWSBEWGZUWNUUOUUHNZJRZPBQZUXBUWSUXGBQZUWRPUXGUWRPZBQZUXHUWQUXIUWRUWQUW
+      NUUGJRZUUGUUOJRZPZAQUXLUUGUXFUSZPZBQZAQZUXIAUWNUUOJJVRUXNUXQAUXNUXLUXOBQZ
+      PUXQUXMUXSUXLBUUGUUOUWDVSVNUXLUXOBVTWAWBUXRUXPAQZBQUXIUXPABWCUXTUXGBUXTUX
+      OUXLPAQUXGUXLUXOAWDUXLUXGAUXFUUOUUHUWDUVMWEZUUGUXFUWNJWFWHTWBTVFWIUXGUWRB
+      WJUXKUXGUXEPZBQUXHUXJUYBBUXGUWRUXEUXGUWNUXFUUJNZUSZCQUWRUXEWKZCUWNUXFUYAV
+      SUYDUYECUYDUWRUYCUUPYNRZUXEUWNUYCUUPYNWLUYFUXFUUPKRUXEUXFUUJUUPKUYAUWHWMU
+      UOUUHUUPUWDUVMWNTWOWPWRWQWBUXGUXEBWDTVLUXGUXBBUUPUVLUXEUXFUWKUWNJUUHUUPUU
+      OWSWTWHTWIUWKUUJUWNUUOUUPUWDUVLWEUWHXIVFXAFUWFYPLXBFUWLLXCVQUWKUUJLVJUUOU
+      UPUUJUWDUVLXDVLXETVFXETWBDUVOUUAXJUUSDUUGXFVQTXETWBEUUMUUDXJUUTEUUHXFVQUV
+      BUUSEUUHSDUUGSUVAUUJUUGUUHDEXGUUSDEUUGUUHXHTWAXKXLGGUUEXSXSUUDUKYKUUCYJHX
+      MXNXNZUUBUUAUKYKYTUYGYSYRYLYQIXOXPYPLYMYOJJXQXQXTYNKKJXRXQXTXRYAYAYBYCYDY
+      EYFYDYGYCYFYDYGYCYHYI $.
+      $( [12-Feb-2015] $)
+  $}
+
+  ${
+    $d x y z $.
+    $( ` AddC ` is a function over all ordered pairs. 
+       (Contributed by SF, 2-Mar-2015.) $)
+    addcfn $p |- AddC Fn ( _V X. _V ) $=
+      ( vz vx vy caddcfn cvv cxp wfn wfun cdm wceq cv cplc coprab moeq funoprab
+      cmpt2 eqtri copab wcel vex df-addcfn mpt2v funeqi mpbir wex addcex isseti
+      wa pm3.2i 2th opabbii dmeqi dmoprab df-xp 3eqtr4i df-fn mpbir2an ) DEEFZG
+      DHZDIZURJUSAKBKZCKZLZJZBCAMZHVDBCAAVCNODVEDBCEEVCPVEBCUABCAVCUBQZUCUDVDAU
+      EZBCRZVAESZVBESZUHZBCRUTURVGVKBCVGVKAVCVAVBBTZCTZUFUGVIVJVLVMUIUJUKUTVEIV
+      HDVEVFULVDBCAUMQBCEEUNUODURUPUQ $.
+      $( [2-Mar-2015] $)
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    braddcfn.1 $e |- A e. _V $.
+    braddcfn.2 $e |- B e. _V $.
+    $( Binary relationship form of the ` AddC ` function. 
+       (Contributed by SF, 2-Mar-2015.) $)
+    braddcfn $p |- ( <. A , B >. AddC C <-> ( A +c B ) = C ) $=
+      ( vx vy cop caddcfn wbr cfv wceq cplc cvv cxp wfn wcel wb mp2an cv addcfn
+      opelxp mpbir2an fnbrfvb co addceq1 addceq2 df-addcfn addcex ovmpt2 eqtr3i
+      df-ov eqeq1i bitr3i ) ABHZCIJZUOIKZCLZABMZCLINNOZPUOUTQZURUPRUAVAANQZBNQZ
+      DEABNNUBUCUTUOCIUDSUQUSCABIUEZUQUSABIULVBVCVDUSLDEFGABNNFTZGTZMUSIAVFMVEA
+      VFUFVFBAUGFGUHABDEUIUJSUKUMUN $.
+      $( [2-Mar-2015] $)
+  $}
+
+  ${
+    $( The membership relationship is a proper class.  This theorem together
+       with ~ vvex demonstrates the basic idea behind New Foundations: since
+       ` x e. y ` is not a stratified relationship, then it does not have a
+       realization as a set of ordered pairs, but since ` x = x ` is
+       stratified, then it does have a realization as a set. 
+       (Contributed by SF, 20-Feb-2015.) $)
+    epprc $p |- -. _E e. _V $=
+      ( vx cep cvv wcel cv wnel cab wn ru df-nel mpbi cfix ccompl wel wbr elfix
+      epel bitri notbii vex elcompl 3bitr4i abbi2i complexg syl syl5eqelr mto
+      fixexg ) BCDZAEZUJFZAGZCDZULCFUMHAIULCJKUIULBLZMZCUKAUOUJUNDZHAANZHUJUODU
+      KUPUQUPUJUJBOUQUJBPAAQRSUJUNATUAUJUJJUBUCUIUNCDUOCDBCUHUNCUDUEUFUG $.
+      $( [20-Feb-2015] $)
+  $}
+
+  ${
+    $d f x y z p q $.
+    $( The class of all functions forms a set. 
+       (Contributed by SF, 18-Feb-2015.) $)
+    funsex $p |- Funs e. _V $=
+      ( vf vx vy vz vp vq c1st c2nd c1c csset cid cv wcel wn wa wbr df-br bitri
+      wex cop cfuns cvv cxp cpw ccnv ctxp csi3 cima cins4 cins2 cin cdif ccompl
+      cins3 wfun cab df-funs wrel weq wi wal wss vex elpw df-rel bitr4i elima1c
+      csn snex opex elcompl eldif otelins2 wrex wceq elin oqelins4 brcnv bitr3i
+      oteltxp otsnelsi3 trtxp ancom 3bitr3i op1st2nd 3bitri anbi12i sneq breq2d
+      exbii ceqsexv 3bitr4i rexbii elima risset opelssetsn otelins3 ideq notbii
+      sneqb exanali con2bii alex dffun3 abbi2i vvex xpex pwex 1stex cnvex 2ndex
+      eqtr4i txpex si3ex 1cex imaex ins4ex ins2ex inex ssetex idex ins3ex difex
+      complex eqeltri ) UAUBUBUCZUDZGUEZHGUFZUGZUFZIUHZUIZHUJZUJZUKZJUHZUJZKUNZ
+      ULZIUHZUMZIUHZUMZIUHZULZUBUAALZUOZAUPUUFAUQUUHAUUFUUGYGMZUUGUUEMZNZOUUGUR
+      ZBLZCLZUUGPZCDUSZUTCVAZDSZBVAZOUUGUUFMUUHUUIUULUUKUUSUUIUUGYFVBUULUUGYFAV
+      CZVDUUGVEVFUUKUURNZBSZNUUSUUJUVBUUJUUMVHZUUGTZUUDMZBSUVBBUUGUUDVGUVEUVABU
+      VEUVDUUCMZNUVAUVDUUCUVCUUGUUMVIZUUTVJZVKUVFUURUVFDLZVHZUVDTZUUBMZDSUURDUV
+      DUUBVGUVLUUQDUVKUUAMZNUUOUUPNZOZCSZNUVLUUQUVMUVPUVMUUNVHZUVKTZYTMZCSUVPCU
+      VKYTVGUVSUVOCUVSUVRYRMZUVRYSMZNZOUVOUVRYRYSVLUVTUUOUWBUVNUVTUVQUVDTZYQMZU
+      UMUUNTZVHZUUGTZJMZUUOUVQUVJUVDYQUVIVIZVMELZUWCYPPZEJVNUWJUWGVOZEJVNUWDUWH
+      UWKUWLEJUWKUWJUWCTZYPMZUWJUWFGPZUWJUUGHPZOZUWLUWJUWCYPQUWNUWMYMMZUWMYOMZO
+      UWQUWMYMYOVPUWRUWOUWSUWPUWRUWJUVQUVCTZTZYLMZUWOUWJUVQUVCUUGYLUUTVQUXBFLZV
+      HZUXATYKMZFSUXCUWEVOZUWJUXDGPZOZFSUWOFUXAYKVGUXEUXHFUXEUXDUWJTYHMZUXDUWTT
+      YJMZOUXGUXFOUXHUXDUWJUWTYHYJVTUXIUXGUXJUXFUXIUXDUWJYHPUXGUXDUWJYHQUXDUWJG
+      VRVSUXJUXCUUNUUMTZTYIMZUXCUUMGPZUXCUUNHPZOZUXFUXCUUNUUMYIFVCCVCZBVCZWAUXC
+      UXKYIPUXNUXMOUXLUXOUXCUUNUUMHGWBUXCUXKYIQUXNUXMWCWDUUMUUNUXCUXQUXPWEWFWGU
+      XGUXFWCWFWJUXGUWOFUWEUUMUUNUXQUXPVJZUXFUXDUWFUWJGUXCUWEWHWIWKWFRUWJUVDTYN
+      MUWJUUGTHMUWSUWPUWJUVCUUGHUVGVMUWJUVQUVDYNUUNVIVMUWJUUGHQWLWGRUWFUUGUWJUW
+      EVIUUTWEWFWMEUWCYPJWNEUWGJWOWLUWHUWEUUGMUUOUWEUUGUXRUUTWPUUMUUNUUGQVFWFUW
+      AUUPUWAUVQUVJTKMZUUPUVQUVJUVDKUVHWQUVQUVJKPUVQUVJVOUXSUUPUVQUVJUWIWRUVQUV
+      JKQUUNUVIUXPWTWDRWSWGRWJRWSUVKUUAUVJUVDUWIUVHVJVKUVPUUQUUOUUPCXAXBWLWJRWS
+      RWJRWSUURBXCVFWGUUGYGUUEVLBCDUUGXDWLXEXLYGUUEYFUBUBXFXFXGXHUUDIUUCUUBIUUA
+      YTIYRYSYQYPJYMYOYLYKIYHYJGXIXJYIHGXKXIXMXNXMXOXPXQYNHXKXRXRXSXTXPXRKYAYBY
+      CXOXPYDXOXPYDXOXPYCYE $.
+      $( [18-Feb-2015] $)
+  $}
+
+  ${
+    $d F f $.
+    elfuns.1 $e |- F e. _V $.
+    $( Membership in the set of all functions. 
+       (Contributed by SF, 23-Feb-2015.) $)
+    elfuns $p |- ( F e. Funs <-> Fun F ) $=
+      ( vf cv wfun cfuns funeq df-funs elab2 ) CDZEAECAFBJAGCHI $.
+      $( [23-Feb-2015] $)
+  $}
+
+  ${
+    $d f a $.
+    $( The function with domain relationship exists. 
+       (Contributed by SF, 23-Feb-2015.) $)
+    fnsex $p |- Fns e. _V $=
+      ( vf va cfns cvv cxp cfuns c1st cimage cin wfn copab df-fns wcel wceq vex
+      cv wa vvex xpex inex cop wfun cdm opelxp mpbiran2 elfuns wbr cima brimage
+      bitri dfdm4 eqeq2i bitr4i df-br eqcom 3bitr3i anbi12i elin 3bitr4i eqtr4i
+      df-fn releqopab funsex 1stex imageex eqeltri ) CDDEZFDEZGHZIZIZDCAPZBPZJZ
+      ABKVKABLVNABVJVLVMUAZVHMZVOVIMZQVLUBZVLUCZVMNZQVOVJMVNVPVRVQVTVPVLFMZVRVP
+      WAVMDMBOZVLVMFDUDUEVLAOZUFUJVLVMVIUGZVMVSNZVQVTWDVMGVLUHZNWEVLVMGWCWBUIVS
+      WFVMVLUKULUMVLVMVIUNVMVSUOUPUQVOVHVIURVLVMVAUSVBUTVGVJDDRRSVHVIFDVCRSGVDV
+      ETTVF $.
+      $( [23-Feb-2015] $)
+  $}
+
+  ${
+    $d A a b f $.  $d F a b f $.
+    brfns.1 $e |- F e. _V $.
+    $( Binary relationship form of ` Fns ` relationship. 
+       (Contributed by SF, 23-Feb-2015.) $)
+    brfns $p |- ( F Fns A <-> F Fn A ) $=
+      ( va vf vb cfns wbr cvv wcel wfn brex simprd cdm eqcomd dmexg ax-mp fneq2
+      fndm cv syl6eqel breq2 vex fneq1 df-fns brab vtoclbg pm5.21nii ) BAGHZAIJ
+      ZBAKZUIBIJZUJBAGLMUKABNZIUKUMAABSOULUMIJCBIPQUABDTZGHBUNKZUIUKDAIUNABGUBU
+      NABRETZFTZKBUQKUOEFBUNGCDUCUQUPBUDUQUNBREFUEUFUGUH $.
+      $( [23-Feb-2015] $)
+  $}
+
+  ${
+    $d a w $.  $d a x $.  $d A x $.  $d a y $.  $d A y $.  $d a z $.  $d B y $.
+    $d C w $.  $d C x $.  $d C y $.  $d C z $.  $d D w $.  $d D x $.  $d D y $.
+    $d R a $.  $d R w $.  $d R x $.  $d R y $.  $d R z $.  $d S a $.  $d S w $.
+    $d S x $.  $d S y $.  $d S z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.
+    $d x z $.  $d y z $.
+    $( A quadratic relationship over a parallel product. 
+       (Contributed by SF, 24-Feb-2015.) $)
+    qrpprod $p |- ( <. A , B >. PProd ( R , S ) <. C , D >. <->
+       ( A R C /\ B S D ) ) $=
+      ( vx vy va cop wbr cvv wcel wa wb cv wceq breq1 bibi12d bitri cpprod brex
+      vz vw opexb anbi12i sylib anim12i an4 sylibr wi opeq1 breq1d anbi1d opeq2
+      imbi2d anbi2d breq2 c1st ccom c2nd ctxp df-pprod breqi trtxp weq wex brco
+      breq2d vex opbr1st eqcom anbi1i exbii ceqsexv opbr2nd vtocl2g pm5.21nii
+      imp ) ABJZCDJZEFUAZKZALMZBLMZNZCLMZDLMZNZNZACEKZBDFKZNZWCVTLMZWALMZNWJVTW
+      AWBUBWNWFWOWIABUECDUEUFUGWMWDWGNZWEWHNZNWJWKWPWLWQACEUBBDFUBUHWDWEWGWHUIU
+      JWFWIWCWMOZWIGPZHPZJZWAWBKZWSCEKZWTDFKZNZOZUKWIAWTJZWAWBKZWKXDNZOZUKWIWRU
+      KGHABLLWSAQZXFXJWIXKXBXHXEXIXKXAXGWAWBWSAWTULUMXKXCWKXDWSACERUNSUPWTBQZXJ
+      WRWIXLXHWCXIWMXLXGVTWAWBWTBAUOUMXLXDWLWKWTBDFRUQSUPXAUCPZUDPZJZWBKZWSXMEK
+      ZWTXNFKZNZOXACXNJZWBKZXCXRNZOXFUCUDCDLLXMCQZXPYAXSYBYCXOXTXAWBXMCXNULVIYC
+      XQXCXRXMCWSEURUNSXNDQZYAXBYBXEYDXTWAXAWBXNDCUOVIYDXRXDXCXNDWTFURUQSXPXAXM
+      EUSUTZKZXAXNFVAUTZKZNZXSXPXAXOYEYGVBZKYIXAXOWBYJEFVCVDXAXMXNYEYGVETYFXQYH
+      XRYFIGVFZIPZXMEKZNZIVGZXQYFXAYLUSKZYMNZIVGYOIXAXMEUSVHYQYNIYPYKYMYPGIVFYK
+      WSWTYLGVJZHVJZVKWSYLVLTVMVNTYMXQIWSYRYLWSXMERVOTYHIHVFZYLXNFKZNZIVGZXRYHX
+      AYLVAKZUUANZIVGUUCIXAXNFVAVHUUEUUBIUUDYTUUAUUDHIVFYTWSWTYLYRYSVPWTYLVLTVM
+      VNTUUAXRIWTYSYLWTXNFRVOTUFTVQVQVSVR $.
+      $( [24-Feb-2015] $)
+  $}
+
+  $( The parallel product of two sets is a set. 
+     (Contributed by SF, 24-Feb-2015.) $)
+  pprodexg $p |- ( ( A e. V /\ B e. W ) -> PProd ( A , B ) e. _V ) $=
+    ( wcel wa cpprod c1st ccom c2nd cvv df-pprod 1stex coexg mpan2 2ndex txpexg
+    ctxp syl2an syl5eqel ) ACEZBDEZFABGAHIZBJIZRZKABLUAUCKEZUDKEZUEKEUBUAHKEUFM
+    AHCKNOUBJKEUGPBJDKNOUCUDKKQST $.
+    $( [24-Feb-2015] $)
+
+  ${
+    pprodex.1 $e |- A e. _V $.
+    pprodex.2 $e |- B e. _V $.
+    $( The parallel product of two sets is a set. 
+       (Contributed by SF, 24-Feb-2015.) $)
+    pprodex $p |- PProd ( A , B ) e. _V $=
+      ( cvv wcel cpprod pprodexg mp2an ) AEFBEFABGEFCDABEEHI $.
+      $( [24-Feb-2015] $)
+  $}
+
+  ${
+    $( Parallel product is a relationship. 
+       (Contributed by SF, 24-Feb-2015.) $)
+    relpprod $p |- Rel PProd ( A , B ) $=
+      ( cpprod wrel c1st ccom c2nd ctxp reltxp df-pprod releqi mpbir ) ABCZDAEF
+      ZBGFZHZDNOIMPABJKL $.
+      $( [24-Feb-2015] $)
+  $}
+
+  ${
+    $d A w $.  $d A x $.  $d A y $.  $d A z $.  $d B w $.  $d B x $.  $d B y $.
+    $d B z $.  $d R w $.  $d R x $.  $d R y $.  $d R z $.  $d S w $.  $d S x $.
+    $d S y $.  $d S z $.  $d w x $.  $d w y $.  $d w z $.  $d x y $.  $d x z $.
+    $d y z $.
+    $( Binary relationship over a parallel product. 
+       (Contributed by SF, 24-Feb-2015.) $)
+    brpprod $p |- ( A PProd ( R , S ) B <->
+       E. x E. y E. z E. w ( A = <. x , y >. /\ B = <. z , w >. /\
+         ( x R z /\ y S w ) ) ) $=
+      ( wbr c1st ccom cv cop w3a wex wa anbi1i 19.41v exbii bitri c2nd df-pprod
+      cpprod ctxp wceq breqi brtxp brco an32 br1st breq1 brco2nd syl6bb pm5.32i
+      3bitr2i bitr3i bitr2i 3bitri anbi2i 3anass 3ancoma 2exbii 19.42vv 3bitr4i
+      vex anass exrot4 ) EFGHUCZIEFGJKZHUAKZUDZIFCLZDLZMUEZEVLVIIZEVMVJIZNZDOCO
+      ZEALZBLZMZUEZVNVSVLGIZVTVMHIZPZNZDOCOBOAOZEFVHVKGHUBUFCDEFVIVJUGVRWFBOAOZ
+      DOCOWGVQWHCDVNVOVPPZPVNWBWEPZBOZAOZPZVQWHWIWLVNWIEVSJIZWCPZAOZVPPWOVPPZAO
+      WLVOWPVPAEVLGJUHQWOVPARWQWKAWQWNVPPZWCPWBWDPZBOZWCPZWKWNWCVPUIWRWTWCWRWBB
+      OZVPPWBVPPZBOWTWNXBVPBEVSAVEZUJQWBVPBRXCWSBWBVPWDWBVPWAVMVJIWDEWAVMVJUKVS
+      VTVMHXDBVEULUMUNSUOQWKWSWCPZBOXAWJXEBWJWBWCPWDPXEWBWCWDVFWBWCWDUIUPSWSWCB
+      RUQURSUOUSVNVOVPUTWHVNWJPZBOAOWMWFXFABWFVNWBWENXFWBVNWEVAVNWBWEUTTVBVNWJA
+      BVCTVDVBWFCDABVGTUR $.
+      $( [24-Feb-2015] $)
+  $}
+
+  ${
+    $d A a $.  $d a b $.  $d A b $.  $d a c $.  $d A c $.  $d a d $.  $d A d $.
+    $d a x $.  $d A x $.  $d a y $.  $d A y $.  $d B a $.  $d B b $.  $d b c $.
+    $d B c $.  $d b d $.  $d B d $.  $d b x $.  $d B x $.  $d b y $.  $d B y $.
+    $d c d $.  $d c x $.  $d c y $.  $d d x $.  $d d y $.  $d x y $.
+    $( A subset law for parallel product. 
+       (Contributed by SF, 24-Feb-2015.) $)
+    pprodss4v $p |- PProd ( A , B ) C_ ( ( _V X. _V ) X. ( _V X. _V ) ) $=
+      ( vx vy va vb vc vd cvv cxp cop wcel wal wceq wbr wex vex opelxp mpbir2an
+      cv cpprod wss wi wrel wb relpprod ssrel ax-mp wa w3a brpprod df-br bitr3i
+      opeq12 syl6eqel 3adant3 exlimivv sylbir ax-gen mpgbir ) ABUAZIIJZVBJZUBZC
+      TZDTZKZVALZVGVCLZUCZDMZCVAUDVDVKCMUEABUFCDVAVCUGUHVJDVHVEETZFTZKZNZVFGTZH
+      TZKZNZVLVPAOVMVQBOUIZUJZHPGPZFPEPZVIWCVEVFVAOVHEFGHVEVFABUKVEVFVAULUMWBVI
+      EFWAVIGHVOVSVIVTVOVSUIVGVNVRKZVCVEVNVFVRUNWDVCLVNVBLZVRVBLZWEVLILVMILEQFQ
+      VLVMIIRSWFVPILVQILGQHQVPVQIIRSVNVRVBVBRSUOUPUQUQURUSUT $.
+      $( [24-Feb-2015] $)
+  $}
+
+  ${
+    $d A a $.  $d a b $.  $d A b $.  $d a c $.  $d A c $.  $d a d $.  $d A d $.
+    $d a x $.  $d A x $.  $d B a $.  $d B b $.  $d b c $.  $d B c $.  $d b d $.
+    $d B d $.  $d b x $.  $d B x $.  $d c d $.  $d c x $.  $d d x $.  $d a t $.
+    $d A t $.  $d a u $.  $d A u $.  $d b t $.  $d B t $.  $d b u $.  $d B u $.
+    $d c t $.  $d c u $.  $d d t $.  $d d u $.  $d t u $.  $d t x $.  $d u x $.
+    $( The domain of a parallel product. 
+       (Contributed by SF, 24-Feb-2015.) $)
+    dmpprod $p |- dom PProd ( A , B ) = ( dom A X. dom B ) $=
+      ( va vb vx vc vd vt vu cdm cxp cvv wss cv cop wbr wa wex vex bitri cpprod
+      wrel pprodss4v dmss ax-mp dmxpss sstri relxp relss mp2 wceq isseti 19.41v
+      opex mpbiran 2exbii wcel df-br eldm w3a brpprod 3anass eqcom opth 19.42vv
+      weq anbi1i df-3an bicomi breq1 anbi1d anbi2d 2exbidv ceqsex2v exrot3 brxp
+      exbii eeanv anbi12i bitr4i 3bitr4i eqbrriv ) CDABUAZJZAJZBJZKZWDLLKZMWHUB
+      WDUBWDWHWHKZJZWHWCWIMWDWJMABUCWCWIUDUEWHWHUFUGLLUHWDWHUIUJWEWFUHENZFNZGNZ
+      OZUKZCNZWLAPZDNZWMBPZQZQZERZGRFRZWTGRFRZWPWRWDPZWPWRWGPZXBWTFGXBWOERWTEWN
+      WLWMFSGSUNULWOWTEUMUOUPXEWPWROZWDUQZXCWPWRWDURXHXGWKWCPZERZXCEXGWCUSXJXAG
+      RFRZERXCXIXKEXIXGHNZINZOZUKZWOXLWLAPZXMWMBPZQZUTZGRFRZIRHRZXKHIFGXGWKABVA
+      YAHCVFZIDVFZWOXRQZGRFRZUTZIRHRXKXTYFHIXTYBYCQZYDQZGRFRZYFXSYHFGXSXOYDQYHX
+      OWOXRVBXOYGYDXOXNXGUKYGXGXNVCXLXMWPWRVDTVGTUPYIYGYEQZYFYGYDFGVEYFYJYBYCYE
+      VHVITTUPYEWOWQXQQZQZGRFRXKHIWPWRCSDSYBYDYLFGYBXRYKWOYBXPWQXQXLWPWLAVJVKVL
+      VMYCYLXAFGYCYKWTWOYCXQWSWQXMWRWMBVJVLVLVMVNTTVQXAEFGVOTTTXFWPWEUQZWRWFUQZ
+      QZXDWPWRWEWFVPXDWQFRZWSGRZQYOWQWSFGVRYMYPYNYQFWPAUSGWRBUSVSVTVTWAWB $.
+      $( [24-Feb-2015] $)
+  $}
+
+  $( The converse of a parallel product. 
+     (Contributed by SF, 24-Feb-2015.) $)
+  cnvpprod $p |- `' PProd ( A , B ) = PProd ( `' A , `' B ) $=
+    ( c1st ccnv ccom c2nd cin cpprod cnvco wrel wceq cvv wfo wf fof frel dfrel2
+    mp2b mpbi eqtri cnvin cxp 1stfo coeq12i coass 3eqtri 2ndfo ineq12i df-pprod
+    ctxp df-txp cnveqi 3eqtr4i ) CDZACEZEZFDZBFEZEZGZDZUNADZCEZEZUQBDZFEZEZGZAB
+    HZDVBVEHZVAUPDZUSDZGVHUPUSUAVKVDVLVGVKUODZUNDZEUNVBEZCEVDUNUOIVMVOVNCACICJZ
+    VNCKLLUBZLCMVQLCNVPUCVQLCOVQLCPRCQSUDUNVBCUEUFVLURDZUQDZEUQVEEZFEVGUQURIVRV
+    TVSFBFIFJZVSFKVQLFMVQLFNWAUGVQLFOVQLFPRFQSUDUQVEFUEUFUHTVIUTVIUOURUJUTABUIU
+    OURUKTULVJVCVFUJVHVBVEUIVCVFUKTUM $.
+    $( [24-Feb-2015] $)
+
+  $( The range of a parallel product. 
+     (Contributed by SF, 24-Feb-2015.) $)
+  rnpprod $p |- ran PProd ( A , B ) = ( ran A X. ran B ) $=
+    ( cpprod ccnv cdm cxp cnvpprod dmeqi dmpprod eqtri dfrn4 xpeq12i 3eqtr4i
+    crn ) ABCZDZEZADZEZBDZEZFZONANZBNZFQRTCZEUBPUEABGHRTIJOKUCSUDUAAKBKLM $.
+    $( [24-Feb-2015] $)
+
+  ${
+    $d A a $.  $d a b $.  $d A b $.  $d a c $.  $d A c $.  $d a d $.  $d A d $.
+    $d a e $.  $d A e $.  $d a f $.  $d A f $.  $d a g $.  $d A g $.  $d a h $.
+    $d A h $.  $d a x $.  $d A x $.  $d a y $.  $d A y $.  $d a z $.  $d A z $.
+    $d B a $.  $d B b $.  $d b c $.  $d B c $.  $d b d $.  $d B d $.  $d b e $.
+    $d B e $.  $d b f $.  $d B f $.  $d b g $.  $d B g $.  $d b h $.  $d B h $.
+    $d b x $.  $d B x $.  $d b y $.  $d B y $.  $d b z $.  $d B z $.  $d c d $.
+    $d c e $.  $d c f $.  $d c g $.  $d c h $.  $d c x $.  $d c y $.  $d c z $.
+    $d d e $.  $d d f $.  $d d g $.  $d d h $.  $d d x $.  $d d y $.  $d d z $.
+    $d e f $.  $d e g $.  $d e h $.  $d e x $.  $d e y $.  $d e z $.  $d F a $.
+    $d F b $.  $d F c $.  $d F d $.  $d F e $.  $d F f $.  $d f g $.  $d F g $.
+    $d f h $.  $d F h $.  $d f x $.  $d F x $.  $d f y $.  $d F y $.  $d f z $.
+    $d F z $.  $d G a $.  $d G b $.  $d G c $.  $d G d $.  $d G e $.  $d G f $.
+    $d G g $.  $d g h $.  $d G h $.  $d g x $.  $d G x $.  $d g y $.  $d G y $.
+    $d g z $.  $d G z $.  $d h x $.  $d h y $.  $d h z $.  $d x y $.  $d x z $.
+    $d y z $.
+    $( Functionhood law for parallel product. 
+       (Contributed by SF, 24-Feb-2015.) $)
+    fnpprod $p |- ( ( F Fn A /\ G Fn B ) -> PProd ( F , G ) Fn ( A X. B ) ) $=
+      ( vy vz va vb vc vd ve vf vg vh wceq wa cv wbr wi wex wfun cdm cpprod cxp
+      vx wfn weq wal cop w3a ee4anv 2exbii brpprod anbi12i 3bitr4ri an4 fununiq
+      3expib im2anan9 syl5bi exp3a com23 wb breq1 bi2anan9 adantr syl6bb imbi2d
+      eqeq2 opth adantl imbi12d syl5ibrcom 3impd eqeq1 3anbi1d exlimdvv alrimiv
+      eqcom bitri alrimivv relpprod dffun2 mpbiran sylibr dmpprod xpeq12 syl5eq
+      imp3a wrel anim12i an4s df-fn 3imtr4i ) CUAZCUBZAOZPZDUAZDUBZBOZPZPCDUCZU
+      AZXCUBZABUDZOZPZCAUFZDBUFZPXCXFUFWOWSWQXAXHWOWSPZXDWQXAPZXGXKUEQZEQZXCRZX
+      MFQZXCRZPZEFUGZSZFUHZEUHUEUHZXDXKYAUEEXKXTFXRXMGQZHQZUIZOZXNIQZJQZUIZOZYC
+      YGCRZYDYHDRZPZUJZXMKQZLQZUIZOZXPMQZNQZUIZOZYOYSCRZYPYTDRZPZUJZPZNTMTZJTIT
+      ZLTKTZHTGTZXKXSYNJTITZUUFNTMTZPZLTKTZHTGTUULHTGTZUUMLTKTZPUUKXRUULUUMGHKL
+      UKUUJUUOGHUUIUUNKLYNUUFIJMNUKULULXOUUPXQUUQGHIJXMXNCDUMKLMNXMXPCDUMUNUOXK
+      UUJXSGHXKUUIXSKLXKUUHXSIJXKUUGXSMNXKYNUUFXSXKYFYJYMUUFXSSZXKYFYJYMUURSZXK
+      UUSYFYJPZYMKGUGZLHUGZPZUUBUUEUJZYIXPOZSZSXKUVDYMUVEXKUVCUUBUUEYMUVESZXKUV
+      CUUBUUEUVGSZXKUVHUVCUUBPZYCYSCRZYDYTDRZPZYMIMUGZJNUGZPZSZSXKYMUVLUVOXKYMU
+      VLUVOYMUVLPYKUVJPZYLUVKPZPXKUVOYKYLUVJUVKUPWOUVQUVMWSUVRUVNWOYKUVJUVMYCYG
+      YSCUQURWSYLUVKUVNYDYHYTDUQURUSUTVAVBUVIUUEUVLUVGUVPUVCUUEUVLVCUUBUVAUUCUV
+      JUVBUUDUVKYOYCYSCVDYPYDYTDVDVEVFUUBUVGUVPVCUVCUUBUVEUVOYMUUBUVEYIUUAOUVOX
+      PUUAYIVIYGYHYSYTVJVGVHVKVLVMVAVNVBUUTUURUVFYMUUTUUFUVDXSUVEYFUUFUVDVCYJYF
+      YRUVCUUBUUEYFYRYEYQOZUVCXMYEYQVOUVSYQYEOUVCYEYQVSYOYPYCYDVJVTVGVPVFYJXSUV
+      EVCYFXNYIXPVOVKVLVHVMVAVNWIVQVQVQVQUTVRWAXDXCWJYBCDWBUEEFXCWCWDWEXLXEWPWT
+      UDXFCDWFWPAWTBWGWHWKWLXIWRXJXBCAWMDBWMUNXCXFWMWN $.
+      $( [24-Feb-2015] $)
+  $}
+
+  $( The parallel product of two bijections is a bijection. 
+     (Contributed by SF, 24-Feb-2015.) $)
+  f1opprod $p |- ( ( F : A -1-1-onto-> C /\ G : B -1-1-onto-> D ) ->
+     PProd ( F , G ) : ( A X. B ) -1-1-onto-> ( C X. D ) ) $=
+    ( wfn ccnv wa cpprod cxp wf1o fnpprod cnvpprod fneq1i sylibr anim12i dff1o4
+    an4s anbi12i 3imtr4i ) EAGZEHZCGZIZFBGZFHZDGZIZIEFJZABKZGZUJHZCDKZGZIZACELZ
+    BDFLZIUKUNUJLUBUFUDUHUPUBUFIULUDUHIZUOABEFMUSUCUGJZUNGUOCDUCUGMUNUMUTEFNOPQ
+    SUQUEURUIACERBDFRTUKUNUJRUA $.
+    $( [24-Feb-2015] $)
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( The value of the cross product function. 
+       (Contributed by SF, 24-Feb-2015.) $)
+    ovcross $p |- ( ( A e. V /\ B e. W ) -> ( A Cross B ) = ( A X. B ) ) $=
+      ( vx vy wcel cvv ccross co cxp wceq xpexg cv xpeq1 xpeq2 df-cross ovmpt2g
+      elex mpd3an3 syl2an ) ACGAHGZBHGZABIJABKZLZBDGACSBDSUBUCUDHGUEABHHMEFABHH
+      ENZFNZKUDIAUGKHUFAUGOUGBAPEFQRTUA $.
+      $( [24-Feb-2015] $)
+  $}
+
+  ${
+    $d x y z $.
+    $( The domain of the cross product function. 
+       (Contributed by SF, 24-Feb-2015.) $)
+    dmcross $p |- dom Cross = ( _V X. _V ) $=
+      ( vz vx vy cv cxp wceq wex copab cvv wcel wa ccross cdm vex isseti pm3.2i
+      xpex 2th opabbii eqtri coprab cmpt2 df-cross mpt2v dmeqi dmoprab 3eqtr4i
+      df-xp ) ADBDZCDZEZFZAGZBCHZUIIJZUJIJZKZBCHLMZIIEUMUQBCUMUQAUKUIUJBNZCNZQO
+      UOUPUSUTPRSURULBCAUAZMUNLVALBCIIUKUBVABCUCBCAUKUDTUEULBCAUFTBCIIUHUG $.
+      $( [24-Feb-2015] $)
+
+    $( The cross product function is a function over ` ( _V X. _V ) ` 
+       (Contributed by SF, 24-Feb-2015.) $)
+    fncross $p |- Cross Fn ( _V X. _V ) $=
+      ( vz vx vy ccross cvv cxp wfn wfun cdm wceq cv coprab moeq funoprab cmpt2
+      df-cross mpt2v eqtri funeqi mpbir dmcross df-fn mpbir2an ) DEEFZGDHZDIUDJ
+      UEAKBKCKFZJZBCALZHUGBCAAUFMNDUHDBCEEUFOUHBCPBCAUFQRSTUADUDUBUC $.
+      $( [24-Feb-2015] $)
+  $}
+
+  ${
+    $( Binary relationship over the cross product function. 
+       (Contributed by SF, 24-Feb-2015.) $)
+    brcrossg $p |- ( ( A e. V /\ B e. W ) ->
+       ( <. A , B >. Cross C <-> C = ( A X. B ) ) ) $=
+      ( wcel wa ccross wceq cop wbr cxp cfv eqcom df-ov eqeq1i bitri cvv elex
+      co wb opelxp wfn fncross fnbrfvb mpan sylbir syl2an syl5bb ovcross eqeq2d
+      bitr3d ) ADFZBEFZGZCABHTZIZABJZCHKZCABLZIUQURHMZCIZUOUSUQUPCIVBCUPNUPVACA
+      BHOPQUMARFZBRFZVBUSUAZUNADSBESVCVDGURRRLZFZVEABRRUBHVFUCVGVEUDVFURCHUEUFU
+      GUHUIUOUPUTCABDEUJUKUL $.
+      $( [24-Feb-2015] $)
+  $}
+
+  ${
+    brcross.1 $e |- A e. _V $.
+    brcross.2 $e |- B e. _V $.
+    $( Binary relationship over the cross product function. 
+       (Contributed by SF, 24-Feb-2015.) $)
+    brcross $p |- ( <. A , B >. Cross C <-> C = ( A X. B ) ) $=
+      ( cvv wcel cop ccross wbr cxp wceq wb brcrossg mp2an ) AFGBFGABHCIJCABKLM
+      DEABCFFNO $.
+      $( [24-Feb-2015] $)
+  $}
+
+  ${
+    $d a b x y z $.
+    $( The function mapping ` x ` and ` y ` to their cross product is a set. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    crossex $p |- Cross e. _V $=
+      ( vx vy va vb cvv cxp csset c1st c2nd c1c cv cop wrex wex wa otelins2 vex
+      wcel 3bitri wbr ccross cins2 ccnv cin csi3 cins4 cima cins3 csymdif cmpt2
+      vz cdif df-cross wceq csn rexcom elxp2 wel elin snex opelssetsn otsnelsi3
+      oqelins4 df-br brcnv 3bitr2i mpbiran anbi12i op1st2nd bitri exbii elima1c
+      opelxp df-rex 3bitr4i 3bitr4ri releqmpt2 eqtr4i ssetex ins2ex 1stex cnvex
+      vvex 2ndex xpex inex si3ex ins4ex 1cex imaex mpt2exlem eqeltri ) UAEEFEFG
+      UBZWMUBZWNHUCZUBZEIUCZFZUDZUEZUFZUDZJUGZUFZUDZJUGZUHUIJUGULZEUAABEEAKZBKZ
+      FZUJXGABUMABUKEEXFXJUKKZCKZDKZLUNZDXIMCXHMXNCXHMZDXIMZXKXJRXKUOZXHXILZLZX
+      FRZXNCDXHXIUPCDXKXHXIUQXMUOZXSLZXERZDNDBURZXOOZDNXTXPYCYEDYCYBWNRZYBXDRZO
+      YEYBWNXDUSYFYDYGXOYFYAXRLWMRYAXILGRYDYAXQXRWMXKUTZPYAXHXIGAQZPXMXIDQZBQZV
+      ASYGYAXQXHLZLZXCRZXOYAXQXHXIXCYKVCXLUOZYMLZXBRZCNCAURZXNOZCNYNXOYQYSCYQYP
+      WNRZYPXARZOYSYPWNXAUSYTYRUUAXNYTYOYLLWMRYOXHLGRYRYOYAYLWMXMUTPYOXQXHGYHPX
+      LXHCQZYIVASUUAYOYAXQLLWTRXLXMXKLZLZWSRZXNYOYAXQXHWTYIVCXLXMXKWSUUBYJUKQVB
+      UUEUUDWPRZUUDWRRZOXKXLHTZXKXMITZOXNUUDWPWRUSUUFUUHUUGUUIUUFXLXKLWORXLXKWO
+      TUUHXLXMXKWOYJPXLXKWOVDXLXKHVEVFUUGUUCWQRZXMXKWQTUUIUUGXLERUUJUUBXLUUCEWQ
+      VMVGXMXKWQVDXMXKIVEVFVHXLXMXKUUBYJVISSVHVJVKCYMXBVLXNCXHVNVOVJVHVJVKDXSXE
+      VLXODXIVNVOVPVQVREEXFWCWCXEJWNXDWMGVSVTVTZXCXBJWNXAUUKWTWSWPWRWOHWAWBVTEW
+      QWCIWDWBWEWFWGWHWFWIWJWHWFWIWJWKWL $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    $d A x $.
+    pw1fnval.1 $e |- A e. _V $.
+    $( The value of the unit power class function. 
+       (Contributed by SF, 25-Feb-2015.) $)
+    pw1fnval $p |- ( Pw1Fn ` { A } ) = ~P1 A $=
+      ( vx csn c1c wcel cpw1fn cfv cpw1 wceq snel1c cv unieq unisn syl6eq pw1eq
+      cuni syl df-pw1fn pw1ex fvmpt ax-mp ) ADZEFUCGHAIZJABKCUCCLZQZIZUDEGUEUCJ
+      ZUFAJUGUDJUHUFUCQAUEUCMABNOUFAPRCSABTUAUB $.
+      $( [25-Feb-2015] $)
+  $}
+
+  ${
+    $d x y t $.
+    $( The unit power class function is a set. 
+       (Contributed by SF, 25-Feb-2015.) $)
+    pw1fnex $p |- Pw1Fn e. _V $=
+      ( vx vy vt cpw1fn c1c cvv csset cid cima cv csn cop wcel wex wceq wbr vex
+      wa bitri 1cex cxp cins3 ccnv csi ctxp cpw1 cins2 csymdif ccompl cuni cmpt
+      cin df-pw1fn oteltxp snex ideq df-br eqcom sneqb 3bitr3i wel brsnsi brcnv
+      brssetsn opelssetsn anbi12i exbii elima1c eluni 3bitr4i elimapw11c df-rex
+      ancom wrex elpw1 releqmpt eqtr4i idex ssetex cnvex siex txpex imaex pw1ex
+      mptexlem eqeltri ) DEFUAGUBHGUCZUDZGUEZEIZUEZEUFZIZUGUHEIUIUCULZFDAEAJZUJ
+      ZUFZUKWNAUMABEWMWQCJZKZKZBJZKZWOLZLWKMZCNWRWPMZXAWSOZRZCNZXCWMMXAWQMZXDXG
+      CXDXFXERZXGXDWTXBLHMZWTWOLZWJMZRXJWTXBWOHWJUNXKXFXMXEWTXBHPWTXBOZXKXFWTXB
+      XAUOUPWTXBHUQXNXBWTOXFWTXBURXAWSBQZUSSUTXBXLLWIMZBNCBVAZBAVAZRZBNXMXEXPXS
+      BXPXBWTLWHMZXCGMZRXSXBWTWOWHGUNXTXQYAXRXBWTWHPXAWSWGPZXTXQXAWSWGXOWRUOVBX
+      BWTWHUQYBWSXAGPXQXAWSGVCWRXACQXOVDSUTXAWOXOAQVEVFSVGBXLWIVHBWRWOVIVJVFSXF
+      XEVMSVGCXCWKVKXIXFCWPVNXHCXAWPVOXFCWPVLSVJVPVQEWMTWKWLHWJVRWIEWHGWGGVSVTW
+      AVSWBTWCWBETWDWCWEWF $.
+      $( [25-Feb-2015] $)
+  $}
+
+  ${
+    $( Functionhood statement for ` Pw1Fn ` 
+       (Contributed by SF, 25-Feb-2015.) $)
+    fnpw1fn $p |- Pw1Fn Fn 1c $=
+      ( vx cuni cpw1 cvv wcel cpw1fn c1c wfn df-pw1fn fnmpt vex uniex pw1ex a1i
+      cv mprg ) AOZBZCZDEZFGHAGAGSFDAIJTQGERQAKLMNP $.
+      $( [25-Feb-2015] $)
+  $}
+
+  ${
+    brpw1fn.1 $e |- A e. _V $.
+    $( Binary relationship form of ` Pw1Fn ` 
+       (Contributed by SF, 25-Feb-2015.) $)
+    brpw1fn $p |- ( { A } Pw1Fn B <-> B = ~P1 A ) $=
+      ( csn cpw1fn cfv wceq cpw1 wbr pw1fnval eqeq1i c1c wcel wb fnpw1fn snel1c
+      wfn fnbrfvb mp2an eqcom 3bitr3i ) ADZEFZBGZAHZBGUBBEIZBUEGUCUEBACJKELQUBL
+      MUDUFNOACPLUBBERSUEBTUA $.
+      $( [25-Feb-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d a x $.  $d a y $.  $d b x $.  $d b y $.  $d x y $.  $d x z $.
+    $d y z $.
+    $( ` Pw1Fn ` is a one-to-one function with domain ` 1c ` and range
+       ` ~P 1c ` . 
+       (Contributed by SF, 26-Feb-2015.) $)
+    pw1fnf1o $p |- Pw1Fn : 1c -1-1-onto-> ~P 1c $=
+      ( vx vy vz va vb c1c cpw1fn wceq cv cfv cpw1 wss wex cvv wa vex exbii csn
+      wcel el1c cpw wf1o wfn crn wi wral fnpw1fn cuni wrex df-pw1fn rnmpt sspw1
+      weq cab df1c2 sseq2i ssv biantrur 3bitr4i elpw df-rex anbi1i 19.41v excom
+      bitr4i unieq unisn syl6eq pw1eq eqeq2d ceqsexv bitri 3bitri abbi2i eqtr4i
+      snex syl anbi12i eeanv pw111 biimpi fveq2 pw1fnval eqeqan12d eqeq12 sneqb
+      a1i syl6bb 3imtr4d exlimivv sylbi rgen2a dff1o6 mpbir3an ) FFUAZGUBGFUCGU
+      DZWOHAIZGJZBIZGJZHZABUMZUEZBFUFAFUFUGWPWSWQUHZKZHZAFUIZBUNWOABFXEGAUJUKXG
+      BWOWSFLZWSCIZKZHZCMZWSWOSXGWSNKZLXINLZXKOZCMXHXLCWSNBPZULFXMWSUOUPXKXOCXN
+      XKXIUQURQUSWSFXPUTXGWQFSZXFOZAMWQXIRZHZXFOZCMZAMZXLXFAFVAXRYBAXRXTCMZXFOY
+      BXQYDXFCWQTVBXTXFCVCVEQYCYAAMZCMXLYAACVDYEXKCXFXKAXSXIVPXTXEXJWSXTXDXIHXE
+      XJHXTXDXSUHXIWQXSVFXICPVGVHXDXIVIVQVJVKQVLVMUSVNVOXCABFXQWSFSZOZWQDIZRZHZ
+      WSEIZRZHZOZEMDMZXCYGYJDMZYMEMZOYOXQYPYFYQDWQTEWSTVRYJYMDEVSVEYNXCDEYNYHKZ
+      YKKZHZDEUMZXAXBYTUUAUEYNYTUUAYHYKVTWAWGYJYMWRYRWTYSYJWRYIGJYRWQYIGWBYHDPZ
+      WCVHYMWTYLGJYSWSYLGWBYKEPWCVHWDYNXBYIYLHUUAWQYIWSYLWEYHYKUUBWFWHWIWJWKWLA
+      BFWOGWMWN $.
+      $( [26-Feb-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d F x $.  $d F y $.  $d x y $.
+    $( Lemma for ~ fnfullfun .  Binary relationship over part one of the full
+       function definition. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    fnfullfunlem1 $p |- ( A ( ( _I o. F ) \ ( ~ _I o. F ) ) B <->
+        ( A F B /\ A. x ( A F x -> x = B ) ) ) $=
+      ( vy cid ccom wbr cvv wcel cv wceq wi wal wa brex simprd wb breq2 wn cdif
+      ccompl adantr weq eqeq2 imbi2d albidv anbi12d bibi12d brcoi1 wex brco cop
+      brdif df-br opex elcompl ideq bitr3i xchbinx bitri anbi2i exanali 3bitrri
+      vex exbii con1bii anbi12i vtoclg pm5.21nii ) BCFDGZFUBZDGZUAZHZCIJZBCDHZB
+      AKZDHZVRCLZMZANZOZVOBIJZVPBCVNPQVQVPWBVQWDVPBCDPQUCBEKZVNHZBWEDHZVSAEUDZM
+      ZANZOZRVOWCRECIWECLZWFVOWKWCWECBVNSWLWGVQWJWBWECBDSWLWIWAAWLWHVTVSWECVRUE
+      UFUGUHUIWFBWEVKHZBWEVMHZTZOWKBWEVKVMUNWMWGWOWJBWEDUJWJWNWNVSVRWEVLHZOZAUK
+      VSWHTZOZAUKWJTABWEVLDULWQWSAWPWRVSWPVRWEUMZVLJZWRVRWEVLUOXAWTFJZWHWTFVRWE
+      AVEEVEZUPUQXBVRWEFHWHVRWEFUOVRWEXCURUSUTVAVBVFVSWHAVCVDVGVHVAVIVJ $.
+      $( [9-Mar-2015] $)
+  $}
+
+  ${
+    $d F x y z $.
+    $( Lemma for ~ fnfullfun .  Part one of the full function operator yields a
+       function. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    fnfullfunlem2 $p |- Fun ( ( _I o. F ) \ ( ~ _I o. F ) ) $=
+      ( vx vy vz cid ccom ccompl cdif wfun wrel cv wbr wa wi relco reldif ax-mp
+      weq wal fnfullfunlem1 ax467to4 impcom syl2anb ax-gen gen2 dffun2 mpbir2an
+      ad2ant2rl ) EAFZEGAFZHZIUKJZBKZCKZUKLZUMDKZUKLZMCDRZNZDSZCSBSUIJULEAOUIUJ
+      PQUTBCUSDUOUMUNALZUMUPALZDCRNDSZMVBVAURNZCSZMURUQDUMUNATCUMUPATVAVEURVCVB
+      VEVAURVDCUAUBUHUCUDUEBCDUKUFUG $.
+      $( [9-Mar-2015] $)
+  $}
+
+  $( The full function operator yields a function over ` _V ` . 
+     (Contributed by SF, 9-Mar-2015.) $)
+  fnfullfun $p |- FullFun F Fn _V $=
+    ( cfullfun cvv wfn cid ccom ccompl cdif cdm c0 csn cxp cun wa cin wceq wfun
+    fnfullfunlem2 funfn mp2an mpbi 0ex fnconstg ax-mp pm3.2i incompl df-fullfun
+    wcel fnun wb uncompl eqcomi fneq1 fneq2 sylan9bb mpbir ) ABZCDZEAFEGAFHZUSI
+    ZGZJKLZMZUTVAMZDZUSUTDZVBVADZNUTVAOJPVEVFVGUSQVFARUSSUAJCUHVGUBVAJCUCUDUEUT
+    UFUTVAUSVBUITUQVCPZCVDPZURVEUJAUGVDCUTUKULVHURVCCDVIVECUQVCUMCVDVCUNUOTUP
+    $.
+    $( [9-Mar-2015] $)
+
+  $( The full function of a set is a set. 
+     (Contributed by SF, 9-Mar-2015.) $)
+  fullfunexg $p |- ( F e. V -> FullFun F e. _V ) $=
+    ( wcel cfullfun cid ccom ccompl cdif cdm c0 csn cxp cun cvv df-fullfun idex
+    coexg mpan complex syl2anc difexg dmexg complexg 3syl snex sylancl syl5eqel
+    xpexg unexg ) ABCZADEAFZEGZAFZHZUNIZGZJKZLZMZNAOUJUNNCZURNCZUSNCUJUKNCZUMNC
+    ZUTENCUJVBPEANBQRULNCUJVCEPSULANBQRUKUMNNUATZUJUPNCZUQNCVAUJUTUONCVEVDUNNUB
+    UONUCUDJUEUPUQNNUHUFUNURNNUITUG $.
+    $( [9-Mar-2015] $)
+
+  ${
+    fullfunex.1 $e |- F e. _V $.
+    $( The full function of a set is a set. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    fullfunex $p |- FullFun F e. _V $=
+      ( cvv wcel cfullfun fullfunexg ax-mp ) ACDAECDBACFG $.
+      $( [9-Mar-2015] $)
+  $}
+
+
+  ${
+    $d F x $.  $d F y $.  $d F z $.  $d x y $.  $d x z $.  $d y z $.
+    $( Lemma for ~ fvfullfun .  Calculate the domain of part one of the full
+       function definition. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    fvfullfunlem1 $p |- dom ( ( _I o. F ) \ ( ~ _I o. F ) ) =
+       { x | E! y x F y } $=
+      ( vz cv wbr weu cid ccom ccompl cdif cdm wcel wex weq wi wal wa exbii nfv
+      eldm fnfullfunlem1 wsb eu1 breq2 sbie equcom imbi12i anbi2i bitr2i 3bitri
+      albii abbi2i ) AEZBEZCFZBGZAHCIHJCIKZLZUNUSMUNUOURFZBNUPUNDEZCFZDBOZPZDQZ
+      RZBNZUQBUNURUAUTVFBDUNUOCUBSUQUPUPBDUCZBDOZPZDQZRZBNVGUPBDUPDTUDVLVFBVKVE
+      UPVJVDDVHVBVIVCUPVBBDVBBTUOVAUNCUEUFBDUGUHULUISUJUKUM $.
+      $( [9-Mar-2015] $)
+  $}
+
+  ${
+    $d F x $.  $d F y $.  $d F z $.  $d x y $.  $d x z $.  $d y z $.
+    $( Lemma for ~ fvfullfun .  Part one of the full function definition is a
+       subset of the function. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    fvfullfunlem2 $p |- ( ( _I o. F ) \ ( ~ _I o. F ) ) C_ F $=
+      ( vx vy vz cid ccom ccompl cdif wss cv cop wcel wi wal wbr wa simpl df-br
+      weq wrel fnfullfunlem1 bitr3i 3imtr3i gen2 relco reldif ssrel mp2b mpbir
+      wb ) EAFZEGAFZHZAIZBJZCJZKZUMLZUQALZMZCNBNZUTBCUOUPAOZUODJAODCSMDNZPZVBUR
+      USVBVCQVDUOUPUMOURDUOUPAUAUOUPUMRUBUOUPARUCUDUKTUMTUNVAUJEAUEUKULUFBCUMAU
+      GUHUI $.
+      $( [9-Mar-2015] $)
+  $}
+
+  ${
+    $d F a $.  $d A a $.  $d F x $.  $d F y $.  $d F z $.  $d x y $.  $d x z $.
+    $d y z $.
+    $( Lemma for ~ fvfullfun .  Part one of the full function definition agrees
+       with the set itself over its domain. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    fvfullfunlem3 $p |- ( A e. dom ( ( _I o. F ) \ ( ~ _I o. F ) ) ->
+       ( ( ( _I o. F ) \ ( ~ _I o. F ) ) ` A ) = ( F ` A ) ) $=
+      ( vx vy vz cid ccom wcel cfv wss wceq wrel cv wbr wal weu brres cvv ax-mp
+      wa ccompl cdif cdm cres wfun weq relres fvfullfunlem1 abeq2i anbi2i bitri
+      tz6.12-1 adantrl adantl eqtr3d adantlr syl2anb ax-gen dffun2 mpbir2an cxp
+      wi gen2 cin fvfullfunlem2 relco reldif relssdmrn xpss2 sstri ssini df-res
+      crn ssv sseqtr4i funssfv mp3an12 fvres ) AFBGZFUABGZUBZUCZHZABWBUDZIZAWAI
+      ZABIWDUEZWAWDJWCWEWFKWGWDLCMZDMZWDNZWHEMZWDNZTDEUFZVBZEOZDOCOBWBUGWOCDWNE
+      WJWHWIBNZWHWKBNZEPZTZWQWPDPZTZWMWLWJWPWHWBHZTWSWHWIBWBQXBWRWPWRCWBCEBUHUI
+      UJUKWLWQXBTXAWHWKBWBQXBWTWQWTCWBCDBUHUIUJUKWPXAWMWRWPXATWHBIZWIWKWPWTXCWI
+      KWQDWHWIBULUMXAXCWKKWPDWHWKBULUNUOUPUQURVCCDEWDUSUTWABWBRVAZVDWDWABXDBVEW
+      AWBWAVMZVAZXDWALZWAXFJVSLXGFBVFVSVTVGSWAVHSXERJXFXDJXEVNXERWBVISVJVKBWBVL
+      VOAWDWAVPVQAWBBVRUO $.
+      $( [9-Mar-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d F x $.  $d F y $.  $d x y $.
+    $( The value of the full function definition agrees with the function value
+       everywhere. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    fvfullfun $p |- ( FullFun F ` A ) = ( F ` A ) $=
+      ( vx vy cvv wcel cfv wceq cv fveq2 cid ccom ccompl c0 wfn wa mp3an12 mpan
+      0ex eqtr4d cfullfun eqeq12d cdm csn cxp cun df-fullfun fveq1i cin incompl
+      cdif wfun fnfullfunlem2 funfn fnconstg ax-mp fvun1 fvfullfunlem3 eqtrd wn
+      mpbi vex elcompl sylbir wbr fvfullfunlem1 abeq2i tz6.12-2 sylnbi fvconst2
+      fvun2 weu pm2.61i eqtri vtoclg fvprc ) AEFZABUAZGZABGZHZCIZVRGZWBBGZHWACA
+      EWBAHWCVSWDVTWBAVRJWBABJUBWCWBKBLKMBLUKZWEUCZMZNUDUEZUFZGZWDWBVRWIBUGUHWB
+      WFFZWJWDHWKWJWBWEGZWDWFWGUINHZWKWJWLHZWFUJZWEWFOZWHWGOZWMWKPWNWEULWPBUMWE
+      UNVAZNEFWQSWGNEUOUPZWFWGWEWHWBUQQRWBBURUSWKUTZWJWBWHGZWDWTWBWGFZWJXAHZWBW
+      FCVBVCZWMXBXCWOWPWQWMXBPXCWRWSWFWGWEWHWBVKQRVDWTWDNXAWKWBDIBVEDVLZWDNHXEC
+      WFCDBVFVGDWBBVHVIWTXBXANHXDWGNWBSVJVDTTVMVNVOVQUTVSNVTAVRVPABVPTVM $.
+      $( [9-Mar-2015] $)
+  $}
+
+  $( Binary relationship of the full function operation. 
+     (Contributed by SF, 9-Mar-2015.) $)
+  brfullfung $p |- ( A e. V -> ( A FullFun F B <-> ( F ` A ) = B ) ) $=
+    ( wcel cvv cfullfun wbr cfv wceq wb elex fvfullfun eqeq1i fnfullfun fnbrfvb
+    wfn mpan syl5rbbr syl ) ADEAFEZABCGZHZACIZBJZKADLUEAUBIZBJZUAUCUFUDBACMNUBF
+    QUAUGUCKCOFABUBPRST $.
+    $( [9-Mar-2015] $)
+
+  ${
+    brfullfun.1 $e |- A e. _V $.
+    $( Binary relationship of the full function operation. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    brfullfun $p |- ( A FullFun F B <-> ( F ` A ) = B ) $=
+      ( cvv wcel cfullfun wbr cfv wceq wb brfullfung ax-mp ) AEFABCGHACIBJKDABC
+      ELM $.
+      $( [9-Mar-2015] $)
+  $}
+
+  ${
+    brfullfunop.1 $e |- A e. _V $.
+    brfullfunop.2 $e |- B e. _V $.
+    $( Binary relationship of the full function operation over an ordered
+       pair. 
+       (Contributed by SF, 9-Mar-2015.) $)
+    brfullfunop $p |- ( <. A , B >. FullFun F C <-> ( A F B ) = C ) $=
+      ( cop cfullfun wbr cfv wceq co opex brfullfun df-ov eqeq1i bitr4i ) ABGZC
+      DHIRDJZCKABDLZCKRCDABEFMNTSCABDOPQ $.
+      $( [9-Mar-2015] $)
+  $}
