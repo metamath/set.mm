@@ -54242,6 +54242,7 @@ $)
       ( co wnfc wtru a1i nfovd trud ) ABCDHIJABCDABIJEKADIJFKACIJGKLM $.
   $}
 
+
   ${
     $d a ph r s t w $.  $d a r s t w x $.  $d a r s t w y $.  $d a r s t w z $.
     $( The law of concretion.  Special case of Theorem 9.5 of [Quine] p. 61.
@@ -54250,26 +54251,23 @@ $)
         { <. <. x , y >. , z >. | ph } <-> ph ) $=
       ( vw va vt vr vs cv cop wceq wa wex vex wi weq opth wal wn coprab eqvinop
       biimpi eqeq1 simplbi syl6bi opeq1 eqeq2d anbi1i bitri anass 3bitri 3exbii
-      opex nd5 equcom albii 3imtr3g exdistrf eximi excom 3imtr4i 3imtr4g anim2i
-      3syl sylbi w3a df-3an bitr4i weu euequ1 eupick mpan syl6 3impd com12 syl5
-      syl5bi eqcoms syl6bb anbi1d 3exbidv imbi1d imbi12d mpbiri adantr exlimivv
-      eqcom com3l mpdd mpcom 19.8a ex impbid df-oprab elab2 ) EJZBJZCJZKZDJZKZL
-      ZAMZDNZCNZBNZAEXBABCDUAWTXAWRWSBOZCOZUNZDOZUNXCXGAWQFJZGJZKZLZXNXBLZMZGNF
-      NZXCXGAPZXCXRFGWQWTXAXJXKUBUCXQXCXSPZFGXOXTXPXOXCXLWTLZXSXOXCXPYAWQXNXBUD
-      XPYAGDQXLXMWTXARUEUFYAXOXCXSYAXLHJZIJZKZLZYDWTLZMZINHNXOXTPZHIXLWRWSXHXIU
-      BYGYHHIYEYHYFYEXOWQYDXMKZLZXTYEXNYIWQXLYDXMUGUHYJXTYIXBLZXBYILZAMZDNCNBNZ
-      APZPYOXBYIYNBHQZCIQZDGQZAMZDNZMCNZMZBNZYLAYNYPYQYSMZMZDNZCNBNZUUCYMUUEBCD
-      YMYPYQMZYRMZAMUUHYSMUUEYLUUIAYLWTYDLZYRMUUIWTXAYDXMRUUJUUHYRWRWSYBYCRUIUJ
-      ZUIUUHYRAUKYPYQYSUKULUMUUGYPUUDDNZMZCNBNZYPUULCNZMZBNUUCUUFBNZCNUUMBNZCNU
-      UGUUNUUQUURCYPUUDBDBDQBSTHBQZUUSDSYPYPDSDBHUOHBUPZUUSYPDUUTUQURUSUTUUFBCV
-      AUUMBCVAVBYPUULBCBCQBSTUUSUUSCSYPYPCSCBHUOBHUPZYPUUSCUVAUQVCUSUUPUUBBUUOU
-      UAYPYQYSCDCDQCSTICQZUVBDSYQYQDSDCIUOICUPZUVBYQDUVCUQURUSVDUTVEVFUUCYLAYLY
-      PYQYRVGZUUCAYLUUIUVDUUKYPYQYRVHVIUUCYPYQYRAUUCYPUUAYQYRAPZPYPBVJUUCYPUUAP
-      BHVKYPUUABVLVMUUAYQYTUVEYQCVJUUAYQYTPCIVKYQYTCVLVMYRDVJYTUVEDGVKYRADVLVMV
-      NVNVOVRVPVQVSYJXCYKXSYOWQYIXBUDZYJXGYNAYJXDYMBCDYJXCYLAYJXCYKYLUVFYIXBWHV
-      TWAWBWCWDWEUFWFWGVFWIWJWFWGWKXCAXGXDXEXFXGXDDWLXECWLXFBWLVEWMWNABCDEWOWP
-      $.
-      $( [20-Mar-2013] $)
+      opex nfcvf2 nfcvd nfeqd exdistrf eximi excom anim2i 3syl sylbi w3a df-3an
+      3imtr4i bitr4i weu euequ1 eupick mpan syl6 3impd syl5bi com12 syl5 syl6bb
+      eqcom anbi1d 3exbidv imbi1d mpbiri adantr exlimivv com3l mpdd mpcom 19.8a
+      imbi12d ex impbid df-oprab elab2 ) EJZBJZCJZKZDJZKZLZAMZDNZCNZBNZAEWSABCD
+      UAWQWRWOWPBOZCOZUNZDOZUNWTXDAWNFJZGJZKZLZXKWSLZMZGNFNZWTXDAPZWTXOFGWNWQWR
+      XGXHUBUCXNWTXPPZFGXLXQXMXLWTXIWQLZXPXLWTXMXRWNXKWSUDXMXRGDQXIXJWQWRRUEUFX
+      RXLWTXPXRXIHJZIJZKZLZYAWQLZMZINHNXLXQPZHIXIWOWPXEXFUBYDYEHIYBYEYCYBXLWNYA
+      XJKZLZXQYBXKYFWNXIYAXJUGUHYGXQWSYFLZYHAMZDNCNBNZAPZPYJBHQZCIQZDGQZAMZDNZM
+      CNZMZBNZYHAYJYLYMYOMZMZDNZCNBNZYSYIUUABCDYIYLYMMZYNMZAMUUDYOMUUAYHUUEAYHW
+      QYALZYNMUUEWQWRYAXJRUUFUUDYNWOWPXSXTRUIUJZUIUUDYNAUKYLYMYOUKULUMUUCYLYTDN
+      ZMZCNBNZYLUUHCNZMZBNYSUUBBNZCNUUIBNZCNUUCUUJUUMUUNCYLYTBDBDQBSTZDWOXSBDUO
+      UUODXSUPUQURUSUUBBCUTUUIBCUTVFYLUUHBCBCQBSTZCWOXSBCUOUUPCXSUPUQURUULYRBUU
+      KYQYLYMYOCDCDQCSTZDWPXTCDUOUUQDXTUPUQURVAUSVBVCYSYHAYHYLYMYNVDZYSAYHUUEUU
+      RUUGYLYMYNVEVGYSYLYMYNAYSYLYQYMYNAPZPYLBVHYSYLYQPBHVIYLYQBVJVKYQYMYPUUSYM
+      CVHYQYMYPPCIVIYMYPCVJVKYNDVHYPUUSDGVIYNADVJVKVLVLVMVNVOVPYGWTYHXPYKYGWTYF
+      WSLYHWNYFWSUDYFWSVRVQZYGXDYJAYGXAYIBCDYGWTYHAUUTVSVTWAWIWBUFWCWDVCWEWFWCW
+      DWGWTAXDXAXBXCXDXADWHXBCWHXCBWHVBWJWKABCDEWLWM $.
   $}
 
   $( The result of an operation is a set. 
@@ -54278,55 +54276,49 @@ $)
     ( co cop cfv cvv df-ov fvex eqeltri ) ABCDABEZCFGABCHKCIJ $.
     $( [13-Mar-1995] $)
 
+
   ${
     $d y z A $.  $d y z B $.  $d y z C $.  $d y z D $.  $d y z F $.
     $d x y z $.
-    $( Move class substitution in and out of an operation.  (The proof was
-       shortened by Andrew Salmon, 22-Oct-2011.) 
-       (Contributed by ?who?, 12-Nov-2005.) 
-       (Revised by ?who?, 22-Oct-2011.) $)
+    $( Move class substitution in and out of an operation.  (Contributed by NM,
+       12-Nov-2005.)  (Proof shortened by Mario Carneiro, 5-Dec-2016.) $)
     csbovg $p |- ( A e. D -> [_ A / x ]_ ( B F C ) =
            ( [_ A / x ]_ B [_ A / x ]_ F [_ A / x ]_ C ) ) $=
-      ( vy vz wcel csb cop cfv df-ov csbeq2i wceq csbeq1 opeq12d hbcsb1f csbeq1a
-      co csbfv12g cv eqeq12d vex wel ax-17 hbop weq csbief vtoclg fveq2d 3eqtrd
-      syl6eqr ) BEIZABCDFTZJABCDKZFLZJABUPJZABFJZLZABCJZABDJZUSTZABUOUQECDFMNAB
-      UPEFUAUNUTVAVBKZUSLVCUNURVDUSAGUBZUPJZAVECJZAVEDJZKZOURVDOGBEVEBOZVFURVIV
-      DAVEBUPPVJVGVAVHVBAVEBCPAVEBDPQUCAHVEUPVIGUDAHVGVHAHVECHGUEAUFZRAHVEDVKRU
-      GAGUHCVGDVHAVECSAVEDSQUIUJUKVAVBUSMUMUL $.
-      $( [22-Oct-2011] $) $( [12-Nov-2005] $)
+      ( vy cv co csb wceq csbeq1 oveq123d eqeq12d nfcsb1v csbeq1a csbief vtoclg
+      vex nfov ) AGHZCDFIZJZAUACJZAUADJZAUAFJZIZKABUBJZABCJZABDJZABFJZIZKGBEUAB
+      KZUCUHUGULAUABUBLUMUDUIUEUJUFUKAUABFLAUABCLAUABDLMNAUAUBUGGSAUDUEUFAUACOA
+      UAFOAUADOTAHUAKCUDDUEFUFAUAFPAUACPAUADPMQR $.
   $}
+
 
   ${
     $d y A $.  $d y C $.  $d y D $.  $d x y F $.
-    $( Move class substitution in and out of an operation. 
-       (Contributed by ?who?, 12-Nov-2005.) $)
+    $( Move class substitution in and out of an operation.  (Contributed by NM,
+       12-Nov-2005.) $)
     csbov12g $p |- ( A e. D ->
                  [_ A / x ]_ ( B F C ) = ( [_ A / x ]_ B F [_ A / x ]_ C ) ) $=
-      ( wcel co csb csbovg csbconstgfv oveqd eqtrd ) BEGZABCDFHIABCIZABDIZABFIZ
-      HOPFHABCDEFJNQFOPABFEKLM $.
-      $( [12-Nov-2005] $)
+      ( wcel co csb csbovg csbconstg oveqd eqtrd ) BEGZABCDFHIABCIZABDIZABFIZHO
+      PFHABCDEFJNQFOPABFEKLM $.
   $}
 
   ${
     $d y A $.  $d x y C $.  $d y D $.  $d x y F $.
-    $( Move class substitution in and out of an operation. 
-       (Contributed by ?who?, 12-Nov-2005.) $)
+    $( Move class substitution in and out of an operation.  (Contributed by NM,
+       12-Nov-2005.) $)
     csbov1g $p |- ( A e. D ->
                   [_ A / x ]_ ( B F C ) = ( [_ A / x ]_ B F C ) ) $=
-      ( wcel co csb csbov12g csbconstgfv oveq2d eqtrd ) BEGZABCDFHIABCIZABDIZFH
-      ODFHABCDEFJNPDOFABDEKLM $.
-      $( [12-Nov-2005] $)
+      ( wcel co csb csbov12g csbconstg oveq2d eqtrd ) BEGZABCDFHIABCIZABDIZFHOD
+      FHABCDEFJNPDOFABDEKLM $.
   $}
 
   ${
     $d y A $.  $d x y B $.  $d y D $.  $d x y F $.
-    $( Move class substitution in and out of an operation. 
-       (Contributed by ?who?, 12-Nov-2005.) $)
+    $( Move class substitution in and out of an operation.  (Contributed by NM,
+       12-Nov-2005.) $)
     csbov2g $p |- ( A e. D ->
                   [_ A / x ]_ ( B F C ) = ( B F [_ A / x ]_ C ) ) $=
-      ( wcel co csb csbov12g csbconstgfv oveq1d eqtrd ) BEGZABCDFHIABCIZABDIZFH
-      CPFHABCDEFJNOCPFABCEKLM $.
-      $( [12-Nov-2005] $)
+      ( wcel co csb csbov12g csbconstg oveq1d eqtrd ) BEGZABCDFHIABCIZABDIZFHCP
+      FHABCDEFJNOCPFABCEKLM $.
   $}
 
   ${
@@ -54447,32 +54439,28 @@ $)
 
   ${
     $d x z w $.  $d y z w $.  $d w ph $.  $d w ps $.  $d w ch $.
-    oprabbid.1 $e |- ( ph -> A. x ph ) $.
-    oprabbid.2 $e |- ( ph -> A. y ph ) $.
-    oprabbid.3 $e |- ( ph -> A. z ph ) $.
+    oprabbid.1 $e |- F/ x ph $.
+    oprabbid.2 $e |- F/ y ph $.
+    oprabbid.3 $e |- F/ z ph $.
     oprabbid.4 $e |- ( ph -> ( ps <-> ch ) ) $.
     $( Equivalent wff's yield equal operation class abstractions (deduction
-       rule). 
-       (Contributed by ?who?, 21-Feb-2004.) 
-       (Revised by ?who?, 24-Jun-2014.) $)
+       rule).  (Contributed by NM, 21-Feb-2004.)  (Revised by Mario Carneiro,
+       24-Jun-2014.) $)
     oprabbid $p |- ( ph ->
            { <. <. x , y >. , z >. | ps } = { <. <. x , y >. , z >. | ch } ) $=
       ( vw cv cop wceq wa wex cab coprab exbid df-oprab anbi2d abbidv 3eqtr4g )
       AKLDLELMFLMNZBOZFPZEPZDPZKQUDCOZFPZEPZDPZKQBDEFRCDEFRAUHULKAUGUKDGAUFUJEH
       AUEUIFIABCUDJUASSSUBBDEFKTCDEFKTUC $.
-      $( [24-Jun-2014] $) $( [21-Feb-2004] $)
   $}
 
   ${
     $d x z w ph $.  $d y z w ph $.  $d w ps $.  $d w ch $.
     oprabbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
     $( Equivalent wff's yield equal operation class abstractions (deduction
-       rule). 
-       (Contributed by ?who?, 21-Feb-2004.) $)
+       rule).  (Contributed by NM, 21-Feb-2004.) $)
     oprabbidv $p |- ( ph ->
            { <. <. x , y >. , z >. | ps } = { <. <. x , y >. , z >. | ch } ) $=
-      ( ax-17 oprabbid ) ABCDEFADHAEHAFHGI $.
-      $( [21-Feb-2004] $)
+      ( nfv oprabbid ) ABCDEFADHAEHAFHGI $.
   $}
 
   ${
@@ -54502,44 +54490,56 @@ $)
       $( [24-Jan-2010] $)
   $}
 
+
   ${
     $d x y z w v $.  $d v ph $.  $d v ps $.
-    cbvoprab1.1 $e |- ( ph -> A. w ph ) $.
-    cbvoprab1.2 $e |- ( ps -> A. x ps ) $.
+    cbvoprab1.1 $e |- F/ w ph $.
+    cbvoprab1.2 $e |- F/ x ps $.
     cbvoprab1.3 $e |- ( x = w -> ( ph <-> ps ) ) $.
     $( Rule used to change first bound variable in an operation abstraction,
-       using implicit substitution.  (The proof was shortened by Andrew Salmon,
-       22-Oct-2011.) 
-       (Contributed by ?who?, 20-Dec-2008.) 
-       (Revised by ?who?, 22-Oct-2011.) $)
+       using implicit substitution.  (Contributed by NM, 20-Dec-2008.)
+       (Revised by Mario Carneiro, 5-Dec-2016.) $)
     cbvoprab1 $p |- { <. <. x , y >. , z >. | ph }
                   = { <. <. w , y >. , z >. | ps } $=
-      ( vv cv cop wceq wa wex copab coprab ax-17 hban hbex opeq1 eqeq2d anbi12d
-      exbidv cbvex opabbii dfoprab2 3eqtr4i ) JKZCKZDKZLZMZANZDOZCOZJEPUIFKZUKL
-      ZMZBNZDOZFOZJEPACDEQBFDEQUPVBJEUOVACFUNFDUMAFUMFRGSTUTCDUSBCUSCRHSTUJUQMZ
-      UNUTDVCUMUSABVCULURUIUJUQUKUAUBIUCUDUEUFACDEJUGBFDEJUGUH $.
-      $( [22-Oct-2011] $) $( [20-Dec-2008] $)
+      ( vv cv cop wceq wa wex copab coprab nfv nfan nfex eqeq2d anbi12d opabbii
+      opeq1 exbidv cbvex dfoprab2 3eqtr4i ) JKZCKZDKZLZMZANZDOZCOZJEPUIFKZUKLZM
+      ZBNZDOZFOZJEPACDEQBFDEQUPVBJEUOVACFUNFDUMAFUMFRGSTUTCDUSBCUSCRHSTUJUQMZUN
+      UTDVCUMUSABVCULURUIUJUQUKUDUAIUBUEUFUCACDEJUGBFDEJUGUH $.
+  $}
+
+  ${
+    $d v w x y z $.  $d ph v $.  $d ps v $.
+    cbvoprab2.1 $e |- F/ w ph $.
+    cbvoprab2.2 $e |- F/ y ps $.
+    cbvoprab2.3 $e |- ( y = w -> ( ph <-> ps ) ) $.
+    $( Change the second bound variable in an operation abstraction.
+       (Contributed by Jeff Madsen, 11-Jun-2010.)  (Revised by Mario Carneiro,
+       11-Dec-2016.) $)
+    cbvoprab2 $p |- { <. <. x , y >. , z >. | ph } =
+                    { <. <. x , w >. , z >. | ps } $=
+      ( vv cv cop wceq wa wex cab coprab nfv nfan nfex opeq2 opeq1d cbvex exbii
+      eqeq2d anbi12d exbidv abbii df-oprab 3eqtr4i ) JKZCKZDKZLZEKZLZMZANZEOZDO
+      ZCOZJPUKULFKZLZUOLZMZBNZEOZFOZCOZJPACDEQBCFEQVAVIJUTVHCUSVGDFURFEUQAFUQFR
+      GSTVFDEVEBDVEDRHSTUMVBMZURVFEVJUQVEABVJUPVDUKVJUNVCUOUMVBULUAUBUEIUFUGUCU
+      DUHACDEJUIBCFEJUIUJ $.
   $}
 
   ${
     $d x y z w v u $.  $d u ph $.  $d u ps $.
-    cbvoprab12.1 $e |- ( ph -> A. w ph ) $.
-    cbvoprab12.2 $e |- ( ph -> A. v ph ) $.
-    cbvoprab12.3 $e |- ( ps -> A. x ps ) $.
-    cbvoprab12.4 $e |- ( ps -> A. y ps ) $.
+    cbvoprab12.1 $e |- F/ w ph $.
+    cbvoprab12.2 $e |- F/ v ph $.
+    cbvoprab12.3 $e |- F/ x ps $.
+    cbvoprab12.4 $e |- F/ y ps $.
     cbvoprab12.5 $e |- ( ( x = w /\ y = v ) -> ( ph <-> ps ) ) $.
     $( Rule used to change first two bound variables in an operation
-       abstraction, using implicit substitution.  (The proof was shortened by
-       Andrew Salmon, 22-Oct-2011.) 
-       (Contributed by ?who?, 21-Feb-2004.) 
-       (Revised by ?who?, 22-Oct-2011.) $)
+       abstraction, using implicit substitution.  (Contributed by NM,
+       21-Feb-2004.)  (Proof shortened by Andrew Salmon, 22-Oct-2011.) $)
     cbvoprab12 $p |- { <. <. x , y >. , z >. | ph }
                    = { <. <. w , v >. , z >. | ps } $=
-      ( vu cv cop wceq wa wex ax-17 hban copab coprab weq opeq12 eqeq2d anbi12d
-      cbvex2 opabbii dfoprab2 3eqtr4i ) MNZCNZDNZOZPZAQZDRCRZMEUAUKFNZGNZOZPZBQ
-      ZGRFRZMEUAACDEUBBFGEUBUQVCMEUPVBCDFGUOAFUOFSHTUOAGUOGSITVABCVACSJTVABDVAD
-      SKTCFUCDGUCQZUOVAABVDUNUTUKULURUMUSUDUELUFUGUHACDEMUIBFGEMUIUJ $.
-      $( [22-Oct-2011] $) $( [21-Feb-2004] $)
+      ( vu cv cop wceq wa wex nfv nfan coprab weq opeq12 eqeq2d anbi12d opabbii
+      copab cbvex2 dfoprab2 3eqtr4i ) MNZCNZDNZOZPZAQZDRCRZMEUGUKFNZGNZOZPZBQZG
+      RFRZMEUGACDEUABFGEUAUQVCMEUPVBCDFGUOAFUOFSHTUOAGUOGSITVABCVACSJTVABDVADSK
+      TCFUBDGUBQZUOVAABVDUNUTUKULURUMUSUCUDLUEUHUFACDEMUIBFGEMUIUJ $.
   $}
 
   ${
@@ -54550,25 +54550,25 @@ $)
        (Contributed by ?who?, 8-Oct-2004.) $)
     cbvoprab12v $p |- { <. <. x , y >. , z >. | ph }
                     = { <. <. w , v >. , z >. | ps } $=
-      ( ax-17 cbvoprab12 ) ABCDEFGAFIAGIBCIBDIHJ $.
+      ( nfv cbvoprab12 ) ABCDEFGAFIAGIBCIBDIHJ $.
       $( [8-Oct-2004] $)
   $}
 
+
   ${
     $d x z w v $.  $d y z w v $.  $d v ph $.  $d v ps $.
-    cbvoprab3.1 $e |- ( ph -> A. w ph ) $.
-    cbvoprab3.2 $e |- ( ps -> A. z ps ) $.
+    cbvoprab3.1 $e |- F/ w ph $.
+    cbvoprab3.2 $e |- F/ z ps $.
     cbvoprab3.3 $e |- ( z = w -> ( ph <-> ps ) ) $.
     $( Rule used to change the third bound variable in an operation
-       abstraction, using implicit substitution. 
-       (Contributed by ?who?, 22-Aug-2013.) $)
+       abstraction, using implicit substitution.  (Contributed by NM,
+       22-Aug-2013.) $)
     cbvoprab3 $p |- { <. <. x , y >. , z >. | ph } =
                      { <. <. x , y >. , w >. | ps } $=
-      ( vv cv wceq wa wex copab coprab ax-17 hban hbex dfoprab2 anbi2d cbvopab2
-      cop 2exbidv 3eqtr4i ) JKCKDKUCLZAMZDNZCNZJEOUFBMZDNZCNZJFOACDEPBCDFPUIULJ
-      EFUHFCUGFDUFAFUFFQGRSSUKECUJEDUFBEUFEQHRSSEKFKLZUGUJCDUMABUFIUAUDUBACDEJT
-      BCDFJTUE $.
-      $( [22-Aug-2013] $)
+      ( vv cv wceq wa wex copab coprab nfv nfan nfex dfoprab2 2exbidv cbvopab2
+      cop anbi2d 3eqtr4i ) JKCKDKUCLZAMZDNZCNZJEOUFBMZDNZCNZJFOACDEPBCDFPUIULJE
+      FUHFCUGFDUFAFUFFQGRSSUKECUJEDUFBEUFEQHRSSEKFKLZUGUJCDUMABUFIUDUAUBACDEJTB
+      CDFJTUE $.
   $}
 
   ${
@@ -54581,7 +54581,7 @@ $)
        (Revised by ?who?, 24-Jul-2012.) $)
     cbvoprab3v $p |- { <. <. x , y >. , z >. | ph } =
                      { <. <. x , y >. , w >. | ps } $=
-      ( ax-17 cbvoprab3 ) ABCDEFAFHBEHGI $.
+      ( nfv cbvoprab3 ) ABCDEFAFHBEHGI $.
       $( [24-Jul-2012] $) $( [8-Oct-2004] $)
   $}
 
@@ -56598,3 +56598,4 @@ $)
       ABCHABIINJABCKABCNLM $.
       $( [23-Feb-2015] $)
   $}
+
