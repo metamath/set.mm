@@ -57806,3 +57806,238 @@ $)
       DHIRDJZCKABDLZCKRCDABEFMNTSCABDOPQ $.
       $( [9-Mar-2015] $)
   $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Closure operation
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Clos1 $.
+
+  $( Extend the definition of a class to include the closure operation. $)
+  cclos1 $a class Clos1 ( A , R ) $.
+
+  ${
+    $d S a $.  $d R a $.
+    $( Define the closure operation.  A modified version of the definition from
+       [Rosser] p. 245. $)
+    df-clos1 $a |- Clos1 ( S , R ) =
+       |^| { a | ( S C_ a /\ ( R " a ) C_ a ) } $.
+  $}
+
+  ${
+    $d R a $.  $d S a $.  $d T a $.
+    $( Equality law for closure. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    clos1eq1 $p |- ( S = T -> Clos1 ( S , R ) = Clos1 ( T , R ) ) $=
+      ( va wceq cv wss cima wa cab cint cclos1 sseq1 anbi1d abbidv syl df-clos1
+      inteq 3eqtr4g ) BCEZBDFZGZAUAHUAGZIZDJZKZCUAGZUCIZDJZKZBALCALTUEUIEUFUJET
+      UDUHDTUBUGUCBCUAMNOUEUIRPABDQACDQS $.
+      $( [11-Feb-2015] $)
+
+    $( Equality law for closure. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    clos1eq2 $p |- ( R = T -> Clos1 ( S , R ) = Clos1 ( S , T ) ) $=
+      ( va wceq cv wss cima wa cab cclos1 imaeq1 sseq1d anbi2d abbidv inteq syl
+      cint df-clos1 3eqtr4g ) ACEZBDFZGZAUBHZUBGZIZDJZRZUCCUBHZUBGZIZDJZRZBAKBC
+      KUAUGULEUHUMEUAUFUKDUAUEUJUCUAUDUIUBACUBLMNOUGULPQABDSCBDST $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    $d a b $.  $d R a $.  $d R b $.  $d S a $.
+    clos1ex.1 $e |- S e. _V $.
+    clos1ex.2 $e |- R e. _V $.
+    $( The closure of a set under a set is a set. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    clos1ex $p |- Clos1 ( S , R ) e. _V $=
+      ( va vb cv wss cima cvv csset wcel wbr vex brsset wex imaex bitri ssetex
+      wa cclos1 cab cint df-clos1 csn cimage ccom cfix cin elin elimasn 3bitr2i
+      df-br elfix brco brimage anbi1i exbii breq1 syl6bb ceqsexv anbi12i abbi2i
+      cop wceq snex imageex coex fixex inex eqeltrri intex eqeltri ) BAUABEGZHZ
+      AVNIZVNHZTZEUBZUCJABEUDVSKBUEZIZKAUFZUGZUHZUIZVSJVREWEVNWELVNWALZVNWDLZTV
+      RVNWAWDUJWFVOWGVQWFBVNVDKLBVNKMVOKBVNUKBVNKUMBVNCENZOULWGVNVNWCMZVQVNWCUN
+      WIVNFGZWBMZWJVNKMZTZFPZVQFVNVNKWBUOWNWJVPVEZWLTZFPVQWMWPFWKWOWLVNWJAWHFNU
+      PUQURWLVQFVPAVNDWHQZWOWLVPVNKMVQWJVPVNKUSVPVNWQWHOUTVARRRVBRVCWAWDKVTSBVF
+      QWCKWBSADVGVHVIVJVKVLVM $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    $d S s r $.  $d R s r $.
+    $( The closure of a set under a set is a set. 
+       (Contributed by SF, 11-Feb-2015.) $)
+    clos1exg $p |- ( ( S e. V /\ R e. W ) -> Clos1 ( S , R ) e. _V ) $=
+      ( vs vr cclos1 cvv wcel wceq clos1eq1 eleq1d clos1eq2 vex clos1ex vtocl2g
+      cv ) EQZFQZGZHIBSGZHIBAGZHIEFBACDRBJTUAHSRBKLSAJUAUBHSBAMLSRENFNOP $.
+      $( [11-Feb-2015] $)
+  $}
+
+  ${
+    $d R a $.  $d S a $.
+    clos1base.1 $e |- C = Clos1 ( S , R ) $.
+    $( The initial set of a closure is a subset of the closure.  Theorem
+       IX.5.13 of [Rosser] p. 246. 
+       (Contributed by SF, 13-Feb-2015.) $)
+    clos1base $p |- S C_ C $=
+      ( va cv wss cima wa cab cint ssmin cclos1 df-clos1 eqtr2i sseqtri ) CCEFZ
+      GBQHQGZIEJKZARECLACBMSDBCENOP $.
+      $( [13-Feb-2015] $)
+
+    ${
+      $d A x $.  $d B x $.  $d B y $.  $d C x $.  $d C y $.  $d R x $.
+      $d R y $.  $d x y $.  $d a x $.  $d a y $.  $d A y $.  $d a z $.
+      $d R z $.  $d x z $.  $d y z $.
+
+      $( If a class is connected to an element of a closure via ` R ` , then it
+         is a member of the closure.  Theorem IX.5.14 of [Rosser] p. 246. 
+         (Contributed by SF, 13-Feb-2015.) $)
+      clos1conn $p |- ( ( A e. C /\ A R B ) -> B e. C ) $=
+        ( vx vy va vz cvv wcel wa wbr cv wi wceq eleq1 breq1 wss adantl anbi12d
+        brex imbi1d breq2 anbi2d imbi12d cima wel wal wrex rspcev elima sylibr
+        ancoms ssel syl5 exp3a com12 adantld a2d alimdv cab cint df-clos1 eqtri
+        cclos1 eleq2i vex elintab bitri 3imtr4g impcom vtocl2g mpcom ) AKLBKLMZ
+        ACLZABDNZMZBCLZVRVPVQABDUCUAGOZCLZWAHOZDNZMZWCCLZPVQAWCDNZMZWFPVSVTPGHA
+        BKKWAAQZWEWHWFWIWBVQWDWGWAACRWAAWCDSUBUDWCBQZWHVSWFVTWJWGVRVQWCBADUEUFW
+        CBCRUGWDWBWFWDEIOZTZDWKUHZWKTZMZGIUIZPZIUJZWOHIUIZPZIUJZWBWFWDWQWTIWDWO
+        WPWSWDWNWPWSPZWLWNWDXBWNWDWPWSWDWPMWCWMLZWNWSWPWDXCWPWDMJOZWCDNZJWKUKXC
+        XEWDJWAWKXDWAWCDSULJWCDWKUMUNUOWMWKWCUPUQURUSUTVAVBWBWAWOIVCVDZLWRCXFWA
+        CEDVGXFFDEIVEVFZVHWOIWAGVIVJVKWFWCXFLXACXFWCXGVHWOIWCHVIVJVKVLVMVNVO $.
+        $( [13-Feb-2015] $)
+    $}
+
+  $}
+
+  ${
+    $d S a $.  $d R a $.
+    clos1induct.1 $e |- S e. _V $.
+    clos1induct.2 $e |- R e. _V $.
+    clos1induct.3 $e |- C = Clos1 ( S , R ) $.
+    ${
+      $d C a x z $.  $d R x z $.  $d X a x z $.
+      $( Inductive law for closure.  If the base set is a subset of ` X ` , and
+         ` X ` is closed under ` R ` , then the closure is a subset of ` X ` .
+         Theorem IX.5.15 of [Rosser] p. 247. 
+         (Contributed by SF, 11-Feb-2015.) $)
+      clos1induct $p |- ( ( X e. V /\ S C_ X /\
+          A. x e. C A. z ( ( x e. X /\ x R z ) -> z e. X ) ) ->
+          C C_ X ) $=
+        ( va wcel cvv wss cv wa wi wal albii bitri cin wral cima cclos1 clos1ex
+        wbr eqeltri inexg mpan2 clos1base ssin biimpi wex elima2 imbi12i df-ral
+        impexp wb clos1conn biantrud adantrl pm5.74i bitr3i ancom anbi1i imbi1i
+        elin anass 19.23v 3bitr2i bitr4i dfss2 ralcom4 3bitr4i biimpri w3a cint
+        cab df-clos1 eqtri sseq2 imaeq2 id sseq12d anbi12d elabg biimprd 3impib
+        wceq intss1 syl syl5eqss inss1 syl6ss syl3an ) GFLZGCUAZMLZEGNZEWQNZAOZ
+        GLZXABOZDUFZPZXCGLZQZBRACUBZDWQUCZWQNZCGNWPCMLWRCEDUDZMJDEHIUEUGGCFMUHU
+        IWSECNZWTCDEJUJWSXLPWTEGCUKULUIXJXHXCXILZXCWQLZQZBRXGACUBZBRXJXHXOXPBXO
+        XAWQLZXDPZAUMZXFXCCLZPZQZXPXMXSXNYAAXCDWQUNXCGCVGUOXPXACLZXEPZYAQZARZXR
+        YAQZARYBXPYCXGQZARYFXGACUPYHYEAYHYDXFQYEYCXEXFUQYDXFYAYCXDXFYAURXBYCXDP
+        XTXFXAXCCDEJUSUTVAVBVCSTYGYEAXRYDYAXRYCXBPZXDPYDXQYIXDXQXBYCPYIXAGCVGXB
+        YCVDTVEYCXBXDVHTVFSXRYAAVIVJVKSBXIWQVLXGABCVMVNVOWRWTXJVPZCWQGYJCEKOZNZ
+        DYKUCZYKNZPZKVRZVQZWQCXKYQJDEKVSVTYJWQYPLZYQWQNWRWTXJYRWRYRWTXJPZYOYSKW
+        QMYKWQWIZYLWTYNXJYKWQEWAYTYMXIYKWQYKWQDWBYTWCWDWEWFWGWHWQYPWJWKWLGCWMWN
+        WO $.
+        $( [11-Feb-2015] $)
+    $}
+  $}
+
+  ${
+    $d A x $.  $d C y $.  $d C z $.  $d ch x $.  $d ph y $.  $d ph z $.
+    $d ps x $.  $d R y $.  $d R z $.  $d S x $.  $d th x $.  $d x y $.
+    $d x z $.  $d y z $.
+    clos1is.1 $e |- S e. _V $.
+    clos1is.2 $e |- R e. _V $.
+    clos1is.3 $e |- C = Clos1 ( S , R ) $.
+    clos1is.4 $e |- { x | ph } e. _V $.
+    clos1is.5 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    clos1is.6 $e |- ( x = z -> ( ph <-> ch ) ) $.
+    clos1is.7 $e |- ( x = A -> ( ph <-> th ) ) $.
+    clos1is.8 $e |- ( x e. S -> ph ) $.
+    clos1is.9 $e |- ( ( y e. C /\ y R z /\ ps ) -> ch ) $.
+    $( Induction scheme for closures.  Hypotheses one through three set up
+       existence properties, hypothesis four sets up stratification, hypotheses
+       five through seven set up implicit substitution, and hypotheses eight
+       and nine set up the base and induction steps. 
+       (Contributed by SF, 13-Feb-2015.) $)
+    clos1is $p |- ( A e. C -> th ) $=
+      ( wcel cab cvv wss cv wbr wa wal wral ssab mpgbir 3expib vex anbi1i ancom
+      wi elab bitri 3imtr4g alrimiv rgen clos1induct mp3an sseli elabg mpbid )
+      HIUAHAEUBZUADIVGHVGUCUAKVGUDZFUEZVGUAZVIGUEZJUFZUGZVKVGUAZUPZGUHZFIUIIVGU
+      DOVHEUEKUAAUPEAEKUJSUKVPFIVIIUAZVOGVQVLBUGZCVMVNVQVLBCTULVMBVLUGVRVJBVLAB
+      EVIFUMPUQUNBVLUOURACEVKGUMQUQUSUTVAFGIJKUCVGLMNVBVCVDADEHIRVEVF $.
+      $( [13-Feb-2015] $)
+  $}
+
+  ${
+    $d A x $.  $d A y $.  $d C w $.  $d C x $.  $d C y $.  $d C z $.  $d R w $.
+    $d R x $.  $d R y $.  $d R z $.  $d S w $.  $d S y $.  $d S z $.  $d w x $.
+    $d w y $.  $d w z $.  $d x y $.  $d x z $.  $d y z $.
+    clos1basesuc.1 $e |- S e. _V $.
+    clos1basesuc.2 $e |- R e. _V $.
+    clos1basesuc.3 $e |- C = Clos1 ( S , R ) $.
+    $( A member of a closure is either in the base set or connected to another
+       member by ` R ` .  Theorem IX.5.16 of [Rosser] p. 248. 
+       (Contributed by SF, 13-Feb-2015.) $)
+    clos1basesuc $p |- ( A e. C <-> ( A e. S \/ E. x e. C x R A ) ) $=
+      ( vy vz vw wcel cv wbr wrex wo cab eleq1 breq2 rexbidv cima cun cvv abid2
+      eqcomi df-ima uneq12i unab eqtri cclos1 clos1ex eqeltri unex eqeltrri weq
+      imaex orbi12d orc wa wi clos1base sseli breq1 rspcev clos1conn rexlimiva
+      wceq ex syl jaoi impcom cbvrexv sylibr olcd 3adant1 clos1is impbii ) BCLZ
+      BELZAMZBDNZACOZPZIMZELZVTWDDNZACOZPZJMZELZVTWIDNZACOZPZKMZELZVTWNDNZACOZP
+      ZWCIJKBCDEFGHEDCUAZUBZWHIQZUCWTWEIQZWGIQZUBXAEXBWSXCXBEIEUDUEIADCUFUGWEWG
+      IUHUIEWSFDCGCEDUJUCHDEFGUKULUPUMUNIJUOZWEWJWGWLWDWIERXDWFWKACWDWIVTDSTUQI
+      KUOZWEWOWGWQWDWNERXEWFWPACWDWNVTDSTUQWDBVGZWEVSWGWBWDBERXFWFWAACWDBVTDSTU
+      QWEWGURWIWNDNZWMWRWICLZXGWMUSZWQWOXIWDWNDNZICOZWQWMXGXKWJXGXKUTZWLWJXHXLE
+      CWICDEHVAZVBXHXGXKXJXGIWICWDWIWNDVCVDVHZVIWKXLACVTCLWKUSXHXLVTWICDEHVEXNV
+      IVFVJVKWPXJAICVTWDWNDVCVLVMVNVOVPVSVRWBECBXMVBWAVRACVTBCDEHVEVFVJVQ $.
+      $( [13-Feb-2015] $)
+
+    $d S x $.
+    $( A closure is equal to the base set together with the image of the
+       closure under ` R ` .  Theorem X.4.37 of [Rosser] p. 303. 
+       (Contributed by SF, 10-Mar-2015.) $)
+    clos1baseima $p |- C = ( S u. ( R " C ) ) $=
+      ( vx vy cima cun cv wcel wbr wrex elima orbi2i elun clos1basesuc 3bitr4ri
+      wo eqriv ) GACBAIZJZGKZCLZUDUBLZTUEHKUDBMHANZTUDUCLUDALUFUGUEHUDBAOPUDCUB
+      QHUDABCDEFRSUA $.
+      $( [10-Mar-2015] $)
+  $}
+
+  ${
+    $d a x y z $.
+    $( The finite cardinals as expressed via the closure operation.  Theorem
+       X.1.3 of [Rosser] p. 276. 
+       (Contributed by SF, 12-Feb-2015.) $)
+    dfnnc3 $p |- Nn = Clos1 ( { 0c } , ( x e. _V |-> ( x +c 1c ) ) ) $=
+      ( va vy vz c0c cv wcel c1c cplc wral wa cab cint wss cvv wi wal wceq 1cex
+      vex csn cmpt cima cnnc cclos1 0cex snss wel cfv dfss2 ralcom4 wrex wfn wb
+      eqid fnmpt addcex a1i mprg ssv fvelimab mp2an imbi1i r19.23v bitr4i albii
+      addceq1 fvmpt ax-mp eqeq1i eqcom bitri eleq1 ceqsalv ralbii anbi12i abbii
+      3bitr2ri inteqi df-nnc df-clos1 3eqtr4i ) EBFZGZCFZHIZWCGZCWCJZKZBLZMEUAZ
+      WCNZAOAFZHIZUBZWCUCZWCNZKZBLZMUDWKWOUEWJWSWIWRBWDWLWHWQEWCUFUGWQDFZWPGZDB
+      UHZPZDQZWEWOUIZWTRZXBPZDQZCWCJZWHDWPWCUJXIXGCWCJZDQXDXGCDWCUKXCXJDXCXFCWC
+      ULZXBPXJXAXKXBWOOUMZWCONXAXKUNWNOGZXLAOAOWNWOOWOUOZUPXMWMOGWMHATSUQURUSWC
+      UTCOWCWTWOVAVBVCXFXBCWCVDVEVFVEXHWGCWCXHWTWFRZXBPZDQWGXGXPDXFXOXBXFWFWTRX
+      OXEWFWTWEOGXEWFRCTZAWEWNWFOWOWMWEHVGXNWEHXQSUQZVHVIVJWFWTVKVLVCVFXBWGDWFX
+      RWTWFWCVMVNVLVOVRVPVQVSCBVTWOWKBWAWB $.
+      $( [12-Feb-2015] $)
+  $}
+
+  ${
+    $d C x $.  $d C y $.  $d R x $.  $d R y $.  $d S x $.  $d S y $.  $d x y $.
+    clos1nrel.1 $e |- S e. _V $.
+    clos1nrel.2 $e |- R e. _V $.
+    clos1nrel.3 $e |- C = Clos1 ( S , R ) $.
+    $( The value of a closure when the base set is not related to anything in
+       ` R ` . 
+       (Contributed by SF, 13-Mar-2015.) $)
+    clos1nrel $p |- ( ( R " S ) = (/) -> C = S ) $=
+      ( vx vy cima c0 wceq cv wcel wbr wa wi wal wral wss cvv wn eq0 wrex elima
+      rspe sylibr con3i pm2.21d alimi sylbi ralrimivw clos1induct syl clos1base
+      ssid mp3an12 a1i eqssd ) BCIZJKZACUTGLZCMVAHLZBNZOZVBCMZPZHQZGARZACSZUTVG
+      GAUTVBUSMZUAZHQVGHUSUBVKVFHVKVDVEVDVJVDVCGCUCVJVCGCUEGVBBCUDUFUGUHUIUJUKC
+      TMCCSVHVIDCUOGHABCTCDEFULUPUMCASUTABCFUNUQUR $.
+      $( [13-Mar-2015] $)
+  $}
