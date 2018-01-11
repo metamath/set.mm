@@ -51749,19 +51749,19 @@ $)
   ${
     $d x y z F $.  $d x y z A $.
     $( Alternate definition of the value of a function.  Definition 6.11 of
-       [TakeutiZaring] p. 26.  (Contributed by ?who?, 30-Apr-2004.) $)
+       [TakeutiZaring] p. 26.  (Contributed by NM, 30-Apr-2004.)  (Revised by
+       Mario Carneiro, 31-Aug-2015.) $)
     fv3 $p |- ( F ` A ) = { x | ( E. y ( x e. y /\ A F y ) /\
               E! y A F y ) } $=
-      ( vz wel cv wbr wa wex weu cfv wcel weq wb wal elfv wi breq2 sylib anim2i
-      bi2 alimi vex ceqsalv eximi elequ2 anbi12d cbvexv 19.40 simprd sylibr jca
-      df-eu hbeu1 ax-17 hba1 hban hbex hbim ax-14 syl6 com23 imp3a anc2ri com12
-      bi1 sps eximdv syl5bi exlimi imp impbii bitri abbi2i ) ABFZCBGZDHZIZBJZVR
-      BKZIZACDLZAGZWCMAEFZVRBENZOZBPZIZEJZWBEBWDCDQWJWBWJVTWAWJWECEGZDHZIZEJVTW
-      IWMEWHWLWEWHWFVRRZBPWLWGWNBVRWFUBUCVRWLBWKEUDVQWKCDSUETUAUFWMVSEBEBNWEVPW
-      LVREBAUGWKVQCDSUHUITWJWHEJZWAWJWEEJWOWEWHEUJUKVRBEUNZULUMVTWAWJVSWAWJRBWA
-      WJBVRBUOWIBEWEWHBWEBUPWGBUQURUSUTWAWOVSWJWPVSWHWIEWHVSWIWHVSWEWGVSWERBWGV
-      PVRWEWGVRVPWEWGVRWFVPWERVRWFVGBEAVAVBVCVDVHVEVFVIVJVKVLVMVNVO $.
-      $( [30-Apr-2004] $)
+      ( vz cv wcel wbr wa wex weu cfv wceq wb wal elfv wi bi2 breq2 sylib alimi
+      vex ceqsalv anim2i eximi elequ2 anbi12d cbvexv 19.40 simprd df-eu jca nfv
+      sylibr nfeu1 nfa1 nfan nfex nfim bi1 ax-14 syl6 com23 imp3a anc2ri eximdv
+      sps com12 syl5bi exlimi imp impbii bitri abbi2i ) AFZBFZGZCVPDHZIZBJZVRBK
+      ZIZACDLZVOWCGVOEFZGZVRVPWDMZNZBOZIZEJZWBEBVOCDPWJWBWJVTWAWJWECWDDHZIZEJVT
+      WIWLEWHWKWEWHWFVRQZBOWKWGWMBVRWFRUAVRWKBWDEUBVPWDCDSUCTUDUEWLVSEBWDVPMWEV
+      QWKVREBAUFWDVPCDSUGUHTWJWHEJZWAWJWEEJWNWEWHEUIUJVRBEUKZUNULVTWAWJVSWAWJQB
+      WAWJBVRBUOWIBEWEWHBWEBUMWGBUPUQURUSWAWNVSWJWOVSWHWIEWHVSWIWHVSWEWGVSWEQBW
+      GVQVRWEWGVRVQWEWGVRWFVQWEQVRWFUTBEAVAVBVCVDVGVEVHVFVIVJVKVLVMVN $.
   $}
 
   ${
@@ -51883,19 +51883,18 @@ $)
     PQRAUBST $.
     $( [13-Nov-1995] $)
 
+
   ${
     $d x y A $.  $d x y F $.
     $( If the restriction of a class to a singleton is not a function, its
-       value is the empty set.  (The proof was shortened by Andrew Salmon,
-       22-Oct-2011.)  (Contributed by ?who?, 8-Aug-2010.)  (Revised by ?who?,
-       22-Oct-2011.) $)
+       value is the empty set.  (Contributed by NM, 8-Aug-2010.)  (Proof
+       shortened by Andrew Salmon, 22-Oct-2011.) $)
     nfunsn $p |- ( -. Fun ( F |` { A } ) -> ( F ` A ) = (/) ) $=
       ( vx vy cfv c0 wceq csn cres wfun wn wrel cv wbr wmo wal weu eumo sylbi
-      wa wcel brres wb vex elsn breq1 biimpac moimi syl tz6.12-2 alrimiv relres
+      wa wcel vex brres wb elsn breq1 biimpac moimi syl tz6.12-2 alrimiv relres
       nsyl4 jctil dffun6 sylibr con1i ) ABEFGZBAHZIZJZURKZUTLZCMZDMZUTNZDOZCPZT
-      VAVBVHVCVBVGCAVEBNZDQZVGURVJVIDOVGVIDRVFVIDVFVDVEBNZVDUSUAZTVIVDVEBUSUBVL
-      VKVIVLVDAGVKVIUCVDACUDUEVDAVEBUFSUGSUHUIDABUJUMUKBUSULUNCDUTUOUPUQ $.
-      $( [22-Oct-2011] $) $( [8-Aug-2010] $)
+      VAVBVHVCVBVGCAVEBNZDQZVGURVJVIDOVGVIDRVFVIDVFVDVEBNZVDUSUAZTVIVDVEBUSDUBU
+      CVLVKVIVLVDAGVKVIUDCAUEVDAVEBUFSUGSUHUIDABUJUMUKBUSULUNCDUTUOUPUQ $.
   $}
 
   $( Function value of the empty set.  (Contributed by Stefan O'Rear,
@@ -51914,18 +51913,19 @@ $)
     ABDNOPQ $.
     $( [13-Nov-1995] $)
 
+
   ${
     $d x y A $.  $d x y F $.  $d x y B $.
     $( The second argument of a binary relation on a function is the function's
-       value.  (Contributed by ?who?, 30-Apr-2004.) $)
+       value.  (Contributed by NM, 30-Apr-2004.)  (Revised by Mario Carneiro,
+       28-Apr-2015.) $)
     funbrfv $p |- ( Fun F -> ( A F B -> ( F ` A ) = B ) ) $=
       ( vx vy wfun wbr cfv wceq cvv wcel wa brex adantl cv breq1 anbi2d imbi12d
       wi fveq2 eqeq1d breq2 eqeq2 weu funeu tz6.12-1 sylan2 anabss7 vtocl2g ex
       mpcom ) CFZABCGZACHZBIZAJKBJKLZULUMLZUOUMUPULABCMNULDOZEOZCGZLZURCHZUSIZS
       ULAUSCGZLZUNUSIZSUQUOSDEABJJURAIZVAVEVCVFVGUTVDULURAUSCPQVGVBUNUSURACTUAR
-      USBIZVEUQVFUOVHVDUMULUSBACUBQUSBUNUCRULUTVCVAUTUTEUDVCDECUEEURUSCUFUGUHUI
-      UKUJ $.
-      $( [30-Apr-2004] $)
+      USBIZVEUQVFUOVHVDUMULUSBACUBQUSBUNUCRULUTVCVAUTUTEUDVCEURUSCUEEURCUFUGUHU
+      IUKUJ $.
   $}
 
   ${
@@ -51940,14 +51940,17 @@ $)
 
   ${
     $d x F $.  $d x A $.  $d x B $.  $d x C $.
-    $( Equivalence of function value and binary relation.  (Contributed by
-       ?who?, 17-Feb-2013.) $)
+    $( Equivalence of function value and binary relation.  (Contributed by NM,
+       19-Apr-2004.)  (Revised by Mario Carneiro, 28-Apr-2015.) $)
     fnbrfvb $p |- ( ( F Fn A /\ B e. A ) ->
                    ( ( F ` B ) = C <-> B F C ) ) $=
-      ( vx wfn wcel wa cv wbr weu cfv wceq wb fneu tz6.12c syl ) DAFBAGHBEIDJEK
-      BDLCMBCDJNEABDOEBCDPQ $.
-      $( [17-Feb-2013] $)
-  $}
+      ( vx wfn wcel wa cfv wceq wbr eqid cv wb wi fvex eqeq2 breq2 bibi12d syl
+      imbi2d weu fneu tz6.12c vtocl mpbii syl5ibcom fnfun funbrfv adantr impbid
+      wfun ) DAFZBAGZHZBDIZCJZBCDKZUOBUPDKZUQURUOUPUPJZUSUPLUOUPEMZJZBVADKZNZOU
+      OUTUSNZOEUPBDPVAUPJZVDVEUOVFVBUTVCUSVAUPUPQVAUPBDRSUAUOVCEUBVDEABDUCEBDUD
+      TUEUFUPCBDRUGUMURUQOZUNUMDULVGADUHBCDUITUJUK $.
+
+ $}
 
   $( Equivalence of function value and ordered pair membership.  (Contributed
      by ?who?, 9-Jan-2015.) $)
@@ -52119,22 +52122,15 @@ $)
     UJJZIULURUTDBCQTDUHUJUAUBUMUOQUC $.
     $( [6-Jan-2011] $)
 
-  ${
-    $d F x y $.  $d A x y $.
-    $( A simplified expression for the value of a function when we know it's a
-       function.  (Contributed by ?who?, 22-May-1998.) $)
-    funfv $p |- ( Fun F -> ( F ` A ) = U. ( F " { A } ) ) $=
-      ( vx vy cvv cima cuni wceq cv wbr wmo wal wi wn c0 syl unieqd uni0 syl6eq
-      eqtr4d wfun wcel cfv csn wrel dffun6 simprbi ax-17 breq1 mobid spcgv cio
-      cab wex weu df-mo euex con3i iotanul alnex bitri biimpri iotauni ja sylbi
-      ab0 df-fv imasn unieqi 3eqtr4g syl6com fvprc biimpi imaeq2d ima0 pm2.61d1
-      snprc eqtri ) BUAZAEUBZABUCZBAUDZFZGZHZVSCIZDIZBJZDKZCLZVTWEMVSBUEWJCDBUF
-      UGVTWJAWGBJZDKZWEWIWLCAEWFAHZWHWKDWMDUHWFAWGBUIUJUKWLWKDULZWKDUMZGZWAWDWL
-      WKDUNZWKDUOZMWNWPHZWKDUPWQWRWSWQNZWNOWPWTWRNWNOHWRWQWKDUQURWKDUSPWTWPOGZO
-      WTWOOWOOHZWTXBWKNDLWTWKDVFWKDUTVAVBQRSTWKDVCVDVEDABVGWCWODABVHVIVJVKPVTNZ
-      WAOWDABVLXCWDBOFZGZOXCWCXDXCWBOBXCWBOHAVQVMVNQXEXAOXDOBVOVIRVRSTVP $.
-      $( [22-May-1998] $)
-  $}
+
+  $( A simplified expression for the value of a function when we know it's a
+     function.  (Contributed by NM, 22-May-1998.) $)
+  funfv $p |- ( Fun F -> ( F ` A ) = U. ( F " { A } ) ) $=
+    ( wfun cdm wcel cfv csn cima cuni wceq fvex unisn wfn df-fn mpbiran2 fnsnfv
+    wa eqid unieqd c0 sylanbr syl5eqr ex wn ndmfv ndmima syl6eq eqtr4d pm2.61d1
+    uni0 ) BCZABDZEZABFZBAGHZIZJZUKUMUQUKUMQZUNUNGZIUPUNABKLURUSUOUKBULMZUMUSUO
+    JUTUKULULJULRBULNOULABPUASUBUCUMUDZUNTUPABUEVAUPTITVAUOTABUFSUJUGUHUI $.
+
 
   ${
     $d y A $.  $d y F $.
