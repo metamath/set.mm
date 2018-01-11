@@ -59078,11 +59078,11 @@ $)
     $( Lemma for ~ eqer . 
        (Contributed by ?who?, 17-Mar-2008.) $)
     eqerlem $p |- ( z R w <-> [_ z / x ]_ A = [_ w / x ]_ A ) $=
-      ( vv cv wceq wsbc csb cvv wcel wb vex ax-mp eqeq2i wbr brabsb ax-17 sbbii
-      sbceq1g csbief bitr4i sbceq2g csbcog bitri 3bitri ) CKZDKZGUAEFLZAULMZBUM
-      MAULENZABKZENZLZBUMMZUPAUMENZLZUNABCDGIUBUOUSBDUOUPFLZUSULOPUOVCQCRAULEFO
-      UESURFUPAJUQEFBRJKFPAUCHUFTUGUDUTUPBUMURNZLZVBUMOPZUTVEQDRZBUMUPUROUHSVDV
-      AUPVFVDVALVGABUMEOUISTUJUK $.
+      ( cv wceq wsbc csb bitri cvv wcel wb vex ax-mp eqeq2i brabsb sbceq1g nfcv
+      wbr sbccom csbief bitr4i sbcbii sbceq2g csbco 3bitri ) CJZDJZGUDZEFKZAULL
+      ZBUMLZAULEMZABJZEMZKZBUMLZURAUMEMZKZUNUOBUMLAULLUQUOABULUMGIUAUOABULUMUEN
+      UPVABUMUPURFKZVAULOPUPVEQCRAULEFOUBSUTFURAUSEFBRAFUCHUFTUGUHVBURBUMUTMZKZ
+      VDUMOPVBVGQDRBUMURUTOUISVFVCURABUMEUJTNUK $.
       $( [17-Mar-2008] $)
 
     eqer.3 $e |- R e. _V $.
@@ -62407,16 +62407,15 @@ $)
     $( Membership in cardinal two. 
        (Contributed by SF, 3-Mar-2015.) $)
     el2c $p |- ( A e. 2c <-> E. x E. y ( x =/= y /\ A = { x , y } ) ) $=
-      ( vt c1c wcel cv csn wceq cun ccompl wa wex c2c df-rex bicomi bitri exbii
-      wrex weq cplc wne cpr elsuc el1c anbi1i 19.41v 1p1e2c eleq2i snex compleq
-      excom eleq2d uneq1 eqeq2d anbi12d exbidv syl5bb ceqsexv wn elcompl equcom
-      vex elsn necon3bbii df-pr eqeq2i anbi12i 3bitr3i ) CEEUAZFZDGZAGZHZIZCVLB
-      GZHZJZIZBVLKZSZLZDMZAMZCNFVMVPUBZCVMVPUCZIZLZBMZAMVKWADESZWDBCEDUDWJVLEFZ
-      WALZDMZWDWADEOWMWBAMZDMWDWLWNDWLVOAMZWALZWNWKWOWAAVLUEUFWNWPVOWAAUGPQRWBD
-      AULQQQVJNCUHUIWCWIAWCVPVNKZFZCVNVQJZIZLZBMZWIWAXBDVNVMUJWAVPVTFZVSLZBMVOX
-      BVSBVTOVOXDXABVOXCWRVSWTVOVTWQVPVLVNUKUMVOVRWSCVLVNVQUNUOUPUQURUSXAWHBWRW
-      EWTWGWRVPVNFZUTWEVPVNBVCZVAXEVMVPXEBATABTVPVMXFVDBAVBQVEQWGWTWFWSCVMVPVFV
-      GPVHRQRVI $.
+      ( vt c1c wcel cv csn wceq cun ccompl wa wex c2c df-rex anbi1i exbii bitri
+      wrex 3bitri cplc wne elsuc el1c 19.41v bitr4i excom 1p1e2c eleq2i compleq
+      cpr snex uneq1 syl6eqr eqeq2d rexeqbidv ceqsexv wn weq elsn equcom notbii
+      df-pr vex elcompl df-ne 3bitr4i 3bitr3i ) CEEUAZFZDGZAGZHZIZCVKBGZHZJZIZB
+      VKKZSZLZDMZAMZCNFVLVOUBZCVLVOUKZIZLZBMZAMVJVTDESVKEFZVTLZDMZWCBCEDUCVTDEO
+      WKWAAMZDMWCWJWLDWJVNAMZVTLWLWIWMVTAVKUDPVNVTAUEUFQWADAUGRTVINCUHUIWBWHAWB
+      WFBVMKZSZVOWNFZWFLZBMWHVTWODVMVLULVNVRWFBVSWNVKVMUJVNVQWECVNVQVMVPJWEVKVM
+      VPUMVLVOVCUNUOUPUQWFBWNOWQWGBWPWDWFVOVMFZURABUSZURWPWDWRWSWRBAUSWSBVLUTBA
+      VARVBVOVMBVDVEVLVOVFVGPQTQVH $.
       $( [3-Mar-2015] $)
   $}
 
