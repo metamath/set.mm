@@ -52472,10 +52472,10 @@ $)
        each member of its domain) is included in the union of its domain.
        (Contributed by ?who?, 31-Aug-1999.) $)
     chfnrn $p |- ( ( F Fn A /\ A. x e. A ( F ` x ) e. x ) -> ran F C_ U. A ) $=
-      ( vy wfn cv cfv wcel wral wa cuni wrex wceq fvelrnb biimpd hbra1 wi eleq1
-      crn rsp biimpcd syl6 reximdai sylan9 eluni2 syl6ibr ssrdv ) CBEZAFZCGZUIH
-      ZABIZJZDCSZBKZUMDFZUNHZUPUIHZABLZUPUOHUHUQUJUPMZABLZULUSUHUQVAABUPCNOULUT
-      URABUKABPULUIBHUKUTURQUKABTUTUKURUJUPUIRUAUBUCUDAUPBUEUFUG $.
+      ( vy wfn cv cfv wcel wral crn cuni wel wrex wceq fvelrnb biimpd nfra1 rsp
+      wa wi eleq1 biimpcd syl6 reximdai sylan9 eluni2 syl6ibr ssrdv ) CBEZAFZCG
+      ZUJHZABIZSZDCJZBKZUNDFZUOHZDALZABMZUQUPHUIURUKUQNZABMZUMUTUIURVBABUQCOPUM
+      VAUSABULABQUMUJBHULVAUSTULABRVAULUSUKUQUJUAUBUCUDUEAUQBUFUGUH $.
       $( [31-Aug-1999] $)
   $}
 
@@ -52697,18 +52697,18 @@ $)
               ( F C_ ( A X. B ) /\ A. x e. A E! y x F y ) ) $=
       ( wss cv wbr wral wa wcel cdm adantr sylibr syl sylanbrc crn wrel wal wi
       wf cxp weu fssxp wex wmo cfv cop wfun ffun eleq2d biimpar funfvop syl2anc
-      fdm df-br fvex breq2 spcev funmo eu5 ralrimiva jca wfn wceq relxp df-ral
-      relss mpi wn dmss dmxpss syl6ss breldm ssel syl5 exlimdv con3d df-mo syl6
-      pm2.21 a1dd pm2.27 eumo pm2.61d2 alimdv syl5bi dffun6 euex exlimiv ralimi
-      imp dfss3 anim12i eqss df-fn rnss rnxpss df-f impbii ) CDEUAZECDUBZFZAGZB
-      GZEHZBUCZACIZJZXAXCXHCDEUDXAXGACXAXDCKZJZXFBUEZXFBUFZXGXKXDXDEUGZEHZXLXKX
-      DXNUHEKZXOXKEUIZXDELZKZXPXAXQXJCDEUJZMXAXSXJXAXRCXDCDEUOUKULXDEUMUNXDXNEU
-      PNXFXOBXNXDEUQXEXNXDEURUSOXAXMXJXAXQXMXTABEUTOMXFBVAPVBVCXIECVDZEQZDFZXAX
-      IXQXRCVEZYAXIERZXMASZXQXCYEXHXCXBRYECDVFEXBVHVIMXCXHYFXHXJXGTZASXCYFXGACV
+      fdm df-br fvex breq2 spcev funmo eu5 ralrimiva jca wfn relxp relss df-ral
+      wceq mpi wn dmss dmxpss syl6ss breldm ssel syl5 exlimdv con3d pm2.21 syl6
+      df-mo a1dd pm2.27 eumo pm2.61d2 alimdv syl5bi dffun6 exlimiv ralimi dfss3
+      imp euex anim12i eqss df-fn rnss rnxpss df-f impbii ) CDEUAZECDUBZFZAGZBG
+      ZEHZBUCZACIZJZXAXCXHCDEUDXAXGACXAXDCKZJZXFBUEZXFBUFZXGXKXDXDEUGZEHZXLXKXD
+      XNUHEKZXOXKEUIZXDELZKZXPXAXQXJCDEUJZMXAXSXJXAXRCXDCDEUOUKULXDEUMUNXDXNEUP
+      NXFXOBXNXDEUQXEXNXDEURUSOXAXMXJXAXQXMXTBXDEUTOMXFBVAPVBVCXIECVDZEQZDFZXAX
+      IXQXRCVHZYAXIERZXMASZXQXCYEXHXCXBRYECDVEEXBVFVIMXCXHYFXHXJXGTZASXCYFXGACV
       GXCYGXMAXCXJYGXMTXCXJVJZXMYGXCYHXLVJZXMXCXLXJXCXRCFZXLXJTXCXRXBLCEXBVKCDV
-      LVMZYJXFXJBXFXSYJXJXDXEEVNZXRCXDVOVPVQOVRYIXLXGTXMXLXGWAXFBVSNVTWBXJYGXGX
+      LVMZYJXFXJBXFXSYJXJXDXEEVNZXRCXDVOVPVQOVRYIXLXGTXMXLXGVSXFBWANVTWBXJYGXGX
       MXJXGWCXFBWDVTWEWFWGWLABEWHPXIYJCXRFZJYDXCYJXHYMYKXHXSACIYMXGXSACXGXLXSXF
-      BWIXFXSBYLWJOWKACXRWMNWNXRCWONECWPPXCYCXHXCYBXBQDEXBWQCDWRVMMCDEWSPWT $.
+      BWMXFXSBYLWIOWJACXRWKNWNXRCWONECWPPXCYCXHXCYBXBQDEXBWQCDWRVMMCDEWSPWT $.
       $( [20-Mar-2007] $)
 
     $( Alternate definition of a mapping.  (Contributed by ?who?,
@@ -52935,7 +52935,7 @@ $)
       ( wne cop cpr wfn crn wa jctir sylibr csn cun rnsnop df-pr wss wfun funpr
       wf cdm wceq dmprop df-fn uneq12i rneqi rnun eqtri 3eqtr4i eqimssi df-f )
       ABIZACJZBDJZKZABKZLZUSMZCDKZUAZNUTVCUSUDUPVAVDUPUSUBZUSUEUTUFZNVAUPVEVFAB
-      CDEFGHUCABCDGHUGOUSUTUHPVBVCUQQZMZURQZMZRZCQZDQZRVBVCVHVLVJVMACESBDFSUIVB
+      CDEFGHUCACBDGHUGOUSUTUHPVBVCUQQZMZURQZMZRZCQZDQZRVBVCVHVLVJVMACESBDFSUIVB
       VGVIRZMVKUSVNUQURTUJVGVIUKULCDTUMUNOUTVCUSUOP $.
       $( [22-Oct-2011] $) $( [20-Jun-2010] $)
   $}
