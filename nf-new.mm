@@ -29820,6 +29820,7 @@ $)
       ( vx cdif cv eldifi ssriv ) CABDACEABFG $.
   $}
 
+
   $( A difference of two classes is contained in the minuend.  Deduction form
      of ~ difss .  (Contributed by David Moews, 1-May-2017.) $)
   difssd $p |- ( ph -> ( A \ B ) C_ A ) $=
@@ -30953,6 +30954,14 @@ $)
     BEZCKLFOPMANBAGBGHIJ $.
     $( [12-Jan-2015] $)
 
+  $( A difference is a subset of the complement of its second argument. 
+     (Contributed by SF, 10-Mar-2015.) $)
+  difsscompl $p |- ( A \ B ) C_ ~ B $=
+    ( cdif ccompl cin df-dif inss2 eqsstri ) ABCABDZEIABFAIGH $.
+    $( [10-Mar-2015] $)
+
+
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
            The empty set
@@ -31795,6 +31804,19 @@ $)
       SUMABUDDCPABUDECPTQRQUPUHABFDESUAFUJULSUB $.
 
   $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( Contraposition law for subset. 
+       (Contributed by ?who?, 11-Mar-2015.) $)
+    sscon34 $p |- ( A C_ B <-> ~ B C_ ~ A ) $=
+      ( vx cv wcel wi wal ccompl wss wn con34b vex elcompl imbi12i bitr4i albii
+      dfss2 3bitr4i ) CDZAEZSBEZFZCGSBHZEZSAHZEZFZCGABIUCUEIUBUGCUBUAJZTJZFUGTU
+      AKUDUHUFUISBCLZMSAUJMNOPCABQCUCUEQR $.
+      $( [11-Mar-2015] $)
+  $}
+
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -35561,6 +35583,14 @@ $)
   uncompl $p |- ( A u. ~ A ) = _V $=
     ( ccompl cun cnin cvv df-un nincompl eqtri ) AABZCIIBDEAIFIGH $.
 
+
+
+  $( The intersection of an intersection and a difference is empty. 
+     (Contributed by ?who?, 10-Mar-2015.) $)
+  inindif $p |- ( ( A i^i B ) i^i ( A \ B ) ) = (/) $=
+    ( cin cdif ccompl c0 df-dif ineq2i inindi incompl in0 eqtri 3eqtr2i ) ABCZA
+    BDZCNABEZCZCABPCZCZFOQNABGHABPISAFCFRFABJHAKLM $.
+    $( [10-Mar-2015] $)
 
   ${
     $d A x $.  $d B x $.  $d C x $.
