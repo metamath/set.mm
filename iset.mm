@@ -12782,22 +12782,20 @@ $( The theorems in this section make use of the $d statement. $)
   ${
     $d x z $.  $d y z $.
 
-    $( Version of ~ sbequi with distinct variable constraints between ` z ` and
-       the other two variables (but not between ` x ` and ` y ` or between
-       ` ph ` and any of the variables).  (Contributed by Jim Kingdon,
-       25-Dec-2017.) $)
-    sbequiv $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
-      ( cv wceq wsbc wex wal hbs1 wi equvini stdpc7 sbequ1 sylan9 eximi
-      wa syl 19.35-1 syl5 19.9 biimpi syl6 ) BEZCEZFZADUDGZADUEGZDHZUHU
-      GUGDIZUFUIADBJUFUGUHKZDHZUJUIKUFUDDEZFZUMUEFZQZDHULBCDLUPUKDUNUGA
-      UOUHABDMADCNOPRUGUHDSRTUIUHUHDADCJUAUBUC $.
-
     $( Version of ~ sbequ with distinct variable constraints between ` z ` and
        the other two variables (but not between ` x ` and ` y ` or between
        ` ph ` and any of the variables).  (Contributed by Jim Kingdon,
        25-Dec-2017.) $)
     sbequv $p |- ( x = y -> ( [ x / z ] ph <-> [ y / z ] ph ) ) $=
-      ( weq wsb sbequiv wi equcoms impbid ) BCEADBFZADCFZABCDGLKHCBACBDGIJ $.
+      ( weq wa wex wsb equequ2 anbi1d exbidv sb5 3bitr4g ) BCEZDBEZAFZDGDCEZAFZ
+      DGADBHADCHNPRDNOQABCDIJKADBLADCLM $.
+
+    $( Version of ~ sbequi with distinct variable constraints between ` z ` and
+       the other two variables (but not between ` x ` and ` y ` or between
+       ` ph ` and any of the variables).  (Contributed by Jim Kingdon,
+       25-Dec-2017.) $)
+    sbequiv $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
+      ( weq wsb sbequv biimpd ) BCEADBFADCFABCDGH $.
   $}
 
   ${
