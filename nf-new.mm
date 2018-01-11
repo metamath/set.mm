@@ -54244,6 +54244,39 @@ $)
 
 
   ${
+    $d w x $.  $d w y $.  $d w z $.  $d w ph $.
+    $( The abstraction variables in an operation class abstraction are not
+       free.  (Contributed by NM, 25-Apr-1995.)  (Revised by David Abernethy,
+       19-Jun-2012.) $)
+    nfoprab1 $p |- F/_ x { <. <. x , y >. , z >. | ph } $=
+      ( vw coprab cv cop wceq wa wex cab df-oprab nfe1 nfab nfcxfr ) BABCDFEGBG
+      CGHDGHIAJDKCKZBKZELABCDEMRBEQBNOP $.
+
+    $( The abstraction variables in an operation class abstraction are not
+       free.  (Contributed by NM, 25-Apr-1995.)  (Revised by David Abernethy,
+       30-Jul-2012.) $)
+    nfoprab2 $p |- F/_ y { <. <. x , y >. , z >. | ph } $=
+      ( vw coprab cv cop wceq wa wex cab df-oprab nfe1 nfex nfab nfcxfr ) CABCD
+      FEGBGCGHDGHIAJDKZCKZBKZELABCDEMTCESCBRCNOPQ $.
+
+    $( The abstraction variables in an operation class abstraction are not
+       free.  (Contributed by NM, 22-Aug-2013.) $)
+    nfoprab3 $p |- F/_ z { <. <. x , y >. , z >. | ph } $=
+      ( vw coprab cv cop wceq wa wex cab df-oprab nfe1 nfex nfab nfcxfr ) DABCD
+      FEGBGCGHDGHIAJZDKZCKZBKZELABCDEMUADETDBSDCRDNOOPQ $.
+  $}
+
+  ${
+    $d v w x $.  $d v w y $.  $d v w z $.  $d v ph $.
+    nfoprab.1 $e |- F/ w ph $.
+    $( Bound-variable hypothesis builder for an operation class abstraction.
+       (Contributed by NM, 22-Aug-2013.) $)
+    nfoprab $p |- F/_ w { <. <. x , y >. , z >. | ph } $=
+      ( vv coprab cv cop wceq wa wex cab df-oprab nfv nfan nfex nfab nfcxfr ) E
+      ABCDHGIBICIJDIJKZALZDMZCMZBMZGNABCDGOUEEGUDEBUCECUBEDUAAEUAEPFQRRRST $.
+  $}
+
+  ${
     $d a ph r s t w $.  $d a r s t w x $.  $d a r s t w y $.  $d a r s t w z $.
     $( The law of concretion.  Special case of Theorem 9.5 of [Quine] p. 61.
        (Contributed by Mario Carneiro, 20-Mar-2013.) $)
@@ -54790,7 +54823,7 @@ $)
     fnoprabg $p |- ( A. x A. y ( ph -> E! z ps ) ->
   { <. <. x , y >. , z >. | ( ph /\ ps ) } Fn { <. x , y >. | ph } ) $=
       ( weu wi wal wa coprab wfun cdm copab wceq wfn wmo eumo imim2i wex sps wb
-      moanimv sylibr 2alimi funoprabg syl dmoprab hba1 hba2 simpl exlimiv ancld
+      moanimv sylibr 2alimi funoprabg syl dmoprab nfa1 nfa2 simpl exlimiv ancld
       euex 19.42v syl6ibr impbid2 opabbid syl5eq df-fn sylanbrc ) ABEFZGZDHZCHZ
       ABIZCDEJZKZVFLZACDMZNVFVIOVDVEEPZDHCHVGVBVJCDVBABEPZGVJVAVKABEQRABEUBUCUD
       VECDEUEUFVDVHVEESZCDMVIVECDEUGVDVLACDVCCUHVBDCUIVCVLAUAZCVBVMDVBVLAVEAEAB
