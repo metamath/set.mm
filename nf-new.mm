@@ -46253,7 +46253,6 @@ $)
       $( [22-Apr-2004] $)
   $}
 
-
   ${
     $d A w y z $.  $d B w y z $.  $d C w y z $.  $d D w y z $.  $d w x y z $.
     $( Distribute proper substitution through the cross product of two
@@ -56386,6 +56385,23 @@ $)
        FL, 21-Jun-2010.) $)
     fvmpt2 $p |- ( ( x e. A /\ B e. C ) -> ( F ` x ) = B ) $=
       ( cv wcel cfv cid fvmpt2i fvi sylan9eq ) AGZBHCDHNEICJICABCEFKCDLM $.
+
+    
+    $d x y z C $. $d y D $. $d y F $.
+    $( If all the values of the mapping are subsets of a class ` C ` , then so
+       is any evaluation of the mapping, even if ` D ` is not in the base set
+       ` A ` .  (Contributed by Mario Carneiro, 13-Feb-2015.) $)
+    fvmptss $p |- ( A. x e. A B C_ C -> ( F ` D ) C_ C ) $=
+      ( vy wss wcel cfv cv wi wceq fveq2 sseq1d imbi2d nfcv wa c0 dmmptss sseli
+      wral cdm nfra1 cmpt nfmpt1 nfcxfr nffv nfss nfim cvv dmmpt rabeq2i fvmpt2
+      eqimss syl sylbi ndmfv 0ss a1i eqsstrd pm2.61i rsp impcom syl5ss vtoclgaf
+      wn ex vtoclga sylan2 adantl pm2.61dan ) CDIZABUCZEFUDZJZEFKZDIZVQVOEBJZVS
+      VPBEABCFGUAUBVTVOVSVOHLZFKZDIZMZVOVSMHEBWAENZWCVSVOWEWBVRDWAEFOPQVOALZFKZ
+      DIZMWDAWABAWARZVOWCAVNABUEAWBDAWAFAFABCUFGABCUGUHWIUIADRUJUKWFWANZWHWCVOW
+      JWGWBDWFWAFOPQWFBJZVOWHWKVOSWGCDWFVPJZWGCIZWLWKCULJZSZWMWNAVPBABCFGUMUNWO
+      WGCNWMABCULFGUOWGCUPUQURWLVHZWGTCWFFUSTCIWPCUTVAVBVCVOWKVNVNABVDVEVFVIVGV
+      JVEVKVOVQVHZSZVRTDWQVRTNVOEFUSVLTDIWRDUTVAVBVM $.
+
   $}
 
   ${
