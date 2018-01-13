@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Jan-2018
+$( iset.mm - Version of 9-Jan-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -12295,6 +12295,17 @@ $)
   $}
 
   ${
+    $d x y $.  $d x z $.  $d y z $.  $d ph z $.
+    $( Analogue to ~ ax11v for existential quantification.  (Contributed by Jim
+       Kingdon, 9-Jan-2018.) $)
+    ax11ev $p |- ( x = y -> ( E. x ( x = y /\ ph ) -> ph ) ) $=
+      ( vz cv wceq wex wa wi ax-i11e ax-17 syl6ib equequ2 anbi1d exbidv
+      a9e 19.9 imbi1d imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUDFZUG
+      AHZBGZAIZIZDCPUEUKDUEUFUCFZULAHZBGZAIZIUKULUNADGAABDJADADKQLUEULU
+      GUOUJDCBMZUEUNUIAUEUMUHBUEULUGAUPNORSTUAUB $.
+  $}
+
+  ${
     $d x y $.
     $( Two equivalent ways of expressing the proper substitution of ` y ` for
        ` x ` in ` ph ` , when ` x ` and ` y ` are distinct.  Theorem 6.2 of
@@ -12735,16 +12746,15 @@ $( The theorems in this section make use of the $d statement. $)
     $( One direction of ~ sbco2v but without a distinct variable constraint on
        ` x ` and ` y ` .  (Contributed by Jim Kingdon, 7-Jan-2018.) $)
     sbco2iv $p |- ( [ y / z ] [ z / x ] ph -> [ y / x ] ph ) $=
-      ( wsb weq wi wa wex equvini df-sb simplbi 19.9 sb5 bitri anim1i eximi syl
-      19.41 hbs1 syl6 com23 imp3a eximd syl5 syl6ib sbbii sylbi ax-i11e equcoms
-      ax-ie1 mpan10 ax-17 sylibr sylbir excomim 3syl hban exbii pm3.22 sylanbrc
-      hbex sylib ) ABDFZDCFZBCGZAHVGAIZBJZABCFVFVGADJZAVGBDGZDCGZIZDJVFVJBCDKVF
-      VMADVEDCUAVFVKVLAVFVLVKAVFVLVEVKAHZVFVLVEHVLVEIDJVEDCLMVEVNVKAIZBJZABDLMU
-      BUCUDUEUFADENUGVFAVGIZBJZVIVFVRDJZDJZVRVFDBGZVGIZBJZVPIZDJZVQDJZBJZDJVTVF
-      VLVPIZDJZWEVFVPDCFWIVEVPDCABDOUHVPDCOPWHWDDVLWCVPDCBKQRUIWDWGDWDWBVPIZBJZ
-      WGWBVPBVOBULTWKVPVJHZVGIZVPIZBJWGWJWNBWBWMVPWAWLVGWLBDABDUJUKQQRWNWFBWNVJ
-      VGIWFVPVJVGUMAVGDVGDUNZTUORSUPRWGVSDVQBDUQRURVTVSVRVSVRDVRDVQDBAVGDEWOUSV
-      CNZUTWPPVDVQVHBAVGVARSABCLVB $.
+      ( wsb weq wi wa wex equvini hbs1 df-sb simplbi com23 sb5 anim1i eximi syl
+      syl6 imp3a eximd syl5 19.9 syl6ib sbbii bitri sylbi ax-17 hban hbex 19.41
+      ax-ie1 ax11ev equcoms mpan10 sylbir exlimi pm3.22 sylanbrc ) ABDFZDCFZBCG
+      ZAHVCAIZBJZABCFVBVCADJZAVCBDGZDCGZIZDJVBVFBCDKVBVIADVADCLVBVGVHAVBVHVGAVB
+      VHVAVGAHZVBVHVAHVHVAIDJVADCMNVAVJVGAIZBJZABDMNTOUAUBUCADEUDUEVBAVCIZBJZVE
+      VBDBGZVCIZBJZVLIZDJZVNVBVHVLIZDJZVSVBVLDCFWAVAVLDCABDPUFVLDCPUGVTVRDVHVQV
+      LDCBKQRUHVRVNDVMDBAVCDEVCDUIUJUKVRVPVLIZBJZVNVPVLBVKBUMULWCVLAHZVCIZVLIZB
+      JVNWBWFBVPWEVLVOWDVCWDBDABDUNUOQQRWFVMBVLAVCUPRSUQURSVMVDBAVCUSRSABCMUT
+      $.
   $}
 
   ${
