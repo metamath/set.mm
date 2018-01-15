@@ -324,7 +324,7 @@ $)
 
 $(
 ###############################################################################
-            CLASSICAL FIRST ORDER LOGIC WITH EQUALITY
+            FIRST ORDER LOGIC WITH EQUALITY
 ###############################################################################
 $)
 
@@ -531,19 +531,6 @@ $)
      out to be true, as demonstrated by ~ pm5.41 .  (Contributed by NM,
      5-Aug-1993.) $)
   ax-2 $a |- ( ( ph -> ( ps -> ch ) ) -> ( ( ph -> ps ) -> ( ph -> ch ) ) ) $.
-
-  $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.  One of the 3 axioms of
-     propositional calculus.  It swaps or "transposes" the order of the
-     consequents when negation is removed.  An informal example is that the
-     statement "if there are no clouds in the sky, it is not raining" implies
-     the statement "if it is raining, there are clouds in the sky."  This axiom
-     is called _Transp_ or "the principle of transposition" in _Principia
-     Mathematica_ (Theorem *2.17 of [WhiteheadRussell] p. 103).  We will also
-     use the term "contraposition" for this principle, although the reader is
-     advised that in the field of philosophical logic, "contraposition" has a
-     different technical meaning.  (Contributed by NM, 5-Aug-1993.)
-     (New usage is discouraged.) $)
-  ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
 
   $(
      Postulate the modus ponens rule of inference.
@@ -1294,10 +1281,8 @@ $( We will use the following descriptive terms very loosely:  A "closed form"
     ( wi id pm2.86d ) ABDACDDZABCGEF $.
 
   $( The Linearity Axiom of the infinite-valued sentential logic (L-infinity)
-     of Lukasiewicz.  This version of ~ loolin does not use ~ ax-3 , meaning
-     that this theorem is intuitionistically valid.  (Contributed by O'Cat,
-     12-Aug-2004.) $)
-  loolinALT $p |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) $=
+     of Lukasiewicz.  (Contributed by O'Cat, 12-Aug-2004.) $)
+  loolin $p |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) $=
     ( wi jarr pm2.43d ) ABCBACZCBAABFDE $.
 
   $( An alternate for the Linearity Axiom of the infinite-valued sentential
@@ -5773,8 +5758,33 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-$( This section makes our first use of the third axiom of propositonal
-   calculus. $)
+$( Although the Intuitionistic Logic Explorer is primarily for theorems which
+   hold in intuitionistic logic, we also have some classical theorems in order
+   to constrast them with similar intuitionistic ones. Our goal is to move
+   such classical logic to the end of the file, after we've had a chance to
+   complete our development of constructive mathemetics.  In practice,
+   this has been a gradual process of replacing classical proofs with
+   intuitionistic ones (where possible), moving classical proofs later
+   in the file, or removing classical proofs which are unused and not
+   especially important to contrast classical and intuitionistic results. $)
+
+  $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.
+
+     We take this as an additional axiom which transforms intuitionistic logic
+     to classical logic, but there are others which would have the same effect,
+     including ~ exmid , ~ peirce , or ~ notnot2 .
+
+     This axiom swaps or "transposes" the order of the consequents when
+     negation is removed.  An informal example is that the statement "if there
+     are no clouds in the sky, it is not raining" implies the statement "if it
+     is raining, there are clouds in the sky."  This axiom is called _Transp_
+     or "the principle of transposition" in _Principia Mathematica_ (Theorem
+     *2.17 of [WhiteheadRussell] p. 103).  We will also use the term
+     "contraposition" for this principle, although the reader is advised that
+     in the field of philosophical logic, "contraposition" has a different
+     technical meaning.  (Contributed by NM, 5-Aug-1993.)
+     (New usage is discouraged.) $)
+  ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
 
   ${
     con4d.1 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
@@ -6042,13 +6052,6 @@ $( This section makes our first use of the third axiom of propositonal
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 8-Oct-2012.) $)
   pm2.521 $p |- ( -. ( ph -> ps ) -> ( ps -> ph ) ) $=
     ( wi wn simplim a1d ) ABCDABABEF $.
-
-  $( The Linearity Axiom of the infinite-valued sentential logic (L-infinity)
-     of Lukasiewicz.  For a version not using ~ ax-3 , see ~ loolinALT .
-     (Contributed by O'Cat, 12-Aug-2004.)  (Proof shortened by Wolf Lammen,
-     2-Nov-2012.) $)
-  loolin $p |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) $=
-    ( wi pm2.521 id ja ) ABCBACZGABDGEF $.
 
   $( Contraposition.  Theorem *4.1 of [WhiteheadRussell] p. 116.  (Contributed
      by NM, 5-Aug-1993.) $)
