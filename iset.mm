@@ -11743,11 +11743,11 @@ $)
   $( Reverse direction of ~ sbor .  (Contributed by Jim Kingdon,
      20-Dec-2017.) $)
   sborr $p |- ( ( [ y / x ] ph \/ [ y / x ] ps ) -> [ y / x ] ( ph \/ ps ) ) $=
-    ( wsb wo weq wi wex df-sb biimpi orim12i orc imim2i anim1i andi exbii bitri
-    wa olc 19.43 anbi2i sylibr syl ) ACDEZBCDEZFCDGZAHZUGASZCIZSZUGBHZUGBSZCIZS
-    ZFZABFZCDEZUEUKUFUOUEUKACDJKUFUOBCDJKLUPUGUQHZUJSZUSUNSZFZURUKUTUOVAUHUSUJA
-    UQUGABMNOULUSUNBUQUGBATNOLURUSUGUQSZCIZSZVBUQCDJVEUSUJUNFZSVBVDVFUSVDUIUMFZ
-    CIVFVCVGCUGABPQUIUMCUARUBUSUJUNPRRUCUD $.
+    ( weq wi wa wex wsb orc imim2i anim1i olc orim12i df-sb orbi12i exbii bitri
+    wo andi 19.43 anbi2i 3imtr4i ) CDEZAFZUDAGZCHZGZUDBFZUDBGZCHZGZSUDABSZFZUGG
+    ZUNUKGZSZACDIZBCDIZSUMCDIZUHUOULUPUEUNUGAUMUDABJKLUIUNUKBUMUDBAMKLNURUHUSUL
+    ACDOBCDOPUTUNUDUMGZCHZGZUQUMCDOVCUNUGUKSZGUQVBVDUNVBUFUJSZCHVDVAVECUDABTQUF
+    UJCUARUBUNUGUKTRRUC $.
 
   $( Logical OR inside and outside of substitution are equivalent.
      (Contributed by NM, 29-Sep-2002.) $)
