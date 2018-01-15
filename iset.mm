@@ -1294,10 +1294,8 @@ $( We will use the following descriptive terms very loosely:  A "closed form"
     ( wi id pm2.86d ) ABDACDDZABCGEF $.
 
   $( The Linearity Axiom of the infinite-valued sentential logic (L-infinity)
-     of Lukasiewicz.  This version of ~ loolin does not use ~ ax-3 , meaning
-     that this theorem is intuitionistically valid.  (Contributed by O'Cat,
-     12-Aug-2004.) $)
-  loolinALT $p |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) $=
+     of Lukasiewicz.  (Contributed by O'Cat, 12-Aug-2004.) $)
+  loolin $p |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) $=
     ( wi jarr pm2.43d ) ABCBACZCBAABFDE $.
 
   $( An alternate for the Linearity Axiom of the infinite-valued sentential
@@ -6042,13 +6040,6 @@ $( This section makes our first use of the third axiom of propositonal
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 8-Oct-2012.) $)
   pm2.521 $p |- ( -. ( ph -> ps ) -> ( ps -> ph ) ) $=
     ( wi wn simplim a1d ) ABCDABABEF $.
-
-  $( The Linearity Axiom of the infinite-valued sentential logic (L-infinity)
-     of Lukasiewicz.  For a version not using ~ ax-3 , see ~ loolinALT .
-     (Contributed by O'Cat, 12-Aug-2004.)  (Proof shortened by Wolf Lammen,
-     2-Nov-2012.) $)
-  loolin $p |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) $=
-    ( wi pm2.521 id ja ) ABCBACZGABDGEF $.
 
   $( Contraposition.  Theorem *4.1 of [WhiteheadRussell] p. 116.  (Contributed
      by NM, 5-Aug-1993.) $)
