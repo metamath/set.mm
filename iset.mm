@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-Jan-2018
+$( iset.mm - Version of 15-Jan-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -14438,6 +14438,13 @@ $)
      3-Jan-2005.) $)
   pm4.66 $p |- ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) $=
     ( wn pm4.64 ) ABCD $.
+
+  $( Implication distributes over disjunction.  The converse holds classically,
+     but we do not have an intuitionistic proof of the converse.  (Contributed
+     by Jim Kingdon, 15-Jan-2018.) $)
+  imordir $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) ->
+       ( ph -> ( ps \/ ch ) ) ) $=
+    ( wi wo orc imim2i olc jaoi ) ABDABCEZDACDBJABCFGCJACBHGI $.
 
   $( Theorem *4.54 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
