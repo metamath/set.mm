@@ -6288,12 +6288,13 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
   pm4.56 $p |- ( ( -. ph /\ -. ps ) <-> -. ( ph \/ ps ) ) $=
     ( wo wn wa ioran bicomi ) ABCDADBDEABFG $.
 
-  $( Theorem *4.78 of [WhiteheadRussell] p. 121.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 19-Nov-2012.) $)
-  pm4.78 $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) <->
-                ( ph -> ( ps \/ ch ) ) ) $=
-    ( wn wo wi orordi imor orbi12i 3bitr4ri ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCG
-    ALHOMPNABHACHIJ $.
+  $( Implication distributes over disjunction.  We do not have an
+     intuitionistic proof of the converse, but both directions hold classically
+     as can be seen at ~ pm4.78 .  (Contributed by Jim Kingdon,
+     15-Jan-2018.) $)
+  pm4.78i $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) ->
+       ( ph -> ( ps \/ ch ) ) ) $=
+    ( wi wo orc imim2i olc jaoi ) ABDABCEZDACDBJABCFGCJACBHGI $.
 
   $( Theorem *4.79 of [WhiteheadRussell] p. 121.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 27-Jun-2013.) $)
@@ -14291,6 +14292,15 @@ $)
   pm4.65 $p |- ( -. ( -. ph -> ps ) <-> ( -. ph /\ -. ps ) ) $=
     ( wn pm4.61 ) ACBD $.
 
+  $( Implication distributes over disjunction.  Theorem *4.78 of
+     [WhiteheadRussell] p. 121.  We have an intuitionistic proof of one
+     direction at ~ pm4.78i .  (Contributed by NM, 3-Jan-2005.)  (Proof
+     shortened by Wolf Lammen, 19-Nov-2012.) $)
+  pm4.78 $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) <->
+                ( ph -> ( ps \/ ch ) ) ) $=
+    ( wn wo wi orordi imor orbi12i 3bitr4ri ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCG
+    ALHOMPNABHACHIJ $.
+
   $( A single axiom for Boolean algebra known as DN_1.  See
      ~ http://www-unix.mcs.anl.gov/~~mccune/papers/basax/v12.pdf .
      (Contributed by Jeffrey Hankins, 3-Jul-2009.)  (Proof shortened by Andrew
@@ -14437,13 +14447,6 @@ $)
      3-Jan-2005.) $)
   pm4.66 $p |- ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) $=
     ( wn pm4.64 ) ABCD $.
-
-  $( Implication distributes over disjunction.  The converse holds classically,
-     but we do not have an intuitionistic proof of the converse.  (Contributed
-     by Jim Kingdon, 15-Jan-2018.) $)
-  imordir $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) ->
-       ( ph -> ( ps \/ ch ) ) ) $=
-    ( wi wo orc imim2i olc jaoi ) ABDABCEZDACDBJABCFGCJACBHGI $.
 
   $( Theorem *4.54 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
