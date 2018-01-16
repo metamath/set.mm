@@ -11995,19 +11995,18 @@ $)
   ${
     sb8.1 $e |- ( ph -> A. y ph ) $.
     $( Substitution of variable in universal quantifier.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+       5-Aug-1993.)  (Proof shortened by Andrew Salmon, 25-May-2011.)  (Proof
+       shortened by Jim Kingdon, 15-Jan-2018.) $)
     sb8 $p |- ( A. x ph <-> A. y [ y / x ] ph ) $=
-      ( wal wsb hbal stdpc4 alrimi hbsb3 stdpc7 cbv3 impbii ) ABEZABCFZCENOCACB
-      DGABCHIOACBABCDJDACBKLM $.
+      ( wsb hbsb3 sbequ12 cbval ) AABCEBCDABCDFABCGH $.
   $}
 
   ${
     sb8e.1 $e |- ( ph -> A. y ph ) $.
     $( Substitution of variable in existential quantifier.  (Contributed by NM,
-       12-Aug-1993.) $)
+       12-Aug-1993.)  (Proof rewritten by Jim Kingdon, 15-Jan-2018.) $)
     sb8e $p |- ( E. x ph <-> E. y [ y / x ] ph ) $=
-      ( wn wal wsb wex hbn sb8 sbn albii bitri notbii df-ex 3bitr4i ) AEZBFZEAB
-      CGZEZCFZEABHSCHRUARQBCGZCFUAQBCACDIJUBTCABCKLMNABOSCOP $.
+      ( wsb hbsb3 sbequ12 cbvex ) AABCEBCDABCDFABCGH $.
   $}
 
   $( Commutation of quantification and substitution variables.  (Contributed by
