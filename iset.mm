@@ -5980,11 +5980,6 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
       ( ex wn pm2.61d ) ABCABCDFABGCEFH $.
   $}
 
-  $( Importation theorem expressed with primitive connectives.  (Contributed by
-     NM, 25-Apr-1994.)  (Proof shortened by Wolf Lammen, 20-Jul-2013.) $)
-  impt $p |- ( ( ph -> ( ps -> ch ) ) -> ( -. ( ph -> -. ps ) -> ch ) ) $=
-    ( wi wn simprim simplim imim1i mpdi ) ABCDZDABEZDEZBCABFLAJAKGHI $.
-
   ${
     impcon4bid.1 $e |- ( ph -> ( ps -> ch ) ) $.
     impcon4bid.2 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
