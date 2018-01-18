@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-Jan-2018
+$( iset.mm - Version of 15-Jan-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -324,7 +324,7 @@ $)
 
 $(
 ###############################################################################
-            CLASSICAL FIRST ORDER LOGIC WITH EQUALITY
+            FIRST ORDER LOGIC WITH EQUALITY
 ###############################################################################
 $)
 
@@ -531,19 +531,6 @@ $)
      out to be true, as demonstrated by ~ pm5.41 .  (Contributed by NM,
      5-Aug-1993.) $)
   ax-2 $a |- ( ( ph -> ( ps -> ch ) ) -> ( ( ph -> ps ) -> ( ph -> ch ) ) ) $.
-
-  $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.  One of the 3 axioms of
-     propositional calculus.  It swaps or "transposes" the order of the
-     consequents when negation is removed.  An informal example is that the
-     statement "if there are no clouds in the sky, it is not raining" implies
-     the statement "if it is raining, there are clouds in the sky."  This axiom
-     is called _Transp_ or "the principle of transposition" in _Principia
-     Mathematica_ (Theorem *2.17 of [WhiteheadRussell] p. 103).  We will also
-     use the term "contraposition" for this principle, although the reader is
-     advised that in the field of philosophical logic, "contraposition" has a
-     different technical meaning.  (Contributed by NM, 5-Aug-1993.)
-     (New usage is discouraged.) $)
-  ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
 
   $(
      Postulate the modus ponens rule of inference.
@@ -1294,10 +1281,8 @@ $( We will use the following descriptive terms very loosely:  A "closed form"
     ( wi id pm2.86d ) ABDACDDZABCGEF $.
 
   $( The Linearity Axiom of the infinite-valued sentential logic (L-infinity)
-     of Lukasiewicz.  This version of ~ loolin does not use ~ ax-3 , meaning
-     that this theorem is intuitionistically valid.  (Contributed by O'Cat,
-     12-Aug-2004.) $)
-  loolinALT $p |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) $=
+     of Lukasiewicz.  (Contributed by O'Cat, 12-Aug-2004.) $)
+  loolin $p |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) $=
     ( wi jarr pm2.43d ) ABCBACZCBAABFDE $.
 
   $( An alternate for the Linearity Axiom of the infinite-valued sentential
@@ -5773,8 +5758,33 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-$( This section makes our first use of the third axiom of propositonal
-   calculus. $)
+$( Although the Intuitionistic Logic Explorer is primarily for theorems which
+   hold in intuitionistic logic, we also have some classical theorems in order
+   to constrast them with similar intuitionistic ones. Our goal is to move
+   such classical logic to the end of the file, after we've had a chance to
+   complete our development of constructive mathemetics.  In practice,
+   this has been a gradual process of replacing classical proofs with
+   intuitionistic ones (where possible), moving classical proofs later
+   in the file, or removing classical proofs which are unused and not
+   especially important to contrast classical and intuitionistic results. $)
+
+  $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.
+
+     We take this as an additional axiom which transforms intuitionistic logic
+     to classical logic, but there are others which would have the same effect,
+     including ~ exmid , ~ peirce , or ~ notnot2 .
+
+     This axiom swaps or "transposes" the order of the consequents when
+     negation is removed.  An informal example is that the statement "if there
+     are no clouds in the sky, it is not raining" implies the statement "if it
+     is raining, there are clouds in the sky."  This axiom is called _Transp_
+     or "the principle of transposition" in _Principia Mathematica_ (Theorem
+     *2.17 of [WhiteheadRussell] p. 103).  We will also use the term
+     "contraposition" for this principle, although the reader is advised that
+     in the field of philosophical logic, "contraposition" has a different
+     technical meaning.  (Contributed by NM, 5-Aug-1993.)
+     (New usage is discouraged.) $)
+  ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
 
   ${
     con4d.1 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
@@ -6043,13 +6053,6 @@ $( This section makes our first use of the third axiom of propositonal
   pm2.521 $p |- ( -. ( ph -> ps ) -> ( ps -> ph ) ) $=
     ( wi wn simplim a1d ) ABCDABABEF $.
 
-  $( The Linearity Axiom of the infinite-valued sentential logic (L-infinity)
-     of Lukasiewicz.  For a version not using ~ ax-3 , see ~ loolinALT .
-     (Contributed by O'Cat, 12-Aug-2004.)  (Proof shortened by Wolf Lammen,
-     2-Nov-2012.) $)
-  loolin $p |- ( ( ( ph -> ps ) -> ( ps -> ph ) ) -> ( ps -> ph ) ) $=
-    ( wi pm2.521 id ja ) ABCBACZGABDGEF $.
-
   $( Contraposition.  Theorem *4.1 of [WhiteheadRussell] p. 116.  (Contributed
      by NM, 5-Aug-1993.) $)
   con34b $p |- ( ( ph -> ps ) <-> ( -. ps -> -. ph ) ) $=
@@ -6285,12 +6288,13 @@ $( This section makes our first use of the third axiom of propositonal
   pm4.56 $p |- ( ( -. ph /\ -. ps ) <-> -. ( ph \/ ps ) ) $=
     ( wo wn wa ioran bicomi ) ABCDADBDEABFG $.
 
-  $( Theorem *4.78 of [WhiteheadRussell] p. 121.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 19-Nov-2012.) $)
-  pm4.78 $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) <->
-                ( ph -> ( ps \/ ch ) ) ) $=
-    ( wn wo wi orordi imor orbi12i 3bitr4ri ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCG
-    ALHOMPNABHACHIJ $.
+  $( Implication distributes over disjunction.  We do not have an
+     intuitionistic proof of the converse, but both directions hold classically
+     as can be seen at ~ pm4.78 .  (Contributed by Jim Kingdon,
+     15-Jan-2018.) $)
+  pm4.78i $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) ->
+       ( ph -> ( ps \/ ch ) ) ) $=
+    ( wi wo orc imim2i olc jaoi ) ABDABCEZDACDBJABCFGCJACBHGI $.
 
   $( Theorem *4.79 of [WhiteheadRussell] p. 121.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 27-Jun-2013.) $)
@@ -11740,11 +11744,11 @@ $)
   $( Reverse direction of ~ sbor .  (Contributed by Jim Kingdon,
      20-Dec-2017.) $)
   sborr $p |- ( ( [ y / x ] ph \/ [ y / x ] ps ) -> [ y / x ] ( ph \/ ps ) ) $=
-    ( wsb wo weq wi wex df-sb biimpi orim12i orc imim2i anim1i andi exbii bitri
-    wa olc 19.43 anbi2i sylibr syl ) ACDEZBCDEZFCDGZAHZUGASZCIZSZUGBHZUGBSZCIZS
-    ZFZABFZCDEZUEUKUFUOUEUKACDJKUFUOBCDJKLUPUGUQHZUJSZUSUNSZFZURUKUTUOVAUHUSUJA
-    UQUGABMNOULUSUNBUQUGBATNOLURUSUGUQSZCIZSZVBUQCDJVEUSUJUNFZSVBVDVFUSVDUIUMFZ
-    CIVFVCVGCUGABPQUIUMCUARUBUSUJUNPRRUCUD $.
+    ( weq wi wa wex wsb orc imim2i anim1i olc orim12i df-sb orbi12i exbii bitri
+    wo andi 19.43 anbi2i 3imtr4i ) CDEZAFZUDAGZCHZGZUDBFZUDBGZCHZGZSUDABSZFZUGG
+    ZUNUKGZSZACDIZBCDIZSUMCDIZUHUOULUPUEUNUGAUMUDABJKLUIUNUKBUMUDBAMKLNURUHUSUL
+    ACDOBCDOPUTUNUDUMGZCHZGZUQUMCDOVCUNUGUKSZGUQVBVDUNVBUFUJSZCHVDVAVECUDABTQUF
+    UJCUARUBUNUGUKTRRUC $.
 
   $( Logical OR inside and outside of substitution are equivalent.
      (Contributed by NM, 29-Sep-2002.) $)
@@ -11992,19 +11996,18 @@ $)
   ${
     sb8.1 $e |- ( ph -> A. y ph ) $.
     $( Substitution of variable in universal quantifier.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+       5-Aug-1993.)  (Proof shortened by Andrew Salmon, 25-May-2011.)  (Proof
+       shortened by Jim Kingdon, 15-Jan-2018.) $)
     sb8 $p |- ( A. x ph <-> A. y [ y / x ] ph ) $=
-      ( wal wsb hbal stdpc4 alrimi hbsb3 stdpc7 cbv3 impbii ) ABEZABCFZCENOCACB
-      DGABCHIOACBABCDJDACBKLM $.
+      ( wsb hbsb3 sbequ12 cbval ) AABCEBCDABCDFABCGH $.
   $}
 
   ${
     sb8e.1 $e |- ( ph -> A. y ph ) $.
     $( Substitution of variable in existential quantifier.  (Contributed by NM,
-       12-Aug-1993.) $)
+       12-Aug-1993.)  (Proof rewritten by Jim Kingdon, 15-Jan-2018.) $)
     sb8e $p |- ( E. x ph <-> E. y [ y / x ] ph ) $=
-      ( wn wal wsb wex hbn sb8 sbn albii bitri notbii df-ex 3bitr4i ) AEZBFZEAB
-      CGZEZCFZEABHSCHRUARQBCGZCFUAQBCACDIJUBTCABCKLMNABOSCOP $.
+      ( wsb hbsb3 sbequ12 cbvex ) AABCEBCDABCDFABCGH $.
   $}
 
   $( Commutation of quantification and substitution variables.  (Contributed by
@@ -14288,6 +14291,15 @@ $)
      instance of ~ annimim .  (Contributed by NM, 3-Jan-2005.) $)
   pm4.65 $p |- ( -. ( -. ph -> ps ) <-> ( -. ph /\ -. ps ) ) $=
     ( wn pm4.61 ) ACBD $.
+
+  $( Implication distributes over disjunction.  Theorem *4.78 of
+     [WhiteheadRussell] p. 121.  We have an intuitionistic proof of one
+     direction at ~ pm4.78i .  (Contributed by NM, 3-Jan-2005.)  (Proof
+     shortened by Wolf Lammen, 19-Nov-2012.) $)
+  pm4.78 $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) <->
+                ( ph -> ( ps \/ ch ) ) ) $=
+    ( wn wo wi orordi imor orbi12i 3bitr4ri ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCG
+    ALHOMPNABHACHIJ $.
 
   $( A single axiom for Boolean algebra known as DN_1.  See
      ~ http://www-unix.mcs.anl.gov/~~mccune/papers/basax/v12.pdf .
