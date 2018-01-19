@@ -1,4 +1,4 @@
-$( iset.mm - Version of 18-Jan-2018
+$( iset.mm - Version of 19-Jan-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -12366,20 +12366,19 @@ $)
                   <-> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
       ( wi wsb sbi1v sbi2v impbii ) ABECDFACDFBCDFEABCDGABCDHI $.
 
-    $( Version of ~ sbi1v for substitution of a biconditional rather than an
-       implication (one direction of ~ sbbi where ` x ` and ` y ` are
-       distinct.  (Contributed by Jim Kingdon, 26-Dec-2017.) $)
-    sbbi1v $p |- ( [ y / x ] ( ph <-> ps )
-                      -> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
-      ( wb cv wi wa dfbi2 sbbii sbanv bitri sbi1v anim12i sylibr sylbi
-      wsbc ) ABEZCDFZQZABGZCSQZBAGZCSQZHZACSQZBCSQZEZTUAUCHZCSQUERUICDA
-      BIJUAUCCDKLUEUFUGGZUGUFGZHUHUBUJUDUKABCDMBACDMNUFUGIOP $.
+    $( Intuitionistic proof of ~ sbbi where ` x ` and ` y ` are distinct.
+       (Contributed by Jim Kingdon, 19-Jan-2018.) $)
+    sbbiv $p |- ( [ y / x ] ( ph <-> ps )
+                 <-> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
+      ( wi wa wsb wb sbanv sbimv anbi12i bitri dfbi2 sbbii 3bitr4i ) ABEZBAEZFZ
+      CDGZACDGZBCDGZEZUATEZFZABHZCDGTUAHSPCDGZQCDGZFUDPQCDIUFUBUGUCABCDJBACDJKL
+      UERCDABMNTUAMO $.
 
     $( Version of ~ sbco where ` x ` and ` y ` are distinct.  (Contributed by
        Jim Kingdon, 26-Dec-2017.) $)
     sbcov $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
-      ( cv wsbc wb wceq equsb2 sbequ12 bicomd sbimi ax-mp sbbi1v ) ACBD
-      ZEZAFZBCDZEZOBQEABQEFQNGZBQERBCHSPBCSAOACBIJKLOABCML $.
+      ( wsb wb weq equsb2 sbequ12 bicomd sbimi ax-mp sbbiv mpbi ) ACBDZAEZBCDZN
+      BCDABCDECBFZBCDPBCGQOBCQANACBHIJKNABCLM $.
   $}
 
   ${
