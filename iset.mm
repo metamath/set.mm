@@ -12382,6 +12382,15 @@ $)
   $}
 
   ${
+    $d x y $.
+    sblimv.1 $e |- ( ps -> A. x ps ) $.
+    $( Version of ~ sblim where ` x ` and ` y ` are distinct.  (Contributed by
+       Jim Kingdon, 19-Jan-2018.) $)
+    sblimv $p |- ( [ y / x ] ( ph -> ps ) <-> ( [ y / x ] ph -> ps ) ) $=
+      ( wi wsb sbimv sbf imbi2i bitri ) ABFCDGACDGZBCDGZFLBFABCDHMBLBCDEIJK $.
+  $}
+
+  ${
     $d ph y $.  $d ps x $.
     $( Theorem *11.53 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
        Salmon, 24-May-2011.) $)
