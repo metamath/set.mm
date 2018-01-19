@@ -12360,6 +12360,12 @@ $)
       3imtr4i ) CDEZAFZCGZUABHZCIZHZUAABHZHZCIZACDJZBCDJZHUGCDJUFUBUDHZCIUIUBUD
       CKULUHCUAULAUDHUGUAAUDLAUABMNOPUJUCUKUEACDQBCDRSUGCDRT $.
 
+    $( Intuitionistic proof of ~ sbim where ` x ` and ` y ` are distinct.
+       (Contributed by Jim Kingdon, 18-Jan-2018.) $)
+    sbimv $p |- ( [ y / x ] ( ph -> ps )
+                  <-> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
+      ( wi wsb sbi1v sbi2v impbii ) ABECDFACDFBCDFEABCDGABCDHI $.
+
     $( Version of ~ sbi1v for substitution of a biconditional rather than an
        implication (one direction of ~ sbbi where ` x ` and ` y ` are
        distinct.  (Contributed by Jim Kingdon, 26-Dec-2017.) $)
