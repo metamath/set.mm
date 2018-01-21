@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Jan-2018
+$( iset.mm - Version of 20-Jan-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11855,9 +11855,11 @@ $)
   $}
 
   $( Elimination of equality from antecedent after substitution.  (Contributed
-     by NM, 5-Aug-1993.) $)
+     by NM, 5-Aug-1993.)  (Proof revised by Jim Kingdon, 20-Jan-2018.) $)
   sbequ8 $p |- ( [ y / x ] ph <-> [ y / x ] ( x = y -> ph ) ) $=
-    ( wsb weq wi equsb1 a1bi sbim bitr4i ) ABCDZBCEZBCDZKFLAFBCDMKBCGHLABCIJ $.
+    ( weq wi wa wex wsb pm5.4 ax-ia1 pm3.35 pm3.4 impbii exbii anbi12i 3bitr4ri
+    jca df-sb ) BCDZSAEZEZSTFZBGZFTSAFZBGZFTBCHABCHUATUCUESAIUBUDBUBUDUBSASTJSA
+    KQUDSTSAJSALQMNOTBCRABCRP $.
 
   $( Substitution has no effect on a non-free variable.  (Contributed by NM,
      30-May-2009.) $)
