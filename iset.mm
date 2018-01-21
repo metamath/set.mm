@@ -11843,9 +11843,11 @@ $)
     exim ) ABEZCFZCDGZAEZUCAHZCIZHUCBEZUCBHZCIZHACDJBCDJUBUDUGUFUIUAUDUGECABUCK
     LUBUEUHEZCFUFUIEUAUJCUAABUCUAMNOUEUHCTPQACDRBCDRS $.
 
-  $( Specialization of biconditional.  (Contributed by NM, 5-Aug-1993.) $)
+  $( Specialization of biconditional.  (Contributed by NM, 5-Aug-1993.)  (Proof
+     rewritten by Jim Kingdon, 21-Jan-2018.) $)
   a4sbbi $p |- ( A. x ( ph <-> ps ) -> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
-    ( wb wal wsb stdpc4 sbbi sylib ) ABEZCFKCDGACDGBCDGEKCDHABCDIJ $.
+    ( wi wal wa wsb wb a4sbim anim12i albiim dfbi2 3imtr4i ) ABECFZBAECFZGACDHZ
+    BCDHZEZRQEZGABICFQRIOSPTABCDJBACDJKABCLQRMN $.
 
   ${
     sbbid.1 $e |- ( ph -> A. x ph ) $.
