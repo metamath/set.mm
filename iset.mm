@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Jan-2018
+$( iset.mm - Version of 21-Jan-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11837,13 +11837,17 @@ $)
     BCIOABNAJKL $.
 
   $( Specialization of implication.  (Contributed by NM, 5-Aug-1993.)  (Proof
-     shortened by Andrew Salmon, 25-May-2011.) $)
+     rewritten by Jim Kingdon, 21-Jan-2018.) $)
   a4sbim $p |- ( A. x ( ph -> ps ) -> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
-    ( wi wal wsb stdpc4 sbi1 syl ) ABEZCFKCDGACDGBCDGEKCDHABCDIJ $.
+    ( wi wal weq wa wex wsb imim2 a4s id anim2d alimi syl anim12d df-sb 3imtr4g
+    exim ) ABEZCFZCDGZAEZUCAHZCIZHUCBEZUCBHZCIZHACDJBCDJUBUDUGUFUIUAUDUGECABUCK
+    LUBUEUHEZCFUFUIEUAUJCUAABUCUAMNOUEUHCTPQACDRBCDRS $.
 
-  $( Specialization of biconditional.  (Contributed by NM, 5-Aug-1993.) $)
+  $( Specialization of biconditional.  (Contributed by NM, 5-Aug-1993.)  (Proof
+     rewritten by Jim Kingdon, 21-Jan-2018.) $)
   a4sbbi $p |- ( A. x ( ph <-> ps ) -> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
-    ( wb wal wsb stdpc4 sbbi sylib ) ABEZCFKCDGACDGBCDGEKCDHABCDIJ $.
+    ( wi wal wa wsb wb a4sbim anim12i albiim dfbi2 3imtr4i ) ABECFZBAECFZGACDHZ
+    BCDHZEZRQEZGABICFQRIOSPTABCDJBACDJKABCLQRMN $.
 
   ${
     sbbid.1 $e |- ( ph -> A. x ph ) $.
