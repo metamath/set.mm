@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Jan-2018
+$( iset.mm - Version of 21-Jan-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11930,10 +11930,14 @@ $)
   $}
 
   $( An idempotent law for substitution.  (Contributed by NM, 30-Jun-1994.)
-     (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+     (Proof rewritten by Jim Kingdon, 21-Jan-2018.) $)
   sbidm $p |- ( [ y / x ] [ y / x ] ph <-> [ y / x ] ph ) $=
-    ( wsb wb weq equsb2 sbequ12r sbimi ax-mp sbbi mpbi ) ABCDZAEZBCDZMBCDMECBFZ
-    BCDOBCGPNBCACBHIJMABCKL $.
+    ( wsb weq wi wa wex df-sb simplbi sbimi sbequ8 sylibr ax-1 sb1 pm4.24 19.41
+    ax-ie1 bitr4i exbii anim2i anim1i eximi sylbi anass sylib anbi2i syl impbii
+    sylanbrc ) ABCDZBCDZUKULBCEZAFZBCDUKUKUNBCUKUNUMAGZBHZABCIZJKABCLMUKUMUKFUM
+    UKGZBHZULUKUMNUKUPUSABCOUPUMUNUPGZGZBHZUSUPUMUNGZUPGZBHZVBUPUOUPGZBHZVEUPUP
+    UPGVGUPPUOUPBUOBRQSVFVDBUOVCUPAUNUMAUMNUAUBUCUDVDVABUMUNUPUETUFURVABUKUTUMU
+    QUGTMUHUKBCIUJUI $.
 
   ${
     sbco2.1 $e |- ( ph -> A. z ph ) $.
@@ -12760,11 +12764,6 @@ $( The theorems in this section make use of the $d statement. $)
     hbs1 $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
       ( cv wsbc wceq wi wal sb6 ax-ial sylbi albii sylibr ) ABCDZEZBDNF
       AGZBHZBHZOBHOQRABCIZPBJKOQBSLM $.
-
-    $( Intuitionistic proof of ~ sbidm where ` x ` and ` y ` are distinct.
-       (Contributed by Jim Kingdon, 24-Dec-2017.) $)
-    sbidmv $p |- ( [ y / x ] [ y / x ] ph <-> [ y / x ] ph ) $=
-      ( cv wsbc hbs1 wceq biidd sbie ) ABCDZEZKBCABCFBDJGKHI $.
   $}
 
   ${
