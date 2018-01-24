@@ -5836,15 +5836,6 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
   $}
 
   ${
-    mt3i.1 $e |- -. ch $.
-    mt3i.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( Modus tollens inference.  (Contributed by NM, 26-Mar-1995.)  (Proof
-       shortened by Wolf Lammen, 15-Sep-2012.) $)
-    mt3i $p |- ( ph -> ps ) $=
-      ( wn a1i mt3d ) ABCCFADGEH $.
-  $}
-
-  ${
     nsyl2.1 $e |- ( ph -> -. ps ) $.
     nsyl2.2 $e |- ( -. ch -> ps ) $.
     $( A negated syllogism inference.  (Contributed by NM, 26-Jun-1994.)
@@ -5988,51 +5979,6 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
     pm2.61dan $p |- ( ph -> ch ) $=
       ( ex wn pm2.61d ) ABCABCDFABGCEFH $.
   $}
-
-  ${
-    pm2.61ddan.1 $e |- ( ( ph /\ ps ) -> th ) $.
-    pm2.61ddan.2 $e |- ( ( ph /\ ch ) -> th ) $.
-    pm2.61ddan.3 $e |- ( ( ph /\ ( -. ps /\ -. ch ) ) -> th ) $.
-    $( Elimination of two antecedents.  (Contributed by NM, 9-Jul-2013.) $)
-    pm2.61ddan $p |- ( ph -> th ) $=
-      ( wn wa adantlr anassrs pm2.61dan ) ABDEABHZICDACDMFJAMCHDGKLL $.
-  $}
-
-  ${
-    pm2.61dda.1 $e |- ( ( ph /\ -. ps ) -> th ) $.
-    pm2.61dda.2 $e |- ( ( ph /\ -. ch ) -> th ) $.
-    pm2.61dda.3 $e |- ( ( ph /\ ( ps /\ ch ) ) -> th ) $.
-    $( Elimination of two antecedents.  (Contributed by NM, 9-Jul-2013.) $)
-    pm2.61dda $p |- ( ph -> th ) $=
-      ( wa anassrs wn adantlr pm2.61dan ) ABDABHCDABCDGIACJDBFKLEL $.
-  $}
-
-  ${
-    pm2.61nii.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    pm2.61nii.2 $e |- ( -. ph -> ch ) $.
-    pm2.61nii.3 $e |- ( -. ps -> ch ) $.
-    $( Inference eliminating two antecedents.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by Andrew Salmon, 25-May-2011.)  (Proof
-       shortened by Wolf Lammen, 13-Nov-2012.) $)
-    pm2.61nii $p |- ch $=
-      ( pm2.61d1 pm2.61i ) ACABCDFGEH $.
-  $}
-
-  ${
-    pm2.61iii.1 $e |- ( -. ph -> ( -. ps -> ( -. ch -> th ) ) ) $.
-    pm2.61iii.2 $e |- ( ph -> th ) $.
-    pm2.61iii.3 $e |- ( ps -> th ) $.
-    pm2.61iii.4 $e |- ( ch -> th ) $.
-    $( Inference eliminating three antecedents.  (Contributed by NM,
-       2-Jan-2002.)  (Proof shortened by Wolf Lammen, 22-Sep-2013.) $)
-    pm2.61iii $p |- th $=
-      ( wn wi a1d pm2.61ii pm2.61i ) CDHABCIZDJEADNFKBDNGKLM $.
-  $}
-
-  $( Importation theorem expressed with primitive connectives.  (Contributed by
-     NM, 25-Apr-1994.)  (Proof shortened by Wolf Lammen, 20-Jul-2013.) $)
-  impt $p |- ( ( ph -> ( ps -> ch ) ) -> ( -. ( ph -> -. ps ) -> ch ) ) $=
-    ( wi wn simprim simplim imim1i mpdi ) ABCDZDABEZDEZBCABFLAJAKGHI $.
 
   ${
     impcon4bid.1 $e |- ( ph -> ( ps -> ch ) ) $.
@@ -6253,24 +6199,6 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
     imori $p |- ( -. ph \/ ps ) $=
       ( wi wn wo imor mpbi ) ABDAEBFCABGH $.
   $}
-
-  $( Law of excluded middle, also called the principle of _tertium non datur_.
-     Theorem *2.11 of [WhiteheadRussell] p. 101.  It says that something is
-     either true or not true; there are no in-between values of truth.  This is
-     an essential distinction of our classical logic and is not a theorem of
-     intuitionistic logic.  (Contributed by NM, 5-Aug-1993.) $)
-  exmid $p |- ( ph \/ -. ph ) $=
-    ( wn id orri ) AABZECD $.
-
-  $( Theorem *2.1 of [WhiteheadRussell] p. 101.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Nov-2012.) $)
-  pm2.1 $p |- ( -. ph \/ ph ) $=
-    ( id imori ) AAABC $.
-
-  $( Theorem *2.13 of [WhiteheadRussell] p. 101.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm2.13 $p |- ( ph \/ -. -. -. ph ) $=
-    ( wn notnot1 orri ) AABZBBECD $.
 
   $( Theorem *4.62 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.) $)
@@ -6541,16 +6469,6 @@ $)
       ( mpbir2and ) ABCDFGEH $.
   $}
 
-  $( Theorem *5.62 of [WhiteheadRussell] p. 125.  (Contributed by Roy F.
-     Longton, 21-Jun-2005.) $)
-  pm5.62 $p |- ( ( ( ph /\ ps ) \/ -. ps ) <-> ( ph \/ -. ps ) ) $=
-    ( wa wn wo exmid ordir mpbiran2 ) ABCBDZEAIEBIEBFABIGH $.
-
-  $( Theorem *5.63 of [WhiteheadRussell] p. 125.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 25-Dec-2012.) $)
-  pm5.63 $p |- ( ( ph \/ ps ) <-> ( ph \/ ( -. ph /\ ps ) ) ) $=
-    ( wn wa wo exmid ordi mpbiran bicomi ) AACZBDEZABEZKAJELAFAJBGHI $.
-
   ${
     bianfi.1 $e |- -. ph $.
     $( A wff conjoined with falsehood is false.  (Contributed by NM,
@@ -6577,11 +6495,6 @@ $)
   pm4.82 $p |- ( ( ( ph -> ps ) /\ ( ph -> -. ps ) ) <-> -. ph ) $=
     ( wi wn wa pm2.65 imp pm2.21 jca impbii ) ABCZABDZCZEADZKMNABFGNKMABHALHIJ
     $.
-
-  $( Theorem *4.83 of [WhiteheadRussell] p. 122.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.83 $p |- ( ( ( ph -> ps ) /\ ( -. ph -> ps ) ) <-> ps ) $=
-    ( wn wo wi wa exmid a1bi jaob bitr2i ) BAACZDZBEABEKBEFLBAGHABKIJ $.
 
   $( A transitive law of equivalence.  Compare Theorem *4.22 of
      [WhiteheadRussell] p. 117.  (Contributed by NM, 18-Aug-1993.) $)
@@ -14446,6 +14359,46 @@ $)
      _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
   qexmid $p |- E. x ( ph -> A. x ph ) $=
     ( wal 19.8a 19.35ri ) AABCZBFBDE $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Law of the excluded middle (classical)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Law of excluded middle, also called the principle of _tertium non datur_.
+     Theorem *2.11 of [WhiteheadRussell] p. 101.  It says that something is
+     either true or not true; there are no in-between values of truth.  This is
+     an essential distinction of our classical logic and is not a theorem of
+     intuitionistic logic.  (Contributed by NM, 5-Aug-1993.) $)
+  exmid $p |- ( ph \/ -. ph ) $=
+    ( wn id orri ) AABZECD $.
+
+  $( Theorem *2.1 of [WhiteheadRussell] p. 101.  (Contributed by NM,
+     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Nov-2012.) $)
+  pm2.1 $p |- ( -. ph \/ ph ) $=
+    ( id imori ) AAABC $.
+
+  $( Theorem *2.13 of [WhiteheadRussell] p. 101.  (Contributed by NM,
+     3-Jan-2005.) $)
+  pm2.13 $p |- ( ph \/ -. -. -. ph ) $=
+    ( wn notnot1 orri ) AABZBBECD $.
+
+  $( Theorem *4.83 of [WhiteheadRussell] p. 122.  As with other case
+     elimination theorems like ~ pm2.61 , it does not hold intuitionistically
+     (Contributed by NM, 3-Jan-2005.) $)
+  pm4.83 $p |- ( ( ( ph -> ps ) /\ ( -. ph -> ps ) ) <-> ps ) $=
+    ( wn wo wi wa exmid a1bi jaob bitr2i ) BAACZDZBEABEKBEFLBAGHABKIJ $.
+
+  $( Theorem *5.62 of [WhiteheadRussell] p. 125.  (Contributed by Roy F.
+     Longton, 21-Jun-2005.) $)
+  pm5.62 $p |- ( ( ( ph /\ ps ) \/ -. ps ) <-> ( ph \/ -. ps ) ) $=
+    ( wa wn wo exmid ordir mpbiran2 ) ABCBDZEAIEBIEBFABIGH $.
+
+  $( Theorem *5.63 of [WhiteheadRussell] p. 125.  (Contributed by NM,
+     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 25-Dec-2012.) $)
+  pm5.63 $p |- ( ( ph \/ ps ) <-> ( ph \/ ( -. ph /\ ps ) ) ) $=
+    ( wn wa wo exmid ordi mpbiran bicomi ) AACZBDEZABEZKAJELAFAJBGHI $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
