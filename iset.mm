@@ -5836,15 +5836,6 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
   $}
 
   ${
-    mt3i.1 $e |- -. ch $.
-    mt3i.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( Modus tollens inference.  (Contributed by NM, 26-Mar-1995.)  (Proof
-       shortened by Wolf Lammen, 15-Sep-2012.) $)
-    mt3i $p |- ( ph -> ps ) $=
-      ( wn a1i mt3d ) ABCCFADGEH $.
-  $}
-
-  ${
     nsyl2.1 $e |- ( ph -> -. ps ) $.
     nsyl2.2 $e |- ( -. ch -> ps ) $.
     $( A negated syllogism inference.  (Contributed by NM, 26-Jun-1994.)
@@ -5988,51 +5979,6 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
     pm2.61dan $p |- ( ph -> ch ) $=
       ( ex wn pm2.61d ) ABCABCDFABGCEFH $.
   $}
-
-  ${
-    pm2.61ddan.1 $e |- ( ( ph /\ ps ) -> th ) $.
-    pm2.61ddan.2 $e |- ( ( ph /\ ch ) -> th ) $.
-    pm2.61ddan.3 $e |- ( ( ph /\ ( -. ps /\ -. ch ) ) -> th ) $.
-    $( Elimination of two antecedents.  (Contributed by NM, 9-Jul-2013.) $)
-    pm2.61ddan $p |- ( ph -> th ) $=
-      ( wn wa adantlr anassrs pm2.61dan ) ABDEABHZICDACDMFJAMCHDGKLL $.
-  $}
-
-  ${
-    pm2.61dda.1 $e |- ( ( ph /\ -. ps ) -> th ) $.
-    pm2.61dda.2 $e |- ( ( ph /\ -. ch ) -> th ) $.
-    pm2.61dda.3 $e |- ( ( ph /\ ( ps /\ ch ) ) -> th ) $.
-    $( Elimination of two antecedents.  (Contributed by NM, 9-Jul-2013.) $)
-    pm2.61dda $p |- ( ph -> th ) $=
-      ( wa anassrs wn adantlr pm2.61dan ) ABDABHCDABCDGIACJDBFKLEL $.
-  $}
-
-  ${
-    pm2.61nii.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    pm2.61nii.2 $e |- ( -. ph -> ch ) $.
-    pm2.61nii.3 $e |- ( -. ps -> ch ) $.
-    $( Inference eliminating two antecedents.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by Andrew Salmon, 25-May-2011.)  (Proof
-       shortened by Wolf Lammen, 13-Nov-2012.) $)
-    pm2.61nii $p |- ch $=
-      ( pm2.61d1 pm2.61i ) ACABCDFGEH $.
-  $}
-
-  ${
-    pm2.61iii.1 $e |- ( -. ph -> ( -. ps -> ( -. ch -> th ) ) ) $.
-    pm2.61iii.2 $e |- ( ph -> th ) $.
-    pm2.61iii.3 $e |- ( ps -> th ) $.
-    pm2.61iii.4 $e |- ( ch -> th ) $.
-    $( Inference eliminating three antecedents.  (Contributed by NM,
-       2-Jan-2002.)  (Proof shortened by Wolf Lammen, 22-Sep-2013.) $)
-    pm2.61iii $p |- th $=
-      ( wn wi a1d pm2.61ii pm2.61i ) CDHABCIZDJEADNFKBDNGKLM $.
-  $}
-
-  $( Importation theorem expressed with primitive connectives.  (Contributed by
-     NM, 25-Apr-1994.)  (Proof shortened by Wolf Lammen, 20-Jul-2013.) $)
-  impt $p |- ( ( ph -> ( ps -> ch ) ) -> ( -. ( ph -> -. ps ) -> ch ) ) $=
-    ( wi wn simprim simplim imim1i mpdi ) ABCDZDABEZDEZBCABFLAJAKGHI $.
 
   ${
     impcon4bid.1 $e |- ( ph -> ( ps -> ch ) ) $.
@@ -6253,24 +6199,6 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
     imori $p |- ( -. ph \/ ps ) $=
       ( wi wn wo imor mpbi ) ABDAEBFCABGH $.
   $}
-
-  $( Law of excluded middle, also called the principle of _tertium non datur_.
-     Theorem *2.11 of [WhiteheadRussell] p. 101.  It says that something is
-     either true or not true; there are no in-between values of truth.  This is
-     an essential distinction of our classical logic and is not a theorem of
-     intuitionistic logic.  (Contributed by NM, 5-Aug-1993.) $)
-  exmid $p |- ( ph \/ -. ph ) $=
-    ( wn id orri ) AABZECD $.
-
-  $( Theorem *2.1 of [WhiteheadRussell] p. 101.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Nov-2012.) $)
-  pm2.1 $p |- ( -. ph \/ ph ) $=
-    ( id imori ) AAABC $.
-
-  $( Theorem *2.13 of [WhiteheadRussell] p. 101.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm2.13 $p |- ( ph \/ -. -. -. ph ) $=
-    ( wn notnot1 orri ) AABZBBECD $.
 
   $( Theorem *4.62 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.) $)
@@ -6541,16 +6469,6 @@ $)
       ( mpbir2and ) ABCDFGEH $.
   $}
 
-  $( Theorem *5.62 of [WhiteheadRussell] p. 125.  (Contributed by Roy F.
-     Longton, 21-Jun-2005.) $)
-  pm5.62 $p |- ( ( ( ph /\ ps ) \/ -. ps ) <-> ( ph \/ -. ps ) ) $=
-    ( wa wn wo exmid ordir mpbiran2 ) ABCBDZEAIEBIEBFABIGH $.
-
-  $( Theorem *5.63 of [WhiteheadRussell] p. 125.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 25-Dec-2012.) $)
-  pm5.63 $p |- ( ( ph \/ ps ) <-> ( ph \/ ( -. ph /\ ps ) ) ) $=
-    ( wn wa wo exmid ordi mpbiran bicomi ) AACZBDEZABEZKAJELAFAJBGHI $.
-
   ${
     bianfi.1 $e |- -. ph $.
     $( A wff conjoined with falsehood is false.  (Contributed by NM,
@@ -6577,11 +6495,6 @@ $)
   pm4.82 $p |- ( ( ( ph -> ps ) /\ ( ph -> -. ps ) ) <-> -. ph ) $=
     ( wi wn wa pm2.65 imp pm2.21 jca impbii ) ABCZABDZCZEADZKMNABFGNKMABHALHIJ
     $.
-
-  $( Theorem *4.83 of [WhiteheadRussell] p. 122.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.83 $p |- ( ( ( ph -> ps ) /\ ( -. ph -> ps ) ) <-> ps ) $=
-    ( wn wo wi wa exmid a1bi jaob bitr2i ) BAACZDZBEABEKBEFLBAGHABKIJ $.
 
   $( A transitive law of equivalence.  Compare Theorem *4.22 of
      [WhiteheadRussell] p. 117.  (Contributed by NM, 18-Aug-1993.) $)
@@ -9178,6 +9091,75 @@ $)
       ( wal ex al2imi imp ) ADFBDFCDFABCDABCEGHI $.
   $}
 
+  $c F/ $.  $( The not-free symbol. $)
+
+  $( Extend wff definition to include the not-free predicate. $)
+  wnf $a wff F/ x ph $.
+
+  $( Define the not-free predicate for wffs.  This is read " ` x ` is not free
+     in ` ph ` ".  Not-free means that the value of ` x ` cannot affect the
+     value of ` ph ` , e.g., any occurrence of ` x ` in ` ph ` is effectively
+     bound by a "for all" or something that expands to one (such as "there
+     exists").  In particular, substitution for a variable not free in a wff
+     does not affect its value ( ~ sbf ).  An example of where this is used is
+     ~ stdpc5 .  See ~ nf2 for an alternative definition which does not involve
+     nested quantifiers on the same variable.
+
+     Not-free is a commonly used constraint, so it is useful to have a notation
+     for it.  Surprisingly, there is no common formal notation for it, so here
+     we devise one.  Our definition lets us work with the not-free notion
+     within the logic itself rather than as a metalogical side condition.
+
+     To be precise, our definition really means "effectively not free," because
+     it is slightly less restrictive than the usual textbook definition for
+     not-free (which only considers syntactic freedom).  For example, ` x ` is
+     effectively not free in the bare expression ` x = x ` , even though ` x `
+     would be considered free in the usual textbook definition, because the
+     value of ` x ` in the expression ` x = x ` cannot affect the truth of the
+     expression (and thus substitution will not change the result).
+     (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+  df-nf $a |- ( F/ x ph <-> A. x ( ph -> A. x ph ) ) $.
+
+  ${
+    nfi.1 $e |- ( ph -> A. x ph ) $.
+    $( Deduce that ` x ` is not free in ` ph ` from the definition.
+       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    nfi $p |- F/ x ph $=
+      ( wnf wal wi df-nf mpgbir ) ABDAABEFBABGCH $.
+  $}
+
+  ${
+    hbth.1 $e |- ph $.
+    $( No variable is (effectively) free in a theorem.
+
+       This and later "hypothesis-building" lemmas, with labels starting
+       "hb...", allow us to construct proofs of formulas of the form
+       ` |- ( ph -> A. x ph ) ` from smaller formulas of this form.  These are
+       useful for constructing hypotheses that state " ` x ` is (effectively)
+       not free in ` ph ` ."  (Contributed by NM, 5-Aug-1993.) $)
+    hbth $p |- ( ph -> A. x ph ) $=
+      ( wal ax-gen a1i ) ABDAABCEF $.
+
+    $( No variable is (effectively) free in a theorem.  (Contributed by Mario
+       Carneiro, 11-Aug-2016.) $)
+    nfth $p |- F/ x ph $=
+      ( hbth nfi ) ABABCDE $.
+  $}
+
+  ${
+    nfnth.1 $e |- -. ph $.
+    $( No variable is (effectively) free in a non-theorem.  (Contributed by
+       Mario Carneiro, 6-Dec-2016.) $)
+    nfnth $p |- F/ x ph $=
+      ( wal pm2.21i nfi ) ABAABDCEF $.
+  $}
+
+  $( The true constant has no free variables.  (This can also be proven in one
+     step with ~ nfv , but this proof does not use ~ ax-17 .)  (Contributed by
+     Mario Carneiro, 6-Oct-2016.) $)
+  nftru $p |- F/ x T. $=
+    ( wtru tru nfth ) BACD $.
+
   ${
     alimd.1 $e |- ( ph -> A. x ph ) $.
     alimd.2 $e |- ( ph -> ( ps -> ch ) ) $.
@@ -9214,25 +9196,37 @@ $)
   $}
 
   ${
-    hbth.1 $e |- ph $.
-    $( No variable is (effectively) free in a theorem.
-
-       This and later "hypothesis-building" lemmas, with labels starting
-       "hb...", allow us to construct proofs of formulas of the form
-       ` |- ( ph -> A. x ph ) ` from smaller formulas of this form.  These are
-       useful for constructing hypotheses that state " ` x ` is (effectively)
-       not free in ` ph ` ."  (Contributed by NM, 5-Aug-1993.) $)
-    hbth $p |- ( ph -> A. x ph ) $=
-      ( wal ax-gen a1i ) ABDAABCEF $.
-  $}
-
-  ${
     hbxfrbi.1 $e |- ( ph <-> ps ) $.
     hbxfrbi.2 $e |- ( ps -> A. x ps ) $.
     $( A utility lemma to transfer a bound-variable hypothesis builder into a
        definition.  (Contributed by Jonathan Ben-Naim, 3-Jun-2011.) $)
     hbxfrbi $p |- ( ph -> A. x ph ) $=
       ( wal albii 3imtr4i ) BBCFAACFEDABCDGH $.
+  $}
+
+  ${
+    nfbii.1 $e |- ( ph <-> ps ) $.
+    $( Equality theorem for not-free.  (Contributed by Mario Carneiro,
+       11-Aug-2016.) $)
+    nfbii $p |- ( F/ x ph <-> F/ x ps ) $=
+      ( wal wi wnf albii imbi12i df-nf 3bitr4i ) AACEZFZCEBBCEZFZCEACGBCGMOCABL
+      NDABCDHIHACJBCJK $.
+
+    ${
+      nfxfr.2 $e |- F/ x ps $.
+      $( A utility lemma to transfer a bound-variable hypothesis builder into a
+         definition.  (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+      nfxfr $p |- F/ x ph $=
+        ( wnf nfbii mpbir ) ACFBCFEABCDGH $.
+    $}
+
+    ${
+      nfxfrd.2 $e |- ( ch -> F/ x ps ) $.
+      $( A utility lemma to transfer a bound-variable hypothesis builder into a
+         definition.  (Contributed by Mario Carneiro, 24-Sep-2016.) $)
+      nfxfrd $p |- ( ch -> F/ x ph ) $=
+        ( wnf nfbii sylibr ) CBDGADGFABDEHI $.
+    $}
   $}
 
   ${
@@ -9377,6 +9371,11 @@ $)
   hbe1 $p |- ( E. x ph -> A. x E. x ph ) $=
     ( ax-ie1 ) ABC $.
 
+  $( ` x ` is not free in ` E. x ph ` .  (Contributed by Mario Carneiro,
+     11-Aug-2016.) $)
+  nfe1 $p |- F/ x E. x ph $=
+    ( wex hbe1 nfi ) ABCBABDE $.
+
   $( Closed form of Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
      7-Nov-2005.)  (Revised by Mario Carneiro, 1-Feb-2015.) $)
   19.23t $p |- ( A. x ( ps -> A. x ps ) ->
@@ -9403,6 +9402,14 @@ $)
     ( wfal wi wal wex wn notfal pm2.21i 19.23 dfneg albii 3bitr4i ) ACDZBEABFZC
     DAGZBEOGACBCCBEHIJPNBAKLOKM $.
 
+  ${
+    nex.1 $e |- -. ph $.
+    $( Generalization rule for negated wff.  (Contributed by NM,
+       18-May-1994.) $)
+    nex $p |- -. E. x ph $=
+      ( wn wex alnex mpgbi ) ADABEDBABFCG $.
+  $}
+
   $( Classical definition of existential quantification.  This does not hold
      intuitionistically, so it depends on ~ ax-3 for its proof.  Definition of
      [Margaris] p. 49.  (Contributed by NM, 2-Feb-2015.)  (Revised by Mario
@@ -9412,7 +9419,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    Introduce equality axioms ax-8 through ax-14 except ax-9
+    Introduce equality axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9667,6 +9674,11 @@ $)
      5-Aug-1993.) $)
   ax-4 $a |- ( A. x ph -> ph ) $.
 
+  $( Specialization.  Another name for ~ ax-4 .  (Contributed by NM,
+     21-May-2008.) $)
+  sp $p |- ( A. x ph -> ph ) $=
+    ( ax-4 ) ABC $.
+
   $( Rederive the original version of the axiom from ~ ax-i12 .  Note that we
      need ~ ax-4 for the derivation, but the proof of ~ ax4 is nontheless
      non-circular since it does not use ax-12.  (Contributed by Mario Carneiro,
@@ -9738,6 +9750,45 @@ $)
       ( cv wceq wal wn alequcom con3i syl ) CEZBEZFCGZHMLFBGZHAONBCIJDK $.
   $}
 
+  $( Consequence of the definition of not-free.  (Contributed by Mario
+     Carneiro, 26-Sep-2016.) $)
+  nfr $p |- ( F/ x ph -> ( ph -> A. x ph ) ) $=
+    ( wnf wal wi df-nf sp sylbi ) ABCAABDEZBDIABFIBGH $.
+
+  ${
+    nfri.1 $e |- F/ x ph $.
+    $( Consequence of the definition of not-free.  (Contributed by Mario
+       Carneiro, 11-Aug-2016.) $)
+    nfri $p |- ( ph -> A. x ph ) $=
+      ( wnf wal wi nfr ax-mp ) ABDAABEFCABGH $.
+  $}
+
+  ${
+    nfrd.1 $e |- ( ph -> F/ x ps ) $.
+    $( Consequence of the definition of not-free in a context.  (Contributed by
+       Mario Carneiro, 11-Aug-2016.) $)
+    nfrd $p |- ( ph -> ( ps -> A. x ps ) ) $=
+      ( wnf wal wi nfr syl ) ABCEBBCFGDBCHI $.
+  $}
+
+  ${
+    nfd.1 $e |- F/ x ph $.
+    nfd.2 $e |- ( ph -> ( ps -> A. x ps ) ) $.
+    $( Deduce that ` x ` is not free in ` ps ` in a context.  (Contributed by
+       Mario Carneiro, 24-Sep-2016.) $)
+    nfd $p |- ( ph -> F/ x ps ) $=
+      ( wal wi wnf nfri alrimi df-nf sylibr ) ABBCFGZCFBCHAMCACDIEJBCKL $.
+  $}
+
+  ${
+    nfdh.1 $e |- ( ph -> A. x ph ) $.
+    nfdh.2 $e |- ( ph -> ( ps -> A. x ps ) ) $.
+    $( Deduce that ` x ` is not free in ` ps ` in a context.  (Contributed by
+       Mario Carneiro, 24-Sep-2016.) $)
+    nfdh $p |- ( ph -> F/ x ps ) $=
+      ( nfi nfd ) ABCACDFEG $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Axiom ax-17 - first use of the $d distinct variable statement
@@ -9772,9 +9823,26 @@ $)
       ( wal wi ax-17 a1i ) BBCDEABCFG $.
   $}
 
+  ${
+    $d x ph $.
+    $( If ` x ` is not present in ` ph ` , then ` x ` is not free in ` ph ` .
+       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    nfv $p |- F/ x ph $=
+      ( ax-17 nfi ) ABABCD $.
+  $}
+
+  ${
+    $d x ps $.
+    $( ~ nfv with antecedent.  Useful in proofs of deduction versions of
+       bound-variable hypothesis builders such as ~ nfimd .  (Contributed by
+       Mario Carneiro, 6-Oct-2016.) $)
+    nfvd $p |- ( ph -> F/ x ps ) $=
+      ( wnf nfv a1i ) BCDABCEF $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Introduce Axiom of Existence ax-9
+        Introduce Axiom of Existence
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9936,17 +10004,55 @@ $)
     ( wn wal wi ax-4 con3i ax-6 syl con3 al2imi syl5 ) ACZABDZCZBDZANEZBDMBDMOP
     NAABFGABHIQOMBANJKL $.
 
+  ${
+    nfbidf.1 $e |- F/ x ph $.
+    nfbidf.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( An equality theorem for effectively not free.  (Contributed by Mario
+       Carneiro, 4-Oct-2016.) $)
+    nfbidf $p |- ( ph -> ( F/ x ps <-> F/ x ch ) ) $=
+      ( wal wi wnf nfri albid imbi12d df-nf 3bitr4g ) ABBDGZHZDGCCDGZHZDGBDICDI
+      APRDADEJZABCOQFABCDSFKLKBDMCDMN $.
+  $}
+
   $( ` x ` is not free in ` A. x ph ` .  Example in Appendix in [Megill] p. 450
      (p. 19 of the preprint).  Also Lemma 22 of [Monk2] p. 114.  (Contributed
      by NM, 5-Aug-1993.) $)
   hba1 $p |- ( A. x ph -> A. x A. x ph ) $=
     ( ax-ial ) ABC $.
 
+  $( ` x ` is not free in ` A. x ph ` .  (Contributed by Mario Carneiro,
+     11-Aug-2016.) $)
+  nfa1 $p |- F/ x A. x ph $=
+    ( wal hba1 nfi ) ABCBABDE $.
+
   ${
     a5i.1 $e |- ( A. x ph -> ps ) $.
     $( Inference version of ~ ax-5o .  (Contributed by NM, 5-Aug-1993.) $)
     a5i $p |- ( A. x ph -> A. x ps ) $=
       ( wal wi hba1 ax-5 syl5 mpg ) ACEZBFZKBCEZFCKKCELCEMACGKBCHIDJ $.
+  $}
+
+  $( ` x ` is not free in ` F/ x ph ` .  (Contributed by Mario Carneiro,
+     11-Aug-2016.) $)
+  nfnf1 $p |- F/ x F/ x ph $=
+    ( wnf wal wi df-nf nfa1 nfxfr ) ABCAABDEZBDBABFIBGH $.
+
+  ${
+    nfnd.1 $e |- ( ph -> F/ x ps ) $.
+    $( If in a context ` x ` is not free in ` ps ` , it is not free in
+       ` -. ps ` .  (Contributed by Mario Carneiro, 24-Sep-2016.)  (Proof
+       shortened by Wolf Lammen, 28-Dec-2017.) $)
+    nfnd $p |- ( ph -> F/ x -. ps ) $=
+      ( wnf wn nfnf1 wal wi df-nf hbnt sylbi nfd syl ) ABCEZBFZCEDOPCBCGOBBCHIC
+      HPPCHIBCJBCKLMN $.
+  $}
+
+  ${
+    nfn.1 $e |- F/ x ph $.
+    $( If ` x ` is not free in ` ph ` , it is not free in ` -. ph ` .
+       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    nfn $p |- F/ x -. ph $=
+      ( wn wnf wtru a1i nfnd trud ) ADBEFABABEFCGHI $.
   $}
 
   ${
@@ -10103,11 +10209,58 @@ $)
   $}
 
   ${
+    nfan1.1 $e |- F/ x ph $.
+    nfan1.2 $e |- ( ph -> F/ x ps ) $.
+    $( A closed form of ~ nfan .  (Contributed by Mario Carneiro,
+       3-Oct-2016.) $)
+    nfan1 $p |- F/ x ( ph /\ ps ) $=
+      ( wa wal nfrd imdistani nfri 19.28 sylibr nfi ) ABFZCNABCGZFNCGABOABCEHIA
+      BCACDJKLM $.
+  $}
+
+  ${
+    nfan.1 $e |- F/ x ph $.
+    nfan.2 $e |- F/ x ps $.
+    $( If ` x ` is not free in ` ph ` and ` ps ` , it is not free in
+       ` ( ph /\ ps ) ` .  (Contributed by Mario Carneiro, 11-Aug-2016.)
+       (Proof shortened by Wolf Lammen, 13-Jan-2018.) $)
+    nfan $p |- F/ x ( ph /\ ps ) $=
+      ( wnf a1i nfan1 ) ABCDBCFAEGH $.
+
+    nfan.3 $e |- F/ x ch $.
+    $( If ` x ` is not free in ` ph ` , ` ps ` , and ` ch ` , it is not free in
+       ` ( ph /\ ps /\ ch ) ` .  (Contributed by Mario Carneiro,
+       11-Aug-2016.) $)
+    nf3an $p |- F/ x ( ph /\ ps /\ ch ) $=
+      ( w3a wa df-3an nfan nfxfr ) ABCHABIZCIDABCJMCDABDEFKGKL $.
+  $}
+
+  ${
     hbim1.1 $e |- ( ph -> A. x ph ) $.
     hbim1.2 $e |- ( ph -> ( ps -> A. x ps ) ) $.
     $( A closed form of ~ hbim .  (Contributed by NM, 5-Aug-1993.) $)
     hbim1 $p |- ( ( ph -> ps ) -> A. x ( ph -> ps ) ) $=
       ( wi wal a2i 19.21 sylibr ) ABFZABCGZFKCGABLEHABCDIJ $.
+  $}
+
+  ${
+    nfim1.1 $e |- F/ x ph $.
+    nfim1.2 $e |- ( ph -> F/ x ps ) $.
+    $( A closed form of ~ nfim .  (Contributed by NM, 5-Aug-1993.)  (Revised by
+       Mario Carneiro, 24-Sep-2016.)  (Proof shortened by Wolf Lammen,
+       2-Jan-2018.) $)
+    nfim1 $p |- F/ x ( ph -> ps ) $=
+      ( wi nfri nfrd hbim1 nfi ) ABFCABCACDGABCEHIJ $.
+  $}
+
+  ${
+    nfim.1 $e |- F/ x ph $.
+    nfim.2 $e |- F/ x ps $.
+    $( If ` x ` is not free in ` ph ` and ` ps ` , it is not free in
+       ` ( ph -> ps ) ` .  (Contributed by Mario Carneiro, 11-Aug-2016.)
+       (Proof shortened by Wolf Lammen, 2-Jan-2018.) $)
+    nfim $p |- F/ x ( ph -> ps ) $=
+      ( wnf a1i nfim1 ) ABCDBCFAEGH $.
   $}
 
   ${
@@ -10141,13 +10294,45 @@ $)
       KZUADJAQSRTABCDEFGLACBDEGFLMBCNBCDOP $.
   $}
 
+  ${
+    nfal.1 $e |- F/ x ph $.
+    $( If ` x ` is not free in ` ph ` , it is not free in ` A. y ph ` .
+       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    nfal $p |- F/ x A. y ph $=
+      ( wal nfri hbal nfi ) ACEBABCABDFGH $.
+
+    $( If ` x ` is not free in ` ph ` , it is not free in ` F/ y ph ` .
+       (Contributed by Mario Carneiro, 11-Aug-2016.)  (Proof shortened by Wolf
+       Lammen, 30-Dec-2017.) $)
+    nfnf $p |- F/ x F/ y ph $=
+      ( wnf wal wi df-nf nfal nfim nfxfr ) ACEAACFZGZCFBACHMBCALBDABCDIJIK $.
+  $}
+
   $( Closed form of Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
      27-May-1997.) $)
-  19.21t $p |- ( A. x ( ph -> A. x ph ) ->
+  19.21ht $p |- ( A. x ( ph -> A. x ph ) ->
                ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) ) $=
     ( wal wi alim imim2d com12 a4s hba1 ax-4 a1i hbimd imim2i alimi syl6 impbid
     ) AACDZEZCDZABEZCDZABCDZEZSUBUDECUBSUDUBRUCAABCFGHITUDUDCDUBTAUCCSCJSCKUCUC
     CDETBCJLMUDUACUCBABCKNOPQ $.
+
+  $( Closed form of Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
+     27-May-1997.) $)
+  19.21t $p |- ( F/ x ph ->
+               ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) ) $=
+    ( wnf wal wi wb df-nf 19.21ht sylbi ) ACDAACEFCEABFCEABCEFGACHABCIJ $.
+
+  ${
+    nfimd.1 $e |- ( ph -> F/ x ps ) $.
+    nfimd.2 $e |- ( ph -> F/ x ch ) $.
+    $( If in a context ` x ` is not free in ` ps ` and ` ch ` , it is not free
+       in ` ( ps -> ch ) ` .  (Contributed by Mario Carneiro, 24-Sep-2016.)
+       (Proof shortened by Wolf Lammen, 30-Dec-2017.) $)
+    nfimd $p |- ( ph -> F/ x ( ps -> ch ) ) $=
+      ( wnf wal nfnf1 nfri nfr imim2d 19.21t biimprd syl9r alrimd df-nf syl6ibr
+      wi sylc ) ABDGZCDGZBCSZDGZEFUAUBUCUCDHZSZDHUDUAUBUFDUADBDIJUBDCDIJUBUCBCD
+      HZSZUAUEUBCUGBCDKLUAUEUHBCDMNOPUCDQRT $.
+  $}
 
   ${
     aaan.1 $e |- ( ph -> A. y ph ) $.
@@ -10268,14 +10453,6 @@ $)
        20-May-1996.) $)
     eximd $p |- ( ph -> ( E. x ps -> E. x ch ) ) $=
       ( wi wal wex alrimi exim syl ) ABCGZDHBDICDIGAMDEFJBCDKL $.
-  $}
-
-  ${
-    nex.1 $e |- -. ph $.
-    $( Generalization rule for negated wff.  (Contributed by NM,
-       18-May-1994.) $)
-    nex $p |- -. E. x ph $=
-      ( wn wex alnex mpgbi ) ADABEDBABFCG $.
   $}
 
   ${
@@ -10419,6 +10596,15 @@ $)
       ( wex wal hbe1 hbal 19.8a alrimi exlimi ) AACEZBFCLCBACGHALBDACIJK $.
   $}
 
+  ${
+    nfex.1 $e |- F/ x ph $.
+    $( If ` x ` is not free in ` ph ` , it is not free in ` E. y ph ` .
+       (Contributed by Mario Carneiro, 11-Aug-2016.)  (Proof shortened by Wolf
+       Lammen, 30-Dec-2017.) $)
+    nfex $p |- F/ x E. y ph $=
+      ( wex nfri hbex nfi ) ACEBABCABDFGH $.
+  $}
+
   $( Theorem 19.2 of [Margaris] p. 89, generalized to use two set variables.
      (Contributed by O'Cat, 31-Mar-2008.) $)
   19.2 $p |- ( A. x ph -> E. y ph ) $=
@@ -10467,6 +10653,19 @@ $)
     19.19 $p |- ( A. x ( ph <-> ps ) -> ( ph <-> E. x ps ) ) $=
       ( wex wb wal 19.9 exbi syl5bbr ) AACEABFCGBCEACDHABCIJ $.
   $}
+
+  $( An alternative definition of ~ df-nf , which does not involve nested
+     quantifiers on the same variable.  (Contributed by Mario Carneiro,
+     24-Sep-2016.) $)
+  nf2 $p |- ( F/ x ph <-> ( E. x ph -> A. x ph ) ) $=
+    ( wnf wal wi wex df-nf nfa1 nfri 19.23 bitri ) ABCAABDZEBDABFLEABGALBLBABHI
+    JK $.
+
+  $( An alternative definition of ~ df-nf .  (Contributed by Mario Carneiro,
+     24-Sep-2016.) $)
+  nf3 $p |- ( F/ x ph <-> A. x ( E. x ph -> ph ) ) $=
+    ( wnf wex wal wi nf2 nfe1 nfri 19.21 bitr4i ) ABCABDZABEFLAFBEABGLABLBABHIJ
+    K $.
 
   ${
     19.36i.1 $e |- ( ps -> A. x ps ) $.
@@ -10739,6 +10938,11 @@ $)
     QZQUEUFGZABCHUHUMULUMACUDACIJUIUMUKUMBCUEUDBFZUCUGEBFUFUEUNUDABIKUDBCILJUJU
     MCUEUDUFUDAMNROOPSUDACTUA $.
 
+  $( All variables are effectively bound in an identical variable specifier.
+     (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+  nfae $p |- F/ z A. x x = y $=
+    ( weq wal hbae nfi ) ABDAECABCFG $.
+
   ${
     hbalequs.1 $e |- ( A. z A. x x = y -> ph ) $.
     $( Rule that applies ~ hbae to antecedent.  (Contributed by NM,
@@ -10752,6 +10956,11 @@ $)
      5-Aug-1993.) $)
   hbnae $p |- ( -. A. x x = y -> A. z -. A. x x = y ) $=
     ( weq wal hbae hbn ) ABDAECABCFG $.
+
+  $( All variables are effectively bound in a distinct variable specifier.
+     (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+  nfnae $p |- F/ z -. A. x x = y $=
+    ( weq wal nfae nfn ) ABDAECABCFG $.
 
   ${
     hbnalequs.1 $e |- ( A. z -. A. x x = y -> ph ) $.
@@ -11023,6 +11232,27 @@ $)
     VKWBVOWEVSWCWDGZCFZVGVJWCGGZCFZVKWCGZVRWJCVSWBVOCVRCUKWBWBCFGVSACUIUJVRCSUL
     VCWLCVGWBVGVIVOCAAUMCABUNUOUPWKWMHWJWLHCFWNWJWLCUQVJWCCAURUSUTVDQTTVAVB $.
 
+  ${
+    nfald.1 $e |- F/ y ph $.
+    nfald.2 $e |- ( ph -> F/ x ps ) $.
+    $( If ` x ` is not free in ` ph ` , it is not free in ` A. y ph ` .
+       (Contributed by Mario Carneiro, 24-Sep-2016.)  (Proof shortened by Wolf
+       Lammen, 6-Jan-2018.) $)
+    nfald $p |- ( ph -> F/ x A. y ps ) $=
+      ( wnf wal nfri alrimi nfnf1 nfal hba1 sp nfrd hbald nfd syl ) ABCGZDHZBDH
+      ZCGASDADEIFJTUACSCDBCKLTBCDSDMTBCSDNOPQR $.
+  $}
+
+  $( Lemma 24 of [Monk2] p. 114.  (Contributed by Mario Carneiro,
+     24-Sep-2016.) $)
+  nfa2 $p |- F/ x A. y A. x ph $=
+    ( wal nfa1 nfal ) ABDBCABEF $.
+
+  $( Lemma 23 of [Monk2] p. 114.  (Contributed by Mario Carneiro,
+     24-Sep-2016.) $)
+  nfia1 $p |- F/ x ( A. x ph -> A. x ps ) $=
+    ( wal nfa1 nfim ) ACDBCDCACEBCEF $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Substitution (without distinct variables)
@@ -11221,6 +11451,14 @@ $)
   $}
 
   ${
+    nfs1f.1 $e |- F/ x ph $.
+    $( If ` x ` is not free in ` ph ` , it is not free in ` [ y / x ] ph ` .
+       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    nfs1f $p |- F/ x [ y / x ] ph $=
+      ( wsb nfri sbf nfxfr ) ABCEABABCABDFGDH $.
+  $}
+
+  ${
     hbs1f.1 $e |- ( ph -> A. x ph ) $.
     $( If ` x ` is not free in ` ph ` , it is not free in ` [ y / x ] ph ` .
        (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
@@ -11349,6 +11587,14 @@ $)
        ` [ y / x ] ph ` .  (Contributed by NM, 5-Aug-1993.) $)
     hbsb3 $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
       ( wsb wal sbimi hbsb2a syl ) ABCEZACFZBCEJBFAKBCDGABCHI $.
+  $}
+
+  ${
+    nfs1.1 $e |- F/ y ph $.
+    $( If ` y ` is not free in ` ph ` , ` x ` is not free in
+       ` [ y / x ] ph ` .  (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    nfs1 $p |- F/ x [ y / x ] ph $=
+      ( wsb nfri hbsb3 nfi ) ABCEBABCACDFGH $.
   $}
 
   ${
@@ -11976,17 +12222,17 @@ $)
      27-May-1997.) $)
   sbcom $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
     ( weq wal wsb wb wn wa hbae sbbid bitr3d hbnae hban albid sb4b sbequ12 a4s
-    wi drsb1 adantr ax-12 imp alimi 19.21t 3syl adantrr alcom bi2.04 nalequcoms
-    albii syl5bb adantrl imbi2d sylan9bbr adantl sylan9bb pm2.61ian ex pm2.61ii
-    3bitr4d ) BCEZBFZDCEZDFZABCGZDCGZADCGZBCGZHZVDIZVFIZVKBDEBFZVLVMJZVKVNVKVOV
-    NVGBCGVHVJVGBDCUAVNVGVIBCBDBKABDCUALMUBVNIZVOJZVEVCATZBFZTZDFZVCVEATZDFZTZB
-    FZVHVJVQVEVRTZBFZDFZWAWEVPVLWHWAHVMVPVLJZWGVTDVPVLDBDDNZBCDNZOWIWIBFVEVEBFT
-    ZBFWGVTHVPVLBBDBNZBCBNOWIWLBVPVLWLDCBUCUDUEVEVRBUFUGPUHVPVMWHWEHVLWHWFDFZBF
-    VPVMJZWEWFDBUIWOWNWDBVPVMBWMDCBNZOWNVCWBTZDFZWOWDWFWQDVEVCAUJULWOWODFVCVCDF
-    TZDFWRWDHVPVMDWJDCDNOWOWSDVPVMWSVMWSTDBBCDUCUKUDUEVCWBDUFUGUMPUMUNMVOVHWAHV
-    PVMVHVEVGTZDFVLWAVGDCQVLWTVTDWKVLVGVSVEABCQUOPUPUQVOVJWEHVPVLVJVCVITZBFVMWE
-    VIBCQVMXAWDBWPVMVIWCVCADCQUOPURUQVBUSUTVDVIVHVJVDAVGDCBCDKVCAVGHBABCRSLVCVI
-    VJHBVIBCRSMVFVGVHVJVEVGVHHDVGDCRSVFAVIBCDCBKVEAVIHDADCRSLMVA $.
+    wi drsb1 adantr ax-12 imp alimi 19.21ht 3syl adantrr alcom albii nalequcoms
+    bi2.04 syl5bb adantrl imbi2d sylan9bbr adantl sylan9bb 3bitr4d pm2.61ian ex
+    pm2.61ii ) BCEZBFZDCEZDFZABCGZDCGZADCGZBCGZHZVDIZVFIZVKBDEBFZVLVMJZVKVNVKVO
+    VNVGBCGVHVJVGBDCUAVNVGVIBCBDBKABDCUALMUBVNIZVOJZVEVCATZBFZTZDFZVCVEATZDFZTZ
+    BFZVHVJVQVEVRTZBFZDFZWAWEVPVLWHWAHVMVPVLJZWGVTDVPVLDBDDNZBCDNZOWIWIBFVEVEBF
+    TZBFWGVTHVPVLBBDBNZBCBNOWIWLBVPVLWLDCBUCUDUEVEVRBUFUGPUHVPVMWHWEHVLWHWFDFZB
+    FVPVMJZWEWFDBUIWOWNWDBVPVMBWMDCBNZOWNVCWBTZDFZWOWDWFWQDVEVCAULUJWOWODFVCVCD
+    FTZDFWRWDHVPVMDWJDCDNOWOWSDVPVMWSVMWSTDBBCDUCUKUDUEVCWBDUFUGUMPUMUNMVOVHWAH
+    VPVMVHVEVGTZDFVLWAVGDCQVLWTVTDWKVLVGVSVEABCQUOPUPUQVOVJWEHVPVLVJVCVITZBFVMW
+    EVIBCQVMXAWDBWPVMVIWCVCADCQUOPURUQUSUTVAVDVIVHVJVDAVGDCBCDKVCAVGHBABCRSLVCV
+    IVJHBVIBCRSMVFVGVHVJVEVGVHHDVGDCRSVFAVIBCDCBKVEAVIHDADCRSLMVB $.
 
   ${
     sb5rf.1 $e |- ( ph -> A. y ph ) $.
@@ -12208,6 +12454,15 @@ $)
        10-Feb-1997.) $)
     alrimdv $p |- ( ph -> ( ps -> A. x ch ) ) $=
       ( ax-17 alrimd ) ABCDADFBDFEG $.
+  $}
+
+  ${
+    $d x ph $.
+    nfdv.1 $e |- ( ph -> ( ps -> A. x ps ) ) $.
+    $( Apply the definition of not-free in a context.  (Contributed by Mario
+       Carneiro, 11-Aug-2016.) $)
+    nfdv $p |- ( ph -> F/ x ps ) $=
+      ( wal wi wnf alrimiv df-nf sylibr ) ABBCEFZCEBCGAKCDHBCIJ $.
   $}
 
   ${
@@ -13230,10 +13485,10 @@ $( The theorems in this section make use of the $d statement. $)
        2-Jan-2002.) $)
     sbal2 $p |- ( -. A. x x = y ->
              ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) ) $=
-      ( weq wal wn wi wsb alcom hbnae dveeq1 alimi hbnaes 19.21t albid syl5rbbr
-      wb syl sb6 albii 3bitr4g ) BCEBFGZCDEZABFZHZCFZUDAHZCFZBFZUECDIACDIZBFUJU
-      HBFZCFUCUGUHCBJUCULUFCBCCKUCUDUDBFHZBFZULUFRUNBCBUCUMBBCDLMNUDABOSPQUECDT
-      UKUIBACDTUAUB $.
+      ( weq wal wn wi alcom hbnae wb dveeq1 alimi hbnaes 19.21ht albid syl5rbbr
+      wsb syl sb6 albii 3bitr4g ) BCEBFGZCDEZABFZHZCFZUDAHZCFZBFZUECDRACDRZBFUJ
+      UHBFZCFUCUGUHCBIUCULUFCBCCJUCUDUDBFHZBFZULUFKUNBCBUCUMBBCDLMNUDABOSPQUECD
+      TUKUIBACDTUAUB $.
   $}
 
   ${
@@ -14449,6 +14704,53 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Law of the excluded middle (classical)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Law of excluded middle, also called the principle of _tertium non datur_.
+     Theorem *2.11 of [WhiteheadRussell] p. 101.  It says that something is
+     either true or not true; there are no in-between values of truth.  This is
+     an essential distinction of our classical logic and is not a theorem of
+     intuitionistic logic.  (Contributed by NM, 5-Aug-1993.) $)
+  exmid $p |- ( ph \/ -. ph ) $=
+    ( wn id orri ) AABZECD $.
+
+  $( Theorem *2.1 of [WhiteheadRussell] p. 101.  (Contributed by NM,
+     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Nov-2012.) $)
+  pm2.1 $p |- ( -. ph \/ ph ) $=
+    ( id imori ) AAABC $.
+
+  $( Theorem *2.13 of [WhiteheadRussell] p. 101.  (Contributed by NM,
+     3-Jan-2005.) $)
+  pm2.13 $p |- ( ph \/ -. -. -. ph ) $=
+    ( wn notnot1 orri ) AABZBBECD $.
+
+  $( Theorem *4.83 of [WhiteheadRussell] p. 122.  As with other case
+     elimination theorems like ~ pm2.61 , it does not hold intuitionistically
+     (Contributed by NM, 3-Jan-2005.) $)
+  pm4.83 $p |- ( ( ( ph -> ps ) /\ ( -. ph -> ps ) ) <-> ps ) $=
+    ( wn wo wi wa exmid a1bi jaob bitr2i ) BAACZDZBEABEKBEFLBAGHABKIJ $.
+
+  $( Theorem *5.62 of [WhiteheadRussell] p. 125.  (Contributed by Roy F.
+     Longton, 21-Jun-2005.) $)
+  pm5.62 $p |- ( ( ( ph /\ ps ) \/ -. ps ) <-> ( ph \/ -. ps ) ) $=
+    ( wa wn wo exmid ordir mpbiran2 ) ABCBDZEAIEBIEBFABIGH $.
+
+  $( Theorem *5.63 of [WhiteheadRussell] p. 125.  (Contributed by NM,
+     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 25-Dec-2012.) $)
+  pm5.63 $p |- ( ( ph \/ ps ) <-> ( ph \/ ( -. ph /\ ps ) ) ) $=
+    ( wn wa wo exmid ordi mpbiran bicomi ) AACZBDEZABEZKAJELAFAJBGHI $.
+
+  $( Variable ` x ` is effectively not free in ` ph ` iff ` ph ` is always true
+     or always false.  This is a classical result.  (Contributed by Mario
+     Carneiro, 24-Sep-2016.) $)
+  nf4 $p |- ( F/ x ph <-> ( A. x ph \/ A. x -. ph ) ) $=
+    ( wnf wex wal wi wn wo nf2 imor orcom alnex orbi2i bitr4i 3bitri ) ABCABDZA
+    BEZFPGZQHZQAGBEZHZABIPQJSQRHUARQKTRQABLMNO $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                 Relationships between connectives (classical)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -14769,14 +15071,14 @@ $)
                ( x = y -> ( A. z ph -> A. x ( x = y -> A. z ph ) ) ) ) ) $=
       ( weq wal wn wi ax-1 a5i a1i biidd a1d wa alequcom con3i imp hbnae hban
       dral1 imbi2d dral2 3imtr4d alequcoms adantr simplr ax-12 syl2an hba1 ax-4
-      adantlr sylan2 alimd syl2anc ax-7 alrimi 19.21t syl albid syl5ib ad2antrr
-      wb syld exp31 pm2.61ian ) BDFBGZCDFCGZHZBCFZBGHZVJADGZVJVLIZBGZIZIZIZVGVQ
-      VIVGVPVKVGVOVJVODBDBFDGZABGZVJVSIZBGZVLVNVSWAIVRAVTBVSVJJKLAADBVRAMUAZVMV
-      TDBBVRVLVSVJWBUBUCUDUENNUFVGHZVIOZVKVJVOWDVKOVJOZVLVJAIZBGZDGZVNWEVKVJDGZ
-      VLWHIWDVKVJUGWDVJWIVKWDVJWIWCVRHZDCFDGZHZVJWIIZVIVRVGDBPQWKVHDCPQWJWLWMBC
-      DUHRUIZRULVKWIOAWGDVKWIDBCDSVJDUJTWIVKVJAWGIZVJDUKVKVJWOERUMUNUOWDWHVNIVK
-      VJWHWFDGZBGWDVNWFDBUPWDWPVMBWCVIBBDBSCDBSTWDWMDGWPVMVCWDWMDWCVIDBDDSCDDST
-      WNUQVJADURUSUTVAVBVDVEVF $.
+      adantlr sylan2 alimd syl2anc ax-7 wb alrimi 19.21ht albid syl5ib ad2antrr
+      syl syld exp31 pm2.61ian ) BDFBGZCDFCGZHZBCFZBGHZVJADGZVJVLIZBGZIZIZIZVGV
+      QVIVGVPVKVGVOVJVODBDBFDGZABGZVJVSIZBGZVLVNVSWAIVRAVTBVSVJJKLAADBVRAMUAZVM
+      VTDBBVRVLVSVJWBUBUCUDUENNUFVGHZVIOZVKVJVOWDVKOVJOZVLVJAIZBGZDGZVNWEVKVJDG
+      ZVLWHIWDVKVJUGWDVJWIVKWDVJWIWCVRHZDCFDGZHZVJWIIZVIVRVGDBPQWKVHDCPQWJWLWMB
+      CDUHRUIZRULVKWIOAWGDVKWIDBCDSVJDUJTWIVKVJAWGIZVJDUKVKVJWOERUMUNUOWDWHVNIV
+      KVJWHWFDGZBGWDVNWFDBUPWDWPVMBWCVIBBDBSCDBSTWDWMDGWPVMUQWDWMDWCVIDBDDSCDDS
+      TWNURVJADUSVCUTVAVBVDVEVF $.
   $}
 
   ${
@@ -14789,7 +15091,7 @@ $)
                ( x = y -> ( A. z ph -> A. x ( x = y -> A. z ph ) ) ) ) $=
       ( weq wal wn wi ax-1 a5i a1i biidd dral1 imbi2d dral2 a1d wa imp hbnae wb
       3imtr4d alequcoms simplr dveeq1 nalequcoms adantlr hba1 hban sylan2 alimd
-      ax-4 syl2anc ax-7 alrimi 19.21t albid syl5ib ad2antrr syld exp31 pm2.61i
+      ax-4 syl2anc ax-7 alrimi 19.21ht albid syl5ib ad2antrr syld exp31 pm2.61i
       syl ) BDFBGZBCFZBGHZVEADGZVEVGIZBGZIZIZIVDVKVFVDVJVEVJDBDBFDGZABGZVEVMIZB
       GZVGVIVMVOIVLAVNBVMVEJKLAADBVLAMNZVHVNDBBVLVGVMVEVPOPUBUCQQVDHZVFVEVJVQVF
       RVERZVGVEAIZBGZDGZVIVRVFVEDGZVGWAIVQVFVEUDVQVEWBVFVQVEWBVEWBIZDBDBCUEUFZS
@@ -15105,6 +15407,10 @@ htmldef "E." as
   althtmldef "E." as '<FONT FACE=sans-serif>&exist;</FONT>'; /* &#8707; */
     /* Without sans-serif, bad in Opera and way too big in FF3 */
   latexdef "E." as "\exists";
+htmldef "F/" as
+    "<IMG SRC='finv.gif' WIDTH=9 HEIGHT=19 ALT=' F/' TITLE='F/'>";
+  althtmldef "F/" as "&#8498;";
+  latexdef "F/" as "\Finv";
 htmldef "=" as " <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 TITLE='=' ALIGN=TOP> ";
   althtmldef "=" as ' = '; /* &equals; */
   latexdef "=" as "=";
