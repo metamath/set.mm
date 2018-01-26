@@ -10237,6 +10237,25 @@ $)
   $}
 
   ${
+    nfand.1 $e |- ( ph -> F/ x ps ) $.
+    nfand.2 $e |- ( ph -> F/ x ch ) $.
+    $( If in a context ` x ` is not free in ` ps ` and ` ch ` , it is not free
+       in ` ( ps /\ ch ) ` .  (Contributed by Mario Carneiro, 7-Oct-2016.) $)
+    nfand $p |- ( ph -> F/ x ( ps /\ ch ) ) $=
+      ( wa wal wi wnf jca df-nf anbi12i 19.26 bitr4i prth alimi sylbi
+      syl6ibr syl sylibr ) ABCGZUBDHZIZDHZUBDJABDJZCDJZGZUEAUFUGEFKUH
+      BBDHZIZCCDHZIZGZDHZUEUHUJDHZULDHZGUNUFUOUGUPBDLCDLMUJULDNOUMUDD
+      UMUBUIUKGUCBUICUKPBCDNSQRTUBDLUA $.
+
+    nfand.3 $e |- ( ph -> F/ x th ) $.
+    $( Deduction form of bound-variable hypothesis builder ~ nf3an .
+       (Contributed by NM, 17-Feb-2013.)  (Revised by Mario Carneiro,
+       16-Oct-2016.) $)
+    nf3and $p |- ( ph -> F/ x ( ps /\ ch /\ th ) ) $=
+      ( w3a wa df-3an nfand nfxfrd ) BCDIBCJZDJAEBCDKANDEABCEFGLHLM $.
+  $}
+
+  ${
     hbim1.1 $e |- ( ph -> A. x ph ) $.
     hbim1.2 $e |- ( ph -> ( ps -> A. x ps ) ) $.
     $( A closed form of ~ hbim .  (Contributed by NM, 5-Aug-1993.) $)
