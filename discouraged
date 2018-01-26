@@ -1519,12 +1519,10 @@
 "bnj1112" is used by "bnj1118".
 "bnj1113" is used by "bnj106".
 "bnj1113" is used by "bnj1112".
-"bnj1113" is used by "bnj155".
 "bnj1113" is used by "bnj222".
 "bnj1113" is used by "bnj540".
 "bnj1113" is used by "bnj553".
 "bnj1113" is used by "bnj611".
-"bnj1113" is used by "bnj893".
 "bnj1113" is used by "bnj966".
 "bnj1118" is used by "bnj1030".
 "bnj1121" is used by "bnj1030".
@@ -1714,7 +1712,6 @@
 "bnj1265" is used by "bnj1371".
 "bnj1265" is used by "bnj1497".
 "bnj1266" is used by "bnj1265".
-"bnj1266" is used by "bnj1465".
 "bnj1275" is used by "bnj1279".
 "bnj1275" is used by "bnj1345".
 "bnj1279" is used by "bnj1311".
@@ -2097,24 +2094,6 @@
 "bnj523" is used by "bnj600".
 "bnj523" is used by "bnj908".
 "bnj523" is used by "bnj934".
-"bnj524" is used by "bnj1000".
-"bnj524" is used by "bnj106".
-"bnj524" is used by "bnj121".
-"bnj524" is used by "bnj125".
-"bnj524" is used by "bnj126".
-"bnj524" is used by "bnj130".
-"bnj524" is used by "bnj153".
-"bnj524" is used by "bnj207".
-"bnj524" is used by "bnj523".
-"bnj524" is used by "bnj526".
-"bnj524" is used by "bnj538".
-"bnj524" is used by "bnj539".
-"bnj524" is used by "bnj540".
-"bnj524" is used by "bnj611".
-"bnj524" is used by "bnj91".
-"bnj524" is used by "bnj919".
-"bnj524" is used by "bnj92".
-"bnj524" is used by "bnj934".
 "bnj525" is used by "bnj1040".
 "bnj525" is used by "bnj523".
 "bnj525" is used by "bnj538".
@@ -4043,7 +4022,6 @@
 "csbeq2g" is used by "csbrngVD".
 "csbeq2g" is used by "csbsngVD".
 "csbeq2g" is used by "csbxpgVD".
-"csbnestgOLD" is used by "cdleme31snd".
 "csbnestgOLD" is used by "cdlemeg46c".
 "cvati" is used by "cvbr4i".
 "cvbr" is used by "cvbr2".
@@ -11547,11 +11525,9 @@
 "riesz4" is used by "cnvbraval".
 "riesz4" is used by "riesz2".
 "riesz4i" is used by "riesz4".
-"riota5OLD" is used by "adjvalval".
 "riota5OLD" is used by "cdlemefrs32fva".
 "riota5OLD" is used by "glb0N".
 "riota5OLD" is used by "lub0N".
-"riota5OLD" is used by "lubun".
 "riota5OLD" is used by "lubunNEW".
 "riota5OLD" is used by "odval2".
 "riota5OLD" is used by "sqr0".
@@ -11727,10 +11703,7 @@
 "sbcbi" is used by "onfrALTlem5VD".
 "sbcbi" is used by "sbcssVD".
 "sbcbi" is used by "trsbcVD".
-"sbcbiiOLD" is used by "2sbcrex".
 "sbcbiiOLD" is used by "bnj1452".
-"sbcbiiOLD" is used by "bnj524".
-"sbcbiiOLD" is used by "bnj89".
 "sbcbiiOLD" is used by "bnj984".
 "sbcbiiOLD" is used by "eqsbc3rVD".
 "sbcbiiOLD" is used by "sbc3org".
@@ -12938,7 +12911,6 @@
 "zfinf" is used by "axinfndlem1".
 "zfpair" is used by "axpr".
 "zfpair" is used by "clatl".
-"zfpair" is used by "isdrs2".
 "zrdivrng" is used by "dvrunz".
 New usage of "00sr" is discouraged (4 uses).
 New usage of "0bdop" is discouraged (2 uses).
@@ -13497,7 +13469,7 @@ New usage of "bnj1101" is discouraged (3 uses).
 New usage of "bnj1109" is discouraged (3 uses).
 New usage of "bnj1110" is discouraged (1 uses).
 New usage of "bnj1112" is discouraged (1 uses).
-New usage of "bnj1113" is discouraged (9 uses).
+New usage of "bnj1113" is discouraged (7 uses).
 New usage of "bnj1118" is discouraged (1 uses).
 New usage of "bnj1121" is discouraged (1 uses).
 New usage of "bnj1123" is discouraged (1 uses).
@@ -13562,7 +13534,7 @@ New usage of "bnj1259" is discouraged (3 uses).
 New usage of "bnj126" is discouraged (2 uses).
 New usage of "bnj1262" is discouraged (3 uses).
 New usage of "bnj1265" is discouraged (5 uses).
-New usage of "bnj1266" is discouraged (2 uses).
+New usage of "bnj1266" is discouraged (1 uses).
 New usage of "bnj1275" is discouraged (2 uses).
 New usage of "bnj1276" is discouraged (0 uses).
 New usage of "bnj1279" is discouraged (1 uses).
@@ -13714,7 +13686,7 @@ New usage of "bnj518" is discouraged (2 uses).
 New usage of "bnj519" is discouraged (2 uses).
 New usage of "bnj521" is discouraged (2 uses).
 New usage of "bnj523" is discouraged (3 uses).
-New usage of "bnj524" is discouraged (18 uses).
+New usage of "bnj524" is discouraged (0 uses).
 New usage of "bnj525" is discouraged (8 uses).
 New usage of "bnj526" is discouraged (1 uses).
 New usage of "bnj528" is discouraged (2 uses).
@@ -14244,7 +14216,7 @@ New usage of "csbima12gALT" is discouraged (0 uses).
 New usage of "csbima12gALTVD" is discouraged (0 uses).
 New usage of "csbingVD" is discouraged (0 uses).
 New usage of "csbnest1gOLD" is discouraged (0 uses).
-New usage of "csbnestgOLD" is discouraged (2 uses).
+New usage of "csbnestgOLD" is discouraged (1 uses).
 New usage of "csbresgVD" is discouraged (0 uses).
 New usage of "csbrngVD" is discouraged (0 uses).
 New usage of "csbsngVD" is discouraged (0 uses).
@@ -16873,7 +16845,7 @@ New usage of "riesz2" is discouraged (0 uses).
 New usage of "riesz3i" is discouraged (2 uses).
 New usage of "riesz4" is discouraged (4 uses).
 New usage of "riesz4i" is discouraged (1 uses).
-New usage of "riota5OLD" is discouraged (10 uses).
+New usage of "riota5OLD" is discouraged (8 uses).
 New usage of "riotaocN" is discouraged (1 uses).
 New usage of "riotasv2dOLD" is discouraged (0 uses).
 New usage of "riotasv3dOLD" is discouraged (0 uses).
@@ -16930,7 +16902,7 @@ New usage of "sbc3org" is discouraged (2 uses).
 New usage of "sbc3orgVD" is discouraged (0 uses).
 New usage of "sbcbi" is discouraged (4 uses).
 New usage of "sbcbiVD" is discouraged (0 uses).
-New usage of "sbcbiiOLD" is discouraged (9 uses).
+New usage of "sbcbiiOLD" is discouraged (6 uses).
 New usage of "sbcco3gOLD" is discouraged (6 uses).
 New usage of "sbcim2g" is discouraged (2 uses).
 New usage of "sbcim2gVD" is discouraged (0 uses).
@@ -17403,7 +17375,7 @@ New usage of "zfac" is discouraged (1 uses).
 New usage of "zfcndac" is discouraged (0 uses).
 New usage of "zfcndinf" is discouraged (0 uses).
 New usage of "zfinf" is discouraged (2 uses).
-New usage of "zfpair" is discouraged (3 uses).
+New usage of "zfpair" is discouraged (2 uses).
 New usage of "zfregs2VD" is discouraged (0 uses).
 New usage of "zrdivrng" is discouraged (1 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
