@@ -12503,6 +12503,15 @@ $)
   $}
 
   ${
+    $d x y $.
+    $( Theorem of Distinct Variables ( ` F/ ` variant).  Like ~ ax16 , but
+       expressed in terms of ` F/ ` .  (Contributed by Jim Kingdon,
+       27-Jan-2018.) $)
+    ax16nf $p |- ( A. x x = y -> F/ x ph ) $=
+      ( cv wceq wal nfa1 ax16 nfd ) BDCDEZBFABJBGABCHI $.
+  $}
+
+  ${
     $d x ph $.  $d y ph $.
     $( Quantification of two variables over a formula in which they do not
        occur.  (Contributed by Alan Sare, 12-Apr-2011.) $)
