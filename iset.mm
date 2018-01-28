@@ -26,7 +26,7 @@ MC  Mario Carneiro       RL  Raph Levien            ATS Andrew Salmon
 PC  Paul Chapman         FL  Frederic Line          AS  Alan Sare
 SF  Scott Fenton         RFL Roy F. Longton         ES  Eric Schmidt
 JGH Jeffrey Hankins      JM  Jeff Madsen            DAW David A. Wheeler
-AH  Anthony Hart         RM  Rodolfo Medina         GD  Georgy Dunaev
+AH  Anthony Hart         RM  Rodolfo Medina
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                           Contents of this header
@@ -9238,8 +9238,7 @@ $)
      (Contributed by NM, 5-Aug-1993.) $)
   ax-5 $a |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) $.
 
-  $( Axiom of Quantified Negation.  Axiom C5-2 of [Monk2] p. 113. This axiom
-     scheme is logically redundant(see ~ ax6b ). (Contributed
+  $( Axiom of Quantified Negation.  Axiom C5-2 of [Monk2] p. 113.  (Contributed
      by NM, 5-Aug-1993.) $)
   ax-6 $a |- ( -. A. x ph -> A. x -. A. x ph ) $.
 
@@ -10614,23 +10613,6 @@ $)
     19.9 $p |- ( E. x ph <-> ph ) $=
       ( wex wal wi 19.9t mpg 19.8a impbii ) ABDZAAABEFKAFBABGCHABIJ $.
   $}
-
-  ${
-    ax6blem.1 $e |- ( ph -> A. x ph ) $.
-  $( If ` x ` is not free in ` ph `, it is not free in ` -. ph ` .
-     This theorem doesn't use ~ ax-6 compared to ~ hbnt .
-  (Contributed by GD, 27-Jan-2018.) $)
-    ax6blem $p |- ( -. ph -> A. x -. ph ) $=
-      ( wn wex wal id exlimi con3i alnex sylibr ) ADZABEZDLBFMAAABCAGHIABJK $.
-  $}
-
-  $( Show that the axiom ax-6 can be derived from others.
-
-     Normally, ~ ax6b should be used rather than ~ ax-6 , except by
-     theorems specifically studying the latter's properties.
-     (Contributed by GD, 27-Jan-2018.) $)
-  ax6b $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
-    ( wal ax-ial ax6blem ) ABCBABDE $.
 
   ${
     19.9d.1 $e |- ( ps -> A. x ps ) $.
