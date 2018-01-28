@@ -13079,6 +13079,7 @@ New usage of "a12studyALT" is discouraged (0 uses).
 New usage of "a16g-o" is discouraged (1 uses).
 New usage of "a16gALT" is discouraged (0 uses).
 New usage of "a16gALTOLD7" is discouraged (0 uses).
+New usage of "a1iiALT" is discouraged (0 uses).
 New usage of "a5i-o" is discouraged (5 uses).
 New usage of "a9e2eq" is discouraged (3 uses).
 New usage of "a9e2eqVD" is discouraged (0 uses).
@@ -15768,7 +15769,7 @@ New usage of "lnopunilem1" is discouraged (1 uses).
 New usage of "lnopunilem2" is discouraged (1 uses).
 New usage of "lnosub" is discouraged (3 uses).
 New usage of "lnoval" is discouraged (2 uses).
-New usage of "loolinALT" is discouraged (0 uses).
+New usage of "logccne0OLD" is discouraged (0 uses).
 New usage of "lplnexatN" is discouraged (0 uses).
 New usage of "lplnexllnN" is discouraged (0 uses).
 New usage of "lplnllnneN" is discouraged (1 uses).
@@ -16003,6 +16004,7 @@ New usage of "mndoisexid" is discouraged (2 uses).
 New usage of "mndoismgm" is discouraged (3 uses).
 New usage of "mndoissmgrp" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
+New usage of "mp2ALT" is discouraged (0 uses).
 New usage of "mpto2OLD" is discouraged (0 uses).
 New usage of "mpv" is discouraged (1 uses).
 New usage of "mtp-orOLD" is discouraged (0 uses).
@@ -17260,6 +17262,7 @@ New usage of "xpexgALT" is discouraged (0 uses).
 New usage of "xpnnenOLD" is discouraged (0 uses).
 New usage of "xpomenOLD" is discouraged (0 uses).
 New usage of "xpsspwOLD" is discouraged (0 uses).
+New usage of "xrge0tmdOLD" is discouraged (0 uses).
 New usage of "zaddablx" is discouraged (0 uses).
 New usage of "zaddsubgo" is discouraged (0 uses).
 New usage of "zexALT" is discouraged (1 uses).
@@ -17345,6 +17348,8 @@ Proof modification of "a12studyALT" is discouraged (126 steps).
 Proof modification of "a16g-o" is discouraged (40 steps).
 Proof modification of "a16gALT" is discouraged (40 steps).
 Proof modification of "a16gALTOLD7" is discouraged (40 steps).
+Proof modification of "a1ii" is discouraged (9 steps).
+Proof modification of "a1iiALT" is discouraged (8 steps).
 Proof modification of "a9e2eq" is discouraged (111 steps).
 Proof modification of "a9e2eqVD" is discouraged (269 steps).
 Proof modification of "a9e2nd" is discouraged (199 steps).
@@ -17826,7 +17831,8 @@ Proof modification of "latmassOLD" is discouraged (309 steps).
 Proof modification of "ledivmul2OLD" is discouraged (106 steps).
 Proof modification of "ledivmulOLD" is discouraged (174 steps).
 Proof modification of "lidlssOLD" is discouraged (17 steps).
-Proof modification of "loolinALT" is discouraged (14 steps).
+Proof modification of "logccne0OLD" is discouraged (62 steps).
+Proof modification of "loolin" is discouraged (14 steps).
 Proof modification of "ltdiv2OLD" is discouraged (61 steps).
 Proof modification of "ltneOLD" is discouraged (17 steps).
 Proof modification of "lubunNEW" is discouraged (895 steps).
@@ -17888,6 +17894,8 @@ Proof modification of "merlem6" is discouraged (23 steps).
 Proof modification of "merlem7" is discouraged (66 steps).
 Proof modification of "merlem8" is discouraged (46 steps).
 Proof modification of "merlem9" is discouraged (73 steps).
+Proof modification of "mp2" is discouraged (11 steps).
+Proof modification of "mp2ALT" is discouraged (10 steps).
 Proof modification of "mpto2OLD" is discouraged (29 steps).
 Proof modification of "mtp-orOLD" is discouraged (16 steps).
 Proof modification of "mtp-xorOLD" is discouraged (34 steps).
@@ -18200,6 +18208,7 @@ Proof modification of "xpexgALT" is discouraged (84 steps).
 Proof modification of "xpnnenOLD" is discouraged (531 steps).
 Proof modification of "xpomenOLD" is discouraged (31 steps).
 Proof modification of "xpsspwOLD" is discouraged (172 steps).
+Proof modification of "xrge0tmdOLD" is discouraged (166 steps).
 Proof modification of "zexALT" is discouraged (34 steps).
 Proof modification of "zfcndac" is discouraged (259 steps).
 Proof modification of "zfcndext" is discouraged (19 steps).
