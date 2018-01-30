@@ -1201,6 +1201,18 @@
 "ax11v2-o" is used by "ax11a2-o".
 "ax12-2" is used by "ax12-3".
 "ax12-2" is used by "ax12OLD".
+"ax12olem1OLD" is used by "ax12olem2OLD".
+"ax12olem1OLD" is used by "ax12olem2OLD7".
+"ax12olem1OLD" is used by "ax12olem2wAUX7".
+"ax12olem2OLD" is used by "ax12olem4OLD".
+"ax12olem3OLD" is used by "ax12olem4OLD".
+"ax12olem3OLD" is used by "ax12olem4OLD7".
+"ax12olem3OLD" is used by "ax12olem4wAUX7".
+"ax12olem4OLD" is used by "ax12oOLD".
+"ax12olem5OLD" is used by "ax12olem7NEW7".
+"ax12olem5OLD" is used by "ax12olem7OLD".
+"ax12olem6OLD" is used by "ax12olem7OLD".
+"ax12olem7OLD" is used by "ax12oOLD".
 "ax16ALT" is used by "dvelimALT".
 "ax16ALT2" is used by "a16gALT".
 "ax16ALT2OLD7" is used by "a16gALTOLD7".
@@ -13293,8 +13305,14 @@ New usage of "ax12OLD" is discouraged (0 uses).
 New usage of "ax12bOLD" is discouraged (0 uses).
 New usage of "ax12conj2" is discouraged (0 uses).
 New usage of "ax12from12o" is discouraged (0 uses).
-New usage of "ax12olem1OLD" is discouraged (0 uses).
-New usage of "ax12olem2OLD" is discouraged (0 uses).
+New usage of "ax12oOLD" is discouraged (0 uses).
+New usage of "ax12olem1OLD" is discouraged (3 uses).
+New usage of "ax12olem2OLD" is discouraged (1 uses).
+New usage of "ax12olem3OLD" is discouraged (3 uses).
+New usage of "ax12olem4OLD" is discouraged (1 uses).
+New usage of "ax12olem5OLD" is discouraged (2 uses).
+New usage of "ax12olem6OLD" is discouraged (1 uses).
+New usage of "ax12olem7OLD" is discouraged (1 uses).
 New usage of "ax16ALT" is discouraged (1 uses).
 New usage of "ax16ALT2" is discouraged (1 uses).
 New usage of "ax16ALT2OLD7" is discouraged (1 uses).
@@ -17399,8 +17417,14 @@ Proof modification of "ax12OLD" is discouraged (69 steps).
 Proof modification of "ax12bOLD" is discouraged (81 steps).
 Proof modification of "ax12conj2" is discouraged (89 steps).
 Proof modification of "ax12from12o" is discouraged (72 steps).
-Proof modification of "ax12olem1OLD" is discouraged (83 steps).
-Proof modification of "ax12olem2OLD" is discouraged (86 steps).
+Proof modification of "ax12oOLD" is discouraged (31 steps).
+Proof modification of "ax12olem1OLD" is discouraged (71 steps).
+Proof modification of "ax12olem2OLD" is discouraged (71 steps).
+Proof modification of "ax12olem3OLD" is discouraged (82 steps).
+Proof modification of "ax12olem4OLD" is discouraged (38 steps).
+Proof modification of "ax12olem5OLD" is discouraged (60 steps).
+Proof modification of "ax12olem6OLD" is discouraged (78 steps).
+Proof modification of "ax12olem7OLD" is discouraged (15 steps).
 Proof modification of "ax15" is discouraged (72 steps).
 Proof modification of "ax16ALT" is discouraged (20 steps).
 Proof modification of "ax16ALT2" is discouraged (62 steps).
