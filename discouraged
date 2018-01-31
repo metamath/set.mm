@@ -13301,6 +13301,7 @@ New usage of "ax11vALT" is discouraged (0 uses).
 New usage of "ax12-2" is discouraged (2 uses).
 New usage of "ax12-3" is discouraged (0 uses).
 New usage of "ax12-4" is discouraged (0 uses).
+New usage of "ax12-OLD" is discouraged (0 uses).
 New usage of "ax12OLD" is discouraged (0 uses).
 New usage of "ax12bOLD" is discouraged (0 uses).
 New usage of "ax12conj2" is discouraged (0 uses).
@@ -17413,6 +17414,7 @@ Proof modification of "ax11vALT" is discouraged (81 steps).
 Proof modification of "ax12-2" is discouraged (116 steps).
 Proof modification of "ax12-3" is discouraged (58 steps).
 Proof modification of "ax12-4" is discouraged (103 steps).
+Proof modification of "ax12-OLD" is discouraged (72 steps).
 Proof modification of "ax12OLD" is discouraged (69 steps).
 Proof modification of "ax12bOLD" is discouraged (81 steps).
 Proof modification of "ax12conj2" is discouraged (89 steps).
