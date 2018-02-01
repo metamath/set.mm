@@ -12066,6 +12066,15 @@ $)
     ( wsb weq wa wex wal wn wi sb1 equs5 syl5 ) ABCDBCEZAFBGNBHINAJBHABCKABCLM
     $.
 
+  $( One direction of a simplified definition of substitution when variables
+     are distinct.  Similar to ~ sb4 but stronger in intuitionistic logic.
+     (Contributed by Jim Kingdon, 2-Feb-2018.) $)
+  sb4or $p |- ( A. x x = y \/
+      A. x ( [ y / x ] ph -> A. x ( x = y -> ph ) ) ) $=
+    ( weq wal wa wex wi wo wsb equs5or nfe1 nfa1 nfim nfri imim1i alrimi orim2i
+    sb1 ax-mp ) BCDZBEZUAAFZBGZUAAHZBEZHZIUBABCJZUFHZBEZIABCKUGUJUBUGUIBUGBUDUF
+    BUCBLUEBMNOUHUDUFABCSPQRT $.
+
   $( Simplified definition of substitution when variables are distinct.
      (Contributed by NM, 27-May-1997.) $)
   sb4b $p |- ( -. A. x x = y -> ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) ) $=
@@ -12093,6 +12102,14 @@ $)
   hbsb2 $p |- ( -. A. x x = y -> ( [ y / x ] ph -> A. x [ y / x ] ph ) ) $=
     ( weq wal wn wsb wi sb4 sb2 a5i syl6 ) BCDZBEFABCGZMAHZBENBEABCIONBABCJKL
     $.
+
+  $( Bound-variable hypothesis builder for substitution.  Similar to ~ hbsb2
+     but in intuitionistic logic a disjunction is stronger than an
+     implication.  (Contributed by Jim Kingdon, 2-Feb-2018.) $)
+  nfsb2or $p |- ( A. x x = y \/ F/ x [ y / x ] ph ) $=
+    ( weq wal wsb wi wnf sb4or sb2 a5i imim2i alimi df-nf sylibr orim2i ax-mp
+    wo ) BCDZBEZABCFZSAGZBEZGZBEZRTUABHZRABCIUEUFTUEUAUABEZGZBEUFUDUHBUCUGUAUBU
+    ABABCJKLMUABNOPQ $.
 
   $( An equality theorem for substitution.  (Contributed by NM, 5-Aug-1993.) $)
   sbequi $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
