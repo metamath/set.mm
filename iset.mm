@@ -11811,6 +11811,18 @@ $)
       ( vw weq ax17eq equequ2 dvelimfALT ) CDECBEABDCDAFCBDFDBCGH $.
   $}
 
+  ${
+    $d z x $.
+    $( Quantifier introduction when one pair of variables is distinct.  Like
+       ~ dveeq2 but connecting ` A. x x = y ` by a disjunction rather than
+       negation and implication makes the theorem stronger in intuitionistic
+       logic.  (Contributed by Jim Kingdon, 1-Feb-2018.) $)
+    dveeq2or $p |- ( A. x x = y \/ F/ x z = y ) $=
+      ( weq wal wi wnf ax-i12 orass mpbir pm1.4 orim1i ax-mp mpbi ax16 a5i jaoi
+      wo id orim2i df-nf biimpri ) ABDAEZCBDZUDAEFZAEZRZUCUDAGZRUCACDZAEZUFRZRZ
+      UGUCUJRZUFRZULUJUCRZUFRZUNUPUJUGRCBAHUJUCUFIJUOUMUFUJUCKLMUCUJUFINUKUFUCU
+      JUFUFUIUEAUDACOPUFSQTMUFUHUCUHUFUDAUAUBTM $.
+  $}
 
   ${
     $d x z $.  $d y z $.
