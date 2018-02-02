@@ -6237,8 +6237,9 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
     ( wn wb wi wa wo bicom dfbi2 orcom df-or bitr2i imnan anbi12i 3bitrri ) ABC
     ZDPADPAEZAPEZFABGZABFCZFAPHPAIQSRTSBAGQABJBAKLABMNO $.
 
-  $( Disjunction distributes over implication.  (Contributed by Wolf Lammen,
-     5-Jan-2013.) $)
+  $( Disjunction distributes over implication.  The forward direction,
+     ~ pm2.76 , is valid intuitionistically.  The reverse direction is
+     ~ pm2.85 .  (Contributed by Wolf Lammen, 5-Jan-2013.) $)
   orimdi $p |- ( ( ph \/ ( ps -> ch ) ) <->
                 ( ( ph \/ ps ) -> ( ph \/ ch ) ) ) $=
     ( wn wi wo imdi df-or imbi12i 3bitr4i ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCGAL
