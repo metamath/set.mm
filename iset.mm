@@ -8990,9 +8990,9 @@ $)
      (Contributed by NM, 5-Aug-1993.) $)
   ax-5 $a |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) $.
 
-  $( Axiom of Quantified Negation.  Axiom C5-2 of [Monk2] p. 113. This axiom
-     scheme is logically redundant(see ~ ax6b ). (Contributed
-     by NM, 5-Aug-1993.) $)
+  $( Axiom of Quantified Negation.  Axiom C5-2 of [Monk2] p. 113.  This axiom
+     scheme is logically redundant(see ~ ax6b ).  (Contributed by NM,
+     5-Aug-1993.) $)
   ax-6 $a |- ( -. A. x ph -> A. x -. A. x ph ) $.
 
   $( Axiom of Quantifier Commutation.  This axiom says universal quantifiers
@@ -10237,6 +10237,25 @@ $)
   $}
 
   ${
+    nfand.1 $e |- ( ph -> F/ x ps ) $.
+    nfand.2 $e |- ( ph -> F/ x ch ) $.
+    $( If in a context ` x ` is not free in ` ps ` and ` ch ` , it is not free
+       in ` ( ps /\ ch ) ` .  (Contributed by Mario Carneiro, 7-Oct-2016.) $)
+    nfand $p |- ( ph -> F/ x ( ps /\ ch ) ) $=
+      ( wa wal wi wnf jca df-nf anbi12i 19.26 bitr4i prth alimi sylbi
+      syl6ibr syl sylibr ) ABCGZUBDHZIZDHZUBDJABDJZCDJZGZUEAUFUGEFKUH
+      BBDHZIZCCDHZIZGZDHZUEUHUJDHZULDHZGUNUFUOUGUPBDLCDLMUJULDNOUMUDD
+      UMUBUIUKGUCBUICUKPBCDNSQRTUBDLUA $.
+
+    nfand.3 $e |- ( ph -> F/ x th ) $.
+    $( Deduction form of bound-variable hypothesis builder ~ nf3an .
+       (Contributed by NM, 17-Feb-2013.)  (Revised by Mario Carneiro,
+       16-Oct-2016.) $)
+    nf3and $p |- ( ph -> F/ x ( ps /\ ch /\ th ) ) $=
+      ( w3a wa df-3an nfand nfxfrd ) BCDIBCJZDJAEBCDKANDEABCEFGLHLM $.
+  $}
+
+  ${
     hbim1.1 $e |- ( ph -> A. x ph ) $.
     hbim1.2 $e |- ( ph -> ( ps -> A. x ps ) ) $.
     $( A closed form of ~ hbim .  (Contributed by NM, 5-Aug-1993.) $)
@@ -10613,41 +10632,57 @@ $)
 
   $( A closed version of one direction of ~ 19.9 .  (Contributed by NM,
      5-Aug-1993.) $)
-  19.9t $p |- ( A. x ( ph -> A. x ph ) -> ( E. x ph -> ph ) ) $=
+  19.9ht $p |- ( A. x ( ph -> A. x ph ) -> ( E. x ph -> ph ) ) $=
     ( wal wi wex id ax-gen 19.23t mpbii ) AABCDBCAADZBCABEADJBAFGAABHI $.
+
+  $( A closed version of ~ 19.9 .  (Contributed by NM, 5-Aug-1993.)  (Revised
+     by Mario Carneiro, 24-Sep-2016.)  (Proof shortended by Wolf Lammen,
+     30-Dec-2017.) $)
+  19.9t $p |- ( F/ x ph -> ( E. x ph <-> ph ) ) $=
+    ( wnf wex wal wi df-nf 19.9ht sylbi 19.8a impbid1 ) ABCZABDZALAABEFBEMAFABG
+    ABHIABJK $.
 
   ${
     19.9.1 $e |- ( ph -> A. x ph ) $.
     $( A wff may be existentially quantified with a variable not free in it.
        Theorem 19.9 of [Margaris] p. 89.  (Contributed by FL, 24-Mar-2007.) $)
     19.9 $p |- ( E. x ph <-> ph ) $=
-      ( wex wal wi 19.9t mpg 19.8a impbii ) ABDZAAABEFKAFBABGCHABIJ $.
+      ( wex wal wi 19.9ht mpg 19.8a impbii ) ABDZAAABEFKAFBABGCHABIJ $.
   $}
 
   ${
     ax6blem.1 $e |- ( ph -> A. x ph ) $.
-  $( If ` x ` is not free in ` ph `, it is not free in ` -. ph ` .
-     This theorem doesn't use ~ ax-6 compared to ~ hbnt .
-  (Contributed by GD, 27-Jan-2018.) $)
+    $( If ` x ` is not free in ` ph ` , it is not free in ` -. ph ` .  This
+       theorem doesn't use ~ ax-6 compared to ~ hbnt .  (Contributed by GD,
+       27-Jan-2018.) $)
     ax6blem $p |- ( -. ph -> A. x -. ph ) $=
       ( wn wex wal id exlimi con3i alnex sylibr ) ADZABEZDLBFMAAABCAGHIABJK $.
   $}
 
   $( Show that the axiom ax-6 can be derived from others.
 
-     Normally, ~ ax6b should be used rather than ~ ax-6 , except by
-     theorems specifically studying the latter's properties.
-     (Contributed by GD, 27-Jan-2018.) $)
+     Normally, ~ ax6b should be used rather than ~ ax-6 , except by theorems
+     specifically studying the latter's properties.  (Contributed by GD,
+     27-Jan-2018.) $)
   ax6b $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
     ( wal ax-ial ax6blem ) ABCBABDE $.
 
   ${
-    19.9d.1 $e |- ( ps -> A. x ps ) $.
-    19.9d.2 $e |- ( ps -> ( ph -> A. x ph ) ) $.
+    19.9d.1 $e |- ( ps -> F/ x ph ) $.
     $( A deduction version of one direction of ~ 19.9 .  (Contributed by NM,
-       5-Aug-1993.) $)
+       5-Aug-1993.)  (Revised by Mario Carneiro, 24-Sep-2016.) $)
     19.9d $p |- ( ps -> ( E. x ph -> ph ) ) $=
-      ( wal wi wex alimi 19.9t 3syl ) BBCFAACFGZCFACHAGDBLCEIACJK $.
+      ( wex wnf wb 19.9t syl biimpd ) BACEZABACFKAGDACHIJ $.
+  $}
+
+  ${
+    19.9hd.1 $e |- ( ps -> A. x ps ) $.
+    19.9hd.2 $e |- ( ps -> ( ph -> A. x ph ) ) $.
+    $( A deduction version of one direction of ~ 19.9 .  This is an older
+       variation of this theorem; new proofs should use ~ 19.9d .  (Contributed
+       by NM, 5-Aug-1993.)  (New usage is discouraged.) $)
+    19.9hd $p |- ( ps -> ( E. x ph -> ph ) ) $=
+      ( wal wi wex alimi 19.9ht 3syl ) BBCFAACFGZCFACHAGDBLCEIACJK $.
   $}
 
   $( One direction of Theorem 19.11 of [Margaris] p. 89.  (Contributed by NM,
@@ -11105,9 +11140,9 @@ $)
        ` y ` ).  (Contributed by Mario Carneiro, 20-Mar-2013.) $)
     exdistrf $p |- ( E. x E. y ( ph /\ ps ) -> E. x ( ph /\ E. y ps ) ) $=
       ( weq wal wa wex wi biidd drex1 drex2 hbe1 19.8a anim2i eximi sylbi hbnae
-      19.9 syl6bir wn 19.40 19.9d anim1d syl5 eximd pm2.61i ) CDFCGZABHZDIZCIZA
-      BDIZHZCIZJUIULUJCIZCIZUOUPUKCDCUJUJCDUIUJKLMUQUPUOUPCUJCNTUJUNCBUMABDOPQR
-      UAUIUBZUKUNCCDCSUKADIZUMHURUNABDUCURUSAUMAURDCDDSEUDUEUFUGUH $.
+      19.9 syl6bir wn 19.40 19.9hd anim1d syl5 eximd pm2.61i ) CDFCGZABHZDIZCIZ
+      ABDIZHZCIZJUIULUJCIZCIZUOUPUKCDCUJUJCDUIUJKLMUQUPUOUPCUJCNTUJUNCBUMABDOPQ
+      RUAUIUBZUKUNCCDCSUKADIZUMHURUNABDUCURUSAUMAURDCDDSEUDUEUFUGUH $.
   $}
 
   $( Closed theorem form of ~ a4im .  (Contributed by NM, 15-Jan-2008.) $)
@@ -11522,10 +11557,10 @@ $)
        version of ~ sbie ).  (Contributed by NM, 30-Jun-1994.)  (Proof
        shortened by Andrew Salmon, 25-May-2011.) $)
     sbied $p |- ( ph -> ( [ y / x ] ps <-> ch ) ) $=
-      ( wsb wex weq wa sb1 wb wi bi1 syl6 imp3a syld wal eximd syl5 19.9d com23
-      bi2 alimd sb2 impbid ) ABDEIZCAUICDJZCUIDEKZBLZDJAUJBDEMAULCDFAUKBCAUKBCN
-      ZBCOHBCPQRUAUBCADFGUCSACCDTZUIGAUNUKBOZDTUIACUODFAUKCBAUKUMCBOHBCUEQUDUFB
-      DEUGQSUH $.
+      ( wsb wex weq wa sb1 wb wi bi1 syl6 imp3a syld wal eximd 19.9hd bi2 com23
+      syl5 alimd sb2 impbid ) ABDEIZCAUICDJZCUIDEKZBLZDJAUJBDEMAULCDFAUKBCAUKBC
+      NZBCOHBCPQRUAUECADFGUBSACCDTZUIGAUNUKBOZDTUIACUODFAUKCBAUKUMCBOHBCUCQUDUF
+      BDEUGQSUH $.
   $}
 
   ${
@@ -11958,12 +11993,12 @@ $)
   $( An equality theorem for substitution.  (Contributed by NM, 5-Aug-1993.) $)
   sbequi $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
     ( weq wal wsb wi wn wa wex hbsb2 stdpc7 sbequ1 sylan9 ex a4s adantr biimpd
-    drsb1 equvini eximi syl 19.35 sylib hbnae 19.9d syl9 com23 sbequ2 alequcoms
-    sylan9r syld pm2.61ii ) DBEZDFZDCEZDFZBCEZADBGZADCGZHZHUPIZUSURIZVBVCUSVDVB
-    HVCUSJUTVADKZVDVAVCUTUTDFZUSVEADBLUSVBDKZVFVEHUSBDEZUQJZDKVGBCDUAVIVBDVHUTA
-    UQVAABDMADCNZOUBUCUTVADUDUEOVAVDDDCDUFADCLUGUHPUIUPUSVBUPUSJUTAVAUPUTAHZUSU
-    OVKDADBUJQRUSAABCGZUPVAABCNVLVAHBDVHBFVLVAABDCTSUKULUMPURUSVBURUSJUTAVAURUT
-    ACBGZUSAURUTVMADCBTSABCMOURAVAHZUSUQVNDVJQRUMPUN $.
+    drsb1 equvini eximi 19.35 sylib hbnae 19.9hd com23 sbequ2 alequcoms sylan9r
+    syl syl9 syld pm2.61ii ) DBEZDFZDCEZDFZBCEZADBGZADCGZHZHUPIZUSURIZVBVCUSVDV
+    BHVCUSJUTVADKZVDVAVCUTUTDFZUSVEADBLUSVBDKZVFVEHUSBDEZUQJZDKVGBCDUAVIVBDVHUT
+    AUQVAABDMADCNZOUBUKUTVADUCUDOVAVDDDCDUEADCLUFULPUGUPUSVBUPUSJUTAVAUPUTAHZUS
+    UOVKDADBUHQRUSAABCGZUPVAABCNVLVAHBDVHBFVLVAABDCTSUIUJUMPURUSVBURUSJUTAVAURU
+    TACBGZUSAURUTVMADCBTSABCMOURAVAHZUSUQVNDVJQRUMPUN $.
 
   $( An equality theorem for substitution.  Used in proof of Theorem 9.7 in
      [Megill] p. 449 (p. 16 of the preprint).  (Contributed by NM,
@@ -12481,6 +12516,15 @@ $)
        Carneiro, 11-Aug-2016.) $)
     nfdv $p |- ( ph -> F/ x ps ) $=
       ( wal wi wnf alrimiv df-nf sylibr ) ABBCEFZCEBCGAKCDHBCIJ $.
+  $}
+
+  ${
+    $d x y $.
+    $( Theorem of Distinct Variables ( ` F/ ` variant).  Like ~ ax16 , but
+       expressed in terms of ` F/ ` .  (Contributed by Jim Kingdon,
+       27-Jan-2018.) $)
+    ax16nf $p |- ( A. x x = y -> F/ x ph ) $=
+      ( cv wceq wal nfa1 ax16 nfd ) BDCDEZBFABJBGABCHI $.
   $}
 
   ${
