@@ -11800,7 +11800,9 @@ $)
     $( Quantifier introduction when one pair of variables is distinct.
        (Contributed by NM, 2-Jan-2002.) $)
     dveeq2 $p |- ( -. A. x x = y -> ( z = y -> A. x z = y ) ) $=
-      ( vw weq ax-17 equequ2 dvelimfALT ) CDEZCBEZABDIAFJDFDBCGH $.
+      ( weq wal wn wi wo ax-i12 orcom orbi2i mpbi orass mpbir orel2 mpi ax16 sp
+      jaoi syl ) ABDAEZFZACDAEZCBDZUDAEGZAEZHZUEUBUGUAHZUGUHUCUFUAHZHZUCUAUFHZH
+      UJCBAIUKUIUCUAUFJKLUCUFUAMNUAUGOPUCUEUFUDACQUEARST $.
 
     $( Version of ~ dveeq2 using ~ ax-16 instead of ~ ax-17 .  (Contributed by
        NM, 29-Apr-2008.) $)
