@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Feb-2018
+$( iset.mm - Version of 3-Feb-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -13157,23 +13157,6 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d x z $.  $d y z $.
-    sbco2iv.1 $e |- ( ph -> A. z ph ) $.
-    $( One direction of ~ sbco2v but without a distinct variable constraint on
-       ` x ` and ` y ` .  (Contributed by Jim Kingdon, 7-Jan-2018.) $)
-    sbco2iv $p |- ( [ y / z ] [ z / x ] ph -> [ y / x ] ph ) $=
-      ( wsb weq wi wa wex equvini hbs1 df-sb simplbi com23 sb5 anim1i eximi syl
-      syl6 imp3a eximd syl5 19.9 syl6ib sbbii bitri sylbi ax-17 hban hbex 19.41
-      ax-ie1 ax11ev equcoms mpan10 sylbir exlimi pm3.22 sylanbrc ) ABDFZDCFZBCG
-      ZAHVCAIZBJZABCFVBVCADJZAVCBDGZDCGZIZDJVBVFBCDKVBVIADVADCLVBVGVHAVBVHVGAVB
-      VHVAVGAHZVBVHVAHVHVAIDJVADCMNVAVJVGAIZBJZABDMNTOUAUBUCADEUDUEVBAVCIZBJZVE
-      VBDBGZVCIZBJZVLIZDJZVNVBVHVLIZDJZVSVBVLDCFWAVAVLDCABDPUFVLDCPUGVTVRDVHVQV
-      LDCBKQRUHVRVNDVMDBAVCDEVCDUIUJUKVRVPVLIZBJZVNVPVLBVKBUMULWCVLAHZVCIZVLIZB
-      JVNWBWFBVPWEVLVOWDVCWDBDABDUNUOQQRWFVMBVLAVCUPRSUQURSVMVDBAVCUSRSABCMUT
-      $.
-  $}
-
-  ${
     $d y ph $.
     $( Two ways of expressing " ` x ` is (effectively) not free in ` ph ` ."
        (Contributed by NM, 29-May-2009.) $)
@@ -13206,48 +13189,6 @@ $( The theorems in this section make use of the $d statement. $)
 
   ${
     $d x z $.  $d y z $.
-
-    $( Version of ~ sbequ with distinct variable constraints between ` z ` and
-       the other two variables (but not between ` x ` and ` y ` or between
-       ` ph ` and any of the variables).  (Contributed by Jim Kingdon,
-       25-Dec-2017.) $)
-    sbequv $p |- ( x = y -> ( [ x / z ] ph <-> [ y / z ] ph ) ) $=
-      ( weq wa wex wsb equequ2 anbi1d exbidv sb5 3bitr4g ) BCEZDBEZAFZDGDCEZAFZ
-      DGADBHADCHNPRDNOQABCDIJKADBLADCLM $.
-
-    $( Version of ~ sbequi with distinct variable constraints between ` z ` and
-       the other two variables (but not between ` x ` and ` y ` or between
-       ` ph ` and any of the variables).  (Contributed by Jim Kingdon,
-       25-Dec-2017.) $)
-    sbequiv $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
-      ( weq wsb sbequv biimpd ) BCEADBFADCFABCDGH $.
-  $}
-
-  ${
-    sbequif.1 $e |- ( ph -> A. x ph ) $.
-    sbequif.2 $e |- ( ph -> A. y ph ) $.
-    $( Version of ~ sbequi in which neither ` x ` nor ` y ` is free in
-       ` ph ` .  Like ~ sbequiv , this is a weaker version of ~ sbequi which we
-       have managed to prove in intuitionistic logic.  (Contributed by Jim
-       Kingdon, 26-Dec-2017.) $)
-    sbequif $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
-      ( cv wceq wsbc wex wal hbsb3 equvini stdpc7
-      wi wa sbequ1 sylan9 eximi syl 19.35-1 syl5 19.9 biimpi syl6 ) BGZ
-      CGZHZADUFIZADUGIZDJZUJUIUIDKZUHUKADBELUHUIUJOZDJZULUKOUHUFDGZHZUO
-      UGHZPZDJUNBCDMURUMDUPUIAUQUJABDNADCQRSTUIUJDUATUBUKUJUJDADCFLUCUD
-      UE $.
-
-    $( Version of ~ sbequ in which neither ` x ` nor ` y ` is free in ` ph ` .
-       Like ~ sbequv , this is a weaker version of ~ sbequ which we have
-       managed to prove in intuitionistic logic.  (Contributed by Jim Kingdon,
-       26-Dec-2017.) $)
-    sbequf $p |- ( x = y -> ( [ x / z ] ph <-> [ y / z ] ph ) ) $=
-      ( weq wsb sbequif wi equcoms impbid ) BCGADBHZADCHZABCDEFINMJCBACBDFEIKL
-      $.
-  $}
-
-  ${
-    $d x z $.  $d y z $.
     hbsbv.1 $e |- ( ph -> A. z ph ) $.
     $( This is a version of ~ hbsb with an extra distinct variable constraint,
        on ` z ` and ` x ` .  It exists because we don't yet have an
@@ -13261,39 +13202,14 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d x y z $.
+    $d x z $.  $d y z $.
+
     sbco2v.1 $e |- ( ph -> A. z ph ) $.
     $( This is a version of ~ sbco2 where ` z ` is distinct from ` x ` and
-       ` y ` (which is no big deal), but also where ` x ` and ` y ` are
-       distinct from each other (which is a bigger limit on what this can be
-       used for).  (Contributed by Jim Kingdon, 25-Dec-2017.) $)
+       from ` y ` .  (Contributed by Jim Kingdon, 25-Dec-2017.)  (One distinct
+       variable constraint removed by Jim Kingdon, 3-Feb-2018.) $)
     sbco2v $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( cv wsbc hbsb3 hbsbv wceq sbequ12 wa equvini hbs1
-      wex wb hbbi anim12i bitr syl imp bitr3d exlimi bitr4d sbie bicomi
-      equtr ) ABCFZGZABDFZGZDUHGZAULBCUKDCBABDEHIBFZUHJZAUIULABCKZUNUMU
-      JJZUJUHJZLZDOULUIPZBCDMURUSDULUIDUKDCNABCDEIQURAULUIURAUKPZUKULPZ
-      LAULPUPUTUQVAABDKUKDCKRAUKULSTURUNAUIPUPUQUNBDCUGUAUOTUBUCTUDUEUF
-      $.
-
-    $( Another proof of ~ sbco2v which perhaps can be more easily transitioned
-       to a version with fewer distinct variable constraints (when/if we have
-       an intuitionistic proof of a variant of ~ sbequv with fewer constraints,
-       that is).  (Contributed by Jim Kingdon, 25-Dec-2017.) $)
-    sbco2vALT $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( wsb hbsbv sbequv sbie ) ABDFABCFDCABCDEGADCBHI $.
-  $}
-
-  ${
-    $d x z $.  $d y z $.
-    sbco2vf.1 $e |- ( ph -> A. z ph ) $.
-    sbco2vf.2 $e |- ( ph -> A. y ph ) $.
-    $( Version of ~ sbco2 with additional constraints.  It requires that ` y `
-       (as well as ` z ` ) is not free in ` ph ` , and has a few distinct
-       variable constraints: ` z ` and the other two variables, but, unlike
-       ~ sbco2v , not ` x ` and ` y ` .  (Contributed by Jim Kingdon,
-       26-Dec-2017.) $)
-    sbco2vf $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( cv wsbc hbsbv sbequf sbie ) ABDGHABCGHDCABCDEIADCBEFJK $.
+      ( wsb hbsbv sbequ sbie ) ABDFABCFDCABCDEGADCBHI $.
   $}
 
   ${
