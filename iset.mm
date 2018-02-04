@@ -9891,78 +9891,6 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Show that the original axiom ~ ax-5o can be derived from ~ ax-5 and
-     others.  See ~ ax5 for the rederivation of ~ ax-5 from ~ ax-5o .
-
-     Part of the proof is based on the proof of Lemma 22 of [Monk2] p. 114.
-
-     Normally, ~ ax5o should be used rather than ~ ax-5o , except by theorems
-     specifically studying the latter's properties.  (Contributed by NM,
-     21-May-2008.) $)
-  ax5o $p |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) $=
-    ( wal wi wn ax-4 con2i ax-6 con1i ax-gen ax-5 ax-mp 3syl syl5 ) ACDZPCDZPBE
-    CDBCDPPFZCDZFZTCDZQSPRCGHRCITPEZCDUAQEUBCPSACIJKTPCLMNPBCLO $.
-
-  $( Axiom of Quantified Implication.  This axiom moves a quantifier from
-     outside to inside an implication, quantifying ` ps ` .  Notice that ` x `
-     must not be a free variable in the antecedent of the quantified
-     implication, and we express this by binding ` ph ` to "protect" the axiom
-     from a ` ph ` containing a free ` x ` .  One of the 4 axioms of "pure"
-     predicate calculus.  Axiom scheme C4' in [Megill] p. 448 (p. 16 of the
-     preprint).  It is a special case of Lemma 5 of [Monk2] p. 108 and Axiom 5
-     of [Mendelson] p. 69.
-
-     In classical logic, this axiom is redundant, as shown by theorem ~ ax5o .
-     The current proof of ~ ax5o is not valid intuitionistically.
-
-     Normally, ~ ax5o should be used rather than ~ ax-5o , except by theorems
-     specifically studying the latter's properties.  (Contributed by NM,
-     5-Aug-1993.) $)
-  ax-5o $a |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) $.
-
-  $( Rederivation of axiom ~ ax-5 from the orginal version, ~ ax-5o .  See
-     ~ ax5o for the derivation of ~ ax-5o from ~ ax-5 .
-
-     This theorem should not be referenced in any proof.  Instead, use ~ ax-5
-     above so that uses of ~ ax-5 can be more easily identified.
-
-     Note:  This is the same as theorem ~ alim below.  It is proved separately
-     here so that it won't be dependent on the axioms used for ~ alim .
-     (Contributed by NM, 23-May-2008.)  (Revised by NM, 5-Dec-2010.) $)
-  ax5 $p |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) $=
-    ( wi wal ax-4 syl5 ax-gen ax-5o ax-mp syl ) ABDZCEZACEZBDZCEZNBCEDMODZCEMPD
-    QCNAMBACFLCFGHLOCIJABCIK $.
-
-  $( Show that the original axiom ~ ax-6o can be derived from ~ ax-6 and
-     others.  See ~ ax6 for the rederivation of ~ ax-6 from ~ ax-6o .
-
-     Normally, ~ ax6o should be used rather than ~ ax-6o , except by theorems
-     specifically studying the latter's properties.  (Contributed by NM,
-     21-May-2008.) $)
-  ax6o $p |- ( -. A. x -. A. x ph -> ph ) $=
-    ( wal wn ax-4 ax-6 nsyl4 ) ABCZAHDBCABEABFG $.
-
-  $( Axiom of Quantified Negation.  This axiom is used to manipulate negated
-     quantifiers.  One of the 4 axioms of pure predicate calculus.  Equivalent
-     to axiom scheme C7' in [Megill] p. 448 (p. 16 of the preprint).
-
-     This axiom is redundant, as shown by theorem ~ ax6o .
-
-     Normally, ~ ax6o should be used rather than ~ ax-6o , except by theorems
-     specifically studying the latter's properties.  (Contributed by NM,
-     5-Aug-1993.) $)
-  ax-6o $a |- ( -. A. x -. A. x ph -> ph ) $.
-
-  $( Rederivation of axiom ~ ax-6 from the orginal version, ~ ax-6o .  See
-     ~ ax6o for the derivation of ~ ax-6o from ~ ax-6 .
-
-     This theorem should not be referenced in any proof.  Instead, use ~ ax-6
-     above so that uses of ~ ax-6 can be more easily identified.  (Contributed
-     by NM, 23-May-2008.) $)
-  ax6 $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
-    ( wal wn wi ax-4 id ax-gen ax-5o ax-mp nsyl ax-6o nsyl4 ) ABCZBCZDZBCZNDZBC
-    ZNQREZBCQSETBQONPBFNNEZBCNOEUABNGHANBIJKHPRBIJNBLM $.
-
   $( ` x ` is not free in ` A. x ph ` .  Axiom 7 of 10 for intuitionistic
      logic.  (Contributed by Mario Carneiro, 31-Jan-2015.) $)
   ax-ial $a |- ( A. x ph -> A. x A. x ph ) $.
@@ -11780,17 +11708,6 @@ $)
   $}
 
   ${
-    $d x z $.  $d y z $.
-    $( Theorem to add distinct quantifier to atomic formula.  (This theorem
-       demonstrates the induction basis for ~ ax-17 considered as a
-       metatheorem.  Do not use it for later proofs - use ~ ax-17 instead, to
-       avoid reference to the redundant axiom ~ ax-16 .)  (Contributed by NM,
-       5-Aug-1993.) $)
-    ax17eq $p |- ( x = y -> A. z x = y ) $=
-      ( weq wal wi ax-12 ax-16 pm2.61ii ) CADCECBDCEABDZJCEFABCGJCAHJCBHI $.
-  $}
-
-  ${
     $d w z x $.  $d w y $.
     $( Quantifier introduction when one pair of variables is distinct.
        (Contributed by NM, 2-Jan-2002.) $)
@@ -11798,11 +11715,6 @@ $)
       ( weq wal wn wi wo ax-i12 orcom orbi2i mpbi orass mpbir orel2 mpi ax16 sp
       jaoi syl ) ABDAEZFZACDAEZCBDZUDAEGZAEZHZUEUBUGUAHZUGUHUCUFUAHZHZUCUAUFHZH
       UJCBAIUKUIUCUAUFJKLUCUFUAMNUAUGOPUCUEUFUDACQUEARST $.
-
-    $( Version of ~ dveeq2 using ~ ax-16 instead of ~ ax-17 .  (Contributed by
-       NM, 29-Apr-2008.) $)
-    dveeq2ALT $p |- ( -. A. x x = y -> ( z = y -> A. x z = y ) ) $=
-      ( vw weq ax17eq equequ2 dvelimfALT ) CDECBEABDCDAFCBDFDBCGH $.
   $}
 
   ${
@@ -11928,16 +11840,6 @@ $)
      5-Aug-1993.) $)
   ax-11o $a |- ( -. A. x x = y ->
              ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $.
-
-  $( Rederivation of axiom ~ ax-11 from the orginal version, ~ ax-11o .  See
-     theorem ~ ax11o for the derivation of ~ ax-11o from ~ ax-11 .
-
-     This theorem should not be referenced in any proof.  Instead, use ~ ax-11
-     above so that uses of ~ ax-11 can be more easily identified.  (Contributed
-     by NM, 22-Jan-2007.) $)
-  ax11 $p |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) $=
-    ( weq wal wi biidd dral1 ax-1 alimi syl6bir a1d wn ax-4 ax-11o syl7 pm2.61i
-    ) BCDZBEZRACEZRAFZBEZFZFSUCRSTABEUBAABCSAGHAUABARIJKLTASMRUBACNABCOPQ $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -13435,11 +13337,6 @@ $( The theorems in this section make use of the $d statement. $)
        (Contributed by NM, 2-Jan-2002.) $)
     dveeq1 $p |- ( -. A. x x = y -> ( y = z -> A. x y = z ) ) $=
       ( vw weq ax-17 equequ1 dvelim ) DCEZBCEABDIAFDBCGH $.
-
-    $( Version of ~ dveeq1 using ~ ax-16 instead of ~ ax-17 .  (Contributed by
-       NM, 29-Apr-2008.) $)
-    dveeq1ALT $p |- ( -. A. x x = y -> ( y = z -> A. x y = z ) ) $=
-      ( vw weq ax17eq equequ1 dvelimfALT ) DCEBCEABDDCAFBCDFDBCGH $.
   $}
 
   ${
@@ -13468,58 +13365,6 @@ $( The theorems in this section make use of the $d statement. $)
       wsb syl sb6 albii 3bitr4g ) BCEBFGZCDEZABFZHZCFZUDAHZCFZBFZUECDRACDRZBFUJ
       UHBFZCFUCUGUHCBIUCULUFCBCCJUCUDUDBFHZBFZULUFKUNBCBUCUMBBCDLMNUDABOSPQUECD
       TUKUIBACDTUAUB $.
-  $}
-
-  ${
-    $d w y $.  $d w z $.  $d w x $.  $( ` w ` is dummy. $)
-    $( Axiom ~ ax-15 is redundant if we assume ~ ax-17 .  Remark 9.6 in
-       [Megill] p. 448 (p. 16 of the preprint), regarding axiom scheme C14'.
-
-       Note that ` w ` is a dummy variable introduced in the proof.  On the web
-       page, it is implicitly assumed to be distinct from all other variables.
-       (This is made explicit in the database file set.mm).  Its purpose is to
-       satisfy the distinct variable requirements of ~ dveel2 and ~ ax-17 .  By
-       the end of the proof it has vanished, and the final theorem has no
-       distinct variable requirements.
-
-       This theorem should not be referenced in any proof.  Instead, use
-       ~ ax-15 below so that theorems needing ~ ax-15 can be more easily
-       identified.  (Contributed by NM, 29-Jun-1995.) $)
-    ax15 $p |- ( -. A. z z = x -> ( -. A. z z = y ->
-              ( x e. y -> A. z x e. y ) ) ) $=
-      ( vw weq wal wn wi hbn1 dveel2 hbim1 ax-17 elequ1 imbi2d dvelimfALT 19.21
-      wel syl6ib pm2.86d ) CAECFGZCBEZCFGZABQZUCCFZTUBUCHZUECFUBUDHUBDBQZHUECAD
-      UBUFCUACIZCBDJKUEDLDAEUFUCUBDABMNOUBUCCUGPRS $.
-  $}
-
-  $( Axiom of Quantifier Introduction.  One of the equality and substitution
-     axioms for a non-logical predicate in our predicate calculus with
-     equality.  Axiom scheme C14' in [Megill] p. 448 (p. 16 of the preprint).
-     It is redundant if we include ~ ax-17 ; see theorem ~ ax15 .  Alternately,
-     ~ ax-17 becomes unnecessary in principle with this axiom, but we lose the
-     more powerful metalogic afforded by ~ ax-17 .  We retain ~ ax-15 here to
-     provide completeness for systems with the simpler metalogic that results
-     from omitting ~ ax-17 , which might be easier to study for some
-     theoretical purposes.  (Contributed by NM, 5-Aug-1993.) $)
-  ax-15 $a |- ( -. A. z z = x -> ( -. A. z z = y ->
-              ( x e. y -> A. z x e. y ) ) ) $.
-
-  ${
-    $d x z $.  $d y z $.
-    $( Theorem to add distinct quantifier to atomic formula.  This theorem
-       demonstrates the induction basis for ~ ax-17 considered as a
-       metatheorem.)  (Contributed by NM, 5-Aug-1993.) $)
-    ax17el $p |- ( x e. y -> A. z x e. y ) $=
-      ( weq wal wel wi ax-15 ax-16 pm2.61ii ) CADCECBDCEABFZKCEGABCHKCAIKCBIJ
-      $.
-  $}
-
-  ${
-    $d w z x $.  $d w y $.
-    $( Version of ~ dveel2 using ~ ax-16 instead of ~ ax-17 .  (Contributed by
-       NM, 10-May-2008.) $)
-    dveel2ALT $p |- ( -. A. x x = y -> ( z e. y -> A. x z e. y ) ) $=
-      ( vw wel ax17el elequ2 dvelimfALT ) CDECBEABDCDAFCBDFDBCGH $.
   $}
 
 $(
@@ -14897,6 +14742,78 @@ or metalogic of the axioms may be quite different in the intuitionistic
 case compared with the classical case.
 $)
 
+  $( Show that the original axiom ~ ax-5o can be derived from ~ ax-5 and
+     others.  See ~ ax5 for the rederivation of ~ ax-5 from ~ ax-5o .
+
+     Part of the proof is based on the proof of Lemma 22 of [Monk2] p. 114.
+
+     Normally, ~ ax5o should be used rather than ~ ax-5o , except by theorems
+     specifically studying the latter's properties.  (Contributed by NM,
+     21-May-2008.) $)
+  ax5o $p |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) $=
+    ( wal wi wn ax-4 con2i ax-6 con1i ax-gen ax-5 ax-mp 3syl syl5 ) ACDZPCDZPBE
+    CDBCDPPFZCDZFZTCDZQSPRCGHRCITPEZCDUAQEUBCPSACIJKTPCLMNPBCLO $.
+
+  $( Axiom of Quantified Implication.  This axiom moves a quantifier from
+     outside to inside an implication, quantifying ` ps ` .  Notice that ` x `
+     must not be a free variable in the antecedent of the quantified
+     implication, and we express this by binding ` ph ` to "protect" the axiom
+     from a ` ph ` containing a free ` x ` .  One of the 4 axioms of "pure"
+     predicate calculus.  Axiom scheme C4' in [Megill] p. 448 (p. 16 of the
+     preprint).  It is a special case of Lemma 5 of [Monk2] p. 108 and Axiom 5
+     of [Mendelson] p. 69.
+
+     In classical logic, this axiom is redundant, as shown by theorem ~ ax5o .
+     The current proof of ~ ax5o is not valid intuitionistically.
+
+     Normally, ~ ax5o should be used rather than ~ ax-5o , except by theorems
+     specifically studying the latter's properties.  (Contributed by NM,
+     5-Aug-1993.) $)
+  ax-5o $a |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) $.
+
+  $( Rederivation of axiom ~ ax-5 from the orginal version, ~ ax-5o .  See
+     ~ ax5o for the derivation of ~ ax-5o from ~ ax-5 .
+
+     This theorem should not be referenced in any proof.  Instead, use ~ ax-5
+     above so that uses of ~ ax-5 can be more easily identified.
+
+     Note:  This is the same as theorem ~ alim below.  It is proved separately
+     here so that it won't be dependent on the axioms used for ~ alim .
+     (Contributed by NM, 23-May-2008.)  (Revised by NM, 5-Dec-2010.) $)
+  ax5 $p |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) $=
+    ( wi wal ax-4 syl5 ax-gen ax-5o ax-mp syl ) ABDZCEZACEZBDZCEZNBCEDMODZCEMPD
+    QCNAMBACFLCFGHLOCIJABCIK $.
+
+  $( Show that the original axiom ~ ax-6o can be derived from ~ ax-6 and
+     others.  See ~ ax6 for the rederivation of ~ ax-6 from ~ ax-6o .
+
+     Normally, ~ ax6o should be used rather than ~ ax-6o , except by theorems
+     specifically studying the latter's properties.  (Contributed by NM,
+     21-May-2008.) $)
+  ax6o $p |- ( -. A. x -. A. x ph -> ph ) $=
+    ( wal wn ax-4 ax-6 nsyl4 ) ABCZAHDBCABEABFG $.
+
+  $( Axiom of Quantified Negation.  This axiom is used to manipulate negated
+     quantifiers.  One of the 4 axioms of pure predicate calculus.  Equivalent
+     to axiom scheme C7' in [Megill] p. 448 (p. 16 of the preprint).
+
+     This axiom is redundant, as shown by theorem ~ ax6o .
+
+     Normally, ~ ax6o should be used rather than ~ ax-6o , except by theorems
+     specifically studying the latter's properties.  (Contributed by NM,
+     5-Aug-1993.) $)
+  ax-6o $a |- ( -. A. x -. A. x ph -> ph ) $.
+
+  $( Rederivation of axiom ~ ax-6 from the orginal version, ~ ax-6o .  See
+     ~ ax6o for the derivation of ~ ax-6o from ~ ax-6 .
+
+     This theorem should not be referenced in any proof.  Instead, use ~ ax-6
+     above so that uses of ~ ax-6 can be more easily identified.  (Contributed
+     by NM, 23-May-2008.) $)
+  ax6 $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
+    ( wal wn wi ax-4 id ax-gen ax-5o ax-mp nsyl ax-6o nsyl4 ) ABCZBCZDZBCZNDZBC
+    ZNQREZBCQSETBQONPBFNNEZBCNOEUABNGHANBIJKHPRBIJNBLM $.
+
   $( The analog in our "pure" predicate calculus of the Brouwer axiom (B) of
      modal logic S5.  (Contributed by NM, 5-Oct-2005.) $)
   modal-b $p |- ( ph -> A. x -. A. x -. ph ) $=
@@ -14951,6 +14868,56 @@ $)
       UPAUREZBDZUFUSEUOVCEZBDUPVDEVEBUNATKUOVCBMUAAURBMUBUCUDUEJKUKCLUKUICMNO
       $.
   $}
+
+  ${
+    $d w y $.  $d w z $.  $d w x $.  $( ` w ` is dummy. $)
+    $( Axiom ~ ax-15 is redundant if we assume ~ ax-17 (in classical logic;
+       this proof is not intuitionistic).  Remark 9.6 in
+       [Megill] p. 448 (p. 16 of the preprint), regarding axiom scheme C14'.
+
+       Note that ` w ` is a dummy variable introduced in the proof.  On the web
+       page, it is implicitly assumed to be distinct from all other variables.
+       (This is made explicit in the database file set.mm).  Its purpose is to
+       satisfy the distinct variable requirements of ~ dveel2 and ~ ax-17 .  By
+       the end of the proof it has vanished, and the final theorem has no
+       distinct variable requirements.
+
+       This theorem should not be referenced in any proof.  Instead, use
+       ~ ax-15 below so that theorems needing ~ ax-15 can be more easily
+       identified.  (Contributed by NM, 29-Jun-1995.) $)
+    ax15 $p |- ( -. A. z z = x -> ( -. A. z z = y ->
+              ( x e. y -> A. z x e. y ) ) ) $=
+      ( vw weq wal wn wi hbn1 dveel2 hbim1 ax-17 elequ1 imbi2d dvelimfALT 19.21
+      wel syl6ib pm2.86d ) CAECFGZCBEZCFGZABQZUCCFZTUBUCHZUECFUBUDHUBDBQZHUECAD
+      UBUFCUACIZCBDJKUEDLDAEUFUCUBDABMNOUBUCCUGPRS $.
+  $}
+
+  $( Axiom of Quantifier Introduction.  This can be useful in some (classical)
+     choices of axioms which do not include ~ ax-17 , but we do not have
+     similar results for how it relates to other axioms in intuitionistic
+     logic.
+
+     It is an equality and substitution
+     axioms for a non-logical predicate in our predicate calculus with
+     equality.  Axiom scheme C14' in [Megill] p. 448 (p. 16 of the preprint).
+     It is redundant if we include ~ ax-17 ; see theorem ~ ax15 .  Alternately,
+     ~ ax-17 becomes unnecessary in principle with this axiom, but we lose the
+     more powerful metalogic afforded by ~ ax-17 .  We retain ~ ax-15 here to
+     provide completeness for systems with the simpler metalogic that results
+     from omitting ~ ax-17 , which might be easier to study for some
+     theoretical purposes.  (Contributed by NM, 5-Aug-1993.) $)
+  ax-15 $a |- ( -. A. z z = x -> ( -. A. z z = y ->
+              ( x e. y -> A. z x e. y ) ) ) $.
+
+  $( Rederivation of axiom ~ ax-11 from the orginal version, ~ ax-11o .  See
+     theorem ~ ax11o for the derivation of ~ ax-11o from ~ ax-11 .
+
+     This theorem should not be referenced in any proof.  Instead, use ~ ax-11
+     above so that uses of ~ ax-11 can be more easily identified.  (Contributed
+     by NM, 22-Jan-2007.) $)
+  ax11 $p |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) $=
+    ( weq wal wi biidd dral1 ax-1 alimi syl6bir a1d wn ax-4 ax-11o syl7 pm2.61i
+    ) BCDZBEZRACEZRAFZBEZFZFSUCRSTABEUBAABCSAGHAUABARIJKLTASMRUBACNABCOPQ $.
 
   ${
     ax11f.1 $e |- ( ph -> A. x ph ) $.
@@ -15224,6 +15191,53 @@ $)
       VFUTUMVBUKVEUTCUJCMUSCNUKVDULUTVDUJUKULUTIVDAAFUJAOACAPUAZULCAQRSTUMVEVBC
       ULCMVACNUMULVDVBUMULVDVBVDUJUMULVBVGUJCBQUBSUCTUDRUJULCUEUFUQUNCEUGUHUI
       $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.
+    $( Theorem to add distinct quantifier to atomic formula.  (This theorem
+       demonstrates the induction basis for ~ ax-17 considered as a
+       metatheorem.  Do not use it for later proofs - use ~ ax-17 instead, to
+       avoid reference to the redundant axiom ~ ax-16 .)  (Contributed by NM,
+       5-Aug-1993.) $)
+    ax17eq $p |- ( x = y -> A. z x = y ) $=
+      ( weq wal wi ax-12 ax-16 pm2.61ii ) CADCECBDCEABDZJCEFABCGJCAHJCBHI $.
+  $}
+
+  ${
+    $d w z x $.  $d w y $.
+
+    $( Version of ~ dveeq1 using ~ ax-16 instead of ~ ax-17 .  (Contributed by
+       NM, 29-Apr-2008.) $)
+    dveeq1ALT $p |- ( -. A. x x = y -> ( y = z -> A. x y = z ) ) $=
+      ( vw weq ax17eq equequ1 dvelimfALT ) DCEBCEABDDCAFBCDFDBCGH $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.
+    $( Theorem to add distinct quantifier to atomic formula.  This theorem
+       demonstrates the induction basis for ~ ax-17 considered as a
+       metatheorem.)  (Contributed by NM, 5-Aug-1993.) $)
+    ax17el $p |- ( x e. y -> A. z x e. y ) $=
+      ( weq wal wel wi ax-15 ax-16 pm2.61ii ) CADCECBDCEABFZKCEGABCHKCAIKCBIJ
+      $.
+  $}
+
+  ${
+    $d w z x $.  $d w y $.
+
+    $( Version of ~ dveeq2 using ~ ax-16 instead of ~ ax-17 .  (Contributed by
+       NM, 29-Apr-2008.) $)
+    dveeq2ALT $p |- ( -. A. x x = y -> ( z = y -> A. x z = y ) ) $=
+      ( vw weq ax17eq equequ2 dvelimfALT ) CDECBEABDCDAFCBDFDBCGH $.
+  $}
+
+  ${
+    $d w z x $.  $d w y $.
+    $( Version of ~ dveel2 using ~ ax-16 instead of ~ ax-17 .  (Contributed by
+       NM, 10-May-2008.) $)
+    dveel2ALT $p |- ( -. A. x x = y -> ( z e. y -> A. x z e. y ) ) $=
+      ( vw wel ax17el elequ2 dvelimfALT ) CDECBEABDCDAFCBDFDBCGH $.
   $}
 
 $(
