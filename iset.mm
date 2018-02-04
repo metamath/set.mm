@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Jan-2018
+$( iset.mm - Version of 2-Feb-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6237,8 +6237,9 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
     ( wn wb wi wa wo bicom dfbi2 orcom df-or bitr2i imnan anbi12i 3bitrri ) ABC
     ZDPADPAEZAPEZFABGZABFCZFAPHPAIQSRTSBAGQABJBAKLABMNO $.
 
-  $( Disjunction distributes over implication.  (Contributed by Wolf Lammen,
-     5-Jan-2013.) $)
+  $( Disjunction distributes over implication.  The forward direction,
+     ~ pm2.76 , is valid intuitionistically.  The reverse direction is
+     ~ pm2.85 .  (Contributed by Wolf Lammen, 5-Jan-2013.) $)
   orimdi $p |- ( ( ph \/ ( ps -> ch ) ) <->
                 ( ( ph \/ ps ) -> ( ph \/ ch ) ) ) $=
     ( wn wi wo imdi df-or imbi12i 3bitr4i ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCGAL
@@ -10413,6 +10414,39 @@ $)
       ( wi wal wex alrimi 19.23 sylib ) ABCHZDIBDJCHANDEGKBCDFLM $.
   $}
 
+  ${
+    $d x ps $.
+    exlimiv.1 $e |- ( ph -> ps ) $.
+    $( Inference from Theorem 19.23 of [Margaris] p. 90.
+
+       This inference, along with our many variants is used to implement a
+       metatheorem called "Rule C" that is given in many logic textbooks.  See,
+       for example, Rule C in [Mendelson] p. 81, Rule C in [Margaris] p. 40, or
+       Rule C in Hirst and Hirst's _A Primer for Logic and Proof_ p. 59 (PDF
+       p. 65) at ~ http://www.mathsci.appstate.edu/~~jlh/primer/hirst.pdf .
+
+       In informal proofs, the statement "Let C be an element such that..."
+       almost always means an implicit application of Rule C.
+
+       In essence, Rule C states that if we can prove that some element ` x `
+       exists satisfying a wff, i.e. ` E. x ph ( x ) ` where ` ph ( x ) ` has
+       ` x ` free, then we can use ` ph ( ` C ` ) ` as a hypothesis for the
+       proof where C is a new (ficticious) constant not appearing previously in
+       the proof, nor in any axioms used, nor in the theorem to be proved.  The
+       purpose of Rule C is to get rid of the existential quantifier.
+
+       We cannot do this in Metamath directly.  Instead, we use the original
+       ` ph ` (containing ` x ` ) as an antecedent for the main part of the
+       proof.  We eventually arrive at ` ( ph -> ps ) ` where ` ps ` is the
+       theorem to be proved and does not contain ` x ` .  Then we apply
+       ~ exlimiv to arrive at ` ( E. x ph -> ps ) ` .  Finally, we separately
+       prove ` E. x ph ` and detach it with modus ponens ~ ax-mp to arrive at
+       the final theorem ` ps ` .  (Contributed by NM, 5-Aug-1993.)  (Revised
+       by NM, 25-Jul-2012.) $)
+    exlimiv $p |- ( E. x ph -> ps ) $=
+      ( ax-17 exlimi ) ABCBCEDF $.
+  $}
+
   $( Theorem 19.22 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
      (Proof shortened by Wolf Lammen, 4-Jul-2014.) $)
   exim $p |- ( A. x ( ph -> ps ) -> ( E. x ph -> E. x ps ) ) $=
@@ -11810,6 +11844,18 @@ $)
       ( vw weq ax17eq equequ2 dvelimfALT ) CDECBEABDCDAFCBDFDBCGH $.
   $}
 
+  ${
+    $d z x $.
+    $( Quantifier introduction when one pair of variables is distinct.  Like
+       ~ dveeq2 but connecting ` A. x x = y ` by a disjunction rather than
+       negation and implication makes the theorem stronger in intuitionistic
+       logic.  (Contributed by Jim Kingdon, 1-Feb-2018.) $)
+    dveeq2or $p |- ( A. x x = y \/ F/ x z = y ) $=
+      ( weq wal wi wnf ax-i12 orass mpbir pm1.4 orim1i ax-mp mpbi ax16 a5i jaoi
+      wo id orim2i df-nf biimpri ) ABDAEZCBDZUDAEFZAEZRZUCUDAGZRUCACDZAEZUFRZRZ
+      UGUCUJRZUFRZULUJUCRZUFRZUNUPUJUGRCBAHUJUCUFIJUOUMUFUJUCKLMUCUJUFINUKUFUCU
+      JUFUFUIUEAUDACOPUFSQTMUFUHUCUHUFUDAUAUBTM $.
+  $}
 
   ${
     $d x z $.  $d y z $.
@@ -11934,9 +11980,23 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-     Theorems without distinct variables that use axiom ax-11o
+     More theorems realted to ax-11 and substitution
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
+
+  ${
+    $d x ph $.
+    albidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for universal quantifier (deduction rule).
+       (Contributed by NM, 5-Aug-1993.) $)
+    albidv $p |- ( ph -> ( A. x ps <-> A. x ch ) ) $=
+      ( ax-17 albid ) ABCDADFEG $.
+
+    $( Formula-building rule for existential quantifier (deduction rule).
+       (Contributed by NM, 5-Aug-1993.) $)
+    exbidv $p |- ( ph -> ( E. x ps <-> E. x ch ) ) $=
+      ( ax-17 exbid ) ABCDADFEG $.
+  $}
 
   $( A bidirectional version of ~ ax-11o .  (Contributed by NM,
      30-Jun-2006.) $)
@@ -11945,12 +12005,54 @@ $)
     ( weq wal wn wa wi ax-11o imp ax-4 com12 adantl impbid ) BCDZBEFZOGAOAHZBEZ
     POARHABCIJORAHPROAQBKLMN $.
 
+  ${
+    $d x y $.  $d x z $.  $d y z $.  $d ph z $.
+    $( This is a version of ~ ax-11o when the variables are distinct.  Axiom
+       (C8) of [Monk2] p. 105.  (Contributed by NM, 5-Aug-1993.)  (Revised by
+       Jim Kingdon, 15-Dec-2017.) $)
+    ax11v $p |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) $=
+      ( vz cv wceq wex wi wal a9e ax-17 ax-11 syl5 imbi1d albidv imbi2d
+      equequ2 imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUCFZAUFAHZBIZH
+      ZHZDCJUDUJDUDUEUBFZAUKAHZBIZHZHUJAADIUKUMADKABDLMUDUKUFUNUIDCBQZU
+      DUMUHAUDULUGBUDUKUFAUONOPRSTUA $.
+  $}
+
+  ${
+    $d x y $.  $d x z $.  $d y z $.  $d ph z $.
+    $( Analogue to ~ ax11v for existential quantification.  (Contributed by Jim
+       Kingdon, 9-Jan-2018.) $)
+    ax11ev $p |- ( x = y -> ( E. x ( x = y /\ ph ) -> ph ) ) $=
+      ( vz cv wceq wex wa wi ax-i11e ax-17 syl6ib equequ2 anbi1d exbidv
+      a9e 19.9 imbi1d imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUDFZUG
+      AHZBGZAIZIZDCPUEUKDUEUFUCFZULAHZBGZAIZIUKULUNADGAABDJADADKQLUEULU
+      GUOUJDCBMZUEUNUIAUEUMUHBUEULUGAUPNORSTUAUB $.
+  $}
+
   $( Lemma used in proofs of substitution properties.  (Contributed by NM,
      5-Aug-1993.) $)
   equs5 $p |- ( -. A. x x = y ->
              ( E. x ( x = y /\ ph ) -> A. x ( x = y -> ph ) ) ) $=
     ( weq wal wn wa wi hbnae hba1 ax11o imp3a exlimd ) BCDZBEFZNAGNAHZBEZBBCBIP
     BJONAQABCKLM $.
+
+  ${
+    $d x z $.  $d y z $.  $d ph z $.
+
+    $( Lemma used in proofs of substitution properties.  Like ~ equs5 but, in
+       intuitionistic logic, replacing negation and implication with
+       disjunction makes this a stronger result.  (Contributed by Jim Kingdon,
+       2-Feb-2018.) $)
+    equs5or $p |- ( A. x x = y \/
+             ( E. x ( x = y /\ ph ) -> A. x ( x = y -> ph ) ) ) $=
+      ( vz weq wex wal wa wi wo a9e wnf dveeq2or nfnf1 nfri ax11v equequ2 ax-mp
+      wb hba1 adantl nfr imp imbi1d a4s albid syl imbi2d imbi12d mpbii ex imp4a
+      alrimi 19.21t mpbid 19.23 syl6ib orim2i pm2.76 olcs exlimiv ) DCEZDFBCEZB
+      GZVCAHZBFVCAIZBGZIZJZDCKVBVIDVDVBVIVDVBVHIZJZVDVBJVIIVDVBBLZJVKBCDMVLVJVD
+      VLVBVEVGIZBGZVHVLVBVMIZBGVBVNIVLVOBVLBVBBNOVLVBVCAVGVLVBVCAVGIZIZVLVBHZBD
+      EZAVSAIZBGZIZIVQABDPVRVSVCWBVPVBVSVCSVLDCBQZUAVRWAVGAVRVBBGZWAVGSVLVBWDVB
+      BUBUCWDVTVFBVBBTVBVTVFSBVBVSVCAWCUDUEUFUGUHUIUJUKULUMVBVMBUNUOVEVGBVFBTUP
+      UQURRVDVBVHUSRUTVAR $.
+  $}
 
   $( One direction of a simplified definition of substitution when variables
      are distinct.  (Contributed by NM, 5-Aug-1993.) $)
@@ -11963,6 +12065,15 @@ $)
   sb4 $p |- ( -. A. x x = y -> ( [ y / x ] ph -> A. x ( x = y -> ph ) ) ) $=
     ( wsb weq wa wex wal wn wi sb1 equs5 syl5 ) ABCDBCEZAFBGNBHINAJBHABCKABCLM
     $.
+
+  $( One direction of a simplified definition of substitution when variables
+     are distinct.  Similar to ~ sb4 but stronger in intuitionistic logic.
+     (Contributed by Jim Kingdon, 2-Feb-2018.) $)
+  sb4or $p |- ( A. x x = y \/
+      A. x ( [ y / x ] ph -> A. x ( x = y -> ph ) ) ) $=
+    ( weq wal wa wex wi wo wsb equs5or nfe1 nfa1 nfim nfri imim1i alrimi orim2i
+    sb1 ax-mp ) BCDZBEZUAAFZBGZUAAHZBEZHZIUBABCJZUFHZBEZIABCKUGUJUBUGUIBUGBUDUF
+    BUCBLUEBMNOUHUDUFABCSPQRT $.
 
   $( Simplified definition of substitution when variables are distinct.
      (Contributed by NM, 27-May-1997.) $)
@@ -11992,15 +12103,41 @@ $)
     ( weq wal wn wsb wi sb4 sb2 a5i syl6 ) BCDZBEFABCGZMAHZBENBEABCIONBABCJKL
     $.
 
-  $( An equality theorem for substitution.  (Contributed by NM, 5-Aug-1993.) $)
+  $( Bound-variable hypothesis builder for substitution.  Similar to ~ hbsb2
+     but in intuitionistic logic a disjunction is stronger than an
+     implication.  (Contributed by Jim Kingdon, 2-Feb-2018.) $)
+  nfsb2or $p |- ( A. x x = y \/ F/ x [ y / x ] ph ) $=
+    ( weq wal wsb wi wnf sb4or sb2 a5i imim2i alimi df-nf sylibr orim2i ax-mp
+    wo ) BCDZBEZABCFZSAGZBEZGZBEZRTUABHZRABCIUEUFTUEUAUABEZGZBEUFUDUHBUCUGUAUBU
+    ABABCJKLMUABNOPQ $.
+
+  ${
+    sbequilem.1 $e |- ( ph \/ ( ps -> ( ch -> th ) ) ) $.
+    sbequilem.2 $e |- ( ta \/ ( ps -> ( th -> et ) ) ) $.
+    $( Propositional logic lemma used in the ~ sbequi proof.  (Contributed by
+       Jim Kingdon, 1-Feb-2018.) $)
+    sbequilem $p |- ( ph \/ ( ta \/ ( ps -> ( ch -> et ) ) ) ) $=
+      ( wo wi wa pm3.2i andi andir orbi12i orim2i ax-mp
+      mpbi orim1i orass pm3.43 pm3.33 ax-ia2 sylbir ax-ia1 mpbir orbi1i
+      syl6 orcom ) AEIZBCFJZJZIZAEULIIEAIZULIZUMUOEAULIZIZEABDFJZJZKZUL
+      IZIZUQAEKBCDJZJZEKIZVAIZVBVEUTVDUSKZIZIZVFAVDIZEKZVJUSKZIZVIVJEUS
+      IZKVMVJVNGHLVJEUSMRVKVEVLVHAVDENZAVDUSNORVHVAVEVGULUTVGBVCURKUKBV
+      CURUACDFUBUHPPQVEEVAVEVKEVOVJEUCUDSQVAUPEUTAULAUSUESPQEAULTUFUNUJ
+      ULEAUIUGRAEULTR $.
+  $}
+
+  $( An equality theorem for substitution.  (Contributed by NM, 5-Aug-1993.)
+     (Proof modified by Jim Kingdon, 1-Feb-2018.) $)
   sbequi $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
-    ( weq wal wsb wi wn wa wex hbsb2 stdpc7 sbequ1 sylan9 ex a4s adantr biimpd
-    drsb1 equvini eximi 19.35 sylib hbnae 19.9hd com23 sbequ2 alequcoms sylan9r
-    syl syl9 syld pm2.61ii ) DBEZDFZDCEZDFZBCEZADBGZADCGZHZHUPIZUSURIZVBVCUSVDV
-    BHVCUSJUTVADKZVDVAVCUTUTDFZUSVEADBLUSVBDKZVFVEHUSBDEZUQJZDKVGBCDUAVIVBDVHUT
-    AUQVAABDMADCNZOUBUKUTVADUCUDOVAVDDDCDUEADCLUFULPUGUPUSVBUPUSJUTAVAUPUTAHZUS
-    UOVKDADBUHQRUSAABCGZUPVAABCNVLVAHBDVHBFVLVAABDCTSUIUJUMPURUSVBURUSJUTAVAURU
-    TACBGZUSAURUTVMADCBTSABCMOURAVAHZUSUQVNDVJQRUMPUN $.
+    ( weq wal wsb wi wo wex nfsb2or wa stdpc7 sbequ1 sylan9 orim2i ax-mp biimpd
+    wnf a4s equvini eximi 19.35-1 3syl syl9 19.9t sbequilem sbequ2 adantr drsb1
+    nfr ax-1 alequcoms sylan9r syld ex orim1i pm1.2 syl jaoi ) DBEZDFZDCEZDFZBC
+    EZADBGZADCGZHZHZIZIVIVBVEVFVGDJZVDVGVBVFDSZIVBVEVFVKHHZIADBKVLVMVBVLVFVFDFZ
+    VEVKVFDUKVEBDEZVCLZDJVHDJVNVKHBCDUAVPVHDVOVFAVCVGABDMADCNZOUBVFVGDUCUDUEPQV
+    DVKVGHZIZVDVEVRHZIVDVGDSZIVSADCKWAVRVDWAVKVGVGDUFRPQVRVTVDVRVEULPQUGVBVIVJV
+    BVEVHVBVELVFAVGVBVFAHZVEVAWBDADBUHTUIVEAABCGZVBVGABCNWCVGHBDVOBFWCVGABDCUJR
+    UMUNUOUPVJVIVIIVIVDVIVIVDVEVHVDVELVFAVGVDVFACBGZVEAVDVFWDADCBUJRABCMOVDAVGH
+    ZVEVCWEDVQTUIUOUPUQVIURUSUTQ $.
 
   $( An equality theorem for substitution.  Used in proof of Theorem 9.7 in
      [Megill] p. 449 (p. 16 of the preprint).  (Contributed by NM,
@@ -12415,20 +12552,6 @@ $)
   $}
 
   ${
-    $d x ph $.
-    albidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
-    $( Formula-building rule for universal quantifier (deduction rule).
-       (Contributed by NM, 5-Aug-1993.) $)
-    albidv $p |- ( ph -> ( A. x ps <-> A. x ch ) ) $=
-      ( ax-17 albid ) ABCDADFEG $.
-
-    $( Formula-building rule for existential quantifier (deduction rule).
-       (Contributed by NM, 5-Aug-1993.) $)
-    exbidv $p |- ( ph -> ( E. x ps <-> E. x ch ) ) $=
-      ( ax-17 exbid ) ABCDADFEG $.
-  $}
-
-  ${
     $d x ph $.  $d y ph $.
     2albidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
     $( Formula-building rule for 2 existential quantifiers (deduction rule).
@@ -12579,62 +12702,6 @@ $)
        (Contributed by NM, 10-Aug-2004.) $)
     19.23vv $p |- ( A. x A. y ( ph -> ps ) <-> ( E. x E. y ph -> ps ) ) $=
       ( wi wal wex 19.23v albii bitri ) ABEDFZCFADGZBEZCFLCGBEKMCABDHILBCHJ $.
-  $}
-
-  ${
-    $d x ps $.
-    exlimiv.1 $e |- ( ph -> ps ) $.
-    $( Inference from Theorem 19.23 of [Margaris] p. 90.
-
-       This inference, along with our many variants is used to implement a
-       metatheorem called "Rule C" that is given in many logic textbooks.  See,
-       for example, Rule C in [Mendelson] p. 81, Rule C in [Margaris] p. 40, or
-       Rule C in Hirst and Hirst's _A Primer for Logic and Proof_ p. 59 (PDF
-       p. 65) at ~ http://www.mathsci.appstate.edu/~~jlh/primer/hirst.pdf .
-
-       In informal proofs, the statement "Let C be an element such that..."
-       almost always means an implicit application of Rule C.
-
-       In essence, Rule C states that if we can prove that some element ` x `
-       exists satisfying a wff, i.e. ` E. x ph ( x ) ` where ` ph ( x ) ` has
-       ` x ` free, then we can use ` ph ( ` C ` ) ` as a hypothesis for the
-       proof where C is a new (ficticious) constant not appearing previously in
-       the proof, nor in any axioms used, nor in the theorem to be proved.  The
-       purpose of Rule C is to get rid of the existential quantifier.
-
-       We cannot do this in Metamath directly.  Instead, we use the original
-       ` ph ` (containing ` x ` ) as an antecedent for the main part of the
-       proof.  We eventually arrive at ` ( ph -> ps ) ` where ` ps ` is the
-       theorem to be proved and does not contain ` x ` .  Then we apply
-       ~ exlimiv to arrive at ` ( E. x ph -> ps ) ` .  Finally, we separately
-       prove ` E. x ph ` and detach it with modus ponens ~ ax-mp to arrive at
-       the final theorem ` ps ` .  (Contributed by NM, 5-Aug-1993.)  (Revised
-       by NM, 25-Jul-2012.) $)
-    exlimiv $p |- ( E. x ph -> ps ) $=
-      ( ax-17 exlimi ) ABCBCEDF $.
-  $}
-
-  ${
-    $d x y $.  $d x z $.  $d y z $.  $d ph z $.
-    $( This is a version of ~ ax-11o when the variables are distinct.  Axiom
-       (C8) of [Monk2] p. 105.  (Contributed by NM, 5-Aug-1993.)  (Revised by
-       Jim Kingdon, 15-Dec-2017.) $)
-    ax11v $p |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) $=
-      ( vz cv wceq wex wi wal a9e ax-17 ax-11 syl5 imbi1d albidv imbi2d
-      equequ2 imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUCFZAUFAHZBIZH
-      ZHZDCJUDUJDUDUEUBFZAUKAHZBIZHZHUJAADIUKUMADKABDLMUDUKUFUNUIDCBQZU
-      DUMUHAUDULUGBUDUKUFAUONOPRSTUA $.
-  $}
-
-  ${
-    $d x y $.  $d x z $.  $d y z $.  $d ph z $.
-    $( Analogue to ~ ax11v for existential quantification.  (Contributed by Jim
-       Kingdon, 9-Jan-2018.) $)
-    ax11ev $p |- ( x = y -> ( E. x ( x = y /\ ph ) -> ph ) ) $=
-      ( vz cv wceq wex wa wi ax-i11e ax-17 syl6ib equequ2 anbi1d exbidv
-      a9e 19.9 imbi1d imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUDFZUG
-      AHZBGZAIZIZDCPUEUKDUEUFUCFZULAHZBGZAIZIUKULUNADGAABDJADADKQLUEULU
-      GUOUJDCBMZUEUNUIAUEUMUHBUEULUGAUPNORSTUAUB $.
   $}
 
   ${
