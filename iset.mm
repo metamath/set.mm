@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Feb-2018  
+$( iset.mm - Version of 3-Feb-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -10492,22 +10492,6 @@ $)
     ( wal wi wex wa 19.29 pm3.35 eximi syl expcom ) ACDZABEZCFZBCFZMOGANGZCFPAN
     CHQBCABIJKL $.
 
-  $( Theorem 19.35 of [Margaris] p. 90.  This theorem is useful for moving an
-     implication (in the form of the right-hand side) into the scope of a
-     single existential quantifier.  (Contributed by NM, 5-Aug-1993.)  (Proof
-     shortened by Wolf Lammen, 27-Jun-2014.) $)
-  19.35 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> E. x ps ) ) $=
-    ( wi wex wal wn wa 19.26 annim albii alnex anbi2i 3bitr3i con4bii ) ABDZCEZ
-    ACFZBCEZDZPGZCFZRSGZHZQGTGABGZHZCFRUECFZHUBUDAUECIUFUACABJKUGUCRBCLMNPCLRSJ
-    NO $.
-
-  $( Obsolete proof of ~ 19.35 as of 27-Jun-2014.  (Contributed by NM,
-     5-Aug-1993.) $)
-  19.35OLD $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> E. x ps ) ) $=
-    ( wal wn wi wex wa 19.26 annim albii df-an 3bitr3i con2bii imbi2i 3bitr4ri
-    df-ex ) ACDZBEZCDZEZFZABFZEZCDZERBCGZFUCCGUEUBASHZCDRTHUEUBEASCIUGUDCABJKRT
-    LMNUFUARBCQOUCCQP $.
-
   ${
     19.35i.1 $e |- E. x ( ph -> ps ) $.
     $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
@@ -10695,11 +10679,6 @@ $)
   19.38 $p |- ( ( E. x ph -> A. x ps ) -> A. x ( ph -> ps ) ) $=
     ( wex wal wi hbe1 hba1 hbim 19.8a ax-4 imim12i alrimi ) ACDZBCEZFABFCNOCACG
     BCHIANOBACJBCKLM $.
-
-  $( Theorem 19.39 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-  19.39 $p |- ( ( E. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $=
-    ( wex wi wal 19.2 imim1i 19.35 sylibr ) ACDZBCDZEACFZLEABECDMKLACCGHABCIJ
-    $.
 
   ${
     19.44.1 $e |- ( ps -> A. x ps ) $.
@@ -13410,6 +13389,16 @@ $)
       J $.
   $}
 
+  $( Theorem 19.35 of [Margaris] p. 90.  In classical logic, this theorem is
+     useful for moving an implication (in the form of the right-hand side) into
+     the scope of a single existential quantifier.  The forward direction,
+     ~ 19.35-1 , holds intuitionistically.  (Contributed by NM, 5-Aug-1993.)
+     (Proof shortened by Wolf Lammen, 27-Jun-2014.) $)
+  19.35 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> E. x ps ) ) $=
+    ( wi wex wal wn wa 19.26 annim albii alnex anbi2i 3bitr3i con4bii ) ABDZCEZ
+    ACFZBCEZDZPGZCFZRSGZHZQGTGABGZHZCFRUECFZHUBUDAUECIUFUACABJKUGUCRBCLMNPCLRSJ
+    NO $.
+
   ${
     19.37.1 $e |- ( ph -> A. x ph ) $.
     $( Theorem 19.37 of [Margaris] p. 90.  The forward direction is valid
@@ -14440,6 +14429,11 @@ $)
     19.36v $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
       ( ax-17 19.36 ) ABCBCDE $.
   $}
+
+  $( Theorem 19.39 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+  19.39 $p |- ( ( E. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $=
+    ( wex wi wal 19.2 imim1i 19.35 sylibr ) ACDZBCDZEACFZLEABECDMKLACCGHABCIJ
+    $.
 
   $( Theorem 19.24 of [Margaris] p. 90.  This is an example of a theorem which
      asserts that something exists, but provides no way of constructing it.  It
