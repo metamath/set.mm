@@ -10561,11 +10561,6 @@ $)
   exintr $p |- ( A. x ( ph -> ps ) -> ( E. x ph -> E. x ( ph /\ ps ) ) ) $=
     ( wi wal wex wa exintrbi biimpd ) ABDCEACFABGCFABCHI $.
 
-  $( Lemma used in proofs of substitution properties.  (Contributed by NM,
-     5-Aug-1993.) $)
-  equs3 $p |- ( E. x ( x = y /\ ph ) <-> -. A. x ( x = y -> -. ph ) ) $=
-    ( weq wn wi wal wa wex alinexa con2bii ) BCDZAEFBGLAHBILABJK $.
-
   $( Abbreviated version of ~ ax-6o .  (Contributed by NM, 5-Aug-1993.) $)
   a6e $p |- ( E. x A. x ph -> ph ) $=
     ( wal wex hba1 id exlimi ax-4 syl ) ABCZBDJAJJBABEJFGABHI $.
