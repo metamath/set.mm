@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Feb-2018
+$( iset.mm - Version of 3-Feb-2018  
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11685,45 +11685,6 @@ $)
   $}
 
   ${
-    sbanf.1 $e |- ( ph -> A. y ph ) $.
-    sbanf.2 $e |- ( ps -> A. y ps ) $.
-    $( Version of ~ sban where ` y ` is not free in ` ph ` or ` ps ` .
-       (Contributed by Jim Kingdon, 27-Dec-2017.) $)
-    sbanf $p |- ( [ y / x ] ( ph /\ ps )
-                  <-> ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
-      ( wa cv wsbc wceq wi wal hban sb6f anbi12i bitr4i
-      19.26 pm4.76 albii bitri ) ABGZCDHZICHUBJZUAKZCLZACUBIZBCUBIZGZUA
-      CDABDEFMNUHUCAKZUCBKZGZCLZUEUHUICLZUJCLZGULUFUMUGUNACDENBCDFNOUIU
-      JCQPUKUDCUCABRSTP $.
-
-    $( Version of ~ sbi1 where ` y ` is not free in ` ph ` or ` ps ` .
-       (Contributed by Jim Kingdon, 25-Dec-2017.) $)
-    sbi1f $p |- ( [ y / x ] ( ph -> ps )
-                   -> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
-      ( cv wsbc wceq wal sb6f hbim ax-2 al2imi sb2 syl6
-      wi sylbi syl5bi ) ACDGZHCGTIZAQZCJZABQZCTHZBCTHZACDEKUEUAUDQZCJZU
-      CUFQUDCDABDEFLKUHUCUABQZCJUFUGUBUICUAABMNBCDOPRS $.
-
-    $( Version of ~ sbi1f for substitution of a biconditional rather than an
-       implication (one direction of ~ sbbi where ` y ` is not free in ` ph `
-       or ` ps ` .  (Contributed by Jim Kingdon, 27-Dec-2017.) $)
-    sbbi1f $p |- ( [ y / x ] ( ph <-> ps )
-                    -> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
-      ( wb cv wsbc wi wa dfbi2 sbbii hbim sbanf bitri
-      sbi1f anim12i sylibr sylbi ) ABGZCDHZIZABJZCUBIZBAJZCUBIZKZACUBIZ
-      BCUBIZGZUCUDUFKZCUBIUHUAULCDABLMUDUFCDABDEFNBADFENOPUHUIUJJZUJUIJ
-      ZKUKUEUMUGUNABCDEFQBACDFEQRUIUJLST $.
-  $}
-
-  ${
-    sbcof.1 $e |- ( ph -> A. y ph ) $.
-    $( Version of ~ sbco where ` y ` is not free in ` ph ` .  (Contributed by
-       Jim Kingdon, 28-Dec-2017.) $)
-    sbcof $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
-      ( cv wsbc sbf sbbii ) ACBEFABCACBDGH $.
-  $}
-
-  ${
     sbcof2.1 $e |- ( ph -> A. x ph ) $.
     $( Version of ~ sbco where ` x ` is not free in ` ph ` .  (Contributed by
        Jim Kingdon, 28-Dec-2017.) $)
@@ -12151,122 +12112,6 @@ $)
   drsb2 $p |- ( A. x x = y -> ( [ x / z ] ph <-> [ y / z ] ph ) ) $=
     ( cv wceq wsbc wb sbequ a4s ) BEZCEZFADKGADLGHBABCDIJ $.
 
-  $( Negation inside and outside of substitution are equivalent.  (Contributed
-     by NM, 5-Aug-1993.) $)
-  sbn $p |- ( [ y / x ] -. ph <-> -. [ y / x ] ph ) $=
-    ( wn wsb weq wal wi sbequ2 nsyld a4s sb4 wa wex sb1 equs3 sylib syl6 sylibr
-    con2i pm2.61i sbequ1 con3rr3 sb2 notnot sbbii con3i df-sb sylanbrc impbii )
-    ADZBCEZABCEZDZBCFZBGZULUNHZUOUQBUOULAUMUKBCIABCIJKUPDULUOUKHZBGZUNUKBCLUMUS
-    UMUOAMBNUSDABCOABCPQTRUAUNURUOUKMBNZULUOAUMABCUBUCUNUOUKDZHBGZDUTVBUMVBVABC
-    EUMVABCUDAVABCAUEUFSUGUKBCPSUKBCUHUIUJ $.
-
-  $( Removal of implication from substitution.  (Contributed by NM,
-     5-Aug-1993.) $)
-  sbi1 $p |- ( [ y / x ] ( ph -> ps ) -> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
-    ( weq wal wi wsb sbequ2 syl5d sbequ1 syl6d a4s sb4 ax-2 al2imi syl6 pm2.61i
-    wn sb2 ) CDEZCFZABGZCDHZACDHZBCDHZGGZUAUGCUAUDUEBUFUAUEAUDBACDIUCCDIJBCDKLM
-    UBSZUEUAAGZCFZUDUFACDNUHUDUAUCGZCFZUJUFGUCCDNULUJUABGZCFUFUKUIUMCUAABOPBCDT
-    QQJR $.
-
-  $( Introduction of implication into substitution.  (Contributed by NM,
-     5-Aug-1993.) $)
-  sbi2 $p |- ( ( [ y / x ] ph -> [ y / x ] ps ) -> [ y / x ] ( ph -> ps ) ) $=
-    ( wsb wi wn sbn pm2.21 sbimi sylbir ax-1 ja ) ACDEZBCDEABFZCDEZNGAGZCDEPACD
-    HQOCDABIJKBOCDBALJM $.
-
-  $( Implication inside and outside of substitution are equivalent.
-     (Contributed by NM, 5-Aug-1993.) $)
-  sbim $p |- ( [ y / x ] ( ph -> ps ) <-> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
-    ( wi wsb sbi1 sbi2 impbii ) ABECDFACDFBCDFEABCDGABCDHI $.
-
-  $( Reverse direction of ~ sbor .  (Contributed by Jim Kingdon,
-     20-Dec-2017.) $)
-  sborr $p |- ( ( [ y / x ] ph \/ [ y / x ] ps ) -> [ y / x ] ( ph \/ ps ) ) $=
-    ( weq wi wa wex wsb orc imim2i anim1i olc orim12i df-sb orbi12i exbii bitri
-    wo andi 19.43 anbi2i 3imtr4i ) CDEZAFZUDAGZCHZGZUDBFZUDBGZCHZGZSUDABSZFZUGG
-    ZUNUKGZSZACDIZBCDIZSUMCDIZUHUOULUPUEUNUGAUMUDABJKLUIUNUKBUMUDBAMKLNURUHUSUL
-    ACDOBCDOPUTUNUDUMGZCHZGZUQUMCDOVCUNUGUKSZGUQVBVDUNVBUFUJSZCHVDVAVECUDABTQUF
-    UJCUARUBUNUGUKTRRUC $.
-
-  $( Logical OR inside and outside of substitution are equivalent.
-     (Contributed by NM, 29-Sep-2002.) $)
-  sbor $p |- ( [ y / x ] ( ph \/ ps ) <-> ( [ y / x ] ph \/ [ y / x ] ps ) ) $=
-    ( wn wi wsb wo sbim sbn imbi1i bitri df-or sbbii 3bitr4i ) AEZBFZCDGZACDGZE
-    ZBCDGZFZABHZCDGSUAHRPCDGZUAFUBPBCDIUDTUAACDJKLUCQCDABMNSUAMO $.
-
-  ${
-    sbrim.1 $e |- ( ph -> A. x ph ) $.
-    $( Substitution with a variable not free in antecedent affects only the
-       consequent.  (Contributed by NM, 5-Aug-1993.) $)
-    sbrim $p |- ( [ y / x ] ( ph -> ps ) <-> ( ph -> [ y / x ] ps ) ) $=
-      ( wi wsb sbim sbf imbi1i bitri ) ABFCDGACDGZBCDGZFAMFABCDHLAMACDEIJK $.
-  $}
-
-  ${
-    sblim.1 $e |- ( ps -> A. x ps ) $.
-    $( Substitution with a variable not free in consequent affects only the
-       antecedent.  (Contributed by NM, 14-Nov-2013.) $)
-    sblim $p |- ( [ y / x ] ( ph -> ps ) <-> ( [ y / x ] ph -> ps ) ) $=
-      ( wi wsb sbim sbf imbi2i bitri ) ABFCDGACDGZBCDGZFLBFABCDHMBLBCDEIJK $.
-  $}
-
-  $( Forward direction of ~ sban .  (Contributed by Jim Kingdon,
-     19-Dec-2017.) $)
-  sban-1 $p |- ( [ y / x ] ( ph /\ ps ) ->
-                 ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
-    ( wa cv wsbc wceq wi df-sb jcab biimpi anandi exbii 19.40 anim12i
-    wex sylbi an4 biimpri sylib syl ) ABEZCDFZGZCFUDHZAIZUFAEZCQZEZUF
-    BIZUFBEZCQZEZEZACUDGZBCUDGZEUEUGUKEZUIUMEZEZUOUEUFUCIZUFUCEZCQZEU
-    TUCCDJVAURVCUSVAURUFABKLVCUHULEZCQUSVBVDCUFABMNUHULCORPRUGUKUIUMS
-    UAUJUPUNUQUPUJACDJTUQUNBCDJTPUB $.
-
-  $( Conjunction inside and outside of a substitution are equivalent.
-     (Contributed by NM, 5-Aug-1993.) $)
-  sban $p |- ( [ y / x ] ( ph /\ ps ) <-> ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
-    ( wn wi wsb wa sbn sbim imbi2i bitri xchbinx df-an sbbii 3bitr4i ) ABEZFZEZ
-    CDGZACDGZBCDGZEZFZEABHZCDGUAUBHTRCDGZUDRCDIUFUAQCDGZFUDAQCDJUGUCUABCDIKLMUE
-    SCDABNOUAUBNP $.
-
-  $( Conjunction inside and outside of a substitution are equivalent.
-     (Contributed by NM, 14-Dec-2006.) $)
-  sb3an $p |- ( [ y / x ] ( ph /\ ps /\ ch ) <->
-              ( [ y / x ] ph /\ [ y / x ] ps /\ [ y / x ] ch ) ) $=
-    ( w3a wsb wa df-3an sbbii sban anbi1i bitr4i 3bitri ) ABCFZDEGABHZCHZDEGPDE
-    GZCDEGZHZADEGZBDEGZSFZOQDEABCIJPCDEKTUAUBHZSHUCRUDSABDEKLUAUBSIMN $.
-
-  $( Equivalence inside and outside of a substitution are equivalent.
-     (Contributed by NM, 5-Aug-1993.) $)
-  sbbi $p |- ( [ y / x ] ( ph <-> ps )
-     <-> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
-    ( wb wsb wi wa dfbi2 sbbii sbim anbi12i sban 3bitr4i bitri ) ABEZCDFABGZBAG
-    ZHZCDFZACDFZBCDFZEZPSCDABIJQCDFZRCDFZHUAUBGZUBUAGZHTUCUDUFUEUGABCDKBACDKLQR
-    CDMUAUBINO $.
-
-  ${
-    sblbis.1 $e |- ( [ y / x ] ph <-> ps ) $.
-    $( Introduce left biconditional inside of a substitution.  (Contributed by
-       NM, 19-Aug-1993.) $)
-    sblbis $p |- ( [ y / x ] ( ch <-> ph ) <-> ( [ y / x ] ch <-> ps ) ) $=
-      ( wb wsb sbbi bibi2i bitri ) CAGDEHCDEHZADEHZGLBGCADEIMBLFJK $.
-  $}
-
-  ${
-    sbrbis.1 $e |- ( [ y / x ] ph <-> ps ) $.
-    $( Introduce right biconditional inside of a substitution.  (Contributed by
-       NM, 18-Aug-1993.) $)
-    sbrbis $p |- ( [ y / x ] ( ph <-> ch ) <-> ( ps <-> [ y / x ] ch ) ) $=
-      ( wb wsb sbbi bibi1i bitri ) ACGDEHADEHZCDEHZGBMGACDEILBMFJK $.
-  $}
-
-  ${
-    sbrbif.1 $e |- ( ch -> A. x ch ) $.
-    sbrbif.2 $e |- ( [ y / x ] ph <-> ps ) $.
-    $( Introduce right biconditional inside of a substitution.  (Contributed by
-       NM, 18-Aug-1993.) $)
-    sbrbif $p |- ( [ y / x ] ( ph <-> ch ) <-> ( ps <-> ch ) ) $=
-      ( wb wsb sbrbis sbf bibi2i bitri ) ACHDEIBCDEIZHBCHABCDEGJNCBCDEFKLM $.
-  $}
-
   $( A specialization theorem, mostly the same as Theorem 19.8 of [Margaris]
      p. 89.  (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
      29-Dec-2017.) $)
@@ -12359,11 +12204,6 @@ $)
       UMOAUNFHGRAUOFDIUABFEDUBUFUGAUKCSUIABCFEHJKUCZTAULUJSUIAUKCDGUPUDTUEUH $.
   $}
 
-  $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
-  sbco $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
-    ( wsb wb weq equsb2 sbequ12 bicomd sbimi ax-mp sbbi mpbi ) ACBDZAEZBCDZNBCD
-    ABCDECBFZBCDPBCGQOBCQANACBHIJKNABCLM $.
-
   ${
     sbid2.1 $e |- ( ph -> A. x ph ) $.
     $( An identity law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
@@ -12391,24 +12231,6 @@ $)
       HUEUHADBEJUGBCDKLZABCMNOUFSZUIUHULAUHBCBCBPUGDCBABDEQRUEAUHITULUKUAUBUCUD
       $.
   $}
-
-  ${
-    sbco2d.1 $e |- ( ph -> A. x ph ) $.
-    sbco2d.2 $e |- ( ph -> A. z ph ) $.
-    sbco2d.3 $e |- ( ph -> ( ps -> A. z ps ) ) $.
-    $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
-    sbco2d $p |- ( ph -> ( [ y / z ] [ z / x ] ps <-> [ y / x ] ps ) ) $=
-      ( wsb wi hbim1 sbco2 sbrim sbbii bitri 3bitr3i pm5.74ri ) ABCEIZEDIZBCDIZ
-      ABJZCEIZEDIZUACDIASJZATJUACDEABEGHKLUCARJZEDIUDUBUEEDABCEFMNAREDGMOABCDFM
-      PQ $.
-  $}
-
-  $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
-  sbco3 $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
-    ( weq wal wsb wb drsb1 sbequ12a alimi a4sbbi syl bitr3d wn sbco sbbii hbnae
-    hbsb2 sbco2d syl5rbbr pm2.61i ) BCEZBFZABCGZCDGZACBGZBDGZHUDUEBDGZUFUHUEBCD
-    IUDUEUGHZBFUIUHHUCUJBABCJKUEUGBDLMNUHUECBGZBDGUDOZUFUKUGBDACBPQULUECDBBCCRB
-    CBRABCSTUAUB $.
 
   $( A commutativity law for substitution.  (Contributed by NM,
      27-May-1997.) $)
@@ -12457,19 +12279,6 @@ $)
     sb8e $p |- ( E. x ph <-> E. y [ y / x ] ph ) $=
       ( wsb hbsb3 sbequ12 cbvex ) AABCEBCDABCDFABCGH $.
   $}
-
-  $( Commutation of quantification and substitution variables.  (Contributed by
-     NM, 5-Aug-1993.) $)
-  sb9i $p |- ( A. x [ x / y ] ph -> A. y [ y / x ] ph ) $=
-    ( weq wal wi drsb1 drsb2 bitr3d dral1 biimprd wn hbsb2 al2imi hbnaes stdpc4
-    wsb sbco sylib alimi a7s syl6 pm2.61i ) CBDCEZACBQZBEZABCQZCEZFUDUHUFUGUECB
-    UDACCQUGUEACBCGACBCHIJKUDLZUFUECEZBEZUHUFUKFCBBUIUEUJBACBMNOUEUHCBUFUGCUFUE
-    BCQUGUEBCPABCRSTUAUBUC $.
-
-  $( Commutation of quantification and substitution variables.  (Contributed by
-     NM, 5-Aug-1993.) $)
-  sb9 $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
-    ( wsb wal sb9i impbii ) ACBDBEABCDCEABCFACBFG $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -12732,24 +12541,32 @@ $)
       ( wn cv wsbc wceq wa wex wal sb6 alinexa bitri sb5 notbii bitr4i
       wi ) ADZBCEZFZBESGZAHBIZDZABSFZDTUARQBJUCRBCKUAABLMUDUBABCNOP $.
 
-    $( Intuitionistic proof of ~ sban where ` x ` and ` y ` are distinct.
-       (Contributed by Jim Kingdon, 24-Dec-2017.) $)
+    $( Version of ~ sban where ` x ` and ` y ` are distinct.  (Contributed by
+       Jim Kingdon, 24-Dec-2017.) $)
     sbanv $p |- ( [ y / x ] ( ph /\ ps ) <->
                   ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
       ( wa cv wsbc wceq wal sb6 anbi12i 19.26 bitr4i pm4.76 albii bitri
       wi ) ABEZCDFZGCFSHZRQZCIZACSGZBCSGZEZRCDJUETAQZTBQZEZCIZUBUEUFCIZ
       UGCIZEUIUCUJUDUKACDJBCDJKUFUGCLMUHUACTABNOPM $.
 
-    $( Intuitionistic proof of ~ sbi1 where ` x ` and ` y ` are distinct.
-       (Contributed by Jim Kingdon, 25-Dec-2017.) $)
+    $( Version of ~ sbor where ` x ` and ` y ` are distinct.  (Contributed by
+       Jim Kingdon, 3-Feb-2018.) $)
+    sborv $p |- ( [ y / x ] ( ph \/ ps ) <->
+                  ( [ y / x ] ph \/ [ y / x ] ps ) ) $=
+      ( wo wsb weq wa wex sb5 andi exbii 19.43 3bitri orbi12i bitr4i ) ABEZCDFZ
+      CDGZAHZCIZSBHZCIZEZACDFZBCDFZERSQHZCITUBEZCIUDQCDJUGUHCSABKLTUBCMNUEUAUFU
+      CACDJBCDJOP $.
+
+    $( Forward direction of ~ sbimv .  (Contributed by Jim Kingdon,
+       25-Dec-2017.) $)
     sbi1v $p |- ( [ y / x ] ( ph -> ps )
                       -> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
       ( cv wsbc wceq wi wal sb6 ax-2 al2imi sb2 syl6 sylbi syl5bi ) A
       CDEZFCEQGZAHZCIZABHZCQFZBCQFZACDJUBRUAHZCIZTUCHUACDJUETRBHZCIUC
       UDSUFCRABKLBCDMNOP $.
 
-    $( Intuitionistic proof of ~ sbi2 where ` x ` and ` y ` are distinct.
-       (Contributed by Jim Kingdon, 18-Jan-2018.) $)
+    $( Reverse direction of ~ sbimv .  (Contributed by Jim Kingdon,
+       18-Jan-2018.) $)
     sbi2v $p |- ( ( [ y / x ] ph -> [ y / x ] ps )
                       -> [ y / x ] ( ph -> ps ) ) $=
       ( weq wa wex wi wal wsb 19.38 pm3.3 pm2.04 syli alimi syl sb5 sb6 imbi12i
@@ -12761,20 +12578,6 @@ $)
     sbimv $p |- ( [ y / x ] ( ph -> ps )
                   <-> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
       ( wi wsb sbi1v sbi2v impbii ) ABECDFACDFBCDFEABCDGABCDHI $.
-
-    $( Intuitionistic proof of ~ sbbi where ` x ` and ` y ` are distinct.
-       (Contributed by Jim Kingdon, 19-Jan-2018.) $)
-    sbbiv $p |- ( [ y / x ] ( ph <-> ps )
-                 <-> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
-      ( wi wa wsb wb sbanv sbimv anbi12i bitri dfbi2 sbbii 3bitr4i ) ABEZBAEZFZ
-      CDGZACDGZBCDGZEZUATEZFZABHZCDGTUAHSPCDGZQCDGZFUDPQCDIUFUBUGUCABCDJBACDJKL
-      UERCDABMNTUAMO $.
-
-    $( Version of ~ sbco where ` x ` and ` y ` are distinct.  (Contributed by
-       Jim Kingdon, 26-Dec-2017.) $)
-    sbcov $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
-      ( wsb wb weq equsb2 sbequ12 bicomd sbimi ax-mp sbbiv mpbi ) ACBDZAEZBCDZN
-      BCDABCDECBFZBCDPBCGQOBCQANACBHIJKNABCLM $.
   $}
 
   ${
@@ -13124,29 +12927,6 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d w y z $.  $d w x $.
-    $( Substitution applied to an atomic membership wff.  (Contributed by NM,
-       7-Nov-2006.)  (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
-    elsb3 $p |- ( [ x / y ] y e. z <-> x e. z ) $=
-      ( vw wel wsb ax-17 elequ1 sbie sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
-      equsb1 mpbi sbf 3bitri ) BCEZBAFZDCEZDAFZACEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
-      BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
-      DAUFDGTUA $.
-  $}
-
-  ${
-    $d w y z $.  $d w x $.
-    $( Substitution applied to an atomic membership wff.  (Contributed by
-       Rodolfo Medina, 3-Apr-2010.)  (Proof shortened by Andrew Salmon,
-       14-Jun-2011.) $)
-    elsb4 $p |- ( [ x / y ] z e. y <-> z e. x ) $=
-      ( vw wel wsb ax-17 elequ2 sbie sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
-      equsb1 mpbi sbf 3bitri ) CBEZBAFZCDEZDAFZCAEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
-      BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
-      DAUFDGTUA $.
-  $}
-
-  ${
     $d x y $.
     $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are
        distinct.  (Contributed by NM, 5-Aug-1993.)  (Proof by Jim Kingdon,
@@ -13154,23 +12934,6 @@ $( The theorems in this section make use of the $d statement. $)
     hbs1 $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
       ( cv wsbc wceq wi wal sb6 ax-ial sylbi albii sylibr ) ABCDZEZBDNF
       AGZBHZBHZOBHOQRABCIZPBJKOQBSLM $.
-  $}
-
-  ${
-    $d x z $.  $d y z $.
-    sbco2iv.1 $e |- ( ph -> A. z ph ) $.
-    $( One direction of ~ sbco2v but without a distinct variable constraint on
-       ` x ` and ` y ` .  (Contributed by Jim Kingdon, 7-Jan-2018.) $)
-    sbco2iv $p |- ( [ y / z ] [ z / x ] ph -> [ y / x ] ph ) $=
-      ( wsb weq wi wa wex equvini hbs1 df-sb simplbi com23 sb5 anim1i eximi syl
-      syl6 imp3a eximd syl5 19.9 syl6ib sbbii bitri sylbi ax-17 hban hbex 19.41
-      ax-ie1 ax11ev equcoms mpan10 sylbir exlimi pm3.22 sylanbrc ) ABDFZDCFZBCG
-      ZAHVCAIZBJZABCFVBVCADJZAVCBDGZDCGZIZDJVBVFBCDKVBVIADVADCLVBVGVHAVBVHVGAVB
-      VHVAVGAHZVBVHVAHVHVAIDJVADCMNVAVJVGAIZBJZABDMNTOUAUBUCADEUDUEVBAVCIZBJZVE
-      VBDBGZVCIZBJZVLIZDJZVNVBVHVLIZDJZVSVBVLDCFWAVAVLDCABDPUFVLDCPUGVTVRDVHVQV
-      LDCBKQRUHVRVNDVMDBAVCDEVCDUIUJUKVRVPVLIZBJZVNVPVLBVKBUMULWCVLAHZVCIZVLIZB
-      JVNWBWFBVPWEVLVOWDVCWDBDABDUNUOQQRWFVMBVLAVCUPRSUQURSVMVDBAVCUSRSABCMUT
-      $.
   $}
 
   ${
@@ -13206,48 +12969,6 @@ $( The theorems in this section make use of the $d statement. $)
 
   ${
     $d x z $.  $d y z $.
-
-    $( Version of ~ sbequ with distinct variable constraints between ` z ` and
-       the other two variables (but not between ` x ` and ` y ` or between
-       ` ph ` and any of the variables).  (Contributed by Jim Kingdon,
-       25-Dec-2017.) $)
-    sbequv $p |- ( x = y -> ( [ x / z ] ph <-> [ y / z ] ph ) ) $=
-      ( weq wa wex wsb equequ2 anbi1d exbidv sb5 3bitr4g ) BCEZDBEZAFZDGDCEZAFZ
-      DGADBHADCHNPRDNOQABCDIJKADBLADCLM $.
-
-    $( Version of ~ sbequi with distinct variable constraints between ` z ` and
-       the other two variables (but not between ` x ` and ` y ` or between
-       ` ph ` and any of the variables).  (Contributed by Jim Kingdon,
-       25-Dec-2017.) $)
-    sbequiv $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
-      ( weq wsb sbequv biimpd ) BCEADBFADCFABCDGH $.
-  $}
-
-  ${
-    sbequif.1 $e |- ( ph -> A. x ph ) $.
-    sbequif.2 $e |- ( ph -> A. y ph ) $.
-    $( Version of ~ sbequi in which neither ` x ` nor ` y ` is free in
-       ` ph ` .  Like ~ sbequiv , this is a weaker version of ~ sbequi which we
-       have managed to prove in intuitionistic logic.  (Contributed by Jim
-       Kingdon, 26-Dec-2017.) $)
-    sbequif $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
-      ( cv wceq wsbc wex wal hbsb3 equvini stdpc7
-      wi wa sbequ1 sylan9 eximi syl 19.35-1 syl5 19.9 biimpi syl6 ) BGZ
-      CGZHZADUFIZADUGIZDJZUJUIUIDKZUHUKADBELUHUIUJOZDJZULUKOUHUFDGZHZUO
-      UGHZPZDJUNBCDMURUMDUPUIAUQUJABDNADCQRSTUIUJDUATUBUKUJUJDADCFLUCUD
-      UE $.
-
-    $( Version of ~ sbequ in which neither ` x ` nor ` y ` is free in ` ph ` .
-       Like ~ sbequv , this is a weaker version of ~ sbequ which we have
-       managed to prove in intuitionistic logic.  (Contributed by Jim Kingdon,
-       26-Dec-2017.) $)
-    sbequf $p |- ( x = y -> ( [ x / z ] ph <-> [ y / z ] ph ) ) $=
-      ( weq wsb sbequif wi equcoms impbid ) BCGADBHZADCHZABCDEFINMJCBACBDFEIKL
-      $.
-  $}
-
-  ${
-    $d x z $.  $d y z $.
     hbsbv.1 $e |- ( ph -> A. z ph ) $.
     $( This is a version of ~ hbsb with an extra distinct variable constraint,
        on ` z ` and ` x ` .  It exists because we don't yet have an
@@ -13261,40 +12982,167 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d x y z $.
+    $d x z $.  $d y z $.
     sbco2v.1 $e |- ( ph -> A. z ph ) $.
-    $( This is a version of ~ sbco2 where ` z ` is distinct from ` x ` and
-       ` y ` (which is no big deal), but also where ` x ` and ` y ` are
-       distinct from each other (which is a bigger limit on what this can be
-       used for).  (Contributed by Jim Kingdon, 25-Dec-2017.) $)
+    $( This is a version of ~ sbco2 where ` z ` is distinct from ` x ` and from
+       ` y ` .  (Contributed by Jim Kingdon, 25-Dec-2017.)  (One distinct
+       variable constraint removed by Jim Kingdon, 3-Feb-2018.) $)
     sbco2v $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( cv wsbc hbsb3 hbsbv wceq sbequ12 wa equvini hbs1
-      wex wb hbbi anim12i bitr syl imp bitr3d exlimi bitr4d sbie bicomi
-      equtr ) ABCFZGZABDFZGZDUHGZAULBCUKDCBABDEHIBFZUHJZAUIULABCKZUNUMU
-      JJZUJUHJZLZDOULUIPZBCDMURUSDULUIDUKDCNABCDEIQURAULUIURAUKPZUKULPZ
-      LAULPUPUTUQVAABDKUKDCKRAUKULSTURUNAUIPUPUQUNBDCUGUAUOTUBUCTUDUEUF
-      $.
-
-    $( Another proof of ~ sbco2v which perhaps can be more easily transitioned
-       to a version with fewer distinct variable constraints (when/if we have
-       an intuitionistic proof of a variant of ~ sbequv with fewer constraints,
-       that is).  (Contributed by Jim Kingdon, 25-Dec-2017.) $)
-    sbco2vALT $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( wsb hbsbv sbequv sbie ) ABDFABCFDCABCDEGADCBHI $.
+      ( wsb hbsbv sbequ sbie ) ABDFABCFDCABCDEGADCBHI $.
   $}
 
   ${
-    $d x z $.  $d y z $.
-    sbco2vf.1 $e |- ( ph -> A. z ph ) $.
-    sbco2vf.2 $e |- ( ph -> A. y ph ) $.
-    $( Version of ~ sbco2 with additional constraints.  It requires that ` y `
-       (as well as ` z ` ) is not free in ` ph ` , and has a few distinct
-       variable constraints: ` z ` and the other two variables, but, unlike
-       ~ sbco2v , not ` x ` and ` y ` .  (Contributed by Jim Kingdon,
-       26-Dec-2017.) $)
-    sbco2vf $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( cv wsbc hbsbv sbequf sbie ) ABDGHABCGHDCABCDEIADCBEFJK $.
+    $d z ph $.  $d z ps $.  $d z x $.  $d z y $.
+
+    $( Negation inside and outside of substitution are equivalent.
+       (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
+       3-Feb-2018.) $)
+    sbn $p |- ( [ y / x ] -. ph <-> -. [ y / x ] ph ) $=
+      ( vz wn wsb sbnv sbbii bitri ax-17 hbn sbco2v notbii 3bitr3i ) AEZBDFZDCF
+      ZABDFZDCFZEZOBCFABCFZEQREZDCFTPUBDCABDGHRDCGIOBCDADADJZKLSUAABCDUCLMN $.
+
+    $( Implication inside and outside of substitution are equivalent.
+       (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
+       3-Feb-2018.) $)
+    sbim $p |- ( [ y / x ] ( ph -> ps ) <->
+        ( [ y / x ] ph -> [ y / x ] ps ) ) $=
+      ( vz wi wsb sbimv sbbii bitri ax-17 sbco2v imbi12i 3bitr3i ) ABFZCEGZEDGZ
+      ACEGZEDGZBCEGZEDGZFZOCDGACDGZBCDGZFQRTFZEDGUBPUEEDABCEHIRTEDHJOCDEOEKLSUC
+      UAUDACDEAEKLBCDEBEKLMN $.
+
+    $( Logical OR inside and outside of substitution are equivalent.
+       (Contributed by NM, 29-Sep-2002.)  (Proof rewritten by Jim Kingdon,
+       3-Feb-2018.) $)
+    sbor $p |- ( [ y / x ] ( ph \/ ps ) <->
+        ( [ y / x ] ph \/ [ y / x ] ps ) ) $=
+      ( vz wo cv wsbc sborv sbbii bitri ax-17 sbco2v orbi12i 3bitr3i ) AB
+      FZCEGZHZEDGZHZACQHZESHZBCQHZESHZFZPCSHACSHZBCSHZFTUAUCFZESHUERUHE
+      DABCEIJUAUCEDIKPCDEPELMUBUFUDUGACDEAELMBCDEBELMNO $.
+
+    $( Conjunction inside and outside of a substitution are equivalent.
+       (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
+       3-Feb-2018.) $)
+    sban $p |- ( [ y / x ] ( ph /\ ps ) <->
+        ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
+      ( vz wa wsb sbanv sbbii bitri ax-17 sbco2v anbi12i 3bitr3i ) ABFZCEGZEDGZ
+      ACEGZEDGZBCEGZEDGZFZOCDGACDGZBCDGZFQRTFZEDGUBPUEEDABCEHIRTEDHJOCDEOEKLSUC
+      UAUDACDEAEKLBCDEBEKLMN $.
   $}
+
+  ${
+    sbrim.1 $e |- ( ph -> A. x ph ) $.
+    $( Substitution with a variable not free in antecedent affects only the
+       consequent.  (Contributed by NM, 5-Aug-1993.) $)
+    sbrim $p |- ( [ y / x ] ( ph -> ps ) <-> ( ph -> [ y / x ] ps ) ) $=
+      ( wi wsb sbim sbf imbi1i bitri ) ABFCDGACDGZBCDGZFAMFABCDHLAMACDEIJK $.
+  $}
+
+  ${
+    sblim.1 $e |- ( ps -> A. x ps ) $.
+    $( Substitution with a variable not free in consequent affects only the
+       antecedent.  (Contributed by NM, 14-Nov-2013.) $)
+    sblim $p |- ( [ y / x ] ( ph -> ps ) <-> ( [ y / x ] ph -> ps ) ) $=
+      ( wi wsb sbim sbf imbi2i bitri ) ABFCDGACDGZBCDGZFLBFABCDHMBLBCDEIJK $.
+  $}
+
+  $( Conjunction inside and outside of a substitution are equivalent.
+     (Contributed by NM, 14-Dec-2006.) $)
+  sb3an $p |- ( [ y / x ] ( ph /\ ps /\ ch ) <->
+              ( [ y / x ] ph /\ [ y / x ] ps /\ [ y / x ] ch ) ) $=
+    ( w3a wsb wa df-3an sbbii sban anbi1i bitr4i 3bitri ) ABCFZDEGABHZCHZDEGPDE
+    GZCDEGZHZADEGZBDEGZSFZOQDEABCIJPCDEKTUAUBHZSHUCRUDSABDEKLUAUBSIMN $.
+
+  $( Equivalence inside and outside of a substitution are equivalent.
+     (Contributed by NM, 5-Aug-1993.) $)
+  sbbi $p |- ( [ y / x ] ( ph <-> ps )
+     <-> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
+    ( wb wsb wi wa dfbi2 sbbii sbim anbi12i sban 3bitr4i bitri ) ABEZCDFABGZBAG
+    ZHZCDFZACDFZBCDFZEZPSCDABIJQCDFZRCDFZHUAUBGZUBUAGZHTUCUDUFUEUGABCDKBACDKLQR
+    CDMUAUBINO $.
+
+  ${
+    sblbis.1 $e |- ( [ y / x ] ph <-> ps ) $.
+    $( Introduce left biconditional inside of a substitution.  (Contributed by
+       NM, 19-Aug-1993.) $)
+    sblbis $p |- ( [ y / x ] ( ch <-> ph ) <-> ( [ y / x ] ch <-> ps ) ) $=
+      ( wb wsb sbbi bibi2i bitri ) CAGDEHCDEHZADEHZGLBGCADEIMBLFJK $.
+  $}
+
+  ${
+    sbrbis.1 $e |- ( [ y / x ] ph <-> ps ) $.
+    $( Introduce right biconditional inside of a substitution.  (Contributed by
+       NM, 18-Aug-1993.) $)
+    sbrbis $p |- ( [ y / x ] ( ph <-> ch ) <-> ( ps <-> [ y / x ] ch ) ) $=
+      ( wb wsb sbbi bibi1i bitri ) ACGDEHADEHZCDEHZGBMGACDEILBMFJK $.
+  $}
+
+  ${
+    sbrbif.1 $e |- ( ch -> A. x ch ) $.
+    sbrbif.2 $e |- ( [ y / x ] ph <-> ps ) $.
+    $( Introduce right biconditional inside of a substitution.  (Contributed by
+       NM, 18-Aug-1993.) $)
+    sbrbif $p |- ( [ y / x ] ( ph <-> ch ) <-> ( ps <-> ch ) ) $=
+      ( wb wsb sbrbis sbf bibi2i bitri ) ACHDEIBCDEIZHBCHABCDEGJNCBCDEFKLM $.
+  $}
+
+  ${
+    sbco2d.1 $e |- ( ph -> A. x ph ) $.
+    sbco2d.2 $e |- ( ph -> A. z ph ) $.
+    sbco2d.3 $e |- ( ph -> ( ps -> A. z ps ) ) $.
+    $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
+    sbco2d $p |- ( ph -> ( [ y / z ] [ z / x ] ps <-> [ y / x ] ps ) ) $=
+      ( wsb wi hbim1 sbco2 sbrim sbbii bitri 3bitr3i pm5.74ri ) ABCEIZEDIZBCDIZ
+      ABJZCEIZEDIZUACDIASJZATJUACDEABEGHKLUCARJZEDIUDUBUEEDABCEFMNAREDGMOABCDFM
+      PQ $.
+  $}
+
+  $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
+  sbco $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
+    ( wsb wb weq equsb2 sbequ12 bicomd sbimi ax-mp sbbi mpbi ) ACBDZAEZBCDZNBCD
+    ABCDECBFZBCDPBCGQOBCQANACBHIJKNABCLM $.
+
+  $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
+  sbco3 $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
+    ( weq wal wsb wb drsb1 sbequ12a alimi a4sbbi syl bitr3d wn sbco sbbii hbnae
+    hbsb2 sbco2d syl5rbbr pm2.61i ) BCEZBFZABCGZCDGZACBGZBDGZHUDUEBDGZUFUHUEBCD
+    IUDUEUGHZBFUIUHHUCUJBABCJKUEUGBDLMNUHUECBGZBDGUDOZUFUKUGBDACBPQULUECDBBCCRB
+    CBRABCSTUAUB $.
+
+  ${
+    $d w y z $.  $d w x $.
+    $( Substitution applied to an atomic membership wff.  (Contributed by NM,
+       7-Nov-2006.)  (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
+    elsb3 $p |- ( [ x / y ] y e. z <-> x e. z ) $=
+      ( vw wel wsb ax-17 elequ1 sbie sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
+      equsb1 mpbi sbf 3bitri ) BCEZBAFZDCEZDAFZACEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
+      BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
+      DAUFDGTUA $.
+  $}
+
+  ${
+    $d w y z $.  $d w x $.
+    $( Substitution applied to an atomic membership wff.  (Contributed by
+       Rodolfo Medina, 3-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       14-Jun-2011.) $)
+    elsb4 $p |- ( [ x / y ] z e. y <-> z e. x ) $=
+      ( vw wel wsb ax-17 elequ2 sbie sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
+      equsb1 mpbi sbf 3bitri ) CBEZBAFZCDEZDAFZCAEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
+      BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
+      DAUFDGTUA $.
+  $}
+
+  $( Commutation of quantification and substitution variables.  (Contributed by
+     NM, 5-Aug-1993.) $)
+  sb9i $p |- ( A. x [ x / y ] ph -> A. y [ y / x ] ph ) $=
+    ( weq wal wi drsb1 drsb2 bitr3d dral1 biimprd wn hbsb2 al2imi hbnaes stdpc4
+    wsb sbco sylib alimi a7s syl6 pm2.61i ) CBDCEZACBQZBEZABCQZCEZFUDUHUFUGUECB
+    UDACCQUGUEACBCGACBCHIJKUDLZUFUECEZBEZUHUFUKFCBBUIUEUJBACBMNOUEUHCBUFUGCUFUE
+    BCQUGUEBCPABCRSTUAUBUC $.
+
+  $( Commutation of quantification and substitution variables.  (Contributed by
+     NM, 5-Aug-1993.) $)
+  sb9 $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
+    ( wsb wal sb9i impbii ) ACBDBEABCDCEABCFACBFG $.
 
   ${
     $d y z $.
