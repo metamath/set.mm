@@ -12234,6 +12234,11 @@ $)
     $( A generalization of axiom ~ ax-16 .  (Contributed by NM, 5-Aug-1993.) $)
     a16gb $p |- ( A. x x = y -> ( ph <-> A. z ph ) ) $=
       ( weq wal a16g ax-4 impbid1 ) BCEBFAADFABCDGADHI $.
+
+    $( If there is only one element in the universe, then everything satisfies
+       ` F/ ` .  (Contributed by Mario Carneiro, 7-Oct-2016.) $)
+    a16nf $p |- ( A. x x = y -> F/ z ph ) $=
+      ( weq wal nfae a16g nfd ) BCEBFADBCDGABCDHI $.
   $}
 
   ${
@@ -12326,15 +12331,6 @@ $)
        Carneiro, 11-Aug-2016.) $)
     nfdv $p |- ( ph -> F/ x ps ) $=
       ( wal wi wnf alrimiv df-nf sylibr ) ABBCEFZCEBCGAKCDHBCIJ $.
-  $}
-
-  ${
-    $d x y $.
-    $( Theorem of Distinct Variables ( ` F/ ` variant).  Like ~ ax16 , but
-       expressed in terms of ` F/ ` .  (Contributed by Jim Kingdon,
-       27-Jan-2018.) $)
-    ax16nf $p |- ( A. x x = y -> F/ x ph ) $=
-      ( cv wceq wal nfa1 ax16 nfd ) BDCDEZBFABJBGABCHI $.
   $}
 
   ${
@@ -14861,8 +14857,8 @@ $)
   ${
     $d w y $.  $d w z $.  $d w x $.  $( ` w ` is dummy. $)
     $( Axiom ~ ax-15 is redundant if we assume ~ ax-17 (in classical logic;
-       this proof is not intuitionistic).  Remark 9.6 in
-       [Megill] p. 448 (p. 16 of the preprint), regarding axiom scheme C14'.
+       this proof is not intuitionistic).  Remark 9.6 in [Megill] p. 448 (p. 16
+       of the preprint), regarding axiom scheme C14'.
 
        Note that ` w ` is a dummy variable introduced in the proof.  On the web
        page, it is implicitly assumed to be distinct from all other variables.
@@ -14886,15 +14882,15 @@ $)
      similar results for how it relates to other axioms in intuitionistic
      logic.
 
-     It is an equality and substitution
-     axioms for a non-logical predicate in our predicate calculus with
-     equality.  Axiom scheme C14' in [Megill] p. 448 (p. 16 of the preprint).
-     It is redundant if we include ~ ax-17 ; see theorem ~ ax15 .  Alternately,
-     ~ ax-17 becomes unnecessary in principle with this axiom, but we lose the
-     more powerful metalogic afforded by ~ ax-17 .  We retain ~ ax-15 here to
-     provide completeness for systems with the simpler metalogic that results
-     from omitting ~ ax-17 , which might be easier to study for some
-     theoretical purposes.  (Contributed by NM, 5-Aug-1993.) $)
+     It is an equality and substitution axiom for a non-logical predicate in
+     our predicate calculus with equality.  Axiom scheme C14' in [Megill]
+     p. 448 (p. 16 of the preprint).  It is redundant if we include ~ ax-17 ;
+     see theorem ~ ax15 .  Alternately, ~ ax-17 becomes unnecessary in
+     principle with this axiom, but we lose the more powerful metalogic
+     afforded by ~ ax-17 .  We retain ~ ax-15 here to provide completeness for
+     systems with the simpler metalogic that results from omitting ~ ax-17 ,
+     which might be easier to study for some theoretical purposes.
+     (Contributed by NM, 5-Aug-1993.) $)
   ax-15 $a |- ( -. A. z z = x -> ( -. A. z z = y ->
               ( x e. y -> A. z x e. y ) ) ) $.
 
