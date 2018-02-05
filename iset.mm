@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Jan-2018
+$( iset.mm - Version of 3-Feb-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6237,8 +6237,9 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
     ( wn wb wi wa wo bicom dfbi2 orcom df-or bitr2i imnan anbi12i 3bitrri ) ABC
     ZDPADPAEZAPEZFABGZABFCZFAPHPAIQSRTSBAGQABJBAKLABMNO $.
 
-  $( Disjunction distributes over implication.  (Contributed by Wolf Lammen,
-     5-Jan-2013.) $)
+  $( Disjunction distributes over implication.  The forward direction,
+     ~ pm2.76 , is valid intuitionistically.  The reverse direction is
+     ~ pm2.85 .  (Contributed by Wolf Lammen, 5-Jan-2013.) $)
   orimdi $p |- ( ( ph \/ ( ps -> ch ) ) <->
                 ( ( ph \/ ps ) -> ( ph \/ ch ) ) ) $=
     ( wn wi wo imdi df-or imbi12i 3bitr4i ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCGAL
@@ -9890,78 +9891,6 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Show that the original axiom ~ ax-5o can be derived from ~ ax-5 and
-     others.  See ~ ax5 for the rederivation of ~ ax-5 from ~ ax-5o .
-
-     Part of the proof is based on the proof of Lemma 22 of [Monk2] p. 114.
-
-     Normally, ~ ax5o should be used rather than ~ ax-5o , except by theorems
-     specifically studying the latter's properties.  (Contributed by NM,
-     21-May-2008.) $)
-  ax5o $p |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) $=
-    ( wal wi wn ax-4 con2i ax-6 con1i ax-gen ax-5 ax-mp 3syl syl5 ) ACDZPCDZPBE
-    CDBCDPPFZCDZFZTCDZQSPRCGHRCITPEZCDUAQEUBCPSACIJKTPCLMNPBCLO $.
-
-  $( Axiom of Quantified Implication.  This axiom moves a quantifier from
-     outside to inside an implication, quantifying ` ps ` .  Notice that ` x `
-     must not be a free variable in the antecedent of the quantified
-     implication, and we express this by binding ` ph ` to "protect" the axiom
-     from a ` ph ` containing a free ` x ` .  One of the 4 axioms of "pure"
-     predicate calculus.  Axiom scheme C4' in [Megill] p. 448 (p. 16 of the
-     preprint).  It is a special case of Lemma 5 of [Monk2] p. 108 and Axiom 5
-     of [Mendelson] p. 69.
-
-     In classical logic, this axiom is redundant, as shown by theorem ~ ax5o .
-     The current proof of ~ ax5o is not valid intuitionistically.
-
-     Normally, ~ ax5o should be used rather than ~ ax-5o , except by theorems
-     specifically studying the latter's properties.  (Contributed by NM,
-     5-Aug-1993.) $)
-  ax-5o $a |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) $.
-
-  $( Rederivation of axiom ~ ax-5 from the orginal version, ~ ax-5o .  See
-     ~ ax5o for the derivation of ~ ax-5o from ~ ax-5 .
-
-     This theorem should not be referenced in any proof.  Instead, use ~ ax-5
-     above so that uses of ~ ax-5 can be more easily identified.
-
-     Note:  This is the same as theorem ~ alim below.  It is proved separately
-     here so that it won't be dependent on the axioms used for ~ alim .
-     (Contributed by NM, 23-May-2008.)  (Revised by NM, 5-Dec-2010.) $)
-  ax5 $p |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) $=
-    ( wi wal ax-4 syl5 ax-gen ax-5o ax-mp syl ) ABDZCEZACEZBDZCEZNBCEDMODZCEMPD
-    QCNAMBACFLCFGHLOCIJABCIK $.
-
-  $( Show that the original axiom ~ ax-6o can be derived from ~ ax-6 and
-     others.  See ~ ax6 for the rederivation of ~ ax-6 from ~ ax-6o .
-
-     Normally, ~ ax6o should be used rather than ~ ax-6o , except by theorems
-     specifically studying the latter's properties.  (Contributed by NM,
-     21-May-2008.) $)
-  ax6o $p |- ( -. A. x -. A. x ph -> ph ) $=
-    ( wal wn ax-4 ax-6 nsyl4 ) ABCZAHDBCABEABFG $.
-
-  $( Axiom of Quantified Negation.  This axiom is used to manipulate negated
-     quantifiers.  One of the 4 axioms of pure predicate calculus.  Equivalent
-     to axiom scheme C7' in [Megill] p. 448 (p. 16 of the preprint).
-
-     This axiom is redundant, as shown by theorem ~ ax6o .
-
-     Normally, ~ ax6o should be used rather than ~ ax-6o , except by theorems
-     specifically studying the latter's properties.  (Contributed by NM,
-     5-Aug-1993.) $)
-  ax-6o $a |- ( -. A. x -. A. x ph -> ph ) $.
-
-  $( Rederivation of axiom ~ ax-6 from the orginal version, ~ ax-6o .  See
-     ~ ax6o for the derivation of ~ ax-6o from ~ ax-6 .
-
-     This theorem should not be referenced in any proof.  Instead, use ~ ax-6
-     above so that uses of ~ ax-6 can be more easily identified.  (Contributed
-     by NM, 23-May-2008.) $)
-  ax6 $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
-    ( wal wn wi ax-4 id ax-gen ax-5o ax-mp nsyl ax-6o nsyl4 ) ABCZBCZDZBCZNDZBC
-    ZNQREZBCQSETBQONPBFNNEZBCNOEUABNGHANBIJKHPRBIJNBLM $.
-
   $( ` x ` is not free in ` A. x ph ` .  Axiom 7 of 10 for intuitionistic
      logic.  (Contributed by Mario Carneiro, 31-Jan-2015.) $)
   ax-ial $a |- ( A. x ph -> A. x A. x ph ) $.
@@ -10413,6 +10342,39 @@ $)
       ( wi wal wex alrimi 19.23 sylib ) ABCHZDIBDJCHANDEGKBCDFLM $.
   $}
 
+  ${
+    $d x ps $.
+    exlimiv.1 $e |- ( ph -> ps ) $.
+    $( Inference from Theorem 19.23 of [Margaris] p. 90.
+
+       This inference, along with our many variants is used to implement a
+       metatheorem called "Rule C" that is given in many logic textbooks.  See,
+       for example, Rule C in [Mendelson] p. 81, Rule C in [Margaris] p. 40, or
+       Rule C in Hirst and Hirst's _A Primer for Logic and Proof_ p. 59 (PDF
+       p. 65) at ~ http://www.mathsci.appstate.edu/~~jlh/primer/hirst.pdf .
+
+       In informal proofs, the statement "Let C be an element such that..."
+       almost always means an implicit application of Rule C.
+
+       In essence, Rule C states that if we can prove that some element ` x `
+       exists satisfying a wff, i.e. ` E. x ph ( x ) ` where ` ph ( x ) ` has
+       ` x ` free, then we can use ` ph ( ` C ` ) ` as a hypothesis for the
+       proof where C is a new (ficticious) constant not appearing previously in
+       the proof, nor in any axioms used, nor in the theorem to be proved.  The
+       purpose of Rule C is to get rid of the existential quantifier.
+
+       We cannot do this in Metamath directly.  Instead, we use the original
+       ` ph ` (containing ` x ` ) as an antecedent for the main part of the
+       proof.  We eventually arrive at ` ( ph -> ps ) ` where ` ps ` is the
+       theorem to be proved and does not contain ` x ` .  Then we apply
+       ~ exlimiv to arrive at ` ( E. x ph -> ps ) ` .  Finally, we separately
+       prove ` E. x ph ` and detach it with modus ponens ~ ax-mp to arrive at
+       the final theorem ` ps ` .  (Contributed by NM, 5-Aug-1993.)  (Revised
+       by NM, 25-Jul-2012.) $)
+    exlimiv $p |- ( E. x ph -> ps ) $=
+      ( ax-17 exlimi ) ABCBCEDF $.
+  $}
+
   $( Theorem 19.22 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
      (Proof shortened by Wolf Lammen, 4-Jul-2014.) $)
   exim $p |- ( A. x ( ph -> ps ) -> ( E. x ph -> E. x ps ) ) $=
@@ -10530,22 +10492,6 @@ $)
     ( wal wi wex wa 19.29 pm3.35 eximi syl expcom ) ACDZABEZCFZBCFZMOGANGZCFPAN
     CHQBCABIJKL $.
 
-  $( Theorem 19.35 of [Margaris] p. 90.  This theorem is useful for moving an
-     implication (in the form of the right-hand side) into the scope of a
-     single existential quantifier.  (Contributed by NM, 5-Aug-1993.)  (Proof
-     shortened by Wolf Lammen, 27-Jun-2014.) $)
-  19.35 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> E. x ps ) ) $=
-    ( wi wex wal wn wa 19.26 annim albii alnex anbi2i 3bitr3i con4bii ) ABDZCEZ
-    ACFZBCEZDZPGZCFZRSGZHZQGTGABGZHZCFRUECFZHUBUDAUECIUFUACABJKUGUCRBCLMNPCLRSJ
-    NO $.
-
-  $( Obsolete proof of ~ 19.35 as of 27-Jun-2014.  (Contributed by NM,
-     5-Aug-1993.) $)
-  19.35OLD $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> E. x ps ) ) $=
-    ( wal wn wi wex wa 19.26 annim albii df-an 3bitr3i con2bii imbi2i 3bitr4ri
-    df-ex ) ACDZBEZCDZEZFZABFZEZCDZERBCGZFUCCGUEUBASHZCDRTHUEUBEASCIUGUDCABJKRT
-    LMNUFUARBCQOUCCQP $.
-
   ${
     19.35i.1 $e |- E. x ( ph -> ps ) $.
     $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
@@ -10598,11 +10544,6 @@ $)
      (Contributed by NM, 11-Aug-1993.) $)
   exintr $p |- ( A. x ( ph -> ps ) -> ( E. x ph -> E. x ( ph /\ ps ) ) ) $=
     ( wi wal wex wa exintrbi biimpd ) ABDCEACFABGCFABCHI $.
-
-  $( Lemma used in proofs of substitution properties.  (Contributed by NM,
-     5-Aug-1993.) $)
-  equs3 $p |- ( E. x ( x = y /\ ph ) <-> -. A. x ( x = y -> -. ph ) ) $=
-    ( weq wn wi wal wa wex alinexa con2bii ) BCDZAEFBGLAHBILABJK $.
 
   $( Abbreviated version of ~ ax-6o .  (Contributed by NM, 5-Aug-1993.) $)
   a6e $p |- ( E. x A. x ph -> ph ) $=
@@ -10733,11 +10674,6 @@ $)
   19.38 $p |- ( ( E. x ph -> A. x ps ) -> A. x ( ph -> ps ) ) $=
     ( wex wal wi hbe1 hba1 hbim 19.8a ax-4 imim12i alrimi ) ACDZBCEZFABFCNOCACG
     BCHIANOBACJBCKLM $.
-
-  $( Theorem 19.39 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-  19.39 $p |- ( ( E. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $=
-    ( wex wi wal 19.2 imim1i 19.35 sylibr ) ACDZBCDZEACFZLEABECDMKLACCGHABCIJ
-    $.
 
   ${
     19.44.1 $e |- ( ps -> A. x ps ) $.
@@ -11651,45 +11587,6 @@ $)
   $}
 
   ${
-    sbanf.1 $e |- ( ph -> A. y ph ) $.
-    sbanf.2 $e |- ( ps -> A. y ps ) $.
-    $( Version of ~ sban where ` y ` is not free in ` ph ` or ` ps ` .
-       (Contributed by Jim Kingdon, 27-Dec-2017.) $)
-    sbanf $p |- ( [ y / x ] ( ph /\ ps )
-                  <-> ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
-      ( wa cv wsbc wceq wi wal hban sb6f anbi12i bitr4i
-      19.26 pm4.76 albii bitri ) ABGZCDHZICHUBJZUAKZCLZACUBIZBCUBIZGZUA
-      CDABDEFMNUHUCAKZUCBKZGZCLZUEUHUICLZUJCLZGULUFUMUGUNACDENBCDFNOUIU
-      JCQPUKUDCUCABRSTP $.
-
-    $( Version of ~ sbi1 where ` y ` is not free in ` ph ` or ` ps ` .
-       (Contributed by Jim Kingdon, 25-Dec-2017.) $)
-    sbi1f $p |- ( [ y / x ] ( ph -> ps )
-                   -> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
-      ( cv wsbc wceq wal sb6f hbim ax-2 al2imi sb2 syl6
-      wi sylbi syl5bi ) ACDGZHCGTIZAQZCJZABQZCTHZBCTHZACDEKUEUAUDQZCJZU
-      CUFQUDCDABDEFLKUHUCUABQZCJUFUGUBUICUAABMNBCDOPRS $.
-
-    $( Version of ~ sbi1f for substitution of a biconditional rather than an
-       implication (one direction of ~ sbbi where ` y ` is not free in ` ph `
-       or ` ps ` .  (Contributed by Jim Kingdon, 27-Dec-2017.) $)
-    sbbi1f $p |- ( [ y / x ] ( ph <-> ps )
-                    -> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
-      ( wb cv wsbc wi wa dfbi2 sbbii hbim sbanf bitri
-      sbi1f anim12i sylibr sylbi ) ABGZCDHZIZABJZCUBIZBAJZCUBIZKZACUBIZ
-      BCUBIZGZUCUDUFKZCUBIUHUAULCDABLMUDUFCDABDEFNBADFENOPUHUIUJJZUJUIJ
-      ZKUKUEUMUGUNABCDEFQBACDFEQRUIUJLST $.
-  $}
-
-  ${
-    sbcof.1 $e |- ( ph -> A. y ph ) $.
-    $( Version of ~ sbco where ` y ` is not free in ` ph ` .  (Contributed by
-       Jim Kingdon, 28-Dec-2017.) $)
-    sbcof $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
-      ( cv wsbc sbf sbbii ) ACBEFABCACBDGH $.
-  $}
-
-  ${
     sbcof2.1 $e |- ( ph -> A. x ph ) $.
     $( Version of ~ sbco where ` x ` is not free in ` ph ` .  (Contributed by
        Jim Kingdon, 28-Dec-2017.) $)
@@ -11785,17 +11682,6 @@ $)
   $}
 
   ${
-    $d x z $.  $d y z $.
-    $( Theorem to add distinct quantifier to atomic formula.  (This theorem
-       demonstrates the induction basis for ~ ax-17 considered as a
-       metatheorem.  Do not use it for later proofs - use ~ ax-17 instead, to
-       avoid reference to the redundant axiom ~ ax-16 .)  (Contributed by NM,
-       5-Aug-1993.) $)
-    ax17eq $p |- ( x = y -> A. z x = y ) $=
-      ( weq wal wi ax-12 ax-16 pm2.61ii ) CADCECBDCEABDZJCEFABCGJCAHJCBHI $.
-  $}
-
-  ${
     $d w z x $.  $d w y $.
     $( Quantifier introduction when one pair of variables is distinct.
        (Contributed by NM, 2-Jan-2002.) $)
@@ -11803,13 +11689,20 @@ $)
       ( weq wal wn wi wo ax-i12 orcom orbi2i mpbi orass mpbir orel2 mpi ax16 sp
       jaoi syl ) ABDAEZFZACDAEZCBDZUDAEGZAEZHZUEUBUGUAHZUGUHUCUFUAHZHZUCUAUFHZH
       UJCBAIUKUIUCUAUFJKLUCUFUAMNUAUGOPUCUEUFUDACQUEARST $.
-
-    $( Version of ~ dveeq2 using ~ ax-16 instead of ~ ax-17 .  (Contributed by
-       NM, 29-Apr-2008.) $)
-    dveeq2ALT $p |- ( -. A. x x = y -> ( z = y -> A. x z = y ) ) $=
-      ( vw weq ax17eq equequ2 dvelimfALT ) CDECBEABDCDAFCBDFDBCGH $.
   $}
 
+  ${
+    $d z x $.
+    $( Quantifier introduction when one pair of variables is distinct.  Like
+       ~ dveeq2 but connecting ` A. x x = y ` by a disjunction rather than
+       negation and implication makes the theorem stronger in intuitionistic
+       logic.  (Contributed by Jim Kingdon, 1-Feb-2018.) $)
+    dveeq2or $p |- ( A. x x = y \/ F/ x z = y ) $=
+      ( weq wal wi wnf ax-i12 orass mpbir pm1.4 orim1i ax-mp mpbi ax16 a5i jaoi
+      wo id orim2i df-nf biimpri ) ABDAEZCBDZUDAEFZAEZRZUCUDAGZRUCACDZAEZUFRZRZ
+      UGUCUJRZUFRZULUJUCRZUFRZUNUPUJUGRCBAHUJUCUFIJUOUMUFUJUCKLMUCUJUFINUKUFUCU
+      JUFUFUIUEAUDACOPUFSQTMUFUHUCUHUFUDAUAUBTM $.
+  $}
 
   ${
     $d x z $.  $d y z $.
@@ -11922,21 +11815,25 @@ $)
   ax-11o $a |- ( -. A. x x = y ->
              ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $.
 
-  $( Rederivation of axiom ~ ax-11 from the orginal version, ~ ax-11o .  See
-     theorem ~ ax11o for the derivation of ~ ax-11o from ~ ax-11 .
-
-     This theorem should not be referenced in any proof.  Instead, use ~ ax-11
-     above so that uses of ~ ax-11 can be more easily identified.  (Contributed
-     by NM, 22-Jan-2007.) $)
-  ax11 $p |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) $=
-    ( weq wal wi biidd dral1 ax-1 alimi syl6bir a1d wn ax-4 ax-11o syl7 pm2.61i
-    ) BCDZBEZRACEZRAFZBEZFZFSUCRSTABEUBAABCSAGHAUABARIJKLTASMRUBACNABCOPQ $.
-
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-     Theorems without distinct variables that use axiom ax-11o
+     More theorems realted to ax-11 and substitution
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
+
+  ${
+    $d x ph $.
+    albidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for universal quantifier (deduction rule).
+       (Contributed by NM, 5-Aug-1993.) $)
+    albidv $p |- ( ph -> ( A. x ps <-> A. x ch ) ) $=
+      ( ax-17 albid ) ABCDADFEG $.
+
+    $( Formula-building rule for existential quantifier (deduction rule).
+       (Contributed by NM, 5-Aug-1993.) $)
+    exbidv $p |- ( ph -> ( E. x ps <-> E. x ch ) ) $=
+      ( ax-17 exbid ) ABCDADFEG $.
+  $}
 
   $( A bidirectional version of ~ ax-11o .  (Contributed by NM,
      30-Jun-2006.) $)
@@ -11945,12 +11842,54 @@ $)
     ( weq wal wn wa wi ax-11o imp ax-4 com12 adantl impbid ) BCDZBEFZOGAOAHZBEZ
     POARHABCIJORAHPROAQBKLMN $.
 
+  ${
+    $d x y $.  $d x z $.  $d y z $.  $d ph z $.
+    $( This is a version of ~ ax-11o when the variables are distinct.  Axiom
+       (C8) of [Monk2] p. 105.  (Contributed by NM, 5-Aug-1993.)  (Revised by
+       Jim Kingdon, 15-Dec-2017.) $)
+    ax11v $p |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) $=
+      ( vz cv wceq wex wi wal a9e ax-17 ax-11 syl5 imbi1d albidv imbi2d
+      equequ2 imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUCFZAUFAHZBIZH
+      ZHZDCJUDUJDUDUEUBFZAUKAHZBIZHZHUJAADIUKUMADKABDLMUDUKUFUNUIDCBQZU
+      DUMUHAUDULUGBUDUKUFAUONOPRSTUA $.
+  $}
+
+  ${
+    $d x y $.  $d x z $.  $d y z $.  $d ph z $.
+    $( Analogue to ~ ax11v for existential quantification.  (Contributed by Jim
+       Kingdon, 9-Jan-2018.) $)
+    ax11ev $p |- ( x = y -> ( E. x ( x = y /\ ph ) -> ph ) ) $=
+      ( vz cv wceq wex wa wi ax-i11e ax-17 syl6ib equequ2 anbi1d exbidv
+      a9e 19.9 imbi1d imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUDFZUG
+      AHZBGZAIZIZDCPUEUKDUEUFUCFZULAHZBGZAIZIUKULUNADGAABDJADADKQLUEULU
+      GUOUJDCBMZUEUNUIAUEUMUHBUEULUGAUPNORSTUAUB $.
+  $}
+
   $( Lemma used in proofs of substitution properties.  (Contributed by NM,
      5-Aug-1993.) $)
   equs5 $p |- ( -. A. x x = y ->
              ( E. x ( x = y /\ ph ) -> A. x ( x = y -> ph ) ) ) $=
     ( weq wal wn wa wi hbnae hba1 ax11o imp3a exlimd ) BCDZBEFZNAGNAHZBEZBBCBIP
     BJONAQABCKLM $.
+
+  ${
+    $d x z $.  $d y z $.  $d ph z $.
+
+    $( Lemma used in proofs of substitution properties.  Like ~ equs5 but, in
+       intuitionistic logic, replacing negation and implication with
+       disjunction makes this a stronger result.  (Contributed by Jim Kingdon,
+       2-Feb-2018.) $)
+    equs5or $p |- ( A. x x = y \/
+             ( E. x ( x = y /\ ph ) -> A. x ( x = y -> ph ) ) ) $=
+      ( vz weq wex wal wa wi wo a9e wnf dveeq2or nfnf1 nfri ax11v equequ2 ax-mp
+      wb hba1 adantl nfr imp imbi1d a4s albid syl imbi2d imbi12d mpbii ex imp4a
+      alrimi 19.21t mpbid 19.23 syl6ib orim2i pm2.76 olcs exlimiv ) DCEZDFBCEZB
+      GZVCAHZBFVCAIZBGZIZJZDCKVBVIDVDVBVIVDVBVHIZJZVDVBJVIIVDVBBLZJVKBCDMVLVJVD
+      VLVBVEVGIZBGZVHVLVBVMIZBGVBVNIVLVOBVLBVBBNOVLVBVCAVGVLVBVCAVGIZIZVLVBHZBD
+      EZAVSAIZBGZIZIVQABDPVRVSVCWBVPVBVSVCSVLDCBQZUAVRWAVGAVRVBBGZWAVGSVLVBWDVB
+      BUBUCWDVTVFBVBBTVBVTVFSBVBVSVCAWCUDUEUFUGUHUIUJUKULUMVBVMBUNUOVEVGBVFBTUP
+      UQURRVDVBVHUSRUTVAR $.
+  $}
 
   $( One direction of a simplified definition of substitution when variables
      are distinct.  (Contributed by NM, 5-Aug-1993.) $)
@@ -11963,6 +11902,15 @@ $)
   sb4 $p |- ( -. A. x x = y -> ( [ y / x ] ph -> A. x ( x = y -> ph ) ) ) $=
     ( wsb weq wa wex wal wn wi sb1 equs5 syl5 ) ABCDBCEZAFBGNBHINAJBHABCKABCLM
     $.
+
+  $( One direction of a simplified definition of substitution when variables
+     are distinct.  Similar to ~ sb4 but stronger in intuitionistic logic.
+     (Contributed by Jim Kingdon, 2-Feb-2018.) $)
+  sb4or $p |- ( A. x x = y \/
+      A. x ( [ y / x ] ph -> A. x ( x = y -> ph ) ) ) $=
+    ( weq wal wa wex wi wo wsb equs5or nfe1 nfa1 nfim nfri imim1i alrimi orim2i
+    sb1 ax-mp ) BCDZBEZUAAFZBGZUAAHZBEZHZIUBABCJZUFHZBEZIABCKUGUJUBUGUIBUGBUDUF
+    BUCBLUEBMNOUHUDUFABCSPQRT $.
 
   $( Simplified definition of substitution when variables are distinct.
      (Contributed by NM, 27-May-1997.) $)
@@ -11992,15 +11940,41 @@ $)
     ( weq wal wn wsb wi sb4 sb2 a5i syl6 ) BCDZBEFABCGZMAHZBENBEABCIONBABCJKL
     $.
 
-  $( An equality theorem for substitution.  (Contributed by NM, 5-Aug-1993.) $)
+  $( Bound-variable hypothesis builder for substitution.  Similar to ~ hbsb2
+     but in intuitionistic logic a disjunction is stronger than an
+     implication.  (Contributed by Jim Kingdon, 2-Feb-2018.) $)
+  nfsb2or $p |- ( A. x x = y \/ F/ x [ y / x ] ph ) $=
+    ( weq wal wsb wi wnf sb4or sb2 a5i imim2i alimi df-nf sylibr orim2i ax-mp
+    wo ) BCDZBEZABCFZSAGZBEZGZBEZRTUABHZRABCIUEUFTUEUAUABEZGZBEUFUDUHBUCUGUAUBU
+    ABABCJKLMUABNOPQ $.
+
+  ${
+    sbequilem.1 $e |- ( ph \/ ( ps -> ( ch -> th ) ) ) $.
+    sbequilem.2 $e |- ( ta \/ ( ps -> ( th -> et ) ) ) $.
+    $( Propositional logic lemma used in the ~ sbequi proof.  (Contributed by
+       Jim Kingdon, 1-Feb-2018.) $)
+    sbequilem $p |- ( ph \/ ( ta \/ ( ps -> ( ch -> et ) ) ) ) $=
+      ( wo wi wa pm3.2i andi andir orbi12i orim2i ax-mp
+      mpbi orim1i orass pm3.43 pm3.33 ax-ia2 sylbir ax-ia1 mpbir orbi1i
+      syl6 orcom ) AEIZBCFJZJZIZAEULIIEAIZULIZUMUOEAULIZIZEABDFJZJZKZUL
+      IZIZUQAEKBCDJZJZEKIZVAIZVBVEUTVDUSKZIZIZVFAVDIZEKZVJUSKZIZVIVJEUS
+      IZKVMVJVNGHLVJEUSMRVKVEVLVHAVDENZAVDUSNORVHVAVEVGULUTVGBVCURKUKBV
+      CURUACDFUBUHPPQVEEVAVEVKEVOVJEUCUDSQVAUPEUTAULAUSUESPQEAULTUFUNUJ
+      ULEAUIUGRAEULTR $.
+  $}
+
+  $( An equality theorem for substitution.  (Contributed by NM, 5-Aug-1993.)
+     (Proof modified by Jim Kingdon, 1-Feb-2018.) $)
   sbequi $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
-    ( weq wal wsb wi wn wa wex hbsb2 stdpc7 sbequ1 sylan9 ex a4s adantr biimpd
-    drsb1 equvini eximi 19.35 sylib hbnae 19.9hd com23 sbequ2 alequcoms sylan9r
-    syl syl9 syld pm2.61ii ) DBEZDFZDCEZDFZBCEZADBGZADCGZHZHUPIZUSURIZVBVCUSVDV
-    BHVCUSJUTVADKZVDVAVCUTUTDFZUSVEADBLUSVBDKZVFVEHUSBDEZUQJZDKVGBCDUAVIVBDVHUT
-    AUQVAABDMADCNZOUBUKUTVADUCUDOVAVDDDCDUEADCLUFULPUGUPUSVBUPUSJUTAVAUPUTAHZUS
-    UOVKDADBUHQRUSAABCGZUPVAABCNVLVAHBDVHBFVLVAABDCTSUIUJUMPURUSVBURUSJUTAVAURU
-    TACBGZUSAURUTVMADCBTSABCMOURAVAHZUSUQVNDVJQRUMPUN $.
+    ( weq wal wsb wi wo wex nfsb2or wa stdpc7 sbequ1 sylan9 orim2i ax-mp biimpd
+    wnf a4s equvini eximi 19.35-1 3syl syl9 19.9t sbequilem sbequ2 adantr drsb1
+    nfr ax-1 alequcoms sylan9r syld ex orim1i pm1.2 syl jaoi ) DBEZDFZDCEZDFZBC
+    EZADBGZADCGZHZHZIZIVIVBVEVFVGDJZVDVGVBVFDSZIVBVEVFVKHHZIADBKVLVMVBVLVFVFDFZ
+    VEVKVFDUKVEBDEZVCLZDJVHDJVNVKHBCDUAVPVHDVOVFAVCVGABDMADCNZOUBVFVGDUCUDUEPQV
+    DVKVGHZIZVDVEVRHZIVDVGDSZIVSADCKWAVRVDWAVKVGVGDUFRPQVRVTVDVRVEULPQUGVBVIVJV
+    BVEVHVBVELVFAVGVBVFAHZVEVAWBDADBUHTUIVEAABCGZVBVGABCNWCVGHBDVOBFWCVGABDCUJR
+    UMUNUOUPVJVIVIIVIVDVIVIVDVEVHVDVELVFAVGVDVFACBGZVEAVDVFWDADCBUJRABCMOVDAVGH
+    ZVEVCWEDVQTUIUOUPUQVIURUSUTQ $.
 
   $( An equality theorem for substitution.  Used in proof of Theorem 9.7 in
      [Megill] p. 449 (p. 16 of the preprint).  (Contributed by NM,
@@ -12013,122 +11987,6 @@ $)
      by NM, 27-Feb-2005.) $)
   drsb2 $p |- ( A. x x = y -> ( [ x / z ] ph <-> [ y / z ] ph ) ) $=
     ( cv wceq wsbc wb sbequ a4s ) BEZCEZFADKGADLGHBABCDIJ $.
-
-  $( Negation inside and outside of substitution are equivalent.  (Contributed
-     by NM, 5-Aug-1993.) $)
-  sbn $p |- ( [ y / x ] -. ph <-> -. [ y / x ] ph ) $=
-    ( wn wsb weq wal wi sbequ2 nsyld a4s sb4 wa wex sb1 equs3 sylib syl6 sylibr
-    con2i pm2.61i sbequ1 con3rr3 sb2 notnot sbbii con3i df-sb sylanbrc impbii )
-    ADZBCEZABCEZDZBCFZBGZULUNHZUOUQBUOULAUMUKBCIABCIJKUPDULUOUKHZBGZUNUKBCLUMUS
-    UMUOAMBNUSDABCOABCPQTRUAUNURUOUKMBNZULUOAUMABCUBUCUNUOUKDZHBGZDUTVBUMVBVABC
-    EUMVABCUDAVABCAUEUFSUGUKBCPSUKBCUHUIUJ $.
-
-  $( Removal of implication from substitution.  (Contributed by NM,
-     5-Aug-1993.) $)
-  sbi1 $p |- ( [ y / x ] ( ph -> ps ) -> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
-    ( weq wal wi wsb sbequ2 syl5d sbequ1 syl6d a4s sb4 ax-2 al2imi syl6 pm2.61i
-    wn sb2 ) CDEZCFZABGZCDHZACDHZBCDHZGGZUAUGCUAUDUEBUFUAUEAUDBACDIUCCDIJBCDKLM
-    UBSZUEUAAGZCFZUDUFACDNUHUDUAUCGZCFZUJUFGUCCDNULUJUABGZCFUFUKUIUMCUAABOPBCDT
-    QQJR $.
-
-  $( Introduction of implication into substitution.  (Contributed by NM,
-     5-Aug-1993.) $)
-  sbi2 $p |- ( ( [ y / x ] ph -> [ y / x ] ps ) -> [ y / x ] ( ph -> ps ) ) $=
-    ( wsb wi wn sbn pm2.21 sbimi sylbir ax-1 ja ) ACDEZBCDEABFZCDEZNGAGZCDEPACD
-    HQOCDABIJKBOCDBALJM $.
-
-  $( Implication inside and outside of substitution are equivalent.
-     (Contributed by NM, 5-Aug-1993.) $)
-  sbim $p |- ( [ y / x ] ( ph -> ps ) <-> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
-    ( wi wsb sbi1 sbi2 impbii ) ABECDFACDFBCDFEABCDGABCDHI $.
-
-  $( Reverse direction of ~ sbor .  (Contributed by Jim Kingdon,
-     20-Dec-2017.) $)
-  sborr $p |- ( ( [ y / x ] ph \/ [ y / x ] ps ) -> [ y / x ] ( ph \/ ps ) ) $=
-    ( weq wi wa wex wsb orc imim2i anim1i olc orim12i df-sb orbi12i exbii bitri
-    wo andi 19.43 anbi2i 3imtr4i ) CDEZAFZUDAGZCHZGZUDBFZUDBGZCHZGZSUDABSZFZUGG
-    ZUNUKGZSZACDIZBCDIZSUMCDIZUHUOULUPUEUNUGAUMUDABJKLUIUNUKBUMUDBAMKLNURUHUSUL
-    ACDOBCDOPUTUNUDUMGZCHZGZUQUMCDOVCUNUGUKSZGUQVBVDUNVBUFUJSZCHVDVAVECUDABTQUF
-    UJCUARUBUNUGUKTRRUC $.
-
-  $( Logical OR inside and outside of substitution are equivalent.
-     (Contributed by NM, 29-Sep-2002.) $)
-  sbor $p |- ( [ y / x ] ( ph \/ ps ) <-> ( [ y / x ] ph \/ [ y / x ] ps ) ) $=
-    ( wn wi wsb wo sbim sbn imbi1i bitri df-or sbbii 3bitr4i ) AEZBFZCDGZACDGZE
-    ZBCDGZFZABHZCDGSUAHRPCDGZUAFUBPBCDIUDTUAACDJKLUCQCDABMNSUAMO $.
-
-  ${
-    sbrim.1 $e |- ( ph -> A. x ph ) $.
-    $( Substitution with a variable not free in antecedent affects only the
-       consequent.  (Contributed by NM, 5-Aug-1993.) $)
-    sbrim $p |- ( [ y / x ] ( ph -> ps ) <-> ( ph -> [ y / x ] ps ) ) $=
-      ( wi wsb sbim sbf imbi1i bitri ) ABFCDGACDGZBCDGZFAMFABCDHLAMACDEIJK $.
-  $}
-
-  ${
-    sblim.1 $e |- ( ps -> A. x ps ) $.
-    $( Substitution with a variable not free in consequent affects only the
-       antecedent.  (Contributed by NM, 14-Nov-2013.) $)
-    sblim $p |- ( [ y / x ] ( ph -> ps ) <-> ( [ y / x ] ph -> ps ) ) $=
-      ( wi wsb sbim sbf imbi2i bitri ) ABFCDGACDGZBCDGZFLBFABCDHMBLBCDEIJK $.
-  $}
-
-  $( Forward direction of ~ sban .  (Contributed by Jim Kingdon,
-     19-Dec-2017.) $)
-  sban-1 $p |- ( [ y / x ] ( ph /\ ps ) ->
-                 ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
-    ( wa cv wsbc wceq wi df-sb jcab biimpi anandi exbii 19.40 anim12i
-    wex sylbi an4 biimpri sylib syl ) ABEZCDFZGZCFUDHZAIZUFAEZCQZEZUF
-    BIZUFBEZCQZEZEZACUDGZBCUDGZEUEUGUKEZUIUMEZEZUOUEUFUCIZUFUCEZCQZEU
-    TUCCDJVAURVCUSVAURUFABKLVCUHULEZCQUSVBVDCUFABMNUHULCORPRUGUKUIUMS
-    UAUJUPUNUQUPUJACDJTUQUNBCDJTPUB $.
-
-  $( Conjunction inside and outside of a substitution are equivalent.
-     (Contributed by NM, 5-Aug-1993.) $)
-  sban $p |- ( [ y / x ] ( ph /\ ps ) <-> ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
-    ( wn wi wsb wa sbn sbim imbi2i bitri xchbinx df-an sbbii 3bitr4i ) ABEZFZEZ
-    CDGZACDGZBCDGZEZFZEABHZCDGUAUBHTRCDGZUDRCDIUFUAQCDGZFUDAQCDJUGUCUABCDIKLMUE
-    SCDABNOUAUBNP $.
-
-  $( Conjunction inside and outside of a substitution are equivalent.
-     (Contributed by NM, 14-Dec-2006.) $)
-  sb3an $p |- ( [ y / x ] ( ph /\ ps /\ ch ) <->
-              ( [ y / x ] ph /\ [ y / x ] ps /\ [ y / x ] ch ) ) $=
-    ( w3a wsb wa df-3an sbbii sban anbi1i bitr4i 3bitri ) ABCFZDEGABHZCHZDEGPDE
-    GZCDEGZHZADEGZBDEGZSFZOQDEABCIJPCDEKTUAUBHZSHUCRUDSABDEKLUAUBSIMN $.
-
-  $( Equivalence inside and outside of a substitution are equivalent.
-     (Contributed by NM, 5-Aug-1993.) $)
-  sbbi $p |- ( [ y / x ] ( ph <-> ps )
-     <-> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
-    ( wb wsb wi wa dfbi2 sbbii sbim anbi12i sban 3bitr4i bitri ) ABEZCDFABGZBAG
-    ZHZCDFZACDFZBCDFZEZPSCDABIJQCDFZRCDFZHUAUBGZUBUAGZHTUCUDUFUEUGABCDKBACDKLQR
-    CDMUAUBINO $.
-
-  ${
-    sblbis.1 $e |- ( [ y / x ] ph <-> ps ) $.
-    $( Introduce left biconditional inside of a substitution.  (Contributed by
-       NM, 19-Aug-1993.) $)
-    sblbis $p |- ( [ y / x ] ( ch <-> ph ) <-> ( [ y / x ] ch <-> ps ) ) $=
-      ( wb wsb sbbi bibi2i bitri ) CAGDEHCDEHZADEHZGLBGCADEIMBLFJK $.
-  $}
-
-  ${
-    sbrbis.1 $e |- ( [ y / x ] ph <-> ps ) $.
-    $( Introduce right biconditional inside of a substitution.  (Contributed by
-       NM, 18-Aug-1993.) $)
-    sbrbis $p |- ( [ y / x ] ( ph <-> ch ) <-> ( ps <-> [ y / x ] ch ) ) $=
-      ( wb wsb sbbi bibi1i bitri ) ACGDEHADEHZCDEHZGBMGACDEILBMFJK $.
-  $}
-
-  ${
-    sbrbif.1 $e |- ( ch -> A. x ch ) $.
-    sbrbif.2 $e |- ( [ y / x ] ph <-> ps ) $.
-    $( Introduce right biconditional inside of a substitution.  (Contributed by
-       NM, 18-Aug-1993.) $)
-    sbrbif $p |- ( [ y / x ] ( ph <-> ch ) <-> ( ps <-> ch ) ) $=
-      ( wb wsb sbrbis sbf bibi2i bitri ) ACHDEIBCDEIZHBCHABCDEGJNCBCDEFKLM $.
-  $}
 
   $( A specialization theorem, mostly the same as Theorem 19.8 of [Margaris]
      p. 89.  (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
@@ -12222,11 +12080,6 @@ $)
       UMOAUNFHGRAUOFDIUABFEDUBUFUGAUKCSUIABCFEHJKUCZTAULUJSUIAUKCDGUPUDTUEUH $.
   $}
 
-  $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
-  sbco $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
-    ( wsb wb weq equsb2 sbequ12 bicomd sbimi ax-mp sbbi mpbi ) ACBDZAEZBCDZNBCD
-    ABCDECBFZBCDPBCGQOBCQANACBHIJKNABCLM $.
-
   ${
     sbid2.1 $e |- ( ph -> A. x ph ) $.
     $( An identity law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
@@ -12254,24 +12107,6 @@ $)
       HUEUHADBEJUGBCDKLZABCMNOUFSZUIUHULAUHBCBCBPUGDCBABDEQRUEAUHITULUKUAUBUCUD
       $.
   $}
-
-  ${
-    sbco2d.1 $e |- ( ph -> A. x ph ) $.
-    sbco2d.2 $e |- ( ph -> A. z ph ) $.
-    sbco2d.3 $e |- ( ph -> ( ps -> A. z ps ) ) $.
-    $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
-    sbco2d $p |- ( ph -> ( [ y / z ] [ z / x ] ps <-> [ y / x ] ps ) ) $=
-      ( wsb wi hbim1 sbco2 sbrim sbbii bitri 3bitr3i pm5.74ri ) ABCEIZEDIZBCDIZ
-      ABJZCEIZEDIZUACDIASJZATJUACDEABEGHKLUCARJZEDIUDUBUEEDABCEFMNAREDGMOABCDFM
-      PQ $.
-  $}
-
-  $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
-  sbco3 $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
-    ( weq wal wsb wb drsb1 sbequ12a alimi a4sbbi syl bitr3d wn sbco sbbii hbnae
-    hbsb2 sbco2d syl5rbbr pm2.61i ) BCEZBFZABCGZCDGZACBGZBDGZHUDUEBDGZUFUHUEBCD
-    IUDUEUGHZBFUIUHHUCUJBABCJKUEUGBDLMNUHUECBGZBDGUDOZUFUKUGBDACBPQULUECDBBCCRB
-    CBRABCSTUAUB $.
 
   $( A commutativity law for substitution.  (Contributed by NM,
      27-May-1997.) $)
@@ -12320,19 +12155,6 @@ $)
     sb8e $p |- ( E. x ph <-> E. y [ y / x ] ph ) $=
       ( wsb hbsb3 sbequ12 cbvex ) AABCEBCDABCDFABCGH $.
   $}
-
-  $( Commutation of quantification and substitution variables.  (Contributed by
-     NM, 5-Aug-1993.) $)
-  sb9i $p |- ( A. x [ x / y ] ph -> A. y [ y / x ] ph ) $=
-    ( weq wal wi drsb1 drsb2 bitr3d dral1 biimprd wn hbsb2 al2imi hbnaes stdpc4
-    wsb sbco sylib alimi a7s syl6 pm2.61i ) CBDCEZACBQZBEZABCQZCEZFUDUHUFUGUECB
-    UDACCQUGUEACBCGACBCHIJKUDLZUFUECEZBEZUHUFUKFCBBUIUEUJBACBMNOUEUHCBUFUGCUFUE
-    BCQUGUEBCPABCRSTUAUBUC $.
-
-  $( Commutation of quantification and substitution variables.  (Contributed by
-     NM, 5-Aug-1993.) $)
-  sb9 $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
-    ( wsb wal sb9i impbii ) ACBDBEABCDCEABCFACBFG $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -12412,20 +12234,6 @@ $)
     $( A generalization of axiom ~ ax-16 .  (Contributed by NM, 5-Aug-1993.) $)
     a16gb $p |- ( A. x x = y -> ( ph <-> A. z ph ) ) $=
       ( weq wal a16g ax-4 impbid1 ) BCEBFAADFABCDGADHI $.
-  $}
-
-  ${
-    $d x ph $.
-    albidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
-    $( Formula-building rule for universal quantifier (deduction rule).
-       (Contributed by NM, 5-Aug-1993.) $)
-    albidv $p |- ( ph -> ( A. x ps <-> A. x ch ) ) $=
-      ( ax-17 albid ) ABCDADFEG $.
-
-    $( Formula-building rule for existential quantifier (deduction rule).
-       (Contributed by NM, 5-Aug-1993.) $)
-    exbidv $p |- ( ph -> ( E. x ps <-> E. x ch ) ) $=
-      ( ax-17 exbid ) ABCDADFEG $.
   $}
 
   ${
@@ -12582,62 +12390,6 @@ $)
   $}
 
   ${
-    $d x ps $.
-    exlimiv.1 $e |- ( ph -> ps ) $.
-    $( Inference from Theorem 19.23 of [Margaris] p. 90.
-
-       This inference, along with our many variants is used to implement a
-       metatheorem called "Rule C" that is given in many logic textbooks.  See,
-       for example, Rule C in [Mendelson] p. 81, Rule C in [Margaris] p. 40, or
-       Rule C in Hirst and Hirst's _A Primer for Logic and Proof_ p. 59 (PDF
-       p. 65) at ~ http://www.mathsci.appstate.edu/~~jlh/primer/hirst.pdf .
-
-       In informal proofs, the statement "Let C be an element such that..."
-       almost always means an implicit application of Rule C.
-
-       In essence, Rule C states that if we can prove that some element ` x `
-       exists satisfying a wff, i.e. ` E. x ph ( x ) ` where ` ph ( x ) ` has
-       ` x ` free, then we can use ` ph ( ` C ` ) ` as a hypothesis for the
-       proof where C is a new (ficticious) constant not appearing previously in
-       the proof, nor in any axioms used, nor in the theorem to be proved.  The
-       purpose of Rule C is to get rid of the existential quantifier.
-
-       We cannot do this in Metamath directly.  Instead, we use the original
-       ` ph ` (containing ` x ` ) as an antecedent for the main part of the
-       proof.  We eventually arrive at ` ( ph -> ps ) ` where ` ps ` is the
-       theorem to be proved and does not contain ` x ` .  Then we apply
-       ~ exlimiv to arrive at ` ( E. x ph -> ps ) ` .  Finally, we separately
-       prove ` E. x ph ` and detach it with modus ponens ~ ax-mp to arrive at
-       the final theorem ` ps ` .  (Contributed by NM, 5-Aug-1993.)  (Revised
-       by NM, 25-Jul-2012.) $)
-    exlimiv $p |- ( E. x ph -> ps ) $=
-      ( ax-17 exlimi ) ABCBCEDF $.
-  $}
-
-  ${
-    $d x y $.  $d x z $.  $d y z $.  $d ph z $.
-    $( This is a version of ~ ax-11o when the variables are distinct.  Axiom
-       (C8) of [Monk2] p. 105.  (Contributed by NM, 5-Aug-1993.)  (Revised by
-       Jim Kingdon, 15-Dec-2017.) $)
-    ax11v $p |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) $=
-      ( vz cv wceq wex wi wal a9e ax-17 ax-11 syl5 imbi1d albidv imbi2d
-      equequ2 imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUCFZAUFAHZBIZH
-      ZHZDCJUDUJDUDUEUBFZAUKAHZBIZHZHUJAADIUKUMADKABDLMUDUKUFUNUIDCBQZU
-      DUMUHAUDULUGBUDUKUFAUONOPRSTUA $.
-  $}
-
-  ${
-    $d x y $.  $d x z $.  $d y z $.  $d ph z $.
-    $( Analogue to ~ ax11v for existential quantification.  (Contributed by Jim
-       Kingdon, 9-Jan-2018.) $)
-    ax11ev $p |- ( x = y -> ( E. x ( x = y /\ ph ) -> ph ) ) $=
-      ( vz cv wceq wex wa wi ax-i11e ax-17 syl6ib equequ2 anbi1d exbidv
-      a9e 19.9 imbi1d imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUDFZUG
-      AHZBGZAIZIZDCPUEUKDUEUFUCFZULAHZBGZAIZIUKULUNADGAABDJADADKQLUEULU
-      GUOUJDCBMZUEUNUIAUEUMUHBUEULUGAUPNORSTUAUB $.
-  $}
-
-  ${
     $d x y $.
     $( Two equivalent ways of expressing the proper substitution of ` y ` for
        ` x ` in ` ph ` , when ` x ` and ` y ` are distinct.  Theorem 6.2 of
@@ -12665,24 +12417,32 @@ $)
       ( wn cv wsbc wceq wa wex wal sb6 alinexa bitri sb5 notbii bitr4i
       wi ) ADZBCEZFZBESGZAHBIZDZABSFZDTUARQBJUCRBCKUAABLMUDUBABCNOP $.
 
-    $( Intuitionistic proof of ~ sban where ` x ` and ` y ` are distinct.
-       (Contributed by Jim Kingdon, 24-Dec-2017.) $)
+    $( Version of ~ sban where ` x ` and ` y ` are distinct.  (Contributed by
+       Jim Kingdon, 24-Dec-2017.) $)
     sbanv $p |- ( [ y / x ] ( ph /\ ps ) <->
                   ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
       ( wa cv wsbc wceq wal sb6 anbi12i 19.26 bitr4i pm4.76 albii bitri
       wi ) ABEZCDFZGCFSHZRQZCIZACSGZBCSGZEZRCDJUETAQZTBQZEZCIZUBUEUFCIZ
       UGCIZEUIUCUJUDUKACDJBCDJKUFUGCLMUHUACTABNOPM $.
 
-    $( Intuitionistic proof of ~ sbi1 where ` x ` and ` y ` are distinct.
-       (Contributed by Jim Kingdon, 25-Dec-2017.) $)
+    $( Version of ~ sbor where ` x ` and ` y ` are distinct.  (Contributed by
+       Jim Kingdon, 3-Feb-2018.) $)
+    sborv $p |- ( [ y / x ] ( ph \/ ps ) <->
+                  ( [ y / x ] ph \/ [ y / x ] ps ) ) $=
+      ( wo wsb weq wa wex sb5 andi exbii 19.43 3bitri orbi12i bitr4i ) ABEZCDFZ
+      CDGZAHZCIZSBHZCIZEZACDFZBCDFZERSQHZCITUBEZCIUDQCDJUGUHCSABKLTUBCMNUEUAUFU
+      CACDJBCDJOP $.
+
+    $( Forward direction of ~ sbimv .  (Contributed by Jim Kingdon,
+       25-Dec-2017.) $)
     sbi1v $p |- ( [ y / x ] ( ph -> ps )
                       -> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
       ( cv wsbc wceq wi wal sb6 ax-2 al2imi sb2 syl6 sylbi syl5bi ) A
       CDEZFCEQGZAHZCIZABHZCQFZBCQFZACDJUBRUAHZCIZTUCHUACDJUETRBHZCIUC
       UDSUFCRABKLBCDMNOP $.
 
-    $( Intuitionistic proof of ~ sbi2 where ` x ` and ` y ` are distinct.
-       (Contributed by Jim Kingdon, 18-Jan-2018.) $)
+    $( Reverse direction of ~ sbimv .  (Contributed by Jim Kingdon,
+       18-Jan-2018.) $)
     sbi2v $p |- ( ( [ y / x ] ph -> [ y / x ] ps )
                       -> [ y / x ] ( ph -> ps ) ) $=
       ( weq wa wex wi wal wsb 19.38 pm3.3 pm2.04 syli alimi syl sb5 sb6 imbi12i
@@ -12694,20 +12454,6 @@ $)
     sbimv $p |- ( [ y / x ] ( ph -> ps )
                   <-> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
       ( wi wsb sbi1v sbi2v impbii ) ABECDFACDFBCDFEABCDGABCDHI $.
-
-    $( Intuitionistic proof of ~ sbbi where ` x ` and ` y ` are distinct.
-       (Contributed by Jim Kingdon, 19-Jan-2018.) $)
-    sbbiv $p |- ( [ y / x ] ( ph <-> ps )
-                 <-> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
-      ( wi wa wsb wb sbanv sbimv anbi12i bitri dfbi2 sbbii 3bitr4i ) ABEZBAEZFZ
-      CDGZACDGZBCDGZEZUATEZFZABHZCDGTUAHSPCDGZQCDGZFUDPQCDIUFUBUGUCABCDJBACDJKL
-      UERCDABMNTUAMO $.
-
-    $( Version of ~ sbco where ` x ` and ` y ` are distinct.  (Contributed by
-       Jim Kingdon, 26-Dec-2017.) $)
-    sbcov $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
-      ( wsb wb weq equsb2 sbequ12 bicomd sbimi ax-mp sbbiv mpbi ) ACBDZAEZBCDZN
-      BCDABCDECBFZBCDPBCGQOBCQANACBHIJKNABCLM $.
   $}
 
   ${
@@ -13057,29 +12803,6 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d w y z $.  $d w x $.
-    $( Substitution applied to an atomic membership wff.  (Contributed by NM,
-       7-Nov-2006.)  (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
-    elsb3 $p |- ( [ x / y ] y e. z <-> x e. z ) $=
-      ( vw wel wsb ax-17 elequ1 sbie sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
-      equsb1 mpbi sbf 3bitri ) BCEZBAFZDCEZDAFZACEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
-      BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
-      DAUFDGTUA $.
-  $}
-
-  ${
-    $d w y z $.  $d w x $.
-    $( Substitution applied to an atomic membership wff.  (Contributed by
-       Rodolfo Medina, 3-Apr-2010.)  (Proof shortened by Andrew Salmon,
-       14-Jun-2011.) $)
-    elsb4 $p |- ( [ x / y ] z e. y <-> z e. x ) $=
-      ( vw wel wsb ax-17 elequ2 sbie sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
-      equsb1 mpbi sbf 3bitri ) CBEZBAFZCDEZDAFZCAEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
-      BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
-      DAUFDGTUA $.
-  $}
-
-  ${
     $d x y $.
     $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are
        distinct.  (Contributed by NM, 5-Aug-1993.)  (Proof by Jim Kingdon,
@@ -13087,23 +12810,6 @@ $( The theorems in this section make use of the $d statement. $)
     hbs1 $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
       ( cv wsbc wceq wi wal sb6 ax-ial sylbi albii sylibr ) ABCDZEZBDNF
       AGZBHZBHZOBHOQRABCIZPBJKOQBSLM $.
-  $}
-
-  ${
-    $d x z $.  $d y z $.
-    sbco2iv.1 $e |- ( ph -> A. z ph ) $.
-    $( One direction of ~ sbco2v but without a distinct variable constraint on
-       ` x ` and ` y ` .  (Contributed by Jim Kingdon, 7-Jan-2018.) $)
-    sbco2iv $p |- ( [ y / z ] [ z / x ] ph -> [ y / x ] ph ) $=
-      ( wsb weq wi wa wex equvini hbs1 df-sb simplbi com23 sb5 anim1i eximi syl
-      syl6 imp3a eximd syl5 19.9 syl6ib sbbii bitri sylbi ax-17 hban hbex 19.41
-      ax-ie1 ax11ev equcoms mpan10 sylbir exlimi pm3.22 sylanbrc ) ABDFZDCFZBCG
-      ZAHVCAIZBJZABCFVBVCADJZAVCBDGZDCGZIZDJVBVFBCDKVBVIADVADCLVBVGVHAVBVHVGAVB
-      VHVAVGAHZVBVHVAHVHVAIDJVADCMNVAVJVGAIZBJZABDMNTOUAUBUCADEUDUEVBAVCIZBJZVE
-      VBDBGZVCIZBJZVLIZDJZVNVBVHVLIZDJZVSVBVLDCFWAVAVLDCABDPUFVLDCPUGVTVRDVHVQV
-      LDCBKQRUHVRVNDVMDBAVCDEVCDUIUJUKVRVPVLIZBJZVNVPVLBVKBUMULWCVLAHZVCIZVLIZB
-      JVNWBWFBVPWEVLVOWDVCWDBDABDUNUOQQRWFVMBVLAVCUPRSUQURSVMVDBAVCUSRSABCMUT
-      $.
   $}
 
   ${
@@ -13139,48 +12845,6 @@ $( The theorems in this section make use of the $d statement. $)
 
   ${
     $d x z $.  $d y z $.
-
-    $( Version of ~ sbequ with distinct variable constraints between ` z ` and
-       the other two variables (but not between ` x ` and ` y ` or between
-       ` ph ` and any of the variables).  (Contributed by Jim Kingdon,
-       25-Dec-2017.) $)
-    sbequv $p |- ( x = y -> ( [ x / z ] ph <-> [ y / z ] ph ) ) $=
-      ( weq wa wex wsb equequ2 anbi1d exbidv sb5 3bitr4g ) BCEZDBEZAFZDGDCEZAFZ
-      DGADBHADCHNPRDNOQABCDIJKADBLADCLM $.
-
-    $( Version of ~ sbequi with distinct variable constraints between ` z ` and
-       the other two variables (but not between ` x ` and ` y ` or between
-       ` ph ` and any of the variables).  (Contributed by Jim Kingdon,
-       25-Dec-2017.) $)
-    sbequiv $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
-      ( weq wsb sbequv biimpd ) BCEADBFADCFABCDGH $.
-  $}
-
-  ${
-    sbequif.1 $e |- ( ph -> A. x ph ) $.
-    sbequif.2 $e |- ( ph -> A. y ph ) $.
-    $( Version of ~ sbequi in which neither ` x ` nor ` y ` is free in
-       ` ph ` .  Like ~ sbequiv , this is a weaker version of ~ sbequi which we
-       have managed to prove in intuitionistic logic.  (Contributed by Jim
-       Kingdon, 26-Dec-2017.) $)
-    sbequif $p |- ( x = y -> ( [ x / z ] ph -> [ y / z ] ph ) ) $=
-      ( cv wceq wsbc wex wal hbsb3 equvini stdpc7
-      wi wa sbequ1 sylan9 eximi syl 19.35-1 syl5 19.9 biimpi syl6 ) BGZ
-      CGZHZADUFIZADUGIZDJZUJUIUIDKZUHUKADBELUHUIUJOZDJZULUKOUHUFDGZHZUO
-      UGHZPZDJUNBCDMURUMDUPUIAUQUJABDNADCQRSTUIUJDUATUBUKUJUJDADCFLUCUD
-      UE $.
-
-    $( Version of ~ sbequ in which neither ` x ` nor ` y ` is free in ` ph ` .
-       Like ~ sbequv , this is a weaker version of ~ sbequ which we have
-       managed to prove in intuitionistic logic.  (Contributed by Jim Kingdon,
-       26-Dec-2017.) $)
-    sbequf $p |- ( x = y -> ( [ x / z ] ph <-> [ y / z ] ph ) ) $=
-      ( weq wsb sbequif wi equcoms impbid ) BCGADBHZADCHZABCDEFINMJCBACBDFEIKL
-      $.
-  $}
-
-  ${
-    $d x z $.  $d y z $.
     hbsbv.1 $e |- ( ph -> A. z ph ) $.
     $( This is a version of ~ hbsb with an extra distinct variable constraint,
        on ` z ` and ` x ` .  It exists because we don't yet have an
@@ -13194,40 +12858,167 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d x y z $.
+    $d x z $.  $d y z $.
     sbco2v.1 $e |- ( ph -> A. z ph ) $.
-    $( This is a version of ~ sbco2 where ` z ` is distinct from ` x ` and
-       ` y ` (which is no big deal), but also where ` x ` and ` y ` are
-       distinct from each other (which is a bigger limit on what this can be
-       used for).  (Contributed by Jim Kingdon, 25-Dec-2017.) $)
+    $( This is a version of ~ sbco2 where ` z ` is distinct from ` x ` and from
+       ` y ` .  (Contributed by Jim Kingdon, 25-Dec-2017.)  (One distinct
+       variable constraint removed by Jim Kingdon, 3-Feb-2018.) $)
     sbco2v $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( cv wsbc hbsb3 hbsbv wceq sbequ12 wa equvini hbs1
-      wex wb hbbi anim12i bitr syl imp bitr3d exlimi bitr4d sbie bicomi
-      equtr ) ABCFZGZABDFZGZDUHGZAULBCUKDCBABDEHIBFZUHJZAUIULABCKZUNUMU
-      JJZUJUHJZLZDOULUIPZBCDMURUSDULUIDUKDCNABCDEIQURAULUIURAUKPZUKULPZ
-      LAULPUPUTUQVAABDKUKDCKRAUKULSTURUNAUIPUPUQUNBDCUGUAUOTUBUCTUDUEUF
-      $.
-
-    $( Another proof of ~ sbco2v which perhaps can be more easily transitioned
-       to a version with fewer distinct variable constraints (when/if we have
-       an intuitionistic proof of a variant of ~ sbequv with fewer constraints,
-       that is).  (Contributed by Jim Kingdon, 25-Dec-2017.) $)
-    sbco2vALT $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( wsb hbsbv sbequv sbie ) ABDFABCFDCABCDEGADCBHI $.
+      ( wsb hbsbv sbequ sbie ) ABDFABCFDCABCDEGADCBHI $.
   $}
 
   ${
-    $d x z $.  $d y z $.
-    sbco2vf.1 $e |- ( ph -> A. z ph ) $.
-    sbco2vf.2 $e |- ( ph -> A. y ph ) $.
-    $( Version of ~ sbco2 with additional constraints.  It requires that ` y `
-       (as well as ` z ` ) is not free in ` ph ` , and has a few distinct
-       variable constraints: ` z ` and the other two variables, but, unlike
-       ~ sbco2v , not ` x ` and ` y ` .  (Contributed by Jim Kingdon,
-       26-Dec-2017.) $)
-    sbco2vf $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( cv wsbc hbsbv sbequf sbie ) ABDGHABCGHDCABCDEIADCBEFJK $.
+    $d z ph $.  $d z ps $.  $d z x $.  $d z y $.
+
+    $( Negation inside and outside of substitution are equivalent.
+       (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
+       3-Feb-2018.) $)
+    sbn $p |- ( [ y / x ] -. ph <-> -. [ y / x ] ph ) $=
+      ( vz wn wsb sbnv sbbii bitri ax-17 hbn sbco2v notbii 3bitr3i ) AEZBDFZDCF
+      ZABDFZDCFZEZOBCFABCFZEQREZDCFTPUBDCABDGHRDCGIOBCDADADJZKLSUAABCDUCLMN $.
+
+    $( Implication inside and outside of substitution are equivalent.
+       (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
+       3-Feb-2018.) $)
+    sbim $p |- ( [ y / x ] ( ph -> ps ) <->
+        ( [ y / x ] ph -> [ y / x ] ps ) ) $=
+      ( vz wi wsb sbimv sbbii bitri ax-17 sbco2v imbi12i 3bitr3i ) ABFZCEGZEDGZ
+      ACEGZEDGZBCEGZEDGZFZOCDGACDGZBCDGZFQRTFZEDGUBPUEEDABCEHIRTEDHJOCDEOEKLSUC
+      UAUDACDEAEKLBCDEBEKLMN $.
+
+    $( Logical OR inside and outside of substitution are equivalent.
+       (Contributed by NM, 29-Sep-2002.)  (Proof rewritten by Jim Kingdon,
+       3-Feb-2018.) $)
+    sbor $p |- ( [ y / x ] ( ph \/ ps ) <->
+        ( [ y / x ] ph \/ [ y / x ] ps ) ) $=
+      ( vz wo cv wsbc sborv sbbii bitri ax-17 sbco2v orbi12i 3bitr3i ) AB
+      FZCEGZHZEDGZHZACQHZESHZBCQHZESHZFZPCSHACSHZBCSHZFTUAUCFZESHUERUHE
+      DABCEIJUAUCEDIKPCDEPELMUBUFUDUGACDEAELMBCDEBELMNO $.
+
+    $( Conjunction inside and outside of a substitution are equivalent.
+       (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
+       3-Feb-2018.) $)
+    sban $p |- ( [ y / x ] ( ph /\ ps ) <->
+        ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
+      ( vz wa wsb sbanv sbbii bitri ax-17 sbco2v anbi12i 3bitr3i ) ABFZCEGZEDGZ
+      ACEGZEDGZBCEGZEDGZFZOCDGACDGZBCDGZFQRTFZEDGUBPUEEDABCEHIRTEDHJOCDEOEKLSUC
+      UAUDACDEAEKLBCDEBEKLMN $.
   $}
+
+  ${
+    sbrim.1 $e |- ( ph -> A. x ph ) $.
+    $( Substitution with a variable not free in antecedent affects only the
+       consequent.  (Contributed by NM, 5-Aug-1993.) $)
+    sbrim $p |- ( [ y / x ] ( ph -> ps ) <-> ( ph -> [ y / x ] ps ) ) $=
+      ( wi wsb sbim sbf imbi1i bitri ) ABFCDGACDGZBCDGZFAMFABCDHLAMACDEIJK $.
+  $}
+
+  ${
+    sblim.1 $e |- ( ps -> A. x ps ) $.
+    $( Substitution with a variable not free in consequent affects only the
+       antecedent.  (Contributed by NM, 14-Nov-2013.) $)
+    sblim $p |- ( [ y / x ] ( ph -> ps ) <-> ( [ y / x ] ph -> ps ) ) $=
+      ( wi wsb sbim sbf imbi2i bitri ) ABFCDGACDGZBCDGZFLBFABCDHMBLBCDEIJK $.
+  $}
+
+  $( Conjunction inside and outside of a substitution are equivalent.
+     (Contributed by NM, 14-Dec-2006.) $)
+  sb3an $p |- ( [ y / x ] ( ph /\ ps /\ ch ) <->
+              ( [ y / x ] ph /\ [ y / x ] ps /\ [ y / x ] ch ) ) $=
+    ( w3a wsb wa df-3an sbbii sban anbi1i bitr4i 3bitri ) ABCFZDEGABHZCHZDEGPDE
+    GZCDEGZHZADEGZBDEGZSFZOQDEABCIJPCDEKTUAUBHZSHUCRUDSABDEKLUAUBSIMN $.
+
+  $( Equivalence inside and outside of a substitution are equivalent.
+     (Contributed by NM, 5-Aug-1993.) $)
+  sbbi $p |- ( [ y / x ] ( ph <-> ps )
+     <-> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
+    ( wb wsb wi wa dfbi2 sbbii sbim anbi12i sban 3bitr4i bitri ) ABEZCDFABGZBAG
+    ZHZCDFZACDFZBCDFZEZPSCDABIJQCDFZRCDFZHUAUBGZUBUAGZHTUCUDUFUEUGABCDKBACDKLQR
+    CDMUAUBINO $.
+
+  ${
+    sblbis.1 $e |- ( [ y / x ] ph <-> ps ) $.
+    $( Introduce left biconditional inside of a substitution.  (Contributed by
+       NM, 19-Aug-1993.) $)
+    sblbis $p |- ( [ y / x ] ( ch <-> ph ) <-> ( [ y / x ] ch <-> ps ) ) $=
+      ( wb wsb sbbi bibi2i bitri ) CAGDEHCDEHZADEHZGLBGCADEIMBLFJK $.
+  $}
+
+  ${
+    sbrbis.1 $e |- ( [ y / x ] ph <-> ps ) $.
+    $( Introduce right biconditional inside of a substitution.  (Contributed by
+       NM, 18-Aug-1993.) $)
+    sbrbis $p |- ( [ y / x ] ( ph <-> ch ) <-> ( ps <-> [ y / x ] ch ) ) $=
+      ( wb wsb sbbi bibi1i bitri ) ACGDEHADEHZCDEHZGBMGACDEILBMFJK $.
+  $}
+
+  ${
+    sbrbif.1 $e |- ( ch -> A. x ch ) $.
+    sbrbif.2 $e |- ( [ y / x ] ph <-> ps ) $.
+    $( Introduce right biconditional inside of a substitution.  (Contributed by
+       NM, 18-Aug-1993.) $)
+    sbrbif $p |- ( [ y / x ] ( ph <-> ch ) <-> ( ps <-> ch ) ) $=
+      ( wb wsb sbrbis sbf bibi2i bitri ) ACHDEIBCDEIZHBCHABCDEGJNCBCDEFKLM $.
+  $}
+
+  ${
+    sbco2d.1 $e |- ( ph -> A. x ph ) $.
+    sbco2d.2 $e |- ( ph -> A. z ph ) $.
+    sbco2d.3 $e |- ( ph -> ( ps -> A. z ps ) ) $.
+    $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
+    sbco2d $p |- ( ph -> ( [ y / z ] [ z / x ] ps <-> [ y / x ] ps ) ) $=
+      ( wsb wi hbim1 sbco2 sbrim sbbii bitri 3bitr3i pm5.74ri ) ABCEIZEDIZBCDIZ
+      ABJZCEIZEDIZUACDIASJZATJUACDEABEGHKLUCARJZEDIUDUBUEEDABCEFMNAREDGMOABCDFM
+      PQ $.
+  $}
+
+  $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
+  sbco $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
+    ( wsb wb weq equsb2 sbequ12 bicomd sbimi ax-mp sbbi mpbi ) ACBDZAEZBCDZNBCD
+    ABCDECBFZBCDPBCGQOBCQANACBHIJKNABCLM $.
+
+  $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
+  sbco3 $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
+    ( weq wal wsb wb drsb1 sbequ12a alimi a4sbbi syl bitr3d wn sbco sbbii hbnae
+    hbsb2 sbco2d syl5rbbr pm2.61i ) BCEZBFZABCGZCDGZACBGZBDGZHUDUEBDGZUFUHUEBCD
+    IUDUEUGHZBFUIUHHUCUJBABCJKUEUGBDLMNUHUECBGZBDGUDOZUFUKUGBDACBPQULUECDBBCCRB
+    CBRABCSTUAUB $.
+
+  ${
+    $d w y z $.  $d w x $.
+    $( Substitution applied to an atomic membership wff.  (Contributed by NM,
+       7-Nov-2006.)  (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
+    elsb3 $p |- ( [ x / y ] y e. z <-> x e. z ) $=
+      ( vw wel wsb ax-17 elequ1 sbie sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
+      equsb1 mpbi sbf 3bitri ) BCEZBAFZDCEZDAFZACEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
+      BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
+      DAUFDGTUA $.
+  $}
+
+  ${
+    $d w y z $.  $d w x $.
+    $( Substitution applied to an atomic membership wff.  (Contributed by
+       Rodolfo Medina, 3-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       14-Jun-2011.) $)
+    elsb4 $p |- ( [ x / y ] z e. y <-> z e. x ) $=
+      ( vw wel wsb ax-17 elequ2 sbie sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
+      equsb1 mpbi sbf 3bitri ) CBEZBAFZCDEZDAFZCAEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
+      BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
+      DAUFDGTUA $.
+  $}
+
+  $( Commutation of quantification and substitution variables.  (Contributed by
+     NM, 5-Aug-1993.) $)
+  sb9i $p |- ( A. x [ x / y ] ph -> A. y [ y / x ] ph ) $=
+    ( weq wal wi drsb1 drsb2 bitr3d dral1 biimprd wn hbsb2 al2imi hbnaes stdpc4
+    wsb sbco sylib alimi a7s syl6 pm2.61i ) CBDCEZACBQZBEZABCQZCEZFUDUHUFUGUECB
+    UDACCQUGUEACBCGACBCHIJKUDLZUFUECEZBEZUHUFUKFCBBUIUEUJBACBMNOUEUHCBUFUGCUFUE
+    BCQUGUEBCPABCRSTUAUBUC $.
+
+  $( Commutation of quantification and substitution variables.  (Contributed by
+     NM, 5-Aug-1993.) $)
+  sb9 $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
+    ( wsb wal sb9i impbii ) ACBDBEABCDCEABCFACBFG $.
 
   ${
     $d y z $.
@@ -13520,11 +13311,6 @@ $( The theorems in this section make use of the $d statement. $)
        (Contributed by NM, 2-Jan-2002.) $)
     dveeq1 $p |- ( -. A. x x = y -> ( y = z -> A. x y = z ) ) $=
       ( vw weq ax-17 equequ1 dvelim ) DCEZBCEABDIAFDBCGH $.
-
-    $( Version of ~ dveeq1 using ~ ax-16 instead of ~ ax-17 .  (Contributed by
-       NM, 29-Apr-2008.) $)
-    dveeq1ALT $p |- ( -. A. x x = y -> ( y = z -> A. x y = z ) ) $=
-      ( vw weq ax17eq equequ1 dvelimfALT ) DCEBCEABDDCAFBCDFDBCGH $.
   $}
 
   ${
@@ -13553,58 +13339,6 @@ $( The theorems in this section make use of the $d statement. $)
       wsb syl sb6 albii 3bitr4g ) BCEBFGZCDEZABFZHZCFZUDAHZCFZBFZUECDRACDRZBFUJ
       UHBFZCFUCUGUHCBIUCULUFCBCCJUCUDUDBFHZBFZULUFKUNBCBUCUMBBCDLMNUDABOSPQUECD
       TUKUIBACDTUAUB $.
-  $}
-
-  ${
-    $d w y $.  $d w z $.  $d w x $.  $( ` w ` is dummy. $)
-    $( Axiom ~ ax-15 is redundant if we assume ~ ax-17 .  Remark 9.6 in
-       [Megill] p. 448 (p. 16 of the preprint), regarding axiom scheme C14'.
-
-       Note that ` w ` is a dummy variable introduced in the proof.  On the web
-       page, it is implicitly assumed to be distinct from all other variables.
-       (This is made explicit in the database file set.mm).  Its purpose is to
-       satisfy the distinct variable requirements of ~ dveel2 and ~ ax-17 .  By
-       the end of the proof it has vanished, and the final theorem has no
-       distinct variable requirements.
-
-       This theorem should not be referenced in any proof.  Instead, use
-       ~ ax-15 below so that theorems needing ~ ax-15 can be more easily
-       identified.  (Contributed by NM, 29-Jun-1995.) $)
-    ax15 $p |- ( -. A. z z = x -> ( -. A. z z = y ->
-              ( x e. y -> A. z x e. y ) ) ) $=
-      ( vw weq wal wn wi hbn1 dveel2 hbim1 ax-17 elequ1 imbi2d dvelimfALT 19.21
-      wel syl6ib pm2.86d ) CAECFGZCBEZCFGZABQZUCCFZTUBUCHZUECFUBUDHUBDBQZHUECAD
-      UBUFCUACIZCBDJKUEDLDAEUFUCUBDABMNOUBUCCUGPRS $.
-  $}
-
-  $( Axiom of Quantifier Introduction.  One of the equality and substitution
-     axioms for a non-logical predicate in our predicate calculus with
-     equality.  Axiom scheme C14' in [Megill] p. 448 (p. 16 of the preprint).
-     It is redundant if we include ~ ax-17 ; see theorem ~ ax15 .  Alternately,
-     ~ ax-17 becomes unnecessary in principle with this axiom, but we lose the
-     more powerful metalogic afforded by ~ ax-17 .  We retain ~ ax-15 here to
-     provide completeness for systems with the simpler metalogic that results
-     from omitting ~ ax-17 , which might be easier to study for some
-     theoretical purposes.  (Contributed by NM, 5-Aug-1993.) $)
-  ax-15 $a |- ( -. A. z z = x -> ( -. A. z z = y ->
-              ( x e. y -> A. z x e. y ) ) ) $.
-
-  ${
-    $d x z $.  $d y z $.
-    $( Theorem to add distinct quantifier to atomic formula.  This theorem
-       demonstrates the induction basis for ~ ax-17 considered as a
-       metatheorem.)  (Contributed by NM, 5-Aug-1993.) $)
-    ax17el $p |- ( x e. y -> A. z x e. y ) $=
-      ( weq wal wel wi ax-15 ax-16 pm2.61ii ) CADCECBDCEABFZKCEGABCHKCAIKCBIJ
-      $.
-  $}
-
-  ${
-    $d w z x $.  $d w y $.
-    $( Version of ~ dveel2 using ~ ax-16 instead of ~ ax-17 .  (Contributed by
-       NM, 10-May-2008.) $)
-    dveel2ALT $p |- ( -. A. x x = y -> ( z e. y -> A. x z e. y ) ) $=
-      ( vw wel ax17el elequ2 dvelimfALT ) CDECBEABDCDAFCBDFDBCGH $.
   $}
 
 $(
@@ -13649,6 +13383,16 @@ $)
       ( wo wal 19.32 orcom albii 3bitr4i ) BAEZCFBACFZEABEZCFLBEBACDGMKCABHILBH
       J $.
   $}
+
+  $( Theorem 19.35 of [Margaris] p. 90.  In classical logic, this theorem is
+     useful for moving an implication (in the form of the right-hand side) into
+     the scope of a single existential quantifier.  The forward direction,
+     ~ 19.35-1 , holds intuitionistically.  (Contributed by NM, 5-Aug-1993.)
+     (Proof shortened by Wolf Lammen, 27-Jun-2014.) $)
+  19.35 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> E. x ps ) ) $=
+    ( wi wex wal wn wa 19.26 annim albii alnex anbi2i 3bitr3i con4bii ) ABDZCEZ
+    ACFZBCEZDZPGZCFZRSGZHZQGTGABGZHZCFRUECFZHUBUDAUECIUFUACABJKUGUCRBCLMNPCLRSJ
+    NO $.
 
   ${
     19.37.1 $e |- ( ph -> A. x ph ) $.
@@ -14681,6 +14425,11 @@ $)
       ( ax-17 19.36 ) ABCBCDE $.
   $}
 
+  $( Theorem 19.39 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+  19.39 $p |- ( ( E. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $=
+    ( wex wi wal 19.2 imim1i 19.35 sylibr ) ACDZBCDZEACFZLEABECDMKLACCGHABCIJ
+    $.
+
   $( Theorem 19.24 of [Margaris] p. 90.  This is an example of a theorem which
      asserts that something exists, but provides no way of constructing it.  It
      does not hold in intuitionistic logic.  (Contributed by NM,
@@ -14982,6 +14731,78 @@ or metalogic of the axioms may be quite different in the intuitionistic
 case compared with the classical case.
 $)
 
+  $( Show that the original axiom ~ ax-5o can be derived from ~ ax-5 and
+     others.  See ~ ax5 for the rederivation of ~ ax-5 from ~ ax-5o .
+
+     Part of the proof is based on the proof of Lemma 22 of [Monk2] p. 114.
+
+     Normally, ~ ax5o should be used rather than ~ ax-5o , except by theorems
+     specifically studying the latter's properties.  (Contributed by NM,
+     21-May-2008.) $)
+  ax5o $p |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) $=
+    ( wal wi wn ax-4 con2i ax-6 con1i ax-gen ax-5 ax-mp 3syl syl5 ) ACDZPCDZPBE
+    CDBCDPPFZCDZFZTCDZQSPRCGHRCITPEZCDUAQEUBCPSACIJKTPCLMNPBCLO $.
+
+  $( Axiom of Quantified Implication.  This axiom moves a quantifier from
+     outside to inside an implication, quantifying ` ps ` .  Notice that ` x `
+     must not be a free variable in the antecedent of the quantified
+     implication, and we express this by binding ` ph ` to "protect" the axiom
+     from a ` ph ` containing a free ` x ` .  One of the 4 axioms of "pure"
+     predicate calculus.  Axiom scheme C4' in [Megill] p. 448 (p. 16 of the
+     preprint).  It is a special case of Lemma 5 of [Monk2] p. 108 and Axiom 5
+     of [Mendelson] p. 69.
+
+     In classical logic, this axiom is redundant, as shown by theorem ~ ax5o .
+     The current proof of ~ ax5o is not valid intuitionistically.
+
+     Normally, ~ ax5o should be used rather than ~ ax-5o , except by theorems
+     specifically studying the latter's properties.  (Contributed by NM,
+     5-Aug-1993.) $)
+  ax-5o $a |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) $.
+
+  $( Rederivation of axiom ~ ax-5 from the orginal version, ~ ax-5o .  See
+     ~ ax5o for the derivation of ~ ax-5o from ~ ax-5 .
+
+     This theorem should not be referenced in any proof.  Instead, use ~ ax-5
+     above so that uses of ~ ax-5 can be more easily identified.
+
+     Note:  This is the same as theorem ~ alim below.  It is proved separately
+     here so that it won't be dependent on the axioms used for ~ alim .
+     (Contributed by NM, 23-May-2008.)  (Revised by NM, 5-Dec-2010.) $)
+  ax5 $p |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) $=
+    ( wi wal ax-4 syl5 ax-gen ax-5o ax-mp syl ) ABDZCEZACEZBDZCEZNBCEDMODZCEMPD
+    QCNAMBACFLCFGHLOCIJABCIK $.
+
+  $( Show that the original axiom ~ ax-6o can be derived from ~ ax-6 and
+     others.  See ~ ax6 for the rederivation of ~ ax-6 from ~ ax-6o .
+
+     Normally, ~ ax6o should be used rather than ~ ax-6o , except by theorems
+     specifically studying the latter's properties.  (Contributed by NM,
+     21-May-2008.) $)
+  ax6o $p |- ( -. A. x -. A. x ph -> ph ) $=
+    ( wal wn ax-4 ax-6 nsyl4 ) ABCZAHDBCABEABFG $.
+
+  $( Axiom of Quantified Negation.  This axiom is used to manipulate negated
+     quantifiers.  One of the 4 axioms of pure predicate calculus.  Equivalent
+     to axiom scheme C7' in [Megill] p. 448 (p. 16 of the preprint).
+
+     This axiom is redundant, as shown by theorem ~ ax6o .
+
+     Normally, ~ ax6o should be used rather than ~ ax-6o , except by theorems
+     specifically studying the latter's properties.  (Contributed by NM,
+     5-Aug-1993.) $)
+  ax-6o $a |- ( -. A. x -. A. x ph -> ph ) $.
+
+  $( Rederivation of axiom ~ ax-6 from the orginal version, ~ ax-6o .  See
+     ~ ax6o for the derivation of ~ ax-6o from ~ ax-6 .
+
+     This theorem should not be referenced in any proof.  Instead, use ~ ax-6
+     above so that uses of ~ ax-6 can be more easily identified.  (Contributed
+     by NM, 23-May-2008.) $)
+  ax6 $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
+    ( wal wn wi ax-4 id ax-gen ax-5o ax-mp nsyl ax-6o nsyl4 ) ABCZBCZDZBCZNDZBC
+    ZNQREZBCQSETBQONPBFNNEZBCNOEUABNGHANBIJKHPRBIJNBLM $.
+
   $( The analog in our "pure" predicate calculus of the Brouwer axiom (B) of
      modal logic S5.  (Contributed by NM, 5-Oct-2005.) $)
   modal-b $p |- ( ph -> A. x -. A. x -. ph ) $=
@@ -15036,6 +14857,56 @@ $)
       UPAUREZBDZUFUSEUOVCEZBDUPVDEVEBUNATKUOVCBMUAAURBMUBUCUDUEJKUKCLUKUICMNO
       $.
   $}
+
+  ${
+    $d w y $.  $d w z $.  $d w x $.  $( ` w ` is dummy. $)
+    $( Axiom ~ ax-15 is redundant if we assume ~ ax-17 (in classical logic;
+       this proof is not intuitionistic).  Remark 9.6 in
+       [Megill] p. 448 (p. 16 of the preprint), regarding axiom scheme C14'.
+
+       Note that ` w ` is a dummy variable introduced in the proof.  On the web
+       page, it is implicitly assumed to be distinct from all other variables.
+       (This is made explicit in the database file set.mm).  Its purpose is to
+       satisfy the distinct variable requirements of ~ dveel2 and ~ ax-17 .  By
+       the end of the proof it has vanished, and the final theorem has no
+       distinct variable requirements.
+
+       This theorem should not be referenced in any proof.  Instead, use
+       ~ ax-15 below so that theorems needing ~ ax-15 can be more easily
+       identified.  (Contributed by NM, 29-Jun-1995.) $)
+    ax15 $p |- ( -. A. z z = x -> ( -. A. z z = y ->
+              ( x e. y -> A. z x e. y ) ) ) $=
+      ( vw weq wal wn wi hbn1 dveel2 hbim1 ax-17 elequ1 imbi2d dvelimfALT 19.21
+      wel syl6ib pm2.86d ) CAECFGZCBEZCFGZABQZUCCFZTUBUCHZUECFUBUDHUBDBQZHUECAD
+      UBUFCUACIZCBDJKUEDLDAEUFUCUBDABMNOUBUCCUGPRS $.
+  $}
+
+  $( Axiom of Quantifier Introduction.  This can be useful in some (classical)
+     choices of axioms which do not include ~ ax-17 , but we do not have
+     similar results for how it relates to other axioms in intuitionistic
+     logic.
+
+     It is an equality and substitution
+     axioms for a non-logical predicate in our predicate calculus with
+     equality.  Axiom scheme C14' in [Megill] p. 448 (p. 16 of the preprint).
+     It is redundant if we include ~ ax-17 ; see theorem ~ ax15 .  Alternately,
+     ~ ax-17 becomes unnecessary in principle with this axiom, but we lose the
+     more powerful metalogic afforded by ~ ax-17 .  We retain ~ ax-15 here to
+     provide completeness for systems with the simpler metalogic that results
+     from omitting ~ ax-17 , which might be easier to study for some
+     theoretical purposes.  (Contributed by NM, 5-Aug-1993.) $)
+  ax-15 $a |- ( -. A. z z = x -> ( -. A. z z = y ->
+              ( x e. y -> A. z x e. y ) ) ) $.
+
+  $( Rederivation of axiom ~ ax-11 from the orginal version, ~ ax-11o .  See
+     theorem ~ ax11o for the derivation of ~ ax-11o from ~ ax-11 .
+
+     This theorem should not be referenced in any proof.  Instead, use ~ ax-11
+     above so that uses of ~ ax-11 can be more easily identified.  (Contributed
+     by NM, 22-Jan-2007.) $)
+  ax11 $p |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) $=
+    ( weq wal wi biidd dral1 ax-1 alimi syl6bir a1d wn ax-4 ax-11o syl7 pm2.61i
+    ) BCDZBEZRACEZRAFZBEZFZFSUCRSTABEUBAABCSAGHAUABARIJKLTASMRUBACNABCOPQ $.
 
   ${
     ax11f.1 $e |- ( ph -> A. x ph ) $.
@@ -15309,6 +15180,53 @@ $)
       VFUTUMVBUKVEUTCUJCMUSCNUKVDULUTVDUJUKULUTIVDAAFUJAOACAPUAZULCAQRSTUMVEVBC
       ULCMVACNUMULVDVBUMULVDVBVDUJUMULVBVGUJCBQUBSUCTUDRUJULCUEUFUQUNCEUGUHUI
       $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.
+    $( Theorem to add distinct quantifier to atomic formula.  (This theorem
+       demonstrates the induction basis for ~ ax-17 considered as a
+       metatheorem.  Do not use it for later proofs - use ~ ax-17 instead, to
+       avoid reference to the redundant axiom ~ ax-16 .)  (Contributed by NM,
+       5-Aug-1993.) $)
+    ax17eq $p |- ( x = y -> A. z x = y ) $=
+      ( weq wal wi ax-12 ax-16 pm2.61ii ) CADCECBDCEABDZJCEFABCGJCAHJCBHI $.
+  $}
+
+  ${
+    $d w z x $.  $d w y $.
+
+    $( Version of ~ dveeq1 using ~ ax-16 instead of ~ ax-17 .  (Contributed by
+       NM, 29-Apr-2008.) $)
+    dveeq1ALT $p |- ( -. A. x x = y -> ( y = z -> A. x y = z ) ) $=
+      ( vw weq ax17eq equequ1 dvelimfALT ) DCEBCEABDDCAFBCDFDBCGH $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.
+    $( Theorem to add distinct quantifier to atomic formula.  This theorem
+       demonstrates the induction basis for ~ ax-17 considered as a
+       metatheorem.)  (Contributed by NM, 5-Aug-1993.) $)
+    ax17el $p |- ( x e. y -> A. z x e. y ) $=
+      ( weq wal wel wi ax-15 ax-16 pm2.61ii ) CADCECBDCEABFZKCEGABCHKCAIKCBIJ
+      $.
+  $}
+
+  ${
+    $d w z x $.  $d w y $.
+
+    $( Version of ~ dveeq2 using ~ ax-16 instead of ~ ax-17 .  (Contributed by
+       NM, 29-Apr-2008.) $)
+    dveeq2ALT $p |- ( -. A. x x = y -> ( z = y -> A. x z = y ) ) $=
+      ( vw weq ax17eq equequ2 dvelimfALT ) CDECBEABDCDAFCBDFDBCGH $.
+  $}
+
+  ${
+    $d w z x $.  $d w y $.
+    $( Version of ~ dveel2 using ~ ax-16 instead of ~ ax-17 .  (Contributed by
+       NM, 10-May-2008.) $)
+    dveel2ALT $p |- ( -. A. x x = y -> ( z e. y -> A. x z e. y ) ) $=
+      ( vw wel ax17el elequ2 dvelimfALT ) CDECBEABDCDAFCBDFDBCGH $.
   $}
 
 $(
