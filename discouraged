@@ -14882,6 +14882,7 @@ New usage of "equs4OLD" is discouraged (0 uses).
 New usage of "equs5eOLD" is discouraged (0 uses).
 New usage of "equsalOLD" is discouraged (0 uses).
 New usage of "equsalhwOLD" is discouraged (0 uses).
+New usage of "equsexOLD" is discouraged (0 uses).
 New usage of "equsexv-x12" is discouraged (1 uses).
 New usage of "equveliv" is discouraged (1 uses).
 New usage of "equvelv" is discouraged (0 uses).
@@ -17754,6 +17755,7 @@ Proof modification of "equs4OLD" is discouraged (42 steps).
 Proof modification of "equs5eOLD" is discouraged (50 steps).
 Proof modification of "equsalOLD" is discouraged (54 steps).
 Proof modification of "equsalhwOLD" is discouraged (79 steps).
+Proof modification of "equsexOLD" is discouraged (48 steps).
 Proof modification of "equsexv-x12" is discouraged (48 steps).
 Proof modification of "equveliv" is discouraged (16 steps).
 Proof modification of "equvelv" is discouraged (64 steps).
