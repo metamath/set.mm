@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Feb-2018
+$( iset.mm - Version of 7-Feb-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11230,6 +11230,15 @@ $)
     nfald $p |- ( ph -> F/ x A. y ps ) $=
       ( wnf wal nfri alrimi nfnf1 nfal hba1 sp nfrd hbald nfd syl ) ABCGZDHZBDH
       ZCGASDADEIFJTUACSCDBCKLTBCDSDMTBCSDNOPQR $.
+
+    $( If ` x ` is not free in ` ph ` , it is not free in ` E. y ph ` .
+       (Contributed by Mario Carneiro, 24-Sep-2016.)  (Proof rewritten by Jim
+       Kingdon, 7-Feb-2018.) $)
+    nfexd $p |- ( ph -> F/ x E. y ps ) $=
+      ( wex wal wi wnf nfri df-nf sylib alrimi alcom exim alimi 19.12
+      syl imim2i sylibr ) ABDGZUBCHZIZCHZUBCJAUBBCHZDGZIZCHZUEABUFIZD
+      HZCHZUIAUJCHZDHULAUMDADEKABCJUMFBCLMNUJDCOMUKUHCBUFDPQSUHUDCUGU
+      CUBBDCRTQSUBCLUA $.
   $}
 
   $( Lemma 24 of [Monk2] p. 114.  (Contributed by Mario Carneiro,
