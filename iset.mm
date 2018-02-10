@@ -8785,6 +8785,11 @@ $)
   tru $p |- T. $=
     ( wph wtru wb biid df-tru mpbir ) BAACADAEF $.
 
+  $( ` F. ` is refutable.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Mel L. O'Cat, 11-Mar-2012.) $)
+  fal $p |- -. F. $=
+    ( wfal wtru wn tru notnoti df-fal mtbir ) ABCBDEFG $.
+
   $( ` F. ` is not provable.  (Contributed by Anthony Hart, 22-Oct-2010.)
      (Proof shortened by Mel L. O'Cat, 11-Mar-2012.) $)
   notfal $p |- -. F. $=
@@ -8803,6 +8808,11 @@ $)
      Carneiro, 2-Feb-2015.) $)
   dfneg $p |- ( -. ph <-> ( ph -> F. ) ) $=
     ( wfal wn wi wb notfal mtt ax-mp ) BCACABDEFBAGH $.
+
+  $( ` F. ` implies anything.  (Contributed by FL, 20-Mar-2011.)  (Proof
+     shortened by Anthony Hart, 1-Aug-2011.) $)
+  falim $p |- ( F. -> ph ) $=
+    ( wfal fal pm2.21i ) BACD $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
