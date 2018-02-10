@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Feb-2018
+$( iset.mm - Version of 10-Feb-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -46,12 +46,14 @@ AH  Anthony Hart         RM  Rodolfo Medina         GD  Georgy Dunaev
 This is part of an ongoing project to improve naming consistency.  If you have
 suggestions for better names, let me know.
 
-To update your mathbox, you can make can make global substitutions into
-your local version by processing the ones WITHOUT "Notes" in _reverse_ order.
-The ones WITH "Notes" may have to be processed manually.
+If you are keeping proofs outside the master version of this file, you can
+make can make global substitutions into your local version by processing the
+ones WITHOUT "Notes" in _reverse_ order.  The ones WITH "Notes" may have to be
+processed manually.
 
 DONE:
 Date      Old       New         Notes
+10-Feb-18 ax-i11e   ax11e
 21-Dec-17 equid1    equid
 28-Jan-15 strssd    [--same--]  moved from NM's mathbox to main set.mm
 (older changes in set.mm than the above have already been applied to iset.mm;
@@ -9625,13 +9627,6 @@ $)
      ~ ax11v , ~ ax11v2 and ~ ax-11o .  (Contributed by NM, 5-Aug-1993.) $)
   ax-11 $a |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) $.
 
-  $( Axiom of Variable Substitution for Existence.  This can be derived from
-     ~ ax-11 in a classical context but a separate axiom is needed for
-     intuitionistic predicate calculus.  (Contributed by Mario Carneiro,
-     31-Jan-2015.)  (Revised by Mario Carneiro and Jim Kingdon,
-     31-Dec-2017.) $)
-  ax-i11e $a |- ( x = y -> ( E. x ( x = y /\ ph ) -> E. y ph ) ) $.
-
   $( Axiom of Quantifier Introduction.  One of the equality and substitution
      axioms of predicate calculus with equality.  Informally, it says that
      whenever ` z ` is distinct from ` x ` and ` y ` , and ` x = y ` is true,
@@ -10959,13 +10954,6 @@ $)
       ( weq wal wn hbnae syl ) BCFBGHZKDGABCDIEJ $.
   $}
 
-  $( Quantifier Substitution for existential quantifiers.  Analogue to ~ ax10o
-     but for ` E. ` rather than ` A. ` .  (Contributed by Jim Kingdon,
-     21-Dec-2017.) $)
-  ax10oe $p |- ( A. x x = y -> ( E. x ps -> E. y ps ) ) $=
-    ( cv wceq wal wex wa wi ax-ia3 alimi exim syl ax-i11e a4s syld )
-    BDCDEZBFZABGZQAHZBGZACGZRATIZBFSUAIQUCBQAJKATBLMQUAUBIBABCNOP $.
-
   $( Lemma used in proofs of substitution properties.  (Contributed by NM,
      5-Aug-1993.)  (Proof shortened by Mario Carneiro, 20-May-2014.) $)
   equs4 $p |- ( A. x ( x = y -> ph ) -> E. x ( x = y /\ ph ) ) $=
@@ -11047,38 +11035,12 @@ $)
   $}
 
   ${
-    drex1.1 $e |- ( A. x x = y -> ( ph <-> ps ) ) $.
-    $( Formula-building lemma for use with the Distinctor Reduction Theorem.
-       Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).
-       (Contributed by NM, 27-Feb-2005.)  (Revised by NM, 3-Feb-2015.) $)
-    drex1 $p |- ( A. x x = y -> ( E. x ph <-> E. y ps ) ) $=
-      ( cv wceq wal wex wa hbae biantrurd bitr2d exbid wi ax-i11e a4s
-      ax-4 sylbird equcomi bitr3d alequcoms impbid ) CFZDFZGZCHZACIZB
-      DIZUGUHUFBJZCIZUIUGUJACCDCKUGABUJEUGUFBUFCRLMNUFUKUIOCBCDPQSUGU
-      IUEUDGZAJZDIZUHUGUMBDCDDKUGAUMBUGULAUFULCCDTQLEUANUNUHOZDCULUOD
-      ADCPQUBSUC $.
-  $}
-
-  ${
     drex2.1 $e |- ( A. x x = y -> ( ph <-> ps ) ) $.
     $( Formula-building lemma for use with the Distinctor Reduction Theorem.
        Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).
        (Contributed by NM, 27-Feb-2005.) $)
     drex2 $p |- ( A. x x = y -> ( E. z ph <-> E. z ps ) ) $=
       ( weq wal hbae exbid ) CDGCHABECDEIFJ $.
-  $}
-
-  ${
-    exdistrf.1 $e |- ( -. A. x x = y -> ( ph -> A. y ph ) ) $.
-    $( Distribution of existential quantifiers, with a bound-variable
-       hypothesis saying that ` y ` is not free in ` ph ` , but ` x ` can be
-       free in ` ph ` (and there is no distinct variable condition on ` x ` and
-       ` y ` ).  (Contributed by Mario Carneiro, 20-Mar-2013.) $)
-    exdistrf $p |- ( E. x E. y ( ph /\ ps ) -> E. x ( ph /\ E. y ps ) ) $=
-      ( weq wal wa wex wi biidd drex1 drex2 hbe1 19.8a anim2i eximi sylbi hbnae
-      19.9 syl6bir wn 19.40 19.9hd anim1d syl5 eximd pm2.61i ) CDFCGZABHZDIZCIZ
-      ABDIZHZCIZJUIULUJCIZCIZUOUPUKCDCUJUJCDUIUJKLMUQUPUOUPCUJCNTUJUNCBUMABDOPQ
-      RUAUIUBZUKUNCCDCSUKADIZUMHURUNABDUCURUSAUMAURDCDDSEUDUEUFUGUH $.
   $}
 
   $( Closed theorem form of ~ a4im .  (Contributed by NM, 15-Jan-2008.) $)
@@ -11359,14 +11321,6 @@ $)
       ( wsb biimpi sbimi biimpri impbii ) ACDFBCDFABCDABEGHBACDABEIHJ $.
   $}
 
-  $( Formula-building lemma for use with the Distinctor Reduction Theorem.
-     Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).  (Contributed
-     by NM, 5-Aug-1993.) $)
-  drsb1 $p |- ( A. x x = y -> ( [ z / x ] ph <-> [ z / y ] ph ) ) $=
-    ( weq wal wi wa wex wsb wb equequ1 a4s imbi1d anbi1d drex1 anbi12d 3bitr4g
-    df-sb ) BCEZBFZBDEZAGZUBAHZBIZHCDEZAGZUFAHZCIZHABDJACDJUAUCUGUEUIUAUBUFATUB
-    UFKBBCDLMZNUDUHBCUAUBUFAUJOPQABDSACDSR $.
-
   $( One direction of a simplified definition of substitution.  (Contributed by
      NM, 5-Aug-1993.) $)
   sb1 $p |- ( [ y / x ] ph -> E. x ( x = y /\ ph ) ) $=
@@ -11536,6 +11490,54 @@ $)
     ( cv wceq wa wex wal wi 19.8a hbe1 syl anim2i eximi equs5a ) BDCDEZAFZBGPAC
     GZCHZFZBGPRIBHQTBASPARSACJACKLMNRBCOL $.
 
+  $( Analogue to ~ ax-11 but for existential quantification.  (Contributed by
+     Mario Carneiro and Jim Kingdon, 31-Dec-2017.)  (Proved by Mario Carneiro,
+     9-Feb-2018.) $)
+  ax11e $p |- ( x = y -> ( E. x ( x = y /\ ph ) -> E. y ph ) ) $=
+    ( cv wceq wa wex wi equs5e 19.21bi com12 ) BDCDEZAFBGZLACGZMLNHBA
+    BCIJK $.
+
+  $( Quantifier Substitution for existential quantifiers.  Analogue to ~ ax10o
+     but for ` E. ` rather than ` A. ` .  (Contributed by Jim Kingdon,
+     21-Dec-2017.) $)
+  ax10oe $p |- ( A. x x = y -> ( E. x ps -> E. y ps ) ) $=
+    ( cv wceq wal wex wa wi ax-ia3 alimi exim syl ax11e a4s syld )
+    BDCDEZBFZABGZQAHZBGZACGZRATIZBFSUAIQUCBQAJKATBLMQUAUBIBABCNOP $.
+
+  ${
+    drex1.1 $e |- ( A. x x = y -> ( ph <-> ps ) ) $.
+    $( Formula-building lemma for use with the Distinctor Reduction Theorem.
+       Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).
+       (Contributed by NM, 27-Feb-2005.)  (Revised by NM, 3-Feb-2015.) $)
+    drex1 $p |- ( A. x x = y -> ( E. x ph <-> E. y ps ) ) $=
+      ( cv wceq wal wex wa hbae biantrurd bitr2d exbid wi ax11e a4s
+      ax-4 sylbird equcomi bitr3d alequcoms impbid ) CFZDFZGZCHZACIZB
+      DIZUGUHUFBJZCIZUIUGUJACCDCKUGABUJEUGUFBUFCRLMNUFUKUIOCBCDPQSUGU
+      IUEUDGZAJZDIZUHUGUMBDCDDKUGAUMBUGULAUFULCCDTQLEUANUNUHOZDCULUOD
+      ADCPQUBSUC $.
+  $}
+
+  $( Formula-building lemma for use with the Distinctor Reduction Theorem.
+     Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).  (Contributed
+     by NM, 5-Aug-1993.) $)
+  drsb1 $p |- ( A. x x = y -> ( [ z / x ] ph <-> [ z / y ] ph ) ) $=
+    ( weq wal wi wa wex wsb wb equequ1 a4s imbi1d anbi1d drex1 anbi12d 3bitr4g
+    df-sb ) BCEZBFZBDEZAGZUBAHZBIZHCDEZAGZUFAHZCIZHABDJACDJUAUCUGUEUIUAUBUFATUB
+    UFKBBCDLMZNUDUHBCUAUBUFAUJOPQABDSACDSR $.
+
+  ${
+    exdistrf.1 $e |- ( -. A. x x = y -> ( ph -> A. y ph ) ) $.
+    $( Distribution of existential quantifiers, with a bound-variable
+       hypothesis saying that ` y ` is not free in ` ph ` , but ` x ` can be
+       free in ` ph ` (and there is no distinct variable condition on ` x ` and
+       ` y ` ).  (Contributed by Mario Carneiro, 20-Mar-2013.) $)
+    exdistrf $p |- ( E. x E. y ( ph /\ ps ) -> E. x ( ph /\ E. y ps ) ) $=
+      ( weq wal wa wex wi biidd drex1 drex2 hbe1 19.8a anim2i eximi sylbi hbnae
+      19.9 syl6bir wn 19.40 19.9hd anim1d syl5 eximd pm2.61i ) CDFCGZABHZDIZCIZ
+      ABDIZHZCIZJUIULUJCIZCIZUOUPUKCDCUJUJCDUIUJKLMUQUPUOUPCUJCNTUJUNCBUMABDOPQ
+      RUAUIUBZUKUNCCDCSUKADIZUMHURUNABDUCURUSAUMAURDCDDSEUDUEUFUGUH $.
+  $}
+
   $( A version of ~ sb4 that doesn't require a distinctor antecedent.
      (Contributed by NM, 2-Feb-2007.) $)
   sb4a $p |- ( [ y / x ] A. y ph -> A. x ( x = y -> ph ) ) $=
@@ -11603,7 +11605,7 @@ $)
       ( cv wsbc wceq wi wal sb6f bitri imim1i imim2i syl alimi wex wa
       jca eximi sb5f hbsb3 imbi2i albii equcomi pm2.43 imim2d pm2.43b
       ax-11 syl6 sylbi ax-i9 exim mpi ax-ial 19.9 biimpi sb2 3syl sb1
-      ax-ia1 19.8a ax-i11e anim1i ax-mp imdistani anbi2i exbii sylibr
+      ax-ia1 19.8a ax11e anim1i ax-mp imdistani anbi2i exbii sylibr
       idi impbii ) ACBEZFZBCEZFZABVMFZVNVKVMGZVPAHZBIZHZBIZVRVOVNVPVM
       VKGZAHZCIZHZBIZVTVNVPVLHZBIWEVLBCACBDUAZJWFWDBVLWCVPACBDJUBUCKW
       DVSBWDVPVRVPWCVRVPVPWCVPWBHZBIVRWBBCUHWHVQBWHVPVQHVQWBVQVPVPWAA
@@ -11868,7 +11870,7 @@ $)
     $( Analogue to ~ ax11v for existential quantification.  (Contributed by Jim
        Kingdon, 9-Jan-2018.) $)
     ax11ev $p |- ( x = y -> ( E. x ( x = y /\ ph ) -> ph ) ) $=
-      ( vz cv wceq wex wa wi ax-i11e ax-17 syl6ib equequ2 anbi1d exbidv
+      ( vz cv wceq wex wa wi ax11e ax-17 syl6ib equequ2 anbi1d exbidv
       a9e 19.9 imbi1d imbi12d mpbii exlimiv ax-mp ) DEZCEZFZDGBEZUDFZUG
       AHZBGZAIZIZDCPUEUKDUEUFUCFZULAHZBGZAIZIUKULUNADGAABDJADADKQLUEULU
       GUOUJDCBMZUEUNUIAUEUMUHBUEULUGAUPNORSTUAUB $.
