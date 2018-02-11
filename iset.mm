@@ -11285,9 +11285,15 @@ $)
      free in the first conjunct and bound in the second.  We can also achieve
      this by using a dummy variable, as the alternate definition ~ dfsb7 shows
      (which some logicians may prefer because it doesn't mix free and bound
-     variables).  Another version that mixes free and bound variables is
-     ~ dfsb3 .  When ` x ` and ` y ` are distinct, we can express proper
-     substitution with the simpler expressions of ~ sb5 and ~ sb6 .
+     variables).  Another alternate definition which uses a dummy variable is
+     ~ dfsb7a .
+
+     When ` x ` and ` y ` are distinct, we can express proper substitution with
+     the simpler expressions of ~ sb5 and ~ sb6 .
+
+     In classical logic, we have additional equivalent definitions ~ dfsb2 and
+     ~ dfsb3 , but we do not have intuitionistic proofs that those are
+     equivalent.
 
      There are no restrictions on any of the variables, including what
      variables may occur in wff ` ph ` .  (Contributed by NM, 5-Aug-1993.) $)
@@ -11918,18 +11924,18 @@ $)
   sb4b $p |- ( -. A. x x = y -> ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) ) $=
     ( weq wal wn wsb wi sb4 sb2 impbid1 ) BCDZBEFABCGLAHBEABCIABCJK $.
 
-  $( An alternate definition of proper substitution that, like ~ df-sb , mixes
-     free and bound variables to avoid distinct variable requirements.
-     (Contributed by NM, 17-Feb-2005.) $)
+  $( A classical (not intuitionistic) alternate definition of proper
+     substitution that, like ~ df-sb , mixes free and bound variables to avoid
+     distinct variable requirements.  (Contributed by NM, 17-Feb-2005.) $)
   dfsb2 $p |- ( [ y / x ] ph <->
               ( ( x = y /\ ph ) \/ A. x ( x = y -> ph ) ) ) $=
     ( wsb weq wa wi wal wo sbequ2 a4s ax-4 jctild orc wn sb4 olc pm2.61i sbequ1
     syl6 imp sb2 jaoi impbii ) ABCDZBCEZAFZUFAGBHZIZUFBHZUEUIGUJUEUGUIUJUEAUFUF
     UEAGBABCJKUFBLMUGUHNTUJOUEUHUIABCPUHUGQTRUGUEUHUFAUEABCSUAABCUBUCUD $.
 
-  $( An alternate definition of proper substitution ~ df-sb that uses only
-     primitive connectives (no defined terms) on the right-hand side.
-     (Contributed by NM, 6-Mar-2007.) $)
+  $( A classical (not intuitionistic) alternate definition of proper
+     substitution ~ df-sb that uses only primitive connectives (no defined
+     terms) on the right-hand side.  (Contributed by NM, 6-Mar-2007.) $)
   dfsb3 $p |- ( [ y / x ] ph <->
               ( ( x = y -> -. ph ) -> A. x ( x = y -> ph ) ) ) $=
     ( weq wa wi wal wo wn wsb df-or dfsb2 imnan imbi1i 3bitr4i ) BCDZAEZPAFBGZH
@@ -13114,7 +13120,7 @@ $( The theorems in this section make use of the $d statement. $)
        p. 17.  Theorem ~ sb7f provides a version where ` ph ` and ` z ` don't
        have to be distinct.  (Contributed by NM, 28-Jan-2004.) $)
     dfsb7 $p |- ( [ y / x ] ph <-> E. z ( z = y /\ E. x ( x = z /\ ph ) ) ) $=
-      ( wsb weq wa wex sb5 sbbii ax-17 sbco2 3bitr3i ) ABDEZDCEBDFAGBHZDCEABCED
+      ( wsb weq wa wex sb5 sbbii ax-17 sbco2v 3bitr3i ) ABDEZDCEBDFAGBHZDCEABCED
       CFOGDHNODCABDIJABCDADKLODCIM $.
   $}
 
@@ -13132,6 +13138,37 @@ $( The theorems in this section make use of the $d statement. $)
                E. z ( z = y /\ E. x ( x = z /\ ph ) ) ) $=
       ( wsb weq wa wex sb5 sbbii sbco2 3bitr3i ) ABDFZDCFBDGAHBIZDCFABCFDCGOHDI
       NODCABDJKABCDELODCJM $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.
+    sb7af.1 $e |- F/ z ph $.
+    $( An alternative definition of proper substitution ~ df-sb .  Similar to
+       ~ dfsb7a but does not require that ` ph ` and ` z ` be distinct.
+       Similar to ~ sb7f in that it involves a dummy variable ` z ` , but
+       expressed in terms of ` A. ` rather than ` E. ` .  (Contributed by Jim
+       Kingdon, 5-Feb-2018.) $)
+    sb7af $p |- ( [ y / x ] ph
+                      <-> A. z
+                             ( z = y
+                             -> A. x ( x = z -> ph ) ) ) $=
+      ( cv wsbc wceq wi wal nfri sbco2v sb6 sbbii bitri bitr3i )
+      ABCFZGABDFZGZDQGZRQHBFRHAIBJZIDJZABCDADEKLTUADQGUBSUADCABDMNUADCM
+      OP $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.
+    $( An alternative definition of proper substitution ~ df-sb .  Similar to
+       ~ dfsb7 in that it involves a dummy variable ` z ` , but expressed in
+       terms of ` A. ` rather than ` E. ` .  For a version which only requires
+       ` F/ z ph ` rather than ` z ` and ` ph ` being distinct, see ~ sb7af .
+       (Contributed by Jim Kingdon, 5-Feb-2018.) $)
+    dfsb7a $p |- ( [ y / x ] ph
+                      <-> A. z
+                             ( z = y
+                             -> A. x ( x = z -> ph ) ) ) $=
+      ( nfv sb7af ) ABCDADEF $.
   $}
 
   ${
