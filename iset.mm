@@ -53,6 +53,15 @@ processed manually.
 
 DONE:
 Date      Old       New         Notes
+10-Feb-18 ax-6      hbn1
+10-Feb-18 hbn1OLD   hbn1
+10-Feb-18 a6e       ---         deleted; use sp, 19.9, and nfa1
+10-Feb-18 ax-9o     ax9o
+10-Feb-18 ax6o      ---         deleted; this was unused
+10-Feb-18 ax-6o     ---         deleted; this was unused
+10-Feb-18 ax6       ---         deleted; never was intuitionistic
+10-Feb-18 modal-b   ---         deleted; never was intuitionistic
+10-Feb-18 ax9       ---         deleted; never was intuitionistic
 10-Feb-18 ax-i11e   ax11e
 21-Dec-17 equid1    equid
 28-Jan-15 strssd    [--same--]  moved from NM's mathbox to main set.mm
@@ -8959,7 +8968,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  "Pure" (equality-free) predicate calculus axioms ax-5, ax-6, ax-7, ax-gen
+  "Pure" (equality-free) predicate calculus axioms ax-5, ax-7, ax-gen
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9002,11 +9011,6 @@ $)
   $( Axiom of Quantified Implication.  Axiom C4 of [Monk2] p. 105.
      (Contributed by NM, 5-Aug-1993.) $)
   ax-5 $a |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) $.
-
-  $( Axiom of Quantified Negation.  Axiom C5-2 of [Monk2] p. 113.  This axiom
-     scheme is logically redundant(see ~ ax6b ).  (Contributed by NM,
-     5-Aug-1993.) $)
-  ax-6 $a |- ( -. A. x ph -> A. x -. A. x ph ) $.
 
   $( Axiom of Quantifier Commutation.  This axiom says universal quantifiers
      can be swapped.  One of the 4 axioms of pure predicate calculus.  Axiom
@@ -9859,10 +9863,8 @@ $)
      us that, i.e. they are not valid in the empty domain of a "free logic").
      In this form (not requiring that ` x ` and ` y ` be distinct) it was used
      in an axiom system of Tarski (see Axiom B7' in footnote 1 of
-     [KalishMontague] p. 81.)  It is equivalent to axiom scheme C10' in
-     [Megill] p. 448 (p. 16 of the preprint); the equivalence is established by
-     ~ ax9o and ~ ax9 .  Another name for this theorem is ~ a9e , which has
-     additional remarks.  (Contributed by Mario Carneiro, 31-Jan-2015.) $)
+     [KalishMontague] p. 81.)  Another name for this theorem is ~ a9e , which
+     has additional remarks.  (Contributed by Mario Carneiro, 31-Jan-2015.) $)
   ax-i9 $a |- E. x x = y $.
 
   $( Derive ~ ax-9 from ~ ax-i9 , the modified version for intuitionistic
@@ -9892,7 +9894,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Derive ax-4, ax-5o, and ax-6o
+        Additional intuitionistic axioms
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -9933,12 +9935,6 @@ $)
       ( wal ax-4 syl5 ) BDFBACBDGEH $.
   $}
 
-  $( Closed theorem version of bound-variable hypothesis builder ~ hbn .
-     (Contributed by NM, 5-Aug-1993.)  (Revised by NM, 2-Feb-2015.) $)
-  hbnt $p |- ( A. x ( ph -> A. x ph ) -> ( -. ph -> A. x -. ph ) ) $=
-    ( wn wal wi ax-4 con3i ax-6 syl con3 al2imi syl5 ) ACZABDZCZBDZANEZBDMBDMOP
-    NAABFGABHIQOMBANJKL $.
-
   ${
     nfbidf.1 $e |- F/ x ph $.
     nfbidf.2 $e |- ( ph -> ( ps <-> ch ) ) $.
@@ -9973,30 +9969,7 @@ $)
     ( wnf wal wi df-nf nfa1 nfxfr ) ABCAABDEZBDBABFIBGH $.
 
   ${
-    nfnd.1 $e |- ( ph -> F/ x ps ) $.
-    $( If in a context ` x ` is not free in ` ps ` , it is not free in
-       ` -. ps ` .  (Contributed by Mario Carneiro, 24-Sep-2016.)  (Proof
-       shortened by Wolf Lammen, 28-Dec-2017.) $)
-    nfnd $p |- ( ph -> F/ x -. ps ) $=
-      ( wnf wn nfnf1 wal wi df-nf hbnt sylbi nfd syl ) ABCEZBFZCEDOPCBCGOBBCHIC
-      HPPCHIBCJBCKLMN $.
-  $}
-
-  ${
-    nfn.1 $e |- F/ x ph $.
-    $( If ` x ` is not free in ` ph ` , it is not free in ` -. ph ` .
-       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
-    nfn $p |- F/ x -. ph $=
-      ( wn wnf wtru a1i nfnd trud ) ADBEFABABEFCGHI $.
-  $}
-
-  ${
     hb.1 $e |- ( ph -> A. x ph ) $.
-    $( If ` x ` is not free in ` ph ` , it is not free in ` -. ph ` .
-       (Contributed by NM, 5-Aug-1993.) $)
-    hbn $p |- ( -. ph -> A. x -. ph ) $=
-      ( wal wi wn hbnt mpg ) AABDEAFZIBDEBABGCH $.
-
     hb.2 $e |- ( ps -> A. x ps ) $.
     $( If ` x ` is not free in ` ph ` and ` ps ` , it is not free in
        ` ( ph -> ps ) ` .  (Contributed by NM, 5-Aug-1993.)  (Proof shortened
@@ -10042,21 +10015,6 @@ $)
   $( Lemma 23 of [Monk2] p. 114.  (Contributed by NM, 29-May-2008.) $)
   hbia1 $p |- ( ( A. x ph -> A. x ps ) -> A. x ( A. x ph -> A. x ps ) ) $=
     ( wal hba1 hbim ) ACDBCDCACEBCEF $.
-
-  $( Obsolete proof of ~ hbn1 as of 15-Aug-2014.  (Contributed by NM,
-     5-Aug-1993.) $)
-  hbn1OLD $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
-    ( wal hba1 hbn ) ABCBABDE $.
-
-  $( ` x ` is not free in ` -. A. x ph ` .  (Contributed by NM, 5-Aug-1993.)
-     (Proof shortened by Wolf Lammen, 18-Aug-2014.) $)
-  hbn1 $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
-    ( ax-6 ) ABC $.
-
-  $( The analog in our "pure" predicate calculus of axiom 5 of modal logic S5.
-     (Contributed by NM, 5-Oct-2005.) $)
-  modal-5 $p |- ( -. A. x -. ph -> A. x -. A. x -. ph ) $=
-    ( wn hbn1 ) ACBD $.
 
   ${
     19.3.1 $e |- ( ph -> A. x ph ) $.
@@ -10215,15 +10173,6 @@ $)
        (Proof shortened by Wolf Lammen, 2-Jan-2018.) $)
     nfim $p |- F/ x ( ph -> ps ) $=
       ( wnf a1i nfim1 ) ABCDBCFAEGH $.
-  $}
-
-  ${
-    hbnd.1 $e |- ( ph -> A. x ph ) $.
-    hbnd.2 $e |- ( ph -> ( ps -> A. x ps ) ) $.
-    $( Deduction form of bound-variable hypothesis builder ~ hbn .
-       (Contributed by NM, 3-Jan-2002.) $)
-    hbnd $p |- ( ph -> ( -. ps -> A. x -. ps ) ) $=
-      ( wal wi wn alrimi hbnt syl ) ABBCFGZCFBHZMCFGALCDEIBCJK $.
   $}
 
   ${
@@ -10550,10 +10499,6 @@ $)
   exintr $p |- ( A. x ( ph -> ps ) -> ( E. x ph -> E. x ( ph /\ ps ) ) ) $=
     ( wi wal wex wa exintrbi biimpd ) ABDCEACFABGCFABCHI $.
 
-  $( Abbreviated version of ~ ax-6o .  (Contributed by NM, 5-Aug-1993.) $)
-  a6e $p |- ( E. x A. x ph -> ph ) $=
-    ( wal wex hba1 id exlimi ax-4 syl ) ABCZBDJAJJBABEJFGABHI $.
-
   ${
     hbex.1 $e |- ( ph -> A. x ph ) $.
     $( If ` x ` is not free in ` ph ` , it is not free in ` E. y ph ` .
@@ -10599,19 +10544,68 @@ $)
   ${
     ax6blem.1 $e |- ( ph -> A. x ph ) $.
     $( If ` x ` is not free in ` ph ` , it is not free in ` -. ph ` .  This
-       theorem doesn't use ~ ax-6 compared to ~ hbnt .  (Contributed by GD,
+       theorem doesn't use ~ ax6b compared to ~ hbnt .  (Contributed by GD,
        27-Jan-2018.) $)
     ax6blem $p |- ( -. ph -> A. x -. ph ) $=
       ( wn wex wal id exlimi con3i alnex sylibr ) ADZABEZDLBFMAAABCAGHIABJK $.
   $}
 
-  $( Show that the axiom ax-6 can be derived from others.
+  $( Quantified Negation.  Axiom C5-2 of [Monk2] p. 113.
 
-     Normally, ~ ax6b should be used rather than ~ ax-6 , except by theorems
-     specifically studying the latter's properties.  (Contributed by GD,
-     27-Jan-2018.) $)
+     (Contributed by GD, 27-Jan-2018.) $)
   ax6b $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
     ( wal ax-ial ax6blem ) ABCBABDE $.
+
+  $( ` x ` is not free in ` -. A. x ph ` .  (Contributed by NM, 5-Aug-1993.)
+     (Proof shortened by Wolf Lammen, 18-Aug-2014.) $)
+  hbn1 $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
+    ( ax6b ) ABC $.
+
+  $( Closed theorem version of bound-variable hypothesis builder ~ hbn .
+     (Contributed by NM, 5-Aug-1993.)  (Revised by NM, 2-Feb-2015.) $)
+  hbnt $p |- ( A. x ( ph -> A. x ph ) -> ( -. ph -> A. x -. ph ) ) $=
+    ( wn wal wi ax-4 con3i ax6b syl con3 al2imi syl5 ) ACZABDZCZBDZANEZBDMBDMOP
+    NAABFGABHIQOMBANJKL $.
+
+  ${
+    hbn.1 $e |- ( ph -> A. x ph ) $.
+    $( If ` x ` is not free in ` ph ` , it is not free in ` -. ph ` .
+       (Contributed by NM, 5-Aug-1993.) $)
+    hbn $p |- ( -. ph -> A. x -. ph ) $=
+      ( wal wi wn hbnt mpg ) AABDEAFZIBDEBABGCH $.
+  $}
+
+  ${
+    hbnd.1 $e |- ( ph -> A. x ph ) $.
+    hbnd.2 $e |- ( ph -> ( ps -> A. x ps ) ) $.
+    $( Deduction form of bound-variable hypothesis builder ~ hbn .
+       (Contributed by NM, 3-Jan-2002.) $)
+    hbnd $p |- ( ph -> ( -. ps -> A. x -. ps ) ) $=
+      ( wal wi wn alrimi hbnt syl ) ABBCFGZCFBHZMCFGALCDEIBCJK $.
+  $}
+
+  ${
+    nfnd.1 $e |- ( ph -> F/ x ps ) $.
+    $( If in a context ` x ` is not free in ` ps ` , it is not free in
+       ` -. ps ` .  (Contributed by Mario Carneiro, 24-Sep-2016.)  (Proof
+       shortened by Wolf Lammen, 28-Dec-2017.) $)
+    nfnd $p |- ( ph -> F/ x -. ps ) $=
+      ( wnf wn nfnf1 wal wi df-nf hbnt sylbi nfd syl ) ABCEZBFZCEDOPCBCGOBBCHIC
+      HPPCHIBCJBCKLMN $.
+  $}
+
+  ${
+    nfn.1 $e |- F/ x ph $.
+    $( If ` x ` is not free in ` ph ` , it is not free in ` -. ph ` .
+       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    nfn $p |- F/ x -. ph $=
+      ( wn wnf wtru a1i nfnd trud ) ADBEFABABEFCGHI $.
+  $}
+
+  $( The analog in our "pure" predicate calculus of axiom 5 of modal logic S5.
+     (Contributed by NM, 5-Oct-2005.) $)
+  modal-5 $p |- ( -. A. x -. ph -> A. x -. A. x -. ph ) $=
+    ( wn hbn1 ) ACBD $.
 
   ${
     19.9d.1 $e |- ( ps -> F/ x ph ) $.
@@ -10780,25 +10774,11 @@ $)
   a9e $p |- E. x x = y $=
     ( ax-i9 ) ABC $.
 
-  $( Show that the original axiom ~ ax-9o can be derived from ~ ax-9 and
-     others.  See ~ ax9 for the rederivation of ~ ax-9 from ~ ax-9o .
-
-     Normally, ~ ax9o should be used rather than ~ ax-9o , except by theorems
-     specifically studying the latter's properties.  (Contributed by NM,
-     5-Aug-1993.)  (Revised by NM, 3-Feb-2015.) $)
+  $( An implication related to substitution.  (Contributed by NM, 5-Aug-1993.)
+     (Revised by NM, 3-Feb-2015.) $)
   ax9o $p |- ( A. x ( x = y -> A. x ph ) -> ph ) $=
     ( cv wceq wex wal wi a9e wa 19.29r hba1 pm3.35 exlimi ax-4 syl mpan ) BDCDE
     ZBFZRABGZHZBGZABCISUBJRUAJZBFZARUABKUDTAUCTBABLRTMNABOPPQ $.
-
-  $( A variant of ~ ax-9 .  Axiom scheme C10' in [Megill] p. 448 (p. 16 of the
-     preprint).
-
-     This axiom is redundant, as shown by theorem ~ ax9o .
-
-     Normally, ~ ax9o should be used rather than ~ ax-9o , except by theorems
-     specifically studying the latter's properties.  (Contributed by NM,
-     5-Aug-1993.) $)
-  ax-9o $a |- ( A. x ( x = y -> A. x ph ) -> ph ) $.
 
   ${
     $d x y $.
@@ -14757,7 +14737,7 @@ $)
      specifically studying the latter's properties.  (Contributed by NM,
      21-May-2008.) $)
   ax5o $p |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) $=
-    ( wal wi wn ax-4 con2i ax-6 con1i ax-gen ax-5 ax-mp 3syl syl5 ) ACDZPCDZPBE
+    ( wal wi wn ax-4 con2i ax6b con1i ax-gen ax-5 ax-mp 3syl syl5 ) ACDZPCDZPBE
     CDBCDPPFZCDZFZTCDZQSPRCGHRCITPEZCDUAQEUBCPSACIJKTPCLMNPBCLO $.
 
   $( Axiom of Quantified Implication.  This axiom moves a quantifier from
@@ -14790,51 +14770,6 @@ $)
     ( wi wal ax-4 syl5 ax-gen ax-5o ax-mp syl ) ABDZCEZACEZBDZCEZNBCEDMODZCEMPD
     QCNAMBACFLCFGHLOCIJABCIK $.
 
-  $( Show that the original axiom ~ ax-6o can be derived from ~ ax-6 and
-     others.  See ~ ax6 for the rederivation of ~ ax-6 from ~ ax-6o .
-
-     Normally, ~ ax6o should be used rather than ~ ax-6o , except by theorems
-     specifically studying the latter's properties.  (Contributed by NM,
-     21-May-2008.) $)
-  ax6o $p |- ( -. A. x -. A. x ph -> ph ) $=
-    ( wal wn ax-4 ax-6 nsyl4 ) ABCZAHDBCABEABFG $.
-
-  $( Axiom of Quantified Negation.  This axiom is used to manipulate negated
-     quantifiers.  One of the 4 axioms of pure predicate calculus.  Equivalent
-     to axiom scheme C7' in [Megill] p. 448 (p. 16 of the preprint).
-
-     This axiom is redundant, as shown by theorem ~ ax6o .
-
-     Normally, ~ ax6o should be used rather than ~ ax-6o , except by theorems
-     specifically studying the latter's properties.  (Contributed by NM,
-     5-Aug-1993.) $)
-  ax-6o $a |- ( -. A. x -. A. x ph -> ph ) $.
-
-  $( Rederivation of axiom ~ ax-6 from the orginal version, ~ ax-6o .  See
-     ~ ax6o for the derivation of ~ ax-6o from ~ ax-6 .
-
-     This theorem should not be referenced in any proof.  Instead, use ~ ax-6
-     above so that uses of ~ ax-6 can be more easily identified.  (Contributed
-     by NM, 23-May-2008.) $)
-  ax6 $p |- ( -. A. x ph -> A. x -. A. x ph ) $=
-    ( wal wn wi ax-4 id ax-gen ax-5o ax-mp nsyl ax-6o nsyl4 ) ABCZBCZDZBCZNDZBC
-    ZNQREZBCQSETBQONPBFNNEZBCNOEUABNGHANBIJKHPRBIJNBLM $.
-
-  $( The analog in our "pure" predicate calculus of the Brouwer axiom (B) of
-     modal logic S5.  (Contributed by NM, 5-Oct-2005.) $)
-  modal-b $p |- ( ph -> A. x -. A. x -. ph ) $=
-    ( wn wal ax6o con4i ) ACZBDCBDAGBEF $.
-
-  $( Rederivation of axiom ~ ax-9 from the orginal version, ~ ax-9o .  See
-     ~ ax9o for the derivation of ~ ax-9o from ~ ax-9 .  Lemma L18 in [Megill]
-     p. 446 (p. 14 of the preprint).
-
-     This theorem should not be referenced in any proof.  Instead, use ~ ax-9
-     above so that uses of ~ ax-9 can be more easily identified.  (Contributed
-     by NM, 5-Aug-1993.) $)
-  ax9 $p |- -. A. x -. x = y $=
-    ( weq wn wal wi ax-9o modal-b mpg ) ABCZJDAEDZAEFKAKABGJAHI $.
-
   ${
     $d x y $.  $d y ph $.
     $( Theorem showing that in classical logic ~ ax-4 can be derived from
@@ -14856,13 +14791,13 @@ $)
        Note:  In set.mm, predicate calculus axioms introduced from ax4 forward
        are redundant.  We are still in the process of figuring out the
        analogous situation in intuitionistic logic.  Specifically, some or all
-       of axioms ~ ax-4 , ~ ax-5o , ~ ax-6o , ~ ax-9o , ~ ax-10o , ~ ax-11o ,
-       ~ ax-15 , and ~ ax-16 may be proved by theorems ~ ax4 , ~ ax5o ,
-       ~ ax6o , ~ ax9o , ~ ax10o , ~ ax11o , ~ ax15 , and ~ ax16 .  Except for
-       the ones suffixed with o ( ~ ax-5o etc.), we never reference those
-       theorems directly.  Instead, we use the axiom version that immediately
-       follows it.  This allow us to better isolate the uses of the redundant
-       axioms for easier study of subsystems containing them.
+       of axioms ~ ax-4 , ~ ax-5o , ~ ax-10o , ~ ax-11o , ~ ax-15 , and ~ ax-16
+       may be proved by theorems ~ ax4 , ~ ax5o , ~ ax9o , ~ ax10o , ~ ax11o ,
+       ~ ax15 , and ~ ax16 .  Except for the ones suffixed with o ( ~ ax-5o
+       etc.), we never reference those theorems directly.  Instead, we use the
+       axiom version that immediately follows it.  This allow us to better
+       isolate the uses of the redundant axioms for easier study of subsystems
+       containing them.
 
        (Contributed by NM, 21-May-2008.)  (Proof shortened by Scott Fenton,
        24-Jan-2011.) $)
