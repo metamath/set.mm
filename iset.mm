@@ -13253,16 +13253,6 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d x y $.  $d x z $.
-    $( Move existential quantifier in and out of substitution.  (Contributed by
-       NM, 27-Sep-2003.) $)
-    sbex $p |- ( [ z / y ] E. x ph <-> E. x [ z / y ] ph ) $=
-      ( wn wal wsb wex sbn sbal albii bitri xchbinx df-ex sbbii 3bitr4i ) AEZBF
-      ZEZCDGZACDGZEZBFZEABHZCDGUABHTRCDGZUCRCDIUEQCDGZBFUCQBCDJUFUBBACDIKLMUDSC
-      DABNOUABNP $.
-  $}
-
-  ${
     $d x y z $.
     $( Move existential quantifier in and out of substitution.  Identical to
        ~ sbex except that it has an additional distinct variable constraint on
@@ -13271,6 +13261,16 @@ $( The theorems in this section make use of the $d statement. $)
       ( wex cv wsbc wceq wa sb5 ax-17 19.42 exbii excom 3bitr2i bitr4i
       ) ABEZCDFZGZCFRHZAIZCEZBEZACRGZBESTQIZCEUABEZCEUCQCDJUFUECTABTBKL
       MUACBNOUDUBBACDJMP $.
+  $}
+
+  ${
+    $d x y w $.  $d x z w $.  $d w ph $.
+    $( Move existential quantifier in and out of substitution.  (Contributed by
+       NM, 27-Sep-2003.)  (Proof rewritten by Jim Kingdon, 12-Feb-2018.) $)
+    sbex $p |- ( [ z / y ] E. x ph <-> E. x [ z / y ] ph ) $=
+      ( vw wex wsb sbexyz sbbii bitri ax-17 sbco2v exbii 3bitr3i ) ABFZCEGZEDGZ
+      ACEGZEDGZBFZOCDGACDGZBFQRBFZEDGTPUBEDABCEHIRBEDHJOCDEOEKLSUABACDEAEKLMN
+      $.
   $}
 
   ${
