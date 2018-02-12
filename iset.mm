@@ -13230,16 +13230,6 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d x y $.  $d x z $.
-    $( Move universal quantifier in and out of substitution.  (Contributed by
-       NM, 5-Aug-1993.) $)
-    sbal $p |- ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) $=
-      ( weq wal wsb wb a16gb sbimi sbequ5 sbbi 3imtr3i bitr3d sbal1 pm2.61i ) B
-      DEBFZABFZCDGZACDGZBFZHQTSUAQCDGARHZCDGQTSHQUBCDABDBIJBDCDKARCDLMTBDBINABC
-      DOP $.
-  $}
-
-  ${
     $d x y z $.
     $( Move universal quantifier in and out of substitution.  Identical to
        ~ sbal except that it has an additional distinct variable constraint on
@@ -13250,6 +13240,16 @@ $( The theorems in this section make use of the $d statement. $)
       ZUHUHBEUJUFCDBABHIUHUIBUFACDABJKLMUJCFUGNZAOZBEZCEZUHUJULCEZBEUNU
       IUOBACDPQULBCRSUNUKUFOZCEUHUMUPCUKUKBEUMUFUKBTUKABUAUBLUFCDUCMUDU
       E $.
+  $}
+
+  ${
+    $d x y w $.  $d x z w $.  $d w ph $.
+    $( Move universal quantifier in and out of substitution.  (Contributed by
+       NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon, 12-Feb-2018.) $)
+    sbal $p |- ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) $=
+      ( vw wal wsb sbalyz sbbii bitri ax-17 sbco2v albii 3bitr3i ) ABFZCEGZEDGZ
+      ACEGZEDGZBFZOCDGACDGZBFQRBFZEDGTPUBEDABCEHIRBEDHJOCDEOEKLSUABACDEAEKLMN
+      $.
   $}
 
   ${
