@@ -8968,11 +8968,11 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  "Pure" (equality-free) predicate calculus axioms ax-5, ax-7, ax-gen
+  Equality-free predicate calculus axioms ax-5, ax-7, ax-gen
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Declare new symbols needed for pure predicate calculus. $)
+  $( Declare new symbols needed for predicate calculus. $)
   $c A. $. $( "inverted A" universal quantifier (read:  "for all") $)
   $c set $. $( Individual variable type (read:  "the following is an
              individual (set) variable" $)
@@ -9013,15 +9013,15 @@ $)
   ax-5 $a |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) $.
 
   $( Axiom of Quantifier Commutation.  This axiom says universal quantifiers
-     can be swapped.  One of the 4 axioms of pure predicate calculus.  Axiom
-     scheme C6' in [Megill] p. 448 (p. 16 of the preprint).  Also appears as
-     Lemma 12 of [Monk2] p. 109 and Axiom C5-3 of [Monk2] p. 113.  (Contributed
-     by NM, 5-Aug-1993.) $)
+     can be swapped.  One of the predicate logic axioms which do not involve
+     equality.  Axiom scheme C6' in [Megill] p. 448 (p. 16 of the preprint).
+     Also appears as Lemma 12 of [Monk2] p. 109 and Axiom C5-3 of [Monk2]
+     p. 113.  (Contributed by NM, 5-Aug-1993.) $)
   ax-7 $a |- ( A. x A. y ph -> A. y A. x ph ) $.
 
   ${
     ax-g.1 $e |- ph $.
-    $( Rule of Generalization.  The postulated inference rule of pure predicate
+    $( Rule of Generalization.  The postulated inference rule of predicate
        calculus.  See e.g.  Rule 2 of [Hamilton] p. 74.  This rule says that if
        something is unconditionally true, then it is true for all values of a
        variable.  For example, if we have proved ` x = x ` , we can conclude
@@ -9662,11 +9662,9 @@ $)
      specific ` x ` (that would typically occur as a free variable in the wff
      substituted for ` ph ` ).  (A free variable is one that does not occur in
      the scope of a quantifier: ` x ` and ` y ` are both free in ` x = y ` ,
-     but only ` x ` is free in ` A. y x = y ` .)  This is one of the axioms of
-     what we call "pure" predicate calculus ( ~ ax-4 through ~ ax-7 plus rule
-     ~ ax-gen ).  Axiom scheme C5' in [Megill] p. 448 (p. 16 of the preprint).
-     Also appears as Axiom B5 of [Tarski] p. 67 (under his system S2, defined
-     in the last paragraph on p. 77).
+     but only ` x ` is free in ` A. y x = y ` .)  Axiom scheme C5' in [Megill]
+     p. 448 (p. 16 of the preprint).  Also appears as Axiom B5 of [Tarski]
+     p. 67 (under his system S2, defined in the last paragraph on p. 77).
 
      Note that the converse of this axiom does not hold in general, but a
      weaker inference form of the converse holds and is expressed as rule
@@ -9908,7 +9906,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    "Pure" predicate calculus including ax-4, without distinct variables
+    Predicate calculus including ax-4, without distinct variables
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
@@ -10602,7 +10600,7 @@ $)
       ( wn wnf wtru a1i nfnd trud ) ADBEFABABEFCGHI $.
   $}
 
-  $( The analog in our "pure" predicate calculus of axiom 5 of modal logic S5.
+  $( The analog in our predicate calculus of axiom 5 of modal logic S5.
      (Contributed by NM, 5-Oct-2005.) $)
   modal-5 $p |- ( -. A. x -. ph -> A. x -. A. x -. ph ) $=
     ( wn hbn1 ) ACBD $.
@@ -14793,10 +14791,9 @@ $)
      outside to inside an implication, quantifying ` ps ` .  Notice that ` x `
      must not be a free variable in the antecedent of the quantified
      implication, and we express this by binding ` ph ` to "protect" the axiom
-     from a ` ph ` containing a free ` x ` .  One of the 4 axioms of "pure"
-     predicate calculus.  Axiom scheme C4' in [Megill] p. 448 (p. 16 of the
-     preprint).  It is a special case of Lemma 5 of [Monk2] p. 108 and Axiom 5
-     of [Mendelson] p. 69.
+     from a ` ph ` containing a free ` x ` .  Axiom scheme C4' in [Megill]
+     p. 448 (p. 16 of the preprint).  It is a special case of Lemma 5 of
+     [Monk2] p. 108 and Axiom 5 of [Mendelson] p. 69.
 
      In classical logic, this axiom is redundant, as shown by theorem ~ ax5o .
      The current proof of ~ ax5o is not valid intuitionistically.
@@ -14827,15 +14824,6 @@ $)
        we do not have a corresponding result (or proof of independence) for
        intuitionistic logic yet.  The proof uses ideas from the proof of Lemma
        21 of [Monk2] p. 114.
-
-       This theorem should not be referenced in any proof.  Instead, we will
-       use ~ ax-4 so that explicit uses of ~ ax-4 can be more easily
-       identified.  In particular, this will more cleanly separate out the
-       theorems of "pure" predicate calculus that don't involve equality or
-       distinct variables.  A beginner may wish to accept ~ ax-4 a priori, so
-       that the proof of this theorem ( ~ ax4 ), which involves equality as
-       well as the distinct variable requirements of ~ ax-17 , can be put off
-       until those axioms are studied.
 
        Note:  In set.mm, predicate calculus axioms introduced from ax4 forward
        are redundant.  We are still in the process of figuring out the
