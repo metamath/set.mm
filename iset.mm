@@ -1,4 +1,4 @@
-$( iset.mm - Version of 10-Feb-2018
+$( iset.mm - Version of 12-Feb-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -12862,12 +12862,24 @@ $( The theorems in this section make use of the $d statement. $)
 
   ${
     $d x z $.  $d y z $.
-    sbco2v.1 $e |- ( ph -> A. z ph ) $.
+    sbco2vlem.1 $e |- ( ph -> A. z ph ) $.
     $( This is a version of ~ sbco2 where ` z ` is distinct from ` x ` and from
-       ` y ` .  (Contributed by Jim Kingdon, 25-Dec-2017.)  (One distinct
-       variable constraint removed by Jim Kingdon, 3-Feb-2018.) $)
-    sbco2v $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
+       ` y ` .  It is a lemma on the way to proving ~ sbco2v which only
+       requires that ` z ` and ` x ` be distinct.  (Contributed by Jim Kingdon,
+       25-Dec-2017.)  (One distinct variable constraint removed by Jim Kingdon,
+       3-Feb-2018.) $)
+    sbco2vlem $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
       ( wsb hbsbv sbequ sbie ) ABDFABCFDCABCDEGADCBHI $.
+  $}
+
+  ${
+    $d x z w $.  $d y w $.  $d z w $.  $d ph w $.
+    sbco2v.1 $e |- ( ph -> A. z ph ) $.
+    $( This is a version of ~ sbco2 where ` z ` is distinct from ` x ` .
+       (Contributed by Jim Kingdon, 12-Feb-2018.) $)
+    sbco2v $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
+      ( vw wsb sbco2vlem sbbii ax-17 3bitr3i ) ABDGZDFGZFCGABFGZFCGLDCGABCGMNFCABF
+      DEHILDCFLFJHABCFAFJHK $.
   $}
 
   ${
