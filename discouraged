@@ -1194,6 +1194,13 @@
 "ax-pre-mulgt0" is used by "axmulgt0".
 "ax-pre-sup" is used by "axsup".
 "ax10lem17ALT" is used by "ax10lem18ALT".
+"ax10lem2OLD" is used by "ax10lem3OLD".
+"ax10lem3OLD" is used by "a12stdy1-x12".
+"ax10lem3OLD" is used by "a12stdy2-x12".
+"ax10lem3OLD" is used by "ax10lem17ALT".
+"ax10lem3OLD" is used by "dvelimvNEW7".
+"ax10lem3OLD" is used by "dvelimvOLD".
+"ax10lem3OLD" is used by "hbae-x12".
 "ax11" is used by "ax10o-o".
 "ax11inda2" is used by "ax11inda".
 "ax11indalem" is used by "ax11inda2".
@@ -13285,6 +13292,8 @@ New usage of "ax10-16" is discouraged (0 uses).
 New usage of "ax10from10o" is discouraged (0 uses).
 New usage of "ax10lem17ALT" is discouraged (1 uses).
 New usage of "ax10lem18ALT" is discouraged (0 uses).
+New usage of "ax10lem2OLD" is discouraged (1 uses).
+New usage of "ax10lem3OLD" is discouraged (6 uses).
 New usage of "ax10o-o" is discouraged (0 uses).
 New usage of "ax11" is discouraged (1 uses).
 New usage of "ax11a2-o" is discouraged (0 uses).
@@ -14610,6 +14619,7 @@ New usage of "dvelimALT" is discouraged (1 uses).
 New usage of "dvelimALTNEW7" is discouraged (0 uses).
 New usage of "dvelimf-o" is discouraged (3 uses).
 New usage of "dvelimfALT2OLD" is discouraged (0 uses).
+New usage of "dvelimvOLD" is discouraged (0 uses).
 New usage of "dvh2dimatN" is discouraged (0 uses).
 New usage of "dvh3dim3N" is discouraged (0 uses).
 New usage of "dvh3dimatN" is discouraged (1 uses).
@@ -17400,6 +17410,8 @@ Proof modification of "ax10ext" is discouraged (277 steps).
 Proof modification of "ax10from10o" is discouraged (28 steps).
 Proof modification of "ax10lem17ALT" is discouraged (242 steps).
 Proof modification of "ax10lem18ALT" is discouraged (95 steps).
+Proof modification of "ax10lem2OLD" is discouraged (84 steps).
+Proof modification of "ax10lem3OLD" is discouraged (48 steps).
 Proof modification of "ax10o" is discouraged (47 steps).
 Proof modification of "ax10o-o" is discouraged (47 steps).
 Proof modification of "ax10oNEW7" is discouraged (47 steps).
@@ -17570,6 +17582,7 @@ Proof modification of "dvelimALT" is discouraged (106 steps).
 Proof modification of "dvelimALTNEW7" is discouraged (106 steps).
 Proof modification of "dvelimf-o" is discouraged (129 steps).
 Proof modification of "dvelimfALT2OLD" is discouraged (61 steps).
+Proof modification of "dvelimvOLD" is discouraged (235 steps).
 Proof modification of "e00" is discouraged (7 steps).
 Proof modification of "e000" is discouraged (13 steps).
 Proof modification of "e001" is discouraged (16 steps).
