@@ -1201,6 +1201,8 @@
 "ax10lem3OLD" is used by "dvelimvNEW7".
 "ax10lem3OLD" is used by "dvelimvOLD".
 "ax10lem3OLD" is used by "hbae-x12".
+"ax10lem4OLD" is used by "ax10lem5OLD".
+"ax10lem5OLD" is used by "ax10OLD".
 "ax11" is used by "ax10o-o".
 "ax11inda2" is used by "ax11inda".
 "ax11indalem" is used by "ax11inda2".
@@ -13289,11 +13291,14 @@ New usage of "ax-pre-mulgt0" is discouraged (1 uses).
 New usage of "ax-pre-sup" is discouraged (1 uses).
 New usage of "ax1" is discouraged (0 uses).
 New usage of "ax10-16" is discouraged (0 uses).
+New usage of "ax10OLD" is discouraged (0 uses).
 New usage of "ax10from10o" is discouraged (0 uses).
 New usage of "ax10lem17ALT" is discouraged (1 uses).
 New usage of "ax10lem18ALT" is discouraged (0 uses).
 New usage of "ax10lem2OLD" is discouraged (1 uses).
 New usage of "ax10lem3OLD" is discouraged (6 uses).
+New usage of "ax10lem4OLD" is discouraged (1 uses).
+New usage of "ax10lem5OLD" is discouraged (1 uses).
 New usage of "ax10o-o" is discouraged (0 uses).
 New usage of "ax11" is discouraged (1 uses).
 New usage of "ax11a2-o" is discouraged (0 uses).
@@ -17406,12 +17411,14 @@ Proof modification of "anmp" is discouraged (8 steps).
 Proof modification of "avril1" is discouraged (194 steps).
 Proof modification of "ax1" is discouraged (3 steps).
 Proof modification of "ax10-16" is discouraged (154 steps).
+Proof modification of "ax10OLD" is discouraged (96 steps).
 Proof modification of "ax10ext" is discouraged (277 steps).
 Proof modification of "ax10from10o" is discouraged (28 steps).
 Proof modification of "ax10lem17ALT" is discouraged (242 steps).
 Proof modification of "ax10lem18ALT" is discouraged (95 steps).
 Proof modification of "ax10lem2OLD" is discouraged (84 steps).
 Proof modification of "ax10lem3OLD" is discouraged (48 steps).
+Proof modification of "ax10lem5OLD" is discouraged (48 steps).
 Proof modification of "ax10o" is discouraged (47 steps).
 Proof modification of "ax10o-o" is discouraged (47 steps).
 Proof modification of "ax10oNEW7" is discouraged (47 steps).
