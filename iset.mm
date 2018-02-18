@@ -4475,8 +4475,10 @@ $)
      by Mario Carneiro, 31-Jan-2015.) $)
   ax-in2 $a |- ( -. ph -> ( ph -> ps ) ) $.
 
-  $( Reductio ad absurdum.  Theorem *2.01 of [WhiteheadRussell] p. 100.
-     (Contributed by Mario Carneiro, 12-May-2015.) $)
+  $( Reductio ad absurdum.  Theorem *2.01 of [WhiteheadRussell] p. 100.  This
+     is valid intuitionistically (in the terminology of [Bauer] p. 482 it is a
+     proof of negation not a proof by contradiction); compare with ~ pm2.18
+     which is not.  (Contributed by Mario Carneiro, 12-May-2015.) $)
   pm2.01 $p |- ( ( ph -> -. ph ) -> -. ph ) $=
     ( ax-in1 ) AB $.
 
@@ -5806,7 +5808,8 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
   $}
 
   $( Proof by contradiction.  Theorem *2.18 of [WhiteheadRussell] p. 103.  Also
-     called the Law of Clavius.  (Contributed by NM, 5-Aug-1993.) $)
+     called the Law of Clavius.  This is not valid intuitionistically, but
+     compare with ~ pm2.01 which is.  (Contributed by NM, 5-Aug-1993.) $)
   pm2.18 $p |- ( ( -. ph -> ph ) -> ph ) $=
     ( wn wi pm2.21 a2i con4d pm2.43i ) ABZACZAIAIHAIBZAJDEFG $.
 
@@ -11922,23 +11925,6 @@ $)
   sb4b $p |- ( -. A. x x = y -> ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) ) $=
     ( weq wal wn wsb wi sb4 sb2 impbid1 ) BCDZBEFABCGLAHBEABCIABCJK $.
 
-  $( A classical (not intuitionistic) alternate definition of proper
-     substitution that, like ~ df-sb , mixes free and bound variables to avoid
-     distinct variable requirements.  (Contributed by NM, 17-Feb-2005.) $)
-  dfsb2 $p |- ( [ y / x ] ph <->
-              ( ( x = y /\ ph ) \/ A. x ( x = y -> ph ) ) ) $=
-    ( wsb weq wa wi wal wo sbequ2 a4s ax-4 jctild orc wn sb4 olc pm2.61i sbequ1
-    syl6 imp sb2 jaoi impbii ) ABCDZBCEZAFZUFAGBHZIZUFBHZUEUIGUJUEUGUIUJUEAUFUF
-    UEAGBABCJKUFBLMUGUHNTUJOUEUHUIABCPUHUGQTRUGUEUHUFAUEABCSUAABCUBUCUD $.
-
-  $( A classical (not intuitionistic) alternate definition of proper
-     substitution ~ df-sb that uses only primitive connectives (no defined
-     terms) on the right-hand side.  (Contributed by NM, 6-Mar-2007.) $)
-  dfsb3 $p |- ( [ y / x ] ph <->
-              ( ( x = y -> -. ph ) -> A. x ( x = y -> ph ) ) ) $=
-    ( weq wa wi wal wo wn wsb df-or dfsb2 imnan imbi1i 3bitr4i ) BCDZAEZPAFBGZH
-    QIZRFABCJPAIFZRFQRKABCLTSRPAMNO $.
-
   $( Bound-variable hypothesis builder for substitution.  (Contributed by NM,
      5-Aug-1993.) $)
   hbsb2 $p |- ( -. A. x x = y -> ( [ y / x ] ph -> A. x [ y / x ] ph ) ) $=
@@ -14659,6 +14645,38 @@ $)
   imimorb $p |- ( ( ( ps -> ch ) -> ( ph -> ch ) ) <->
                   ( ph -> ( ps \/ ch ) ) ) $=
     ( wi wo bi2.04 dfor2 imbi2i bitr4i ) BCDZACDDAJCDZDABCEZDJACFLKABCGHI $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+             Additional substitution theorems (classical)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+We define substitution via ~ df-sb (and also have theorems such
+as ~ dfsb7 or ~ dfsb7a ), and most of the substitution theorems such as
+~ sbim , ~ sbequ12 , or ~ sbidm have been proven intuitionistically.
+
+Here we collect substitution theorems which have not been proven
+intuitionistically, most of which probably do not have intuitionistic
+proofs.
+$)
+
+  $( A classical (not intuitionistic) alternate definition of proper
+     substitution that, like ~ df-sb , mixes free and bound variables to avoid
+     distinct variable requirements.  (Contributed by NM, 17-Feb-2005.) $)
+  dfsb2 $p |- ( [ y / x ] ph <->
+              ( ( x = y /\ ph ) \/ A. x ( x = y -> ph ) ) ) $=
+    ( wsb weq wa wi wal wo sbequ2 a4s ax-4 jctild orc wn sb4 olc pm2.61i sbequ1
+    syl6 imp sb2 jaoi impbii ) ABCDZBCEZAFZUFAGBHZIZUFBHZUEUIGUJUEUGUIUJUEAUFUF
+    UEAGBABCJKUFBLMUGUHNTUJOUEUHUIABCPUHUGQTRUGUEUHUFAUEABCSUAABCUBUCUD $.
+
+  $( A classical (not intuitionistic) alternate definition of proper
+     substitution ~ df-sb that uses only connectives on the right-hand side
+     which are, in classical logic, primitive rather than defined.
+     (Contributed by NM, 6-Mar-2007.) $)
+  dfsb3 $p |- ( [ y / x ] ph <->
+              ( ( x = y -> -. ph ) -> A. x ( x = y -> ph ) ) ) $=
+    ( weq wa wi wal wo wn wsb df-or dfsb2 imnan imbi1i 3bitr4i ) BCDZAEZPAFBGZH
+    QIZRFABCJPAIFZRFQRKABCLTSRPAMNO $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
