@@ -9431,13 +9431,6 @@ $)
       ( wn wex alnex mpgbi ) ADABEDBABFCG $.
   $}
 
-  $( Classical definition of existential quantification.  This does not hold
-     intuitionistically, so it depends on ~ ax-3 for its proof.  Definition of
-     [Margaris] p. 49.  (Contributed by NM, 2-Feb-2015.)  (Revised by Mario
-     Carneiro, 12-May-2015.) $)
-  df-ex $p |- ( E. x ph <-> -. A. x -. ph ) $=
-    ( wn wal wex alnex con2bii ) ACBDABEABFG $.
-
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     Introduce equality axioms
@@ -13398,6 +13391,13 @@ $)
      uniqueness. That section, at least for now, is heavily based on
      classical logic, but probably intuitionistic proofs can be found
      for much of it. $)
+
+  $( Classical definition of existential quantification.  This does not hold
+     intuitionistically, so it depends on ~ ax-3 for its proof.  Definition of
+     [Margaris] p. 49.  (Contributed by NM, 2-Feb-2015.)  (Revised by Mario
+     Carneiro, 12-May-2015.) $)
+  df-ex $p |- ( E. x ph <-> -. A. x -. ph ) $=
+    ( wn wal wex alnex con2bii ) ACBDABEABFG $.
 
   $( Theorem 19.6 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
   alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
