@@ -13108,14 +13108,14 @@ $( The theorems in this section make use of the $d statement. $)
     $( Reversed double substitution.  (Contributed by NM, 3-Feb-2005.) $)
     2sb5rf $p |- ( ph <->
                 E. z E. w ( ( z = x /\ w = y ) /\ [ z / x ] [ w / y ] ph ) ) $=
-      ( weq wsb wex sb5rf 19.42v sbcom2 anbi2i anass bitri exbii hbsb 3bitr4ri
+      ( weq wsb wex sb5rf 19.42v sbcom2 anbi2i anass bitri exbii hbsbv 3bitr4ri
       wa ) ADBHZABDIZTZDJUAECHZTZACEIBDIZTZEJZDJABDFKUCUHDUAUDUBCEIZTZTZEJUAUJE
       JZTUHUCUAUJELUGUKEUGUEUITUKUFUIUEACEBDMNUAUDUIOPQUBULUAUBCEABDEGRKNSQP $.
 
     $( Reversed double substitution.  (Contributed by NM, 3-Feb-2005.) $)
     2sb6rf $p |- ( ph <->
                 A. z A. w ( ( z = x /\ w = y ) -> [ z / x ] [ w / y ] ph ) ) $=
-      ( weq wsb wi wal wa sb6rf 19.21v sbcom2 imbi2i impexp bitri albii hbsb
+      ( weq wsb wi wal wa sb6rf 19.21v sbcom2 imbi2i impexp bitri albii hbsbv
       3bitr4ri ) ADBHZABDIZJZDKUBECHZLZACEIBDIZJZEKZDKABDFMUDUIDUBUEUCCEIZJZJZE
       KUBUKEKZJUIUDUBUKENUHULEUHUFUJJULUGUJUFACEBDOPUBUEUJQRSUCUMUBUCCEABDEGTMP
       UASR $.
