@@ -13375,9 +13375,11 @@ $( The theorems in this section make use of the $d statement. $)
   ${
     $d w z x $.  $d w y $.
     $( Quantifier introduction when one pair of variables is distinct.
-       (Contributed by NM, 2-Jan-2002.) $)
+       (Contributed by NM, 2-Jan-2002.)  (Proof rewritten by Jim Kingdon,
+       19-Feb-2018.) $)
     dveeq1 $p |- ( -. A. x x = y -> ( y = z -> A. x y = z ) ) $=
-      ( vw weq ax-17 equequ1 dvelim ) DCEZBCEABDIAFDBCGH $.
+      ( weq wal wn dveeq2 equcom albii 3imtr3g ) ABDAEFCBDZKAEBCDZLAEABCGCBHZKL
+      AMIJ $.
   $}
 
   ${
