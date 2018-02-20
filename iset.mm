@@ -12790,6 +12790,11 @@ $( The theorems in this section make use of the $d statement. $)
     hbs1 $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
       ( cv wsbc wceq wi wal sb6 ax-ial sylbi albii sylibr ) ABCDZEZBDNF
       AGZBHZBHZOBHOQRABCIZPBJKOQBSLM $.
+
+    $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are
+       distinct.  (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    nfs1v $p |- F/ x [ y / x ] ph $=
+      ( wsb hbs1 nfi ) ABCDBABCEF $.
   $}
 
   ${
