@@ -12969,10 +12969,32 @@ $( The theorems in this section make use of the $d statement. $)
       PQ $.
   $}
 
+  ${
+    $d x z $.
+    sbco2vd.1 $e |- ( ph -> A. x ph ) $.
+    sbco2vd.2 $e |- ( ph -> A. z ph ) $.
+    sbco2vd.3 $e |- ( ph -> ( ps -> A. z ps ) ) $.
+    $( Version of ~ sbco2d with a distinct variable constraint between ` x `
+       and ` z ` .  (Contributed by Jim Kingdon, 19-Feb-2018.) $)
+    sbco2vd $p |- ( ph -> ( [ y / z ] [ z / x ] ps <-> [ y / x ] ps ) ) $=
+      ( wsb wi hbim1 sbco2v sbrim sbbii bitri 3bitr3i pm5.74ri ) ABCEIZEDIZBCDIZ
+      ABJZCEIZEDIZUACDIASJZATJUACDEABEGHKLUCARJZEDIUDUBUEEDABCEFMNAREDGMOABCDFM
+      PQ $.
+  $}
+
   $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
   sbco $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
     ( wsb wb weq equsb2 sbequ12 bicomd sbimi ax-mp sbbi mpbi ) ACBDZAEZBCDZNBCD
     ABCDECBFZBCDPBCGQOBCQANACBHIJKNABCLM $.
+
+  ${
+    $d x y $.
+    $( Version of ~ sbco3 with a distinct variable constraint between ` x ` and
+       ` y ` .  (Contributed by Jim Kingdon, 19-Feb-2018.) $)
+    sbco3v $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
+      ( wsb nfs1v nfri sbco2v sbco sbbii bitr3i ) ABCEZCDELCBEZBDEACBEZBDELCDBLB
+      ABCFGHMNBDACBIJK $.
+  $}
 
   $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
   sbco3 $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
