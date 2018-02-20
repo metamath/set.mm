@@ -12766,23 +12766,6 @@ $)
 $( The theorems in this section make use of the $d statement. $)
 
   ${
-    $d y z $.  $d x y $.
-    $( Lemma for ~ equsb3 .  (Contributed by NM, 4-Dec-2005.)  (Proof shortened
-       by Andrew Salmon, 14-Jun-2011.) $)
-    equsb3lem $p |- ( [ x / y ] y = z <-> x = z ) $=
-      ( cv wceq ax-17 equequ1 sbie ) BDCDZEADIEZBAJBFBACGH $.
-  $}
-
-  ${
-    $d w y z $.  $d w x $.
-    $( Substitution applied to an atomic wff.  (Contributed by Raph Levien and
-       FL, 4-Dec-2005.) $)
-    equsb3 $p |- ( [ x / y ] y = z <-> x = z ) $=
-      ( vw weq wsb equsb3lem sbbii ax-17 sbco2 3bitr3i ) BCEZBDFZDAFDCEZDAFLBAF
-      ACEMNDADBCGHLBADLDIJADCGK $.
-  $}
-
-  ${
     $d x y $.
     $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are
        distinct.  (Contributed by NM, 5-Aug-1993.)  (Proof by Jim Kingdon,
@@ -12790,6 +12773,11 @@ $( The theorems in this section make use of the $d statement. $)
     hbs1 $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
       ( cv wsbc wceq wi wal sb6 ax-ial sylbi albii sylibr ) ABCDZEZBDNF
       AGZBHZBHZOBHOQRABCIZPBJKOQBSLM $.
+
+    $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are
+       distinct.  (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    nfs1v $p |- F/ x [ y / x ] ph $=
+      ( wsb hbs1 nfi ) ABCDBABCEF $.
   $}
 
   ${
@@ -12857,6 +12845,23 @@ $( The theorems in this section make use of the $d statement. $)
     sbco2v $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
       ( vw wsb sbco2vlem sbbii ax-17 3bitr3i ) ABDGZDFGZFCGABFGZFCGLDCGABCGMNFCABF
       DEHILDCFLFJHABCFAFJHK $.
+  $}
+
+  ${
+    $d y z $.  $d x y $.
+    $( Lemma for ~ equsb3 .  (Contributed by NM, 4-Dec-2005.)  (Proof shortened
+       by Andrew Salmon, 14-Jun-2011.) $)
+    equsb3lem $p |- ( [ x / y ] y = z <-> x = z ) $=
+      ( cv wceq ax-17 equequ1 sbie ) BDCDZEADIEZBAJBFBACGH $.
+  $}
+
+  ${
+    $d w y z $.  $d w x $.
+    $( Substitution applied to an atomic wff.  (Contributed by Raph Levien and
+       FL, 4-Dec-2005.) $)
+    equsb3 $p |- ( [ x / y ] y = z <-> x = z ) $=
+      ( vw weq wsb equsb3lem sbbii ax-17 sbco2v 3bitr3i ) BCEZBDFZDAFDCEZDAFLBAF
+      ACEMNDADBCGHLBADLDIJADCGK $.
   $}
 
   ${
@@ -12964,10 +12969,32 @@ $( The theorems in this section make use of the $d statement. $)
       PQ $.
   $}
 
+  ${
+    $d x z $.
+    sbco2vd.1 $e |- ( ph -> A. x ph ) $.
+    sbco2vd.2 $e |- ( ph -> A. z ph ) $.
+    sbco2vd.3 $e |- ( ph -> ( ps -> A. z ps ) ) $.
+    $( Version of ~ sbco2d with a distinct variable constraint between ` x `
+       and ` z ` .  (Contributed by Jim Kingdon, 19-Feb-2018.) $)
+    sbco2vd $p |- ( ph -> ( [ y / z ] [ z / x ] ps <-> [ y / x ] ps ) ) $=
+      ( wsb wi hbim1 sbco2v sbrim sbbii bitri 3bitr3i pm5.74ri ) ABCEIZEDIZBCDIZ
+      ABJZCEIZEDIZUACDIASJZATJUACDEABEGHKLUCARJZEDIUDUBUEEDABCEFMNAREDGMOABCDFM
+      PQ $.
+  $}
+
   $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
   sbco $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
     ( wsb wb weq equsb2 sbequ12 bicomd sbimi ax-mp sbbi mpbi ) ACBDZAEZBCDZNBCD
     ABCDECBFZBCDPBCGQOBCQANACBHIJKNABCLM $.
+
+  ${
+    $d x y $.
+    $( Version of ~ sbco3 with a distinct variable constraint between ` x ` and
+       ` y ` .  (Contributed by Jim Kingdon, 19-Feb-2018.) $)
+    sbco3v $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
+      ( wsb nfs1v nfri sbco2v sbco sbbii bitr3i ) ABCEZCDELCBEZBDEACBEZBDELCDBLB
+      ABCFGHMNBDACBIJK $.
+  $}
 
   $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
   sbco3 $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
@@ -13348,9 +13375,11 @@ $( The theorems in this section make use of the $d statement. $)
   ${
     $d w z x $.  $d w y $.
     $( Quantifier introduction when one pair of variables is distinct.
-       (Contributed by NM, 2-Jan-2002.) $)
+       (Contributed by NM, 2-Jan-2002.)  (Proof rewritten by Jim Kingdon,
+       19-Feb-2018.) $)
     dveeq1 $p |- ( -. A. x x = y -> ( y = z -> A. x y = z ) ) $=
-      ( vw weq ax-17 equequ1 dvelim ) DCEZBCEABDIAFDBCGH $.
+      ( weq wal wn dveeq2 equcom albii 3imtr3g ) ABDAEFCBDZKAEBCDZLAEABCGCBHZKL
+      AMIJ $.
   $}
 
   ${
