@@ -13019,6 +13019,7 @@ New usage of "5oalem7" is discouraged (1 uses).
 New usage of "a16g-o" is discouraged (1 uses).
 New usage of "a16gALT" is discouraged (0 uses).
 New usage of "a16gALTOLD7" is discouraged (0 uses).
+New usage of "a16gOLD" is discouraged (0 uses).
 New usage of "a1iiALT" is discouraged (0 uses).
 New usage of "a5i-o" is discouraged (5 uses).
 New usage of "a9e2eq" is discouraged (3 uses).
@@ -13229,7 +13230,7 @@ New usage of "ax11indi" is discouraged (0 uses).
 New usage of "ax11indn" is discouraged (1 uses).
 New usage of "ax11v2-o" is discouraged (1 uses).
 New usage of "ax11vALT" is discouraged (0 uses).
-New usage of "ax12-OLD" is discouraged (0 uses).
+New usage of "ax12OLD" is discouraged (0 uses).
 New usage of "ax12bOLD" is discouraged (0 uses).
 New usage of "ax12from12o" is discouraged (0 uses).
 New usage of "ax12oOLD" is discouraged (0 uses).
@@ -13266,7 +13267,7 @@ New usage of "ax6" is discouraged (3 uses).
 New usage of "ax67" is discouraged (2 uses).
 New usage of "ax67to6" is discouraged (1 uses).
 New usage of "ax67to7" is discouraged (0 uses).
-New usage of "ax9-OLD" is discouraged (0 uses).
+New usage of "ax9OLD" is discouraged (0 uses).
 New usage of "ax9from9o" is discouraged (1 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
 New usage of "axac2" is discouraged (0 uses).
@@ -16896,6 +16897,7 @@ New usage of "specval" is discouraged (1 uses).
 New usage of "spfalwOLD" is discouraged (0 uses).
 New usage of "spimOLD" is discouraged (0 uses).
 New usage of "spimeOLD" is discouraged (0 uses).
+New usage of "spimedOLD" is discouraged (0 uses).
 New usage of "spimehOLD" is discouraged (0 uses).
 New usage of "spimtOLD" is discouraged (0 uses).
 New usage of "spnfwOLD" is discouraged (0 uses).
@@ -17251,6 +17253,7 @@ Proof modification of "4exdistrOLD" is discouraged (132 steps).
 Proof modification of "a16g-o" is discouraged (40 steps).
 Proof modification of "a16gALT" is discouraged (40 steps).
 Proof modification of "a16gALTOLD7" is discouraged (40 steps).
+Proof modification of "a16gOLD" is discouraged (112 steps).
 Proof modification of "a1ii" is discouraged (9 steps).
 Proof modification of "a1iiALT" is discouraged (8 steps).
 Proof modification of "a9e2eq" is discouraged (111 steps).
@@ -17297,7 +17300,7 @@ Proof modification of "ax11indi" is discouraged (83 steps).
 Proof modification of "ax11indn" is discouraged (70 steps).
 Proof modification of "ax11v2-o" is discouraged (107 steps).
 Proof modification of "ax11vALT" is discouraged (81 steps).
-Proof modification of "ax12-OLD" is discouraged (72 steps).
+Proof modification of "ax12OLD" is discouraged (72 steps).
 Proof modification of "ax12bOLD" is discouraged (81 steps).
 Proof modification of "ax12from12o" is discouraged (72 steps).
 Proof modification of "ax12oOLD" is discouraged (31 steps).
@@ -17955,6 +17958,7 @@ Proof modification of "sotriOLD" is discouraged (83 steps).
 Proof modification of "spOLD" is discouraged (76 steps).
 Proof modification of "spfalwOLD" is discouraged (15 steps).
 Proof modification of "spimeOLD" is discouraged (33 steps).
+Proof modification of "spimedOLD" is discouraged (39 steps).
 Proof modification of "spimehOLD" is discouraged (91 steps).
 Proof modification of "spimtOLD" is discouraged (77 steps).
 Proof modification of "spnfwOLD" is discouraged (20 steps).
