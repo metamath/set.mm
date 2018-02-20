@@ -12766,23 +12766,6 @@ $)
 $( The theorems in this section make use of the $d statement. $)
 
   ${
-    $d y z $.  $d x y $.
-    $( Lemma for ~ equsb3 .  (Contributed by NM, 4-Dec-2005.)  (Proof shortened
-       by Andrew Salmon, 14-Jun-2011.) $)
-    equsb3lem $p |- ( [ x / y ] y = z <-> x = z ) $=
-      ( cv wceq ax-17 equequ1 sbie ) BDCDZEADIEZBAJBFBACGH $.
-  $}
-
-  ${
-    $d w y z $.  $d w x $.
-    $( Substitution applied to an atomic wff.  (Contributed by Raph Levien and
-       FL, 4-Dec-2005.) $)
-    equsb3 $p |- ( [ x / y ] y = z <-> x = z ) $=
-      ( vw weq wsb equsb3lem sbbii ax-17 sbco2 3bitr3i ) BCEZBDFZDAFDCEZDAFLBAF
-      ACEMNDADBCGHLBADLDIJADCGK $.
-  $}
-
-  ${
     $d x y $.
     $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are
        distinct.  (Contributed by NM, 5-Aug-1993.)  (Proof by Jim Kingdon,
@@ -12862,6 +12845,23 @@ $( The theorems in this section make use of the $d statement. $)
     sbco2v $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
       ( vw wsb sbco2vlem sbbii ax-17 3bitr3i ) ABDGZDFGZFCGABFGZFCGLDCGABCGMNFCABF
       DEHILDCFLFJHABCFAFJHK $.
+  $}
+
+  ${
+    $d y z $.  $d x y $.
+    $( Lemma for ~ equsb3 .  (Contributed by NM, 4-Dec-2005.)  (Proof shortened
+       by Andrew Salmon, 14-Jun-2011.) $)
+    equsb3lem $p |- ( [ x / y ] y = z <-> x = z ) $=
+      ( cv wceq ax-17 equequ1 sbie ) BDCDZEADIEZBAJBFBACGH $.
+  $}
+
+  ${
+    $d w y z $.  $d w x $.
+    $( Substitution applied to an atomic wff.  (Contributed by Raph Levien and
+       FL, 4-Dec-2005.) $)
+    equsb3 $p |- ( [ x / y ] y = z <-> x = z ) $=
+      ( vw weq wsb equsb3lem sbbii ax-17 sbco2v 3bitr3i ) BCEZBDFZDAFDCEZDAFLBAF
+      ACEMNDADBCGHLBADLDIJADCGK $.
   $}
 
   ${
