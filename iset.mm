@@ -13366,10 +13366,12 @@ $( The theorems in this section make use of the $d statement. $)
        version that doesn't use ~ ax-11 .)  (Contributed by NM,
        17-May-2008.) $)
     dvelimALT $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
-      ( weq wal wn wi ax-17 hba1 ax16ALT a1i hbimd a1d wa hbn hban ax-12 imp ex
-      pm2.61i hbald equsal albii 3imtr3g ) CDHZCIZJZEDHZAKZEIZUNCIBBCIUKUMCEUKE
-      LCEHZCIZUKUMUMCIKZKUPUQUKUPULACUOCMZULCENAACIKZUPFOPQUPJZUKUQUTUKRZULACUT
-      UKCUPCURSUJCUICMSTUTUKULULCIKEDCUAUBUSVAFOPUCUDUEABEDBELGUFZUNBCVBUGUH $.
+      ( weq wal wn wi wnf nfv wo ax-i12 orcom orbi2i mpbi a1i nfimd orass mpbir
+      nfa1 ax16ALT nfd nfi df-nf id sylbir jaoi orim1i ax-mp nfald ax-17 equsal
+      ori nfbii sylib nfrd ) CDHCIZJZBCVAEDHZAKZEIZCLBCLVAVCCEVAEMUTVCCLZVEUTNZ
+      UTVENCEHZCIZVBVBCIKCIZNZUTNZVFVKVHVIUTNZNZVHUTVINZNVMEDCOVNVLVHUTVIPQRVHV
+      IUTUAUBVJVEUTVHVEVIVHVBACVHVBCVGCUCVBCEUDUEACLZVHACFUFZSTVIVBCLZVEVBCUGVQ
+      VBACVQUHVOVQVPSTUIUJUKULVEUTPRUPUMVDBCABEDBEUNGUOUQURUS $.
   $}
 
   ${
