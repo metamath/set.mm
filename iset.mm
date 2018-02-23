@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Feb-2018
+$( iset.mm - Version of 24-Feb-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -13247,22 +13247,6 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d x y $.
-    $( A theorem used in elimination of disjoint variable restriction on ` x `
-       and ` y ` by replacing it with a distinctor ` -. A. x x = z ` .
-       (Contributed by NM, 5-Aug-1993.) $)
-    sbal1 $p |- ( -. A. x x = z ->
-             ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) ) $=
-      ( weq wal wn wsb wb wi sbequ12 a4s dral2 bitr3d a1d wa hba1 al2imi hbnaes
-      syl6 hbsb4 ax-4 sbimi alimi adantl sb4 ax-7 dveeq2 alim sb2 sylan9 impbid
-      syl9 ex pm2.61i ) CDEZCFZBDEBFGZABFZCDHZACDHZBFZIZJUQVCURUQUSUTVBUPUSUTIC
-      USCDKLAVACDBUPAVAICACDKLMNOUQGZURVCVDURPUTVBURUTVBJVDURUTUTBFVBUSCDBABQUA
-      UTVABUSACDABUBUCUDTUEVDVBUPAJZBFZCFZURUTVDVBVECFZBFZVGVBVIJCDBVDVAVHBACDU
-      FRSVEBCUGTVGUTJBDCURCFVGUPUSJZCFUTURVFVJCURUPUPBFVFUSBDCUHUPABUIUMRUSCDUJ
-      TSUKULUNUO $.
-  $}
-
-  ${
     $d x y z $.
     $( Move universal quantifier in and out of substitution.  Identical to
        ~ sbal except that it has an additional distinct variable constraint on
@@ -13283,6 +13267,35 @@ $( The theorems in this section make use of the $d statement. $)
       ( vw wal wsb sbalyz sbbii bitri ax-17 sbco2v albii 3bitr3i ) ABFZCEGZEDGZ
       ACEGZEDGZBFZOCDGACDGZBFQRBFZEDGTPUBEDABCEHIRBEDHJOCDEOEKLSUABACDEAEKLMN
       $.
+  $}
+
+  ${
+    $d x y $.  $d y z $.
+    $( Lemma for proving ~ sbal1 .  Same as ~ sbal1 but with an additional
+       distinct variable constraint on ` y ` and ` z ` .  (Contributed by Jim
+       Kingdon, 23-Feb-2018.) $)
+    sbal1yz $p |- ( -. A. x x = z ->
+             ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) ) $=
+      ( weq wal wn wsb wi nfnae nfri wb wo ax-i12 wnf a16nf 19.21t imbi1i albii
+      sb6 df-nf sylbir jaoi orim2i ax-mp albid alcom equcom bitri bitr4i bitr2i
+      syl ori 3bitr3g bicomd ) BDEBFZGZACDHZBFZABFZCDHZUQDCEZAIZBFZCFZVBUTIZCFZ
+      USVAUQVDVFCUQCBDCJKUPVDVFLZUPBCEBFZVBVBBFIBFZMZMUPVHMDCBNVKVHUPVIVHVJVIVB
+      BOZVHVBBCBPVBABQZULVJVLVHVBBUAVMUBUCUDUEUMUFVEVCCFZBFUSVCCBUGURVNBURCDEZA
+      IZCFVNACDTVPVCCVOVBACDUHZRSUISUJVAVOUTIZCFVGUTCDTVRVFCVOVBUTVQRSUKUNUO $.
+  $}
+
+  ${
+    $d x y $.  $d w x $.  $d w y $.  $d w z $.  $d ph w $.
+
+    $( A theorem used in elimination of disjoint variable restriction on ` x `
+       and ` y ` by replacing it with a distinctor ` -. A. x x = z ` .
+       (Contributed by NM, 5-Aug-1993.)  (Proof rewitten by Jim Kingdon,
+       24-Feb-2018.) $)
+    sbal1 $p |- ( -. A. x x = z ->
+             ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) ) $=
+      ( vw weq wal wn wsb sbal sbbii sbal1yz syl5bb ax-17 sbco2v albii 3bitr3g
+      ) BDFBGHZABGZCEIZEDIZACEIZEDIZBGZSCDIACDIZBGUAUBBGZEDIRUDTUFEDABCEJKUBBED
+      LMSCDESENOUCUEBACDEAENOPQ $.
   $}
 
   ${
