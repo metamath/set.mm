@@ -8815,6 +8815,32 @@ $)
       ( wtru tru ax-mp ) CADBE $.
   $}
 
+  $( If something is true, it outputs ` T. ` .  (Contributed by Anthony Hart,
+     14-Aug-2011.) $)
+  tbtru $p |- ( ph <-> ( ph <-> T. ) ) $=
+    ( wtru tru tbt ) BACD $.
+
+  $( If something is not true, it outputs ` F. ` .  (Contributed by Anthony
+     Hart, 14-Aug-2011.) $)
+  nbfal $p |- ( -. ph <-> ( ph <-> F. ) ) $=
+    ( wfal fal nbn ) BACD $.
+
+  ${
+    bitru.1 $e |- ph $.
+    $( A theorem is equivalent to truth.  (Contributed by Mario Carneiro,
+       9-May-2015.) $)
+    bitru $p |- ( ph <-> T. ) $=
+      ( wtru tru 2th ) ACBDE $.
+  $}
+
+  ${
+    bifal.1 $e |- -. ph $.
+    $( A contradiction is equivalent to falsehood.  (Contributed by Mario
+       Carneiro, 9-May-2015.) $)
+    bifal $p |- ( ph <-> F. ) $=
+      ( wfal fal 2false ) ACBDE $.
+  $}
+
   $( One definition of negation in logics that take ` F. ` as axiomatic is via
      "implies contradition", i.e. ` ph -> F. ` .  (Contributed by Mario
      Carneiro, 2-Feb-2015.) $)
@@ -8825,6 +8851,131 @@ $)
      shortened by Anthony Hart, 1-Aug-2011.) $)
   falim $p |- ( F. -> ph ) $=
     ( wfal fal pm2.21i ) BACD $.
+
+  $( ` F. ` implies anything.  (Contributed by Mario Carneiro, 9-Feb-2017.) $)
+  falimd $p |- ( ( ph /\ F. ) -> ps ) $=
+    ( wfal falim adantl ) CBABDE $.
+
+  $( Anything implies ` T. ` .  (Contributed by FL, 20-Mar-2011.)  (Proof
+     shortened by Anthony Hart, 1-Aug-2011.) $)
+  a1tru $p |- ( ph -> T. ) $=
+    ( wtru tru a1i ) BACD $.
+
+  $( True can be removed from a conjunction.  (Contributed by FL,
+     20-Mar-2011.) $)
+  truan $p |- ( ( T. /\ ph ) <-> ph ) $=
+    ( wtru wa simpr a1tru ancri impbii ) BACABADABAEFG $.
+
+  $( Given falsum, we can define the negation of a wff ` ph ` as the statement
+     that a contradiction follows from assuming ` ph ` .  (Contributed by Mario
+     Carneiro, 9-Feb-2017.) $)
+  dfnot $p |- ( -. ph <-> ( ph -> F. ) ) $=
+    ( wn wfal wi pm2.21 id falim ja impbii ) ABZACDACEACJJFJGHI $.
+
+  ${
+    inegd.1 $e |- ( ( ph /\ ps ) -> F. ) $.
+    $( Negation introduction rule from natural deduction.  (Contributed by
+       Mario Carneiro, 9-Feb-2017.) $)
+    inegd $p |- ( ph -> -. ps ) $=
+      ( wfal wi wn ex dfnot sylibr ) ABDEBFABDCGBHI $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Truth tables
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  Some sources define operations on true/false values using truth tables.
+  These tables show the results of their operations for all possible
+  combinations of true ( ` T. ` ) and false ( ` F. ` ).
+  Here we show that our definitions and axioms produce equivalent results for
+  ` /\ ` (conjunction aka logical 'and') ~ df-an ,
+  ` \/ ` (disjunction aka logical inclusive 'or') ~ df-or ,
+  ` -> ` (implies) ~ wi ,
+  ` -. ` (not) ~ wn ,
+  ` <-> ` (logical equivalence) ~ df-bi .
+$)
+
+  $( A ` /\ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  truantru $p |- ( ( T. /\ T. ) <-> T. ) $=
+    ( wtru anidm ) AB $.
+
+  $( A ` /\ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  truanfal $p |- ( ( T. /\ F. ) <-> F. ) $=
+    ( wfal truan ) AB $.
+
+  $( A ` /\ ` identity.  (Contributed by David A. Wheeler, 23-Feb-2018.) $)
+  falantru $p |- ( ( F. /\ T. ) <-> F. ) $=
+    ( wfal wtru wa ax-ia1 falim impbii ) ABCZAABDGEF $.
+
+  $( A ` /\ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  falanfal $p |- ( ( F. /\ F. ) <-> F. ) $=
+    ( wfal anidm ) AB $.
+
+  $( A ` \/ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  truortru $p |- ( ( T. \/ T. ) <-> T. ) $=
+    ( wtru oridm ) AB $.
+
+  $( A ` \/ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  truorfal $p |- ( ( T. \/ F. ) <-> T. ) $=
+    ( wtru wfal wo tru orci bitru ) ABCABDEF $.
+
+  $( A ` \/ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  falortru $p |- ( ( F. \/ T. ) <-> T. ) $=
+    ( wfal wtru wo tru olci bitru ) ABCBADEF $.
+
+  $( A ` \/ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  falorfal $p |- ( ( F. \/ F. ) <-> F. ) $=
+    ( wfal oridm ) AB $.
+
+  $( A ` -> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  truimtru $p |- ( ( T. -> T. ) <-> T. ) $=
+    ( wtru wi id bitru ) AABACD $.
+
+  $( A ` -> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  truimfal $p |- ( ( T. -> F. ) <-> F. ) $=
+    ( wfal wtru wi tru a1bi bicomi ) ABACBADEF $.
+
+  $( A ` -> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  falimtru $p |- ( ( F. -> T. ) <-> T. ) $=
+    ( wfal wtru wi falim bitru ) ABCBDE $.
+
+  $( A ` -> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  falimfal $p |- ( ( F. -> F. ) <-> T. ) $=
+    ( wfal wi id bitru ) AABACD $.
+
+  $( A ` -. ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  nottru $p |- ( -. T. <-> F. ) $=
+    ( wfal wtru wn df-fal bicomi ) ABCDE $.
+
+  $( A ` -. ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.)
+    In set.mm named "notfal". $)
+  notfalbitru $p |- ( -. F. <-> T. ) $=
+    ( wfal wn fal bitru ) ABCD $.
+
+  $( A ` <-> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  trubitru $p |- ( ( T. <-> T. ) <-> T. ) $=
+    ( wtru wb biid bitru ) AABACD $.
+
+  $( A ` <-> ` identity.  (Contributed by David A. Wheeler, 23-Feb-2018.) $)
+  trubifal $p |- ( ( T. <-> F. ) <-> F. ) $=
+    ( wtru wfal wb wi dfbi2 truimfal falimtru anbi12i falantru 3bitri
+    wa ) ABCABDZBADZKBAKBABELBMAFGHIJ $.
+
+  $( A ` <-> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  falbitru $p |- ( ( F. <-> T. ) <-> F. ) $=
+    ( wfal wtru wb bicom trubifal bitri ) ABCBACAABDEF $.
+
+  $( A ` <-> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  falbifal $p |- ( ( F. <-> F. ) <-> T. ) $=
+    ( wfal wb biid bitru ) AABACD $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
