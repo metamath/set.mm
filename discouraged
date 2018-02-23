@@ -16894,6 +16894,7 @@ New usage of "spanunsni" is discouraged (1 uses).
 New usage of "spanval" is discouraged (6 uses).
 New usage of "speccl" is discouraged (0 uses).
 New usage of "specval" is discouraged (1 uses).
+New usage of "speivOLD" is discouraged (0 uses).
 New usage of "spfalwOLD" is discouraged (0 uses).
 New usage of "spimOLD" is discouraged (0 uses).
 New usage of "spimeOLD" is discouraged (0 uses).
@@ -17956,6 +17957,7 @@ Proof modification of "soirriOLD" is discouraged (36 steps).
 Proof modification of "son2lpiOLD" is discouraged (28 steps).
 Proof modification of "sotriOLD" is discouraged (83 steps).
 Proof modification of "spOLD" is discouraged (76 steps).
+Proof modification of "speivOLD" is discouraged (18 steps).
 Proof modification of "spfalwOLD" is discouraged (15 steps).
 Proof modification of "spimeOLD" is discouraged (33 steps).
 Proof modification of "spimedOLD" is discouraged (39 steps).
