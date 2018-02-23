@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Feb-2018
+$( iset.mm - Version of 23-Feb-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -13244,6 +13244,21 @@ $( The theorems in this section make use of the $d statement. $)
       ( weq wsb wa wex sbelx anbi2i exbii exdistr 3bitr4i anass 2exbii bitr4i )
       ABDFZCEFZADBGZECGZHZHZCIBIZRSHUAHZCIBIRTHZBIRUBCIZHZBIAUDUFUHBTUGRTCEJKLA
       BDJRUBBCMNUEUCBCRSUAOPQ $.
+  $}
+
+  ${
+    $d x y $.  $d y z $.
+    $( Lemma for proving ~ sbal1 .  Same as ~ sbal1 but with an additional
+       distinct variable constraint on ` y ` and ` z ` .  (Contributed by Jim
+       Kingdon, 23-Feb-2018.) $)
+    sbal1yz $p |- ( -. A. x x = z ->
+             ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) ) $=
+      ( weq wal wn wsb wi nfnae nfri wb wo ax-i12 wnf a16nf 19.21t imbi1i albii
+      sb6 df-nf sylbir jaoi orim2i ax-mp albid alcom equcom bitri bitr4i bitr2i
+      syl ori 3bitr3g bicomd ) BDEBFZGZACDHZBFZABFZCDHZUQDCEZAIZBFZCFZVBUTIZCFZ
+      USVAUQVDVFCUQCBDCJKUPVDVFLZUPBCEBFZVBVBBFIBFZMZMUPVHMDCBNVKVHUPVIVHVJVIVB
+      BOZVHVBBCBPVBABQZULVJVLVHVBBUAVMUBUCUDUEUMUFVEVCCFZBFUSVCCBUGURVNBURCDEZA
+      IZCFVNACDTVPVCCVOVBACDUHZRSUISUJVAVOUTIZCFVGUTCDTVRVFCVOVBUTVQRSUKUNUO $.
   $}
 
   ${
