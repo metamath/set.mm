@@ -8841,12 +8841,6 @@ $)
       ( wfal fal 2false ) ACBDE $.
   $}
 
-  $( One definition of negation in logics that take ` F. ` as axiomatic is via
-     "implies contradition", i.e. ` ph -> F. ` .  (Contributed by Mario
-     Carneiro, 2-Feb-2015.) $)
-  dfneg $p |- ( -. ph <-> ( ph -> F. ) ) $=
-    ( wfal wn wi wb notfal mtt ax-mp ) BCACABDEFBAGH $.
-
   $( ` F. ` implies anything.  (Contributed by FL, 20-Mar-2011.)  (Proof
      shortened by Anthony Hart, 1-Aug-2011.) $)
   falim $p |- ( F. -> ph ) $=
@@ -9571,7 +9565,7 @@ $)
      5-Aug-1993.)  (Revised by NM, 1-Feb-2015.)  (Revised by Mario Carneiro,
      12-May-2015.) $)
   alnex $p |- ( A. x -. ph <-> -. E. x ph ) $=
-    ( wfal wi wal wex wn notfal pm2.21i 19.23 dfneg albii 3bitr4i ) ACDZBEABFZC
+    ( wfal wi wal wex wn notfal pm2.21i 19.23 dfnot albii 3bitr4i ) ACDZBEABFZC
     DAGZBEOGACBCCBEHIJPNBAKLOKM $.
 
   ${
