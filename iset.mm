@@ -8804,7 +8804,7 @@ $)
 
   $( ` F. ` is not provable.  (Contributed by Anthony Hart, 22-Oct-2010.)
      (Proof shortened by Mel L. O'Cat, 11-Mar-2012.) $)
-  notfal $p |- -. F. $=
+  fal $p |- -. F. $=
     ( wfal wtru wn tru notnoti df-fal mtbir ) ABCBDEFG $.
 
   ${
@@ -8946,9 +8946,8 @@ $)
     ( wfal wtru wn df-fal bicomi ) ABCDE $.
 
   $( A ` -. ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
-     shortened by Andrew Salmon, 13-May-2011.)
-    In set.mm named "notfal". $)
-  notfalbitru $p |- ( -. F. <-> T. ) $=
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  notfal $p |- ( -. F. <-> T. ) $=
     ( wfal wn fal bitru ) ABCD $.
 
   $( A ` <-> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
@@ -9565,7 +9564,7 @@ $)
      5-Aug-1993.)  (Revised by NM, 1-Feb-2015.)  (Revised by Mario Carneiro,
      12-May-2015.) $)
   alnex $p |- ( A. x -. ph <-> -. E. x ph ) $=
-    ( wfal wi wal wex wn notfal pm2.21i 19.23 dfnot albii 3bitr4i ) ACDZBEABFZC
+    ( wfal wi wal wex wn fal pm2.21i 19.23 dfnot albii 3bitr4i ) ACDZBEABFZC
     DAGZBEOGACBCCBEHIJPNBAKLOKM $.
 
   ${
