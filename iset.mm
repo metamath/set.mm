@@ -8797,11 +8797,6 @@ $)
   tru $p |- T. $=
     ( wph wtru wb biid df-tru mpbir ) BAACADAEF $.
 
-  $( ` F. ` is refutable.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
-     shortened by Mel L. O'Cat, 11-Mar-2012.) $)
-  fal $p |- -. F. $=
-    ( wfal wtru wn tru notnoti df-fal mtbir ) ABCBDEFG $.
-
   $( ` F. ` is not provable.  (Contributed by Anthony Hart, 22-Oct-2010.)
      (Proof shortened by Mel L. O'Cat, 11-Mar-2012.) $)
   fal $p |- -. F. $=
@@ -8860,11 +8855,11 @@ $)
   truan $p |- ( ( T. /\ ph ) <-> ph ) $=
     ( wtru wa simpr a1tru ancri impbii ) BACABADABAEFG $.
 
-  $( Given falsum, we can define the negation of a wff ` ph ` as the statement
-     that a contradiction follows from assuming ` ph ` .  (Contributed by Mario
-     Carneiro, 9-Feb-2017.) $)
+  $( One definition of negation in logics that take ` F. ` as axiomatic is via
+     "implies contradiction", i.e. ` ph -> F. ` .  (Contributed by Mario
+     Carneiro, 2-Feb-2015.) $)
   dfnot $p |- ( -. ph <-> ( ph -> F. ) ) $=
-    ( wn wfal wi pm2.21 id falim ja impbii ) ABZACDACEACJJFJGHI $.
+    ( wfal wn wi wb fal mtt ax-mp ) BCACABDEFBAGH $.
 
   ${
     inegd.1 $e |- ( ( ph /\ ps ) -> F. ) $.
