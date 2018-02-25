@@ -4864,10 +4864,14 @@
 "dveeq2-o" is used by "ax11eq".
 "dveeq2-o" is used by "ax11inda".
 "dveeq2-o" is used by "ax11v2-o".
+"dveeq2OLD" is used by "ax10OLD".
+"dveeq2OLD" is used by "ax9OLD".
 "dvelimALT" is used by "dveeq2-o16".
 "dvelimf-o" is used by "ax11el".
 "dvelimf-o" is used by "dveeq1-o".
 "dvelimf-o" is used by "dveeq2-o".
+"dvelimvOLD" is used by "ax10lem4OLD".
+"dvelimvOLD" is used by "dveeq2OLD".
 "dvh3dimatN" is used by "dvh2dimatN".
 "dvhopaddN" is used by "dvhopN".
 "dvhopspN" is used by "dvhopN".
@@ -14509,12 +14513,14 @@ New usage of "dvadiaN" is discouraged (1 uses).
 New usage of "dveel2ALT" is discouraged (0 uses).
 New usage of "dveeq1-o" is discouraged (1 uses).
 New usage of "dveeq1-o16" is discouraged (0 uses).
+New usage of "dveeq1OLD" is discouraged (0 uses).
 New usage of "dveeq2-o" is discouraged (4 uses).
 New usage of "dveeq2-o16" is discouraged (0 uses).
+New usage of "dveeq2OLD" is discouraged (2 uses).
 New usage of "dvelimALT" is discouraged (1 uses).
 New usage of "dvelimALTNEW7" is discouraged (0 uses).
 New usage of "dvelimf-o" is discouraged (3 uses).
-New usage of "dvelimvOLD" is discouraged (0 uses).
+New usage of "dvelimvOLD" is discouraged (2 uses).
 New usage of "dvh2dimatN" is discouraged (0 uses).
 New usage of "dvh3dim3N" is discouraged (0 uses).
 New usage of "dvh3dimatN" is discouraged (1 uses).
@@ -16747,6 +16753,7 @@ New usage of "sbcrot3gOLD" is discouraged (0 uses).
 New usage of "sbcrot5OLD" is discouraged (0 uses).
 New usage of "sbcssOLD" is discouraged (0 uses).
 New usage of "sbcssVD" is discouraged (0 uses).
+New usage of "sbequ2OLD" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
 New usage of "sh0" is discouraged (13 uses).
@@ -17283,7 +17290,6 @@ Proof modification of "ax10ext" is discouraged (277 steps).
 Proof modification of "ax10from10o" is discouraged (28 steps).
 Proof modification of "ax10lem2OLD" is discouraged (84 steps).
 Proof modification of "ax10lem3OLD" is discouraged (48 steps).
-Proof modification of "ax10lem4OLD" is discouraged (84 steps).
 Proof modification of "ax10lem5OLD" is discouraged (48 steps).
 Proof modification of "ax10o" is discouraged (47 steps).
 Proof modification of "ax10o-o" is discouraged (47 steps).
@@ -17423,8 +17429,10 @@ Proof modification of "dtruALT2" is discouraged (80 steps).
 Proof modification of "dveel2ALT" is discouraged (22 steps).
 Proof modification of "dveeq1-o" is discouraged (20 steps).
 Proof modification of "dveeq1-o16" is discouraged (22 steps).
+Proof modification of "dveeq1OLD" is discouraged (14 steps).
 Proof modification of "dveeq2-o" is discouraged (20 steps).
 Proof modification of "dveeq2-o16" is discouraged (18 steps).
+Proof modification of "dveeq2OLD" is discouraged (14 steps).
 Proof modification of "dvelimALT" is discouraged (106 steps).
 Proof modification of "dvelimALTNEW7" is discouraged (106 steps).
 Proof modification of "dvelimf-o" is discouraged (129 steps).
@@ -17941,6 +17949,7 @@ Proof modification of "sbcrot3gOLD" is discouraged (42 steps).
 Proof modification of "sbcrot5OLD" is discouraged (12 steps).
 Proof modification of "sbcssOLD" is discouraged (130 steps).
 Proof modification of "sbcssVD" is discouraged (223 steps).
+Proof modification of "sbequ2OLD" is discouraged (29 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "shmulclOLD" is discouraged (101 steps).
