@@ -5769,9 +5769,8 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Classical logic
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
 
-$( Although the Intuitionistic Logic Explorer is primarily for theorems which
+   Although the Intuitionistic Logic Explorer is primarily for theorems which
    hold in intuitionistic logic, we also have some classical theorems in order
    to constrast them with similar intuitionistic ones. Our goal is to move
    such classical logic to the end of the file, after we've had a chance to
@@ -5779,7 +5778,8 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
    this has been a gradual process of replacing classical proofs with
    intuitionistic ones (where possible), moving classical proofs later
    in the file, or removing classical proofs which are unused and not
-   especially important to contrast classical and intuitionistic results. $)
+   especially important to contrast classical and intuitionistic results.
+$)
 
   $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.
 
@@ -8871,15 +8871,21 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Truth tables
+        Operations on true and false constants
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-  Some sources define operations on true/false values using truth tables.
-  These tables show the results of their operations for all possible
-  combinations of true ( ` T. ` ) and false ( ` F. ` ).
+  For classical logic, truth tables can be used to define propositional
+  logic operations, by showing the results of those operations for all
+  possible combinations of true ( ` T. ` ) and false ( ` F. ` ).
+
+  Although the intuitionistic logic connectives are not as simply defined,
+  ` T. ` and ` F. ` do play similar roles as in classical logic and most
+  theorems from classical logic continue to hold.
+
   Here we show that our definitions and axioms produce equivalent results for
-  ` /\ ` (conjunction aka logical 'and') ~ df-an ,
-  ` \/ ` (disjunction aka logical inclusive 'or') ~ df-or ,
+  ` T. ` and ` F. ` as we would get from truth tables for
+  ` /\ ` (conjunction aka logical 'and') ~ wa ,
+  ` \/ ` (disjunction aka logical inclusive 'or') ~ wo ,
   ` -> ` (implies) ~ wi ,
   ` -. ` (not) ~ wn ,
   ` <-> ` (logical equivalence) ~ df-bi .
@@ -13568,12 +13574,12 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Classical logic theorems we'll need for existential uniqueness
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
 
-  $( The theorems in this section are used in the section on existential
-     uniqueness. That section, at least for now, is heavily based on
-     classical logic, but probably intuitionistic proofs can be found
-     for much of it. $)
+  The theorems in this section are used in the section on existential
+  uniqueness. That section, at least for now, is heavily based on
+  classical logic, but probably intuitionistic proofs can be found
+  for much of it.
+$)
 
   $( Classical definition of existential quantification.  This does not hold
      intuitionistically, so it depends on ~ ax-3 for its proof.  Definition of
