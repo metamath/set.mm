@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Feb-2018
+$( iset.mm - Version of 24-Feb-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5769,9 +5769,8 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Classical logic
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
 
-$( Although the Intuitionistic Logic Explorer is primarily for theorems which
+   Although the Intuitionistic Logic Explorer is primarily for theorems which
    hold in intuitionistic logic, we also have some classical theorems in order
    to constrast them with similar intuitionistic ones. Our goal is to move
    such classical logic to the end of the file, after we've had a chance to
@@ -5779,7 +5778,8 @@ $( Although the Intuitionistic Logic Explorer is primarily for theorems which
    this has been a gradual process of replacing classical proofs with
    intuitionistic ones (where possible), moving classical proofs later
    in the file, or removing classical proofs which are unused and not
-   especially important to contrast classical and intuitionistic results. $)
+   especially important to contrast classical and intuitionistic results.
+$)
 
   $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.
 
@@ -8797,14 +8797,9 @@ $)
   tru $p |- T. $=
     ( wph wtru wb biid df-tru mpbir ) BAACADAEF $.
 
-  $( ` F. ` is refutable.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
-     shortened by Mel L. O'Cat, 11-Mar-2012.) $)
-  fal $p |- -. F. $=
-    ( wfal wtru wn tru notnoti df-fal mtbir ) ABCBDEFG $.
-
   $( ` F. ` is not provable.  (Contributed by Anthony Hart, 22-Oct-2010.)
      (Proof shortened by Mel L. O'Cat, 11-Mar-2012.) $)
-  notfal $p |- -. F. $=
+  fal $p |- -. F. $=
     ( wfal wtru wn tru notnoti df-fal mtbir ) ABCBDEFG $.
 
   ${
@@ -8815,16 +8810,166 @@ $)
       ( wtru tru ax-mp ) CADBE $.
   $}
 
-  $( One definition of negation in logics that take ` F. ` as axiomatic is via
-     "implies contradition", i.e. ` ph -> F. ` .  (Contributed by Mario
-     Carneiro, 2-Feb-2015.) $)
-  dfneg $p |- ( -. ph <-> ( ph -> F. ) ) $=
-    ( wfal wn wi wb notfal mtt ax-mp ) BCACABDEFBAGH $.
+  $( If something is true, it outputs ` T. ` .  (Contributed by Anthony Hart,
+     14-Aug-2011.) $)
+  tbtru $p |- ( ph <-> ( ph <-> T. ) ) $=
+    ( wtru tru tbt ) BACD $.
+
+  $( If something is not true, it outputs ` F. ` .  (Contributed by Anthony
+     Hart, 14-Aug-2011.) $)
+  nbfal $p |- ( -. ph <-> ( ph <-> F. ) ) $=
+    ( wfal fal nbn ) BACD $.
+
+  ${
+    bitru.1 $e |- ph $.
+    $( A theorem is equivalent to truth.  (Contributed by Mario Carneiro,
+       9-May-2015.) $)
+    bitru $p |- ( ph <-> T. ) $=
+      ( wtru tru 2th ) ACBDE $.
+  $}
+
+  ${
+    bifal.1 $e |- -. ph $.
+    $( A contradiction is equivalent to falsehood.  (Contributed by Mario
+       Carneiro, 9-May-2015.) $)
+    bifal $p |- ( ph <-> F. ) $=
+      ( wfal fal 2false ) ACBDE $.
+  $}
 
   $( ` F. ` implies anything.  (Contributed by FL, 20-Mar-2011.)  (Proof
      shortened by Anthony Hart, 1-Aug-2011.) $)
   falim $p |- ( F. -> ph ) $=
     ( wfal fal pm2.21i ) BACD $.
+
+  $( ` F. ` implies anything.  (Contributed by Mario Carneiro, 9-Feb-2017.) $)
+  falimd $p |- ( ( ph /\ F. ) -> ps ) $=
+    ( wfal falim adantl ) CBABDE $.
+
+  $( Anything implies ` T. ` .  (Contributed by FL, 20-Mar-2011.)  (Proof
+     shortened by Anthony Hart, 1-Aug-2011.) $)
+  a1tru $p |- ( ph -> T. ) $=
+    ( wtru tru a1i ) BACD $.
+
+  $( True can be removed from a conjunction.  (Contributed by FL,
+     20-Mar-2011.) $)
+  truan $p |- ( ( T. /\ ph ) <-> ph ) $=
+    ( wtru wa simpr a1tru ancri impbii ) BACABADABAEFG $.
+
+  $( One definition of negation in logics that take ` F. ` as axiomatic is via
+     "implies contradiction", i.e. ` ph -> F. ` .  (Contributed by Mario
+     Carneiro, 2-Feb-2015.) $)
+  dfnot $p |- ( -. ph <-> ( ph -> F. ) ) $=
+    ( wfal wn wi wb fal mtt ax-mp ) BCACABDEFBAGH $.
+
+  ${
+    inegd.1 $e |- ( ( ph /\ ps ) -> F. ) $.
+    $( Negation introduction rule from natural deduction.  (Contributed by
+       Mario Carneiro, 9-Feb-2017.) $)
+    inegd $p |- ( ph -> -. ps ) $=
+      ( wfal wi wn ex dfnot sylibr ) ABDEBFABDCGBHI $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Operations on true and false constants
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  For classical logic, truth tables can be used to define propositional
+  logic operations, by showing the results of those operations for all
+  possible combinations of true ( ` T. ` ) and false ( ` F. ` ).
+
+  Although the intuitionistic logic connectives are not as simply defined,
+  ` T. ` and ` F. ` do play similar roles as in classical logic and most
+  theorems from classical logic continue to hold.
+
+  Here we show that our definitions and axioms produce equivalent results for
+  ` T. ` and ` F. ` as we would get from truth tables for
+  ` /\ ` (conjunction aka logical 'and') ~ wa ,
+  ` \/ ` (disjunction aka logical inclusive 'or') ~ wo ,
+  ` -> ` (implies) ~ wi ,
+  ` -. ` (not) ~ wn ,
+  ` <-> ` (logical equivalence) ~ df-bi .
+$)
+
+  $( A ` /\ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  truantru $p |- ( ( T. /\ T. ) <-> T. ) $=
+    ( wtru anidm ) AB $.
+
+  $( A ` /\ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  truanfal $p |- ( ( T. /\ F. ) <-> F. ) $=
+    ( wfal truan ) AB $.
+
+  $( A ` /\ ` identity.  (Contributed by David A. Wheeler, 23-Feb-2018.) $)
+  falantru $p |- ( ( F. /\ T. ) <-> F. ) $=
+    ( wfal wtru wa ax-ia1 falim impbii ) ABCZAABDGEF $.
+
+  $( A ` /\ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  falanfal $p |- ( ( F. /\ F. ) <-> F. ) $=
+    ( wfal anidm ) AB $.
+
+  $( A ` \/ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  truortru $p |- ( ( T. \/ T. ) <-> T. ) $=
+    ( wtru oridm ) AB $.
+
+  $( A ` \/ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  truorfal $p |- ( ( T. \/ F. ) <-> T. ) $=
+    ( wtru wfal wo tru orci bitru ) ABCABDEF $.
+
+  $( A ` \/ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  falortru $p |- ( ( F. \/ T. ) <-> T. ) $=
+    ( wfal wtru wo tru olci bitru ) ABCBADEF $.
+
+  $( A ` \/ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  falorfal $p |- ( ( F. \/ F. ) <-> F. ) $=
+    ( wfal oridm ) AB $.
+
+  $( A ` -> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  truimtru $p |- ( ( T. -> T. ) <-> T. ) $=
+    ( wtru wi id bitru ) AABACD $.
+
+  $( A ` -> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  truimfal $p |- ( ( T. -> F. ) <-> F. ) $=
+    ( wfal wtru wi tru a1bi bicomi ) ABACBADEF $.
+
+  $( A ` -> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  falimtru $p |- ( ( F. -> T. ) <-> T. ) $=
+    ( wfal wtru wi falim bitru ) ABCBDE $.
+
+  $( A ` -> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  falimfal $p |- ( ( F. -> F. ) <-> T. ) $=
+    ( wfal wi id bitru ) AABACD $.
+
+  $( A ` -. ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
+  nottru $p |- ( -. T. <-> F. ) $=
+    ( wfal wtru wn df-fal bicomi ) ABCDE $.
+
+  $( A ` -. ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  notfal $p |- ( -. F. <-> T. ) $=
+    ( wfal wn fal bitru ) ABCD $.
+
+  $( A ` <-> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  trubitru $p |- ( ( T. <-> T. ) <-> T. ) $=
+    ( wtru wb biid bitru ) AABACD $.
+
+  $( A ` <-> ` identity.  (Contributed by David A. Wheeler, 23-Feb-2018.) $)
+  trubifal $p |- ( ( T. <-> F. ) <-> F. ) $=
+    ( wtru wfal wb wi dfbi2 truimfal falimtru anbi12i falantru 3bitri
+    wa ) ABCABDZBADZKBAKBABELBMAFGHIJ $.
+
+  $( A ` <-> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  falbitru $p |- ( ( F. <-> T. ) <-> F. ) $=
+    ( wfal wtru wb bicom trubifal bitri ) ABCBACAABDEF $.
+
+  $( A ` <-> ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.)  (Proof
+     shortened by Andrew Salmon, 13-May-2011.) $)
+  falbifal $p |- ( ( F. <-> F. ) <-> T. ) $=
+    ( wfal wb biid bitru ) AABACD $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -9420,7 +9565,7 @@ $)
      5-Aug-1993.)  (Revised by NM, 1-Feb-2015.)  (Revised by Mario Carneiro,
      12-May-2015.) $)
   alnex $p |- ( A. x -. ph <-> -. E. x ph ) $=
-    ( wfal wi wal wex wn notfal pm2.21i 19.23 dfneg albii 3bitr4i ) ACDZBEABFZC
+    ( wfal wi wal wex wn fal pm2.21i 19.23 dfnot albii 3bitr4i ) ACDZBEABFZC
     DAGZBEOGACBCCBEHIJPNBAKLOKM $.
 
   ${
@@ -13247,22 +13392,6 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d x y $.
-    $( A theorem used in elimination of disjoint variable restriction on ` x `
-       and ` y ` by replacing it with a distinctor ` -. A. x x = z ` .
-       (Contributed by NM, 5-Aug-1993.) $)
-    sbal1 $p |- ( -. A. x x = z ->
-             ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) ) $=
-      ( weq wal wn wsb wb wi sbequ12 a4s dral2 bitr3d a1d wa hba1 al2imi hbnaes
-      syl6 hbsb4 ax-4 sbimi alimi adantl sb4 ax-7 dveeq2 alim sb2 sylan9 impbid
-      syl9 ex pm2.61i ) CDEZCFZBDEBFGZABFZCDHZACDHZBFZIZJUQVCURUQUSUTVBUPUSUTIC
-      USCDKLAVACDBUPAVAICACDKLMNOUQGZURVCVDURPUTVBURUTVBJVDURUTUTBFVBUSCDBABQUA
-      UTVABUSACDABUBUCUDTUEVDVBUPAJZBFZCFZURUTVDVBVECFZBFZVGVBVIJCDBVDVAVHBACDU
-      FRSVEBCUGTVGUTJBDCURCFVGUPUSJZCFUTURVFVJCURUPUPBFVFUSBDCUHUPABUIUMRUSCDUJ
-      TSUKULUNUO $.
-  $}
-
-  ${
     $d x y z $.
     $( Move universal quantifier in and out of substitution.  Identical to
        ~ sbal except that it has an additional distinct variable constraint on
@@ -13283,6 +13412,35 @@ $( The theorems in this section make use of the $d statement. $)
       ( vw wal wsb sbalyz sbbii bitri ax-17 sbco2v albii 3bitr3i ) ABFZCEGZEDGZ
       ACEGZEDGZBFZOCDGACDGZBFQRBFZEDGTPUBEDABCEHIRBEDHJOCDEOEKLSUABACDEAEKLMN
       $.
+  $}
+
+  ${
+    $d x y $.  $d y z $.
+    $( Lemma for proving ~ sbal1 .  Same as ~ sbal1 but with an additional
+       distinct variable constraint on ` y ` and ` z ` .  (Contributed by Jim
+       Kingdon, 23-Feb-2018.) $)
+    sbal1yz $p |- ( -. A. x x = z ->
+             ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) ) $=
+      ( weq wal wn wsb wi nfnae nfri wb wo ax-i12 wnf a16nf 19.21t imbi1i albii
+      sb6 df-nf sylbir jaoi orim2i ax-mp albid alcom equcom bitri bitr4i bitr2i
+      syl ori 3bitr3g bicomd ) BDEBFZGZACDHZBFZABFZCDHZUQDCEZAIZBFZCFZVBUTIZCFZ
+      USVAUQVDVFCUQCBDCJKUPVDVFLZUPBCEBFZVBVBBFIBFZMZMUPVHMDCBNVKVHUPVIVHVJVIVB
+      BOZVHVBBCBPVBABQZULVJVLVHVBBUAVMUBUCUDUEUMUFVEVCCFZBFUSVCCBUGURVNBURCDEZA
+      IZCFVNACDTVPVCCVOVBACDUHZRSUISUJVAVOUTIZCFVGUTCDTVRVFCVOVBUTVQRSUKUNUO $.
+  $}
+
+  ${
+    $d x y $.  $d w x $.  $d w y $.  $d w z $.  $d ph w $.
+
+    $( A theorem used in elimination of disjoint variable restriction on ` x `
+       and ` y ` by replacing it with a distinctor ` -. A. x x = z ` .
+       (Contributed by NM, 5-Aug-1993.)  (Proof rewitten by Jim Kingdon,
+       24-Feb-2018.) $)
+    sbal1 $p |- ( -. A. x x = z ->
+             ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) ) $=
+      ( vw weq wal wn wsb sbal sbbii sbal1yz syl5bb ax-17 sbco2v albii 3bitr3g
+      ) BDFBGHZABGZCEIZEDIZACEIZEDIZBGZSCDIACDIZBGUAUBBGZEDIRUDTUFEDABCEJKUBBED
+      LMSCDESENOUCUEBACDEAENOPQ $.
   $}
 
   ${
@@ -13366,10 +13524,12 @@ $( The theorems in this section make use of the $d statement. $)
        version that doesn't use ~ ax-11 .)  (Contributed by NM,
        17-May-2008.) $)
     dvelimALT $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
-      ( weq wal wn wi ax-17 hba1 ax16ALT a1i hbimd a1d wa hbn hban ax-12 imp ex
-      pm2.61i hbald equsal albii 3imtr3g ) CDHZCIZJZEDHZAKZEIZUNCIBBCIUKUMCEUKE
-      LCEHZCIZUKUMUMCIKZKUPUQUKUPULACUOCMZULCENAACIKZUPFOPQUPJZUKUQUTUKRZULACUT
-      UKCUPCURSUJCUICMSTUTUKULULCIKEDCUAUBUSVAFOPUCUDUEABEDBELGUFZUNBCVBUGUH $.
+      ( weq wal wn wi wnf nfv wo ax-i12 orcom orbi2i mpbi a1i nfimd orass mpbir
+      nfa1 ax16ALT nfd nfi df-nf id sylbir jaoi orim1i ax-mp nfald ax-17 equsal
+      ori nfbii sylib nfrd ) CDHCIZJZBCVAEDHZAKZEIZCLBCLVAVCCEVAEMUTVCCLZVEUTNZ
+      UTVENCEHZCIZVBVBCIKCIZNZUTNZVFVKVHVIUTNZNZVHUTVINZNVMEDCOVNVLVHUTVIPQRVHV
+      IUTUAUBVJVEUTVHVEVIVHVBACVHVBCVGCUCVBCEUDUEACLZVHACFUFZSTVIVBCLZVEVBCUGVQ
+      VBACVQUHVOVQVPSTUIUJUKULVEUTPRUPUMVDBCABEDBEUNGUOUQURUS $.
   $}
 
   ${
@@ -13414,12 +13574,12 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Classical logic theorems we'll need for existential uniqueness
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
 
-  $( The theorems in this section are used in the section on existential
-     uniqueness. That section, at least for now, is heavily based on
-     classical logic, but probably intuitionistic proofs can be found
-     for much of it. $)
+  The theorems in this section are used in the section on existential
+  uniqueness. That section, at least for now, is heavily based on
+  classical logic, but probably intuitionistic proofs can be found
+  for much of it.
+$)
 
   $( Classical definition of existential quantification.  This does not hold
      intuitionistically, so it depends on ~ ax-3 for its proof.  Definition of
