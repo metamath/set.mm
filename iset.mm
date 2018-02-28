@@ -11170,6 +11170,18 @@ $)
        (Contributed by NM, 27-Feb-2005.) $)
     drex2 $p |- ( A. x x = y -> ( E. z ph <-> E. z ps ) ) $=
       ( weq wal hbae exbid ) CDGCHABECDEIFJ $.
+
+    $( Formula-building lemma for use with the Distinctor Reduction Theorem.
+       (Contributed by Mario Carneiro, 4-Oct-2016.) $)
+    drnf1 $p |- ( A. x x = y -> ( F/ x ph <-> F/ y ps ) ) $=
+      ( weq wal wi wnf dral1 imbi12d df-nf 3bitr4g ) CDFCGZAACGZHZCGBBDGZHZDGAC
+      IBDIPRCDNABOQEABCDEJKJACLBDLM $.
+
+    $( Formula-building lemma for use with the Distinctor Reduction Theorem.
+       (Contributed by Mario Carneiro, 4-Oct-2016.) $)
+    drnf2 $p |- ( A. x x = y -> ( F/ z ph <-> F/ z ps ) ) $=
+      ( weq wal wi wnf dral2 imbi12d df-nf 3bitr4g ) CDGCHZAAEHZIZEHBBEHZIZEHAE
+      JBEJQSCDEOABPRFABCDEFKLKAEMBEMN $.
   $}
 
   $( Closed theorem form of ~ a4im .  (Contributed by NM, 15-Jan-2008.) $)
@@ -13423,12 +13435,12 @@ $( The theorems in this section make use of the $d statement. $)
        Kingdon, 23-Feb-2018.) $)
     sbal1yz $p |- ( -. A. x x = z ->
              ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) ) $=
-      ( weq wal wn wsb wi nfnae nfri wb wo ax-i12 wnf a16nf 19.21t imbi1i albii
-      sb6 df-nf sylbir jaoi orim2i ax-mp albid alcom equcom bitri bitr4i bitr2i
-      syl ori 3bitr3g bicomd ) BDEBFZGZACDHZBFZABFZCDHZUQDCEZAIZBFZCFZVBUTIZCFZ
-      USVAUQVDVFCUQCBDCJKUPVDVFLZUPBCEBFZVBVBBFIBFZMZMUPVHMDCBNVKVHUPVIVHVJVIVB
-      BOZVHVBBCBPVBABQZULVJVLVHVBBUAVMUBUCUDUEUMUFVEVCCFZBFUSVCCBUGURVNBURCDEZA
-      IZCFVNACDTVPVCCVOVBACDUHZRSUISUJVAVOUTIZCFVGUTCDTVRVFCVOVBUTVQRSUKUNUO $.
+      ( weq wal wn wsb wi wb wo dveeq2or equcom nfbii 19.21t sylbi imbi1i albii
+      wnf sb6 orim2i ax-mp ori albidv alcom bitri bitr4i bitr2i 3bitr3g bicomd
+      ) BDEBFZGZACDHZBFZABFZCDHZULDCEZAIZBFZCFZUQUOIZCFZUNUPULUSVACUKUSVAJZUKCD
+      EZBSZKUKVCKBDCLVEVCUKVEUQBSVCVDUQBCDMZNUQABOPUAUBUCUDUTURCFZBFUNURCBUEUMV
+      GBUMVDAIZCFVGACDTVHURCVDUQAVFQRUFRUGUPVDUOIZCFVBUOCDTVIVACVDUQUOVFQRUHUIU
+      J $.
   $}
 
   ${
