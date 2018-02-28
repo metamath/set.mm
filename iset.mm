@@ -13423,12 +13423,12 @@ $( The theorems in this section make use of the $d statement. $)
        Kingdon, 23-Feb-2018.) $)
     sbal1yz $p |- ( -. A. x x = z ->
              ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) ) $=
-      ( weq wal wn wsb wi nfnae nfri wb wo ax-i12 wnf a16nf 19.21t imbi1i albii
-      sb6 df-nf sylbir jaoi orim2i ax-mp albid alcom equcom bitri bitr4i bitr2i
-      syl ori 3bitr3g bicomd ) BDEBFZGZACDHZBFZABFZCDHZUQDCEZAIZBFZCFZVBUTIZCFZ
-      USVAUQVDVFCUQCBDCJKUPVDVFLZUPBCEBFZVBVBBFIBFZMZMUPVHMDCBNVKVHUPVIVHVJVIVB
-      BOZVHVBBCBPVBABQZULVJVLVHVBBUAVMUBUCUDUEUMUFVEVCCFZBFUSVCCBUGURVNBURCDEZA
-      IZCFVNACDTVPVCCVOVBACDUHZRSUISUJVAVOUTIZCFVGUTCDTVRVFCVOVBUTVQRSUKUNUO $.
+      ( weq wal wn wsb wi wb wo dveeq2or equcom nfbii 19.21t sylbi imbi1i albii
+      wnf sb6 orim2i ax-mp ori albidv alcom bitri bitr4i bitr2i 3bitr3g bicomd
+      ) BDEBFZGZACDHZBFZABFZCDHZULDCEZAIZBFZCFZUQUOIZCFZUNUPULUSVACUKUSVAJZUKCD
+      EZBSZKUKVCKBDCLVEVCUKVEUQBSVCVDUQBCDMZNUQABOPUAUBUCUDUTURCFZBFUNURCBUEUMV
+      GBUMVDAIZCFVGACDTVHURCVDUQAVFQRUFRUGUPVDUOIZCFVBUOCDTVIVACVDUQUOVFQRUHUIU
+      J $.
   $}
 
   ${
