@@ -1,4 +1,4 @@
-$( iset.mm - Version of 24-Feb-2018
+$( iset.mm - Version of 25-Feb-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11661,16 +11661,18 @@ $)
     UFKBBCDLMZNUDUHBCUAUBUFAUJOPQABDSACDSR $.
 
   ${
-    exdistrf.1 $e |- ( -. A. x x = y -> ( ph -> A. y ph ) ) $.
+    exdistrf.1 $e |- ( A. x x = y \/ A. x F/ y ph ) $.
     $( Distribution of existential quantifiers, with a bound-variable
        hypothesis saying that ` y ` is not free in ` ph ` , but ` x ` can be
        free in ` ph ` (and there is no distinct variable condition on ` x ` and
-       ` y ` ).  (Contributed by Mario Carneiro, 20-Mar-2013.) $)
+       ` y ` ).  (Contributed by Mario Carneiro, 20-Mar-2013.)  (Hypothesis and
+       proof modified for intuitionistic logic by Jim Kingdon, 25-Feb-2018.) $)
     exdistrf $p |- ( E. x E. y ( ph /\ ps ) -> E. x ( ph /\ E. y ps ) ) $=
-      ( weq wal wa wex wi biidd drex1 drex2 hbe1 19.8a anim2i eximi sylbi hbnae
-      19.9 syl6bir wn 19.40 19.9hd anim1d syl5 eximd pm2.61i ) CDFCGZABHZDIZCIZ
-      ABDIZHZCIZJUIULUJCIZCIZUOUPUKCDCUJUJCDUIUJKLMUQUPUOUPCUJCNTUJUNCBUMABDOPQ
-      RUAUIUBZUKUNCCDCSUKADIZUMHURUNABDUCURUSAUMAURDCDDSEUDUEUFUGUH $.
+      ( weq wal wnf wo wa wex wi biidd drex1 drex2 hbe1 19.9 19.8a anim2i eximi
+      sylbi syl6bir ax-ial 19.40 19.9t biimpd anim1d syl5 a4s eximd jaoi ax-mp
+      ) CDFCGZADHZCGZIABJZDKZCKZABDKZJZCKZLZEUMVBUOUMURUPCKZCKZVAVCUQCDCUPUPCDU
+      MUPMNOVDVCVAVCCUPCPQUPUTCBUSABDRSTUAUBUOUQUTCUNCUCUNUQUTLCUQADKZUSJUNUTAB
+      DUDUNVEAUSUNVEAADUEUFUGUHUIUJUKUL $.
   $}
 
   $( A version of ~ sb4 that doesn't require a distinctor antecedent.
