@@ -11170,6 +11170,18 @@ $)
        (Contributed by NM, 27-Feb-2005.) $)
     drex2 $p |- ( A. x x = y -> ( E. z ph <-> E. z ps ) ) $=
       ( weq wal hbae exbid ) CDGCHABECDEIFJ $.
+
+    $( Formula-building lemma for use with the Distinctor Reduction Theorem.
+       (Contributed by Mario Carneiro, 4-Oct-2016.) $)
+    drnf1 $p |- ( A. x x = y -> ( F/ x ph <-> F/ y ps ) ) $=
+      ( weq wal wi wnf dral1 imbi12d df-nf 3bitr4g ) CDFCGZAACGZHZCGBBDGZHZDGAC
+      IBDIPRCDNABOQEABCDEJKJACLBDLM $.
+
+    $( Formula-building lemma for use with the Distinctor Reduction Theorem.
+       (Contributed by Mario Carneiro, 4-Oct-2016.) $)
+    drnf2 $p |- ( A. x x = y -> ( F/ z ph <-> F/ z ps ) ) $=
+      ( weq wal wi wnf dral2 imbi12d df-nf 3bitr4g ) CDGCHZAAEHZIZEHBBEHZIZEHAE
+      JBEJQSCDEOABPRFABCDEFKLKAEMBEMN $.
   $}
 
   $( Closed theorem form of ~ a4im .  (Contributed by NM, 15-Jan-2008.) $)
