@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Feb-2018
+$( iset.mm - Version of 28-Feb-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -13161,6 +13161,21 @@ $( The theorems in this section make use of the $d statement. $)
     hbsb2 sbco2d syl5rbbr pm2.61i ) BCEZBFZABCGZCDGZACBGZBDGZHUDUEBDGZUFUHUEBCD
     IUDUEUGHZBFUIUHHUCUJBABCJKUEUGBDLMNUHUECBGZBDGUDOZUFUKUGBDACBPQULUECDBBCCRB
     CBRABCSTUAUB $.
+
+  $( Relationship between composition and commutativity for substitution.
+     (Contributed by Jim Kingdon, 28-Feb-2018.) $)
+  sbcocom $p |- ( [ z / y ] [ y / x ] ph <-> [ z / y ] [ z / x ] ph ) $=
+    ( wsb wb weq equsb1 sbequ sbimi ax-mp sbbi mpbi ) ABCEZABDEZFZCDEZNCDEOCD
+    EFCDGZCDEQCDHRPCDACDBIJKNOCDLM $.
+
+  ${
+    $d x z $.
+    $( Version of ~ sbcom with a distinct variable constraint between ` x ` and
+       ` y ` .  (Contributed by Jim Kingdon, 28-Feb-2018.) $)
+    sbcomv $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
+      ( wsb sbco3v sbcocom 3bitr3i ) ABDEDCEADBEBCEABCEDCEADCEBCEABDCFABDCGADBC
+      GH $.
+  $}
 
   ${
     $d w y z $.  $d w x $.
