@@ -13368,6 +13368,15 @@ $( The theorems in this section make use of the $d statement. $)
       DAUFDGTUA $.
   $}
 
+  ${
+    $d x y $.
+    $( Like ~ sb9 but with a distinct variable constraint between ` x ` and
+       ` y ` .  (Contributed by Jim Kingdon, 28-Feb-2018.) $)
+    sb9v $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
+      ( wsb hbs1 weq wb sbequ12 equcoms bitr3d cbval ) ACBDZABCDZBCACBEABCEBCFA
+      LMALGCBACBHIABCHJK $.
+  $}
+
   $( Commutation of quantification and substitution variables.  (Contributed by
      NM, 5-Aug-1993.) $)
   sb9i $p |- ( A. x [ x / y ] ph -> A. y [ y / x ] ph ) $=
