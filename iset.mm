@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Feb-2018
+$( iset.mm - Version of 1-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -8871,6 +8871,32 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Logical 'xor'
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare connective for exclusive disjunction ('xor'). $)
+  $c \/_ $. $( Underlined 'vee' (read:  'xor') $)
+
+  $( Extend wff definition to include exclusive disjunction ('xor'). $)
+  wxo $a wff ( ph \/_ ps ) $.
+
+  $( Define exclusive disjunction (logical 'xor').  Return true if either the
+     left or right, but not both, are true.  Contrast with ` /\ ` ( ~ wa ),
+     ` \/ ` ( ~ wo ), and ` -> ` ( ~ wi ) .  (Contributed by FL, 22-Nov-2010.)
+     (Modified by Jim Kingdon, 1-Mar-2018.) $)
+  df-xor $a |- ( ( ph \/_ ps ) <-> ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) ) $.
+
+  $( One way of defining exclusive or.  Equivalent to ~ df-xor .  (Contributed
+     by Jim Kingdon and Mario Carneiro, 1-Mar-2018.) $)
+  xoranor $p |- ( ( ph \/_ ps ) <-> ( ( ph \/ ps ) /\ ( -. ph \/ -. ps ) ) ) $=
+    ( wxo wo wn wa df-xor ax-ia3 con3d olc syl6 pm3.21 orc jaoi imdistani sylbi
+    wi pm3.14 anim2i sylibr impbii ) ABCZABDZAEZBEZDZFZUBUCABFZEZFZUGABGZUCUIUF
+    AUIUFQBAUIUEUFABUHABHIUEUDJKBUIUDUFBAUHBALIUDUEMKNOPUGUJUBUFUIUCABRSUKTUA
+    $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Operations on true and false constants
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -15679,6 +15705,11 @@ htmldef "A" as "<IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 TITLE='A' ALIGN=TOP>";
 htmldef "B" as "<IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 TITLE='B' ALIGN=TOP>";
   althtmldef "B" as '<I><FONT COLOR="#CC33CC">B</FONT></I>';
   latexdef "B" as "B";
+htmldef "\/_" as
+    " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
+  althtmldef "\/_" as " &#8891; ";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "\/_" as "\veebar";
 htmldef "T." as
     " <IMG SRC='top.gif' WIDTH=11 HEIGHT=19 TITLE='T.' ALIGN=TOP> ";
   althtmldef "T." as ' &#x22A4; ';
