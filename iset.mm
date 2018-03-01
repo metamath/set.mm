@@ -13343,7 +13343,7 @@ $( The theorems in this section make use of the $d statement. $)
        (Proof shortened by Andrew Salmon, 25-May-2011.) $)
     sb7f $p |- ( [ y / x ] ph <->
                E. z ( z = y /\ E. x ( x = z /\ ph ) ) ) $=
-      ( wsb weq wa wex sb5 sbbii sbco2 3bitr3i ) ABDFZDCFBDGAHBIZDCFABCFDCGOHDI
+      ( wsb weq wa wex sb5 sbbii sbco2v 3bitr3i ) ABDFZDCFBDGAHBIZDCFABCFDCGOHDI
       NODCABDJKABCDELODCJM $.
   $}
 
