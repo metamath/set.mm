@@ -8997,6 +8997,26 @@ $)
   falbifal $p |- ( ( F. <-> F. ) <-> T. ) $=
     ( wfal wb biid bitru ) AABACD $.
 
+  $( A ` \/_ ` identity.  (Contributed by David A. Wheeler, 2-Mar-2018.) $)
+  truxortru $p |- ( ( T. \/_ T. ) <-> F. ) $=
+    ( wtru wxo wo wa wn df-xor oridm nottru anidm xchnxbir anbi12i truan 3bitri
+    wfal ) AABAACZAADZEZDANDNAAFOAQNAGANPHAIJKNLM $.
+
+  $( A ` \/_ ` identity.  (Contributed by David A. Wheeler, 2-Mar-2018.) $)
+  truxorfal $p |- ( ( T. \/_ F. ) <-> T. ) $=
+    ( wtru wfal wxo wo wa wn df-xor truorfal notfal truan xchnxbir anidm 3bitri
+    anbi12i ) ABCABDZABEZFZEAAEAABGOAQAHBAPIBJKNALM $.
+
+  $( A ` \/_ ` identity.  (Contributed by David A. Wheeler, 2-Mar-2018.) $)
+  falxortru $p |- ( ( F. \/_ T. ) <-> T. ) $=
+    ( wfal wtru wo wa wn df-xor falortru notfal falantru xchnxbir anbi12i anidm
+    wxo 3bitri ) ABMABCZABDZEZDBBDBABFOBQBGABPHIJKBLN $.
+
+  $( A ` \/_ ` identity.  (Contributed by David A. Wheeler, 2-Mar-2018.) $)
+  falxorfal $p |- ( ( F. \/_ F. ) <-> F. ) $=
+    ( wfal wxo wo wa wn wtru df-xor oridm notfal anidm xchnxbir falantru 3bitri
+    anbi12i ) AABAACZAADZEZDAFDAAAGOAQFAHAFPIAJKNLM $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
        Auxiliary theorems for Alan Sare's virtual deduction tool, part 1
