@@ -1,4 +1,4 @@
-$( iset.mm - Version of 1-Mar-2018
+$( iset.mm - Version of 2-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -9105,8 +9105,8 @@ $)
        is the same as ~ mpto2 , that is, it is exclusive-or ~ df-xor ), rule 3
        of [Sanford] p. 39 (where it is not as clearly stated which kind of "or"
        is used but it appears to be in the same sense as ~ mpto2 ), and rule A5
-       in [Hitchcock] p. 5 (exclusive-or is expressly used).  (Contributed by
-       David A. Wheeler, 2-Mar-2018 .) $)
+       in [Hitchcock] p. 5 (exclusive-or is expressly used).
+       (Contributed by David A. Wheeler, 2-Mar-2018.) $)
     mtp-xor $p |- ps $=
       ( wn wo wa wxo df-xor mpbi simpli ori ax-mp ) AEBCABABFZABGEZABHNOGDABIJK
       LM $.
