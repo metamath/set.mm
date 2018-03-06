@@ -12223,6 +12223,7 @@
 "spanval" is used by "spanss".
 "spanval" is used by "spanss2".
 "specval" is used by "speccl".
+"spimeOLD" is used by "spimedOLD".
 "sps-o" is used by "ax10-16".
 "sps-o" is used by "ax10o-o".
 "sps-o" is used by "ax11el".
@@ -16912,7 +16913,7 @@ New usage of "specval" is discouraged (1 uses).
 New usage of "speivOLD" is discouraged (0 uses).
 New usage of "spfalwOLD" is discouraged (0 uses).
 New usage of "spimOLD" is discouraged (0 uses).
-New usage of "spimeOLD" is discouraged (0 uses).
+New usage of "spimeOLD" is discouraged (1 uses).
 New usage of "spimedOLD" is discouraged (0 uses).
 New usage of "spimehOLD" is discouraged (0 uses).
 New usage of "spimtOLD" is discouraged (0 uses).
