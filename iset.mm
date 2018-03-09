@@ -14863,10 +14863,8 @@ $)
     ( wex wi wal 19.2 imim1i 19.35 sylibr ) ACDZBCDZEACFZLEABECDMKLACCGHABCIJ
     $.
 
-  $( Theorem 19.24 of [Margaris] p. 90.  This is an example of a theorem which
-     asserts that something exists, but provides no way of constructing it.  It
-     does not hold in intuitionistic logic.  (Contributed by NM,
-     5-Aug-1993.) $)
+  $( Theorem 19.24 of [Margaris] p. 90.  It does not hold in intuitionistic
+     logic.  (Contributed by NM, 5-Aug-1993.) $)
   19.24 $p |- ( ( A. x ph -> A. x ps ) -> E. x ( ph -> ps ) ) $=
     ( wal wi wex 19.2 imim2i 19.35 sylibr ) ACDZBCDZEKBCFZEABECFLMKBCCGHABCIJ
     $.
