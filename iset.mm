@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Mar-2018
+$( iset.mm - Version of 8-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -8895,6 +8895,12 @@ $)
     AUIUFQBAUIUEUFABUHABHIUEUDJKBUIUDUFBAUHBALIUDUEMKNOPUGUJUBUFUIUCABRSUKTUA
     $.
 
+  $( A consequence of exclusive or.  In classical logic this would be an
+     equivalence.  (Contributed by Jim Kingdon, 8-Mar-2018.) $)
+  xorbin $p  |- ( ( ph \/_ ps ) -> ( ph <-> -. ps ) ) $=
+    ( wn wo wa wi df-xor imnan biimpri adantl sylbi pm2.53 orcoms adantr impbid
+    wxo ) ABPZABCZQABDZABECZEZARFZABGZTUBSUBTABHIJKQUARAFZUCSUDTBAUDBALMNKO $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Operations on true and false constants
@@ -9105,8 +9111,8 @@ $)
        is the same as ~ mpto2 , that is, it is exclusive-or ~ df-xor ), rule 3
        of [Sanford] p. 39 (where it is not as clearly stated which kind of "or"
        is used but it appears to be in the same sense as ~ mpto2 ), and rule A5
-       in [Hitchcock] p. 5 (exclusive-or is expressly used).
-       (Contributed by David A. Wheeler, 2-Mar-2018.) $)
+       in [Hitchcock] p. 5 (exclusive-or is expressly used).  (Contributed by
+       David A. Wheeler, 2-Mar-2018.) $)
     mtp-xor $p |- ps $=
       ( wn wo wa wxo df-xor mpbi simpli ori ax-mp ) AEBCABABFZABGEZABHNOGDABIJK
       LM $.
@@ -14857,10 +14863,8 @@ $)
     ( wex wi wal 19.2 imim1i 19.35 sylibr ) ACDZBCDZEACFZLEABECDMKLACCGHABCIJ
     $.
 
-  $( Theorem 19.24 of [Margaris] p. 90.  This is an example of a theorem which
-     asserts that something exists, but provides no way of constructing it.  It
-     does not hold in intuitionistic logic.  (Contributed by NM,
-     5-Aug-1993.) $)
+  $( Theorem 19.24 of [Margaris] p. 90.  It does not hold in intuitionistic
+     logic.  (Contributed by NM, 5-Aug-1993.) $)
   19.24 $p |- ( ( A. x ph -> A. x ps ) -> E. x ( ph -> ps ) ) $=
     ( wal wi wex 19.2 imim2i 19.35 sylibr ) ACDZBCDZEKBCFZEABECFLMKBCCGHABCIJ
     $.
