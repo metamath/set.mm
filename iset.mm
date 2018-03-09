@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Mar-2018
+$( iset.mm - Version of 8-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -8894,6 +8894,12 @@ $)
     wi pm3.14 anim2i sylibr impbii ) ABCZABDZAEZBEZDZFZUBUCABFZEZFZUGABGZUCUIUF
     AUIUFQBAUIUEUFABUHABHIUEUDJKBUIUDUFBAUHBALIUDUEMKNOPUGUJUBUFUIUCABRSUKTUA
     $.
+
+  $( A consequence of exclusive or.  In classical logic this would be an
+     equivalence.  (Contributed by Jim Kingdon, 8-Mar-2018.) $)
+  xorbin $p  |- ( ( ph \/_ ps ) -> ( ph <-> -. ps ) ) $=
+    ( wn wo wa wi df-xor imnan biimpri adantl sylbi pm2.53 orcoms adantr impbid
+    wxo ) ABPZABCZQABDZABECZEZARFZABGZTUBSUBTABHIJKQUARAFZUCSUDTBAUDBALMNKO $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
