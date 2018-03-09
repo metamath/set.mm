@@ -13251,6 +13251,7 @@ New usage of "ax16ALT" is discouraged (1 uses).
 New usage of "ax16ALT2" is discouraged (1 uses).
 New usage of "ax16ALT2OLD7" is discouraged (1 uses).
 New usage of "ax16ALTNEW7" is discouraged (1 uses).
+New usage of "ax16b" is discouraged (0 uses).
 New usage of "ax172" is discouraged (0 uses).
 New usage of "ax17el" is discouraged (1 uses).
 New usage of "ax17eq" is discouraged (2 uses).
@@ -17334,6 +17335,7 @@ Proof modification of "ax16ALT" is discouraged (20 steps).
 Proof modification of "ax16ALT2" is discouraged (62 steps).
 Proof modification of "ax16ALT2OLD7" is discouraged (62 steps).
 Proof modification of "ax16ALTNEW7" is discouraged (20 steps).
+Proof modification of "ax16b" is discouraged (14 steps).
 Proof modification of "ax16i" is discouraged (135 steps).
 Proof modification of "ax16iNEW7" is discouraged (135 steps).
 Proof modification of "ax172" is discouraged (14 steps).
