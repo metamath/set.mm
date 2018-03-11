@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Feb-2018
+$( iset.mm - Version of 10-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -8871,6 +8871,47 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Logical 'xor'
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare connective for exclusive disjunction ('xor'). $)
+  $c \/_ $. $( Underlined 'vee' (read:  'xor') $)
+
+  $( Extend wff definition to include exclusive disjunction ('xor'). $)
+  wxo $a wff ( ph \/_ ps ) $.
+
+  $( Define exclusive disjunction (logical 'xor').  Return true if either the
+     left or right, but not both, are true.  Contrast with ` /\ ` ( ~ wa ),
+     ` \/ ` ( ~ wo ), and ` -> ` ( ~ wi ) .  (Contributed by FL, 22-Nov-2010.)
+     (Modified by Jim Kingdon, 1-Mar-2018.) $)
+  df-xor $a |- ( ( ph \/_ ps ) <-> ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) ) $.
+
+  $( One way of defining exclusive or.  Equivalent to ~ df-xor .  (Contributed
+     by Jim Kingdon and Mario Carneiro, 1-Mar-2018.) $)
+  xoranor $p |- ( ( ph \/_ ps ) <-> ( ( ph \/ ps ) /\ ( -. ph \/ -. ps ) ) ) $=
+    ( wxo wo wn wa df-xor ax-ia3 con3d olc syl6 pm3.21 orc jaoi imdistani sylbi
+    wi pm3.14 anim2i sylibr impbii ) ABCZABDZAEZBEZDZFZUBUCABFZEZFZUGABGZUCUIUF
+    AUIUFQBAUIUEUFABUHABHIUEUDJKBUIUDUFBAUHBALIUDUEMKNOPUGUJUBUFUIUCABRSUKTUA
+    $.
+
+  $( A consequence of exclusive or.  In classical logic this would be an
+     equivalence.  (Contributed by Jim Kingdon, 8-Mar-2018.) $)
+  xorbin $p  |- ( ( ph \/_ ps ) -> ( ph <-> -. ps ) ) $=
+    ( wn wo wa wi df-xor imnan biimpri adantl sylbi pm2.53 orcoms adantr impbid
+    wxo ) ABPZABCZQABDZABECZEZARFZABGZTUBSUBTABHIJKQUARAFZUCSUDTBAUDBALMNKO $.
+
+  $( One direction of ~ pm5.18 .  (Contributed by Jim Kingdon, 10-Mar-2018.) $)
+  pm5.18im $p |- ( ( ph <-> ps ) -> -. ( ph <-> -. ps ) ) $=
+    ( wb wn pm5.19 bibi1 notbid mpbiri ) ABCZABDZCZDBJCZDBEIKLABJFGH $.
+
+  $( A consequence of exclusive or.  In classical logic this would be an
+     equivalence.  (Contributed by Jim Kingdon, 10-Mar-2018.) $)
+  xornbi $p  |- ( ( ph \/_ ps ) -> -. ( ph <-> ps ) ) $=
+    ( wxo wn wb xorbin pm5.18im con2i syl ) ABCABDEZABEZDABFKJABGHI $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Operations on true and false constants
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -8970,6 +9011,142 @@ $)
      shortened by Andrew Salmon, 13-May-2011.) $)
   falbifal $p |- ( ( F. <-> F. ) <-> T. ) $=
     ( wfal wb biid bitru ) AABACD $.
+
+  $( A ` \/_ ` identity.  (Contributed by David A. Wheeler, 2-Mar-2018.) $)
+  truxortru $p |- ( ( T. \/_ T. ) <-> F. ) $=
+    ( wtru wxo wo wa wn df-xor oridm nottru anidm xchnxbir anbi12i truan 3bitri
+    wfal ) AABAACZAADZEZDANDNAAFOAQNAGANPHAIJKNLM $.
+
+  $( A ` \/_ ` identity.  (Contributed by David A. Wheeler, 2-Mar-2018.) $)
+  truxorfal $p |- ( ( T. \/_ F. ) <-> T. ) $=
+    ( wtru wfal wxo wo wa wn df-xor truorfal notfal truan xchnxbir anidm 3bitri
+    anbi12i ) ABCABDZABEZFZEAAEAABGOAQAHBAPIBJKNALM $.
+
+  $( A ` \/_ ` identity.  (Contributed by David A. Wheeler, 2-Mar-2018.) $)
+  falxortru $p |- ( ( F. \/_ T. ) <-> T. ) $=
+    ( wfal wtru wo wa wn df-xor falortru notfal falantru xchnxbir anbi12i anidm
+    wxo 3bitri ) ABMABCZABDZEZDBBDBABFOBQBGABPHIJKBLN $.
+
+  $( A ` \/_ ` identity.  (Contributed by David A. Wheeler, 2-Mar-2018.) $)
+  falxorfal $p |- ( ( F. \/_ F. ) <-> F. ) $=
+    ( wfal wxo wo wa wn wtru df-xor oridm notfal anidm xchnxbir falantru 3bitri
+    anbi12i ) AABAACZAADZEZDAFDAAAGOAQFAHAFPIAJKNLM $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Stoic logic indemonstrables (Chrysippus of Soli)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  The Greek Stoics developed a system of logic.
+  The Stoic Chrysippus, in particular, was often considered one of the greatest
+  logicians of antiquity.
+  Stoic logic is different from Aristotle's system, since it focuses
+  on propositional logic,
+  though later thinkers did combine the systems of the Stoics with Aristotle.
+  Jan Lukasiewicz reports,
+  "For anybody familiar with mathematical logic it is self-evident
+  that the Stoic dialectic is the ancient form of modern propositional logic"
+  ( _On the history of the logic of proposition_ by Jan Lukasiewicz (1934),
+  translated in: _Selected Works_ - Edited by Ludwik Borkowski -
+  Amsterdam, North-Holland, 1970 pp. 197-217,
+  referenced in "History of Logic"
+  ~ https://www.historyoflogic.com/logic-stoics.htm ).
+  For more about Aristotle's system, see barbara and related theorems.
+
+  A key part of the Stoic logic system is a set of five "indemonstrables"
+  assigned to Chrysippus of Soli by Diogenes Laertius, though in
+  general it is difficult to assign specific
+  ideas to specific thinkers.
+  The indemonstrables are described in, for example,
+  [Lopez-Astorga] p. 11 , [Sanford] p. 39, and [Hitchcock] p. 5.
+  These indemonstrables are
+  modus ponendo ponens (modus ponens) ~ ax-mp ,
+  modus tollendo tollens (modus tollens) ~ mto ,
+  modus ponendo tollens I ~ mpto1 ,
+  modus ponendo tollens II ~ mpto2 , and
+  modus tollendo ponens (exclusive-or version) ~ mtp-xor .
+  The first is an axiom, the second is already proved; in this section
+  we prove the other three.
+  Since we assume or prove all of indemonstrables, the system of logic we use
+  here is as at least as strong as the set of Stoic indemonstrables.
+  Note that modus tollendo ponens ~ mtp-xor originally used exclusive-or,
+  but over time the name modus tollendo ponens has increasingly referred
+  to an inclusive-or variation, which is proved in ~ mtp-or .
+  This set of indemonstrables is not the entire system of Stoic logic.
+
+$)
+
+  ${
+    $( Minor premise for modus ponendo tollens 1. $)
+    mpto1.1 $e |- ph $.
+    $( Major premise for modus ponendo tollens 1. $)
+    mpto1.2 $e |- -. ( ph /\ ps ) $.
+    $( Modus ponendo tollens 1, one of the "indemonstrables" in Stoic logic.
+       See rule 1 on [Lopez-Astorga] p. 12 , rule 1 on [Sanford] p. 40, and
+       rule A3 in [Hitchcock] p. 5.  Sanford describes this rule second (after
+       ~ mpto2 ) as a "safer, and these days much more common" version of modus
+       ponendo tollens because it avoids confusion between inclusive-or and
+       exclusive-or.  (Contributed by David A. Wheeler, 2-Mar-2018.) $)
+    mpto1 $p |- -. ps $=
+      ( wn wi wa imnan mpbir ax-mp ) ABEZCAKFABGEDABHIJ $.
+  $}
+
+  ${
+    $( Minor premise for modus ponendo tollens 2. $)
+    mpto2.1 $e |- ph $.
+    $( Major premise for modus ponendo tollens 2. $)
+    mpto2.2 $e |- ( ph \/_ ps ) $.
+    $( Modus ponendo tollens 2, one of the "indemonstrables" in Stoic logic.
+       Note that this uses exclusive-or ` \/_ ` .  See rule 2 on
+       [Lopez-Astorga] p. 12 , rule 4 on [Sanford] p. 39 and rule A4 in
+       [Hitchcock] p. 5 .  (Contributed by David A. Wheeler, 2-Mar-2018.) $)
+    mpto2 $p |- -. ps $=
+      ( wo wa wn wxo df-xor mpbi simpri mpto1 ) ABCABEZABFGZABHMNFDABIJKL $.
+  $}
+
+  ${
+    $( Minor premise for modus tollendo ponens (original exclusive-or version).
+    $)
+    mtp-xor.1 $e |- -. ph $.
+    $( Major premise for modus tollendo ponens (original exclusive-or version).
+    $)
+    mtp-xor.2 $e |- ( ph \/_ ps ) $.
+    $( Modus tollendo ponens (original exclusive-or version), aka disjunctive
+       syllogism, one of the five "indemonstrables" in Stoic logic.  The rule
+       says, "if ` ph ` is not true, and either ` ph ` or ` ps ` (exclusively)
+       are true, then ` ps ` must be true."  Today the name "modus tollendo
+       ponens" often refers to a variant, the inclusive-or version as defined
+       in ~ mtp-or .  See rule 3 on [Lopez-Astorga] p. 12 (note that the "or"
+       is the same as ~ mpto2 , that is, it is exclusive-or ~ df-xor ), rule 3
+       of [Sanford] p. 39 (where it is not as clearly stated which kind of "or"
+       is used but it appears to be in the same sense as ~ mpto2 ), and rule A5
+       in [Hitchcock] p. 5 (exclusive-or is expressly used).  (Contributed by
+       David A. Wheeler, 2-Mar-2018.) $)
+    mtp-xor $p |- ps $=
+      ( wn wo wa wxo df-xor mpbi simpli ori ax-mp ) AEBCABABFZABGEZABHNOGDABIJK
+      LM $.
+  $}
+
+  ${
+    $( Minor premise for modus tollendo ponens (inclusive-or version). $)
+    mtp-or.1 $e |- -. ph $.
+    $( Major premise for modus tollendo ponens (inclusive-or version). $)
+    mtp-or.2 $e |- ( ph \/ ps ) $.
+    $( Modus tollendo ponens (inclusive-or version), aka disjunctive
+       syllogism.  This is similar to ~ mtp-xor , one of the five original
+       "indemonstrables" in Stoic logic.  However, in Stoic logic this rule
+       used exclusive-or, while the name modus tollendo ponens often refers to
+       a variant of the rule that uses inclusive-or instead.  The rule says,
+       "if ` ph ` is not true, and ` ph ` or ` ps ` (or both) are true, then
+       ` ps ` must be true."  An alternative phrasing is, "Once you eliminate
+       the impossible, whatever remains, no matter how improbable, must be the
+       truth." -- Sherlock Holmes (Sir Arthur Conan Doyle, 1890:  The Sign of
+       the Four, ch. 6).  (Contributed by David A. Wheeler, 3-Jul-2016.)
+       (Proof shortened by Wolf Lammen, 11-Nov-2017.) $)
+    mtp-or $p |- ps $=
+      ( wn ori ax-mp ) AEBCABDFG $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -11170,6 +11347,18 @@ $)
        (Contributed by NM, 27-Feb-2005.) $)
     drex2 $p |- ( A. x x = y -> ( E. z ph <-> E. z ps ) ) $=
       ( weq wal hbae exbid ) CDGCHABECDEIFJ $.
+
+    $( Formula-building lemma for use with the Distinctor Reduction Theorem.
+       (Contributed by Mario Carneiro, 4-Oct-2016.) $)
+    drnf1 $p |- ( A. x x = y -> ( F/ x ph <-> F/ y ps ) ) $=
+      ( weq wal wi wnf dral1 imbi12d df-nf 3bitr4g ) CDFCGZAACGZHZCGBBDGZHZDGAC
+      IBDIPRCDNABOQEABCDEJKJACLBDLM $.
+
+    $( Formula-building lemma for use with the Distinctor Reduction Theorem.
+       (Contributed by Mario Carneiro, 4-Oct-2016.) $)
+    drnf2 $p |- ( A. x x = y -> ( F/ z ph <-> F/ z ps ) ) $=
+      ( weq wal wi wnf dral2 imbi12d df-nf 3bitr4g ) CDGCHZAAEHZIZEHBBEHZIZEHAE
+      JBEJQSCDEOABPRFABCDEFKLKAEMBEMN $.
   $}
 
   $( Closed theorem form of ~ a4im .  (Contributed by NM, 15-Jan-2008.) $)
@@ -13150,6 +13339,21 @@ $( The theorems in this section make use of the $d statement. $)
     IUDUEUGHZBFUIUHHUCUJBABCJKUEUGBDLMNUHUECBGZBDGUDOZUFUKUGBDACBPQULUECDBBCCRB
     CBRABCSTUAUB $.
 
+  $( Relationship between composition and commutativity for substitution.
+     (Contributed by Jim Kingdon, 28-Feb-2018.) $)
+  sbcocom $p |- ( [ z / y ] [ y / x ] ph <-> [ z / y ] [ z / x ] ph ) $=
+    ( wsb wb weq equsb1 sbequ sbimi ax-mp sbbi mpbi ) ABCEZABDEZFZCDEZNCDEOCD
+    EFCDGZCDEQCDHRPCDACDBIJKNOCDLM $.
+
+  ${
+    $d x z $.
+    $( Version of ~ sbcom with a distinct variable constraint between ` x ` and
+       ` y ` .  (Contributed by Jim Kingdon, 28-Feb-2018.) $)
+    sbcomv $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
+      ( wsb sbco3v sbcocom 3bitr3i ) ABDEDCEADBEBCEABCEDCEADCEBCEABDCFABDCGADBC
+      GH $.
+  $}
+
   ${
     $d w y z $.  $d w x $.
     $( Substitution applied to an atomic membership wff.  (Contributed by NM,
@@ -13171,6 +13375,15 @@ $( The theorems in this section make use of the $d statement. $)
       equsb1 mpbi sbf 3bitri ) CBEZBAFZCDEZDAFZCAEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
       BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
       DAUFDGTUA $.
+  $}
+
+  ${
+    $d x y $.
+    $( Like ~ sb9 but with a distinct variable constraint between ` x ` and
+       ` y ` .  (Contributed by Jim Kingdon, 28-Feb-2018.) $)
+    sb9v $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
+      ( wsb hbs1 weq wb sbequ12 equcoms bitr3d cbval ) ACBDZABCDZBCACBEABCEBCFA
+      LMALGCBACBHIABCHJK $.
   $}
 
   $( Commutation of quantification and substitution variables.  (Contributed by
@@ -13316,7 +13529,7 @@ $( The theorems in this section make use of the $d statement. $)
        (Proof shortened by Andrew Salmon, 25-May-2011.) $)
     sb7f $p |- ( [ y / x ] ph <->
                E. z ( z = y /\ E. x ( x = z /\ ph ) ) ) $=
-      ( wsb weq wa wex sb5 sbbii sbco2 3bitr3i ) ABDFZDCFBDGAHBIZDCFABCFDCGOHDI
+      ( wsb weq wa wex sb5 sbbii sbco2v 3bitr3i ) ABDFZDCFBDGAHBIZDCFABCFDCGOHDI
       NODCABDJKABCDELODCJM $.
   $}
 
@@ -13423,12 +13636,12 @@ $( The theorems in this section make use of the $d statement. $)
        Kingdon, 23-Feb-2018.) $)
     sbal1yz $p |- ( -. A. x x = z ->
              ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) ) $=
-      ( weq wal wn wsb wi nfnae nfri wb wo ax-i12 wnf a16nf 19.21t imbi1i albii
-      sb6 df-nf sylbir jaoi orim2i ax-mp albid alcom equcom bitri bitr4i bitr2i
-      syl ori 3bitr3g bicomd ) BDEBFZGZACDHZBFZABFZCDHZUQDCEZAIZBFZCFZVBUTIZCFZ
-      USVAUQVDVFCUQCBDCJKUPVDVFLZUPBCEBFZVBVBBFIBFZMZMUPVHMDCBNVKVHUPVIVHVJVIVB
-      BOZVHVBBCBPVBABQZULVJVLVHVBBUAVMUBUCUDUEUMUFVEVCCFZBFUSVCCBUGURVNBURCDEZA
-      IZCFVNACDTVPVCCVOVBACDUHZRSUISUJVAVOUTIZCFVGUTCDTVRVFCVOVBUTVQRSUKUNUO $.
+      ( weq wal wn wsb wi wb wo dveeq2or equcom nfbii 19.21t sylbi imbi1i albii
+      wnf sb6 orim2i ax-mp ori albidv alcom bitri bitr4i bitr2i 3bitr3g bicomd
+      ) BDEBFZGZACDHZBFZABFZCDHZULDCEZAIZBFZCFZUQUOIZCFZUNUPULUSVACUKUSVAJZUKCD
+      EZBSZKUKVCKBDCLVEVCUKVEUQBSVCVDUQBCDMZNUQABOPUAUBUCUDUTURCFZBFUNURCBUEUMV
+      GBUMVDAIZCFVGACDTVHURCVDUQAVFQRUFRUGUPVDUOIZCFVBUOCDTVIVACVDUQUOVFQRUHUIU
+      J $.
   $}
 
   ${
@@ -13532,6 +13745,22 @@ $( The theorems in this section make use of the $d statement. $)
       UTVENCEHZCIZVBVBCIKCIZNZUTNZVFVKVHVIUTNZNZVHUTVINZNVMEDCOVNVLVHUTVIPQRVHV
       IUTUAUBVJVEUTVHVEVIVHVBACVHVBCVGCUCVBCEUDUEACLZVHACFUFZSTVIVBCLZVEVBCUGVQ
       VBACVQUHVOVQVPSTUIUJUKULVEUTPRUPUMVDBCABEDBEUNGUOUQURUS $.
+  $}
+
+  ${
+    $d x z $.
+    dvelimfv.1 $e |- ( ph -> A. x ph ) $.
+    dvelimfv.2 $e |- ( ps -> A. z ps ) $.
+    dvelimfv.3 $e |- ( z = y -> ( ph <-> ps ) ) $.
+    $( Like ~ dvelimf but with a distinct variable constraint on ` x ` and
+       ` z ` .  (Contributed by Jim Kingdon, 6-Mar-2018.) $)
+    dvelimfv $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
+      ( weq wal wn wi wnf nfnae wo ax-i12 orcom mpbi a1i nfimd orass mpbir nfae
+      orbi2i ax16ALT nfd nfi df-nf id sylbir jaoi orim1i ax-mp ori nfald equsal
+      nfbii sylib nfrd ) CDICJZKZBCVAEDIZALZEJZCMBCMVAVCCECDENUTVCCMZVEUTOZUTVE
+      OCEICJZVBVBCJLCJZOZUTOZVFVJVGVHUTOZOZVGUTVHOZOVLEDCPVMVKVGUTVHQUDRVGVHUTU
+      AUBVIVEUTVGVEVHVGVBACVGVBCCECUCVBCEUEUFACMZVGACFUGZSTVHVBCMZVEVBCUHVPVBAC
+      VPUIVNVPVOSTUJUKULUMVEUTQRUNUOVDBCABEDGHUPUQURUS $.
   $}
 
   ${
@@ -14668,10 +14897,8 @@ $)
     ( wex wi wal 19.2 imim1i 19.35 sylibr ) ACDZBCDZEACFZLEABECDMKLACCGHABCIJ
     $.
 
-  $( Theorem 19.24 of [Margaris] p. 90.  This is an example of a theorem which
-     asserts that something exists, but provides no way of constructing it.  It
-     does not hold in intuitionistic logic.  (Contributed by NM,
-     5-Aug-1993.) $)
+  $( Theorem 19.24 of [Margaris] p. 90.  It does not hold in intuitionistic
+     logic.  (Contributed by NM, 5-Aug-1993.) $)
   19.24 $p |- ( ( A. x ph -> A. x ps ) -> E. x ( ph -> ps ) ) $=
     ( wal wi wex 19.2 imim2i 19.35 sylibr ) ACDZBCDZEKBCFZEABECFLMKBCCGHABCIJ
     $.
@@ -15652,6 +15879,11 @@ htmldef "A" as "<IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 TITLE='A' ALIGN=TOP>";
 htmldef "B" as "<IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 TITLE='B' ALIGN=TOP>";
   althtmldef "B" as '<I><FONT COLOR="#CC33CC">B</FONT></I>';
   latexdef "B" as "B";
+htmldef "\/_" as
+    " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
+  althtmldef "\/_" as " &#8891; ";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "\/_" as "\veebar";
 htmldef "T." as
     " <IMG SRC='top.gif' WIDTH=11 HEIGHT=19 TITLE='T.' ALIGN=TOP> ";
   althtmldef "T." as ' &#x22A4; ';

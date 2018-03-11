@@ -12223,6 +12223,7 @@
 "spanval" is used by "spanss".
 "spanval" is used by "spanss2".
 "specval" is used by "speccl".
+"spimeOLD" is used by "spimedOLD".
 "sps-o" is used by "ax10-16".
 "sps-o" is used by "ax10o-o".
 "sps-o" is used by "ax11el".
@@ -12935,6 +12936,7 @@ New usage of "19.8aOLD" is discouraged (0 uses).
 New usage of "19.8wOLD" is discouraged (0 uses).
 New usage of "19.9OLD" is discouraged (0 uses).
 New usage of "19.9hOLD" is discouraged (0 uses).
+New usage of "19.9htOLD" is discouraged (0 uses).
 New usage of "19.9tOLD" is discouraged (0 uses).
 New usage of "19.9vOLD" is discouraged (0 uses).
 New usage of "1dimN" is discouraged (0 uses).
@@ -13249,6 +13251,7 @@ New usage of "ax16ALT" is discouraged (1 uses).
 New usage of "ax16ALT2" is discouraged (1 uses).
 New usage of "ax16ALT2OLD7" is discouraged (1 uses).
 New usage of "ax16ALTNEW7" is discouraged (1 uses).
+New usage of "ax16b" is discouraged (0 uses).
 New usage of "ax172" is discouraged (0 uses).
 New usage of "ax17el" is discouraged (1 uses).
 New usage of "ax17eq" is discouraged (2 uses).
@@ -14506,7 +14509,9 @@ New usage of "dochpolN" is discouraged (0 uses).
 New usage of "dochsordN" is discouraged (0 uses).
 New usage of "dochspocN" is discouraged (0 uses).
 New usage of "dral1-o" is discouraged (4 uses).
+New usage of "dral1OLD" is discouraged (0 uses).
 New usage of "dral2-o" is discouraged (4 uses).
+New usage of "dral2OLD" is discouraged (0 uses).
 New usage of "drngoi" is discouraged (2 uses).
 New usage of "dtruALT" is discouraged (0 uses).
 New usage of "dtruALT2" is discouraged (0 uses).
@@ -14521,6 +14526,8 @@ New usage of "dveeq2OLD" is discouraged (2 uses).
 New usage of "dvelimALT" is discouraged (1 uses).
 New usage of "dvelimALTNEW7" is discouraged (0 uses).
 New usage of "dvelimf-o" is discouraged (3 uses).
+New usage of "dvelimhOLD" is discouraged (0 uses).
+New usage of "dvelimhwOLD" is discouraged (0 uses).
 New usage of "dvelimvOLD" is discouraged (2 uses).
 New usage of "dvh2dimatN" is discouraged (0 uses).
 New usage of "dvh3dim3N" is discouraged (0 uses).
@@ -15014,8 +15021,10 @@ New usage of "hbimOLD" is discouraged (0 uses).
 New usage of "hbimdOLD" is discouraged (0 uses).
 New usage of "hbimpg" is discouraged (0 uses).
 New usage of "hbimpgVD" is discouraged (0 uses).
+New usage of "hbn1fwOLD" is discouraged (0 uses).
 New usage of "hbnOLD" is discouraged (0 uses).
 New usage of "hbnae-o" is discouraged (3 uses).
+New usage of "hbntOLD" is discouraged (0 uses).
 New usage of "hbntal" is discouraged (3 uses).
 New usage of "hbra2VD" is discouraged (0 uses).
 New usage of "hcau" is discouraged (4 uses).
@@ -16905,7 +16914,7 @@ New usage of "specval" is discouraged (1 uses).
 New usage of "speivOLD" is discouraged (0 uses).
 New usage of "spfalwOLD" is discouraged (0 uses).
 New usage of "spimOLD" is discouraged (0 uses).
-New usage of "spimeOLD" is discouraged (0 uses).
+New usage of "spimeOLD" is discouraged (1 uses).
 New usage of "spimedOLD" is discouraged (0 uses).
 New usage of "spimehOLD" is discouraged (0 uses).
 New usage of "spimtOLD" is discouraged (0 uses).
@@ -17229,6 +17238,7 @@ Proof modification of "19.8aOLD" is discouraged (19 steps).
 Proof modification of "19.8wOLD" is discouraged (37 steps).
 Proof modification of "19.9OLD" is discouraged (13 steps).
 Proof modification of "19.9hOLD" is discouraged (22 steps).
+Proof modification of "19.9htOLD" is discouraged (27 steps).
 Proof modification of "19.9tOLD" is discouraged (37 steps).
 Proof modification of "19.9vOLD" is discouraged (19 steps).
 Proof modification of "1div0apr" is discouraged (77 steps).
@@ -17325,6 +17335,7 @@ Proof modification of "ax16ALT" is discouraged (20 steps).
 Proof modification of "ax16ALT2" is discouraged (62 steps).
 Proof modification of "ax16ALT2OLD7" is discouraged (62 steps).
 Proof modification of "ax16ALTNEW7" is discouraged (20 steps).
+Proof modification of "ax16b" is discouraged (14 steps).
 Proof modification of "ax16i" is discouraged (135 steps).
 Proof modification of "ax16iNEW7" is discouraged (135 steps).
 Proof modification of "ax172" is discouraged (14 steps).
@@ -17426,7 +17437,9 @@ Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "dih2dimbALTN" is discouraged (450 steps).
 Proof modification of "disjiunOLD" is discouraged (52 steps).
 Proof modification of "disjmoOLD" is discouraged (46 steps).
+Proof modification of "dral1OLD" is discouraged (68 steps).
 Proof modification of "dral2-o" is discouraged (14 steps).
+Proof modification of "dral2OLD" is discouraged (14 steps).
 Proof modification of "dtruALT" is discouraged (79 steps).
 Proof modification of "dtruALT2" is discouraged (80 steps).
 Proof modification of "dveel2ALT" is discouraged (22 steps).
@@ -17439,6 +17452,8 @@ Proof modification of "dveeq2OLD" is discouraged (14 steps).
 Proof modification of "dvelimALT" is discouraged (106 steps).
 Proof modification of "dvelimALTNEW7" is discouraged (106 steps).
 Proof modification of "dvelimf-o" is discouraged (129 steps).
+Proof modification of "dvelimhOLD" is discouraged (129 steps).
+Proof modification of "dvelimhwOLD" is discouraged (80 steps).
 Proof modification of "dvelimvOLD" is discouraged (235 steps).
 Proof modification of "e00" is discouraged (7 steps).
 Proof modification of "e000" is discouraged (13 steps).
@@ -17684,8 +17699,10 @@ Proof modification of "hbimOLD" is discouraged (28 steps).
 Proof modification of "hbimdOLD" is discouraged (81 steps).
 Proof modification of "hbimpg" is discouraged (88 steps).
 Proof modification of "hbimpgVD" is discouraged (165 steps).
+Proof modification of "hbn1fwOLD" is discouraged (43 steps).
 Proof modification of "hbnOLD" is discouraged (27 steps).
 Proof modification of "hbnae-o" is discouraged (11 steps).
+Proof modification of "hbntOLD" is discouraged (31 steps).
 Proof modification of "hbntal" is discouraged (48 steps).
 Proof modification of "hbra2VD" is discouraged (26 steps).
 Proof modification of "helloworld" is discouraged (29 steps).
