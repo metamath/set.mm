@@ -1,4 +1,4 @@
-$( iset.mm - Version of 8-Mar-2018
+$( iset.mm - Version of 10-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -8900,6 +8900,15 @@ $)
   xorbin $p  |- ( ( ph \/_ ps ) -> ( ph <-> -. ps ) ) $=
     ( wn wo wa wi df-xor imnan biimpri adantl sylbi pm2.53 orcoms adantr impbid
     wxo ) ABPZABCZQABDZABECZEZARFZABGZTUBSUBTABHIJKQUARAFZUCSUDTBAUDBALMNKO $.
+
+  $( One direction of ~ pm5.18 .  (Contributed by Jim Kingdon, 10-Mar-2018.) $)
+  pm5.18im $p |- ( ( ph <-> ps ) -> -. ( ph <-> -. ps ) ) $=
+    ( wb wn pm5.19 bibi1 notbid mpbiri ) ABCZABDZCZDBJCZDBEIKLABJFGH $.
+
+  $( A consequence of exclusive or.  In classical logic this would be an
+     equivalence.  (Contributed by Jim Kingdon, 10-Mar-2018.) $)
+  xornbi $p  |- ( ( ph \/_ ps ) -> -. ( ph <-> ps ) ) $=
+    ( wxo wn wb xorbin pm5.18im con2i syl ) ABCABDEZABEZDABFKJABGHI $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
