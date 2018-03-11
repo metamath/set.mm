@@ -13748,6 +13748,22 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
+    $d x z $.
+    dvelimfv.1 $e |- ( ph -> A. x ph ) $.
+    dvelimfv.2 $e |- ( ps -> A. z ps ) $.
+    dvelimfv.3 $e |- ( z = y -> ( ph <-> ps ) ) $.
+    $( Like ~ dvelimf but with a distinct variable constraint on ` x ` and
+       ` z ` .  (Contributed by Jim Kingdon, 6-Mar-2018.) $)
+    dvelimfv $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
+      ( weq wal wn wi wnf nfnae wo ax-i12 orcom mpbi a1i nfimd orass mpbir nfae
+      orbi2i ax16ALT nfd nfi df-nf id sylbir jaoi orim1i ax-mp ori nfald equsal
+      nfbii sylib nfrd ) CDICJZKZBCVAEDIZALZEJZCMBCMVAVCCECDENUTVCCMZVEUTOZUTVE
+      OCEICJZVBVBCJLCJZOZUTOZVFVJVGVHUTOZOZVGUTVHOZOVLEDCPVMVKVGUTVHQUDRVGVHUTU
+      AUBVIVEUTVGVEVHVGVBACVGVBCCECUCVBCEUEUFACMZVGACFUGZSTVHVBCMZVEVBCUHVPVBAC
+      VPUIVNVPVOSTUJUKULUMVEUTQRUNUOVDBCABEDGHUPUQURUS $.
+  $}
+
+  ${
     $d w z x $.  $d w y $.
     $( Quantifier introduction when one pair of variables is distinct.
        (Contributed by NM, 2-Jan-2002.)  (Proof rewritten by Jim Kingdon,
