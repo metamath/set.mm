@@ -1,4 +1,4 @@
-$( iset.mm - Version of 10-Mar-2018
+$( iset.mm - Version of 11-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5767,6 +5767,35 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Decidable propositions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+  $( Declare connective for decidability. $)
+  $c DECID $.
+
+  $( Extend wff definition to include decidability. $)
+  wdc $a wff DECID ph $.
+
+  $( Propositions which are known to be true or false are called decidable.
+     The (classical) Law of the Excluded Middle corresponds to the principle
+     that all propositions are decidable, but even given intuitionistic logic,
+     particular kinds of propositions may be decidable (for example, the
+     proposition that two natural numbers are equal will be decidable under
+     most sets of axioms).
+
+     Our notation for decidability is a connective ` DECID ` which we place
+     before the formula in question.  For example, ` DECID x = y ` corresponds
+     to "x = y is decidabile".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
+  df-dc $a |- ( DECID ph <-> ( ph \/ -. ph ) ) $.
+
+  $( Double negation elimination for a decidable proposition.  (Contributed by
+     Jim Kingdon, 11-Mar-2018.) $)
+  notnot2dc $p |- ( DECID ph -> ( -. -. ph -> ph ) ) $=
+    ( wdc wn wo wi df-dc orcom bitri pm2.53 sylbi ) ABZACZADZLCAEKALD
+    MAFALGHLAIJ $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Classical logic
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
@@ -10503,6 +10532,15 @@ $)
   $}
 
   ${
+    nfor.1 $e |- F/ x ph $.
+    nfor.2 $e |- F/ x ps $.
+    $( If ` x ` is not free in ` ph ` and ` ps ` , it is not free in
+       ` ( ph \/ ps ) ` .  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
+    nfor $p |- F/ x ( ph \/ ps ) $=
+      ( wo nfri hbor nfi ) ABFCABCACDGBCEGHI $.
+  $}
+
+  ${
     hbbid.1 $e |- ( ph -> A. x ph ) $.
     hbbid.2 $e |- ( ph -> ( ps -> A. x ps ) ) $.
     hbbid.3 $e |- ( ph -> ( ch -> A. x ch ) ) $.
@@ -10916,6 +10954,14 @@ $)
        (Contributed by Mario Carneiro, 11-Aug-2016.) $)
     nfn $p |- F/ x -. ph $=
       ( wn wnf wtru a1i nfnd trud ) ADBEFABABEFCGHI $.
+  $}
+
+  ${
+    nfdc.1 $e |- F/ x ph $.
+    $( If ` x ` is not free in ` ph ` , it is not free in ` DECID ph ` .
+       (Contributed by Jim Kingdon, 11-Mar-2018.) $)
+    nfdc $p |- F/ x DECID ph $=
+      ( wdc wn wo df-dc nfn nfor nfxfr ) ADAAEZFBAGAKBCABCHIJ $.
   $}
 
   $( The analog in our predicate calculus of axiom 5 of modal logic S5.
@@ -15892,6 +15938,9 @@ htmldef "F." as
     " <IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 TITLE='F.' ALIGN=TOP> ";
   althtmldef "F." as ' &perp; ';
   latexdef "F." as "\bot";
+htmldef "DECID" as "<SMALL>DECID</SMALL> ";
+  althtmldef "DECID" as "<SMALL>DECID</SMALL> ";
+  latexdef "DECID" as "\mathrm{DECID} ";
 
 /* End of typesetting definition section */
 
