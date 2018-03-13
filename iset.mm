@@ -1,4 +1,4 @@
-$( iset.mm - Version of 11-Mar-2018
+$( iset.mm - Version of 12-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -8938,6 +8938,13 @@ $)
      equivalence.  (Contributed by Jim Kingdon, 10-Mar-2018.) $)
   xornbi $p  |- ( ( ph \/_ ps ) -> -. ( ph <-> ps ) ) $=
     ( wxo wn wb xorbin pm5.18im con2i syl ) ABCABDEZABEZDABFKJABGHI $.
+
+  $( Exclusive or implies the left proposition is decidable.  (Contributed by
+     Jim Kingdon, 12-Mar-2018.) $)
+  xordc1 $p |- ( ( ph \/_ ps ) -> DECID ph ) $=
+    ( wo wa wn wxo andir ax-ia1 wi imnan ancom xchbinxr pm3.35 sylan2br orim12i
+    wdc sylbi df-xor df-dc 3imtr4i ) ABCABDZEZDZAAEZCZABFAPUCAUBDZBUBDZCUEABUBG
+    UFAUGUDAUBHUBBBUDIZUDUHBADUABAJABKLBUDMNOQABRAST $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
