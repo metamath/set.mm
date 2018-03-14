@@ -5788,6 +5788,12 @@ $)
      to "x = y is decidabile".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   df-dc $a |- ( DECID ph <-> ( ph \/ -. ph ) ) $.
 
+  $( Double negation elimination for a decidable proposition.  (Contributed by
+     Jim Kingdon, 11-Mar-2018.) $)
+  notnot2dc $p |- ( DECID ph -> ( -. -. ph -> ph ) ) $=
+    ( wdc wn wo wi df-dc orcom bitri pm2.53 sylbi ) ABZACZADZLCAEKALD
+    MAFALGHLAIJ $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Classical logic
@@ -5856,12 +5862,6 @@ $)
      5-Sep-1999.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
   notnot2 $p |- ( -. -. ph -> ph ) $=
     ( wn pm2.21 pm2.18d ) ABZBAEACD $.
-
-  $( Double negation elimination for a decidable proposition.  (Contributed by
-     Jim Kingdon, 11-Mar-2018.) $)
-  notnot2dc $p |- ( DECID ph -> ( -. -. ph -> ph ) ) $=
-    ( wdc wn wo wi df-dc orcom bitri pm2.53 sylbi ) ABZACZADZLCAEKALD
-    MAFALGHLAIJ $.
 
   ${
     con1d.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
@@ -6057,12 +6057,6 @@ $)
      (Contributed by NM, 5-Aug-1993.) $)
   notnot $p |- ( ph <-> -. -. ph ) $=
     ( wn notnot1 notnot2 impbii ) AABBACADE $.
-
-  $( Double negation equivalence for a decidable proposition.  Like theorem
-     *4.13 of [WhiteheadRussell] p. 117, but with a decidability antecendent.
-     (Contributed by Jim Kingdon, 13-Mar-2018.) $)
-  notnotdc $p |- ( DECID ph -> ( ph <-> -. -. ph ) ) $=
-    ( wdc wn notnot1 notnot2dc impbid2 ) ABAACCADAEF $.
 
   ${
     con4bid.1 $e |- ( ph -> ( -. ps <-> -. ch ) ) $.
