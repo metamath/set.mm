@@ -1,4 +1,4 @@
-$( iset.mm - Version of 13-Mar-2018
+$( iset.mm - Version of 12-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5827,12 +5827,6 @@ $)
      technical meaning.  (Contributed by NM, 5-Aug-1993.)
      (New usage is discouraged.) $)
   ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
-
-  $( Contraposition of a decidable proposition.  (Contributed by Jim Kingdon,
-     13-Mar-2018.) $)
-  condc $p |- ( DECID ph -> ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) ) $=
-    ( wdc wn wo wi df-dc ax-1 a1d pm2.27 ax-in2 syl6 jaoi sylbi ) ACA
-    ADZEOBDZFZBAFZFZAGASOARQABHIOQPROPJBAKLMN $.
 
   ${
     con4d.1 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
