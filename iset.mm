@@ -1,4 +1,4 @@
-$( iset.mm - Version of 13-Mar-2018
+$( iset.mm - Version of 15-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6106,11 +6106,12 @@ $)
   $}
 
   ${
-    con1biiOLD.1 $e |- ( -. ph <-> ps ) $.
-    $( Obsolete proof of ~ con1bii as of 28-Sep-2014.  (Contributed by NM,
-       5-Aug-1993.)  (Revised by NM, 13-Oct-2012.) $)
-    con1biiOLD $p |- ( -. ps <-> ph ) $=
-      ( wn notnot notbii bitr2i ) AADZDBDAEHBCFG $.
+    con1biidc.1 $e |- ( DECID ph -> ( -. ph <-> ps ) ) $.
+    $( A contraposition inference.  (Contributed by Jim Kingdon,
+       15-Mar-2018.) $)
+    con1biidc $p |- ( DECID ph -> ( -. ps <-> ph ) ) $=
+      ( wdc wn notnotdc notbid bitrd bicomd ) ADZABEZJAAEZE
+      KAFJLBCGHI $.
   $}
 
   $( Contraposition.  Bidirectional version of ~ con1 .  (Contributed by NM,
