@@ -6134,6 +6134,14 @@ $)
   $}
 
   ${
+    con2biidc.1 $e |- ( DECID ps -> ( ph <-> -. ps ) ) $.
+    $( A contraposition inference.  (Contributed by Jim Kingdon,
+       15-Mar-2018.) $)
+    con2biidc $p |- ( DECID ps -> ( ps <-> -. ph ) ) $=
+      ( wdc wn bicomd con1biidc ) BDZAEBBAHABECFGF $.
+  $}
+
+  ${
     bija.1 $e |- ( ph -> ( ps -> ch ) ) $.
     bija.2 $e |- ( -. ph -> ( -. ps -> ch ) ) $.
     $( Combine antecedents into a single bi-conditional.  This inference,
