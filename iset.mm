@@ -1,4 +1,4 @@
-$( iset.mm - Version of 12-Mar-2018
+$( iset.mm - Version of 15-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5788,12 +5788,6 @@ $)
      to "x = y is decidabile".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   df-dc $a |- ( DECID ph <-> ( ph \/ -. ph ) ) $.
 
-  $( Double negation elimination for a decidable proposition.  (Contributed by
-     Jim Kingdon, 11-Mar-2018.) $)
-  notnot2dc $p |- ( DECID ph -> ( -. -. ph -> ph ) ) $=
-    ( wdc wn wo wi df-dc orcom bitri pm2.53 sylbi ) ABZACZADZLCAEKALD
-    MAFALGHLAIJ $.
-
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Classical logic
@@ -5828,6 +5822,12 @@ $)
      (New usage is discouraged.) $)
   ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
 
+  $( Contraposition of a decidable proposition.  (Contributed by Jim Kingdon,
+     13-Mar-2018.) $)
+  condc $p |- ( DECID ph -> ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) ) $=
+    ( wdc wn wo wi df-dc ax-1 a1d pm2.27 ax-in2 syl6 jaoi sylbi ) ACA
+    ADZEOBDZFZBAFZFZAGASOARQABHIOQPROPJBAKLMN $.
+
   ${
     con4d.1 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
     $( Deduction derived from axiom ~ ax-3 .  (Contributed by NM,
@@ -5856,6 +5856,12 @@ $)
      5-Sep-1999.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
   notnot2 $p |- ( -. -. ph -> ph ) $=
     ( wn pm2.21 pm2.18d ) ABZBAEACD $.
+
+  $( Double negation elimination for a decidable proposition.  (Contributed by
+     Jim Kingdon, 11-Mar-2018.) $)
+  notnot2dc $p |- ( DECID ph -> ( -. -. ph -> ph ) ) $=
+    ( wdc wn wo wi df-dc orcom bitri pm2.53 sylbi ) ABZACZADZLCAEKALD
+    MAFALGHLAIJ $.
 
   ${
     con1d.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
@@ -6052,6 +6058,12 @@ $)
   notnot $p |- ( ph <-> -. -. ph ) $=
     ( wn notnot1 notnot2 impbii ) AABBACADE $.
 
+  $( Double negation equivalence for a decidable proposition.  Like theorem
+     *4.13 of [WhiteheadRussell] p. 117, but with a decidability antecendent.
+     (Contributed by Jim Kingdon, 13-Mar-2018.) $)
+  notnotdc $p |- ( DECID ph -> ( ph <-> -. -. ph ) ) $=
+    ( wdc wn notnot1 notnot2dc impbid2 ) ABAACCADAEF $.
+
   ${
     con4bid.1 $e |- ( ph -> ( -. ps <-> -. ch ) ) $.
     $( A contraposition deduction.  (Contributed by NM, 21-May-1994.)  (Revised
@@ -6094,11 +6106,12 @@ $)
   $}
 
   ${
-    con1biiOLD.1 $e |- ( -. ph <-> ps ) $.
-    $( Obsolete proof of ~ con1bii as of 28-Sep-2014.  (Contributed by NM,
-       5-Aug-1993.)  (Revised by NM, 13-Oct-2012.) $)
-    con1biiOLD $p |- ( -. ps <-> ph ) $=
-      ( wn notnot notbii bitr2i ) AADZDBDAEHBCFG $.
+    con1biidc.1 $e |- ( DECID ph -> ( -. ph <-> ps ) ) $.
+    $( A contraposition inference.  (Contributed by Jim Kingdon,
+       15-Mar-2018.) $)
+    con1biidc $p |- ( DECID ph -> ( -. ps <-> ph ) ) $=
+      ( wdc wn notnotdc notbid bitrd bicomd ) ADZABEZJAAEZE
+      KAFJLBCGHI $.
   $}
 
   $( Contraposition.  Bidirectional version of ~ con1 .  (Contributed by NM,
@@ -6118,6 +6131,14 @@ $)
     $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.) $)
     con2bii $p |- ( ps <-> -. ph ) $=
       ( wn bicomi con1bii ) ADBBAABDCEFE $.
+  $}
+
+  ${
+    con2biidc.1 $e |- ( DECID ps -> ( ph <-> -. ps ) ) $.
+    $( A contraposition inference.  (Contributed by Jim Kingdon,
+       15-Mar-2018.) $)
+    con2biidc $p |- ( DECID ps -> ( ps <-> -. ph ) ) $=
+      ( wdc wn bicomd con1biidc ) BDZAEBBAHABECFGF $.
   $}
 
   ${
@@ -9788,6 +9809,14 @@ $)
     nex $p |- -. E. x ph $=
       ( wn wex alnex mpgbi ) ADABEDBABFCG $.
   $}
+
+  $( Defining ` E. x ph ` given decidability.  It is common in classical logic
+     to define ` E. x ph ` as ` -. A. x -. ph ` but in intuitionistic logic,
+     that definition only holds under certain conditions.  (Contributed by Jim
+     Kingdon, 15-Mar-2018.) $)
+  dfexdc $p |- ( DECID E. x ph
+                 -> ( E. x ph <-> -. A. x -. ph ) ) $=
+    ( wn wal wex wb wdc alnex a1i con2biidc ) ACBDZABEZKLCFLGABHIJ $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
