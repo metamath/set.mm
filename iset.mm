@@ -9810,6 +9810,14 @@ $)
       ( wn wex alnex mpgbi ) ADABEDBABFCG $.
   $}
 
+  $( Defining ` E. x ph ` given decidability.  It is common in classical logic
+     to define ` E. x ph ` as ` -. A. x -. ph ` but in intuitionistic logic,
+     that definition only holds under certain conditions.  (Contributed by Jim
+     Kingdon, 15-Mar-2018.) $)
+  dfexdc $p |- ( DECID E. x ph
+                 -> ( E. x ph <-> -. A. x -. ph ) ) $=
+    ( wn wal wex wb wdc alnex a1i con2biidc ) ACBDZABEZKLCFLGABHIJ $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
     Introduce equality axioms
