@@ -10039,6 +10039,31 @@ $)
   ax-i12 $a |- ( A. z z = x \/ ( A. z z = y \/
                  A. z ( x = y -> A. z x = y ) ) ) $.
 
+  $( Axiom of bundling.  The general idea of this axiom is that two variables
+     are either distinct or non-distinct.  That idea could be expressed as
+     ` A. z z = x \/ -. A. z z = x ` .  However, we instead choose an axiom
+     which has many of the same consequences, but which is different with
+     respect to a universe which contains only one object. ` A. z z = x ` holds
+     if ` z ` and ` x ` are the same variable, likewise for ` z ` and ` y ` ,
+     and ` A. x A. z ( x = y -> A. z x = y ) ` holds if ` x ` is distinct from
+     the others (and the universe has at least two objects).
+
+     As with other statements of the form "x is decidable (either true or
+     false)", this does not entail the full Law of the Excluded Middle (which
+     is the proposition that all statements are decidable), but instead merely
+     the assertion that particular kinds of statements are decidable.
+
+     This axiom is similar to ~ ax-i12 , but appears to be stronger.  At least
+     for now, we keep them both as distinct axioms, but they serve similar
+     purposes.
+
+     The read we call this "bundling" is that a statement without a distinct
+     variable constraint "bundles" together two statements, one in which the
+     two variables are the same and one in which they are different.
+     (Contributed by Mario Carneiro and Jim Kingdon, 14-Mar-2018.) $)
+  ax-bnd $a |- ( A. z z = x \/ ( A. z z = y \/
+                 A. x A. z ( x = y -> A. z x = y ) ) ) $.
+
   $( Axiom of Specialization.  A quantified wff implies the wff without a
      quantifier (i.e. an instance, or special case, of the generalized wff).
      In other words if something is true for all ` x ` , it is true for any
