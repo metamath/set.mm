@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Mar-2018
+$( iset.mm - Version of 18-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -12360,6 +12360,14 @@ $)
      (Contributed by NM, 27-May-1997.) $)
   sb4b $p |- ( -. A. x x = y -> ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) ) $=
     ( weq wal wn wsb wi sb4 sb2 impbid1 ) BCDZBEFABCGLAHBEABCIABCJK $.
+
+  $( Simplified definition of substitution when variables are distinct,
+     expressed via disjunction.  (Contributed by Jim Kingdon, 18-Mar-2018.) $)
+  sb4bor $p |- ( A. x x = y \/
+      A. x ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) ) $=
+    ( weq wal wsb wi wo wb sb4or sb2 wa df-bi simpri mpan2 alimi orim2i ax-mp )
+    BCDZBEZABCFZSAGBEZGZBEZHTUAUBIZBEZHABCJUDUFTUCUEBUCUBUAGZUEABCKUEUCUGLZGUHU
+    EGUAUBMNOPQR $.
 
   $( Bound-variable hypothesis builder for substitution.  (Contributed by NM,
      5-Aug-1993.) $)
