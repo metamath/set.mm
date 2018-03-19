@@ -1,4 +1,4 @@
-$( iset.mm - Version of 18-Mar-2018
+$( iset.mm - Version of 19-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -13274,6 +13274,19 @@ $( The theorems in this section make use of the $d statement. $)
       wal eximi 19.12 syl biimpri alimi 3syl ) ABCFZGZBFUDHZAIZUFAJZBKZ
       JZUJDQUEDQUEUJABCLZMUGUIDUFADUFDNZEOUIUHDQZBKUIDQUHUMBUFADULEPRUH
       BDSTPUJUEDUEUJUKUAUBUC $.
+  $}
+
+  ${
+    $d x y $.  $d y z $.
+    nfsbxy.1 $e |- F/ z ph $.
+    $( Similar to ~ hbsb but with an extra distinct variable constraint, on
+       ` x ` and ` y ` .  (Contributed by Jim Kingdon, 19-Mar-2018.) $)
+    nfsbxy $p |- F/ z [ y / x ] ph $=
+      ( weq wal wi wo wsb ax-bnd nfs1v drsb1 drnf2 mpbii a16nf df-nf albii jaoi
+      wnf wa wex sb5 nfa1 sp a1i nfand nfexd nfxfrd sylbir ax-mp ) DBFDGZDCFDGZ
+      BCFZUNDGHDGZBGZIZIABCJZDTZBCDKULUSUQULADCJZDTUSADCLUTURDBDADBCMNOUMUSUPUR
+      DCDPUPUNDTZBGZUSVAUOBUNDQRURUNAUAZBUBVBDABCUCVBVCDBVABUDVBUNADVABUEADTVBE
+      UFUGUHUIUJSSUK $.
   $}
 
   ${
