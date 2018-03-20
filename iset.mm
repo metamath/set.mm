@@ -13312,6 +13312,17 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
+    $d w y z $.  $d w ph $.  $d w x $.
+    nfsb.1 $e |- F/ z ph $.
+    $( If ` z ` is not free in ` ph ` , it is not free in ` [ y / x ] ph ` when
+       ` y ` and ` z ` are distinct.  (Contributed by Mario Carneiro,
+       11-Aug-2016.)  (Proof rewritten by Jim Kingdon, 19-Mar-2018.) $)
+    nfsb $p |- F/ z [ y / x ] ph $=
+      ( vw wsb wnf nfsbxy ax-17 sbco2v nfbii mpbi ) ABFGZFCGZDHABCGZDHNFCDABFDE
+      IIOPDABCFAFJKLM $.
+  $}
+
+  ${
     $d y z $.  $d x y $.
     $( Lemma for ~ equsb3 .  (Contributed by NM, 4-Dec-2005.)  (Proof shortened
        by Andrew Salmon, 14-Jun-2011.) $)
