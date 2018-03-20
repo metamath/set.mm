@@ -13434,6 +13434,16 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
+    $d y z $.
+    sbco2yz.1 $e |- F/ z ph $.
+    $( This is a version of ~ sbco2 where ` z ` is distinct from ` y ` .  It is
+       a lemma on the way to proving ~ sbco2 which has no distinct variable
+       constraints.  (Contributed by Jim Kingdon, 19-Mar-2018.) $)
+    sbco2yz $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
+      ( wsb nfsb nfri sbequ sbie ) ABDFABCFZDCKDABCDEGHADCBIJ $.
+  $}
+
+  ${
     sbco2d.1 $e |- ( ph -> A. x ph ) $.
     sbco2d.2 $e |- ( ph -> A. z ph ) $.
     sbco2d.3 $e |- ( ph -> ( ps -> A. z ps ) ) $.
