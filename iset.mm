@@ -12532,17 +12532,6 @@ $)
     UPGVGUPPUOUPBUOBRQSVFVDBUOVCUPAUNUMAUMNUAUBUCUDVDVABUMUNUPUETUFURVABUKUTUMU
     QUGTMUHUKBCIUJUI $.
 
-  ${
-    sbco2.1 $e |- ( ph -> A. z ph ) $.
-    $( A composition law for substitution.  (Contributed by NM,
-       30-Jun-1994.) $)
-    sbco2 $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( weq wal wsb wb sbid2 sbequ syl5bbr sbequ12 bitr3d a4s hbnae hbsb3 hbsb4
-      wn wi a1i sbied bicomd pm2.61i ) BCFZBGZABDHZDCHZABCHZIZUEUJBUEAUHUIAUGDB
-      HUEUHADBEJUGBCDKLZABCMNOUFSZUIUHULAUHBCBCBPUGDCBABDEQRUEAUHITULUKUAUBUCUD
-      $.
-  $}
-
   $( A commutativity law for substitution.  (Contributed by NM,
      27-May-1997.) $)
   sbcom $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
@@ -13312,6 +13301,17 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
+    $d w y z $.  $d w ph $.  $d w x $.
+    nfsb.1 $e |- F/ z ph $.
+    $( If ` z ` is not free in ` ph ` , it is not free in ` [ y / x ] ph ` when
+       ` y ` and ` z ` are distinct.  (Contributed by Mario Carneiro,
+       11-Aug-2016.)  (Proof rewritten by Jim Kingdon, 19-Mar-2018.) $)
+    nfsb $p |- F/ z [ y / x ] ph $=
+      ( vw wsb wnf nfsbxy ax-17 sbco2v nfbii mpbi ) ABFGZFCGZDHABCGZDHNFCDABFDE
+      IIOPDABCFAFJKLM $.
+  $}
+
+  ${
     $d y z $.  $d x y $.
     $( Lemma for ~ equsb3 .  (Contributed by NM, 4-Dec-2005.)  (Proof shortened
        by Andrew Salmon, 14-Jun-2011.) $)
@@ -13420,6 +13420,26 @@ $( The theorems in this section make use of the $d statement. $)
        NM, 18-Aug-1993.) $)
     sbrbif $p |- ( [ y / x ] ( ph <-> ch ) <-> ( ps <-> ch ) ) $=
       ( wb wsb sbrbis sbf bibi2i bitri ) ACHDEIBCDEIZHBCHABCDEGJNCBCDEFKLM $.
+  $}
+
+  ${
+    $d y z $.
+    sbco2yz.1 $e |- F/ z ph $.
+    $( This is a version of ~ sbco2 where ` z ` is distinct from ` y ` .  It is
+       a lemma on the way to proving ~ sbco2 which has no distinct variable
+       constraints.  (Contributed by Jim Kingdon, 19-Mar-2018.) $)
+    sbco2yz $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
+      ( wsb nfsb nfri sbequ sbie ) ABDFABCFZDCKDABCDEGHADCBIJ $.
+  $}
+
+  ${
+    $d w z $.  $d w x $.  $d w y $.  $d ph w $.
+    sbco2.1 $e |- ( ph -> A. z ph ) $.
+    $( A composition law for substitution.  (Contributed by NM, 30-Jun-1994.)
+       (Proof rewritten by Jim Kingdon, 19-Mar-2018.) $)
+    sbco2 $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
+      ( vw wsb nfi sbco2yz sbbii nfv 3bitr3i ) ABDGZDFGZFCGABFGZFCGMDCGABCGNOFC
+      ABFDADEHIJMDCFMFKIABCFAFKIL $.
   $}
 
   ${
