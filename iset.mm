@@ -12532,17 +12532,6 @@ $)
     UPGVGUPPUOUPBUOBRQSVFVDBUOVCUPAUNUMAUMNUAUBUCUDVDVABUMUNUPUETUFURVABUKUTUMU
     QUGTMUHUKBCIUJUI $.
 
-  ${
-    sbco2.1 $e |- ( ph -> A. z ph ) $.
-    $( A composition law for substitution.  (Contributed by NM,
-       30-Jun-1994.) $)
-    sbco2 $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( weq wal wsb wb sbid2 sbequ syl5bbr sbequ12 bitr3d a4s hbnae hbsb3 hbsb4
-      wn wi a1i sbied bicomd pm2.61i ) BCFZBGZABDHZDCHZABCHZIZUEUJBUEAUHUIAUGDB
-      HUEUHADBEJUGBCDKLZABCMNOUFSZUIUHULAUHBCBCBPUGDCBABDEQRUEAUHITULUKUAUBUCUD
-      $.
-  $}
-
   $( A commutativity law for substitution.  (Contributed by NM,
      27-May-1997.) $)
   sbcom $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
@@ -13441,6 +13430,16 @@ $( The theorems in this section make use of the $d statement. $)
        constraints.  (Contributed by Jim Kingdon, 19-Mar-2018.) $)
     sbco2yz $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
       ( wsb nfsb nfri sbequ sbie ) ABDFABCFZDCKDABCDEGHADCBIJ $.
+  $}
+
+  ${
+    $d w z $.  $d w x $.  $d w y $.  $d ph w $.
+    sbco2.1 $e |- ( ph -> A. z ph ) $.
+    $( A composition law for substitution.  (Contributed by NM, 30-Jun-1994.)
+       (Proof rewritten by Jim Kingdon, 19-Mar-2018.) $)
+    sbco2 $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
+      ( vw wsb nfi sbco2yz sbbii nfv 3bitr3i ) ABDGZDFGZFCGABFGZFCGMDCGABCGNOFC
+      ABFDADEHIJMDCFMFKIABCFAFKIL $.
   $}
 
   ${
