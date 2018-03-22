@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Mar-2018
+$( iset.mm - Version of 21-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -13496,10 +13496,26 @@ $( The theorems in this section make use of the $d statement. $)
   ${
     $d x z $.
     $( Version of ~ sbcom with a distinct variable constraint between ` x ` and
-       ` y ` .  (Contributed by Jim Kingdon, 28-Feb-2018.) $)
+       ` z ` .  (Contributed by Jim Kingdon, 28-Feb-2018.) $)
     sbcomv $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
       ( wsb sbco3v sbcocom 3bitr3i ) ABDEDCEADBEBCEABCEDCEADCEBCEABDCFABDCGADBC
       GH $.
+  $}
+
+  ${
+    $d x y $.  $d y z $.
+    $( Version of ~ sbcom with distinct variable constraints between ` x ` and
+       ` y ` , and ` y ` and ` z ` .  (Contributed by Jim Kingdon,
+       21-Mar-2018.) $)
+    sbcomxyyz $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
+      ( weq wal wi wo wsb wb ax-ial drsb1 sbbid bitr3d sbequ12 a4s wnf a1i nfrd
+      nfs1v ax-bnd hbae df-nf albii nfsb nfr wa nfnf1 nfa1 nfan sylan9bb adantl
+      nfri ex sbied syld bicomd sylbir jaoi ax-mp ) DBEZDFZDCEZDFZBCEZVEDFZGDFZ
+      BFZHZHABCIZDCIZADCIZBCIZJZBCDUAVBVNVIVBVLDCIVKVMVBVLVJDCVADKADBCLMVLDBCLN
+      VDVNVHVDVJVKVMVCVJVKJDVJDCOZPVDAVLBCDCBUBVCAVLJDADCOPMNVHVEDQZBFZVNVPVGBV
+      EDUCUDVQVMVKVQVLVKBCVPBKVQVKBVKBQVQVJDCBABCTUERSVPVEVLVKJZGBVPVEVFVRVEDUF
+      VPVFVRVPVFUGZAVKDCVSDVPVFDVEDUHVEDUIUJUMVSVKDVKDQVSVJDCTRSVFVCAVKJZGZVPVE
+      WADVEVCVTVEAVJVCVKABCOVOUKUNPULUOUNUPPUOUQURUSUSUT $.
   $}
 
   ${
