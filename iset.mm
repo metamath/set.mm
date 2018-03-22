@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Mar-2018
+$( iset.mm - Version of 22-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -13516,6 +13516,16 @@ $( The theorems in this section make use of the $d statement. $)
       EDUCUDVQVMVKVQVLVKBCVPBKVQVKBVKBQVQVJDCBABCTUERSVPVEVLVKJZGBVPVEVFVRVEDUF
       VPVFVRVPVFUGZAVKDCVSDVPVFDVEDUHVEDUIUJUMVSVKDVKDQVSVJDCTRSVFVCAVKJZGZVPVE
       WADVEVCVTVEAVJVCVKABCOVOUKUNPULUOUNUPPUOUQURUSUSUT $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.
+    $( Version of ~ sbco3 with distinct variable constraints between ` x ` and
+       ` z ` , and ` y ` and ` z ` .  Lemma for proving ~ sbco3 .  (Contributed
+       by Jim Kingdon, 22-Mar-2018.) $)
+    sbco3xzyz $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
+      ( wsb sbcomxyyz sbcocom 3bitr4i ) ABDECDEACDEBDEABCECDEACBEBDEABDCFABCDGA
+      CBDGH $.
   $}
 
   ${
