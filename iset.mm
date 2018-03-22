@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Mar-2018
+$( iset.mm - Version of 19-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -10039,6 +10039,31 @@ $)
   ax-i12 $a |- ( A. z z = x \/ ( A. z z = y \/
                  A. z ( x = y -> A. z x = y ) ) ) $.
 
+  $( Axiom of bundling.  The general idea of this axiom is that two variables
+     are either distinct or non-distinct.  That idea could be expressed as
+     ` A. z z = x \/ -. A. z z = x ` .  However, we instead choose an axiom
+     which has many of the same consequences, but which is different with
+     respect to a universe which contains only one object. ` A. z z = x ` holds
+     if ` z ` and ` x ` are the same variable, likewise for ` z ` and ` y ` ,
+     and ` A. x A. z ( x = y -> A. z x = y ) ` holds if ` x ` is distinct from
+     the others (and the universe has at least two objects).
+
+     As with other statements of the form "x is decidable (either true or
+     false)", this does not entail the full Law of the Excluded Middle (which
+     is the proposition that all statements are decidable), but instead merely
+     the assertion that particular kinds of statements are decidable.
+
+     This axiom is similar to ~ ax-i12 , but appears to be stronger.  At least
+     for now, we keep them both as distinct axioms, but they serve similar
+     purposes.
+
+     The read we call this "bundling" is that a statement without a distinct
+     variable constraint "bundles" together two statements, one in which the
+     two variables are the same and one in which they are different.
+     (Contributed by Mario Carneiro and Jim Kingdon, 14-Mar-2018.) $)
+  ax-bnd $a |- ( A. z z = x \/ ( A. z z = y \/
+                 A. x A. z ( x = y -> A. z x = y ) ) ) $.
+
   $( Axiom of Specialization.  A quantified wff implies the wff without a
      quantifier (i.e. an instance, or special case, of the generalized wff).
      In other words if something is true for all ` x ` , it is true for any
@@ -12336,6 +12361,14 @@ $)
   sb4b $p |- ( -. A. x x = y -> ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) ) $=
     ( weq wal wn wsb wi sb4 sb2 impbid1 ) BCDZBEFABCGLAHBEABCIABCJK $.
 
+  $( Simplified definition of substitution when variables are distinct,
+     expressed via disjunction.  (Contributed by Jim Kingdon, 18-Mar-2018.) $)
+  sb4bor $p |- ( A. x x = y \/
+      A. x ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) ) $=
+    ( weq wal wsb wi wo wb sb4or sb2 wa df-bi simpri mpan2 alimi orim2i ax-mp )
+    BCDZBEZABCFZSAGBEZGZBEZHTUAUBIZBEZHABCJUDUFTUCUEBUCUBUAGZUEABCKUEUCUGLZGUHU
+    EGUAUBMNOPQR $.
+
   $( Bound-variable hypothesis builder for substitution.  (Contributed by NM,
      5-Aug-1993.) $)
   hbsb2 $p |- ( -. A. x x = y -> ( [ y / x ] ph -> A. x [ y / x ] ph ) ) $=
@@ -12498,17 +12531,6 @@ $)
     UKGZBHZULUKUMNUKUPUSABCOUPUMUNUPGZGZBHZUSUPUMUNGZUPGZBHZVBUPUOUPGZBHZVEUPUP
     UPGVGUPPUOUPBUOBRQSVFVDBUOVCUPAUNUMAUMNUAUBUCUDVDVABUMUNUPUETUFURVABUKUTUMU
     QUGTMUHUKBCIUJUI $.
-
-  ${
-    sbco2.1 $e |- ( ph -> A. z ph ) $.
-    $( A composition law for substitution.  (Contributed by NM,
-       30-Jun-1994.) $)
-    sbco2 $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( weq wal wsb wb sbid2 sbequ syl5bbr sbequ12 bitr3d a4s hbnae hbsb3 hbsb4
-      wn wi a1i sbied bicomd pm2.61i ) BCFZBGZABDHZDCHZABCHZIZUEUJBUEAUHUIAUGDB
-      HUEUHADBEJUGBCDKLZABCMNOUFSZUIUHULAUHBCBCBPUGDCBABDEQRUEAUHITULUKUAUBUCUD
-      $.
-  $}
 
   $( A commutativity law for substitution.  (Contributed by NM,
      27-May-1997.) $)
@@ -13244,6 +13266,19 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
+    $d x y $.  $d y z $.
+    nfsbxy.1 $e |- F/ z ph $.
+    $( Similar to ~ hbsb but with an extra distinct variable constraint, on
+       ` x ` and ` y ` .  (Contributed by Jim Kingdon, 19-Mar-2018.) $)
+    nfsbxy $p |- F/ z [ y / x ] ph $=
+      ( weq wal wi wo wsb ax-bnd nfs1v drsb1 drnf2 mpbii a16nf df-nf albii jaoi
+      wnf wa wex sb5 nfa1 sp a1i nfand nfexd nfxfrd sylbir ax-mp ) DBFDGZDCFDGZ
+      BCFZUNDGHDGZBGZIZIABCJZDTZBCDKULUSUQULADCJZDTUSADCLUTURDBDADBCMNOUMUSUPUR
+      DCDPUPUNDTZBGZUSVAUOBUNDQRURUNAUAZBUBVBDABCUCVBVCDBVABUDVBUNADVABUEADTVBE
+      UFUGUHUIUJSSUK $.
+  $}
+
+  ${
     $d x z $.  $d y z $.
     sbco2vlem.1 $e |- ( ph -> A. z ph ) $.
     $( This is a version of ~ sbco2 where ` z ` is distinct from ` x ` and from
@@ -13263,6 +13298,17 @@ $( The theorems in this section make use of the $d statement. $)
     sbco2v $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
       ( vw wsb sbco2vlem sbbii ax-17 3bitr3i ) ABDGZDFGZFCGABFGZFCGLDCGABCGMNFCABF
       DEHILDCFLFJHABCFAFJHK $.
+  $}
+
+  ${
+    $d w y z $.  $d w ph $.  $d w x $.
+    nfsb.1 $e |- F/ z ph $.
+    $( If ` z ` is not free in ` ph ` , it is not free in ` [ y / x ] ph ` when
+       ` y ` and ` z ` are distinct.  (Contributed by Mario Carneiro,
+       11-Aug-2016.)  (Proof rewritten by Jim Kingdon, 19-Mar-2018.) $)
+    nfsb $p |- F/ z [ y / x ] ph $=
+      ( vw wsb wnf nfsbxy ax-17 sbco2v nfbii mpbi ) ABFGZFCGZDHABCGZDHNFCDABFDE
+      IIOPDABCFAFJKLM $.
   $}
 
   ${
@@ -13374,6 +13420,26 @@ $( The theorems in this section make use of the $d statement. $)
        NM, 18-Aug-1993.) $)
     sbrbif $p |- ( [ y / x ] ( ph <-> ch ) <-> ( ps <-> ch ) ) $=
       ( wb wsb sbrbis sbf bibi2i bitri ) ACHDEIBCDEIZHBCHABCDEGJNCBCDEFKLM $.
+  $}
+
+  ${
+    $d y z $.
+    sbco2yz.1 $e |- F/ z ph $.
+    $( This is a version of ~ sbco2 where ` z ` is distinct from ` y ` .  It is
+       a lemma on the way to proving ~ sbco2 which has no distinct variable
+       constraints.  (Contributed by Jim Kingdon, 19-Mar-2018.) $)
+    sbco2yz $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
+      ( wsb nfsb nfri sbequ sbie ) ABDFABCFZDCKDABCDEGHADCBIJ $.
+  $}
+
+  ${
+    $d w z $.  $d w x $.  $d w y $.  $d ph w $.
+    sbco2.1 $e |- ( ph -> A. z ph ) $.
+    $( A composition law for substitution.  (Contributed by NM, 30-Jun-1994.)
+       (Proof rewritten by Jim Kingdon, 19-Mar-2018.) $)
+    sbco2 $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
+      ( vw wsb nfi sbco2yz sbbii nfv 3bitr3i ) ABDGZDFGZFCGABFGZFCGMDCGABCGNOFC
+      ABFDADEHIJMDCFMFKIABCFAFKIL $.
   $}
 
   ${
