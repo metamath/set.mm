@@ -13480,13 +13480,6 @@ $( The theorems in this section make use of the $d statement. $)
       ABCFGHMNBDACBIJK $.
   $}
 
-  $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
-  sbco3 $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
-    ( weq wal wsb wb drsb1 sbequ12a alimi a4sbbi syl bitr3d wn sbco sbbii hbnae
-    hbsb2 sbco2d syl5rbbr pm2.61i ) BCEZBFZABCGZCDGZACBGZBDGZHUDUEBDGZUFUHUEBCD
-    IUDUEUGHZBFUIUHHUCUJBABCJKUEUGBDLMNUHUECBGZBDGUDOZUFUKUGBDACBPQULUECDBBCCRB
-    CBRABCSTUAUB $.
-
   $( Relationship between composition and commutativity for substitution.
      (Contributed by Jim Kingdon, 28-Feb-2018.) $)
   sbcocom $p |- ( [ z / y ] [ y / x ] ph <-> [ z / y ] [ z / x ] ph ) $=
@@ -13526,6 +13519,15 @@ $( The theorems in this section make use of the $d statement. $)
     sbco3xzyz $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
       ( wsb sbcomxyyz sbcocom 3bitr4i ) ABDECDEACDEBDEABCECDEACBEBDEABDCFABCDGA
       CBDGH $.
+  $}
+
+  ${
+    $d w x $.  $d w y $.  $d w ph $.
+    $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.)
+       (Proof rewritten by Jim Kingdon, 22-Mar-2018.) $)
+    sbco3 $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
+      ( vw wsb sbco3xzyz sbbii ax-17 sbco2 3bitr3i ) ABCFZCEFZEDFACBFZBEFZEDFLC
+      DFNBDFMOEDABCEGHLCDELEIJNBDENEIJK $.
   $}
 
   ${
