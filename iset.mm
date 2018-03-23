@@ -12532,22 +12532,6 @@ $)
     UPGVGUPPUOUPBUOBRQSVFVDBUOVCUPAUNUMAUMNUAUBUCUDVDVABUMUNUPUETUFURVABUKUTUMU
     QUGTMUHUKBCIUJUI $.
 
-  $( A commutativity law for substitution.  (Contributed by NM,
-     27-May-1997.) $)
-  sbcom $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
-    ( weq wal wsb wb wn wa hbae sbbid bitr3d hbnae hban albid sb4b sbequ12 a4s
-    wi drsb1 adantr ax-12 imp alimi 19.21ht 3syl adantrr alcom albii nalequcoms
-    bi2.04 syl5bb adantrl imbi2d sylan9bbr adantl sylan9bb 3bitr4d pm2.61ian ex
-    pm2.61ii ) BCEZBFZDCEZDFZABCGZDCGZADCGZBCGZHZVDIZVFIZVKBDEBFZVLVMJZVKVNVKVO
-    VNVGBCGVHVJVGBDCUAVNVGVIBCBDBKABDCUALMUBVNIZVOJZVEVCATZBFZTZDFZVCVEATZDFZTZ
-    BFZVHVJVQVEVRTZBFZDFZWAWEVPVLWHWAHVMVPVLJZWGVTDVPVLDBDDNZBCDNZOWIWIBFVEVEBF
-    TZBFWGVTHVPVLBBDBNZBCBNOWIWLBVPVLWLDCBUCUDUEVEVRBUFUGPUHVPVMWHWEHVLWHWFDFZB
-    FVPVMJZWEWFDBUIWOWNWDBVPVMBWMDCBNZOWNVCWBTZDFZWOWDWFWQDVEVCAULUJWOWODFVCVCD
-    FTZDFWRWDHVPVMDWJDCDNOWOWSDVPVMWSVMWSTDBBCDUCUKUDUEVCWBDUFUGUMPUMUNMVOVHWAH
-    VPVMVHVEVGTZDFVLWAVGDCQVLWTVTDWKVLVGVSVEABCQUOPUPUQVOVJWEHVPVLVJVCVITZBFVMW
-    EVIBCQVMXAWDBWPVMVIWCVCADCQUOPURUQUSUTVAVDVIVHVJVDAVGDCBCDKVCAVGHBABCRSLVCV
-    IVJHBVIBCRSMVFVGVHVJVEVGVHHDVGDCRSVFAVIBCDCBKVEAVIHDADCRSLMVB $.
-
   ${
     sb5rf.1 $e |- ( ph -> A. y ph ) $.
     $( Reversed substitution.  (Contributed by NM, 3-Feb-2005.)  (Proof
@@ -13529,6 +13513,12 @@ $( The theorems in this section make use of the $d statement. $)
       ( vw wsb sbco3xzyz sbbii ax-17 sbco2 3bitr3i ) ABCFZCEFZEDFACBFZBEFZEDFLC
       DFNBDFMOEDABCEGHLCDELEIJNBDENEIJK $.
   $}
+
+  $( A commutativity law for substitution.  (Contributed by NM, 27-May-1997.)
+     (Proof rewritten by Jim Kingdon, 22-Mar-2018.) $)
+  sbcom $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
+    ( wsb sbco3 sbcocom 3bitr3i ) ABDEDCEADBEBCEABCEDCEADCEBCEABDCFABDCGADBCGH
+    $.
 
   ${
     $d w y z $.  $d w x $.
