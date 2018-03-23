@@ -13227,15 +13227,6 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d y z $.
-    hbsb.1 $e |- ( ph -> A. z ph ) $.
-    $( If ` z ` is not free in ` ph ` , it is not free in ` [ y / x ] ph ` when
-       ` y ` and ` z ` are distinct.  (Contributed by NM, 12-Aug-1993.) $)
-    hbsb $p |- ( [ y / x ] ph -> A. z [ y / x ] ph ) $=
-      ( weq wal wsb wi ax-16 hbsb4 pm2.61i ) DCFDGABCHZMDGIMDCJABCDEKL $.
-  $}
-
-  ${
     $d x z $.  $d y z $.
     hbsbv.1 $e |- ( ph -> A. z ph ) $.
     $( This is a version of ~ hbsb with an extra distinct variable constraint,
@@ -13293,6 +13284,16 @@ $( The theorems in this section make use of the $d statement. $)
     nfsb $p |- F/ z [ y / x ] ph $=
       ( vw wsb wnf nfsbxy ax-17 sbco2v nfbii mpbi ) ABFGZFCGZDHABCGZDHNFCDABFDE
       IIOPDABCFAFJKLM $.
+  $}
+
+  ${
+    $d y z $.
+    hbsb.1 $e |- ( ph -> A. z ph ) $.
+    $( If ` z ` is not free in ` ph ` , it is not free in ` [ y / x ] ph ` when
+       ` y ` and ` z ` are distinct.  (Contributed by NM, 12-Aug-1993.)  (Proof
+       rewritten by Jim Kingdon, 22-Mar-2018.) $)
+    hbsb $p |- ( [ y / x ] ph -> A. z [ y / x ] ph ) $=
+      ( wsb nfi nfsb nfri ) ABCFDABCDADEGHI $.
   $}
 
   ${
