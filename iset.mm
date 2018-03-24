@@ -13581,10 +13581,11 @@ $( The theorems in this section make use of the $d statement. $)
     hbsbd.1 $e |- ( ph -> A. x ph ) $.
     hbsbd.2 $e |- ( ph -> A. z ph ) $.
     hbsbd.3 $e |- ( ph -> ( ps -> A. z ps ) ) $.
-    $( Deduction version of ~ hbsb .  (Contributed by NM, 15-Feb-2013.) $)
+    $( Deduction version of ~ hbsb .  (Contributed by NM, 15-Feb-2013.)  (Proof
+       rewritten by Jim Kingdon, 23-Mar-2018.) $)
     hbsbd $p |- ( ph -> ( [ y / x ] ps -> A. z [ y / x ] ps ) ) $=
-      ( cv wceq wal wsbc wi wn alrimi 2alimi hbsb4t 3syl ax-16 pm2.61d2 ) AEIDI
-      ZJEKZBCUALZUCEKMZAAEKZCKBBEKMZEKCKUBNUDMAUECFGOAUFCEHPBCDEQRUCEDST $.
+      ( wsb nfi wi wnf nfdh nfim1 nfsb sbrim nfbii mpbi nfrimi nfrd ) ABCDIZEAU
+      AEAEGJZABKZCDIZELAUAKZELUCCDEABEUBABEGHMNOUDUEEABCDFPQRST $.
   $}
 
   ${
