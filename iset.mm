@@ -13563,14 +13563,6 @@ $( The theorems in this section make use of the $d statement. $)
       LMALGCBACBHIABCHJK $.
   $}
 
-  $( Commutation of quantification and substitution variables.  (Contributed by
-     NM, 5-Aug-1993.) $)
-  sb9i $p |- ( A. x [ x / y ] ph -> A. y [ y / x ] ph ) $=
-    ( weq wal wi drsb1 drsb2 bitr3d dral1 biimprd wn hbsb2 al2imi hbnaes stdpc4
-    wsb sbco sylib alimi a7s syl6 pm2.61i ) CBDCEZACBQZBEZABCQZCEZFUDUHUFUGUECB
-    UDACCQUGUEACBCGACBCHIJKUDLZUFUECEZBEZUHUFUKFCBBUIUEUJBACBMNOUEUHCBUFUGCUFUE
-    BCQUGUEBCPABCRSTUAUBUC $.
-
   ${
     $d w x $.  $d w y $.  $d w ph $.
     $( Commutation of quantification and substitution variables.  (Contributed
@@ -13580,6 +13572,11 @@ $( The theorems in this section make use of the $d statement. $)
       CDEZDBEZBFZABCEZCFACBEZBFPNCDEZDFQBDEZDFSNCDGUBUCDABDCHIQDBGJOTCABCDADKZL
       IRUABACBDUDLIM $.
   $}
+
+  $( Commutation of quantification and substitution variables.  (Contributed by
+     NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon, 23-Mar-2018.) $)
+  sb9i $p |- ( A. x [ x / y ] ph -> A. y [ y / x ] ph ) $=
+    ( wsb wal sb9 biimpi ) ACBDBEABCDCEABCFG $.
 
   ${
     $d y z $.
