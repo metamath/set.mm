@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Mar-2018
+$( iset.mm - Version of 23-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -13571,10 +13571,15 @@ $( The theorems in this section make use of the $d statement. $)
     UDACCQUGUEACBCGACBCHIJKUDLZUFUECEZBEZUHUFUKFCBBUIUEUJBACBMNOUEUHCBUFUGCUFUE
     BCQUGUEBCPABCRSTUAUBUC $.
 
-  $( Commutation of quantification and substitution variables.  (Contributed by
-     NM, 5-Aug-1993.) $)
-  sb9 $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
-    ( wsb wal sb9i impbii ) ACBDBEABCDCEABCFACBFG $.
+  ${
+    $d w x $.  $d w y $.  $d w ph $.
+    $( Commutation of quantification and substitution variables.  (Contributed
+       by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon, 23-Mar-2018.) $)
+    sb9 $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
+      ( vw wsb wal sb9v sbcom albii 3bitri ax-17 sbco2 3bitr3ri ) ABDEZDCEZCFZA
+      CDEZDBEZBFZABCEZCFACBEZBFPNCDEZDFQBDEZDFSNCDGUBUCDABDCHIQDBGJOTCABCDADKZL
+      IRUABACBDUDLIM $.
+  $}
 
   ${
     $d y z $.
