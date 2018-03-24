@@ -10206,6 +10206,16 @@ $)
       ( nfi nfd ) ABCACDFEG $.
   $}
 
+  ${
+    nfrimi.1 $e |- F/ x ph $.
+    nfrimi.2 $e |- F/ x ( ph -> ps ) $.
+    $( Moving an antecedent outside ` F/ ` .  (Contributed by Jim Kingdon,
+       23-Mar-2018.) $)
+    nfrimi $p |- ( ph -> F/ x ps ) $=
+      ( wal wi nfri ax-5 syl2im pm2.86i nfd ) ABCDABBCFZABGZNCFAACFMNCEHACDHABC
+      IJKL $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Axiom ax-17 - first use of the $d distinct variable statement
