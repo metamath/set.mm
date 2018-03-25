@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-Mar-2018
+$( iset.mm - Version of 25-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5787,6 +5787,12 @@ $)
      before the formula in question.  For example, ` DECID x = y ` corresponds
      to "x = y is decidabile".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   df-dc $a |- ( DECID ph <-> ( ph \/ -. ph ) ) $.
+
+  $( Commuted law of the excluded middle for a decidable proposition.  Based on
+     theorem *2.1 of [WhiteheadRussell] p. 101.  (Contributed by Jim Kingdon,
+     25-Mar-2018.) $)
+  pm2.1dc $p |- ( DECID ph -> ( -. ph \/ ph ) ) $=
+    ( wdc wn wo df-dc orcom bitri biimpi ) ABZACZADZIAJDKAEAJFGH $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
