@@ -6002,6 +6002,12 @@ $)
   pm2.6 $p |- ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) $=
     ( wn wi id idd jad ) ACBDZABBHEHBFG $.
 
+  $( Case elimination for a decidable proposition.  Based on theorem *2.6 of
+     [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon, 25-Mar-2018.) $)
+  pm2.6dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) ) $=
+    ( wdc wn wi wo wa pm2.1dc pm3.44 syl5com exp3a ) ACZADZBEZABEZBLMAFNOGBAHBM
+    AIJK $.
+
   $( Theorem *2.61 of [WhiteheadRussell] p. 107.  Useful for eliminating an
      antecedent.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
      Lammen, 22-Sep-2013.) $)
