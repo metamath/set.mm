@@ -11420,25 +11420,6 @@ $)
   $}
 
   ${
-    dvelimfALT.1 $e |- ( ph -> A. x ph ) $.
-    dvelimfALT.2 $e |- ( ps -> A. z ps ) $.
-    dvelimfALT.3 $e |- ( z = y -> ( ph <-> ps ) ) $.
-    $( Proof of ~ dvelimf that uses ~ ax-10o (in the form of ~ ax10o ) but not
-       ~ ax-11o , ~ ax-10 , or ~ ax-11 (if we replace uses of ~ ax10o by
-       ~ ax-10o in the proofs of referenced theorems).  See ~ dvelimALT for a
-       proof (of the distinct variable version ~ dvelim ) that doesn't require
-       ~ ax-10 .  It is not clear whether a proof is possible that uses ~ ax-10
-       but avoids ~ ax-11 , ~ ax-11o , and ~ ax-10o .  (Contributed by NM,
-       12-Nov-2002.) $)
-    dvelimfALT $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
-      ( weq wal wn wi hba1 ax10o alequcoms syl5 a1d wa hbnae hban ax-12 imp a1i
-      hbimd hbald ex pm2.61i equsal albii 3imtr3g ) CDICJKZEDIZALZEJZUNCJZBBCJC
-      EICJZUKUNUOLZLUPUQUKUNUNEJZUPUOUMEMURUOLECUNECNOPQUPKZUKUQUSUKRZUMCEUSUKE
-      CEESCDESTUTULACUSUKCCECSCDCSTUSUKULULCJLEDCUAUBAACJLUTFUCUDUEUFUGABEDGHUH
-      ZUNBCVAUIUJ $.
-  $}
-
-  ${
     dral1.1 $e |- ( A. x x = y -> ( ph <-> ps ) ) $.
     $( Formula-building lemma for use with the Distinctor Reduction Theorem.
        Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).
@@ -15402,6 +15383,25 @@ shed some light on the axioms we are using, even though the independence
 or metalogic of the axioms may be quite different in the intuitionistic
 case compared with the classical case.
 $)
+
+  ${
+    dvelimfALT.1 $e |- ( ph -> A. x ph ) $.
+    dvelimfALT.2 $e |- ( ps -> A. z ps ) $.
+    dvelimfALT.3 $e |- ( z = y -> ( ph <-> ps ) ) $.
+    $( Proof of ~ dvelimf that uses ~ ax-10o (in the form of ~ ax10o ) but not
+       ~ ax-11o , ~ ax-10 , or ~ ax-11 (if we replace uses of ~ ax10o by
+       ~ ax-10o in the proofs of referenced theorems).  See ~ dvelimALT for a
+       proof (of the distinct variable version ~ dvelim ) that doesn't require
+       ~ ax-10 .  It is not clear whether a proof is possible that uses ~ ax-10
+       but avoids ~ ax-11 , ~ ax-11o , and ~ ax-10o .  (Contributed by NM,
+       12-Nov-2002.) $)
+    dvelimfALT $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
+      ( weq wal wn wi hba1 ax10o alequcoms syl5 a1d wa hbnae hban ax-12 imp a1i
+      hbimd hbald ex pm2.61i equsal albii 3imtr3g ) CDICJKZEDIZALZEJZUNCJZBBCJC
+      EICJZUKUNUOLZLUPUQUKUNUNEJZUPUOUMEMURUOLECUNECNOPQUPKZUKUQUSUKRZUMCEUSUKE
+      CEESCDESTUTULACUSUKCCECSCDCSTUSUKULULCJLEDCUAUBAACJLUTFUCUDUEUFUGABEDGHUH
+      ZUNBCVAUIUJ $.
+  $}
 
   $( Show that the original axiom ~ ax-5o can be derived from ~ ax-5 and
      others.  See ~ ax5 for the rederivation of ~ ax-5 from ~ ax-5o .
