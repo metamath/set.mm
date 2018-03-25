@@ -5842,6 +5842,14 @@ $)
   pm2.18 $p |- ( ( -. ph -> ph ) -> ph ) $=
     ( wn wi pm2.21 a2i con4d pm2.43i ) ABZACZAIAIHAIBZAJDEFG $.
 
+  $( Proof by contradiction for a decidable proposition.  Based on Theorem
+     *2.18 of [WhiteheadRussell] p. 103 (also called the Law of Clavius).
+     Intuitionistically it requires a decidability assumption, but compare with
+     ~ pm2.01 which does not.  (Contributed by Jim Kingdon, 24-Mar-2018.) $)
+  pm2.18dc $p |- ( DECID ph -> ( ( -. ph -> ph ) -> ph ) ) $=
+    ( wdc wn wi pm2.21 a2i condc syl5 pm2.43d ) ABZACZADZALKLCZDJLADKAMAMEFALGH
+    I $.
+
   ${
     pm2.18d.1 $e |- ( ph -> ( -. ps -> ps ) ) $.
     $( Deduction based on reductio ad absurdum.  (Contributed by FL,
@@ -6215,7 +6223,7 @@ $)
     ( wa wn wi con2b nan bitr2i ) BCDZAEFAJEFABDCEFJAGABCHI $.
 
   $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
-     intuitionistically, although its coverse, ~ pm2.53 , does.  (Contributed
+     intuitionistically, although its converse, ~ pm2.53 , does.  (Contributed
      by NM, 3-Jan-2005.) $)
   pm2.54 $p |- ( ( -. ph -> ps ) -> ( ph \/ ps ) ) $=
     ( wn wo notnot2 orc syl olc ja ) ACZBABDZJCAKAEABFGBAHI $.
