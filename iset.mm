@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Mar-2018
+$( iset.mm - Version of 23-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -10206,6 +10206,16 @@ $)
       ( nfi nfd ) ABCACDFEG $.
   $}
 
+  ${
+    nfrimi.1 $e |- F/ x ph $.
+    nfrimi.2 $e |- F/ x ( ph -> ps ) $.
+    $( Moving an antecedent outside ` F/ ` .  (Contributed by Jim Kingdon,
+       23-Mar-2018.) $)
+    nfrimi $p |- ( ph -> F/ x ps ) $=
+      ( wal wi nfri ax-5 syl2im pm2.86i nfd ) ABCDABBCFZABGZNCFAACFMNCEHACDHABC
+      IJKL $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Axiom ax-17 - first use of the $d distinct variable statement
@@ -11410,25 +11420,6 @@ $)
   $}
 
   ${
-    dvelimfALT.1 $e |- ( ph -> A. x ph ) $.
-    dvelimfALT.2 $e |- ( ps -> A. z ps ) $.
-    dvelimfALT.3 $e |- ( z = y -> ( ph <-> ps ) ) $.
-    $( Proof of ~ dvelimf that uses ~ ax-10o (in the form of ~ ax10o ) but not
-       ~ ax-11o , ~ ax-10 , or ~ ax-11 (if we replace uses of ~ ax10o by
-       ~ ax-10o in the proofs of referenced theorems).  See ~ dvelimALT for a
-       proof (of the distinct variable version ~ dvelim ) that doesn't require
-       ~ ax-10 .  It is not clear whether a proof is possible that uses ~ ax-10
-       but avoids ~ ax-11 , ~ ax-11o , and ~ ax-10o .  (Contributed by NM,
-       12-Nov-2002.) $)
-    dvelimfALT $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
-      ( weq wal wn wi hba1 ax10o alequcoms syl5 a1d wa hbnae hban ax-12 imp a1i
-      hbimd hbald ex pm2.61i equsal albii 3imtr3g ) CDICJKZEDIZALZEJZUNCJZBBCJC
-      EICJZUKUNUOLZLUPUQUKUNUNEJZUPUOUMEMURUOLECUNECNOPQUPKZUKUQUSUKRZUMCEUSUKE
-      CEESCDESTUTULACUSUKCCECSCDCSTUSUKULULCJLEDCUAUBAACJLUTFUCUDUEUFUGABEDGHUH
-      ZUNBCVAUIUJ $.
-  $}
-
-  ${
     dral1.1 $e |- ( A. x x = y -> ( ph <-> ps ) ) $.
     $( Formula-building lemma for use with the Distinctor Reduction Theorem.
        Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).
@@ -12464,56 +12455,6 @@ $)
   sbf3t $p |- ( A. x ( ph -> A. x ph ) -> ( [ y / x ] ph <-> ph ) ) $=
     ( wal wi wsb a4sbim sbf2 ax-4 sylbi syl6 stdpc4 imim2i a4s impbid ) AABDZEZ
     BDZABCFZARSPBCFZAAPBCGTPAABCHABIJKQASEBPSAABCLMNO $.
-
-  ${
-    hbsb4.1 $e |- ( ph -> A. z ph ) $.
-    $( A variable not free remains so after substitution with a distinct
-       variable.  (Contributed by NM, 5-Aug-1993.) $)
-    hbsb4 $p |- ( -. A. z z = y -> ( [ y / x ] ph -> A. z [ y / x ] ph ) ) $=
-      ( weq wal wn wsb wi wb equequ1 a4s dral1 notbid hbsb2 alimi hbnae pm2.61i
-      hban ax10o alequcoms sylbid hbae ax-4 sbequ2 sbequ1 al2imi syl5 syld 3syl
-      syl9r wa a1d sb4 ax-12 imp a1i hbimd alimd sb2 a7s syl6 syl9 ex ) DBFZDGZ
-      DCFZDGZHZABCIZVKDGZJZJVGVJBCFZBGZHZVMVGVIVOVHVNDBVFVHVNKDDBCLMNOVPVKVKBGZ
-      VGVLABCPVQVLJBDVKBDUAUBULUCVGHZVJVMVOVRVJUMZVMJVOVMVSVOVODGVNDGZVMBCDUDVO
-      VNDVNBUEQVTVKAVLVNVKAJDABCUFMAADGZVTVLEVNAVKDABCUGUHUIUJUKUNVPVKVNAJZBGZV
-      SVLABCUOVSWCWBDGZBGVLVSWBWDBVRVJBDBBRDCBRTVSVNADVRVJDDBDRDCDRTVRVJVNVTJBC
-      DUPUQAWAJVSEURUSUTWBVLDBWCVKDABCVAQVBVCVDSVES $.
-  $}
-
-  $( A variable not free remains so after substitution with a distinct variable
-     (closed form of ~ hbsb4 ).  (Contributed by NM, 7-Apr-2004.)  (Proof
-     shortened by Andrew Salmon, 25-May-2011.) $)
-  hbsb4t $p |- ( A. x A. z ( ph -> A. z ph ) ->
-               ( -. A. z z = y -> ( [ y / x ] ph -> A. z [ y / x ] ph ) ) ) $=
-    ( weq wal wn wsb wi hba1 hbsb4 a4sbim a4s ax-4 sbimi alimi a1i imim12d syl5
-    a7s ) DCEDFGADFZBCHZUBDFZIZAUAIZDFBFABCHZUFDFZIZUABCDADJKUEUDUHIDBUEBFZDFZU
-    FUBUCUGUIUFUBIDAUABCLMUCUGIUJUBUFDUAABCADNOPQRTS $.
-
-  ${
-    dvelimf.1 $e |- ( ph -> A. x ph ) $.
-    dvelimf.2 $e |- ( ps -> A. z ps ) $.
-    dvelimf.3 $e |- ( z = y -> ( ph <-> ps ) ) $.
-    $( Version of ~ dvelim without any variable restrictions.  (Contributed by
-       NM, 1-Oct-2002.) $)
-    dvelimf $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
-      ( weq wal wn wsb hbsb4 sbie albii 3imtr3g ) CDICJKAEDLZQCJBBCJAEDCFMABEDG
-      HNZQBCROP $.
-  $}
-
-  ${
-    dvelimdf.1 $e |- ( ph -> A. x ph ) $.
-    dvelimdf.2 $e |- ( ph -> A. z ph ) $.
-    dvelimdf.3 $e |- ( ph -> ( ps -> A. x ps ) ) $.
-    dvelimdf.4 $e |- ( ph -> ( ch -> A. z ch ) ) $.
-    dvelimdf.5 $e |- ( ph -> ( z = y -> ( ps <-> ch ) ) ) $.
-    $( Deduction form of ~ dvelimf .  This version may be useful if we want to
-       avoid ~ ax-17 and use ~ ax-16 instead.  (Contributed by NM,
-       7-Apr-2004.) $)
-    dvelimdf $p |- ( ph -> ( -. A. x x = y -> ( ch -> A. x ch ) ) ) $=
-      ( weq wal wn wi wa wsb alrimi wb adantr 2alimi hbsb4t sbied albid 3imtr3d
-      3syl imp ex ) ADELDMNZCCDMZOAUIPBFEQZUKDMZCUJAUIUKULOZAADMZFMBBDMOZDMFMUI
-      UMOAUNFHGRAUOFDIUABFEDUBUFUGAUKCSUIABCFEHJKUCZTAULUJSUIAUKCDGUPUDTUEUH $.
-  $}
 
   ${
     sbid2.1 $e |- ( ph -> A. x ph ) $.
@@ -13553,28 +13494,31 @@ $( The theorems in this section make use of the $d statement. $)
       LMALGCBACBHIABCHJK $.
   $}
 
-  $( Commutation of quantification and substitution variables.  (Contributed by
-     NM, 5-Aug-1993.) $)
-  sb9i $p |- ( A. x [ x / y ] ph -> A. y [ y / x ] ph ) $=
-    ( weq wal wi drsb1 drsb2 bitr3d dral1 biimprd wn hbsb2 al2imi hbnaes stdpc4
-    wsb sbco sylib alimi a7s syl6 pm2.61i ) CBDCEZACBQZBEZABCQZCEZFUDUHUFUGUECB
-    UDACCQUGUEACBCGACBCHIJKUDLZUFUECEZBEZUHUFUKFCBBUIUEUJBACBMNOUEUHCBUFUGCUFUE
-    BCQUGUEBCPABCRSTUAUBUC $.
+  ${
+    $d w x $.  $d w y $.  $d w ph $.
+    $( Commutation of quantification and substitution variables.  (Contributed
+       by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon, 23-Mar-2018.) $)
+    sb9 $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
+      ( vw wsb wal sb9v sbcom albii 3bitri ax-17 sbco2 3bitr3ri ) ABDEZDCEZCFZA
+      CDEZDBEZBFZABCEZCFACBEZBFPNCDEZDFQBDEZDFSNCDGUBUCDABDCHIQDBGJOTCABCDADKZL
+      IRUABACBDUDLIM $.
+  $}
 
   $( Commutation of quantification and substitution variables.  (Contributed by
-     NM, 5-Aug-1993.) $)
-  sb9 $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
-    ( wsb wal sb9i impbii ) ACBDBEABCDCEABCFACBFG $.
+     NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon, 23-Mar-2018.) $)
+  sb9i $p |- ( A. x [ x / y ] ph -> A. y [ y / x ] ph ) $=
+    ( wsb wal sb9 biimpi ) ACBDBEABCDCEABCFG $.
 
   ${
     $d y z $.
     hbsbd.1 $e |- ( ph -> A. x ph ) $.
     hbsbd.2 $e |- ( ph -> A. z ph ) $.
     hbsbd.3 $e |- ( ph -> ( ps -> A. z ps ) ) $.
-    $( Deduction version of ~ hbsb .  (Contributed by NM, 15-Feb-2013.) $)
+    $( Deduction version of ~ hbsb .  (Contributed by NM, 15-Feb-2013.)  (Proof
+       rewritten by Jim Kingdon, 23-Mar-2018.) $)
     hbsbd $p |- ( ph -> ( [ y / x ] ps -> A. z [ y / x ] ps ) ) $=
-      ( cv wceq wal wsbc wi wn alrimi 2alimi hbsb4t 3syl ax-16 pm2.61d2 ) AEIDI
-      ZJEKZBCUALZUCEKMZAAEKZCKBBEKMZEKCKUBNUDMAUECFGOAUFCEHPBCDEQRUCEDST $.
+      ( wsb nfi wi wnf nfdh nfim1 nfsb sbrim nfbii mpbi nfrimi nfrd ) ABCDIZEAU
+      AEAEGJZABKZCDIZELAUAKZELUCCDEABEUBABEGHMNOUDUEEABCDFPQRST $.
   $}
 
   ${
@@ -13877,28 +13821,6 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d z ps $.
-    dvelim.1 $e |- ( ph -> A. x ph ) $.
-    dvelim.2 $e |- ( z = y -> ( ph <-> ps ) ) $.
-    $( This theorem can be used to eliminate a distinct variable restriction on
-       ` x ` and ` z ` and replace it with the "distinctor" ` -. A. x x = y `
-       as an antecedent. ` ph ` normally has ` z ` free and can be read
-       ` ph ( z ) ` , and ` ps ` substitutes ` y ` for ` z ` and can be read
-       ` ph ( y ) ` .  We don't require that ` x ` and ` y ` be distinct: if
-       they aren't, the distinctor will become false (in multiple-element
-       domains of discourse) and "protect" the consequent.
-
-       To obtain a closed-theorem form of this inference, prefix the hypotheses
-       with ` A. x A. z ` , conjoin them, and apply ~ dvelimdf .
-
-       Other variants of this theorem are ~ dvelimf (with no distinct variable
-       restrictions), ~ dvelimfALT (that avoids ~ ax-11 ), and ~ dvelimALT
-       (that avoids ~ ax-10 ).  (Contributed by NM, 23-Nov-1994.) $)
-    dvelim $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
-      ( ax-17 dvelimf ) ABCDEFBEHGI $.
-  $}
-
-  ${
     $d z ps $.  $d x z $.  $d y z $.
     dvelimALT.1 $e |- ( ph -> A. x ph ) $.
     dvelimALT.2 $e |- ( z = y -> ( ph <-> ps ) ) $.
@@ -13931,6 +13853,73 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
+    $d w x $.  $d w y $.  $d w z $.  $d ph w $.
+    hbsb4.1 $e |- ( ph -> A. z ph ) $.
+    $( A variable not free remains so after substitution with a distinct
+       variable.  (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim
+       Kingdon, 23-Mar-2018.) $)
+    hbsb4 $p |- ( -. A. z z = y -> ( [ y / x ] ph -> A. z [ y / x ] ph ) ) $=
+      ( vw wsb hbsb sbequ dvelimALT ) ABFGABCGDCFABFDEHAFCBIJ $.
+  $}
+
+  $( A variable not free remains so after substitution with a distinct variable
+     (closed form of ~ hbsb4 ).  (Contributed by NM, 7-Apr-2004.)  (Proof
+     shortened by Andrew Salmon, 25-May-2011.) $)
+  hbsb4t $p |- ( A. x A. z ( ph -> A. z ph ) ->
+               ( -. A. z z = y -> ( [ y / x ] ph -> A. z [ y / x ] ph ) ) ) $=
+    ( weq wal wn wsb wi hba1 hbsb4 a4sbim a4s ax-4 sbimi alimi a1i imim12d syl5
+    a7s ) DCEDFGADFZBCHZUBDFZIZAUAIZDFBFABCHZUFDFZIZUABCDADJKUEUDUHIDBUEBFZDFZU
+    FUBUCUGUIUFUBIDAUABCLMUCUGIUJUBUFDUAABCADNOPQRTS $.
+
+  ${
+    dvelimf.1 $e |- ( ph -> A. x ph ) $.
+    dvelimf.2 $e |- ( ps -> A. z ps ) $.
+    dvelimf.3 $e |- ( z = y -> ( ph <-> ps ) ) $.
+    $( Version of ~ dvelim without any variable restrictions.  (Contributed by
+       NM, 1-Oct-2002.) $)
+    dvelimf $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
+      ( weq wal wn wsb hbsb4 sbie albii 3imtr3g ) CDICJKAEDLZQCJBBCJAEDCFMABEDG
+      HNZQBCROP $.
+  $}
+
+  ${
+    dvelimdf.1 $e |- ( ph -> A. x ph ) $.
+    dvelimdf.2 $e |- ( ph -> A. z ph ) $.
+    dvelimdf.3 $e |- ( ph -> ( ps -> A. x ps ) ) $.
+    dvelimdf.4 $e |- ( ph -> ( ch -> A. z ch ) ) $.
+    dvelimdf.5 $e |- ( ph -> ( z = y -> ( ps <-> ch ) ) ) $.
+    $( Deduction form of ~ dvelimf .  This version may be useful if we want to
+       avoid ~ ax-17 and use ~ ax-16 instead.  (Contributed by NM,
+       7-Apr-2004.) $)
+    dvelimdf $p |- ( ph -> ( -. A. x x = y -> ( ch -> A. x ch ) ) ) $=
+      ( weq wal wn wi wa wsb alrimi wb adantr 2alimi hbsb4t sbied albid 3imtr3d
+      3syl imp ex ) ADELDMNZCCDMZOAUIPBFEQZUKDMZCUJAUIUKULOZAADMZFMBBDMOZDMFMUI
+      UMOAUNFHGRAUOFDIUABFEDUBUFUGAUKCSUIABCFEHJKUCZTAULUJSUIAUKCDGUPUDTUEUH $.
+  $}
+
+  ${
+    $d z ps $.
+    dvelim.1 $e |- ( ph -> A. x ph ) $.
+    dvelim.2 $e |- ( z = y -> ( ph <-> ps ) ) $.
+    $( This theorem can be used to eliminate a distinct variable restriction on
+       ` x ` and ` z ` and replace it with the "distinctor" ` -. A. x x = y `
+       as an antecedent. ` ph ` normally has ` z ` free and can be read
+       ` ph ( z ) ` , and ` ps ` substitutes ` y ` for ` z ` and can be read
+       ` ph ( y ) ` .  We don't require that ` x ` and ` y ` be distinct: if
+       they aren't, the distinctor will become false (in multiple-element
+       domains of discourse) and "protect" the consequent.
+
+       To obtain a closed-theorem form of this inference, prefix the hypotheses
+       with ` A. x A. z ` , conjoin them, and apply ~ dvelimdf .
+
+       Other variants of this theorem are ~ dvelimf (with no distinct variable
+       restrictions), ~ dvelimfALT (that avoids ~ ax-11 ), and ~ dvelimALT
+       (that avoids ~ ax-10 ).  (Contributed by NM, 23-Nov-1994.) $)
+    dvelim $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
+      ( ax-17 dvelimf ) ABCDEFBEHGI $.
+  $}
+
+  ${
     $d w z x $.  $d w y $.
     $( Quantifier introduction when one pair of variables is distinct.
        (Contributed by NM, 2-Jan-2002.)  (Proof rewritten by Jim Kingdon,
@@ -13945,7 +13934,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( Quantifier introduction when one pair of variables is distinct.
        (Contributed by NM, 2-Jan-2002.) $)
     dveel1 $p |- ( -. A. x x = y -> ( y e. z -> A. x y e. z ) ) $=
-      ( vw wel ax-17 elequ1 dvelimfALT ) DCEZBCEZABDIAFJDFDBCGH $.
+      ( vw wel ax-17 elequ1 dvelimf ) DCEZBCEZABDIAFJDFDBCGH $.
   $}
 
   ${
@@ -13953,7 +13942,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( Quantifier introduction when one pair of variables is distinct.
        (Contributed by NM, 2-Jan-2002.) $)
     dveel2 $p |- ( -. A. x x = y -> ( z e. y -> A. x z e. y ) ) $=
-      ( vw wel ax-17 elequ2 dvelimfALT ) CDEZCBEZABDIAFJDFDBCGH $.
+      ( vw wel ax-17 elequ2 dvelimf ) CDEZCBEZABDIAFJDFDBCGH $.
   $}
 
   ${
@@ -15394,6 +15383,25 @@ shed some light on the axioms we are using, even though the independence
 or metalogic of the axioms may be quite different in the intuitionistic
 case compared with the classical case.
 $)
+
+  ${
+    dvelimfALT.1 $e |- ( ph -> A. x ph ) $.
+    dvelimfALT.2 $e |- ( ps -> A. z ps ) $.
+    dvelimfALT.3 $e |- ( z = y -> ( ph <-> ps ) ) $.
+    $( Proof of ~ dvelimf that uses ~ ax-10o (in the form of ~ ax10o ) but not
+       ~ ax-11o , ~ ax-10 , or ~ ax-11 (if we replace uses of ~ ax10o by
+       ~ ax-10o in the proofs of referenced theorems).  See ~ dvelimALT for a
+       proof (of the distinct variable version ~ dvelim ) that doesn't require
+       ~ ax-10 .  It is not clear whether a proof is possible that uses ~ ax-10
+       but avoids ~ ax-11 , ~ ax-11o , and ~ ax-10o .  (Contributed by NM,
+       12-Nov-2002.) $)
+    dvelimfALT $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
+      ( weq wal wn wi hba1 ax10o alequcoms syl5 a1d wa hbnae hban ax-12 imp a1i
+      hbimd hbald ex pm2.61i equsal albii 3imtr3g ) CDICJKZEDIZALZEJZUNCJZBBCJC
+      EICJZUKUNUOLZLUPUQUKUNUNEJZUPUOUMEMURUOLECUNECNOPQUPKZUKUQUSUKRZUMCEUSUKE
+      CEESCDESTUTULACUSUKCCECSCDCSTUSUKULULCJLEDCUAUBAACJLUTFUCUDUEUFUGABEDGHUH
+      ZUNBCVAUIUJ $.
+  $}
 
   $( Show that the original axiom ~ ax-5o can be derived from ~ ax-5 and
      others.  See ~ ax5 for the rederivation of ~ ax-5 from ~ ax-5o .
