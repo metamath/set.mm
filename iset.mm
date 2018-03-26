@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Mar-2018
+$( iset.mm - Version of 22-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -12532,22 +12532,6 @@ $)
     UPGVGUPPUOUPBUOBRQSVFVDBUOVCUPAUNUMAUMNUAUBUCUDVDVABUMUNUPUETUFURVABUKUTUMU
     QUGTMUHUKBCIUJUI $.
 
-  $( A commutativity law for substitution.  (Contributed by NM,
-     27-May-1997.) $)
-  sbcom $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
-    ( weq wal wsb wb wn wa hbae sbbid bitr3d hbnae hban albid sb4b sbequ12 a4s
-    wi drsb1 adantr ax-12 imp alimi 19.21ht 3syl adantrr alcom albii nalequcoms
-    bi2.04 syl5bb adantrl imbi2d sylan9bbr adantl sylan9bb 3bitr4d pm2.61ian ex
-    pm2.61ii ) BCEZBFZDCEZDFZABCGZDCGZADCGZBCGZHZVDIZVFIZVKBDEBFZVLVMJZVKVNVKVO
-    VNVGBCGVHVJVGBDCUAVNVGVIBCBDBKABDCUALMUBVNIZVOJZVEVCATZBFZTZDFZVCVEATZDFZTZ
-    BFZVHVJVQVEVRTZBFZDFZWAWEVPVLWHWAHVMVPVLJZWGVTDVPVLDBDDNZBCDNZOWIWIBFVEVEBF
-    TZBFWGVTHVPVLBBDBNZBCBNOWIWLBVPVLWLDCBUCUDUEVEVRBUFUGPUHVPVMWHWEHVLWHWFDFZB
-    FVPVMJZWEWFDBUIWOWNWDBVPVMBWMDCBNZOWNVCWBTZDFZWOWDWFWQDVEVCAULUJWOWODFVCVCD
-    FTZDFWRWDHVPVMDWJDCDNOWOWSDVPVMWSVMWSTDBBCDUCUKUDUEVCWBDUFUGUMPUMUNMVOVHWAH
-    VPVMVHVEVGTZDFVLWAVGDCQVLWTVTDWKVLVGVSVEABCQUOPUPUQVOVJWEHVPVLVJVCVITZBFVMW
-    EVIBCQVMXAWDBWPVMVIWCVCADCQUOPURUQUSUTVAVDVIVHVJVDAVGDCBCDKVCAVGHBABCRSLVCV
-    IVJHBVIBCRSMVFVGVHVJVEVGVHHDVGDCRSVFAVIBCDCBKVEAVIHDADCRSLMVB $.
-
   ${
     sb5rf.1 $e |- ( ph -> A. y ph ) $.
     $( Reversed substitution.  (Contributed by NM, 3-Feb-2005.)  (Proof
@@ -13243,15 +13227,6 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d y z $.
-    hbsb.1 $e |- ( ph -> A. z ph ) $.
-    $( If ` z ` is not free in ` ph ` , it is not free in ` [ y / x ] ph ` when
-       ` y ` and ` z ` are distinct.  (Contributed by NM, 12-Aug-1993.) $)
-    hbsb $p |- ( [ y / x ] ph -> A. z [ y / x ] ph ) $=
-      ( weq wal wsb wi ax-16 hbsb4 pm2.61i ) DCFDGABCHZMDGIMDCJABCDEKL $.
-  $}
-
-  ${
     $d x z $.  $d y z $.
     hbsbv.1 $e |- ( ph -> A. z ph ) $.
     $( This is a version of ~ hbsb with an extra distinct variable constraint,
@@ -13309,6 +13284,16 @@ $( The theorems in this section make use of the $d statement. $)
     nfsb $p |- F/ z [ y / x ] ph $=
       ( vw wsb wnf nfsbxy ax-17 sbco2v nfbii mpbi ) ABFGZFCGZDHABCGZDHNFCDABFDE
       IIOPDABCFAFJKLM $.
+  $}
+
+  ${
+    $d y z $.
+    hbsb.1 $e |- ( ph -> A. z ph ) $.
+    $( If ` z ` is not free in ` ph ` , it is not free in ` [ y / x ] ph ` when
+       ` y ` and ` z ` are distinct.  (Contributed by NM, 12-Aug-1993.)  (Proof
+       rewritten by Jim Kingdon, 22-Mar-2018.) $)
+    hbsb $p |- ( [ y / x ] ph -> A. z [ y / x ] ph ) $=
+      ( wsb nfi nfsb nfri ) ABCFDABCDADEGHI $.
   $}
 
   ${
@@ -13480,13 +13465,6 @@ $( The theorems in this section make use of the $d statement. $)
       ABCFGHMNBDACBIJK $.
   $}
 
-  $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
-  sbco3 $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
-    ( weq wal wsb wb drsb1 sbequ12a alimi a4sbbi syl bitr3d wn sbco sbbii hbnae
-    hbsb2 sbco2d syl5rbbr pm2.61i ) BCEZBFZABCGZCDGZACBGZBDGZHUDUEBDGZUFUHUEBCD
-    IUDUEUGHZBFUIUHHUCUJBABCJKUEUGBDLMNUHUECBGZBDGUDOZUFUKUGBDACBPQULUECDBBCCRB
-    CBRABCSTUAUB $.
-
   $( Relationship between composition and commutativity for substitution.
      (Contributed by Jim Kingdon, 28-Feb-2018.) $)
   sbcocom $p |- ( [ z / y ] [ y / x ] ph <-> [ z / y ] [ z / x ] ph ) $=
@@ -13517,6 +13495,31 @@ $( The theorems in this section make use of the $d statement. $)
       VPVFVRVPVFUGZAVKDCVSDVPVFDVEDUHVEDUIUJUMVSVKDVKDQVSVJDCTRSVFVCAVKJZGZVPVE
       WADVEVCVTVEAVJVCVKABCOVOUKUNPULUOUNUPPUOUQURUSUSUT $.
   $}
+
+  ${
+    $d x z $.  $d y z $.
+    $( Version of ~ sbco3 with distinct variable constraints between ` x ` and
+       ` z ` , and ` y ` and ` z ` .  Lemma for proving ~ sbco3 .  (Contributed
+       by Jim Kingdon, 22-Mar-2018.) $)
+    sbco3xzyz $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
+      ( wsb sbcomxyyz sbcocom 3bitr4i ) ABDECDEACDEBDEABCECDEACBEBDEABDCFABCDGA
+      CBDGH $.
+  $}
+
+  ${
+    $d w x $.  $d w y $.  $d w ph $.
+    $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.)
+       (Proof rewritten by Jim Kingdon, 22-Mar-2018.) $)
+    sbco3 $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
+      ( vw wsb sbco3xzyz sbbii ax-17 sbco2 3bitr3i ) ABCFZCEFZEDFACBFZBEFZEDFLC
+      DFNBDFMOEDABCEGHLCDELEIJNBDENEIJK $.
+  $}
+
+  $( A commutativity law for substitution.  (Contributed by NM, 27-May-1997.)
+     (Proof rewritten by Jim Kingdon, 22-Mar-2018.) $)
+  sbcom $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
+    ( wsb sbco3 sbcocom 3bitr3i ) ABDEDCEADBEBCEABCEDCEADCEBCEABDCFABDCGADBCGH
+    $.
 
   ${
     $d w y z $.  $d w x $.
