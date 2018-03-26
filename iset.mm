@@ -5794,6 +5794,11 @@ $)
   pm2.1dc $p |- ( DECID ph -> ( -. ph \/ ph ) ) $=
     ( wdc wn wo df-dc orcom bitri biimpi ) ABZACZADZIAJDKAEAJFGH $.
 
+  $( A decidable proposition is decidable when negated.  (Contributed by Jim
+     Kingdon, 25-Mar-2018.) $)
+  dcn $p |- ( DECID ph -> DECID -. ph ) $=
+    ( wn wo wdc notnot1 orim2i orcoms df-dc 3imtr4i ) AABZCJJBZCZADJDJALAKJAEFG
+    AHJHI $.
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Classical logic
