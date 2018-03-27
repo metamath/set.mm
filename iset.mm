@@ -6266,6 +6266,14 @@ $)
   pm2.54 $p |- ( ( -. ph -> ps ) -> ( ph \/ ps ) ) $=
     ( wn wo notnot2 orc syl olc ja ) ACZBABDZJCAKAEABFGBAHI $.
 
+  $( Deriving disjunction from implication for a decidable proposition.  Based
+     on theorem *2.54 of [WhiteheadRussell] p. 107.  The converse, ~ pm2.53 ,
+     holds whether the proposition is decidable or not.  (Contributed by Jim
+     Kingdon, 26-Mar-2018.) $)
+  pm2.54dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( ph \/ ps ) ) ) $=
+    ( wdc wn wi wo dcn notnot2dc orc syl6 a1d olc a1i jaddc mpd ) ACZ
+    ADZCZQBEABFZEAGPQBSPQDZSERPTASAHABIJKBSEPBALMNO $.
+
   $( Definition of 'or' in terms of negation and implication (classical).
      Definition of [Margaris] p. 49.  (Contributed by NM, 31-Jan-2015.) $)
   df-or $p |- ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) $=
