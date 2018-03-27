@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Mar-2018
+$( iset.mm - Version of 27-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6310,6 +6310,12 @@ $)
      3-Jan-2005.)  (Revised by NM, 21-Oct-2012.) $)
   pm2.68 $p |- ( ( ( ph -> ps ) -> ps ) -> ( ph \/ ps ) ) $=
     ( wi jarl orrd ) ABCBCABABBDE $.
+
+  $( Concluding disjunction from implication for a decidable proposition.
+     Based on theorem *2.68 of [WhiteheadRussell] p. 108.  Converse of ~ pm2.62
+     and one half of ~ dfor2 .  (Contributed by Jim Kingdon, 27-Mar-2018.) $)
+  pm2.68dc $p |- ( DECID ph -> ( ( ( ph -> ps ) -> ps ) -> ( ph \/ ps ) ) ) $=
+    ( wi wn wdc wo jarl pm2.54dc syl5 ) ABCBCADBCAEABFABBGABHI $.
 
   $( Implication in terms of disjunction.  Theorem *4.6 of [WhiteheadRussell]
      p. 120.  (Contributed by NM, 5-Aug-1993.) $)
