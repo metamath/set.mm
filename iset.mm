@@ -6313,9 +6313,15 @@ $)
 
   $( Concluding disjunction from implication for a decidable proposition.
      Based on theorem *2.68 of [WhiteheadRussell] p. 108.  Converse of ~ pm2.62
-     and one half of ~ dfor2 .  (Contributed by Jim Kingdon, 27-Mar-2018.) $)
+     and one half of ~ dfor2dc .  (Contributed by Jim Kingdon, 27-Mar-2018.) $)
   pm2.68dc $p |- ( DECID ph -> ( ( ( ph -> ps ) -> ps ) -> ( ph \/ ps ) ) ) $=
     ( wi wn wdc wo jarl pm2.54dc syl5 ) ABCBCADBCAEABFABBGABHI $.
+
+  $( Logical 'or' expressed in terms of implication only, for a decidable
+     proposition.  Based on theorem *5.25 of [WhiteheadRussell] p. 124.
+     (Contributed by Jim Kingdon, 27-Mar-2018.) $)
+  dfor2dc $p |- ( DECID ph -> ( ( ph \/ ps ) <-> ( ( ph -> ps ) -> ps ) ) ) $=
+    ( wdc wo wi pm2.62 pm2.68dc impbid2 ) ACABDABEBEABFABGH $.
 
   $( Implication in terms of disjunction.  Theorem *4.6 of [WhiteheadRussell]
      p. 120.  (Contributed by NM, 5-Aug-1993.) $)
