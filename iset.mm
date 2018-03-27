@@ -15103,10 +15103,10 @@ $)
     UEUICUBAFHUIFABIUBAJKLCUIMUBACNOUDUHUCCUGACCUFGUGCDPCUFQRSTUCUHQUA $.
 
   $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
-     of Lukasiewicz.  Using ~ dfor2 , we can see that this essentially
+     of Lukasiewicz.  Using ~ dfor2dc , we can see that this (classically)
      expresses "disjunction commutes."  Theorem *2.69 of [WhiteheadRussell]
-     p. 108.  Our proofs of both ~ dfor2 and ~ looinv are classical, rather
-     than intuitionistic, results.  (Contributed by NM, 12-Aug-2004.) $)
+     p. 108.  Our proof of ~ looinv is a classical, rather than intuitionistic,
+     result.  (Contributed by NM, 12-Aug-2004.) $)
   looinv $p |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) $=
     ( wi imim1 peirce syl6 ) ABCZBCBACGACAGBADABEF $.
 
@@ -15303,12 +15303,6 @@ $)
      3-Jan-2005.) $)
   pm4.55 $p |- ( -. ( -. ph /\ ps ) <-> ( ph \/ -. ps ) ) $=
     ( wn wo wa pm4.54 con2bii bicomi ) ABCDZACBEZCJIABFGH $.
-
-  $( Logical 'or' expressed in terms of implication only.  Theorem *5.25 of
-     [WhiteheadRussell] p. 124.  (Contributed by NM, 12-Aug-2004.)  (Proof
-     shortened by Wolf Lammen, 20-Oct-2012.) $)
-  dfor2 $p |- ( ( ph \/ ps ) <-> ( ( ph -> ps ) -> ps ) ) $=
-    ( wo wi pm2.62 pm2.68 impbii ) ABCABDBDABEABFG $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
