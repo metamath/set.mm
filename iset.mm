@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Mar-2018
+$( iset.mm - Version of 26-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6021,6 +6021,17 @@ $)
        25-Mar-2018.) $)
     jadc $p |- ( DECID ph -> ( ( ph -> ps ) -> ch ) ) $=
       ( wi wdc imim2i wn pm2.6dc mpd syl5 ) ABFACFZAGZCBCAEHNAICFMCFDACJKL $.
+  $}
+
+  ${
+    jaddc.1 $e |- ( ph -> ( DECID ps -> ( -. ps -> th ) ) ) $.
+    jaddc.2 $e |- ( ph -> ( ch -> th ) ) $.
+    $( Deduction forming an implication from the antecedents of two premises,
+       where a decidable antecedent is negated.  (Contributed by Jim Kingdon,
+       26-Mar-2018.) $)
+    jaddc $p |- ( ph -> ( DECID ps -> ( ( ps -> ch ) -> th ) ) ) $=
+      ( wi wdc imim2d wn pm2.6dc sylcom syl5d ) ABCGBDGZBHZDACDBFIAOBJDGNDGEBDK
+      LM $.
   $}
 
   $( Theorem *2.61 of [WhiteheadRussell] p. 107.  Useful for eliminating an
