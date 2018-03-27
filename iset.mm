@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-Mar-2018
+$( iset.mm - Version of 26-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5788,6 +5788,17 @@ $)
      to "x = y is decidabile".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   df-dc $a |- ( DECID ph <-> ( ph \/ -. ph ) ) $.
 
+  $( Commuted law of the excluded middle for a decidable proposition.  Based on
+     theorem *2.1 of [WhiteheadRussell] p. 101.  (Contributed by Jim Kingdon,
+     25-Mar-2018.) $)
+  pm2.1dc $p |- ( DECID ph -> ( -. ph \/ ph ) ) $=
+    ( wdc wn wo df-dc orcom bitri biimpi ) ABZACZADZIAJDKAEAJFGH $.
+
+  $( A decidable proposition is decidable when negated.  (Contributed by Jim
+     Kingdon, 25-Mar-2018.) $)
+  dcn $p |- ( DECID ph -> DECID -. ph ) $=
+    ( wn wo wdc notnot1 orim2i orcoms df-dc 3imtr4i ) AABZCJJBZCZADJDJALAKJAEFG
+    AHJHI $.
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Classical logic
@@ -5841,6 +5852,14 @@ $)
      compare with ~ pm2.01 which is.  (Contributed by NM, 5-Aug-1993.) $)
   pm2.18 $p |- ( ( -. ph -> ph ) -> ph ) $=
     ( wn wi pm2.21 a2i con4d pm2.43i ) ABZACZAIAIHAIBZAJDEFG $.
+
+  $( Proof by contradiction for a decidable proposition.  Based on Theorem
+     *2.18 of [WhiteheadRussell] p. 103 (also called the Law of Clavius).
+     Intuitionistically it requires a decidability assumption, but compare with
+     ~ pm2.01 which does not.  (Contributed by Jim Kingdon, 24-Mar-2018.) $)
+  pm2.18dc $p |- ( DECID ph -> ( ( -. ph -> ph ) -> ph ) ) $=
+    ( wdc wn wi pm2.21 a2i condc syl5 pm2.43d ) ABZACZADZALKLCZDJLADKAMAMEFALGH
+    I $.
 
   ${
     pm2.18d.1 $e |- ( ph -> ( -. ps -> ps ) ) $.
@@ -5987,6 +6006,33 @@ $)
      3-Jan-2005.)  (Revised by NM, 22-Sep-2013.) $)
   pm2.6 $p |- ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) $=
     ( wn wi id idd jad ) ACBDZABBHEHBFG $.
+
+  $( Case elimination for a decidable proposition.  Based on theorem *2.6 of
+     [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon, 25-Mar-2018.) $)
+  pm2.6dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) ) $=
+    ( wdc wn wi wo wa pm2.1dc pm3.44 syl5com exp3a ) ACZADZBEZABEZBLMAFNOGBAHBM
+    AIJK $.
+
+  ${
+    jadc.1 $e |- ( DECID ph -> ( -. ph -> ch ) ) $.
+    jadc.2 $e |- ( ps -> ch ) $.
+    $( Inference forming an implication from the antecedents of two premises,
+       where a decidable antecedent is negated.  (Contributed by Jim Kingdon,
+       25-Mar-2018.) $)
+    jadc $p |- ( DECID ph -> ( ( ph -> ps ) -> ch ) ) $=
+      ( wi wdc imim2i wn pm2.6dc mpd syl5 ) ABFACFZAGZCBCAEHNAICFMCFDACJKL $.
+  $}
+
+  ${
+    jaddc.1 $e |- ( ph -> ( DECID ps -> ( -. ps -> th ) ) ) $.
+    jaddc.2 $e |- ( ph -> ( ch -> th ) ) $.
+    $( Deduction forming an implication from the antecedents of two premises,
+       where a decidable antecedent is negated.  (Contributed by Jim Kingdon,
+       26-Mar-2018.) $)
+    jaddc $p |- ( ph -> ( DECID ps -> ( ( ps -> ch ) -> th ) ) ) $=
+      ( wi wdc imim2d wn pm2.6dc sylcom syl5d ) ABCGBDGZBHZDACDBFIAOBJDGNDGEBDK
+      LM $.
+  $}
 
   $( Theorem *2.61 of [WhiteheadRussell] p. 107.  Useful for eliminating an
      antecedent.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
@@ -6215,15 +6261,29 @@ $)
     ( wa wn wi con2b nan bitr2i ) BCDZAEFAJEFABDCEFJAGABCHI $.
 
   $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
-     intuitionistically, although its coverse, ~ pm2.53 , does.  (Contributed
+     intuitionistically, although its converse, ~ pm2.53 , does.  (Contributed
      by NM, 3-Jan-2005.) $)
   pm2.54 $p |- ( ( -. ph -> ps ) -> ( ph \/ ps ) ) $=
     ( wn wo notnot2 orc syl olc ja ) ACZBABDZJCAKAEABFGBAHI $.
+
+  $( Deriving disjunction from implication for a decidable proposition.  Based
+     on theorem *2.54 of [WhiteheadRussell] p. 107.  The converse, ~ pm2.53 ,
+     holds whether the proposition is decidable or not.  (Contributed by Jim
+     Kingdon, 26-Mar-2018.) $)
+  pm2.54dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( ph \/ ps ) ) ) $=
+    ( wdc wn wi wo dcn notnot2dc orc syl6 a1d olc a1i jaddc mpd ) ACZ
+    ADZCZQBEABFZEAGPQBSPQDZSERPTASAHABIJKBSEPBALMNO $.
 
   $( Definition of 'or' in terms of negation and implication (classical).
      Definition of [Margaris] p. 49.  (Contributed by NM, 31-Jan-2015.) $)
   df-or $p |- ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) $=
     ( wo wn wi pm2.53 pm2.54 impbii ) ABCADBEABFABGH $.
+
+  $( Definition of 'or' in terms of negation and implication for a decidable
+     proposition.  Based on definition of [Margaris] p. 49.  (Contributed by
+     Jim Kingdon, 26-Mar-2018.) $)
+  dfordc $p |- ( DECID ph -> ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) ) $=
+    ( wdc wo wn wi pm2.53 pm2.54dc impbid2 ) ACABDAEBFABGABHI $.
 
   ${
     orrd.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
