@@ -6279,6 +6279,12 @@ $)
   df-or $p |- ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) $=
     ( wo wn wi pm2.53 pm2.54 impbii ) ABCADBEABFABGH $.
 
+  $( Definition of 'or' in terms of negation and implication for a decidable
+     proposition.  Based on definition of [Margaris] p. 49.  (Contributed by
+     Jim Kingdon, 26-Mar-2018.) $)
+  dfordc $p |- ( DECID ph -> ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) ) $=
+    ( wdc wo wn wi pm2.53 pm2.54dc impbid2 ) ACABDAEBFABGABHI $.
+
   ${
     orrd.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
     $( Deduce implication from disjunction.  (Contributed by NM,
