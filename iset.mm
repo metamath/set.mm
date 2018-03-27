@@ -6306,11 +6306,6 @@ $)
   pm2.25 $p |- ( ph \/ ( ( ph \/ ps ) -> ps ) ) $=
     ( wo wi orel1 orri ) AABCBDABEF $.
 
-  $( Theorem *2.68 of [WhiteheadRussell] p. 108.  (Contributed by NM,
-     3-Jan-2005.)  (Revised by NM, 21-Oct-2012.) $)
-  pm2.68 $p |- ( ( ( ph -> ps ) -> ps ) -> ( ph \/ ps ) ) $=
-    ( wi jarl orrd ) ABCBCABABBDE $.
-
   $( Concluding disjunction from implication for a decidable proposition.
      Based on theorem *2.68 of [WhiteheadRussell] p. 108.  Converse of ~ pm2.62
      and one half of ~ dfor2dc .  (Contributed by Jim Kingdon, 27-Mar-2018.) $)
