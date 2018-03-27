@@ -6323,6 +6323,13 @@ $)
   dfor2dc $p |- ( DECID ph -> ( ( ph \/ ps ) <-> ( ( ph -> ps ) -> ps ) ) ) $=
     ( wdc wo wi pm2.62 pm2.68dc impbid2 ) ACABDABEBEABFABGH $.
 
+  $( Simplify an implication between implications, for a decidable
+     proposition.  (Contributed by Jim Kingdon, 18-Mar-2018.) $)
+  imimorbdc $p |- ( DECID ps -> ( ( ( ps -> ch ) -> ( ph -> ch ) ) <->
+                  ( ph -> ( ps \/ ch ) ) ) ) $=
+    ( wdc wo wi dfor2dc imbi2d bi2.04 syl6rbbr ) BDZABCEZFABCFZCFZFMA
+    CFFKLNABCGHMACIJ $.
+
   $( Implication in terms of disjunction.  Theorem *4.6 of [WhiteheadRussell]
      p. 120.  (Contributed by NM, 5-Aug-1993.) $)
   imor $p |- ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) $=
@@ -15302,12 +15309,6 @@ $)
      shortened by Wolf Lammen, 20-Oct-2012.) $)
   dfor2 $p |- ( ( ph \/ ps ) <-> ( ( ph -> ps ) -> ps ) ) $=
     ( wo wi pm2.62 pm2.68 impbii ) ABCABDBDABEABFG $.
-
-  $( Simplify an implication between implications.  (Contributed by Paul
-     Chapman, 17-Nov-2012.)  (Proof shortened by Wolf Lammen, 3-Apr-2013.) $)
-  imimorb $p |- ( ( ( ps -> ch ) -> ( ph -> ch ) ) <->
-                  ( ph -> ( ps \/ ch ) ) ) $=
-    ( wi wo bi2.04 dfor2 imbi2i bitr4i ) BCDZACDDAJCDZDABCEZDJACFLKABCGHI $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
