@@ -6380,12 +6380,16 @@ $)
        ( ph -> ( ps \/ ch ) ) ) $=
     ( wi wo orc imim2i olc jaoi ) ABDABCEZDACDBJABCFGCJACBHGI $.
 
-  $( Theorem *4.79 of [WhiteheadRussell] p. 121.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 27-Jun-2013.) $)
-  pm4.79 $p |- ( ( ( ps -> ph ) \/ ( ch -> ph ) ) <->
-                ( ( ps /\ ch ) -> ph ) ) $=
-    ( wi wo wa id jaoa wn simplim pm3.3 syl5 orrd impbii ) BADZCADZEBCFADZOBAPC
-    OGPGHQOPOIBQPBAJBCAKLMN $.
+  $( Equivalence between a disjunction of two implications, and a conjunction
+     and an implication.  Based on theorem *4.79 of [WhiteheadRussell] p. 121
+     but with additional decidability antecedents.  (Contributed by Jim
+     Kingdon, 28-Mar-2018.) $)
+  pm4.79dc $p |- ( DECID ph -> ( DECID ps ->
+                 ( ( ( ps -> ph ) \/ ( ch -> ph ) ) <->
+                   ( ( ps /\ ch ) -> ph ) ) ) ) $=
+    ( wdc wi wo wa wb dcim id jaoa simplim pm3.3 syl5 pm2.54dc impbid2 syl6com
+    wn ) BDADBAEZDZSCAEZFZBCGAEZHBAITUBUCSBAUACSJUAJKUCSRZUAETUBUDBUCUABALBCAMN
+    SUAONPQ $.
 
   $( Theorem *5.17 of [WhiteheadRussell] p. 124.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 3-Jan-2013.) $)
