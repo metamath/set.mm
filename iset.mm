@@ -6304,14 +6304,6 @@ $)
     ( wdc wo wn wi pm2.53 pm2.54dc impbid2 ) ACABDAEBFABGABHI $.
 
   ${
-    orrd.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( Deduce implication from disjunction.  (Contributed by NM,
-       27-Nov-1995.) $)
-    orrd $p |- ( ph -> ( ps \/ ch ) ) $=
-      ( wn wi wo pm2.54 syl ) ABECFBCGDBCHI $.
-  $}
-
-  ${
     orri.1 $e |- ( -. ph -> ps ) $.
     $( Infer implication from disjunction.  (Contributed by NM,
        11-Jun-1994.) $)
