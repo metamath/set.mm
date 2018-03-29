@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Mar-2018
+$( iset.mm - Version of 28-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5799,6 +5799,16 @@ $)
   dcn $p |- ( DECID ph -> DECID -. ph ) $=
     ( wn wo wdc notnot1 orim2i orcoms df-dc 3imtr4i ) AABZCJJBZCZADJDJALAKJAEFG
     AHJHI $.
+
+  ${
+    dcbii.1 $e |- ( ph <-> ps ) $.
+    $( The equivalent of a decidable proposition is decidable.  (Contributed by
+       Jim Kingdon, 28-Mar-2018.) $)
+    dcbii $p |- ( DECID ph <-> DECID ps ) $=
+      ( wn wo wdc notbii orbi12i df-dc 3bitr4i ) AADZEBBDZEAFBF
+      ABKLCABCGHAIBIJ $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Classical logic
@@ -6224,6 +6234,14 @@ $)
      (Contributed by Jim Kingdon, 24-Dec-2017.) $)
   annimim $p |- ( ( ph /\ -. ps ) -> -. ( ph -> ps ) ) $=
     ( wn wi pm2.27 con3 syl imp ) ABCZABDZCZAJBDIKDABEJBFGH $.
+
+  $( An implication between two decidable propositions is decidable.
+     (Contributed by Jim Kingdon, 28-Mar-2018.) $)
+  dcim $p |- ( DECID ph -> ( DECID ps -> DECID ( ph -> ps ) ) ) $=
+    ( wn wo wi df-dc wa anbi2i andi bitri pm3.4 annimim orim12i sylbi
+    wdc sylibr ex ax-in2 a1d orc syl6 jaoi ) AOAACZDBOZABEZOZEZAFAUGU
+    CAUDUFAUDGZUEUECZDZUFUHABGZABCZGZDZUJUHABULDZGUNUDUOABFHABULIJUKU
+    EUMUIABKABLMNUEFZPQUCUDUEUFUCUEUDABRSUEUJUFUEUITUPPUAUBN $.
 
   $( Express implication in terms of conjunction.  The biconditionalized
      version of this theorem, ~ iman , is not valid intuitionistically.
