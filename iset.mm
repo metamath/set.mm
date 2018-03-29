@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Mar-2018
+$( iset.mm - Version of 28-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5799,6 +5799,16 @@ $)
   dcn $p |- ( DECID ph -> DECID -. ph ) $=
     ( wn wo wdc notnot1 orim2i orcoms df-dc 3imtr4i ) AABZCJJBZCZADJDJALAKJAEFG
     AHJHI $.
+
+  ${
+    dcbii.1 $e |- ( ph <-> ps ) $.
+    $( The equivalent of a decidable proposition is decidable.  (Contributed by
+       Jim Kingdon, 28-Mar-2018.) $)
+    dcbii $p |- ( DECID ph <-> DECID ps ) $=
+      ( wn wo wdc notbii orbi12i df-dc 3bitr4i ) AADZEBBDZEAFBF
+      ABKLCABCGHAIBIJ $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Classical logic
@@ -6225,6 +6235,14 @@ $)
   annimim $p |- ( ( ph /\ -. ps ) -> -. ( ph -> ps ) ) $=
     ( wn wi pm2.27 con3 syl imp ) ABCZABDZCZAJBDIKDABEJBFGH $.
 
+  $( An implication between two decidable propositions is decidable.
+     (Contributed by Jim Kingdon, 28-Mar-2018.) $)
+  dcim $p |- ( DECID ph -> ( DECID ps -> DECID ( ph -> ps ) ) ) $=
+    ( wn wo wi df-dc wa anbi2i andi bitri pm3.4 annimim orim12i sylbi
+    wdc sylibr ex ax-in2 a1d orc syl6 jaoi ) AOAACZDBOZABEZOZEZAFAUGU
+    CAUDUFAUDGZUEUECZDZUFUHABGZABCZGZDZUJUHABULDZGUNUDUOABFHABULIJUKU
+    EUMUIABKABLMNUEFZPQUCUDUEUFUCUEUDABRSUEUJUFUEUITUPPUAUBN $.
+
   $( Express implication in terms of conjunction.  The biconditionalized
      version of this theorem, ~ iman , is not valid intuitionistically.
      (Contributed by Jim Kingdon, 24-Dec-2017.) $)
@@ -6286,14 +6304,6 @@ $)
     ( wdc wo wn wi pm2.53 pm2.54dc impbid2 ) ACABDAEBFABGABHI $.
 
   ${
-    orrd.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( Deduce implication from disjunction.  (Contributed by NM,
-       27-Nov-1995.) $)
-    orrd $p |- ( ph -> ( ps \/ ch ) ) $=
-      ( wn wi wo pm2.54 syl ) ABECFBCGDBCHI $.
-  $}
-
-  ${
     orri.1 $e |- ( -. ph -> ps ) $.
     $( Infer implication from disjunction.  (Contributed by NM,
        11-Jun-1994.) $)
@@ -6306,10 +6316,24 @@ $)
   pm2.25 $p |- ( ph \/ ( ( ph \/ ps ) -> ps ) ) $=
     ( wo wi orel1 orri ) AABCBDABEF $.
 
-  $( Theorem *2.68 of [WhiteheadRussell] p. 108.  (Contributed by NM,
-     3-Jan-2005.)  (Revised by NM, 21-Oct-2012.) $)
-  pm2.68 $p |- ( ( ( ph -> ps ) -> ps ) -> ( ph \/ ps ) ) $=
-    ( wi jarl orrd ) ABCBCABABBDE $.
+  $( Concluding disjunction from implication for a decidable proposition.
+     Based on theorem *2.68 of [WhiteheadRussell] p. 108.  Converse of ~ pm2.62
+     and one half of ~ dfor2dc .  (Contributed by Jim Kingdon, 27-Mar-2018.) $)
+  pm2.68dc $p |- ( DECID ph -> ( ( ( ph -> ps ) -> ps ) -> ( ph \/ ps ) ) ) $=
+    ( wi wn wdc wo jarl pm2.54dc syl5 ) ABCBCADBCAEABFABBGABHI $.
+
+  $( Logical 'or' expressed in terms of implication only, for a decidable
+     proposition.  Based on theorem *5.25 of [WhiteheadRussell] p. 124.
+     (Contributed by Jim Kingdon, 27-Mar-2018.) $)
+  dfor2dc $p |- ( DECID ph -> ( ( ph \/ ps ) <-> ( ( ph -> ps ) -> ps ) ) ) $=
+    ( wdc wo wi pm2.62 pm2.68dc impbid2 ) ACABDABEBEABFABGH $.
+
+  $( Simplify an implication between implications, for a decidable
+     proposition.  (Contributed by Jim Kingdon, 18-Mar-2018.) $)
+  imimorbdc $p |- ( DECID ps -> ( ( ( ps -> ch ) -> ( ph -> ch ) ) <->
+                  ( ph -> ( ps \/ ch ) ) ) ) $=
+    ( wdc wo wi dfor2dc imbi2d bi2.04 syl6rbbr ) BDZABCEZFABCFZCFZFMA
+    CFFKLNABCGHMACIJ $.
 
   $( Implication in terms of disjunction.  Theorem *4.6 of [WhiteheadRussell]
      p. 120.  (Contributed by NM, 5-Aug-1993.) $)
@@ -6348,12 +6372,16 @@ $)
        ( ph -> ( ps \/ ch ) ) ) $=
     ( wi wo orc imim2i olc jaoi ) ABDABCEZDACDBJABCFGCJACBHGI $.
 
-  $( Theorem *4.79 of [WhiteheadRussell] p. 121.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 27-Jun-2013.) $)
-  pm4.79 $p |- ( ( ( ps -> ph ) \/ ( ch -> ph ) ) <->
-                ( ( ps /\ ch ) -> ph ) ) $=
-    ( wi wo wa id jaoa wn simplim pm3.3 syl5 orrd impbii ) BADZCADZEBCFADZOBAPC
-    OGPGHQOPOIBQPBAJBCAKLMN $.
+  $( Equivalence between a disjunction of two implications, and a conjunction
+     and an implication.  Based on theorem *4.79 of [WhiteheadRussell] p. 121
+     but with additional decidability antecedents.  (Contributed by Jim
+     Kingdon, 28-Mar-2018.) $)
+  pm4.79dc $p |- ( DECID ph -> ( DECID ps ->
+                 ( ( ( ps -> ph ) \/ ( ch -> ph ) ) <->
+                   ( ( ps /\ ch ) -> ph ) ) ) ) $=
+    ( wdc wi wo wa wb dcim id jaoa simplim pm3.3 syl5 pm2.54dc impbid2 syl6com
+    wn ) BDADBAEZDZSCAEZFZBCGAEZHBAITUBUCSBAUACSJUAJKUCSRZUAETUBUDBUCUABALBCAMN
+    SUAONPQ $.
 
   $( Theorem *5.17 of [WhiteheadRussell] p. 124.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 3-Jan-2013.) $)
@@ -15084,10 +15112,10 @@ $)
     UEUICUBAFHUIFABIUBAJKLCUIMUBACNOUDUHUCCUGACCUFGUGCDPCUFQRSTUCUHQUA $.
 
   $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
-     of Lukasiewicz.  Using ~ dfor2 , we can see that this essentially
+     of Lukasiewicz.  Using ~ dfor2dc , we can see that this (classically)
      expresses "disjunction commutes."  Theorem *2.69 of [WhiteheadRussell]
-     p. 108.  Our proofs of both ~ dfor2 and ~ looinv are classical, rather
-     than intuitionistic, results.  (Contributed by NM, 12-Aug-2004.) $)
+     p. 108.  Our proof of ~ looinv is a classical, rather than intuitionistic,
+     result.  (Contributed by NM, 12-Aug-2004.) $)
   looinv $p |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) $=
     ( wi imim1 peirce syl6 ) ABCZBCBACGACAGBADABEF $.
 
@@ -15284,18 +15312,6 @@ $)
      3-Jan-2005.) $)
   pm4.55 $p |- ( -. ( -. ph /\ ps ) <-> ( ph \/ -. ps ) ) $=
     ( wn wo wa pm4.54 con2bii bicomi ) ABCDZACBEZCJIABFGH $.
-
-  $( Logical 'or' expressed in terms of implication only.  Theorem *5.25 of
-     [WhiteheadRussell] p. 124.  (Contributed by NM, 12-Aug-2004.)  (Proof
-     shortened by Wolf Lammen, 20-Oct-2012.) $)
-  dfor2 $p |- ( ( ph \/ ps ) <-> ( ( ph -> ps ) -> ps ) ) $=
-    ( wo wi pm2.62 pm2.68 impbii ) ABCABDBDABEABFG $.
-
-  $( Simplify an implication between implications.  (Contributed by Paul
-     Chapman, 17-Nov-2012.)  (Proof shortened by Wolf Lammen, 3-Apr-2013.) $)
-  imimorb $p |- ( ( ( ps -> ch ) -> ( ph -> ch ) ) <->
-                  ( ph -> ( ps \/ ch ) ) ) $=
-    ( wi wo bi2.04 dfor2 imbi2i bitr4i ) BCDZACDDAJCDZDABCEZDJACFLKABCGHI $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
