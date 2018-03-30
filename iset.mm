@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Mar-2018
+$( iset.mm - Version of 29-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6012,11 +6012,6 @@ $)
       ( wi wn com12 ja ) BCGADBCADGABHDEIACDFIJI $.
   $}
 
-  $( Theorem *2.6 of [WhiteheadRussell] p. 107.  (Contributed by NM,
-     3-Jan-2005.)  (Revised by NM, 22-Sep-2013.) $)
-  pm2.6 $p |- ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) $=
-    ( wn wi id idd jad ) ACBDZABBHEHBFG $.
-
   $( Case elimination for a decidable proposition.  Based on theorem *2.6 of
      [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon, 25-Mar-2018.) $)
   pm2.6dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) ) $=
@@ -6044,11 +6039,11 @@ $)
       LM $.
   $}
 
-  $( Theorem *2.61 of [WhiteheadRussell] p. 107.  Useful for eliminating an
-     antecedent.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
-     Lammen, 22-Sep-2013.) $)
-  pm2.61 $p |- ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ps ) ) $=
-    ( wn wi pm2.6 com12 ) ACBDABDBABEF $.
+  $( Case elimination for a decidable proposition.  Based on theorem *2.61 of
+     [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon, 29-Mar-2018.) $)
+  pm2.61dc $p |- ( DECID ph ->
+                   ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ps ) ) ) $=
+    ( wdc wn wi pm2.6dc com23 ) ACADBEABEBABFG $.
 
   ${
     pm2.61i.1 $e |- ( ph -> ps ) $.
@@ -15249,8 +15244,9 @@ $)
     ( wn notnot1 orri ) AABZBBECD $.
 
   $( Theorem *4.83 of [WhiteheadRussell] p. 122.  As with other case
-     elimination theorems like ~ pm2.61 , it does not hold intuitionistically
-     (Contributed by NM, 3-Jan-2005.) $)
+     elimination theorems it does not hold intuitionistically (unless the
+     proposition is known to be decidable, as in ~ pm2.61dc ).  (Contributed by
+     NM, 3-Jan-2005.) $)
   pm4.83 $p |- ( ( ( ph -> ps ) /\ ( -. ph -> ps ) ) <-> ps ) $=
     ( wn wo wi wa exmid a1bi jaob bitr2i ) BAACZDZBEABEKBEFLBAGHABKIJ $.
 
