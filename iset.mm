@@ -5900,11 +5900,6 @@ $)
       ( wn notnot1 syl6 con4d ) ABCEZABECIEDCFGH $.
   $}
 
-  $( Contraposition.  Theorem *2.15 of [WhiteheadRussell] p. 102.  (Contributed
-     by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen, 12-Feb-2013.) $)
-  con1 $p |- ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) $=
-    ( wn wi id con1d ) ACBDZABGEF $.
-
   $( Contraposition for a decidable proposition.  Based on theorem *2.15 of
      [WhiteheadRussell] p. 102.  (Contributed by Jim Kingdon, 29-Mar-2018.) $)
   con1dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) ) $=
@@ -6179,10 +6174,12 @@ $)
       KAFJLBCGHI $.
   $}
 
-  $( Contraposition.  Bidirectional version of ~ con1 .  (Contributed by NM,
+  $( Contraposition.  Bidirectional version of ~ con1dc .  (Contributed by NM,
      5-Aug-1993.) $)
-  con1b $p |- ( ( -. ph -> ps ) <-> ( -. ps -> ph ) ) $=
-    ( wn wi con1 impbii ) ACBDBCADABEBAEF $.
+  con1bdc $p |- ( DECID ph -> ( DECID ps ->
+                  ( ( -. ph -> ps ) <-> ( -. ps -> ph ) ) ) ) $=
+    ( wdc wn wi wb wa con1dc adantr adantl impbid ex ) ACZBCZADBEZBDA
+    EZFMNGOPMOPENABHINPOEMBAHJKL $.
 
   ${
     con4bii.1 $e |- ( -. ph <-> -. ps ) $.
