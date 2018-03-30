@@ -6306,10 +6306,11 @@ $)
       ( wo wn wi df-or mpbir ) ABDAEBFCABGH $.
   $}
 
-  $( Theorem *2.25 of [WhiteheadRussell] p. 104.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm2.25 $p |- ( ph \/ ( ( ph \/ ps ) -> ps ) ) $=
-    ( wo wi orel1 orri ) AABCBDABEF $.
+  $( Elimination of disjunction based on a disjunction, for a decidable
+     proposition.  Based on theorem *2.25 of [WhiteheadRussell] p. 104.
+     (Contributed by NM, 3-Jan-2005.) $)
+  pm2.25dc $p |- ( DECID ph -> ( ph \/ ( ( ph \/ ps ) -> ps ) ) ) $=
+    ( wdc wn wo wi df-dc orel1 orim2i sylbi ) ACAADZEAABEBFZEAGKLAABHIJ $.
 
   $( Concluding disjunction from implication for a decidable proposition.
      Based on theorem *2.68 of [WhiteheadRussell] p. 108.  Converse of ~ pm2.62
