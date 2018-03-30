@@ -5905,6 +5905,12 @@ $)
   con1 $p |- ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) $=
     ( wn wi id con1d ) ACBDZABGEF $.
 
+  $( Contraposition for a decidable proposition.  Based on theorem *2.15 of
+     [WhiteheadRussell] p. 102.  (Contributed by Jim Kingdon, 29-Mar-2018.) $)
+  con1dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) ) $=
+    ( wn wi wdc notnot1 imim2i condc syl5 ) ACZBDJBCZCZDAEKADBLJBFGAK
+    HI $.
+
   ${
     mt3d.1 $e |- ( ph -> -. ch ) $.
     mt3d.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
@@ -5966,6 +5972,12 @@ $)
      Lammen, 21-Jul-2012.) $)
   simplim $p |- ( -. ( ph -> ps ) -> ph ) $=
     ( wi pm2.21 con1i ) AABCABDE $.
+
+  $( Simplification for a decidable proposition.  Similar to Theorem *3.26
+     (Simp) of [WhiteheadRussell] p. 112.  (Contributed by Jim Kingdon,
+     29-Mar-2018.) $)
+  simplimdc $p |- ( DECID ph -> ( -. ( ph -> ps ) -> ph ) ) $=
+    ( wdc wn wi pm2.21 con1dc mpi ) ACADABEZEIDAEABFAIGH $.
 
   ${
     pm2.61d.1 $e |- ( ph -> ( ps -> ch ) ) $.
@@ -6089,10 +6101,12 @@ $)
       ( con4d impbid ) ABCDABCEFG $.
   $}
 
-  $( Theorem *2.5 of [WhiteheadRussell] p. 107.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 9-Oct-2012.) $)
-  pm2.5 $p |- ( -. ( ph -> ps ) -> ( -. ph -> ps ) ) $=
-    ( wi wn simplim pm2.24d ) ABCDABABEF $.
+  $( Negating an implication for a decidable antecedent.  Based on theorem *2.5
+     of [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon,
+     29-Mar-2018.) $)
+  pm2.5dc $p |- ( DECID ph -> ( -. ( ph -> ps ) -> ( -. ph -> ps ) ) ) $=
+    ( wdc wi wn wa simplimdc imp pm2.24d ex ) ACZABDEZAEBDKLFABKLAABG
+    HIJ $.
 
   $( Theorem *2.521 of [WhiteheadRussell] p. 107.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 8-Oct-2012.) $)
@@ -6404,10 +6418,13 @@ $)
   pm2.26 $p |- ( -. ph \/ ( ( ph -> ps ) -> ps ) ) $=
     ( wi pm2.27 imori ) AABCBCABDE $.
 
-  $( Theorem *5.11 of [WhiteheadRussell] p. 123.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm5.11 $p |- ( ( ph -> ps ) \/ ( -. ph -> ps ) ) $=
-    ( wi wn pm2.5 orri ) ABCADBCABEF $.
+  $( A decidable proposition or its negation implies a second proposition.
+     Based on theorem *5.11 of [WhiteheadRussell] p. 123.  (Contributed by Jim
+     Kingdon, 29-Mar-2018.) $)
+  pm5.11dc $p |- ( DECID ph -> ( DECID ps ->
+                   ( ( ph -> ps ) \/ ( -. ph -> ps ) ) ) ) $=
+    ( wdc wi wn wo dcim pm2.5dc pm2.54dc syl5com syld ) ACZBCABDZCZMA
+    EBDZFZABGLMEODNPABHMOIJK $.
 
   $( Theorem *5.12 of [WhiteheadRussell] p. 123.  (Contributed by NM,
      3-Jan-2005.) $)
