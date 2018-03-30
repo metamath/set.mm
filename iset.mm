@@ -5933,14 +5933,6 @@ $)
   $}
 
   ${
-    nsyl4.1 $e |- ( ph -> ps ) $.
-    nsyl4.2 $e |- ( -. ph -> ch ) $.
-    $( A negated syllogism inference.  (Contributed by NM, 15-Feb-1996.) $)
-    nsyl4 $p |- ( -. ch -> ps ) $=
-      ( wn con1i syl ) CFABACEGDH $.
-  $}
-
-  ${
     con4i.1 $e |- ( -. ph -> -. ps ) $.
     $( Inference rule derived from axiom ~ ax-3 .  (Contributed by NM,
        5-Aug-1993.)  (Proof shortened by Wolf Lammen, 21-Jun-2013.) $)
