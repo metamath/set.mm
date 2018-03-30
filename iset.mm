@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Mar-2018
+$( iset.mm - Version of 30-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6423,10 +6423,12 @@ $)
     ( wdc wi wn wo dcim pm2.5dc pm2.54dc syl5com syld ) ACZBCABDZCZMA
     EBDZFZABGLMEODNPABHMOIJK $.
 
-  $( Theorem *5.12 of [WhiteheadRussell] p. 123.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm5.12 $p |- ( ( ph -> ps ) \/ ( ph -> -. ps ) ) $=
-    ( wi wn pm2.51 orri ) ABCABDCABEF $.
+  $( Excluded middle with antecedents for a decidable consequent.  Based on
+     theorem *5.12 of [WhiteheadRussell] p. 123.  (Contributed by Jim Kingdon,
+     30-Mar-2018.) $)
+  pm5.12dc $p |- ( DECID ps -> ( ( ph -> ps ) \/ ( ph -> -. ps ) ) ) $=
+    ( wdc wn wo wi df-dc ax-1 orim12i sylbi ) BCBBDZEABFZAKFZEBGBLKMB
+    AHKAHIJ $.
 
   $( Theorem *5.14 of [WhiteheadRussell] p. 123.  (Contributed by NM,
      3-Jan-2005.) $)
