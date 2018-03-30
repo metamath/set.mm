@@ -6443,11 +6443,13 @@ $)
   pm5.13dc $p |- ( DECID ps -> ( ( ph -> ps ) \/ ( ps -> ph ) ) ) $=
     ( pm5.14dc ) ABAC $.
 
-  $( Theorem *5.55 of [WhiteheadRussell] p. 125.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 20-Jan-2013.) $)
-  pm5.55 $p |- ( ( ( ph \/ ps ) <-> ph ) \/ ( ( ph \/ ps ) <-> ps ) ) $=
-    ( wo wb biort bicomd wn biorf nsyl4 con1i orri ) ABCZADZLBDZNMAMNAALABEFAGB
-    LABHFIJK $.
+  $( A disjunction is equivalent to one of its disjuncts, given a decidable
+     disjunct.  Based on theorem *5.55 of [WhiteheadRussell] p. 125.
+     (Contributed by Jim Kingdon, 30-Mar-2018.) $)
+  pm5.55dc $p |- ( DECID ph ->
+        ( ( ( ph \/ ps ) <-> ph ) \/ ( ( ph \/ ps ) <-> ps ) ) ) $=
+    ( wdc wn wo wb df-dc biort bicomd biorf orim12i sylbi ) ACAADZEAB
+    EZAFZNBFZEAGAOMPAANABHIMBNABJIKL $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
