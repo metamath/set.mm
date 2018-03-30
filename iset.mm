@@ -6430,15 +6430,18 @@ $)
     ( wdc wn wo wi df-dc ax-1 orim12i sylbi ) BCBBDZEABFZAKFZEBGBLKMB
     AHKAHIJ $.
 
-  $( Theorem *5.14 of [WhiteheadRussell] p. 123.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm5.14 $p |- ( ( ph -> ps ) \/ ( ps -> ch ) ) $=
-    ( wi wn ax-1 con3i pm2.21d orri ) ABDZBCDJEBCBJBAFGHI $.
+  $( A decidable proposition is implied by or implies other propositions.
+     Based on theorem *5.14 of [WhiteheadRussell] p. 123.  (Contributed by Jim
+     Kingdon, 30-Mar-2018.) $)
+  pm5.14dc $p |- ( DECID ps -> ( ( ph -> ps ) \/ ( ps -> ch ) ) ) $=
+    ( wdc wn wo wi df-dc ax-1 ax-in2 orim12i sylbi ) BDBBEZFABGZBCGZF
+    BHBNMOBAIBCJKL $.
 
-  $( Theorem *5.13 of [WhiteheadRussell] p. 123.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 14-Nov-2012.) $)
-  pm5.13 $p |- ( ( ph -> ps ) \/ ( ps -> ph ) ) $=
-    ( pm5.14 ) ABAC $.
+  $( An implication holds in at least one direction, where one proposition is
+     decidable.  Based on theorem *5.13 of [WhiteheadRussell] p. 123.
+     (Contributed by Jim Kingdon, 30-Mar-2018.) $)
+  pm5.13dc $p |- ( DECID ps -> ( ( ph -> ps ) \/ ( ps -> ph ) ) ) $=
+    ( pm5.14dc ) ABAC $.
 
   $( Theorem *5.55 of [WhiteheadRussell] p. 125.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 20-Jan-2013.) $)
