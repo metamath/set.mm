@@ -6301,14 +6301,6 @@ $)
   dfordc $p |- ( DECID ph -> ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) ) $=
     ( wdc wo wn wi pm2.53 pm2.54dc impbid2 ) ACABDAEBFABGABHI $.
 
-  ${
-    orri.1 $e |- ( -. ph -> ps ) $.
-    $( Infer implication from disjunction.  (Contributed by NM,
-       11-Jun-1994.) $)
-    orri $p |- ( ph \/ ps ) $=
-      ( wo wn wi df-or mpbir ) ABDAEBFCABGH $.
-  $}
-
   $( Elimination of disjunction based on a disjunction, for a decidable
      proposition.  Based on theorem *2.25 of [WhiteheadRussell] p. 104.
      (Contributed by NM, 3-Jan-2005.) $)
@@ -14067,6 +14059,16 @@ $(
   classical logic, but probably intuitionistic proofs can be found
   for much of it.
 $)
+
+  ${
+    orri.1 $e |- ( -. ph -> ps ) $.
+    $( Infer implication from disjunction.  This is a classical, not an
+       intuitionistic, result.  See ~ pm2.54dc for a version which holds
+       intuitionistically, by restricting itself to decidable propositions.
+       (Contributed by NM, 11-Jun-1994.) $)
+    orri $p |- ( ph \/ ps ) $=
+      ( wo wn wi df-or mpbir ) ABDAEBFCABGH $.
+  $}
 
   $( Classical definition of existential quantification.  This does not hold
      intuitionistically, so it depends on ~ ax-3 for its proof.  Definition of
