@@ -6466,10 +6466,13 @@ $)
                 ( ph -> ( ps <-> ch ) ) ) $=
     ( wi wa pm5.1 pm5.74rd ) ABDZACDZEABCHIFG $.
 
-  $( Theorem *5.54 of [WhiteheadRussell] p. 125.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 7-Nov-2013.) $)
-  pm5.54 $p |- ( ( ( ph /\ ps ) <-> ph ) \/ ( ( ph /\ ps ) <-> ps ) ) $=
-    ( wa wb iba bicomd adantl pm5.21ni orri ) ABCZADZJBDJKBBKABAJBAEFZGLHI $.
+  $( A conjunction is equivalent to one of its conjuncts, given a decidable
+     conjunct.  Based on theorem *5.54 of [WhiteheadRussell] p. 125.
+     (Contributed by Jim Kingdon, 30-Mar-2018.) $)
+  pm5.54dc $p |- ( DECID ph ->
+                   ( ( ( ph /\ ps ) <-> ph ) \/ ( ( ph /\ ps ) <-> ps ) ) ) $=
+    ( wdc wa wb wn wo df-dc ax-ia2 ax-ia3 impbid2 ax-ia1 ax-in2 orim12i orcomd
+    sylbi ) ACZABDZBEZRAEZQAAFZGSTGAHASUATARBABIABJKUARAABLARMKNPO $.
 
   ${
     baib.1 $e |- ( ph <-> ( ps /\ ch ) ) $.
