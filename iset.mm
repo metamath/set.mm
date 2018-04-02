@@ -1,4 +1,4 @@
-$( iset.mm - Version of 30-Mar-2018
+$( iset.mm - Version of 1-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6380,19 +6380,22 @@ $)
     ( wn wb wi wa wo bicom dfbi2 orcom df-or bitr2i imnan anbi12i 3bitrri ) ABC
     ZDPADPAEZAPEZFABGZABFCZFAPHPAIQSRTSBAGQABJBAKLABMNO $.
 
-  $( Disjunction distributes over implication.  The forward direction,
-     ~ pm2.76 , is valid intuitionistically.  The reverse direction is
-     ~ pm2.85 .  (Contributed by Wolf Lammen, 5-Jan-2013.) $)
-  orimdi $p |- ( ( ph \/ ( ps -> ch ) ) <->
-                ( ( ph \/ ps ) -> ( ph \/ ch ) ) ) $=
-    ( wn wi wo imdi df-or imbi12i 3bitr4i ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCGAL
-    HOMPNABHACHIJ $.
+  $( Reverse distribution of disjunction over implication, given decidability.
+     Based on theorem *2.85 of [WhiteheadRussell] p. 108.  (Contributed by Jim
+     Kingdon, 1-Apr-2018.) $)
+  pm2.85dc $p |- ( DECID ph -> ( ( ( ph \/ ps ) -> ( ph \/ ch ) ) ->
+                ( ph \/ ( ps -> ch ) ) ) ) $=
+    ( wdc wn wo df-dc orc a1d olc imim1i orel1 syl9r syl6 jaoi sylbi
+    wi ) ADAAEZFABFZACFZQZABCQZFZQZAGAUDRAUCUAAUBHIRUAUBUCUABTRCBSTBA
+    JKACLMUBAJNOP $.
 
-  $( Theorem *2.85 of [WhiteheadRussell] p. 108.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Jan-2013.) $)
-  pm2.85 $p |- ( ( ( ph \/ ps ) -> ( ph \/ ch ) ) ->
-                ( ph \/ ( ps -> ch ) ) ) $=
-    ( wi wo orimdi biimpri ) ABCDEABEACEDABCFG $.
+  $( Disjunction distributes over implication.  The forward direction,
+     ~ pm2.76 , is valid intuitionistically.  The reverse direction holds if
+     ` ph ` is decidable, as can be seen at ~ pm2.85dc .  (Contributed by Jim
+     Kingdon, 1-Apr-2018.) $)
+  orimdidc $p |- ( DECID ph -> ( ( ph \/ ( ps -> ch ) ) <->
+                ( ( ph \/ ps ) -> ( ph \/ ch ) ) ) ) $=
+    ( wdc wi wo pm2.76 pm2.85dc impbid2 ) ADABCEFABFACFEABCGABCHI $.
 
   $( Theorem *2.26 of [WhiteheadRussell] p. 104.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Nov-2012.) $)
