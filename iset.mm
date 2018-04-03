@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Mar-2018
+$( iset.mm - Version of 30-Mar-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5900,10 +5900,11 @@ $)
       ( wn notnot1 syl6 con4d ) ABCEZABECIEDCFGH $.
   $}
 
-  $( Contraposition.  Theorem *2.15 of [WhiteheadRussell] p. 102.  (Contributed
-     by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen, 12-Feb-2013.) $)
-  con1 $p |- ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) $=
-    ( wn wi id con1d ) ACBDZABGEF $.
+  $( Contraposition for a decidable proposition.  Based on theorem *2.15 of
+     [WhiteheadRussell] p. 102.  (Contributed by Jim Kingdon, 29-Mar-2018.) $)
+  con1dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) ) $=
+    ( wn wi wdc notnot1 imim2i condc syl5 ) ACZBDJBCZCZDAEKADBLJBFGAK
+    HI $.
 
   ${
     mt3d.1 $e |- ( ph -> -. ch ) $.
@@ -5929,14 +5930,6 @@ $)
        19-Jun-2013.) $)
     con1i $p |- ( -. ps -> ph ) $=
       ( wn id nsyl2 ) BDZBAGECF $.
-  $}
-
-  ${
-    nsyl4.1 $e |- ( ph -> ps ) $.
-    nsyl4.2 $e |- ( -. ph -> ch ) $.
-    $( A negated syllogism inference.  (Contributed by NM, 15-Feb-1996.) $)
-    nsyl4 $p |- ( -. ch -> ps ) $=
-      ( wn con1i syl ) CFABACEGDH $.
   $}
 
   ${
@@ -5966,6 +5959,12 @@ $)
      Lammen, 21-Jul-2012.) $)
   simplim $p |- ( -. ( ph -> ps ) -> ph ) $=
     ( wi pm2.21 con1i ) AABCABDE $.
+
+  $( Simplification for a decidable proposition.  Similar to Theorem *3.26
+     (Simp) of [WhiteheadRussell] p. 112.  (Contributed by Jim Kingdon,
+     29-Mar-2018.) $)
+  simplimdc $p |- ( DECID ph -> ( -. ( ph -> ps ) -> ph ) ) $=
+    ( wdc wn wi pm2.21 con1dc mpi ) ACADABEZEIDAEABFAIGH $.
 
   ${
     pm2.61d.1 $e |- ( ph -> ( ps -> ch ) ) $.
@@ -6012,11 +6011,6 @@ $)
       ( wi wn com12 ja ) BCGADBCADGABHDEIACDFIJI $.
   $}
 
-  $( Theorem *2.6 of [WhiteheadRussell] p. 107.  (Contributed by NM,
-     3-Jan-2005.)  (Revised by NM, 22-Sep-2013.) $)
-  pm2.6 $p |- ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) $=
-    ( wn wi id idd jad ) ACBDZABBHEHBFG $.
-
   $( Case elimination for a decidable proposition.  Based on theorem *2.6 of
      [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon, 25-Mar-2018.) $)
   pm2.6dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) ) $=
@@ -6044,11 +6038,11 @@ $)
       LM $.
   $}
 
-  $( Theorem *2.61 of [WhiteheadRussell] p. 107.  Useful for eliminating an
-     antecedent.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
-     Lammen, 22-Sep-2013.) $)
-  pm2.61 $p |- ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ps ) ) $=
-    ( wn wi pm2.6 com12 ) ACBDABDBABEF $.
+  $( Case elimination for a decidable proposition.  Based on theorem *2.61 of
+     [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon, 29-Mar-2018.) $)
+  pm2.61dc $p |- ( DECID ph ->
+                   ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ps ) ) ) $=
+    ( wdc wn wi pm2.6dc com23 ) ACADBEABEBABFG $.
 
   ${
     pm2.61i.1 $e |- ( ph -> ps ) $.
@@ -6094,10 +6088,12 @@ $)
       ( con4d impbid ) ABCDABCEFG $.
   $}
 
-  $( Theorem *2.5 of [WhiteheadRussell] p. 107.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 9-Oct-2012.) $)
-  pm2.5 $p |- ( -. ( ph -> ps ) -> ( -. ph -> ps ) ) $=
-    ( wi wn simplim pm2.24d ) ABCDABABEF $.
+  $( Negating an implication for a decidable antecedent.  Based on theorem *2.5
+     of [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon,
+     29-Mar-2018.) $)
+  pm2.5dc $p |- ( DECID ph -> ( -. ( ph -> ps ) -> ( -. ph -> ps ) ) ) $=
+    ( wdc wi wn wa simplimdc imp pm2.24d ex ) ACZABDEZAEBDKLFABKLAABG
+    HIJ $.
 
   $( Theorem *2.521 of [WhiteheadRussell] p. 107.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 8-Oct-2012.) $)
@@ -6170,10 +6166,12 @@ $)
       KAFJLBCGHI $.
   $}
 
-  $( Contraposition.  Bidirectional version of ~ con1 .  (Contributed by NM,
+  $( Contraposition.  Bidirectional version of ~ con1dc .  (Contributed by NM,
      5-Aug-1993.) $)
-  con1b $p |- ( ( -. ph -> ps ) <-> ( -. ps -> ph ) ) $=
-    ( wn wi con1 impbii ) ACBDBCADABEBAEF $.
+  con1bdc $p |- ( DECID ph -> ( DECID ps ->
+                  ( ( -. ph -> ps ) <-> ( -. ps -> ph ) ) ) ) $=
+    ( wdc wn wi wb wa con1dc adantr adantl impbid ex ) ACZBCZADBEZBDA
+    EZFMNGOPMOPENABHINPOEMBAHJKL $.
 
   ${
     con4bii.1 $e |- ( -. ph <-> -. ps ) $.
@@ -6303,18 +6301,11 @@ $)
   dfordc $p |- ( DECID ph -> ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) ) $=
     ( wdc wo wn wi pm2.53 pm2.54dc impbid2 ) ACABDAEBFABGABHI $.
 
-  ${
-    orri.1 $e |- ( -. ph -> ps ) $.
-    $( Infer implication from disjunction.  (Contributed by NM,
-       11-Jun-1994.) $)
-    orri $p |- ( ph \/ ps ) $=
-      ( wo wn wi df-or mpbir ) ABDAEBFCABGH $.
-  $}
-
-  $( Theorem *2.25 of [WhiteheadRussell] p. 104.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm2.25 $p |- ( ph \/ ( ( ph \/ ps ) -> ps ) ) $=
-    ( wo wi orel1 orri ) AABCBDABEF $.
+  $( Elimination of disjunction based on a disjunction, for a decidable
+     proposition.  Based on theorem *2.25 of [WhiteheadRussell] p. 104.
+     (Contributed by NM, 3-Jan-2005.) $)
+  pm2.25dc $p |- ( DECID ph -> ( ph \/ ( ( ph \/ ps ) -> ps ) ) ) $=
+    ( wdc wn wo wi df-dc orel1 orim2i sylbi ) ACAADZEAABEBFZEAGKLAABHIJ $.
 
   $( Concluding disjunction from implication for a decidable proposition.
      Based on theorem *2.68 of [WhiteheadRussell] p. 108.  Converse of ~ pm2.62
@@ -6408,31 +6399,41 @@ $)
   pm2.26 $p |- ( -. ph \/ ( ( ph -> ps ) -> ps ) ) $=
     ( wi pm2.27 imori ) AABCBCABDE $.
 
-  $( Theorem *5.11 of [WhiteheadRussell] p. 123.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm5.11 $p |- ( ( ph -> ps ) \/ ( -. ph -> ps ) ) $=
-    ( wi wn pm2.5 orri ) ABCADBCABEF $.
+  $( A decidable proposition or its negation implies a second proposition.
+     Based on theorem *5.11 of [WhiteheadRussell] p. 123.  (Contributed by Jim
+     Kingdon, 29-Mar-2018.) $)
+  pm5.11dc $p |- ( DECID ph -> ( DECID ps ->
+                   ( ( ph -> ps ) \/ ( -. ph -> ps ) ) ) ) $=
+    ( wdc wi wn wo dcim pm2.5dc pm2.54dc syl5com syld ) ACZBCABDZCZMA
+    EBDZFZABGLMEODNPABHMOIJK $.
 
-  $( Theorem *5.12 of [WhiteheadRussell] p. 123.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm5.12 $p |- ( ( ph -> ps ) \/ ( ph -> -. ps ) ) $=
-    ( wi wn pm2.51 orri ) ABCABDCABEF $.
+  $( Excluded middle with antecedents for a decidable consequent.  Based on
+     theorem *5.12 of [WhiteheadRussell] p. 123.  (Contributed by Jim Kingdon,
+     30-Mar-2018.) $)
+  pm5.12dc $p |- ( DECID ps -> ( ( ph -> ps ) \/ ( ph -> -. ps ) ) ) $=
+    ( wdc wn wo wi df-dc ax-1 orim12i sylbi ) BCBBDZEABFZAKFZEBGBLKMB
+    AHKAHIJ $.
 
-  $( Theorem *5.14 of [WhiteheadRussell] p. 123.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm5.14 $p |- ( ( ph -> ps ) \/ ( ps -> ch ) ) $=
-    ( wi wn ax-1 con3i pm2.21d orri ) ABDZBCDJEBCBJBAFGHI $.
+  $( A decidable proposition is implied by or implies other propositions.
+     Based on theorem *5.14 of [WhiteheadRussell] p. 123.  (Contributed by Jim
+     Kingdon, 30-Mar-2018.) $)
+  pm5.14dc $p |- ( DECID ps -> ( ( ph -> ps ) \/ ( ps -> ch ) ) ) $=
+    ( wdc wn wo wi df-dc ax-1 ax-in2 orim12i sylbi ) BDBBEZFABGZBCGZF
+    BHBNMOBAIBCJKL $.
 
-  $( Theorem *5.13 of [WhiteheadRussell] p. 123.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 14-Nov-2012.) $)
-  pm5.13 $p |- ( ( ph -> ps ) \/ ( ps -> ph ) ) $=
-    ( pm5.14 ) ABAC $.
+  $( An implication holds in at least one direction, where one proposition is
+     decidable.  Based on theorem *5.13 of [WhiteheadRussell] p. 123.
+     (Contributed by Jim Kingdon, 30-Mar-2018.) $)
+  pm5.13dc $p |- ( DECID ps -> ( ( ph -> ps ) \/ ( ps -> ph ) ) ) $=
+    ( pm5.14dc ) ABAC $.
 
-  $( Theorem *5.55 of [WhiteheadRussell] p. 125.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 20-Jan-2013.) $)
-  pm5.55 $p |- ( ( ( ph \/ ps ) <-> ph ) \/ ( ( ph \/ ps ) <-> ps ) ) $=
-    ( wo wb biort bicomd wn biorf nsyl4 con1i orri ) ABCZADZLBDZNMAMNAALABEFAGB
-    LABHFIJK $.
+  $( A disjunction is equivalent to one of its disjuncts, given a decidable
+     disjunct.  Based on theorem *5.55 of [WhiteheadRussell] p. 125.
+     (Contributed by Jim Kingdon, 30-Mar-2018.) $)
+  pm5.55dc $p |- ( DECID ph ->
+        ( ( ( ph \/ ps ) <-> ph ) \/ ( ( ph \/ ps ) <-> ps ) ) ) $=
+    ( wdc wn wo wb df-dc biort bicomd biorf orim12i sylbi ) ACAADZEAB
+    EZAFZNBFZEAGAOMPAANABHIMBNABJIKL $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -6457,10 +6458,13 @@ $)
                 ( ph -> ( ps <-> ch ) ) ) $=
     ( wi wa pm5.1 pm5.74rd ) ABDZACDZEABCHIFG $.
 
-  $( Theorem *5.54 of [WhiteheadRussell] p. 125.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 7-Nov-2013.) $)
-  pm5.54 $p |- ( ( ( ph /\ ps ) <-> ph ) \/ ( ( ph /\ ps ) <-> ps ) ) $=
-    ( wa wb iba bicomd adantl pm5.21ni orri ) ABCZADZJBDJKBBKABAJBAEFZGLHI $.
+  $( A conjunction is equivalent to one of its conjuncts, given a decidable
+     conjunct.  Based on theorem *5.54 of [WhiteheadRussell] p. 125.
+     (Contributed by Jim Kingdon, 30-Mar-2018.) $)
+  pm5.54dc $p |- ( DECID ph ->
+                   ( ( ( ph /\ ps ) <-> ph ) \/ ( ( ph /\ ps ) <-> ps ) ) ) $=
+    ( wdc wa wb wn wo df-dc ax-ia2 ax-ia3 impbid2 ax-ia1 ax-in2 orim12i orcomd
+    sylbi ) ACZABDZBEZRAEZQAAFZGSTGAHASUATARBABIABJKUARAABLARMKNPO $.
 
   ${
     baib.1 $e |- ( ph <-> ( ps /\ ch ) ) $.
@@ -14056,6 +14060,16 @@ $(
   for much of it.
 $)
 
+  ${
+    orri.1 $e |- ( -. ph -> ps ) $.
+    $( Infer implication from disjunction.  This is a classical, not an
+       intuitionistic, result.  See ~ pm2.54dc for a version which holds
+       intuitionistically, by restricting itself to decidable propositions.
+       (Contributed by NM, 11-Jun-1994.) $)
+    orri $p |- ( ph \/ ps ) $=
+      ( wo wn wi df-or mpbir ) ABDAEBFCABGH $.
+  $}
+
   $( Classical definition of existential quantification.  This does not hold
      intuitionistically, so it depends on ~ ax-3 for its proof.  Definition of
      [Margaris] p. 49.  (Contributed by NM, 2-Feb-2015.)  (Revised by Mario
@@ -15249,8 +15263,9 @@ $)
     ( wn notnot1 orri ) AABZBBECD $.
 
   $( Theorem *4.83 of [WhiteheadRussell] p. 122.  As with other case
-     elimination theorems like ~ pm2.61 , it does not hold intuitionistically
-     (Contributed by NM, 3-Jan-2005.) $)
+     elimination theorems it does not hold intuitionistically (unless the
+     proposition is known to be decidable, as in ~ pm2.61dc ).  (Contributed by
+     NM, 3-Jan-2005.) $)
   pm4.83 $p |- ( ( ( ph -> ps ) /\ ( -. ph -> ps ) ) <-> ps ) $=
     ( wn wo wi wa exmid a1bi jaob bitr2i ) BAACZDZBEABEKBEFLBAGHABKIJ $.
 
