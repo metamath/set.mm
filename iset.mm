@@ -6491,12 +6491,13 @@ $)
                 ( ph -> ( ps /\ ch ) ) ) ) $=
     ( wa wi jcab baibr ) ABCDEABEACEABCFG $.
 
-  $( Conjunction in antecedent versus disjunction in consequent.  Theorem *5.6
-     of [WhiteheadRussell] p. 125.  (Contributed by NM, 8-Jun-1994.)  (Revised
-     by NM, 22-Mar-2005.) $)
-  pm5.6 $p |- ( ( ( ph /\ -. ps ) -> ch ) <-> ( ph -> ( ps \/ ch ) ) ) $=
-    ( wn wa wi wo impexp df-or imbi2i bitr4i ) ABDZECFALCFZFABCGZFALCHNMABCIJK
-    $.
+  $( Conjunction in antecedent versus disjunction in consequent, for a
+     decidable proposition.  Based on theorem *5.6 of [WhiteheadRussell]
+     p. 125.  (Contributed by Jim Kingdon, 2-Apr-2018.) $)
+  pm5.6dc $p |- ( DECID ps ->
+        ( ( ( ph /\ -. ps ) -> ch ) <-> ( ph -> ( ps \/ ch ) ) ) ) $=
+    ( wdc wo wi wn wa dfordc imbi2d impexp syl6rbbr ) BDZABCEZFABGZCF
+    ZFAOHCFMNPABCIJAOCKL $.
 
   ${
     orcanai.1 $e |- ( ph -> ( ps \/ ch ) ) $.
