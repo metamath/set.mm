@@ -1,4 +1,4 @@
-$( iset.mm - Version of 1-Apr-2018
+$( iset.mm - Version of 2-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6661,23 +6661,25 @@ $)
   biantr $p |- ( ( ( ph <-> ps ) /\ ( ch <-> ps ) ) -> ( ph <-> ch ) ) $=
     ( wb id bibi2d biimparc ) CBDZACDABDHCBAHEFG $.
 
-  $( Disjunction distributes over the biconditional.  An axiom of system DS in
-     Vladimir Lifschitz, "On calculational proofs" (1998),
+  $( Disjunction distributes over the biconditional, for a decidable
+     proposition.  Based on an axiom of system DS in Vladimir Lifschitz, "On
+     calculational proofs" (1998),
      ~ http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.25.3384 .
-     (Contributed by NM, 8-Jan-2005.)  (Proof shortened by Wolf Lammen,
-     4-Feb-2013.) $)
-  orbidi $p |- ( ( ph \/ ( ps <-> ch ) ) <->
-                ( ( ph \/ ps ) <-> ( ph \/ ch ) ) ) $=
-    ( wn wb wi wo pm5.74 df-or bibi12i 3bitr4i ) ADZBCEZFLBFZLCFZEAMGABGZACGZEL
-    BCHAMIPNQOABIACIJK $.
+     (Contributed by Jim Kingdon, 2-Apr-2018.) $)
+  orbididc $p |- ( DECID ph -> ( ( ph \/ ( ps <-> ch ) ) <->
+                ( ( ph \/ ps ) <-> ( ph \/ ch ) ) ) ) $=
+    ( wdc wi wo wa orimdidc anbi12d dfbi2 orbi2i ordi bitri 3bitr4g
+    wb ) ADZABCEZFZACBEZFZGZABFZACFZEZUCUBEZGABCOZFZUBUCOPRUDTUEABCHA
+    CBHIUGAQSGZFUAUFUHABCJKAQSLMUBUCJN $.
 
-  $( Disjunction distributes over the biconditional.  Theorem *5.7 of
-     [WhiteheadRussell] p. 125.  This theorem is similar to ~ orbidi .
-     (Contributed by Roy F. Longton, 21-Jun-2005.) $)
-  pm5.7 $p |- ( ( ( ph \/ ch ) <-> ( ps \/ ch ) ) <->
-               ( ch \/ ( ph <-> ps ) ) ) $=
-    ( wb wo orbidi orcom bibi12i bitr2i ) CABDECAEZCBEZDACEZBCEZDCABFJLKMCAGCBG
-    HI $.
+  $( Disjunction distributes over the biconditional, for a decidable
+     proposition.  Based on theorem *5.7 of [WhiteheadRussell] p. 125.  This
+     theorem is similar to ~ orbididc .  (Contributed by Jim Kingdon,
+     2-Apr-2018.) $)
+  pm5.7dc $p |- ( DECID ch -> ( ( ( ph \/ ch ) <-> ( ps \/ ch ) ) <->
+               ( ch \/ ( ph <-> ps ) ) ) ) $=
+    ( wdc wb wo orbididc orcom bibi12i syl6rbb ) CDCABEFCAFZCBFZEACFZ
+    BCFZECABGKMLNCAHCBHIJ $.
 
   $( Dijkstra-Scholten's Golden Rule for calculational proofs.  (Contributed by
      NM, 10-Jan-2005.) $)
