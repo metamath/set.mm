@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Apr-2018
+$( iset.mm - Version of 4-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6134,6 +6134,11 @@ $)
   con2bi $p |- ( ( ph <-> -. ps ) <-> ( ps <-> -. ph ) ) $=
     ( wn wb notbi notnot bibi2i bicom 3bitr2i ) ABCZDACZJCZDKBDBKDAJEBLKBFGKBHI
     $.
+
+  $( Contraposition.  (Contributed by Jim Kingdon, 4-Apr-2018.) $)
+  con1bidc $p |- ( DECID ph -> ( ( -. ph <-> ps ) -> ( -. ps <-> ph ) ) ) $=
+    ( wdc wn wb wi bi1 con1dc syl5 bi2 con2d a1i impbidd ) ACZADZBEZBDZAPOBFNQA
+    FOBGABHIPAQFFNPBAOBJKLM $.
 
   ${
     con2bid.1 $e |- ( ph -> ( ps <-> -. ch ) ) $.
