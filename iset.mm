@@ -6155,6 +6155,14 @@ $)
   $}
 
   ${
+    con1biddc.1 $e |- ( ph -> ( DECID ps -> ( -. ps <-> ch ) ) ) $.
+    $( A contraposition deduction.  (Contributed by Jim Kingdon,
+       4-Apr-2018.) $)
+    con1biddc $p |- ( ph -> ( DECID ps -> ( -. ch <-> ps ) ) ) $=
+      ( wdc wn wb con1bidc sylcom ) ABEBFCGCFBGDBCHI $.
+  $}
+
+  ${
     con1bii.1 $e |- ( -. ph <-> ps ) $.
     $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.)  (Proof
        shortened by Wolf Lammen, 13-Oct-2012.) $)
