@@ -6219,6 +6219,19 @@ $)
       ( wb bi2 syli wn bi1 con3d pm2.61d ) ABFZBCBMACABGDHBIMAICMABABJKEHL $.
   $}
 
+  $( Relationship between an equivalence and an equivalence with some negation,
+     for decidable propositions.  Based on theorem *5.18 of [WhiteheadRussell]
+     p. 124.  Given decidability, we can consider ` -. ( ph <-> -. ps ) ` to
+     represent "negated exclusive-or".  (Contributed by Jim Kingdon,
+     4-Apr-2018.) $)
+  pm5.18dc $p |- ( DECID ph -> ( DECID ps ->
+        ( ( ph <-> ps ) <-> -. ( ph <-> -. ps ) ) ) ) $=
+    ( wdc wn wo wb wi df-dc wa pm5.501 a1d con1biddc adantr bitr2d ex
+    imp dcn nbn2 syl5 jaoi sylbi ) ACAADZEBCZABFZABDZFZDZFZGZAHAUIUBA
+    UCUHAUCIUGBUDAUCUGBFABUFAUEUFFUCAUEJKLPABUDFUCABJMNOUBUCUHUBUCIUG
+    UEUDUBUCUGUEFZUCUECZUBUJBQUBUEUFUBUEDUFFUKAUERKLSPUBUEUDFUCABRMNO
+    TUA $.
+
   $( Definition of 'and' in terms of negation and implication (classical).
      (Contributed by NM, 31-Jan-2015.) $)
   df-an $p |- ( ( ph /\ ps ) <-> -. ( ph -> -. ps ) ) $=
