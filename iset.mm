@@ -1,4 +1,4 @@
-$( iset.mm - Version of 30-Mar-2018
+$( iset.mm - Version of 4-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6135,6 +6135,11 @@ $)
     ( wn wb notbi notnot bibi2i bicom 3bitr2i ) ABCZDACZJCZDKBDBKDAJEBLKBFGKBHI
     $.
 
+  $( Contraposition.  (Contributed by Jim Kingdon, 4-Apr-2018.) $)
+  con1bidc $p |- ( DECID ph -> ( ( -. ph <-> ps ) -> ( -. ps <-> ph ) ) ) $=
+    ( wdc wn wb wi bi1 con1dc syl5 bi2 con2d a1i impbidd ) ACZADZBEZBDZAPOBFNQA
+    FOBGABHIPAQFFNPBAOBJKLM $.
+
   ${
     con2bid.1 $e |- ( ph -> ( ps <-> -. ch ) ) $.
     $( A contraposition deduction.  (Contributed by NM, 15-Apr-1995.) $)
@@ -6147,6 +6152,14 @@ $)
     $( A contraposition deduction.  (Contributed by NM, 9-Oct-1999.) $)
     con1bid $p |- ( ph -> ( -. ch <-> ps ) ) $=
       ( wn bicomd con2bid ) ABCEACBABECDFGF $.
+  $}
+
+  ${
+    con1biddc.1 $e |- ( ph -> ( DECID ps -> ( -. ps <-> ch ) ) ) $.
+    $( A contraposition deduction.  (Contributed by Jim Kingdon,
+       4-Apr-2018.) $)
+    con1biddc $p |- ( ph -> ( DECID ps -> ( -. ch <-> ps ) ) ) $=
+      ( wdc wn wb con1bidc sylcom ) ABEBFCGCFBGDBCHI $.
   $}
 
   ${
@@ -6205,6 +6218,19 @@ $)
     bija $p |- ( ( ph <-> ps ) -> ch ) $=
       ( wb bi2 syli wn bi1 con3d pm2.61d ) ABFZBCBMACABGDHBIMAICMABABJKEHL $.
   $}
+
+  $( Relationship between an equivalence and an equivalence with some negation,
+     for decidable propositions.  Based on theorem *5.18 of [WhiteheadRussell]
+     p. 124.  Given decidability, we can consider ` -. ( ph <-> -. ps ) ` to
+     represent "negated exclusive-or".  (Contributed by Jim Kingdon,
+     4-Apr-2018.) $)
+  pm5.18dc $p |- ( DECID ph -> ( DECID ps ->
+        ( ( ph <-> ps ) <-> -. ( ph <-> -. ps ) ) ) ) $=
+    ( wdc wn wo wb wi df-dc wa pm5.501 a1d con1biddc adantr bitr2d ex
+    imp dcn nbn2 syl5 jaoi sylbi ) ACAADZEBCZABFZABDZFZDZFZGZAHAUIUBA
+    UCUHAUCIUGBUDAUCUGBFABUFAUEUFFUCAUEJKLPABUDFUCABJMNOUBUCUHUBUCIUG
+    UEUDUBUCUGUEFZUCUECZUBUJBQUBUEUFUBUEDUFFUKAUERKLSPUBUEUDFUCABRMNO
+    TUA $.
 
   $( Definition of 'and' in terms of negation and implication (classical).
      (Contributed by NM, 31-Jan-2015.) $)
@@ -6380,19 +6406,22 @@ $)
     ( wn wb wi wa wo bicom dfbi2 orcom df-or bitr2i imnan anbi12i 3bitrri ) ABC
     ZDPADPAEZAPEZFABGZABFCZFAPHPAIQSRTSBAGQABJBAKLABMNO $.
 
-  $( Disjunction distributes over implication.  The forward direction,
-     ~ pm2.76 , is valid intuitionistically.  The reverse direction is
-     ~ pm2.85 .  (Contributed by Wolf Lammen, 5-Jan-2013.) $)
-  orimdi $p |- ( ( ph \/ ( ps -> ch ) ) <->
-                ( ( ph \/ ps ) -> ( ph \/ ch ) ) ) $=
-    ( wn wi wo imdi df-or imbi12i 3bitr4i ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCGAL
-    HOMPNABHACHIJ $.
+  $( Reverse distribution of disjunction over implication, given decidability.
+     Based on theorem *2.85 of [WhiteheadRussell] p. 108.  (Contributed by Jim
+     Kingdon, 1-Apr-2018.) $)
+  pm2.85dc $p |- ( DECID ph -> ( ( ( ph \/ ps ) -> ( ph \/ ch ) ) ->
+                ( ph \/ ( ps -> ch ) ) ) ) $=
+    ( wdc wn wo df-dc orc a1d olc imim1i orel1 syl9r syl6 jaoi sylbi
+    wi ) ADAAEZFABFZACFZQZABCQZFZQZAGAUDRAUCUAAUBHIRUAUBUCUABTRCBSTBA
+    JKACLMUBAJNOP $.
 
-  $( Theorem *2.85 of [WhiteheadRussell] p. 108.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Jan-2013.) $)
-  pm2.85 $p |- ( ( ( ph \/ ps ) -> ( ph \/ ch ) ) ->
-                ( ph \/ ( ps -> ch ) ) ) $=
-    ( wi wo orimdi biimpri ) ABCDEABEACEDABCFG $.
+  $( Disjunction distributes over implication.  The forward direction,
+     ~ pm2.76 , is valid intuitionistically.  The reverse direction holds if
+     ` ph ` is decidable, as can be seen at ~ pm2.85dc .  (Contributed by Jim
+     Kingdon, 1-Apr-2018.) $)
+  orimdidc $p |- ( DECID ph -> ( ( ph \/ ( ps -> ch ) ) <->
+                ( ( ph \/ ps ) -> ( ph \/ ch ) ) ) ) $=
+    ( wdc wi wo pm2.76 pm2.85dc impbid2 ) ADABCEFABFACFEABCGABCHI $.
 
   $( Theorem *2.26 of [WhiteheadRussell] p. 104.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Nov-2012.) $)
@@ -6488,12 +6517,13 @@ $)
                 ( ph -> ( ps /\ ch ) ) ) ) $=
     ( wa wi jcab baibr ) ABCDEABEACEABCFG $.
 
-  $( Conjunction in antecedent versus disjunction in consequent.  Theorem *5.6
-     of [WhiteheadRussell] p. 125.  (Contributed by NM, 8-Jun-1994.)  (Revised
-     by NM, 22-Mar-2005.) $)
-  pm5.6 $p |- ( ( ( ph /\ -. ps ) -> ch ) <-> ( ph -> ( ps \/ ch ) ) ) $=
-    ( wn wa wi wo impexp df-or imbi2i bitr4i ) ABDZECFALCFZFABCGZFALCHNMABCIJK
-    $.
+  $( Conjunction in antecedent versus disjunction in consequent, for a
+     decidable proposition.  Based on theorem *5.6 of [WhiteheadRussell]
+     p. 125.  (Contributed by Jim Kingdon, 2-Apr-2018.) $)
+  pm5.6dc $p |- ( DECID ps ->
+        ( ( ( ph /\ -. ps ) -> ch ) <-> ( ph -> ( ps \/ ch ) ) ) ) $=
+    ( wdc wo wi wn wa dfordc imbi2d impexp syl6rbbr ) BDZABCEZFABGZCF
+    ZFAOHCFMNPABCIJAOCKL $.
 
   ${
     orcanai.1 $e |- ( ph -> ( ps \/ ch ) ) $.
@@ -6658,23 +6688,25 @@ $)
   biantr $p |- ( ( ( ph <-> ps ) /\ ( ch <-> ps ) ) -> ( ph <-> ch ) ) $=
     ( wb id bibi2d biimparc ) CBDZACDABDHCBAHEFG $.
 
-  $( Disjunction distributes over the biconditional.  An axiom of system DS in
-     Vladimir Lifschitz, "On calculational proofs" (1998),
+  $( Disjunction distributes over the biconditional, for a decidable
+     proposition.  Based on an axiom of system DS in Vladimir Lifschitz, "On
+     calculational proofs" (1998),
      ~ http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.25.3384 .
-     (Contributed by NM, 8-Jan-2005.)  (Proof shortened by Wolf Lammen,
-     4-Feb-2013.) $)
-  orbidi $p |- ( ( ph \/ ( ps <-> ch ) ) <->
-                ( ( ph \/ ps ) <-> ( ph \/ ch ) ) ) $=
-    ( wn wb wi wo pm5.74 df-or bibi12i 3bitr4i ) ADZBCEZFLBFZLCFZEAMGABGZACGZEL
-    BCHAMIPNQOABIACIJK $.
+     (Contributed by Jim Kingdon, 2-Apr-2018.) $)
+  orbididc $p |- ( DECID ph -> ( ( ph \/ ( ps <-> ch ) ) <->
+                ( ( ph \/ ps ) <-> ( ph \/ ch ) ) ) ) $=
+    ( wdc wi wo wa orimdidc anbi12d dfbi2 orbi2i ordi bitri 3bitr4g
+    wb ) ADZABCEZFZACBEZFZGZABFZACFZEZUCUBEZGABCOZFZUBUCOPRUDTUEABCHA
+    CBHIUGAQSGZFUAUFUHABCJKAQSLMUBUCJN $.
 
-  $( Disjunction distributes over the biconditional.  Theorem *5.7 of
-     [WhiteheadRussell] p. 125.  This theorem is similar to ~ orbidi .
-     (Contributed by Roy F. Longton, 21-Jun-2005.) $)
-  pm5.7 $p |- ( ( ( ph \/ ch ) <-> ( ps \/ ch ) ) <->
-               ( ch \/ ( ph <-> ps ) ) ) $=
-    ( wb wo orbidi orcom bibi12i bitr2i ) CABDECAEZCBEZDACEZBCEZDCABFJLKMCAGCBG
-    HI $.
+  $( Disjunction distributes over the biconditional, for a decidable
+     proposition.  Based on theorem *5.7 of [WhiteheadRussell] p. 125.  This
+     theorem is similar to ~ orbididc .  (Contributed by Jim Kingdon,
+     2-Apr-2018.) $)
+  pm5.7dc $p |- ( DECID ch -> ( ( ( ph \/ ch ) <-> ( ps \/ ch ) ) <->
+               ( ch \/ ( ph <-> ps ) ) ) ) $=
+    ( wdc wb wo orbididc orcom bibi12i syl6rbb ) CDCABEFCAFZCBFZEACFZ
+    BCFZECABGKMLNCAHCBHIJ $.
 
   $( Dijkstra-Scholten's Golden Rule for calculational proofs.  (Contributed by
      NM, 10-Jan-2005.) $)
