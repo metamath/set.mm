@@ -15414,9 +15414,10 @@ also part of this exclusive-or family. Many are expressed in terms
 of the biconditional and negation.
 $)
 
-  $( Two ways to express "exclusive or."  Theorem *5.22 of [WhiteheadRussell]
-     p. 124.  (Contributed by NM, 3-Jan-2005.)  (Proof shortened by Wolf
-     Lammen, 22-Jan-2013.) $)
+  $( Classical ways to express "exclusive or."  Theorem *5.22 of
+     [WhiteheadRussell] p. 124.  In classical logic these are equivalent, but
+     in intuitionistic logic they are not.  (Contributed by NM, 3-Jan-2005.)
+     (Proof shortened by Wolf Lammen, 22-Jan-2013.) $)
   xor $p |- ( -. ( ph <-> ps ) <->
                 ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
     ( wn wa wo wb wi iman anbi12i dfbi2 ioran 3bitr4ri con1bii ) ABCDZBACDZEZAB
@@ -15443,7 +15444,8 @@ $)
                 ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
     ( wb wn wa wo xor dfbi3 xchnxbi ) ABCABDZEBADZEFABEKJEFABGABHI $.
 
-  $( Two ways to express "exclusive or."  (Contributed by NM, 1-Jan-2006.) $)
+  $( Two ways to express classical "exclusive or."  (Contributed by NM,
+     1-Jan-2006.) $)
   xor3 $p |- ( -. ( ph <-> ps ) <-> ( ph <-> -. ps ) ) $=
     ( wn wb pm5.18 con2bii bicomi ) ABCDZABDZCIHABEFG $.
 
@@ -15452,8 +15454,8 @@ $)
   pm5.15 $p |- ( ( ph <-> ps ) \/ ( ph <-> -. ps ) ) $=
     ( wb wn xor3 biimpi orri ) ABCZABDCZHDIABEFG $.
 
-  $( Two ways to express "exclusive or."  (Contributed by NM, 3-Jan-2005.)
-     (Proof shortened by Wolf Lammen, 24-Jan-2013.) $)
+  $( Classical ways to express "exclusive or."  (Contributed by NM,
+     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 24-Jan-2013.) $)
   xor2 $p |- ( -. ( ph <-> ps ) <-> ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) ) $=
     ( wb wn wo wa xor3 pm5.17 bitr4i ) ABCDABDCABEABFDFABGABHI $.
 
@@ -15487,10 +15489,10 @@ $)
     ( wb bicom bibi1i biass bitri mpbi bitr4i ) ABDZCBACDZDZDZCBDLDKCDZMDKNDOBA
     DZCDMKPCABEFBACGHKCMGICBLGJ $.
 
-  $( Conjunction distributes over exclusive-or, using ` -. ( ph <-> ps ) ` to
-     express exclusive-or.  This is one way to interpret the distributive law
-     of multiplication over addition in modulo 2 arithmetic.  (Contributed by
-     NM, 3-Oct-2008.) $)
+  $( Conjunction distributes over classical exclusive-or, using
+     ` -. ( ph <-> ps ) ` to express exclusive-or.  This is one way to
+     interpret the distributive law of multiplication over addition in modulo 2
+     arithmetic.  (Contributed by NM, 3-Oct-2008.) $)
   xordi $p |- ( ( ph /\ -. ( ps <-> ch ) ) <->
                 -. ( ( ph /\ ps ) <-> ( ph /\ ch ) ) ) $=
     ( wb wn wa wi annim pm5.32 xchbinx ) ABCDZEFAKGABFACFDAKHABCIJ $.
