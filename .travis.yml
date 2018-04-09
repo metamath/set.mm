@@ -15,7 +15,7 @@
 # We report an error if the list of "discouraged" results is unexpected;
 # this makes it easy to detect changes (which can then be specially reviewed).
 # To regenerate the "discouraged" file, you can do:
-#   metamath 'read set.mm' 'set width 9999' 'show discouraged' quit | 
+#   metamath 'read set.mm' 'set width 9999' 'show discouraged' quit |
 #   grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' |
 #   LC_ALL=C sort > discouraged.
 #
@@ -57,7 +57,7 @@ install:
   - wget -N -q http://us.metamath.org/downloads/checkmm.cpp
   - g++ -O2 -o checkmm checkmm.cpp
 script:
-  - ./metamath 'read set.mm' 'verify proof *' 'write bibliography mmbiblio.html' 'verify markup *' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
+  - ./metamath 'read set.mm' 'verify proof *' 'write bibliography mmbiblio.html' 'verify markup */date_skip' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
   - ./metamath 'read iset.mm' 'verify proof *' 'verify markup *' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
   # Sort "show discouraged" results to ignore benign reordering
   # Regenerate "discouraged" in the same way if you *intend* for this to change
