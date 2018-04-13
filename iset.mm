@@ -6577,6 +6577,12 @@ $)
     UDEZFZUBUCDZUEUHUNUKUGUMUDUGABUFBGHIUKUMUDUKBAUIUJJKLMUOUIBUJFZDUIBDZUKFULU
     BUIUCUPAPBPNUIBUJOUQUHUKAUFBQRSUDPTUA $.
 
+  $( An equivalence of two decidable propositions is decidable.  (Contributed
+     by Jim Kingdon, 12-Apr-2018.) $)
+  dcbi $p |- ( DECID ph -> ( DECID ps -> DECID ( ph <-> ps ) ) ) $=
+    ( wdc wi wa wb dcim com12 dcan syl6c dfbi2 dcbii syl6ibr ) ACZBCZ
+    ABDZBADZEZCZABFZCNOPCQCZSABGONUABAGHPQIJTRABKLM $.
+
   ${
     mpbiran.1 $e |- ps $.
     mpbiran.2 $e |- ( ph <-> ( ps /\ ch ) ) $.
