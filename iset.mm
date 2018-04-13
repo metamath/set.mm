@@ -9107,6 +9107,14 @@ $)
   xornbi $p  |- ( ( ph \/_ ps ) -> -. ( ph <-> ps ) ) $=
     ( wxo wn wb xorbin pm5.18im con2i syl ) ABCABDEZABEZDABFKJABGHI $.
 
+  $( Two ways to express "exclusive or" between decidable propositions.
+     (Contributed by Jim Kingdon, 12-Apr-2018.) $)
+  xor3dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( ph <-> ps ) <-> ( ph <-> -. ps ) ) ) ) $=
+    ( wdc wb wn wa dcn dcbi syl5 imp pm5.18dc a1d con2biddc bicomd ex
+    mpd ) ACZBCZABDZEZABEZDZDQRFZUBTUCUBCZUBTDQRUDRUACQUDBGAUAHIJUCSU
+    BUCSUBEDZUDQRUEABKJLMPNO $.
+
   $( Exclusive or implies the left proposition is decidable.  (Contributed by
      Jim Kingdon, 12-Mar-2018.) $)
   xordc1 $p |- ( ( ph \/_ ps ) -> DECID ph ) $=
