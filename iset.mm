@@ -1,4 +1,4 @@
-$( iset.mm - Version of 4-Apr-2018
+$( iset.mm - Version of 12-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6209,6 +6209,15 @@ $)
   $}
 
   ${
+    con2biddc.1 $e |- ( ph -> ( DECID ch -> ( ps <-> -. ch ) ) ) $.
+    $( A contraposition deduction.  (Contributed by Jim Kingdon,
+       11-Apr-2018.) $)
+    con2biddc $p |- ( ph -> ( DECID ch -> ( ch <-> -. ps ) ) ) $=
+      ( wdc wn wb bicom syl6ib con1biddc ) ACEZBFZCGCLGACBA
+      KBCFZGMBGDBMHIJLCHI $.
+  $}
+
+  ${
     bija.1 $e |- ( ph -> ( ps -> ch ) ) $.
     bija.2 $e |- ( -. ph -> ( -. ps -> ch ) ) $.
     $( Combine antecedents into a single bi-conditional.  This inference,
@@ -6559,6 +6568,14 @@ $)
     intnanrd $p |- ( ph -> -. ( ps /\ ch ) ) $=
       ( wa simpl nsyl ) ABBCEDBCFG $.
   $}
+
+  $( A conjunction of two decidable propositions is decidable.  (Contributed by
+     Jim Kingdon, 12-Apr-2018.) $)
+  dcan $p |- ( DECID ph -> ( DECID ps -> DECID ( ph /\ ps ) ) ) $=
+    ( wdc wa wn wo ax-ia1 intnanrd orim2i ax-ia2 intnand olcd jaoi anbi12i andi
+    df-dc andir orbi1i 3bitri 3imtr4i ex ) ACZBCZABDZCZUDAEZBDZFZAUFFZBEZDZFZUD
+    UDEZFZUBUCDZUEUHUNUKUGUMUDUGABUFBGHIUKUMUDUKBAUIUJJKLMUOUIBUJFZDUIBDZUKFULU
+    BUIUCUPAPBPNUIBUJOUQUHUKAUFBQRSUDPTUA $.
 
   ${
     mpbiran.1 $e |- ps $.
