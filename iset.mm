@@ -1,4 +1,4 @@
-$( iset.mm - Version of 12-Apr-2018
+$( iset.mm - Version of 16-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6414,6 +6414,15 @@ $)
   pm5.17 $p |- ( ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) <-> ( ph <-> -. ps ) ) $=
     ( wn wb wi wa wo bicom dfbi2 orcom df-or bitr2i imnan anbi12i 3bitrri ) ABC
     ZDPADPAEZAPEZFABGZABFCZFAPHPAIQSRTSBAGQABJBAKLABMNO $.
+
+  $( Two ways of stating exclusive-or which are equivalent for a decidable
+     proposition.  Based on theorem *5.17 of [WhiteheadRussell] p. 124.
+     (Contributed by Jim Kingdon, 16-Apr-2018.) $)
+  pm5.17dc $p |- ( DECID ps ->
+      ( ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) <-> ( ph <-> -. ps ) ) ) $=
+    ( wn wb wdc wo wa bicom wi dfbi2 orcom dfordc syl5rbb a1i anbi12d
+    imnan syl5bb ) ABCZDRADZBEZABFZABGCZGZARHSRAIZARIZGTUCRAJTUDUAUEU
+    BUABAFTUDABKBALMUEUBDTABPNOQM $.
 
   $( Reverse distribution of disjunction over implication, given decidability.
      Based on theorem *2.85 of [WhiteheadRussell] p. 108.  (Contributed by Jim
