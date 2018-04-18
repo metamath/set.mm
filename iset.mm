@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Apr-2018
+$( iset.mm - Version of 17-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -9124,6 +9124,13 @@ $)
     mpd ) ACZBCZABDZEZABEZDZDQRFZUBTUCUBCZUBTDQRUDRUACQUDBGAUAHIJUCSU
     BUCSUBEDZUDQRUEABKJLMPNO $.
 
+  $( Two ways to express "exclusive or" between decidable propositions.
+     (Contributed by Jim Kingdon, 17-Apr-2018.) $)
+  xor2dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( ph <-> ps ) <-> ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) ) ) ) $=
+    ( wdc wb wn wo wa xor3dc imp pm5.17dc adantl bitr4d ex ) ACZBCZAB
+    DEZABFABGEGZDNOGPABEDZQNOPRDABHIOQRDNABJKLM $.
+
   $( Exclusive or implies the left proposition is decidable.  (Contributed by
      Jim Kingdon, 12-Mar-2018.) $)
   xordc1 $p |- ( ( ph \/_ ps ) -> DECID ph ) $=
@@ -15491,11 +15498,6 @@ $)
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 15-Oct-2013.) $)
   pm5.15 $p |- ( ( ph <-> ps ) \/ ( ph <-> -. ps ) ) $=
     ( wb wn xor3 biimpi orri ) ABCZABDCZHDIABEFG $.
-
-  $( Two ways to express "exclusive or."  (Contributed by NM, 3-Jan-2005.)
-     (Proof shortened by Wolf Lammen, 24-Jan-2013.) $)
-  xor2 $p |- ( -. ( ph <-> ps ) <-> ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) ) $=
-    ( wb wn wo wa xor3 pm5.17 bitr4i ) ABCDABDCABEABFDFABGABHI $.
 
   $( Move negation outside of biconditional.  Compare Theorem *5.18 of
      [WhiteheadRussell] p. 124.  (Contributed by NM, 27-Jun-2002.)  (Proof
