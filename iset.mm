@@ -6141,6 +6141,18 @@ $)
     ( wdc wn wb wi bi1 con1dc syl5 bi2 con2d a1i impbidd ) ACZADZBEZBDZAPOBFNQA
     FOBGABHIPAQFFNPBAOBJKLM $.
 
+  $( Contraposition.  (Contributed by Jim Kingdon, 17-Apr-2018.) $)
+  con1bidc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( -. ph <-> ps ) <-> ( -. ps <-> ph ) ) ) ) $=
+    ( wdc wn wb wa wi con1biimdc adantr adantl impbid ex ) ACZBCZADBE
+    ZBDAEZEMNFOPMOPGNABHINPOGMBAHJKL $.
+
+  $( Contraposition.  (Contributed by Jim Kingdon, 17-Apr-2018.) $)
+  con2bidc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( ph <-> -. ps ) <-> ( ps <-> -. ph ) ) ) ) $=
+    ( wdc wn wb wa con1bidc imp bicom 3bitr3g bicomd ex ) ACZBCZABDZEZBADZEZEMN
+    FZRPSQBEZOAEZRPMNTUAEABGHQBIOAIJKL $.
+
   ${
     con2bid.1 $e |- ( ph -> ( ps <-> -. ch ) ) $.
     $( A contraposition deduction.  (Contributed by NM, 15-Apr-1995.) $)
