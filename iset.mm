@@ -47,12 +47,13 @@ This is part of an ongoing project to improve naming consistency.  If you have
 suggestions for better names, let me know.
 
 If you are keeping proofs outside the master version of this file, you can
-make can make global substitutions into your local version by processing the
+make global substitutions into your local version by processing the
 ones WITHOUT "Notes" in _reverse_ order.  The ones WITH "Notes" may have to be
 processed manually.
 
 DONE:
 Date      Old       New         Notes
+17-Apr-18 con1bidc  con1biimdc
 10-Feb-18 ax-6      hbn1
 10-Feb-18 hbn1OLD   hbn1
 10-Feb-18 a6e       ---         deleted; use sp, 19.9, and nfa1
@@ -6136,7 +6137,7 @@ $)
     $.
 
   $( Contraposition.  (Contributed by Jim Kingdon, 4-Apr-2018.) $)
-  con1bidc $p |- ( DECID ph -> ( ( -. ph <-> ps ) -> ( -. ps <-> ph ) ) ) $=
+  con1biimdc $p |- ( DECID ph -> ( ( -. ph <-> ps ) -> ( -. ps <-> ph ) ) ) $=
     ( wdc wn wb wi bi1 con1dc syl5 bi2 con2d a1i impbidd ) ACZADZBEZBDZAPOBFNQA
     FOBGABHIPAQFFNPBAOBJKLM $.
 
@@ -6159,7 +6160,7 @@ $)
     $( A contraposition deduction.  (Contributed by Jim Kingdon,
        4-Apr-2018.) $)
     con1biddc $p |- ( ph -> ( DECID ps -> ( -. ch <-> ps ) ) ) $=
-      ( wdc wn wb con1bidc sylcom ) ABEBFCGCFBGDBCHI $.
+      ( wdc wn wb con1biimdc sylcom ) ABEBFCGCFBGDBCHI $.
   $}
 
   ${
