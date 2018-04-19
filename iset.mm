@@ -1,4 +1,4 @@
-$( iset.mm - Version of 12-Apr-2018
+$( iset.mm - Version of 18-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -47,12 +47,13 @@ This is part of an ongoing project to improve naming consistency.  If you have
 suggestions for better names, let me know.
 
 If you are keeping proofs outside the master version of this file, you can
-make can make global substitutions into your local version by processing the
+make global substitutions into your local version by processing the
 ones WITHOUT "Notes" in _reverse_ order.  The ones WITH "Notes" may have to be
 processed manually.
 
 DONE:
 Date      Old       New         Notes
+17-Apr-18 con1bidc  con1biimdc
 10-Feb-18 ax-6      hbn1
 10-Feb-18 hbn1OLD   hbn1
 10-Feb-18 a6e       ---         deleted; use sp, 19.9, and nfa1
@@ -6136,9 +6137,21 @@ $)
     $.
 
   $( Contraposition.  (Contributed by Jim Kingdon, 4-Apr-2018.) $)
-  con1bidc $p |- ( DECID ph -> ( ( -. ph <-> ps ) -> ( -. ps <-> ph ) ) ) $=
+  con1biimdc $p |- ( DECID ph -> ( ( -. ph <-> ps ) -> ( -. ps <-> ph ) ) ) $=
     ( wdc wn wb wi bi1 con1dc syl5 bi2 con2d a1i impbidd ) ACZADZBEZBDZAPOBFNQA
     FOBGABHIPAQFFNPBAOBJKLM $.
+
+  $( Contraposition.  (Contributed by Jim Kingdon, 17-Apr-2018.) $)
+  con1bidc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( -. ph <-> ps ) <-> ( -. ps <-> ph ) ) ) ) $=
+    ( wdc wn wb wa wi con1biimdc adantr adantl impbid ex ) ACZBCZADBE
+    ZBDAEZEMNFOPMOPGNABHINPOGMBAHJKL $.
+
+  $( Contraposition.  (Contributed by Jim Kingdon, 17-Apr-2018.) $)
+  con2bidc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( ph <-> -. ps ) <-> ( ps <-> -. ph ) ) ) ) $=
+    ( wdc wn wb wa con1bidc imp bicom 3bitr3g bicomd ex ) ACZBCZABDZEZBADZEZEMN
+    FZRPSQBEZOAEZRPMNTUAEABGHQBIOAIJKL $.
 
   ${
     con2bid.1 $e |- ( ph -> ( ps <-> -. ch ) ) $.
@@ -6159,7 +6172,7 @@ $)
     $( A contraposition deduction.  (Contributed by Jim Kingdon,
        4-Apr-2018.) $)
     con1biddc $p |- ( ph -> ( DECID ps -> ( -. ch <-> ps ) ) ) $=
-      ( wdc wn wb con1bidc sylcom ) ABEBFCGCFBGDBCHI $.
+      ( wdc wn wb con1biimdc sylcom ) ABEBFCGCFBGDBCHI $.
   $}
 
   ${
@@ -6414,6 +6427,15 @@ $)
   pm5.17 $p |- ( ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) <-> ( ph <-> -. ps ) ) $=
     ( wn wb wi wa wo bicom dfbi2 orcom df-or bitr2i imnan anbi12i 3bitrri ) ABC
     ZDPADPAEZAPEZFABGZABFCZFAPHPAIQSRTSBAGQABJBAKLABMNO $.
+
+  $( Two ways of stating exclusive-or which are equivalent for a decidable
+     proposition.  Based on theorem *5.17 of [WhiteheadRussell] p. 124.
+     (Contributed by Jim Kingdon, 16-Apr-2018.) $)
+  pm5.17dc $p |- ( DECID ps ->
+      ( ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) <-> ( ph <-> -. ps ) ) ) $=
+    ( wn wb wdc wo wa bicom wi dfbi2 orcom dfordc syl5rbb a1i anbi12d
+    imnan syl5bb ) ABCZDRADZBEZABFZABGCZGZARHSRAIZARIZGTUCRAJTUDUAUEU
+    BUABAFTUDABKBALMUEUBDTABPNOQM $.
 
   $( Reverse distribution of disjunction over implication, given decidability.
      Based on theorem *2.85 of [WhiteheadRussell] p. 108.  (Contributed by Jim
@@ -9115,12 +9137,36 @@ $)
     mpd ) ACZBCZABDZEZABEZDZDQRFZUBTUCUBCZUBTDQRUDRUACQUDBGAUAHIJUCSU
     BUCSUBEDZUDQRUEABKJLMPNO $.
 
+  $( A decidable proposition is equivalent to a decidable proposition or its
+     negation.  Based on theorem *5.15 of [WhiteheadRussell] p. 124.
+     (Contributed by Jim Kingdon, 18-Apr-2018.) $)
+  pm5.15dc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( ph <-> ps ) \/ ( ph <-> -. ps ) ) ) ) $=
+    ( wdc wb wn wo wa wi xor3dc imp biimpd dcbi dfordc syl mpbird ex
+    ) ACZBCZABDZABEDZFZQRGZUASEZTHZUBUCTQRUCTDABIJKUBSCZUAUDDQRUEABLJ
+    STMNOP $.
+
+  $( Two ways to express "exclusive or" between decidable propositions.
+     (Contributed by Jim Kingdon, 17-Apr-2018.) $)
+  xor2dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( ph <-> ps ) <-> ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) ) ) ) $=
+    ( wdc wb wn wo wa xor3dc imp pm5.17dc adantl bitr4d ex ) ACZBCZAB
+    DEZABFABGEGZDNOGPABEDZQNOPRDABHIOQRDNABJKLM $.
+
   $( Exclusive or implies the left proposition is decidable.  (Contributed by
      Jim Kingdon, 12-Mar-2018.) $)
   xordc1 $p |- ( ( ph \/_ ps ) -> DECID ph ) $=
     ( wo wa wn wxo andir ax-ia1 wi imnan ancom xchbinxr pm3.35 sylan2br orim12i
     wdc sylbi df-xor df-dc 3imtr4i ) ABCABDZEZDZAAEZCZABFAPUCAUBDZBUBDZCUEABUBG
     UFAUGUDAUBHUBBBUDIZUDUHBADUABAJABKLBUDMNOQABRAST $.
+
+  $( Move negation outside of biconditional, for decidable propositions.
+     Compare Theorem *5.18 of [WhiteheadRussell] p. 124.  (Contributed by Jim
+     Kingdon, 18-Apr-2018.) $)
+  nbbndc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( -. ph <-> ps ) <-> -. ( ph <-> ps ) ) ) ) $=
+    ( wdc wn wb wa xor3dc imp con2bidc bitrd bicom syl6rbb ex ) ACZBCZADZBEZABE
+    DZENOFZRBPEZQSRABDEZTNORUAEABGHNOUATEABIHJBPKLM $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -15477,16 +15523,6 @@ $)
   $( Two ways to express "exclusive or."  (Contributed by NM, 1-Jan-2006.) $)
   xor3 $p |- ( -. ( ph <-> ps ) <-> ( ph <-> -. ps ) ) $=
     ( wn wb pm5.18 con2bii bicomi ) ABCDZABDZCIHABEFG $.
-
-  $( Theorem *5.15 of [WhiteheadRussell] p. 124.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 15-Oct-2013.) $)
-  pm5.15 $p |- ( ( ph <-> ps ) \/ ( ph <-> -. ps ) ) $=
-    ( wb wn xor3 biimpi orri ) ABCZABDCZHDIABEFG $.
-
-  $( Two ways to express "exclusive or."  (Contributed by NM, 3-Jan-2005.)
-     (Proof shortened by Wolf Lammen, 24-Jan-2013.) $)
-  xor2 $p |- ( -. ( ph <-> ps ) <-> ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) ) $=
-    ( wb wn wo wa xor3 pm5.17 bitr4i ) ABCDABDCABEABFDFABGABHI $.
 
   $( Move negation outside of biconditional.  Compare Theorem *5.18 of
      [WhiteheadRussell] p. 124.  (Contributed by NM, 27-Jun-2002.)  (Proof
