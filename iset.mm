@@ -1,4 +1,4 @@
-$( iset.mm - Version of 17-Apr-2018
+$( iset.mm - Version of 18-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -9150,6 +9150,14 @@ $)
     ( wo wa wn wxo andir ax-ia1 wi imnan ancom xchbinxr pm3.35 sylan2br orim12i
     wdc sylbi df-xor df-dc 3imtr4i ) ABCABDZEZDZAAEZCZABFAPUCAUBDZBUBDZCUEABUBG
     UFAUGUDAUBHUBBBUDIZUDUHBADUABAJABKLBUDMNOQABRAST $.
+
+  $( Move negation outside of biconditional, for decidable propositions.
+     Compare Theorem *5.18 of [WhiteheadRussell] p. 124.  (Contributed by Jim
+     Kingdon, 18-Apr-2018.) $)
+  nbbndc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( -. ph <-> ps ) <-> -. ( ph <-> ps ) ) ) ) $=
+    ( wdc wn wb wa xor3dc imp con2bidc bitrd bicom syl6rbb ex ) ACZBCZADZBEZABE
+    DZENOFZRBPEZQSRABDEZTNORUAEABGHNOUATEABIHJBPKLM $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
