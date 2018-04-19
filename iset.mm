@@ -9137,6 +9137,15 @@ $)
     mpd ) ACZBCZABDZEZABEZDZDQRFZUBTUCUBCZUBTDQRUDRUACQUDBGAUAHIJUCSU
     BUCSUBEDZUDQRUEABKJLMPNO $.
 
+  $( A decidable proposition is equivalent to a decidable proposition or its
+     negation.  Based on theorem *5.15 of [WhiteheadRussell] p. 124.
+     (Contributed by Jim Kingdon, 18-Apr-2018.) $)
+  pm5.15dc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( ph <-> ps ) \/ ( ph <-> -. ps ) ) ) ) $=
+    ( wdc wb wn wo wa wi xor3dc imp biimpd dcbi dfordc syl mpbird ex
+    ) ACZBCZABDZABEDZFZQRGZUASEZTHZUBUCTQRUCTDABIJKUBSCZUAUDDQRUEABLJ
+    STMNOP $.
+
   $( Two ways to express "exclusive or" between decidable propositions.
      (Contributed by Jim Kingdon, 17-Apr-2018.) $)
   xor2dc $p |- ( DECID ph -> ( DECID ps ->
@@ -15514,11 +15523,6 @@ $)
   $( Two ways to express "exclusive or."  (Contributed by NM, 1-Jan-2006.) $)
   xor3 $p |- ( -. ( ph <-> ps ) <-> ( ph <-> -. ps ) ) $=
     ( wn wb pm5.18 con2bii bicomi ) ABCDZABDZCIHABEFG $.
-
-  $( Theorem *5.15 of [WhiteheadRussell] p. 124.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 15-Oct-2013.) $)
-  pm5.15 $p |- ( ( ph <-> ps ) \/ ( ph <-> -. ps ) ) $=
-    ( wb wn xor3 biimpi orri ) ABCZABDCZHDIABEFG $.
 
   $( Move negation outside of biconditional.  Compare Theorem *5.18 of
      [WhiteheadRussell] p. 124.  (Contributed by NM, 27-Jun-2002.)  (Proof
