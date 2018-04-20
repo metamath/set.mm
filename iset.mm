@@ -6939,11 +6939,6 @@ $)
     ( wo wn wa w3o w3a ioran anbi1i df-3or xchnxbir df-3an 3bitr4i ) ABDZEZCEZF
     ZAEZBEZFZQFABCGZESTQHPUAQABIJOCDRUBOCIABCKLSTQMN $.
 
-  $( Triple disjunction in terms of triple conjunction.  (Contributed by NM,
-     8-Oct-2012.) $)
-  3oran $p |- ( ( ph \/ ps \/ ch ) <-> -. ( -. ph /\ -. ps /\ -. ch ) ) $=
-    ( wn w3a w3o 3ioran con1bii bicomi ) ADBDCDEZDABCFZKJABCGHI $.
-
   $( Simplification of triple conjunction.  (Contributed by NM,
      21-Apr-1994.) $)
   3simpa $p |- ( ( ph /\ ps /\ ch ) -> ( ph /\ ps ) ) $=
