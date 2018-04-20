@@ -6461,10 +6461,10 @@ $)
                 ( ( ph \/ ps ) -> ( ph \/ ch ) ) ) ) $=
     ( wdc wi wo pm2.76 pm2.85dc impbid2 ) ADABCEFABFACFEABCGABCHI $.
 
-  $( Theorem *2.26 of [WhiteheadRussell] p. 104.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Nov-2012.) $)
-  pm2.26 $p |- ( -. ph \/ ( ( ph -> ps ) -> ps ) ) $=
-    ( wi pm2.27 imori ) AABCBCABDE $.
+  $( Decidable proposition version of theorem *2.26 of [WhiteheadRussell]
+     p. 104.  (Contributed by Jim Kingdon, 20-Apr-2018.) $)
+  pm2.26dc $p |- ( DECID ph -> ( -. ph \/ ( ( ph -> ps ) -> ps ) ) ) $=
+    ( wdc wi wn wo pm2.27 imordc mpbii ) ACAABDBDZDAEJFABGAJHI $.
 
   $( A decidable proposition or its negation implies a second proposition.
      Based on theorem *5.11 of [WhiteheadRussell] p. 123.  (Contributed by Jim
