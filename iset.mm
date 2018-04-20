@@ -6758,12 +6758,13 @@ $)
   bigolden $p |- ( ( ( ph /\ ps ) <-> ph ) <-> ( ps <-> ( ph \/ ps ) ) ) $=
     ( wi wa wb wo pm4.71 pm4.72 bicom 3bitr3ri ) ABCAABDZEBABFEKAEABGABHAKIJ $.
 
-  $( Theorem *5.71 of [WhiteheadRussell] p. 125.  (Contributed by Roy F.
-     Longton, 23-Jun-2005.) $)
-  pm5.71 $p |- ( ( ps -> -. ch ) -> ( ( ( ph \/ ps ) /\ ch ) <->
-                ( ph /\ ch ) ) ) $=
-    ( wn wo wa wb orel2 orc impbid1 anbi1d pm2.21 pm5.32rd ja ) BCDZABEZCFACFGB
-    DZPACQPABAHABIJKOCPACPAGLMN $.
+  $( Decidable proposition version of theorem *5.71 of [WhiteheadRussell]
+     p. 125.  (Contributed by Roy F. Longton, 23-Jun-2005.)  (Modified for
+     decidability by Jim Kingdon, 19-Apr-2018.) $)
+  pm5.71dc $p |- ( DECID ps ->
+      ( ( ps -> -. ch ) -> ( ( ( ph \/ ps ) /\ ch ) <-> ( ph /\ ch ) ) ) ) $=
+    ( wn wo wa wb wi wdc orel2 orc impbid1 anbi1d a1i pm2.21 pm5.32rd
+    jadc ) BCDZABEZCFACFGZBDZTHBIUASACUASABAJABKLMNRCSACSAGOPQ $.
 
   $( Theorem *5.75 of [WhiteheadRussell] p. 126.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Andrew Salmon, 7-May-2011.)  (Proof
