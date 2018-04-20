@@ -1,4 +1,4 @@
-$( iset.mm - Version of 18-Apr-2018
+$( iset.mm - Version of 20-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6378,6 +6378,13 @@ $)
      p. 120.  (Contributed by NM, 5-Aug-1993.) $)
   imor $p |- ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) $=
     ( wi wn wo notnot imbi1i df-or bitr4i ) ABCADZDZBCJBEAKBAFGJBHI $.
+
+  $( Implication in terms of disjunction for a decidable proposition.  Based on
+     theorem *4.6 of [WhiteheadRussell] p. 120.  (Contributed by Jim Kingdon,
+     20-Apr-2018.) $)
+  imordc $p |- ( DECID ph -> ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) ) $=
+    ( wdc wi wn wo notnotdc imbi1d wb dcn dfordc syl bitr4d ) ACZABDA
+    EZEZBDZOBFZNAPBAGHNOCRQIAJOBKLM $.
 
   ${
     imori.1 $e |- ( ph -> ps ) $.
