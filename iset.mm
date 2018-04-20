@@ -6425,9 +6425,9 @@ $)
   pm4.79dc $p |- ( DECID ph -> ( DECID ps ->
                  ( ( ( ps -> ph ) \/ ( ch -> ph ) ) <->
                    ( ( ps /\ ch ) -> ph ) ) ) ) $=
-    ( wdc wi wo wa wb dcim id jaoa simplim pm3.3 syl5 pm2.54dc impbid2 syl6com
-    wn ) BDADBAEZDZSCAEZFZBCGAEZHBAITUBUCSBAUACSJUAJKUCSRZUAETUBUDBUCUABALBCAMN
-    SUAONPQ $.
+    ( wdc wi wo wa wb id jaoa simplimdc pm3.3 syl9 dcim pm2.54dc syl6 syl5d imp
+    wn impbid2 expcom ) BDZADZBAEZCAEZFZBCGAEZHUBUCGUFUGUDBAUECUDIUEIJUBUCUGUFE
+    UBUGUDSZUEEZUCUFUBUHBUGUEBAKBCALMUBUCUDDUIUFEBANUDUEOPQRTUA $.
 
   $( Two ways of stating exclusive-or which are equivalent for a decidable
      proposition.  Based on theorem *5.17 of [WhiteheadRussell] p. 124.
