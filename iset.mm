@@ -6429,12 +6429,6 @@ $)
     wn ) BDADBAEZDZSCAEZFZBCGAEZHBAITUBUCSBAUACSJUAJKUCSRZUAETUBUDBUCUABALBCAMN
     SUAONPQ $.
 
-  $( Theorem *5.17 of [WhiteheadRussell] p. 124.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 3-Jan-2013.) $)
-  pm5.17 $p |- ( ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) <-> ( ph <-> -. ps ) ) $=
-    ( wn wb wi wa wo bicom dfbi2 orcom df-or bitr2i imnan anbi12i 3bitrri ) ABC
-    ZDPADPAEZAPEZFABGZABFCZFAPHPAIQSRTSBAGQABJBAKLABMNO $.
-
   $( Two ways of stating exclusive-or which are equivalent for a decidable
      proposition.  Based on theorem *5.17 of [WhiteheadRussell] p. 124.
      (Contributed by Jim Kingdon, 16-Apr-2018.) $)
