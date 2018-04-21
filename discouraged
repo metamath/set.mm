@@ -13261,6 +13261,7 @@ New usage of "ax10lem3OLD" is discouraged (2 uses).
 New usage of "ax10lem4OLD" is discouraged (1 uses).
 New usage of "ax10lem5OLD" is discouraged (1 uses).
 New usage of "ax10o-o" is discouraged (0 uses).
+New usage of "ax10oOLD" is discouraged (0 uses).
 New usage of "ax11" is discouraged (1 uses).
 New usage of "ax11a2-o" is discouraged (0 uses).
 New usage of "ax11el" is discouraged (0 uses).
@@ -17364,9 +17365,9 @@ Proof modification of "ax10from10o" is discouraged (28 steps).
 Proof modification of "ax10lem2OLD" is discouraged (84 steps).
 Proof modification of "ax10lem3OLD" is discouraged (48 steps).
 Proof modification of "ax10lem5OLD" is discouraged (48 steps).
-Proof modification of "ax10o" is discouraged (47 steps).
 Proof modification of "ax10o-o" is discouraged (47 steps).
 Proof modification of "ax10oNEW7" is discouraged (47 steps).
+Proof modification of "ax10oOLD" is discouraged (47 steps).
 Proof modification of "ax11" is discouraged (57 steps).
 Proof modification of "ax11a2-o" is discouraged (22 steps).
 Proof modification of "ax11el" is discouraged (577 steps).
