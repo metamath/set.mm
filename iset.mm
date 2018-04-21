@@ -6405,6 +6405,14 @@ $)
   pm4.62dc $p |- ( DECID ph -> ( ( ph -> -. ps ) <-> ( -. ph \/ -. ps ) ) ) $=
     ( wn imordc ) ABCD $.
 
+  $( Negated conjunction in terms of disjunction (DeMorgan's law).  Theorem
+     *4.51 of [WhiteheadRussell] p. 120, but where one proposition is
+     decidable.  The reverse direction, ~ pm3.14 , holds for all propositions,
+     but the equivalence only holds where one proposition is decidable.
+     (Contributed by Jim Kingdon, 21-Apr-2018.) $)
+  ianordc $p |- ( DECID ph -> ( -. ( ph /\ ps ) <-> ( -. ph \/ -. ps ) ) ) $=
+    ( wa wn wi wdc wo imnan pm4.62dc syl5bbr ) ABCDABDZEAFADKGABHABIJ $.
+
   $( Absorption of disjunction into equivalence.  (Contributed by NM,
      6-Aug-1995.)  (Proof shortened by Wolf Lammen, 3-Nov-2013.) $)
   oibabs $p |- ( ( ( ph \/ ps ) -> ( ph <-> ps ) ) <-> ( ph <-> ps ) ) $=
