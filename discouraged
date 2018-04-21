@@ -14568,6 +14568,7 @@ New usage of "dveeq2OLD" is discouraged (2 uses).
 New usage of "dvelimALT" is discouraged (1 uses).
 New usage of "dvelimALTNEW7" is discouraged (0 uses).
 New usage of "dvelimf-o" is discouraged (3 uses).
+New usage of "dvelimfOLD" is discouraged (0 uses).
 New usage of "dvelimhOLD" is discouraged (0 uses).
 New usage of "dvelimhwOLD" is discouraged (0 uses).
 New usage of "dvelimvOLD" is discouraged (2 uses).
@@ -17515,6 +17516,7 @@ Proof modification of "dveeq2OLD" is discouraged (14 steps).
 Proof modification of "dvelimALT" is discouraged (106 steps).
 Proof modification of "dvelimALTNEW7" is discouraged (106 steps).
 Proof modification of "dvelimf-o" is discouraged (129 steps).
+Proof modification of "dvelimfOLD" is discouraged (81 steps).
 Proof modification of "dvelimhOLD" is discouraged (129 steps).
 Proof modification of "dvelimhwOLD" is discouraged (80 steps).
 Proof modification of "dvelimvOLD" is discouraged (235 steps).
