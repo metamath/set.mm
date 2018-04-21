@@ -6402,8 +6402,8 @@ $)
   $( Absorption of disjunction into equivalence.  (Contributed by NM,
      6-Aug-1995.)  (Proof shortened by Wolf Lammen, 3-Nov-2013.) $)
   oibabs $p |- ( ( ( ph \/ ps ) -> ( ph <-> ps ) ) <-> ( ph <-> ps ) ) $=
-    ( wo wb wi wn wa ioran pm5.21 sylbi id ja ax-1 impbii ) ABCZABDZEPOPPOFAFBF
-    GPABHABIJPKLPOMN $.
+    ( wo wb wi pm2.67-2 ibd olc imim1i ibibr sylibr impbid ax-1 impbii ) ABCZAB
+    DZEZPQABQABAPBFGQBPEBAEBOPBAHIBAJKLPOMN $.
 
   $( Theorem *4.56 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.) $)
