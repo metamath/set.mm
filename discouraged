@@ -13261,6 +13261,7 @@ New usage of "ax10lem3OLD" is discouraged (2 uses).
 New usage of "ax10lem4OLD" is discouraged (1 uses).
 New usage of "ax10lem5OLD" is discouraged (1 uses).
 New usage of "ax10o-o" is discouraged (0 uses).
+New usage of "ax10oOLD" is discouraged (0 uses).
 New usage of "ax11" is discouraged (1 uses).
 New usage of "ax11a2-o" is discouraged (0 uses).
 New usage of "ax11el" is discouraged (0 uses).
@@ -13273,6 +13274,7 @@ New usage of "ax11indalem" is discouraged (1 uses).
 New usage of "ax11indi" is discouraged (0 uses).
 New usage of "ax11indn" is discouraged (1 uses).
 New usage of "ax11v2-o" is discouraged (1 uses).
+New usage of "ax11v2OLD" is discouraged (0 uses).
 New usage of "ax11vALT" is discouraged (0 uses).
 New usage of "ax12OLD" is discouraged (0 uses).
 New usage of "ax12bOLD" is discouraged (0 uses).
@@ -14567,6 +14569,7 @@ New usage of "dveeq2OLD" is discouraged (2 uses).
 New usage of "dvelimALT" is discouraged (1 uses).
 New usage of "dvelimALTNEW7" is discouraged (0 uses).
 New usage of "dvelimf-o" is discouraged (3 uses).
+New usage of "dvelimfOLD" is discouraged (0 uses).
 New usage of "dvelimhOLD" is discouraged (0 uses).
 New usage of "dvelimhwOLD" is discouraged (0 uses).
 New usage of "dvelimvOLD" is discouraged (2 uses).
@@ -15054,6 +15057,7 @@ New usage of "hb3anOLD" is discouraged (0 uses).
 New usage of "hba1-o" is discouraged (8 uses).
 New usage of "hba1OLD" is discouraged (0 uses).
 New usage of "hbae-o" is discouraged (4 uses).
+New usage of "hbaeOLD" is discouraged (0 uses).
 New usage of "hbalg" is discouraged (1 uses).
 New usage of "hbalgVD" is discouraged (0 uses).
 New usage of "hbanOLD" is discouraged (0 uses).
@@ -17362,9 +17366,9 @@ Proof modification of "ax10from10o" is discouraged (28 steps).
 Proof modification of "ax10lem2OLD" is discouraged (84 steps).
 Proof modification of "ax10lem3OLD" is discouraged (48 steps).
 Proof modification of "ax10lem5OLD" is discouraged (48 steps).
-Proof modification of "ax10o" is discouraged (47 steps).
 Proof modification of "ax10o-o" is discouraged (47 steps).
 Proof modification of "ax10oNEW7" is discouraged (47 steps).
+Proof modification of "ax10oOLD" is discouraged (47 steps).
 Proof modification of "ax11" is discouraged (57 steps).
 Proof modification of "ax11a2-o" is discouraged (22 steps).
 Proof modification of "ax11el" is discouraged (577 steps).
@@ -17377,6 +17381,7 @@ Proof modification of "ax11indalem" is discouraged (272 steps).
 Proof modification of "ax11indi" is discouraged (83 steps).
 Proof modification of "ax11indn" is discouraged (70 steps).
 Proof modification of "ax11v2-o" is discouraged (107 steps).
+Proof modification of "ax11v2OLD" is discouraged (107 steps).
 Proof modification of "ax11vALT" is discouraged (81 steps).
 Proof modification of "ax12OLD" is discouraged (72 steps).
 Proof modification of "ax12bOLD" is discouraged (81 steps).
@@ -17513,6 +17518,7 @@ Proof modification of "dveeq2OLD" is discouraged (14 steps).
 Proof modification of "dvelimALT" is discouraged (106 steps).
 Proof modification of "dvelimALTNEW7" is discouraged (106 steps).
 Proof modification of "dvelimf-o" is discouraged (129 steps).
+Proof modification of "dvelimfOLD" is discouraged (81 steps).
 Proof modification of "dvelimhOLD" is discouraged (129 steps).
 Proof modification of "dvelimhwOLD" is discouraged (80 steps).
 Proof modification of "dvelimvOLD" is discouraged (235 steps).
@@ -17752,6 +17758,7 @@ Proof modification of "hashiunOLD" is discouraged (36 steps).
 Proof modification of "hashuniOLD" is discouraged (40 steps).
 Proof modification of "hb3anOLD" is discouraged (26 steps).
 Proof modification of "hba1OLD" is discouraged (34 steps).
+Proof modification of "hbaeOLD" is discouraged (85 steps).
 Proof modification of "hbalg" is discouraged (31 steps).
 Proof modification of "hbalgVD" is discouraged (53 steps).
 Proof modification of "hbanOLD" is discouraged (25 steps).
