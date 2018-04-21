@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Apr-2018
+$( iset.mm - Version of 21-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6398,6 +6398,12 @@ $)
      3-Jan-2005.) $)
   pm4.62 $p |- ( ( ph -> -. ps ) <-> ( -. ph \/ -. ps ) ) $=
     ( wn imor ) ABCD $.
+
+  $( Implication in terms of disjunction.  Like Theorem *4.62 of
+     [WhiteheadRussell] p. 120, but for a decidable antecedent.  (Contributed
+     by Jim Kingdon, 21-Apr-2018.) $)
+  pm4.62dc $p |- ( DECID ph -> ( ( ph -> -. ps ) <-> ( -. ph \/ -. ps ) ) ) $=
+    ( wn imordc ) ABCD $.
 
   $( Absorption of disjunction into equivalence.  (Contributed by NM,
      6-Aug-1995.)  (Proof shortened by Wolf Lammen, 3-Nov-2013.) $)
