@@ -571,16 +571,16 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Logical implication
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
 
-$( The results in this section are based on implication only, and avoid ax-3.
+   The results in this section are based on implication only, and avoid ~ ax-3 .
    In an implication, the wff before the arrow is called the "antecedent" and
-   the wff after the arrow is called the "consequent." $)
+   the wff after the arrow is called the "consequent."
 
-$( We will use the following descriptive terms very loosely:  A "closed form"
+   We will use the following descriptive terms very loosely:  A "closed form"
    or "tautology" has no $e hypotheses.  An "inference" has one or more $e
    hypotheses.  A "deduction" is an inference in which the hypotheses and the
-   conclusion share the same antecedent. $)
+   conclusion share the same antecedent.
+$)
 
   ${
     mp2b.1 $e |- ph $.
@@ -5786,7 +5786,7 @@ $)
 
      Our notation for decidability is a connective ` DECID ` which we place
      before the formula in question.  For example, ` DECID x = y ` corresponds
-     to "x = y is decidabile".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
+     to "x = y is decidable".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   df-dc $a |- ( DECID ph <-> ( ph \/ -. ph ) ) $.
 
   $( Commuted law of the excluded middle for a decidable proposition.  Based on
@@ -5815,15 +5815,29 @@ $(
         Classical logic
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-   Although the Intuitionistic Logic Explorer is primarily for theorems which
-   hold in intuitionistic logic, we also have some classical theorems in order
-   to constrast them with similar intuitionistic ones. Our goal is to move
-   such classical logic to the end of the file, after we've had a chance to
-   complete our development of constructive mathemetics.  In practice,
-   this has been a gradual process of replacing classical proofs with
-   intuitionistic ones (where possible), moving classical proofs later
-   in the file, or removing classical proofs which are unused and not
-   especially important to contrast classical and intuitionistic results.
+   Many theorems of logic hold in intuitionistic logic just as they do in
+   classical (non-inuitionistic) logic, for all propositions. Other theorems
+   only hold for decidable propositions, such as the law of the excluded
+   middle ( ~ df-dc ), double negation elimination ( ~ notnotdc ), or
+   contraposition ( ~ condc ). Our goal is to prove all well-known
+   or important classical theorems, but with suitable decidability
+   conditions so that the proofs follow from intuitionistic axioms.
+   This section is focused on such proofs, given decidability conditions.
+
+   As a historical note, however, the Intuitionistic Logic Explorer originated
+   as a fork of the non-intuitionistic Metamath Proof Explorer, and the
+   project of adding decidability conditions everywhere they are needed (or
+   replacing non-intuitionistic proofs entirely) is not yet complete.
+
+   Therefore, this section also (for now) contains the non-intuitionistic
+   ~ ax-3 and the end of the Intuitionistic Logic Explorer file (after we've
+   had a chance to complete our development of constructive mathemetics)
+   contains additional theorems which rely on ~ ax-3 . As we replace
+   classical proofs with intuitionistic ones, remove classical proofs which
+   are unused and not especially important to contrast classical and
+   intuitionistic results, or add decidability conditions to make proofs not
+   rely on ~ ax-3 , we plan on reducing use of ~ ax-3 , moving ~ ax-3 still
+   later in the file, and eventually removing it entirely.
 $)
 
   $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.
