@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Apr-2018
+$( iset.mm - Version of 22-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6628,6 +6628,14 @@ $)
     UDEZFZUBUCDZUEUHUNUKUGUMUDUGABUFBGHIUKUMUDUKBAUIUJJKLMUOUIBUJFZDUIBDZUKFULU
     BUIUCUPAPBPNUIBUJOUQUHUKAUFBQRSUDPTUA $.
 
+  $( A disjunction of two decidable propositions is decidable.  (Contributed by
+     Jim Kingdon, 21-Apr-2018.) $)
+  dcor $p |- ( DECID ph -> ( DECID ps -> DECID ( ph \/ ps ) ) ) $=
+    ( wdc wn wo wi df-dc orc orcd sylibr a1d wa olc adantl ioran biimpri jaodan
+    olcd sylan2b ex jaoi sylbi ) ACAADZEBCZABEZCZFZAGAUGUCAUFUDAUEUEDZEZUFAUEUH
+    ABHIUEGZJKUCUDUFUDUCBBDZEUFBGUCBUFUKUCBLZUIUFULUEUHBUEUCBAMNIUJJUCUKLZUIUFU
+    MUHUEUHUMABOPRUJJQSTUAUB $.
+
   $( An equivalence of two decidable propositions is decidable.  (Contributed
      by Jim Kingdon, 12-Apr-2018.) $)
   dcbi $p |- ( DECID ph -> ( DECID ps -> DECID ( ph <-> ps ) ) ) $=
@@ -6786,6 +6794,40 @@ $)
      NM, 10-Jan-2005.) $)
   bigolden $p |- ( ( ( ph /\ ps ) <-> ph ) <-> ( ps <-> ( ph \/ ps ) ) ) $=
     ( wi wa wb wo pm4.71 pm4.72 bicom 3bitr3ri ) ABCAABDZEBABFEKAEABGABHAKIJ $.
+
+  $( Conjunction in terms of disjunction (DeMorgan's law).  Theorem *4.5 of
+     [WhiteheadRussell] p. 120, but where one proposition is decidable.  The
+     forward direction, ~ pm3.1 , holds for all propositions, but the
+     equivalence only holds given decidability.  (Contributed by Jim Kingdon,
+     21-Apr-2018.) $)
+  anordc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( ph /\ ps ) <-> -. ( -. ph \/ -. ps ) ) ) ) $=
+    ( wdc wa wn wo wb dcan ianordc bicomd a1d con2biddc syld ) ACZBCA
+    BDZCZOAEBEFZEGABHNQONQOEZGPNRQABIJKLM $.
+
+  $( Theorem *3.11 of [WhiteheadRussell] p. 111, but for decidable
+     propositions.  The converse, ~ pm3.1 , holds for all propositions, not
+     just decidable ones.  (Contributed by Jim Kingdon, 22-Apr-2018.) $)
+  pm3.11dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( -. ph \/ -. ps ) -> ( ph /\ ps ) ) ) ) $=
+    ( wdc wn wo wa wi wb anordc imp biimprd ex ) ACZBCZADBDEDZABFZGMN
+    FPOMNPOHABIJKL $.
+
+  $( Theorem *3.12 of [WhiteheadRussell] p. 111, but for decidable
+     propositions.  (Contributed by Jim Kingdon, 22-Apr-2018.) $)
+  pm3.12dc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( -. ph \/ -. ps ) \/ ( ph /\ ps ) ) ) ) $=
+    ( wdc wn wo wa wi pm3.11dc imp dcn dcor syl2im dfordc syl6 mpbird
+    wb ex ) ACZBCZADZBDZEZABFZEZRSFUDUBDUCGZRSUEABHIRSUDUEPZRSUBCZUFR
+    TCSUACUGAJBJTUAKLUBUCMNIOQ $.
+
+  $( Theorem *3.13 of [WhiteheadRussell] p. 111, but for decidable
+     propositions.  The converse, ~ pm3.14 , holds for all propositions.
+     (Contributed by Jim Kingdon, 22-Apr-2018.) $)
+  pm3.13dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( ph /\ ps ) -> ( -. ph \/ -. ps ) ) ) ) $=
+    ( wdc wn wo wa wi dcn dcor syl2im pm3.11dc con1dc syl6c ) ACZBCZADZBDZEZCZR
+    DABFZGTDRGNPCOQCSAHBHPQIJABKRTLM $.
 
   $( Decidable proposition version of theorem *5.71 of [WhiteheadRussell]
      p. 125.  (Contributed by Roy F. Longton, 23-Jun-2005.)  (Modified for
@@ -15208,27 +15250,10 @@ $)
   oran $p |- ( ( ph \/ ps ) <-> -. ( -. ph /\ -. ps ) ) $=
     ( wn wa wo pm4.56 con2bii ) ACBCDABEABFG $.
 
-  $( Theorem *3.11 of [WhiteheadRussell] p. 111.  This one does not hold
-     intuitionistically, but the converse, ~ pm3.1 , does.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm3.11 $p |- ( -. ( -. ph \/ -. ps ) -> ( ph /\ ps ) ) $=
-    ( wa wn wo anor biimpri ) ABCADBDEDABFG $.
-
   $( Theorem *4.57 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.) $)
   pm4.57 $p |- ( -. ( -. ph /\ -. ps ) <-> ( ph \/ ps ) ) $=
     ( wo wn wa oran bicomi ) ABCADBDEDABFG $.
-
-  $( Theorem *3.12 of [WhiteheadRussell] p. 111.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm3.12 $p |- ( ( -. ph \/ -. ps ) \/ ( ph /\ ps ) ) $=
-    ( wn wo wa pm3.11 orri ) ACBCDABEABFG $.
-
-  $( Theorem *3.13 of [WhiteheadRussell] p. 111.  This does not hold
-     intuitionistically, but the converse, ~ pm3.14 , does.  (Contributed by
-     NM, 3-Jan-2005.) $)
-  pm3.13 $p |- ( -. ( ph /\ ps ) -> ( -. ph \/ -. ps ) ) $=
-    ( wn wo wa pm3.11 con1i ) ACBCDABEABFG $.
 
   $( Theorem *4.61 of [WhiteheadRussell] p. 120.  Only the reverse direction,
      ~ annimim , is valid intuitionistically.  (Contributed by NM,
