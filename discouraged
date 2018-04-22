@@ -1187,13 +1187,6 @@
 "ax-pre-mulgt0" is used by "axmulgt0".
 "ax-pre-sup" is used by "axsup".
 "ax10lem2OLD" is used by "ax10lem3OLD".
-"ax10lem3" is used by "ax10".
-"ax10lem3" is used by "ax10NEW7".
-"ax10lem3" is used by "ax10OLD".
-"ax10lem3" is used by "ax10o".
-"ax10lem3" is used by "dral1NEW7".
-"ax10lem3" is used by "dvelimhvAUX7".
-"ax10lem3" is used by "hbae".
 "ax10lem3OLD" is used by "dvelimvNEW7".
 "ax10lem3OLD" is used by "dvelimvOLD".
 "ax10lem4OLD" is used by "ax10lem5OLD".
@@ -13264,7 +13257,6 @@ New usage of "ax10-16" is discouraged (0 uses).
 New usage of "ax10OLD" is discouraged (0 uses).
 New usage of "ax10from10o" is discouraged (0 uses).
 New usage of "ax10lem2OLD" is discouraged (1 uses).
-New usage of "ax10lem3" is discouraged (7 uses).
 New usage of "ax10lem3OLD" is discouraged (2 uses).
 New usage of "ax10lem4OLD" is discouraged (1 uses).
 New usage of "ax10lem5OLD" is discouraged (1 uses).
