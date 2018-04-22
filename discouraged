@@ -13820,6 +13820,7 @@ New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (58 uses).
 New usage of "cba" is discouraged (88 uses).
 New usage of "cbncms" is discouraged (5 uses).
+New usage of "cbv3OLD" is discouraged (0 uses).
 New usage of "cbv3hvOLD" is discouraged (0 uses).
 New usage of "cbvalvwOLD" is discouraged (0 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
@@ -17449,6 +17450,7 @@ Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "brabsbOLD" is discouraged (42 steps).
+Proof modification of "cbv3OLD" is discouraged (44 steps).
 Proof modification of "cbv3h" is discouraged (48 steps).
 Proof modification of "cbv3hOLD7" is discouraged (48 steps).
 Proof modification of "cbv3hvOLD" is discouraged (67 steps).
