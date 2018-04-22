@@ -13812,7 +13812,9 @@ New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (58 uses).
 New usage of "cba" is discouraged (88 uses).
 New usage of "cbncms" is discouraged (5 uses).
+New usage of "cbv3OLD" is discouraged (0 uses).
 New usage of "cbv3hvOLD" is discouraged (0 uses).
+New usage of "cbval2OLD" is discouraged (0 uses).
 New usage of "cbvalvwOLD" is discouraged (0 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
 New usage of "cdj1i" is discouraged (0 uses).
@@ -14091,6 +14093,7 @@ New usage of "chub1i" is discouraged (18 uses).
 New usage of "chub2" is discouraged (14 uses).
 New usage of "chub2i" is discouraged (24 uses).
 New usage of "chunssji" is discouraged (0 uses).
+New usage of "chvarvOLD" is discouraged (0 uses).
 New usage of "circgrp" is discouraged (0 uses).
 New usage of "clmgm" is discouraged (1 uses).
 New usage of "cm0" is discouraged (1 uses).
@@ -16826,6 +16829,7 @@ New usage of "sbcrot5OLD" is discouraged (0 uses).
 New usage of "sbcssOLD" is discouraged (0 uses).
 New usage of "sbcssVD" is discouraged (0 uses).
 New usage of "sbequ2OLD" is discouraged (0 uses).
+New usage of "sbftOLD" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
 New usage of "sh0" is discouraged (13 uses).
@@ -17440,9 +17444,11 @@ Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "brabsbOLD" is discouraged (42 steps).
+Proof modification of "cbv3OLD" is discouraged (44 steps).
 Proof modification of "cbv3h" is discouraged (48 steps).
 Proof modification of "cbv3hOLD7" is discouraged (48 steps).
 Proof modification of "cbv3hvOLD" is discouraged (67 steps).
+Proof modification of "cbval2OLD" is discouraged (94 steps).
 Proof modification of "cbvalvwOLD" is discouraged (35 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
 Proof modification of "ceqsex3OLD" is discouraged (61 steps).
@@ -17450,6 +17456,7 @@ Proof modification of "ceqsex3vOLD" is discouraged (7 steps).
 Proof modification of "cfilucfil2OLD" is discouraged (120 steps).
 Proof modification of "cfilucfilOLD" is discouraged (805 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
+Proof modification of "chvarvOLD" is discouraged (11 steps).
 Proof modification of "cleljust" is discouraged (25 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
 Proof modification of "cleljustNEW7" is discouraged (25 steps).
@@ -18055,6 +18062,7 @@ Proof modification of "sbcrot5OLD" is discouraged (12 steps).
 Proof modification of "sbcssOLD" is discouraged (130 steps).
 Proof modification of "sbcssVD" is discouraged (223 steps).
 Proof modification of "sbequ2OLD" is discouraged (29 steps).
+Proof modification of "sbftOLD" is discouraged (58 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "shmulclOLD" is discouraged (101 steps).
