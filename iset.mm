@@ -6829,6 +6829,22 @@ $)
     ( wdc wn wo wa wi dcn dcor syl2im pm3.11dc con1dc syl6c ) ACZBCZADZBDZEZCZR
     DABFZGTDRGNPCOQCSAHBHPQIJABKRTLM $.
 
+  $( DN_1 for decidable propositions.  Without the decidability conditions,
+     DN_1 can serve as a single axiom for Boolean algebra.  See
+     ~ http://www-unix.mcs.anl.gov/~~mccune/papers/basax/v12.pdf .
+     (Contributed by Jim Kingdon, 22-Apr-2018.) $)
+  dn1dc $p |- ( ( DECID ph /\ ( DECID ps /\ ( DECID ch /\ DECID th ) ) ) ->
+      ( -. ( -. ( -. ( ph \/ ps ) \/ ch ) \/
+            -. ( ph \/ -. ( -. ch \/ -. ( ch \/ th ) ) ) ) <-> ch ) ) $=
+    ( wo wn wa wdc wi pm2.45 imnan mpbi biorfi wb dcor imp anordc sylc dcn syl
+    orcom ordir 3bitri pm4.45 simprrl ad2antll syl5bb orbi2d anbi2d syl6 syldan
+    adantrr bitrd syl5rbb ) CABEZFZCEZACEZGZAHZBHZCHZDHZGZGZGZUQFACFZCDEZFZEZFZ
+    EZFEFZCCUPAGZEVNCEUSVNCUPAFIVNFABJUPAKLMCVNUAUPACUBUCVFUSUQVLGZVMVFURVLUQVF
+    CVKACCVHGZVFVKCDUDVFVBVHHZVPVKNUTVAVBVCUEZVDVQUTVAVBVCVQCDOPUFZCVHQRUGUHUIV
+    FUQHZVLHZVOVMNVFUPHZVBVTUTVAWBVDUTVAWBUTVAUOHWBABOUOSUJPULVRUPCORUTVEVKHZWA
+    VFVJHZWCVFVGHZVIHZWDVFVBWEVRCSTVFVQWFVSVHSTVGVIORVJSTUTWCWAAVKOPUKUQVLQRUMU
+    N $.
+
   $( Decidable proposition version of theorem *5.71 of [WhiteheadRussell]
      p. 125.  (Contributed by Roy F. Longton, 23-Jun-2005.)  (Modified for
      decidability by Jim Kingdon, 19-Apr-2018.) $)
@@ -15274,16 +15290,6 @@ $)
                 ( ph -> ( ps \/ ch ) ) ) $=
     ( wn wo wi orordi imor orbi12i 3bitr4ri ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCG
     ALHOMPNABHACHIJ $.
-
-  $( A single axiom for Boolean algebra known as DN_1.  See
-     ~ http://www-unix.mcs.anl.gov/~~mccune/papers/basax/v12.pdf .
-     (Contributed by Jeffrey Hankins, 3-Jul-2009.)  (Proof shortened by Andrew
-     Salmon, 13-May-2011.)  (Proof shortened by Wolf Lammen, 6-Jan-2013.) $)
-  dn1 $p |- ( -. ( -. ( -. ( ph \/ ps ) \/ ch ) \/
-            -. ( ph \/ -. ( -. ch \/ -. ( ch \/ th ) ) ) ) <-> ch ) $=
-    ( wo wn wa wi pm2.45 imnan mpbi biorfi orcom ordir 3bitri pm4.45 anor bitri
-    orbi2i anbi2i 3bitrri ) CABEFZCEZACEZGZUCACFCDEZFEFZEZGUCFUHFEFCCUBAGZEUICE
-    UEUICUBAFHUIFABIUBAJKLCUIMUBACNOUDUHUCCUGACCUFGUGCDPCUFQRSTUCUHQUA $.
 
   $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
      of Lukasiewicz.  Using ~ dfor2dc , we can see that this (classically)
