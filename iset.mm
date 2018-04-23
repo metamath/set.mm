@@ -5333,9 +5333,10 @@ $)
   $}
 
   $( Negated disjunction in terms of conjunction.  This version of DeMorgan's
-     law holds in intuitionistic logic, unlike ~ oran , ~ anor , or ~ ianor .
-     Compare Theorem *4.56 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     5-Aug-1993.)  (Revised by Mario Carneiro, 31-Jan-2015.) $)
+     law holds for all propositions (not just decidable ones), unlike ~ oran ,
+     ~ anordc , or ~ ianordc .  Compare Theorem *4.56 of [WhiteheadRussell]
+     p. 120.  (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
+     31-Jan-2015.) $)
   ioran $p |- ( -. ( ph \/ ps ) <-> ( -. ph /\ -. ps ) ) $=
     ( wo wn wa pm2.45 pm2.46 jca simpl con2i simpr jaoi impbii ) ABCZDZADZBDZEZ
     OPQABFABGHNRARDBRAPQIJRBPQKJLJM $.
@@ -6796,7 +6797,7 @@ $)
     ( wi wa wb wo pm4.71 pm4.72 bicom 3bitr3ri ) ABCAABDZEBABFEKAEABGABHAKIJ $.
 
   $( Conjunction in terms of disjunction (DeMorgan's law).  Theorem *4.5 of
-     [WhiteheadRussell] p. 120, but where one proposition is decidable.  The
+     [WhiteheadRussell] p. 120, but where the propositions are decidable.  The
      forward direction, ~ pm3.1 , holds for all propositions, but the
      equivalence only holds given decidability.  (Contributed by Jim Kingdon,
      21-Apr-2018.) $)
@@ -15239,14 +15240,6 @@ $)
      Salmon, 13-May-2011.) $)
   ianor $p |- ( -. ( ph /\ ps ) <-> ( -. ph \/ -. ps ) ) $=
     ( wa wn wi wo imnan pm4.62 bitr3i ) ABCDABDZEADJFABGABHI $.
-
-  $( Conjunction in terms of disjunction (DeMorgan's law).  Theorem *4.5 of
-     [WhiteheadRussell] p. 120.  As an equivalence, this does not hold
-     intuitionistically, but the forward direction is proved intuitionistically
-     at ~ pm3.1 .  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
-     Lammen, 3-Nov-2012.) $)
-  anor $p |- ( ( ph /\ ps ) <-> -. ( -. ph \/ -. ps ) ) $=
-    ( wn wo wa ianor bicomi con2bii ) ACBCDZABEZJCIABFGH $.
 
   $( Theorem *4.52 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
