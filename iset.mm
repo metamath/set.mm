@@ -1,4 +1,4 @@
-$( iset.mm - Version of 18-Apr-2018
+$( iset.mm - Version of 22-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -571,16 +571,16 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Logical implication
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
 
-$( The results in this section are based on implication only, and avoid ax-3.
+   The results in this section are based on implication only, and avoid ~ ax-3 .
    In an implication, the wff before the arrow is called the "antecedent" and
-   the wff after the arrow is called the "consequent." $)
+   the wff after the arrow is called the "consequent."
 
-$( We will use the following descriptive terms very loosely:  A "closed form"
+   We will use the following descriptive terms very loosely:  A "closed form"
    or "tautology" has no $e hypotheses.  An "inference" has one or more $e
    hypotheses.  A "deduction" is an inference in which the hypotheses and the
-   conclusion share the same antecedent. $)
+   conclusion share the same antecedent.
+$)
 
   ${
     mp2b.1 $e |- ph $.
@@ -5333,9 +5333,10 @@ $)
   $}
 
   $( Negated disjunction in terms of conjunction.  This version of DeMorgan's
-     law holds in intuitionistic logic, unlike ~ oran , ~ anor , or ~ ianor .
-     Compare Theorem *4.56 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     5-Aug-1993.)  (Revised by Mario Carneiro, 31-Jan-2015.) $)
+     law holds for all propositions (not just decidable ones), unlike ~ oran ,
+     ~ anordc , or ~ ianordc .  Compare Theorem *4.56 of [WhiteheadRussell]
+     p. 120.  (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
+     31-Jan-2015.) $)
   ioran $p |- ( -. ( ph \/ ps ) <-> ( -. ph /\ -. ps ) ) $=
     ( wo wn wa pm2.45 pm2.46 jca simpl con2i simpr jaoi impbii ) ABCZDZADZBDZEZ
     OPQABFABGHNRARDBRAPQIJRBPQKJLJM $.
@@ -5786,7 +5787,7 @@ $)
 
      Our notation for decidability is a connective ` DECID ` which we place
      before the formula in question.  For example, ` DECID x = y ` corresponds
-     to "x = y is decidabile".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
+     to "x = y is decidable".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   df-dc $a |- ( DECID ph <-> ( ph \/ -. ph ) ) $.
 
   $( Commuted law of the excluded middle for a decidable proposition.  Based on
@@ -5815,15 +5816,29 @@ $(
         Classical logic
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-   Although the Intuitionistic Logic Explorer is primarily for theorems which
-   hold in intuitionistic logic, we also have some classical theorems in order
-   to constrast them with similar intuitionistic ones. Our goal is to move
-   such classical logic to the end of the file, after we've had a chance to
-   complete our development of constructive mathemetics.  In practice,
-   this has been a gradual process of replacing classical proofs with
-   intuitionistic ones (where possible), moving classical proofs later
-   in the file, or removing classical proofs which are unused and not
-   especially important to contrast classical and intuitionistic results.
+   Many theorems of logic hold in intuitionistic logic just as they do in
+   classical (non-inuitionistic) logic, for all propositions. Other theorems
+   only hold for decidable propositions, such as the law of the excluded
+   middle ( ~ df-dc ), double negation elimination ( ~ notnotdc ), or
+   contraposition ( ~ condc ). Our goal is to prove all well-known
+   or important classical theorems, but with suitable decidability
+   conditions so that the proofs follow from intuitionistic axioms.
+   This section is focused on such proofs, given decidability conditions.
+
+   As a historical note, however, the Intuitionistic Logic Explorer originated
+   as a fork of the non-intuitionistic Metamath Proof Explorer, and the
+   project of adding decidability conditions everywhere they are needed (or
+   replacing non-intuitionistic proofs entirely) is not yet complete.
+
+   Therefore, this section also (for now) contains the non-intuitionistic
+   ~ ax-3 and the end of the Intuitionistic Logic Explorer file (after we've
+   had a chance to complete our development of constructive mathemetics)
+   contains additional theorems which rely on ~ ax-3 . As we replace
+   classical proofs with intuitionistic ones, remove classical proofs which
+   are unused and not especially important to contrast classical and
+   intuitionistic results, or add decidability conditions to make proofs not
+   rely on ~ ax-3 , we plan on reducing use of ~ ax-3 , moving ~ ax-3 still
+   later in the file, and eventually removing it entirely.
 $)
 
   $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.
@@ -6379,6 +6394,13 @@ $)
   imor $p |- ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) $=
     ( wi wn wo notnot imbi1i df-or bitr4i ) ABCADZDZBCJBEAKBAFGJBHI $.
 
+  $( Implication in terms of disjunction for a decidable proposition.  Based on
+     theorem *4.6 of [WhiteheadRussell] p. 120.  (Contributed by Jim Kingdon,
+     20-Apr-2018.) $)
+  imordc $p |- ( DECID ph -> ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) ) $=
+    ( wdc wi wn wo notnotdc imbi1d wb dcn dfordc syl bitr4d ) ACZABDA
+    EZEZBDZOBFZNAPBAGHNOCRQIAJOBKLM $.
+
   ${
     imori.1 $e |- ( ph -> ps ) $.
     $( Infer disjunction from implication.  (Contributed by NM,
@@ -6392,11 +6414,25 @@ $)
   pm4.62 $p |- ( ( ph -> -. ps ) <-> ( -. ph \/ -. ps ) ) $=
     ( wn imor ) ABCD $.
 
+  $( Implication in terms of disjunction.  Like Theorem *4.62 of
+     [WhiteheadRussell] p. 120, but for a decidable antecedent.  (Contributed
+     by Jim Kingdon, 21-Apr-2018.) $)
+  pm4.62dc $p |- ( DECID ph -> ( ( ph -> -. ps ) <-> ( -. ph \/ -. ps ) ) ) $=
+    ( wn imordc ) ABCD $.
+
+  $( Negated conjunction in terms of disjunction (DeMorgan's law).  Theorem
+     *4.51 of [WhiteheadRussell] p. 120, but where one proposition is
+     decidable.  The reverse direction, ~ pm3.14 , holds for all propositions,
+     but the equivalence only holds where one proposition is decidable.
+     (Contributed by Jim Kingdon, 21-Apr-2018.) $)
+  ianordc $p |- ( DECID ph -> ( -. ( ph /\ ps ) <-> ( -. ph \/ -. ps ) ) ) $=
+    ( wa wn wi wdc wo imnan pm4.62dc syl5bbr ) ABCDABDZEAFADKGABHABIJ $.
+
   $( Absorption of disjunction into equivalence.  (Contributed by NM,
      6-Aug-1995.)  (Proof shortened by Wolf Lammen, 3-Nov-2013.) $)
   oibabs $p |- ( ( ( ph \/ ps ) -> ( ph <-> ps ) ) <-> ( ph <-> ps ) ) $=
-    ( wo wb wi wn wa ioran pm5.21 sylbi id ja ax-1 impbii ) ABCZABDZEPOPPOFAFBF
-    GPABHABIJPKLPOMN $.
+    ( wo wb wi pm2.67-2 ibd olc imim1i ibibr sylibr impbid ax-1 impbii ) ABCZAB
+    DZEZPQABQABAPBFGQBPEBAEBOPBAHIBAJKLPOMN $.
 
   $( Theorem *4.56 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.) $)
@@ -6418,15 +6454,9 @@ $)
   pm4.79dc $p |- ( DECID ph -> ( DECID ps ->
                  ( ( ( ps -> ph ) \/ ( ch -> ph ) ) <->
                    ( ( ps /\ ch ) -> ph ) ) ) ) $=
-    ( wdc wi wo wa wb dcim id jaoa simplim pm3.3 syl5 pm2.54dc impbid2 syl6com
-    wn ) BDADBAEZDZSCAEZFZBCGAEZHBAITUBUCSBAUACSJUAJKUCSRZUAETUBUDBUCUABALBCAMN
-    SUAONPQ $.
-
-  $( Theorem *5.17 of [WhiteheadRussell] p. 124.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 3-Jan-2013.) $)
-  pm5.17 $p |- ( ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) <-> ( ph <-> -. ps ) ) $=
-    ( wn wb wi wa wo bicom dfbi2 orcom df-or bitr2i imnan anbi12i 3bitrri ) ABC
-    ZDPADPAEZAPEZFABGZABFCZFAPHPAIQSRTSBAGQABJBAKLABMNO $.
+    ( wdc wi wo wa wb id jaoa simplimdc pm3.3 syl9 dcim pm2.54dc syl6 syl5d imp
+    wn impbid2 expcom ) BDZADZBAEZCAEZFZBCGAEZHUBUCGUFUGUDBAUECUDIUEIJUBUCUGUFE
+    UBUGUDSZUEEZUCUFUBUHBUGUEBAKBCALMUBUCUDDUIUFEBANUDUEOPQRTUA $.
 
   $( Two ways of stating exclusive-or which are equivalent for a decidable
      proposition.  Based on theorem *5.17 of [WhiteheadRussell] p. 124.
@@ -6454,10 +6484,10 @@ $)
                 ( ( ph \/ ps ) -> ( ph \/ ch ) ) ) ) $=
     ( wdc wi wo pm2.76 pm2.85dc impbid2 ) ADABCEFABFACFEABCGABCHI $.
 
-  $( Theorem *2.26 of [WhiteheadRussell] p. 104.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Nov-2012.) $)
-  pm2.26 $p |- ( -. ph \/ ( ( ph -> ps ) -> ps ) ) $=
-    ( wi pm2.27 imori ) AABCBCABDE $.
+  $( Decidable proposition version of theorem *2.26 of [WhiteheadRussell]
+     p. 104.  (Contributed by Jim Kingdon, 20-Apr-2018.) $)
+  pm2.26dc $p |- ( DECID ph -> ( -. ph \/ ( ( ph -> ps ) -> ps ) ) ) $=
+    ( wdc wi wn wo pm2.27 imordc mpbii ) ACAABDBDZDAEJFABGAJHI $.
 
   $( A decidable proposition or its negation implies a second proposition.
      Based on theorem *5.11 of [WhiteheadRussell] p. 123.  (Contributed by Jim
@@ -6598,6 +6628,14 @@ $)
     df-dc andir orbi1i 3bitri 3imtr4i ex ) ACZBCZABDZCZUDAEZBDZFZAUFFZBEZDZFZUD
     UDEZFZUBUCDZUEUHUNUKUGUMUDUGABUFBGHIUKUMUDUKBAUIUJJKLMUOUIBUJFZDUIBDZUKFULU
     BUIUCUPAPBPNUIBUJOUQUHUKAUFBQRSUDPTUA $.
+
+  $( A disjunction of two decidable propositions is decidable.  (Contributed by
+     Jim Kingdon, 21-Apr-2018.) $)
+  dcor $p |- ( DECID ph -> ( DECID ps -> DECID ( ph \/ ps ) ) ) $=
+    ( wdc wn wo wi df-dc orc orcd sylibr a1d wa olc adantl ioran biimpri jaodan
+    olcd sylan2b ex jaoi sylbi ) ACAADZEBCZABEZCZFZAGAUGUCAUFUDAUEUEDZEZUFAUEUH
+    ABHIUEGZJKUCUDUFUDUCBBDZEUFBGUCBUFUKUCBLZUIUFULUEUHBUEUCBAMNIUJJUCUKLZUIUFU
+    MUHUEUHUMABOPRUJJQSTUAUB $.
 
   $( An equivalence of two decidable propositions is decidable.  (Contributed
      by Jim Kingdon, 12-Apr-2018.) $)
@@ -6758,12 +6796,63 @@ $)
   bigolden $p |- ( ( ( ph /\ ps ) <-> ph ) <-> ( ps <-> ( ph \/ ps ) ) ) $=
     ( wi wa wb wo pm4.71 pm4.72 bicom 3bitr3ri ) ABCAABDZEBABFEKAEABGABHAKIJ $.
 
-  $( Theorem *5.71 of [WhiteheadRussell] p. 125.  (Contributed by Roy F.
-     Longton, 23-Jun-2005.) $)
-  pm5.71 $p |- ( ( ps -> -. ch ) -> ( ( ( ph \/ ps ) /\ ch ) <->
-                ( ph /\ ch ) ) ) $=
-    ( wn wo wa wb orel2 orc impbid1 anbi1d pm2.21 pm5.32rd ja ) BCDZABEZCFACFGB
-    DZPACQPABAHABIJKOCPACPAGLMN $.
+  $( Conjunction in terms of disjunction (DeMorgan's law).  Theorem *4.5 of
+     [WhiteheadRussell] p. 120, but where the propositions are decidable.  The
+     forward direction, ~ pm3.1 , holds for all propositions, but the
+     equivalence only holds given decidability.  (Contributed by Jim Kingdon,
+     21-Apr-2018.) $)
+  anordc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( ph /\ ps ) <-> -. ( -. ph \/ -. ps ) ) ) ) $=
+    ( wdc wa wn wo wb dcan ianordc bicomd a1d con2biddc syld ) ACZBCA
+    BDZCZOAEBEFZEGABHNQONQOEZGPNRQABIJKLM $.
+
+  $( Theorem *3.11 of [WhiteheadRussell] p. 111, but for decidable
+     propositions.  The converse, ~ pm3.1 , holds for all propositions, not
+     just decidable ones.  (Contributed by Jim Kingdon, 22-Apr-2018.) $)
+  pm3.11dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( -. ph \/ -. ps ) -> ( ph /\ ps ) ) ) ) $=
+    ( wdc wn wo wa wi wb anordc imp biimprd ex ) ACZBCZADBDEDZABFZGMN
+    FPOMNPOHABIJKL $.
+
+  $( Theorem *3.12 of [WhiteheadRussell] p. 111, but for decidable
+     propositions.  (Contributed by Jim Kingdon, 22-Apr-2018.) $)
+  pm3.12dc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( -. ph \/ -. ps ) \/ ( ph /\ ps ) ) ) ) $=
+    ( wdc wn wo wa wi pm3.11dc imp dcn dcor syl2im dfordc syl6 mpbird
+    wb ex ) ACZBCZADZBDZEZABFZEZRSFUDUBDUCGZRSUEABHIRSUDUEPZRSUBCZUFR
+    TCSUACUGAJBJTUAKLUBUCMNIOQ $.
+
+  $( Theorem *3.13 of [WhiteheadRussell] p. 111, but for decidable
+     propositions.  The converse, ~ pm3.14 , holds for all propositions.
+     (Contributed by Jim Kingdon, 22-Apr-2018.) $)
+  pm3.13dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( ph /\ ps ) -> ( -. ph \/ -. ps ) ) ) ) $=
+    ( wdc wn wo wa wi dcn dcor syl2im pm3.11dc con1dc syl6c ) ACZBCZADZBDZEZCZR
+    DABFZGTDRGNPCOQCSAHBHPQIJABKRTLM $.
+
+  $( DN_1 for decidable propositions.  Without the decidability conditions,
+     DN_1 can serve as a single axiom for Boolean algebra.  See
+     ~ http://www-unix.mcs.anl.gov/~~mccune/papers/basax/v12.pdf .
+     (Contributed by Jim Kingdon, 22-Apr-2018.) $)
+  dn1dc $p |- ( ( DECID ph /\ ( DECID ps /\ ( DECID ch /\ DECID th ) ) ) ->
+      ( -. ( -. ( -. ( ph \/ ps ) \/ ch ) \/
+            -. ( ph \/ -. ( -. ch \/ -. ( ch \/ th ) ) ) ) <-> ch ) ) $=
+    ( wo wn wa wdc wi pm2.45 imnan mpbi biorfi wb dcor imp anordc sylc dcn syl
+    orcom ordir 3bitri pm4.45 simprrl ad2antll syl5bb orbi2d anbi2d syl6 syldan
+    adantrr bitrd syl5rbb ) CABEZFZCEZACEZGZAHZBHZCHZDHZGZGZGZUQFACFZCDEZFZEZFZ
+    EZFEFZCCUPAGZEVNCEUSVNCUPAFIVNFABJUPAKLMCVNUAUPACUBUCVFUSUQVLGZVMVFURVLUQVF
+    CVKACCVHGZVFVKCDUDVFVBVHHZVPVKNUTVAVBVCUEZVDVQUTVAVBVCVQCDOPUFZCVHQRUGUHUIV
+    FUQHZVLHZVOVMNVFUPHZVBVTUTVAWBVDUTVAWBUTVAUOHWBABOUOSUJPULVRUPCORUTVEVKHZWA
+    VFVJHZWCVFVGHZVIHZWDVFVBWEVRCSTVFVQWFVSVHSTVGVIORVJSTUTWCWAAVKOPUKUQVLQRUMU
+    N $.
+
+  $( Decidable proposition version of theorem *5.71 of [WhiteheadRussell]
+     p. 125.  (Contributed by Roy F. Longton, 23-Jun-2005.)  (Modified for
+     decidability by Jim Kingdon, 19-Apr-2018.) $)
+  pm5.71dc $p |- ( DECID ps ->
+      ( ( ps -> -. ch ) -> ( ( ( ph \/ ps ) /\ ch ) <-> ( ph /\ ch ) ) ) ) $=
+    ( wn wo wa wb wi wdc orel2 orc impbid1 anbi1d a1i pm2.21 pm5.32rd
+    jadc ) BCDZABEZCFACFGZBDZTHBIUASACUASABAJABKLMNRCSACSAGOPQ $.
 
   $( Theorem *5.75 of [WhiteheadRussell] p. 126.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Andrew Salmon, 7-May-2011.)  (Proof
@@ -6938,11 +7027,6 @@ $)
   3ioran $p |- ( -. ( ph \/ ps \/ ch ) <-> ( -. ph /\ -. ps /\ -. ch ) ) $=
     ( wo wn wa w3o w3a ioran anbi1i df-3or xchnxbir df-3an 3bitr4i ) ABDZEZCEZF
     ZAEZBEZFZQFABCGZESTQHPUAQABIJOCDRUBOCIABCKLSTQMN $.
-
-  $( Triple disjunction in terms of triple conjunction.  (Contributed by NM,
-     8-Oct-2012.) $)
-  3oran $p |- ( ( ph \/ ps \/ ch ) <-> -. ( -. ph /\ -. ps /\ -. ch ) ) $=
-    ( wn w3a w3o 3ioran con1bii bicomi ) ADBDCDEZDABCFZKJABCGHI $.
 
   $( Simplification of triple conjunction.  (Contributed by NM,
      21-Apr-1994.) $)
@@ -15157,14 +15241,6 @@ $)
   ianor $p |- ( -. ( ph /\ ps ) <-> ( -. ph \/ -. ps ) ) $=
     ( wa wn wi wo imnan pm4.62 bitr3i ) ABCDABDZEADJFABGABHI $.
 
-  $( Conjunction in terms of disjunction (DeMorgan's law).  Theorem *4.5 of
-     [WhiteheadRussell] p. 120.  As an equivalence, this does not hold
-     intuitionistically, but the forward direction is proved intuitionistically
-     at ~ pm3.1 .  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
-     Lammen, 3-Nov-2012.) $)
-  anor $p |- ( ( ph /\ ps ) <-> -. ( -. ph \/ -. ps ) ) $=
-    ( wn wo wa ianor bicomi con2bii ) ACBCDZABEZJCIABFGH $.
-
   $( Theorem *4.52 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
   pm4.52 $p |- ( ( ph /\ -. ps ) <-> -. ( -. ph \/ ps ) ) $=
@@ -15183,27 +15259,10 @@ $)
   oran $p |- ( ( ph \/ ps ) <-> -. ( -. ph /\ -. ps ) ) $=
     ( wn wa wo pm4.56 con2bii ) ACBCDABEABFG $.
 
-  $( Theorem *3.11 of [WhiteheadRussell] p. 111.  This one does not hold
-     intuitionistically, but the converse, ~ pm3.1 , does.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm3.11 $p |- ( -. ( -. ph \/ -. ps ) -> ( ph /\ ps ) ) $=
-    ( wa wn wo anor biimpri ) ABCADBDEDABFG $.
-
   $( Theorem *4.57 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.) $)
   pm4.57 $p |- ( -. ( -. ph /\ -. ps ) <-> ( ph \/ ps ) ) $=
     ( wo wn wa oran bicomi ) ABCADBDEDABFG $.
-
-  $( Theorem *3.12 of [WhiteheadRussell] p. 111.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm3.12 $p |- ( ( -. ph \/ -. ps ) \/ ( ph /\ ps ) ) $=
-    ( wn wo wa pm3.11 orri ) ACBCDABEABFG $.
-
-  $( Theorem *3.13 of [WhiteheadRussell] p. 111.  This does not hold
-     intuitionistically, but the converse, ~ pm3.14 , does.  (Contributed by
-     NM, 3-Jan-2005.) $)
-  pm3.13 $p |- ( -. ( ph /\ ps ) -> ( -. ph \/ -. ps ) ) $=
-    ( wn wo wa pm3.11 con1i ) ACBCDABEABFG $.
 
   $( Theorem *4.61 of [WhiteheadRussell] p. 120.  Only the reverse direction,
      ~ annimim , is valid intuitionistically.  (Contributed by NM,
@@ -15224,16 +15283,6 @@ $)
                 ( ph -> ( ps \/ ch ) ) ) $=
     ( wn wo wi orordi imor orbi12i 3bitr4ri ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCG
     ALHOMPNABHACHIJ $.
-
-  $( A single axiom for Boolean algebra known as DN_1.  See
-     ~ http://www-unix.mcs.anl.gov/~~mccune/papers/basax/v12.pdf .
-     (Contributed by Jeffrey Hankins, 3-Jul-2009.)  (Proof shortened by Andrew
-     Salmon, 13-May-2011.)  (Proof shortened by Wolf Lammen, 6-Jan-2013.) $)
-  dn1 $p |- ( -. ( -. ( -. ( ph \/ ps ) \/ ch ) \/
-            -. ( ph \/ -. ( -. ch \/ -. ( ch \/ th ) ) ) ) <-> ch ) $=
-    ( wo wn wa wi pm2.45 imnan mpbi biorfi orcom ordir 3bitri pm4.45 anor bitri
-    orbi2i anbi2i 3bitrri ) CABEFZCEZACEZGZUCACFCDEZFEFZEZGUCFUHFEFCCUBAGZEUICE
-    UEUICUBAFHUIFABIUBAJKLCUIMUBACNOUDUHUCCUGACCUFGUGCDPCUFQRSTUCUHQUA $.
 
   $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
      of Lukasiewicz.  Using ~ dfor2dc , we can see that this (classically)
