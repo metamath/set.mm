@@ -6401,19 +6401,6 @@ $)
     ( wdc wi wn wo notnotdc imbi1d wb dcn dfordc syl bitr4d ) ACZABDA
     EZEZBDZOBFZNAPBAGHNOCRQIAJOBKLM $.
 
-  ${
-    imori.1 $e |- ( ph -> ps ) $.
-    $( Infer disjunction from implication.  (Contributed by NM,
-       12-Mar-2012.) $)
-    imori $p |- ( -. ph \/ ps ) $=
-      ( wi wn wo imor mpbi ) ABDAEBFCABGH $.
-  $}
-
-  $( Theorem *4.62 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.62 $p |- ( ( ph -> -. ps ) <-> ( -. ph \/ -. ps ) ) $=
-    ( wn imor ) ABCD $.
-
   $( Implication in terms of disjunction.  Like Theorem *4.62 of
      [WhiteheadRussell] p. 120, but for a decidable antecedent.  (Contributed
      by Jim Kingdon, 21-Apr-2018.) $)
@@ -15242,14 +15229,6 @@ $)
   pm4.81 $p |- ( ( -. ph -> ph ) <-> ph ) $=
     ( wn wi pm2.18 pm2.24 impbii ) ABACAADAAEF $.
 
-  $( Negated conjunction in terms of disjunction (DeMorgan's law).  Theorem
-     *4.51 of [WhiteheadRussell] p. 120.  As an equivalence, this does not hold
-     intuitionistically, but the reverse direction does hold and is at
-     ~ pm3.14 .  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
-     Salmon, 13-May-2011.) $)
-  ianor $p |- ( -. ( ph /\ ps ) <-> ( -. ph \/ -. ps ) ) $=
-    ( wa wn wi wo imnan pm4.62 bitr3i ) ABCDABDZEADJFABGABHI $.
-
   $( Theorem *4.52 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
   pm4.52 $p |- ( ( ph /\ -. ps ) <-> -. ( -. ph \/ ps ) ) $=
@@ -15409,11 +15388,6 @@ $)
      intuitionistic logic.  (Contributed by NM, 5-Aug-1993.) $)
   exmid $p |- ( ph \/ -. ph ) $=
     ( wn id orri ) AABZECD $.
-
-  $( Theorem *2.1 of [WhiteheadRussell] p. 101.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Nov-2012.) $)
-  pm2.1 $p |- ( -. ph \/ ph ) $=
-    ( id imori ) AAABC $.
 
   $( Theorem *2.13 of [WhiteheadRussell] p. 101.  (Contributed by NM,
      3-Jan-2005.) $)
