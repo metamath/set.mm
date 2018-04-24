@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Apr-2018
+$( iset.mm - Version of 23-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11179,8 +11179,8 @@ $)
     ACEZBCEZDZPTCRSCACFBCFGARBSACHBCHIJRQSAPCABKLBPCBAMLNO $.
 
   $( The antecedent provides a condition implying the converse of ~ 19.33 .
-     Compare Theorem 19.33 of [Margaris] p. 90.  This variation of ~ 19.33b is
-     intuitionistically valid with a slight modification of the antecedent.
+     Compare Theorem 19.33 of [Margaris] p. 90.  This variation of ~ 19.33bdc
+     is intuitionistically valid without a decidability condition.
      (Contributed by Mario Carneiro, 2-Feb-2015.) $)
   19.33b2 $p |- ( ( -. E. x ph \/ -. E. x ps ) ->
                ( A. x ( ph \/ ps ) <-> ( A. x ph \/ A. x ps ) ) ) $=
@@ -11188,6 +11188,15 @@ $)
     wo wi com12 19.33 impbid1 ) ACDEZBCDEZPZABPZCFZACFZBCFZPZUEUCUHUCBEZCFZAEZC
     FZPZUEUHUCUBUAPUMUAUBGUJUBULUABCHACHIJUEUJUFULUGUDUIACBAUIAQBAKLMUDUKBCABKM
     NORABCST $.
+
+  $( Converse of ~ 19.33 given ` -. ( E. x ph /\ E. x ps ) ` and a decidability
+     condition.  Compare Theorem 19.33 of [Margaris] p. 90.  For a version
+     which does not require a decidability condition, see ~ 19.33b2
+     (Contributed by Jim Kingdon, 23-Apr-2018.) $)
+  19.33bdc $p |- ( DECID E. x ph -> ( -. ( E. x ph /\ E. x ps ) ->
+               ( A. x ( ph \/ ps ) <-> ( A. x ph \/ A. x ps ) ) ) ) $=
+    ( wex wdc wa wn wo wal wb ianordc 19.33b2 syl6bi ) ACDZENBCDZFGNG
+    OGHABHCIACIBCIHJNOKABCLM $.
 
   $( Theorem 19.40 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   19.40 $p |- ( E. x ( ph /\ ps ) -> ( E. x ph /\ E. x ps ) ) $=
@@ -15361,16 +15370,6 @@ $)
   19.30 $p |- ( A. x ( ph \/ ps ) -> ( A. x ph \/ E. x ps ) ) $=
     ( wn wi wal wex wo exnal exim syl5bir df-or albii 3imtr4i ) ADZBEZCFZACFZDZ
     BCGZEABHZCFRTHSOCGQTACIOBCJKUAPCABLMRTLN $.
-
-  $( The antecedent provides a condition implying the converse of ~ 19.33 .
-     Compare Theorem 19.33 of [Margaris] p. 90.  For an intuitionistically
-     valid variation, see ~ 19.33b2 (Contributed by NM, 27-Mar-2004.)  (Proof
-     shortened by Wolf Lammen, 5-Jul-2014.)  (Proof shortened by Mario
-     Carneiro, 2-Feb-2015.) $)
-  19.33b $p |- ( -. ( E. x ph /\ E. x ps ) ->
-               ( A. x ( ph \/ ps ) <-> ( A. x ph \/ A. x ps ) ) ) $=
-    ( wex wa wn wo wal wb ianor 19.33b2 sylbi ) ACDZBCDZEFMFNFGABGCHACHBCHGIMNJ
-    ABCKL $.
 
   ${
     4cases.1 $e |- ( ( ph /\ ps ) -> ch ) $.
