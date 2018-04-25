@@ -6339,12 +6339,6 @@ $)
   pm4.15 $p |- ( ( ( ph /\ ps ) -> -. ch ) <-> ( ( ps /\ ch ) -> -. ph ) ) $=
     ( wa wn wi con2b nan bitr2i ) BCDZAEFAJEFABDCEFJAGABCHI $.
 
-  $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
-     intuitionistically, although its converse, ~ pm2.53 , does.  (Contributed
-     by NM, 3-Jan-2005.) $)
-  pm2.54 $p |- ( ( -. ph -> ps ) -> ( ph \/ ps ) ) $=
-    ( wn wo notnot2 orc syl olc ja ) ACZBABDZJCAKAEABFGBAHI $.
-
   $( Deriving disjunction from implication for a decidable proposition.  Based
      on theorem *2.54 of [WhiteheadRussell] p. 107.  The converse, ~ pm2.53 ,
      holds whether the proposition is decidable or not.  (Contributed by Jim
@@ -6352,11 +6346,6 @@ $)
   pm2.54dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( ph \/ ps ) ) ) $=
     ( wdc wn wi wo dcn notnot2dc orc syl6 a1d olc a1i jaddc mpd ) ACZ
     ADZCZQBEABFZEAGPQBSPQDZSERPTASAHABIJKBSEPBALMNO $.
-
-  $( Definition of 'or' in terms of negation and implication (classical).
-     Definition of [Margaris] p. 49.  (Contributed by NM, 31-Jan-2015.) $)
-  df-or $p |- ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) $=
-    ( wo wn wi pm2.53 pm2.54 impbii ) ABCADBEABFABGH $.
 
   $( Definition of 'or' in terms of negation and implication for a decidable
      proposition.  Based on definition of [Margaris] p. 49.  (Contributed by
@@ -6388,11 +6377,6 @@ $)
                   ( ph -> ( ps \/ ch ) ) ) ) $=
     ( wdc wo wi dfor2dc imbi2d bi2.04 syl6rbbr ) BDZABCEZFABCFZCFZFMA
     CFFKLNABCGHMACIJ $.
-
-  $( Implication in terms of disjunction.  Theorem *4.6 of [WhiteheadRussell]
-     p. 120.  (Contributed by NM, 5-Aug-1993.) $)
-  imor $p |- ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) $=
-    ( wi wn wo notnot imbi1i df-or bitr4i ) ABCADZDZBCJBEAKBAFGJBHI $.
 
   $( Implication in terms of disjunction for a decidable proposition.  Based on
      theorem *4.6 of [WhiteheadRussell] p. 120.  (Contributed by Jim Kingdon,
@@ -14249,6 +14233,27 @@ $(
   classical logic, but probably intuitionistic proofs can be found
   for much of it.
 $)
+
+  $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
+     intuitionistically, although its converse, ~ pm2.53 , does.  See
+     ~ pm2.54dc for a version which holds intuitionistically, by restricting
+     itself to decidable propositions.  (Contributed by NM, 3-Jan-2005.) $)
+  pm2.54 $p |- ( ( -. ph -> ps ) -> ( ph \/ ps ) ) $=
+    ( wn wo notnot2 orc syl olc ja ) ACZBABDZJCAKAEABFGBAHI $.
+
+  $( Definition of 'or' in terms of negation and implication (classical).  See
+     ~ dfordc for a version which holds intuitionistically, by restricting
+     itself to decidable propositions.  Definition of [Margaris] p. 49.
+     (Contributed by NM, 31-Jan-2015.) $)
+  df-or $p |- ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) $=
+    ( wo wn wi pm2.53 pm2.54 impbii ) ABCADBEABFABGH $.
+
+  $( Implication in terms of disjunction.  Theorem *4.6 of [WhiteheadRussell]
+     p. 120.  See ~ imordc for a version which holds intuitionistically, by
+     restricting itself to decidable propositions.  (Contributed by NM,
+     5-Aug-1993.) $)
+  imor $p |- ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) $=
+    ( wi wn wo notnot imbi1i df-or bitr4i ) ABCADZDZBCJBEAKBAFGJBHI $.
 
   ${
     orri.1 $e |- ( -. ph -> ps ) $.
