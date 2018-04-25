@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-Apr-2018
+$( iset.mm - Version of 24-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6116,10 +6116,10 @@ $)
   pm2.521 $p |- ( -. ( ph -> ps ) -> ( ps -> ph ) ) $=
     ( wi wn simplim a1d ) ABCDABABEF $.
 
-  $( Contraposition.  Theorem *4.1 of [WhiteheadRussell] p. 116.  (Contributed
-     by NM, 5-Aug-1993.) $)
-  con34b $p |- ( ( ph -> ps ) <-> ( -. ps -> -. ph ) ) $=
-    ( wi wn con3 ax-3 impbii ) ABCBDADCABEBAFG $.
+  $( Contraposition.  Theorem *4.1 of [WhiteheadRussell] p. 116, but for a
+     decidable proposition.  (Contributed by Jim Kingdon, 24-Apr-2018.) $)
+  con34bdc $p |- ( DECID ps -> ( ( ph -> ps ) <-> ( -. ps -> -. ph ) ) ) $=
+    ( wdc wi wn con3 condc impbid2 ) BCABDBEAEDABFBAGH $.
 
   $( Double negation.  Theorem *4.13 of [WhiteheadRussell] p. 117.
      (Contributed by NM, 5-Aug-1993.) $)
@@ -6323,16 +6323,18 @@ $)
   annim $p |- ( ( ph /\ -. ps ) <-> -. ( ph -> ps ) ) $=
     ( wi wn wa iman con2bii ) ABCABDEABFG $.
 
-  $( Theorem *4.14 of [WhiteheadRussell] p. 117.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Oct-2012.) $)
-  pm4.14 $p |- ( ( ( ph /\ ps ) -> ch ) <-> ( ( ph /\ -. ch ) -> -. ps ) ) $=
-    ( wi wn wa con34b imbi2i impexp 3bitr4i ) ABCDZDACEZBEZDZDABFCDALFMDKNABCGH
-    ABCIALMIJ $.
+  $( Theorem *4.14 of [WhiteheadRussell] p. 117, given a decidability
+     condition.  (Contributed by Jim Kingdon, 24-Apr-2018.) $)
+  pm4.14dc $p |- ( DECID ch ->
+      ( ( ( ph /\ ps ) -> ch ) <-> ( ( ph /\ -. ch ) -> -. ps ) ) ) $=
+    ( wdc wi wn wa con34bdc imbi2d impexp 3bitr4g ) CDZABCEZEACFZBFZE
+    ZEABGCEANGOELMPABCHIABCJANOJK $.
 
-  $( Theorem *3.37 (Transp) of [WhiteheadRussell] p. 112.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Oct-2012.) $)
-  pm3.37 $p |- ( ( ( ph /\ ps ) -> ch ) -> ( ( ph /\ -. ch ) -> -. ps ) ) $=
-    ( wa wi wn pm4.14 biimpi ) ABDCEACFDBFEABCGH $.
+  $( Theorem *3.37 (Transp) of [WhiteheadRussell] p. 112, given a decidability
+     condition.  (Contributed by Jim Kingdon, 24-Apr-2018.) $)
+  pm3.37dc $p |- ( DECID ch ->
+      ( ( ( ph /\ ps ) -> ch ) -> ( ( ph /\ -. ch ) -> -. ps ) ) ) $=
+    ( wdc wa wi wn pm4.14dc biimpd ) CDABECFACGEBGFABCHI $.
 
   $( Theorem *4.15 of [WhiteheadRussell] p. 117.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 18-Nov-2012.) $)
