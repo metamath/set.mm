@@ -1,4 +1,4 @@
-$( iset.mm - Version of 24-Apr-2018
+$( iset.mm - Version of 25-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6316,6 +6316,14 @@ $)
      Wolf Lammen, 30-Oct-2012.) $)
   iman $p |- ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) $=
     ( wi wn wa notnot imbi2i imnan bitri ) ABCABDZDZCAJEDBKABFGAJHI $.
+
+  $( Express implication in terms of conjunction.  Theorem 3.4(27) of [Stoll]
+     p. 176, with an added decidability condition.  The forward direction,
+     ~ imanim , holds for all propositions, not just decidable ones.
+     (Contributed by Jim Kingdon, 25-Apr-2018.) $)
+  imandc $p |- ( DECID ps -> ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) ) $=
+    ( wdc wi wn wa notnotdc imbi2d imnan syl6bb ) BCZABDABEZEZDALFEKB
+    MABGHALIJ $.
 
   $( Express conjunction in terms of implication.  Only the forward direction,
      ~ annimim , is valid intuitionistically.  (Contributed by NM,
