@@ -6624,6 +6624,16 @@ $)
     ( wdc wi wa wb dcim com12 dcan syl6c dfbi2 dcbii syl6ibr ) ACZBCZ
     ABDZBADZEZCZABFZCNOPCQCZSABGONUABAGHPQIJTRABKLM $.
 
+  $( Express conjunction in terms of implication.  The forward direction,
+     ~ annimim , is valid for all propositions, but as an equivalence, it
+     requires a decidability condition.  (Contributed by Jim Kingdon,
+     25-Apr-2018.) $)
+  annimdc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( ph /\ -. ps ) <-> -. ( ph -> ps ) ) ) ) $=
+    ( wdc wn wa wi imandc adantl dcim imp dcn dcan syl5 con2bidc sylc
+    wb mpbid ex ) ACZBCZABDZEZABFZDPZSTEZUCUBDPZUDTUFSABGHUEUCCZUBCZU
+    FUDPSTUGABIJSTUHTUACSUHBKAUALMJUCUBNOQR $.
+
   ${
     mpbiran.1 $e |- ps $.
     mpbiran.2 $e |- ( ph <-> ( ps /\ ch ) ) $.
