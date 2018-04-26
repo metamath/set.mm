@@ -6304,18 +6304,11 @@ $)
     CAUDUFAUDGZUEUECZDZUFUHABGZABCZGZDZUJUHABULDZGUNUDUOABFHABULIJUKU
     EUMUIABKABLMNUEFZPQUCUDUEUFUCUEUDABRSUEUJUFUEUITUPPUAUBN $.
 
-  $( Express implication in terms of conjunction.  The biconditionalized
-     version of this theorem, ~ iman , is not valid intuitionistically.
-     (Contributed by Jim Kingdon, 24-Dec-2017.) $)
+  $( Express implication in terms of conjunction.  The converse only holds
+     given a decidability condition; see ~ imandc .  (Contributed by Jim
+     Kingdon, 24-Dec-2017.) $)
   imanim $p |- ( ( ph -> ps ) -> -. ( ph /\ -. ps ) ) $=
     ( wn wa wi annimim con2i ) ABCDABEABFG $.
-
-  $( Express implication in terms of conjunction.  Theorem 3.4(27) of [Stoll]
-     p. 176.  Only the forward direction, ~ imanim , is valid
-     intuitionistically.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
-     Wolf Lammen, 30-Oct-2012.) $)
-  iman $p |- ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) $=
-    ( wi wn wa notnot imbi2i imnan bitri ) ABCABDZDZCAJEDBKABFGAJHI $.
 
   $( Express implication in terms of conjunction.  Theorem 3.4(27) of [Stoll]
      p. 176, with an added decidability condition.  The forward direction,
@@ -6324,12 +6317,6 @@ $)
   imandc $p |- ( DECID ps -> ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) ) $=
     ( wdc wi wn wa notnotdc imbi2d imnan syl6bb ) BCZABDABEZEZDALFEKB
     MABGHALIJ $.
-
-  $( Express conjunction in terms of implication.  Only the forward direction,
-     ~ annimim , is valid intuitionistically.  (Contributed by NM,
-     2-Aug-1994.) $)
-  annim $p |- ( ( ph /\ -. ps ) <-> -. ( ph -> ps ) ) $=
-    ( wi wn wa iman con2bii ) ABCABDEABFG $.
 
   $( Theorem *4.14 of [WhiteheadRussell] p. 117, given a decidability
      condition.  (Contributed by Jim Kingdon, 24-Apr-2018.) $)
@@ -14253,6 +14240,21 @@ $(
   classical logic, but probably intuitionistic proofs can be found
   for much of it.
 $)
+
+  $( Express implication in terms of conjunction.  Theorem 3.4(27) of [Stoll]
+     p. 176.  Only the forward direction, ~ imanim , is valid
+     intuitionistically.  See ~ imandc for a version which holds
+     intuitionistically, by adding a decidability condition.  (Contributed by
+     NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen, 30-Oct-2012.) $)
+  iman $p |- ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) $=
+    ( wi wn wa notnot imbi2i imnan bitri ) ABCABDZDZCAJEDBKABFGAJHI $.
+
+  $( Express conjunction in terms of implication.  Only the forward direction,
+     ~ annimim , is valid intuitionistically.  See ~ annimdc for a version
+     which holds intuitionistically, by adding a decidability condition.
+     (Contributed by NM, 2-Aug-1994.) $)
+  annim $p |- ( ( ph /\ -. ps ) <-> -. ( ph -> ps ) ) $=
+    ( wi wn wa iman con2bii ) ABCABDEABFG $.
 
   $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
      intuitionistically, although its converse, ~ pm2.53 , does.  See
