@@ -1435,9 +1435,9 @@ $)
      biconditional in its own definition), but once we have the biconditional,
      we can prove ~ dfbi2 which uses the biconditional instead.
 
-     Other textbook definitions of the biconditional, such as ~ dfbi1 and
-     ~ dfbi3 , only hold clasically, not intuitionistically.  (Contributed by
-     NM, 5-Aug-1993.)  (Revised by Jim Kingdon, 24-Nov-2017.) $)
+     Other definitions of the biconditional, such as ~ dfbi3 , only hold
+     clasically, not intuitionistically.  (Contributed by NM, 5-Aug-1993.)
+     (Revised by Jim Kingdon, 24-Nov-2017.) $)
   df-bi $a |- ( ( ( ph <-> ps ) -> ( ( ph -> ps ) /\ ( ps -> ph ) ) )
         /\ ( ( ( ph -> ps ) /\ ( ps -> ph ) ) -> ( ph <-> ps ) ) ) $.
 
@@ -6284,11 +6284,6 @@ $)
      3-Jan-2005.) $)
   pm4.67 $p |- ( -. ( -. ph -> -. ps ) <-> ( -. ph /\ ps ) ) $=
     ( wn pm4.63 ) ACBD $.
-
-  $( Relate the biconditional connective to primitive connectives.
-     (Contributed by NM, 5-Aug-1993.)  (Revised by NM, 31-Jan-2015.) $)
-  dfbi1 $p |- ( ( ph <-> ps ) <-> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ) $=
-    ( wb wi wa wn dfbi2 df-an bitri ) ABCABDZBADZEJKFDFABGJKHI $.
 
   $( Express conjunction in terms of implication.  The biconditionalized
      version of this theorem, ~ annim , is not valid intuitionistically.
