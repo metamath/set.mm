@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Apr-2018
+$( iset.mm - Version of 25-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -1435,9 +1435,9 @@ $)
      biconditional in its own definition), but once we have the biconditional,
      we can prove ~ dfbi2 which uses the biconditional instead.
 
-     Other textbook definitions of the biconditional, such as ~ dfbi1 and
-     ~ dfbi3 , only hold clasically, not intuitionistically.  (Contributed by
-     NM, 5-Aug-1993.)  (Revised by Jim Kingdon, 24-Nov-2017.) $)
+     Other definitions of the biconditional, such as ~ dfbi3 , only hold
+     clasically, not intuitionistically.  (Contributed by NM, 5-Aug-1993.)
+     (Revised by Jim Kingdon, 24-Nov-2017.) $)
   df-bi $a |- ( ( ( ph <-> ps ) -> ( ( ph -> ps ) /\ ( ps -> ph ) ) )
         /\ ( ( ( ph -> ps ) /\ ( ps -> ph ) ) -> ( ph <-> ps ) ) ) $.
 
@@ -6116,10 +6116,10 @@ $)
   pm2.521 $p |- ( -. ( ph -> ps ) -> ( ps -> ph ) ) $=
     ( wi wn simplim a1d ) ABCDABABEF $.
 
-  $( Contraposition.  Theorem *4.1 of [WhiteheadRussell] p. 116.  (Contributed
-     by NM, 5-Aug-1993.) $)
-  con34b $p |- ( ( ph -> ps ) <-> ( -. ps -> -. ph ) ) $=
-    ( wi wn con3 ax-3 impbii ) ABCBDADCABEBAFG $.
+  $( Contraposition.  Theorem *4.1 of [WhiteheadRussell] p. 116, but for a
+     decidable proposition.  (Contributed by Jim Kingdon, 24-Apr-2018.) $)
+  con34bdc $p |- ( DECID ps -> ( ( ph -> ps ) <-> ( -. ps -> -. ph ) ) ) $=
+    ( wdc wi wn con3 condc impbid2 ) BCABDBEAEDABFBAGH $.
 
   $( Double negation.  Theorem *4.13 of [WhiteheadRussell] p. 117.
      (Contributed by NM, 5-Aug-1993.) $)
@@ -6285,11 +6285,6 @@ $)
   pm4.67 $p |- ( -. ( -. ph -> -. ps ) <-> ( -. ph /\ ps ) ) $=
     ( wn pm4.63 ) ACBD $.
 
-  $( Relate the biconditional connective to primitive connectives.
-     (Contributed by NM, 5-Aug-1993.)  (Revised by NM, 31-Jan-2015.) $)
-  dfbi1 $p |- ( ( ph <-> ps ) <-> -. ( ( ph -> ps ) -> -. ( ps -> ph ) ) ) $=
-    ( wb wi wa wn dfbi2 df-an bitri ) ABCABDZBADZEJKFDFABGJKHI $.
-
   $( Express conjunction in terms of implication.  The biconditionalized
      version of this theorem, ~ annim , is not valid intuitionistically.
      (Contributed by Jim Kingdon, 24-Dec-2017.) $)
@@ -6304,46 +6299,37 @@ $)
     CAUDUFAUDGZUEUECZDZUFUHABGZABCZGZDZUJUHABULDZGUNUDUOABFHABULIJUKU
     EUMUIABKABLMNUEFZPQUCUDUEUFUCUEUDABRSUEUJUFUEUITUPPUAUBN $.
 
-  $( Express implication in terms of conjunction.  The biconditionalized
-     version of this theorem, ~ iman , is not valid intuitionistically.
-     (Contributed by Jim Kingdon, 24-Dec-2017.) $)
+  $( Express implication in terms of conjunction.  The converse only holds
+     given a decidability condition; see ~ imandc .  (Contributed by Jim
+     Kingdon, 24-Dec-2017.) $)
   imanim $p |- ( ( ph -> ps ) -> -. ( ph /\ -. ps ) ) $=
     ( wn wa wi annimim con2i ) ABCDABEABFG $.
 
   $( Express implication in terms of conjunction.  Theorem 3.4(27) of [Stoll]
-     p. 176.  Only the forward direction, ~ imanim , is valid
-     intuitionistically.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
-     Wolf Lammen, 30-Oct-2012.) $)
-  iman $p |- ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) $=
-    ( wi wn wa notnot imbi2i imnan bitri ) ABCABDZDZCAJEDBKABFGAJHI $.
+     p. 176, with an added decidability condition.  The forward direction,
+     ~ imanim , holds for all propositions, not just decidable ones.
+     (Contributed by Jim Kingdon, 25-Apr-2018.) $)
+  imandc $p |- ( DECID ps -> ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) ) $=
+    ( wdc wi wn wa notnotdc imbi2d imnan syl6bb ) BCZABDABEZEZDALFEKB
+    MABGHALIJ $.
 
-  $( Express conjunction in terms of implication.  Only the forward direction,
-     ~ annimim , is valid intuitionistically.  (Contributed by NM,
-     2-Aug-1994.) $)
-  annim $p |- ( ( ph /\ -. ps ) <-> -. ( ph -> ps ) ) $=
-    ( wi wn wa iman con2bii ) ABCABDEABFG $.
+  $( Theorem *4.14 of [WhiteheadRussell] p. 117, given a decidability
+     condition.  (Contributed by Jim Kingdon, 24-Apr-2018.) $)
+  pm4.14dc $p |- ( DECID ch ->
+      ( ( ( ph /\ ps ) -> ch ) <-> ( ( ph /\ -. ch ) -> -. ps ) ) ) $=
+    ( wdc wi wn wa con34bdc imbi2d impexp 3bitr4g ) CDZABCEZEACFZBFZE
+    ZEABGCEANGOELMPABCHIABCJANOJK $.
 
-  $( Theorem *4.14 of [WhiteheadRussell] p. 117.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Oct-2012.) $)
-  pm4.14 $p |- ( ( ( ph /\ ps ) -> ch ) <-> ( ( ph /\ -. ch ) -> -. ps ) ) $=
-    ( wi wn wa con34b imbi2i impexp 3bitr4i ) ABCDZDACEZBEZDZDABFCDALFMDKNABCGH
-    ABCIALMIJ $.
-
-  $( Theorem *3.37 (Transp) of [WhiteheadRussell] p. 112.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Oct-2012.) $)
-  pm3.37 $p |- ( ( ( ph /\ ps ) -> ch ) -> ( ( ph /\ -. ch ) -> -. ps ) ) $=
-    ( wa wi wn pm4.14 biimpi ) ABDCEACFDBFEABCGH $.
+  $( Theorem *3.37 (Transp) of [WhiteheadRussell] p. 112, given a decidability
+     condition.  (Contributed by Jim Kingdon, 24-Apr-2018.) $)
+  pm3.37dc $p |- ( DECID ch ->
+      ( ( ( ph /\ ps ) -> ch ) -> ( ( ph /\ -. ch ) -> -. ps ) ) ) $=
+    ( wdc wa wi wn pm4.14dc biimpd ) CDABECFACGEBGFABCHI $.
 
   $( Theorem *4.15 of [WhiteheadRussell] p. 117.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 18-Nov-2012.) $)
   pm4.15 $p |- ( ( ( ph /\ ps ) -> -. ch ) <-> ( ( ps /\ ch ) -> -. ph ) ) $=
     ( wa wn wi con2b nan bitr2i ) BCDZAEFAJEFABDCEFJAGABCHI $.
-
-  $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
-     intuitionistically, although its converse, ~ pm2.53 , does.  (Contributed
-     by NM, 3-Jan-2005.) $)
-  pm2.54 $p |- ( ( -. ph -> ps ) -> ( ph \/ ps ) ) $=
-    ( wn wo notnot2 orc syl olc ja ) ACZBABDZJCAKAEABFGBAHI $.
 
   $( Deriving disjunction from implication for a decidable proposition.  Based
      on theorem *2.54 of [WhiteheadRussell] p. 107.  The converse, ~ pm2.53 ,
@@ -6352,11 +6338,6 @@ $)
   pm2.54dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( ph \/ ps ) ) ) $=
     ( wdc wn wi wo dcn notnot2dc orc syl6 a1d olc a1i jaddc mpd ) ACZ
     ADZCZQBEABFZEAGPQBSPQDZSERPTASAHABIJKBSEPBALMNO $.
-
-  $( Definition of 'or' in terms of negation and implication (classical).
-     Definition of [Margaris] p. 49.  (Contributed by NM, 31-Jan-2015.) $)
-  df-or $p |- ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) $=
-    ( wo wn wi pm2.53 pm2.54 impbii ) ABCADBEABFABGH $.
 
   $( Definition of 'or' in terms of negation and implication for a decidable
      proposition.  Based on definition of [Margaris] p. 49.  (Contributed by
@@ -6389,30 +6370,12 @@ $)
     ( wdc wo wi dfor2dc imbi2d bi2.04 syl6rbbr ) BDZABCEZFABCFZCFZFMA
     CFFKLNABCGHMACIJ $.
 
-  $( Implication in terms of disjunction.  Theorem *4.6 of [WhiteheadRussell]
-     p. 120.  (Contributed by NM, 5-Aug-1993.) $)
-  imor $p |- ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) $=
-    ( wi wn wo notnot imbi1i df-or bitr4i ) ABCADZDZBCJBEAKBAFGJBHI $.
-
   $( Implication in terms of disjunction for a decidable proposition.  Based on
      theorem *4.6 of [WhiteheadRussell] p. 120.  (Contributed by Jim Kingdon,
      20-Apr-2018.) $)
   imordc $p |- ( DECID ph -> ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) ) $=
     ( wdc wi wn wo notnotdc imbi1d wb dcn dfordc syl bitr4d ) ACZABDA
     EZEZBDZOBFZNAPBAGHNOCRQIAJOBKLM $.
-
-  ${
-    imori.1 $e |- ( ph -> ps ) $.
-    $( Infer disjunction from implication.  (Contributed by NM,
-       12-Mar-2012.) $)
-    imori $p |- ( -. ph \/ ps ) $=
-      ( wi wn wo imor mpbi ) ABDAEBFCABGH $.
-  $}
-
-  $( Theorem *4.62 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.62 $p |- ( ( ph -> -. ps ) <-> ( -. ph \/ -. ps ) ) $=
-    ( wn imor ) ABCD $.
 
   $( Implication in terms of disjunction.  Like Theorem *4.62 of
      [WhiteheadRussell] p. 120, but for a decidable antecedent.  (Contributed
@@ -6642,6 +6605,16 @@ $)
   dcbi $p |- ( DECID ph -> ( DECID ps -> DECID ( ph <-> ps ) ) ) $=
     ( wdc wi wa wb dcim com12 dcan syl6c dfbi2 dcbii syl6ibr ) ACZBCZ
     ABDZBADZEZCZABFZCNOPCQCZSABGONUABAGHPQIJTRABKLM $.
+
+  $( Express conjunction in terms of implication.  The forward direction,
+     ~ annimim , is valid for all propositions, but as an equivalence, it
+     requires a decidability condition.  (Contributed by Jim Kingdon,
+     25-Apr-2018.) $)
+  annimdc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( ph /\ -. ps ) <-> -. ( ph -> ps ) ) ) ) $=
+    ( wdc wn wa wi imandc adantl dcim imp dcn dcan syl5 con2bidc sylc
+    wb mpbid ex ) ACZBCZABDZEZABFZDPZSTEZUCUBDPZUDTUFSABGHUEUCCZUBCZU
+    FUDPSTUGABIJSTUHTUACSUHBKAUALMJUCUBNOQR $.
 
   ${
     mpbiran.1 $e |- ps $.
@@ -11179,8 +11152,8 @@ $)
     ACEZBCEZDZPTCRSCACFBCFGARBSACHBCHIJRQSAPCABKLBPCBAMLNO $.
 
   $( The antecedent provides a condition implying the converse of ~ 19.33 .
-     Compare Theorem 19.33 of [Margaris] p. 90.  This variation of ~ 19.33b is
-     intuitionistically valid with a slight modification of the antecedent.
+     Compare Theorem 19.33 of [Margaris] p. 90.  This variation of ~ 19.33bdc
+     is intuitionistically valid without a decidability condition.
      (Contributed by Mario Carneiro, 2-Feb-2015.) $)
   19.33b2 $p |- ( ( -. E. x ph \/ -. E. x ps ) ->
                ( A. x ( ph \/ ps ) <-> ( A. x ph \/ A. x ps ) ) ) $=
@@ -11188,6 +11161,15 @@ $)
     wo wi com12 19.33 impbid1 ) ACDEZBCDEZPZABPZCFZACFZBCFZPZUEUCUHUCBEZCFZAEZC
     FZPZUEUHUCUBUAPUMUAUBGUJUBULUABCHACHIJUEUJUFULUGUDUIACBAUIAQBAKLMUDUKBCABKM
     NORABCST $.
+
+  $( Converse of ~ 19.33 given ` -. ( E. x ph /\ E. x ps ) ` and a decidability
+     condition.  Compare Theorem 19.33 of [Margaris] p. 90.  For a version
+     which does not require a decidability condition, see ~ 19.33b2
+     (Contributed by Jim Kingdon, 23-Apr-2018.) $)
+  19.33bdc $p |- ( DECID E. x ph -> ( -. ( E. x ph /\ E. x ps ) ->
+               ( A. x ( ph \/ ps ) <-> ( A. x ph \/ A. x ps ) ) ) ) $=
+    ( wex wdc wa wn wo wal wb ianordc 19.33b2 syl6bi ) ACDZENBCDZFGNG
+    OGHABHCIACIBCIHJNOKABCLM $.
 
   $( Theorem 19.40 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   19.40 $p |- ( E. x ( ph /\ ps ) -> ( E. x ph /\ E. x ps ) ) $=
@@ -14254,6 +14236,42 @@ $(
   for much of it.
 $)
 
+  $( Express implication in terms of conjunction.  Theorem 3.4(27) of [Stoll]
+     p. 176.  Only the forward direction, ~ imanim , is valid
+     intuitionistically.  See ~ imandc for a version which holds
+     intuitionistically, by adding a decidability condition.  (Contributed by
+     NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen, 30-Oct-2012.) $)
+  iman $p |- ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) $=
+    ( wi wn wa notnot imbi2i imnan bitri ) ABCABDZDZCAJEDBKABFGAJHI $.
+
+  $( Express conjunction in terms of implication.  Only the forward direction,
+     ~ annimim , is valid intuitionistically.  See ~ annimdc for a version
+     which holds intuitionistically, by adding a decidability condition.
+     (Contributed by NM, 2-Aug-1994.) $)
+  annim $p |- ( ( ph /\ -. ps ) <-> -. ( ph -> ps ) ) $=
+    ( wi wn wa iman con2bii ) ABCABDEABFG $.
+
+  $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
+     intuitionistically, although its converse, ~ pm2.53 , does.  See
+     ~ pm2.54dc for a version which holds intuitionistically, by restricting
+     itself to decidable propositions.  (Contributed by NM, 3-Jan-2005.) $)
+  pm2.54 $p |- ( ( -. ph -> ps ) -> ( ph \/ ps ) ) $=
+    ( wn wo notnot2 orc syl olc ja ) ACZBABDZJCAKAEABFGBAHI $.
+
+  $( Definition of 'or' in terms of negation and implication (classical).  See
+     ~ dfordc for a version which holds intuitionistically, by restricting
+     itself to decidable propositions.  Definition of [Margaris] p. 49.
+     (Contributed by NM, 31-Jan-2015.) $)
+  df-or $p |- ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) $=
+    ( wo wn wi pm2.53 pm2.54 impbii ) ABCADBEABFABGH $.
+
+  $( Implication in terms of disjunction.  Theorem *4.6 of [WhiteheadRussell]
+     p. 120.  See ~ imordc for a version which holds intuitionistically, by
+     restricting itself to decidable propositions.  (Contributed by NM,
+     5-Aug-1993.) $)
+  imor $p |- ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) $=
+    ( wi wn wo notnot imbi1i df-or bitr4i ) ABCADZDZBCJBEAKBAFGJBHI $.
+
   ${
     orri.1 $e |- ( -. ph -> ps ) $.
     $( Infer implication from disjunction.  This is a classical, not an
@@ -15233,14 +15251,6 @@ $)
   pm4.81 $p |- ( ( -. ph -> ph ) <-> ph ) $=
     ( wn wi pm2.18 pm2.24 impbii ) ABACAADAAEF $.
 
-  $( Negated conjunction in terms of disjunction (DeMorgan's law).  Theorem
-     *4.51 of [WhiteheadRussell] p. 120.  As an equivalence, this does not hold
-     intuitionistically, but the reverse direction does hold and is at
-     ~ pm3.14 .  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
-     Salmon, 13-May-2011.) $)
-  ianor $p |- ( -. ( ph /\ ps ) <-> ( -. ph \/ -. ps ) ) $=
-    ( wa wn wi wo imnan pm4.62 bitr3i ) ABCDABDZEADJFABGABHI $.
-
   $( Theorem *4.52 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
   pm4.52 $p |- ( ( ph /\ -. ps ) <-> -. ( -. ph \/ ps ) ) $=
@@ -15362,16 +15372,6 @@ $)
     ( wn wi wal wex wo exnal exim syl5bir df-or albii 3imtr4i ) ADZBEZCFZACFZDZ
     BCGZEABHZCFRTHSOCGQTACIOBCJKUAPCABLMRTLN $.
 
-  $( The antecedent provides a condition implying the converse of ~ 19.33 .
-     Compare Theorem 19.33 of [Margaris] p. 90.  For an intuitionistically
-     valid variation, see ~ 19.33b2 (Contributed by NM, 27-Mar-2004.)  (Proof
-     shortened by Wolf Lammen, 5-Jul-2014.)  (Proof shortened by Mario
-     Carneiro, 2-Feb-2015.) $)
-  19.33b $p |- ( -. ( E. x ph /\ E. x ps ) ->
-               ( A. x ( ph \/ ps ) <-> ( A. x ph \/ A. x ps ) ) ) $=
-    ( wex wa wn wo wal wb ianor 19.33b2 sylbi ) ACDZBCDZEFMFNFGABGCHACHBCHGIMNJ
-    ABCKL $.
-
   ${
     4cases.1 $e |- ( ( ph /\ ps ) -> ch ) $.
     4cases.2 $e |- ( ( ph /\ -. ps ) -> ch ) $.
@@ -15410,11 +15410,6 @@ $)
      intuitionistic logic.  (Contributed by NM, 5-Aug-1993.) $)
   exmid $p |- ( ph \/ -. ph ) $=
     ( wn id orri ) AABZECD $.
-
-  $( Theorem *2.1 of [WhiteheadRussell] p. 101.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 23-Nov-2012.) $)
-  pm2.1 $p |- ( -. ph \/ ph ) $=
-    ( id imori ) AAABC $.
 
   $( Theorem *2.13 of [WhiteheadRussell] p. 101.  (Contributed by NM,
      3-Jan-2005.) $)
