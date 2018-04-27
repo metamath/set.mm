@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Apr-2018
+$( iset.mm - Version of 27-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -9209,6 +9209,13 @@ $)
       ( -. ( ph <-> ps ) <-> ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) ) ) ) $=
     ( wdc wb wn wo wa xor3dc imp pm5.17dc adantl bitr4d ex ) ACZBCZAB
     DEZABFABGEGZDNOGPABEDZQNOPRDABHIOQRDNABJKLM $.
+
+  $( Exclusive or is equivalent to negated biconditional for decidable
+     propositions.  (Contributed by Jim Kingdon, 27-Apr-2018.) $)
+  xornbidc $p  |- ( DECID ph -> ( DECID ps ->
+      ( ( ph \/_ ps ) <-> -. ( ph <-> ps ) ) ) ) $=
+    ( wdc wxo wb wn wa wo xor2dc imp df-xor syl6rbbr ex ) ACZBCZABDZABEFZENOGQA
+    BHABGFGZPNOQREABIJABKLM $.
 
   $( Exclusive or implies the left proposition is decidable.  (Contributed by
      Jim Kingdon, 12-Mar-2018.) $)
