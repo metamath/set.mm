@@ -5979,6 +5979,12 @@ $)
   simprim $p |- ( -. ( ph -> -. ps ) -> ps ) $=
     ( idd impi ) ABBABCD $.
 
+  $( Simplification given a decidable proposition.  Similar to Theorem *3.27
+     (Simp) of [WhiteheadRussell] p. 112.  (Contributed by Jim Kingdon,
+     30-Apr-2018.) $)
+  simprimdc $p |- ( DECID ps -> ( -. ( ph -> -. ps ) -> ps ) ) $=
+    ( wi wdc idd a1i impidc ) ABBABBCCBDABEFG $.
+
   $( Simplification.  Similar to Theorem *3.26 (Simp) of [WhiteheadRussell]
      p. 112.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
      Lammen, 21-Jul-2012.) $)
