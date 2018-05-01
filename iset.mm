@@ -6290,6 +6290,16 @@ $)
     ( wa wn wi pm3.2im imp simplim simprim jca impbii ) ABCABDZEDZABMABFGMABALH
     ABIJK $.
 
+  $( Definition of 'and' in terms of negation and implication, for decidable
+     propositions.  The forward direction holds for all propositions, and can
+     (basically) be found at ~ pm3.2im .  (Contributed by Jim Kingdon,
+     30-Apr-2018.) $)
+  dfandc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( ph /\ ps ) <-> -. ( ph -> -. ps ) ) ) ) $=
+    ( wdc wa wn pm3.2im imp simplimdc adantr simprimdc adantl impbid2
+    wi wb jca ex ) ACZBCZABDZABEZMEZNQRDZSUAABUAABFGUBUASUBUADABUBUAA
+    QUAAMRATHIGUBUABRUABMQABJKGOPLP $.
+
   $( Theorem *4.63 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.) $)
   pm4.63 $p |- ( -. ( ph -> -. ps ) <-> ( ph /\ ps ) ) $=
