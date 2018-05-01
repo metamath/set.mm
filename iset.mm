@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Apr-2018
+$( iset.mm - Version of 30-Apr-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5962,6 +5962,15 @@ $)
        shortened by Wolf Lammen, 20-Jul-2013.) $)
     impi $p |- ( -. ( ph -> -. ps ) -> ch ) $=
       ( wn wi con3rr3 con1i ) CABEFABCDGH $.
+  $}
+
+  ${
+    impidc.1 $e |- ( DECID ch -> ( ph -> ( ps -> ch ) ) ) $.
+    $( An importation inference for a decidable consequent.  (Contributed by
+       Jim Kingdon, 30-Apr-2018.) $)
+    impidc $p |- ( DECID ch -> ( -. ( ph -> -. ps ) -> ch ) ) $=
+      ( wdc wn wi wa imp con3d ex com23 con1dc mpd ) CEZCFZABF
+      ZGZGRFCGOAPQOAPQGOAHBCOABCGDIJKLCRMN $.
   $}
 
   $( Simplification.  Similar to Theorem *3.27 (Simp) of [WhiteheadRussell]
