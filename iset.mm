@@ -1,4 +1,4 @@
-$( iset.mm - Version of 30-Apr-2018
+$( iset.mm - Version of 1-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6300,15 +6300,18 @@ $)
     wi wb jca ex ) ACZBCZABDZABEZMEZNQRDZSUAABUAABFGUBUASUBUADABUBUAA
     QUAAMRATHIGUBUABRUABMQABJKGOPLP $.
 
-  $( Theorem *4.63 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.63 $p |- ( -. ( ph -> -. ps ) <-> ( ph /\ ps ) ) $=
-    ( wa wn wi df-an bicomi ) ABCABDEDABFG $.
+  $( Theorem *4.63 of [WhiteheadRussell] p. 120, for decidable propositions.
+     (Contributed by Jim Kingdon, 1-May-2018.) $)
+  pm4.63dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( ph -> -. ps ) <-> ( ph /\ ps ) ) ) ) $=
+    ( wdc wn wi wa wb dfandc imp bicomd ex ) ACZBCZABDEDZABFZGLMFONLM
+    ONGABHIJK $.
 
-  $( Theorem *4.67 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.67 $p |- ( -. ( -. ph -> -. ps ) <-> ( -. ph /\ ps ) ) $=
-    ( wn pm4.63 ) ACBD $.
+  $( Theorem *4.67 of [WhiteheadRussell] p. 120, for decidable propositions.
+     (Contributed by Jim Kingdon, 1-May-2018.) $)
+  pm4.67dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( -. ph -> -. ps ) <-> ( -. ph /\ ps ) ) ) ) $=
+    ( wdc wn wi wa wb dcn pm4.63dc syl ) ACADZCBCKBDEDKBFGEAHKBIJ $.
 
   $( Express conjunction in terms of implication.  The biconditionalized
      version of this theorem, ~ annim , is not valid intuitionistically.
@@ -15503,11 +15506,6 @@ $)
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
   pm4.54 $p |- ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) $=
     ( wn wa wi wo df-an pm4.66 xchbinx ) ACZBDJBCZEAKFJBGABHI $.
-
-  $( Obsolete proof of ~ pm4.54 as of 28-Sep-2014.  (Contributed by NM,
-     3-Jan-2005.)  (Revised by NM, 5-Nov-2012.) $)
-  pm4.54OLD $p |- ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) $=
-    ( wn wa wi wo pm4.67 pm4.66 notbii bitr3i ) ACZBDKBCZEZCALFZCABGMNABHIJ $.
 
   $( Theorem *4.55 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.) $)
