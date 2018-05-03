@@ -5957,14 +5957,6 @@ $)
   $}
 
   ${
-    impi.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( An importation inference.  (Contributed by NM, 5-Aug-1993.)  (Proof
-       shortened by Wolf Lammen, 20-Jul-2013.) $)
-    impi $p |- ( -. ( ph -> -. ps ) -> ch ) $=
-      ( wn wi con3rr3 con1i ) CABEFABCDGH $.
-  $}
-
-  ${
     impidc.1 $e |- ( DECID ch -> ( ph -> ( ps -> ch ) ) ) $.
     $( An importation inference for a decidable consequent.  (Contributed by
        Jim Kingdon, 30-Apr-2018.) $)
@@ -5972,12 +5964,6 @@ $)
       ( wdc wn wi wa imp con3d ex com23 con1dc mpd ) CEZCFZABF
       ZGZGRFCGOAPQOAPQGOAHBCOABCGDIJKLCRMN $.
   $}
-
-  $( Simplification.  Similar to Theorem *3.27 (Simp) of [WhiteheadRussell]
-     p. 112.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
-     Lammen, 13-Nov-2012.) $)
-  simprim $p |- ( -. ( ph -> -. ps ) -> ps ) $=
-    ( idd impi ) ABBABCD $.
 
   $( Simplification given a decidable proposition.  Similar to Theorem *3.27
      (Simp) of [WhiteheadRussell] p. 112.  (Contributed by Jim Kingdon,
