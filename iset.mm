@@ -1,4 +1,4 @@
-$( iset.mm - Version of 1-May-2018
+$( iset.mm - Version of 2-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -706,7 +706,7 @@ $)
        prefixed with the same antecedent.  This allows us to use the theorem in
        places where (in traditional textbook formalizations) the standard
        Deduction Theorem would be used; here ` ph ` would be replaced with a
-       conjunction ( ~ df-an ) of the hypotheses of the would-be deduction.  By
+       conjunction ( ~ wa ) of the hypotheses of the would-be deduction.  By
        contrast, we tend to call the simpler version with no common antecedent
        an "inference" and suffix its label with "i"; compare theorem ~ a1i .
        Finally, a "theorem" would be the form with no hypotheses; in this case
@@ -6284,12 +6284,6 @@ $)
     UEUDUBUCUGUEFZUCUECZUBUJBQUBUEUFUBUEDUFFUKAUERKLSPUBUEUDFUCABRMNO
     TUA $.
 
-  $( Definition of 'and' in terms of negation and implication (classical).
-     (Contributed by NM, 31-Jan-2015.) $)
-  df-an $p |- ( ( ph /\ ps ) <-> -. ( ph -> -. ps ) ) $=
-    ( wa wn wi pm3.2im imp simplim simprim jca impbii ) ABCABDZEDZABMABFGMABALH
-    ABIJK $.
-
   $( Definition of 'and' in terms of negation and implication, for decidable
      propositions.  The forward direction holds for all propositions, and can
      (basically) be found at ~ pm3.2im .  (Contributed by Jim Kingdon,
@@ -6424,6 +6418,25 @@ $)
   oibabs $p |- ( ( ( ph \/ ps ) -> ( ph <-> ps ) ) <-> ( ph <-> ps ) ) $=
     ( wo wb wi pm2.67-2 ibd olc imim1i ibibr sylibr impbid ax-1 impbii ) ABCZAB
     DZEZPQABQABAPBFGQBPEBAEBOPBAHIBAJKLPOMN $.
+
+  $( Theorem *4.64 of [WhiteheadRussell] p. 120, given a decidability
+     condition.  The reverse direction, ~ pm2.53 , holds for all propositions.
+     (Contributed by Jim Kingdon, 2-May-2018.) $)
+  pm4.64dc $p |- ( DECID ph -> ( ( -. ph -> ps ) <-> ( ph \/ ps ) ) ) $=
+    ( wdc wo wn wi dfordc bicomd ) ACABDAEBFABGH $.
+
+  $( Theorem *4.66 of [WhiteheadRussell] p. 120, given a decidability
+     condition.  (Contributed by Jim Kingdon, 2-May-2018.) $)
+  pm4.66dc $p |- ( DECID ph -> ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) ) $=
+    ( wn pm4.64dc ) ABCD $.
+
+  $( Theorem *4.54 of [WhiteheadRussell] p. 120, for decidable propositions.
+     One form of DeMorgan's law.  (Contributed by Jim Kingdon, 2-May-2018.) $)
+  pm4.54dc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) ) ) $=
+    ( wdc wn wa wo wb dcn dfandc syl imp pm4.66dc adantr notbid bitrd
+    wi ex ) ACZBCZADZBEZABDZFZDZGRSEZUATUBPZDZUDRSUAUGGZRTCSUHPAHTBIJ
+    KUEUFUCRUFUCGSABLMNOQ $.
 
   $( Theorem *4.56 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.) $)
@@ -6643,6 +6656,15 @@ $)
     ( wdc wn wa wi imandc adantl dcim imp dcn dcan syl5 con2bidc sylc
     wb mpbid ex ) ACZBCZABDZEZABFZDPZSTEZUCUBDPZUDTUFSABGHUEUCCZUBCZU
     FUDPSTUGABIJSTUHTUACSUHBKAUALMJUCUBNOQR $.
+
+  $( Theorem *4.55 of [WhiteheadRussell] p. 120, for decidable propositions.
+     (Contributed by Jim Kingdon, 2-May-2018.) $)
+  pm4.55dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( -. ph /\ ps ) <-> ( ph \/ -. ps ) ) ) ) $=
+    ( wdc wn wa wo wb pm4.54dc imp dcn anim2i dcor syl wi dcan con2bidc biimprd
+    jca mpd bicomd ex ) ACZBCZADZBEZDZABDZFZGUBUCEZUHUFUIUEUHDGZUHUFGZUBUCUJABH
+    IUIUKUJUIUHCZUECZEUKUJGZUIULUMUIUBUGCZEULUCUOUBBJKUBUOULAUGLIMUBUCUMUBUDCUC
+    UMNAJUDBOMIRULUMUNUHUEPIMQSTUA $.
 
   ${
     mpbiran.1 $e |- ps $.
@@ -15474,43 +15496,6 @@ $)
   nf4 $p |- ( F/ x ph <-> ( A. x ph \/ A. x -. ph ) ) $=
     ( wnf wex wal wi wn wo nf2 imor orcom alnex orbi2i bitr4i 3bitri ) ABCABDZA
     BEZFPGZQHZQAGBEZHZABIPQJSQRHUARQKTRQABLMNO $.
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Relationships between connectives (classical)
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-In classical logic, the predicate logic connectives are connected with
-each other by theorems such as ~ oran or ~ imor . Intuitionistic logic
-has some such connections but they are fewer and some of the ones which
-are biconditionals in classical logic only hold in one direction in
-intuitionistic logic.
-
-Here we collect a number of theorems related to such relationships
-whose current proofs depend on ~ ax-3 . Many of them do not hold
-intuitionistically.
-
-$)
-
-  $( Theorem *4.64 of [WhiteheadRussell] p. 120.  Only the reverse direction
-     holds intuitionistically.  (Contributed by NM, 3-Jan-2005.) $)
-  pm4.64 $p |- ( ( -. ph -> ps ) <-> ( ph \/ ps ) ) $=
-    ( wo wn wi df-or bicomi ) ABCADBEABFG $.
-
-  $( Theorem *4.66 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.66 $p |- ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) $=
-    ( wn pm4.64 ) ABCD $.
-
-  $( Theorem *4.54 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
-  pm4.54 $p |- ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) $=
-    ( wn wa wi wo df-an pm4.66 xchbinx ) ACZBDJBCZEAKFJBGABHI $.
-
-  $( Theorem *4.55 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.55 $p |- ( -. ( -. ph /\ ps ) <-> ( ph \/ -. ps ) ) $=
-    ( wn wo wa pm4.54 con2bii bicomi ) ABCDZACBEZCJIABFGH $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
