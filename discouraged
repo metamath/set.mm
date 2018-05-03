@@ -16055,6 +16055,7 @@ New usage of "nfaldOLD" is discouraged (0 uses).
 New usage of "nfanOLD" is discouraged (0 uses).
 New usage of "nfbiOLD" is discouraged (0 uses).
 New usage of "nfbidOLD" is discouraged (0 uses).
+New usage of "nfeqfOLD" is discouraged (0 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfexOLD" is discouraged (0 uses).
 New usage of "nfim1OLD" is discouraged (0 uses).
@@ -16829,7 +16830,11 @@ New usage of "sbcrot5OLD" is discouraged (0 uses).
 New usage of "sbcssOLD" is discouraged (0 uses).
 New usage of "sbcssVD" is discouraged (0 uses).
 New usage of "sbequ2OLD" is discouraged (0 uses).
+New usage of "sbequiOLD" is discouraged (0 uses).
 New usage of "sbftOLD" is discouraged (0 uses).
+New usage of "sbieOLD" is discouraged (0 uses).
+New usage of "sbiedOLD" is discouraged (0 uses).
+New usage of "sbnOLD" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
 New usage of "sh0" is discouraged (13 uses).
@@ -16986,6 +16991,7 @@ New usage of "spimehOLD" is discouraged (0 uses).
 New usage of "spimtOLD" is discouraged (0 uses).
 New usage of "spnfwOLD" is discouraged (0 uses).
 New usage of "sps-o" is discouraged (7 uses).
+New usage of "spsbeOLD" is discouraged (0 uses).
 New usage of "spvwOLD" is discouraged (0 uses).
 New usage of "spwOLD" is discouraged (0 uses).
 New usage of "sqgt0sr" is discouraged (1 uses).
@@ -17913,6 +17919,7 @@ Proof modification of "nfaldOLD" is discouraged (52 steps).
 Proof modification of "nfanOLD" is discouraged (25 steps).
 Proof modification of "nfbiOLD" is discouraged (31 steps).
 Proof modification of "nfbidOLD" is discouraged (45 steps).
+Proof modification of "nfeqfOLD" is discouraged (42 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfexOLD" is discouraged (24 steps).
 Proof modification of "nfim1OLD" is discouraged (29 steps).
@@ -18063,6 +18070,9 @@ Proof modification of "sbcssOLD" is discouraged (130 steps).
 Proof modification of "sbcssVD" is discouraged (223 steps).
 Proof modification of "sbequ2OLD" is discouraged (29 steps).
 Proof modification of "sbftOLD" is discouraged (58 steps).
+Proof modification of "sbieOLD" is discouraged (31 steps).
+Proof modification of "sbiedOLD" is discouraged (105 steps).
+Proof modification of "sbnOLD" is discouraged (127 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "shmulclOLD" is discouraged (101 steps).
@@ -18087,6 +18097,7 @@ Proof modification of "spimehOLD" is discouraged (91 steps).
 Proof modification of "spimtOLD" is discouraged (77 steps).
 Proof modification of "spnfwOLD" is discouraged (20 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
+Proof modification of "spsbeOLD" is discouraged (35 steps).
 Proof modification of "spvwOLD" is discouraged (10 steps).
 Proof modification of "spwOLD" is discouraged (57 steps).
 Proof modification of "sspwimp" is discouraged (87 steps).

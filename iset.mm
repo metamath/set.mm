@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Apr-2018
+$( iset.mm - Version of 2-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -706,7 +706,7 @@ $)
        prefixed with the same antecedent.  This allows us to use the theorem in
        places where (in traditional textbook formalizations) the standard
        Deduction Theorem would be used; here ` ph ` would be replaced with a
-       conjunction ( ~ df-an ) of the hypotheses of the would-be deduction.  By
+       conjunction ( ~ wa ) of the hypotheses of the would-be deduction.  By
        contrast, we tend to call the simpler version with no common antecedent
        an "inference" and suffix its label with "i"; compare theorem ~ a1i .
        Finally, a "theorem" would be the form with no hypotheses; in this case
@@ -5957,18 +5957,19 @@ $)
   $}
 
   ${
-    impi.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( An importation inference.  (Contributed by NM, 5-Aug-1993.)  (Proof
-       shortened by Wolf Lammen, 20-Jul-2013.) $)
-    impi $p |- ( -. ( ph -> -. ps ) -> ch ) $=
-      ( wn wi con3rr3 con1i ) CABEFABCDGH $.
+    impidc.1 $e |- ( DECID ch -> ( ph -> ( ps -> ch ) ) ) $.
+    $( An importation inference for a decidable consequent.  (Contributed by
+       Jim Kingdon, 30-Apr-2018.) $)
+    impidc $p |- ( DECID ch -> ( -. ( ph -> -. ps ) -> ch ) ) $=
+      ( wdc wn wi wa imp con3d ex com23 con1dc mpd ) CEZCFZABF
+      ZGZGRFCGOAPQOAPQGOAHBCOABCGDIJKLCRMN $.
   $}
 
-  $( Simplification.  Similar to Theorem *3.27 (Simp) of [WhiteheadRussell]
-     p. 112.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
-     Lammen, 13-Nov-2012.) $)
-  simprim $p |- ( -. ( ph -> -. ps ) -> ps ) $=
-    ( idd impi ) ABBABCD $.
+  $( Simplification given a decidable proposition.  Similar to Theorem *3.27
+     (Simp) of [WhiteheadRussell] p. 112.  (Contributed by Jim Kingdon,
+     30-Apr-2018.) $)
+  simprimdc $p |- ( DECID ps -> ( -. ( ph -> -. ps ) -> ps ) ) $=
+    ( wi wdc idd a1i impidc ) ABBABBCCBDABEFG $.
 
   $( Simplification.  Similar to Theorem *3.26 (Simp) of [WhiteheadRussell]
      p. 112.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
@@ -6269,21 +6270,28 @@ $)
     UEUDUBUCUGUEFZUCUECZUBUJBQUBUEUFUBUEDUFFUKAUERKLSPUBUEUDFUCABRMNO
     TUA $.
 
-  $( Definition of 'and' in terms of negation and implication (classical).
-     (Contributed by NM, 31-Jan-2015.) $)
-  df-an $p |- ( ( ph /\ ps ) <-> -. ( ph -> -. ps ) ) $=
-    ( wa wn wi pm3.2im imp simplim simprim jca impbii ) ABCABDZEDZABMABFGMABALH
-    ABIJK $.
+  $( Definition of 'and' in terms of negation and implication, for decidable
+     propositions.  The forward direction holds for all propositions, and can
+     (basically) be found at ~ pm3.2im .  (Contributed by Jim Kingdon,
+     30-Apr-2018.) $)
+  dfandc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( ph /\ ps ) <-> -. ( ph -> -. ps ) ) ) ) $=
+    ( wdc wa wn pm3.2im imp simplimdc adantr simprimdc adantl impbid2
+    wi wb jca ex ) ACZBCZABDZABEZMEZNQRDZSUAABUAABFGUBUASUBUADABUBUAA
+    QUAAMRATHIGUBUABRUABMQABJKGOPLP $.
 
-  $( Theorem *4.63 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.63 $p |- ( -. ( ph -> -. ps ) <-> ( ph /\ ps ) ) $=
-    ( wa wn wi df-an bicomi ) ABCABDEDABFG $.
+  $( Theorem *4.63 of [WhiteheadRussell] p. 120, for decidable propositions.
+     (Contributed by Jim Kingdon, 1-May-2018.) $)
+  pm4.63dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( ph -> -. ps ) <-> ( ph /\ ps ) ) ) ) $=
+    ( wdc wn wi wa wb dfandc imp bicomd ex ) ACZBCZABDEDZABFZGLMFONLM
+    ONGABHIJK $.
 
-  $( Theorem *4.67 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.67 $p |- ( -. ( -. ph -> -. ps ) <-> ( -. ph /\ ps ) ) $=
-    ( wn pm4.63 ) ACBD $.
+  $( Theorem *4.67 of [WhiteheadRussell] p. 120, for decidable propositions.
+     (Contributed by Jim Kingdon, 1-May-2018.) $)
+  pm4.67dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( -. ph -> -. ps ) <-> ( -. ph /\ ps ) ) ) ) $=
+    ( wdc wn wi wa wb dcn pm4.63dc syl ) ACADZCBCKBDEDKBFGEAHKBIJ $.
 
   $( Express conjunction in terms of implication.  The biconditionalized
      version of this theorem, ~ annim , is not valid intuitionistically.
@@ -6396,6 +6404,25 @@ $)
   oibabs $p |- ( ( ( ph \/ ps ) -> ( ph <-> ps ) ) <-> ( ph <-> ps ) ) $=
     ( wo wb wi pm2.67-2 ibd olc imim1i ibibr sylibr impbid ax-1 impbii ) ABCZAB
     DZEZPQABQABAPBFGQBPEBAEBOPBAHIBAJKLPOMN $.
+
+  $( Theorem *4.64 of [WhiteheadRussell] p. 120, given a decidability
+     condition.  The reverse direction, ~ pm2.53 , holds for all propositions.
+     (Contributed by Jim Kingdon, 2-May-2018.) $)
+  pm4.64dc $p |- ( DECID ph -> ( ( -. ph -> ps ) <-> ( ph \/ ps ) ) ) $=
+    ( wdc wo wn wi dfordc bicomd ) ACABDAEBFABGH $.
+
+  $( Theorem *4.66 of [WhiteheadRussell] p. 120, given a decidability
+     condition.  (Contributed by Jim Kingdon, 2-May-2018.) $)
+  pm4.66dc $p |- ( DECID ph -> ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) ) $=
+    ( wn pm4.64dc ) ABCD $.
+
+  $( Theorem *4.54 of [WhiteheadRussell] p. 120, for decidable propositions.
+     One form of DeMorgan's law.  (Contributed by Jim Kingdon, 2-May-2018.) $)
+  pm4.54dc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) ) ) $=
+    ( wdc wn wa wo wb dcn dfandc syl imp pm4.66dc adantr notbid bitrd
+    wi ex ) ACZBCZADZBEZABDZFZDZGRSEZUATUBPZDZUDRSUAUGGZRTCSUHPAHTBIJ
+    KUEUFUCRUFUCGSABLMNOQ $.
 
   $( Theorem *4.56 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.) $)
@@ -6615,6 +6642,15 @@ $)
     ( wdc wn wa wi imandc adantl dcim imp dcn dcan syl5 con2bidc sylc
     wb mpbid ex ) ACZBCZABDZEZABFZDPZSTEZUCUBDPZUDTUFSABGHUEUCCZUBCZU
     FUDPSTUGABIJSTUHTUACSUHBKAUALMJUCUBNOQR $.
+
+  $( Theorem *4.55 of [WhiteheadRussell] p. 120, for decidable propositions.
+     (Contributed by Jim Kingdon, 2-May-2018.) $)
+  pm4.55dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( -. ph /\ ps ) <-> ( ph \/ -. ps ) ) ) ) $=
+    ( wdc wn wa wo wb pm4.54dc imp dcn anim2i dcor syl wi dcan con2bidc biimprd
+    jca mpd bicomd ex ) ACZBCZADZBEZDZABDZFZGUBUCEZUHUFUIUEUHDGZUHUFGZUBUCUJABH
+    IUIUKUJUIUHCZUECZEUKUJGZUIULUMUIUBUGCZEULUCUOUBBJKUBUOULAUGLIMUBUCUMUBUDCUC
+    UMNAJUDBOMIRULUMUNUHUEPIMQSTUA $.
 
   ${
     mpbiran.1 $e |- ps $.
@@ -9209,6 +9245,13 @@ $)
       ( -. ( ph <-> ps ) <-> ( ( ph \/ ps ) /\ -. ( ph /\ ps ) ) ) ) ) $=
     ( wdc wb wn wo wa xor3dc imp pm5.17dc adantl bitr4d ex ) ACZBCZAB
     DEZABFABGEGZDNOGPABEDZQNOPRDABHIOQRDNABJKLM $.
+
+  $( Exclusive or is equivalent to negated biconditional for decidable
+     propositions.  (Contributed by Jim Kingdon, 27-Apr-2018.) $)
+  xornbidc $p  |- ( DECID ph -> ( DECID ps ->
+      ( ( ph \/_ ps ) <-> -. ( ph <-> ps ) ) ) ) $=
+    ( wdc wxo wb wn wa wo xor2dc imp df-xor syl6rbbr ex ) ACZBCZABDZABEFZENOGQA
+    BHABGFGZPNOQREABIJABKLM $.
 
   $( Exclusive or implies the left proposition is decidable.  (Contributed by
      Jim Kingdon, 12-Mar-2018.) $)
@@ -15439,48 +15482,6 @@ $)
   nf4 $p |- ( F/ x ph <-> ( A. x ph \/ A. x -. ph ) ) $=
     ( wnf wex wal wi wn wo nf2 imor orcom alnex orbi2i bitr4i 3bitri ) ABCABDZA
     BEZFPGZQHZQAGBEZHZABIPQJSQRHUARQKTRQABLMNO $.
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Relationships between connectives (classical)
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-In classical logic, the predicate logic connectives are connected with
-each other by theorems such as ~ oran or ~ imor . Intuitionistic logic
-has some such connections but they are fewer and some of the ones which
-are biconditionals in classical logic only hold in one direction in
-intuitionistic logic.
-
-Here we collect a number of theorems related to such relationships
-whose current proofs depend on ~ ax-3 . Many of them do not hold
-intuitionistically.
-
-$)
-
-  $( Theorem *4.64 of [WhiteheadRussell] p. 120.  Only the reverse direction
-     holds intuitionistically.  (Contributed by NM, 3-Jan-2005.) $)
-  pm4.64 $p |- ( ( -. ph -> ps ) <-> ( ph \/ ps ) ) $=
-    ( wo wn wi df-or bicomi ) ABCADBEABFG $.
-
-  $( Theorem *4.66 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.66 $p |- ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) $=
-    ( wn pm4.64 ) ABCD $.
-
-  $( Theorem *4.54 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
-  pm4.54 $p |- ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) $=
-    ( wn wa wi wo df-an pm4.66 xchbinx ) ACZBDJBCZEAKFJBGABHI $.
-
-  $( Obsolete proof of ~ pm4.54 as of 28-Sep-2014.  (Contributed by NM,
-     3-Jan-2005.)  (Revised by NM, 5-Nov-2012.) $)
-  pm4.54OLD $p |- ( ( -. ph /\ ps ) <-> -. ( ph \/ -. ps ) ) $=
-    ( wn wa wi wo pm4.67 pm4.66 notbii bitr3i ) ACZBDKBCZEZCALFZCABGMNABHIJ $.
-
-  $( Theorem *4.55 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.55 $p |- ( -. ( -. ph /\ ps ) <-> ( ph \/ -. ps ) ) $=
-    ( wn wo wa pm4.54 con2bii bicomi ) ABCDZACBEZCJIABFGH $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

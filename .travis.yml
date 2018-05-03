@@ -45,7 +45,7 @@ install:
   # Compile metamath, a C verifier (and more) by Norm Megill.
   - gcc *.c -O2 -o metamath
   # Get mmj2, a Java verifier (and more) by Mel O'Cat and Mario Carneiro
-  - wget -N -q http://us2.metamath.org:88/ocat/mmj2/mmj2jar.zip
+  - wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
   - unzip -q mmj2jar.zip
   - printf "LoadFile,set.mm\nVerifyProof,*\nParse,*\nRunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\nRunMacro,showDiscouraged,discouraged.new\n" > RunParms.txt
   - printf "LoadFile,iset.mm\nVerifyProof,*\nParse,*\nRunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\n" > IRunParms.txt
