@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-May-2018
+$( iset.mm - Version of 4-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5993,6 +5993,16 @@ $)
   $}
 
   ${
+    pm2.61ddc.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    pm2.61ddc.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
+    $( Deduction eliminating a decidable antecedent.  (Contributed by Jim
+       Kingdon, 4-May-2018.) $)
+    pm2.61ddc $p |- ( DECID ps -> ( ph -> ch ) ) $=
+      ( wdc wn wo wi df-dc com12 jaoi sylbi ) BFBBGZHACIZBJBONABCDKANCE
+      KLM $.
+  $}
+
+  ${
     pm2.61d1.1 $e |- ( ph -> ( ps -> ch ) ) $.
     pm2.61d1.2 $e |- ( -. ps -> ch ) $.
     $( Inference eliminating an antecedent.  (Contributed by NM,
@@ -6247,14 +6257,13 @@ $)
   $}
 
   ${
-    bija.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    bija.2 $e |- ( -. ph -> ( -. ps -> ch ) ) $.
-    $( Combine antecedents into a single bi-conditional.  This inference,
-       reminiscent of ~ ja , is reversible:  The hypotheses can be deduced from
-       the conclusion alone (see ~ pm5.1im and ~ pm5.21im ).  (Contributed by
-       Wolf Lammen, 13-May-2013.) $)
-    bija $p |- ( ( ph <-> ps ) -> ch ) $=
-      ( wb bi2 syli wn bi1 con3d pm2.61d ) ABFZBCBMACABGDHBIMAICMABABJKEHL $.
+    bijadc.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    bijadc.2 $e |- ( -. ph -> ( -. ps -> ch ) ) $.
+    $( Combine antecedents into a single bi-conditional.  This inference is
+       reminiscent of ~ jadc .  (Contributed by Jim Kingdon, 4-May-2018.) $)
+    bijadc $p |- ( DECID ps -> ( ( ph <-> ps ) -> ch ) ) $=
+    ( wb bi2 syli wn bi1 con3d pm2.61ddc ) ABFZBCBMACABGDHBIMAICMABAB
+    JKEHL $.
   $}
 
   $( Relationship between an equivalence and an equivalence with some negation,
