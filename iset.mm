@@ -6202,14 +6202,6 @@ $)
   $}
 
   ${
-    con1bii.1 $e |- ( -. ph <-> ps ) $.
-    $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.)  (Proof
-       shortened by Wolf Lammen, 13-Oct-2012.) $)
-    con1bii $p |- ( -. ps <-> ph ) $=
-      ( wn notnot xchbinx bicomi ) ABDAADBAECFG $.
-  $}
-
-  ${
     con1biidc.1 $e |- ( DECID ph -> ( -. ph <-> ps ) ) $.
     $( A contraposition inference.  (Contributed by Jim Kingdon,
        15-Mar-2018.) $)
@@ -6224,20 +6216,6 @@ $)
                   ( ( -. ph -> ps ) <-> ( -. ps -> ph ) ) ) ) $=
     ( wdc wn wi wb wa con1dc adantr adantl impbid ex ) ACZBCZADBEZBDA
     EZFMNGOPMOPENABHINPOEMBAHJKL $.
-
-  ${
-    con4bii.1 $e |- ( -. ph <-> -. ps ) $.
-    $( A contraposition inference.  (Contributed by NM, 21-May-1994.) $)
-    con4bii $p |- ( ph <-> ps ) $=
-      ( wb wn notbi mpbir ) ABDAEBEDCABFG $.
-  $}
-
-  ${
-    con2bii.1 $e |- ( ph <-> -. ps ) $.
-    $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.) $)
-    con2bii $p |- ( ps <-> -. ph ) $=
-      ( wn bicomi con1bii ) ADBBAABDCEFE $.
-  $}
 
   ${
     con2biidc.1 $e |- ( DECID ps -> ( ph <-> -. ps ) ) $.
@@ -14283,10 +14261,32 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   The theorems in this section are used in the section on existential
-  uniqueness. That section, at least for now, is heavily based on
+  uniqueness. That section, for now, is heavily based on
   classical logic, but probably intuitionistic proofs can be found
   for much of it.
 $)
+
+  ${
+    con1bii.1 $e |- ( -. ph <-> ps ) $.
+    $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.)  (Proof
+       shortened by Wolf Lammen, 13-Oct-2012.) $)
+    con1bii $p |- ( -. ps <-> ph ) $=
+      ( wn notnot xchbinx bicomi ) ABDAADBAECFG $.
+  $}
+
+  ${
+    con4bii.1 $e |- ( -. ph <-> -. ps ) $.
+    $( A contraposition inference.  (Contributed by NM, 21-May-1994.) $)
+    con4bii $p |- ( ph <-> ps ) $=
+      ( wb wn notbi mpbir ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    con2bii.1 $e |- ( ph <-> -. ps ) $.
+    $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.) $)
+    con2bii $p |- ( ps <-> -. ph ) $=
+      ( wn bicomi con1bii ) ADBBAABDCEFE $.
+  $}
 
   $( Express implication in terms of conjunction.  Theorem 3.4(27) of [Stoll]
      p. 176.  Only the forward direction, ~ imanim , is valid
