@@ -9256,6 +9256,14 @@ $)
     ( wdc wxo wb wn wa wo xor2dc imp df-xor syl6rbbr ex ) ACZBCZABDZABEFZENOGQA
     BHABGFGZPNOQREABIJABKLM $.
 
+  $( Two ways to express "exclusive or" between decidable propositions.
+     Theorem *5.22 of [WhiteheadRussell] p. 124, but for decidable
+     propositions.  (Contributed by Jim Kingdon, 5-May-2018.) $)
+  xordc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( ph <-> ps ) <-> ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) ) ) $=
+    ( wdc wb wn wa wo wxo excxor ancom orbi2i bitri xornbidc imp syl5rbbr ex )
+    ACZBCZABDEZABEFZBAEZFZGZDUCABHZQRFSUDTUABFZGUCABIUEUBTUABJKLQRUDSDABMNOP $.
+
   $( Exclusive or implies the left proposition is decidable.  (Contributed by
      Jim Kingdon, 12-Mar-2018.) $)
   xordc1 $p |- ( ( ph \/_ ps ) -> DECID ph ) $=
