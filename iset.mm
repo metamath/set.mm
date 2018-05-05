@@ -9262,6 +9262,23 @@ $)
     ( wdc wn wb wa xor3dc imp con2bidc bitrd bicom syl6rbb ex ) ACZBCZADZBEZABE
     DZENOFZRBPEZQSRABDEZTNORUAEABGHNOUATEABIHJBPKLM $.
 
+  $( Associative law for the biconditional, for decidable propositions.
+
+     The classical version (without the decidability conditions) is an axiom of
+     system DS in Vladimir Lifschitz, "On calculational proofs", Annals of Pure
+     and Applied Logic, 113:207-224, 2002,
+     ~ http://www.cs.utexas.edu/users/ai-lab/pub-view.php?PubID=26805 , and,
+     interestingly, was not included in _Principia Mathematica_ but was
+     apparently first noted by Jan Lukasiewicz circa 1923.  (Contributed by Jim
+     Kingdon, 4-May-2018.) $)
+  biassdc $p |- ( DECID ph -> ( DECID ps -> ( DECID ch ->
+      ( ( ( ph <-> ps ) <-> ch ) <-> ( ph <-> ( ps <-> ch ) ) ) ) ) ) $=
+    ( wdc wb wn wo wa df-dc pm5.501 bibi1d bitr3d a1d nbbndc imp nbn2
+    wi adantl adantr ex jaoi sylbi exp3a ) ADZBDZCDZABEZCEZABCEZEZEZU
+    DAAFZGUEUFHZUKQZAIAUNULAUKUMAUIUHUJABUGCABJKAUIJLMULUMUKULUMHZUIF
+    ZUHUJUOBFZCEZUPUHUMURUPEZULUEUFUSBCNORULURUHEUMULUQUGCABPKSLULUPU
+    JEUMAUIPSLTUAUBUC $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Operations on true and false constants
