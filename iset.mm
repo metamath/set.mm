@@ -9168,6 +9168,13 @@ $)
       ( wfal wi wn ex dfnot sylibr ) ABDEBFABDCGBHI $.
   $}
 
+  $( Negation inferred from embedded conjunct.  (Contributed by NM,
+     20-Aug-1993.)  (Proof rewritten by Jim Kingdon, 4-May-2018.) $)
+  pclem6 $p |- ( ( ph <-> ( ps /\ -. ph ) ) -> -. ps ) $=
+    ( wn wa wb wfal wi bi1 pm3.4 com12 syl9r ax-ia3 syl9 impbidd pm5.19 pm2.21i
+    bi2 syl6com dfnot sylibr ) ABACZDZEZBFGBCBUCAUAEZFBUCAUAUCAUBBUAAUBHUBBUABU
+    AIJKBUAUBUCABUALAUBQMNUDFAOPRBST $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Logical 'xor'
@@ -15583,11 +15590,6 @@ $)
      shortened by Wolf Lammen, 20-Sep-2013.) $)
   nbbn $p |- ( ( -. ph <-> ps ) <-> -. ( ph <-> ps ) ) $=
     ( wb wn xor3 con2bi bicom 3bitrri ) ABCDABDCBADZCIBCABEABFBIGH $.
-
-  $( Negation inferred from embedded conjunct.  (Contributed by NM,
-     20-Aug-1993.)  (Proof shortened by Wolf Lammen, 25-Nov-2012.) $)
-  pclem6 $p |- ( ( ph <-> ( ps /\ -. ph ) ) -> -. ps ) $=
-    ( wn wa wb ibar nbbn sylib con2i ) BABACZDZEZBJKELCBJFAKGHI $.
 
   $( Associative law for the biconditional.  An axiom of system DS in Vladimir
      Lifschitz, "On calculational proofs", Annals of Pure and Applied Logic,
