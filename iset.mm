@@ -9201,6 +9201,15 @@ $)
     AUIUFQBAUIUEUFABUHABHIUEUDJKBUIUDUFBAUHBALIUDUEMKNOPUGUJUBUFUIUCABRSUKTUA
     $.
 
+  $( This tautology shows that xor is really exclusive.  (Contributed by FL,
+     22-Nov-2010.)  (Proof rewritten by Jim Kingdon, 5-May-2018.) $)
+  excxor $p |- ( ( ph \/_ ps ) <->
+       ( ( ph /\ -. ps ) \/ ( -. ph /\ ps ) ) ) $=
+    ( wxo wn wa wo xoranor andi orcom pm3.24 biorfi andir pm5.61 orbi12i 3bitri
+    3bitr4ri ancom orbi2i ) ABCZBADZEZABDZEZFZUCUAFUCTBEZFSABFZTUBFEUFTEZUFUBEZ
+    FUDABGUFTUBHUGUAUHUCUAATEZFUIUAFUAUGUAUIIUIUAAJKABTLPABMNOUAUCIUAUEUCBTQRO
+    $.
+
   $( A consequence of exclusive or.  In classical logic this would be an
      equivalence.  (Contributed by Jim Kingdon, 8-Mar-2018.) $)
   xorbin $p  |- ( ( ph \/_ ps ) -> ( ph <-> -. ps ) ) $=
