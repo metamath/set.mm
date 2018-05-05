@@ -396,7 +396,7 @@ the proof of 2+2=4, and more.  </TD></TR></TABLE>
 
 <P>Inspired by Whitehead and Russell's monumental <I>Principia
 Mathematica</I>, <!--(where 1+1=2 is finally proved on page 86 of Volume
-II), --> the Metamath Proof Explorer has over 19,000 completely worked
+II), --> the Metamath Proof Explorer has over 20,000 completely worked
 out proofs, starting from the very foundation that mathematics is built
 on and eventually arriving at familiar mathematical facts and beyond.
 <!-- in logic and set theory. -->  <!-- , interconnected with over a million
@@ -1377,7 +1377,7 @@ SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='_z.gif' WIDTH=9
 HEIGHT=19 ALT='z'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
 SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
 
-<TR ALIGN=LEFT><TD><A HREF="ax-13.html">Left Membership Equality</A></TD>
+<TR ALIGN=LEFT><TD><A HREF="ax-13.html">Left Equality for Binary Predicate</A></TD>
 <TD NOWRAP><FONT COLOR="#006633"><B>ax-13</B></FONT></TD>
 <TD>
 <IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
@@ -1393,7 +1393,7 @@ SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG SRC='_z.gif' WIDTH=9
 HEIGHT=19 ALT='z'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
 SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
 
-<TR ALIGN=LEFT><TD><A HREF="ax-14.html">Right Membership Equality</A></TD>
+<TR ALIGN=LEFT><TD><A HREF="ax-14.html">Right Equality for Binary Predicate</A></TD>
 <TD NOWRAP><FONT COLOR="#006633"><B>ax-14</B></FONT></TD>
 <TD>
 <IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
@@ -3163,7 +3163,7 @@ including the 189 above.  (The command "show trace_back 2p2e4
 /essential" will list them.)  These have a total of <B>27,426
 steps</B>&mdash;this is how many steps you would have to examine if you
 wanted to verify the proof by hand in complete detail all the way back
-to the axioms.
+to the axioms of ZFC set theory.
 
 <P>One of the reasons that the proof of 2 + 2 = 4 is so long is that 2
 and 4 are complex numbers&mdash;i.e. we are really proving (2+0i) +
@@ -4288,14 +4288,7 @@ HEIGHT=19 ALT='x' TITLE='x'> <I>does</I> appear in <IMG SRC='_x.gif'
 WIDTH=10 HEIGHT=19 ALT='x' TITLE='x'> <IMG SRC='eq.gif' WIDTH=12
 HEIGHT=19 ALT='=' TITLE='='> <IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 ALT='z'
 TITLE='z'>.
-
-<!-- Another way to look at it is
-that we cannot "cheat" the distinct variable requirement of <A
-HREF="ax-17.html">ax-17</A> by going through two levels of substitution
-(and any Metamath proof verifier will complain if you try).
--->
-
-In fact, we can conclude from <A HREF="ax-17.html">ax-17</A> only the
+In fact, from <A HREF="ax-17.html">ax-17</A> we can conclude only the
 very restricted theorem <A HREF="ax12w.html">ax12w</A>, which because of
 its distinct variable requirements is much weaker than axiom <A
 HREF="ax-12.html">ax-12</A>.  (If we omit them, the Metamath proof
@@ -4315,7 +4308,7 @@ requirements implicitly attached the proof steps.
 
 <P>To get a concrete feel for distinct
 variable requirements, you can temporarily comment out the
-"$d x z" condition for
+"$d x z $." condition for
 theorem <A
 HREF="cleljust.html">cleljust</A>
 in the database file set.mm.   When you try to
@@ -5658,6 +5651,10 @@ Mathematics of Physics), Addison-Wesley, Reading, Massachusetts (1981)
 Lattices; Algebraic Approach</I>, D. Reidel, Dordrecht (1985)
 [QA171.5.B4].  </LI>
 
+<LI><A NAME="Bogachev"></A> [Bogachev] Bogachev, V.I., <I>Measure Theory,
+Volume I</I> Springer-Verlag, Berlin, New York, (2007)
+[QC20.7.M34.B64 2007].</LI>
+
 <LI><A NAME="Bollobas"></A> [Bollobas] B&eacute;la Bollob&aacute;s, <I>Modern
 Graph Theory</I>, Graduate Texts in Mathematics, Springer Science+Media New
 York (1998)
@@ -5722,6 +5719,9 @@ Trigonometry,</I> Brooks-Cole, Pacific Grove, CA (1988)
 
 <LI><A NAME="Cohn"></A> [Cohn] Cohn, Paul Moritz, <I>Universal Algebra,</I>
 D. Reidel, Dordrecht (1981) [QA251.C55].</LI>
+
+<LI><A NAME="CohnMT"></A> [CohnMT] Cohn, Donald L., <I>Measure Theory,</I>
+ Birkhäuser, New York (2013).</LI>
 
 <LI><A NAME="CormenLeisersonRivest"></A> [CormenLeisersonRivest] Cormen,
 Thomas, Charles E. Leiserson, and Ronald L. Rivest, <I>Introduction to
@@ -5834,6 +5834,14 @@ http://www.humanities.mcmaster.ca/~hitchckd/peculiarities.pdf</A>
 Sol&egrave;r,&quot; <I>Bull.  Am.  Math.  Soc.</I> 32:205-234 (1995)
 [QA.A513]; available at <A HREF="http://arxiv.org/abs/math/9504224v1">
 http://arxiv.org/abs/math/9504224v1</A> (retrieved 11 Nov 2014).</LI>
+
+
+<LI><A NAME="Huneke"></A> [Huneke] Huneke, Craig L.,
+&quot;The Friendship Theorem&quot; <I>American Mathematical Monthly</I>
+109:192-194 (2002); available at <A
+HREF="https://www.researchgate.net/publication/268313555_The_Friendship_Theorem">
+https://www.researchgate.net/publication/268313555_The_Friendship_Theorem</A>
+(retrieved 30 Dec 2017).</LI>
 
 <LI><A NAME="Indrzejczak"></A> [Indrzejczak] Indrzejczak, Andrzej,
 <I>Natural Deduction, Hybrid Systems and Modal Logic</I>,
@@ -6049,6 +6057,11 @@ http://ocw.mit.edu/resources/res-18-001-calculus-online-textbook-spring-2005/</A
 <LI><A NAME="Suppes"></A> [Suppes] Suppes, Patrick, <I>Axiomatic Set Theory,</I>
 Dover Publications, Inc. (1972) [QA248.S959].</LI>
 
+<LI><A NAME="Siegrist"></A> [Siegrist] Siegrist, Kyle &amp;al
+<I>Random: Probability, Mathematical Statistics, Stochastic Processes</I>
+ available at <A HREF="http://www.randomservices.org/random/index.html">
+ http://www.randomservices.org/random/index.html</A> (retrieved Oct 2017).</LI>
+
 <LI><A NAME="TakeutiZaring"></A> [TakeutiZaring] Takeuti, Gaisi, and
 Wilson M. Zaring, <I>Introduction to Axiomatic Set Theory,</I>
 Springer-Verlag, New York, second edition (1982) [QA248.T136 1982].</LI>
@@ -6071,9 +6084,25 @@ HREF="http://www.math.uiuc.edu/~vddries/recursion.pdf"
 >http://www.math.uiuc.edu/~vddries/recursion.pdf</A>
 (retrieved 11 Nov 2014).  </LI>
 
+<LI><A NAME="Viaclovsky7"></A> [Viaclovsky7] Viaclovsky, Jeff, <I>Measurability
+and Integration, Fall 2003, Lecture 7,</I> available at <A
+HREF="https://ocw.mit.edu/courses/mathematics/18-125-measure-and-integration-fall-2003/lecture-notes/18125_lec7.pdf">
+https://ocw.mit.edu/courses/mathematics/18-125-measure-and-integration-fall-2003/lecture-notes/18125_lec7.pdf
+</A> (retrieved 23-Mar-2018). </LI>
+
+<LI><A NAME="Viaclovsky8"></A> [Viaclovsky8] Viaclovsky, Jeff, <I>Measurability
+and Integration, Fall 2003, Lecture 8,</I> available at <A
+HREF="https://ocw.mit.edu/courses/mathematics/18-125-measure-and-integration-fall-2003/lecture-notes/18125_lec8.pdf">
+https://ocw.mit.edu/courses/mathematics/18-125-measure-and-integration-fall-2003/lecture-notes/18125_lec8.pdf
+</A> (retrieved 21-Feb-2018). </LI>
+
 <LI><A NAME="WhiteheadRussell"></A> [WhiteheadRussell] Whitehead, Alfred
 North, and Bertrand Russell, <I>Principia Mathematica to *56,</I>
-Cambridge University Press, Cambridge, 1962 [QA9.W592 1962].</LI>
+Cambridge University Press, Cambridge, 1962 [QA9.W592 1962]; available
+at <A
+HREF="https://ia600602.us.archive.org/35/items/PrincipiaMathematicaVolumeI/WhiteheadRussell-PrincipiaMathematicaVolumeI_text.pdf"
+>https://ia600602.us.archive.org/35/items/PrincipiaMathematicaVolumeI/WhiteheadRussell-PrincipiaMathematicaVolumeI_text.pdf</A>
+(retrieved 22-Jan-2018). </LI>
 
 </OL>
 
@@ -6171,7 +6200,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 8-Dec-2017.</FONT></I><BR><FONT
+ page was last updated on 24-Jan-2018.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
