@@ -5908,45 +5908,11 @@ $)
     ( wdc wn wo wi df-dc orcom bitri pm2.53 sylbi ) ABZACZADZLCAEKALD
     MAFALGHLAIJ $.
 
-  ${
-    con1d.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( A contraposition deduction.  (Contributed by NM, 5-Aug-1993.)  (Revised
-       by NM, 12-Feb-2013.) $)
-    con1d $p |- ( ph -> ( -. ch -> ps ) ) $=
-      ( wn notnot1 syl6 con4d ) ABCEZABECIEDCFGH $.
-  $}
-
   $( Contraposition for a decidable proposition.  Based on theorem *2.15 of
      [WhiteheadRussell] p. 102.  (Contributed by Jim Kingdon, 29-Mar-2018.) $)
   con1dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) ) $=
     ( wn wi wdc notnot1 imim2i condc syl5 ) ACZBDJBCZCZDAEKADBLJBFGAK
     HI $.
-
-  ${
-    mt3d.1 $e |- ( ph -> -. ch ) $.
-    mt3d.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( Modus tollens deduction.  (Contributed by NM, 26-Mar-1995.) $)
-    mt3d $p |- ( ph -> ps ) $=
-      ( wn con1d mpd ) ACFBDABCEGH $.
-  $}
-
-  ${
-    nsyl2.1 $e |- ( ph -> -. ps ) $.
-    nsyl2.2 $e |- ( -. ch -> ps ) $.
-    $( A negated syllogism inference.  (Contributed by NM, 26-Jun-1994.)
-       (Revised by NM, 19-Jun-2013.) $)
-    nsyl2 $p |- ( ph -> ch ) $=
-      ( wn wi a1i mt3d ) ACBDCFBGAEHI $.
-  $}
-
-  ${
-    con1i.a $e |- ( -. ph -> ps ) $.
-    $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.)  (Proof
-       shortened by O'Cat, 28-Nov-2008.)  (Proof shortened by Wolf Lammen,
-       19-Jun-2013.) $)
-    con1i $p |- ( -. ps -> ph ) $=
-      ( wn id nsyl2 ) BDZBAGECF $.
-  $}
 
   ${
     impidc.1 $e |- ( DECID ch -> ( ph -> ( ps -> ch ) ) ) $.
@@ -14198,6 +14164,14 @@ $(
 $)
 
   ${
+    con1d.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
+    $( A contraposition deduction.  (Contributed by NM, 5-Aug-1993.)  (Revised
+       by NM, 12-Feb-2013.) $)
+    con1d $p |- ( ph -> ( -. ch -> ps ) ) $=
+      ( wn notnot1 syl6 con4d ) ABCEZABECIEDCFGH $.
+  $}
+
+  ${
     pm2.61d.1 $e |- ( ph -> ( ps -> ch ) ) $.
     pm2.61d.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
     $( Deduction eliminating an antecedent.  (Contributed by NM, 27-Apr-1994.)
@@ -14347,6 +14321,32 @@ $)
   $( Theorem 19.6 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
   alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
     ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
+
+  ${
+    mt3d.1 $e |- ( ph -> -. ch ) $.
+    mt3d.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
+    $( Modus tollens deduction.  (Contributed by NM, 26-Mar-1995.) $)
+    mt3d $p |- ( ph -> ps ) $=
+      ( wn con1d mpd ) ACFBDABCEGH $.
+  $}
+
+  ${
+    nsyl2.1 $e |- ( ph -> -. ps ) $.
+    nsyl2.2 $e |- ( -. ch -> ps ) $.
+    $( A negated syllogism inference.  (Contributed by NM, 26-Jun-1994.)
+       (Revised by NM, 19-Jun-2013.) $)
+    nsyl2 $p |- ( ph -> ch ) $=
+      ( wn wi a1i mt3d ) ACBDCFBGAEHI $.
+  $}
+
+  ${
+    con1i.a $e |- ( -. ph -> ps ) $.
+    $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.)  (Proof
+       shortened by O'Cat, 28-Nov-2008.)  (Proof shortened by Wolf Lammen,
+       19-Jun-2013.) $)
+    con1i $p |- ( -. ps -> ph ) $=
+      ( wn id nsyl2 ) BDZBAGECF $.
+  $}
 
   $( Simplification.  Similar to Theorem *3.26 (Simp) of [WhiteheadRussell]
      p. 112.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
