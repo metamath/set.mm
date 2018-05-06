@@ -471,10 +471,8 @@ $(
 $)
 
   $( If ` ph ` is a wff, so is ` -. ph ` or "not ` ph ` ."  Part of the
-     recursive definition of a wff (well-formed formula).  In classical logic
-     (which is our logic), a wff is interpreted as either true or false.  So if
-     ` ph ` is true, then ` -. ph ` is false; if ` ph ` is false, then
-     ` -. ph ` is true.  Traditionally, Greek letters are used to represent
+     recursive definition of a wff (well-formed formula).
+     Traditionally, Greek letters are used to represent
      wffs, and we follow this convention.  In propositional calculus, we define
      only wffs built up from other wffs, i.e. there is no starting or "atomic"
      wff.  Later, in predicate calculus, we will extend the basic wff
@@ -482,10 +480,8 @@ $)
   wn $a wff -. ph $.
 
   $( If ` ph ` and ` ps ` are wff's, so is ` ( ph -> ps ) ` or " ` ph ` implies
-     ` ps ` ."  Part of the recursive definition of a wff.  The resulting wff
-     is (interpreted as) false when ` ph ` is true and ` ps ` is false; it is
-     true otherwise.  (Think of the truth table for an OR gate with input
-     ` ph ` connected through an inverter.)  The left-hand wff is called the
+     ` ps ` ."  Part of the recursive definition of a wff.
+     The left-hand wff is called the
      antecedent, and the right-hand wff is called the consequent.  In the case
      of ` ( ph -> ( ps -> ch ) ) ` , the middle ` ps ` may be informally called
      either an antecedent or part of the consequent depending on context. $)
@@ -496,10 +492,6 @@ $(
         The axioms of propositional calculus
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
-
-  $(
-     Postulate the three axioms of classical propositional calculus.
-  $)
 
   $( Axiom _Simp_.  Axiom A1 of [Margaris] p. 49.  One of the 3 axioms of
      propositional calculus.  The 3 axioms are also given as Definition 2.1 of
