@@ -9308,6 +9308,16 @@ $)
     HDZUFUJDZUNUOFUEURUFUCUDURABLMNUEUFOZUCUDUFUSUCUFUIDZUDUSACLZBUILPQUHCUJIRS
     UGUFUDVAULUKFUTUCUDUFTUCUFVAUDUCUFVAVBMUACBUIIRUB $.
 
+  $( An alternate definition of the biconditional for decicable propositions.
+     Theorem *5.23 of [WhiteheadRussell] p. 124, but with decidability
+     conditions.  (Contributed by Jim Kingdon, 5-May-2018.) $)
+  dfbi3dc $p |- ( DECID ph -> ( DECID ps ->
+      ( ( ph <-> ps ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) ) ) ) $=
+    ( wdc wb wa wn wo dcn xordc imp sylan2 pm5.18dc notnotdc anbi2d a1i orbi12d
+    ancom adantl 3bitr4d ex ) ACZBCZABDZABEZAFZBFZEZGZDUAUBEAUFDFZAUFFZEZUFUEEZ
+    GZUCUHUBUAUFCZUIUMDZBHUAUNUOAUFIJKUAUBUCUIDABLJUBUHUMDUAUBUDUKUGULUBBUJABMN
+    UGULDUBUEUFQOPRST $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Operations on true and false constants
