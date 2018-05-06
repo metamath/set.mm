@@ -1435,9 +1435,9 @@ $)
      biconditional in its own definition), but once we have the biconditional,
      we can prove ~ dfbi2 which uses the biconditional instead.
 
-     Other definitions of the biconditional, such as ~ dfbi3 , only hold
-     clasically, not intuitionistically.  (Contributed by NM, 5-Aug-1993.)
-     (Revised by Jim Kingdon, 24-Nov-2017.) $)
+     Other definitions of the biconditional, such as ~ dfbi3dc , only hold for
+     decidable propositions, not all propositions.  (Contributed by NM,
+     5-Aug-1993.)  (Revised by Jim Kingdon, 24-Nov-2017.) $)
   df-bi $a |- ( ( ( ph <-> ps ) -> ( ( ph -> ps ) /\ ( ps -> ph ) ) )
         /\ ( ( ( ph -> ps ) /\ ( ps -> ph ) ) -> ( ph <-> ps ) ) ) $.
 
@@ -9216,7 +9216,8 @@ $)
     ( wn wo wa wi df-xor imnan biimpri adantl sylbi pm2.53 orcoms adantr impbid
     wxo ) ABPZABCZQABDZABECZEZARFZABGZTUBSUBTABHIJKQUARAFZUCSUDTBAUDBALMNKO $.
 
-  $( One direction of ~ pm5.18 .  (Contributed by Jim Kingdon, 10-Mar-2018.) $)
+  $( One direction of ~ pm5.18dc , which holds for all propositions, not just
+     decidable propositions.  (Contributed by Jim Kingdon, 10-Mar-2018.) $)
   pm5.18im $p |- ( ( ph <-> ps ) -> -. ( ph <-> -. ps ) ) $=
     ( wb wn pm5.19 bibi1 notbid mpbiri ) ABCZABDZCZDBJCZDBEIKLABJFGH $.
 
@@ -15600,44 +15601,11 @@ $(
                   Exclusive or and related theorems (classical)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-In classical logic, we can talk about the exclusive-or of ` ph ` and ` ps ` ,
-which can be represented by ` -. ( ph <-> ps ) ` or
-` ( ph \/ ps ) /\ ( -. ph \/ -. ps ) `
-(which are equivalent in classical logic but not intuitionistic logic).
-We do not (yet at least) have an intuitionistic theory of exclusive or
-(or, relatedly at least in concept, existential uniqueness a la ~ df-eu ),
-but here we collect theorems which depend on ~ ax-3 for their proof and many
-of which probably do not hold intuitionistically.
+Most exclusive-or theorems are covered in ~ df-xor and related theorems
+(such as ~ xornbi ). Here we have one remaining theorem which depends on
+~ ax-3 .
 
-There are also a variety of related results about pairs of propositions
-which are both true, both false, one
-true and one false, and the like, which are at least in general terms
-also part of this exclusive-or family. Many are expressed in terms
-of the biconditional and negation.
 $)
-
-  $( Two ways to express "exclusive or."  Theorem *5.22 of [WhiteheadRussell]
-     p. 124.  (Contributed by NM, 3-Jan-2005.)  (Proof shortened by Wolf
-     Lammen, 22-Jan-2013.) $)
-  xor $p |- ( -. ( ph <-> ps ) <->
-                ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
-    ( wn wa wo wb wi iman anbi12i dfbi2 ioran 3bitr4ri con1bii ) ABCDZBACDZEZAB
-    FZABGZBAGZDNCZOCZDQPCRTSUAABHBAHIABJNOKLM $.
-
-  $( Theorem *5.18 of [WhiteheadRussell] p. 124.  This theorem says that
-     logical equivalence is the same as negated "exclusive-or."  (Contributed
-     by NM, 28-Jun-2002.)  (Proof shortened by Andrew Salmon, 20-Jun-2011.)
-     (Proof shortened by Wolf Lammen, 15-Oct-2013.) $)
-  pm5.18 $p |- ( ( ph <-> ps ) <-> -. ( ph <-> -. ps ) ) $=
-    ( wb wn pm5.501 con1bid bitr2d nbn2 pm2.61i ) AABCZABDZCZDZCAMBJABLAKEFABEG
-    ADZMKJNKLAKHFABHGI $.
-
-  $( An alternate definition of the biconditional.  Theorem *5.23 of
-     [WhiteheadRussell] p. 124.  (Contributed by NM, 27-Jun-2002.)  (Proof
-     shortened by Wolf Lammen, 3-Nov-2013.) $)
-  dfbi3 $p |- ( ( ph <-> ps ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) ) $=
-    ( wn wb wa wo xor pm5.18 notnot anbi2i ancom orbi12i 3bitr4i ) ABCZDCANCZEZ
-    NACZEZFABDABEZQNEZFANGABHSPTRBOABIJQNKLM $.
 
   $( Conjunction distributes over exclusive-or, using ` -. ( ph <-> ps ) ` to
      express exclusive-or.  This is one way to interpret the distributive law
