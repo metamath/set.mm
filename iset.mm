@@ -6122,10 +6122,10 @@ $)
     ( wdc wi wn wa simplimdc imp pm2.24d ex ) ACZABDEZAEBDKLFABKLAABG
     HIJ $.
 
-  $( Theorem *2.521 of [WhiteheadRussell] p. 107.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 8-Oct-2012.) $)
-  pm2.521 $p |- ( -. ( ph -> ps ) -> ( ps -> ph ) ) $=
-    ( wi wn simplim a1d ) ABCDABABEF $.
+  $( Theorem *2.521 of [WhiteheadRussell] p. 107, but with an additional
+     decidability condition.  (Contributed by Jim Kingdon, 5-May-2018.) $)
+  pm2.521dc $p |- ( DECID ph -> ( -. ( ph -> ps ) -> ( ps -> ph ) ) ) $=
+    ( wi wn wdc pm2.52 condc syl5 ) ABCDADBDCAEBACABFABGH $.
 
   $( Contraposition.  Theorem *4.1 of [WhiteheadRussell] p. 116, but for a
      decidable proposition.  (Contributed by Jim Kingdon, 24-Apr-2018.) $)
