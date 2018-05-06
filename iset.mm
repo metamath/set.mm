@@ -6029,15 +6029,6 @@ $)
       ( wi imim2i pm2.61d1 ) ABFACBCAEGDH $.
   $}
 
-  ${
-    jad.1 $e |- ( ph -> ( -. ps -> th ) ) $.
-    jad.2 $e |- ( ph -> ( ch -> th ) ) $.
-    $( Deduction form of ~ ja .  (Contributed by Scott Fenton, 13-Dec-2010.)
-       (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
-    jad $p |- ( ph -> ( ( ps -> ch ) -> th ) ) $=
-      ( wi wn com12 ja ) BCGADBCADGABHDEIACDFIJI $.
-  $}
-
   $( Case elimination for a decidable proposition.  Based on theorem *2.6 of
      [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon, 25-Mar-2018.) $)
   pm2.6dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) ) $=
@@ -15478,6 +15469,15 @@ $)
        5-Aug-1993.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
     pm2.61ii $p |- ch $=
       ( wn pm2.61d2 pm2.61i ) ACEAGBCDFHI $.
+  $}
+
+  ${
+    jad.1 $e |- ( ph -> ( -. ps -> th ) ) $.
+    jad.2 $e |- ( ph -> ( ch -> th ) ) $.
+    $( Deduction form of ~ ja .  (Contributed by Scott Fenton, 13-Dec-2010.)
+       (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
+    jad $p |- ( ph -> ( ( ps -> ch ) -> th ) ) $=
+      ( wi wn com12 ja ) BCGADBCADGABHDEIACDFIJI $.
   $}
 
   ${
