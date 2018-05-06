@@ -5805,7 +5805,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Classical logic
+        Theorems of decidable propositions
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
    Many theorems of logic hold in intuitionistic logic just as they do in
@@ -5816,40 +5816,7 @@ $(
    or important classical theorems, but with suitable decidability
    conditions so that the proofs follow from intuitionistic axioms.
    This section is focused on such proofs, given decidability conditions.
-
-   As a historical note, however, the Intuitionistic Logic Explorer originated
-   as a fork of the non-intuitionistic Metamath Proof Explorer, and the
-   project of adding decidability conditions everywhere they are needed (or
-   replacing non-intuitionistic proofs entirely) is not yet complete.
-
-   Therefore, this section also (for now) contains the non-intuitionistic
-   ~ ax-3 and the end of the Intuitionistic Logic Explorer file (after we've
-   had a chance to complete our development of constructive mathemetics)
-   contains additional theorems which rely on ~ ax-3 . As we replace
-   classical proofs with intuitionistic ones, remove classical proofs which
-   are unused and not especially important to contrast classical and
-   intuitionistic results, or add decidability conditions to make proofs not
-   rely on ~ ax-3 , we plan on reducing use of ~ ax-3 , moving ~ ax-3 still
-   later in the file, and eventually removing it entirely.
 $)
-
-  $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.
-
-     We take this as an additional axiom which transforms intuitionistic logic
-     to classical logic, but there are others which would have the same effect,
-     including ~ exmid , ~ peirce , or ~ notnot2 .
-
-     This axiom swaps or "transposes" the order of the consequents when
-     negation is removed.  An informal example is that the statement "if there
-     are no clouds in the sky, it is not raining" implies the statement "if it
-     is raining, there are clouds in the sky."  This axiom is called _Transp_
-     or "the principle of transposition" in _Principia Mathematica_ (Theorem
-     *2.17 of [WhiteheadRussell] p. 103).  We will also use the term
-     "contraposition" for this principle, although the reader is advised that
-     in the field of philosophical logic, "contraposition" has a different
-     technical meaning.  (Contributed by NM, 5-Aug-1993.)
-     (New usage is discouraged.) $)
-  ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
 
   $( Contraposition of a decidable proposition.  (Contributed by Jim Kingdon,
      13-Mar-2018.) $)
@@ -14117,14 +14084,44 @@ $( The theorems in this section make use of the $d statement. $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Classical logic theorems we'll need for existential uniqueness
+                         Classical logic theorems
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-  The theorems in this section are used in the section on existential
-  uniqueness. That section, for now, is heavily based on
-  classical logic, but probably intuitionistic proofs can be found
-  for much of it.
+   There are a variety of theorems that only hold for decidable propositions,
+   for example ~ df-dc , ~ notnotdc , or ~ condc , and we have stated and
+   proved them for decidable propositions.
+
+   As a historical note, however, the Intuitionistic Logic Explorer originated
+   as a fork of the non-intuitionistic Metamath Proof Explorer, and the
+   project of adding decidability conditions everywhere they are needed (or
+   replacing non-intuitionistic proofs entirely) is not yet complete.
+
+   Therefore, this section also (for now) contains the non-intuitionistic
+   ~ ax-3 and additional theorems which rely on ~ ax-3 . As we replace
+   classical proofs with intuitionistic ones, remove classical proofs which
+   are unused and not especially important to contrast classical and
+   intuitionistic results, or add decidability conditions to make proofs not
+   rely on ~ ax-3 , we plan on reducing use of ~ ax-3 , moving ~ ax-3 still
+   later in the file, and eventually removing it entirely.
 $)
+
+  $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.
+
+     We take this as an additional axiom which transforms intuitionistic logic
+     to classical logic, but there are others which would have the same effect,
+     including ~ exmid , ~ peirce , or ~ notnot2 .
+
+     This axiom swaps or "transposes" the order of the consequents when
+     negation is removed.  An informal example is that the statement "if there
+     are no clouds in the sky, it is not raining" implies the statement "if it
+     is raining, there are clouds in the sky."  This axiom is called _Transp_
+     or "the principle of transposition" in _Principia Mathematica_ (Theorem
+     *2.17 of [WhiteheadRussell] p. 103).  We will also use the term
+     "contraposition" for this principle, although the reader is advised that
+     in the field of philosophical logic, "contraposition" has a different
+     technical meaning.  (Contributed by NM, 5-Aug-1993.)
+     (New usage is discouraged.) $)
+  ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
 
   ${
     con4d.1 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
@@ -14405,6 +14402,16 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Existential uniqueness
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+   Our current treatment of existential uniqueness has not yet been updated
+   for intuitionistic logic (by changing definitions as needed, making
+   proofs valid intuitionistically, or when necessary only proving
+   theorems for decidable propositions).
+
+   The intuitionistic treatment of exclusive or ( ~ df-xor and related
+   theorems) may serve as inspiration for intuitionistic existential
+   uniqueness.
+
 $)
 
   $( Declare new symbols needed for uniqueness notation. $)
