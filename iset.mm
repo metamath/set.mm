@@ -5984,15 +5984,6 @@ $)
     ( wdc wn wi pm2.21 con1dc mpi ) ACADABEZEIDAEABFAIGH $.
 
   ${
-    pm2.61d.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    pm2.61d.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( Deduction eliminating an antecedent.  (Contributed by NM, 27-Apr-1994.)
-       (Proof shortened by Wolf Lammen, 12-Sep-2013.) $)
-    pm2.61d $p |- ( ph -> ch ) $=
-      ( wn con1d syld pm2.18d ) ACACFBCABCEGDHI $.
-  $}
-
-  ${
     pm2.61ddc.1 $e |- ( ph -> ( ps -> ch ) ) $.
     pm2.61ddc.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
     $( Deduction eliminating a decidable antecedent.  (Contributed by Jim
@@ -6000,24 +5991,6 @@ $)
     pm2.61ddc $p |- ( DECID ps -> ( ph -> ch ) ) $=
       ( wdc wn wo wi df-dc com12 jaoi sylbi ) BFBBGZHACIZBJBONABCDKANCE
       KLM $.
-  $}
-
-  ${
-    pm2.61d1.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    pm2.61d1.2 $e |- ( -. ps -> ch ) $.
-    $( Inference eliminating an antecedent.  (Contributed by NM,
-       15-Jul-2005.) $)
-    pm2.61d1 $p |- ( ph -> ch ) $=
-      ( wn wi a1i pm2.61d ) ABCDBFCGAEHI $.
-  $}
-
-  ${
-    pm2.61d2.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    pm2.61d2.2 $e |- ( ps -> ch ) $.
-    $( Inference eliminating an antecedent.  (Contributed by NM,
-       18-Aug-1993.) $)
-    pm2.61d2 $p |- ( ph -> ch ) $=
-      ( wi a1i pm2.61d ) ABCBCFAEGDH $.
   $}
 
   $( Case elimination for a decidable proposition.  Based on theorem *2.6 of
@@ -14237,6 +14210,33 @@ $(
   classical logic, but probably intuitionistic proofs can be found
   for much of it.
 $)
+
+  ${
+    pm2.61d.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    pm2.61d.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
+    $( Deduction eliminating an antecedent.  (Contributed by NM, 27-Apr-1994.)
+       (Proof shortened by Wolf Lammen, 12-Sep-2013.) $)
+    pm2.61d $p |- ( ph -> ch ) $=
+      ( wn con1d syld pm2.18d ) ACACFBCABCEGDHI $.
+  $}
+
+  ${
+    pm2.61d1.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    pm2.61d1.2 $e |- ( -. ps -> ch ) $.
+    $( Inference eliminating an antecedent.  (Contributed by NM,
+       15-Jul-2005.) $)
+    pm2.61d1 $p |- ( ph -> ch ) $=
+      ( wn wi a1i pm2.61d ) ABCDBFCGAEHI $.
+  $}
+
+  ${
+    pm2.61d2.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
+    pm2.61d2.2 $e |- ( ps -> ch ) $.
+    $( Inference eliminating an antecedent.  (Contributed by NM,
+       18-Aug-1993.) $)
+    pm2.61d2 $p |- ( ph -> ch ) $=
+      ( wi a1i pm2.61d ) ABCBCFAEGDH $.
+  $}
 
   ${
     ja.1 $e |- ( -. ph -> ch ) $.
