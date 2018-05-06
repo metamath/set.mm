@@ -5971,12 +5971,6 @@ $)
   simprimdc $p |- ( DECID ps -> ( -. ( ph -> -. ps ) -> ps ) ) $=
     ( wi wdc idd a1i impidc ) ABBABBCCBDABEFG $.
 
-  $( Simplification.  Similar to Theorem *3.26 (Simp) of [WhiteheadRussell]
-     p. 112.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
-     Lammen, 21-Jul-2012.) $)
-  simplim $p |- ( -. ( ph -> ps ) -> ph ) $=
-    ( wi pm2.21 con1i ) AABCABDE $.
-
   $( Simplification for a decidable proposition.  Similar to Theorem *3.26
      (Simp) of [WhiteheadRussell] p. 112.  (Contributed by Jim Kingdon,
      29-Mar-2018.) $)
@@ -14361,6 +14355,12 @@ $)
   $( Theorem 19.6 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
   alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
     ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
+
+  $( Simplification.  Similar to Theorem *3.26 (Simp) of [WhiteheadRussell]
+     p. 112.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
+     Lammen, 21-Jul-2012.) $)
+  simplim $p |- ( -. ( ph -> ps ) -> ph ) $=
+    ( wi pm2.21 con1i ) AABCABDE $.
 
   $( Peirce's axiom.  This odd-looking theorem is the "difference" between an
      intuitionistic system of propositional calculus and a classical system and
