@@ -6071,15 +6071,6 @@ $)
                    ( ( ph -> ps ) -> ( ( -. ph -> ps ) -> ps ) ) ) $=
     ( wdc wn wi pm2.6dc com23 ) ACADBEABEBABFG $.
 
-  ${
-    pm2.61i.1 $e |- ( ph -> ps ) $.
-    pm2.61i.2 $e |- ( -. ph -> ps ) $.
-    $( Inference eliminating an antecedent.  (Contributed by NM, 5-Apr-1994.)
-       (Proof shortened by Wolf Lammen, 12-Sep-2013.) $)
-    pm2.61i $p |- ps $=
-      ( wi id ja ax-mp ) AAEBAFAABDCGH $.
-  $}
-
   $( Negating an implication for a decidable antecedent.  Based on theorem *2.5
      of [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon,
      29-Mar-2018.) $)
@@ -14264,6 +14255,15 @@ $(
   classical logic, but probably intuitionistic proofs can be found
   for much of it.
 $)
+
+  ${
+    pm2.61i.1 $e |- ( ph -> ps ) $.
+    pm2.61i.2 $e |- ( -. ph -> ps ) $.
+    $( Inference eliminating an antecedent.  (Contributed by NM, 5-Apr-1994.)
+       (Proof shortened by Wolf Lammen, 12-Sep-2013.) $)
+    pm2.61i $p |- ps $=
+      ( wi id ja ax-mp ) AAEBAFAABDCGH $.
+  $}
 
   $( Double negation.  Theorem *4.13 of [WhiteheadRussell] p. 117.
      (Contributed by NM, 5-Aug-1993.) $)
