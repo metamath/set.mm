@@ -6156,12 +6156,6 @@ $)
   notbi $p |- ( ( ph <-> ps ) <-> ( -. ph <-> -. ps ) ) $=
     ( wb wn id notbid con4bid impbii ) ABCZADBDCZIABIEFJABJEGH $.
 
-  $( Contraposition.  Theorem *4.12 of [WhiteheadRussell] p. 117.  (Contributed
-     by NM, 15-Apr-1995.)  (Proof shortened by Wolf Lammen, 3-Jan-2013.) $)
-  con2bi $p |- ( ( ph <-> -. ps ) <-> ( ps <-> -. ph ) ) $=
-    ( wn wb notbi notnot bibi2i bicom 3bitr2i ) ABCZDACZJCZDKBDBKDAJEBLKBFGKBHI
-    $.
-
   $( Contraposition.  (Contributed by Jim Kingdon, 4-Apr-2018.) $)
   con1biimdc $p |- ( DECID ph -> ( ( -. ph <-> ps ) -> ( -. ps <-> ph ) ) ) $=
     ( wdc wn wb wi bi1 con1dc syl5 bi2 con2d a1i impbidd ) ACZADZBEZBDZAPOBFNQA
@@ -6178,20 +6172,6 @@ $)
       ( ( ph <-> -. ps ) <-> ( ps <-> -. ph ) ) ) ) $=
     ( wdc wn wb wa con1bidc imp bicom 3bitr3g bicomd ex ) ACZBCZABDZEZBADZEZEMN
     FZRPSQBEZOAEZRPMNTUAEABGHQBIOAIJKL $.
-
-  ${
-    con2bid.1 $e |- ( ph -> ( ps <-> -. ch ) ) $.
-    $( A contraposition deduction.  (Contributed by NM, 15-Apr-1995.) $)
-    con2bid $p |- ( ph -> ( ch <-> -. ps ) ) $=
-      ( wn wb con2bi sylibr ) ABCEFCBEFDCBGH $.
-  $}
-
-  ${
-    con1bid.1 $e |- ( ph -> ( -. ps <-> ch ) ) $.
-    $( A contraposition deduction.  (Contributed by NM, 9-Oct-1999.) $)
-    con1bid $p |- ( ph -> ( -. ch <-> ps ) ) $=
-      ( wn bicomd con2bid ) ABCEACBABECDFGF $.
-  $}
 
   ${
     con1biddc.1 $e |- ( ph -> ( DECID ps -> ( -. ps <-> ch ) ) ) $.
