@@ -6098,14 +6098,6 @@ $)
       ( wi ex wn pm2.61i ) ABCFABCDGAHBCEGI $.
   $}
 
-  ${
-    pm2.61dan.1 $e |- ( ( ph /\ ps ) -> ch ) $.
-    pm2.61dan.2 $e |- ( ( ph /\ -. ps ) -> ch ) $.
-    $( Elimination of an antecedent.  (Contributed by NM, 1-Jan-2005.) $)
-    pm2.61dan $p |- ( ph -> ch ) $=
-      ( ex wn pm2.61d ) ABCABCDFABGCEFH $.
-  $}
-
   $( Negating an implication for a decidable antecedent.  Based on theorem *2.5
      of [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon,
      29-Mar-2018.) $)
