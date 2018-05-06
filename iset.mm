@@ -5949,14 +5949,6 @@ $)
   $}
 
   ${
-    con4i.1 $e |- ( -. ph -> -. ps ) $.
-    $( Inference rule derived from axiom ~ ax-3 .  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by Wolf Lammen, 21-Jun-2013.) $)
-    con4i $p |- ( ps -> ph ) $=
-      ( wn notnot1 nsyl2 ) BBDABECF $.
-  $}
-
-  ${
     impidc.1 $e |- ( DECID ch -> ( ph -> ( ps -> ch ) ) ) $.
     $( An importation inference for a decidable consequent.  (Contributed by
        Jim Kingdon, 30-Apr-2018.) $)
