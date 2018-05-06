@@ -9318,6 +9318,14 @@ $)
     GZUCUHUBUAUFCZUIUMDZBHUAUNUOAUFIJKUAUBUCUIDABLJUBUHUMDUAUBUDUKUGULUBBUJABMN
     UGULDUBUEUFQOPRST $.
 
+  $( Theorem *5.24 of [WhiteheadRussell] p. 124, but for decidable
+     propositions.  (Contributed by Jim Kingdon, 5-May-2018.) $)
+  pm5.24dc $p |- ( DECID ph -> ( DECID ps ->
+      ( -. ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) <->
+                ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) ) ) $=
+    ( wdc wa wn wo wb dfbi3dc imp notbid xordc bitr3d ex ) ACZBCZABDA
+    EZBEZDFZEZAQDBPDFZGNODZABGZEZSTUAUBRNOUBRGABHIJNOUCTGABKILM $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Operations on true and false constants
@@ -15630,12 +15638,6 @@ $)
   dfbi3 $p |- ( ( ph <-> ps ) <-> ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) ) $=
     ( wn wb wa wo xor pm5.18 notnot anbi2i ancom orbi12i 3bitr4i ) ABCZDCANCZEZ
     NACZEZFABDABEZQNEZFANGABHSPTRBOABIJQNKLM $.
-
-  $( Theorem *5.24 of [WhiteheadRussell] p. 124.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm5.24 $p |- ( -. ( ( ph /\ ps ) \/ ( -. ph /\ -. ps ) ) <->
-                ( ( ph /\ -. ps ) \/ ( ps /\ -. ph ) ) ) $=
-    ( wb wn wa wo xor dfbi3 xchnxbi ) ABCABDZEBADZEFABEKJEFABGABHI $.
 
   $( Conjunction distributes over exclusive-or, using ` -. ( ph <-> ps ) ` to
      express exclusive-or.  This is one way to interpret the distributive law
