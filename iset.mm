@@ -6132,29 +6132,11 @@ $)
   con34bdc $p |- ( DECID ps -> ( ( ph -> ps ) <-> ( -. ps -> -. ph ) ) ) $=
     ( wdc wi wn con3 condc impbid2 ) BCABDBEAEDABFBAGH $.
 
-  $( Double negation.  Theorem *4.13 of [WhiteheadRussell] p. 117.
-     (Contributed by NM, 5-Aug-1993.) $)
-  notnot $p |- ( ph <-> -. -. ph ) $=
-    ( wn notnot1 notnot2 impbii ) AABBACADE $.
-
   $( Double negation equivalence for a decidable proposition.  Like theorem
      *4.13 of [WhiteheadRussell] p. 117, but with a decidability antecendent.
      (Contributed by Jim Kingdon, 13-Mar-2018.) $)
   notnotdc $p |- ( DECID ph -> ( ph <-> -. -. ph ) ) $=
     ( wdc wn notnot1 notnot2dc impbid2 ) ABAACCADAEF $.
-
-  ${
-    con4bid.1 $e |- ( ph -> ( -. ps <-> -. ch ) ) $.
-    $( A contraposition deduction.  (Contributed by NM, 21-May-1994.)  (Revised
-       by NM, 17-Sep-2013.) $)
-    con4bid $p |- ( ph -> ( ps <-> ch ) ) $=
-      ( wn biimprd con4d biimpd impcon4bid ) ABCACBABEZCEZDFGAJKDHI $.
-  $}
-
-  $( Contraposition.  Theorem *4.11 of [WhiteheadRussell] p. 117.  (Contributed
-     by NM, 21-May-1994.)  (Proof shortened by Wolf Lammen, 12-Jun-2013.) $)
-  notbi $p |- ( ( ph <-> ps ) <-> ( -. ph <-> -. ps ) ) $=
-    ( wb wn id notbid con4bid impbii ) ABCZADBDCZIABIEFJABJEGH $.
 
   $( Contraposition.  (Contributed by Jim Kingdon, 4-Apr-2018.) $)
   con1biimdc $p |- ( DECID ph -> ( ( -. ph <-> ps ) -> ( -. ps <-> ph ) ) ) $=
@@ -14317,6 +14299,24 @@ $(
   classical logic, but probably intuitionistic proofs can be found
   for much of it.
 $)
+
+  $( Double negation.  Theorem *4.13 of [WhiteheadRussell] p. 117.
+     (Contributed by NM, 5-Aug-1993.) $)
+  notnot $p |- ( ph <-> -. -. ph ) $=
+    ( wn notnot1 notnot2 impbii ) AABBACADE $.
+
+  ${
+    con4bid.1 $e |- ( ph -> ( -. ps <-> -. ch ) ) $.
+    $( A contraposition deduction.  (Contributed by NM, 21-May-1994.)  (Revised
+       by NM, 17-Sep-2013.) $)
+    con4bid $p |- ( ph -> ( ps <-> ch ) ) $=
+      ( wn biimprd con4d biimpd impcon4bid ) ABCACBABEZCEZDFGAJKDHI $.
+  $}
+
+  $( Contraposition.  Theorem *4.11 of [WhiteheadRussell] p. 117.  (Contributed
+     by NM, 21-May-1994.)  (Proof shortened by Wolf Lammen, 12-Jun-2013.) $)
+  notbi $p |- ( ( ph <-> ps ) <-> ( -. ph <-> -. ps ) ) $=
+    ( wb wn id notbid con4bid impbii ) ABCZADBDCZIABIEFJABJEGH $.
 
   ${
     con1bii.1 $e |- ( -. ph <-> ps ) $.
