@@ -6080,16 +6080,6 @@ $)
       ( wi id ja ax-mp ) AAEBAFAABDCGH $.
   $}
 
-  ${
-    pm2.61ii.1 $e |- ( -. ph -> ( -. ps -> ch ) ) $.
-    pm2.61ii.2 $e |- ( ph -> ch ) $.
-    pm2.61ii.3 $e |- ( ps -> ch ) $.
-    $( Inference eliminating two antecedents.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
-    pm2.61ii $p |- ch $=
-      ( wn pm2.61d2 pm2.61i ) ACEAGBCDFHI $.
-  $}
-
   $( Negating an implication for a decidable antecedent.  Based on theorem *2.5
      of [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon,
      29-Mar-2018.) $)
@@ -15478,6 +15468,16 @@ $)
        25-Oct-2003.) $)
     4cases $p |- ch $=
       ( pm2.61ian wn pm2.61i ) BCABCDFHABICEGHJ $.
+  $}
+
+  ${
+    pm2.61ii.1 $e |- ( -. ph -> ( -. ps -> ch ) ) $.
+    pm2.61ii.2 $e |- ( ph -> ch ) $.
+    pm2.61ii.3 $e |- ( ps -> ch ) $.
+    $( Inference eliminating two antecedents.  (Contributed by NM,
+       5-Aug-1993.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
+    pm2.61ii $p |- ch $=
+      ( wn pm2.61d2 pm2.61i ) ACEAGBCDFHI $.
   $}
 
   ${
