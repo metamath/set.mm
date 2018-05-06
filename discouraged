@@ -14558,6 +14558,7 @@ New usage of "dral1-o" is discouraged (4 uses).
 New usage of "dral1OLD" is discouraged (0 uses).
 New usage of "dral2-o" is discouraged (4 uses).
 New usage of "dral2OLD" is discouraged (0 uses).
+New usage of "drnf2OLD" is discouraged (0 uses).
 New usage of "drngoi" is discouraged (2 uses).
 New usage of "dtruALT" is discouraged (0 uses).
 New usage of "dtruALT2" is discouraged (0 uses).
@@ -16063,6 +16064,7 @@ New usage of "nfimOLD" is discouraged (0 uses).
 New usage of "nfimdOLD" is discouraged (0 uses).
 New usage of "nfndOLD" is discouraged (0 uses).
 New usage of "nfnfOLD" is discouraged (0 uses).
+New usage of "nfsb4tOLD" is discouraged (0 uses).
 New usage of "nic-ax" is discouraged (7 uses).
 New usage of "nic-axALT" is discouraged (0 uses).
 New usage of "nic-bi1" is discouraged (3 uses).
@@ -17519,6 +17521,7 @@ Proof modification of "disjmoOLD" is discouraged (46 steps).
 Proof modification of "dral1OLD" is discouraged (68 steps).
 Proof modification of "dral2-o" is discouraged (14 steps).
 Proof modification of "dral2OLD" is discouraged (14 steps).
+Proof modification of "drnf2OLD" is discouraged (52 steps).
 Proof modification of "dtruALT" is discouraged (79 steps).
 Proof modification of "dtruALT2" is discouraged (80 steps).
 Proof modification of "dveel2ALT" is discouraged (22 steps).
@@ -17927,6 +17930,7 @@ Proof modification of "nfimOLD" is discouraged (23 steps).
 Proof modification of "nfimdOLD" is discouraged (127 steps).
 Proof modification of "nfndOLD" is discouraged (56 steps).
 Proof modification of "nfnfOLD" is discouraged (44 steps).
+Proof modification of "nfsb4tOLD" is discouraged (182 steps).
 Proof modification of "nic-ax" is discouraged (142 steps).
 Proof modification of "nic-axALT" is discouraged (245 steps).
 Proof modification of "nic-bi1" is discouraged (22 steps).
