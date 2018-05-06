@@ -5865,20 +5865,6 @@ $)
     ( wdc wn wo wi df-dc ax-1 a1d pm2.27 ax-in2 syl6 jaoi sylbi ) ACA
     ADZEOBDZFZBAFZFZAGASOARQABHIOQPROPJBAKLMN $.
 
-  ${
-    con4d.1 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
-    $( Deduction derived from axiom ~ ax-3 .  (Contributed by NM,
-       26-Mar-1995.) $)
-    con4d $p |- ( ph -> ( ch -> ps ) ) $=
-      ( wn wi ax-3 syl ) ABECEFCBFDBCGH $.
-  $}
-
-  $( Proof by contradiction.  Theorem *2.18 of [WhiteheadRussell] p. 103.  Also
-     called the Law of Clavius.  This is not valid intuitionistically, but
-     compare with ~ pm2.01 which is.  (Contributed by NM, 5-Aug-1993.) $)
-  pm2.18 $p |- ( ( -. ph -> ph ) -> ph ) $=
-    ( wn wi pm2.21 a2i con4d pm2.43i ) ABZACZAIAIHAIBZAJDEFG $.
-
   $( Proof by contradiction for a decidable proposition.  Based on Theorem
      *2.18 of [WhiteheadRussell] p. 103 (also called the Law of Clavius).
      Intuitionistically it requires a decidability assumption, but compare with
@@ -5886,21 +5872,6 @@ $)
   pm2.18dc $p |- ( DECID ph -> ( ( -. ph -> ph ) -> ph ) ) $=
     ( wdc wn wi pm2.21 a2i condc syl5 pm2.43d ) ABZACZADZALKLCZDJLADKAMAMEFALGH
     I $.
-
-  ${
-    pm2.18d.1 $e |- ( ph -> ( -. ps -> ps ) ) $.
-    $( Deduction based on reductio ad absurdum.  (Contributed by FL,
-       12-Jul-2009.)  (Proof shortened by Andrew Salmon, 7-May-2011.) $)
-    pm2.18d $p |- ( ph -> ps ) $=
-      ( wn wi pm2.18 syl ) ABDBEBCBFG $.
-  $}
-
-  $( Double negation elimination.  Theorem *2.14 of [WhiteheadRussell] p. 102.
-     This does not hold intuitionistically, although its coverse, ~ notnot1 ,
-     does.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by David Harvey,
-     5-Sep-1999.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
-  notnot2 $p |- ( -. -. ph -> ph ) $=
-    ( wn pm2.21 pm2.18d ) ABZBAEACD $.
 
   $( Double negation elimination for a decidable proposition.  (Contributed by
      Jim Kingdon, 11-Mar-2018.) $)
@@ -14164,11 +14135,33 @@ $(
 $)
 
   ${
+    con4d.1 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
+    $( Deduction derived from axiom ~ ax-3 .  (Contributed by NM,
+       26-Mar-1995.) $)
+    con4d $p |- ( ph -> ( ch -> ps ) ) $=
+      ( wn wi ax-3 syl ) ABECEFCBFDBCGH $.
+  $}
+
+  ${
     con1d.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
     $( A contraposition deduction.  (Contributed by NM, 5-Aug-1993.)  (Revised
        by NM, 12-Feb-2013.) $)
     con1d $p |- ( ph -> ( -. ch -> ps ) ) $=
       ( wn notnot1 syl6 con4d ) ABCEZABECIEDCFGH $.
+  $}
+
+  $( Proof by contradiction.  Theorem *2.18 of [WhiteheadRussell] p. 103.  Also
+     called the Law of Clavius.  This is not valid intuitionistically, but
+     compare with ~ pm2.01 which is.  (Contributed by NM, 5-Aug-1993.) $)
+  pm2.18 $p |- ( ( -. ph -> ph ) -> ph ) $=
+    ( wn wi pm2.21 a2i con4d pm2.43i ) ABZACZAIAIHAIBZAJDEFG $.
+
+  ${
+    pm2.18d.1 $e |- ( ph -> ( -. ps -> ps ) ) $.
+    $( Deduction based on reductio ad absurdum.  (Contributed by FL,
+       12-Jul-2009.)  (Proof shortened by Andrew Salmon, 7-May-2011.) $)
+    pm2.18d $p |- ( ph -> ps ) $=
+      ( wn wi pm2.18 syl ) ABDBEBCBFG $.
   $}
 
   ${
@@ -14215,6 +14208,13 @@ $)
     pm2.61i $p |- ps $=
       ( wi id ja ax-mp ) AAEBAFAABDCGH $.
   $}
+
+  $( Double negation elimination.  Theorem *2.14 of [WhiteheadRussell] p. 102.
+     This does not hold intuitionistically, although its coverse, ~ notnot1 ,
+     does.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by David Harvey,
+     5-Sep-1999.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
+  notnot2 $p |- ( -. -. ph -> ph ) $=
+    ( wn pm2.21 pm2.18d ) ABZBAEACD $.
 
   $( Double negation.  Theorem *4.13 of [WhiteheadRussell] p. 117.
      (Contributed by NM, 5-Aug-1993.) $)
