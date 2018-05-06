@@ -6106,15 +6106,6 @@ $)
       ( ex wn pm2.61d ) ABCABCDFABGCEFH $.
   $}
 
-  ${
-    impcon4bid.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    impcon4bid.2 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
-    $( A variation on ~ impbid with contraposition.  (Contributed by Jeff
-       Hankins, 3-Jul-2009.) $)
-    impcon4bid $p |- ( ph -> ( ps <-> ch ) ) $=
-      ( con4d impbid ) ABCDABCEFG $.
-  $}
-
   $( Negating an implication for a decidable antecedent.  Based on theorem *2.5
      of [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon,
      29-Mar-2018.) $)
@@ -14304,6 +14295,15 @@ $)
      (Contributed by NM, 5-Aug-1993.) $)
   notnot $p |- ( ph <-> -. -. ph ) $=
     ( wn notnot1 notnot2 impbii ) AABBACADE $.
+
+  ${
+    impcon4bid.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    impcon4bid.2 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
+    $( A variation on ~ impbid with contraposition.  (Contributed by Jeff
+       Hankins, 3-Jul-2009.) $)
+    impcon4bid $p |- ( ph -> ( ps <-> ch ) ) $=
+      ( con4d impbid ) ABCDABCEFG $.
+  $}
 
   ${
     con4bid.1 $e |- ( ph -> ( -. ps <-> -. ch ) ) $.
