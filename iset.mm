@@ -6090,14 +6090,6 @@ $)
       ( wn pm2.61d2 pm2.61i ) ACEAGBCDFHI $.
   $}
 
-  ${
-    pm2.61ian.1 $e |- ( ( ph /\ ps ) -> ch ) $.
-    pm2.61ian.2 $e |- ( ( -. ph /\ ps ) -> ch ) $.
-    $( Elimination of an antecedent.  (Contributed by NM, 1-Jan-2005.) $)
-    pm2.61ian $p |- ( ps -> ch ) $=
-      ( wi ex wn pm2.61i ) ABCFABCDGAHBCEGI $.
-  $}
-
   $( Negating an implication for a decidable antecedent.  Based on theorem *2.5
      of [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon,
      29-Mar-2018.) $)
@@ -15467,6 +15459,14 @@ $)
   19.30 $p |- ( A. x ( ph \/ ps ) -> ( A. x ph \/ E. x ps ) ) $=
     ( wn wi wal wex wo exnal exim syl5bir df-or albii 3imtr4i ) ADZBEZCFZACFZDZ
     BCGZEABHZCFRTHSOCGQTACIOBCJKUAPCABLMRTLN $.
+
+  ${
+    pm2.61ian.1 $e |- ( ( ph /\ ps ) -> ch ) $.
+    pm2.61ian.2 $e |- ( ( -. ph /\ ps ) -> ch ) $.
+    $( Elimination of an antecedent.  (Contributed by NM, 1-Jan-2005.) $)
+    pm2.61ian $p |- ( ps -> ch ) $=
+      ( wi ex wn pm2.61i ) ABCFABCDGAHBCEGI $.
+  $}
 
   ${
     4cases.1 $e |- ( ( ph /\ ps ) -> ch ) $.
