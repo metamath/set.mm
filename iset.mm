@@ -6020,15 +6020,6 @@ $)
       ( wi a1i pm2.61d ) ABCBCFAEGDH $.
   $}
 
-  ${
-    ja.1 $e |- ( -. ph -> ch ) $.
-    ja.2 $e |- ( ps -> ch ) $.
-    $( Inference joining the antecedents of two premises.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by O'Cat, 19-Feb-2008.) $)
-    ja $p |- ( ( ph -> ps ) -> ch ) $=
-      ( wi imim2i pm2.61d1 ) ABFACBCAEGDH $.
-  $}
-
   $( Case elimination for a decidable proposition.  Based on theorem *2.6 of
      [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon, 25-Mar-2018.) $)
   pm2.6dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) ) $=
@@ -14246,6 +14237,15 @@ $(
   classical logic, but probably intuitionistic proofs can be found
   for much of it.
 $)
+
+  ${
+    ja.1 $e |- ( -. ph -> ch ) $.
+    ja.2 $e |- ( ps -> ch ) $.
+    $( Inference joining the antecedents of two premises.  (Contributed by NM,
+       5-Aug-1993.)  (Proof shortened by O'Cat, 19-Feb-2008.) $)
+    ja $p |- ( ( ph -> ps ) -> ch ) $=
+      ( wi imim2i pm2.61d1 ) ABFACBCAEGDH $.
+  $}
 
   ${
     pm2.61i.1 $e |- ( ph -> ps ) $.
