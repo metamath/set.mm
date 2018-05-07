@@ -53,6 +53,7 @@ processed manually.
 
 DONE:
 Date      Old       New         Notes
+6-May-18  cbvex     cbvexh
 6-May-18  cbval     cbvalh
 6-May-18  sbco2     sbco2h
 6-May-18  sbie      sbieh
@@ -11720,16 +11721,26 @@ $)
   $}
 
   ${
-    cbvex.1 $e |- ( ph -> A. y ph ) $.
-    cbvex.2 $e |- ( ps -> A. x ps ) $.
-    cbvex.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    cbvexh.1 $e |- ( ph -> A. y ph ) $.
+    cbvexh.2 $e |- ( ps -> A. x ps ) $.
+    cbvexh.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Rule used to change bound variables, using implicit substitition.
        (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
        3-Feb-2015.) $)
-    cbvex $p |- ( E. x ph <-> E. y ps ) $=
+    cbvexh $p |- ( E. x ph <-> E. y ps ) $=
       ( wex hbex cv wceq wa wb bicomd equcoms equsex simpr eximi sylbir exlimi
       impbii ) ACHZBDHZAUCCBCDFIADJZCJZKZBLZDHUCBADCEBAMCDUEUDKZABGNOPUGBDUFBQR
       STBUBDADCEIBUHALZCHUBABCDFGPUIACUHAQRSTUA $.
+  $}
+
+  ${
+    cbvex.1 $e |- F/ y ph $.
+    cbvex.2 $e |- F/ x ps $.
+    cbvex.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 5-Aug-1993.) $)
+    cbvex $p |- ( E. x ph <-> E. y ps ) $=
+      ( nfri cbvexh ) ABCDADEHBCFHGI $.
   $}
 
   ${
@@ -12681,7 +12692,7 @@ $)
     $( Substitution of variable in existential quantifier.  (Contributed by NM,
        12-Aug-1993.)  (Proof rewritten by Jim Kingdon, 15-Jan-2018.) $)
     sb8e $p |- ( E. x ph <-> E. y [ y / x ] ph ) $=
-      ( wsb hbsb3 sbequ12 cbvex ) AABCEBCDABCDFABCGH $.
+      ( wsb hbsb3 sbequ12 cbvexh ) AABCEBCDABCDFABCGH $.
   $}
 
 $(
@@ -13151,7 +13162,7 @@ $)
     $( Rule used to change bound variables, using implicit substitition.
        (Contributed by NM, 5-Aug-1993.) $)
     cbvexv $p |- ( E. x ph <-> E. y ps ) $=
-      ( ax-17 cbvex ) ABCDADFBCFEG $.
+      ( ax-17 cbvexh ) ABCDADFBCFEG $.
   $}
 
   ${
@@ -13172,7 +13183,7 @@ $)
     $( Rule used to change bound variables, using implicit substitition.
        (Contributed by NM, 14-Sep-2003.) $)
     cbvex2 $p |- ( E. x E. y ph <-> E. z E. w ps ) $=
-      ( wex hbex weq wb wa ax-17 hban cbvex 19.42v expcom pm5.32d 3bitr3i mpbir
+      ( wex hbex weq wb wa ax-17 hban cbvexh 19.42v expcom pm5.32d 3bitr3i mpbir
       wi pm5.32 ) ADLZBFLZCEAEDGMBCFIMCENZUGUHOUEUIUGPZUIUHPZOUIAPZDLUIBPZFLUJU
       KULUMDFUIAFUIFQHRUIBDUIDQJRDFNZUIABUIUNABOKUAUBSUIADTUIBFTUCUIUGUHUFUDS
       $.
@@ -14677,7 +14688,7 @@ $)
        instead of a distinct variable condition.  (Contributed by NM,
        12-Aug-1993.) $)
     euf $p |- ( E! x ph <-> E. y A. x ( ph <-> x = y ) ) $=
-      ( vz weu weq wb wal wex df-eu ax-17 hbbi hbal equequ2 bibi2d albidv cbvex
+      ( vz weu weq wb wal wex df-eu ax-17 hbbi hbal equequ2 bibi2d albidv cbvexh
       bitri ) ABFABEGZHZBIZEJABCGZHZBIZCJABEKUBUEECUACBATCDTCLMNUEELECGZUAUDBUF
       TUCAECBOPQRS $.
   $}
@@ -14792,7 +14803,7 @@ $)
     mo $p |- ( E. y A. x ( ph -> x = y ) <->
                A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
       ( vz weq wi wal wex wsb wa ax-17 hbim hbal cbv3h syl sylbir alimi wn hbn
-      equequ2 imbi2d albidv cbvex hbs1 sbequ2 ax-8 imim12d ancli aaan prth syl6
+      equequ2 imbi2d albidv cbvexh hbs1 sbequ2 ax-8 imim12d ancli aaan prth syl6
       sylibr equtr2 2alimi exlimiv impexp bi2.04 bitri 2albii eximi a7s syl5com
       alim exim syl5bi alnex sbequ1 equcoms con3d pm2.21 19.8a 3syl a1d pm2.61i
       impbii ) ABCFZGZBHZCIZAABCJZKZVQGZCHBHZVTABEFZGZBHZEIWDWGVSECWFCBAWECDWEC
@@ -14960,7 +14971,7 @@ $)
        (Contributed by NM, 9-Mar-1995.)  (Revised by Andrew Salmon,
        8-Jun-2011.) $)
     cbvmo $p |- ( E* x ph <-> E* y ps ) $=
-      ( wex weu wi wmo cbvex cbveu imbi12i df-mo 3bitr4i ) ACHZACIZJBDHZBDIZJAC
+      ( wex weu wi wmo cbvexh cbveu imbi12i df-mo 3bitr4i ) ACHZACIZJBDHZBDIZJAC
       KBDKQSRTABCDEFGLABCDEFGMNACOBDOP $.
   $}
 
@@ -15137,7 +15148,7 @@ $)
     $( "At most one" picks a variable value, eliminating an existential
        quantifier.  (Contributed by NM, 27-Jan-1997.) $)
     mopick $p |- ( ( E* x ph /\ E. x ( ph /\ ps ) ) -> ( ph -> ps ) ) $=
-      ( vy wa wex wmo wi wsb ax-17 hbs1 hban weq sbequ12 anbi12d cbvex wal ax-4
+      ( vy wa wex wmo wi wsb ax-17 hbs1 hban weq sbequ12 anbi12d cbvexh wal ax-4
       mo3 sylbi a4s sbequ2 imim2i exp3a com4t imp syl5 exlimiv impcom ) ABEZCFZ
       ACGZABHZUKACDIZBCDIZEZDFULUMHZUJUPCDUJDJUNUOCACDKBCDKLCDMZAUNBUOACDNBCDNO
       PUPUQDULAUNEZURHZUPUMULUTDQZCQUTACDADJSVAUTCUTDRUATUNUOUTUMHUTAUNUOBUTAUN
