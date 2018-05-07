@@ -53,6 +53,7 @@ processed manually.
 
 DONE:
 Date      Old       New         Notes
+6-May-18  alrimi    alrimih
 6-May-18  cbvex     cbvexh
 6-May-18  cbval     cbvalh
 6-May-18  sbco2     sbco2h
@@ -9702,11 +9703,11 @@ $)
     ( wb wal bi1 al2imi bi2 impbid ) ABDZCEACEBCEJABCABFGJBACABHGI $.
 
   ${
-    alrimi.1 $e |- ( ph -> A. x ph ) $.
-    alrimi.2 $e |- ( ph -> ps ) $.
+    alrimih.1 $e |- ( ph -> A. x ph ) $.
+    alrimih.2 $e |- ( ph -> ps ) $.
     $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.) $)
-    alrimi $p |- ( ph -> A. x ps ) $=
+    alrimih $p |- ( ph -> A. x ps ) $=
       ( wal alimi syl ) AACFBCFDABCEGH $.
   $}
 
@@ -9785,7 +9786,7 @@ $)
     $( Formula-building rule for universal quantifier (deduction rule).
        (Contributed by NM, 5-Aug-1993.) $)
     albid $p |- ( ph -> ( A. x ps <-> A. x ch ) ) $=
-      ( wb wal alrimi albi syl ) ABCGZDHBDHCDHGALDEFIBCDJK $.
+      ( wb wal alrimih albi syl ) ABCGZDHBDHCDHGALDEFIBCDJK $.
   $}
 
   $( Theorem 19.26 of [Margaris] p. 90.  Also Theorem *10.22 of
@@ -10318,12 +10319,21 @@ $)
   $}
 
   ${
+    alrimi.1 $e |- F/ x ph $.
+    alrimi.2 $e |- ( ph -> ps ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Contributed by Mario
+       Carneiro, 24-Sep-2016.) $)
+    alrimi $p |- ( ph -> A. x ps ) $=
+      ( nfri alrimih ) ABCACDFEG $.
+  $}
+
+  ${
     nfd.1 $e |- F/ x ph $.
     nfd.2 $e |- ( ph -> ( ps -> A. x ps ) ) $.
     $( Deduce that ` x ` is not free in ` ps ` in a context.  (Contributed by
        Mario Carneiro, 24-Sep-2016.) $)
     nfd $p |- ( ph -> F/ x ps ) $=
-      ( wal wi wnf nfri alrimi df-nf sylibr ) ABBCFGZCFBCHAMCACDIEJBCKL $.
+      ( wal wi wnf nfri alrimih df-nf sylibr ) ABBCFGZCFBCHAMCACDIEJBCKL $.
   $}
 
   ${
@@ -10589,7 +10599,7 @@ $)
     $( Theorem 19.21 of [Margaris] p. 90.  The hypothesis can be thought of
        as " ` x ` is not free in ` ph ` ."  (Contributed by NM, 5-Aug-1993.) $)
     19.21 $p |- ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) $=
-      ( wi wal alim syl5 hba1 hbim ax-4 imim2i alrimi impbii ) ABEZCFZABCFZEZAA
+      ( wi wal alim syl5 hba1 hbim ax-4 imim2i alrimih impbii ) ABEZCFZABCFZEZAA
       CFPQDABCGHROCAQCDBCIJQBABCKLMN $.
   $}
 
@@ -10857,7 +10867,7 @@ $)
        but with one slightly different hypothesis.  (Contributed by Jim
        Kingdon, 30-Dec-2017.) $)
     exlimd2 $p |- ( ph -> ( E. x ps -> ch ) ) $=
-      ( wal wi wex alrimi 19.23t biimpd sylc ) ACCDHIZDHZBCIZDHZBDJCI
+      ( wal wi wex alrimih 19.23t biimpd sylc ) ACCDHIZDHZBCIZDHZBDJCI
       ZAODEFKAQDEGKPRSBCDLMN $.
   $}
 
@@ -10868,7 +10878,7 @@ $)
     $( Deduction from Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
        28-Jan-1997.) $)
     exlimd $p |- ( ph -> ( E. x ps -> ch ) ) $=
-      ( wi wal wex alrimi 19.23 sylib ) ABCHZDIBDJCHANDEGKBCDFLM $.
+      ( wi wal wex alrimih 19.23 sylib ) ABCHZDIBDJCHANDEGKBCDFLM $.
   $}
 
   ${
@@ -10963,7 +10973,7 @@ $)
     $( Deduction from Theorem 19.22 of [Margaris] p. 90.  (Contributed by NM,
        20-May-1996.) $)
     eximd $p |- ( ph -> ( E. x ps -> E. x ch ) ) $=
-      ( wi wal wex alrimi exim syl ) ABCGZDHBDICDIGAMDEFJBCDKL $.
+      ( wi wal wex alrimih exim syl ) ABCGZDHBDICDIGAMDEFJBCDKL $.
   $}
 
   ${
@@ -10972,7 +10982,7 @@ $)
     $( Deduction for generalization rule for negated wff.  (Contributed by NM,
        2-Jan-2002.) $)
     nexd $p |- ( ph -> -. E. x ps ) $=
-      ( wn wal wex alrimi alnex sylib ) ABFZCGBCHFALCDEIBCJK $.
+      ( wn wal wex alrimih alnex sylib ) ABFZCGBCHFALCDEIBCJK $.
   $}
 
   ${
@@ -10981,7 +10991,7 @@ $)
     $( Formula-building rule for existential quantifier (deduction rule).
        (Contributed by NM, 5-Aug-1993.) $)
     exbid $p |- ( ph -> ( E. x ps <-> E. x ch ) ) $=
-      ( wb wal wex alrimi exbi syl ) ABCGZDHBDICDIGAMDEFJBCDKL $.
+      ( wb wal wex alrimih exbi syl ) ABCGZDHBDICDIGAMDEFJBCDKL $.
   $}
 
   $( Simplification of an existentially quantified conjunction.  (Contributed
@@ -11088,7 +11098,7 @@ $)
     $( If ` x ` is not free in ` ph ` , it is not free in ` E. y ph ` .
        (Contributed by NM, 5-Aug-1993.)  (Revised by NM, 2-Feb-2015.) $)
     hbex $p |- ( E. y ph -> A. x E. y ph ) $=
-      ( wex wal hbe1 hbal 19.8a alrimi exlimi ) AACEZBFCLCBACGHALBDACIJK $.
+      ( wex wal hbe1 hbal 19.8a alrimih exlimi ) AACEZBFCLCBACGHALBDACIJK $.
   $}
 
   ${
@@ -11165,7 +11175,7 @@ $)
     $( Deduction form of bound-variable hypothesis builder ~ hbn .
        (Contributed by NM, 3-Jan-2002.) $)
     hbnd $p |- ( ph -> ( -. ps -> A. x -. ps ) ) $=
-      ( wal wi wn alrimi hbnt syl ) ABBCFGZCFBHZMCFGALCDEIBCJK $.
+      ( wal wi wn alrimih hbnt syl ) ABBCFGZCFBHZMCFGALCDEIBCJK $.
   $}
 
   ${
@@ -11230,7 +11240,7 @@ $)
   $( Theorem 19.12 of [Margaris] p. 89.  Assuming the converse is a mistake
      sometimes made by beginners!  (Contributed by NM, 5-Aug-1993.) $)
   19.12 $p |- ( E. x A. y ph -> A. y E. x ph ) $=
-    ( wal wex hba1 hbex ax-4 eximi alrimi ) ACDZBEABECKCBACFGKABACHIJ $.
+    ( wal wex hba1 hbex ax-4 eximi alrimih ) ACDZBEABECKCBACFGKABACHIJ $.
 
   ${
     19.19.1 $e |- ( ph -> A. x ph ) $.
@@ -11263,7 +11273,7 @@ $)
 
   $( Theorem 19.38 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   19.38 $p |- ( ( E. x ph -> A. x ps ) -> A. x ( ph -> ps ) ) $=
-    ( wex wal wi hbe1 hba1 hbim 19.8a ax-4 imim12i alrimi ) ACDZBCEZFABFCNOCACG
+    ( wex wal wi hbe1 hba1 hbim 19.8a ax-4 imim12i alrimih ) ACDZBCEZFABFCNOCACG
     BCHIANOBACJBCKLM $.
 
   ${
@@ -11453,7 +11463,7 @@ $)
        special cases.  Proof similar to Lemma 16 of [Tarski] p. 70.
        (Contributed by NM, 20-May-2008.) $)
     ax11i $p |- ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) $=
-      ( weq wi wal biimprcd alrimi syl6bi ) CDGZABMAHZCIEBNCFMABEJKL $.
+      ( weq wi wal biimprcd alrimih syl6bi ) CDGZABMAHZCIEBNCFMABEJKL $.
   $}
 
 $(
@@ -11548,7 +11558,7 @@ $)
     $( A useful equivalence related to substitution.  (Contributed by NM,
        5-Aug-1993.)  (Proof shortened by Andrew Salmon, 12-Aug-2011.) $)
     equsal $p |- ( A. x ( x = y -> ph ) <-> ps ) $=
-      ( weq wi wal 19.3 syl6bbr pm5.74i albii a1d alrimi ax9o impbii bitr4i ) C
+      ( weq wi wal 19.3 syl6bbr pm5.74i albii a1d alrimih ax9o impbii bitr4i ) C
       DGZAHZCISBCIZHZCIZBTUBCSAUASABUAFBCEJKLMBUCBUBCEBUASENOBCDPQR $.
   $}
 
@@ -11786,14 +11796,14 @@ $)
        (Contributed by Mario Carneiro, 24-Sep-2016.)  (Proof shortened by Wolf
        Lammen, 6-Jan-2018.) $)
     nfald $p |- ( ph -> F/ x A. y ps ) $=
-      ( wnf wal nfri alrimi nfnf1 nfal hba1 sp nfrd hbald nfd syl ) ABCGZDHZBDH
+      ( wnf wal nfri alrimih nfnf1 nfal hba1 sp nfrd hbald nfd syl ) ABCGZDHZBDH
       ZCGASDADEIFJTUACSCDBCKLTBCDSDMTBCSDNOPQR $.
 
     $( If ` x ` is not free in ` ph ` , it is not free in ` E. y ph ` .
        (Contributed by Mario Carneiro, 24-Sep-2016.)  (Proof rewritten by Jim
        Kingdon, 7-Feb-2018.) $)
     nfexd $p |- ( ph -> F/ x E. y ps ) $=
-      ( wex wal wi wnf nfri df-nf sylib alrimi alcom exim alimi 19.12
+      ( wex wal wi wnf nfri df-nf sylib alrimih alcom exim alimi 19.12
       syl imim2i sylibr ) ABDGZUBCHZIZCHZUBCJAUBBCHZDGZIZCHZUEABUFIZD
       HZCHZUIAUJCHZDHULAUMDADEKABCJUMFBCLMNUJDCOMUKUHCBUFDPQSUHUDCUGU
       CUBBDCRTQSUBCLUA $.
@@ -12260,7 +12270,7 @@ $)
        the consequent, proved without using ~ ax-16 .  (Contributed by NM,
        8-Nov-2006.)  (Proof shortened by Andrew Salmon, 21-Jun-2011.) $)
     aev $p |- ( A. x x = y -> A. z w = v ) $=
-      ( aev.vf vu weq wal hbae ax-8 a4imv alrimi equcomi alequcoms a5i alequcom
+      ( aev.vf vu weq wal hbae ax-8 a4imv alrimih equcomi alequcoms a5i alequcom
       syl6 3syl ) ABHZAIZDEHZCABCJUAFBHZFIZGEHZGIZUBUAUCFABFJTUCAFAFBKLMUDFGHZF
       IZEGHZEIUFUCUGFUGBFBFHZUGBGBGHUJGFHUGBGFKGFNRLOPUHUIEFGEJUGUIFEFEGKLMEGQS
       UEUBGDGDEKLSM $.
@@ -12508,7 +12518,7 @@ $)
              ( E. x ( x = y /\ ph ) -> A. x ( x = y -> ph ) ) ) $=
       ( vz weq wex wal wa wi wo a9e wnf dveeq2or nfnf1 nfri ax11v equequ2 ax-mp
       wb hba1 adantl nfr imp imbi1d a4s albid syl imbi2d imbi12d mpbii ex imp4a
-      alrimi 19.21t mpbid 19.23 syl6ib orim2i pm2.76 olcs exlimiv ) DCEZDFBCEZB
+      alrimih 19.21t mpbid 19.23 syl6ib orim2i pm2.76 olcs exlimiv ) DCEZDFBCEZB
       GZVCAHZBFVCAIZBGZIZJZDCKVBVIDVDVBVIVDVBVHIZJZVDVBJVIIVDVBBLZJVKBCDMVLVJVD
       VLVBVEVGIZBGZVHVLVBVMIZBGVBVNIVLVOBVLBVBBNOVLVBVCAVGVLVBVCAVGIZIZVLVBHZBD
       EZAVSAIZBGZIZIVQABDPVRVSVCWBVPVBVSVCSVLDCBQZUAVRWAVGAVRVBBGZWAVGSVLVBWDVB
@@ -12533,7 +12543,7 @@ $)
      (Contributed by Jim Kingdon, 2-Feb-2018.) $)
   sb4or $p |- ( A. x x = y \/
       A. x ( [ y / x ] ph -> A. x ( x = y -> ph ) ) ) $=
-    ( weq wal wa wex wi wo wsb equs5or nfe1 nfa1 nfim nfri imim1i alrimi orim2i
+    ( weq wal wa wex wi wo wsb equs5or nfe1 nfa1 nfim nfri imim1i alrimih orim2i
     sb1 ax-mp ) BCDZBEZUAAFZBGZUAAHZBEZHZIUBABCJZUFHZBEZIABCKUGUJUBUGUIBUGBUDUF
     BUCBLUEBMNOUHUDUFABCSPQRT $.
 
@@ -12630,7 +12640,7 @@ $)
     $( Deduction substituting both sides of a biconditional.  (Contributed by
        NM, 5-Aug-1993.) $)
     sbbid $p |- ( ph -> ( [ y / x ] ps <-> [ y / x ] ch ) ) $=
-      ( wb wal wsb alrimi a4sbbi syl ) ABCHZDIBDEJCDEJHANDFGKBCDELM $.
+      ( wb wal wsb alrimih a4sbbi syl ) ABCHZDIBDEJCDEJHANDFGKBCDELM $.
   $}
 
   $( Elimination of equality from antecedent after substitution.  (Contributed
@@ -12674,7 +12684,7 @@ $)
     $( Reversed substitution.  (Contributed by NM, 5-Aug-1993.)  (Proof
        shortened by Andrew Salmon, 25-May-2011.) $)
     sb6rf $p |- ( ph <-> A. y ( y = x -> [ y / x ] ph ) ) $=
-      ( weq wsb wi wal sbequ1 equcoms com12 alrimi sb2 sbid2 sylib impbii ) ACB
+      ( weq wsb wi wal sbequ1 equcoms com12 alrimih sb2 sbid2 sylib impbii ) ACB
       EZABCFZGZCHZASCDQARARGBCABCIJKLTRCBFARCBMACBDNOP $.
   $}
 
@@ -12842,7 +12852,7 @@ $)
     $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.) $)
     alrimiv $p |- ( ph -> A. x ps ) $=
-      ( ax-17 alrimi ) ABCACEDF $.
+      ( ax-17 alrimih ) ABCACEDF $.
   $}
 
   ${
@@ -14090,7 +14100,7 @@ $( The theorems in this section make use of the $d statement. $)
        avoid ~ ax-17 and use ~ ax-16 instead.  (Contributed by NM,
        7-Apr-2004.) $)
     dvelimdf $p |- ( ph -> ( -. A. x x = y -> ( ch -> A. x ch ) ) ) $=
-      ( weq wal wn wi wa wsb alrimi wb adantr 2alimi hbsb4t sbied albid 3imtr3d
+      ( weq wal wn wi wa wsb alrimih wb adantr 2alimi hbsb4t sbied albid 3imtr3d
       3syl imp ex ) ADELDMNZCCDMZOAUIPBFEQZUKDMZCUJAUIUKULOZAADMZFMBBDMOZDMFMUI
       UMOAUNFHGRAUOFDIUABFEDUBUFUGAUKCSUIABCFEHJKUCZTAULUJSUIAUKCDGUPUDTUEUH $.
   $}
@@ -14655,7 +14665,7 @@ $)
     eujustALT $p |- ( E. y A. x ( ph <-> x = y )
         <-> E. z A. x ( ph <-> x = z ) ) $=
       ( vw weq wal wb wex equequ2 bibi2d albidv wn hbnae wi ax-17 notbid dvelim
-      a4s df-ex drex1 alrimi nalequcoms a1i cbv2 syl 3bitr4g pm2.61i ) CDFZCGZA
+      a4s df-ex drex1 alrimih nalequcoms a1i cbv2 syl 3bitr4g pm2.61i ) CDFZCGZA
       BCFZHZBGZCIZABDFZHZBGZDIZHUMUQCDUIUMUQHCUIULUPBUIUKUOACDBJKLZSUAUJMZUMMZC
       GZMUQMZDGZMUNURUTVBVDUTUTDGZCGVBVDHUTVECCDCNCDDNUBUTVAVCCDVAVADGODCABEFZH
       ZBGZMZVADCEVIDPECFZVHUMVJVGULBVJVFUKAECBJKLQRUCVIVCCDEVICPEDFZVHUQVKVGUPB
@@ -15168,7 +15178,7 @@ $)
   $( Version of ~ eupick with closed formulas.  (Contributed by NM,
      6-Sep-2008.) $)
   eupicka $p |- ( ( E! x ph /\ E. x ( ph /\ ps ) ) -> A. x ( ph -> ps ) ) $=
-    ( weu wa wex wi hbeu1 hbe1 hban eupick alrimi ) ACDZABEZCFZEABGCMOCACHNCIJA
+    ( weu wa wex wi hbeu1 hbe1 hban eupick alrimih ) ACDZABEZCFZEABGCMOCACHNCIJA
     BCKL $.
 
   $( Existential uniqueness "pick" showing wff equivalence.  (Contributed by
@@ -15225,7 +15235,7 @@ $)
   $( Double quantification with "at most one."  (Contributed by NM,
      3-Dec-2001.) $)
   2moex $p |- ( E* x E. y ph -> A. y E* x ph ) $=
-    ( wex wmo hbe1 hbmo 19.8a immoi alrimi ) ACDZBEABECKCBACFGAKBACHIJ $.
+    ( wex wmo hbe1 hbmo 19.8a immoi alrimih ) ACDZBEABECKCBACFGAKBACHIJ $.
 
   $( Double quantification with existential uniqueness.  (Contributed by NM,
      3-Dec-2001.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
@@ -15275,7 +15285,7 @@ $)
       ( vv vu weq wa wi wal wex wsb equequ2 bi2anan9 ax-17 albii bitri 2alimi
       wn imbi2d 2albidv cbvex2v hbs1 hbim hbsb sbequ12 sylan9bbr equequ1 cbval2
       imbi12d biimpi ancli alcom aaan hbal sylibr prth equtr2 anim12i an4s syl6
-      syl exlimivv sylbir impexp bi2.04 2albii alrimi 2eximi alrot4 alim al2imi
+      syl exlimivv sylbir impexp bi2.04 2albii alrimih 2eximi alrot4 alim al2imi
       sylbi exim alimi syl5com syl5bi alnex notbid biimpri pm2.21 19.8a 19.23bi
       3syl hbn a1d pm2.61i impbii ) ABDHZCEHZIZJZCKZBKZELZDLZAACEMZBDMZIZWLJZEK
       DKZCKBKZWQABFHZCGHZIZJZCKZBKZGLFLXCXIWOFGDEFDHZGEHZIZXGWMBCXLXFWLAXJXDWJX
@@ -15911,7 +15921,7 @@ $)
        not free.  (Contributed by NM, 21-Jan-2007.) $)
     ax11f $p |- ( -. A. x x = y ->
                ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $=
-      ( weq wal wn wi ax-1 alrimi a1ii ) BCEZBFGLALAHZBFHAMBDALIJK $.
+      ( weq wal wn wi ax-1 alrimih a1ii ) BCEZBFGLALAHZBFHAMBDALIJK $.
   $}
 
   ${
@@ -16002,7 +16012,7 @@ $)
                ( x = y -> ( A. z ph -> A. x ( x = y -> A. z ph ) ) ) ) ) $=
       ( weq wal wn wi ax-1 a5i a1i biidd a1d wa alequcom con3i imp hbnae hban
       dral1 imbi2d dral2 3imtr4d alequcoms adantr simplr ax-12 syl2an hba1 ax-4
-      adantlr sylan2 alimd syl2anc ax-7 wb alrimi 19.21ht albid syl5ib ad2antrr
+      adantlr sylan2 alimd syl2anc ax-7 wb alrimih 19.21ht albid syl5ib ad2antrr
       syl syld exp31 pm2.61ian ) BDFBGZCDFCGZHZBCFZBGHZVJADGZVJVLIZBGZIZIZIZVGV
       QVIVGVPVKVGVOVJVODBDBFDGZABGZVJVSIZBGZVLVNVSWAIVRAVTBVSVJJKLAADBVRAMUAZVM
       VTDBBVRVLVSVJWBUBUCUDUENNUFVGHZVIOZVKVJVOWDVKOVJOZVLVJAIZBGZDGZVNWEVKVJDG
@@ -16022,7 +16032,7 @@ $)
                ( x = y -> ( A. z ph -> A. x ( x = y -> A. z ph ) ) ) ) $=
       ( weq wal wn wi ax-1 a5i a1i biidd dral1 imbi2d dral2 a1d wa imp hbnae wb
       3imtr4d alequcoms simplr dveeq1 nalequcoms adantlr hba1 hban sylan2 alimd
-      ax-4 syl2anc ax-7 alrimi 19.21ht albid syl5ib ad2antrr syld exp31 pm2.61i
+      ax-4 syl2anc ax-7 alrimih 19.21ht albid syl5ib ad2antrr syld exp31 pm2.61i
       syl ) BDFBGZBCFZBGHZVEADGZVEVGIZBGZIZIZIVDVKVFVDVJVEVJDBDBFDGZABGZVEVMIZB
       GZVGVIVMVOIVLAVNBVMVEJKLAADBVLAMNZVHVNDBBVLVGVMVEVPOPUBUCQQVDHZVFVEVJVQVF
       RVERZVGVEAIZBGZDGZVIVRVFVEDGZVGWAIVQVFVEUDVQVEWBVFVQVEWBVEWBIZDBDBCUEUFZS
@@ -16092,7 +16102,7 @@ $)
   a12lem1 $p |- ( -. A. z z = y ->
                   ( A. z ( z = x -> z = y ) -> x = y ) ) $=
     ( weq wal wn wi wb equequ1 imbi12d a4s dral2 equid a1bi biimpri syl6bi hbn1
-    a1d wa hban hbth a1i ax-12 imp hbimd alrimi equtr ax-8 imim12d ax-gen 19.26
+    a1d wa hban hbth a1i ax-12 imp hbimd alrimih equtr ax-8 imim12d ax-gen 19.26
     a4imt sylbir sylancl mpii ex pm2.61i ) CADZCEZCBDZCEFZURUTGZCEZABDZGZGUSVEV
     AUSVCAADZVDGZCEZVDVBVGCACURVBVGHCURURVFUTVDCAAICABIJKLVGVDCVDVGVFVDAMZNOKPR
     USFZVAVEVJVASZVCVFVDVIVKVGVHGZCEZURVBVGGGZCEZVCVGGZVKVLCVJVACURCQUTCQTZVKVF
