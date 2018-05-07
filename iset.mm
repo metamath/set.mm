@@ -53,6 +53,7 @@ processed manually.
 
 DONE:
 Date      Old       New         Notes
+6-May-18  cbval     cbvalh
 6-May-18  sbco2     sbco2h
 6-May-18  sbie      sbieh
 6-May-18  cbv3      cbv3h
@@ -11696,15 +11697,26 @@ $)
   $}
 
   ${
-    cbval.1 $e |- ( ph -> A. y ph ) $.
-    cbval.2 $e |- ( ps -> A. x ps ) $.
-    cbval.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    cbvalh.1 $e |- ( ph -> A. y ph ) $.
+    cbvalh.2 $e |- ( ps -> A. x ps ) $.
+    cbvalh.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Rule used to change bound variables, using implicit substitition.
        (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
        25-May-2011.) $)
-    cbval $p |- ( A. x ph <-> A. y ps ) $=
+    cbvalh $p |- ( A. x ph <-> A. y ps ) $=
       ( wal weq biimpd cbv3h wb equcoms biimprd impbii ) ACHBDHABCDEFCDIABGJKBAD
       CFEDCIABABLCDGMNKO $.
+  $}
+
+  ${
+    cbval.1 $e |- F/ y ph $.
+    cbval.2 $e |- F/ x ps $.
+    cbval.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
+       3-Oct-2016.) $)
+    cbval $p |- ( A. x ph <-> A. y ps ) $=
+      ( nfri cbvalh ) ABCDADEHBCFHGI $.
   $}
 
   ${
@@ -12661,7 +12673,7 @@ $)
        5-Aug-1993.)  (Proof shortened by Andrew Salmon, 25-May-2011.)  (Proof
        shortened by Jim Kingdon, 15-Jan-2018.) $)
     sb8 $p |- ( A. x ph <-> A. y [ y / x ] ph ) $=
-      ( wsb hbsb3 sbequ12 cbval ) AABCEBCDABCDFABCGH $.
+      ( wsb hbsb3 sbequ12 cbvalh ) AABCEBCDABCDFABCGH $.
   $}
 
   ${
@@ -13134,7 +13146,7 @@ $)
     $( Rule used to change bound variables, using implicit substitition.
        (Contributed by NM, 5-Aug-1993.) $)
     cbvalv $p |- ( A. x ph <-> A. y ps ) $=
-      ( ax-17 cbval ) ABCDADFBCFEG $.
+      ( ax-17 cbvalh ) ABCDADFBCFEG $.
 
     $( Rule used to change bound variables, using implicit substitition.
        (Contributed by NM, 5-Aug-1993.) $)
@@ -13152,7 +13164,7 @@ $)
     $( Rule used to change bound variables, using implicit substitition.
        (Contributed by NM, 22-Dec-2003.) $)
     cbval2 $p |- ( A. x A. y ph <-> A. z A. w ps ) $=
-      ( wal hbal weq wb wa ax-17 hban cbval 19.28v expcom pm5.32d 3bitr3i mpbir
+      ( wal hbal weq wb wa ax-17 hban cbvalh 19.28v expcom pm5.32d 3bitr3i mpbir
       wi pm5.32 ) ADLZBFLZCEAEDGMBCFIMCENZUGUHOUEUIUGPZUIUHPZOUIAPZDLUIBPZFLUJU
       KULUMDFUIAFUIFQHRUIBDUIDQJRDFNZUIABUIUNABOKUAUBSUIADTUIBFTUCUIUGUHUFUDS
       $.
@@ -13665,7 +13677,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( Like ~ sb9 but with a distinct variable constraint between ` x ` and
        ` y ` .  (Contributed by Jim Kingdon, 28-Feb-2018.) $)
     sb9v $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
-      ( wsb hbs1 weq wb sbequ12 equcoms bitr3d cbval ) ACBDZABCDZBCACBEABCEBCFA
+      ( wsb hbs1 weq wb sbequ12 equcoms bitr3d cbvalh ) ACBDZABCDZBCACBEABCEBCFA
       LMALGCBACBHIABCHJK $.
   $}
 
@@ -14742,7 +14754,7 @@ $)
        7-Aug-1994.)  (Revised by Andrew Salmon, 9-Jul-2011.) $)
     sb8eu $p |- ( E! x ph <-> E! y [ y / x ] ph ) $=
       ( vz vw cv wceq wal wex wsbc weu ax-17 sb8 sbbi hbsb equsb3 hbxfrbi df-eu
-      wb hbbi sbequ cbval sblbis albii 3bitri exbii 3bitr4i ) ABGEGZHZTZBIZEJAB
+      wb hbbi sbequ cbvalh sblbis albii 3bitri exbii 3bitr4i ) ABGEGZHZTZBIZEJAB
       CGZKZUMUIHZTZCIZEJABLUNCLULUQEULUKBFGZKZFIUKBUMKZCIUQUKBFUKFMNUSUTFCUSABU
       RKZUJBURKZTCAUJBFOVAVBCABFCDPVBURUIHZCFBEQVCCMRUARUTFMUKFCBUBUCUTUPCUJUOA
       BCCBEQUDUEUFUGABESUNCESUH $.
