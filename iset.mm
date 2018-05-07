@@ -10798,6 +10798,27 @@ $)
       CBCDFKLM $.
   $}
 
+  ${
+    nfbid.1 $e |- ( ph -> F/ x ps ) $.
+    nfbid.2 $e |- ( ph -> F/ x ch ) $.
+    $( If in a context ` x ` is not free in ` ps ` and ` ch ` , it is not free
+       in ` ( ps <-> ch ) ` .  (Contributed by Mario Carneiro, 24-Sep-2016.)
+       (Proof shortened by Wolf Lammen, 29-Dec-2017.) $)
+    nfbid $p |- ( ph -> F/ x ( ps <-> ch ) ) $=
+      ( wb wi wa dfbi2 nfimd nfand nfxfrd ) BCGBCHZCBHZIADBCJANODABCDEFKACBDFEK
+      LM $.
+  $}
+
+  ${
+    nfbi.1 $e |- F/ x ph $.
+    nfbi.2 $e |- F/ x ps $.
+    $( If ` x ` is not free in ` ph ` and ` ps ` , it is not free in
+       ` ( ph <-> ps ) ` .  (Contributed by Mario Carneiro, 11-Aug-2016.)
+       (Proof shortened by Wolf Lammen, 2-Jan-2018.) $)
+    nfbi $p |- F/ x ( ph <-> ps ) $=
+      ( wb wnf wtru a1i nfbid trud ) ABFCGHABCACGHDIBCGHEIJK $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                     The existential quantifier
