@@ -1,4 +1,4 @@
-$( iset.mm - Version of 5-May-2018
+$( iset.mm - Version of 6-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -53,6 +53,7 @@ processed manually.
 
 DONE:
 Date      Old       New         Notes
+6-May-18  sbco2     sbco2h
 6-May-18  sbie      sbieh
 6-May-18  cbv3      cbv3h
 17-Apr-18 con1bidc  con1biimdc
@@ -13505,12 +13506,20 @@ $( The theorems in this section make use of the $d statement. $)
 
   ${
     $d w z $.  $d w x $.  $d w y $.  $d ph w $.
-    sbco2.1 $e |- ( ph -> A. z ph ) $.
+    sbco2h.1 $e |- ( ph -> A. z ph ) $.
     $( A composition law for substitution.  (Contributed by NM, 30-Jun-1994.)
        (Proof rewritten by Jim Kingdon, 19-Mar-2018.) $)
-    sbco2 $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
+    sbco2h $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
       ( vw wsb nfi sbco2yz sbbii nfv 3bitr3i ) ABDGZDFGZFCGABFGZFCGMDCGABCGNOFC
       ABFDADEHIJMDCFMFKIABCFAFKIL $.
+  $}
+
+  ${
+    sbco2.1 $e |- F/ z ph $.
+    $( A composition law for substitution.  (Contributed by NM, 30-Jun-1994.)
+       (Revised by Mario Carneiro, 6-Oct-2016.) $)
+    sbco2 $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
+      ( nfri sbco2h ) ABCDADEFG $.
   $}
 
   ${
@@ -13519,7 +13528,7 @@ $( The theorems in this section make use of the $d statement. $)
     sbco2d.3 $e |- ( ph -> ( ps -> A. z ps ) ) $.
     $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
     sbco2d $p |- ( ph -> ( [ y / z ] [ z / x ] ps <-> [ y / x ] ps ) ) $=
-      ( wsb wi hbim1 sbco2 sbrim sbbii bitri 3bitr3i pm5.74ri ) ABCEIZEDIZBCDIZ
+      ( wsb wi hbim1 sbco2h sbrim sbbii bitri 3bitr3i pm5.74ri ) ABCEIZEDIZBCDIZ
       ABJZCEIZEDIZUACDIASJZATJUACDEABEGHKLUCARJZEDIUDUBUEEDABCEFMNAREDGMOABCDFM
       PQ $.
   $}
@@ -13597,7 +13606,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( A composition law for substitution.  (Contributed by NM, 5-Aug-1993.)
        (Proof rewritten by Jim Kingdon, 22-Mar-2018.) $)
     sbco3 $p |- ( [ z / y ] [ y / x ] ph <-> [ z / x ] [ x / y ] ph ) $=
-      ( vw wsb sbco3xzyz sbbii ax-17 sbco2 3bitr3i ) ABCFZCEFZEDFACBFZBEFZEDFLC
+      ( vw wsb sbco3xzyz sbbii ax-17 sbco2h 3bitr3i ) ABCFZCEFZEDFACBFZBEFZEDFLC
       DFNBDFMOEDABCEGHLCDELEIJNBDENEIJK $.
   $}
 
@@ -13612,7 +13621,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( Substitution applied to an atomic membership wff.  (Contributed by NM,
        7-Nov-2006.)  (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
     elsb3 $p |- ( [ x / y ] y e. z <-> x e. z ) $=
-      ( vw wel wsb ax-17 elequ1 sbieh sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
+      ( vw wel wsb ax-17 elequ1 sbieh sbbii sbco2h bitr3i wb weq sbimi ax-mp sbbi
       equsb1 mpbi sbf 3bitri ) BCEZBAFZDCEZDAFZACEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
       BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
       DAUFDGTUA $.
@@ -13624,7 +13633,7 @@ $( The theorems in this section make use of the $d statement. $)
        Rodolfo Medina, 3-Apr-2010.)  (Proof shortened by Andrew Salmon,
        14-Jun-2011.) $)
     elsb4 $p |- ( [ x / y ] z e. y <-> z e. x ) $=
-      ( vw wel wsb ax-17 elequ2 sbieh sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
+      ( vw wel wsb ax-17 elequ2 sbieh sbbii sbco2h bitr3i wb weq sbimi ax-mp sbbi
       equsb1 mpbi sbf 3bitri ) CBEZBAFZCDEZDAFZCAEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
       BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
       DAUFDGTUA $.
@@ -13644,7 +13653,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( Commutation of quantification and substitution variables.  (Contributed
        by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon, 23-Mar-2018.) $)
     sb9 $p |- ( A. x [ x / y ] ph <-> A. y [ y / x ] ph ) $=
-      ( vw wsb wal sb9v sbcom albii 3bitri ax-17 sbco2 3bitr3ri ) ABDEZDCEZCFZA
+      ( vw wsb wal sb9v sbcom albii 3bitri ax-17 sbco2h 3bitr3ri ) ABDEZDCEZCFZA
       CDEZDBEZBFZABCEZCFACBEZBFPNCDEZDFQBDEZDFSNCDGUBUCDABDCHIQDBGJOTCABCDADKZL
       IRUABACBDUDLIM $.
   $}
@@ -15328,7 +15337,7 @@ $)
       ( vu vv wex wa weq wi wal ax-17 hbsb sbequ12 equequ2 bi2anan9 hbim 2exbii
       wsb weu 2eu4 19.29r2 hbs1 sylan9bbr cbvex2 imbi2d 2albidv cbvex2v equequ1
       wb imbi12d cbval2 3bitri anbi12i 2albiim ancom bitri equcom imbi2i impexp
-      2mo 2albii hban sbco2 sbcom2 sbbii 3bitr3ri syl6bb anbi2d 19.21-2 3bitr3i
+      2mo 2albii hban sbco2h sbcom2 sbbii 3bitr3ri syl6bb anbi2d 19.21-2 3bitr3i
       anbi2i abai 2sb6 anbi1i 3bitr2i bitr4i 3imtr4i 2alimi 2eximi 2exsb sylibr
       bi2 bi1 jca impbii ) ACHZBUAABHCUAIWHBHZABDJZCEJZIZKZCLBLZEHDHZIZAWLUKZCL
       BLZEHDHZABCDEUBWPWSACETZBDTZEHDHZXAXAEFTZDGTZIZDGJZEFJZIZKZFLGLZELDLZIXAX
