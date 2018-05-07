@@ -4593,6 +4593,14 @@ $)
       ( wn con3d com12 ) ACEBEABCDFG $.
   $}
 
+  ${
+    con3and.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Variant of ~ con3d with importation.  (Contributed by Jonathan Ben-Naim,
+       3-Jun-2011.) $)
+    con3and $p |- ( ( ph /\ -. ch ) -> -. ps ) $=
+      ( wn con3d imp ) ACEBEABCDFG $.
+  $}
+
   $( In classical logic, this is just a restatement of ~ pm3.2 .  In
      intuitionistic logic, it still holds, but is weaker than pm3.2.
      (Contributed by Mario Carneiro, 12-May-2015.) $)
