@@ -3864,6 +3864,12 @@ $)
        16-Nov-2013.) $)
     anbi1i $p |- ( ( ph /\ ch ) <-> ( ps /\ ch ) ) $=
       ( wb a1i pm5.32ri ) CABABECDFG $.
+
+    $( Variant of ~ anbi2i with commutation.  (Contributed by Jonathan
+       Ben-Naim, 3-Jun-2011.)  (Proof shortened by Andrew Salmon,
+       14-Jun-2011.) $)
+    anbi2ci $p |- ( ( ph /\ ch ) <-> ( ch /\ ps ) ) $=
+      ( wa anbi1i ancom bitri ) ACEBCECBEABCDFBCGH $.
   $}
 
   ${
