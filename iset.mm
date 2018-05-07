@@ -14274,25 +14274,1587 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
+  $( Declare new constants use in class definition. $)
+  $c { $. $( Left brace $)
+  $c | $.  $( Vertical bar $)
+  $c } $. $( Right brace $)
+  $( --- Start of old code before overloading prevention patch. $)
+  $(
+  @c class @. @( Class variable type @)
+  $)
+  $( --- End of old code before overloading prevention patch. $)
+
+  $( Declare symbols as variables $)
+  $v ./\ $.
+  $v .\/ $.
+  $v .<_ $.
+  $v .< $.
+  $v .+ $.
+  $v .- $.
+  $v .X. $.
+  $v ./ $.
+  $v .^ $.
+  $v .0. $.
+  $v .1. $.
+  $v .|| $.
+  $v .~ $.
+  $v ._|_ $.
+  $v .+^ $.
+  $v .+b $.
+  $v .(+) $.
+  $v .* $.
+  $v .x. $.
+  $v .xb $.
+  $v ., $.
+  $v .(x) $.
+  $v .0b $.
+
   $( Declare variable symbols that will be used to represent classes.  Note
      that later on ` R ` , ` S ` , ` F ` and ` G ` denote relations and
      functions, but these letters serve as mnemonics only and in fact behave
      no differently from the variables ` A ` through ` D ` . $)
   $v A $.
   $v B $.
+  $v C $.
+  $v D $.
+  $v P $.
+  $v Q $.
+  $v R $.
+  $v S $.
+  $v T $.
+  $v U $.
+
+  $( Introduce the class builder or class abstraction notation ("the class of
+     sets ` x ` such that ` ph ` is true").  Our class variables ` A ` ,
+     ` B ` , etc. range over class builders (implicitly in the case of defined
+     class terms such as ~ df-nul ).  Note that a set variable can be expressed
+     as a class builder per theorem ~ cvjust , justifying the assignment of set
+     variables to class variables via the use of ~ cv . $)
+  cab $a class { x | ph } $.
+
+  $( --- Start of old code before overloading prevention patch. $)
+  $(
+  @( A set variable is a class expression.  The syntax " ` class x ` " can be
+     viewed as an abbreviation for " ` class { y | y e. x } ` " (a special case
+     of ~ cab ), where ` y ` is distinct from ` x ` .  See the discussion under
+     the definition of class in [Jech] p. 4.  Note that ` { y | y e. x } = x `
+     by ~ cvjust . @)
+  cv @a class x @.
+  $)
+  $( --- End of old code before overloading prevention patch. $)
+  $( $j primitive 'cv' 'wceq' 'wcel' 'cab'; $)
 
   $( Let ` A ` be a class variable. $)
   cA $f class A $.
   $( Let ` B ` be a class variable. $)
   cB $f class B $.
+  $( Let ` C ` be a class variable. $)
+  cC $f class C $.
 
+  $( Define a connective symbol for use as a class variable. $)
+  c.pa $f class .|| $.
+
+  $( Let ` D ` be a class variable. $)
+  cD $f class D $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.dv $f class ./ $.
+
+  $( Let ` P ` be a class variable. $)
+  cP $f class P $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.pl $f class .+ $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.pd $f class .+^ $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.pb $f class .+b $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.po $f class .(+) $.
+
+  $( Let ` Q ` be a class variable. $)
+  cQ $f class Q $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.sm $f class .~ $.
+
+  $( Let ` R ` be a class variable. $)
+  cR $f class R $.
+  $( Let ` S ` be a class variable. $)
+  cS $f class S $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.lt $f class .< $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.xb $f class .xb $.
+
+  $( Let ` T ` be a class variable. $)
+  cT $f class T $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.x $f class .x. $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.xp $f class .X. $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.xo $f class .(x) $.
+
+  $( Let ` U ` be a class variable. $)
+  cU $f class U $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.1 $f class .1. $.
+
+  $v e $.
   $v f $.
   $v g $.
+  $v h $.
+  $v i $.
+  $v j $.
+  $v k $.
+  $v m $.
+  $v n $.
+  $v o $.
+  $v E $.
+  $v F $.
+  $v G $.
+  $v H $.
+  $v I $.
+  $v J $.
+  $v K $.
+  $v L $.
+  $v M $.
+  $v N $.
+  $v V $.
+  $v W $.
+  $v X $.
+  $v Y $.
+  $v Z $.
+  $v O $.
+  $v s $.
+  $v r $.
+  $v q $.
+  $v p $.
+  $v a $.
+  $v b $.
+  $v c $.
+  $v d $.
+  $v l $.
 
+
+  $( Let ` e ` be an individual variable. $)
+  ve $f set e $.
   $( Let ` f ` be an individual variable. $)
   vf $f set f $.
   $( Let ` g ` be an individual variable. $)
   vg $f set g $.
+  $( Let ` h ` be an individual variable. $)
+  vh $f set h $.
+  $( Let ` i ` be an individual variable. $)
+  vi $f set i $.
+  $( Let ` j ` be an individual variable. $)
+  vj $f set j $.
+  $( Let ` k ` be an individual variable. $)
+  vk $f set k $.
+  $( Let ` m ` be an individual variable. $)
+  vm $f set m $.
+  $( Let ` n ` be an individual variable. $)
+  vn $f set n $.
+  $( Let ` o ` be an individual variable. $)
+  vo $f set o $.
+  $( Let ` E ` be a class variable. $)
+  cE $f class E $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.ex $f class .^ $.
+
+  $( Let ` F ` be a class variable. $)
+  cF $f class F $.
+  $( Let ` G ` be a class variable. $)
+  cG $f class G $.
+  $( Let ` H ` be a class variable. $)
+  cH $f class H $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.xi $f class ., $.
+
+  $( Let ` I ` be a class variable. $)
+  cI $f class I $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.as $f class .* $.
+
+  $( Let ` J ` be a class variable. $)
+  cJ $f class J $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.or $f class .\/ $.
+
+  $( Let ` K ` be a class variable. $)
+  cK $f class K $.
+  $( Let ` L ` be a class variable. $)
+  cL $f class L $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.le $f class .<_ $.
+
+  $( Let ` M ` be a class variable. $)
+  cM $f class M $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.an $f class ./\ $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.mi $f class .- $.
+
+  $( Let ` N ` be a class variable. $)
+  cN $f class N $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.pe $f class ._|_ $.
+
+  $( Let ` O ` be a class variable. $)
+  cO $f class O $.
+  $( Let ` V ` be a class variable. $)
+  cV $f class V $.
+  $( Let ` W ` be a class variable. $)
+  cW $f class W $.
+  $( Let ` X ` be a class variable. $)
+  cX $f class X $.
+  $( Let ` Y ` be a class variable. $)
+  cY $f class Y $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.0 $f class .0. $.
+
+  $( Define a connective symbol for use as a class variable. $)
+  c.0b $f class .0b $.
+
+  $( Let ` Z ` be a class variable. $)
+  cZ $f class Z $.
+  $( Let ` s ` be an individual variable. $)
+  vs $f set s $.
+  $( Let ` r ` be an individual variable. $)
+  vr $f set r $.
+  $( Let ` q ` be an individual variable. $)
+  vq $f set q $.
+  $( Let ` p ` be an individual variable. $)
+  vp $f set p $.
+  $( Let ` a ` be an individual variable. $)
+  va $f set a $.
+  $( Let ` b ` be an individual variable. $)
+  vb $f set b $.
+  $( Let ` c ` be an individual variable. $)
+  vc $f set c $.
+  $( Let ` d ` be an individual variable. $)
+  vd $f set d $.
+  $( Let ` l ` be an individual variable. $)
+  vl $f set l $.
+
+  $( --- Start of old code before overloading prevention patch. $)
+  $(
+  @( Extend wff definition to include class equality. @)
+  wceq @a wff A = B @.
+  $)
+  $( --- End of old code before overloading prevention patch. $)
+
+  $( --- Start of old code before overloading prevention patch. $)
+  $(
+  @( Extend wff definition to include the membership connective between
+     classes. @)
+  wcel @a wff A e. B @.
+  $)
+  $( --- End of old code before overloading prevention patch. $)
+
+  $( Define class abstraction notation (so-called by Quine), also called a
+     "class builder" in the literature. ` x ` and ` y ` need not be distinct.
+     Definition 2.1 of [Quine] p. 16.  Typically, ` ph ` will have ` y ` as a
+     free variable, and " ` { y | ph } ` " is read "the class of all sets ` y `
+     such that ` ph ( y ) ` is true."  We do not define ` { y | ph } ` in
+     isolation but only as part of an expression that extends or "overloads"
+     the ` e. ` relationship.
+
+     This is our first use of the ` e. ` symbol to connect classes instead of
+     sets.  The syntax definition ~ wcel , which extends or "overloads" the
+     ~ wel definition connecting set variables, requires that both sides of
+     ` e. ` be a class.  In ~ df-cleq and ~ df-clel , we introduce a new kind
+     of variable (class variable) that can substituted with expressions such as
+     ` { y | ph } ` .  In the present definition, the ` x ` on the left-hand
+     side is a set variable.  Syntax definition ~ cv allows us to substitute a
+     set variable ` x ` for a class variable: all sets are classes by ~ cvjust
+     (but not necessarily vice-versa).  For a full description of how classes
+     are introduced and how to recover the primitive language, see the
+     discussion in Quine (and under ~ abeq2 for a quick overview).
+
+     Because class variables can be substituted with compound expressions and
+     set variables cannot, it is often useful to convert a theorem containing a
+     free set variable to a more general version with a class variable.  This
+     is done with theorems such as ~ vtoclg which is used, for example, to
+     convert ~ elirrv to ~ elirr .
+
+     This is called the "axiom of class comprehension" by [Levy] p. 338, who
+     treats the theory of classes as an extralogical extension to our logic and
+     set theory axioms.  He calls the construction ` { y | ph } ` a "class
+     term".
+
+     For a general discussion of the theory of classes, see
+     ~ http://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
+     5-Aug-1993.) $)
+  df-clab $a |- ( x e. { y | ph } <-> [ x / y ] ph ) $.
+
+  $( Simplification of class abstraction notation when the free and bound
+     variables are identical.  (Contributed by NM, 5-Aug-1993.) $)
+  abid $p |- ( x e. { x | ph } <-> ph ) $=
+    ( cv cab wcel wsb df-clab sbid bitri ) BCABDEABBFAABBGABHI $.
+
+  ${
+    $d x y $.
+    $( Bound-variable hypothesis builder for a class abstraction.  (Contributed
+       by NM, 5-Aug-1993.) $)
+    hbab1 $p |- ( y e. { x | ph } -> A. x y e. { x | ph } ) $=
+      ( cv cab wcel wsb df-clab hbs1 hbxfrbi ) CDABEFABCGBACBHABCIJ $.
+
+    $( Bound-variable hypothesis builder for a class abstraction.  (Contributed
+       by Mario Carneiro, 11-Aug-2016.) $)
+    nfsab1 $p |- F/ x y e. { x | ph } $=
+      ( cv cab wcel hbab1 nfi ) CDABEFBABCGH $.
+  $}
+
+  ${
+    $d x z $.
+    hbab.1 $e |- ( ph -> A. x ph ) $.
+    $( Bound-variable hypothesis builder for a class abstraction.  (Contributed
+       by NM, 1-Mar-1995.) $)
+    hbab $p |- ( z e. { y | ph } -> A. x z e. { y | ph } ) $=
+      ( cv cab wcel wsb df-clab hbsb hbxfrbi ) DFACGHACDIBADCJACDBEKL $.
+  $}
+
+  ${
+    $d x z $.
+    nfsab.1 $e |- F/ x ph $.
+    $( Bound-variable hypothesis builder for a class abstraction.  (Contributed
+       by Mario Carneiro, 11-Aug-2016.) $)
+    nfsab $p |- F/ x z e. { y | ph } $=
+      ( cv cab wcel nfri hbab nfi ) DFACGHBABCDABEIJK $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x y z $.
+    df-cleq.1 $e |- ( A. x ( x e. y <-> x e. z ) -> y = z ) $.
+    $( Define the equality connective between classes.  Definition 2.7 of
+       [Quine] p. 18.  Also Definition 4.5 of [TakeutiZaring] p. 13; Chapter 4
+       provides its justification and methods for eliminating it.  Note that
+       its elimination will not necessarily result in a single wff in the
+       original language but possibly a "scheme" of wffs.
+
+       This is an example of a somewhat "risky" definition, meaning that it has
+       a more complex than usual soundness justification (outside of Metamath),
+       because it "overloads" or reuses the existing equality symbol rather
+       than introducing a new symbol.  This allows us to make statements that
+       may not hold for the original symbol.  For example, it permits us to
+       deduce ` y = z <-> A. x ( x e. y <-> x e. z ) ` , which is not a theorem
+       of logic but rather presupposes the Axiom of Extensionality (see theorem
+       ~ axext4 ).  We therefore include this axiom as a hypothesis, so that
+       the use of Extensionality is properly indicated.
+
+       We could avoid this complication by introducing a new symbol, say =_2,
+       in place of ` = ` .  This would also have the advantage of making
+       elimination of the definition straightforward, so that we could
+       eliminate Extensionality as a hypothesis.  We would then also have the
+       advantage of being able to identify in various proofs exactly where
+       Extensionality truly comes into play rather than just being an artifact
+       of a definition.  One of our theorems would then be ` x ` =_2
+       ` y <-> x = y ` by invoking Extensionality.
+
+       However, to conform to literature usage, we retain this overloaded
+       definition.  This also makes some proofs shorter and probably easier to
+       read, without the constant switching between two kinds of equality.
+
+       See also comments under ~ df-clab , ~ df-clel , and ~ abeq2 .
+
+       In the form of ~ dfcleq , this is called the "axiom of extensionality"
+       by [Levy] p. 338, who treats the theory of classes as an extralogical
+       extension to our logic and set theory axioms.
+
+       For a general discussion of the theory of classes, see
+       ~ http://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
+       15-Sep-1993.) $)
+    df-cleq $a |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x y z $.
+    $( The same as ~ df-cleq with the hypothesis removed using the Axiom of
+       Extensionality ~ ax-ext .  (Contributed by NM, 15-Sep-1993.) $)
+    dfcleq $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
+      ( vy vz ax-ext df-cleq ) ADEBCDEAFG $.
+  $}
+
+  ${
+    $d x y z $.
+    $( Every set is a class.  Proposition 4.9 of [TakeutiZaring] p. 13.  This
+       theorem shows that a set variable can be expressed as a class
+       abstraction.  This provides a motivation for the class syntax
+       construction ~ cv , which allows us to substitute a set variable for a
+       class variable.  See also ~ cab and ~ df-clab .  Note that this is not a
+       rigorous justification, because ~ cv is used as part of the proof of
+       this theorem, but a careful argument can be made outside of the
+       formalism of Metamath, for example as is done in Chapter 4 of Takeuti
+       and Zaring.  See also the discussion under the definition of class in
+       [Jech] p. 4 showing that "Every set can be considered to be a class."
+       (Contributed by NM, 7-Nov-2006.) $)
+    cvjust $p |- x = { y | y e. x } $=
+      ( vz cv wcel cab wceq wb dfcleq wsb df-clab elsb3 bitr2i mpgbir ) ADZBDOE
+      ZBFZGCDZOEZRQEZHCCOQITPBCJSPCBKCBALMN $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Define the membership connective between classes.  Theorem 6.3 of
+       [Quine] p. 41, or Proposition 4.6 of [TakeutiZaring] p. 13, which we
+       adopt as a definition.  See these references for its metalogical
+       justification.  Note that like ~ df-cleq it extends or "overloads" the
+       use of the existing membership symbol, but unlike ~ df-cleq it does not
+       strengthen the set of valid wffs of logic when the class variables are
+       replaced with set variables (see ~ cleljust ), so we don't include any
+       set theory axiom as a hypothesis.  See also comments about the syntax
+       under ~ df-clab .  Alternate definitions of ` A e. B ` (but that require
+       either ` A ` or ` B ` to be a set) are shown by ~ clel2 , ~ clel3 , and
+       ~ clel4 .
+
+       This is called the "axiom of membership" by [Levy] p. 338, who treats
+       the theory of classes as an extralogical extension to our logic and set
+       theory axioms.
+
+       For a general discussion of the theory of classes, see
+       ~ http://us.metamath.org/mpeuni/mmset.html#class .  (Contributed by NM,
+       5-Aug-1993.) $)
+    df-clel $a |- ( A e. B <-> E. x ( x = A /\ x e. B ) ) $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    eqriv.1 $e |- ( x e. A <-> x e. B ) $.
+    $( Infer equality of classes from equivalence of membership.  (Contributed
+       by NM, 5-Aug-1993.) $)
+    eqriv $p |- A = B $=
+      ( wceq cv wcel wb dfcleq mpgbir ) BCEAFZBGKCGHAABCIDJ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ph $.
+    eqrdv.1 $e |- ( ph -> ( x e. A <-> x e. B ) ) $.
+    $( Deduce equality of classes from equivalence of membership.  (Contributed
+       by NM, 17-Mar-1996.) $)
+    eqrdv $p |- ( ph -> A = B ) $=
+      ( cv wcel wb wal wceq alrimiv dfcleq sylibr ) ABFZCGNDGHZBICDJAOBEKBCDLM
+      $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ph $.
+    eqrdav.1 $e |- ( ( ph /\ x e. A ) -> x e. C ) $.
+    eqrdav.2 $e |- ( ( ph /\ x e. B ) -> x e. C ) $.
+    eqrdav.3 $e |- ( ( ph /\ x e. C ) -> ( x e. A <-> x e. B ) ) $.
+    $( Deduce equality of classes from an equivalence of membership that
+       depends on the membership variable.  (Contributed by NM, 7-Nov-2008.) $)
+    eqrdav $p |- ( ph -> A = B ) $=
+      ( cv wcel wa biimpd impancom mpd wi exbiri com23 imp impbida eqrdv ) ABCD
+      ABIZCJZUADJZAUBKUAEJZUCFAUDUBUCAUDKUBUCHLMNAUCKUDUBGAUCUDUBOAUDUCUBAUDUBU
+      CHPQRNST $.
+  $}
+
+  ${
+    $d x A $.
+    $( Law of identity (reflexivity of class equality).  Theorem 6.4 of [Quine]
+       p. 41.
+
+       This law is thought to have originated with Aristotle (_Metaphysics_,
+       Zeta, 17, 1041 a, 10-20:  "Therefore, inquiring why a thing is itself,
+       it's inquiring nothing; ... saying that the thing is itself constitutes
+       the sole reasoning and the sole cause, in every case, to the question of
+       why the man is man or the musician musician.").  (Thanks to Stefan Allan
+       and Beno&icirc;t Jubin for this information.)  (Contributed by NM,
+       5-Aug-1993.)  (Revised by Beno&icirc;t Jubin, 14-Oct-2017.) $)
+    eqid $p |- A = A $=
+      ( vx cv wcel biid eqriv ) BAABCADEF $.
+  $}
+
+  $( Class identity law with antecedent.  (Contributed by NM, 21-Aug-2008.) $)
+  eqidd $p |- ( ph -> A = A ) $=
+    ( wceq eqid a1i ) BBCABDE $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Commutative law for class equality.  Theorem 6.5 of [Quine] p. 41.
+       (Contributed by NM, 5-Aug-1993.) $)
+    eqcom $p |- ( A = B <-> B = A ) $=
+      ( vx cv wcel wb wal wceq bicom albii dfcleq 3bitr4i ) CDZAEZMBEZFZCGONFZC
+      GABHBAHPQCNOIJCABKCBAKL $.
+  $}
+
+  ${
+    eqcoms.1 $e |- ( A = B -> ph ) $.
+    $( Inference applying commutative law for class equality to an antecedent.
+       (Contributed by NM, 5-Aug-1993.) $)
+    eqcoms $p |- ( B = A -> ph ) $=
+      ( wceq eqcom sylbi ) CBEBCEACBFDG $.
+  $}
+
+  ${
+    eqcomi.1 $e |- A = B $.
+    $( Inference from commutative law for class equality.  (Contributed by NM,
+       5-Aug-1993.) $)
+    eqcomi $p |- B = A $=
+      ( wceq eqcom mpbi ) ABDBADCABEF $.
+  $}
+
+  ${
+    eqcomd.1 $e |- ( ph -> A = B ) $.
+    $( Deduction from commutative law for class equality.  (Contributed by NM,
+       15-Aug-1994.) $)
+    eqcomd $p |- ( ph -> B = A ) $=
+      ( wceq eqcom sylib ) ABCECBEDBCFG $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Equality implies equivalence of equalities.  (Contributed by NM,
+       5-Aug-1993.) $)
+    eqeq1 $p |- ( A = B -> ( A = C <-> B = C ) ) $=
+      ( vx wceq cv wcel wb wal dfcleq biimpi 19.21bi bibi1d albidv 3bitr4g ) AB
+      EZDFZAGZQCGZHZDIQBGZSHZDIACEBCEPTUBDPRUASPRUAHZDPUCDIDABJKLMNDACJDBCJO $.
+  $}
+
+  ${
+    eqeq1i.1 $e |- A = B $.
+    $( Inference from equality to equivalence of equalities.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    eqeq1i $p |- ( A = C <-> B = C ) $=
+      ( wceq wb eqeq1 ax-mp ) ABEACEBCEFDABCGH $.
+  $}
+
+  ${
+    eqeq1d.1 $e |- ( ph -> A = B ) $.
+    $( Deduction from equality to equivalence of equalities.  (Contributed by
+       NM, 27-Dec-1993.) $)
+    eqeq1d $p |- ( ph -> ( A = C <-> B = C ) ) $=
+      ( wceq wb eqeq1 syl ) ABCFBDFCDFGEBCDHI $.
+  $}
+
+  $( Equality implies equivalence of equalities.  (Contributed by NM,
+     5-Aug-1993.) $)
+  eqeq2 $p |- ( A = B -> ( C = A <-> C = B ) ) $=
+    ( wceq eqeq1 eqcom 3bitr4g ) ABDACDBCDCADCBDABCECAFCBFG $.
+
+  ${
+    eqeq2i.1 $e |- A = B $.
+    $( Inference from equality to equivalence of equalities.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    eqeq2i $p |- ( C = A <-> C = B ) $=
+      ( wceq wb eqeq2 ax-mp ) ABECAECBEFDABCGH $.
+  $}
+
+  ${
+    eqeq2d.1 $e |- ( ph -> A = B ) $.
+    $( Deduction from equality to equivalence of equalities.  (Contributed by
+       NM, 27-Dec-1993.) $)
+    eqeq2d $p |- ( ph -> ( C = A <-> C = B ) ) $=
+      ( wceq wb eqeq2 syl ) ABCFDBFDCFGEBCDHI $.
+  $}
+
+  $( Equality relationship among 4 classes.  (Contributed by NM,
+     3-Aug-1994.) $)
+  eqeq12 $p |- ( ( A = B /\ C = D ) -> ( A = C <-> B = D ) ) $=
+    ( wceq eqeq1 eqeq2 sylan9bb ) ABEACEBCECDEBDEABCFCDBGH $.
+
+  ${
+    eqeq12i.1 $e |- A = B $.
+    eqeq12i.2 $e |- C = D $.
+    $( A useful inference for substituting definitions into an equality.
+       (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
+       25-May-2011.) $)
+    eqeq12i $p |- ( A = C <-> B = D ) $=
+      ( wceq wb eqeq12 mp2an ) ABGCDGACGBDGHEFABCDIJ $.
+
+    $( Theorem eqeq12i is the congruence law for equality. $)
+    $( $j congruence 'eqeq12i'; $)
+  $}
+
+  ${
+    eqeq12d.1 $e |- ( ph -> A = B ) $.
+    eqeq12d.2 $e |- ( ph -> C = D ) $.
+    $( A useful inference for substituting definitions into an equality.
+       (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
+       25-May-2011.) $)
+    eqeq12d $p |- ( ph -> ( A = C <-> B = D ) ) $=
+      ( wceq wb eqeq12 syl2anc ) ABCHDEHBDHCEHIFGBCDEJK $.
+  $}
+
+  ${
+    eqeqan12d.1 $e |- ( ph -> A = B ) $.
+    eqeqan12d.2 $e |- ( ps -> C = D ) $.
+    $( A useful inference for substituting definitions into an equality.
+       (Contributed by NM, 9-Aug-1994.)  (Proof shortened by Andrew Salmon,
+       25-May-2011.) $)
+    eqeqan12d $p |- ( ( ph /\ ps ) -> ( A = C <-> B = D ) ) $=
+      ( wceq wb eqeq12 syl2an ) ACDIEFICEIDFIJBGHCDEFKL $.
+  $}
+
+  ${
+    eqeqan12rd.1 $e |- ( ph -> A = B ) $.
+    eqeqan12rd.2 $e |- ( ps -> C = D ) $.
+    $( A useful inference for substituting definitions into an equality.
+       (Contributed by NM, 9-Aug-1994.) $)
+    eqeqan12rd $p |- ( ( ps /\ ph ) -> ( A = C <-> B = D ) ) $=
+      ( wceq wb eqeqan12d ancoms ) ABCEIDFIJABCDEFGHKL $.
+  $}
+
+  $( Transitive law for class equality.  Proposition 4.7(3) of [TakeutiZaring]
+     p. 13.  (Contributed by NM, 25-Jan-2004.) $)
+  eqtr $p |- ( ( A = B /\ B = C ) -> A = C ) $=
+    ( wceq eqeq1 biimpar ) ABDACDBCDABCEF $.
+
+  $( A transitive law for class equality.  (Contributed by NM, 20-May-2005.)
+     (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+  eqtr2 $p |- ( ( A = B /\ A = C ) -> B = C ) $=
+    ( wceq eqcom eqtr sylanb ) ABDBADACDBCDABEBACFG $.
+
+  $( A transitive law for class equality.  (Contributed by NM, 20-May-2005.) $)
+  eqtr3 $p |- ( ( A = C /\ B = C ) -> A = B ) $=
+    ( wceq eqcom eqtr sylan2b ) BCDACDCBDABDBCEACBFG $.
+
+  ${
+    eqtri.1 $e |- A = B $.
+    eqtri.2 $e |- B = C $.
+    $( An equality transitivity inference.  (Contributed by NM, 5-Aug-1993.) $)
+    eqtri $p |- A = C $=
+      ( wceq eqeq2i mpbi ) ABFACFDBCAEGH $.
+  $}
+
+  ${
+    eqtr2i.1 $e |- A = B $.
+    eqtr2i.2 $e |- B = C $.
+    $( An equality transitivity inference.  (Contributed by NM,
+       21-Feb-1995.) $)
+    eqtr2i $p |- C = A $=
+      ( eqtri eqcomi ) ACABCDEFG $.
+  $}
+
+  ${
+    eqtr3i.1 $e |- A = B $.
+    eqtr3i.2 $e |- A = C $.
+    $( An equality transitivity inference.  (Contributed by NM, 6-May-1994.) $)
+    eqtr3i $p |- B = C $=
+      ( eqcomi eqtri ) BACABDFEG $.
+  $}
+
+  ${
+    eqtr4i.1 $e |- A = B $.
+    eqtr4i.2 $e |- C = B $.
+    $( An equality transitivity inference.  (Contributed by NM, 5-Aug-1993.) $)
+    eqtr4i $p |- A = C $=
+      ( eqcomi eqtri ) ABCDCBEFG $.
+  $}
+
+  $( Register '=' as an equality for its type (class). $)
+  $( $j equality 'wceq' from 'eqid' 'eqcomi' 'eqtri'; $)
+
+  ${
+    3eqtri.1 $e |- A = B $.
+    3eqtri.2 $e |- B = C $.
+    3eqtri.3 $e |- C = D $.
+    $( An inference from three chained equalities.  (Contributed by NM,
+       29-Aug-1993.) $)
+    3eqtri $p |- A = D $=
+      ( eqtri ) ABDEBCDFGHH $.
+
+    $( An inference from three chained equalities.  (Contributed by NM,
+       3-Aug-2006.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+    3eqtrri $p |- D = A $=
+      ( eqtri eqtr2i ) ACDABCEFHGI $.
+  $}
+
+  ${
+    3eqtr2i.1 $e |- A = B $.
+    3eqtr2i.2 $e |- C = B $.
+    3eqtr2i.3 $e |- C = D $.
+    $( An inference from three chained equalities.  (Contributed by NM,
+       3-Aug-2006.) $)
+    3eqtr2i $p |- A = D $=
+      ( eqtr4i eqtri ) ACDABCEFHGI $.
+
+    $( An inference from three chained equalities.  (Contributed by NM,
+       3-Aug-2006.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+    3eqtr2ri $p |- D = A $=
+      ( eqtr4i eqtr2i ) ACDABCEFHGI $.
+  $}
+
+  ${
+    3eqtr3i.1 $e |- A = B $.
+    3eqtr3i.2 $e |- A = C $.
+    3eqtr3i.3 $e |- B = D $.
+    $( An inference from three chained equalities.  (Contributed by NM,
+       6-May-1994.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+    3eqtr3i $p |- C = D $=
+      ( eqtr3i ) BCDABCEFHGH $.
+
+    $( An inference from three chained equalities.  (Contributed by NM,
+       15-Aug-2004.) $)
+    3eqtr3ri $p |- D = C $=
+      ( eqtr3i ) BDCGABCEFHH $.
+  $}
+
+  ${
+    3eqtr4i.1 $e |- A = B $.
+    3eqtr4i.2 $e |- C = A $.
+    3eqtr4i.3 $e |- D = B $.
+    $( An inference from three chained equalities.  (Contributed by NM,
+       5-Aug-1993.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+    3eqtr4i $p |- C = D $=
+      ( eqtr4i ) CADFDBAGEHH $.
+
+    $( An inference from three chained equalities.  (Contributed by NM,
+       2-Sep-1995.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+    3eqtr4ri $p |- D = C $=
+      ( eqtr4i ) DACDBAGEHFH $.
+  $}
+
+  ${
+    eqtrd.1 $e |- ( ph -> A = B ) $.
+    eqtrd.2 $e |- ( ph -> B = C ) $.
+    $( An equality transitivity deduction.  (Contributed by NM, 5-Aug-1993.) $)
+    eqtrd $p |- ( ph -> A = C ) $=
+      ( wceq eqeq2d mpbid ) ABCGBDGEACDBFHI $.
+  $}
+
+  ${
+    eqtr2d.1 $e |- ( ph -> A = B ) $.
+    eqtr2d.2 $e |- ( ph -> B = C ) $.
+    $( An equality transitivity deduction.  (Contributed by NM,
+       18-Oct-1999.) $)
+    eqtr2d $p |- ( ph -> C = A ) $=
+      ( eqtrd eqcomd ) ABDABCDEFGH $.
+  $}
+
+  ${
+    eqtr3d.1 $e |- ( ph -> A = B ) $.
+    eqtr3d.2 $e |- ( ph -> A = C ) $.
+    $( An equality transitivity equality deduction.  (Contributed by NM,
+       18-Jul-1995.) $)
+    eqtr3d $p |- ( ph -> B = C ) $=
+      ( eqcomd eqtrd ) ACBDABCEGFH $.
+  $}
+
+  ${
+    eqtr4d.1 $e |- ( ph -> A = B ) $.
+    eqtr4d.2 $e |- ( ph -> C = B ) $.
+    $( An equality transitivity equality deduction.  (Contributed by NM,
+       18-Jul-1995.) $)
+    eqtr4d $p |- ( ph -> A = C ) $=
+      ( eqcomd eqtrd ) ABCDEADCFGH $.
+  $}
+
+  ${
+    3eqtrd.1 $e |- ( ph -> A = B ) $.
+    3eqtrd.2 $e |- ( ph -> B = C ) $.
+    3eqtrd.3 $e |- ( ph -> C = D ) $.
+    $( A deduction from three chained equalities.  (Contributed by NM,
+       29-Oct-1995.) $)
+    3eqtrd $p |- ( ph -> A = D ) $=
+      ( eqtrd ) ABCEFACDEGHII $.
+
+    $( A deduction from three chained equalities.  (Contributed by NM,
+       4-Aug-2006.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+    3eqtrrd $p |- ( ph -> D = A ) $=
+      ( eqtrd eqtr2d ) ABDEABCDFGIHJ $.
+  $}
+
+  ${
+    3eqtr2d.1 $e |- ( ph -> A = B ) $.
+    3eqtr2d.2 $e |- ( ph -> C = B ) $.
+    3eqtr2d.3 $e |- ( ph -> C = D ) $.
+    $( A deduction from three chained equalities.  (Contributed by NM,
+       4-Aug-2006.) $)
+    3eqtr2d $p |- ( ph -> A = D ) $=
+      ( eqtr4d eqtrd ) ABDEABCDFGIHJ $.
+
+    $( A deduction from three chained equalities.  (Contributed by NM,
+       4-Aug-2006.) $)
+    3eqtr2rd $p |- ( ph -> D = A ) $=
+      ( eqtr4d eqtr2d ) ABDEABCDFGIHJ $.
+  $}
+
+  ${
+    3eqtr3d.1 $e |- ( ph -> A = B ) $.
+    3eqtr3d.2 $e |- ( ph -> A = C ) $.
+    3eqtr3d.3 $e |- ( ph -> B = D ) $.
+    $( A deduction from three chained equalities.  (Contributed by NM,
+       4-Aug-1995.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+    3eqtr3d $p |- ( ph -> C = D ) $=
+      ( eqtr3d ) ACDEABCDFGIHI $.
+
+    $( A deduction from three chained equalities.  (Contributed by NM,
+       14-Jan-2006.) $)
+    3eqtr3rd $p |- ( ph -> D = C ) $=
+      ( eqtr3d ) ACEDHABCDFGII $.
+  $}
+
+  ${
+    3eqtr4d.1 $e |- ( ph -> A = B ) $.
+    3eqtr4d.2 $e |- ( ph -> C = A ) $.
+    3eqtr4d.3 $e |- ( ph -> D = B ) $.
+    $( A deduction from three chained equalities.  (Contributed by NM,
+       4-Aug-1995.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+    3eqtr4d $p |- ( ph -> C = D ) $=
+      ( eqtr4d ) ADBEGAECBHFII $.
+
+    $( A deduction from three chained equalities.  (Contributed by NM,
+       21-Sep-1995.) $)
+    3eqtr4rd $p |- ( ph -> D = C ) $=
+      ( eqtr4d ) AEBDAECBHFIGI $.
+  $}
+
+  ${
+    syl5eq.1 $e |- A = B $.
+    syl5eq.2 $e |- ( ph -> B = C ) $.
+    $( An equality transitivity deduction.  (Contributed by NM, 5-Aug-1993.) $)
+    syl5eq $p |- ( ph -> A = C ) $=
+      ( wceq a1i eqtrd ) ABCDBCGAEHFI $.
+  $}
+
+  ${
+    syl5req.1 $e |- A = B $.
+    syl5req.2 $e |- ( ph -> B = C ) $.
+    $( An equality transitivity deduction.  (Contributed by NM,
+       29-Mar-1998.) $)
+    syl5req $p |- ( ph -> C = A ) $=
+      ( syl5eq eqcomd ) ABDABCDEFGH $.
+  $}
+
+  ${
+    syl5eqr.1 $e |- B = A $.
+    syl5eqr.2 $e |- ( ph -> B = C ) $.
+    $( An equality transitivity deduction.  (Contributed by NM, 5-Aug-1993.) $)
+    syl5eqr $p |- ( ph -> A = C ) $=
+      ( eqcomi syl5eq ) ABCDCBEGFH $.
+  $}
+
+  ${
+    syl5reqr.1 $e |- B = A $.
+    syl5reqr.2 $e |- ( ph -> B = C ) $.
+    $( An equality transitivity deduction.  (Contributed by NM,
+       29-Mar-1998.) $)
+    syl5reqr $p |- ( ph -> C = A ) $=
+      ( eqcomi syl5req ) ABCDCBEGFH $.
+  $}
+
+  ${
+    syl6eq.1 $e |- ( ph -> A = B ) $.
+    syl6eq.2 $e |- B = C $.
+    $( An equality transitivity deduction.  (Contributed by NM, 5-Aug-1993.) $)
+    syl6eq $p |- ( ph -> A = C ) $=
+      ( wceq a1i eqtrd ) ABCDECDGAFHI $.
+  $}
+
+  ${
+    syl6req.1 $e |- ( ph -> A = B ) $.
+    syl6req.2 $e |- B = C $.
+    $( An equality transitivity deduction.  (Contributed by NM,
+       29-Mar-1998.) $)
+    syl6req $p |- ( ph -> C = A ) $=
+      ( syl6eq eqcomd ) ABDABCDEFGH $.
+  $}
+
+  ${
+    syl6eqr.1 $e |- ( ph -> A = B ) $.
+    syl6eqr.2 $e |- C = B $.
+    $( An equality transitivity deduction.  (Contributed by NM, 5-Aug-1993.) $)
+    syl6eqr $p |- ( ph -> A = C ) $=
+      ( eqcomi syl6eq ) ABCDEDCFGH $.
+  $}
+
+  ${
+    syl6reqr.1 $e |- ( ph -> A = B ) $.
+    syl6reqr.2 $e |- C = B $.
+    $( An equality transitivity deduction.  (Contributed by NM,
+       29-Mar-1998.) $)
+    syl6reqr $p |- ( ph -> C = A ) $=
+      ( eqcomi syl6req ) ABCDEDCFGH $.
+  $}
+
+  ${
+    sylan9eq.1 $e |- ( ph -> A = B ) $.
+    sylan9eq.2 $e |- ( ps -> B = C ) $.
+    $( An equality transitivity deduction.  (Contributed by NM, 8-May-1994.)
+       (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+    sylan9eq $p |- ( ( ph /\ ps ) -> A = C ) $=
+      ( wceq eqtr syl2an ) ACDHDEHCEHBFGCDEIJ $.
+  $}
+
+  ${
+    sylan9req.1 $e |- ( ph -> B = A ) $.
+    sylan9req.2 $e |- ( ps -> B = C ) $.
+    $( An equality transitivity deduction.  (Contributed by NM,
+       23-Jun-2007.) $)
+    sylan9req $p |- ( ( ph /\ ps ) -> A = C ) $=
+      ( eqcomd sylan9eq ) ABCDEADCFHGI $.
+  $}
+
+  ${
+    sylan9eqr.1 $e |- ( ph -> A = B ) $.
+    sylan9eqr.2 $e |- ( ps -> B = C ) $.
+    $( An equality transitivity deduction.  (Contributed by NM, 8-May-1994.) $)
+    sylan9eqr $p |- ( ( ps /\ ph ) -> A = C ) $=
+      ( wceq sylan9eq ancoms ) ABCEHABCDEFGIJ $.
+  $}
+
+  ${
+    3eqtr3g.1 $e |- ( ph -> A = B ) $.
+    3eqtr3g.2 $e |- A = C $.
+    3eqtr3g.3 $e |- B = D $.
+    $( A chained equality inference, useful for converting from definitions.
+       (Contributed by NM, 15-Nov-1994.) $)
+    3eqtr3g $p |- ( ph -> C = D ) $=
+      ( syl5eqr syl6eq ) ADCEADBCGFIHJ $.
+  $}
+
+  ${
+    3eqtr3a.1 $e |- A = B $.
+    3eqtr3a.2 $e |- ( ph -> A = C ) $.
+    3eqtr3a.3 $e |- ( ph -> B = D ) $.
+    $( A chained equality inference, useful for converting from definitions.
+       (Contributed by Mario Carneiro, 6-Nov-2015.) $)
+    3eqtr3a $p |- ( ph -> C = D ) $=
+      ( syl5eq eqtr3d ) ABDEGABCEFHIJ $.
+  $}
+
+  ${
+    3eqtr4g.1 $e |- ( ph -> A = B ) $.
+    3eqtr4g.2 $e |- C = A $.
+    3eqtr4g.3 $e |- D = B $.
+    $( A chained equality inference, useful for converting to definitions.
+       (Contributed by NM, 5-Aug-1993.) $)
+    3eqtr4g $p |- ( ph -> C = D ) $=
+      ( syl5eq syl6eqr ) ADCEADBCGFIHJ $.
+  $}
+
+  ${
+    3eqtr4a.1 $e |- A = B $.
+    3eqtr4a.2 $e |- ( ph -> C = A ) $.
+    3eqtr4a.3 $e |- ( ph -> D = B ) $.
+    $( A chained equality inference, useful for converting to definitions.
+       (Contributed by NM, 2-Feb-2007.)  (Proof shortened by Andrew Salmon,
+       25-May-2011.) $)
+    3eqtr4a $p |- ( ph -> C = D ) $=
+      ( syl6eq eqtr4d ) ADCEADBCGFIHJ $.
+  $}
+
+  ${
+    eq2tr.1 $e |- ( A = C -> D = F ) $.
+    eq2tr.2 $e |- ( B = D -> C = G ) $.
+    $( A compound transitive inference for class equality.  (Contributed by NM,
+       22-Jan-2004.) $)
+    eq2tri $p |- ( ( A = C /\ B = F ) <-> ( B = D /\ A = G ) ) $=
+      ( wceq wa ancom eqeq2d pm5.32i 3bitr3i ) ACIZBDIZJPOJOBEIZJPAFIZJOPKOPQOD
+      EBGLMPORPCFAHLMN $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Equality implies equivalence of membership.  (Contributed by NM,
+       5-Aug-1993.) $)
+    eleq1 $p |- ( A = B -> ( A e. C <-> B e. C ) ) $=
+      ( vx wceq cv wcel wa wex eqeq2 anbi1d exbidv df-clel 3bitr4g ) ABEZDFZAEZ
+      PCGZHZDIPBEZRHZDIACGBCGOSUADOQTRABPJKLDACMDBCMN $.
+
+    $( Equality implies equivalence of membership.  (Contributed by NM,
+       5-Aug-1993.) $)
+    eleq2 $p |- ( A = B -> ( C e. A <-> C e. B ) ) $=
+      ( vx wceq cv wcel wa wex wal dfcleq biimpi 19.21bi anbi2d df-clel 3bitr4g
+      wb exbidv ) ABEZDFZCEZTAGZHZDIUATBGZHZDICAGCBGSUCUEDSUBUDUASUBUDQZDSUFDJD
+      ABKLMNRDCAODCBOP $.
+  $}
+
+  $( Equality implies equivalence of membership.  (Contributed by NM,
+     31-May-1999.) $)
+  eleq12 $p |- ( ( A = B /\ C = D ) -> ( A e. C <-> B e. D ) ) $=
+    ( wceq wcel eleq1 eleq2 sylan9bb ) ABEACFBCFCDEBDFABCGCDBHI $.
+
+  ${
+    eleq1i.1 $e |- A = B $.
+    $( Inference from equality to equivalence of membership.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    eleq1i $p |- ( A e. C <-> B e. C ) $=
+      ( wceq wcel wb eleq1 ax-mp ) ABEACFBCFGDABCHI $.
+
+    $( Inference from equality to equivalence of membership.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    eleq2i $p |- ( C e. A <-> C e. B ) $=
+      ( wceq wcel wb eleq2 ax-mp ) ABECAFCBFGDABCHI $.
+
+    ${
+      eleq12i.2 $e |- C = D $.
+      $( Inference from equality to equivalence of membership.  (Contributed by
+         NM, 31-May-1994.) $)
+      eleq12i $p |- ( A e. C <-> B e. D ) $=
+        ( wcel eleq2i eleq1i bitri ) ACGADGBDGCDAFHABDEIJ $.
+
+      $( Theorem eleq12i is the congruence law for elementhood. $)
+      $( $j congruence 'eleq12i'; $)
+    $}
+  $}
+
+  ${
+    eleq1d.1 $e |- ( ph -> A = B ) $.
+    $( Deduction from equality to equivalence of membership.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    eleq1d $p |- ( ph -> ( A e. C <-> B e. C ) ) $=
+      ( wceq wcel wb eleq1 syl ) ABCFBDGCDGHEBCDIJ $.
+
+    $( Deduction from equality to equivalence of membership.  (Contributed by
+       NM, 27-Dec-1993.) $)
+    eleq2d $p |- ( ph -> ( C e. A <-> C e. B ) ) $=
+      ( wceq wcel wb eleq2 syl ) ABCFDBGDCGHEBCDIJ $.
+
+    ${
+      eleq12d.2 $e |- ( ph -> C = D ) $.
+      $( Deduction from equality to equivalence of membership.  (Contributed by
+         NM, 31-May-1994.) $)
+      eleq12d $p |- ( ph -> ( A e. C <-> B e. D ) ) $=
+        ( wcel eleq2d eleq1d bitrd ) ABDHBEHCEHADEBGIABCEFJK $.
+    $}
+  $}
+
+  $( A transitive-type law relating membership and equality.  (Contributed by
+     NM, 9-Apr-1994.) $)
+  eleq1a $p |- ( A e. B -> ( C = A -> C e. B ) ) $=
+    ( wceq wcel eleq1 biimprcd ) CADCBEABECABFG $.
+
+  ${
+    eqeltr.1 $e |- A = B $.
+    eqeltr.2 $e |- B e. C $.
+    $( Substitution of equal classes into membership relation.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    eqeltri $p |- A e. C $=
+      ( wcel eleq1i mpbir ) ACFBCFEABCDGH $.
+  $}
+
+  ${
+    eqeltrr.1 $e |- A = B $.
+    eqeltrr.2 $e |- A e. C $.
+    $( Substitution of equal classes into membership relation.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    eqeltrri $p |- B e. C $=
+      ( eqcomi eqeltri ) BACABDFEG $.
+  $}
+
+  ${
+    eleqtr.1 $e |- A e. B $.
+    eleqtr.2 $e |- B = C $.
+    $( Substitution of equal classes into membership relation.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    eleqtri $p |- A e. C $=
+      ( wcel eleq2i mpbi ) ABFACFDBCAEGH $.
+  $}
+
+  ${
+    eleqtrr.1 $e |- A e. B $.
+    eleqtrr.2 $e |- C = B $.
+    $( Substitution of equal classes into membership relation.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    eleqtrri $p |- A e. C $=
+      ( eqcomi eleqtri ) ABCDCBEFG $.
+  $}
+
+  ${
+    eqeltrd.1 $e |- ( ph -> A = B ) $.
+    eqeltrd.2 $e |- ( ph -> B e. C ) $.
+    $( Substitution of equal classes into membership relation, deduction form.
+       (Contributed by Raph Levien, 10-Dec-2002.) $)
+    eqeltrd $p |- ( ph -> A e. C ) $=
+      ( wcel eleq1d mpbird ) ABDGCDGFABCDEHI $.
+  $}
+
+  ${
+    eqeltrrd.1 $e |- ( ph -> A = B ) $.
+    eqeltrrd.2 $e |- ( ph -> A e. C ) $.
+    $( Deduction that substitutes equal classes into membership.  (Contributed
+       by NM, 14-Dec-2004.) $)
+    eqeltrrd $p |- ( ph -> B e. C ) $=
+      ( eqcomd eqeltrd ) ACBDABCEGFH $.
+  $}
+
+  ${
+    eleqtrd.1 $e |- ( ph -> A e. B ) $.
+    eleqtrd.2 $e |- ( ph -> B = C ) $.
+    $( Deduction that substitutes equal classes into membership.  (Contributed
+       by NM, 14-Dec-2004.) $)
+    eleqtrd $p |- ( ph -> A e. C ) $=
+      ( wcel eleq2d mpbid ) ABCGBDGEACDBFHI $.
+  $}
+
+  ${
+    eleqtrrd.1 $e |- ( ph -> A e. B ) $.
+    eleqtrrd.2 $e |- ( ph -> C = B ) $.
+    $( Deduction that substitutes equal classes into membership.  (Contributed
+       by NM, 14-Dec-2004.) $)
+    eleqtrrd $p |- ( ph -> A e. C ) $=
+      ( eqcomd eleqtrd ) ABCDEADCFGH $.
+  $}
+
+  ${
+    3eltr3.1 $e |- A e. B $.
+    3eltr3.2 $e |- A = C $.
+    3eltr3.3 $e |- B = D $.
+    $( Substitution of equal classes into membership relation.  (Contributed by
+       Mario Carneiro, 6-Jan-2017.) $)
+    3eltr3i $p |- C e. D $=
+      ( eleqtri eqeltrri ) ACDFABDEGHI $.
+  $}
+
+  ${
+    3eltr4.1 $e |- A e. B $.
+    3eltr4.2 $e |- C = A $.
+    3eltr4.3 $e |- D = B $.
+    $( Substitution of equal classes into membership relation.  (Contributed by
+       Mario Carneiro, 6-Jan-2017.) $)
+    3eltr4i $p |- C e. D $=
+      ( eleqtrri eqeltri ) CADFABDEGHI $.
+  $}
+
+  ${
+    3eltr3d.1 $e |- ( ph -> A e. B ) $.
+    3eltr3d.2 $e |- ( ph -> A = C ) $.
+    3eltr3d.3 $e |- ( ph -> B = D ) $.
+    $( Substitution of equal classes into membership relation.  (Contributed by
+       Mario Carneiro, 6-Jan-2017.) $)
+    3eltr3d $p |- ( ph -> C e. D ) $=
+      ( eleqtrd eqeltrrd ) ABDEGABCEFHIJ $.
+  $}
+
+  ${
+    3eltr4d.1 $e |- ( ph -> A e. B ) $.
+    3eltr4d.2 $e |- ( ph -> C = A ) $.
+    3eltr4d.3 $e |- ( ph -> D = B ) $.
+    $( Substitution of equal classes into membership relation.  (Contributed by
+       Mario Carneiro, 6-Jan-2017.) $)
+    3eltr4d $p |- ( ph -> C e. D ) $=
+      ( eleqtrrd eqeltrd ) ADBEGABCEFHIJ $.
+  $}
+
+  ${
+    3eltr3g.1 $e |- ( ph -> A e. B ) $.
+    3eltr3g.2 $e |- A = C $.
+    3eltr3g.3 $e |- B = D $.
+    $( Substitution of equal classes into membership relation.  (Contributed by
+       Mario Carneiro, 6-Jan-2017.) $)
+    3eltr3g $p |- ( ph -> C e. D ) $=
+      ( wcel eleq12i sylib ) ABCIDEIFBDCEGHJK $.
+  $}
+
+  ${
+    3eltr4g.1 $e |- ( ph -> A e. B ) $.
+    3eltr4g.2 $e |- C = A $.
+    3eltr4g.3 $e |- D = B $.
+    $( Substitution of equal classes into membership relation.  (Contributed by
+       Mario Carneiro, 6-Jan-2017.) $)
+    3eltr4g $p |- ( ph -> C e. D ) $=
+      ( wcel eleq12i sylibr ) ABCIDEIFDBECGHJK $.
+  $}
+
+  ${
+    syl5eqel.1 $e |- A = B $.
+    syl5eqel.2 $e |- ( ph -> B e. C ) $.
+    $( B membership and equality inference.  (Contributed by NM,
+       4-Jan-2006.) $)
+    syl5eqel $p |- ( ph -> A e. C ) $=
+      ( wceq a1i eqeltrd ) ABCDBCGAEHFI $.
+  $}
+
+  ${
+    syl5eqelr.1 $e |- B = A $.
+    syl5eqelr.2 $e |- ( ph -> B e. C ) $.
+    $( B membership and equality inference.  (Contributed by NM,
+       4-Jan-2006.) $)
+    syl5eqelr $p |- ( ph -> A e. C ) $=
+      ( eqcomi syl5eqel ) ABCDCBEGFH $.
+  $}
+
+  ${
+    syl5eleq.1 $e |- A e. B $.
+    syl5eleq.2 $e |- ( ph -> B = C ) $.
+    $( B membership and equality inference.  (Contributed by NM,
+       4-Jan-2006.) $)
+    syl5eleq $p |- ( ph -> A e. C ) $=
+      ( wcel a1i eleqtrd ) ABCDBCGAEHFI $.
+  $}
+
+  ${
+    syl5eleqr.1 $e |- A e. B $.
+    syl5eleqr.2 $e |- ( ph -> C = B ) $.
+    $( B membership and equality inference.  (Contributed by NM,
+       4-Jan-2006.) $)
+    syl5eleqr $p |- ( ph -> A e. C ) $=
+      ( eqcomd syl5eleq ) ABCDEADCFGH $.
+  $}
+
+  ${
+    syl6eqel.1 $e |- ( ph -> A = B ) $.
+    syl6eqel.2 $e |- B e. C $.
+    $( A membership and equality inference.  (Contributed by NM,
+       4-Jan-2006.) $)
+    syl6eqel $p |- ( ph -> A e. C ) $=
+      ( wcel a1i eqeltrd ) ABCDECDGAFHI $.
+  $}
+
+  ${
+    syl6eqelr.1 $e |- ( ph -> B = A ) $.
+    syl6eqelr.2 $e |- B e. C $.
+    $( A membership and equality inference.  (Contributed by NM,
+       4-Jan-2006.) $)
+    syl6eqelr $p |- ( ph -> A e. C ) $=
+      ( eqcomd syl6eqel ) ABCDACBEGFH $.
+  $}
+
+  ${
+    syl6eleq.1 $e |- ( ph -> A e. B ) $.
+    syl6eleq.2 $e |- B = C $.
+    $( A membership and equality inference.  (Contributed by NM,
+       4-Jan-2006.) $)
+    syl6eleq $p |- ( ph -> A e. C ) $=
+      ( wceq a1i eleqtrd ) ABCDECDGAFHI $.
+  $}
+
+  ${
+    syl6eleqr.1 $e |- ( ph -> A e. B ) $.
+    syl6eleqr.2 $e |- C = B $.
+    $( A membership and equality inference.  (Contributed by NM,
+       24-Apr-2005.) $)
+    syl6eleqr $p |- ( ph -> A e. C ) $=
+      ( eqcomi syl6eleq ) ABCDEDCFGH $.
+  $}
+
+  ${
+    eleq2s.1 $e |- ( A e. B -> ph ) $.
+    eleq2s.2 $e |- C = B $.
+    $( Substitution of equal classes into a membership antecedent.
+       (Contributed by Jonathan Ben-Naim, 3-Jun-2011.) $)
+    eleq2s $p |- ( A e. C -> ph ) $=
+      ( wcel eleq2i sylbi ) BDGBCGADCBFHEI $.
+  $}
+
+  ${
+    eqneltrd.1 $e |- ( ph -> A = B ) $.
+    eqneltrd.2 $e |- ( ph -> -. B e. C ) $.
+    $( If a class is not an element of another class, an equal class is also
+       not an element.  Deduction form.  (Contributed by David Moews,
+       1-May-2017.) $)
+    eqneltrd $p |- ( ph -> -. A e. C ) $=
+      ( wcel eleq1d mtbird ) ABDGCDGFABCDEHI $.
+  $}
+
+  ${
+    eqneltrrd.1 $e |- ( ph -> A = B ) $.
+    eqneltrrd.2 $e |- ( ph -> -. A e. C ) $.
+    $( If a class is not an element of another class, an equal class is also
+       not an element.  Deduction form.  (Contributed by David Moews,
+       1-May-2017.) $)
+    eqneltrrd $p |- ( ph -> -. B e. C ) $=
+      ( wcel eleq1d mtbid ) ABDGCDGFABCDEHI $.
+  $}
+
+  ${
+    neleqtrd.1 $e |- ( ph -> -. C e. A ) $.
+    neleqtrd.2 $e |- ( ph -> A = B ) $.
+    $( If a class is not an element of another class, it is also not an element
+       of an equal class.  Deduction form.  (Contributed by David Moews,
+       1-May-2017.) $)
+    neleqtrd $p |- ( ph -> -. C e. B ) $=
+      ( wcel eleq2d mtbid ) ADBGDCGEABCDFHI $.
+  $}
+
+  ${
+    neleqtrrd.1 $e |- ( ph -> -. C e. B ) $.
+    neleqtrrd.2 $e |- ( ph -> A = B ) $.
+    $( If a class is not an element of another class, it is also not an element
+       of an equal class.  Deduction form.  (Contributed by David Moews,
+       1-May-2017.) $)
+    neleqtrrd $p |- ( ph -> -. C e. A ) $=
+      ( wcel eleq2d mtbird ) ADBGDCGEABCDFHI $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    cleqh.1 $e |- ( y e. A -> A. x y e. A ) $.
+    cleqh.2 $e |- ( y e. B -> A. x y e. B ) $.
+    $( Establish equality between classes, using bound-variable hypotheses
+       instead of distinct variable conditions.  (Contributed by NM,
+       5-Aug-1993.) $)
+    cleqh $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
+      ( wceq cv wcel wb wal dfcleq ax-17 wi wa dfbi2 hbim weq eleq1 cbv3h hban
+      hbxfrbi bibi12d biimpd equcoms biimprd impbii bitr4i ) CDGBHZCIZUIDIZJZBK
+      ZAHZCIZUNDIZJZAKZBCDLURUMUQULABUQBMZULUJUKNZUKUJNZOAUJUKPUTVAAUJUKAEFQUKU
+      JAFEQUAUBZABRZUQULVCUOUJUPUKUNUICSUNUIDSUCZUDTULUQBAVBUSBARUQULUQULJABVDU
+      EUFTUGUH $.
+  $}
+
+  $( A way of showing two classes are not equal.  (Contributed by NM,
+     1-Apr-1997.) $)
+  nelneq $p |- ( ( A e. C /\ -. B e. C ) -> -. A = B ) $=
+    ( wcel wceq eleq1 biimpcd con3and ) ACDZABEZBCDZJIKABCFGH $.
+
+  $( A way of showing two classes are not equal.  (Contributed by NM,
+     12-Jan-2002.) $)
+  nelneq2 $p |- ( ( A e. B /\ -. A e. C ) -> -. B = C ) $=
+    ( wcel wceq eleq2 biimpcd con3and ) ABDZBCEZACDZJIKBCAFGH $.
+
+  ${
+    $d x y $.  $d y A $.
+    $( Lemma for ~ eqsb3 .  (Contributed by Rodolfo Medina, 28-Apr-2010.)
+       (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
+    eqsb3lem $p |- ( [ x / y ] y = A <-> x = A ) $=
+      ( cv wceq nfv eqeq1 sbie ) BDZCEADZCEZBAKBFIJCGH $.
+  $}
+
+  ${
+    $d y A $.  $d w y $.  $d w A $.  $d x w $.
+    $( Substitution applied to an atomic wff (class version of ~ equsb3 ).
+       (Contributed by Rodolfo Medina, 28-Apr-2010.) $)
+    eqsb3 $p |- ( [ x / y ] y = A <-> x = A ) $=
+      ( vw cv wceq wsb eqsb3lem sbbii nfv sbco2 3bitr3i ) BECFZBDGZDAGDECFZDAGM
+      BAGAECFNODADBCHIMBADMDJKADCHL $.
+  $}
+
+  ${
+    $d y A $.  $d w y $.  $d w A $.  $d w x $.
+    $( Substitution applied to an atomic wff (class version of ~ elsb3 ).
+       (Contributed by Rodolfo Medina, 28-Apr-2010.)  (Proof shortened by
+       Andrew Salmon, 14-Jun-2011.) $)
+    clelsb3 $p |- ( [ x / y ] y e. A <-> x e. A ) $=
+      ( vw cv wcel wsb nfv sbco2 eleq1 sbie sbbii 3bitr3i ) DEZCFZDBGZBAGODAGBE
+      ZCFZBAGAEZCFZODABOBHIPRBAORDBRDHNQCJKLOTDATDHNSCJKM $.
+  $}
+
+  ${
+    hbxfr.1 $e |- A = B $.
+    hbxfr.2 $e |- ( y e. B -> A. x y e. B ) $.
+    $( A utility lemma to transfer a bound-variable hypothesis builder into a
+       definition.  See ~ hbxfrbi for equivalence version.  (Contributed by NM,
+       21-Aug-2007.) $)
+    hbxfreq $p |- ( y e. A -> A. x y e. A ) $=
+      ( cv wcel eleq2i hbxfrbi ) BGZCHKDHACDKEIFJ $.
+  $}
+
+  ${
+    $d w y A $.  $d w x z $.
+    hblem.1 $e |- ( y e. A -> A. x y e. A ) $.
+    $( Change the free variable of a hypothesis builder.  Lemma for ~ nfcrii .
+       (Contributed by NM, 5-Aug-1993.)  (Revised by Andrew Salmon,
+       11-Jul-2011.) $)
+    hblem $p |- ( z e. A -> A. x z e. A ) $=
+      ( cv wcel wsb wal hbsb clelsb3 albii 3imtr3i ) BFDGZBCHZOAICFDGZPAINBCAEJ
+      CBDKZOPAQLM $.
+  $}
+
+  ${
+    $d x A y $.  $d ph y $.
+    $( Equality of a class variable and a class abstraction (also called a
+       class builder).  Theorem 5.1 of [Quine] p. 34.  This theorem shows the
+       relationship between expressions with class abstractions and expressions
+       with class variables.  Note that ~ abbi and its relatives are among
+       those useful for converting theorems with class variables to equivalent
+       theorems with wff variables, by first substituting a class abstraction
+       for each class variable.
+
+       Class variables can always be eliminated from a theorem to result in an
+       equivalent theorem with wff variables, and vice-versa.  The idea is
+       roughly as follows.  To convert a theorem with a wff variable ` ph `
+       (that has a free variable ` x ` ) to a theorem with a class variable
+       ` A ` , we substitute ` x e. A ` for ` ph ` throughout and simplify,
+       where ` A ` is a new class variable not already in the wff.  An example
+       is the conversion of ~ zfauscl to ~ inex1 (look at the instance of
+       ~ zfauscl that occurs in the proof of ~ inex1 ).  Conversely, to convert
+       a theorem with a class variable ` A ` to one with ` ph ` , we substitute
+       ` { x | ph } ` for ` A ` throughout and simplify, where ` x ` and ` ph `
+       are new set and wff variables not already in the wff.  An example is
+       ~ cp , which derives a formula containing wff variables from
+       substitution instances of the class variables in its equivalent
+       formulation ~ cplem2 .  For more information on class variables, see
+       Quine pp. 15-21 and/or Takeuti and Zaring pp. 10-13.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    abeq2 $p |- ( A = { x | ph } <-> A. x ( x e. A <-> ph ) ) $=
+      ( vy cab wceq cv wcel wb wal ax-17 hbab1 cleqh abid bibi2i albii bitri )
+      CABEZFBGZCHZSRHZIZBJTAIZBJBDCRDGCHBKABDLMUBUCBUAATABNOPQ $.
+  $}
+
+  ${
+    $d x A y $.  $d ph y $.
+    $( Equality of a class variable and a class abstraction.  (Contributed by
+       NM, 20-Aug-1993.) $)
+    abeq1 $p |- ( { x | ph } = A <-> A. x ( ph <-> x e. A ) ) $=
+      ( cab wceq cv wcel wb wal abeq2 eqcom bicom albii 3bitr4i ) CABDZEBFCGZAH
+      ZBIOCEAPHZBIABCJOCKRQBAPLMN $.
+  $}
+
+  ${
+    abeqi.1 $e |- A = { x | ph } $.
+    $( Equality of a class variable and a class abstraction (inference rule).
+       (Contributed by NM, 3-Apr-1996.) $)
+    abeq2i $p |- ( x e. A <-> ph ) $=
+      ( cv wcel cab eleq2i abid bitri ) BEZCFKABGZFACLKDHABIJ $.
+  $}
+
+  ${
+    abeqri.1 $e |- { x | ph } = A $.
+    $( Equality of a class variable and a class abstraction (inference rule).
+       (Contributed by NM, 31-Jul-1994.) $)
+    abeq1i $p |- ( ph <-> x e. A ) $=
+      ( cv cab wcel abid eleq2i bitr3i ) ABEZABFZGKCGABHLCKDIJ $.
+  $}
+
+  ${
+    abeqd.1 $e |- ( ph -> A = { x | ps } ) $.
+    $( Equality of a class variable and a class abstraction (deduction).
+       (Contributed by NM, 16-Nov-1995.) $)
+    abeq2d $p |- ( ph -> ( x e. A <-> ps ) ) $=
+      ( cv wcel cab eleq2d abid syl6bb ) ACFZDGLBCHZGBADMLEIBCJK $.
+  $}
+
+  ${
+    $d ph y $.  $d ps y $.  $d x y $.
+    $( Equivalent wff's correspond to equal class abstractions.  (Contributed
+       by NM, 25-Nov-2013.)  (Revised by Mario Carneiro, 11-Aug-2016.) $)
+    abbi $p |- ( A. x ( ph <-> ps ) <-> { x | ph } = { x | ps } ) $=
+      ( vy cab wceq wcel wal dfcleq nfsab1 nfbi nfv wsb df-clab sbequ12r syl5bb
+      cv wb bibi12d cbval bitr2i ) ACEZBCEZFDQZUBGZUDUCGZRZDHABRZCHDUBUCIUGUHDC
+      UEUFCACDJBCDJKUHDLUDCQFZUEAUFBUEACDMUIAADCNADCOPUFBCDMUIBBDCNBDCOPSTUA $.
+  $}
+
+  ${
+    $d x A $.
+    abbiri.1 $e |- ( x e. A <-> ph ) $.
+    $( Equality of a class variable and a class abstraction (inference rule).
+       (Contributed by NM, 5-Aug-1993.) $)
+    abbi2i $p |- A = { x | ph } $=
+      ( cab wceq cv wcel wb abeq2 mpgbir ) CABEFBGCHAIBABCJDK $.
+  $}
+
+  ${
+    abbii.1 $e |- ( ph <-> ps ) $.
+    $( Equivalent wff's yield equal class abstractions (inference rule).
+       (Contributed by NM, 5-Aug-1993.) $)
+    abbii $p |- { x | ph } = { x | ps } $=
+      ( wb cab wceq abbi mpgbi ) ABEACFBCFGCABCHDI $.
+
+    $( Theorem abbii is the congruence law for class abstraction. $)
+    $( $j congruence 'abbii'; $)
+  $}
+
+  ${
+    $d x y $.  $d ph y $.  $d ps y $.  $d ch y $.  $( ` y ` is a dummy var. $)
+    abbid.1 $e |- F/ x ph $.
+    abbid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equivalent wff's yield equal class abstractions (deduction rule).
+       (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
+       7-Oct-2016.) $)
+    abbid $p |- ( ph -> { x | ps } = { x | ch } ) $=
+      ( wb wal cab wceq alrimi abbi sylib ) ABCGZDHBDICDIJANDEFKBCDLM $.
+  $}
+
+  ${
+    $d x ph $.
+    abbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equivalent wff's yield equal class abstractions (deduction rule).
+       (Contributed by NM, 10-Aug-1993.) $)
+    abbidv $p |- ( ph -> { x | ps } = { x | ch } ) $=
+      ( nfv abbid ) ABCDADFEG $.
+  $}
+
+  ${
+    $d x y A $.  $d ph x y $.  $d ps y $.  $( ` y ` is a dummy var. $)
+    abbirdv.1 $e |- ( ph -> ( x e. A <-> ps ) ) $.
+    $( Deduction from a wff to a class abstraction.  (Contributed by NM,
+       9-Jul-1994.) $)
+    abbi2dv $p |- ( ph -> A = { x | ps } ) $=
+      ( cv wcel wb wal cab wceq alrimiv abeq2 sylibr ) ACFDGBHZCIDBCJKAOCELBCDM
+      N $.
+  $}
+
+  ${
+    $d x y A $.  $d ph x y $.  $d ps y $.  $( ` y ` is a dummy var. $)
+    abbildv.1 $e |- ( ph -> ( ps <-> x e. A ) ) $.
+    $( Deduction from a wff to a class abstraction.  (Contributed by NM,
+       9-Jul-1994.) $)
+    abbi1dv $p |- ( ph -> { x | ps } = A ) $=
+      ( cv wcel wb wal cab wceq alrimiv abeq1 sylibr ) ABCFDGHZCIBCJDKAOCELBCDM
+      N $.
+  $}
+
+  ${
+    $d x A $.
+    $( A simplification of class abstraction.  Theorem 5.2 of [Quine] p. 35.
+       (Contributed by NM, 26-Dec-1993.) $)
+    abid2 $p |- { x | x e. A } = A $=
+      ( cv wcel cab biid abbi2i eqcomi ) BACBDZAEIABIFGH $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d ph z $.  $d ps z $.
+    cbvab.1 $e |- F/ y ph $.
+    cbvab.2 $e |- F/ x ps $.
+    cbvab.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by Andrew Salmon, 11-Jul-2011.) $)
+    cbvab $p |- { x | ph } = { y | ps } $=
+      ( vz cab wsb cv wcel nfsb weq wb equcoms bicomd sbie sbequ df-clab eqriv
+      syl5bbr 3bitr4i ) HACIZBDIZACHJBDHJZHKZUDLUGUELAUFCHBDHCFMABDCJCHNUFBADCE
+      DCNABABOCDGPQRBCHDSUBRAHCTBHDTUCUA $.
+  $}
+
+  ${
+    $d y ph $.  $d x ps $.
+    cbvabv.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 26-May-1999.) $)
+    cbvabv $p |- { x | ph } = { y | ps } $=
+      ( nfv cbvab ) ABCDADFBCFEG $.
+  $}
+
+  ${
+    $d x A y $.  $d ph y $.
+    $( Membership of a class variable in a class abstraction.  (Contributed by
+       NM, 23-Dec-1993.) $)
+    clelab $p |- ( A e. { x | ph } <-> E. x ( x = A /\ ph ) ) $=
+      ( vy cv wceq cab wcel wex wsb df-clab anbi2i exbii df-clel nfv nfs1v nfan
+      wa eqeq1 sbequ12 anbi12d cbvex 3bitr4i ) DEZCFZUDABGZHZRZDIUEABDJZRZDICUF
+      HBEZCFZARZBIUHUJDUGUIUEADBKLMDCUFNUMUJBDUMDOUEUIBUEBOABDPQUKUDFULUEAUIUKU
+      DCSABDTUAUBUC $.
+  $}
+
+  ${
+    $d y A $.  $d y ph $.  $d x y $.
+    $( Membership of a class abstraction in another class.  (Contributed by NM,
+       17-Jan-2006.) $)
+    clabel $p |- ( { x | ph } e. A <->
+                 E. y ( y e. A /\ A. x ( x e. y <-> ph ) ) ) $=
+      ( cab wcel cv wceq wa wex wb wal df-clel abeq2 anbi2ci exbii bitri ) ABEZ
+      DFCGZRHZSDFZIZCJUABGSFAKBLZIZCJCRDMUBUDCTUCUAABSNOPQ $.
+  $}
+
+  ${
+    $d z A $.  $d z x $.  $d z y $.
+    $( The right-hand side of the second equality is a way of representing
+       proper substitution of ` y ` for ` x ` into a class variable.
+       (Contributed by NM, 14-Sep-2003.) $)
+    sbab $p |- ( x = y -> A = { z | [ y / x ] z e. A } ) $=
+      ( weq cv wcel wsb sbequ12 abbi2dv ) ABECFDGZABHCDKABIJ $.
+  $}
 
 $(
 ###############################################################################
