@@ -17975,18 +17975,169 @@ htmldef "]" as "<IMG SRC='rbrack.gif' WIDTH=5 HEIGHT=19 TITLE=']' ALIGN=TOP>";
 htmldef "u" as "<IMG SRC='_u.gif' WIDTH=10 HEIGHT=19 TITLE='u' ALIGN=TOP>";
   althtmldef "u" as '<I><FONT COLOR="#FF0000">u</FONT></I>';
   latexdef "u" as "u";
-htmldef "f" as "<IMG SRC='_f.gif' WIDTH=9 HEIGHT=19 TITLE='f' ALIGN=TOP>";
-  althtmldef "f" as '<I><FONT COLOR="#FF0000">f</FONT></I>';
-  latexdef "f" as "f";
-htmldef "g" as "<IMG SRC='_g.gif' WIDTH=9 HEIGHT=19 TITLE='g' ALIGN=TOP>";
-  althtmldef "g" as '<I><FONT COLOR="#FF0000">g</FONT></I>';
-  latexdef "g" as "g";
 htmldef "E!" as "<IMG SRC='_e1.gif' WIDTH=12 HEIGHT=19 TITLE='E!' ALIGN=TOP>";
   althtmldef "E!" as '<FONT FACE=sans-serif>&exist;!</FONT>';
   latexdef "E!" as "\exists{!}";
 htmldef "E*" as "<IMG SRC='_em1.gif' WIDTH=15 HEIGHT=19 TITLE='E*' ALIGN=TOP>";
   althtmldef "E*" as '<FONT FACE=sans-serif>&exist;*</FONT>';
   latexdef "E*" as "\exists^\ast";
+htmldef "{" as "<IMG SRC='lbrace.gif' WIDTH=6 HEIGHT=19 ALT=' {' TITLE='{'>";
+  althtmldef "{" as '{'; /* &lcub; */
+  latexdef "{" as "\{";
+htmldef "|" as " <IMG SRC='vert.gif' WIDTH=3 HEIGHT=19 ALT=' |' TITLE='|'> ";
+  althtmldef "|" as ' &#8739; '; /* &vertbar; */
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "|" as "|";
+htmldef "}" as "<IMG SRC='rbrace.gif' WIDTH=6 HEIGHT=19 ALT=' }' TITLE='}'>";
+  althtmldef "}" as '}'; /* &rcub; */
+  latexdef "}" as "\}";
+htmldef "./\" as
+    " <IMG SRC='_.wedge.gif' WIDTH=11 HEIGHT=19 ALT=' ./\' TITLE='./\'> ";
+  althtmldef "./\" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&and;</SPAN> ';
+  latexdef "./\" as "\wedge";
+htmldef ".\/" as
+    " <IMG SRC='_.vee.gif' WIDTH=11 HEIGHT=19 ALT=' .\/' TITLE='.\/'> ";
+  althtmldef ".\/" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&or;</SPAN> ';
+  latexdef ".\/" as "\vee";
+htmldef ".<_" as
+    " <IMG SRC='_.le.gif' WIDTH=11 HEIGHT=19 ALT=' .&lt;_' TITLE='.&lt;_'> ";
+  althtmldef ".<_" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&le;</SPAN> ';
+  latexdef ".<_" as "\le";
+htmldef ".<" as     /* Symbol as variable */
+    " <IMG SRC='_.lt.gif' WIDTH=11 HEIGHT=19 ALT=' .&lt;' TITLE='.&lt;'> ";
+  althtmldef ".<" as
+    /* This is how to put a dotted box around the symbol: */
+    /* border means box around symbol; border-bottom underlines symbol */
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&lt;</SPAN> ';
+    /* Todo: can this STYLE sequence be done with a CLASS? */
+    /* Move the underline down 3px so it isn't too close to symbol */
+    /*
+    ' <SPAN STYLE="vertical-align:-3px">' +
+    '<SPAN CLASS=symvar STYLE="text-decoration:underline dotted;color:#C3C">' +
+    '<SPAN STYLE="vertical-align:3px">&lt;</SPAN></SPAN></SPAN> ';
+    */
+  latexdef ".<" as "<";
+htmldef ".+" as
+    " <IMG SRC='_.plus.gif' WIDTH=13 HEIGHT=19 ALT=' .+' TITLE='.+'> ";
+  althtmldef ".+" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '+</SPAN> ';
+  latexdef ".+" as "+";
+htmldef ".-" as
+    " <IMG SRC='_.minus.gif' WIDTH=11 HEIGHT=19 ALT=' .-' TITLE='.-'> ";
+  althtmldef ".-" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&minus;</SPAN> ';
+  latexdef ".-" as "-";
+htmldef ".X." as
+    " <IMG SRC='_.times.gif' WIDTH=9 HEIGHT=19 ALT=' .X.' TITLE='.X.'> ";
+  althtmldef ".X." as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&times;</SPAN> ';
+  latexdef ".X." as "\times";
+htmldef "./" as
+    " <IMG SRC='_.solidus.gif' WIDTH=8 HEIGHT=19 ALT=' ./' TITLE='./'> ";
+  althtmldef "./" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '/</SPAN> ';
+  latexdef "./" as "/";
+htmldef ".^" as
+    " <IMG SRC='_.uparrow.gif' WIDTH=7 HEIGHT=19 ALT=' .^' TITLE='.^'> ";
+  althtmldef ".^" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&uarr;</SPAN> ';
+  latexdef ".^" as "\uparrow";
+htmldef ".0." as
+    " <IMG SRC='_.0.gif' WIDTH=8 HEIGHT=19 ALT=' .0.' TITLE='.0.'> ";
+  althtmldef ".0." as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '0</SPAN> ';
+  latexdef ".0." as "0";
+htmldef ".1." as
+    " <IMG SRC='_.1.gif' WIDTH=7 HEIGHT=19 ALT=' .1.' TITLE='.1.'> ";
+  althtmldef ".1." as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '1</SPAN> ';
+  latexdef ".1." as "1";
+htmldef ".||" as
+    " <IMG SRC='_.parallel.gif' WIDTH=5 HEIGHT=19 ALT=' .||' TITLE='.||'> ";
+  althtmldef ".||" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&#8741;</SPAN> ';
+  latexdef ".||" as "\parallel";
+htmldef ".~" as
+    " <IMG SRC='_.sim.gif' WIDTH=13 HEIGHT=19 ALT=' .~' TITLE='.~'> ";
+  althtmldef ".~" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&#x223C;</SPAN> ';
+  latexdef ".~" as "\sim";
+htmldef "._|_" as
+    " <IMG SRC='_.perp.gif' WIDTH=11 HEIGHT=19 ALT=' ._|_' TITLE='._|_'> ";
+  althtmldef "._|_" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&#8869;</SPAN> ';
+  latexdef "._|_" as "\perp";
+htmldef ".+^" as
+    " <IMG SRC='_.plushat.gif' WIDTH=11 HEIGHT=19 ALT=' .+^' TITLE='.+^'> ";
+  althtmldef ".+^" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&#x2A23;</SPAN> ';       /* &plusacir; */
+  latexdef ".+^" as "\hat{+}";
+htmldef ".+b" as
+    " <IMG SRC='_.plusb.gif' WIDTH=14 HEIGHT=19 ALT=' .+b' TITLE='.+b'> ";
+  althtmldef ".+b" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&#x271A;</SPAN> ';
+  latexdef ".+b" as "\boldsymbol{+}";
+htmldef ".(+)" as
+    " <IMG SRC='_.oplus.gif' WIDTH=13 HEIGHT=19 ALT=' .(+)' TITLE='.(+)'> ";
+  althtmldef ".(+)" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&#x2295;</SPAN> ';
+  latexdef ".(+)" as "\oplus";
+htmldef ".*" as
+    " <IMG SRC='_.ast.gif' WIDTH=7 HEIGHT=19 ALT=' .*' TITLE='.*'> ";
+  althtmldef ".*" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&lowast;</SPAN> ';
+  latexdef ".*" as "\ast";
+htmldef ".x." as
+    " <IMG SRC='_.cdot.gif' WIDTH=4 HEIGHT=19 ALT=' .x.' TITLE='.x.'> ";
+  althtmldef ".x." as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&middot;</SPAN> ';
+  latexdef ".x." as "\cdot";
+htmldef ".xb" as
+    " <IMG SRC='_.bullet.gif' WIDTH=8 HEIGHT=19 ALT=' .xb' TITLE='.xb'> ";
+  althtmldef ".xb" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&#x2219;</SPAN> ';
+  latexdef ".xb" as "\bullet";
+htmldef ".," as
+    " <IMG SRC='_.comma.gif' WIDTH=4 HEIGHT=19 ALT=' .,' TITLE='.,'> ";
+  althtmldef ".," as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    ',</SPAN> ';
+  latexdef ".," as ",";
+htmldef ".(x)" as
+    " <IMG SRC='_.otimes.gif' WIDTH=13 HEIGHT=19 ALT=' .(x)' TITLE='.(x)'> ";
+  althtmldef ".(x)" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&#x2297;</SPAN> ';
+  latexdef ".(x)" as "\otimes";
+htmldef ".0b" as
+    " <IMG SRC='_.bf0.gif' WIDTH=9 HEIGHT=19 ALT=' .0b' TITLE='.0b'> ";
+  althtmldef ".0b" as
+    ' <SPAN CLASS=symvar STYLE="border-bottom:1px dotted;color:#C3C">' +
+    '&#x1D7CE</SPAN> ';
+  latexdef ".0b" as "\mbox{\boldmath$0$}";
 
 /* "~P" was deleted from above section in set.mm. */
 /* The ones below should have been in the above section in set.mm. */
@@ -18000,6 +18151,135 @@ htmldef "A" as "<IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 TITLE='A' ALIGN=TOP>";
 htmldef "B" as "<IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 TITLE='B' ALIGN=TOP>";
   althtmldef "B" as '<I><FONT COLOR="#CC33CC">B</FONT></I>';
   latexdef "B" as "B";
+htmldef "C" as "<IMG SRC='_cc.gif' WIDTH=12 HEIGHT=19 ALT=' C' TITLE='C'>";
+  althtmldef "C" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D436;</SPAN>';
+  latexdef "C" as "C";
+htmldef "D" as "<IMG SRC='_cd.gif' WIDTH=12 HEIGHT=19 ALT=' D' TITLE='D'>";
+  althtmldef "D" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D437;</SPAN>';
+  latexdef "D" as "D";
+htmldef "P" as "<IMG SRC='_cp.gif' WIDTH=12 HEIGHT=19 ALT=' P' TITLE='P'>";
+  althtmldef "P" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D443;</SPAN>';
+  latexdef "P" as "P";
+htmldef "Q" as "<IMG SRC='_cq.gif' WIDTH=12 HEIGHT=19 ALT=' Q' TITLE='Q'>";
+  althtmldef "Q" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D444;</SPAN>';
+  latexdef "Q" as "Q";
+htmldef "R" as "<IMG SRC='_cr.gif' WIDTH=12 HEIGHT=19 ALT=' R' TITLE='R'>";
+  althtmldef "R" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D445;</SPAN>';
+  latexdef "R" as "R";
+htmldef "S" as "<IMG SRC='_cs.gif' WIDTH=11 HEIGHT=19 ALT=' S' TITLE='S'>";
+  althtmldef "S" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D446;</SPAN>';
+  latexdef "S" as "S";
+htmldef "T" as "<IMG SRC='_ct.gif' WIDTH=12 HEIGHT=19 ALT=' T' TITLE='T'>";
+  althtmldef "T" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D447;</SPAN>';
+  latexdef "T" as "T";
+htmldef "U" as "<IMG SRC='_cu.gif' WIDTH=12 HEIGHT=19 ALT=' U' TITLE='U'>";
+  althtmldef "U" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D448;</SPAN>';
+  latexdef "U" as "U";
+htmldef "e" as "<IMG SRC='_e.gif' WIDTH=8 HEIGHT=19 ALT=' e' TITLE='e'>";
+  althtmldef "e" as '<SPAN CLASS=set STYLE="color:red">&#x1D452;</SPAN>';
+  latexdef "e" as "e";
+htmldef "f" as "<IMG SRC='_f.gif' WIDTH=9 HEIGHT=19 TITLE='f' ALIGN=TOP>";
+  althtmldef "f" as '<I><FONT COLOR="#FF0000">f</FONT></I>';
+  latexdef "f" as "f";
+htmldef "g" as "<IMG SRC='_g.gif' WIDTH=9 HEIGHT=19 TITLE='g' ALIGN=TOP>";
+  althtmldef "g" as '<I><FONT COLOR="#FF0000">g</FONT></I>';
+  latexdef "g" as "g";
+htmldef "h" as "<IMG SRC='_h.gif' WIDTH=10 HEIGHT=19 ALT=' h' TITLE='h'>";
+  althtmldef "h" as '<SPAN CLASS=set STYLE="color:red">&#x210E;</SPAN>';
+  latexdef "h" as "h";
+htmldef "i" as "<IMG SRC='_i.gif' WIDTH=6 HEIGHT=19 ALT=' i' TITLE='i'>";
+  althtmldef "i" as '<SPAN CLASS=set STYLE="color:red">&#x1D456;</SPAN>';
+  latexdef "i" as "i";
+htmldef "j" as "<IMG SRC='_j.gif' WIDTH=7 HEIGHT=19 ALT=' j' TITLE='j'>";
+  althtmldef "j" as '<SPAN CLASS=set STYLE="color:red">&#x1D457;</SPAN>';
+  latexdef "j" as "j";
+htmldef "k" as "<IMG SRC='_k.gif' WIDTH=9 HEIGHT=19 ALT=' k' TITLE='k'>";
+  althtmldef "k" as '<SPAN CLASS=set STYLE="color:red">&#x1D458;</SPAN>';
+  latexdef "k" as "k";
+htmldef "m" as "<IMG SRC='_m.gif' WIDTH=14 HEIGHT=19 ALT=' m' TITLE='m'>";
+  althtmldef "m" as '<SPAN CLASS=set STYLE="color:red">&#x1D45A;</SPAN>';
+  latexdef "m" as "m";
+htmldef "n" as "<IMG SRC='_n.gif' WIDTH=10 HEIGHT=19 ALT=' n' TITLE='n'>";
+  althtmldef "n" as '<SPAN CLASS=set STYLE="color:red">&#x1D45B;</SPAN>';
+  latexdef "n" as "n";
+htmldef "o" as "<IMG SRC='_o.gif' WIDTH=8 HEIGHT=19 ALT=' o' TITLE='o'>";
+  althtmldef "o" as '<SPAN CLASS=set STYLE="color:red">&#x1D45C;</SPAN>';
+  latexdef "o" as "o";
+htmldef "E" as "<IMG SRC='_ce.gif' WIDTH=13 HEIGHT=19 ALT=' E' TITLE='E'>";
+  althtmldef "E" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D438;</SPAN>';
+  latexdef "E" as "E";
+htmldef "F" as "<IMG SRC='_cf.gif' WIDTH=13 HEIGHT=19 ALT=' F' TITLE='F'>";
+  althtmldef "F" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D439;</SPAN>';
+  latexdef "F" as "F";
+htmldef "G" as "<IMG SRC='_cg.gif' WIDTH=12 HEIGHT=19 ALT=' G' TITLE='G'>";
+  althtmldef "G" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D43A;</SPAN>';
+  latexdef "G" as "G";
+htmldef "H" as "<IMG SRC='_ch.gif' WIDTH=14 HEIGHT=19 ALT=' H' TITLE='H'>";
+  althtmldef "H" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D43B;</SPAN>';
+  latexdef "H" as "H";
+htmldef "I" as "<IMG SRC='_ci.gif' WIDTH=8 HEIGHT=19 ALT=' I' TITLE='I'>";
+  althtmldef "I" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D43C;</SPAN>';
+  latexdef "I" as "I";
+htmldef "J" as "<IMG SRC='_cj.gif' WIDTH=10 HEIGHT=19 ALT=' J' TITLE='J'>";
+  althtmldef "J" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D43D;</SPAN>';
+  latexdef "J" as "J";
+htmldef "K" as "<IMG SRC='_ck.gif' WIDTH=14 HEIGHT=19 ALT=' K' TITLE='K'>";
+  althtmldef "K" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D43E;</SPAN>';
+  latexdef "K" as "K";
+htmldef "L" as "<IMG SRC='_cl.gif' WIDTH=10 HEIGHT=19 ALT=' L' TITLE='L'>";
+  althtmldef "L" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D43F;</SPAN>';
+  latexdef "L" as "L";
+htmldef "M" as "<IMG SRC='_cm.gif' WIDTH=15 HEIGHT=19 ALT=' M' TITLE='M'>";
+  althtmldef "M" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D440;</SPAN>';
+  latexdef "M" as "M";
+htmldef "N" as "<IMG SRC='_cn.gif' WIDTH=14 HEIGHT=19 ALT=' N' TITLE='N'>";
+  althtmldef "N" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D441;</SPAN>';
+  latexdef "N" as "N";
+htmldef "V" as "<IMG SRC='_cv.gif' WIDTH=12 HEIGHT=19 ALT=' V' TITLE='V'>";
+  althtmldef "V" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D449;</SPAN>';
+  latexdef "V" as "V";
+htmldef "W" as "<IMG SRC='_cw.gif' WIDTH=16 HEIGHT=19 ALT=' W' TITLE='W'>";
+  althtmldef "W" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D44A;</SPAN>';
+  latexdef "W" as "W";
+htmldef "X" as "<IMG SRC='_cx.gif' WIDTH=13 HEIGHT=19 ALT=' X' TITLE='X'>";
+  althtmldef "X" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D44B;</SPAN>';
+  latexdef "X" as "X";
+htmldef "Y" as "<IMG SRC='_cy.gif' WIDTH=12 HEIGHT=19 ALT=' Y' TITLE='Y'>";
+  althtmldef "Y" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D44C;</SPAN>';
+  latexdef "Y" as "Y";
+htmldef "Z" as "<IMG SRC='_cz.gif' WIDTH=11 HEIGHT=19 ALT=' Z' TITLE='Z'>";
+  althtmldef "Z" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D44D;</SPAN>';
+  latexdef "Z" as "Z";
+htmldef "O" as "<IMG SRC='_co.gif' WIDTH=12 HEIGHT=19 ALT=' O' TITLE='O'>";
+  althtmldef "O" as '<SPAN CLASS=class STYLE="color:#C3C">&#x1D442;</SPAN>';
+  latexdef "O" as "O";
+htmldef "s" as "<IMG SRC='_s.gif' WIDTH=7 HEIGHT=19 ALT=' s' TITLE='s'>";
+  althtmldef "s" as '<SPAN CLASS=set STYLE="color:red">&#x1D460;</SPAN>';
+  latexdef "s" as "s";
+htmldef "r" as "<IMG SRC='_r.gif' WIDTH=8 HEIGHT=19 ALT=' r' TITLE='r'>";
+  althtmldef "r" as '<SPAN CLASS=set STYLE="color:red">&#x1D45F;</SPAN>';
+  latexdef "r" as "r";
+htmldef "q" as "<IMG SRC='_q.gif' WIDTH=8 HEIGHT=19 ALT=' q' TITLE='q'>";
+  althtmldef "q" as '<SPAN CLASS=set STYLE="color:red">&#x1D45E;</SPAN>';
+  latexdef "q" as "q";
+htmldef "p" as "<IMG SRC='_p.gif' WIDTH=10 HEIGHT=19 ALT=' p' TITLE='p'>";
+  althtmldef "p" as '<SPAN CLASS=set STYLE="color:red">&#x1D45D;</SPAN>';
+  latexdef "p" as "p";
+htmldef "a" as "<IMG SRC='_a.gif' WIDTH=9 HEIGHT=19 ALT=' a' TITLE='a'>";
+  althtmldef "a" as '<SPAN CLASS=set STYLE="color:red">&#x1D44E;</SPAN>';
+  latexdef "a" as "a";
+htmldef "b" as "<IMG SRC='_b.gif' WIDTH=8 HEIGHT=19 ALT=' b' TITLE='b'>";
+  althtmldef "b" as '<SPAN CLASS=set STYLE="color:red">&#x1D44F;</SPAN>';
+  latexdef "b" as "b";
+htmldef "c" as "<IMG SRC='_c.gif' WIDTH=7 HEIGHT=19 ALT=' c' TITLE='c'>";
+  althtmldef "c" as '<SPAN CLASS=set STYLE="color:red">&#x1D450;</SPAN>';
+  latexdef "c" as "c";
+htmldef "d" as "<IMG SRC='_d.gif' WIDTH=9 HEIGHT=19 ALT=' d' TITLE='d'>";
+  althtmldef "d" as '<SPAN CLASS=set STYLE="color:red">&#x1D451;</SPAN>';
+  latexdef "d" as "d";
+htmldef "l" as "<IMG SRC='_l.gif' WIDTH=6 HEIGHT=19 ALT=' l' TITLE='l'>";
+  althtmldef "l" as '<SPAN CLASS=set STYLE="color:red">&#x1D459;</SPAN>';
+  latexdef "l" as "l";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
