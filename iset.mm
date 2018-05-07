@@ -53,6 +53,7 @@ processed manually.
 
 DONE:
 Date      Old       New         Notes
+6-May-18  cbv3      cbv3h
 17-Apr-18 con1bidc  con1biimdc
 10-Feb-18 ax-6      hbn1
 10-Feb-18 hbn1OLD   hbn1
@@ -11646,12 +11647,12 @@ $)
   $}
 
   ${
-    cbv3.1 $e |- ( ph -> A. y ph ) $.
-    cbv3.2 $e |- ( ps -> A. x ps ) $.
-    cbv3.3 $e |- ( x = y -> ( ph -> ps ) ) $.
+    cbv3h.1 $e |- ( ph -> A. y ph ) $.
+    cbv3h.2 $e |- ( ps -> A. x ps ) $.
+    cbv3h.3 $e |- ( x = y -> ( ph -> ps ) ) $.
     $( Rule used to change bound variables, using implicit substitition, that
        does not use ~ ax-12 .  (Contributed by NM, 5-Aug-1993.) $)
-    cbv3 $p |- ( A. x ph -> A. y ps ) $=
+    cbv3h $p |- ( A. x ph -> A. y ps ) $=
       ( wi wal imim2i a1i weq cbv1 id ax-gen mpg ) AAHZDIACIBDIHCQABCDAADIAEJBB
       CIHQFKCDLABHHQGKMQDANOP $.
 
@@ -11671,7 +11672,7 @@ $)
        (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
        25-May-2011.) $)
     cbval $p |- ( A. x ph <-> A. y ps ) $=
-      ( wal weq biimpd cbv3 wb equcoms biimprd impbii ) ACHBDHABCDEFCDIABGJKBAD
+      ( wal weq biimpd cbv3h wb equcoms biimprd impbii ) ACHBDHABCDEFCDIABGJKBAD
       CFEDCIABABLCDGMNKO $.
   $}
 
@@ -12213,7 +12214,7 @@ $)
        ~ ax-16 below so that theorems needing ~ ax-16 can be more easily
        identified.  (Contributed by NM, 8-Nov-2006.) $)
     ax16 $p |- ( A. x x = y -> ( ph -> A. x ph ) ) $=
-      ( vz weq wal wi aev ax-17 sbequ12 biimpcd alimd hbsb3 stdpc7 cbv3 syl6com
+      ( vz weq wal wi aev ax-17 sbequ12 biimpcd alimd hbsb3 stdpc7 cbv3h syl6com
       wsb syl ) BCEBFBDEZDFZAABFZGBCDBDHATABDQZDFUAASUBDADIZSAUBABDJKLUBADBABDU
       CMUCADBNOPR $.
   $}
@@ -12645,7 +12646,7 @@ $)
        without one or more of these axioms in special cases.  (Contributed by
        NM, 20-May-2008.) $)
     ax16i $p |- ( A. x x = y -> ( ph -> A. x ph ) ) $=
-      ( weq wal wi ax-17 ax-8 cbv3 a4imv equid mpi syl syl5com alimd mpcom
+      ( weq wal wi ax-17 ax-8 cbv3h a4imv equid mpi syl syl5com alimd mpcom
       alimi biimpcd biimprd syl6com ) CDHZCIZCEHZEIZAACIZJUFEDHZEIZUHUEUJCEUEEK
       ZUJCKCEDLMUKECHZEIZUHUEUKUNUJUEECECDLNUEUJUMEULUEDCHZUJUMUECCHUOCOCDCLPUJ
       DEHZUOUMJUJEEHZUPEOZEDELPDECLQRSTUMUGEUMUQUGURECELPZUAQQAUHBEIUIAUGBEAEKZ
@@ -14729,7 +14730,7 @@ $)
        NM, 7-Aug-1994.) $)
     mo $p |- ( E. y A. x ( ph -> x = y ) <->
                A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
-      ( vz weq wi wal wex wsb wa ax-17 hbim hbal cbv3 syl sylbir alimi wn hbn
+      ( vz weq wi wal wex wsb wa ax-17 hbim hbal cbv3h syl sylbir alimi wn hbn
       equequ2 imbi2d albidv cbvex hbs1 sbequ2 ax-8 imim12d ancli aaan prth syl6
       sylibr equtr2 2alimi exlimiv impexp bi2.04 bitri 2albii eximi a7s syl5com
       alim exim syl5bi alnex sbequ1 equcoms con3d pm2.21 19.8a 3syl a1d pm2.61i
