@@ -53,6 +53,7 @@ processed manually.
 
 DONE:
 Date      Old       New         Notes
+6-May-18  sbie      sbieh
 6-May-18  cbv3      cbv3h
 17-Apr-18 con1bidc  con1biimdc
 10-Feb-18 ax-6      hbn1
@@ -12009,7 +12010,7 @@ $)
     sbied.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
     sbied.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
     $( Conversion of implicit substitution to explicit substitution (deduction
-       version of ~ sbie ).  (Contributed by NM, 30-Jun-1994.)  (Proof
+       version of ~ sbieh ).  (Contributed by NM, 30-Jun-1994.)  (Proof
        shortened by Andrew Salmon, 25-May-2011.) $)
     sbied $p |- ( ph -> ( [ y / x ] ps <-> ch ) ) $=
       ( wsb wex weq wa sb1 wb wi bi1 syl6 imp3a syld wal eximd 19.9hd bi2 com23
@@ -12019,13 +12020,23 @@ $)
   $}
 
   ${
-    sbie.1 $e |- ( ps -> A. x ps ) $.
-    sbie.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    sbieh.1 $e |- ( ps -> A. x ps ) $.
+    sbieh.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Conversion of implicit substitution to explicit substitution.
        (Contributed by NM, 30-Jun-1994.) $)
-    sbie $p |- ( [ y / x ] ph <-> ps ) $=
+    sbieh $p |- ( [ y / x ] ph <-> ps ) $=
       ( wi wsb wb id hbth wal a1i weq sbied ax-mp ) AAGZACDHBIAJZQABCDQCRKBBCLG
       QEMCDNABIGQFMOP $.
+  $}
+
+  ${
+    sbie.1 $e |- F/ x ps $.
+    sbie.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Conversion of implicit substitution to explicit substitution.
+       (Contributed by NM, 30-Jun-1994.)  (Revised by Mario Carneiro,
+       4-Oct-2016.)  (Revised by Wolf Lammen, 30-Apr-2018.) $)
+    sbie $p |- ( [ y / x ] ph <-> ps ) $=
+      ( nfri sbieh ) ABCDBCEGFH $.
   $}
 
 $(
@@ -13337,7 +13348,7 @@ $( The theorems in this section make use of the $d statement. $)
        25-Dec-2017.)  (One distinct variable constraint removed by Jim Kingdon,
        3-Feb-2018.) $)
     sbco2vlem $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( wsb hbsbv sbequ sbie ) ABDFABCFDCABCDEGADCBHI $.
+      ( wsb hbsbv sbequ sbieh ) ABDFABCFDCABCDEGADCBHI $.
   $}
 
   ${
@@ -13376,7 +13387,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( Lemma for ~ equsb3 .  (Contributed by NM, 4-Dec-2005.)  (Proof shortened
        by Andrew Salmon, 14-Jun-2011.) $)
     equsb3lem $p |- ( [ x / y ] y = z <-> x = z ) $=
-      ( cv wceq ax-17 equequ1 sbie ) BDCDZEADIEZBAJBFBACGH $.
+      ( cv wceq ax-17 equequ1 sbieh ) BDCDZEADIEZBAJBFBACGH $.
   $}
 
   ${
@@ -13489,7 +13500,7 @@ $( The theorems in this section make use of the $d statement. $)
        a lemma on the way to proving ~ sbco2 which has no distinct variable
        constraints.  (Contributed by Jim Kingdon, 19-Mar-2018.) $)
     sbco2yz $p |- ( [ y / z ] [ z / x ] ph <-> [ y / x ] ph ) $=
-      ( wsb nfsb nfri sbequ sbie ) ABDFABCFZDCKDABCDEGHADCBIJ $.
+      ( wsb nfsb nfri sbequ sbieh ) ABDFABCFZDCKDABCDEGHADCBIJ $.
   $}
 
   ${
@@ -13601,7 +13612,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( Substitution applied to an atomic membership wff.  (Contributed by NM,
        7-Nov-2006.)  (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
     elsb3 $p |- ( [ x / y ] y e. z <-> x e. z ) $=
-      ( vw wel wsb ax-17 elequ1 sbie sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
+      ( vw wel wsb ax-17 elequ1 sbieh sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
       equsb1 mpbi sbf 3bitri ) BCEZBAFZDCEZDAFZACEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
       BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
       DAUFDGTUA $.
@@ -13613,7 +13624,7 @@ $( The theorems in this section make use of the $d statement. $)
        Rodolfo Medina, 3-Apr-2010.)  (Proof shortened by Andrew Salmon,
        14-Jun-2011.) $)
     elsb4 $p |- ( [ x / y ] z e. y <-> z e. x ) $=
-      ( vw wel wsb ax-17 elequ2 sbie sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
+      ( vw wel wsb ax-17 elequ2 sbieh sbbii sbco2 bitr3i wb weq sbimi ax-mp sbbi
       equsb1 mpbi sbf 3bitri ) CBEZBAFZCDEZDAFZCAEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
       BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
       DAUFDGTUA $.
@@ -14012,7 +14023,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( Version of ~ dvelim without any variable restrictions.  (Contributed by
        NM, 1-Oct-2002.) $)
     dvelimf $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
-      ( weq wal wn wsb hbsb4 sbie albii 3imtr3g ) CDICJKAEDLZQCJBBCJAEDCFMABEDG
+      ( weq wal wn wsb hbsb4 sbieh albii 3imtr3g ) CDICJKAEDLZQCJBBCJAEDCFMABEDG
       HNZQBCROP $.
   $}
 
@@ -14715,7 +14726,7 @@ $)
        (Contributed by NM, 25-Nov-1994.)  (Revised by Andrew Salmon,
        8-Jun-2011.) $)
     cbveu $p |- ( E! x ph <-> E! y ps ) $=
-      ( weu wsb sb8eu sbie eubii bitri ) ACHACDIZDHBDHACDEJNBDABCDFGKLM $.
+      ( weu wsb sb8eu sbieh eubii bitri ) ACHACDIZDHBDHACDEJNBDABCDFGKLM $.
   $}
 
   ${
@@ -14852,7 +14863,7 @@ $)
     $( "At most one" expressed using implicit substitution.  (Contributed by
        NM, 10-Apr-2004.) $)
     mo4f $p |- ( E* x ph <-> A. x A. y ( ( ph /\ ps ) -> x = y ) ) $=
-      ( wmo wsb wa weq wi wal ax-17 mo3 sbie anbi2i imbi1i 2albii bitri ) ACGAA
+      ( wmo wsb wa weq wi wal ax-17 mo3 sbieh anbi2i imbi1i 2albii bitri ) ACGAA
       CDHZIZCDJZKZDLCLABIZUBKZDLCLACDADMNUCUECDUAUDUBTBAABCDEFOPQRS $.
   $}
 
@@ -15235,7 +15246,7 @@ $)
        by NM, 10-Feb-2005.) $)
     2mos $p |- ( E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) <->
              A. x A. y A. z A. w ( ( ph /\ ps ) -> ( x = z /\ y = w ) ) ) $=
-      ( weq wa wi wal wex wsb 2mo ax-17 sbrim wb expcom sbie 2albii pm5.74ri
+      ( weq wa wi wal wex wsb 2mo ax-17 sbrim wb expcom sbieh 2albii pm5.74ri
       pm5.74d bitr3i anbi2i imbi1i bitri ) ACEHZDFHZIZJDKCKFLELAADFMZCEMZIZUIJZ
       FKEKZDKCKABIZUIJZFKEKZDKCKACDEFNUNUQCDUMUPEFULUOUIUKBAUJBCEBCOUGUJBUGUJJU
       GAJZDFMUGBJZUGADFUGDOPURUSDFUSDOUHUGABUGUHABQGRUBSUCUASUDUETTUF $.
