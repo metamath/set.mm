@@ -11553,6 +11553,15 @@ $)
       ( weq wal wn hbnae syl ) BCFBGHZKDGABCDIEJ $.
   $}
 
+  ${
+    naecoms.1 $e |- ( -. A. x x = y -> ph ) $.
+    $( A commutation rule for distinct variable specifiers.  (Contributed by
+       NM, 2-Jan-2002.) $)
+    naecoms $p |- ( -. A. y y = x -> ph ) $=
+      ( cv wceq wal wn ax-10 con3i syl ) CEZBEZFCGZHMLFBGZHAO
+      NBCIJDK $.
+  $}
+
   $( Lemma used in proofs of substitution properties.  (Contributed by NM,
      5-Aug-1993.)  (Proof shortened by Mario Carneiro, 20-May-2014.) $)
   equs4 $p |- ( A. x ( x = y -> ph ) -> E. x ( x = y /\ ph ) ) $=
