@@ -53,6 +53,7 @@ processed manually.
 
 DONE:
 Date      Old       New         Notes
+9-May-18  sbied     sbiedh
 6-May-18  alrimi    alrimih
 6-May-18  cbvex     cbvexh
 6-May-18  cbval     cbvalh
@@ -12067,17 +12068,28 @@ $)
     ( weq wi wsb sb2 equcomi mpg ) ABCBACZDIABEAIABFABGH $.
 
   ${
-    sbied.1 $e |- ( ph -> A. x ph ) $.
-    sbied.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
-    sbied.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
+    sbiedh.1 $e |- ( ph -> A. x ph ) $.
+    sbiedh.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
+    sbiedh.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
     $( Conversion of implicit substitution to explicit substitution (deduction
        version of ~ sbieh ).  (Contributed by NM, 30-Jun-1994.)  (Proof
        shortened by Andrew Salmon, 25-May-2011.) $)
-    sbied $p |- ( ph -> ( [ y / x ] ps <-> ch ) ) $=
+    sbiedh $p |- ( ph -> ( [ y / x ] ps <-> ch ) ) $=
       ( wsb wex weq wa sb1 wb wi bi1 syl6 imp3a syld wal eximd 19.9hd bi2 com23
       syl5 alimd sb2 impbid ) ABDEIZCAUICDJZCUIDEKZBLZDJAUJBDEMAULCDFAUKBCAUKBC
       NZBCOHBCPQRUAUECADFGUBSACCDTZUIGAUNUKBOZDTUIACUODFAUKCBAUKUMCBOHBCUCQUDUF
       BDEUGQSUH $.
+  $}
+
+  ${
+    sbied.1 $e |- F/ x ph $.
+    sbied.2 $e |- ( ph -> F/ x ch ) $.
+    sbied.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
+    $( Conversion of implicit substitution to explicit substitution (deduction
+       version of ~ sbie ).  (Contributed by NM, 30-Jun-1994.)  (Revised by
+       Mario Carneiro, 4-Oct-2016.) $)
+    sbied $p |- ( ph -> ( [ y / x ] ps <-> ch ) ) $=
+      ( nfri nfrd sbiedh ) ABCDEADFIACDGJHK $.
   $}
 
   ${
@@ -12086,7 +12098,7 @@ $)
     $( Conversion of implicit substitution to explicit substitution.
        (Contributed by NM, 30-Jun-1994.) $)
     sbieh $p |- ( [ y / x ] ph <-> ps ) $=
-      ( wi wsb wb id hbth wal a1i weq sbied ax-mp ) AAGZACDHBIAJZQABCDQCRKBBCLG
+      ( wi wsb wb id hbth wal a1i weq sbiedh ax-mp ) AAGZACDHBIAJZQABCDQCRKBBCLG
       QEMCDNABIGQFMOP $.
   $}
 
@@ -13653,7 +13665,7 @@ $( The theorems in this section make use of the $d statement. $)
     sbcomxyyz $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
       ( weq wal wi wo wsb wb ax-ial drsb1 sbbid bitr3d sbequ12 a4s wnf a1i nfrd
       nfs1v ax-bnd hbae df-nf albii nfsb nfr wa nfnf1 nfa1 nfan sylan9bb adantl
-      nfri ex sbied syld bicomd sylbir jaoi ax-mp ) DBEZDFZDCEZDFZBCEZVEDFZGDFZ
+      nfri ex sbiedh syld bicomd sylbir jaoi ax-mp ) DBEZDFZDCEZDFZBCEZVEDFZGDFZ
       BFZHZHABCIZDCIZADCIZBCIZJZBCDUAVBVNVIVBVLDCIVKVMVBVLVJDCVADKADBCLMVLDBCLN
       VDVNVHVDVJVKVMVCVJVKJDVJDCOZPVDAVLBCDCBUBVCAVLJDADCOPMNVHVEDQZBFZVNVPVGBV
       EDUCUDVQVMVKVQVLVKBCVPBKVQVKBVKBQVQVJDCBABCTUERSVPVEVLVKJZGBVPVEVFVRVEDUF
@@ -14114,6 +14126,16 @@ $( The theorems in this section make use of the $d statement. $)
     a7s ) DCEDFGADFZBCHZUBDFZIZAUAIZDFBFABCHZUFDFZIZUABCDADJKUEUDUHIDBUEBFZDFZU
     FUBUCUGUIUFUBIDAUABCLMUCUGIUJUBUFDUAABCADNOPQRTS $.
 
+  $( A variable not free remains so after substitution with a distinct variable
+     (closed form of ~ hbsb4 ).  (Contributed by NM, 7-Apr-2004.)  (Revised by
+     Mario Carneiro, 4-Oct-2016.)  (Proof rewritten by Jim Kingdon,
+     9-May-2018.) $)
+  nfsb4t $p |- ( A. x F/ z ph ->
+                 ( -. A. z z = y -> F/ z [ y / x ] ph ) ) $=
+    ( wnf wal cv wceq wn wsbc wa nfnf1 nfal nfnae nfan wi df-nf albii
+    hbsb4t sylbi imp nfd ex ) ADEZBFZDGCGZHDFIZABUFJZDEUEUGKUHDUEUGDU
+    DDBADLMDCDNOUEUGUHUHDFPZUEAADFPDFZBFUGUIPUDUJBADQRABCDSTUAUBUC $.
+
   ${
     dvelimf.1 $e |- ( ph -> A. x ph ) $.
     dvelimf.2 $e |- ( ps -> A. z ps ) $.
@@ -14126,18 +14148,18 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    dvelimdf.1 $e |- ( ph -> A. x ph ) $.
-    dvelimdf.2 $e |- ( ph -> A. z ph ) $.
-    dvelimdf.3 $e |- ( ph -> ( ps -> A. x ps ) ) $.
-    dvelimdf.4 $e |- ( ph -> ( ch -> A. z ch ) ) $.
+    dvelimdf.1 $e |- F/ x ph $.
+    dvelimdf.2 $e |- F/ z ph $.
+    dvelimdf.3 $e |- ( ph -> F/ x ps ) $.
+    dvelimdf.4 $e |- ( ph -> F/ z ch ) $.
     dvelimdf.5 $e |- ( ph -> ( z = y -> ( ps <-> ch ) ) ) $.
     $( Deduction form of ~ dvelimf .  This version may be useful if we want to
        avoid ~ ax-17 and use ~ ax-16 instead.  (Contributed by NM,
-       7-Apr-2004.) $)
-    dvelimdf $p |- ( ph -> ( -. A. x x = y -> ( ch -> A. x ch ) ) ) $=
-      ( weq wal wn wi wa wsb alrimih wb adantr 2alimi hbsb4t sbied albid 3imtr3d
-      3syl imp ex ) ADELDMNZCCDMZOAUIPBFEQZUKDMZCUJAUIUKULOZAADMZFMBBDMOZDMFMUI
-      UMOAUNFHGRAUOFDIUABFEDUBUFUGAUKCSUIABCFEHJKUCZTAULUJSUIAUKCDGUPUDTUEUH $.
+       7-Apr-2004.)  (Revised by Mario Carneiro, 6-Oct-2016.)  (Proof
+       shortended by Woolf Lammen, 6-May-2018.) $)
+    dvelimdf $p |- ( ph -> ( -. A. x x = y -> F/ x ch ) ) $=
+      ( weq wal wn wsb wnf wi alrimi nfsb4t syl sbied nfbidf sylibd ) ADELDMNZB
+      FEOZDPZCDPABDPZFMUDUFQAUGFHIRBFEDSTAUECDGABCFEHJKUAUBUC $.
   $}
 
   ${
