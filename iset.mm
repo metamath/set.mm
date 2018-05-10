@@ -1,4 +1,4 @@
-$( iset.mm - Version of 6-May-2018
+$( iset.mm - Version of 9-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -13377,9 +13377,7 @@ $( The theorems in this section make use of the $d statement. $)
     $d x z $.  $d y z $.
     hbsbv.1 $e |- ( ph -> A. z ph ) $.
     $( This is a version of ~ hbsb with an extra distinct variable constraint,
-       on ` z ` and ` x ` .  It exists because we don't yet have an
-       intuitionistic proof for a version of this theorem without the extra
-       constraint.  (Contributed by Jim Kingdon, 25-Dec-2017.) $)
+       on ` z ` and ` x ` .  (Contributed by Jim Kingdon, 25-Dec-2017.) $)
     hbsbv $p |- ( [ y / x ] ph -> A. z [ y / x ] ph ) $=
       ( cv wsbc wceq wi wa wex df-sb biimpi ax-17 hbim hban
       wal eximi 19.12 syl biimpri alimi 3syl ) ABCFZGZBFUDHZAIZUFAJZBKZ
@@ -13398,6 +13396,18 @@ $( The theorems in this section make use of the $d statement. $)
       BCFZUNDGHDGZBGZIZIABCJZDTZBCDKULUSUQULADCJZDTUSADCLUTURDBDADBCMNOUMUSUPUR
       DCDPUPUNDTZBGZUSVAUOBUNDQRURUNAUAZBUBVBDABCUCVBVCDBVABUDVBUNADVABUEADTVBE
       UFUGUHUIUJSSUK $.
+  $}
+
+  ${
+    $d x y $.  $d y z $.
+    $( Closed form of ~ nfsbxy .  (Contributed by Jim Kingdon, 9-May-2018.) $)
+    nfsbxyt $p |- ( A. x F/ z ph -> F/ z [ y / x ] ph ) $=
+      ( weq wal wi wo wnf wsb ax-bnd nfs1v drsb1 drnf2 mpbii a1d wa nfa1 jaoi
+      sp a16nf df-nf albii wex sb5 nfan adantr adantl nfand nfexd nfxfrd sylbir
+      ex ax-mp ) DBEDFZDCEDFZBCEZUQDFGDFZBFZHZHADIZBFZABCJZDIZGZBCDKUOVEUTUOVDV
+      BUOADCJZDIVDADCLVFVCDBDADBCMNOPUPVEUSUPVDVBVCDCDUAPUSUQDIZBFZVEVGURBUQDUB
+      UCVHVBVDVCUQAQZBUDVHVBQZDABCUEVJVIDBVHVBBVGBRVABRUFVJUQADVHVGVBVGBTUGVBVA
+      VHVABTUHUIUJUKUMULSSUN $.
   $}
 
   ${
@@ -13675,6 +13685,25 @@ $( The theorems in this section make use of the $d statement. $)
   sbcom $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
     ( wsb sbco3 sbcocom 3bitr3i ) ABDEDCEADBEBCEABCEDCEADCEBCEABDCFABDCGADBCGH
     $.
+
+  ${
+    $d w y z $.  $d w ph $.  $d w x $.
+    $( Closed form of ~ nfsb .  (Contributed by Jim Kingdon, 9-May-2018.) $)
+    nfsbt $p |- ( A. x F/ z ph -> F/ z [ y / x ] ph ) $=
+      ( vw wnf wal wsbc ax-17 nfsbxyt alimi syl nfv sbco2 nfbii sylib
+      cv ) ADFBGZREGZABCQZHZDFZREISABEQHZETHZDFZUBSUCDFZEGUERUFEABEDJKU
+      CECDJLUDUADABCEAEMNOPL $.
+  $}
+
+  ${
+    $d y z $.
+    nfsbd.1 $e |- F/ x ph $.
+    nfsbd.2 $e |- ( ph -> F/ z ps ) $.
+    $( Deduction version of ~ nfsb .  (Contributed by NM, 15-Feb-2013.) $)
+    nfsbd $p |- ( ph -> F/ z [ y / x ] ps ) $=
+      ( wal wnf cv wsbc nfri alimi nfsbt 3syl ) AACHBEIZCHBCDJKEIACFLAP
+      CGMBCDENO $.
+  $}
 
   ${
     $d w y z $.  $d w x $.
