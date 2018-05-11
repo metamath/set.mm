@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-May-2018
+$( iset.mm - Version of 11-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -10782,6 +10782,11 @@ $)
     nfnf $p |- F/ x F/ y ph $=
       ( wnf wal wi df-nf nfal nfim nfxfr ) ACEAACFZGZCFBACHMBCALBDABCDIJIK $.
   $}
+
+  $( Closed form of ~ nfal .  (Contributed by Jim Kingdon, 11-May-2018.) $)
+  nfalt $p |- ( A. y F/ x ph -> F/ x A. y ph ) $=
+    ( wal wi wnf alim alcom syl6ib alimi df-nf albii bitri 3imtr4i ) AABDZEZCDZ
+    BDZACDZSBDZEZBDABFZCDZSBFQUABQSOCDTAOCGACBHIJUCPBDZCDRUBUDCABKLPCBHMSBKN $.
 
   $( Closed form of Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
      27-May-1997.) $)
