@@ -14209,6 +14209,25 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
+    $d z ps $.  $d x z $.
+    dvelimor.1 $e |- F/ x ph $.
+    dvelimor.2 $e |- ( z = y -> ( ph <-> ps ) ) $.
+    $( Disjunctive distinct variable constraint elimination.  A user of this
+       theorem starts with a formula ` ph ` (containing ` z ` ) and a distinct
+       variable constraint between ` x ` and ` z ` .  The theorem makes it
+       possible to replace the distinct variable constraint with the disjunct
+       ` A. x x = y ` ( ` ps ` is just a version of ` ph ` with ` y `
+       substituted for ` z ` ).  (Contributed by Jim Kingdon, 11-May-2018.) $)
+    dvelimor $p |- ( A. x x = y \/ F/ x ps ) $=
+      ( weq wal wi wnf wo ax-bnd orcom orbi2i mpbi orass mpbir nfae ax-mp a16nf
+      alrimi df-nf a1i nfimd sylbir alimi orim1i nfalt ax-17 equsal nfbii sylib
+      id jaoi orim2i ) CDHCIZEDHZAJZCKZEIZLZUQBCKZLVAUQLZVBCEHCIZURURCIJCIZEIZL
+      ZUQLZVDVIVEVGUQLZLZVEUQVGLZLVKEDCMVLVJVEUQVGNOPVEVGUQQRVHVAUQVEVAVGVEUTEC
+      EESUSCECUAUBVFUTEVFURCKZUTURCUCVMURACVMUNACKVMFUDUEUFUGUOUHTVAUQNPVAVCUQV
+      AUSEIZCKVCUSCEUIVNBCABEDBEUJGUKULUMUPT $.
+  $}
+
+  ${
     $d w z x $.  $d w y $.
     $( Quantifier introduction when one pair of variables is distinct.
        (Contributed by NM, 2-Jan-2002.)  (Proof rewritten by Jim Kingdon,
