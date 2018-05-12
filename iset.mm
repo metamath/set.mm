@@ -14265,6 +14265,15 @@ $( The theorems in this section make use of the $d statement. $)
       TUKUIBACDTUAUB $.
   $}
 
+  ${
+    $d w x $.  $d w y $.  $d w z $.  $d ph w $.
+    nfsb4or.1 $e |- F/ z ph $.
+    $( A variable not free remains so after substitution with a distinct
+       variable.  (Contributed by Jim Kingdon, 11-May-2018.) $)
+    nfsb4or $p |- ( A. z z = y \/ F/ z [ y / x ] ph ) $=
+      ( vw wsb nfsb sbequ dvelimor ) ABFGABCGDCFABFDEHAFCBIJ $.
+  $}
+
 $(
 ###############################################################################
                                  SET THEORY
