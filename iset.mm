@@ -1,4 +1,4 @@
-$( iset.mm - Version of 6-May-2018
+$( iset.mm - Version of 11-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -53,6 +53,8 @@ processed manually.
 
 DONE:
 Date      Old       New         Notes
+10-May-18 sbf       sbh
+9-May-18  sbied     sbiedh
 6-May-18  alrimi    alrimih
 6-May-18  cbvex     cbvexh
 6-May-18  cbval     cbvalh
@@ -10781,6 +10783,11 @@ $)
       ( wnf wal wi df-nf nfal nfim nfxfr ) ACEAACFZGZCFBACHMBCALBDABCDIJIK $.
   $}
 
+  $( Closed form of ~ nfal .  (Contributed by Jim Kingdon, 11-May-2018.) $)
+  nfalt $p |- ( A. y F/ x ph -> F/ x A. y ph ) $=
+    ( wal wi wnf alim alcom syl6ib alimi df-nf albii bitri 3imtr4i ) AABDZEZCDZ
+    BDZACDZSBDZEZBDABFZCDZSBFQUABQSOCDTAOCGACBHIJUCPBDZCDRUBUDCABKLPCBHMSBKN $.
+
   $( Closed form of Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
      27-May-1997.) $)
   19.21ht $p |- ( A. x ( ph -> A. x ph ) ->
@@ -11552,6 +11559,15 @@ $)
       ( weq wal wn hbnae syl ) BCFBGHZKDGABCDIEJ $.
   $}
 
+  ${
+    naecoms.1 $e |- ( -. A. x x = y -> ph ) $.
+    $( A commutation rule for distinct variable specifiers.  (Contributed by
+       NM, 2-Jan-2002.) $)
+    naecoms $p |- ( -. A. y y = x -> ph ) $=
+      ( cv wceq wal wn ax-10 con3i syl ) CEZBEZFCGZHMLFBGZHAO
+      NBCIJDK $.
+  $}
+
   $( Lemma used in proofs of substitution properties.  (Contributed by NM,
      5-Aug-1993.)  (Proof shortened by Mario Carneiro, 20-May-2014.) $)
   equs4 $p |- ( A. x ( x = y -> ph ) -> E. x ( x = y /\ ph ) ) $=
@@ -11997,18 +12013,27 @@ $)
     ( wal weq wi wsb ax-1 alimi sb2 syl ) ABDBCEZAFZBDABCGAMBALHIABCJK $.
 
   ${
-    sbf.1 $e |- ( ph -> A. x ph ) $.
+    sbh.1 $e |- ( ph -> A. x ph ) $.
     $( Substitution for a variable not free in a wff does not affect it.
        (Contributed by NM, 5-Aug-1993.)  (Revised by NM, 17-Oct-2004.) $)
-    sbf $p |- ( [ y / x ] ph <-> ph ) $=
+    sbh $p |- ( [ y / x ] ph <-> ph ) $=
       ( wsb weq wex wa sb1 19.41 sylib simprd wal stdpc4 syl impbii ) ABCEZAQBC
       FZBGZAQRAHBGSAHABCIRABDJKLAABMQDABCNOP $.
+  $}
+
+  ${
+    sbf.1 $e |- F/ x ph $.
+    $( Substitution for a variable not free in a wff does not affect it.
+       (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
+       4-Oct-2016.) $)
+    sbf $p |- ( [ y / x ] ph <-> ph ) $=
+      ( nfri sbh ) ABCABDEF $.
   $}
 
   $( Substitution has no effect on a bound variable.  (Contributed by NM,
      1-Jul-2005.) $)
   sbf2 $p |- ( [ y / x ] A. x ph <-> A. x ph ) $=
-    ( wal hba1 sbf ) ABDBCABEF $.
+    ( wal nfa1 sbf ) ABDBCABEF $.
 
   ${
     sb6x.1 $e |- ( ph -> A. x ph ) $.
@@ -12016,7 +12041,7 @@ $)
        (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
        12-Aug-2011.) $)
     sb6x $p |- ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) $=
-      ( cv wsbc wceq wi wal sbf biidd equsal bitr4i ) ABCEZFABENGZAHBIABCDJAABC
+      ( cv wsbc wceq wi wal sbh biidd equsal bitr4i ) ABCEZFABENGZAHBIABCDJAABC
       DOAKLM $.
   $}
 
@@ -12025,7 +12050,7 @@ $)
     $( If ` x ` is not free in ` ph ` , it is not free in ` [ y / x ] ph ` .
        (Contributed by Mario Carneiro, 11-Aug-2016.) $)
     nfs1f $p |- F/ x [ y / x ] ph $=
-      ( wsb nfri sbf nfxfr ) ABCEABABCABDFGDH $.
+      ( wsb nfri sbh nfxfr ) ABCEABABCABDFGDH $.
   $}
 
   ${
@@ -12034,18 +12059,18 @@ $)
        (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
        25-May-2011.) $)
     hbs1f $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
-      ( wsb sbf hbxfrbi ) ABCEABABCDFDG $.
+      ( wsb sbh hbxfrbi ) ABCEABABCDFDG $.
   $}
 
   $( Substitution does not change an identical variable specifier.
      (Contributed by NM, 5-Aug-1993.)  (Revised by NM, 21-Dec-2004.) $)
   sbequ5 $p |- ( [ w / z ] A. x x = y <-> A. x x = y ) $=
-    ( weq wal hbae sbf ) ABEAFCDABCGH $.
+    ( weq wal nfae sbf ) ABEAFCDABCGH $.
 
   $( Substitution does not change a distinctor.  (Contributed by NM,
      5-Aug-1993.)  (Revised by NM, 14-May-2005.) $)
   sbequ6 $p |- ( [ w / z ] -. A. x x = y <-> -. A. x x = y ) $=
-    ( weq wal wn hbnae sbf ) ABEAFGCDABCHI $.
+    ( weq wal wn nfnae sbf ) ABEAFGCDABCHI $.
 
   ${
     sbt.1 $e |- ph $.
@@ -12053,7 +12078,7 @@ $)
        for versions using implicit substitition.)  (Contributed by NM,
        21-Jan-2004.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
     sbt $p |- [ y / x ] ph $=
-      ( wsb hbth sbf mpbir ) ABCEADABCABDFGH $.
+      ( wsb nfth sbf mpbir ) ABCEADABCABDFGH $.
   $}
 
   $( Substitution applied to an atomic wff.  (Contributed by NM,
@@ -12067,17 +12092,28 @@ $)
     ( weq wi wsb sb2 equcomi mpg ) ABCBACZDIABEAIABFABGH $.
 
   ${
-    sbied.1 $e |- ( ph -> A. x ph ) $.
-    sbied.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
-    sbied.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
+    sbiedh.1 $e |- ( ph -> A. x ph ) $.
+    sbiedh.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
+    sbiedh.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
     $( Conversion of implicit substitution to explicit substitution (deduction
        version of ~ sbieh ).  (Contributed by NM, 30-Jun-1994.)  (Proof
        shortened by Andrew Salmon, 25-May-2011.) $)
-    sbied $p |- ( ph -> ( [ y / x ] ps <-> ch ) ) $=
+    sbiedh $p |- ( ph -> ( [ y / x ] ps <-> ch ) ) $=
       ( wsb wex weq wa sb1 wb wi bi1 syl6 imp3a syld wal eximd 19.9hd bi2 com23
       syl5 alimd sb2 impbid ) ABDEIZCAUICDJZCUIDEKZBLZDJAUJBDEMAULCDFAUKBCAUKBC
       NZBCOHBCPQRUAUECADFGUBSACCDTZUIGAUNUKBOZDTUIACUODFAUKCBAUKUMCBOHBCUCQUDUF
       BDEUGQSUH $.
+  $}
+
+  ${
+    sbied.1 $e |- F/ x ph $.
+    sbied.2 $e |- ( ph -> F/ x ch ) $.
+    sbied.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
+    $( Conversion of implicit substitution to explicit substitution (deduction
+       version of ~ sbie ).  (Contributed by NM, 30-Jun-1994.)  (Revised by
+       Mario Carneiro, 4-Oct-2016.) $)
+    sbied $p |- ( ph -> ( [ y / x ] ps <-> ch ) ) $=
+      ( nfri nfrd sbiedh ) ABCDEADFIACDGJHK $.
   $}
 
   ${
@@ -12086,7 +12122,7 @@ $)
     $( Conversion of implicit substitution to explicit substitution.
        (Contributed by NM, 30-Jun-1994.) $)
     sbieh $p |- ( [ y / x ] ph <-> ps ) $=
-      ( wi wsb wb id hbth wal a1i weq sbied ax-mp ) AAGZACDHBIAJZQABCDQCRKBBCLG
+      ( wi wsb wb id hbth wal a1i weq sbiedh ax-mp ) AAGZACDHBIAJZQABCDQCRKBBCLG
       QEMCDNABIGQFMOP $.
   $}
 
@@ -12666,7 +12702,7 @@ $)
     sbid2.1 $e |- ( ph -> A. x ph ) $.
     $( An identity law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
     sbid2 $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
-      ( cv wsbc sbcof2 sbf bitri ) ACBEFBCEZFABJFAABCDGABCDHI $.
+      ( cv wsbc sbcof2 sbh bitri ) ACBEFBCEZFABJFAABCDGABCDHI $.
   $}
 
   $( An idempotent law for substitution.  (Contributed by NM, 30-Jun-1994.)
@@ -13013,7 +13049,7 @@ $)
     $( Version of ~ sblim where ` x ` and ` y ` are distinct.  (Contributed by
        Jim Kingdon, 19-Jan-2018.) $)
     sblimv $p |- ( [ y / x ] ( ph -> ps ) <-> ( [ y / x ] ph -> ps ) ) $=
-      ( wi wsb sbimv sbf imbi2i bitri ) ABFCDGACDGZBCDGZFLBFABCDHMBLBCDEIJK $.
+      ( wi wsb sbimv sbh imbi2i bitri ) ABFCDGACDGZBCDGZFLBFABCDHMBLBCDEIJK $.
   $}
 
   ${
@@ -13377,9 +13413,7 @@ $( The theorems in this section make use of the $d statement. $)
     $d x z $.  $d y z $.
     hbsbv.1 $e |- ( ph -> A. z ph ) $.
     $( This is a version of ~ hbsb with an extra distinct variable constraint,
-       on ` z ` and ` x ` .  It exists because we don't yet have an
-       intuitionistic proof for a version of this theorem without the extra
-       constraint.  (Contributed by Jim Kingdon, 25-Dec-2017.) $)
+       on ` z ` and ` x ` .  (Contributed by Jim Kingdon, 25-Dec-2017.) $)
     hbsbv $p |- ( [ y / x ] ph -> A. z [ y / x ] ph ) $=
       ( cv wsbc wceq wi wa wex df-sb biimpi ax-17 hbim hban
       wal eximi 19.12 syl biimpri alimi 3syl ) ABCFZGZBFUDHZAIZUFAJZBKZ
@@ -13398,6 +13432,18 @@ $( The theorems in this section make use of the $d statement. $)
       BCFZUNDGHDGZBGZIZIABCJZDTZBCDKULUSUQULADCJZDTUSADCLUTURDBDADBCMNOUMUSUPUR
       DCDPUPUNDTZBGZUSVAUOBUNDQRURUNAUAZBUBVBDABCUCVBVCDBVABUDVBUNADVABUEADTVBE
       UFUGUHUIUJSSUK $.
+  $}
+
+  ${
+    $d x y $.  $d y z $.
+    $( Closed form of ~ nfsbxy .  (Contributed by Jim Kingdon, 9-May-2018.) $)
+    nfsbxyt $p |- ( A. x F/ z ph -> F/ z [ y / x ] ph ) $=
+      ( weq wal wi wo wnf wsb ax-bnd nfs1v drsb1 drnf2 mpbii a1d wa nfa1 jaoi
+      sp a16nf df-nf albii wex sb5 nfan adantr adantl nfand nfexd nfxfrd sylbir
+      ex ax-mp ) DBEDFZDCEDFZBCEZUQDFGDFZBFZHZHADIZBFZABCJZDIZGZBCDKUOVEUTUOVDV
+      BUOADCJZDIVDADCLVFVCDBDADBCMNOPUPVEUSUPVDVBVCDCDUAPUSUQDIZBFZVEVGURBUQDUB
+      UCVHVBVDVCUQAQZBUDVHVBQZDABCUEVJVIDBVHVBBVGBRVABRUFVJUQADVHVGVBVGBTUGVBVA
+      VHVABTUHUIUJUKUMULSSUN $.
   $}
 
   ${
@@ -13503,7 +13549,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( Substitution with a variable not free in antecedent affects only the
        consequent.  (Contributed by NM, 5-Aug-1993.) $)
     sbrim $p |- ( [ y / x ] ( ph -> ps ) <-> ( ph -> [ y / x ] ps ) ) $=
-      ( wi wsb sbim sbf imbi1i bitri ) ABFCDGACDGZBCDGZFAMFABCDHLAMACDEIJK $.
+      ( wi wsb sbim sbh imbi1i bitri ) ABFCDGACDGZBCDGZFAMFABCDHLAMACDEIJK $.
   $}
 
   ${
@@ -13511,7 +13557,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( Substitution with a variable not free in consequent affects only the
        antecedent.  (Contributed by NM, 14-Nov-2013.) $)
     sblim $p |- ( [ y / x ] ( ph -> ps ) <-> ( [ y / x ] ph -> ps ) ) $=
-      ( wi wsb sbim sbf imbi2i bitri ) ABFCDGACDGZBCDGZFLBFABCDHMBLBCDEIJK $.
+      ( wi wsb sbim sbh imbi2i bitri ) ABFCDGACDGZBCDGZFLBFABCDHMBLBCDEIJK $.
   $}
 
   $( Conjunction inside and outside of a substitution are equivalent.
@@ -13551,7 +13597,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( Introduce right biconditional inside of a substitution.  (Contributed by
        NM, 18-Aug-1993.) $)
     sbrbif $p |- ( [ y / x ] ( ph <-> ch ) <-> ( ps <-> ch ) ) $=
-      ( wb wsb sbrbis sbf bibi2i bitri ) ACHDEIBCDEIZHBCHABCDEGJNCBCDEFKLM $.
+      ( wb wsb sbrbis sbh bibi2i bitri ) ACHDEIBCDEIZHBCHABCDEGJNCBCDEFKLM $.
   $}
 
   ${
@@ -13643,7 +13689,7 @@ $( The theorems in this section make use of the $d statement. $)
     sbcomxyyz $p |- ( [ y / z ] [ y / x ] ph <-> [ y / x ] [ y / z ] ph ) $=
       ( weq wal wi wo wsb wb ax-ial drsb1 sbbid bitr3d sbequ12 a4s wnf a1i nfrd
       nfs1v ax-bnd hbae df-nf albii nfsb nfr wa nfnf1 nfa1 nfan sylan9bb adantl
-      nfri ex sbied syld bicomd sylbir jaoi ax-mp ) DBEZDFZDCEZDFZBCEZVEDFZGDFZ
+      nfri ex sbiedh syld bicomd sylbir jaoi ax-mp ) DBEZDFZDCEZDFZBCEZVEDFZGDFZ
       BFZHZHABCIZDCIZADCIZBCIZJZBCDUAVBVNVIVBVLDCIVKVMVBVLVJDCVADKADBCLMVLDBCLN
       VDVNVHVDVJVKVMVCVJVKJDVJDCOZPVDAVLBCDCBUBVCAVLJDADCOPMNVHVEDQZBFZVNVPVGBV
       EDUCUDVQVMVKVQVLVKBCVPBKVQVKBVKBQVQVJDCBABCTUERSVPVEVLVKJZGBVPVEVFVRVEDUF
@@ -13677,12 +13723,31 @@ $( The theorems in this section make use of the $d statement. $)
     $.
 
   ${
+    $d w y z $.  $d w ph $.  $d w x $.
+    $( Closed form of ~ nfsb .  (Contributed by Jim Kingdon, 9-May-2018.) $)
+    nfsbt $p |- ( A. x F/ z ph -> F/ z [ y / x ] ph ) $=
+      ( vw wnf wal wsbc ax-17 nfsbxyt alimi syl nfv sbco2 nfbii sylib
+      cv ) ADFBGZREGZABCQZHZDFZREISABEQHZETHZDFZUBSUCDFZEGUERUFEABEDJKU
+      CECDJLUDUADABCEAEMNOPL $.
+  $}
+
+  ${
+    $d y z $.
+    nfsbd.1 $e |- F/ x ph $.
+    nfsbd.2 $e |- ( ph -> F/ z ps ) $.
+    $( Deduction version of ~ nfsb .  (Contributed by NM, 15-Feb-2013.) $)
+    nfsbd $p |- ( ph -> F/ z [ y / x ] ps ) $=
+      ( wal wnf cv wsbc nfri alimi nfsbt 3syl ) AACHBEIZCHBCDJKEIACFLAP
+      CGMBCDENO $.
+  $}
+
+  ${
     $d w y z $.  $d w x $.
     $( Substitution applied to an atomic membership wff.  (Contributed by NM,
        7-Nov-2006.)  (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
     elsb3 $p |- ( [ x / y ] y e. z <-> x e. z ) $=
       ( vw wel wsb ax-17 elequ1 sbieh sbbii sbco2h bitr3i wb weq sbimi ax-mp sbbi
-      equsb1 mpbi sbf 3bitri ) BCEZBAFZDCEZDAFZACEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
+      equsb1 mpbi sbh 3bitri ) BCEZBAFZDCEZDAFZACEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
       BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
       DAUFDGTUA $.
   $}
@@ -13694,7 +13759,7 @@ $( The theorems in this section make use of the $d statement. $)
        14-Jun-2011.) $)
     elsb4 $p |- ( [ x / y ] z e. y <-> z e. x ) $=
       ( vw wel wsb ax-17 elequ2 sbieh sbbii sbco2h bitr3i wb weq sbimi ax-mp sbbi
-      equsb1 mpbi sbf 3bitri ) CBEZBAFZCDEZDAFZCAEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
+      equsb1 mpbi sbh 3bitri ) CBEZBAFZCDEZDAFZCAEZDAFZUFUCUDDBFZBAFUEUHUBBAUDU
       BDBUBDGDBCHIJUDDABUDBGKLUDUFMZDAFZUEUGMDANZDAFUJDARUKUIDADACHOPUDUFDAQSUF
       DAUFDGTUA $.
   $}
@@ -14085,6 +14150,16 @@ $( The theorems in this section make use of the $d statement. $)
     a7s ) DCEDFGADFZBCHZUBDFZIZAUAIZDFBFABCHZUFDFZIZUABCDADJKUEUDUHIDBUEBFZDFZU
     FUBUCUGUIUFUBIDAUABCLMUCUGIUJUBUFDUAABCADNOPQRTS $.
 
+  $( A variable not free remains so after substitution with a distinct variable
+     (closed form of ~ hbsb4 ).  (Contributed by NM, 7-Apr-2004.)  (Revised by
+     Mario Carneiro, 4-Oct-2016.)  (Proof rewritten by Jim Kingdon,
+     9-May-2018.) $)
+  nfsb4t $p |- ( A. x F/ z ph ->
+                 ( -. A. z z = y -> F/ z [ y / x ] ph ) ) $=
+    ( wnf wal cv wceq wn wsbc wa nfnf1 nfal nfnae nfan wi df-nf albii
+    hbsb4t sylbi imp nfd ex ) ADEZBFZDGCGZHDFIZABUFJZDEUEUGKUHDUEUGDU
+    DDBADLMDCDNOUEUGUHUHDFPZUEAADFPDFZBFUGUIPUDUJBADQRABCDSTUAUBUC $.
+
   ${
     dvelimf.1 $e |- ( ph -> A. x ph ) $.
     dvelimf.2 $e |- ( ps -> A. z ps ) $.
@@ -14097,18 +14172,18 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    dvelimdf.1 $e |- ( ph -> A. x ph ) $.
-    dvelimdf.2 $e |- ( ph -> A. z ph ) $.
-    dvelimdf.3 $e |- ( ph -> ( ps -> A. x ps ) ) $.
-    dvelimdf.4 $e |- ( ph -> ( ch -> A. z ch ) ) $.
+    dvelimdf.1 $e |- F/ x ph $.
+    dvelimdf.2 $e |- F/ z ph $.
+    dvelimdf.3 $e |- ( ph -> F/ x ps ) $.
+    dvelimdf.4 $e |- ( ph -> F/ z ch ) $.
     dvelimdf.5 $e |- ( ph -> ( z = y -> ( ps <-> ch ) ) ) $.
     $( Deduction form of ~ dvelimf .  This version may be useful if we want to
        avoid ~ ax-17 and use ~ ax-16 instead.  (Contributed by NM,
-       7-Apr-2004.) $)
-    dvelimdf $p |- ( ph -> ( -. A. x x = y -> ( ch -> A. x ch ) ) ) $=
-      ( weq wal wn wi wa wsb alrimih wb adantr 2alimi hbsb4t sbied albid 3imtr3d
-      3syl imp ex ) ADELDMNZCCDMZOAUIPBFEQZUKDMZCUJAUIUKULOZAADMZFMBBDMOZDMFMUI
-      UMOAUNFHGRAUOFDIUABFEDUBUFUGAUKCSUIABCFEHJKUCZTAULUJSUIAUKCDGUPUDTUEUH $.
+       7-Apr-2004.)  (Revised by Mario Carneiro, 6-Oct-2016.)  (Proof
+       shortened by Wolf Lammen, 11-May-2018.) $)
+    dvelimdf $p |- ( ph -> ( -. A. x x = y -> F/ x ch ) ) $=
+      ( weq wal wn wsb wnf wi alrimi nfsb4t syl sbied nfbidf sylibd ) ADELDMNZB
+      FEOZDPZCDPABDPZFMUDUFQAUGFHIRBFEDSTAUECDGABCFEHJKUAUBUC $.
   $}
 
   ${
@@ -14131,6 +14206,25 @@ $( The theorems in this section make use of the $d statement. $)
        (that avoids ~ ax-10 ).  (Contributed by NM, 23-Nov-1994.) $)
     dvelim $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
       ( ax-17 dvelimf ) ABCDEFBEHGI $.
+  $}
+
+  ${
+    $d z ps $.  $d x z $.
+    dvelimor.1 $e |- F/ x ph $.
+    dvelimor.2 $e |- ( z = y -> ( ph <-> ps ) ) $.
+    $( Disjunctive distinct variable constraint elimination.  A user of this
+       theorem starts with a formula ` ph ` (containing ` z ` ) and a distinct
+       variable constraint between ` x ` and ` z ` .  The theorem makes it
+       possible to replace the distinct variable constraint with the disjunct
+       ` A. x x = y ` ( ` ps ` is just a version of ` ph ` with ` y `
+       substituted for ` z ` ).  (Contributed by Jim Kingdon, 11-May-2018.) $)
+    dvelimor $p |- ( A. x x = y \/ F/ x ps ) $=
+      ( weq wal wi wnf wo ax-bnd orcom orbi2i mpbi orass mpbir nfae ax-mp a16nf
+      alrimi df-nf a1i nfimd sylbir alimi orim1i nfalt ax-17 equsal nfbii sylib
+      id jaoi orim2i ) CDHCIZEDHZAJZCKZEIZLZUQBCKZLVAUQLZVBCEHCIZURURCIJCIZEIZL
+      ZUQLZVDVIVEVGUQLZLZVEUQVGLZLVKEDCMVLVJVEUQVGNOPVEVGUQQRVHVAUQVEVAVGVEUTEC
+      EESUSCECUAUBVFUTEVFURCKZUTURCUCVMURACVMUNACKVMFUDUEUFUGUOUHTVAUQNPVAVCUQV
+      AUSEIZCKVCUSCEUIVNBCABEDBEUJGUKULUMUPT $.
   $}
 
   ${
@@ -14169,6 +14263,15 @@ $( The theorems in this section make use of the $d statement. $)
       wsb syl sb6 albii 3bitr4g ) BCEBFGZCDEZABFZHZCFZUDAHZCFZBFZUECDRACDRZBFUJ
       UHBFZCFUCUGUHCBIUCULUFCBCCJUCUDUDBFHZBFZULUFKUNBCBUCUMBBCDLMNUDABOSPQUECD
       TUKUIBACDTUAUB $.
+  $}
+
+  ${
+    $d w x $.  $d w y $.  $d w z $.  $d ph w $.
+    nfsb4or.1 $e |- F/ z ph $.
+    $( A variable not free remains so after substitution with a distinct
+       variable.  (Contributed by Jim Kingdon, 11-May-2018.) $)
+    nfsb4or $p |- ( A. z z = y \/ F/ z [ y / x ] ph ) $=
+      ( vw wsb nfsb sbequ dvelimor ) ABFGABCGDCFABFDEHAFCBIJ $.
   $}
 
 $(
