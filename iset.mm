@@ -16211,24 +16211,13 @@ $)
 
   ${
     $d x z $.  $d y z $.  $d z ph $.  $d z ps $.
-    nfabd2.1 $e |- F/ y ph $.
-    nfabd2.2 $e |- ( ( ph /\ -. A. x x = y ) -> F/ x ps ) $.
-    $( Bound-variable hypothesis builder for a class abstraction.  (Contributed
-       by Mario Carneiro, 8-Oct-2016.) $)
-    nfabd2 $p |- ( ph -> F/_ x { y | ps } ) $=
-      ( vz weq wal cab wnfc wn wa nfv cv wcel wsb df-clab nfnae nfan nfsbd nfcd
-      nfxfrd ex nfab1 eqidd drnfc1 mpbiri pm2.61d2 ) ACDHCIZCBDJZKZAUJLZULAUMMZ
-      CGUKUNGNGOUKPBDGQUNCBGDRUNBDGCAUMDECDDSTFUAUCUBUDUJULDUKKBDUECDUKUKUJUKUF
-      UGUHUI $.
-  $}
-
-  ${
     nfabd.1 $e |- F/ y ph $.
     nfabd.2 $e |- ( ph -> F/ x ps ) $.
     $( Bound-variable hypothesis builder for a class abstraction.  (Contributed
        by Mario Carneiro, 8-Oct-2016.) $)
     nfabd $p |- ( ph -> F/_ x { y | ps } ) $=
-      ( wnf weq wal wn adantr nfabd2 ) ABCDEABCGCDHCIJFKL $.
+      ( vz cab nfv cv wcel wsbc df-clab nfsbd nfxfrd nfcd ) ACGBDHZAG
+      IGJZQKBDRLACBGDMABDGCEFNOP $.
   $}
 
   ${
