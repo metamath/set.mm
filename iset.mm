@@ -14180,7 +14180,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( Deduction form of ~ dvelimf .  This version may be useful if we want to
        avoid ~ ax-17 and use ~ ax-16 instead.  (Contributed by NM,
        7-Apr-2004.)  (Revised by Mario Carneiro, 6-Oct-2016.)  (Proof
-       shortended by Woolf Lammen, 6-May-2018.) $)
+       shortened by Wolf Lammen, 11-May-2018.) $)
     dvelimdf $p |- ( ph -> ( -. A. x x = y -> F/ x ch ) ) $=
       ( weq wal wn wsb wnf wi alrimi nfsb4t syl sbied nfbidf sylibd ) ADELDMNZB
       FEOZDPZCDPABDPZFMUDUFQAUGFHIRBFEDSTAUECDGABCFEHJKUAUBUC $.
