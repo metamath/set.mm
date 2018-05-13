@@ -6512,6 +6512,13 @@ $)
       ( mpbir2and ) ABCDFGEH $.
   $}
 
+  $( Theorem *5.62 of [WhiteheadRussell] p. 125, for a decidable proposition.
+     (Contributed by Jim Kingdon, 12-May-2018.) $)
+  pm5.62dc $p |- ( DECID ps ->
+      ( ( ( ph /\ ps ) \/ -. ps ) <-> ( ph \/ -. ps ) ) ) $=
+    ( wdc wn wo wa df-dc ordir simplbi simplbi2 com12 impbid2 sylbi
+    wb ) BCBBDZEZABFOEZAOEZNBGPQRQRPABOHZIRPQQRPSJKLM $.
+
   ${
     bianfi.1 $e |- -. ph $.
     $( A wff conjoined with falsehood is false.  (Contributed by NM,
@@ -17312,11 +17319,6 @@ $)
      3-Jan-2005.) $)
   pm2.13 $p |- ( ph \/ -. -. -. ph ) $=
     ( wn notnot1 orri ) AABZBBECD $.
-
-  $( Theorem *5.62 of [WhiteheadRussell] p. 125.  (Contributed by Roy F.
-     Longton, 21-Jun-2005.) $)
-  pm5.62 $p |- ( ( ( ph /\ ps ) \/ -. ps ) <-> ( ph \/ -. ps ) ) $=
-    ( wa wn wo exmid ordir mpbiran2 ) ABCBDZEAIEBIEBFABIGH $.
 
   $( Theorem *5.63 of [WhiteheadRussell] p. 125.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 25-Dec-2012.) $)
