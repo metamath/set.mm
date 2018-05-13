@@ -1,4 +1,4 @@
-$( iset.mm - Version of 11-May-2018
+$( iset.mm - Version of 12-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6538,6 +6538,14 @@ $)
   pm4.82 $p |- ( ( ( ph -> ps ) /\ ( ph -> -. ps ) ) <-> -. ph ) $=
     ( wi wn wa pm2.65 imp pm2.21 jca impbii ) ABCZABDZCZEADZKMNABFGNKMABHALHIJ
     $.
+
+  $( Theorem *4.83 of [WhiteheadRussell] p. 122, for decidable propositions.
+     As with other case elimination theorems, like ~ pm2.61dc , it only holds
+     for decidable propositions.  (Contributed by Jim Kingdon, 12-May-2018.) $)
+  pm4.83dc $p |- ( DECID ph ->
+      ( ( ( ph -> ps ) /\ ( -. ph -> ps ) ) <-> ps ) ) $=
+    ( wdc wi wn wa wo df-dc pm3.44 com12 sylbi ax-1 jca impbid1 ) ACZABDZAEZBDZ
+    FZBOAQGZSBDAHSTBBAQIJKBPRBALBQLMN $.
 
   $( A transitive law of equivalence.  Compare Theorem *4.22 of
      [WhiteheadRussell] p. 117.  (Contributed by NM, 18-Aug-1993.) $)
@@ -17304,13 +17312,6 @@ $)
      3-Jan-2005.) $)
   pm2.13 $p |- ( ph \/ -. -. -. ph ) $=
     ( wn notnot1 orri ) AABZBBECD $.
-
-  $( Theorem *4.83 of [WhiteheadRussell] p. 122.  As with other case
-     elimination theorems it does not hold intuitionistically (unless the
-     proposition is known to be decidable, as in ~ pm2.61dc ).  (Contributed by
-     NM, 3-Jan-2005.) $)
-  pm4.83 $p |- ( ( ( ph -> ps ) /\ ( -. ph -> ps ) ) <-> ps ) $=
-    ( wn wo wi wa exmid a1bi jaob bitr2i ) BAACZDZBEABEKBEFLBAGHABKIJ $.
 
   $( Theorem *5.62 of [WhiteheadRussell] p. 125.  (Contributed by Roy F.
      Longton, 21-Jun-2005.) $)
