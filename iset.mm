@@ -6519,6 +6519,13 @@ $)
     ( wdc wn wo wa df-dc ordir simplbi simplbi2 com12 impbid2 sylbi
     wb ) BCBBDZEZABFOEZAOEZNBGPQRQRPABOHZIRPQQRPSJKLM $.
 
+  $( Theorem *5.63 of [WhiteheadRussell] p. 125, for a decidable proposition.
+     (Contributed by Jim Kingdon, 12-May-2018.) $)
+  pm5.63dc $p |- ( DECID ph ->
+      ( ( ph \/ ps ) <-> ( ph \/ ( -. ph /\ ps ) ) ) ) $=
+    ( wdc wo wn wa wi df-dc ordi simplbi2 sylbi simprbi impbid1 ) ACZ
+    ABDZAAEZBFDZNAPDZOQGAHQROAPBIZJKQROSLM $.
+
   ${
     bianfi.1 $e |- -. ph $.
     $( A wff conjoined with falsehood is false.  (Contributed by NM,
@@ -17319,11 +17326,6 @@ $)
      3-Jan-2005.) $)
   pm2.13 $p |- ( ph \/ -. -. -. ph ) $=
     ( wn notnot1 orri ) AABZBBECD $.
-
-  $( Theorem *5.63 of [WhiteheadRussell] p. 125.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 25-Dec-2012.) $)
-  pm5.63 $p |- ( ( ph \/ ps ) <-> ( ph \/ ( -. ph /\ ps ) ) ) $=
-    ( wn wa wo exmid ordi mpbiran bicomi ) AACZBDEZABEZKAJELAFAJBGHI $.
 
   $( Variable ` x ` is effectively not free in ` ph ` iff ` ph ` is always true
      or always false.  This is a classical result.  (Contributed by Mario
