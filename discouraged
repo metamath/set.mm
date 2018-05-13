@@ -2795,6 +2795,8 @@
 "cbncms" is used by "minvecolem4a".
 "cbncms" is used by "ubthlem1".
 "cbncms" is used by "ubthlem2".
+"cbv1OLD" is used by "cbv3OLD".
+"cbv2OLD" is used by "cbvaldOLD".
 "cbvexsv" is used by "onfrALTlem1".
 "cbvexsv" is used by "onfrALTlem1VD".
 "cdj3lem1" is used by "cdj3i".
@@ -13812,10 +13814,13 @@ New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (58 uses).
 New usage of "cba" is discouraged (88 uses).
 New usage of "cbncms" is discouraged (5 uses).
+New usage of "cbv1OLD" is discouraged (1 uses).
+New usage of "cbv2OLD" is discouraged (1 uses).
 New usage of "cbv3OLD" is discouraged (0 uses).
 New usage of "cbv3hOLD" is discouraged (0 uses).
 New usage of "cbv3hvOLD" is discouraged (0 uses).
 New usage of "cbval2OLD" is discouraged (0 uses).
+New usage of "cbvaldOLD" is discouraged (0 uses).
 New usage of "cbvalvwOLD" is discouraged (0 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
 New usage of "cdj1i" is discouraged (0 uses).
@@ -17454,11 +17459,14 @@ Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "brabsbOLD" is discouraged (42 steps).
+Proof modification of "cbv1OLD" is discouraged (17 steps).
+Proof modification of "cbv2OLD" is discouraged (17 steps).
 Proof modification of "cbv3OLD" is discouraged (44 steps).
 Proof modification of "cbv3hOLD" is discouraged (48 steps).
 Proof modification of "cbv3hOLD7" is discouraged (48 steps).
 Proof modification of "cbv3hvOLD" is discouraged (67 steps).
 Proof modification of "cbval2OLD" is discouraged (94 steps).
+Proof modification of "cbvaldOLD" is discouraged (34 steps).
 Proof modification of "cbvalvwOLD" is discouraged (35 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
 Proof modification of "ceqsex3OLD" is discouraged (61 steps).
