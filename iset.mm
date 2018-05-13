@@ -5804,6 +5804,17 @@ $)
      to "x = y is decidable".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   df-dc $a |- ( DECID ph <-> ( ph \/ -. ph ) ) $.
 
+  $( Law of excluded middle, for a decidable proposition.  The law of the
+     excluded middle is also called the principle of _tertium non datur_.
+     Theorem *2.11 of [WhiteheadRussell] p. 101.  It says that something is
+     either true or not true; there are no in-between values of truth.  The key
+     way in which intuitionistic logic differs from classical logic is that
+     intuitionistic logic says that excluded middle only holds for some
+     propositions, and classical logic says that it holds for all
+     propositions.  (Contributed by Jim Kingdon, 12-May-2018.) $)
+  exmiddc $p |- ( DECID ph -> ( ph \/ -. ph ) ) $=
+    ( wdc wn wo df-dc biimpi ) ABAACDAEF $.
+
   $( Commuted law of the excluded middle for a decidable proposition.  Based on
      theorem *2.1 of [WhiteheadRussell] p. 101.  (Contributed by Jim Kingdon,
      25-Mar-2018.) $)
@@ -15965,9 +15976,11 @@ $)
 
   $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.
 
-     We take this as an additional axiom which transforms intuitionistic logic
-     to classical logic, but there are others which would have the same effect,
-     including ~ exmid , ~ peirce , or ~ notnot2 .
+     Unconditional form of ~ condc .  We state this as an axiom for the benefit
+     of theorems which have not yet been converted over to having appropriate
+     decidability conditions added.  We could also transform intuitionistic
+     logic to classical logic by adding unconditional forms of ~ exmiddc ,
+     ~ peirce , or ~ notnot2dc .
 
      This axiom swaps or "transposes" the order of the consequents when
      negation is removed.  An informal example is that the statement "if there
@@ -17307,20 +17320,6 @@ $)
      _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
   qexmid $p |- E. x ( ph -> A. x ph ) $=
     ( wal 19.8a 19.35ri ) AABCZBFBDE $.
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Law of the excluded middle (classical)
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-
-  $( Law of excluded middle, also called the principle of _tertium non datur_.
-     Theorem *2.11 of [WhiteheadRussell] p. 101.  It says that something is
-     either true or not true; there are no in-between values of truth.  This is
-     an essential distinction of our classical logic and is not a theorem of
-     intuitionistic logic.  (Contributed by NM, 5-Aug-1993.) $)
-  exmid $p |- ( ph \/ -. ph ) $=
-    ( wn id orri ) AABZECD $.
 
   $( Theorem *2.13 of [WhiteheadRussell] p. 101.  (Contributed by NM,
      3-Jan-2005.) $)
