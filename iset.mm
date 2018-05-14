@@ -4754,9 +4754,9 @@ $)
      a contradiction, and therefore conclude ` -. ph ` , are valid
      intuitionistically (and can be called "proof of negation", for example by
      [Bauer] p. 482).  By contrast, proofs which assume ` -. ph ` , derive a
-     contradiction, and conclude ` ph ` , such as ~ condan , are not valid
-     intuitionistically.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
-     Wolf Lammen, 8-Mar-2013.) $)
+     contradiction, and conclude ` ph ` , such as ~ condandc , are only valid
+     for decidable propositions.  (Contributed by NM, 5-Aug-1993.)  (Proof
+     shortened by Wolf Lammen, 8-Mar-2013.) $)
   pm2.65 $p |- ( ( ph -> ps ) -> ( ( ph -> -. ps ) -> -. ph ) ) $=
     ( wi wn pm2.27 con2d a2i ) ABCAABDZCZABIDAIBAHEFGF $.
 
@@ -6020,6 +6020,19 @@ $)
     con2biddc $p |- ( ph -> ( DECID ch -> ( ch <-> -. ps ) ) ) $=
       ( wdc wn wb bicom syl6ib con1biddc ) ACEZBFZCGCLGACBA
       KBCFZGMBGDBMHIJLCHI $.
+  $}
+
+  ${
+    condandc.1 $e |- ( ( ph /\ -. ps ) -> ch ) $.
+    condandc.2 $e |- ( ( ph /\ -. ps ) -> -. ch ) $.
+    $( Proof by contradiction.  This only holds for decidable propositions, as
+       it is part of the family of theorems which assume ` -. ps ` , derive a
+       contradiction, and therefore conclude ` ps ` .  By contrast, assuming
+       ` ps ` , deriving a contradiction, and therefore concluding ` -. ps ` ,
+       as in ~ pm2.65 , is valid for all propositions.  (Contributed by Jim
+       Kingdon, 13-May-2018.) $)
+    condandc $p |- ( DECID ps -> ( ph -> ps ) ) $=
+      ( wn wdc pm2.65da notnot2dc syl5 ) ABFZFBGBAKCDEHBIJ $.
   $}
 
   ${
@@ -17134,19 +17147,6 @@ $)
        (Proof shortened by Wolf Lammen, 11-Sep-2013.) $)
     mt3 $p |- ph $=
       ( wn mto notnotri ) AAEBCDFG $.
-  $}
-
-  ${
-    condan.1 $e |- ( ( ph /\ -. ps ) -> ch ) $.
-    condan.2 $e |- ( ( ph /\ -. ps ) -> -. ch ) $.
-    $( Proof by contradiction.  This does not hold intuitionistically, as it is
-       part of the family of theorems which assume ` -. ps ` , derive a
-       contradiction, and therefore conclude ` ps ` .  By contrast, assuming
-       ` ps ` , deriving a contradiction, and therefore concluding ` -. ps ` ,
-       as in ~ pm2.65 , is valid intuitionistically.  (Contributed by NM,
-       9-Feb-2006.)  (Proof shortened by Wolf Lammen, 19-Jun-2014.) $)
-    condan $p |- ( ph -> ps ) $=
-      ( wn pm2.65da notnot2 syl ) ABFZFBAJCDEGBHI $.
   $}
 
   $( Theorem *4.81 of [WhiteheadRussell] p. 122.  This one does not hold
