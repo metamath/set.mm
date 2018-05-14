@@ -17300,15 +17300,6 @@ $)
   $}
 
   ${
-    jad.1 $e |- ( ph -> ( -. ps -> th ) ) $.
-    jad.2 $e |- ( ph -> ( ch -> th ) ) $.
-    $( Deduction form of ~ ja .  (Contributed by Scott Fenton, 13-Dec-2010.)
-       (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
-    jad $p |- ( ph -> ( ( ps -> ch ) -> th ) ) $=
-      ( wi wn com12 ja ) BCGADBCADGABHDEIACDFIJI $.
-  $}
-
-  ${
     19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
     $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.) $)
