@@ -17277,36 +17277,6 @@ $)
     BCGZEABHZCFRTHSOCGQTACIOBCJKUAPCABLMRTLN $.
 
   ${
-    pm2.61ian.1 $e |- ( ( ph /\ ps ) -> ch ) $.
-    pm2.61ian.2 $e |- ( ( -. ph /\ ps ) -> ch ) $.
-    $( Elimination of an antecedent.  (Contributed by NM, 1-Jan-2005.) $)
-    pm2.61ian $p |- ( ps -> ch ) $=
-      ( wi ex wn pm2.61i ) ABCFABCDGAHBCEGI $.
-  $}
-
-  ${
-    4cases.1 $e |- ( ( ph /\ ps ) -> ch ) $.
-    4cases.2 $e |- ( ( ph /\ -. ps ) -> ch ) $.
-    4cases.3 $e |- ( ( -. ph /\ ps ) -> ch ) $.
-    4cases.4 $e |- ( ( -. ph /\ -. ps ) -> ch ) $.
-    $( Inference eliminating two antecedents from the four possible cases that
-       result from their true/false combinations.  (Contributed by NM,
-       25-Oct-2003.) $)
-    4cases $p |- ch $=
-      ( pm2.61ian wn pm2.61i ) BCABCDFHABICEGHJ $.
-  $}
-
-  ${
-    pm2.61ii.1 $e |- ( -. ph -> ( -. ps -> ch ) ) $.
-    pm2.61ii.2 $e |- ( ph -> ch ) $.
-    pm2.61ii.3 $e |- ( ps -> ch ) $.
-    $( Inference eliminating two antecedents.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
-    pm2.61ii $p |- ch $=
-      ( wn pm2.61d2 pm2.61i ) ACEAGBCDFHI $.
-  $}
-
-  ${
     19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
     $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.) $)
