@@ -1,4 +1,4 @@
-$( iset.mm - Version of 11-May-2018
+$( iset.mm - Version of 13-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -4754,9 +4754,9 @@ $)
      a contradiction, and therefore conclude ` -. ph ` , are valid
      intuitionistically (and can be called "proof of negation", for example by
      [Bauer] p. 482).  By contrast, proofs which assume ` -. ph ` , derive a
-     contradiction, and conclude ` ph ` , such as ~ condan , are not valid
-     intuitionistically.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
-     Wolf Lammen, 8-Mar-2013.) $)
+     contradiction, and conclude ` ph ` , such as ~ condandc , are only valid
+     for decidable propositions.  (Contributed by NM, 5-Aug-1993.)  (Proof
+     shortened by Wolf Lammen, 8-Mar-2013.) $)
   pm2.65 $p |- ( ( ph -> ps ) -> ( ( ph -> -. ps ) -> -. ph ) ) $=
     ( wi wn pm2.27 con2d a2i ) ABCAABDZCZABIDAIBAHEFGF $.
 
@@ -5804,6 +5804,17 @@ $)
      to "x = y is decidable".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   df-dc $a |- ( DECID ph <-> ( ph \/ -. ph ) ) $.
 
+  $( Law of excluded middle, for a decidable proposition.  The law of the
+     excluded middle is also called the principle of _tertium non datur_.
+     Theorem *2.11 of [WhiteheadRussell] p. 101.  It says that something is
+     either true or not true; there are no in-between values of truth.  The key
+     way in which intuitionistic logic differs from classical logic is that
+     intuitionistic logic says that excluded middle only holds for some
+     propositions, and classical logic says that it holds for all
+     propositions.  (Contributed by Jim Kingdon, 12-May-2018.) $)
+  exmiddc $p |- ( DECID ph -> ( ph \/ -. ph ) ) $=
+    ( wdc wn wo df-dc biimpi ) ABAACDAEF $.
+
   $( Commuted law of the excluded middle for a decidable proposition.  Based on
      theorem *2.1 of [WhiteheadRussell] p. 101.  (Contributed by Jim Kingdon,
      25-Mar-2018.) $)
@@ -6012,6 +6023,19 @@ $)
   $}
 
   ${
+    condandc.1 $e |- ( ( ph /\ -. ps ) -> ch ) $.
+    condandc.2 $e |- ( ( ph /\ -. ps ) -> -. ch ) $.
+    $( Proof by contradiction.  This only holds for decidable propositions, as
+       it is part of the family of theorems which assume ` -. ps ` , derive a
+       contradiction, and therefore conclude ` ps ` .  By contrast, assuming
+       ` ps ` , deriving a contradiction, and therefore concluding ` -. ps ` ,
+       as in ~ pm2.65 , is valid for all propositions.  (Contributed by Jim
+       Kingdon, 13-May-2018.) $)
+    condandc $p |- ( DECID ps -> ( ph -> ps ) ) $=
+      ( wn wdc pm2.65da notnot2dc syl5 ) ABFZFBGBAKCDEHBIJ $.
+  $}
+
+  ${
     bijadc.1 $e |- ( ph -> ( ps -> ch ) ) $.
     bijadc.2 $e |- ( -. ph -> ( -. ps -> ch ) ) $.
     $( Combine antecedents into a single bi-conditional.  This inference is
@@ -6043,6 +6067,13 @@ $)
     ( wdc wa wn pm3.2im imp simplimdc adantr simprimdc adantl impbid2
     wi wb jca ex ) ACZBCZABDZABEZMEZNQRDZSUAABUAABFGUBUASUBUADABUBUAA
     QUAAMRATHIGUBUABRUABMQABJKGOPLP $.
+
+  $( A decidable proposition or its triple negation is true.  Theorem *2.13 of
+     [WhiteheadRussell] p. 101 with decidability condition added.  (Contributed
+     by Jim Kingdon, 13-May-2018.) $)
+  pm2.13dc $p |- ( DECID ph -> ( ph \/ -. -. -. ph ) ) $=
+    ( wdc wn wo df-dc notnot2dc con3d orim2d syl5bi pm2.43i ) ABZAACZ
+    CZCZDZKALDKOAEKLNAKMAAFGHIJ $.
 
   $( Theorem *4.63 of [WhiteheadRussell] p. 120, for decidable propositions.
      (Contributed by Jim Kingdon, 1-May-2018.) $)
@@ -6512,6 +6543,20 @@ $)
       ( mpbir2and ) ABCDFGEH $.
   $}
 
+  $( Theorem *5.62 of [WhiteheadRussell] p. 125, for a decidable proposition.
+     (Contributed by Jim Kingdon, 12-May-2018.) $)
+  pm5.62dc $p |- ( DECID ps ->
+      ( ( ( ph /\ ps ) \/ -. ps ) <-> ( ph \/ -. ps ) ) ) $=
+    ( wdc wn wo wa df-dc ordir simplbi simplbi2 com12 impbid2 sylbi
+    wb ) BCBBDZEZABFOEZAOEZNBGPQRQRPABOHZIRPQQRPSJKLM $.
+
+  $( Theorem *5.63 of [WhiteheadRussell] p. 125, for a decidable proposition.
+     (Contributed by Jim Kingdon, 12-May-2018.) $)
+  pm5.63dc $p |- ( DECID ph ->
+      ( ( ph \/ ps ) <-> ( ph \/ ( -. ph /\ ps ) ) ) ) $=
+    ( wdc wo wn wa wi df-dc ordi simplbi2 sylbi simprbi impbid1 ) ACZ
+    ABDZAAEZBFDZNAPDZOQGAHQROAPBIZJKQROSLM $.
+
   ${
     bianfi.1 $e |- -. ph $.
     $( A wff conjoined with falsehood is false.  (Contributed by NM,
@@ -6538,6 +6583,14 @@ $)
   pm4.82 $p |- ( ( ( ph -> ps ) /\ ( ph -> -. ps ) ) <-> -. ph ) $=
     ( wi wn wa pm2.65 imp pm2.21 jca impbii ) ABCZABDZCZEADZKMNABFGNKMABHALHIJ
     $.
+
+  $( Theorem *4.83 of [WhiteheadRussell] p. 122, for decidable propositions.
+     As with other case elimination theorems, like ~ pm2.61dc , it only holds
+     for decidable propositions.  (Contributed by Jim Kingdon, 12-May-2018.) $)
+  pm4.83dc $p |- ( DECID ph ->
+      ( ( ( ph -> ps ) /\ ( -. ph -> ps ) ) <-> ps ) ) $=
+    ( wdc wi wn wa wo df-dc pm3.44 com12 sylbi ax-1 jca impbid1 ) ACZABDZAEZBDZ
+    FZBOAQGZSBDAHSTBBAQIJKBPRBALBQLMN $.
 
   $( A transitive law of equivalence.  Compare Theorem *4.22 of
      [WhiteheadRussell] p. 117.  (Contributed by NM, 18-Aug-1993.) $)
@@ -15943,9 +15996,11 @@ $)
 
   $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.
 
-     We take this as an additional axiom which transforms intuitionistic logic
-     to classical logic, but there are others which would have the same effect,
-     including ~ exmid , ~ peirce , or ~ notnot2 .
+     Unconditional form of ~ condc .  We state this as an axiom for the benefit
+     of theorems which have not yet been converted over to having appropriate
+     decidability conditions added.  We could also transform intuitionistic
+     logic to classical logic by adding unconditional forms of ~ exmiddc ,
+     ~ peirce , or ~ notnot2dc .
 
      This axiom swaps or "transposes" the order of the consequents when
      negation is removed.  An informal example is that the statement "if there
@@ -17078,35 +17133,6 @@ Classical (not intuitionistic) results
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
-  ${
-    negai.1 $e |- -. -. ph $.
-    $( Inference from double negation.  (Contributed by NM, 27-Feb-2008.) $)
-    notnotri $p |- ph $=
-      ( wn notnot2 ax-mp ) ACCABADE $.
-  $}
-
-  ${
-    mt3.1 $e |- -. ps $.
-    mt3.2 $e |- ( -. ph -> ps ) $.
-    $( A rule similar to modus tollens.  (Contributed by NM, 18-May-1994.)
-       (Proof shortened by Wolf Lammen, 11-Sep-2013.) $)
-    mt3 $p |- ph $=
-      ( wn mto notnotri ) AAEBCDFG $.
-  $}
-
-  ${
-    condan.1 $e |- ( ( ph /\ -. ps ) -> ch ) $.
-    condan.2 $e |- ( ( ph /\ -. ps ) -> -. ch ) $.
-    $( Proof by contradiction.  This does not hold intuitionistically, as it is
-       part of the family of theorems which assume ` -. ps ` , derive a
-       contradiction, and therefore conclude ` ps ` .  By contrast, assuming
-       ` ps ` , deriving a contradiction, and therefore concluding ` -. ps ` ,
-       as in ~ pm2.65 , is valid intuitionistically.  (Contributed by NM,
-       9-Feb-2006.)  (Proof shortened by Wolf Lammen, 19-Jun-2014.) $)
-    condan $p |- ( ph -> ps ) $=
-      ( wn pm2.65da notnot2 syl ) ABFZFBAJCDEGBHI $.
-  $}
-
   $( Theorem *4.81 of [WhiteheadRussell] p. 122.  This one does not hold
      intuitionistically, but compare with ~ pm4.8 which does.  (Contributed by
      NM, 3-Jan-2005.) $)
@@ -17235,45 +17261,6 @@ $)
     BCGZEABHZCFRTHSOCGQTACIOBCJKUAPCABLMRTLN $.
 
   ${
-    pm2.61ian.1 $e |- ( ( ph /\ ps ) -> ch ) $.
-    pm2.61ian.2 $e |- ( ( -. ph /\ ps ) -> ch ) $.
-    $( Elimination of an antecedent.  (Contributed by NM, 1-Jan-2005.) $)
-    pm2.61ian $p |- ( ps -> ch ) $=
-      ( wi ex wn pm2.61i ) ABCFABCDGAHBCEGI $.
-  $}
-
-  ${
-    4cases.1 $e |- ( ( ph /\ ps ) -> ch ) $.
-    4cases.2 $e |- ( ( ph /\ -. ps ) -> ch ) $.
-    4cases.3 $e |- ( ( -. ph /\ ps ) -> ch ) $.
-    4cases.4 $e |- ( ( -. ph /\ -. ps ) -> ch ) $.
-    $( Inference eliminating two antecedents from the four possible cases that
-       result from their true/false combinations.  (Contributed by NM,
-       25-Oct-2003.) $)
-    4cases $p |- ch $=
-      ( pm2.61ian wn pm2.61i ) BCABCDFHABICEGHJ $.
-  $}
-
-  ${
-    pm2.61ii.1 $e |- ( -. ph -> ( -. ps -> ch ) ) $.
-    pm2.61ii.2 $e |- ( ph -> ch ) $.
-    pm2.61ii.3 $e |- ( ps -> ch ) $.
-    $( Inference eliminating two antecedents.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
-    pm2.61ii $p |- ch $=
-      ( wn pm2.61d2 pm2.61i ) ACEAGBCDFHI $.
-  $}
-
-  ${
-    jad.1 $e |- ( ph -> ( -. ps -> th ) ) $.
-    jad.2 $e |- ( ph -> ( ch -> th ) ) $.
-    $( Deduction form of ~ ja .  (Contributed by Scott Fenton, 13-Dec-2010.)
-       (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
-    jad $p |- ( ph -> ( ( ps -> ch ) -> th ) ) $=
-      ( wi wn com12 ja ) BCGADBCADGABHDEIACDFIJI $.
-  $}
-
-  ${
     19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
     $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.) $)
@@ -17285,42 +17272,6 @@ $)
      _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
   qexmid $p |- E. x ( ph -> A. x ph ) $=
     ( wal 19.8a 19.35ri ) AABCZBFBDE $.
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Law of the excluded middle (classical)
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-
-  $( Law of excluded middle, also called the principle of _tertium non datur_.
-     Theorem *2.11 of [WhiteheadRussell] p. 101.  It says that something is
-     either true or not true; there are no in-between values of truth.  This is
-     an essential distinction of our classical logic and is not a theorem of
-     intuitionistic logic.  (Contributed by NM, 5-Aug-1993.) $)
-  exmid $p |- ( ph \/ -. ph ) $=
-    ( wn id orri ) AABZECD $.
-
-  $( Theorem *2.13 of [WhiteheadRussell] p. 101.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm2.13 $p |- ( ph \/ -. -. -. ph ) $=
-    ( wn notnot1 orri ) AABZBBECD $.
-
-  $( Theorem *4.83 of [WhiteheadRussell] p. 122.  As with other case
-     elimination theorems it does not hold intuitionistically (unless the
-     proposition is known to be decidable, as in ~ pm2.61dc ).  (Contributed by
-     NM, 3-Jan-2005.) $)
-  pm4.83 $p |- ( ( ( ph -> ps ) /\ ( -. ph -> ps ) ) <-> ps ) $=
-    ( wn wo wi wa exmid a1bi jaob bitr2i ) BAACZDZBEABEKBEFLBAGHABKIJ $.
-
-  $( Theorem *5.62 of [WhiteheadRussell] p. 125.  (Contributed by Roy F.
-     Longton, 21-Jun-2005.) $)
-  pm5.62 $p |- ( ( ( ph /\ ps ) \/ -. ps ) <-> ( ph \/ -. ps ) ) $=
-    ( wa wn wo exmid ordir mpbiran2 ) ABCBDZEAIEBIEBFABIGH $.
-
-  $( Theorem *5.63 of [WhiteheadRussell] p. 125.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 25-Dec-2012.) $)
-  pm5.63 $p |- ( ( ph \/ ps ) <-> ( ph \/ ( -. ph /\ ps ) ) ) $=
-    ( wn wa wo exmid ordi mpbiran bicomi ) AACZBDEZABEZKAJELAFAJBGHI $.
 
   $( Variable ` x ` is effectively not free in ` ph ` iff ` ph ` is always true
      or always false.  This is a classical result.  (Contributed by Mario
