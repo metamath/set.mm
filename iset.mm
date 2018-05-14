@@ -17133,22 +17133,6 @@ Classical (not intuitionistic) results
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
-  ${
-    negai.1 $e |- -. -. ph $.
-    $( Inference from double negation.  (Contributed by NM, 27-Feb-2008.) $)
-    notnotri $p |- ph $=
-      ( wn notnot2 ax-mp ) ACCABADE $.
-  $}
-
-  ${
-    mt3.1 $e |- -. ps $.
-    mt3.2 $e |- ( -. ph -> ps ) $.
-    $( A rule similar to modus tollens.  (Contributed by NM, 18-May-1994.)
-       (Proof shortened by Wolf Lammen, 11-Sep-2013.) $)
-    mt3 $p |- ph $=
-      ( wn mto notnotri ) AAEBCDFG $.
-  $}
-
   $( Theorem *4.81 of [WhiteheadRussell] p. 122.  This one does not hold
      intuitionistically, but compare with ~ pm4.8 which does.  (Contributed by
      NM, 3-Jan-2005.) $)
