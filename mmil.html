@@ -166,25 +166,29 @@ Overview of this work</FONT></B>
 aim is to show how many of the theorems of set theory and
 mathematics that can be derived from classical first order logic can
 also be derived from a weaker system called "intuitionistic logic."  To
-achieve this task, iset.mm adds (or substitutes) 12 intuitionistic
-axioms whose second part of the name begins with the letter "i" to the
-classical logical axioms of set.mm.
+achieve this task, iset.mm adds (or substitutes) intuitionistic
+axioms for a number of the classical logical axioms of set.mm.
 
-<P>Among these 12 new axioms, the 6 first
+<P>Among these new axioms, the 6 first
 (<A HREF="ax-ia1.html">ax-ia1</A>,
 <A HREF="ax-ia2.html">ax-ia2</A>,
 <A HREF="ax-ia3.html">ax-ia3</A>,
 <A HREF="ax-io.html">ax-io</A>,
 <A HREF="ax-in1.html">ax-in1</A>
 and
-<A HREF="ax-in2.html">ax-in2</A>), when substituted for
-<A HREF="ax-3.html">ax-3</A> and added to
+<A HREF="ax-in2.html">ax-in2</A>), when added to
 <A HREF="ax-1.html">ax-1</A>,
 <A HREF="ax-2.html">ax-2</A>
 and
 <A HREF="ax-mp.html">ax-mp</A>,
  allow for the development of intuitionistic
-propositional logic.  Each of them is a theorem of classical
+propositional logic.  We omit the classical axiom
+<SPAN CLASS=math>((&not;
+<SPAN CLASS=wff STYLE="color:blue">&#x1D711;</SPAN> &rarr; &not; <SPAN
+CLASS=wff STYLE="color:blue">&#x1D713;</SPAN>) &rarr; (<SPAN CLASS=wff
+STYLE="color:blue">&#x1D713;</SPAN> &rarr; <SPAN CLASS=wff
+STYLE="color:blue">&#x1D711;</SPAN>))</SPAN> (which is ax-3 in
+set.mm).  Each of our new axioms is a theorem of classical
 propositional logic, but ax-3 cannot be derived from them.  Similarly,
 other basic classical theorems, like the third middle excluded or the
 equvalence of a proposition with its double negation, cannot be derived
@@ -229,7 +233,7 @@ and
 allow for the development of the
 intuitionistic predicate calculus.
 
-<P>Each of the 12 new axioms is a theorem of classical first order
+<P>Each of the new axioms is a theorem of classical first order
 logic with equality.  But some axioms of classical first order logic
 with equality, like ax-3, cannot be derived in the intuitionistic
 predicate calculus.</P>
