@@ -1,4 +1,4 @@
-$( iset.mm - Version of 12-May-2018
+$( iset.mm - Version of 13-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6054,6 +6054,13 @@ $)
     ( wdc wa wn pm3.2im imp simplimdc adantr simprimdc adantl impbid2
     wi wb jca ex ) ACZBCZABDZABEZMEZNQRDZSUAABUAABFGUBUASUBUADABUBUAA
     QUAAMRATHIGUBUABRUABMQABJKGOPLP $.
+
+  $( A decidable proposition or its triple negation is true.  Theorem *2.13 of
+     [WhiteheadRussell] p. 101 with decidability condition added.  (Contributed
+     by Jim Kingdon, 13-May-2018.) $)
+  pm2.13dc $p |- ( DECID ph -> ( ph \/ -. -. -. ph ) ) $=
+    ( wdc wn wo df-dc notnot2dc con3d orim2d syl5bi pm2.43i ) ABZAACZ
+    CZCZDZKALDKOAEKLNAKMAAFGHIJ $.
 
   $( Theorem *4.63 of [WhiteheadRussell] p. 120, for decidable propositions.
      (Contributed by Jim Kingdon, 1-May-2018.) $)
@@ -17311,11 +17318,6 @@ $)
      _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
   qexmid $p |- E. x ( ph -> A. x ph ) $=
     ( wal 19.8a 19.35ri ) AABCZBFBDE $.
-
-  $( Theorem *2.13 of [WhiteheadRussell] p. 101.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm2.13 $p |- ( ph \/ -. -. -. ph ) $=
-    ( wn notnot1 orri ) AABZBBECD $.
 
   $( Variable ` x ` is effectively not free in ` ph ` iff ` ph ` is always true
      or always false.  This is a classical result.  (Contributed by Mario
