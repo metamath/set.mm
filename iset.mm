@@ -15962,6 +15962,343 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Class form not-free predicate
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c F/_ $.  $( Underlined not-free symbol. $)
+
+  $( Extend wff definition to include the not-free predicate for classes. $)
+  wnfc $a wff F/_ x A $.
+
+  ${
+    $d x y z $.  $d y z A $.
+    $( Justification theorem for ~ df-nfc .  (Contributed by Mario Carneiro,
+       13-Oct-2016.) $)
+    nfcjust $p |- ( A. y F/ x y e. A <-> A. z F/ x z e. A ) $=
+      ( cv wcel wnf weq nfv eleq1 nfbidf cbvalv ) BEZDFZAGCEZDFZAGBCBCHZNPAQAIM
+      ODJKL $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    $( Define the not-free predicate for classes.  This is read " ` x ` is not
+       free in ` A ` ".  Not-free means that the value of ` x ` cannot affect
+       the value of ` A ` , e.g., any occurrence of ` x ` in ` A ` is
+       effectively bound by a "for all" or something that expands to one (such
+       as "there exists").  It is defined in terms of the not-free predicate
+       ~ df-nf for wffs; see that definition for more information.
+       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    df-nfc $a |- ( F/_ x A <-> A. y F/ x y e. A ) $.
+
+    ${
+      nfci.1 $e |- F/ x y e. A $.
+      $( Deduce that a class ` A ` does not have ` x ` free in it.
+         (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+      nfci $p |- F/_ x A $=
+        ( wnfc cv wcel wnf df-nfc mpgbir ) ACEBFCGAHBABCIDJ $.
+    $}
+
+    ${
+      nfcii.1 $e |- ( y e. A -> A. x y e. A ) $.
+      $( Deduce that a class ` A ` does not have ` x ` free in it.
+         (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+      nfcii $p |- F/_ x A $=
+        ( cv wcel nfi nfci ) ABCBECFADGH $.
+    $}
+
+    $( Consequence of the not-free predicate.  (Contributed by Mario Carneiro,
+       11-Aug-2016.) $)
+    nfcr $p |- ( F/_ x A -> F/ x y e. A ) $=
+      ( wnfc cv wcel wnf wal df-nfc sp sylbi ) ACDBECFAGZBHLABCILBJK $.
+  $}
+
+  ${
+    $d x y z $.  $d z A $.
+    nfcri.1 $e |- F/_ x A $.
+    $( Consequence of the not-free predicate.  (Contributed by Mario Carneiro,
+       11-Aug-2016.) $)
+    nfcrii $p |- ( y e. A -> A. x y e. A ) $=
+      ( vz cv wcel wnfc wnf nfcr ax-mp nfri hblem ) AEBCEFCGZAACHNAIDAECJKLM $.
+
+    $( Consequence of the not-free predicate.  (Note that unlike ~ nfcr , this
+       does not require ` y ` and ` A ` to be disjoint.)  (Contributed by Mario
+       Carneiro, 11-Aug-2016.) $)
+    nfcri $p |- F/ x y e. A $=
+      ( cv wcel nfcrii nfi ) BECFAABCDGH $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    nfcd.1 $e |- F/ y ph $.
+    nfcd.2 $e |- ( ph -> F/ x y e. A ) $.
+    $( Deduce that a class ` A ` does not have ` x ` free in it.  (Contributed
+       by Mario Carneiro, 11-Aug-2016.) $)
+    nfcd $p |- ( ph -> F/_ x A ) $=
+      ( cv wcel wnf wal wnfc alrimi df-nfc sylibr ) ACGDHBIZCJBDKAOCEFLBCDMN $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    nfceqi.1 $e |- A = B $.
+    $( Equality theorem for class not-free.  (Contributed by Mario Carneiro,
+       11-Aug-2016.) $)
+    nfceqi $p |- ( F/_ x A <-> F/_ x B ) $=
+      ( vy cv wcel wnf wal wnfc eleq2i nfbii albii df-nfc 3bitr4i ) EFZBGZAHZEI
+      PCGZAHZEIABJACJRTEQSABCPDKLMAEBNAECNO $.
+
+    ${
+      nfcxfr.2 $e |- F/_ x B $.
+      $( A utility lemma to transfer a bound-variable hypothesis builder into a
+         definition.  (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+      nfcxfr $p |- F/_ x A $=
+        ( wnfc nfceqi mpbir ) ABFACFEABCDGH $.
+    $}
+
+    ${
+      nfcxfrd.2 $e |- ( ph -> F/_ x B ) $.
+      $( A utility lemma to transfer a bound-variable hypothesis builder into a
+         definition.  (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+      nfcxfrd $p |- ( ph -> F/_ x A ) $=
+        ( wnfc nfceqi sylibr ) ABDGBCGFBCDEHI $.
+    $}
+  $}
+
+  ${
+    $d x y $.  $d A y $.  $d B y $.  $d ph y $.
+    nfceqdf.1 $e |- F/ x ph $.
+    nfceqdf.2 $e |- ( ph -> A = B ) $.
+    $( An equality theorem for effectively not free.  (Contributed by Mario
+       Carneiro, 14-Oct-2016.) $)
+    nfceqdf $p |- ( ph -> ( F/_ x A <-> F/_ x B ) ) $=
+      ( vy cv wcel wnf wal wnfc eleq2d nfbidf albidv df-nfc 3bitr4g ) AGHZCIZBJ
+      ZGKRDIZBJZGKBCLBDLATUBGASUABEACDRFMNOBGCPBGDPQ $.
+  $}
+
+  ${
+    $d x y A $.
+    $( If ` x ` is disjoint from ` A ` , then ` x ` is not free in ` A ` .
+       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    nfcv $p |- F/_ x A $=
+      ( vy cv wcel nfv nfci ) ACBCDBEAFG $.
+
+    $( If ` x ` is disjoint from ` A ` , then ` x ` is not free in ` A ` .
+       (Contributed by Mario Carneiro, 7-Oct-2016.) $)
+    nfcvd $p |- ( ph -> F/_ x A ) $=
+      ( wnfc nfcv a1i ) BCDABCEF $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y ph $.
+    $( Bound-variable hypothesis builder for a class abstraction.  (Contributed
+       by Mario Carneiro, 11-Aug-2016.) $)
+    nfab1 $p |- F/_ x { x | ph } $=
+      ( vy cab nfsab1 nfci ) BCABDABCEF $.
+
+    $( ` x ` is bound in ` F/_ x A ` .  (Contributed by Mario Carneiro,
+       11-Aug-2016.) $)
+    nfnfc1 $p |- F/ x F/_ x A $=
+      ( vy wnfc cv wcel wnf wal df-nfc nfnf1 nfal nfxfr ) ABDCEBFZAGZCHAACBINAC
+      MAJKL $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.
+    nfab.1 $e |- F/ x ph $.
+    $( Bound-variable hypothesis builder for a class abstraction.  (Contributed
+       by Mario Carneiro, 11-Aug-2016.) $)
+    nfab $p |- F/_ x { y | ph } $=
+      ( vz cab nfsab nfci ) BEACFABCEDGH $.
+  $}
+
+  ${
+    $( Bound-variable hypothesis builder for a class abstraction.  (Contributed
+       by Mario Carneiro, 14-Oct-2016.) $)
+    nfaba1 $p |- F/_ x { y | A. x ph } $=
+      ( wal nfa1 nfab ) ABDBCABEF $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z A $.  $d z B $.
+    nfnfc.1 $e |- F/_ x A $.
+    $( Hypothesis builder for ` F/_ y A ` .  (Contributed by Mario Carneiro,
+       11-Aug-2016.) $)
+    nfnfc $p |- F/ x F/_ y A $=
+      ( vz wnfc cv wcel wnf wal df-nfc nfcri nfnf nfal nfxfr ) BCFEGCHZBIZEJABE
+      CKQAEPABAECDLMNO $.
+
+    nfeq.2 $e |- F/_ x B $.
+    $( Hypothesis builder for equality.  (Contributed by Mario Carneiro,
+       11-Aug-2016.) $)
+    nfeq $p |- F/ x A = B $=
+      ( vz wceq cv wcel wb wal dfcleq nfcri nfbi nfal nfxfr ) BCGFHZBIZQCIZJZFK
+      AFBCLTAFRSAAFBDMAFCEMNOP $.
+
+    $( Hypothesis builder for elementhood.  (Contributed by Mario Carneiro,
+       11-Aug-2016.) $)
+    nfel $p |- F/ x A e. B $=
+      ( vz wcel cv wceq wa wex df-clel nfcv nfeq nfcri nfan nfex nfxfr ) BCGFHZ
+      BIZSCGZJZFKAFBCLUBAFTUAAASBASMDNAFCEOPQR $.
+  $}
+
+  ${
+    $d x B $.
+    nfeq1.1 $e |- F/_ x A $.
+    $( Hypothesis builder for equality, special case.  (Contributed by Mario
+       Carneiro, 10-Oct-2016.) $)
+    nfeq1 $p |- F/ x A = B $=
+      ( nfcv nfeq ) ABCDACEF $.
+
+    $( Hypothesis builder for elementhood, special case.  (Contributed by Mario
+       Carneiro, 10-Oct-2016.) $)
+    nfel1 $p |- F/ x A e. B $=
+      ( nfcv nfel ) ABCDACEF $.
+  $}
+
+  ${
+    $d x A $.
+    nfeq2.1 $e |- F/_ x B $.
+    $( Hypothesis builder for equality, special case.  (Contributed by Mario
+       Carneiro, 10-Oct-2016.) $)
+    nfeq2 $p |- F/ x A = B $=
+      ( nfcv nfeq ) ABCABEDF $.
+
+    $( Hypothesis builder for elementhood, special case.  (Contributed by Mario
+       Carneiro, 10-Oct-2016.) $)
+    nfel2 $p |- F/ x A e. B $=
+      ( nfcv nfel ) ABCABEDF $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    nfeqd.1 $e |- ( ph -> F/_ x A ) $.
+    $( Consequence of the not-free predicate.  (Contributed by Mario Carneiro,
+       11-Aug-2016.) $)
+    nfcrd $p |- ( ph -> F/ x y e. A ) $=
+      ( wnfc cv wcel wnf nfcr syl ) ABDFCGDHBIEBCDJK $.
+
+    $d y ph $.
+    nfeqd.2 $e |- ( ph -> F/_ x B ) $.
+    $( Hypothesis builder for equality.  (Contributed by Mario Carneiro,
+       7-Oct-2016.) $)
+    nfeqd $p |- ( ph -> F/ x A = B ) $=
+      ( vy wceq cv wcel wb wal dfcleq nfv nfcrd nfbid nfald nfxfrd ) CDHGIZCJZS
+      DJZKZGLABGCDMAUBBGAGNATUABABGCEOABGDFOPQR $.
+
+    $( Hypothesis builder for elementhood.  (Contributed by Mario Carneiro,
+       7-Oct-2016.) $)
+    nfeld $p |- ( ph -> F/ x A e. B ) $=
+      ( vy wcel cv wceq wa wex df-clel nfv nfcvd nfeqd nfcrd nfand nfexd nfxfrd
+      ) CDHGIZCJZUADHZKZGLABGCDMAUDBGAGNAUBUCBABUACABUAOEPABGDFQRST $.
+  $}
+
+  ${
+    $d w x $.  $d w y $.  $d w z $.  $d w A $.  $d w B $.
+    drnfc1.1 $e |- ( A. x x = y -> A = B ) $.
+    $( Formula-building lemma for use with the Distinctor Reduction Theorem.
+       (Contributed by Mario Carneiro, 8-Oct-2016.) $)
+    drnfc1 $p |- ( A. x x = y -> ( F/_ x A <-> F/_ y B ) ) $=
+      ( vw weq wal cv wcel wnf wnfc eleq2d drnf1 dral2 df-nfc 3bitr4g ) ABGAHZF
+      IZCJZAKZFHSDJZBKZFHACLBDLUAUCABFTUBABRCDSEMNOAFCPBFDPQ $.
+
+    $( Formula-building lemma for use with the Distinctor Reduction Theorem.
+       (Contributed by Mario Carneiro, 8-Oct-2016.) $)
+    drnfc2 $p |- ( A. x x = y -> ( F/_ z A <-> F/_ z B ) ) $=
+      ( vw weq wal cv wcel wnf wnfc eleq2d drnf2 dral2 df-nfc 3bitr4g ) ABHAIZG
+      JZDKZCLZGITEKZCLZGICDMCEMUBUDABGUAUCABCSDETFNOPCGDQCGEQR $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.  $d z ps $.
+    nfabd.1 $e |- F/ y ph $.
+    nfabd.2 $e |- ( ph -> F/ x ps ) $.
+    $( Bound-variable hypothesis builder for a class abstraction.  (Contributed
+       by Mario Carneiro, 8-Oct-2016.) $)
+    nfabd $p |- ( ph -> F/_ x { y | ps } ) $=
+      ( vz cab nfv cv wcel wsbc df-clab nfsbd nfxfrd nfcd ) ACGBDHZAG
+      IGJZQKBDRLACBGDMABDGCEFNOP $.
+  $}
+
+  ${
+    $d w x $.  $d w y $.  $d w z $.  $d w A $.  $d w B $.  $d w ph $.
+    dvelimdc.1 $e |- F/ x ph $.
+    dvelimdc.2 $e |- F/ z ph $.
+    dvelimdc.3 $e |- ( ph -> F/_ x A ) $.
+    dvelimdc.4 $e |- ( ph -> F/_ z B ) $.
+    dvelimdc.5 $e |- ( ph -> ( z = y -> A = B ) ) $.
+    $( Deduction form of ~ dvelimc .  (Contributed by Mario Carneiro,
+       8-Oct-2016.) $)
+    dvelimdc $p |- ( ph -> ( -. A. x x = y -> F/_ x B ) ) $=
+      ( vw weq wal wn wnfc wa nfv wcel nfcrd cv wnf wceq wb eleq2 syl6 dvelimdf
+      imp nfcd ex ) ABCMBNOZBFPAUKQZBLFULLRAUKLUAZFSZBUBAUMESZUNBCDGHABLEITADLF
+      JTADCMEFUCUOUNUDKEFUMUEUFUGUHUIUJ $.
+  $}
+
+  ${
+    dvelimc.1 $e |- F/_ x A $.
+    dvelimc.2 $e |- F/_ z B $.
+    dvelimc.3 $e |- ( z = y -> A = B ) $.
+    $( Version of ~ dvelim for classes.  (Contributed by Mario Carneiro,
+       8-Oct-2016.) $)
+    dvelimc $p |- ( -. A. x x = y -> F/_ x B ) $=
+      ( weq wal wn wnfc wi wtru nftru a1i wceq dvelimdc trud ) ABIAJKAELMNABCDE
+      AOCOADLNFPCELNGPCBIDEQMNHPRS $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.
+    $( If ` x ` and ` y ` are distinct, then ` x ` is not free in ` y ` .
+       (Contributed by Mario Carneiro, 8-Oct-2016.) $)
+    nfcvf $p |- ( -. A. x x = y -> F/_ x y ) $=
+      ( vz cv nfcv weq id dvelimc ) ABCCDZBDZAIECJECBFGH $.
+
+    $( If ` x ` and ` y ` are distinct, then ` y ` is not free in ` x ` .
+       (Contributed by Mario Carneiro, 5-Dec-2016.) $)
+    nfcvf2 $p |- ( -. A. x x = y -> F/_ y x ) $=
+      ( cv wnfc nfcvf naecoms ) BACDBABAEF $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    cleqf.1 $e |- F/_ x A $.
+    cleqf.2 $e |- F/_ x B $.
+    $( Establish equality between classes, using bound-variable hypotheses
+       instead of distinct variable conditions.  (Contributed by NM,
+       5-Aug-1993.)  (Revised by Mario Carneiro, 7-Oct-2016.) $)
+    cleqf $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
+      ( vy wceq cv wcel wb wal dfcleq nfv nfcri nfbi eleq1 bibi12d cbval bitr4i
+      ) BCGFHZBIZTCIZJZFKAHZBIZUDCIZJZAKFBCLUGUCAFUGFMUAUBAAFBDNAFCENOUDTGUEUAU
+      FUBUDTBPUDTCPQRS $.
+  $}
+
+  ${
+    $d y A $.  $d x y $.
+    abid2f.1 $e |- F/_ x A $.
+    $( A simplification of class abstraction.  Theorem 5.2 of [Quine] p. 35.
+       (Contributed by NM, 5-Sep-2011.)  (Revised by Mario Carneiro,
+       7-Oct-2016.) $)
+    abid2f $p |- { x | x e. A } = A $=
+      ( cv wcel cab wceq wb wal nfab1 cleqf abid bibi2i albii bitri biid mpgbir
+      eqcomi ) BADZBEZAFZBUAGZTTHZAUBTSUAEZHZAIUCAIABUACTAJKUEUCAUDTTTALMNOTPQR
+      $.
+  $}
+
+  ${
+    $d v A w $.  $d x z v u $.  $d y z v u $.  $d v ph $.
+    sbabel.1 $e |- F/_ x A $.
+    $( Theorem to move a substitution in and out of a class abstraction.
+       (Contributed by NM, 27-Sep-2003.)  (Revised by Mario Carneiro,
+       7-Oct-2016.) $)
+    sbabel $p |- ( [ y / x ] { z | ph } e. A <-> { z | [ y / x ] ph } e. A ) $=
+      ( vv cv cab wceq wcel wa wex wsb wb wal sbf abeq2 sbbii 3bitr4i sbex sban
+      nfv sbrbis sbalv nfcri anbi12i bitri exbii df-clel ) GHZADIZJZUKEKZLZGMZB
+      CNZUKABCNZDIZJZUNLZGMZULEKZBCNUSEKUQUOBCNZGMVBUOGBCUAVDVAGVDUMBCNZUNBCNZL
+      VAUMUNBCUBVEUTVFUNDHUKKZAOZDPZBCNVGUROZDPVEUTVHVJBCDVGVGABCVGBCVGBUCQUDUE
+      UMVIBCADUKRSURDUKRTUNBCBGEFUFQUGUHUIUHVCUPBCGULEUJSGUSEUJT $.
+  $}
+
+$(
 ###############################################################################
                             CLASSICAL LOGIC
 ###############################################################################
@@ -17530,6 +17867,11 @@ htmldef "|" as " <IMG SRC='vert.gif' WIDTH=3 HEIGHT=19 ALT=' |' TITLE='|'> ";
 htmldef "}" as "<IMG SRC='rbrace.gif' WIDTH=6 HEIGHT=19 ALT=' }' TITLE='}'>";
   althtmldef "}" as '}'; /* &rcub; */
   latexdef "}" as "\}";
+htmldef "F/_" as
+    "<IMG SRC='_finvbar.gif' WIDTH=9 HEIGHT=19 ALT=' F/_' TITLE='F/_'>";
+  althtmldef "F/_" as "<U>&#8498;</U>";
+  latexdef "F/_" as "\underline{\Finv}";
+
 htmldef "./\" as
     " <IMG SRC='_.wedge.gif' WIDTH=11 HEIGHT=19 ALT=' ./\' TITLE='./\'> ";
   althtmldef "./\" as
