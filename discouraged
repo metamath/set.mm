@@ -2796,6 +2796,7 @@
 "cbncms" is used by "ubthlem1".
 "cbncms" is used by "ubthlem2".
 "cbv1OLD" is used by "cbv3OLD".
+"cbv1hOLD" is used by "cbv1OLD".
 "cbv2OLD" is used by "cbvaldOLD".
 "cbvexsv" is used by "onfrALTlem1".
 "cbvexsv" is used by "onfrALTlem1VD".
@@ -13815,6 +13816,7 @@ New usage of "c-bnj18" is discouraged (58 uses).
 New usage of "cba" is discouraged (88 uses).
 New usage of "cbncms" is discouraged (5 uses).
 New usage of "cbv1OLD" is discouraged (1 uses).
+New usage of "cbv1hOLD" is discouraged (1 uses).
 New usage of "cbv2OLD" is discouraged (1 uses).
 New usage of "cbv3OLD" is discouraged (0 uses).
 New usage of "cbv3hOLD" is discouraged (0 uses).
@@ -14885,6 +14887,7 @@ New usage of "exbirVD" is discouraged (0 uses).
 New usage of "exbiriVD" is discouraged (0 uses).
 New usage of "excomOLD" is discouraged (0 uses).
 New usage of "excomimOLD" is discouraged (0 uses).
+New usage of "exdistrfOLD" is discouraged (0 uses).
 New usage of "exidu1" is discouraged (3 uses).
 New usage of "exiftruOLD" is discouraged (0 uses).
 New usage of "exinst" is discouraged (1 uses).
@@ -17460,6 +17463,7 @@ Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "brabsbOLD" is discouraged (42 steps).
 Proof modification of "cbv1OLD" is discouraged (17 steps).
+Proof modification of "cbv1hOLD" is discouraged (89 steps).
 Proof modification of "cbv2OLD" is discouraged (17 steps).
 Proof modification of "cbv3OLD" is discouraged (44 steps).
 Proof modification of "cbv3hOLD" is discouraged (48 steps).
@@ -17755,6 +17759,7 @@ Proof modification of "exbirVD" is discouraged (65 steps).
 Proof modification of "exbiriVD" is discouraged (70 steps).
 Proof modification of "excomOLD" is discouraged (19 steps).
 Proof modification of "excomimOLD" is discouraged (32 steps).
+Proof modification of "exdistrfOLD" is discouraged (98 steps).
 Proof modification of "exiftruOLD" is discouraged (35 steps).
 Proof modification of "exinst" is discouraged (12 steps).
 Proof modification of "exinst01" is discouraged (16 steps).
