@@ -1,4 +1,4 @@
-$( iset.mm - Version of 13-May-2018
+$( iset.mm - Version of 15-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -16326,19 +16326,23 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
-  $( Negation of inequality.  (Contributed by NM, 9-Jun-2006.) $)
-  nne $p |- ( -. A =/= B <-> A = B ) $=
-    ( wceq wne wn df-ne con2bii bicomi ) ABCZABDZEJIABFGH $.
+  $( Negation of inequality where equality is decidable.  (Contributed by Jim
+     Kingdon, 15-May-2018.) $)
+  nnedc $p |- ( DECID A = B -> ( -. A =/= B <-> A = B ) ) $=
+    ( wceq wdc wne wn wb df-ne a1i con2biidc bicomd ) ABCZDZLABEZFNLN
+    LFGMABHIJK $.
 
   $( No class is unequal to itself.  (Contributed by Stefan O'Rear,
-     1-Jan-2015.) $)
+     1-Jan-2015.)  (Proof rewritten by Jim Kingdon, 15-May-2018.) $)
   neirr $p |- -. A =/= A $=
-    ( wne wn wceq eqid nne mpbir ) AABCAADAEAAFG $.
+    ( wne wn wceq eqid notnoti df-ne notbii mpbir ) AABZCAADZCZCKAEFJ
+    LAAGHI $.
 
-  $( Excluded middle with equality and inequality.  (Contributed by NM,
-     3-Feb-2012.) $)
-  exmidne $p |- ( A = B \/ A =/= B ) $=
-    ( wceq wne wo wn exmid df-ne orbi2i mpbir ) ABCZABDZEKKFZEKGLMKABHIJ $.
+  $( Excluded middle with equality and inequality where equality is decidable.
+     (Contributed by Jim Kingdon, 15-May-2018.) $)
+  exmidnedc $p |- ( DECID A = B -> ( A = B \/ A =/= B ) ) $=
+    ( wceq wdc wn wo wne exmiddc df-ne orbi2i sylibr ) ABCZDLLEZFLABG
+    ZFLHNMLABIJK $.
 
   $( Law of noncontradiction with equality and inequality.  (Contributed by NM,
      3-Feb-2012.) $)
