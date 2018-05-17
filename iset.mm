@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-May-2018
+$( iset.mm - Version of 19-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5876,6 +5876,18 @@ $)
   con1dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( -. ps -> ph ) ) ) $=
     ( wn wi wdc notnot1 imim2i condc syl5 ) ACZBDJBCZCZDAEKADBLJBFGAK
     HI $.
+
+  ${
+    con4biddc.1 $e |- ( ph -> ( DECID ps -> ( DECID ch ->
+        ( -. ps <-> -. ch ) ) ) ) $.
+    $( A contraposition deduction.  (Contributed by Jim Kingdon,
+       18-May-2018.) $)
+    con4biddc $p |- ( ph -> ( DECID ps -> ( DECID ch -> ( ps <-> ch ) ) ) ) $=
+      ( wdc wb wa wi wn bi2 syl8 condc a2i imp31 bi1 imim2d
+      syl6 sylcom impbid exp31 ) ABEZCEZBCFAUAGUBGBCAUAUBBCHZAUAUBCIZBI
+      ZHZHUBUCHAUAUBUEUDFZUFDUEUDJKUBUFUCCBLMQNAUAUBCBHZAUAUBUEUDHZHUBU
+      HHAUAUBUGUIDUEUDOKUAUIUHUBBCLPRNST $.
+  $}
 
   ${
     impidc.1 $e |- ( DECID ch -> ( ph -> ( ps -> ch ) ) ) $.
@@ -16571,17 +16583,17 @@ $)
   ${
     necon3ad.1 $e |- ( ph -> ( ps -> A = B ) ) $.
     $( Contrapositive law deduction for inequality.  (Contributed by NM,
-       2-Apr-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+       2-Apr-2007.)  (Proof rewritten by Jim Kingdon, 15-May-2018.) $)
     necon3ad $p |- ( ph -> ( A =/= B -> -. ps ) ) $=
-      ( wne wceq wn nne syl6ibr con2d ) ABCDFZABCDGLHECDIJK $.
+      ( wne wceq wn df-ne con3d syl5bi ) CDFCDGZHABHCDIABLEJK $.
   $}
 
   ${
     necon3bd.1 $e |- ( ph -> ( A = B -> ps ) ) $.
     $( Contrapositive law deduction for inequality.  (Contributed by NM,
-       2-Apr-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+       2-Apr-2007.)  (Proof rewritten by Jim Kingdon, 15-May-2018.) $)
     necon3bd $p |- ( ph -> ( -. ps -> A =/= B ) ) $=
-      ( wne wn wceq nne syl5bi con1d ) ACDFZBLGCDHABCDIEJK $.
+      ( wn wceq wne con3d df-ne syl6ibr ) ABFCDGZFCDHALBEICDJK $.
   $}
 
   ${
@@ -16603,49 +16615,52 @@ $)
   ${
     necon3ai.1 $e |- ( ph -> A = B ) $.
     $( Contrapositive inference for inequality.  (Contributed by NM,
-       23-May-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+       23-May-2007.)  (Proof rewritten by Jim Kingdon, 15-May-2018.) $)
     necon3ai $p |- ( A =/= B -> -. ph ) $=
-      ( wne wceq wn nne sylibr con2i ) ABCEZABCFKGDBCHIJ $.
+      ( wne wceq wn df-ne con3i sylbi ) BCEBCFZGAGBCHAKDIJ $.
   $}
 
   ${
     necon3bi.1 $e |- ( A = B -> ph ) $.
     $( Contrapositive inference for inequality.  (Contributed by NM,
-       1-Jun-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+       1-Jun-2007.)  (Proof rewritten by Jim Kingdon, 15-May-2018.) $)
     necon3bi $p |- ( -. ph -> A =/= B ) $=
-      ( wne wn wceq nne sylbi con1i ) BCEZAKFBCGABCHDIJ $.
+      ( wn wceq wne con3i df-ne sylibr ) AEBCFZEBCGKADHBCIJ $.
   $}
 
   ${
-    necon1ai.1 $e |- ( -. ph -> A = B ) $.
-    $( Contrapositive inference for inequality.  (Contributed by NM,
-       12-Feb-2007.) $)
-    necon1ai $p |- ( A =/= B -> ph ) $=
-      ( wne wceq wn df-ne con1i sylbi ) BCEBCFZGABCHAKDIJ $.
+    necon1aidc.1 $e |- ( DECID ph -> ( -. ph -> A = B ) ) $.
+    $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
+       15-May-2018.) $)
+    necon1aidc $p |- ( DECID ph -> ( A =/= B -> ph ) ) $=
+      ( wne wceq wn wdc df-ne wi con1dc mpd syl5bi ) BCEBC
+      FZGZAHZABCIPAGNJOAJDANKLM $.
   $}
 
   ${
-    necon1bi.1 $e |- ( A =/= B -> ph ) $.
-    $( Contrapositive inference for inequality.  (Contributed by NM,
-       18-Mar-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-    necon1bi $p |- ( -. ph -> A = B ) $=
-      ( wn wne wceq con3i nne sylib ) AEBCFZEBCGKADHBCIJ $.
+    necon1bidc.1 $e |- ( DECID A = B -> ( A =/= B -> ph ) ) $.
+    $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
+       15-May-2018.) $)
+    necon1bidc $p |- ( DECID A = B -> ( -. ph -> A = B ) ) $=
+      ( wceq wdc wn wi wne df-ne syl5bir con1dc mpd ) BCEZ
+      FZNGZAHAGNHPBCIOABCJDKNALM $.
   $}
 
   ${
-    necon1i.1 $e |- ( A =/= B -> C = D ) $.
-    $( Contrapositive inference for inequality.  (Contributed by NM,
-       18-Mar-2007.) $)
-    necon1i $p |- ( C =/= D -> A = B ) $=
-      ( wceq wn wne df-ne sylbir necon1ai ) ABFZCDLGABHCDFABIEJK $.
+    necon1idc.1 $e |- ( A =/= B -> C = D ) $.
+    $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
+       16-May-2018.) $)
+    necon1idc $p |- ( DECID A = B -> ( C =/= D -> A = B ) ) $=
+      ( wceq wn wi wdc wne df-ne sylbir a1i necon1aidc ) ABFZCDOGZCDFZH
+      OIPABJQABKELMN $.
   $}
 
   ${
     necon2ai.1 $e |- ( A = B -> -. ph ) $.
     $( Contrapositive inference for inequality.  (Contributed by NM,
-       16-Jan-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+       16-Jan-2007.)  (Proof rewritten by Jim Kingdon, 16-May-2018.) $)
     necon2ai $p |- ( ph -> A =/= B ) $=
-      ( wne wn wceq nne sylbi con4i ) BCEZAKFBCGAFBCHDIJ $.
+      ( wceq wn wne con2i df-ne sylibr ) ABCEZFBCGKADHBCIJ $.
   $}
 
   ${
@@ -16667,9 +16682,9 @@ $)
   ${
     necon2ad.1 $e |- ( ph -> ( A = B -> -. ps ) ) $.
     $( Contrapositive inference for inequality.  (Contributed by NM,
-       19-Apr-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+       19-Apr-2007.)  (Proof rewritten by Jim Kingdon, 16-May-2018.) $)
     necon2ad $p |- ( ph -> ( ps -> A =/= B ) ) $=
-      ( wne wn wceq nne syl5bi con4d ) ACDFZBLGCDHABGCDIEJK $.
+      ( wceq wn wne con2d df-ne syl6ibr ) ABCDFZGCDHALBEICDJK $.
   $}
 
   ${
@@ -16689,155 +16704,178 @@ $)
   $}
 
   ${
-    necon1abii.1 $e |- ( -. ph <-> A = B ) $.
-    $( Contrapositive inference for inequality.  (Contributed by NM,
-       17-Mar-2007.) $)
-    necon1abii $p |- ( A =/= B <-> ph ) $=
-      ( wne wceq wn df-ne con1bii bitri ) BCEBCFZGABCHAKDIJ $.
+    necon1abiidc.1 $e |- ( DECID ph -> ( -. ph <-> A = B ) ) $.
+    $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
+       16-May-2018.) $)
+    necon1abiidc $p |- ( DECID ph -> ( A =/= B <-> ph ) ) $=
+      ( wne wceq wn wdc df-ne con1biidc syl5bb ) B
+      CEBCFZGAHABCIALDJK $.
   $}
 
   ${
-    necon1bbii.1 $e |- ( A =/= B <-> ph ) $.
-    $( Contrapositive inference for inequality.  (Contributed by NM,
-       17-Mar-2007.) $)
-    necon1bbii $p |- ( -. ph <-> A = B ) $=
-      ( wceq wn wne df-ne bitr3i con1bii ) BCEZAKFBCGABCHDIJ $.
+    necon1bbiidc.1 $e |- ( DECID A = B -> ( A =/= B <-> ph ) ) $.
+    $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
+       16-May-2018.) $)
+    necon1bbiidc $p |- ( DECID A = B -> ( -. ph <-> A = B ) ) $=
+      ( wceq wn wne wdc df-ne syl5bbr con1biidc ) BCEZAL
+      FBCGLHABCIDJK $.
   $}
 
   ${
-    necon1abid.1 $e |- ( ph -> ( -. ps <-> A = B ) ) $.
-    $( Contrapositive deduction for inequality.  (Contributed by NM,
-       21-Aug-2007.) $)
-    necon1abid $p |- ( ph -> ( A =/= B <-> ps ) ) $=
-      ( wne wceq wn df-ne con1bid syl5bb ) CDFCDGZHABCDIABLEJK $.
+    necon1abiddc.1 $e |- ( ph -> ( DECID ps -> ( -. ps <-> A = B ) ) ) $.
+    $( Contrapositive deduction for inequality.  (Contributed by Jim Kingdon,
+       16-May-2018.) $)
+    necon1abiddc $p |- ( ph -> ( DECID ps -> ( A =/= B <-> ps ) ) ) $=
+      ( wdc wceq wn wne con1biddc df-ne bibi1i syl6ibr
+      wb ) ABFCDGZHZBNCDIZBNABOEJQPBCDKLM $.
   $}
 
   ${
-    necon1bbid.1 $e |- ( ph -> ( A =/= B <-> ps ) ) $.
-    $( Contrapositive inference for inequality.  (Contributed by NM,
-       31-Jan-2008.) $)
-    necon1bbid $p |- ( ph -> ( -. ps <-> A = B ) ) $=
-      ( wceq wn wne df-ne syl5bbr con1bid ) ACDFZBLGCDHABCDIEJK $.
+    necon1bbiddc.1 $e |- ( ph -> ( DECID A = B -> ( A =/= B <-> ps ) ) ) $.
+    $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
+       16-May-2018.) $)
+    necon1bbiddc $p |- ( ph -> ( DECID A = B -> ( -. ps <-> A = B ) ) ) $=
+      ( wceq wdc wne wb wn df-ne bibi1i syl6ib con1biddc
+      ) ACDFZBAOGCDHZBIOJZBIEPQBCDKLMN $.
   $}
 
   ${
-    necon2abii.1 $e |- ( A = B <-> -. ph ) $.
-    $( Contrapositive inference for inequality.  (Contributed by NM,
-       2-Mar-2007.) $)
-    necon2abii $p |- ( ph <-> A =/= B ) $=
-      ( wne wceq wn bicomi necon1abii ) BCEAABCBCFAGDHIH $.
+    necon2abiidc.1 $e |- ( DECID ph -> ( A = B <-> -. ph ) ) $.
+    $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
+       16-May-2018.) $)
+    necon2abiidc $p |- ( DECID ph -> ( ph <-> A =/= B ) ) $=
+      ( wdc wne wceq wn bicomd necon1abiidc ) AEZBCFAABCKBCGAHDIJI $.
   $}
 
   ${
-    necon2bbii.1 $e |- ( ph <-> A =/= B ) $.
-    $( Contrapositive inference for inequality.  (Contributed by NM,
-       13-Apr-2007.) $)
-    necon2bbii $p |- ( A = B <-> -. ph ) $=
-      ( wn wceq wne bicomi necon1bbii ) AEBCFABCABCGDHIH $.
+    necon2bbii.1 $e |- ( DECID A = B -> ( ph <-> A =/= B ) ) $.
+    $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
+       16-May-2018.) $)
+    necon2bbii $p |- ( DECID A = B -> ( A = B <-> -. ph ) ) $=
+      ( wceq wdc wn wne bicomd necon1bbiidc ) BCEZFZAGKABCLABCHDIJI $.
   $}
 
   ${
-    necon2abid.1 $e |- ( ph -> ( A = B <-> -. ps ) ) $.
-    $( Contrapositive deduction for inequality.  (Contributed by NM,
-       18-Jul-2007.) $)
-    necon2abid $p |- ( ph -> ( ps <-> A =/= B ) ) $=
-      ( wceq wn wne con2bid df-ne syl6bbr ) ABCDFZGCDHALBEICDJK $.
+    necon2abiddc.1 $e |- ( ph -> ( DECID ps -> ( A = B <-> -. ps ) ) ) $.
+    $( Contrapositive deduction for inequality.  (Contributed by Jim Kingdon,
+       16-May-2018.) $)
+    necon2abiddc $p |- ( ph -> ( DECID ps -> ( ps <-> A =/= B ) ) ) $=
+      ( wdc wne wb wceq wn bicom syl6ib necon1abiddc ) ABFZCDGZBHBOHABCDANCDIZB
+      JZHQPHEPQKLMOBKL $.
   $}
 
   ${
-    necon2bbid.1 $e |- ( ph -> ( ps <-> A =/= B ) ) $.
-    $( Contrapositive deduction for inequality.  (Contributed by NM,
-       13-Apr-2007.) $)
-    necon2bbid $p |- ( ph -> ( A = B <-> -. ps ) ) $=
-      ( wceq wne wn df-ne syl6bb con2bid ) ABCDFZABCDGLHECDIJK $.
+    necon2bbiddc.1 $e |- ( ph -> ( DECID A = B -> ( ps <-> A =/= B ) ) ) $.
+    $( Contrapositive deduction for inequality.  (Contributed by Jim Kingdon,
+       16-May-2018.) $)
+    necon2bbiddc $p |- ( ph -> ( DECID A = B -> ( A = B <-> -. ps ) ) ) $=
+      ( wceq wdc wn wb wne bicom syl6ib necon1bbiddc ) A
+      CDFZGZBHZNINPIABCDAOBCDJZIQBIEBQKLMPNKL $.
   $}
 
   ${
-    necon4ai.1 $e |- ( A =/= B -> -. ph ) $.
-    $( Contrapositive inference for inequality.  (Contributed by NM,
-       16-Jan-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-    necon4ai $p |- ( ph -> A = B ) $=
-      ( wne wn wceq con2i nne sylib ) ABCEZFBCGKADHBCIJ $.
+    necon4aidc.1 $e |- ( DECID A = B -> ( A =/= B -> -. ph ) ) $.
+    $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
+       16-May-2018.) $)
+    necon4aidc $p |- ( DECID A = B -> ( ph -> A = B ) ) $=
+      ( wceq wdc wn wi wne df-ne syl5bir condc mpd ) BCEZF
+      ZNGZAGZHANHPBCIOQBCJDKNALM $.
   $}
 
   ${
-    necon4i.1 $e |- ( A =/= B -> C =/= D ) $.
-    $( Contrapositive inference for inequality.  (Contributed by NM,
-       17-Mar-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-    necon4i $p |- ( C = D -> A = B ) $=
-      ( wceq wne wn necon2bi nne sylib ) CDFABGZHABFLCDEIABJK $.
+    necon4idc.1 $e |- ( DECID A = B -> ( A =/= B -> C =/= D ) ) $.
+    $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
+       16-May-2018.) $)
+    necon4idc $p |- ( DECID A = B -> ( C = D -> A = B ) ) $=
+      ( wceq wdc wne wn df-ne syl6ib necon4aidc ) CDFZABABF
+      GABHCDHMIECDJKL $.
   $}
 
   ${
-    necon4ad.1 $e |- ( ph -> ( A =/= B -> -. ps ) ) $.
-    $( Contrapositive inference for inequality.  (Contributed by NM,
-       2-Apr-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-    necon4ad $p |- ( ph -> ( ps -> A = B ) ) $=
-      ( wne wn wceq con2d nne syl6ib ) ABCDFZGCDHALBEICDJK $.
+    necon4addc.1 $e |- ( ph -> ( DECID A = B -> ( A =/= B -> -. ps ) ) ) $.
+    $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
+       17-May-2018.) $)
+    necon4addc $p |- ( ph -> ( DECID A = B -> ( ps -> A = B ) ) ) $=
+      ( wceq wdc wne wn df-ne imbi1i condc syl5bi sylcom
+      wi ) ACDFZGZCDHZBIZOZBPOZETPIZSOQUARUBSCDJKPBLMN $.
   $}
 
   ${
-    necon4bd.1 $e |- ( ph -> ( -. ps -> A =/= B ) ) $.
-    $( Contrapositive inference for inequality.  (Contributed by NM,
-       1-Jun-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-    necon4bd $p |- ( ph -> ( A = B -> ps ) ) $=
-      ( wceq wne wn nne con1d syl5bir ) CDFCDGZHABCDIABLEJK $.
+    necon4bddc.1 $e |- ( ph -> ( DECID ps -> ( -. ps -> A =/= B ) ) ) $.
+    $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
+       17-May-2018.) $)
+    necon4bddc $p |- ( ph -> ( DECID ps -> ( A = B -> ps ) ) ) $=
+      ( wdc wn wceq wi wne df-ne syl8ib condc sylcom ) ABF
+      ZBGZCDHZGZIQBIAOPCDJRECDKLBQMN $.
   $}
 
   ${
-    necon4d.1 $e |- ( ph -> ( A =/= B -> C =/= D ) ) $.
-    $( Contrapositive inference for inequality.  (Contributed by NM,
-       2-Apr-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-    necon4d $p |- ( ph -> ( C = D -> A = B ) ) $=
-      ( wceq wne wn necon2bd nne syl6ib ) ADEGBCHZIBCGAMDEFJBCKL $.
+    necon4ddc.1 $e |- ( ph -> ( DECID A = B -> ( A =/= B -> C =/= D ) ) ) $.
+    $( Contrapositive inference for inequality.  (Contributed by Jim Kingdon,
+       17-May-2018.) $)
+    necon4ddc $p |- ( ph -> ( DECID A = B -> ( C = D -> A = B ) ) ) $=
+      ( wceq wdc wn wne df-ne imbi12i syl6ib condc sylcom
+     wi ) ABCGZHZQIZDEGZIZPZTQPARBCJZDEJZPUBFUCSUDUABCKDEKLMQTNO $.
   $}
 
   ${
-    necon4abid.1 $e |- ( ph -> ( A =/= B <-> -. ps ) ) $.
-    $( Contrapositive law deduction for inequality.  (Contributed by NM,
-       11-Jan-2008.) $)
-    necon4abid $p |- ( ph -> ( A = B <-> ps ) ) $=
-      ( wceq wn wne df-ne syl5bbr con4bid ) ACDFZBLGCDHABGCDIEJK $.
+    necon4abiddc.1 $e |- ( ph -> ( DECID A = B -> ( DECID ps ->
+        ( A =/= B <-> -. ps ) ) ) ) $.
+    $( Contrapositive law deduction for inequality.  (Contributed by Jim
+       Kingdon, 18-May-2018.) $)
+    necon4abiddc $p |- ( ph -> ( DECID A = B -> ( DECID ps ->
+        ( A = B <-> ps ) ) ) ) $=
+      ( wceq wdc wne wn wb df-ne bibi1i syl8ib con4biddc
+      ) ACDFZBAOGBGCDHZBIZJOIZQJEPRQCDKLMN $.
   $}
 
   ${
-    necon4bbid.1 $e |- ( ph -> ( -. ps <-> A =/= B ) ) $.
-    $( Contrapositive law deduction for inequality.  (Contributed by NM,
-       9-May-2012.) $)
-    necon4bbid $p |- ( ph -> ( ps <-> A = B ) ) $=
-      ( wceq wn wne bicomd necon4abid ) ACDFBABCDABGCDHEIJI $.
+    necon4bbiddc.1 $e |- ( ph -> ( DECID ps -> ( DECID A = B ->
+        ( -. ps <-> A =/= B ) ) ) ) $.
+    $( Contrapositive law deduction for inequality.  (Contributed by Jim
+       Kingdon, 19-May-2018.) $)
+    necon4bbiddc $p |- ( ph -> ( DECID ps -> ( DECID A = B ->
+        ( ps <-> A = B ) ) ) ) $=
+      ( wdc wceq wb wne wn bicom syl8ib com23 necon4abiddc ) ABFZCDGZ
+      FZPBHZBPHAQORABCDAOQCDIZBJZHZAOQTSHUAETSKLMNMPBKL $.
   $}
 
   ${
-    necon4bid.1 $e |- ( ph -> ( A =/= B <-> C =/= D ) ) $.
-    $( Contrapositive law deduction for inequality.  (Contributed by NM,
-       29-Jun-2007.) $)
-    necon4bid $p |- ( ph -> ( A = B <-> C = D ) ) $=
-      ( wceq wne wn necon2bbid nne syl6rbb ) ADEGBCHZIBCGAMDEFJBCKL $.
+    necon4biddc.1 $e |- ( ph -> ( DECID A = B -> ( DECID C = D ->
+        ( A =/= B <-> C =/= D ) ) ) ) $.
+    $( Contrapositive law deduction for inequality.  (Contributed by Jim
+       Kingdon, 19-May-2018.) $)
+    necon4biddc $p |- ( ph -> ( DECID A = B -> ( DECID C = D ->
+        ( A = B <-> C = D ) ) ) ) $=
+      ( wceq wdc wne wb df-ne bibi2i syl8ib necon4abiddc
+      wn ) ADEGZBCABCGHPHBCIZDEIZJQPOZJFRSQDEKLMN $.
   $}
 
   ${
-    necon1ad.1 $e |- ( ph -> ( -. ps -> A = B ) ) $.
-    $( Contrapositive deduction for inequality.  (Contributed by NM,
-       2-Apr-2007.) $)
-    necon1ad $p |- ( ph -> ( A =/= B -> ps ) ) $=
-      ( wne wceq wn df-ne con1d syl5bi ) CDFCDGZHABCDIABLEJK $.
+    necon1addc.1 $e |- ( ph -> ( DECID ps -> ( -. ps -> A = B ) ) ) $.
+    $( Contrapositive deduction for inequality.  (Contributed by Jim Kingdon,
+       19-May-2018.) $)
+    necon1addc $p |- ( ph -> ( DECID ps -> ( A =/= B -> ps ) ) ) $=
+      ( wne wceq wn wdc df-ne wi con1dc sylcom syl7bi ) CD
+      FCDGZHZABIZBCDJAQBHOKPBKEBOLMN $.
   $}
 
   ${
-    necon1bd.1 $e |- ( ph -> ( A =/= B -> ps ) ) $.
-    $( Contrapositive deduction for inequality.  (Contributed by NM,
-       21-Mar-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-    necon1bd $p |- ( ph -> ( -. ps -> A = B ) ) $=
-      ( wn wne wceq con3d nne syl6ib ) ABFCDGZFCDHALBEICDJK $.
+    necon1bddc.1 $e |- ( ph -> ( DECID A = B -> ( A =/= B -> ps ) ) ) $.
+    $( Contrapositive deduction for inequality.  (Contributed by Jim Kingdon,
+       19-May-2018.) $)
+    necon1bddc $p |- ( ph -> ( DECID A = B -> ( -. ps -> A = B ) ) ) $=
+      ( wceq wdc wn wne df-ne imbi1i syl6ib con1dc sylcom
+      wi ) ACDFZGZPHZBOZBHPOAQCDIZBOSETRBCDJKLPBMN $.
   $}
 
   ${
-    necon1d.1 $e |- ( ph -> ( A =/= B -> C = D ) ) $.
-    $( Contrapositive law deduction for inequality.  (Contributed by NM,
-       28-Dec-2008.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-    necon1d $p |- ( ph -> ( C =/= D -> A = B ) ) $=
-      ( wne wceq wn nne syl6ibr necon4ad ) ADEGZBCABCGDEHMIFDEJKL $.
+    necon1ddc.1 $e |- ( ph -> ( DECID A = B -> ( A =/= B -> C = D ) ) ) $.
+    $( Contrapositive law deduction for inequality.  (Contributed by Jim
+       Kingdon, 19-May-2018.) $)
+    necon1ddc $p |- ( ph -> ( DECID A = B -> ( C =/= D -> A = B ) ) ) $=
+      ( wne wceq wn wdc df-ne necon1bddc syl7bi ) DEGDEHZIA
+      BCHZJODEKANBCFLM $.
   $}
 
   ${
