@@ -4511,6 +4511,15 @@ $)
       ( wn wi pm2.21 syl ) ABEBCFDBCGH $.
   $}
 
+  ${
+    pm2.21dd.1 $e |- ( ph -> ps ) $.
+    pm2.21dd.2 $e |- ( ph -> -. ps ) $.
+    $( A contradiction implies anything.  Deduction from ~ pm2.21 .
+       (Contributed by Mario Carneiro, 9-Feb-2017.) $)
+    pm2.21dd $p |- ( ph -> ch ) $=
+      ( pm2.21d mpd ) ABCDABCEFG $.
+  $}
+
   $( Theorem *2.24 of [WhiteheadRussell] p. 104.  (Contributed by NM,
      3-Jan-2005.) $)
   pm2.24 $p |- ( ph -> ( -. ph -> ps ) ) $=
