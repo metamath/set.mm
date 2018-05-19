@@ -16896,10 +16896,13 @@ $)
       ( wceq con2i necon2ai ) ABCABCEDFG $.
   $}
 
-  $( Contraposition law for inequality.  (Contributed by NM, 28-Dec-2008.) $)
-  nebi $p |- ( ( A = B <-> C = D ) <-> ( A =/= B <-> C =/= D ) ) $=
-    ( wceq wb wne id necon3bid necon4bid impbii ) ABECDEFZABGCDGFZLABCDLHIMABCD
-    MHJK $.
+  $( Contraposition law for inequality.  (Contributed by Jim Kingdon,
+     19-May-2018.) $)
+  nebidc $p |- ( DECID A = B -> ( DECID C = D ->
+      ( ( A = B <-> C = D ) <-> ( A =/= B <-> C =/= D ) ) ) ) $=
+    ( wdc wb wne wa id necon3bid wi a1d necon4biddc com3l imp impbid2
+    wceq ex ) ABQZEZCDQZEZSUAFZABGCDGFZFTUBHUCUDUCABCDUCIJTUBUDUCKUDT
+    UBUCUDABCDUDUBUDKTUDUDUBUDILLMNOPR $.
 
   $( Theorem *13.18 in [WhiteheadRussell] p. 178.  (Contributed by Andrew
      Salmon, 3-Jun-2011.) $)
