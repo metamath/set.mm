@@ -16923,69 +16923,6 @@ $)
       ( wceq neneqd pm2.21dd ) ACDGBEACDFHI $.
   $}
 
-  ${
-    pm2.61ne.1 $e |- ( A = B -> ( ps <-> ch ) ) $.
-    pm2.61ne.2 $e |- ( ( ph /\ A =/= B ) -> ps ) $.
-    pm2.61ne.3 $e |- ( ph -> ch ) $.
-    $( Deduction eliminating an inequality in an antecedent.  (Contributed by
-       NM, 24-May-2006.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-    pm2.61ne $p |- ( ph -> ps ) $=
-      ( wne wi expcom wn wceq nne syl5ibr sylbi pm2.61i ) DEIZABJZARBGKRLDEMZSD
-      ENABTCHFOPQ $.
-  $}
-
-  ${
-    pm2.61ine.1 $e |- ( A = B -> ph ) $.
-    pm2.61ine.2 $e |- ( A =/= B -> ph ) $.
-    $( Inference eliminating an inequality in an antecedent.  (Contributed by
-       NM, 16-Jan-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-    pm2.61ine $p |- ph $=
-      ( wne wn wceq nne sylbi pm2.61i ) BCFZAELGBCHABCIDJK $.
-  $}
-
-  ${
-    pm2.61dne.1 $e |- ( ph -> ( A = B -> ps ) ) $.
-    pm2.61dne.2 $e |- ( ph -> ( A =/= B -> ps ) ) $.
-    $( Deduction eliminating an inequality in an antecedent.  (Contributed by
-       NM, 1-Jun-2007.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-    pm2.61dne $p |- ( ph -> ps ) $=
-      ( wne wn wceq nne syl5bi pm2.61d ) ACDGZBFMHCDIABCDJEKL $.
-  $}
-
-  ${
-    pm2.61dane.1 $e |- ( ( ph /\ A = B ) -> ps ) $.
-    pm2.61dane.2 $e |- ( ( ph /\ A =/= B ) -> ps ) $.
-    $( Deduction eliminating an inequality in an antecedent.  (Contributed by
-       NM, 30-Nov-2011.) $)
-    pm2.61dane $p |- ( ph -> ps ) $=
-      ( wceq ex wne pm2.61dne ) ABCDACDGBEHACDIBFHJ $.
-  $}
-
-  ${
-    pm2.61da2ne.1 $e |- ( ( ph /\ A = B ) -> ps ) $.
-    pm2.61da2ne.2 $e |- ( ( ph /\ C = D ) -> ps ) $.
-    pm2.61da2ne.3 $e |- ( ( ph /\ ( A =/= B /\ C =/= D ) ) -> ps ) $.
-    $( Deduction eliminating two inequalities in an antecedent.  (Contributed
-       by NM, 29-May-2013.) $)
-    pm2.61da2ne $p |- ( ph -> ps ) $=
-      ( wne wa wceq adantlr anassrs pm2.61dane ) ABCDGACDJZKBEFAEFLBPHMAPEFJBIN
-      OO $.
-  $}
-
-  ${
-    pm2.61da3ne.1 $e |- ( ( ph /\ A = B ) -> ps ) $.
-    pm2.61da3ne.2 $e |- ( ( ph /\ C = D ) -> ps ) $.
-    pm2.61da3ne.3 $e |- ( ( ph /\ E = F ) -> ps ) $.
-    pm2.61da3ne.4 $e |- ( ( ph /\ ( A =/= B /\ C =/= D /\ E =/= F ) )
-          -> ps ) $.
-    $( Deduction eliminating three inequalities in an antecedent.  (Contributed
-       by NM, 15-Jun-2013.) $)
-    pm2.61da3ne $p |- ( ph -> ps ) $=
-      ( wne wa wceq adantlr simpll simplrl simplrr simpr pm2.61dane pm2.61da2ne
-      syl13anc ) ABCDEFIJACDMZEFMZNZNZBGHAGHOBUFKPUGGHMZNAUDUEUHBAUFUHQAUDUEUHR
-      AUDUEUHSUGUHTLUCUAUB $.
-  $}
-
   $( Commutation of inequality.  (Contributed by NM, 14-May-1999.) $)
   necom $p |- ( A =/= B <-> B =/= A ) $=
     ( eqcom necon3bii ) ABBAABCD $.
