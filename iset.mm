@@ -16955,11 +16955,6 @@ $)
     ( wne w3a wceq wn w3o df-ne 3anbi123i 3ioran bitr4i ) ABGZCDGZEFG
     ZHABIZJZCDIZJZEFIZJZHSUAUCKJPTQUBRUDABLCDLEFLMSUAUCNO $.
 
-  $( A De Morgan's law for inequality.  (Contributed by NM, 18-May-2007.) $)
-  neorian $p |- ( ( A =/= B \/ C =/= D ) <-> -. ( A = B /\ C = D ) ) $=
-    ( wne wo wceq wn wa df-ne orbi12i ianor bitr4i ) ABEZCDEZFABGZHZCDGZHZFPRIH
-    NQOSABJCDJKPRLM $.
-
   ${
     nemtbir.1 $e |- A =/= B $.
     nemtbir.2 $e |- ( ph <-> A = B ) $.
