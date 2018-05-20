@@ -16943,11 +16943,6 @@ $)
       ( wne necom sylib ) ABCECBEDBCFG $.
   $}
 
-  $( Logical OR with an equality.  (Contributed by NM, 29-Apr-2007.) $)
-  neor $p |- ( ( A = B \/ ps ) <-> ( A =/= B -> ps ) ) $=
-    ( wceq wo wn wi wne df-or df-ne imbi1i bitr4i ) BCDZAEMFZAGBCHZAGMAIONABCJK
-    L $.
-
   $( A De Morgan's law for inequality.  (Contributed by NM, 18-May-2007.) $)
   neanior $p |- ( ( A =/= B /\ C =/= D ) <-> -. ( A = B \/ C = D ) ) $=
     ( wne wa wceq wn wo df-ne anbi12i pm4.56 bitri ) ABEZCDEZFABGZHZCDGZHZFPRIH
