@@ -16948,11 +16948,12 @@ $)
     ( wne wa wceq wn wo df-ne anbi12i pm4.56 bitri ) ABEZCDEZFABGZHZCDGZHZFPRIH
     NQOSABJCDJKPRLM $.
 
-  $( A De Morgan's law for inequality.  (Contributed by NM, 30-Sep-2013.) $)
+  $( A De Morgan's law for inequality.  (Contributed by NM, 30-Sep-2013.)
+     (Proof rewritten by Jim Kingdon, 19-May-2018.) $)
   ne3anior $p |- ( ( A =/= B /\ C =/= D /\ E =/= F )
         <-> -. ( A = B \/ C = D \/ E = F ) ) $=
-    ( wne w3a wn w3o wceq 3anor nne 3orbi123i xchbinx ) ABGZCDGZEFGZHPIZQIZRIZJ
-    ABKZCDKZEFKZJPQRLSUBTUCUAUDABMCDMEFMNO $.
+    ( wne w3a wceq wn w3o df-ne 3anbi123i 3ioran bitr4i ) ABGZCDGZEFG
+    ZHABIZJZCDIZJZEFIZJZHSUAUCKJPTQUBRUDABLCDLEFLMSUAUCNO $.
 
   $( A De Morgan's law for inequality.  (Contributed by NM, 18-May-2007.) $)
   neorian $p |- ( ( A =/= B \/ C =/= D ) <-> -. ( A = B /\ C = D ) ) $=
