@@ -497,51 +497,29 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        The axioms of propositional calculus
+             Propositional logic axioms for implication
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Axiom _Simp_.  Axiom A1 of [Margaris] p. 49.  One of the 3 axioms of
-     propositional calculus.  The 3 axioms are also given as Definition 2.1 of
-     [Hamilton] p. 28.  This axiom is called _Simp_ or "the principle of
+  $( Axiom _Simp_.  Axiom A1 of [Margaris] p. 49.  One of the axioms of
+     propositional calculus.  This axiom is called _Simp_ or "the principle of
      simplification" in _Principia Mathematica_ (Theorem *2.02 of
      [WhiteheadRussell] p. 100) because "it enables us to pass from the joint
      assertion of ` ph ` and ` ps ` to the assertion of ` ph ` simply."
 
-     _General remarks_:  Propositional calculus (axioms ~ ax-1 through ~ ax-3
-     and rule ~ ax-mp ) can be thought of as asserting formulas that are
-     universally "true" when their variables are replaced by any combination of
-     "true" and "false."  Propositional calculus was first formalized by Frege
-     in 1879, using as his axioms (in addition to rule ~ ax-mp ) the wffs
-     ~ ax-1 , ~ ax-2 , ~ pm2.04 , ~ con3 , ~ notnot2 , and ~ notnot1 .  Around
-     1930, Lukasiewicz simplified the system by eliminating the third (which
-     follows from the first two, as you can see by looking at the proof of
-     ~ pm2.04 ) and replacing the last three with our ~ ax-3 .  (Thanks to Ted
-     Ulrich for this information.)
-
      The theorems of propositional calculus are also called _tautologies_.
-     Tautologies can be proved very simply using truth tables, based on the
-     true/false interpretation of propositional calculus.  To do this, we
-     assign all possible combinations of true and false to the wff variables
-     and verify that the result (using the rules described in ~ wi and ~ wn )
-     always evaluates to true.  This is called the _semantic_ approach.  Our
-     approach is called the _syntactic_ approach, in which everything is
-     derived from axioms.  A metatheorem called the Completeness Theorem for
-     Propositional Calculus shows that the two approaches are equivalent and
-     even provides an algorithm for automatically generating syntactic proofs
-     from a truth table.  Those proofs, however, tend to be long, since truth
-     tables grow exponentially with the number of variables, and the much
-     shorter proofs that we show here were found manually.  (Contributed by NM,
-     5-Aug-1993.) $)
+     Although classical propositional logic tautologies can be proved using
+     truth tables, there is no similarly simple system for intuitionistic
+     propositional logic, so proving tautologies from axioms is the preferred
+     approach.  (Contributed by NM, 5-Aug-1993.) $)
   ax-1 $a |- ( ph -> ( ps -> ph ) ) $.
 
-  $( Axiom _Frege_.  Axiom A2 of [Margaris] p. 49.  One of the 3 axioms of
-     propositional calculus.  It "distributes" an antecedent over two
-     consequents.  This axiom was part of Frege's original system and is known
-     as _Frege_ in the literature.  It is also proved as Theorem *2.77 of
-     [WhiteheadRussell] p. 108.  The other direction of this axiom also turns
-     out to be true, as demonstrated by ~ pm5.41 .  (Contributed by NM,
-     5-Aug-1993.) $)
+  $( Axiom _Frege_.  Axiom A2 of [Margaris] p. 49.  This axiom "distributes" an
+     antecedent over two consequents.  This axiom was part of Frege's original
+     system and is known as _Frege_ in the literature.  It is also proved as
+     Theorem *2.77 of [WhiteheadRussell] p. 108.  The other direction of this
+     axiom also turns out to be true, as demonstrated by ~ pm5.41 .
+     (Contributed by NM, 5-Aug-1993.) $)
   ax-2 $a |- ( ( ph -> ( ps -> ch ) ) -> ( ( ph -> ps ) -> ( ph -> ch ) ) ) $.
 
   $(
@@ -572,7 +550,8 @@ $(
         Logical implication
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-   The results in this section are based on implication only, and avoid ~ ax-3 .
+   The results in this section are based on implication only, and only use
+   ~ ax-1 , ~ ax-2 , and ~ ax-mp .
    In an implication, the wff before the arrow is called the "antecedent" and
    the wff after the arrow is called the "consequent."
 
