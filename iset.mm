@@ -17021,11 +17021,6 @@ $)
       ( wnel wcel wn df-nel nfeld nfnd nfxfrd ) CDGCDHZIABCDJANBABCDEFKLM $.
   $}
 
-  $( Negation of negated membership, analogous to ~ nne .  (Contributed by
-     Alexander van der Vekens, 18-Jan-2018.) $)
-  nnel $p |- ( -. A e/ B <-> A e. B ) $=
-    ( wcel wn wnel notnot bicomi df-nel xchnxbir ) ABCZDZJABEJKDJFGABHI $.
-
 $(
 ###############################################################################
                             CLASSICAL LOGIC
