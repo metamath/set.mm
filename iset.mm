@@ -16972,6 +16972,61 @@ $)
   $}
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+        Negated membership
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( Equality theorem for negated membership.  (Contributed by NM,
+     20-Nov-1994.) $)
+  neleq1 $p |- ( A = B -> ( A e/ C <-> B e/ C ) ) $=
+    ( wceq wcel wn wnel eleq1 notbid df-nel 3bitr4g ) ABDZACEZFBCEZFACGBCGLMNAB
+    CHIACJBCJK $.
+
+  $( Equality theorem for negated membership.  (Contributed by NM,
+     20-Nov-1994.) $)
+  neleq2 $p |- ( A = B -> ( C e/ A <-> C e/ B ) ) $=
+    ( wceq wcel wn wnel eleq2 notbid df-nel 3bitr4g ) ABDZCAEZFCBEZFCAGCBGLMNAB
+    CHICAJCBJK $.
+
+  ${
+    neleq12d.1 $e |- ( ph -> A = B ) $.
+    neleq12d.2 $e |- ( ph -> C = D ) $.
+    $( Equality theorem for negated membership.  (Contributed by FL,
+       10-Aug-2016.) $)
+    neleq12d $p |- ( ph -> ( A e/ C <-> B e/ D ) ) $=
+      ( wnel wceq wb neleq1 syl neleq2 bitrd ) ABDHZCDHZCEHZABCIOPJFBCDKLADEIPQ
+      JGDECMLN $.
+  $}
+
+  ${
+    $d y A $.  $d z B $.
+    nfnel.1 $e |- F/_ x A $.
+    nfnel.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for negated membership.  (Contributed
+       by David Abernethy, 26-Jun-2011.)  (Revised by Mario Carneiro,
+       7-Oct-2016.) $)
+    nfnel $p |- F/ x A e/ B $=
+      ( wnel wcel wn df-nel nfel nfn nfxfr ) BCFBCGZHABCIMAABCDEJKL $.
+  $}
+
+  ${
+    $d y A $.  $d z B $.
+    nfneld.1 $e |- ( ph -> F/_ x A ) $.
+    nfneld.2 $e |- ( ph -> F/_ x B ) $.
+    $( Bound-variable hypothesis builder for negated membership.  (Contributed
+       by David Abernethy, 26-Jun-2011.)  (Revised by Mario Carneiro,
+       7-Oct-2016.) $)
+    nfneld $p |- ( ph -> F/ x A e/ B ) $=
+      ( wnel wcel wn df-nel nfeld nfnd nfxfrd ) CDGCDHZIABCDJANBABCDEFKLM $.
+  $}
+
+  $( Negation of negated membership, analogous to ~ nne .  (Contributed by
+     Alexander van der Vekens, 18-Jan-2018.) $)
+  nnel $p |- ( -. A e/ B <-> A e. B ) $=
+    ( wcel wn wnel notnot bicomi df-nel xchnxbir ) ABCZDZJABEJKDJFGABHI $.
+
+$(
 ###############################################################################
                             CLASSICAL LOGIC
 ###############################################################################
