@@ -12496,9 +12496,9 @@ $)
 
      This axiom is redundant, as shown by theorem ~ ax11o .
 
-     Normally, ~ ax11o should be used rather than ~ ax-11o , except by theorems
-     specifically studying the latter's properties.  (Contributed by NM,
-     5-Aug-1993.) $)
+     This axiom is obsolete and should no longer be used.  It is proved above
+     as theorem ~ ax11o .  (Contributed by NM, 5-Aug-1993.)
+     (New usage is discouraged.) $)
   ax-11o $a |- ( -. A. x x = y ->
              ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $.
 
