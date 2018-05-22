@@ -12368,14 +12368,10 @@ $)
        can see from its uses.
 
        This axiom is redundant if we include ~ ax-17 ; see theorem ~ ax16 .
-       Alternately, ~ ax-17 becomes logically redundant in the presence of this
-       axiom, but without ~ ax-17 we lose the more powerful metalogic that
-       results from being able to express the concept of a set variable not
-       occurring in a wff (as opposed to just two set variables being
-       distinct).  We retain ~ ax-16 here to provide logical completeness for
-       systems with the simpler metalogic that results from omitting ~ ax-17 ,
-       which might be easier to study for some theoretical purposes.
-       (Contributed by NM, 5-Aug-1993.) $)
+
+       This axiom is obsolete and should no longer be used.  It is proved above
+       as theorem ~ ax16 .  (Contributed by NM, 5-Aug-1993.)
+       (New usage is discouraged.) $)
     ax-16 $a |- ( A. x x = y -> ( ph -> A. x ph ) ) $.
   $}
 
@@ -12833,7 +12829,7 @@ $)
     $( A generalization of axiom ~ ax-16 .  (Contributed by NM, 5-Aug-1993.)
        (Proof shortened by Andrew Salmon, 25-May-2011.) $)
     a16g $p |- ( A. x x = y -> ( ph -> A. z ph ) ) $=
-      ( weq wal aev ax-16 biidd dral1 biimprd sylsyld ) BCEBFDBEDFZAABFZADFZBCD
+      ( weq wal aev ax16 biidd dral1 biimprd sylsyld ) BCEBFDBEDFZAABFZADFZBCD
       DBGABCHMONAADBMAIJKL $.
 
     $( A generalization of axiom ~ ax-16 .  (Contributed by NM, 5-Aug-1993.) $)
@@ -18136,7 +18132,7 @@ $)
     $( A condition implying that at least two things exist.  (Contributed by
        NM, 10-Apr-2004.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
     exists2 $p |- ( ( E. x ph /\ E. x -. ph ) -> -. E! x x = x ) $=
-      ( vy wex wn cv wceq weu wal hbeu1 hba1 wi exists1 ax-16 sylbi exlimd alex
+      ( vy wex wn cv wceq weu wal hbeu1 hba1 wi exists1 ax16 sylbi exlimd alex
       com12 syl6ib con2d imp ) ABDZAEBDZBFZUDGZBHZEUBUFUCUBUFABIZUCEUFUBUGUFAUG
       BUEBJABKUFUDCFGBIAUGLBCMABCNOPRABQSTUA $.
   $}
