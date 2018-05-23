@@ -17383,6 +17383,2114 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Restricted quantification
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Extend wff notation to include restricted universal quantification. $)
+  wral $a wff A. x e. A ph $.
+
+  $( Extend wff notation to include restricted existential quantification. $)
+  wrex $a wff E. x e. A ph $.
+
+  $( Extend wff notation to include restricted existential uniqueness. $)
+  wreu $a wff E! x e. A ph $.
+
+  $( Extend wff notation to include restricted "at most one." $)
+  wrmo $a wff E* x e. A ph $.
+
+  $( Extend class notation to include the restricted class abstraction (class
+     builder). $)
+  crab $a class { x e. A | ph } $.
+
+  $( Define restricted universal quantification.  Special case of Definition
+     4.15(3) of [TakeutiZaring] p. 22.  (Contributed by NM, 19-Aug-1993.) $)
+  df-ral $a |- ( A. x e. A ph <-> A. x ( x e. A -> ph ) ) $.
+
+  $( Define restricted existential quantification.  Special case of Definition
+     4.15(4) of [TakeutiZaring] p. 22.  (Contributed by NM, 30-Aug-1993.) $)
+  df-rex $a |- ( E. x e. A ph <-> E. x ( x e. A /\ ph ) ) $.
+
+  $( Define restricted existential uniqueness.  (Contributed by NM,
+     22-Nov-1994.) $)
+  df-reu $a |- ( E! x e. A ph <-> E! x ( x e. A /\ ph ) ) $.
+
+  $( Define restricted "at most one".  (Contributed by NM, 16-Jun-2017.) $)
+  df-rmo $a |- ( E* x e. A ph <-> E* x ( x e. A /\ ph ) ) $.
+
+  $( Define a restricted class abstraction (class builder), which is the class
+     of all ` x ` in ` A ` such that ` ph ` is true.  Definition of
+     [TakeutiZaring] p. 20.  (Contributed by NM, 22-Nov-1994.) $)
+  df-rab $a |- { x e. A | ph } = { x | ( x e. A /\ ph ) } $.
+
+  $( Relationship between restricted universal and existential quantifiers.
+     (Contributed by NM, 21-Jan-1997.) $)
+  ralnex $p |- ( A. x e. A -. ph <-> -. E. x e. A ph ) $=
+    ( wn wral cv wcel wi wal wrex df-ral wa wex alinexa df-rex xchbinxr bitri )
+    ADZBCEBFCGZRHBIZABCJZDRBCKTSALBMUASABNABCOPQ $.
+
+  $( Relationship between restricted universal and existential quantifiers.
+     (Contributed by NM, 21-Jan-1997.) $)
+  rexnal $p |- ( E. x e. A -. ph <-> -. A. x e. A ph ) $=
+    ( wn wrex cv wcel wa wex wral df-rex wi wal exanali df-ral xchbinxr bitri )
+    ADZBCEBFCGZRHBIZABCJZDRBCKTSALBMUASABNABCOPQ $.
+
+  $( Relationship between restricted universal and existential quantifiers.
+     (Contributed by NM, 21-Jan-1997.) $)
+  dfral2 $p |- ( A. x e. A ph <-> -. E. x e. A -. ph ) $=
+    ( wn wrex wral rexnal con2bii ) ADBCEABCFABCGH $.
+
+  $( Relationship between restricted universal and existential quantifiers.
+     (Contributed by NM, 21-Jan-1997.) $)
+  dfrex2 $p |- ( E. x e. A ph <-> -. A. x e. A -. ph ) $=
+    ( wn wral wrex ralnex con2bii ) ADBCEABCFABCGH $.
+
+  ${
+    ralbida.1 $e |- F/ x ph $.
+    ralbida.2 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for restricted universal quantifier (deduction
+       rule).  (Contributed by NM, 6-Oct-2003.) $)
+    ralbida $p |- ( ph -> ( A. x e. A ps <-> A. x e. A ch ) ) $=
+      ( cv wcel wi wal wral pm5.74da albid df-ral 3bitr4g ) ADHEIZBJZDKQCJZDKBD
+      ELCDELARSDFAQBCGMNBDEOCDEOP $.
+
+    $( Formula-building rule for restricted existential quantifier (deduction
+       rule).  (Contributed by NM, 6-Oct-2003.) $)
+    rexbida $p |- ( ph -> ( E. x e. A ps <-> E. x e. A ch ) ) $=
+      ( cv wcel wa wex wrex pm5.32da exbid df-rex 3bitr4g ) ADHEIZBJZDKQCJZDKBD
+      ELCDELARSDFAQBCGMNBDEOCDEOP $.
+  $}
+
+  ${
+    $d x ph $.
+    ralbidva.1 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for restricted universal quantifier (deduction
+       rule).  (Contributed by NM, 4-Mar-1997.) $)
+    ralbidva $p |- ( ph -> ( A. x e. A ps <-> A. x e. A ch ) ) $=
+      ( nfv ralbida ) ABCDEADGFH $.
+
+    $( Formula-building rule for restricted existential quantifier (deduction
+       rule).  (Contributed by NM, 9-Mar-1997.) $)
+    rexbidva $p |- ( ph -> ( E. x e. A ps <-> E. x e. A ch ) ) $=
+      ( nfv rexbida ) ABCDEADGFH $.
+  $}
+
+  ${
+    ralbid.1 $e |- F/ x ph $.
+    ralbid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for restricted universal quantifier (deduction
+       rule).  (Contributed by NM, 27-Jun-1998.) $)
+    ralbid $p |- ( ph -> ( A. x e. A ps <-> A. x e. A ch ) ) $=
+      ( wb cv wcel adantr ralbida ) ABCDEFABCHDIEJGKL $.
+
+    $( Formula-building rule for restricted existential quantifier (deduction
+       rule).  (Contributed by NM, 27-Jun-1998.) $)
+    rexbid $p |- ( ph -> ( E. x e. A ps <-> E. x e. A ch ) ) $=
+      ( wb cv wcel adantr rexbida ) ABCDEFABCHDIEJGKL $.
+  $}
+
+  ${
+    $d x ph $.
+    ralbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for restricted universal quantifier (deduction
+       rule).  (Contributed by NM, 20-Nov-1994.) $)
+    ralbidv $p |- ( ph -> ( A. x e. A ps <-> A. x e. A ch ) ) $=
+      ( nfv ralbid ) ABCDEADGFH $.
+
+    $( Formula-building rule for restricted existential quantifier (deduction
+       rule).  (Contributed by NM, 20-Nov-1994.) $)
+    rexbidv $p |- ( ph -> ( E. x e. A ps <-> E. x e. A ch ) ) $=
+      ( nfv rexbid ) ABCDEADGFH $.
+  $}
+
+  ${
+    $d x ph $.
+    ralbidv2.1 $e |- ( ph -> ( ( x e. A -> ps ) <-> ( x e. B -> ch ) ) ) $.
+    $( Formula-building rule for restricted universal quantifier (deduction
+       rule).  (Contributed by NM, 6-Apr-1997.) $)
+    ralbidv2 $p |- ( ph -> ( A. x e. A ps <-> A. x e. B ch ) ) $=
+      ( cv wcel wi wal wral albidv df-ral 3bitr4g ) ADHZEIBJZDKPFICJZDKBDELCDFL
+      AQRDGMBDENCDFNO $.
+  $}
+
+  ${
+    $d x ph $.
+    rexbidv2.1 $e |- ( ph -> ( ( x e. A /\ ps ) <-> ( x e. B /\ ch ) ) ) $.
+    $( Formula-building rule for restricted existential quantifier (deduction
+       rule).  (Contributed by NM, 22-May-1999.) $)
+    rexbidv2 $p |- ( ph -> ( E. x e. A ps <-> E. x e. B ch ) ) $=
+      ( cv wcel wa wex wrex exbidv df-rex 3bitr4g ) ADHZEIBJZDKPFICJZDKBDELCDFL
+      AQRDGMBDENCDFNO $.
+  $}
+
+  ${
+    ralbii.1 $e |- ( ph <-> ps ) $.
+    $( Inference adding restricted universal quantifier to both sides of an
+       equivalence.  (Contributed by NM, 23-Nov-1994.)  (Revised by Mario
+       Carneiro, 17-Oct-2016.) $)
+    ralbii $p |- ( A. x e. A ph <-> A. x e. A ps ) $=
+      ( wral wb wtru a1i ralbidv trud ) ACDFBCDFGHABCDABGHEIJK $.
+
+    $( Inference adding restricted existential quantifier to both sides of an
+       equivalence.  (Contributed by NM, 23-Nov-1994.)  (Revised by Mario
+       Carneiro, 17-Oct-2016.) $)
+    rexbii $p |- ( E. x e. A ph <-> E. x e. A ps ) $=
+      ( wrex wb wtru a1i rexbidv trud ) ACDFBCDFGHABCDABGHEIJK $.
+
+    $( Inference adding two restricted universal quantifiers to both sides of
+       an equivalence.  (Contributed by NM, 1-Aug-2004.) $)
+    2ralbii $p |- ( A. x e. A A. y e. B ph <-> A. x e. A A. y e. B ps ) $=
+      ( wral ralbii ) ADFHBDFHCEABDFGII $.
+
+    $( Inference adding two restricted existential quantifiers to both sides of
+       an equivalence.  (Contributed by NM, 11-Nov-1995.) $)
+    2rexbii $p |- ( E. x e. A E. y e. B ph <-> E. x e. A E. y e. B ps ) $=
+      ( wrex rexbii ) ADFHBDFHCEABDFGII $.
+  $}
+
+  ${
+    ralbii2.1 $e |- ( ( x e. A -> ph ) <-> ( x e. B -> ps ) ) $.
+    $( Inference adding different restricted universal quantifiers to each side
+       of an equivalence.  (Contributed by NM, 15-Aug-2005.) $)
+    ralbii2 $p |- ( A. x e. A ph <-> A. x e. B ps ) $=
+      ( cv wcel wi wal wral albii df-ral 3bitr4i ) CGZDHAIZCJOEHBIZCJACDKBCEKPQ
+      CFLACDMBCEMN $.
+  $}
+
+  ${
+    rexbii2.1 $e |- ( ( x e. A /\ ph ) <-> ( x e. B /\ ps ) ) $.
+    $( Inference adding different restricted existential quantifiers to each
+       side of an equivalence.  (Contributed by NM, 4-Feb-2004.) $)
+    rexbii2 $p |- ( E. x e. A ph <-> E. x e. B ps ) $=
+      ( cv wcel wa wex wrex exbii df-rex 3bitr4i ) CGZDHAIZCJOEHBIZCJACDKBCEKPQ
+      CFLACDMBCEMN $.
+  $}
+
+  ${
+    raleqbii.1 $e |- A = B $.
+    raleqbii.2 $e |- ( ps <-> ch ) $.
+    $( Equality deduction for restricted universal quantifier, changing both
+       formula and quantifier domain.  Inference form.  (Contributed by David
+       Moews, 1-May-2017.) $)
+    raleqbii $p |- ( A. x e. A ps <-> A. x e. B ch ) $=
+      ( cv wcel eleq2i imbi12i ralbii2 ) ABCDECHZDIMEIABDEMFJGKL $.
+
+    $( Equality deduction for restricted existential quantifier, changing both
+       formula and quantifier domain.  Inference form.  (Contributed by David
+       Moews, 1-May-2017.) $)
+    rexeqbii $p |- ( E. x e. A ps <-> E. x e. B ch ) $=
+      ( cv wcel eleq2i anbi12i rexbii2 ) ABCDECHZDIMEIABDEMFJGKL $.
+  $}
+
+  ${
+    ralbiia.1 $e |- ( x e. A -> ( ph <-> ps ) ) $.
+    $( Inference adding restricted universal quantifier to both sides of an
+       equivalence.  (Contributed by NM, 26-Nov-2000.) $)
+    ralbiia $p |- ( A. x e. A ph <-> A. x e. A ps ) $=
+      ( cv wcel pm5.74i ralbii2 ) ABCDDCFDGABEHI $.
+
+    $( Inference adding restricted existential quantifier to both sides of an
+       equivalence.  (Contributed by NM, 26-Oct-1999.) $)
+    rexbiia $p |- ( E. x e. A ph <-> E. x e. A ps ) $=
+      ( cv wcel pm5.32i rexbii2 ) ABCDDCFDGABEHI $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    2rexbiia.1 $e |- ( ( x e. A /\ y e. B ) -> ( ph <-> ps ) ) $.
+    $( Inference adding two restricted existential quantifiers to both sides of
+       an equivalence.  (Contributed by NM, 1-Aug-2004.) $)
+    2rexbiia $p |- ( E. x e. A E. y e. B ph <-> E. x e. A E. y e. B ps ) $=
+      ( wrex cv wcel rexbidva rexbiia ) ADFHBDFHCECIEJABDFGKL $.
+  $}
+
+  ${
+    $d x y $.
+    r2alf.1 $e |- F/_ y A $.
+    $( Double restricted universal quantification.  (Contributed by Mario
+       Carneiro, 14-Oct-2016.) $)
+    r2alf $p |- ( A. x e. A A. y e. B ph <->
+               A. x A. y ( ( x e. A /\ y e. B ) -> ph ) ) $=
+      ( wral cv wi wal wa df-ral nfcri 19.21 impexp albii imbi2i 3bitr4i bitr4i
+      wcel ) ACEGZBDGBHDTZUAIZBJUBCHETZKAIZCJZBJUABDLUFUCBUBUDAIZIZCJUBUGCJZIUF
+      UCUBUGCCBDFMNUEUHCUBUDAOPUAUIUBACELQRPS $.
+
+    $( Double restricted existential quantification.  (Contributed by Mario
+       Carneiro, 14-Oct-2016.) $)
+    r2exf $p |- ( E. x e. A E. y e. B ph <->
+               E. x E. y ( ( x e. A /\ y e. B ) /\ ph ) ) $=
+      ( wrex cv wcel wex df-rex nfcri 19.42 anass exbii anbi2i 3bitr4i bitr4i
+      wa ) ACEGZBDGBHDIZTSZBJUACHEIZSASZCJZBJTBDKUEUBBUAUCASZSZCJUAUFCJZSUEUBUA
+      UFCCBDFLMUDUGCUAUCANOTUHUAACEKPQOR $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    $( Double restricted universal quantification.  (Contributed by NM,
+       19-Nov-1995.) $)
+    r2al $p |- ( A. x e. A A. y e. B ph <->
+               A. x A. y ( ( x e. A /\ y e. B ) -> ph ) ) $=
+      ( nfcv r2alf ) ABCDECDFG $.
+
+    $( Double restricted existential quantification.  (Contributed by NM,
+       11-Nov-1995.) $)
+    r2ex $p |- ( E. x e. A E. y e. B ph <->
+               E. x E. y ( ( x e. A /\ y e. B ) /\ ph ) ) $=
+      ( nfcv r2exf ) ABCDECDFG $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    2ralbida.1 $e |- F/ x ph $.
+    2ralbida.2 $e |- F/ y ph $.
+    2ralbida.3 $e |- ( ( ph /\ ( x e. A /\ y e. B ) ) -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for restricted universal quantifier (deduction
+       rule).  (Contributed by NM, 24-Feb-2004.) $)
+    2ralbida $p |- ( ph ->
+                     ( A. x e. A A. y e. B ps <-> A. x e. A A. y e. B ch ) ) $=
+      ( wral cv wcel wa nfv nfan wb anassrs ralbida ) ABEGKCEGKDFHADLFMZNBCEGAT
+      EITEOPATELGMBCQJRSS $.
+  $}
+
+  ${
+    $d x y ph $.  $d y A $.
+    2ralbidva.1 $e |- ( ( ph /\ ( x e. A /\ y e. B ) ) -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for restricted universal quantifiers (deduction
+       rule).  (Contributed by NM, 4-Mar-1997.) $)
+    2ralbidva $p |- ( ph ->
+                     ( A. x e. A A. y e. B ps <-> A. x e. A A. y e. B ch ) ) $=
+      ( nfv 2ralbida ) ABCDEFGADIAEIHJ $.
+
+    $( Formula-building rule for restricted existential quantifiers (deduction
+       rule).  (Contributed by NM, 15-Dec-2004.) $)
+    2rexbidva $p |- ( ph ->
+                    ( E. x e. A E. y e. B ps <-> E. x e. A E. y e. B ch ) ) $=
+      ( wrex cv wcel wa wb anassrs rexbidva ) ABEGICEGIDFADJFKZLBCEGAPEJGKBCMHN
+      OO $.
+  $}
+
+  ${
+    $d x ph $.  $d y ph $.
+    2ralbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for restricted universal quantifiers (deduction
+       rule).  (Contributed by NM, 28-Jan-2006.)  (Revised by Szymon
+       Jaroszewicz, 16-Mar-2007.) $)
+    2ralbidv $p |- ( ph ->
+                     ( A. x e. A A. y e. B ps <-> A. x e. A A. y e. B ch ) ) $=
+      ( wral ralbidv ) ABEGICEGIDFABCEGHJJ $.
+
+    $( Formula-building rule for restricted existential quantifiers (deduction
+       rule).  (Contributed by NM, 28-Jan-2006.) $)
+    2rexbidv $p |- ( ph ->
+                    ( E. x e. A E. y e. B ps <-> E. x e. A E. y e. B ch ) ) $=
+      ( wrex rexbidv ) ABEGICEGIDFABCEGHJJ $.
+
+    $( Formula-building rule for restricted quantifiers (deduction rule).
+       (Contributed by NM, 28-Jan-2006.) $)
+    rexralbidv $p |- ( ph ->
+                    ( E. x e. A A. y e. B ps <-> E. x e. A A. y e. B ch ) ) $=
+      ( wral ralbidv rexbidv ) ABEGICEGIDFABCEGHJK $.
+  $}
+
+  $( A transformation of restricted quantifiers and logical connectives.
+     (Contributed by NM, 4-Sep-2005.) $)
+  ralinexa $p |- ( A. x e. A ( ph -> -. ps ) <-> -. E. x e. A ( ph /\ ps ) ) $=
+    ( wn wi wral wa wrex imnan ralbii ralnex bitri ) ABEFZCDGABHZEZCDGOCDIENPCD
+    ABJKOCDLM $.
+
+  $( A transformation of restricted quantifiers and logical connectives.
+     (Contributed by NM, 4-Sep-2005.) $)
+  rexanali $p |- ( E. x e. A ( ph /\ -. ps ) <-> -. A. x e. A ( ph -> ps ) ) $=
+    ( wn wa wrex wi wral annim rexbii rexnal bitri ) ABEFZCDGABHZEZCDGOCDIENPCD
+    ABJKOCDLM $.
+
+  $( Negation of a complex predicate calculus formula.  (Contributed by FL,
+     31-Jul-2009.) $)
+  nrexralim $p |- ( -. E. x e. A A. y e. B ( ph -> ps )
+     <-> A. x e. A E. y e. B ( ph /\ -. ps ) ) $=
+    ( wn wa wrex wral wi rexanali ralbii ralnex bitr2i ) ABGHDFIZCEJABKDFJZGZCE
+    JQCEIGPRCEABDFLMQCENO $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Two ways to say " ` A ` belongs to ` B ` ."  (Contributed by NM,
+       22-Nov-1994.) $)
+    risset $p |- ( A e. B <-> E. x e. B x = A ) $=
+      ( cv wcel wceq wa wex wrex exancom df-rex df-clel 3bitr4ri ) ADZCEZNBFZGA
+      HPOGAHPACIBCEOPAJPACKABCLM $.
+  $}
+
+  ${
+    hbral.1 $e |- ( y e. A -> A. x y e. A ) $.
+    hbral.2 $e |- ( ph -> A. x ph ) $.
+    $( Bound-variable hypothesis builder for restricted quantification.
+       (Contributed by NM, 1-Sep-1999.)  (Revised by David Abernethy,
+       13-Dec-2009.) $)
+    hbral $p |- ( A. y e. A ph -> A. x A. y e. A ph ) $=
+      ( wral cv wcel wi wal df-ral hbim hbal hbxfrbi ) ACDGCHDIZAJZCKBACDLQBCPA
+      BEFMNO $.
+  $}
+
+  $( ` x ` is not free in ` A. x e. A ph ` .  (Contributed by NM,
+     18-Oct-1996.) $)
+  hbra1 $p |- ( A. x e. A ph -> A. x A. x e. A ph ) $=
+    ( wral cv wcel wi wal df-ral hba1 hbxfrbi ) ABCDBECFAGZBHBABCILBJK $.
+
+  $( ` x ` is not free in ` A. x e. A ph ` .  (Contributed by NM,
+     18-Oct-1996.)  (Revised by Mario Carneiro, 7-Oct-2016.) $)
+  nfra1 $p |- F/ x A. x e. A ph $=
+    ( wral cv wcel wi wal df-ral nfa1 nfxfr ) ABCDBECFAGZBHBABCILBJK $.
+
+  ${
+    nfrald.2 $e |- F/ y ph $.
+    nfrald.3 $e |- ( ph -> F/_ x A ) $.
+    nfrald.4 $e |- ( ph -> F/ x ps ) $.
+    $( Deduction version of ~ nfral .  (Contributed by NM, 15-Feb-2013.)
+       (Revised by Mario Carneiro, 7-Oct-2016.) $)
+    nfrald $p |- ( ph -> F/ x A. y e. A ps ) $=
+      ( wral cv wcel wi wal df-ral weq wn wa wnfc nfcvf adantr adantl nfeld wnf
+      nfimd nfald2 nfxfrd ) BDEIDJZEKZBLZDMACBDENAUICDFACDOCMPZQZUHBCUKCUGEUJCU
+      GRACDSUAACERUJGTUBABCUCUJHTUDUEUF $.
+
+    $( Deduction version of ~ nfrex .  (Contributed by Mario Carneiro,
+       14-Oct-2016.) $)
+    nfrexd $p |- ( ph -> F/ x E. y e. A ps ) $=
+      ( wrex wn wral dfrex2 nfnd nfrald nfxfrd ) BDEIBJZDEKZJACBDELAQCAPCDEFGAB
+      CHMNMO $.
+  $}
+
+  ${
+    nfral.1 $e |- F/_ x A $.
+    nfral.2 $e |- F/ x ph $.
+    $( Bound-variable hypothesis builder for restricted quantification.
+       (Contributed by NM, 1-Sep-1999.)  (Revised by Mario Carneiro,
+       7-Oct-2016.) $)
+    nfral $p |- F/ x A. y e. A ph $=
+      ( wral wnf wtru nftru wnfc a1i nfrald trud ) ACDGBHIABCDCJBDKIELABHIFLMN
+      $.
+  $}
+
+  ${
+    $d A y $.
+    $( Similar to Lemma 24 of [Monk2] p. 114, except the quantification of the
+       antecedent is restricted.  Derived automatically from ~ hbra2VD .
+       Contributed by Alan Sare 31-Dec-2011.  (Contributed by NM,
+       31-Dec-2011.) $)
+    nfra2 $p |- F/ y A. x e. A A. y e. B ph $=
+      ( wral nfcv nfra1 nfral ) ACEFCBDCDGACEHI $.
+  $}
+
+  ${
+    nfrex.1 $e |- F/_ x A $.
+    nfrex.2 $e |- F/ x ph $.
+    $( Bound-variable hypothesis builder for restricted quantification.
+       (Contributed by NM, 1-Sep-1999.)  (Revised by Mario Carneiro,
+       7-Oct-2016.) $)
+    nfrex $p |- F/ x E. y e. A ph $=
+      ( wrex wn wral dfrex2 nfn nfral nfxfr ) ACDGAHZCDIZHBACDJOBNBCDEABFKLKM
+      $.
+  $}
+
+  $( ` x ` is not free in ` E. x e. A ph ` .  (Contributed by NM,
+     19-Mar-1997.)  (Revised by Mario Carneiro, 7-Oct-2016.) $)
+  nfre1 $p |- F/ x E. x e. A ph $=
+    ( wrex cv wcel wa wex df-rex nfe1 nfxfr ) ABCDBECFAGZBHBABCILBJK $.
+
+  ${
+    $d x y z $.  $d y z A $.  $d z B $.
+    $( Triple restricted universal quantification.  (Contributed by NM,
+       19-Nov-1995.) $)
+    r3al $p |- ( A. x e. A A. y e. B A. z e. C ph <->
+               A. x A. y A. z ( ( x e. A /\ y e. B /\ z e. C ) -> ph ) ) $=
+      ( cv wcel wa wi wal wral w3a df-ral r2al ralbii bitri albii 19.21v 3anass
+      imbi1i impexp 3bitr4i ) CHFIZDHGIZJZAKZDLZCLZBEMBHEIZUJKZBLADGMCFMZBEMUKU
+      EUFNZAKZDLZCLZBLUJBEOUMUJBEACDFGPQUQULBUQUKUIKZCLULUPURCUPUKUHKZDLURUOUSD
+      UOUKUGJZAKUSUNUTAUKUEUFUAUBUKUGAUCRSUKUHDTRSUKUICTRSUD $.
+  $}
+
+  $( Universal quantification implies restricted quantification.  (Contributed
+     by NM, 20-Oct-2006.) $)
+  alral $p |- ( A. x ph -> A. x e. A ph ) $=
+    ( wal cv wcel wi wral ax-1 alimi df-ral sylibr ) ABDBECFZAGZBDABCHANBAMIJAB
+    CKL $.
+
+  $( Restricted existence implies existence.  (Contributed by NM,
+     11-Nov-1995.) $)
+  rexex $p |- ( E. x e. A ph -> E. x ph ) $=
+    ( wrex cv wcel wa wex df-rex simpr eximi sylbi ) ABCDBECFZAGZBHABHABCINABMA
+    JKL $.
+
+  $( Restricted specialization.  (Contributed by NM, 17-Oct-1996.) $)
+  rsp $p |- ( A. x e. A ph -> ( x e. A -> ph ) ) $=
+    ( wral cv wcel wi wal df-ral sp sylbi ) ABCDBECFAGZBHLABCILBJK $.
+
+  $( Restricted specialization.  (Contributed by NM, 12-Oct-1999.) $)
+  rspe $p |- ( ( x e. A /\ ph ) -> E. x e. A ph ) $=
+    ( cv wcel wa wex wrex 19.8a df-rex sylibr ) BDCEAFZLBGABCHLBIABCJK $.
+
+  $( Restricted specialization.  (Contributed by NM, 11-Feb-1997.) $)
+  rsp2 $p |- ( A. x e. A A. y e. B ph -> ( ( x e. A /\ y e. B ) -> ph ) ) $=
+    ( wral cv wcel wi rsp syl6 imp3a ) ACEFZBDFZBGDHZCGEHZANOMPAIMBDJACEJKL $.
+
+  $( Restricted specialization.  (Contributed by FL, 4-Jun-2012.) $)
+  rsp2e $p |- ( ( x e. A /\ y e. B /\ ph ) -> E. x e. A E. y e. B ph ) $=
+    ( cv wcel w3a wrex wa wex simp1 rspe 3adant1 19.8a syl2anc df-rex sylibr )
+    BFDGZCFEGZAHZSACEIZJZBKZUBBDIUASUBUDSTALTAUBSACEMNUCBOPUBBDQR $.
+
+  ${
+    rspec.1 $e |- A. x e. A ph $.
+    $( Specialization rule for restricted quantification.  (Contributed by NM,
+       19-Nov-1994.) $)
+    rspec $p |- ( x e. A -> ph ) $=
+      ( wral cv wcel wi rsp ax-mp ) ABCEBFCGAHDABCIJ $.
+  $}
+
+  ${
+    rgen.1 $e |- ( x e. A -> ph ) $.
+    $( Generalization rule for restricted quantification.  (Contributed by NM,
+       19-Nov-1994.) $)
+    rgen $p |- A. x e. A ph $=
+      ( wral cv wcel wi df-ral mpgbir ) ABCEBFCGAHBABCIDJ $.
+  $}
+
+  ${
+    $d y z A $.  $d x z $.
+    rgen2a.1 $e |- ( ( x e. A /\ y e. A ) -> ph ) $.
+    $( Generalization rule for restricted quantification.  Note that ` x ` and
+       ` y ` needn't be distinct (and illustrates the use of ~ dvelim ).
+       (Contributed by NM, 23-Nov-1994.)  (Proof shortened by Andrew Salmon,
+       25-May-2011.)  (Proof modification is discouraged. $)
+    rgen2a $p |- A. x e. A A. y e. A ph $=
+      ( vz wral cv wcel wi wal weq eleq1 ex syl6bi pm2.43d alimi a1d wn dvelimv
+      syl6 pm2.61i df-ral sylibr rgen ) ACDGZBDBHZDIZCHZDIZAJZCKZUFCBLZCKZUHULJ
+      UNULUHUMUKCUMUJAUMUJUHUKUIUGDMUHUJAENZOPQRUNSUHUHCKULFHZDIUHCBFUPUGDMTUHU
+      KCUOQUAUBACDUCUDUE $.
+  $}
+
+  ${
+    rgenw.1 $e |- ph $.
+    $( Generalization rule for restricted quantification.  (Contributed by NM,
+       18-Jun-2014.) $)
+    rgenw $p |- A. x e. A ph $=
+      ( cv wcel a1i rgen ) ABCABECFDGH $.
+
+    $( Generalization rule for restricted quantification.  Note that ` x ` and
+       ` y ` needn't be distinct.  (Contributed by NM, 18-Jun-2014.) $)
+    rgen2w $p |- A. x e. A A. y e. B ph $=
+      ( wral rgenw ) ACEGBDACEFHH $.
+  $}
+
+  ${
+    mprg.1 $e |- ( A. x e. A ph -> ps ) $.
+    mprg.2 $e |- ( x e. A -> ph ) $.
+    $( Modus ponens combined with restricted generalization.  (Contributed by
+       NM, 10-Aug-2004.) $)
+    mprg $p |- ps $=
+      ( wral rgen ax-mp ) ACDGBACDFHEI $.
+  $}
+
+  ${
+    mprgbir.1 $e |- ( ph <-> A. x e. A ps ) $.
+    mprgbir.2 $e |- ( x e. A -> ps ) $.
+    $( Modus ponens on biconditional combined with restricted generalization.
+       (Contributed by NM, 21-Mar-2004.) $)
+    mprgbir $p |- ph $=
+      ( wral rgen mpbir ) ABCDGBCDFHEI $.
+  $}
+
+  $( Distribution of restricted quantification over implication.  (Contributed
+     by NM, 9-Feb-1997.) $)
+  ralim $p |- ( A. x e. A ( ph -> ps ) ->
+               ( A. x e. A ph -> A. x e. A ps ) ) $=
+    ( wi wral cv wcel wal df-ral ax-2 al2imi sylbi 3imtr4g ) ABEZCDFZCGDHZAEZCI
+    ZQBEZCIZACDFBCDFPQOEZCISUAEOCDJUBRTCQABKLMACDJBCDJN $.
+
+  ${
+    ralimi2.1 $e |- ( ( x e. A -> ph ) -> ( x e. B -> ps ) ) $.
+    $( Inference quantifying both antecedent and consequent.  (Contributed by
+       NM, 22-Feb-2004.) $)
+    ralimi2 $p |- ( A. x e. A ph -> A. x e. B ps ) $=
+      ( cv wcel wi wal wral alimi df-ral 3imtr4i ) CGZDHAIZCJOEHBIZCJACDKBCEKPQ
+      CFLACDMBCEMN $.
+  $}
+
+  ${
+    ralimia.1 $e |- ( x e. A -> ( ph -> ps ) ) $.
+    $( Inference quantifying both antecedent and consequent.  (Contributed by
+       NM, 19-Jul-1996.) $)
+    ralimia $p |- ( A. x e. A ph -> A. x e. A ps ) $=
+      ( cv wcel a2i ralimi2 ) ABCDDCFDGABEHI $.
+  $}
+
+  ${
+    ralimiaa.1 $e |- ( ( x e. A /\ ph ) -> ps ) $.
+    $( Inference quantifying both antecedent and consequent.  (Contributed by
+       NM, 4-Aug-2007.) $)
+    ralimiaa $p |- ( A. x e. A ph -> A. x e. A ps ) $=
+      ( cv wcel ex ralimia ) ABCDCFDGABEHI $.
+  $}
+
+  ${
+    ralimi.1 $e |- ( ph -> ps ) $.
+    $( Inference quantifying both antecedent and consequent, with strong
+       hypothesis.  (Contributed by NM, 4-Mar-1997.) $)
+    ralimi $p |- ( A. x e. A ph -> A. x e. A ps ) $=
+      ( wi cv wcel a1i ralimia ) ABCDABFCGDHEIJ $.
+  $}
+
+  ${
+    ral2imi.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Inference quantifying antecedent, nested antecedent, and consequent,
+       with a strong hypothesis.  (Contributed by NM, 19-Dec-2006.) $)
+    ral2imi $p |- ( A. x e. A ph -> ( A. x e. A ps -> A. x e. A ch ) ) $=
+      ( wral wi ralimi ralim syl ) ADEGBCHZDEGBDEGCDEGHALDEFIBCDEJK $.
+  $}
+
+  ${
+    ralimdaa.1 $e |- F/ x ph $.
+    ralimdaa.2 $e |- ( ( ph /\ x e. A ) -> ( ps -> ch ) ) $.
+    $( Deduction quantifying both antecedent and consequent, based on Theorem
+       19.20 of [Margaris] p. 90.  (Contributed by NM, 22-Sep-2003.) $)
+    ralimdaa $p |- ( ph -> ( A. x e. A ps -> A. x e. A ch ) ) $=
+      ( cv wcel wi wal wral ex a2d alimd df-ral 3imtr4g ) ADHEIZBJZDKRCJZDKBDEL
+      CDELASTDFARBCARBCJGMNOBDEPCDEPQ $.
+  $}
+
+  ${
+    $d x ph $.
+    ralimdva.1 $e |- ( ( ph /\ x e. A ) -> ( ps -> ch ) ) $.
+    $( Deduction quantifying both antecedent and consequent, based on Theorem
+       19.20 of [Margaris] p. 90.  (Contributed by NM, 22-May-1999.) $)
+    ralimdva $p |- ( ph -> ( A. x e. A ps -> A. x e. A ch ) ) $=
+      ( nfv ralimdaa ) ABCDEADGFH $.
+  $}
+
+  ${
+    $d x ph $.
+    ralimdv.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Deduction quantifying both antecedent and consequent, based on Theorem
+       19.20 of [Margaris] p. 90.  (Contributed by NM, 8-Oct-2003.) $)
+    ralimdv $p |- ( ph -> ( A. x e. A ps -> A. x e. A ch ) ) $=
+      ( wi cv wcel adantr ralimdva ) ABCDEABCGDHEIFJK $.
+  $}
+
+  ${
+    $d x ph $.
+    ralimdv2.1 $e |- ( ph -> ( ( x e. A -> ps ) -> ( x e. B -> ch ) ) ) $.
+    $( Inference quantifying both antecedent and consequent.  (Contributed by
+       NM, 1-Feb-2005.) $)
+    ralimdv2 $p |- ( ph -> ( A. x e. A ps -> A. x e. B ch ) ) $=
+      ( cv wcel wi wal wral alimdv df-ral 3imtr4g ) ADHZEIBJZDKPFICJZDKBDELCDFL
+      AQRDGMBDENCDFNO $.
+  $}
+
+  ${
+    ralrimi.1 $e |- F/ x ph $.
+    ralrimi.2 $e |- ( ph -> ( x e. A -> ps ) ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90 (restricted quantifier
+       version).  (Contributed by NM, 10-Oct-1999.) $)
+    ralrimi $p |- ( ph -> A. x e. A ps ) $=
+      ( cv wcel wi wal wral alrimi df-ral sylibr ) ACGDHBIZCJBCDKAOCEFLBCDMN $.
+  $}
+
+  ${
+    $d x ph $.
+    ralrimiv.1 $e |- ( ph -> ( x e. A -> ps ) ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version.)  (Contributed by NM, 22-Nov-1994.) $)
+    ralrimiv $p |- ( ph -> A. x e. A ps ) $=
+      ( nfv ralrimi ) ABCDACFEG $.
+  $}
+
+  ${
+    $d x ph $.
+    ralrimiva.1 $e |- ( ( ph /\ x e. A ) -> ps ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version.)  (Contributed by NM, 2-Jan-2006.) $)
+    ralrimiva $p |- ( ph -> A. x e. A ps ) $=
+      ( cv wcel ex ralrimiv ) ABCDACFDGBEHI $.
+  $}
+
+  ${
+    $d x ph $.
+    ralrimivw.1 $e |- ( ph -> ps ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version.)  (Contributed by NM, 18-Jun-2014.) $)
+    ralrimivw $p |- ( ph -> A. x e. A ps ) $=
+      ( cv wcel a1d ralrimiv ) ABCDABCFDGEHI $.
+  $}
+
+  ${
+    $( Theorem 19.21 of [Margaris] p. 90 with restricted quantifiers (closed
+       theorem version).  (Contributed by NM, 1-Mar-2008.) $)
+    r19.21t $p |- ( F/ x ph ->
+             ( A. x e. A ( ph -> ps ) <-> ( ph -> A. x e. A ps ) ) ) $=
+      ( wnf cv wcel wal wral bi2.04 albii 19.21t syl5bb df-ral imbi2i 3bitr4g
+      wi ) ACEZCFDGZABQZQZCHZASBQZCHZQZTCDIABCDIZQUBAUCQZCHRUEUAUGCSABJKAUCCLMT
+      CDNUFUDABCDNOP $.
+  $}
+
+  ${
+    r19.21.1 $e |- F/ x ph $.
+    $( Theorem 19.21 of [Margaris] p. 90 with restricted quantifiers.
+       (Contributed by Scott Fenton, 30-Mar-2011.) $)
+    r19.21 $p |- ( A. x e. A ( ph -> ps ) <-> ( ph -> A. x e. A ps ) ) $=
+      ( wnf wi wral wb r19.21t ax-mp ) ACFABGCDHABCDHGIEABCDJK $.
+  $}
+
+  ${
+    $d x ph $.
+    $( Theorem 19.21 of [Margaris] p. 90 with restricted quantifiers.
+       (Contributed by NM, 15-Oct-2003.)  (Proof shortened by Andrew Salmon,
+       30-May-2011.) $)
+    r19.21v $p |- ( A. x e. A ( ph -> ps ) <-> ( ph -> A. x e. A ps ) ) $=
+      ( nfv r19.21 ) ABCDACEF $.
+  $}
+
+  ${
+    ralrimd.1 $e |- F/ x ph $.
+    ralrimd.2 $e |- F/ x ps $.
+    ralrimd.3 $e |- ( ph -> ( ps -> ( x e. A -> ch ) ) ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version.)  (Contributed by NM, 16-Feb-2004.) $)
+    ralrimd $p |- ( ph -> ( ps -> A. x e. A ch ) ) $=
+      ( cv wcel wi wal wral alrimd df-ral syl6ibr ) ABDIEJCKZDLCDEMABQDFGHNCDEO
+      P $.
+  $}
+
+  ${
+    $d x ph $.  $d x ps $.
+    ralrimdv.1 $e |- ( ph -> ( ps -> ( x e. A -> ch ) ) ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version.)  (Contributed by NM, 27-May-1998.) $)
+    ralrimdv $p |- ( ph -> ( ps -> A. x e. A ch ) ) $=
+      ( nfv ralrimd ) ABCDEADGBDGFH $.
+  $}
+
+  ${
+    $d x ph $.  $d x ps $.
+    ralrimdva.1 $e |- ( ( ph /\ x e. A ) -> ( ps -> ch ) ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version.)  (Contributed by NM, 2-Feb-2008.) $)
+    ralrimdva $p |- ( ph -> ( ps -> A. x e. A ch ) ) $=
+      ( cv wcel wi ex com23 ralrimdv ) ABCDEADGEHZBCAMBCIFJKL $.
+  $}
+
+  ${
+    $d x y ph $.  $d y A $.
+    ralrimivv.1 $e |- ( ph -> ( ( x e. A /\ y e. B ) -> ps ) ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version with double quantification.)  (Contributed by NM,
+       24-Jul-2004.) $)
+    ralrimivv $p |- ( ph -> A. x e. A A. y e. B ps ) $=
+      ( wral cv wcel exp3a ralrimdv ralrimiv ) ABDFHCEACIEJZBDFANDIFJBGKLM $.
+  $}
+
+  ${
+    $d ph x y $.  $d A y $.
+    ralrimivva.1 $e |- ( ( ph /\ ( x e. A /\ y e. B ) ) -> ps ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version with double quantification.)  (Contributed by Jeff
+       Madsen, 19-Jun-2011.) $)
+    ralrimivva $p |- ( ph -> A. x e. A A. y e. B ps ) $=
+      ( cv wcel wa ex ralrimivv ) ABCDEFACHEIDHFIJBGKL $.
+  $}
+
+  ${
+    $d ph x y z $.  $d A y z $.  $d B z $.
+    ralrimivvva.1 $e |- ( ( ph /\ ( x e. A /\ y e. B /\ z e. C ) ) -> ps ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version with triple quantification.)  (Contributed by Mario
+       Carneiro, 9-Jul-2014.) $)
+    ralrimivvva $p |- ( ph -> A. x e. A A. y e. B A. z e. C ps ) $=
+      ( wral cv wcel wa 3anassrs ralrimiva ) ABEHJZDGJCFACKFLZMZPDGRDKGLZMBEHAQ
+      SEKHLBINOOO $.
+  $}
+
+  ${
+    $d x y ph $.  $d x y ps $.  $d y A $.
+    ralrimdvv.1 $e |- ( ph -> ( ps -> ( ( x e. A /\ y e. B ) -> ch ) ) ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version with double quantification.)  (Contributed by NM,
+       1-Jun-2005.) $)
+    ralrimdvv $p |- ( ph -> ( ps -> A. x e. A A. y e. B ch ) ) $=
+      ( wral wa cv wcel wi imp ralrimivv ex ) ABCEGIDFIABJCDEFGABDKFLEKGLJCMHNO
+      P $.
+  $}
+
+  ${
+    $d x y ph $.  $d x y ps $.  $d y A $.
+    ralrimdvva.1 $e |- ( ( ph /\ ( x e. A /\ y e. B ) ) -> ( ps -> ch ) ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version with double quantification.)  (Contributed by NM,
+       2-Feb-2008.) $)
+    ralrimdvva $p |- ( ph -> ( ps -> A. x e. A A. y e. B ch ) ) $=
+      ( cv wcel wa wi ex com23 ralrimdvv ) ABCDEFGADIFJEIGJKZBCAPBCLHMNO $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    rgen2.1 $e |- ( ( x e. A /\ y e. B ) -> ph ) $.
+    $( Generalization rule for restricted quantification.  (Contributed by NM,
+       30-May-1999.) $)
+    rgen2 $p |- A. x e. A A. y e. B ph $=
+      ( wral cv wcel ralrimiva rgen ) ACEGBDBHDIACEFJK $.
+  $}
+
+  ${
+    $d y z A $.  $d z B $.  $d x y z $.
+    rgen3.1 $e |- ( ( x e. A /\ y e. B /\ z e. C ) -> ph ) $.
+    $( Generalization rule for restricted quantification.  (Contributed by NM,
+       12-Jan-2008.) $)
+    rgen3 $p |- A. x e. A A. y e. B A. z e. C ph $=
+      ( wral cv wcel wa 3expa ralrimiva rgen2 ) ADGIBCEFBJEKZCJFKZLADGPQDJGKAHM
+      NO $.
+  $}
+
+  ${
+    r19.21bi.1 $e |- ( ph -> A. x e. A ps ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version.)  (Contributed by NM, 20-Nov-1994.) $)
+    r19.21bi $p |- ( ( ph /\ x e. A ) -> ps ) $=
+      ( cv wcel wi wral wal df-ral sylib 19.21bi imp ) ACFDGZBAOBHZCABCDIPCJEBC
+      DKLMN $.
+  $}
+
+  ${
+    rspec2.1 $e |- A. x e. A A. y e. B ph $.
+    $( Specialization rule for restricted quantification.  (Contributed by NM,
+       20-Nov-1994.) $)
+    rspec2 $p |- ( ( x e. A /\ y e. B ) -> ph ) $=
+      ( cv wcel wral rspec r19.21bi ) BGDHACEACEIBDFJK $.
+  $}
+
+  ${
+    rspec3.1 $e |- A. x e. A A. y e. B A. z e. C ph $.
+    $( Specialization rule for restricted quantification.  (Contributed by NM,
+       20-Nov-1994.) $)
+    rspec3 $p |- ( ( x e. A /\ y e. B /\ z e. C ) -> ph ) $=
+      ( cv wcel wa wral rspec2 r19.21bi 3impa ) BIEJZCIFJZDIGJAPQKADGADGLBCEFHM
+      NO $.
+  $}
+
+  ${
+    r19.21be.1 $e |- ( ph -> A. x e. A ps ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version.)  (Contributed by NM, 21-Nov-1994.) $)
+    r19.21be $p |- A. x e. A ( ph -> ps ) $=
+      ( wi cv wcel r19.21bi expcom rgen ) ABFCDACGDHBABCDEIJK $.
+  $}
+
+  ${
+    nrex.1 $e |- ( x e. A -> -. ps ) $.
+    $( Inference adding restricted existential quantifier to negated wff.
+       (Contributed by NM, 16-Oct-2003.) $)
+    nrex $p |- -. E. x e. A ps $=
+      ( wn wral wrex rgen ralnex mpbi ) AEZBCFABCGEKBCDHABCIJ $.
+  $}
+
+  ${
+    $d x ph $.
+    nrexdv.1 $e |- ( ( ph /\ x e. A ) -> -. ps ) $.
+    $( Deduction adding restricted existential quantifier to negated wff.
+       (Contributed by NM, 16-Oct-2003.) $)
+    nrexdv $p |- ( ph -> -. E. x e. A ps ) $=
+      ( wn wral wrex ralrimiva ralnex sylib ) ABFZCDGBCDHFALCDEIBCDJK $.
+  $}
+
+  $( Theorem 19.22 of [Margaris] p. 90.  (Restricted quantifier version.)
+     (Contributed by NM, 22-Nov-1994.)  (Proof shortened by Andrew Salmon,
+     30-May-2011.) $)
+  rexim $p |- ( A. x e. A ( ph -> ps ) ->
+               ( E. x e. A ph -> E. x e. A ps ) ) $=
+    ( wi wral wn wrex con3 ral2imi con3d dfrex2 3imtr4g ) ABEZCDFZAGZCDFZGBGZCD
+    FZGACDHBCDHOSQNRPCDABIJKACDLBCDLM $.
+
+  ${
+    reximia.1 $e |- ( x e. A -> ( ph -> ps ) ) $.
+    $( Inference quantifying both antecedent and consequent.  (Contributed by
+       NM, 10-Feb-1997.) $)
+    reximia $p |- ( E. x e. A ph -> E. x e. A ps ) $=
+      ( wi wrex rexim mprg ) ABFACDGBCDGFCDABCDHEI $.
+  $}
+
+  ${
+    reximi2.1 $e |- ( ( x e. A /\ ph ) -> ( x e. B /\ ps ) ) $.
+    $( Inference quantifying both antecedent and consequent, based on Theorem
+       19.22 of [Margaris] p. 90.  (Contributed by NM, 8-Nov-2004.) $)
+    reximi2 $p |- ( E. x e. A ph -> E. x e. B ps ) $=
+      ( cv wcel wa wex wrex eximi df-rex 3imtr4i ) CGZDHAIZCJOEHBIZCJACDKBCEKPQ
+      CFLACDMBCEMN $.
+  $}
+
+  ${
+    reximi.1 $e |- ( ph -> ps ) $.
+    $( Inference quantifying both antecedent and consequent.  (Contributed by
+       NM, 18-Oct-1996.) $)
+    reximi $p |- ( E. x e. A ph -> E. x e. A ps ) $=
+      ( wi cv wcel a1i reximia ) ABCDABFCGDHEIJ $.
+  $}
+
+  ${
+    reximdai.1 $e |- F/ x ph $.
+    reximdai.2 $e |- ( ph -> ( x e. A -> ( ps -> ch ) ) ) $.
+    $( Deduction from Theorem 19.22 of [Margaris] p. 90.  (Restricted
+       quantifier version.)  (Contributed by NM, 31-Aug-1999.) $)
+    reximdai $p |- ( ph -> ( E. x e. A ps -> E. x e. A ch ) ) $=
+      ( wi wral wrex ralrimi rexim syl ) ABCHZDEIBDEJCDEJHANDEFGKBCDELM $.
+  $}
+
+  ${
+    $d x ph $.
+    reximdv2.1 $e |- ( ph -> ( ( x e. A /\ ps ) -> ( x e. B /\ ch ) ) ) $.
+    $( Deduction quantifying both antecedent and consequent, based on Theorem
+       19.22 of [Margaris] p. 90.  (Contributed by NM, 17-Sep-2003.) $)
+    reximdv2 $p |- ( ph -> ( E. x e. A ps -> E. x e. B ch ) ) $=
+      ( cv wcel wa wex wrex eximdv df-rex 3imtr4g ) ADHZEIBJZDKPFICJZDKBDELCDFL
+      AQRDGMBDENCDFNO $.
+  $}
+
+  ${
+    $d x ph $.
+    reximdvai.1 $e |- ( ph -> ( x e. A -> ( ps -> ch ) ) ) $.
+    $( Deduction quantifying both antecedent and consequent, based on Theorem
+       19.22 of [Margaris] p. 90.  (Contributed by NM, 14-Nov-2002.) $)
+    reximdvai $p |- ( ph -> ( E. x e. A ps -> E. x e. A ch ) ) $=
+      ( nfv reximdai ) ABCDEADGFH $.
+  $}
+
+  ${
+    $d x ph $.
+    reximdv.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Deduction from Theorem 19.22 of [Margaris] p. 90.  (Restricted
+       quantifier version with strong hypothesis.)  (Contributed by NM,
+       24-Jun-1998.) $)
+    reximdv $p |- ( ph -> ( E. x e. A ps -> E. x e. A ch ) ) $=
+      ( wi cv wcel a1d reximdvai ) ABCDEABCGDHEIFJK $.
+  $}
+
+  ${
+    $d x ph $.
+    reximdva.1 $e |- ( ( ph /\ x e. A ) -> ( ps -> ch ) ) $.
+    $( Deduction quantifying both antecedent and consequent, based on Theorem
+       19.22 of [Margaris] p. 90.  (Contributed by NM, 22-May-1999.) $)
+    reximdva $p |- ( ph -> ( E. x e. A ps -> E. x e. A ch ) ) $=
+      ( cv wcel wi ex reximdvai ) ABCDEADGEHBCIFJK $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d x B $.
+    $( Theorem 19.12 of [Margaris] p. 89 with restricted quantifiers.
+       (Contributed by NM, 15-Oct-2003.)  (Proof shortened by Andrew Salmon,
+       30-May-2011.) $)
+    r19.12 $p |- ( E. x e. A A. y e. B ph -> A. y e. B E. x e. A ph ) $=
+      ( wral wrex nfcv nfra1 nfrex cv wcel ax-1 ralrimi rsp reximdv ralimia syl
+      com12 ) ACEFZBDGZUACEFABDGZCEFUAUACETCBDCDHACEIJUACKELZMNUAUBCEUCTABDTUCA
+      ACEOSPQR $.
+  $}
+
+  $( Closed theorem form of ~ r19.23 .  (Contributed by NM, 4-Mar-2013.)
+     (Revised by Mario Carneiro, 8-Oct-2016.) $)
+  r19.23t $p |- ( F/ x ps ->
+    ( A. x e. A ( ph -> ps ) <-> ( E. x e. A ph -> ps ) ) ) $=
+    ( wnf cv wcel wa wal wex wral wrex 19.23t df-ral impexp albii bitr4i df-rex
+    wi imbi1i 3bitr4g ) BCECFDGZAHZBSZCIZUCCJZBSABSZCDKZACDLZBSUCBCMUHUBUGSZCIU
+    EUGCDNUDUJCUBABOPQUIUFBACDRTUA $.
+
+  ${
+    r19.23.1 $e |- F/ x ps $.
+    $( Theorem 19.23 of [Margaris] p. 90 with restricted quantifiers.
+       (Contributed by NM, 22-Oct-2010.)  (Proof shortened by Mario Carneiro,
+       8-Oct-2016.) $)
+    r19.23 $p |- ( A. x e. A ( ph -> ps ) <-> ( E. x e. A ph -> ps ) ) $=
+      ( wnf wi wral wrex wb r19.23t ax-mp ) BCFABGCDHACDIBGJEABCDKL $.
+  $}
+
+  ${
+    $d x ps $.
+    $( Theorem 19.23 of [Margaris] p. 90 with restricted quantifiers.
+       (Contributed by NM, 31-Aug-1999.) $)
+    r19.23v $p |- ( A. x e. A ( ph -> ps ) <-> ( E. x e. A ph -> ps ) ) $=
+      ( nfv r19.23 ) ABCDBCEF $.
+  $}
+
+  ${
+    rexlimi.1 $e |- F/ x ps $.
+    rexlimi.2 $e |- ( x e. A -> ( ph -> ps ) ) $.
+    $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Restricted
+       quantifier version.)  (Contributed by NM, 30-Nov-2003.)  (Proof
+       shortened by Andrew Salmon, 30-May-2011.) $)
+    rexlimi $p |- ( E. x e. A ph -> ps ) $=
+      ( wi wral wrex rgen r19.23 mpbi ) ABGZCDHACDIBGMCDFJABCDEKL $.
+  $}
+
+  ${
+    $d x ps $.
+    rexlimiv.1 $e |- ( x e. A -> ( ph -> ps ) ) $.
+    $( Inference from Theorem 19.23 of [Margaris] p. 90.  (Restricted
+       quantifier version.)  (Contributed by NM, 20-Nov-1994.) $)
+    rexlimiv $p |- ( E. x e. A ph -> ps ) $=
+      ( nfv rexlimi ) ABCDBCFEG $.
+  $}
+
+  ${
+    $d x ps $.
+    rexlimiva.1 $e |- ( ( x e. A /\ ph ) -> ps ) $.
+    $( Inference from Theorem 19.23 of [Margaris] p. 90 (restricted quantifier
+       version).  (Contributed by NM, 18-Dec-2006.) $)
+    rexlimiva $p |- ( E. x e. A ph -> ps ) $=
+      ( cv wcel ex rexlimiv ) ABCDCFDGABEHI $.
+  $}
+
+  ${
+    $d ps x $.
+    rexlimivw.1 $e |- ( ph -> ps ) $.
+    $( Weaker version of ~ rexlimiv .  (Contributed by FL, 19-Sep-2011.) $)
+    rexlimivw $p |- ( E. x e. A ph -> ps ) $=
+      ( wi cv wcel a1i rexlimiv ) ABCDABFCGDHEIJ $.
+  $}
+
+  ${
+    rexlimd.1 $e |- F/ x ph $.
+    rexlimd.2 $e |- F/ x ch $.
+    rexlimd.3 $e |- ( ph -> ( x e. A -> ( ps -> ch ) ) ) $.
+    $( Deduction from Theorem 19.23 of [Margaris] p. 90 (restricted quantifier
+       version).  (Contributed by NM, 27-May-1998.)  (Proof shortened by Andrew
+       Salmon, 30-May-2011.) $)
+    rexlimd $p |- ( ph -> ( E. x e. A ps -> ch ) ) $=
+      ( wi wral wrex ralrimi r19.23 sylib ) ABCIZDEJBDEKCIAODEFHLBCDEGMN $.
+  $}
+
+  ${
+    rexlimd2.1 $e |- F/ x ph $.
+    rexlimd2.2 $e |- ( ph -> F/ x ch ) $.
+    rexlimd2.3 $e |- ( ph -> ( x e. A -> ( ps -> ch ) ) ) $.
+    $( Version of ~ rexlimd with deduction version of second hypothesis.
+       (Contributed by NM, 21-Jul-2013.)  (Revised by Mario Carneiro,
+       8-Oct-2016.) $)
+    rexlimd2 $p |- ( ph -> ( E. x e. A ps -> ch ) ) $=
+      ( wi wral wrex ralrimi wnf wb r19.23t syl mpbid ) ABCIZDEJZBDEKCIZARDEFHL
+      ACDMSTNGBCDEOPQ $.
+  $}
+
+  ${
+    $d x ph $.  $d x ch $.
+    rexlimdv.1 $e |- ( ph -> ( x e. A -> ( ps -> ch ) ) ) $.
+    $( Inference from Theorem 19.23 of [Margaris] p. 90 (restricted quantifier
+       version).  (Contributed by NM, 14-Nov-2002.)  (Proof shortened by Eric
+       Schmidt, 22-Dec-2006.) $)
+    rexlimdv $p |- ( ph -> ( E. x e. A ps -> ch ) ) $=
+      ( nfv rexlimd ) ABCDEADGCDGFH $.
+  $}
+
+  ${
+    $d x ph $.  $d x ch $.
+    rexlimdva.1 $e |- ( ( ph /\ x e. A ) -> ( ps -> ch ) ) $.
+    $( Inference from Theorem 19.23 of [Margaris] p. 90 (restricted quantifier
+       version).  (Contributed by NM, 20-Jan-2007.) $)
+    rexlimdva $p |- ( ph -> ( E. x e. A ps -> ch ) ) $=
+      ( cv wcel wi ex rexlimdv ) ABCDEADGEHBCIFJK $.
+  $}
+
+  ${
+    $d x ph $.  $d x ch $.
+    rexlimdvaa.1 $e |- ( ( ph /\ ( x e. A /\ ps ) ) -> ch ) $.
+    $( Inference from Theorem 19.23 of [Margaris] p. 90 (restricted quantifier
+       version).  (Contributed by Mario Carneiro, 15-Jun-2016.) $)
+    rexlimdvaa $p |- ( ph -> ( E. x e. A ps -> ch ) ) $=
+      ( cv wcel expr rexlimdva ) ABCDEADGEHBCFIJ $.
+  $}
+
+  ${
+    $d x ph $.  $d x ch $.
+    rexlimdv3a.1 $e |- ( ( ph /\ x e. A /\ ps ) -> ch ) $.
+    $( Inference from Theorem 19.23 of [Margaris] p. 90 (restricted quantifier
+       version).  Frequently-used variant of ~ rexlimdv .  (Contributed by NM,
+       7-Jun-2015.) $)
+    rexlimdv3a $p |- ( ph -> ( E. x e. A ps -> ch ) ) $=
+      ( cv wcel 3exp rexlimdv ) ABCDEADGEHBCFIJ $.
+  $}
+
+  ${
+    $d x ph $.  $d x ch $.
+    rexlimdvw.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Inference from Theorem 19.23 of [Margaris] p. 90 (restricted quantifier
+       version).  (Contributed by NM, 18-Jun-2014.) $)
+    rexlimdvw $p |- ( ph -> ( E. x e. A ps -> ch ) ) $=
+      ( wi cv wcel a1d rexlimdv ) ABCDEABCGDHEIFJK $.
+  $}
+
+  ${
+    $d x ph $.  $d x ch $.
+    rexlimddv.1 $e |- ( ph -> E. x e. A ps ) $.
+    rexlimddv.2 $e |- ( ( ph /\ ( x e. A /\ ps ) ) -> ch ) $.
+    $( Restricted existential elimination rule of natural deduction.
+       (Contributed by Mario Carneiro, 15-Jun-2016.) $)
+    rexlimddv $p |- ( ph -> ch ) $=
+      ( wrex rexlimdvaa mpd ) ABDEHCFABCDEGIJ $.
+  $}
+
+  ${
+    $d x y ps $.  $d y A $.
+    rexlimivv.1 $e |- ( ( x e. A /\ y e. B ) -> ( ph -> ps ) ) $.
+    $( Inference from Theorem 19.23 of [Margaris] p. 90 (restricted quantifier
+       version).  (Contributed by NM, 17-Feb-2004.) $)
+    rexlimivv $p |- ( E. x e. A E. y e. B ph -> ps ) $=
+      ( wrex cv wcel rexlimdva rexlimiv ) ADFHBCECIEJABDFGKL $.
+  $}
+
+  ${
+    $d x y ph $.  $d x y ch $.  $d y A $.
+    rexlimdvv.1 $e |- ( ph -> ( ( x e. A /\ y e. B ) -> ( ps -> ch ) ) ) $.
+    $( Inference from Theorem 19.23 of [Margaris] p. 90.  (Restricted
+       quantifier version.)  (Contributed by NM, 22-Jul-2004.) $)
+    rexlimdvv $p |- ( ph -> ( E. x e. A E. y e. B ps -> ch ) ) $=
+      ( wrex cv wcel wa wi expdimp rexlimdv rexlimdva ) ABEGICDFADJFKZLBCEGAQEJ
+      GKBCMHNOP $.
+  $}
+
+  ${
+    $d x y ph $.  $d x y ch $.  $d y A $.
+    rexlimdvva.1 $e |- ( ( ph /\ ( x e. A /\ y e. B ) ) -> ( ps -> ch ) ) $.
+    $( Inference from Theorem 19.23 of [Margaris] p. 90.  (Restricted
+       quantifier version.)  (Contributed by NM, 18-Jun-2014.) $)
+    rexlimdvva $p |- ( ph -> ( E. x e. A E. y e. B ps -> ch ) ) $=
+      ( cv wcel wa wi ex rexlimdvv ) ABCDEFGADIFJEIGJKBCLHMN $.
+  $}
+
+  $( Theorem 19.26 of [Margaris] p. 90 with restricted quantifiers.
+     (Contributed by NM, 28-Jan-1997.)  (Proof shortened by Andrew Salmon,
+     30-May-2011.) $)
+  r19.26 $p |- ( A. x e. A ( ph /\ ps ) <->
+               ( A. x e. A ph /\ A. x e. A ps ) ) $=
+    ( wa wral simpl ralimi simpr jca pm3.2 ral2imi imp impbii ) ABEZCDFZACDFZBC
+    DFZEPQROACDABGHOBCDABIHJQRPABOCDABKLMN $.
+
+  $( Theorem 19.26 of [Margaris] p. 90 with 2 restricted quantifiers.
+     (Contributed by NM, 10-Aug-2004.) $)
+  r19.26-2 $p |- ( A. x e. A A. y e. B ( ph /\ ps ) <->
+               ( A. x e. A A. y e. B ph /\ A. x e. A A. y e. B ps ) ) $=
+    ( wa wral r19.26 ralbii bitri ) ABGDFHZCEHADFHZBDFHZGZCEHMCEHNCEHGLOCEABDFI
+    JMNCEIK $.
+
+  $( Theorem 19.26 of [Margaris] p. 90 with 3 restricted quantifiers.
+     (Contributed by FL, 22-Nov-2010.) $)
+  r19.26-3 $p |- ( A. x e. A ( ph /\ ps /\ ch ) <->
+               ( A. x e. A ph /\ A. x e. A ps /\ A. x e. A ch ) ) $=
+    ( w3a wral wa df-3an ralbii r19.26 anbi1i bitr4i 3bitri ) ABCFZDEGABHZCHZDE
+    GPDEGZCDEGZHZADEGZBDEGZSFZOQDEABCIJPCDEKTUAUBHZSHUCRUDSABDEKLUAUBSIMN $.
+
+  $( Theorem 19.26 of [Margaris] p. 90 with mixed quantifiers.  (Contributed by
+     NM, 22-Feb-2004.) $)
+  r19.26m $p |- ( A. x ( ( x e. A -> ph ) /\ ( x e. B -> ps ) ) <->
+               ( A. x e. A ph /\ A. x e. B ps ) ) $=
+    ( cv wcel wi wa wal wral 19.26 df-ral anbi12i bitr4i ) CFZDGAHZPEGBHZICJQCJ
+    ZRCJZIACDKZBCEKZIQRCLUASUBTACDMBCEMNO $.
+
+  $( Distribute a restricted universal quantifier over a biconditional.
+     Theorem 19.15 of [Margaris] p. 90 with restricted quantification.
+     (Contributed by NM, 6-Oct-2003.) $)
+  ralbi $p |- ( A. x e. A ( ph <-> ps ) ->
+               ( A. x e. A ph <-> A. x e. A ps ) ) $=
+    ( wb wral nfra1 cv wcel rsp imp ralbida ) ABEZCDFZABCDMCDGNCHDIMMCDJKL $.
+
+  $( Split a biconditional and distribute quantifier.  (Contributed by NM,
+     3-Jun-2012.) $)
+  ralbiim $p |- ( A. x e. A ( ph <-> ps ) <->
+             ( A. x e. A ( ph -> ps ) /\ A. x e. A ( ps -> ph ) ) ) $=
+    ( wb wral wi wa dfbi2 ralbii r19.26 bitri ) ABEZCDFABGZBAGZHZCDFNCDFOCDFHMP
+    CDABIJNOCDKL $.
+
+  ${
+    $d x ps $.
+    $( Restricted version of one direction of Theorem 19.27 of [Margaris]
+       p. 90.  (The other direction doesn't hold when ` A ` is empty.)
+       (Contributed by NM, 3-Jun-2004.)  (Proof shortened by Andrew Salmon,
+       30-May-2011.) $)
+    r19.27av $p |- ( ( A. x e. A ph /\ ps ) -> A. x e. A ( ph /\ ps ) ) $=
+      ( wral wa cv wcel ax-1 ralrimiv anim2i r19.26 sylibr ) ACDEZBFNBCDEZFABFC
+      DEBONBBCDBCGDHIJKABCDLM $.
+  $}
+
+  ${
+    $d x ph $.
+    $( Restricted version of one direction of Theorem 19.28 of [Margaris]
+       p. 90.  (The other direction doesn't hold when ` A ` is empty.)
+       (Contributed by NM, 2-Apr-2004.) $)
+    r19.28av $p |- ( ( ph /\ A. x e. A ps ) -> A. x e. A ( ph /\ ps ) ) $=
+      ( wral wa r19.27av ancom ralbii 3imtr4i ) BCDEZAFBAFZCDEAKFABFZCDEBACDGAK
+      HMLCDABHIJ $.
+  $}
+
+  $( Theorem 19.29 of [Margaris] p. 90 with restricted quantifiers.
+     (Contributed by NM, 31-Aug-1999.)  (Proof shortened by Andrew Salmon,
+     30-May-2011.) $)
+  r19.29 $p |- ( ( A. x e. A ph /\ E. x e. A ps ) ->
+               E. x e. A ( ph /\ ps ) ) $=
+    ( wral wrex wa wi pm3.2 ralimi rexim syl imp ) ACDEZBCDFZABGZCDFZNBPHZCDEOQ
+    HARCDABIJBPCDKLM $.
+
+  $( Variation of Theorem 19.29 of [Margaris] p. 90 with restricted
+     quantifiers.  (Contributed by NM, 31-Aug-1999.) $)
+  r19.29r $p |- ( ( E. x e. A ph /\ A. x e. A ps ) ->
+                E. x e. A ( ph /\ ps ) ) $=
+    ( wral wrex wa r19.29 ancom rexbii 3imtr4i ) BCDEZACDFZGBAGZCDFMLGABGZCDFBA
+    CDHMLIONCDABIJK $.
+
+  ${
+    r19.29af2.p $e |- F/ x ph $.
+    r19.29af2.c $e |- F/ x ch $.
+    r19.29af2.1 $e |- ( ( ( ph /\ x e. A ) /\ ps ) -> ch ) $.
+    r19.29af2.2 $e |- ( ph -> E. x e. A ps ) $.
+    $( A commonly used pattern based on ~ r19.29 (Contributed by Thierry
+       Arnoux, 17-Dec-2017.) $)
+    r19.29af2 $p |- ( ph -> ch ) $=
+      ( wrex wi wral wa cv wcel exp31 ralrimi jca r19.29r pm3.35 rexlimi 3syl
+      a1i ) ABDEJZBCKZDELZMBUEMZDEJCAUDUFIAUEDEFADNEOZBCHPQRBUEDESUGCDEGUGCKUHB
+      CTUCUAUB $.
+  $}
+
+  ${
+    $d x ch $.
+    r19.29af.0 $e |- F/ x ph $.
+    r19.29af.1 $e |- ( ( ( ph /\ x e. A ) /\ ps ) -> ch ) $.
+    r19.29af.2 $e |- ( ph -> E. x e. A ps ) $.
+    $( A commonly used pattern based on ~ r19.29 (Contributed by Thierry
+       Arnoux, 29-Nov-2017.) $)
+    r19.29af $p |- ( ph -> ch ) $=
+      ( nfv r19.29af2 ) ABCDEFCDIGHJ $.
+  $}
+
+  ${
+    $d x ch $.  $d x ph $.
+    r19.29a.1 $e |- ( ( ( ph /\ x e. A ) /\ ps ) -> ch ) $.
+    r19.29a.2 $e |- ( ph -> E. x e. A ps ) $.
+    $( A commonly used pattern based on ~ r19.29 (Contributed by Thierry
+       Arnoux, 22-Nov-2017.) $)
+    r19.29a $p |- ( ph -> ch ) $=
+      ( nfv r19.29af ) ABCDEADHFGI $.
+  $}
+
+  ${
+    r19.29d2r.1 $e |- ( ph -> A. x e. A A. y e. B ps ) $.
+    r19.29d2r.2 $e |- ( ph -> E. x e. A E. y e. B ch ) $.
+    $( Theorem 19.29 of [Margaris] p. 90 with two restricted quantifiers,
+       deduction version (Contributed by Thierry Arnoux, 30-Jan-2017.) $)
+    r19.29d2r $p |- ( ph -> E. x e. A E. y e. B ( ps /\ ch ) ) $=
+      ( wral wrex wa r19.29 syl2anc reximi syl ) ABEGJZCEGKZLZDFKZBCLEGKZDFKAQD
+      FJRDFKTHIQRDFMNSUADFBCEGMOP $.
+  $}
+
+  ${
+    $d y A $.  $d x y ch $.  $d x y ph $.
+    r19.29_2a.1 $e |- ( ( ( ( ph /\ x e. A ) /\ y e. B ) /\ ps ) -> ch ) $.
+    r19.29_2a.2 $e |- ( ph -> E. x e. A E. y e. B ps ) $.
+    $( A commonly used pattern based on ~ r19.29 , version with two restricted
+       quantifiers (Contributed by Thierry Arnoux, 26-Nov-2017.) $)
+    r19.29_2a $p |- ( ph -> ch ) $=
+      ( wi wa wrex wral cv wcel ex ralrimiva r19.29d2r pm3.35 rexlimivw ancoms
+      syl ) ABCJZBKZEGLZDFLCAUCBDEFGAUCEGMDFADNFOKZUCEGUFENGOKBCHPQQIRUECDFUDCE
+      GBUCCBCSUATTUB $.
+  $}
+
+  $( Theorem 19.30 of [Margaris] p. 90 with restricted quantifiers.
+     (Contributed by Scott Fenton, 25-Feb-2011.) $)
+  r19.30 $p |- ( A. x e. A ( ph \/ ps ) ->
+                 ( A. x e. A ph \/ E. x e. A ps ) ) $=
+    ( wn wi wral wrex ralim orcom df-or bitri ralbii dfrex2 orbi2i imor 3bitr4i
+    wo 3imtr4i ) BEZAFZCDGTCDGZACDGZFZABRZCDGUCBCDHZRZTACDIUEUACDUEBARUAABJBAKL
+    MUCUBEZRUHUCRUGUDUCUHJUFUHUCBCDNOUBUCPQS $.
+
+  ${
+    $d x ph $.
+    $( Theorem 19.32 of [Margaris] p. 90 with restricted quantifiers.
+       (Contributed by NM, 25-Nov-2003.) $)
+    r19.32v $p |- ( A. x e. A ( ph \/ ps ) <-> ( ph \/ A. x e. A ps ) ) $=
+      ( wn wi wral wo r19.21v df-or ralbii 3bitr4i ) AEZBFZCDGMBCDGZFABHZCDGAOH
+      MBCDIPNCDABJKAOJL $.
+  $}
+
+  $( Restricted quantifier version of Theorem 19.35 of [Margaris] p. 90.
+     (Contributed by NM, 20-Sep-2003.) $)
+  r19.35 $p |- ( E. x e. A ( ph -> ps ) <->
+               ( A. x e. A ph -> E. x e. A ps ) ) $=
+    ( wral wn wi wrex r19.26 annim ralbii df-an 3bitr3i con2bii dfrex2 3bitr4ri
+    wa imbi2i ) ACDEZBFZCDEZFZGZABGZFZCDEZFSBCDHZGUDCDHUFUCATQZCDESUAQUFUCFATCD
+    IUHUECDABJKSUALMNUGUBSBCDORUDCDOP $.
+
+  ${
+    $d x ps $.
+    $( One direction of a restricted quantifier version of Theorem 19.36 of
+       [Margaris] p. 90.  The other direction doesn't hold when ` A ` is
+       empty.  (Contributed by NM, 22-Oct-2003.) $)
+    r19.36av $p |- ( E. x e. A ( ph -> ps ) -> ( A. x e. A ph -> ps ) ) $=
+      ( wi wrex wral r19.35 cv wcel idd rexlimiv imim2i sylbi ) ABECDFACDGZBCDF
+      ZEOBEABCDHPBOBBCDCIDJBKLMN $.
+  $}
+
+  ${
+    r19.37.1 $e |- F/ x ph $.
+    $( Restricted version of one direction of Theorem 19.37 of [Margaris]
+       p. 90.  (The other direction doesn't hold when ` A ` is empty.)
+       (Contributed by FL, 13-May-2012.)  (Revised by Mario Carneiro,
+       11-Dec-2016.) $)
+    r19.37 $p |- ( E. x e. A ( ph -> ps ) -> ( ph -> E. x e. A ps ) ) $=
+      ( wi wrex wral r19.35 cv wcel ax-1 ralrimi imim1i sylbi ) ABFCDGACDHZBCDG
+      ZFAQFABCDIAPQAACDEACJDKLMNO $.
+  $}
+
+  ${
+    $d x ph $.
+    $( Restricted version of one direction of Theorem 19.37 of [Margaris]
+       p. 90.  (The other direction doesn't hold when ` A ` is empty.)
+       (Contributed by NM, 2-Apr-2004.) $)
+    r19.37av $p |- ( E. x e. A ( ph -> ps ) -> ( ph -> E. x e. A ps ) ) $=
+      ( nfv r19.37 ) ABCDACEF $.
+  $}
+
+  $( Restricted quantifier version of Theorem 19.40 of [Margaris] p. 90.
+     (Contributed by NM, 2-Apr-2004.) $)
+  r19.40 $p |- ( E. x e. A ( ph /\ ps ) ->
+               ( E. x e. A ph /\ E. x e. A ps ) ) $=
+    ( wa wrex simpl reximi simpr jca ) ABEZCDFACDFBCDFKACDABGHKBCDABIHJ $.
+
+  ${
+    r19.41.1 $e |- F/ x ps $.
+    $( Restricted quantifier version of Theorem 19.41 of [Margaris] p. 90.
+       (Contributed by NM, 1-Nov-2010.) $)
+    r19.41 $p |- ( E. x e. A ( ph /\ ps ) <-> ( E. x e. A ph /\ ps ) ) $=
+      ( cv wcel wa wex wrex anass exbii 19.41 bitr3i df-rex anbi1i 3bitr4i ) CF
+      DGZABHZHZCIZRAHZCIZBHZSCDJACDJZBHUAUBBHZCIUDUFTCRABKLUBBCEMNSCDOUEUCBACDO
+      PQ $.
+  $}
+
+  ${
+    $d x ps $.
+    $( Restricted quantifier version of Theorem 19.41 of [Margaris] p. 90.
+       (Contributed by NM, 17-Dec-2003.) $)
+    r19.41v $p |- ( E. x e. A ( ph /\ ps ) <-> ( E. x e. A ph /\ ps ) ) $=
+      ( nfv r19.41 ) ABCDBCEF $.
+  $}
+
+  ${
+    $d x ph $.
+    $( Restricted version of Theorem 19.42 of [Margaris] p. 90.  (Contributed
+       by NM, 27-May-1998.) $)
+    r19.42v $p |- ( E. x e. A ( ph /\ ps ) <-> ( ph /\ E. x e. A ps ) ) $=
+      ( wa wrex r19.41v ancom rexbii 3bitr4i ) BAEZCDFBCDFZAEABEZCDFALEBACDGMKC
+      DABHIALHJ $.
+  $}
+
+  $( Restricted version of Theorem 19.43 of [Margaris] p. 90.  (Contributed by
+     NM, 27-May-1998.)  (Proof shortened by Andrew Salmon, 30-May-2011.) $)
+  r19.43 $p |- ( E. x e. A ( ph \/ ps ) <->
+               ( E. x e. A ph \/ E. x e. A ps ) ) $=
+    ( wn wi wrex wral wo r19.35 df-or rexbii ralnex imbi1i bitr4i 3bitr4i ) AEZ
+    BFZCDGQCDHZBCDGZFZABIZCDGACDGZTIZQBCDJUBRCDABKLUDUCEZTFUAUCTKSUETACDMNOP $.
+
+  ${
+    $d x ps $.
+    $( One direction of a restricted quantifier version of Theorem 19.44 of
+       [Margaris] p. 90.  The other direction doesn't hold when ` A ` is
+       empty.  (Contributed by NM, 2-Apr-2004.) $)
+    r19.44av $p |- ( E. x e. A ( ph \/ ps ) -> ( E. x e. A ph \/ ps ) ) $=
+      ( wo wrex r19.43 cv wcel idd rexlimiv orim2i sylbi ) ABECDFACDFZBCDFZENBE
+      ABCDGOBNBBCDCHDIBJKLM $.
+  $}
+
+  ${
+    $d x ph $.
+    $( Restricted version of one direction of Theorem 19.45 of [Margaris]
+       p. 90.  (The other direction doesn't hold when ` A ` is empty.)
+       (Contributed by NM, 2-Apr-2004.) $)
+    r19.45av $p |- ( E. x e. A ( ph \/ ps ) -> ( ph \/ E. x e. A ps ) ) $=
+      ( wo wrex r19.43 cv wcel idd rexlimiv orim1i sylbi ) ABECDFACDFZBCDFZEAOE
+      ABCDGNAOAACDCHDIAJKLM $.
+  $}
+
+  ${
+    $d x y $.
+    ralcomf.1 $e |- F/_ y A $.
+    ralcomf.2 $e |- F/_ x B $.
+    $( Commutation of restricted quantifiers.  (Contributed by Mario Carneiro,
+       14-Oct-2016.) $)
+    ralcomf $p |- ( A. x e. A A. y e. B ph <-> A. y e. B A. x e. A ph ) $=
+      ( cv wcel wa wi wal wral ancomsimp 2albii alcom bitri r2alf 3bitr4i ) BHD
+      IZCHEIZJAKZCLBLZUATJAKZBLCLZACEMBDMABDMCEMUCUDCLBLUEUBUDBCTUAANOUDBCPQABC
+      DEFRACBEDGRS $.
+
+    $( Commutation of restricted quantifiers.  (Contributed by Mario Carneiro,
+       14-Oct-2016.) $)
+    rexcomf $p |- ( E. x e. A E. y e. B ph <-> E. y e. B E. x e. A ph ) $=
+      ( cv wcel wa wex wrex ancom anbi1i 2exbii excom bitri r2exf 3bitr4i ) BHD
+      IZCHEIZJZAJZCKBKZUATJZAJZBKCKZACELBDLABDLCELUDUFCKBKUGUCUFBCUBUEATUAMNOUF
+      BCPQABCDEFRACBEDGRS $.
+  $}
+
+  ${
+    $d x y $.  $d x B $.  $d y A $.
+    $( Commutation of restricted quantifiers.  (Contributed by NM,
+       13-Oct-1999.)  (Revised by Mario Carneiro, 14-Oct-2016.) $)
+    ralcom $p |- ( A. x e. A A. y e. B ph <-> A. y e. B A. x e. A ph ) $=
+      ( nfcv ralcomf ) ABCDECDFBEFG $.
+
+    $( Commutation of restricted quantifiers.  (Contributed by NM,
+       19-Nov-1995.)  (Revised by Mario Carneiro, 14-Oct-2016.) $)
+    rexcom $p |- ( E. x e. A E. y e. B ph <-> E. y e. B E. x e. A ph ) $=
+      ( nfcv rexcomf ) ABCDECDFBEFG $.
+  $}
+
+  ${
+    $d y z A $.  $d x z B $.  $d x y C $.
+    $( Swap 1st and 3rd restricted existential quantifiers.  (Contributed by
+       NM, 8-Apr-2015.) $)
+    rexcom13 $p |- ( E. x e. A E. y e. B E. z e. C ph
+         <-> E. z e. C E. y e. B E. x e. A ph ) $=
+      ( wrex rexcom rexbii 3bitri ) ADGHZCFHBEHLBEHZCFHABEHZDGHZCFHNCFHDGHLBCEF
+      IMOCFABDEGIJNCDFGIK $.
+  $}
+
+  ${
+    $d w z A $.  $d w z B $.  $d w x y C $.  $d x y z D $.
+    $( Rotate existential restricted quantifiers twice.  (Contributed by NM,
+       8-Apr-2015.) $)
+    rexrot4 $p |- ( E. x e. A E. y e. B E. z e. C E. w e. D ph
+        <-> E. z e. C E. w e. D E. x e. A E. y e. B ph ) $=
+      ( wrex rexcom13 rexbii bitri ) AEIJDHJCGJZBFJACGJZDHJEIJZBFJOBFJEIJDHJNPB
+      FACDEGHIKLOBEDFIHKM $.
+  $}
+
+  ${
+    $d y z A $.  $d x z A $.
+    $( Commutation of restricted quantifiers.  Note that ` x ` and ` y `
+       needn't be distinct (this makes the proof longer).  (Contributed by NM,
+       24-Nov-1994.)  (Proof shortened by Mario Carneiro, 17-Oct-2016.) $)
+    ralcom2 $p |- ( A. x e. A A. y e. A ph -> A. y e. A A. x e. A ph ) $=
+      ( weq wral wi cv wcel wb eleq1 dral1 df-ral 3bitr4g wa nfnae nfan ralrimi
+      wal ex sps imbi1d bicomd imbi12d biimpd wn nfra2 nfra1 nfcvf adantr nfcvd
+      wnfc nfeld nfan1 rsp2 ancomsd expdimp adantll pm2.61i ) BCEZBSZACDFZBDFZA
+      BDFZCDFZGVAVCVEVABHZDIZVBGZBSCHZDIZVDGZCSVCVEVHVKBCVAVGVJVBVDUTVGVJJBVFVI
+      DKUAZVAVJAGZCSZVGAGZBSZVBVDVAVPVNVOVMBCVAVGVJAVLUBLUCACDMABDMNUDLVBBDMVDC
+      DMNUEVAUFZVCVEVQVCOZVDCDVQVCCBCCPABCDDUGQVRVJVDVRVJOABDVRVJBVQVCBBCBPVBBD
+      UHQVRBVIDVQBVIULVCBCUIUJVRBDUKUMUNVCVJVOVQVCVJVGAVCVGVJAABCDDUOUPUQURRTRT
+      US $.
+  $}
+
+  ${
+    $( A commutative law for restricted quantifiers that swaps the domain of
+       the restriction.  (Contributed by NM, 22-Feb-2004.) $)
+    ralcom3 $p |- ( A. x e. A ( x e. B -> ph ) <->
+                    A. x e. B ( x e. A -> ph ) ) $=
+      ( cv wcel wi wral pm2.04 ralimi2 impbii ) BEZDFZAGZBCHLCFZAGZBDHNPBCDOMAI
+      JPNBDCMOAIJK $.
+  $}
+
+  ${
+    $d y A $.  $d x B $.  $d x y $.
+    reean.1 $e |- F/ y ph $.
+    reean.2 $e |- F/ x ps $.
+    $( Rearrange existential quantifiers.  (Contributed by NM, 27-Oct-2010.)
+       (Proof shortened by Andrew Salmon, 30-May-2011.) $)
+    reean $p |- ( E. x e. A E. y e. B ( ph /\ ps ) <->
+                 ( E. x e. A ph /\ E. y e. B ps ) ) $=
+      ( cv wcel wa wex wrex an4 2exbii nfv nfan eean bitri df-rex r2ex anbi12i
+      3bitr4i ) CIEJZDIFJZKABKZKZDLCLZUDAKZCLZUEBKZDLZKZUFDFMCEMACEMZBDFMZKUHUI
+      UKKZDLCLUMUGUPCDUDUEABNOUIUKCDUDADUDDPGQUEBCUECPHQRSUFCDEFUAUNUJUOULACETB
+      DFTUBUC $.
+  $}
+
+  ${
+    $d y ph $.  $d x ps $.  $d x y $.  $d y A $.  $d x B $.
+    $( Rearrange existential quantifiers.  (Contributed by NM, 9-May-1999.) $)
+    reeanv $p |- ( E. x e. A E. y e. B ( ph /\ ps ) <->
+                 ( E. x e. A ph /\ E. y e. B ps ) ) $=
+      ( nfv reean ) ABCDEFADGBCGH $.
+  $}
+
+  ${
+    $d ph y z $.  $d ps x z $.  $d ch x y $.  $d A y $.  $d B x z $.
+    $d C x y $.
+    $( Rearrange three existential quantifiers.  (Contributed by Jeff Madsen,
+       11-Jun-2010.) $)
+    3reeanv $p |- ( E. x e. A E. y e. B E. z e. C ( ph /\ ps /\ ch )
+                      <-> ( E. x e. A ph /\ E. y e. B ps /\ E. z e. C ch ) ) $=
+      ( wa wrex w3a r19.41v reeanv anbi1i bitri df-3an 2rexbii rexbii 3bitr4i )
+      ABJZEHKZCFIKZJZDGKZADGKZBEHKZJZUCJZABCLZFIKEHKZDGKUFUGUCLUEUBDGKZUCJUIUBU
+      CDGMULUHUCABDEGHNOPUKUDDGUKUACJZFIKEHKUDUJUMEFHIABCQRUACEFHINPSUFUGUCQT
+      $.
+  $}
+
+  ${
+    $d ph y $.  $d ps x $.  $d A y $.  $d B x $.  $d x y $.
+    $( Distribute quantification over "or".  (Contributed by Jeff Madsen,
+       19-Jun-2010.) $)
+    2ralor $p |- ( A. x e. A A. y e. B ( ph \/ ps ) <->
+                  ( A. x e. A ph \/ A. y e. B ps ) ) $=
+      ( wo wral wn wrex wa rexnal anbi12i rexbii bitr3i reeanv 3bitr3ri 3bitr4i
+      ioran con4bii ) ABGZDFHZCEHZACEHZBDFHZGZAIZCEJZBIZDFJZKZUDIZUEIZKUCIZUFIU
+      HULUJUMACELBDFLMUGUIKZDFJZCEJUBIZCEJUKUNUPUQCEUPUAIZDFJUQURUODFABSNUADFLO
+      NUGUICDEFPUBCELQUDUESRT $.
+  $}
+
+  $( ` x ` is not free in ` E! x e. A ph ` .  (Contributed by NM,
+     19-Mar-1997.) $)
+  nfreu1 $p |- F/ x E! x e. A ph $=
+    ( wreu cv wcel wa weu df-reu nfeu1 nfxfr ) ABCDBECFAGZBHBABCILBJK $.
+
+  $( ` x ` is not free in ` E* x e. A ph ` .  (Contributed by NM,
+     16-Jun-2017.) $)
+  nfrmo1 $p |- F/ x E* x e. A ph $=
+    ( wrmo cv wcel wa wmo df-rmo nfmo1 nfxfr ) ABCDBECFAGZBHBABCILBJK $.
+
+  ${
+    $d x z $.  $d y z $.  $d A z $.  $d ph z $.
+    nfreud.1 $e |- F/ y ph $.
+    nfreud.2 $e |- ( ph -> F/_ x A ) $.
+    nfreud.3 $e |- ( ph -> F/ x ps ) $.
+    $( Deduction version of ~ nfreu .  (Contributed by NM, 15-Feb-2013.)
+       (Revised by Mario Carneiro, 8-Oct-2016.) $)
+    nfreud $p |- ( ph -> F/ x E! y e. A ps ) $=
+      ( wreu cv wcel wa weu df-reu weq wal wn wnfc nfcvf adantr nfeld wnf nfand
+      adantl nfeud2 nfxfrd ) BDEIDJZEKZBLZDMACBDENAUICDFACDOCPQZLZUHBCUKCUGEUJC
+      UGRACDSUDACERUJGTUAABCUBUJHTUCUEUF $.
+
+    $( Deduction version of ~ nfrmo .  (Contributed by NM, 17-Jun-2017.) $)
+    nfrmod $p |- ( ph -> F/ x E* y e. A ps ) $=
+      ( wrmo cv wcel wa wmo df-rmo weq wal wn wnfc nfcvf adantr nfeld wnf nfand
+      adantl nfmod2 nfxfrd ) BDEIDJZEKZBLZDMACBDENAUICDFACDOCPQZLZUHBCUKCUGEUJC
+      UGRACDSUDACERUJGTUAABCUBUJHTUCUEUF $.
+  $}
+
+  ${
+    nfreu.1 $e |- F/_ x A $.
+    nfreu.2 $e |- F/ x ph $.
+    $( Bound-variable hypothesis builder for restricted uniqueness.
+       (Contributed by NM, 30-Oct-2010.)  (Revised by Mario Carneiro,
+       8-Oct-2016.) $)
+    nfreu $p |- F/ x E! y e. A ph $=
+      ( wreu wnf wtru nftru wnfc a1i nfreud trud ) ACDGBHIABCDCJBDKIELABHIFLMN
+      $.
+
+    $( Bound-variable hypothesis builder for restricted uniqueness.
+       (Contributed by NM, 16-Jun-2017.) $)
+    nfrmo $p |- F/ x E* y e. A ph $=
+      ( wrmo cv wcel wa wmo df-rmo wnf wtru nftru weq wal wn nfcvf a1i adantl
+      wnfc nfeld nfand nfmod2 trud nfxfr ) ACDGCHZDIZAJZCKZBACDLUKBMNUJBCCOBCPB
+      QRZUJBMNULUIABULBUHDBCSBDUBULETUCABMULFTUDUAUEUFUG $.
+  $}
+
+  $( An "identity" law of concretion for restricted abstraction.  Special case
+     of Definition 2.1 of [Quine] p. 16.  (Contributed by NM, 9-Oct-2003.) $)
+  rabid $p |- ( x e. { x e. A | ph } <-> ( x e. A /\ ph ) ) $=
+    ( cv wcel wa crab df-rab abeq2i ) BDCEAFBABCGABCHI $.
+
+  ${
+    $d x A $.
+    $( An "identity" law for restricted class abstraction.  (Contributed by NM,
+       9-Oct-2003.)  (Proof shortened by Andrew Salmon, 30-May-2011.) $)
+    rabid2 $p |- ( A = { x e. A | ph } <-> A. x e. A ph ) $=
+      ( cv wcel wa cab wceq wi wal crab abeq2 pm4.71 albii bitr4i df-rab eqeq2i
+      wral wb df-ral 3bitr4i ) CBDCEZAFZBGZHZUBAIZBJZCABCKZHABCRUEUBUCSZBJUGUCB
+      CLUFUIBUBAMNOUHUDCABCPQABCTUA $.
+  $}
+
+  ${
+    $( Equivalent wff's correspond to equal restricted class abstractions.
+       Closed theorem form of ~ rabbidva .  (Contributed by NM,
+       25-Nov-2013.) $)
+    rabbi $p |- ( A. x e. A ( ps <-> ch )
+         <-> { x e. A | ps } = { x e. A | ch } ) $=
+      ( cv wcel wa wb wal cab wceq wral crab abbi wi df-ral pm5.32 albii df-rab
+      bitri eqeq12i 3bitr4i ) CEDFZAGZUCBGZHZCIZUDCJZUECJZKABHZCDLZACDMZBCDMZKU
+      DUECNUKUCUJOZCIUGUJCDPUNUFCUCABQRTULUHUMUIACDSBCDSUAUB $.
+  $}
+
+  $( Swap with a membership relation in a restricted class abstraction.
+     (Contributed by NM, 4-Jul-2005.) $)
+  rabswap $p |- { x e. A | x e. B } = { x e. B | x e. A } $=
+    ( cv wcel wa cab crab ancom abbii df-rab 3eqtr4i ) ADZBEZMCEZFZAGONFZAGOABH
+    NACHPQANOIJOABKNACKL $.
+
+  ${
+    $d x y $.
+    $( The abstraction variable in a restricted class abstraction isn't free.
+       (Contributed by NM, 19-Mar-1997.) $)
+    nfrab1 $p |- F/_ x { x e. A | ph } $=
+      ( crab cv wcel wa cab df-rab nfab1 nfcxfr ) BABCDBECFAGZBHABCILBJK $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z A $.
+    nfrab.1 $e |- F/ x ph $.
+    nfrab.2 $e |- F/_ x A $.
+    $( A variable not free in a wff remains so in a restricted class
+       abstraction.  (Contributed by NM, 13-Oct-2003.)  (Revised by Mario
+       Carneiro, 9-Oct-2016.) $)
+    nfrab $p |- F/_ x { y e. A | ph } $=
+      ( vz crab cv wcel wa cab df-rab wnfc wtru nftru weq wal wn wnf a1i adantl
+      nfcri eleq1 dvelimnf nfand nfabd2 trud nfcxfr ) BACDHCIZDJZAKZCLZACDMBUMN
+      OULBCCPBCQBRSZULBTOUNUKABGIZDJUKBCGBGDFUCUOUJDUDUEABTUNEUAUFUBUGUHUI $.
+  $}
+
+  ${
+    reubida.1 $e |- F/ x ph $.
+    reubida.2 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for restricted existential quantifier (deduction
+       rule).  (Contributed by Mario Carneiro, 19-Nov-2016.) $)
+    reubida $p |- ( ph -> ( E! x e. A ps <-> E! x e. A ch ) ) $=
+      ( cv wcel wa weu wreu pm5.32da eubid df-reu 3bitr4g ) ADHEIZBJZDKQCJZDKBD
+      ELCDELARSDFAQBCGMNBDEOCDEOP $.
+  $}
+
+  ${
+    $d x ph $.
+    reubidva.1 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for restricted existential quantifier (deduction
+       rule).  (Contributed by NM, 13-Nov-2004.) $)
+    reubidva $p |- ( ph -> ( E! x e. A ps <-> E! x e. A ch ) ) $=
+      ( nfv reubida ) ABCDEADGFH $.
+  $}
+
+  ${
+    $d x ph $.
+    reubidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for restricted existential quantifier (deduction
+       rule).  (Contributed by NM, 17-Oct-1996.) $)
+    reubidv $p |- ( ph -> ( E! x e. A ps <-> E! x e. A ch ) ) $=
+      ( wb cv wcel adantr reubidva ) ABCDEABCGDHEIFJK $.
+  $}
+
+  ${
+    reubiia.1 $e |- ( x e. A -> ( ph <-> ps ) ) $.
+    $( Formula-building rule for restricted existential quantifier (inference
+       rule).  (Contributed by NM, 14-Nov-2004.) $)
+    reubiia $p |- ( E! x e. A ph <-> E! x e. A ps ) $=
+      ( cv wcel wa weu wreu pm5.32i eubii df-reu 3bitr4i ) CFDGZAHZCIOBHZCIACDJ
+      BCDJPQCOABEKLACDMBCDMN $.
+  $}
+
+  ${
+    reubii.1 $e |- ( ph <-> ps ) $.
+    $( Formula-building rule for restricted existential quantifier (inference
+       rule).  (Contributed by NM, 22-Oct-1999.) $)
+    reubii $p |- ( E! x e. A ph <-> E! x e. A ps ) $=
+      ( wb cv wcel a1i reubiia ) ABCDABFCGDHEIJ $.
+  $}
+
+  ${
+    rmobida.1 $e |- F/ x ph $.
+    rmobida.2 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for restricted existential quantifier (deduction
+       rule).  (Contributed by NM, 16-Jun-2017.) $)
+    rmobida $p |- ( ph -> ( E* x e. A ps <-> E* x e. A ch ) ) $=
+      ( cv wcel wa wmo wrmo pm5.32da mobid df-rmo 3bitr4g ) ADHEIZBJZDKQCJZDKBD
+      ELCDELARSDFAQBCGMNBDEOCDEOP $.
+  $}
+
+  ${
+    $d x ph $.
+    rmobidva.1 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for restricted existential quantifier (deduction
+       rule).  (Contributed by NM, 16-Jun-2017.) $)
+    rmobidva $p |- ( ph -> ( E* x e. A ps <-> E* x e. A ch ) ) $=
+      ( nfv rmobida ) ABCDEADGFH $.
+  $}
+
+  ${
+    $d x ph $.
+    rmobidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for restricted existential quantifier (deduction
+       rule).  (Contributed by NM, 16-Jun-2017.) $)
+    rmobidv $p |- ( ph -> ( E* x e. A ps <-> E* x e. A ch ) ) $=
+      ( wb cv wcel adantr rmobidva ) ABCDEABCGDHEIFJK $.
+  $}
+
+  ${
+    rmobiia.1 $e |- ( x e. A -> ( ph <-> ps ) ) $.
+    $( Formula-building rule for restricted existential quantifier (inference
+       rule).  (Contributed by NM, 16-Jun-2017.) $)
+    rmobiia $p |- ( E* x e. A ph <-> E* x e. A ps ) $=
+      ( cv wcel wa wmo wrmo pm5.32i mobii df-rmo 3bitr4i ) CFDGZAHZCIOBHZCIACDJ
+      BCDJPQCOABEKLACDMBCDMN $.
+  $}
+
+  ${
+    rmobii.1 $e |- ( ph <-> ps ) $.
+    $( Formula-building rule for restricted existential quantifier (inference
+       rule).  (Contributed by NM, 16-Jun-2017.) $)
+    rmobii $p |- ( E* x e. A ph <-> E* x e. A ps ) $=
+      ( wb cv wcel a1i rmobiia ) ABCDABFCGDHEIJ $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.
+    raleq1f.1 $e |- F/_ x A $.
+    raleq1f.2 $e |- F/_ x B $.
+    $( Equality theorem for restricted universal quantifier, with
+       bound-variable hypotheses instead of distinct variable restrictions.
+       (Contributed by NM, 7-Mar-2004.)  (Revised by Andrew Salmon,
+       11-Jul-2011.) $)
+    raleqf $p |- ( A = B -> ( A. x e. A ph <-> A. x e. B ph ) ) $=
+      ( wceq cv wcel wi wal wral nfeq eleq2 imbi1d albid df-ral 3bitr4g ) CDGZB
+      HZCIZAJZBKTDIZAJZBKABCLABDLSUBUDBBCDEFMSUAUCACDTNOPABCQABDQR $.
+
+    $( Equality theorem for restricted existential quantifier, with
+       bound-variable hypotheses instead of distinct variable restrictions.
+       (Contributed by NM, 9-Oct-2003.)  (Revised by Andrew Salmon,
+       11-Jul-2011.) $)
+    rexeqf $p |- ( A = B -> ( E. x e. A ph <-> E. x e. B ph ) ) $=
+      ( wceq cv wcel wa wex wrex nfeq eleq2 anbi1d exbid df-rex 3bitr4g ) CDGZB
+      HZCIZAJZBKTDIZAJZBKABCLABDLSUBUDBBCDEFMSUAUCACDTNOPABCQABDQR $.
+
+    $( Equality theorem for restricted uniqueness quantifier, with
+       bound-variable hypotheses instead of distinct variable restrictions.
+       (Contributed by NM, 5-Apr-2004.)  (Revised by Andrew Salmon,
+       11-Jul-2011.) $)
+    reueq1f $p |- ( A = B -> ( E! x e. A ph <-> E! x e. B ph ) ) $=
+      ( wceq cv wcel wa weu wreu nfeq eleq2 anbi1d eubid df-reu 3bitr4g ) CDGZB
+      HZCIZAJZBKTDIZAJZBKABCLABDLSUBUDBBCDEFMSUAUCACDTNOPABCQABDQR $.
+
+    $( Equality theorem for restricted uniqueness quantifier, with
+       bound-variable hypotheses instead of distinct variable restrictions.
+       (Contributed by Alexander van der Vekens, 17-Jun-2017.) $)
+    rmoeq1f $p |- ( A = B -> ( E* x e. A ph <-> E* x e. B ph ) ) $=
+      ( wceq cv wcel wa wmo wrmo nfeq eleq2 anbi1d mobid df-rmo 3bitr4g ) CDGZB
+      HZCIZAJZBKTDIZAJZBKABCLABDLSUBUDBBCDEFMSUAUCACDTNOPABCQABDQR $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Equality theorem for restricted universal quantifier.  (Contributed by
+       NM, 16-Nov-1995.) $)
+    raleq $p |- ( A = B -> ( A. x e. A ph <-> A. x e. B ph ) ) $=
+      ( nfcv raleqf ) ABCDBCEBDEF $.
+
+    $( Equality theorem for restricted existential quantifier.  (Contributed by
+       NM, 29-Oct-1995.) $)
+    rexeq $p |- ( A = B -> ( E. x e. A ph <-> E. x e. B ph ) ) $=
+      ( nfcv rexeqf ) ABCDBCEBDEF $.
+
+    $( Equality theorem for restricted uniqueness quantifier.  (Contributed by
+       NM, 5-Apr-2004.) $)
+    reueq1 $p |- ( A = B -> ( E! x e. A ph <-> E! x e. B ph ) ) $=
+      ( nfcv reueq1f ) ABCDBCEBDEF $.
+
+    $( Equality theorem for restricted uniqueness quantifier.  (Contributed by
+       Alexander van der Vekens, 17-Jun-2017.) $)
+    rmoeq1 $p |- ( A = B -> ( E* x e. A ph <-> E* x e. B ph ) ) $=
+      ( nfcv rmoeq1f ) ABCDBCEBDEF $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    raleq1i.1 $e |- A = B $.
+    $( Equality inference for restricted universal qualifier.  (Contributed by
+       Paul Chapman, 22-Jun-2011.) $)
+    raleqi $p |- ( A. x e. A ph <-> A. x e. B ph ) $=
+      ( wceq wral wb raleq ax-mp ) CDFABCGABDGHEABCDIJ $.
+
+    $( Equality inference for restricted existential qualifier.  (Contributed
+       by Mario Carneiro, 23-Apr-2015.) $)
+    rexeqi $p |- ( E. x e. A ph <-> E. x e. B ph ) $=
+      ( wceq wrex wb rexeq ax-mp ) CDFABCGABDGHEABCDIJ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    raleq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for restricted universal quantifier.  (Contributed by
+       NM, 13-Nov-2005.) $)
+    raleqdv $p |- ( ph -> ( A. x e. A ps <-> A. x e. B ps ) ) $=
+      ( wceq wral wb raleq syl ) ADEGBCDHBCEHIFBCDEJK $.
+
+    $( Equality deduction for restricted existential quantifier.  (Contributed
+       by NM, 14-Jan-2007.) $)
+    rexeqdv $p |- ( ph -> ( E. x e. A ps <-> E. x e. B ps ) ) $=
+      ( wceq wrex wb rexeq syl ) ADEGBCDHBCEHIFBCDEJK $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    raleqd.1 $e |- ( A = B -> ( ph <-> ps ) ) $.
+    $( Equality deduction for restricted universal quantifier.  (Contributed by
+       NM, 16-Nov-1995.) $)
+    raleqbi1dv $p |- ( A = B -> ( A. x e. A ph <-> A. x e. B ps ) ) $=
+      ( wceq wral raleq ralbidv bitrd ) DEGZACDHACEHBCEHACDEILABCEFJK $.
+
+    $( Equality deduction for restricted existential quantifier.  (Contributed
+       by NM, 18-Mar-1997.) $)
+    rexeqbi1dv $p |- ( A = B -> ( E. x e. A ph <-> E. x e. B ps ) ) $=
+      ( wceq wrex rexeq rexbidv bitrd ) DEGZACDHACEHBCEHACDEILABCEFJK $.
+
+    $( Equality deduction for restricted uniqueness quantifier.  (Contributed
+       by NM, 5-Apr-2004.) $)
+    reueqd $p |- ( A = B -> ( E! x e. A ph <-> E! x e. B ps ) ) $=
+      ( wceq wreu reueq1 reubidv bitrd ) DEGZACDHACEHBCEHACDEILABCEFJK $.
+
+    $( Equality deduction for restricted uniqueness quantifier.  (Contributed
+       by Alexander van der Vekens, 17-Jun-2017.) $)
+    rmoeqd $p |- ( A = B -> ( E* x e. A ph <-> E* x e. B ps ) ) $=
+      ( wceq wrmo rmoeq1 rmobidv bitrd ) DEGZACDHACEHBCEHACDEILABCEFJK $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ph $.
+    raleqbidv.1 $e |- ( ph -> A = B ) $.
+    raleqbidv.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equality deduction for restricted universal quantifier.  (Contributed by
+       NM, 6-Nov-2007.) $)
+    raleqbidv $p |- ( ph -> ( A. x e. A ps <-> A. x e. B ch ) ) $=
+      ( wral raleqdv ralbidv bitrd ) ABDEIBDFICDFIABDEFGJABCDFHKL $.
+
+    $( Equality deduction for restricted universal quantifier.  (Contributed by
+       NM, 6-Nov-2007.) $)
+    rexeqbidv $p |- ( ph -> ( E. x e. A ps <-> E. x e. B ch ) ) $=
+      ( wrex rexeqdv rexbidv bitrd ) ABDEIBDFICDFIABDEFGJABCDFHKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ph $.
+    raleqbidva.1 $e |- ( ph -> A = B ) $.
+    raleqbidva.2 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
+    $( Equality deduction for restricted universal quantifier.  (Contributed by
+       Mario Carneiro, 5-Jan-2017.) $)
+    raleqbidva $p |- ( ph -> ( A. x e. A ps <-> A. x e. B ch ) ) $=
+      ( wral ralbidva raleqdv bitrd ) ABDEICDEICDFIABCDEHJACDEFGKL $.
+
+    $( Equality deduction for restricted universal quantifier.  (Contributed by
+       Mario Carneiro, 5-Jan-2017.) $)
+    rexeqbidva $p |- ( ph -> ( E. x e. A ps <-> E. x e. B ch ) ) $=
+      ( wrex rexbidva rexeqdv bitrd ) ABDEICDEICDFIABCDEHJACDEFGKL $.
+  $}
+
+  $( Unrestricted "at most one" implies restricted "at most one".  (Contributed
+     by NM, 16-Jun-2017.) $)
+  mormo $p |- ( E* x ph -> E* x e. A ph ) $=
+    ( wmo cv wcel wa wrmo moan df-rmo sylibr ) ABDBECFZAGBDABCHALBIABCJK $.
+
+  $( Restricted uniqueness in terms of "at most one."  (Contributed by NM,
+     23-May-1999.)  (Revised by NM, 16-Jun-2017.) $)
+  reu5 $p |- ( E! x e. A ph <-> ( E. x e. A ph /\ E* x e. A ph ) ) $=
+    ( cv wcel wa weu wex wmo wreu wrex eu5 df-reu df-rex df-rmo anbi12i 3bitr4i
+    wrmo ) BDCEAFZBGSBHZSBIZFABCJABCKZABCRZFSBLABCMUBTUCUAABCNABCOPQ $.
+
+  $( Restricted unique existence implies restricted existence.  (Contributed by
+     NM, 19-Aug-1999.) $)
+  reurex $p |- ( E! x e. A ph -> E. x e. A ph ) $=
+    ( wreu wrex wrmo reu5 simplbi ) ABCDABCEABCFABCGH $.
+
+  $( Restricted existential uniqueness implies restricted "at most one."
+     (Contributed by NM, 16-Jun-2017.) $)
+  reurmo $p |- ( E! x e. A ph -> E* x e. A ph ) $=
+    ( wreu wrex wrmo reu5 simprbi ) ABCDABCEABCFABCGH $.
+
+  $( Restricted "at most one" in term of uniqueness.  (Contributed by NM,
+     16-Jun-2017.) $)
+  rmo5 $p |- ( E* x e. A ph <-> ( E. x e. A ph -> E! x e. A ph ) ) $=
+    ( cv wcel wa wmo wex weu wrmo wrex wreu df-mo df-rmo df-rex imbi12i 3bitr4i
+    wi df-reu ) BDCEAFZBGTBHZTBIZRABCJABCKZABCLZRTBMABCNUCUAUDUBABCOABCSPQ $.
+
+  $( Nonexistence implies restricted "at most one".  (Contributed by NM,
+     17-Jun-2017.) $)
+  nrexrmo $p |- ( -. E. x e. A ph -> E* x e. A ph ) $=
+    ( wrex wn wreu wi wrmo pm2.21 rmo5 sylibr ) ABCDZELABCFZGABCHLMIABCJK $.
+
+  ${
+    $d x z $.  $d y z $.  $d z A $.  $d z ps $.  $d z ph $.
+    cbvralf.1 $e |- F/_ x A $.
+    cbvralf.2 $e |- F/_ y A $.
+    cbvralf.3 $e |- F/ y ph $.
+    cbvralf.4 $e |- F/ x ps $.
+    cbvralf.5 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 7-Mar-2004.)  (Revised by Mario Carneiro,
+       9-Oct-2016.) $)
+    cbvralf $p |- ( A. x e. A ph <-> A. y e. A ps ) $=
+      ( vz cv wcel wi wal wral wsb nfv nfcri nfim nfs1v weq eleq1 sbequ12 cbval
+      imbi12d nfsb sbequ sbie syl6bb bitri df-ral 3bitr4i ) CLZEMZANZCOZDLZEMZB
+      NZDOZACEPBDEPUQKLZEMZACKQZNZKOVAUPVECKUPKRVCVDCCKEFSACKUATCKUBUOVCAVDUNVB
+      EUCACKUDUFUEVEUTKDVCVDDDKEGSACKDHUGTUTKRKDUBZVCUSVDBVBUREUCVFVDACDQBAKDCU
+      HABCDIJUIUJUFUEUKACEULBDEULUM $.
+
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by FL, 27-Apr-2008.)  (Revised by Mario Carneiro,
+       9-Oct-2016.) $)
+    cbvrexf $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
+      ( wn wral wrex nfn weq notbid cbvralf notbii dfrex2 3bitr4i ) AKZCELZKBKZ
+      DELZKACEMBDEMUBUDUAUCCDEFGADHNBCINCDOABJPQRACESBDEST $.
+  $}
+
+  ${
+    $d x z A $.  $d y z A $.  $d z ph $.  $d z ps $.
+    cbvral.1 $e |- F/ y ph $.
+    cbvral.2 $e |- F/ x ps $.
+    cbvral.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 31-Jul-2003.) $)
+    cbvral $p |- ( A. x e. A ph <-> A. y e. A ps ) $=
+      ( nfcv cbvralf ) ABCDECEIDEIFGHJ $.
+
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 31-Jul-2003.)  (Proof shortened by Andrew Salmon,
+       8-Jun-2011.) $)
+    cbvrex $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
+      ( nfcv cbvrexf ) ABCDECEIDEIFGHJ $.
+
+    $( Change the bound variable of a restricted uniqueness quantifier using
+       implicit substitution.  (Contributed by Mario Carneiro, 15-Oct-2016.) $)
+    cbvreu $p |- ( E! x e. A ph <-> E! y e. A ps ) $=
+      ( vz cv wcel wa weu wreu wsb nfv sb8eu sban eubii df-reu anbi1i nfsb nfan
+      clelsb3 weq eleq1 sbequ sbie syl6bb anbi12d cbveu bitri 3bitri 3bitr4i )
+      CJEKZALZCMZDJZEKZBLZDMZACENBDENUQUPCIOZIMUOCIOZACIOZLZIMZVAUPCIUPIPQVBVEI
+      UOACIRSVFIJZEKZVDLZIMVAVEVIIVCVHVDICEUDUASVIUTIDVHVDDVHDPACIDFUBUCUTIPIDU
+      EZVHUSVDBVGUREUFVJVDACDOBAIDCUGABCDGHUHUIUJUKULUMACETBDETUN $.
+
+    $( Change the bound variable of restricted "at most one" using implicit
+       substitution.  (Contributed by NM, 16-Jun-2017.) $)
+    cbvrmo $p |- ( E* x e. A ph <-> E* y e. A ps ) $=
+      ( wrex wreu wi wrmo cbvrex cbvreu imbi12i rmo5 3bitr4i ) ACEIZACEJZKBDEIZ
+      BDEJZKACELBDELRTSUAABCDEFGHMABCDEFGHNOACEPBDEPQ $.
+  $}
+
+  ${
+    $d z x A $.  $d y A $.  $d z y ph $.  $d z x ps $.
+    cbvralv.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Change the bound variable of a restricted universal quantifier using
+       implicit substitution.  (Contributed by NM, 28-Jan-1997.) $)
+    cbvralv $p |- ( A. x e. A ph <-> A. y e. A ps ) $=
+      ( nfv cbvral ) ABCDEADGBCGFH $.
+
+    $( Change the bound variable of a restricted existential quantifier using
+       implicit substitution.  (Contributed by NM, 2-Jun-1998.) $)
+    cbvrexv $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
+      ( nfv cbvrex ) ABCDEADGBCGFH $.
+
+    $( Change the bound variable of a restricted uniqueness quantifier using
+       implicit substitution.  (Contributed by NM, 5-Apr-2004.)  (Revised by
+       Mario Carneiro, 15-Oct-2016.) $)
+    cbvreuv $p |- ( E! x e. A ph <-> E! y e. A ps ) $=
+      ( nfv cbvreu ) ABCDEADGBCGFH $.
+
+    $( Change the bound variable of a restricted uniqueness quantifier using
+       implicit substitution.  (Contributed by Alexander van der Vekens,
+       17-Jun-2017.) $)
+    cbvrmov $p |- ( E* x e. A ph <-> E* y e. A ps ) $=
+      ( nfv cbvrmo ) ABCDEADGBCGFH $.
+  $}
+
+  ${
+    $d A y $.  $d ps y $.  $d B x $.  $d ch x $.  $d x ph y $.
+    cbvraldva2.1 $e |- ( ( ph /\ x = y ) -> ( ps <-> ch ) ) $.
+    cbvraldva2.2 $e |- ( ( ph /\ x = y ) -> A = B ) $.
+    $( Rule used to change the bound variable in a restricted universal
+       quantifier with implicit substitution which also changes the quantifier
+       domain.  Deduction form.  (Contributed by David Moews, 1-May-2017.) $)
+    cbvraldva2 $p |- ( ph -> ( A. x e. A ps <-> A. y e. B ch ) ) $=
+      ( cv wcel wi wal wral weq wa simpr eleq12d imbi12d df-ral cbvaldva
+      3bitr4g ) ADJZFKZBLZDMEJZGKZCLZEMBDFNCEGNAUEUHDEADEOZPZUDUGBCUJUCUFFGAUIQ
+      IRHSUABDFTCEGTUB $.
+
+    $( Rule used to change the bound variable in a restricted existential
+       quantifier with implicit substitution which also changes the quantifier
+       domain.  Deduction form.  (Contributed by David Moews, 1-May-2017.) $)
+    cbvrexdva2 $p |- ( ph -> ( E. x e. A ps <-> E. y e. B ch ) ) $=
+      ( cv wcel wa wex wrex weq simpr eleq12d anbi12d cbvexdva df-rex 3bitr4g )
+      ADJZFKZBLZDMEJZGKZCLZEMBDFNCEGNAUDUGDEADEOZLZUCUFBCUIUBUEFGAUHPIQHRSBDFTC
+      EGTUA $.
+  $}
+
+  ${
+    $d ps y $.  $d ch x $.  $d A x y $.  $d x ph y $.
+    cbvraldva.1 $e |- ( ( ph /\ x = y ) -> ( ps <-> ch ) ) $.
+    $( Rule used to change the bound variable in a restricted universal
+       quantifier with implicit substitution.  Deduction form.  (Contributed by
+       David Moews, 1-May-2017.) $)
+    cbvraldva $p |- ( ph -> ( A. x e. A ps <-> A. y e. A ch ) ) $=
+      ( weq wa eqidd cbvraldva2 ) ABCDEFFGADEHIFJK $.
+
+    $( Rule used to change the bound variable in a restricted existential
+       quantifier with implicit substitution.  Deduction form.  (Contributed by
+       David Moews, 1-May-2017.) $)
+    cbvrexdva $p |- ( ph -> ( E. x e. A ps <-> E. y e. A ch ) ) $=
+      ( weq wa eqidd cbvrexdva2 ) ABCDEFFGADEHIFJK $.
+  $}
+
+  ${
+    $d x A $.  $d z A $.  $d x y B $.  $d z y B $.  $d w B $.  $d z ph $.
+    $d y ps $.  $d x ch $.  $d w ch $.
+    cbvral2v.1 $e |- ( x = z -> ( ph <-> ch ) ) $.
+    cbvral2v.2 $e |- ( y = w -> ( ch <-> ps ) ) $.
+    $( Change bound variables of double restricted universal quantification,
+       using implicit substitution.  (Contributed by NM, 10-Aug-2004.) $)
+    cbvral2v $p |- ( A. x e. A A. y e. B ph <-> A. z e. A A. w e. B ps ) $=
+      ( wral weq ralbidv cbvralv ralbii bitri ) AEILZDHLCEILZFHLBGILZFHLRSDFHDF
+      MACEIJNOSTFHCBEGIKOPQ $.
+  $}
+
+  ${
+    $d A x $.  $d A z $.  $d B w $.  $d B x y $.  $d B z y $.  $d ch w $.
+    $d ch x $.  $d ph z $.  $d ps y $.
+    cbvrex2v.1 $e |- ( x = z -> ( ph <-> ch ) ) $.
+    cbvrex2v.2 $e |- ( y = w -> ( ch <-> ps ) ) $.
+    $( Change bound variables of double restricted universal quantification,
+       using implicit substitution.  (Contributed by FL, 2-Jul-2012.) $)
+    cbvrex2v $p |- ( E. x e. A E. y e. B ph <-> E. z e. A E. w e. B ps ) $=
+      ( wrex weq rexbidv cbvrexv rexbii bitri ) AEILZDHLCEILZFHLBGILZFHLRSDFHDF
+      MACEIJNOSTFHCBEGIKOPQ $.
+  $}
+
+  ${
+    $d w ph $.  $d z ps $.  $d x ch $.  $d v ch $.  $d y u th $.  $d x A $.
+    $d w A $.  $d x y B $.  $d w y B $.  $d v B $.  $d x y z C $.
+    $d w y z C $.  $d v z C $.  $d z y C $.  $d z C $.  $d u C $.
+    cbvral3v.1 $e |- ( x = w -> ( ph <-> ch ) ) $.
+    cbvral3v.2 $e |- ( y = v -> ( ch <-> th ) ) $.
+    cbvral3v.3 $e |- ( z = u -> ( th <-> ps ) ) $.
+    $( Change bound variables of triple restricted universal quantification,
+       using implicit substitution.  (Contributed by NM, 10-May-2005.) $)
+    cbvral3v $p |- ( A. x e. A A. y e. B A. z e. C ph <->
+                     A. w e. A A. v e. B A. u e. C ps ) $=
+      ( wral weq 2ralbidv cbvralv cbvral2v ralbii bitri ) AGMQFLQZEKQCGMQFLQZHK
+      QBJMQILQZHKQUDUEEHKEHRACFGLMNSTUEUFHKCBDFGIJLMOPUAUBUC $.
+  $}
+
+  ${
+    $d z x A $.  $d y A $.  $d z y ph $.
+    $( Change bound variable by using a substitution.  (Contributed by NM,
+       20-Nov-2005.)  (Revised by Andrew Salmon, 11-Jul-2011.) $)
+    cbvralsv $p |- ( A. x e. A ph <-> A. y e. A [ y / x ] ph ) $=
+      ( vz wral wsb nfv nfs1v sbequ12 cbvral nfsb sbequ bitri ) ABDFABEGZEDFABC
+      GZCDFAOBEDAEHABEIABEJKOPECDABECACHLPEHAECBMKN $.
+  $}
+
+  ${
+    $d z x A $.  $d y z ph $.  $d y A $.
+    $( Change bound variable by using a substitution.  (Contributed by NM,
+       2-Mar-2008.)  (Revised by Andrew Salmon, 11-Jul-2011.) $)
+    cbvrexsv $p |- ( E. x e. A ph <-> E. y e. A [ y / x ] ph ) $=
+      ( vz wrex wsb nfv nfs1v sbequ12 cbvrex nfsb sbequ bitri ) ABDFABEGZEDFABC
+      GZCDFAOBEDAEHABEIABEJKOPECDABECACHLPEHAECBMKN $.
+  $}
+
+  ${
+    $d x y z $.  $d y z ph $.  $d x z ps $.
+    sbralie.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Implicit to explicit substitution that swaps variables in a quantified
+       expression.  (Contributed by NM, 5-Sep-2004.) $)
+    sbralie $p |- ( [ x / y ] A. x e. y ph <-> A. y e. x ps ) $=
+      ( vz cv wral wsb cbvralsv sbbii nfv raleq sbie bitri sbco2 ralbii ) ACDGZ
+      HZDCIZACFIZFCGZHZBDUBHZTUAFRHZDCIUCSUEDCACFRJKUEUCDCUCDLUAFRUBMNOUCUAFDIZ
+      DUBHUDUAFDUBJUFBDUBUFACDIBACDFAFLPABCDBCLENOQOO $.
+  $}
+
+  ${
+    rabbiia.1 $e |- ( x e. A -> ( ph <-> ps ) ) $.
+    $( Equivalent wff's yield equal restricted class abstractions (inference
+       rule).  (Contributed by NM, 22-May-1999.) $)
+    rabbiia $p |- { x e. A | ph } = { x e. A | ps } $=
+      ( cv wcel wa cab crab pm5.32i abbii df-rab 3eqtr4i ) CFDGZAHZCIOBHZCIACDJ
+      BCDJPQCOABEKLACDMBCDMN $.
+  $}
+
+  ${
+    $d x ph $.
+    rabbidva.1 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
+    $( Equivalent wff's yield equal restricted class abstractions (deduction
+       rule).  (Contributed by NM, 28-Nov-2003.) $)
+    rabbidva $p |- ( ph -> { x e. A | ps } = { x e. A | ch } ) $=
+      ( wb wral crab wceq ralrimiva rabbi sylib ) ABCGZDEHBDEICDEIJANDEFKBCDELM
+      $.
+  $}
+
+  ${
+    $d x ph $.
+    rabbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equivalent wff's yield equal restricted class abstractions (deduction
+       rule).  (Contributed by NM, 10-Feb-1995.) $)
+    rabbidv $p |- ( ph -> { x e. A | ps } = { x e. A | ch } ) $=
+      ( wb cv wcel adantr rabbidva ) ABCDEABCGDHEIFJK $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.
+    rabeqf.1 $e |- F/_ x A $.
+    rabeqf.2 $e |- F/_ x B $.
+    $( Equality theorem for restricted class abstractions, with bound-variable
+       hypotheses instead of distinct variable restrictions.  (Contributed by
+       NM, 7-Mar-2004.) $)
+    rabeqf $p |- ( A = B -> { x e. A | ph } = { x e. B | ph } ) $=
+      ( wceq cv wcel wa cab crab nfeq eleq2 anbi1d abbid df-rab 3eqtr4g ) CDGZB
+      HZCIZAJZBKTDIZAJZBKABCLABDLSUBUDBBCDEFMSUAUCACDTNOPABCQABDQR $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Equality theorem for restricted class abstractions.  (Contributed by NM,
+       15-Oct-2003.) $)
+    rabeq $p |- ( A = B -> { x e. A | ph } = { x e. B | ph } ) $=
+      ( nfcv rabeqf ) ABCDBCEBDEF $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d ph x $.
+    rabeqbidv.1 $e |- ( ph -> A = B ) $.
+    rabeqbidv.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equality of restricted class abstractions.  (Contributed by Jeff Madsen,
+       1-Dec-2009.) $)
+    rabeqbidv $p |- ( ph -> { x e. A | ps } = { x e. B | ch } ) $=
+      ( crab wceq rabeq syl rabbidv eqtrd ) ABDEIZBDFIZCDFIAEFJOPJGBDEFKLABCDFH
+      MN $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d ph x $.
+    rabeqbidva.1 $e |- ( ph -> A = B ) $.
+    rabeqbidva.2 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
+    $( Equality of restricted class abstractions.  (Contributed by Mario
+       Carneiro, 26-Jan-2017.) $)
+    rabeqbidva $p |- ( ph -> { x e. A | ps } = { x e. B | ch } ) $=
+      ( crab rabbidva wceq rabeq syl eqtrd ) ABDEICDEIZCDFIZABCDEHJAEFKOPKGCDEF
+      LMN $.
+  $}
+
+  ${
+    rabeqi.1 $e |- A = { x e. B | ph } $.
+    $( Inference rule from equality of a class variable and a restricted class
+       abstraction.  (Contributed by NM, 16-Feb-2004.) $)
+    rabeq2i $p |- ( x e. A <-> ( x e. B /\ ph ) ) $=
+      ( cv wcel crab wa eleq2i rabid bitri ) BFZCGMABDHZGMDGAICNMEJABDKL $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d A z $.  $d ph z $.  $d ps z $.
+    cbvrab.1 $e |- F/_ x A $.
+    cbvrab.2 $e |- F/_ y A $.
+    cbvrab.3 $e |- F/ y ph $.
+    cbvrab.4 $e |- F/ x ps $.
+    cbvrab.5 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule to change the bound variable in a restricted class abstraction,
+       using implicit substitution.  This version has bound-variable hypotheses
+       in place of distinct variable conditions.  (Contributed by Andrew
+       Salmon, 11-Jul-2011.)  (Revised by Mario Carneiro, 9-Oct-2016.) $)
+    cbvrab $p |- { x e. A | ph } = { y e. A | ps } $=
+      ( vz cv wcel wa cab crab wsb nfv nfcri nfan nfs1v weq eleq1 sbequ12 cbvab
+      anbi12d nfsb sbequ sbie syl6bb eqtri df-rab 3eqtr4i ) CLZEMZANZCOZDLZEMZB
+      NZDOZACEPBDEPUQKLZEMZACKQZNZKOVAUPVECKUPKRVCVDCCKEFSACKUATCKUBUOVCAVDUNVB
+      EUCACKUDUFUEVEUTKDVCVDDDKEGSACKDHUGTUTKRKDUBZVCUSVDBVBUREUCVFVDACDQBAKDCU
+      HABCDIJUIUJUFUEUKACEULBDEULUM $.
+  $}
+
+  ${
+    $d x y z A $.  $d y ph $.  $d x ps $.
+    cbvrabv.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule to change the bound variable in a restricted class abstraction,
+       using implicit substitution.  (Contributed by NM, 26-May-1999.) $)
+    cbvrabv $p |- { x e. A | ph } = { y e. A | ps } $=
+      ( nfcv nfv cbvrab ) ABCDECEGDEGADHBCHFI $.
+  $}
+
+$(
 ###############################################################################
                             CLASSICAL LOGIC
 ###############################################################################
