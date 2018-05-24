@@ -17217,10 +17217,6 @@ $(
    intuitionistic results, or add decidability conditions to make proofs not
    rely on ~ ax-3 , we plan on reducing use of ~ ax-3 , moving ~ ax-3 still
    later in the file, and eventually removing it entirely.
-
-   Existential uniqueness is also here until it can be revamped to no
-   longer rely on ~ ax-3 . As we develop intuitionistic existential
-   uniqueness, we can move it to the predicate logic section.
 $)
 
 $(
@@ -17523,6 +17519,19 @@ $)
     19.37v $p |- ( E. x ( ph -> ps ) <-> ( ph -> E. x ps ) ) $=
       ( ax-17 19.37 ) ABCACDE $.
   $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Existential uniqueness (supplemental)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+   This section contains the theorems on existential uniqueness which have
+   not yet been moved to the main section on existential uniqueness
+   in the predicate logic section. Some of them do not rely on ~ ax-3 and
+   are ready to move as-is, while others will require changes to remove
+   the use of ~ ax-3 .
+
+$)
 
   ${
     $d y z $.  $d x z $.  $d z ph $.
