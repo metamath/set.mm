@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-May-2018
+$( iset.mm - Version of 23-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -53,6 +53,9 @@ processed manually.
 
 DONE:
 Date      Old       New         Notes
+23-May-18 sb8eu     sb8euh
+23-May-18 sb8e      sb8eh
+23-May-18 sb8       sb8h
 10-May-18 sbf       sbh
 9-May-18  sbied     sbiedh
 6-May-18  alrimi    alrimih
@@ -12741,20 +12744,35 @@ $)
   $}
 
   ${
-    sb8.1 $e |- ( ph -> A. y ph ) $.
+    sb8h.1 $e |- ( ph -> A. y ph ) $.
     $( Substitution of variable in universal quantifier.  (Contributed by NM,
        5-Aug-1993.)  (Proof shortened by Andrew Salmon, 25-May-2011.)  (Proof
        shortened by Jim Kingdon, 15-Jan-2018.) $)
-    sb8 $p |- ( A. x ph <-> A. y [ y / x ] ph ) $=
+    sb8h $p |- ( A. x ph <-> A. y [ y / x ] ph ) $=
       ( wsb hbsb3 sbequ12 cbvalh ) AABCEBCDABCDFABCGH $.
   $}
 
   ${
-    sb8e.1 $e |- ( ph -> A. y ph ) $.
+    sb8eh.1 $e |- ( ph -> A. y ph ) $.
     $( Substitution of variable in existential quantifier.  (Contributed by NM,
        12-Aug-1993.)  (Proof rewritten by Jim Kingdon, 15-Jan-2018.) $)
-    sb8e $p |- ( E. x ph <-> E. y [ y / x ] ph ) $=
+    sb8eh $p |- ( E. x ph <-> E. y [ y / x ] ph ) $=
       ( wsb hbsb3 sbequ12 cbvexh ) AABCEBCDABCDFABCGH $.
+  $}
+
+  ${
+    sb8e.1 $e |- F/ y ph $.
+    $( Substitution of variable in universal quantifier.  (Contributed by NM,
+       5-Aug-1993.)  (Revised by Mario Carneiro, 6-Oct-2016.)  (Proof shortened
+       by Jim Kingdon, 15-Jan-2018.) $)
+    sb8 $p |- ( A. x ph <-> A. y [ y / x ] ph ) $=
+      ( wsb nfs1 sbequ12 cbval ) AABCEBCDABCDFABCGH $.
+
+    $( Substitution of variable in existential quantifier.  (Contributed by NM,
+       12-Aug-1993.)  (Revised by Mario Carneiro, 6-Oct-2016.)  (Proof
+       shortened by Jim Kingdon, 15-Jan-2018.) $)
+    sb8e $p |- ( E. x ph <-> E. y [ y / x ] ph ) $=
+      ( wsb nfs1 sbequ12 cbvex ) AABCEBCDABCDFABCGH $.
   $}
 
 $(
@@ -13402,7 +13420,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( Two ways of expressing " ` x ` is (effectively) not free in ` ph ` ."
        (Contributed by NM, 29-May-2009.) $)
     sbhb $p |- ( ( ph -> A. x ph ) <-> A. y ( ph -> [ y / x ] ph ) ) $=
-      ( wal wi wsb ax-17 sb8 imbi2i 19.21v bitr4i ) AABDZEAABCFZCDZEAMECDLNAABC
+      ( wal wi wsb ax-17 sb8h imbi2i 19.21v bitr4i ) AABDZEAABCFZCDZEAMECDLNAABC
       ACGHIAMCJK $.
   $}
 
@@ -13412,7 +13430,7 @@ $( The theorems in this section make use of the $d statement. $)
        (Contributed by G&eacute;rard Lang, 14-Nov-2013.) $)
     sbhb2 $p |- ( A. x ( ph -> A. x ph )
            <-> A. y A. z ( [ y / x ] ph <-> [ z / x ] ph ) ) $=
-      ( wsb wb wal wi wa 2albiim sbhb albii alcom bitri ax-17 sb8 sblimv 3bitri
+      ( wsb wb wal wi wa 2albiim sbhb albii alcom bitri ax-17 sb8h sblimv 3bitri
       hbs1 anbi12i anidm 3bitr2ri ) ABCEZABDEZFDGCGUCUDHZDGCGZUDUCHZDGZCGZIAABG
       HZBGZUKIUKUCUDCDJUKUFUKUIUKAUDHZBGZDGZUECGZDGUFUKULDGZBGUNUJUPBABDKLULBDM
       NUMUODUMULBCEZCGUOULBCULCOPUQUECAUDBCABDSQLNLUEDCMRUKAUCHZCGZBGURBGZCGUIU
@@ -14093,7 +14111,7 @@ $( The theorems in this section make use of the $d statement. $)
     $( An equivalent expression for existence.  (Contributed by NM,
        2-Feb-2005.) $)
     exsb $p |- ( E. x ph <-> E. y A. x ( x = y -> ph ) ) $=
-      ( wex wsb weq wi wal ax-17 sb8e sb6 exbii bitri ) ABDABCEZCDBCFAGBHZCDABC
+      ( wex wsb weq wi wal ax-17 sb8eh sb6 exbii bitri ) ABDABCEZCDBCFAGBHZCDABC
       ACIJNOCABCKLM $.
   $}
 
@@ -14381,6 +14399,63 @@ $)
     hbeu1 $p |- ( E! x ph -> A. x E! x ph ) $=
       ( vy weu weq wb wal wex df-eu hba1 hbex hbxfrbi ) ABDABCEFZBGZCHBABCINBCM
       BJKL $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.
+    $( Bound-variable hypothesis builder for uniqueness.  (Contributed by NM,
+       9-Jul-1994.)  (Revised by Mario Carneiro, 7-Oct-2016.) $)
+    nfeu1 $p |- F/ x E! x ph $=
+      ( vy weu weq wb wal wex df-eu nfa1 nfex nfxfr ) ABDABCEFZBGZCHBABCINBCMBJ
+      KL $.
+  $}
+
+  $( Bound-variable hypothesis builder for "at most one."  (Contributed by NM,
+     8-Mar-1995.)  (Revised by Mario Carneiro, 7-Oct-2016.) $)
+  nfmo1 $p |- F/ x E* x ph $=
+    ( wmo wex weu wi df-mo nfe1 nfeu1 nfim nfxfr ) ABCABDZABEZFBABGLMBABHABIJK
+    $.
+
+  ${
+    $d w y z $.  $d ph z w $.  $d w x z $.
+    sb8eu.1 $e |- F/ y ph $.
+    $( Variable substitution in uniqueness quantifier.  (Contributed by NM,
+       7-Aug-1994.)  (Revised by Mario Carneiro, 7-Oct-2016.) $)
+    sb8eu $p |- ( E! x ph <-> E! y [ y / x ] ph ) $=
+      ( vz vw weq wb wal wex wsb weu nfv sb8 sbbi nfsb equsb3 nfxfr nfbi df-eu
+      sbequ cbval sblbis albii 3bitri exbii 3bitr4i ) ABEGZHZBIZEJABCKZCEGZHZCI
+      ZEJABLUKCLUJUNEUJUIBFKZFIUIBCKZCIUNUIBFUIFMNUOUPFCUOABFKZUHBFKZHCAUHBFOUQ
+      URCABFCDPURFEGZCFBEQUSCMRSRUPFMUIFCBUAUBUPUMCUHULABCCBEQUCUDUEUFABETUKCET
+      UG $.
+
+    $( Variable substitution for "at most one."  (Contributed by Alexander van
+       der Vekens, 17-Jun-2017.) $)
+    sb8mo $p |- ( E* x ph <-> E* y [ y / x ] ph ) $=
+      ( wex weu wi wsb wmo sb8e sb8eu imbi12i df-mo 3bitr4i ) ABEZABFZGABCHZCEZ
+      QCFZGABIQCIORPSABCDJABCDKLABMQCMN $.
+  $}
+
+  ${
+    $d x y z $.  $d x z $.  $d z ph $.
+    nfeuv.1 $e |- F/ x ph $.
+    $( Bound-variable hypothesis builder for existential uniqueness.  This is
+       similar to ~ nfeu but has the additional constraint that ` x ` and ` y `
+       must be distinct.  (Contributed by Jim Kingdon, 23-May-2018.) $)
+    nfeuv $p |- F/ x E! y ph $=
+      ( vz weu wnf weq wb wal wex nfv nfbi nfal nfex df-eu nfbii mpbir ) ACFZBG
+      ACEHZIZCJZEKZBGUBBEUABCATBDTBLMNOSUCBACEPQR $.
+  $}
+
+  ${
+    $d y z $.  $d x z $.  $d z ph $.
+    nfeu.1 $e |- F/ x ph $.
+    $( Bound-variable hypothesis builder for existential uniqueness.  Note that
+       ` x ` and ` y ` needn't be distinct.  (Contributed by NM, 8-Mar-1995.)
+       (Revised by Mario Carneiro, 7-Oct-2016.)  (Proof rewritten by Jim
+       Kingdon, 23-May-2018.) $)
+    nfeu $p |- F/ x E! y ph $=
+      ( vz weu cv wsbc nfv sb8eu nfsb nfeuv nfxfr ) ACFACEGHZEFBACEAE
+      IJNBEACEBDKLM $.
   $}
 
 $(
@@ -17478,11 +17553,11 @@ $)
 
   ${
     $d w y z $.  $d ph z w $.  $d w x z $.
-    sb8eu.1 $e |- ( ph -> A. y ph ) $.
+    sb8euh.1 $e |- ( ph -> A. y ph ) $.
     $( Variable substitution in uniqueness quantifier.  (Contributed by NM,
        7-Aug-1994.)  (Revised by Andrew Salmon, 9-Jul-2011.) $)
-    sb8eu $p |- ( E! x ph <-> E! y [ y / x ] ph ) $=
-      ( vz vw cv wceq wal wex wsbc weu ax-17 sb8 sbbi hbsb equsb3 hbxfrbi df-eu
+    sb8euh $p |- ( E! x ph <-> E! y [ y / x ] ph ) $=
+      ( vz vw cv wceq wal wex wsbc weu ax-17 sb8h sbbi hbsb equsb3 hbxfrbi df-eu
       wb hbbi sbequ cbvalh sblbis albii 3bitri exbii 3bitr4i ) ABGEGZHZTZBIZEJAB
       CGZKZUMUIHZTZCIZEJABLUNCLULUQEULUKBFGZKZFIUKBUMKZCIUQUKBFUKFMNUSUTFCUSABU
       RKZUJBURKZTCAUJBFOVAVBCABFCDPVBURUIHZCFBEQVCCMRUARUTFMUKFCBUBUCUTUPCUJUOA
@@ -17497,7 +17572,7 @@ $)
        (Contributed by NM, 25-Nov-1994.)  (Revised by Andrew Salmon,
        8-Jun-2011.) $)
     cbveu $p |- ( E! x ph <-> E! y ps ) $=
-      ( weu wsb sb8eu sbieh eubii bitri ) ACHACDIZDHBDHACDEJNBDABCDFGKLM $.
+      ( weu wsb sb8euh sbieh eubii bitri ) ACHACDIZDHBDHACDEJNBDABCDFGKLM $.
   $}
 
   ${
@@ -17507,7 +17582,7 @@ $)
        2(b) of [Margaris] p. 110.  (Contributed by NM, 20-Aug-1993.) $)
     eu1 $p |- ( E! x ph <->
                 E. x ( ph /\ A. y ( [ y / x ] ph -> x = y ) ) ) $=
-      ( wsb weu weq wb wal wex wi wa hbs1 euf sb8eu equcom imbi2i albii 3bitr4i
+      ( wsb weu weq wb wal wex wi wa hbs1 euf sb8euh equcom imbi2i albii 3bitr4i
       sb6rf anbi12i ancom albiim exbii ) ABCEZCFUECBGZHCIZBJABFAUEBCGZKZCIZLZBJ
       UECBABCMNABCDOUKUGBUJALUEUFKZCIZUFUEKCIZLUKUGUJUMAUNUIULCUHUFUEBCPQRABCDT
       UAAUJUBUEUFCUCSUDS $.
