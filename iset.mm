@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-May-2018
+$( iset.mm - Version of 24-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -17536,14 +17536,11 @@ $)
   ${
     $d y z $.  $d x z $.  $d z ph $.
     hbeu.1 $e |- ( ph -> A. x ph ) $.
-    $( Bound-variable hypothesis builder for "at most one."  Note that ` x `
-       and ` y ` needn't be distinct (this makes the proof more difficult).
-       (Contributed by NM, 8-Mar-1995.) $)
+    $( Bound-variable hypothesis builder for uniqueness.  Note that ` x ` and
+       ` y ` needn't be distinct.  (Contributed by NM, 8-Mar-1995.)  (Proof
+       rewritten by Jim Kingdon, 24-May-2018.) $)
     hbeu $p |- ( E! y ph -> A. x E! y ph ) $=
-      ( vz weu weq wb wal wex df-eu wi hba1 ax10o alequcoms wn hbnae a1i dveeq1
-      syl5 hbbid hbald pm2.61i hbex hbxfrbi ) ACFACEGZHZCIZEJBACEKUHBEBCGBIZUHU
-      HBIZLUHUHCIZUIUJUGCMUKUJLCBUHCBNOTUIPZUGBCBCCQULAUFBBCBQAABILULDRBCESUAUB
-      UCUDUE $.
+      ( weu nfi nfeu nfri ) ACEBABCABDFGH $.
   $}
 
   ${
