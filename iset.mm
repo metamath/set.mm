@@ -1,4 +1,4 @@
-$( iset.mm - Version of 24-May-2018
+$( iset.mm - Version of 25-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -14436,7 +14436,32 @@ $)
   $}
 
   ${
-    $d x y z $.  $d x z $.  $d z ph $.
+    $d x y z $.  $d z ph $.  $d z ps $.
+    nfeudv.1 $e |- F/ y ph $.
+    nfeudv.2 $e |- ( ph -> F/ x ps ) $.
+    $( Deduction version of ~ nfeu .  Similar to ~ nfeud but has the additional
+       constraint that ` x ` and ` y ` must be distinct.  (Contributed by Jim
+       Kingdon, 25-May-2018.) $)
+    nfeudv $p |- ( ph -> F/ x E! y ps ) $=
+      ( vz cv wceq wb wal wex wnf weu nfv a1i nfbid nfald nfexd df-eu
+      nfbii sylibr ) ABDHGHIZJZDKZGLZCMBDNZCMAUECGAGOAUDCDEABUCCFUCCM
+      AUCCOPQRSUGUFCBDGTUAUB $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.  $d z ps $.
+    nfeud.1 $e |- F/ y ph $.
+    nfeud.2 $e |- ( ph -> F/ x ps ) $.
+    $( Deduction version of ~ nfeu .  (Contributed by NM, 15-Feb-2013.)
+       (Revised by Mario Carneiro, 7-Oct-2016.)  (Proof rewritten by Jim
+       Kingdon, 25-May-2018.) $)
+    nfeud $p |- ( ph -> F/ x E! y ps ) $=
+      ( vz weu cv wsbc nfv sb8eu nfsbd nfeudv nfxfrd ) BDHBDGIJZGHACB
+      DGBGKLAPCGAGKABDGCEFMNO $.
+  $}
+
+  ${
+    $d x y z $.  $d z ph $.
     nfeuv.1 $e |- F/ x ph $.
     $( Bound-variable hypothesis builder for existential uniqueness.  This is
        similar to ~ nfeu but has the additional constraint that ` x ` and ` y `
