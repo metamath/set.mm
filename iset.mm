@@ -17573,13 +17573,10 @@ $)
     hbeud.1 $e |- ( ph -> A. x ph ) $.
     hbeud.2 $e |- ( ph -> A. y ph ) $.
     hbeud.3 $e |- ( ph -> ( ps -> A. x ps ) ) $.
-    $( Deduction version of ~ hbeu .  (Contributed by NM, 15-Feb-2013.) $)
+    $( Deduction version of ~ hbeu .  (Contributed by NM, 15-Feb-2013.)  (Proof
+       rewritten by Jim Kingdon, 25-May-2018.) $)
     hbeud $p |- ( ph -> ( E! y ps -> A. x E! y ps ) ) $=
-      ( vz cv wceq wb wal wex weu ax-17 wi wn wa hbnae hban adantr dveeq1 hbbid
-      adantl hbald hba1 ax10o alequcoms syl5 pm2.61d2 hbexd df-eu albii 3imtr4g
-      ex ) ABDIZHIJZKZDLZHMZUTCLBDNZVACLAUSCHAHOACIUPJCLZUSUSCLZPZAVBQZVDAVERZU
-      RCDAVEDFCDDSTVFBUQCAVECECDCSTABBCLPVEGUAVEUQUQCLPACDHUBUDUCUEUOUSUSDLZVBV
-      CURDUFVGVCPDCUSDCUGUHUIUJUKBDHULZVAUTCVHUMUN $.
+      ( weu nfi nfd nfeud nfrd ) ABDHCABCDADFIABCACEIGJKL $.
   $}
 
   ${
