@@ -14565,6 +14565,14 @@ $)
   eumo $p |- ( E! x ph -> E* x ph ) $=
     ( weu wex wi wmo ax-1 df-mo sylibr ) ABCZABDZJEABFJKGABHI $.
 
+  ${
+    eumoi.1 $e |- E! x ph $.
+    $( "At most one" inferred from existential uniqueness.  (Contributed by NM,
+       5-Apr-1995.) $)
+    eumoi $p |- E* x ph $=
+      ( weu wmo eumo ax-mp ) ABDABECABFG $.
+  $}
+
 $(
 ###############################################################################
                                  SET THEORY
@@ -17819,14 +17827,6 @@ $)
              A. x A. y ( ( ph /\ ps ) -> x = y ) ) ) $=
       ( weu wex wmo wa weq wi wal eu5 mo4 anbi2i bitri ) ACFACGZACHZIQABICDJKDL
       CLZIACMRSQABCDENOP $.
-  $}
-
-  ${
-    eumoi.1 $e |- E! x ph $.
-    $( "At most one" inferred from existential uniqueness.  (Contributed by NM,
-       5-Apr-1995.) $)
-    eumoi $p |- E* x ph $=
-      ( weu wmo eumo ax-mp ) ABDABECABFG $.
   $}
 
   $( Existence in terms of "at most one" and uniqueness.  (Contributed by NM,
