@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-May-2018
+$( iset.mm - Version of 27-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -14560,6 +14560,11 @@ $)
       ZCIABCDKRTCQSBAPLMNO $.
   $}
 
+  $( Existential uniqueness implies "at most one."  (Contributed by NM,
+     23-Mar-1995.)  (Proof rewritten by Jim Kingdon, 27-May-2018.) $)
+  eumo $p |- ( E! x ph -> E* x ph ) $=
+    ( weu wex wi wmo ax-1 df-mo sylibr ) ABCZABDZJEABFJKGABHI $.
+
 $(
 ###############################################################################
                                  SET THEORY
@@ -17815,11 +17820,6 @@ $)
       ( weu wex wmo wa weq wi wal eu5 mo4 anbi2i bitri ) ACFACGZACHZIQABICDJKDL
       CLZIACMRSQABCDENOP $.
   $}
-
-  $( Existential uniqueness implies "at most one."  (Contributed by NM,
-     23-Mar-1995.) $)
-  eumo $p |- ( E! x ph -> E* x ph ) $=
-    ( weu wex wmo eu5 simprbi ) ABCABDABEABFG $.
 
   ${
     eumoi.1 $e |- E! x ph $.
