@@ -17812,10 +17812,10 @@ $)
   ${
     $d x y $.  $d y ph $.
     $( Uniqueness in terms of "at most one."  (Contributed by NM,
-       23-Mar-1995.) $)
+       23-Mar-1995.)  (Proof rewritten by Jim Kingdon, 27-May-2018.) $)
     eu5 $p |- ( E! x ph <-> ( E. x ph /\ E* x ph ) ) $=
-      ( vy weu wex weq wi wal wa wmo ax-17 eu3 mo2 anbi2i bitr4i ) ABDABEZABCFG
-      BHCEZIPABJZIABCACKZLRQPABCSMNO $.
+      ( weu wex wmo wa euex eumo jca df-mo biimpi imp ancoms impbii
+      wi ) ABCZABDZABEZFPQRABGABHIRQPRQPRQPOABJKLMN $.
   $}
 
   ${
