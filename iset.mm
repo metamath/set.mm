@@ -14542,6 +14542,22 @@ $)
   $}
 
   ${
+    euor.1 $e |- ( ph -> A. x ph ) $.
+    $( Introduce a disjunct into a uniqueness quantifier.  (Contributed by NM,
+       21-Oct-2005.) $)
+    euor $p |- ( ( -. ph /\ E! x ps ) -> E! x ( ph \/ ps ) ) $=
+      ( wn weu wo hbn biorf eubid biimpa ) AEZBCFABGZCFLBMCACDHABIJK $.
+  $}
+
+  ${
+    $d x ph $.
+    $( Introduce a disjunct into a uniqueness quantifier.  (Contributed by NM,
+       23-Mar-1995.) $)
+    euorv $p |- ( ( -. ph /\ E! x ps ) -> E! x ( ph \/ ps ) ) $=
+      ( ax-17 euor ) ABCACDE $.
+  $}
+
+  ${
     $d x y $.  $d ph y $.
     $( Existential uniqueness implies existence.  (Contributed by NM,
        15-Sep-1993.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
@@ -14571,6 +14587,61 @@ $)
        5-Apr-1995.) $)
     eumoi $p |- E* x ph $=
       ( weu wmo eumo ax-mp ) ABDABECABFG $.
+  $}
+
+  ${
+    mobid.1 $e |- ( ph -> A. x ph ) $.
+    mobid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for "at most one" quantifier (deduction rule).
+       (Contributed by NM, 8-Mar-1995.) $)
+    mobid $p |- ( ph -> ( E* x ps <-> E* x ch ) ) $=
+      ( wex weu wi wmo exbid eubid imbi12d df-mo 3bitr4g ) ABDGZBDHZICDGZCDHZIB
+      DJCDJAPRQSABCDEFKABCDEFLMBDNCDNO $.
+  $}
+
+  ${
+    mobii.1 $e |- ( ps <-> ch ) $.
+    $( Formula-building rule for "at most one" quantifier (inference rule).
+       (Contributed by NM, 9-Mar-1995.) $)
+    mobii $p |- ( E* x ps <-> E* x ch ) $=
+      ( weq wmo wb equid hbequid a1i mobid ax-mp ) CCEZACFBCFGCHMABCCCIABGMDJKL
+      $.
+  $}
+
+  $( Bound-variable hypothesis builder for "at most one."  (Contributed by NM,
+     8-Mar-1995.) $)
+  hbmo1 $p |- ( E* x ph -> A. x E* x ph ) $=
+    ( wmo wex weu wi df-mo hbe1 hbeu1 hbim hbxfrbi ) ABCABDZABEZFBABGLMBABHABIJ
+    K $.
+
+  ${
+    hbmo.1 $e |- ( ph -> A. x ph ) $.
+    $( Bound-variable hypothesis builder for "at most one."  (Contributed by
+       NM, 9-Mar-1995.) $)
+    hbmo $p |- ( E* y ph -> A. x E* y ph ) $=
+      ( wmo wex weu wi df-mo hbex hbeu hbim hbxfrbi ) ACEACFZACGZHBACINOBABCDJA
+      BCDKLM $.
+  $}
+
+  ${
+    cbvmo.1 $e |- ( ph -> A. y ph ) $.
+    cbvmo.2 $e |- ( ps -> A. x ps ) $.
+    cbvmo.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitition.
+       (Contributed by NM, 9-Mar-1995.)  (Revised by Andrew Salmon,
+       8-Jun-2011.) $)
+    cbvmo $p |- ( E* x ph <-> E* y ps ) $=
+      ( wex weu wi wmo cbvexh cbveu imbi12i df-mo 3bitr4i ) ACHZACIZJBDHZBDIZJAC
+      KBDKQSRTABCDEFGLABCDEFGMNACOBDOP $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.
+    $( Uniqueness in terms of "at most one."  (Contributed by NM,
+       23-Mar-1995.)  (Proof rewritten by Jim Kingdon, 27-May-2018.) $)
+    eu5 $p |- ( E! x ph <-> ( E. x ph /\ E* x ph ) ) $=
+      ( weu wex wmo wa euex eumo jca df-mo biimpi imp ancoms impbii
+      wi ) ABCZABDZABEZFPQRABGABHIRQPRQPRQPOABJKLMN $.
   $}
 
 $(
@@ -17694,22 +17765,6 @@ $)
   $}
 
   ${
-    euor.1 $e |- ( ph -> A. x ph ) $.
-    $( Introduce a disjunct into a uniqueness quantifier.  (Contributed by NM,
-       21-Oct-2005.) $)
-    euor $p |- ( ( -. ph /\ E! x ps ) -> E! x ( ph \/ ps ) ) $=
-      ( wn weu wo hbn biorf eubid biimpa ) AEZBCFABGZCFLBMCACDHABIJK $.
-  $}
-
-  ${
-    $d x ph $.
-    $( Introduce a disjunct into a uniqueness quantifier.  (Contributed by NM,
-       23-Mar-1995.) $)
-    euorv $p |- ( ( -. ph /\ E! x ps ) -> E! x ( ph \/ ps ) ) $=
-      ( ax-17 euor ) ABCACDE $.
-  $}
-
-  ${
     $d x y $.
     mo2.1 $e |- ( ph -> A. y ph ) $.
     $( Alternate definition of "at most one."  (Contributed by NM,
@@ -17761,61 +17816,6 @@ $)
        NM, 26-Jul-1995.) $)
     mo4 $p |- ( E* x ph <-> A. x A. y ( ( ph /\ ps ) -> x = y ) ) $=
       ( ax-17 mo4f ) ABCDBCFEG $.
-  $}
-
-  ${
-    mobid.1 $e |- ( ph -> A. x ph ) $.
-    mobid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
-    $( Formula-building rule for "at most one" quantifier (deduction rule).
-       (Contributed by NM, 8-Mar-1995.) $)
-    mobid $p |- ( ph -> ( E* x ps <-> E* x ch ) ) $=
-      ( wex weu wi wmo exbid eubid imbi12d df-mo 3bitr4g ) ABDGZBDHZICDGZCDHZIB
-      DJCDJAPRQSABCDEFKABCDEFLMBDNCDNO $.
-  $}
-
-  ${
-    mobii.1 $e |- ( ps <-> ch ) $.
-    $( Formula-building rule for "at most one" quantifier (inference rule).
-       (Contributed by NM, 9-Mar-1995.) $)
-    mobii $p |- ( E* x ps <-> E* x ch ) $=
-      ( weq wmo wb equid hbequid a1i mobid ax-mp ) CCEZACFBCFGCHMABCCCIABGMDJKL
-      $.
-  $}
-
-  $( Bound-variable hypothesis builder for "at most one."  (Contributed by NM,
-     8-Mar-1995.) $)
-  hbmo1 $p |- ( E* x ph -> A. x E* x ph ) $=
-    ( wmo wex weu wi df-mo hbe1 hbeu1 hbim hbxfrbi ) ABCABDZABEZFBABGLMBABHABIJ
-    K $.
-
-  ${
-    hbmo.1 $e |- ( ph -> A. x ph ) $.
-    $( Bound-variable hypothesis builder for "at most one."  (Contributed by
-       NM, 9-Mar-1995.) $)
-    hbmo $p |- ( E* y ph -> A. x E* y ph ) $=
-      ( wmo wex weu wi df-mo hbex hbeu hbim hbxfrbi ) ACEACFZACGZHBACINOBABCDJA
-      BCDKLM $.
-  $}
-
-  ${
-    cbvmo.1 $e |- ( ph -> A. y ph ) $.
-    cbvmo.2 $e |- ( ps -> A. x ps ) $.
-    cbvmo.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    $( Rule used to change bound variables, using implicit substitition.
-       (Contributed by NM, 9-Mar-1995.)  (Revised by Andrew Salmon,
-       8-Jun-2011.) $)
-    cbvmo $p |- ( E* x ph <-> E* y ps ) $=
-      ( wex weu wi wmo cbvexh cbveu imbi12i df-mo 3bitr4i ) ACHZACIZJBDHZBDIZJAC
-      KBDKQSRTABCDEFGLABCDEFGMNACOBDOP $.
-  $}
-
-  ${
-    $d x y $.  $d y ph $.
-    $( Uniqueness in terms of "at most one."  (Contributed by NM,
-       23-Mar-1995.)  (Proof rewritten by Jim Kingdon, 27-May-2018.) $)
-    eu5 $p |- ( E! x ph <-> ( E. x ph /\ E* x ph ) ) $=
-      ( weu wex wmo wa euex eumo jca df-mo biimpi imp ancoms impbii
-      wi ) ABCZABDZABEZFPQRABGABHIRQPRQPRQPOABJKLMN $.
   $}
 
   ${
