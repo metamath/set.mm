@@ -11023,12 +11023,21 @@ $)
   $}
 
   ${
-    exbid.1 $e |- ( ph -> A. x ph ) $.
-    exbid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    exbidh.1 $e |- ( ph -> A. x ph ) $.
+    exbidh.2 $e |- ( ph -> ( ps <-> ch ) ) $.
     $( Formula-building rule for existential quantifier (deduction rule).
        (Contributed by NM, 5-Aug-1993.) $)
-    exbid $p |- ( ph -> ( E. x ps <-> E. x ch ) ) $=
+    exbidh $p |- ( ph -> ( E. x ps <-> E. x ch ) ) $=
       ( wb wal wex alrimih exbi syl ) ABCGZDHBDICDIGAMDEFJBCDKL $.
+  $}
+
+  ${
+    exbid.1 $e |- F/ x ph $.
+    exbid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for existential quantifier (deduction rule).
+       (Contributed by Mario Carneiro, 24-Sep-2016.) $)
+    exbid $p |- ( ph -> ( E. x ps <-> E. x ch ) ) $=
+      ( nfri exbidh ) ABCDADEGFH $.
   $}
 
   $( Simplification of an existentially quantified conjunction.  (Contributed
@@ -11659,7 +11668,7 @@ $)
        Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).
        (Contributed by NM, 27-Feb-2005.) $)
     drex2 $p |- ( A. x x = y -> ( E. z ph <-> E. z ps ) ) $=
-      ( weq wal hbae exbid ) CDGCHABECDEIFJ $.
+      ( weq wal hbae exbidh ) CDGCHABECDEIFJ $.
 
     $( Formula-building lemma for use with the Distinctor Reduction Theorem.
        (Contributed by Mario Carneiro, 4-Oct-2016.) $)
@@ -12198,7 +12207,7 @@ $)
        Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).
        (Contributed by NM, 27-Feb-2005.)  (Revised by NM, 3-Feb-2015.) $)
     drex1 $p |- ( A. x x = y -> ( E. x ph <-> E. y ps ) ) $=
-      ( cv wceq wal wex wa hbae biantrurd bitr2d exbid wi ax11e a4s
+      ( cv wceq wal wex wa hbae biantrurd bitr2d exbidh wi ax11e a4s
       ax-4 sylbird equcomi bitr3d alequcoms impbid ) CFZDFZGZCHZACIZB
       DIZUGUHUFBJZCIZUIUGUJACCDCKUGABUJEUGUFBUFCRLMNUFUKUIOCBCDPQSUGU
       IUEUDGZAJZDIZUHUGUMBDCDDKUGAUMBUGULAUFULCCDTQLEUANUNUHOZDCULUOD
@@ -12522,7 +12531,7 @@ $)
     $( Formula-building rule for existential quantifier (deduction rule).
        (Contributed by NM, 5-Aug-1993.) $)
     exbidv $p |- ( ph -> ( E. x ps <-> E. x ch ) ) $=
-      ( ax-17 exbid ) ABCDADFEG $.
+      ( ax-17 exbidh ) ABCDADFEG $.
   $}
 
   $( A bidirectional version of ~ ax-11o .  (Contributed by NM,
@@ -14595,7 +14604,7 @@ $)
     $( Formula-building rule for "at most one" quantifier (deduction rule).
        (Contributed by NM, 8-Mar-1995.) $)
     mobid $p |- ( ph -> ( E* x ps <-> E* x ch ) ) $=
-      ( wex weu wi wmo exbid eubid imbi12d df-mo 3bitr4g ) ABDGZBDHZICDGZCDHZIB
+      ( wex weu wi wmo exbidh eubid imbi12d df-mo 3bitr4g ) ABDGZBDHZICDGZCDHZIB
       DJCDJAPRQSABCDEFKABCDEFLMBDNCDNO $.
   $}
 
