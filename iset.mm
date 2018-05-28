@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-May-2018
+$( iset.mm - Version of 28-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -14383,12 +14383,23 @@ $)
 
   ${
     $d x y $.  $d y ph $.  $d y ps $.  $d y ch $.
-    eubid.1 $e |- ( ph -> A. x ph ) $.
+    eubidh.1 $e |- ( ph -> A. x ph ) $.
+    eubidh.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for uniqueness quantifier (deduction rule).
+       (Contributed by NM, 9-Jul-1994.) $)
+    eubidh $p |- ( ph -> ( E! x ps <-> E! x ch ) ) $=
+      ( vy weq wb wal wex weu bibi1d albidh exbidv df-eu 3bitr4g ) ABDGHZIZDJZGK
+      CRIZDJZGKBDLCDLATUBGASUADEABCRFMNOBDGPCDGPQ $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.  $d y ps $.  $d y ch $.
+    eubid.1 $e |- F/ x ph $.
     eubid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
     $( Formula-building rule for uniqueness quantifier (deduction rule).
        (Contributed by NM, 9-Jul-1994.) $)
     eubid $p |- ( ph -> ( E! x ps <-> E! x ch ) ) $=
-      ( vy weq wb wal wex weu bibi1d albidh exbidv df-eu 3bitr4g ) ABDGHZIZDJZGK
+      ( vy weq wb wal wex weu bibi1d albid exbidv df-eu 3bitr4g ) ABDGHZIZDJZGK
       CRIZDJZGKBDLCDLATUBGASUADEABCRFMNOBDGPCDGPQ $.
   $}
 
@@ -14398,16 +14409,16 @@ $)
     $( Formula-building rule for uniqueness quantifier (deduction rule).
        (Contributed by NM, 9-Jul-1994.) $)
     eubidv $p |- ( ph -> ( E! x ps <-> E! x ch ) ) $=
-      ( ax-17 eubid ) ABCDADFEG $.
+      ( nfv eubid ) ABCDADFEG $.
   $}
 
   ${
     eubii.1 $e |- ( ph <-> ps ) $.
     $( Introduce uniqueness quantifier to both sides of an equivalence.
-       (Contributed by NM, 9-Jul-1994.) $)
+       (Contributed by NM, 9-Jul-1994.)  (Revised by Mario Carneiro,
+       6-Oct-2016.) $)
     eubii $p |- ( E! x ph <-> E! x ps ) $=
-      ( weq weu wb equid hbequid a1i eubid ax-mp ) CCEZACFBCFGCHMABCCCIABGMDJKL
-      $.
+      ( weu wb wtru a1i eubidv trud ) ACEBCEFGABCABFGDHIJ $.
   $}
 
   ${
@@ -14564,7 +14575,7 @@ $)
     $( Introduce a disjunct into a uniqueness quantifier.  (Contributed by NM,
        21-Oct-2005.) $)
     euor $p |- ( ( -. ph /\ E! x ps ) -> E! x ( ph \/ ps ) ) $=
-      ( wn weu wo hbn biorf eubid biimpa ) AEZBCFABGZCFLBMCACDHABIJK $.
+      ( wn weu wo hbn biorf eubidh biimpa ) AEZBCFABGZCFLBMCACDHABIJK $.
   $}
 
   ${
@@ -14613,7 +14624,7 @@ $)
     $( Formula-building rule for "at most one" quantifier (deduction rule).
        (Contributed by NM, 8-Mar-1995.) $)
     mobid $p |- ( ph -> ( E* x ps <-> E* x ch ) ) $=
-      ( wex weu wi wmo exbidh eubid imbi12d df-mo 3bitr4g ) ABDGZBDHZICDGZCDHZIB
+      ( wex weu wi wmo exbidh eubidh imbi12d df-mo 3bitr4g ) ABDGZBDHZICDGZCDHZIB
       DJCDJAPRQSABCDEFKABCDEFLMBDNCDNO $.
   $}
 
@@ -20058,7 +20069,7 @@ $)
        NM, 19-Feb-2005.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
     euan $p |- ( E! x ( ph /\ ps ) <-> ( ph /\ E! x ps ) ) $=
       ( wa weu wex wmo simpl exlimi adantr simpr eximi hbe1 ancrd impbid2 mobid
-      a1d biimpa eu5 jca32 anbi2i 3imtr4i ibar eubid impbii ) ABEZCFZABCFZEZUGC
+      a1d biimpa eu5 jca32 anbi2i 3imtr4i ibar eubidh impbii ) ABEZCFZABCFZEZUGC
       GZUGCHZEZABCGZBCHZEZEUHUJUMAUNUOUKAULUGACDABIJZKUKUNULUGBCABLZMKUKULUOUKU
       GBCUGCNUKUGBURUKBAUKABUQROPQSUAUGCTUIUPABCTUBUCAUIUHABUGCDABUDUESUF $.
   $}
@@ -20128,7 +20139,7 @@ $)
   $( Theorem *14.26 in [WhiteheadRussell] p. 192.  (Contributed by Andrew
      Salmon, 11-Jul-2011.) $)
   eupickbi $p |- ( E! x ph -> ( E. x ( ph /\ ps ) <-> A. x ( ph -> ps ) ) ) $=
-    ( weu wa wex wi wal eupicka ex hba1 wb ancl simpl impbid1 eubid euex syl6bi
+    ( weu wa wex wi wal eupicka ex hba1 wb ancl simpl impbid1 eubidh euex syl6bi
     a4s com12 impbid ) ACDZABEZCFZABGZCHZUBUDUFABCIJUFUBUDUFUBUCCDUDUFAUCCUECKU
     EAUCLCUEAUCABMABNOSPUCCQRTUA $.
 
@@ -20146,7 +20157,7 @@ $)
      (Contributed by NM, 21-Oct-2005.)  (Proof shortened by Andrew Salmon,
      9-Jul-2011.) $)
   euor2 $p |- ( -. E. x ph -> ( E! x ( ph \/ ps ) <-> E! x ps ) ) $=
-    ( wex wn wo hbe1 hbn wb 19.8a con3i orel1 olc impbid1 syl eubid ) ACDZEZABF
+    ( wex wn wo hbe1 hbn wb 19.8a con3i orel1 olc impbid1 syl eubidh ) ACDZEZABF
     ZBCQCACGHRAEZSBIAQACJKTSBABLBAMNOP $.
 
   ${
