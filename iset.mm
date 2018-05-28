@@ -9845,11 +9845,11 @@ $)
   $}
 
   ${
-    albid.1 $e |- ( ph -> A. x ph ) $.
-    albid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    albidh.1 $e |- ( ph -> A. x ph ) $.
+    albidh.2 $e |- ( ph -> ( ps <-> ch ) ) $.
     $( Formula-building rule for universal quantifier (deduction rule).
        (Contributed by NM, 5-Aug-1993.) $)
-    albid $p |- ( ph -> ( A. x ps <-> A. x ch ) ) $=
+    albidh $p |- ( ph -> ( A. x ps <-> A. x ch ) ) $=
       ( wb wal alrimih albi syl ) ABCGZDHBDHCDHGALDEFIBCDJK $.
   $}
 
@@ -10527,7 +10527,7 @@ $)
     $( An equality theorem for effectively not free.  (Contributed by Mario
        Carneiro, 4-Oct-2016.) $)
     nfbidf $p |- ( ph -> ( F/ x ps <-> F/ x ch ) ) $=
-      ( wal wi wnf nfri albid imbi12d df-nf 3bitr4g ) ABBDGZHZDGCCDGZHZDGBDICDI
+      ( wal wi wnf nfri albidh imbi12d df-nf 3bitr4g ) ABBDGZHZDGCCDGZHZDGBDICDI
       APRDADEJZABCOQFABCDSFKLKBDMCDMN $.
   $}
 
@@ -11029,6 +11029,15 @@ $)
        (Contributed by NM, 5-Aug-1993.) $)
     exbidh $p |- ( ph -> ( E. x ps <-> E. x ch ) ) $=
       ( wb wal wex alrimih exbi syl ) ABCGZDHBDICDIGAMDEFJBCDKL $.
+  $}
+
+  ${
+    albid.1 $e |- F/ x ph $.
+    albid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for universal quantifier (deduction rule).
+       (Contributed by Mario Carneiro, 24-Sep-2016.) $)
+    albid $p |- ( ph -> ( A. x ps <-> A. x ch ) ) $=
+      ( nfri albidh ) ABCDADEGFH $.
   $}
 
   ${
@@ -11659,7 +11668,7 @@ $)
        Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).
        (Contributed by NM, 27-Feb-2005.) $)
     dral2 $p |- ( A. x x = y -> ( A. z ph <-> A. z ps ) ) $=
-      ( weq wal hbae albid ) CDGCHABECDEIFJ $.
+      ( weq wal hbae albidh ) CDGCHABECDEIFJ $.
   $}
 
   ${
@@ -12453,7 +12462,7 @@ $)
     ax11v2 $p |- ( -. A. x x = y ->
                  ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) $=
       ( weq wal wn wex wi a9e wa wb equequ2 adantl dveeq2 imp hba1 imbi1d a4s
-      albid syl imbi2d imbi12d mpbii ex exlimdv mpi ) BCFZBGHZDCFZDIUIAUIAJZBGZ
+      albidh syl imbi2d imbi12d mpbii ex exlimdv mpi ) BCFZBGHZDCFZDIUIAUIAJZBGZ
       JZJZDCKUJUKUODUJUKUOUJUKLZBDFZAUQAJZBGZJZJUOEUPUQUIUTUNUKUQUIMUJDCBNZOUPU
       SUMAUPUKBGZUSUMMUJUKVBBCDPQVBURULBUKBRUKURULMBUKUQUIAVASTUAUBUCUDUEUFUGUH
       $.
@@ -12526,7 +12535,7 @@ $)
     $( Formula-building rule for universal quantifier (deduction rule).
        (Contributed by NM, 5-Aug-1993.) $)
     albidv $p |- ( ph -> ( A. x ps <-> A. x ch ) ) $=
-      ( ax-17 albid ) ABCDADFEG $.
+      ( ax-17 albidh ) ABCDADFEG $.
 
     $( Formula-building rule for existential quantifier (deduction rule).
        (Contributed by NM, 5-Aug-1993.) $)
@@ -12581,7 +12590,7 @@ $)
     equs5or $p |- ( A. x x = y \/
              ( E. x ( x = y /\ ph ) -> A. x ( x = y -> ph ) ) ) $=
       ( vz weq wex wal wa wi wo a9e wnf dveeq2or nfnf1 nfri ax11v equequ2 ax-mp
-      wb hba1 adantl nfr imp imbi1d a4s albid syl imbi2d imbi12d mpbii ex imp4a
+      wb hba1 adantl nfr imp imbi1d a4s albidh syl imbi2d imbi12d mpbii ex imp4a
       alrimih 19.21t mpbid 19.23 syl6ib orim2i pm2.76 olcs exlimiv ) DCEZDFBCEZB
       GZVCAHZBFVCAIZBGZIZJZDCKVBVIDVDVBVIVDVBVHIZJZVDVBJVIIVDVBBLZJVKBCDMVLVJVD
       VLVBVEVGIZBGZVHVLVBVMIZBGVBVNIVLVOBVLBVBBNOVLVBVCAVGVLVBVCAVGIZIZVLVBHZBD
@@ -14295,7 +14304,7 @@ $( The theorems in this section make use of the $d statement. $)
        2-Jan-2002.) $)
     sbal2 $p |- ( -. A. x x = y ->
              ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) ) $=
-      ( weq wal wn wi alcom hbnae wb dveeq1 alimi hbnaes 19.21ht albid syl5rbbr
+      ( weq wal wn wi alcom hbnae wb dveeq1 alimi hbnaes 19.21ht albidh syl5rbbr
       wsb syl sb6 albii 3bitr4g ) BCEBFGZCDEZABFZHZCFZUDAHZCFZBFZUECDRACDRZBFUJ
       UHBFZCFUCUGUHCBIUCULUFCBCCJUCUDUDBFHZBFZULUFKUNBCBUCUMBBCDLMNUDABOSPQUECD
       TUKUIBACDTUAUB $.
@@ -14379,7 +14388,7 @@ $)
     $( Formula-building rule for uniqueness quantifier (deduction rule).
        (Contributed by NM, 9-Jul-1994.) $)
     eubid $p |- ( ph -> ( E! x ps <-> E! x ch ) ) $=
-      ( vy weq wb wal wex weu bibi1d albid exbidv df-eu 3bitr4g ) ABDGHZIZDJZGK
+      ( vy weq wb wal wex weu bibi1d albidh exbidv df-eu 3bitr4g ) ABDGHZIZDJZGK
       CRIZDJZGKBDLCDLATUBGASUADEABCRFMNOBDGPCDGPQ $.
   $}
 
