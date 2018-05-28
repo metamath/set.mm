@@ -14536,14 +14536,14 @@ $)
   $}
 
   ${
-    cbveu.1 $e |- ( ph -> A. y ph ) $.
-    cbveu.2 $e |- ( ps -> A. x ps ) $.
+    cbveu.1 $e |- F/ y ph $.
+    cbveu.2 $e |- F/ x ps $.
     cbveu.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    $( Rule used to change bound variables, using implicit substitition.
-       (Contributed by NM, 25-Nov-1994.)  (Revised by Andrew Salmon,
-       8-Jun-2011.) $)
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 25-Nov-1994.)  (Revised by Mario Carneiro,
+       7-Oct-2016.) $)
     cbveu $p |- ( E! x ph <-> E! y ps ) $=
-      ( weu wsb sb8euh sbieh eubii bitri ) ACHACDIZDHBDHACDEJNBDABCDFGKLM $.
+      ( weu wsb sb8eu sbie eubii bitri ) ACHACDIZDHBDHACDEJNBDABCDFGKLM $.
   $}
 
   ${
@@ -14642,14 +14642,14 @@ $)
   $}
 
   ${
-    cbvmo.1 $e |- ( ph -> A. y ph ) $.
-    cbvmo.2 $e |- ( ps -> A. x ps ) $.
+    cbvmo.1 $e |- F/ y ph $.
+    cbvmo.2 $e |- F/ x ps $.
     cbvmo.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    $( Rule used to change bound variables, using implicit substitition.
+    $( Rule used to change bound variables, using implicit substitution.
        (Contributed by NM, 9-Mar-1995.)  (Revised by Andrew Salmon,
        8-Jun-2011.) $)
     cbvmo $p |- ( E* x ph <-> E* y ps ) $=
-      ( wex weu wi wmo cbvexh cbveu imbi12i df-mo 3bitr4i ) ACHZACIZJBDHZBDIZJAC
+      ( wex weu wi wmo cbvex cbveu imbi12i df-mo 3bitr4i ) ACHZACIZJBDHZBDIZJAC
       KBDKQSRTABCDEFGLABCDEFGMNACOBDOP $.
   $}
 
