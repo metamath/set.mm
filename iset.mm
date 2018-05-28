@@ -14619,22 +14619,41 @@ $)
   $}
 
   ${
-    mobid.1 $e |- ( ph -> A. x ph ) $.
-    mobid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    mobidh.1 $e |- ( ph -> A. x ph ) $.
+    mobidh.2 $e |- ( ph -> ( ps <-> ch ) ) $.
     $( Formula-building rule for "at most one" quantifier (deduction rule).
        (Contributed by NM, 8-Mar-1995.) $)
-    mobid $p |- ( ph -> ( E* x ps <-> E* x ch ) ) $=
+    mobidh $p |- ( ph -> ( E* x ps <-> E* x ch ) ) $=
       ( wex weu wi wmo exbidh eubidh imbi12d df-mo 3bitr4g ) ABDGZBDHZICDGZCDHZIB
       DJCDJAPRQSABCDEFKABCDEFLMBDNCDNO $.
   $}
 
   ${
+    mobid.1 $e |- F/ x ph $.
+    mobid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for "at most one" quantifier (deduction rule).
+       (Contributed by NM, 8-Mar-1995.) $)
+    mobid $p |- ( ph -> ( E* x ps <-> E* x ch ) ) $=
+      ( wex weu wi wmo exbid eubid imbi12d df-mo 3bitr4g ) ABDGZBDHZICDGZCDHZIB
+      DJCDJAPRQSABCDEFKABCDEFLMBDNCDNO $.
+  $}
+
+  ${
+    $d x ph $.
+    mobidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for "at most one" quantifier (deduction rule).
+       (Contributed by Mario Carneiro, 7-Oct-2016.) $)
+    mobidv $p |- ( ph -> ( E* x ps <-> E* x ch ) ) $=
+      ( nfv mobid ) ABCDADFEG $.
+  $}
+
+  ${
     mobii.1 $e |- ( ps <-> ch ) $.
     $( Formula-building rule for "at most one" quantifier (inference rule).
-       (Contributed by NM, 9-Mar-1995.) $)
+       (Contributed by NM, 9-Mar-1995.)  (Revised by Mario Carneiro,
+       17-Oct-2016.) $)
     mobii $p |- ( E* x ps <-> E* x ch ) $=
-      ( weq wmo wb equid hbequid a1i mobid ax-mp ) CCEZACFBCFGCHMABCCCIABGMDJKL
-      $.
+      ( wmo wb wtru a1i mobidv trud ) ACEBCEFGABCABFGDHIJ $.
   $}
 
   $( Bound-variable hypothesis builder for "at most one."  (Contributed by NM,
@@ -20068,7 +20087,7 @@ $)
     $( Introduction of a conjunct into uniqueness quantifier.  (Contributed by
        NM, 19-Feb-2005.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
     euan $p |- ( E! x ( ph /\ ps ) <-> ( ph /\ E! x ps ) ) $=
-      ( wa weu wex wmo simpl exlimi adantr simpr eximi hbe1 ancrd impbid2 mobid
+      ( wa weu wex wmo simpl exlimi adantr simpr eximi hbe1 ancrd impbid2 mobidh
       a1d biimpa eu5 jca32 anbi2i 3imtr4i ibar eubidh impbii ) ABEZCFZABCFZEZUGC
       GZUGCHZEZABCGZBCHZEZEUHUJUMAUNUOUKAULUGACDABIJZKUKUNULUGBCABLZMKUKULUOUKU
       GBCUGCNUKUGBURUKBAUKABUQROPQSUAUGCTUIUPABCTUBUCAUIUHABUGCDABUDUESUF $.
