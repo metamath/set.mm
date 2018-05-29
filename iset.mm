@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-May-2018
+$( iset.mm - Version of 27-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -14436,7 +14436,32 @@ $)
   $}
 
   ${
-    $d x y z $.  $d x z $.  $d z ph $.
+    $d x y z $.  $d z ph $.  $d z ps $.
+    nfeudv.1 $e |- F/ y ph $.
+    nfeudv.2 $e |- ( ph -> F/ x ps ) $.
+    $( Deduction version of ~ nfeu .  Similar to ~ nfeud but has the additional
+       constraint that ` x ` and ` y ` must be distinct.  (Contributed by Jim
+       Kingdon, 25-May-2018.) $)
+    nfeudv $p |- ( ph -> F/ x E! y ps ) $=
+      ( vz cv wceq wb wal wex wnf weu nfv a1i nfbid nfald nfexd df-eu
+      nfbii sylibr ) ABDHGHIZJZDKZGLZCMBDNZCMAUECGAGOAUDCDEABUCCFUCCM
+      AUCCOPQRSUGUFCBDGTUAUB $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.  $d z ps $.
+    nfeud.1 $e |- F/ y ph $.
+    nfeud.2 $e |- ( ph -> F/ x ps ) $.
+    $( Deduction version of ~ nfeu .  (Contributed by NM, 15-Feb-2013.)
+       (Revised by Mario Carneiro, 7-Oct-2016.)  (Proof rewritten by Jim
+       Kingdon, 25-May-2018.) $)
+    nfeud $p |- ( ph -> F/ x E! y ps ) $=
+      ( vz weu cv wsbc nfv sb8eu nfsbd nfeudv nfxfrd ) BDHBDGIJZGHACB
+      DGBGKLAPCGAGKABDGCEFMNO $.
+  $}
+
+  ${
+    $d x y z $.  $d z ph $.
     nfeuv.1 $e |- F/ x ph $.
     $( Bound-variable hypothesis builder for existential uniqueness.  This is
        similar to ~ nfeu but has the additional constraint that ` x ` and ` y `
@@ -14456,6 +14481,167 @@ $)
     nfeu $p |- F/ x E! y ph $=
       ( vz weu cv wsbc nfv sb8eu nfsb nfeuv nfxfr ) ACFACEGHZEFBACEAE
       IJNBEACEBDKLM $.
+  $}
+
+  ${
+    $d y z $.  $d x z $.  $d z ph $.
+    hbeu.1 $e |- ( ph -> A. x ph ) $.
+    $( Bound-variable hypothesis builder for uniqueness.  Note that ` x ` and
+       ` y ` needn't be distinct.  (Contributed by NM, 8-Mar-1995.)  (Proof
+       rewritten by Jim Kingdon, 24-May-2018.) $)
+    hbeu $p |- ( E! y ph -> A. x E! y ph ) $=
+      ( weu nfi nfeu nfri ) ACEBABCABDFGH $.
+  $}
+
+  ${
+    $d y z $.  $d x z $.  $d z ph $.  $d z ps $.
+    hbeud.1 $e |- ( ph -> A. x ph ) $.
+    hbeud.2 $e |- ( ph -> A. y ph ) $.
+    hbeud.3 $e |- ( ph -> ( ps -> A. x ps ) ) $.
+    $( Deduction version of ~ hbeu .  (Contributed by NM, 15-Feb-2013.)  (Proof
+       rewritten by Jim Kingdon, 25-May-2018.) $)
+    hbeud $p |- ( ph -> ( E! y ps -> A. x E! y ps ) ) $=
+      ( weu nfi nfd nfeud nfrd ) ABDHCABCDADFIABCACEIGJKL $.
+  $}
+
+  ${
+    $d w y z $.  $d ph z w $.  $d w x z $.
+    sb8euh.1 $e |- ( ph -> A. y ph ) $.
+    $( Variable substitution in uniqueness quantifier.  (Contributed by NM,
+       7-Aug-1994.)  (Revised by Andrew Salmon, 9-Jul-2011.) $)
+    sb8euh $p |- ( E! x ph <-> E! y [ y / x ] ph ) $=
+      ( vz vw cv wceq wal wex wsbc weu ax-17 sb8h sbbi hbsb equsb3 hbxfrbi df-eu
+      wb hbbi sbequ cbvalh sblbis albii 3bitri exbii 3bitr4i ) ABGEGZHZTZBIZEJAB
+      CGZKZUMUIHZTZCIZEJABLUNCLULUQEULUKBFGZKZFIUKBUMKZCIUQUKBFUKFMNUSUTFCUSABU
+      RKZUJBURKZTCAUJBFOVAVBCABFCDPVBURUIHZCFBEQVCCMRUARUTFMUKFCBUBUCUTUPCUJUOA
+      BCCBEQUDUEUFUGABESUNCESUH $.
+  $}
+
+  ${
+    cbveu.1 $e |- ( ph -> A. y ph ) $.
+    cbveu.2 $e |- ( ps -> A. x ps ) $.
+    cbveu.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitition.
+       (Contributed by NM, 25-Nov-1994.)  (Revised by Andrew Salmon,
+       8-Jun-2011.) $)
+    cbveu $p |- ( E! x ph <-> E! y ps ) $=
+      ( weu wsb sb8euh sbieh eubii bitri ) ACHACDIZDHBDHACDEJNBDABCDFGKLM $.
+  $}
+
+  ${
+    $d x y $.
+    eu1.1 $e |- ( ph -> A. y ph ) $.
+    $( An alternate way to express uniqueness used by some authors.  Exercise
+       2(b) of [Margaris] p. 110.  (Contributed by NM, 20-Aug-1993.) $)
+    eu1 $p |- ( E! x ph <->
+                E. x ( ph /\ A. y ( [ y / x ] ph -> x = y ) ) ) $=
+      ( wsb weu weq wb wal wex wi wa hbs1 euf sb8euh equcom imbi2i albii 3bitr4i
+      sb6rf anbi12i ancom albiim exbii ) ABCEZCFUECBGZHCIZBJABFAUEBCGZKZCIZLZBJ
+      UECBABCMNABCDOUKUGBUJALUEUFKZCIZUFUEKCIZLUKUGUJUMAUNUIULCUHUFUEBCPQRABCDT
+      UAAUJUBUEUFCUCSUDS $.
+  $}
+
+  ${
+    euor.1 $e |- ( ph -> A. x ph ) $.
+    $( Introduce a disjunct into a uniqueness quantifier.  (Contributed by NM,
+       21-Oct-2005.) $)
+    euor $p |- ( ( -. ph /\ E! x ps ) -> E! x ( ph \/ ps ) ) $=
+      ( wn weu wo hbn biorf eubid biimpa ) AEZBCFABGZCFLBMCACDHABIJK $.
+  $}
+
+  ${
+    $d x ph $.
+    $( Introduce a disjunct into a uniqueness quantifier.  (Contributed by NM,
+       23-Mar-1995.) $)
+    euorv $p |- ( ( -. ph /\ E! x ps ) -> E! x ( ph \/ ps ) ) $=
+      ( ax-17 euor ) ABCACDE $.
+  $}
+
+  ${
+    $d x y $.  $d ph y $.
+    $( Existential uniqueness implies existence.  (Contributed by NM,
+       15-Sep-1993.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
+    euex $p |- ( E! x ph -> E. x ph ) $=
+      ( vy weu wsb weq wi wal wa wex ax-17 eu1 exsimpl sylbi ) ABDAABCEBCFGCHZI
+      BJABJABCACKLAOBMN $.
+  $}
+
+  ${
+    $d x y $.
+    eumo0.1 $e |- ( ph -> A. y ph ) $.
+    $( Existential uniqueness implies "at most one."  (Contributed by NM,
+       8-Jul-1994.) $)
+    eumo0 $p |- ( E! x ph -> E. y A. x ( ph -> x = y ) ) $=
+      ( weu weq wb wal wex wi euf bi1 alimi eximi sylbi ) ABEABCFZGZBHZCIAPJZBH
+      ZCIABCDKRTCQSBAPLMNO $.
+  $}
+
+  $( Existential uniqueness implies "at most one."  (Contributed by NM,
+     23-Mar-1995.)  (Proof rewritten by Jim Kingdon, 27-May-2018.) $)
+  eumo $p |- ( E! x ph -> E* x ph ) $=
+    ( weu wex wi wmo ax-1 df-mo sylibr ) ABCZABDZJEABFJKGABHI $.
+
+  ${
+    eumoi.1 $e |- E! x ph $.
+    $( "At most one" inferred from existential uniqueness.  (Contributed by NM,
+       5-Apr-1995.) $)
+    eumoi $p |- E* x ph $=
+      ( weu wmo eumo ax-mp ) ABDABECABFG $.
+  $}
+
+  ${
+    mobid.1 $e |- ( ph -> A. x ph ) $.
+    mobid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building rule for "at most one" quantifier (deduction rule).
+       (Contributed by NM, 8-Mar-1995.) $)
+    mobid $p |- ( ph -> ( E* x ps <-> E* x ch ) ) $=
+      ( wex weu wi wmo exbid eubid imbi12d df-mo 3bitr4g ) ABDGZBDHZICDGZCDHZIB
+      DJCDJAPRQSABCDEFKABCDEFLMBDNCDNO $.
+  $}
+
+  ${
+    mobii.1 $e |- ( ps <-> ch ) $.
+    $( Formula-building rule for "at most one" quantifier (inference rule).
+       (Contributed by NM, 9-Mar-1995.) $)
+    mobii $p |- ( E* x ps <-> E* x ch ) $=
+      ( weq wmo wb equid hbequid a1i mobid ax-mp ) CCEZACFBCFGCHMABCCCIABGMDJKL
+      $.
+  $}
+
+  $( Bound-variable hypothesis builder for "at most one."  (Contributed by NM,
+     8-Mar-1995.) $)
+  hbmo1 $p |- ( E* x ph -> A. x E* x ph ) $=
+    ( wmo wex weu wi df-mo hbe1 hbeu1 hbim hbxfrbi ) ABCABDZABEZFBABGLMBABHABIJ
+    K $.
+
+  ${
+    hbmo.1 $e |- ( ph -> A. x ph ) $.
+    $( Bound-variable hypothesis builder for "at most one."  (Contributed by
+       NM, 9-Mar-1995.) $)
+    hbmo $p |- ( E* y ph -> A. x E* y ph ) $=
+      ( wmo wex weu wi df-mo hbex hbeu hbim hbxfrbi ) ACEACFZACGZHBACINOBABCDJA
+      BCDKLM $.
+  $}
+
+  ${
+    cbvmo.1 $e |- ( ph -> A. y ph ) $.
+    cbvmo.2 $e |- ( ps -> A. x ps ) $.
+    cbvmo.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitition.
+       (Contributed by NM, 9-Mar-1995.)  (Revised by Andrew Salmon,
+       8-Jun-2011.) $)
+    cbvmo $p |- ( E* x ph <-> E* y ps ) $=
+      ( wex weu wi wmo cbvexh cbveu imbi12i df-mo 3bitr4i ) ACHZACIZJBDHZBDIZJAC
+      KBDKQSRTABCDEFGLABCDEFGMNACOBDOP $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.
+    $( Uniqueness in terms of "at most one."  (Contributed by NM,
+       23-Mar-1995.)  (Proof rewritten by Jim Kingdon, 27-May-2018.) $)
+    eu5 $p |- ( E! x ph <-> ( E. x ph /\ E* x ph ) ) $=
+      ( weu wex wmo wa euex eumo jca df-mo biimpi imp ancoms impbii
+      wi ) ABCZABDZABEZFPQRABGABHIRQPRQPRQPOABJKLMN $.
   $}
 
 $(
@@ -17534,70 +17720,6 @@ $(
 $)
 
   ${
-    $d y z $.  $d x z $.  $d z ph $.
-    hbeu.1 $e |- ( ph -> A. x ph ) $.
-    $( Bound-variable hypothesis builder for "at most one."  Note that ` x `
-       and ` y ` needn't be distinct (this makes the proof more difficult).
-       (Contributed by NM, 8-Mar-1995.) $)
-    hbeu $p |- ( E! y ph -> A. x E! y ph ) $=
-      ( vz weu weq wb wal wex df-eu wi hba1 ax10o alequcoms wn hbnae a1i dveeq1
-      syl5 hbbid hbald pm2.61i hbex hbxfrbi ) ACFACEGZHZCIZEJBACEKUHBEBCGBIZUHU
-      HBIZLUHUHCIZUIUJUGCMUKUJLCBUHCBNOTUIPZUGBCBCCQULAUFBBCBQAABILULDRBCESUAUB
-      UCUDUE $.
-  $}
-
-  ${
-    $d y z $.  $d x z $.  $d z ph $.  $d z ps $.
-    hbeud.1 $e |- ( ph -> A. x ph ) $.
-    hbeud.2 $e |- ( ph -> A. y ph ) $.
-    hbeud.3 $e |- ( ph -> ( ps -> A. x ps ) ) $.
-    $( Deduction version of ~ hbeu .  (Contributed by NM, 15-Feb-2013.) $)
-    hbeud $p |- ( ph -> ( E! y ps -> A. x E! y ps ) ) $=
-      ( vz cv wceq wb wal wex weu ax-17 wi wn wa hbnae hban adantr dveeq1 hbbid
-      adantl hbald hba1 ax10o alequcoms syl5 pm2.61d2 hbexd df-eu albii 3imtr4g
-      ex ) ABDIZHIJZKZDLZHMZUTCLBDNZVACLAUSCHAHOACIUPJCLZUSUSCLZPZAVBQZVDAVERZU
-      RCDAVEDFCDDSTVFBUQCAVECECDCSTABBCLPVEGUAVEUQUQCLPACDHUBUDUCUEUOUSUSDLZVBV
-      CURDUFVGVCPDCUSDCUGUHUIUJUKBDHULZVAUTCVHUMUN $.
-  $}
-
-  ${
-    $d w y z $.  $d ph z w $.  $d w x z $.
-    sb8euh.1 $e |- ( ph -> A. y ph ) $.
-    $( Variable substitution in uniqueness quantifier.  (Contributed by NM,
-       7-Aug-1994.)  (Revised by Andrew Salmon, 9-Jul-2011.) $)
-    sb8euh $p |- ( E! x ph <-> E! y [ y / x ] ph ) $=
-      ( vz vw cv wceq wal wex wsbc weu ax-17 sb8h sbbi hbsb equsb3 hbxfrbi df-eu
-      wb hbbi sbequ cbvalh sblbis albii 3bitri exbii 3bitr4i ) ABGEGZHZTZBIZEJAB
-      CGZKZUMUIHZTZCIZEJABLUNCLULUQEULUKBFGZKZFIUKBUMKZCIUQUKBFUKFMNUSUTFCUSABU
-      RKZUJBURKZTCAUJBFOVAVBCABFCDPVBURUIHZCFBEQVCCMRUARUTFMUKFCBUBUCUTUPCUJUOA
-      BCCBEQUDUEUFUGABESUNCESUH $.
-  $}
-
-  ${
-    cbveu.1 $e |- ( ph -> A. y ph ) $.
-    cbveu.2 $e |- ( ps -> A. x ps ) $.
-    cbveu.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    $( Rule used to change bound variables, using implicit substitition.
-       (Contributed by NM, 25-Nov-1994.)  (Revised by Andrew Salmon,
-       8-Jun-2011.) $)
-    cbveu $p |- ( E! x ph <-> E! y ps ) $=
-      ( weu wsb sb8euh sbieh eubii bitri ) ACHACDIZDHBDHACDEJNBDABCDFGKLM $.
-  $}
-
-  ${
-    $d x y $.
-    eu1.1 $e |- ( ph -> A. y ph ) $.
-    $( An alternate way to express uniqueness used by some authors.  Exercise
-       2(b) of [Margaris] p. 110.  (Contributed by NM, 20-Aug-1993.) $)
-    eu1 $p |- ( E! x ph <->
-                E. x ( ph /\ A. y ( [ y / x ] ph -> x = y ) ) ) $=
-      ( wsb weu weq wb wal wex wi wa hbs1 euf sb8euh equcom imbi2i albii 3bitr4i
-      sb6rf anbi12i ancom albiim exbii ) ABCEZCFUECBGZHCIZBJABFAUEBCGZKZCIZLZBJ
-      UECBABCMNABCDOUKUGBUJALUEUFKZCIZUFUEKCIZLUKUGUJUMAUNUIULCUHUFUEBCPQRABCDT
-      UAAUJUBUEUFCUCSUDS $.
-  $}
-
-  ${
     $d x y z $.  $d ph z $.
     mo.1 $e |- ( ph -> A. y ph ) $.
     $( Equivalent definitions of "there exists at most one."  (Contributed by
@@ -17615,25 +17737,6 @@ $)
       GGWRAWAVQUQAWAVQURUSUTWQWABHZCIZWSVTWAWTCWOVAWSWTVSGZCHZXAVTGWRXCCBWRBHXB
       CWAVRBVDRVBWTVSCVEPVCVFWQSZVTWDXDWASZCHZVTWACVGXFASZBHVSVTXEXGCBWABWOTACD
       TCBFAWAAWAGBCABCVHVIVJOXGVRBAVQVKRVSCVLVMQVNVOVP $.
-  $}
-
-  ${
-    $d x y $.  $d ph y $.
-    $( Existential uniqueness implies existence.  (Contributed by NM,
-       15-Sep-1993.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
-    euex $p |- ( E! x ph -> E. x ph ) $=
-      ( vy weu wsb weq wi wal wa wex ax-17 eu1 exsimpl sylbi ) ABDAABCEBCFGCHZI
-      BJABJABCACKLAOBMN $.
-  $}
-
-  ${
-    $d x y $.
-    eumo0.1 $e |- ( ph -> A. y ph ) $.
-    $( Existential uniqueness implies "at most one."  (Contributed by NM,
-       8-Jul-1994.) $)
-    eumo0 $p |- ( E! x ph -> E. y A. x ( ph -> x = y ) ) $=
-      ( weu weq wb wal wex wi euf bi1 alimi eximi sylbi ) ABEABCFZGZBHZCIAPJZBH
-      ZCIABCDKRTCQSBAPLMNO $.
   $}
 
   ${
@@ -17659,22 +17762,6 @@ $)
                 ( E. x ph /\ E. y A. x ( ph -> x = y ) ) ) $=
       ( weu wex wsb wa weq wi wal eu2 mo anbi2i bitr4i ) ABEABFZAABCGHBCIZJCKBK
       ZHPAQJBKCFZHABCDLSRPABCDMNO $.
-  $}
-
-  ${
-    euor.1 $e |- ( ph -> A. x ph ) $.
-    $( Introduce a disjunct into a uniqueness quantifier.  (Contributed by NM,
-       21-Oct-2005.) $)
-    euor $p |- ( ( -. ph /\ E! x ps ) -> E! x ( ph \/ ps ) ) $=
-      ( wn weu wo hbn biorf eubid biimpa ) AEZBCFABGZCFLBMCACDHABIJK $.
-  $}
-
-  ${
-    $d x ph $.
-    $( Introduce a disjunct into a uniqueness quantifier.  (Contributed by NM,
-       23-Mar-1995.) $)
-    euorv $p |- ( ( -. ph /\ E! x ps ) -> E! x ( ph \/ ps ) ) $=
-      ( ax-17 euor ) ABCACDE $.
   $}
 
   ${
@@ -17732,61 +17819,6 @@ $)
   $}
 
   ${
-    mobid.1 $e |- ( ph -> A. x ph ) $.
-    mobid.2 $e |- ( ph -> ( ps <-> ch ) ) $.
-    $( Formula-building rule for "at most one" quantifier (deduction rule).
-       (Contributed by NM, 8-Mar-1995.) $)
-    mobid $p |- ( ph -> ( E* x ps <-> E* x ch ) ) $=
-      ( wex weu wi wmo exbid eubid imbi12d df-mo 3bitr4g ) ABDGZBDHZICDGZCDHZIB
-      DJCDJAPRQSABCDEFKABCDEFLMBDNCDNO $.
-  $}
-
-  ${
-    mobii.1 $e |- ( ps <-> ch ) $.
-    $( Formula-building rule for "at most one" quantifier (inference rule).
-       (Contributed by NM, 9-Mar-1995.) $)
-    mobii $p |- ( E* x ps <-> E* x ch ) $=
-      ( weq wmo wb equid hbequid a1i mobid ax-mp ) CCEZACFBCFGCHMABCCCIABGMDJKL
-      $.
-  $}
-
-  $( Bound-variable hypothesis builder for "at most one."  (Contributed by NM,
-     8-Mar-1995.) $)
-  hbmo1 $p |- ( E* x ph -> A. x E* x ph ) $=
-    ( wmo wex weu wi df-mo hbe1 hbeu1 hbim hbxfrbi ) ABCABDZABEZFBABGLMBABHABIJ
-    K $.
-
-  ${
-    hbmo.1 $e |- ( ph -> A. x ph ) $.
-    $( Bound-variable hypothesis builder for "at most one."  (Contributed by
-       NM, 9-Mar-1995.) $)
-    hbmo $p |- ( E* y ph -> A. x E* y ph ) $=
-      ( wmo wex weu wi df-mo hbex hbeu hbim hbxfrbi ) ACEACFZACGZHBACINOBABCDJA
-      BCDKLM $.
-  $}
-
-  ${
-    cbvmo.1 $e |- ( ph -> A. y ph ) $.
-    cbvmo.2 $e |- ( ps -> A. x ps ) $.
-    cbvmo.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    $( Rule used to change bound variables, using implicit substitition.
-       (Contributed by NM, 9-Mar-1995.)  (Revised by Andrew Salmon,
-       8-Jun-2011.) $)
-    cbvmo $p |- ( E* x ph <-> E* y ps ) $=
-      ( wex weu wi wmo cbvexh cbveu imbi12i df-mo 3bitr4i ) ACHZACIZJBDHZBDIZJAC
-      KBDKQSRTABCDEFGLABCDEFGMNACOBDOP $.
-  $}
-
-  ${
-    $d x y $.  $d y ph $.
-    $( Uniqueness in terms of "at most one."  (Contributed by NM,
-       23-Mar-1995.) $)
-    eu5 $p |- ( E! x ph <-> ( E. x ph /\ E* x ph ) ) $=
-      ( vy weu wex weq wi wal wa wmo ax-17 eu3 mo2 anbi2i bitr4i ) ABDABEZABCFG
-      BHCEZIPABJZIABCACKZLRQPABCSMNO $.
-  $}
-
-  ${
     $d x y $.  $d y ph $.  $d x ps $.
     eu4.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Uniqueness using implicit substitution.  (Contributed by NM,
@@ -17795,19 +17827,6 @@ $)
              A. x A. y ( ( ph /\ ps ) -> x = y ) ) ) $=
       ( weu wex wmo wa weq wi wal eu5 mo4 anbi2i bitri ) ACFACGZACHZIQABICDJKDL
       CLZIACMRSQABCDENOP $.
-  $}
-
-  $( Existential uniqueness implies "at most one."  (Contributed by NM,
-     23-Mar-1995.) $)
-  eumo $p |- ( E! x ph -> E* x ph ) $=
-    ( weu wex wmo eu5 simprbi ) ABCABDABEABFG $.
-
-  ${
-    eumoi.1 $e |- E! x ph $.
-    $( "At most one" inferred from existential uniqueness.  (Contributed by NM,
-       5-Apr-1995.) $)
-    eumoi $p |- E* x ph $=
-      ( weu wmo eumo ax-mp ) ABDABECABFG $.
   $}
 
   $( Existence in terms of "at most one" and uniqueness.  (Contributed by NM,
