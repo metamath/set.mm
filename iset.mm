@@ -9835,12 +9835,12 @@ $)
     ( wal ax-7 impbii ) ACDBDABDCDABCEACBEF $.
 
   ${
-    alrimd.1 $e |- ( ph -> A. x ph ) $.
-    alrimd.2 $e |- ( ps -> A. x ps ) $.
-    alrimd.3 $e |- ( ph -> ( ps -> ch ) ) $.
+    alrimdh.1 $e |- ( ph -> A. x ph ) $.
+    alrimdh.2 $e |- ( ps -> A. x ps ) $.
+    alrimdh.3 $e |- ( ph -> ( ps -> ch ) ) $.
     $( Deduction from Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
        10-Feb-1997.)  (Proof shortened by Andrew Salmon, 13-May-2011.) $)
-    alrimd $p |- ( ph -> ( ps -> A. x ch ) ) $=
+    alrimdh $p |- ( ph -> ( ps -> A. x ch ) ) $=
       ( wal alimdh syl5 ) BBDHACDHFABCDEGIJ $.
   $}
 
@@ -10851,7 +10851,7 @@ $)
        in ` ( ps -> ch ) ` .  (Contributed by Mario Carneiro, 24-Sep-2016.)
        (Proof shortened by Wolf Lammen, 30-Dec-2017.) $)
     nfimd $p |- ( ph -> F/ x ( ps -> ch ) ) $=
-      ( wnf wal nfnf1 nfri nfr imim2d 19.21t biimprd syl9r alrimd df-nf syl6ibr
+      ( wnf wal nfnf1 nfri nfr imim2d 19.21t biimprd syl9r alrimdh df-nf syl6ibr
       wi sylc ) ABDGZCDGZBCSZDGZEFUAUBUCUCDHZSZDHUDUAUBUFDUADBDIJUBDCDIJUBUCBCD
       HZSZUAUEUBCUGBCDKLUAUEUHBCDMNOPUCDQRT $.
   $}
@@ -11021,6 +11021,26 @@ $)
      by NM, 18-Aug-1993.) $)
   exancom $p |- ( E. x ( ph /\ ps ) <-> E. x ( ps /\ ph ) ) $=
     ( wa ancom exbii ) ABDBADCABEF $.
+
+  ${
+    alrimdd.1 $e |- F/ x ph $.
+    alrimdd.2 $e |- ( ph -> F/ x ps ) $.
+    alrimdd.3 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Deduction from Theorem 19.21 of [Margaris] p. 90.  (Contributed by Mario
+       Carneiro, 24-Sep-2016.) $)
+    alrimdd $p |- ( ph -> ( ps -> A. x ch ) ) $=
+      ( wal nfrd alimd syld ) ABBDHCDHABDFIABCDEGJK $.
+  $}
+
+  ${
+    alrimd.1 $e |- F/ x ph $.
+    alrimd.2 $e |- F/ x ps $.
+    alrimd.3 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Deduction from Theorem 19.21 of [Margaris] p. 90.  (Contributed by Mario
+       Carneiro, 24-Sep-2016.) $)
+    alrimd $p |- ( ph -> ( ps -> A. x ch ) ) $=
+      ( wnf a1i alrimdd ) ABCDEBDHAFIGJ $.
+  $}
 
   ${
     eximdh.1 $e |- ( ph -> A. x ph ) $.
@@ -13013,7 +13033,7 @@ $)
     $( Deduction from Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
        10-Feb-1997.) $)
     alrimdv $p |- ( ph -> ( ps -> A. x ch ) ) $=
-      ( ax-17 alrimd ) ABCDADFBDFEG $.
+      ( ax-17 alrimdh ) ABCDADFBDFEG $.
   $}
 
   ${
@@ -20241,7 +20261,7 @@ $)
        3-Dec-2001.) $)
     moexex $p |- ( ( E* x ph /\ A. x E* y ps ) -> E* y E. x ( ph /\ ps ) ) $=
       ( wmo wal wa wex wi hbmo1 hba1 hbe1 hbmo hbim mopick ex exlimi wn a1d ori
-      com3r alrimd immo a4sd syl6 hbex exsimpl con3i exmo syl pm2.61i imp ) ACF
+      com3r alrimdh immo a4sd syl6 hbex exsimpl con3i exmo syl pm2.61i imp ) ACF
       ZBDFZCGZABHZCIZDFZACIZUNUPUSJZJZAVBCUNVACACKUPUSCUOCLURCDUQCMNOOAUNURBJZD
       GZVAAUNVCDEADCENUNURABUNURABJABCPQUBUCVDUOUSCURBDUDUEUFRUTSZVAUNVEUSUPVEU
       RDIZSUSVFUTURUTDADCEUGABCUHRUIVFUSURDUJUAUKTTULUM $.
