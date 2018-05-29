@@ -9754,11 +9754,11 @@ $)
     ( wtru tru nfth ) BACD $.
 
   ${
-    alimd.1 $e |- ( ph -> A. x ph ) $.
-    alimd.2 $e |- ( ph -> ( ps -> ch ) ) $.
+    alimdh.1 $e |- ( ph -> A. x ph ) $.
+    alimdh.2 $e |- ( ph -> ( ps -> ch ) ) $.
     $( Deduction from Theorem 19.20 of [Margaris] p. 90.  (Contributed by NM,
        4-Jan-2002.) $)
-    alimd $p |- ( ph -> ( A. x ps -> A. x ch ) ) $=
+    alimdh $p |- ( ph -> ( A. x ps -> A. x ch ) ) $=
       ( wal wi al2imi syl ) AADGBDGCDGHEABCDFIJ $.
   $}
 
@@ -9841,7 +9841,7 @@ $)
     $( Deduction from Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
        10-Feb-1997.)  (Proof shortened by Andrew Salmon, 13-May-2011.) $)
     alrimd $p |- ( ph -> ( ps -> A. x ch ) ) $=
-      ( wal alimd syl5 ) BBDHACDHFABCDEGIJ $.
+      ( wal alimdh syl5 ) BBDHACDHFABCDEGIJ $.
   $}
 
   ${
@@ -9940,7 +9940,7 @@ $)
     $( Deduction form of bound-variable hypothesis builder ~ hbal .
        (Contributed by NM, 2-Jan-2002.) $)
     hbald $p |- ( ph -> ( A. y ps -> A. x A. y ps ) ) $=
-      ( wal alimd ax-7 syl6 ) ABDGZBCGZDGKCGABLDEFHBDCIJ $.
+      ( wal alimdh ax-7 syl6 ) ABDGZBCGZDGKCGABLDEFHBDCIJ $.
   $}
 
   $( Declare the existential quantifier symbol. $)
@@ -10360,6 +10360,15 @@ $)
   $}
 
   ${
+    alimd.1 $e |- F/ x ph $.
+    alimd.2 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Deduction from Theorem 19.20 of [Margaris] p. 90.  (Contributed by Mario
+       Carneiro, 24-Sep-2016.) $)
+    alimd $p |- ( ph -> ( A. x ps -> A. x ch ) ) $=
+      ( nfri alimdh ) ABCDADEGFH $.
+  $}
+
+  ${
     alrimi.1 $e |- F/ x ph $.
     alrimi.2 $e |- ( ph -> ps ) $.
     $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Contributed by Mario
@@ -10769,7 +10778,7 @@ $)
     $( Deduction form of bound-variable hypothesis builder ~ hbim .
        (Contributed by NM, 1-Jan-2002.)  (Revised by NM, 2-Feb-2015.) $)
     hbimd $p |- ( ph -> ( ( ps -> ch ) -> A. x ( ps -> ch ) ) ) $=
-      ( wi wal imim2d ax-4 imim1i ax-i5r syl syl6 imim1d alimd syld ) ABCHZBDIZ
+      ( wi wal imim2d ax-4 imim1i ax-i5r syl syl6 imim1d alimdh syld ) ABCHZBDIZ
       CHZDIZSDIASBCDIZHZUBACUCBGJUDTUCHUBTBUCBDKLBCDMNOAUASDEABTCFPQR $.
   $}
 
@@ -11704,7 +11713,7 @@ $)
        Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).
        (Contributed by NM, 24-Nov-1994.) $)
     dral1 $p |- ( A. x x = y -> ( A. x ph <-> A. y ps ) ) $=
-      ( weq wal hbae biimpd alimd ax10o syld biimprd wi alequcoms impbid ) CDFC
+      ( weq wal hbae biimpd alimdh ax10o syld biimprd wi alequcoms impbid ) CDFC
       GZACGZBDGZQRBCGSQABCCDCHQABEIJBCDKLQSADGZRQBADCDDHQABEMJTRNDCADCKOLP $.
   $}
 
@@ -12188,7 +12197,7 @@ $)
        shortened by Andrew Salmon, 25-May-2011.) $)
     sbiedh $p |- ( ph -> ( [ y / x ] ps <-> ch ) ) $=
       ( wsb wex weq wa sb1 wb wi bi1 syl6 imp3a syld wal eximdh 19.9hd bi2 com23
-      syl5 alimd sb2 impbid ) ABDEIZCAUICDJZCUIDEKZBLZDJAUJBDEMAULCDFAUKBCAUKBC
+      syl5 alimdh sb2 impbid ) ABDEIZCAUICDJZCUIDEKZBLZDJAUJBDEMAULCDFAUKBCAUKBC
       NZBCOHBCPQRUAUECADFGUBSACCDTZUIGAUNUKBOZDTUIACUODFAUKCBAUKUMCBOHBCUCQUDUF
       BDEUGQSUH $.
   $}
@@ -12418,7 +12427,7 @@ $)
        ~ ax-16 below so that theorems needing ~ ax-16 can be more easily
        identified.  (Contributed by NM, 8-Nov-2006.) $)
     ax16 $p |- ( A. x x = y -> ( ph -> A. x ph ) ) $=
-      ( vz weq wal wi aev ax-17 sbequ12 biimpcd alimd hbsb3 stdpc7 cbv3h syl6com
+      ( vz weq wal wi aev ax-17 sbequ12 biimpcd alimdh hbsb3 stdpc7 cbv3h syl6com
       wsb syl ) BCEBFBDEZDFZAABFZGBCDBDHATABDQZDFUAASUBDADIZSAUBABDJKLUBADBABDU
       CMUCADBNOPR $.
   $}
@@ -12854,7 +12863,7 @@ $)
        without one or more of these axioms in special cases.  (Contributed by
        NM, 20-May-2008.) $)
     ax16i $p |- ( A. x x = y -> ( ph -> A. x ph ) ) $=
-      ( weq wal wi ax-17 ax-8 cbv3h a4imv equid mpi syl syl5com alimd mpcom
+      ( weq wal wi ax-17 ax-8 cbv3h a4imv equid mpi syl syl5com alimdh mpcom
       alimi biimpcd biimprd syl6com ) CDHZCIZCEHZEIZAACIZJUFEDHZEIZUHUEUJCEUEEK
       ZUJCKCEDLMUKECHZEIZUHUEUKUNUJUEECECDLNUEUJUMEULUEDCHZUJUMUECCHUOCOCDCLPUJ
       DEHZUOUMJUJEEHZUPEOZEDELPDECLQRSTUMUGEUMUQUGURECELPZUAQQAUHBEIUIAUGBEAEKZ
@@ -13030,7 +13039,7 @@ $)
     $( Deduction from Theorem 19.20 of [Margaris] p. 90.  (Contributed by NM,
        3-Apr-1994.) $)
     alimdv $p |- ( ph -> ( A. x ps -> A. x ch ) ) $=
-      ( ax-17 alimd ) ABCDADFEG $.
+      ( ax-17 alimdh ) ABCDADFEG $.
 
     $( Deduction from Theorem 19.22 of [Margaris] p. 90.  (Contributed by NM,
        27-Apr-1994.) $)
