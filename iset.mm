@@ -10627,10 +10627,10 @@ $)
   $}
 
   ${
-    19.21.1 $e |- ( ph -> A. x ph ) $.
+    19.21h.1 $e |- ( ph -> A. x ph ) $.
     $( Theorem 19.21 of [Margaris] p. 90.  The hypothesis can be thought of
        as " ` x ` is not free in ` ph ` ."  (Contributed by NM, 5-Aug-1993.) $)
-    19.21 $p |- ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) $=
+    19.21h $p |- ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) $=
       ( wi wal alim syl5 hba1 hbim ax-4 imim2i alrimih impbii ) ABEZCFZABCFZEZAA
       CFPQDABCGHROCAQCDBCIJQBABCKLMN $.
   $}
@@ -10641,7 +10641,7 @@ $)
     $( Theorem 19.21 of [Margaris] p. 90 but with 2 quantifiers.  (Contributed
        by NM, 4-Feb-2005.) $)
     19.21-2 $p |- ( A. x A. y ( ph -> ps ) <-> ( ph -> A. x A. y ps ) ) $=
-      ( wi wal 19.21 albii bitri ) ABGDHZCHABDHZGZCHAMCHGLNCABDFIJAMCEIK $.
+      ( wi wal 19.21h albii bitri ) ABGDHZCHABDHZGZCHAMCHGLNCABDFIJAMCEIK $.
   $}
 
   ${
@@ -10655,7 +10655,7 @@ $)
        Mendelson's axiom system, even though it is slightly stronger than his
        Axiom 5.  (Contributed by NM, 22-Sep-1993.) $)
     stdpc5 $p |- ( A. x ( ph -> ps ) -> ( ph -> A. x ps ) ) $=
-      ( wi wal 19.21 biimpi ) ABECFABCFEABCDGH $.
+      ( wi wal 19.21h biimpi ) ABECFABCFEABCDGH $.
   $}
 
   ${
@@ -10739,7 +10739,7 @@ $)
     hbim1.2 $e |- ( ph -> ( ps -> A. x ps ) ) $.
     $( A closed form of ~ hbim .  (Contributed by NM, 5-Aug-1993.) $)
     hbim1 $p |- ( ( ph -> ps ) -> A. x ( ph -> ps ) ) $=
-      ( wi wal a2i 19.21 sylibr ) ABFZABCGZFKCGABLEHABCDIJ $.
+      ( wi wal a2i 19.21h sylibr ) ABFZABCGZFKCGABLEHABCDIJ $.
   $}
 
   ${
@@ -10825,6 +10825,15 @@ $)
   19.21t $p |- ( F/ x ph ->
                ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) ) $=
     ( wnf wal wi wb df-nf 19.21ht sylbi ) ACDAACEFCEABFCEABCEFGACHABCIJ $.
+
+  ${
+    19.21.1 $e |- F/ x ph $.
+    $( Theorem 19.21 of [Margaris] p. 90.  The hypothesis can be thought of
+       as " ` x ` is not free in ` ph ` ."  (Contributed by NM, 5-Aug-1993.)
+       (Revised by Mario Carneiro, 24-Sep-2016.) $)
+    19.21 $p |- ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) $=
+      ( wnf wi wal wb 19.21t ax-mp ) ACEABFCGABCGFHDABCIJ $.
+  $}
 
   ${
     nfimd.1 $e |- ( ph -> F/ x ps ) $.
@@ -11333,7 +11342,7 @@ $)
   $( An alternative definition of ~ df-nf .  (Contributed by Mario Carneiro,
      24-Sep-2016.) $)
   nf3 $p |- ( F/ x ph <-> A. x ( E. x ph -> ph ) ) $=
-    ( wnf wex wal wi nf2 nfe1 nfri 19.21 bitr4i ) ABCABDZABEFLAFBEABGLABLBABHIJ
+    ( wnf wex wal wi nf2 nfe1 nfri 19.21h bitr4i ) ABCABDZABEFLAFBEABGLABLBABHIJ
     K $.
 
   ${
@@ -12968,7 +12977,7 @@ $)
        for "not free in" which is less restrictive than "does not occur in."
        (Contributed by NM, 5-Aug-1993.) $)
     19.21v $p |- ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) $=
-      ( ax-17 19.21 ) ABCACDE $.
+      ( ax-17 19.21h ) ABCACDE $.
   $}
 
   ${
@@ -19860,7 +19869,7 @@ $)
     19.32.1 $e |- ( ph -> A. x ph ) $.
     $( Theorem 19.32 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
     19.32 $p |- ( A. x ( ph \/ ps ) <-> ( ph \/ A. x ps ) ) $=
-      ( wn wi wal wo hbn 19.21 df-or albii 3bitr4i ) AEZBFZCGNBCGZFABHZCGAPHNBC
+      ( wn wi wal wo hbn 19.21h df-or albii 3bitr4i ) AEZBFZCGNBCGZFABHZCGAPHNBC
       ACDIJQOCABKLAPKM $.
   $}
 
@@ -19940,7 +19949,7 @@ $)
        [TakeutiZaring] p. 26.  (Contributed by NM, 8-Jul-1994.) $)
     eu2 $p |- ( E! x ph <->
     ( E. x ph /\ A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) ) $=
-      ( weu wex wsb wa weq wi wal euex eumo0 mo sylib 19.29r impexp albii 19.21
+      ( weu wex wsb wa weq wi wal euex eumo0 mo sylib 19.29r impexp albii 19.21h
       jca bitri anbi2i abai bitr4i exbii eu1 sylibr impbii ) ABEZABFZAABCGZHBCI
       ZJZCKZBKZHZUIUJUOABLUIAULJBKCFUOABCDMABCDNOTUPAUKULJZCKZHZBFZUIUPAUNHZBFU
       TAUNBPVAUSBVAAAURJZHUSUNVBAUNAUQJZCKVBUMVCCAUKULQRAUQCDSUAUBAURUCUDUEOABC
@@ -20118,7 +20127,7 @@ $)
     $( Introduction of a conjunct into "at most one" quantifier.  (Contributed
        by NM, 3-Dec-2001.) $)
     moanim $p |- ( E* x ( ph /\ ps ) <-> ( ph -> E* x ps ) ) $=
-      ( vy wa weq wi wal wex impexp albii 19.21 bitri exbii ax-17 imbi2i 19.37v
+      ( vy wa weq wi wal wex impexp albii 19.21h bitri exbii ax-17 imbi2i 19.37v
       wmo mo2 bitr4i 3bitr4i ) ABFZCEGZHZCIZEJABUDHZCIZHZEJZUCCSABCSZHZUFUIEUFA
       UGHZCIUIUEUMCABUDKLAUGCDMNOUCCEUCEPTULAUHEJZHUJUKUNABCEBEPTQAUHERUAUB $.
 
@@ -20553,7 +20562,7 @@ $)
     $( Special case of ~ 19.12 where its converse holds.  (Contributed by NM,
        18-Jul-2001.)  (Revised by Andrew Salmon, 11-Jul-2011.) $)
     19.12vv $p |- ( E. x A. y ( ph -> ps ) <-> A. y E. x ( ph -> ps ) ) $=
-      ( wal wex 19.21v exbii ax-17 hbal 19.36 19.36v albii 19.21 bitr2i 3bitri
+      ( wal wex 19.21v exbii ax-17 hbal 19.36 19.36v albii 19.21h bitr2i 3bitri
       wi ) ABQZDEZCFABDEZQZCFACEZTQZRCFZDEZSUACABDGHATCBCDBCIJKUEUBBQZDEUCUDUFD
       ABCLMUBBDADCADIJNOP $.
   $}
