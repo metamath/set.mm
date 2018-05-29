@@ -9971,7 +9971,7 @@ $)
 
   $( Closed form of Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
      7-Nov-2005.)  (Revised by Mario Carneiro, 1-Feb-2015.) $)
-  19.23t $p |- ( A. x ( ps -> A. x ps ) ->
+  19.23ht $p |- ( A. x ( ps -> A. x ps ) ->
                ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) ) $=
     ( ax-ie2 ) ABCD $.
 
@@ -9980,7 +9980,7 @@ $)
     $( Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
        (Revised by Mario Carneiro, 1-Feb-2015.) $)
     19.23 $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
-      ( wal wi wex wb ax-gen 19.23t ax-mp ) BBCEFZCEABFCEACGBFHLCDIABCJK $.
+      ( wal wi wex wb ax-gen 19.23ht ax-mp ) BBCEFZCEABFCEACGBFHLCDIABCJK $.
   $}
 
   $( Theorem 19.7 of [Margaris] p. 89.  To read this intuitionistically, think
@@ -10922,7 +10922,7 @@ $)
        but with one slightly different hypothesis.  (Contributed by Jim
        Kingdon, 30-Dec-2017.) $)
     exlimd2 $p |- ( ph -> ( E. x ps -> ch ) ) $=
-      ( wal wi wex alrimih 19.23t biimpd sylc ) ACCDHIZDHZBCIZDHZBDJCI
+      ( wal wi wex alrimih 19.23ht biimpd sylc ) ACCDHIZDHZBCIZDHZBDJCI
       ZAODEFKAQDEGKPRSBCDLMN $.
   $}
 
@@ -11220,7 +11220,7 @@ $)
   $( A closed version of one direction of ~ 19.9 .  (Contributed by NM,
      5-Aug-1993.) $)
   19.9ht $p |- ( A. x ( ph -> A. x ph ) -> ( E. x ph -> ph ) ) $=
-    ( wal wi wex id ax-gen 19.23t mpbii ) AABCDBCAADZBCABEADJBAFGAABHI $.
+    ( wal wi wex id ax-gen 19.23ht mpbii ) AABCDBCAADZBCABEADJBAFGAABHI $.
 
   $( A closed version of ~ 19.9 .  (Contributed by NM, 5-Aug-1993.)  (Revised
      by Mario Carneiro, 24-Sep-2016.)  (Proof shortended by Wolf Lammen,
@@ -11387,6 +11387,12 @@ $)
   19.38 $p |- ( ( E. x ph -> A. x ps ) -> A. x ( ph -> ps ) ) $=
     ( wex wal wi hbe1 hba1 hbim 19.8a ax-4 imim12i alrimih ) ACDZBCEZFABFCNOCACG
     BCHIANOBACJBCKLM $.
+
+  $( Closed form of Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
+     7-Nov-2005.)  (Proof shortened by Wolf Lammen, 2-Jan-2018.) $)
+  19.23t $p |- ( F/ x ps -> ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) ) $=
+    ( wnf wi wal wex exim 19.9t biimpd syl9r nfr imim2d 19.38 syl6 impbid ) BCD
+    ZABECFZACGZBEZRSBCGZQBABCHQUABBCIJKQTSBCFZERQBUBSBCLMABCNOP $.
 
   ${
     19.44.1 $e |- ( ps -> A. x ps ) $.
