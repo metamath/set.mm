@@ -7953,6 +7953,14 @@ $)
   $}
 
   ${
+    3anassrs.1 $e |- ( ( ph /\ ( ps /\ ch /\ th ) ) -> ta ) $.
+    $( Associative law for conjunction applied to antecedent (eliminates
+       syllogism).  (Contributed by Mario Carneiro, 4-Jan-2017.) $)
+    3anassrs $p |- ( ( ( ( ph /\ ps ) /\ ch ) /\ th ) -> ta ) $=
+      ( 3exp2 imp41 ) ABCDEABCDEFGH $.
+  $}
+
+  ${
     3adant1l.1 $e |- ( ( ph /\ ps /\ ch ) -> th ) $.
     $( Deduction adding a conjunct to antecedent.  (Contributed by NM,
        8-Jan-2006.) $)
