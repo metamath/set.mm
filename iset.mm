@@ -17568,22 +17568,6 @@ $)
     ( wn wral cv wcel wi wal wrex df-ral wa wex alinexa df-rex xchbinxr bitri )
     ADZBCEBFCGZRHBIZABCJZDRBCKTSALBMUASABNABCOPQ $.
 
-  $( Relationship between restricted universal and existential quantifiers.
-     (Contributed by NM, 21-Jan-1997.) $)
-  rexnal $p |- ( E. x e. A -. ph <-> -. A. x e. A ph ) $=
-    ( wn wrex cv wcel wa wex wral df-rex wi wal exanali df-ral xchbinxr bitri )
-    ADZBCEBFCGZRHBIZABCJZDRBCKTSALBMUASABNABCOPQ $.
-
-  $( Relationship between restricted universal and existential quantifiers.
-     (Contributed by NM, 21-Jan-1997.) $)
-  dfral2 $p |- ( A. x e. A ph <-> -. E. x e. A -. ph ) $=
-    ( wn wrex wral rexnal con2bii ) ADBCEABCFABCGH $.
-
-  $( Relationship between restricted universal and existential quantifiers.
-     (Contributed by NM, 21-Jan-1997.) $)
-  dfrex2 $p |- ( E. x e. A ph <-> -. A. x e. A -. ph ) $=
-    ( wn wral wrex ralnex con2bii ) ADBCEABCFABCGH $.
-
   ${
     ralbida.1 $e |- F/ x ph $.
     ralbida.2 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
