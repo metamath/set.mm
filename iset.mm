@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-May-2018
+$( iset.mm - Version of 29-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -17863,6 +17863,19 @@ $)
      18-Oct-1996.)  (Revised by Mario Carneiro, 7-Oct-2016.) $)
   nfra1 $p |- F/ x A. x e. A ph $=
     ( wral cv wcel wi wal df-ral nfa1 nfxfr ) ABCDBECFAGZBHBABCILBJK $.
+
+  ${
+    $d x y $.
+    nfraldxy.2 $e |- F/ y ph $.
+    nfraldxy.3 $e |- ( ph -> F/_ x A ) $.
+    nfraldxy.4 $e |- ( ph -> F/ x ps ) $.
+    $( Not-free for restricted universal quantification where ` x ` and ` y `
+       are distinct.  (Contributed by Jim Kingdon, 29-May-2018.) $)
+    nfraldxy $p |- ( ph -> F/ x A. y e. A ps ) $=
+      ( wral cv wcel wal df-ral wnfc nfcv
+      wi a1i nfeld nfimd nfald nfxfrd ) BDEIDJZEKZBPZDLACBDEMAUDCDFAUCB
+      CACUBECUBNACUBOQGRHSTUA $.
+  $}
 
   ${
     nfrald.2 $e |- F/ y ph $.
