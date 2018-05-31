@@ -17913,13 +17913,21 @@ $)
   $}
 
   ${
-    nfral.1 $e |- F/_ x A $.
-    nfral.2 $e |- F/ x ph $.
-    $( Bound-variable hypothesis builder for restricted quantification.
-       (Contributed by NM, 1-Sep-1999.)  (Revised by Mario Carneiro,
-       7-Oct-2016.) $)
-    nfral $p |- F/ x A. y e. A ph $=
-      ( wral wnf wtru nftru wnfc a1i nfrald trud ) ACDGBHIABCDCJBDKIELABHIFLMN
+    $d x y $.
+    nfralxy.1 $e |- F/_ x A $.
+    nfralxy.2 $e |- F/ x ph $.
+    $( Not-free for restricted universal quantification where ` x ` and ` y `
+       are distinct.  See ~ nfralya for a version with ` y ` and ` A ` distinct
+       instead.  (Contributed by Jim Kingdon, 30-May-2018.) $)
+    nfralxy $p |- F/ x A. y e. A ph $=
+      ( wral wnf wtru nftru wnfc a1i nfraldxy trud ) ACDGBHIABCDCJBDKIELABHIFLMN
+      $.
+
+    $( Not-free for restricted existential quantification where ` x ` and ` y `
+       are distinct.  See ~ nfrexya for a version with ` y ` and ` A ` distinct
+       instead.  (Contributed by Jim Kingdon, 30-May-2018.) $)
+    nfrexxy $p |- F/ x E. y e. A ph $=
+      ( wrex wnf wtru nftru wnfc a1i nfrexdxy trud ) ACDGBHIABCDCJBDKIELABHIFLMN
       $.
   $}
 
@@ -17931,17 +17939,6 @@ $)
        31-Dec-2011.) $)
     nfra2 $p |- F/ y A. x e. A A. y e. B ph $=
       ( wral nfcv nfra1 nfral ) ACEFCBDCDGACEHI $.
-  $}
-
-  ${
-    nfrex.1 $e |- F/_ x A $.
-    nfrex.2 $e |- F/ x ph $.
-    $( Bound-variable hypothesis builder for restricted quantification.
-       (Contributed by NM, 1-Sep-1999.)  (Revised by Mario Carneiro,
-       7-Oct-2016.) $)
-    nfrex $p |- F/ x E. y e. A ph $=
-      ( wrex wn wral dfrex2 nfn nfral nfxfr ) ACDGAHZCDIZHBACDJOBNBCDEABFKLKM
-      $.
   $}
 
   $( ` x ` is not free in ` E. x e. A ph ` .  (Contributed by NM,
