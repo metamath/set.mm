@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-May-2018
+$( iset.mm - Version of 30-May-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -17870,29 +17870,46 @@ $)
     nfraldxy.3 $e |- ( ph -> F/_ x A ) $.
     nfraldxy.4 $e |- ( ph -> F/ x ps ) $.
     $( Not-free for restricted universal quantification where ` x ` and ` y `
-       are distinct.  (Contributed by Jim Kingdon, 29-May-2018.) $)
+       are distinct.  See ~ nfraldya for a version with ` y ` and ` A `
+       distinct instead.  (Contributed by Jim Kingdon, 29-May-2018.) $)
     nfraldxy $p |- ( ph -> F/ x A. y e. A ps ) $=
       ( wral cv wcel wal df-ral wnfc nfcv
       wi a1i nfeld nfimd nfald nfxfrd ) BDEIDJZEKZBPZDLACBDEMAUDCDFAUCB
       CACUBECUBNACUBOQGRHSTUA $.
+
+    $( Not-free for restricted existential quantification where ` x ` and ` y `
+       are distinct.  See ~ nfrexdya for a version with ` y ` and ` A `
+       distinct instead.  (Contributed by Jim Kingdon, 30-May-2018.) $)
+    nfrexdxy $p |- ( ph -> F/ x E. y e. A ps ) $=
+      ( wrex cv wcel wa wex df-rex wnfc nfcv a1i nfeld nfand nfexd
+      nfxfrd ) BDEIDJZEKZBLZDMACBDENAUDCDFAUCBCACUBECUBOACUBPQGRHSTUA
+      $.
   $}
 
   ${
-    nfrald.2 $e |- F/ y ph $.
-    nfrald.3 $e |- ( ph -> F/_ x A ) $.
-    nfrald.4 $e |- ( ph -> F/ x ps ) $.
-    $( Deduction version of ~ nfral .  (Contributed by NM, 15-Feb-2013.)
-       (Revised by Mario Carneiro, 7-Oct-2016.) $)
-    nfrald $p |- ( ph -> F/ x A. y e. A ps ) $=
-      ( wral cv wcel wi wal df-ral weq wn wa wnfc nfcvf adantr adantl nfeld wnf
-      nfimd nfald2 nfxfrd ) BDEIDJZEKZBLZDMACBDENAUICDFACDOCMPZQZUHBCUKCUGEUJCU
-      GRACDSUAACERUJGTUBABCUCUJHTUDUEUF $.
+    $d y A $.  $d x z $.  $d y z $.  $d A z $.  $d ph z $.  $d ps z $.
+    nfraldya.2 $e |- F/ y ph $.
+    nfraldya.3 $e |- ( ph -> F/_ x A ) $.
+    nfraldya.4 $e |- ( ph -> F/ x ps ) $.
+    $( Not-free for restricted universal quantification where ` y ` and ` A `
+       are distinct.  See ~ nfraldxy for a version with ` x ` and ` y `
+       distinct instead.  (Contributed by Jim Kingdon, 30-May-2018.) $)
+    nfraldya $p |- ( ph -> F/ x A. y e. A ps ) $=
+      ( vz wral cv wcel wi wal df-ral wsbc wnf nfv nfsbd bitri imbi1i
+      nfraldxy sb8 sbim clelsb3 albii bitr4i nfbii sylibr nfxfrd ) BDE
+      JDKELZBMZDNZACBDEOABDIKZPZIEJZCQUMCQAUOCIEAIRGABDICFHSUBUMUPCUM
+      ULDUNPZINZUPULDIULIRUCURUNELZUOMZINUPUQUTIUQUKDUNPZUOMUTUKBDIUD
+      VAUSUOIDEUEUATUFUOIEOUGTUHUIUJ $.
 
-    $( Deduction version of ~ nfrex .  (Contributed by Mario Carneiro,
-       14-Oct-2016.) $)
-    nfrexd $p |- ( ph -> F/ x E. y e. A ps ) $=
-      ( wrex wn wral dfrex2 nfnd nfrald nfxfrd ) BDEIBJZDEKZJACBDELAQCAPCDEFGAB
-      CHMNMO $.
+    $( Not-free for restricted existential quantification where ` y ` and ` A `
+       are distinct.  See ~ nfrexdxy for a version with ` x ` and ` y `
+       distinct instead.  (Contributed by Jim Kingdon, 30-May-2018.) $)
+    nfrexdya $p |- ( ph -> F/ x E. y e. A ps ) $=
+      ( vz wrex cv wcel wa wex df-rex wsbc wnf nfv nfsbd bitri nfrexdxy
+      sb8e sban clelsb3 anbi1i exbii bitr4i nfbii sylibr nfxfrd ) BDEJD
+      KELZBMZDNZACBDEOABDIKZPZIEJZCQUMCQAUOCIEAIRGABDICFHSUAUMUPCUMULDU
+      NPZINZUPULDIULIRUBURUNELZUOMZINUPUQUTIUQUKDUNPZUOMUTUKBDIUCVAUSUO
+      IDEUDUETUFUOIEOUGTUHUIUJ $.
   $}
 
   ${
