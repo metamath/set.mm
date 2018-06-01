@@ -18901,22 +18901,6 @@ $)
   $}
 
   ${
-    $d y z A $.  $d x z A $.
-    $( Commutation of restricted quantifiers.  Note that ` x ` and ` y `
-       needn't be distinct (this makes the proof longer).  (Contributed by NM,
-       24-Nov-1994.)  (Proof shortened by Mario Carneiro, 17-Oct-2016.) $)
-    ralcom2 $p |- ( A. x e. A A. y e. A ph -> A. y e. A A. x e. A ph ) $=
-      ( weq wral wi cv wcel wb eleq1 dral1 df-ral 3bitr4g wa nfnae nfan ralrimi
-      wal ex sps imbi1d bicomd imbi12d biimpd wn nfra2 nfra1 nfcvf adantr nfcvd
-      wnfc nfeld nfan1 rsp2 ancomsd expdimp adantll pm2.61i ) BCEZBSZACDFZBDFZA
-      BDFZCDFZGVAVCVEVABHZDIZVBGZBSCHZDIZVDGZCSVCVEVHVKBCVAVGVJVBVDUTVGVJJBVFVI
-      DKUAZVAVJAGZCSZVGAGZBSZVBVDVAVPVNVOVMBCVAVGVJAVLUBLUCACDMABDMNUDLVBBDMVDC
-      DMNUEVAUFZVCVEVQVCOZVDCDVQVCCBCCPABCDDUGQVRVJVDVRVJOABDVRVJBVQVCBBCBPVBBD
-      UHQVRBVIDVQBVIULVCBCUIUJVRBDUKUMUNVCVJVOVQVCVJVGAVCVGVJAABCDDUOUPUQURRTRT
-      US $.
-  $}
-
-  ${
     $( A commutative law for restricted quantifiers that swaps the domain of
        the restriction.  (Contributed by NM, 22-Feb-2004.) $)
     ralcom3 $p |- ( A. x e. A ( x e. B -> ph ) <->
