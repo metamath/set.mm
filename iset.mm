@@ -17931,16 +17931,6 @@ $)
       $.
   $}
 
-  ${
-    $d A y $.
-    $( Similar to Lemma 24 of [Monk2] p. 114, except the quantification of the
-       antecedent is restricted.  Derived automatically from ~ hbra2VD .
-       Contributed by Alan Sare 31-Dec-2011.  (Contributed by NM,
-       31-Dec-2011.) $)
-    nfra2 $p |- F/ y A. x e. A A. y e. B ph $=
-      ( wral nfcv nfra1 nfral ) ACEFCBDCDGACEHI $.
-  $}
-
   $( ` x ` is not free in ` E. x e. A ph ` .  (Contributed by NM,
      19-Mar-1997.)  (Revised by Mario Carneiro, 7-Oct-2016.) $)
   nfre1 $p |- F/ x E. x e. A ph $=
