@@ -17821,19 +17821,6 @@ $)
     ( wn wi wral wa wrex imnan ralbii ralnex bitri ) ABEFZCDGABHZEZCDGOCDIENPCD
     ABJKOCDLM $.
 
-  $( A transformation of restricted quantifiers and logical connectives.
-     (Contributed by NM, 4-Sep-2005.) $)
-  rexanali $p |- ( E. x e. A ( ph /\ -. ps ) <-> -. A. x e. A ( ph -> ps ) ) $=
-    ( wn wa wrex wi wral annim rexbii rexnal bitri ) ABEFZCDGABHZEZCDGOCDIENPCD
-    ABJKOCDLM $.
-
-  $( Negation of a complex predicate calculus formula.  (Contributed by FL,
-     31-Jul-2009.) $)
-  nrexralim $p |- ( -. E. x e. A A. y e. B ( ph -> ps )
-     <-> A. x e. A E. y e. B ( ph /\ -. ps ) ) $=
-    ( wn wa wrex wral wi rexanali ralbii ralnex bitr2i ) ABGHDFIZCEJABKDFJZGZCE
-    JQCEIGPRCEABDFLMQCENO $.
-
   ${
     $d x A $.  $d x B $.
     $( Two ways to say " ` A ` belongs to ` B ` ."  (Contributed by NM,
