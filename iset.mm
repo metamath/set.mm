@@ -17984,14 +17984,15 @@ $)
     $d y z A $.  $d x z $.
     rgen2a.1 $e |- ( ( x e. A /\ y e. A ) -> ph ) $.
     $( Generalization rule for restricted quantification.  Note that ` x ` and
-       ` y ` needn't be distinct (and illustrates the use of ~ dvelim ).
-       (Contributed by NM, 23-Nov-1994.)  (Proof shortened by Andrew Salmon,
-       25-May-2011.)  (Proof modification is discouraged. $)
+       ` y ` needn't be distinct (and illustrates the use of ~ dvelimor ).
+       (Contributed by NM, 23-Nov-1994.)  (Proof rewritten by Jim Kingdon,
+       1-Jun-2018.) $)
     rgen2a $p |- A. x e. A A. y e. A ph $=
-      ( vz wral cv wcel wi wal weq eleq1 ex syl6bi pm2.43d alimi a1d wn dvelimv
-      syl6 pm2.61i df-ral sylibr rgen ) ACDGZBDBHZDIZCHZDIZAJZCKZUFCBLZCKZUHULJ
-      UNULUHUMUKCUMUJAUMUJUHUKUIUGDMUHUJAENZOPQRUNSUHUHCKULFHZDIUHCBFUPUGDMTUHU
-      KCUOQUAUBACDUCUDUE $.
+      ( vz wral cv wcel wi wal wnf wo nfv eleq1 dvelimor syl6bi alimi
+      wceq ex pm2.43d a1d nfr syl6 jaoi ax-mp df-ral sylibr rgen ) AC
+      DGZBDBHZDIZCHZDIZAJZCKZUJUMUKSZCKZULCLZMULUPJZFHZDIZULCBFVBCNVA
+      UKDOPURUTUSURUPULUQUOCUQUNAUQUNULUOUMUKDOULUNAETZQUARUBUSULULCK
+      UPULCUCULUOCVCRUDUEUFACDUGUHUI $.
   $}
 
   ${
