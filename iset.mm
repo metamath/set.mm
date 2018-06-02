@@ -18331,8 +18331,10 @@ $)
      30-May-2011.) $)
   rexim $p |- ( A. x e. A ( ph -> ps ) ->
                ( E. x e. A ph -> E. x e. A ps ) ) $=
-    ( wi wral wn wrex con3 ral2imi con3d dfrex2 3imtr4g ) ABEZCDFZAGZCDFZGBGZCD
-    FZGACDHBCDHOSQNRPCDABIJKACDLBCDLM $.
+    ( wi wral cv wcel wa wex wrex wal df-ral ax-ia1 pm3.31 jcad alimi
+    a1i sylbi df-rex exim syl 3imtr4g ) ABEZCDFZCGDHZAIZCJZUFBIZCJZAC
+    DKBCDKUEUGUIEZCLZUHUJEUEUFUDEZCLULUDCDMUMUKCUMUGUFBUGUFEUMUFANRUF
+    ABOPQSUGUICUAUBACDTBCDTUC $.
 
   ${
     reximia.1 $e |- ( x e. A -> ( ph -> ps ) ) $.
