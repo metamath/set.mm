@@ -18414,7 +18414,7 @@ $)
        (Contributed by NM, 15-Oct-2003.)  (Proof shortened by Andrew Salmon,
        30-May-2011.) $)
     r19.12 $p |- ( E. x e. A A. y e. B ph -> A. y e. B E. x e. A ph ) $=
-      ( wral wrex nfcv nfra1 nfrex cv wcel ax-1 ralrimi rsp reximdv ralimia syl
+      ( wral wrex nfcv nfra1 nfrexxy cv wcel ax-1 ralrimi rsp reximdv ralimia syl
       com12 ) ACEFZBDGZUACEFABDGZCEFUAUACETCBDCDHACEIJUACKELZMNUAUBCEUCTABDTUCA
       ACEOSPQR $.
   $}
