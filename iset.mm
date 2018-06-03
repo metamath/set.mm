@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-May-2018
+$( iset.mm - Version of 2-Jun-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -10976,6 +10976,12 @@ $)
     2eximi $p |- ( E. x E. y ph -> E. x E. y ps ) $=
       ( wex eximi ) ADFBDFCABDEGG $.
   $}
+
+  $( Theorem 19.6 of [Margaris] p. 89, given a decidability condition.
+     (Contributed by Jim Kingdon, 2-Jun-2018.) $)
+  alexdc $p |- ( A. x DECID ph -> ( A. x ph <-> -. E. x -. ph ) ) $=
+    ( wdc wal wn wex nfa1 wb notnotdc sps albid alnex syl6bb ) ACZBDZ
+    ABDAEZEZBDPBFEOAQBNBGNAQHBAIJKPBLM $.
 
   $( A transformation of quantifiers and logical connectives.  (Contributed by
      NM, 19-Aug-1993.) $)
