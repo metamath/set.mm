@@ -10515,6 +10515,13 @@ $)
   $}
 
   ${
+    sps.1 $e |- ( ph -> ps ) $.
+    $( Generalization of antecedent.  (Contributed by NM, 5-Aug-1993.) $)
+    sps $p |- ( A. x ph -> ps ) $=
+      ( wal sp syl ) ACEABACFDG $.
+  $}
+
+  ${
     a4sd.1 $e |- ( ph -> ( ps -> ch ) ) $.
     $( Deduction generalizing antecedent.  (Contributed by NM, 17-Aug-1994.) $)
     a4sd $p |- ( ph -> ( A. x ps -> ch ) ) $=
