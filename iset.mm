@@ -18729,14 +18729,6 @@ $)
       GBUCCBCSUATTUB $.
   $}
 
-  $( Theorem 19.30 of [Margaris] p. 90 with restricted quantifiers.
-     (Contributed by Scott Fenton, 25-Feb-2011.) $)
-  r19.30 $p |- ( A. x e. A ( ph \/ ps ) ->
-                 ( A. x e. A ph \/ E. x e. A ps ) ) $=
-    ( wn wi wral wrex ralim orcom df-or bitri ralbii dfrex2 orbi2i imor 3bitr4i
-    wo 3imtr4i ) BEZAFZCDGTCDGZACDGZFZABRZCDGUCBCDHZRZTACDIUEUACDUEBARUAABJBAKL
-    MUCUBEZRUHUCRUGUDUCUHJUFUHUCBCDNOUBUCPQS $.
-
   ${
     $d x ph $.
     $( Theorem 19.32 of [Margaris] p. 90 with restricted quantifiers.
