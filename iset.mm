@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Jun-2018
+$( iset.mm - Version of 3-Jun-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -17922,6 +17922,25 @@ $)
     nfrexxy $p |- F/ x E. y e. A ph $=
       ( wrex wnf wtru nftru wnfc a1i nfrexdxy trud ) ACDGBHIABCDCJBDKIELABHIFLMN
       $.
+  $}
+
+  ${
+    $d y A $.
+    nfralya.1 $e |- F/_ x A $.
+    nfralya.2 $e |- F/ x ph $.
+    $( Not-free for restricted universal quantification where ` y ` and ` A `
+       are distinct.  See ~ nfralxy for a version with ` x ` and ` y ` distinct
+       instead.  (Contributed by Jim Kingdon, 3-Jun-2018.) $)
+    nfralya $p |- F/ x A. y e. A ph $=
+      ( wral wnf wtru nftru wnfc a1i nfraldya trud ) ACDGBHIABCDCJBDK
+      IELABHIFLMN $.
+
+    $( Not-free for restricted existential quantification where ` y ` and ` A `
+       are distinct.  See ~ nfrexxy for a version with ` x ` and ` y ` distinct
+       instead.  (Contributed by Jim Kingdon, 3-Jun-2018.) $)
+    nfrexya $p |- F/ x E. y e. A ph $=
+      ( wrex wnf wtru nftru wnfc a1i nfrexdya trud ) ACDGBHIABCDCJBDK
+      IELABHIFLMN $.
   $}
 
   $( ` x ` is not free in ` E. x e. A ph ` .  (Contributed by NM,
