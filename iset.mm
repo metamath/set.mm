@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Jun-2018
+$( iset.mm - Version of 4-Jun-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11407,6 +11407,17 @@ $)
   19.23t $p |- ( F/ x ps -> ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) ) $=
     ( wnf wi wal wex exim 19.9t biimpd syl9r nfr imim2d 19.38 syl6 impbid ) BCD
     ZABECFZACGZBEZRSBCGZQBABCHQUABBCIJKQTSBCFZERQBUBSBCLMABCNOP $.
+
+  ${
+    19.32dc.1 $e |- F/ x ph $.
+    $( Theorem 19.32 of [Margaris] p. 90, where ` ph ` is decidable.
+       (Contributed by Jim Kingdon, 4-Jun-2018.) $)
+    19.32dc $p |- ( DECID ph ->
+        ( A. x ( ph \/ ps ) <-> ( ph \/ A. x ps ) ) ) $=
+      ( wdc wn wi wal wo wb nfn 19.21 a1i nfdc dfordc 3bitr4d
+      albid ) AEZAFZBGZCHZSBCHZGZABIZCHAUBIUAUCJRSBCACDKLMRUDTCACDNABOQ
+      AUBOP $.
+  $}
 
   ${
     19.44.1 $e |- ( ps -> A. x ps ) $.
