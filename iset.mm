@@ -18838,11 +18838,12 @@ $)
   $}
 
   $( Restricted version of Theorem 19.43 of [Margaris] p. 90.  (Contributed by
-     NM, 27-May-1998.)  (Proof shortened by Andrew Salmon, 30-May-2011.) $)
+     NM, 27-May-1998.)  (Proof rewritten by Jim Kingdon, 5-Jun-2018.) $)
   r19.43 $p |- ( E. x e. A ( ph \/ ps ) <->
                ( E. x e. A ph \/ E. x e. A ps ) ) $=
-    ( wn wi wrex wral wo r19.35 df-or rexbii ralnex imbi1i bitr4i 3bitr4i ) AEZ
-    BFZCDGQCDHZBCDGZFZABIZCDGACDGZTIZQBCDJUBRCDABKLUDUCEZTFUAUCTKSUETACDMNOP $.
+    ( wo wrex cv wcel wa df-rex andi exbii bitri 19.43 orbi12i bitr4i
+    wex ) ABEZCDFZCGDHZAIZCQZTBIZCQZEZACDFZBCDFZESUAUCEZCQZUESTRIZCQU
+    IRCDJUJUHCTABKLMUAUCCNMUFUBUGUDACDJBCDJOP $.
 
   ${
     $d x ps $.
