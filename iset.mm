@@ -18761,11 +18761,12 @@ $)
 
   ${
     $d x ph $.
-    $( Theorem 19.32 of [Margaris] p. 90 with restricted quantifiers.
-       (Contributed by NM, 25-Nov-2003.) $)
-    r19.32v $p |- ( A. x e. A ( ph \/ ps ) <-> ( ph \/ A. x e. A ps ) ) $=
-      ( wn wi wral wo r19.21v df-or ralbii 3bitr4i ) AEZBFZCDGMBCDGZFABHZCDGAOH
-      MBCDIPNCDABJKAOJL $.
+    $( Theorem 19.32 of [Margaris] p. 90 with restricted quantifiers, where
+       ` ph ` is decidable.  (Contributed by Jim Kingdon, 4-Jun-2018.) $)
+    r19.32vdc $p |- ( DECID ph ->
+        ( A. x e. A ( ph \/ ps ) <-> ( ph \/ A. x e. A ps ) ) ) $=
+      ( wdc wn wi wral wo wb r19.21v a1i dfordc ralbidv 3bitr4d ) AEZAF
+      ZBGZCDHZQBCDHZGZABIZCDHATISUAJPQBCDKLPUBRCDABMNATMO $.
   $}
 
   $( Restricted quantifier version of Theorem 19.35 of [Margaris] p. 90.
