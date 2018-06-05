@@ -1,4 +1,4 @@
-$( iset.mm - Version of 4-Jun-2018
+$( iset.mm - Version of 5-Jun-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -18788,12 +18788,11 @@ $)
   ${
     r19.37.1 $e |- F/ x ph $.
     $( Restricted version of one direction of Theorem 19.37 of [Margaris]
-       p. 90.  (The other direction doesn't hold when ` A ` is empty.)
-       (Contributed by FL, 13-May-2012.)  (Revised by Mario Carneiro,
+       p. 90.  (Contributed by FL, 13-May-2012.)  (Revised by Mario Carneiro,
        11-Dec-2016.) $)
     r19.37 $p |- ( E. x e. A ( ph -> ps ) -> ( ph -> E. x e. A ps ) ) $=
-      ( wi wrex wral r19.35 cv wcel ax-1 ralrimi imim1i sylbi ) ABFCDGACDHZBCDG
-      ZFAQFABCDIAPQAACDEACJDKLMNO $.
+      ( wral wi wrex cv wcel ax-1 ralrimi r19.35-1 syl5 ) AACDFABGCDH
+      BCDHAACDEACIDJKLABCDMN $.
   $}
 
   ${
