@@ -18769,22 +18769,20 @@ $)
       ZBGZCDHZQBCDHZGZABIZCDHATISUAJPQBCDKLPUBRCDABMNATMO $.
   $}
 
-  $( Restricted quantifier version of Theorem 19.35 of [Margaris] p. 90.
-     (Contributed by NM, 20-Sep-2003.) $)
-  r19.35 $p |- ( E. x e. A ( ph -> ps ) <->
-               ( A. x e. A ph -> E. x e. A ps ) ) $=
-    ( wral wn wi wrex r19.26 annim ralbii df-an 3bitr3i con2bii dfrex2 3bitr4ri
-    wa imbi2i ) ACDEZBFZCDEZFZGZABGZFZCDEZFSBCDHZGUDCDHUFUCATQZCDESUAQUFUCFATCD
-    IUHUECDABJKSUALMNUGUBSBCDORUDCDOP $.
+  $( Restricted quantifier version of ~ 19.35-1 .  (Contributed by Jim Kingdon,
+     4-Jun-2018.) $)
+  r19.35-1 $p |- ( E. x e. A ( ph -> ps ) ->
+      ( A. x e. A ph -> E. x e. A ps ) ) $=
+    ( wral wi wrex wa r19.29 pm3.35 reximi syl expcom ) ACDEZABFZCDGZ
+    BCDGZNPHAOHZCDGQAOCDIRBCDABJKLM $.
 
   ${
     $d x ps $.
     $( One direction of a restricted quantifier version of Theorem 19.36 of
-       [Margaris] p. 90.  The other direction doesn't hold when ` A ` is
-       empty.  (Contributed by NM, 22-Oct-2003.) $)
+       [Margaris] p. 90.  (Contributed by NM, 22-Oct-2003.) $)
     r19.36av $p |- ( E. x e. A ( ph -> ps ) -> ( A. x e. A ph -> ps ) ) $=
-      ( wi wrex wral r19.35 cv wcel idd rexlimiv imim2i sylbi ) ABECDFACDGZBCDF
-      ZEOBEABCDHPBOBBCDCIDJBKLMN $.
+      ( wi wrex wral r19.35-1 cv wcel idd rexlimiv imim2i syl ) ABECD
+      FACDGZBCDFZEOBEABCDHPBOBBCDCIDJBKLMN $.
   $}
 
   ${
