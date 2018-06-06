@@ -1,4 +1,4 @@
-$( iset.mm - Version of 5-Jun-2018
+$( iset.mm - Version of 6-Jun-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -18972,17 +18972,24 @@ $)
     ( wrmo cv wcel wa wmo df-rmo nfmo1 nfxfr ) ABCDBECFAGZBHBABCILBJK $.
 
   ${
+    $d x y z $.  $d A z $.  $d ph z $.
+    nfreudxy.1 $e |- F/ y ph $.
+    nfreudxy.2 $e |- ( ph -> F/_ x A ) $.
+    nfreudxy.3 $e |- ( ph -> F/ x ps ) $.
+    $( Not-free deduction for restricted uniqueness.  This is a version where
+       ` x ` and ` y ` are distinct.  (Contributed by Jim Kingdon,
+       6-Jun-2018.) $)
+    nfreudxy $p |- ( ph -> F/ x E! y e. A ps ) $=
+      ( cv wcel wa weu wnf wreu wnfc nfcv a1i nfeld nfand nfeud nfbii
+      df-reu sylibr ) ADIZEJZBKZDLZCMBDENZCMAUFCDFAUEBCACUDECUDOACUDP
+      QGRHSTUHUGCBDEUBUAUC $.
+  $}
+
+  ${
     $d x z $.  $d y z $.  $d A z $.  $d ph z $.
     nfreud.1 $e |- F/ y ph $.
     nfreud.2 $e |- ( ph -> F/_ x A ) $.
     nfreud.3 $e |- ( ph -> F/ x ps ) $.
-    $( Deduction version of ~ nfreu .  (Contributed by NM, 15-Feb-2013.)
-       (Revised by Mario Carneiro, 8-Oct-2016.) $)
-    nfreud $p |- ( ph -> F/ x E! y e. A ps ) $=
-      ( wreu cv wcel wa weu df-reu weq wal wn wnfc nfcvf adantr nfeld wnf nfand
-      adantl nfeud2 nfxfrd ) BDEIDJZEKZBLZDMACBDENAUICDFACDOCPQZLZUHBCUKCUGEUJC
-      UGRACDSUDACERUJGTUAABCUBUJHTUCUEUF $.
-
     $( Deduction version of ~ nfrmo .  (Contributed by NM, 17-Jun-2017.) $)
     nfrmod $p |- ( ph -> F/ x E* y e. A ps ) $=
       ( wrmo cv wcel wa wmo df-rmo weq wal wn wnfc nfcvf adantr nfeld wnf nfand
@@ -18991,15 +18998,19 @@ $)
   $}
 
   ${
+    $d x y $.
+    nfreuxy.1 $e |- F/_ x A $.
+    nfreuxy.2 $e |- F/ x ph $.
+    $( Not-free for restricted uniqueness.  This is a version where ` x ` and
+       ` y ` are distinct.  (Contributed by Jim Kingdon, 6-Jun-2018.) $)
+    nfreuxy $p |- F/ x E! y e. A ph $=
+      ( wreu wnf wtru nftru wnfc a1i nfreudxy trud ) ACDGBHIABCDCJBDKIELABHIFLMN
+      $.
+  $}
+
+  ${
     nfreu.1 $e |- F/_ x A $.
     nfreu.2 $e |- F/ x ph $.
-    $( Bound-variable hypothesis builder for restricted uniqueness.
-       (Contributed by NM, 30-Oct-2010.)  (Revised by Mario Carneiro,
-       8-Oct-2016.) $)
-    nfreu $p |- F/ x E! y e. A ph $=
-      ( wreu wnf wtru nftru wnfc a1i nfreud trud ) ACDGBHIABCDCJBDKIELABHIFLMN
-      $.
-
     $( Bound-variable hypothesis builder for restricted uniqueness.
        (Contributed by NM, 16-Jun-2017.) $)
     nfrmo $p |- F/ x E* y e. A ph $=
