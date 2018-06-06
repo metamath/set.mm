@@ -18961,18 +18961,6 @@ $)
       $.
   $}
 
-  ${
-    $d ph y $.  $d ps x $.  $d A y $.  $d B x $.  $d x y $.
-    $( Distribute quantification over "or".  (Contributed by Jeff Madsen,
-       19-Jun-2010.) $)
-    2ralor $p |- ( A. x e. A A. y e. B ( ph \/ ps ) <->
-                  ( A. x e. A ph \/ A. y e. B ps ) ) $=
-      ( wo wral wn wrex wa rexnal anbi12i rexbii bitr3i reeanv 3bitr3ri 3bitr4i
-      ioran con4bii ) ABGZDFHZCEHZACEHZBDFHZGZAIZCEJZBIZDFJZKZUDIZUEIZKUCIZUFIU
-      HULUJUMACELBDFLMUGUIKZDFJZCEJUBIZCEJUKUNUPUQCEUPUAIZDFJUQURUODFABSNUADFLO
-      NUGUICDEFPUBCELQUDUESRT $.
-  $}
-
   $( ` x ` is not free in ` E! x e. A ph ` .  (Contributed by NM,
      19-Mar-1997.) $)
   nfreu1 $p |- F/ x E! x e. A ph $=
