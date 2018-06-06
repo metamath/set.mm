@@ -18986,18 +18986,6 @@ $)
   $}
 
   ${
-    $d x z $.  $d y z $.  $d A z $.  $d ph z $.
-    nfreud.1 $e |- F/ y ph $.
-    nfreud.2 $e |- ( ph -> F/_ x A ) $.
-    nfreud.3 $e |- ( ph -> F/ x ps ) $.
-    $( Deduction version of ~ nfrmo .  (Contributed by NM, 17-Jun-2017.) $)
-    nfrmod $p |- ( ph -> F/ x E* y e. A ps ) $=
-      ( wrmo cv wcel wa wmo df-rmo weq wal wn wnfc nfcvf adantr nfeld wnf nfand
-      adantl nfmod2 nfxfrd ) BDEIDJZEKZBLZDMACBDENAUICDFACDOCPQZLZUHBCUKCUGEUJC
-      UGRACDSUDACERUJGTUAABCUBUJHTUCUEUF $.
-  $}
-
-  ${
     $d x y $.
     nfreuxy.1 $e |- F/_ x A $.
     nfreuxy.2 $e |- F/ x ph $.
@@ -19006,17 +18994,6 @@ $)
     nfreuxy $p |- F/ x E! y e. A ph $=
       ( wreu wnf wtru nftru wnfc a1i nfreudxy trud ) ACDGBHIABCDCJBDKIELABHIFLMN
       $.
-  $}
-
-  ${
-    nfreu.1 $e |- F/_ x A $.
-    nfreu.2 $e |- F/ x ph $.
-    $( Bound-variable hypothesis builder for restricted uniqueness.
-       (Contributed by NM, 16-Jun-2017.) $)
-    nfrmo $p |- F/ x E* y e. A ph $=
-      ( wrmo cv wcel wa wmo df-rmo wnf wtru nftru weq wal wn nfcvf a1i adantl
-      wnfc nfeld nfand nfmod2 trud nfxfr ) ACDGCHZDIZAJZCKZBACDLUKBMNUJBCCOBCPB
-      QRZUJBMNULUIABULBUHDBCSBDUBULETUCABMULFTUDUAUEUFUG $.
   $}
 
   $( An "identity" law of concretion for restricted abstraction.  Special case
