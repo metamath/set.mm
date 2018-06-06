@@ -16498,9 +16498,9 @@ $)
     $( Define the not-free predicate for classes.  This is read " ` x ` is not
        free in ` A ` ".  Not-free means that the value of ` x ` cannot affect
        the value of ` A ` , e.g., any occurrence of ` x ` in ` A ` is
-       effectively bound by a "for all" or something that expands to one (such
-       as "there exists").  It is defined in terms of the not-free predicate
-       ~ df-nf for wffs; see that definition for more information.
+       effectively bound by a quantifier or something that expands to one (such
+       as "there exists at most one").  It is defined in terms of the not-free
+       predicate ~ df-nf for wffs; see that definition for more information.
        (Contributed by Mario Carneiro, 11-Aug-2016.) $)
     df-nfc $a |- ( F/_ x A <-> A. y F/ x y e. A ) $.
 
