@@ -5609,6 +5609,8 @@
 "eqresr" is used by "axpre-lttri".
 "eqresr" is used by "axrrecex".
 "eqresr" is used by "ltresr".
+"equidqe" is used by "ax4sp1".
+"equidqe" is used by "equidq".
 "erngbase-rN" is used by "erngdvlem1-rN".
 "erngbase-rN" is used by "erngdvlem2-rN".
 "erngbase-rN" is used by "erngdvlem3-rN".
@@ -13312,6 +13314,7 @@ New usage of "ax467to6" is discouraged (1 uses).
 New usage of "ax467to7" is discouraged (0 uses).
 New usage of "ax46to4" is discouraged (0 uses).
 New usage of "ax46to6" is discouraged (0 uses).
+New usage of "ax4sp1" is discouraged (0 uses).
 New usage of "ax5" is discouraged (0 uses).
 New usage of "ax6" is discouraged (3 uses).
 New usage of "ax67" is discouraged (2 uses).
@@ -14852,6 +14855,7 @@ New usage of "equid1" is discouraged (0 uses).
 New usage of "equid1ALT" is discouraged (0 uses).
 New usage of "equidOLD" is discouraged (0 uses).
 New usage of "equidq" is discouraged (0 uses).
+New usage of "equidqe" is discouraged (2 uses).
 New usage of "equncomVD" is discouraged (0 uses).
 New usage of "equncomiVD" is discouraged (0 uses).
 New usage of "equs4OLD" is discouraged (0 uses).
