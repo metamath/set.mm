@@ -4431,6 +4431,7 @@
 "df-recs" is used by "recseq".
 "df-recs" is used by "recsfval".
 "df-recs" is used by "tfrlem9".
+"df-recs" is used by "tfrALTlem".
 "df-rngo" is used by "isrngo".
 "df-rngo" is used by "relrngo".
 "df-rq" is used by "dmrecnq".
