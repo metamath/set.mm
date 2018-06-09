@@ -4430,8 +4430,8 @@
 "df-recs" is used by "nfrecs".
 "df-recs" is used by "recseq".
 "df-recs" is used by "recsfval".
-"df-recs" is used by "tfrlem9".
 "df-recs" is used by "tfrALTlem".
+"df-recs" is used by "tfrlem9".
 "df-rngo" is used by "isrngo".
 "df-rngo" is used by "relrngo".
 "df-rq" is used by "dmrecnq".
@@ -18165,9 +18165,9 @@ Proof modification of "tbwlem3" is discouraged (49 steps).
 Proof modification of "tbwlem4" is discouraged (91 steps).
 Proof modification of "tbwlem5" is discouraged (42 steps).
 Proof modification of "tbwsyl" is discouraged (20 steps).
-Proof modification of "tfr1ALT" is discouraged (74 steps).
-Proof modification of "tfr2ALT" is discouraged (108 steps).
-Proof modification of "tfr3ALT" is discouraged (190 steps).
+Proof modification of "tfr1ALT" is discouraged (19 steps).
+Proof modification of "tfr2ALT" is discouraged (53 steps).
+Proof modification of "tfr3ALT" is discouraged (84 steps).
 Proof modification of "toycom" is discouraged (142 steps).
 Proof modification of "tpid3gVD" is discouraged (116 steps).
 Proof modification of "tpsexOLD" is discouraged (47 steps).
