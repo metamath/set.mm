@@ -4430,7 +4430,6 @@
 "df-recs" is used by "nfrecs".
 "df-recs" is used by "recseq".
 "df-recs" is used by "recsfval".
-"df-recs" is used by "tfrALTlem".
 "df-recs" is used by "tfrlem9".
 "df-rngo" is used by "isrngo".
 "df-rngo" is used by "relrngo".
@@ -14361,7 +14360,7 @@ New usage of "df-plq" is discouraged (2 uses).
 New usage of "df-plr" is discouraged (2 uses).
 New usage of "df-pnf" is discouraged (3 uses).
 New usage of "df-r" is discouraged (6 uses).
-New usage of "df-recs" is discouraged (6 uses).
+New usage of "df-recs" is discouraged (5 uses).
 New usage of "df-rngo" is discouraged (2 uses).
 New usage of "df-rq" is discouraged (2 uses).
 New usage of "df-scon" is discouraged (1 uses).
