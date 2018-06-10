@@ -19037,19 +19037,6 @@ $)
   $}
 
   ${
-    $d x z $.  $d y z $.  $d z A $.
-    nfrab.1 $e |- F/ x ph $.
-    nfrab.2 $e |- F/_ x A $.
-    $( A variable not free in a wff remains so in a restricted class
-       abstraction.  (Contributed by NM, 13-Oct-2003.)  (Revised by Mario
-       Carneiro, 9-Oct-2016.) $)
-    nfrab $p |- F/_ x { y e. A | ph } $=
-      ( vz crab cv wcel wa cab df-rab wnfc wtru nftru weq wal wn wnf a1i adantl
-      nfcri eleq1 dvelimnf nfand nfabd2 trud nfcxfr ) BACDHCIZDJZAKZCLZACDMBUMN
-      OULBCCPBCQBRSZULBTOUNUKABGIZDJUKBCGBGDFUCUOUJDUDUEABTUNEUAUFUBUGUHUI $.
-  $}
-
-  ${
     reubida.1 $e |- F/ x ph $.
     reubida.2 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
     $( Formula-building rule for restricted existential quantifier (deduction
