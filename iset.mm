@@ -10829,6 +10829,16 @@ $)
     ( wal wi wnf alim alcom syl6ib alimi df-nf albii bitri 3imtr4i ) AABDZEZCDZ
     BDZACDZSBDZEZBDABFZCDZSBFQUABQSOCDTAOCGACBHIJUCPBDZCDRUBUDCABKLPCBHMSBKN $.
 
+  $( Lemma 24 of [Monk2] p. 114.  (Contributed by Mario Carneiro,
+     24-Sep-2016.) $)
+  nfa2 $p |- F/ x A. y A. x ph $=
+    ( wal nfa1 nfal ) ABDBCABEF $.
+
+  $( Lemma 23 of [Monk2] p. 114.  (Contributed by Mario Carneiro,
+     24-Sep-2016.) $)
+  nfia1 $p |- F/ x ( A. x ph -> A. x ps ) $=
+    ( wal nfa1 nfim ) ACDBCDCACEBCEF $.
+
   $( Closed form of Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
      27-May-1997.) $)
   19.21ht $p |- ( A. x ( ph -> A. x ph ) ->
@@ -11978,16 +11988,6 @@ $)
       HZCHZUIAUJCHZDHULAUMDADEKABCJUMFBCLMNUJDCOMUKUHCBUFDPQSUHUDCUGU
       CUBBDCRTQSUBCLUA $.
   $}
-
-  $( Lemma 24 of [Monk2] p. 114.  (Contributed by Mario Carneiro,
-     24-Sep-2016.) $)
-  nfa2 $p |- F/ x A. y A. x ph $=
-    ( wal nfa1 nfal ) ABDBCABEF $.
-
-  $( Lemma 23 of [Monk2] p. 114.  (Contributed by Mario Carneiro,
-     24-Sep-2016.) $)
-  nfia1 $p |- F/ x ( A. x ph -> A. x ps ) $=
-    ( wal nfa1 nfim ) ACDBCDCACEBCEF $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
