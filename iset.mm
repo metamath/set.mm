@@ -1,4 +1,4 @@
-$( iset.mm - Version of 6-Jun-2018
+$( iset.mm - Version of 10-Jun-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -19313,10 +19313,14 @@ $)
 
     $( Rule used to change bound variables, using implicit substitution.
        (Contributed by FL, 27-Apr-2008.)  (Revised by Mario Carneiro,
-       9-Oct-2016.) $)
+       9-Oct-2016.)  (Proof rewritten by Jim Kingdon, 10-Jun-2018.) $)
     cbvrexf $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
-      ( wn wral wrex nfn weq notbid cbvralf notbii dfrex2 3bitr4i ) AKZCELZKBKZ
-      DELZKACEMBDEMUBUDUAUCCDEFGADHNBCINCDOABJPQRACESBDEST $.
+      ( vz cv wcel wa wex wrex wsbc nfv nfcri nfan nfs1v wceq sbequ12
+      eleq1 anbi12d cbvex nfsb sbequ sbie syl6bb bitri df-rex 3bitr4i
+      ) CLZEMZANZCOZDLZEMZBNZDOZACEPBDEPUQKLZEMZACVBQZNZKOVAUPVECKUPK
+      RVCVDCCKEFSACKUATUNVBUBUOVCAVDUNVBEUDACKUCUEUFVEUTKDVCVDDDKEGSA
+      CKDHUGTUTKRVBURUBZVCUSVDBVBUREUDVFVDACURQBAKDCUHABCDIJUIUJUEUFU
+      KACEULBDEULUM $.
   $}
 
   ${
