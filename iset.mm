@@ -13454,20 +13454,27 @@ $)
 
   ${
     $d x ph $.  $d x ch $.
-    cbvald.1 $e |- ( ph -> A. y ph ) $.
-    cbvald.2 $e |- ( ph -> ( ps -> A. y ps ) ) $.
+    cbvald.1 $e |- F/ y ph $.
+    cbvald.2 $e |- ( ph -> F/ y ps ) $.
     cbvald.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
-    $( Deduction used to change bound variables, using implicit substitition,
+    $( Deduction used to change bound variables, using implicit substitution,
        particularly useful in conjunction with ~ dvelim .  (Contributed by NM,
-       2-Jan-2002.)  (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+       2-Jan-2002.)  (Revised by Mario Carneiro, 6-Oct-2016.)  (Revised by Wolf
+       Lammen, 13-May-2018.) $)
     cbvald $p |- ( ph -> ( A. x ps <-> A. y ch ) ) $=
-      ( wal wb ax-17 hbal a17d cbv2 3syl ) AAEIZPDIBDICEIJFADEADKLABCDEGACDMHNO
-      $.
+      ( nfv wnf a1i cbv2 ) ABCDEADIFGCDJACDIKHL $.
+  $}
+
+  ${
+    $d x ph $.  $d x ch $.
+    cbvexdh.1 $e |- ( ph -> A. y ph ) $.
+    cbvexdh.2 $e |- ( ph -> ( ps -> A. y ps ) ) $.
+    cbvexdh.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
 
     $( Deduction used to change bound variables, using implicit substitition,
        particularly useful in conjunction with ~ dvelim .  (Contributed by NM,
        2-Jan-2002.)  (Proof rewritten by Jim Kingdon, 30-Dec-2017.) $)
-    cbvexd $p |- ( ph -> ( E. x ps <-> E. y ch ) ) $=
+    cbvexdh $p |- ( ph -> ( E. x ps <-> E. y ch ) ) $=
       ( wex ax-17 cv wceq wa wb wi equsexd simpr eximi syl6bir wal
       hbex equcomi bicom1 imim12i syl exlimd eximdh 19.12 syl6 exlimd2
       a1i impbid ) ABDIZCEIZABUNDADJZCDECDJZUAABEKZDKZLZCMZEIUNACBEDF
