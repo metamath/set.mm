@@ -11858,45 +11858,78 @@ $)
   $}
 
   ${
-    cbv1.1 $e |- ( ph -> ( ps -> A. y ps ) ) $.
-    cbv1.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
-    cbv1.3 $e |- ( ph -> ( x = y -> ( ps -> ch ) ) ) $.
-    $( Rule used to change bound variables, using implicit substitition.
-       (Contributed by NM, 5-Aug-1993.) $)
-    cbv1 $p |- ( A. x A. y ph -> ( A. x ps -> A. y ch ) ) $=
-      ( wal wi sps al2imi ax-7 syl6 weq com23 syl6d ax9o a7s syld ) AEIZDIZBDIZ
-      UCEIZCEIZUBUCBEIZDIUDUABUFDABUFJEFKLBDEMNAUDUEJEDADIZUCCEUGUCDEOZCDIZJZDI
-      CABUJDABUHCUIAUHBCHPGQLCDERNLST $.
-  $}
-
-
-  ${
-    cbv2.1 $e |- ( ph -> ( ps -> A. y ps ) ) $.
-    cbv2.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
-    cbv2.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
-    $( Rule used to change bound variables, using implicit substitition.
-       (Contributed by NM, 5-Aug-1993.) $)
-    cbv2 $p |- ( A. x A. y ph -> ( A. x ps <-> A. y ch ) ) $=
-      ( wal weq wb wi bi1 syl6 cbv1 equcomi bi2 syl56 a7s impbid ) AEIDIBDIZCEI
-      ZABCDEFGADEJZBCKZBCLHBCMNOAUBUALEDACBEDGFEDJUCAUDCBLEDPHBCQROST $.
+    cbv3.1 $e |- F/ y ph $.
+    cbv3.2 $e |- F/ x ps $.
+    cbv3.3 $e |- ( x = y -> ( ph -> ps ) ) $.
+    $( Rule used to change bound variables, using implicit substitution, that
+       does not use ~ ax-12o .  (Contributed by NM, 5-Aug-1993.)  (Proof
+       shortened by Wolf Lammen, 12-May-2018.) $)
+    cbv3 $p |- ( A. x ph -> A. y ps ) $=
+      ( wal nfal spim alrimi ) ACHBDADCEIABCDFGJK $.
   $}
 
   ${
     cbv3h.1 $e |- ( ph -> A. y ph ) $.
     cbv3h.2 $e |- ( ps -> A. x ps ) $.
     cbv3h.3 $e |- ( x = y -> ( ph -> ps ) ) $.
-    $( Rule used to change bound variables, using implicit substitition, that
-       does not use ~ ax-12 .  (Contributed by NM, 5-Aug-1993.) $)
-    cbv3h $p |- ( A. x ph -> A. y ps ) $=
-      ( wi wal imim2i a1i weq cbv1 id ax-gen mpg ) AAHZDIACIBDIHCQABCDAADIAEJBB
-      CIHQFKCDLABHHQGKMQDANOP $.
-
-    $( Rule used to change bound variables, using implicit substitition.
+    $( Rule used to change bound variables, using implicit substitution.
        (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
-       25-May-2011.) $)
-    cbv3ALT $p |- ( A. x ph -> A. y ps ) $=
-      ( weq wal wi a1i cbv1 stdpc6 mpg ) DDHZDIACIBDIJCOABCDAADIJOEKBBCIJOFKCDH
-      ABJJOGKLDMN $.
+       25-May-2011.)  (Proof shortened by Wolf Lammen, 12-May-2018.) $)
+    cbv3h $p |- ( A. x ph -> A. y ps ) $=
+      ( nfi cbv3 ) ABCDADEHBCFHGI $.
+  $}
+
+  ${
+    cbv1.1 $e |- F/ x ph $.
+    cbv1.2 $e |- F/ y ph $.
+    cbv1.3 $e |- ( ph -> F/ y ps ) $.
+    cbv1.4 $e |- ( ph -> F/ x ch ) $.
+    cbv1.5 $e |- ( ph -> ( x = y -> ( ps -> ch ) ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       Revised to format hypotheses to common style.  (Contributed by NM,
+       5-Aug-1993.)  (Revised by Mario Carneiro, 3-Oct-2016.)  (Revised by Wolf
+       Lammen, 13-May-2018.) $)
+    cbv1 $p |- ( ph -> ( A. x ps -> A. y ch ) ) $=
+      ( wal wi nfim1 weq com12 a2d cbv3 19.21 3imtr3i pm2.86i ) ABDKZCEKZABLZDK
+      ACLZEKAUALAUBLUCUDDEABEGHMACDFIMDENZABCAUEBCLJOPQABDFRACEGRST $.
+  $}
+
+  ${
+    cbv1h.1 $e |- ( ph -> ( ps -> A. y ps ) ) $.
+    cbv1h.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
+    cbv1h.3 $e |- ( ph -> ( x = y -> ( ps -> ch ) ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen,
+       13-May-2018.) $)
+    cbv1h $p |- ( A. x A. y ph -> ( A. x ps -> A. y ch ) ) $=
+      ( wal nfa1 nfa2 wi sp sps syl nfd weq cbv1 ) AEIZDIZBCDESDJZAEDKZTBEUBTAB
+      BEILSADAEMNZFOPTCDUATACCDILUCGOPTADEQBCLLUCHOR $.
+  $}
+
+  ${
+    cbv2h.1 $e |- ( ph -> ( ps -> A. y ps ) ) $.
+    cbv2h.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
+    cbv2h.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 5-Aug-1993.) $)
+    cbv2h $p |- ( A. x A. y ph -> ( A. x ps <-> A. y ch ) ) $=
+      ( wal weq wb wi bi1 syl6 cbv1h equcomi bi2 syl56 a7s impbid ) AEIDIBDIZCE
+      IZABCDEFGADEJZBCKZBCLHBCMNOAUBUALEDACBEDGFEDJUCAUDCBLEDPHBCQROST $.
+  $}
+
+  ${
+    cbv2.1 $e |- F/ x ph $.
+    cbv2.2 $e |- F/ y ph $.
+    cbv2.3 $e |- ( ph -> F/ y ps ) $.
+    cbv2.4 $e |- ( ph -> F/ x ch ) $.
+    cbv2.5 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       Revised to align format of hypotheses to common style.  (Contributed by
+       NM, 5-Aug-1993.)  (Revised by Mario Carneiro, 3-Oct-2016.)  (Revised by
+       Wolf Lammen, 13-May-2018.) $)
+    cbv2 $p |- ( ph -> ( A. x ps <-> A. y ch ) ) $=
+      ( wal wb nfri nfal syl nfrd cbv2h ) AAEKZDKZBDKCEKLARSAEGMRDADEFNMOABCDEA
+      BEHPACDIPJQO $.
   $}
 
   ${
