@@ -4468,6 +4468,14 @@
 "df-vhc2" is used by "dfvd2an".
 "df-vhc3" is used by "dfvd3an".
 "df-vs" is used by "vsfval".
+"df-wrecs" is used by "nfwrecs".
+"df-wrecs" is used by "wfrlem11".
+"df-wrecs" is used by "wfrlem12".
+"df-wrecs" is used by "wfrlem16".
+"df-wrecs" is used by "wfrlem6".
+"df-wrecs" is used by "wfrlem7".
+"df-wrecs" is used by "wfrlem9".
+"df-wrecs" is used by "wrecseq123".
 "df0op2" is used by "hh0oi".
 "df0op2" is used by "ho01i".
 "df0op2" is used by "nmop0h".
@@ -14384,6 +14392,7 @@ New usage of "df-vd3" is discouraged (1 uses).
 New usage of "df-vhc2" is discouraged (1 uses).
 New usage of "df-vhc3" is discouraged (1 uses).
 New usage of "df-vs" is discouraged (1 uses).
+New usage of "df-wrecs" is discouraged (8 uses).
 New usage of "df0op2" is discouraged (3 uses).
 New usage of "dfadj2" is discouraged (7 uses).
 New usage of "dfbi1gb" is discouraged (0 uses).
