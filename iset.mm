@@ -11826,6 +11826,18 @@ $)
   $}
 
   ${
+    spim.1 $e |- F/ x ps $.
+    spim.2 $e |- ( x = y -> ( ph -> ps ) ) $.
+    $( Specialization, using implicit substitution.  Compare Lemma 14 of
+       [Tarski] p. 70.  The ~ spim series of theorems requires that only one
+       direction of the substitution hypothesis hold.  (Contributed by NM,
+       5-Aug-1993.)  (Revised by Mario Carneiro, 3-Oct-2016.)  (Proof rewritten
+       by Jim Kingdon, 10-Jun-2018.) $)
+    spim $p |- ( A. x ph -> ps ) $=
+      ( nfri a4im ) ABCDBCEGFH $.
+  $}
+
+  ${
     a4ime.1 $e |- ( ph -> A. x ph ) $.
     a4ime.2 $e |- ( x = y -> ( ph -> ps ) ) $.
     $( Existential introduction, using implicit substitition.  Compare Lemma 14
