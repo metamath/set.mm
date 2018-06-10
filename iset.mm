@@ -13484,6 +13484,22 @@ $)
   $}
 
   ${
+    $d ps y $.  $d ch x $.  $d ph x $.  $d ph y $.
+    cbvaldva.1 $e |- ( ( ph /\ x = y ) -> ( ps <-> ch ) ) $.
+    $( Rule used to change the bound variable in a universal quantifier with
+       implicit substitution.  Deduction form.  (Contributed by David Moews,
+       1-May-2017.) $)
+    cbvaldva $p |- ( ph -> ( A. x ps <-> A. y ch ) ) $=
+      ( nfv nfvd weq wb ex cbvald ) ABCDEAEGABEHADEIBCJFKL $.
+
+    $( Rule used to change the bound variable in an existential quantifier with
+       implicit substitution.  Deduction form.  (Contributed by David Moews,
+       1-May-2017.) $)
+    cbvexdva $p |- ( ph -> ( E. x ps <-> E. y ch ) ) $=
+      ( nfv nfvd weq wb ex cbvexd ) ABCDEAEGABEHADEIBCJFKL $.
+  $}
+
+  ${
     $v f $.
     $v g $.
     $( Define temporary individual variables. $)
