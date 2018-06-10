@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-May-2018
+$( iset.mm - Version of 2-Jun-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -10515,6 +10515,13 @@ $)
   $}
 
   ${
+    sps.1 $e |- ( ph -> ps ) $.
+    $( Generalization of antecedent.  (Contributed by NM, 5-Aug-1993.) $)
+    sps $p |- ( A. x ph -> ps ) $=
+      ( wal sp syl ) ACEABACFDG $.
+  $}
+
+  ${
     a4sd.1 $e |- ( ph -> ( ps -> ch ) ) $.
     $( Deduction generalizing antecedent.  (Contributed by NM, 17-Aug-1994.) $)
     a4sd $p |- ( ph -> ( A. x ps -> ch ) ) $=
@@ -10969,6 +10976,12 @@ $)
     2eximi $p |- ( E. x E. y ph -> E. x E. y ps ) $=
       ( wex eximi ) ADFBDFCABDEGG $.
   $}
+
+  $( Theorem 19.6 of [Margaris] p. 89, given a decidability condition.
+     (Contributed by Jim Kingdon, 2-Jun-2018.) $)
+  alexdc $p |- ( A. x DECID ph -> ( A. x ph <-> -. E. x -. ph ) ) $=
+    ( wdc wal wn wex nfa1 wb notnotdc sps albid alnex syl6bb ) ACZBDZ
+    ABDAEZEZBDPBFEOAQBNBGNAQHBAIJKPBLM $.
 
   $( A transformation of quantifiers and logical connectives.  (Contributed by
      NM, 19-Aug-1993.) $)
