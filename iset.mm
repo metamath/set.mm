@@ -13483,6 +13483,19 @@ $)
   $}
 
   ${
+    $d x ph $.  $d x ch $.
+    cbvexd.1 $e |- F/ y ph $.
+    cbvexd.2 $e |- ( ph -> F/ y ps ) $.
+    cbvexd.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
+    $( Deduction used to change bound variables, using implicit substitution,
+       particularly useful in conjunction with ~ dvelim .  (Contributed by NM,
+       2-Jan-2002.)  (Revised by Mario Carneiro, 6-Oct-2016.)  (Proof rewritten
+       by Jim Kingdon, 10-Jun-2018.) $)
+    cbvexd $p |- ( ph -> ( E. x ps <-> E. y ch ) ) $=
+      ( nfri nfrd cbvexdh ) ABCDEAEFIABEGJHK $.
+  $}
+
+  ${
     $d ps y $.  $d ch x $.  $d ph x $.  $d ph y $.
     cbvaldva.1 $e |- ( ( ph /\ x = y ) -> ( ps <-> ch ) ) $.
     $( Rule used to change the bound variable in a universal quantifier with
