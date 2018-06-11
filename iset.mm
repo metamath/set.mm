@@ -11861,9 +11861,9 @@ $)
     cbv3.1 $e |- F/ y ph $.
     cbv3.2 $e |- F/ x ps $.
     cbv3.3 $e |- ( x = y -> ( ph -> ps ) ) $.
-    $( Rule used to change bound variables, using implicit substitution, that
-       does not use ~ ax-12o .  (Contributed by NM, 5-Aug-1993.)  (Proof
-       shortened by Wolf Lammen, 12-May-2018.) $)
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen,
+       12-May-2018.) $)
     cbv3 $p |- ( A. x ph -> A. y ps ) $=
       ( wal nfal spim alrimi ) ACHBDADCEIABCDFGJK $.
   $}
@@ -13470,7 +13470,6 @@ $)
     cbvexdh.1 $e |- ( ph -> A. y ph ) $.
     cbvexdh.2 $e |- ( ph -> ( ps -> A. y ps ) ) $.
     cbvexdh.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
-
     $( Deduction used to change bound variables, using implicit substitition,
        particularly useful in conjunction with ~ dvelim .  (Contributed by NM,
        2-Jan-2002.)  (Proof rewritten by Jim Kingdon, 30-Dec-2017.) $)
