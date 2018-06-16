@@ -1076,6 +1076,8 @@ $s class FullFun $: <mi>&#x1D5A5;&#x1D5CE;&#x1D5C5;&#x1D5C5;&#x1D5A5;&#x1D5CE;&#
 $s class Restrict $: <mi>&#x1D5B1;&#x1D5BE;&#x1D5CC;&#x1D5CD;&#x1D5CB;&#x1D5C2;&#x1D5BC;&#x1D5CD;</mi> $.
 $s class Funpart F $: <mrow><mi>&#x1D5A5;&#x1D5CE;&#x1D5C7;&#x1D5AF;&#x1D5BA;&#x1D5CB;&#x1D5CD;</mi> #F#</mrow> $.
 $s class FullFun F $: <mrow><mi>&#x1D5A5;&#x1D5CE;&#x1D5C5;&#x1D5C5;&#x1D5A5;&#x1D5CE;&#x1D5C7;</mi> #F#</mrow> $.
+$s class UB A $: <mrow><mi>UB</mi> #A# </mrow> $.
+$s class LB A $: <mrow><mi>LB</mi> #A# </mrow> $.
 
 
 $s class _|_P $: <msub><mo>&perp;</mo> <mi>&#x1D443;</mi></msub> $. 
@@ -1166,6 +1168,8 @@ $s class 2WalksOt $: <mi>2WalksOt</mi> $.
 $s class 2WalksOnOt $: <mi>2WalksOnOt</mi> $.
 $s class 2SPathOnOt $: <mi>2SPathOnOt</mi> $.
 $s class 2SPathsOt $: <mi>2SPathsOt</mi> $.
+$s class CyclShift $: <mi>CyclShift</mi> $.
+$s class LastS $: <mi>LastS</mi> $.
 
 $( David A. Wheeler $)
 $s class >_ $: <mi> &ge; </mi> $.
@@ -1603,6 +1607,7 @@ $s class |^| A $: <mrow> <mo>&xcap;</mo> #A# </mrow> $.
 $s class U. A $: <mrow> <mo>&xcup;</mo> #A# </mrow> $.
 $s class recs ( F ) $: <mrow> <mi>recs</mi> <mo>&ApplyFunction;</mo> <mfenced>#F#</mfenced> </mrow> $. $( Removed stretchy="false" $)
 $s class rec ( F , O ) $: <mrow> <mi>rec</mi> <mo>&ApplyFunction;</mo> <mfenced> #F# #O# </mfenced> </mrow> $. $( Removed stretchy="false" $)
+$s class wrecs ( R , O , P ) $: <mrow> <mi>wrecs</mi> <mo>&ApplyFunction;</mo> <mfenced> #R# #O# #P# </mfenced> </mrow> $. $( Removed stretchy="false" $)
 $s class seq A ( .+ , F ) $: <mrow> <mo>seq</mo> #A# <mfenced> #.+# #F# </mfenced></mrow> $.
 $s class ( iota x ph ) $: <mfenced> <mrow><mo>&iota;</mo> #x# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
 $s class ( iota_ x e. A ph ) $: <mfenced> <mrow><mo>&iota;</mo> #x# <mo>&isin;</mo> #A# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
