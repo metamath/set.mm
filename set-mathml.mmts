@@ -1,0 +1,1761 @@
+$( Metamath-MathML Presentation Typesetting for set.mm, with MathJax rendering $)
+
+$( The idea behind Metamath "structural" typesetting is to use the formula as a
+   structure rather than a list of tokens. 
+   Therefore a correspondence is provided for a list of schemes, rather than 
+   for the tokens. A scheme consists in a metamath formula, possibly including 
+   variables (e.g. ` A ` ), and a translation text, where variables can occur
+   between # signs (e.g. #A# ).
+
+	 Unification is done top-down, and checks for the schemes in sequence.
+	 It stops as soon as a matching scheme is found, therefore specific schemes
+	 shall be listed first, and generic ones last.
+
+   This is used here for presentation MathML, but the same could be used for
+   any translation.
+
+	 In this version, 
+	 - by default brackets are present in class infix operations ( A F B ).
+	 - they are removed in cases where they can be omitted.
+   $)
+
+$( Terminal types - when diplaying tokens or in-comment math, only try those types $)
+$u wff class set $.
+
+$( No brackets and extra space for top level statements $)
+$s |- ( ph -> ps ) $: <mrow> <mo mathcolor=#CCC>&vdash;</mo> #ph# <mo linebreak=goodbreak lspace=1em rspace=1em>&rarr;</mo> #ps# </mrow> $.
+$s |- ( ph <-> ps ) $: <mrow> <mo mathcolor=#CCC>&vdash;</mo> #ph# <mo linebreak=goodbreak lspace=1em rspace=1em>&harr;</mo> #ps# </mrow> $.
+
+$( Representation for a provable statement - usually the top level statement to
+   be represented. $)
+$s |- ph $: <mrow><mo mathcolor=#CCC>&vdash;</mo> #ph# </mrow> $.
+
+$( WFF variables $)
+$i wff ph $: <mi mathcolor=#008> &phi; </mi> $.
+$i wff ps $: <mi mathcolor=#008> &psi; </mi> $.
+$i wff ch $: <mi mathcolor=#008> &chi; </mi> $.
+
+$i wff th $: <mi mathcolor=#008> &theta; </mi> $.
+$i wff ta $: <mi mathcolor=#008> &tau; </mi> $.
+$i wff et $: <mi mathcolor=#008> &eta; </mi> $.
+$i wff ze $: <mi mathcolor=#008> &zeta; </mi> $.
+$i wff si $: <mi mathcolor=#008> &sigma; </mi> $.
+$i wff rh $: <mi mathcolor=#008> &rho; </mi> $.
+$i wff mu $: <mi mathcolor=#008> &mu; </mi> $.
+$i wff la $: <mi mathcolor=#008> &lambda; </mi> $.
+$i wff ka $: <mi mathcolor=#008> &kappa; </mi> $.
+
+
+$( Set variables, first declared as class $)
+$i class a $: <mi mathcolor=#800>a</mi> $.
+$i class b $: <mi mathcolor=#800>b</mi> $.
+$i class c $: <mi mathcolor=#800>c</mi> $.
+$i class d $: <mi mathcolor=#800>d</mi> $.
+$i class e $: <mi mathcolor=#800>e</mi> $.
+$i class f $: <mi mathcolor=#800>f</mi> $.
+$i class g $: <mi mathcolor=#800>g</mi> $.
+$i class h $: <mi mathcolor=#800>h</mi> $.
+$i class i $: <mi mathcolor=#800>i</mi> $.
+$i class j $: <mi mathcolor=#800>j</mi> $.
+$i class k $: <mi mathcolor=#800>k</mi> $.
+$i class l $: <mi mathcolor=#800>l</mi> $.
+$i class m $: <mi mathcolor=#800>m</mi> $.
+$i class n $: <mi mathcolor=#800>n</mi> $.
+$i class o $: <mi mathcolor=#800>o</mi> $.
+$i class p $: <mi mathcolor=#800>p</mi> $.
+$i class q $: <mi mathcolor=#800>q</mi> $.
+$i class r $: <mi mathcolor=#800>r</mi> $.
+$i class s $: <mi mathcolor=#800>s</mi> $.
+$i class t $: <mi mathcolor=#800>t</mi> $.
+$i class u $: <mi mathcolor=#800>u</mi> $.
+$i class v $: <mi mathcolor=#800>v</mi> $.
+$i class w $: <mi mathcolor=#800>w</mi> $.
+$i class x $: <mi mathcolor=#800>x</mi> $.
+$i class y $: <mi mathcolor=#800>y</mi> $.
+$i class z $: <mi mathcolor=#800>z</mi> $.
+
+$( Set variables $)
+$i set a $: <mi mathcolor=#800>a</mi> $.
+$i set b $: <mi mathcolor=#800>b</mi> $.
+$i set c $: <mi mathcolor=#800>c</mi> $.
+$i set d $: <mi mathcolor=#800>d</mi> $.
+$i set e $: <mi mathcolor=#800>e</mi> $.
+$i set f $: <mi mathcolor=#800>f</mi> $.
+$i set g $: <mi mathcolor=#800>g</mi> $.
+$i set h $: <mi mathcolor=#800>h</mi> $.
+$i set i $: <mi mathcolor=#800>i</mi> $.
+$i set j $: <mi mathcolor=#800>j</mi> $.
+$i set k $: <mi mathcolor=#800>k</mi> $.
+$i set l $: <mi mathcolor=#800>l</mi> $.
+$i set m $: <mi mathcolor=#800>m</mi> $.
+$i set n $: <mi mathcolor=#800>n</mi> $.
+$i set o $: <mi mathcolor=#800>o</mi> $.
+$i set p $: <mi mathcolor=#800>p</mi> $.
+$i set q $: <mi mathcolor=#800>q</mi> $.
+$i set r $: <mi mathcolor=#800>r</mi> $.
+$i set s $: <mi mathcolor=#800>s</mi> $.
+$i set t $: <mi mathcolor=#800>t</mi> $.
+$i set u $: <mi mathcolor=#800>u</mi> $.
+$i set v $: <mi mathcolor=#800>v</mi> $.
+$i set w $: <mi mathcolor=#800>w</mi> $.
+$i set x $: <mi mathcolor=#800>x</mi> $.
+$i set y $: <mi mathcolor=#800>y</mi> $.
+$i set z $: <mi mathcolor=#800>z</mi> $.
+
+$( Class variables $)
+$i class A $: <mi mathcolor=#808>A</mi> $.
+$i class B $: <mi mathcolor=#808>B</mi> $.
+$i class C $: <mi mathcolor=#808>C</mi> $.
+$i class D $: <mi mathcolor=#808>D</mi> $.
+$i class E $: <mi mathcolor=#808>E</mi> $.
+$i class F $: <mi mathcolor=#808>F</mi> $.
+$i class G $: <mi mathcolor=#808>G</mi> $.
+$i class H $: <mi mathcolor=#808>H</mi> $.
+$i class I $: <mi mathcolor=#808>I</mi> $.
+$i class J $: <mi mathcolor=#808>J</mi> $.
+$i class K $: <mi mathcolor=#808>K</mi> $.
+$i class L $: <mi mathcolor=#808>L</mi> $.
+$i class M $: <mi mathcolor=#808>M</mi> $.
+$i class N $: <mi mathcolor=#808>N</mi> $.
+$i class O $: <mi mathcolor=#808>O</mi> $.
+$i class P $: <mi mathcolor=#808>P</mi> $.
+$i class Q $: <mi mathcolor=#808>Q</mi> $.
+$i class R $: <mi mathcolor=#808>R</mi> $.
+$i class S $: <mi mathcolor=#808>S</mi> $.
+$i class T $: <mi mathcolor=#808>T</mi> $.
+$i class U $: <mi mathcolor=#808>U</mi> $.
+$i class V $: <mi mathcolor=#808>V</mi> $.
+$i class W $: <mi mathcolor=#808>W</mi> $.
+$i class X $: <mi mathcolor=#808>X</mi> $.
+$i class Y $: <mi mathcolor=#808>Y</mi> $.
+$i class Z $: <mi mathcolor=#808>Z</mi> $.
+$i class ./\ $: <munder accentunder><mi mathcolor=#808>&and;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .\/ $: <munder accentunder><mi mathcolor=#808>&or;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .<_ $: <munder accentunder><mi mathcolor=#808>&le;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .< $: <munder accentunder><mi mathcolor=#808>&lt;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .+ $: <munder accentunder><mi mathcolor=#808>+</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .- $: <munder accentunder><mi mathcolor=#808>-</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .X. $: <munder accentunder><mi mathcolor=#808>&times;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class ./ $: <munder accentunder><mi mathcolor=#808>&times;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .^ $: <munder accentunder><mi mathcolor=#808>&times;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .0. $: <munder accentunder><mi mathcolor=#808>0</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .1. $: <munder accentunder><mi mathcolor=#808>1</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .|| $: <munder accentunder><mi mathcolor=#808>&#8741;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .~ $: <munder accentunder><mi mathcolor=#808>&#x223C;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class ._|_ $: <munder accentunder><mi mathcolor=#808>&#8869;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .+^ $: <munder accentunder><mi mathcolor=#808>&#x2A23;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .+b $: <munder accentunder><mi mathcolor=#808>&#x271A;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .(+) $: <munder accentunder><mi mathcolor=#808>&#x2295;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .* $: <munder accentunder><mi mathcolor=#808>&lowast;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .x. $: <munder accentunder><mi mathcolor=#808>&middot;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .xb $: <munder accentunder><mi mathcolor=#808>&#x2219;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class ., $: <munder accentunder><mi mathcolor=#808>,</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .(x) $: <munder accentunder><mi mathcolor=#808>&#x2297;</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+$i class .0b $: <munder accentunder><mi mathcolor=#808>&#x1D7CE</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
+
+$( Constants $)
+$s wff T. $: <mi>&#x22A4;</mi> $. $( There is actually an entity &true; $)
+$s wff F. $: <mi>&#x22A5;</mi> $. $( There is actually an entity &false; $)
+$s class _V $: <mi>V</mi> $.
+$s class (/) $: <mi>&empty;</mi> $. $( &empty; or &#x2205; looks like a zero, &#x00D8; looks like an O, &#x2300; is actually a diameter $)
+$s class Undef $: <mi>Undef</mi> $.
+$s class _E $: <mi>E</mi> $.
+$s class _I $: <mi>I</mi> $.
+$s class O(1) $: <mrow><mo>&#x1D442;</mo><mo>&ApplyFunction;</mo><mfenced><mn>1</mn></mfenced></mrow> $.
+$s class <_O(1) $: <mrow><mo>&le;</mo><mo>&#x1D442;</mo><mo>&ApplyFunction;</mo><mfenced><mn>1</mn></mfenced></mrow> $.
+$s class odZ $: <msub><mi>od</mi><mi>&#8484;</mi></msub> $.
+
+$( Ordinals $)
+$s class 1o $: <msub> <mn>1</mn> <mo>&#x1D45C;</mo> </msub> $.
+$s class 2o $: <msub> <mn>2</mn> <mo>&#x1D45C;</mo> </msub> $.
+$s class 3o $: <msub> <mn>3</mn> <mo>&#x1D45C;</mo> </msub> $.
+$s class 4o $: <msub> <mn>4</mn> <mo>&#x1D45C;</mo> </msub> $.
+
+$s class On $: <mi>On</mi> $.
+$s class om $: <mi>&omega;</mi> $.
+$s class aleph $: <mi>&aleph;</mi> $.
+$s class CNF $: <mi>CNF</mi> $.
+$s class TC $: <mi>TC</mi> $.
+$s class R1 $: <msub><mi>R</mi><mn>1</mn></msub> $.
+$s class rank $: <mi>rank</mi> $.
+$s class card $: <mi>card</mi> $.
+$s class cf $: <mi>cf</mi> $.
+$s wff CHOICE $: <mi>CHOICE</mi> $.
+$s class Fin1a $: <msup><mi>Fin</mi><mn>Ia</mn></msup> $.
+$s class Fin2 $: <msup><mi>Fin</mi><mn>II</mn></msup> $.
+$s class Fin3 $: <msup><mi>Fin</mi><mn>III</mn></msup> $.
+$s class Fin4 $: <msup><mi>Fin</mi><mn>IV</mn></msup> $.
+$s class Fin5 $: <msup><mi>Fin</mi><mn>V</mn></msup> $.
+$s class Fin6 $: <msup><mi>Fin</mi><mn>VI</mn></msup> $.
+$s class Fin7 $: <msup><mi>Fin</mi><mn>VII</mn></msup> $.
+$s class GCH $: <mi>GCH</mi> $.
+$s class InaccW $: <msub><mi>Inacc</mi> <mo>&#x1D464;</mo></msub> $.
+$s class Inacc $: <mi>Inacc</mi> $.
+$s class WUni $: <mi>WUni</mi> $.
+$s class wUniCl $: <mi>wUniCl</mi> $.
+$s class Tarski $: <mi>Tarski</mi> $.
+$s class Univ $: <mi>Univ</mi> $.
+$s class tarskiMap $: <mi>tarskiMap</mi> $.
+
+$( Temporary constants used in the construction of ` CC ` $)
+$s class N. $: <mi>&#x1d475;</mi> $.
+$s class +N $: <msub> <mo>+</mo> <mo>&#x1d475;</mo> </msub> $.
+$s class .N $: <msub> <mo>&sdot;</mo> <mo>&#x1d475;</mo> </msub> $.
+$s class <N $: <msub> <mo>&lt;</mo> <mo>&#x1d475;</mo> </msub> $.
+$s class +pQ $: <msub> <mo>+</mo> <mi>&#x1d45d;&#x1d478;</mi> </msub> $.
+$s class .pQ $: <msub> <mo>&sdot;</mo> <mi>&#x1d45d;&#x1d478;</mi> </msub> $.
+$s class <pQ $: <msub> <mo>&lt;</mo> <mi>&#x1d45d;&#x1d478;</mi> </msub> $.
+$s class ~Q $: <msub> <mo>~</mo> <mi>&#x1d478;</mi> </msub> $.
+$s class Q. $: <mi>&#x1d478;</mi> </msub> $.
+$s class 1Q $: <msub> <mn>1</mn> <mi>&#x1d478;</mi> </msub> $.
+$s class /Q $: <msub> <mo>/</mo> <mi>&#x1d478;</mi> </msub> $.
+$s class +Q $: <msub> <mo>+</mo> <mi>&#x1d478;</mi> </msub> $.
+$s class .Q $: <msub> <mo>&sdot;</mo> <mi>&#x1d478;</mi> </msub> $.
+$s class *Q $: <msub> <mo>*</mo> <mi>&#x1d478;</mi> </msub> $.
+$s class <Q $: <msub> <mo>&lt;</mo> <mi>&#x1d478;</mi> </msub> $.
+$s class P. $: <mi>&#x1d477;</mi> </msub> $.
+$s class 1P $: <msub> <mn>1</mn> <mi>&#x1d477;</mi> </msub> $.
+$s class +P. $: <msub> <mo>+</mo> <mi>&#x1d477;</mi> </msub> $.
+$s class .P. $: <msub> <mo>&sdot;</mo> <mi>&#x1d477;</mi> </msub> $.
+$s class <P $: <msub> <mo>&lt;</mo> <mi>&#x1d477;</mi> </msub> $.
+$s class +pR $: <msub> <mo>+</mo> <mi>&#x1d45d;&#x1d479;</mi> </msub> $.
+$s class .pR $: <msub> <mo>&sdot;</mo> <mi>&#x1d45d;&#x1d479;</mi> </msub> $.
+$s class ~R $: <msub> <mo>~</mo> <mi>&#x1d479;</mi> </msub> $.
+$s class R. $: <mi>&#x1d479;</mi> $.
+$s class 0R $: <msub> <mn>0</mn> <mi>&#x1d479;</mi> </msub> $.
+$s class 1R $: <msub> <mn>1</mn> <mi>&#x1d479;</mi> </msub> $.
+$s class -1R $: <msub> <mn>-1</mn> <mi>&#x1d479;</mi> </msub> $.
+$s class +R $: <msub> <mo>+</mo> <mi>&#x1d479;</mi> </msub> $.
+$s class .R $: <msub> <mo>&sdot;</mo> <mi>&#x1d479;</mi> </msub> $.
+$s class <R $: <msub> <mo>&lt;</mo> <mi>&#x1d479;</mi> </msub> $.
+
+$( Strutures $)
+$s class Slot A $: <mrow><mi>Slot</mi> #A# </mrow> $.
+$s class |`s $: <msub><mo>&uharr;</mo> <mi>&#x1D460;</mi></msub> $.
+$s class +g $: <msub> <mo>+</mo> <mi>&#x1D454;</mi> </msub> $.
+$s class +f $: <msub> <mo>+</mo> <mi>&#x1D453;</mi> </msub> $.
+$s class 0g $: <msub> <mn>0</mn> <mi>&#x1D454;</mi> </msub> $.
+$s class -g $: <msub> <mo>-</mo> <mi>&#x1D454;</mi> </msub> $.
+$s class .g $: <msub> <mn>&sdot;</mn> <mi>&#x1D454;</mi> </msub> $.
+$s class .r $: <msub> <mo>&sdot;</mo> <mi>&#x1D45F;</mi> </msub> $.
+$s class *r $: <msub> <mo>&lowast;</mo> <mi>&#x1D45F;</mi> </msub> $.
+$s class .s $: <msub> <mo>&sdot;</mo> <mi>&#x1D460;</mi> </msub> $.
+$s class .i $: <msub> <mo>&sdot;</mo> <mi>&#x1D456;</mi> </msub> $.
+$s class |`t $: <msub><mo>&uharr;</mo> <mi>&#x1D461;</mi></msub> $.
+$s class Xt_ $: <msub><mo>&prod;</mo> <mi>&#x1D461;</mi></msub> $.
+$s class Xs_ $: <msub><mo>&#x2a09;</mo> <mi>&#x1D460;</mi></msub> $.
+$s class ^s $: <msub><mo>&uarr;</mo> <mi>&#x1D460;</mi></msub> $.
+$s class RR*s $: <msubsup><mo>&Ropf;</mo> <mi>&#x1D460;</mi> <mo>*</mo></msub> $.
+$s class "s $: <msub><mo>&ldquo;</mo> <mi>&#x1D460;</mi></msub> $.
+$s class /s $: <msub><mo>/</mo> <mi>&#x1D460;</mi></msub> $.
+$s class Xs. $: <msub><mo>&times;</mo> <mi>&#x1D460;</mi></msub> $.
+
+$s class *rf $: <msub> <mo>&lowast;</mo> <mi>&#x1D45F;&#x1D453;</mi> </msub> $.
+$s class *Ring $: <mi>*-Ring</mi> $.
+$s class .sf $: <msub> <mo>&sdot;</mo> <mi>&#x1D460;&#x1D453;</mi> </msub> $.
+$s class ~=m $: <msub> <mo>&#x2243;</mo> <mi>&#x1D45A;</mi> </msub> $.
+
+$s class *Met $: <mi>&infin;Met</mi> $.
+$s class *MetSp $: <mi>&infin;MetSp</mi> $.
+$s class Z/nZ $: <mi>&Zopf;/n&Zopf;</mi> $.
+$s class CCfld $:  <msub> <mi>&Copf;</mi> <mi>fld</mi> </msub>  $.
+
+
+$s class invg $: <msub><mo>inv</mo> <mo>g</mo></msub> $.
+$s class invr $: <msub><mo>inv</mo> <mi>r</mi></msub> $.
+$s class ~=g $: <msub><mo>&simeq;</mo> <mo>&#x1D454;</mo></msub> $.
+$s class oppG $: <msub><mo>opp</mo> <mo>&#x1D454;</mo></msub> $.
+$s class oppR $: <msub><mo>opp</mo> <mi>r</mi></msub> $.
+$s class proj1 $: <msub><mo>proj</mo> <mn>1</mn></msub> $.
+$s class ~QG $: <msub><mo>~</mo> <mi mathvariant="italic">QG</mi></msub> $.
+$s class ~FG $: <msub><mo>~</mo> <mi mathvariant="italic">FG</mi></msub> $.
+$s class varFMnd $: <msub><mo>var</mo> <mi mathvariant="italic">FMnd</mi></msub> $.
+$s class varFGrp $: <msub><mo>var</mo> <mi mathvariant="italic">FGrp</mi></msub> $.
+$s class 1r $: <msub><mn>1</mn> <mi>r</mi></msub> $.
+$s class ||r $: <msub><mo>&par;</mo> <mi>r</mi></msub> $.
+$s class /r $: <msub><mo>/</mo> <mi>r</mi></msub> $.
+
+$( Category Theory $)
+$s class Homf $: <msub><mi>Hom</mi> <mi>&#x1D453;</mi></msub> $.
+$s class comf $: <msub><mi>comp</mi> <mi>&#x1D453;</mi></msub> $.
+$s class C_cat $: <msub><mo>&sube;</mo> <mi>cat</mi></msub> $.
+$s class |`cat $: <msub><mo>&uharr;</mo> <mi>cat</mi></msub> $.
+$s class idFunc $: <msub><mo>id</mo> <mi>func</mi></msub> $.
+$s class o.func $: <msub><mo>&compfn;</mo> <mi>func</mi></msub> $.
+$s class |`f $: <msub><mo>&uharr;</mo> <mi>f</mi></msub> $.
+$s class domA $: <msub><mo>dom</mo> <mi>a</mi></msub> $.
+$s class codA $: <msub><mo>cod</mo> <mi>a</mi></msub> $.
+$s class HomA $: <msub><mo>Hom</mo> <mi>a</mi></msub> $.
+$s class IdA $: <msub><mo>Id</mo> <mi>a</mi></msub> $.
+$s class compA $: <msub><mo>comp</mo> <mi>a</mi></msub> $.
+$s class Xc. $: <msub><mo>&times;</mo> <mi>c</mi></msub> $.
+$s class 1stF $: <msub><msup><mo>1</mo> <mo>st</mo></msup> <mi>F</mi></msub> $.
+$s class 2ndF $: <msub><msup><mo>2</mo> <mo>nd</mo></msup> <mi>F</mi></msub> $.
+$s class pairF $: <msub><mo>&lang;,&rang;</mo> <mi>F</mi></msub> $.
+$s class evalF $: <msub><mo>eval</mo> <mi>F</mi></msub> $.
+$s class curryF $: <msub><mo>curry</mo> <mi>F</mi></msub> $.
+$s class uncurryF $: <msub><mo>uncurry</mo> <mi>F</mi></msub> $.
+$s class DiagFunc $: <msub><mo>&Delta;</mo> <mi>func</mi></msub> $.
+$s class HomF $: <msub><mo>Hom</mo> <mi>F</mi></msub> $.
+
+$s class 0. $: <mi>0.</mi> $.
+$s class 1. $: <mi>1.</mi> $.
+$s class Yon $: <mi>Yon</mi> $.
+
+$s class supw $: <msub><mo>sup</mo> <mo>w</mo></msub> $.
+$s class infw $: <msub><mo>inf</mo> <mo>w</mo></msub> $.
+$s class <bag $: <msub><mo>&lt;</mo> <mo>bag</mo></msub> $.
+$s class TopSpOLD $: <msub><mi>TopSp</mi> <mi>OLD</mi></msub> $.
+
+$( Analysis $)
+$s class pi $: <mi> &pi; </mi> $.
+$s class _e $: <mi> e </mi> $.
+$s class NN $: <mi> &Nopf; </mi> $.
+$s class ZZ $: <mi> &Zopf; </mi> $.
+$s class NN0 $: <msub> <mi> &Nopf; </mi><mn> 0 </mn></msub> $.
+$s class QQ $: <mi> &Qopf; </mi> $.
+$s class RR $: <mi> &Ropf; </mi> $.
+$s class RR* $: <msup> <mi> &Ropf; </mi><mo> * </mo></msup> $.
+$s class RR+ $: <msup> <mi> &Ropf; </mi><mo> + </mo></msup> $.
+$s class CC $: <mi> &Copf; </mi> $.
+$s class Z[i] $: <mrow> <mi>&Zopf;</mi> <mfenced open="[" close="]"><mi>i</mi></mfenced> </mrow> $.
+$s class L^1 $: <msup> <mi>&#x1D43F;</mi> <mn>1</mn> </msup> $.
+$s class _i $: <mi>i</mi> $. $( There is actually an entity &ImaginaryI; $)
+$s class Fin $: <mi>Fin</mi> $.
+$s class +oo $: <mi>+&infin;</mi> $.
+$s class -oo $: <mi>&minus;&infin;</mi> $.
+$s class 0p $: <msub> <mn>0</mn> <mo>&#x1d45d;</mo> </msub> $.
+$s class phi $: <mi>&phiv;</mi> $.
+$s class gamma $: <mi>&gamma;</mi> $.
+$s class log_G $: <mrow><mi>log</mi><mi> &Gamma; </mi></mrow> $.
+$s class zeta $: <mi> &zeta; </mi> $.
+$s class _G $: <mi> &Gamma; </mi> $.
+$s class 1/_G $: <mfrac><mn>1</mn> <mi>&Gamma;</mi></mfrac> $.
+
+$( Number-theoretical functions $)
+$s class ppi $: <munder><mo>&pi;</mo> <mo>&#x5F;</mo></munder> $. 
+$s class theta $: <mi>&theta;</mi> $.
+$s class Lam $: <mi>&Lambda;</mi> $.
+$s class psi $: <mi>&psi;</mi> $.
+$s class mmu $: <mi>&mu;</mi> $.
+$s class sigma $: <mi> &sigma; </mi> $.
+
+
+$s class 1stc $: <mrow> <msup><mo>1</mo> <mo>st</mo></msup> <mi>&#x1D714;</mi> </mrow> $. $( math italic omega $)
+$s class 2ndc $: <mrow> <msup><mo>2</mo> <mo>nd</mo></msup> <mi>&#x1D714;</mi> </mrow> $. $( math italic omega $)
+
+
+$( Constant classes with simple "mi" rules 
+   (this part has been generated from the althtmldef rules of set.mm) $)
+$s class On $: <mi>On</mi> $.
+$s class om $: <mi>&omega;</mi> $.
+$s class om $: <mi>&#x1D714;</mi> $.
+$s class Undef $: <mi>Undef</mi> $.
+$s class Fin $: <mi>Fin</mi> $.
+$s class fi $: <mi>fi</mi> $.
+$s class har $: <mi>har</mi> $.
+$s class CNF $: <mi> CNF </mi> $.
+$s class TC $: <mi>TC</mi> $.
+$s class rank $: <mi>rank</mi> $.
+$s class card $: <mi>card</mi> $.
+$s class aleph $: <mi>&#8501;</mi> $.
+$s class cf $: <mi>cf</mi> $.
+$s class Inacc $: <mi>Inacc</mi> $.
+$s class WUni $: <mi>WUni</mi> $.
+$s class wUniCl $: <mi>wUniCl</mi> $.
+$s class Tarski $: <mi>Tarski</mi> $.
+$s class Univ $: <mi>Univ</mi> $.
+$s class tarskiMap $: <mi>tarskiMap</mi> $.
+$s class CC $: <mi>&#8450;</mi> $.
+$s class RR $: <mi>&#8477;</mi> $.
+$s class _i $: <mi>i</mi> $.
+$s class NN $: <mi>&#8469;</mi> $.
+$s class ZZ $: <mi>&#8484;</mi> $.
+$s class QQ $: <mi>&#8474;</mi> $.
+$s class mod $: <mi> mod </mi> $.
+$s class concat $: <mi> concat </mi> $.
+$s class substr $: <mi> substr </mi> $.
+$s class splice $: <mi> splice </mi> $.
+$s class reverse $: <mi>reverse</mi> $.
+$s class shift $: <mi>shift</mi> $.
+$s class Re $: <mi>&real;</mi> $.
+$s class Im $: <mi>&image;</mi> $.
+$s class sqr $: <mi>&radic;</mi> $.
+$s class abs $: <mi>abs</mi> $.
+$s class limsup $: <mi>lim sup</mi> $.
+$s class exp $: <mi>exp</mi> $.
+$s class _e $: <mi>e</mi> $.
+$s class sin $: <mi>sin</mi> $.
+$s class cos $: <mi>cos</mi> $.
+$s class tan $: <mi>tan</mi> $.
+$s class pi $: <mi>&#x1D70B;</mi> $.
+$s class bits $: <mi>bits</mi> $.
+$s class sadd $: <mi>sadd</mi> $.
+$s class smul $: <mi>smul</mi> $.
+$s class gcd $: <mi>gcd</mi> $.
+$s class Prime $: <mi>&#8473;</mi> $.
+$s class numer $: <mi>numer</mi> $.
+$s class denom $: <mi>denom</mi> $.
+$s class phi $: <mi>&#981;</mi> $.
+$s class pCnt $: <mi>pCnt</mi> $.
+$s class AP $: <mi>AP</mi> $.
+$s class MonoAP $: <mi>MonoAP</mi> $.
+$s class PolyAP $: <mi>PolyAP</mi> $.
+$s class Ramsey $: <mi>Ramsey</mi> $.
+$s class Struct $: <mi>Struct</mi> $.
+$s class ndx $: <mi>ndx</mi> $.
+$s class sSet $: <mi>sSet</mi> $.
+$s class Base $: <mi>Base</mi> $.
+$s class Scalar $: <mi>Scalar</mi> $.
+$s class TopSet $: <mi>TopSet</mi> $.
+$s class le $: <mi>le</mi> $.
+$s class oc $: <mi>oc</mi> $.
+$s class dist $: <mi>dist</mi> $.
+$s class Hom $: <mi>Hom</mi> $.
+$s class comp $: <mi>comp</mi> $.
+$s class TopOpen $: <mi>TopOpen</mi> $.
+$s class topGen $: <mi>topGen</mi> $.
+$s class ordTop $: <mi>ordTop</mi> $.
+$s class qTop $: <mi> qTop </mi> $.
+$s class Moore $: <mi>Moore</mi> $.
+$s class mrCls $: <mi>mrCls</mi> $.
+$s class mrInd $: <mi>mrInd</mi> $.
+$s class ACS $: <mi>ACS</mi> $.
+$s class Cat $: <mi>Cat</mi> $.
+$s class Id $: <mi>Id</mi> $.
+$s class oppCat $: <mi>oppCat</mi> $.
+$s class Mono $: <mi>Mono</mi> $.
+$s class Epi $: <mi>Epi</mi> $.
+$s class Sect $: <mi>Sect</mi> $.
+$s class Inv $: <mi>Inv</mi> $.
+$s class Iso $: <mi>Iso</mi> $.
+$s class Subcat $: <mi>Subcat</mi> $.
+$s class Func $: <mi>Func</mi> $.
+$s class Full $: <mi>Full</mi> $.
+$s class Faith $: <mi>Faith</mi> $.
+$s class Nat $: <mi>Nat</mi> $.
+$s class FuncCat $: <mi>FuncCat</mi> $.
+$s class Arrow $: <mi>Arrow</mi> $.
+$s class SetCat $: <mi>SetCat</mi> $.
+$s class CatCat $: <mi>CatCat</mi> $.
+$s class Yon $: <mi>Yon</mi> $.
+$s class Preset $: <mi> Preset </mi> $.
+$s class Dirset $: <mi>Dirset</mi> $.
+$s class Poset $: <mi>Poset</mi> $.
+$s class lt $: <mi>lt</mi> $.
+$s class lub $: <mi>lub</mi> $.
+$s class glb $: <mi>glb</mi> $.
+$s class join $: <mi>join</mi> $.
+$s class meet $: <mi>meet</mi> $.
+$s class Toset $: <mi>Toset</mi> $.
+$s class Lat $: <mi>Lat</mi> $.
+$s class CLat $: <mi>CLat</mi> $.
+$s class ODual $: <mi>ODual</mi> $.
+$s class toInc $: <mi>toInc</mi> $.
+$s class DLat $: <mi>DLat</mi> $.
+$s class PosetRel $: <mi>PosetRel</mi> $.
+$s class TosetRel $: <mi> TosetRel </mi> $.
+$s class LatRel $: <mi>LatRel</mi> $.
+$s class DirRel $: <mi>DirRel</mi> $.
+$s class tail $: <mi>tail</mi> $.
+$s class Mnd $: <mi>Mnd</mi> $.
+$s class Grp $: <mi>Grp</mi> $.
+$s class MndHom $: <mi> MndHom </mi> $.
+$s class SubMnd $: <mi>SubMnd</mi> $.
+$s class freeMnd $: <mi>freeMnd</mi> $.
+$s class SubGrp $: <mi>SubGrp</mi> $.
+$s class NrmSGrp $: <mi>NrmSGrp</mi> $.
+$s class GrpHom $: <mi> GrpHom </mi> $.
+$s class GrpIso $: <mi> GrpIso </mi> $.
+$s class GrpAct $: <mi> GrpAct </mi> $.
+$s class SymGrp $: <mi>SymGrp</mi> $.
+$s class Cntz $: <mi>Cntz</mi> $.
+$s class Cntr $: <mi>Cntr</mi> $.
+$s class od $: <mi>od</mi> $.
+$s class gEx $: <mi>gEx</mi> $.
+$s class pGrp $: <mi> pGrp </mi> $.
+$s class pSyl $: <mi> pSyl </mi> $.
+$s class LSSum $: <mi>LSSum</mi> $.
+$s class freeGrp $: <mi>freeGrp</mi> $.
+$s class CMnd $: <mi>CMnd</mi> $.
+$s class Abel $: <mi>Abel</mi> $.
+$s class CycGrp $: <mi>CycGrp</mi> $.
+$s class DProd $: <mi> DProd </mi> $.
+$s class dProj $: <mi>dProj</mi> $.
+$s class mulGrp $: <mi>mulGrp</mi> $.
+$s class Ring $: <mi>Ring</mi> $.
+$s class CRing $: <mi>CRing</mi> $.
+$s class Unit $: <mi>Unit</mi> $.
+$s class Irred $: <mi>Irred</mi> $.
+$s class RingHom $: <mi> RingHom </mi> $.
+$s class RingIso $: <mi> RingIso </mi> $.
+$s class DivRing $: <mi>DivRing</mi> $.
+$s class Field $: <mi>Field</mi> $.
+$s class SubRing $: <mi>SubRing</mi> $.
+$s class RingSpan $: <mi>RingSpan</mi> $.
+$s class AbsVal $: <mi>AbsVal</mi> $.
+$s class LMod $: <mi>LMod</mi> $.
+$s class LSubSp $: <mi>LSubSp</mi> $.
+$s class LSpan $: <mi>LSpan</mi> $.
+$s class LMHom $: <mi> LMHom </mi> $.
+$s class LMIso $: <mi> LMIso </mi> $.
+$s class LBasis $: <mi>LBasis</mi> $.
+$s class LVec $: <mi>LVec</mi> $.
+$s class subringAlg $: <mi> subringAlg </mi> $.
+$s class ringLMod $: <mi>ringLMod</mi> $.
+$s class LIdeal $: <mi>LIdeal</mi> $.
+$s class RSpan $: <mi>RSpan</mi> $.
+$s class 2Ideal $: <mi>2Ideal</mi> $.
+$s class LPIdeal $: <mi>LPIdeal</mi> $.
+$s class LPIR $: <mi>LPIR</mi> $.
+$s class NzRing $: <mi>NzRing</mi> $.
+$s class RLReg $: <mi>RLReg</mi> $.
+$s class Domn $: <mi>Domn</mi> $.
+$s class IDomn $: <mi>IDomn</mi> $.
+$s class PID $: <mi>PID</mi> $.
+$s class AssAlg $: <mi>AssAlg</mi> $.
+$s class AlgSpan $: <mi>AlgSpan</mi> $.
+$s class algSc $: <mi>algSc</mi> $.
+$s class mPwSer $: <mi> mPwSer </mi> $.
+$s class mVar $: <mi> mVar </mi> $.
+$s class mPoly $: <mi> mPoly </mi> $.
+$s class evalSub $: <mi> evalSub </mi> $.
+$s class eval $: <mi> eval </mi> $.
+$s class mHomP $: <mi> mHomP </mi> $.
+$s class mPSDer $: <mi> mPSDer </mi> $.
+$s class ordPwSer $: <mi> ordPwSer </mi> $.
+$s class selectVars $: <mi> selectVars </mi> $.
+$s class AlgInd $: <mi> AlgInd </mi> $.
+$s class Met $: <mi>Met</mi> $.
+$s class ball $: <mi>ball</mi> $.
+$s class MetOpen $: <mi>MetOpen</mi> $.
+$s class chr $: <mi>chr</mi> $.
+$s class PreHil $: <mi>PreHil</mi> $.
+$s class ocv $: <mi>ocv</mi> $.
+$s class CSubSp $: <mi>CSubSp</mi> $.
+$s class toHL $: <mi>toHL</mi> $.
+$s class proj $: <mi>proj</mi> $.
+$s class Hil $: <mi>Hil</mi> $.
+$s class OBasis $: <mi>OBasis</mi> $.
+$s class Top $: <mi>Top</mi> $.
+$s class TopOn $: <mi>TopOn</mi> $.
+$s class TopSp $: <mi>TopSp</mi> $.
+$s class TopBases $: <mi>TopBases</mi> $.
+$s class Clsd $: <mi>Clsd</mi> $.
+$s class int $: <mi>int</mi> $.
+$s class cls $: <mi>cls</mi> $.
+$s class nei $: <mi>nei</mi> $.
+$s class limPt $: <mi>limPt</mi> $.
+$s class Perf $: <mi>Perf</mi> $.
+$s class Cn $: <mi>Cn</mi> $.
+$s class CnP $: <mi>CnP</mi> $.
+$s class Kol2 $: <mi>Kol2</mi> $.
+$s class Fre $: <mi>Fre</mi> $.
+$s class Haus $: <mi>Haus</mi> $.
+$s class Reg $: <mi>Reg</mi> $.
+$s class Nrm $: <mi>Nrm</mi> $.
+$s class CNrm $: <mi>CNrm</mi> $.
+$s class PNrm $: <mi>PNrm</mi> $.
+$s class Comp $: <mi>Comp</mi> $.
+$s class Con $: <mi>Con</mi> $.
+$s class kGen $: <mi>&#x1D458;Gen</mi> $.
+$s class KQ $: <mi>KQ</mi> $.
+$s class Homeo $: <mi>Homeo</mi> $.
+$s class fBas $: <mi>fBas</mi> $.
+$s class filGen $: <mi>filGen</mi> $.
+$s class Fil $: <mi>Fil</mi> $.
+$s class UFil $: <mi>UFil</mi> $.
+$s class UFL $: <mi>UFL</mi> $.
+$s class FilMap $: <mi> FilMap </mi> $.
+$s class fLim $: <mi> fLim </mi> $.
+$s class fLimf $: <mi> fLimf </mi> $.
+$s class fClus $: <mi> fClus </mi> $.
+$s class fClusf $: <mi> fClusf </mi> $.
+$s class TopMnd $: <mi>TopMnd</mi> $.
+$s class TopGrp $: <mi>TopGrp</mi> $.
+$s class tsums $: <mi>tsums</mi> $.
+$s class TopRing $: <mi>TopRing</mi> $.
+$s class TopDRing $: <mi>TopDRing</mi> $.
+$s class TopMod $: <mi>TopMod</mi> $.
+$s class TopVec $: <mi>TopVec</mi> $.
+$s class MetSp $: <mi>MetSp</mi> $.
+$s class toMetSp $: <mi>toMetSp</mi> $.
+$s class norm $: <mi>norm</mi> $.
+$s class NrmGrp $: <mi>NrmGrp</mi> $.
+$s class toNrmGrp $: <mi> toNrmGrp </mi> $.
+$s class NrmRing $: <mi>NrmRing</mi> $.
+$s class NrmMod $: <mi>NrmMod</mi> $.
+$s class NrmVec $: <mi>NrmVec</mi> $.
+$s class normOp $: <mi> normOp </mi> $.
+$s class NGHom $: <mi> NGHom </mi> $.
+$s class NMHom $: <mi> NMHom </mi> $.
+$s class II $: <mi>II</mi> $.
+$s class Htpy $: <mi> Htpy </mi> $.
+$s class PHtpy $: <mi>PHtpy</mi> $.
+$s class CMod $: <mi>CMod</mi> $.
+$s class CPreHil $: <mi>CPreHil</mi> $.
+$s class toCHil $: <mi>toCHil</mi> $.
+$s class CauFil $: <mi>CauFil</mi> $.
+$s class CauFilU $: <mi>CauFilU</mi> $.
+$s class Cau $: <mi>Cau</mi> $.
+$s class CMet $: <mi>CMet</mi> $.
+$s class CMetSp $: <mi>CMetSp</mi> $.
+$s class Ban $: <mi>Ban</mi> $.
+$s class CHil $: <mi>CHil</mi> $.
+$s class mDeg $: <mi> mDeg </mi> $.
+$s class Poly $: <mi>Poly</mi> $.
+$s class coeff $: <mi>coeff</mi> $.
+$s class deg $: <mi>deg</mi> $.
+$s class quot $: <mi> quot </mi> $.
+$s class AA $: <mi>&#120120;</mi> $.
+$s class Tayl $: <mi> Tayl </mi> $.
+$s class Ana $: <mi>Ana</mi> $.
+$s class DChr $: <mi>DChr</mi> $.
+$s class Plig $: <mi>Plig</mi> $.
+$s class RPrime $: <mi>RPrime</mi> $.
+$s class t+ $: <mi>t+</mi> $.
+$s class t* $: <mi>t*</mi> $.
+$s class GrpOp $: <mi>GrpOp</mi> $.
+$s class GId $: <mi>GId</mi> $.
+$s class inv $: <mi>inv</mi> $.
+$s class AbelOp $: <mi>AbelOp</mi> $.
+$s class SubGrpOp $: <mi>SubGrpOp</mi> $.
+$s class Ass $: <mi>Ass</mi> $.
+$s class ExId $: <mi> ExId </mi> $.
+$s class Magma $: <mi>Magma</mi> $.
+$s class SemiGrp $: <mi>SemiGrp</mi> $.
+$s class MndOp $: <mi>MndOp</mi> $.
+$s class GrpOpHom $: <mi> GrpOpHom </mi> $.
+$s class GrpOpIso $: <mi> GrpOpIso </mi> $.
+$s class RingOps $: <mi>RingOps</mi> $.
+$s class DivRingOps $: <mi>DivRingOps</mi> $.
+$s class *-Fld $: <mi>*-Fld</mi> $.
+$s class Com2 $: <mi>Com2</mi> $.
+$s class Fld $: <mi>Fld</mi> $.
+$s class NrmCVec $: <mi>NrmCVec</mi> $.
+$s class BaseSet $: <mi>BaseSet</mi> $.
+$s class IndMet $: <mi>IndMet</mi> $.
+$s class SubSp $: <mi>SubSp</mi> $.
+$s class LnOp $: <mi> LnOp </mi> $.
+$s class BLnOp $: <mi> BLnOp </mi> $.
+$s class adj $: <mi>adj</mi> $.
+$s class HmOp $: <mi>HmOp</mi> $.
+$s class CBan $: <mi>CBan</mi> $.
+$s class Cauchy $: <mi>Cauchy</mi> $.
+$s class _|_ $: <mi>&#8869;</mi> $.
+$s class span $: <mi>span</mi> $.
+$s class ConOp $: <mi>ConOp</mi> $.
+$s class LinOp $: <mi>LinOp</mi> $.
+$s class BndLinOp $: <mi>BndLinOp</mi> $.
+$s class UniOp $: <mi>UniOp</mi> $.
+$s class HrmOp $: <mi>HrmOp</mi> $.
+$s class null $: <mi>null</mi> $.
+$s class ConFn $: <mi>ConFn</mi> $.
+$s class LinFn $: <mi>LinFn</mi> $.
+$s class bra $: <mi>bra</mi> $.
+$s class ketbra $: <mi> ketbra </mi> $.
+$s class eigvec $: <mi>eigvec</mi> $.
+$s class eigval $: <mi>eigval</mi> $.
+$s class Lambda $: <mi>Lambda</mi> $.
+$s class States $: <mi>States</mi> $.
+$s class CHStates $: <mi>CHStates</mi> $.
+$s class HAtoms $: <mi>HAtoms</mi> $.
+$s class zeta $: <mi>&zeta;</mi> $.
+$s class _G $: <mi>&Gamma;</mi> $.
+$s class log_G $: <mi>log &Gamma;</mi> $.
+$s class Retr $: <mi> Retr </mi> $.
+$s class PCon $: <mi>PCon</mi> $.
+$s class SCon $: <mi>SCon</mi> $.
+$s class CovMap $: <mi> CovMap </mi> $.
+$s class UMGrph $: <mi> UMGrph </mi> $.
+$s class EulPaths $: <mi> EulPaths </mi> $.
+$s class VDeg $: <mi> VDeg </mi> $.
+$s class AxExt $: <mi>AxExt</mi> $.
+$s class AxRep $: <mi>AxRep</mi> $.
+$s class AxPow $: <mi>AxPow</mi> $.
+$s class AxUn $: <mi>AxUn</mi> $.
+$s class AxReg $: <mi>AxReg</mi> $.
+$s class AxInf $: <mi>AxInf</mi> $.
+$s class IntgRing $: <mi> IntgRing </mi> $.
+$s class cplMetSp $: <mi> cplMetSp </mi> $.
+$s class HomLimB $: <mi> HomLimB </mi> $.
+$s class HomLim $: <mi> HomLim </mi> $.
+$s class polyFld $: <mi> polyFld </mi> $.
+$s class splitFld $: <mi> splitFld </mi> $.
+$s class splitFld1 $: <msub><mi> splitFld </mi> <mn>1</mn></msub> $.
+$s class polySplitLim $: <mi> polySplitLim </mi> $.
+$s class t*rec $: <mi>t*rec</mi> $.
+$s class numer $: <mi>numer</mi> $.
+$s class denom $: <mi>denom</mi> $.
+
+
+$( PseudoMetrics and Uniformities $)
+$s class PsMet $: <mi>PsMet</mi> $.
+$s class uCn $: <mi>uCn</mi> $.
+$s class CnExt $: <mi>CnExtt</mi> $.
+$s class UnifSt $: <mi>UnifSt</mi> $.
+$s class unifTop $: <mi>unifTop</mi> $.
+$s class UnifOn $: <mi>UnifOn</mi> $.
+$s class UnifSet $: <mi>UnifSet</mi> $.
+$s class UnifSp $: <mi>UnifSp</mi> $.
+$s class CUnifSp $: <mi>CUnifSp</mi> $.
+$s class toUnifSp $: <mi>toUnifSp</mi> $.
+$s class metUnif $: <mi>metUnif</mi> $.
+$s class metUnifOLD $: <mi>metUnifOLD</mi> $.
+$s class ~Met $: <msub><mo>~</mo> <mi mathvariant="italic">Met</mi></msub> $.
+$s class pstoMet $: <mi>pstoMet</mi> $.
+$s class HCmp $: <mi>HCmp</mi> $.
+
+
+$( Hilbert Spaces $)
+$s class ~H $: <mi> &#8459;</mi> $.
+$s class 0h $: <msub><mi>0</mi> <mi>&#x210E;</mi></msub> $. 
+$s class +h $: <msub><mo>+</mo> <mi>&#x210E;</mi></msub> $. 
+$s class -h $: <msub><mo>-</mo> <mi>&#x210E;</mi></msub> $. 
+$s class .h $: <msub><mo>&sdot;</mo> <mi>&#x210E;</mi></msub> $. 
+$s class .ih $: <msub><mo>&sdot;</mo> <mi>ih</mi></msub> $. 
+$s class normh $: <msub><mo>norm</mo> <mi>&#x210E;</mi></msub> $. 
+$s class -op $: <msub><mo>-</mo> <mi>op</mi></msub> $. 
+$s class +op $: <msub><mo>+</mo> <mi>op</mi></msub> $. 
+$s class .op $: <msub><mo>&middot;</mo> <mi>op</mi></msub> $. 
+$s class 0op $: <msub><mi>0</mi> <mi>op</mi></msub> $. 
+$s class <_op $: <msub><mi>&le;</mi> <mi>op</mi></msub> $. 
+$s class +fn $: <msub><mo>+</mo> <mi>fn</mi></msub> $. 
+$s class .fn $: <msub><mo>&middot;</mo> <mi>fn</mi></msub> $. 
+$s class 0hop $: <msub><mi>0</mi> <mi>hop</mi></msub> $. 
+$s class Iop $: <msub><mi>I</mi> <mi>op</mi></msub> $. 
+$s class normop $: <msub><mo>norm</mo> <mi>op</mi></msub> $. 
+$s class normfn $: <msub><mo>norm</mo> <mi>fn</mi></msub> $. 
+$s class adjh $: <msub><mo>adj</mo> <mi>h</mi></msub> $. 
+$s class +H $: <msub><mo>+</mo> <mi>&#8459;</mi></msub> $.
+$s class vH $: <msub><mo>&or;</mo> <mi>&#8459;</mi></msub> $.
+$s class \/H $: <msub><mo>&#x22C1;</mo> <mi>&#8459;</mi></msub> $.
+$s class 0H $: <msub><mi>0</mi> <mi>&#8459;</mi></msub> $.
+$s class projh $: <msub><mi>proj</mi> <mi>&#x210E;</mi></msub> $.
+$s class C_H $: <msub><mo>&#x1D436;</mo> <mi>&#8459;</mi></msub> $.
+$s class CH $: <msub><mo mathvariant="bold">C</mo> <mi>&#8459;</mi></msub> $.
+$s class SH $: <msub><mo mathvariant="bold">S</mo> <mi>&#8459;</mi></msub> $.
+$s class <oH $: <msub><mo>&#8918;</mo> <mi>&#8459;</mi></msub> $. 
+$s class MH $: <msub><mo>&#x1D440;</mo> <mi>&#8459;</mi></msub> $. 
+$s class MH* $: <msubsup><mo>&#x1D440;</mo> <mi>&#8459;</mi> <mi>*</mi></msubsup> $. 
+$s class _|_ $: <mo>&perp;</mo> $.
+
+
+$( Ordered Structures $)
+$s class oGrp $: <mi>oGrp</mi> $.
+$s class oField $: <mi>oField</mi> $.
+$s class <<< $: <mo>&#x22D8;</mo> $.
+$s class Archi $: <mi>Archi</mi> $.
+$(
+$s class oMnd $: <mi>oMnd</mi> $.
+$s class oRing $: <mi>oRing</mi> $.
+$s class SRing $: <mi>SRing</mi> $.
+$s class SLMod $: <mi>SLMod</mi> $.
+$)
+
+$( Cannonical embeddings $)
+$s class ZRHom $: <mi>&#8484;RHom</mi> $.
+$s class ZMod $: <mi>&#8484;Mod</mi> $.
+$s class QQHom $: <mi>&Qopf;Hom</mi> $.
+$s class RRHom $: <mi>&Ropf;Hom</mi> $.
+$s class RR*Hom $: <mi><msup><mi>&Ropf;</mi> <mo>*</mo></msup>Hom</mi> $.
+
+$( Indicator function $)
+$s class _Ind $: <mi>&#x1D7D9;</mi> $.
+$s class ( _Ind ` O ) $: <msub><mi>&#x1D7D9;</mi> #O#</msub> $.
+
+$( Measure Theory $)
+$s class sigAlgebra $: <mi>sigAlgebra</mi> $.
+$s class sigaGen $: <mi>&#x1d6d4;</mi> $. $( Gives a warning, but with &sigma; there is no distinction ` sigma ` $)
+$s class BrSiga $: <msub><mi>&#x1D505;</mi> <mi>&Ropf;</mi></msub> $.
+$s class sX $: <msub><mo>&times;</mo> <mi>s</mi></msub> $.
+$s class measures $: <mi>measures</mi> $.
+$s class ae $: <mi>ae</mi> $.
+$s class ~ae $: <msub><mo>~</mo><mi>ae</mi></msub> $.
+$s wff A ae B $: <mrow>#A# #B#<mi>-ae.</mi></mrow> $.
+$s wff { x e. A | ph } ae B $: <mrow>#ph# <msub><mrow>#B#<mi>-ae.</mi></mrow> <mrow>#x# <mo>&isin;</mo> #A#</mrow></msub></mrow> $.
+$s wff R ~ae C $: <msub>#R# <mrow>#C#<mi>-ae.</mi></mrow></msub> $.
+$s wff A ( R ~ae C ) B $: <mrow>#A# #R# #B# #C#<mi>-ae.</mi></mrow> $.
+$s class MblFnM $: <msub><mi>MblFn</mi> <mi>&mu;</mi></msub> $.
+$s class itgm $: <mi>itgm</mi> $.
+$s class sitg $: <mi>sitg</mi> $.
+$s class sitm $: <mi>sitm</mi> $.
+$s class ( ( A itgm B ) ` F ) $: <mrow><msubsup><mo>&#x222B;</mo> <mi>&mu;</mi> #A#</msubsup> #F# <mo>d</mo>#B#</mrow> $.
+$s class ( ( A sitg B ) ` F ) $: <mrow><msubsup><mo>&#x222B;</mo> <mi>&#x2111;</mi> #A#</msubsup> #F# <mo>d</mo>#B#</mrow> $.
+$s class dom ( A sitg B ) $: <msubsup><mo>&#x2111;</mo> #B# #A#</msubsup> $.
+$s class ( A sitm B ) $: <msubsup><mrow><mo>&vert;</mo><mi>.</mi> <mo>-</mo> <mi>.</mi><mo>&vert;</mo></mrow> #B# #A#</msubsup> $. $( Looks like mfenced does not work with &vert; $)
+$s class ( F ( A sitm B ) G ) $: <msubsup><mrow><mo>&vert;</mo>#G# <mo>-</mo> #F#<mo>&vert;</mo></mrow> #B# #A#</msubsup> $. $( Looks like mfenced does not work with &vert; $)
+$s class-o ( F ( A sitm B ) G ) $: <msubsup><mrow><mo>&vert;</mo>#G# <mo>-</mo> #F#<mo>&vert;</mo></mrow> #B# #A#</msubsup> $. $( Looks like mfenced does not work with &vert; $)
+$s class Prob $: <mi>Prob</mi> $.
+$s class cprob $: <mi>cProb</mi> $.
+$s class rRndVar $: <msub><mi>RndVar</mi> <mi>&Ropf;</mi></msub> $.
+$s class oRVC R $: <mrow> <msub><mo>&compfn;</mo> <mi>RV/c</mi></msub> <mo>&ApplyFunction;</mo> #R# </mrow> $.
+$s class ( F oRVC R A ) $: <mfenced><mrow>#F# <msub>#R# <mi>RV/c</mi></msub> #A#</mrow></mfenced> $.
+$s class-o ( F oRVC R A ) $: <mrow>#F# <msub>#R# <mi>RV/c</mi></msub> #A#</mrow> $.
+
+
+$( p-adic number fields $)
+$s class ZRing $: <mi>&Zopf;Ring</mi> $.
+$s class GF $: <mi> GF </mi> $.
+$s class ~Qp $: <msub><mo>~</mo><msub><mi>&Qopf;</mi><mi>p</mi></msub></msub> $.
+$s class /Qp $: <msub><mo>/</mo><msub><mi>&Qopf;</mi><mi>p</mi></msub></msub> $.
+$s class Qp $: <msub><mi>&Qopf;</mi><mi>p</mi></msub> $.
+$s class Zp $: <msub><mi>&Zopf;</mi><mi>p</mi></msub> $.
+$s class _Qp $: <mover><msub><mi>&Qopf;</mi><mi>p</mi></msub> <mo>&oline;</mo></mover> $.
+$s class Cp $: <msub><mi>&Copf;</mi><mi>p</mi></msub> $.
+
+
+$( Graph Theory $)
+$s class UHGrph $: <mi>UHGrph</mi> $.
+$s class UMGrph $: <mi>UMGrph</mi> $.
+$s class USLGrph $: <mi>USLGrph</mi> $.
+$s class USGrph $: <mi>USGrph</mi> $.
+$s class Neighbors $: <mi>Neighbors</mi> $.
+$s class ComplUSGrph $: <mi>ComplUSGrph</mi> $.
+$s class UnivVertex $: <mi>UnivVertex</mi> $.
+$s class Walks $: <mi>Walks</mi> $.
+$s class Trails $: <mi>Trails</mi> $.
+$s class Paths $: <mi>Paths</mi> $.
+$s class SPaths $: <mi>SPaths</mi> $.
+$s class WalkOn $: <mi>WalkOn</mi> $.
+$s class TrailOn $: <mi>TrailOn</mi> $.
+$s class PathOn $: <mi>PathOn</mi> $.
+$s class Circuits $: <mi>Circuits</mi> $.
+$s class Cycles $: <mi>Cycles</mi> $.
+$s class ConnGrph $: <mi>ConnGrph</mi> $.
+
+
+$s class CVecOLD $: <msub><mo>CVec</mo> <mi>OLD</mi></msub> $.
+$s class .sOLD $: <msub><mo>&sdot;</mo> <mi>&#x1D460;OLD</mi></msub> $.
+$s class .iOLD $: <msub><mo>&sdot;</mo> <mi>&#x1D456;OLD</mi></msub> $.
+$s class normOpOLD $: <msub><mo>normOp</mo> <mi>OLD</mi></msub> $.
+$s class CPreHilOLD $: <msub><mo>CPreHil</mo> <mi>OLD</mi></msub> $.
+$s class CHilOLD $: <msub><mo>CHil</mo> <mi>OLD</mi></msub> $.
+
+$( Removed as part of FL'mathbox
+
+$s class <> $: <mi>&#9671;</mi> $.
+$s class [.] $: <mi>&#9723;</mi> $.
+$s class () $: <mi>&#9675;</mi> $.
+$s class until $: <mi> until </mi> $.
+$s class pr $: <mi> pr </mi> $.
+$s class prj $: <mi> prj </mi> $.
+$s class cset $: <mi>cset</mi> $.
+$s class LatAlg $: <mi>LatAlg</mi> $.
+$s class cur1 $: <mi>cur1</mi> $.
+$s class cur2 $: <mi>cur2</mi> $.
+$s class OrHom $: <mi> OrHom </mi> $.
+$s class OrIso $: <mi> OrIso </mi> $.
+$s class mxl $: <mi>mxl</mi> $.
+$s class mnl $: <mi>mnl</mi> $.
+$s class ub $: <mi> ub </mi> $.
+$s class lb $: <mi>lb</mi> $.
+$s class PresetRel $: <mi>PresetRel</mi> $.
+$s class ge $: <mi>ge</mi> $.
+$s class leR $: <mi>leR</mi> $.
+$s class AntiDir $: <mi>AntiDir</mi> $.
+$s class BndLat $: <mi>BndLat</mi> $.
+$s class Com1 $: <mi>Com1</mi> $.
+$s class SubSemiGrp $: <mi>SubSemiGrp</mi> $.
+$s class subSemiGrpGen $: <mi>subSemiGrpGen</mi> $.
+$s class SemiGrpHom $: <mi>SemiGrpHom</mi> $.
+$s class FreeSemiGrp $: <mi>FreeSemiGrp</mi> $.
+$s class Tofld $: <mi> Tofld </mi> $.
+$s class zeroDiv $: <mi> zeroDiv </mi> $.
+$s class IdlNEW $: <mi>IdlNEW</mi> $.
+$s class Action $: <mi>Action</mi> $.
+$s class Vec $: <mi> Vec </mi> $.
+$s class SubVec $: <mi>SubVec</mi> $.
+$s class RVec $: <mi> RVec </mi> $.
+$s class RAffSp $: <mi> RAffSp </mi> $.
+$s class topX $: <mi> topX </mi> $.
+$s class fLimfrs $: <mi> fLimfrs </mi> $.
+$s class IsolatedPt $: <mi>IsolatedPt</mi> $.
+$s class opfn $: <mi> opfn </mi> $.
+$s class TopFld $: <mi> TopFld </mi> $.
+$s class sup_ $: <mi> sup_ </mi> $.
+$s class inf_ $: <mi> inf_ </mi> $.
+$s class Frf $: <mi>Frf</mi> $.
+$s class +cv $: <mi>+cv</mi> $.
+$s class 0cv $: <mi>0cv</mi> $.
+$s class Intvl $: <mi>Intvl</mi> $.
+$s class der $: <mi>der</mi> $.
+$s class Dgra $: <mi> Dgra </mi> $.
+$s class Alg $: <mi> Alg </mi> $.
+$s class Ded $: <mi> Ded </mi> $.
+$s class hom $: <mi> hom </mi> $.
+$s class Epic $: <mi>Epic</mi> $.
+$s class Isofunc $: <mi> Isofunc </mi> $.
+$s class SubCat $: <mi> SubCat </mi> $.
+$s class InitObj $: <mi> InitObj </mi> $.
+$s class TermObj $: <mi> TermObj </mi> $.
+$s class Source $: <mi> Source </mi> $.
+$s class Sink $: <mi> Sink </mi> $.
+$s class Natural $: <mi> Natural </mi> $.
+$s class LimCat $: <mi> LimCat </mi> $.
+$s class ProdObj $: <mi> ProdObj </mi> $.
+$s class tar $: <mi>tar</mi> $.
+$s class tr $: <mi>tr</mi> $.
+$s class line $: <mi>line</mi> $.
+$s class seg $: <mi>seg</mi> $.
+$s class Kleene $: <mi>Kleene</mi> $.
+$s class Words $: <mi> Words </mi> $.
+$s class IndCls $: <mi> IndCls </mi> $.
+$s class Grammar $: <mi>Grammar</mi> $.
+$s class sym $: <mi>sym</mi> $.
+$s class prdct $: <mi>prdct</mi> $.
+$s class conc $: <mi> conc </mi> $.
+$s class Prop $: <mi>Prop</mi> $.
+$s class derv $: <mi>derv</mi> $.
+$s class PPoints $: <mi>PPoints</mi> $.
+$s class PLines $: <mi>PLines</mi> $.
+$s class Ig $: <mi>Ig</mi> $.
+$s class coln $: <mi>coln</mi> $.
+$s class con $: <mi>con</mi> $.
+$s class Ibg $: <mi>Ibg</mi> $.
+$s class btw $: <mi>btw</mi> $.
+$s class Segments $: <mi>Segments</mi> $.
+$s class ray $: <mi>ray</mi> $.
+$s class convex $: <mi>convex</mi> $.
+$s class Ibcg $: <mi>Ibcg</mi> $.
+$s class angc $: <mi>angc</mi> $.
+$s class segc $: <mi>segc</mi> $.
+$s class slices $: <mi>slices</mi> $.
+$s class Cut $: <mi>Cut</mi> $.
+$s class Neug $: <mi>Neug</mi> $.
+$s class Circle $: <mi>Circle</mi> $.
+$s class angle $: <mi>angle</mi> $.
+$s class triangle $: <mi>triangle</mi> $.
+$s class dWords $: <mi>dWords</mi> $.
+$s class ss $: <mi>ss</mi> $.
+$s class trcng $: <mi>trcng</mi> $.
+$s class Halfplane $: <mi>Halfplane</mi> $.
+$s class angtrg $: <mi>angtrg</mi> $.
+$s class segtrg $: <mi>segtrg</mi> $.
+$s class CatOLD $: <msub><mo>Cat</mo> <mi>OLD</mi></msub> $.
+$s class SetCatOLD $: <msub><mo>SetCat</mo> <mi>OLD</mi></msub> $.
+$s class MonoOLD $: <msub><mo>Mono</mo> <mi>OLD</mi></msub> $.
+$s class IsoOLD $: <msub><mo>Iso</mo> <mi>OLD</mi></msub> $.
+$s class cinvOLD $: <msub><mo>cinv</mo> <mi>OLD</mi></msub> $.
+$s class FuncOLD $: <msub><mo>Func</mo> <mi>OLD</mi></msub> $.
+$s class MorphismSetCat $: <msub><mo>Morphism</mo> <mi>SetCat</mi></msub> $.
+$s class domSetCat $: <msub><mo>dom</mo> <mi>SetCat</mi></msub> $.
+$s class graphSetCat $: <msub><mo>graph</mo> <mi>SetCat</mi></msub> $.
+$s class codSetCat $: <msub><mo>cod</mo> <mi>SetCat</mi></msub> $.
+$s class IdSetCat $: <msub><mo>Id</mo> <mi>SetCat</mi></msub> $.
+$s class roSetCat $: <msub><mo>ro</mo> <mi>SetCat</mi></msub> $.
+
+$s class dom_ $: <munder><mo>dom</mo> <mo>&#x5F;</mo></munder> $. 
+$s class cod_ $: <munder><mo>cod</mo> <mo>&#x5F;</mo></munder> $. 
+$s class id_ $: <munder><mo>id</mo> <mo>&#x5F;</mo></munder> $. 
+$s class o_ $: <munder><mo>o</mo> <mo>&#x5F;</mo></munder> $. 
+
+$s class ^md $: <msub><mo>&uarr;</mo> <mi>md</mi></msub> $.
+$s class +m $: <msub><mo>+</mo> <mi>&#x1D45A;</mi></msub> $. 
+$s class .m $: <msub><mo>&sdot;</mo> <mi>&#x1D45A;</mi></msub> $. 
+$s class xm $: <msub><mo>&times;</mo> <mi>&#x1D45A;</mi></msub> $.
+
+End of FL's mathbox removed
+$)
+
+$( Constant classes with subscript rules $)
+$s class PwSer1 $: <msub><mi>PwSer</mi> <mn>1</mn></msub> $.
+$s class var1 $: <msub><mi>var</mi> <mn>1</mn></msub> $.
+$s class Poly1 $: <msub><mi>Poly</mi> <mn>1</mn></msub> $.
+$s class evalSub1 $: <msub><mi>evalSub</mi> <mn>1</mn></msub> $.
+$s class eval1 $: <msub><mi>eval</mi> <mn>1</mn></msub> $.
+$s class deg1 $: <msub><mi>deg</mi> <mn>1</mn></msub> $.
+$s class coe1 $: <msub><mi>coe</mi> <mn>1</mn></msub> $.
+$s class toPoly1 $: <msub><mi>toPoly</mi> <mn>1</mn></msub> $.
+$s class *p $: <msub><mo>*</mo> <mi>&#x1D45D;</mi></msub> $.
+$s class Om1 $: <msub><mo>&Omega;</mo> <mn>1</mn></msub> $.
+$s class OmN $: <msub><mo>&Omega;</mo> <mn>&#x1D45B;</mn></msub> $.
+$s class pi1 $: <msub><mo>&pi;</mo> <mn>1</mn></msub> $.
+$s class piN $: <msub><mo>&pi;</mo> <mn>&#x1D45B;</mn></msub> $.
+$s class .if $: <msub><mo>&sdot;</mo> <mi>if</mi></msub> $.
+$s class gcdOLD ( A , B ) $: <mrow><msub><mo>gcd</mo> <mi>OLD</mi></msub> <mfenced>#A# #B#</mfenced></mrow> $.
+
+$s class Monic1p $: <msub><mo>Monic</mo> <mi>1p</mi></msub> $.
+$s class Unic1p $: <msub><mo>Unic</mo> <mi>1p</mi></msub> $.
+$s class quot1p $: <msub><mo>quot</mo> <mi>1p</mi></msub> $.
+$s class rem1p $: <msub><mo>rem</mo> <mi>1p</mi></msub> $.
+$s class idlGen1p $: <msub><mo>idlGen</mo> <mi>1p</mi></msub> $.
+$s class GF_oo $: <msub><mi>GF</mi> <mi>&infin;</mi></msub> $.
+
+$s class ^ko $: <msub><mi>^</mi> <mi>ko</mi></msub> $.
+$s class C^n $: <msup><mi>C</mi> <mi>n</mi></msup> $.
+$s class Dn $: <msup><mi>D</mi> <mi>n</mi></msup> $.
+$s class Xp $: <msup><mi>X</mi> <mi>p</mi></msup> $.
+$s class ~= $: <mo>&simeq;</mo> $.
+$s class ~=ph $: <msub><mo>&simeq;</mo> <mi>ph</mi></msub> $.
+
+$s class /L $: <msub><mo>/</mo> <mi>L</mi></msub> $. 
+$s class /g $: <msub><mo>/</mo> <mi>g</mi></msub> $. 
+$s class ^g $: <msub><mo>&uarr;</mo> <mi>g</mi></msub> $. 
+$s class ^c $: <msub><mo>&uarr;</mo> <mi>c</mi></msub> $. 
+$s class +v $: <msub><mo>+</mo> <mi>v</mi></msub> $. 
+$s class -v $: <msub><mo>-</mo> <mi>v</mi></msub> $. 
+$s class .v $: <msub><mo>&sdot;</mo> <mi>v</mi></msub> $. 
+$s class 0vec $: <msub><mi>0</mi> <mi>vec</mi></msub> $. 
+$s class normCV $: <msub><mo>norm</mo> <mo>CV</mo></msub> $. 
+
+$( Goedel $)
+$s class e.g $: <msub><mo>&isin;</mo> <mi>&#x1D454;</mi></msub> $.
+$s class |g $: <msub><mo>&#8892;</mo> <mi>&#x1D454;</mi></msub> $.
+$s class A.g A B $: <mfenced open="[" close="]" separators=""><msub><mo>&forall;</mo> <mi>&#x1D454;</mi></msub> #A# #B#</mfenced> $.
+$s class E.g A B $: <mfenced open="[" close="]" separators=""><msub><mo>&exist;</mo> <mi>&#x1D454;</mi></msub> #A# #B#</mfenced> $.
+$s class -.g A $: <mfenced open="[" close="]" separators=""><msub><mo>&not;</mo> <mi>&#x1D454;</mi></msub> #A#</mfenced> $.
+$s class =g $: <msub><mo>=</mo> <mi>&#x1D454;</mi></msub> $.
+$s class /\g $: <msub><mo>&and;</mo> <mi>&#x1D454;</mi></msub> $.
+$s class \/g $: <msub><mo>&or;</mo> <mi>&#x1D454;</mi></msub> $.
+$s class -.g $: <msub><mo>&not;</mo> <mi>&#x1D454;</mi></msub> $.
+$s class ->g $: <msub><mo>&rarr;</mo> <mi>&#x1D454;</mi></msub> $.
+$s class <->g $: <msub><mo>&harr;</mo> <mi>&#x1D454;</mi></msub> $.
+$s class Fmla $: <mi>Fmla</mi> $.
+$s class |= $: <mo>&#8871;</mo> $.
+$s class Sat $: <mi>Sat</mi> $.
+$s class SatE $: <msub><mi>Sat</mi> <mi>&isin;</mi></msub> $.
+$s class ZF $: <mi mathvariant="bold">ZF</mi> $.
+
+
+$( Scott Fenton $)
+$s class FallFac $: <mo>FallFac</mo> $. $( With dots: <msup><mi>.</mi> <munder><mi>.</mi> <mo>&#x5F;</mo></munder></msup> $)
+$s class RiseFac $: <mo>RiseFac</mo> $. $( With dots: <msup><mi>.</mi> <mover><mi>.</mi> <mo>&oline;</mo></mover></msup> $)
+$s class ( A FallFac B ) $: <msup>#A# <munder>#B# <mo>&#x5F;</mo></munder></msup> $.
+$s class ( A RiseFac B ) $: <msup>#A# <mover>#B# <mo>&oline;</mo></mover></msup> $.
+$s class Pred ( R , A , B ) $: <mrow> <mo>Pred</mo> <mfenced>#R# #A# #B#</mfenced></mrow> $.
+$s class TrPred ( R , A , B ) $: <mrow> <mo>TrPred</mo> <mfenced>#R# #A# #B#</mfenced></mrow> $.
+$s class XX. $: <mi> &times;&times; </mi> $.
+$s class EE $: <mi> &#x1D53C; </mi> $.
+$s class Btwn $: <mi> Btwn </mi> $.
+$s class Cgr $: <mi>Cgr</mi> $.
+$s class OuterFiveSeg $: <mi> OuterFiveSeg </mi> $.
+$s class TransportTo $: <mi>TransportTo</mi> $.
+$s class InnerFiveSeg $: <mi> InnerFiveSeg </mi> $.
+$s class Cgr3 $: <mi>Cgr3</mi> $.
+$s class Colinear $: <mi> Colinear </mi> $.
+$s class FiveSeg $: <mi> FiveSeg </mi> $.
+$s class Seg<_ $: <msub><mi>Seg</mi> <mo>&le;</mo></msub> $.
+$s class OutsideOf $: <mi>OutsideOf</mi> $.
+$s class Line $: <mi>Line</mi> $.
+$s class LinesEE $: <mi>LinesEE</mi> $.
+$s class Ray $: <mi>Ray</mi> $.
+$s class BernPoly $: <mi> BernPoly </mi> $.
+$s class Hf $: <mi> Hf </mi> $.
+
+$( Surreal Numbers $)
+$s class No $: <mi>No</mi> $.
+$s class <s $: <msub><mo>&lt;</mo> <mi>s</mi></msub> $.
+$s class bday $: <mi>bday</mi> $.
+
+$s class pprod ( A , B ) $: <mrow> <mo>pprod</mo> <mfenced>#A# #B#</mfenced></mrow> $.
+$s class << A , B >> $: <mfenced open="&#10218;" close="&#10219;">#A# #B#</mfenced> $.
+$s class (++) $: <mi>&oplus;</mi> $.
+$s class (x) $: <mi> &otimes; </mi> $.
+$( $s class (+) $: <mi> &#x2295; </mi> $. $)
+
+$s class SSet $: <mi>&#x1D5B2;&#x1D5B2;&#x1D5BE;&#x1D5CD;</mi> $.
+$s class Trans $: <mi>&#x1D5B3;&#x1D5CB;&#x1D5BA;&#x1D5C7;&#x1D5CC;</mi> $.
+$s class Bigcup $: <mi>&#x1D5A1;&#x1D5C2;&#x1D5C0;&#x1D5BC;&#x1D5CE;&#x1D5C9;</mi> $.
+$s class Fix A $: <mrow><mi>&#x1D5A5;&#x1D5C2;&#x1D5D1;</mi> #A#</mrow> $.
+$s class Limits $: <mi>&#x1D5AB;&#x1D5C2;&#x1D5C6;&#x1D5C2;&#x1D5CD;&#x1D5CC;</mi> $.
+$s class Funs $: <mi>&#x1D5A5;&#x1D5CE;&#x1D5C7;&#x1D5CC;</mi> $.
+$s class Singleton $:  <mi>&#x1D5B2;&#x1D5C2;&#x1D5C7;&#x1D5C0;&#x1D5C5;&#x1D5BE;&#x1D5CD;&#x1D5C8;&#x1D5C7;</mi> $.
+$s class Singletons $: <mi>&#x1D5B2;&#x1D5C2;&#x1D5C7;&#x1D5C0;&#x1D5C5;&#x1D5BE;&#x1D5CD;&#x1D5C8;&#x1D5C7;&#x1D5CC;</mi> $.
+$s class Image A $: <mrow><mi>&#x1D5A8;&#x1D5C6;&#x1D5BA;&#x1D5C0;&#x1D5BE;</mi> #A#</mrow> $.
+$s class Cart $: <mi>&#x1D5A2;&#x1D5BA;&#x1D5CB;&#x1D5CD;</mi> $.
+$s class Img $: <mi>&#x1D5A8;&#x1D5C6;&#x1D5C0;</mi> $.
+$s class Domain $: <mi>&#x1D5A3;&#x1D5C8;&#x1D5C6;&#x1D5BA;&#x1D5C2;&#x1D5C7;</mi> $.
+$s class Range $: <mi>&#x1D5B1;&#x1D5BA;&#x1D5C7;&#x1D5C0;&#x1D5BE;</mi> $.
+$s class Apply $: <mi>&#x1D5A0;&#x1D5C9;&#x1D5C9;&#x1D5C5;&#x1D5D2;</mi> $.
+$s class Cup $: <mi>&#x1D5A2;&#x1D5CE;&#x1D5C9;</mi> $.
+$s class Cap $: <mi>&#x1D5A2;&#x1D5BA;&#x1D5C9;</mi> $.
+$s class Succ $: <mi>&#x1D5B2;&#x1D5CE;&#x1D5BC;&#x1D5BC;</mi> $.
+$s class Funpart $: <mi>&#x1D5A5;&#x1D5CE;&#x1D5C7;&#x1D5AF;&#x1D5BA;&#x1D5CB;&#x1D5CD;</mi> $.
+$s class FullFun $: <mi>&#x1D5A5;&#x1D5CE;&#x1D5C5;&#x1D5C5;&#x1D5A5;&#x1D5CE;&#x1D5C7;</mi> $.
+$s class Restrict $: <mi>&#x1D5B1;&#x1D5BE;&#x1D5CC;&#x1D5CD;&#x1D5CB;&#x1D5C2;&#x1D5BC;&#x1D5CD;</mi> $.
+$s class Funpart F $: <mrow><mi>&#x1D5A5;&#x1D5CE;&#x1D5C7;&#x1D5AF;&#x1D5BA;&#x1D5CB;&#x1D5CD;</mi> #F#</mrow> $.
+$s class FullFun F $: <mrow><mi>&#x1D5A5;&#x1D5CE;&#x1D5C5;&#x1D5C5;&#x1D5A5;&#x1D5CE;&#x1D5C7;</mi> #F#</mrow> $.
+
+
+$s class _|_P $: <msub><mo>&perp;</mo> <mi>&#x1D443;</mi></msub> $. 
+$s class +P $: <msub><mo>+</mo> <mi>&#x1D443;</mi></msub> $. 
+
+$s class ^r $: <msub><mo>&uarr;</mo> <mi>r</mi></msub> $.
+
+
+$( Jeff Madsen $)
+$s class Fne $: <mi>Fne</mi> $.
+$s class Ref $: <mi>Ref</mi> $.
+$s class PtFin $: <mi>PtFin</mi> $.
+$s class LocFin $: <mi>LocFin</mi> $.
+$s class TotBnd $: <mi>TotBnd</mi> $.
+$s class Bnd $: <mi>Bnd</mi> $.
+$s class Ismty $: <mi> Ismty </mi> $.
+$s class Rn $: <msup><mi>&Ropf;</mi> <mi>n</mi></msup> $.
+$s class RngHom $: <mi> RngHom </mi> $.
+$s class RngIso $: <mi> RngIso </mi> $.
+$s class ~=r $: <msub><mo>&#8771;</mo> <mi>&#x1D45F;</mi></msub> $.
+$s class CRingOps $: <mi>CRingOps</mi> $.
+$s class Idl $: <mi>Idl</mi> $.
+$s class PrIdl $: <mi>PrIdl</mi> $.
+$s class MaxIdl $: <mi>MaxIdl</mi> $.
+$s class PrRing $: <mi>PrRing</mi> $.
+$s class Dmn $: <mi>Dmn</mi> $.
+$s class IdlGen $: <mi>IdlGen</mi> $.
+
+$( Rodolfo Medina $)
+$s class Prt $: <mi>Prt</mi> $.
+
+$( Stefan O'Rear $)
+$s class NoeACS $: <mi>NoeACS</mi> $.
+$s class mzPolyCld $: <mi>mzPolyCld</mi> $.
+$s class mzPoly $: <mi>mzPoly</mi> $.
+$s class Dioph $: <mi>Dioph</mi> $.
+
+$s class []NN $: <msub><mi>&#x25FB;</mi> <mi>&Nopf;</mi></msub> $.
+$s class Pell1QR $: <mi>Pell1QR</mi> $.
+$s class Pell14QR $: <mi>Pell14QR</mi> $.
+$s class Pell1234QR $: <mi>Pell1234QR</mi> $.
+$s class PellFund $: <mi>PellFund</mi> $.
+$s class rmX $: <msub><mo>X</mo> <mi>rm</mi></msub> $. 
+$s class rmY $: <msub><mo>Y</mo> <mi>rm</mi></msub> $. 
+$s class LFinGen $: <mi>LFinGen</mi> $.
+$s class LNoeM $: <mi>LNoeM</mi> $.
+$s class (+)m $: <msub><mo>&#x2295;</mo> <mi>m</mi></msub> $.
+$s class freeLMod $: <mi> freeLMod </mi> $.
+$s class unitVec $: <mi> unitVec </mi> $.
+$s class LIndF $: <mi> LIndF </mi> $.
+$s class LIndS $: <mi>LIndS</mi> $.
+$s class LNoeR $: <mi>LNoeR</mi> $.
+$s class ldgIdlSeq $: <mi>ldgIdlSeq</mi> $.
+$s class Monic $: <mi> Monic </mi> $.
+$s class Poly< $: <msub><mi>Poly</mi> <mo>&lt;</mo></msub> $.
+$s class degAA $: <msub><mi>deg</mi> <mi>&Aopf;</mi></msub> $.
+$s class minPolyAA $: <msub><mi>minPoly</mi> <mi>&Aopf;</mi></msub> $.
+$s class _ZZ $: <mover><mi>&Zopf;</mi> <mo>&oline;</mo></mover> $.
+$s class IntgOver $: <mi>IntgOver</mi> $.
+$s class pmTrsp $: <mi>pmTrsp</mi> $.
+$s class pmSgn $: <mi>pmSgn</mi> $.
+$s class maMul $: <mi> maMul </mi> $.
+$s class Mat $: <mi> Mat </mi> $.
+$s class maDet $: <mi> maDet </mi> $.
+$s class maAdju $: <mi> maAdju </mi> $.
+$s class MEndo $: <mi>MEndo</mi> $.
+$s class SubDRing $: <mi>SubDRing</mi> $.
+$s class Cntr $: <mi>Cntr</mi> $.
+$s class Cntz $: <mi>Cntz</mi> $.
+$s class CytP $: <mi>CytP</mi> $.
+$s class TopSep $: <mi>TopSep</mi> $.
+$s class TopLnd $: <mi>TopLnd</mi> $.
+
+$( Andrew Salmon $)
+$s class +r $: <msub><mo>+</mo> <mi>r</mi></msub> $. 
+$s class -r $: <msub><mo>-</mo> <mi>r</mi></msub> $. 
+$s class PtDf ( A , B ) $: <mrow> <mo>PtDf</mo> <mfenced>#A# #B#</mfenced></mrow> $.
+$s class RR3 $: <mi>RR3</mi> $.
+$s class line3 $: <mi>line3</mi> $.
+
+$( Alexander van der Vekens $)
+$s class defAt $: <mi> defAt </mi> $.
+$s class ''' $: <mi>&#39&#39&#39</mi> $.
+$s class (( A F B )) $: <mfenced open="((" close="))"><mrow>#A# #F# #B#</mrow></mfenced> $.
+$s class FriendGrph $: <mi>FriendGrph</mi> $.
+$s class SPathOn $: <mi>SPathOn</mi> $.
+$s class 2WalksOt $: <mi>2WalksOt</mi> $.
+$s class 2WalksOnOt $: <mi>2WalksOnOt</mi> $.
+$s class 2SPathOnOt $: <mi>2SPathOnOt</mi> $.
+$s class 2SPathsOt $: <mi>2SPathsOt</mi> $.
+
+$( David A. Wheeler $)
+$s class >_ $: <mi> &ge; </mi> $.
+$s class > $: <mi> &gt; </mi> $.
+$s class sinh $: <mi>sinh</mi> $.
+$s class cosh $: <mi>cosh</mi> $.
+$s class tanh $: <mi>tanh</mi> $.
+$s class sec $: <mi>sec</mi> $.
+$s class csc $: <mi>csc</mi> $.
+$s class cot $: <mi>cot</mi> $.
+$s class _ A B $: <mrow><mi mathcolor=#888>_</mi> #A# #B# </mrow> $.
+$s class . $: <mi>.</mi> $.
+$s class sgn $: <mi>sgn</mi> $.
+$s class ceiling $: <mi>&#8968;</mi> $.
+$s class logb $: <mi>logb</mi> $.
+$s class log_ $: <mi>log_</mi> $.
+
+
+$( Alan Sare's Virtual Deduction $)
+$s wff (. ph ->. ps ). $: <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>&rarr;</mo> #ps#</mfenced> $.
+$s wff (. ph ,. ps ->. ch ). $: <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>,</mo> #ps# <mo mathcolor=#0D0>&rarr;</mo> #ch#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ->. th ). $: <mfenced mathcolor=#0D0 separators="">#ph# <mo mathcolor=#0D0>,</mo> #ps# <mo mathcolor=#0D0>,</mo> #ch# <mo mathcolor=#0D0>&rarr;</mo> #th#</mfenced> $.
+$s wff (. ph ,. ps ). $: <mfenced mathcolor=#0D0>#ph# #ps#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ,. rh ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si# #rh#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ,. rh ,. mu ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si# #rh# #mu#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ,. rh ,. mu ,. la ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si# #rh# #mu# #la#</mfenced> $.
+$s wff (. ph ,. ps ,. ch ,. th ,. ta ,. et ,. ze ,. si ,. rh ,. mu ,. la ,. ka ). $: <mfenced mathcolor=#0D0>#ph# #ps# #ch# #th# #ta# #et# #ze# #si# #rh# #mu# #la# #ka#</mfenced> $.
+
+
+$( Jonathan Ben-Naim's $)
+$s class _pred ( X , A , R ) $: <mrow> <mo>pred</mo> <mfenced>#X# #A# #R#</mfenced></mrow> $.
+$s class _Se $: <mi> Se </mi> $.
+$s class _FrSe $: <mi> FrSe </mi> $.
+$s class _trCl ( X , A , R ) $: <mrow> <mo>trCl</mo> <mfenced>#X# #A# #R#</mfenced></mrow> $.
+$s wff _TrFo ( B , A , R ) $: <mrow> <mo>TrFo</mo> <mfenced>#B# #A# #R#</mfenced></mrow> $.
+
+$( Norm Megill $)
+$s class <oL $: <msub><mo>&#8918;</mo> <mi>L</mi></msub> $.
+$s class <o $: <mo>&#8918;</mo> $.
+$s class ( <o ` A ) $: <msub><mo>&#8918;</mo> #A#</msub> $.
+$s class LSAtoms $: <mi>LSAtoms</mi> $.
+$s class LSHyp $: <mi>LSHyp</mi> $.
+$s class LFnl $: <mi>LFnl</mi> $.
+$s class LKer $: <mi>LKer</mi> $.
+$s class LDual $: <mi>LDual</mi> $.
+$s class OP $: <mi>OP</mi> $.
+$s class cm $: <mi>cm</mi> $.
+$s class OL $: <mi>OL</mi> $.
+$s class OML $: <mi>OML</mi> $.
+$s class Atoms $: <mi>Atoms</mi> $.
+$s class AtLat $: <mi>AtLat</mi> $.
+$s class CvLat $: <mi>CvLat</mi> $.
+$s class HL $: <mi>HL</mi> $.
+$s class LLines $: <mi>LLines</mi> $.
+$s class LPlanes $: <mi>LPlanes</mi> $.
+$s class LVols $: <mi>LVols</mi> $.
+$s class Lines $: <mi>Lines</mi> $.
+$s class Points $: <mi>Points</mi> $.
+$s class PSubSp $: <mi>PSubSp</mi> $.
+$s class pmap $: <mi>pmap</mi> $.
+$s class PCl $: <mi>PCl</mi> $.
+$s class PSubCl $: <mi>PSubCl</mi> $.
+$s class LHyp $: <mi>LHyp</mi> $.
+$s class LAut $: <mi>LAut</mi> $.
+$s class WAtoms $: <mi>WAtoms</mi> $.
+$s class PAut $: <mi>PAut</mi> $.
+$s class LDil $: <mi>LDil</mi> $.
+$s class LTrn $: <mi>LTrn</mi> $.
+$s class Dil $: <mi>Dil</mi> $.
+$s class Trn $: <mi>Trn</mi> $.
+$s class trL $: <mi>trL</mi> $.
+$s class TGrp $: <mi>TGrp</mi> $.
+$s class TEndo $: <mi>TEndo</mi> $.
+$s class EDRing $: <mi>EDRing</mi> $.
+$s class EDRingR $: <msub><mi>EDRing</mi> <mi>R</mi></msub> $.
+$s class DVecA $: <mi>DVecA</mi> $.
+$s class DIsoA $: <mi>DIsoA</mi> $.
+$s class DVecH $: <mi>DVecH</mi> $.
+$s class ocA $: <mi>ocA</mi> $.
+$s class vA $: <mi>vA</mi> $.
+$s class DIsoB $: <mi>DIsoB</mi> $.
+$s class DIsoC $: <mi>DIsoC</mi> $.
+$s class DIsoH $: <mi>DIsoH</mi> $.
+$s class ocH $: <mi>ocH</mi> $.
+$s class joinH $: <mi>joinH</mi> $.
+$s class LPol $: <mi>LPol</mi> $.
+$s class LCDual $: <mi>LCDual</mi> $.
+$s class mapd $: <mi>mapd</mi> $.
+$s class HVMap $: <mi>HVMap</mi> $.
+$s class HDMap1 $: <mi>HDMap1</mi> $.
+$s class HDMap $: <mi>HDMap</mi> $.
+$s class HGMap $: <mi>HGMap</mi> $.
+$s class HLHil $: <mi>HLHil</mi> $.
+$s class mapd $: <mi>mapd</mi> $.
+
+
+
+
+$( Schemes with unknown tokens:
+$s class ==3 $: <mi> &#x2261;&#x2083; </mi> $.
+$s class dst $: <mi>dst</mi> $.
+$s class absv $: <mi>absv</mi> $.
+$s class nrm $: <mi>nrm</mi> $.
+$s class IndClsBu $: <mi>IndClsBu</mi> $.
+$s class ||g $: <mi>||g</mi> $.
+$s class plane3 $: <mi>plane3</mi> $.
+$s class trP $: <mi>trP</mi> $.
+$s class _fns $: <mi> fns </mi> $.
+$s class AtsLat $: <mi>AtsLat</mi> $.
+$s class ser $: <mi>ser</mi> $.
+$s class fcard $: <mi>fcard</mi> $.
+$s class C_rng $: <mi>C_rng</mi> $.
+$s class -vNEW $: <mi>-vNEW</mi> $.
+$s class RVecNEW $: <mi>RVecNEW</mi> $.
+$s class SubSpNEW $: <mi>SubSpNEW</mi> $.
+$s class spanNEW $: <mi>spanNEW</mi> $.
+$s class o+ $: <mi>o+</mi> $.
+$s class /v $: <mi>/v</mi> $.
+$s class normv $: <mi>normv</mi> $.
+$s class sumP $: <mi>sumP</mi> $.
+$s class BasesP $: <mi>BasesP</mi> $.
+$s class rankP $: <mi>rankP</mi> $.
+$s class PHyp $: <mi>PHyp</mi> $.
+$s class eImage $: <mi>eImage</mi> $.
+$s class *HRing $: <mi>*HRing</mi> $.
+$)
+
+$( Words $)
+$s class Word A $: <mrow> <mi>Word</mi> #A# </mrow> $.
+$s class <" A "> $: <mrow> <mo>&lang;&ldquo;</mo> #A# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B C "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B C D "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C##D# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B C D E "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C##D##E# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B C D E F "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C##D##E##F# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B C D E F G "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C##D##E##F##G# <mo>&rdquo;&rang;</mo> </mrow> $.
+$s class <" A B C D E F G H "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C##D##E##F##G##H# <mo>&rdquo;&rang;</mo> </mrow> $.
+
+
+$( Orders $)
+$s wff R Po A $: <mrow> #R# <mi>Po</mi> #A# </mrow> $.
+$s wff R Or A $: <mrow> #R# <mi>Or</mi> #A# </mrow> $.
+$s wff R Fr A $: <mrow> #R# <mi>Fr</mi> #A# </mrow> $.
+$s wff R Se A $: <mrow> #R# <mi>Se</mi> #A# </mrow> $.
+$s wff R We A $: <mrow> #R# <mi>We</mi> #A# </mrow> $.
+$s wff Ord A $: <mrow> <mi>Ord</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s wff Lim A $: <mrow> <mi>Lim</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class suc A $: <mrow> <mi>suc</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class AC_ A $: <mrow> <munder><mi>AC</mi> <mo>&#x5F;</mo></munder> #A# </mrow> $.
+
+
+$(
+@( Numerical constants @)
+@s class 0 @: <mn> 0 </mn> @.
+@s class 1 @: <mn> 1 </mn> @.
+@s class 2 @: <mn> 2 </mn> @.
+@s class 3 @: <mn> 3 </mn> @.
+@s class 4 @: <mn> 4 </mn> @.
+@s class 5 @: <mn> 5 </mn> @.
+@s class 6 @: <mn> 6 </mn> @.
+@s class 7 @: <mn> 7 </mn> @.
+@s class 8 @: <mn> 8 </mn> @.
+@s class 9 @: <mn> 9 </mn> @.
+$)
+
+$s class 10 $: <mn> 10 </mn> $.
+
+$( Arithmetic number builder $)
+$i class-n M $: <mi mathcolor=#808>M</mi> $.
+$i class-n N $: <mi mathcolor=#808>N</mi> $.
+$i class-n I $: <mi mathcolor=#808>I</mi> $.
+$i class-n J $: <mi mathcolor=#808>J</mi> $.
+$s class-n 0 $: 0 $.
+$s class-n 1 $: 1 $.
+$s class-n 2 $: 2 $.
+$s class-n 3 $: 3 $.
+$s class-n 4 $: 4 $.
+$s class-n 5 $: 5 $.
+$s class-n 6 $: 6 $.
+$s class-n 7 $: 7 $.
+$s class-n 8 $: 8 $.
+$s class-n 9 $: 9 $.
+$s class -u N $: <mn> -#N# </mn> $.
+$s class-n ; M N $: <mn> #M##N# </mn> $.
+$s class-n ; ; M N I $: <mn> #M##N##I# </mn> $.
+$s class-n ; ; ; M N I J $: <mn> #M##N##I##J# </mn> $.
+
+$( Special constants $)
+$s class ( RR X. RR ) $: <msup> <mi> &Ropf; </mi> <mn>2</mn> </msup> $.
+$s class-o ( RR X. RR ) $: <msup> <mi> &Ropf; </mi> <mn>2</mn> </msup> $.
+
+$( Using token ` class-o ` as a type token for classes constructs without parenthesis, and ` O ` and ` P ` as identifiers for such cases. $)
+$i class-o O $: <mi mathcolor=#808>O</mi> $.
+$i class-o P $: <mi mathcolor=#808>P</mi> $.
+$i class-o Q $: <mi mathcolor=#808>Q</mi> $.
+$i class-o S $: <mi mathcolor=#808>S</mi> $.
+
+$( Logics $)
+$s wff -. ph $: <mrow> <mo>&not;</mo> #ph# </mrow> $.
+$s wff ( ph -> ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.7em rspace=.7em>&rarr;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph <-> ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.7em rspace=.7em>&harr;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph /\ ps /\ ch ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&and;</mo> #ps# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&and;</mo> #ch# </mrow></mfenced> $.
+$s wff ( ph \/ ps \/ ch ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&or;</mo> #ps# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&or;</mo> #ch# </mrow></mfenced> $.
+$s wff ( ph /\ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&and;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph \/ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&or;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph -/\ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&#8892;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph \/_ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&#8891</mo> #ps# </mrow></mfenced> $.
+
+$( Quantifiers $)
+$s wff A. x e. A ph $: <mrow> <mo>&forall;</mo> #x# <mo>&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E. x e. A ph $: <mrow> <mo>&exist;</mo> #x# <mo>&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E! x e. A ph $: <mrow> <mo>&exist;!</mo> #x# <mo>&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E* x e. A ph $: <mrow> <msup><mo>&exist;</mo><mo>*</mo></msup> #x# <mo>&isin;</mo> #A# #ph# </mrow> $.
+$s wff A. x ph $: <mrow> <mo>&forall;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E. x ph $: <mrow> <mo>&exist;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E! x ph $: <mrow> <mo>&exist;!</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E* x ph $: <mrow> <msup><mo>&exist;</mo><mo>*</mo></msup> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff F/ x ph $: <mrow> <mo>&#8498;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff F/_ x A $: <mrow> <munder><mo> &#8498; </mo><mo> &#x5F; </mo></munder> #x# <mspace width=.4em /> #A# </mrow> $.
+
+
+
+
+$( Classes and sets $)
+$s wff O = P $: <mrow> #O# <mo>=</mo> #P# </mrow> $.
+$s wff O =/= P $: <mrow> #O# <mo>&ne;</mo> #P# </mrow> $.
+$s wff O < P $: <mrow> #O# <mo><</mo> #P# </mrow> $.
+$s wff O <_ P $: <mrow> #O# <mo>&le;</mo> #P# </mrow> $.
+$s wff O <RR P $: <mrow> #O# <msub><mo>&lt;</mo> <mi>&Ropf;</mi></msub> #P# </mrow> $.
+$s wff -. O C_ P $: <mrow> #O# <mo>&nsube;</mo> #P# </mrow> $.
+$s wff O C_ P $: <mrow> #O# <mo>&sube;</mo> #P# </mrow> $.
+$s wff O C. P $: <mrow> #O# <mo>&sub;</mo> #P# </mrow> $.
+$s wff -. A e. B $: <mrow> #A# <mo>&notin;</mo> #B# </mrow> $.
+$s wff A e/ B $: <mrow> #A# <mo>&notin;</mo> #B# </mrow> $.
+$s wff [ y / x ] ph $: <mrow><mfenced open="[" close="]" separators="/"> #y# #x# </mfenced> #ph# </mrow> $.
+$s wff [. A / x ]. ph $: <mrow><munder accentunder><mo fence>[</mo><mo>&#x02D9;</mo></munder>#A# <mo>/</mo> #x#<munder accentunder><mo fence>]</mo><mo>&#x02D9;</mo></munder> #ph#</mrow> $.
+$s class [_ A / x ]_ B $: <mrow><mo fence>&#x298B;</mo> #A# <mo>/</mo> #x#<mo fence>&#x298C;</mo> #B#</mrow> $.
+$s class { <. x , y >. | ph } $: <mfenced open="{" close="}"> <mrow><mfenced open="&lang;" close="&rang;">#x# #y#</mfenced> <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class { <. <. x , y >. , z >. | ph } $: <mfenced open="{" close="}"> <mrow><mfenced open="&lang;" close="&rang;"><mfenced open="&lang;" close="&rang;">#x# #y#</mfenced> #z#</mfenced> <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class { x e. A | ph } $: <mfenced open="{" close="}"> <mrow>#x# <mo>&isin;</mo> #A# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class { x | ph } $: <mfenced open="{" close="}"><mrow> #x#  <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class ~P A $: <mrow> <mo from="prefix">&#119979;</mo> #A# </mrow> $.
+$s class ( A X. B ) $: <mfenced><mrow> #A# <mo>&times;</mo> #B# </mrow></mfenced> $.
+$s class ( A u. B ) $: <mfenced><mrow> #A# <mo>&cup;</mo> #B# </mrow></mfenced> $.
+$s class ( A i^i B ) $: <mfenced><mrow> #A# <mo>&cap;</mo> #B# </mrow></mfenced> $.
+$s class ( A \ B ) $: <mfenced><mrow> #A# <mo>&ssetmn;</mo> #B# </mrow></mfenced> $.
+$s class-o ( A X. B ) $: <mrow> #A# <mo>&times;</mo> #B# </mrow> $.
+$s class-o ( A u. B ) $: <mrow> #A# <mo>&cup;</mo> #B# </mrow> $.
+$s class-o ( A i^i B ) $: <mrow> #A# <mo>&cap;</mo> #B# </mrow> $.
+$s class-o ( A \ B ) $: <mrow> #A# <mo>&ssetmn;</mo> #B# </mrow> $.
+$s class { O , P , Q } $: <mfenced open="{" close="}"> #O# #P# #Q# </mfenced> $.
+$s class { O , P } $: <mfenced open="{" close="}"> #O# #P# </mfenced> $.
+$s class { O } $: <mfenced open="{" close="}"> #O# </mfenced> $.
+$s class <. O , P , Q >. $: <mfenced open="&lang;" close="&rang;"> #O# #P# #Q# </mfenced> $.
+$s class <. O , P >. $: <mfenced open="&lang;" close="&rang;"> #O# #P# </mfenced> $.
+$s wff Smo A $: <mrow> <mi>Smo</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class [ A ] R $: <mrow><mfenced open="[" close="]"> #A# </mfenced> #R#</mrow> $.
+$s class ( A /. R ) $: <mfenced><mrow> #A# <mo>/</mo> #R# </mrow></mfenced> $.
+$s class-o ( A /. R ) $: <mrow> #A# <mo>/</mo> #R# </mrow> $.
+$s wff R Er A $: <mrow>#R# <mi>Er</mi> #A#</mrow> $.
+$s wff Tr A $: <mrow> <mi>Tr</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s wff Rel R $: <mrow> <mi>Rel</mi> <mo>&ApplyFunction;</mo> #R# </mrow> $.
+$s wff Fun A $: <mrow> <mi>Fun</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class dom A $: <mrow> <mi>dom</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ran A $: <mrow> <mi>ran</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class oF R $: <mrow> <msub><mo>&compfn;</mo> <mi>f</mi></msub> <mo>&ApplyFunction;</mo> #R# </mrow> $. $( was &fnof; $)
+$s class oR R $: <mrow> <msub><mo>&compfn;</mo> <mi>r</mi></msub> <mo>&ApplyFunction;</mo> #R# </mrow> $.
+$s class oFC R $: <mrow> <msub><mo>&compfn;</mo> <mi>fc</mi></msub> <mo>&ApplyFunction;</mo> #R# </mrow> $. $( was &fnof; $)
+$s class ( F oF R G ) $: <mfenced><mrow>#F# <msub>#R# <mi>f</mi></msub> #G#</mrow></mfenced> $.
+$s class-o ( F oF R G ) $: <mrow>#F# <msub>#R# <mi>f</mi></msub> #G#</mrow> $.
+$s class F oF R G $: <mrow>#F# <msub>#R# <mi>f</mi></msub> #G#</mrow> $.
+
+$( Functions $)
+$s class `' A $: <msup> #A# <mn>-1</mn> </msup> $.
+$s class ( A " O ) $: <mrow> #A# <mfenced open="[" close="]">#O#</mfenced> </mrow> $. $( Removed stretchy="false" $)
+$s class ( A o. B ) $: <mfenced><mrow> #A# <mo>&compfn;</mo> #B# </mrow></mfenced> $.
+$s class ( A |` B ) $: <mfenced><msub><mrow> #A# <mo>&uharr;</mo></mrow> #B# </msub></mfenced> $.
+$s class ( A ^m B ) $: <mfenced><msup> #A# #B# </msup></mfenced> $.
+$s class-o ( A o. B ) $: <mrow> #A# <mo>&compfn;</mo> #B# </mrow> $.
+$s class-o ( A |` B ) $: <msub><mrow> #A# <mo>&uharr;</mo></mrow> #B# </msub> $.
+$s class-o ( A ^m B ) $: <msup> #A# #B# </msup> $.
+$s wff A Fn B $:  <mrow> #A# <mo>Fn</mo> #B# </mrow> $.
+
+
+$( Arithmetics $)
+$s class ( O / P ) $: <mfenced><mfrac> #O# #P# </mfrac></mfenced> $.
+$s class-o ( O / P ) $: <mfrac> #O# #P# </mfrac> $.
+$s class -u ( O / P ) $: <mfenced><mrow><mo form="prefix">&minus;</mo> <mfrac> #O# #P# </mfrac> </mrow></mfenced> $.
+$s class-o -u ( O / P ) $: <mrow><mo form="prefix">&minus;</mo> <mfrac> #O# #P# </mfrac> </mrow> $.
+$s class -u A $: <mfenced><mrow><mo form="prefix">&minus;</mo> #A# </mrow></mfenced> $.
+$s class-o -u A $: <mrow><mo form="prefix">&minus;</mo> #A# </mrow> $.
+$s class -e A $: <mfenced><mrow><mo form="prefix">&minus;</mo> #A# </mrow></mfenced> $.
+$s class-o -e A $: <mrow><mo form="prefix">&minus;</mo> #A# </mrow> $.
+$s class ( sqr ` O ) $: <msqrt> #O# </msqrt> $.
+$s class ( * ` O ) $: <mover> #O# <mo>&oline;</mo></mover> $.
+$s class ( sin ` A ) $: <mrow> <mi>sin</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ( cos ` A ) $: <mrow> <mi>cos</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ( tan ` A ) $: <mrow> <mi>tan</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ( log ` A ) $: <mrow> <mi>log</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ( abs ` O ) $: <mfenced open="|" close="|">#O#</mfenced> $.
+$s class ( exp ` O ) $: <msup><mi>e</mi> #O#</msup> $.
+$s class ( logb ` O ) $: <msub><mi>log</mi> #O#</msub> $.
+$s class-o ( O logb A ) $: <mrow><msub><mi>log</mi> #O#</msub> #A#</mrow> $.
+$s class ( O logb A ) $: <mrow><msub><mi>log</mi> #O#</msub> #A#</mrow> $.
+$s class ( # ` O ) $: <mfenced open="|" close="|">#O#</mfenced> $.
+$s class ( |_ ` O ) $: <mfenced open="&lfloor;" close="&rfloor;">#O#</mfenced> $.
+$s class ( ! ` A ) $: <mrow>#A# <mo form="postfix">&excl;</mo></mrow> $.
+
+$( Minus sign and exponents : make sure brackets are added. $)
+$s class ( -u A ^ O ) $: <msup> <mfenced><mrow><mo form="prefix">&minus;</mo> #A# </mrow></mfenced> #O# </msup> $.
+$s class ( -u A ^c O ) $: <msup> <mfenced><mrow><mo form="prefix">&minus;</mo> #A# </mrow></mfenced> #O# </msup> $.
+$s class-o ( -u A ^ O ) $: <msup> <mfenced><mrow><mo form="prefix">&minus;</mo> #A# </mrow></mfenced> #O# </msup> $.
+$s class-o ( -u A ^c O ) $: <msup> <mfenced><mrow><mo form="prefix">&minus;</mo> #A# </mrow></mfenced> #O# </msup> $.
+
+
+$( Composing exponents $)
+$s class ( ( A ^ O ) ^ P ) ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class ( ( A ^ O ) ^c P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class ( ( A ^c O ) ^ P ) ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class ( ( A ^c O ) ^c P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class-o ( ( A ^ O ) ^ P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class-o ( ( A ^ O ) ^c P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class-o ( ( A ^c O ) ^ P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+$s class-o ( ( A ^c O ) ^c P ) $: <msup> <mfenced><msup> #A# #O# </msup></mfenced> #P# </msup> $.
+
+$s class ( A ^ O ) $: <msup> #A# #O# </msup> $.
+$s class ( A ^c O ) $: <msup> #A# #O# </msup> $.
+$s class-o ( A ^ O ) $: <msup> #A# #O# </msup> $.
+$s class-o ( A ^c O ) $: <msup> #A# #O# </msup> $.
+
+$( Intervals $)
+$s class ( O [,] P ) $: <mfenced open='[' close=']'> #O# #P# </mfenced> $.
+$s class ( O [,) P ) $: <mfenced open='[' close=')'> #O# #P# </mfenced> $.
+$s class ( O (,] P ) $: <mfenced open='(' close=']'> #O# #P# </mfenced> $.
+$s class ( O (,) P ) $: <mfenced open='(' close=')'> #O# #P# </mfenced> $.
+$s class ( O ... P ) $: <mfenced><mrow>#O# <mo>&hellip;</mo> #P#</mrow></mfenced> $.
+$s class ( O ..^ P ) $: <mfenced><mrow>#O# <mo>..^</mo> #P#</mrow></mfenced> $.
+$s class-o ( O [,] P ) $: <mfenced open='[' close=']'> #O# #P# </mfenced> $.
+$s class-o ( O [,) P ) $: <mfenced open='[' close=')'> #O# #P# </mfenced> $.
+$s class-o ( O (,] P ) $: <mfenced open='(' close=']'> #O# #P# </mfenced> $.
+$s class-o ( O (,) P ) $: <mfenced open='(' close=')'> #O# #P# </mfenced> $.
+$s class-o ( O ... P ) $: <mfenced><mrow>#O# <mo>&hellip;</mo> #P#</mrow></mfenced> $.
+$s class-o ( O ..^ P ) $: <mfenced><mrow>#O# <mo>..^</mo> #P#</mrow></mfenced> $.
+
+
+$( Associativity for addition $)
+$s class ( ( A + B ) + ( C + D ) ) $: <mfenced><mrow>#A# <mo>+</mo> #B# <mo>+</mo> #C# <mo>+</mo> #D# </mrow></mfenced> $.
+$s class ( ( A + B ) + C ) $: <mfenced><mrow>#A# <mo>+</mo> #B# <mo>+</mo> #C# </mrow></mfenced> $.
+$s class ( A + ( B + C ) ) $: <mfenced><mrow>#A# <mo>+</mo> #B# <mo>+</mo> #C# </mrow></mfenced> $.
+
+$s class ( A + ( B - C ) ) $: <mfenced><mrow>#A# <mo>+</mo> #B# <mo>-</mo> #C# </mrow></mfenced> $.
+$s class ( ( A - B ) + C ) $: <mfenced><mrow>#A# <mo>-</mo> #B# <mo>+</mo> #C# </mrow></mfenced> $.
+$s class ( ( A + B ) - C ) $: <mfenced><mrow>#A# <mo>+</mo> #B# <mo>-</mo> #C# </mrow></mfenced> $.
+$s class ( ( A - B ) - C ) $: <mfenced><mrow>#A# <mo>-</mo> #B# <mo>-</mo> #C# </mrow></mfenced> $.
+
+$s class ( -u A + B ) $: <mfenced><mrow> <mo>-</mo> #A# <mo>+</mo> #B# </mrow></mfenced> $.
+$s class ( -u A - B ) $: <mfenced><mrow> <mo>-</mo> #A# <mo>-</mo> #B# </mrow></mfenced> $.
+
+$( Associativity for addition non-fenced expressions $)
+$s class-o ( ( A + B ) + ( C + D ) ) $: <mrow>#A# <mo>+</mo> #B# <mo>+</mo> #C# <mo>+</mo> #D# </mrow> $.
+$s class-o ( ( A + B ) + C ) $: <mrow>#A# <mo>+</mo> #B# <mo>+</mo> #C# </mrow> $.
+$s class-o ( A + ( B + C ) ) $: <mrow>#A# <mo>+</mo> #B# <mo>+</mo> #C# </mrow> $.
+
+$s class-o ( A + ( B - C ) ) $: <mrow>#A# <mo>+</mo> #B# <mo>-</mo> #C# </mrow> $.
+$s class-o ( ( A - B ) + C ) $: <mrow>#A# <mo>-</mo> #B# <mo>+</mo> #C# </mrow> $.
+$s class-o ( ( A + B ) - C ) $: <mrow>#A# <mo>+</mo> #B# <mo>-</mo> #C# </mrow> $.
+$s class-o ( ( A - B ) - C ) $: <mrow>#A# <mo>-</mo> #B# <mo>-</mo> #C# </mrow> $.
+
+$s class-o ( -u A + B ) $: <mrow> <mo>-</mo> #A# <mo>+</mo> #B# </mrow> $.
+$s class-o ( -u A - B ) $: <mrow> <mo>-</mo> #A# <mo>-</mo> #B# </mrow> $.
+
+$( No need for additional rules for associativity for multiplication, as it is already not fenced $)
+$( No need for additional rules for precedence of multiplication over addition as it is already not fenced. $)
+$( Precedence of multiplication over addition - no need for additional rules, multiplication is already not fenced. $)
+
+$( Multiplication : invisible times or dot $)
+$s class ( M x. N ) $: <mrow> <mn>#M#</mn> <mo>&sdot;</mo> <mn>#N#</mn> </mrow> $.
+$s class ( 0 x. A ) $: <mrow> <mn>0</mn> <mo>&sdot;</mo> #A# </mrow> $. $( Add a dot when multiplying with zero, as this is not commonly written. $)
+$s class ( A x. M ) $: <mrow> #A# <mo>&sdot;</mo> <mn>#M#</mn> </mrow> $. $( Add a dot when right-multiplying with a number, as this is not commonly written. $)
+$s class ( A x. B ) $: <mrow> #A# <mo>&InvisibleTimes;</mo> #B# </mrow> $.
+$s class-o ( M x. N ) $: <mrow> <mn>#M#</mn> <mo>&sdot;</mo> <mn>#N#</mn> </mrow> $.
+$s class-o ( 0 x. A ) $: <mrow> <mn>0</mn> <mo>&sdot;</mo> #A# </mrow> $. $( Add a dot when multiplying with zero, as this is not commonly written. $)
+$s class-o ( A x. M ) $: <mrow> #A# <mo>&sdot;</mo> <mn>#M#</mn> </mrow> $. $( Add a dot when right-multiplying with a number, as this is not commonly written. $)
+$s class-o ( A x. B ) $: <mrow> #A# <mo>&InvisibleTimes;</mo> #B# </mrow> $.
+
+$( Algebraic Constructs $)
+$s class ( Base ` A ) $: <msub><mi>Base</mi> #A#</msub> $.
+$s class ( 0g ` A ) $: <msub><mn>0</mn> #A#</msub> $.
+$s class ( .g ` A ) $: <msub><mo>&sdot;</mo> #A#</msub> $.
+$s class ( +g ` A ) $: <msub><mo>+</mo> #A#</msub> $.
+$s class ( -g ` A ) $: <msub><mo>-</mo> #A#</msub> $.
+$s class ( 1r ` A ) $: <msub><mn>1</mn> #A#</msub> $.
+$s class ( *r ` A ) $: <msub><mn>*</mn> #A#</msub> $.
+$s class ( .r ` A ) $: <msub><mo>&sdot;</mo> #A#</msub> $.
+$s class ( .s ` A ) $: <msub><mo>&sdot;</mo> #A#</msub> $.
+$s class ( le ` A ) $: <msub><mo>&le;</mo> #A#</msub> $.
+$s class ( lt ` A ) $: <msub><mo>&lt;</mo> #A#</msub> $.
+$s class ( mulGrp ` A ) $: <msub><mi>mulGrp</mi> #A#</msub> $.
+$s class ( ( *r ` A ) ` B ) $: <msup>#B# <msub><mn>*</mn> #A#</msub></msup> $.
+$s class ( Z/nZ ` A ) $: <mrow><mi>&Zopf;</mi><mo>/</mo>#A#<mi>&Zopf;</mi></mrow> $.
+
+$( Constructs $)
+$s class ( O _C P ) $: <mrow> <mo>(</mo> <mfrac linethickness="0">#O# #P#</mfrac><mo>)</mo> </mrow> $.
+$s class-o ( O _C P ) $: <mrow> <mo>(</mo> <mfrac linethickness="0">#O# #P#</mfrac><mo>)</mo> </mrow> $.
+$s class ( x e. A , y e. B |-> O ) $: <mfenced separators=",&longmapsto;"><mrow>#x# <mo>&isin;</mo> #A#</mrow> <mrow> #y# <mo>&isin;</mo> #B#</mrow> #O#</mfenced> $.
+$s class ( x e. A |-> O ) $: <mfenced separators="&longmapsto;"><mrow>#x# <mo>&isin;</mo> #A#</mrow> #O#</mfenced> $.
+$s class if ( ph , O , P ) $: <mrow> <mo>if</mo> <mfenced>#ph# #O# #P#</mfenced></mrow> $.
+$s class sup ( O , P , Q ) $: <mrow> <mo>sup</mo> <mfenced>#O# #P# #Q#</mfenced></mrow> $.
+$s class |^|_ x e. ( O ... P ) A $: <mrow><munderover><mo>&xcap;</mo> <mrow>#x# <mo>=</mo> #O#</mrow> #P# </munderover> #A# </mrow> $.
+$s class U_ x e. ( O ... P ) A $: <mrow><munderover><mo>&xcup;</mo> <mrow>#x# <mo>=</mo> #O#</mrow> #P# </munderover> #A# </mrow> $.
+$s wff Disj_ x e. ( O ... P ) A $: <mrow><munderover><mo>Disj</mo> <mrow>#x# <mo>=</mo> #O#</mrow> #P# </munderover> #A# </mrow> $.
+$s class sum_ x e. ( O ... P ) A $: <mrow><munderover><mo>&sum;</mo><mrow> #x# <mo>=</mo> #O# </mrow> #P# </munderover> #A# </mrow> $.
+$s class sum* x e. ( O ... P ) A $: <mrow><munderover><msup><mo>&sum;</mo> <mi>*</mi></msup><mrow> #x# <mo>=</mo> #O# </mrow> #P# </munderover> #A# </mrow> $.
+$s class X_ x e. ( O ... P ) A $: <mrow><munderover><mo>&#x2a09;</mo><mrow> #x# <mo>=</mo> #O# </mrow> #P# </munderover> #A# </mrow> $.
+$s class |^|_ x e. O A $: <mrow><munder><mo>&xcap;</mo> <mrow>#x# <mo>&isin;</mo> #O#</mrow></munder> #A# </mrow> $.
+$s class U_ x e. O A $: <mrow><munder><mo>&xcup;</mo> <mrow>#x# <mo>&isin;</mo> #O#</mrow></munder> #A# </mrow> $.
+$s wff Disj_ x e. O A $: <mrow><munder><mo>Disj</mo> <mrow>#x# <mo>&isin;</mo> #O#</mrow></munder> #A# </mrow> $.
+$s class sum_ x e. O A $: <mrow><munder><mo>&sum;</mo><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
+$s class sum* x e. O A $: <mrow><munder><msup><mo>&sum;</mo> <mi>*</mi></msup><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
+$s class prod_ x e. O A $: <mrow><munder><mo>&prod;</mo><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
+$s class X_ x e. O A $: <mrow><munder><mo>&#x2a09;</mo><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
+$s class ( Q gsum ( x e. ( O ... P ) |-> B ) ) $: <mfenced><munderover><msub><mo>&Sum;</mo> #Q#</msub> <mrow> #x# <mo>=</mo> #O# </mrow> #P#</munderover> #B#</mfenced> $.
+$s class ( Q gsum ( x e. O |-> B ) ) $: <mfenced><munder><msub><mo>&Sum;</mo> #Q#</msub> <mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #B#</mfenced> $.
+$s class ( Q gsum A ) $: <mfenced><msub><mo>&Sum;</mo> #Q#</msub> #A#</mfenced> $.
+$s class-o ( Q gsum ( x e. ( O ... P ) |-> B ) ) $: <mrow><munderover><msub><mo>&Sum;</mo> #Q#</msub> <mrow> #x# <mo>=</mo> #O# </mrow> #P#</munderover> #B#</mrow> $.
+$s class-o ( Q gsum ( x e. O |-> B ) ) $: <mrow><munder><msub><mo>&Sum;</mo> #Q#</msub> <mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #B#</mrow> $.
+$s class-o ( Q gsum A ) $: <mrow><msub><mo>&Sum;</mo> #Q#</msub> #A#</mrow> $.
+$s class |^| A $: <mrow> <mo>&xcap;</mo> #A# </mrow> $.
+$s class U. A $: <mrow> <mo>&xcup;</mo> #A# </mrow> $.
+$s class recs ( F ) $: <mrow> <mi>recs</mi> <mo>&ApplyFunction;</mo> <mfenced>#F#</mfenced> </mrow> $. $( Removed stretchy="false" $)
+$s class rec ( F , O ) $: <mrow> <mi>rec</mi> <mo>&ApplyFunction;</mo> <mfenced> #F# #O# </mfenced> </mrow> $. $( Removed stretchy="false" $)
+$s class seq A ( .+ , F ) $: <mrow> <mo>seq</mo> #A# <mfenced> #.+# #F# </mfenced></mrow> $.
+$s class ( iota x ph ) $: <mfenced> <mrow><mo>&iota;</mo> #x# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class ( iota_ x e. A ph ) $: <mfenced> <mrow><mo>&iota;</mo> #x# <mo>&isin;</mo> #A# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class ( ZZ>= ` A ) $: <msub> <mi>&Zopf;</mi> <mrow> <mo>&ge;</mo> #A# </mrow> </msub> $.
+$s class S. A B _d x $:  <mrow> <msub> <mo> &#x222B;</mo> #A# </msub> #B# <mo>d</mo>#x#</mrow> $.
+$s class S_ [ A -> B ] C _d x $: <mrow> <msubsup> <mo> &#x222B;</mo> #A# #B# </msubsup> #C# <mo>d</mo>#x#</mrow> $.
+$s class-o ( A _D ( x e. B |-> O ) ) $: <mfrac><mrow><mo>d</mo><mfenced separators="&longmapsto;"><mrow>#x# <mo>&isin;</mo> #B#</mrow> #O#</mfenced></mrow> <mrow><msub><mo>d</mo>#A#</msub> #x#</mrow></mfrac> $.
+$s class ( A _D ( x e. B |-> O ) ) $: <mfrac><mrow><mo>d</mo><mfenced separators="&longmapsto;"><mrow>#x# <mo>&isin;</mo> #B#</mrow> #O#</mfenced></mrow> <mrow><msub><mo>d</mo>#A#</msub> #x#</mrow></mfrac> $.
+$s class ( A _D F ) $: <msubsup>#F# #A# <mo>&#x2032;</mo></msubsup> $.
+$( s class ( A _D F ) $: <mfenced><msubsup>#F# #A# <mo>&#x2032;</mo></msubsup></mfenced> $)
+$s wff F : O --> P $: <mrow> #F# <mo>:</mo> #O# <mo>&xrarr;</mo> #P# </mrow> $.
+$s wff F : O -1-1-> P $: <mrow> #F# <mo>:</mo> #O# <munder><mo>&xrarr;</mo> <mo>1-1</mo></munder> #P# </mrow> $.
+$s wff F : O -onto-> P $: <mrow> #F# <mo>:</mo> #O# <munder><mo>&xrarr;</mo> <mo>onto</mo></munder> #P# </mrow> $.
+$s wff F : O -1-1-onto-> P $: <mrow> #F# <mo>:</mo> #O# <munder><mo>&xrarr;</mo> <mo>1-1 onto</mo></munder> #P# </mrow> $.
+$s wff F e. ( A -cn-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder><mo>&xrarr;</mo><mo>cn</mo></munder> #B# </mrow> $.
+$s wff hadd ( ph , ps , ch ) $: <mrow> <mo>hadd</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
+$s wff cadd ( ph , ps , ch ) $: <mrow> <mo>cadd</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
+$s wff CondEq ( x = y -> ph ) $: <mrow> <mo>CondEq</mo> <mfenced><mrow>#x# <mo>=</mo> #y# <mo>&rarr;</mo> #ph#</mrow></mfenced></mrow> $.
+$s wff H Isom O , P ( Q , S ) $: <mrow> #H# <mo>Isom</mo> #O# <mo>,</mo> #P# <mfenced>#Q# #S#</mfenced></mrow> $.
+$s class OrdIso ( O , P ) $: <mrow> <mo>OrdIso</mo> <mfenced>#O# #P#</mfenced></mrow> $.
+$s class seqom ( O , P ) $: <mrow> <msub><mo>seq</mo> <mi>&omega;</mi></msub> <mfenced>#O# #P#</mfenced></mrow> $.
+
+$s class Locally A $: <mrow><mo>Locally<mo> #A# </mrow> $.
+$s class N-Locally A $: <mrow><mo>N-Locally<mo> #A# </mrow> $.
+$s wff Prt A $: <mrow><mo>Prt<mo> #A# </mrow> $.
+
+$( These definitions are placed later because they are overridden by some constructs $)
+$s wff O e. A $: <mrow> #O# <mo>&isin;</mo> #A# </mrow> $.
+$s class ( F ` O ) $: <mrow> #F# <mo>&ApplyFunction;</mo> <mfenced>#O#</mfenced> </mrow> $. $( Removed <mo fence stretchy="false">(</mo> $)
+
+$( From Mathboxes $)
+$s wff ( ph -/\ ps -/\ ch ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&#8892;</mo> #ps# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&#8892;</mo> #ch# </mrow></mfenced> $.
+$s wff ( ph /\ ps /\ ch /\ th ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&and;</mo> #ps# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&and;</mo> #ch#  <mo linebreak=goodbreak lspace=.5em rspace=.5em>&and;</mo> #th# </mrow></mfenced> $.
+$s wff ( ph /\ ps /\ ch /\ th /\ ta ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&and;</mo> #ps# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&and;</mo> #ch#  <mo linebreak=goodbreak lspace=.5em rspace=.5em>&and;</mo> #th#  <mo linebreak=goodbreak lspace=.5em rspace=.5em>&and;</mo> #ta# </mrow></mfenced> $.
+
+
+$( Relation Constants $)
+$s class ~~ $: <mo>&ap;</mo> $.
+$s class ~< $: <mo>&pr;</mo> $.
+$s class ~<_ $: <mo>&prcue;</mo> $.
+$s class ~<_* $: <msup><mo>&prcue;</mo> <mo>*</mo></msup> $.
+$s class ~~> $: <mo>&zigrarr;</mo> $. $( I preferred &dzigrarr; , but that one is not the MathJax fonts. $)
+$s class ~~>r $: <munder accentunder><mo>&zigrarr;</mo><mi>&Ropf;</mi></munder> $.
+$s class ~~>t $: <munder accentunder><mo>&zigrarr;</mo><mi>t</mi></munder> $.
+$s class ~~>u $: <munder accentunder><mo>&zigrarr;</mo><mi>u</mi></munder> $.
+$s class ~~>v $: <munder accentunder><mo>&zigrarr;</mo><mi>v</mi></munder> $.
+$s class <_ $: <mo>&le;</mo> $.
+$s class < $: <mo>&lt;</mo> $.
+$s class <RR $: <msub><mo>&lt;</mo> <mi>&Ropf;</mi></msub> $.
+$s class [C.] $: <mo>[&sub;]</mo> $.
+
+$( Function-like constructs $)
+$s class tpos F $: <mrow><mo>tpos</mo> #F#</mrow> $.
+$s class curry F $: <mrow><mo>curry</mo> #F#</mrow> $.
+$s class uncurry F $: <mrow><mo>uncurry</mo> #F#</mrow> $.
+
+$( Function Constants $)
+$s class || $: <mo>&par;</mo> $.
+$s class # $: <mfenced open="|" close="|"><mi>.</mi></mfenced> $.
+$s class ! $: <mo>&excl;</mo> $.
+$s class har $: <mo>har</mo> $.
+$s class fi $: <mo>fi</mo> $.
+$s class shift $: <mo>shift</mo> $.
+$s class abs $: <mo>abs</mo> $.
+$s class log $: <mo>log</mo> $.
+$s class exp $: <mo>exp</mo> $.
+$s class sin $: <mo>sin</mo> $.
+$s class cos $: <mo>cos</mo> $.
+$s class tan $: <mo>tan</mo> $.
+$s class arcsin $: <mo>arcsin</mo> $.
+$s class arccos $: <mo>arccos</mo> $.
+$s class arctan $: <mo>arctan</mo> $.
+$s class 1st $: <msup><mo>1</mo> <mo>st</mo></msup> $.
+$s class 2nd $: <msup><mo>2</mo> <mo>nd</mo></msup> $.
+$s class ZZ>= $: <msub><mi>&Zopf;</mi> <mo>&ge;</mo></msub> $.
+$s class |_ $: <mfenced open="&lfloor;" close="&rfloor;"><mi>.</mi></mfenced> $.
+$s class Re $: <mo>&Rfr;</mo> $.
+$s class Im $: <mo>&Ifr;</mo> $.
+$s class * $: <mo>*</mo> $.
+$s class gsum $: <msub><mo>&Sigma;</mo><mi>&#x1D454;</mi></msub> $.
+$s class vol $: <mo>vol</mo> $.
+$s class vol* $: <msup><mo>vol</mo> <mo>*</mo></msup> $.
+$s class S.1 $: <msup><mo>&int;</mo> <mn>1</mn></msup> $.
+$s class S.2 $: <msup><mo>&int;</mo> <mn>2</mn></msup> $.
+$s class area $: <mo>area</mo> $.
+
+$( Operator Constants - usually not used outside definition $)
+$s class +c $: <msub> <mo>+</mo> <mo>c</mo> </msub> $.
+$s class + $: <mo>&plus;</mo> $.
+$s class - $: <mo>&minus;</mo> $.
+$s class / $: <mo>&divide;</mo> $.
+$s class x. $: <mo>&times;</mo> $.
+$s class ^ $: <mo>^</mo> $.
+$s class +e $: <msub><mo>&plus;</mo> <mi>&#x1D452;</mi></msub> $.
+$s class -e $: <mo>&minus;</mo> $.
+$s class /e $: <msub><mo>&divide;</mo> <mi>&#x1D452;</mi></msub> $.
+$s class *e $: <msub><mo>&sdot;</mo> <mi>&#x1D452;</mi></msub> $.
+$s class [,] $: <mfenced open='[' close=']'><mi>.</mi></mfenced> $.
+$s class [,) $: <mfenced open='[' close=')'><mi>.</mi></mfenced> $.
+$s class (,] $: <mfenced open='(' close=']'><mi>.</mi></mfenced> $.
+$s class (,) $: <mfenced open='(' close=')'><mi>.</mi></mfenced> $.
+$s class _C $: <mrow> <mo>(</mo> <mfrac linethickness="0"><mi>.</mi> <mi>.</mi></mfrac><mo>)</mo> </mrow> $.
+$s class _D $: <mi>D</mi> $.
+$s class sqr $: <msqrt><mi>.</mi></msqrt> $.
+$s class ... $: <mo>&hellip;</mo> $.
+$s class ..^ $: <mo>..^</mo> $.
+$s class -cn-> $: <munder accentunder><mo>&xrarr;</mo><mo>cn</mo></munder> $.
+$s class mod $: <mo>mod</mo> $.
+$s class +o $: <msub> <mo>+</mo> <mo>&#x1d45c;</mo> </msub> $.
+$s class .o $: <msub> <mo>&sdot;</mo> <mo>&#x1d45c;</mo> </msub> $.
+$s class ^o $: <msub> <mo>&uarr;</mo> <mo>&#x1d45c;</mo> </msub> $.
+$s class ^m $: <msub> <mo>&uarr;</mo> <mo>&#x1d45a;</mo> </msub> $.
+$s class ^pm $: <msub> <mo>&uarr;</mo> <mo>&#x1d45d;&#x1d45a;</mo> </msub> $.
+$s class MblFn $: <mo>MblFn</mo> $.
+$s class limCC $: <msub><mo>lim</mo> <mi>&Copf;</mi></msub> $.
+$s class tX $: <msub><mo>&times;</mo> <mi>t</mi></msub> $.
+
+$s wff A R B $: <mrow>#A# #R# #B#</mrow> $.
+
+$( By default, put brackets on infix operator classes $)
+$s class ( A F B ) $: <mfenced><mrow>#A# #F# #B#</mrow></mfenced> $.
+
+$( By default, don't put brackets on O-classes $)
+$s class-o ( A F B ) $: <mrow>#A# #F# #B#</mrow> $.
+
+$( In last resort, revert class-o to normal class (with parens) $)
+$s class-o A $: #A# $.
+
+$( Try displaying classes as numbers $)
+$s class M $: <mn> #M# </mn> $.
+
+$( For mmdefinitions.html exclusively ... does not work 
+$s wff A = B $: <mrow> #A# <mo>=</mo> #B# </mrow> $.
+$s wff A e. B $: <mrow> #A# <mo>&isin;</mo> #B# </mrow> $.
+$s class ; A B $: <mrow> <mo>;</mo> #A# #B# </mrow> $. $)
+
+
+$( ======================================================================= $)
+
+$( Command: this is the command to be run by Metamath when outputting files
+   for offline pre-rendering. The generated HTML/MATHML output is piped to
+   the command's input stream, and the command's output stream is saved. $)
+$c ../node_modules/mathjax-node-page/bin/mjpage --format MathML --output SVG --speech false --fontURL "http://metamath.tirix.org/fonts/HTML-CSS" --linebreaks $.
+
+
+$( Container: this is what needs to be included around each formula. 
+   The ### is replaced with the formula. It comes in two flavors, one diplay (block), and one for text (inline). $)
+$d <math xmlns="http://www.w3.org/1998/Math/MathML" display="block"> ### </math> $.
+$t <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"> ### </math> $.
+$( Header: this is what needs to be included in the HTML header $)
+$h 
+  <!-- Include the mm-web-ui javascript and stylesheet. -->
+  <script src="mm-web-ui/externals/jquery.min.js" type="text/javascript"></script>
+  <script src="mm-web-ui/mm-web-ui.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="mm-web-ui/mm-web-ui.css">
+$.
