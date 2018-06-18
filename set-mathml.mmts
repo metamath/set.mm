@@ -23,8 +23,8 @@ $( Terminal types - when diplaying tokens or in-comment math, only try those typ
 $u wff class set $.
 
 $( No brackets and extra space for top level statements $)
-$s |- ( ph -> ps ) $: <mrow> <mo mathcolor=#CCC>&vdash;</mo> #ph# <mo linebreak=goodbreak lspace=1em rspace=1em>&rarr;</mo> #ps# </mrow> $.
-$s |- ( ph <-> ps ) $: <mrow> <mo mathcolor=#CCC>&vdash;</mo> #ph# <mo linebreak=goodbreak lspace=1em rspace=1em>&harr;</mo> #ps# </mrow> $.
+$s |- ( ph -> ps ) $: <mrow> <mo mathcolor=#CCC>&vdash;</mo> #ph# <mo linebreak=goodbreak lspace=1em rspace=1em href="wi.html">&rarr;</mo> #ps# </mrow> $.
+$s |- ( ph <-> ps ) $: <mrow> <mo mathcolor=#CCC>&vdash;</mo> #ph# <mo linebreak=goodbreak lspace=1em rspace=1em href="df-bi.html">&harr;</mo> #ps# </mrow> $.
 
 $( Representation for a provable statement - usually the top level statement to
    be represented. $)
@@ -154,10 +154,10 @@ $i class .(x) $: <munder accentunder><mi mathcolor=#808>&#x2297;</mi> <mo mathco
 $i class .0b $: <munder accentunder><mi mathcolor=#808>&#x1D7CE</mi> <mo mathcolor=#808>&#x02D9;</mo></munder> $.
 
 $( Constants $)
-$s wff T. $: <mi>&#x22A4;</mi> $. $( There is actually an entity &true; $)
-$s wff F. $: <mi>&#x22A5;</mi> $. $( There is actually an entity &false; $)
-$s class _V $: <mi>V</mi> $.
-$s class (/) $: <mi>&empty;</mi> $. $( &empty; or &#x2205; looks like a zero, &#x00D8; looks like an O, &#x2300; is actually a diameter $)
+$s wff T. $: <mi href="df-tru.html">&#x22A4;</mi> $. $( There is actually an entity &true; $)
+$s wff F. $: <mi href="df-fal.html">&#x22A5;</mi> $. $( There is actually an entity &false; $)
+$s class _V $: <mi href="df-v.html">V</mi> $.
+$s class (/) $: <mi href="df-nul.html">&empty;</mi> $. $( &empty; or &#x2205; looks like a zero, &#x00D8; looks like an O, &#x2300; is actually a diameter $)
 $s class Undef $: <mi>Undef</mi> $.
 $s class _E $: <mi>E</mi> $.
 $s class _I $: <mi>I</mi> $.
@@ -308,29 +308,29 @@ $s class <bag $: <msub><mo>&lt;</mo> <mo>bag</mo></msub> $.
 $s class TopSpOLD $: <msub><mi>TopSp</mi> <mi>OLD</mi></msub> $.
 
 $( Analysis $)
-$s class pi $: <mi> &pi; </mi> $.
-$s class _e $: <mi> e </mi> $.
-$s class NN $: <mi> &Nopf; </mi> $.
-$s class ZZ $: <mi> &Zopf; </mi> $.
-$s class NN0 $: <msub> <mi> &Nopf; </mi><mn> 0 </mn></msub> $.
-$s class QQ $: <mi> &Qopf; </mi> $.
-$s class RR $: <mi> &Ropf; </mi> $.
-$s class RR* $: <msup> <mi> &Ropf; </mi><mo> * </mo></msup> $.
-$s class RR+ $: <msup> <mi> &Ropf; </mi><mo> + </mo></msup> $.
-$s class CC $: <mi> &Copf; </mi> $.
+$s class pi $: <mi href="df-pi.html"> &pi; </mi> $.
+$s class _e $: <mi href="df-e.html"> e </mi> $.
+$s class NN $: <mi href="df-nn.html"> &Nopf; </mi> $.
+$s class ZZ $: <mi href="df-z.html"> &Zopf; </mi> $.
+$s class NN0 $: <msub href="df-n0.html"> <mi> &Nopf; </mi><mn> 0 </mn></msub> $.
+$s class QQ $: <mi href="df-q.html"> &Qopf; </mi> $.
+$s class RR $: <mi href="df-r.html"> &Ropf; </mi> $.
+$s class RR* $: <msup href="df-xr.html"> <mi> &Ropf; </mi><mo> * </mo></msup> $.
+$s class RR+ $: <msup href="df-rp.html"> <mi> &Ropf; </mi><mo> + </mo></msup> $.
+$s class CC $: <mi href="df-c.html"> &Copf; </mi> $.
 $s class Z[i] $: <mrow> <mi>&Zopf;</mi> <mfenced open="[" close="]"><mi>i</mi></mfenced> </mrow> $.
 $s class L^1 $: <msup> <mi>&#x1D43F;</mi> <mn>1</mn> </msup> $.
-$s class _i $: <mi>i</mi> $. $( There is actually an entity &ImaginaryI; $)
-$s class Fin $: <mi>Fin</mi> $.
-$s class +oo $: <mi>+&infin;</mi> $.
-$s class -oo $: <mi>&minus;&infin;</mi> $.
-$s class 0p $: <msub> <mn>0</mn> <mo>&#x1d45d;</mo> </msub> $.
-$s class phi $: <mi>&phiv;</mi> $.
-$s class gamma $: <mi>&gamma;</mi> $.
-$s class log_G $: <mrow><mi>log</mi><mi> &Gamma; </mi></mrow> $.
-$s class zeta $: <mi> &zeta; </mi> $.
-$s class _G $: <mi> &Gamma; </mi> $.
-$s class 1/_G $: <mfrac><mn>1</mn> <mi>&Gamma;</mi></mfrac> $.
+$s class _i $: <mi href="df-i.html">i</mi> $. $( There is actually an entity &ImaginaryI; $)
+$s class Fin $: <mi href="df-fin.html">Fin</mi> $.
+$s class +oo $: <mi href="df-pnf.html">+&infin;</mi> $.
+$s class -oo $: <mi href="df-mnf.html">&minus;&infin;</mi> $.
+$s class 0p $: <msub href="df-0p.html"> <mn>0</mn> <mo>&#x1d45d;</mo> </msub> $.
+$s class phi $: <mi href="df-phi.html">&phiv;</mi> $.
+$s class gamma $: <mi href="df-em.html">&gamma;</mi> $.
+$s class log_G $: <mrow href="df-lgam.html"><mi>log</mi><mi> &Gamma; </mi></mrow> $.
+$s class zeta $: <mi href="df-zeta.html"> &zeta; </mi> $.
+$s class _G $: <mi href="df-gam.html"> &Gamma; </mi> $.
+$s class 1/_G $: <mfrac href="df-igam.html"><mn>1</mn> <mi>&Gamma;</mi></mfrac> $.
 
 $( Number-theoretical functions $)
 $s class ppi $: <munder><mo>&pi;</mo> <mo>&#x5F;</mo></munder> $. 
@@ -1019,10 +1019,12 @@ $s class ZF $: <mi mathvariant="bold">ZF</mi> $.
 
 
 $( Scott Fenton $)
-$s class FallFac $: <mo>FallFac</mo> $. $( With dots: <msup><mi>.</mi> <munder><mi>.</mi> <mo>&#x5F;</mo></munder></msup> $)
-$s class RiseFac $: <mo>RiseFac</mo> $. $( With dots: <msup><mi>.</mi> <mover><mi>.</mi> <mo>&oline;</mo></mover></msup> $)
-$s class ( A FallFac B ) $: <msup>#A# <munder>#B# <mo>&#x5F;</mo></munder></msup> $.
-$s class ( A RiseFac B ) $: <msup>#A# <mover>#B# <mo>&oline;</mo></mover></msup> $.
+$s class FallFac $: <mo href="df-fallfac.html">FallFac</mo> $. $( With dots: <msup><mi>.</mi> <munder><mi>.</mi> <mo>&#x5F;</mo></munder></msup> $)
+$s class RiseFac $: <mo href="df-risefac.html">RiseFac</mo> $. $( With dots: <msup><mi>.</mi> <mover><mi>.</mi> <mo>&oline;</mo></mover></msup> $)
+$s class ( A FallFac B ) $: <mfenced><msup>#A# <munder>#B# <mo>&#x5F;</mo></munder></msup></mfenced> $.
+$s class ( A RiseFac B ) $: <mfenced><msup>#A# <mover>#B# <mo>&oline;</mo></mover></msup></mfenced> $.
+$s class-o ( A FallFac B ) $: <msup>#A# <munder>#B# <mo>&#x5F;</mo></munder></msup> $.
+$s class-o ( A RiseFac B ) $: <msup>#A# <mover>#B# <mo>&oline;</mo></mover></msup> $.
 $s class Pred ( R , A , B ) $: <mrow> <mo>Pred</mo> <mfenced>#R# #A# #B#</mfenced></mrow> $.
 $s class TrPred ( R , A , B ) $: <mrow> <mo>TrPred</mo> <mfenced>#R# #A# #B#</mfenced></mrow> $.
 $s class XX. $: <mi> &times;&times; </mi> $.
@@ -1374,58 +1376,58 @@ $i class-o Q $: <mi mathcolor=#808>Q</mi> $.
 $i class-o S $: <mi mathcolor=#808>S</mi> $.
 
 $( Logics $)
-$s wff -. ph $: <mrow> <mo>&not;</mo> #ph# </mrow> $.
-$s wff ( ph -> ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.7em rspace=.7em>&rarr;</mo> #ps# </mrow></mfenced> $.
-$s wff ( ph <-> ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.7em rspace=.7em>&harr;</mo> #ps# </mrow></mfenced> $.
-$s wff ( ph /\ ps /\ ch ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&and;</mo> #ps# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&and;</mo> #ch# </mrow></mfenced> $.
-$s wff ( ph \/ ps \/ ch ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&or;</mo> #ps# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&or;</mo> #ch# </mrow></mfenced> $.
-$s wff ( ph /\ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&and;</mo> #ps# </mrow></mfenced> $.
-$s wff ( ph \/ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&or;</mo> #ps# </mrow></mfenced> $.
-$s wff ( ph -/\ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&#8892;</mo> #ps# </mrow></mfenced> $.
-$s wff ( ph \/_ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em>&#8891</mo> #ps# </mrow></mfenced> $.
+$s wff -. ph $: <mrow> <mo href="wn.html">&not;</mo> #ph# </mrow> $.
+$s wff ( ph -> ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.7em rspace=.7em href="wi.html">&rarr;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph <-> ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.7em rspace=.7em href="df-bi.html">&harr;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph /\ ps /\ ch ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-3an.html">&and;</mo> #ps# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-3an.html">&and;</mo> #ch# </mrow></mfenced> $.
+$s wff ( ph \/ ps \/ ch ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-3or.html">&or;</mo> #ps# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-3or.html">&or;</mo> #ch# </mrow></mfenced> $.
+$s wff ( ph /\ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-an.html">&and;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph \/ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-or.html">&or;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph -/\ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-nan.html">&#8892;</mo> #ps# </mrow></mfenced> $.
+$s wff ( ph \/_ ps ) $: <mfenced><mrow> #ph# <mo linebreak=goodbreak lspace=.5em rspace=.5em href="df-xor.html">&#8891</mo> #ps# </mrow></mfenced> $.
 
 $( Quantifiers $)
-$s wff A. x e. A ph $: <mrow> <mo>&forall;</mo> #x# <mo>&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
-$s wff E. x e. A ph $: <mrow> <mo>&exist;</mo> #x# <mo>&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
-$s wff E! x e. A ph $: <mrow> <mo>&exist;!</mo> #x# <mo>&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
-$s wff E* x e. A ph $: <mrow> <msup><mo>&exist;</mo><mo>*</mo></msup> #x# <mo>&isin;</mo> #A# #ph# </mrow> $.
-$s wff A. x ph $: <mrow> <mo>&forall;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
-$s wff E. x ph $: <mrow> <mo>&exist;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
-$s wff E! x ph $: <mrow> <mo>&exist;!</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
-$s wff E* x ph $: <mrow> <msup><mo>&exist;</mo><mo>*</mo></msup> #x# <mspace width=.4em /> #ph# </mrow> $.
-$s wff F/ x ph $: <mrow> <mo>&#8498;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
-$s wff F/_ x A $: <mrow> <munder><mo> &#8498; </mo><mo> &#x5F; </mo></munder> #x# <mspace width=.4em /> #A# </mrow> $.
+$s wff A. x e. A ph $: <mrow> <mo href="df-ral.html">&forall;</mo> #x# <mo href="df-ral.html">&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E. x e. A ph $: <mrow> <mo href="df-rex.html">&exist;</mo> #x# <mo href="df-rex.html">&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E! x e. A ph $: <mrow> <mo href="df-reu.html">&exist;!</mo> #x# <mo href="df-reu.html">&isin;</mo> #A# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E* x e. A ph $: <mrow> <msup href="df-rmo.html"><mo>&exist;</mo><mo>*</mo></msup> #x# <mo href="df-rmo.html">&isin;</mo> #A# #ph# </mrow> $.
+$s wff A. x ph $: <mrow> <mo href="wal.html">&forall;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E. x ph $: <mrow> <mo href="df-ex.html">&exist;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E! x ph $: <mrow> <mo href="df-eu.html">&exist;!</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff E* x ph $: <mrow> <msup href="df-mo.html"><mo>&exist;</mo><mo>*</mo></msup> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff F/ x ph $: <mrow> <mo href="df-nf.html">&#8498;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
+$s wff F/_ x A $: <mrow> <munder><mo href="df-nfc.html"> &#8498; </mo><mo> &#x5F; </mo></munder> #x# <mspace width=.4em /> #A# </mrow> $.
 
 
 
 
 $( Classes and sets $)
 $s wff O = P $: <mrow> #O# <mo>=</mo> #P# </mrow> $.
-$s wff O =/= P $: <mrow> #O# <mo>&ne;</mo> #P# </mrow> $.
-$s wff O < P $: <mrow> #O# <mo><</mo> #P# </mrow> $.
-$s wff O <_ P $: <mrow> #O# <mo>&le;</mo> #P# </mrow> $.
-$s wff O <RR P $: <mrow> #O# <msub><mo>&lt;</mo> <mi>&Ropf;</mi></msub> #P# </mrow> $.
-$s wff -. O C_ P $: <mrow> #O# <mo>&nsube;</mo> #P# </mrow> $.
-$s wff O C_ P $: <mrow> #O# <mo>&sube;</mo> #P# </mrow> $.
-$s wff O C. P $: <mrow> #O# <mo>&sub;</mo> #P# </mrow> $.
-$s wff -. A e. B $: <mrow> #A# <mo>&notin;</mo> #B# </mrow> $.
-$s wff A e/ B $: <mrow> #A# <mo>&notin;</mo> #B# </mrow> $.
+$s wff O =/= P $: <mrow> #O# <mo href="df-ne.html">&ne;</mo> #P# </mrow> $.
+$s wff O < P $: <mrow> #O# <mo href="df-ltxr.html"><</mo> #P# </mrow> $.
+$s wff O <_ P $: <mrow> #O# <mo href="df-le.html">&le;</mo> #P# </mrow> $.
+$s wff O <RR P $: <mrow> #O# <msub><mo href="df-lt.html">&lt;</mo> <mi>&Ropf;</mi></msub> #P# </mrow> $.
+$s wff -. O C_ P $: <mrow> #O# <mo href="df-ss.html">&nsube;</mo> #P# </mrow> $.
+$s wff O C_ P $: <mrow> #O# <mo href="df-ss.html">&sube;</mo> #P# </mrow> $.
+$s wff O C. P $: <mrow> #O# <mo href="df-pss.html">&sub;</mo> #P# </mrow> $.
+$s wff -. A e. B $: <mrow> #A# <mo href="df-nel.html">&notin;</mo> #B# </mrow> $.
+$s wff A e/ B $: <mrow> #A# <mo href="df-nel.html">&notin;</mo> #B# </mrow> $.
 $s wff [ y / x ] ph $: <mrow><mfenced open="[" close="]" separators="/"> #y# #x# </mfenced> #ph# </mrow> $.
 $s wff [. A / x ]. ph $: <mrow><munder accentunder><mo fence>[</mo><mo>&#x02D9;</mo></munder>#A# <mo>/</mo> #x#<munder accentunder><mo fence>]</mo><mo>&#x02D9;</mo></munder> #ph#</mrow> $.
 $s class [_ A / x ]_ B $: <mrow><mo fence>&#x298B;</mo> #A# <mo>/</mo> #x#<mo fence>&#x298C;</mo> #B#</mrow> $.
 $s class { <. x , y >. | ph } $: <mfenced open="{" close="}"> <mrow><mfenced open="&lang;" close="&rang;">#x# #y#</mfenced> <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
 $s class { <. <. x , y >. , z >. | ph } $: <mfenced open="{" close="}"> <mrow><mfenced open="&lang;" close="&rang;"><mfenced open="&lang;" close="&rang;">#x# #y#</mfenced> #z#</mfenced> <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
-$s class { x e. A | ph } $: <mfenced open="{" close="}"> <mrow>#x# <mo>&isin;</mo> #A# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class { x e. A | ph } $: <mfenced open="{" close="}"> <mrow>#x# <mo href="df-rab.html">&isin;</mo> #A# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
 $s class { x | ph } $: <mfenced open="{" close="}"><mrow> #x#  <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
-$s class ~P A $: <mrow> <mo from="prefix">&#119979;</mo> #A# </mrow> $.
-$s class ( A X. B ) $: <mfenced><mrow> #A# <mo>&times;</mo> #B# </mrow></mfenced> $.
-$s class ( A u. B ) $: <mfenced><mrow> #A# <mo>&cup;</mo> #B# </mrow></mfenced> $.
-$s class ( A i^i B ) $: <mfenced><mrow> #A# <mo>&cap;</mo> #B# </mrow></mfenced> $.
-$s class ( A \ B ) $: <mfenced><mrow> #A# <mo>&ssetmn;</mo> #B# </mrow></mfenced> $.
-$s class-o ( A X. B ) $: <mrow> #A# <mo>&times;</mo> #B# </mrow> $.
-$s class-o ( A u. B ) $: <mrow> #A# <mo>&cup;</mo> #B# </mrow> $.
-$s class-o ( A i^i B ) $: <mrow> #A# <mo>&cap;</mo> #B# </mrow> $.
-$s class-o ( A \ B ) $: <mrow> #A# <mo>&ssetmn;</mo> #B# </mrow> $.
+$s class ~P A $: <mrow> <mo from="prefix" href="df-pw.html">&#119979;</mo> #A# </mrow> $.
+$s class ( A X. B ) $: <mfenced><mrow> #A# <mo href="df-xp.html">&times;</mo> #B# </mrow></mfenced> $.
+$s class ( A u. B ) $: <mfenced><mrow> #A# <mo href="df-un.html">&cup;</mo> #B# </mrow></mfenced> $.
+$s class ( A i^i B ) $: <mfenced><mrow> #A# <mo href="df-in.html">&cap;</mo> #B# </mrow></mfenced> $.
+$s class ( A \ B ) $: <mfenced><mrow> #A# <mo href="df-dif.html">&ssetmn;</mo> #B# </mrow></mfenced> $.
+$s class-o ( A X. B ) $: <mrow> #A# <mo href="df-xp.html">&times;</mo> #B# </mrow> $.
+$s class-o ( A u. B ) $: <mrow> #A# <mo href="df-un.html">&cup;</mo> #B# </mrow> $.
+$s class-o ( A i^i B ) $: <mrow> #A# <mo href="df-in.html">&cap;</mo> #B# </mrow> $.
+$s class-o ( A \ B ) $: <mrow> #A# <mo href="df-dif.html">&ssetmn;</mo> #B# </mrow> $.
 $s class { O , P , Q } $: <mfenced open="{" close="}"> #O# #P# #Q# </mfenced> $.
 $s class { O , P } $: <mfenced open="{" close="}"> #O# #P# </mfenced> $.
 $s class { O } $: <mfenced open="{" close="}"> #O# </mfenced> $.
@@ -1449,40 +1451,40 @@ $s class-o ( F oF R G ) $: <mrow>#F# <msub>#R# <mi>f</mi></msub> #G#</mrow> $.
 $s class F oF R G $: <mrow>#F# <msub>#R# <mi>f</mi></msub> #G#</mrow> $.
 
 $( Functions $)
-$s class `' A $: <msup> #A# <mn>-1</mn> </msup> $.
+$s class `' A $: <msup> #A# <mn href="df-cnv.html">-1</mn> </msup> $.
 $s class ( A " O ) $: <mrow> #A# <mfenced open="[" close="]">#O#</mfenced> </mrow> $. $( Removed stretchy="false" $)
-$s class ( A o. B ) $: <mfenced><mrow> #A# <mo>&compfn;</mo> #B# </mrow></mfenced> $.
-$s class ( A |` B ) $: <mfenced><msub><mrow> #A# <mo>&uharr;</mo></mrow> #B# </msub></mfenced> $.
+$s class ( A o. B ) $: <mfenced><mrow> #A# <mo href="df-co.html">&compfn;</mo> #B# </mrow></mfenced> $.
+$s class ( A |` B ) $: <mfenced><msub><mrow> #A# <mo href="df-res.html">&uharr;</mo></mrow> #B# </msub></mfenced> $.
 $s class ( A ^m B ) $: <mfenced><msup> #A# #B# </msup></mfenced> $.
-$s class-o ( A o. B ) $: <mrow> #A# <mo>&compfn;</mo> #B# </mrow> $.
-$s class-o ( A |` B ) $: <msub><mrow> #A# <mo>&uharr;</mo></mrow> #B# </msub> $.
+$s class-o ( A o. B ) $: <mrow> #A# <mo href="df-co.html">&compfn;</mo> #B# </mrow> $.
+$s class-o ( A |` B ) $: <msub><mrow> #A# <mo href="df-res.html">&uharr;</mo></mrow> #B# </msub> $.
 $s class-o ( A ^m B ) $: <msup> #A# #B# </msup> $.
-$s wff A Fn B $:  <mrow> #A# <mo>Fn</mo> #B# </mrow> $.
+$s wff A Fn B $:  <mrow> #A# <mo href="df-fn.html">Fn</mo> #B# </mrow> $.
 
 
 $( Arithmetics $)
 $s class ( O / P ) $: <mfenced><mfrac> #O# #P# </mfrac></mfenced> $.
 $s class-o ( O / P ) $: <mfrac> #O# #P# </mfrac> $.
-$s class -u ( O / P ) $: <mfenced><mrow><mo form="prefix">&minus;</mo> <mfrac> #O# #P# </mfrac> </mrow></mfenced> $.
-$s class-o -u ( O / P ) $: <mrow><mo form="prefix">&minus;</mo> <mfrac> #O# #P# </mfrac> </mrow> $.
-$s class -u A $: <mfenced><mrow><mo form="prefix">&minus;</mo> #A# </mrow></mfenced> $.
-$s class-o -u A $: <mrow><mo form="prefix">&minus;</mo> #A# </mrow> $.
-$s class -e A $: <mfenced><mrow><mo form="prefix">&minus;</mo> #A# </mrow></mfenced> $.
-$s class-o -e A $: <mrow><mo form="prefix">&minus;</mo> #A# </mrow> $.
+$s class -u ( O / P ) $: <mfenced><mrow><mo form="prefix" href="df-neg.html">&minus;</mo> <mfrac> #O# #P# </mfrac> </mrow></mfenced> $.
+$s class-o -u ( O / P ) $: <mrow><mo form="prefix" href="df-nrg.html">&minus;</mo> <mfrac> #O# #P# </mfrac> </mrow> $.
+$s class -u A $: <mfenced><mrow><mo form="prefix" href="df-neg.html">&minus;</mo> #A# </mrow></mfenced> $.
+$s class-o -u A $: <mrow><mo form="prefix" href="df-neg.html">&minus;</mo> #A# </mrow> $.
+$s class -e A $: <mfenced><mrow><mo form="prefix" href="df-xneg.html">&minus;</mo> #A# </mrow></mfenced> $.
+$s class-o -e A $: <mrow><mo form="prefix" href="df-xneg.html">&minus;</mo> #A# </mrow> $.
 $s class ( sqr ` O ) $: <msqrt> #O# </msqrt> $.
 $s class ( * ` O ) $: <mover> #O# <mo>&oline;</mo></mover> $.
-$s class ( sin ` A ) $: <mrow> <mi>sin</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
-$s class ( cos ` A ) $: <mrow> <mi>cos</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
-$s class ( tan ` A ) $: <mrow> <mi>tan</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
-$s class ( log ` A ) $: <mrow> <mi>log</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ( sin ` A ) $: <mrow> <mi href="df-sin.html">sin</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ( cos ` A ) $: <mrow> <mi href="df-cos.html">cos</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ( tan ` A ) $: <mrow> <mi href="df-tan.html">tan</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class ( log ` A ) $: <mrow> <mi href="df-log.html">log</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
 $s class ( abs ` O ) $: <mfenced open="|" close="|">#O#</mfenced> $.
-$s class ( exp ` O ) $: <msup><mi>e</mi> #O#</msup> $.
-$s class ( logb ` O ) $: <msub><mi>log</mi> #O#</msub> $.
-$s class-o ( O logb A ) $: <mrow><msub><mi>log</mi> #O#</msub> #A#</mrow> $.
-$s class ( O logb A ) $: <mrow><msub><mi>log</mi> #O#</msub> #A#</mrow> $.
+$s class ( exp ` O ) $: <msup><mi href="df-ef.html">e</mi> #O#</msup> $.
+$s class ( logb ` O ) $: <msub><mi href="df-logb.html">log</mi> #O#</msub> $.
+$s class-o ( O logb A ) $: <mrow><msub><mi href="df-logb.html">log</mi> #O#</msub> #A#</mrow> $.
+$s class ( O logb A ) $: <mrow><msub><mi href="df-logb.html">log</mi> #O#</msub> #A#</mrow> $.
 $s class ( # ` O ) $: <mfenced open="|" close="|">#O#</mfenced> $.
 $s class ( |_ ` O ) $: <mfenced open="&lfloor;" close="&rfloor;">#O#</mfenced> $.
-$s class ( ! ` A ) $: <mrow>#A# <mo form="postfix">&excl;</mo></mrow> $.
+$s class ( ! ` A ) $: <mrow>#A# <mo form="postfix href="df-fac.html"">&excl;</mo></mrow> $.
 
 $( Minus sign and exponents : make sure brackets are added. $)
 $s class ( -u A ^ O ) $: <msup> <mfenced><mrow><mo form="prefix">&minus;</mo> #A# </mrow></mfenced> #O# </msup> $.
@@ -1511,14 +1513,14 @@ $s class ( O [,] P ) $: <mfenced open='[' close=']'> #O# #P# </mfenced> $.
 $s class ( O [,) P ) $: <mfenced open='[' close=')'> #O# #P# </mfenced> $.
 $s class ( O (,] P ) $: <mfenced open='(' close=']'> #O# #P# </mfenced> $.
 $s class ( O (,) P ) $: <mfenced open='(' close=')'> #O# #P# </mfenced> $.
-$s class ( O ... P ) $: <mfenced><mrow>#O# <mo>&hellip;</mo> #P#</mrow></mfenced> $.
-$s class ( O ..^ P ) $: <mfenced><mrow>#O# <mo>..^</mo> #P#</mrow></mfenced> $.
+$s class ( O ... P ) $: <mfenced><mrow>#O# <mo href="df-fz.html">&hellip;</mo> #P#</mrow></mfenced> $.
+$s class ( O ..^ P ) $: <mfenced><mrow>#O# <mo href="df-fzo.html">..^</mo> #P#</mrow></mfenced> $.
 $s class-o ( O [,] P ) $: <mfenced open='[' close=']'> #O# #P# </mfenced> $.
 $s class-o ( O [,) P ) $: <mfenced open='[' close=')'> #O# #P# </mfenced> $.
 $s class-o ( O (,] P ) $: <mfenced open='(' close=']'> #O# #P# </mfenced> $.
 $s class-o ( O (,) P ) $: <mfenced open='(' close=')'> #O# #P# </mfenced> $.
-$s class-o ( O ... P ) $: <mfenced><mrow>#O# <mo>&hellip;</mo> #P#</mrow></mfenced> $.
-$s class-o ( O ..^ P ) $: <mfenced><mrow>#O# <mo>..^</mo> #P#</mrow></mfenced> $.
+$s class-o ( O ... P ) $: <mfenced><mrow>#O# <mo href="df-fz.html">&hellip;</mo> #P#</mrow></mfenced> $.
+$s class-o ( O ..^ P ) $: <mfenced><mrow>#O# <mo href="df-fzo.html">..^</mo> #P#</mrow></mfenced> $.
 
 
 $( Associativity for addition $)
@@ -1581,61 +1583,62 @@ $( Constructs $)
 $s class ( O _C P ) $: <mrow> <mo>(</mo> <mfrac linethickness="0">#O# #P#</mfrac><mo>)</mo> </mrow> $.
 $s class-o ( O _C P ) $: <mrow> <mo>(</mo> <mfrac linethickness="0">#O# #P#</mfrac><mo>)</mo> </mrow> $.
 $s class ( x e. A , y e. B |-> O ) $: <mfenced separators=",&longmapsto;"><mrow>#x# <mo>&isin;</mo> #A#</mrow> <mrow> #y# <mo>&isin;</mo> #B#</mrow> #O#</mfenced> $.
-$s class ( x e. A |-> O ) $: <mfenced separators="&longmapsto;"><mrow>#x# <mo>&isin;</mo> #A#</mrow> #O#</mfenced> $.
-$s class if ( ph , O , P ) $: <mrow> <mo>if</mo> <mfenced>#ph# #O# #P#</mfenced></mrow> $.
-$s class sup ( O , P , Q ) $: <mrow> <mo>sup</mo> <mfenced>#O# #P# #Q#</mfenced></mrow> $.
-$s class |^|_ x e. ( O ... P ) A $: <mrow><munderover><mo>&xcap;</mo> <mrow>#x# <mo>=</mo> #O#</mrow> #P# </munderover> #A# </mrow> $.
-$s class U_ x e. ( O ... P ) A $: <mrow><munderover><mo>&xcup;</mo> <mrow>#x# <mo>=</mo> #O#</mrow> #P# </munderover> #A# </mrow> $.
-$s wff Disj_ x e. ( O ... P ) A $: <mrow><munderover><mo>Disj</mo> <mrow>#x# <mo>=</mo> #O#</mrow> #P# </munderover> #A# </mrow> $.
-$s class sum_ x e. ( O ... P ) A $: <mrow><munderover><mo>&sum;</mo><mrow> #x# <mo>=</mo> #O# </mrow> #P# </munderover> #A# </mrow> $.
-$s class sum* x e. ( O ... P ) A $: <mrow><munderover><msup><mo>&sum;</mo> <mi>*</mi></msup><mrow> #x# <mo>=</mo> #O# </mrow> #P# </munderover> #A# </mrow> $.
+$s class ( x e. A |-> O ) $: <mfenced separators="&longmapsto;"><mrow>#x# <mo href="df-mpt.html">&isin;</mo> #A#</mrow> #O#</mfenced> $.
+$s class if ( ph , O , P ) $: <mrow> <mo href="df-if.html">if</mo> <mfenced>#ph# #O# #P#</mfenced></mrow> $.
+$s class sup ( O , P , Q ) $: <mrow> <mo href="df-sup.html">sup</mo> <mfenced>#O# #P# #Q#</mfenced></mrow> $.
+$s class |^|_ x e. ( O ... P ) A $: <mrow><munderover><mo href="df-uni.html">&xcap;</mo> <mrow>#x# <mo>=</mo> #O#</mrow> #P# </munderover> #A# </mrow> $.
+$s class U_ x e. ( O ... P ) A $: <mrow><munderover><mo href="df-iun.html">&xcup;</mo> <mrow>#x# <mo>=</mo> #O#</mrow> #P# </munderover> #A# </mrow> $.
+$s wff Disj_ x e. ( O ... P ) A $: <mrow><munderover><mo href="df-disj.html">Disj</mo> <mrow>#x# <mo>=</mo> #O#</mrow> #P# </munderover> #A# </mrow> $.
+$s class sum_ x e. ( O ... P ) A $: <mrow><munderover><mo href="df-sum.html">&sum;</mo><mrow> #x# <mo>=</mo> #O# </mrow> #P# </munderover> #A# </mrow> $.
+$s class sum* x e. ( O ... P ) A $: <mrow><munderover><msup><mo href="df-esum.html">&sum;</mo> <mi>*</mi></msup><mrow> #x# <mo>=</mo> #O# </mrow> #P# </munderover> #A# </mrow> $.
+$s class prod_ x e. ( O ... P ) A $: <mrow><munderover><mo href="df-prod.html">&prod;</mo><mrow> #x# <mo>=</mo> #O# </mrow> #P# </munderover> #A# </mrow> $.
 $s class X_ x e. ( O ... P ) A $: <mrow><munderover><mo>&#x2a09;</mo><mrow> #x# <mo>=</mo> #O# </mrow> #P# </munderover> #A# </mrow> $.
-$s class |^|_ x e. O A $: <mrow><munder><mo>&xcap;</mo> <mrow>#x# <mo>&isin;</mo> #O#</mrow></munder> #A# </mrow> $.
-$s class U_ x e. O A $: <mrow><munder><mo>&xcup;</mo> <mrow>#x# <mo>&isin;</mo> #O#</mrow></munder> #A# </mrow> $.
-$s wff Disj_ x e. O A $: <mrow><munder><mo>Disj</mo> <mrow>#x# <mo>&isin;</mo> #O#</mrow></munder> #A# </mrow> $.
-$s class sum_ x e. O A $: <mrow><munder><mo>&sum;</mo><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
-$s class sum* x e. O A $: <mrow><munder><msup><mo>&sum;</mo> <mi>*</mi></msup><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
-$s class prod_ x e. O A $: <mrow><munder><mo>&prod;</mo><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
+$s class |^|_ x e. O A $: <mrow><munder><mo href="df-iin.html">&xcap;</mo> <mrow>#x# <mo>&isin;</mo> #O#</mrow></munder> #A# </mrow> $.
+$s class U_ x e. O A $: <mrow><munder><mo href="df-iun.html">&xcup;</mo> <mrow>#x# <mo>&isin;</mo> #O#</mrow></munder> #A# </mrow> $.
+$s wff Disj_ x e. O A $: <mrow><munder><mo href="df-disj.html">Disj</mo> <mrow>#x# <mo>&isin;</mo> #O#</mrow></munder> #A# </mrow> $.
+$s class sum_ x e. O A $: <mrow><munder><mo href="df-sum.html">&sum;</mo><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
+$s class sum* x e. O A $: <mrow><munder><msup><mo href="df-esum.html">&sum;</mo> <mi>*</mi></msup><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
+$s class prod_ x e. O A $: <mrow><munder><mo href="df-prod.html">&prod;</mo><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
 $s class X_ x e. O A $: <mrow><munder><mo>&#x2a09;</mo><mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #A# </mrow> $.
-$s class ( Q gsum ( x e. ( O ... P ) |-> B ) ) $: <mfenced><munderover><msub><mo>&Sum;</mo> #Q#</msub> <mrow> #x# <mo>=</mo> #O# </mrow> #P#</munderover> #B#</mfenced> $.
-$s class ( Q gsum ( x e. O |-> B ) ) $: <mfenced><munder><msub><mo>&Sum;</mo> #Q#</msub> <mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #B#</mfenced> $.
-$s class ( Q gsum A ) $: <mfenced><msub><mo>&Sum;</mo> #Q#</msub> #A#</mfenced> $.
-$s class-o ( Q gsum ( x e. ( O ... P ) |-> B ) ) $: <mrow><munderover><msub><mo>&Sum;</mo> #Q#</msub> <mrow> #x# <mo>=</mo> #O# </mrow> #P#</munderover> #B#</mrow> $.
-$s class-o ( Q gsum ( x e. O |-> B ) ) $: <mrow><munder><msub><mo>&Sum;</mo> #Q#</msub> <mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #B#</mrow> $.
-$s class-o ( Q gsum A ) $: <mrow><msub><mo>&Sum;</mo> #Q#</msub> #A#</mrow> $.
-$s class |^| A $: <mrow> <mo>&xcap;</mo> #A# </mrow> $.
-$s class U. A $: <mrow> <mo>&xcup;</mo> #A# </mrow> $.
-$s class recs ( F ) $: <mrow> <mi>recs</mi> <mo>&ApplyFunction;</mo> <mfenced>#F#</mfenced> </mrow> $. $( Removed stretchy="false" $)
-$s class rec ( F , O ) $: <mrow> <mi>rec</mi> <mo>&ApplyFunction;</mo> <mfenced> #F# #O# </mfenced> </mrow> $. $( Removed stretchy="false" $)
-$s class wrecs ( R , O , P ) $: <mrow> <mi>wrecs</mi> <mo>&ApplyFunction;</mo> <mfenced> #R# #O# #P# </mfenced> </mrow> $. $( Removed stretchy="false" $)
-$s class seq A ( .+ , F ) $: <mrow> <mo>seq</mo> #A# <mfenced> #.+# #F# </mfenced></mrow> $.
-$s class ( iota x ph ) $: <mfenced> <mrow><mo>&iota;</mo> #x# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
-$s class ( iota_ x e. A ph ) $: <mfenced> <mrow><mo>&iota;</mo> #x# <mo>&isin;</mo> #A# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
-$s class ( ZZ>= ` A ) $: <msub> <mi>&Zopf;</mi> <mrow> <mo>&ge;</mo> #A# </mrow> </msub> $.
-$s class S. A B _d x $:  <mrow> <msub> <mo> &#x222B;</mo> #A# </msub> #B# <mo>d</mo>#x#</mrow> $.
-$s class S_ [ A -> B ] C _d x $: <mrow> <msubsup> <mo> &#x222B;</mo> #A# #B# </msubsup> #C# <mo>d</mo>#x#</mrow> $.
+$s class ( Q gsum ( x e. ( O ... P ) |-> B ) ) $: <mfenced><munderover><msub><mo href="df-gsum.html">&Sum;</mo> #Q#</msub> <mrow> #x# <mo>=</mo> #O# </mrow> #P#</munderover> #B#</mfenced> $.
+$s class ( Q gsum ( x e. O |-> B ) ) $: <mfenced><munder><msub><mo href="df-gsum.html">&Sum;</mo> #Q#</msub> <mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #B#</mfenced> $.
+$s class ( Q gsum A ) $: <mfenced><msub><mo href="df-gsum.html">&Sum;</mo> #Q#</msub> #A#</mfenced> $.
+$s class-o ( Q gsum ( x e. ( O ... P ) |-> B ) ) $: <mrow><munderover><msub><mo href="df-gsum.html">&Sum;</mo> #Q#</msub> <mrow> #x# <mo>=</mo> #O# </mrow> #P#</munderover> #B#</mrow> $.
+$s class-o ( Q gsum ( x e. O |-> B ) ) $: <mrow><munder><msub><mo href="df-gsum.html">&Sum;</mo> #Q#</msub> <mrow> #x# <mo>&isin;</mo> #O# </mrow></munder> #B#</mrow> $.
+$s class-o ( Q gsum A ) $: <mrow><msub><mo href="df-gsum.html">&Sum;</mo> #Q#</msub> #A#</mrow> $.
+$s class |^| A $: <mrow> <mo href="df-int.html">&xcap;</mo> #A# </mrow> $.
+$s class U. A $: <mrow> <mo href="df-uni.html">&xcup;</mo> #A# </mrow> $.
+$s class recs ( F ) $: <mrow> <mi href="df-recs.html">recs</mi> <mo>&ApplyFunction;</mo> <mfenced>#F#</mfenced> </mrow> $. $( Removed stretchy="false" $)
+$s class rec ( F , O ) $: <mrow> <mi href="df-rdg.html">rec</mi> <mo>&ApplyFunction;</mo> <mfenced> #F# #O# </mfenced> </mrow> $. $( Removed stretchy="false" $)
+$s class wrecs ( R , O , P ) $: <mrow> <mi href="df-wrecs.html">wrecs</mi> <mo>&ApplyFunction;</mo> <mfenced> #R# #O# #P# </mfenced> </mrow> $. $( Removed stretchy="false" $)
+$s class seq A ( .+ , F ) $: <mrow> <mo href="df-seq.html">seq</mo> #A# <mfenced> #.+# #F# </mfenced></mrow> $.
+$s class ( iota x ph ) $: <mfenced> <mrow><mo href="df-iota.html">&iota;</mo> #x# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class ( iota_ x e. A ph ) $: <mfenced> <mrow><mo href="df-iota.html">&iota;</mo> #x# <mo>&isin;</mo> #A# <mo lspace=.3em rspace=.3em>|</mo> #ph# </mrow></mfenced> $.
+$s class ( ZZ>= ` A ) $: <msub> <mi href="df-uz.html">&Zopf;</mi> <mrow> <mo href="df-uz.html">&ge;</mo> #A# </mrow> </msub> $.
+$s class S. A B _d x $:  <mrow> <msub> <mo href="df-itg.html"> &#x222B;</mo> #A# </msub> #B# <mo>d</mo>#x#</mrow> $.
+$s class S_ [ A -> B ] C _d x $: <mrow> <msubsup> <mo href="df-ditg.html"> &#x222B;</mo> #A# #B# </msubsup> #C# <mo>d</mo>#x#</mrow> $.
 $s class-o ( A _D ( x e. B |-> O ) ) $: <mfrac><mrow><mo>d</mo><mfenced separators="&longmapsto;"><mrow>#x# <mo>&isin;</mo> #B#</mrow> #O#</mfenced></mrow> <mrow><msub><mo>d</mo>#A#</msub> #x#</mrow></mfrac> $.
 $s class ( A _D ( x e. B |-> O ) ) $: <mfrac><mrow><mo>d</mo><mfenced separators="&longmapsto;"><mrow>#x# <mo>&isin;</mo> #B#</mrow> #O#</mfenced></mrow> <mrow><msub><mo>d</mo>#A#</msub> #x#</mrow></mfrac> $.
 $s class ( A _D F ) $: <msubsup>#F# #A# <mo>&#x2032;</mo></msubsup> $.
 $( s class ( A _D F ) $: <mfenced><msubsup>#F# #A# <mo>&#x2032;</mo></msubsup></mfenced> $)
-$s wff F : O --> P $: <mrow> #F# <mo>:</mo> #O# <mo>&xrarr;</mo> #P# </mrow> $.
-$s wff F : O -1-1-> P $: <mrow> #F# <mo>:</mo> #O# <munder><mo>&xrarr;</mo> <mo>1-1</mo></munder> #P# </mrow> $.
-$s wff F : O -onto-> P $: <mrow> #F# <mo>:</mo> #O# <munder><mo>&xrarr;</mo> <mo>onto</mo></munder> #P# </mrow> $.
-$s wff F : O -1-1-onto-> P $: <mrow> #F# <mo>:</mo> #O# <munder><mo>&xrarr;</mo> <mo>1-1 onto</mo></munder> #P# </mrow> $.
-$s wff F e. ( A -cn-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder><mo>&xrarr;</mo><mo>cn</mo></munder> #B# </mrow> $.
-$s wff hadd ( ph , ps , ch ) $: <mrow> <mo>hadd</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
-$s wff cadd ( ph , ps , ch ) $: <mrow> <mo>cadd</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
-$s wff CondEq ( x = y -> ph ) $: <mrow> <mo>CondEq</mo> <mfenced><mrow>#x# <mo>=</mo> #y# <mo>&rarr;</mo> #ph#</mrow></mfenced></mrow> $.
-$s wff H Isom O , P ( Q , S ) $: <mrow> #H# <mo>Isom</mo> #O# <mo>,</mo> #P# <mfenced>#Q# #S#</mfenced></mrow> $.
-$s class OrdIso ( O , P ) $: <mrow> <mo>OrdIso</mo> <mfenced>#O# #P#</mfenced></mrow> $.
-$s class seqom ( O , P ) $: <mrow> <msub><mo>seq</mo> <mi>&omega;</mi></msub> <mfenced>#O# #P#</mfenced></mrow> $.
+$s wff F : O --> P $: <mrow> #F# <mo>:</mo> #O# <mo href="df-f.html">&xrarr;</mo> #P# </mrow> $.
+$s wff F : O -1-1-> P $: <mrow> #F# <mo>:</mo> #O# <munder href="df-f1.html"><mo>&xrarr;</mo> <mo>1-1</mo></munder> #P# </mrow> $.
+$s wff F : O -onto-> P $: <mrow> #F# <mo>:</mo> #O# <munder href="df-fo.html"><mo>&xrarr;</mo> <mo>onto</mo></munder> #P# </mrow> $.
+$s wff F : O -1-1-onto-> P $: <mrow> #F# <mo>:</mo> #O# <munder href="df-f1o.html"><mo>&xrarr;</mo> <mo>1-1 onto</mo></munder> #P# </mrow> $.
+$s wff F e. ( A -cn-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-cncf.html"><mo>&xrarr;</mo><mo>cn</mo></munder> #B# </mrow> $.
+$s wff hadd ( ph , ps , ch ) $: <mrow> <mo href="df-had.html">hadd</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
+$s wff cadd ( ph , ps , ch ) $: <mrow> <mo href="df-cad.html">cadd</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
+$s wff CondEq ( x = y -> ph ) $: <mrow> <mo href="df-cdeq.html">CondEq</mo> <mfenced><mrow>#x# <mo>=</mo> #y# <mo>&rarr;</mo> #ph#</mrow></mfenced></mrow> $.
+$s wff H Isom O , P ( Q , S ) $: <mrow> #H# <mo href="df-isom.html">Isom</mo> #O# <mo>,</mo> #P# <mfenced>#Q# #S#</mfenced></mrow> $.
+$s class OrdIso ( O , P ) $: <mrow> <mo href="df-oi.html">OrdIso</mo> <mfenced>#O# #P#</mfenced></mrow> $.
+$s class seqom ( O , P ) $: <mrow> <msub href="df-seqom.html"><mo>seq</mo> <mi>&omega;</mi></msub> <mfenced>#O# #P#</mfenced></mrow> $.
 
-$s class Locally A $: <mrow><mo>Locally<mo> #A# </mrow> $.
-$s class N-Locally A $: <mrow><mo>N-Locally<mo> #A# </mrow> $.
-$s wff Prt A $: <mrow><mo>Prt<mo> #A# </mrow> $.
+$s class Locally A $: <mrow><mo href="df-lly.html">Locally<mo> #A# </mrow> $.
+$s class N-Locally A $: <mrow><mo href="df-nlly.html">N-Locally<mo> #A# </mrow> $.
+$s wff Prt A $: <mrow><mo href="df-prt.html">Prt<mo> #A# </mrow> $.
 
 $( These definitions are placed later because they are overridden by some constructs $)
-$s wff O e. A $: <mrow> #O# <mo>&isin;</mo> #A# </mrow> $.
+$s wff O e. A $: <mrow> #O# <mo href="df-cel.html">&isin;</mo> #A# </mrow> $.
 $s class ( F ` O ) $: <mrow> #F# <mo>&ApplyFunction;</mo> <mfenced>#O#</mfenced> </mrow> $. $( Removed <mo fence stretchy="false">(</mo> $)
 
 $( From Mathboxes $)
