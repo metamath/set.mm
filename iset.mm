@@ -10939,7 +10939,7 @@ $)
     exlimd2.1 $e |- ( ph -> A. x ph ) $.
     exlimd2.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
     exlimd2.3 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( Deduction from Theorem 19.23 of [Margaris] p. 90.  Similar to ~ exlimd
+    $( Deduction from Theorem 19.23 of [Margaris] p. 90.  Similar to ~ exlimdh
        but with one slightly different hypothesis.  (Contributed by Jim
        Kingdon, 30-Dec-2017.) $)
     exlimd2 $p |- ( ph -> ( E. x ps -> ch ) ) $=
@@ -10948,13 +10948,24 @@ $)
   $}
 
   ${
-    exlimd.1 $e |- ( ph -> A. x ph ) $.
-    exlimd.2 $e |- ( ch -> A. x ch ) $.
-    exlimd.3 $e |- ( ph -> ( ps -> ch ) ) $.
+    exlimdh.1 $e |- ( ph -> A. x ph ) $.
+    exlimdh.2 $e |- ( ch -> A. x ch ) $.
+    exlimdh.3 $e |- ( ph -> ( ps -> ch ) ) $.
     $( Deduction from Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
        28-Jan-1997.) $)
-    exlimd $p |- ( ph -> ( E. x ps -> ch ) ) $=
+    exlimdh $p |- ( ph -> ( E. x ps -> ch ) ) $=
       ( wi wal wex alrimih 19.23 sylib ) ABCHZDIBDJCHANDEGKBCDFLM $.
+  $}
+
+  ${
+    exlimd.1 $e |- F/ x ph $.
+    exlimd.2 $e |- F/ x ch $.
+    exlimd.3 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Deduction from Theorem 19.9 of [Margaris] p. 89.  (Contributed by Mario
+       Carneiro, 24-Sep-2016.)  (Proof rewritten by Jim Kingdon,
+       18-Jun-2018.) $)
+    exlimd $p |- ( ph -> ( E. x ps -> ch ) ) $=
+      ( nfri exlimdh ) ABCDADEHCDFHGI $.
   $}
 
   ${
@@ -10993,7 +11004,7 @@ $)
   $( Theorem 19.22 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
      (Proof shortened by Wolf Lammen, 4-Jul-2014.) $)
   exim $p |- ( A. x ( ph -> ps ) -> ( E. x ph -> E. x ps ) ) $=
-    ( wi wal wex hba1 hbe1 19.8a imim2i sps exlimd ) ABDZCEABCFZCMCGBCHMANDCBNA
+    ( wi wal wex hba1 hbe1 19.8a imim2i sps exlimdh ) ABDZCEABCFZCMCGBCHMANDCBNA
     BCIJKL $.
 
   ${
@@ -12602,7 +12613,7 @@ $)
     $( Deduction from Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
        27-Apr-1994.) $)
     exlimdv $p |- ( ph -> ( E. x ps -> ch ) ) $=
-      ( ax-17 exlimd ) ABCDADFCDFEG $.
+      ( ax-17 exlimdh ) ABCDADFCDFEG $.
   $}
 
   ${
@@ -12731,7 +12742,7 @@ $)
      5-Aug-1993.) $)
   equs5 $p |- ( -. A. x x = y ->
              ( E. x ( x = y /\ ph ) -> A. x ( x = y -> ph ) ) ) $=
-    ( weq wal wn wa wi hbnae hba1 ax11o imp3a exlimd ) BCDZBEFZNAGNAHZBEZBBCBIP
+    ( weq wal wn wa wi hbnae hba1 ax11o imp3a exlimdh ) BCDZBEFZNAGNAHZBEZBBCBIP
     BJONAQABCKLM $.
 
   ${
@@ -13478,7 +13489,7 @@ $)
        2-Jan-2002.)  (Proof rewritten by Jim Kingdon, 30-Dec-2017.) $)
     cbvexdh $p |- ( ph -> ( E. x ps <-> E. y ch ) ) $=
       ( wex ax-17 cv wceq wa wb wi equsexd simpr eximi syl6bir wal
-      hbex equcomi bicom1 imim12i syl exlimd eximdh 19.12 syl6 exlimd2
+      hbex equcomi bicom1 imim12i syl exlimdh eximdh 19.12 syl6 exlimd2
       a1i impbid ) ABDIZCEIZABUNDADJZCDECDJZUAABEKZDKZLZCMZEIUNACBEDF
       GAURUQLZBCNZOUSCBNZOHUSVAVBVCEDUBBCUCUDUEPUTCEUSCQRSUFACUMEFAUM
       BETZDIUMETABVDDUOGUGBDEUHUIACVABMZDIUMABCDEUOCCDTOAUPUKHPVEBDVA
@@ -21124,7 +21135,7 @@ $)
     $( A condition implying that at least two things exist.  (Contributed by
        NM, 10-Apr-2004.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
     exists2 $p |- ( ( E. x ph /\ E. x -. ph ) -> -. E! x x = x ) $=
-      ( vy wex wn cv wceq weu wal hbeu1 hba1 wi exists1 ax16 sylbi exlimd alex
+      ( vy wex wn cv wceq weu wal hbeu1 hba1 wi exists1 ax16 sylbi exlimdh alex
       com12 syl6ib con2d imp ) ABDZAEBDZBFZUDGZBHZEUBUFUCUBUFABIZUCEUFUBUGUFAUG
       BUEBJABKUFUDCFGBIAUGLBCMABCNOPRABQSTUA $.
   $}
