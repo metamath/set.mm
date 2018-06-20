@@ -1,4 +1,4 @@
-$( iset.mm - Version of 10-Jun-2018
+$( iset.mm - Version of 20-Jun-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -20249,10 +20249,13 @@ $)
     gencbval.3 $e |- ( A = y -> ( ch <-> th ) ) $.
     gencbval.4 $e |- ( th <-> E. x ( ch /\ A = y ) ) $.
     $( Change of bound variable using implicit substitution.  (Contributed by
-       NM, 17-May-1996.) $)
+       NM, 17-May-1996.)  (Proof rewritten by Jim Kingdon, 20-Jun-2018.) $)
     gencbval $p |- ( A. x ( ch -> ph ) <-> A. y ( th -> ps ) ) $=
-      ( wi wal wn wa wex cv wceq notbid exanali gencbvex 3bitr3i con4bii ) CALE
-      MZDBLFMZCANZOEPDBNZOFPUDNUENUFUGCDEFGHGFQRABISJKUACAETDBFTUBUC $.
+      ( cv wceq wi wal alcom wb imbi12d albii wex bicomd eqcoms 19.23v wa eqcom
+      ceqsalv biimpi adantl eximi sylbi pm2.04 mpdi ax-1 impbii bitri 3bitr3i )
+      FLZGMZDBNZNZFOZEOUTEOZFOCANZEOUSFOUTEFPVAVCEUSVCFGHUSVCQGUQGUQMZVCUSVDCDA
+      BJIRUAUBUFSVBUSFVBURETZUSNZUSURUSEUCVFUSVFDVEBDCVDUDZETVEKVGUREVDURCVDURG
+      UQUEUGUHUIUJVEDBUKULUSVEUMUNUOSUP $.
   $}
 
   ${
