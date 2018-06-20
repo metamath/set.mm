@@ -19732,8 +19732,8 @@ $)
        exists (i.e. there exists some set ` x ` equal to class ` A ` ).
        Theorem 6.9 of [Quine] p. 43. _Notational convention_:  We will use the
        notational device " ` A e. _V ` " to mean " ` A ` is a set" very
-       frequently, for example in ~ uniex .  Note the when ` A ` is not a set,
-       it is called a proper class.  In some theorems, such as ~ uniexg , in
+       frequently, for example in uniex .  Note the when ` A ` is not a set,
+       it is called a proper class.  In some theorems, such as uniexg , in
        order to shorten certain proofs we use the more general antecedent
        ` A e. V ` instead of ` A e. _V ` to mean " ` A ` is a set."
 
@@ -20263,7 +20263,7 @@ $)
     sbhypf.1 $e |- F/ x ps $.
     sbhypf.2 $e |- ( x = A -> ( ph <-> ps ) ) $.
     $( Introduce an explicit substitution into an implicit substitution
-       hypothesis.  See also ~ csbhypf .  (Contributed by Raph Levien,
+       hypothesis.  See also csbhypf .  (Contributed by Raph Levien,
        10-Apr-2004.) $)
     sbhypf $p |- ( y = A -> ( [ y / x ] ph <-> ps ) ) $=
       ( cv wceq wa wex wsb wb vex eqeq1 ceqsexv nfs1v nfbi sbequ12 bicomd
