@@ -10927,12 +10927,21 @@ $)
   $}
 
   ${
-    exlimi.1 $e |- ( ps -> A. x ps ) $.
-    exlimi.2 $e |- ( ph -> ps ) $.
+    exlimih.1 $e |- ( ps -> A. x ps ) $.
+    exlimih.2 $e |- ( ph -> ps ) $.
     $( Inference from Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.)  (Proof shortened by Andrew Salmon, 13-May-2011.) $)
-    exlimi $p |- ( E. x ph -> ps ) $=
+    exlimih $p |- ( E. x ph -> ps ) $=
       ( wi wex 19.23 mpgbi ) ABFACGBFCABCDHEI $.
+  $}
+
+  ${
+    exlimi.1 $e |- F/ x ps $.
+    exlimi.2 $e |- ( ph -> ps ) $.
+    $( Inference from Theorem 19.23 of [Margaris] p. 90.  (Contributed by Mario
+       Carneiro, 24-Sep-2016.) $)
+    exlimi $p |- ( E. x ph -> ps ) $=
+      ( nfri exlimih ) ABCBCDFEG $.
   $}
 
   ${
@@ -10998,7 +11007,7 @@ $)
        the final theorem ` ps ` .  (Contributed by NM, 5-Aug-1993.)  (Revised
        by NM, 25-Jul-2012.) $)
     exlimiv $p |- ( E. x ph -> ps ) $=
-      ( ax-17 exlimi ) ABCBCEDF $.
+      ( ax-17 exlimih ) ABCBCEDF $.
   $}
 
   $( Theorem 19.22 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
@@ -11189,7 +11198,7 @@ $)
   $( Theorem 19.43 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
      (Proof shortened by Mario Carneiro, 2-Feb-2015.) $)
   19.43 $p |- ( E. x ( ph \/ ps ) <-> ( E. x ph \/ E. x ps ) ) $=
-    ( wo wex hbe1 hbor 19.8a orim12i exlimi orc eximi olc jaoi impbii ) ABDZCEZ
+    ( wo wex hbe1 hbor 19.8a orim12i exlimih orc eximi olc jaoi impbii ) ABDZCEZ
     ACEZBCEZDZPTCRSCACFBCFGARBSACHBCHIJRQSAPCABKLBPCBAMLNO $.
 
   $( The antecedent provides a condition implying the converse of ~ 19.33 .
@@ -11238,7 +11247,7 @@ $)
     $( If ` x ` is not free in ` ph ` , it is not free in ` E. y ph ` .
        (Contributed by NM, 5-Aug-1993.)  (Revised by NM, 2-Feb-2015.) $)
     hbex $p |- ( E. y ph -> A. x E. y ph ) $=
-      ( wex wal hbe1 hbal 19.8a alrimih exlimi ) AACEZBFCLCBACGHALBDACIJK $.
+      ( wex wal hbe1 hbal 19.8a alrimih exlimih ) AACEZBFCLCBACGHALBDACIJK $.
   $}
 
   ${
@@ -11291,7 +11300,7 @@ $)
        theorem doesn't use ~ ax6b compared to ~ hbnt .  (Contributed by GD,
        27-Jan-2018.) $)
     ax6blem $p |- ( -. ph -> A. x -. ph ) $=
-      ( wn wex wal id exlimi con3i alnex sylibr ) ADZABEZDLBFMAAABCAGHIABJK $.
+      ( wn wex wal id exlimih con3i alnex sylibr ) ADZABEZDLBFMAAABCAGHIABJK $.
   $}
 
   $( Quantified Negation.  Axiom C5-2 of [Monk2] p. 113.
@@ -11418,7 +11427,7 @@ $)
     $( Inference from Theorem 19.36 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.)  (Revised by NM, 2-Feb-2015.) $)
     19.36i $p |- ( A. x ph -> ps ) $=
-      ( wal wex 19.35i id exlimi syl ) ACFBCGBABCEHBBCDBIJK $.
+      ( wal wex 19.35i id exlimih syl ) ACFBCGBABCEHBBCDBIJK $.
   $}
 
   $( Theorem 19.38 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
@@ -11467,7 +11476,7 @@ $)
     $( Theorem 19.41 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
        (Proof shortened by Andrew Salmon, 25-May-2011.) $)
     19.41h $p |- ( E. x ( ph /\ ps ) <-> ( E. x ph /\ ps ) ) $=
-      ( wa wex 19.40 id exlimi anim2i syl pm3.21 eximdh impcom impbii ) ABEZCFZA
+      ( wa wex 19.40 id exlimih anim2i syl pm3.21 eximdh impcom impbii ) ABEZCFZA
       CFZBEZQRBCFZESABCGTBRBBCDBHIJKBRQBAPCDBALMNO $.
   $}
 
@@ -11564,7 +11573,7 @@ $)
   $( An implication related to substitution.  (Contributed by NM, 5-Aug-1993.)
      (Revised by NM, 3-Feb-2015.) $)
   ax9o $p |- ( A. x ( x = y -> A. x ph ) -> ph ) $=
-    ( cv wceq wex wal wi a9e wa 19.29r hba1 pm3.35 exlimi ax-4 syl mpan ) BDCDE
+    ( cv wceq wex wal wi a9e wa 19.29r hba1 pm3.35 exlimih ax-4 syl mpan ) BDCDE
     ZBFZRABGZHZBGZABCISUBJRUAJZBFZARUABKUDTAUCTBABLRTMNABOPPQ $.
 
   ${
@@ -11578,7 +11587,7 @@ $)
        possible ways of proving this theorem.  (Contributed by NM,
        1-Apr-2005.) $)
     equid $p |- x = x $=
-      ( vy weq wex a9e ax-17 ax-8 pm2.43i exlimi ax-mp ) BACZBDAACZBAEKLBLBFKLB
+      ( vy weq wex a9e ax-17 ax-8 pm2.43i exlimih ax-mp ) BACZBDAACZBAEKLBLBFKLB
       AAGHIJ $.
   $}
 
@@ -11762,7 +11771,7 @@ $)
     $( A useful equivalence related to substitution.  (Contributed by NM,
        5-Aug-1993.)  (Revised by NM, 3-Feb-2015.) $)
     equsex $p |- ( E. x ( x = y /\ ph ) <-> ps ) $=
-      ( cv wceq wa wex biimpa exlimi a9e idd biimprcd jcad eximdh mpi impbii ) C
+      ( cv wceq wa wex biimpa exlimih a9e idd biimprcd jcad eximdh mpi impbii ) C
       GDGHZAIZCJZBUABCETABFKLBTCJUBCDMBTUACEBTTABTNTABFOPQRS $.
   $}
 
@@ -11977,7 +11986,7 @@ $)
        (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
        3-Feb-2015.) $)
     cbvexh $p |- ( E. x ph <-> E. y ps ) $=
-      ( wex hbex cv wceq wa wb bicomd equcoms equsex simpr eximi sylbir exlimi
+      ( wex hbex cv wceq wa wb bicomd equcoms equsex simpr eximi sylbir exlimih
       impbii ) ACHZBDHZAUCCBCDFIADJZCJZKZBLZDHUCBADCEBAMCDUEUDKZABGNOPUGBDUFBQR
       STBUBDADCEIBUHALZCHUBABCDFGPUIACUHAQRSTUA $.
   $}
@@ -12352,7 +12361,7 @@ $)
   $( A property related to substitution that unlike ~ equs5 doesn't require a
      distinctor antecedent.  (Contributed by NM, 2-Feb-2007.) $)
   equs5a $p |- ( E. x ( x = y /\ A. y ph ) -> A. x ( x = y -> ph ) ) $=
-    ( weq wal wa wi hba1 ax-11 imp exlimi ) BCDZACEZFLAGZBEZBNBHLMOABCIJK $.
+    ( weq wal wa wi hba1 ax-11 imp exlimih ) BCDZACEZFLAGZBEZBNBHLMOABCIJK $.
 
   $( A property related to substitution that unlike ~ equs5 doesn't require a
      distinctor antecedent.  (Contributed by NM, 2-Feb-2007.)  (Revised by NM,
@@ -12916,7 +12925,7 @@ $)
     $( Reversed substitution.  (Contributed by NM, 3-Feb-2005.)  (Proof
        shortened by Andrew Salmon, 25-May-2011.) $)
     sb5rf $p |- ( ph <-> E. y ( y = x /\ [ y / x ] ph ) ) $=
-      ( weq wsb wa wex sbid2 sb1 sylbir stdpc7 imp exlimi impbii ) ACBEZABCFZGZ
+      ( weq wsb wa wex sbid2 sb1 sylbir stdpc7 imp exlimih impbii ) ACBEZABCFZGZ
       CHZAQCBFSACBDIQCBJKRACDPQAACBLMNO $.
 
     $( Reversed substitution.  (Contributed by NM, 5-Aug-1993.)  (Proof
@@ -13021,7 +13030,7 @@ $)
     $( A variable introduction law for equality.  Lemma 15 of [Monk2] p. 109.
        (Contributed by NM, 5-Aug-1993.) $)
     equvin $p |- ( x = y <-> E. z ( x = z /\ z = y ) ) $=
-      ( weq wa wex equvini ax-17 equtr imp exlimi impbii ) ABDZACDZCBDZEZCFABCG
+      ( weq wa wex equvini ax-17 equtr imp exlimih impbii ) ABDZACDZCBDZEZCFABCG
       PMCMCHNOMACBIJKL $.
   $}
 
@@ -20808,7 +20817,7 @@ $)
     $( Introduction of a conjunct into uniqueness quantifier.  (Contributed by
        NM, 19-Feb-2005.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
     euan $p |- ( E! x ( ph /\ ps ) <-> ( ph /\ E! x ps ) ) $=
-      ( wa weu wex wmo simpl exlimi adantr simpr eximi hbe1 ancrd impbid2 mobidh
+      ( wa weu wex wmo simpl exlimih adantr simpr eximi hbe1 ancrd impbid2 mobidh
       a1d biimpa eu5 jca32 anbi2i 3imtr4i ibar eubidh impbii ) ABEZCFZABCFZEZUGC
       GZUGCHZEZABCGZBCHZEZEUHUJUMAUNUOUKAULUGACDABIJZKUKUNULUGBCABLZMKUKULUOUKU
       GBCUGCNUKUGBURUKBAUKABUQROPQSUAUGCTUIUPABCTUBUCAUIUHABUGCDABUDUESUF $.
@@ -20905,7 +20914,7 @@ $)
     $( "At most one" double quantification.  (Contributed by NM,
        3-Dec-2001.) $)
     moexex $p |- ( ( E* x ph /\ A. x E* y ps ) -> E* y E. x ( ph /\ ps ) ) $=
-      ( wmo wal wa wex wi hbmo1 hba1 hbe1 hbmo hbim mopick ex exlimi wn a1d ori
+      ( wmo wal wa wex wi hbmo1 hba1 hbe1 hbmo hbim mopick ex exlimih wn a1d ori
       com3r alrimdh immo spsd syl6 hbex exsimpl con3i exmo syl pm2.61i imp ) ACF
       ZBDFZCGZABHZCIZDFZACIZUNUPUSJZJZAVBCUNVACACKUPUSCUOCLURCDUQCMNOOAUNURBJZD
       GZVAAUNVCDEADCENUNURABUNURABJABCPQUBUCVDUOUSCURBDUDUEUFRUTSZVAUNVEUSUPVEU
