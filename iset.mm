@@ -11029,6 +11029,14 @@ $)
       ( wex eximi ) ADFBDFCABDEGG $.
   $}
 
+  ${
+    eximii.1 $e |- E. x ph $.
+    eximii.2 $e |- ( ph -> ps ) $.
+    $( Inference associated with ~ eximi .  (Contributed by BJ, 3-Feb-2018.) $)
+    eximii $p |- E. x ps $=
+      ( wex eximi ax-mp ) ACFBCFDABCEGH $.
+  $}
+
   $( A transformation of quantifiers and logical connectives.  (Contributed by
      NM, 19-Aug-1993.) $)
   alinexa $p |- ( A. x ( ph -> -. ps ) <-> -. E. x ( ph /\ ps ) ) $=
