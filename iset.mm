@@ -11430,12 +11430,12 @@ $)
     K $.
 
   ${
-    19.36i.1 $e |- ( ps -> A. x ps ) $.
+    19.36i.1 $e |- F/ x ps $.
     19.36i.2 $e |- E. x ( ph -> ps ) $.
     $( Inference from Theorem 19.36 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.)  (Revised by NM, 2-Feb-2015.) $)
     19.36i $p |- ( A. x ph -> ps ) $=
-      ( wal wex 19.35i id exlimih syl ) ACFBCGBABCEHBBCDBIJK $.
+      ( wal wex 19.35i id exlimi syl ) ACFBCGBABCEHBBCDBIJK $.
   $}
 
   $( Theorem 19.38 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
@@ -13327,7 +13327,7 @@ $)
     $( Inference from Theorem 19.36 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.) $)
     19.36aiv $p |- ( A. x ph -> ps ) $=
-      ( ax-17 19.36i ) ABCBCEDF $.
+      ( nfv 19.36i ) ABCBCEDF $.
   $}
 
   ${
