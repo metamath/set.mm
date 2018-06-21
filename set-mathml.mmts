@@ -1077,7 +1077,7 @@ $s class Funpart $: <mi>&#x1D5A5;&#x1D5CE;&#x1D5C7;&#x1D5AF;&#x1D5BA;&#x1D5CB;&#
 $s class FullFun $: <mi>&#x1D5A5;&#x1D5CE;&#x1D5C5;&#x1D5C5;&#x1D5A5;&#x1D5CE;&#x1D5C7;</mi> $.
 $s class Restrict $: <mi href="df-restrict.html">&#x1D5B1;&#x1D5BE;&#x1D5CC;&#x1D5CD;&#x1D5CB;&#x1D5C2;&#x1D5BC;&#x1D5CD;</mi> $.
 $s class Funpart F $: <mrow><mi href="df-funpart.html">&#x1D5A5;&#x1D5CE;&#x1D5C7;&#x1D5AF;&#x1D5BA;&#x1D5CB;&#x1D5CD;</mi> #F#</mrow> $.
-$s class FullFun F $: <mrow><mi href="df-fullfun.html>&#x1D5A5;&#x1D5CE;&#x1D5C5;&#x1D5C5;&#x1D5A5;&#x1D5CE;&#x1D5C7;</mi> #F#</mrow> $.
+$s class FullFun F $: <mrow><mi href="df-fullfun.html">&#x1D5A5;&#x1D5CE;&#x1D5C5;&#x1D5C5;&#x1D5A5;&#x1D5CE;&#x1D5C7;</mi> #F#</mrow> $.
 $s class UB A $: <mrow><mi href="df-ub.html">UB</mi> #A# </mrow> $.
 $s class LB A $: <mrow><mi href="df-lb.html">LB</mi> #A# </mrow> $.
 $s class wsuc ( R , O , P ) $: <mrow> <mo href="df-wsuc.html">wsuc</mo> <mfenced>#R# #O# #P#</mfenced></mrow> $.
@@ -1403,7 +1403,7 @@ $s wff F/_ x A $: <mrow> <munder><mo href="df-nfc.html"> &#8498; </mo><mo> &#x5F
 
 
 $( Classes and sets $)
-$s wff O = P $: <mrow> #O# <mo>=</mo> #P# </mrow> $.
+$s wff O = P $: <mrow> #O# <mo href="wceq.html">=</mo> #P# </mrow> $.
 $s wff O =/= P $: <mrow> #O# <mo href="df-ne.html">&ne;</mo> #P# </mrow> $.
 $s wff O < P $: <mrow> #O# <mo href="df-ltxr.html"><</mo> #P# </mrow> $.
 $s wff O <_ P $: <mrow> #O# <mo href="df-le.html">&le;</mo> #P# </mrow> $.
@@ -1485,7 +1485,7 @@ $s class-o ( O logb A ) $: <mrow><msub><mi href="df-logb.html">log</mi> #O#</msu
 $s class ( O logb A ) $: <mrow><msub><mi href="df-logb.html">log</mi> #O#</msub> #A#</mrow> $.
 $s class ( # ` O ) $: <mfenced open="|" close="|">#O#</mfenced> $.
 $s class ( |_ ` O ) $: <mfenced open="&lfloor;" close="&rfloor;">#O#</mfenced> $.
-$s class ( ! ` A ) $: <mrow>#A# <mo form="postfix href="df-fac.html"">&excl;</mo></mrow> $.
+$s class ( ! ` A ) $: <mrow>#A# <mo form="postfix" href="df-fac.html">&excl;</mo></mrow> $.
 
 $( Minus sign and exponents : make sure brackets are added. $)
 $s class ( -u A ^ O ) $: <msup> <mfenced><mrow><mo form="prefix">&minus;</mo> #A# </mrow></mfenced> #O# </msup> $.
@@ -1744,7 +1744,7 @@ $( Try displaying classes as numbers $)
 $s class M $: <mn> #M# </mn> $.
 
 $( For mmdefinitions.html exclusively ... does not work 
-$s wff A = B $: <mrow> #A# <mo>=</mo> #B# </mrow> $.
+$s wff A = B $: <mrow> #A# <mo href="wceq.html">=</mo> #B# </mrow> $.
 $s wff A e. B $: <mrow> #A# <mo href="wcel.html">&isin;</mo> #B# </mrow> $.
 $s class ; A B $: <mrow> <mo>;</mo> #A# #B# </mrow> $. $)
 
