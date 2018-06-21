@@ -1078,9 +1078,10 @@ $s class FullFun $: <mi>&#x1D5A5;&#x1D5CE;&#x1D5C5;&#x1D5C5;&#x1D5A5;&#x1D5CE;&#
 $s class Restrict $: <mi href="df-restrict.html">&#x1D5B1;&#x1D5BE;&#x1D5CC;&#x1D5CD;&#x1D5CB;&#x1D5C2;&#x1D5BC;&#x1D5CD;</mi> $.
 $s class Funpart F $: <mrow><mi>&#x1D5A5;&#x1D5CE;&#x1D5C7;&#x1D5AF;&#x1D5BA;&#x1D5CB;&#x1D5CD;</mi> #F#</mrow> $.
 $s class FullFun F $: <mrow><mi>&#x1D5A5;&#x1D5CE;&#x1D5C5;&#x1D5C5;&#x1D5A5;&#x1D5CE;&#x1D5C7;</mi> #F#</mrow> $.
-$s class UB A $: <mrow><mi>UB</mi> #A# </mrow> $.
-$s class LB A $: <mrow><mi>LB</mi> #A# </mrow> $.
-
+$s class UB A $: <mrow><mi href="df-ub.html">UB</mi> #A# </mrow> $.
+$s class LB A $: <mrow><mi href="df-lb.html">LB</mi> #A# </mrow> $.
+$s class wsuc ( R , O , P ) $: <mrow> <mo href="df-wsuc.html">wsuc</mo> <mfenced>#R# #O# #P#</mfenced></mrow> $.
+$s class wLim ( R , O ) $: <mrow> <mo href="df-wlim.html">wLim</mo> <mfenced>#R# #O#</mfenced></mrow> $.
 
 $s class _|_P $: <msub href="df-polarityN.html"><mo>&perp;</mo> <mi>&#x1D443;</mi></msub> $. 
 $s class +P $: <msub href="df-padd.html"><mo>+</mo> <mi>&#x1D443;</mi></msub> $. 
