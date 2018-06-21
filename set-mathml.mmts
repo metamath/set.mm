@@ -1638,7 +1638,7 @@ $s class N-Locally A $: <mrow><mo href="df-nlly.html">N-Locally<mo> #A# </mrow> 
 $s wff Prt A $: <mrow><mo href="df-prt.html">Prt<mo> #A# </mrow> $.
 
 $( These definitions are placed later because they are overridden by some constructs $)
-$s wff O e. A $: <mrow> #O# <mo href="df-cel.html">&isin;</mo> #A# </mrow> $.
+$s wff O e. A $: <mrow> #O# <mo href="wcel.html">&isin;</mo> #A# </mrow> $.
 $s class ( F ` O ) $: <mrow> #F# <mo>&ApplyFunction;</mo> <mfenced>#O#</mfenced> </mrow> $. $( Removed <mo fence stretchy="false">(</mo> $)
 
 $( From Mathboxes $)
@@ -1744,7 +1744,7 @@ $s class M $: <mn> #M# </mn> $.
 
 $( For mmdefinitions.html exclusively ... does not work 
 $s wff A = B $: <mrow> #A# <mo>=</mo> #B# </mrow> $.
-$s wff A e. B $: <mrow> #A# <mo>&isin;</mo> #B# </mrow> $.
+$s wff A e. B $: <mrow> #A# <mo href="wcel.html">&isin;</mo> #B# </mrow> $.
 $s class ; A B $: <mrow> <mo>;</mo> #A# #B# </mrow> $. $)
 
 
