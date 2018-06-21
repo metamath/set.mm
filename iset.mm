@@ -11438,6 +11438,14 @@ $)
       ( wal wex 19.35i id exlimi syl ) ACFBCGBABCEHBBCDBIJK $.
   $}
 
+  ${
+    19.36-1.1 $e |- F/ x ps $.
+    $( Closed form of ~ 19.36i .  One direction of Theorem 19.36 of [Margaris]
+       p. 90.  (Contributed by Jim Kingdon, 20-Jun-2018.) $)
+    19.36-1 $p |- ( E. x ( ph -> ps ) -> ( A. x ph -> ps ) ) $=
+      ( wi wex wal 19.35-1 19.9 syl6ib ) ABECFACGBCFBABCHBCDIJ $.
+  $}
+
   $( Theorem 19.38 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   19.38 $p |- ( ( E. x ph -> A. x ps ) -> A. x ( ph -> ps ) ) $=
     ( wex wal wi hbe1 hba1 hbim 19.8a ax-4 imim12i alrimih ) ACDZBCEZFABFCNOCACG
@@ -19740,10 +19748,10 @@ $)
        exists (i.e. there exists some set ` x ` equal to class ` A ` ).
        Theorem 6.9 of [Quine] p. 43. _Notational convention_:  We will use the
        notational device " ` A e. _V ` " to mean " ` A ` is a set" very
-       frequently, for example in uniex .  Note the when ` A ` is not a set,
-       it is called a proper class.  In some theorems, such as uniexg , in
-       order to shorten certain proofs we use the more general antecedent
-       ` A e. V ` instead of ` A e. _V ` to mean " ` A ` is a set."
+       frequently, for example in uniex .  Note the when ` A ` is not a set, it
+       is called a proper class.  In some theorems, such as uniexg , in order
+       to shorten certain proofs we use the more general antecedent ` A e. V `
+       instead of ` A e. _V ` to mean " ` A ` is a set."
 
        Note that a constant is implicitly considered distinct from all
        variables.  This is why ` _V ` is not included in the distinct variable
