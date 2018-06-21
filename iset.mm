@@ -20358,10 +20358,9 @@ $)
     $( Implicit substitution of classes for set variables.  (Contributed by NM,
        26-Jul-1995.)  (Proof shortened by Andrew Salmon, 8-Jun-2011.) $)
     vtocl2 $p |- ps $=
-      ( wal wi wex cv wceq isseti wa eeanv biimpd 2eximi sylbir 19.36v 19.36aiv
-      mp2an exbii mpbi ax-gen mpg ) ADKZBCUIBCABLZDMZCMZUIBLZCMCNEOZCMZDNFOZDMZ
-      ULCEGPDFHPUOUQQUNUPQZDMCMULUNUPCDRURUJCDURABISTUAUDUKUMCABDUBUEUFUCADJUGU
-      H $.
+      ( wal wi wex cv wceq isseti wa eeanv biimpd 2eximi mp2an 19.36-1 19.36aiv
+      sylbir nfv eximii ax-gen mpg ) ADKZBCUIBCABLZDMZUIBLCCNEOZCMZDNFOZDMZUKCM
+      ZCEGPDFHPUMUOQULUNQZDMCMUPULUNCDRUQUJCDUQABISTUDUAABDBDUEUBUFUCADJUGUH $.
   $}
 
   ${
