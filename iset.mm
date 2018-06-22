@@ -11455,6 +11455,15 @@ $)
       ( wi wex wal 19.35-1 19.9 syl6ib ) ABECFACGBCFBABCHBCDIJ $.
   $}
 
+  ${
+    19.37-1.1 $e |- F/ x ph $.
+    $( One direction of Theorem 19.37 of [Margaris] p. 90.  The converse holds
+       in classical logic but not, in general, here.  (Contributed by Jim
+       Kingdon, 21-Jun-2018.) $)
+    19.37-1 $p |- ( E. x ( ph -> ps ) -> ( ph -> E. x ps ) ) $=
+      ( wal wi wex 19.3 19.35-1 syl5bir ) AACEABFCGBCGACDHABCIJ $.
+  $}
+
   $( Theorem 19.38 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   19.38 $p |- ( ( E. x ph -> A. x ps ) -> A. x ( ph -> ps ) ) $=
     ( wex wal wi hbe1 hba1 hbim 19.8a ax-4 imim12i alrimih ) ACDZBCEZFABFCNOCACG
