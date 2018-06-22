@@ -20657,8 +20657,9 @@ $)
        4-Jan-2017.) $)
     spcimgft $p |- ( A. x ( x = A -> ( ph -> ps ) ) -> ( A e. B ->
                       ( A. x ph -> ps ) ) ) $=
-      ( wcel cvv cv wceq wi wal elex wex issetf exim syl5bi 19.36 syl6ib syl5 )
-      DEHDIHZCJDKZABLZLCMZACMBLZDENUEUBUDCOZUFUBUCCOUEUGCDGPUCUDCQRABCFSTUA $.
+      ( wcel cvv cv wceq wal elex wex issetf exim syl5bi 19.36-1 syl6
+      wi syl5 ) DEHDIHZCJDKZABTZTCLZACLBTZDEMUEUBUDCNZUFUBUCCNUEUGCDG
+      OUCUDCPQABCFRSUA $.
 
     $( A closed version of ~ spcgf .  (Contributed by Andrew Salmon,
        6-Jun-2011.)  (Revised by Mario Carneiro, 4-Jan-2017.) $)
