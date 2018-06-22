@@ -20744,8 +20744,8 @@ $)
     $( Restricted existential specialization, using implicit substitution.
        (Contributed by Mario Carneiro, 4-Jan-2017.) $)
     spcimedv $p |- ( ph -> ( ch -> E. x ps ) ) $=
-      ( wn wal wex cv wceq wa con3d spcimdv con2d df-ex syl6ibr ) ACBIZDJZIBDKA
-      UACATCIDEFGADLEMNCBHOPQBDRS $.
+      ( cv wceq wi wal wcel wex ex alrimiv nfv nfcv spcimegft sylc )
+      ADIEJZCBKZKZDLEFMCBDNKAUCDAUAUBHOPGBCDEFCDQDERST $.
   $}
 
   ${
