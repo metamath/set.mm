@@ -20667,6 +20667,14 @@ $)
                       ( A. x ph -> ps ) ) ) $=
       ( cv wceq wb wi wal wcel bi1 imim2i alimi spcimgft syl ) CHDIZABJZKZCLSAB
       KZKZCLDEMACLBKKUAUCCTUBSABNOPABCDEFGQR $.
+
+    $( A closed version of ~ spcimegf .  (Contributed by Mario Carneiro,
+       4-Jan-2017.) $)
+    spcimegft $p |- ( A. x ( x = A -> ( ps -> ph ) ) -> ( A e. B ->
+                      ( ps -> E. x ph ) ) ) $=
+      ( wcel cvv cv wceq wal wex elex issetf exim syl5bi 19.37-1 syl6
+      wi syl5 ) DEHDIHZCJDKZBATZTCLZBACMTZDENUEUBUDCMZUFUBUCCMUEUGCDGOU
+      CUDCPQBACFRSUA $.
   $}
 
   ${
@@ -20684,8 +20692,8 @@ $)
     $( Existential specialization, using implicit substitution.  (Contributed
        by Mario Carneiro, 4-Jan-2017.) $)
     spcimegf $p |- ( A e. V -> ( ps -> E. x ph ) ) $=
-      ( wcel wn wal wex nfn cv wceq con3d spcimgf con2d df-ex syl6ibr ) DEIZBAJ
-      ZCKZJACLUAUCBUBBJCDEFBCGMCNDOBAHPQRACST $.
+      ( cv wceq wi wcel wex spcimegft mpg ) CIDJBAKKDELBACMKKCABCDEGF
+      NHO $.
   $}
 
   ${
