@@ -20650,7 +20650,6 @@ $)
   $}
 
   ${
-    $d x y $.  $d y A $.
     spcimgft.1 $e |- F/ x ps $.
     spcimgft.2 $e |- F/_ x A $.
     $( A closed version of ~ spcimgf .  (Contributed by Mario Carneiro,
