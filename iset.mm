@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Jun-2018
+$( iset.mm - Version of 22-Jun-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -20674,6 +20674,13 @@ $)
       ( wcel cvv cv wceq wal wex elex issetf exim syl5bi 19.37-1 syl6
       wi syl5 ) DEHDIHZCJDKZBATZTCLZBACMTZDENUEUBUDCMZUFUBUCCMUEUGCDGOU
       CUDCPQBACFRSUA $.
+
+    $( A closed version of ~ spcegf .  (Contributed by Jim Kingdon,
+       22-Jun-2018.) $)
+    spcegft $p |- ( A. x ( x = A -> ( ph <-> ps ) ) -> ( A e. B ->
+                      ( ps -> E. x ph ) ) ) $=
+      ( cv wceq wb wi wal wcel wex bi2 imim2i alimi spcimegft syl ) CHD
+      IZABJZKZCLTBAKZKZCLDEMBACNKKUBUDCUAUCTABOPQABCDEFGRS $.
   $}
 
   ${
@@ -20709,8 +20716,8 @@ $)
     $( Existential specialization, using implicit substitution.  (Contributed
        by NM, 2-Feb-1997.) $)
     spcegf $p |- ( A e. V -> ( ps -> E. x ph ) ) $=
-      ( wcel wn wal wex nfn cv wceq notbid spcgf con2d df-ex syl6ibr ) DEIZBAJZ
-      CKZJACLUAUCBUBBJCDEFBCGMCNDOABHPQRACST $.
+      ( cv wceq wb wi wcel wex spcegft mpg ) CIDJABKLDEMBACNLLCABCDEG
+      FOHP $.
   $}
 
   ${
