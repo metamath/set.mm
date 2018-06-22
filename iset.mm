@@ -11464,6 +11464,15 @@ $)
       ( wal wi wex 19.3 19.35-1 syl5bir ) AACEABFCGBCGACDHABCIJ $.
   $}
 
+  ${
+    $d x ph $.
+    19.37aiv.1 $e |- E. x ( ph -> ps ) $.
+    $( Inference from Theorem 19.37 of [Margaris] p. 90.  (Contributed by NM,
+       5-Aug-1993.) $)
+    19.37aiv $p |- ( ph -> E. x ps ) $=
+      ( wi wex nfv 19.37-1 ax-mp ) ABECFABCFEDABCACGHI $.
+  $}
+
   $( Theorem 19.38 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   19.38 $p |- ( ( E. x ph -> A. x ps ) -> A. x ( ph -> ps ) ) $=
     ( wex wal wi hbe1 hba1 hbim 19.8a ax-4 imim12i alrimih ) ACDZBCEZFABFCNOCACG
