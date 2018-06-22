@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Jun-2018
+$( iset.mm - Version of 21-Jun-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -10624,26 +10624,35 @@ $)
     ( wal hba1 hbim ) ACDBCDCACEBCEF $.
 
   ${
-    19.3.1 $e |- ( ph -> A. x ph ) $.
+    19.3h.1 $e |- ( ph -> A. x ph ) $.
     $( A wff may be quantified with a variable not free in it.  Theorem 19.3 of
        [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.)  (Revised by NM,
        21-May-2007.) $)
-    19.3 $p |- ( A. x ph <-> ph ) $=
+    19.3h $p |- ( A. x ph <-> ph ) $=
       ( wal ax-4 impbii ) ABDAABECF $.
+  $}
+
+  ${
+    19.3.1 $e |- F/ x ph $.
+    $( A wff may be quantified with a variable not free in it.  Theorem 19.3 of
+       [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.)  (Revised by Mario
+       Carneiro, 24-Sep-2016.) $)
+    19.3 $p |- ( A. x ph <-> ph ) $=
+      ( wal sp nfri impbii ) ABDAABEABCFG $.
   $}
 
   ${
     19.16.1 $e |- ( ph -> A. x ph ) $.
     $( Theorem 19.16 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
     19.16 $p |- ( A. x ( ph <-> ps ) -> ( ph <-> A. x ps ) ) $=
-      ( wal wb 19.3 albi syl5bbr ) AACEABFCEBCEACDGABCHI $.
+      ( wal wb 19.3h albi syl5bbr ) AACEABFCEBCEACDGABCHI $.
   $}
 
   ${
     19.17.1 $e |- ( ps -> A. x ps ) $.
     $( Theorem 19.17 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
     19.17 $p |- ( A. x ( ph <-> ps ) -> ( A. x ph <-> ps ) ) $=
-      ( wb wal albi 19.3 syl6bb ) ABECFACFBCFBABCGBCDHI $.
+      ( wb wal albi 19.3h syl6bb ) ABECFACFBCFBABCGBCDHI $.
   $}
 
   ${
@@ -10698,14 +10707,14 @@ $)
     19.27.1 $e |- ( ps -> A. x ps ) $.
     $( Theorem 19.27 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
     19.27 $p |- ( A. x ( ph /\ ps ) <-> ( A. x ph /\ ps ) ) $=
-      ( wa wal 19.26 19.3 anbi2i bitri ) ABECFACFZBCFZEKBEABCGLBKBCDHIJ $.
+      ( wa wal 19.26 19.3h anbi2i bitri ) ABECFACFZBCFZEKBEABCGLBKBCDHIJ $.
   $}
 
   ${
     19.28.1 $e |- ( ph -> A. x ph ) $.
     $( Theorem 19.28 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
     19.28 $p |- ( A. x ( ph /\ ps ) <-> ( ph /\ A. x ps ) ) $=
-      ( wa wal 19.26 19.3 anbi1i bitri ) ABECFACFZBCFZEALEABCGKALACDHIJ $.
+      ( wa wal 19.26 19.3h anbi1i bitri ) ABECFACFZBCFZEALEABCGKALACDHIJ $.
   $}
 
   ${
@@ -11777,7 +11786,7 @@ $)
     $( A useful equivalence related to substitution.  (Contributed by NM,
        5-Aug-1993.)  (Proof shortened by Andrew Salmon, 12-Aug-2011.) $)
     equsal $p |- ( A. x ( x = y -> ph ) <-> ps ) $=
-      ( weq wi wal 19.3 syl6bbr pm5.74i albii a1d alrimih ax9o impbii bitr4i ) C
+      ( weq wi wal 19.3h syl6bbr pm5.74i albii a1d alrimih ax9o impbii bitr4i ) C
       DGZAHZCISBCIZHZCIZBTUBCSAUASABUAFBCEJKLMBUCBUBCEBUASENOBCDPQR $.
   $}
 
@@ -21679,7 +21688,7 @@ $)
        intuitionistically (it could be proved from ~ 19.35-1 ), but the reverse
        direction is not.  (Contributed by NM, 5-Aug-1993.) $)
     19.37 $p |- ( E. x ( ph -> ps ) <-> ( ph -> E. x ps ) ) $=
-      ( wi wex wal 19.35 19.3 imbi1i bitri ) ABECFACGZBCFZEAMEABCHLAMACDIJK $.
+      ( wi wex wal 19.35 19.3h imbi1i bitri ) ABECFACGZBCFZEAMEABCHLAMACDIJK $.
   $}
 
   ${
@@ -22150,7 +22159,7 @@ $)
        ~ 2eu8 for alternate definitions.  (Contributed by NM, 3-Dec-2001.) $)
     2eu4 $p |- ( ( E! x E. y ph /\ E! y E. x ph ) <->
       ( E. x E. y ph /\ E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) ) ) $=
-      ( wex weu wa weq wal ax-17 eu3 anbi12i anbi2i bitri hba1 19.3 19.26 albii
+      ( wex weu wa weq wal ax-17 eu3 anbi12i anbi2i bitri hba1 19.3h 19.26 albii
       wi an4 excom anidm jcab 3bitr4ri alcom bitr4i 19.23v 2albii 3bitri 2exbii
       hbe1 hbim aaan eeanv bitr2i ) ACFZBGZABFZCGZHUQBFZUQBDIZTZBJZDFZHZUSCFZUS
       CEIZTZCJZEFZHZHVAVGHZVEVKHZHVAAVBVHHTZCJZBJZEFDFZHURVFUTVLUQBDUQDKLUSCEUS
