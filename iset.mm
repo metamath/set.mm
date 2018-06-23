@@ -21146,16 +21146,14 @@ $)
 
   ${
     $d y A $.  $d x y $.  $d y ph $.
-    $( Restricted quantifier version of Theorem 19.3 of [Margaris] p. 89.  We
-       don't need the non-empty class condition of ~ r19.3rzv when there is an
-       outer quantifier.  (Contributed by NM, 25-Oct-2012.) $)
+    $( Restricted quantifier version of Theorem 19.3 of [Margaris] p. 89.
+       (Contributed by NM, 25-Oct-2012.) $)
     rr19.3v $p |- ( A. x e. A A. y e. A ph <-> A. x e. A ph ) $=
       ( wral cv weq biidd rspcv ralimia wcel ax-1 ralrimiv ralimi impbii ) ACDE
       ZBDEABDEPABDAACBFDCBGAHIJAPBDAACDACFDKLMNO $.
 
-    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  We
-       don't need the non-empty class condition of ~ r19.28zv when there is an
-       outer quantifier.  (Contributed by NM, 29-Oct-2012.) $)
+    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.
+       (Contributed by NM, 29-Oct-2012.) $)
     rr19.28v $p |- ( A. x e. A A. y e. A ( ph /\ ps )
                       <-> A. x e. A ( ph /\ A. y e. A ps ) ) $=
       ( wa wral cv wcel simpl ralimi weq biidd rspcv syl5 wi simpr jcad ralimia
