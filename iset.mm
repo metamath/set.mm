@@ -21259,8 +21259,8 @@ $)
     $( Membership in a class abstraction, with a weaker antecedent than
        ~ elabgf .  (Contributed by NM, 6-Sep-2011.) $)
     elab3gf $p |- ( ( ps -> A e. B ) -> ( A e. { x | ph } <-> ps ) ) $=
-      ( wcel cab wb wn elabgf ibi pm2.21 impbid2 ja ) BDEIDACJZIZBKBLSBSBABCDRF
-      GHMNBSOPABCDEFGHMQ $.
+      ( wcel wi cab elabgf ibi wb imim2i bi2 syli impbid2 ) BDEIZJZDACKZIZBUBBA
+      BCDUAFGHLMBTUBBNZUBSUCBABCDEFGHLOUBBPQR $.
   $}
 
   ${
