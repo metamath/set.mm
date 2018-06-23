@@ -20943,7 +20943,7 @@ $)
        (Contributed by NM, 9-Nov-2012.) $)
     rspc2 $p |- ( ( A e. C /\ B e. D ) -> ( A. x e. C A. y e. D ph ->
                   ps ) ) $=
-      ( wcel wral nfcv nfral cv wceq rspc ralbidv sylan9 ) FHNAEIOZDHOCEIOZGINB
+      ( wcel wral nfcv nfralxy cv wceq rspc ralbidv sylan9 ) FHNAEIOZDHOCEIOZGINB
       UCUDDFHCDEIDIPJQDRFSACEILUATCBEGIKMTUB $.
   $}
 
