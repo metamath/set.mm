@@ -20775,8 +20775,11 @@ $)
     $( Specialization with 2 quantifiers, using implicit substitution.
        (Contributed by NM, 27-Apr-2004.) $)
     spc2gv $p |- ( ( A e. V /\ B e. W ) -> ( A. x A. y ph -> ps ) ) $=
-      ( wcel wa wal wn wex cv wceq notbid spc2egv 2nalexn syl6ibr con4d ) EGJFH
-      JKZBADLCLZUBBMZAMZDNCNUCMUEUDCDEFGHCOEPDOFPKABIQRACDSTUA $.
+      ( wcel wa cv wceq wex wal elisset anim12i wi exim 19.9v biimpcd
+      eeanv sylibr 2alimi alimi 3syl bitri syl6ib syl5com ) EGJZFHJZK
+      ZCLEMZDLFMZKZDNZCNZADOCOZBULUMCNZUNDNZKUQUJUSUKUTCEGPDFHPQUMUNC
+      DUBUCURUQBDNZCNZBURUOBRZDOZCOUPVARZCOUQVBRAVCCDUOABIUAUDVDVECUO
+      BDSUEUPVACSUFVBVABVACTBDTUGUHUI $.
   $}
 
   ${
