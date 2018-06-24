@@ -14945,6 +14945,64 @@ $)
       wi ) ABCZABDZABEZFPQRABGABHIRQPRQPRQPOABJKLMN $.
   $}
 
+  $( Existence implies "at most one" is equivalent to uniqueness.  (Contributed
+     by NM, 5-Apr-2004.) $)
+  exmoeu2 $p |- ( E. x ph -> ( E* x ph <-> E! x ph ) ) $=
+    ( weu wex wmo eu5 baibr ) ABCABDABEABFG $.
+
+  $( Absorption of existence condition by "at most one."  (Contributed by NM,
+     4-Nov-2002.) $)
+  moabs $p |- ( E* x ph <-> ( E. x ph -> E* x ph ) ) $=
+    ( wex weu wi wmo pm5.4 df-mo imbi2i 3bitr4ri ) ABCZKABDZEZEMKABFZENKLGNMKAB
+    HZIOJ $.
+
+  ${
+    euan.1 $e |- ( ph -> A. x ph ) $.
+    $( Introduction of a conjunct into uniqueness quantifier.  (Contributed by
+       NM, 19-Feb-2005.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
+    euan $p |- ( E! x ( ph /\ ps ) <-> ( ph /\ E! x ps ) ) $=
+      ( wa weu wex wmo simpl exlimih adantr simpr eximi hbe1 ancrd impbid2 mobidh
+      a1d biimpa eu5 jca32 anbi2i 3imtr4i ibar eubidh impbii ) ABEZCFZABCFZEZUGC
+      GZUGCHZEZABCGZBCHZEZEUHUJUMAUNUOUKAULUGACDABIJZKUKUNULUGBCABLZMKUKULUOUKU
+      GBCUGCNUKUGBURUKBAUKABUQROPQSUAUGCTUIUPABCTUBUCAUIUHABUGCDABUDUESUF $.
+  $}
+
+  ${
+    $d x ph $.
+    $( Introduction of a conjunct into uniqueness quantifier.  (Contributed by
+       NM, 23-Mar-1995.) $)
+    euanv $p |- ( E! x ( ph /\ ps ) <-> ( ph /\ E! x ps ) ) $=
+      ( ax-17 euan ) ABCACDE $.
+  $}
+
+  $( Introduce or eliminate a disjunct in a uniqueness quantifier.
+     (Contributed by NM, 21-Oct-2005.)  (Proof shortened by Andrew Salmon,
+     9-Jul-2011.) $)
+  euor2 $p |- ( -. E. x ph -> ( E! x ( ph \/ ps ) <-> E! x ps ) ) $=
+    ( wex wn wo hbe1 hbn wb 19.8a con3i orel1 olc impbid1 syl eubidh ) ACDZEZABF
+    ZBCQCACGHRAEZSBIAQACJKTSBABLBAMNOP $.
+
+  $( Double existential uniqueness.  (Contributed by NM, 3-Dec-2001.) $)
+  2eu2ex $p |- ( E! x E! y ph -> E. x E. y ph ) $=
+    ( weu wex euex eximi syl ) ACDZBDIBEACEZBEIBFIJBACFGH $.
+
+  $( Two equivalent expressions for double existential uniqueness.
+     (Contributed by NM, 19-Feb-2005.) $)
+  2eu7 $p |- ( ( E! x E. y ph /\ E! y E. x ph ) <->
+             E! x E! y ( E. x ph /\ E. y ph ) ) $=
+    ( wex weu wa hbe1 hbeu euan ancom eubii 3bitri 3bitr4ri ) ABDZCEZACDZFZBEOP
+    BEZFNPFZCEZBEROFOPBNBCABGHITQBTPNFZCEPOFQSUACNPJKPNCACGIPOJLKROJM $.
+
+  ${
+    $d x y $.
+    $( Two ways to express "only one thing exists."  The left-hand side
+       requires only one variable to express this.  Both sides are false in set
+       theory.  (Contributed by NM, 5-Apr-2004.) $)
+    exists1 $p |- ( E! x x = x <-> A. x x = y ) $=
+      ( weq weu wb wal wex df-eu equid tbt bicom bitri albii exbii hbae 3bitr2i
+      19.9h ) AACZADRABCZEZAFZBGSAFZBGUBRABHUBUABSTASSRETRSAIJSRKLMNUBBABBOQP $.
+  $}
+
 $(
 ###############################################################################
                                  SET THEORY
@@ -21866,17 +21924,6 @@ $)
     ( wex wmo weu wi df-mo biimpi com12 biimpri euex imim12i peirce syl impbii
     ) ABCZABDZABEZFZQPRQPRFZABGZHISTPFPTQRPQTUAJABKLPRMNO $.
 
-  $( Existence implies "at most one" is equivalent to uniqueness.  (Contributed
-     by NM, 5-Apr-2004.) $)
-  exmoeu2 $p |- ( E. x ph -> ( E* x ph <-> E! x ph ) ) $=
-    ( weu wex wmo eu5 baibr ) ABCABDABEABFG $.
-
-  $( Absorption of existence condition by "at most one."  (Contributed by NM,
-     4-Nov-2002.) $)
-  moabs $p |- ( E* x ph <-> ( E. x ph -> E* x ph ) ) $=
-    ( wex weu wi wmo pm5.4 df-mo imbi2i 3bitr4ri ) ABCZKABDZEZEMKABFZENKLGNMKAB
-    HZIOJ $.
-
   $( Something exists or at most one exists.  (Contributed by NM,
      8-Mar-1995.) $)
   exmo $p |- ( E. x ph \/ E* x ph ) $=
@@ -21958,14 +22005,6 @@ $)
       ( vy wa weq wi wal wex impexp albii 19.21h bitri exbii ax-17 imbi2i 19.37v
       wmo mo2 bitr4i 3bitr4i ) ABFZCEGZHZCIZEJABUDHZCIZHZEJZUCCSABCSZHZUFUIEUFA
       UGHZCIUIUEUMCABUDKLAUGCDMNOUCCEUCEPTULAUHEJZHUJUKUNABCEBEPTQAUHERUAUB $.
-
-    $( Introduction of a conjunct into uniqueness quantifier.  (Contributed by
-       NM, 19-Feb-2005.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
-    euan $p |- ( E! x ( ph /\ ps ) <-> ( ph /\ E! x ps ) ) $=
-      ( wa weu wex wmo simpl exlimih adantr simpr eximi hbe1 ancrd impbid2 mobidh
-      a1d biimpa eu5 jca32 anbi2i 3imtr4i ibar eubidh impbii ) ABEZCFZABCFZEZUGC
-      GZUGCHZEZABCGZBCHZEZEUHUJUMAUNUOUKAULUGACDABIJZKUKUNULUGBCABLZMKUKULUOUKU
-      GBCUGCNUKUGBURUKBAUKABUQROPQSUAUGCTUIUPABCTUBUCAUIUHABUGCDABUDUESUF $.
   $}
 
   ${
@@ -21986,14 +22025,6 @@ $)
   moanmo $p |- E* x ( ph /\ E* x ph ) $=
     ( wmo wa wi id hbmo1 moanim mpbir ancom mobii ) AABCZDZBCLADZBCZOLLELFLABAB
     GHIMNBALJKI $.
-
-  ${
-    $d x ph $.
-    $( Introduction of a conjunct into uniqueness quantifier.  (Contributed by
-       NM, 23-Mar-1995.) $)
-    euanv $p |- ( E! x ( ph /\ ps ) <-> ( ph /\ E! x ps ) ) $=
-      ( ax-17 euan ) ABCACDE $.
-  $}
 
   ${
     $d x y $.  $d y ph $.  $d y ps $.
@@ -22047,13 +22078,6 @@ $)
     hban ) ADEZABFZDGZACFZDGABCHZDGSUAFZUBUCDSUADADITDJRUDUBTCFUCUDATCUDABABDKL
     MABCNOPQ $.
 
-  $( Introduce or eliminate a disjunct in a uniqueness quantifier.
-     (Contributed by NM, 21-Oct-2005.)  (Proof shortened by Andrew Salmon,
-     9-Jul-2011.) $)
-  euor2 $p |- ( -. E. x ph -> ( E! x ( ph \/ ps ) <-> E! x ps ) ) $=
-    ( wex wn wo hbe1 hbn wb 19.8a con3i orel1 olc impbid1 syl eubidh ) ACDZEZABF
-    ZBCQCACGHRAEZSBIAQACJKTSBABLBAMNOP $.
-
   ${
     moexex.1 $e |- ( ph -> A. y ph ) $.
     $( "At most one" double quantification.  (Contributed by NM,
@@ -22090,10 +22114,6 @@ $)
      (Contributed by NM, 3-Dec-2001.) $)
   2eumo $p |- ( E! x E* y ph -> E* x E! y ph ) $=
     ( weu wmo wi euimmo eumo mpg ) ACDZACEZFKBDJBEFBJKBGACHI $.
-
-  $( Double existential uniqueness.  (Contributed by NM, 3-Dec-2001.) $)
-  2eu2ex $p |- ( E! x E! y ph -> E. x E. y ph ) $=
-    ( weu wex euex eximi syl ) ACDZBDIBEACEZBEIBFIJBACFGH $.
 
   $( A condition allowing swap of "at most one" and existential quantifiers.
      (Contributed by NM, 10-Apr-2004.) $)
@@ -22250,13 +22270,6 @@ $)
       RYHDEWQYGBCAWLWDVTWAABCDEWBWCWRWNDEWQWMBCAWLWEVTWAWFWGUR $.
   $}
 
-  $( Two equivalent expressions for double existential uniqueness.
-     (Contributed by NM, 19-Feb-2005.) $)
-  2eu7 $p |- ( ( E! x E. y ph /\ E! y E. x ph ) <->
-             E! x E! y ( E. x ph /\ E. y ph ) ) $=
-    ( wex weu wa hbe1 hbeu euan ancom eubii 3bitri 3bitr4ri ) ABDZCEZACDZFZBEOP
-    BEZFNPFZCEZBEROFOPBNBCABGHITQBTPNFZCEPOFQSUACNPJKPNCACGIPOJLKROJM $.
-
   $( Two equivalent expressions for double existential uniqueness.  Curiously,
      we can put ` E! ` on either of the internal conjuncts but not both.  We
      can also commute ` E! x E! y ` using ~ 2eu7 .  (Contributed by NM,
@@ -22279,13 +22292,6 @@ $)
 
   ${
     $d x y $.
-    $( Two ways to express "only one thing exists."  The left-hand side
-       requires only one variable to express this.  Both sides are false in set
-       theory.  (Contributed by NM, 5-Apr-2004.) $)
-    exists1 $p |- ( E! x x = x <-> A. x x = y ) $=
-      ( weq weu wb wal wex df-eu equid tbt bicom bitri albii exbii hbae 3bitr2i
-      19.9h ) AACZADRABCZEZAFZBGSAFZBGUBRABHUBUABSTASSRETRSAIJSRKLMNUBBABBOQP $.
-
     $( A condition implying that at least two things exist.  (Contributed by
        NM, 10-Apr-2004.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
     exists2 $p |- ( ( E. x ph /\ E. x -. ph ) -> -. E! x x = x ) $=
