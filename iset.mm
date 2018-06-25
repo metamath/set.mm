@@ -14953,6 +14953,21 @@ $)
   $}
 
   ${
+    $d x y z $.  $d ph z $.
+    mor.1 $e |- F/ y ph $.
+    $( Converse of ~ mo23 with an additional ` E. x ph ` condition.
+       (Contributed by Jim Kingdon, 25-Jun-2018.) $)
+    mor $p |- ( E. x ph ->
+        ( A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ->
+          E. y A. x ( ph -> x = y ) ) ) $=
+      ( wex cv wsbc wa wceq wal sb8e impexp bi2.04 bitri 2albii nfs1v
+      wi nfri eximi alim alimi a7s exim syl syl5com syl5bi sylbi ) AB
+      EABCFZGZCEZAUIHBFUHIZQZCJBJZAUKQZBJZCEZQABCDKUMUIUNQZCJBJZUJUPU
+      LUQBCULAUIUKQQUQAUIUKLAUIUKMNOUJUIBJZCEZURUPUIUSCUIBABCPRSURUSU
+      OQZCJZUTUPQUQVBCBUQBJVACUIUNBTUAUBUSUOCUCUDUEUFUG $.
+  $}
+
+  ${
     $d x y $.  $d y ph $.
     $( Uniqueness in terms of "at most one."  (Contributed by NM,
        23-Mar-1995.)  (Proof rewritten by Jim Kingdon, 27-May-2018.) $)
