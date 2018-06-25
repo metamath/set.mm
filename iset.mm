@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Jun-2018
+$( iset.mm - Version of 25-Jun-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -14934,6 +14934,22 @@ $)
     cbvmo $p |- ( E* x ph <-> E* y ps ) $=
       ( wex weu wi wmo cbvex cbveu imbi12i df-mo 3bitr4i ) ACHZACIZJBDHZBDIZJAC
       KBDKQSRTABCDEFGLABCDEFGMNACOBDOP $.
+  $}
+
+  ${
+    $d x y z $.  $d ph z $.
+    mo23.1 $e |- F/ y ph $.
+    $( An implication between two definitions of "there exists at most one."
+       (Contributed by Jim Kingdon, 25-Jun-2018.) $)
+    mo23 $p |- ( E. y A. x ( ph -> x = y ) ->
+               A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
+      ( vz cv wceq wi wal wex wsbc wa nfim nfal equequ2 imbi2d albidv
+      nfv cbvex nfri nfs1v sbequ2 ax-8 imim12d cbv3 ancli aaan sylibr
+      prth equtr2 syl6 2alimi syl exlimiv sylbir ) ABFZCFZGZHZBIZCJAU
+      PEFZGZHZBIZEJAABUQKZLZURHZCIBIZVDUTECVCCBAVBCDVBCRMZNUTERVAUQGZ
+      VCUSBVJVBURAECBOPQSVDVHEVDVCVEUQVAGZHZLZCIBIZVHVDVDVLCIZLVNVDVO
+      VCVLBCVIVEVKBABCUAVKBRMZURVEAVBVKABCUBBCEUCUDUEUFVCVLBCVCCVITVL
+      BVPTUGUHVMVGBCVMVFVBVKLURAVBVEVKUIBCEUJUKULUMUNUO $.
   $}
 
   ${
