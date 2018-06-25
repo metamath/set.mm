@@ -16848,6 +16848,7 @@ New usage of "sbcco3gOLD" is discouraged (6 uses).
 New usage of "sbccomiegOLD" is discouraged (0 uses).
 New usage of "sbcim2g" is discouraged (2 uses).
 New usage of "sbcim2gVD" is discouraged (0 uses).
+New usage of "sbcomOLD" is discouraged (0 uses).
 New usage of "sbcoreleleq" is discouraged (2 uses).
 New usage of "sbcoreleleqVD" is discouraged (0 uses).
 New usage of "sbcrot3OLD" is discouraged (0 uses).
@@ -18095,6 +18096,7 @@ Proof modification of "sbcco3gOLD" is discouraged (30 steps).
 Proof modification of "sbccomiegOLD" is discouraged (31 steps).
 Proof modification of "sbcim2g" is discouraged (83 steps).
 Proof modification of "sbcim2gVD" is discouraged (139 steps).
+Proof modification of "sbcomOLD" is discouraged (380 steps).
 Proof modification of "sbcoreleleq" is discouraged (90 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (127 steps).
 Proof modification of "sbcrot3OLD" is discouraged (8 steps).
