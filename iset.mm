@@ -14983,6 +14983,18 @@ $)
   $}
 
   ${
+    $d x y $.
+    eu3.1 $e |- ( ph -> A. y ph ) $.
+    $( An alternate way to express existential uniqueness.  (Contributed by NM,
+       8-Jul-1994.) $)
+    eu3 $p |- ( E! x ph <->
+                ( E. x ph /\ E. y A. x ( ph -> x = y ) ) ) $=
+      ( weu wex cv wceq wi wal wa euex eumo0 jca wsbc nfi mo23 anim2i
+      eu2 sylibr impbii ) ABEZABFZABGCGZHZIBJCFZKZUBUCUFABLABCDMNUGUC
+      AABUDOKUEICJBJZKUBUFUHUCABCACDPZQRABCUISTUA $.
+  $}
+
+  ${
     $d x y $.  $d y ph $.
     $( Uniqueness in terms of "at most one."  (Contributed by NM,
        23-Mar-1995.)  (Proof rewritten by Jim Kingdon, 27-May-2018.) $)
@@ -21872,17 +21884,6 @@ $)
       GGWRAWAVQUQAWAVQURUSUTWQWABHZCIZWSVTWAWTCWOVAWSWTVSGZCHZXAVTGWRXCCBWRBHXB
       CWAVRBVDRVBWTVSCVEPVCVFWQSZVTWDXDWASZCHZVTWACVGXFASZBHVSVTXEXGCBWABWOTACD
       TCBFAWAAWAGBCABCVHVIVJOXGVRBAVQVKRVSCVLVMQVNVOVP $.
-  $}
-
-  ${
-    $d x y $.
-    eu3.1 $e |- ( ph -> A. y ph ) $.
-    $( An alternate way to express existential uniqueness.  (Contributed by NM,
-       8-Jul-1994.) $)
-    eu3 $p |- ( E! x ph <->
-                ( E. x ph /\ E. y A. x ( ph -> x = y ) ) ) $=
-      ( weu wex wsb wa weq wi wal eu2 mo anbi2i bitr4i ) ABEABFZAABCGHBCIZJCKBK
-      ZHPAQJBKCFZHABCDLSRPABCDMNO $.
   $}
 
   ${
