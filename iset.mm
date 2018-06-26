@@ -14968,6 +14968,21 @@ $)
   $}
 
   ${
+    $d x y $.
+    eu2.1 $e |- F/ y ph $.
+    $( An alternate way of defining existential uniqueness.  Definition 6.10 of
+       [TakeutiZaring] p. 26.  (Contributed by NM, 8-Jul-1994.) $)
+    eu2 $p |- ( E! x ph <->
+        ( E. x ph /\ A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) ) $=
+      ( weu wex cv wsbc wa wceq wi wal euex nfri eumo0 syl jca 19.29r
+      mo23 impexp albii 19.21 bitri anbi2i bitr4i exbii sylibr impbii
+      abai sylib eu1 ) ABEZABFZAABCGZHZIBGUNJZKZCLZBLZIZULUMUSABMULAU
+      PKBLCFUSABCACDNZOABCDSPQUTAUOUPKZCLZIZBFZULUTAURIZBFVEAURBRVFVD
+      BVFAAVCKZIVDURVGAURAVBKZCLVGUQVHCAUOUPTUAAVBCDUBUCUDAVCUIUEUFUJ
+      ABCVAUKUGUH $.
+  $}
+
+  ${
     $d x y $.  $d y ph $.
     $( Uniqueness in terms of "at most one."  (Contributed by NM,
        23-Mar-1995.)  (Proof rewritten by Jim Kingdon, 27-May-2018.) $)
@@ -21857,20 +21872,6 @@ $)
       GGWRAWAVQUQAWAVQURUSUTWQWABHZCIZWSVTWAWTCWOVAWSWTVSGZCHZXAVTGWRXCCBWRBHXB
       CWAVRBVDRVBWTVSCVEPVCVFWQSZVTWDXDWASZCHZVTWACVGXFASZBHVSVTXEXGCBWABWOTACD
       TCBFAWAAWAGBCABCVHVIVJOXGVRBAVQVKRVSCVLVMQVNVOVP $.
-  $}
-
-  ${
-    $d x y $.
-    eu2.1 $e |- ( ph -> A. y ph ) $.
-    $( An alternate way of defining existential uniqueness.  Definition 6.10 of
-       [TakeutiZaring] p. 26.  (Contributed by NM, 8-Jul-1994.) $)
-    eu2 $p |- ( E! x ph <->
-    ( E. x ph /\ A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) ) $=
-      ( weu wex wsb wa weq wi wal euex eumo0 mo sylib 19.29r impexp albii 19.21h
-      jca bitri anbi2i abai bitr4i exbii eu1 sylibr impbii ) ABEZABFZAABCGZHBCI
-      ZJZCKZBKZHZUIUJUOABLUIAULJBKCFUOABCDMABCDNOTUPAUKULJZCKZHZBFZUIUPAUNHZBFU
-      TAUNBPVAUSBVAAAURJZHUSUNVBAUNAUQJZCKVBUMVCCAUKULQRAUQCDSUAUBAURUCUDUEOABC
-      DUFUGUH $.
   $}
 
   ${
