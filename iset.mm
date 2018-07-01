@@ -15016,6 +15016,22 @@ $)
     HZIOJ $.
 
   ${
+    $d x y $.
+    mo3.1 $e |- ( ph -> A. y ph ) $.
+    $( Alternate definition of "at most one."  Definition of [BellMachover]
+       p. 460, except that definition has the side condition that ` y ` not
+       occur in ` ph ` in place of our hypothesis.  (Contributed by NM,
+       8-Mar-1995.) $)
+    mo3 $p |- ( E* x ph <->
+               A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
+      ( wmo wsb wa weq wi wal wex weu nfi eu2 imbi2i df-mo anclb 3bitr4i sylibr
+      19.38 19.21 albii anabs5 pm3.31 syl5bir 2alimi sylbi simplbi2com impbii
+      syl ) ABEZAABCFZGZBCHZIZCJZBJZUKABKZUQIZUQURABLZIZURURUQGZIUKUSUTVBURABCA
+      CDMZNZOABPZURUQQRUSAUOIZCJZBJZUQUSAUPIZBJVHAUPBTVGVIBAUOCVCUAUBSVFUOBCUMA
+      UMGVFUNAULUCAUMUNUDUEUFUJUGUQVAUKUTURUQVDUHVESUI $.
+  $}
+
+  ${
     euan.1 $e |- ( ph -> A. x ph ) $.
     $( Introduction of a conjunct into uniqueness quantifier.  (Contributed by
        NM, 19-Feb-2005.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
@@ -21906,19 +21922,6 @@ $)
       ( vw cv wceq wi wal wex wsbc wmo sbex ax-17 sblim sbalv exbii bitri sbbii
       mo2 3bitr4i ) ADFEFGZHZDIZEJZBCFZKZABUFKZUBHZDIZEJZADLZBUFKUHDLUGUDBUFKZE
       JUKUDEBCMUMUJEUCUIBCDAUBBCUBBNOPQRULUEBCADEAENTSUHDEUHENTUA $.
-  $}
-
-  ${
-    $d x y $.
-    mo3.1 $e |- ( ph -> A. y ph ) $.
-    $( Alternate definition of "at most one."  Definition of [BellMachover]
-       p. 460, except that definition has the side condition that ` y ` not
-       occur in ` ph ` in place of our hypothesis.  (Contributed by NM,
-       8-Mar-1995.) $)
-    mo3 $p |- ( E* x ph <->
-               A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
-      ( wmo weq wi wal wex wsb wa mo2 mo bitri ) ABEABCFZGBHCIAABCJKOGCHBHABCDL
-      ABCDMN $.
   $}
 
   ${
