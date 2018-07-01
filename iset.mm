@@ -10658,7 +10658,8 @@ $)
   ${
     19.21h.1 $e |- ( ph -> A. x ph ) $.
     $( Theorem 19.21 of [Margaris] p. 90.  The hypothesis can be thought of
-       as " ` x ` is not free in ` ph ` ."  (Contributed by NM, 5-Aug-1993.) $)
+       as " ` x ` is not free in ` ph ` ."  (Contributed by NM, 5-Aug-1993.)
+       (New usage is discouraged.) $)
     19.21h $p |- ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) $=
       ( wi wal alim syl5 hba1 hbim ax-4 imim2i alrimih impbii ) ABEZCFZABCFZEZAA
       CFPQDABCGHROCAQCDBCIJQBABCKLMN $.
@@ -10852,7 +10853,7 @@ $)
     ( wal nfa1 nfim ) ACDBCDCACEBCEF $.
 
   $( Closed form of Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
-     27-May-1997.) $)
+     27-May-1997.)  (New usage is discouraged.) $)
   19.21ht $p |- ( A. x ( ph -> A. x ph ) ->
                ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) ) $=
     ( wal wi alim imim2d com12 sps hba1 ax-4 a1i hbimd imim2i alimi syl6 impbid
