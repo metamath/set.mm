@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Jun-2018
+$( iset.mm - Version of 30-Jun-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -15014,6 +15014,12 @@ $)
   moabs $p |- ( E* x ph <-> ( E. x ph -> E* x ph ) ) $=
     ( wex weu wi wmo pm5.4 df-mo imbi2i 3bitr4ri ) ABCZKABDZEZEMKABFZENKLGNMKAB
     HZIOJ $.
+
+  $( If existence is decidable, something exists or at most one exists.
+     (Contributed by Jim Kingdon, 30-Jun-2018.) $)
+  exmodc $p |- ( DECID E. x ph -> ( E. x ph \/ E* x ph ) ) $=
+    ( wex wdc wn wo wmo df-dc weu wi pm2.21 df-mo sylibr orim2i sylbi
+    ) ABCZDPPEZFPABGZFPHQRPQPABIZJRPSKABLMNO $.
 
   ${
     $d x y $.
