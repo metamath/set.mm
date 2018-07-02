@@ -21976,7 +21976,7 @@ $)
     $d x y $.  $d y ph $.  $d y ps $.
     $( "At most one" is preserved through implication (notice wff reversal).
        (Contributed by NM, 22-Apr-1995.) $)
-    immo $p |- ( A. x ( ph -> ps ) -> ( E* x ps -> E* x ph ) ) $=
+    moim $p |- ( A. x ( ph -> ps ) -> ( E* x ps -> E* x ph ) ) $=
       ( vy wi wal cv wsbc wa wceq wmo nfa1 ax-4 a4sbim anim12d imim1d
       alimdv alrimi ax-17 mo3 ax-5 syl 3imtr4g ) ABEZCFZBBCDGZHZIZCGU
       FJZEZDFZCFZAACUFHZIZUIEZDFZCFZBCKACKUEUKUPEZCFULUQEUEURCUDCLUEU
@@ -21984,11 +21984,11 @@ $)
   $}
 
   ${
-    immoi.1 $e |- ( ph -> ps ) $.
+    moimi.1 $e |- ( ph -> ps ) $.
     $( "At most one" is preserved through implication (notice wff reversal).
        (Contributed by NM, 15-Feb-2006.) $)
-    immoi $p |- ( E* x ps -> E* x ph ) $=
-      ( wi wmo immo mpg ) ABEBCFACFECABCGDH $.
+    moimi $p |- ( E* x ps -> E* x ph ) $=
+      ( wi wmo moim mpg ) ABEBCFACFECABCGDH $.
   $}
 
   ${
@@ -22004,7 +22004,7 @@ $)
   $( Uniqueness implies "at most one" through implication.  (Contributed by NM,
      22-Apr-1995.) $)
   euimmo $p |- ( A. x ( ph -> ps ) -> ( E! x ps -> E* x ph ) ) $=
-    ( weu wmo wi wal eumo immo syl5 ) BCDBCEABFCGACEBCHABCIJ $.
+    ( weu wmo wi wal eumo moim syl5 ) BCDBCEABFCGACEBCHABCIJ $.
 
   $( Add existential uniqueness quantifiers to an implication.  Note the
      reversed implication in the antecedent.  (Contributed by NM,
@@ -22016,7 +22016,7 @@ $)
   $( "At most one" is still the case when a conjunct is added.  (Contributed by
      NM, 22-Apr-1995.) $)
   moan $p |- ( E* x ph -> E* x ( ps /\ ph ) ) $=
-    ( wa simpr immoi ) BADACBAEF $.
+    ( wa simpr moimi ) BADACBAEF $.
 
   ${
     moani.1 $e |- E* x ph $.
@@ -22029,17 +22029,17 @@ $)
   $( "At most one" is still the case when a disjunct is removed.  (Contributed
      by NM, 5-Apr-2004.) $)
   moor $p |- ( E* x ( ph \/ ps ) -> E* x ph ) $=
-    ( wo orc immoi ) AABDCABEF $.
+    ( wo orc moimi ) AABDCABEF $.
 
   $( "At most one" imports disjunction to conjunction.  (Contributed by NM,
      5-Apr-2004.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
   mooran1 $p |- ( ( E* x ph \/ E* x ps ) -> E* x ( ph /\ ps ) ) $=
-    ( wmo wa simpl immoi moan jaoi ) ACDABEZCDBCDJACABFGBACHI $.
+    ( wmo wa simpl moimi moan jaoi ) ACDABEZCDBCDJACABFGBACHI $.
 
   $( "At most one" exports disjunction to conjunction.  (Contributed by NM,
      5-Apr-2004.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
   mooran2 $p |- ( E* x ( ph \/ ps ) -> ( E* x ph /\ E* x ps ) ) $=
-    ( wo wmo moor olc immoi jca ) ABDZCEACEBCEABCFBJCBAGHI $.
+    ( wo wmo moor olc moimi jca ) ABDZCEACEBCEABCFBJCBAGHI $.
 
   ${
     $d x y $.  $d y ph $.  $d y ps $.
@@ -22129,7 +22129,7 @@ $)
        3-Dec-2001.) $)
     moexex $p |- ( ( E* x ph /\ A. x E* y ps ) -> E* y E. x ( ph /\ ps ) ) $=
       ( wmo wal wa wex wi hbmo1 hba1 hbe1 hbmo hbim mopick ex exlimih wn a1d ori
-      com3r alrimdh immo spsd syl6 hbex exsimpl con3i exmo syl pm2.61i imp ) ACF
+      com3r alrimdh moim spsd syl6 hbex exsimpl con3i exmo syl pm2.61i imp ) ACF
       ZBDFZCGZABHZCIZDFZACIZUNUPUSJZJZAVBCUNVACACKUPUSCUOCLURCDUQCMNOOAUNURBJZD
       GZVAAUNVCDEADCENUNURABUNURABJABCPQUBUCVDUOUSCURBDUDUEUFRUTSZVAUNVEUSUPVEU
       RDIZSUSVFUTURUTDADCEUGABCUHRUIVFUSURDUJUAUKTTULUM $.
@@ -22146,12 +22146,12 @@ $)
   $( Double quantification with "at most one."  (Contributed by NM,
      3-Dec-2001.) $)
   2moex $p |- ( E* x E. y ph -> A. y E* x ph ) $=
-    ( wex wmo hbe1 hbmo 19.8a immoi alrimih ) ACDZBEABECKCBACFGAKBACHIJ $.
+    ( wex wmo hbe1 hbmo 19.8a moimi alrimih ) ACDZBEABECKCBACFGAKBACHIJ $.
 
   $( Double quantification with existential uniqueness.  (Contributed by NM,
      3-Dec-2001.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
   2euex $p |- ( E! x E. y ph -> E. y E! x ph ) $=
-    ( wex weu wmo wa eu5 excom hbe1 19.8a immoi df-mo sylib eximdh syl5bi impcom
+    ( wex weu wmo wa eu5 excom hbe1 19.8a moimi df-mo sylib eximdh syl5bi impcom
     hbmo wi sylbi ) ACDZBEUABDZUABFZGABEZCDZUABHUCUBUEUBABDZCDUCUEABCIUCUFUDCUA
     CBACJRUCABFUFUDSAUABACKLABMNOPQT $.
 
@@ -22175,7 +22175,7 @@ $)
   $( Double existential uniqueness implies double uniqueness quantification.
      (Contributed by NM, 3-Dec-2001.) $)
   2exeu $p |- ( ( E! x E. y ph /\ E! y E. x ph ) -> E! x E! y ph ) $=
-    ( wex wmo weu excom hbe1 19.41h 19.8a immoi anim2i eximi sylbir sylanb simpl
+    ( wex wmo weu excom hbe1 19.41h 19.8a moimi anim2i eximi sylbir sylanb simpl
     wa hbmo eu5 anbi12i adantl anim12i ancoms exbii mobii bitri 3imtr4i ) ACDZB
     DZUHBEZQZABDZCDZULCEZQZQUHACEZQZBDZUQBEZQZUHBFZULCFZQACFZBFZUOUKUTUOURUKUSU
     MUIUNURACBGUIUNQUHUNQZBDURUHUNBULBCABHRIVEUQBUNUPUHAULCABJKLMNOUJUSUIUQUHBU
@@ -22228,7 +22228,7 @@ $)
   2eu1 $p |- ( A. x E* y ph ->
         ( E! x E! y ph <-> ( E! x E. y ph /\ E! y E. x ph ) ) ) $=
     ( wmo wal weu wex wa wi eu5 exbii mobii anbi12i bitri simprbi anim2i ancoms
-    ax-4 sylib com12 immoi hba1 moanim ancrd 2moswap imdistani syl 2eu2ex excom
+    ax-4 sylib com12 moimi hba1 moanim ancrd 2moswap imdistani syl 2eu2ex excom
     syl6 jca jctild an4 syl6ibr 2exeu impbid1 ) ACDZBEZACFZBFZACGZBFZABGZCFZHZU
     TURVEUTURVABGZVCCGZHZVABDZVCCDZHZHZVEUTURVKVHUTVAUQHZBDZURVKIUTVMBGZVNUTUSB
     GZUSBDZHVOVNHUSBJVPVOVQVNUSVMBACJZKUSVMBVRLMNOVNURVIURHVKVNURVIVNURVAHZBDUR
