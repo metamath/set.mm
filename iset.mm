@@ -1,4 +1,4 @@
-$( iset.mm - Version of 30-Jun-2018
+$( iset.mm - Version of 2-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -14838,6 +14838,18 @@ $)
        23-Mar-1995.) $)
     euorv $p |- ( ( -. ph /\ E! x ps ) -> E! x ( ph \/ ps ) ) $=
       ( ax-17 euor ) ABCACDE $.
+  $}
+
+  ${
+    $d x y $.
+    mon.1 $e |- F/ y ph $.
+    $( There is at most one of something which does not exist.  (Contributed by
+       Jim Kingdon, 2-Jul-2018.) $)
+    mon $p |- ( -. E. x ph -> E. y A. x ( ph -> x = y ) ) $=
+      ( wex wsb weq wi wal sb8e wn alnex nfs1v sbequ1 equcoms con3d cbv3 pm2.21
+      nfn alimi 19.8a 3syl sylbir sylnbi ) ABEABCFZCEZABCGZHZBIZCEZABCDJUFKUEKZ
+      CIZUJUECLULAKZBIUIUJUKUMCBUEBABCMSACDSCBGAUEAUEHBCABCNOPQUMUHBAUGRTUICUAU
+      BUCUD $.
   $}
 
   ${
