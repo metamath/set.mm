@@ -15048,6 +15048,16 @@ $)
 
   ${
     $d x y $.
+    mo2r.1 $e |- F/ y ph $.
+    $( A condition which implies "at most one."  (Contributed by Jim Kingdon,
+       2-Jul-2018.) $)
+    mo2r $p |- ( E. y A. x ( ph -> x = y ) -> E* x ph ) $=
+      ( weq wi wal wex weu wmo nfri eu3 simplbi2com df-mo sylibr ) ABCEFBGCHZAB
+      HZABIZFABJRQPABCACDKLMABNO $.
+  $}
+
+  ${
+    $d x y $.
     mo3.1 $e |- ( ph -> A. y ph ) $.
     $( Alternate definition of "at most one."  Definition of [BellMachover]
        p. 460, except that definition has the side condition that ` y ` not
