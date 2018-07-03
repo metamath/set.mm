@@ -14982,6 +14982,19 @@ $)
 
   ${
     $d x y $.
+    modc.1 $e |- F/ y ph $.
+    $( Equivalent definitions of "there exists at most one," given decidable
+       existence.  (Contributed by Jim Kingdon, 1-Jul-2018.) $)
+    modc $p |- ( DECID E. x ph ->
+        ( E. y A. x ( ph -> x = y ) <->
+          A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) ) $=
+      ( wex wdc weq wi wal wsb wa mo23 wn wo exmiddc mor mon a1d jaoi syl
+      impbid2 ) ABEZFZABCGZHBICEZAABCJKUDHCIBIZABCDLUCUBUBMZNUFUEHZUBOUBUHUGABC
+      DPUGUEUFABCDQRSTUA $.
+  $}
+
+  ${
+    $d x y $.
     eu2.1 $e |- F/ y ph $.
     $( An alternate way of defining existential uniqueness.  Definition 6.10 of
        [TakeutiZaring] p. 26.  (Contributed by NM, 8-Jul-1994.) $)
