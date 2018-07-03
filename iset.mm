@@ -11312,6 +11312,12 @@ $)
       ( nfri 19.9h ) ABABCDE $.
   $}
 
+  $( One direction of theorem 19.6 of [Margaris] p. 89.  (Contributed by Jim
+     Kingdon, 2-Jul-2018.) $)
+  alexim $p |- ( A. x ph -> -. E. x -. ph ) $=
+    ( wal wn wex wfal wi pm2.24 alimi exim syl nfv 19.9 syl6ib sylibr
+    dfnot ) ABCZADZBEZFGSDQSFBEZFQRFGZBCSTGAUABAFHIRFBJKFBFBLMNSPO $.
+
   ${
     ax6blem.1 $e |- ( ph -> A. x ph ) $.
     $( If ` x ` is not free in ` ph ` , it is not free in ` -. ph ` .  This
