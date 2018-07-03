@@ -15079,6 +15079,17 @@ $)
   $}
 
   ${
+    $d x y $.
+    mo2dc.1 $e |- F/ y ph $.
+    $( Alternate definition of "at most one" where existence is decidable.
+       (Contributed by Jim Kingdon, 2-Jul-2018.) $)
+    mo2dc $p |- ( DECID E. x ph ->
+        ( E* x ph <-> E. y A. x ( ph -> x = y ) ) ) $=
+      ( wex wdc weq wi wal wsb wa wmo modc nfri mo3 syl6rbbr ) ABEFABCGZHBICEAA
+      BCJKQHCIBIABLABCDMABCACDNOP $.
+  $}
+
+  ${
     euan.1 $e |- ( ph -> A. x ph ) $.
     $( Introduction of a conjunct into uniqueness quantifier.  (Contributed by
        NM, 19-Feb-2005.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
