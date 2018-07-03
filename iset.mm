@@ -22381,9 +22381,9 @@ $)
     $( A condition implying that at least two things exist.  (Contributed by
        NM, 10-Apr-2004.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
     exists2 $p |- ( ( E. x ph /\ E. x -. ph ) -> -. E! x x = x ) $=
-      ( vy wex wn cv wceq weu wal hbeu1 hba1 wi exists1 ax16 sylbi exlimdh alex
-      com12 syl6ib con2d imp ) ABDZAEBDZBFZUDGZBHZEUBUFUCUBUFABIZUCEUFUBUGUFAUG
-      BUEBJABKUFUDCFGBIAUGLBCMABCNOPRABQSTUA $.
+      ( vy wex wn cv wceq weu wal hbeu1 hba1 wi exists1 sylbi exlimdh
+      ax16 com12 alexim syl6 con2d imp ) ABDZAEBDZBFZUDGZBHZEUBUFUCUB
+      UFABIZUCEUFUBUGUFAUGBUEBJABKUFUDCFGBIAUGLBCMABCPNOQABRSTUA $.
   $}
 
 $(
