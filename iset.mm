@@ -6323,6 +6323,15 @@ $)
     ( wdc wn wo wi df-dc ax-1 pm2.21 imim1i com12 jaoi sylbi ) ACAADZ
     EABFZAFZAFZAGAQNAPHPNANOAABIJKLM $.
 
+  $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
+     of Lukasiewicz, but where one of the propositions is decidable.  Using
+     ~ dfor2dc , we can see that this expresses "disjunction commutes."
+     Theorem *2.69 of [WhiteheadRussell] p. 108 (plus the decidability
+     condition).  (Contributed by NM, 12-Aug-2004.) $)
+  looinvdc $p |- ( DECID ph ->
+      ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) ) $=
+    ( wi wdc imim1 peircedc syl9r ) ABCZBCBACHACADAHBAEABFG $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Miscellaneous theorems of propositional calculus
@@ -22464,14 +22473,6 @@ $)
                 ( ph -> ( ps \/ ch ) ) ) $=
     ( wn wo wi orordi imor orbi12i 3bitr4ri ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCG
     ALHOMPNABHACHIJ $.
-
-  $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
-     of Lukasiewicz.  Using ~ dfor2dc , we can see that this (classically)
-     expresses "disjunction commutes."  Theorem *2.69 of [WhiteheadRussell]
-     p. 108.  Our proof of ~ looinv is a classical, rather than intuitionistic,
-     result.  (Contributed by NM, 12-Aug-2004.) $)
-  looinv $p |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) $=
-    ( wi imim1 peirce syl6 ) ABCZBCBACGACAGBADABEF $.
 
   ${
     19.36.1 $e |- ( ps -> A. x ps ) $.
