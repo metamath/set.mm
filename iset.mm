@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Jul-2018
+$( iset.mm - Version of 3-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6312,6 +6312,16 @@ $)
         ( ( ( ph \/ ps ) <-> ph ) \/ ( ( ph \/ ps ) <-> ps ) ) ) $=
     ( wdc wn wo wb df-dc biort bicomd biorf orim12i sylbi ) ACAADZEAB
     EZAFZNBFZEAGAOMPAANABHIMBNABJIKL $.
+
+  $( Peirce's theorem for a decidable proposition.  This odd-looking theorem
+     can be seen as an alternative to ~ exmiddc , ~ condc , or ~ notnotdc in
+     the sense of expressing the "difference" between an intuitionistic system
+     of propositional calculus and a classical system.  In intuitionistic
+     logic, it only holds for decidable propositions.  (Contributed by Jim
+     Kingdon, 3-Jul-2018.) $)
+  peircedc $p |- ( DECID ph -> ( ( ( ph -> ps ) -> ph ) -> ph ) ) $=
+    ( wdc wn wo wi df-dc ax-1 pm2.21 imim1i com12 jaoi sylbi ) ACAADZ
+    EABFZAFZAFZAGAQNAPHPNANOAABIJKLM $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
