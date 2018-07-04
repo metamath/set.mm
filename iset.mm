@@ -22048,9 +22048,10 @@ $)
     $( Move antecedent outside of "at most one."  (Contributed by NM,
        28-Jul-1995.) $)
     moimv $p |- ( E* x ( ph -> ps ) -> ( ph -> E* x ps ) ) $=
-      ( vy wi wmo weq wal wex ax-1 a1i imim1d alimdv eximdv ax-17 3imtr4g com12
-      mo2 ) AABEZCFZBCFZASCDGZEZCHZDIBUBEZCHZDITUAAUDUFDAUCUECABSUBBSEABAJKLMNS
-      CDSDORBCDBDORPQ $.
+      ( vy wi wmo wsb weq wal ax-1 a1i sbimi nfv sbf sbim 3imtr3i anim12d ax-17
+      wa mo3 imim1d 2alimdv 3imtr4g com12 ) AABEZCFZBCFZAUEUECDGZSZCDHZEZDICIBB
+      CDGZSZUJEZDICIUFUGAUKUNCDAUMUIUJABUEULUHBUEEZABAJKZACDGUOCDGAULUHEAUOCDUP
+      LACDACMNBUECDOPQUAUBUECDUEDRTBCDBDRTUCUD $.
   $}
 
   $( Uniqueness implies "at most one" through implication.  (Contributed by NM,
