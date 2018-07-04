@@ -21658,7 +21658,7 @@ $)
      of theorems which have not yet been converted over to having appropriate
      decidability conditions added.  We could also transform intuitionistic
      logic to classical logic by adding unconditional forms of ~ exmiddc ,
-     ~ peirce , or ~ notnot2dc .
+     ~ peircedc , or ~ notnot2dc .
 
      This axiom swaps or "transposes" the order of the consequents when
      negation is removed.  An informal example is that the statement "if there
@@ -21891,17 +21891,6 @@ $)
      Lammen, 21-Jul-2012.) $)
   simplim $p |- ( -. ( ph -> ps ) -> ph ) $=
     ( wi pm2.21 con1i ) AABCABDE $.
-
-  $( Peirce's axiom.  This odd-looking theorem is the "difference" between an
-     intuitionistic system of propositional calculus and a classical system and
-     is not accepted by intuitionists.  When Peirce's axiom is added to an
-     intuitionistic system, the system becomes equivalent to our classical
-     system ~ ax-1 through ~ ax-3 .  A curious fact about this theorem is that
-     it requires ~ ax-3 for its proof even though the result has no negation
-     connectives in it.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
-     Wolf Lammen, 9-Oct-2012.) $)
-  peirce $p |- ( ( ( ph -> ps ) -> ph ) -> ph ) $=
-    ( wi simplim id ja ) ABCAAABDAEF $.
 
   ${
     19.32.1 $e |- ( ph -> A. x ph ) $.
