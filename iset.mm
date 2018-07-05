@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Jul-2018
+$( iset.mm - Version of 4-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5061,9 +5061,9 @@ $)
   pm5.19 $p |- -. ( ph <-> -. ph ) $=
     ( wn wb bi1 pm2.01d id mpbird pm2.65i ) AABZCZAJAIJAAIDEZJFGKH $.
 
-  $( Theorem *4.8 of [WhiteheadRussell] p. 122.  This one is valid in
-     intuitionistic logic, whereas ~ pm4.81 is not.  (Contributed by NM,
-     3-Jan-2005.) $)
+  $( Theorem *4.8 of [WhiteheadRussell] p. 122.  This one holds for all
+     propositions, but compare with ~ pm4.81dc which requires a decidability
+     condition.  (Contributed by NM, 3-Jan-2005.) $)
   pm4.8 $p |- ( ( ph -> -. ph ) <-> -. ph ) $=
     ( wn wi pm2.01 ax-1 impbii ) AABZCGADGAEF $.
 
@@ -6276,6 +6276,12 @@ $)
      p. 104.  (Contributed by Jim Kingdon, 20-Apr-2018.) $)
   pm2.26dc $p |- ( DECID ph -> ( -. ph \/ ( ( ph -> ps ) -> ps ) ) ) $=
     ( wdc wi wn wo pm2.27 imordc mpbii ) ACAABDBDZDAEJFABGAJHI $.
+
+  $( Theorem *4.81 of [WhiteheadRussell] p. 122, for decidable propositions.
+     This one needs a decidability condition, but compare with ~ pm4.8 which
+     holds for all propositions.  (Contributed by Jim Kingdon, 4-Jul-2018.) $)
+  pm4.81dc $p |- ( DECID ph -> ( ( -. ph -> ph ) <-> ph ) ) $=
+    ( wdc wn wi pm2.18dc pm2.24 impbid1 ) ABACADAAEAAFG $.
 
   $( A decidable proposition or its negation implies a second proposition.
      Based on theorem *5.11 of [WhiteheadRussell] p. 123.  (Contributed by Jim
@@ -22424,12 +22430,6 @@ $(
 Classical (not intuitionistic) results
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
-
-  $( Theorem *4.81 of [WhiteheadRussell] p. 122.  This one does not hold
-     intuitionistically, but compare with ~ pm4.8 which does.  (Contributed by
-     NM, 3-Jan-2005.) $)
-  pm4.81 $p |- ( ( -. ph -> ph ) <-> ph ) $=
-    ( wn wi pm2.18 pm2.24 impbii ) ABACAADAAEF $.
 
   $( Theorem *4.52 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
