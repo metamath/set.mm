@@ -22106,13 +22106,24 @@ $)
 
   ${
     $d x y $.  $d y ph $.  $d y ps $.
-    moanim.1 $e |- ( ph -> A. x ph ) $.
+    moanim.1 $e |- F/ x ph $.
     $( Introduction of a conjunct into "at most one" quantifier.  (Contributed
        by NM, 3-Dec-2001.) $)
     moanim $p |- ( E* x ( ph /\ ps ) <-> ( ph -> E* x ps ) ) $=
-      ( vy wa weq wi wal wex impexp albii 19.21h bitri exbii ax-17 imbi2i 19.37v
-      wmo mo2 bitr4i 3bitr4i ) ABFZCEGZHZCIZEJABUDHZCIZHZEJZUCCSABCSZHZUFUIEUFA
-      UGHZCIUIUEUMCABUDKLAUGCDMNOUCCEUCEPTULAUHEJZHUJUKUNABCEBEPTQAUHERUAUB $.
+      ( vy wsb wa weq wi wal wmo anandi imbi1i impexp sban sbf anbi1i ax-17 mo3
+      3bitr4ri bitr2i anbi2i 3bitr3i 2albii 19.21 19.21v albii imbi2i ) ABBCEFZ
+      GZCEHZIZIZEJZCJZABGZUPCEFZGZUKIZEJCJABCKZIZUPCKUMUSCEAUJGZUKIUPAUIGZGZUKI
+      UMUSVBVDUKABUILMAUJUKNVDURUKVCUQUPUQACEFZUIGVCABCEOVEAUIACEDPQUAUBMUCUDAU
+      LEJZIZCJAVFCJZIUOVAAVFCDUEUNVGCAULEUFUGUTVHABCEBERSUHTUPCEUPERST $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.  $d y ps $.
+    moanimh.1 $e |- ( ph -> A. x ph ) $.
+    $( Introduction of a conjunct into "at most one" quantifier.  (Contributed
+       by NM, 3-Dec-2001.)  (New usage is discouraged.) $)
+    moanimh $p |- ( E* x ( ph /\ ps ) <-> ( ph -> E* x ps ) ) $=
+      ( nfi moanim ) ABCACDEF $.
   $}
 
   ${
@@ -22120,18 +22131,18 @@ $)
     $( Introduction of a conjunct into "at most one" quantifier.  (Contributed
        by NM, 23-Mar-1995.) $)
     moanimv $p |- ( E* x ( ph /\ ps ) <-> ( ph -> E* x ps ) ) $=
-      ( ax-17 moanim ) ABCACDE $.
+      ( ax-17 moanimh ) ABCACDE $.
   $}
 
   $( Nested "at most one" and uniqueness quantifiers.  (Contributed by NM,
      25-Jan-2006.) $)
   moaneu $p |- E* x ( ph /\ E! x ph ) $=
-    ( weu wa wmo wi eumo hbeu1 moanim mpbir ancom mobii ) AABCZDZBEMADZBEZPMABE
+    ( weu wa wmo wi eumo hbeu1 moanimh mpbir ancom mobii ) AABCZDZBEMADZBEZPMABE
     FABGMABABHIJNOBAMKLJ $.
 
   $( Nested "at most one" quantifiers.  (Contributed by NM, 25-Jan-2006.) $)
   moanmo $p |- E* x ( ph /\ E* x ph ) $=
-    ( wmo wa wi id hbmo1 moanim mpbir ancom mobii ) AABCZDZBCLADZBCZOLLELFLABAB
+    ( wmo wa wi id hbmo1 moanimh mpbir ancom mobii ) AABCZDZBCLADZBCZOLLELFLABAB
     GHIMNBALJKI $.
 
   ${
@@ -22291,7 +22302,7 @@ $)
   2eu1 $p |- ( A. x E* y ph ->
         ( E! x E! y ph <-> ( E! x E. y ph /\ E! y E. x ph ) ) ) $=
     ( wmo wal weu wex wa wi eu5 exbii mobii anbi12i bitri simprbi anim2i ancoms
-    ax-4 sylib com12 moimi hba1 moanim ancrd 2moswap imdistani syl 2eu2ex excom
+    ax-4 sylib com12 moimi hba1 moanimh ancrd 2moswap imdistani syl 2eu2ex excom
     syl6 jca jctild an4 syl6ibr 2exeu impbid1 ) ACDZBEZACFZBFZACGZBFZABGZCFZHZU
     TURVEUTURVABGZVCCGZHZVABDZVCCDZHZHZVEUTURVKVHUTVAUQHZBDZURVKIUTVMBGZVNUTUSB
     GZUSBDZHVOVNHUSBJVPVOVQVNUSVMBACJZKUSVMBVRLMNOVNURVIURHVKVNURVIVNURVAHZBDUR
