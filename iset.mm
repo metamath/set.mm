@@ -1,4 +1,4 @@
-$( iset.mm - Version of 5-Jul-2018
+$( iset.mm - Version of 6-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -22260,6 +22260,14 @@ $)
   2moswap $p |- ( A. x E* y ph -> ( E* x E. y ph -> E* y E. x ph ) ) $=
     ( wmo wal wex wa hbe1 moexex expcom 19.8a pm4.71ri exbii mobii syl6ibr ) AC
     DBEZACFZBDZQAGZBFZCDZABFZCDRPUAQABCACHIJUBTCASBAQACKLMNO $.
+
+  $( A condition allowing swap of "at most one" and existential quantifiers.
+     (Contributed by Jim Kingdon, 6-Jul-2018.) $)
+  2moswapdc $p |- ( DECID E. x E. y ph -> ( A. x E* y ph ->
+      ( E* x E. y ph -> E* y E. x ph ) ) ) $=
+    ( wex wdc wmo wa wi nfe1 moexexdc exp3acom23 19.8a pm4.71ri exbii
+    wal mobii imbi2i syl6ibr ) ACDZBDEZACFBOZSBFZSAGZBDZCFZHUBABDZCFZ
+    HTUBUAUESABCACIJKUGUEUBUFUDCAUCBASACLMNPQR $.
 
   $( A condition allowing swap of uniqueness and existential quantifiers.
      (Contributed by NM, 10-Apr-2004.) $)
