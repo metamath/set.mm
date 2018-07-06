@@ -14876,7 +14876,7 @@ $)
     mon.1 $e |- F/ y ph $.
     $( There is at most one of something which does not exist.  (Contributed by
        Jim Kingdon, 2-Jul-2018.) $)
-    mon $p |- ( -. E. x ph -> E. y A. x ( ph -> x = y ) ) $=
+    mo2n $p |- ( -. E. x ph -> E. y A. x ( ph -> x = y ) ) $=
       ( wex wsb weq wi wal sb8e wn alnex nfs1v sbequ1 equcoms con3d cbv3 pm2.21
       nfn alimi 19.8a 3syl sylbir sylnbi ) ABEABCFZCEZABCGZHZBIZCEZABCDJUFKUEKZ
       CIZUJUECLULAKZBIUIUJUKUMCBUEBABCMSACDSCBGAUEAUEHBCABCNOPQUMUHBAUGRTUICUAU
@@ -15019,7 +15019,7 @@ $)
     modc $p |- ( DECID E. x ph ->
         ( E. y A. x ( ph -> x = y ) <->
           A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) ) $=
-      ( wex wdc weq wi wal wsb wa mo23 wn wo exmiddc mor mon a1d jaoi syl
+      ( wex wdc weq wi wal wsb wa mo23 wn wo exmiddc mor mo2n a1d jaoi syl
       impbid2 ) ABEZFZABCGZHBICEZAABCJKUDHCIBIZABCDLUCUBUBMZNUFUEHZUBOUBUHUGABC
       DPUGUEUFABCDQRSTUA $.
   $}
