@@ -1,4 +1,4 @@
-$( iset.mm - Version of 4-Jul-2018
+$( iset.mm - Version of 5-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -14881,6 +14881,14 @@ $)
       nfn alimi 19.8a 3syl sylbir sylnbi ) ABEABCFZCEZABCGZHZBIZCEZABCDJUFKUEKZ
       CIZUJUECLULAKZBIUIUJUKUMCBUEBABCMSACDSCBGAUEAUEHBCABCNOPQUMUHBAUGRTUICUAU
       BUCUD $.
+  $}
+
+  ${
+    $( There is at most one of something which does not exist.  (Contributed by
+       Jim Kingdon, 5-Jul-2018.) $)
+    mon $p |- ( -. E. x ph -> E* x ph ) $=
+      ( wex wn weu wi wmo ax-in2 df-mo sylibr ) ABCZDKABEZFABGKLHABIJ
+      $.
   $}
 
   ${
