@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Jul-2018
+$( iset.mm - Version of 5-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -5061,9 +5061,9 @@ $)
   pm5.19 $p |- -. ( ph <-> -. ph ) $=
     ( wn wb bi1 pm2.01d id mpbird pm2.65i ) AABZCZAJAIJAAIDEZJFGKH $.
 
-  $( Theorem *4.8 of [WhiteheadRussell] p. 122.  This one is valid in
-     intuitionistic logic, whereas ~ pm4.81 is not.  (Contributed by NM,
-     3-Jan-2005.) $)
+  $( Theorem *4.8 of [WhiteheadRussell] p. 122.  This one holds for all
+     propositions, but compare with ~ pm4.81dc which requires a decidability
+     condition.  (Contributed by NM, 3-Jan-2005.) $)
   pm4.8 $p |- ( ( ph -> -. ph ) <-> -. ph ) $=
     ( wn wi pm2.01 ax-1 impbii ) AABZCGADGAEF $.
 
@@ -6277,6 +6277,12 @@ $)
   pm2.26dc $p |- ( DECID ph -> ( -. ph \/ ( ( ph -> ps ) -> ps ) ) ) $=
     ( wdc wi wn wo pm2.27 imordc mpbii ) ACAABDBDZDAEJFABGAJHI $.
 
+  $( Theorem *4.81 of [WhiteheadRussell] p. 122, for decidable propositions.
+     This one needs a decidability condition, but compare with ~ pm4.8 which
+     holds for all propositions.  (Contributed by Jim Kingdon, 4-Jul-2018.) $)
+  pm4.81dc $p |- ( DECID ph -> ( ( -. ph -> ph ) <-> ph ) ) $=
+    ( wdc wn wi pm2.18dc pm2.24 impbid1 ) ABACADAAEAAFG $.
+
   $( A decidable proposition or its negation implies a second proposition.
      Based on theorem *5.11 of [WhiteheadRussell] p. 123.  (Contributed by Jim
      Kingdon, 29-Mar-2018.) $)
@@ -6312,6 +6318,25 @@ $)
         ( ( ( ph \/ ps ) <-> ph ) \/ ( ( ph \/ ps ) <-> ps ) ) ) $=
     ( wdc wn wo wb df-dc biort bicomd biorf orim12i sylbi ) ACAADZEAB
     EZAFZNBFZEAGAOMPAANABHIMBNABJIKL $.
+
+  $( Peirce's theorem for a decidable proposition.  This odd-looking theorem
+     can be seen as an alternative to ~ exmiddc , ~ condc , or ~ notnotdc in
+     the sense of expressing the "difference" between an intuitionistic system
+     of propositional calculus and a classical system.  In intuitionistic
+     logic, it only holds for decidable propositions.  (Contributed by Jim
+     Kingdon, 3-Jul-2018.) $)
+  peircedc $p |- ( DECID ph -> ( ( ( ph -> ps ) -> ph ) -> ph ) ) $=
+    ( wdc wn wo wi df-dc ax-1 pm2.21 imim1i com12 jaoi sylbi ) ACAADZ
+    EABFZAFZAFZAGAQNAPHPNANOAABIJKLM $.
+
+  $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
+     of Lukasiewicz, but where one of the propositions is decidable.  Using
+     ~ dfor2dc , we can see that this expresses "disjunction commutes."
+     Theorem *2.69 of [WhiteheadRussell] p. 108 (plus the decidability
+     condition).  (Contributed by NM, 12-Aug-2004.) $)
+  looinvdc $p |- ( DECID ph ->
+      ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) ) $=
+    ( wi wdc imim1 peircedc syl9r ) ABCZBCBACHACADAHBAEABFG $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -14851,11 +14876,19 @@ $)
     mon.1 $e |- F/ y ph $.
     $( There is at most one of something which does not exist.  (Contributed by
        Jim Kingdon, 2-Jul-2018.) $)
-    mon $p |- ( -. E. x ph -> E. y A. x ( ph -> x = y ) ) $=
+    mo2n $p |- ( -. E. x ph -> E. y A. x ( ph -> x = y ) ) $=
       ( wex wsb weq wi wal sb8e wn alnex nfs1v sbequ1 equcoms con3d cbv3 pm2.21
       nfn alimi 19.8a 3syl sylbir sylnbi ) ABEABCFZCEZABCGZHZBIZCEZABCDJUFKUEKZ
       CIZUJUECLULAKZBIUIUJUKUMCBUEBABCMSACDSCBGAUEAUEHBCABCNOPQUMUHBAUGRTUICUAU
       BUCUD $.
+  $}
+
+  ${
+    $( There is at most one of something which does not exist.  (Contributed by
+       Jim Kingdon, 5-Jul-2018.) $)
+    mon $p |- ( -. E. x ph -> E* x ph ) $=
+      ( wex wn weu wi wmo ax-in2 df-mo sylibr ) ABCZDKABEZFABGKLHABIJ
+      $.
   $}
 
   ${
@@ -14994,7 +15027,7 @@ $)
     modc $p |- ( DECID E. x ph ->
         ( E. y A. x ( ph -> x = y ) <->
           A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) ) $=
-      ( wex wdc weq wi wal wsb wa mo23 wn wo exmiddc mor mon a1d jaoi syl
+      ( wex wdc weq wi wal wsb wa mo23 wn wo exmiddc mor mo2n a1d jaoi syl
       impbid2 ) ABEZFZABCGZHBICEZAABCJKUDHCIBIZABCDLUCUBUBMZNUFUEHZUBOUBUHUGABC
       DPUGUEUFABCDQRSTUA $.
   $}
@@ -21639,7 +21672,7 @@ $)
      of theorems which have not yet been converted over to having appropriate
      decidability conditions added.  We could also transform intuitionistic
      logic to classical logic by adding unconditional forms of ~ exmiddc ,
-     ~ peirce , or ~ notnot2dc .
+     ~ peircedc , or ~ notnot2dc .
 
      This axiom swaps or "transposes" the order of the consequents when
      negation is removed.  An informal example is that the statement "if there
@@ -21873,17 +21906,6 @@ $)
   simplim $p |- ( -. ( ph -> ps ) -> ph ) $=
     ( wi pm2.21 con1i ) AABCABDE $.
 
-  $( Peirce's axiom.  This odd-looking theorem is the "difference" between an
-     intuitionistic system of propositional calculus and a classical system and
-     is not accepted by intuitionists.  When Peirce's axiom is added to an
-     intuitionistic system, the system becomes equivalent to our classical
-     system ~ ax-1 through ~ ax-3 .  A curious fact about this theorem is that
-     it requires ~ ax-3 for its proof even though the result has no negation
-     connectives in it.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
-     Wolf Lammen, 9-Oct-2012.) $)
-  peirce $p |- ( ( ( ph -> ps ) -> ph ) -> ph ) $=
-    ( wi simplim id ja ) ABCAAABDAEF $.
-
   ${
     19.32.1 $e |- ( ph -> A. x ph ) $.
     $( Theorem 19.32 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
@@ -21977,9 +21999,10 @@ $)
     $( Substitution into "at most one".  (Contributed by Jeff Madsen,
        2-Sep-2009.) $)
     sbmo $p |- ( [ y / x ] E* z ph <-> E* z [ y / x ] ph ) $=
-      ( vw cv wceq wi wal wex wsbc wmo sbex ax-17 sblim sbalv exbii bitri sbbii
-      mo2 3bitr4i ) ADFEFGZHZDIZEJZBCFZKZABUFKZUBHZDIZEJZADLZBUFKUHDLUGUDBUFKZE
-      JUKUDEBCMUMUJEUCUIBCDAUBBCUBBNOPQRULUEBCADEAENTSUHDEUHENTUA $.
+      ( vw wsb wa weq wi wal ax-17 sblim sban imbi1i sbcom2 anbi2i 3bitri sbalv
+      wmo mo3 sbbii 3bitr4i ) AADEFZGZDEHZIZEJZDJZBCFABCFZUIDEFZGZUEIZEJZDJADSZ
+      BCFUIDSUGUMBCDUFULBCEUFBCFUDBCFZUEIUIUCBCFZGZUEIULUDUEBCUEBKLUOUQUEAUCBCM
+      NUQUKUEUPUJUIADEBCOPNQRRUNUHBCADEAEKTUAUIDEUIEKTUB $.
   $}
 
   ${
@@ -22013,11 +22036,12 @@ $)
       CLZIACMRSQABCDENOP $.
   $}
 
-  $( Existence in terms of "at most one" and uniqueness.  (Contributed by NM,
-     5-Apr-2004.) $)
-  exmoeu $p |- ( E. x ph <-> ( E* x ph -> E! x ph ) ) $=
-    ( wex wmo weu wi df-mo biimpi com12 biimpri euex imim12i peirce syl impbii
-    ) ABCZABDZABEZFZQPRQPRFZABGZHISTPFPTQRPQTUAJABKLPRMNO $.
+  $( Existence in terms of "at most one" and uniqueness.  (Contributed by Jim
+     Kingdon, 3-Jul-2018.) $)
+  exmoeudc $p |- ( DECID E. x ph -> ( E. x ph <-> ( E* x ph -> E! x ph ) ) ) $=
+    ( wex wdc wmo wi df-mo biimpi com12 biimpri euex imim12i peircedc
+    weu syl5 impbid2 ) ABCZDZQABEZABNZFZSQTSQTFZABGZHIUAUBQFRQUBSTQSU
+    BUCJABKLQTMOP $.
 
   $( Something exists or at most one exists.  (Contributed by NM,
      8-Mar-1995.) $)
@@ -22048,9 +22072,10 @@ $)
     $( Move antecedent outside of "at most one."  (Contributed by NM,
        28-Jul-1995.) $)
     moimv $p |- ( E* x ( ph -> ps ) -> ( ph -> E* x ps ) ) $=
-      ( vy wi wmo weq wal wex ax-1 a1i imim1d alimdv eximdv ax-17 3imtr4g com12
-      mo2 ) AABEZCFZBCFZASCDGZEZCHZDIBUBEZCHZDITUAAUDUFDAUCUECABSUBBSEABAJKLMNS
-      CDSDORBCDBDORPQ $.
+      ( vy wi wmo wsb weq wal ax-1 a1i sbimi nfv sbf sbim 3imtr3i anim12d ax-17
+      wa mo3 imim1d 2alimdv 3imtr4g com12 ) AABEZCFZBCFZAUEUECDGZSZCDHZEZDICIBB
+      CDGZSZUJEZDICIUFUGAUKUNCDAUMUIUJABUEULUHBUEEZABAJKZACDGUOCDGAULUHEAUOCDUP
+      LACDACMNBUECDOPQUAUBUECDUEDRTBCDBDRTUCUD $.
   $}
 
   $( Uniqueness implies "at most one" through implication.  (Contributed by NM,
@@ -22095,13 +22120,24 @@ $)
 
   ${
     $d x y $.  $d y ph $.  $d y ps $.
-    moanim.1 $e |- ( ph -> A. x ph ) $.
+    moanim.1 $e |- F/ x ph $.
     $( Introduction of a conjunct into "at most one" quantifier.  (Contributed
        by NM, 3-Dec-2001.) $)
     moanim $p |- ( E* x ( ph /\ ps ) <-> ( ph -> E* x ps ) ) $=
-      ( vy wa weq wi wal wex impexp albii 19.21h bitri exbii ax-17 imbi2i 19.37v
-      wmo mo2 bitr4i 3bitr4i ) ABFZCEGZHZCIZEJABUDHZCIZHZEJZUCCSABCSZHZUFUIEUFA
-      UGHZCIUIUEUMCABUDKLAUGCDMNOUCCEUCEPTULAUHEJZHUJUKUNABCEBEPTQAUHERUAUB $.
+      ( vy wsb wa weq wi wal wmo anandi imbi1i impexp sban sbf anbi1i ax-17 mo3
+      3bitr4ri bitr2i anbi2i 3bitr3i 2albii 19.21 19.21v albii imbi2i ) ABBCEFZ
+      GZCEHZIZIZEJZCJZABGZUPCEFZGZUKIZEJCJABCKZIZUPCKUMUSCEAUJGZUKIUPAUIGZGZUKI
+      UMUSVBVDUKABUILMAUJUKNVDURUKVCUQUPUQACEFZUIGVCABCEOVEAUIACEDPQUAUBMUCUDAU
+      LEJZIZCJAVFCJZIUOVAAVFCDUEUNVGCAULEUFUGUTVHABCEBERSUHTUPCEUPERST $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.  $d y ps $.
+    moanimh.1 $e |- ( ph -> A. x ph ) $.
+    $( Introduction of a conjunct into "at most one" quantifier.  (Contributed
+       by NM, 3-Dec-2001.)  (New usage is discouraged.) $)
+    moanimh $p |- ( E* x ( ph /\ ps ) <-> ( ph -> E* x ps ) ) $=
+      ( nfi moanim ) ABCACDEF $.
   $}
 
   ${
@@ -22109,18 +22145,18 @@ $)
     $( Introduction of a conjunct into "at most one" quantifier.  (Contributed
        by NM, 23-Mar-1995.) $)
     moanimv $p |- ( E* x ( ph /\ ps ) <-> ( ph -> E* x ps ) ) $=
-      ( ax-17 moanim ) ABCACDE $.
+      ( ax-17 moanimh ) ABCACDE $.
   $}
 
   $( Nested "at most one" and uniqueness quantifiers.  (Contributed by NM,
      25-Jan-2006.) $)
   moaneu $p |- E* x ( ph /\ E! x ph ) $=
-    ( weu wa wmo wi eumo hbeu1 moanim mpbir ancom mobii ) AABCZDZBEMADZBEZPMABE
+    ( weu wa wmo wi eumo hbeu1 moanimh mpbir ancom mobii ) AABCZDZBEMADZBEZPMABE
     FABGMABABHIJNOBAMKLJ $.
 
   $( Nested "at most one" quantifiers.  (Contributed by NM, 25-Jan-2006.) $)
   moanmo $p |- E* x ( ph /\ E* x ph ) $=
-    ( wmo wa wi id hbmo1 moanim mpbir ancom mobii ) AABCZDZBCLADZBCZOLLELFLABAB
+    ( wmo wa wi id hbmo1 moanimh mpbir ancom mobii ) AABCZDZBCLADZBCZOLLELFLABAB
     GHIMNBALJKI $.
 
   ${
@@ -22185,6 +22221,21 @@ $)
       ZBDFZCGZABHZCIZDFZACIZUNUPUSJZJZAVBCUNVACACKUPUSCUOCLURCDUQCMNOOAUNURBJZD
       GZVAAUNVCDEADCENUNURABUNURABJABCPQUBUCVDUOUSCURBDUDUEUFRUTSZVAUNVEUSUPVEU
       RDIZSUSVFUTURUTDADCEUGABCUHRUIVFUSURDUJUAUKTTULUM $.
+  $}
+
+  ${
+    moexexdc.1 $e |- F/ y ph $.
+    $( "At most one" double quantification.  (Contributed by Jim Kingdon,
+       5-Jul-2018.) $)
+    moexexdc $p |- ( DECID E. x ph ->
+        ( ( E* x ph /\ A. x E* y ps ) -> E* y E. x ( ph /\ ps ) ) ) $=
+      ( wex wdc wn wo wmo wal wa wi df-dc hbmo1 hba1 exlimih
+      hbmo hbim a1d hbe1 nfri mopick ex com3r alrimdh moim spsd exsimpl
+      syl6 hbex con3i mon syl jaoi imp3a sylbi ) ACFZGURURHZIZACJZBDJZC
+      KZLABLZCFZDJZMURNUTVAVCVFURVAVCVFMZMZUSAVHCVAVGCACOVCVFCVBCPVECDV
+      DCUARSSAVAVEBMZDKZVGAVAVIDADEUBZADCVKRVAVEABVAVEABMABCUCUDUEUFVJV
+      BVFCVEBDUGUHUJQUSVGVAUSVFVCUSVEDFZHVFVLURVEURDADCVKUKABCUIQULVEDU
+      MUNTTUOUPUQ $.
   $}
 
   ${
@@ -22280,7 +22331,7 @@ $)
   2eu1 $p |- ( A. x E* y ph ->
         ( E! x E! y ph <-> ( E! x E. y ph /\ E! y E. x ph ) ) ) $=
     ( wmo wal weu wex wa wi eu5 exbii mobii anbi12i bitri simprbi anim2i ancoms
-    ax-4 sylib com12 moimi hba1 moanim ancrd 2moswap imdistani syl 2eu2ex excom
+    ax-4 sylib com12 moimi hba1 moanimh ancrd 2moswap imdistani syl 2eu2ex excom
     syl6 jca jctild an4 syl6ibr 2exeu impbid1 ) ACDZBEZACFZBFZACGZBFZABGZCFZHZU
     TURVEUTURVABGZVCCGZHZVABDZVCCDZHZHZVEUTURVKVHUTVAUQHZBDZURVKIUTVMBGZVNUTUSB
     GZUSBDZHVOVNHUSBJVPVOVQVNUSVMBACJZKUSVMBVRLMNOVNURVIURHVKVNURVIVNURVAHZBDUR
@@ -22403,12 +22454,6 @@ Classical (not intuitionistic) results
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
-  $( Theorem *4.81 of [WhiteheadRussell] p. 122.  This one does not hold
-     intuitionistically, but compare with ~ pm4.8 which does.  (Contributed by
-     NM, 3-Jan-2005.) $)
-  pm4.81 $p |- ( ( -. ph -> ph ) <-> ph ) $=
-    ( wn wi pm2.18 pm2.24 impbii ) ABACAADAAEF $.
-
   $( Theorem *4.52 of [WhiteheadRussell] p. 120.  (Contributed by NM,
      3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
   pm4.52 $p |- ( ( ph /\ -. ps ) <-> -. ( -. ph \/ ps ) ) $=
@@ -22451,14 +22496,6 @@ $)
                 ( ph -> ( ps \/ ch ) ) ) $=
     ( wn wo wi orordi imor orbi12i 3bitr4ri ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCG
     ALHOMPNABHACHIJ $.
-
-  $( The Inversion Axiom of the infinite-valued sentential logic (L-infinity)
-     of Lukasiewicz.  Using ~ dfor2dc , we can see that this (classically)
-     expresses "disjunction commutes."  Theorem *2.69 of [WhiteheadRussell]
-     p. 108.  Our proof of ~ looinv is a classical, rather than intuitionistic,
-     result.  (Contributed by NM, 12-Aug-2004.) $)
-  looinv $p |- ( ( ( ph -> ps ) -> ps ) -> ( ( ps -> ph ) -> ph ) ) $=
-    ( wi imim1 peirce syl6 ) ABCZBCBACGACAGBADABEF $.
 
   ${
     19.36.1 $e |- ( ps -> A. x ps ) $.
