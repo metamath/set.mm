@@ -22238,14 +22238,6 @@ $)
       MUNTTUOUPUQ $.
   $}
 
-  ${
-    $d y ph $.
-    $( "At most one" double quantification.  (Contributed by NM,
-       26-Jan-1997.) $)
-    moexexv $p |- ( ( E* x ph /\ A. x E* y ps ) -> E* y E. x ( ph /\ ps ) ) $=
-      ( ax-17 moexex ) ABCDADEF $.
-  $}
-
   $( Double quantification with "at most one."  (Contributed by NM,
      3-Dec-2001.) $)
   2moex $p |- ( E* x E. y ph -> A. y E* x ph ) $=
