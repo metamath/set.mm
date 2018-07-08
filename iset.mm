@@ -21991,16 +21991,18 @@ $)
 
   ${
     $d x ph $.  $d x A $.  $d x B $.
-    eueq2.1 $e |- A e. _V $.
-    eueq2.2 $e |- B e. _V $.
+    eueq2dc.1 $e |- A e. _V $.
+    eueq2dc.2 $e |- B e. _V $.
     $( Equality has existential uniqueness (split into 2 cases).  (Contributed
        by NM, 5-Apr-1995.) $)
-    eueq2 $p |- E! x ( ( ph /\ x = A ) \/ ( -. ph /\ x = B ) ) $=
-      ( cv wceq wa wn weu eueq1 euanv biimpri mpan2 euorv bianfd eubidv mpbid
-      wo notnot1 syl2anc orcom orbi2d syl5bb mpdan id orbi1d pm2.61i ) AABGZCHZ
-      IZAJZUJDHZIZTZBKZAUMULTZBKZUQAUMJULBKZUSAUAZAUKBKZUTBCELUTAVBIAUKBMNOUMUL
-      BPUBAURUPBURULUMTAUPUMULUCAUMUOULAUMUNVAQUDUERSUMAUOTZBKZUQUMUOBKZVDUMUNB
-      KZVEBDFLVEUMVFIUMUNBMNOAUOBPUFUMVCUPBUMAULUOUMAUKUMUGQUHRSUI $.
+    eueq2dc $p |- ( DECID ph ->
+        E! x ( ( ph /\ x = A ) \/ ( -. ph /\ x = B ) ) ) $=
+      ( wdc wn wo wceq wa eueq1 euanv biimpri mpan2 euorv bianfd eubidv
+      weu mpbid cv df-dc notnot1 syl2anc orcom orbi2d syl5bb mpdan jaoi
+      id orbi1d sylbi ) AGAAHZIABUAZCJZKZUMUNDJZKZIZBSZAUBAUTUMAUMUPIZB
+      SZUTAUMHUPBSZVBAUCZAUOBSZVCBCELVCAVEKAUOBMNOUMUPBPUDAVAUSBVAUPUMI
+      AUSUMUPUEAUMURUPAUMUQVDQUFUGRTUMAURIZBSZUTUMURBSZVGUMUQBSZVHBDFLV
+      HUMVIKUMUQBMNOAURBPUHUMVFUSBUMAUPURUMAUOUMUJQUKRTUIUL $.
   $}
 
   ${
