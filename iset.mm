@@ -22049,21 +22049,17 @@ $)
 
   ${
     $d x y ph $.  $d x y ps $.  $d x y A $.  $d x y B $.  $d x y C $.
-    moeq3.1 $e |- B e. _V $.
-    moeq3.2 $e |- C e. _V $.
-    moeq3.3 $e |- -. ( ph /\ ps ) $.
-    $( "At most one" property of equality (split into 3 cases).  (The first 2
-       hypotheses could be eliminated with longer proof.)  (Contributed by NM,
-       23-Apr-1995.) $)
-    moeq3 $p |- E* x ( ( ph /\ x = A ) \/ ( -. ( ph \/ ps ) /\ x = B )
-                \/ ( ps /\ x = C ) ) $=
-      ( vy cvv wcel cv wceq wa wo wn w3o weu biidd eqeq2 anbi2d 3orbi123d eueq3
-      wmo eubidv vex vtoclg eumo syl wi eleq1 mpbii pm2.21 anim2d orim1d 3orass
-      wal syl5 3imtr4g alrimiv euimmo ee10 pm2.61i ) DKLZACMZDNZOZABPQVFENOZBVF
-      FNOZRZCUEZVEVKCSZVLAVFJMZNZOZVIVJRZCSZVMJDKVNDNZVQVKCVSVPVHVIVIVJVJVSVOVG
-      AVNDVFUAUBVSVITVSVJTUCUFABCVNEFJUGGHIUDZUHVKCUIUJVEQZVKVQUKZCURVRVLWAWBCW
-      AVHVIVJPZPVPWCPVKVQWAVHVPWCWAVGVOAVGVEWAVOVGVFKLVECUGVFDKULUMVEVOUNUSUOUP
-      VHVIVJUQVPVIVJUQUTVAVTVKVQCVBVCVD $.
+    moeq3dc.1 $e |- A e. _V $.
+    moeq3dc.2 $e |- B e. _V $.
+    moeq3dc.3 $e |- C e. _V $.
+    moeq3dc.4 $e |- -. ( ph /\ ps ) $.
+    $( "At most one" property of equality (split into 3 cases).  (Contributed
+       by Jim Kingdon, 7-Jul-2018.) $)
+    moeq3dc $p |- ( DECID ph -> ( DECID ps ->
+        E* x ( ( ph /\ x = A ) \/ ( -. ( ph \/ ps ) /\ x = B )
+               \/ ( ps /\ x = C ) ) ) ) $=
+      ( wdc cv wceq wa wo wn w3o weu wmo eueq3dc eumo syl6 ) AKBKACLZDM
+      NABOPUCEMNBUCFMNQZCRUDCSABCDEFGHIJTUDCUAUB $.
   $}
 
   ${
