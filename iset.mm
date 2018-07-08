@@ -21948,6 +21948,486 @@ $)
       DLZMABNSTECDEOPFQR $.
   $}
 
+  ${
+    $d y ph $.  $d x y ps $.  $d x y A $.
+    eqeu.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( A condition which implies existential uniqueness.  (Contributed by Jeff
+       Hankins, 8-Sep-2009.) $)
+    eqeu $p |- ( ( A e. B /\ ps /\ A. x ( ph -> x = A ) ) -> E! x ph ) $=
+      ( vy wcel cv wceq wi wal w3a wex weu spcegv imp 3adant3 eqeq2 imbi2d nfv
+      albidv 3adant2 eu3 sylanbrc ) DEHZBACIZDJZKZCLZMACNZAUGGIZJZKZCLZGNZACOUF
+      BUKUJUFBUKABCDEFPQRUFUJUPBUFUJUPUOUJGDEULDJZUNUICUQUMUHAULDUGSTUBPQUCACGA
+      GUAUDUE $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Equality has existential uniqueness.  (Contributed by NM,
+       25-Nov-1994.) $)
+    eueq $p |- ( A e. _V <-> E! x x = A ) $=
+      ( vy cv wceq wex wa wi wal cvv wcel weu eqtr3 biantru isset eqeq1 3bitr4i
+      gen2 eu4 ) ADZBEZAFZUBUACDZBEZGTUCEHZCIAIZGBJKUAALUFUBUEACTUCBMRNABOUAUDA
+      CTUCBPSQ $.
+  $}
+
+  ${
+    $d x A $.
+    eueq1.1 $e |- A e. _V $.
+    $( Equality has existential uniqueness.  (Contributed by NM,
+       5-Apr-1995.) $)
+    eueq1 $p |- E! x x = A $=
+      ( cvv wcel cv wceq weu eueq mpbi ) BDEAFBGAHCABIJ $.
+  $}
+
+  ${
+    $d x ph $.  $d x A $.  $d x B $.
+    eueq2.1 $e |- A e. _V $.
+    eueq2.2 $e |- B e. _V $.
+    $( Equality has existential uniqueness (split into 2 cases).  (Contributed
+       by NM, 5-Apr-1995.) $)
+    eueq2 $p |- E! x ( ( ph /\ x = A ) \/ ( -. ph /\ x = B ) ) $=
+      ( cv wceq wa wn weu eueq1 euanv biimpri mpan2 euorv bianfd eubidv mpbid
+      wo notnot1 syl2anc orcom orbi2d syl5bb mpdan id orbi1d pm2.61i ) AABGZCHZ
+      IZAJZUJDHZIZTZBKZAUMULTZBKZUQAUMJULBKZUSAUAZAUKBKZUTBCELUTAVBIAUKBMNOUMUL
+      BPUBAURUPBURULUMTAUPUMULUCAUMUOULAUMUNVAQUDUERSUMAUOTZBKZUQUMUOBKZVDUMUNB
+      KZVEBDFLVEUMVFIUMUNBMNOAUOBPUFUMVCUPBUMAULUOUMAUKUMUGQUHRSUI $.
+  $}
+
+  ${
+    $d x ph $.  $d x ps $.  $d x A $.  $d x B $.  $d x C $.
+    eueq3.1 $e |- A e. _V $.
+    eueq3.2 $e |- B e. _V $.
+    eueq3.3 $e |- C e. _V $.
+    eueq3.4 $e |- -. ( ph /\ ps ) $.
+    $( Equality has existential uniqueness (split into 3 cases).  (Contributed
+       by NM, 5-Apr-1995.)  (Proof shortened by Mario Carneiro,
+       28-Sep-2015.) $)
+    eueq3 $p |- E! x ( ( ph /\ x = A ) \/ ( -. ( ph \/ ps ) /\ x = B )
+                \/ ( ps /\ x = C ) ) $=
+      ( wceq wa wo wn w3o weu eueq1 ibar wb con2i cv pm2.45 imnani jaoi orbi12d
+      bianfd mtbid biorf bitrd 3orrot df-3or bitri syl6bbr eubidv adantr pm2.46
+      syl mpbii simpl orim12i con3i 3orcomb ecase3 ) ABACUAZDKZLZABMZNZVDEKZLZB
+      VDFKZLZOZCPZAVECPVNCDGQAVEVMCAVEVJVLMZVFMZVMAVEVFVPAVERAVONVFVPSAVHBMZVOV
+      QAVHANBABUBZABABJUCZTUDTAVHVJBVLAVHVIVHAVRTUFABVKVSUFUEUGVOVFUHUQUIVMVJVL
+      VFOVPVFVJVLUJVJVLVFUKULUMUNURBVKCPVNCFIQBVKVMCBVKVFVJMZVLMZVMBVKVLWABVKRB
+      VTNVLWASVTBVFBNZVJAWBVEVSUOVHWBVIABUPUOUDTVTVLUHUQUIVFVJVLUKUMUNURVHVICPV
+      NCEHQVHVIVMCVHVIVFVLMZVJMZVMVHVIVJWDVHVIRVHWCNVJWDSWCVGVFAVLBAVEUSBVKUSUT
+      VAWCVJUHUQUIVMVFVLVJOWDVFVJVLVBVFVLVJUKULUMUNURVC $.
+  $}
+
+  ${
+    $d x A $.
+    $( There is at most one set equal to a class.  (Contributed by NM,
+       8-Mar-1995.) $)
+    moeq $p |- E* x x = A $=
+      ( cv wceq wmo wex weu wi cvv wcel isset eueq bitr3i biimpi df-mo mpbir )
+      ACBDZAEQAFZQAGZHRSRBIJSABKABLMNQAOP $.
+  $}
+
+  ${
+    $d x y ph $.  $d x y ps $.  $d x y A $.  $d x y B $.  $d x y C $.
+    moeq3.1 $e |- B e. _V $.
+    moeq3.2 $e |- C e. _V $.
+    moeq3.3 $e |- -. ( ph /\ ps ) $.
+    $( "At most one" property of equality (split into 3 cases).  (The first 2
+       hypotheses could be eliminated with longer proof.)  (Contributed by NM,
+       23-Apr-1995.) $)
+    moeq3 $p |- E* x ( ( ph /\ x = A ) \/ ( -. ( ph \/ ps ) /\ x = B )
+                \/ ( ps /\ x = C ) ) $=
+      ( vy cvv wcel cv wceq wa wo wn w3o weu biidd eqeq2 anbi2d 3orbi123d eueq3
+      wmo eubidv vex vtoclg eumo syl wi eleq1 mpbii pm2.21 anim2d orim1d 3orass
+      wal syl5 3imtr4g alrimiv euimmo ee10 pm2.61i ) DKLZACMZDNZOZABPQVFENOZBVF
+      FNOZRZCUEZVEVKCSZVLAVFJMZNZOZVIVJRZCSZVMJDKVNDNZVQVKCVSVPVHVIVIVJVJVSVOVG
+      AVNDVFUAUBVSVITVSVJTUCUFABCVNEFJUGGHIUDZUHVKCUIUJVEQZVKVQUKZCURVRVLWAWBCW
+      AVHVIVJPZPVPWCPVKVQWAVHVPWCWAVGVOAVGVEWAVOVGVFKLVECUGVFDKULUMVEVOUNUSUOUP
+      VHVIVJUQVPVIVJUQUTVAVTVKVQCVBVCVD $.
+  $}
+
+  ${
+    $d x y A $.
+    mosub.1 $e |- E* x ph $.
+    $( "At most one" remains true after substitution.  (Contributed by NM,
+       9-Mar-1995.) $)
+    mosub $p |- E* x E. y ( y = A /\ ph ) $=
+      ( cv wceq wmo wal wa wex moeq ax-gen moexexv mp2an ) CFDGZCHABHZCIPAJCKBH
+      CDLQCEMPACBNO $.
+  $}
+
+  ${
+    $d x y A $.  $d y ph $.
+    $( Theorem for inferring "at most one."  (Contributed by NM,
+       17-Oct-1996.) $)
+    mo2icl $p |- ( A. x ( ph -> x = A ) -> E* x ph ) $=
+      ( vy cvv wcel cv wceq wi wal wmo eqeq2 imbi2d albidv imbi1d wex 19.8a nfv
+      mo2 wn sylibr vtoclg vex eleq1 mpbii imim2i con3rr3 alimdv alnex exmo ori
+      sylbi syl6 pm2.61i ) CEFZABGZCHZIZBJZABKZIZAUPDGZHZIZBJZUTIVADCEVBCHZVEUS
+      UTVFVDURBVFVCUQAVBCUPLMNOVEVEDPUTVEDQABDADRSUAUBUOTZUSATZBJZUTVGURVHBURAU
+      OUQUOAUQUPEFUOBUCUPCEUDUEUFUGUHVIABPZTUTABUIVJUTABUJUKULUMUN $.
+  $}
+
+  ${
+    $d x y A $.  $d y ph $.  $d x y ps $.
+    moi2.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( Consequence of "at most one."  (Contributed by NM, 2-Jan-2015.) $)
+    mob2 $p |- ( ( A e. B /\ E* x ph /\ ph ) -> ( x = A <-> ps ) ) $=
+      ( vy wcel wmo w3a cv wceq simp3 syl5ibcom wi wa wsb wal nfs1v sbequ12 nfv
+      mo4f sylbi sbhypf anbi2d eqeq2 imbi12d spcgv syl5 imp exp3a 3impia impbid
+      sp ) DEHZACIZAJZCKZDLZBUQAUSBUOUPAMFNUOUPABUSOUOUPPABUSUOUPABPZUSOZUPAACG
+      QZPZURGKZLZOZGRZUOVAUPVGCRVGAVBCGACGSACGTUBVGCUNUCVFVAGDEVDDLZVCUTVEUSVHV
+      BBAABCGDBCUAFUDUEVDDURUFUGUHUIUJUKULUM $.
+
+    $( Consequence of "at most one."  (Contributed by NM, 29-Jun-2008.) $)
+    moi2 $p |- ( ( ( A e. B /\ E* x ph ) /\ ( ph /\ ps ) ) -> x = A ) $=
+      ( wcel wmo wa cv wceq wb mob2 3expa biimprd impr ) DEGZACHZIZABCJDKZSAITB
+      QRATBLABCDEFMNOP $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ch $.  $d y ph $.  $d x y ps $.
+    moi.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    moi.2 $e |- ( x = B -> ( ph <-> ch ) ) $.
+    $( Equality implied by "at most one."  (Contributed by NM, 18-Feb-2006.) $)
+    mob $p |- ( ( ( A e. C /\ B e. D ) /\ E* x ph /\ ps ) ->
+                ( A = B <-> ch ) ) $=
+      ( wcel wa wmo wceq wb wi cvv elex w3a nfv cv nfcv nfmo1 nf3an nfim bibi1d
+      3anbi3d eqeq1 imbi12d mob2 vtoclgf com12 3expib syl com3r imp 3impib ) EG
+      KZFHKZLADMZBEFNZCOZURUSUTBLZVBPUSVCURVBUSFQKZVCURVBPZPFHRVDUTBVEURVDUTBSZ
+      VBVDUTASZDUAZFNZCOZPVFVBPDEGDEUBVFVBDVDUTBDVDDTADUCBDTUDVBDTUEVHENZVGVFVJ
+      VBVKABVDUTIUGVKVIVACVHEFUHUFUIACDFQJUJUKULUMUNUOUPUQ $.
+
+    $( Equality implied by "at most one."  (Contributed by NM, 18-Feb-2006.) $)
+    moi $p |- ( ( ( A e. C /\ B e. D ) /\ E* x ph /\ ( ps /\ ch ) ) ->
+              A = B ) $=
+      ( wcel wa wmo wceq wi w3a mob biimprd 3expia imp3a 3impia ) EGKFHKLZADMZB
+      CLEFNZUBUCLBCUDUBUCBCUDOUBUCBPUDCABCDEFGHIJQRSTUA $.
+  $}
+
+  ${
+    $d B x y $.  $d A x y $.  $d ph y $.  $d ps x y $.
+    morex.1 $e |- B e. _V $.
+    morex.2 $e |- ( x = B -> ( ph <-> ps ) ) $.
+    $( Derive membership from uniqueness.  (Contributed by Jeff Madsen,
+       2-Sep-2009.) $)
+    morex $p |- ( ( E. x e. A ph /\ E* x ph ) -> ( ps -> B e. A ) ) $=
+      ( wmo wrex wcel wi cv wa wex df-rex exancom bitri wal nfmo1 nfe1 nfan syl
+      mopick alrimi wceq eleq1 imbi12d spcv sylan2b ancoms ) ACHZACDIZBEDJZKZUL
+      UKACLZDJZMZCNZUNULUPAMCNURACDOUPACPQUKURMZAUPKZCRUNUSUTCUKURCACSUQCTUAAUP
+      CUCUDUTUNCEFUOEUEABUPUMGUOEDUFUGUHUBUIUJ $.
+  $}
+
+  ${
+    $d x ph $.  $d x A $.
+    euxfr2.1 $e |- A e. _V $.
+    euxfr2.2 $e |- E* y x = A $.
+    $( Transfer existential uniqueness from a variable ` x ` to another
+       variable ` y ` contained in expression ` A ` .  (Contributed by NM,
+       14-Nov-2004.) $)
+    euxfr2 $p |- ( E! x E. y ( x = A /\ ph ) <-> E! y ph ) $=
+      ( cv wceq wa wex weu wmo wi 2euswap moani ancom mobii mpbi mpg moeq biidd
+      impbii ceqsexv eubii bitri ) BGDHZAIZCJBKZUGBJZCKZACKUHUJUGCLZUHUJMBUGBCN
+      AUFIZCLUKUFACFOULUGCAUFPZQRSUGBLZUJUHMCUGCBNULBLUNUFABBDTOULUGBUMQRSUBUIA
+      CAABDEUFAUAUCUDUE $.
+  $}
+
+  ${
+    $d x ps $.  $d y ph $.  $d x A $.
+    euxfr.1 $e |- A e. _V $.
+    euxfr.2 $e |- E! y x = A $.
+    euxfr.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( Transfer existential uniqueness from a variable ` x ` to another
+       variable ` y ` contained in expression ` A ` .  (Contributed by NM,
+       14-Nov-2004.) $)
+    euxfr $p |- ( E! x ph <-> E! y ps ) $=
+      ( weu cv wceq wa wex euex ax-mp biantrur 19.41v pm5.32i exbii 3bitr2i
+      eubii eumoi euxfr2 bitri ) ACICJEKZBLZDMZCIBDIAUGCAUEDMZALUEALZDMUGUHAUED
+      IUHGUEDNOPUEADQUIUFDUEABHRSTUABCDEFUEDGUBUCUD $.
+  $}
+
+  ${
+    $d y z w ph $.  $d x z ps $.  $d y z w A $.  $d x z B $.  $d x y w $.
+    euind.1 $e |- B e. _V $.
+    euind.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    euind.3 $e |- ( x = y -> A = B ) $.
+    $( Existential uniqueness via an indirect equality.  (Contributed by NM,
+       11-Oct-2010.) $)
+    euind $p |- ( ( A. x A. y ( ( ph /\ ps ) -> A = B ) /\ E. x ph )
+                 -> E! z A. x ( ph -> z = A ) ) $=
+      ( vw wa wceq wi wal wex cv exbii bitri imim2i weu cbvexv biantrur 3bitr2i
+      isseti 19.41v excom eqeq2 bi2 an31 imbi1i impexp 3bitr3i sylib syl 2alimi
+      wb 19.23v albii 19.21v eximdv syl5bi imp pm4.24 biimpi prth eqtr3 alanimi
+      syl56 com12 syl5 alrimivv adantl eqeq1 imbi2d albidv eu4 sylanbrc ) ABLZF
+      GMZNZDOCOZACPZLAEQZFMZNZCOZEPZWGAKQZFMZNZCOZLZWDWIMZNZKOEOZWGEUAWBWCWHWCW
+      DGMZBLZDPZEPZWBWHWCBDPZWTABCDIUBXAWQEPZBLZDPWREPZDPWTBXCDXBBEGHUEUCRXDXCD
+      WQBEUFRWRDEUGUDSWBWSWGEWBWRWFNZDOZCOZWSWGNZWAXECDWAVSWEWQUQZNZXEVTXIVSFGW
+      DUHTXJVSWQWENZNZXEXIXKVSWEWQUITVSWQLZWENWRALZWENXLXEXMXNWEABWQUJUKVSWQWEU
+      LWRAWEULUMUNUOUPXGWSWFNZCOXHXFXOCWRWFDURUSWSWFCUTSUNVAVBVCWCWPWBWCWOEKWMA
+      WNNZCOZWCWNWFWKXPCAAALZWFWKLWEWJLWNAXRAVDVEAWEAWJVFWDWIFVGVIVHXQWCWNXQWCW
+      NNAWNCURVEVJVKVLVMWGWLEKWNWFWKCWNWEWJAWDWIFVNVOVPVQVR $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y ph $.  $d x ps $.
+    $( A way to express restricted uniqueness.  (Contributed by NM,
+       22-Nov-1994.) $)
+    reu2 $p |- ( E! x e. A ph <-> ( E. x e. A ph /\
+               A. x e. A A. y e. A ( ( ph /\ [ y / x ] ph ) -> x = y ) ) ) $=
+      ( cv wcel wa weu wex wsb weq wi wal wreu wral df-ral impexp albii 3bitr4i
+      nfv wrex eu2 df-reu df-rex 19.21v nfs1v nfan eleq1 sbequ12 anbi12d anbi2i
+      sbie an4 bitri imbi1i 3bitri imbi2i bitr4i anbi12i ) BEZDFZAGZBHVBBIZVBVB
+      BCJZGZBCKZLZCMZBMZGABDNABDUAZAABCJZGZVFLZCDOZBDOZGVBBCVBCTUBABDUCVJVCVOVI
+      ABDUDVOVAVNLZBMVIVNBDPVHVPBVACEZDFZVMLZLZCMVAVSCMZLVHVPVAVSCUEVGVTCVGVAVR
+      GZVLGZVFLWBVMLVTVEWCVFVEVBVRVKGZGWCVDWDVBVBWDBCVRVKBVRBTABCUFUGVFVAVRAVKU
+      TVQDUHABCUIUJULUKVAAVRVKUMUNUOWBVLVFQVAVRVMQUPRVNWAVAVMCDPUQSRURUSS $.
+
+    $( A way to express restricted uniqueness.  (Contributed by NM,
+       20-Oct-2006.) $)
+    reu6 $p |- ( E! x e. A ph <-> E. y e. A A. x e. A ( ph <-> x = y ) ) $=
+      ( cv wcel wa weq wb wal wex wi bi1 bi2 adantr impbid imim2i imp 3bitr4i
+      ex wreu weu wral wrex df-reu 19.28v eleq1 sbequ12 anbi12d equequ1 bibi12d
+      wsb equid tbt simpl sylbir syl6bi spimv expdimp simpr syl6 sps jca adantl
+      a5i imp3a eleq1a com23 jcai alimi impbii df-ral anbi2i exbii df-eu df-rex
+      adantll bitri ) ABDUABEZDFZAGZBUBZABCHZIZBDUCZCDUDZABDUEWAWCIZBJZCKCEZDFZ
+      WEGZCKWBWFWHWKCWJVTWDLZGZBJZWJWLBJZGWHWKWJWLBUFWHWNWGWMBWHWJWLWGWJBCWCWGW
+      JABCULZGZCCHZIZWJWCWAWQWCWRWCVTWJAWPVSWIDUGABCUHUIBCCUJUKWSWQWJWRWQCUMUNW
+      JWPUOUPUQURWGWLBWGVTWDWGVTGAWCWGVTAWCWAWCMUSWGWCALZVTWGWCWAAWAWCNVTAUTVAO
+      PTVBVCVEWMWGBWMWAWCWLWAWCLWJWLVTAWCWDAWCLVTAWCMQVFVDWMWCWAWMWCGVTAWMWCVTW
+      JWCVTLWLWIDVSVGORWLWCVTALZWJWLWCXAWLVTWCAWDWTVTAWCNQVHRVQVITPVJVKWEWOWJWD
+      BDVLVMSVNWABCVOWECDVPSVR $.
+
+    $( A way to express restricted uniqueness.  (Contributed by NM,
+       24-Oct-2006.) $)
+    reu3 $p |- ( E! x e. A ph <->
+               ( E. x e. A ph /\ E. y e. A A. x e. A ( ph -> x = y ) ) ) $=
+      ( wreu wrex weq wi wral wa reurex wb reu6 bi1 ralimi reximi sylbi jca wex
+      wal rexex anim2i cv wcel weu nfv df-reu df-rex df-ral impexp albii bitr4i
+      eu3 exbii anbi12i 3bitr4i sylibr impbii ) ABDEZABDFZABCGZHZBDIZCDFZJZUSUT
+      VDABDKUSAVALZBDIZCDFVDABCDMVGVCCDVFVBBDAVANOPQRVEUTVCCSZJZUSVDVHUTVCCDUAU
+      BBUCDUDZAJZBUEVKBSZVKVAHZBTZCSZJUSVIVKBCVKCUFUMABDUGUTVLVHVOABDUHVCVNCVCV
+      JVBHZBTVNVBBDUIVMVPBVJAVAUJUKULUNUOUPUQUR $.
+
+    $( A condition which implies existential uniqueness.  (Contributed by Mario
+       Carneiro, 2-Oct-2015.) $)
+    reu6i $p |- ( ( B e. A /\ A. x e. A ( ph <-> x = B ) ) -> E! x e. A ph ) $=
+      ( vy wcel cv wceq wb wral wa wrex wreu eqeq2 bibi2d ralbidv rspcev sylibr
+      reu6 ) DCFABGZDHZIZBCJZKATEGZHZIZBCJZECLABCMUGUCEDCUDDHZUFUBBCUHUEUAAUDDT
+      NOPQABECSR $.
+
+    eqreu.1 $e |- ( x = B -> ( ph <-> ps ) ) $.
+    $( A condition which implies existential uniqueness.  (Contributed by Mario
+       Carneiro, 2-Oct-2015.) $)
+    eqreu $p |- ( ( B e. A /\ ps /\ A. x e. A ( ph -> x = B ) ) ->
+      E! x e. A ph ) $=
+      ( wcel cv wceq wi wral wreu wa wb ralbiim ceqsralv anbi2d syl5bb reu6i ex
+      sylbird 3impib 3com23 ) EDGZACHEIZJCDKZBACDLZUDUFBUGUDUFBMZAUENCDKZUGUIUF
+      UEAJCDKZMUDUHAUECDOUDUJBUFABCEDFPQRUDUIUGACDESTUAUBUC $.
+  $}
+
+  ${
+    $d x y z A $.  $d y z ph $.  $d x z ps $.
+    rmo4.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Restricted "at most one" using implicit substitution.  (Contributed by
+       NM, 24-Oct-2006.)  (Revised by NM, 16-Jun-2017.) $)
+    rmo4 $p |- ( E* x e. A ph <->
+               A. x e. A A. y e. A ( ( ph /\ ps ) -> x = y ) ) $=
+      ( wrmo cv wcel wa wmo weq wi wral df-rmo wal bitri impexp albii df-ral
+      an4 ancom anbi1i imbi1i 3bitri r19.21v 3bitr2i eleq1 anbi12d mo4 3bitr4i
+      ) ACEGCHZEIZAJZCKZABJZCDLZMZDENZCENZACEOUNDHZEIZBJZJZUQMZDPZCPUMUSMZCPUOU
+      TVFVGCVFVBUMURMZMZDPVHDENVGVEVIDVEVBUMJZUPJZUQMVJURMVIVDVKUQVDUMVBJZUPJVK
+      UMAVBBUAVLVJUPUMVBUBUCQUDVJUPUQRVBUMURRUESVHDETUMURDEUFUGSUNVCCDUQUMVBABU
+      LVAEUHFUIUJUSCETUKQ $.
+
+    $( Restricted uniqueness using implicit substitution.  (Contributed by NM,
+       23-Nov-1994.) $)
+    reu4 $p |- ( E! x e. A ph <-> ( E. x e. A ph /\
+             A. x e. A A. y e. A ( ( ph /\ ps ) -> x = y ) ) ) $=
+      ( wreu wrex wrmo wa weq wi wral reu5 rmo4 anbi2i bitri ) ACEGACEHZACEIZJR
+      ABJCDKLDEMCEMZJACENSTRABCDEFOPQ $.
+
+    $( Restricted uniqueness using implicit substitution.  (Contributed by NM,
+       24-Oct-2006.) $)
+    reu7 $p |- ( E! x e. A ph <-> ( E. x e. A ph /\
+             E. x e. A A. y e. A ( ps -> x = y ) ) ) $=
+      ( vz wreu wrex weq wi wral wa equequ1 equcom syl6bb imbi12d cbvralv bitri
+      reu3 rexbii imbi2d ralbidv cbvrexv anbi2i ) ACEHACEIZACGJZKZCELZGEIZMUFBC
+      DJZKZDELZCEIZMACGETUJUNUFUJBGDJZKZDELZGEIUNUIUQGEUHUPCDEUKABUGUOFUKUGDGJU
+      OCDGNDGOPQRUAUQUMGCEGCJZUPULDEURUOUKBGCDNUBUCUDSUES $.
+
+    $( Restricted uniqueness using implicit substitution.  (Contributed by NM,
+       24-Oct-2006.) $)
+    reu8 $p |- ( E! x e. A ph <-> E. x e. A ( ph /\
+                A. y e. A ( ps -> x = y ) ) ) $=
+      ( wreu weq wb wral wrex wi wa cbvreuv reu6 cv wcel ralbii wal syl5bb a1i
+      dfbi2 ancom equcom imbi2i biimt df-ral bi2.04 albii eleq1 imbi12d equcoms
+      vex bicomd ceqsalv 3bitrri syl6bb anbi12d r19.26 syl6rbbr rexbiia 3bitri
+      ) ACEGBDEGBDCHZIZDEJZCEKABCDHZLZDEJZMZCEKABCDEFNBDCEOVEVICEVEBVCLZVCBLZMZ
+      DEJZCPZEQZVIVDVLDEBVCUBRVOVIVJDEJZVKDEJZMZVMVIVHAMVOVRAVHUCVOVHVPAVQVHVPI
+      VOVGVJDEVFVCBCDUDUERUAVOAVOALZVQVOAUFVQDPZEQZVKLZDSVCWABLZLZDSVSVKDEUGWBW
+      DDWAVCBUHUIWCVSDVNCUMWCVSICDVFVSWCVFVOWAABVNVTEUJFUKUNULUOUPUQURTVJVKDEUS
+      UTTVAVB $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Equality has existential uniqueness.  (Contributed by Mario Carneiro,
+       1-Sep-2015.) $)
+    reueq $p |- ( B e. A <-> E! x e. A x = B ) $=
+      ( wcel cv wceq wrex wreu risset wrmo wmo moeq mormo ax-mp mpbiran2 bitr4i
+      reu5 ) CBDAECFZABGZRABHZACBITSRABJZRAKUAACLRABMNRABQOP $.
+  $}
+
+  $( Restricted "at most one" still holds when a conjunct is added.
+     (Contributed by NM, 16-Jun-2017.) $)
+  rmoan $p |- ( E* x e. A ph -> E* x e. A ( ps /\ ph ) ) $=
+    ( cv wcel wa wmo wrmo moan an12 mobii sylib df-rmo 3imtr4i ) CEDFZAGZCHZPBA
+    GZGZCHZACDISCDIRBQGZCHUAQBCJUBTCBPAKLMACDNSCDNO $.
+
+  $( Restricted "at most one" is preserved through implication (note wff
+     reversal).  (Contributed by Alexander van der Vekens, 17-Jun-2017.) $)
+  rmoim $p |- ( A. x e. A ( ph -> ps )
+        -> ( E* x e. A ps -> E* x e. A ph ) ) $=
+    ( wi wral cv wcel wa wal wrmo df-ral imdistan albii wmo moim df-rmo 3imtr4g
+    bitri sylbi ) ABEZCDFZCGDHZAIZUCBIZEZCJZBCDKZACDKZEUBUCUAEZCJUGUACDLUJUFCUC
+    ABMNSUGUECOUDCOUHUIUDUECPBCDQACDQRT $.
+
+  ${
+    rmoimia.1 $e |- ( x e. A -> ( ph -> ps ) ) $.
+    $( Restricted "at most one" is preserved through implication (note wff
+       reversal).  (Contributed by Alexander van der Vekens, 17-Jun-2017.) $)
+    rmoimia $p |- ( E* x e. A ps -> E* x e. A ph ) $=
+      ( wi wrmo rmoim mprg ) ABFBCDGACDGFCDABCDHEI $.
+  $}
+
+  ${
+    rmoimi2.1 $e |- A. x ( ( x e. A /\ ph ) -> ( x e. B /\ ps ) ) $.
+    $( Restricted "at most one" is preserved through implication (note wff
+       reversal).  (Contributed by Alexander van der Vekens, 17-Jun-2017.) $)
+    rmoimi2 $p |- ( E* x e. B ps -> E* x e. A ph ) $=
+      ( cv wcel wa wmo wrmo wi wal moim ax-mp df-rmo 3imtr4i ) CGZEHBIZCJZRDHAI
+      ZCJZBCEKACDKUASLCMTUBLFUASCNOBCEPACDPQ $.
+  $}
+
+  ${
+    $d x y A $.  $d x B $.
+    $( A condition allowing swap of uniqueness and existential quantifiers.
+       (Contributed by Thierry Arnoux, 7-Apr-2017.)  (Revised by NM,
+       16-Jun-2017.) $)
+    2reuswap $p |- ( A. x e. A E* y e. B ph ->
+                   ( E! x e. A E. y e. B ph -> E! y e. B E. x e. A ph ) ) $=
+      ( wral cv wcel wa wmo wrex wreu wal wex weu df-reu r19.42v df-rex bitri
+      wi wrmo df-rmo ralbii df-ral moanimv albii bitr4i bitr3i an12 exbii eubii
+      2euswap 3imtr4g sylbi ) ACEUAZBDFCGEHZAIZCJZBDFZACEKZBDLZABDKZCELZTZUOURB
+      DACEUBUCUSBGDHZUQIZCJZBMZVDUSVEURTZBMVHURBDUDVGVIBVEUQCUEUFUGVHVFCNZBOZVF
+      BNZCOZVAVCVFBCULVAVEUTIZBOVKUTBDPVNVJBVNUPVEAIZIZCNZVJVNVOCEKVQVEACEQVOCE
+      RUHVPVFCUPVEAUIUJSUKSVCUPVBIZCOVMVBCEPVRVLCVRUQBDKVLUPABDQUQBDRUHUKSUMUNU
+      N $.
+  $}
+
+  ${
+    $d w y z A $.  $d x z B $.  $d w x y z C $.  $d w y z ph $.  $d x z ps $.
+    reuind.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    reuind.2 $e |- ( x = y -> A = B ) $.
+    $( Existential uniqueness via an indirect equality.  (Contributed by NM,
+       16-Oct-2010.) $)
+    reuind $p |- ( ( A. x A. y ( ( ( A e. C /\ ph ) /\ ( B e. C /\ ps ) )
+         -> A = B ) /\ E. x ( A e. C /\ ph ) )
+                 -> E! z e. C A. x ( ( A e. C /\ ph ) -> z = A ) ) $=
+      ( vw wcel wa wceq wi wal wex cv wrex bitri wral wreu eleq1d anbi12d exbii
+      cbvexv r19.41v rexcom4 risset anbi1i 3bitr4ri wb eqeq2 imim2i an31 imbi1i
+      bi2 impexp 3bitr3i sylib 2alimi 19.23v an12 adantr pm5.32ri bitr4i 19.42v
+      syl eleq1 albii 19.21v exp3a reximdvai syl5bi imp pm4.24 prth eqtr3 syl56
+      biimpi alanimi com12 syl5 a1d ralrimivv adantl eqeq1 imbi2d reu4 sylanbrc
+      albidv ) FHLZAMZGHLZBMZMZFGNZOZDPCPZWMCQZMWMERZFNZOZCPZEHSZXDWMKRZFNZOZCP
+      ZMZXAXFNZOZKHUAEHUAZXDEHUBWSWTXEWTXAGNZBMZDQZEHSZWSXEWTWODQZXQWMWOCDCRDRN
+      ZWLWNABXSFGHJUCIUDUFXOEHSZDQXNEHSZBMZDQXQXRXTYBDXNBEHUGUEXOEDHUHWOYBDWNYA
+      BEGHUIUJUEUKTWSXPXDEHWSXAHLZXPXDWSXNWOMZXCOZDPZCPZYCXPMZXDOZWRYECDWRWPXBX
+      NULZOZYEWQYJWPFGXAUMUNYKWPXNXBOZOZYEYJYLWPXBXNUQUNWPXNMZXBOYDWMMZXBOYMYEY
+      NYOXBWMWOXNUOUPWPXNXBURYDWMXBURUSUTVHVAYGYHXCOZCPYIYFYPCYFYDDQZXCOYPYDXCD
+      VBYQYHXCYQYCXOMZDQYHYDYRDYDWNXOMYRXNWNBVCXOYCWNXNYCWNULBXAGHVIVDVEVFUEYCX
+      ODVGTUPTVJYHXCCVKTUTVLVMVNVOWTXMWSWTXLEKHHWTXLYCXFHLMXJWMXKOZCPZWTXKXCXHY
+      SCWMWMWMMZXCXHMXBXGMXKWMUUAWMVPVTWMXBWMXGVQXAXFFVRVSWAYTWTXKYTWTXKOWMXKCV
+      BVTWBWCWDWEWFXDXIEKHXKXCXHCXKXBXGWMXAXFFWGWHWKWIWJ $.
+  $}
+
+  ${
+    $d y A $.  $d x B $.  $d x y $.
+    $( Double restricted quantification with "at most one," analogous to
+       ~ 2moex .  (Contributed by Alexander van der Vekens, 17-Jun-2017.) $)
+    2rmorex $p |- ( E* x e. A E. y e. B ph -> A. y e. B E* x e. A ph ) $=
+      ( wrex wrmo nfcv nfre1 nfrmo cv wcel wi wral ex ralrimivw rmoim syl com12
+      rspe ralrimi ) ACEFZBDGZABDGZCEUBCBDCDHACEIJCKELZUCUDUEAUBMZBDNUCUDMUEUFB
+      DUEAUBACETOPAUBBDQRSUA $.
+
+    $( Lemma for ~ 2reu5 .  Note that ` E! x e. A E! y e. B ph ` does not mean
+       "there is exactly one ` x ` in ` A ` and exactly one ` y ` in ` B ` such
+       that ` ph ` holds;" see comment for ~ 2eu5 .  (Contributed by Alexander
+       van der Vekens, 17-Jun-2017.) $)
+    2reu5lem1 $p |- ( E! x e. A E! y e. B ph <->
+                   E! x E! y ( x e. A /\ y e. B /\ ph ) ) $=
+      ( wreu cv wcel wa weu w3a df-reu reubii euanv bicomi 3anass eubii bitri )
+      ACEFZBDFCGEHZAIZCJZBDFZBGDHZTAKZCJZBJZSUBBDACELMUCUDUBIZBJUGUBBDLUHUFBUHU
+      DUAIZCJZUFUJUHUDUACNOUIUECUEUIUDTAPOQRQRR $.
+
+    $( Lemma for ~ 2reu5 .  (Contributed by Alexander van der Vekens,
+       17-Jun-2017.) $)
+    2reu5lem2 $p |- ( A. x e. A E* y e. B ph <->
+                   A. x E* y ( x e. A /\ y e. B /\ ph ) ) $=
+      ( wrmo wral cv wcel wa wmo w3a wal df-rmo ralbii wi df-ral moanimv bicomi
+      bitri 3anass mobii albii ) ACEFZBDGCHEIZAJZCKZBDGZBHDIZUEALZCKZBMZUDUGBDA
+      CENOUHUIUGPZBMULUGBDQUMUKBUMUIUFJZCKZUKUOUMUIUFCRSUNUJCUJUNUIUEAUASUBTUCT
+      T $.
+  $}
+
+  ${
+    $d w y z A $.  $d w x z B $.  $d x y $.  $d ph w $.  $d ph z $.
+    $( Lemma for ~ 2reu5 .  This lemma is interesting in its own right, showing
+       that existential restriction in the last conjunct (the "at most one"
+       part) is optional; compare ~ rmo2 .  (Contributed by Alexander van der
+       Vekens, 17-Jun-2017.) $)
+    2reu5lem3 $p |- ( ( E! x e. A E! y e. B ph /\ A. x e. A E* y e. B ph )
+                   <-> ( E. x e. A E. y e. B ph
+                         /\ E. z E. w A. x e. A A. y e. B
+                            ( ph -> ( x = z /\ y = w ) ) ) ) $=
+      ( wreu wral wa cv wcel weu wal wex weq wi wrex exbii 3bitri w3a 2reu5lem1
+      wrmo wmo 2reu5lem2 anbi12i 2eu5 3anass 19.42v df-rex bicomi anbi2i bitr4i
+      3anan12 imbi1i impexp imbi2i albii df-ral r19.21v 3bitr2i ) ACGHBFHZACGUC
+      BFIZJBKFLZCKGLZAUAZCMBMZVFCUDBNZJVFCOZBOZVFBDPCEPJZQZCNZBNZEOZDOZJACGRZBF
+      RZAVKQZCGIZBFIZEOZDOZJVBVGVCVHABCFGUBABCFGUEUFVFBCDEUGVJVRVPWCVJVDVQJZBOV
+      RVIWDBVIVDVEAJZJZCOVDWECOZJWDVFWFCVDVEAUHSVDWECUIWGVQVDVQWGACGUJUKULTSVQB
+      FUJUMVOWBDVNWAEVNVDVTQZBNWAVMWHBVMVEVDVSQZQZCNWICGIWHVLWJCVLVEVDAJZJZVKQV
+      EWKVKQZQWJVFWLVKVDVEAUNUOVEWKVKUPWMWIVEVDAVKUPUQTURWICGUSVDVSCGUTVAURVTBF
+      USUMSSUFT $.
+
+    $d x A $.  $d y B $.
+    $( Double restricted existential uniqueness in terms of restricted
+       existential quantification and restricted universal quantification,
+       analogous to ~ 2eu5 and ~ reu3 .  (Contributed by Alexander van der
+       Vekens, 17-Jun-2017.) $)
+    2reu5 $p |- ( ( E! x e. A E! y e. B ph /\ A. x e. A E* y e. B ph )
+                  <-> ( E. x e. A E. y e. B ph
+                        /\ E. z e. A E. w e. B A. x e. A A. y e. B
+                           ( ph -> ( x = z /\ y = w ) ) ) ) $=
+      ( wrex weq wa wral wex cv wcel wreu r19.29r reximi eleq1 ex df-rex pm3.35
+      wi wrmo bi2anan9 biimpac ancomd rexlimivv syl 3syl pm4.71rd anass 2exbidv
+      syl6bb pm5.32i 2reu5lem3 r19.42v bitr3i exbii bitri anbi2i 3bitr4i ) ACGH
+      ZBFHZABDIZCEIZJZUBZCGKZBFKZELDLZJVCEMZGNZDMZFNZVIJZJZELZDLZJACGOBFOACGUCB
+      FKJVCVIEGHZDFHZJVCVJVRVCVIVPDEVCVIVLVNJZVIJVPVCVIWAVCVIWAVCVIJVBVHJZBFHAV
+      GJZCGHZBFHZWAVBVHBFPWBWDBFAVGCGPQWEVFCGHZBFHWAWDWFBFWCVFCGAVFUAQQVFWABCFG
+      BMZFNZCMZGNZJZVFWAWKVFJVNVLVFWKVNVLJVDWHVNVEWJVLWGVMFRWIVKGRUDUEUFSUGUHUI
+      SUJVLVNVIUKUMULUNABCDEFGUOVTVRVCVTVNVSJZDLVRVSDFTWLVQDWLVOEGHVQVNVIEGUPVO
+      EGTUQURUSUTVA $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ph $.
+    nelrdva.1 $e |- ( ( ph /\ x e. A ) -> x =/= B ) $.
+    $( Deduce negative membership from an implication.  (Contributed by Thierry
+       Arnoux, 27-Nov-2017.) $)
+    nelrdva $p |- ( ph -> -. B e. A ) $=
+      ( wcel wceq wa eqidd wne cv wi eleq1 anbi2d imbi12d vtoclg anabsi7 neneqd
+      neeq1 pm2.65da ) ADCFZDDGAUAHZDIUBDDAUADDJZABKZCFZHZUDDJZLUBUCLBDCUDDGZUF
+      UBUGUCUHUEUAAUDDCMNUDDDSOEPQRT $.
+  $}
+
 $(
 ###############################################################################
                             CLASSICAL LOGIC
