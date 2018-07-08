@@ -22015,24 +22015,27 @@ $)
 
   ${
     $d x ph $.  $d x ps $.  $d x A $.  $d x B $.  $d x C $.
-    eueq3.1 $e |- A e. _V $.
-    eueq3.2 $e |- B e. _V $.
-    eueq3.3 $e |- C e. _V $.
-    eueq3.4 $e |- -. ( ph /\ ps ) $.
+    eueq3dc.1 $e |- A e. _V $.
+    eueq3dc.2 $e |- B e. _V $.
+    eueq3dc.3 $e |- C e. _V $.
+    eueq3dc.4 $e |- -. ( ph /\ ps ) $.
     $( Equality has existential uniqueness (split into 3 cases).  (Contributed
        by NM, 5-Apr-1995.)  (Proof shortened by Mario Carneiro,
        28-Sep-2015.) $)
-    eueq3 $p |- E! x ( ( ph /\ x = A ) \/ ( -. ( ph \/ ps ) /\ x = B )
-                \/ ( ps /\ x = C ) ) $=
-      ( wceq wa wo wn w3o weu eueq1 ibar wb con2i cv pm2.45 imnani jaoi orbi12d
-      bianfd mtbid biorf bitrd 3orrot df-3or bitri syl6bbr eubidv adantr pm2.46
-      syl mpbii simpl orim12i con3i 3orcomb ecase3 ) ABACUAZDKZLZABMZNZVDEKZLZB
-      VDFKZLZOZCPZAVECPVNCDGQAVEVMCAVEVJVLMZVFMZVMAVEVFVPAVERAVONVFVPSAVHBMZVOV
-      QAVHANBABUBZABABJUCZTUDTAVHVJBVLAVHVIVHAVRTUFABVKVSUFUEUGVOVFUHUQUIVMVJVL
-      VFOVPVFVJVLUJVJVLVFUKULUMUNURBVKCPVNCFIQBVKVMCBVKVFVJMZVLMZVMBVKVLWABVKRB
-      VTNVLWASVTBVFBNZVJAWBVEVSUOVHWBVIABUPUOUDTVTVLUHUQUIVFVJVLUKUMUNURVHVICPV
-      NCEHQVHVIVMCVHVIVFVLMZVJMZVMVHVIVJWDVHVIRVHWCNVJWDSWCVGVFAVLBAVEUSBVKUSUT
-      VAWCVJUHUQUIVMVFVLVJOWDVFVJVLVBVFVLVJUKULUMUNURVC $.
+    eueq3dc $p |- ( DECID ph -> ( DECID ps ->
+        E! x ( ( ph /\ x = A ) \/ ( -. ( ph \/ ps ) /\ x = B )
+               \/ ( ps /\ x = C ) ) ) ) $=
+      ( wdc wo wceq wa wn w3o weu eueq1 con2i jaoi cv dcor df-dc pm2.45
+      ibar wb imnani bianfd orbi12d mtbid biorf syl bitrd 3orrot df-3or
+      bitri syl6bbr eubidv mpbii adantr pm2.46 simpl orim12i con3i syl6
+      3orcomb sylbi ) AKBKABLZKZACUAZDMZNZVHOZVJEMZNZBVJFMZNZPZCQZABUBV
+      IVHVMLVSVHUCVHVSVMAVSBAVKCQVSCDGRAVKVRCAVKVOVQLZVLLZVRAVKVLWAAVKU
+      EAVTOVLWAUFAVMBLZVTWBAVMAOBABUDZABABJUGZSTSAVMVOBVQAVMVNVMAWCSUHA
+      BVPWDUHUIUJVTVLUKULUMVRVOVQVLPWAVLVOVQUNVOVQVLUOUPUQURUSBVPCQVSCF
+      IRBVPVRCBVPVLVOLZVQLZVRBVPVQWFBVPUEBWEOVQWFUFWEBVLBOZVOAWGVKWDUTV
+      MWGVNABVAUTTSWEVQUKULUMVLVOVQUOUQURUSTVMVNCQVSCEHRVMVNVRCVMVNVLVQ
+      LZVOLZVRVMVNVOWIVMVNUEVMWHOVOWIUFWHVHVLAVQBAVKVBBVPVBVCVDWHVOUKUL
+      UMVRVLVQVOPWIVLVOVQVFVLVQVOUOUPUQURUSTVGVE $.
   $}
 
   ${
