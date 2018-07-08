@@ -15049,14 +15049,24 @@ $)
 
   ${
     $d x y $.
-    eu3.1 $e |- ( ph -> A. y ph ) $.
+    eu3h.1 $e |- ( ph -> A. y ph ) $.
     $( An alternate way to express existential uniqueness.  (Contributed by NM,
-       8-Jul-1994.) $)
-    eu3 $p |- ( E! x ph <->
+       8-Jul-1994.)  (New usage is discouraged.) $)
+    eu3h $p |- ( E! x ph <->
                 ( E. x ph /\ E. y A. x ( ph -> x = y ) ) ) $=
       ( weu wex cv wceq wi wal wa euex eumo0 jca wsbc nfi mo23 anim2i
       eu2 sylibr impbii ) ABEZABFZABGCGZHZIBJCFZKZUBUCUFABLABCDMNUGUC
       AABUDOKUEICJBJZKUBUFUHUCABCACDPZQRABCUISTUA $.
+  $}
+
+  ${
+    $d x y $.
+    eu3.1 $e |- F/ y ph $.
+    $( An alternate way to express existential uniqueness.  (Contributed by NM,
+       8-Jul-1994.) $)
+    eu3 $p |- ( E! x ph <->
+                ( E. x ph /\ E. y A. x ( ph -> x = y ) ) ) $=
+      ( nfri eu3h ) ABCACDEF $.
   $}
 
   ${
@@ -15091,7 +15101,7 @@ $)
     $( A condition which implies "at most one."  (Contributed by Jim Kingdon,
        2-Jul-2018.) $)
     mo2r $p |- ( E. y A. x ( ph -> x = y ) -> E* x ph ) $=
-      ( weq wi wal wex weu wmo nfri eu3 simplbi2com df-mo sylibr ) ABCEFBGCHZAB
+      ( weq wi wal wex weu wmo nfri eu3h simplbi2com df-mo sylibr ) ABCEFBGCHZAB
       HZABIZFABJRQPABCACDKLMABNO $.
   $}
 
@@ -15432,7 +15442,7 @@ $)
        ~ 2eu8 for alternate definitions.  (Contributed by NM, 3-Dec-2001.) $)
     2eu4 $p |- ( ( E! x E. y ph /\ E! y E. x ph ) <->
       ( E. x E. y ph /\ E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) ) ) $=
-      ( wex weu wa weq wal ax-17 eu3 anbi12i anbi2i bitri hba1 19.3h 19.26 albii
+      ( wex weu wa weq wal ax-17 eu3h anbi12i anbi2i bitri hba1 19.3h 19.26 albii
       wi an4 excom anidm jcab 3bitr4ri alcom bitr4i 19.23v 2albii 3bitri 2exbii
       hbe1 hbim aaan eeanv bitr2i ) ACFZBGZABFZCGZHUQBFZUQBDIZTZBJZDFZHZUSCFZUS
       CEIZTZCJZEFZHZHVAVGHZVEVKHZHVAAVBVHHTZCJZBJZEFDFZHURVFUTVLUQBDUQDKLUSCEUS
@@ -22781,7 +22791,7 @@ $)
        8-Mar-1995.) $)
     mo2 $p |- ( E* x ph <-> E. y A. x ( ph -> x = y ) ) $=
       ( wmo wex weu wi weq wal df-mo alnex pm2.21 alimi 19.8a syl sylbir eumo0
-      wn ja eu3 simplbi2com impbii bitri ) ABEABFZABGZHZABCIZHZBJZCFZABKUGUKUEU
+      wn ja eu3h simplbi2com impbii bitri ) ABEABFZABGZHZABCIZHZBJZCFZABKUGUKUEU
       FUKUESASZBJZUKABLUMUJUKULUIBAUHMNUJCOPQABCDRTUFUEUKABCDUAUBUCUD $.
   $}
 
