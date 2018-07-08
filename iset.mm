@@ -5073,6 +5073,14 @@ $)
     ( wn wi wa pm3.2im imp con2i pm3.2 con3rr3 impbii ) ABCDZABEZCMLABLCABFGHAB
     MABIJK $.
 
+  ${
+    imnani.1 $e |- -. ( ph /\ ps ) $.
+    $( Express implication in terms of conjunction.  (Contributed by Mario
+       Carneiro, 28-Sep-2015.) $)
+    imnani $p |- ( ph -> -. ps ) $=
+      ( wn wi wa imnan mpbir ) ABDEABFDCABGH $.
+  $}
+
   $( Theorem to move a conjunct in and out of a negation.  (Contributed by NM,
      9-Nov-2003.) $)
   nan $p |- ( ( ph -> -. ( ps /\ ch ) ) <-> ( ( ph /\ ps ) -> -. ch ) ) $=
