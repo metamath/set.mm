@@ -15179,13 +15179,14 @@ $)
 
   ${
     $d x y $.  $d y ph $.
-    mo4f.1 $e |- ( ps -> A. x ps ) $.
+    mo4f.1 $e |- F/ x ps $.
     mo4f.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( "At most one" expressed using implicit substitution.  (Contributed by
        NM, 10-Apr-2004.) $)
     mo4f $p |- ( E* x ph <-> A. x A. y ( ( ph /\ ps ) -> x = y ) ) $=
-      ( wmo wsb wa weq wi wal ax-17 mo3 sbieh anbi2i imbi1i 2albii bitri ) ACGAA
-      CDHZIZCDJZKZDLCLABIZUBKZDLCLACDADMNUCUECDUAUDUBTBAABCDEFOPQRS $.
+      ( wmo cv wsbc wa wceq wi wal ax-17 mo3 sbie anbi2i imbi1i bitri
+      2albii ) ACGAACDHZIZJZCHUAKZLZDMCMABJZUDLZDMCMACDADNOUEUGCDUCUF
+      UDUBBAABCDEFPQRTS $.
   $}
 
   ${
@@ -15194,7 +15195,7 @@ $)
     $( "At most one" expressed using implicit substitution.  (Contributed by
        NM, 26-Jul-1995.) $)
     mo4 $p |- ( E* x ph <-> A. x A. y ( ( ph /\ ps ) -> x = y ) ) $=
-      ( ax-17 mo4f ) ABCDBCFEG $.
+      ( nfv mo4f ) ABCDBCFEG $.
   $}
 
   ${
