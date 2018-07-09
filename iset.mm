@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Jul-2018
+$( iset.mm - Version of 8-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -22063,13 +22063,15 @@ $)
   $}
 
   ${
-    $d x y A $.
-    mosub.1 $e |- E* x ph $.
+    $d x y A $.  $d x z $.  $d y z $.  $d A z $.  $d ph z $.
+    mosubex.1 $e |- A e. _V $.
+    mosubex.2 $e |- E* x ph $.
     $( "At most one" remains true after substitution.  (Contributed by NM,
-       9-Mar-1995.) $)
-    mosub $p |- E* x E. y ( y = A /\ ph ) $=
-      ( cv wceq wmo wal wa wex moeq ax-gen moexexv mp2an ) CFDGZCHABHZCIPAJCKBH
-      CDLQCEMPACBNO $.
+       9-Mar-1995.)  (Modified by Jim Kingdon, 8-Jul-2018.) $)
+    mosubex $p |- E* x E. y ( y = A /\ ph ) $=
+      ( vz cv wceq wa wex wmo eqeq2 anbi1d exbidv mobidv wsb sbt sbmo mpbi sb5
+      mobii vtocl ) CHZGHZIZAJZCKZBLZUDDIZAJZCKZBLGDEUEDIZUHULBUMUGUKCUMUFUJAUE
+      DUDMNOPACGQZBLZUIABLZCGQUOUPCGFRACGBSTUNUHBACGUAUBTUC $.
   $}
 
   ${
