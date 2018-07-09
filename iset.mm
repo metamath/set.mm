@@ -22076,14 +22076,13 @@ $)
 
   ${
     $d x y A $.  $d y ph $.
-    $( Theorem for inferring "at most one."  (Contributed by NM,
-       17-Oct-1996.) $)
-    mo2icl $p |- ( A. x ( ph -> x = A ) -> E* x ph ) $=
-      ( vy cvv wcel cv wceq wi wal wmo eqeq2 imbi2d albidv imbi1d wex 19.8a nfv
-      mo2 wn sylibr vtoclg vex eleq1 mpbii imim2i con3rr3 alimdv alnex exmo ori
-      sylbi syl6 pm2.61i ) CEFZABGZCHZIZBJZABKZIZAUPDGZHZIZBJZUTIVADCEVBCHZVEUS
-      UTVFVDURBVFVCUQAVBCUPLMNOVEVEDPUTVEDQABDADRSUAUBUOTZUSATZBJZUTVGURVHBURAU
-      OUQUOAUQUPEFUOBUCUPCEUDUEUFUGUHVIABPZTUTABUIVJUTABUJUKULUMUN $.
+    mo2iclex.1 $e |- A e. _V $.
+    $( Theorem for inferring "at most one."  (Contributed by NM, 17-Oct-1996.)
+       (Modified by Jim Kingdon, 8-Jul-2018.) $)
+    mo2iclex $p |- ( A. x ( ph -> x = A ) -> E* x ph ) $=
+      ( vy cv wceq wi wal wmo eqeq2 imbi2d albidv imbi1d nfv mo2r 19.23bi vtocl
+      ) ABFZEFZGZHZBIZABJZHASCGZHZBIZUDHECDTCGZUCUGUDUHUBUFBUHUAUEATCSKLMNUCUDE
+      ABEAEOPQR $.
   $}
 
   ${
