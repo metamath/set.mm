@@ -22138,16 +22138,19 @@ $)
 
   ${
     $d x ph $.  $d x A $.
-    euxfr2.1 $e |- A e. _V $.
-    euxfr2.2 $e |- E* y x = A $.
+    euxfr2dc.1 $e |- A e. _V $.
+    euxfr2dc.2 $e |- E* y x = A $.
     $( Transfer existential uniqueness from a variable ` x ` to another
        variable ` y ` contained in expression ` A ` .  (Contributed by NM,
        14-Nov-2004.) $)
-    euxfr2 $p |- ( E! x E. y ( x = A /\ ph ) <-> E! y ph ) $=
-      ( cv wceq wa wex weu wmo wi 2euswap moani ancom mobii mpbi mpg moeq biidd
-      impbii ceqsexv eubii bitri ) BGDHZAIZCJBKZUGBJZCKZACKUHUJUGCLZUHUJMBUGBCN
-      AUFIZCLUKUFACFOULUGCAUFPZQRSUGBLZUJUHMCUGCBNULBLUNUFABBDTOULUGBUMQRSUBUIA
-      CAABDEUFAUAUCUDUE $.
+    euxfr2dc $p |- ( DECID E. y E. x ( x = A /\ ph ) ->
+        ( E! x E. y ( x = A /\ ph ) <-> E! y ph ) ) $=
+      ( cv wa wex wdc weu wmo wal moani mobii mpbi ax-gen 2euswapdc mpi
+      wi wceq ancom excom dcbii sylbi impbid biidd ceqsexv eubii syl6bb
+      moeq ) BGDUAZAHZBIZCIZJZUMCIZBKZUNCKZACKUPURUSUPUMCLZBMZURUSTZUTB
+      AULHZCLUTULACFNVCUMCAULUBZOPQUPUQBIZJVAVBTUOVEUMCBUCUDUMBCRUESUPU
+      MBLZCMUSURTVFCVCBLVFULABBDUKNVCUMBVDOPQUMCBRSUFUNACAABDEULAUGUHUI
+      UJ $.
   $}
 
   ${
