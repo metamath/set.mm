@@ -53,6 +53,10 @@ processed manually.
 
 DONE:
 Date      Old       New         Notes
+9-Jul-18  a4ime     spimeh
+9-Jul-18  a4im      spimh
+9-Jul-18  a4imt     spimth
+9-Jul-18  a4i       spi
 23-May-18 sb8eu     sb8euh
 23-May-18 sb8e      sb8eh
 23-May-18 sb8       sb8h
@@ -9644,7 +9648,7 @@ $)
        calculus.  See e.g.  Rule 2 of [Hamilton] p. 74.  This rule says that if
        something is unconditionally true, then it is true for all values of a
        variable.  For example, if we have proved ` x = x ` , we can conclude
-       ` A. x x = x ` or even ` A. y x = x ` .  Theorem ~ a4i shows we can go
+       ` A. x x = x ` or even ` A. y x = x ` .  Theorem ~ spi shows we can go
        the other way also: in other words we can add or remove universal
        quantifiers from the beginning of any theorem as required.  (Contributed
        by NM, 5-Aug-1993.) $)
@@ -10553,10 +10557,10 @@ $)
 
 
   ${
-    a4i.1 $e |- A. x ph $.
+    spi.1 $e |- A. x ph $.
     $( Inference rule reversing generalization.  (Contributed by NM,
        5-Aug-1993.) $)
-    a4i $p |- ph $=
+    spi $p |- ph $=
       ( wal ax-4 ax-mp ) ABDACABEF $.
   $}
 
@@ -10959,7 +10963,7 @@ $)
   $( If a wff is true, it is true for at least one instance.  Special case of
      Theorem 19.8 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
   19.8a $p |- ( ph -> E. x ph ) $=
-    ( wex wi wal id hbe1 19.23 mpbir a4i ) AABCZDZBLBEKKDKFAKBABGHIJ $.
+    ( wex wi wal id hbe1 19.23 mpbir spi ) AABCZDZBLBEKKDKFAKBABGHIJ $.
 
   ${
     19.23bi.1 $e |- ( E. x ph -> ps ) $.
@@ -11914,20 +11918,31 @@ $)
       JBEJQSCDEOABPRFABCDEFKLKAEMBEMN $.
   $}
 
-  $( Closed theorem form of ~ a4im .  (Contributed by NM, 15-Jan-2008.) $)
-  a4imt $p |- ( A. x ( ( ps -> A. x ps ) /\ ( x = y -> ( ph -> ps ) ) ) ->
+  $( Closed theorem form of ~ spim .  (Contributed by NM, 15-Jan-2008.)
+     (New usage is discouraged.) $)
+  spimth $p |- ( A. x ( ( ps -> A. x ps ) /\ ( x = y -> ( ph -> ps ) ) ) ->
               ( A. x ph -> ps ) ) $=
     ( wal wi weq wa imim2 imim2d imp com23 al2imi ax9o syl6 ) BBCEZFZCDGZABFZFZ
     HZCEACERPFZCEBUAAUBCUARAPQTRAPFZFQSUCRBPAIJKLMBCDNO $.
 
+  $( Closed theorem form of ~ spim .  (Contributed by NM, 15-Jan-2008.)
+     (Revised by Mario Carneiro, 17-Oct-2016.)  (Proof shortened by Wolf
+     Lammen, 24-Feb-2018.) $)
+  spimt $p |- ( ( F/ x ps /\ A. x ( x = y -> ( ph -> ps ) ) ) ->
+              ( A. x ph -> ps ) ) $=
+    ( cv wceq wi wal wex wnf a9e mpi 19.35-1 syl 19.9t biimpd sylan9r
+    exim ) CEDEFZABGZGCHZACHZBCIZBCJZBUATCIZUBUCGUASCIUECDKSTCRLABCMN
+    UDUCBBCOPQ $.
+
   ${
-    a4im.1 $e |- ( ps -> A. x ps ) $.
-    a4im.2 $e |- ( x = y -> ( ph -> ps ) ) $.
+    spimh.1 $e |- ( ps -> A. x ps ) $.
+    spimh.2 $e |- ( x = y -> ( ph -> ps ) ) $.
     $( Specialization, using implicit substitition.  Compare Lemma 14 of
-       [Tarski] p. 70.  The ~ a4im series of theorems requires that only one
+       [Tarski] p. 70.  The ~ spim series of theorems requires that only one
        direction of the substitution hypothesis hold.  (Contributed by NM,
-       5-Aug-1993.)  (Revised by NM, 8-May-2008.) $)
-    a4im $p |- ( A. x ph -> ps ) $=
+       5-Aug-1993.)  (Revised by NM, 8-May-2008.)
+       (New usage is discouraged.) $)
+    spimh $p |- ( A. x ph -> ps ) $=
       ( wal weq wi syl6com alimi ax9o syl ) ACGCDHZBCGZIZCGBAPCNABOFEJKBCDLM $.
   $}
 
@@ -11940,26 +11955,48 @@ $)
        5-Aug-1993.)  (Revised by Mario Carneiro, 3-Oct-2016.)  (Proof rewritten
        by Jim Kingdon, 10-Jun-2018.) $)
     spim $p |- ( A. x ph -> ps ) $=
-      ( nfri a4im ) ABCDBCEGFH $.
+      ( nfri spimh ) ABCDBCEGFH $.
   $}
 
   ${
-    a4ime.1 $e |- ( ph -> A. x ph ) $.
-    a4ime.2 $e |- ( x = y -> ( ph -> ps ) ) $.
+    spimeh.1 $e |- ( ph -> A. x ph ) $.
+    spimeh.2 $e |- ( x = y -> ( ph -> ps ) ) $.
     $( Existential introduction, using implicit substitition.  Compare Lemma 14
        of [Tarski] p. 70.  (Contributed by NM, 7-Aug-1994.)  (Revised by NM,
-       3-Feb-2015.) $)
-    a4ime $p |- ( ph -> E. x ps ) $=
+       3-Feb-2015.)  (New usage is discouraged.) $)
+    spimeh $p |- ( ph -> E. x ps ) $=
       ( cv wceq wex a9e com12 eximdh mpi ) ACGDGHZCIBCICDJANBCENABFKLM $.
   $}
 
   ${
-    a4imed.1 $e |- ( ch -> A. x ch ) $.
-    a4imed.2 $e |- ( ch -> ( ph -> A. x ph ) ) $.
-    a4imed.3 $e |- ( x = y -> ( ph -> ps ) ) $.
-    $( Deduction version of ~ a4ime .  (Contributed by NM, 5-Aug-1993.) $)
-    a4imed $p |- ( ch -> ( ph -> E. x ps ) ) $=
-      ( wex wa wal adantr imp 19.26 sylanbrc weq adantld a4ime ex ) CABDICAJZBD
+    spimed.1 $e |- ( ch -> F/ x ph ) $.
+    spimed.2 $e |- ( x = y -> ( ph -> ps ) ) $.
+    $( Deduction version of ~ spime .  (Contributed by NM, 5-Aug-1993.)
+       (Revised by Mario Carneiro, 3-Oct-2016.)  (Proof shortened by Wolf
+       Lammen, 19-Feb-2018.) $)
+    spimed $p |- ( ch -> ( ph -> E. x ps ) ) $=
+      ( wal wex nfrd weq wi a9e eximii 19.35i syl6 ) CAADHBDICADFJABDDEKABLDDEM
+      GNOP $.
+  $}
+
+  ${
+    spime.1 $e |- F/ x ph $.
+    spime.2 $e |- ( x = y -> ( ph -> ps ) ) $.
+    $( Existential introduction, using implicit substitution.  Compare Lemma 14
+       of [Tarski] p. 70.  (Contributed by NM, 7-Aug-1994.)  (Revised by Mario
+       Carneiro, 3-Oct-2016.)  (Proof shortened by Wolf Lammen, 6-Mar-2018.) $)
+    spime $p |- ( ph -> E. x ps ) $=
+      ( wex wi wtru wnf a1i spimed trud ) ABCGHABICDACJIEKFLM $.
+  $}
+
+  ${
+    spimedh.1 $e |- ( ch -> A. x ch ) $.
+    spimedh.2 $e |- ( ch -> ( ph -> A. x ph ) ) $.
+    spimedh.3 $e |- ( x = y -> ( ph -> ps ) ) $.
+    $( Deduction version of ~ spime .  (Contributed by NM, 5-Aug-1993.)
+       (New usage is discouraged.) $)
+    spimedh $p |- ( ch -> ( ph -> E. x ps ) ) $=
+      ( wex wa wal adantr imp 19.26 sylanbrc weq adantld spimeh ex ) CABDICAJZBD
       ETCDKZADKZTDKCUAAFLCAUBGMCADNODEPABCHQRS $.
   $}
 
@@ -12091,7 +12128,7 @@ $)
     $( Implicit substitution of ` y ` for ` x ` into a theorem.  (Contributed
        by Raph Levien, 9-Jul-2003.) $)
     chvar $p |- ps $=
-      ( weq biimpd a4im mpg ) ABCABCDECDHABFIJGK $.
+      ( weq biimpd spimh mpg ) ABCABCDECDHABFIJGK $.
   $}
 
   $( A variable introduction law for equality.  Lemma 15 of [Monk2] p. 109,
@@ -12112,7 +12149,7 @@ $)
   equveli $p |- ( A. z ( z = x <-> z = y ) -> x = y ) $=
     ( cv wb wal wi wa albiim wo ax12or equequ1 imbi12d sps equid syl6bi adantrd
     wceq ax-4 jaoi dral2 a1bi biimpri dral1 mpi equcomi syl adantld hbequid a1i
-    hba1 hbimd equtr ax-8 imim12d ax-gen 19.26 a4imt sylbir sylancl ax-mp sylbi
+    hba1 hbimd equtr ax-8 imim12d ax-gen 19.26 spimth sylbir sylancl ax-mp sylbi
     a5i mpii ) CDZADZRZVEBDZRZECFVGVIGZCFZVIVGGZCFZHZVFVHRZVGVICIVGCFZVICFZVOVO
     CFGZCFZJZJVNVOGZABCKVPWAVTVPVKVOVMVPVKVFVFRZVOGZCFZVOVJWCCACVGVJWCECVGVGWBV
     IVOCAALCABLMNUAWCVOCVOWCWBVOAOZUBUCNPQVQWAVSVQVMVOVKVQVMVHVHRZVHVFRZGZBFZVO
@@ -12595,11 +12632,11 @@ $)
 
   ${
     $d x ps $.
-    a4imv.1 $e |- ( x = y -> ( ph -> ps ) ) $.
-    $( A version of ~ a4im with a distinct variable requirement instead of a
+    spimv.1 $e |- ( x = y -> ( ph -> ps ) ) $.
+    $( A version of ~ spim with a distinct variable requirement instead of a
        bound variable hypothesis.  (Contributed by NM, 5-Aug-1993.) $)
-    a4imv $p |- ( A. x ph -> ps ) $=
-      ( ax-17 a4im ) ABCDBCFEG $.
+    spimv $p |- ( A. x ph -> ps ) $=
+      ( nfv spim ) ABCDBCFEG $.
   $}
 
   ${
@@ -12611,7 +12648,7 @@ $)
        the consequent, proved without using ~ ax-16 .  (Contributed by NM,
        8-Nov-2006.)  (Proof shortened by Andrew Salmon, 21-Jun-2011.) $)
     aev $p |- ( A. x x = y -> A. z w = v ) $=
-      ( aev.vf vu weq wal hbae ax-8 a4imv alrimih equcomi alequcoms a5i alequcom
+      ( aev.vf vu weq wal hbae ax-8 spimv alrimih equcomi alequcoms a5i alequcom
       syl6 3syl ) ABHZAIZDEHZCABCJUAFBHZFIZGEHZGIZUBUAUCFABFJTUCAFAFBKLMUDFGHZF
       IZEGHZEIUFUCUGFUGBFBFHZUGBGBGHUJGFHUGBGFKGFNRLOPUHUIEFGEJUGUIFEFEGKLMEGQS
       UEUBGDGDEKLSM $.
@@ -12947,21 +12984,21 @@ $)
   $( A specialization theorem, mostly the same as Theorem 19.8 of [Margaris]
      p. 89.  (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
      29-Dec-2017.) $)
-  a4sbe $p |- ( [ y / x ] ph -> E. x ph ) $=
+  spsbe $p |- ( [ y / x ] ph -> E. x ph ) $=
     ( cv wsbc wceq wa wex sb1 ax-ia2 eximi syl ) ABCDZEBDMFZAGZBHABHA
     BCIOABNAJKL $.
 
   $( Specialization of implication.  (Contributed by NM, 5-Aug-1993.)  (Proof
      rewritten by Jim Kingdon, 21-Jan-2018.) $)
-  a4sbim $p |- ( A. x ( ph -> ps ) -> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
+  spsbim $p |- ( A. x ( ph -> ps ) -> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
     ( wi wal weq wa wex wsb imim2 sps id anim2d alimi syl anim12d df-sb 3imtr4g
     exim ) ABEZCFZCDGZAEZUCAHZCIZHUCBEZUCBHZCIZHACDJBCDJUBUDUGUFUIUAUDUGECABUCK
     LUBUEUHEZCFUFUIEUAUJCUAABUCUAMNOUEUHCTPQACDRBCDRS $.
 
   $( Specialization of biconditional.  (Contributed by NM, 5-Aug-1993.)  (Proof
      rewritten by Jim Kingdon, 21-Jan-2018.) $)
-  a4sbbi $p |- ( A. x ( ph <-> ps ) -> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
-    ( wi wal wa wsb wb a4sbim anim12i albiim dfbi2 3imtr4i ) ABECFZBAECFZGACDHZ
+  spsbbi $p |- ( A. x ( ph <-> ps ) -> ( [ y / x ] ph <-> [ y / x ] ps ) ) $=
+    ( wi wal wa wsb wb spsbim anim12i albiim dfbi2 3imtr4i ) ABECFZBAECFZGACDHZ
     BCDHZEZRQEZGABICFQRIOSPTABCDJBACDJKABCLQRMN $.
 
   ${
@@ -12970,7 +13007,7 @@ $)
     $( Deduction substituting both sides of a biconditional.  (Contributed by
        NM, 5-Aug-1993.) $)
     sbbid $p |- ( ph -> ( [ y / x ] ps <-> [ y / x ] ch ) ) $=
-      ( wb wal wsb alrimih a4sbbi syl ) ABCHZDIBDEJCDEJHANDFGKBCDELM $.
+      ( wb wal wsb alrimih spsbbi syl ) ABCHZDIBDEJCDEJHANDFGKBCDELM $.
   $}
 
   $( Elimination of equality from antecedent after substitution.  (Contributed
@@ -12983,7 +13020,7 @@ $)
   $( Substitution has no effect on a non-free variable.  (Contributed by NM,
      30-May-2009.) $)
   sbf3t $p |- ( A. x ( ph -> A. x ph ) -> ( [ y / x ] ph <-> ph ) ) $=
-    ( wal wi wsb a4sbim sbf2 ax-4 sylbi syl6 stdpc4 imim2i sps impbid ) AABDZEZ
+    ( wal wi wsb spsbim sbf2 ax-4 sylbi syl6 stdpc4 imim2i sps impbid ) AABDZEZ
     BDZABCFZARSPBCFZAAPBCGTPAABCHABIJKQASEBPSAABCLMNO $.
 
   ${
@@ -13065,7 +13102,7 @@ $)
        without one or more of these axioms in special cases.  (Contributed by
        NM, 20-May-2008.) $)
     ax16i $p |- ( A. x x = y -> ( ph -> A. x ph ) ) $=
-      ( weq wal wi ax-17 ax-8 cbv3h a4imv equid mpi syl syl5com alimdh mpcom
+      ( weq wal wi ax-17 ax-8 cbv3h spimv equid mpi syl syl5com alimdh mpcom
       alimi biimpcd biimprd syl6com ) CDHZCIZCEHZEIZAACIZJUFEDHZEIZUHUEUJCEUEEK
       ZUJCKCEDLMUKECHZEIZUHUEUKUNUJUEECECDLNUEUJUMEULUEDCHZUJUMUECCHUOCOCDCLPUJ
       DEHZUOUMJUJEEHZUPEOZEDELPDECLQRSTUMUGEUMUQUGURECELPZUAQQAUHBEIUIAUGBEAEKZ
@@ -13082,30 +13119,30 @@ $)
 
   ${
     $d x ps $.
-    a4v.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    spv.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
     $( Specialization, using implicit substitition.  (Contributed by NM,
        30-Aug-1993.) $)
-    a4v $p |- ( A. x ph -> ps ) $=
-      ( weq biimpd a4imv ) ABCDCDFABEGH $.
+    spv $p |- ( A. x ph -> ps ) $=
+      ( weq biimpd spimv ) ABCDCDFABEGH $.
   $}
 
   ${
     $d x ph $.
-    a4imev.1 $e |- ( x = y -> ( ph -> ps ) ) $.
-    $( Distinct-variable version of ~ a4ime .  (Contributed by NM,
+    spimev.1 $e |- ( x = y -> ( ph -> ps ) ) $.
+    $( Distinct-variable version of ~ spime .  (Contributed by NM,
        5-Aug-1993.) $)
-    a4imev $p |- ( ph -> E. x ps ) $=
-      ( ax-17 a4ime ) ABCDACFEG $.
+    spimev $p |- ( ph -> E. x ps ) $=
+      ( nfv spime ) ABCDACFEG $.
   $}
 
   ${
     $d x ps $.
-    a4eiv.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    a4eiv.2 $e |- ps $.
+    speiv.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    speiv.2 $e |- ps $.
     $( Inference from existential specialization, using implicit substitition.
        (Contributed by NM, 19-Aug-1993.) $)
-    a4eiv $p |- E. x ph $=
-      ( wex weq biimprd a4imev ax-mp ) BACGFBACDCDHABEIJK $.
+    speiv $p |- E. x ph $=
+      ( wex weq biimprd spimev ax-mp ) BACGFBACDCDHABEIJK $.
   $}
 
   ${
@@ -13687,7 +13724,7 @@ $)
     $( Implicit substitution of ` y ` for ` x ` into a theorem.  (Contributed
        by NM, 20-Apr-1994.) $)
     chvarv $p |- ps $=
-      ( a4v mpg ) ABCABCDEGFH $.
+      ( spv mpg ) ABCABCDEGFH $.
   $}
 
   ${
@@ -14484,7 +14521,7 @@ $( The theorems in this section make use of the $d statement. $)
      shortened by Andrew Salmon, 25-May-2011.) $)
   hbsb4t $p |- ( A. x A. z ( ph -> A. z ph ) ->
                ( -. A. z z = y -> ( [ y / x ] ph -> A. z [ y / x ] ph ) ) ) $=
-    ( weq wal wn wsb wi hba1 hbsb4 a4sbim sps ax-4 sbimi alimi a1i imim12d syl5
+    ( weq wal wn wsb wi hba1 hbsb4 spsbim sps ax-4 sbimi alimi a1i imim12d syl5
     a7s ) DCEDFGADFZBCHZUBDFZIZAUAIZDFBFABCHZUFDFZIZUABCDADJKUEUDUHIDBUEBFZDFZU
     FUBUCUGUIUFUBIDAUABCLMUCUGIUJUBUFDUAABCADNOPQRTS $.
 
@@ -15221,7 +15258,7 @@ $)
     $( "At most one" is preserved through implication (notice wff reversal).
        (Contributed by NM, 22-Apr-1995.) $)
     moim $p |- ( A. x ( ph -> ps ) -> ( E* x ps -> E* x ph ) ) $=
-      ( vy wi wal cv wsbc wa wceq wmo nfa1 ax-4 a4sbim anim12d imim1d
+      ( vy wi wal cv wsbc wa wceq wmo nfa1 ax-4 spsbim anim12d imim1d
       alimdv alrimi ax-17 mo3 ax-5 syl 3imtr4g ) ABEZCFZBBCDGZHZIZCGU
       FJZEZDFZCFZAACUFHZIZUIEZDFZCFZBCKACKUEUKUPEZCFULUQEUEURCUDCLUEU
       JUODUEUNUHUIUEABUMUGUDCMABCDNOPQRUKUPCUAUBBCDBDSTACDADSTUC $.
