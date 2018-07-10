@@ -22379,15 +22379,17 @@ $)
     $( A condition allowing swap of uniqueness and existential quantifiers.
        (Contributed by Thierry Arnoux, 7-Apr-2017.)  (Revised by NM,
        16-Jun-2017.) $)
-    2reuswap $p |- ( A. x e. A E* y e. B ph ->
-                   ( E! x e. A E. y e. B ph -> E! y e. B E. x e. A ph ) ) $=
-      ( wral cv wcel wa wmo wrex wreu wal wex weu df-reu r19.42v df-rex bitri
-      wi wrmo df-rmo ralbii df-ral moanimv albii bitr4i bitr3i an12 exbii eubii
-      2euswap 3imtr4g sylbi ) ACEUAZBDFCGEHZAIZCJZBDFZACEKZBDLZABDKZCELZTZUOURB
-      DACEUBUCUSBGDHZUQIZCJZBMZVDUSVEURTZBMVHURBDUDVGVIBVEUQCUEUFUGVHVFCNZBOZVF
-      BNZCOZVAVCVFBCULVAVEUTIZBOVKUTBDPVNVJBVNUPVEAIZIZCNZVJVNVOCEKVQVEACEQVOCE
-      RUHVPVFCUPVEAUIUJSUKSVCUPVBIZCOVMVBCEPVRVLCVRUQBDKVLUPABDQUQBDRUHUKSUMUNU
-      N $.
+    2reuswapdc $p |- ( DECID E. x E. y ( x e. A /\ ( y e. B /\ ph ) ) ->
+        ( A. x e. A E* y e. B ph ->
+          ( E! x e. A E. y e. B ph -> E! y e. B E. x e. A ph ) ) ) $=
+      ( wral cv wcel wa wmo wex wrex wreu wal weu df-reu r19.42v df-rex
+      wi bitri wrmo wdc df-rmo ralbii df-ral moanimv bitr4i bitr3i an12
+      albii exbii eubii 2euswapdc syl7bi imbi2i syl6ibr syl5bi ) ACEUAZ
+      BDFCGEHZAIZCJZBDFZBGDHZUTIZCKZBKUBZACELZBDMZABDLZCEMZSZURVABDACEU
+      CUDVBVDCJZBNZVFVKVBVCVASZBNVMVABDUEVLVNBVCUTCUFUJUGVFVMVHVDBKZCOZ
+      SVKVHVEBOZVFVMVPVHVCVGIZBOVQVGBDPVRVEBVRUSVCAIZIZCKZVEVRVSCELWAVC
+      ACEQVSCERUHVTVDCUSVCAUIUKTULTVDBCUMUNVJVPVHVJUSVIIZCOVPVICEPWBVOC
+      WBUTBDLVOUSABDQUTBDRUHULTUOUPUQUQ $.
   $}
 
   ${
