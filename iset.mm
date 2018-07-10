@@ -20004,6 +20004,11 @@ $)
       ( wrex rexbidva rexeqdv bitrd ) ABDEICDEICDFIABCDEHJACDEFGKL $.
   $}
 
+  $( Unrestricted "at most one" implies restricted "at most one".  (Contributed
+     by NM, 16-Jun-2017.) $)
+  mormo $p |- ( E* x ph -> E* x e. A ph ) $=
+    ( wmo cv wcel wa wrmo moan df-rmo sylibr ) ABDBECFZAGBDABCHALBIABCJK $.
+
   $( Restricted uniqueness in terms of "at most one."  (Contributed by NM,
      23-May-1999.)  (Revised by NM, 16-Jun-2017.) $)
   reu5 $p |- ( E! x e. A ph <-> ( E. x e. A ph /\ E* x e. A ph ) ) $=
