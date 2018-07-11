@@ -22423,9 +22423,12 @@ $)
     $( Double restricted quantification with "at most one," analogous to
        ~ 2moex .  (Contributed by Alexander van der Vekens, 17-Jun-2017.) $)
     2rmorex $p |- ( E* x e. A E. y e. B ph -> A. y e. B E* x e. A ph ) $=
-      ( wrex wrmo nfcv nfre1 nfrmo cv wcel wi wral ex ralrimivw rmoim syl com12
-      rspe ralrimi ) ACEFZBDGZABDGZCEUBCBDCDHACEIJCKELZUCUDUEAUBMZBDNUCUDMUEUFB
-      DUEAUBACETOPAUBBDQRSUA $.
+      ( wrex wrmo cv wcel wa wmo wal wral wex df-rex mobii df-rmo albii sylib
+      wi anbi2i 19.42v 3bitr4i 2moex sylbi moanimv df-ral imbi2i bitri sylibr
+      an12 ) ACEFZBDGZCHEIZBHDIZAJZBKZTZCLZABDGZCEMZUMUNUPJZBKZCLZUSUMUOUNAJZJZ
+      BKZCLZVDUMVFCNZBKZVHUOULJZBKUOVECNZJZBKUMVJVKVMBULVLUOACEOUAPULBDQVIVMBUO
+      VECUBPUCVFBCUDUEVGVCCVFVBBUOUNAUKPRSVCURCUNUPBUFRSVAUNUTTZCLUSUTCEUGVNURC
+      UTUQUNABDQUHRUIUJ $.
 
     $( Lemma for ~ 2reu5 .  Note that ` E! x e. A E! y e. B ph ` does not mean
        "there is exactly one ` x ` in ` A ` and exactly one ` y ` in ` B ` such
