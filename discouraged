@@ -1233,6 +1233,7 @@
 "axacndlem4" is used by "axacndlem5".
 "axacndlem5" is used by "axacnd".
 "axaddf" is used by "axaddcl".
+"axicn" is used by "sineq0ALT".
 "axinfnd" is used by "axinfprim".
 "axinfnd" is used by "zfcndinf".
 "axinfndlem1" is used by "axinfnd".
@@ -4468,6 +4469,14 @@
 "df-vhc2" is used by "dfvd2an".
 "df-vhc3" is used by "dfvd3an".
 "df-vs" is used by "vsfval".
+"df-wrecs" is used by "nfwrecs".
+"df-wrecs" is used by "wfrlem11".
+"df-wrecs" is used by "wfrlem12".
+"df-wrecs" is used by "wfrlem16".
+"df-wrecs" is used by "wfrlem6".
+"df-wrecs" is used by "wfrlem7".
+"df-wrecs" is used by "wfrlem9".
+"df-wrecs" is used by "wrecseq123".
 "df0op2" is used by "hh0oi".
 "df0op2" is used by "ho01i".
 "df0op2" is used by "nmop0h".
@@ -13356,7 +13365,7 @@ New usage of "axhvmul0-zf" is discouraged (0 uses).
 New usage of "axhvmulass-zf" is discouraged (0 uses).
 New usage of "axhvmulid-zf" is discouraged (0 uses).
 New usage of "axi2m1" is discouraged (0 uses).
-New usage of "axicn" is discouraged (0 uses).
+New usage of "axicn" is discouraged (1 uses).
 New usage of "axinf2" is discouraged (0 uses).
 New usage of "axinfnd" is discouraged (2 uses).
 New usage of "axinfndlem1" is discouraged (1 uses).
@@ -14384,6 +14393,7 @@ New usage of "df-vd3" is discouraged (1 uses).
 New usage of "df-vhc2" is discouraged (1 uses).
 New usage of "df-vhc3" is discouraged (1 uses).
 New usage of "df-vs" is discouraged (1 uses).
+New usage of "df-wrecs" is discouraged (8 uses).
 New usage of "df0op2" is discouraged (3 uses).
 New usage of "dfadj2" is discouraged (7 uses).
 New usage of "dfbi1gb" is discouraged (0 uses).
@@ -16838,6 +16848,7 @@ New usage of "sbcco3gOLD" is discouraged (6 uses).
 New usage of "sbccomiegOLD" is discouraged (0 uses).
 New usage of "sbcim2g" is discouraged (2 uses).
 New usage of "sbcim2gVD" is discouraged (0 uses).
+New usage of "sbcomOLD" is discouraged (0 uses).
 New usage of "sbcoreleleq" is discouraged (2 uses).
 New usage of "sbcoreleleqVD" is discouraged (0 uses).
 New usage of "sbcrot3OLD" is discouraged (0 uses).
@@ -18085,6 +18096,7 @@ Proof modification of "sbcco3gOLD" is discouraged (30 steps).
 Proof modification of "sbccomiegOLD" is discouraged (31 steps).
 Proof modification of "sbcim2g" is discouraged (83 steps).
 Proof modification of "sbcim2gVD" is discouraged (139 steps).
+Proof modification of "sbcomOLD" is discouraged (380 steps).
 Proof modification of "sbcoreleleq" is discouraged (90 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (127 steps).
 Proof modification of "sbcrot3OLD" is discouraged (8 steps).
@@ -18141,6 +18153,7 @@ Proof modification of "sucdomiOLD" is discouraged (34 steps).
 Proof modification of "sucidALT" is discouraged (28 steps).
 Proof modification of "sucidALTVD" is discouraged (28 steps).
 Proof modification of "sucidVD" is discouraged (24 steps).
+Proof modification of "suctr" is discouraged (153 steps).
 Proof modification of "suctrALT2" is discouraged (134 steps).
 Proof modification of "suctrALT2VD" is discouraged (173 steps).
 Proof modification of "suctrALT3" is discouraged (137 steps).
@@ -18164,9 +18177,9 @@ Proof modification of "tbwlem3" is discouraged (49 steps).
 Proof modification of "tbwlem4" is discouraged (91 steps).
 Proof modification of "tbwlem5" is discouraged (42 steps).
 Proof modification of "tbwsyl" is discouraged (20 steps).
-Proof modification of "tfr1ALT" is discouraged (74 steps).
-Proof modification of "tfr2ALT" is discouraged (108 steps).
-Proof modification of "tfr3ALT" is discouraged (190 steps).
+Proof modification of "tfr1ALT" is discouraged (19 steps).
+Proof modification of "tfr2ALT" is discouraged (53 steps).
+Proof modification of "tfr3ALT" is discouraged (84 steps).
 Proof modification of "toycom" is discouraged (142 steps).
 Proof modification of "tpid3gVD" is discouraged (116 steps).
 Proof modification of "tpsexOLD" is discouraged (47 steps).
