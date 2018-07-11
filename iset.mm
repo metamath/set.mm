@@ -22429,65 +22429,6 @@ $)
       BKZCLZVDUMVFCNZBKZVHUOULJZBKUOVECNZJZBKUMVJVKVMBULVLUOACEOUAPULBDQVIVMBUO
       VECUBPUCVFBCUDUEVGVCCVFVBBUOUNAUKPRSVCURCUNUPBUFRSVAUNUTTZCLUSUTCEUGVNURC
       UTUQUNABDQUHRUIUJ $.
-
-    $( Lemma for ~ 2reu5 .  Note that ` E! x e. A E! y e. B ph ` does not mean
-       "there is exactly one ` x ` in ` A ` and exactly one ` y ` in ` B ` such
-       that ` ph ` holds;" see comment for ~ 2eu5 .  (Contributed by Alexander
-       van der Vekens, 17-Jun-2017.) $)
-    2reu5lem1 $p |- ( E! x e. A E! y e. B ph <->
-                   E! x E! y ( x e. A /\ y e. B /\ ph ) ) $=
-      ( wreu cv wcel wa weu w3a df-reu reubii euanv bicomi 3anass eubii bitri )
-      ACEFZBDFCGEHZAIZCJZBDFZBGDHZTAKZCJZBJZSUBBDACELMUCUDUBIZBJUGUBBDLUHUFBUHU
-      DUAIZCJZUFUJUHUDUACNOUIUECUEUIUDTAPOQRQRR $.
-
-    $( Lemma for ~ 2reu5 .  (Contributed by Alexander van der Vekens,
-       17-Jun-2017.) $)
-    2reu5lem2 $p |- ( A. x e. A E* y e. B ph <->
-                   A. x E* y ( x e. A /\ y e. B /\ ph ) ) $=
-      ( wrmo wral cv wcel wa wmo w3a wal df-rmo ralbii wi df-ral moanimv bicomi
-      bitri 3anass mobii albii ) ACEFZBDGCHEIZAJZCKZBDGZBHDIZUEALZCKZBMZUDUGBDA
-      CENOUHUIUGPZBMULUGBDQUMUKBUMUIUFJZCKZUKUOUMUIUFCRSUNUJCUJUNUIUEAUASUBTUCT
-      T $.
-  $}
-
-  ${
-    $d w y z A $.  $d w x z B $.  $d x y $.  $d ph w $.  $d ph z $.
-    $( Lemma for ~ 2reu5 .  This lemma is interesting in its own right, showing
-       that existential restriction in the last conjunct (the "at most one"
-       part) is optional; compare ~ rmo2 .  (Contributed by Alexander van der
-       Vekens, 17-Jun-2017.) $)
-    2reu5lem3 $p |- ( ( E! x e. A E! y e. B ph /\ A. x e. A E* y e. B ph )
-                   <-> ( E. x e. A E. y e. B ph
-                         /\ E. z E. w A. x e. A A. y e. B
-                            ( ph -> ( x = z /\ y = w ) ) ) ) $=
-      ( wreu wral wa cv wcel weu wal wex weq wi wrex exbii 3bitri w3a 2reu5lem1
-      wrmo wmo 2reu5lem2 anbi12i 2eu5 3anass 19.42v df-rex bicomi anbi2i bitr4i
-      3anan12 imbi1i impexp imbi2i albii df-ral r19.21v 3bitr2i ) ACGHBFHZACGUC
-      BFIZJBKFLZCKGLZAUAZCMBMZVFCUDBNZJVFCOZBOZVFBDPCEPJZQZCNZBNZEOZDOZJACGRZBF
-      RZAVKQZCGIZBFIZEOZDOZJVBVGVCVHABCFGUBABCFGUEUFVFBCDEUGVJVRVPWCVJVDVQJZBOV
-      RVIWDBVIVDVEAJZJZCOVDWECOZJWDVFWFCVDVEAUHSVDWECUIWGVQVDVQWGACGUJUKULTSVQB
-      FUJUMVOWBDVNWAEVNVDVTQZBNWAVMWHBVMVEVDVSQZQZCNWICGIWHVLWJCVLVEVDAJZJZVKQV
-      EWKVKQZQWJVFWLVKVDVEAUNUOVEWKVKUPWMWIVEVDAVKUPUQTURWICGUSVDVSCGUTVAURVTBF
-      USUMSSUFT $.
-
-    $d x A $.  $d y B $.
-    $( Double restricted existential uniqueness in terms of restricted
-       existential quantification and restricted universal quantification,
-       analogous to ~ 2eu5 and ~ reu3 .  (Contributed by Alexander van der
-       Vekens, 17-Jun-2017.) $)
-    2reu5 $p |- ( ( E! x e. A E! y e. B ph /\ A. x e. A E* y e. B ph )
-                  <-> ( E. x e. A E. y e. B ph
-                        /\ E. z e. A E. w e. B A. x e. A A. y e. B
-                           ( ph -> ( x = z /\ y = w ) ) ) ) $=
-      ( wrex weq wa wral wex cv wcel wreu r19.29r reximi eleq1 ex df-rex pm3.35
-      wi wrmo bi2anan9 biimpac ancomd rexlimivv syl 3syl pm4.71rd anass 2exbidv
-      syl6bb pm5.32i 2reu5lem3 r19.42v bitr3i exbii bitri anbi2i 3bitr4i ) ACGH
-      ZBFHZABDIZCEIZJZUBZCGKZBFKZELDLZJVCEMZGNZDMZFNZVIJZJZELZDLZJACGOBFOACGUCB
-      FKJVCVIEGHZDFHZJVCVJVRVCVIVPDEVCVIVLVNJZVIJVPVCVIWAVCVIWAVCVIJVBVHJZBFHAV
-      GJZCGHZBFHZWAVBVHBFPWBWDBFAVGCGPQWEVFCGHZBFHWAWDWFBFWCVFCGAVFUAQQVFWABCFG
-      BMZFNZCMZGNZJZVFWAWKVFJVNVLVFWKVNVLJVDWHVNVEWJVLWGVMFRWIVKGRUDUEUFSUGUHUI
-      SUJVLVNVIUKUMULUNABCDEFGUOVTVRVCVTVNVSJZDLVRVSDFTWLVQDWLVOEGHVQVNVIEGUPVO
-      EGTUQURUSUTVA $.
   $}
 
   ${
