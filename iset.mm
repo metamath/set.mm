@@ -15350,18 +15350,18 @@ $)
     $( Introduction of a conjunct into "at most one" quantifier.  (Contributed
        by NM, 23-Mar-1995.) $)
     moanimv $p |- ( E* x ( ph /\ ps ) <-> ( ph -> E* x ps ) ) $=
-      ( ax-17 moanimh ) ABCACDE $.
+      ( nfv moanim ) ABCACDE $.
   $}
 
   $( Nested "at most one" and uniqueness quantifiers.  (Contributed by NM,
      25-Jan-2006.) $)
   moaneu $p |- E* x ( ph /\ E! x ph ) $=
-    ( weu wa wmo wi eumo hbeu1 moanimh mpbir ancom mobii ) AABCZDZBEMADZBEZPMABE
+    ( weu wa wmo wi eumo nfeu1 moanim mpbir ancom mobii ) AABCZDZBEMADZBEZPMABE
     FABGMABABHIJNOBAMKLJ $.
 
   $( Nested "at most one" quantifiers.  (Contributed by NM, 25-Jan-2006.) $)
   moanmo $p |- E* x ( ph /\ E* x ph ) $=
-    ( wmo wa wi id hbmo1 moanimh mpbir ancom mobii ) AABCZDZBCLADZBCZOLLELFLABAB
+    ( wmo wa wi id nfmo1 moanim mpbir ancom mobii ) AABCZDZBCLADZBCZOLLELFLABAB
     GHIMNBALJKI $.
 
   ${
