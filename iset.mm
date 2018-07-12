@@ -22621,6 +22621,39 @@ $)
   $)
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                    Russell's Paradox
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y $.
+    $( Russell's Paradox.  Proposition 4.14 of [TakeutiZaring] p. 14.
+
+       In the late 1800s, Frege's Axiom of (unrestricted) Comprehension,
+       expressed in our notation as ` A e. _V ` , asserted that any collection
+       of sets ` A ` is a set i.e. belongs to the universe ` _V ` of all sets.
+       In particular, by substituting ` { x | x e/ x } ` (the "Russell class")
+       for ` A ` , it asserted ` { x | x e/ x } e. _V ` , meaning that the
+       "collection of all sets which are not members of themselves" is a set.
+       However, here we prove ` { x | x e/ x } e/ _V ` .  This contradiction
+       was discovered by Russell in 1901 (published in 1903), invalidating the
+       Comprehension Axiom and leading to the collapse of Frege's system.
+
+       In 1908, Zermelo rectified this fatal flaw by replacing Comprehension
+       with a weaker Subset (or Separation) Axiom asserting that ` A ` is a set
+       only when it is smaller than some other set ` B ` .  The intuitionistic
+       set theory IZF includes such a separation axiom, Axiom 6 of [Crosilla]
+       p.  "Axioms of CZF and IZF".  (Contributed by NM, 7-Aug-1994.) $)
+    ru $p |- { x | x e/ x } e/ _V $=
+      ( vy cv wnel cab cvv wcel wn wceq wex wel wal pm5.19 eleq1 df-nel eleq12d
+      wb id notbid mtbir syl5bb bibi12d spv mto abeq2 nex isset mpbir ) ACZUIDZ
+      AEZFDUKFGZHULBCZUKIZBJUNBUNABKZUJQZALZUQBBKZURHZQZURMUPUTABUIUMIZUOURUJUS
+      UIUMUMNUJAAKZHVAUSUIUIOVAVBURVAUIUMUIUMVARZVCPSUAUBUCUDUJAUMUETUFBUKUGTUK
+      FOUH $.
+  $}
+
+$(
 ###############################################################################
                             CLASSICAL LOGIC
 ###############################################################################
