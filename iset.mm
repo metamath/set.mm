@@ -12377,8 +12377,8 @@ $)
        (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
        12-Aug-2011.) $)
     sb6x $p |- ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) $=
-      ( cv wsbc wceq wi wal sbh biidd equsal bitr4i ) ABCEZFABENGZAHBIABCDJAABC
-      DOAKLM $.
+      ( wsb weq wi wal sbh biidd equsal bitr4i ) ABCEABCFZAGBHABCDIAABCDMAJKL
+      $.
   $}
 
   ${
@@ -12604,18 +12604,15 @@ $)
     $( Version of ~ sbco where ` x ` is not free in ` ph ` .  (Contributed by
        Jim Kingdon, 28-Dec-2017.) $)
     sbcof2 $p |- ( [ y / x ] [ x / y ] ph <-> [ y / x ] ph ) $=
-      ( cv wsbc wceq wi wal sb6f bitri imim1i imim2i syl alimi wex wa
-      jca eximi sb5f hbsb3 imbi2i albii equcomi pm2.43 imim2d pm2.43b
-      ax-11 syl6 sylbi ax-i9 exim mpi ax-ial 19.9h biimpi sb2 3syl sb1
-      ax-ia1 19.8a ax11e anim1i ax-mp imdistani anbi2i exbii sylibr
-      idi impbii ) ACBEZFZBCEZFZABVMFZVNVKVMGZVPAHZBIZHZBIZVRVOVNVPVM
-      VKGZAHZCIZHZBIZVTVNVPVLHZBIWEVLBCACBDUAZJWFWDBVLWCVPACBDJUBUCKW
-      DVSBWDVPVRVPWCVRVPVPWCVPWBHZBIVRWBBCUHWHVQBWHVPVQHVQWBVQVPVPWAA
-      BCUDZLMVPAUENOUIUFUGOUJVTVRBPZVRVTVPBPWJBCUKVPVRBULUMWJVRVRBVQB
-      UNUOUPNABCUQURVOVPWAAQZCPZQZBPZVNVOVPVPAQZBPZQZBPZWNVOWPWRABCUS
-      WOWQBWOVPWPVPAUTZWOBVARSNWQWMBVPWPWLVPWPWLHZHZVPVPWKQZBPZWLHZHX
-      AWKBCVBXDWTVPWPXCWLWOXBBWOVPWKWSVPWAAWIVCRSLMVDVIVESNVNVPVLQZBP
-      WNVLBCWGTXEWMBVLWLVPACBDTVFVGKVHVJ $.
+      ( wsb weq wi wal hbsb3 sb6f imbi2i albii bitri alimi wex 3syl wa jca sb5f
+      eximi ax-11 equcomi imim1i imim2i pm2.43d syl6 a2i sylbi ax-i9 mpi ax-ial
+      exim 19.9h sylib sb2 sb1 ax-ia1 19.8a anim1i ax11e imdistani anbi2i exbii
+      syl5 sylibr impbii ) ACBEZBCEZABCEZVHBCFZVJAGZBHZGZBHZVLVIVHVJCBFZAGZCHZG
+      ZBHZVNVHVJVGGZBHVSVGBCACBDIZJVTVRBVGVQVJACBDJKLMVRVMBVJVQVLVJVQVJVPGZBHVL
+      VPBCUAWBVKBWBVJAVPVKVJVJVOABCUBZUCUDUENUFUGNUHVNVLBOZVLVNVJBOWDBCUIVJVLBU
+      LUJVLBVKBUKUMUNABCUOPVIVJVOAQZCOZQZBOZVHVIVJAQZBOZVJWJQZBOWHABCUPWIWKBWIV
+      JWJVJAUQZWIBURRTWKWGBVJWJWFWJVJWEQZBOVJWFWIWMBWIVJWEWLVJVOAWCUSRTWEBCUTVD
+      VATPVHVJVGQZBOWHVGBCWASWNWGBVGWFVJACBDSVBVCMVEVF $.
   $}
 
 $(
@@ -12979,14 +12976,13 @@ $)
      Part of Theorem 9.4 of [Megill] p. 448 (p. 16 of preprint).  (Contributed
      by NM, 27-Feb-2005.) $)
   drsb2 $p |- ( A. x x = y -> ( [ x / z ] ph <-> [ y / z ] ph ) ) $=
-    ( cv wceq wsbc wb sbequ sps ) BEZCEZFADKGADLGHBABCDIJ $.
+    ( weq wsb wb sbequ sps ) BCEADBFADCFGBABCDHI $.
 
   $( A specialization theorem, mostly the same as Theorem 19.8 of [Margaris]
      p. 89.  (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
      29-Dec-2017.) $)
   spsbe $p |- ( [ y / x ] ph -> E. x ph ) $=
-    ( cv wsbc wceq wa wex sb1 ax-ia2 eximi syl ) ABCDZEBDMFZAGZBHABHA
-    BCIOABNAJKL $.
+    ( wsb weq wa wex sb1 ax-ia2 eximi syl ) ABCDBCEZAFZBGABGABCHMABLAIJK $.
 
   $( Specialization of implication.  (Contributed by NM, 5-Aug-1993.)  (Proof
      rewritten by Jim Kingdon, 21-Jan-2018.) $)
@@ -13027,7 +13023,7 @@ $)
     sbid2.1 $e |- ( ph -> A. x ph ) $.
     $( An identity law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
     sbid2 $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
-      ( cv wsbc sbcof2 sbh bitri ) ACBEFBCEZFABJFAABCDGABCDHI $.
+      ( wsb sbcof2 sbh bitri ) ACBEBCEABCEAABCDFABCDGH $.
   $}
 
   $( An idempotent law for substitution.  (Contributed by NM, 30-Jun-1994.)
@@ -13341,16 +13337,16 @@ $)
     $( Version of ~ sbn where ` x ` and ` y ` are distinct.  (Contributed by
        Jim Kingdon, 18-Dec-2017.) $)
     sbnv $p |- ( [ y / x ] -. ph <-> -. [ y / x ] ph ) $=
-      ( wn cv wsbc wceq wa wex wal sb6 alinexa bitri sb5 notbii bitr4i
-      wi ) ADZBCEZFZBESGZAHBIZDZABSFZDTUARQBJUCRBCKUAABLMUDUBABCNOP $.
+      ( wn wsb weq wa wex wi wal sb6 alinexa bitri sb5 xchbinxr ) ADZBCEZBCFZAG
+      BHZABCEQRPIBJSDPBCKRABLMABCNO $.
 
     $( Version of ~ sban where ` x ` and ` y ` are distinct.  (Contributed by
        Jim Kingdon, 24-Dec-2017.) $)
     sbanv $p |- ( [ y / x ] ( ph /\ ps ) <->
                   ( [ y / x ] ph /\ [ y / x ] ps ) ) $=
-      ( wa cv wsbc wceq wal sb6 anbi12i 19.26 bitr4i pm4.76 albii bitri
-      wi ) ABEZCDFZGCFSHZRQZCIZACSGZBCSGZEZRCDJUETAQZTBQZEZCIZUBUEUFCIZ
-      UGCIZEUIUCUJUDUKACDJBCDJKUFUGCLMUHUACTABNOPM $.
+      ( wa wsb weq wi wal sb6 anbi12i 19.26 pm4.76 albii 3bitr2i bitr4i ) ABEZC
+      DFCDGZQHZCIZACDFZBCDFZEZQCDJUCRAHZCIZRBHZCIZEUDUFEZCITUAUEUBUGACDJBCDJKUD
+      UFCLUHSCRABMNOP $.
 
     $( Version of ~ sbor where ` x ` and ` y ` are distinct.  (Contributed by
        Jim Kingdon, 3-Feb-2018.) $)
@@ -13364,9 +13360,8 @@ $)
        25-Dec-2017.) $)
     sbi1v $p |- ( [ y / x ] ( ph -> ps )
                       -> ( [ y / x ] ph -> [ y / x ] ps ) ) $=
-      ( cv wsbc wceq wi wal sb6 ax-2 al2imi sb2 syl6 sylbi syl5bi ) A
-      CDEZFCEQGZAHZCIZABHZCQFZBCQFZACDJUBRUAHZCIZTUCHUACDJUETRBHZCIUC
-      UDSUFCRABKLBCDMNOP $.
+      ( wsb weq wi wal sb6 ax-2 al2imi sb2 syl6 sylbi syl5bi ) ACDECDFZAGZCHZAB
+      GZCDEZBCDEZACDITPSGZCHZRUAGSCDIUCRPBGZCHUAUBQUDCPABJKBCDLMNO $.
 
     $( Reverse direction of ~ sbimv .  (Contributed by Jim Kingdon,
        18-Jan-2018.) $)
@@ -13754,8 +13749,7 @@ $( The theorems in this section make use of the $d statement. $)
        distinct.  (Contributed by NM, 5-Aug-1993.)  (Proof by Jim Kingdon,
        16-Dec-2017.)  (New usage is discouraged.) $)
     hbs1 $p |- ( [ y / x ] ph -> A. x [ y / x ] ph ) $=
-      ( cv wsbc wceq wi wal sb6 ax-ial sylbi albii sylibr ) ABCDZEZBDNF
-      AGZBHZBHZOBHOQRABCIZPBJKOQBSLM $.
+      ( wsb weq wi wal sb6 ax-ial hbxfrbi ) ABCDBCEAFZBGBABCHKBIJ $.
 
     $( ` x ` is not free in ` [ y / x ] ph ` when ` x ` and ` y ` are
        distinct.  (Contributed by Mario Carneiro, 11-Aug-2016.) $)
@@ -13791,10 +13785,8 @@ $( The theorems in this section make use of the $d statement. $)
     $( This is a version of ~ hbsb with an extra distinct variable constraint,
        on ` z ` and ` x ` .  (Contributed by Jim Kingdon, 25-Dec-2017.) $)
     hbsbv $p |- ( [ y / x ] ph -> A. z [ y / x ] ph ) $=
-      ( cv wsbc wceq wi wa wex df-sb biimpi ax-17 hbim hban
-      wal eximi 19.12 syl biimpri alimi 3syl ) ABCFZGZBFUDHZAIZUFAJZBKZ
-      JZUJDQUEDQUEUJABCLZMUGUIDUFADUFDNZEOUIUHDQZBKUIDQUHUMBUFADULEPRUH
-      BDSTPUJUEDUEUJUKUAUBUC $.
+      ( wsb weq wi wa wex df-sb ax-17 hbim hban hbex hbxfrbi ) ABCFBCGZAHZQAIZB
+      JZIDABCKRTDQADQDLZEMSDBQADUAENONP $.
   $}
 
   ${
@@ -13906,9 +13898,9 @@ $( The theorems in this section make use of the $d statement. $)
        3-Feb-2018.) $)
     sbor $p |- ( [ y / x ] ( ph \/ ps ) <->
         ( [ y / x ] ph \/ [ y / x ] ps ) ) $=
-      ( vz wo cv wsbc sborv sbbii bitri ax-17 sbco2v orbi12i 3bitr3i ) AB
-      FZCEGZHZEDGZHZACQHZESHZBCQHZESHZFZPCSHACSHZBCSHZFTUAUCFZESHUERUHE
-      DABCEIJUAUCEDIKPCDEPELMUBUFUDUGACDEAELMBCDEBELMNO $.
+      ( vz wo wsb sborv sbbii bitri ax-17 sbco2v orbi12i 3bitr3i ) ABFZCEGZEDGZ
+      ACEGZEDGZBCEGZEDGZFZOCDGACDGZBCDGZFQRTFZEDGUBPUEEDABCEHIRTEDHJOCDEOEKLSUC
+      UAUDACDEAEKLBCDEBEKLMN $.
 
     $( Conjunction inside and outside of a substitution are equivalent.
        (Contributed by NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon,
@@ -14102,9 +14094,8 @@ $( The theorems in this section make use of the $d statement. $)
     $d w y z $.  $d w ph $.  $d w x $.
     $( Closed form of ~ nfsb .  (Contributed by Jim Kingdon, 9-May-2018.) $)
     nfsbt $p |- ( A. x F/ z ph -> F/ z [ y / x ] ph ) $=
-      ( vw wnf wal wsbc ax-17 nfsbxyt alimi syl nfv sbco2 nfbii sylib
-      cv ) ADFBGZREGZABCQZHZDFZREISABEQHZETHZDFZUBSUCDFZEGUERUFEABEDJKU
-      CECDJLUDUADABCEAEMNOPL $.
+      ( vw wnf wal wsb ax-17 nfsbxyt alimi syl nfv sbco2 nfbii sylib ) ADFBGZQE
+      GZABCHZDFZQEIRABEHZECHZDFZTRUADFZEGUCQUDEABEDJKUAECDJLUBSDABCEAEMNOPL $.
   $}
 
   ${
@@ -14113,8 +14104,7 @@ $( The theorems in this section make use of the $d statement. $)
     nfsbd.2 $e |- ( ph -> F/ z ps ) $.
     $( Deduction version of ~ nfsb .  (Contributed by NM, 15-Feb-2013.) $)
     nfsbd $p |- ( ph -> F/ z [ y / x ] ps ) $=
-      ( wal wnf cv wsbc nfri alimi nfsbt 3syl ) AACHBEIZCHBCDJKEIACFLAP
-      CGMBCDENO $.
+      ( wal wnf wsb nfri alimi nfsbt 3syl ) AACHBEIZCHBCDJEIACFKAOCGLBCDEMN $.
   $}
 
   ${
@@ -14300,9 +14290,8 @@ $( The theorems in this section make use of the $d statement. $)
                       <-> A. z
                              ( z = y
                              -> A. x ( x = z -> ph ) ) ) $=
-      ( cv wsbc wceq wi wal nfri sbco2v sb6 sbbii bitri bitr3i )
-      ABCFZGABDFZGZDQGZRQHBFRHAIBJZIDJZABCDADEKLTUADQGUBSUADCABDMNUADCM
-      OP $.
+      ( wsb weq wi wal sb6 sbbii sbco2 3bitr3i ) ABDFZDCFBDGAHBIZDCFABCFDCGOHDI
+      NODCABDJKABCDELODCJM $.
   $}
 
   ${
@@ -14344,8 +14333,7 @@ $( The theorems in this section make use of the $d statement. $)
     $d x y $.  $d x ph $.
     $( Elimination of substitution.  (Contributed by NM, 5-Aug-1993.) $)
     sbelx $p |- ( ph <-> E. x ( x = y /\ [ x / y ] ph ) ) $=
-      ( cv wsbc wceq wa wex ax-17 sbid2 sb5 bitr3i ) AACBDZEZBCDZEM
-      OFNGBHABCABIJNBCKL $.
+      ( ax-17 sb5rf ) ACBABDE $.
   $}
 
   ${
@@ -14367,11 +14355,10 @@ $( The theorems in this section make use of the $d statement. $)
        ~ sbal except that it has an additional distinct variable constraint on
        ` y ` and ` z ` .  (Contributed by Jim Kingdon, 29-Dec-2017.) $)
     sbalyz $p |- ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) $=
-      ( wal cv wsbc ax-ial hbsbv ax-4 sbimi alimi syl wceq wi sb6 albii
-      alcom bitri ax-17 alim syl5 sb2 sylbi impbii ) ABEZCDFZGZACUGGZBE
-      ZUHUHBEUJUFCDBABHIUHUIBUFACDABJKLMUJCFUGNZAOZBEZCEZUHUJULCEZBEUNU
-      IUOBACDPQULBCRSUNUKUFOZCEUHUMUPCUKUKBEUMUFUKBTUKABUAUBLUFCDUCMUDU
-      E $.
+      ( wal wsb ax-ial hbsbv ax-4 sbimi alrimih weq sb6 albii alcom bitri ax-17
+      wi stdpc5 alimi sb2 syl sylbi impbii ) ABEZCDFZACDFZBEZUFUGBUECDBABGHUEAC
+      DABIJKUHCDLZARZBEZCEZUFUHUJCEZBEULUGUMBACDMNUJBCOPULUIUERZCEUFUKUNCUIABUI
+      BQSTUECDUAUBUCUD $.
   $}
 
   ${
@@ -14419,9 +14406,8 @@ $( The theorems in this section make use of the $d statement. $)
        ~ sbex except that it has an additional distinct variable constraint on
        ` y ` and ` z ` .  (Contributed by Jim Kingdon, 29-Dec-2017.) $)
     sbexyz $p |- ( [ z / y ] E. x ph <-> E. x [ z / y ] ph ) $=
-      ( wex cv wsbc wceq wa sb5 ax-17 19.42h exbii excom 3bitr2i bitr4i
-      ) ABEZCDFZGZCFRHZAIZCEZBEZACRGZBESTQIZCEUABEZCEUCQCDJUFUECTABTBKL
-      MUACBNOUDUBBACDJMP $.
+      ( wex wsb weq wa sb5 exdistr excom 3bitr2i exbii bitr4i ) ABEZCDFZCDGZAHZ
+      CEZBEZACDFZBEPQOHCERBECETOCDIQACBJRCBKLUASBACDIMN $.
   $}
 
   ${
@@ -14520,9 +14506,9 @@ $( The theorems in this section make use of the $d statement. $)
      9-May-2018.) $)
   nfsb4t $p |- ( A. x F/ z ph ->
                  ( -. A. z z = y -> F/ z [ y / x ] ph ) ) $=
-    ( wnf wal cv wceq wn wsbc wa nfnf1 nfal nfnae nfan wi df-nf albii
-    hbsb4t sylbi imp nfd ex ) ADEZBFZDGCGZHDFIZABUFJZDEUEUGKUHDUEUGDU
-    DDBADLMDCDNOUEUGUHUHDFPZUEAADFPDFZBFUGUIPUDUJBADQRABCDSTUAUBUC $.
+    ( wnf wal weq wn wsb wa nfnf1 nfal nfnae nfan df-nf albii hbsb4t sylbi imp
+    wi nfd ex ) ADEZBFZDCGDFHZABCIZDEUDUEJUFDUDUEDUCDBADKLDCDMNUDUEUFUFDFTZUDAA
+    DFTDFZBFUEUGTUCUHBADOPABCDQRSUAUB $.
 
   ${
     dvelimf.1 $e |- ( ph -> A. x ph ) $.
@@ -14804,8 +14790,8 @@ $)
        (Revised by Mario Carneiro, 7-Oct-2016.)  (Proof rewritten by Jim
        Kingdon, 25-May-2018.) $)
     nfeud $p |- ( ph -> F/ x E! y ps ) $=
-      ( vz weu cv wsbc nfv sb8eu nfsbd nfeudv nfxfrd ) BDHBDGIJZGHACB
-      DGBGKLAPCGAGKABDGCEFMNO $.
+      ( vz weu wsb nfv sb8eu nfsbd nfeudv nfxfrd ) BDHBDGIZGHACBDGBGJKAOCGAGJAB
+      DGCEFLMN $.
   $}
 
   ${
@@ -14827,8 +14813,8 @@ $)
        (Revised by Mario Carneiro, 7-Oct-2016.)  (Proof rewritten by Jim
        Kingdon, 23-May-2018.) $)
     nfeu $p |- F/ x E! y ph $=
-      ( vz weu cv wsbc nfv sb8eu nfsb nfeuv nfxfr ) ACFACEGHZEFBACEAE
-      IJNBEACEBDKLM $.
+      ( vz weu wsb nfv sb8eu nfsb nfeuv nfxfr ) ACFACEGZEFBACEAEHIMBEACEBDJKL
+      $.
   $}
 
   ${
@@ -14858,11 +14844,11 @@ $)
     $( Variable substitution in uniqueness quantifier.  (Contributed by NM,
        7-Aug-1994.)  (Revised by Andrew Salmon, 9-Jul-2011.) $)
     sb8euh $p |- ( E! x ph <-> E! y [ y / x ] ph ) $=
-      ( vz vw cv wceq wal wex wsbc weu ax-17 sb8h sbbi hbsb equsb3 hbxfrbi df-eu
-      wb hbbi sbequ cbvalh sblbis albii 3bitri exbii 3bitr4i ) ABGEGZHZTZBIZEJAB
-      CGZKZUMUIHZTZCIZEJABLUNCLULUQEULUKBFGZKZFIUKBUMKZCIUQUKBFUKFMNUSUTFCUSABU
-      RKZUJBURKZTCAUJBFOVAVBCABFCDPVBURUIHZCFBEQVCCMRUARUTFMUKFCBUBUCUTUPCUJUOA
-      BCCBEQUDUEUFUGABESUNCESUH $.
+      ( vz vw weq wb wal wex wsb ax-17 sb8h sbbi hbsb equsb3 hbxfrbi hbbi df-eu
+      weu sbequ cbvalh sblbis albii 3bitri exbii 3bitr4i ) ABEGZHZBIZEJABCKZCEG
+      ZHZCIZEJABTUKCTUJUNEUJUIBFKZFIUIBCKZCIUNUIBFUIFLMUOUPFCUOABFKZUHBFKZHCAUH
+      BFNUQURCABFCDOURFEGZCFBEPUSCLQRQUPFLUIFCBUAUBUPUMCUHULABCCBEPUCUDUEUFABES
+      UKCESUG $.
   $}
 
   ${
@@ -15029,13 +15015,12 @@ $)
        (Contributed by Jim Kingdon, 25-Jun-2018.) $)
     mo23 $p |- ( E. y A. x ( ph -> x = y ) ->
                A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
-      ( vz cv wceq wi wal wex wsbc wa nfim nfal equequ2 imbi2d albidv
-      nfv cbvex nfri nfs1v sbequ2 ax-8 imim12d cbv3 ancli aaan sylibr
-      prth equtr2 syl6 2alimi syl exlimiv sylbir ) ABFZCFZGZHZBIZCJAU
-      PEFZGZHZBIZEJAABUQKZLZURHZCIBIZVDUTECVCCBAVBCDVBCRMZNUTERVAUQGZ
-      VCUSBVJVBURAECBOPQSVDVHEVDVCVEUQVAGZHZLZCIBIZVHVDVDVLCIZLVNVDVO
-      VCVLBCVIVEVKBABCUAVKBRMZURVEAVBVKABCUBBCEUCUDUEUFVCVLBCVCCVITVL
-      BVPTUGUHVMVGBCVMVFVBVKLURAVBVEVKUIBCEUJUKULUMUNUO $.
+      ( vz weq wi wal wex wsb wa nfv nfim nfal equequ2 imbi2d albidv cbvex nfri
+      nfs1v sbequ2 ax-8 imim12d cbv3 ancli aaan sylibr prth equtr2 syl6 exlimiv
+      2alimi syl sylbir ) ABCFZGZBHZCIABEFZGZBHZEIAABCJZKZUOGZCHBHZUTUQECUSCBAU
+      RCDURCLMZNUQELECFZUSUPBVFURUOAECBOPQRUTVDEUTUSVACEFZGZKZCHBHZVDUTUTVHCHZK
+      VJUTVKUSVHBCVEVAVGBABCTVGBLMZUOVAAURVGABCUABCEUBUCUDUEUSVHBCUSCVESVHBVLSU
+      FUGVIVCBCVIVBURVGKUOAURVAVGUHBCEUIUJULUMUKUN $.
   $}
 
   ${
@@ -15046,11 +15031,11 @@ $)
     mor $p |- ( E. x ph ->
         ( A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ->
           E. y A. x ( ph -> x = y ) ) ) $=
-      ( wex cv wsbc wa wceq wal sb8e impexp bi2.04 bitri 2albii nfs1v
-      wi nfri eximi alim alimi a7s exim syl syl5com syl5bi sylbi ) AB
-      EABCFZGZCEZAUIHBFUHIZQZCJBJZAUKQZBJZCEZQABCDKUMUIUNQZCJBJZUJUPU
-      LUQBCULAUIUKQQUQAUIUKLAUIUKMNOUJUIBJZCEZURUPUIUSCUIBABCPRSURUSU
-      OQZCJZUTUPQUQVBCBUQBJVACUIUNBTUAUBUSUOCUCUDUEUFUG $.
+      ( wex wsb wa weq wi sb8e impexp bi2.04 bitri 2albii nfs1v nfri eximi alim
+      wal alimi a7s exim syl syl5com syl5bi sylbi ) ABEABCFZCEZAUGGBCHZIZCSBSZA
+      UIIZBSZCEZIABCDJUKUGULIZCSBSZUHUNUJUOBCUJAUGUIIIUOAUGUIKAUGUILMNUHUGBSZCE
+      ZUPUNUGUQCUGBABCOPQUPUQUMIZCSZURUNIUOUTCBUOBSUSCUGULBRTUAUQUMCUBUCUDUEUF
+      $.
   $}
 
   ${
@@ -15073,12 +15058,11 @@ $)
        [TakeutiZaring] p. 26.  (Contributed by NM, 8-Jul-1994.) $)
     eu2 $p |- ( E! x ph <->
         ( E. x ph /\ A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) ) $=
-      ( weu wex cv wsbc wa wceq wi wal euex nfri eumo0 syl jca 19.29r
-      mo23 impexp albii 19.21 bitri anbi2i bitr4i exbii sylibr impbii
-      abai sylib eu1 ) ABEZABFZAABCGZHZIBGUNJZKZCLZBLZIZULUMUSABMULAU
-      PKBLCFUSABCACDNZOABCDSPQUTAUOUPKZCLZIZBFZULUTAURIZBFVEAURBRVFVD
-      BVFAAVCKZIVDURVGAURAVBKZCLVGUQVHCAUOUPTUAAVBCDUBUCUDAVCUIUEUFUJ
-      ABCVAUKUGUH $.
+      ( weu wex wsb wa weq wal euex nfri eumo0 mo23 syl jca 19.29r impexp albii
+      wi 19.21 bitri anbi2i abai bitr4i exbii sylib eu1 sylibr impbii ) ABEZABF
+      ZAABCGZHBCIZTZCJZBJZHZUKULUQABKUKAUNTBJCFUQABCACDLZMABCDNOPURAUMUNTZCJZHZ
+      BFZUKURAUPHZBFVCAUPBQVDVBBVDAAVATZHVBUPVEAUPAUTTZCJVEUOVFCAUMUNRSAUTCDUAU
+      BUCAVAUDUEUFUGABCUSUHUIUJ $.
   $}
 
   ${
@@ -15088,9 +15072,9 @@ $)
        8-Jul-1994.)  (New usage is discouraged.) $)
     eu3h $p |- ( E! x ph <->
                 ( E. x ph /\ E. y A. x ( ph -> x = y ) ) ) $=
-      ( weu wex cv wceq wi wal wa euex eumo0 jca wsbc nfi mo23 anim2i
-      eu2 sylibr impbii ) ABEZABFZABGCGZHZIBJCFZKZUBUCUFABLABCDMNUGUC
-      AABUDOKUEICJBJZKUBUFUHUCABCACDPZQRABCUISTUA $.
+      ( weu wex weq wi wal euex eumo0 jca wsb nfi mo23 anim2i eu2 sylibr impbii
+      wa ) ABEZABFZABCGZHBICFZTZUAUBUDABJABCDKLUEUBAABCMTUCHCIBIZTUAUDUFUBABCAC
+      DNZOPABCUGQRS $.
   $}
 
   ${
@@ -15210,9 +15194,8 @@ $)
     $( "At most one" expressed using implicit substitution.  (Contributed by
        NM, 10-Apr-2004.) $)
     mo4f $p |- ( E* x ph <-> A. x A. y ( ( ph /\ ps ) -> x = y ) ) $=
-      ( wmo cv wsbc wa wceq wi wal ax-17 mo3 sbie anbi2i imbi1i bitri
-      2albii ) ACGAACDHZIZJZCHUAKZLZDMCMABJZUDLZDMCMACDADNOUEUGCDUCUF
-      UDUBBAABCDEFPQRTS $.
+      ( wmo wsb wa weq wi wal ax-17 mo3 sbie anbi2i imbi1i 2albii bitri ) ACGAA
+      CDHZIZCDJZKZDLCLABIZUBKZDLCLACDADMNUCUECDUAUDUBTBAABCDEFOPQRS $.
   $}
 
   ${
@@ -15247,10 +15230,9 @@ $)
     $( "At most one" is preserved through implication (notice wff reversal).
        (Contributed by NM, 22-Apr-1995.) $)
     moim $p |- ( A. x ( ph -> ps ) -> ( E* x ps -> E* x ph ) ) $=
-      ( vy wi wal cv wsbc wa wceq wmo nfa1 ax-4 spsbim anim12d imim1d
-      alimdv alrimi ax-17 mo3 ax-5 syl 3imtr4g ) ABEZCFZBBCDGZHZIZCGU
-      FJZEZDFZCFZAACUFHZIZUIEZDFZCFZBCKACKUEUKUPEZCFULUQEUEURCUDCLUEU
-      JUODUEUNUHUIUEABUMUGUDCMABCDNOPQRUKUPCUAUBBCDBDSTACDADSTUC $.
+      ( vy wi wal wsb wa weq nfa1 ax-4 spsbim anim12d imim1d alimdv alimd ax-17
+      wmo mo3 3imtr4g ) ABEZCFZBBCDGZHZCDIZEZDFZCFAACDGZHZUEEZDFZCFBCRACRUBUGUK
+      CUACJUBUFUJDUBUIUDUEUBABUHUCUACKABCDLMNOPBCDBDQSACDADQST $.
   $}
 
   ${
@@ -17454,8 +17436,8 @@ $)
     $( Bound-variable hypothesis builder for a class abstraction.  (Contributed
        by Mario Carneiro, 8-Oct-2016.) $)
     nfabd $p |- ( ph -> F/_ x { y | ps } ) $=
-      ( vz cab nfv cv wcel wsbc df-clab nfsbd nfxfrd nfcd ) ACGBDHZAG
-      IGJZQKBDRLACBGDMABDGCEFNOP $.
+      ( vz cab nfv cv wcel wsb df-clab nfsbd nfxfrd nfcd ) ACGBDHZAGIGJQKBDGLAC
+      BGDMABDGCEFNOP $.
   $}
 
   ${
@@ -18625,21 +18607,19 @@ $)
        are distinct.  See ~ nfraldxy for a version with ` x ` and ` y `
        distinct instead.  (Contributed by Jim Kingdon, 30-May-2018.) $)
     nfraldya $p |- ( ph -> F/ x A. y e. A ps ) $=
-      ( vz wral cv wcel wi wal df-ral wsbc wnf nfv nfsbd bitri imbi1i
-      nfraldxy sb8 sbim clelsb3 albii bitr4i nfbii sylibr nfxfrd ) BDE
-      JDKELZBMZDNZACBDEOABDIKZPZIEJZCQUMCQAUOCIEAIRGABDICFHSUBUMUPCUM
-      ULDUNPZINZUPULDIULIRUCURUNELZUOMZINUPUQUTIUQUKDUNPZUOMUTUKBDIUD
-      VAUSUOIDEUEUATUFUOIEOUGTUHUIUJ $.
+      ( vz wral cv wcel wi wal df-ral wsb sbim clelsb3 nfv nfxfrd bitri 3bitr4i
+      imbi1i albii sb8 nfsbd nfraldxy ) BDEJDKELZBMZDNZACBDEOUJBDIPZIEJZACUIDIP
+      ZINIKELZUKMZINUJULUMUOIUMUHDIPZUKMUOUHBDIQUPUNUKIDERUCUAUDUIDIUIISUEUKIEO
+      UBAUKCIEAISGABDICFHUFUGTT $.
 
     $( Not-free for restricted existential quantification where ` y ` and ` A `
        are distinct.  See ~ nfrexdxy for a version with ` x ` and ` y `
        distinct instead.  (Contributed by Jim Kingdon, 30-May-2018.) $)
     nfrexdya $p |- ( ph -> F/ x E. y e. A ps ) $=
-      ( vz wrex cv wcel wa wex df-rex wsbc wnf nfv nfsbd bitri nfrexdxy
-      sb8e sban clelsb3 anbi1i exbii bitr4i nfbii sylibr nfxfrd ) BDEJD
-      KELZBMZDNZACBDEOABDIKZPZIEJZCQUMCQAUOCIEAIRGABDICFHSUAUMUPCUMULDU
-      NPZINZUPULDIULIRUBURUNELZUOMZINUPUQUTIUQUKDUNPZUOMUTUKBDIUCVAUSUO
-      IDEUDUETUFUOIEOUGTUHUIUJ $.
+      ( vz wrex cv wcel wa wex df-rex wsb sban clelsb3 nfv nfxfrd bitri 3bitr4i
+      anbi1i exbii sb8e nfsbd nfrexdxy ) BDEJDKELZBMZDNZACBDEOUJBDIPZIEJZACUIDI
+      PZINIKELZUKMZINUJULUMUOIUMUHDIPZUKMUOUHBDIQUPUNUKIDERUCUAUDUIDIUIISUEUKIE
+      OUBAUKCIEAISGABDICFHUFUGTT $.
   $}
 
   ${
@@ -20046,12 +20026,11 @@ $)
        (Contributed by FL, 27-Apr-2008.)  (Revised by Mario Carneiro,
        9-Oct-2016.)  (Proof rewritten by Jim Kingdon, 10-Jun-2018.) $)
     cbvrexf $p |- ( E. x e. A ph <-> E. y e. A ps ) $=
-      ( vz cv wcel wa wex wrex wsbc nfv nfcri nfan nfs1v wceq sbequ12
-      eleq1 anbi12d cbvex nfsb sbequ sbie syl6bb bitri df-rex 3bitr4i
-      ) CLZEMZANZCOZDLZEMZBNZDOZACEPBDEPUQKLZEMZACVBQZNZKOVAUPVECKUPK
-      RVCVDCCKEFSACKUATUNVBUBUOVCAVDUNVBEUDACKUCUEUFVEUTKDVCVDDDKEGSA
-      CKDHUGTUTKRVBURUBZVCUSVDBVBUREUDVFVDACURQBAKDCUHABCDIJUIUJUEUFU
-      KACEULBDEULUM $.
+      ( vz cv wcel wa wex wrex wsb nfv nfcri nfan nfs1v weq eleq1 sbequ12 cbvex
+      anbi12d nfsb sbequ sbie syl6bb bitri df-rex 3bitr4i ) CLZEMZANZCOZDLZEMZB
+      NZDOZACEPBDEPUQKLZEMZACKQZNZKOVAUPVECKUPKRVCVDCCKEFSACKUATCKUBUOVCAVDUNVB
+      EUCACKUDUFUEVEUTKDVCVDDDKEGSACKDHUGTUTKRKDUBZVCUSVDBVBUREUCVFVDACDQBAKDCU
+      HABCDIJUIUJUFUEUKACEULBDEULUM $.
   $}
 
   ${
