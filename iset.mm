@@ -12975,7 +12975,14 @@ $)
     KQUDSTSAJSALQMNOTBCRABCRP $.
 
   $( Substitution has no effect on a non-free variable.  (Contributed by NM,
-     30-May-2009.) $)
+     30-May-2009.)  (Revised by Mario Carneiro, 12-Oct-2016.)  (Proof shortened
+     by Wolf Lammen, 3-May-2018.) $)
+  sbft $p |- ( F/ x ph -> ( [ y / x ] ph <-> ph ) ) $=
+    ( wnf wsb wex spsbe 19.9t syl5ib wal nfr stdpc4 syl6 impbid ) ABDZABCEZAPAB
+    FOAABCGABHIOAABJPABKABCLMN $.
+
+  $( Substitution has no effect on a non-free variable.  (Contributed by NM,
+     30-May-2009.)  (New usage is discouraged.) $)
   sbf3t $p |- ( A. x ( ph -> A. x ph ) -> ( [ y / x ] ph <-> ph ) ) $=
     ( wal wi wsb spsbim sbf2 ax-4 sylbi syl6 stdpc4 imim2i sps impbid ) AABDZEZ
     BDZABCFZARSPBCFZAAPBCGTPAABCHABIJKQASEBPSAABCLMNO $.
