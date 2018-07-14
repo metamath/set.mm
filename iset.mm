@@ -23300,12 +23300,12 @@ $)
        by NM, 1-Mar-2008.)  (Revised by David Abernethy, 22-Feb-2010.) $)
     sbcralt $p |- ( ( A e. V /\ F/_ y A ) ->
            ( [. A / x ]. A. y e. B ph <-> A. y e. B [. A / x ]. ph ) ) $=
-      ( vz wral wsbc cv wcel wnfc wa sbcco simpl wsb wceq sbsbc nfcv wb sbequ12
-      nfs1v nfral weq ralbidv bitr3i nfnfc1 nfcvd id nfeqd nfan1 dfsbcq2 adantl
-      sbie ralbid adantll syl5bb sbcied syl5bbr ) ACEHZBDIUTBGJZIZGDIDFKZCDLZMZ
-      ABDIZCEHZUTBGDNVEVBVGGDFVCVDOVBABGPZCEHZVEVADQZMVGVBUTBGPVIUTBGRUTVIBGVHB
-      CEBESABGUBUCBGUDAVHCEABGUAUEUNUFVDVJVIVGTVCVDVJMVHVFCEVDVJCCDUGVDCVADVDCV
-      AUHVDUIUJUKVJVHVFTVDABGDULUMUOUPUQURUS $.
+      ( vz wral wsbc cv wcel wnfc wa sbcco simpl wsb wceq sbsbc nfcv wb nfralxy
+      nfs1v weq sbequ12 ralbidv sbie bitr3i nfnfc1 nfcvd id nfeqd nfan1 dfsbcq2
+      adantl ralbid adantll syl5bb sbcied syl5bbr ) ACEHZBDIUTBGJZIZGDIDFKZCDLZ
+      MZABDIZCEHZUTBGDNVEVBVGGDFVCVDOVBABGPZCEHZVEVADQZMVGVBUTBGPVIUTBGRUTVIBGV
+      HBCEBESABGUBUABGUCAVHCEABGUDUEUFUGVDVJVIVGTVCVDVJMVHVFCEVDVJCCDUHVDCVADVD
+      CVAUIVDUJUKULVJVHVFTVDABGDUMUNUOUPUQURUS $.
 
     $( Interchange class substitution and restricted existential quantifier.
        (Contributed by NM, 1-Mar-2008.)  (Proof shortened by Mario Carneiro,
