@@ -22605,13 +22605,9 @@ $)
 
      Our definition also does not produce the same results as discussed in the
      proof of Theorem 6.6 of [Quine] p. 42 (although Theorem 6.6 itself does
-     hold, as shown by ~ dfsbcq below).  For example, if ` A ` is a proper
-     class, Quine's substitution of ` A ` for ` y ` in ` 0 e. y ` evaluates to
-     ` 0 e. A ` rather than our falsehood.  (This can be seen by substituting
-     ` A ` , ` y ` , and ` 0 ` for alpha, beta, and gamma in Subcase 1 of
-     Quine's discussion on p. 42.)  Unfortunately, Quine's definition requires
-     a recursive syntactical breakdown of ` ph ` , and it does not seem
-     possible to express it with a single closed formula.
+     hold, as shown by ~ dfsbcq below).  Unfortunately, Quine's definition
+     requires a recursive syntactical breakdown of ` ph ` , and it does not
+     seem possible to express it with a single closed formula.
 
      If we did not want to commit to any specific proper class behavior, we
      could use this definition _only_ to prove theorem ~ dfsbcq , which holds
@@ -22622,7 +22618,7 @@ $)
      of this definition) we allow direct reference to ~ df-sbc and assert that
      ` [. A / x ]. ph ` is always false when ` A ` is a proper class.
 
-     The related definition ~ df-csb defines proper substitution into a class
+     The related definition df-csb defines proper substitution into a class
      variable (as opposed to a wff variable).  (Contributed by NM,
      14-Apr-1995.)  (Revised by NM, 25-Dec-2016.) $)
   df-sbc $a |- ( [. A / x ]. ph <-> A e. { x | ph } ) $.
@@ -22916,8 +22912,9 @@ $)
     sbcie2g.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
     sbcie2g.2 $e |- ( y = A -> ( ps <-> ch ) ) $.
     $( Conversion of implicit substitution to explicit class substitution.
-       This version of ~ sbcie avoids a disjointness condition on ` x , A ` by
-       substituting twice.  (Contributed by Mario Carneiro, 15-Oct-2016.) $)
+       This version of ~ sbcie avoids a disjointness condition on ` x ` and
+       ` A ` by substituting twice.  (Contributed by Mario Carneiro,
+       15-Oct-2016.) $)
     sbcie2g $p |- ( A e. V -> ( [. A / x ]. ph <-> ch ) ) $=
       ( cv wsbc dfsbcq wsb sbsbc nfv sbie bitr3i vtoclbg ) ADEJZKZBADFKCEFGADSF
       LITADEMBADENABDEBDOHPQR $.
@@ -23075,8 +23072,8 @@ $)
 
   ${
     $d x B $.  $d x A $.
-    $( Set theory version of ~ sbeqal1 .  (Contributed by Andrew Salmon,
-       28-Jun-2011.) $)
+    $( A variation of extensionality for classes.  (Contributed by Andrew
+       Salmon, 28-Jun-2011.) $)
     sbceqal $p |- ( A e. V -> ( A. x ( x = A -> x = B ) -> A = B ) ) $=
       ( wcel cv wceq wi wal wsbc spsbc sbcimg wb eqsbc3 mpbiri pm5.5 syl 3bitrd
       eqid sylibd ) BDEZAFZBGZUBCGZHZAIUEABJZBCGZUEABDKUAUFUCABJZUDABJZHZUIUGUC
@@ -23128,10 +23125,8 @@ $)
 
   ${
     $d x C $.  $d x A $.
-    $( ~ eqsbc3 with set variable on right side of equals sign.  This proof was
-       automatically generated from the virtual deduction proof ~ eqsbc3rVD
-       using a translation program.  (Contributed by Alan Sare,
-       24-Oct-2011.) $)
+    $( ~ eqsbc3 with set variable on right side of equals sign.  (Contributed
+       by Alan Sare, 24-Oct-2011.) $)
     eqsbc3r $p |- ( A e. B -> ( [. A / x ]. C = x <-> C = A ) ) $=
       ( wcel wceq wsbc eqcom sbcbii biimpi eqsbc3 syl5ib syl6ib syl6ibr sylibrd
       cv idd impbid ) BCEZDAPZFZABGZDBFZSUBBDFZUCUBTDFZABGZSUDUBUFUAUEABDTHIZJA
@@ -23368,7 +23363,7 @@ $)
     $( Restricted quantifier version of Axiom 4 of [Mendelson] p. 69.  This
        provides an axiom for a predicate calculus for a restricted domain.
        This theorem generalizes the unrestricted ~ stdpc4 and ~ spsbc .  See
-       also ~ rspsbca and ~ rspcsbela .  (Contributed by NM, 17-Nov-2006.)
+       also ~ rspsbca and rspcsbela .  (Contributed by NM, 17-Nov-2006.)
        (Proof shortened by Mario Carneiro, 13-Oct-2016.) $)
     rspsbc $p |- ( A e. B -> ( A. x e. B ph -> [. A / x ]. ph ) ) $=
       ( vy wral wsb wcel wsbc cbvralsv dfsbcq2 rspcv syl5bi ) ABDFABEGZEDFCDHAB
@@ -24681,6 +24676,18 @@ htmldef "e/" as
 htmldef "_V" as "<IMG SRC='rmcv.gif' WIDTH=10 HEIGHT=19 ALT=' _V' TITLE='_V'>";
   althtmldef "_V" as 'V';
   latexdef "_V" as "{\rm V}";
+htmldef "[." as
+    "<IMG SRC='_dlbrack.gif' WIDTH=6 HEIGHT=19 ALT=' [.' TITLE='[.'>";
+  /* althtmldef "[." as '&#x298F;'; */   /* corner tick */
+  /* U+0323 COMBINING DOT BELOW (HTML &#803;) */
+  althtmldef "[." as '[&#803;';
+  /* \underaccent is in accents package */
+  latexdef "[." as "\underaccent{\dot}{[}";
+htmldef "]." as
+    "<IMG SRC='_drbrack.gif' WIDTH=5 HEIGHT=19 ALT=' ].' TITLE='].'>";
+  /* althtmldef "]." as '&#x298E;'; */   /* corner tick */
+  althtmldef "]." as ']&#803;';
+  latexdef "]." as "\underaccent{\dot}{]}";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
