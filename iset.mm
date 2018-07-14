@@ -23345,7 +23345,7 @@ $)
        (Contributed by NM, 24-Feb-2013.) $)
     sbcreug $p |- ( A e. V ->
                  ( [. A / x ]. E! y e. B ph <-> E! y e. B [. A / x ]. ph ) ) $=
-      ( vz wreu wsb wsbc dfsbcq2 wceq reubidv nfcv nfs1v nfreu weq sbequ12 sbie
+      ( vz wreu wsb wsbc dfsbcq2 wceq reubidv nfcv nfs1v nfreuxy weq sbequ12 sbie
       cv vtoclbg ) ACEHZBGIABGIZCEHZUBBDJABDJZCEHGDFUBBGDKGTDLUCUECEABGDKMUBUDB
       GUCBCEBENABGOPBGQAUCCEABGRMSUA $.
   $}
