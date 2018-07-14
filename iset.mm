@@ -23328,7 +23328,7 @@ $)
        29-Jun-2011.) $)
     sbcralg $p |- ( A e. V ->
                  ( [. A / x ]. A. y e. B ph <-> A. y e. B [. A / x ]. ph ) ) $=
-      ( vz wral wsb wsbc dfsbcq2 wceq ralbidv nfcv nfs1v nfral weq sbequ12 sbie
+      ( vz wral wsb wsbc dfsbcq2 wceq ralbidv nfcv nfs1v nfralxy weq sbequ12 sbie
       cv vtoclbg ) ACEHZBGIABGIZCEHZUBBDJABDJZCEHGDFUBBGDKGTDLUCUECEABGDKMUBUDB
       GUCBCEBENABGOPBGQAUCCEABGRMSUA $.
 
