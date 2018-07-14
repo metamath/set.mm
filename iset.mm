@@ -22622,9 +22622,6 @@ $)
      of this definition) we allow direct reference to ~ df-sbc and assert that
      ` [. A / x ]. ph ` is always false when ` A ` is a proper class.
 
-     The theorem ~ sbc2or shows the apparently "strongest" statement we can
-     make regarding behavior at proper classes if we start from ~ dfsbcq .
-
      The related definition ~ df-csb defines proper substitution into a class
      variable (as opposed to a wff variable).  (Contributed by NM,
      14-Apr-1995.)  (Revised by NM, 25-Dec-2016.) $)
@@ -22641,10 +22638,9 @@ $)
      ~ df-sbc that leaves substitution undefined when ` A ` is a proper class.
 
      However, it is often a nuisance to have to prove the sethood hypothesis of
-     ~ sbc8g , so we will allow direct use of ~ df-sbc after theorem ~ sbc2or
-     below.  Proper substiution with a proper class is rarely needed, and when
-     it is, we can simply use the expansion of Quine's definition.
-     (Contributed by NM, 14-Apr-1995.) $)
+     ~ sbc8g , so we will allow direct use of ~ df-sbc .  Proper substiution
+     with a proper class is rarely needed, and when it is, we can simply use
+     the expansion of Quine's definition.  (Contributed by NM, 14-Apr-1995.) $)
   dfsbcq $p |- ( A = B -> ( [. A / x ]. ph <-> [. B / x ]. ph ) ) $=
     ( wceq cab wcel wsbc eleq1 df-sbc 3bitr4g ) CDECABFZGDLGABCHABDHCDLIABCJABD
     JK $.
@@ -22689,29 +22685,6 @@ $)
       ( vy cv wsbc cab wcel dfsbcq eleq1 wsb df-clab weq wb equid dfsbcq2 ax-mp
       bitr2i vtoclbg ) ABEFZGZUAABHZIZABCGCUCIECDABUACJUACUCKUDABELZUBAEBMEENUE
       UBOEPABEUAQRST $.
-  $}
-
-  ${
-    $d x y A $.  $d y ph $.
-    $( The disjunction of two equivalences for class substitution does not
-       require a class existence hypothesis.  This theorem tells us that there
-       are only 2 possibilities for ` [ A / x ] ph ` behavior at proper
-       classes, matching the ~ sbc5 (false) and ~ sbc6 (true) conclusions.
-       This is interesting since ~ dfsbcq and ~ dfsbcq2 (from which it is
-       derived) do not appear to say anything obvious about proper class
-       behavior.  Note that this theorem doesn't tell us that it is always one
-       or the other at proper classes; it could "flip" between false (the first
-       disjunct) and true (the second disjunct) as a function of some other
-       variable ` y ` that ` ph ` or ` A ` may contain.  (Contributed by NM,
-       11-Oct-2004.)  (Proof modification is discouraged.) $)
-    sbc2or $p |- ( ( [. A / x ]. ph <-> E. x ( x = A /\ ph ) ) \/
-                  ( [. A / x ]. ph <-> A. x ( x = A -> ph ) ) ) $=
-      ( vy cvv wcel wsbc cv wceq wa wex wb wi wal wo wsb weq wn mpbii con3i sb5
-      dfsbcq2 eqeq2 anbi1d exbidv vtoclbg pm5.15 vex eleq1 adantr nexdv pm2.21d
-      orcd alrimiv 2thd bibi2d orbi2d pm2.61i ) CEFZABCGZBHZCIZAJZBKZLZUTVBAMZB
-      NZLZOZUSVEVHABDPBDQZAJZBKUTVDDCEABDCUBDHZCIZVKVCBVMVJVBAVLCVAUCUDUEABDUAU
-      FUMUSRZVEUTVDRZLZOVIUTVDUGVNVPVHVEVNVOVGUTVNVOVGVNVCBVCUSVBUSAVBVAEFUSBUH
-      VACEUISZUJTUKVNVFBVNVBAVBUSVQTULUNUOUPUQSUR $.
   $}
 
   $( By our definition of proper substitution, it can only be true if the
