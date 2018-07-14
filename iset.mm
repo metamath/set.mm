@@ -23312,12 +23312,13 @@ $)
        13-Oct-2016.) $)
     sbcrext $p |- ( ( A e. V /\ F/_ y A ) ->
           ( [. A / x ]. E. y e. B ph <-> E. y e. B [. A / x ]. ph ) ) $=
-      ( wcel cvv wnfc wrex wsbc wb elex wa wn wral sbcng adantr bitrd dfrex2 id
-      sbcralt nfnfc1 nfcvd nfeld nfan1 adantl ralbid ancoms notbid sbcbii sylan
-      3bitr4g ) DFGDHGZCDIZACEJZBDKZABDKZCEJZLDFMUNUONZAOZCEPZOZBDKZUROZCEPZOZU
-      QUSUTVDVBBDKZOZVGUNVDVILUOVBBDHQRUTVHVFUTVHVABDKZCEPZVFVABCDEHUBUOUNVKVFL
-      UOUNNVJVECEUOUNCCDUCUOCDHUOUAUOCHUDUEUFUNVJVELUOABDHQUGUHUISUJSUPVCBDACET
-      UKURCETUMUL $.
+      ( vz wrex wsbc cv wcel wnfc wa sbcco simpl wsb wceq sbsbc nfcv wb
+      nfs1v nfrexxy sbequ12 rexbidv sbie bitr3i nfnfc1 nfcvd id dfsbcq2
+      nfeqd nfan1 adantl rexbid adantll syl5bb sbcied syl5bbr ) ACEHZBD
+      IUSBGJZIZGDIDFKZCDLZMZABDIZCEHZUSBGDNVDVAVFGDFVBVCOVAABGPZCEHZVDU
+      TDQZMVFVAUSBGPVHUSBGRUSVHBGVGBCEBESABGUAUBBJUTQAVGCEABGUCUDUEUFVC
+      VIVHVFTVBVCVIMVGVECEVCVICCDUGVCCUTDVCCUTUHVCUIUKULVIVGVETVCABGDUJ
+      UMUNUOUPUQUR $.
   $}
 
   ${
