@@ -12187,49 +12187,10 @@ $)
   $c / $. $( Division. $)
   $c ] $.  $( Right bracket $)
 
-  $( --- Start of patch to prevent connective overloading $)
-  ${
-    $v A $.
-    wsbc.cA $f class A $.
-    $( Extend wff notation to include the proper substitution of a class for a
-       set.  Read this notation as "the proper substitution of class ` A ` for
-       set variable ` x ` in wff ` ph ` ."
-
-       (The purpose of introducing ` wff [ A / x ] ph ` here is to allow us to
-       express i.e.  "prove" the ~ wsb of predicate calculus in terms of the
-       ~ wsbc of set theory, so that we don't "overload" its connectives with
-       two syntax definitions.  This is done to prevent ambiguity that would
-       complicate some Metamath parsers.  The class variable ` A ` is
-       introduced temporarily for the purpose of this definition but otherwise
-       not used in predicate calculus.) $)
-    wsbc $a wff [ A / x ] ph $.
-  $}
-
   $( Extend wff definition to include proper substitution (read "the wff that
      results when ` y ` is properly substituted for ` x ` in wff ` ph ` ").
-
-     (Instead of introducing ~ wsb as an axiomatic statement, as was done in an
-     older version of this database, we introduce it by "proving" a special
-     case of set theory's more general ~ wsbc .  This lets us avoid overloading
-     its connectives, thus preventing ambiguity that would complicate some
-     Metamath parsers.  Note:  To see the proof steps of this syntax proof,
-     type "show proof wsb /all" in the Metamath program.)  (Contributed by NM,
-     24-Jan-2006.) $)
-  wsb $p wff [ y / x ] ph $=
-    ( cv wsbc ) ABCDE $.
-  $( --- End of patch to prevent connective overloading $)
-
-  $( --- Start of old code before overloading prevention patch. $)
-  $(
-  @( Extend wff definition to include proper substitution (read "the wff that
-     results when ` y ` is properly substituted for ` x ` in wff ` ph ` ").
-
-     After we introduce ~ cv and ~ wsbc in set theory, this syntax construction
-     becomes redundant, since it can be derived with the proof
-     "wph vx vy cv wsbc". @)
-  wsb @a wff [ y / x ] ph @.
-  $)
-  $( --- End of old code before overloading prevention patch. $)
+     (Contributed by NM, 24-Jan-2006.) $)
+  wsb $a wff [ y / x ] ph $.
 
   $( Define proper substitution.  Remark 9.1 in [Megill] p. 447 (p. 15 of the
      preprint).  For our notation, we use ` [ y / x ] ph ` to mean "the wff
