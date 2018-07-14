@@ -14229,17 +14229,6 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d ph x y z $.  $d w x z $.
-    $( Theorem *11.07 in [WhiteheadRussell] p. 159.  (Contributed by Andrew
-       Salmon, 17-Jun-2011.) $)
-    pm11.07 $p |- ( [ w / x ] [ y / z ] ph <-> [ y / x ] [ w / z ] ph ) $=
-      ( cv wceq wa wex wsbc a9e pm3.2i 2th eeanv 3bitr4i anbi1i 19.41vv 2sb5 )
-      BFZEFZGZDFZCFZGZHZAHDIBIZSUCGZUBTGZHZAHDIBIZADUCJBTJADTJBUCJUEDIBIZAHUIDI
-      BIZAHUFUJUKULAUABIZUDDIZHZUGBIZUHDIZHZUKULUOURUMUNBEKDCKLUPUQBCKDEKLMUAUD
-      BDNUGUHBDNOPUEABDQUIABDQOABDECRABDCERO $.
-  $}
-
-  ${
     $d x y $.
     $( Equivalence for substitution.  (Contributed by NM, 5-Aug-1993.) $)
     sb6a $p |- ( [ y / x ] ph <-> A. x ( x = y -> [ x / y ] ph ) ) $=
