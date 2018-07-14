@@ -22630,18 +22630,6 @@ $)
      14-Apr-1995.)  (Revised by NM, 25-Dec-2016.) $)
   df-sbc $a |- ( [. A / x ]. ph <-> A e. { x | ph } ) $.
 
-  $( --- Start of old code before overloading prevention patch. $)
-  $(
-  @( Extend wff notation to include the proper substitution of a class for a
-     set.  This definition "overloads" the previously defined variable
-     substitution ~ wsb (where the first argument is a set variable rather
-     than a class variable).  We take care to ensure that this new definition
-     is a conservative extension.  Read this notation as "the proper
-     substitution of class ` A ` for set variable ` x ` in wff ` ph ` ." @)
-  wsbcSBC @a wff [ A / x ] ph @.
-  $)
-  $( --- End of old code before overloading prevention patch. $)
-
   $( This theorem, which is similar to Theorem 6.7 of [Quine] p. 42 and holds
      under both our definition and Quine's, provides us with a weak definition
      of the proper substitution of a class for a set.  Since our ~ df-sbc does
