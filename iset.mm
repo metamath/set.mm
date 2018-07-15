@@ -15102,12 +15102,12 @@ $)
 
   ${
     $d x y $.
-    mo3.1 $e |- ( ph -> A. y ph ) $.
+    mo3h.1 $e |- ( ph -> A. y ph ) $.
     $( Alternate definition of "at most one."  Definition of [BellMachover]
        p. 460, except that definition has the side condition that ` y ` not
        occur in ` ph ` in place of our hypothesis.  (Contributed by NM,
-       8-Mar-1995.) $)
-    mo3 $p |- ( E* x ph <->
+       8-Mar-1995.) (New usage is discouraged.) $)
+    mo3h $p |- ( E* x ph <->
                A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
       ( wmo wsb wa weq wi wal wex weu nfi eu2 imbi2i df-mo anclb 3bitr4i sylibr
       19.38 19.21 albii anabs5 pm3.31 syl5bir 2alimi sylbi simplbi2com impbii
@@ -15118,12 +15118,24 @@ $)
 
   ${
     $d x y $.
+    mo3.1 $e |- F/ y ph $.
+    $( Alternate definition of "at most one."  Definition of [BellMachover]
+       p. 460, except that definition has the side condition that ` y ` not
+       occur in ` ph ` in place of our hypothesis.  (Contributed by NM,
+       8-Mar-1995.) $)
+    mo3 $p |- ( E* x ph <->
+               A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
+      ( nfri mo3h ) ABCACDEF $.
+  $}
+
+  ${
+    $d x y $.
     mo2dc.1 $e |- F/ y ph $.
     $( Alternate definition of "at most one" where existence is decidable.
        (Contributed by Jim Kingdon, 2-Jul-2018.) $)
     mo2dc $p |- ( DECID E. x ph ->
         ( E* x ph <-> E. y A. x ( ph -> x = y ) ) ) $=
-      ( wex wdc weq wi wal wsb wa wmo modc nfri mo3 syl6rbbr ) ABEFABCGZHBICEAA
+      ( wex wdc weq wi wal wsb wa wmo modc nfri mo3h syl6rbbr ) ABEFABCGZHBICEAA
       BCJKQHCIBIABLABCDMABCACDNOP $.
   $}
 
@@ -15159,7 +15171,7 @@ $)
        2-Sep-2009.) $)
     sbmo $p |- ( [ y / x ] E* z ph <-> E* z [ y / x ] ph ) $=
       ( vw wsb wa weq wi wal ax-17 sblim sban imbi1i sbcom2 anbi2i 3bitri sbalv
-      wmo mo3 sbbii 3bitr4i ) AADEFZGZDEHZIZEJZDJZBCFABCFZUIDEFZGZUEIZEJZDJADSZ
+      wmo mo3h sbbii 3bitr4i ) AADEFZGZDEHZIZEJZDJZBCFABCFZUIDEFZGZUEIZEJZDJADSZ
       BCFUIDSUGUMBCDUFULBCEUFBCFUDBCFZUEIUIUCBCFZGZUEIULUDUEBCUEBKLUOUQUEAUCBCM
       NUQUKUEUPUJUIADEBCOPNQRRUNUHBCADEAEKTUAUIDEUIEKTUB $.
   $}
@@ -15171,7 +15183,7 @@ $)
     $( "At most one" expressed using implicit substitution.  (Contributed by
        NM, 10-Apr-2004.) $)
     mo4f $p |- ( E* x ph <-> A. x A. y ( ( ph /\ ps ) -> x = y ) ) $=
-      ( wmo wsb wa weq wi wal ax-17 mo3 sbie anbi2i imbi1i 2albii bitri ) ACGAA
+      ( wmo wsb wa weq wi wal ax-17 mo3h sbie anbi2i imbi1i 2albii bitri ) ACGAA
       CDHZIZCDJZKZDLCLABIZUBKZDLCLACDADMNUCUECDUAUDUBTBAABCDEFOPQRS $.
   $}
 
@@ -15208,7 +15220,7 @@ $)
        (Contributed by NM, 22-Apr-1995.) $)
     moim $p |- ( A. x ( ph -> ps ) -> ( E* x ps -> E* x ph ) ) $=
       ( vy wi wal wsb wa weq nfa1 ax-4 spsbim anim12d imim1d alimdv alimd ax-17
-      wmo mo3 3imtr4g ) ABEZCFZBBCDGZHZCDIZEZDFZCFAACDGZHZUEEZDFZCFBCRACRUBUGUK
+      wmo mo3h 3imtr4g ) ABEZCFZBBCDGZHZCDIZEZDFZCFAACDGZHZUEEZDFZCFBCRACRUBUGUK
       CUACJUBUFUJDUBUIUDUEUBABUHUCUACKABCDLMNOPBCDBDQSACDADQST $.
   $}
 
@@ -15226,7 +15238,7 @@ $)
        28-Jul-1995.) $)
     moimv $p |- ( E* x ( ph -> ps ) -> ( ph -> E* x ps ) ) $=
       ( vy wi wmo wsb weq wal ax-1 a1i sbimi nfv sbf sbim 3imtr3i anim12d ax-17
-      wa mo3 imim1d 2alimdv 3imtr4g com12 ) AABEZCFZBCFZAUEUECDGZSZCDHZEZDICIBB
+      wa mo3h imim1d 2alimdv 3imtr4g com12 ) AABEZCFZBCFZAUEUECDGZSZCDHZEZDICIBB
       CDGZSZUJEZDICIUFUGAUKUNCDAUMUIUJABUEULUHBUEEZABAJKZACDGUOCDGAULUHEAUOCDUP
       LACDACMNBUECDOPQUAUBUECDUEDRTBCDBDRTUCUD $.
   $}
@@ -15277,7 +15289,7 @@ $)
     $( Introduction of a conjunct into "at most one" quantifier.  (Contributed
        by NM, 3-Dec-2001.) $)
     moanim $p |- ( E* x ( ph /\ ps ) <-> ( ph -> E* x ps ) ) $=
-      ( vy wsb wa weq wi wal wmo anandi imbi1i impexp sban sbf anbi1i ax-17 mo3
+      ( vy wsb wa weq wi wal wmo anandi imbi1i impexp sban sbf anbi1i ax-17 mo3h
       3bitr4ri bitr2i anbi2i 3bitr3i 2albii 19.21 19.21v albii imbi2i ) ABBCEFZ
       GZCEHZIZIZEJZCJZABGZUPCEFZGZUKIZEJCJABCKZIZUPCKUMUSCEAUJGZUKIUPAUIGZGZUKI
       UMUSVBVDUKABUILMAUJUKNVDURUKVCUQUPUQACEFZUIGVCABCEOVEAUIACEDPQUAUBMUCUDAU
@@ -15318,7 +15330,7 @@ $)
        quantifier.  (Contributed by NM, 27-Jan-1997.) $)
     mopick $p |- ( ( E* x ph /\ E. x ( ph /\ ps ) ) -> ( ph -> ps ) ) $=
       ( vy wa wex wmo wi wsb ax-17 hbs1 hban weq sbequ12 anbi12d cbvexh wal ax-4
-      mo3 sylbi sps sbequ2 imim2i exp3a com4t imp syl5 exlimiv impcom ) ABEZCFZ
+      mo3h sylbi sps sbequ2 imim2i exp3a com4t imp syl5 exlimiv impcom ) ABEZCFZ
       ACGZABHZUKACDIZBCDIZEZDFULUMHZUJUPCDUJDJUNUOCACDKBCDKLCDMZAUNBUOACDNBCDNO
       PUPUQDULAUNEZURHZUPUMULUTDQZCQUTACDADJSVAUTCUTDRUATUNUOUTUMHUTAUNUOBUTAUN
       UOBHZURVBUSBCDUBUCUDUEUFUGUHTUI $.
