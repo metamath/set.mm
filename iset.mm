@@ -1,4 +1,4 @@
-$( iset.mm - Version of 8-Jul-2018
+$( iset.mm - Version of 14-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -23444,21 +23444,19 @@ $)
   ${
     $d x y A $.
     rmo2.1 $e |- F/ y ph $.
-    $( Alternate definition of restricted "at most one."  Note that
-       ` E* x e. A ph ` is not equivalent to
-       ` E. y e. A A. x e. A ( ph -> x = y ) ` (in analogy to ~ reu6 ); to see
-       this, let ` A ` be the empty set.  However, one direction of this
-       pattern holds; see ~ rmo2i .  (Contributed by NM, 17-Jun-2017.) $)
-    rmo2 $p |- ( E* x e. A ph <-> E. y A. x e. A ( ph -> x = y ) ) $=
-      ( wrmo cv wcel wa wmo weq wi wal wex wral df-rmo nfv nfan mo2 impexp
-      albii df-ral bitr4i exbii 3bitri ) ABDFBGDHZAIZBJUGBCKZLZBMZCNAUHLZBDOZCN
-      ABDPUGBCUFACUFCQERSUJULCUJUFUKLZBMULUIUMBUFAUHTUAUKBDUBUCUDUE $.
+    $( Condition implying restricted "at most one."  (Contributed by Jim
+       Kingdon, 14-Jul-2018.) $)
+    rmo2ilem $p |- ( E. y A. x e. A ( ph -> x = y ) -> E* x e. A ph ) $=
+      ( cv wceq wi wral wex wcel wa wal wrmo impexp albii df-ral bitr4i
+      exbii wmo nfv nfan mo2r df-rmo sylibr sylbir ) ABFZCFGZHZBDIZCJUG
+      DKZALZUHHZBMZCJZABDNZUNUJCUNUKUIHZBMUJUMUQBUKAUHOPUIBDQRSUOULBTUP
+      ULBCUKACUKCUAEUBUCABDUDUEUF $.
 
     $( Condition implying restricted "at most one."  (Contributed by NM,
        17-Jun-2017.) $)
     rmo2i $p |- ( E. y e. A A. x e. A ( ph -> x = y ) -> E* x e. A ph ) $=
-      ( weq wi wral wrex wex wrmo rexex rmo2 sylibr ) ABCFGBDHZCDIOCJABDKOCDLAB
-      CDEMN $.
+      ( cv wceq wi wral wrex wex wrmo rexex rmo2ilem syl ) ABFCFGHBDI
+      ZCDJPCKABDLPCDMABCDENO $.
 
     $( Restricted "at most one" using explicit substitution.  (Contributed by
        NM, 4-Nov-2012.)  (Revised by NM, 16-Jun-2017.) $)
