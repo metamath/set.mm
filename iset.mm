@@ -10712,20 +10712,6 @@ $)
   $}
 
   ${
-    stdpc5.1 $e |- ( ph -> A. x ph ) $.
-    $( An axiom scheme of standard predicate calculus that emulates Axiom 5 of
-       [Mendelson] p. 69.  The hypothesis ` ( ph -> A. x ph ) ` can be thought
-       of as emulating " ` x ` is not free in ` ph ` ."  With this convention,
-       the meaning of "not free" is less restrictive than the usual textbook
-       definition; for example ` x ` would not (for us) be free in ` x = x ` by
-       ~ hbequid .  This theorem scheme can be proved as a metatheorem of
-       Mendelson's axiom system, even though it is slightly stronger than his
-       Axiom 5.  (Contributed by NM, 22-Sep-1993.) $)
-    stdpc5 $p |- ( A. x ( ph -> ps ) -> ( ph -> A. x ps ) ) $=
-      ( wi wal 19.21h biimpi ) ABECFABCFEABCDGH $.
-  $}
-
-  ${
     19.21bi.1 $e |- ( ph -> A. x ps ) $.
     $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.) $)
@@ -10910,6 +10896,21 @@ $)
        (Revised by Mario Carneiro, 24-Sep-2016.) $)
     19.21 $p |- ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) $=
       ( wnf wi wal wb 19.21t ax-mp ) ACEABFCGABCGFHDABCIJ $.
+  $}
+
+  ${
+    stdpc5.1 $e |- F/ x ph $.
+    $( An axiom scheme of standard predicate calculus that emulates Axiom 5 of
+       [Mendelson] p. 69.  The hypothesis ` F/ x ph ` can be thought of as
+       emulating " ` x ` is not free in ` ph ` ."  With this definition, the
+       meaning of "not free" is less restrictive than the usual textbook
+       definition; for example ` x ` would not (for us) be free in ` x = x ` by
+       ~ nfequid .  This theorem scheme can be proved as a metatheorem of
+       Mendelson's axiom system, even though it is slightly stronger than his
+       Axiom 5.  (Contributed by NM, 22-Sep-1993.)  (Revised by Mario Carneiro,
+       12-Oct-2016.)  (Proof shortened by Wolf Lammen, 1-Jan-2018.) $)
+    stdpc5 $p |- ( A. x ( ph -> ps ) -> ( ph -> A. x ps ) ) $=
+      ( wi wal 19.21 biimpi ) ABECFABCFEABCDGH $.
   $}
 
   ${
@@ -11677,6 +11678,14 @@ $)
       ( vy weq wex a9e ax-17 ax-8 pm2.43i exlimih ax-mp ) BACZBDAACZBAEKLBLBFKLB
       AAGHIJ $.
   $}
+
+  $( Bound-variable hypothesis builder for ` x = x ` .  This theorem tells us
+     that any variable, including ` x ` , is effectively not free in
+     ` x = x ` , even though ` x ` is technically free according to the
+     traditional definition of free variable.  (Contributed by NM,
+     13-Jan-2011.)  (Revised by NM, 21-Aug-2017.) $)
+  nfequid $p |- F/ y x = x $=
+    ( weq equid nfth ) AACBADE $.
 
   $( One of the two equality axioms of standard predicate calculus, called
      reflexivity of equality.  (The other one is ~ stdpc7 .)  Axiom 6 of
@@ -14323,10 +14332,10 @@ $( The theorems in this section make use of the $d statement. $)
        ~ sbal except that it has an additional distinct variable constraint on
        ` y ` and ` z ` .  (Contributed by Jim Kingdon, 29-Dec-2017.) $)
     sbalyz $p |- ( [ z / y ] A. x ph <-> A. x [ z / y ] ph ) $=
-      ( wal wsb ax-ial hbsbv ax-4 sbimi alrimih weq sb6 albii alcom bitri ax-17
-      wi stdpc5 alimi sb2 syl sylbi impbii ) ABEZCDFZACDFZBEZUFUGBUECDBABGHUEAC
-      DABIJKUHCDLZARZBEZCEZUFUHUJCEZBEULUGUMBACDMNUJBCOPULUIUERZCEUFUKUNCUIABUI
-      BQSTUECDUAUBUCUD $.
+      ( wal wsb nfa1 nfsbxy ax-4 sbimi alrimi weq wi sb6 albii alcom nfv stdpc5
+      bitri alimi sb2 syl sylbi impbii ) ABEZCDFZACDFZBEZUFUGBUECDBABGHUEACDABI
+      JKUHCDLZAMZBEZCEZUFUHUJCEZBEULUGUMBACDNOUJBCPSULUIUEMZCEUFUKUNCUIABUIBQRT
+      UECDUAUBUCUD $.
   $}
 
   ${
