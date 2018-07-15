@@ -23694,9 +23694,10 @@ $)
      Andrew Salmon, 18-Jun-2011.) $)
   sbcne12g $p |- ( A e. V -> ( [. A / x ]. B =/= C <-> [_ A / x ]_ B =/=
                    [_ A / x ]_ C ) ) $=
-    ( wcel wne wsbc csb wn wceq wb nne sbcbii a1i sbcng syl6bbr 3bitr3d con4bid
-    sbceqg ) BEFZCDGZABHZABCIZABDIZGZUAUBJZABHZCDKZABHZUCJUFJZUHUJLUAUGUIABCDMN
-    OUBABEPUAUJUDUEKUKABCDETUDUEMQRS $.
+    ( wcel wne wsbc csb wb wn sbceqg notbid df-ne sbcbii sbcng syl5bb
+    wceq a1i bibi12d mpbird ) BEFZCDGZABHZABCIZABDIZGZJCDRZABHZKZUEUF
+    RZKZJUBUIUKABCDELMUBUDUJUGULUDUHKZABHUBUJUCUMABCDNOUHABEPQUGULJUB
+    UEUFNSTUA $.
 
   ${
     $d y A $.  $d x y C $.  $d y V $.
