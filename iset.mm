@@ -12249,9 +12249,9 @@ $)
      When ` x ` and ` y ` are distinct, we can express proper substitution with
      the simpler expressions of ~ sb5 and ~ sb6 .
 
-     In classical logic, we have additional equivalent definitions ~ dfsb2 and
-     ~ dfsb3 , but we do not have intuitionistic proofs that those are
-     equivalent.
+     In classical logic, another possible definition is
+     ` ( x = y /\ ph ) \/ A. x ( x = y -> ph ) ` but we do not have an
+     intuitionistic proof that this is equivalent.
 
      There are no restrictions on any of the variables, including what
      variables may occur in wff ` ph ` .  (Contributed by NM, 5-Aug-1993.) $)
@@ -24155,38 +24155,6 @@ $)
   nf4 $p |- ( F/ x ph <-> ( A. x ph \/ A. x -. ph ) ) $=
     ( wnf wex wal wi wn wo nf2 imor orcom alnex orbi2i bitr4i 3bitri ) ABCABDZA
     BEZFPGZQHZQAGBEZHZABIPQJSQRHUARQKTRQABLMNO $.
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-             Additional substitution theorems (classical)
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-We define substitution via ~ df-sb (and also have theorems such
-as ~ dfsb7 or ~ dfsb7a ), and most of the substitution theorems such as
-~ sbim , ~ sbequ12 , or ~ sbidm have been proven intuitionistically.
-
-Here we collect substitution theorems which have not been proven
-intuitionistically, most of which probably do not have intuitionistic
-proofs.
-$)
-
-  $( A classical (not intuitionistic) alternate definition of proper
-     substitution that, like ~ df-sb , mixes free and bound variables to avoid
-     distinct variable requirements.  (Contributed by NM, 17-Feb-2005.) $)
-  dfsb2 $p |- ( [ y / x ] ph <->
-              ( ( x = y /\ ph ) \/ A. x ( x = y -> ph ) ) ) $=
-    ( wsb weq wa wi wal wo sbequ2 sps ax-4 jctild orc wn sb4 olc pm2.61i sbequ1
-    syl6 imp sb2 jaoi impbii ) ABCDZBCEZAFZUFAGBHZIZUFBHZUEUIGUJUEUGUIUJUEAUFUF
-    UEAGBABCJKUFBLMUGUHNTUJOUEUHUIABCPUHUGQTRUGUEUHUFAUEABCSUAABCUBUCUD $.
-
-  $( A classical (not intuitionistic) alternate definition of proper
-     substitution ~ df-sb that uses only connectives on the right-hand side
-     which are, in classical logic, primitive rather than defined.
-     (Contributed by NM, 6-Mar-2007.) $)
-  dfsb3 $p |- ( [ y / x ] ph <->
-              ( ( x = y -> -. ph ) -> A. x ( x = y -> ph ) ) ) $=
-    ( weq wa wi wal wo wn wsb df-or dfsb2 imnan imbi1i 3bitr4i ) BCDZAEZPAFBGZH
-    QIZRFABCJPAIFZRFQRKABCLTSRPAMNO $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
