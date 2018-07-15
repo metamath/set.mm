@@ -9099,8 +9099,9 @@ $)
   pm5.18im $p |- ( ( ph <-> ps ) -> -. ( ph <-> -. ps ) ) $=
     ( wb wn pm5.19 bibi1 notbid mpbiri ) ABCZABDZCZDBJCZDBEIKLABJFGH $.
 
-  $( A consequence of exclusive or.  In classical logic this would be an
-     equivalence.  (Contributed by Jim Kingdon, 10-Mar-2018.) $)
+  $( A consequence of exclusive or.  For decidable propositions this is an
+     equivalence, as seen at ~ xornbidc .  (Contributed by Jim Kingdon,
+     10-Mar-2018.) $)
   xornbi $p  |- ( ( ph \/_ ps ) -> -. ( ph <-> ps ) ) $=
     ( wxo wn wb xorbin pm5.18im con2i syl ) ABCABDEZABEZDABFKJABGHI $.
 
