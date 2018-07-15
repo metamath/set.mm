@@ -15124,7 +15124,7 @@ $)
     $( Alternate definition of "at most one."  Definition of [BellMachover]
        p. 460, except that definition has the side condition that ` y ` not
        occur in ` ph ` in place of our hypothesis.  (Contributed by NM,
-       8-Mar-1995.) (New usage is discouraged.) $)
+       8-Mar-1995.)  (New usage is discouraged.) $)
     mo3h $p |- ( E* x ph <->
                A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
       ( wmo wsb wa weq wi wal wex weu nfi eu2 imbi2i df-mo anclb 3bitr4i sylibr
@@ -23996,8 +23996,9 @@ $)
     csbie2g.1 $e |- ( x = y -> B = C ) $.
     csbie2g.2 $e |- ( y = A -> C = D ) $.
     $( Conversion of implicit substitution to explicit class substitution.
-       This version of ~ sbcie avoids a disjointness condition on ` x , A ` by
-       substituting twice.  (Contributed by Mario Carneiro, 11-Nov-2016.) $)
+       This version of ~ sbcie avoids a disjointness condition on ` x ` and
+       ` A ` by substituting twice.  (Contributed by Mario Carneiro,
+       11-Nov-2016.) $)
     csbie2g $p |- ( A e. V -> [_ A / x ]_ B = D ) $=
       ( vz wcel csb cv wsbc cab df-csb wceq eleq2d sbcie2g abbi1dv syl5eq ) CGK
       ZACDLJMZDKZACNZJOFAJCDPUBUEJFUDUCEKUCFKABCGAMBMZQDEUCHRUFCQEFUCIRSTUA $.
