@@ -12145,13 +12145,14 @@ $)
   $}
 
   ${
-    chv2.1 $e |- ( ps -> A. x ps ) $.
-    chv2.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    chv2.3 $e |- ph $.
+    chvar.1 $e |- F/ x ps $.
+    chvar.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    chvar.3 $e |- ph $.
     $( Implicit substitution of ` y ` for ` x ` into a theorem.  (Contributed
-       by Raph Levien, 9-Jul-2003.) $)
+       by Raph Levien, 9-Jul-2003.)  (Revised by Mario Carneiro,
+       3-Oct-2016.) $)
     chvar $p |- ps $=
-      ( weq biimpd spimh mpg ) ABCABCDECDHABFIJGK $.
+      ( weq biimpd spim mpg ) ABCABCDECDHABFIJGK $.
   $}
 
   $( A variable introduction law for equality.  Lemma 15 of [Monk2] p. 109,
