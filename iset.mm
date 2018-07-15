@@ -23507,6 +23507,701 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Proper substitution of classes for sets into classes
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c [_ $.  $( Underlined left bracket $)
+  $c ]_ $.  $( Underlined right bracket $)
+
+  $( Extend class notation to include the proper substitution of a class for a
+     set into another class. $)
+  csb $a class [_ A / x ]_ B $.
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    $( Define the proper substitution of a class for a set into another class.
+       The underlined brackets distinguish it from the substitution into a wff,
+       ~ wsbc , to prevent ambiguity.  Theorem ~ sbcel1g shows an example of
+       how ambiguity could arise if we didn't use distinguished brackets.
+       Theorem ~ sbccsbg recreates substitution into a wff from this
+       definition.  (Contributed by NM, 10-Nov-2005.) $)
+    df-csb $a |- [_ A / x ]_ B = { y | [. A / x ]. y e. B } $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y $.
+    $( Alternate expression for the proper substitution into a class, without
+       referencing substitution into a wff.  Note that ` x ` can be free in
+       ` B ` but cannot occur in ` A ` .  (Contributed by NM, 2-Dec-2013.) $)
+    csb2 $p |- [_ A / x ]_ B = { y | E. x ( x = A /\ y e. B ) } $=
+      ( csb cv wcel wsbc cab wceq wa wex df-csb sbc5 abbii eqtri ) ACDEBFDGZACH
+      ZBIAFCJQKALZBIABCDMRSBQACNOP $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y C $.
+    $( Analog of ~ dfsbcq for proper substitution into a class.  (Contributed
+       by NM, 10-Nov-2005.) $)
+    csbeq1 $p |- ( A = B -> [_ A / x ]_ C = [_ B / x ]_ C ) $=
+      ( vy wceq cv wcel wsbc cab csb dfsbcq abbidv df-csb 3eqtr4g ) BCFZEGDHZAB
+      IZEJQACIZEJABDKACDKPRSEQABCLMAEBDNAECDNO $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z A $.  $d z C $.  $d z D $.
+    cbvcsb.1 $e |- F/_ y C $.
+    cbvcsb.2 $e |- F/_ x D $.
+    cbvcsb.3 $e |- ( x = y -> C = D ) $.
+    $( Change bound variables in a class substitution.  Interestingly, this
+       does not require any bound variable conditions on ` A ` .  (Contributed
+       by Jeff Hankins, 13-Sep-2009.)  (Revised by Mario Carneiro,
+       11-Dec-2016.) $)
+    cbvcsb $p |- [_ A / x ]_ C = [_ A / y ]_ D $=
+      ( vz cv wcel wsbc cab csb nfcri weq eleq2d cbvsbc abbii df-csb 3eqtr4i )
+      IJZDKZACLZIMUBEKZBCLZIMACDNBCENUDUFIUCUEABCBIDFOAIEGOABPDEUBHQRSAICDTBICE
+      TUA $.
+  $}
+
+  ${
+    $d x y $.  $d z A $.  $d y z B $.  $d x z C $.
+    cbvcsbv.1 $e |- ( x = y -> B = C ) $.
+    $( Change the bound variable of a proper substitution into a class using
+       implicit substitution.  (Contributed by NM, 30-Sep-2008.)  (Revised by
+       Mario Carneiro, 13-Oct-2016.) $)
+    cbvcsbv $p |- [_ A / x ]_ B = [_ A / y ]_ C $=
+      ( nfcv cbvcsb ) ABCDEBDGAEGFH $.
+  $}
+
+  ${
+    csbeq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for proper substitution into a class.  (Contributed
+       by NM, 3-Dec-2005.) $)
+    csbeq1d $p |- ( ph -> [_ A / x ]_ C = [_ B / x ]_ C ) $=
+      ( wceq csb csbeq1 syl ) ACDGBCEHBDEHGFBCDEIJ $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    $( Analog of ~ sbid for proper substitution into a class.  (Contributed by
+       NM, 10-Nov-2005.) $)
+    csbid $p |- [_ x / x ]_ A = A $=
+      ( vy cv csb wcel wsbc cab df-csb sbcid abbii abid2 3eqtri ) AADZBECDBFZAN
+      GZCHOCHBACNBIPOCOAJKCBLM $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( Equality theorem for proper substitution into a class.  (Contributed by
+       NM, 10-Nov-2005.) $)
+    csbeq1a $p |- ( x = A -> B = [_ A / x ]_ B ) $=
+      ( cv wceq csb csbid csbeq1 syl5eqr ) ADZBECAJCFABCFACGAJBCHI $.
+  $}
+
+  ${
+    $d z A $.  $d y z B $.  $d z V $.  $d x z $.
+    $( Composition law for chained substitutions into a class.  (Contributed by
+       NM, 10-Nov-2005.) $)
+    csbco $p |- [_ A / y ]_ [_ y / x ]_ B = [_ A / x ]_ B $=
+      ( vz cv csb wcel wsbc cab df-csb abeq2i sbcbii sbcco bitri abbii 3eqtr4i
+      ) EFZABFZDGZHZBCIZEJRDHZACIZEJBCTGACDGUBUDEUBUCASIZBCIUDUAUEBCUEETAESDKLM
+      UCABCNOPBECTKAECDKQ $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    $( The existence of proper substitution into a class.  (Contributed by NM,
+       10-Nov-2005.) $)
+    csbexg $p |- ( ( A e. V /\ A. x B e. W ) -> [_ A / x ]_ B e. _V ) $=
+      ( vy wcel wal wa csb wsbc cab cvv df-csb abid2 elex syl5eqel alimi spsbc
+      cv syl5 imp wb nfcv sbcabel adantr mpbid ) BDGZCEGZAHZIZABCJFTCGZABKFLZMA
+      FBCNUKULFLZMGZABKZUMMGZUHUJUPUJUOAHUHUPUIUOAUIUNCMFCOCEPQRUOABDSUAUBUHUPU
+      QUCUJULAFBMDAMUDUEUFUGQ $.
+  $}
+
+  ${
+    csbex.1 $e |- A e. _V $.
+    csbex.2 $e |- B e. _V $.
+    $( The existence of proper substitution into a class.  (Contributed by NM,
+       7-Aug-2007.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+    csbex $p |- [_ A / x ]_ B e. _V $=
+      ( cvv wcel csb wal csbexg mpan mpg ) CFGZABCHFGZABFGMAINDABCFFJKEL $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d y V $.  $d x y $.
+    $( Substitution doesn't affect a constant ` B ` (in which ` x ` is not
+       free).  (Contributed by Mario Carneiro, 14-Oct-2016.) $)
+    csbtt $p |- ( ( A e. V /\ F/_ x B ) -> [_ A / x ]_ B = B ) $=
+      ( vy wcel wnfc wa csb cv wsbc cab df-csb wnf wb nfcr sbctt sylan2 abbi1dv
+      syl5eq ) BDFZACGZHZABCIEJCFZABKZELCAEBCMUCUEECUBUAUDANUEUDOAECPUDABDQRST
+      $.
+  $}
+
+  ${
+    csbconstgf.1 $e |- F/_ x B $.
+    $( Substitution doesn't affect a constant ` B ` (in which ` x ` is not
+       free).  (Contributed by NM, 10-Nov-2005.) $)
+    csbconstgf $p |- ( A e. V -> [_ A / x ]_ B = B ) $=
+      ( wcel wnfc csb wceq csbtt mpan2 ) BDFACGABCHCIEABCDJK $.
+  $}
+
+  ${
+    $d A y $.  $d B x y $.  $d V y $.
+    $( Substitution doesn't affect a constant ` B ` (in which ` x ` is not
+       free). ~ csbconstgf with distinct variable requirement.  (Contributed by
+       Alan Sare, 22-Jul-2012.) $)
+    csbconstg $p |- ( A e. V -> [_ A / x ]_ B = B ) $=
+      ( nfcv csbconstgf ) ABCDACEF $.
+  $}
+
+  ${
+    $d w x y z $.  $d w y z A $.  $d w y z B $.  $d w y z C $.
+    $( Distribute proper substitution through a membership relation.
+       (Contributed by NM, 10-Nov-2005.)  (Proof shortened by Andrew Salmon,
+       29-Jun-2011.) $)
+    sbcel12g $p |- ( A e. V -> ( [. A / x ]. B e. C <->
+                   [_ A / x ]_ B e. [_ A / x ]_ C ) ) $=
+      ( vy vz wcel wsbc cv cab csb wsb dfsbcq2 abbidv eleq12d nfs1v nfab df-csb
+      sbab wceq nfel weq sbie vtoclbg eleq12i syl6bbr ) BEHCDHZABIZFJZCHZABIZFK
+      ZUJDHZABIZFKZHZABCLZABDLZHUHAGMUKAGMZFKZUNAGMZFKZHZUIUQGBEUHAGBNGJBUAZVAU
+      MVCUPVEUTULFUKAGBNOVEVBUOFUNAGBNOPUHVDAGAVAVCUTAFUKAGQRVBAFUNAGQRUBAGUCCV
+      ADVCAGFCTAGFDTPUDUEURUMUSUPAFBCSAFBDSUFUG $.
+
+    $( Distribute proper substitution through an equality relation.
+       (Contributed by NM, 10-Nov-2005.)  (Proof shortened by Andrew Salmon,
+       29-Jun-2011.) $)
+    sbceqg $p |- ( A e. V -> ( [. A / x ]. B = C <->
+                   [_ A / x ]_ B = [_ A / x ]_ C ) ) $=
+      ( vy vz wcel wceq wsbc cab csb wsb dfsbcq2 abbidv eqeq12d nfs1v nfab sbab
+      cv nfeq weq sbie vtoclbg df-csb eqeq12i syl6bbr ) BEHCDIZABJZFTZCHZABJZFK
+      ZUJDHZABJZFKZIZABCLZABDLZIUHAGMUKAGMZFKZUNAGMZFKZIZUIUQGBEUHAGBNGTBIZVAUM
+      VCUPVEUTULFUKAGBNOVEVBUOFUNAGBNOPUHVDAGAVAVCUTAFUKAGQRVBAFUNAGQRUAAGUBCVA
+      DVCAGFCSAGFDSPUCUDURUMUSUPAFBCUEAFBDUEUFUG $.
+  $}
+
+  $( Distribute proper substitution through negated membership.  (Contributed
+     by Andrew Salmon, 18-Jun-2011.) $)
+  sbcnel12g $p |- ( A e. V -> ( [. A / x ]. B e/ C <-> [_ A / x ]_ B e/
+                    [_ A / x ]_ C ) ) $=
+    ( wcel wnel wsbc wn csb wb df-nel sbcbii a1i sbcel12g notbid syl6bbr 3bitrd
+    sbcng ) BEFZCDGZABHZCDFZIZABHZUCABHZIZABCJZABDJZGZUBUEKTUAUDABCDLMNUCABESTU
+    GUHUIFZIUJTUFUKABCDEOPUHUILQR $.
+
+  $( Distribute proper substitution through an inequality.  (Contributed by
+     Andrew Salmon, 18-Jun-2011.) $)
+  sbcne12g $p |- ( A e. V -> ( [. A / x ]. B =/= C <-> [_ A / x ]_ B =/=
+                   [_ A / x ]_ C ) ) $=
+    ( wcel wne wsbc csb wn wceq wb nne sbcbii a1i sbcng syl6bbr 3bitr3d con4bid
+    sbceqg ) BEFZCDGZABHZABCIZABDIZGZUAUBJZABHZCDKZABHZUCJUFJZUHUJLUAUGUIABCDMN
+    OUBABEPUAUJUDUEKUKABCDETUDUEMQRS $.
+
+  ${
+    $d y A $.  $d x y C $.  $d y V $.
+    $( Move proper substitution in and out of a membership relation.  Note that
+       the scope of ` [. A / x ]. ` is the wff ` B e. C ` , whereas the scope
+       of ` [_ A / x ]_ ` is the class ` B ` .  (Contributed by NM,
+       10-Nov-2005.) $)
+    sbcel1g $p |- ( A e. V -> ( [. A / x ]. B e. C <->
+                    [_ A / x ]_ B e. C ) ) $=
+      ( wcel wsbc csb sbcel12g csbconstg eleq2d bitrd ) BEFZCDFABGABCHZABDHZFND
+      FABCDEIMODNABDEJKL $.
+
+    $( Move proper substitution to first argument of an equality.  (Contributed
+       by NM, 30-Nov-2005.) $)
+    sbceq1g $p |- ( A e. V -> ( [. A / x ]. B = C <->
+                    [_ A / x ]_ B = C ) ) $=
+      ( wcel wceq wsbc csb sbceqg csbconstg eqeq2d bitrd ) BEFZCDGABHABCIZABDIZ
+      GODGABCDEJNPDOABDEKLM $.
+  $}
+
+  ${
+    $d y A $.  $d x y B $.  $d y V $.
+    $( Move proper substitution in and out of a membership relation.
+       (Contributed by NM, 14-Nov-2005.) $)
+    sbcel2g $p |- ( A e. V -> ( [. A / x ]. B e. C <->
+                    B e. [_ A / x ]_ C ) ) $=
+      ( wcel wsbc csb sbcel12g csbconstg eleq1d bitrd ) BEFZCDFABGABCHZABDHZFCO
+      FABCDEIMNCOABCEJKL $.
+
+    $( Move proper substitution to second argument of an equality.
+       (Contributed by NM, 30-Nov-2005.) $)
+    sbceq2g $p |- ( A e. V -> ( [. A / x ]. B = C <->
+                    B = [_ A / x ]_ C ) ) $=
+      ( wcel wceq wsbc csb sbceqg csbconstg eqeq1d bitrd ) BEFZCDGABHABCIZABDIZ
+      GCPGABCDEJNOCPABCEKLM $.
+  $}
+
+  ${
+    $d y z A $.  $d x z B $.  $d z C $.  $d x y $.
+    $( Commutative law for double substitution into a class.  (Contributed by
+       NM, 14-Nov-2005.) $)
+    csbcomg $p |- ( ( A e. V /\ B e. W ) ->
+                 [_ A / x ]_ [_ B / y ]_ C = [_ B / y ]_ [_ A / x ]_ C ) $=
+      ( vz wcel cvv csb wceq elex wsbc wb sbcel2g sbcbidv adantl adantr 3bitr3d
+      wa cv sbccom a1i eqrdv syl2an ) CFICJIZDJIZACBDEKZKZBDACEKZKZLDGICFMDGMUG
+      UHUAZHUJULUMHUBZUIIZACNZUNUKIZBDNZUNUJIZUNULIZUMUNEIZBDNZACNZVAACNZBDNZUP
+      URVCVEOUMVAABCDUCUDUHVCUPOUGUHVBUOACBDUNEJPQRUGVEUROUHUGVDUQBDACUNEJPQSTU
+      GUPUSOUHACUNUIJPSUHURUTOUGBDUNUKJPRTUEUF $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y C $.  $d y ph $.
+    csbeq2d.1 $e |- F/ x ph $.
+    csbeq2d.2 $e |- ( ph -> B = C ) $.
+    $( Formula-building deduction rule for class substitution.  (Contributed by
+       NM, 22-Nov-2005.)  (Revised by Mario Carneiro, 1-Sep-2015.) $)
+    csbeq2d $p |- ( ph -> [_ A / x ]_ B = [_ A / x ]_ C ) $=
+      ( vy cv wcel wsbc cab csb eleq2d sbcbid abbidv df-csb 3eqtr4g ) AHIZDJZBC
+      KZHLSEJZBCKZHLBCDMBCEMAUAUCHATUBBCFADESGNOPBHCDQBHCEQR $.
+  $}
+
+  ${
+    $d x ph $.
+    csbeq2dv.1 $e |- ( ph -> B = C ) $.
+    $( Formula-building deduction rule for class substitution.  (Contributed by
+       NM, 10-Nov-2005.)  (Revised by Mario Carneiro, 1-Sep-2015.) $)
+    csbeq2dv $p |- ( ph -> [_ A / x ]_ B = [_ A / x ]_ C ) $=
+      ( nfv csbeq2d ) ABCDEABGFH $.
+  $}
+
+  ${
+    csbeq2i.1 $e |- B = C $.
+    $( Formula-building inference rule for class substitution.  (Contributed by
+       NM, 10-Nov-2005.)  (Revised by Mario Carneiro, 1-Sep-2015.) $)
+    csbeq2i $p |- [_ A / x ]_ B = [_ A / x ]_ C $=
+      ( csb wceq wtru a1i csbeq2dv trud ) ABCFABDFGHABCDCDGHEIJK $.
+  $}
+
+  ${
+    $d y z A $.  $d x y z $.
+    $( The proper substitution of a class for set variable results in the class
+       (if the class exists).  (Contributed by NM, 10-Nov-2005.) $)
+    csbvarg $p |- ( A e. V -> [_ A / x ]_ x = A ) $=
+      ( vz vy wcel cvv cv csb wceq elex wsbc cab df-csb sbcel2gv abbi1dv syl5eq
+      vex ax-mp csbeq2i csbco 3eqtr3i syl ) BCFBGFZABAHZIZBJBCKUDUFDHZEHZFEBLZD
+      MZBEBAUHUEIZIEBUHIUFUJEBUKUHUHGFZUKUHJERULUKUGUEFAUHLZDMUHADUHUENULUMDUHA
+      UGUHGOPQSTAEBUEUAEDBUHNUBUDUIDBEUGBGOPQUC $.
+  $}
+
+  ${
+    $d x y $.
+    $( Substitution into a wff expressed in terms of substitution into a
+       class.  (Contributed by NM, 15-Aug-2007.) $)
+    sbccsbg $p |- ( A e. V ->
+                 ( [. A / x ]. ph <-> y e. [_ A / x ]_ { y | ph } ) ) $=
+      ( wsbc cv cab wcel csb abid sbcbii sbcel2g syl5bbr ) ABDFCGZACHZIZBDFDEIO
+      BDPJIQABDACKLBDOPEMN $.
+  $}
+
+  $( Substitution into a wff expressed in using substitution into a class.
+     (Contributed by NM, 27-Nov-2005.) $)
+  sbccsb2g $p |- ( A e. V ->
+               ( [. A / x ]. ph <-> A e. [_ A / x ]_ { x | ph } ) ) $=
+    ( wsbc cv cab wcel csb abid sbcbii sbcel12g csbvarg eleq1d bitrd syl5bbr )
+    ABCEBFZABGZHZBCEZCDHZCBCRIZHZSABCABJKUATBCQIZUBHUCBCQRDLUAUDCUBBCDMNOP $.
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y ph $.
+    nfcsb1d.1 $e |- ( ph -> F/_ x A ) $.
+    $( Bound-variable hypothesis builder for substitution into a class.
+       (Contributed by Mario Carneiro, 12-Oct-2016.) $)
+    nfcsb1d $p |- ( ph -> F/_ x [_ A / x ]_ B ) $=
+      ( vy csb cv wcel wsbc cab df-csb nfv nfsbc1d nfabd nfcxfrd ) ABBCDGFHDIZB
+      CJZFKBFCDLARBFAFMAQBCENOP $.
+  $}
+
+  ${
+    $d y z A $.  $d z B $.  $d x y z $.
+    nfcsb1.1 $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for substitution into a class.
+       (Contributed by Mario Carneiro, 12-Oct-2016.) $)
+    nfcsb1 $p |- F/_ x [_ A / x ]_ B $=
+      ( csb wnfc wtru a1i nfcsb1d trud ) AABCEFGABCABFGDHIJ $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Bound-variable hypothesis builder for substitution into a class.
+       (Contributed by NM, 17-Aug-2006.)  (Revised by Mario Carneiro,
+       12-Oct-2016.) $)
+    nfcsb1v $p |- F/_ x [_ A / x ]_ B $=
+      ( nfcv nfcsb1 ) ABCABDE $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z A $.  $d z B $.  $d z ph $.
+    nfcsbd.1 $e |- F/ y ph $.
+    nfcsbd.2 $e |- ( ph -> F/_ x A ) $.
+    nfcsbd.3 $e |- ( ph -> F/_ x B ) $.
+    $( Deduction version of ~ nfcsb .  (Contributed by NM, 21-Nov-2005.)
+       (Revised by Mario Carneiro, 12-Oct-2016.) $)
+    nfcsbd $p |- ( ph -> F/_ x [_ A / y ]_ B ) $=
+      ( vz csb cv wcel wsbc cab df-csb nfv nfcrd nfsbcd nfabd nfcxfrd ) ABCDEJI
+      KELZCDMZINCIDEOAUBBIAIPAUABCDFGABIEHQRST $.
+  $}
+
+  ${
+    nfcsb.1 $e |- F/_ x A $.
+    nfcsb.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for substitution into a class.
+       (Contributed by Mario Carneiro, 12-Oct-2016.) $)
+    nfcsb $p |- F/_ x [_ A / y ]_ B $=
+      ( csb wnfc wtru nftru a1i nfcsbd trud ) ABCDGHIABCDBJACHIEKADHIFKLM $.
+  $}
+
+  ${
+    $d x y $.
+    csbhypf.1 $e |- F/_ x A $.
+    csbhypf.2 $e |- F/_ x C $.
+    csbhypf.3 $e |- ( x = A -> B = C ) $.
+    $( Introduce an explicit substitution into an implicit substitution
+       hypothesis.  See ~ sbhypf for class substitution version.  (Contributed
+       by NM, 19-Dec-2008.) $)
+    csbhypf $p |- ( y = A -> [_ y / x ]_ B = C ) $=
+      ( cv wceq wi csb nfeq2 nfcsb1v nfeq nfim eqeq1 csbeq1a eqeq1d imbi12d
+      chvar ) AIZCJZDEJZKBIZCJZAUEDLZEJZKABUFUHAAUECFMAUGEAUEDNGOPUBUEJZUCUFUDU
+      HUBUECQUIDUGEAUEDRSTHUA $.
+  $}
+
+  ${
+    $d x A $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class.  (Closed theorem version of ~ csbiegf .)  (Contributed by NM,
+       11-Nov-2005.) $)
+    csbiebt $p |- ( ( A e. V /\ F/_ x C ) ->
+                 ( A. x ( x = A -> B = C ) <-> [_ A / x ]_ B = C ) ) $=
+      ( wcel cvv wnfc cv wceq wi wal csb wb elex wa wsbc adantl a1i nfeqd spsbc
+      adantr simpl biimt csbeq1a eqeq1d bitr3d nfv nfnfc1 nfcsb1v simpr sbciedf
+      nfan sylibd id nfan1 biimprcd alrimi ex impbid sylan ) BEFBGFZADHZAIBJZCD
+      JZKZALZABCMZDJZNBEOVBVCPZVGVIVJVGVFABQZVIVBVGVKKVCVFABGUAUBVJVFVIABGVBVCU
+      CVDVFVINVJVDVEVFVIVDVEUDVDCVHDABCUEUFZUGRVBVCAVBAUHADUIZUMVJAVHDAVHHZVJAB
+      CUJZSVBVCUKTULUNVCVIVGKVBVCVIVGVCVIPVFAVCVIAVMVCAVHDVNVCVOSVCUOTUPVIVFVCV
+      DVEVIVLUQRURUSRUTVA $.
+
+    csbiedf.1 $e |- F/ x ph $.
+    csbiedf.2 $e |- ( ph -> F/_ x C ) $.
+    csbiedf.3 $e |- ( ph -> A e. V ) $.
+    csbiedf.4 $e |- ( ( ph /\ x = A ) -> B = C ) $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class.  (Contributed by Mario Carneiro, 13-Oct-2016.) $)
+    csbiedf $p |- ( ph -> [_ A / x ]_ B = C ) $=
+      ( cv wceq wi wal csb ex alrimi wcel wnfc wb csbiebt syl2anc mpbid ) ABKCL
+      ZDELZMZBNZBCDOELZAUFBGAUDUEJPQACFRBESUGUHTIHBCDEFUAUBUC $.
+  $}
+
+  ${
+    $d x z A $.  $d z B $.  $d y C $.  $d x y $.
+    csbieb.1 $e |- A e. _V $.
+    csbieb.2 $e |- F/_ x C $.
+    $( Bidirectional conversion between an implicit class substitution
+       hypothesis ` x = A -> B = C ` and its explicit substitution equivalent.
+       (Contributed by NM, 2-Mar-2008.) $)
+    csbieb $p |- ( A. x ( x = A -> B = C ) <-> [_ A / x ]_ B = C ) $=
+      ( cvv wcel wnfc cv wceq wi wal csb wb csbiebt mp2an ) BGHADIAJBKCDKLAMABC
+      NDKOEFABCDGPQ $.
+  $}
+
+  ${
+    $d a x A $.  $d a B $.  $d a y C $.  $d x y $.
+    csbiebg.2 $e |- F/_ x C $.
+    $( Bidirectional conversion between an implicit class substitution
+       hypothesis ` x = A -> B = C ` and its explicit substitution equivalent.
+       (Contributed by NM, 24-Mar-2013.)  (Revised by Mario Carneiro,
+       11-Dec-2016.) $)
+    csbiebg $p |- ( A e. V ->
+          ( A. x ( x = A -> B = C ) <-> [_ A / x ]_ B = C ) ) $=
+      ( va cv wceq wal csb eqeq2 imbi1d albidv csbeq1 eqeq1d vex csbieb vtoclbg
+      wi ) AHZGHZIZCDIZTZAJAUBCKZDIUABIZUDTZAJABCKZDIGBEUBBIZUEUHAUJUCUGUDUBBUA
+      LMNUJUFUIDAUBBCOPAUBCDGQFRS $.
+  $}
+
+  ${
+    $d x y A $.  $d y C $.  $d x y V $.
+    csbiegf.1 $e |- ( A e. V -> F/_ x C ) $.
+    csbiegf.2 $e |- ( x = A -> B = C ) $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class.  (Contributed by NM, 11-Nov-2005.)  (Revised by Mario Carneiro,
+       13-Oct-2016.) $)
+    csbiegf $p |- ( A e. V -> [_ A / x ]_ B = C ) $=
+      ( wcel cv wceq wi wal csb ax-gen wnfc wb csbiebt mpdan mpbii ) BEHZAIBJCD
+      JKZALZABCMDJZUAAGNTADOUBUCPFABCDEQRS $.
+  $}
+
+  ${
+    $d x A $.  $d y C $.  $d x y $.
+    csbief.1 $e |- A e. _V $.
+    csbief.2 $e |- F/_ x C $.
+    csbief.3 $e |- ( x = A -> B = C ) $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class.  (Contributed by NM, 26-Nov-2005.)  (Revised by Mario Carneiro,
+       13-Oct-2016.) $)
+    csbief $p |- [_ A / x ]_ B = C $=
+      ( cvv wcel csb wceq wnfc a1i csbiegf ax-mp ) BHIZABCJDKEABCDHADLPFMGNO $.
+  $}
+
+  ${
+    $d x A $.  $d x y C $.  $d x y ph $.
+    csbied.1 $e |- ( ph -> A e. V ) $.
+    csbied.2 $e |- ( ( ph /\ x = A ) -> B = C ) $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class.  (Contributed by Mario Carneiro, 2-Dec-2014.)  (Revised by Mario
+       Carneiro, 13-Oct-2016.) $)
+    csbied $p |- ( ph -> [_ A / x ]_ B = C ) $=
+      ( nfv nfcvd csbiedf ) ABCDEFABIABEJGHK $.
+  $}
+
+  ${
+    $d x A $.  $d x ph $.  $d x D $.
+    csbied2.1 $e |- ( ph -> A e. V ) $.
+    csbied2.2 $e |- ( ph -> A = B ) $.
+    csbied2.3 $e |- ( ( ph /\ x = B ) -> C = D ) $.
+    $( Conversion of implicit substitution to explicit class substitution,
+       deduction form.  (Contributed by Mario Carneiro, 2-Jan-2017.) $)
+    csbied2 $p |- ( ph -> [_ A / x ]_ C = D ) $=
+      ( cv wceq id sylan9eqr syldan csbied ) ABCEFGHABKZCLZQDLEFLRAQCDRMINJOP
+      $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d z C $.  $d x y z D $.
+    csbie2t.1 $e |- A e. _V $.
+    csbie2t.2 $e |- B e. _V $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class (closed form of ~ csbie2 ).  (Contributed by NM, 3-Sep-2007.)
+       (Revised by Mario Carneiro, 13-Oct-2016.) $)
+    csbie2t $p |- ( A. x A. y ( ( x = A /\ y = B ) -> C = D ) ->
+                  [_ A / x ]_ [_ B / y ]_ C = D ) $=
+      ( cv wceq wa wi wal csb cvv nfa1 nfcvd wcel a1i csbiedf nfa2 nfv nfan sps
+      sp impl ) AICJZBIDJZKEFJZLZBMZAMZACBDENFOUKAPULAFQCORULGSULUGKZBDEFOULUGB
+      UJBAUAUGBUBUCUMBFQDORUMHSULUGUHUIUKUJAUJBUEUDUFTT $.
+
+    csbie2.3 $e |- ( ( x = A /\ y = B ) -> C = D ) $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class.  (Contributed by NM, 27-Aug-2007.) $)
+    csbie2 $p |- [_ A / x ]_ [_ B / y ]_ C = D $=
+      ( cv wceq wa wi wal csb gen2 csbie2t ax-mp ) AJCKBJDKLEFKMZBNANACBDEOOFKS
+      ABIPABCDEFGHQR $.
+  $}
+
+  ${
+    $d x y z $.  $d A y z $.  $d B y z $.  $d C x $.  $d D y z $.  $d V z $.
+    csbie2g.1 $e |- ( x = y -> B = C ) $.
+    csbie2g.2 $e |- ( y = A -> C = D ) $.
+    $( Conversion of implicit substitution to explicit class substitution.
+       This version of ~ sbcie avoids a disjointness condition on ` x , A ` by
+       substituting twice.  (Contributed by Mario Carneiro, 11-Nov-2016.) $)
+    csbie2g $p |- ( A e. V -> [_ A / x ]_ B = D ) $=
+      ( vz wcel csb cv wsbc cab df-csb wceq eleq2d sbcie2g abbi1dv syl5eq ) CGK
+      ZACDLJMZDKZACNZJOFAJCDPUBUEJFUDUCEKUCFKABCGAMBMZQDEUCHRUFCQEFUCIRSTUA $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z A $.  $d z B $.  $d z C $.  $d z ph $.
+    $( Nest the composition of two substitutions.  (Contributed by Mario
+       Carneiro, 11-Nov-2016.) $)
+    sbcnestgf $p |- ( ( A e. V /\ A. y F/ x ph ) ->
+         ( [. A / x ]. [. B / y ]. ph <-> [. [_ A / x ]_ B / y ]. ph ) ) $=
+      ( vz wcel wnf wal wsbc csb wb cv wi wceq dfsbcq syl cvv a1i csbeq1 imbi2d
+      bibi12d vex csbeq1a adantl nfnf1 nfal nfa1 wnfc nfcsb1v sp nfsbcd sbciedf
+      vtoclg imp ) DFHABIZCJZACEKZBDKZACBDELZKZMZURUSBGNZKZACBVDELZKZMZOURVCOGD
+      FVDDPZVHVCURVIVEUTVGVBUSBVDDQVIVFVAPVGVBMBVDDEUAACVFVAQRUCUBURUSVGBVDSVDS
+      HURGUDTBNVDPZUSVGMZURVJEVFPVKBVDEUEACEVFQRUFUQBCABUGUHURABCVFUQCUIBVFUJUR
+      BVDEUKTUQCULUMUNUOUP $.
+
+    $( Nest the composition of two substitutions.  (Contributed by NM,
+       23-Nov-2005.)  (Proof shortened by Mario Carneiro, 10-Nov-2016.) $)
+    csbnestgf $p |- ( ( A e. V /\ A. y F/_ x C ) ->
+         [_ A / x ]_ [_ B / y ]_ C = [_ [_ A / x ]_ B / y ]_ C ) $=
+      ( vz wcel wnfc wal wa cv csb wsbc cab cvv wceq elex df-csb abeq2i wb nfcr
+      sbcbii wnf alimi sbcnestgf sylan2 syl5bb abbidv sylan 3eqtr4g ) CFHZAEIZB
+      JZKGLZBDEMZHZACNZGOZUOEHZBACDMZNZGOZACUPMBVAEMULCPHZUNUSVCQCFRVDUNKZURVBG
+      URUTBDNZACNZVEVBUQVFACVFGUPBGDESTUCUNVDUTAUDZBJVGVBUAUMVHBAGEUBUEUTABCDPU
+      FUGUHUIUJAGCUPSBGVAESUK $.
+
+    $d x ph $.
+    $( Nest the composition of two substitutions.  (Contributed by NM,
+       27-Nov-2005.)  (Proof shortened by Mario Carneiro, 11-Nov-2016.) $)
+    sbcnestg $p |- ( A e. V ->
+          ( [. A / x ]. [. B / y ]. ph <-> [. [_ A / x ]_ B / y ]. ph ) ) $=
+      ( wcel wnf wal wsbc csb wb nfv ax-gen sbcnestgf mpan2 ) DFGABHZCIACEJBDJA
+      CBDEKJLQCABMNABCDEFOP $.
+
+    $d x C $.
+    $( Nest the composition of two substitutions.  (Contributed by NM,
+       23-Nov-2005.)  (Proof shortened by Mario Carneiro, 10-Nov-2016.) $)
+    csbnestg $p |- ( A e. V ->
+          [_ A / x ]_ [_ B / y ]_ C = [_ [_ A / x ]_ B / y ]_ C ) $=
+      ( wcel wnfc wal csb wceq nfcv ax-gen csbnestgf mpan2 ) CFGAEHZBIACBDEJJBA
+      CDJEJKPBAELMABCDEFNO $.
+  $}
+
+  ${
+    $d x C $.
+    $( Nest the composition of two substitutions.  (New usage is discouraged.)
+       (Proof modification is discouraged.)  (Contributed by NM,
+       23-Nov-2005.) $)
+    csbnestgOLD $p |- ( ( A e. V /\ A. x B e. W ) ->
+                  [_ A / x ]_ [_ B / y ]_ C = [_ [_ A / x ]_ B / y ]_ C ) $=
+      ( wcel csb wceq wal csbnestg adantr ) CFHACBDEIIBACDIEIJDGHAKABCDEFLM $.
+  $}
+
+  ${
+    $d x y $.  $d y C $.
+    $( Nest the composition of two substitutions.  (Contributed by NM,
+       23-May-2006.)  (Proof shortened by Mario Carneiro, 11-Nov-2016.) $)
+    csbnest1g $p |- ( A e. V ->
+         [_ A / x ]_ [_ B / x ]_ C = [_ [_ A / x ]_ B / x ]_ C ) $=
+      ( vy wcel cv csb wnfc wceq nfcsb1v ax-gen csbnestgf mpan2 csbeq2i 3eqtr3g
+      wal csbco ) BEGZABFCAFHZDIZIZIZFABCIZUBIZABACDIZIAUEDITAUBJZFRUDUFKUHFAUA
+      DLMAFBCUBENOABUCUGAFCDSPAFUEDSQ $.
+  $}
+
+  ${
+    $d x A $.
+    $( Idempotent law for class substitutions.  (Contributed by NM,
+       1-Mar-2008.) $)
+    csbidmg $p |- ( A e. V -> [_ A / x ]_ [_ A / x ]_ B = [_ A / x ]_ B ) $=
+      ( wcel cvv csb wceq elex csbnest1g csbconstg csbeq1d eqtrd syl ) BDEBFEZA
+      BABCGZGZPHBDIOQAABBGZCGPABBCFJOARBCABBFKLMN $.
+  $}
+
+  ${
+    $d x A $.  $d x ph $.  $d x C $.  $d x D $.
+    sbcco3g.1 $e |- ( x = A -> B = C ) $.
+    $( Composition of two substitutions.  (Contributed by NM, 27-Nov-2005.)
+       (Revised by Mario Carneiro, 11-Nov-2016.) $)
+    sbcco3g $p |- ( A e. V ->
+         ( [. A / x ]. [. B / y ]. ph <-> [. C / y ]. ph ) ) $=
+      ( wcel wsbc csb sbcnestg cvv wceq wb elex nfcvd csbiegf dfsbcq 3syl bitrd
+      ) DGIZACEJBDJACBDEKZJZACFJZABCDEGLUBDMIZUCFNUDUEODGPBDEFMUFBFQHRACUCFSTUA
+      $.
+
+    $( Composition of two substitutions.  (Contributed by NM, 27-Nov-2005.)
+       (New usage is discouraged.)  (Proof modification is discouraged.) $)
+    sbcco3gOLD $p |- ( ( A e. V /\ A. x B e. W ) ->
+                ( [. A / x ]. [. B / y ]. ph <-> [. C / y ]. ph ) ) $=
+      ( wcel wsbc wb wal sbcco3g adantr ) DGJACEKBDKACFKLEHJBMABCDEFGINO $.
+
+    $( Composition of two class substitutions.  (Contributed by NM,
+       27-Nov-2005.)  (Revised by Mario Carneiro, 11-Nov-2016.) $)
+    csbco3g $p |- ( A e. V ->
+                 [_ A / x ]_ [_ B / y ]_ D = [_ C / y ]_ D ) $=
+      ( wcel csb csbnestg cvv wceq elex nfcvd csbiegf syl csbeq1d eqtrd ) CGIZA
+      CBDFJJBACDJZFJBEFJABCDFGKTBUAEFTCLIZUAEMCGNACDELUBAEOHPQRS $.
+  $}
+
+  ${
+    $d x B $.  $d x D $.
+    $( Special case related to ~ rspsbc .  (Contributed by NM, 10-Dec-2005.)
+       (Proof shortened by Eric Schmidt, 17-Jan-2007.) $)
+    rspcsbela $p |- ( ( A e. B /\ A. x e. B C e. D ) -> [_ A / x ]_ C e. D ) $=
+      ( wcel wral csb wsbc rspsbc sbcel1g sylibd imp ) BCFZDEFZACGZABDHEFZNPOAB
+      IQOABCJABDECKLM $.
+  $}
+
+  ${
+    $d w x y z $.  $d w y z A $.
+    $( Two ways of expressing " ` x ` is (effectively) not free in ` A ` ."
+       (Contributed by Mario Carneiro, 14-Oct-2016.) $)
+    sbnfc2 $p |- ( F/_ x A <-> A. y A. z [_ y / x ]_ A = [_ z / x ]_ A ) $=
+      ( vw cv csb wceq wal cvv wcel vex csbtt mpan wsb wsbc sbsbc sbcel2g ax-mp
+      wb eqtr4d alrimivv nfv wnf eleq2 bitri 3bitr4g 2alimi sbnf2 sylibr impbii
+      wnfc nfcd ) ADULZABFZDGZACFZDGZHZCIBIZUNUSBCUNUPDURUOJKZUNUPDHBLZAUODJMNU
+      QJKZUNURDHCLZAUQDJMNUAUBUTAEDUTEUCUTEFZDKZABOZVFACOZTZCIBIVFAUDUSVIBCUSVE
+      UPKZVEURKZVGVHUPURVEUEVGVFAUOPZVJVFABQVAVLVJTVBAUOVEDJRSUFVHVFAUQPZVKVFAC
+      QVCVMVKTVDAUQVEDJRSUFUGUHVFABCUIUJUMUK $.
+  $}
+
+  ${
+    $d y z A $.  $d z ph $.  $d x y z $.  $d V z $.
+    $( Move substitution into a class abstraction.  (Contributed by NM,
+       13-Dec-2005.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
+    csbabg $p |- ( A e. V ->
+                 [_ A / x ]_ { y | ph } = { y | [. A / x ]. ph } ) $=
+      ( vz wcel cab csb wsbc cv sbccom wsb df-clab sbsbc sbcbii 3bitr4i sbcel2g
+      bitri syl5rbb eqrdv ) DEGZFBDACHZIZABDJZCHZFKZUFGZUGUCGZBDJZUBUGUDGUECUGJ
+      ZACUGJZBDJUHUJACBUGDLUHUECFMUKUEFCNUECFOSUIULBDUIACFMULAFCNACFOSPQBDUGUCE
+      RTUA $.
+  $}
+
+  ${
+    $d x v z $.  $d y v z $.  $d A w v z $.  $d B w v z $.  $d ph v z $.
+    $d ps v z $.
+    cbvralcsf.1 $e |- F/_ y A $.
+    cbvralcsf.2 $e |- F/_ x B $.
+    cbvralcsf.3 $e |- F/ y ph $.
+    cbvralcsf.4 $e |- F/ x ps $.
+    cbvralcsf.5 $e |- ( x = y -> A = B ) $.
+    cbvralcsf.6 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( A more general version of ~ cbvralf that doesn't require ` A ` and ` B `
+       to be distinct from ` x ` or ` y ` .  Changes bound variables using
+       implicit substitution.  (Contributed by Andrew Salmon, 13-Jul-2011.) $)
+    cbvralcsf $p |- ( A. x e. A ph <-> A. y e. B ps ) $=
+      ( vz vv cv wcel wi wal wsbc nfcri wral csb nfv nfcsb1v nfsbc1v id csbeq1a
+      nfim weq eleq12d sbceq1a imbi12d cbval nfcv nfcsb nfsbc csbeq1 cab df-csb
+      eleq2d sbie sbsbc bitr3i abbi2i eqtr4i syl6eq dfsbcq syl6bb bitri 3bitr4i
+      wsb df-ral ) COZEPZAQZCRZDOZFPZBQZDRZACEUABDFUAVPMOZCWAEUBZPZACWASZQZMRVT
+      VOWECMVOMUCWCWDCCMWBCWAEUDTACWAUEUHCMUIZVNWCAWDWFVMWAEWBWFUFCWAEUGUJACWAU
+      KULUMWEVSMDWCWDDDMWBDCWAEDWAUNZGUOTADCWAWGIUPUHVSMUCMDUIZWCVRWDBWHWAVQWBF
+      WHUFWHWBCVQEUBZFCWAVQEUQWINOZEPZCVQSZNURFCNVQEUSWLNFWJFPZWKCDVKWLWKWMCDCN
+      FHTCDUIEFWJKUTVAWKCDVBVCVDVEVFUJWHWDACVQSZBACWAVQVGWNACDVKBACDVBABCDJLVAV
+      CVHULUMVIACEVLBDFVLVJ $.
+
+    $( A more general version of ~ cbvrexf that has no distinct variable
+       restrictions.  Changes bound variables using implicit substitution.
+       (Contributed by Andrew Salmon, 13-Jul-2011.)  (Proof shortened by Mario
+       Carneiro, 7-Dec-2014.) $)
+    cbvrexcsf $p |- ( E. x e. A ph <-> E. y e. B ps ) $=
+      ( wn wral wrex nfn weq notbid cbvralcsf dfrex2 notbii 3bitr4i ) AMZCENZMB
+      MZDFNZMACEOBDFOUDUFUCUECDEFGHADIPBCJPKCDQABLRSUAACETBDFTUB $.
+
+    $( A more general version of ~ cbvreuv that has no distinct variable
+       rextrictions.  Changes bound variables using implicit substitution.
+       (Contributed by Andrew Salmon, 13-Jul-2011.) $)
+    cbvreucsf $p |- ( E! x e. A ph <-> E! y e. B ps ) $=
+      ( vz vv cv wcel wa weu wsb nfcri wreu csb nfv nfcsb1v nfan weq id csbeq1a
+      nfs1v eleq12d sbequ12 anbi12d cbveu nfcv nfcsb nfsb csbeq1 cab wsbc sbsbc
+      abbii eleq2d sbie bicomi abbi2i df-csb 3eqtr4ri syl6eq sbequ syl6bb bitri
+      df-reu 3bitr4i ) COZEPZAQZCRZDOZFPZBQZDRZACEUABDFUAVQMOZCWBEUBZPZACMSZQZM
+      RWAVPWFCMVPMUCWDWECCMWCCWBEUDTACMUIUECMUFZVOWDAWEWGVNWBEWCWGUGCWBEUHUJACM
+      UKULUMWFVTMDWDWEDDMWCDCWBEDWBUNGUOTACMDIUPUEVTMUCMDUFZWDVSWEBWHWBVRWCFWHU
+      GWHWCCVREUBZFCWBVREUQNOZEPZCDSZNURWKCVRUSZNURFWIWLWMNWKCDUTVAWLNFWLWJFPZW
+      KWNCDCNFHTCDUFEFWJKVBVCVDVECNVREVFVGVHUJWHWEACDSBAMDCVIABCDJLVCVJULUMVKAC
+      EVLBDFVLVM $.
+
+    $( A more general version of ~ cbvrab with no distinct variable
+       restrictions.  (Contributed by Andrew Salmon, 13-Jul-2011.) $)
+    cbvrabcsf $p |- { x e. A | ph } = { y e. B | ps } $=
+      ( vz vv cv wcel wa cab wsb nfcri crab csb nfv nfcsb1v nfan weq id csbeq1a
+      nfs1v eleq12d sbequ12 anbi12d cbvab nfcv nfcsb csbeq1 df-csb eleq2d sbsbc
+      nfsb wsbc bitr3i abbi2i eqtr4i syl6eq sbequ syl6bb eqtri df-rab 3eqtr4i
+      sbie ) COZEPZAQZCRZDOZFPZBQZDRZACEUABDFUAVOMOZCVTEUBZPZACMSZQZMRVSVNWDCMV
+      NMUCWBWCCCMWACVTEUDTACMUIUECMUFZVMWBAWCWEVLVTEWAWEUGCVTEUHUJACMUKULUMWDVR
+      MDWBWCDDMWADCVTEDVTUNGUOTACMDIUTUEVRMUCMDUFZWBVQWCBWFVTVPWAFWFUGWFWACVPEU
+      BZFCVTVPEUPWGNOZEPZCVPVAZNRFCNVPEUQWJNFWHFPZWICDSWJWIWKCDCNFHTCDUFEFWHKUR
+      VKWICDUSVBVCVDVEUJWFWCACDSBAMDCVFABCDJLVKVGULUMVHACEVIBDFVIVJ $.
+  $}
+
+  ${
+    $d A y $.  $d ps y $.  $d B x $.  $d ch x $.
+    cbvralv2.1 $e |- ( x = y -> ( ps <-> ch ) ) $.
+    cbvralv2.2 $e |- ( x = y -> A = B ) $.
+    $( Rule used to change the bound variable in a restricted universal
+       quantifier with implicit substitution which also changes the quantifier
+       domain.  (Contributed by David Moews, 1-May-2017.) $)
+    cbvralv2 $p |- ( A. x e. A ps <-> A. y e. B ch ) $=
+      ( nfcv nfv cbvralcsf ) ABCDEFDEICFIADJBCJHGK $.
+
+    $( Rule used to change the bound variable in a restricted existential
+       quantifier with implicit substitution which also changes the quantifier
+       domain.  (Contributed by David Moews, 1-May-2017.) $)
+    cbvrexv2 $p |- ( E. x e. A ps <-> E. y e. B ch ) $=
+      ( nfcv nfv cbvrexcsf ) ABCDEFDEICFIADJBCJHGK $.
+  $}
+
+$(
 ###############################################################################
                             CLASSICAL LOGIC
 ###############################################################################
@@ -24710,6 +25405,14 @@ htmldef "]." as
   /* althtmldef "]." as '&#x298E;'; */   /* corner tick */
   althtmldef "]." as ']&#803;';
   latexdef "]." as "\underaccent{\dot}{]}";
+htmldef "[_" as
+    "<IMG SRC='_ulbrack.gif' WIDTH=6 HEIGHT=19 ALT=' [_' TITLE='[_'>";
+  althtmldef "[_" as '<U>[</U>'; /* &lsqb; */
+  latexdef "[_" as "\underline{[}";
+htmldef "]_" as
+    "<IMG SRC='_urbrack.gif' WIDTH=5 HEIGHT=19 ALT=' ]_' TITLE=']_'>";
+  althtmldef "]_" as '<U>]</U>'; /* &rsqb; */
+  latexdef "]_" as "\underline{]}";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
