@@ -24161,8 +24161,15 @@ $)
        (Contributed by Andrew Salmon, 13-Jul-2011.)  (Proof shortened by Mario
        Carneiro, 7-Dec-2014.) $)
     cbvrexcsf $p |- ( E. x e. A ph <-> E. y e. B ps ) $=
-      ( wn wral wrex nfn weq notbid cbvralcsf dfrex2 notbii 3bitr4i ) AMZCENZMB
-      MZDFNZMACEOBDFOUDUFUCUECDEFGHADIPBCJPKCDQABLRSUAACETBDFTUB $.
+      ( vz vv cv wcel wa wex wsbc nfcri wrex csb nfv nfcsb1v nfsbc1v id csbeq1a
+      nfan weq eleq12d sbceq1a anbi12d cbvex nfcv nfcsb nfsbc csbeq1 cab df-csb
+      eleq2d sbie sbsbc bitr3i abbi2i eqtr4i syl6eq dfsbcq syl6bb bitri 3bitr4i
+      wsb df-rex ) COZEPZAQZCRZDOZFPZBQZDRZACEUABDFUAVPMOZCWAEUBZPZACWASZQZMRVT
+      VOWECMVOMUCWCWDCCMWBCWAEUDTACWAUEUHCMUIZVNWCAWDWFVMWAEWBWFUFCWAEUGUJACWAU
+      KULUMWEVSMDWCWDDDMWBDCWAEDWAUNZGUOTADCWAWGIUPUHVSMUCMDUIZWCVRWDBWHWAVQWBF
+      WHUFWHWBCVQEUBZFCWAVQEUQWINOZEPZCVQSZNURFCNVQEUSWLNFWJFPZWKCDVKWLWKWMCDCN
+      FHTCDUIEFWJKUTVAWKCDVBVCVDVEVFUJWHWDACVQSZBACWAVQVGWNACDVKBACDVBABCDJLVAV
+      CVHULUMVIACEVLBDFVLVJ $.
 
     $( A more general version of ~ cbvreuv that has no distinct variable
        rextrictions.  Changes bound variables using implicit substitution.
