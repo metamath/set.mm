@@ -24265,8 +24265,7 @@ $)
   ${
     $d x A $.  $d x B $.
     $( Define class difference, also called relative complement.  Definition
-       5.12 of [TakeutiZaring] p. 20.  For example,
-       ` ( { 1 , 3 } \ { 1 , 8 } ) = { 3 } ` ( ~ ex-dif ).  Contrast this
+       5.12 of [TakeutiZaring] p. 20.  Contrast this
        operation with union ` ( A u. B ) ` ( ~ df-un ) and intersection
        ` ( A i^i B ) ` ( ~ df-in ).  Several notations are used in the
        literature; we chose the ` \ ` convention used in Definition 5.3 of
@@ -24294,8 +24293,7 @@ $)
   ${
     $d x A $.  $d x B $.
     $( Define the union of two classes.  Definition 5.6 of [TakeutiZaring]
-       p. 16.  For example, ` ( { 1 , 3 } u. { 1 , 8 } ) = { 1 , 3 , 8 } `
-       ( ~ ex-un ).  Contrast this operation with difference ` ( A \ B ) `
+       p. 16.  Contrast this operation with difference ` ( A \ B ) `
        ( ~ df-dif ) and intersection ` ( A i^i B ) ` ( ~ df-in ).  For an
        alternate definition in terms of class difference, requiring no dummy
        variables, see ~ dfun2 .  For union defined in terms of intersection,
@@ -24319,8 +24317,7 @@ $)
   ${
     $d x A $.  $d x B $.
     $( Define the intersection of two classes.  Definition 5.6 of
-       [TakeutiZaring] p. 16.  For example,
-       ` ( { 1 , 3 } i^i { 1 , 8 } ) = { 1 } ` ( ~ ex-in ).  Contrast this
+       [TakeutiZaring] p. 16.  Contrast this
        operation with union ` ( A u. B ) ` ( ~ df-un ) and difference
        ` ( A \ B ) ` ( ~ df-dif ).  For alternate definitions in terms of class
        difference, requiring no dummy variables, see ~ dfin2 and ~ dfin4 .  For
