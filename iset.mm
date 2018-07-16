@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Jul-2018
+$( iset.mm - Version of 15-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11369,6 +11369,17 @@ $)
   alexim $p |- ( A. x ph -> -. E. x -. ph ) $=
     ( wal wn wex wfal wi pm2.24 alimi exim syl nfv 19.9 syl6ib sylibr
     dfnot ) ABCZADZBEZFGSDQSFBEZFQRFGZBCSTGAUABAFHIRFBJKFBFBLMNSPO $.
+
+  $( One direction of Theorem 19.14 of [Margaris] p. 90.  (Contributed by Jim
+     Kingdon, 15-Jul-2018.) $)
+  exnalim $p |- ( E. x -. ph -> -. A. x ph ) $=
+    ( wal wn wex alexim con2i ) ABCADBEABFG $.
+
+  $( A transformation of quantifiers and logical connectives.  (Contributed by
+     Jim Kingdon, 15-Jul-2018.) $)
+  exanaliim $p |- ( E. x ( ph /\ -. ps ) -> -. A. x ( ph -> ps ) ) $=
+    ( wn wa wex wi wal annimim eximi exnalim syl ) ABDEZCFABGZDZCFNCH
+    DMOCABIJNCKL $.
 
   ${
     ax6blem.1 $e |- ( ph -> A. x ph ) $.
@@ -24973,12 +24984,11 @@ $)
 
   ${
     $d x A $.  $d x B $.
-    $( Negation of subclass relationship.  Exercise 13 of [TakeutiZaring]
-       p. 18.  (Contributed by NM, 25-Feb-1996.)  (Proof shortened by Andrew
-       Salmon, 21-Jun-2011.) $)
-    nss $p |- ( -. A C_ B <-> E. x ( x e. A /\ -. x e. B ) ) $=
-      ( cv wcel wn wa wex wss wi wal exanali dfss2 xchbinxr bicomi ) ADZBEZPCEZ
-      FGAHZBCIZFSQRJAKTQRALABCMNO $.
+    $( Negation of subclass relationship.  One direction of Exercise 13 of
+       [TakeutiZaring] p. 18.  (Contributed by Jim Kingdon, 15-Jul-2018.) $)
+    nssr $p |- ( E. x ( x e. A /\ -. x e. B ) -> -. A C_ B ) $=
+      ( cv wcel wn wa wex wi wal wss exanaliim dfss2 sylnibr ) ADZBEZ
+      OCEZFGAHPQIAJBCKPQALABCMN $.
   $}
 
   ${
