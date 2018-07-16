@@ -24265,16 +24265,15 @@ $)
   ${
     $d x A $.  $d x B $.
     $( Define class difference, also called relative complement.  Definition
-       5.12 of [TakeutiZaring] p. 20.  Contrast this
-       operation with union ` ( A u. B ) ` ( ~ df-un ) and intersection
-       ` ( A i^i B ) ` ( ~ df-in ).  Several notations are used in the
-       literature; we chose the ` \ ` convention used in Definition 5.3 of
-       [Eisenberg] p. 67 instead of the more common minus sign to reserve the
-       latter for later use in, e.g., arithmetic.  We will use the
-       terminology " ` A ` excludes ` B ` " to mean ` A \ B ` .  We will
-       use " ` B ` is removed from ` A ` " to mean ` A \ { B } ` i.e. the
-       removal of an element or equivalently the exclusion of a singleton.
-       (Contributed by NM, 29-Apr-1994.) $)
+       5.12 of [TakeutiZaring] p. 20.  Contrast this operation with union
+       ` ( A u. B ) ` ( ~ df-un ) and intersection ` ( A i^i B ) `
+       ( ~ df-in ).  Several notations are used in the literature; we chose the
+       ` \ ` convention used in Definition 5.3 of [Eisenberg] p. 67 instead of
+       the more common minus sign to reserve the latter for later use in, e.g.,
+       arithmetic.  We will use the terminology " ` A ` excludes ` B ` " to
+       mean ` A \ B ` .  We will use " ` B ` is removed from ` A ` " to mean
+       ` A \ { B } ` i.e. the removal of an element or equivalently the
+       exclusion of a singleton.  (Contributed by NM, 29-Apr-1994.) $)
     df-dif $a |- ( A \ B ) = { x | ( x e. A /\ -. x e. B ) } $.
   $}
 
@@ -24294,10 +24293,8 @@ $)
     $d x A $.  $d x B $.
     $( Define the union of two classes.  Definition 5.6 of [TakeutiZaring]
        p. 16.  Contrast this operation with difference ` ( A \ B ) `
-       ( ~ df-dif ) and intersection ` ( A i^i B ) ` ( ~ df-in ).  For an
-       alternate definition in terms of class difference, requiring no dummy
-       variables, see ~ dfun2 .  For union defined in terms of intersection,
-       see ~ dfun3 .  (Contributed by NM, 23-Aug-1993.) $)
+       ( ~ df-dif ) and intersection ` ( A i^i B ) ` ( ~ df-in ).  (Contributed
+       by NM, 23-Aug-1993.) $)
     df-un $a |- ( A u. B ) = { x | ( x e. A \/ x e. B ) } $.
   $}
 
@@ -24317,12 +24314,9 @@ $)
   ${
     $d x A $.  $d x B $.
     $( Define the intersection of two classes.  Definition 5.6 of
-       [TakeutiZaring] p. 16.  Contrast this
-       operation with union ` ( A u. B ) ` ( ~ df-un ) and difference
-       ` ( A \ B ) ` ( ~ df-dif ).  For alternate definitions in terms of class
-       difference, requiring no dummy variables, see ~ dfin2 and ~ dfin4 .  For
-       intersection defined in terms of union, see ~ dfin3 .  (Contributed by
-       NM, 29-Apr-1994.) $)
+       [TakeutiZaring] p. 16.  Contrast this operation with union
+       ` ( A u. B ) ` ( ~ df-un ) and difference ` ( A \ B ) ` ( ~ df-dif ).
+       (Contributed by NM, 29-Apr-1994.) $)
     df-in $a |- ( A i^i B ) = { x | ( x e. A /\ x e. B ) } $.
 
     $( Alternate definition for the intersection of two classes.  (Contributed
