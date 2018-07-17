@@ -25307,11 +25307,10 @@ $)
     AGZONABGPDABHIBAJKNOLM $.
 
   $( Two ways of stating trichotomy with respect to inclusion.  (Contributed by
-     NM, 12-Aug-2004.) $)
-  sspsstri $p |- ( ( A C_ B \/ B C_ A ) <-> ( A C. B \/ A = B \/ B C. A ) ) $=
-    ( wpss wo wceq wss w3o or32 sspss eqcom orbi2i bitri orbi12i orordir bitr4i
-    df-3or 3bitr4i ) ABCZBACZDABEZDZRTDZSDABFZBAFZDZRTSGRSTHUEUBSTDZDUAUCUBUDUF
-    ABIUDSBAEZDUFBAIUGTSBAJKLMRSTNORTSPQ $.
+     Jim Kingdon, 16-Jul-2018.) $)
+  sspsstrir $p |- ( ( A C. B \/ A = B \/ B C. A ) -> ( A C_ B \/ B C_ A ) ) $=
+    ( wpss wss wo wceq pssss orcd eqimss olcd 3jaoi ) ABCZABDZBADZEAB
+    FZBACZLMNABGHOMNABIHPNMBAGJK $.
 
   $( Partial trichotomy law for subclasses.  (Contributed by NM, 16-May-1996.)
      (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
