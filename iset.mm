@@ -24390,13 +24390,11 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
   $( Define the subclass relationship.  Exercise 9 of [TakeutiZaring] p. 18.
-     For example, ` { 1 , 2 } C_ { 1 , 2 , 3 } ` ( ~ ex-ss ).  Note that
-     ` A C_ A ` (proved in ~ ssid ).  Contrast this relationship with the
-     relationship ` A C. B ` (as will be defined in ~ df-pss ).  For a more
+     Note that ` A C_ A ` (proved in ~ ssid ).  Contrast this relationship with
+     the relationship ` A C. B ` (as will be defined in ~ df-pss ).  For a more
      traditional definition, but requiring a dummy variable, see ~ dfss2 .
-     Other possible definitions are given by ~ dfss3 , ~ dfss4 , ~ sspss ,
-     ~ ssequn1 , ~ ssequn2 , ~ sseqin2 , and ~ ssdif0 .  (Contributed by NM,
-     27-Apr-1994.) $)
+     Other possible definitions are given by ~ dfss3 and ~ sspss .
+     (Contributed by NM, 27-Apr-1994.) $)
   df-ss $a |- ( A C_ B <-> ( A i^i B ) = A ) $.
 
   $( Variant of subclass definition ~ df-ss .  (Contributed by NM,
@@ -24405,9 +24403,8 @@ $)
     ( wss cin wceq df-ss eqcom bitri ) ABCABDZAEAIEABFIAGH $.
 
   $( Define proper subclass relationship between two classes.  Definition 5.9
-     of [TakeutiZaring] p. 17.  For example, ` { 1 , 2 } C. { 1 , 2 , 3 } `
-     ( ~ ex-pss ).  Note that ` -. A C. A ` (proved in ~ pssirr ).  Contrast
-     this relationship with the relationship ` A C_ B ` (as defined in
+     of [TakeutiZaring] p. 17.  Note that ` -. A C. A ` (proved in ~ pssirr ).
+     Contrast this relationship with the relationship ` A C_ B ` (as defined in
      ~ df-ss ).  Other possible definitions are given by ~ dfpss2 and
      ~ dfpss3 .  (Contributed by NM, 7-Feb-1996.) $)
   df-pss $a |- ( A C. B <-> ( A C_ B /\ A =/= B ) ) $.
@@ -25192,8 +25189,8 @@ $)
   ${
     $d x y $.  $d y z A $.  $d y z B $.  $d x z C $.
     $( A subset relationship useful for converting union to indexed union using
-       ~ dfiun2 or ~ dfiun2g and intersection to indexed intersection using
-       ~ dfiin2 .  (Contributed by NM, 5-Oct-2006.)  (Proof shortened by Mario
+       dfiun2 or dfiun2g and intersection to indexed intersection using
+       dfiin2 .  (Contributed by NM, 5-Oct-2006.)  (Proof shortened by Mario
        Carneiro, 26-Sep-2015.) $)
     uniiunlem $p |- ( A. x e. A B e. D ->
                      ( A. x e. A B e. C <-> { y | E. x e. A y = B } C_ C ) ) $=
