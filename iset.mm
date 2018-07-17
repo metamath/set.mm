@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Jul-2018
+$( iset.mm - Version of 16-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -24392,8 +24392,8 @@ $)
   $( Define the subclass relationship.  Exercise 9 of [TakeutiZaring] p. 18.
      Note that ` A C_ A ` (proved in ~ ssid ).  Contrast this relationship with
      the relationship ` A C. B ` (as will be defined in ~ df-pss ).  For a more
-     traditional definition, but requiring a dummy variable, see ~ dfss2 .
-     Other possible definitions are given by ~ dfss3 and ~ sspss .
+     traditional definition, but requiring a dummy variable, see ~ dfss2 (or
+     ~ dfss3 which is similar).
      (Contributed by NM, 27-Apr-1994.) $)
   df-ss $a |- ( A C_ B <-> ( A i^i B ) = A ) $.
 
@@ -25289,11 +25289,10 @@ $)
       ( wpss wne pssne syl ) ABCEBCFDBCGH $.
   $}
 
-  $( Subclass in terms of proper subclass.  (Contributed by NM,
-     25-Feb-1996.) $)
-  sspss $p |- ( A C_ B <-> ( A C. B \/ A = B ) ) $=
-    ( wss wpss wceq wo wn dfpss2 simplbi2 con1d orrd pssss eqimss jaoi impbii )
-    ABCZABDZABEZFPQRPRQQPRGABHIJKQPRABLABMNO $.
+  $( Subclass in terms of proper subclass.  (Contributed by Jim Kingdon,
+     16-Jul-2018.) $)
+  sspssr $p |- ( ( A C. B \/ A = B ) -> A C_ B ) $=
+    ( wpss wss wceq pssss eqimss jaoi ) ABCABDABEABFABGH $.
 
   $( Proper subclass is irreflexive.  Theorem 7 of [Suppes] p. 23.
      (Contributed by NM, 7-Feb-1996.) $)
