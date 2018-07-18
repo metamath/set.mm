@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Jul-2018
+$( iset.mm - Version of 17-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -24393,8 +24393,7 @@ $)
      Note that ` A C_ A ` (proved in ~ ssid ).  Contrast this relationship with
      the relationship ` A C. B ` (as will be defined in ~ df-pss ).  For a more
      traditional definition, but requiring a dummy variable, see ~ dfss2 (or
-     ~ dfss3 which is similar).
-     (Contributed by NM, 27-Apr-1994.) $)
+     ~ dfss3 which is similar).  (Contributed by NM, 27-Apr-1994.) $)
   df-ss $a |- ( A C_ B <-> ( A i^i B ) = A ) $.
 
   $( Variant of subclass definition ~ df-ss .  (Contributed by NM,
@@ -25317,6 +25316,12 @@ $)
   ssnpss $p |- ( A C_ B -> -. B C. A ) $=
     ( wpss wss wn dfpss3 simprbi con2i ) BACZABDZIBADJEBAFGH $.
 
+  $( Like ~ pssn2lp but for subset and proper subset.  (Contributed by Jim
+     Kingdon, 17-Jul-2018.) $)
+  sspssn $p |- -. ( A C_ B /\ B C. A ) $=
+    ( wss wpss wa wn pm3.24 ssnpss anim2i ancoms mto ) ABCZBADZEMMFZE
+    ZMGMLOLNMABHIJK $.
+
   $( Transitive law for proper subclass.  Theorem 9 of [Suppes] p. 23.
      (Contributed by NM, 7-Feb-1996.) $)
   psstr $p |- ( ( A C. B /\ B C. C ) -> A C. C ) $=
@@ -25327,8 +25332,9 @@ $)
   $( Transitive law for subclass and proper subclass.  (Contributed by NM,
      3-Apr-1996.) $)
   sspsstr $p |- ( ( A C_ B /\ B C. C ) -> A C. C ) $=
-    ( wss wpss wceq wo sspss wi psstr ex psseq1 biimprd jaoi imp sylanb ) ABDAB
-    EZABFZGZBCEZACEZABHSTUAQTUAIRQTUAABCJKRUATABCLMNOP $.
+    ( wss wpss wa wceq wn id pssss sylan9ss sspssn sseq1 anbi1d con2i
+    mtbiri dfpss2 sylanbrc ) ABDZBCEZFZACDACGZHACESTABCSIBCJKUBUAUBUA
+    CBDZTFCBLUBSUCTACBMNPOACQR $.
 
   $( Transitive law for subclass and proper subclass.  (Contributed by NM,
      3-Apr-1996.) $)
