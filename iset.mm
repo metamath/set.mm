@@ -25339,8 +25339,9 @@ $)
   $( Transitive law for subclass and proper subclass.  (Contributed by NM,
      3-Apr-1996.) $)
   psssstr $p |- ( ( A C. B /\ B C_ C ) -> A C. C ) $=
-    ( wss wpss wceq wo sspss psstr ex psseq2 biimpcd jaod imp sylan2b ) BCDABEZ
-    BCEZBCFZGZACEZBCHPSTPQTRPQTABCIJRPTBCAKLMNO $.
+    ( wpss wss wa wn pssss sylan9ss sspssn psseq1 anbi2d mtbiri con2i
+    wceq id ancoms dfpss2 sylanbrc ) ABDZBCEZFACEACOZGZACDTUAABCABHUA
+    PIUATUCUBUATFZUBUDUACBDZFBCJUBTUEUAACBKLMNQACRS $.
 
   ${
     psstrd.1 $e |- ( ph -> A C. B ) $.
