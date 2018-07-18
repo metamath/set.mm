@@ -25372,13 +25372,6 @@ $)
       ( wpss wss psssstr syl2anc ) ABCGCDHBDGEFBCDIJ $.
   $}
 
-  $( A class is not a proper subclass of another iff it satisfies a
-     one-directional form of ~ eqss .  (Contributed by Mario Carneiro,
-     15-May-2015.) $)
-  npss $p |- ( -. A C. B <-> ( A C_ B -> A = B ) ) $=
-    ( wss wceq wi wpss wn wa pm4.61 dfpss2 bitr4i con1bii ) ABCZABDZEZABFZOGMNG
-    HPMNIABJKL $.
-
 $(
 ###############################################################################
                             CLASSICAL LOGIC
