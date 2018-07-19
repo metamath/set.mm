@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Jul-2018
+$( iset.mm - Version of 17-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11370,6 +11370,17 @@ $)
     ( wal wn wex wfal wi pm2.24 alimi exim syl nfv 19.9 syl6ib sylibr
     dfnot ) ABCZADZBEZFGSDQSFBEZFQRFGZBCSTGAUABAFHIRFBJKFBFBLMNSPO $.
 
+  $( One direction of Theorem 19.14 of [Margaris] p. 90.  (Contributed by Jim
+     Kingdon, 15-Jul-2018.) $)
+  exnalim $p |- ( E. x -. ph -> -. A. x ph ) $=
+    ( wal wn wex alexim con2i ) ABCADBEABFG $.
+
+  $( A transformation of quantifiers and logical connectives.  (Contributed by
+     Jim Kingdon, 15-Jul-2018.) $)
+  exanaliim $p |- ( E. x ( ph /\ -. ps ) -> -. A. x ( ph -> ps ) ) $=
+    ( wn wa wex wi wal annimim eximi exnalim syl ) ABDEZCFABGZDZCFNCH
+    DMOCABIJNCKL $.
+
   ${
     ax6blem.1 $e |- ( ph -> A. x ph ) $.
     $( If ` x ` is not free in ` ph ` , it is not free in ` -. ph ` .  This
@@ -12145,13 +12156,14 @@ $)
   $}
 
   ${
-    chv2.1 $e |- ( ps -> A. x ps ) $.
-    chv2.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    chv2.3 $e |- ph $.
+    chvar.1 $e |- F/ x ps $.
+    chvar.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    chvar.3 $e |- ph $.
     $( Implicit substitution of ` y ` for ` x ` into a theorem.  (Contributed
-       by Raph Levien, 9-Jul-2003.) $)
+       by Raph Levien, 9-Jul-2003.)  (Revised by Mario Carneiro,
+       3-Oct-2016.) $)
     chvar $p |- ps $=
-      ( weq biimpd spimh mpg ) ABCABCDECDHABFIJGK $.
+      ( weq biimpd spim mpg ) ABCABCDECDHABFIJGK $.
   $}
 
   $( A variable introduction law for equality.  Lemma 15 of [Monk2] p. 109,
@@ -13758,19 +13770,6 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d x y z $.  $d y z ph $.
-    $( Two ways of expressing " ` x ` is (effectively) not free in ` ph ` ."
-       (Contributed by G&eacute;rard Lang, 14-Nov-2013.) $)
-    sbhb2 $p |- ( A. x ( ph -> A. x ph )
-           <-> A. y A. z ( [ y / x ] ph <-> [ z / x ] ph ) ) $=
-      ( wsb wb wal wi wa 2albiim sbhb albii alcom bitri ax-17 sb8h sblimv 3bitri
-      hbs1 anbi12i anidm 3bitr2ri ) ABCEZABDEZFDGCGUCUDHZDGCGZUDUCHZDGZCGZIAABG
-      HZBGZUKIUKUCUDCDJUKUFUKUIUKAUDHZBGZDGZUECGZDGUFUKULDGZBGUNUJUPBABDKLULBDM
-      NUMUODUMULBCEZCGUOULBCULCOPUQUECAUDBCABDSQLNLUEDCMRUKAUCHZCGZBGURBGZCGUIU
-      JUSBABCKLURBCMUTUHCUTURBDEZDGUHURBDURDOPVAUGDAUCBDABCSQLNLRTUKUAUB $.
-  $}
-
-  ${
     $d x z $.  $d y z $.
     hbsbv.1 $e |- ( ph -> A. z ph ) $.
     $( This is a version of ~ hbsb with an extra distinct variable constraint,
@@ -13912,11 +13911,12 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    sblim.1 $e |- ( ps -> A. x ps ) $.
+    sblim.1 $e |- F/ x ps $.
     $( Substitution with a variable not free in consequent affects only the
-       antecedent.  (Contributed by NM, 14-Nov-2013.) $)
+       antecedent.  (Contributed by NM, 14-Nov-2013.)  (Revised by Mario
+       Carneiro, 4-Oct-2016.) $)
     sblim $p |- ( [ y / x ] ( ph -> ps ) <-> ( [ y / x ] ph -> ps ) ) $=
-      ( wi wsb sbim sbh imbi2i bitri ) ABFCDGACDGZBCDGZFLBFABCDHMBLBCDEIJK $.
+      ( wi wsb sbim sbf imbi2i bitri ) ABFCDGACDGZBCDGZFLBFABCDHMBLBCDEIJK $.
   $}
 
   $( Conjunction inside and outside of a substitution are equivalent.
@@ -14144,6 +14144,21 @@ $( The theorems in this section make use of the $d statement. $)
      NM, 5-Aug-1993.)  (Proof rewritten by Jim Kingdon, 23-Mar-2018.) $)
   sb9i $p |- ( A. x [ x / y ] ph -> A. y [ y / x ] ph ) $=
     ( wsb wal sb9 biimpi ) ACBDBEABCDCEABCFG $.
+
+  ${
+    $d x y z $.  $d y z ph $.
+    $( Two ways of expressing " ` x ` is (effectively) not free in ` ph ` ."
+       (Contributed by G&eacute;rard Lang, 14-Nov-2013.)  (Revised by Mario
+       Carneiro, 6-Oct-2016.) $)
+    sbnf2 $p |- ( F/ x ph
+       <-> A. y A. z ( [ y / x ] ph <-> [ z / x ] ph ) ) $=
+      ( wsb wb wal wi wnf 2albiim sbhb albii alcom 3bitri nfv nfs1v sblim bitri
+      wa sb8 df-nf anbi12i anidm 3bitr2ri ) ABCEZABDEZFDGCGUEUFHZDGCGZUFUEHZDGZ
+      CGZSABIZULSULUEUFCDJULUHULUKULAUFHZBGZDGZUGCGZDGUHULAABGHZBGZUMDGZBGUOABU
+      AZUQUSBABDKLUMBDMNUNUPDUNUMBCEZCGUPUMBCUMCOTVAUGCAUFBCABDPQLRLUGDCMNULAUE
+      HZBGZCGZUKULURVBCGZBGVDUTUQVEBABCKLVBBCMNVCUJCVCVBBDEZDGUJVBBDVBDOTVFUIDA
+      UEBDABCPQLRLRUBULUCUD $.
+  $}
 
   ${
     $d y z $.
@@ -15120,7 +15135,7 @@ $)
     $( Alternate definition of "at most one."  Definition of [BellMachover]
        p. 460, except that definition has the side condition that ` y ` not
        occur in ` ph ` in place of our hypothesis.  (Contributed by NM,
-       8-Mar-1995.) (New usage is discouraged.) $)
+       8-Mar-1995.)  (New usage is discouraged.) $)
     mo3h $p |- ( E* x ph <->
                A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
       ( wmo wsb wa weq wi wal wex weu nfi eu2 imbi2i df-mo anclb 3bitr4i sylibr
@@ -15184,10 +15199,11 @@ $)
     $( Substitution into "at most one".  (Contributed by Jeff Madsen,
        2-Sep-2009.) $)
     sbmo $p |- ( [ y / x ] E* z ph <-> E* z [ y / x ] ph ) $=
-      ( vw wsb wa weq wi wal ax-17 sblim sban imbi1i sbcom2 anbi2i 3bitri sbalv
-      wmo mo3h sbbii 3bitr4i ) AADEFZGZDEHZIZEJZDJZBCFABCFZUIDEFZGZUEIZEJZDJADSZ
-      BCFUIDSUGUMBCDUFULBCEUFBCFUDBCFZUEIUIUCBCFZGZUEIULUDUEBCUEBKLUOUQUEAUCBCM
-      NUQUKUEUPUJUIADEBCOPNQRRUNUHBCADEAEKTUAUIDEUIEKTUB $.
+      ( vw wsb wa cv wceq wal wmo nfv sblim sban imbi1i sbcom2 anbi2i
+      wi sbalv mo3 3bitri sbbii 3bitr4i ) AADEFZGZDHEHIZRZEJZDJZBCFAB
+      CFZUJDEFZGZUFRZEJZDJADKZBCFUJDKUHUNBCDUGUMBCEUGBCFUEBCFZUFRUJUD
+      BCFZGZUFRUMUEUFBCUFBLMUPURUFAUDBCNOURULUFUQUKUJADEBCPQOUASSUOUI
+      BCADEAELTUBUJDEUJELTUC $.
   $}
 
   ${
@@ -23507,6 +23523,1856 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Proper substitution of classes for sets into classes
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c [_ $.  $( Underlined left bracket $)
+  $c ]_ $.  $( Underlined right bracket $)
+
+  $( Extend class notation to include the proper substitution of a class for a
+     set into another class. $)
+  csb $a class [_ A / x ]_ B $.
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    $( Define the proper substitution of a class for a set into another class.
+       The underlined brackets distinguish it from the substitution into a wff,
+       ~ wsbc , to prevent ambiguity.  Theorem ~ sbcel1g shows an example of
+       how ambiguity could arise if we didn't use distinguished brackets.
+       Theorem ~ sbccsbg recreates substitution into a wff from this
+       definition.  (Contributed by NM, 10-Nov-2005.) $)
+    df-csb $a |- [_ A / x ]_ B = { y | [. A / x ]. y e. B } $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y $.
+    $( Alternate expression for the proper substitution into a class, without
+       referencing substitution into a wff.  Note that ` x ` can be free in
+       ` B ` but cannot occur in ` A ` .  (Contributed by NM, 2-Dec-2013.) $)
+    csb2 $p |- [_ A / x ]_ B = { y | E. x ( x = A /\ y e. B ) } $=
+      ( csb cv wcel wsbc cab wceq wa wex df-csb sbc5 abbii eqtri ) ACDEBFDGZACH
+      ZBIAFCJQKALZBIABCDMRSBQACNOP $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y C $.
+    $( Analog of ~ dfsbcq for proper substitution into a class.  (Contributed
+       by NM, 10-Nov-2005.) $)
+    csbeq1 $p |- ( A = B -> [_ A / x ]_ C = [_ B / x ]_ C ) $=
+      ( vy wceq cv wcel wsbc cab csb dfsbcq abbidv df-csb 3eqtr4g ) BCFZEGDHZAB
+      IZEJQACIZEJABDKACDKPRSEQABCLMAEBDNAECDNO $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z A $.  $d z C $.  $d z D $.
+    cbvcsb.1 $e |- F/_ y C $.
+    cbvcsb.2 $e |- F/_ x D $.
+    cbvcsb.3 $e |- ( x = y -> C = D ) $.
+    $( Change bound variables in a class substitution.  Interestingly, this
+       does not require any bound variable conditions on ` A ` .  (Contributed
+       by Jeff Hankins, 13-Sep-2009.)  (Revised by Mario Carneiro,
+       11-Dec-2016.) $)
+    cbvcsb $p |- [_ A / x ]_ C = [_ A / y ]_ D $=
+      ( vz cv wcel wsbc cab csb nfcri weq eleq2d cbvsbc abbii df-csb 3eqtr4i )
+      IJZDKZACLZIMUBEKZBCLZIMACDNBCENUDUFIUCUEABCBIDFOAIEGOABPDEUBHQRSAICDTBICE
+      TUA $.
+  $}
+
+  ${
+    $d x y $.  $d z A $.  $d y z B $.  $d x z C $.
+    cbvcsbv.1 $e |- ( x = y -> B = C ) $.
+    $( Change the bound variable of a proper substitution into a class using
+       implicit substitution.  (Contributed by NM, 30-Sep-2008.)  (Revised by
+       Mario Carneiro, 13-Oct-2016.) $)
+    cbvcsbv $p |- [_ A / x ]_ B = [_ A / y ]_ C $=
+      ( nfcv cbvcsb ) ABCDEBDGAEGFH $.
+  $}
+
+  ${
+    csbeq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for proper substitution into a class.  (Contributed
+       by NM, 3-Dec-2005.) $)
+    csbeq1d $p |- ( ph -> [_ A / x ]_ C = [_ B / x ]_ C ) $=
+      ( wceq csb csbeq1 syl ) ACDGBCEHBDEHGFBCDEIJ $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    $( Analog of ~ sbid for proper substitution into a class.  (Contributed by
+       NM, 10-Nov-2005.) $)
+    csbid $p |- [_ x / x ]_ A = A $=
+      ( vy cv csb wcel wsbc cab df-csb sbcid abbii abid2 3eqtri ) AADZBECDBFZAN
+      GZCHOCHBACNBIPOCOAJKCBLM $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( Equality theorem for proper substitution into a class.  (Contributed by
+       NM, 10-Nov-2005.) $)
+    csbeq1a $p |- ( x = A -> B = [_ A / x ]_ B ) $=
+      ( cv wceq csb csbid csbeq1 syl5eqr ) ADZBECAJCFABCFACGAJBCHI $.
+  $}
+
+  ${
+    $d z A $.  $d y z B $.  $d z V $.  $d x z $.
+    $( Composition law for chained substitutions into a class.  (Contributed by
+       NM, 10-Nov-2005.) $)
+    csbco $p |- [_ A / y ]_ [_ y / x ]_ B = [_ A / x ]_ B $=
+      ( vz cv csb wcel wsbc cab df-csb abeq2i sbcbii sbcco bitri abbii 3eqtr4i
+      ) EFZABFZDGZHZBCIZEJRDHZACIZEJBCTGACDGUBUDEUBUCASIZBCIUDUAUEBCUEETAESDKLM
+      UCABCNOPBECTKAECDKQ $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    $( The existence of proper substitution into a class.  (Contributed by NM,
+       10-Nov-2005.) $)
+    csbexg $p |- ( ( A e. V /\ A. x B e. W ) -> [_ A / x ]_ B e. _V ) $=
+      ( vy wcel wal wa csb wsbc cab cvv df-csb abid2 elex syl5eqel alimi spsbc
+      cv syl5 imp wb nfcv sbcabel adantr mpbid ) BDGZCEGZAHZIZABCJFTCGZABKFLZMA
+      FBCNUKULFLZMGZABKZUMMGZUHUJUPUJUOAHUHUPUIUOAUIUNCMFCOCEPQRUOABDSUAUBUHUPU
+      QUCUJULAFBMDAMUDUEUFUGQ $.
+  $}
+
+  ${
+    csbex.1 $e |- A e. _V $.
+    csbex.2 $e |- B e. _V $.
+    $( The existence of proper substitution into a class.  (Contributed by NM,
+       7-Aug-2007.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+    csbex $p |- [_ A / x ]_ B e. _V $=
+      ( cvv wcel csb wal csbexg mpan mpg ) CFGZABCHFGZABFGMAINDABCFFJKEL $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d y V $.  $d x y $.
+    $( Substitution doesn't affect a constant ` B ` (in which ` x ` is not
+       free).  (Contributed by Mario Carneiro, 14-Oct-2016.) $)
+    csbtt $p |- ( ( A e. V /\ F/_ x B ) -> [_ A / x ]_ B = B ) $=
+      ( vy wcel wnfc wa csb cv wsbc cab df-csb wnf wb nfcr sbctt sylan2 abbi1dv
+      syl5eq ) BDFZACGZHZABCIEJCFZABKZELCAEBCMUCUEECUBUAUDANUEUDOAECPUDABDQRST
+      $.
+  $}
+
+  ${
+    csbconstgf.1 $e |- F/_ x B $.
+    $( Substitution doesn't affect a constant ` B ` (in which ` x ` is not
+       free).  (Contributed by NM, 10-Nov-2005.) $)
+    csbconstgf $p |- ( A e. V -> [_ A / x ]_ B = B ) $=
+      ( wcel wnfc csb wceq csbtt mpan2 ) BDFACGABCHCIEABCDJK $.
+  $}
+
+  ${
+    $d A y $.  $d B x y $.  $d V y $.
+    $( Substitution doesn't affect a constant ` B ` (in which ` x ` is not
+       free). ~ csbconstgf with distinct variable requirement.  (Contributed by
+       Alan Sare, 22-Jul-2012.) $)
+    csbconstg $p |- ( A e. V -> [_ A / x ]_ B = B ) $=
+      ( nfcv csbconstgf ) ABCDACEF $.
+  $}
+
+  ${
+    $d w x y z $.  $d w y z A $.  $d w y z B $.  $d w y z C $.
+    $( Distribute proper substitution through a membership relation.
+       (Contributed by NM, 10-Nov-2005.)  (Proof shortened by Andrew Salmon,
+       29-Jun-2011.) $)
+    sbcel12g $p |- ( A e. V -> ( [. A / x ]. B e. C <->
+                   [_ A / x ]_ B e. [_ A / x ]_ C ) ) $=
+      ( vy vz wcel wsbc cv cab csb wsb dfsbcq2 abbidv eleq12d nfs1v nfab df-csb
+      sbab wceq nfel weq sbie vtoclbg eleq12i syl6bbr ) BEHCDHZABIZFJZCHZABIZFK
+      ZUJDHZABIZFKZHZABCLZABDLZHUHAGMUKAGMZFKZUNAGMZFKZHZUIUQGBEUHAGBNGJBUAZVAU
+      MVCUPVEUTULFUKAGBNOVEVBUOFUNAGBNOPUHVDAGAVAVCUTAFUKAGQRVBAFUNAGQRUBAGUCCV
+      ADVCAGFCTAGFDTPUDUEURUMUSUPAFBCSAFBDSUFUG $.
+
+    $( Distribute proper substitution through an equality relation.
+       (Contributed by NM, 10-Nov-2005.)  (Proof shortened by Andrew Salmon,
+       29-Jun-2011.) $)
+    sbceqg $p |- ( A e. V -> ( [. A / x ]. B = C <->
+                   [_ A / x ]_ B = [_ A / x ]_ C ) ) $=
+      ( vy vz wcel wceq wsbc cab csb wsb dfsbcq2 abbidv eqeq12d nfs1v nfab sbab
+      cv nfeq weq sbie vtoclbg df-csb eqeq12i syl6bbr ) BEHCDIZABJZFTZCHZABJZFK
+      ZUJDHZABJZFKZIZABCLZABDLZIUHAGMUKAGMZFKZUNAGMZFKZIZUIUQGBEUHAGBNGTBIZVAUM
+      VCUPVEUTULFUKAGBNOVEVBUOFUNAGBNOPUHVDAGAVAVCUTAFUKAGQRVBAFUNAGQRUAAGUBCVA
+      DVCAGFCSAGFDSPUCUDURUMUSUPAFBCUEAFBDUEUFUG $.
+  $}
+
+  $( Distribute proper substitution through negated membership.  (Contributed
+     by Andrew Salmon, 18-Jun-2011.) $)
+  sbcnel12g $p |- ( A e. V -> ( [. A / x ]. B e/ C <-> [_ A / x ]_ B e/
+                    [_ A / x ]_ C ) ) $=
+    ( wcel wnel wsbc wn csb wb df-nel sbcbii a1i sbcel12g notbid syl6bbr 3bitrd
+    sbcng ) BEFZCDGZABHZCDFZIZABHZUCABHZIZABCJZABDJZGZUBUEKTUAUDABCDLMNUCABESTU
+    GUHUIFZIUJTUFUKABCDEOPUHUILQR $.
+
+  $( Distribute proper substitution through an inequality.  (Contributed by
+     Andrew Salmon, 18-Jun-2011.) $)
+  sbcne12g $p |- ( A e. V -> ( [. A / x ]. B =/= C <-> [_ A / x ]_ B =/=
+                   [_ A / x ]_ C ) ) $=
+    ( wcel wne wsbc csb wb wn sbceqg notbid df-ne sbcbii sbcng syl5bb
+    wceq a1i bibi12d mpbird ) BEFZCDGZABHZABCIZABDIZGZJCDRZABHZKZUEUF
+    RZKZJUBUIUKABCDELMUBUDUJUGULUDUHKZABHUBUJUCUMABCDNOUHABEPQUGULJUB
+    UEUFNSTUA $.
+
+  ${
+    $d y A $.  $d x y C $.  $d y V $.
+    $( Move proper substitution in and out of a membership relation.  Note that
+       the scope of ` [. A / x ]. ` is the wff ` B e. C ` , whereas the scope
+       of ` [_ A / x ]_ ` is the class ` B ` .  (Contributed by NM,
+       10-Nov-2005.) $)
+    sbcel1g $p |- ( A e. V -> ( [. A / x ]. B e. C <->
+                    [_ A / x ]_ B e. C ) ) $=
+      ( wcel wsbc csb sbcel12g csbconstg eleq2d bitrd ) BEFZCDFABGABCHZABDHZFND
+      FABCDEIMODNABDEJKL $.
+
+    $( Move proper substitution to first argument of an equality.  (Contributed
+       by NM, 30-Nov-2005.) $)
+    sbceq1g $p |- ( A e. V -> ( [. A / x ]. B = C <->
+                    [_ A / x ]_ B = C ) ) $=
+      ( wcel wceq wsbc csb sbceqg csbconstg eqeq2d bitrd ) BEFZCDGABHABCIZABDIZ
+      GODGABCDEJNPDOABDEKLM $.
+  $}
+
+  ${
+    $d y A $.  $d x y B $.  $d y V $.
+    $( Move proper substitution in and out of a membership relation.
+       (Contributed by NM, 14-Nov-2005.) $)
+    sbcel2g $p |- ( A e. V -> ( [. A / x ]. B e. C <->
+                    B e. [_ A / x ]_ C ) ) $=
+      ( wcel wsbc csb sbcel12g csbconstg eleq1d bitrd ) BEFZCDFABGABCHZABDHZFCO
+      FABCDEIMNCOABCEJKL $.
+
+    $( Move proper substitution to second argument of an equality.
+       (Contributed by NM, 30-Nov-2005.) $)
+    sbceq2g $p |- ( A e. V -> ( [. A / x ]. B = C <->
+                    B = [_ A / x ]_ C ) ) $=
+      ( wcel wceq wsbc csb sbceqg csbconstg eqeq1d bitrd ) BEFZCDGABHABCIZABDIZ
+      GCPGABCDEJNOCPABCEKLM $.
+  $}
+
+  ${
+    $d y z A $.  $d x z B $.  $d z C $.  $d x y $.
+    $( Commutative law for double substitution into a class.  (Contributed by
+       NM, 14-Nov-2005.) $)
+    csbcomg $p |- ( ( A e. V /\ B e. W ) ->
+                 [_ A / x ]_ [_ B / y ]_ C = [_ B / y ]_ [_ A / x ]_ C ) $=
+      ( vz wcel cvv csb wceq elex wsbc wb sbcel2g sbcbidv adantl adantr 3bitr3d
+      wa cv sbccom a1i eqrdv syl2an ) CFICJIZDJIZACBDEKZKZBDACEKZKZLDGICFMDGMUG
+      UHUAZHUJULUMHUBZUIIZACNZUNUKIZBDNZUNUJIZUNULIZUMUNEIZBDNZACNZVAACNZBDNZUP
+      URVCVEOUMVAABCDUCUDUHVCUPOUGUHVBUOACBDUNEJPQRUGVEUROUHUGVDUQBDACUNEJPQSTU
+      GUPUSOUHACUNUIJPSUHURUTOUGBDUNUKJPRTUEUF $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y C $.  $d y ph $.
+    csbeq2d.1 $e |- F/ x ph $.
+    csbeq2d.2 $e |- ( ph -> B = C ) $.
+    $( Formula-building deduction rule for class substitution.  (Contributed by
+       NM, 22-Nov-2005.)  (Revised by Mario Carneiro, 1-Sep-2015.) $)
+    csbeq2d $p |- ( ph -> [_ A / x ]_ B = [_ A / x ]_ C ) $=
+      ( vy cv wcel wsbc cab csb eleq2d sbcbid abbidv df-csb 3eqtr4g ) AHIZDJZBC
+      KZHLSEJZBCKZHLBCDMBCEMAUAUCHATUBBCFADESGNOPBHCDQBHCEQR $.
+  $}
+
+  ${
+    $d x ph $.
+    csbeq2dv.1 $e |- ( ph -> B = C ) $.
+    $( Formula-building deduction rule for class substitution.  (Contributed by
+       NM, 10-Nov-2005.)  (Revised by Mario Carneiro, 1-Sep-2015.) $)
+    csbeq2dv $p |- ( ph -> [_ A / x ]_ B = [_ A / x ]_ C ) $=
+      ( nfv csbeq2d ) ABCDEABGFH $.
+  $}
+
+  ${
+    csbeq2i.1 $e |- B = C $.
+    $( Formula-building inference rule for class substitution.  (Contributed by
+       NM, 10-Nov-2005.)  (Revised by Mario Carneiro, 1-Sep-2015.) $)
+    csbeq2i $p |- [_ A / x ]_ B = [_ A / x ]_ C $=
+      ( csb wceq wtru a1i csbeq2dv trud ) ABCFABDFGHABCDCDGHEIJK $.
+  $}
+
+  ${
+    $d y z A $.  $d x y z $.
+    $( The proper substitution of a class for set variable results in the class
+       (if the class exists).  (Contributed by NM, 10-Nov-2005.) $)
+    csbvarg $p |- ( A e. V -> [_ A / x ]_ x = A ) $=
+      ( vz vy wcel cvv cv csb wceq elex wsbc cab df-csb sbcel2gv abbi1dv syl5eq
+      vex ax-mp csbeq2i csbco 3eqtr3i syl ) BCFBGFZABAHZIZBJBCKUDUFDHZEHZFEBLZD
+      MZBEBAUHUEIZIEBUHIUFUJEBUKUHUHGFZUKUHJERULUKUGUEFAUHLZDMUHADUHUENULUMDUHA
+      UGUHGOPQSTAEBUEUAEDBUHNUBUDUIDBEUGBGOPQUC $.
+  $}
+
+  ${
+    $d x y $.
+    $( Substitution into a wff expressed in terms of substitution into a
+       class.  (Contributed by NM, 15-Aug-2007.) $)
+    sbccsbg $p |- ( A e. V ->
+                 ( [. A / x ]. ph <-> y e. [_ A / x ]_ { y | ph } ) ) $=
+      ( wsbc cv cab wcel csb abid sbcbii sbcel2g syl5bbr ) ABDFCGZACHZIZBDFDEIO
+      BDPJIQABDACKLBDOPEMN $.
+  $}
+
+  $( Substitution into a wff expressed in using substitution into a class.
+     (Contributed by NM, 27-Nov-2005.) $)
+  sbccsb2g $p |- ( A e. V ->
+               ( [. A / x ]. ph <-> A e. [_ A / x ]_ { x | ph } ) ) $=
+    ( wsbc cv cab wcel csb abid sbcbii sbcel12g csbvarg eleq1d bitrd syl5bbr )
+    ABCEBFZABGZHZBCEZCDHZCBCRIZHZSABCABJKUATBCQIZUBHUCBCQRDLUAUDCUBBCDMNOP $.
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y ph $.
+    nfcsb1d.1 $e |- ( ph -> F/_ x A ) $.
+    $( Bound-variable hypothesis builder for substitution into a class.
+       (Contributed by Mario Carneiro, 12-Oct-2016.) $)
+    nfcsb1d $p |- ( ph -> F/_ x [_ A / x ]_ B ) $=
+      ( vy csb cv wcel wsbc cab df-csb nfv nfsbc1d nfabd nfcxfrd ) ABBCDGFHDIZB
+      CJZFKBFCDLARBFAFMAQBCENOP $.
+  $}
+
+  ${
+    $d y z A $.  $d z B $.  $d x y z $.
+    nfcsb1.1 $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for substitution into a class.
+       (Contributed by Mario Carneiro, 12-Oct-2016.) $)
+    nfcsb1 $p |- F/_ x [_ A / x ]_ B $=
+      ( csb wnfc wtru a1i nfcsb1d trud ) AABCEFGABCABFGDHIJ $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Bound-variable hypothesis builder for substitution into a class.
+       (Contributed by NM, 17-Aug-2006.)  (Revised by Mario Carneiro,
+       12-Oct-2016.) $)
+    nfcsb1v $p |- F/_ x [_ A / x ]_ B $=
+      ( nfcv nfcsb1 ) ABCABDE $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z A $.  $d z B $.  $d z ph $.
+    nfcsbd.1 $e |- F/ y ph $.
+    nfcsbd.2 $e |- ( ph -> F/_ x A ) $.
+    nfcsbd.3 $e |- ( ph -> F/_ x B ) $.
+    $( Deduction version of ~ nfcsb .  (Contributed by NM, 21-Nov-2005.)
+       (Revised by Mario Carneiro, 12-Oct-2016.) $)
+    nfcsbd $p |- ( ph -> F/_ x [_ A / y ]_ B ) $=
+      ( vz csb cv wcel wsbc cab df-csb nfv nfcrd nfsbcd nfabd nfcxfrd ) ABCDEJI
+      KELZCDMZINCIDEOAUBBIAIPAUABCDFGABIEHQRST $.
+  $}
+
+  ${
+    nfcsb.1 $e |- F/_ x A $.
+    nfcsb.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for substitution into a class.
+       (Contributed by Mario Carneiro, 12-Oct-2016.) $)
+    nfcsb $p |- F/_ x [_ A / y ]_ B $=
+      ( csb wnfc wtru nftru a1i nfcsbd trud ) ABCDGHIABCDBJACHIEKADHIFKLM $.
+  $}
+
+  ${
+    $d x y $.
+    csbhypf.1 $e |- F/_ x A $.
+    csbhypf.2 $e |- F/_ x C $.
+    csbhypf.3 $e |- ( x = A -> B = C ) $.
+    $( Introduce an explicit substitution into an implicit substitution
+       hypothesis.  See ~ sbhypf for class substitution version.  (Contributed
+       by NM, 19-Dec-2008.) $)
+    csbhypf $p |- ( y = A -> [_ y / x ]_ B = C ) $=
+      ( cv wceq wi csb nfeq2 nfcsb1v nfeq nfim eqeq1 csbeq1a eqeq1d imbi12d
+      chvar ) AIZCJZDEJZKBIZCJZAUEDLZEJZKABUFUHAAUECFMAUGEAUEDNGOPUBUEJZUCUFUDU
+      HUBUECQUIDUGEAUEDRSTHUA $.
+  $}
+
+  ${
+    $d x A $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class.  (Closed theorem version of ~ csbiegf .)  (Contributed by NM,
+       11-Nov-2005.) $)
+    csbiebt $p |- ( ( A e. V /\ F/_ x C ) ->
+                 ( A. x ( x = A -> B = C ) <-> [_ A / x ]_ B = C ) ) $=
+      ( wcel cvv wnfc cv wceq wi wal csb wb elex wa wsbc adantl a1i nfeqd spsbc
+      adantr simpl biimt csbeq1a eqeq1d bitr3d nfv nfnfc1 nfcsb1v simpr sbciedf
+      nfan sylibd id nfan1 biimprcd alrimi ex impbid sylan ) BEFBGFZADHZAIBJZCD
+      JZKZALZABCMZDJZNBEOVBVCPZVGVIVJVGVFABQZVIVBVGVKKVCVFABGUAUBVJVFVIABGVBVCU
+      CVDVFVINVJVDVEVFVIVDVEUDVDCVHDABCUEUFZUGRVBVCAVBAUHADUIZUMVJAVHDAVHHZVJAB
+      CUJZSVBVCUKTULUNVCVIVGKVBVCVIVGVCVIPVFAVCVIAVMVCAVHDVNVCVOSVCUOTUPVIVFVCV
+      DVEVIVLUQRURUSRUTVA $.
+
+    csbiedf.1 $e |- F/ x ph $.
+    csbiedf.2 $e |- ( ph -> F/_ x C ) $.
+    csbiedf.3 $e |- ( ph -> A e. V ) $.
+    csbiedf.4 $e |- ( ( ph /\ x = A ) -> B = C ) $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class.  (Contributed by Mario Carneiro, 13-Oct-2016.) $)
+    csbiedf $p |- ( ph -> [_ A / x ]_ B = C ) $=
+      ( cv wceq wi wal csb ex alrimi wcel wnfc wb csbiebt syl2anc mpbid ) ABKCL
+      ZDELZMZBNZBCDOELZAUFBGAUDUEJPQACFRBESUGUHTIHBCDEFUAUBUC $.
+  $}
+
+  ${
+    $d x z A $.  $d z B $.  $d y C $.  $d x y $.
+    csbieb.1 $e |- A e. _V $.
+    csbieb.2 $e |- F/_ x C $.
+    $( Bidirectional conversion between an implicit class substitution
+       hypothesis ` x = A -> B = C ` and its explicit substitution equivalent.
+       (Contributed by NM, 2-Mar-2008.) $)
+    csbieb $p |- ( A. x ( x = A -> B = C ) <-> [_ A / x ]_ B = C ) $=
+      ( cvv wcel wnfc cv wceq wi wal csb wb csbiebt mp2an ) BGHADIAJBKCDKLAMABC
+      NDKOEFABCDGPQ $.
+  $}
+
+  ${
+    $d a x A $.  $d a B $.  $d a y C $.  $d x y $.
+    csbiebg.2 $e |- F/_ x C $.
+    $( Bidirectional conversion between an implicit class substitution
+       hypothesis ` x = A -> B = C ` and its explicit substitution equivalent.
+       (Contributed by NM, 24-Mar-2013.)  (Revised by Mario Carneiro,
+       11-Dec-2016.) $)
+    csbiebg $p |- ( A e. V ->
+          ( A. x ( x = A -> B = C ) <-> [_ A / x ]_ B = C ) ) $=
+      ( va cv wceq wal csb eqeq2 imbi1d albidv csbeq1 eqeq1d vex csbieb vtoclbg
+      wi ) AHZGHZIZCDIZTZAJAUBCKZDIUABIZUDTZAJABCKZDIGBEUBBIZUEUHAUJUCUGUDUBBUA
+      LMNUJUFUIDAUBBCOPAUBCDGQFRS $.
+  $}
+
+  ${
+    $d x y A $.  $d y C $.  $d x y V $.
+    csbiegf.1 $e |- ( A e. V -> F/_ x C ) $.
+    csbiegf.2 $e |- ( x = A -> B = C ) $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class.  (Contributed by NM, 11-Nov-2005.)  (Revised by Mario Carneiro,
+       13-Oct-2016.) $)
+    csbiegf $p |- ( A e. V -> [_ A / x ]_ B = C ) $=
+      ( wcel cv wceq wi wal csb ax-gen wnfc wb csbiebt mpdan mpbii ) BEHZAIBJCD
+      JKZALZABCMDJZUAAGNTADOUBUCPFABCDEQRS $.
+  $}
+
+  ${
+    $d x A $.  $d y C $.  $d x y $.
+    csbief.1 $e |- A e. _V $.
+    csbief.2 $e |- F/_ x C $.
+    csbief.3 $e |- ( x = A -> B = C ) $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class.  (Contributed by NM, 26-Nov-2005.)  (Revised by Mario Carneiro,
+       13-Oct-2016.) $)
+    csbief $p |- [_ A / x ]_ B = C $=
+      ( cvv wcel csb wceq wnfc a1i csbiegf ax-mp ) BHIZABCJDKEABCDHADLPFMGNO $.
+  $}
+
+  ${
+    $d x A $.  $d x y C $.  $d x y ph $.
+    csbied.1 $e |- ( ph -> A e. V ) $.
+    csbied.2 $e |- ( ( ph /\ x = A ) -> B = C ) $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class.  (Contributed by Mario Carneiro, 2-Dec-2014.)  (Revised by Mario
+       Carneiro, 13-Oct-2016.) $)
+    csbied $p |- ( ph -> [_ A / x ]_ B = C ) $=
+      ( nfv nfcvd csbiedf ) ABCDEFABIABEJGHK $.
+  $}
+
+  ${
+    $d x A $.  $d x ph $.  $d x D $.
+    csbied2.1 $e |- ( ph -> A e. V ) $.
+    csbied2.2 $e |- ( ph -> A = B ) $.
+    csbied2.3 $e |- ( ( ph /\ x = B ) -> C = D ) $.
+    $( Conversion of implicit substitution to explicit class substitution,
+       deduction form.  (Contributed by Mario Carneiro, 2-Jan-2017.) $)
+    csbied2 $p |- ( ph -> [_ A / x ]_ C = D ) $=
+      ( cv wceq id sylan9eqr syldan csbied ) ABCEFGHABKZCLZQDLEFLRAQCDRMINJOP
+      $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d z C $.  $d x y z D $.
+    csbie2t.1 $e |- A e. _V $.
+    csbie2t.2 $e |- B e. _V $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class (closed form of ~ csbie2 ).  (Contributed by NM, 3-Sep-2007.)
+       (Revised by Mario Carneiro, 13-Oct-2016.) $)
+    csbie2t $p |- ( A. x A. y ( ( x = A /\ y = B ) -> C = D ) ->
+                  [_ A / x ]_ [_ B / y ]_ C = D ) $=
+      ( cv wceq wa wi wal csb cvv nfa1 nfcvd wcel a1i csbiedf nfa2 nfv nfan sps
+      sp impl ) AICJZBIDJZKEFJZLZBMZAMZACBDENFOUKAPULAFQCORULGSULUGKZBDEFOULUGB
+      UJBAUAUGBUBUCUMBFQDORUMHSULUGUHUIUKUJAUJBUEUDUFTT $.
+
+    csbie2.3 $e |- ( ( x = A /\ y = B ) -> C = D ) $.
+    $( Conversion of implicit substitution to explicit substitution into a
+       class.  (Contributed by NM, 27-Aug-2007.) $)
+    csbie2 $p |- [_ A / x ]_ [_ B / y ]_ C = D $=
+      ( cv wceq wa wi wal csb gen2 csbie2t ax-mp ) AJCKBJDKLEFKMZBNANACBDEOOFKS
+      ABIPABCDEFGHQR $.
+  $}
+
+  ${
+    $d x y z $.  $d A y z $.  $d B y z $.  $d C x $.  $d D y z $.  $d V z $.
+    csbie2g.1 $e |- ( x = y -> B = C ) $.
+    csbie2g.2 $e |- ( y = A -> C = D ) $.
+    $( Conversion of implicit substitution to explicit class substitution.
+       This version of ~ sbcie avoids a disjointness condition on ` x ` and
+       ` A ` by substituting twice.  (Contributed by Mario Carneiro,
+       11-Nov-2016.) $)
+    csbie2g $p |- ( A e. V -> [_ A / x ]_ B = D ) $=
+      ( vz wcel csb cv wsbc cab df-csb wceq eleq2d sbcie2g abbi1dv syl5eq ) CGK
+      ZACDLJMZDKZACNZJOFAJCDPUBUEJFUDUCEKUCFKABCGAMBMZQDEUCHRUFCQEFUCIRSTUA $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z A $.  $d z B $.  $d z C $.  $d z ph $.
+    $( Nest the composition of two substitutions.  (Contributed by Mario
+       Carneiro, 11-Nov-2016.) $)
+    sbcnestgf $p |- ( ( A e. V /\ A. y F/ x ph ) ->
+         ( [. A / x ]. [. B / y ]. ph <-> [. [_ A / x ]_ B / y ]. ph ) ) $=
+      ( vz wcel wnf wal wsbc csb wb cv wi wceq dfsbcq syl cvv a1i csbeq1 imbi2d
+      bibi12d vex csbeq1a adantl nfnf1 nfal nfa1 wnfc nfcsb1v sp nfsbcd sbciedf
+      vtoclg imp ) DFHABIZCJZACEKZBDKZACBDELZKZMZURUSBGNZKZACBVDELZKZMZOURVCOGD
+      FVDDPZVHVCURVIVEUTVGVBUSBVDDQVIVFVAPVGVBMBVDDEUAACVFVAQRUCUBURUSVGBVDSVDS
+      HURGUDTBNVDPZUSVGMZURVJEVFPVKBVDEUEACEVFQRUFUQBCABUGUHURABCVFUQCUIBVFUJUR
+      BVDEUKTUQCULUMUNUOUP $.
+
+    $( Nest the composition of two substitutions.  (Contributed by NM,
+       23-Nov-2005.)  (Proof shortened by Mario Carneiro, 10-Nov-2016.) $)
+    csbnestgf $p |- ( ( A e. V /\ A. y F/_ x C ) ->
+         [_ A / x ]_ [_ B / y ]_ C = [_ [_ A / x ]_ B / y ]_ C ) $=
+      ( vz wcel wnfc wal wa cv csb wsbc cab cvv wceq elex df-csb abeq2i wb nfcr
+      sbcbii wnf alimi sbcnestgf sylan2 syl5bb abbidv sylan 3eqtr4g ) CFHZAEIZB
+      JZKGLZBDEMZHZACNZGOZUOEHZBACDMZNZGOZACUPMBVAEMULCPHZUNUSVCQCFRVDUNKZURVBG
+      URUTBDNZACNZVEVBUQVFACVFGUPBGDESTUCUNVDUTAUDZBJVGVBUAUMVHBAGEUBUEUTABCDPU
+      FUGUHUIUJAGCUPSBGVAESUK $.
+
+    $d x ph $.
+    $( Nest the composition of two substitutions.  (Contributed by NM,
+       27-Nov-2005.)  (Proof shortened by Mario Carneiro, 11-Nov-2016.) $)
+    sbcnestg $p |- ( A e. V ->
+          ( [. A / x ]. [. B / y ]. ph <-> [. [_ A / x ]_ B / y ]. ph ) ) $=
+      ( wcel wnf wal wsbc csb wb nfv ax-gen sbcnestgf mpan2 ) DFGABHZCIACEJBDJA
+      CBDEKJLQCABMNABCDEFOP $.
+
+    $d x C $.
+    $( Nest the composition of two substitutions.  (Contributed by NM,
+       23-Nov-2005.)  (Proof shortened by Mario Carneiro, 10-Nov-2016.) $)
+    csbnestg $p |- ( A e. V ->
+          [_ A / x ]_ [_ B / y ]_ C = [_ [_ A / x ]_ B / y ]_ C ) $=
+      ( wcel wnfc wal csb wceq nfcv ax-gen csbnestgf mpan2 ) CFGAEHZBIACBDEJJBA
+      CDJEJKPBAELMABCDEFNO $.
+  $}
+
+  ${
+    $d x C $.
+    $( Nest the composition of two substitutions.  (New usage is discouraged.)
+       (Proof modification is discouraged.)  (Contributed by NM,
+       23-Nov-2005.) $)
+    csbnestgOLD $p |- ( ( A e. V /\ A. x B e. W ) ->
+                  [_ A / x ]_ [_ B / y ]_ C = [_ [_ A / x ]_ B / y ]_ C ) $=
+      ( wcel csb wceq wal csbnestg adantr ) CFHACBDEIIBACDIEIJDGHAKABCDEFLM $.
+  $}
+
+  ${
+    $d x y $.  $d y C $.
+    $( Nest the composition of two substitutions.  (Contributed by NM,
+       23-May-2006.)  (Proof shortened by Mario Carneiro, 11-Nov-2016.) $)
+    csbnest1g $p |- ( A e. V ->
+         [_ A / x ]_ [_ B / x ]_ C = [_ [_ A / x ]_ B / x ]_ C ) $=
+      ( vy wcel cv csb wnfc wceq nfcsb1v ax-gen csbnestgf mpan2 csbeq2i 3eqtr3g
+      wal csbco ) BEGZABFCAFHZDIZIZIZFABCIZUBIZABACDIZIAUEDITAUBJZFRUDUFKUHFAUA
+      DLMAFBCUBENOABUCUGAFCDSPAFUEDSQ $.
+  $}
+
+  ${
+    $d x A $.
+    $( Idempotent law for class substitutions.  (Contributed by NM,
+       1-Mar-2008.) $)
+    csbidmg $p |- ( A e. V -> [_ A / x ]_ [_ A / x ]_ B = [_ A / x ]_ B ) $=
+      ( wcel cvv csb wceq elex csbnest1g csbconstg csbeq1d eqtrd syl ) BDEBFEZA
+      BABCGZGZPHBDIOQAABBGZCGPABBCFJOARBCABBFKLMN $.
+  $}
+
+  ${
+    $d x A $.  $d x ph $.  $d x C $.  $d x D $.
+    sbcco3g.1 $e |- ( x = A -> B = C ) $.
+    $( Composition of two substitutions.  (Contributed by NM, 27-Nov-2005.)
+       (Revised by Mario Carneiro, 11-Nov-2016.) $)
+    sbcco3g $p |- ( A e. V ->
+         ( [. A / x ]. [. B / y ]. ph <-> [. C / y ]. ph ) ) $=
+      ( wcel wsbc csb sbcnestg cvv wceq wb elex nfcvd csbiegf dfsbcq 3syl bitrd
+      ) DGIZACEJBDJACBDEKZJZACFJZABCDEGLUBDMIZUCFNUDUEODGPBDEFMUFBFQHRACUCFSTUA
+      $.
+
+    $( Composition of two substitutions.  (Contributed by NM, 27-Nov-2005.)
+       (New usage is discouraged.)  (Proof modification is discouraged.) $)
+    sbcco3gOLD $p |- ( ( A e. V /\ A. x B e. W ) ->
+                ( [. A / x ]. [. B / y ]. ph <-> [. C / y ]. ph ) ) $=
+      ( wcel wsbc wb wal sbcco3g adantr ) DGJACEKBDKACFKLEHJBMABCDEFGINO $.
+
+    $( Composition of two class substitutions.  (Contributed by NM,
+       27-Nov-2005.)  (Revised by Mario Carneiro, 11-Nov-2016.) $)
+    csbco3g $p |- ( A e. V ->
+                 [_ A / x ]_ [_ B / y ]_ D = [_ C / y ]_ D ) $=
+      ( wcel csb csbnestg cvv wceq elex nfcvd csbiegf syl csbeq1d eqtrd ) CGIZA
+      CBDFJJBACDJZFJBEFJABCDFGKTBUAEFTCLIZUAEMCGNACDELUBAEOHPQRS $.
+  $}
+
+  ${
+    $d x B $.  $d x D $.
+    $( Special case related to ~ rspsbc .  (Contributed by NM, 10-Dec-2005.)
+       (Proof shortened by Eric Schmidt, 17-Jan-2007.) $)
+    rspcsbela $p |- ( ( A e. B /\ A. x e. B C e. D ) -> [_ A / x ]_ C e. D ) $=
+      ( wcel wral csb wsbc rspsbc sbcel1g sylibd imp ) BCFZDEFZACGZABDHEFZNPOAB
+      IQOABCJABDECKLM $.
+  $}
+
+  ${
+    $d w x y z $.  $d w y z A $.
+    $( Two ways of expressing " ` x ` is (effectively) not free in ` A ` ."
+       (Contributed by Mario Carneiro, 14-Oct-2016.) $)
+    sbnfc2 $p |- ( F/_ x A <-> A. y A. z [_ y / x ]_ A = [_ z / x ]_ A ) $=
+      ( vw cv csb wceq wal cvv wcel vex csbtt mpan wsb wsbc sbsbc sbcel2g ax-mp
+      wb eqtr4d alrimivv nfv wnf eleq2 bitri 3bitr4g 2alimi sbnf2 sylibr impbii
+      wnfc nfcd ) ADULZABFZDGZACFZDGZHZCIBIZUNUSBCUNUPDURUOJKZUNUPDHBLZAUODJMNU
+      QJKZUNURDHCLZAUQDJMNUAUBUTAEDUTEUCUTEFZDKZABOZVFACOZTZCIBIVFAUDUSVIBCUSVE
+      UPKZVEURKZVGVHUPURVEUEVGVFAUOPZVJVFABQVAVLVJTVBAUOVEDJRSUFVHVFAUQPZVKVFAC
+      QVCVMVKTVDAUQVEDJRSUFUGUHVFABCUIUJUMUK $.
+  $}
+
+  ${
+    $d y z A $.  $d z ph $.  $d x y z $.  $d V z $.
+    $( Move substitution into a class abstraction.  (Contributed by NM,
+       13-Dec-2005.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
+    csbabg $p |- ( A e. V ->
+                 [_ A / x ]_ { y | ph } = { y | [. A / x ]. ph } ) $=
+      ( vz wcel cab csb wsbc cv sbccom wsb df-clab sbsbc sbcbii 3bitr4i sbcel2g
+      bitri syl5rbb eqrdv ) DEGZFBDACHZIZABDJZCHZFKZUFGZUGUCGZBDJZUBUGUDGUECUGJ
+      ZACUGJZBDJUHUJACBUGDLUHUECFMUKUEFCNUECFOSUIULBDUIACFMULAFCNACFOSPQBDUGUCE
+      RTUA $.
+  $}
+
+  ${
+    $d x v z $.  $d y v z $.  $d A w v z $.  $d B w v z $.  $d ph v z $.
+    $d ps v z $.
+    cbvralcsf.1 $e |- F/_ y A $.
+    cbvralcsf.2 $e |- F/_ x B $.
+    cbvralcsf.3 $e |- F/ y ph $.
+    cbvralcsf.4 $e |- F/ x ps $.
+    cbvralcsf.5 $e |- ( x = y -> A = B ) $.
+    cbvralcsf.6 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( A more general version of ~ cbvralf that doesn't require ` A ` and ` B `
+       to be distinct from ` x ` or ` y ` .  Changes bound variables using
+       implicit substitution.  (Contributed by Andrew Salmon, 13-Jul-2011.) $)
+    cbvralcsf $p |- ( A. x e. A ph <-> A. y e. B ps ) $=
+      ( vz vv cv wcel wi wal wsbc nfcri wral csb nfv nfcsb1v nfsbc1v id csbeq1a
+      nfim weq eleq12d sbceq1a imbi12d cbval nfcv nfcsb nfsbc csbeq1 cab df-csb
+      eleq2d sbie sbsbc bitr3i abbi2i eqtr4i syl6eq dfsbcq syl6bb bitri 3bitr4i
+      wsb df-ral ) COZEPZAQZCRZDOZFPZBQZDRZACEUABDFUAVPMOZCWAEUBZPZACWASZQZMRVT
+      VOWECMVOMUCWCWDCCMWBCWAEUDTACWAUEUHCMUIZVNWCAWDWFVMWAEWBWFUFCWAEUGUJACWAU
+      KULUMWEVSMDWCWDDDMWBDCWAEDWAUNZGUOTADCWAWGIUPUHVSMUCMDUIZWCVRWDBWHWAVQWBF
+      WHUFWHWBCVQEUBZFCWAVQEUQWINOZEPZCVQSZNURFCNVQEUSWLNFWJFPZWKCDVKWLWKWMCDCN
+      FHTCDUIEFWJKUTVAWKCDVBVCVDVEVFUJWHWDACVQSZBACWAVQVGWNACDVKBACDVBABCDJLVAV
+      CVHULUMVIACEVLBDFVLVJ $.
+
+    $( A more general version of ~ cbvrexf that has no distinct variable
+       restrictions.  Changes bound variables using implicit substitution.
+       (Contributed by Andrew Salmon, 13-Jul-2011.)  (Proof shortened by Mario
+       Carneiro, 7-Dec-2014.) $)
+    cbvrexcsf $p |- ( E. x e. A ph <-> E. y e. B ps ) $=
+      ( vz vv cv wcel wa wex wsbc nfcri wrex csb nfv nfcsb1v nfsbc1v id csbeq1a
+      nfan weq eleq12d sbceq1a anbi12d cbvex nfcv nfcsb nfsbc csbeq1 cab df-csb
+      eleq2d sbie sbsbc bitr3i abbi2i eqtr4i syl6eq dfsbcq syl6bb bitri 3bitr4i
+      wsb df-rex ) COZEPZAQZCRZDOZFPZBQZDRZACEUABDFUAVPMOZCWAEUBZPZACWASZQZMRVT
+      VOWECMVOMUCWCWDCCMWBCWAEUDTACWAUEUHCMUIZVNWCAWDWFVMWAEWBWFUFCWAEUGUJACWAU
+      KULUMWEVSMDWCWDDDMWBDCWAEDWAUNZGUOTADCWAWGIUPUHVSMUCMDUIZWCVRWDBWHWAVQWBF
+      WHUFWHWBCVQEUBZFCWAVQEUQWINOZEPZCVQSZNURFCNVQEUSWLNFWJFPZWKCDVKWLWKWMCDCN
+      FHTCDUIEFWJKUTVAWKCDVBVCVDVEVFUJWHWDACVQSZBACWAVQVGWNACDVKBACDVBABCDJLVAV
+      CVHULUMVIACEVLBDFVLVJ $.
+
+    $( A more general version of ~ cbvreuv that has no distinct variable
+       rextrictions.  Changes bound variables using implicit substitution.
+       (Contributed by Andrew Salmon, 13-Jul-2011.) $)
+    cbvreucsf $p |- ( E! x e. A ph <-> E! y e. B ps ) $=
+      ( vz vv cv wcel wa weu wsb nfcri wreu csb nfv nfcsb1v nfan weq id csbeq1a
+      nfs1v eleq12d sbequ12 anbi12d cbveu nfcv nfcsb nfsb csbeq1 cab wsbc sbsbc
+      abbii eleq2d sbie bicomi abbi2i df-csb 3eqtr4ri syl6eq sbequ syl6bb bitri
+      df-reu 3bitr4i ) COZEPZAQZCRZDOZFPZBQZDRZACEUABDFUAVQMOZCWBEUBZPZACMSZQZM
+      RWAVPWFCMVPMUCWDWECCMWCCWBEUDTACMUIUECMUFZVOWDAWEWGVNWBEWCWGUGCWBEUHUJACM
+      UKULUMWFVTMDWDWEDDMWCDCWBEDWBUNGUOTACMDIUPUEVTMUCMDUFZWDVSWEBWHWBVRWCFWHU
+      GWHWCCVREUBZFCWBVREUQNOZEPZCDSZNURWKCVRUSZNURFWIWLWMNWKCDUTVAWLNFWLWJFPZW
+      KWNCDCNFHTCDUFEFWJKVBVCVDVECNVREVFVGVHUJWHWEACDSBAMDCVIABCDJLVCVJULUMVKAC
+      EVLBDFVLVM $.
+
+    $( A more general version of ~ cbvrab with no distinct variable
+       restrictions.  (Contributed by Andrew Salmon, 13-Jul-2011.) $)
+    cbvrabcsf $p |- { x e. A | ph } = { y e. B | ps } $=
+      ( vz vv cv wcel wa cab wsb nfcri crab csb nfv nfcsb1v nfan weq id csbeq1a
+      nfs1v eleq12d sbequ12 anbi12d cbvab nfcv nfcsb csbeq1 df-csb eleq2d sbsbc
+      nfsb wsbc bitr3i abbi2i eqtr4i syl6eq sbequ syl6bb eqtri df-rab 3eqtr4i
+      sbie ) COZEPZAQZCRZDOZFPZBQZDRZACEUABDFUAVOMOZCVTEUBZPZACMSZQZMRVSVNWDCMV
+      NMUCWBWCCCMWACVTEUDTACMUIUECMUFZVMWBAWCWEVLVTEWAWEUGCVTEUHUJACMUKULUMWDVR
+      MDWBWCDDMWADCVTEDVTUNGUOTACMDIUTUEVRMUCMDUFZWBVQWCBWFVTVPWAFWFUGWFWACVPEU
+      BZFCVTVPEUPWGNOZEPZCVPVAZNRFCNVPEUQWJNFWHFPZWICDSWJWIWKCDCNFHTCDUFEFWHKUR
+      VKWICDUSVBVCVDVEUJWFWCACDSBAMDCVFABCDJLVKVGULUMVHACEVIBDFVIVJ $.
+  $}
+
+  ${
+    $d A y $.  $d ps y $.  $d B x $.  $d ch x $.
+    cbvralv2.1 $e |- ( x = y -> ( ps <-> ch ) ) $.
+    cbvralv2.2 $e |- ( x = y -> A = B ) $.
+    $( Rule used to change the bound variable in a restricted universal
+       quantifier with implicit substitution which also changes the quantifier
+       domain.  (Contributed by David Moews, 1-May-2017.) $)
+    cbvralv2 $p |- ( A. x e. A ps <-> A. y e. B ch ) $=
+      ( nfcv nfv cbvralcsf ) ABCDEFDEICFIADJBCJHGK $.
+
+    $( Rule used to change the bound variable in a restricted existential
+       quantifier with implicit substitution which also changes the quantifier
+       domain.  (Contributed by David Moews, 1-May-2017.) $)
+    cbvrexv2 $p |- ( E. x e. A ps <-> E. y e. B ch ) $=
+      ( nfcv nfv cbvrexcsf ) ABCDEFDEICFIADJBCJHGK $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Define basic set operations and relations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new symbols. $)
+  $c \ $. $( Backslash (difference) $)
+  $c u. $. $( Cup (union) $)
+  $c i^i $. $( Cap (intersection) $)
+  $c C_ $. $( Subclass or subset symbol $)
+  $c C. $. $( Proper subclass or subset symbol $)
+
+  $( Extend class notation to include class difference (read:  " ` A ` minus
+     ` B ` "). $)
+  cdif $a class ( A \ B ) $.
+
+  $( Extend class notation to include union of two classes (read:  " ` A `
+     union ` B ` "). $)
+  cun $a class ( A u. B ) $.
+
+  $( Extend class notation to include the intersection of two classes
+     (read:  " ` A ` intersect ` B ` "). $)
+  cin $a class ( A i^i B ) $.
+
+  $( Extend wff notation to include the subclass relation.  This is
+     read " ` A ` is a subclass of ` B ` " or " ` B ` includes ` A ` ."  When
+     ` A ` exists as a set, it is also read " ` A ` is a subset of ` B ` ." $)
+  wss $a wff A C_ B $.
+
+  $( Extend wff notation with proper subclass relation. $)
+  wpss $a wff A C. B $.
+
+  ${
+    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
+    $d z B $.
+    $( Soundness justification theorem for ~ df-dif .  (Contributed by Rodolfo
+       Medina, 27-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    difjust $p |- { x | ( x e. A /\ -. x e. B ) }
+                  = { y | ( y e. A /\ -. y e. B ) } $=
+      ( vz cv wcel wn wa cab weq eleq1 notbid anbi12d cbvabv eqtri ) AFZCGZQDGZ
+      HZIZAJEFZCGZUBDGZHZIZEJBFZCGZUGDGZHZIZBJUAUFAEAEKZRUCTUEQUBCLULSUDQUBDLMN
+      OUFUKEBEBKZUCUHUEUJUBUGCLUMUDUIUBUGDLMNOP $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Define class difference, also called relative complement.  Definition
+       5.12 of [TakeutiZaring] p. 20.  Contrast this operation with union
+       ` ( A u. B ) ` ( ~ df-un ) and intersection ` ( A i^i B ) `
+       ( ~ df-in ).  Several notations are used in the literature; we chose the
+       ` \ ` convention used in Definition 5.3 of [Eisenberg] p. 67 instead of
+       the more common minus sign to reserve the latter for later use in, e.g.,
+       arithmetic.  We will use the terminology " ` A ` excludes ` B ` " to
+       mean ` A \ B ` .  We will use " ` B ` is removed from ` A ` " to mean
+       ` A \ { B } ` i.e. the removal of an element or equivalently the
+       exclusion of a singleton.  (Contributed by NM, 29-Apr-1994.) $)
+    df-dif $a |- ( A \ B ) = { x | ( x e. A /\ -. x e. B ) } $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
+    $d z B $.
+    $( Soundness justification theorem for ~ df-un .  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    unjust $p |- { x | ( x e. A \/ x e. B ) } = { y | ( y e. A \/ y e. B ) } $=
+      ( vz cv wcel wo cab weq eleq1 orbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCGZ
+      SDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAOSCKOSDKLMUBUFEBEBJTUDUAUESUCCKSUCDKL
+      MN $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Define the union of two classes.  Definition 5.6 of [TakeutiZaring]
+       p. 16.  Contrast this operation with difference ` ( A \ B ) `
+       ( ~ df-dif ) and intersection ` ( A i^i B ) ` ( ~ df-in ).  (Contributed
+       by NM, 23-Aug-1993.) $)
+    df-un $a |- ( A u. B ) = { x | ( x e. A \/ x e. B ) } $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d y A $.  $d y B $.  $d z x $.  $d z y $.  $d z A $.
+    $d z B $.
+    $( Soundness justification theorem for ~ df-in .  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    injust $p |- { x | ( x e. A /\ x e. B ) }
+                  = { y | ( y e. A /\ y e. B ) } $=
+      ( vz cv wcel wa cab weq eleq1 anbi12d cbvabv eqtri ) AFZCGZODGZHZAIEFZCGZ
+      SDGZHZEIBFZCGZUCDGZHZBIRUBAEAEJPTQUAOSCKOSDKLMUBUFEBEBJTUDUAUESUCCKSUCDKL
+      MN $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Define the intersection of two classes.  Definition 5.6 of
+       [TakeutiZaring] p. 16.  Contrast this operation with union
+       ` ( A u. B ) ` ( ~ df-un ) and difference ` ( A \ B ) ` ( ~ df-dif ).
+       (Contributed by NM, 29-Apr-1994.) $)
+    df-in $a |- ( A i^i B ) = { x | ( x e. A /\ x e. B ) } $.
+
+    $( Alternate definition for the intersection of two classes.  (Contributed
+       by NM, 6-Jul-2005.) $)
+    dfin5 $p |- ( A i^i B ) = { x e. A | x e. B } $=
+      ( cin cv wcel wa cab crab df-in df-rab eqtr4i ) BCDAEZBFMCFZGAHNABIABCJNA
+      BKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Alternate definition of class difference.  (Contributed by NM,
+       25-Mar-2004.) $)
+    dfdif2 $p |- ( A \ B ) = { x e. A | -. x e. B } $=
+      ( cdif cv wcel wn wa cab crab df-dif df-rab eqtr4i ) BCDAEZBFNCFGZHAIOABJ
+      ABCKOABLM $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Expansion of membership in a class difference.  (Contributed by NM,
+       29-Apr-1994.) $)
+    eldif $p |- ( A e. ( B \ C ) <-> ( A e. B /\ -. A e. C ) ) $=
+      ( vx cdif wcel cvv wn wa elex adantr cv wceq notbid anbi12d df-dif elab2g
+      eleq1 pm5.21nii ) ABCEZFAGFZABFZACFZHZIZATJUBUAUDABJKDLZBFZUFCFZHZIUEDATG
+      UFAMZUGUBUIUDUFABRUJUHUCUFACRNODBCPQS $.
+  $}
+
+  ${
+    eldifd.1 $e |- ( ph -> A e. B ) $.
+    eldifd.2 $e |- ( ph -> -. A e. C ) $.
+    $( If a class is in one class and not another, it is also in their
+       difference.  One-way deduction form of ~ eldif .  (Contributed by David
+       Moews, 1-May-2017.) $)
+    eldifd $p |- ( ph -> A e. ( B \ C ) ) $=
+      ( wcel wn cdif eldif sylanbrc ) ABCGBDGHBCDIGEFBCDJK $.
+  $}
+
+  ${
+    eldifad.1 $e |- ( ph -> A e. ( B \ C ) ) $.
+    $( If a class is in the difference of two classes, it is also in the
+       minuend.  One-way deduction form of ~ eldif .  (Contributed by David
+       Moews, 1-May-2017.) $)
+    eldifad $p |- ( ph -> A e. B ) $=
+      ( wcel wn cdif wa eldif sylib simpld ) ABCFZBDFGZABCDHFMNIEBCDJKL $.
+  $}
+
+  ${
+    eldifbd.1 $e |- ( ph -> A e. ( B \ C ) ) $.
+    $( If a class is in the difference of two classes, it is not in the
+       subtrahend.  One-way deduction form of ~ eldif .  (Contributed by David
+       Moews, 1-May-2017.) $)
+    eldifbd $p |- ( ph -> -. A e. C ) $=
+      ( wcel wn cdif wa eldif sylib simprd ) ABCFZBDFGZABCDHFMNIEBCDJKL $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Subclasses and subsets
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+  $( Define the subclass relationship.  Exercise 9 of [TakeutiZaring] p. 18.
+     Note that ` A C_ A ` (proved in ~ ssid ).  Contrast this relationship with
+     the relationship ` A C. B ` (as will be defined in ~ df-pss ).  For a more
+     traditional definition, but requiring a dummy variable, see ~ dfss2 (or
+     ~ dfss3 which is similar).  (Contributed by NM, 27-Apr-1994.) $)
+  df-ss $a |- ( A C_ B <-> ( A i^i B ) = A ) $.
+
+  $( Variant of subclass definition ~ df-ss .  (Contributed by NM,
+     3-Sep-2004.) $)
+  dfss $p |- ( A C_ B <-> A = ( A i^i B ) ) $=
+    ( wss cin wceq df-ss eqcom bitri ) ABCABDZAEAIEABFIAGH $.
+
+  $( Define proper subclass relationship between two classes.  Definition 5.9
+     of [TakeutiZaring] p. 17.  Note that ` -. A C. A ` (proved in ~ pssirr ).
+     Contrast this relationship with the relationship ` A C_ B ` (as defined in
+     ~ df-ss ).  Other possible definitions are given by ~ dfpss2 and
+     ~ dfpss3 .  (Contributed by NM, 7-Feb-1996.) $)
+  df-pss $a |- ( A C. B <-> ( A C_ B /\ A =/= B ) ) $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Alternate definition of the subclass relationship between two classes.
+       Definition 5.9 of [TakeutiZaring] p. 17.  (Contributed by NM,
+       8-Jan-2002.) $)
+    dfss2 $p |- ( A C_ B <-> A. x ( x e. A -> x e. B ) ) $=
+      ( wss cv wcel wa wb wal wi cin wceq dfss df-in eqeq2i abeq2 3bitri pm4.71
+      cab albii bitr4i ) BCDZAEZBFZUDUCCFZGZHZAIZUDUEJZAIUBBBCKZLBUFASZLUHBCMUJ
+      UKBABCNOUFABPQUIUGAUDUERTUA $.
+
+    $( Alternate definition of subclass relationship.  (Contributed by NM,
+       14-Oct-1999.) $)
+    dfss3 $p |- ( A C_ B <-> A. x e. A x e. B ) $=
+      ( wss cv wcel wi wal wral dfss2 df-ral bitr4i ) BCDAEZBFMCFZGAHNABIABCJNA
+      BKL $.
+  $}
+
+  ${
+    $d z y A $.  $d z y B $.  $d x z $.
+    dfss2f.1 $e |- F/_ x A $.
+    dfss2f.2 $e |- F/_ x B $.
+    $( Equivalence for subclass relation, using bound-variable hypotheses
+       instead of distinct variable conditions.  (Contributed by NM,
+       3-Jul-1994.)  (Revised by Andrew Salmon, 27-Aug-2011.) $)
+    dfss2f $p |- ( A C_ B <-> A. x ( x e. A -> x e. B ) ) $=
+      ( vz wss cv wcel wal dfss2 nfcri nfim nfv weq eleq1 imbi12d cbval bitri
+      wi ) BCGFHZBIZUACIZTZFJAHZBIZUECIZTZAJFBCKUDUHFAUBUCAAFBDLAFCELMUHFNFAOUB
+      UFUCUGUAUEBPUAUECPQRS $.
+
+    $d y A $.  $d y B $.
+    $( Equivalence for subclass relation, using bound-variable hypotheses
+       instead of distinct variable conditions.  (Contributed by NM,
+       20-Mar-2004.) $)
+    dfss3f $p |- ( A C_ B <-> A. x e. A x e. B ) $=
+      ( wss cv wcel wi wal wral dfss2f df-ral bitr4i ) BCFAGZBHOCHZIAJPABKABCDE
+      LPABMN $.
+
+    $( If ` x ` is not free in ` A ` and ` B ` , it is not free in
+       ` A C_ B ` .  (Contributed by NM, 27-Dec-1996.) $)
+    nfss $p |- F/ x A C_ B $=
+      ( wss cv wcel wral dfss3f nfra1 nfxfr ) BCFAGCHZABIAABCDEJMABKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Membership relationships follow from a subclass relationship.
+       (Contributed by NM, 5-Aug-1993.) $)
+    ssel $p |- ( A C_ B -> ( C e. A -> C e. B ) ) $=
+      ( vx wss cv wceq wa wex wi wal dfss2 biimpi 19.21bi anim2d eximdv df-clel
+      wcel 3imtr4g ) ABEZDFZCGZUAARZHZDIUBUABRZHZDICARCBRTUDUFDTUCUEUBTUCUEJZDT
+      UGDKDABLMNOPDCAQDCBQS $.
+  $}
+
+  $( Membership relationships follow from a subclass relationship.
+     (Contributed by NM, 7-Jun-2004.) $)
+  ssel2 $p |- ( ( A C_ B /\ C e. A ) -> C e. B ) $=
+    ( wss wcel ssel imp ) ABDCAECBEABCFG $.
+
+  ${
+    sseli.1 $e |- A C_ B $.
+    $( Membership inference from subclass relationship.  (Contributed by NM,
+       5-Aug-1993.) $)
+    sseli $p |- ( C e. A -> C e. B ) $=
+      ( wss wcel wi ssel ax-mp ) ABECAFCBFGDABCHI $.
+
+    ${
+      sselii.2 $e |- C e. A $.
+      $( Membership inference from subclass relationship.  (Contributed by NM,
+         31-May-1999.) $)
+      sselii $p |- C e. B $=
+        ( wcel sseli ax-mp ) CAFCBFEABCDGH $.
+    $}
+
+    ${
+      sseldi.2 $e |- ( ph -> C e. A ) $.
+      $( Membership inference from subclass relationship.  (Contributed by NM,
+         25-Jun-2014.) $)
+      sseldi $p |- ( ph -> C e. B ) $=
+        ( wcel sseli syl ) ADBGDCGFBCDEHI $.
+    $}
+  $}
+
+  ${
+    sseld.1 $e |- ( ph -> A C_ B ) $.
+    $( Membership deduction from subclass relationship.  (Contributed by NM,
+       15-Nov-1995.) $)
+    sseld $p |- ( ph -> ( C e. A -> C e. B ) ) $=
+      ( wss wcel wi ssel syl ) ABCFDBGDCGHEBCDIJ $.
+
+    $( Membership deduction from subclass relationship.  (Contributed by NM,
+       26-Jun-2014.) $)
+    sselda $p |- ( ( ph /\ C e. A ) -> C e. B ) $=
+      ( wcel sseld imp ) ADBFDCFABCDEGH $.
+
+    ${
+      sseldd.2 $e |- ( ph -> C e. A ) $.
+      $( Membership inference from subclass relationship.  (Contributed by NM,
+         14-Dec-2004.) $)
+      sseldd $p |- ( ph -> C e. B ) $=
+        ( wcel sseld mpd ) ADBGDCGFABCDEHI $.
+    $}
+  $}
+
+  ${
+    ssneld.1 $e |- ( ph -> A C_ B ) $.
+    $( If a class is not in another class, it is also not in a subclass of that
+       class.  Deduction form.  (Contributed by David Moews, 1-May-2017.) $)
+    ssneld $p |- ( ph -> ( -. C e. B -> -. C e. A ) ) $=
+      ( wcel sseld con3d ) ADBFDCFABCDEGH $.
+
+    ssneldd.2 $e |- ( ph -> -. C e. B ) $.
+    $( If an element is not in a class, it is also not in a subclass of that
+       class.  Deduction form.  (Contributed by David Moews, 1-May-2017.) $)
+    ssneldd $p |- ( ph -> -. C e. A ) $=
+      ( wcel wn ssneld mpd ) ADCGHDBGHFABCDEIJ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    ssriv.1 $e |- ( x e. A -> x e. B ) $.
+    $( Inference rule based on subclass definition.  (Contributed by NM,
+       5-Aug-1993.) $)
+    ssriv $p |- A C_ B $=
+      ( wss cv wcel wi dfss2 mpgbir ) BCEAFZBGKCGHAABCIDJ $.
+  $}
+
+  ${
+    ssrd.0 $e |- F/ x ph $.
+    ssrd.1 $e |- F/_ x A $.
+    ssrd.2 $e |- F/_ x B $.
+    ssrd.3 $e |- ( ph -> ( x e. A -> x e. B ) ) $.
+    $( Deduction rule based on subclass definition.  (Contributed by Thierry
+       Arnoux, 8-Mar-2017.) $)
+    ssrd $p |- ( ph -> A C_ B ) $=
+      ( cv wcel wi wal wss alrimi dfss2f sylibr ) ABIZCJQDJKZBLCDMARBEHNBCDFGOP
+      $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ph $.
+    ssrdv.1 $e |- ( ph -> ( x e. A -> x e. B ) ) $.
+    $( Deduction rule based on subclass definition.  (Contributed by NM,
+       15-Nov-1995.) $)
+    ssrdv $p |- ( ph -> A C_ B ) $=
+      ( cv wcel wi wal wss alrimiv dfss2 sylibr ) ABFZCGNDGHZBICDJAOBEKBCDLM $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Transitivity of subclasses.  Exercise 5 of [TakeutiZaring] p. 17.
+       (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
+       14-Jun-2011.) $)
+    sstr2 $p |- ( A C_ B -> ( B C_ C -> A C_ C ) ) $=
+      ( vx wss cv wcel wi wal ssel imim1d alimdv dfss2 3imtr4g ) ABEZDFZBGZPCGZ
+      HZDIPAGZRHZDIBCEACEOSUADOTQRABPJKLDBCMDACMN $.
+  $}
+
+  $( Transitivity of subclasses.  Theorem 6 of [Suppes] p. 23.  (Contributed by
+     NM, 5-Sep-2003.) $)
+  sstr $p |- ( ( A C_ B /\ B C_ C ) -> A C_ C ) $=
+    ( wss sstr2 imp ) ABDBCDACDABCEF $.
+
+  ${
+    sstri.1 $e |- A C_ B $.
+    sstri.2 $e |- B C_ C $.
+    $( Subclass transitivity inference.  (Contributed by NM, 5-May-2000.) $)
+    sstri $p |- A C_ C $=
+      ( wss sstr2 mp2 ) ABFBCFACFDEABCGH $.
+  $}
+
+  ${
+    sstrd.1 $e |- ( ph -> A C_ B ) $.
+    sstrd.2 $e |- ( ph -> B C_ C ) $.
+    $( Subclass transitivity deduction.  (Contributed by NM, 2-Jun-2004.) $)
+    sstrd $p |- ( ph -> A C_ C ) $=
+      ( wss sstr syl2anc ) ABCGCDGBDGEFBCDHI $.
+  $}
+
+  ${
+    syl5ss.1 $e |- A C_ B $.
+    syl5ss.2 $e |- ( ph -> B C_ C ) $.
+    $( Subclass transitivity deduction.  (Contributed by NM, 6-Feb-2014.) $)
+    syl5ss $p |- ( ph -> A C_ C ) $=
+      ( wss a1i sstrd ) ABCDBCGAEHFI $.
+  $}
+
+  ${
+    syl6ss.1 $e |- ( ph -> A C_ B ) $.
+    syl6ss.2 $e |- B C_ C $.
+    $( Subclass transitivity deduction.  (Contributed by Jonathan Ben-Naim,
+       3-Jun-2011.) $)
+    syl6ss $p |- ( ph -> A C_ C ) $=
+      ( wss a1i sstrd ) ABCDECDGAFHI $.
+  $}
+
+  ${
+    sylan9ss.1 $e |- ( ph -> A C_ B ) $.
+    sylan9ss.2 $e |- ( ps -> B C_ C ) $.
+    $( A subclass transitivity deduction.  (Contributed by NM, 27-Sep-2004.)
+       (Proof shortened by Andrew Salmon, 14-Jun-2011.) $)
+    sylan9ss $p |- ( ( ph /\ ps ) -> A C_ C ) $=
+      ( wss sstr syl2an ) ACDHDEHCEHBFGCDEIJ $.
+  $}
+
+  ${
+    sylan9ssr.1 $e |- ( ph -> A C_ B ) $.
+    sylan9ssr.2 $e |- ( ps -> B C_ C ) $.
+    $( A subclass transitivity deduction.  (Contributed by NM, 27-Sep-2004.) $)
+    sylan9ssr $p |- ( ( ps /\ ph ) -> A C_ C ) $=
+      ( wss sylan9ss ancoms ) ABCEHABCDEFGIJ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( The subclass relationship is antisymmetric.  Compare Theorem 4 of
+       [Suppes] p. 22.  (Contributed by NM, 5-Aug-1993.) $)
+    eqss $p |- ( A = B <-> ( A C_ B /\ B C_ A ) ) $=
+      ( vx cv wcel wb wal wi wa wceq wss albiim dfcleq dfss2 anbi12i 3bitr4i )
+      CDZAEZQBEZFCGRSHCGZSRHCGZIABJABKZBAKZIRSCLCABMUBTUCUACABNCBANOP $.
+  $}
+
+  ${
+    eqssi.1 $e |- A C_ B $.
+    eqssi.2 $e |- B C_ A $.
+    $( Infer equality from two subclass relationships.  Compare Theorem 4 of
+       [Suppes] p. 22.  (Contributed by NM, 9-Sep-1993.) $)
+    eqssi $p |- A = B $=
+      ( wceq wss eqss mpbir2an ) ABEABFBAFCDABGH $.
+  $}
+
+  ${
+    eqssd.1 $e |- ( ph -> A C_ B ) $.
+    eqssd.2 $e |- ( ph -> B C_ A ) $.
+    $( Equality deduction from two subclass relationships.  Compare Theorem 4
+       of [Suppes] p. 22.  (Contributed by NM, 27-Jun-2004.) $)
+    eqssd $p |- ( ph -> A = B ) $=
+      ( wss wceq eqss sylanbrc ) ABCFCBFBCGDEBCHI $.
+  $}
+
+  ${
+    eqrd.0 $e |- F/ x ph $.
+    eqrd.1 $e |- F/_ x A $.
+    eqrd.2 $e |- F/_ x B $.
+    eqrd.3 $e |- ( ph -> ( x e. A <-> x e. B ) ) $.
+    $( Deduce equality of classes from equivalence of membership.  (Contributed
+       by Thierry Arnoux, 21-Mar-2017.) $)
+    eqrd $p |- ( ph -> A = B ) $=
+      ( cv wcel biimpd ssrd biimprd eqssd ) ACDABCDEFGABIZCJZODJZHKLABDCEGFAPQH
+      MLN $.
+  $}
+
+  ${
+    $d A x $.
+    $( Any class is a subclass of itself.  Exercise 10 of [TakeutiZaring]
+       p. 18.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
+       Salmon, 14-Jun-2011.) $)
+    ssid $p |- A C_ A $=
+      ( vx cv wcel id ssriv ) BAABCADEF $.
+  $}
+
+  ${
+    $d A x $.
+    $( Any class is a subclass of the universal class.  (Contributed by NM,
+       31-Oct-1995.) $)
+    ssv $p |- A C_ _V $=
+      ( vx cvv cv elex ssriv ) BACBDAEF $.
+  $}
+
+  $( Equality theorem for subclasses.  (Contributed by NM, 5-Aug-1993.)  (Proof
+     shortened by Andrew Salmon, 21-Jun-2011.) $)
+  sseq1 $p |- ( A = B -> ( A C_ C <-> B C_ C ) ) $=
+    ( wceq wss wa wb eqss wi sstr2 adantl adantr impbid sylbi ) ABDABEZBAEZFZAC
+    EZBCEZGABHQRSPRSIOBACJKOSRIPABCJLMN $.
+
+  $( Equality theorem for the subclass relationship.  (Contributed by NM,
+     25-Jun-1998.) $)
+  sseq2 $p |- ( A = B -> ( C C_ A <-> C C_ B ) ) $=
+    ( wss wa wi wceq wb sstr2 com12 anim12i eqss dfbi2 3imtr4i ) ABDZBADZECADZC
+    BDZFZRQFZEABGQRHOSPTQORCABIJRPQCBAIJKABLQRMN $.
+
+  $( Equality theorem for the subclass relationship.  (Contributed by NM,
+     31-May-1999.) $)
+  sseq12 $p |- ( ( A = B /\ C = D ) -> ( A C_ C <-> B C_ D ) ) $=
+    ( wceq wss sseq1 sseq2 sylan9bb ) ABEACFBCFCDEBDFABCGCDBHI $.
+
+  ${
+    sseq1i.1 $e |- A = B $.
+    $( An equality inference for the subclass relationship.  (Contributed by
+       NM, 18-Aug-1993.) $)
+    sseq1i $p |- ( A C_ C <-> B C_ C ) $=
+      ( wceq wss wb sseq1 ax-mp ) ABEACFBCFGDABCHI $.
+
+    $( An equality inference for the subclass relationship.  (Contributed by
+       NM, 30-Aug-1993.) $)
+    sseq2i $p |- ( C C_ A <-> C C_ B ) $=
+      ( wceq wss wb sseq2 ax-mp ) ABECAFCBFGDABCHI $.
+
+    ${
+      sseq12i.2 $e |- C = D $.
+      $( An equality inference for the subclass relationship.  (Contributed by
+         NM, 31-May-1999.)  (Proof shortened by Eric Schmidt, 26-Jan-2007.) $)
+      sseq12i $p |- ( A C_ C <-> B C_ D ) $=
+        ( wceq wss wb sseq12 mp2an ) ABGCDGACHBDHIEFABCDJK $.
+    $}
+  $}
+
+  ${
+    sseq1d.1 $e |- ( ph -> A = B ) $.
+    $( An equality deduction for the subclass relationship.  (Contributed by
+       NM, 14-Aug-1994.) $)
+    sseq1d $p |- ( ph -> ( A C_ C <-> B C_ C ) ) $=
+      ( wceq wss wb sseq1 syl ) ABCFBDGCDGHEBCDIJ $.
+
+    $( An equality deduction for the subclass relationship.  (Contributed by
+       NM, 14-Aug-1994.) $)
+    sseq2d $p |- ( ph -> ( C C_ A <-> C C_ B ) ) $=
+      ( wceq wss wb sseq2 syl ) ABCFDBGDCGHEBCDIJ $.
+
+    ${
+      sseq12d.2 $e |- ( ph -> C = D ) $.
+      $( An equality deduction for the subclass relationship.  (Contributed by
+         NM, 31-May-1999.) $)
+      sseq12d $p |- ( ph -> ( A C_ C <-> B C_ D ) ) $=
+        ( wss sseq1d sseq2d bitrd ) ABDHCDHCEHABCDFIADECGJK $.
+    $}
+  $}
+
+  ${
+    eqsstr.1 $e |- A = B $.
+    eqsstr.2 $e |- B C_ C $.
+    $( Substitution of equality into a subclass relationship.  (Contributed by
+       NM, 16-Jul-1995.) $)
+    eqsstri $p |- A C_ C $=
+      ( wss sseq1i mpbir ) ACFBCFEABCDGH $.
+  $}
+
+  ${
+    eqsstr3.1 $e |- B = A $.
+    eqsstr3.2 $e |- B C_ C $.
+    $( Substitution of equality into a subclass relationship.  (Contributed by
+       NM, 19-Oct-1999.) $)
+    eqsstr3i $p |- A C_ C $=
+      ( eqcomi eqsstri ) ABCBADFEG $.
+  $}
+
+  ${
+    sseqtr.1 $e |- A C_ B $.
+    sseqtr.2 $e |- B = C $.
+    $( Substitution of equality into a subclass relationship.  (Contributed by
+       NM, 28-Jul-1995.) $)
+    sseqtri $p |- A C_ C $=
+      ( wss sseq2i mpbi ) ABFACFDBCAEGH $.
+  $}
+
+  ${
+    sseqtr4.1 $e |- A C_ B $.
+    sseqtr4.2 $e |- C = B $.
+    $( Substitution of equality into a subclass relationship.  (Contributed by
+       NM, 4-Apr-1995.) $)
+    sseqtr4i $p |- A C_ C $=
+      ( eqcomi sseqtri ) ABCDCBEFG $.
+  $}
+
+  ${
+    eqsstrd.1 $e |- ( ph -> A = B ) $.
+    eqsstrd.2 $e |- ( ph -> B C_ C ) $.
+    $( Substitution of equality into a subclass relationship.  (Contributed by
+       NM, 25-Apr-2004.) $)
+    eqsstrd $p |- ( ph -> A C_ C ) $=
+      ( wss sseq1d mpbird ) ABDGCDGFABCDEHI $.
+  $}
+
+  ${
+    eqsstr3d.1 $e |- ( ph -> B = A ) $.
+    eqsstr3d.2 $e |- ( ph -> B C_ C ) $.
+    $( Substitution of equality into a subclass relationship.  (Contributed by
+       NM, 25-Apr-2004.) $)
+    eqsstr3d $p |- ( ph -> A C_ C ) $=
+      ( eqcomd eqsstrd ) ABCDACBEGFH $.
+  $}
+
+  ${
+    sseqtrd.1 $e |- ( ph -> A C_ B ) $.
+    sseqtrd.2 $e |- ( ph -> B = C ) $.
+    $( Substitution of equality into a subclass relationship.  (Contributed by
+       NM, 25-Apr-2004.) $)
+    sseqtrd $p |- ( ph -> A C_ C ) $=
+      ( wss sseq2d mpbid ) ABCGBDGEACDBFHI $.
+  $}
+
+  ${
+    sseqtr4d.1 $e |- ( ph -> A C_ B ) $.
+    sseqtr4d.2 $e |- ( ph -> C = B ) $.
+    $( Substitution of equality into a subclass relationship.  (Contributed by
+       NM, 25-Apr-2004.) $)
+    sseqtr4d $p |- ( ph -> A C_ C ) $=
+      ( eqcomd sseqtrd ) ABCDEADCFGH $.
+  $}
+
+  ${
+    3sstr3.1 $e |- A C_ B $.
+    3sstr3.2 $e |- A = C $.
+    3sstr3.3 $e |- B = D $.
+    $( Substitution of equality in both sides of a subclass relationship.
+       (Contributed by NM, 13-Jan-1996.)  (Proof shortened by Eric Schmidt,
+       26-Jan-2007.) $)
+    3sstr3i $p |- C C_ D $=
+      ( wss sseq12i mpbi ) ABHCDHEACBDFGIJ $.
+  $}
+
+  ${
+    3sstr4.1 $e |- A C_ B $.
+    3sstr4.2 $e |- C = A $.
+    3sstr4.3 $e |- D = B $.
+    $( Substitution of equality in both sides of a subclass relationship.
+       (Contributed by NM, 13-Jan-1996.)  (Proof shortened by Eric Schmidt,
+       26-Jan-2007.) $)
+    3sstr4i $p |- C C_ D $=
+      ( wss sseq12i mpbir ) CDHABHECADBFGIJ $.
+  $}
+
+  ${
+    3sstr3g.1 $e |- ( ph -> A C_ B ) $.
+    3sstr3g.2 $e |- A = C $.
+    3sstr3g.3 $e |- B = D $.
+    $( Substitution of equality into both sides of a subclass relationship.
+       (Contributed by NM, 1-Oct-2000.) $)
+    3sstr3g $p |- ( ph -> C C_ D ) $=
+      ( wss sseq12i sylib ) ABCIDEIFBDCEGHJK $.
+  $}
+
+  ${
+    3sstr4g.1 $e |- ( ph -> A C_ B ) $.
+    3sstr4g.2 $e |- C = A $.
+    3sstr4g.3 $e |- D = B $.
+    $( Substitution of equality into both sides of a subclass relationship.
+       (Contributed by NM, 16-Aug-1994.)  (Proof shortened by Eric Schmidt,
+       26-Jan-2007.) $)
+    3sstr4g $p |- ( ph -> C C_ D ) $=
+      ( wss sseq12i sylibr ) ABCIDEIFDBECGHJK $.
+  $}
+
+  ${
+    3sstr3d.1 $e |- ( ph -> A C_ B ) $.
+    3sstr3d.2 $e |- ( ph -> A = C ) $.
+    3sstr3d.3 $e |- ( ph -> B = D ) $.
+    $( Substitution of equality into both sides of a subclass relationship.
+       (Contributed by NM, 1-Oct-2000.) $)
+    3sstr3d $p |- ( ph -> C C_ D ) $=
+      ( wss sseq12d mpbid ) ABCIDEIFABDCEGHJK $.
+  $}
+
+  ${
+    3sstr4d.1 $e |- ( ph -> A C_ B ) $.
+    3sstr4d.2 $e |- ( ph -> C = A ) $.
+    3sstr4d.3 $e |- ( ph -> D = B ) $.
+    $( Substitution of equality into both sides of a subclass relationship.
+       (Contributed by NM, 30-Nov-1995.)  (Proof shortened by Eric Schmidt,
+       26-Jan-2007.) $)
+    3sstr4d $p |- ( ph -> C C_ D ) $=
+      ( wss sseq12d mpbird ) ADEIBCIFADBECGHJK $.
+  $}
+
+  ${
+    syl5eqss.1 $e |- A = B $.
+    syl5eqss.2 $e |- ( ph -> B C_ C ) $.
+    $( B chained subclass and equality deduction.  (Contributed by NM,
+       25-Apr-2004.) $)
+    syl5eqss $p |- ( ph -> A C_ C ) $=
+      ( wss sseq1i sylibr ) ACDGBDGFBCDEHI $.
+  $}
+
+  ${
+    syl5eqssr.1 $e |- B = A $.
+    syl5eqssr.2 $e |- ( ph -> B C_ C ) $.
+    $( B chained subclass and equality deduction.  (Contributed by NM,
+       25-Apr-2004.) $)
+    syl5eqssr $p |- ( ph -> A C_ C ) $=
+      ( eqcomi syl5eqss ) ABCDCBEGFH $.
+  $}
+
+  ${
+    syl6sseq.1 $e |- ( ph -> A C_ B ) $.
+    syl6sseq.2 $e |- B = C $.
+    $( A chained subclass and equality deduction.  (Contributed by NM,
+       25-Apr-2004.) $)
+    syl6sseq $p |- ( ph -> A C_ C ) $=
+      ( wss sseq2i sylib ) ABCGBDGECDBFHI $.
+  $}
+
+  ${
+    syl6ssr.1 $e |- ( ph -> A C_ B ) $.
+    syl6ssr.2 $e |- C = B $.
+    $( A chained subclass and equality deduction.  (Contributed by NM,
+       25-Apr-2004.) $)
+    syl6sseqr $p |- ( ph -> A C_ C ) $=
+      ( eqcomi syl6sseq ) ABCDEDCFGH $.
+  $}
+
+  ${
+    syl5sseq.1 $e |- B C_ A $.
+    syl5sseq.2 $e |- ( ph -> A = C ) $.
+    $( Subclass transitivity deduction.  (Contributed by Jonathan Ben-Naim,
+       3-Jun-2011.) $)
+    syl5sseq $p |- ( ph -> B C_ C ) $=
+      ( wceq wss sseq2 biimpa sylancl ) ABDGZCBHZCDHZFELMNBDCIJK $.
+  $}
+
+  ${
+    syl5sseqr.1 $e |- B C_ A $.
+    syl5sseqr.2 $e |- ( ph -> C = A ) $.
+    $( Subclass transitivity deduction.  (Contributed by Jonathan Ben-Naim,
+       3-Jun-2011.) $)
+    syl5sseqr $p |- ( ph -> B C_ C ) $=
+      ( wss a1i sseqtr4d ) ACBDCBGAEHFI $.
+  $}
+
+  ${
+    syl6eqss.1 $e |- ( ph -> A = B ) $.
+    syl6eqss.2 $e |- B C_ C $.
+    $( A chained subclass and equality deduction.  (Contributed by Mario
+       Carneiro, 2-Jan-2017.) $)
+    syl6eqss $p |- ( ph -> A C_ C ) $=
+      ( wss a1i eqsstrd ) ABCDECDGAFHI $.
+  $}
+
+  ${
+    syl6eqssr.1 $e |- ( ph -> B = A ) $.
+    syl6eqssr.2 $e |- B C_ C $.
+    $( A chained subclass and equality deduction.  (Contributed by Mario
+       Carneiro, 2-Jan-2017.) $)
+    syl6eqssr $p |- ( ph -> A C_ C ) $=
+      ( eqcomd syl6eqss ) ABCDACBEGFH $.
+  $}
+
+  $( Equality implies the subclass relation.  (Contributed by NM, 5-Aug-1993.)
+     (Proof shortened by Andrew Salmon, 21-Jun-2011.) $)
+  eqimss $p |- ( A = B -> A C_ B ) $=
+    ( wceq wss eqss simplbi ) ABCABDBADABEF $.
+
+  $( Equality implies the subclass relation.  (Contributed by NM,
+     23-Nov-2003.) $)
+  eqimss2 $p |- ( B = A -> A C_ B ) $=
+    ( wss eqimss eqcoms ) ABCABABDE $.
+
+  ${
+    eqimssi.1 $e |- A = B $.
+    $( Infer subclass relationship from equality.  (Contributed by NM,
+       6-Jan-2007.) $)
+    eqimssi $p |- A C_ B $=
+      ( ssid sseqtri ) AABADCE $.
+
+    $( Infer subclass relationship from equality.  (Contributed by NM,
+       7-Jan-2007.) $)
+    eqimss2i $p |- B C_ A $=
+      ( ssid sseqtr4i ) BBABDCE $.
+  $}
+
+  $( Two classes are different if they don't include the same class.
+     (Contributed by NM, 23-Apr-2015.) $)
+  nssne1 $p |- ( ( A C_ B /\ -. A C_ C ) -> B =/= C ) $=
+    ( wss wn wne wceq sseq2 biimpcd necon3bd imp ) ABDZACDZEBCFLMBCBCGLMBCAHIJK
+    $.
+
+  $( Two classes are different if they are not subclasses of the same class.
+     (Contributed by NM, 23-Apr-2015.) $)
+  nssne2 $p |- ( ( A C_ C /\ -. B C_ C ) -> A =/= B ) $=
+    ( wss wn wne wceq sseq1 biimpcd necon3bd imp ) ACDZBCDZEABFLMABABGLMABCHIJK
+    $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Negation of subclass relationship.  One direction of Exercise 13 of
+       [TakeutiZaring] p. 18.  (Contributed by Jim Kingdon, 15-Jul-2018.) $)
+    nssr $p |- ( E. x ( x e. A /\ -. x e. B ) -> -. A C_ B ) $=
+      ( cv wcel wn wa wex wi wal wss exanaliim dfss2 sylnibr ) ADZBEZ
+      OCEZFGAHPQIAJBCKPQALABCMN $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Quantification restricted to a subclass.  (Contributed by NM,
+       11-Mar-2006.) $)
+    ssralv $p |- ( A C_ B -> ( A. x e. B ph -> A. x e. A ph ) ) $=
+      ( wss cv wcel ssel imim1d ralimdv2 ) CDEZAABDCKBFZCGLDGACDLHIJ $.
+
+    $( Existential quantification restricted to a subclass.  (Contributed by
+       NM, 11-Jan-2007.) $)
+    ssrexv $p |- ( A C_ B -> ( E. x e. A ph -> E. x e. B ph ) ) $=
+      ( wss cv wcel ssel anim1d reximdv2 ) CDEZAABCDKBFZCGLDGACDLHIJ $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( Restricted universal quantification on a subset in terms of superset.
+       (Contributed by Stefan O'Rear, 3-Apr-2015.) $)
+    ralss $p |- ( A C_ B -> ( A. x e. A ph <->
+          A. x e. B ( x e. A -> ph ) ) ) $=
+      ( wss cv wcel wi wa ssel pm4.71rd imbi1d impexp syl6bb ralbidv2 ) CDEZABF
+      ZCGZAHZBCDPSQDGZRIZAHTSHPRUAAPRTCDQJKLTRAMNO $.
+
+    $( Restricted existential quantification on a subset in terms of superset.
+       (Contributed by Stefan O'Rear, 3-Apr-2015.) $)
+    rexss $p |- ( A C_ B -> ( E. x e. A ph <->
+          E. x e. B ( x e. A /\ ph ) ) ) $=
+      ( wss cv wcel wa ssel pm4.71rd anbi1d anass syl6bb rexbidv2 ) CDEZABFZCGZ
+      AHZBCDORPDGZQHZAHSRHOQTAOQSCDPIJKSQALMN $.
+  $}
+
+  ${
+    $d ph y $.  $d ps y $.  $d x y $.
+    $( Class abstractions in a subclass relationship.  (Contributed by NM,
+       3-Jul-1994.) $)
+    ss2ab $p |- ( { x | ph } C_ { x | ps } <-> A. x ( ph -> ps ) ) $=
+      ( cab wss cv wcel wi wal nfab1 dfss2f abid imbi12i albii bitri ) ACDZBCDZ
+      ECFZPGZRQGZHZCIABHZCICPQACJBCJKUAUBCSATBACLBCLMNO $.
+  $}
+
+  ${
+    $d x A $.
+    $( Class abstraction in a subclass relationship.  (Contributed by NM,
+       16-Aug-2006.) $)
+    abss $p |- ( { x | ph } C_ A <-> A. x ( ph -> x e. A ) ) $=
+      ( cab wss cv wcel wi wal abid2 sseq2i ss2ab bitr3i ) ABDZCENBFCGZBDZEAOHB
+      IPCNBCJKAOBLM $.
+
+    $( Subclass of a class abstraction.  (Contributed by NM, 16-Aug-2006.) $)
+    ssab $p |- ( A C_ { x | ph } <-> A. x ( x e. A -> ph ) ) $=
+      ( cab wss cv wcel wi wal abid2 sseq1i ss2ab bitr3i ) CABDZEBFCGZBDZNEOAHB
+      IPCNBCJKOABLM $.
+
+    $( The relation for a subclass of a class abstraction is equivalent to
+       restricted quantification.  (Contributed by NM, 6-Sep-2006.) $)
+    ssabral $p |- ( A C_ { x | ph } <-> A. x e. A ph ) $=
+      ( cab wss cv wcel wi wal wral ssab df-ral bitr4i ) CABDEBFCGAHBIABCJABCKA
+      BCLM $.
+  $}
+
+  ${
+    ss2abi.1 $e |- ( ph -> ps ) $.
+    $( Inference of abstraction subclass from implication.  (Contributed by NM,
+       31-Mar-1995.) $)
+    ss2abi $p |- { x | ph } C_ { x | ps } $=
+      ( cab wss wi ss2ab mpgbir ) ACEBCEFABGCABCHDI $.
+  $}
+
+  ${
+    $d x ph $.
+    ss2abdv.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Deduction of abstraction subclass from implication.  (Contributed by NM,
+       29-Jul-2011.) $)
+    ss2abdv $p |- ( ph -> { x | ps } C_ { x | ch } ) $=
+      ( wi wal cab wss alrimiv ss2ab sylibr ) ABCFZDGBDHCDHIAMDEJBCDKL $.
+  $}
+
+  ${
+    $d x ph $.  $d x A $.
+    abssdv.1 $e |- ( ph -> ( ps -> x e. A ) ) $.
+    $( Deduction of abstraction subclass from implication.  (Contributed by NM,
+       20-Jan-2006.) $)
+    abssdv $p |- ( ph -> { x | ps } C_ A ) $=
+      ( cv wcel wi wal cab wss alrimiv abss sylibr ) ABCFDGHZCIBCJDKAOCELBCDMN
+      $.
+  $}
+
+  ${
+    $d x A $.
+    abssi.1 $e |- ( ph -> x e. A ) $.
+    $( Inference of abstraction subclass from implication.  (Contributed by NM,
+       20-Jan-2006.) $)
+    abssi $p |- { x | ph } C_ A $=
+      ( cab cv wcel ss2abi abid2 sseqtri ) ABEBFCGZBECAKBDHBCIJ $.
+  $}
+
+  $( Restricted abstraction classes in a subclass relationship.  (Contributed
+     by NM, 30-May-1999.) $)
+  ss2rab $p |- ( { x e. A | ph } C_ { x e. A | ps } <->
+               A. x e. A ( ph -> ps ) ) $=
+    ( crab wss cv wcel wa cab wi wal df-rab sseq12i ss2ab df-ral imdistan albii
+    wral bitr2i 3bitri ) ACDEZBCDEZFCGDHZAIZCJZUDBIZCJZFUEUGKZCLZABKZCDSZUBUFUC
+    UHACDMBCDMNUEUGCOULUDUKKZCLUJUKCDPUMUICUDABQRTUA $.
+
+  ${
+    $d x B $.
+    $( Restricted class abstraction in a subclass relationship.  (Contributed
+       by NM, 16-Aug-2006.) $)
+    rabss $p |- ( { x e. A | ph } C_ B <-> A. x e. A ( ph -> x e. B ) ) $=
+      ( crab wss cv wcel wa cab wal wral df-rab sseq1i abss impexp albii df-ral
+      wi bitr4i 3bitri ) ABCEZDFBGZCHZAIZBJZDFUEUCDHZSZBKZAUGSZBCLZUBUFDABCMNUE
+      BDOUIUDUJSZBKUKUHULBUDAUGPQUJBCRTUA $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Subclass of a restricted class abstraction.  (Contributed by NM,
+       16-Aug-2006.) $)
+    ssrab $p |- ( B C_ { x e. A | ph } <-> ( B C_ A /\ A. x e. B ph ) ) $=
+      ( crab wss cv wcel wa cab wal wral df-rab sseq2i ssab dfss3 anbi1i r19.26
+      wi df-ral 3bitr2ri 3bitri ) DABCEZFDBGZCHZAIZBJZFUDDHUFSBKZDCFZABDLZIZUCU
+      GDABCMNUFBDOUKUEBDLZUJIUFBDLUHUIULUJBDCPQUEABDRUFBDTUAUB $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ph $.
+    ssrabdv.1 $e |- ( ph -> B C_ A ) $.
+    ssrabdv.2 $e |- ( ( ph /\ x e. B ) -> ps ) $.
+    $( Subclass of a restricted class abstraction (deduction rule).
+       (Contributed by NM, 31-Aug-2006.) $)
+    ssrabdv $p |- ( ph -> B C_ { x e. A | ps } ) $=
+      ( wss wral crab ralrimiva ssrab sylanbrc ) AEDHBCEIEBCDJHFABCEGKBCDELM $.
+  $}
+
+  ${
+    $d x B $.  $d x ph $.
+    rabssdv.1 $e |- ( ( ph /\ x e. A /\ ps ) -> x e. B ) $.
+    $( Subclass of a restricted class abstraction (deduction rule).
+       (Contributed by NM, 2-Feb-2015.) $)
+    rabssdv $p |- ( ph -> { x e. A | ps } C_ B ) $=
+      ( cv wcel wi wral crab wss 3exp ralrimiv rabss sylibr ) ABCGZEHZIZCDJBCDK
+      ELASCDAQDHBRFMNBCDEOP $.
+  $}
+
+  ${
+    $d x ph $.
+    ss2rabdv.1 $e |- ( ( ph /\ x e. A ) -> ( ps -> ch ) ) $.
+    $( Deduction of restricted abstraction subclass from implication.
+       (Contributed by NM, 30-May-2006.) $)
+    ss2rabdv $p |- ( ph -> { x e. A | ps } C_ { x e. A | ch } ) $=
+      ( wi wral crab wss ralrimiva ss2rab sylibr ) ABCGZDEHBDEICDEIJANDEFKBCDEL
+      M $.
+  $}
+
+  ${
+    ss2rabi.1 $e |- ( x e. A -> ( ph -> ps ) ) $.
+    $( Inference of restricted abstraction subclass from implication.
+       (Contributed by NM, 14-Oct-1999.) $)
+    ss2rabi $p |- { x e. A | ph } C_ { x e. A | ps } $=
+      ( crab wss wi ss2rab mprgbir ) ACDFBCDFGABHCDABCDIEJ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Subclass law for restricted abstraction.  (Contributed by NM,
+       18-Dec-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    rabss2 $p |- ( A C_ B -> { x e. A | ph } C_ { x e. B | ph } ) $=
+      ( wss cv wcel wa cab crab wi wal pm3.45 alimi dfss2 ss2ab 3imtr4i 3sstr4g
+      df-rab ) CDEZBFZCGZAHZBIZUADGZAHZBIZABCJABDJUBUEKZBLUCUFKZBLTUDUGEUHUIBUB
+      UEAMNBCDOUCUFBPQABCSABDSR $.
+
+    $( Subclass relation for the restriction of a class abstraction.
+       (Contributed by NM, 31-Mar-1995.) $)
+    ssab2 $p |- { x | ( x e. A /\ ph ) } C_ A $=
+      ( cv wcel wa simpl abssi ) BDCEZAFBCIAGH $.
+
+    $( Subclass relation for a restricted class.  (Contributed by NM,
+       19-Mar-1997.) $)
+    ssrab2 $p |- { x e. A | ph } C_ A $=
+      ( crab cv wcel wa cab df-rab ssab2 eqsstri ) ABCDBECFAGBHCABCIABCJK $.
+  $}
+
+  ${
+    $d V x $.
+    $( If the restricting class of a restricted class abstraction is a subset
+       of this restricted class abstraction, it is equal to this restricted
+       class abstraction.  (Contributed by Alexander van der Vekens,
+       31-Dec-2017.) $)
+    ssrabeq $p |- ( V C_ { x e. V | ph } <-> V = { x e. V | ph } ) $=
+      ( crab wss wa wceq ssrab2 biantru eqss bitr4i ) CABCDZEZMLCEZFCLGNMABCHIC
+      LJK $.
+  $}
+
+  $( A restricted class is a subclass of the corresponding unrestricted class.
+     (Contributed by Mario Carneiro, 23-Dec-2016.) $)
+  rabssab $p |- { x e. A | ph } C_ { x | ph } $=
+    ( crab cv wcel wa cab df-rab simpr ss2abi eqsstri ) ABCDBECFZAGZBHABHABCINA
+    BMAJKL $.
+
+  ${
+    $d x y $.  $d y z A $.  $d y z B $.  $d x z C $.
+    $( A subset relationship useful for converting union to indexed union using
+       dfiun2 or dfiun2g and intersection to indexed intersection using
+       dfiin2 .  (Contributed by NM, 5-Oct-2006.)  (Proof shortened by Mario
+       Carneiro, 26-Sep-2015.) $)
+    uniiunlem $p |- ( A. x e. A B e. D ->
+                     ( A. x e. A B e. C <-> { y | E. x e. A y = B } C_ C ) ) $=
+      ( vz cv wceq wrex cab wss wcel wi wal wral eqeq1 rexbidv cbvabv wb sseq1i
+      r19.23v albii ralcom4 abss 3bitr4i bitr4i nfv eleq1 ceqsalg ralbi syl5rbb
+      ralimi syl ) BHZDIZACJZBKZELZGHZDIZUTEMZNZGOZACPZDFMZACPZDEMZACPZUSVAACJZ
+      GKZELZVEURVKEUQVJBGUOUTIUPVAACUOUTDQRSUAVCACPZGOVJVBNZGOVEVLVMVNGVAVBACUB
+      UCVCAGCUDVJGEUEUFUGVGVDVHTZACPVEVITVFVOACVBVHGDFVHGUHUTDEUIUJUMVDVHACUKUN
+      UL $.
+  $}
+
+  $( Alternate definition of proper subclass.  (Contributed by NM,
+     7-Feb-1996.) $)
+  dfpss2 $p |- ( A C. B <-> ( A C_ B /\ -. A = B ) ) $=
+    ( wpss wss wne wa wceq wn df-pss df-ne anbi2i bitri ) ABCABDZABEZFMABGHZFAB
+    INOMABJKL $.
+
+  $( Alternate definition of proper subclass.  (Contributed by NM,
+     7-Feb-1996.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+  dfpss3 $p |- ( A C. B <-> ( A C_ B /\ -. B C_ A ) ) $=
+    ( wpss wss wceq wn wa dfpss2 eqss baib notbid pm5.32i bitri ) ABCABDZABEZFZ
+    GNBADZFZGABHNPRNOQONQABIJKLM $.
+
+  $( Equality theorem for proper subclass.  (Contributed by NM, 7-Feb-1996.) $)
+  psseq1 $p |- ( A = B -> ( A C. C <-> B C. C ) ) $=
+    ( wceq wss wne wa wpss sseq1 neeq1 anbi12d df-pss 3bitr4g ) ABDZACEZACFZGBC
+    EZBCFZGACHBCHNOQPRABCIABCJKACLBCLM $.
+
+  $( Equality theorem for proper subclass.  (Contributed by NM, 7-Feb-1996.) $)
+  psseq2 $p |- ( A = B -> ( C C. A <-> C C. B ) ) $=
+    ( wceq wss wne wa wpss sseq2 neeq2 anbi12d df-pss 3bitr4g ) ABDZCAEZCAFZGCB
+    EZCBFZGCAHCBHNOQPRABCIABCJKCALCBLM $.
+
+  ${
+    psseq1i.1 $e |- A = B $.
+    $( An equality inference for the proper subclass relationship.
+       (Contributed by NM, 9-Jun-2004.) $)
+    psseq1i $p |- ( A C. C <-> B C. C ) $=
+      ( wceq wpss wb psseq1 ax-mp ) ABEACFBCFGDABCHI $.
+
+    $( An equality inference for the proper subclass relationship.
+       (Contributed by NM, 9-Jun-2004.) $)
+    psseq2i $p |- ( C C. A <-> C C. B ) $=
+      ( wceq wpss wb psseq2 ax-mp ) ABECAFCBFGDABCHI $.
+
+    ${
+      psseq12i.2 $e |- C = D $.
+      $( An equality inference for the proper subclass relationship.
+         (Contributed by NM, 9-Jun-2004.) $)
+      psseq12i $p |- ( A C. C <-> B C. D ) $=
+        ( wpss psseq1i psseq2i bitri ) ACGBCGBDGABCEHCDBFIJ $.
+    $}
+  $}
+
+  ${
+    psseq1d.1 $e |- ( ph -> A = B ) $.
+    $( An equality deduction for the proper subclass relationship.
+       (Contributed by NM, 9-Jun-2004.) $)
+    psseq1d $p |- ( ph -> ( A C. C <-> B C. C ) ) $=
+      ( wceq wpss wb psseq1 syl ) ABCFBDGCDGHEBCDIJ $.
+
+    $( An equality deduction for the proper subclass relationship.
+       (Contributed by NM, 9-Jun-2004.) $)
+    psseq2d $p |- ( ph -> ( C C. A <-> C C. B ) ) $=
+      ( wceq wpss wb psseq2 syl ) ABCFDBGDCGHEBCDIJ $.
+
+    ${
+      psseq12d.2 $e |- ( ph -> C = D ) $.
+      $( An equality deduction for the proper subclass relationship.
+         (Contributed by NM, 9-Jun-2004.) $)
+      psseq12d $p |- ( ph -> ( A C. C <-> B C. D ) ) $=
+        ( wpss psseq1d psseq2d bitrd ) ABDHCDHCEHABCDFIADECGJK $.
+    $}
+  $}
+
+  $( A proper subclass is a subclass.  Theorem 10 of [Suppes] p. 23.
+     (Contributed by NM, 7-Feb-1996.) $)
+  pssss $p |- ( A C. B -> A C_ B ) $=
+    ( wpss wss wne df-pss simplbi ) ABCABDABEABFG $.
+
+  $( Two classes in a proper subclass relationship are not equal.  (Contributed
+     by NM, 16-Feb-2015.) $)
+  pssne $p |- ( A C. B -> A =/= B ) $=
+    ( wpss wss wne df-pss simprbi ) ABCABDABEABFG $.
+
+  ${
+    pssssd.1 $e |- ( ph -> A C. B ) $.
+    $( Deduce subclass from proper subclass.  (Contributed by NM,
+       29-Feb-1996.) $)
+    pssssd $p |- ( ph -> A C_ B ) $=
+      ( wpss wss pssss syl ) ABCEBCFDBCGH $.
+
+    $( Proper subclasses are unequal.  Deduction form of ~ pssne .
+       (Contributed by David Moews, 1-May-2017.) $)
+    pssned $p |- ( ph -> A =/= B ) $=
+      ( wpss wne pssne syl ) ABCEBCFDBCGH $.
+  $}
+
+  $( Subclass in terms of proper subclass.  (Contributed by Jim Kingdon,
+     16-Jul-2018.) $)
+  sspssr $p |- ( ( A C. B \/ A = B ) -> A C_ B ) $=
+    ( wpss wss wceq pssss eqimss jaoi ) ABCABDABEABFABGH $.
+
+  $( Proper subclass is irreflexive.  Theorem 7 of [Suppes] p. 23.
+     (Contributed by NM, 7-Feb-1996.) $)
+  pssirr $p |- -. A C. A $=
+    ( wpss wss wn wa pm3.24 dfpss3 mtbir ) AABAACZIDEIFAAGH $.
+
+  $( Proper subclass has no 2-cycle loops.  Compare Theorem 8 of [Suppes]
+     p. 23.  (Contributed by NM, 7-Feb-1996.)  (Proof shortened by Andrew
+     Salmon, 26-Jun-2011.) $)
+  pssn2lp $p |- -. ( A C. B /\ B C. A ) $=
+    ( wpss wn wi wa wss dfpss3 simprbi pssss nsyl imnan mpbi ) ABCZBACZDENOFDNB
+    AGZONABGPDABHIBAJKNOLM $.
+
+  $( Two ways of stating trichotomy with respect to inclusion.  (Contributed by
+     Jim Kingdon, 16-Jul-2018.) $)
+  sspsstrir $p |- ( ( A C. B \/ A = B \/ B C. A ) -> ( A C_ B \/ B C_ A ) ) $=
+    ( wpss wss wo wceq pssss orcd eqimss olcd 3jaoi ) ABCZABDZBADZEAB
+    FZBACZLMNABGHOMNABIHPNMBAGJK $.
+
+  $( Partial trichotomy law for subclasses.  (Contributed by NM, 16-May-1996.)
+     (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+  ssnpss $p |- ( A C_ B -> -. B C. A ) $=
+    ( wpss wss wn dfpss3 simprbi con2i ) BACZABDZIBADJEBAFGH $.
+
+  $( Like ~ pssn2lp but for subset and proper subset.  (Contributed by Jim
+     Kingdon, 17-Jul-2018.) $)
+  sspssn $p |- -. ( A C_ B /\ B C. A ) $=
+    ( wss wpss wa wn pm3.24 ssnpss anim2i ancoms mto ) ABCZBADZEMMFZE
+    ZMGMLOLNMABHIJK $.
+
+  $( Transitive law for proper subclass.  Theorem 9 of [Suppes] p. 23.
+     (Contributed by NM, 7-Feb-1996.) $)
+  psstr $p |- ( ( A C. B /\ B C. C ) -> A C. C ) $=
+    ( wpss wa wss wceq pssss sylan9ss pssn2lp psseq1 anbi1d mtbiri con2i dfpss2
+    wn sylanbrc ) ABDZBCDZEZACFACGZPACDRSABCABHBCHIUATUATCBDZSECBJUARUBSACBKLMN
+    ACOQ $.
+
+  $( Transitive law for subclass and proper subclass.  (Contributed by NM,
+     3-Apr-1996.) $)
+  sspsstr $p |- ( ( A C_ B /\ B C. C ) -> A C. C ) $=
+    ( wss wpss wa wceq wn id pssss sylan9ss sspssn sseq1 anbi1d con2i
+    mtbiri dfpss2 sylanbrc ) ABDZBCEZFZACDACGZHACESTABCSIBCJKUBUAUBUA
+    CBDZTFCBLUBSUCTACBMNPOACQR $.
+
+  $( Transitive law for subclass and proper subclass.  (Contributed by NM,
+     3-Apr-1996.) $)
+  psssstr $p |- ( ( A C. B /\ B C_ C ) -> A C. C ) $=
+    ( wpss wss wa wn pssss sylan9ss sspssn psseq1 anbi2d mtbiri con2i
+    wceq id ancoms dfpss2 sylanbrc ) ABDZBCEZFACEACOZGZACDTUAABCABHUA
+    PIUATUCUBUATFZUBUDUACBDZFBCJUBTUEUAACBKLMNQACRS $.
+
+  ${
+    psstrd.1 $e |- ( ph -> A C. B ) $.
+    psstrd.2 $e |- ( ph -> B C. C ) $.
+    $( Proper subclass inclusion is transitive.  Deduction form of ~ psstr .
+       (Contributed by David Moews, 1-May-2017.) $)
+    psstrd $p |- ( ph -> A C. C ) $=
+      ( wpss psstr syl2anc ) ABCGCDGBDGEFBCDHI $.
+  $}
+
+  ${
+    sspsstrd.1 $e |- ( ph -> A C_ B ) $.
+    sspsstrd.2 $e |- ( ph -> B C. C ) $.
+    $( Transitivity involving subclass and proper subclass inclusion.
+       Deduction form of ~ sspsstr .  (Contributed by David Moews,
+       1-May-2017.) $)
+    sspsstrd $p |- ( ph -> A C. C ) $=
+      ( wss wpss sspsstr syl2anc ) ABCGCDHBDHEFBCDIJ $.
+  $}
+
+  ${
+    psssstrd.1 $e |- ( ph -> A C. B ) $.
+    psssstrd.2 $e |- ( ph -> B C_ C ) $.
+    $( Transitivity involving subclass and proper subclass inclusion.
+       Deduction form of ~ psssstr .  (Contributed by David Moews,
+       1-May-2017.) $)
+    psssstrd $p |- ( ph -> A C. C ) $=
+      ( wpss wss psssstr syl2anc ) ABCGCDHBDGEFBCDIJ $.
+  $}
+
+$(
 ###############################################################################
                             CLASSICAL LOGIC
 ###############################################################################
@@ -24710,6 +26576,38 @@ htmldef "]." as
   /* althtmldef "]." as '&#x298E;'; */   /* corner tick */
   althtmldef "]." as ']&#803;';
   latexdef "]." as "\underaccent{\dot}{]}";
+htmldef "[_" as
+    "<IMG SRC='_ulbrack.gif' WIDTH=6 HEIGHT=19 ALT=' [_' TITLE='[_'>";
+  althtmldef "[_" as '<U>[</U>'; /* &lsqb; */
+  latexdef "[_" as "\underline{[}";
+htmldef "]_" as
+    "<IMG SRC='_urbrack.gif' WIDTH=5 HEIGHT=19 ALT=' ]_' TITLE=']_'>";
+  althtmldef "]_" as '<U>]</U>'; /* &rsqb; */
+  latexdef "]_" as "\underline{]}";
+htmldef "\" as
+    " <IMG SRC='setminus.gif' WIDTH=8 HEIGHT=19 ALT=' \' TITLE='\'> ";
+  althtmldef "\" as ' &#8726; '; /* &setmn; */
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "\" as "\setminus";
+htmldef "u." as
+    " <IMG SRC='cup.gif' WIDTH=10 HEIGHT=19 ALT=' u.' TITLE='u.'> ";
+  althtmldef "u." as ' &cup; ';
+  latexdef "u." as "\cup";
+htmldef "i^i" as
+    " <IMG SRC='cap.gif' WIDTH=10 HEIGHT=19 ALT=' i^i' TITLE='i^i'> ";
+  althtmldef "i^i" as ' &cap; ';
+  latexdef "i^i" as "\cap";
+htmldef "C_" as
+    " <IMG SRC='subseteq.gif' WIDTH=12 HEIGHT=19 ALT=' C_' TITLE='C_'> ";
+  althtmldef "C_" as ' &#8838; '; /* &subE; */
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "C_" as "\subseteq";
+htmldef "C." as
+    " <IMG SRC='subset.gif' WIDTH=12 HEIGHT=19 ALT=' C.' TITLE='C.'> ";
+  althtmldef "C." as ' &sub; ';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "C." as "\subset";
+
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
