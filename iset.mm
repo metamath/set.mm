@@ -25474,8 +25474,8 @@ $)
     $( Bound-variable hypothesis builder for class difference.  (Contributed by
        NM, 3-Dec-2003.)  (Revised by Mario Carneiro, 13-Oct-2016.) $)
     nfdif $p |- F/_ x ( A \ B ) $=
-      ( vy cdif cv wcel wn crab dfdif2 nfcri nfn nfrab nfcxfr ) ABCGFHCIZJZFBKF
-      BCLRAFBQAAFCEMNDOP $.
+      ( vy cdif cv wcel wn crab dfdif2 nfcri nfn nfrabxy nfcxfr ) ABCGFHCIZJZFB
+      KFBCLRAFBQAAFCEMNDOP $.
   $}
 
   $( Implication of membership in a class difference.  (Contributed by NM,
