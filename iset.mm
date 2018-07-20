@@ -25384,6 +25384,226 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        The difference, union, and intersection of two classes
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+      The difference of two classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Equality theorem for class difference.  (Contributed by NM,
+       10-Feb-1997.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    difeq1 $p |- ( A = B -> ( A \ C ) = ( B \ C ) ) $=
+      ( vx wceq cv wcel wn crab cdif rabeq dfdif2 3eqtr4g ) ABEDFCGHZDAINDBIACJ
+      BCJNDABKDACLDBCLM $.
+
+    $( Equality theorem for class difference.  (Contributed by NM,
+       10-Feb-1997.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    difeq2 $p |- ( A = B -> ( C \ A ) = ( C \ B ) ) $=
+      ( vx wceq cv wcel wn crab cdif eleq2 notbid rabbidv dfdif2 3eqtr4g ) ABEZ
+      DFZAGZHZDCIQBGZHZDCICAJCBJPSUADCPRTABQKLMDCANDCBNO $.
+  $}
+
+  $( Equality theorem for class difference.  (Contributed by FL,
+     31-Aug-2009.) $)
+  difeq12 $p |- ( ( A = B /\ C = D ) -> ( A \ C ) = ( B \ D ) ) $=
+    ( wceq cdif difeq1 difeq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
+
+  ${
+    difeq1i.1 $e |- A = B $.
+    $( Inference adding difference to the right in a class equality.
+       (Contributed by NM, 15-Nov-2002.) $)
+    difeq1i $p |- ( A \ C ) = ( B \ C ) $=
+      ( wceq cdif difeq1 ax-mp ) ABEACFBCFEDABCGH $.
+
+    $( Inference adding difference to the left in a class equality.
+       (Contributed by NM, 15-Nov-2002.) $)
+    difeq2i $p |- ( C \ A ) = ( C \ B ) $=
+      ( wceq cdif difeq2 ax-mp ) ABECAFCBFEDABCGH $.
+
+    ${
+      difeq12i.2 $e |- C = D $.
+      $( Equality inference for class difference.  (Contributed by NM,
+         29-Aug-2004.) $)
+      difeq12i $p |- ( A \ C ) = ( B \ D ) $=
+        ( cdif difeq1i difeq2i eqtri ) ACGBCGBDGABCEHCDBFIJ $.
+    $}
+  $}
+
+  ${
+    difeq1d.1 $e |- ( ph -> A = B ) $.
+    $( Deduction adding difference to the right in a class equality.
+       (Contributed by NM, 15-Nov-2002.) $)
+    difeq1d $p |- ( ph -> ( A \ C ) = ( B \ C ) ) $=
+      ( wceq cdif difeq1 syl ) ABCFBDGCDGFEBCDHI $.
+
+    $( Deduction adding difference to the left in a class equality.
+       (Contributed by NM, 15-Nov-2002.) $)
+    difeq2d $p |- ( ph -> ( C \ A ) = ( C \ B ) ) $=
+      ( wceq cdif difeq2 syl ) ABCFDBGDCGFEBCDHI $.
+  $}
+
+  ${
+    difeq12d.1 $e |- ( ph -> A = B ) $.
+    difeq12d.2 $e |- ( ph -> C = D ) $.
+    $( Equality deduction for class difference.  (Contributed by FL,
+       29-May-2014.) $)
+    difeq12d $p |- ( ph -> ( A \ C ) = ( B \ D ) ) $=
+      ( cdif difeq1d difeq2d eqtrd ) ABDHCDHCEHABCDFIADECGJK $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    difeqri.1 $e |- ( ( x e. A /\ -. x e. B ) <-> x e. C ) $.
+    $( Inference from membership to difference.  (Contributed by NM,
+       17-May-1998.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    difeqri $p |- ( A \ B ) = C $=
+      ( cdif cv wcel wn wa eldif bitri eqriv ) ABCFZDAGZNHOBHOCHIJODHOBCKELM $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    nfdif.1 $e |- F/_ x A $.
+    nfdif.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for class difference.  (Contributed by
+       NM, 3-Dec-2003.)  (Revised by Mario Carneiro, 13-Oct-2016.) $)
+    nfdif $p |- F/_ x ( A \ B ) $=
+      ( vy cdif cv wcel wn crab dfdif2 nfcri nfn nfrab nfcxfr ) ABCGFHCIZJZFBKF
+      BCLRAFBQAAFCEMNDOP $.
+  $}
+
+  $( Implication of membership in a class difference.  (Contributed by NM,
+     29-Apr-1994.) $)
+  eldifi $p |- ( A e. ( B \ C ) -> A e. B ) $=
+    ( cdif wcel wn eldif simplbi ) ABCDEABEACEFABCGH $.
+
+  $( Implication of membership in a class difference.  (Contributed by NM,
+     3-May-1994.) $)
+  eldifn $p |- ( A e. ( B \ C ) -> -. A e. C ) $=
+    ( cdif wcel wn eldif simprbi ) ABCDEABEACEFABCGH $.
+
+  $( A set does not belong to a class excluding it.  (Contributed by NM,
+     27-Jun-1994.) $)
+  elndif $p |- ( A e. B -> -. A e. ( C \ B ) ) $=
+    ( cdif wcel eldifn con2i ) ACBDEABEACBFG $.
+
+  $( Implication of membership in a class difference.  (Contributed by NM,
+     28-Jun-1994.) $)
+  neldif $p |- ( ( A e. B /\ -. A e. ( B \ C ) ) -> A e. C ) $=
+    ( wcel cdif wn eldif simplbi2 con1d imp ) ABDZABCEDZFACDZKMLLKMFABCGHIJ $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Double class difference.  Exercise 11 of [TakeutiZaring] p. 22.
+       (Contributed by NM, 17-May-1998.) $)
+    difdif $p |- ( A \ ( B \ A ) ) = A $=
+      ( vx cdif cv wcel wi wa wn pm4.45im eldif xchbinxr anbi2i bitr2i difeqri
+      iman ) CABADZACEZAFZSRBFZSGZHSRQFZIZHSTJUAUCSUATSIHUBTSPRBAKLMNO $.
+
+    $( Subclass relationship for class difference.  Exercise 14 of
+       [TakeutiZaring] p. 22.  (Contributed by NM, 29-Apr-1994.) $)
+    difss $p |- ( A \ B ) C_ A $=
+      ( vx cdif cv eldifi ssriv ) CABDACEABFG $.
+  $}
+
+  $( A difference of two classes is contained in the minuend.  Deduction form
+     of ~ difss .  (Contributed by David Moews, 1-May-2017.) $)
+  difssd $p |- ( ph -> ( A \ B ) C_ A ) $=
+    ( cdif wss difss a1i ) BCDBEABCFG $.
+
+  $( If a class is contained in a difference, it is contained in the minuend.
+     (Contributed by David Moews, 1-May-2017.) $)
+  difss2 $p |- ( A C_ ( B \ C ) -> A C_ B ) $=
+    ( cdif wss id difss syl6ss ) ABCDZEZAIBJFBCGH $.
+
+  ${
+    difss2d.1 $e |- ( ph -> A C_ ( B \ C ) ) $.
+    $( If a class is contained in a difference, it is contained in the
+       minuend.  Deduction form of ~ difss2 .  (Contributed by David Moews,
+       1-May-2017.) $)
+    difss2d $p |- ( ph -> A C_ B ) $=
+      ( cdif wss difss2 syl ) ABCDFGBCGEBCDHI $.
+  $}
+
+  $( Preservation of a subclass relationship by class difference.  (Contributed
+     by NM, 15-Feb-2007.) $)
+  ssdifss $p |- ( A C_ B -> ( A \ C ) C_ B ) $=
+    ( cdif wss difss sstr mpan ) ACDZAEABEIBEACFIABGH $.
+
+  ${
+    $d x A $.
+    $( Double complement under universal class.  Exercise 4.10(s) of
+       [Mendelson] p. 231.  (Contributed by NM, 8-Jan-2002.) $)
+    ddif $p |- ( _V \ ( _V \ A ) ) = A $=
+      ( vx cvv cdif cv wcel wn wa eldif mpbiran con2bii biantrur bitr2i difeqri
+      vex ) BCCADZABEZAFZQPFZGZQCFZTHSRSUARGBOZQCAIJKUATUBLMN $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Contraposition law for subsets.  (Contributed by NM, 22-Mar-1998.) $)
+    ssconb $p |- ( ( A C_ C /\ B C_ C ) ->
+                  ( A C_ ( C \ B ) <-> B C_ ( C \ A ) ) ) $=
+      ( vx wss wa cv wcel cdif wi wal wn wb ssel pm5.1 jcab 3bitr4g eldif dfss2
+      imbi2i syl2an con2b a1i anbi12d albidv ) ACEZBCEZFZDGZAHZUICBIZHZJZDKUIBH
+      ZUICAIZHZJZDKAUKEBUOEUHUMUQDUHUJUICHZUNLZFZJZUNURUJLZFZJZUMUQUHUJURJZUJUS
+      JZFUNURJZUNVBJZFVAVDUHVEVGVFVHUFVEVGVEVGMUGACUINBCUINVEVGOUAVFVHMUHUJUNUB
+      UCUDUJURUSPUNURVBPQULUTUJUICBRTUPVCUNUICARTQUEDAUKSDBUOSQ $.
+
+    $( Contraposition law for subsets.  Exercise 15 of [TakeutiZaring] p. 22.
+       (Contributed by NM, 22-Mar-1998.) $)
+    sscon $p |- ( A C_ B -> ( C \ B ) C_ ( C \ A ) ) $=
+      ( vx wss cdif cv wcel wn wa ssel con3d anim2d eldif 3imtr4g ssrdv ) ABEZD
+      CBFZCAFZQDGZCHZTBHZIZJUATAHZIZJTRHTSHQUCUEUAQUDUBABTKLMTCBNTCANOP $.
+
+    $( Difference law for subsets.  (Contributed by NM, 28-May-1998.) $)
+    ssdif $p |- ( A C_ B -> ( A \ C ) C_ ( B \ C ) ) $=
+      ( vx wss cdif cv wcel wn wa ssel anim1d eldif 3imtr4g ssrdv ) ABEZDACFZBC
+      FZPDGZAHZSCHIZJSBHZUAJSQHSRHPTUBUAABSKLSACMSBCMNO $.
+  $}
+
+  ${
+    ssdifd.1 $e |- ( ph -> A C_ B ) $.
+    $( If ` A ` is contained in ` B ` , then ` ( A \ C ) ` is contained in
+       ` ( B \ C ) ` .  Deduction form of ~ ssdif .  (Contributed by David
+       Moews, 1-May-2017.) $)
+    ssdifd $p |- ( ph -> ( A \ C ) C_ ( B \ C ) ) $=
+      ( wss cdif ssdif syl ) ABCFBDGCDGFEBCDHI $.
+
+    $( If ` A ` is contained in ` B ` , then ` ( C \ B ) ` is contained in
+       ` ( C \ A ) ` .  Deduction form of ~ sscon .  (Contributed by David
+       Moews, 1-May-2017.) $)
+    sscond $p |- ( ph -> ( C \ B ) C_ ( C \ A ) ) $=
+      ( wss cdif sscon syl ) ABCFDCGDBGFEBCDHI $.
+
+    $( If ` A ` is contained in ` B ` , then ` ( A \ C ) ` is also contained in
+       ` B ` .  Deduction form of ~ ssdifss .  (Contributed by David Moews,
+       1-May-2017.) $)
+    ssdifssd $p |- ( ph -> ( A \ C ) C_ B ) $=
+      ( wss cdif ssdifss syl ) ABCFBDGCFEBCDHI $.
+
+    ssdif2d.2 $e |- ( ph -> C C_ D ) $.
+    $( If ` A ` is contained in ` B ` and ` C ` is contained in ` D ` , then
+       ` ( A \ D ) ` is contained in ` ( B \ C ) ` .  Deduction form.
+       (Contributed by David Moews, 1-May-2017.) $)
+    ssdif2d $p |- ( ph -> ( A \ D ) C_ ( B \ C ) ) $=
+      ( cdif sscond ssdifd sstrd ) ABEHBDHCDHADEBGIABCDFJK $.
+  $}
+
+  $( Restricted universal quantification on a class difference in terms of an
+     implication.  (Contributed by Alexander van der Vekens, 3-Jan-2018.) $)
+  raldifb $p |- ( A. x e. A ( x e/ B -> ph ) <-> A. x e. ( A \ B ) ph ) $=
+    ( cv wnel wi cdif wcel wa impexp bicomi wn df-nel anbi2i eldif bitri imbi1i
+    ralbii2 ) BEZDFZAGZABCCDHZTCIZUBGZUDUAJZAGZTUCIZAGUGUEUDUAAKLUFUHAUFUDTDIMZ
+    JZUHUAUIUDTDNOUHUJTCDPLQRQS $.
+
+$(
 ###############################################################################
                             CLASSICAL LOGIC
 ###############################################################################
