@@ -25493,11 +25493,6 @@ $)
   elndif $p |- ( A e. B -> -. A e. ( C \ B ) ) $=
     ( cdif wcel eldifn con2i ) ACBDEABEACBFG $.
 
-  $( Implication of membership in a class difference.  (Contributed by NM,
-     28-Jun-1994.) $)
-  neldif $p |- ( ( A e. B /\ -. A e. ( B \ C ) ) -> A e. C ) $=
-    ( wcel cdif wn eldif simplbi2 con1d imp ) ABDZABCEDZFACDZKMLLKMFABCGHIJ $.
-
   ${
     $d x A $.  $d x B $.
     $( Double class difference.  Exercise 11 of [TakeutiZaring] p. 22.
