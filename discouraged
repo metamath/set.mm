@@ -17049,6 +17049,7 @@ New usage of "sbftOLD" is discouraged (0 uses).
 New usage of "sbieOLD" is discouraged (0 uses).
 New usage of "sbiedOLD" is discouraged (0 uses).
 New usage of "sbnOLD" is discouraged (0 uses).
+New usage of "sbtOLD" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
 New usage of "sh0" is discouraged (13 uses).
@@ -18297,6 +18298,7 @@ Proof modification of "sbieOLD" is discouraged (31 steps).
 Proof modification of "sbiedOLD" is discouraged (105 steps).
 Proof modification of "sbnOLD" is discouraged (127 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
+Proof modification of "sbtOLD" is discouraged (15 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "shmulclOLD" is discouraged (101 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
