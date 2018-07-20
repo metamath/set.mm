@@ -1,4 +1,4 @@
-$( iset.mm - Version of 17-Jul-2018
+$( iset.mm - Version of 19-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -19759,6 +19759,17 @@ $)
        (Contributed by NM, 19-Mar-1997.) $)
     nfrab1 $p |- F/_ x { x e. A | ph } $=
       ( crab cv wcel wa cab df-rab nfab1 nfcxfr ) BABCDBECFAGZBHABCILBJK $.
+  $}
+
+  ${
+    $d x y z $.  $d z A $.
+    nfrabxy.1 $e |- F/ x ph $.
+    nfrabxy.2 $e |- F/_ x A $.
+    $( A variable not free in a wff remains so in a restricted class
+       abstraction.  (Contributed by Jim Kingdon, 19-Jul-2018.) $)
+    nfrabxy $p |- F/_ x { y e. A | ph } $=
+      ( crab cv wcel wa cab df-rab nfcri nfan nfab nfcxfr ) BACDGCHDI
+      ZAJZCKACDLRBCQABBCDFMENOP $.
   $}
 
   ${
