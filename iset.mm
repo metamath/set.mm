@@ -25498,8 +25498,9 @@ $)
     $( Double class difference.  Exercise 11 of [TakeutiZaring] p. 22.
        (Contributed by NM, 17-May-1998.) $)
     difdif $p |- ( A \ ( B \ A ) ) = A $=
-      ( vx cdif cv wcel wi wa wn pm4.45im eldif xchbinxr anbi2i bitr2i difeqri
-      iman ) CABADZACEZAFZSRBFZSGZHSRQFZIZHSTJUAUCSUATSIHUBTSPRBAKLMNO $.
+      ( vx cdif cv wcel wn wa ax-ia1 wi pm4.45im imanim eldif sylnibr
+      anim2i sylbi impbii difeqri ) CABADZACEZAFZTSFZGZHZUAUAUCIUAUAT
+      BFZUAJZHUDUAUEKUFUCUAUFUEUAGHUBUEUALTBAMNOPQR $.
 
     $( Subclass relationship for class difference.  Exercise 14 of
        [TakeutiZaring] p. 22.  (Contributed by NM, 29-Apr-1994.) $)
