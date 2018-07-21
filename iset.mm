@@ -25534,11 +25534,14 @@ $)
 
   ${
     $d x A $.
-    $( Double complement under universal class.  Exercise 4.10(s) of
-       [Mendelson] p. 231.  (Contributed by NM, 8-Jan-2002.) $)
-    ddif $p |- ( _V \ ( _V \ A ) ) = A $=
-      ( vx cvv cdif cv wcel wn wa eldif mpbiran con2bii biantrur bitr2i difeqri
-      vex ) BCCADZABEZAFZQPFZGZQCFZTHSRSUARGBOZQCAIJKUATUBLMN $.
+    ddifnel.1 $e |- ( -. x e. ( _V \ A ) -> x e. A ) $.
+    $( Double complement under universal class.  The hypothesis is one way of
+       expressing the idea that membership in ` A ` is decidable.  Exercise
+       4.10(s) of [Mendelson] p. 231, but with an additional hypothesis.
+       (Contributed by NM, 8-Jan-2002.) $)
+    ddifnel $p |- ( _V \ ( _V \ A ) ) = A $=
+      ( cvv cdif cv wcel wn wa adantl elndif vex jctil impbii difeqri ) ADDBEZB
+      AFZDGZQPGHZIQBGZSTRCJTSRQBDKALMNO $.
   $}
 
   ${
