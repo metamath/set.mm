@@ -26021,17 +26021,6 @@ $)
   exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
     ( wal wn wex alex con2bii ) ABCADBEABFG $.
 
-  $( Part of theorem *11.5 in [WhiteheadRussell] p. 164.  (Contributed by
-     Andrew Salmon, 24-May-2011.) $)
-  2nalexn $p |- ( -. A. x A. y ph <-> E. x E. y -. ph ) $=
-    ( wn wex wal df-ex alex albii xchbinxr bicomi ) ADCEZBEZACFZBFZDMLDZBFOLBGN
-    PBACHIJK $.
-
-  $( A relationship between two quantifiers and negation.  (Contributed by NM,
-     18-Aug-1993.) $)
-  alexn $p |- ( A. x E. y -. ph <-> -. E. x A. y ph ) $=
-    ( wn wex wal exnal albii alnex bitri ) ADCEZBFACFZDZBFLBEDKMBACGHLBIJ $.
-
   ${
     19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
     $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
