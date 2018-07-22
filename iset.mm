@@ -26022,16 +26022,6 @@ $)
     ( wal wi wex 19.2 imim2i 19.35 sylibr ) ACDZBCDZEKBCFZEABECFLMKBCCGHABCIJ
     $.
 
-  ${
-    $d x ps $.  $d y ph $.
-    $( Special case of ~ 19.12 where its converse holds.  (Contributed by NM,
-       18-Jul-2001.)  (Revised by Andrew Salmon, 11-Jul-2011.) $)
-    19.12vv $p |- ( E. x A. y ( ph -> ps ) <-> A. y E. x ( ph -> ps ) ) $=
-      ( wal wex 19.21v exbii ax-17 hbal 19.36 19.36v albii 19.21h bitr2i 3bitri
-      wi ) ABQZDEZCFABDEZQZCFACEZTQZRCFZDEZSUACABDGHATCBCDBCIJKUEUBBQZDEUCUDUFD
-      ABCLMUBBDADCADIJNOP $.
-  $}
-
   $( Theorem 19.14 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
   exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
     ( wal wn wex alex con2bii ) ABCADBEABFG $.
