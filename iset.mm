@@ -26038,11 +26038,6 @@ $)
   alexn $p |- ( A. x E. y -. ph <-> -. E. x A. y ph ) $=
     ( wn wex wal exnal albii alnex bitri ) ADCEZBFACFZDZBFLBEDKMBACGHLBIJ $.
 
-  $( Theorem *11.51 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
-     Salmon, 24-May-2011.)  (Proof shortened by Wolf Lammen, 25-Sep-2014.) $)
-  2exnexn $p |- ( E. x A. y ph <-> -. A. x E. y -. ph ) $=
-    ( wn wex wal alexn con2bii ) ADCEBFACFBEABCGH $.
-
   ${
     19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
     $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
