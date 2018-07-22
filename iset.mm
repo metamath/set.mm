@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Jul-2018
+$( iset.mm - Version of 21-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11264,6 +11264,14 @@ $)
               ( E. y A. x ph -> E. y E. x ps ) ) $=
     ( wi wex wal 19.35-1 alimi exim syl ) ABECFZDGACGZBCFZEZDGMDFNDFELODABCHIMN
     DJK $.
+
+  $( Theorem 19.30 of [Margaris] p. 90, with an additional decidability
+     condition.  (Contributed by Jim Kingdon, 21-Jul-2018.) $)
+  19.30dc $p |- ( DECID E. x ps ->
+      ( A. x ( ph \/ ps ) -> ( A. x ph \/ E. x ps ) ) ) $=
+    ( wex wdc wn wo wal wi df-dc olc a1d alnex al2imi sylbir orc syl6
+    orel2 jaoi sylbi ) BCDZEUAUAFZGABGZCHZACHZUAGZIZUAJUAUGUBUAUFUDUA
+    UEKLUBUDUEUFUBBFZCHUDUEIBCMUHUCACBARNOUEUAPQST $.
 
   $( Theorem 19.43 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
      (Proof shortened by Mario Carneiro, 2-Feb-2015.) $)
@@ -26225,12 +26233,6 @@ $)
   exanali $p |- ( E. x ( ph /\ -. ps ) <-> -. A. x ( ph -> ps ) ) $=
     ( wn wa wex wi wal annim exbii exnal bitri ) ABDEZCFABGZDZCFNCHDMOCABIJNCKL
     $.
-
-  $( Theorem 19.30 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
-     (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-  19.30 $p |- ( A. x ( ph \/ ps ) -> ( A. x ph \/ E. x ps ) ) $=
-    ( wn wi wal wex wo exnal exim syl5bir df-or albii 3imtr4i ) ADZBEZCFZACFZDZ
-    BCGZEABHZCFRTHSOCGQTACIOBCJKUAPCABLMRTLN $.
 
   ${
     19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
