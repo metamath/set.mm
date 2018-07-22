@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Jul-2018
+$( iset.mm - Version of 22-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -11346,6 +11346,23 @@ $)
      (Contributed by O'Cat, 31-Mar-2008.) $)
   19.2 $p |- ( A. x ph -> E. y ph ) $=
     ( wex 19.8a sps ) AACDBACEF $.
+
+  ${
+    i19.24.1 $e |- ( ( A. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $.
+    $( Theorem 19.24 of [Margaris] p. 90, with an additional hypothesis.  The
+       hypothesis is the converse of ~ 19.35-1 , and is a theorem of classical
+       logic, but in intuitionistic logic it will only be provable for some
+       propositions.  (Contributed by Jim Kingdon, 22-Jul-2018.) $)
+    i19.24 $p |- ( ( A. x ph -> A. x ps ) -> E. x ( ph -> ps ) ) $=
+      ( wal wi wex 19.2 imim2i syl ) ACEZBCEZFKBCGZFABFCGLMKBCCHIDJ $.
+
+    $( Theorem 19.39 of [Margaris] p. 90, with an additional hypothesis.  The
+       hypothesis is the converse of ~ 19.35-1 , and is a theorem of classical
+       logic, but in intuitionistic logic it will only be provable for some
+       propositions.  (Contributed by Jim Kingdon, 22-Jul-2018.) $)
+    i19.39 $p |- ( ( E. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $=
+      ( wex wi wal 19.2 imim1i syl ) ACEZBCEZFACGZLFABFCEMKLACCHIDJ $.
+  $}
 
   $( A closed version of one direction of ~ 19.9 .  (Contributed by NM,
      5-Aug-1993.) $)
@@ -26005,17 +26022,6 @@ $)
     19.36v $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
       ( ax-17 19.36 ) ABCBCDE $.
   $}
-
-  $( Theorem 19.39 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-  19.39 $p |- ( ( E. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $=
-    ( wex wi wal 19.2 imim1i 19.35 sylibr ) ACDZBCDZEACFZLEABECDMKLACCGHABCIJ
-    $.
-
-  $( Theorem 19.24 of [Margaris] p. 90.  It does not hold in intuitionistic
-     logic.  (Contributed by NM, 5-Aug-1993.) $)
-  19.24 $p |- ( ( A. x ph -> A. x ps ) -> E. x ( ph -> ps ) ) $=
-    ( wal wi wex 19.2 imim2i 19.35 sylibr ) ACDZBCDZEKBCFZEABECFLMKBCCGHABCIJ
-    $.
 
   ${
     19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
