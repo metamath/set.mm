@@ -25896,12 +25896,6 @@ $)
       ( wn id nsyl2 ) BDZBAGECF $.
   $}
 
-  $( Simplification.  Similar to Theorem *3.26 (Simp) of [WhiteheadRussell]
-     p. 112.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
-     Lammen, 21-Jul-2012.) $)
-  simplim $p |- ( -. ( ph -> ps ) -> ph ) $=
-    ( wi pm2.21 con1i ) AABCABDE $.
-
   ${
     19.32.1 $e |- ( ph -> A. x ph ) $.
     $( Theorem 19.32 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
