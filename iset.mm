@@ -14684,8 +14684,8 @@ $)
 
   $( Define "there exists at most one ` x ` such that ` ph ` ."  Here we define
      it in terms of existential uniqueness.  Notation of [BellMachover] p. 460,
-     whose definition we show as ~ mo3 .  For other possible definitions see
-     ~ mo2 and ~ mo4 .  (Contributed by NM, 5-Aug-1993.) $)
+     whose definition we show as ~ mo3 .  For another possible definition see
+     ~ mo4 .  (Contributed by NM, 5-Aug-1993.) $)
   df-mo $a |- ( E* x ph <-> ( E. x ph -> E! x ph ) ) $.
 
   ${
@@ -15481,9 +15481,8 @@ $)
     $( This theorem provides us with a definition of double existential
        uniqueness ("exactly one ` x ` and exactly one ` y ` ").  Naively one
        might think (incorrectly) that it could be defined by
-       ` E! x E! y ph ` .  See ~ 2eu1 for a condition under which the naive
-       definition holds and ~ 2exeu for a one-way implication.  See ~ 2eu5 and
-       ~ 2eu8 for alternate definitions.  (Contributed by NM, 3-Dec-2001.) $)
+       ` E! x E! y ph ` .  See ~ 2exeu for a one-way implication.  (Contributed
+       by NM, 3-Dec-2001.) $)
     2eu4 $p |- ( ( E! x E. y ph /\ E! y E. x ph ) <->
       ( E. x E. y ph /\ E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) ) ) $=
       ( wex weu wa weq wal ax-17 eu3h anbi12i anbi2i bitri hba1 19.3h 19.26 albii
@@ -26035,91 +26034,6 @@ $)
       FKEKZDKCKABIZUIJZFKEKZDKCKACDEFNUNUQCDUMUPEFULUOUIUKBAUJBCEBCOUGUJBUGUJJU
       GAJZDFMUGBJZUGADFUGDOPURUSDFUSDOUHUGABUGUHABQGRUBSUCUASUDUETTUF $.
   $}
-
-  $( Double existential uniqueness.  This theorem shows a condition under which
-     a "naive" definition matches the correct one.  (Contributed by NM,
-     3-Dec-2001.) $)
-  2eu1 $p |- ( A. x E* y ph ->
-        ( E! x E! y ph <-> ( E! x E. y ph /\ E! y E. x ph ) ) ) $=
-    ( wmo wal weu wex wa wi eu5 exbii mobii anbi12i bitri simprbi anim2i ancoms
-    ax-4 sylib com12 moimi hba1 moanimh ancrd 2moswap imdistani syl 2eu2ex excom
-    syl6 jca jctild an4 syl6ibr 2exeu impbid1 ) ACDZBEZACFZBFZACGZBFZABGZCFZHZU
-    TURVEUTURVABGZVCCGZHZVABDZVCCDZHZHZVEUTURVKVHUTVAUQHZBDZURVKIUTVMBGZVNUTUSB
-    GZUSBDZHVOVNHUSBJVPVOVQVNUSVMBACJZKUSVMBVRLMNOVNURVIURHVKVNURVIVNURVAHZBDUR
-    VIIVSVMBVAURVMURUQVAUQBRPQUAURVABUQBUBUCSUDVIURVJURVIVJABCUETUFUJUGUTVFVGAB
-    CUHZUTVFVGVTABCUISUKULVEVFVIHZVGVJHZHVLVBWAVDWBVABJVCCJMVFVIVGVJUMNUNTABCUO
-    UP $.
-
-  $( Double existential uniqueness.  (Contributed by NM, 3-Dec-2001.) $)
-  2eu2 $p |- ( E! y E. x ph -> ( E! x E! y ph <-> E! x E. y ph ) ) $=
-    ( wex weu wmo wal wi eumo 2moex 2eu1 simpl syl6bi 3syl 2exeu expcom impbid
-    wa ) ABDZCEZACEBEZACDBEZTSCFACFBGZUAUBHSCIACBJUCUAUBTRUBABCKUBTLMNUBTUAABCO
-    PQ $.
-
-
-  $( Double existential uniqueness.  (Contributed by NM, 3-Dec-2001.) $)
-  2eu3 $p |- ( A. x A. y ( E* x ph \/ E* y ph ) ->
- ( ( E! x E! y ph /\ E! y E! x ph ) <-> ( E! x E. y ph /\ E! y E. x ph ) ) ) $=
-    ( wmo wo wal weu wa wex wb hbmo1 19.31 albii hbal 19.32 bitri wi 2eu1 2exeu
-    biimpd ancom syl6ib adantld adantrd jaoi ancoms jca impbid1 sylbi ) ABDZACD
-    ZECFZBFZUJCFZUKBFZEZACGBGZABGCGZHZACIBGZABICGZHZJUMUNUKEZBFUPULVCBUJUKCACKL
-    MUNUKBUJBCABKNOPUPUSVBUNUSVBQUOUNURVBUQUNURVAUTHZVBUNURVDACBRTVAUTUAUBUCUOU
-    QVBURUOUQVBABCRTUDUEVBUQURABCSVAUTURACBSUFUGUHUI $.
-
-  ${
-    $d x y z w $.  $d z w ph $.
-    $( An alternate definition of double existential uniqueness (see ~ 2eu4 ).
-       A mistake sometimes made in the literature is to use ` E! x E! y ` to
-       mean "exactly one ` x ` and exactly one ` y ` ."  (For example, see
-       Proposition 7.53 of [TakeutiZaring] p. 53.)  It turns out that this is
-       actually a weaker assertion, as can be seen by expanding out the formal
-       definitions.  This theorem shows that the erroneous definition can be
-       repaired by conjoining ` A. x E* y ph ` as an additional condition.  The
-       correct definition apparently has never been published.  ( ` E* ` means
-       "exists at most one.") (Contributed by NM, 26-Oct-2003.) $)
-    2eu5 $p |- ( ( E! x E! y ph /\ A. x E* y ph ) <->
-      ( E. x E. y ph /\ E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) ) ) $=
-      ( weu wmo wal wa wex weq 2eu1 pm5.32ri eumo adantl 2moex syl pm4.71i 2eu4
-      wi 3bitr2i ) ACFBFZACGBHZIACJZBFZABJZCFZIZUCIUHUDBJABDKCEKITCHBHEJDJIUCUB
-      UHABCLMUHUCUHUFCGZUCUGUIUEUFCNOACBPQRABCDESUA $.
-  $}
-
-  ${
-    $d x y z w v u $.  $d z w v u ph $.
-    $( Two equivalent expressions for double existential uniqueness.
-       (Contributed by NM, 2-Feb-2005.) $)
-    2eu6 $p |- ( ( E! x E. y ph /\ E! y E. x ph ) <->
-               E. z E. w A. x A. y ( ph <-> ( x = z /\ y = w ) ) ) $=
-      ( vu vv wex wa weq wi wal ax-17 hbsb sbequ12 equequ2 bi2anan9 hbim 2exbii
-      wsb weu 2eu4 19.29r2 hbs1 sylan9bbr cbvex2 imbi2d 2albidv cbvex2v equequ1
-      wb imbi12d cbval2 3bitri anbi12i 2albiim ancom bitri equcom imbi2i impexp
-      2mo 2albii hban sbco2h sbcom2 sbbii 3bitr3ri syl6bb anbi2d 19.21-2 3bitr3i
-      anbi2i abai 2sb6 anbi1i 3bitr2i bitr4i 3imtr4i 2alimi 2eximi 2exsb sylibr
-      bi2 bi1 jca impbii ) ACHZBUAABHCUAIWHBHZABDJZCEJZIZKZCLBLZEHDHZIZAWLUKZCL
-      BLZEHDHZABCDEUBWPWSACETZBDTZEHDHZXAXAEFTZDGTZIZDGJZEFJZIZKZFLGLZELDLZIXAX
-      JIZEHDHZWPWSXAXJDEUCWIXBWOXKAXABCDEADMAEMZWTBDUDZWTBDCACEUDNZWKAWTWJXAACE
-      OWTBDOUEZUFWOABGJZCFJZIZKZCLBLZFHGHXAXHKZELDLZFHGHXKWNYBDEGFXHWMYABCXHWLX
-      TAXFWJXRXGWKXSDGBPEFCPQUGUHUIYBYDGFYAYCBCDEYADMYAEMXAXHBXOXHBMZRXAXHCXPXH
-      CMZRWLAXAXTXHXQWJXRXFWKXSXGBDGUJCEFUJQULUMSXADEGFVBUNUOWSWLAKZCLBLZWNIZEH
-      DHXMWRYIDEWRWNYHIYIAWLBCUPWNYHUQURSXLYIDEXLXAXAWNKZIXAWNIYIXJYJXAXAAIZDBJ
-      ZECJZIZKZCLBLXAWMKZCLBLXJYJYOYPBCYOYKWLKYPYNWLYKYLWJYMWKDBUSECUSUOUTXAAWL
-      VAURVCYOXIBCGFYOGMYOFMXEXHBXAXDBXOXCDGBXAEFBXONNVDYERXEXHCXAXDCXPXCDGCXAE
-      FCXPNNVDYFRXTYKXEYNXHXTAXDXAXTAACFTZBGTZXDXSAYQXRYRACFOYQBGOUEWTEFTZBDTZD
-      GTYSBGTXDYRYSBGDYSDMVEYTXCDGWTEFBDVFVGYSYQBGACFEXNVEVGVHVIVJXRYLXFXSYMXGB
-      GDPCFEPQULUMXAWMBCXOXPVKVLVMXAWNVNXAYHWNABCDEVOVPVQSVRVSWSWIWOWSYHEHDHWIW
-      RYHDEWQYGBCAWLWDVTWAABCDEWBWCWRWNDEWQWMBCAWLWEVTWAWFWGUR $.
-  $}
-
-  $( Two equivalent expressions for double existential uniqueness.  Curiously,
-     we can put ` E! ` on either of the internal conjuncts but not both.  We
-     can also commute ` E! x E! y ` using ~ 2eu7 .  (Contributed by NM,
-     20-Feb-2005.) $)
-  2eu8 $p |- ( E! x E! y ( E. x ph /\ E. y ph ) <->
-                E! x E! y ( E! x ph /\ E. y ph ) ) $=
-    ( wex wa 2eu2 pm5.32i hbeu1 hbeu euan ancom eubii hbe1 3bitri 3bitr4ri 2eu7
-    weu 3bitr3ri ) ACDZBQZABQZCQZEZTABDZCQZEUASEZCQZBQZUDSECQBQTUBUEACBFGUBSEZB
-    QUBTEUHUCUBSBUABCABHIJUGUIBUGSUAEZCQSUBEUIUFUJCUASKLSUACACMJSUBKNLTUBKOABCP
-    R $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
