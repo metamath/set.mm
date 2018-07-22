@@ -26242,11 +26242,6 @@ $)
       ( wi wex wal 19.35 mpbir ) ABECFACGBCFEDABCHI $.
   $}
 
-  $( Quantified "excluded middle."  Exercise 9.2a of Boolos, p. 111,
-     _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
-  qexmid $p |- E. x ( ph -> A. x ph ) $=
-    ( wal 19.8a 19.35ri ) AABCZBFBDE $.
-
   $( Variable ` x ` is effectively not free in ` ph ` iff ` ph ` is always true
      or always false.  This is a classical result.  (Contributed by Mario
      Carneiro, 24-Sep-2016.) $)
