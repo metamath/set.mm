@@ -9193,7 +9193,7 @@ $)
     HDZUFUJDZUNUOFUEURUFUCUDURABLMNUEUFOZUCUDUFUSUCUFUIDZUDUSACLZBUILPQUHCUJIRS
     UGUFUDVAULUKFUTUCUDUFTUCUFVAUDUCUFVAVBMUACBUIIRUB $.
 
-  $( An alternate definition of the biconditional for decicable propositions.
+  $( An alternate definition of the biconditional for decidable propositions.
      Theorem *5.23 of [WhiteheadRussell] p. 124, but with decidability
      conditions.  (Contributed by Jim Kingdon, 5-May-2018.) $)
   dfbi3dc $p |- ( DECID ph -> ( DECID ps ->
