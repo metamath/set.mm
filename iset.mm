@@ -25697,19 +25697,16 @@ $)
 
   ${
     $( If a class equals the union of two other classes, then it equals the
-       union of those two classes commuted. ~ equncom was automatically derived
-       from ~ equncomVD using the tools program
-       translate_without_overwriting.cmd and minimizing.  (Contributed by Alan
-       Sare, 18-Feb-2012.) $)
+       union of those two classes commuted.  (Contributed by Alan Sare,
+       18-Feb-2012.) $)
     equncom $p |- ( A = ( B u. C ) <-> A = ( C u. B ) ) $=
       ( cun uncom eqeq2i ) BCDCBDABCEF $.
   $}
 
   ${
     equncomi.1 $e |- A = ( B u. C ) $.
-    $( Inference form of ~ equncom . ~ equncomi was automatically derived from
-       ~ equncomiVD using the tools program translate_without_overwriting.cmd
-       and minimizing.  (Contributed by Alan Sare, 18-Feb-2012.) $)
+    $( Inference form of ~ equncom .  (Contributed by Alan Sare,
+       18-Feb-2012.) $)
     equncomi $p |- A = ( C u. B ) $=
       ( cun wceq equncom mpbi ) ABCEFACBEFDABCGH $.
   $}
