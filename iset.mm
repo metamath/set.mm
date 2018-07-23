@@ -11249,8 +11249,9 @@ $)
     ( wal wex wa 19.29r 19.29 eximi syl ) ADEZCFBDFZCEGLMGZCFABGDFZCFLMCHNOCABD
     IJK $.
 
-  $( Forward direction of Theorem 19.35 of [Margaris] p. 90.  (Contributed by
-     Mario Carneiro, 2-Feb-2015.) $)
+  $( Forward direction of Theorem 19.35 of [Margaris] p. 90.  The converse
+     holds for classical logic but not (for all propositions) in intuitionistic
+     logic (Contributed by Mario Carneiro, 2-Feb-2015.) $)
   19.35-1 $p |- ( E. x ( ph -> ps ) -> ( A. x ph -> E. x ps ) ) $=
     ( wal wi wex wa 19.29 pm3.35 eximi syl expcom ) ACDZABEZCFZBCFZMOGANGZCFPAN
     CHQBCABIJKL $.
@@ -25932,16 +25933,6 @@ $)
       J $.
   $}
 
-  $( Theorem 19.35 of [Margaris] p. 90.  In classical logic, this theorem is
-     useful for moving an implication (in the form of the right-hand side) into
-     the scope of a single existential quantifier.  The forward direction,
-     ~ 19.35-1 , holds intuitionistically.  (Contributed by NM, 5-Aug-1993.)
-     (Proof shortened by Wolf Lammen, 27-Jun-2014.) $)
-  19.35 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> E. x ps ) ) $=
-    ( wi wex wal wn wa 19.26 annim albii alnex anbi2i 3bitr3i con4bii ) ABDZCEZ
-    ACFZBCEZDZPGZCFZRSGZHZQGTGABGZHZCFRUECFZHUBUDAUECIUFUACABJKUGUCRBCLMNPCLRSJ
-    NO $.
-
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 Classical (not intuitionistic) results
@@ -25990,14 +25981,6 @@ $)
                 ( ph -> ( ps \/ ch ) ) ) $=
     ( wn wo wi orordi imor orbi12i 3bitr4ri ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCG
     ALHOMPNABHACHIJ $.
-
-  ${
-    19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
-    $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
-    19.35ri $p |- E. x ( ph -> ps ) $=
-      ( wi wex wal 19.35 mpbir ) ABECFACGBCFEDABCHI $.
-  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
