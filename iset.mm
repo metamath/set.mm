@@ -26251,6 +26251,397 @@ $)
     ( wss cin ssinss1 incom syl5eqss jaoi ) ACDABEZCDBCDZABCFKJBAECABGBACFHI $.
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+      Combinations of difference, union, and intersection of two classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( Absorption law for union.  (Contributed by NM, 16-Apr-2006.) $)
+  unabs $p |- ( A u. ( A i^i B ) ) = A $=
+    ( cin wss cun wceq inss1 ssequn2 mpbi ) ABCZADAJEAFABGJAHI $.
+
+  $( Absorption law for intersection.  (Contributed by NM, 16-Apr-2006.) $)
+  inabs $p |- ( A i^i ( A u. B ) ) = A $=
+    ( cun wss cin wceq ssun1 df-ss mpbi ) AABCZDAJEAFABGAJHI $.
+
+  $( Negation of subclass expressed in terms of intersection and proper
+     subclass.  (Contributed by NM, 30-Jun-2004.)  (Proof shortened by Andrew
+     Salmon, 26-Jun-2011.) $)
+  nssinpss $p |- ( -. A C_ B <-> ( A i^i B ) C. A ) $=
+    ( cin wne wss wa wn wpss inss1 biantrur df-ss necon3bbii df-pss 3bitr4i ) A
+    BCZADZOAEZPFABEZGOAHQPABIJROAABKLOAMN $.
+
+  $( Negation of subclass expressed in terms of proper subclass and union.
+     (Contributed by NM, 15-Sep-2004.) $)
+  nsspssun $p |- ( -. A C_ B <-> B C. ( A u. B ) ) $=
+    ( wss wn cun wa wpss ssun2 biantrur ssid biantru unss bitri xchnxbir dfpss3
+    bitr4i ) ABCZDBABEZCZRBCZDZFZBRGTUBQSUABAHIQQBBCZFTUCQBJKABBLMNBROP $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Subclass defined in terms of class difference.  See comments under
+       ~ dfun2 .  (Contributed by NM, 22-Mar-1998.)  (Proof shortened by Andrew
+       Salmon, 26-Jun-2011.) $)
+    dfss4 $p |- ( A C_ B <-> ( B \ ( B \ A ) ) = A ) $=
+      ( vx wss wceq cdif sseqin2 cv wcel wn wa eldif notbii anbi2i wi elin abai
+      cin iman bitr4i 3bitri difeqri eqeq1i ) ABDBARZAEBBAFZFZAEABGUFUDACBUEUDC
+      HZBIZUGUEIZJZKUHUHUGAIZJKZJZKZUGUDIZUJUMUHUIULUGBALMNUOUHUKKUHUHUKOZKUNUG
+      BAPUHUKQUPUMUHUHUKSNUATUBUCT $.
+
+    $( An alternate definition of the union of two classes in terms of class
+       difference, requiring no dummy variables.  Along with ~ dfin2 and
+       ~ dfss4 it shows we can express union, intersection, and subset directly
+       in terms of the single "primitive" operation ` \ ` (class difference).
+       (Contributed by NM, 10-Jun-2004.) $)
+    dfun2 $p |- ( A u. B ) = ( _V \ ( ( _V \ A ) \ B ) ) $=
+      ( vx cvv cdif cv wcel wo wn wa eldif mpbiran anbi1i ioran 3bitr4i con2bii
+      vex bitr4i uneqri ) CABDDAEZBEZEZCFZAGZUCBGZHZUCUAGZIZUCUBGZUGUFUCTGZUEIZ
+      JUDIZUKJUGUFIUJULUKUJUCDGZULCQZUCDAKLMUCTBKUDUENOPUIUMUHUNUCDUAKLRS $.
+
+    $( An alternate definition of the intersection of two classes in terms of
+       class difference, requiring no dummy variables.  See comments under
+       ~ dfun2 .  Another version is given by ~ dfin4 .  (Contributed by NM,
+       10-Jun-2004.) $)
+    dfin2 $p |- ( A i^i B ) = ( A \ ( _V \ B ) ) $=
+      ( vx cvv cdif cv wcel wa vex eldif mpbiran con2bii anbi2i bitr4i ineqri
+      wn ) CABADBEZEZCFZAGZSBGZHTSQGZPZHSRGUAUCTUBUAUBSDGUAPCISDBJKLMSAQJNO $.
+
+    $( Difference with intersection.  Theorem 33 of [Suppes] p. 29.
+       (Contributed by NM, 31-Mar-1998.)  (Proof shortened by Andrew Salmon,
+       26-Jun-2011.) $)
+    difin $p |- ( A \ ( A i^i B ) ) = ( A \ B ) $=
+      ( vx cin cdif cv wcel wi wn pm4.61 anclb elin imbi2i iman 3bitr2i con2bii
+      wa eldif 3bitr4i difeqri ) CAABDZABEZCFZAGZUCBGZHZIUDUEIQUDUCUAGZIQZUCUBG
+      UDUEJUFUHUFUDUDUEQZHUDUGHUHIUDUEKUGUIUDUCABLMUDUGNOPUCABRST $.
+  $}
+
+  $( Union defined in terms of intersection (De Morgan's law).  Definition of
+     union in [Mendelson] p. 231.  (Contributed by NM, 8-Jan-2002.) $)
+  dfun3 $p |- ( A u. B ) = ( _V \ ( ( _V \ A ) i^i ( _V \ B ) ) ) $=
+    ( cun cvv cdif cin dfun2 dfin2 ddif difeq2i eqtr2i eqtri ) ABCDDAEZBEZEDMDB
+    EZFZEABGNPDPMDOEZENMOHQBMBIJKJL $.
+
+  $( Intersection defined in terms of union (De Morgan's law.  Similar to
+     Exercise 4.10(n) of [Mendelson] p. 231.  (Contributed by NM,
+     8-Jan-2002.) $)
+  dfin3 $p |- ( A i^i B ) = ( _V \ ( ( _V \ A ) u. ( _V \ B ) ) ) $=
+    ( cvv cdif cun cin ddif dfun2 difeq1i difeq2i eqtri dfin2 3eqtr4ri ) CCACBD
+    ZDZDZDOCCADZNEZDABFOGRPCRCCQDZNDZDPQNHTOCSANAGIJKJABLM $.
+
+  $( Alternate definition of the intersection of two classes.  Exercise 4.10(q)
+     of [Mendelson] p. 231.  (Contributed by NM, 25-Nov-2003.) $)
+  dfin4 $p |- ( A i^i B ) = ( A \ ( A \ B ) ) $=
+    ( cin cdif wss wceq inss1 dfss4 mpbi difin difeq2i eqtr3i ) AAABCZDZDZMAABD
+    ZDMAEOMFABGMAHINPAABJKL $.
+
+  $( Intersection with universal complement.  Remark in [Stoll] p. 20.
+     (Contributed by NM, 17-Aug-2004.) $)
+  invdif $p |- ( A i^i ( _V \ B ) ) = ( A \ B ) $=
+    ( cvv cdif cin dfin2 ddif difeq2i eqtri ) ACBDZEACJDZDABDAJFKBABGHI $.
+
+  $( Intersection with class difference.  Theorem 34 of [Suppes] p. 29.
+     (Contributed by NM, 17-Aug-2004.) $)
+  indif $p |- ( A i^i ( A \ B ) ) = ( A \ B ) $=
+    ( cdif cin dfin4 difeq2i difin 3eqtr2i ) AABCZDAAICZCAABDZCIAIEKJAABEFABGH
+    $.
+
+  $( Bring an intersection in and out of a class difference.  (Contributed by
+     Jeff Hankins, 15-Jul-2009.) $)
+  indif2 $p |- ( A i^i ( B \ C ) ) = ( ( A i^i B ) \ C ) $=
+    ( cin cvv cdif inass invdif ineq2i 3eqtr3ri ) ABDZECFZDABLDZDKCFABCFZDABLGK
+    CHMNABCHIJ $.
+
+  $( Bring an intersection in and out of a class difference.  (Contributed by
+     Mario Carneiro, 15-May-2015.) $)
+  indif1 $p |- ( ( A \ C ) i^i B ) = ( ( A i^i B ) \ C ) $=
+    ( cdif cin indif2 incom difeq1i 3eqtr3i ) BACDZEBAEZCDJBEABEZCDBACFBJGKLCBA
+    GHI $.
+
+  $( Commutation law for intersection and difference.  (Contributed by Scott
+     Fenton, 18-Feb-2013.) $)
+  indifcom $p |- ( A i^i ( B \ C ) ) = ( B i^i ( A \ C ) ) $=
+    ( cin cdif incom difeq1i indif2 3eqtr4i ) ABDZCEBADZCEABCEDBACEDJKCABFGABCH
+    BACHI $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Distributive law for intersection over union.  Exercise 10 of
+       [TakeutiZaring] p. 17.  (Contributed by NM, 30-Sep-2002.)  (Proof
+       shortened by Andrew Salmon, 26-Jun-2011.) $)
+    indi $p |- ( A i^i ( B u. C ) ) = ( ( A i^i B ) u. ( A i^i C ) ) $=
+      ( vx cun cin cv wcel wo wa andi elin orbi12i bitr4i anbi2i 3bitr4i ineqri
+      elun ) DABCEZABFZACFZEZDGZAHZUCBHZUCCHZIZJZUCTHZUCUAHZIZUDUCSHZJUCUBHUHUD
+      UEJZUDUFJZIUKUDUEUFKUIUMUJUNUCABLUCACLMNULUGUDUCBCROUCTUARPQ $.
+
+    $( Distributive law for union over intersection.  Exercise 11 of
+       [TakeutiZaring] p. 17.  (Contributed by NM, 30-Sep-2002.)  (Proof
+       shortened by Andrew Salmon, 26-Jun-2011.) $)
+    undi $p |- ( A u. ( B i^i C ) ) = ( ( A u. B ) i^i ( A u. C ) ) $=
+      ( vx cin cv wcel wo wa elin orbi2i ordi elun anbi12i bitr2i 3bitri uneqri
+      cun ) DABCEZABRZACRZEZDFZAGZUCSGZHUDUCBGZUCCGZIZHUDUFHZUDUGHZIZUCUBGZUEUH
+      UDUCBCJKUDUFUGLULUCTGZUCUAGZIUKUCTUAJUMUIUNUJUCABMUCACMNOPQ $.
+  $}
+
+  $( Distributive law for intersection over union.  Theorem 28 of [Suppes]
+     p. 27.  (Contributed by NM, 30-Sep-2002.) $)
+  indir $p |- ( ( A u. B ) i^i C ) = ( ( A i^i C ) u. ( B i^i C ) ) $=
+    ( cun cin indi incom uneq12i 3eqtr4i ) CABDZECAEZCBEZDJCEACEZBCEZDCABFJCGMK
+    NLACGBCGHI $.
+
+  $( Distributive law for union over intersection.  Theorem 29 of [Suppes]
+     p. 27.  (Contributed by NM, 30-Sep-2002.) $)
+  undir $p |- ( ( A i^i B ) u. C ) = ( ( A u. C ) i^i ( B u. C ) ) $=
+    ( cin cun undi uncom ineq12i 3eqtr4i ) CABDZECAEZCBEZDJCEACEZBCEZDCABFJCGMK
+    NLACGBCGHI $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Infer equality from equalities of union and intersection.  Exercise 20
+       of [Enderton] p. 32 and its converse.  (Contributed by NM,
+       10-Aug-2004.) $)
+    unineq $p |- ( ( ( A u. C ) = ( B u. C ) /\ ( A i^i C ) = ( B i^i C ) )
+                 <-> A = B ) $=
+      ( vx cun wceq cin wa wcel wb eleq2 elin 3bitr3g iba bibi12d syl5ibr uncom
+      wo elun biorf cv wi adantld eqeq12i sylbi adantrd pm2.61i eqrdv uneq1 jca
+      wn ineq1 impbii ) ACEZBCEZFZACGZBCGZFZHZABFZUTDABDUAZCIZUTVBAIZVBBIZJZUBV
+      CUSVFUPUSVFVCVDVCHZVEVCHZJUSVBUQIVBURIVGVHUQURVBKVBACLVBBCLMVCVDVGVEVHVCV
+      DNVCVENOPUCVCUKZUPVFUSUPVFVIVCVDRZVCVERZJUPVBCAEZIZVBCBEZIZVJVKUPVLVNFVMV
+      OJUNVLUOVNACQBCQUDVLVNVBKUEVBCASVBCBSMVIVDVJVEVKVCVDTVCVETOPUFUGUHVAUPUSA
+      BCUIABCULUJUM $.
+  $}
+
+  $( Equality of union and intersection implies equality of their arguments.
+     (Contributed by NM, 16-Apr-2006.)  (Proof shortened by Andrew Salmon,
+     26-Jun-2011.) $)
+  uneqin $p |- ( ( A u. B ) = ( A i^i B ) <-> A = B ) $=
+    ( cun cin wceq wss wa eqimss unss ssin sstr sylbir simpl anim12i syl sylibr
+    eqss unidm inidm eqtr4i uneq2 ineq2 3eqtr3a impbii ) ABCZABDZEZABEZUGABFZBA
+    FZGZUHUGUEUFFZUKUEUFHULAUFFZBUFFZGUKABUFIUMUIUNUJUMAAFUIGUIAABJAABKLUNUJBBF
+    ZGUJBABJUJUOMLNLOABQPUHAACZAADZUEUFUPAUQARASTABAUAABAUBUCUD $.
+
+  $( Distributive law for class difference.  Theorem 39 of [Suppes] p. 29.
+     (Contributed by NM, 17-Aug-2004.) $)
+  difundi $p |- ( A \ ( B u. C ) ) = ( ( A \ B ) i^i ( A \ C ) ) $=
+    ( cun cdif cvv cin dfun3 difeq2i inindi dfin2 invdif ineq12i 3eqtr3i eqtri
+    ) ABCDZEAFFBEZFCEZGZEZEZABEZACEZGZPTABCHIASGAQGZARGZGUAUDAQRJASKUEUBUFUCABL
+    ACLMNO $.
+
+  $( Distributive law for class difference.  (Contributed by NM,
+     17-Aug-2004.) $)
+  difundir $p |- ( ( A u. B ) \ C ) = ( ( A \ C ) u. ( B \ C ) ) $=
+    ( cun cvv cdif cin indir invdif uneq12i 3eqtr3i ) ABDZECFZGAMGZBMGZDLCFACFZ
+    BCFZDABMHLCINPOQACIBCIJK $.
+
+  $( Distributive law for class difference.  Theorem 40 of [Suppes] p. 29.
+     (Contributed by NM, 17-Aug-2004.) $)
+  difindi $p |- ( A \ ( B i^i C ) ) = ( ( A \ B ) u. ( A \ C ) ) $=
+    ( cin cdif cvv cun dfin3 difeq2i indi dfin2 invdif uneq12i 3eqtr3i eqtri )
+    ABCDZEAFFBEZFCEZGZEZEZABEZACEZGZPTABCHIASDAQDZARDZGUAUDAQRJASKUEUBUFUCABLAC
+    LMNO $.
+
+  $( Distributive law for class difference.  (Contributed by NM,
+     17-Aug-2004.) $)
+  difindir $p |- ( ( A i^i B ) \ C ) = ( ( A \ C ) i^i ( B \ C ) ) $=
+    ( cin cvv cdif inindir invdif ineq12i 3eqtr3i ) ABDZECFZDALDZBLDZDKCFACFZBC
+    FZDABLGKCHMONPACHBCHIJ $.
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Distribute intersection over difference.  (Contributed by Scott Fenton,
+       14-Apr-2011.) $)
+    indifdir $p |- ( ( A \ B ) i^i C ) = ( ( A i^i C ) \ ( B i^i C ) ) $=
+      ( vx cdif cin cv wcel wn wa pm3.24 intnan anass mtbir biorfi 3bitr4i elin
+      wo eldif bitri an32 andi ianor anbi2i bitr4i anbi1i notbii anbi12i eqriv
+      ) DABEZCFZACFZBCFZEZDGZAHZUOBHZIZJZUOCHZJZUPUTJZUQUTJZIZJZUOUKHZUOUNHZVAV
+      BURUTIZRZJZVEVBURJZVKVBVHJZRVAVJVLVKVLUPUTVHJZJVMUPUTKLUPUTVHMNOUPURUTUAV
+      BURVHUBPVDVIVBUQUTUCUDUEVFUOUJHZUTJVAUOUJCQVNUSUTUOABSUFTVGUOULHZUOUMHZIZ
+      JVEUOULUMSVOVBVQVDUOACQVPVCUOBCQUGUHTPUI $.
+  $}
+
+  $( Set difference with a set difference.  (Contributed by Thierry Arnoux,
+     18-Dec-2017.) $)
+  difdif2 $p |- ( A \ ( B \ C ) ) = ( ( A \ B ) u. ( A i^i C ) ) $=
+    ( cvv cdif cin cun difindi invdif eqcomi difeq2i dfin2 uneq2i 3eqtr4i ) ABD
+    CEZFZEABEZAOEZGABCEZEQACFZGABOHSPAPSBCIJKTRQACLMN $.
+
+  $( De Morgan's law for union.  Theorem 5.2(13) of [Stoll] p. 19.
+     (Contributed by NM, 18-Aug-2004.) $)
+  undm $p |- ( _V \ ( A u. B ) ) = ( ( _V \ A ) i^i ( _V \ B ) ) $=
+    ( cvv difundi ) CABD $.
+
+  $( De Morgan's law for intersection.  Theorem 5.2(13') of [Stoll] p. 19.
+     (Contributed by NM, 18-Aug-2004.) $)
+  indm $p |- ( _V \ ( A i^i B ) ) = ( ( _V \ A ) u. ( _V \ B ) ) $=
+    ( cvv difindi ) CABD $.
+
+  $( A relationship involving double difference and union.  (Contributed by NM,
+     29-Aug-2004.) $)
+  difun1 $p |- ( A \ ( B u. C ) ) = ( ( A \ B ) \ C ) $=
+    ( cvv cdif cin cun inass invdif eqtr3i undm ineq2i difeq1i ) ADBEZFZCEZABCG
+    ZEZABEZCEANDCEZFZFZPROTFUBPANTHOCIJADQEZFUBRUCUAABCKLAQIJJOSCABIMJ $.
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( An equality involving class union and class difference.  The first
+       equality of Exercise 13 of [TakeutiZaring] p. 22.  (Contributed by Alan
+       Sare, 17-Apr-2012.) $)
+    undif3 $p |- ( A u. ( B \ C ) ) = ( ( A u. B ) \ ( C \ A ) ) $=
+      ( vx cdif cun cv wcel wn wa elun pm4.53 eldif xchnxbir anbi12i orbi2i orc
+      wo olc jca anim12i simpl adantr adantl ccase impbii 3bitri 3bitr4ri eqriv
+      jaoi orcd ) DABCEZFZABFZCAEZEZDGZUNHZUQUOHZIZJUQAHZUQBHZRZUQCHZIZVARZJZUQ
+      UPHUQUMHZURVCUTVFUQABKVDVAIJVFUSVDVALUQCAMNOUQUNUOMVHVAUQULHZRVAVBVEJZRZV
+      GUQAULKVIVJVAUQBCMPVKVGVAVGVJVAVCVFVAVBQVAVESTVBVCVEVFVBVASVEVAQUAUJVAVEV
+      BVAVKVAVEJVAVJVAVEUBUKVJVASVAVKVAVAVJQZUCVAVKVBVLUDUEUFUGUHUI $.
+
+    $( Represent a set difference as an intersection with a larger difference.
+       (Contributed by Jeff Madsen, 2-Sep-2009.) $)
+    difin2 $p |- ( A C_ C -> ( A \ B ) = ( ( C \ B ) i^i A ) ) $=
+      ( vx wss cdif cin cv wcel wn ssel pm4.71d anbi1d eldif anbi1i ancom anass
+      wa elin bitr4i 3bitri 3bitr4g eqrdv ) ACEZDABFZCBFZAGZUDDHZAIZUHBIJZRUIUH
+      CIZRZUJRZUHUEIUHUGIZUDUIULUJUDUIUKACUHKLMUHABNUNUHUFIZUIRUKUJRZUIRZUMUHUF
+      ASUOUPUIUHCBNOUQUIUPRUMUPUIPUIUKUJQTUAUBUC $.
+  $}
+
+  $( Swap second and third argument of double difference.  (Contributed by NM,
+     18-Aug-2004.) $)
+  dif32 $p |- ( ( A \ B ) \ C ) = ( ( A \ C ) \ B ) $=
+    ( cun cdif uncom difeq2i difun1 3eqtr3i ) ABCDZEACBDZEABECEACEBEJKABCFGABCH
+    ACBHI $.
+
+  $( Absorption-like law for class difference: you can remove a class only
+     once.  (Contributed by FL, 2-Aug-2009.) $)
+  difabs $p |- ( ( A \ B ) \ B ) = ( A \ B ) $=
+    ( cun cdif difun1 unidm difeq2i eqtr3i ) ABBCZDABDZBDJABBEIBABFGH $.
+
+  $( Two ways to express symmetric difference.  This theorem shows the
+     equivalence of the definition of symmetric difference in [Stoll] p. 13 and
+     the restated definition in Example 4.1 of [Stoll] p. 262.  (Contributed by
+     NM, 17-Aug-2004.) $)
+  symdif1 $p |- ( ( A \ B ) u. ( B \ A ) ) = ( ( A u. B ) \ ( A i^i B ) ) $=
+    ( cun cin cdif difundir difin incom difeq2i eqtri uneq12i eqtr2i ) ABCABDZE
+    AMEZBMEZCABEZBAEZCABMFNPOQABGOBBADZEQMRBABHIBAGJKL $.
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+    Class abstractions with difference, union, and intersection of two classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+  ${
+    $d x A $.  $d x B $.
+    $( Two ways to express symmetric difference.  (Contributed by NM,
+       17-Aug-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    symdif2 $p |- ( ( A \ B ) u. ( B \ A ) ) =
+                  { x | -. ( x e. A <-> x e. B ) } $=
+      ( cv wcel wb wn cdif cun wo wa eldif orbi12i elun xor 3bitr4i abbi2i ) AD
+      ZBEZRCEZFGZABCHZCBHZIZRUBEZRUCEZJSTGKZTSGKZJRUDEUAUEUGUFUHRBCLRCBLMRUBUCN
+      STOPQ $.
+  $}
+
+  ${
+    $d x y $.  $d ph y $.  $d ps y $.
+    $( Union of two class abstractions.  (Contributed by NM, 29-Sep-2002.)
+       (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    unab $p |- ( { x | ph } u. { x | ps } ) = { x | ( ph \/ ps ) } $=
+      ( vy cab wo wsb cv wcel sbor df-clab orbi12i 3bitr4ri uneqri ) DACEZBCEZA
+      BFZCEZQCDGACDGZBCDGZFDHZRIUAOIZUAPIZFABCDJQDCKUBSUCTADCKBDCKLMN $.
+
+    $( Intersection of two class abstractions.  (Contributed by NM,
+       29-Sep-2002.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    inab $p |- ( { x | ph } i^i { x | ps } ) = { x | ( ph /\ ps ) } $=
+      ( vy cab wa wsb cv wcel sban df-clab anbi12i 3bitr4ri ineqri ) DACEZBCEZA
+      BFZCEZQCDGACDGZBCDGZFDHZRIUAOIZUAPIZFABCDJQDCKUBSUCTADCKBDCKLMN $.
+
+    $( Difference of two class abstractions.  (Contributed by NM,
+       23-Oct-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    difab $p |- ( { x | ph } \ { x | ps } ) = { x | ( ph /\ -. ps ) } $=
+      ( vy cab wn wcel wsb df-clab sban bicomi xchbinxr anbi12i 3bitrri difeqri
+      wa cv sbn ) DACEZBCEZABFZPZCEZDQZUCGUBCDHACDHZUACDHZPUDSGZUDTGZFZPUBDCIAU
+      ACDJUEUGUFUIUGUEADCIKUFBCDHUHBCDRBDCILMNO $.
+  $}
+
+  $( A class builder defined by a negation.  (Contributed by FL,
+     18-Sep-2010.) $)
+  notab $p |- { x | -. ph } = ( _V \ { x | ph } ) $=
+    ( cv cvv wcel wn wa cab cdif crab df-rab rabab eqtr3i difab abid2 difeq1i )
+    BCDEZAFZGBHZRBHZDABHZIZRBDJSTRBDKRBLMQBHZUAISUBQABNUCDUABDOPMM $.
+
+  $( Union of two restricted class abstractions.  (Contributed by NM,
+     25-Mar-2004.) $)
+  unrab $p |- ( { x e. A | ph } u. { x e. A | ps } ) =
+              { x e. A | ( ph \/ ps ) } $=
+    ( crab cun cv wcel wa cab wo df-rab uneq12i unab andi abbii eqtr4i ) ACDEZB
+    CDEZFCGDHZAIZCJZTBIZCJZFZABKZCDEZRUBSUDACDLBCDLMUGTUFIZCJZUEUFCDLUEUAUCKZCJ
+    UIUAUCCNUHUJCTABOPQQQ $.
+
+  $( Intersection of two restricted class abstractions.  (Contributed by NM,
+     1-Sep-2006.) $)
+  inrab $p |- ( { x e. A | ph } i^i { x e. A | ps } ) =
+              { x e. A | ( ph /\ ps ) } $=
+    ( crab cin cv wcel wa cab df-rab ineq12i inab anandi abbii eqtr4i ) ACDEZBC
+    DEZFCGDHZAIZCJZSBIZCJZFZABIZCDEZQUARUCACDKBCDKLUFSUEIZCJZUDUECDKUDTUBIZCJUH
+    TUBCMUGUICSABNOPPP $.
+
+  ${
+    $d x B $.
+    $( Intersection with a restricted class abstraction.  (Contributed by NM,
+       19-Nov-2007.) $)
+    inrab2 $p |- ( { x e. A | ph } i^i B ) = { x e. ( A i^i B ) | ph } $=
+      ( crab cin cv wcel cab df-rab abid2 eqcomi ineq12i inab elin anbi1i bitri
+      wa an32 eqtr4i abbii ) ABCEZDFBGZCHZARZBIZUCDHZBIZFZABCDFZEZUBUFDUHABCJUH
+      DBDKLMUKUCUJHZARZBIZUIABUJJUIUEUGRZBIUNUEUGBNUMUOBUMUDUGRZARUOULUPAUCCDOP
+      UDUGASQUATTT $.
+  $}
+
+  $( Difference of two restricted class abstractions.  (Contributed by NM,
+     23-Oct-2004.) $)
+  difrab $p |- ( { x e. A | ph } \ { x e. A | ps } ) =
+              { x e. A | ( ph /\ -. ps ) } $=
+    ( crab cdif cv wcel wa wn df-rab difeq12i difab anass simpr con3i anim2i wi
+    cab eqtr4i pm3.2 adantr con3d imdistani impbii bitr3i abbii ) ACDEZBCDEZFCG
+    DHZAIZCSZUJBIZCSZFZABJZIZCDEZUHULUIUNACDKBCDKLURUJUQIZCSZUOUQCDKUOUKUMJZIZC
+    SUTUKUMCMUSVBCUSUKUPIZVBUJAUPNVCVBUPVAUKUMBUJBOPQUKVAUPUKBUMUJBUMRAUJBUAUBU
+    CUDUEUFUGTTT $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Alternate definition of restricted class abstraction.  (Contributed by
+       NM, 20-Sep-2003.) $)
+    dfrab2 $p |- { x e. A | ph } = ( { x | ph } i^i A ) $=
+      ( crab cv wcel wa cab cin df-rab inab abid2 ineq1i eqtr3i incom 3eqtri )
+      ABCDBECFZAGBHZCABHZIZSCIABCJQBHZSIRTQABKUACSBCLMNCSOP $.
+
+    $( Alternate definition of restricted class abstraction.  (Contributed by
+       Mario Carneiro, 8-Sep-2013.) $)
+    dfrab3 $p |- { x e. A | ph } = ( A i^i { x | ph } ) $=
+      ( crab cv wcel wa cab cin df-rab inab abid2 ineq1i 3eqtr2i ) ABCDBECFZAGB
+      HOBHZABHZICQIABCJOABKPCQBCLMN $.
+
+    $( Complementation of restricted class abstractions.  (Contributed by Mario
+       Carneiro, 3-Sep-2015.) $)
+    notrab $p |- ( A \ { x e. A | ph } ) = { x e. A | -. ph } $=
+      ( cv wcel cab cdif wn crab difab cin difin dfrab3 difeq2i difeq1i 3eqtr4i
+      wa abid2 df-rab ) BDCEZBFZABFZGZTAHZQBFCABCIZGZUDBCITABJCCUBKZGCUBGUFUCCU
+      BLUEUGCABCMNUACUBBCROPUDBCSP $.
+
+    $( Restricted class abstraction with a common superset.  (Contributed by
+       Stefan O'Rear, 12-Sep-2015.)  (Proof shortened by Mario Carneiro,
+       8-Nov-2015.) $)
+    dfrab3ss $p |- ( A C_ B -> { x e. A | ph } = ( A i^i { x e. B | ph } ) ) $=
+      ( wss cab crab wceq df-ss ineq1 eqcomd sylbi dfrab3 ineq2i eqtr4i 3eqtr4g
+      cin inass ) CDEZCABFZQZCDQZTQZABCGCABDGZQZSUBCHZUAUCHCDIUFUCUAUBCTJKLABCM
+      UECDTQZQUCUDUGCABDMNCDTROP $.
+  $}
+
+  $( Abstraction restricted to a union.  (Contributed by Stefan O'Rear,
+     5-Feb-2015.) $)
+  rabun2 $p |- { x e. ( A u. B ) | ph } =
+      ( { x e. A | ph } u. { x e. B | ph } ) $=
+    ( cun crab cv wcel wa cab df-rab uneq12i elun anbi1i andir bitri abbii unab
+    wo eqtr4i ) ABCDEZFBGZUAHZAIZBJZABCFZABDFZEZABUAKUHUBCHZAIZBJZUBDHZAIZBJZEZ
+    UEUFUKUGUNABCKABDKLUEUJUMSZBJUOUDUPBUDUIULSZAIUPUCUQAUBCDMNUIULAOPQUJUMBRTT
+    T $.
+
+$(
 ###############################################################################
                             CLASSICAL LOGIC
 ###############################################################################
