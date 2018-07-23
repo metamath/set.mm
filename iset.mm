@@ -25953,6 +25953,304 @@ $)
     ( cun wral wa ralunb biimpri ) ABCDEFABCFABDFGABCDHI $.
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+      The intersection of two classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Expansion of membership in an intersection of two classes.  Theorem 12
+       of [Suppes] p. 25.  (Contributed by NM, 29-Apr-1994.) $)
+    elin $p |- ( A e. ( B i^i C ) <-> ( A e. B /\ A e. C ) ) $=
+      ( vx cin wcel wa elex adantl cv wceq eleq1 anbi12d df-in elab2g pm5.21nii
+      cvv ) ABCEZFAQFZABFZACFZGZARHUASTACHIDJZBFZUCCFZGUBDARQUCAKUDTUEUAUCABLUC
+      ACLMDBCNOP $.
+  $}
+
+  ${
+    elin2.x $e |- X = ( B i^i C ) $.
+    $( Membership in a class defined as an intersection.  (Contributed by
+       Stefan O'Rear, 29-Mar-2015.) $)
+    elin2 $p |- ( A e. X <-> ( A e. B /\ A e. C ) ) $=
+      ( wcel cin wa eleq2i elin bitri ) ADFABCGZFABFACFHDLAEIABCJK $.
+  $}
+
+  ${
+    elin3.x $e |- X = ( ( B i^i C ) i^i D ) $.
+    $( Membership in a class defined as a ternary intersection.  (Contributed
+       by Stefan O'Rear, 29-Mar-2015.) $)
+    elin3 $p |- ( A e. X <-> ( A e. B /\ A e. C /\ A e. D ) ) $=
+      ( cin wcel wa w3a elin anbi1i elin2 df-3an 3bitr4i ) ABCGZHZADHZIABHZACHZ
+      IZRIAEHSTRJQUARABCKLAPDEFMSTRNO $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( Commutative law for intersection of classes.  Exercise 7 of
+       [TakeutiZaring] p. 17.  (Contributed by NM, 5-Aug-1993.) $)
+    incom $p |- ( A i^i B ) = ( B i^i A ) $=
+      ( vx cin cv wcel wa ancom elin 3bitr4i eqriv ) CABDZBADZCEZAFZNBFZGPOGNLF
+      NMFOPHNABINBAIJK $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    ineqri.1 $e |- ( ( x e. A /\ x e. B ) <-> x e. C ) $.
+    $( Inference from membership to intersection.  (Contributed by NM,
+       5-Aug-1993.) $)
+    ineqri $p |- ( A i^i B ) = C $=
+      ( cin cv wcel wa elin bitri eqriv ) ABCFZDAGZMHNBHNCHINDHNBCJEKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Equality theorem for intersection of two classes.  (Contributed by NM,
+       14-Dec-1993.) $)
+    ineq1 $p |- ( A = B -> ( A i^i C ) = ( B i^i C ) ) $=
+      ( vx wceq cin cv wcel wa eleq2 anbi1d elin 3bitr4g eqrdv ) ABEZDACFZBCFZO
+      DGZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
+  $}
+
+  $( Equality theorem for intersection of two classes.  (Contributed by NM,
+     26-Dec-1993.) $)
+  ineq2 $p |- ( A = B -> ( C i^i A ) = ( C i^i B ) ) $=
+    ( wceq cin ineq1 incom 3eqtr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
+
+  $( Equality theorem for intersection of two classes.  (Contributed by NM,
+     8-May-1994.) $)
+  ineq12 $p |- ( ( A = B /\ C = D ) -> ( A i^i C ) = ( B i^i D ) ) $=
+    ( wceq cin ineq1 ineq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
+
+  ${
+    ineq1i.1 $e |- A = B $.
+    $( Equality inference for intersection of two classes.  (Contributed by NM,
+       26-Dec-1993.) $)
+    ineq1i $p |- ( A i^i C ) = ( B i^i C ) $=
+      ( wceq cin ineq1 ax-mp ) ABEACFBCFEDABCGH $.
+
+    $( Equality inference for intersection of two classes.  (Contributed by NM,
+       26-Dec-1993.) $)
+    ineq2i $p |- ( C i^i A ) = ( C i^i B ) $=
+      ( wceq cin ineq2 ax-mp ) ABECAFCBFEDABCGH $.
+
+    ${
+      ineq12i.2 $e |- C = D $.
+      $( Equality inference for intersection of two classes.  (Contributed by
+         NM, 24-Jun-2004.)  (Proof shortened by Eric Schmidt, 26-Jan-2007.) $)
+      ineq12i $p |- ( A i^i C ) = ( B i^i D ) $=
+        ( wceq cin ineq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
+    $}
+  $}
+
+  ${
+    ineq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for intersection of two classes.  (Contributed by NM,
+       10-Apr-1994.) $)
+    ineq1d $p |- ( ph -> ( A i^i C ) = ( B i^i C ) ) $=
+      ( wceq cin ineq1 syl ) ABCFBDGCDGFEBCDHI $.
+
+    $( Equality deduction for intersection of two classes.  (Contributed by NM,
+       10-Apr-1994.) $)
+    ineq2d $p |- ( ph -> ( C i^i A ) = ( C i^i B ) ) $=
+      ( wceq cin ineq2 syl ) ABCFDBGDCGFEBCDHI $.
+
+    ${
+      ineq12d.2 $e |- ( ph -> C = D ) $.
+      $( Equality deduction for intersection of two classes.  (Contributed by
+         NM, 24-Jun-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+      ineq12d $p |- ( ph -> ( A i^i C ) = ( B i^i D ) ) $=
+        ( wceq cin ineq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
+    $}
+
+    ${
+      ineqan12d.2 $e |- ( ps -> C = D ) $.
+      $( Equality deduction for intersection of two classes.  (Contributed by
+         NM, 7-Feb-2007.) $)
+      ineqan12d $p |- ( ( ph /\ ps ) -> ( A i^i C ) = ( B i^i D ) ) $=
+        ( wceq cin ineq12 syl2an ) ACDIEFICEJDFJIBGHCDEFKL $.
+    $}
+  $}
+
+  $( A frequently-used variant of subclass definition ~ df-ss .  (Contributed
+     by NM, 10-Jan-2015.) $)
+  dfss1 $p |- ( A C_ B <-> ( B i^i A ) = A ) $=
+    ( wss cin wceq df-ss incom eqeq1i bitri ) ABCABDZAEBADZAEABFJKAABGHI $.
+
+  $( Another definition of subclasshood.  Similar to ~ df-ss , ~ dfss , and
+     ~ dfss1 .  (Contributed by David Moews, 1-May-2017.) $)
+  dfss5 $p |- ( A C_ B <-> A = ( B i^i A ) ) $=
+    ( wss cin wceq dfss1 eqcom bitri ) ABCBADZAEAIEABFIAGH $.
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    nfin.1 $e |- F/_ x A $.
+    nfin.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for the intersection of classes.
+       (Contributed by NM, 15-Sep-2003.)  (Revised by Mario Carneiro,
+       14-Oct-2016.) $)
+    nfin $p |- F/_ x ( A i^i B ) $=
+      ( vy cin cv wcel crab dfin5 nfcri nfrab nfcxfr ) ABCGFHCIZFBJFBCKOAFBAFCE
+      LDMN $.
+  $}
+
+  ${
+    $d A y $.  $d C y z $.  $d D y z $.  $d x y z $.
+    $( Distribute proper substitution through an intersection relation.
+       (Contributed by Alan Sare, 22-Jul-2012.) $)
+    csbing $p |- ( A e. B -> [_ A / x ]_ ( C i^i D ) =
+                  ( [_ A / x ]_ C i^i [_ A / x ]_ D ) ) $=
+      ( vy cv cin csb wceq csbeq1 ineq12d eqeq12d nfcsb1v csbeq1a csbief vtoclg
+      vex nfin ) AFGZDEHZIZATDIZATEIZHZJABUAIZABDIZABEIZHZJFBCTBJZUBUFUEUIATBUA
+      KUJUCUGUDUHATBDKATBEKLMATUAUEFRAUCUDATDNATENSAGTJDUCEUDATDOATEOLPQ $.
+  $}
+
+  ${
+    $d x ph $.  $d x A $.  $d x B $.
+    rabbi2dva.1 $e |- ( ( ph /\ x e. A ) -> ( x e. B <-> ps ) ) $.
+    $( Deduction from a wff to a restricted class abstraction.  (Contributed by
+       NM, 14-Jan-2014.) $)
+    rabbi2dva $p |- ( ph -> ( A i^i B ) = { x e. A | ps } ) $=
+      ( cin cv wcel crab dfin5 rabbidva syl5eq ) ADEGCHEIZCDJBCDJCDEKANBCDFLM
+      $.
+  $}
+
+  ${
+    $d x A $.
+    $( Idempotent law for intersection of classes.  Theorem 15 of [Suppes]
+       p. 26.  (Contributed by NM, 5-Aug-1993.) $)
+    inidm $p |- ( A i^i A ) = A $=
+      ( vx cv wcel anidm ineqri ) BAAABCADEF $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Associative law for intersection of classes.  Exercise 9 of
+       [TakeutiZaring] p. 17.  (Contributed by NM, 3-May-1994.) $)
+    inass $p |- ( ( A i^i B ) i^i C ) = ( A i^i ( B i^i C ) ) $=
+      ( vx cin cv wcel wa anass elin anbi2i bitr4i anbi1i 3bitr4i ineqri ) DABE
+      ZCABCEZEZDFZAGZSBGZHZSCGZHZTSQGZHZSPGZUCHSRGUDTUAUCHZHUFTUAUCIUEUHTSBCJKL
+      UGUBUCSABJMSAQJNO $.
+  $}
+
+  $( A rearrangement of intersection.  (Contributed by NM, 21-Apr-2001.) $)
+  in12 $p |- ( A i^i ( B i^i C ) ) = ( B i^i ( A i^i C ) ) $=
+    ( cin incom ineq1i inass 3eqtr3i ) ABDZCDBADZCDABCDDBACDDIJCABEFABCGBACGH
+    $.
+
+  $( A rearrangement of intersection.  (Contributed by NM, 21-Apr-2001.)
+     (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+  in32 $p |- ( ( A i^i B ) i^i C ) = ( ( A i^i C ) i^i B ) $=
+    ( cin inass in12 incom 3eqtri ) ABDCDABCDDBACDZDIBDABCEABCFBIGH $.
+
+  $( A rearrangement of intersection.  (Contributed by NM, 27-Aug-2012.) $)
+  in13 $p |- ( A i^i ( B i^i C ) ) = ( C i^i ( B i^i A ) ) $=
+    ( cin in32 incom 3eqtr4i ) BCDZADBADZCDAHDCIDBCAEAHFCIFG $.
+
+  $( A rearrangement of intersection.  (Contributed by NM, 27-Aug-2012.) $)
+  in31 $p |- ( ( A i^i B ) i^i C ) = ( ( C i^i B ) i^i A ) $=
+    ( cin in12 incom 3eqtr4i ) CABDZDACBDZDHCDIADCABEHCFIAFG $.
+
+  $( Rotate the intersection of 3 classes.  (Contributed by NM,
+     27-Aug-2012.) $)
+  inrot $p |- ( ( A i^i B ) i^i C ) = ( ( C i^i A ) i^i B ) $=
+    ( cin in31 in32 eqtri ) ABDCDCBDADCADBDABCECBAFG $.
+
+  $( Rearrangement of intersection of 4 classes.  (Contributed by NM,
+     21-Apr-2001.) $)
+  in4 $p |- ( ( A i^i B ) i^i ( C i^i D ) ) =
+            ( ( A i^i C ) i^i ( B i^i D ) ) $=
+    ( cin in12 ineq2i inass 3eqtr4i ) ABCDEZEZEACBDEZEZEABEJEACELEKMABCDFGABJHA
+    CLHI $.
+
+  $( Intersection distributes over itself.  (Contributed by NM, 6-May-1994.) $)
+  inindi $p |- ( A i^i ( B i^i C ) ) = ( ( A i^i B ) i^i ( A i^i C ) ) $=
+    ( cin inidm ineq1i in4 eqtr3i ) AADZBCDZDAJDABDACDDIAJAEFAABCGH $.
+
+  $( Intersection distributes over itself.  (Contributed by NM,
+     17-Aug-2004.) $)
+  inindir $p |- ( ( A i^i B ) i^i C ) = ( ( A i^i C ) i^i ( B i^i C ) ) $=
+    ( cin inidm ineq2i in4 eqtr3i ) ABDZCCDZDICDACDBCDDJCICEFABCCGH $.
+
+  $( A relationship between subclass and intersection.  Similar to Exercise 9
+     of [TakeutiZaring] p. 18.  (Contributed by NM, 17-May-1994.) $)
+  sseqin2 $p |- ( A C_ B <-> ( B i^i A ) = A ) $=
+    ( dfss1 ) ABC $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( The intersection of two classes is a subset of one of them.  Part of
+       Exercise 12 of [TakeutiZaring] p. 18.  (Contributed by NM,
+       27-Apr-1994.) $)
+    inss1 $p |- ( A i^i B ) C_ A $=
+      ( vx cin cv wcel elin simplbi ssriv ) CABDZACEZJFKAFKBFKABGHI $.
+  $}
+
+  $( The intersection of two classes is a subset of one of them.  Part of
+     Exercise 12 of [TakeutiZaring] p. 18.  (Contributed by NM,
+     27-Apr-1994.) $)
+  inss2 $p |- ( A i^i B ) C_ B $=
+    ( cin incom inss1 eqsstr3i ) ABCBACBBADBAEF $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Subclass of intersection.  Theorem 2.8(vii) of [Monk1] p. 26.
+       (Contributed by NM, 15-Jun-2004.)  (Proof shortened by Andrew Salmon,
+       26-Jun-2011.) $)
+    ssin $p |- ( ( A C_ B /\ A C_ C ) <-> A C_ ( B i^i C ) ) $=
+      ( vx cv wcel wi wal wa cin wss elin imbi2i albii jcab 19.26 3bitrri dfss2
+      anbi12i 3bitr4i ) DEZAFZUABFZGZDHZUBUACFZGZDHZIZUBUABCJZFZGZDHZABKZACKZIA
+      UJKUMUBUCUFIZGZDHUDUGIZDHUIULUQDUKUPUBUABCLMNUQURDUBUCUFONUDUGDPQUNUEUOUH
+      DABRDACRSDAUJRT $.
+  $}
+
+  ${
+    ssini.1 $e |- A C_ B $.
+    ssini.2 $e |- A C_ C $.
+    $( An inference showing that a subclass of two classes is a subclass of
+       their intersection.  (Contributed by NM, 24-Nov-2003.) $)
+    ssini $p |- A C_ ( B i^i C ) $=
+      ( wss wa cin pm3.2i ssin mpbi ) ABFZACFZGABCHFLMDEIABCJK $.
+  $}
+
+  ${
+    ssind.1 $e |- ( ph -> A C_ B ) $.
+    ssind.2 $e |- ( ph -> A C_ C ) $.
+    $( A deduction showing that a subclass of two classes is a subclass of
+       their intersection.  (Contributed by Jonathan Ben-Naim, 3-Jun-2011.) $)
+    ssind $p |- ( ph -> A C_ ( B i^i C ) ) $=
+      ( wss cin wa ssin biimpi syl2anc ) ABCGZBDGZBCDHGZEFMNIOBCDJKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Add right intersection to subclass relation.  (Contributed by NM,
+       16-Aug-1994.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    ssrin $p |- ( A C_ B -> ( A i^i C ) C_ ( B i^i C ) ) $=
+      ( vx wss cin cv wcel wa ssel anim1d elin 3imtr4g ssrdv ) ABEZDACFZBCFZODG
+      ZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
+
+    $( Add left intersection to subclass relation.  (Contributed by NM,
+       19-Oct-1999.) $)
+    sslin $p |- ( A C_ B -> ( C i^i A ) C_ ( C i^i B ) ) $=
+      ( wss cin ssrin incom 3sstr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
+  $}
+
+  $( Intersection of subclasses.  (Contributed by NM, 5-May-2000.) $)
+  ss2in $p |- ( ( A C_ B /\ C C_ D ) -> ( A i^i C ) C_ ( B i^i D ) ) $=
+    ( wss cin ssrin sslin sylan9ss ) ABECDEACFBCFBDFABCGCDBHI $.
+
+  $( Intersection preserves subclass relationship.  (Contributed by NM,
+     14-Sep-1999.) $)
+  ssinss1 $p |- ( A C_ C -> ( A i^i B ) C_ C ) $=
+    ( cin wss wi inss1 sstr2 ax-mp ) ABDZAEACEJCEFABGJACHI $.
+
+  $( Inclusion of an intersection of two classes.  (Contributed by NM,
+     30-Oct-2014.) $)
+  inss $p |- ( ( A C_ C \/ B C_ C ) -> ( A i^i B ) C_ C ) $=
+    ( wss cin ssinss1 incom syl5eqss jaoi ) ACDABEZCDBCDZABCFKJBAECABGBACFHI $.
+
+$(
 ###############################################################################
                             CLASSICAL LOGIC
 ###############################################################################
