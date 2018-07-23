@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Jul-2018
+$( iset.mm - Version of 22-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6195,6 +6195,11 @@ $)
     ( wdc wi wn wo notnotdc imbi1d wb dcn dfordc syl bitr4d ) ACZABDA
     EZEZBDZOBFZNAPBAGHNOCRQIAJOBKLM $.
 
+  $( Implication in terms of disjunction.  One direction of theorem *4.6 of
+     [WhiteheadRussell] p. 120.  (Contributed by Jim Kingdon, 21-Jul-2018.) $)
+  imorr $p |- ( ( -. ph \/ ps ) -> ( ph -> ps ) ) $=
+    ( wn wi ax-in2 ax-1 jaoi ) ACABDBABEBAFG $.
+
   $( Implication in terms of disjunction.  Like Theorem *4.62 of
      [WhiteheadRussell] p. 120, but for a decidable antecedent.  (Contributed
      by Jim Kingdon, 21-Apr-2018.) $)
@@ -9088,8 +9093,8 @@ $)
     FUDABGUFTUBHUGUAUHUCUAATEZFUIUAFUAUGUAUIIUIUAAJKABTLPABMNOUAUCIUAUEUCBTQRO
     $.
 
-  $( A consequence of exclusive or.  In classical logic this would be an
-     equivalence.  (Contributed by Jim Kingdon, 8-Mar-2018.) $)
+  $( A consequence of exclusive or.  In classical logic the converse also
+     holds.  (Contributed by Jim Kingdon, 8-Mar-2018.) $)
   xorbin $p  |- ( ( ph \/_ ps ) -> ( ph <-> -. ps ) ) $=
     ( wn wo wa wi df-xor imnan biimpri adantl sylbi pm2.53 orcoms adantr impbid
     wxo ) ABPZABCZQABDZABECZEZARFZABGZTUBSUBTABHIJKQUARAFZUCSUDTBAUDBALMNKO $.
@@ -11244,8 +11249,9 @@ $)
     ( wal wex wa 19.29r 19.29 eximi syl ) ADEZCFBDFZCEGLMGZCFABGDFZCFLMCHNOCABD
     IJK $.
 
-  $( Forward direction of Theorem 19.35 of [Margaris] p. 90.  (Contributed by
-     Mario Carneiro, 2-Feb-2015.) $)
+  $( Forward direction of Theorem 19.35 of [Margaris] p. 90.  The converse
+     holds for classical logic but not (for all propositions) in intuitionistic
+     logic (Contributed by Mario Carneiro, 2-Feb-2015.) $)
   19.35-1 $p |- ( E. x ( ph -> ps ) -> ( A. x ph -> E. x ps ) ) $=
     ( wal wi wex wa 19.29 pm3.35 eximi syl expcom ) ACDZABEZCFZBCFZMOGANGZCFPAN
     CHQBCABIJKL $.
@@ -11264,6 +11270,14 @@ $)
               ( E. y A. x ph -> E. y E. x ps ) ) $=
     ( wi wex wal 19.35-1 alimi exim syl ) ABECFZDGACGZBCFZEZDGMDFNDFELODABCHIMN
     DJK $.
+
+  $( Theorem 19.30 of [Margaris] p. 90, with an additional decidability
+     condition.  (Contributed by Jim Kingdon, 21-Jul-2018.) $)
+  19.30dc $p |- ( DECID E. x ps ->
+      ( A. x ( ph \/ ps ) -> ( A. x ph \/ E. x ps ) ) ) $=
+    ( wex wdc wn wo wal wi df-dc olc a1d alnex al2imi sylbir orc syl6
+    orel2 jaoi sylbi ) BCDZEUAUAFZGABGZCHZACHZUAGZIZUAJUAUGUBUAUFUDUA
+    UEKLUBUDUEUFUBBFZCHUDUEIBCMUHUCACBARNOUEUAPQST $.
 
   $( Theorem 19.43 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
      (Proof shortened by Mario Carneiro, 2-Feb-2015.) $)
@@ -11334,6 +11348,23 @@ $)
   19.2 $p |- ( A. x ph -> E. y ph ) $=
     ( wex 19.8a sps ) AACDBACEF $.
 
+  ${
+    i19.24.1 $e |- ( ( A. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $.
+    $( Theorem 19.24 of [Margaris] p. 90, with an additional hypothesis.  The
+       hypothesis is the converse of ~ 19.35-1 , and is a theorem of classical
+       logic, but in intuitionistic logic it will only be provable for some
+       propositions.  (Contributed by Jim Kingdon, 22-Jul-2018.) $)
+    i19.24 $p |- ( ( A. x ph -> A. x ps ) -> E. x ( ph -> ps ) ) $=
+      ( wal wi wex 19.2 imim2i syl ) ACEZBCEZFKBCGZFABFCGLMKBCCHIDJ $.
+
+    $( Theorem 19.39 of [Margaris] p. 90, with an additional hypothesis.  The
+       hypothesis is the converse of ~ 19.35-1 , and is a theorem of classical
+       logic, but in intuitionistic logic it will only be provable for some
+       propositions.  (Contributed by Jim Kingdon, 22-Jul-2018.) $)
+    i19.39 $p |- ( ( E. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $=
+      ( wex wi wal 19.2 imim1i syl ) ACEZBCEZFACGZLFABFCEMKLACCHIDJ $.
+  $}
+
   $( A closed version of one direction of ~ 19.9 .  (Contributed by NM,
      5-Aug-1993.) $)
   19.9ht $p |- ( A. x ( ph -> A. x ph ) -> ( E. x ph -> ph ) ) $=
@@ -11370,13 +11401,14 @@ $)
     ( wal wn wex wfal wi pm2.24 alimi exim syl nfv 19.9 syl6ib sylibr
     dfnot ) ABCZADZBEZFGSDQSFBEZFQRFGZBCSTGAUABAFHIRFBJKFBFBLMNSPO $.
 
-  $( One direction of Theorem 19.14 of [Margaris] p. 90.  (Contributed by Jim
-     Kingdon, 15-Jul-2018.) $)
+  $( One direction of Theorem 19.14 of [Margaris] p. 90.  In classical logic
+     the converse also holds.  (Contributed by Jim Kingdon, 15-Jul-2018.) $)
   exnalim $p |- ( E. x -. ph -> -. A. x ph ) $=
     ( wal wn wex alexim con2i ) ABCADBEABFG $.
 
-  $( A transformation of quantifiers and logical connectives.  (Contributed by
-     Jim Kingdon, 15-Jul-2018.) $)
+  $( A transformation of quantifiers and logical connectives.  In classical
+     logic the converse also holds.  (Contributed by Jim Kingdon,
+     15-Jul-2018.) $)
   exanaliim $p |- ( E. x ( ph /\ -. ps ) -> -. A. x ( ph -> ps ) ) $=
     ( wn wa wex wi wal annimim eximi exnalim syl ) ABDEZCFABGZDZCFNCH
     DMOCABIJNCKL $.
@@ -11508,6 +11540,24 @@ $)
     ( wnf wex wal wi nf2 nfe1 nfri 19.21h bitr4i ) ABCABDZABEFLAFBEABGLABLBABHIJ
     K $.
 
+  $( Variable ` x ` is effectively not free in ` ph ` iff ` ph ` is always true
+     or always false, given a decidability condition.  The reverse direction,
+     ~ nf4r , holds for all propositions.  (Contributed by Jim Kingdon,
+     21-Jul-2018.) $)
+  nf4dc $p |- ( DECID E. x ph -> ( F/ x ph <-> ( A. x ph \/ A. x -. ph ) ) ) $=
+    ( wex wdc wnf wn wal wo wi nf2 imordc syl5bb orbi2i bitr4i syl6bb
+    orcom alnex ) ABCZDZABEZRFZABGZHZUBAFBGZHZTRUBISUCABJRUBKLUCUBUAH
+    UEUAUBPUDUAUBABQMNO $.
+
+  $( If ` ph ` is always true or always false, then variable ` x ` is
+     effectively not free in ` ph ` .  The converse holds given a decidability
+     condition, as seen at ~ nf4dc .  (Contributed by Jim Kingdon,
+     21-Jul-2018.) $)
+  nf4r $p |- ( ( A. x ph \/ A. x -. ph ) -> F/ x ph ) $=
+    ( wal wn wo wex wnf orcom alnex orbi2i bitr4i wi imorr nf2 sylibr
+    sylbir ) ABCZADBCZEZABFZDZQEZABGZUBQUAESUAQHRUAQABIJKUBTQLUCTQMAB
+    NOP $.
+
   ${
     19.36i.1 $e |- F/ x ps $.
     19.36i.2 $e |- E. x ( ph -> ps ) $.
@@ -11520,7 +11570,9 @@ $)
   ${
     19.36-1.1 $e |- F/ x ps $.
     $( Closed form of ~ 19.36i .  One direction of Theorem 19.36 of [Margaris]
-       p. 90.  (Contributed by Jim Kingdon, 20-Jun-2018.) $)
+       p. 90.  The converse holds in classical logic, but does not hold (for
+       all propositions) in intuitionistic logic.  (Contributed by Jim Kingdon,
+       20-Jun-2018.) $)
     19.36-1 $p |- ( E. x ( ph -> ps ) -> ( A. x ph -> ps ) ) $=
       ( wi wex wal 19.35-1 19.9 syl6ib ) ABECFACGBCFBABCHBCDIJ $.
   $}
@@ -14676,8 +14728,8 @@ $)
 
   $( Define "there exists at most one ` x ` such that ` ph ` ."  Here we define
      it in terms of existential uniqueness.  Notation of [BellMachover] p. 460,
-     whose definition we show as ~ mo3 .  For other possible definitions see
-     ~ mo2 and ~ mo4 .  (Contributed by NM, 5-Aug-1993.) $)
+     whose definition we show as ~ mo3 .  For another possible definition see
+     ~ mo4 .  (Contributed by NM, 5-Aug-1993.) $)
   df-mo $a |- ( E* x ph <-> ( E. x ph -> E! x ph ) ) $.
 
   ${
@@ -15473,9 +15525,8 @@ $)
     $( This theorem provides us with a definition of double existential
        uniqueness ("exactly one ` x ` and exactly one ` y ` ").  Naively one
        might think (incorrectly) that it could be defined by
-       ` E! x E! y ph ` .  See ~ 2eu1 for a condition under which the naive
-       definition holds and ~ 2exeu for a one-way implication.  See ~ 2eu5 and
-       ~ 2eu8 for alternate definitions.  (Contributed by NM, 3-Dec-2001.) $)
+       ` E! x E! y ph ` .  See ~ 2exeu for a one-way implication.  (Contributed
+       by NM, 3-Dec-2001.) $)
     2eu4 $p |- ( ( E! x E. y ph /\ E! y E. x ph ) <->
       ( E. x E. y ph /\ E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) ) ) $=
       ( wex weu wa weq wal ax-17 eu3h anbi12i anbi2i bitri hba1 19.3h 19.26 albii
@@ -25865,12 +25916,6 @@ $)
       ( wn id nsyl2 ) BDZBAGECF $.
   $}
 
-  $( Simplification.  Similar to Theorem *3.26 (Simp) of [WhiteheadRussell]
-     p. 112.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
-     Lammen, 21-Jul-2012.) $)
-  simplim $p |- ( -. ( ph -> ps ) -> ph ) $=
-    ( wi pm2.21 con1i ) AABCABDE $.
-
   ${
     19.32.1 $e |- ( ph -> A. x ph ) $.
     $( Theorem 19.32 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
@@ -25887,231 +25932,6 @@ $)
       ( wo wal 19.32 orcom albii 3bitr4i ) BAEZCFBACFZEABEZCFLBEBACDGMKCABHILBH
       J $.
   $}
-
-  $( Theorem 19.35 of [Margaris] p. 90.  In classical logic, this theorem is
-     useful for moving an implication (in the form of the right-hand side) into
-     the scope of a single existential quantifier.  The forward direction,
-     ~ 19.35-1 , holds intuitionistically.  (Contributed by NM, 5-Aug-1993.)
-     (Proof shortened by Wolf Lammen, 27-Jun-2014.) $)
-  19.35 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> E. x ps ) ) $=
-    ( wi wex wal wn wa 19.26 annim albii alnex anbi2i 3bitr3i con4bii ) ABDZCEZ
-    ACFZBCEZDZPGZCFZRSGZHZQGTGABGZHZCFRUECFZHUBUDAUECIUFUACABJKUGUCRBCLMNPCLRSJ
-    NO $.
-
-  ${
-    19.37.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.37 of [Margaris] p. 90.  The forward direction is valid
-       intuitionistically (it could be proved from ~ 19.35-1 ), but the reverse
-       direction is not.  (Contributed by NM, 5-Aug-1993.) $)
-    19.37 $p |- ( E. x ( ph -> ps ) <-> ( ph -> E. x ps ) ) $=
-      ( wi wex wal 19.35 19.3h imbi1i bitri ) ABECFACGZBCFZEAMEABCHLAMACDIJK $.
-  $}
-
-  ${
-    $d x ph $.
-    $( Special case of Theorem 19.37 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
-    19.37v $p |- ( E. x ( ph -> ps ) <-> ( ph -> E. x ps ) ) $=
-      ( ax-17 19.37 ) ABCACDE $.
-  $}
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Existential uniqueness (supplemental)
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-   This section contains the theorems on existential uniqueness which have
-   not yet been moved to the main section on existential uniqueness
-   in the predicate logic section. To be moved, those that rely on ~ ax-3
-   will either need a new proof, or to be restated (most likely with a
-   decidability condition).
-
-$)
-
-  ${
-    $d x y z $.  $d ph z $.
-    mo.1 $e |- ( ph -> A. y ph ) $.
-    $( Equivalent definitions of "there exists at most one."  (Contributed by
-       NM, 7-Aug-1994.) $)
-    mo $p |- ( E. y A. x ( ph -> x = y ) <->
-               A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
-      ( vz weq wi wal wex wsb wa ax-17 hbim hbal cbv3h syl sylbir alimi wn hbn
-      equequ2 imbi2d albidv cbvexh hbs1 sbequ2 ax-8 imim12d ancli aaan prth syl6
-      sylibr equtr2 2alimi exlimiv impexp bi2.04 bitri 2albii eximi a7s syl5com
-      alim exim syl5bi alnex sbequ1 equcoms con3d pm2.21 19.8a 3syl a1d pm2.61i
-      impbii ) ABCFZGZBHZCIZAABCJZKZVQGZCHBHZVTABEFZGZBHZEIWDWGVSECWFCBAWECDWEC
-      LMZNVSELECFZWFVRBWIWEVQAECBUAUBUCUDWGWDEWGWFWACEFZGZKZCHBHZWDWGWGWKCHZKWM
-      WGWNWFWKBCWHWAWJBABCUEZWJBLMZVQWAAWEWJABCUFBCEUGUHOUIWFWKBCWHWPUJUMWLWCBC
-      WLWBWEWJKVQAWEWAWJUKBCEUNULUOPUPQWACIZWDVTGWDWAVRGZCHBHZWQVTWCWRBCWCAWAVQ
-      GGWRAWAVQUQAWAVQURUSUTWQWABHZCIZWSVTWAWTCWOVAWSWTVSGZCHZXAVTGWRXCCBWRBHXB
-      CWAVRBVDRVBWTVSCVEPVCVFWQSZVTWDXDWASZCHZVTWACVGXFASZBHVSVTXEXGCBWABWOTACD
-      TCBFAWAAWAGBCABCVHVIVJOXGVRBAVQVKRVSCVLVMQVNVOVP $.
-  $}
-
-  ${
-    $d x y $.
-    mo2.1 $e |- ( ph -> A. y ph ) $.
-    $( Alternate definition of "at most one."  (Contributed by NM,
-       8-Mar-1995.) $)
-    mo2 $p |- ( E* x ph <-> E. y A. x ( ph -> x = y ) ) $=
-      ( wmo wex weu wi weq wal df-mo alnex pm2.21 alimi 19.8a syl sylbir eumo0
-      wn ja eu3h simplbi2com impbii bitri ) ABEABFZABGZHZABCIZHZBJZCFZABKUGUKUEU
-      FUKUESASZBJZUKABLUMUJUKULUIBAUHMNUJCOPQABCDRTUFUEUKABCDUAUBUCUD $.
-  $}
-
-  $( Something exists or at most one exists.  (Contributed by NM,
-     8-Mar-1995.) $)
-  exmo $p |- ( E. x ph \/ E* x ph ) $=
-    ( wex wmo wn weu wi pm2.21 df-mo sylibr orri ) ABCZABDZLELABFZGMLNHABIJK $.
-
-  ${
-    moexex.1 $e |- ( ph -> A. y ph ) $.
-    $( "At most one" double quantification.  (Contributed by NM,
-       3-Dec-2001.) $)
-    moexex $p |- ( ( E* x ph /\ A. x E* y ps ) -> E* y E. x ( ph /\ ps ) ) $=
-      ( wmo wal wa wex wi hbmo1 hba1 hbe1 hbmo hbim mopick ex exlimih wn a1d ori
-      com3r alrimdh moim spsd syl6 hbex exsimpl con3i exmo syl pm2.61i imp ) ACF
-      ZBDFZCGZABHZCIZDFZACIZUNUPUSJZJZAVBCUNVACACKUPUSCUOCLURCDUQCMNOOAUNURBJZD
-      GZVAAUNVCDEADCENUNURABUNURABJABCPQUBUCVDUOUSCURBDUDUEUFRUTSZVAUNVEUSUPVEU
-      RDIZSUSVFUTURUTDADCEUGABCUHRUIVFUSURDUJUAUKTTULUM $.
-  $}
-
-  $( A condition allowing swap of "at most one" and existential quantifiers.
-     (Contributed by NM, 10-Apr-2004.) $)
-  2moswap $p |- ( A. x E* y ph -> ( E* x E. y ph -> E* y E. x ph ) ) $=
-    ( wmo wal wex wa hbe1 moexex expcom 19.8a pm4.71ri exbii mobii syl6ibr ) AC
-    DBEZACFZBDZQAGZBFZCDZABFZCDRPUAQABCACHIJUBTCASBAQACKLMNO $.
-
-  $( A condition allowing swap of uniqueness and existential quantifiers.
-     (Contributed by NM, 10-Apr-2004.) $)
-  2euswap $p |- ( A. x E* y ph -> ( E! x E. y ph -> E! y E. x ph ) ) $=
-    ( wmo wal wex wa weu wi excomim a1i 2moswap anim12d eu5 3imtr4g ) ACDBEZACF
-    ZBFZQBDZGABFZCFZTCDZGQBHTCHPRUASUBRUAIPABCJKABCLMQBNTCNO $.
-
-  ${
-    $d x y z w v u $.  $d z w v u ph $.
-    $( Two equivalent expressions for double "at most one."  (Contributed by
-       NM, 2-Feb-2005.) $)
-    2mo $p |- ( E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) <->
-              A. x A. y A. z A. w ( ( ph /\ [ z / x ] [ w / y ] ph ) ->
-                   ( x = z /\ y = w ) ) ) $=
-      ( vv vu weq wa wi wal wex wsb equequ2 bi2anan9 ax-17 albii bitri 2alimi
-      wn imbi2d 2albidv cbvex2v hbs1 hbim hbsb sbequ12 sylan9bbr equequ1 cbval2
-      imbi12d biimpi ancli alcom aaan hbal sylibr prth equtr2 anim12i an4s syl6
-      syl exlimivv sylbir impexp bi2.04 2albii alrimih 2eximi alrot4 alim al2imi
-      sylbi exim alimi syl5com syl5bi alnex notbid biimpri pm2.21 19.8a 19.23bi
-      3syl hbn a1d pm2.61i impbii ) ABDHZCEHZIZJZCKZBKZELZDLZAACEMZBDMZIZWLJZEK
-      DKZCKBKZWQABFHZCGHZIZJZCKZBKZGLFLXCXIWOFGDEFDHZGEHZIZXGWMBCXLXFWLAXJXDWJX
-      KXEWKFDBNGECNOUAUBUCXIXCFGXIXGWSDFHZEGHZIZJZIZEKZDKZCKZBKZXCXIXIXPEKZDKZI
-      ZYAXIYCXIYCXGXPBCDEXGDPXGEPZWSXOBWRBDUDZXOBPUEZWSXOCWRBDCACEUDUFZXOCPUEZW
-      LAWSXFXOWKAWRWJWSACEUGWRBDUGUHZWJXDXMWKXEXNBDFUICEGUIOUKUJULUMYAXHYBIZDKZ
-      BKYDXTYLBXTXRCKZDKYLXRCDUNYMYKDXGXPCEYEYIUOQRQXHYBBDXHDPXPBEYGUPUORUQXSXB
-      BCXQXADEXQWTXFXOIWLAXFWSXOURXDXMXEXNWLXDXMIWJXEXNIWKBDFUSCEGUSUTVAVBSSVCV
-      DVEWSELZDLZXCWQJXCWSWMJZEKDKZCKBKZYOWQXBYQBCXAYPDEXAAWSWLJJYPAWSWLVFAWSWL
-      VGRVHVHYOWSCKZBKZELZDLZYRWQWSYTDEWSYSBYFYHVIVJYRYTWOJZEKZDKZUUAWPJZDKUUBW
-      QJYRYPCKZBKZEKDKUUEYPBCDEVKUUHUUCDEUUGYSWNBWSWMCVLVMSVNUUDUUFDYTWOEVOVPUU
-      AWPDVOWEVQVRYOTZWQXCUUIWSTZEKZDKZWQUULYNTZDKUUIUUKUUMDWSEVSQYNDVSRUULATZC
-      KBKZWOWQUUOUULUUNUUJBCDEUUNDPUUNEPWSBYFWFWSCYHWFWLAWSYJVTUJWAUUNWMBCAWLWB
-      SWOWQEWPDWCWDWEVEWGWHWI $.
-  $}
-
-  ${
-    $d z w ph $.  $d x y ps $.  $d x y z w $.
-    2mos.1 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
-    $( Double "exists at most one", using implicit substitition.  (Contributed
-       by NM, 10-Feb-2005.) $)
-    2mos $p |- ( E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) <->
-             A. x A. y A. z A. w ( ( ph /\ ps ) -> ( x = z /\ y = w ) ) ) $=
-      ( weq wa wi wal wex wsb 2mo ax-17 sbrim wb expcom sbieh 2albii pm5.74ri
-      pm5.74d bitr3i anbi2i imbi1i bitri ) ACEHZDFHZIZJDKCKFLELAADFMZCEMZIZUIJZ
-      FKEKZDKCKABIZUIJZFKEKZDKCKACDEFNUNUQCDUMUPEFULUOUIUKBAUJBCEBCOUGUJBUGUJJU
-      GAJZDFMUGBJZUGADFUGDOPURUSDFUSDOUHUGABUGUHABQGRUBSUCUASUDUETTUF $.
-  $}
-
-  $( Double existential uniqueness.  This theorem shows a condition under which
-     a "naive" definition matches the correct one.  (Contributed by NM,
-     3-Dec-2001.) $)
-  2eu1 $p |- ( A. x E* y ph ->
-        ( E! x E! y ph <-> ( E! x E. y ph /\ E! y E. x ph ) ) ) $=
-    ( wmo wal weu wex wa wi eu5 exbii mobii anbi12i bitri simprbi anim2i ancoms
-    ax-4 sylib com12 moimi hba1 moanimh ancrd 2moswap imdistani syl 2eu2ex excom
-    syl6 jca jctild an4 syl6ibr 2exeu impbid1 ) ACDZBEZACFZBFZACGZBFZABGZCFZHZU
-    TURVEUTURVABGZVCCGZHZVABDZVCCDZHZHZVEUTURVKVHUTVAUQHZBDZURVKIUTVMBGZVNUTUSB
-    GZUSBDZHVOVNHUSBJVPVOVQVNUSVMBACJZKUSVMBVRLMNOVNURVIURHVKVNURVIVNURVAHZBDUR
-    VIIVSVMBVAURVMURUQVAUQBRPQUAURVABUQBUBUCSUDVIURVJURVIVJABCUETUFUJUGUTVFVGAB
-    CUHZUTVFVGVTABCUISUKULVEVFVIHZVGVJHZHVLVBWAVDWBVABJVCCJMVFVIVGVJUMNUNTABCUO
-    UP $.
-
-  $( Double existential uniqueness.  (Contributed by NM, 3-Dec-2001.) $)
-  2eu2 $p |- ( E! y E. x ph -> ( E! x E! y ph <-> E! x E. y ph ) ) $=
-    ( wex weu wmo wal wi eumo 2moex 2eu1 simpl syl6bi 3syl 2exeu expcom impbid
-    wa ) ABDZCEZACEBEZACDBEZTSCFACFBGZUAUBHSCIACBJUCUAUBTRUBABCKUBTLMNUBTUAABCO
-    PQ $.
-
-
-  $( Double existential uniqueness.  (Contributed by NM, 3-Dec-2001.) $)
-  2eu3 $p |- ( A. x A. y ( E* x ph \/ E* y ph ) ->
- ( ( E! x E! y ph /\ E! y E! x ph ) <-> ( E! x E. y ph /\ E! y E. x ph ) ) ) $=
-    ( wmo wo wal weu wa wex wb hbmo1 19.31 albii hbal 19.32 bitri wi 2eu1 2exeu
-    biimpd ancom syl6ib adantld adantrd jaoi ancoms jca impbid1 sylbi ) ABDZACD
-    ZECFZBFZUJCFZUKBFZEZACGBGZABGCGZHZACIBGZABICGZHZJUMUNUKEZBFUPULVCBUJUKCACKL
-    MUNUKBUJBCABKNOPUPUSVBUNUSVBQUOUNURVBUQUNURVAUTHZVBUNURVDACBRTVAUTUAUBUCUOU
-    QVBURUOUQVBABCRTUDUEVBUQURABCSVAUTURACBSUFUGUHUI $.
-
-  ${
-    $d x y z w $.  $d z w ph $.
-    $( An alternate definition of double existential uniqueness (see ~ 2eu4 ).
-       A mistake sometimes made in the literature is to use ` E! x E! y ` to
-       mean "exactly one ` x ` and exactly one ` y ` ."  (For example, see
-       Proposition 7.53 of [TakeutiZaring] p. 53.)  It turns out that this is
-       actually a weaker assertion, as can be seen by expanding out the formal
-       definitions.  This theorem shows that the erroneous definition can be
-       repaired by conjoining ` A. x E* y ph ` as an additional condition.  The
-       correct definition apparently has never been published.  ( ` E* ` means
-       "exists at most one.") (Contributed by NM, 26-Oct-2003.) $)
-    2eu5 $p |- ( ( E! x E! y ph /\ A. x E* y ph ) <->
-      ( E. x E. y ph /\ E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) ) ) $=
-      ( weu wmo wal wa wex weq 2eu1 pm5.32ri eumo adantl 2moex syl pm4.71i 2eu4
-      wi 3bitr2i ) ACFBFZACGBHZIACJZBFZABJZCFZIZUCIUHUDBJABDKCEKITCHBHEJDJIUCUB
-      UHABCLMUHUCUHUFCGZUCUGUIUEUFCNOACBPQRABCDESUA $.
-  $}
-
-  ${
-    $d x y z w v u $.  $d z w v u ph $.
-    $( Two equivalent expressions for double existential uniqueness.
-       (Contributed by NM, 2-Feb-2005.) $)
-    2eu6 $p |- ( ( E! x E. y ph /\ E! y E. x ph ) <->
-               E. z E. w A. x A. y ( ph <-> ( x = z /\ y = w ) ) ) $=
-      ( vu vv wex wa weq wi wal ax-17 hbsb sbequ12 equequ2 bi2anan9 hbim 2exbii
-      wsb weu 2eu4 19.29r2 hbs1 sylan9bbr cbvex2 imbi2d 2albidv cbvex2v equequ1
-      wb imbi12d cbval2 3bitri anbi12i 2albiim ancom bitri equcom imbi2i impexp
-      2mo 2albii hban sbco2h sbcom2 sbbii 3bitr3ri syl6bb anbi2d 19.21-2 3bitr3i
-      anbi2i abai 2sb6 anbi1i 3bitr2i bitr4i 3imtr4i 2alimi 2eximi 2exsb sylibr
-      bi2 bi1 jca impbii ) ACHZBUAABHCUAIWHBHZABDJZCEJZIZKZCLBLZEHDHZIZAWLUKZCL
-      BLZEHDHZABCDEUBWPWSACETZBDTZEHDHZXAXAEFTZDGTZIZDGJZEFJZIZKZFLGLZELDLZIXAX
-      JIZEHDHZWPWSXAXJDEUCWIXBWOXKAXABCDEADMAEMZWTBDUDZWTBDCACEUDNZWKAWTWJXAACE
-      OWTBDOUEZUFWOABGJZCFJZIZKZCLBLZFHGHXAXHKZELDLZFHGHXKWNYBDEGFXHWMYABCXHWLX
-      TAXFWJXRXGWKXSDGBPEFCPQUGUHUIYBYDGFYAYCBCDEYADMYAEMXAXHBXOXHBMZRXAXHCXPXH
-      CMZRWLAXAXTXHXQWJXRXFWKXSXGBDGUJCEFUJQULUMSXADEGFVBUNUOWSWLAKZCLBLZWNIZEH
-      DHXMWRYIDEWRWNYHIYIAWLBCUPWNYHUQURSXLYIDEXLXAXAWNKZIXAWNIYIXJYJXAXAAIZDBJ
-      ZECJZIZKZCLBLXAWMKZCLBLXJYJYOYPBCYOYKWLKYPYNWLYKYLWJYMWKDBUSECUSUOUTXAAWL
-      VAURVCYOXIBCGFYOGMYOFMXEXHBXAXDBXOXCDGBXAEFBXONNVDYERXEXHCXAXDCXPXCDGCXAE
-      FCXPNNVDYFRXTYKXEYNXHXTAXDXAXTAACFTZBGTZXDXSAYQXRYRACFOYQBGOUEWTEFTZBDTZD
-      GTYSBGTXDYRYSBGDYSDMVEYTXCDGWTEFBDVFVGYSYQBGACFEXNVEVGVHVIVJXRYLXFXSYMXGB
-      GDPCFEPQULUMXAWMBCXOXPVKVLVMXAWNVNXAYHWNABCDEVOVPVQSVRVSWSWIWOWSYHEHDHWIW
-      RYHDEWQYGBCAWLWDVTWAABCDEWBWCWRWNDEWQWMBCAWLWEVTWAWFWGUR $.
-  $}
-
-  $( Two equivalent expressions for double existential uniqueness.  Curiously,
-     we can put ` E! ` on either of the internal conjuncts but not both.  We
-     can also commute ` E! x E! y ` using ~ 2eu7 .  (Contributed by NM,
-     20-Feb-2005.) $)
-  2eu8 $p |- ( E! x E! y ( E. x ph /\ E. y ph ) <->
-                E! x E! y ( E! x ph /\ E. y ph ) ) $=
-    ( wex wa 2eu2 pm5.32i hbeu1 hbeu euan ancom eubii hbe1 3bitri 3bitr4ri 2eu7
-    weu 3bitr3ri ) ACDZBQZABQZCQZEZTABDZCQZEUASEZCQZBQZUDSECQBQTUBUEACBFGUBSEZB
-    QUBTEUHUCUBSBUABCABHIJUGUIBUGSUAEZCQSUBEUIUFUJCUASKLSUACACMJSUBKNLTUBKOABCP
-    R $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -26161,96 +25981,6 @@ $)
                 ( ph -> ( ps \/ ch ) ) ) $=
     ( wn wo wi orordi imor orbi12i 3bitr4ri ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCG
     ALHOMPNABHACHIJ $.
-
-  ${
-    19.36.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.36 of [Margaris] p. 90.  The forward direction, ~ 19.36i , is
-       valid intuitionistically, but the reverse direction is not.
-       (Contributed by NM, 5-Aug-1993.) $)
-    19.36 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
-      ( wi wex wal 19.35 19.9h imbi2i bitri ) ABECFACGZBCFZELBEABCHMBLBCDIJK $.
-  $}
-
-  ${
-    $d x ps $.
-    $( Special case of Theorem 19.36 of [Margaris] p. 90.  (Contributed by NM,
-       18-Aug-1993.) $)
-    19.36v $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
-      ( ax-17 19.36 ) ABCBCDE $.
-  $}
-
-  $( Theorem 19.39 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-  19.39 $p |- ( ( E. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $=
-    ( wex wi wal 19.2 imim1i 19.35 sylibr ) ACDZBCDZEACFZLEABECDMKLACCGHABCIJ
-    $.
-
-  $( Theorem 19.24 of [Margaris] p. 90.  It does not hold in intuitionistic
-     logic.  (Contributed by NM, 5-Aug-1993.) $)
-  19.24 $p |- ( ( A. x ph -> A. x ps ) -> E. x ( ph -> ps ) ) $=
-    ( wal wi wex 19.2 imim2i 19.35 sylibr ) ACDZBCDZEKBCFZEABECFLMKBCCGHABCIJ
-    $.
-
-  ${
-    $d x ps $.  $d y ph $.
-    $( Special case of ~ 19.12 where its converse holds.  (Contributed by NM,
-       18-Jul-2001.)  (Revised by Andrew Salmon, 11-Jul-2011.) $)
-    19.12vv $p |- ( E. x A. y ( ph -> ps ) <-> A. y E. x ( ph -> ps ) ) $=
-      ( wal wex 19.21v exbii ax-17 hbal 19.36 19.36v albii 19.21h bitr2i 3bitri
-      wi ) ABQZDEZCFABDEZQZCFACEZTQZRCFZDEZSUACABDGHATCBCDBCIJKUEUBBQZDEUCUDUFD
-      ABCLMUBBDADCADIJNOP $.
-  $}
-
-  $( Theorem 19.14 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-  exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
-    ( wal wn wex alex con2bii ) ABCADBEABFG $.
-
-  $( Part of theorem *11.5 in [WhiteheadRussell] p. 164.  (Contributed by
-     Andrew Salmon, 24-May-2011.) $)
-  2nalexn $p |- ( -. A. x A. y ph <-> E. x E. y -. ph ) $=
-    ( wn wex wal df-ex alex albii xchbinxr bicomi ) ADCEZBEZACFZBFZDMLDZBFOLBGN
-    PBACHIJK $.
-
-  $( A relationship between two quantifiers and negation.  (Contributed by NM,
-     18-Aug-1993.) $)
-  alexn $p |- ( A. x E. y -. ph <-> -. E. x A. y ph ) $=
-    ( wn wex wal exnal albii alnex bitri ) ADCEZBFACFZDZBFLBEDKMBACGHLBIJ $.
-
-  $( Theorem *11.51 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
-     Salmon, 24-May-2011.)  (Proof shortened by Wolf Lammen, 25-Sep-2014.) $)
-  2exnexn $p |- ( E. x A. y ph <-> -. A. x E. y -. ph ) $=
-    ( wn wex wal alexn con2bii ) ADCEBFACFBEABCGH $.
-
-  $( A transformation of quantifiers and logical connectives.  (Contributed by
-     NM, 25-Mar-1996.)  (Proof shortened by Wolf Lammen, 4-Sep-2014.) $)
-  exanali $p |- ( E. x ( ph /\ -. ps ) <-> -. A. x ( ph -> ps ) ) $=
-    ( wn wa wex wi wal annim exbii exnal bitri ) ABDEZCFABGZDZCFNCHDMOCABIJNCKL
-    $.
-
-  $( Theorem 19.30 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
-     (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-  19.30 $p |- ( A. x ( ph \/ ps ) -> ( A. x ph \/ E. x ps ) ) $=
-    ( wn wi wal wex wo exnal exim syl5bir df-or albii 3imtr4i ) ADZBEZCFZACFZDZ
-    BCGZEABHZCFRTHSOCGQTACIOBCJKUAPCABLMRTLN $.
-
-  ${
-    19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
-    $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
-    19.35ri $p |- E. x ( ph -> ps ) $=
-      ( wi wex wal 19.35 mpbir ) ABECFACGBCFEDABCHI $.
-  $}
-
-  $( Quantified "excluded middle."  Exercise 9.2a of Boolos, p. 111,
-     _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
-  qexmid $p |- E. x ( ph -> A. x ph ) $=
-    ( wal 19.8a 19.35ri ) AABCZBFBDE $.
-
-  $( Variable ` x ` is effectively not free in ` ph ` iff ` ph ` is always true
-     or always false.  This is a classical result.  (Contributed by Mario
-     Carneiro, 24-Sep-2016.) $)
-  nf4 $p |- ( F/ x ph <-> ( A. x ph \/ A. x -. ph ) ) $=
-    ( wnf wex wal wi wn wo nf2 imor orcom alnex orbi2i bitr4i 3bitri ) ABCABDZA
-    BEZFPGZQHZQAGBEZHZABIPQJSQRHUARQKTRQABLMNO $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
