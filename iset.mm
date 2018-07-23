@@ -26090,8 +26090,8 @@ $)
        (Contributed by NM, 15-Sep-2003.)  (Revised by Mario Carneiro,
        14-Oct-2016.) $)
     nfin $p |- F/_ x ( A i^i B ) $=
-      ( vy cin cv wcel crab dfin5 nfcri nfrab nfcxfr ) ABCGFHCIZFBJFBCKOAFBAFCE
-      LDMN $.
+      ( vy cin cv wcel crab dfin5 nfcri nfrabxy nfcxfr ) ABCGFHCIZFBJFBCKO
+      AFBAFCELDMN $.
   $}
 
   ${
