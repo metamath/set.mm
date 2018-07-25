@@ -5358,7 +5358,8 @@ $)
     ( wo wn wa pm2.45 pm2.46 jca simpl con2i simpr jaoi impbii ) ABCZDZADZBDZEZ
     OPQABFABGHNRARDBRAPQIJRBPQKJLJM $.
 
-  $( Theorem *3.14 of [WhiteheadRussell] p. 111.  (Contributed by NM,
+  $( Theorem *3.14 of [WhiteheadRussell] p. 111.  The converse holds for
+     decidable propositions, as seen at ~ pm3.13dc .  (Contributed by NM,
      3-Jan-2005.)  (Revised by Mario Carneiro, 31-Jan-2015.) $)
   pm3.14 $p |- ( ( -. ph \/ -. ps ) -> -. ( ph /\ ps ) ) $=
     ( wn wa simpl con3i simpr jaoi ) ACABDZCBCIAABEFIBABGFH $.
