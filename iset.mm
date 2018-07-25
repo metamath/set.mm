@@ -26301,12 +26301,12 @@ $)
       CHUGUFHZUKUJUKUJJZUGUDHZUIJZKUHJZUPKUKUNUOUQUPUOUGEHZUQCLZUGEAMNOUGUDBMUH
       UIPQRSUGABTUMURULUSUGEUEMNUAUB $.
 
-    $( An alternate definition of the intersection of two classes in terms of
-       class difference, requiring no dummy variables.  Another version is
-       given by ~ dfin4 .  (Contributed by NM, 10-Jun-2004.) $)
-    dfin2 $p |- ( A i^i B ) = ( A \ ( _V \ B ) ) $=
-      ( vx cvv cdif cv wcel wa vex eldif mpbiran con2bii anbi2i bitr4i ineqri
-      wn ) CABADBEZEZCFZAGZSBGZHTSQGZPZHSRGUAUCTUBUAUBSDGUAPCISDBJKLMSAQJNO $.
+    $( Intersection of two classes and class difference.  In classical logic
+       this would be an equality.  (Contributed by Jim Kingdon,
+       24-Jul-2018.) $)
+    inssdif $p |- ( A i^i B ) C_ ( A \ ( _V \ B ) ) $=
+      ( vx cin cvv cdif cv wcel wa wn elndif anim2i elin eldif 3imtr4i ssriv )
+      CABDZAEBFZFZCGZAHZTBHZIUATRHJZITQHTSHUBUCUATBEKLTABMTARNOP $.
 
     $( Difference with intersection.  Theorem 33 of [Suppes] p. 29.
        (Contributed by NM, 31-Mar-1998.)  (Proof shortened by Andrew Salmon,
