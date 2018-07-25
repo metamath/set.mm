@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Jul-2018
+$( iset.mm - Version of 24-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -25588,8 +25588,10 @@ $)
     ddifnel.1 $e |- ( -. x e. ( _V \ A ) -> x e. A ) $.
     $( Double complement under universal class.  The hypothesis is one way of
        expressing the idea that membership in ` A ` is decidable.  Exercise
-       4.10(s) of [Mendelson] p. 231, but with an additional hypothesis.
-       (Contributed by NM, 8-Jan-2002.) $)
+       4.10(s) of [Mendelson] p. 231, but with an additional hypothesis.  For a
+       version without a hypothesis, but which only states that ` A ` is a
+       subset of ` _V \ ( _V \ A ) ` , see ~ ddifss .  (Contributed by Jim
+       Kingdon, 21-Jul-2018.) $)
     ddifnel $p |- ( _V \ ( _V \ A ) ) = A $=
       ( cvv cdif cv wcel wn wa adantl elndif vex jctil impbii difeqri ) ADDBEZB
       AFZDGZQPGHZIQBGZSTRCJTSRQBDKALMNO $.
@@ -26279,20 +26281,23 @@ $)
 
   ${
     $d x A $.  $d x B $.
-    $( Subclass defined in terms of class difference.  See comments under
-       ~ dfun2 .  (Contributed by NM, 22-Mar-1998.)  (Proof shortened by Andrew
-       Salmon, 26-Jun-2011.) $)
-    dfss4 $p |- ( A C_ B <-> ( B \ ( B \ A ) ) = A ) $=
-      ( vx wss wceq cdif sseqin2 cv wcel wn wa eldif notbii anbi2i wi elin abai
-      cin iman bitr4i 3bitri difeqri eqeq1i ) ABDBARZAEBBAFZFZAEABGUFUDACBUEUDC
-      HZBIZUGUEIZJZKUHUHUGAIZJKZJZKZUGUDIZUJUMUHUIULUGBALMNUOUHUKKUHUHUKOZKUNUG
-      BAPUHUKQUPUMUHUHUKSNUATUBUCT $.
+    $( Double complement and subset.  Similar to ~ ddifss but inside a class
+       ` B ` instead of the universal class ` _V ` .  In classical logic the
+       subset operation on the right hand side could be an equality (that is,
+       ` A C_ B <-> ( B \ ( B \ A ) ) = A ` ).  (Contributed by Jim Kingdon,
+       24-Jul-2018.) $)
+    ssddif $p |- ( A C_ B <-> A C_ ( B \ ( B \ A ) ) ) $=
+      ( vx cv wcel wi wal cdif wss wa ancr wn ax-ia2 con2i anim2i eldif
+      notbii anbi2i bitri dfss2 sylibr syl6 eldifi imim2i albii 3bitr4i
+      impbii ) CDZAEZUHBEZFZCGUIUHBBAHZHZEZFZCGABIAUMIUKUOCUKUOUKUIUJUI
+      JZUNUIUJKUPUJUJUILZJZLZJZUNUIUSUJURUIUJUQMNOUNUJUHULEZLZJUTUHBULP
+      VBUSUJVAURUHBAPQRSUAUBUNUJUIUHBULUCUDUGUECABTCAUMTUF $.
 
     $( An alternate definition of the union of two classes in terms of class
        difference, requiring no dummy variables.  Along with ~ dfin2 and
-       ~ dfss4 it shows we can express union, intersection, and subset directly
-       in terms of the single "primitive" operation ` \ ` (class difference).
-       (Contributed by NM, 10-Jun-2004.) $)
+       ~ ssddif it shows we can express union, intersection, and subset
+       directly in terms of the single "primitive" operation ` \ ` (class
+       difference).  (Contributed by NM, 10-Jun-2004.) $)
     dfun2 $p |- ( A u. B ) = ( _V \ ( ( _V \ A ) \ B ) ) $=
       ( vx cvv cdif cv wcel wo wn wa eldif mpbiran anbi1i ioran 3bitr4i con2bii
       vex bitr4i uneqri ) CABDDAEZBEZEZCFZAGZUCBGZHZUCUAGZIZUCUBGZUGUFUCTGZUEIZ
@@ -26314,6 +26319,12 @@ $)
       wa eldif 3bitr4i difeqri ) CAABDZABEZCFZAGZUCBGZHZIUDUEIQUDUCUAGZIQZUCUBG
       UDUEJUFUHUFUDUDUEQZHUDUGHUHIUDUEKUGUIUDUCABLMUDUGNOPUCABRST $.
   $}
+
+  $( Double complement under universal class.  In classical logic (or given an
+     additional hypothesis, as in ~ ddifnel ), this is equality rather than
+     subset.  (Contributed by Jim Kingdon, 24-Jul-2018.) $)
+  ddifss $p |- A C_ ( _V \ ( _V \ A ) ) $=
+    ( cvv wss cdif ssv ssddif mpbi ) ABCABBADDCAEABFG $.
 
   $( Union defined in terms of intersection (De Morgan's law).  Definition of
      union in [Mendelson] p. 231.  (Contributed by NM, 8-Jan-2002.) $)
