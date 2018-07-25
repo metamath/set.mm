@@ -26293,20 +26293,17 @@ $)
       JZUNUIUJKUPUJUJUILZJZLZJZUNUIUSUJURUIUJUQMNOUNUJUHULEZLZJUTUHBULP
       VBUSUJVAURUHBAPQRSUAUBUNUJUIUHBULUCUDUGUECABTCAUMTUF $.
 
-    $( An alternate definition of the union of two classes in terms of class
-       difference, requiring no dummy variables.  Along with ~ dfin2 and
-       ~ ssddif it shows we can express union, intersection, and subset
-       directly in terms of the single "primitive" operation ` \ ` (class
-       difference).  (Contributed by NM, 10-Jun-2004.) $)
-    dfun2 $p |- ( A u. B ) = ( _V \ ( ( _V \ A ) \ B ) ) $=
-      ( vx cvv cdif cv wcel wo wn wa eldif mpbiran anbi1i ioran 3bitr4i con2bii
-      vex bitr4i uneqri ) CABDDAEZBEZEZCFZAGZUCBGZHZUCUAGZIZUCUBGZUGUFUCTGZUEIZ
-      JUDIZUKJUGUFIUJULUKUJUCDGZULCQZUCDAKLMUCTBKUDUENOPUIUMUHUNUCDUAKLRS $.
+    $( Union of two classes and class difference.  In classical logic this
+       would be an equality.  (Contributed by Jim Kingdon, 24-Jul-2018.) $)
+    unssdif $p |- ( A u. B ) C_ ( _V \ ( ( _V \ A ) \ B ) ) $=
+      ( vx cun cvv cdif cv wcel wo wn wa vex eldif mpbiran anbi1i ioran 3bitr4i
+      biimpi con2i elun 3imtr4i ssriv ) CABDZEEAFZBFZFZCGZAHZUGBHZIZUGUEHZJZUGU
+      CHUGUFHZUKUJUKUJJZUGUDHZUIJZKUHJZUPKUKUNUOUQUPUOUGEHZUQCLZUGEAMNOUGUDBMUH
+      UIPQRSUGABTUMURULUSUGEUEMNUAUB $.
 
     $( An alternate definition of the intersection of two classes in terms of
-       class difference, requiring no dummy variables.  See comments under
-       ~ dfun2 .  Another version is given by ~ dfin4 .  (Contributed by NM,
-       10-Jun-2004.) $)
+       class difference, requiring no dummy variables.  Another version is
+       given by ~ dfin4 .  (Contributed by NM, 10-Jun-2004.) $)
     dfin2 $p |- ( A i^i B ) = ( A \ ( _V \ B ) ) $=
       ( vx cvv cdif cv wcel wa vex eldif mpbiran con2bii anbi2i bitr4i ineqri
       wn ) CABADBEZEZCFZAGZSBGZHTSQGZPZHSRGUAUCTUBUAUBSDGUAPCISDBJKLMSAQJNO $.
