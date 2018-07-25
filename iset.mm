@@ -26313,9 +26313,12 @@ $)
        (Contributed by NM, 31-Mar-1998.)  (Proof shortened by Andrew Salmon,
        26-Jun-2011.) $)
     difin $p |- ( A \ ( A i^i B ) ) = ( A \ B ) $=
-      ( vx cin cdif cv wcel wi wn pm4.61 anclb elin imbi2i iman 3bitr2i con2bii
-      wa eldif 3bitr4i difeqri ) CAABDZABEZCFZAGZUCBGZHZIUDUEIQUDUCUAGZIQZUCUBG
-      UDUEJUFUHUFUDUDUEQZHUDUGHUHIUDUEKUGUIUDUCABLMUDUGNOPUCABRST $.
+      ( vx cin cdif cv wcel wa wn wi ax-in2 exp3a dfnot syl6ibr com12
+      wfal imdistani ax-ia2 con3i eldif anim2i impbii notbii 3bitr4i
+      elin anbi2i bitri eqriv ) CAABDZEZABEZCFZAGZUMULBGZHZIZHZUMUNIZ
+      HZULUJGZULUKGUQUSUMUPURUPUMURUPUMUNPJURUPUMUNPUOPKLUNMNOQURUPUM
+      UOUNUMUNRSUAUBUTUMULUIGZIZHUQULAUITVBUPUMVAUOULABUEUCUFUGULABTU
+      DUH $.
   $}
 
   $( Double complement under universal class.  In classical logic (or given an
