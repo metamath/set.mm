@@ -26365,10 +26365,15 @@ $)
     ( cin cdif wss inss1 ssddif mpbi difin difeq2i sseqtri ) ABCZAALD
     ZDZAABDZDLAELNEABFLAGHMOAABIJK $.
 
-  $( Intersection with universal complement.  Remark in [Stoll] p. 20.
-     (Contributed by NM, 17-Aug-2004.) $)
-  invdif $p |- ( A i^i ( _V \ B ) ) = ( A \ B ) $=
-    ( cvv cdif cin dfin2 ddif difeq2i eqtri ) ACBDZEACJDZDABDAJFKBABGHI $.
+  ${
+    $d x A $.  $d x B $.
+    $( Intersection with universal complement.  Remark in [Stoll] p. 20.
+       (Contributed by NM, 17-Aug-2004.) $)
+    invdif $p |- ( A i^i ( _V \ B ) ) = ( A \ B ) $=
+      ( vx cvv cdif cin cv wcel wa vex eldif mpbiran anbi2i elin 3bitr4i eqriv
+      wn ) CADBEZFZABEZCGZAHZUARHZIUBUABHQZIUASHUATHUCUDUBUCUADHUDCJUADBKLMUAAR
+      NUAABKOP $.
+  $}
 
   $( Intersection with class difference.  Theorem 34 of [Suppes] p. 29.
      (Contributed by NM, 17-Aug-2004.) $)
