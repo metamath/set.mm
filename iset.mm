@@ -26333,11 +26333,18 @@ $)
   ddifss $p |- A C_ ( _V \ ( _V \ A ) ) $=
     ( cvv wss cdif ssv ssddif mpbi ) ABCABBADDCAEABFG $.
 
-  $( Union defined in terms of intersection (De Morgan's law).  Definition of
-     union in [Mendelson] p. 231.  (Contributed by NM, 8-Jan-2002.) $)
-  dfun3 $p |- ( A u. B ) = ( _V \ ( ( _V \ A ) i^i ( _V \ B ) ) ) $=
-    ( cun cvv cdif cin dfun2 dfin2 ddif difeq2i eqtr2i eqtri ) ABCDDAEZBEZEDMDB
-    EZFZEABGNPDPMDOEZENMOHQBMBIJKJL $.
+  ${
+    $d x A $.  $d x B $.
+    $( Union as a subset of class complement and intersection (De Morgan's
+       law).  One direction of the definition of union in [Mendelson] p. 231.
+       This would be an equality, rather than subset, in classical logic.
+       (Contributed by Jim Kingdon, 25-Jul-2018.) $)
+    unssin $p |- ( A u. B ) C_ ( _V \ ( ( _V \ A ) i^i ( _V \ B ) ) ) $=
+      ( vx cun cvv cdif cin cv wcel wo wn wa oranim eldifn anim12i nsyl sylnibr
+      elin elun vex eldif mpbiran 3imtr4i ssriv ) CABDZEEAFZEBFZGZFZCHZAIZUJBIZ
+      JZUJUHIZKZUJUEIUJUIIZUMUJUFIZUJUGIZLZUNUMUKKZULKZLUSUKULMUQUTURVAUJEANUJE
+      BNOPUJUFUGRQUJABSUPUJEIUOCTUJEUHUAUBUCUD $.
+  $}
 
   $( Intersection defined in terms of union (De Morgan's law.  Similar to
      Exercise 4.10(n) of [Mendelson] p. 231.  (Contributed by NM,
