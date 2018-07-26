@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Jul-2018
+$( iset.mm - Version of 26-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -26358,11 +26358,12 @@ $)
       $.
   $}
 
-  $( Alternate definition of the intersection of two classes.  Exercise 4.10(q)
-     of [Mendelson] p. 231.  (Contributed by NM, 25-Nov-2003.) $)
-  dfin4 $p |- ( A i^i B ) = ( A \ ( A \ B ) ) $=
-    ( cin cdif wss wceq inss1 dfss4 mpbi difin difeq2i eqtr3i ) AAABCZDZDZMAABD
-    ZDMAEOMFABGMAHINPAABJKL $.
+  $( Intersection of two classes and class difference.  In classical logic,
+     such as Exercise 4.10(q) of [Mendelson] p. 231, this is an equality rather
+     than subset.  (Contributed by Jim Kingdon, 26-Jul-2018.) $)
+  inssddif $p |- ( A i^i B ) C_ ( A \ ( A \ B ) ) $=
+    ( cin cdif wss inss1 ssddif mpbi difin difeq2i sseqtri ) ABCZAALD
+    ZDZAABDZDLAELNEABFLAGHMOAABIJK $.
 
   $( Intersection with universal complement.  Remark in [Stoll] p. 20.
      (Contributed by NM, 17-Aug-2004.) $)
