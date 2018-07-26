@@ -26373,13 +26373,14 @@ $)
       ( vx cvv cdif cin cv wcel wa vex eldif mpbiran anbi2i elin 3bitr4i eqriv
       wn ) CADBEZFZABEZCGZAHZUARHZIUBUABHQZIUASHUATHUCUDUBUCUADHUDCJUADBKLMUAAR
       NUAABKOP $.
-  $}
 
-  $( Intersection with class difference.  Theorem 34 of [Suppes] p. 29.
-     (Contributed by NM, 17-Aug-2004.) $)
-  indif $p |- ( A i^i ( A \ B ) ) = ( A \ B ) $=
-    ( cdif cin dfin4 difeq2i difin 3eqtr2i ) AABCZDAAICZCAABDZCIAIEKJAABEFABGH
-    $.
+    $( Intersection with class difference.  Theorem 34 of [Suppes] p. 29.
+       (Contributed by NM, 17-Aug-2004.) $)
+    indif $p |- ( A i^i ( A \ B ) ) = ( A \ B ) $=
+      ( vx cdif cin cv wcel wn wa anabs5 elin eldif bitri 3bitr4i eqriv
+      anbi2i ) CAABDZEZQCFZAGZTSBGHZIZIZUBSRGZSQGZTUAJUDTUEIUCSAQKUEUBT
+      SABLZPMUFNO $.
+  $}
 
   $( Bring an intersection in and out of a class difference.  (Contributed by
      Jeff Hankins, 15-Jul-2009.) $)
