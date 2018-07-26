@@ -26345,14 +26345,18 @@ $)
       elin elun vex eldif mpbiran 3imtr4i ssriv ) CABDZEEAFZEBFZGZFZCHZAIZUJBIZ
       JZUJUHIZKZUJUEIUJUIIZUMUJUFIZUJUGIZLZUNUMUKKZULKZLUSUKULMUQUTURVAUJEANUJE
       BNOPUJUFUGRQUJABSUPUJEIUOCTUJEUHUAUBUCUD $.
-  $}
 
-  $( Intersection defined in terms of union (De Morgan's law.  Similar to
-     Exercise 4.10(n) of [Mendelson] p. 231.  (Contributed by NM,
-     8-Jan-2002.) $)
-  dfin3 $p |- ( A i^i B ) = ( _V \ ( ( _V \ A ) u. ( _V \ B ) ) ) $=
-    ( cvv cdif cun cin ddif dfun2 difeq1i difeq2i eqtri dfin2 3eqtr4ri ) CCACBD
-    ZDZDZDOCCADZNEZDABFOGRPCRCCQDZNDZDPQNHTOCSANAGIJKJABLM $.
+    $( Intersection in terms of class difference and union (De Morgan's law).
+       Similar to Exercise 4.10(n) of [Mendelson] p. 231.  This would be an
+       equality, rather than subset, in classical logic.  (Contributed by Jim
+       Kingdon, 25-Jul-2018.) $)
+    inssun $p |- ( A i^i B ) C_ ( _V \ ( ( _V \ A ) u. ( _V \ B ) ) ) $=
+      ( vx cin cvv cdif cv wcel wa wn wo pm3.1 eldifn orim12i nsyl elun
+      cun sylnibr elin vex eldif mpbiran 3imtr4i ssriv ) CABDZEEAFZEBFZ
+      QZFZCGZAHZUJBHZIZUJUHHZJZUJUEHUJUIHZUMUJUFHZUJUGHZKZUNUMUKJZULJZK
+      USUKULLUQUTURVAUJEAMUJEBMNOUJUFUGPRUJABSUPUJEHUOCTUJEUHUAUBUCUD
+      $.
+  $}
 
   $( Alternate definition of the intersection of two classes.  Exercise 4.10(q)
      of [Mendelson] p. 231.  (Contributed by NM, 25-Nov-2003.) $)
