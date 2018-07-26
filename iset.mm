@@ -5364,7 +5364,8 @@ $)
   pm3.14 $p |- ( ( -. ph \/ -. ps ) -> -. ( ph /\ ps ) ) $=
     ( wn wa simpl con3i simpr jaoi ) ACABDZCBCIAABEFIBABGFH $.
 
-  $( Theorem *3.1 of [WhiteheadRussell] p. 111.  (Contributed by NM,
+  $( Theorem *3.1 of [WhiteheadRussell] p. 111.  The converse holds for
+     decidable propositions, as seen at ~ anordc .  (Contributed by NM,
      3-Jan-2005.)  (Revised by Mario Carneiro, 31-Jan-2015.) $)
   pm3.1 $p |- ( ( ph /\ ps ) -> -. ( -. ph \/ -. ps ) ) $=
     ( wn wo wa pm3.14 con2i ) ACBCDABEABFG $.
