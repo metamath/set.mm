@@ -1,4 +1,4 @@
-$( iset.mm - Version of 24-Jul-2018
+$( iset.mm - Version of 25-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6244,6 +6244,12 @@ $)
      3-Jan-2005.) $)
   pm4.56 $p |- ( ( -. ph /\ -. ps ) <-> -. ( ph \/ ps ) ) $=
     ( wo wn wa ioran bicomi ) ABCDADBDEABFG $.
+
+  $( Disjunction in terms of conjunction (DeMorgan's law).  Compare Theorem
+     *4.57 of [WhiteheadRussell] p. 120.  The converse does not hold
+     intuitionistically.  (Contributed by Jim Kingdon, 25-Jul-2018.) $)
+  oranim $p |- ( ( ph \/ ps ) -> -. ( -. ph /\ -. ps ) ) $=
+    ( wn wa wo pm4.56 biimpi con2i ) ACBCDZABEZIJCABFGH $.
 
   $( Implication distributes over disjunction.  We do not have an
      intuitionistic proof of the converse, but both directions hold classically
