@@ -26440,12 +26440,17 @@ $)
     FZGZUHUGUEUFFZUKUEUFHULAUFFZBUFFZGUKABUFIUMUIUNUJUMAAFUIGUIAABJAABKLUNUJBBF
     ZGUJBABJUJUOMLNLOABQPUHAACZAADZUEUFUPAUQARASTABAUAABAUBUCUD $.
 
-  $( Distributive law for class difference.  Theorem 39 of [Suppes] p. 29.
-     (Contributed by NM, 17-Aug-2004.) $)
-  difundi $p |- ( A \ ( B u. C ) ) = ( ( A \ B ) i^i ( A \ C ) ) $=
-    ( cun cdif cvv cin dfun3 difeq2i inindi dfin2 invdif ineq12i 3eqtr3i eqtri
-    ) ABCDZEAFFBEZFCEZGZEZEZABEZACEZGZPTABCHIASGAQGZARGZGUAUDAQRJASKUEUBUFUCABL
-    ACLMNO $.
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Distributive law for class difference.  Theorem 39 of [Suppes] p. 29.
+       (Contributed by NM, 17-Aug-2004.) $)
+    difundi $p |- ( A \ ( B u. C ) ) = ( ( A \ B ) i^i ( A \ C ) ) $=
+      ( vx cun cdif cin cv wcel wa wn eldif anbi12i elin wo notbii anbi2i bitri
+      elun ioran anandi 3bitr4ri eqriv ) DABCEZFZABFZACFZGZDHZUFIZUIUGIZJUIAIZU
+      IBIZKZJZULUICIZKZJZJZUIUHIUIUEIZUJUOUKURUIABLUIACLMUIUFUGNUTULUNUQJZJZUSU
+      TULUMUPOZKZJZVBUTULUIUDIZKZJVEUIAUDLVGVDULVFVCUIBCSPQRVDVAULUMUPTQRULUNUQ
+      UARUBUC $.
+  $}
 
   $( Distributive law for class difference.  (Contributed by NM,
      17-Aug-2004.) $)
