@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Jul-2018
+$( iset.mm - Version of 27-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -26491,11 +26491,13 @@ $)
       JVDVGQVCVGVJVBVCVGJVETUIZVJVGVCVOVGVEVCTVFTUBUCUDVEUJUEUFUGUHPPUKUL $.
   $}
 
-  $( Set difference with a set difference.  (Contributed by Thierry Arnoux,
-     18-Dec-2017.) $)
-  difdif2 $p |- ( A \ ( B \ C ) ) = ( ( A \ B ) u. ( A i^i C ) ) $=
-    ( cvv cdif cin cun difindi invdif eqcomi difeq2i dfin2 uneq2i 3eqtr4i ) ABD
-    CEZFZEABEZAOEZGABCEZEQACFZGABOHSPAPSBCIJKTRQACLMN $.
+  $( Set difference with a set difference.  In classical logic this would be
+     equality rather than subset.  (Contributed by Jim Kingdon,
+     27-Jul-2018.) $)
+  difdif2ss $p |- ( ( A \ B ) u. ( A i^i C ) ) C_ ( A \ ( B \ C ) ) $=
+    ( cdif cin cun cvv wss inssdif unss2 ax-mp difindiss sstri invdif
+    eqcomi difeq2i sseqtr4i ) ABDZACEZFZABGCDZEZDZABCDZDTRAUADZFZUCSU
+    EHTUFHACISUERJKABUALMUDUBAUBUDBCNOPQ $.
 
   $( De Morgan's law for union.  Theorem 5.2(13) of [Stoll] p. 19.
      (Contributed by NM, 18-Aug-2004.) $)
