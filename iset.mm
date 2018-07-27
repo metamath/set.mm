@@ -26458,12 +26458,19 @@ $)
     ( cun cvv cdif cin indir invdif uneq12i 3eqtr3i ) ABDZECFZGAMGZBMGZDLCFACFZ
     BCFZDABMHLCINPOQACIBCIJK $.
 
-  $( Distributive law for class difference.  Theorem 40 of [Suppes] p. 29.
-     (Contributed by NM, 17-Aug-2004.) $)
-  difindi $p |- ( A \ ( B i^i C ) ) = ( ( A \ B ) u. ( A \ C ) ) $=
-    ( cin cdif cvv cun dfin3 difeq2i indi dfin2 invdif uneq12i 3eqtr3i eqtri )
-    ABCDZEAFFBEZFCEZGZEZEZABEZACEZGZPTABCHIASDAQDZARDZGUAUDAQRJASKUEUBUFUCABLAC
-    LMNO $.
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Distributive law for class difference.  In classical logic, for example,
+       theorem 40 of [Suppes] p. 29, this is an equality instead of subset.
+       (Contributed by Jim Kingdon, 26-Jul-2018.) $)
+    difindiss $p |- ( ( A \ B ) u. ( A \ C ) ) C_ ( A \ ( B i^i C ) ) $=
+      ( vx cdif cun cin cv wcel wo elun wa wn eldif orbi12i andi bitr4i
+      pm3.14 anim2i sylbi elin notbii anbi2i bitr2i sylib ssriv ) DABEZ
+      ACEZFZABCGZEZDHZUIIULUGIZULUHIZJZULUKIZULUGUHKUOULAIZULBIZULCIZLZ
+      MZLZUPUOUQURMZUSMZJZLZVBUOUQVCLZUQVDLZJVFUMVGUNVHULABNULACNOUQVCV
+      DPQVEVAUQURUSRSTUPUQULUJIZMZLVBULAUJNVJVAUQVIUTULBCUAUBUCUDUETUF
+      $.
+  $}
 
   $( Distributive law for class difference.  (Contributed by NM,
      17-Aug-2004.) $)
