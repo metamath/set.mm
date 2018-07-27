@@ -26431,22 +26431,6 @@ $)
     ( cin cun undi uncom ineq12i 3eqtr4i ) CABDZECAEZCBEZDJCEACEZBCEZDCABFJCGMK
     NLACGBCGHI $.
 
-  ${
-    $d x A $.  $d x B $.  $d x C $.
-    $( Infer equality from equalities of union and intersection.  Exercise 20
-       of [Enderton] p. 32 and its converse.  (Contributed by NM,
-       10-Aug-2004.) $)
-    unineq $p |- ( ( ( A u. C ) = ( B u. C ) /\ ( A i^i C ) = ( B i^i C ) )
-                 <-> A = B ) $=
-      ( vx cun wceq cin wa wcel wb eleq2 elin 3bitr3g iba bibi12d syl5ibr uncom
-      wo elun biorf cv wi adantld eqeq12i sylbi adantrd pm2.61i eqrdv uneq1 jca
-      wn ineq1 impbii ) ACEZBCEZFZACGZBCGZFZHZABFZUTDABDUAZCIZUTVBAIZVBBIZJZUBV
-      CUSVFUPUSVFVCVDVCHZVEVCHZJUSVBUQIVBURIVGVHUQURVBKVBACLVBBCLMVCVDVGVEVHVCV
-      DNVCVENOPUCVCUKZUPVFUSUPVFVIVCVDRZVCVERZJUPVBCAEZIZVBCBEZIZVJVKUPVLVNFVMV
-      OJUNVLUOVNACQBCQUDVLVNVBKUEVBCASVBCBSMVIVDVJVEVKVCVDTVCVETOPUFUGUHVAUPUSA
-      BCUIABCULUJUM $.
-  $}
-
   $( Equality of union and intersection implies equality of their arguments.
      (Contributed by NM, 16-Apr-2006.)  (Proof shortened by Andrew Salmon,
      26-Jun-2011.) $)
