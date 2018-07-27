@@ -26483,12 +26483,12 @@ $)
     $( Distribute intersection over difference.  (Contributed by Scott Fenton,
        14-Apr-2011.) $)
     indifdir $p |- ( ( A \ B ) i^i C ) = ( ( A i^i C ) \ ( B i^i C ) ) $=
-      ( vx cdif cin cv wcel wn wa pm3.24 intnan anass mtbir biorfi 3bitr4i elin
-      wo eldif bitri an32 andi ianor anbi2i bitr4i anbi1i notbii anbi12i eqriv
-      ) DABEZCFZACFZBCFZEZDGZAHZUOBHZIZJZUOCHZJZUPUTJZUQUTJZIZJZUOUKHZUOUNHZVAV
-      BURUTIZRZJZVEVBURJZVKVBVHJZRVAVJVLVKVLUPUTVHJZJVMUPUTKLUPUTVHMNOUPURUTUAV
-      BURVHUBPVDVIVBUQUTUCUDUEVFUOUJHZUTJVAUOUJCQVNUSUTUOABSUFTVGUOULHZUOUMHZIZ
-      JVEUOULUMSVOVBVQVDUOACQVPVCUOBCQUGUHTPUI $.
+      ( vx cdif cin cv wcel wn wa elin notbii anbi12i eldif anbi1i bitri ax-ia1
+      an32 con3i wfal anim2i ax-in2 exp3acom23 impcom sylibr adantll jca impbii
+      wi dfnot 3bitr4ri eqriv ) DABEZCFZACFZBCFZEZDGZUOHZURUPHZIZJURAHZURCHZJZU
+      RBHZVCJZIZJZURUQHURUNHZUSVDVAVGURACKUTVFURBCKLMURUOUPNVIVBVEIZJZVCJZVHVIU
+      RUMHZVCJVLURUMCKVMVKVCURABNOPVLVDVJJZVHVBVJVCRVNVHVJVGVDVFVEVEVCQSUAVHVDV
+      JVDVGQVCVGVJVBVCVGJVETUIZVJVGVCVOVGVEVCTVFTUBUCUDVEUJUEUFUGUHPPUKUL $.
   $}
 
   $( Set difference with a set difference.  (Contributed by Thierry Arnoux,
