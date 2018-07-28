@@ -6233,6 +6233,16 @@ $)
   pm4.66dc $p |- ( DECID ph -> ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) ) $=
     ( wn pm4.64dc ) ABCD $.
 
+  $( One direction of theorem *4.52 of [WhiteheadRussell] p. 120.  (Contributed
+     by Jim Kingdon, 27-Jul-2018.) $)
+  pm4.52im $p |- ( ( ph /\ -. ps ) -> -. ( -. ph \/ ps ) ) $=
+    ( wn wa wi wo annimim imorr nsyl ) ABCDABEACBFABGABHI $.
+
+  $( One direction of theorem *4.53 of [WhiteheadRussell] p. 120.  (Contributed
+     by Jim Kingdon, 27-Jul-2018.) $)
+  pm4.53r $p |- ( ( -. ph \/ ps ) -> -. ( ph /\ -. ps ) ) $=
+    ( wn wa wo pm4.52im con2i ) ABCDACBEABFG $.
+
   $( Theorem *4.54 of [WhiteheadRussell] p. 120, for decidable propositions.
      One form of DeMorgan's law.  (Contributed by Jim Kingdon, 2-May-2018.) $)
   pm4.54dc $p |- ( DECID ph -> ( DECID ps ->
