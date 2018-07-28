@@ -26504,10 +26504,11 @@ $)
   undm $p |- ( _V \ ( A u. B ) ) = ( ( _V \ A ) i^i ( _V \ B ) ) $=
     ( cvv difundi ) CABD $.
 
-  $( De Morgan's law for intersection.  Theorem 5.2(13') of [Stoll] p. 19.
-     (Contributed by NM, 18-Aug-2004.) $)
-  indm $p |- ( _V \ ( A i^i B ) ) = ( ( _V \ A ) u. ( _V \ B ) ) $=
-    ( cvv difindi ) CABD $.
+  $( De Morgan's law for intersection.  In classical logic, this would be
+     equality rather than subset, as in Theorem 5.2(13') of [Stoll] p. 19.
+     (Contributed by Jim Kingdon, 27-Jul-2018.) $)
+  indmss $p |- ( ( _V \ A ) u. ( _V \ B ) ) C_ ( _V \ ( A i^i B ) ) $=
+    ( cvv difindiss ) CABD $.
 
   $( A relationship involving double difference and union.  (Contributed by NM,
      29-Aug-2004.) $)
