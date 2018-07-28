@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Jul-2018
+$( iset.mm - Version of 28-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -26530,16 +26530,18 @@ $)
 
   ${
     $d A x $.  $d B x $.  $d C x $.
-    $( An equality involving class union and class difference.  The first
-       equality of Exercise 13 of [TakeutiZaring] p. 22.  (Contributed by Alan
-       Sare, 17-Apr-2012.) $)
-    undif3 $p |- ( A u. ( B \ C ) ) = ( ( A u. B ) \ ( C \ A ) ) $=
-      ( vx cdif cun cv wcel wn wa elun pm4.53 eldif xchnxbir anbi12i orbi2i orc
-      wo olc jca anim12i simpl adantr adantl ccase impbii 3bitri 3bitr4ri eqriv
-      jaoi orcd ) DABCEZFZABFZCAEZEZDGZUNHZUQUOHZIZJUQAHZUQBHZRZUQCHZIZVARZJZUQ
-      UPHUQUMHZURVCUTVFUQABKVDVAIJVFUSVDVALUQCAMNOUQUNUOMVHVAUQULHZRVAVBVEJZRZV
-      GUQAULKVIVJVAUQBCMPVKVGVAVGVJVAVCVFVAVBQVAVESTVBVCVEVFVBVASVEVAQUAUJVAVEV
-      BVAVKVAVEJVAVJVAVEUBUKVJVASVAVKVAVAVJQZUCVAVKVBVLUDUEUFUGUHUI $.
+    $( A subset relationship involving class union and class difference.  In
+       classical logic, this would be equality rather than subset, as in the
+       first equality of Exercise 13 of [TakeutiZaring] p. 22.  (Contributed by
+       Jim Kingdon, 28-Jul-2018.) $)
+    undif3ss $p |- ( A u. ( B \ C ) ) C_ ( ( A u. B ) \ ( C \ A ) ) $=
+      ( vx cdif cun cv wcel wo wn elun eldif orbi2i orc olc jca anim12i
+      wa jaoi simpl adantr adantl impbii 3bitri biimpri pm4.53r sylnibr
+      orcd ccase sylibr sylbi ssriv ) DABCEZFZABFZCAEZEZDGZUNHZURAHZURB
+      HZIZURCHZJZUTIZRZURUQHZUSUTURUMHZIUTVAVDRZIZVFURAUMKVHVIUTURBCLMV
+      JVFUTVFVIUTVBVEUTVANUTVDOPVAVBVDVEVAUTOVDUTNQSUTVDVAUTVJUTVDRUTVI
+      UTVDTUHVIUTOUTVJUTUTVINZUAUTVJVAVKUBUIUCUDVFURUOHZURUPHZJZRVGVBVL
+      VEVNVLVBURABKUEVEVCUTJRVMVCUTUFURCALUGQURUOUPLUJUKUL $.
 
     $( Represent a set difference as an intersection with a larger difference.
        (Contributed by Jeff Madsen, 2-Sep-2009.) $)
