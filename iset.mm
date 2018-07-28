@@ -26584,13 +26584,14 @@ $(
 $)
   ${
     $d x A $.  $d x B $.
-    $( Two ways to express symmetric difference.  (Contributed by NM,
-       17-Aug-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
-    symdif2 $p |- ( ( A \ B ) u. ( B \ A ) ) =
-                  { x | -. ( x e. A <-> x e. B ) } $=
-      ( cv wcel wb wn cdif cun wo wa eldif orbi12i elun xor 3bitr4i abbi2i ) AD
-      ZBEZRCEZFGZABCHZCBHZIZRUBEZRUCEZJSTGKZTSGKZJRUDEUAUEUGUFUHRBCLRCBLMRUBUCN
-      STOPQ $.
+    $( Expressing symmetric difference with exclusive-or or two differences.
+       (Contributed by Jim Kingdon, 28-Jul-2018.) $)
+    symdifxor $p |- ( ( A \ B ) u. ( B \ A ) ) =
+                  { x | ( x e. A \/_ x e. B ) } $=
+      ( cv wcel wxo cdif cun wo wn wa eldif orbi12i excxor ancom orbi2i
+      elun bitri 3bitr4i abbi2i ) ADZBEZUACEZFZABCGZCBGZHZUAUEEZUAUFEZI
+      UBUCJKZUCUBJZKZIZUAUGEUDUHUJUIULUABCLUACBLMUAUEUFQUDUJUKUCKZIUMUB
+      UCNUNULUJUKUCOPRST $.
   $}
 
   ${
