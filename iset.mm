@@ -5102,6 +5102,10 @@ $)
   pm3.24 $p |- -. ( ph /\ -. ph ) $=
     ( wn wi wa notnot1 imnan mpbi ) AABZBCAHDBAEAHFG $.
 
+  $( Triple negation.  (Contributed by Jim Kingdon, 28-Jul-2018.) $)
+  notnotnot $p |- ( -. -. -. ph <-> -. ph ) $=
+    ( wn notnot1 con3i impbii ) ABZBZBFAGACDFCE $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Logical disjunction
