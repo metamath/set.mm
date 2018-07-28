@@ -6191,14 +6191,16 @@ $)
     CFFKLNABCGHMACIJ $.
 
   $( Implication in terms of disjunction for a decidable proposition.  Based on
-     theorem *4.6 of [WhiteheadRussell] p. 120.  (Contributed by Jim Kingdon,
+     theorem *4.6 of [WhiteheadRussell] p. 120.  The reverse direction,
+     ~ imorr , holds for all propositions.  (Contributed by Jim Kingdon,
      20-Apr-2018.) $)
   imordc $p |- ( DECID ph -> ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) ) $=
     ( wdc wi wn wo notnotdc imbi1d wb dcn dfordc syl bitr4d ) ACZABDA
     EZEZBDZOBFZNAPBAGHNOCRQIAJOBKLM $.
 
   $( Implication in terms of disjunction.  One direction of theorem *4.6 of
-     [WhiteheadRussell] p. 120.  (Contributed by Jim Kingdon, 21-Jul-2018.) $)
+     [WhiteheadRussell] p. 120.  The converse holds for decidable propositions,
+     as seen at ~ imordc .  (Contributed by Jim Kingdon, 21-Jul-2018.) $)
   imorr $p |- ( ( -. ph \/ ps ) -> ( ph -> ps ) ) $=
     ( wn wi ax-in2 ax-1 jaoi ) ACABDBABEBAFG $.
 
