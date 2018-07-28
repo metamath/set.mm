@@ -3353,6 +3353,12 @@ $)
     pm4.71rd.1 $e |- ( ph -> ( ps -> ch ) ) $.
     $( Deduction converting an implication to a biconditional with
        conjunction.  Deduction from Theorem *4.71 of [WhiteheadRussell]
+       p. 120.  (Contributed by Mario Carneiro, 25-Dec-2016.) $)
+    pm4.71d $p |- ( ph -> ( ps <-> ( ps /\ ch ) ) ) $=
+      ( wi wa wb pm4.71 sylib ) ABCEBBCFGDBCHI $.
+
+    $( Deduction converting an implication to a biconditional with
+       conjunction.  Deduction from Theorem *4.71 of [WhiteheadRussell]
        p. 120.  (Contributed by NM, 10-Feb-2005.) $)
     pm4.71rd $p |- ( ph -> ( ps <-> ( ch /\ ps ) ) ) $=
       ( wi wa wb pm4.71r sylib ) ABCEBCBFGDBCHI $.
