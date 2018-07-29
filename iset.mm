@@ -9876,7 +9876,7 @@ $)
     alrimih.1 $e |- ( ph -> A. x ph ) $.
     alrimih.2 $e |- ( ph -> ps ) $.
     $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
+       5-Aug-1993.)  (New usage is discouraged.) $)
     alrimih $p |- ( ph -> A. x ps ) $=
       ( wal alimi syl ) AACFBCFDABCEGH $.
   $}
