@@ -5361,10 +5361,10 @@ $)
   $}
 
   $( Negated disjunction in terms of conjunction.  This version of DeMorgan's
-     law holds for all propositions (not just decidable ones), unlike ~ oran ,
-     ~ anordc , or ~ ianordc .  Compare Theorem *4.56 of [WhiteheadRussell]
-     p. 120.  (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
-     31-Jan-2015.) $)
+     law is a biconditional for all propositions (not just decidable ones),
+     unlike ~ oranim , ~ anordc , or ~ ianordc .  Compare Theorem *4.56 of
+     [WhiteheadRussell] p. 120.  (Contributed by NM, 5-Aug-1993.)  (Revised by
+     Mario Carneiro, 31-Jan-2015.) $)
   ioran $p |- ( -. ( ph \/ ps ) <-> ( -. ph /\ -. ps ) ) $=
     ( wo wn wa pm2.45 pm2.46 jca simpl con2i simpr jaoi impbii ) ABCZDZADZBDZEZ
     OPQABFABGHNRARDBRAPQIJRBPQKJLJM $.
@@ -6277,9 +6277,10 @@ $)
   pm4.56 $p |- ( ( -. ph /\ -. ps ) <-> -. ( ph \/ ps ) ) $=
     ( wo wn wa ioran bicomi ) ABCDADBDEABFG $.
 
-  $( Disjunction in terms of conjunction (DeMorgan's law).  Compare Theorem
-     *4.57 of [WhiteheadRussell] p. 120.  The converse does not hold
-     intuitionistically.  (Contributed by Jim Kingdon, 25-Jul-2018.) $)
+  $( Disjunction in terms of conjunction (DeMorgan's law).  One direction of
+     Theorem *4.57 of [WhiteheadRussell] p. 120.  The converse does not hold
+     intuitionistically but does hold in classical logic.  (Contributed by Jim
+     Kingdon, 25-Jul-2018.) $)
   oranim $p |- ( ( ph \/ ps ) -> -. ( -. ph /\ -. ps ) ) $=
     ( wn wa wo pm4.56 biimpi con2i ) ACBCDZABEZIJCABFGH $.
 
@@ -26982,25 +26983,6 @@ $)
       ( wo wal 19.32 orcom albii 3bitr4i ) BAEZCFBACFZEABEZCFLBEBACDGMKCABHILBH
       J $.
   $}
-
-$(
-#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-Classical (not intuitionistic) results
-#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-$)
-
-  $( Disjunction in terms of conjunction (DeMorgan's law).  Compare Theorem
-     *4.57 of [WhiteheadRussell] p. 120.  As an equivalence, this does not hold
-     intuitionistically, but it would be possible to prove the forward
-     direction.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
-     Salmon, 7-May-2011.) $)
-  oran $p |- ( ( ph \/ ps ) <-> -. ( -. ph /\ -. ps ) ) $=
-    ( wn wa wo pm4.56 con2bii ) ACBCDABEABFG $.
-
-  $( Theorem *4.57 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.57 $p |- ( -. ( -. ph /\ -. ps ) <-> ( ph \/ ps ) ) $=
-    ( wo wn wa oran bicomi ) ABCADBDEDABFG $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
