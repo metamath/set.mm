@@ -11257,7 +11257,8 @@ $)
   exsimpl $p |- ( E. x ( ph /\ ps ) -> E. x ph ) $=
     ( wa simpl eximi ) ABDACABEF $.
 
-  $( Theorem 19.6 of [Margaris] p. 89, given a decidability condition.
+  $( Theorem 19.6 of [Margaris] p. 89, given a decidability condition.  The
+     forward direction holds for all propositions, as seen at ~ alexim .
      (Contributed by Jim Kingdon, 2-Jun-2018.) $)
   alexdc $p |- ( A. x DECID ph -> ( A. x ph <-> -. E. x -. ph ) ) $=
     ( wdc wal wn wex nfa1 wb notnotdc sps albid alnex syl6bb ) ACZBDZ
@@ -11434,7 +11435,8 @@ $)
       ( nfri 19.9h ) ABABCDE $.
   $}
 
-  $( One direction of theorem 19.6 of [Margaris] p. 89.  (Contributed by Jim
+  $( One direction of theorem 19.6 of [Margaris] p. 89.  The converse holds
+     given a decidability condition, as seen at ~ alexdc .  (Contributed by Jim
      Kingdon, 2-Jul-2018.) $)
   alexim $p |- ( A. x ph -> -. E. x -. ph ) $=
     ( wal wn wex wfal wi pm2.24 alimi exim syl nfv 19.9 syl6ib sylibr
@@ -26955,10 +26957,6 @@ $)
      Carneiro, 12-May-2015.) $)
   df-ex $p |- ( E. x ph <-> -. A. x -. ph ) $=
     ( wn wal wex alnex con2bii ) ACBDABEABFG $.
-
-  $( Theorem 19.6 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
-  alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
-    ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
