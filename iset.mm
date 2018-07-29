@@ -6116,9 +6116,10 @@ $)
       ( -. ( -. ph -> -. ps ) <-> ( -. ph /\ ps ) ) ) ) $=
     ( wdc wn wi wa wb dcn pm4.63dc syl ) ACADZCBCKBDEDKBFGEAHKBIJ $.
 
-  $( Express conjunction in terms of implication.  The biconditionalized
-     version of this theorem, ~ annim , is not valid intuitionistically.
-     (Contributed by Jim Kingdon, 24-Dec-2017.) $)
+  $( Express conjunction in terms of implication.  One direction of Theorem
+     *4.61 of [WhiteheadRussell] p. 120.  The converse holds for decidable
+     propositions, as can be seen at ~ annimdc .  (Contributed by Jim Kingdon,
+     24-Dec-2017.) $)
   annimim $p |- ( ( ph /\ -. ps ) -> -. ( ph -> ps ) ) $=
     ( wn wi pm2.27 con3 syl imp ) ABCZABDZCZAJBDIKDABEJBFGH $.
 
@@ -6251,13 +6252,15 @@ $)
   pm4.66dc $p |- ( DECID ph -> ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) ) $=
     ( wn pm4.64dc ) ABCD $.
 
-  $( One direction of theorem *4.52 of [WhiteheadRussell] p. 120.  (Contributed
-     by Jim Kingdon, 27-Jul-2018.) $)
+  $( One direction of theorem *4.52 of [WhiteheadRussell] p. 120.  The converse
+     also holds in classical logic.  (Contributed by Jim Kingdon,
+     27-Jul-2018.) $)
   pm4.52im $p |- ( ( ph /\ -. ps ) -> -. ( -. ph \/ ps ) ) $=
     ( wn wa wi wo annimim imorr nsyl ) ABCDABEACBFABGABHI $.
 
-  $( One direction of theorem *4.53 of [WhiteheadRussell] p. 120.  (Contributed
-     by Jim Kingdon, 27-Jul-2018.) $)
+  $( One direction of theorem *4.53 of [WhiteheadRussell] p. 120.  The converse
+     also holds in classical logic.  (Contributed by Jim Kingdon,
+     27-Jul-2018.) $)
   pm4.53r $p |- ( ( -. ph \/ ps ) -> -. ( ph /\ -. ps ) ) $=
     ( wn wa wo pm4.52im con2i ) ABCDACBEABFG $.
 
@@ -26895,13 +26898,6 @@ $)
   iman $p |- ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) $=
     ( wi wn wa notnot imbi2i imnan bitri ) ABCABDZDZCAJEDBKABFGAJHI $.
 
-  $( Express conjunction in terms of implication.  Only the forward direction,
-     ~ annimim , is valid intuitionistically.  See ~ annimdc for a version
-     which holds intuitionistically, by adding a decidability condition.
-     (Contributed by NM, 2-Aug-1994.) $)
-  annim $p |- ( ( ph /\ -. ps ) <-> -. ( ph -> ps ) ) $=
-    ( wi wn wa iman con2bii ) ABCABDEABFG $.
-
   $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
      intuitionistically, although its converse, ~ pm2.53 , does.  See
      ~ pm2.54dc for a version which holds intuitionistically, by restricting
@@ -26993,16 +26989,6 @@ Classical (not intuitionistic) results
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
-  $( Theorem *4.52 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
-  pm4.52 $p |- ( ( ph /\ -. ps ) <-> -. ( -. ph \/ ps ) ) $=
-    ( wn wa wi wo annim imor xchbinx ) ABCDABEACBFABGABHI $.
-
-  $( Theorem *4.53 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.53 $p |- ( -. ( ph /\ -. ps ) <-> ( -. ph \/ ps ) ) $=
-    ( wn wo wa pm4.52 con2bii bicomi ) ACBDZABCEZCJIABFGH $.
-
   $( Disjunction in terms of conjunction (DeMorgan's law).  Compare Theorem
      *4.57 of [WhiteheadRussell] p. 120.  As an equivalence, this does not hold
      intuitionistically, but it would be possible to prove the forward
@@ -27015,12 +27001,6 @@ $)
      3-Jan-2005.) $)
   pm4.57 $p |- ( -. ( -. ph /\ -. ps ) <-> ( ph \/ ps ) ) $=
     ( wo wn wa oran bicomi ) ABCADBDEDABFG $.
-
-  $( Theorem *4.61 of [WhiteheadRussell] p. 120.  Only the reverse direction,
-     ~ annimim , is valid intuitionistically.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.61 $p |- ( -. ( ph -> ps ) <-> ( ph /\ -. ps ) ) $=
-    ( wn wa wi annim bicomi ) ABCDABECABFG $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
