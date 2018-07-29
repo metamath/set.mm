@@ -191,7 +191,7 @@ STYLE="color:blue">&#x1D711;</SPAN>))</SPAN> (which is ax-3 in
 set.mm).  Each of our new axioms is a theorem of classical
 propositional logic, but ax-3 cannot be derived from them.  Similarly,
 other basic classical theorems, like the third middle excluded or the
-equvalence of a proposition with its double negation, cannot be derived
+equivalence of a proposition with its double negation, cannot be derived
 in intuitionistic propositional calculus.  Glivenko showed that a
 proposition <FONT COLOR="#0000FF"><I>&phi;</I></FONT>
  is a theorem of classical propositional calculus if and only
@@ -355,9 +355,7 @@ and then deriving a contradiction only serves to prove &not; &not; <FONT COLOR="
 which in intuitionistic logic is not the same as <FONT COLOR="#0000FF"><I>&phi;</I></FONT>.</P>
 
 <P>The biconditional can be defined as the conjunction of two implications, as in
-<A HREF="dfbi2.html">dfbi2</a> and <A HREF="df-bi.html">df-bi</a>. Other ways of understanding
-the biconditional, such as <A HREF="dfbi1.html">dfbi1</a> or <A HREF="dfbi3.html">dfbi3</a>,
-however, are classical rather than intuitionistic results (following the proofs on those pages shows they depend on ax-3).</P>
+<A HREF="dfbi2.html">dfbi2</a> and <A HREF="df-bi.html">df-bi</a>.</P>
 
 <P><A NAME="pcaxioms"></A><B><FONT COLOR="#006633">Predicate
 logic</FONT></B> adds set variables (individual variables) and the ability to quantify
@@ -561,20 +559,123 @@ COLOR="#0000FF"><I>&phi;</I></FONT></TD></TR>
 </TABLE>
 </CENTER>
 
-<HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">
-Some theorems</FONT></B>
+<P><A NAME="staxioms"></A><B><FONT COLOR="#006633">Set theory</FONT></B>
+uses the formalism of propositional and predicate calculus to assert
+properties of arbitrary mathematical objects called "sets."  A set can
+be contained in another set, and this relationship is indicated by the
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> symbol.
+Starting with the simplest mathematical object, called the empty set,
+set theory builds up more and more complex structures whose existence
+follows from the axioms, eventually resulting in extremely complicated
+sets that we identify with the real numbers and other familiar
+mathematical objects.  These axioms were developed in response to <A
+HREF="ru.html">Russell's Paradox</A>, a discovery that revolutionized
+the foundations of mathematics and logic.</P>
+
+<P><A NAME="izfaxioms"></A> In the IZF axioms that follow, <I>all set
+variables are assumed to be</I> <A HREF="#distinct">distinct</A>.  If
+you click on their links you will see the explicit distinct variable
+conditions.</P>
+
+<CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Intuitionistic Zermelo-Fraenkel Set Theory (IZF)">
+<CAPTION><B>Intuitionistic Zermelo-Fraenkel Set Theory (IZF)</B></CAPTION>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-ext.html">Axiom of Extensionality</A></TD>
+<TD NOWRAP><FONT COLOR="#006633"><B>ax-ext</B></FONT></TD>
+<TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<I><FONT
+COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">x</FONT></I> &harr; <I><FONT COLOR="#FF0000">z</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">y</FONT></I>) &rarr;
+<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I>)</SPAN></TD></TR>
+
+<TR><TD COLSPAN="3" STYLE="text-align: center">...<I>more to follow as we develop set theory</I></TD></TR>
+
+</TABLE></CENTER>
+
+<P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
+Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P><CENTER><FONT COLOR="#006633"><I>From a psychological point of view,
+learning constructive mathematics is agonizing, for it requires one to
+first unlearn certain deeply ingrained intuitions and
+habits acquired during classical mathematical training.</I>
+<BR /> &mdash;Andrej Bauer</FONT></CENTER>
+
+<P>Listed here are some examples of starting points for your journey
+through the maze.  You should study some simple proofs from
+propositional calculus until you get the hang of it.  Then try some
+predicate calculus and finally set theory.
+
+The <A HREF="mmtheorems.html">Theorem List</A> shows the complete set of
+theorems in the database.  You may also find the <A
+HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.
 
 
-<P>(Placeholder for future use)
-
-<!--
+<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%">
+<B>Propositional calculus</B>
 <MENU>
-<LI> <A HREF="axext.html">Proof of the ZF Axiom of Extensionality</A></LI>
-<LI> <A HREF="axrep.html">Proof of the ZF Axiom of Replacement</A></LI>
-<LI> <A HREF="axpow.html">Proof of the ZF Axiom of Power Sets</A></LI>
-<LI> <A HREF="axun.html">Proof of the ZF Axiom of Union</A></LI>
+<LI>
+<A HREF="id1.html">Law of identity</A></LI>
+
+<LI>
+<A HREF="prth.html">Praeclarum theorema</A></LI>
+
+<LI>
+<A HREF="con3.html">Contraposition introduction</A></LI>
+
+<LI>
+<A HREF="notnot1.html">Double negation introduction</A></LI>
+
+<LI>
+<A HREF="notnotnot.html">Triple negation</A></LI>
+
+<LI>
+<A HREF="df-xor.html">Definition of exclusive or</A></LI>
+
+<LI>
+<A HREF="dfnot.html">Negation and the false constant</A></LI>
 </MENU>
--->
+<B>Predicate calculus</B>
+<MENU>
+<LI>
+<A HREF="19.12.html">Existential and universal quantifier swap</A></LI>
+
+<LI>
+<A HREF="19.35-1.html">Existentially quantified implication</A></LI>
+
+<LI>
+<A HREF="equid.html"><I>x</I> = <I>x</I></A></LI>
+
+<LI>
+<A HREF="df-sb.html">Definition of proper substitution</A></LI>
+
+<LI>
+<A HREF="2eu7.html">Double existential uniqueness</A></LI>
+
+</MENU>
+<B>Set theory</B>
+<MENU>
+<LI>
+<A HREF="uncom.html">Commutative law for union</A></LI>
+
+<LI>
+<A HREF="abeq2.html">A basic relationship between class and wff
+variables</A></LI>
+
+<LI>
+<A HREF="isset.html">Two ways of saying &quot;is a set&quot;</A></LI>
+
+<LI>
+<A HREF="ru.html">Russell's paradox</A></LI>
+
+<LI>...<I>watch this space as we build out more of set theory</I></LI>
+
+</MENU>
+</TD></TR></TABLE>
 
 <HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
 COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
@@ -656,6 +757,9 @@ page itself, not the PDF page numbers.</LI>
 
 <LI><A NAME="Mendelson"></A> [Mendelson] Mendelson, Elliott, <I>Introduction to
 Mathematical Logic,</I> 2nd ed., D. Van Nostrand (1979) [QA9.M537].</LI>
+
+<LI><A NAME="Monk1"></A> [Monk1] Monk, J. Donald, <I>Introduction to Set
+Theory,</I> McGraw-Hill, Inc. (1969) [QA248.M745].</LI>
 
 <LI><A NAME="Monk2"></A> [Monk2] Monk, J. Donald, &quot;Substitutionless
 Predicate Logic with Identity,&quot; <I>Archiv f&uuml;r Mathematische Logik
