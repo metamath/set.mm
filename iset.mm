@@ -5184,7 +5184,7 @@ $)
   $}
 
   $( Theorem *2.53 of [WhiteheadRussell] p. 107.  This holds
-     intuitionistically, although its converse, ~ pm2.54 , does not.
+     intuitionistically, although its converse does not (see ~ pm2.54dc ).
      (Contributed by NM, 3-Jan-2005.)  (Revised by NM, 31-Jan-2015.) $)
   pm2.53 $p |- ( ( ph \/ ps ) -> ( -. ph -> ps ) ) $=
     ( wn wi pm2.24 ax-1 jaoi ) AACZBDBABEBHFG $.
@@ -6177,8 +6177,9 @@ $)
     ADZCZQBEABFZEAGPQBSPQDZSERPTASAHABIJKBSEPBALMNO $.
 
   $( Definition of 'or' in terms of negation and implication for a decidable
-     proposition.  Based on definition of [Margaris] p. 49.  (Contributed by
-     Jim Kingdon, 26-Mar-2018.) $)
+     proposition.  Based on definition of [Margaris] p. 49.  One direction,
+     ~ pm2.53 , holds for all propositions, not just decidable ones.
+     (Contributed by Jim Kingdon, 26-Mar-2018.) $)
   dfordc $p |- ( DECID ph -> ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) ) $=
     ( wdc wo wn wi pm2.53 pm2.54dc impbid2 ) ACABDAEBFABGABHI $.
 
@@ -26927,37 +26928,6 @@ $)
      NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen, 30-Oct-2012.) $)
   iman $p |- ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) $=
     ( wi wn wa notnot imbi2i imnan bitri ) ABCABDZDZCAJEDBKABFGAJHI $.
-
-  $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
-     intuitionistically, although its converse, ~ pm2.53 , does.  See
-     ~ pm2.54dc for a version which holds intuitionistically, by restricting
-     itself to decidable propositions.  (Contributed by NM, 3-Jan-2005.) $)
-  pm2.54 $p |- ( ( -. ph -> ps ) -> ( ph \/ ps ) ) $=
-    ( wn wo notnot2 orc syl olc ja ) ACZBABDZJCAKAEABFGBAHI $.
-
-  $( Definition of 'or' in terms of negation and implication (classical).  See
-     ~ dfordc for a version which holds intuitionistically, by restricting
-     itself to decidable propositions.  Definition of [Margaris] p. 49.
-     (Contributed by NM, 31-Jan-2015.) $)
-  df-or $p |- ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) $=
-    ( wo wn wi pm2.53 pm2.54 impbii ) ABCADBEABFABGH $.
-
-  $( Implication in terms of disjunction.  Theorem *4.6 of [WhiteheadRussell]
-     p. 120.  See ~ imordc for a version which holds intuitionistically, by
-     restricting itself to decidable propositions.  (Contributed by NM,
-     5-Aug-1993.) $)
-  imor $p |- ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) $=
-    ( wi wn wo notnot imbi1i df-or bitr4i ) ABCADZDZBCJBEAKBAFGJBHI $.
-
-  ${
-    orri.1 $e |- ( -. ph -> ps ) $.
-    $( Infer implication from disjunction.  This is a classical, not an
-       intuitionistic, result.  See ~ pm2.54dc for a version which holds
-       intuitionistically, by restricting itself to decidable propositions.
-       (Contributed by NM, 11-Jun-1994.) $)
-    orri $p |- ( ph \/ ps ) $=
-      ( wo wn wi df-or mpbir ) ABDAEBFCABGH $.
-  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
