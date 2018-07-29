@@ -11657,6 +11657,25 @@ $)
   $}
 
   ${
+    19.32r.1 $e |- F/ x ph $.
+    $( One direction of Theorem 19.32 of [Margaris] p. 90.  The converse holds
+       if ` ph ` is decidable, as seen at ~ 19.32dc .  (Contributed by Jim
+       Kingdon, 28-Jul-2018.) $)
+    19.32r $p |- ( ( ph \/ A. x ps ) -> A. x ( ph \/ ps ) ) $=
+      ( wo wal orc alrimi olc alimi jaoi ) AABEZCFBCFALCDABGHBLCBAIJK $.
+  $}
+
+  ${
+    19.31r.1 $e |- F/ x ps $.
+    $( One direction of Theorem 19.31 of [Margaris] p. 90.  The converse holds
+       in classical logic, but not intuitionistic logic.  (Contributed by Jim
+       Kingdon, 28-Jul-2018.) $)
+    19.31r $p |- ( ( A. x ph \/ ps ) -> A. x ( ph \/ ps ) ) $=
+      ( wal wo 19.32r orcom albii 3imtr4i ) BACEZFBAFZCEKBFABF
+      ZCEBACDGKBHMLCABHIJ $.
+  $}
+
+  ${
     19.44.1 $e |- ( ps -> A. x ps ) $.
     $( Theorem 19.44 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
     19.44 $p |- ( E. x ( ph \/ ps ) <-> ( E. x ph \/ ps ) ) $=
@@ -26965,23 +26984,6 @@ $)
        19-Jun-2013.) $)
     con1i $p |- ( -. ps -> ph ) $=
       ( wn id nsyl2 ) BDZBAGECF $.
-  $}
-
-  ${
-    19.32.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.32 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-    19.32 $p |- ( A. x ( ph \/ ps ) <-> ( ph \/ A. x ps ) ) $=
-      ( wn wi wal wo hbn 19.21h df-or albii 3bitr4i ) AEZBFZCGNBCGZFABHZCGAPHNBC
-      ACDIJQOCABKLAPKM $.
-  $}
-
-  ${
-    19.31.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.31 of [Margaris] p. 90.  Only the reverse direction is valid
-       intuitionistically.  (Contributed by NM, 5-Aug-1993.) $)
-    19.31 $p |- ( A. x ( ph \/ ps ) <-> ( A. x ph \/ ps ) ) $=
-      ( wo wal 19.32 orcom albii 3bitr4i ) BAEZCFBACFZEABEZCFLBEBACDGMKCABHILBH
-      J $.
   $}
 
 $(
