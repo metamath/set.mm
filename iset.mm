@@ -26977,15 +26977,6 @@ $)
       ( wn wi a1i mt3d ) ACBDCFBGAEHI $.
   $}
 
-  ${
-    con1i.a $e |- ( -. ph -> ps ) $.
-    $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.)  (Proof
-       shortened by O'Cat, 28-Nov-2008.)  (Proof shortened by Wolf Lammen,
-       19-Jun-2013.) $)
-    con1i $p |- ( -. ps -> ph ) $=
-      ( wn id nsyl2 ) BDZBAGECF $.
-  $}
-
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
