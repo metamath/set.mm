@@ -4475,9 +4475,10 @@ $)
   ax-in2 $a |- ( -. ph -> ( ph -> ps ) ) $.
 
   $( Reductio ad absurdum.  Theorem *2.01 of [WhiteheadRussell] p. 100.  This
-     is valid intuitionistically (in the terminology of [Bauer] p. 482 it is a
-     proof of negation not a proof by contradiction); compare with ~ pm2.18
-     which is not.  (Contributed by Mario Carneiro, 12-May-2015.) $)
+     is valid intuitionistically (in the terminology of Section 1.2 of [Bauer]
+     p. 482 it is a proof of negation not a proof by contradiction); compare
+     with ~ pm2.18 which is not.  (Contributed by Mario Carneiro,
+     12-May-2015.) $)
   pm2.01 $p |- ( ( ph -> -. ph ) -> -. ph ) $=
     ( ax-in1 ) AB $.
 
@@ -4754,10 +4755,10 @@ $)
      Proofs, such as this one, which assume a proposition, here ` ph ` , derive
      a contradiction, and therefore conclude ` -. ph ` , are valid
      intuitionistically (and can be called "proof of negation", for example by
-     [Bauer] p. 482).  By contrast, proofs which assume ` -. ph ` , derive a
-     contradiction, and conclude ` ph ` , such as ~ condandc , are only valid
-     for decidable propositions.  (Contributed by NM, 5-Aug-1993.)  (Proof
-     shortened by Wolf Lammen, 8-Mar-2013.) $)
+     Section 1.2 of [Bauer] p. 482).  By contrast, proofs which assume
+     ` -. ph ` , derive a contradiction, and conclude ` ph ` , such as
+     ~ condandc , are only valid for decidable propositions.  (Contributed by
+     NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen, 8-Mar-2013.) $)
   pm2.65 $p |- ( ( ph -> ps ) -> ( ( ph -> -. ps ) -> -. ph ) ) $=
     ( wi wn pm2.27 con2d a2i ) ABCAABDZCZABIDAIBAHEFGF $.
 
@@ -5101,6 +5102,10 @@ $)
      (Revised by Mario Carneiro, 2-Feb-2015.) $)
   pm3.24 $p |- -. ( ph /\ -. ph ) $=
     ( wn wi wa notnot1 imnan mpbi ) AABZBCAHDBAEAHFG $.
+
+  $( Triple negation.  (Contributed by Jim Kingdon, 28-Jul-2018.) $)
+  notnotnot $p |- ( -. -. -. ph <-> -. ph ) $=
+    ( wn notnot1 con3i impbii ) ABZBZBFAGACDFCE $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -15642,8 +15647,8 @@ $)
   ${
     $d x y z $.
     $( Axiom of Extensionality.  It states that two sets are identical if they
-       contain the same elements.  Axiom 1 of [Crosilla] (with unnnecessary
-       quantifiers removed).
+       contain the same elements.  Axiom 1 of [Crosilla] p.  "Axioms of CZF and
+       IZF" (with unnnecessary quantifiers removed).
 
        Set theory can also be formulated with a _single_ primitive predicate
        ` e. ` on top of traditional predicate calculus _without_ equality.  In
