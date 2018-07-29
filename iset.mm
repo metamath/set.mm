@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Jul-2018
+$( iset.mm - Version of 29-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -10092,11 +10092,11 @@ $)
   $( Theorem 19.7 of [Margaris] p. 89.  To read this intuitionistically, think
      of it as "if ` ph ` can be refuted for all ` x ` , then it is not possible
      to find an ` x ` for which ` ph ` holds" (and likewise for the converse).
-     Comparing this with ~ df-ex illustrates that statements which look similar
-     (to someone used to classical logic) can be different intuitionistically
-     due to different placement of negations.  (Contributed by NM,
-     5-Aug-1993.)  (Revised by NM, 1-Feb-2015.)  (Revised by Mario Carneiro,
-     12-May-2015.) $)
+     Comparing this with ~ dfexdc illustrates that statements which look
+     similar (to someone used to classical logic) can be different
+     intuitionistically due to different placement of negations.  (Contributed
+     by NM, 5-Aug-1993.)  (Revised by NM, 1-Feb-2015.)  (Revised by Mario
+     Carneiro, 12-May-2015.) $)
   alnex $p |- ( A. x -. ph <-> -. E. x ph ) $=
     ( wfal wi wal wex wn fal pm2.21i 19.23 dfnot albii 3bitr4i ) ACDZBEABFZC
     DAGZBEOGACBCCBEHIJPNBAKLOKM $.
@@ -10110,12 +10110,20 @@ $)
   $}
 
   $( Defining ` E. x ph ` given decidability.  It is common in classical logic
-     to define ` E. x ph ` as ` -. A. x -. ph ` but in intuitionistic logic,
-     that definition only holds under certain conditions.  (Contributed by Jim
-     Kingdon, 15-Mar-2018.) $)
+     to define ` E. x ph ` as ` -. A. x -. ph ` but in intuitionistic logic
+     without a decidability condition, that is only an implication not an
+     equivalence, as seen at ~ exalim .  (Contributed by Jim Kingdon,
+     15-Mar-2018.) $)
   dfexdc $p |- ( DECID E. x ph
                  -> ( E. x ph <-> -. A. x -. ph ) ) $=
     ( wn wal wex wb wdc alnex a1i con2biidc ) ACBDZABEZKLCFLGABHIJ $.
+
+  $( One direction of a classical definition of existential quantification.
+     One direction of Definition of [Margaris] p. 49.  For a decidable
+     proposition, this is an equivalence, as seen as ~ dfexdc .  (Contributed
+     by Jim Kingdon, 29-Jul-2018.) $)
+  exalim $p |- ( E. x ph -> -. A. x -. ph ) $=
+    ( wn wal wex alnex biimpi con2i ) ACBDZABEZIJCABFGH $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -26950,13 +26958,6 @@ $)
     orri $p |- ( ph \/ ps ) $=
       ( wo wn wi df-or mpbir ) ABDAEBFCABGH $.
   $}
-
-  $( Classical definition of existential quantification.  This does not hold
-     intuitionistically, so it depends on ~ ax-3 for its proof.  Definition of
-     [Margaris] p. 49.  (Contributed by NM, 2-Feb-2015.)  (Revised by Mario
-     Carneiro, 12-May-2015.) $)
-  df-ex $p |- ( E. x ph <-> -. A. x -. ph ) $=
-    ( wn wal wex alnex con2bii ) ACBDABEABFG $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
