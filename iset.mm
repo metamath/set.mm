@@ -6275,10 +6275,9 @@ $)
   oranim $p |- ( ( ph \/ ps ) -> -. ( -. ph /\ -. ps ) ) $=
     ( wn wa wo pm4.56 biimpi con2i ) ACBCDZABEZIJCABFGH $.
 
-  $( Implication distributes over disjunction.  We do not have an
-     intuitionistic proof of the converse, but both directions hold classically
-     as can be seen at ~ pm4.78 .  (Contributed by Jim Kingdon,
-     15-Jan-2018.) $)
+  $( Implication distributes over disjunction.  One direction of Theorem *4.78
+     of [WhiteheadRussell] p. 121.  The converse holds in classical logic.
+     (Contributed by Jim Kingdon, 15-Jan-2018.) $)
   pm4.78i $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) ->
        ( ph -> ( ps \/ ch ) ) ) $=
     ( wi wo orc imim2i olc jaoi ) ABDABCEZDACDBJABCFGCJACBHGI $.
@@ -27022,15 +27021,6 @@ $)
      instance of ~ annimim .  (Contributed by NM, 3-Jan-2005.) $)
   pm4.65 $p |- ( -. ( -. ph -> ps ) <-> ( -. ph /\ -. ps ) ) $=
     ( wn pm4.61 ) ACBD $.
-
-  $( Implication distributes over disjunction.  Theorem *4.78 of
-     [WhiteheadRussell] p. 121.  We have an intuitionistic proof of one
-     direction at ~ pm4.78i .  (Contributed by NM, 3-Jan-2005.)  (Proof
-     shortened by Wolf Lammen, 19-Nov-2012.) $)
-  pm4.78 $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) <->
-                ( ph -> ( ps \/ ch ) ) ) $=
-    ( wn wo wi orordi imor orbi12i 3bitr4ri ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCG
-    ALHOMPNABHACHIJ $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
