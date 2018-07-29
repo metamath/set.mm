@@ -26960,23 +26960,6 @@ $)
   alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
     ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
 
-  ${
-    mt3d.1 $e |- ( ph -> -. ch ) $.
-    mt3d.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( Modus tollens deduction.  (Contributed by NM, 26-Mar-1995.) $)
-    mt3d $p |- ( ph -> ps ) $=
-      ( wn con1d mpd ) ACFBDABCEGH $.
-  $}
-
-  ${
-    nsyl2.1 $e |- ( ph -> -. ps ) $.
-    nsyl2.2 $e |- ( -. ch -> ps ) $.
-    $( A negated syllogism inference.  (Contributed by NM, 26-Jun-1994.)
-       (Revised by NM, 19-Jun-2013.) $)
-    nsyl2 $p |- ( ph -> ch ) $=
-      ( wn wi a1i mt3d ) ACBDCFBGAEHI $.
-  $}
-
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
