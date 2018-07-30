@@ -26792,22 +26792,6 @@ $)
      (New usage is discouraged.) $)
   ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
 
-  ${
-    con4d.1 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
-    $( Deduction derived from axiom ~ ax-3 .  (Contributed by NM,
-       26-Mar-1995.) $)
-    con4d $p |- ( ph -> ( ch -> ps ) ) $=
-      ( wn wi ax-3 syl ) ABECEFCBFDBCGH $.
-  $}
-
-  ${
-    con1d.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( A contraposition deduction.  (Contributed by NM, 5-Aug-1993.)  (Revised
-       by NM, 12-Feb-2013.) $)
-    con1d $p |- ( ph -> ( -. ch -> ps ) ) $=
-      ( wn notnot1 syl6 con4d ) ABCEZABECIEDCFGH $.
-  $}
-
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
