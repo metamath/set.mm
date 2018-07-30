@@ -26921,14 +26921,6 @@ $)
       ( wn bicomi con1bii ) ADBBAABDCEFE $.
   $}
 
-  $( Express implication in terms of conjunction.  Theorem 3.4(27) of [Stoll]
-     p. 176.  Only the forward direction, ~ imanim , is valid
-     intuitionistically.  See ~ imandc for a version which holds
-     intuitionistically, by adding a decidability condition.  (Contributed by
-     NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen, 30-Oct-2012.) $)
-  iman $p |- ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) $=
-    ( wi wn wa notnot imbi2i imnan bitri ) ABCABDZDZCAJEDBKABFGAJHI $.
-
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
