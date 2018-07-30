@@ -4578,9 +4578,9 @@ $)
   $}
 
   $( Adding double negation.  Theorem *2.12 of [WhiteheadRussell] p. 101.  This
-     one holds intuitionistically, but its converse, ~ notnot2 , does not.
-     (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen,
-     2-Mar-2013.) $)
+     one holds intuitionistically, but its converse does not (see
+     ~ notnot2dc ).  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
+     Lammen, 2-Mar-2013.) $)
   notnot1 $p |- ( ph -> -. -. ph ) $=
     ( wn id con2i ) ABZAECD $.
 
@@ -5881,8 +5881,10 @@ $)
     ( wdc wn wi pm2.21 a2i condc syl5 pm2.43d ) ABZACZADZALKLCZDJLADKAMAMEFALGH
     I $.
 
-  $( Double negation elimination for a decidable proposition.  (Contributed by
-     Jim Kingdon, 11-Mar-2018.) $)
+  $( Double negation elimination for a decidable proposition.  The converse,
+     ~ notnot1 , holds for all propositions, not just decidable ones.  This is
+     Theorem *2.14 of [WhiteheadRussell] p. 102, but with a decidability
+     condition added.  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   notnot2dc $p |- ( DECID ph -> ( -. -. ph -> ph ) ) $=
     ( wdc wn wo wi df-dc orcom bitri pm2.53 sylbi ) ABZACZADZLCAEKALD
     MAFALGHLAIJ $.
@@ -5986,9 +5988,10 @@ $)
   con34bdc $p |- ( DECID ps -> ( ( ph -> ps ) <-> ( -. ps -> -. ph ) ) ) $=
     ( wdc wi wn con3 condc impbid2 ) BCABDBEAEDABFBAGH $.
 
-  $( Double negation equivalence for a decidable proposition.  Like theorem
+  $( Double negation equivalence for a decidable proposition.  Like Theorem
      *4.13 of [WhiteheadRussell] p. 117, but with a decidability antecendent.
-     (Contributed by Jim Kingdon, 13-Mar-2018.) $)
+     The forward direction, ~ notnot1 , holds for all propositions, not just
+     decidable ones.  (Contributed by Jim Kingdon, 13-Mar-2018.) $)
   notnotdc $p |- ( DECID ph -> ( ph <-> -. -. ph ) ) $=
     ( wdc wn notnot1 notnot2dc impbid2 ) ABAACCADAEF $.
 
@@ -26864,18 +26867,6 @@ $)
     pm2.61i $p |- ps $=
       ( wi id ja ax-mp ) AAEBAFAABDCGH $.
   $}
-
-  $( Double negation elimination.  Theorem *2.14 of [WhiteheadRussell] p. 102.
-     This does not hold intuitionistically, although its coverse, ~ notnot1 ,
-     does.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by David Harvey,
-     5-Sep-1999.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
-  notnot2 $p |- ( -. -. ph -> ph ) $=
-    ( wn pm2.21 pm2.18d ) ABZBAEACD $.
-
-  $( Double negation.  Theorem *4.13 of [WhiteheadRussell] p. 117.
-     (Contributed by NM, 5-Aug-1993.) $)
-  notnot $p |- ( ph <-> -. -. ph ) $=
-    ( wn notnot1 notnot2 impbii ) AABBACADE $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
