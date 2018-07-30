@@ -4477,8 +4477,8 @@ $)
   $( Reductio ad absurdum.  Theorem *2.01 of [WhiteheadRussell] p. 100.  This
      is valid intuitionistically (in the terminology of Section 1.2 of [Bauer]
      p. 482 it is a proof of negation not a proof by contradiction); compare
-     with ~ pm2.18 which is not.  (Contributed by Mario Carneiro,
-     12-May-2015.) $)
+     with ~ pm2.18dc which only holds for some propositions.  (Contributed by
+     Mario Carneiro, 12-May-2015.) $)
   pm2.01 $p |- ( ( ph -> -. ph ) -> -. ph ) $=
     ( ax-in1 ) AB $.
 
@@ -26806,20 +26806,6 @@ $)
        by NM, 12-Feb-2013.) $)
     con1d $p |- ( ph -> ( -. ch -> ps ) ) $=
       ( wn notnot1 syl6 con4d ) ABCEZABECIEDCFGH $.
-  $}
-
-  $( Proof by contradiction.  Theorem *2.18 of [WhiteheadRussell] p. 103.  Also
-     called the Law of Clavius.  This is not valid intuitionistically, but
-     compare with ~ pm2.01 which is.  (Contributed by NM, 5-Aug-1993.) $)
-  pm2.18 $p |- ( ( -. ph -> ph ) -> ph ) $=
-    ( wn wi pm2.21 a2i con4d pm2.43i ) ABZACZAIAIHAIBZAJDEFG $.
-
-  ${
-    pm2.18d.1 $e |- ( ph -> ( -. ps -> ps ) ) $.
-    $( Deduction based on reductio ad absurdum.  (Contributed by FL,
-       12-Jul-2009.)  (Proof shortened by Andrew Salmon, 7-May-2011.) $)
-    pm2.18d $p |- ( ph -> ps ) $=
-      ( wn wi pm2.18 syl ) ABDBEBCBFG $.
   $}
 
 $(
