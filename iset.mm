@@ -26822,42 +26822,6 @@ $)
       ( wn wi pm2.18 syl ) ABDBEBCBFG $.
   $}
 
-  ${
-    pm2.61d.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    pm2.61d.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( Deduction eliminating an antecedent.  (Contributed by NM, 27-Apr-1994.)
-       (Proof shortened by Wolf Lammen, 12-Sep-2013.) $)
-    pm2.61d $p |- ( ph -> ch ) $=
-      ( wn con1d syld pm2.18d ) ACACFBCABCEGDHI $.
-  $}
-
-  ${
-    pm2.61d1.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    pm2.61d1.2 $e |- ( -. ps -> ch ) $.
-    $( Inference eliminating an antecedent.  (Contributed by NM,
-       15-Jul-2005.) $)
-    pm2.61d1 $p |- ( ph -> ch ) $=
-      ( wn wi a1i pm2.61d ) ABCDBFCGAEHI $.
-  $}
-
-  ${
-    pm2.61d2.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    pm2.61d2.2 $e |- ( ps -> ch ) $.
-    $( Inference eliminating an antecedent.  (Contributed by NM,
-       18-Aug-1993.) $)
-    pm2.61d2 $p |- ( ph -> ch ) $=
-      ( wi a1i pm2.61d ) ABCBCFAEGDH $.
-  $}
-
-  ${
-    pm2.61i.1 $e |- ( ph -> ps ) $.
-    pm2.61i.2 $e |- ( -. ph -> ps ) $.
-    $( Inference eliminating an antecedent.  (Contributed by NM, 5-Apr-1994.)
-       (Proof shortened by Wolf Lammen, 12-Sep-2013.) $)
-    pm2.61i $p |- ps $=
-      ( wi id ja ax-mp ) AAEBAFAABDCGH $.
-  $}
-
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
