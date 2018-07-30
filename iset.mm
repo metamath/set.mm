@@ -1250,8 +1250,8 @@ $)
       ( com52l ) CDEABFABCDEFGHH $.
   $}
 
-  $( Elimination of a nested antecedent as a kind of reversal of inference
-     ~ ja .  (Contributed by Wolf Lammen, 9-May-2013.) $)
+  $( Elimination of a nested antecedent.  (Contributed by Wolf Lammen,
+     9-May-2013.) $)
   jarr $p |- ( ( ( ph -> ps ) -> ch ) -> ( ps -> ch ) ) $=
     ( wi ax-1 imim1i ) BABDCBAEF $.
 
@@ -4745,9 +4745,8 @@ $)
   expt $p |- ( ( -. ( ph -> -. ps ) -> ch ) -> ( ph -> ( ps -> ch ) ) ) $=
     ( wn wi pm3.2im imim1d com12 ) AABDEDZCEBCEABICABFGH $.
 
-  $( Elimination of a nested antecedent.  Although it is a kind of reversal of
-     inference ~ ja it holds intuitionistically, while ~ ja does not.
-     (Contributed by Wolf Lammen, 10-May-2013.) $)
+  $( Elimination of a nested antecedent.  (Contributed by Wolf Lammen,
+     10-May-2013.) $)
   jarl $p |- ( ( ( ph -> ps ) -> ch ) -> ( -. ph -> ch ) ) $=
     ( wn wi pm2.21 imim1i ) ADABECABFG $.
 
@@ -26848,15 +26847,6 @@ $)
        18-Aug-1993.) $)
     pm2.61d2 $p |- ( ph -> ch ) $=
       ( wi a1i pm2.61d ) ABCBCFAEGDH $.
-  $}
-
-  ${
-    ja.1 $e |- ( -. ph -> ch ) $.
-    ja.2 $e |- ( ps -> ch ) $.
-    $( Inference joining the antecedents of two premises.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by O'Cat, 19-Feb-2008.) $)
-    ja $p |- ( ( ph -> ps ) -> ch ) $=
-      ( wi imim2i pm2.61d1 ) ABFACBCAEGDH $.
   $}
 
   ${
