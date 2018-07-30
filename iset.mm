@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Jul-2018
+$( iset.mm - Version of 29-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -1250,8 +1250,8 @@ $)
       ( com52l ) CDEABFABCDEFGHH $.
   $}
 
-  $( Elimination of a nested antecedent as a kind of reversal of inference
-     ~ ja .  (Contributed by Wolf Lammen, 9-May-2013.) $)
+  $( Elimination of a nested antecedent.  (Contributed by Wolf Lammen,
+     9-May-2013.) $)
   jarr $p |- ( ( ( ph -> ps ) -> ch ) -> ( ps -> ch ) ) $=
     ( wi ax-1 imim1i ) BABDCBAEF $.
 
@@ -4477,8 +4477,8 @@ $)
   $( Reductio ad absurdum.  Theorem *2.01 of [WhiteheadRussell] p. 100.  This
      is valid intuitionistically (in the terminology of Section 1.2 of [Bauer]
      p. 482 it is a proof of negation not a proof by contradiction); compare
-     with ~ pm2.18 which is not.  (Contributed by Mario Carneiro,
-     12-May-2015.) $)
+     with ~ pm2.18dc which only holds for some propositions.  (Contributed by
+     Mario Carneiro, 12-May-2015.) $)
   pm2.01 $p |- ( ( ph -> -. ph ) -> -. ph ) $=
     ( ax-in1 ) AB $.
 
@@ -4578,9 +4578,9 @@ $)
   $}
 
   $( Adding double negation.  Theorem *2.12 of [WhiteheadRussell] p. 101.  This
-     one holds intuitionistically, but its converse, ~ notnot2 , does not.
-     (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen,
-     2-Mar-2013.) $)
+     one holds intuitionistically, but its converse does not (see
+     ~ notnot2dc ).  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
+     Lammen, 2-Mar-2013.) $)
   notnot1 $p |- ( ph -> -. -. ph ) $=
     ( wn id con2i ) ABZAECD $.
 
@@ -4745,9 +4745,8 @@ $)
   expt $p |- ( ( -. ( ph -> -. ps ) -> ch ) -> ( ph -> ( ps -> ch ) ) ) $=
     ( wn wi pm3.2im imim1d com12 ) AABDEDZCEBCEABICABFGH $.
 
-  $( Elimination of a nested antecedent.  Although it is a kind of reversal of
-     inference ~ ja it holds intuitionistically, while ~ ja does not.
-     (Contributed by Wolf Lammen, 10-May-2013.) $)
+  $( Elimination of a nested antecedent.  (Contributed by Wolf Lammen,
+     10-May-2013.) $)
   jarl $p |- ( ( ( ph -> ps ) -> ch ) -> ( -. ph -> ch ) ) $=
     ( wn wi pm2.21 imim1i ) ADABECABFG $.
 
@@ -5184,7 +5183,7 @@ $)
   $}
 
   $( Theorem *2.53 of [WhiteheadRussell] p. 107.  This holds
-     intuitionistically, although its converse, ~ pm2.54 , does not.
+     intuitionistically, although its converse does not (see ~ pm2.54dc ).
      (Contributed by NM, 3-Jan-2005.)  (Revised by NM, 31-Jan-2015.) $)
   pm2.53 $p |- ( ( ph \/ ps ) -> ( -. ph -> ps ) ) $=
     ( wn wi pm2.24 ax-1 jaoi ) AACZBDBABEBHFG $.
@@ -5361,10 +5360,10 @@ $)
   $}
 
   $( Negated disjunction in terms of conjunction.  This version of DeMorgan's
-     law holds for all propositions (not just decidable ones), unlike ~ oran ,
-     ~ anordc , or ~ ianordc .  Compare Theorem *4.56 of [WhiteheadRussell]
-     p. 120.  (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
-     31-Jan-2015.) $)
+     law is a biconditional for all propositions (not just decidable ones),
+     unlike ~ oranim , ~ anordc , or ~ ianordc .  Compare Theorem *4.56 of
+     [WhiteheadRussell] p. 120.  (Contributed by NM, 5-Aug-1993.)  (Revised by
+     Mario Carneiro, 31-Jan-2015.) $)
   ioran $p |- ( -. ( ph \/ ps ) <-> ( -. ph /\ -. ps ) ) $=
     ( wo wn wa pm2.45 pm2.46 jca simpl con2i simpr jaoi impbii ) ABCZDZADZBDZEZ
     OPQABFABGHNRARDBRAPQIJRBPQKJLJM $.
@@ -5817,7 +5816,14 @@ $)
 
      Our notation for decidability is a connective ` DECID ` which we place
      before the formula in question.  For example, ` DECID x = y ` corresponds
-     to "x = y is decidable".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
+     to "x = y is decidable".
+
+     We could transform intuitionistic logic to classical logic by adding
+     unconditional forms of ~ condc , ~ exmiddc , ~ peircedc , or ~ notnot2dc ,
+     any of which would correspond to the assertion that all propositions are
+     decidable.
+
+     (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   df-dc $a |- ( DECID ph <-> ( ph \/ -. ph ) ) $.
 
   $( Law of excluded middle, for a decidable proposition.  The law of the
@@ -5867,8 +5873,20 @@ $(
    This section is focused on such proofs, given decidability conditions.
 $)
 
-  $( Contraposition of a decidable proposition.  (Contributed by Jim Kingdon,
-     13-Mar-2018.) $)
+  $( Contraposition of a decidable proposition.
+
+     This theorem swaps or "transposes" the order of the consequents when
+     negation is removed.  An informal example is that the statement "if there
+     are no clouds in the sky, it is not raining" implies the statement "if it
+     is raining, there are clouds in the sky."  This theorem (without the
+     decidability condition, of course) is called _Transp_ or "the principle of
+     transposition" in _Principia Mathematica_ (Theorem *2.17 of
+     [WhiteheadRussell] p. 103) and is Axiom A3 of [Margaris] p. 49.  We will
+     also use the term "contraposition" for this principle, although the reader
+     is advised that in the field of philosophical logic, "contraposition" has
+     a different technical meaning.
+
+     (Contributed by Jim Kingdon, 13-Mar-2018.) $)
   condc $p |- ( DECID ph -> ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) ) $=
     ( wdc wn wo wi df-dc ax-1 a1d pm2.27 ax-in2 syl6 jaoi sylbi ) ACA
     ADZEOBDZFZBAFZFZAGASOARQABHIOQPROPJBAKLMN $.
@@ -5881,8 +5899,10 @@ $)
     ( wdc wn wi pm2.21 a2i condc syl5 pm2.43d ) ABZACZADZALKLCZDJLADKAMAMEFALGH
     I $.
 
-  $( Double negation elimination for a decidable proposition.  (Contributed by
-     Jim Kingdon, 11-Mar-2018.) $)
+  $( Double negation elimination for a decidable proposition.  The converse,
+     ~ notnot1 , holds for all propositions, not just decidable ones.  This is
+     Theorem *2.14 of [WhiteheadRussell] p. 102, but with a decidability
+     condition added.  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   notnot2dc $p |- ( DECID ph -> ( -. -. ph -> ph ) ) $=
     ( wdc wn wo wi df-dc orcom bitri pm2.53 sylbi ) ABZACZADZLCAEKALD
     MAFALGHLAIJ $.
@@ -5986,9 +6006,10 @@ $)
   con34bdc $p |- ( DECID ps -> ( ( ph -> ps ) <-> ( -. ps -> -. ph ) ) ) $=
     ( wdc wi wn con3 condc impbid2 ) BCABDBEAEDABFBAGH $.
 
-  $( Double negation equivalence for a decidable proposition.  Like theorem
+  $( Double negation equivalence for a decidable proposition.  Like Theorem
      *4.13 of [WhiteheadRussell] p. 117, but with a decidability antecendent.
-     (Contributed by Jim Kingdon, 13-Mar-2018.) $)
+     The forward direction, ~ notnot1 , holds for all propositions, not just
+     decidable ones.  (Contributed by Jim Kingdon, 13-Mar-2018.) $)
   notnotdc $p |- ( DECID ph -> ( ph <-> -. -. ph ) ) $=
     ( wdc wn notnot1 notnot2dc impbid2 ) ABAACCADAEF $.
 
@@ -6116,11 +6137,17 @@ $)
       ( -. ( -. ph -> -. ps ) <-> ( -. ph /\ ps ) ) ) ) $=
     ( wdc wn wi wa wb dcn pm4.63dc syl ) ACADZCBCKBDEDKBFGEAHKBIJ $.
 
-  $( Express conjunction in terms of implication.  The biconditionalized
-     version of this theorem, ~ annim , is not valid intuitionistically.
-     (Contributed by Jim Kingdon, 24-Dec-2017.) $)
+  $( Express conjunction in terms of implication.  One direction of Theorem
+     *4.61 of [WhiteheadRussell] p. 120.  The converse holds for decidable
+     propositions, as can be seen at ~ annimdc .  (Contributed by Jim Kingdon,
+     24-Dec-2017.) $)
   annimim $p |- ( ( ph /\ -. ps ) -> -. ( ph -> ps ) ) $=
     ( wn wi pm2.27 con3 syl imp ) ABCZABDZCZAJBDIKDABEJBFGH $.
+
+  $( One direction of Theorem *4.65 of [WhiteheadRussell] p. 120.  The converse
+     holds in classical logic.  (Contributed by Jim Kingdon, 28-Jul-2018.) $)
+  pm4.65r $p |- ( ( -. ph /\ -. ps ) -> -. ( -. ph -> ps ) ) $=
+    ( wn annimim ) ACBD $.
 
   $( An implication between two decidable propositions is decidable.
      (Contributed by Jim Kingdon, 28-Mar-2018.) $)
@@ -6171,8 +6198,9 @@ $)
     ADZCZQBEABFZEAGPQBSPQDZSERPTASAHABIJKBSEPBALMNO $.
 
   $( Definition of 'or' in terms of negation and implication for a decidable
-     proposition.  Based on definition of [Margaris] p. 49.  (Contributed by
-     Jim Kingdon, 26-Mar-2018.) $)
+     proposition.  Based on definition of [Margaris] p. 49.  One direction,
+     ~ pm2.53 , holds for all propositions, not just decidable ones.
+     (Contributed by Jim Kingdon, 26-Mar-2018.) $)
   dfordc $p |- ( DECID ph -> ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) ) $=
     ( wdc wo wn wi pm2.53 pm2.54dc impbid2 ) ACABDAEBFABGABHI $.
 
@@ -6246,13 +6274,15 @@ $)
   pm4.66dc $p |- ( DECID ph -> ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) ) $=
     ( wn pm4.64dc ) ABCD $.
 
-  $( One direction of theorem *4.52 of [WhiteheadRussell] p. 120.  (Contributed
-     by Jim Kingdon, 27-Jul-2018.) $)
+  $( One direction of theorem *4.52 of [WhiteheadRussell] p. 120.  The converse
+     also holds in classical logic.  (Contributed by Jim Kingdon,
+     27-Jul-2018.) $)
   pm4.52im $p |- ( ( ph /\ -. ps ) -> -. ( -. ph \/ ps ) ) $=
     ( wn wa wi wo annimim imorr nsyl ) ABCDABEACBFABGABHI $.
 
-  $( One direction of theorem *4.53 of [WhiteheadRussell] p. 120.  (Contributed
-     by Jim Kingdon, 27-Jul-2018.) $)
+  $( One direction of theorem *4.53 of [WhiteheadRussell] p. 120.  The converse
+     also holds in classical logic.  (Contributed by Jim Kingdon,
+     27-Jul-2018.) $)
   pm4.53r $p |- ( ( -. ph \/ ps ) -> -. ( ph /\ -. ps ) ) $=
     ( wn wa wo pm4.52im con2i ) ABCDACBEABFG $.
 
@@ -6269,16 +6299,16 @@ $)
   pm4.56 $p |- ( ( -. ph /\ -. ps ) <-> -. ( ph \/ ps ) ) $=
     ( wo wn wa ioran bicomi ) ABCDADBDEABFG $.
 
-  $( Disjunction in terms of conjunction (DeMorgan's law).  Compare Theorem
-     *4.57 of [WhiteheadRussell] p. 120.  The converse does not hold
-     intuitionistically.  (Contributed by Jim Kingdon, 25-Jul-2018.) $)
+  $( Disjunction in terms of conjunction (DeMorgan's law).  One direction of
+     Theorem *4.57 of [WhiteheadRussell] p. 120.  The converse does not hold
+     intuitionistically but does hold in classical logic.  (Contributed by Jim
+     Kingdon, 25-Jul-2018.) $)
   oranim $p |- ( ( ph \/ ps ) -> -. ( -. ph /\ -. ps ) ) $=
     ( wn wa wo pm4.56 biimpi con2i ) ACBCDZABEZIJCABFGH $.
 
-  $( Implication distributes over disjunction.  We do not have an
-     intuitionistic proof of the converse, but both directions hold classically
-     as can be seen at ~ pm4.78 .  (Contributed by Jim Kingdon,
-     15-Jan-2018.) $)
+  $( Implication distributes over disjunction.  One direction of Theorem *4.78
+     of [WhiteheadRussell] p. 121.  The converse holds in classical logic.
+     (Contributed by Jim Kingdon, 15-Jan-2018.) $)
   pm4.78i $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) ->
        ( ph -> ( ps \/ ch ) ) ) $=
     ( wi wo orc imim2i olc jaoi ) ABDABCEZDACDBJABCFGCJACBHGI $.
@@ -9868,7 +9898,7 @@ $)
     alrimih.1 $e |- ( ph -> A. x ph ) $.
     alrimih.2 $e |- ( ph -> ps ) $.
     $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
+       5-Aug-1993.)  (New usage is discouraged.) $)
     alrimih $p |- ( ph -> A. x ps ) $=
       ( wal alimi syl ) AACFBCFDABCEGH $.
   $}
@@ -10084,11 +10114,11 @@ $)
   $( Theorem 19.7 of [Margaris] p. 89.  To read this intuitionistically, think
      of it as "if ` ph ` can be refuted for all ` x ` , then it is not possible
      to find an ` x ` for which ` ph ` holds" (and likewise for the converse).
-     Comparing this with ~ df-ex illustrates that statements which look similar
-     (to someone used to classical logic) can be different intuitionistically
-     due to different placement of negations.  (Contributed by NM,
-     5-Aug-1993.)  (Revised by NM, 1-Feb-2015.)  (Revised by Mario Carneiro,
-     12-May-2015.) $)
+     Comparing this with ~ dfexdc illustrates that statements which look
+     similar (to someone used to classical logic) can be different
+     intuitionistically due to different placement of negations.  (Contributed
+     by NM, 5-Aug-1993.)  (Revised by NM, 1-Feb-2015.)  (Revised by Mario
+     Carneiro, 12-May-2015.) $)
   alnex $p |- ( A. x -. ph <-> -. E. x ph ) $=
     ( wfal wi wal wex wn fal pm2.21i 19.23 dfnot albii 3bitr4i ) ACDZBEABFZC
     DAGZBEOGACBCCBEHIJPNBAKLOKM $.
@@ -10102,12 +10132,20 @@ $)
   $}
 
   $( Defining ` E. x ph ` given decidability.  It is common in classical logic
-     to define ` E. x ph ` as ` -. A. x -. ph ` but in intuitionistic logic,
-     that definition only holds under certain conditions.  (Contributed by Jim
-     Kingdon, 15-Mar-2018.) $)
+     to define ` E. x ph ` as ` -. A. x -. ph ` but in intuitionistic logic
+     without a decidability condition, that is only an implication not an
+     equivalence, as seen at ~ exalim .  (Contributed by Jim Kingdon,
+     15-Mar-2018.) $)
   dfexdc $p |- ( DECID E. x ph
                  -> ( E. x ph <-> -. A. x -. ph ) ) $=
     ( wn wal wex wb wdc alnex a1i con2biidc ) ACBDZABEZKLCFLGABHIJ $.
+
+  $( One direction of a classical definition of existential quantification.
+     One direction of Definition of [Margaris] p. 49.  For a decidable
+     proposition, this is an equivalence, as seen as ~ dfexdc .  (Contributed
+     by Jim Kingdon, 29-Jul-2018.) $)
+  exalim $p |- ( E. x ph -> -. A. x -. ph ) $=
+    ( wn wal wex alnex biimpi con2i ) ACBDZABEZIJCABFGH $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -11249,7 +11287,8 @@ $)
   exsimpl $p |- ( E. x ( ph /\ ps ) -> E. x ph ) $=
     ( wa simpl eximi ) ABDACABEF $.
 
-  $( Theorem 19.6 of [Margaris] p. 89, given a decidability condition.
+  $( Theorem 19.6 of [Margaris] p. 89, given a decidability condition.  The
+     forward direction holds for all propositions, as seen at ~ alexim .
      (Contributed by Jim Kingdon, 2-Jun-2018.) $)
   alexdc $p |- ( A. x DECID ph -> ( A. x ph <-> -. E. x -. ph ) ) $=
     ( wdc wal wn wex nfa1 wb notnotdc sps albid alnex syl6bb ) ACZBDZ
@@ -11426,7 +11465,8 @@ $)
       ( nfri 19.9h ) ABABCDE $.
   $}
 
-  $( One direction of theorem 19.6 of [Margaris] p. 89.  (Contributed by Jim
+  $( One direction of theorem 19.6 of [Margaris] p. 89.  The converse holds
+     given a decidability condition, as seen at ~ alexdc .  (Contributed by Jim
      Kingdon, 2-Jul-2018.) $)
   alexim $p |- ( A. x ph -> -. E. x -. ph ) $=
     ( wal wn wex wfal wi pm2.24 alimi exim syl nfv 19.9 syl6ib sylibr
@@ -11646,6 +11686,25 @@ $)
       ( wdc wn wi wal wo wb nfn 19.21 a1i nfdc dfordc 3bitr4d
       albid ) AEZAFZBGZCHZSBCHZGZABIZCHAUBIUAUCJRSBCACDKLMRUDTCACDNABOQ
       AUBOP $.
+  $}
+
+  ${
+    19.32r.1 $e |- F/ x ph $.
+    $( One direction of Theorem 19.32 of [Margaris] p. 90.  The converse holds
+       if ` ph ` is decidable, as seen at ~ 19.32dc .  (Contributed by Jim
+       Kingdon, 28-Jul-2018.) $)
+    19.32r $p |- ( ( ph \/ A. x ps ) -> A. x ( ph \/ ps ) ) $=
+      ( wo wal orc alrimi olc alimi jaoi ) AABEZCFBCFALCDABGHBLCBAIJK $.
+  $}
+
+  ${
+    19.31r.1 $e |- F/ x ps $.
+    $( One direction of Theorem 19.31 of [Margaris] p. 90.  The converse holds
+       in classical logic, but not intuitionistic logic.  (Contributed by Jim
+       Kingdon, 28-Jul-2018.) $)
+    19.31r $p |- ( ( A. x ph \/ ps ) -> A. x ( ph \/ ps ) ) $=
+      ( wal wo 19.32r orcom albii 3imtr4i ) BACEZFBAFZCEKBFABF
+      ZCEBACDGKBHMLCABHIJ $.
   $}
 
   ${
@@ -26702,335 +26761,6 @@ $)
     wo eqtr4i ) ABCDEZFBGZUAHZAIZBJZABCFZABDFZEZABUAKUHUBCHZAIZBJZUBDHZAIZBJZEZ
     UEUFUKUGUNABCKABDKLUEUJUMSZBJUOUDUPBUDUIULSZAIUPUCUQAUBCDMNUIULAOPQUJUMBRTT
     T $.
-
-$(
-###############################################################################
-                            CLASSICAL LOGIC
-###############################################################################
-
-   There are a variety of theorems that only hold for decidable propositions,
-   for example ~ df-dc , ~ notnotdc , or ~ condc , and we have stated and
-   proved them for decidable propositions.
-
-   As a historical note, however, the Intuitionistic Logic Explorer originated
-   as a fork of the non-intuitionistic Metamath Proof Explorer, and the
-   project of adding decidability conditions everywhere they are needed (or
-   replacing non-intuitionistic proofs entirely) is not yet complete.
-
-   Therefore, this section also (for now) contains the non-intuitionistic
-   ~ ax-3 and additional theorems which rely on ~ ax-3 . As we replace
-   classical proofs with intuitionistic ones, remove classical proofs which
-   are unused and not especially important to contrast classical and
-   intuitionistic results, or add decidability conditions to make proofs not
-   rely on ~ ax-3 , we plan on reducing use of ~ ax-3 , moving ~ ax-3 still
-   later in the file, and eventually removing it entirely.
-$)
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                         Classical logic theorems
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-
-  $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.
-
-     Unconditional form of ~ condc .  We state this as an axiom for the benefit
-     of theorems which have not yet been converted over to having appropriate
-     decidability conditions added.  We could also transform intuitionistic
-     logic to classical logic by adding unconditional forms of ~ exmiddc ,
-     ~ peircedc , or ~ notnot2dc .
-
-     This axiom swaps or "transposes" the order of the consequents when
-     negation is removed.  An informal example is that the statement "if there
-     are no clouds in the sky, it is not raining" implies the statement "if it
-     is raining, there are clouds in the sky."  This axiom is called _Transp_
-     or "the principle of transposition" in _Principia Mathematica_ (Theorem
-     *2.17 of [WhiteheadRussell] p. 103).  We will also use the term
-     "contraposition" for this principle, although the reader is advised that
-     in the field of philosophical logic, "contraposition" has a different
-     technical meaning.  (Contributed by NM, 5-Aug-1993.)
-     (New usage is discouraged.) $)
-  ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
-
-  ${
-    con4d.1 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
-    $( Deduction derived from axiom ~ ax-3 .  (Contributed by NM,
-       26-Mar-1995.) $)
-    con4d $p |- ( ph -> ( ch -> ps ) ) $=
-      ( wn wi ax-3 syl ) ABECEFCBFDBCGH $.
-  $}
-
-  ${
-    con1d.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( A contraposition deduction.  (Contributed by NM, 5-Aug-1993.)  (Revised
-       by NM, 12-Feb-2013.) $)
-    con1d $p |- ( ph -> ( -. ch -> ps ) ) $=
-      ( wn notnot1 syl6 con4d ) ABCEZABECIEDCFGH $.
-  $}
-
-  $( Proof by contradiction.  Theorem *2.18 of [WhiteheadRussell] p. 103.  Also
-     called the Law of Clavius.  This is not valid intuitionistically, but
-     compare with ~ pm2.01 which is.  (Contributed by NM, 5-Aug-1993.) $)
-  pm2.18 $p |- ( ( -. ph -> ph ) -> ph ) $=
-    ( wn wi pm2.21 a2i con4d pm2.43i ) ABZACZAIAIHAIBZAJDEFG $.
-
-  ${
-    pm2.18d.1 $e |- ( ph -> ( -. ps -> ps ) ) $.
-    $( Deduction based on reductio ad absurdum.  (Contributed by FL,
-       12-Jul-2009.)  (Proof shortened by Andrew Salmon, 7-May-2011.) $)
-    pm2.18d $p |- ( ph -> ps ) $=
-      ( wn wi pm2.18 syl ) ABDBEBCBFG $.
-  $}
-
-  ${
-    pm2.61d.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    pm2.61d.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( Deduction eliminating an antecedent.  (Contributed by NM, 27-Apr-1994.)
-       (Proof shortened by Wolf Lammen, 12-Sep-2013.) $)
-    pm2.61d $p |- ( ph -> ch ) $=
-      ( wn con1d syld pm2.18d ) ACACFBCABCEGDHI $.
-  $}
-
-  ${
-    pm2.61d1.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    pm2.61d1.2 $e |- ( -. ps -> ch ) $.
-    $( Inference eliminating an antecedent.  (Contributed by NM,
-       15-Jul-2005.) $)
-    pm2.61d1 $p |- ( ph -> ch ) $=
-      ( wn wi a1i pm2.61d ) ABCDBFCGAEHI $.
-  $}
-
-  ${
-    pm2.61d2.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    pm2.61d2.2 $e |- ( ps -> ch ) $.
-    $( Inference eliminating an antecedent.  (Contributed by NM,
-       18-Aug-1993.) $)
-    pm2.61d2 $p |- ( ph -> ch ) $=
-      ( wi a1i pm2.61d ) ABCBCFAEGDH $.
-  $}
-
-  ${
-    ja.1 $e |- ( -. ph -> ch ) $.
-    ja.2 $e |- ( ps -> ch ) $.
-    $( Inference joining the antecedents of two premises.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by O'Cat, 19-Feb-2008.) $)
-    ja $p |- ( ( ph -> ps ) -> ch ) $=
-      ( wi imim2i pm2.61d1 ) ABFACBCAEGDH $.
-  $}
-
-  ${
-    pm2.61i.1 $e |- ( ph -> ps ) $.
-    pm2.61i.2 $e |- ( -. ph -> ps ) $.
-    $( Inference eliminating an antecedent.  (Contributed by NM, 5-Apr-1994.)
-       (Proof shortened by Wolf Lammen, 12-Sep-2013.) $)
-    pm2.61i $p |- ps $=
-      ( wi id ja ax-mp ) AAEBAFAABDCGH $.
-  $}
-
-  $( Double negation elimination.  Theorem *2.14 of [WhiteheadRussell] p. 102.
-     This does not hold intuitionistically, although its coverse, ~ notnot1 ,
-     does.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by David Harvey,
-     5-Sep-1999.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
-  notnot2 $p |- ( -. -. ph -> ph ) $=
-    ( wn pm2.21 pm2.18d ) ABZBAEACD $.
-
-  $( Double negation.  Theorem *4.13 of [WhiteheadRussell] p. 117.
-     (Contributed by NM, 5-Aug-1993.) $)
-  notnot $p |- ( ph <-> -. -. ph ) $=
-    ( wn notnot1 notnot2 impbii ) AABBACADE $.
-
-  ${
-    impcon4bid.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    impcon4bid.2 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
-    $( A variation on ~ impbid with contraposition.  (Contributed by Jeff
-       Hankins, 3-Jul-2009.) $)
-    impcon4bid $p |- ( ph -> ( ps <-> ch ) ) $=
-      ( con4d impbid ) ABCDABCEFG $.
-  $}
-
-  ${
-    con4bid.1 $e |- ( ph -> ( -. ps <-> -. ch ) ) $.
-    $( A contraposition deduction.  (Contributed by NM, 21-May-1994.)  (Revised
-       by NM, 17-Sep-2013.) $)
-    con4bid $p |- ( ph -> ( ps <-> ch ) ) $=
-      ( wn biimprd con4d biimpd impcon4bid ) ABCACBABEZCEZDFGAJKDHI $.
-  $}
-
-  $( Contraposition.  Theorem *4.11 of [WhiteheadRussell] p. 117.  (Contributed
-     by NM, 21-May-1994.)  (Proof shortened by Wolf Lammen, 12-Jun-2013.) $)
-  notbi $p |- ( ( ph <-> ps ) <-> ( -. ph <-> -. ps ) ) $=
-    ( wb wn id notbid con4bid impbii ) ABCZADBDCZIABIEFJABJEGH $.
-
-  ${
-    con1bii.1 $e |- ( -. ph <-> ps ) $.
-    $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.)  (Proof
-       shortened by Wolf Lammen, 13-Oct-2012.) $)
-    con1bii $p |- ( -. ps <-> ph ) $=
-      ( wn notnot xchbinx bicomi ) ABDAADBAECFG $.
-  $}
-
-  ${
-    con4bii.1 $e |- ( -. ph <-> -. ps ) $.
-    $( A contraposition inference.  (Contributed by NM, 21-May-1994.) $)
-    con4bii $p |- ( ph <-> ps ) $=
-      ( wb wn notbi mpbir ) ABDAEBEDCABFG $.
-  $}
-
-  ${
-    con2bii.1 $e |- ( ph <-> -. ps ) $.
-    $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.) $)
-    con2bii $p |- ( ps <-> -. ph ) $=
-      ( wn bicomi con1bii ) ADBBAABDCEFE $.
-  $}
-
-  $( Express implication in terms of conjunction.  Theorem 3.4(27) of [Stoll]
-     p. 176.  Only the forward direction, ~ imanim , is valid
-     intuitionistically.  See ~ imandc for a version which holds
-     intuitionistically, by adding a decidability condition.  (Contributed by
-     NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen, 30-Oct-2012.) $)
-  iman $p |- ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) $=
-    ( wi wn wa notnot imbi2i imnan bitri ) ABCABDZDZCAJEDBKABFGAJHI $.
-
-  $( Express conjunction in terms of implication.  Only the forward direction,
-     ~ annimim , is valid intuitionistically.  See ~ annimdc for a version
-     which holds intuitionistically, by adding a decidability condition.
-     (Contributed by NM, 2-Aug-1994.) $)
-  annim $p |- ( ( ph /\ -. ps ) <-> -. ( ph -> ps ) ) $=
-    ( wi wn wa iman con2bii ) ABCABDEABFG $.
-
-  $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
-     intuitionistically, although its converse, ~ pm2.53 , does.  See
-     ~ pm2.54dc for a version which holds intuitionistically, by restricting
-     itself to decidable propositions.  (Contributed by NM, 3-Jan-2005.) $)
-  pm2.54 $p |- ( ( -. ph -> ps ) -> ( ph \/ ps ) ) $=
-    ( wn wo notnot2 orc syl olc ja ) ACZBABDZJCAKAEABFGBAHI $.
-
-  $( Definition of 'or' in terms of negation and implication (classical).  See
-     ~ dfordc for a version which holds intuitionistically, by restricting
-     itself to decidable propositions.  Definition of [Margaris] p. 49.
-     (Contributed by NM, 31-Jan-2015.) $)
-  df-or $p |- ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) $=
-    ( wo wn wi pm2.53 pm2.54 impbii ) ABCADBEABFABGH $.
-
-  $( Implication in terms of disjunction.  Theorem *4.6 of [WhiteheadRussell]
-     p. 120.  See ~ imordc for a version which holds intuitionistically, by
-     restricting itself to decidable propositions.  (Contributed by NM,
-     5-Aug-1993.) $)
-  imor $p |- ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) $=
-    ( wi wn wo notnot imbi1i df-or bitr4i ) ABCADZDZBCJBEAKBAFGJBHI $.
-
-  ${
-    orri.1 $e |- ( -. ph -> ps ) $.
-    $( Infer implication from disjunction.  This is a classical, not an
-       intuitionistic, result.  See ~ pm2.54dc for a version which holds
-       intuitionistically, by restricting itself to decidable propositions.
-       (Contributed by NM, 11-Jun-1994.) $)
-    orri $p |- ( ph \/ ps ) $=
-      ( wo wn wi df-or mpbir ) ABDAEBFCABGH $.
-  $}
-
-  $( Classical definition of existential quantification.  This does not hold
-     intuitionistically, so it depends on ~ ax-3 for its proof.  Definition of
-     [Margaris] p. 49.  (Contributed by NM, 2-Feb-2015.)  (Revised by Mario
-     Carneiro, 12-May-2015.) $)
-  df-ex $p |- ( E. x ph <-> -. A. x -. ph ) $=
-    ( wn wal wex alnex con2bii ) ACBDABEABFG $.
-
-  $( Theorem 19.6 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
-  alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
-    ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
-
-  ${
-    mt3d.1 $e |- ( ph -> -. ch ) $.
-    mt3d.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( Modus tollens deduction.  (Contributed by NM, 26-Mar-1995.) $)
-    mt3d $p |- ( ph -> ps ) $=
-      ( wn con1d mpd ) ACFBDABCEGH $.
-  $}
-
-  ${
-    nsyl2.1 $e |- ( ph -> -. ps ) $.
-    nsyl2.2 $e |- ( -. ch -> ps ) $.
-    $( A negated syllogism inference.  (Contributed by NM, 26-Jun-1994.)
-       (Revised by NM, 19-Jun-2013.) $)
-    nsyl2 $p |- ( ph -> ch ) $=
-      ( wn wi a1i mt3d ) ACBDCFBGAEHI $.
-  $}
-
-  ${
-    con1i.a $e |- ( -. ph -> ps ) $.
-    $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.)  (Proof
-       shortened by O'Cat, 28-Nov-2008.)  (Proof shortened by Wolf Lammen,
-       19-Jun-2013.) $)
-    con1i $p |- ( -. ps -> ph ) $=
-      ( wn id nsyl2 ) BDZBAGECF $.
-  $}
-
-  ${
-    19.32.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.32 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-    19.32 $p |- ( A. x ( ph \/ ps ) <-> ( ph \/ A. x ps ) ) $=
-      ( wn wi wal wo hbn 19.21h df-or albii 3bitr4i ) AEZBFZCGNBCGZFABHZCGAPHNBC
-      ACDIJQOCABKLAPKM $.
-  $}
-
-  ${
-    19.31.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.31 of [Margaris] p. 90.  Only the reverse direction is valid
-       intuitionistically.  (Contributed by NM, 5-Aug-1993.) $)
-    19.31 $p |- ( A. x ( ph \/ ps ) <-> ( A. x ph \/ ps ) ) $=
-      ( wo wal 19.32 orcom albii 3bitr4i ) BAEZCFBACFZEABEZCFLBEBACDGMKCABHILBH
-      J $.
-  $}
-
-$(
-#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-Classical (not intuitionistic) results
-#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-$)
-
-  $( Theorem *4.52 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
-  pm4.52 $p |- ( ( ph /\ -. ps ) <-> -. ( -. ph \/ ps ) ) $=
-    ( wn wa wi wo annim imor xchbinx ) ABCDABEACBFABGABHI $.
-
-  $( Theorem *4.53 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.53 $p |- ( -. ( ph /\ -. ps ) <-> ( -. ph \/ ps ) ) $=
-    ( wn wo wa pm4.52 con2bii bicomi ) ACBDZABCEZCJIABFGH $.
-
-  $( Disjunction in terms of conjunction (DeMorgan's law).  Compare Theorem
-     *4.57 of [WhiteheadRussell] p. 120.  As an equivalence, this does not hold
-     intuitionistically, but it would be possible to prove the forward
-     direction.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
-     Salmon, 7-May-2011.) $)
-  oran $p |- ( ( ph \/ ps ) <-> -. ( -. ph /\ -. ps ) ) $=
-    ( wn wa wo pm4.56 con2bii ) ACBCDABEABFG $.
-
-  $( Theorem *4.57 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.57 $p |- ( -. ( -. ph /\ -. ps ) <-> ( ph \/ ps ) ) $=
-    ( wo wn wa oran bicomi ) ABCADBDEDABFG $.
-
-  $( Theorem *4.61 of [WhiteheadRussell] p. 120.  Only the reverse direction,
-     ~ annimim , is valid intuitionistically.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.61 $p |- ( -. ( ph -> ps ) <-> ( ph /\ -. ps ) ) $=
-    ( wn wa wi annim bicomi ) ABCDABECABFG $.
-
-  $( Theorem *4.65 of [WhiteheadRussell] p. 120.  The reverse direction is an
-     instance of ~ annimim .  (Contributed by NM, 3-Jan-2005.) $)
-  pm4.65 $p |- ( -. ( -. ph -> ps ) <-> ( -. ph /\ -. ps ) ) $=
-    ( wn pm4.61 ) ACBD $.
-
-  $( Implication distributes over disjunction.  Theorem *4.78 of
-     [WhiteheadRussell] p. 121.  We have an intuitionistic proof of one
-     direction at ~ pm4.78i .  (Contributed by NM, 3-Jan-2005.)  (Proof
-     shortened by Wolf Lammen, 19-Nov-2012.) $)
-  pm4.78 $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) <->
-                ( ph -> ( ps \/ ch ) ) ) $=
-    ( wn wo wi orordi imor orbi12i 3bitr4ri ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCG
-    ALHOMPNABHACHIJ $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
