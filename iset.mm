@@ -5816,7 +5816,14 @@ $)
 
      Our notation for decidability is a connective ` DECID ` which we place
      before the formula in question.  For example, ` DECID x = y ` corresponds
-     to "x = y is decidable".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
+     to "x = y is decidable".
+
+     We could transform intuitionistic logic to classical logic by adding
+     unconditional forms of ~ condc , ~ exmiddc , ~ peircedc , or ~ notnot2dc ,
+     any of which would correspond to the assertion that all propositions are
+     decidable.
+
+     (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   df-dc $a |- ( DECID ph <-> ( ph \/ -. ph ) ) $.
 
   $( Law of excluded middle, for a decidable proposition.  The law of the
@@ -5866,8 +5873,20 @@ $(
    This section is focused on such proofs, given decidability conditions.
 $)
 
-  $( Contraposition of a decidable proposition.  (Contributed by Jim Kingdon,
-     13-Mar-2018.) $)
+  $( Contraposition of a decidable proposition.
+
+     This theorem swaps or "transposes" the order of the consequents when
+     negation is removed.  An informal example is that the statement "if there
+     are no clouds in the sky, it is not raining" implies the statement "if it
+     is raining, there are clouds in the sky."  This theorem (without the
+     decidability condition, of course) is called _Transp_ or "the principle of
+     transposition" in _Principia Mathematica_ (Theorem *2.17 of
+     [WhiteheadRussell] p. 103) and is Axiom A3 of [Margaris] p. 49.  We will
+     also use the term "contraposition" for this principle, although the reader
+     is advised that in the field of philosophical logic, "contraposition" has
+     a different technical meaning.
+
+     (Contributed by Jim Kingdon, 13-Mar-2018.) $)
   condc $p |- ( DECID ph -> ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) ) $=
     ( wdc wn wo wi df-dc ax-1 a1d pm2.27 ax-in2 syl6 jaoi sylbi ) ACA
     ADZEOBDZFZBAFZFZAGASOARQABHIOQPROPJBAKLMN $.
@@ -26742,55 +26761,6 @@ $)
     wo eqtr4i ) ABCDEZFBGZUAHZAIZBJZABCFZABDFZEZABUAKUHUBCHZAIZBJZUBDHZAIZBJZEZ
     UEUFUKUGUNABCKABDKLUEUJUMSZBJUOUDUPBUDUIULSZAIUPUCUQAUBCDMNUIULAOPQUJUMBRTT
     T $.
-
-$(
-###############################################################################
-                            CLASSICAL LOGIC
-###############################################################################
-
-   There are a variety of theorems that only hold for decidable propositions,
-   for example ~ df-dc , ~ notnotdc , or ~ condc , and we have stated and
-   proved them for decidable propositions.
-
-   As a historical note, however, the Intuitionistic Logic Explorer originated
-   as a fork of the non-intuitionistic Metamath Proof Explorer, and the
-   project of adding decidability conditions everywhere they are needed (or
-   replacing non-intuitionistic proofs entirely) is not yet complete.
-
-   Therefore, this section also (for now) contains the non-intuitionistic
-   ~ ax-3 and additional theorems which rely on ~ ax-3 . As we replace
-   classical proofs with intuitionistic ones, remove classical proofs which
-   are unused and not especially important to contrast classical and
-   intuitionistic results, or add decidability conditions to make proofs not
-   rely on ~ ax-3 , we plan on reducing use of ~ ax-3 , moving ~ ax-3 still
-   later in the file, and eventually removing it entirely.
-$)
-
-$(
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                         Classical logic theorems
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
-
-  $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.
-
-     Unconditional form of ~ condc .  We state this as an axiom for the benefit
-     of theorems which have not yet been converted over to having appropriate
-     decidability conditions added.  We could also transform intuitionistic
-     logic to classical logic by adding unconditional forms of ~ exmiddc ,
-     ~ peircedc , or ~ notnot2dc .
-
-     This axiom swaps or "transposes" the order of the consequents when
-     negation is removed.  An informal example is that the statement "if there
-     are no clouds in the sky, it is not raining" implies the statement "if it
-     is raining, there are clouds in the sky."  This axiom is called _Transp_
-     or "the principle of transposition" in _Principia Mathematica_ (Theorem
-     *2.17 of [WhiteheadRussell] p. 103).  We will also use the term
-     "contraposition" for this principle, although the reader is advised that
-     in the field of philosophical logic, "contraposition" has a different
-     technical meaning.  (Contributed by NM, 5-Aug-1993.)
-     (New usage is discouraged.) $)
-  ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
