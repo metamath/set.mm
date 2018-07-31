@@ -26837,6 +26837,257 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           The empty set
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare the symbol for the empty or null set. $)
+  $c (/) $. $( null set $)
+
+  $( Extend class notation to include the empty set. $)
+  c0 $a class (/) $.
+
+  $( Define the empty set.  Special case of Exercise 4.10(o) of [Mendelson]
+     p. 231.  For a more traditional definition, but requiring a dummy
+     variable, see ~ dfnul2 .  (Contributed by NM, 5-Aug-1993.) $)
+  df-nul $a |- (/) = ( _V \ _V ) $.
+
+  $( Alternate definition of the empty set.  Definition 5.14 of [TakeutiZaring]
+     p. 20.  (Contributed by NM, 26-Dec-1996.) $)
+  dfnul2 $p |- (/) = { x | -. x = x } $=
+    ( cv wceq wn c0 wcel cvv cdif wa df-nul eleq2i eldif eqid pm3.24 2th 3bitri
+    con2bii abbi2i ) ABZSCZDZAESEFSGGHZFSGFZUCDIZUAEUBSJKSGGLTUDTUDDSMUCNOQPR
+    $.
+
+  $( Alternate definition of the empty set.  (Contributed by NM,
+     25-Mar-2004.) $)
+  dfnul3 $p |- (/) = { x e. A | -. x e. A } $=
+    ( weq wn cab cv wcel wa crab pm3.24 equid 2th con1bii dfnul2 df-rab 3eqtr4i
+    c0 abbii ) AACZDZAEAFBGZUADZHZAEQUBABITUCAUCSUCDSUAJAKLMRANUBABOP $.
+
+  $( The empty set has no elements.  Theorem 6.14 of [Quine] p. 44.
+     (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Mario Carneiro,
+     1-Sep-2015.) $)
+  noel $p |- -. A e. (/) $=
+    ( c0 wcel cvv cdif eldifi eldifn pm2.65i df-nul eleq2i mtbir ) ABCADDEZCZMA
+    DCADDFADDGHBLAIJK $.
+
+  $( If a set has elements, it is not empty.  (Contributed by NM,
+     31-Dec-1993.) $)
+  n0i $p |- ( B e. A -> -. A = (/) ) $=
+    ( c0 wceq wcel noel eleq2 mtbiri con2i ) ACDZBAEZJKBCEBFACBGHI $.
+
+  $( If a set has elements, it is not empty.  (Contributed by NM,
+     31-Dec-1993.) $)
+  ne0i $p |- ( B e. A -> A =/= (/) ) $=
+    ( wcel c0 n0i neneqad ) BACADABEF $.
+
+  $( The universal class is not equal to the empty set.  (Contributed by NM,
+     11-Sep-2008.) $)
+  vn0 $p |- _V =/= (/) $=
+    ( vx cv cvv wcel c0 wne vex ne0i ax-mp ) ABZCDCEFAGCJHI $.
+
+  ${
+    $d x y $.  $d y A $.
+    n0f.1 $e |- F/_ x A $.
+    $( A nonempty class has at least one element.  Proposition 5.17(1) of
+       [TakeutiZaring] p. 20.  This version of ~ n0 requires only that ` x `
+       not be free in, rather than not occur in, ` A ` .  (Contributed by NM,
+       17-Oct-2003.) $)
+    n0f $p |- ( A =/= (/) <-> E. x x e. A ) $=
+      ( c0 wne cv wcel wn wal wex wceq wb nfcv cleqf noel nbn bitr4i necon3abii
+      albii df-ex ) BDEAFZBGZHZAIZHUBAJUDBDBDKUBUADGZLZAIUDABDCADMNUCUFAUEUBUAO
+      PSQRUBATQ $.
+  $}
+
+  ${
+    $d x y A $.
+    $( A nonempty class has at least one element.  Proposition 5.17(1) of
+       [TakeutiZaring] p. 20.  (Contributed by NM, 29-Sep-2006.) $)
+    n0 $p |- ( A =/= (/) <-> E. x x e. A ) $=
+      ( nfcv n0f ) ABABCD $.
+
+    $( A nonempty class has at least one element.  Proposition 5.17(1) of
+       [TakeutiZaring] p. 20.  (Contributed by NM, 5-Aug-1993.) $)
+    neq0 $p |- ( -. A = (/) <-> E. x x e. A ) $=
+      ( c0 wceq wn wne cv wcel wex df-ne n0 bitr3i ) BCDEBCFAGBHAIBCJABKL $.
+  $}
+
+  ${
+    $d x A $.  $d x ph $.
+    reximdva0.1 $e |- ( ( ph /\ x e. A ) -> ps ) $.
+    $( Restricted existence deduced from non-empty class.  (Contributed by NM,
+       1-Feb-2012.) $)
+    reximdva0 $p |- ( ( ph /\ A =/= (/) ) -> E. x e. A ps ) $=
+      ( c0 wne wa cv wcel wex wrex n0 ex ancld eximdv imp sylan2b df-rex sylibr
+      ) ADFGZHCIDJZBHZCKZBCDLUAAUBCKZUDCDMAUEUDAUBUCCAUBBAUBBENOPQRBCDST $.
+  $}
+
+  ${
+    $d A x $.
+    $( A case of equivalence of "at most one" and "only one".  (Contributed by
+       FL, 6-Dec-2010.) $)
+    n0moeu $p |- ( A =/= (/) -> ( E* x x e. A <-> E! x x e. A ) ) $=
+      ( c0 wne cv wcel wmo wex wa weu n0 biimpi biantrurd eu5 syl6bbr ) BCDZAEB
+      FZAGZQAHZRIQAJPSRPSABKLMQANO $.
+  $}
+
+  $( Vacuous existential quantification is false.  (Contributed by NM,
+     15-Oct-2003.) $)
+  rex0 $p |- -. E. x e. (/) ph $=
+    ( c0 cv wcel wn noel pm2.21i nrex ) ABCBDZCEAFJGHI $.
+
+  ${
+    $d x A $.
+    $( The empty set has no elements.  Theorem 2 of [Suppes] p. 22.
+       (Contributed by NM, 29-Aug-1993.) $)
+    eq0 $p |- ( A = (/) <-> A. x -. x e. A ) $=
+      ( c0 wceq cv wcel wn wal wex neq0 df-ex bitri con4bii ) BCDZAEBFZGAHZNGOA
+      IPGABJOAKLM $.
+
+    $( The universe contains every set.  (Contributed by NM, 11-Sep-2006.) $)
+    eqv $p |- ( A = _V <-> A. x x e. A ) $=
+      ( cvv wceq cv wcel wb wal dfcleq vex tbt albii bitr4i ) BCDAEZBFZNCFZGZAH
+      OAHABCIOQAPOAJKLM $.
+  $}
+
+  ${
+    $d x A $.  $d x y $.
+    $( Membership of the empty set in another class.  (Contributed by NM,
+       29-Jun-2004.) $)
+    0el $p |- ( (/) e. A <-> E. x e. A A. y -. y e. x ) $=
+      ( c0 wcel cv wceq wrex wn wal risset eq0 rexbii bitri ) DCEAFZDGZACHBFOEI
+      BJZACHADCKPQACBOLMN $.
+  $}
+
+  ${
+    $d x ph $.
+    $( The class builder of a wff not containing the abstraction variable is
+       either the universal class or the empty set.  (Contributed by Mario
+       Carneiro, 29-Aug-2013.) $)
+    abvor0 $p |- ( { x | ph } = _V \/ { x | ph } = (/) ) $=
+      ( cab cvv wceq c0 wn cv wcel vex a1i 2thd abbi1dv con3i noel 2falsed orri
+      id syl ) ABCZDEZTFEZUAGAGZUBAUAAABDAABHZDIZARUEABJKLMNUCABFUCAUDFIZUCRUFG
+      UCUDOKPMSQ $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.
+    $( Nonempty class abstraction.  (Contributed by NM, 26-Dec-1996.)  (Proof
+       shortened by Mario Carneiro, 11-Nov-2016.) $)
+    abn0 $p |- ( { x | ph } =/= (/) <-> E. x ph ) $=
+      ( cab c0 wne cv wcel wex nfab1 n0f abid exbii bitri ) ABCZDEBFNGZBHABHBNA
+      BIJOABABKLM $.
+  $}
+
+  $( Non-empty restricted class abstraction.  (Contributed by NM,
+     29-Aug-1999.) $)
+  rabn0 $p |- ( { x e. A | ph } =/= (/) <-> E. x e. A ph ) $=
+    ( cv wcel wa cab c0 wne wex crab wrex abn0 df-rab neeq1i df-rex 3bitr4i ) B
+    DCEAFZBGZHIRBJABCKZHIABCLRBMTSHABCNOABCPQ $.
+
+  $( Any restricted class abstraction restricted to the empty set is empty.
+     (Contributed by NM, 15-Oct-2003.)  (Proof shortened by Andrew Salmon,
+     26-Jun-2011.) $)
+  rab0 $p |- { x e. (/) | ph } = (/) $=
+    ( cv c0 wcel wa cab weq wn crab equid noel intnanr 2th con2bii abbii df-rab
+    dfnul2 3eqtr4i ) BCZDEZAFZBGBBHZIZBGABDJDUBUDBUCUBUCUBIBKUAATLMNOPABDQBRS
+    $.
+
+  $( Condition for a restricted class abstraction to be empty.  (Contributed by
+     Jeff Madsen, 7-Jun-2010.) $)
+  rabeq0 $p |- ( { x e. A | ph } = (/) <-> A. x e. A -. ph ) $=
+    ( wn wral wrex crab c0 wceq ralnex rabn0 necon1bbii bitr2i ) ADBCEABCFZDABC
+    GZHIABCJNOHABCKLM $.
+
+  ${
+    $d A x $.
+    $( Law of excluded middle, in terms of restricted class abstractions.
+       (Contributed by Jeff Madsen, 20-Jun-2011.) $)
+    rabxm $p |- A = ( { x e. A | ph } u. { x e. A | -. ph } ) $=
+      ( wn wo crab cun wceq rabid2 cv wcel exmidd mprgbir unrab eqtr4i ) CAADZE
+      ZBCFZABCFPBCFGCRHQBCQBCIBJCKALMAPBCNO $.
+
+    $( Law of noncontradiction, in terms of restricted class abstractions.
+       (Contributed by Jeff Madsen, 20-Jun-2011.) $)
+    rabnc $p |- ( { x e. A | ph } i^i { x e. A | -. ph } ) = (/) $=
+      ( crab wn cin wa c0 inrab wceq rabeq0 cv wcel pm3.24 a1i mprgbir eqtri )
+      ABCDAEZBCDFARGZBCDZHARBCITHJSEZBCSBCKUABLCMANOPQ $.
+  $}
+
+  ${
+    $d x A $.
+    $( The union of a class with the empty set is itself.  Theorem 24 of
+       [Suppes] p. 27.  (Contributed by NM, 5-Aug-1993.) $)
+    un0 $p |- ( A u. (/) ) = A $=
+      ( vx c0 cv wcel wo noel biorfi bicomi uneqri ) BACABDZAEZLKCEZFMLKGHIJ $.
+
+    $( The intersection of a class with the empty set is the empty set.
+       Theorem 16 of [Suppes] p. 26.  (Contributed by NM, 5-Aug-1993.) $)
+    in0 $p |- ( A i^i (/) ) = (/) $=
+      ( vx c0 cv wcel wa noel bianfi bicomi ineqri ) BACCBDZCEZKAEZLFLMKGHIJ $.
+  $}
+
+  $( The intersection of a class with the universal class is itself.  Exercise
+     4.10(k) of [Mendelson] p. 231.  (Contributed by NM, 17-May-1998.) $)
+  inv1 $p |- ( A i^i _V ) = A $=
+    ( cvv cin inss1 ssid ssv ssini eqssi ) ABCAABDAABAEAFGH $.
+
+  $( The union of a class with the universal class is the universal class.
+     Exercise 4.10(l) of [Mendelson] p. 231.  (Contributed by NM,
+     17-May-1998.) $)
+  unv $p |- ( A u. _V ) = _V $=
+    ( cvv cun ssv ssun2 eqssi ) ABCZBGDBAEF $.
+
+  ${
+    $d A x $.
+    $( The null set is a subset of any class.  Part of Exercise 1 of
+       [TakeutiZaring] p. 22.  (Contributed by NM, 5-Aug-1993.) $)
+    0ss $p |- (/) C_ A $=
+      ( vx c0 cv wcel noel pm2.21i ssriv ) BCABDZCEIAEIFGH $.
+  $}
+
+  $( Any subset of the empty set is empty.  Theorem 5 of [Suppes] p. 23 and its
+     converse.  (Contributed by NM, 17-Sep-2003.) $)
+  ss0b $p |- ( A C_ (/) <-> A = (/) ) $=
+    ( c0 wceq wss 0ss eqss mpbiran2 bicomi ) ABCZABDZIJBADAEABFGH $.
+
+  $( Any subset of the empty set is empty.  Theorem 5 of [Suppes] p. 23.
+     (Contributed by NM, 13-Aug-1994.) $)
+  ss0 $p |- ( A C_ (/) -> A = (/) ) $=
+    ( c0 wss wceq ss0b biimpi ) ABCABDAEF $.
+
+  $( A subclass of an empty class is empty.  (Contributed by NM, 7-Mar-2007.)
+     (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+  sseq0 $p |- ( ( A C_ B /\ B = (/) ) -> A = (/) ) $=
+    ( c0 wceq wss sseq2 ss0 syl6bi impcom ) BCDZABEZACDZJKACELBCAFAGHI $.
+
+  $( A class with a nonempty subclass is nonempty.  (Contributed by NM,
+     17-Feb-2007.) $)
+  ssn0 $p |- ( ( A C_ B /\ A =/= (/) ) -> B =/= (/) ) $=
+    ( wss c0 wne wceq sseq0 ex necon3d imp ) ABCZADEBDEKBDADKBDFADFABGHIJ $.
+
+  ${
+    abf.1 $e |- -. ph $.
+    $( A class builder with a false argument is empty.  (Contributed by NM,
+       20-Jan-2012.) $)
+    abf $p |- { x | ph } = (/) $=
+      ( cab c0 wss wceq cv wcel pm2.21i abssi ss0 ax-mp ) ABDZEFNEGABEABHEICJKN
+      LM $.
+  $}
+
+  ${
+    $d x A $.  $d x ph $.
+    eq0rdv.1 $e |- ( ph -> -. x e. A ) $.
+    $( Deduction rule for equality to the empty set.  (Contributed by NM,
+       11-Jul-2014.) $)
+    eq0rdv $p |- ( ph -> A = (/) ) $=
+      ( c0 wss wceq cv wcel pm2.21d ssrdv ss0 syl ) ACEFCEGABCEABHZCINEIDJKCLM
+      $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -27389,6 +27640,13 @@ htmldef "C." as
   althtmldef "C." as ' &sub; ';
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "C." as "\subset";
+htmldef "(/)" as
+    "<IMG SRC='varnothing.gif' WIDTH=11 HEIGHT=19 ALT=' (/)' TITLE='(/)'>";
+  althtmldef "(/)" as '&empty;';
+    /*althtmldef "(/)" as '&empty;';*/ /* =&#8709 */ /* bad in Opera */
+    /*althtmldef "(/)" as '&#8960;';*/
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "(/)" as "\varnothing";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
