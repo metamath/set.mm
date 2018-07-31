@@ -26856,9 +26856,9 @@ $)
   $( Alternate definition of the empty set.  Definition 5.14 of [TakeutiZaring]
      p. 20.  (Contributed by NM, 26-Dec-1996.) $)
   dfnul2 $p |- (/) = { x | -. x = x } $=
-    ( cv wceq wn c0 wcel cvv cdif wa df-nul eleq2i eldif eqid pm3.24 2th 3bitri
-    con2bii abbi2i ) ABZSCZDZAESEFSGGHZFSGFZUCDIZUAEUBSJKSGGLTUDTUDDSMUCNOQPR
-    $.
+    ( cv wceq wn c0 wcel cvv cdif wa df-nul eleq2i eldif eqid notnoti
+    pm3.24 2false 3bitri abbi2i ) ABZSCZDZAESEFSGGHZFSGFZUCDIZUAEUBSJ
+    KSGGLUDUAUCOTSMNPQR $.
 
   $( Alternate definition of the empty set.  (Contributed by NM,
      25-Mar-2004.) $)
