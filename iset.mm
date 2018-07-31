@@ -26863,8 +26863,8 @@ $)
   $( Alternate definition of the empty set.  (Contributed by NM,
      25-Mar-2004.) $)
   dfnul3 $p |- (/) = { x e. A | -. x e. A } $=
-    ( weq wn cab cv wcel wa crab pm3.24 equid 2th con1bii dfnul2 df-rab 3eqtr4i
-    c0 abbii ) AACZDZAEAFBGZUADZHZAEQUBABITUCAUCSUCDSUAJAKLMRANUBABOP $.
+    ( weq wn cv wcel wa c0 crab equid notnoti pm3.24 2false abbii dfnul2 df-rab
+    cab 3eqtr4i ) AACZDZAQAEBFZUADZGZAQHUBABITUCATUCSAJKUALMNAOUBABPR $.
 
   $( The empty set has no elements.  Theorem 6.14 of [Quine] p. 44.
      (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Mario Carneiro,
