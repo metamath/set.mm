@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Jul-2018
+$( iset.mm - Version of 31-Jul-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -26890,28 +26890,31 @@ $)
 
   ${
     $d x y $.  $d y A $.
-    n0f.1 $e |- F/_ x A $.
-    $( A nonempty class has at least one element.  Proposition 5.17(1) of
-       [TakeutiZaring] p. 20.  This version of ~ n0 requires only that ` x `
-       not be free in, rather than not occur in, ` A ` .  (Contributed by NM,
-       17-Oct-2003.) $)
-    n0f $p |- ( A =/= (/) <-> E. x x e. A ) $=
-      ( c0 wne cv wcel wn wal wex wceq wb nfcv cleqf noel nbn bitr4i necon3abii
-      albii df-ex ) BDEAFZBGZHZAIZHUBAJUDBDBDKUBUADGZLZAIUDABDCADMNUCUFAUEUBUAO
-      PSQRUBATQ $.
+    n0rf.1 $e |- F/_ x A $.
+    $( An inhabited class is nonempty.  Following the Definition of [Bauer],
+       p. 483, we call a class ` A ` nonempty if ` A =/= (/) ` and inhabited if
+       it has at least one element.  In classical logic these two concepts are
+       equivalent, for example see Proposition 5.17(1) of [TakeutiZaring]
+       p. 20.  This version of ~ n0r requires only that ` x ` not be free in,
+       rather than not occur in, ` A ` .  (Contributed by Jim Kingdon,
+       31-Jul-2018.) $)
+    n0rf $p |- ( E. x x e. A -> A =/= (/) ) $=
+      ( cv wcel wex wn wal c0 wne exalim wceq wb nfcv cleqf nbn albii
+      noel bitr4i necon3abii sylibr ) ADZBEZAFUCGZAHZGBIJUCAKUEBIBILU
+      CUBIEZMZAHUEABICAINOUDUGAUFUCUBRPQSTUA $.
   $}
 
   ${
     $d x y A $.
-    $( A nonempty class has at least one element.  Proposition 5.17(1) of
-       [TakeutiZaring] p. 20.  (Contributed by NM, 29-Sep-2006.) $)
-    n0 $p |- ( A =/= (/) <-> E. x x e. A ) $=
-      ( nfcv n0f ) ABABCD $.
+    $( An inhabited class is nonempty.  See ~ n0rf for more discussion.
+       (Contributed by Jim Kingdon, 31-Jul-2018.) $)
+    n0r $p |- ( E. x x e. A -> A =/= (/) ) $=
+      ( nfcv n0rf ) ABABCD $.
 
-    $( A nonempty class has at least one element.  Proposition 5.17(1) of
-       [TakeutiZaring] p. 20.  (Contributed by NM, 5-Aug-1993.) $)
-    neq0 $p |- ( -. A = (/) <-> E. x x e. A ) $=
-      ( c0 wceq wn wne cv wcel wex df-ne n0 bitr3i ) BCDEBCFAGBHAIBCJABKL $.
+    $( An inhabited class is nonempty.  See ~ n0rf for more discussion.
+       (Contributed by Jim Kingdon, 31-Jul-2018.) $)
+    neq0r $p |- ( E. x x e. A -> -. A = (/) ) $=
+      ( cv wcel wex c0 n0r neneqd ) ACBDAEBFABGH $.
   $}
 
   ${
