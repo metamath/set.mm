@@ -26929,11 +26929,11 @@ $)
 
   ${
     $d A x $.
-    $( A case of equivalence of "at most one" and "only one".  (Contributed by
-       FL, 6-Dec-2010.) $)
-    n0moeu $p |- ( A =/= (/) -> ( E* x x e. A <-> E! x x e. A ) ) $=
-      ( c0 wne cv wcel wmo wex wa weu n0 biimpi biantrurd eu5 syl6bbr ) BCDZAEB
-      FZAGZQAHZRIQAJPSRPSABKLMQANO $.
+    $( A case of equivalence of "at most one" and "only one".  If a class is
+       inhabited, that class having at most one element is equivalent to it
+       having only one element.  (Contributed by Jim Kingdon, 31-Jul-2018.) $)
+    n0mmoeu $p |- ( E. x x e. A -> ( E* x x e. A <-> E! x x e. A ) ) $=
+      ( cv wcel exmoeu2 ) ACBDAE $.
   $}
 
   $( Vacuous existential quantification is false.  (Contributed by NM,
