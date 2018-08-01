@@ -1,4 +1,4 @@
-$( iset.mm - Version of 31-Jul-2018
+$( iset.mm - Version of 1-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -26966,13 +26966,13 @@ $)
 
   ${
     $d x ph $.
-    $( The class builder of a wff not containing the abstraction variable is
-       either the universal class or the empty set.  (Contributed by Mario
-       Carneiro, 29-Aug-2013.) $)
-    abvor0 $p |- ( { x | ph } = _V \/ { x | ph } = (/) ) $=
-      ( cab cvv wceq c0 wn cv wcel vex a1i 2thd abbi1dv con3i noel 2falsed orri
-      id syl ) ABCZDEZTFEZUAGAGZUBAUAAABDAABHZDIZARUEABJKLMNUCABFUCAUDFIZUCRUFG
-      UCUDOKPMSQ $.
+    $( The class builder of a decidable proposition not containing the
+       abstraction variable is either the universal class or the empty set.
+       (Contributed by Jim Kingdon, 1-Aug-2018.) $)
+    abvor0dc $p |- ( DECID ph -> ( { x | ph } = _V \/ { x | ph } = (/) ) ) $=
+      ( wdc wn wo cab cvv wceq c0 df-dc cv wcel id vex a1i 2thd abbi1dv
+      noel 2falsed orim12i sylbi ) ACAADZEABFZGHZUCIHZEAJAUDUBUEAABGAAB
+      KZGLZAMUGABNOPQUBABIUBAUFILZUBMUHDUBUFROSQTUA $.
   $}
 
   ${
