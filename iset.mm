@@ -26946,8 +26946,8 @@ $)
     $( The empty set has no elements.  Theorem 2 of [Suppes] p. 22.
        (Contributed by NM, 29-Aug-1993.) $)
     eq0 $p |- ( A = (/) <-> A. x -. x e. A ) $=
-      ( c0 wceq cv wcel wn wal wex neq0 df-ex bitri con4bii ) BCDZAEBFZGAHZNGOA
-      IPGABJOAKLM $.
+      ( c0 wceq cv wcel wb wal wn nfcv cleqf noel nbn albii bitr4i )
+      BCDAEZBFZPCFZGZAHQIZAHABCABJACJKTSARQPLMNO $.
 
     $( The universe contains every set.  (Contributed by NM, 11-Sep-2006.) $)
     eqv $p |- ( A = _V <-> A. x x e. A ) $=
