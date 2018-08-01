@@ -26919,12 +26919,12 @@ $)
 
   ${
     $d x A $.  $d x ph $.
-    reximdva0.1 $e |- ( ( ph /\ x e. A ) -> ps ) $.
-    $( Restricted existence deduced from non-empty class.  (Contributed by NM,
-       1-Feb-2012.) $)
-    reximdva0 $p |- ( ( ph /\ A =/= (/) ) -> E. x e. A ps ) $=
-      ( c0 wne wa cv wcel wex wrex n0 ex ancld eximdv imp sylan2b df-rex sylibr
-      ) ADFGZHCIDJZBHZCKZBCDLUAAUBCKZUDCDMAUEUDAUBUCCAUBBAUBBENOPQRBCDST $.
+    reximdva0m.1 $e |- ( ( ph /\ x e. A ) -> ps ) $.
+    $( Restricted existence deduced from inhabited class.  (Contributed by Jim
+       Kingdon, 31-Jul-2018.) $)
+    reximdva0m $p |- ( ( ph /\ E. x x e. A ) -> E. x e. A ps ) $=
+      ( cv wcel wex wa wrex ex ancld eximdv imp df-rex sylibr ) ACFDG
+      ZCHZIQBIZCHZBCDJARTAQSCAQBAQBEKLMNBCDOP $.
   $}
 
   ${
