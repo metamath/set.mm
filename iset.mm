@@ -26976,12 +26976,11 @@ $)
   $}
 
   ${
-    $d x y $.  $d y ph $.
-    $( Nonempty class abstraction.  (Contributed by NM, 26-Dec-1996.)  (Proof
-       shortened by Mario Carneiro, 11-Nov-2016.) $)
-    abn0 $p |- ( { x | ph } =/= (/) <-> E. x ph ) $=
-      ( cab c0 wne cv wcel wex nfab1 n0f abid exbii bitri ) ABCZDEBFNGZBHABHBNA
-      BIJOABABKLM $.
+    $( Nonempty class abstraction.  (Contributed by Jim Kingdon,
+       1-Aug-2018.) $)
+    abn0r $p |- ( E. x ph -> { x | ph } =/= (/) ) $=
+      ( wex cv cab wcel c0 wne abid exbii nfab1 n0rf sylbir ) ABCBDABEZ
+      FZBCNGHOABABIJBNABKLM $.
   $}
 
   $( Non-empty restricted class abstraction.  (Contributed by NM,
