@@ -1,4 +1,4 @@
-$( iset.mm - Version of 1-Aug-2018
+$( iset.mm - Version of 2-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -27012,11 +27012,13 @@ $)
 
   ${
     $d A x $.
-    $( Law of excluded middle, in terms of restricted class abstractions.
-       (Contributed by Jeff Madsen, 20-Jun-2011.) $)
-    rabxm $p |- A = ( { x e. A | ph } u. { x e. A | -. ph } ) $=
-      ( wn wo crab cun wceq rabid2 cv wcel exmidd mprgbir unrab eqtr4i ) CAADZE
-      ZBCFZABCFPBCFGCRHQBCQBCIBJCKALMAPBCNO $.
+    $( Law of excluded middle given decidability, in terms of restricted class
+       abstractions.  (Contributed by Jim Kingdon, 2-Aug-2018.) $)
+    rabxmdc $p |- ( A. x DECID ph ->
+        A = ( { x e. A | ph } u. { x e. A | -. ph } ) ) $=
+      ( wdc wal wn wo crab cun wral wceq cv wi exmiddc a1d alimi df-ral
+      wcel sylibr rabid2 unrab syl6eqr ) ADZBEZCAAFZGZBCHZABCHUEBCHIUDU
+      FBCJZCUGKUDBLCRZUFMZBEUHUCUJBUCUFUIANOPUFBCQSUFBCTSAUEBCUAUB $.
 
     $( Law of noncontradiction, in terms of restricted class abstractions.
        (Contributed by Jeff Madsen, 20-Jun-2011.) $)
