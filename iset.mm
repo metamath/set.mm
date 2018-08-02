@@ -26983,11 +26983,11 @@ $)
       FZBCNGHOABABIJBNABKLM $.
   $}
 
-  $( Non-empty restricted class abstraction.  (Contributed by NM,
-     29-Aug-1999.) $)
-  rabn0 $p |- ( { x e. A | ph } =/= (/) <-> E. x e. A ph ) $=
-    ( cv wcel wa cab c0 wne wex crab wrex abn0 df-rab neeq1i df-rex 3bitr4i ) B
-    DCEAFZBGZHIRBJABCKZHIABCLRBMTSHABCNOABCPQ $.
+  $( Non-empty restricted class abstraction.  (Contributed by Jim Kingdon,
+     1-Aug-2018.) $)
+  rabn0r $p |- ( E. x e. A ph -> { x e. A | ph } =/= (/) ) $=
+    ( cv wcel wa wex cab c0 wne wrex crab abn0r df-rex df-rab 3imtr4i
+    neeq1i ) BDCEAFZBGRBHZIJABCKABCLZIJRBMABCNTSIABCOQP $.
 
   $( Any restricted class abstraction restricted to the empty set is empty.
      (Contributed by NM, 15-Oct-2003.)  (Proof shortened by Andrew Salmon,
