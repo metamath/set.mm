@@ -26993,9 +26993,9 @@ $)
      (Contributed by NM, 15-Oct-2003.)  (Proof shortened by Andrew Salmon,
      26-Jun-2011.) $)
   rab0 $p |- { x e. (/) | ph } = (/) $=
-    ( cv c0 wcel wa cab weq wn crab equid noel intnanr 2th con2bii abbii df-rab
-    dfnul2 3eqtr4i ) BCZDEZAFZBGBBHZIZBGABDJDUBUDBUCUBUCUBIBKUAATLMNOPABDQBRS
-    $.
+    ( cv c0 wcel wa cab wceq wn crab noel intnanr equid notnoti abbii
+    2false df-rab dfnul2 3eqtr4i ) BCZDEZAFZBGTTHZIZBGABDJDUBUDBUBUDU
+    AATKLUCBMNPOABDQBRS $.
 
   $( Condition for a restricted class abstraction to be empty.  (Contributed by
      Jeff Madsen, 7-Jun-2010.) $)
