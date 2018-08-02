@@ -26997,11 +26997,18 @@ $)
     2false df-rab dfnul2 3eqtr4i ) BCZDEZAFZBGTTHZIZBGABDJDUBUDBUBUDU
     AATKLUCBMNPOABDQBRS $.
 
-  $( Condition for a restricted class abstraction to be empty.  (Contributed by
-     Jeff Madsen, 7-Jun-2010.) $)
-  rabeq0 $p |- ( { x e. A | ph } = (/) <-> A. x e. A -. ph ) $=
-    ( wn wral wrex crab c0 wceq ralnex rabn0 necon1bbii bitr2i ) ADBCEABCFZDABC
-    GZHIABCJNOHABCKLM $.
+  ${
+    $d x y $.  $d A y $.  $d ph y $.
+
+    $( Condition for a restricted class abstraction to be empty.  (Contributed
+       by Jeff Madsen, 7-Jun-2010.) $)
+    rabeq0 $p |- ( { x e. A | ph } = (/) <-> A. x e. A -. ph ) $=
+      ( vy cv wcel wn wi wal wa wral crab wceq imnan albii df-ral bitri
+      c0 wsb 3bitr4ri sbn nfv sb8 eq0 cab df-rab eleq2i df-clab notbii
+      ) BECFZAGZHZBIUJAJZGZBIZUKBCKABCLZRMZULUNBUJANOUKBCPUNBDSZDIUMBDS
+      ZGZDIZUOUQURUTDUMBDUAOUNBDUNDUBUCUQDEZUPFZGZDIVADUPUDVDUTDVCUSVCV
+      BUMBUEZFUSUPVEVBABCUFUGUMDBUHQUIOQTT $.
+  $}
 
   ${
     $d A x $.
