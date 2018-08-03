@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Aug-2018
+$( iset.mm - Version of 3-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -27259,18 +27259,19 @@ $)
 
   ${
     $d x A $.  $d x B $.
-    $( Subclass expressed in terms of difference.  Exercise 7 of
-       [TakeutiZaring] p. 22.  (Contributed by NM, 29-Apr-1994.) $)
-    ssdif0 $p |- ( A C_ B <-> ( A \ B ) = (/) ) $=
-      ( vx cv wcel wi wal cdif wn wss c0 wceq wa eldif xchbinxr albii dfss2 eq0
-      iman 3bitr4i ) CDZAEZUABEZFZCGUAABHZEZIZCGABJUEKLUDUGCUDUBUCIMUFUBUCSUAAB
-      NOPCABQCUERT $.
+    $( Subclass implies empty difference.  One direction of Exercise 7 of
+       [TakeutiZaring] p. 22.  In classical logic this would be an
+       equivalence.  (Contributed by Jim Kingdon, 2-Aug-2018.) $)
+    ssdif0im $p |- ( A C_ B -> ( A \ B ) = (/) ) $=
+      ( vx cv wcel wi wal cdif wn c0 wceq wa imanim eldif sylnibr alimi
+      wss dfss2 eq0 3imtr4i ) CDZAEZUABEZFZCGUAABHZEZIZCGABQUEJKUDUGCUD
+      UBUCILUFUBUCMUAABNOPCABRCUEST $.
   $}
 
   $( Universal class equality in terms of empty difference.  (Contributed by
-     NM, 17-Sep-2003.) $)
-  vdif0 $p |- ( A = _V <-> ( _V \ A ) = (/) ) $=
-    ( cvv wceq wss cdif c0 vss ssdif0 bitr3i ) ABCBADBAEFCAGBAHI $.
+     Jim Kingdon, 3-Aug-2018.) $)
+  vdif0im $p |- ( A = _V -> ( _V \ A ) = (/) ) $=
+    ( cvv wceq wss cdif c0 vss ssdif0im sylbir ) ABCBADBAEFCAGBAHI $.
 
   ${
     $d V x $.
