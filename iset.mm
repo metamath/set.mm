@@ -27185,11 +27185,11 @@ $)
   disj2 $p |- ( ( A i^i B ) = (/) <-> A C_ ( _V \ B ) ) $=
     ( cvv wss cin c0 wceq cdif wb ssv reldisj ax-mp ) ACDABEFGACBHDIAJABCKL $.
 
-  $( Two ways of saying that two classes are disjoint.  (Contributed by NM,
-     21-Mar-2004.) $)
-  disj4 $p |- ( ( A i^i B ) = (/) <-> -. ( A \ B ) C. A ) $=
-    ( cin c0 wceq cdif wpss disj3 eqcom wss difss dfpss2 mpbiran con2bii 3bitri
-    wn ) ABCDEAABFZEQAEZQAGZPABHAQISRSQAJRPABKQALMNO $.
+  $( A consequence of two classes being disjoint.  In classical logic this
+     would be a biconditional.  (Contributed by Jim Kingdon, 2-Aug-2018.) $)
+  disj4im $p |- ( ( A i^i B ) = (/) -> -. ( A \ B ) C. A ) $=
+    ( cin c0 wceq cdif wpss wn disj3 eqcom bitri wss dfpss2 simprbi con2i sylbi
+    ) ABCDEZABFZAEZRAGZHQARESABIARJKTSTRALSHRAMNOP $.
 
   $( Intersection with a subclass of a disjoint class.  (Contributed by FL,
      24-Jan-2007.) $)
