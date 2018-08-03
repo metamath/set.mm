@@ -27278,11 +27278,11 @@ $)
     $( If the difference between the restricting class of a restricted class
        abstraction and the restricted class abstraction is empty, the
        restricting class is equal to this restricted class abstraction.
-       (Contributed by Alexander van der Vekens, 31-Dec-2017.) $)
-    difrab0eq $p |- ( ( V \ { x e. V | ph } ) = (/)
-                      <-> V = { x e. V | ph } ) $=
-      ( crab cdif c0 wceq wss ssdif0 ssrabeq bitr3i ) CABCDZEFGCLHCLGCLIABCJK
-      $.
+       (Contributed by Jim Kingdon, 3-Aug-2018.) $)
+    difrab0eqim $p |-
+        ( V = { x e. V | ph } -> ( V \ { x e. V | ph } ) = (/) ) $=
+      ( crab wceq wss cdif c0 ssrabeq ssdif0im sylbir ) CABCDZECLFCLGHE
+      ABCICLJK $.
   $}
 
   $( A proper subclass has a nonempty difference.  (Contributed by NM,
