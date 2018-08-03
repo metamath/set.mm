@@ -27219,11 +27219,11 @@ $)
     ( cin c0 wceq wa cun un00 indi eqeq1i bitr4i ) ABDZEFACDZEFGMNHZEFABCHDZEFM
     NIPOEABCJKL $.
 
-  $( Subclass expressed in terms of intersection with difference from the
-     universal class.  (Contributed by NM, 17-Sep-2003.) $)
-  ssindif0 $p |- ( A C_ B <-> ( A i^i ( _V \ B ) ) = (/) ) $=
-    ( cvv cdif cin c0 wceq wss disj2 ddif sseq2i bitr2i ) ACBDZEFGACMDZHABHAMIN
-    BABJKL $.
+  $( Subclass implies empty intersection with difference from the universal
+     class.  (Contributed by NM, 17-Sep-2003.) $)
+  ssindif0im $p |- ( A C_ B -> ( A i^i ( _V \ B ) ) = (/) ) $=
+    ( wss cvv cdif cin c0 wceq ddifss sstr mpan2 disj2 sylibr ) ABCZA
+    DDBEZEZCZAOFGHNBPCQBIABPJKAOLM $.
 
   $( The intersection of classes with a common member is nonempty.
      (Contributed by NM, 7-Apr-1994.) $)
