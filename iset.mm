@@ -27120,8 +27120,8 @@ $)
   $( No set is a proper subset of the empty set.  (Contributed by NM,
      17-Jun-1998.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
   npss0 $p |- -. A C. (/) $=
-    ( c0 wpss wss wn wa wi 0ss a1i iman mpbi dfpss3 mtbir ) ABCABDZBADZEFZNOGPE
-    ONAHINOJKABLM $.
+    ( c0 wpss wss wn wa wi 0ss a1i imanim ax-mp dfpss3 mtbir ) ABCABD
+    ZBADZEFZNOGPEONAHINOJKABLM $.
 
   $( Any non-universal class is a proper subclass of the universal class.
      (Contributed by NM, 17-May-1998.) $)
