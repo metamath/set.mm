@@ -6841,6 +6841,11 @@ $)
       ( wa wn simpr pm2.24i pm5.21ni ) CBEBAFCBGABDHI $.
   $}
 
+  $( One direction of Theorem *4.42 of [WhiteheadRussell] p. 119.  (Contributed
+     by Jim Kingdon, 4-Aug-2018.) $)
+  pm4.42r $p |- ( ( ( ph /\ ps ) \/ ( ph /\ -. ps ) ) -> ph ) $=
+    ( wa wn ax-ia1 jaoi ) ABCAABDZCABEAGEF $.
+
   ${
     ninba.1 $e |- ph $.
     $( Miscellaneous inference relating falsehoods.  (Contributed by NM,
