@@ -27347,7 +27347,8 @@ $)
   $( A class and its relative complement are disjoint.  Theorem 38 of [Suppes]
      p. 29.  (Contributed by NM, 24-Mar-1998.) $)
   disjdif $p |- ( A i^i ( B \ A ) ) = (/) $=
-    ( cin wss cdif c0 wceq inss1 inssdif0 mpbi ) ABCADABAECFGABHABAIJ $.
+    ( cin wss cdif c0 wceq inss1 inssdif0im ax-mp ) ABCADABAECFGABHAB
+    AIJ $.
 
   $( The difference of a class from its intersection is empty.  Theorem 37 of
      [Suppes] p. 29.  (Contributed by NM, 17-Aug-2004.)  (Proof shortened by
