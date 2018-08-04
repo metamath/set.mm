@@ -27354,7 +27354,7 @@ $)
      [Suppes] p. 29.  (Contributed by NM, 17-Aug-2004.)  (Proof shortened by
      Andrew Salmon, 26-Jun-2011.) $)
   difin0 $p |- ( ( A i^i B ) \ B ) = (/) $=
-    ( cin wss cdif c0 wceq inss2 ssdif0 mpbi ) ABCZBDKBEFGABHKBIJ $.
+    ( cin wss cdif c0 wceq inss2 ssdif0im ax-mp ) ABCZBDKBEFGABHKBIJ $.
 
   $( The union of a class and its complement is the universe.  Theorem 5.1(5)
      of [Stoll] p. 17.  (Contributed by NM, 17-Aug-2004.) $)
