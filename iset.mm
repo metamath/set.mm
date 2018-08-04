@@ -27370,8 +27370,7 @@ $)
 
   $( Absorption of difference by union.  (Contributed by NM, 18-Aug-2013.) $)
   undifabs $p |- ( A u. ( A \ B ) ) = A $=
-    ( cdif cun undif3 unidm difeq1i difdif 3eqtri ) AABCDAADZBACZCAKCAAABEJAKAF
-    GABHI $.
+    ( cdif cun ssid difss unssi ssun1 eqssi ) AABCZDAAJAAEABFGAJHI $.
 
   ${
     $d x A $.  $d x B $.
