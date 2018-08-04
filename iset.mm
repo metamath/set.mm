@@ -27320,7 +27320,7 @@ $)
      5.15 of [TakeutiZaring] p. 20.  Also Theorem 32 of [Suppes] p. 28.
      (Contributed by NM, 22-Apr-2004.) $)
   difid $p |- ( A \ A ) = (/) $=
-    ( wss cdif c0 wceq ssid ssdif0 mpbi ) AABAACDEAFAAGH $.
+    ( wss cdif c0 wceq ssid ssdif0im ax-mp ) AABAACDEAFAAGH $.
 
   ${
     $d x A $.
