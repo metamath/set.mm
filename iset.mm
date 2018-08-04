@@ -27377,15 +27377,13 @@ $)
   undifabs $p |- ( A u. ( A \ B ) ) = A $=
     ( cdif cun ssid difss unssi ssun1 eqssi ) AABCZDAAJAAEABFGAJHI $.
 
-  ${
-    $d x A $.  $d x B $.
-    $( The intersection and class difference of a class with another class
-       unite to give the original class.  (Contributed by Paul Chapman,
-       5-Jun-2009.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
-    inundif $p |- ( ( A i^i B ) u. ( A \ B ) ) = A $=
-      ( vx cin cdif cv wcel wo wa wn elin eldif orbi12i pm4.42 bitr4i uneqri )
-      CABDZABEZACFZQGZSRGZHSAGZSBGZIZUBUCJIZHUBTUDUAUESABKSABLMUBUCNOP $.
-  $}
+  $( The intersection and class difference of a class with another class are
+     contained in the original class.  In classical logic we'd be able to make
+     a stronger statement: that everything in the original class is in the
+     intersection or the difference (that is, this theorem would be equality
+     rather than subset).  (Contributed by Jim Kingdon, 4-Aug-2018.) $)
+  inundifss $p |- ( ( A i^i B ) u. ( A \ B ) ) C_ A $=
+    ( cin cdif inss1 difss unssi ) ABCABDAABEABFG $.
 
   $( Absorption of union by difference.  Theorem 36 of [Suppes] p. 29.
      (Contributed by NM, 19-May-1998.) $)
