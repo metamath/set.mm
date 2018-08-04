@@ -27305,15 +27305,15 @@ $)
 
   ${
     $d x A $.  $d x B $.  $d x C $.
-    $( Intersection, subclass, and difference relationship.  (Contributed by
-       NM, 27-Oct-1996.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.)
-       (Proof shortened by Wolf Lammen, 30-Sep-2014.) $)
-    inssdif0 $p |- ( ( A i^i B ) C_ C <-> ( A i^i ( B \ C ) ) = (/) ) $=
-      ( vx cv cin wcel wi wal cdif wn wss c0 wceq elin imbi1i iman bitri eldif
-      wa anbi2i anass 3bitr4ri xchbinx albii dfss2 eq0 3bitr4i ) DEZABFZGZUICGZ
-      HZDIUIABCJZFZGZKZDIUJCLUOMNUMUQDUMUIAGZUIBGZTZULKZTZUPUMUTULHVBKUKUTULUIA
-      BOPUTULQRURUIUNGZTURUSVATZTUPVBVCVDURUIBCSUAUIAUNOURUSVAUBUCUDUEDUJCUFDUO
-      UGUH $.
+    $( Intersection, subclass, and difference relationship.  In classical logic
+       the converse would also hold.  (Contributed by Jim Kingdon,
+       3-Aug-2018.) $)
+    inssdif0im $p |- ( ( A i^i B ) C_ C -> ( A i^i ( B \ C ) ) = (/) ) $=
+      ( vx cv cin wcel wi wal cdif wn wss c0 wceq wa elin imbi1i imanim
+      sylbi eldif anbi2i anass 3bitr4ri sylnib alimi dfss2 eq0 3imtr4i
+      ) DEZABFZGZUICGZHZDIUIABCJZFZGZKZDIUJCLUOMNUMUQDUMUIAGZUIBGZOZULK
+      ZOZUPUMUTULHVBKUKUTULUIABPQUTULRSURUIUNGZOURUSVAOZOUPVBVCVDURUIBC
+      TUAUIAUNPURUSVAUBUCUDUEDUJCUFDUOUGUH $.
   $}
 
   $( The difference between a class and itself is the empty set.  Proposition
