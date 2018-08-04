@@ -27391,11 +27391,11 @@ $)
     ( cun cdif c0 difundir difid uneq2i un0 3eqtri ) ABCBDABDZBBDZCKECKABBFLEKB
     GHKIJ $.
 
-  $( Union of complementary parts into whole.  (Contributed by NM,
-     22-Mar-1998.) $)
-  undif $p |- ( A C_ B <-> ( A u. ( B \ A ) ) = B ) $=
-    ( wss cun wceq cdif ssequn1 undif2 eqeq1i bitr4i ) ABCABDZBEABAFDZBEABGLKBA
-    BHIJ $.
+  $( Union of complementary parts into whole.  (Contributed by Jim Kingdon,
+     4-Aug-2018.) $)
+  undifss $p |- ( A C_ B <-> ( A u. ( B \ A ) ) C_ B ) $=
+    ( wss cdif cun wa difss jctr unss sylib ssun1 sstr mpan impbii ) ABCZABADZE
+    ZBCZOOPBCZFROSBAGHAPBIJAQCROAPKAQBLMN $.
 
   $( A subset of a difference does not intersect the subtrahend.  (Contributed
      by Jeff Hankins, 1-Sep-2013.)  (Proof shortened by Mario Carneiro,
