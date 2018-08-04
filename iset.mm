@@ -27285,17 +27285,6 @@ $)
       ABCICLJK $.
   $}
 
-  $( A proper subclass has a nonempty difference.  (Contributed by NM,
-     3-May-1994.) $)
-  pssdifn0 $p |- ( ( A C_ B /\ A =/= B ) -> ( B \ A ) =/= (/) ) $=
-    ( wss wne cdif c0 wceq ssdif0 eqss simplbi2 syl5bir necon3d imp ) ABCZABDBA
-    EZFDNOFABOFGBACZNABGZBAHQNPABIJKLM $.
-
-  $( A proper subclass has a nonempty difference.  (Contributed by Mario
-     Carneiro, 27-Apr-2016.) $)
-  pssdif $p |- ( A C. B -> ( B \ A ) =/= (/) ) $=
-    ( wpss wss wne wa cdif c0 df-pss pssdifn0 sylbi ) ABCABDABEFBAGHEABIABJK $.
-
   $( A subclass missing a member is a proper subclass.  (Contributed by NM,
      12-Jan-2002.) $)
   ssnelpss $p |- ( A C_ B -> ( ( C e. B /\ -. C e. A ) -> A C. B ) ) $=
@@ -27315,26 +27304,7 @@ $)
   $}
 
   ${
-    $d x A $.  $d x B $.
-    $( A proper subclass has a member in one argument that's not in both.
-       (Contributed by NM, 29-Feb-1996.) $)
-    pssnel $p |- ( A C. B -> E. x ( x e. B /\ -. x e. A ) ) $=
-      ( wpss cv cdif wcel wex wn wa c0 wne pssdif n0 sylib eldif exbii ) BCDZAE
-      ZCBFZGZAHZSCGSBGIJZAHRTKLUBBCMATNOUAUCASCBPQO $.
-  $}
-
-  ${
     $d x A $.  $d x B $.  $d x C $.
-    $( Difference, intersection, and subclass relationship.  (Contributed by
-       NM, 30-Apr-1994.)  (Proof shortened by Wolf Lammen, 30-Sep-2014.) $)
-    difin0ss $p |- ( ( ( A \ B ) i^i C ) = (/) -> ( C C_ A -> C C_ B ) ) $=
-      ( vx cdif cin c0 wceq cv wcel wn wal wss wi eq0 wa iman elin eldif dfss2
-      anbi1i bitri ancom annim anbi2i 3bitr2i xchbinxr ax-2 sylbir al2imi sylbi
-      3imtr4g ) ABEZCFZGHDIZUNJZKZDLZCAMZCBMZNDUNOURUOCJZUOAJZNZDLVAUOBJZNZDLUS
-      UTUQVCVEDUQVAVBVDNZNZVCVENVGVAVFKZPZUPVAVFQUPVBVDKPZVAPZVAVJPVIUPUOUMJZVA
-      PVKUOUMCRVLVJVAUOABSUAUBVAVJUCVJVHVAVBVDUDUEUFUGVAVBVDUHUIUJDCATDCBTULUK
-      $.
-
     $( Intersection, subclass, and difference relationship.  (Contributed by
        NM, 27-Oct-1996.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.)
        (Proof shortened by Wolf Lammen, 30-Sep-2014.) $)
