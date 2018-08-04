@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Aug-2018
+$( iset.mm - Version of 4-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -27356,24 +27356,17 @@ $)
   difin0 $p |- ( ( A i^i B ) \ B ) = (/) $=
     ( cin wss cdif c0 wceq inss2 ssdif0im ax-mp ) ABCZBDKBEFGABHKBIJ $.
 
-  $( The union of a class and its complement is the universe.  Theorem 5.1(5)
-     of [Stoll] p. 17.  (Contributed by NM, 17-Aug-2004.) $)
-  undifv $p |- ( A u. ( _V \ A ) ) = _V $=
-    ( cvv cdif cun cin c0 dfun3 disjdif difeq2i dif0 3eqtri ) ABACZDBLBLCEZCBFC
-    BALGMFBLBHIBJK $.
+  $( Absorption of difference by union.  In classical logic, as Theorem 35 of
+     [Suppes] p. 29, this would be equality rather than subset.  (Contributed
+     by Jim Kingdon, 4-Aug-2018.) $)
+  undif1ss $p |- ( ( A \ B ) u. B ) C_ ( A u. B ) $=
+    ( cdif wss cun difss unss1 ax-mp ) ABCZADIBEABEDABFIABGH $.
 
-  $( Absorption of difference by union.  This decomposes a union into two
-     disjoint classes (see ~ disjdif ).  Theorem 35 of [Suppes] p. 29.
-     (Contributed by NM, 19-May-1998.) $)
-  undif1 $p |- ( ( A \ B ) u. B ) = ( A u. B ) $=
-    ( cvv cdif cin undir invdif uneq1i uncom undifv eqtri ineq2i inv1 3eqtr3i
-    cun ) ACBDZEZBOABOZPBOZEZABDZBORAPBFQUABABGHTRCERSCRSBPOCPBIBJKLRMKN $.
-
-  $( Absorption of difference by union.  This decomposes a union into two
-     disjoint classes (see ~ disjdif ).  Part of proof of Corollary 6K of
-     [Enderton] p. 144.  (Contributed by NM, 19-May-1998.) $)
-  undif2 $p |- ( A u. ( B \ A ) ) = ( A u. B ) $=
-    ( cdif cun uncom undif1 3eqtri ) ABACZDHADBADABDAHEBAFBAEG $.
+  $( Absorption of difference by union.  In classical logic, as in Part of
+     proof of Corollary 6K of [Enderton] p. 144, this would be equality rather
+     than subset.  (Contributed by Jim Kingdon, 4-Aug-2018.) $)
+  undif2ss $p |- ( A u. ( B \ A ) ) C_ ( A u. B ) $=
+    ( cdif cun undif1ss uncom 3sstr4i ) BACZADBADAHDABDBAEAHFABFG $.
 
   $( Absorption of difference by union.  (Contributed by NM, 18-Aug-2013.) $)
   undifabs $p |- ( A u. ( A \ B ) ) = A $=
