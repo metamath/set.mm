@@ -6470,12 +6470,21 @@ $)
     ( wa wi jcab baibr ) ABCDEABEACEABCFG $.
 
   $( Conjunction in antecedent versus disjunction in consequent, for a
-     decidable proposition.  Based on theorem *5.6 of [WhiteheadRussell]
-     p. 125.  (Contributed by Jim Kingdon, 2-Apr-2018.) $)
+     decidable proposition.  Theorem *5.6 of [WhiteheadRussell] p. 125, with
+     decidability condition added.  The reverse implication holds for all
+     propositions (see ~ pm5.6r ).  (Contributed by Jim Kingdon,
+     2-Apr-2018.) $)
   pm5.6dc $p |- ( DECID ps ->
         ( ( ( ph /\ -. ps ) -> ch ) <-> ( ph -> ( ps \/ ch ) ) ) ) $=
     ( wdc wo wi wn wa dfordc imbi2d impexp syl6rbbr ) BDZABCEZFABGZCF
     ZFAOHCFMNPABCIJAOCKL $.
+
+  $( Conjunction in antecedent versus disjunction in consequent.  One direction
+     of Theorem *5.6 of [WhiteheadRussell] p. 125.  If ` ps ` is decidable, the
+     converse also holds (see ~ pm5.6dc ).  (Contributed by Jim Kingdon,
+     4-Aug-2018.) $)
+  pm5.6r $p |- ( ( ph -> ( ps \/ ch ) ) -> ( ( ph /\ -. ps ) -> ch ) ) $=
+    ( wo wi wn pm2.53 imim2i imp3a ) ABCDZEABFZCJKCEABCGHI $.
 
   ${
     orcanai.1 $e |- ( ph -> ( ps \/ ch ) ) $.
