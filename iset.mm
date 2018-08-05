@@ -19676,7 +19676,9 @@ $)
   ${
     r19.37.1 $e |- F/ x ph $.
     $( Restricted version of one direction of Theorem 19.37 of [Margaris]
-       p. 90.  (Contributed by FL, 13-May-2012.)  (Revised by Mario Carneiro,
+       p. 90.  In classical logic the converse would hold if ` A ` has at least
+       one element, but that is not sufficient in intuitionistic logic.
+       (Contributed by FL, 13-May-2012.)  (Revised by Mario Carneiro,
        11-Dec-2016.) $)
     r19.37 $p |- ( E. x e. A ( ph -> ps ) -> ( ph -> E. x e. A ps ) ) $=
       ( wral wi wrex cv wcel ax-1 ralrimi r19.35-1 syl5 ) AACDFABGCDH
@@ -19686,8 +19688,7 @@ $)
   ${
     $d x ph $.
     $( Restricted version of one direction of Theorem 19.37 of [Margaris]
-       p. 90.  (The other direction doesn't hold when ` A ` is empty.)
-       (Contributed by NM, 2-Apr-2004.) $)
+       p. 90.  (Contributed by NM, 2-Apr-2004.) $)
     r19.37av $p |- ( E. x e. A ( ph -> ps ) -> ( ph -> E. x e. A ps ) ) $=
       ( nfv r19.37 ) ABCDACEF $.
   $}
@@ -27514,14 +27515,6 @@ $)
                    ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
       ( cv wcel wex wral wa r19.3rmv anbi1d r19.26 syl6rbbr ) CEDFCGZAB
       CDHZIACDHZOIABICDHNAPOACDJKABCDLM $.
-
-    $( Restricted quantifier version of Theorem 19.37 of [Margaris] p. 90.  It
-       is valid only when the domain of quantification is not empty.
-       (Contributed by Paul Chapman, 8-Oct-2007.) $)
-    r19.37zv $p |- ( A =/= (/) ->
-                   ( E. x e. A ( ph -> ps ) <-> ( ph -> E. x e. A ps ) ) ) $=
-      ( c0 wne wrex wi wral r19.3rzv imbi1d r19.35 syl6rbbr ) DEFZABCDGZHACDIZO
-      HABHCDGNAPOACDJKABCDLM $.
 
     $( Restricted version of Theorem 19.45 of [Margaris] p. 90.  (Contributed
        by NM, 27-May-1998.) $)
