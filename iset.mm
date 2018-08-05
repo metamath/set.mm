@@ -27431,13 +27431,16 @@ $)
       CABSUAQUBDAUETDUHCTQ $.
   $}
 
-  $( Distributive law for class difference.  Exercise 4.8 of [Stoll] p. 16.
-     (Contributed by NM, 18-Aug-2004.) $)
-  difdifdir $p |- ( ( A \ B ) \ C ) = ( ( A \ C ) \ ( B \ C ) ) $=
-    ( cdif cvv cun cin dif32 invdif eqtr4i un0 indi disjdif incom eqtr3i uneq2i
-    c0 ddif indm difeq2i ineq2i 3eqtri ) ABDCDZACDZEBDZCFZGZUDEBCDZDZGUDUHDUCUD
-    UEGZQFZUGUCUJUKUCUDBDUJABCHUDBIJUJKJUGUJUDCGZFUKUDUECLQULUJCUDGQULCAMCUDNOP
-    JJUFUIUDUEEECDZDZFZUFUIUNCUECRPEBUMGZDUOUIBUMSUPUHEBCITOOUAUDUHIUB $.
+  $( Distributive law for class difference.  In classical logic, as in Exercise
+     4.8 of [Stoll] p. 16, this would be equality rather than subset.
+     (Contributed by Jim Kingdon, 4-Aug-2018.) $)
+  difdifdirss $p |- ( ( A \ B ) \ C ) C_ ( ( A \ C ) \ ( B \ C ) ) $=
+    ( cdif cvv cun cin c0 dif32 invdif eqtr4i un0 indi disjdif eqtr3i
+    incom uneq2i wss ax-mp sseqtri ddifss unss2 difeq2i sstri eqsstri
+    indmss sslin ) ABDCDZACDZEBDZCFZGZUIBCDZDZUHUIUJGZHFZULUHUOUPUHUI
+    BDUOABCIUIBJKUOLKULUOUICGZFUPUIUJCMHUQUOCUIGHUQCANCUIPOQKKULUIEUM
+    DZGZUNUKURRULUSRUKUJEECDZDZFZURCVARUKVBRCUACVAUJUBSVBEBUTGZDURBUT
+    UFVCUMEBCJUCTUDUKURUIUGSUIUMJTUE $.
 
   $( Two ways to say that ` A ` and ` B ` partition ` C ` (when ` A ` and ` B `
      don't overlap and ` A ` is a part of ` C ` ).  (Contributed by FL,
