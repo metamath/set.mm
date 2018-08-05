@@ -27431,28 +27431,6 @@ $)
       CABSUAQUBDAUETDUHCTQ $.
   $}
 
-  $( Swap the arguments of a class difference.  (Contributed by NM,
-     29-Mar-2007.) $)
-  difcom $p |- ( ( A \ B ) C_ C <-> ( A \ C ) C_ B ) $=
-    ( cun wss cdif uncom sseq2i ssundif 3bitr3i ) ABCDZEACBDZEABFCEACFBEKLABCGH
-    ABCIACBIJ $.
-
-  $( Two ways to express overlapping subsets.  (Contributed by Stefan O'Rear,
-     31-Oct-2014.) $)
-  pssdifcom1 $p |- ( ( A C_ C /\ B C_ C ) ->
-    ( ( C \ A ) C. B <-> ( C \ B ) C. A ) ) $=
-    ( wss wa cdif wn wpss wb difcom ssconb ancoms notbid anbi12d dfpss3 3bitr4g
-    a1i ) ACDZBCDZEZCAFZBDZBUADZGZECBFZADZAUEDZGZEUABHUEAHTUBUFUDUHUBUFITCABJQT
-    UCUGSRUCUGIBACKLMNUABOUEAOP $.
-
-  $( Two ways to express non-covering pairs of subsets.  (Contributed by Stefan
-     O'Rear, 31-Oct-2014.) $)
-  pssdifcom2 $p |- ( ( A C_ C /\ B C_ C ) ->
-    ( B C. ( C \ A ) <-> A C. ( C \ B ) ) ) $=
-    ( wss wa cdif wn wpss wb ssconb ancoms difcom notbid anbi12d dfpss3 3bitr4g
-    a1i ) ACDZBCDZEZBCAFZDZUABDZGZEACBFZDZUEADZGZEBUAHAUEHTUBUFUDUHSRUBUFIBACJK
-    TUCUGUCUGITCABLQMNBUAOAUEOP $.
-
   $( Distributive law for class difference.  Exercise 4.8 of [Stoll] p. 16.
      (Contributed by NM, 18-Aug-2004.) $)
   difdifdir $p |- ( ( A \ B ) \ C ) = ( ( A \ C ) \ ( B \ C ) ) $=
