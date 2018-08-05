@@ -27508,12 +27508,12 @@ $)
       ABCINABJKL $.
 
     $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
-       is valid only when the domain of quantification is not empty.
-       (Contributed by NM, 19-Aug-2004.) $)
-    r19.28zv $p |- ( A =/= (/) ->
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.28mv $p |- ( E. x x e. A ->
                    ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
-      ( c0 wne wral wa r19.3rzv anbi1d r19.26 syl6rbbr ) DEFZABCDGZHACDGZNHABHC
-      DGMAONACDIJABCDKL $.
+      ( cv wcel wex wral wa r19.3rmv anbi1d r19.26 syl6rbbr ) CEDFCGZAB
+      CDHZIACDHZOIABICDHNAPOACDJKABCDLM $.
 
     $( Restricted quantifier version of Theorem 19.37 of [Margaris] p. 90.  It
        is valid only when the domain of quantification is not empty.
