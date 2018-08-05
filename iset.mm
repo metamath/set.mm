@@ -27455,6 +27455,205 @@ $)
     CFZUKUOUNVAVCQUKBVCFZVEUOIZUKBADZEFVFUJVHEABPRBASTVGVCBVEVCBFUOUN
     VCBQUAUBUCUDUEUGUHUFUI $.
 
+  ${
+    $d x A $.
+    $( Theorem 19.2 of [Margaris] p. 89 with restricted quantifiers (compare
+       ~ 19.2 ).  The restricted version is valid only when the domain of
+       quantification is not empty.  (Contributed by NM, 15-Nov-2003.) $)
+    r19.2z $p |- ( ( A =/= (/) /\ A. x e. A ph ) -> E. x e. A ph ) $=
+      ( wral c0 wne wrex cv wex wa wi wal df-ral exintr sylbi n0 df-rex 3imtr4g
+      wcel impcom ) ABCDZCEFZABCGZUABHCSZBIZUDAJBIZUBUCUAUDAKBLUEUFKABCMUDABNOB
+      CPABCQRT $.
+
+    $( A response to the notion that the condition ` A =/= (/) ` can be removed
+       in ~ r19.2z .  Interestingly enough, ` ph ` does not figure in the
+       left-hand side.  (Contributed by Jeff Hankins, 24-Aug-2009.) $)
+    r19.2zb $p |- ( A =/= (/) <-> ( A. x e. A ph -> E. x e. A ph ) ) $=
+      ( c0 wral wrex wi r19.2z ex wceq cv wcel noel pm2.21i rgen raleq necon3bi
+      wne mpbiri wex wa exsimpl df-rex n0 3imtr4i ja impbii ) CDRZABCEZABCFZGUH
+      UIUJABCHIUIUJUHUICDCDJUIABDEABDBKZDLAUKMNOABCDPSQUKCLZAUABTULBTUJUHULABUB
+      ABCUCBCUDUEUFUG $.
+  $}
+
+  ${
+    $d x A $.
+    r19.3rz.1 $e |- F/ x ph $.
+    $( Restricted quantification of wff not containing quantified variable.
+       (Contributed by FL, 3-Jan-2008.) $)
+    r19.3rz $p |- ( A =/= (/) -> ( ph <-> A. x e. A ph ) ) $=
+      ( c0 wne cv wcel wex wi wral wb n0 biimt sylbi df-ral 19.23 bitri syl6bbr
+      wal ) CEFZABGCHZBIZAJZABCKZUAUCAUDLBCMUCANOUEUBAJBTUDABCPUBABDQRS $.
+
+    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is not empty.
+       (Contributed by NM, 26-Oct-2010.) $)
+    r19.28z $p |- ( A =/= (/) ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
+      ( c0 wne wral wa r19.3rz anbi1d r19.26 syl6rbbr ) DFGZABCDHZIACDHZOIABICD
+      HNAPOACDEJKABCDLM $.
+  $}
+
+  ${
+    $d x A $.  $d x ph $.
+    $( Restricted quantification of wff not containing quantified variable.
+       (Contributed by NM, 10-Mar-1997.) $)
+    r19.3rzv $p |- ( A =/= (/) -> ( ph <-> A. x e. A ph ) ) $=
+      ( c0 wne cv wcel wex wi wb n0 biimt sylbi wal df-ral 19.23v bitri syl6bbr
+      wral ) CDEZABFCGZBHZAIZABCSZTUBAUCJBCKUBALMUDUAAIBNUCABCOUAABPQR $.
+
+    $( Restricted quantification of wff not containing quantified variable.
+       (Contributed by NM, 27-May-1998.) $)
+    r19.9rzv $p |- ( A =/= (/) -> ( ph <-> E. x e. A ph ) ) $=
+      ( c0 wne wn wral wrex r19.3rzv bicomd con2bid dfrex2 syl6bbr ) CDEZAAFZBC
+      GZFABCHNPANOPOBCIJKABCLM $.
+
+    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is not empty.
+       (Contributed by NM, 19-Aug-2004.) $)
+    r19.28zv $p |- ( A =/= (/) ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
+      ( c0 wne wral wa r19.3rzv anbi1d r19.26 syl6rbbr ) DEFZABCDGZHACDGZNHABHC
+      DGMAONACDIJABCDKL $.
+
+    $( Restricted quantifier version of Theorem 19.37 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is not empty.
+       (Contributed by Paul Chapman, 8-Oct-2007.) $)
+    r19.37zv $p |- ( A =/= (/) ->
+                   ( E. x e. A ( ph -> ps ) <-> ( ph -> E. x e. A ps ) ) ) $=
+      ( c0 wne wrex wi wral r19.3rzv imbi1d r19.35 syl6rbbr ) DEFZABCDGZHACDIZO
+      HABHCDGNAPOACDJKABCDLM $.
+
+    $( Restricted version of Theorem 19.45 of [Margaris] p. 90.  (Contributed
+       by NM, 27-May-1998.) $)
+    r19.45zv $p |- ( A =/= (/) ->
+                   ( E. x e. A ( ph \/ ps ) <-> ( ph \/ E. x e. A ps ) ) ) $=
+      ( c0 wne wrex wo r19.9rzv orbi1d r19.43 syl6rbbr ) DEFZABCDGZHACDGZNHABHC
+      DGMAONACDIJABCDKL $.
+  $}
+
+  ${
+    $d x A $.
+    r19.27z.1 $e |- F/ x ps $.
+    $( Restricted quantifier version of Theorem 19.27 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is not empty.
+       (Contributed by NM, 26-Oct-2010.) $)
+    r19.27z $p |- ( A =/= (/) ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( A. x e. A ph /\ ps ) ) ) $=
+      ( c0 wne wral wa r19.3rz anbi2d r19.26 syl6rbbr ) DFGZACDHZBIOBCDHZIABICD
+      HNBPOBCDEJKABCDLM $.
+  $}
+
+  ${
+    $d x A $.  $d x ps $.
+    $( Restricted quantifier version of Theorem 19.27 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is not empty.
+       (Contributed by NM, 19-Aug-2004.) $)
+    r19.27zv $p |- ( A =/= (/) ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( A. x e. A ph /\ ps ) ) ) $=
+      ( c0 wne wral wa r19.3rzv anbi2d r19.26 syl6rbbr ) DEFZACDGZBHNBCDGZHABHC
+      DGMBONBCDIJABCDKL $.
+
+    $( Restricted quantifier version of Theorem 19.36 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is not empty.
+       (Contributed by NM, 20-Sep-2003.) $)
+    r19.36zv $p |- ( A =/= (/) ->
+                   ( E. x e. A ( ph -> ps ) <-> ( A. x e. A ph -> ps ) ) ) $=
+      ( c0 wne wral wi wrex r19.9rzv imbi2d r19.35 syl6rbbr ) DEFZACDGZBHOBCDIZ
+      HABHCDINBPOBCDJKABCDLM $.
+  $}
+
+  ${
+    $d x A $.
+    $( Vacuous quantification is always true.  (Contributed by NM,
+       11-Mar-1997.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    rzal $p |- ( A = (/) -> A. x e. A ph ) $=
+      ( c0 wceq cv wcel ne0i necon2bi pm2.21d ralrimiv ) CDEZABCLBFZCGZANCDCMHI
+      JK $.
+
+    $( Restricted existential quantification implies its restriction is
+       nonempty.  (Contributed by Szymon Jaroszewicz, 3-Apr-2007.) $)
+    rexn0 $p |- ( E. x e. A ph -> A =/= (/) ) $=
+      ( c0 wne cv wcel ne0i a1d rexlimiv ) ACDEZBCBFZCGKACLHIJ $.
+
+    $( Idempotent law for restricted quantifier.  (Contributed by NM,
+       28-Mar-1997.) $)
+    ralidm $p |- ( A. x e. A A. x e. A ph <-> A. x e. A ph ) $=
+      ( c0 wceq wral wb rzal 2thd wn cv wcel wex neq0 wi biimt wal df-ral nfra1
+      19.23 bitri syl6rbbr sylbi pm2.61i ) CDEZABCFZBCFZUFGZUEUGUFUFBCHABCHIUEJ
+      BKCLZBMZUHBCNUJUFUJUFOZUGUJUFPUGUIUFOBQUKUFBCRUIUFBABCSTUAUBUCUD $.
+  $}
+
+  $( Vacuous universal quantification is always true.  (Contributed by NM,
+     20-Oct-2005.) $)
+  ral0 $p |- A. x e. (/) ph $=
+    ( c0 cv wcel noel pm2.21i rgen ) ABCBDZCEAIFGH $.
+
+  ${
+    $d x A $.
+    rgenz.1 $e |- ( ( A =/= (/) /\ x e. A ) -> ph ) $.
+    $( Generalization rule that eliminates a non-zero class requirement.
+       (Contributed by NM, 8-Dec-2012.) $)
+    rgenz $p |- A. x e. A ph $=
+      ( wral c0 rzal wne ralrimiva pm2.61ine ) ABCECFABCGCFHABCDIJ $.
+  $}
+
+  ${
+    $d x A $.
+    ralf0.1 $e |- -. ph $.
+    $( The quantification of a falsehood is vacuous when true.  (Contributed by
+       NM, 26-Nov-2005.) $)
+    ralf0 $p |- ( A. x e. A ph <-> A = (/) ) $=
+      ( wral c0 wceq cv wcel wi wal wn con3 mpi alimi df-ral eq0 3imtr4i impbii
+      rzal ) ABCEZCFGZBHCIZAJZBKUCLZBKUAUBUDUEBUDALUEDUCAMNOABCPBCQRABCTS $.
+  $}
+
+  $( TODO - shorten r19.3zv, r19.27zv, r19.28zv, raaanv w/ non-v $)
+  ${
+    $d x y A $.
+    raaan.1 $e |- F/ y ph $.
+    raaan.2 $e |- F/ x ps $.
+    $( Rearrange restricted quantifiers.  (Contributed by NM, 26-Oct-2010.) $)
+    raaan $p |- ( A. x e. A A. y e. A ( ph /\ ps ) <->
+                  ( A. x e. A ph /\ A. y e. A ps ) ) $=
+      ( wa wral wb c0 wceq rzal pm5.1 syl12anc wne r19.28z ralbidv nfcv nfral
+      r19.27z bitrd pm2.61ine ) ABHDEIZCEIZACEIZBDEIZHZJZEKEKLUEUFUGUIUDCEMACEM
+      BDEMUEUHNOEKPZUEAUGHZCEIUHUJUDUKCEABDEFQRAUGCEBCDECESGTUAUBUC $.
+  $}
+
+  ${
+    $d y ph $.  $d x ps $.  $d x y A $.
+    $( Rearrange restricted quantifiers.  (Contributed by NM, 11-Mar-1997.) $)
+    raaanv $p |- ( A. x e. A A. y e. A ( ph /\ ps ) <->
+                  ( A. x e. A ph /\ A. y e. A ps ) ) $=
+      ( wa wral wb wceq rzal pm5.1 syl12anc wne r19.28zv ralbidv r19.27zv bitrd
+      c0 pm2.61ine ) ABFDEGZCEGZACEGZBDEGZFZHZERERIUAUBUCUETCEJACEJBDEJUAUDKLER
+      MZUAAUCFZCEGUDUFTUGCEABDENOAUCCEPQS $.
+  $}
+
+  ${
+    $d z y $.  $d z x A $.
+    $( Set substitution into the first argument of a subset relation.
+       (Contributed by Rodolfo Medina, 7-Jul-2010.)  (Proof shortened by Mario
+       Carneiro, 14-Nov-2016.) $)
+    sbss $p |- ( [ y / x ] x C_ A <-> y C_ A ) $=
+      ( vz cv wss wsb vex sbequ sseq1 nfv sbie vtoclb ) AEZCFZADGDEZCFZOABGBEZC
+      FDRBHODBAIPRCJOQADQAKNPCJLM $.
+  $}
+
+  ${
+    $d A y $.  $d B y $.  $d C y $.  $d D y $.  $d x y $.
+    $( Distribute proper substitution through a subclass relation.
+       (Contributed by Alan Sare, 22-Jul-2012.)  (Proof shortened by Alexander
+       van der Vekens, 23-Jul-2017.) $)
+    sbcss $p |- ( A e. B -> ( [. A / x ]. C C_ D <->
+      [_ A / x ]_ C C_ [_ A / x ]_ D ) ) $=
+      ( vy wcel cv wi wal wsbc csb wss sbcalg sbcimg sbcel2g bitrd albidv dfss2
+      imbi12d sbcbii 3bitr4g ) BCGZFHZDGZUDEGZIZFJZABKZUDABDLZGZUDABELZGZIZFJZD
+      EMZABKUJULMUCUIUGABKZFJUOUGFABCNUCUQUNFUCUQUEABKZUFABKZIUNUEUFABCOUCURUKU
+      SUMABUDDCPABUDECPTQRQUPUHABFDESUAFUJULSUB $.
+
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
