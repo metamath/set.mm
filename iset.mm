@@ -27421,13 +27421,14 @@ $)
 
   ${
     $d x A $.  $d x B $.  $d x C $.
-    $( A condition equivalent to inclusion in the union of two classes.
-       (Contributed by NM, 26-Mar-2007.) $)
-    ssundif $p |- ( A C_ ( B u. C ) <-> ( A \ B ) C_ C ) $=
-      ( vx cv wcel cun wi wal cdif wss wn wa wo pm5.6 eldif imbi1i imbi2i dfss2
-      elun 3bitr4ri albii 3bitr4i ) DEZAFZUDBCGZFZHZDIUDABJZFZUDCFZHZDIAUFKUICK
-      UHULDUEUDBFZLMZUKHUEUMUKNZHULUHUEUMUKOUJUNUKUDABPQUGUOUEUDBCTRUAUBDAUFSDU
-      ICSUC $.
+    $( A consequence of inclusion in the union of two classes.  In classical
+       logic this would be a biconditional.  (Contributed by Jim Kingdon,
+       4-Aug-2018.) $)
+    ssundifim $p |- ( A C_ ( B u. C ) -> ( A \ B ) C_ C ) $=
+      ( vx cv wcel cun wi wal cdif wss wo wn pm5.6r elun imbi2i 3imtr4i
+      wa eldif dfss2 imbi1i alimi ) DEZAFZUCBCGZFZHZDIUCABJZFZUCCFZHZDI
+      AUEKUHCKUGUKDUDUCBFZUJLZHUDULMRZUJHUGUKUDULUJNUFUMUDUCBCOPUIUNUJU
+      CABSUAQUBDAUETDUHCTQ $.
   $}
 
   $( Swap the arguments of a class difference.  (Contributed by NM,
