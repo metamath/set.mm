@@ -10118,10 +10118,10 @@ $)
     ( ax-ie2 ) ABCD $.
 
   ${
-    19.23.1 $e |- ( ps -> A. x ps ) $.
+    19.23h.1 $e |- ( ps -> A. x ps ) $.
     $( Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
        (Revised by Mario Carneiro, 1-Feb-2015.) $)
-    19.23 $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
+    19.23h $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
       ( wal wi wex wb ax-gen 19.23ht ax-mp ) BBCEFZCEABFCEACGBFHLCDIABCJK $.
   $}
 
@@ -10134,7 +10134,7 @@ $)
      by NM, 5-Aug-1993.)  (Revised by NM, 1-Feb-2015.)  (Revised by Mario
      Carneiro, 12-May-2015.) $)
   alnex $p |- ( A. x -. ph <-> -. E. x ph ) $=
-    ( wfal wi wal wex wn fal pm2.21i 19.23 dfnot albii 3bitr4i ) ACDZBEABFZC
+    ( wfal wi wal wex wn fal pm2.21i 19.23h dfnot albii 3bitr4i ) ACDZBEABFZC
     DAGZBEOGACBCCBEHIJPNBAKLOKM $.
 
   ${
@@ -11066,7 +11066,7 @@ $)
   $( If a wff is true, it is true for at least one instance.  Special case of
      Theorem 19.8 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
   19.8a $p |- ( ph -> E. x ph ) $=
-    ( wex wi wal id hbe1 19.23 mpbir spi ) AABCZDZBLBEKKDKFAKBABGHIJ $.
+    ( wex wi wal id hbe1 19.23h mpbir spi ) AABCZDZBLBEKKDKFAKBABGHIJ $.
 
   ${
     19.23bi.1 $e |- ( E. x ph -> ps ) $.
@@ -11082,7 +11082,7 @@ $)
     $( Inference from Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.)  (Proof shortened by Andrew Salmon, 13-May-2011.) $)
     exlimih $p |- ( E. x ph -> ps ) $=
-      ( wi wex 19.23 mpgbi ) ABFACGBFCABCDHEI $.
+      ( wi wex 19.23h mpgbi ) ABFACGBFCABCDHEI $.
   $}
 
   ${
@@ -11113,7 +11113,7 @@ $)
     $( Deduction from Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
        28-Jan-1997.) $)
     exlimdh $p |- ( ph -> ( E. x ps -> ch ) ) $=
-      ( wi wal wex alrimih 19.23 sylib ) ABCHZDIBDJCHANDEGKBCDFLM $.
+      ( wi wal wex alrimih 19.23h sylib ) ABCHZDIBDJCHANDEGKBCDFLM $.
   $}
 
   ${
@@ -11616,7 +11616,7 @@ $)
      quantifiers on the same variable.  (Contributed by Mario Carneiro,
      24-Sep-2016.) $)
   nf2 $p |- ( F/ x ph <-> ( E. x ph -> A. x ph ) ) $=
-    ( wnf wal wi wex df-nf nfa1 nfri 19.23 bitri ) ABCAABDZEBDABFLEABGALBLBABHI
+    ( wnf wal wi wex df-nf nfa1 nfri 19.23h bitri ) ABCAABDZEBDABFLEABGALBLBABHI
     JK $.
 
   $( An alternative definition of ~ df-nf .  (Contributed by Mario Carneiro,
@@ -11690,6 +11690,14 @@ $)
   19.23t $p |- ( F/ x ps -> ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) ) $=
     ( wnf wi wal wex exim 19.9t biimpd syl9r nfr imim2d 19.38 syl6 impbid ) BCD
     ZABECFZACGZBEZRSBCGZQBABCHQUABBCIJKQTSBCFZERQBUBSBCLMABCNOP $.
+
+  ${
+    19.23.1 $e |- F/ x ps $.
+    $( Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
+       (Revised by Mario Carneiro, 24-Sep-2016.) $)
+    19.23 $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
+      ( wnf wi wal wex wb 19.23t ax-mp ) BCEABFCGACHBFIDABCJK $.
+  $}
 
   ${
     19.32dc.1 $e |- F/ x ph $.
@@ -13034,7 +13042,7 @@ $)
              ( E. x ( x = y /\ ph ) -> A. x ( x = y -> ph ) ) ) $=
       ( vz weq wex wal wa wi wo a9e wnf dveeq2or nfnf1 nfri ax11v equequ2 ax-mp
       wb hba1 adantl nfr imp imbi1d sps albidh syl imbi2d imbi12d mpbii ex imp4a
-      alrimih 19.21t mpbid 19.23 syl6ib orim2i pm2.76 olcs exlimiv ) DCEZDFBCEZB
+      alrimih 19.21t mpbid 19.23h syl6ib orim2i pm2.76 olcs exlimiv ) DCEZDFBCEZB
       GZVCAHZBFVCAIZBGZIZJZDCKVBVIDVDVBVIVDVBVHIZJZVDVBJVIIVDVBBLZJVKBCDMVLVJVD
       VLVBVEVGIZBGZVHVLVBVMIZBGVBVNIVLVOBVLBVBBNOVLVBVCAVGVLVBVCAVGIZIZVLVBHZBD
       EZAVSAIZBGZIZIVQABDPVRVSVCWBVPVBVSVCSVLDCBQZUAVRWAVGAVRVBBGZWAVGSVLVBWDVB
@@ -13460,7 +13468,7 @@ $)
     $( Special case of Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
        28-Jun-1998.) $)
     19.23v $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
-      ( ax-17 19.23 ) ABCBCDE $.
+      ( ax-17 19.23h ) ABCBCDE $.
   $}
 
   ${
@@ -13551,7 +13559,7 @@ $)
     $( Theorem *11.53 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
        Salmon, 24-May-2011.) $)
     pm11.53 $p |- ( A. x A. y ( ph -> ps ) <-> ( E. x ph -> A. y ps ) ) $=
-      ( wi wal wex 19.21v albii ax-17 hbal 19.23 bitri ) ABEDFZCFABDFZEZCFACGOE
+      ( wi wal wex 19.21v albii ax-17 hbal 19.23h bitri ) ABEDFZCFABDFZEZCFACGOE
       NPCABDHIAOCBCDBCJKLM $.
   $}
 
