@@ -27496,10 +27496,10 @@ $)
   ${
     $d x A $.  $d x ph $.
     $( Restricted quantification of wff not containing quantified variable.
-       (Contributed by NM, 10-Mar-1997.) $)
-    r19.3rzv $p |- ( A =/= (/) -> ( ph <-> A. x e. A ph ) ) $=
-      ( c0 wne cv wcel wex wi wb n0 biimt sylbi wal df-ral 19.23v bitri syl6bbr
-      wral ) CDEZABFCGZBHZAIZABCSZTUBAUCJBCKUBALMUDUAAIBNUCABCOUAABPQR $.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.3rmv $p |- ( E. x x e. A -> ( ph <-> A. x e. A ph ) ) $=
+      ( cv wcel wex wi wral biimt wal df-ral 19.23v bitri syl6bbr ) BDC
+      EZBFZAPAGZABCHZPAIROAGBJQABCKOABLMN $.
 
     $( Restricted quantification of wff not containing quantified variable.
        (Contributed by NM, 27-May-1998.) $)
