@@ -27477,20 +27477,20 @@ $)
 
   ${
     $d x A $.
-    r19.3rz.1 $e |- F/ x ph $.
+    r19.3rm.1 $e |- F/ x ph $.
     $( Restricted quantification of wff not containing quantified variable.
-       (Contributed by FL, 3-Jan-2008.) $)
-    r19.3rz $p |- ( A =/= (/) -> ( ph <-> A. x e. A ph ) ) $=
-      ( c0 wne cv wcel wex wi wral wb n0 biimt sylbi df-ral 19.23 bitri syl6bbr
-      wal ) CEFZABGCHZBIZAJZABCKZUAUCAUDLBCMUCANOUEUBAJBTUDABCPUBABDQRS $.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.3rm $p |- ( E. x x e. A -> ( ph <-> A. x e. A ph ) ) $=
+      ( cv wcel wex wi wral biimt wal df-ral 19.23 bitri syl6bbr ) BECF
+      ZBGZAQAHZABCIZQAJSPAHBKRABCLPABDMNO $.
 
     $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
-       is valid only when the domain of quantification is not empty.
-       (Contributed by NM, 26-Oct-2010.) $)
-    r19.28z $p |- ( A =/= (/) ->
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.28m $p |- ( E. x x e. A ->
                    ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
-      ( c0 wne wral wa r19.3rz anbi1d r19.26 syl6rbbr ) DFGZABCDHZIACDHZOIABICD
-      HNAPOACDEJKABCDLM $.
+      ( cv wcel wex wral wa r19.3rm anbi1d r19.26 syl6rbbr ) CFDGCHZABC
+      DIZJACDIZPJABJCDIOAQPACDEKLABCDMN $.
   $}
 
   ${
