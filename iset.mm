@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Aug-2018
+$( iset.mm - Version of 4-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -6470,12 +6470,21 @@ $)
     ( wa wi jcab baibr ) ABCDEABEACEABCFG $.
 
   $( Conjunction in antecedent versus disjunction in consequent, for a
-     decidable proposition.  Based on theorem *5.6 of [WhiteheadRussell]
-     p. 125.  (Contributed by Jim Kingdon, 2-Apr-2018.) $)
+     decidable proposition.  Theorem *5.6 of [WhiteheadRussell] p. 125, with
+     decidability condition added.  The reverse implication holds for all
+     propositions (see ~ pm5.6r ).  (Contributed by Jim Kingdon,
+     2-Apr-2018.) $)
   pm5.6dc $p |- ( DECID ps ->
         ( ( ( ph /\ -. ps ) -> ch ) <-> ( ph -> ( ps \/ ch ) ) ) ) $=
     ( wdc wo wi wn wa dfordc imbi2d impexp syl6rbbr ) BDZABCEZFABGZCF
     ZFAOHCFMNPABCIJAOCKL $.
+
+  $( Conjunction in antecedent versus disjunction in consequent.  One direction
+     of Theorem *5.6 of [WhiteheadRussell] p. 125.  If ` ps ` is decidable, the
+     converse also holds (see ~ pm5.6dc ).  (Contributed by Jim Kingdon,
+     4-Aug-2018.) $)
+  pm5.6r $p |- ( ( ph -> ( ps \/ ch ) ) -> ( ( ph /\ -. ps ) -> ch ) ) $=
+    ( wo wi wn pm2.53 imim2i imp3a ) ABCDZEABFZCJKCEABCGHI $.
 
   ${
     orcanai.1 $e |- ( ph -> ( ps \/ ch ) ) $.
@@ -6840,6 +6849,11 @@ $)
     niabn $p |- ( -. ps -> ( ( ch /\ ps ) <-> -. ph ) ) $=
       ( wa wn simpr pm2.24i pm5.21ni ) CBEBAFCBGABDHI $.
   $}
+
+  $( One direction of Theorem *4.42 of [WhiteheadRussell] p. 119.  (Contributed
+     by Jim Kingdon, 4-Aug-2018.) $)
+  pm4.42r $p |- ( ( ( ph /\ ps ) \/ ( ph /\ -. ps ) ) -> ph ) $=
+    ( wa wn ax-ia1 jaoi ) ABCAABDZCABEAGEF $.
 
   ${
     ninba.1 $e |- ph $.
@@ -27097,6 +27111,349 @@ $)
       ( c0 wss wceq cv wcel pm2.21d ssrdv ss0 syl ) ACEFCEGABCEABHZCINEIDJKCLM
       $.
   $}
+
+  $( Two classes are empty iff their union is empty.  (Contributed by NM,
+     11-Aug-2004.) $)
+  un00 $p |- ( ( A = (/) /\ B = (/) ) <-> ( A u. B ) = (/) ) $=
+    ( c0 wceq wa cun uneq12 un0 syl6eq wss ssun1 sseq2 mpbii sylib ssun2 impbii
+    ss0b jca ) ACDZBCDZEZABFZCDZUAUBCCFCACBCGCHIUCSTUCACJZSUCAUBJUDABKUBCALMAQN
+    UCBCJZTUCBUBJUEBAOUBCBLMBQNRP $.
+
+  $( Only the universal class has the universal class as a subclass.
+     (Contributed by NM, 17-Sep-2003.)  (Proof shortened by Andrew Salmon,
+     26-Jun-2011.) $)
+  vss $p |- ( _V C_ A <-> A = _V ) $=
+    ( cvv wss wa wceq ssv biantrur eqss bitr4i ) BACZABCZJDABEKJAFGABHI $.
+
+  $( The null set is a proper subset of any non-empty set.  (Contributed by NM,
+     27-Feb-1996.) $)
+  0pss $p |- ( (/) C. A <-> A =/= (/) ) $=
+    ( c0 wpss wne wss 0ss df-pss mpbiran necom bitri ) BACZBADZABDKBAELAFBAGHBA
+    IJ $.
+
+  $( No set is a proper subset of the empty set.  (Contributed by NM,
+     17-Jun-1998.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+  npss0 $p |- -. A C. (/) $=
+    ( c0 wpss wss wn wa wi 0ss a1i imanim ax-mp dfpss3 mtbir ) ABCABD
+    ZBADZEFZNOGPEONAHINOJKABLM $.
+
+  $( Any non-universal class is a proper subclass of the universal class.
+     (Contributed by NM, 17-May-1998.) $)
+  pssv $p |- ( A C. _V <-> -. A = _V ) $=
+    ( cvv wpss wss wceq wn ssv dfpss2 mpbiran ) ABCABDABEFAGABHI $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Two ways of saying that two classes are disjoint (have no members in
+       common).  (Contributed by NM, 17-Feb-2004.) $)
+    disj $p |- ( ( A i^i B ) = (/) <-> A. x e. A -. x e. B ) $=
+      ( cin c0 wceq cv wcel wn wi wal wral wa cab df-in eqeq1i abeq1 imnan noel
+      wb nbn bitr2i albii 3bitri df-ral bitr4i ) BCDZEFZAGZBHZUICHZIZJZAKZULABL
+      UHUJUKMZANZEFUOUIEHZTZAKUNUGUPEABCOPUOAEQURUMAUMUOIURUJUKRUQUOUISUAUBUCUD
+      ULABUEUF $.
+
+    $( Two ways of saying that two classes are disjoint.  (Contributed by Jeff
+       Madsen, 19-Jun-2011.) $)
+    disjr $p |- ( ( A i^i B ) = (/) <-> A. x e. B -. x e. A ) $=
+      ( cin c0 wceq cv wcel wn wral incom eqeq1i disj bitri ) BCDZEFCBDZEFAGBHI
+      ACJOPEBCKLACBMN $.
+
+    $( Two ways of saying that two classes are disjoint (have no members in
+       common).  (Contributed by NM, 19-Aug-1993.) $)
+    disj1 $p |- ( ( A i^i B ) = (/) <-> A. x ( x e. A -> -. x e. B ) ) $=
+      ( cin c0 wceq cv wcel wn wral wi wal disj df-ral bitri ) BCDEFAGZCHIZABJP
+      BHQKALABCMQABNO $.
+
+    $( Two ways of saying that two classes are disjoint, using the complement
+       of ` B ` relative to a universe ` C ` .  (Contributed by NM,
+       15-Feb-2007.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    reldisj $p |- ( A C_ C -> ( ( A i^i B ) = (/) <-> A C_ ( C \ B ) ) ) $=
+      ( vx wss cv wcel wn wi wal cdif cin c0 wceq wb dfss2 pm5.44 eldif imbi2i
+      wa syl6bbr sps sylbi albidv disj1 3bitr4g ) ACEZDFZAGZUHBGHZIZDJUIUHCBKZG
+      ZIZDJABLMNAULEUGUKUNDUGUIUHCGZIZDJUKUNOZDACPUPUQDUPUKUIUOUJTZIUNUIUOUJQUM
+      URUIUHCBRSUAUBUCUDDABUEDAULPUF $.
+
+    $( Two ways of saying that two classes are disjoint.  (Contributed by NM,
+       19-May-1998.) $)
+    disj3 $p |- ( ( A i^i B ) = (/) <-> A = ( A \ B ) ) $=
+      ( vx cv wcel wn wi wal cdif wb cin c0 wa pm4.71 eldif bibi2i bitr4i albii
+      wceq disj1 dfcleq 3bitr4i ) CDZAEZUCBEFZGZCHUDUCABIZEZJZCHABKLSAUGSUFUICU
+      FUDUDUEMZJUIUDUENUHUJUDUCABOPQRCABTCAUGUAUB $.
+
+    $( Members of disjoint sets are not equal.  (Contributed by NM,
+       28-Mar-2007.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    disjne $p |- ( ( ( A i^i B ) = (/) /\ C e. A /\ D e. B ) -> C =/= D ) $=
+      ( vx cin c0 wceq wcel wne cv wn wral wi disj eleq1 notbid rspccva eleq1a
+      wa necon3bd syl5com sylanb 3impia ) ABFGHZCAIZDBIZCDJZUEEKZBIZLZEAMZUFUGU
+      HNEABOULUFTCBIZLZUGUHUKUNECAUICHUJUMUICBPQRUGUMCDDBCSUAUBUCUD $.
+  $}
+
+  $( A set can't belong to both members of disjoint classes.  (Contributed by
+     NM, 28-Feb-2015.) $)
+  disjel $p |- ( ( ( A i^i B ) = (/) /\ C e. A ) -> -. C e. B ) $=
+    ( cin c0 wceq wcel wn cdif wi disj3 eleq2 eldifn syl6bi sylbi imp ) ABDEFZC
+    AGZCBGHZQAABIZFZRSJABKUARCTGSATCLCABMNOP $.
+
+  $( Two ways of saying that two classes are disjoint.  (Contributed by NM,
+     17-May-1998.) $)
+  disj2 $p |- ( ( A i^i B ) = (/) <-> A C_ ( _V \ B ) ) $=
+    ( cvv wss cin c0 wceq cdif wb ssv reldisj ax-mp ) ACDABEFGACBHDIAJABCKL $.
+
+  $( A consequence of two classes being disjoint.  In classical logic this
+     would be a biconditional.  (Contributed by Jim Kingdon, 2-Aug-2018.) $)
+  disj4im $p |- ( ( A i^i B ) = (/) -> -. ( A \ B ) C. A ) $=
+    ( cin c0 wceq cdif wpss wn disj3 eqcom bitri wss dfpss2 simprbi con2i sylbi
+    ) ABCDEZABFZAEZRAGZHQARESABIARJKTSTRALSHRAMNOP $.
+
+  $( Intersection with a subclass of a disjoint class.  (Contributed by FL,
+     24-Jan-2007.) $)
+  ssdisj $p |- ( ( A C_ B /\ ( B i^i C ) = (/) ) -> ( A i^i C ) = (/) ) $=
+    ( wss cin c0 wceq wa ss0b wi ssrin sstr2 syl syl5bir imp ss0 ) ABDZBCEZFGZH
+    ACEZFDZTFGQSUASRFDZQUARIQTRDUBUAJABCKTRFLMNOTPM $.
+
+  $( A class is a proper subset of its union with a disjoint nonempty class.
+     (Contributed by NM, 15-Sep-2004.) $)
+  disjpss $p |- ( ( ( A i^i B ) = (/) /\ B =/= (/) ) -> A C. ( A u. B ) ) $=
+    ( cin c0 wceq wne wa wss wn cun wpss ssid biantru bitri sseq2 syl5bb syl6bi
+    ssin ss0 necon3ad imp nsspssun uncom psseq2i sylib ) ABCZDEZBDFZGBAHZIZAABJ
+    ZKZUGUHUJUGUIBDUGUIBDHZBDEUIBUFHZUGUMUIUIBBHZGUNUOUIBLMBABRNUFDBOPBSQTUAUJA
+    BAJZKULBAUBUPUKABAUCUDNUE $.
+
+  $( The union of disjoint classes is disjoint.  (Contributed by NM,
+     26-Sep-2004.) $)
+  undisj1 $p |- ( ( ( A i^i C ) = (/) /\ ( B i^i C ) = (/) ) <->
+               ( ( A u. B ) i^i C ) = (/) ) $=
+    ( cin c0 wceq wa cun un00 indir eqeq1i bitr4i ) ACDZEFBCDZEFGMNHZEFABHCDZEF
+    MNIPOEABCJKL $.
+
+  $( The union of disjoint classes is disjoint.  (Contributed by NM,
+     13-Sep-2004.) $)
+  undisj2 $p |- ( ( ( A i^i B ) = (/) /\ ( A i^i C ) = (/) ) <->
+               ( A i^i ( B u. C ) ) = (/) ) $=
+    ( cin c0 wceq wa cun un00 indi eqeq1i bitr4i ) ABDZEFACDZEFGMNHZEFABCHDZEFM
+    NIPOEABCJKL $.
+
+  $( Subclass implies empty intersection with difference from the universal
+     class.  (Contributed by NM, 17-Sep-2003.) $)
+  ssindif0im $p |- ( A C_ B -> ( A i^i ( _V \ B ) ) = (/) ) $=
+    ( wss cvv cdif cin c0 wceq ddifss sstr mpan2 disj2 sylibr ) ABCZA
+    DDBEZEZCZAOFGHNBPCQBIABPJKAOLM $.
+
+  $( The intersection of classes with a common member is nonempty.
+     (Contributed by NM, 7-Apr-1994.) $)
+  inelcm $p |- ( ( A e. B /\ A e. C ) -> ( B i^i C ) =/= (/) ) $=
+    ( wcel wa cin c0 wne elin ne0i sylbir ) ABDACDEABCFZDLGHABCILAJK $.
+
+  $( A minimum element of a class has no elements in common with the class.
+     (Contributed by NM, 22-Jun-1994.) $)
+  minel $p |- ( ( A e. B /\ ( C i^i B ) = (/) ) -> -. A e. C ) $=
+    ( cin c0 wceq wcel wn wa wi inelcm necon2bi imnan sylibr con2d impcom ) CBD
+    ZEFZABGZACGZHRTSRTSIZHTSHJUAQEACBKLTSMNOP $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Distribute union over difference.  (Contributed by NM, 17-May-1998.)
+       (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    undif4 $p |- ( ( A i^i C ) = (/) ->
+                 ( A u. ( B \ C ) ) = ( ( A u. B ) \ C ) ) $=
+      ( vx cv wcel wn wi wal cdif cun wb cin c0 wceq wo wa eldif elun 3bitr4g
+      pm2.621 olc impbid1 anbi2d orbi2i bitri anbi1i alimi disj1 dfcleq 3imtr4i
+      ordi ) DEZAFZUMCFGZHZDIUMABCJZKZFZUMABKZCJZFZLZDIACMNOURVAOUPVCDUPUNUMUQF
+      ZPZUMUTFZUOQZUSVBUPUNUMBFZPZUNUOPZQZVIUOQVEVGUPVJUOVIUPVJUOUNUOUAUOUNUBUC
+      UDVEUNVHUOQZPVKVDVLUNUMBCRUEUNVHUOULUFVFVIUOUMABSUGTUMAUQSUMUTCRTUHDACUID
+      URVAUJUK $.
+
+    $( Subset relation for disjoint classes.  (Contributed by NM,
+       25-Oct-2005.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    disjssun $p |- ( ( A i^i B ) = (/) -> ( A C_ ( B u. C ) <-> A C_ C ) ) $=
+      ( cin c0 wceq cun wss indi equncomi uneq2 un0 syl6eq syl5eq df-ss 3bitr4g
+      eqeq1d ) ABDZEFZABCGZDZAFACDZAFATHACHSUAUBASUAUBRGZUBUARUBABCIJSUCUBEGUBR
+      EUBKUBLMNQATOACOP $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Subclass implies empty difference.  One direction of Exercise 7 of
+       [TakeutiZaring] p. 22.  In classical logic this would be an
+       equivalence.  (Contributed by Jim Kingdon, 2-Aug-2018.) $)
+    ssdif0im $p |- ( A C_ B -> ( A \ B ) = (/) ) $=
+      ( vx cv wcel wi wal cdif wn c0 wceq wa imanim eldif sylnibr alimi
+      wss dfss2 eq0 3imtr4i ) CDZAEZUABEZFZCGUAABHZEZIZCGABQUEJKUDUGCUD
+      UBUCILUFUBUCMUAABNOPCABRCUEST $.
+  $}
+
+  $( Universal class equality in terms of empty difference.  (Contributed by
+     Jim Kingdon, 3-Aug-2018.) $)
+  vdif0im $p |- ( A = _V -> ( _V \ A ) = (/) ) $=
+    ( cvv wceq wss cdif c0 vss ssdif0im sylbir ) ABCBADBAEFCAGBAHI $.
+
+  ${
+    $d V x $.
+    $( If the difference between the restricting class of a restricted class
+       abstraction and the restricted class abstraction is empty, the
+       restricting class is equal to this restricted class abstraction.
+       (Contributed by Jim Kingdon, 3-Aug-2018.) $)
+    difrab0eqim $p |-
+        ( V = { x e. V | ph } -> ( V \ { x e. V | ph } ) = (/) ) $=
+      ( crab wceq wss cdif c0 ssrabeq ssdif0im sylbir ) CABCDZECLFCLGHE
+      ABCICLJK $.
+  $}
+
+  $( A subclass missing a member is a proper subclass.  (Contributed by NM,
+     12-Jan-2002.) $)
+  ssnelpss $p |- ( A C_ B -> ( ( C e. B /\ -. C e. A ) -> A C. B ) ) $=
+    ( wcel wn wa wceq wss wpss nelneq2 eqcom sylnib dfpss2 baibr syl5ib ) CBDCA
+    DEFZABGZEZABHZABIZPBAGQCBAJBAKLTSRABMNO $.
+
+  ${
+    ssnelpssd.1 $e |- ( ph -> A C_ B ) $.
+    ssnelpssd.2 $e |- ( ph -> C e. B ) $.
+    ssnelpssd.3 $e |- ( ph -> -. C e. A ) $.
+    $( Subclass inclusion with one element of the superclass missing is proper
+       subclass inclusion.  Deduction form of ~ ssnelpss .  (Contributed by
+       David Moews, 1-May-2017.) $)
+    ssnelpssd $p |- ( ph -> A C. B ) $=
+      ( wcel wn wpss wss wa wi ssnelpss syl mp2and ) ADCHZDBHIZBCJZFGABCKQRLSME
+      BCDNOP $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Intersection, subclass, and difference relationship.  In classical logic
+       the converse would also hold.  (Contributed by Jim Kingdon,
+       3-Aug-2018.) $)
+    inssdif0im $p |- ( ( A i^i B ) C_ C -> ( A i^i ( B \ C ) ) = (/) ) $=
+      ( vx cv cin wcel wi wal cdif wn wss c0 wceq wa elin imbi1i imanim
+      sylbi eldif anbi2i anass 3bitr4ri sylnib alimi dfss2 eq0 3imtr4i
+      ) DEZABFZGZUICGZHZDIUIABCJZFZGZKZDIUJCLUOMNUMUQDUMUIAGZUIBGZOZULK
+      ZOZUPUMUTULHVBKUKUTULUIABPQUTULRSURUIUNGZOURUSVAOZOUPVBVCVDURUIBC
+      TUAUIAUNPURUSVAUBUCUDUEDUJCUFDUOUGUH $.
+  $}
+
+  $( The difference between a class and itself is the empty set.  Proposition
+     5.15 of [TakeutiZaring] p. 20.  Also Theorem 32 of [Suppes] p. 28.
+     (Contributed by NM, 22-Apr-2004.) $)
+  difid $p |- ( A \ A ) = (/) $=
+    ( wss cdif c0 wceq ssid ssdif0im ax-mp ) AABAACDEAFAAGH $.
+
+  ${
+    $d x A $.
+    $( The difference between a class and itself is the empty set.  Proposition
+       5.15 of [TakeutiZaring] p. 20.  Also Theorem 32 of [Suppes] p. 28.
+       Alternate proof of ~ difid .  (Contributed by David Abernethy,
+       17-Jun-2012.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    difidALT $p |- ( A \ A ) = (/) $=
+      ( vx cdif cv wcel wn crab c0 dfdif2 dfnul3 eqtr4i ) AACBDAEFBAGHBAAIBAJK
+      $.
+  $}
+
+  $( The difference between a class and the empty set.  Part of Exercise 4.4 of
+     [Stoll] p. 16.  (Contributed by NM, 17-Aug-2004.) $)
+  dif0 $p |- ( A \ (/) ) = A $=
+    ( cdif c0 difid difeq2i difdif eqtr3i ) AAABZBACBAHCAADEAAFG $.
+
+  $( The difference between the empty set and a class.  Part of Exercise 4.4 of
+     [Stoll] p. 16.  (Contributed by NM, 17-Aug-2004.) $)
+  0dif $p |- ( (/) \ A ) = (/) $=
+    ( c0 cdif wss wceq difss ss0 ax-mp ) BACZBDIBEBAFIGH $.
+
+  $( A class and its relative complement are disjoint.  Theorem 38 of [Suppes]
+     p. 29.  (Contributed by NM, 24-Mar-1998.) $)
+  disjdif $p |- ( A i^i ( B \ A ) ) = (/) $=
+    ( cin wss cdif c0 wceq inss1 inssdif0im ax-mp ) ABCADABAECFGABHAB
+    AIJ $.
+
+  $( The difference of a class from its intersection is empty.  Theorem 37 of
+     [Suppes] p. 29.  (Contributed by NM, 17-Aug-2004.)  (Proof shortened by
+     Andrew Salmon, 26-Jun-2011.) $)
+  difin0 $p |- ( ( A i^i B ) \ B ) = (/) $=
+    ( cin wss cdif c0 wceq inss2 ssdif0im ax-mp ) ABCZBDKBEFGABHKBIJ $.
+
+  $( Absorption of difference by union.  In classical logic, as Theorem 35 of
+     [Suppes] p. 29, this would be equality rather than subset.  (Contributed
+     by Jim Kingdon, 4-Aug-2018.) $)
+  undif1ss $p |- ( ( A \ B ) u. B ) C_ ( A u. B ) $=
+    ( cdif wss cun difss unss1 ax-mp ) ABCZADIBEABEDABFIABGH $.
+
+  $( Absorption of difference by union.  In classical logic, as in Part of
+     proof of Corollary 6K of [Enderton] p. 144, this would be equality rather
+     than subset.  (Contributed by Jim Kingdon, 4-Aug-2018.) $)
+  undif2ss $p |- ( A u. ( B \ A ) ) C_ ( A u. B ) $=
+    ( cdif cun undif1ss uncom 3sstr4i ) BACZADBADAHDABDBAEAHFABFG $.
+
+  $( Absorption of difference by union.  (Contributed by NM, 18-Aug-2013.) $)
+  undifabs $p |- ( A u. ( A \ B ) ) = A $=
+    ( cdif cun ssid difss unssi ssun1 eqssi ) AABCZDAAJAAEABFGAJHI $.
+
+  $( The intersection and class difference of a class with another class are
+     contained in the original class.  In classical logic we'd be able to make
+     a stronger statement: that everything in the original class is in the
+     intersection or the difference (that is, this theorem would be equality
+     rather than subset).  (Contributed by Jim Kingdon, 4-Aug-2018.) $)
+  inundifss $p |- ( ( A i^i B ) u. ( A \ B ) ) C_ A $=
+    ( cin cdif inss1 difss unssi ) ABCABDAABEABFG $.
+
+  $( Absorption of union by difference.  Theorem 36 of [Suppes] p. 29.
+     (Contributed by NM, 19-May-1998.) $)
+  difun2 $p |- ( ( A u. B ) \ B ) = ( A \ B ) $=
+    ( cun cdif c0 difundir difid uneq2i un0 3eqtri ) ABCBDABDZBBDZCKECKABBFLEKB
+    GHKIJ $.
+
+  $( Union of complementary parts into whole.  (Contributed by Jim Kingdon,
+     4-Aug-2018.) $)
+  undifss $p |- ( A C_ B <-> ( A u. ( B \ A ) ) C_ B ) $=
+    ( wss cdif cun wa difss jctr unss sylib ssun1 sstr mpan impbii ) ABCZABADZE
+    ZBCZOOPBCZFROSBAGHAPBIJAQCROAPKAQBLMN $.
+
+  $( A subset of a difference does not intersect the subtrahend.  (Contributed
+     by Jeff Hankins, 1-Sep-2013.)  (Proof shortened by Mario Carneiro,
+     24-Aug-2015.) $)
+  ssdifin0 $p |- ( A C_ ( B \ C ) -> ( A i^i C ) = (/) ) $=
+    ( cdif wss cin c0 wceq ssrin incom disjdif eqtri sseq0 sylancl ) ABCDZEACFZ
+    OCFZEQGHPGHAOCIQCOFGOCJCBKLPQMN $.
+
+  $( A class is a subclass of itself subtracted from another iff it is the
+     empty set.  (Contributed by Steve Rodriguez, 20-Nov-2015.) $)
+  ssdifeq0 $p |- ( A C_ ( B \ A ) <-> A = (/) ) $=
+    ( cdif wss wceq cin inidm ssdifin0 syl5eqr 0ss difeq2 sseq12d mpbiri impbii
+    c0 id ) ABACZDZAOEZRAAAFOAGABAHISROBOCZDTJSAOQTSPAOBKLMN $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( A consequence of inclusion in the union of two classes.  In classical
+       logic this would be a biconditional.  (Contributed by Jim Kingdon,
+       4-Aug-2018.) $)
+    ssundifim $p |- ( A C_ ( B u. C ) -> ( A \ B ) C_ C ) $=
+      ( vx cv wcel cun wi wal cdif wss wo wn pm5.6r elun imbi2i 3imtr4i
+      wa eldif dfss2 imbi1i alimi ) DEZAFZUCBCGZFZHZDIUCABJZFZUCCFZHZDI
+      AUEKUHCKUGUKDUDUCBFZUJLZHUDULMRZUJHUGUKUDULUJNUFUMUDUCBCOPUIUNUJU
+      CABSUAQUBDAUETDUHCTQ $.
+  $}
+
+  $( Distributive law for class difference.  In classical logic, as in Exercise
+     4.8 of [Stoll] p. 16, this would be equality rather than subset.
+     (Contributed by Jim Kingdon, 4-Aug-2018.) $)
+  difdifdirss $p |- ( ( A \ B ) \ C ) C_ ( ( A \ C ) \ ( B \ C ) ) $=
+    ( cdif cvv cun cin c0 dif32 invdif eqtr4i un0 indi disjdif eqtr3i
+    incom uneq2i wss ax-mp sseqtri ddifss unss2 difeq2i sstri eqsstri
+    indmss sslin ) ABDCDZACDZEBDZCFZGZUIBCDZDZUHUIUJGZHFZULUHUOUPUHUI
+    BDUOABCIUIBJKUOLKULUOUICGZFUPUIUJCMHUQUOCUIGHUQCANCUIPOQKKULUIEUM
+    DZGZUNUKURRULUSRUKUJEECDZDZFZURCVARUKVBRCUACVAUJUBSVBEBUTGZDURBUT
+    UFVCUMEBCJUCTUDUKURUIUGSUIUMJTUE $.
+
+  $( Two ways that ` A ` and ` B ` can "partition" ` C ` (when ` A ` and ` B `
+     don't overlap and ` A ` is a part of ` C ` ).  In classical logic, the
+     second implication would be a biconditional.  (Contributed by Jim Kingdon,
+     4-Aug-2018.) $)
+  uneqdifeqim $p |- ( ( A C_ C /\ ( A i^i B ) = (/) )
+     -> ( ( A u. B ) = C -> ( C \ A ) = B ) ) $=
+    ( cin c0 wceq cun cdif wi wss uncom wa eqcomd difeq1 difun2 incom
+    eqtr eqeq1i disj3 bitri expcom eqcoms sylbi syl5com sylancl com12
+    syl mpan adantl ) ABDZEFZABGZCFZCAHZBFZIACJUMUKUOBAGZULFZUMUKUOIZ
+    BAKUQUMLZCUPFZURUSUPCUPULCQMUTUNUPAHZFZVABAHZFZURCUPANBAOVBVDLUNV
+    CFZUKUOUNVAVCQUKBVCFZVEUOIZUKBADZEFVFUJVHEABPRBASTVGVCBVEVCBFUOUN
+    VCBQUAUBUCUDUEUGUHUFUI $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
