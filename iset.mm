@@ -27526,14 +27526,14 @@ $)
 
   ${
     $d x A $.
-    r19.27z.1 $e |- F/ x ps $.
+    r19.27m.1 $e |- F/ x ps $.
     $( Restricted quantifier version of Theorem 19.27 of [Margaris] p. 90.  It
-       is valid only when the domain of quantification is not empty.
-       (Contributed by NM, 26-Oct-2010.) $)
-    r19.27z $p |- ( A =/= (/) ->
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.27m $p |- ( E. x x e. A ->
                    ( A. x e. A ( ph /\ ps ) <-> ( A. x e. A ph /\ ps ) ) ) $=
-      ( c0 wne wral wa r19.3rz anbi2d r19.26 syl6rbbr ) DFGZACDHZBIOBCDHZIABICD
-      HNBPOBCDEJKABCDLM $.
+      ( cv wcel wex wral wa r19.3rm anbi2d r19.26 syl6rbbr ) CFDGCHZACD
+      IZBJPBCDIZJABJCDIOBQPBCDEKLABCDMN $.
   $}
 
   ${
