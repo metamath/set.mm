@@ -27464,15 +27464,6 @@ $)
       ( wral cv wcel wex wrex wa wal df-ral exintr sylbi df-rex syl6ibr
       wi impcom ) ABCDZBECFZBGZABCHZRTSAIBGZUARSAPBJTUBPABCKSABLMABCNOQ
       $.
-
-    $( A response to the notion that the condition ` A =/= (/) ` can be removed
-       in ~ r19.2z .  Interestingly enough, ` ph ` does not figure in the
-       left-hand side.  (Contributed by Jeff Hankins, 24-Aug-2009.) $)
-    r19.2zb $p |- ( A =/= (/) <-> ( A. x e. A ph -> E. x e. A ph ) ) $=
-      ( c0 wral wrex wi r19.2z ex wceq cv wcel noel pm2.21i rgen raleq necon3bi
-      wne mpbiri wex wa exsimpl df-rex n0 3imtr4i ja impbii ) CDRZABCEZABCFZGUH
-      UIUJABCHIUIUJUHUICDCDJUIABDEABDBKZDLAUKMNOABCDPSQUKCLZAUABTULBTUJUHULABUB
-      ABCUCBCUDUEUFUG $.
   $}
 
   ${
