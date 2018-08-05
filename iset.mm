@@ -27518,10 +27518,10 @@ $)
 
     $( Restricted version of Theorem 19.45 of [Margaris] p. 90.  (Contributed
        by NM, 27-May-1998.) $)
-    r19.45zv $p |- ( A =/= (/) ->
+    r19.45mv $p |- ( E. x x e. A ->
                    ( E. x e. A ( ph \/ ps ) <-> ( ph \/ E. x e. A ps ) ) ) $=
-      ( c0 wne wrex wo r19.9rzv orbi1d r19.43 syl6rbbr ) DEFZABCDGZHACDGZNHABHC
-      DGMAONACDIJABCDKL $.
+      ( cv wcel wex wrex wo r19.9rmv orbi1d r19.43 syl6rbbr ) CEDFCGZAB
+      CDHZIACDHZOIABICDHNAPOACDJKABCDLM $.
   $}
 
   ${
