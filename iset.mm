@@ -27442,20 +27442,18 @@ $)
     DZGZUNUKURRULUSRUKUJEECDZDZFZURCVARUKVBRCUACVAUJUBSVBEBUTGZDURBUT
     UFVCUMEBCJUCTUDUKURUIUGSUIUMJTUE $.
 
-  $( Two ways to say that ` A ` and ` B ` partition ` C ` (when ` A ` and ` B `
-     don't overlap and ` A ` is a part of ` C ` ).  (Contributed by FL,
-     17-Nov-2008.) $)
-  uneqdifeq $p |- ( ( A C_ C /\ ( A i^i B ) = (/) )
-     -> ( ( A u. B ) = C <-> ( C \ A ) = B ) ) $=
-    ( wss cin c0 wceq wa cun cdif uncom eqcomd difeq1 difun2 incom expcom com12
-    wi eqtr adantl eqeq1i disj3 bitri eqcoms sylbi syl5com syl mpan difss sseq1
-    sylancl biimpi syl6bi mpi adantr imp eqimss ssundif sylibr adantlr eqssd ex
-    unss impbid ) ACDZABEZFGZHZABIZCGZCAJZBGZVGVJVLRVEVJVGVLBAIZVIGZVJVGVLRZBAK
-    VNVJHZCVMGZVOVPVMCVMVICSLVQVKVMAJZGZVRBAJZGZVOCVMAMBANVSWAHVKVTGZVGVLVKVRVT
-    SVGBVTGZWBVLRZVGBAEZFGWCVFWEFABOUABAUBUCWDVTBWBVTBGVLVKVTBSPUDUEUFUKUGUHQTV
-    HVLVJVHVLHVICVHVLVICDZVEVLWFRVGVLVEWFVLVKCDZVEWFRZCAUIVLWGBCDZWHVKBCUJVEWIW
-    FVEWIHWFABCVCULPUMUNQUOUPVEVLCVIDZVGVEVLHVKBDZWJVLWKVEVKBUQTCABURUSUTVAVBVD
-    $.
+  $( Two ways that ` A ` and ` B ` can "partition" ` C ` (when ` A ` and ` B `
+     don't overlap and ` A ` is a part of ` C ` ).  In classical logic, the
+     second implication would be a biconditional.  (Contributed by Jim Kingdon,
+     4-Aug-2018.) $)
+  uneqdifeqim $p |- ( ( A C_ C /\ ( A i^i B ) = (/) )
+     -> ( ( A u. B ) = C -> ( C \ A ) = B ) ) $=
+    ( cin c0 wceq cun cdif wi wss uncom wa eqcomd difeq1 difun2 incom
+    eqtr eqeq1i disj3 bitri expcom eqcoms sylbi syl5com sylancl com12
+    syl mpan adantl ) ABDZEFZABGZCFZCAHZBFZIACJUMUKUOBAGZULFZUMUKUOIZ
+    BAKUQUMLZCUPFZURUSUPCUPULCQMUTUNUPAHZFZVABAHZFZURCUPANBAOVBVDLUNV
+    CFZUKUOUNVAVCQUKBVCFZVEUOIZUKBADZEFVFUJVHEABPRBASTVGVCBVEVCBFUOUN
+    VCBQUAUBUCUDUEUGUHUFUI $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
