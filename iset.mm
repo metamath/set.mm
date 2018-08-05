@@ -27467,7 +27467,8 @@ $)
     $d x A $.
     $( Theorem 19.2 of [Margaris] p. 89 with restricted quantifiers (compare
        ~ 19.2 ).  The restricted version is valid only when the domain of
-       quantification is inhabited.  (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+       quantification is inhabited.  (Contributed by Jim Kingdon,
+       5-Aug-2018.) $)
     r19.2m $p |- ( ( E. x x e. A /\ A. x e. A ph ) -> E. x e. A ph ) $=
       ( wral cv wcel wex wrex wa wal df-ral exintr sylbi df-rex syl6ibr
       wi impcom ) ABCDZBECFZBGZABCHZRTSAIBGZUARSAPBJTUBPABCKSABLMABCNOQ
