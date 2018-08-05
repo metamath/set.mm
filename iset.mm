@@ -27502,10 +27502,10 @@ $)
       EZBFZAPAGZABCHZPAIROAGBJQABCKOABLMN $.
 
     $( Restricted quantification of wff not containing quantified variable.
-       (Contributed by NM, 27-May-1998.) $)
-    r19.9rzv $p |- ( A =/= (/) -> ( ph <-> E. x e. A ph ) ) $=
-      ( c0 wne wn wral wrex r19.3rzv bicomd con2bid dfrex2 syl6bbr ) CDEZAAFZBC
-      GZFABCHNPANOPOBCIJKABCLM $.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.9rmv $p |- ( E. x x e. A -> ( ph <-> E. x e. A ph ) ) $=
+      ( wrex cv wcel wex wa df-rex 19.41v bitri baibr ) ABCDZBECFZBGZAMNAHBGOAH
+      ABCINABJKL $.
 
     $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
        is valid only when the domain of quantification is not empty.
