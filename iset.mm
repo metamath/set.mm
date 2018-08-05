@@ -1,4 +1,4 @@
-$( iset.mm - Version of 4-Aug-2018
+$( iset.mm - Version of 5-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -27459,11 +27459,11 @@ $)
     $d x A $.
     $( Theorem 19.2 of [Margaris] p. 89 with restricted quantifiers (compare
        ~ 19.2 ).  The restricted version is valid only when the domain of
-       quantification is not empty.  (Contributed by NM, 15-Nov-2003.) $)
-    r19.2z $p |- ( ( A =/= (/) /\ A. x e. A ph ) -> E. x e. A ph ) $=
-      ( wral c0 wne wrex cv wex wa wi wal df-ral exintr sylbi n0 df-rex 3imtr4g
-      wcel impcom ) ABCDZCEFZABCGZUABHCSZBIZUDAJBIZUBUCUAUDAKBLUEUFKABCMUDABNOB
-      CPABCQRT $.
+       quantification is inhabited.  (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.2m $p |- ( ( E. x x e. A /\ A. x e. A ph ) -> E. x e. A ph ) $=
+      ( wral cv wcel wex wrex wa wal df-ral exintr sylbi df-rex syl6ibr
+      wi impcom ) ABCDZBECFZBGZABCHZRTSAIBGZUARSAPBJTUBPABCKSABLMABCNOQ
+      $.
 
     $( A response to the notion that the condition ` A =/= (/) ` can be removed
        in ~ r19.2z .  Interestingly enough, ` ph ` does not figure in the
