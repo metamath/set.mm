@@ -27539,12 +27539,11 @@ $)
   ${
     $d x A $.  $d x ps $.
     $( Restricted quantifier version of Theorem 19.27 of [Margaris] p. 90.  It
-       is valid only when the domain of quantification is not empty.
-       (Contributed by NM, 19-Aug-2004.) $)
-    r19.27zv $p |- ( A =/= (/) ->
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.27mv $p |- ( E. x x e. A ->
                    ( A. x e. A ( ph /\ ps ) <-> ( A. x e. A ph /\ ps ) ) ) $=
-      ( c0 wne wral wa r19.3rzv anbi2d r19.26 syl6rbbr ) DEFZACDGZBHNBCDGZHABHC
-      DGMBONBCDIJABCDKL $.
+      ( nfv r19.27m ) ABCDBCEF $.
 
     $( Restricted quantifier version of Theorem 19.36 of [Margaris] p. 90.  It
        is valid only when the domain of quantification is not empty.
