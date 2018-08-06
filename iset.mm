@@ -27564,9 +27564,9 @@ $)
     $( Idempotent law for restricted quantifier.  (Contributed by NM,
        28-Mar-1997.) $)
     ralidm $p |- ( A. x e. A A. x e. A ph <-> A. x e. A ph ) $=
-      ( c0 wceq wral wb rzal 2thd wn cv wcel wex neq0 wi biimt wal df-ral nfra1
-      19.23 bitri syl6rbbr sylbi pm2.61i ) CDEZABCFZBCFZUFGZUEUGUFUFBCHABCHIUEJ
-      BKCLZBMZUHBCNUJUFUJUFOZUGUJUFPUGUIUFOBQUKUFBCRUIUFBABCSTUAUBUCUD $.
+      ( wral nfra1 cv wcel wa anidm rsp2 syl5bir ralrimi wi wal wex ax-1 sylibr
+      19.23 df-ral impbii ) ABCDZBCDZUAUBABCUABCEBFCGZUCUCHUBAUCIABBCCJKLUAUCUA
+      MBNZUBUAUCBOZUAMUDUAUEPUCUABABCERQUABCSQT $.
   $}
 
   $( Vacuous universal quantification is always true.  (Contributed by NM,
