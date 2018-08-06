@@ -19667,7 +19667,9 @@ $)
   ${
     $d x ps $.
     $( One direction of a restricted quantifier version of Theorem 19.36 of
-       [Margaris] p. 90.  (Contributed by NM, 22-Oct-2003.) $)
+       [Margaris] p. 90.  In classical logic, the converse would hold if ` A `
+       has at least one element, but in intuitionistic logic, that is not a
+       sufficient condition.  (Contributed by NM, 22-Oct-2003.) $)
     r19.36av $p |- ( E. x e. A ( ph -> ps ) -> ( A. x e. A ph -> ps ) ) $=
       ( wi wrex wral r19.35-1 cv wcel idd rexlimiv imim2i syl ) ABECD
       FACDGZBCDFZEOBEABCDHPBOBBCDCIDJBKLMN $.
@@ -27544,14 +27546,6 @@ $)
     r19.27mv $p |- ( E. x x e. A ->
                    ( A. x e. A ( ph /\ ps ) <-> ( A. x e. A ph /\ ps ) ) ) $=
       ( nfv r19.27m ) ABCDBCEF $.
-
-    $( Restricted quantifier version of Theorem 19.36 of [Margaris] p. 90.  It
-       is valid only when the domain of quantification is not empty.
-       (Contributed by NM, 20-Sep-2003.) $)
-    r19.36zv $p |- ( A =/= (/) ->
-                   ( E. x e. A ( ph -> ps ) <-> ( A. x e. A ph -> ps ) ) ) $=
-      ( c0 wne wral wi wrex r19.9rzv imbi2d r19.35 syl6rbbr ) DEFZACDGZBHOBCDIZ
-      HABHCDINBPOBCDJKABCDLM $.
   $}
 
   ${
