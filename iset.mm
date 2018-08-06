@@ -1,4 +1,4 @@
-$( iset.mm - Version of 5-Aug-2018
+$( iset.mm - Version of 6-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -27595,17 +27595,34 @@ $)
       rzal ) ABCEZCFGZBHCIZAJZBKUCLZBKUAUBUDUEBUDALUEDUCAMNOABCPBCQRABCTS $.
   $}
 
+  $( Inhabited classes and restricted quantification.  (Contributed by Jim
+     Kingdon, 6-Aug-2018.) $)
+  ralm $p |- ( ( E. x x e. A -> A. x e. A ph ) <-> A. x e. A ph ) $=
+    ( cv wcel wex wral wal df-ral imbi2i 19.38 sylbi pm2.43 alimi syl
+    wi sylibr ax-1 impbii ) BDCEZBFZABCGZPZUBUCTAPZBHZUBUCTUDPZBHZUEU
+    CUAUEPUGUBUEUAABCIZJTUDBKLUFUDBTAMNOUHQUBUARS $.
+
   $( TODO - shorten r19.3zv, r19.27zv, r19.28zv, raaanv w/ non-v $)
   ${
     $d x y A $.
     raaan.1 $e |- F/ y ph $.
     raaan.2 $e |- F/ x ps $.
+    $( Special case of ~ raaan where ` A ` is inhabited.  (Contributed by Jim
+       Kingdon, 6-Aug-2018.) $)
+    raaanlem $p |- ( E. x x e. A ->
+      ( A. x e. A A. y e. A ( ph /\ ps ) <->
+         ( A. x e. A ph /\ A. y e. A ps ) ) ) $=
+      ( cv wcel wex wa wral wb eleq1 cbvexv r19.28m ralbidv sylbi nfcv nfralxy
+      r19.27m bitrd ) CHZEIZCJZABKDELZCELZABDELZKZCELZACELUHKUEDHZEIZDJZUGUJMUD
+      ULCDUCUKENOUMUFUICEABDEFPQRAUHCEBCDECESGTUAUB $.
+
     $( Rearrange restricted quantifiers.  (Contributed by NM, 26-Oct-2010.) $)
     raaan $p |- ( A. x e. A A. y e. A ( ph /\ ps ) <->
                   ( A. x e. A ph /\ A. y e. A ps ) ) $=
-      ( wa wral wb c0 wceq rzal pm5.1 syl12anc wne r19.28z ralbidv nfcv nfral
-      r19.27z bitrd pm2.61ine ) ABHDEIZCEIZACEIZBDEIZHZJZEKEKLUEUFUGUIUDCEMACEM
-      BDEMUEUHNOEKPZUEAUGHZCEIUHUJUDUKCEABDEFQRAUGCEBCDECESGTUAUBUC $.
+      ( cv wcel wex wa wral wi raaanlem pm5.74i ralm jcab eleq1 bitri
+      cbvexv imbi1i anbi12i 3bitr3i ) CHZEIZCJZABKDELZCELZMUFACELZBDE
+      LZKZMZUHUKUFUHUKABCDEFGNOUGCEPULUFUIMZUFUJMZKUKUFUIUJQUMUIUNUJA
+      CEPUNDHZEIZDJZUJMUJUFUQUJUEUPCDUDUOERTUABDEPSUBSUC $.
   $}
 
   ${
