@@ -27576,11 +27576,13 @@ $)
 
   ${
     $d x A $.
-    rgenz.1 $e |- ( ( A =/= (/) /\ x e. A ) -> ph ) $.
-    $( Generalization rule that eliminates a non-zero class requirement.
-       (Contributed by NM, 8-Dec-2012.) $)
-    rgenz $p |- A. x e. A ph $=
-      ( wral c0 rzal wne ralrimiva pm2.61ine ) ABCECFABCGCFHABCDIJ $.
+    rgenm.1 $e |- ( ( E. x x e. A /\ x e. A ) -> ph ) $.
+    $( Generalization rule that eliminates an inhabited class requirement.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    rgenm $p |- A. x e. A ph $=
+      ( wral cv wcel wi wal wex nfe1 ex alrimi 19.38 ax-mp pm5.4 mpbi
+      albii df-ral mpbir ) ABCEBFCGZAHZBIZUAUBHZBIZUCUABJZUCHUEUFUBBU
+      ABKUFUAADLMUAUBBNOUDUBBUAAPRQABCST $.
   $}
 
   ${
