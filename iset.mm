@@ -27655,6 +27655,137 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                          Power classes
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare the symbol for power class. $)
+  $c ~P $.  $( Calligraphic P $)
+
+  $( Extend class notation to include power class.  (The tilde in the Metamath
+     token is meant to suggest the calligraphic font of the P.) $)
+  cpw $a class ~P A $.
+
+  ${
+    $d x A $.  $d y A $.  $d w x $.  $d w y $.  $d w A $.  $d w z $.  $d z x $.
+    $d z y $.  $d z A $.
+    $( Soundness justification theorem for ~ df-pw .  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       29-Jun-2011.) $)
+    pwjust $p |- { x | x C_ A } = { y | y C_ A } $=
+      ( vz cv wss cab sseq1 cbvabv eqtri ) AEZCFZAGDEZCFZDGBEZCFZBGLNADKMCHINPD
+      BMOCHIJ $.
+  $}
+
+  ${
+    $d x A $.
+    $( Define power class.  Definition 5.10 of [TakeutiZaring] p. 17, but we
+       also let it apply to proper classes, i.e. those that are not members of
+       ` _V ` .  When applied to a set, this produces its power set.  A power
+       set of S is the set of all subsets of S, including the empty set and S
+       itself.  For example, if ` A = { 3 , 5 , 7 } ` , then
+       ` ~P A = { (/) , { 3 } , { 5 } , { 7 } , { 3 , 5 } , `
+       ` { 3 , 7 } , { 5 , 7 } , { 3 , 5 , 7 } } ` ( ~ ex-pw ).  We will later
+       introduce the Axiom of Power Sets ~ ax-pow , which can be expressed in
+       class notation per ~ pwexg .  Still later we will prove, in ~ hashpw ,
+       that the size of the power set of a finite set is 2 raised to the power
+       of the size of the set.  (Contributed by NM, 5-Aug-1993.) $)
+    df-pw $a |- ~P A = { x | x C_ A } $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Equality theorem for power class.  (Contributed by NM, 5-Aug-1993.) $)
+    pweq $p |- ( A = B -> ~P A = ~P B ) $=
+      ( vx wceq cv wss cab cpw sseq2 abbidv df-pw 3eqtr4g ) ABDZCEZAFZCGNBFZCGA
+      HBHMOPCABNIJCAKCBKL $.
+  $}
+
+  ${
+    pweqi.1 $e |- A = B $.
+    $( Equality inference for power class.  (Contributed by NM,
+       27-Nov-2013.) $)
+    pweqi $p |- ~P A = ~P B $=
+      ( wceq cpw pweq ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    pweqd.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for power class.  (Contributed by NM,
+       27-Nov-2013.) $)
+    pweqd $p |- ( ph -> ~P A = ~P B ) $=
+      ( wceq cpw pweq syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    ${
+      elpw.1 $e |- A e. _V $.
+      $( Membership in a power class.  Theorem 86 of [Suppes] p. 47.
+         (Contributed by NM, 31-Dec-1993.) $)
+      elpw $p |- ( A e. ~P B <-> A C_ B ) $=
+        ( vx cv wss cpw sseq1 df-pw elab2 ) DEZBFABFDABGCKABHDBIJ $.
+    $}
+
+    $( Membership in a power class.  Theorem 86 of [Suppes] p. 47.  See also
+       ~ elpw2g .  (Contributed by NM, 6-Aug-2000.) $)
+    elpwg $p |- ( A e. V -> ( A e. ~P B <-> A C_ B ) ) $=
+      ( vx cv cpw wcel wss eleq1 sseq1 vex elpw vtoclbg ) DEZBFZGNBHAOGABHDACNA
+      OINABJNBDKLM $.
+  $}
+
+  $( Subset relation implied by membership in a power class.  (Contributed by
+     NM, 17-Feb-2007.) $)
+  elpwi $p |- ( A e. ~P B -> A C_ B ) $=
+    ( cpw wcel wss elpwg ibi ) ABCZDABEABHFG $.
+
+  ${
+    elpwid.1 $e |- ( ph -> A e. ~P B ) $.
+    $( An element of a power class is a subclass.  Deduction form of ~ elpwi .
+       (Contributed by David Moews, 1-May-2017.) $)
+    elpwid $p |- ( ph -> A C_ B ) $=
+      ( cpw wcel wss elpwi syl ) ABCEFBCGDBCHI $.
+  $}
+
+  $( If ` A ` belongs to a part of ` C ` then ` A ` belongs to ` C ` .
+     (Contributed by FL, 3-Aug-2009.) $)
+  elelpwi $p |- ( ( A e. B /\ B e. ~P C ) -> A e. C ) $=
+    ( cpw wcel elpwi sseld impcom ) BCDEZABEACEIBCABCFGH $.
+
+  ${
+    $d y z A $.  $d x y z $.
+    nfpw.1 $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for power class.  (Contributed by NM,
+       28-Oct-2003.)  (Revised by Mario Carneiro, 13-Oct-2016.) $)
+    nfpw $p |- F/_ x ~P A $=
+      ( vy cpw cv wss cab df-pw nfcv nfss nfab nfcxfr ) ABEDFZBGZDHDBIOADANBANJ
+      CKLM $.
+  $}
+
+  $( Membership of the original in a power set.  (Contributed by Stefan O'Rear,
+     1-Feb-2015.) $)
+  pwidg $p |- ( A e. V -> A e. ~P A ) $=
+    ( wcel cpw wss ssid elpwg mpbiri ) ABCAADCAAEAFAABGH $.
+
+  ${
+    pwid.1 $e |- A e. _V $.
+    $( A set is a member of its power class.  Theorem 87 of [Suppes] p. 47.
+       (Contributed by NM, 5-Aug-1993.) $)
+    pwid $p |- A e. ~P A $=
+      ( cvv wcel cpw pwidg ax-mp ) ACDAAEDBACFG $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Subclass relationship for power class.  (Contributed by NM,
+       21-Jun-2009.) $)
+    pwss $p |- ( ~P A C_ B <-> A. x ( x C_ A -> x e. B ) ) $=
+      ( cpw wss cv wcel wi wal dfss2 df-pw abeq2i imbi1i albii bitri ) BDZCEAFZ
+      PGZQCGZHZAIQBEZSHZAIAPCJTUBARUASUAAPABKLMNO $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -28214,6 +28345,11 @@ htmldef "(/)" as
     /*althtmldef "(/)" as '&#8960;';*/
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "(/)" as "\varnothing";
+htmldef "~P" as "<IMG SRC='scrp.gif' WIDTH=16 HEIGHT=19 ALT=' ~P' TITLE='~P'>";
+  /* 4-Aug-2016 NM Put space after ~P, needed for e.g. ncanth where it
+     overlapped the _V */
+  althtmldef "~P" as '&#119979; ';
+  latexdef "~P" as "{\cal P}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
