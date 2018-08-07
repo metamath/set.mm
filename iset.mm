@@ -1,4 +1,4 @@
-$( iset.mm - Version of 4-Aug-2018
+$( iset.mm - Version of 6-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -10118,10 +10118,10 @@ $)
     ( ax-ie2 ) ABCD $.
 
   ${
-    19.23.1 $e |- ( ps -> A. x ps ) $.
+    19.23h.1 $e |- ( ps -> A. x ps ) $.
     $( Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
        (Revised by Mario Carneiro, 1-Feb-2015.) $)
-    19.23 $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
+    19.23h $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
       ( wal wi wex wb ax-gen 19.23ht ax-mp ) BBCEFZCEABFCEACGBFHLCDIABCJK $.
   $}
 
@@ -10134,7 +10134,7 @@ $)
      by NM, 5-Aug-1993.)  (Revised by NM, 1-Feb-2015.)  (Revised by Mario
      Carneiro, 12-May-2015.) $)
   alnex $p |- ( A. x -. ph <-> -. E. x ph ) $=
-    ( wfal wi wal wex wn fal pm2.21i 19.23 dfnot albii 3bitr4i ) ACDZBEABFZC
+    ( wfal wi wal wex wn fal pm2.21i 19.23h dfnot albii 3bitr4i ) ACDZBEABFZC
     DAGZBEOGACBCCBEHIJPNBAKLOKM $.
 
   ${
@@ -11066,7 +11066,7 @@ $)
   $( If a wff is true, it is true for at least one instance.  Special case of
      Theorem 19.8 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
   19.8a $p |- ( ph -> E. x ph ) $=
-    ( wex wi wal id hbe1 19.23 mpbir spi ) AABCZDZBLBEKKDKFAKBABGHIJ $.
+    ( wex wi wal id hbe1 19.23h mpbir spi ) AABCZDZBLBEKKDKFAKBABGHIJ $.
 
   ${
     19.23bi.1 $e |- ( E. x ph -> ps ) $.
@@ -11082,7 +11082,7 @@ $)
     $( Inference from Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.)  (Proof shortened by Andrew Salmon, 13-May-2011.) $)
     exlimih $p |- ( E. x ph -> ps ) $=
-      ( wi wex 19.23 mpgbi ) ABFACGBFCABCDHEI $.
+      ( wi wex 19.23h mpgbi ) ABFACGBFCABCDHEI $.
   $}
 
   ${
@@ -11113,7 +11113,7 @@ $)
     $( Deduction from Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
        28-Jan-1997.) $)
     exlimdh $p |- ( ph -> ( E. x ps -> ch ) ) $=
-      ( wi wal wex alrimih 19.23 sylib ) ABCHZDIBDJCHANDEGKBCDFLM $.
+      ( wi wal wex alrimih 19.23h sylib ) ABCHZDIBDJCHANDEGKBCDFLM $.
   $}
 
   ${
@@ -11616,7 +11616,7 @@ $)
      quantifiers on the same variable.  (Contributed by Mario Carneiro,
      24-Sep-2016.) $)
   nf2 $p |- ( F/ x ph <-> ( E. x ph -> A. x ph ) ) $=
-    ( wnf wal wi wex df-nf nfa1 nfri 19.23 bitri ) ABCAABDZEBDABFLEABGALBLBABHI
+    ( wnf wal wi wex df-nf nfa1 nfri 19.23h bitri ) ABCAABDZEBDABFLEABGALBLBABHI
     JK $.
 
   $( An alternative definition of ~ df-nf .  (Contributed by Mario Carneiro,
@@ -11690,6 +11690,14 @@ $)
   19.23t $p |- ( F/ x ps -> ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) ) $=
     ( wnf wi wal wex exim 19.9t biimpd syl9r nfr imim2d 19.38 syl6 impbid ) BCD
     ZABECFZACGZBEZRSBCGZQBABCHQUABBCIJKQTSBCFZERQBUBSBCLMABCNOP $.
+
+  ${
+    19.23.1 $e |- F/ x ps $.
+    $( Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
+       (Revised by Mario Carneiro, 24-Sep-2016.) $)
+    19.23 $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
+      ( wnf wi wal wex wb 19.23t ax-mp ) BCEABFCGACHBFIDABCJK $.
+  $}
 
   ${
     19.32dc.1 $e |- F/ x ph $.
@@ -13034,7 +13042,7 @@ $)
              ( E. x ( x = y /\ ph ) -> A. x ( x = y -> ph ) ) ) $=
       ( vz weq wex wal wa wi wo a9e wnf dveeq2or nfnf1 nfri ax11v equequ2 ax-mp
       wb hba1 adantl nfr imp imbi1d sps albidh syl imbi2d imbi12d mpbii ex imp4a
-      alrimih 19.21t mpbid 19.23 syl6ib orim2i pm2.76 olcs exlimiv ) DCEZDFBCEZB
+      alrimih 19.21t mpbid 19.23h syl6ib orim2i pm2.76 olcs exlimiv ) DCEZDFBCEZB
       GZVCAHZBFVCAIZBGZIZJZDCKVBVIDVDVBVIVDVBVHIZJZVDVBJVIIVDVBBLZJVKBCDMVLVJVD
       VLVBVEVGIZBGZVHVLVBVMIZBGVBVNIVLVOBVLBVBBNOVLVBVCAVGVLVBVCAVGIZIZVLVBHZBD
       EZAVSAIZBGZIZIVQABDPVRVSVCWBVPVBVSVCSVLDCBQZUAVRWAVGAVRVBBGZWAVGSVLVBWDVB
@@ -13460,7 +13468,7 @@ $)
     $( Special case of Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
        28-Jun-1998.) $)
     19.23v $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
-      ( ax-17 19.23 ) ABCBCDE $.
+      ( ax-17 19.23h ) ABCBCDE $.
   $}
 
   ${
@@ -13551,7 +13559,7 @@ $)
     $( Theorem *11.53 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
        Salmon, 24-May-2011.) $)
     pm11.53 $p |- ( A. x A. y ( ph -> ps ) <-> ( E. x ph -> A. y ps ) ) $=
-      ( wi wal wex 19.21v albii ax-17 hbal 19.23 bitri ) ABEDFZCFABDFZEZCFACGOE
+      ( wi wal wex 19.21v albii ax-17 hbal 19.23h bitri ) ABEDFZCFABDFZEZCFACGOE
       NPCABDHIAOCBCDBCJKLM $.
   $}
 
@@ -19659,7 +19667,9 @@ $)
   ${
     $d x ps $.
     $( One direction of a restricted quantifier version of Theorem 19.36 of
-       [Margaris] p. 90.  (Contributed by NM, 22-Oct-2003.) $)
+       [Margaris] p. 90.  In classical logic, the converse would hold if ` A `
+       has at least one element, but in intuitionistic logic, that is not a
+       sufficient condition.  (Contributed by NM, 22-Oct-2003.) $)
     r19.36av $p |- ( E. x e. A ( ph -> ps ) -> ( A. x e. A ph -> ps ) ) $=
       ( wi wrex wral r19.35-1 cv wcel idd rexlimiv imim2i syl ) ABECD
       FACDGZBCDFZEOBEABCDHPBOBBCDCIDJBKLMN $.
@@ -19668,7 +19678,9 @@ $)
   ${
     r19.37.1 $e |- F/ x ph $.
     $( Restricted version of one direction of Theorem 19.37 of [Margaris]
-       p. 90.  (Contributed by FL, 13-May-2012.)  (Revised by Mario Carneiro,
+       p. 90.  In classical logic the converse would hold if ` A ` has at least
+       one element, but that is not sufficient in intuitionistic logic.
+       (Contributed by FL, 13-May-2012.)  (Revised by Mario Carneiro,
        11-Dec-2016.) $)
     r19.37 $p |- ( E. x e. A ( ph -> ps ) -> ( ph -> E. x e. A ps ) ) $=
       ( wral wi wrex cv wcel ax-1 ralrimi r19.35-1 syl5 ) AACDFABGCDH
@@ -19678,8 +19690,7 @@ $)
   ${
     $d x ph $.
     $( Restricted version of one direction of Theorem 19.37 of [Margaris]
-       p. 90.  (The other direction doesn't hold when ` A ` is empty.)
-       (Contributed by NM, 2-Apr-2004.) $)
+       p. 90.  (Contributed by NM, 2-Apr-2004.) $)
     r19.37av $p |- ( E. x e. A ( ph -> ps ) -> ( ph -> E. x e. A ps ) ) $=
       ( nfv r19.37 ) ABCDACEF $.
   $}
@@ -27454,6 +27465,194 @@ $)
     BAKUQUMLZCUPFZURUSUPCUPULCQMUTUNUPAHZFZVABAHZFZURCUPANBAOVBVDLUNV
     CFZUKUOUNVAVCQUKBVCFZVEUOIZUKBADZEFVFUJVHEABPRBASTVGVCBVEVCBFUOUN
     VCBQUAUBUCUDUEUGUHUFUI $.
+
+  ${
+    $d x A $.
+    $( Theorem 19.2 of [Margaris] p. 89 with restricted quantifiers (compare
+       ~ 19.2 ).  The restricted version is valid only when the domain of
+       quantification is inhabited.  (Contributed by Jim Kingdon,
+       5-Aug-2018.) $)
+    r19.2m $p |- ( ( E. x x e. A /\ A. x e. A ph ) -> E. x e. A ph ) $=
+      ( wral cv wcel wex wrex wa wal df-ral exintr sylbi df-rex syl6ibr
+      wi impcom ) ABCDZBECFZBGZABCHZRTSAIBGZUARSAPBJTUBPABCKSABLMABCNOQ
+      $.
+  $}
+
+  ${
+    $d x A $.
+    r19.3rm.1 $e |- F/ x ph $.
+    $( Restricted quantification of wff not containing quantified variable.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.3rm $p |- ( E. x x e. A -> ( ph <-> A. x e. A ph ) ) $=
+      ( cv wcel wex wi wral biimt wal df-ral 19.23 bitri syl6bbr ) BECF
+      ZBGZAQAHZABCIZQAJSPAHBKRABCLPABDMNO $.
+
+    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.28m $p |- ( E. x x e. A ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
+      ( cv wcel wex wral wa r19.3rm anbi1d r19.26 syl6rbbr ) CFDGCHZABC
+      DIZJACDIZPJABJCDIOAQPACDEKLABCDMN $.
+  $}
+
+  ${
+    $d x A $.  $d x ph $.
+    $( Restricted quantification of wff not containing quantified variable.
+       (Contributed by Jim Kingdon, 6-Aug-2018.) $)
+    r19.3rmv $p |- ( E. x x e. A -> ( ph <-> A. x e. A ph ) ) $=
+      ( nfv r19.3rm ) ABCABDE $.
+
+    $( Restricted quantification of wff not containing quantified variable.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.9rmv $p |- ( E. x x e. A -> ( ph <-> E. x e. A ph ) ) $=
+      ( wrex cv wcel wex wa df-rex 19.41v bitri baibr ) ABCDZBECFZBGZAMNAHBGOAH
+      ABCINABJKL $.
+
+    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 6-Aug-2018.) $)
+    r19.28mv $p |- ( E. x x e. A ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
+      ( nfv r19.28m ) ABCDACEF $.
+
+    $( Restricted version of Theorem 19.45 of [Margaris] p. 90.  (Contributed
+       by NM, 27-May-1998.) $)
+    r19.45mv $p |- ( E. x x e. A ->
+                   ( E. x e. A ( ph \/ ps ) <-> ( ph \/ E. x e. A ps ) ) ) $=
+      ( cv wcel wex wrex wo r19.9rmv orbi1d r19.43 syl6rbbr ) CEDFCGZAB
+      CDHZIACDHZOIABICDHNAPOACDJKABCDLM $.
+  $}
+
+  ${
+    $d x A $.
+    r19.27m.1 $e |- F/ x ps $.
+    $( Restricted quantifier version of Theorem 19.27 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.27m $p |- ( E. x x e. A ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( A. x e. A ph /\ ps ) ) ) $=
+      ( cv wcel wex wral wa r19.3rm anbi2d r19.26 syl6rbbr ) CFDGCHZACD
+      IZBJPBCDIZJABJCDIOBQPBCDEKLABCDMN $.
+  $}
+
+  ${
+    $d x A $.  $d x ps $.
+    $( Restricted quantifier version of Theorem 19.27 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.27mv $p |- ( E. x x e. A ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( A. x e. A ph /\ ps ) ) ) $=
+      ( nfv r19.27m ) ABCDBCEF $.
+  $}
+
+  ${
+    $d x A $.
+    $( Vacuous quantification is always true.  (Contributed by NM,
+       11-Mar-1997.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    rzal $p |- ( A = (/) -> A. x e. A ph ) $=
+      ( c0 wceq cv wcel ne0i necon2bi pm2.21d ralrimiv ) CDEZABCLBFZCGZANCDCMHI
+      JK $.
+
+    $( Restricted existential quantification implies its restriction is
+       nonempty.  (Contributed by Szymon Jaroszewicz, 3-Apr-2007.) $)
+    rexn0 $p |- ( E. x e. A ph -> A =/= (/) ) $=
+      ( c0 wne cv wcel ne0i a1d rexlimiv ) ACDEZBCBFZCGKACLHIJ $.
+
+    $( Idempotent law for restricted quantifier.  (Contributed by NM,
+       28-Mar-1997.) $)
+    ralidm $p |- ( A. x e. A A. x e. A ph <-> A. x e. A ph ) $=
+      ( wral nfra1 cv wcel wa anidm rsp2 syl5bir ralrimi wi wal wex ax-1 sylibr
+      19.23 df-ral impbii ) ABCDZBCDZUAUBABCUABCEBFCGZUCUCHUBAUCIABBCCJKLUAUCUA
+      MBNZUBUAUCBOZUAMUDUAUEPUCUABABCERQUABCSQT $.
+  $}
+
+  $( Vacuous universal quantification is always true.  (Contributed by NM,
+     20-Oct-2005.) $)
+  ral0 $p |- A. x e. (/) ph $=
+    ( c0 cv wcel noel pm2.21i rgen ) ABCBDZCEAIFGH $.
+
+  ${
+    $d x A $.
+    rgenm.1 $e |- ( ( E. x x e. A /\ x e. A ) -> ph ) $.
+    $( Generalization rule that eliminates an inhabited class requirement.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    rgenm $p |- A. x e. A ph $=
+      ( wral cv wcel wi wal wex nfe1 ex alrimi 19.38 ax-mp pm5.4 mpbi
+      albii df-ral mpbir ) ABCEBFCGZAHZBIZUAUBHZBIZUCUABJZUCHUEUFUBBU
+      ABKUFUAADLMUAUBBNOUDUBBUAAPRQABCST $.
+  $}
+
+  ${
+    $d x A $.
+    ralf0.1 $e |- -. ph $.
+    $( The quantification of a falsehood is vacuous when true.  (Contributed by
+       NM, 26-Nov-2005.) $)
+    ralf0 $p |- ( A. x e. A ph <-> A = (/) ) $=
+      ( wral c0 wceq cv wcel wi wal wn con3 mpi alimi df-ral eq0 3imtr4i impbii
+      rzal ) ABCEZCFGZBHCIZAJZBKUCLZBKUAUBUDUEBUDALUEDUCAMNOABCPBCQRABCTS $.
+  $}
+
+  $( Inhabited classes and restricted quantification.  (Contributed by Jim
+     Kingdon, 6-Aug-2018.) $)
+  ralm $p |- ( ( E. x x e. A -> A. x e. A ph ) <-> A. x e. A ph ) $=
+    ( cv wcel wex wral wal df-ral imbi2i 19.38 sylbi pm2.43 alimi syl
+    wi sylibr ax-1 impbii ) BDCEZBFZABCGZPZUBUCTAPZBHZUBUCTUDPZBHZUEU
+    CUAUEPUGUBUEUAABCIZJTUDBKLUFUDBTAMNOUHQUBUARS $.
+
+  ${
+    $d x y A $.
+    raaan.1 $e |- F/ y ph $.
+    raaan.2 $e |- F/ x ps $.
+    $( Special case of ~ raaan where ` A ` is inhabited.  (Contributed by Jim
+       Kingdon, 6-Aug-2018.) $)
+    raaanlem $p |- ( E. x x e. A ->
+      ( A. x e. A A. y e. A ( ph /\ ps ) <->
+         ( A. x e. A ph /\ A. y e. A ps ) ) ) $=
+      ( cv wcel wex wa wral wb eleq1 cbvexv r19.28m ralbidv sylbi nfcv nfralxy
+      r19.27m bitrd ) CHZEIZCJZABKDELZCELZABDELZKZCELZACELUHKUEDHZEIZDJZUGUJMUD
+      ULCDUCUKENOUMUFUICEABDEFPQRAUHCEBCDECESGTUAUB $.
+
+    $( Rearrange restricted quantifiers.  (Contributed by NM, 26-Oct-2010.) $)
+    raaan $p |- ( A. x e. A A. y e. A ( ph /\ ps ) <->
+                  ( A. x e. A ph /\ A. y e. A ps ) ) $=
+      ( cv wcel wex wa wral wi raaanlem pm5.74i ralm jcab eleq1 bitri
+      cbvexv imbi1i anbi12i 3bitr3i ) CHZEIZCJZABKDELZCELZMUFACELZBDE
+      LZKZMZUHUKUFUHUKABCDEFGNOUGCEPULUFUIMZUFUJMZKUKUFUIUJQUMUIUNUJA
+      CEPUNDHZEIZDJZUJMUJUFUQUJUEUPCDUDUOERTUABDEPSUBSUC $.
+  $}
+
+  ${
+    $d y ph $.  $d x ps $.  $d x y A $.
+    $( Rearrange restricted quantifiers.  (Contributed by NM, 11-Mar-1997.) $)
+    raaanv $p |- ( A. x e. A A. y e. A ( ph /\ ps ) <->
+                  ( A. x e. A ph /\ A. y e. A ps ) ) $=
+      ( nfv raaan ) ABCDEADFBCFG $.
+  $}
+
+  ${
+    $d z y $.  $d z x A $.
+    $( Set substitution into the first argument of a subset relation.
+       (Contributed by Rodolfo Medina, 7-Jul-2010.)  (Proof shortened by Mario
+       Carneiro, 14-Nov-2016.) $)
+    sbss $p |- ( [ y / x ] x C_ A <-> y C_ A ) $=
+      ( vz cv wss wsb vex sbequ sseq1 nfv sbie vtoclb ) AEZCFZADGDEZCFZOABGBEZC
+      FDRBHODBAIPRCJOQADQAKNPCJLM $.
+  $}
+
+  ${
+    $d A y $.  $d B y $.  $d C y $.  $d D y $.  $d x y $.
+    $( Distribute proper substitution through a subclass relation.
+       (Contributed by Alan Sare, 22-Jul-2012.)  (Proof shortened by Alexander
+       van der Vekens, 23-Jul-2017.) $)
+    sbcss $p |- ( A e. B -> ( [. A / x ]. C C_ D <->
+      [_ A / x ]_ C C_ [_ A / x ]_ D ) ) $=
+      ( vy wcel cv wi wal wsbc csb wss sbcalg sbcimg sbcel2g bitrd albidv dfss2
+      imbi12d sbcbii 3bitr4g ) BCGZFHZDGZUDEGZIZFJZABKZUDABDLZGZUDABELZGZIZFJZD
+      EMZABKUJULMUCUIUGABKZFJUOUGFABCNUCUQUNFUCUQUEABKZUFABKZIUNUEUFABCOUCURUKU
+      SUMABUDDCPABUDECPTQRQUPUHABFDESUAFUJULSUB $.
+
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
