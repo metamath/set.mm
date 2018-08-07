@@ -27684,13 +27684,12 @@ $)
        also let it apply to proper classes, i.e. those that are not members of
        ` _V ` .  When applied to a set, this produces its power set.  A power
        set of S is the set of all subsets of S, including the empty set and S
-       itself.  For example, if ` A = { 3 , 5 , 7 } ` , then
-       ` ~P A = { (/) , { 3 } , { 5 } , { 7 } , { 3 , 5 } , `
-       ` { 3 , 7 } , { 5 , 7 } , { 3 , 5 , 7 } } ` ( ~ ex-pw ).  We will later
-       introduce the Axiom of Power Sets ~ ax-pow , which can be expressed in
-       class notation per ~ pwexg .  Still later we will prove, in ~ hashpw ,
-       that the size of the power set of a finite set is 2 raised to the power
-       of the size of the set.  (Contributed by NM, 5-Aug-1993.) $)
+       itself.  For example, if ` A ` is { 3 , 5 , 7 }, then ` ~P A ` is {
+       (/) , { 3 } , { 5 } , { 7 } , { 3 , 5 } , { 3 , 7 } , { 5 , 7 } , { 3 ,
+       5 , 7 } }.  We will later introduce the Axiom of Power Sets.  Still
+       later we will prove that the size of the power set of a finite set is 2
+       raised to the power of the size of the set.  (Contributed by NM,
+       5-Aug-1993.) $)
     df-pw $a |- ~P A = { x | x C_ A } $.
   $}
 
@@ -27728,8 +27727,8 @@ $)
         ( vx cv wss cpw sseq1 df-pw elab2 ) DEZBFABFDABGCKABHDBIJ $.
     $}
 
-    $( Membership in a power class.  Theorem 86 of [Suppes] p. 47.  See also
-       ~ elpw2g .  (Contributed by NM, 6-Aug-2000.) $)
+    $( Membership in a power class.  Theorem 86 of [Suppes] p. 47.
+       (Contributed by NM, 6-Aug-2000.) $)
     elpwg $p |- ( A e. V -> ( A e. ~P B <-> A C_ B ) ) $=
       ( vx cv cpw wcel wss eleq1 sseq1 vex elpw vtoclbg ) DEZBFZGNBHAOGABHDACNA
       OINABJNBDKLM $.
