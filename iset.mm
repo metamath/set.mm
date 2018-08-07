@@ -27499,10 +27499,9 @@ $)
   ${
     $d x A $.  $d x ph $.
     $( Restricted quantification of wff not containing quantified variable.
-       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+       (Contributed by Jim Kingdon, 6-Aug-2018.) $)
     r19.3rmv $p |- ( E. x x e. A -> ( ph <-> A. x e. A ph ) ) $=
-      ( cv wcel wex wi wral biimt wal df-ral 19.23v bitri syl6bbr ) BDC
-      EZBFZAPAGZABCHZPAIROAGBJQABCKOABLMN $.
+      ( nfv r19.3rm ) ABCABDE $.
 
     $( Restricted quantification of wff not containing quantified variable.
        (Contributed by Jim Kingdon, 5-Aug-2018.) $)
@@ -27512,11 +27511,10 @@ $)
 
     $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
        is valid only when the domain of quantification is inhabited.
-       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+       (Contributed by Jim Kingdon, 6-Aug-2018.) $)
     r19.28mv $p |- ( E. x x e. A ->
                    ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
-      ( cv wcel wex wral wa r19.3rmv anbi1d r19.26 syl6rbbr ) CEDFCGZAB
-      CDHZIACDHZOIABICDHNAPOACDJKABCDLM $.
+      ( nfv r19.28m ) ABCDACEF $.
 
     $( Restricted version of Theorem 19.45 of [Margaris] p. 90.  (Contributed
        by NM, 27-May-1998.) $)
@@ -27602,7 +27600,6 @@ $)
     wi sylibr ax-1 impbii ) BDCEZBFZABCGZPZUBUCTAPZBHZUBUCTUDPZBHZUEU
     CUAUEPUGUBUEUAABCIZJTUDBKLUFUDBTAMNOUHQUBUARS $.
 
-  $( TODO - shorten r19.3zv, r19.27zv, r19.28zv, raaanv w/ non-v $)
   ${
     $d x y A $.
     raaan.1 $e |- F/ y ph $.
@@ -27630,9 +27627,7 @@ $)
     $( Rearrange restricted quantifiers.  (Contributed by NM, 11-Mar-1997.) $)
     raaanv $p |- ( A. x e. A A. y e. A ( ph /\ ps ) <->
                   ( A. x e. A ph /\ A. y e. A ps ) ) $=
-      ( wa wral wb wceq rzal pm5.1 syl12anc wne r19.28zv ralbidv r19.27zv bitrd
-      c0 pm2.61ine ) ABFDEGZCEGZACEGZBDEGZFZHZERERIUAUBUCUETCEJACEJBDEJUAUDKLER
-      MZUAAUCFZCEGUDUFTUGCEABDENOAUCCEPQS $.
+      ( nfv raaan ) ABCDEADFBCFG $.
   $}
 
   ${
