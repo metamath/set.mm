@@ -28260,8 +28260,9 @@ $)
     $( The singleton of a proper class (one that doesn't exist) is the empty
        set.  Theorem 7.2 of [Quine] p. 48.  (Contributed by NM, 5-Aug-1993.) $)
     snprc $p |- ( -. A e. _V <-> { A } = (/) ) $=
-      ( vx csn c0 wceq cvv wcel cv wex wn elsn exbii neq0 isset 3bitr4i con1bii
-      ) ACZDEZAFGZBHZQGZBITAEZBIRJSUAUBBBAKLBQMBANOP $.
+      ( vx cv csn wcel wex wn wceq c0 cvv elsn exbii notbii wal alnex
+      eq0 bitri isset 3bitr4ri ) BCZADZEZBFZGZTAHZBFZGUAIHZAJEZGUCUFU
+      BUEBBAKLMUGUBGBNUDBUAPUBBOQUHUFBARMS $.
   $}
 
   ${
