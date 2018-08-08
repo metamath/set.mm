@@ -27826,11 +27826,10 @@ $)
     df-sn $a |- { A } = { x | x = A } $.
   $}
 
-  $( Define unordered pair of classes.  Definition 7.1 of [Quine] p. 48.  For
-     example, ` A e. { 1 , -u 1 } -> ( A ^ 2 ) = 1 ` ( ~ ex-pr ).  They are
-     unordered, so ` { A , B } = { B , A } ` as proven by ~ prcom .  For a more
-     traditional definition, but requiring a dummy variable, see ~ dfpr2 .
-     (Contributed by NM, 5-Aug-1993.) $)
+  $( Define unordered pair of classes.  Definition 7.1 of [Quine] p. 48.  They
+     are unordered, so ` { A , B } = { B , A } ` as proven by ~ prcom .  For a
+     more traditional definition, but requiring a dummy variable, see
+     ~ dfpr2 .  (Contributed by NM, 5-Aug-1993.) $)
   df-pr $a |- { A , B } = ( { A } u. { B } ) $.
 
   $( Define unordered triple of classes.  Definition of [Enderton] p. 19.
@@ -27842,10 +27841,8 @@ $)
     $( Definition of an ordered pair, equivalent to Kuratowski's definition
        ` { { A } , { A , B } } ` when the arguments are sets.  Since the
        behavior of Kuratowski definition is not very useful for proper classes,
-       we define it to be empty in this case (see ~ opprc1 , ~ opprc2 , and
-       ~ 0nelop ).  For Kuratowski's actual definition when the arguments are
-       sets, see ~ dfop .  For the justifying theorem (for sets) see ~ opth .
-       See ~ dfopif for an equivalent formulation using the ` if ` operation.
+       we define it to be empty in this case (see ~ opprc1 and ~ opprc2 ).  For
+       Kuratowski's actual definition when the arguments are sets, see ~ dfop .
 
        Definition 9.1 of [Quine] p. 58 defines an ordered pair unconditionally
        as ` <. A , B >. = { { A } , { A , B } } ` , which has different
@@ -27857,18 +27854,13 @@ $)
        There are other ways to define ordered pairs.  The basic requirement is
        that two ordered pairs are equal iff their respective members are
        equal.  In 1914 Norbert Wiener gave the first successful definition
-       ` <. A , B >. ` _2 ` = { { { A } , (/) } , { { B } } } ` , justified by
-       ~ opthwiener .  This was simplified by Kazimierz Kuratowski in 1921 to
-       our present definition.  An even simpler definition ` <. A , B >. ` _3
-       ` = { A , { A , B } } ` is justified by ~ opthreg , but it requires the
-       Axiom of Regularity for its justification and is not commonly used.  A
-       definition that also works for proper classes is ` <. A , B >. ` _4
-       ` = ( ( A X. { (/) } ) u. ( B X. { { (/) } } ) ) ` , justified by
-       ~ opthprc .  If we restrict our sets to nonnegative integers, an ordered
-       pair definition that involves only elementary arithmetic is provided by
-       ~ nn0opthi .  Finally, an ordered pair of real numbers can be
-       represented by a complex number as shown by ~ cru .  (Contributed by NM,
-       28-May-1995.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+       ` <. A , B >. ` _2 ` = { { { A } , (/) } , { { B } } } ` .  This was
+       simplified by Kazimierz Kuratowski in 1921 to our present definition.
+       An even simpler definition is ` <. A , B >. ` _3
+       ` = { A , { A , B } } ` , but it requires the Axiom of Regularity for
+       its justification and is not commonly used.  Finally, an ordered pair of
+       real numbers can be represented by a complex number.  (Contributed by
+       NM, 28-May-1995.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
     df-op $a |- <. A , B >. = { x |
       ( A e. _V /\ B e. _V /\ x e. { { A } , { A , B } } ) } $.
   $}
@@ -28226,7 +28218,6 @@ $)
   ${
     $d A y $.  $d B y $.  $d V y $.  $d x y $.
     $( Distribute proper substitution through the singleton of a class.
-       ~ csbsng is derived from the virtual deduction proof ~ csbsngVD .
        (Contributed by Alan Sare, 10-Nov-2012.) $)
     csbsng $p |- ( A e. V -> [_ A / x ]_ { B } = { [_ A / x ]_ B } ) $=
       ( vy wcel wceq cab csb csn wsbc csbabg sbceq2g abbidv eqtrd df-sn csbeq2i
@@ -28599,9 +28590,8 @@ $)
 
   ${
     $d x A $.  $d x B $.  $d x C $.  $d x D $.  $d x ps $.
-    $( Closed theorem form of ~ tpid3 .  This proof was automatically generated
-       from the virtual deduction proof ~ tpid3gVD using a translation
-       program.  (Contributed by Alan Sare, 24-Oct-2011.) $)
+    $( Closed theorem form of ~ tpid3 .  (Contributed by Alan Sare,
+       24-Oct-2011.) $)
     tpid3g $p |- ( A e. B -> A e. { C , D , A } ) $=
       ( vx wcel cv wceq wex ctp elisset w3o cab wi 3mix3 a1i abid syl6ibr dftp2
       eleq2i eleq1 mpbidi exlimdv mpd ) ABFZEGZAHZEIACDAJZFZEABKUEUGUIEUGUFUHFZ
