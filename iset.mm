@@ -1,4 +1,4 @@
-$( iset.mm - Version of 6-Aug-2018
+$( iset.mm - Version of 8-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -28287,16 +28287,18 @@ $)
 
   ${
     $d x A $.  $d y ph $.
-    $( A restricted class abstraction restricted to a singleton is either the
-       empty set or the singleton itself.  (Contributed by Alexander van der
-       Vekens, 22-Dec-2017.) $)
-    rabrsn $p |- ( M = { x e. { A } | ph } -> ( M = (/) \/ M = { A } ) ) $=
-      ( csn crab wceq c0 wo cvv wcel wn wral ralsns orbi12d mpbird wb a1i eqeq1
-      wsbc pm2.1 sbcth sbcor sylib rabeq0 eqcom rabid2 bitri snprc rabeq syl6eq
-      rab0 orcd sylbi pm2.61i ) DABCEZFZGZDHGZDUPGZIUQHGZUQUPGZIZVCURCJKZVCVDVC
-      ALZBUPMZABUPMZIZVDVHVEBCTZABCTZIZVDVEAIZBCTVKVLBCJAUAUBVEABCUCUDVDVFVIVGV
-      JVEBCJNABCJNOPVDVAVFVBVGVAVFQVDABUPUERVBVGQVDVBUPUQGVGUQUPUFABUPUGUHROPVD
-      LUPHGZVCCUIVMVAVBVMUQABHFHABUPHUJABULUKUMUNUORURUSVAUTVBDUQHSDUQUPSOP $.
+    rabrsndc.1 $e |- A e. _V $.
+    rabrsndc.2 $e |- DECID ph $.
+    $( A class abstraction over a decidable proposition restricted to a
+       singleton is either the empty set or the singleton itself.  (Contributed
+       by Jim Kingdon, 8-Aug-2018.) $)
+    rabrsndc $p |- ( M = { x e. { A } | ph } -> ( M = (/) \/ M = { A } ) ) $=
+      ( csn crab wceq c0 wo wral wsbc cvv ax-mp wb ralsns mpbir eqeq1
+      orbi12i wn wcel wdc pm2.1dc sbcth sbcor mpbi rabeq0 eqcom bitri
+      rabid2 orbi12d mpbiri ) DABCGZHZIZDJIZDUNIZKUOJIZUOUNIZKZVAAUAZ
+      BUNLZABUNLZKZVEVBBCMZABCMZKZVBAKZBCMZVHCNUBZVJEVIBCNAUCVIFAUDOU
+      EOVBABCUFUGVCVFVDVGVKVCVFPEVBBCNQOVKVDVGPEABCNQOTRUSVCUTVDABUNU
+      HUTUNUOIVDUOUNUIABUNUKUJTRUPUQUSURUTDUOJSDUOUNSULUM $.
   $}
 
   ${
