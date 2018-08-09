@@ -28753,30 +28753,6 @@ $)
     SVLVAVKMVOVKVAUEVAVIVJUFUGKUSVOLLJLUSVMLVNLUQVMLSZURUQCADVPACNCAOPUHURVNLSZ
     UQURCBDVQBCNCBOPUIQLUJRTVBVAULUMUNVFLSUSVAUOKQVBUPRT $.
 
-  $( An unordered triple is an unordered pair if one of its elemets is a proper
-     class or is identical with another element.  (Contributed by Alexander van
-     der Vekens, 6-Oct-2017.) $)
-  tpprceq3 $p |- ( -. ( C e. _V /\ C =/= B ) -> { A , B , C } = { A , B } ) $=
-    ( cvv wcel wne wa wn wo ctp cpr wceq ianor tprot csn cun df-tp prprc2 sylbi
-    syl5eq uneq1d df-pr prcom eqtr3i syl6eq nne tppreq3 eqcoms jaoi ) CDEZCBFZG
-    HUJHZUKHZIABCJZABKZLZUJUKMULUPUMULUNBCAJZUOABCNULUQBCKZAOZPZUOBCAQULUTBOZUS
-    PZUOULURVAUSBCRUABAKVBUOBAUBBAUCUDUETTUMCBLUPCBUFUPBCABCUGUHSUIS $.
-
-  $( An unordered triple is an unordered pair if and only if one of its
-     elements is a proper class or is identical with one of the another
-     elements.  (Contributed by Alexander van der Vekens, 15-Jan-2018.) $)
-  tppreqb $p |- ( -. ( C e. _V /\ C =/= A /\ C =/= B )
-                     <-> { A , B , C } = { A , B } ) $=
-    ( cvv wcel wne w3a wn ctp cpr wceq wo w3o wa ianor tpprceq3 sylbir jaoi nne
-    sylbi 3ianor df-3or bitri orass tpcoma prcom 3eqtr3g orcom bitr4i csn df-tp
-    cun eqeq1i wss ssequn2 wi snssg elpri 3mix2 3mix3 syl syl6bir 3mix1 pm2.61i
-    orcs a1d sylibr impbii ) CDEZCAFZCBFZGHZABCIZABJZKZVLVIHZVJHZLZVKHZLZVOVLVP
-    VQVSMZVTVIVJVKUAZVPVQVSUBUCVTVPVOVTVPLVRVSVPLZLVOVRVSVPUDVRVOWCVRBACIZBAJZV
-    MVNVRVIVJNHWDWEKVIVJOBACPQBACUEBAUFUGWCVIVKNHZVOWCVPVSLWFVSVPUHVIVKOUIABCPT
-    RTVETVOVNCUJZULZVNKZVLVMWHVNABCUKUMWIWGVNUNZVLWGVNUOWJWAVLVIWJWAUPVIWJCVNEZ
-    WACVNDUQWKCAKZCBKZLWACABURWLWAWMWLVQWACASVQVPVSUSQWMVSWACBSVSVPVQUTQRVAVBVP
-    WAWJVPVQVSVCVFVDWBVGQTVH $.
-
   $( ` ( B \ { A } ) ` equals ` B ` if and only if ` A ` is not a member of
      ` B ` .  Generalization of ~ difsn .  (Contributed by David Moews,
      1-May-2017.) $)
