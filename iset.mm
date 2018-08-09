@@ -7745,6 +7745,24 @@ $)
     ( w3o 3mix1 3orrot sylib ) AABCDBCADABCEABCFG $.
 
   ${
+    3mixi.1 $e |- ph $.
+    $( Introduction in triple disjunction.  (Contributed by Mario Carneiro,
+       6-Oct-2014.) $)
+    3mix1i $p |- ( ph \/ ps \/ ch ) $=
+      ( w3o 3mix1 ax-mp ) AABCEDABCFG $.
+
+    $( Introduction in triple disjunction.  (Contributed by Mario Carneiro,
+       6-Oct-2014.) $)
+    3mix2i $p |- ( ps \/ ph \/ ch ) $=
+      ( w3o 3mix2 ax-mp ) ABACEDABCFG $.
+
+    $( Introduction in triple disjunction.  (Contributed by Mario Carneiro,
+       6-Oct-2014.) $)
+    3mix3i $p |- ( ps \/ ch \/ ph ) $=
+      ( w3o 3mix3 ax-mp ) ABCAEDABCFG $.
+  $}
+
+  ${
     3pm3.2i.1 $e |- ph $.
     3pm3.2i.2 $e |- ps $.
     3pm3.2i.3 $e |- ch $.
