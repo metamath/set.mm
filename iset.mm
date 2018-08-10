@@ -28824,23 +28824,6 @@ $)
     ( vx cv c0 wss cab wceq cpw csn ss0b abbii df-pw df-sn 3eqtr4i ) ABZCDZAENC
     FZAECGCHOPANIJACKACLM $.
 
-  ${
-    $d x y $.
-    $( Compute the power set of the power set of the empty set.  (See ~ pw0 for
-       the power set of the empty set.)  Theorem 90 of [Suppes] p. 48.
-       Although this theorem is a special case of ~ pwsn , we have chosen to
-       show a direct elementary proof.  (Contributed by NM, 7-Aug-1994.) $)
-    pwpw0 $p |- ~P { (/) } = { (/) , { (/) } } $=
-      ( vx vy cv c0 csn wss cab wceq wo cpw cpr wn wa wcel wal dfss2 elsn sylbi
-      wi wex imbi2i albii bitri neq0 exintr syl5bi exancom df-clel bitr4i snssi
-      syl6 anc2li eqss syl6ibr orrd sseq1 mpbiri eqimss jaoi impbii abbii df-pw
-      0ss dfpr2 3eqtr4i ) ACZDEZFZAGVFDHZVFVGHZIZAGVGJDVGKVHVKAVHVKVHVIVJVHVILZ
-      VHVGVFFZMVJVHVLVMVHBCZVFNZVNDHZSZBOZVLVMSVHVOVNVGNZSZBOVRBVFVGPVTVQBVSVPV
-      OBDQUAUBUCVRVLVOVPMBTZVMVLVOBTVRWABVFUDVOVPBUEUFWADVFNZVMWAVPVOMBTWBVOVPB
-      UGBDVFUHUIDVFUJRUKRULVFVGUMUNUOVIVHVJVIVHDVGFVGVCVFDVGUPUQVFVGURUSUTVAAVG
-      VBADVGVDVE $.
-  $}
-
   $( A singleton is a subset of an unordered pair containing its member.
      (Contributed by NM, 27-Aug-2004.) $)
   snsspr1 $p |- { A } C_ { A , B } $=
@@ -29390,6 +29373,16 @@ $)
       ( vx cv c0 wceq csn wo cab wss cpr cpw sssnr ss2abi dfpr2 3sstr4i
       df-pw ) BCZDEQAFZEGZBHQRIZBHDRJRKSTBQALMBDRNBRPO $.
 
+    ${
+      $d x y $.
+      $( Compute the power set of the power set of the empty set.  (See ~ pw0
+         for the power set of the empty set.)  Theorem 90 of [Suppes] p. 48
+         (but with subset in place of equality).  (Contributed by Jim Kingdon,
+         12-Aug-2018.) $)
+      pwpw0ss $p |- { (/) , { (/) } } C_ ~P { (/) } $=
+        ( c0 pwsnss ) AB $.
+    $}
+
     $d x y $.  $d y A $.
     $( The power set of a singleton (direct proof).  TO DO - should we keep
        this?  (Contributed by NM, 5-Jun-2006.)
@@ -29427,7 +29420,7 @@ $)
   ${
     $d x y $.
     $( Compute the power set of the power set of the power set of the empty
-       set.  (See also ~ pw0 and ~ pwpw0 .)  (Contributed by NM,
+       set.  (See also ~ pw0 and ~ pwpw0ss .)  (Contributed by NM,
        2-May-2009.) $)
     pwpwpw0 $p |- ~P { (/) , { (/) } } =
                 ( { (/) , { (/) } } u. { { { (/) } } , { (/) , { (/) } } } ) $=
