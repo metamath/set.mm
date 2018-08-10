@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-Aug-2018
+$( iset.mm - Version of 10-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -28782,10 +28782,11 @@ $)
   $}
 
   $( If we remove a single element from a class then put it back in, we end up
-     with the original class.  (Contributed by NM, 2-Oct-2006.) $)
-  difsnid $p |- ( B e. A -> ( ( A \ { B } ) u. { B } ) = A ) $=
-    ( wcel csn cdif cun uncom wss wceq snssi undif sylib syl5eq ) BACZABDZEZOFO
-    PFZAPOGNOAHQAIBAJOAKLM $.
+     with a subset of the original class.  In classical logic, we could replace
+     subset with equality.  (Contributed by Jim Kingdon, 10-Aug-2018.) $)
+  difsnss $p |- ( B e. A -> ( ( A \ { B } ) u. { B } ) C_ A ) $=
+    ( wcel csn cdif cun uncom wss snssi undifss sylib syl5eqss ) BACZ
+    ABDZEZNFNOFZAONGMNAHPAHBAINAJKL $.
 
   $( Note that ` x ` is a dummy variable in the proof below. $)
   $( Compute the power set of the empty set.  Theorem 89 of [Suppes] p. 47.
