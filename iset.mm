@@ -1,4 +1,4 @@
-$( iset.mm - Version of 8-Aug-2018
+$( iset.mm - Version of 9-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -28760,12 +28760,13 @@ $)
     ( wcel wn csn cdif wceq difsn neldifsnd nelne1 mpdan necomd necon2bi impbii
     wne ) ABCZDBAEFZBGABHPQBPBQPAQCDBQOPABIABQJKLMN $.
 
-  $( ` ( B \ { A } ) ` is a proper subclass of ` B ` if and only if ` A ` is a
-     member of ` B ` .  (Contributed by David Moews, 1-May-2017.) $)
-  difsnpss $p |- ( A e. B <-> ( B \ { A } ) C. B ) $=
-    ( wcel wn csn cdif wpss notnot wne wss wa biantrur difsnb necon3bbii df-pss
-    difss 3bitr4i bitri ) ABCZSDZDZBAEZFZBGZSHUCBIZUCBJZUEKUAUDUFUEBUBPLTUCBABM
-    NUCBOQR $.
+  $( ` ( B \ { A } ) ` is a proper subclass of ` B ` if ` A ` is a member of
+     ` B ` .  In classical logic, the converse holds as well.  (Contributed by
+     Jim Kingdon, 9-Aug-2018.) $)
+  difsnpssim $p |- ( A e. B -> ( B \ { A } ) C. B ) $=
+    ( wcel wn csn cdif wpss notnot1 wne wss difss biantrur necon3bbii
+    wa difsnb df-pss 3bitr4i sylib ) ABCZSDZDZBAEZFZBGZSHUCBIZUCBJZUE
+    NUAUDUFUEBUBKLTUCBABOMUCBPQR $.
 
   $( The singleton of an element of a class is a subset of the class.
      (Contributed by NM, 6-Jun-1994.) $)
