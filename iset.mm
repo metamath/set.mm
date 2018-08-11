@@ -1,4 +1,4 @@
-$( iset.mm - Version of 6-Aug-2018
+$( iset.mm - Version of 11-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -27,6 +27,7 @@ PC  Paul Chapman         FL  Frederic Line          AS  Alan Sare
 SF  Scott Fenton         RFL Roy F. Longton         ES  Eric Schmidt
 JGH Jeffrey Hankins      JM  Jeff Madsen            DAW David A. Wheeler
 AH  Anthony Hart         RM  Rodolfo Medina         GD  Georgy Dunaev
+MM  Mykola Mostovenko
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                           Contents of this header
@@ -1331,6 +1332,11 @@ $)
      Lammen, 13-Nov-2012.) $)
   simpr $p |- ( ( ph /\ ps ) -> ps ) $=
     ( ax-ia2 ) ABC $.
+
+  $( Heyting's formal system Axiom #1 from [Heyting] p. 127.
+     (Contributed by MM, 11-Aug-2018.) $)
+  ax1hfs $p |- ( ph -> ( ph /\ ph ) ) $=
+    ( wa ax-ia3 pm2.43i ) AAABAACD $.
 
   ${
     simpli.1 $e |- ( ph /\ ps ) $.
@@ -28370,4 +28376,3 @@ htmldef "DECID" as "<SMALL>DECID</SMALL> ";
 /* End of typesetting definition section */
 
 $)
-
