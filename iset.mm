@@ -28923,31 +28923,6 @@ $)
       IUHBHZJUJUIUGUKUIUGCBEZUKUIUFULAUIUFULUIUFUECIZUFULKUIUFUEUHEUMBUHUELUECM
       NUECBONPQCBSNRBUHTUAUBBUHUCUD $.
 
-    $( The property of being sandwiched between two sets naturally splits under
-       union with a singleton.  This is the induction hypothesis for the
-       determination of large powersets such as ~ pwtp .  (Contributed by Mario
-       Carneiro, 2-Jul-2016.) $)
-    ssunsn2 $p |- ( ( B C_ A /\ A C_ ( C u. { D } ) )
-                    <-> ( ( B C_ A /\ A C_ C ) \/
-                      ( ( B u. { D } ) C_ A /\ A C_ ( C u. { D } ) ) ) ) $=
-      ( wcel wss csn cun wa wo wb syl wi anim12d pm4.72 sylib bitrd wceq bitr3i
-      a1i snssi unss bicomi rbaibr anbi1d biimpi expcom ssun3 wn cdif c0 disjsn
-      cin disj3 sseq1 sylbi uncom sseq2i ssundif syl6rbbr anbi2d simplbi biimpd
-      orcom syl6bb pm2.61i ) DAEZBAFZACDGZHZFZIZVHACFZIZBVIHAFZVKIZJZKVGVLVPVQV
-      GVHVOVKVGVIAFZVHVOKDAUAZVOVHVRVHVRIZVOBVIAUBZUCZUDLUEVGVNVPMVPVQKVGVHVOVM
-      VKVGVRVHVOMVSVHVRVOVTVOWAUFUGLVMVKMVGACVIUHTNVNVPOPQVGUIZVLVNVQWCVKVMVHWC
-      VMAVIUJZCFZVKWCAWDRZVMWEKWCAVIUMUKRWFADULAVIUNSAWDCUOUPVKAVICHZFWEWGVJAVI
-      CUQURAVICUSSUTZVAWCVNVPVNJZVQWCVPVNMVNWIKWCVOVHVKVMVOVHMWCVOVHVRWBVBTWCVK
-      VMWHVCNVPVNOPVPVNVDVEQVF $.
-
-    $( Possible values for a set sandwiched between another set and it plus a
-       singleton.  (Contributed by Mario Carneiro, 2-Jul-2016.) $)
-    ssunsn $p |- ( ( B C_ A /\ A C_ ( B u. { C } ) )
-        <-> ( A = B \/ A = ( B u. { C } ) ) ) $=
-      ( wss csn cun wa wo wceq ssunsn2 ancom eqss bitr4i orbi12i bitri ) BADZAB
-      CEFZDZGPABDZGZQADZRGZHABIZAQIZHABBCJTUCUBUDTSPGUCPSKABLMUBRUAGUDUARKAQLMN
-      O $.
-
     $( Two ways to express that a nonempty set equals a singleton.
        (Contributed by NM, 15-Dec-2007.) $)
     eqsn $p |- ( A =/= (/) -> ( A = { B } <-> A. x e. A x = B ) ) $=
@@ -28958,17 +28933,6 @@ $)
   $}
 
   ${
-    $( Possible values for a set sandwiched between another set and it plus a
-       singleton.  (Contributed by Mario Carneiro, 2-Jul-2016.) $)
-    ssunpr $p |- ( ( B C_ A /\ A C_ ( B u. { C , D } ) )
-        <-> ( ( A = B \/ A = ( B u. { C } ) ) \/
-          ( A = ( B u. { D } ) \/ A = ( B u. { C , D } ) ) ) ) $=
-      ( wss cpr cun wa csn wceq df-pr uneq2i unass eqtr4i sseq2i anbi2i ssunsn2
-      wo ssunsn 3bitri un23 eqtr2i eqeq2i orbi2i orbi12i ) BAEZABCDFZGZEZHUFABC
-      IZGZDIZGZEZHUFAUKEHZBULGZAEZUNHZRABJAUKJRZAUPJZAUHJZRZRUIUNUFUHUMAUHBUJUL
-      GZGUMUGVCBCDKLBUJULMNZOPABUKDQUOUSURVBABCSURUQAUPUJGZEZHUTAVEJZRVBUNVFUQU
-      MVEABUJULUAZOPAUPCSVGVAUTVEUHAUHUMVEVDVHUBUCUDTUET $.
-
     $( The subsets of a pair.  (Contributed by NM, 16-Mar-2006.)  (Proof
        shortened by Mario Carneiro, 2-Jul-2016.) $)
     sspr $p |- ( A C_ { B , C }
