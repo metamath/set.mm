@@ -28988,6 +28988,7 @@ $)
     wcel ) ADRZBDRZCDRZEZABCFABGZCHZIDABCJUBUCUDDSTUCDKUAABDLMUASUDDKTCDNOPQ $.
 
   ${
+    $d x A $.  $d x B $.
     sneqr.1 $e |- A e. _V $.
     $( If the singletons of two sets are equal, the two sets are equal.  Part
        of Exercise 4 of [TakeutiZaring] p. 15.  (Contributed by NM,
@@ -28999,8 +29000,9 @@ $)
     $( If a singleton is a subset of another, their members are equal.
        (Contributed by NM, 28-May-2006.) $)
     snsssn $p |- ( { A } C_ { B } -> A = B ) $=
-      ( csn wss c0 wceq wo sssn snnz neii pm2.21i sneqr jaoi sylbi ) ADZBDZEPFG
-      ZPQGZHABGZPBIRTSRTPFACJKLABCMNO $.
+      ( vx csn wss cv wceq wi wal wcel dfss2 elsn imbi12i albii bitri
+      cvv sbceqal ax-mp sylbi ) AEZBEZFZDGZAHZUDBHZIZDJZABHZUCUDUAKZU
+      DUBKZIZDJUHDUAUBLULUGDUJUEUKUFDAMDBMNOPAQKUHUIICDABQRST $.
   $}
 
   ${
