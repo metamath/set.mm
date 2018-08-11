@@ -28947,30 +28947,25 @@ $)
   $}
 
   ${
-    $( The subsets of a pair.  (Contributed by NM, 16-Mar-2006.)  (Proof
-       shortened by Mario Carneiro, 2-Jul-2016.) $)
-    sspr $p |- ( A C_ { B , C }
-        <-> ( ( A = (/) \/ A = { B } ) \/ ( A = { C } \/ A = { B , C } ) ) ) $=
-      ( cpr wss c0 cun wa wceq csn wo uncom eqtri sseq2i biantrur bitr3i eqeq2i
-      un0 0ss orbi12i ssunpr orbi2i 3bitri ) ABCDZEZFAEZAFUDGZEZHZAFIZAFBJZGZIZ
-      KZAFCJZGZIZAUGIZKZKUJAUKIZKZAUOIZAUDIZKZKUEUHUIUGUDAUGUDFGUDFUDLUDRMZNUFU
-      HASOPAFBCUAUNVAUSVDUMUTUJULUKAULUKFGUKFUKLUKRMQUBUQVBURVCUPUOAUPUOFGUOFUO
-      LUORMQUGUDAVEQTTUC $.
+    $( The subsets of a pair.  (Contributed by Jim Kingdon, 11-Aug-2018.) $)
+    ssprr $p |- (
+        ( ( A = (/) \/ A = { B } ) \/ ( A = { C } \/ A = { B , C } ) )
+        -> A C_ { B , C } ) $=
+      ( c0 wceq csn wo cpr wss 0ss mpbiri snsspr1 jaoi snsspr2 eqimss
+      sseq1 ) ADEZABFZEZGABCHZIZACFZEZATEZGQUASQUADTITJADTPKSUARTIBCL
+      ARTPKMUCUAUDUCUAUBTIBCNAUBTPKATOMM $.
 
-    $( The subsets of a triple.  (Contributed by Mario Carneiro,
-       2-Jul-2016.) $)
-    sstp $p |- ( A C_ { B , C , D }
-        <-> ( ( ( A = (/) \/ A = { B } ) \/ ( A = { C } \/ A = { B , C } ) ) \/
+    $( The subsets of a triple.  (Contributed by Jim Kingdon, 11-Aug-2018.) $)
+    sstpr $p |- (
+        ( ( ( A = (/) \/ A = { B } ) \/ ( A = { C } \/ A = { B , C } ) ) \/
           ( ( A = { D } \/ A = { B , D } ) \/
-            ( A = { C , D } \/ A = { B , C , D } ) ) ) ) $=
-      ( wss cpr csn cun c0 wa wceq wo sseq2i biantrur uncom df-pr eqtr4i eqeq2i
-      orbi12i 3bitri ctp df-tp 0ss ssunsn2 sspr bitr3i un0 eqtri sseq1i anbi12i
-      ssunpr orbi2i eqtr2i bitri ) ABCDUAZEABCFZDGZHZEZIAEZUSJZAIKABGZKLACGZKAU
-      PKLLZAUQKZABDFZKZLZACDFZKZAUOKZLZLZLZUOURABCDUBZMUTUSAUCZNVAUTAUPEZJZIUQH
-      ZAEZUSJZLVNAIUPDUDVRVDWAVMVRVQVDUTVQVPNABCUEUFWAUQAEZAUQUPHZEZJVEAUQVBHZK
-      ZLZAUQVCHZKZAWCKZLZLVMVTWBUSWDVSUQAVSUQIHUQIUQOUQUGUHUIURWCAUPUQOZMUJAUQB
-      CUKWGVHWKVLWFVGVEWEVFAWEVBUQHVFUQVBOBDPQRULWIVJWJVKWHVIAWHVCUQHVIUQVCOCDP
-      QRWCUOAUOURWCVOWLUMRSSTSUNT $.
+            ( A = { C , D } \/ A = { B , C , D } ) ) )
+        -> A C_ { B , C , D } ) $=
+      ( c0 wceq csn wo cpr ctp wss ssprr prsstp12 syl6ss sseq1 mpbiri
+      snsstp3 prsstp13 jaoi prsstp23 eqimss ) AEFABGFHACGFABCIZFHHZAB
+      CDJZKZADGZFZABDIZFZHZACDIZFZAUDFZHZHUCAUBUDABCLBCDMNUJUEUNUGUEU
+      IUGUEUFUDKBCDQAUFUDOPUIUEUHUDKBCDRAUHUDOPSULUEUMULUEUKUDKBCDTAU
+      KUDOPAUDUASSS $.
   $}
 
   ${
