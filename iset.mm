@@ -29127,12 +29127,13 @@ $)
   prneimg $p |- ( ( ( A e. U /\ B e. V ) /\ ( C e. X /\ D e. Y ) )
                   -> ( ( ( A =/= C /\ A =/= D ) \/ ( B =/= C /\ B =/= D ) )
                        -> { A , B } =/= { C , D } ) ) $=
-    ( wcel wa wne wo cpr wceq wn ianor nne orbi12i bitr2i syl6ib preq12bg orddi
-    simpll pm1.4 ad2antll jca sylbi syl6bi anbi12i pm4.56 necon2ad ) AEIBFIJCGI
-    DHIJJZACKZADKZJZBCKZBDKZJZLZABMZCDMZULUTVANZUOOZUROZJZUSOULVBACNZADNZLZBCNZ
-    BDNZLZJZVEULVBVFVJJVGVIJLZVLABCDEFGHUAVMVHVFVILZJZVJVGLZVJVILZJZJZVLVFVJVGV
-    IUBVSVHVKVHVNVRUCVQVKVOVPVJVIUDUEUFUGUHVHVCVKVDVCUMOZUNOZLVHUMUNPVTVFWAVGAC
-    QADQRSVDUPOZUQOZLVKUPUQPWBVIWCVJBCQBDQRSUITUOURUJTUK $.
+    ( wcel wa wne wo cpr wceq preq12bg oranim df-ne anbi12i sylnibr
+    wn orddi simpll pm1.4 ad2antll sylbi syl6bi anim12i pm4.56 syl6ib
+    jca syl6 necon2ad ) AEIBFIJCGIDHIJJZACKZADKZJZBCKZBDKZJZLZABMZCDM
+    ZUMVAVBNZUPTZUSTZJZUTTUMVCACNZADNZLZBCNZBDNZLZJZVFUMVCVGVKJVHVJJL
+    ZVMABCDEFGHOVNVIVGVJLZJZVKVHLZVKVJLZJZJZVMVGVKVHVJUAVTVIVLVIVOVSU
+    BVRVLVPVQVKVJUCUDUJUEUFVIVDVLVEVIVGTZVHTZJUPVGVHPUNWAUOWBACQADQRS
+    VLVJTZVKTZJUSVJVKPUQWCURWDBCQBDQRSUGUKUPUSUHUIUL $.
 
   $( A (proper) pair is not equal to another (maybe inproper) pair if and only
      if an element of the first pair is not contained in the second pair.
