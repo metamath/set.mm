@@ -28923,13 +28923,12 @@ $)
       IUHBHZJUJUIUGUKUIUGCBEZUKUIUFULAUIUFULUIUFUECIZUFULKUIUFUEUHEUMBUHUELUECM
       NUECBONPQCBSNRBUHTUAUBBUHUCUD $.
 
-    $( Two ways to express that a nonempty set equals a singleton.
-       (Contributed by NM, 15-Dec-2007.) $)
-    eqsn $p |- ( A =/= (/) -> ( A = { B } <-> A. x e. A x = B ) ) $=
-      ( c0 wne csn wceq wss cv wral eqimss wn df-ne wo sssn biimpi syl5bi com12
-      ord impbid2 wcel dfss3 elsn ralbii bitri syl6bb ) BDEZBCFZGZBUHHZAIZCGZAB
-      JZUGUIUJBUHKUJUGUIUGBDGZLUJUIBDMUJUNUIUJUNUINBCOPSQRTUJUKUHUAZABJUMABUHUB
-      UOULABACUCUDUEUF $.
+    $( Two ways to express that an inhabited set equals a singleton.
+       (Contributed by Jim Kingdon, 11-Aug-2018.) $)
+    eqsnm $p |- ( E. x x e. A -> ( A = { B } <-> A. x e. A x = B ) ) $=
+      ( cv wceq wral csn wss wcel wex dfss3 elsn bitri sssnm syl5rbbr
+      ralbii ) ADZCEZABFZBCGZHZQBIAJBTEUAQTIZABFSABTKUBRABACLPMABCNO
+      $.
   $}
 
   ${
