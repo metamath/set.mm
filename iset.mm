@@ -1,4 +1,4 @@
-$( iset.mm - Version of 10-Aug-2018
+$( iset.mm - Version of 11-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -28641,11 +28641,25 @@ $)
     ( wcel csn c0 wne snidg ne0i syl ) ABCAADZCJEFABGJAHI $.
 
   ${
+    $d x A $.
+    $( The singleton of a set is inhabited.  (Contributed by Jim Kingdon,
+       11-Aug-2018.) $)
+    snmg $p |- ( A e. V -> E. x x e. { A } ) $=
+      ( wcel csn cv wex snidg elex2 syl ) BCDBBEZDAFKDAGBCHABKIJ $.
+  $}
+
+  ${
+    $d x A $.
     snnz.1 $e |- A e. _V $.
     $( The singleton of a set is not empty.  (Contributed by NM,
        10-Apr-1994.) $)
     snnz $p |- { A } =/= (/) $=
       ( cvv wcel csn c0 wne snnzg ax-mp ) ACDAEFGBACHI $.
+
+    $( The singleton of a set is inhabited.  (Contributed by Jim Kingdon,
+       11-Aug-2018.) $)
+    snm $p |- E. x x e. { A } $=
+      ( cvv wcel cv csn wex snmg ax-mp ) BDEAFBGEAHCABDIJ $.
   $}
 
   ${
