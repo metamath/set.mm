@@ -28888,13 +28888,19 @@ $)
 
   ${
     $d x A $.  $d x B $.
-    $( The subsets of a singleton.  (Contributed by NM, 24-Apr-2004.) $)
-    sssn $p |- ( A C_ { B } <-> ( A = (/) \/ A = { B } ) ) $=
-      ( vx csn wss c0 wceq wo wn wa wcel cv wex neq0 ssel elsni syl6 eleq1 ibd
-      wb exlimdv syl5bi snssi anc2li eqss syl6ibr orrd sseq1 mpbiri eqimss jaoi
-      0ss impbii ) ABDZEZAFGZAUNGZHUOUPUQUOUPIZUOUNAEZJUQUOURUSUOURBAKZUSURCLZA
-      KZCMUOUTCANUOVBUTCUOVBUTUOVBVABGZVBUTTUOVBVAUNKVCAUNVAOVABPQVABARQSUAUBBA
-      UCQUDAUNUEUFUGUPUOUQUPUOFUNEUNULAFUNUHUIAUNUJUKUM $.
+    $( Empty set and the singleton itself are subsets of a singleton.
+       (Contributed by Jim Kingdon, 10-Aug-2018.) $)
+    sssnr $p |- ( ( A = (/) \/ A = { B } ) -> A C_ { B } ) $=
+      ( c0 wceq csn wss 0ss sseq1 mpbiri eqimss jaoi ) ACDZABEZFZAMDLNC
+      MFMGACMHIAMJK $.
+
+    $( The inhabited subset of a singleton.  (Contributed by Jim Kingdon,
+       10-Aug-2018.) $)
+    sssnm $p |- ( E. x x e. A -> ( A C_ { B } <-> A = { B } ) ) $=
+      ( cv wcel wex csn wss wceq wa wb ssel elsni syl6 eleq1 ibd exlimdv anc2li
+      snssi eqss syl6ibr com12 eqimss impbid1 ) ADZBEZAFZBCGZHZBUHIZUIUGUJUIUGU
+      IUHBHZJUJUIUGUKUIUGCBEZUKUIUFULAUIUFULUIUFUECIZUFULKUIUFUEUHEUMBUHUELUECM
+      NUECBONPQCBSNRBUHTUAUBBUHUCUD $.
 
     $( The property of being sandwiched between two sets naturally splits under
        union with a singleton.  This is the induction hypothesis for the
