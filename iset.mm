@@ -28861,6 +28861,21 @@ $)
   snsstp3 $p |- { C } C_ { A , B , C } $=
     ( csn cpr cun ctp ssun2 df-tp sseqtr4i ) CDZABEZKFABCGKLHABCIJ $.
 
+  $( A pair is a subset of an unordered triple containing its members.
+     (Contributed by Jim Kingdon, 11-Aug-2018.) $)
+  prsstp12 $p |- { A , B } C_ { A , B , C } $=
+    ( cpr csn cun ctp ssun1 df-tp sseqtr4i ) ABDZKCEZFABCGKLHABCIJ $.
+
+  $( A pair is a subset of an unordered triple containing its members.
+     (Contributed by Jim Kingdon, 11-Aug-2018.) $)
+  prsstp13 $p |- { A , C } C_ { A , B , C } $=
+    ( cpr ctp prsstp12 tpcomb sseqtr4i ) ACDACBEABCEACBFABCGH $.
+
+  $( A pair is a subset of an unordered triple containing its members.
+     (Contributed by Jim Kingdon, 11-Aug-2018.) $)
+  prsstp23 $p |- { B , C } C_ { A , B , C } $=
+    ( cpr ctp prsstp12 tprot sseqtr4i ) BCDBCAEABCEBCAFABCGH $.
+
   ${
     $d A x $.  $d B x $.  $d C x $.
     prss.1 $e |- A e. _V $.
