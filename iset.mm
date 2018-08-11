@@ -26923,13 +26923,13 @@ $)
     ( c0 wcel cvv cdif eldifi eldifn pm2.65i df-nul eleq2i mtbir ) ABCADDEZCZMA
     DCADDFADDGHBLAIJK $.
 
-  $( If a set has elements, it is not empty.  (Contributed by NM,
-     31-Dec-1993.) $)
+  $( If a set has elements, it is not empty.  A set with elements is also
+     inhabited, see ~ elex2 .  (Contributed by NM, 31-Dec-1993.) $)
   n0i $p |- ( B e. A -> -. A = (/) ) $=
     ( c0 wceq wcel noel eleq2 mtbiri con2i ) ACDZBAEZJKBCEBFACBGHI $.
 
-  $( If a set has elements, it is not empty.  (Contributed by NM,
-     31-Dec-1993.) $)
+  $( If a set has elements, it is not empty.  A set with elements is also
+     inhabited, see ~ elex2 .  (Contributed by NM, 31-Dec-1993.) $)
   ne0i $p |- ( B e. A -> A =/= (/) ) $=
     ( wcel c0 n0i neneqad ) BACADABEF $.
 
