@@ -29135,22 +29135,6 @@ $)
     BVRVLVPVQVKVJUCUDUJUEUFVIVDVLVEVIVGTZVHTZJUPVGVHPUNWAUOWBACQADQRS
     VLVJTZVKTZJUSVJVKPUQWCURWDBCQBDQRSUGUKUPUSUHUIUL $.
 
-  $( A (proper) pair is not equal to another (maybe inproper) pair if and only
-     if an element of the first pair is not contained in the second pair.
-     (Contributed by Alexander van der Vekens, 16-Jan-2018.) $)
-  prnebg $p |- ( ( ( A e. U /\ B e. V ) /\ ( C e. X /\ D e. Y ) /\ A =/= B )
-                  -> ( ( ( A =/= C /\ A =/= D ) \/ ( B =/= C /\ B =/= D ) )
-                       <-> { A , B } =/= { C , D } ) ) $=
-    ( wcel wa wne wo cpr wi wn wceq nne bitri syl5bi jaoi prneimg 3adant3 ioran
-    w3a ianor orbi12i anbi12i anddi eqtr3 pm2.24 syl preq12 a1d syl6eq 3ad2ant3
-    df-ne prcom com12 necon1ad impbid ) AEIBFIJZCGIDHIJZABKZUDZACKZADKZJZBCKZBD
-    KZJZLZABMZCDMZKZVAVBVKVNNVCABCDEFGHUAUBVDVKVLVMVKOZACPZADPZLZBCPZBDPZLZJZVD
-    VLVMPZVOVGOZVJOZJWBVGVJUCWDVRWEWAWDVEOZVFOZLVRVEVFUEWFVPWGVQACQADQUFRWEVHOZ
-    VIOZLWAVHVIUEWHVSWIVTBCQBDQUFRUGRWBVPVSJZVPVTJZLZVQVSJZVQVTJZLZLZVDWCVPVQVS
-    VTUHVCVAWPWCNVBWPVCWCWLVCWCNZWOWJWQWKWJABPZWQABCUIVCWROWRWCABUPWRWCUJSZUKWK
-    WCVCABCDULUMTWMWQWNWMWCVCWMVLDCMVMABDCULDCUQUNUMWNWRWQABDUIWSUKTTURUOSSUSUT
-    $.
-
   ${
     preqsn.1 $e |- A e. _V $.
     preqsn.2 $e |- B e. _V $.
