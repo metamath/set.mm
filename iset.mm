@@ -29371,10 +29371,16 @@ $)
     ( cvv wcel wn wa cop c0 wceq simpr con3i opprc syl ) BCDZEACDZNFZEABGHIPNON
     JKABLM $.
 
-  $( If an ordered pair has an element, then its arguments are sets.
-     (Contributed by Mario Carneiro, 26-Apr-2015.) $)
-  oprcl $p |- ( C e. <. A , B >. -> ( A e. _V /\ B e. _V ) ) $=
-    ( cop wcel c0 wceq cvv wa n0i opprc nsyl2 ) CABDZEMFGAHEBHEIMCJABKL $.
+  ${
+    $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d C y $.
+    $( If an ordered pair has an element, then its arguments are sets.
+       (Contributed by Mario Carneiro, 26-Apr-2015.) $)
+    oprcl $p |- ( C e. <. A , B >. -> ( A e. _V /\ B e. _V ) ) $=
+      ( vy vx cop wcel cv wex cvv wa elex2 wsb csn cpr w3a df-op eleq2i df-clab
+      cab bitri 3simpa sbimi sylbi nfv sbf sylib exlimiv syl ) CABFZGDHZUJGZDIA
+      JGZBJGZKZDCUJLULUODULUOEDMZUOULUMUNEHANABOOGZPZEDMZUPULUKURETZGUSUJUTUKEA
+      BQRURDESUAURUOEDUMUNUQUBUCUDUOEDUOEUEUFUGUHUI $.
+  $}
 
   ${
     $d x A $.  $d x B $.  $d x C $.
