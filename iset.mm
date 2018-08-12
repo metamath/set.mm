@@ -1,4 +1,4 @@
-$( iset.mm - Version of 11-Aug-2018
+$( iset.mm - Version of 12-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -27058,6 +27058,13 @@ $)
       ) BECFZAGZHZBIUJAJZGZBIZUKBCKABCLZRMZULUNBUJANOUKBCPUNBDSZDIUMBDS
       ZGZDIZUOUQURUTDUMBDUAOUNBDUNDUBUCUQDEZUPFZGZDIVADUPUDVDUTDVCUSVCV
       BUMBUEZFUSUPVEVBABCUFUGUMDBUHQUIOQTT $.
+
+    $( Condition for a class abstraction to be empty.  (Contributed by Jim
+       Kingdon, 12-Aug-2018.) $)
+    abeq0 $p |- ( { x | ph } = (/) <-> A. x -. ph ) $=
+      ( vy wn wsb wal cab c0 wceq sbn albii nfv sb8 cv wcel eq0 df-clab
+      notbii bitri 3bitr4ri ) ADZBCEZCFABCEZDZCFZUABFABGZHIZUBUDCABCJKU
+      ABCUACLMUGCNUFOZDZCFUECUFPUIUDCUHUCACBQRKST $.
   $}
 
   ${
