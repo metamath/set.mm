@@ -29282,14 +29282,15 @@ $)
   $}
 
   ${
+    $d y A $.  $d y B $.  $d y x $.
     nfop.1 $e |- F/_ x A $.
     nfop.2 $e |- F/_ x B $.
     $( Bound-variable hypothesis builder for ordered pairs.  (Contributed by
        NM, 14-Nov-1995.) $)
     nfop $p |- F/_ x <. A , B >. $=
-      ( cop cvv wcel wa csn cpr c0 cif dfopif nfel1 nfan nfsn nfpr nfcv nfif
-      nfcxfr ) ABCFBGHZCGHZIZBJZBCKZKZLMBCNUDAUGLUBUCAABGDOACGEOPAUEUFABDQABCDE
-      RRALSTUA $.
+      ( vy cop cvv wcel cv csn cpr w3a cab df-op nfel1 nfsn nfpr nfcri nf3an
+      nfab nfcxfr ) ABCGBHIZCHIZFJBKZBCLZLZIZMZFNFBCOUIAFUCUDUHAABHDPACHEPAFUGA
+      UEUFABDQABCDERRSTUAUB $.
   $}
 
   ${
