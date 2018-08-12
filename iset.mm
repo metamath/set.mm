@@ -29347,11 +29347,15 @@ $)
       $.
   $}
 
-  $( Expansion of an ordered pair when either member is a proper class.
-     (Contributed by Mario Carneiro, 26-Apr-2015.) $)
-  opprc $p |- ( -. ( A e. _V /\ B e. _V ) -> <. A , B >. = (/) ) $=
-    ( cvv wcel wa wn cop csn cpr c0 cif dfopif iffalse syl5eq ) ACDBCDEZFABGOAH
-    ABIIZJKJABLOPJMN $.
+  ${
+    $d A x $.  $d B x y $.
+    $( Expansion of an ordered pair when either member is a proper class.
+       (Contributed by Mario Carneiro, 26-Apr-2015.) $)
+    opprc $p |- ( -. ( A e. _V /\ B e. _V ) -> <. A , B >. = (/) ) $=
+      ( vx cvv wcel wa wn cop cv csn cpr w3a cab df-op wal 3simpa con3i
+      c0 wceq alrimiv abeq0 sylibr syl5eq ) ADEZBDEZFZGZABHUDUECIAJABKK
+      EZLZCMZRCABNUGUIGZCOUJRSUGUKCUIUFUDUEUHPQTUICUAUBUC $.
+  $}
 
   $( Expansion of an ordered pair when the first member is a proper class.  See
      also ~ opprc .  (Contributed by NM, 10-Apr-2004.)  (Revised by Mario
