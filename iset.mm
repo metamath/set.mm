@@ -29153,10 +29153,10 @@ $)
        Mario Carneiro, 26-Apr-2015.) $)
     dfopg $p |- ( ( A e. V /\ B e. W ) ->
       <. A , B >. = { { A } , { A , B } } ) $=
-      ( vx wcel cvv cop csn cpr wceq elex wa cv cab ibar df-3an syl6bbr
-      w3a abbidv abid2 df-op eqcomi 3eqtr3g eqcomd syl2an ) ACFAGFZBGFZ
-      ABHZAIABJJZKBDFACLBDLUGUHMZUJUIUKENUJFZEOUGUHULSZEOZUJUIUKULUMEUK
-      ULUKULMUMUKULPUGUHULQRTEUJUAUIUNEABUBUCUDUEUF $.
+      ( vx wcel cvv cop csn cpr wceq elex wa cab w3a df-3an baibr abbidv abid2
+      cv df-op eqcomi 3eqtr3g eqcomd syl2an ) ACFAGFZBGFZABHZAIABJJZKBDFACLBDLU
+      FUGMZUIUHUJETUIFZENUFUGUKOZENZUIUHUJUKULEULUJUKUFUGUKPQREUISUHUMEABUAUBUC
+      UDUE $.
   $}
 
   ${
@@ -29169,19 +29169,26 @@ $)
       ( cvv wcel cop csn cpr wceq dfopg mp2an ) AEFBEFABGAHABIIJCDABEEKL $.
   $}
 
-  $( Equality theorem for ordered pairs.  (Contributed by NM, 25-Jun-1998.)
-     (Revised by Mario Carneiro, 26-Apr-2015.) $)
-  opeq1 $p |- ( A = B -> <. A , C >. = <. B , C >. ) $=
-    ( wceq cvv wcel wa csn cpr c0 cif cop eleq1 anbi1d sneq preq1 preq12d eqidd
-    ifbieq12d dfopif 3eqtr4g ) ABDZAEFZCEFZGZAHZACIZIZJKBEFZUDGZBHZBCIZIZJKACLB
-    CLUBUEUJUHJUMJUBUCUIUDABEMNUBUFUKUGULABOABCPQUBJRSACTBCTUA $.
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Equality theorem for ordered pairs.  (Contributed by NM, 25-Jun-1998.)
+       (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    opeq1 $p |- ( A = B -> <. A , C >. = <. B , C >. ) $=
+      ( vx wceq cvv wcel cv csn cpr w3a cab cop eleq1 anbi1d sneq preq1
+      wa df-3an df-op preq12d eleq2d anbi12d 3bitr4g abbidv 3eqtr4g ) A
+      BEZAFGZCFGZDHZAIZACJZJZGZKZDLBFGZUIUJBIZBCJZJZGZKZDLACMBCMUGUOVAD
+      UGUHUIRZUNRUPUIRZUTRUOVAUGVBVCUNUTUGUHUPUIABFNOUGUMUSUJUGUKUQULUR
+      ABPABCQUAUBUCUHUIUNSUPUIUTSUDUEDACTDBCTUF $.
 
-  $( Equality theorem for ordered pairs.  (Contributed by NM, 25-Jun-1998.)
-     (Revised by Mario Carneiro, 26-Apr-2015.) $)
-  opeq2 $p |- ( A = B -> <. C , A >. = <. C , B >. ) $=
-    ( wceq cvv wcel wa csn cpr c0 cif eleq1 anbi2d preq2 preq2d eqidd ifbieq12d
-    cop dfopif 3eqtr4g ) ABDZCEFZAEFZGZCHZCAIZIZJKUBBEFZGZUECBIZIZJKCARCBRUAUDU
-    IUGJUKJUAUCUHUBABELMUAUFUJUEABCNOUAJPQCASCBST $.
+    $( Equality theorem for ordered pairs.  (Contributed by NM, 25-Jun-1998.)
+       (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    opeq2 $p |- ( A = B -> <. C , A >. = <. C , B >. ) $=
+      ( vx wceq cvv wcel cv csn cpr w3a cab wa eleq1 anbi2d eqidd preq2
+      cop df-3an df-op preq12d eleq2d anbi12d 3bitr4g abbidv 3eqtr4g )
+      ABEZCFGZAFGZDHZCIZCAJZJZGZKZDLUHBFGZUJUKCBJZJZGZKZDLCARCBRUGUOUTD
+      UGUHUIMZUNMUHUPMZUSMUOUTUGVAVBUNUSUGUIUPUHABFNOUGUMURUJUGUKUKULUQ
+      UGUKPABCQUAUBUCUHUIUNSUHUPUSSUDUEDCATDCBTUF $.
+  $}
 
   $( Equality theorem for ordered pairs.  (Contributed by NM, 28-May-1995.) $)
   opeq12 $p |- ( ( A = C /\ B = D ) -> <. A , B >. = <. C , D >. ) $=
