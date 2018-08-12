@@ -29147,12 +29147,17 @@ $)
       KUJUHUJNUJUHUJUFUGABCOUIUGPQUHUIUGABCRUFUGPQUASSS $.
   $}
 
-  $( Value of the ordered pair when the arguments are sets.  (Contributed by
-     Mario Carneiro, 26-Apr-2015.) $)
-  dfopg $p |- ( ( A e. V /\ B e. W ) ->
-    <. A , B >. = { { A } , { A , B } } ) $=
-    ( wcel cvv cop csn cpr wceq elex wa c0 cif dfopif iftrue syl5eq syl2an ) AC
-    EAFEZBFEZABGZAHABIIZJBDEACKBDKSTLZUAUCUBMNUBABOUCUBMPQR $.
+  ${
+    $d x A $.  $d x B $.
+    $( Value of the ordered pair when the arguments are sets.  (Contributed by
+       Mario Carneiro, 26-Apr-2015.) $)
+    dfopg $p |- ( ( A e. V /\ B e. W ) ->
+      <. A , B >. = { { A } , { A , B } } ) $=
+      ( vx wcel cvv cop csn cpr wceq elex wa cv cab ibar df-3an syl6bbr
+      w3a abbidv abid2 df-op eqcomi 3eqtr3g eqcomd syl2an ) ACFAGFZBGFZ
+      ABHZAIABJJZKBDFACLBDLUGUHMZUJUIUKENUJFZEOUGUHULSZEOZUJUIUKULUMEUK
+      ULUKULMUMUKULPUGUHULQRTEUJUAUIUNEABUBUCUDUEUF $.
+  $}
 
   ${
     dfop.1 $e |- A e. _V $.
