@@ -29670,10 +29670,11 @@ $)
     $( The union of a set is empty iff the set is included in the singleton of
        the empty set.  (Contributed by NM, 12-Sep-2004.) $)
     uni0b $p |- ( U. A = (/) <-> A C_ { (/) } ) $=
-      ( vx vy cv c0 csn wcel wral wceq wss cuni elsn ralbii dfss3 wex wrex neq0
-      wn rexcom4 3bitr4ri rexbii eluni2 exbii rexnal 3bitri con4bii ) BDZEFZGZB
-      AHUGEIZBAHZAUHJAKZEIZUIUJBABELMBAUHNUMUKUMRCDZULGZCOZUJRZBAPZUKRCULQUNUGG
-      ZCOZBAPUSBAPZCOURUPUSBCASUQUTBACUGQUAUOVACBUNAUBUCTUJBAUDUEUFT $.
+      ( vx vy cv c0 wceq wral wcel wn wal csn wss cuni eq0 ralbii ralcom4 bitri
+      dfss3 elsn albii wrex eluni2 notbii ralnex 3bitr4i 3bitr4ri ) BDZEFZBAGZC
+      DZUGHZIZBAGZCJZAEKZLZAMZEFZUIULCJZBAGUNUHUSBACUGNOULBCAPQUPUGUOHZBAGUIBAU
+      ORUTUHBABESOQUJUQHZIZCJUKBAUAZIZCJURUNVBVDCVAVCBUJAUBUCTCUQNUMVDCUKBAUDTU
+      EUF $.
 
     $( The union of a set is empty iff all of its members are empty.
        (Contributed by NM, 16-Aug-2006.) $)
