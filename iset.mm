@@ -1,4 +1,4 @@
-$( iset.mm - Version of 12-Aug-2018
+$( iset.mm - Version of 13-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm
@@ -29383,12 +29383,13 @@ $)
         ( c0 pwsnss ) AB $.
     $}
 
-    $( The power set of an unordered pair.  (Contributed by NM, 1-May-2009.) $)
-    pwpr $p |- ~P { A , B } = ( { (/) , { A } } u. { { B } , { A , B } } ) $=
-      ( vx cpr cpw c0 csn cun cv wss wcel wo wceq sspr elpr orbi12i bitr4i elpw
-      vex elun 3bitr4i eqriv ) CABDZEZFAGZDZBGZUCDZHZCIZUCJZUJUFKZUJUHKZLZUJUDK
-      UJUIKUKUJFMUJUEMLZUJUGMUJUCMLZLUNUJABNULUOUMUPUJFUECSZOUJUGUCUQOPQUJUCUQR
-      UJUFUHTUAUB $.
+    $( The power set of an unordered pair.  (Contributed by Jim Kingdon,
+       13-Aug-2018.) $)
+    pwprss $p |- ( { (/) , { A } } u. { { B } , { A , B } } ) C_ ~P { A , B } $=
+      ( vx c0 csn cpr cun cpw cv wcel wss wceq vex elpr orbi12i ssprr
+      wo sylbi elun elpw 3imtr4i ssriv ) CDAEZFZBEZABFZFZGZUFHZCIZUDJ
+      ZUJUGJZQZUJUFKZUJUHJUJUIJUMUJDLUJUCLQZUJUELUJUFLQZQUNUKUOULUPUJ
+      DUCCMZNUJUEUFUQNOUJABPRUJUDUGSUJUFUQTUAUB $.
 
     $( The power set of an unordered triple.  (Contributed by Mario Carneiro,
        2-Jul-2016.) $)
