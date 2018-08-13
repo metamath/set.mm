@@ -5798,6 +5798,49 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Stable propositions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+  $( Declare connective for stability. $)
+  $c STABLE $.
+
+  $( Extend wff definition to include stability. $)
+  wstable $a wff STABLE ph $.
+
+  $( Propositions where a double-negative can be removed are called stable.
+     See Chapter 2 [Moschovakis] p. 2.
+
+     Our notation for stability is a connective ` STABLE ` which we place
+     before the formula in question.  For example, ` STABLE x = y ` corresponds
+     to "x = y is stable".
+
+     (Contributed by David A. Wheeler, 13-Aug-2018.) $)
+  df-stable $a |- ( STABLE ph <-> ( -. -. ph -> ph ) ) $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Testable propositions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+  $( Declare connective for testability. $)
+  $c TESTABLE $.
+
+  $( Extend wff definition to include stability. $)
+  wtestable $a wff TESTABLE ph $.
+
+  $( Propositions where its negative or double-negative is true
+     are called testable.
+     See Chapter 2 [Moschovakis] p. 2.
+
+     Our notation for testability is a connective ` TESTABLE ` which we place
+     before the formula in question.  For example,
+     ` TESTABLE x = y ` corresponds to "x = y is testable".
+
+     (Contributed by David A. Wheeler, 13-Aug-2018.) $)
+  df-testable $a |- ( TESTABLE ph <-> ( -. ph \/ -. -. ph ) ) $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Decidable propositions
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -28363,6 +28406,12 @@ htmldef "F." as
     " <IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 TITLE='F.' ALIGN=TOP> ";
   althtmldef "F." as ' &perp; ';
   latexdef "F." as "\bot";
+htmldef "STABLE" as "<SMALL>STABLE</SMALL> ";
+  althtmldef "STABLE" as "<SMALL>STABLE</SMALL> ";
+  latexdef "STABLE" as "\mathrm{STABLE} ";
+htmldef "TESTABLE" as "<SMALL>TESTABLE</SMALL> ";
+  althtmldef "TESTABLE" as "<SMALL>TESTABLE</SMALL> ";
+  latexdef "TESTABLE" as "\mathrm{TESTABLE} ";
 htmldef "DECID" as "<SMALL>DECID</SMALL> ";
   althtmldef "DECID" as "<SMALL>DECID</SMALL> ";
   latexdef "DECID" as "\mathrm{DECID} ";
