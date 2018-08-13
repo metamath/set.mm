@@ -29442,9 +29442,8 @@ $)
     $d x y A $.
     $( Define the union of a class i.e. the collection of all members of the
        members of the class.  Definition 5.5 of [TakeutiZaring] p. 16.  For
-       example, ` U. { { 1 , 3 } , { 1 , 8 } } = { 1 , 3 , 8 } ` ( ~ ex-uni ).
-       This is similar to the union of two classes ~ df-un .  (Contributed by
-       NM, 23-Aug-1993.) $)
+       example, { { 1 , 3 } , { 1 , 8 } } = { 1 , 3 , 8 } .  This is similar to
+       the union of two classes ~ df-un .  (Contributed by NM, 23-Aug-1993.) $)
     df-uni $a |- U. A = { x | E. y ( x e. y /\ y e. A ) } $.
   $}
 
@@ -29622,9 +29621,8 @@ $)
       JVCUIUHABLMUIUPURNOPUMVAUNVBDUGASDUGBSQTDUGUBSUGUDUELTUA $.
 
     $( The class union of the intersection of two classes.  Exercise 4.12(n) of
-       [Mendelson] p. 235.  See ~ uniinqs for a condition where equality
-       holds.  (Contributed by NM, 4-Dec-2003.)  (Proof shortened by Andrew
-       Salmon, 29-Jun-2011.) $)
+       [Mendelson] p. 235.  (Contributed by NM, 4-Dec-2003.)  (Proof shortened
+       by Andrew Salmon, 29-Jun-2011.) $)
     uniin $p |- U. ( A i^i B ) C_ ( U. A i^i U. B ) $=
       ( vx vy cin cuni cv wcel wex 19.40 elin anbi2i anandi bitri exbii anbi12i
       wa eluni 3imtr4i ssriv ) CABEZFZAFZBFZEZCGZDGZHZUGUAHZQZDIZUFUCHZUFUDHZQZ
@@ -29685,7 +29683,7 @@ $)
   $}
 
   $( The union of the empty set is the empty set.  Theorem 8.7 of [Quine]
-     p. 54.  (Reproved without relying on ~ ax-nul by Eric Schmidt.)
+     p. 54.  (Reproved without relying on ax-nul by Eric Schmidt.)
      (Contributed by NM, 16-Sep-1993.)  (Revised by Eric Schmidt,
      4-Apr-2007.) $)
   uni0 $p |- U. (/) = (/) $=
@@ -29719,8 +29717,7 @@ $)
     $d x A $.  $d x y B $.
     $( A subclass condition on the members of two classes that implies a
        subclass relation on their unions.  Proposition 8.6 of [TakeutiZaring]
-       p. 59.  See ~ iunss2 for a generalization to indexed unions.
-       (Contributed by NM, 22-Mar-2004.) $)
+       p. 59.  (Contributed by NM, 22-Mar-2004.) $)
     uniss2 $p |- ( A. x e. A E. y e. B x C_ y -> U. A C_ U. B ) $=
       ( cv wss wrex wral cuni wcel ssuni expcom rexlimiv ralimi unissb sylibr )
       AEZBEZFZBDGZACHQDIZFZACHCIUAFTUBACSUBBDSRDJUBQRDKLMNACUAOP $.
