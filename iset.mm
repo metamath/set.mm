@@ -29384,10 +29384,11 @@ $)
 
   ${
     $d x A $.  $d x B $.  $d x C $.
-    $( The power set of a singleton.  (Contributed by NM, 5-Jun-2006.) $)
-    pwsn $p |- ~P { A } = { (/) , { A } } $=
-      ( vx cv csn wss cab c0 wceq wo cpw cpr sssn abbii df-pw dfpr2 3eqtr4i ) B
-      CZADZEZBFQGHQRHIZBFRJGRKSTBQALMBRNBGROP $.
+    $( The power set of a singleton.  (Contributed by Jim Kingdon,
+       12-Aug-2018.) $)
+    pwsnss $p |- { (/) , { A } } C_ ~P { A } $=
+      ( vx cv c0 wceq csn wo cab wss cpr cpw sssnr ss2abi dfpr2 3sstr4i
+      df-pw ) BCZDEQAFZEGZBHQRIZBHDRJRKSTBQALMBDRNBRPO $.
 
     $d x y $.  $d y A $.
     $( The power set of a singleton (direct proof).  TO DO - should we keep
