@@ -29406,13 +29406,13 @@ $)
   $}
 
   ${
-    $d x y $.
     $( Compute the power set of the power set of the power set of the empty
-       set.  (See also ~ pw0 and ~ pwpw0ss .)  (Contributed by NM,
-       2-May-2009.) $)
-    pwpwpw0 $p |- ~P { (/) , { (/) } } =
-                ( { (/) , { (/) } } u. { { { (/) } } , { (/) , { (/) } } } ) $=
-      ( c0 csn pwpr ) AABC $.
+       set.  (See also ~ pw0 and ~ pwpw0ss .)  (Contributed by Jim Kingdon,
+       13-Aug-2018.) $)
+    pwpwpw0ss $p |-
+        ( { (/) , { (/) } } u. { { { (/) } } , { (/) , { (/) } } } )
+        C_ ~P { (/) , { (/) } } $=
+      ( c0 csn pwprss ) AABC $.
   $}
 
   ${
