@@ -29391,17 +29391,18 @@ $)
       ZUJUGJZQZUJUFKZUJUHJUJUIJUMUJDLUJUCLQZUJUELUJUFLQZQUNUKUOULUPUJ
       DUCCMZNUJUEUFUQNOUJABPRUJUDUGSUJUFUQTUAUB $.
 
-    $( The power set of an unordered triple.  (Contributed by Mario Carneiro,
-       2-Jul-2016.) $)
-    pwtp $p |- ~P { A , B , C } =
-      ( ( { (/) , { A } } u. { { B } , { A , B } } ) u.
-        ( { { C } , { A , C } } u. { { B , C } , { A , B , C } } ) ) $=
-      ( vx ctp cpw c0 csn cpr cun cv wcel wss vex wceq elun elpr orbi12i bitri
-      wo elpw sstp 3bitr4ri eqriv ) DABCEZFZGAHZIZBHZABIZIZJZCHZACIZIZBCIZUEIZJ
-      ZJZDKZUFLUTUEMZUTUSLZUTUEDNZUAUTULLZUTURLZTUTGOUTUGOTZUTUIOUTUJOTZTZUTUMO
-      UTUNOTZUTUPOUTUEOTZTZTVBVAVDVHVEVKVDUTUHLZUTUKLZTVHUTUHUKPVLVFVMVGUTGUGVC
-      QUTUIUJVCQRSVEUTUOLZUTUQLZTVKUTUOUQPVNVIVOVJUTUMUNVCQUTUPUEVCQRSRUTULURPU
-      TABCUBUCSUD $.
+    $( The power set of an unordered triple.  (Contributed by Jim Kingdon,
+       13-Aug-2018.) $)
+    pwtpss $p |-
+        ( ( { (/) , { A } } u. { { B } , { A , B } } ) u.
+          ( { { C } , { A , C } } u. { { B , C } , { A , B , C } } ) )
+        C_ ~P { A , B , C } $=
+      ( vx c0 csn cpr cun ctp cpw cv wceq wo wcel sstpr elun elpr orbi12i bitri
+      wss vex elpw 3imtr4i ssriv ) DEAFZGZBFZABGZGZHZCFZACGZGZBCGZABCIZGZHZHZUO
+      JZDKZELUTUELMZUTUGLUTUHLMZMZUTUKLUTULLMZUTUNLUTUOLMZMZMZUTUOTUTURNZUTUSNU
+      TABCOVHUTUJNZUTUQNZMVGUTUJUQPVIVCVJVFVIUTUFNZUTUINZMVCUTUFUIPVKVAVLVBUTEU
+      EDUAZQUTUGUHVMQRSVJUTUMNZUTUPNZMVFUTUMUPPVNVDVOVEUTUKULVMQUTUNUOVMQRSRSUT
+      UOVMUBUCUD $.
   $}
 
   ${
