@@ -29383,20 +29383,6 @@ $)
         ( c0 pwsnss ) AB $.
     $}
 
-    $d x y $.  $d y A $.
-    $( The power set of a singleton (direct proof).  TO DO - should we keep
-       this?  (Contributed by NM, 5-Jun-2006.)
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
-    pwsnALT $p |- ~P { A } = { (/) , { A } } $=
-      ( vx vy cv csn wss cab c0 wceq wo cpw cpr wn wa wcel wal dfss2 wex sylbi
-      wi elsn imbi2i albii bitri neq0 exintr syl5bi df-clel exancom bitr2i syl6
-      snssi anc2li eqss syl6ibr orrd 0ss sseq1 mpbiri eqimss impbii abbii df-pw
-      jaoi dfpr2 3eqtr4i ) BDZAEZFZBGVGHIZVGVHIZJZBGVHKHVHLVIVLBVIVLVIVJVKVIVJM
-      ZVIVHVGFZNVKVIVMVNVICDZVGOZVOAIZTZCPZVMVNTVIVPVOVHOZTZCPVSCVGVHQWAVRCVTVQ
-      VPCAUAUBUCUDVSVMVPVQNCRZVNVMVPCRVSWBCVGUEVPVQCUFUGWBAVGOZVNWCVQVPNCRWBCAV
-      GUHVQVPCUIUJAVGULSUKSUMVGVHUNUOUPVJVIVKVJVIHVHFVHUQVGHVHURUSVGVHUTVDVAVBB
-      VHVCBHVHVEVF $.
-
     $( The power set of an unordered pair.  (Contributed by NM, 1-May-2009.) $)
     pwpr $p |- ~P { A , B } = ( { (/) , { A } } u. { { B } , { A , B } } ) $=
       ( vx cpr cpw c0 csn cun cv wss wcel wo wceq sspr elpr orbi12i bitr4i elpw
