@@ -29467,6 +29467,335 @@ $)
       FNGNBAHZIJPKL $.
   $}
 
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                       The union of a class
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare class union symbol. $)
+  $c U. $. $( Big cup $)
+
+  $( Extend class notation to include the union of a class (read:  'union
+     ` A ` ') $)
+  cuni $a class U. A $.
+
+  ${
+    $d x y A $.
+    $( Define the union of a class i.e. the collection of all members of the
+       members of the class.  Definition 5.5 of [TakeutiZaring] p. 16.  For
+       example, { { 1 , 3 } , { 1 , 8 } } = { 1 , 3 , 8 } .  This is similar to
+       the union of two classes ~ df-un .  (Contributed by NM, 23-Aug-1993.) $)
+    df-uni $a |- U. A = { x | E. y ( x e. y /\ y e. A ) } $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Alternate definition of class union.  (Contributed by NM,
+       28-Jun-1998.) $)
+    dfuni2 $p |- U. A = { x | E. y e. A x e. y } $=
+      ( cuni cv wcel wa wex cab wrex df-uni exancom df-rex bitr4i abbii eqtri )
+      CDAEBEZFZQCFZGBHZAIRBCJZAIABCKTUAATSRGBHUARSBLRBCMNOP $.
+  $}
+
+  ${
+    $d x A y $.  $d x B y $.
+    $( Membership in class union.  (Contributed by NM, 22-May-1994.) $)
+    eluni $p |- ( A e. U. B <-> E. x ( A e. x /\ x e. B ) ) $=
+      ( vy cuni wcel cvv cv wa wex elex adantr exlimiv wceq eleq1 anbi1d exbidv
+      df-uni elab2g pm5.21nii ) BCEZFBGFZBAHZFZUCCFZIZAJZBUAKUFUBAUDUBUEBUCKLMD
+      HZUCFZUEIZAJUGDBUAGUHBNZUJUFAUKUIUDUEUHBUCOPQDACRST $.
+
+    $( Membership in class union.  Restricted quantifier version.  (Contributed
+       by NM, 31-Aug-1999.) $)
+    eluni2 $p |- ( A e. U. B <-> E. x e. B A e. x ) $=
+      ( cv wcel wa wex cuni wrex exancom eluni df-rex 3bitr4i ) BADZEZNCEZFAGPO
+      FAGBCHEOACIOPAJABCKOACLM $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Membership in class union.  (Contributed by NM, 24-Mar-1995.) $)
+    elunii $p |- ( ( A e. B /\ B e. C ) -> A e. U. C ) $=
+      ( vx wcel wa cv cuni wceq eleq2 eleq1 anbi12d spcegv anabsi7 eluni sylibr
+      wex ) ABEZBCEZFZADGZEZUACEZFZDQZACHERSUEUDTDBCUABIUBRUCSUABAJUABCKLMNDACO
+      P $.
+  $}
+
+  ${
+    $d y z A $.  $d x y z $.
+    nfuni.1 $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for union.  (Contributed by NM,
+       30-Dec-1996.)  (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
+    nfuni $p |- F/_ x U. A $=
+      ( vy vz cuni wel wrex cab dfuni2 nfv nfrexxy nfab nfcxfr ) ABFDEGZEBHZDIDEB
+      JPADOAEBCOAKLMN $.
+  $}
+
+  ${
+    $d y z A $.  $d x y z $.  $d y z ph $.
+    nfunid.3 $e |- ( ph -> F/_ x A ) $.
+    $( Deduction version of ~ nfuni .  (Contributed by NM, 18-Feb-2013.) $)
+    nfunid $p |- ( ph -> F/_ x U. A ) $=
+      ( vy vz cuni wel wrex cab dfuni2 nfv nfvd nfrexdxy nfabd nfcxfrd ) ABCGEFHZ
+      FCIZEJEFCKARBEAELAQBFCAFLDAQBMNOP $.
+  $}
+
+  ${
+    $d A y z $.  $d B y z $.  $d V y z $.  $d x y z $.
+    $( Distribute proper substitution through the union of a class.
+       (Contributed by Alan Sare, 10-Nov-2012.) $)
+    csbunig $p |- ( A e. V -> [_ A / x ]_ U. B = U. [_ A / x ]_ B ) $=
+      ( vz vy wcel cv wa wex cab csb cuni wsbc csbabg sbcexg sbcang sbcg df-uni
+      bitrd sbcel2g anbi12d exbidv abbidv eqtrd csbeq2i 3eqtr4g ) BDGZABEHFHZGZ
+      UICGZIZFJZEKZLZUJUIABCLZGZIZFJZEKZABCMZLUPMUHUOUMABNZEKUTUMAEBDOUHVBUSEUH
+      VBULABNZFJUSULFABDPUHVCURFUHVCUJABNZUKABNZIURUJUKABDQUHVDUJVEUQUJABDRABUI
+      CDUAUBTUCTUDUEABVAUNEFCSUFEFUPSUG $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Equality theorem for class union.  Exercise 15 of [TakeutiZaring]
+       p. 18.  (Contributed by NM, 10-Aug-1993.)  (Proof shortened by Andrew
+       Salmon, 29-Jun-2011.) $)
+    unieq $p |- ( A = B -> U. A = U. B ) $=
+      ( vy vx wceq wel wrex cab cuni rexeq abbidv dfuni2 3eqtr4g ) ABEZCDFZDAGZ
+      CHODBGZCHAIBINPQCODABJKCDALCDBLM $.
+  $}
+
+  ${
+    unieqi.1 $e |- A = B $.
+    $( Inference of equality of two class unions.  (Contributed by NM,
+       30-Aug-1993.) $)
+    unieqi $p |- U. A = U. B $=
+      ( wceq cuni unieq ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    unieqd.1 $e |- ( ph -> A = B ) $.
+    $( Deduction of equality of two class unions.  (Contributed by NM,
+       21-Apr-1995.) $)
+    unieqd $p |- ( ph -> U. A = U. B ) $=
+      ( wceq cuni unieq syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
+    $d x A y $.  $d ph y $.
+    $( Membership in union of a class abstraction.  (Contributed by NM,
+       11-Aug-1994.)  (Revised by Mario Carneiro, 14-Nov-2016.) $)
+    eluniab $p |- ( A e. U. { x | ph } <-> E. x ( A e. x /\ ph ) ) $=
+      ( vy cab cuni wcel cv wa wex eluni nfv nfsab1 nfan weq eleq2 eleq1 syl6bb
+      abid anbi12d cbvex bitri ) CABEZFGCDHZGZUDUCGZIZDJCBHZGZAIZBJDCUCKUGUJDBU
+      EUFBUEBLABDMNUJDLDBOZUEUIUFAUDUHCPUKUFUHUCGAUDUHUCQABSRTUAUB $.
+
+    $( Membership in union of a class abstraction.  (Contributed by NM,
+       4-Oct-2006.) $)
+    elunirab $p |- ( A e. U. { x e. B | ph } <->
+                   E. x e. B ( A e. x /\ ph ) ) $=
+      ( cv wcel cab cuni wex crab wrex eluniab df-rab unieqi eleq2i df-rex an12
+      wa exbii bitri 3bitr4i ) CBEZDFZARZBGZHZFCUBFZUDRZBIZCABDJZHZFUGARZBDKZUD
+      BCLUKUFCUJUEABDMNOUMUCULRZBIUIULBDPUNUHBUCUGAQSTUA $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    unipr.1 $e |- A e. _V $.
+    unipr.2 $e |- B e. _V $.
+    $( The union of a pair is the union of its members.  Proposition 5.7 of
+       [TakeutiZaring] p. 16.  (Contributed by NM, 23-Aug-1993.) $)
+    unipr $p |- U. { A , B } = ( A u. B ) $=
+      ( vx vy cv wcel wo cab cpr wa wex cun cuni wceq 19.43 bitri clel3 exancom
+      vex elpr anbi2i andi exbii orbi12i 3bitr4ri abbii df-un df-uni 3eqtr4ri )
+      EGZAHZULBHZIZEJULFGZHZUPABKZHZLZFMZEJABNUROUOVAEUQUPAPZLZUQUPBPZLZIZFMVCF
+      MZVEFMZIVAUOVCVEFQUTVFFUTUQVBVDIZLVFUSVIUQUPABFUAUBUCUQVBVDUDRUEUMVGUNVHU
+      MVBUQLFMVGFULACSVBUQFTRUNVDUQLFMVHFULBDSVDUQFTRUFUGUHEABUIEFURUJUK $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.
+    $( The union of a pair is the union of its members.  Proposition 5.7 of
+       [TakeutiZaring] p. 16.  (Contributed by NM, 25-Aug-2006.) $)
+    uniprg $p |- ( ( A e. V /\ B e. W ) -> U. { A , B } = ( A u. B ) ) $=
+      ( vx vy cv cpr cuni cun wceq preq1 unieqd uneq1 eqeq12d preq2 uneq2 unipr
+      vex vtocl2g ) EGZFGZHZIZUAUBJZKAUBHZIZAUBJZKABHZIZABJZKEFABCDUAAKZUDUGUEU
+      HULUCUFUAAUBLMUAAUBNOUBBKZUGUJUHUKUMUFUIUBBAPMUBBAQOUAUBESFSRT $.
+  $}
+
+  ${
+    unisn.1 $e |- A e. _V $.
+    $( A set equals the union of its singleton.  Theorem 8.2 of [Quine] p. 53.
+       (Contributed by NM, 30-Aug-1993.) $)
+    unisn $p |- U. { A } = A $=
+      ( csn cuni cpr cun dfsn2 unieqi unipr unidm 3eqtri ) ACZDAAEZDAAFALMAGHAA
+      BBIAJK $.
+  $}
+
+  ${
+    $d x A $.
+    $( A set equals the union of its singleton.  Theorem 8.2 of [Quine] p. 53.
+       (Contributed by NM, 13-Aug-2002.) $)
+    unisng $p |- ( A e. V -> U. { A } = A ) $=
+      ( vx cv csn cuni wceq sneq unieqd id eqeq12d vex unisn vtoclg ) CDZEZFZOG
+      AEZFZAGCABOAGZQSOATPROAHITJKOCLMN $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    $( An alternative statement of the effective freeness of a class ` A ` ,
+       when it is a set.  (Contributed by Mario Carneiro, 14-Oct-2016.) $)
+    dfnfc2 $p |- ( A. x A e. V -> ( F/_ x A <-> A. y F/ x y = A ) ) $=
+      ( wcel wal wnfc cv wceq wnf nfcvd id nfeqd alrimiv wa csn cuni simpr elsn
+      df-nfc nfbii albii bitri sylibr nfunid nfa1 nfnf1 nfal nfan unisng adantr
+      sps nfceqdf mpbid ex impbid2 ) CDEZAFZACGZBHZCIZAJZBFZUSVBBUSAUTCUSAUTKUS
+      LMNURVCUSURVCOZACPZQZGUSVDAVEVDVCAVEGZURVCRVGUTVEEZAJZBFVCABVETVIVBBVHVAA
+      BCSUAUBUCUDUEVDAVFCURVCAUQAUFVBABVAAUGUHUIURVFCIZVCUQVJACDUJULUKUMUNUOUP
+      $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The class union of the union of two classes.  Theorem 8.3 of [Quine]
+       p. 53.  (Contributed by NM, 20-Aug-1993.) $)
+    uniun $p |- U. ( A u. B ) = ( U. A u. U. B ) $=
+      ( vx vy cun cuni cv wcel wa wo 19.43 elun anbi2i andi bitri exbii orbi12i
+      wex eluni 3bitr4i eqriv ) CABEZFZAFZBFZEZCGZDGZHZUHUBHZIZDRZUGUDHZUGUEHZJ
+      ZUGUCHUGUFHUIUHAHZIZUIUHBHZIZJZDRUQDRZUSDRZJULUOUQUSDKUKUTDUKUIUPURJZIUTU
+      JVCUIUHABLMUIUPURNOPUMVAUNVBDUGASDUGBSQTDUGUBSUGUDUELTUA $.
+
+    $( The class union of the intersection of two classes.  Exercise 4.12(n) of
+       [Mendelson] p. 235.  (Contributed by NM, 4-Dec-2003.)  (Proof shortened
+       by Andrew Salmon, 29-Jun-2011.) $)
+    uniin $p |- U. ( A i^i B ) C_ ( U. A i^i U. B ) $=
+      ( vx vy cin cuni cv wcel wex 19.40 elin anbi2i anandi bitri exbii anbi12i
+      wa eluni 3imtr4i ssriv ) CABEZFZAFZBFZEZCGZDGZHZUGUAHZQZDIZUFUCHZUFUDHZQZ
+      UFUBHUFUEHUHUGAHZQZUHUGBHZQZQZDIUPDIZURDIZQUKUNUPURDJUJUSDUJUHUOUQQZQUSUI
+      VBUHUGABKLUHUOUQMNOULUTUMVADUFARDUFBRPSDUFUARUFUCUDKST $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( Subclass relationship for class union.  Theorem 61 of [Suppes] p. 39.
+       (Contributed by NM, 22-Mar-1998.)  (Proof shortened by Andrew Salmon,
+       29-Jun-2011.) $)
+    uniss $p |- ( A C_ B -> U. A C_ U. B ) $=
+      ( vx vy wss cuni cv wcel wa wex ssel anim2d eximdv eluni 3imtr4g ssrdv )
+      ABEZCAFZBFZQCGZDGZHZUAAHZIZDJUBUABHZIZDJTRHTSHQUDUFDQUCUEUBABUAKLMDTANDTB
+      NOP $.
+
+    $( Subclass relationship for class union.  (Contributed by NM,
+       24-May-1994.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+    ssuni $p |- ( ( A C_ B /\ B e. C ) -> A C_ U. C ) $=
+      ( vy vx wcel wss cuni cv wi wal eleq2 imbi1d elunii expcom vtoclga imim2d
+      wceq alimdv dfss2 3imtr4g impcom ) BCFZABGZACHZGZUCDIZAFZUGBFZJZDKUHUGUEF
+      ZJZDKUDUFUCUJULDUCUIUKUHUGEIZFZUKJUIUKJEBCUMBRUNUIUKUMBUGLMUNUMCFUKUGUMCN
+      OPQSDABTDAUETUAUB $.
+  $}
+
+  ${
+    unissi.1 $e |- A C_ B $.
+    $( Subclass relationship for subclass union.  Inference form of ~ uniss .
+       (Contributed by David Moews, 1-May-2017.) $)
+    unissi $p |- U. A C_ U. B $=
+      ( wss cuni uniss ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    unissd.1 $e |- ( ph -> A C_ B ) $.
+    $( Subclass relationship for subclass union.  Deduction form of ~ uniss .
+       (Contributed by David Moews, 1-May-2017.) $)
+    unissd $p |- ( ph -> U. A C_ U. B ) $=
+      ( wss cuni uniss syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
+    $d x y A $.
+    $( The union of a set is empty iff the set is included in the singleton of
+       the empty set.  (Contributed by NM, 12-Sep-2004.) $)
+    uni0b $p |- ( U. A = (/) <-> A C_ { (/) } ) $=
+      ( vx vy cv c0 wceq wral wcel wn wal csn wss cuni eq0 ralbii ralcom4 bitri
+      dfss3 elsn albii wrex eluni2 notbii ralnex 3bitr4i 3bitr4ri ) BDZEFZBAGZC
+      DZUGHZIZBAGZCJZAEKZLZAMZEFZUIULCJZBAGUNUHUSBACUGNOULBCAPQUPUGUOHZBAGUIBAU
+      ORUTUHBABESOQUJUQHZIZCJUKBAUAZIZCJURUNVBVDCVAVCBUJAUBUCTCUQNUMVDCUKBAUDTU
+      EUF $.
+
+    $( The union of a set is empty iff all of its members are empty.
+       (Contributed by NM, 16-Aug-2006.) $)
+    uni0c $p |- ( U. A = (/) <-> A. x e. A x = (/) ) $=
+      ( cuni c0 wceq csn wss cv wcel wral uni0b dfss3 elsn ralbii 3bitri ) BCDE
+      BDFZGAHZPIZABJQDEZABJBKABPLRSABADMNO $.
+  $}
+
+  $( The union of the empty set is the empty set.  Theorem 8.7 of [Quine]
+     p. 54.  (Reproved without relying on ax-nul by Eric Schmidt.)
+     (Contributed by NM, 16-Sep-1993.)  (Revised by Eric Schmidt,
+     4-Apr-2007.) $)
+  uni0 $p |- U. (/) = (/) $=
+    ( c0 cuni wceq csn wss 0ss uni0b mpbir ) ABACAADZEIFAGH $.
+
+  $( An element of a class is a subclass of its union.  Theorem 8.6 of [Quine]
+     p. 54.  Also the basis for Proposition 7.20 of [TakeutiZaring] p. 40.
+     (Contributed by NM, 6-Jun-1994.) $)
+  elssuni $p |- ( A e. B -> A C_ U. B ) $=
+    ( wss wcel cuni ssid ssuni mpan ) AACABDABECAFAABGH $.
+
+  $( Condition turning a subclass relationship for union into an equality.
+     (Contributed by NM, 18-Jul-2006.) $)
+  unissel $p |- ( ( U. A C_ B /\ B e. A ) -> U. A = B ) $=
+    ( cuni wss wcel wa simpl elssuni adantl eqssd ) ACZBDZBAEZFKBLMGMBKDLBAHIJ
+    $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Relationship involving membership, subset, and union.  Exercise 5 of
+       [Enderton] p. 26 and its converse.  (Contributed by NM, 20-Sep-2003.) $)
+    unissb $p |- ( U. A C_ B <-> A. x e. A x C_ B ) $=
+      ( vy cv cuni wcel wi wal wss wa wex eluni imbi1i 19.23v albii bitri dfss2
+      wral 3bitr4i bitr4i alcom 19.21v impexp bi2.04 imbi2i df-ral ) DEZBFZGZUH
+      CGZHZDIZAEZBGZUNCJZHZAIZUICJUPABSUMUHUNGZUOKZUKHZAIZDIZURULVBDULUTALZUKHV
+      BUJVDUKAUHBMNUTUKAOUAPVCVADIZAIURVADAUBVEUQAUOUSUKHZHZDIUOVFDIZHVEUQUOVFD
+      UCVAVGDVAUSUOUKHHVGUSUOUKUDUSUOUKUEQPUPVHUODUNCRUFTPQQDUICRUPABUGT $.
+  $}
+
+  ${
+    $d x A $.  $d x y B $.
+    $( A subclass condition on the members of two classes that implies a
+       subclass relation on their unions.  Proposition 8.6 of [TakeutiZaring]
+       p. 59.  (Contributed by NM, 22-Mar-2004.) $)
+    uniss2 $p |- ( A. x e. A E. y e. B x C_ y -> U. A C_ U. B ) $=
+      ( cv wss wrex wral cuni wcel ssuni expcom rexlimiv ralimi unissb sylibr )
+      AEZBEZFZBDGZACHQDIZFZACHCIUAFTUBACSUBBDSRDJUBQRDKLMNACUAOP $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( If the difference ` A \ B ` contains the largest members of ` A ` , then
+       the union of the difference is the union of ` A ` .  (Contributed by NM,
+       22-Mar-2004.) $)
+    unidif $p |- ( A. x e. A E. y e. ( A \ B ) x C_ y ->
+               U. ( A \ B ) = U. A ) $=
+      ( cv wss cdif wrex wral cuni wceq uniss2 difss unissi jctil eqss sylibr
+      wa ) AEBEFBCDGZHACIZSJZCJZFZUBUAFZRUAUBKTUDUCABCSLSCCDMNOUAUBPQ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Relationship implying union.  (Contributed by NM, 10-Nov-1999.) $)
+    ssunieq $p |- ( ( A e. B /\ A. x e. B x C_ A ) -> A = U. B ) $=
+      ( wcel cv wss wral cuni wceq elssuni unissb biimpri anim12i eqss sylibr
+      wa ) BCDZAEBFACGZPBCHZFZSBFZPBSIQTRUABCJUARACBKLMBSNO $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Any member of a class is the largest of those members that it includes.
+       (Contributed by NM, 13-Aug-2002.) $)
+    unimax $p |- ( A e. B -> U. { x e. B | x C_ A } = A ) $=
+      ( vy wcel cv wss crab wral cuni wceq ssid sseq1 elrab3 elrab simprbi rgen
+      mpbiri wa ssunieq eqcomd sylancl ) BCEZBAFZBGZACHZEZDFZBGZDUFIZUFJZBKUCUG
+      BBGZBLUEULABCUDBBMNRUIDUFUHUFEUHCEUIUEUIAUHCUDUHBMOPQUGUJSBUKDBUFTUAUB $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
@@ -30049,6 +30378,14 @@ htmldef ">." as
   althtmldef ">." as '&rang;'; /* &#9002; */
     /* 2-Jan-2016 restored Unicode; reverted sans-serif */
   latexdef ">." as "\rangle";
+htmldef "U." as
+    "<IMG SRC='bigcup.gif' WIDTH=13 HEIGHT=19 ALT=' U.' TITLE='U.'>";
+  /* 20-Sep-2017 nm Add space after U. in althtmldef to improve "U. ran" */
+  althtmldef "U." as '<FONT SIZE="+1">&cup;</FONT> '; /* &xcup; */
+    /* xcup does not render, and #8899 renders as a small bold cup, on
+       Mozilla 1.7.3 on Windows XP */
+    /*althtmldef "U." as '&#8899;';*/ /* &xcup; */
+  latexdef "U." as "\bigcup";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
