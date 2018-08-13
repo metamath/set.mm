@@ -29486,7 +29486,7 @@ $)
     $( Bound-variable hypothesis builder for union.  (Contributed by NM,
        30-Dec-1996.)  (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
     nfuni $p |- F/_ x U. A $=
-      ( vy vz cuni wel wrex cab dfuni2 nfv nfrex nfab nfcxfr ) ABFDEGZEBHZDIDEB
+      ( vy vz cuni wel wrex cab dfuni2 nfv nfrexxy nfab nfcxfr ) ABFDEGZEBHZDIDEB
       JPADOAEBCOAKLMN $.
   $}
 
@@ -29495,7 +29495,7 @@ $)
     nfunid.3 $e |- ( ph -> F/_ x A ) $.
     $( Deduction version of ~ nfuni .  (Contributed by NM, 18-Feb-2013.) $)
     nfunid $p |- ( ph -> F/_ x U. A ) $=
-      ( vy vz cuni wel wrex cab dfuni2 nfv nfvd nfrexd nfabd nfcxfrd ) ABCGEFHZ
+      ( vy vz cuni wel wrex cab dfuni2 nfv nfvd nfrexdxy nfabd nfcxfrd ) ABCGEFHZ
       FCIZEJEFCKARBEAELAQBFCAFLDAQBMNOP $.
   $}
 
