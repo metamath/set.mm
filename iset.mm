@@ -5790,6 +5790,11 @@ $)
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
   df-stable $a |- ( STABLE ph <-> ( -. -. ph -> ph ) ) $.
 
+  $( Every formula of the form ` -. ph ` is stable.  Uses ~ notnotnot .
+     (Contributed by David A. Wheeler, 13-Aug-2018.) $)
+  stablenot $p |- STABLE -. ph $=
+    ( wn wstable wi notnotnot biimpi df-stable mpbir ) ABZCIBBZIDJIAEFIGH $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Testable propositions
@@ -5801,13 +5806,12 @@ $)
   $( Extend wff definition to include stability. $)
   wtestable $a wff TESTABLE ph $.
 
-  $( Propositions where its negative or double-negative is true
-     are called testable.
-     See Chapter 2 [Moschovakis] p. 2.
+  $( Propositions where its negative or double-negative is true are called
+     testable.  See Chapter 2 [Moschovakis] p. 2.
 
      Our notation for testability is a connective ` TESTABLE ` which we place
-     before the formula in question.  For example,
-     ` TESTABLE x = y ` corresponds to "x = y is testable".
+     before the formula in question.  For example, ` TESTABLE x = y `
+     corresponds to "x = y is testable".
 
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
   df-testable $a |- ( TESTABLE ph <-> ( -. ph \/ -. -. ph ) ) $.
@@ -5922,6 +5926,11 @@ $)
   notnot2dc $p |- ( DECID ph -> ( -. -. ph -> ph ) ) $=
     ( wdc wn wo wi df-dc orcom bitri pm2.53 sylbi ) ABZACZADZLCAEKALD
     MAFALGHLAIJ $.
+
+  $( Decidability implies stability.  The converse is not necessarily true.
+     (Contributed by David A. Wheeler, 13-Aug-2018.) $)
+  dcimpstable $p |- ( DECID ph -> STABLE ph ) $=
+    ( wdc wn wi wstable notnot2dc df-stable sylibr ) ABACCADAEAFAGH $.
 
   $( Contraposition for a decidable proposition.  Based on theorem *2.15 of
      [WhiteheadRussell] p. 102.  (Contributed by Jim Kingdon, 29-Mar-2018.) $)
