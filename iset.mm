@@ -29980,12 +29980,12 @@ $)
       wi 3imtr4i ) CEZAFZSBFZQZCGZDEZBHZFZUDAHZFZQZDGABIUEUGIUCUIDUCUAUDSFZQZCG
       TUJQZCGUFUHUBUKULCTUAUJJKCUDBDLZMCUDAUMMNOCABPDUEUGPR $.
 
-    $( The intersection of a nonempty set is a subclass of its union.
+    $( The intersection of an inhabited set is a subclass of its union.
        (Contributed by NM, 29-Jul-2006.) $)
-    intssuni $p |- ( A =/= (/) -> |^| A C_ U. A ) $=
-      ( vx vy c0 wne cint cuni cv wcel wral r19.2z ex vex elint2 eluni2 3imtr4g
-      wrex ssrdv ) ADEZBAFZAGZSBHZCHIZCAJZUCCAQZUBTIUBUAISUDUEUCCAKLCUBABMNCUBA
-      OPR $.
+    intssunim $p |- ( E. x x e. A -> |^| A C_ U. A ) $=
+      ( vy cv wcel wex cint cuni wral wrex r19.2m ex vex elint2 3imtr4g
+      eluni2 ssrdv ) ADZBEAFZCBGZBHZSCDZREZABIZUCABJZUBTEUBUAESUDUEUCAB
+      KLAUBBCMNAUBBPOQ $.
   $}
 
   ${
