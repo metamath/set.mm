@@ -29809,7 +29809,7 @@ $)
   ${
     $d x y A $.
     $( Define the intersection of a class.  Definition 7.35 of [TakeutiZaring]
-       p. 44.  For example, ` |^| { { 1 , 3 } , { 1 , 8 } } = { 1 } ` .
+       p. 44.  For example, ` |^| ` { { 1 , 3 } , { 1 , 8 } } = { 1 } .
        Compare this with the intersection of two classes, ~ df-in .
        (Contributed by NM, 18-Aug-1993.) $)
     df-int $a |- |^| A = { x | A. y ( y e. A -> x e. y ) } $.
@@ -30064,9 +30064,8 @@ $)
     intab.2 $e |- { x | E. y ( ph /\ x = A ) } e. _V $.
     $( The intersection of a special case of a class abstraction. ` y ` may be
        free in ` ph ` and ` A ` , which can be thought of a ` ph ( y ) ` and
-       ` A ( y ) ` .  Typically, ~ abrexex2 or ~ abexssex can be used to
-       satisfy the second hypothesis.  (Contributed by NM, 28-Jul-2006.)
-       (Proof shortened by Mario Carneiro, 14-Nov-2016.) $)
+       ` A ( y ) ` .  (Contributed by NM, 28-Jul-2006.)  (Proof shortened by
+       Mario Carneiro, 14-Nov-2016.) $)
     intab $p |- |^| { x | A. y ( ph -> A e. x ) } =
                 { x | E. y ( ph /\ x = A ) } $=
       ( vz cv wcel wi wal cab cint wceq wa wex wss ex alrimiv sylibr cvv anbi2d
@@ -30138,8 +30137,8 @@ $)
 
   ${
     $d x y A $.  $d y ph $.
-    $( Two ways to express " ` A ` is a singleton."  See also ~ en1 , ~ en1b ,
-       ~ card1 , and ~ eusn .  (Contributed by NM, 2-Aug-2010.) $)
+    $( Two ways to express " ` A ` is a singleton."  See also ~ eusn .
+       (Contributed by NM, 2-Aug-2010.) $)
     uniintsn $p |- ( U. A = |^| A <-> E. x A = { x } ) $=
       ( vy cuni cint wceq cv wex wcel wa wal c0 inteq syl6eq adantl unieq sylib
       wne cvv wss csn wi vn0 int0 eqeq1 syl5ib imp eqtr3d ex necon3d mpi n0 cpr
