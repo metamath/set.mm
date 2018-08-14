@@ -1,7 +1,8 @@
 $( iset.mm - Version of 13-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
-set.mm
+set.mm (with updates since then, including copying entire theorems
+and sections from set.mm).
 
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
          Metamath source file for intuitionistic logic and set theory
@@ -32,7 +33,7 @@ AH  Anthony Hart         RM  Rodolfo Medina         GD  Georgy Dunaev
                           Contents of this header
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-1. Recent label changes
+1. Naming
 2. Quick "How To"
 3. Bibliography
 4. Metamath syntax summary
@@ -40,49 +41,21 @@ AH  Anthony Hart         RM  Rodolfo Medina         GD  Georgy Dunaev
 6. Acceptable shorter proofs
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                          1. Recent label changes
+                                1. Naming
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-This is part of an ongoing project to improve naming consistency.  If you have
-suggestions for better names, let me know.
+Theorems which are the same as in set.mm should be named the same (that is,
+where the statement of the theorem is the same; the proof can differ without
+a new name being called for).  Theorems which are different should be named
+differently.  A biconditional in set.mm which is an implication in iset.mm
+should have a "r" (for the reverse direction), or "i"/"im" (for the forward
+direction) appended.  A theorem in set.mm which has a decidability condition
+added should add "dc" to the theorem name.  A theorem in set.mm where
+"nonempty class" is changed to "inhabited class" should add "m" (for member)
+to the theorem name.
 
-If you are keeping proofs outside the master version of this file, you can
-make global substitutions into your local version by processing the
-ones WITHOUT "Notes" in _reverse_ order.  The ones WITH "Notes" may have to be
-processed manually.
-
-DONE:
-Date      Old       New         Notes
-9-Jul-18  a4ime     spimeh
-9-Jul-18  a4im      spimh
-9-Jul-18  a4imt     spimth
-9-Jul-18  a4i       spi
-23-May-18 sb8eu     sb8euh
-23-May-18 sb8e      sb8eh
-23-May-18 sb8       sb8h
-10-May-18 sbf       sbh
-9-May-18  sbied     sbiedh
-6-May-18  alrimi    alrimih
-6-May-18  cbvex     cbvexh
-6-May-18  cbval     cbvalh
-6-May-18  sbco2     sbco2h
-6-May-18  sbie      sbieh
-6-May-18  cbv3      cbv3h
-17-Apr-18 con1bidc  con1biimdc
-10-Feb-18 ax-6      hbn1
-10-Feb-18 hbn1OLD   hbn1
-10-Feb-18 a6e       ---         deleted; use sp, 19.9, and nfa1
-10-Feb-18 ax-9o     ax9o
-10-Feb-18 ax6o      ---         deleted; this was unused
-10-Feb-18 ax-6o     ---         deleted; this was unused
-10-Feb-18 ax6       ---         deleted; never was intuitionistic
-10-Feb-18 modal-b   ---         deleted; never was intuitionistic
-10-Feb-18 ax9       ---         deleted; never was intuitionistic
-10-Feb-18 ax-i11e   ax11e
-21-Dec-17 equid1    equid
-28-Jan-15 strssd    [--same--]  moved from NM's mathbox to main set.mm
-(older changes in set.mm than the above have already been applied to iset.mm;
-newer changes in set.mm might be worth applying here)
+As with set.mm, we welcome suggestions for better names (such as names which
+are more consistent with naming conventions).
 
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
