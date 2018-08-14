@@ -29890,7 +29890,7 @@ $)
     $( Bound-variable hypothesis builder for intersection.  (Contributed by NM,
        2-Feb-1997.)  (Proof shortened by Andrew Salmon, 12-Aug-2011.) $)
     nfint $p |- F/_ x |^| A $=
-      ( vy vz cint wel wral cab dfint2 nfv nfral nfab nfcxfr ) ABFDEGZEBHZDIDEB
+      ( vy vz cint wel wral cab dfint2 nfv nfralxy nfab nfcxfr ) ABFDEGZEBHZDIDEB
       JPADOAEBCOAKLMN $.
   $}
 
