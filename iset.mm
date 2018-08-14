@@ -29794,6 +29794,406 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        The intersection of a class
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare class intersection symbol. $)
+  $c |^| $. $( Big cap $)
+
+  $( Extend class notation to include the intersection of a class (read:
+     'intersect ` A ` '). $)
+  cint $a class |^| A $.
+
+  ${
+    $d x y A $.
+    $( Define the intersection of a class.  Definition 7.35 of [TakeutiZaring]
+       p. 44.  For example, ` |^| { { 1 , 3 } , { 1 , 8 } } = { 1 } ` .
+       Compare this with the intersection of two classes, ~ df-in .
+       (Contributed by NM, 18-Aug-1993.) $)
+    df-int $a |- |^| A = { x | A. y ( y e. A -> x e. y ) } $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Alternate definition of class intersection.  (Contributed by NM,
+       28-Jun-1998.) $)
+    dfint2 $p |- |^| A = { x | A. y e. A x e. y } $=
+      ( cint cv wcel wi wal cab wral df-int df-ral abbii eqtr4i ) CDBEZCFAEOFZG
+      BHZAIPBCJZAIABCKRQAPBCLMN $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Equality law for intersection.  (Contributed by NM, 13-Sep-1999.) $)
+    inteq $p |- ( A = B -> |^| A = |^| B ) $=
+      ( vx vy wceq wel wral cab cint raleq abbidv dfint2 3eqtr4g ) ABEZCDFZDAGZ
+      CHODBGZCHAIBINPQCODABJKCDALCDBLM $.
+  $}
+
+  ${
+    inteqi.1 $e |- A = B $.
+    $( Equality inference for class intersection.  (Contributed by NM,
+       2-Sep-2003.) $)
+    inteqi $p |- |^| A = |^| B $=
+      ( wceq cint inteq ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    inteqd.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for class intersection.  (Contributed by NM,
+       2-Sep-2003.) $)
+    inteqd $p |- ( ph -> |^| A = |^| B ) $=
+      ( wceq cint inteq syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
+    $d x A y $.  $d x B y $.
+    elint.1 $e |- A e. _V $.
+    $( Membership in class intersection.  (Contributed by NM, 21-May-1994.) $)
+    elint $p |- ( A e. |^| B <-> A. x ( x e. B -> A e. x ) ) $=
+      ( vy cv wcel wi wal cint wceq eleq1 imbi2d albidv df-int elab2 ) AFZCGZEF
+      ZQGZHZAIRBQGZHZAIEBCJDSBKZUAUCAUDTUBRSBQLMNEACOP $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    elint2.1 $e |- A e. _V $.
+    $( Membership in class intersection.  (Contributed by NM, 14-Oct-1999.) $)
+    elint2 $p |- ( A e. |^| B <-> A. x e. B A e. x ) $=
+      ( cint wcel cv wi wal wral elint df-ral bitr4i ) BCEFAGZCFBNFZHAIOACJABCD
+      KOACLM $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Membership in class intersection, with the sethood requirement expressed
+       as an antecedent.  (Contributed by NM, 20-Nov-2003.) $)
+    elintg $p |- ( A e. V -> ( A e. |^| B <-> A. x e. B A e. x ) ) $=
+      ( vy cv cint wcel wral eleq1 wceq ralbidv vex elint2 vtoclbg ) EFZCGZHPAF
+      ZHZACIBQHBRHZACIEBDPBQJPBKSTACPBRJLAPCEMNO $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( Membership in class intersection.  (Contributed by NM, 14-Oct-1999.)
+       (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
+    elinti $p |- ( A e. |^| B -> ( C e. B -> A e. C ) ) $=
+      ( vx cint wcel wi cv wral elintg eleq2 rspccv syl6bi pm2.43i ) ABEZFZCBFA
+      CFZGZPPADHZFZDBIRDABOJTQDCBSCAKLMN $.
+  $}
+
+  ${
+    $d y z A $.  $d x y z $.
+    nfint.1 $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for intersection.  (Contributed by NM,
+       2-Feb-1997.)  (Proof shortened by Andrew Salmon, 12-Aug-2011.) $)
+    nfint $p |- F/_ x |^| A $=
+      ( vy vz cint wel wral cab dfint2 nfv nfral nfab nfcxfr ) ABFDEGZEBHZDIDEB
+      JPADOAEBCOAKLMN $.
+  $}
+
+  ${
+    $d A x y $.  $d ph y $.
+    inteqab.1 $e |- A e. _V $.
+    $( Membership in the intersection of a class abstraction.  (Contributed by
+       NM, 30-Aug-1993.) $)
+    elintab $p |- ( A e. |^| { x | ph } <-> A. x ( ph -> A e. x ) ) $=
+      ( vy cab cint wcel cv wi wal elint nfsab1 nfv nfim weq eleq1 syl6bb eleq2
+      abid imbi12d cbval bitri ) CABFZGHEIZUDHZCUEHZJZEKACBIZHZJZBKECUDDLUHUKEB
+      UFUGBABEMUGBNOUKENEBPZUFAUGUJULUFUIUDHAUEUIUDQABTRUEUICSUAUBUC $.
+
+    $( Membership in the intersection of a class abstraction.  (Contributed by
+       NM, 17-Oct-1999.) $)
+    elintrab $p |- ( A e. |^| { x e. B | ph } <->
+                 A. x e. B ( ph -> A e. x ) ) $=
+      ( cv wcel wa cab cint wi wal crab wral elintab impexp albii df-rab inteqi
+      bitri eleq2i df-ral 3bitr4i ) CBFZDGZAHZBIZJZGZUEACUDGZKZKZBLZCABDMZJZGUK
+      BDNUIUFUJKZBLUMUFBCEOUPULBUEAUJPQTUOUHCUNUGABDRSUAUKBDUBUC $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d y ph $.
+    $( Membership in the intersection of a class abstraction.  (Contributed by
+       NM, 17-Feb-2007.) $)
+    elintrabg $p |- ( A e. V -> ( A e. |^| { x e. B | ph } <->
+                 A. x e. B ( ph -> A e. x ) ) ) $=
+      ( vy cv crab cint wcel wi wral eleq1 wceq imbi2d ralbidv elintrab vtoclbg
+      vex ) FGZABDHIZJATBGZJZKZBDLCUAJACUBJZKZBDLFCETCUAMTCNZUDUFBDUGUCUEATCUBM
+      OPABTDFSQR $.
+
+    $( The intersection of the empty set is the universal class.  Exercise 2 of
+       [TakeutiZaring] p. 44.  (Contributed by NM, 18-Aug-1993.) $)
+    int0 $p |- |^| (/) = _V $=
+      ( vy vx cv c0 wcel wi wal cab weq cint cvv pm2.21i ax-gen equid 2th abbii
+      noel df-int df-v 3eqtr4i ) ACZDEZBCUAEZFZAGZBHBBIZBHDJKUEUFBUEUFUDAUBUCUA
+      QLMBNOPBADRBST $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y ph $.
+    $( An element of a class includes the intersection of the class.  Exercise
+       4 of [TakeutiZaring] p. 44 (with correction), generalized to classes.
+       (Contributed by NM, 18-Nov-1995.) $)
+    intss1 $p |- ( A e. B -> |^| B C_ A ) $=
+      ( vx vy wcel cint cv wal vex elint wceq eleq1 eleq2 imbi12d spcgv pm2.43a
+      wi syl5bi ssrdv ) ABEZCBFZACGZUAEDGZBEZUBUCEZQZDHZTUBAEZDUBBCIJUGTUHUFTUH
+      QDABUCAKUDTUEUHUCABLUCAUBMNOPRS $.
+
+    $( Subclass of a class intersection.  Theorem 5.11(viii) of [Monk1] p. 52
+       and its converse.  (Contributed by NM, 14-Oct-1999.) $)
+    ssint $p |- ( A C_ |^| B <-> A. x e. B A C_ x ) $=
+      ( vy cint wss cv wcel wral dfss3 vex elint2 ralbii ralcom bitr4i 3bitri )
+      BCEZFDGZQHZDBIRAGZHZACIZDBIZBTFZACIZDBQJSUBDBARCDKLMUCUADBIZACIUEUADABCNU
+      DUFACDBTJMOP $.
+
+    $( Subclass of the intersection of a class abstraction.  (Contributed by
+       NM, 31-Jul-2006.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
+    ssintab $p |- ( A C_ |^| { x | ph } <-> A. x ( ph -> A C_ x ) ) $=
+      ( vy cab cint wss cv wral wi wal ssint sseq2 ralab2 bitri ) CABEZFGCDHZGZ
+      DPIACBHZGZJBKDCPLARTDBQSCMNO $.
+
+    $( Subclass of the least upper bound.  (Contributed by NM, 8-Aug-2000.) $)
+    ssintub $p |- A C_ |^| { x e. B | A C_ x } $=
+      ( vy cv wss crab cint ssint wcel sseq2 elrab simprbi mprgbir ) BBAEZFZACG
+      ZHFBDEZFZDQDBQIRQJRCJSPSARCORBKLMN $.
+
+    $( Subclass of the minimum value of class of supersets.  (Contributed by
+       NM, 10-Aug-2006.) $)
+    ssmin $p |- A C_ |^| { x | ( A C_ x /\ ph ) } $=
+      ( cv wss wa cab cint wi ssintab simpl mpgbir ) CCBDEZAFZBGHENMIBNBCJMAKL
+      $.
+
+    $( Any member of a class is the smallest of those members that include it.
+       (Contributed by NM, 13-Aug-2002.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    intmin $p |- ( A e. B -> |^| { x e. B | A C_ x } = A ) $=
+      ( vy wcel cv wss crab cint wi wral elintrab ssid wceq sseq2 eleq2 imbi12d
+      vex rspcv mpii syl5bi ssrdv ssintub a1i eqssd ) BCEZBAFZGZACHIZBUFDUIBDFZ
+      UIEUHUJUGEZJZACKZUFUJBEZUHAUJCDRLUFUMBBGZUNBMULUOUNJABCUGBNUHUOUKUNUGBBOU
+      GBUJPQSTUAUBBUIGUFABCUCUDUE $.
+
+    $( Intersection of subclasses.  (Contributed by NM, 14-Oct-1999.) $)
+    intss $p |- ( A C_ B -> |^| B C_ |^| A ) $=
+      ( vy vx cv wcel wal cint wss imim1 al2imi vex elint 3imtr4g alrimiv dfss2
+      wi 3imtr4i ) CEZAFZSBFZQZCGZDEZBHZFZUDAHZFZQZDGABIUEUGIUCUIDUCUAUDSFZQZCG
+      TUJQZCGUFUHUBUKULCTUAUJJKCUDBDLZMCUDAUMMNOCABPDUEUGPR $.
+
+    $( The intersection of a nonempty set is a subclass of its union.
+       (Contributed by NM, 29-Jul-2006.) $)
+    intssuni $p |- ( A =/= (/) -> |^| A C_ U. A ) $=
+      ( vx vy c0 wne cint cuni cv wcel wral r19.2z ex vex elint2 eluni2 3imtr4g
+      wrex ssrdv ) ADEZBAFZAGZSBHZCHIZCAJZUCCAQZUBTIUBUAISUDUEUCCAKLCUBABMNCUBA
+      OPR $.
+  $}
+
+  ${
+    $d x A $.
+    $( Subclass of the intersection of a restricted class builder.
+       (Contributed by NM, 30-Jan-2015.) $)
+    ssintrab $p |- ( A C_ |^| { x e. B | ph }
+           <-> A. x e. B ( ph -> A C_ x ) ) $=
+      ( crab cint wss cv wcel wa cab wral df-rab inteqi sseq2i wal impexp albii
+      wi ssintab df-ral 3bitr4i bitri ) CABDEZFZGCBHZDIZAJZBKZFZGZACUFGZSZBDLZU
+      EUJCUDUIABDMNOUHULSZBPUGUMSZBPUKUNUOUPBUGAULQRUHBCTUMBDUAUBUC $.
+  $}
+
+  $( If the union of a class is included in its intersection, the class is
+     either the empty set or a singleton ( ~ uniintsn ).  (Contributed by NM,
+     30-Oct-2010.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+  unissint $p |- ( U. A C_ |^| A <-> ( A = (/) \/ U. A = |^| A ) ) $=
+    ( cuni cint wss c0 wo wn wa simpl wne df-ne intssuni sylbir adantl eqssd ex
+    wceq orrd cvv ssv int0 sseqtr4i inteq syl5sseqr eqimss jaoi impbii ) ABZACZ
+    DZAEQZUHUIQZFUJUKULUJUKGZULUJUMHUHUIUJUMIUMUIUHDZUJUMAEJUNAEKALMNOPRUKUJULU
+    KECZUHUIUHSUOUHTUAUBAEUCUDUHUIUEUFUG $.
+
+  $( Subclass relationship for intersection and union.  (Contributed by NM,
+     29-Jul-2006.) $)
+  intssuni2 $p |- ( ( A C_ B /\ A =/= (/) ) -> |^| A C_ U. B ) $=
+    ( c0 wne wss cint cuni intssuni uniss sylan9ssr ) ACDABEAFAGBGAHABIJ $.
+
+  ${
+    $d x A $.  $d x B $.  $d x ps $.
+    intminss.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( Under subset ordering, the intersection of a restricted class
+       abstraction is less than or equal to any of its members.  (Contributed
+       by NM, 7-Sep-2013.) $)
+    intminss $p |- ( ( A e. B /\ ps ) -> |^| { x e. B | ph } C_ A ) $=
+      ( wcel wa crab cint wss elrab intss1 sylbir ) DEGBHDACEIZGOJDKABCDEFLDOMN
+      $.
+  $}
+
+  ${
+    $d x A $.
+    intmin2.1 $e |- A e. _V $.
+    $( Any set is the smallest of all sets that include it.  (Contributed by
+       NM, 20-Sep-2003.) $)
+    intmin2 $p |- |^| { x | A C_ x } = A $=
+      ( cv wss cvv crab cint cab rabab inteqi wcel wceq intmin ax-mp eqtr3i ) B
+      ADEZAFGZHZQAIZHBRTQAJKBFLSBMCABFNOP $.
+  $}
+
+  ${
+    $d x A $.  $d x ps $.
+    intmin3.2 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    intmin3.3 $e |- ps $.
+    $( Under subset ordering, the intersection of a class abstraction is less
+       than or equal to any of its members.  (Contributed by NM,
+       3-Jul-2005.) $)
+    intmin3 $p |- ( A e. V -> |^| { x | ph } C_ A ) $=
+      ( wcel cab cint wss elabg mpbiri intss1 syl ) DEHZDACIZHZQJDKPRBGABCDEFLM
+      DQNO $.
+  $}
+
+  ${
+    $d x y A $.  $d y ph $.
+    $( Elimination of a conjunct in a class intersection.  (Contributed by NM,
+       31-Jul-2006.) $)
+    intmin4 $p |- ( A C_ |^| { x | ph } ->
+                  |^| { x | ( A C_ x /\ ph ) } = |^| { x | ph } ) $=
+      ( vy cab cint wss cv wa wcel wi wal wb ssintab simpr impbid2 imbi1d alimi
+      ancr elintab albi syl sylbi vex 3bitr4g eqrdv ) CABEFZGZDCBHZGZAIZBEFZUGU
+      HUKDHZUIJZKZBLZAUNKZBLZUMULJUMUGJUHAUJKZBLZUPURMZABCNUTUOUQMZBLVAUSVBBUSU
+      KAUNUSUKAUJAOAUJSPQRUOUQBUAUBUCUKBUMDUDZTABUMVCTUEUF $.
+  $}
+
+  ${
+    $d x z A $.  $d x z ph $.  $d x y z $.
+    intab.1 $e |- A e. _V $.
+    intab.2 $e |- { x | E. y ( ph /\ x = A ) } e. _V $.
+    $( The intersection of a special case of a class abstraction. ` y ` may be
+       free in ` ph ` and ` A ` , which can be thought of a ` ph ( y ) ` and
+       ` A ( y ) ` .  Typically, ~ abrexex2 or ~ abexssex can be used to
+       satisfy the second hypothesis.  (Contributed by NM, 28-Jul-2006.)
+       (Proof shortened by Mario Carneiro, 14-Nov-2016.) $)
+    intab $p |- |^| { x | A. y ( ph -> A e. x ) } =
+                { x | E. y ( ph /\ x = A ) } $=
+      ( vz cv wcel wi wal cab cint wceq wa wex wss ex alrimiv sylibr cvv anbi2d
+      eqeq1 exbidv cbvabv eqeltri nfe1 nfab nfeq2 eleq2 imbi2d albid elab 19.8a
+      wsbc sbc6 df-sbc sylib mpgbir intss1 19.29r simplr pm3.35 adantlr eqeltrd
+      ax-mp exlimiv syl vex elintab abssi eqssi eqtri ) ADBHZIZJZCKZBLZMZAGHZDN
+      ZOZCPZGLZAVNDNZOZCPZBLZVSWDWDVRIZVSWDQWIADWDIZJZCVQWKCKBWDWDWHUAWCWGGBVTV
+      NNZWBWFCWLWAWEAVTVNDUCUBUDUEZFUFVNWDNZVPWKCCVNWDWCCGWBCUGUHUIWNVOWJAVNWDD
+      UJUKULUMAWCGDUOZWJAWAWCJZGKWOAWPGAWAWCWBCUNRSWCGDEUPTWCGDUQURUSWDVRUTVFWC
+      GVSWCVQVTVNIZJZBKVTVSIWCWRBWCVQWQWCVQOWBVPOZCPWQWBVPCVAWSWQCWSVTDVNAWAVPV
+      BAVPVOWAAVOVCVDVEVGVHRSVQBVTGVIVJTVKVLWMVM $.
+  $}
+
+  $( The intersection of a class containing the empty set is empty.
+     (Contributed by NM, 24-Apr-2004.) $)
+  int0el $p |- ( (/) e. A -> |^| A = (/) ) $=
+    ( c0 wcel cint intss1 wss 0ss a1i eqssd ) BACZADZBBAEBKFJKGHI $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The class intersection of the union of two classes.  Theorem 78 of
+       [Suppes] p. 42.  (Contributed by NM, 22-Sep-2002.) $)
+    intun $p |- |^| ( A u. B ) = ( |^| A i^i |^| B ) $=
+      ( vx vy cun cint cin cv wcel wi wal wa 19.26 elun imbi1i jaob bitri elint
+      wo 3bitr4i albii vex anbi12i elin eqriv ) CABEZFZAFZBFZGZDHZUFIZCHZUKIZJZ
+      DKZUMUHIZUMUIIZLZUMUGIUMUJIUKAIZUNJZUKBIZUNJZLZDKVADKZVCDKZLUPUSVAVCDMUOV
+      DDUOUTVBSZUNJVDULVGUNUKABNOUTUNVBPQUAUQVEURVFDUMACUBZRDUMBVHRUCTDUMUFVHRU
+      MUHUIUDTUE $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    intpr.1 $e |- A e. _V $.
+    intpr.2 $e |- B e. _V $.
+    $( The intersection of a pair is the intersection of its members.  Theorem
+       71 of [Suppes] p. 42.  (Contributed by NM, 14-Oct-1999.) $)
+    intpr $p |- |^| { A , B } = ( A i^i B ) $=
+      ( vx vy cpr cint cin cv wcel wi wal wa wceq 19.26 wo vex clel4 3bitr4i
+      elpr imbi1i jaob bitri albii anbi12i elint elin eqriv ) EABGZHZABIZFJZUJK
+      ZEJZUMKZLZFMZUOAKZUOBKZNZUOUKKUOULKUMAOZUPLZUMBOZUPLZNZFMVCFMZVEFMZNURVAV
+      CVEFPUQVFFUQVBVDQZUPLVFUNVIUPUMABFRUAUBVBUPVDUCUDUEUSVGUTVHFUOACSFUOBDSUF
+      TFUOUJERUGUOABUHTUI $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.
+    $( The intersection of a pair is the intersection of its members.  Closed
+       form of ~ intpr .  Theorem 71 of [Suppes] p. 42.  (Contributed by FL,
+       27-Apr-2008.) $)
+    intprg $p |- ( ( A e. V /\ B e. W ) -> |^| { A , B } = ( A i^i B ) ) $=
+      ( vx vy cv cpr cint cin wceq preq1 inteqd ineq1 eqeq12d preq2 ineq2 intpr
+      vex vtocl2g ) EGZFGZHZIZUAUBJZKAUBHZIZAUBJZKABHZIZABJZKEFABCDUAAKZUDUGUEU
+      HULUCUFUAAUBLMUAAUBNOUBBKZUGUJUHUKUMUFUIUBBAPMUBBAQOUAUBESFSRT $.
+  $}
+
+  $( Intersection of a singleton.  (Contributed by Stefan O'Rear,
+     22-Feb-2015.) $)
+  intsng $p |- ( A e. V -> |^| { A } = A ) $=
+    ( wcel csn cint cpr dfsn2 inteqi cin wceq intprg anidms inidm syl6eq syl5eq
+    ) ABCZADZEAAFZEZAQRAGHPSAAIZAPSTJAABBKLAMNO $.
+
+  ${
+    intsn.1 $e |- A e. _V $.
+    $( The intersection of a singleton is its member.  Theorem 70 of [Suppes]
+       p. 41.  (Contributed by NM, 29-Sep-2002.) $)
+    intsn $p |- |^| { A } = A $=
+      ( cvv wcel csn cint wceq intsng ax-mp ) ACDAEFAGBACHI $.
+  $}
+
+  ${
+    $d x y A $.  $d y ph $.
+    $( Two ways to express " ` A ` is a singleton."  See also ~ en1 , ~ en1b ,
+       ~ card1 , and ~ eusn .  (Contributed by NM, 2-Aug-2010.) $)
+    uniintsn $p |- ( U. A = |^| A <-> E. x A = { x } ) $=
+      ( vy cuni cint wceq cv wex wcel wa wal c0 inteq syl6eq adantl unieq sylib
+      wne cvv wss csn wi vn0 int0 eqeq1 syl5ib imp eqtr3d ex necon3d mpi n0 cpr
+      uni0 vex prss cun cin uniss simpl sseqtrd intss sstrd unipr intpr 3sstr3g
+      inss1 ssun1 sstri jctir eqss uneqin bitr3i syl5bi alrimivv jca weu euabsn
+      cab eleq1 abid2 eqeq1i exbii 3bitr3i unisn intsn 3eqtr4a exlimiv impbii
+      eu4 ) BDZBEZFZBAGZUAZFZAHZWMWNBIZAHZWRCGZBIZJZWNWTFZUBZCKAKZJZWQWMWSXEWMB
+      LRZWSWMSLRXGUCWMBLSLWMBLFZSLFWMXHJWLSLXHWLSFWMXHWLLESBLMUDNOWMXHWLLFZXHWK
+      LFWMXIXHWKLDLBLPUNNWKWLLUEUFUGUHUIUJUKABULQWMXDACXBWNWTUMZBTZWMXCWNWTBAUO
+      ZCUOZUPWMXKXCWMXKJZWNWTUQZWNWTURZTZXPXOTZJZXCXNXQXRXNXJDZXJEZXOXPXNXTWLYA
+      XNXTWKWLXKXTWKTWMXJBUSOWMXKUTVAXKWLYATWMXJBVBOVCWNWTXLXMVDWNWTXLXMVEVFXPW
+      NXOWNWTVGWNWTVHVIVJXSXOXPFXCXOXPVKWNWTVLVMQUIVNVOVPWRAVQWRAVSZWOFZAHXFWQW
+      RAVRWRXAACWNWTBVTWJYCWPAYBBWOABWAWBWCWDQWPWMAWPWODWNWKWLWNXLWEBWOPWPWLWOE
+      WNBWOMWNXLWFNWGWHWI $.
+
+    $( The union and the intersection of a class abstraction are equal exactly
+       when there is a unique satisfying value of ` ph ( x ) ` .  (Contributed
+       by Mario Carneiro, 24-Dec-2016.) $)
+    uniintab $p |- ( E! x ph <-> U. { x | ph } = |^| { x | ph } ) $=
+      ( vy weu cab cv csn wceq wex cuni cint euabsn2 uniintsn bitr4i ) ABDABEZC
+      FGHCIOJOKHABCLCOMN $.
+  $}
+
+  ${
+    intunsn.1 $e |- B e. _V $.
+    $( Theorem joining a singleton to an intersection.  (Contributed by NM,
+       29-Sep-2002.) $)
+    intunsn $p |- |^| ( A u. { B } ) = ( |^| A i^i B ) $=
+      ( csn cun cint cin intun intsn ineq2i eqtri ) ABDZEFAFZLFZGMBGALHNBMBCIJK
+      $.
+  $}
+
+  $( Relative intersection of an empty set.  (Contributed by Stefan O'Rear,
+     3-Apr-2015.) $)
+  rint0 $p |- ( X = (/) -> ( A i^i |^| X ) = A ) $=
+    ( c0 wceq cint cin inteq ineq2d cvv int0 ineq2i inv1 eqtri syl6eq ) BCDZABE
+    ZFACEZFZAOPQABCGHRAIFAQIAJKALMN $.
+
+  ${
+    $d B y $.  $d X y $.
+    $( Membership in a restricted intersection.  (Contributed by Stefan O'Rear,
+       3-Apr-2015.) $)
+    elrint $p |- ( X e. ( A i^i |^| B ) <-> ( X e. A /\ A. y e. B X e. y ) ) $=
+      ( cint cin wcel wa cv wral elin elintg pm5.32i bitri ) DBCEZFGDBGZDOGZHPD
+      AIGACJZHDBOKPQRADCBLMN $.
+
+    $( Membership in a restricted intersection.  (Contributed by Stefan O'Rear,
+       3-Apr-2015.) $)
+    elrint2 $p |- ( X e. A -> ( X e. ( A i^i |^| B ) <->
+          A. y e. B X e. y ) ) $=
+      ( cint cin wcel cv wral elrint baib ) DBCEFGDBGDAHGACIABCDJK $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -30383,6 +30783,12 @@ htmldef "U." as
        Mozilla 1.7.3 on Windows XP */
     /*althtmldef "U." as '&#8899;';*/ /* &xcup; */
   latexdef "U." as "\bigcup";
+htmldef "|^|" as
+    "<IMG SRC='bigcap.gif' WIDTH=13 HEIGHT=19 ALT=' |^|' TITLE='|^|'>";
+  /* 20-Sep-2017 nm Add space after |^| in althtmldef to improve "|^| ran" */
+  althtmldef "|^|" as '<FONT SIZE="+1">&cap;</FONT> '; /* &xcap; */
+    /*althtmldef "|^|" as '&#8898;';*/ /* &xcap; */
+  latexdef "|^|" as "\bigcap";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
