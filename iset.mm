@@ -29999,10 +29999,14 @@ $)
       EUJCUDUIABDMNOUHULSZBPUGUMSZBPUKUNUOUPBUGAULQRUHBCTUMBDUAUBUC $.
   $}
 
-  $( Subclass relationship for intersection and union.  (Contributed by NM,
-     29-Jul-2006.) $)
-  intssuni2 $p |- ( ( A C_ B /\ A =/= (/) ) -> |^| A C_ U. B ) $=
-    ( c0 wne wss cint cuni intssuni uniss sylan9ssr ) ACDABEAFAGBGAHABIJ $.
+  ${
+    $d x A $.
+    $( Subclass relationship for intersection and union.  (Contributed by Jim
+       Kingdon, 14-Aug-2018.) $)
+    intssuni2m $p |- ( ( A C_ B /\ E. x x e. A ) -> |^| A C_ U. B ) $=
+      ( cv wcel wex wss cint cuni intssunim uniss sylan9ssr ) ADBEAFBCG
+      BHBICIABJBCKL $.
+  $}
 
   ${
     $d x A $.  $d x B $.  $d x ps $.
