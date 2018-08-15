@@ -29999,15 +29999,6 @@ $)
       EUJCUDUIABDMNOUHULSZBPUGUMSZBPUKUNUOUPBUGAULQRUHBCTUMBDUAUBUC $.
   $}
 
-  $( If the union of a class is included in its intersection, the class is
-     either the empty set or a singleton ( ~ uniintsn ).  (Contributed by NM,
-     30-Oct-2010.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
-  unissint $p |- ( U. A C_ |^| A <-> ( A = (/) \/ U. A = |^| A ) ) $=
-    ( cuni cint wss c0 wo wn wa simpl wne df-ne intssuni sylbir adantl eqssd ex
-    wceq orrd cvv ssv int0 sseqtr4i inteq syl5sseqr eqimss jaoi impbii ) ABZACZ
-    DZAEQZUHUIQZFUJUKULUJUKGZULUJUMHUHUIUJUMIUMUIUHDZUJUMAEJUNAEKALMNOPRUKUJULU
-    KECZUHUIUHSUOUHTUAUBAEUCUDUHUIUEUFUG $.
-
   $( Subclass relationship for intersection and union.  (Contributed by NM,
      29-Jul-2006.) $)
   intssuni2 $p |- ( ( A C_ B /\ A =/= (/) ) -> |^| A C_ U. B ) $=
