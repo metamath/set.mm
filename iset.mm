@@ -30132,29 +30132,18 @@ $)
 
   ${
     $d x y A $.  $d y ph $.
-    $( Two ways to express " ` A ` is a singleton."  See also ~ eusn .
-       (Contributed by NM, 2-Aug-2010.) $)
-    uniintsn $p |- ( U. A = |^| A <-> E. x A = { x } ) $=
-      ( vy cuni cint wceq cv wex wcel wa wal c0 inteq syl6eq adantl unieq sylib
-      wne cvv wss csn wi vn0 int0 eqeq1 syl5ib imp eqtr3d ex necon3d mpi n0 cpr
-      uni0 vex prss cun cin uniss simpl sseqtrd intss sstrd unipr intpr 3sstr3g
-      inss1 ssun1 sstri jctir eqss uneqin bitr3i syl5bi alrimivv jca weu euabsn
-      cab eleq1 abid2 eqeq1i exbii 3bitr3i unisn intsn 3eqtr4a exlimiv impbii
-      eu4 ) BDZBEZFZBAGZUAZFZAHZWMWNBIZAHZWRCGZBIZJZWNWTFZUBZCKAKZJZWQWMWSXEWMB
-      LRZWSWMSLRXGUCWMBLSLWMBLFZSLFWMXHJWLSLXHWLSFWMXHWLLESBLMUDNOWMXHWLLFZXHWK
-      LFWMXIXHWKLDLBLPUNNWKWLLUEUFUGUHUIUJUKABULQWMXDACXBWNWTUMZBTZWMXCWNWTBAUO
-      ZCUOZUPWMXKXCWMXKJZWNWTUQZWNWTURZTZXPXOTZJZXCXNXQXRXNXJDZXJEZXOXPXNXTWLYA
-      XNXTWKWLXKXTWKTWMXJBUSOWMXKUTVAXKWLYATWMXJBVBOVCWNWTXLXMVDWNWTXLXMVEVFXPW
-      NXOWNWTVGWNWTVHVIVJXSXOXPFXCXOXPVKWNWTVLVMQUIVNVOVPWRAVQWRAVSZWOFZAHXFWQW
-      RAVRWRXAACWNWTBVTWJYCWPAYBBWOABWAWBWCWDQWPWMAWPWODWNWKWLWNXLWEBWOPWPWLWOE
-      WNBWOMWNXLWFNWGWHWI $.
+    $( The union and intersection of a singleton are equal.  See also ~ eusn .
+       (Contributed by Jim Kingdon, 14-Aug-2018.) $)
+    uniintsnr $p |- ( E. x A = { x } -> U. A = |^| A ) $=
+      ( csn wceq cuni cint vex unisn unieq inteq intsn syl6eq 3eqtr4a
+      cv exlimiv ) BANZCZDZBEZBFZDARQEPSTPAGZHBQIRTQFPBQJPUAKLMO $.
 
-    $( The union and the intersection of a class abstraction are equal exactly
-       when there is a unique satisfying value of ` ph ( x ) ` .  (Contributed
-       by Mario Carneiro, 24-Dec-2016.) $)
-    uniintab $p |- ( E! x ph <-> U. { x | ph } = |^| { x | ph } ) $=
-      ( vy weu cab cv csn wceq wex cuni cint euabsn2 uniintsn bitr4i ) ABDABEZC
-      FGHCIOJOKHABCLCOMN $.
+    $( The union and the intersection of a class abstraction are equal if there
+       is a unique satisfying value of ` ph ( x ) ` .  (Contributed by Jim
+       Kingdon, 14-Aug-2018.) $)
+    uniintabim $p |- ( E! x ph -> U. { x | ph } = |^| { x | ph } ) $=
+      ( vy weu cab cv csn wceq wex cuni cint euabsn2 uniintsnr sylbi
+      ) ABDABEZCFGHCIOJOKHABCLCOMN $.
   $}
 
   ${
