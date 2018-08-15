@@ -18,16 +18,21 @@ NM  Norman Megill - http://us.metamath.org/email.html
 
 Contributor list:
 
-DA  David Abernethy      DH  David Harvey           MO  Mel L. O'Cat
-SA  Stefan Allan         JH  Jeff Hoffman           SO  Stefan O'Rear
-JA  Juha Arpiainen       SJ  Szymon Jaroszewicz     JO  Jason Orendorff
-JBN Jonathan Ben-Naim    WL  Wolf Lammen            JP  Josh Purinton
-GB  Gregory Bush         GL  Gerard Lang            SR  Steve Rodriguez
-MC  Mario Carneiro       RL  Raph Levien            ATS Andrew Salmon
-PC  Paul Chapman         FL  Frederic Line          AS  Alan Sare
-SF  Scott Fenton         RFL Roy F. Longton         ES  Eric Schmidt
-JGH Jeffrey Hankins      JM  Jeff Madsen            DAW David A. Wheeler
-AH  Anthony Hart         RM  Rodolfo Medina         GD  Georgy Dunaev
+DA  David Abernethy      JH  Jeff Hoffman          SO  Stefan O'Rear
+SA  Stefan Allan         SJ  Szymon Jaroszewicz    JO  Jason Orendorff
+TA  Thierry Arnoux       BJ  Benoit Jubin          JP  Josh Purinton
+JA  Juha Arpiainen       JK  Jim Kingdon           SR  Steve Rodriguez
+JB  Jonathan Ben-Naim    WL  Wolf Lammen           ATS Andrew Salmon
+GB  Gregory Bush         GL  Gerard Lang           AS  Alan Sare
+MC  Mario Carneiro       BL  Brendan Leahy         ES  Eric Schmidt
+PC  Paul Chapman         RL  Raph Levien           GS  Glauco Siliprandi
+DF  Drahflow             FL  Frederic Line         SS  Saveliy Skresanov
+GD  Georgy Dunaev        RFL Roy F. Longton        JU  Jarvin Udandy
+SF  Scott Fenton         JM  Jeff Madsen           AV  Alexander van der Vekens
+JGH Jeffrey Hankins      RM  Rodolfo Medina        DAW David A. Wheeler
+AH  Anthony Hart         NM  Norman Megill         JY  Jonathan Yan
+DH  David Harvey         MO  Mel L. O'Cat          FZ  Fan Zheng
+CH  Chen-Pang He         MM  Mykola Mostovenko
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                           Contents of this header
@@ -30800,3 +30805,90 @@ htmldef "DECID" as "<SMALL>DECID</SMALL> ";
 
 $)
 
+$(
+###############################################################################
+                 SUPPLEMENTARY MATERIAL (USER'S MATHBOXES)
+###############################################################################
+$)
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+                Mathboxes for user contributions
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Mathbox guidelines
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( (_This theorem is a dummy placeholder for these guidelines.  The name of
+     this theorem, "mathbox", is hard-coded into the Metamath program to
+     identify the start of the mathbox section for web page generation_.)
+
+     A "mathbox" is a user-contributed section that is maintained by its
+     contributor independently from the main part of set.mm.
+
+     _For contributors_:
+
+     By making a contribution, you agree to release it into the public domain,
+     according to the statement at the beginning of set.mm.
+
+     Mathboxes are provided to help keep your work synchronized with changes in
+     set.mm, but they shouldn't be depended on as a permanent archive.  If you
+     want to preserve your original contribution, it is your responsibility to
+     keep your own copy of it along with the version of set.mm that works with
+     it.
+
+     _Guidelines_:
+
+     1.  If at all possible, please use only 0-ary class constants for new
+     definitions.
+
+     2.  Try to follow the style of the rest of set.mm.  Each $p and $a
+     statement must be immediately preceded with the comment that will be shown
+     on its web page description.  The metamath program command "write source
+     set.mm /rewrap" will take care of wrapping comment lines and indentation
+     conventions.  All mathbox content will be on public display and should
+     hopefully reflect the overall quality of the website.
+
+     3.  Before submitting a revised mathbox, please make sure it verifies
+     against the current set.mm.
+
+     4.  Mathboxes should be independent i.e. the proofs should verify with all
+     other mathboxes removed.  If you need a theorem from another mathbox, that
+     is fine (and encouraged), but let me know, so I can move the theorem to
+     the main section.  One way avoid undesired accidental use of other mathbox
+     theorems is to develop your mathbox using a modified set.mm that has
+     mathboxes removed.
+
+     _Notes_:
+
+     1.  We may decide to move some theorems to the main part of set.mm for
+     general use.
+
+     2.  We may make changes to mathboxes to maintain the overall quality of
+     set.mm.  Normally we will let you know if a change might impact what you
+     are working on.
+
+     3.  If you use theorems from another user's mathbox, we don't provide
+     assurance that they are based on correct or consistent $a statements.  (If
+     you find such a problem, please let us know so it can be corrected.)
+     (Contributed by NM, 20-Feb-2007.)  (New usage is discouraged.) $)
+  mathbox $p |- x = x $=
+    ( equid ) AB $.
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+                Mathbox for Mykola Mostovenko
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+  $( Heyting's formal system Axiom #1 from [Heyting] p. 127.
+     (Contributed by MM, 11-Aug-2018.) $)
+  ax1hfs $p |- ( ph -> ( ph /\ ph ) ) $=
+    ( wa ax-ia3 pm2.43i ) AAABAACD $.
+
+$( (End of Mykola Mostovenko's mathbox.) $)
