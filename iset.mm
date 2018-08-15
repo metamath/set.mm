@@ -1,4 +1,4 @@
-$( iset.mm - Version of 13-Aug-2018
+$( iset.mm - Version of 14-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -5931,6 +5931,21 @@ $)
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
   dcimpstable $p |- ( DECID ph -> STABLE ph ) $=
     ( wdc wn wi wstable notnot2dc df-stable sylibr ) ABACCADAEAFAGH $.
+
+  $( Decidability implies testability.  (Contributed by David A. Wheeler,
+     14-Aug-2018.) $)
+  dcimptestable $p |- ( DECID ph -> TESTABLE ph ) $=
+    ( wn wo wdc wtestable notnot1 orim1i orcomd df-dc df-testable 3imtr4i ) AAB
+    ZCZLLBZCADAEMNLANLAFGHAIAJK $.
+
+  $( "Stable and testable" is equivalent to decidable.  (Contributed by David
+     A. Wheeler, 13-Aug-2018.) $)
+  stabletestableimpdc $p |-
+    ( ( STABLE ph /\ TESTABLE ph ) <-> DECID ph ) $=
+    ( wstable wtestable wa wdc wn wo df-testable biimpi adantl df-stable orim2d
+    wi adantr mpd orcomd df-dc sylibr dcimpstable dcimptestable jca impbii ) AB
+    ZACZDZAEZUEAAFZGUFUEUGAUEUGUGFZGZUGAGZUDUIUCUDUIAHIJUCUIUJMUDUCUHAUGUCUHAMA
+    KILNOPAQRUFUCUDASATUAUB $.
 
   $( Contraposition for a decidable proposition.  Based on theorem *2.15 of
      [WhiteheadRussell] p. 102.  (Contributed by Jim Kingdon, 29-Mar-2018.) $)
