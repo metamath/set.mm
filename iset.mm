@@ -30190,6 +30190,850 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Indexed union and intersection
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c U_ $. $( Underlined big cup. $)
+  $c |^|_ $. $( Underlined big cap. $)
+
+  $( Extend class notation to include indexed union.  Note:  Historically
+     (prior to 21-Oct-2005), set.mm used the notation ` U. x e. A B ` , with
+     the same union symbol as ~ cuni .  While that syntax was unambiguous, it
+     did not allow for LALR parsing of the syntax constructions in set.mm.  The
+     new syntax uses as distinguished symbol ` U_ ` instead of ` U. ` and does
+     allow LALR parsing.  Thanks to Peter Backes for suggesting this change. $)
+  ciun $a class U_ x e. A B $.
+
+  $( Extend class notation to include indexed intersection.  Note:
+     Historically (prior to 21-Oct-2005), set.mm used the notation
+     ` |^| x e. A B ` , with the same intersection symbol as ~ cint .  Although
+     that syntax was unambiguous, it did not allow for LALR parsing of the
+     syntax constructions in set.mm.  The new syntax uses a distinguished
+     symbol ` |^|_ ` instead of ` |^| ` and does allow LALR parsing.  Thanks to
+     Peter Backes for suggesting this change. $)
+  ciin $a class |^|_ x e. A B $.
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( Define indexed union.  Definition indexed union in [Stoll] p. 45.  In
+       most applications, ` A ` is independent of ` x ` (although this is not
+       required by the definition), and ` B ` depends on ` x ` i.e. can be read
+       informally as ` B ( x ) ` .  We call ` x ` the index, ` A ` the index
+       set, and ` B ` the indexed set.  In most books, ` x e. A ` is written as
+       a subscript or underneath a union symbol ` U. ` .  We use a special
+       union symbol ` U_ ` to make it easier to distinguish from plain class
+       union.  In many theorems, you will see that ` x ` and ` A ` are in the
+       same distinct variable group (meaning ` A ` cannot depend on ` x ` ) and
+       that ` B ` and ` x ` do not share a distinct variable group (meaning
+       that can be thought of as ` B ( x ) ` i.e. can be substituted with a
+       class expression containing ` x ` ).  An alternate definition tying
+       indexed union to ordinary union is ~ dfiun2 .  Theorem ~ uniiun provides
+       a definition of ordinary union in terms of indexed union.  Theorems
+       ~ fniunfv and ~ funiunfv are useful when ` B ` is a function.
+       (Contributed by NM, 27-Jun-1998.) $)
+    df-iun $a |- U_ x e. A B = { y | E. x e. A y e. B } $.
+
+    $( Define indexed intersection.  Definition of [Stoll] p. 45.  See the
+       remarks for its sibling operation of indexed union ~ df-iun .  An
+       alternate definition tying indexed intersection to ordinary intersection
+       is ~ dfiin2 .  Theorem ~ intiin provides a definition of ordinary
+       intersection in terms of indexed intersection.  (Contributed by NM,
+       27-Jun-1998.) $)
+    df-iin $a |- |^|_ x e. A B = { y | A. x e. A y e. B } $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d y C $.
+    $( Membership in indexed union.  (Contributed by NM, 3-Sep-2003.) $)
+    eliun $p |- ( A e. U_ x e. B C <-> E. x e. B A e. C ) $=
+      ( vy ciun wcel wrex elex rexlimivw cv wceq eleq1 rexbidv df-iun pm5.21nii
+      cvv elab2g ) BACDFZGBQGZBDGZACHZBSIUATACBDIJEKZDGZACHUBEBSQUCBLUDUAACUCBD
+      MNAECDORP $.
+
+    $( Membership in indexed intersection.  (Contributed by NM, 3-Sep-2003.) $)
+    eliin $p |- ( A e. V -> ( A e. |^|_ x e. B C <-> A. x e. B A e. C ) ) $=
+      ( vy cv wcel wral ciin wceq eleq1 ralbidv df-iin elab2g ) FGZDHZACIBDHZAC
+      IFBACDJEPBKQRACPBDLMAFCDNO $.
+  $}
+
+  ${
+    $d y z A $.  $d x z B $.  $d z C $.  $d x y $.
+    $( Commutation of indexed unions.  (Contributed by NM, 18-Dec-2008.) $)
+    iuncom $p |- U_ x e. A U_ y e. B C = U_ y e. B U_ x e. A C $=
+      ( vz ciun cv wcel wrex rexcom eliun rexbii 3bitr4i eqriv ) FACBDEGZGZBDAC
+      EGZGZFHZPIZACJZTRIZBDJZTQITSITEIZBDJZACJUEACJZBDJUBUDUEABCDKUAUFACBTDELMU
+      CUGBDATCELMNATCPLBTDRLNO $.
+  $}
+
+  ${
+    $d y z A $.  $d y z B $.  $d x y z $.
+    $( Commutation of union with indexed union.  (Contributed by Mario
+       Carneiro, 18-Jan-2014.) $)
+    iuncom4 $p |- U_ x e. A U. B = U. U_ x e. A B $=
+      ( vy vz cuni ciun cv wcel wa wex df-rex rexbii rexcom4 bitri exbii eluni2
+      wrex eliun 3bitr4i r19.41v anbi1i eqriv ) DABCFZGZABCGZFZDHZUDIZABRZUHEHZ
+      IZEUFRZUHUEIUHUGIULECRZABRZUKCIZABRZULJZEKZUJUMUOUPULJZABRZEKZUSUOUTEKZAB
+      RVBUNVCABULECLMUTAEBNOVAUREUPULABUAPOUIUNABEUHCQMUMUKUFIZULJZEKUSULEUFLVE
+      UREVDUQULAUKBCSUBPOTAUHBUDSEUHUFQTUC $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Indexed union of a constant class, i.e. where ` B ` does not depend on
+       ` x ` .  (Contributed by NM, 5-Sep-2004.)  (Proof shortened by Andrew
+       Salmon, 25-Jul-2011.) $)
+    iunconst $p |- ( A =/= (/) -> U_ x e. A B = B ) $=
+      ( vy c0 wne ciun cv wcel wrex r19.9rzv eliun syl6rbbr eqrdv ) BEFZDABCGZC
+      ODHZCIZRABJQPIRABKAQBCLMN $.
+
+    $( Indexed intersection of a constant class, i.e. where ` B ` does not
+       depend on ` x ` .  (Contributed by Mario Carneiro, 6-Feb-2015.) $)
+    iinconst $p |- ( A =/= (/) -> |^|_ x e. A B = B ) $=
+      ( vy c0 wne ciin cv wcel wral r19.3rzv cvv vex eliin ax-mp syl6rbbr eqrdv
+      wb ) BEFZDABCGZCSDHZCIZUBABJZUATIZUBABKUALIUDUCRDMAUABCLNOPQ $.
+  $}
+
+  ${
+    $d x y $.  $d y z A $.  $d x z B $.  $d z C $.
+    $( Law combining indexed union with indexed intersection.  Eq. 14 in
+       [KuratowskiMostowski] p. 109.  This theorem also appears as the last
+       example at ~ http://en.wikipedia.org/wiki/Union%5F%28set%5Ftheory%29 .
+       (Contributed by NM, 17-Aug-2004.)  (Proof shortened by Andrew Salmon,
+       25-Jul-2011.) $)
+    iuniin $p |- U_ x e. A |^|_ y e. B C C_ |^|_ y e. B U_ x e. A C $=
+      ( vz ciin ciun cv wcel wrex wral r19.12 cvv vex eliin ax-mp eliun 3imtr4i
+      wb rexbii ralbii ssriv ) FACBDEGZHZBDACEHZGZFIZUDJZACKZUHUFJZBDLZUHUEJUHU
+      GJZUHEJZBDLZACKUNACKZBDLUJULUNABCDMUIUOACUHNJZUIUOTFOZBUHDENPQUAUKUPBDAUH
+      CERUBSAUHCUDRUQUMULTURBUHDUFNPQSUC $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.
+    $( Subclass theorem for indexed union.  (Contributed by NM, 10-Dec-2004.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    iunss1 $p |- ( A C_ B -> U_ x e. A C C_ U_ x e. B C ) $=
+      ( vy wss ciun cv wcel wrex ssrexv eliun 3imtr4g ssrdv ) BCFZEABDGZACDGZOE
+      HZDIZABJSACJRPIRQISABCKARBDLARCDLMN $.
+
+    $( Subclass theorem for indexed union.  (Contributed by NM,
+       24-Jan-2012.) $)
+    iinss1 $p |- ( A C_ B -> |^|_ x e. B C C_ |^|_ x e. A C ) $=
+      ( vy wss ciin cv wcel wral ssralv cvv wb vex eliin ax-mp 3imtr4g ssrdv )
+      BCFZEACDGZABDGZSEHZDIZACJZUCABJZUBTIZUBUAIZUCABCKUBLIZUFUDMENZAUBCDLOPUHU
+      GUEMUIAUBBDLOPQR $.
+
+    $( Equality theorem for indexed union.  (Contributed by NM,
+       27-Jun-1998.) $)
+    iuneq1 $p |- ( A = B -> U_ x e. A C = U_ x e. B C ) $=
+      ( wss wa ciun wceq iunss1 anim12i eqss 3imtr4i ) BCEZCBEZFABDGZACDGZEZPOE
+      ZFBCHOPHMQNRABCDIACBDIJBCKOPKL $.
+
+    $( Equality theorem for restricted existential quantifier.  (Contributed by
+       NM, 27-Jun-1998.) $)
+    iineq1 $p |- ( A = B -> |^|_ x e. A C = |^|_ x e. B C ) $=
+      ( vy wceq cv wcel wral cab ciin raleq abbidv df-iin 3eqtr4g ) BCFZEGDHZAB
+      IZEJQACIZEJABDKACDKPRSEQABCLMAEBDNAECDNO $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y C $.
+    $( Subclass theorem for indexed union.  (Contributed by NM, 26-Nov-2003.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    ss2iun $p |- ( A. x e. A B C_ C -> U_ x e. A B C_ U_ x e. A C ) $=
+      ( vy wss wral ciun cv wcel wrex ssel ralimi rexim syl eliun 3imtr4g ssrdv
+      wi ) CDFZABGZEABCHZABDHZUAEIZCJZABKZUDDJZABKZUDUBJUDUCJUAUEUGSZABGUFUHSTU
+      IABCDUDLMUEUGABNOAUDBCPAUDBDPQR $.
+
+    $( Equality theorem for indexed union.  (Contributed by NM,
+       22-Oct-2003.) $)
+    iuneq2 $p |- ( A. x e. A B = C -> U_ x e. A B = U_ x e. A C ) $=
+      ( wss wral wa ciun wceq ss2iun anim12i eqss ralbii r19.26 bitri 3imtr4i )
+      CDEZABFZDCEZABFZGZABCHZABDHZEZUCUBEZGCDIZABFZUBUCIRUDTUEABCDJABDCJKUGQSGZ
+      ABFUAUFUHABCDLMQSABNOUBUCLP $.
+
+    $( Equality theorem for indexed intersection.  (Contributed by NM,
+       22-Oct-2003.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    iineq2 $p |- ( A. x e. A B = C -> |^|_ x e. A B = |^|_ x e. A C ) $=
+      ( vy wceq wral cv wcel cab ciin wb eleq2 ralimi syl abbidv df-iin 3eqtr4g
+      ralbi ) CDFZABGZEHZCIZABGZEJUBDIZABGZEJABCKABDKUAUDUFEUAUCUELZABGUDUFLTUG
+      ABCDUBMNUCUEABSOPAEBCQAEBDQR $.
+  $}
+
+  ${
+    iuneq2i.1 $e |- ( x e. A -> B = C ) $.
+    $( Equality inference for indexed union.  (Contributed by NM,
+       22-Oct-2003.) $)
+    iuneq2i $p |- U_ x e. A B = U_ x e. A C $=
+      ( wceq ciun iuneq2 mprg ) CDFABCGABDGFABABCDHEI $.
+
+    $( Equality inference for indexed intersection.  (Contributed by NM,
+       22-Oct-2003.) $)
+    iineq2i $p |- |^|_ x e. A B = |^|_ x e. A C $=
+      ( wceq ciin iineq2 mprg ) CDFABCGABDGFABABCDHEI $.
+  $}
+
+  ${
+    iineq2d.1 $e |- F/ x ph $.
+    iineq2d.2 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
+    $( Equality deduction for indexed intersection.  (Contributed by NM,
+       7-Dec-2011.) $)
+    iineq2d $p |- ( ph -> |^|_ x e. A B = |^|_ x e. A C ) $=
+      ( wceq wral ciin cv wcel ex ralrimi iineq2 syl ) ADEHZBCIBCDJBCEJHAQBCFAB
+      KCLQGMNBCDEOP $.
+  $}
+
+  ${
+    $d x ph $.
+    iuneq2dv.1 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
+    $( Equality deduction for indexed union.  (Contributed by NM,
+       3-Aug-2004.) $)
+    iuneq2dv $p |- ( ph -> U_ x e. A B = U_ x e. A C ) $=
+      ( wceq wral ciun ralrimiva iuneq2 syl ) ADEGZBCHBCDIBCEIGAMBCFJBCDEKL $.
+
+    $( Equality deduction for indexed intersection.  (Contributed by NM,
+       3-Aug-2004.) $)
+    iineq2dv $p |- ( ph -> |^|_ x e. A B = |^|_ x e. A C ) $=
+      ( nfv iineq2d ) ABCDEABGFH $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    iuneq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality theorem for indexed union, deduction version.  (Contributed by
+       Drahflow, 22-Oct-2015.) $)
+    iuneq1d $p |- ( ph -> U_ x e. A C = U_ x e. B C ) $=
+      ( wceq ciun iuneq1 syl ) ACDGBCEHBDEHGFBCDEIJ $.
+
+    ${
+      $d x ph $.
+      iuneq12d.2 $e |- ( ph -> C = D ) $.
+      $( Equality deduction for indexed union, deduction version.  (Contributed
+         by Drahflow, 22-Oct-2015.) $)
+      iuneq12d $p |- ( ph -> U_ x e. A C = U_ x e. B D ) $=
+        ( ciun iuneq1d wceq cv wcel adantr iuneq2dv eqtrd ) ABCEIBDEIBDFIABCDEG
+        JABDEFAEFKBLDMHNOP $.
+    $}
+  $}
+
+  ${
+    $d x ph $.  $d x A $.
+    iuneq2d.2 $e |- ( ph -> B = C ) $.
+    $( Equality deduction for indexed union.  (Contributed by Drahflow,
+       22-Oct-2015.) $)
+    iuneq2d $p |- ( ph -> U_ x e. A B = U_ x e. A C ) $=
+      ( wceq cv wcel adantr iuneq2dv ) ABCDEADEGBHCIFJK $.
+  $}
+
+  ${
+    $d z A $.  $d z B $.  $d x z $.  $d y z $.
+    nfiun.1 $e |- F/_ y A $.
+    nfiun.2 $e |- F/_ y B $.
+    $( Bound-variable hypothesis builder for indexed union.  (Contributed by
+       Mario Carneiro, 25-Jan-2014.) $)
+    nfiun $p |- F/_ y U_ x e. A B $=
+      ( vz ciun cv wcel wrex cab df-iun nfcri nfrex nfab nfcxfr ) BACDHGIDJZACK
+      ZGLAGCDMSBGRBACEBGDFNOPQ $.
+
+    $( Bound-variable hypothesis builder for indexed intersection.
+       (Contributed by Mario Carneiro, 25-Jan-2014.) $)
+    nfiin $p |- F/_ y |^|_ x e. A B $=
+      ( vz ciin cv wcel wral cab df-iin nfcri nfral nfab nfcxfr ) BACDHGIDJZACK
+      ZGLAGCDMSBGRBACEBGDFNOPQ $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    $( Bound-variable hypothesis builder for indexed union.  (Contributed by
+       NM, 12-Oct-2003.) $)
+    nfiu1 $p |- F/_ x U_ x e. A B $=
+      ( vy ciun cv wcel wrex cab df-iun nfre1 nfab nfcxfr ) AABCEDFCGZABHZDIADB
+      CJOADNABKLM $.
+
+    $( Bound-variable hypothesis builder for indexed intersection.
+       (Contributed by NM, 15-Oct-2003.) $)
+    nfii1 $p |- F/_ x |^|_ x e. A B $=
+      ( vy ciin cv wcel wral cab df-iin nfra1 nfab nfcxfr ) AABCEDFCGZABHZDIADB
+      CJOADNABKLM $.
+  $}
+
+  ${
+    $d y z w A $.  $d y z w B $.  $d w C z $.  $d w x y z $.
+    $( Alternate definition of indexed union when ` B ` is a set.  Definition
+       15(a) of [Suppes] p. 44.  (Contributed by NM, 23-Mar-2006.)  (Proof
+       shortened by Andrew Salmon, 25-Jul-2011.) $)
+    dfiun2g $p |- ( A. x e. A B e. C ->
+                  U_ x e. A B = U. { y | E. x e. A y = B } ) $=
+      ( vz wcel wral ciun cv wceq wrex cab cuni wa wex nfra1 wb rsp syl6bb syl6
+      clel3g rexbida rexcom4 r19.41v exbii exancom bitri eliun eluniab 3bitr4g
+      imp eqrdv ) DEGZACHZFACDIZBJZDKZACLZBMNZUOFJZDGZACLZVAUQGZUSOBPZVAUPGVAUT
+      GUOVCURVDOZACLZBPZVEUOVCVFBPZACLVHUOVBVIACUNACQUOAJCGZVBVIRZUOVJUNVKUNACS
+      BVADEUBUAULUCVFABCUDTVHUSVDOZBPVEVGVLBURVDACUEUFUSVDBUGUHTAVACDUIUSBVAUJU
+      KUM $.
+
+    $( Alternate definition of indexed intersection when ` B ` is a set.
+       (Contributed by Jeff Hankins, 27-Aug-2009.) $)
+    dfiin2g $p |- ( A. x e. A B e. C
+               -> |^|_ x e. A B = |^| { y | E. x e. A y = B } ) $=
+      ( vw vz wcel wral cv cab wceq wrex wi wal df-ral wb eqeq1 albii bitr4i
+      ciin cint eleq2 biimprcd alrimiv eqid imbi12d mpii impbid2 imim2i pm5.74d
+      spcgv alimi albi syl sylbi alcom r19.23v vex rexbidv elab imbi1i 3bitr3ri
+      19.21v syl6bb syl5bb abbidv df-iin df-int 3eqtr4g ) DEHZACIZFJZDHZACIZFKG
+      JZBJZDLZACMZBKZHZVMVPHZNZGOZFKACDUAVTUBVLVOWDFVOAJCHZVNNZAOZVLWDVNACPVLWG
+      WEVPDLZWBNZGOZNZAOZWDVLWEVKNZAOZWGWLQZVKACPWNWFWKQZAOWOWMWPAWMWEVNWJVKVNW
+      JQWEVKVNWJVNWIGWHWBVNVPDVMUCZUDUEVKWJDDLZVNDUFWIWRVNNGDEWHWHWRWBVNVPDDRWQ
+      UGULUHUIUJUKUMWFWKAUNUOUPWIACIZGOZWEWINZGOZAOZWDWLWTXAAOZGOXCWSXDGWIACPSX
+      AAGUQTWSWCGWSWHACMZWBNWCWHWBACURWAXEWBVSXEBVPGUSVQVPLVRWHACVQVPDRUTVAVBTS
+      XBWKAWEWIGVDSVCVEVFVGAFCDVHFGVTVIVJ $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    dfiun2.1 $e |- B e. _V $.
+    $( Alternate definition of indexed union when ` B ` is a set.  Definition
+       15(a) of [Suppes] p. 44.  (Contributed by NM, 27-Jun-1998.)  (Revised by
+       David Abernethy, 19-Jun-2012.) $)
+    dfiun2 $p |- U_ x e. A B = U. { y | E. x e. A y = B } $=
+      ( cvv wcel ciun cv wceq wrex cab cuni dfiun2g a1i mprg ) DFGZACDHBIDJACKB
+      LMJACABCDFNQAICGEOP $.
+
+    $( Alternate definition of indexed intersection when ` B ` is a set.
+       Definition 15(b) of [Suppes] p. 44.  (Contributed by NM, 28-Jun-1998.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    dfiin2 $p |- |^|_ x e. A B = |^| { y | E. x e. A y = B } $=
+      ( cvv wcel ciin cv wceq wrex cab cint dfiin2g a1i mprg ) DFGZACDHBIDJACKB
+      LMJACABCDFNQAICGEOP $.
+  $}
+
+  ${
+    $d x z $.  $d y z w $.  $d z A $.  $d z w B $.  $d z w C $.
+    $( Define double indexed union.  (Contributed by FL, 6-Nov-2013.) $)
+    dfiunv2 $p |- U_ x e. A U_ y e. B C =
+      { z | E. x e. A E. y e. B z e. C } $=
+      ( vw ciun cv wcel wrex cab wceq df-iun a1i iuneq2i vex weq eleq1 rexbidv
+      elab rexbii abbii 3eqtri ) ADBEFHZHADGIZFJZBEKZGLZHCIZUIJZADKZCLUJFJZBEKZ
+      ADKZCLADUEUIUEUIMAIDJBGEFNOPACDUINULUOCUKUNADUHUNGUJCQGCRUGUMBEUFUJFSTUAU
+      BUCUD $.
+  $}
+
+  ${
+    $d z y A $.  $d z x A $.  $d z B $.  $d z C $.
+    cbviun.1 $e |- F/_ y B $.
+    cbviun.2 $e |- F/_ x C $.
+    cbviun.3 $e |- ( x = y -> B = C ) $.
+    $( Rule used to change the bound variables in an indexed union, with the
+       substitution specified implicitly by the hypothesis.  (Contributed by
+       NM, 26-Mar-2006.)  (Revised by Andrew Salmon, 25-Jul-2011.) $)
+    cbviun $p |- U_ x e. A B = U_ y e. A C $=
+      ( vz cv wcel wrex cab ciun nfcri weq eleq2d cbvrex abbii df-iun 3eqtr4i )
+      IJZDKZACLZIMUBEKZBCLZIMACDNBCENUDUFIUCUEABCBIDFOAIEGOABPDEUBHQRSAICDTBICE
+      TUA $.
+
+    $( Change bound variables in an indexed intersection.  (Contributed by Jeff
+       Hankins, 26-Aug-2009.)  (Revised by Mario Carneiro, 14-Oct-2016.) $)
+    cbviin $p |- |^|_ x e. A B = |^|_ y e. A C $=
+      ( vz cv wcel wral cab ciin nfcri weq eleq2d cbvral abbii df-iin 3eqtr4i )
+      IJZDKZACLZIMUBEKZBCLZIMACDNBCENUDUFIUCUEABCBIDFOAIEGOABPDEUBHQRSAICDTBICE
+      TUA $.
+  $}
+
+  ${
+    $d x A $.  $d y A $.  $d y z B $.  $d x z C $.
+    cbviunv.1 $e |- ( x = y -> B = C ) $.
+    $( Rule used to change the bound variables in an indexed union, with the
+       substitution specified implicitly by the hypothesis.  (Contributed by
+       NM, 15-Sep-2003.) $)
+    cbviunv $p |- U_ x e. A B = U_ y e. A C $=
+      ( nfcv cbviun ) ABCDEBDGAEGFH $.
+
+    $( Change bound variables in an indexed intersection.  (Contributed by Jeff
+       Hankins, 26-Aug-2009.) $)
+    cbviinv $p |- |^|_ x e. A B = |^|_ y e. A C $=
+      ( nfcv cbviin ) ABCDEBDGAEGFH $.
+  $}
+
+  ${
+    $d x y C $.  $d y A $.  $d y B $.
+    $( Subset theorem for an indexed union.  (Contributed by NM, 13-Sep-2003.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    iunss $p |- ( U_ x e. A B C_ C <-> A. x e. A B C_ C ) $=
+      ( vy ciun wss cv wcel wrex cab wal wral df-iun sseq1i abss ralbii ralcom4
+      wi dfss2 r19.23v albii 3bitrri 3bitri ) ABCFZDGEHZCIZABJZEKZDGUHUFDIZSZEL
+      ZCDGZABMZUEUIDAEBCNOUHEDPUNUGUJSZELZABMUOABMZELULUMUPABECDTQUOAEBRUQUKEUG
+      UJABUAUBUCUD $.
+  $}
+
+  ${
+    $d x y C $.  $d y A $.  $d y B $.
+    $( Subset implication for an indexed union.  (Contributed by NM,
+       3-Sep-2003.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    ssiun $p |- ( E. x e. A C C_ B -> C C_ U_ x e. A B ) $=
+      ( vy wss wrex ciun cv wcel ssel reximi r19.37av syl eliun syl6ibr ssrdv
+      wi ) DCFZABGZEDABCHZTEIZDJZUBCJZABGZUBUAJTUCUDRZABGUCUERSUFABDCUBKLUCUDAB
+      MNAUBBCOPQ $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    $( Identity law for subset of an indexed union.  (Contributed by NM,
+       12-Oct-2003.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    ssiun2 $p |- ( x e. A -> B C_ U_ x e. A B ) $=
+      ( vy cv wcel ciun wrex rspe ex eliun syl6ibr ssrdv ) AEBFZDCABCGZNDEZCFZQ
+      ABHZPOFNQRQABIJAPBCKLM $.
+  $}
+
+  ${
+    $d x A $.  $d x C $.  $d x D $.
+    ssiun2s.1 $e |- ( x = C -> B = D ) $.
+    $( Subset relationship for an indexed union.  (Contributed by NM,
+       26-Oct-2003.) $)
+    ssiun2s $p |- ( C e. A -> D C_ U_ x e. A B ) $=
+      ( ciun wss nfcv nfiu1 nfss cv wceq sseq1d ssiun2 vtoclgaf ) CABCGZHEQHADB
+      ADIAEQAEIABCJKALDMCEQFNABCOP $.
+  $}
+
+  ${
+    $d x y $.  $d x B $.  $d y C $.  $d x D $.
+    $( A subclass condition on the members of two indexed classes ` C ( x ) `
+       and ` D ( y ) ` that implies a subclass relation on their indexed
+       unions.  Generalization of Proposition 8.6 of [TakeutiZaring] p. 59.
+       Compare ~ uniss2 .  (Contributed by NM, 9-Dec-2004.) $)
+    iunss2 $p |- ( A. x e. A E. y e. B C C_ D ->
+                 U_ x e. A C C_ U_ y e. B D ) $=
+      ( wss wrex wral ciun ssiun ralimi iunss sylibr ) EFGBDHZACIEBDFJZGZACIACE
+      JPGOQACBDFEKLACEPMN $.
+  $}
+
+  ${
+    $d y A $.  $d x y $.  $d x B $.
+    $( The indexed union of a class abstraction.  (Contributed by NM,
+       27-Dec-2004.) $)
+    iunab $p |- U_ x e. A { y | ph } = { y | E. x e. A ph } $=
+      ( cab ciun wrex wceq cv wcel wb nfcv nfab1 nfiun cleqf abid eliun 3bitr4i
+      rexbii mpgbir ) BDACEZFZABDGZCEZHCIZUBJZUEUDJZKCCUBUDBCDUACDLACMNUCCMOUEU
+      AJZBDGUCUFUGUHABDACPSBUEDUAQUCCPRT $.
+
+    $( The indexed union of a restricted class abstraction.  (Contributed by
+       NM, 3-Jan-2004.)  (Proof shortened by Mario Carneiro, 14-Nov-2016.) $)
+    iunrab $p |- U_ x e. A { y e. B | ph } = { y e. B | E. x e. A ph } $=
+      ( cv wcel cab ciun wrex crab iunab wceq df-rab a1i iuneq2i r19.42v eqtr4i
+      wa abbii 3eqtr4i ) BDCFEGZASZCHZIUCBDJZCHZBDACEKZIABDJZCEKZUCBCDLBDUGUDUG
+      UDMBFDGACENOPUIUBUHSZCHUFUHCENUEUJCUBABDQTRUA $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.  $d x D $.
+    iunxdif2.1 $e |- ( x = y -> C = D ) $.
+    $( Indexed union with a class difference as its index.  (Contributed by NM,
+       10-Dec-2004.) $)
+    iunxdif2 $p |- ( A. x e. A E. y e. ( A \ B ) C C_ D ->
+                 U_ y e. ( A \ B ) D = U_ x e. A C ) $=
+      ( wss cdif wrex wral ciun wceq iunss2 difss iunss1 ax-mp cbviunv sseqtr4i
+      wa jctil eqss sylibr ) EFHBCDIZJACKZBUDFLZACELZHZUGUFHZTUFUGMUEUIUHABCUDE
+      FNUFBCFLZUGUDCHUFUJHCDOBUDCFPQABCEFGRSUAUFUGUBUC $.
+  $}
+
+  ${
+    $d y z A $.  $d y z B $.  $d y z C $.  $d x y z $.
+    ssiinf.1 $e |- F/_ x C $.
+    $( Subset theorem for an indexed intersection.  (Contributed by FL,
+       15-Oct-2012.)  (Proof shortened by Mario Carneiro, 14-Oct-2016.) $)
+    ssiinf $p |- ( C C_ |^|_ x e. A B <-> A. x e. A C C_ B ) $=
+      ( vy cv ciin wcel wral wss cvv vex eliin ax-mp ralbii nfcv ralcomf dfss3
+      wb bitri 3bitr4i ) FGZABCHZIZFDJZUCCIZFDJZABJZDUDKDCKZABJUFUGABJZFDJUIUEU
+      KFDUCLIUEUKTFMAUCBCLNOPUGFADBEFBQRUAFDUDSUJUHABFDCSPUB $.
+  $}
+
+  ${
+    $d x C $.
+    $( Subset theorem for an indexed intersection.  (Contributed by NM,
+       15-Oct-2003.) $)
+    ssiin $p |- ( C C_ |^|_ x e. A B <-> A. x e. A C C_ B ) $=
+      ( nfcv ssiinf ) ABCDADEF $.
+  $}
+
+  ${
+    $d x y C $.  $d y A $.  $d y B $.
+    $( Subset implication for an indexed intersection.  (Contributed by NM,
+       15-Oct-2003.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    iinss $p |- ( E. x e. A B C_ C -> |^|_ x e. A B C_ C ) $=
+      ( vy wss wrex ciin cv wcel wral cvv wb vex eliin ax-mp wi reximi r19.36av
+      ssel syl syl5bi ssrdv ) CDFZABGZEABCHZDEIZUFJZUGCJZABKZUEUGDJZUGLJUHUJMEN
+      AUGBCLOPUEUIUKQZABGUJUKQUDULABCDUGTRUIUKABSUAUBUC $.
+  $}
+
+  ${
+    $d A y $.  $d B y $.  $d x y $.
+    $( An indexed intersection is included in any of its members.  (Contributed
+       by FL, 15-Oct-2012.) $)
+    iinss2 $p |- ( x e. A -> |^|_ x e. A B C_ B ) $=
+      ( vy cv wcel ciin wral wi cvv wb vex eliin ax-mp rsp sylbi com12 ssrdv )
+      AEBFZDABCGZCDEZTFZSUACFZUBUCABHZSUCIUAJFUBUDKDLAUABCJMNUCABOPQR $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Class union in terms of indexed union.  Definition in [Stoll] p. 43.
+       (Contributed by NM, 28-Jun-1998.) $)
+    uniiun $p |- U. A = U_ x e. A x $=
+      ( vy cuni wel wrex cab cv ciun dfuni2 df-iun eqtr4i ) BDCAEABFCGABAHZICAB
+      JACBMKL $.
+
+    $( Class intersection in terms of indexed intersection.  Definition in
+       [Stoll] p. 44.  (Contributed by NM, 28-Jun-1998.) $)
+    intiin $p |- |^| A = |^|_ x e. A x $=
+      ( vy cint wel wral cab cv ciin dfint2 df-iin eqtr4i ) BDCAEABFCGABAHZICAB
+      JACBMKL $.
+
+    $( An indexed union of singletons recovers the index set.  (Contributed by
+       NM, 6-Sep-2005.) $)
+    iunid $p |- U_ x e. A { x } = A $=
+      ( vy cv csn ciun wceq cab wcel df-sn equcom abbii eqtri a1i iuneq2i iunab
+      wrex risset abid2 3eqtr2i ) ABADZEZFABUACDZGZCHZFZBABUBUEUBUEGUABIUBUCUAG
+      ZCHUECUAJUGUDCCAKLMNOUFUDABQZCHUCBIZCHBUDACBPUIUHCAUCBRLCBSTM $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    $( An indexed union of the empty set is empty.  (Contributed by NM,
+       26-Mar-2003.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    iun0 $p |- U_ x e. A (/) = (/) $=
+      ( vy c0 ciun cv wcel wrex wn noel a1i nrex eliun mtbir 2false eqriv ) CAB
+      DEZDCFZQGZRDGZSTABHTABTIAFBGRJZKLARBDMNUAOP $.
+
+    $( An empty indexed union is empty.  (Contributed by NM, 4-Dec-2004.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    0iun $p |- U_ x e. (/) A = (/) $=
+      ( vy c0 ciun cv wcel wrex rex0 eliun mtbir noel 2false eqriv ) CADBEZDCFZ
+      OGZPDGQPBGZADHRAIAPDBJKPLMN $.
+
+    $( An empty indexed intersection is the universal class.  (Contributed by
+       NM, 20-Oct-2005.) $)
+    0iin $p |- |^|_ x e. (/) A = _V $=
+      ( vy c0 ciin cv wcel wral cab cvv df-iin vex ral0 2th abbi2i eqtr4i ) ADB
+      ECFZBGZADHZCIJACDBKSCJQJGSCLRAMNOP $.
+
+    $( Indexed intersection with a universal index class.  When ` A ` doesn't
+       depend on ` x ` , this evaluates to ` A ` by ~ 19.3 and ~ abid2 .  When
+       ` A = x ` , this evaluates to ` (/) ` by ~ intiin and ~ intv .
+       (Contributed by NM, 11-Sep-2008.) $)
+    viin $p |- |^|_ x e. _V A = { y | A. x y e. A } $=
+      ( cvv ciin cv wcel wral cab wal df-iin ralv abbii eqtri ) ADCEBFCGZADHZBI
+      OAJZBIABDCKPQBOALMN $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.
+    $( There is a non-empty class in an indexed collection ` B ( x ) ` iff the
+       indexed union of them is non-empty.  (Contributed by NM, 15-Oct-2003.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    iunn0 $p |- ( E. x e. A B =/= (/) <-> U_ x e. A B =/= (/) ) $=
+      ( vy cv wcel wex wrex c0 wne rexcom4 eliun exbii bitr4i n0 rexbii 3bitr4i
+      ciun ) DEZCFZDGZABHZSABCRZFZDGZCIJZABHUCIJUBTABHZDGUETADBKUDUGDASBCLMNUFU
+      AABDCOPDUCOQ $.
+  $}
+
+  ${
+    $d y A $.  $d x y $.
+    $( Indexed intersection of a class builder.  (Contributed by NM,
+       6-Dec-2011.) $)
+    iinab $p |- |^|_ x e. A { y | ph } = { y | A. x e. A ph } $=
+      ( cab ciin wral wceq cv wcel nfcv nfab1 nfiin cleqf abid ralbii cvv eliin
+      wb vex ax-mp 3bitr4i mpgbir ) BDACEZFZABDGZCEZHCIZUEJZUHUGJZSCCUEUGBCDUDC
+      DKACLMUFCLNUHUDJZBDGZUFUIUJUKABDACOPUHQJUIULSCTBUHDUDQRUAUFCOUBUC $.
+
+    $d x A $.  $d x B $.
+    $( Indexed intersection of a restricted class builder.  (Contributed by NM,
+       6-Dec-2011.) $)
+    iinrab $p |- ( A =/= (/)
+          -> |^|_ x e. A { y e. B | ph } = { y e. B | A. x e. A ph } ) $=
+      ( c0 wne cv wcel wa wral cab crab ciin r19.28zv abbidv df-rab a1i iineq2i
+      wceq iinab eqtri 3eqtr4g ) DFGZCHEIZAJZBDKZCLZUEABDKZJZCLBDACEMZNZUICEMUD
+      UGUJCUEABDOPULBDUFCLZNUHBDUKUMUKUMTBHDIACEQRSUFBCDUAUBUICEQUC $.
+
+    $d y B $.
+    $( Indexed intersection of a restricted class builder.  (Contributed by NM,
+       6-Dec-2011.) $)
+    iinrab2 $p |- ( |^|_ x e. A { y e. B | ph } i^i B )
+                      = { y e. B | A. x e. A ph } $=
+      ( crab ciin cin wral wceq c0 cvv iineq1 0iin syl6eq incom inv1 eqtri rzal
+      ineq1d rabid2 ralcom bitr2i sylib wne iinrab wss ssrab2 dfss mpbi syl6eqr
+      eqtrd pm2.61ine ) BDACEFZGZEHZABDIZCEFZJDKDKJZUPEURUSUPLEHZEUSUOLEUSUOBKU
+      NGLBDKUNMBUNNOTUTELHELEPEQROUSACEIZBDIZEURJZVABDSVCUQCEIVBUQCEUAACBEDUBUC
+      UDULDKUEZUPUREHZURVDUOUREABCDEUFTUREUGURVEJUQCEUHUREUIUJUKUM $.
+  $}
+
+  ${
+    $d y A $.  $d x y B $.  $d y C $.
+    $( Indexed union of intersection.  Generalization of half of theorem
+       "Distributive laws" in [Enderton] p. 30.  Use ~ uniiun to recover
+       Enderton's theorem.  (Contributed by NM, 26-Mar-2004.) $)
+    iunin2 $p |- U_ x e. A ( B i^i C ) = ( B i^i U_ x e. A C ) $=
+      ( vy cin ciun cv wcel wrex r19.42v elin rexbii eliun anbi2i 3bitr4i eqriv
+      wa ) EABCDFZGZCABDGZFZEHZSIZABJZUCCIZUCUAIZRZUCTIUCUBIUFUCDIZRZABJUFUIABJ
+      ZRUEUHUFUIABKUDUJABUCCDLMUGUKUFAUCBDNOPAUCBSNUCCUALPQ $.
+
+    $( Indexed union of intersection.  Generalization of half of theorem
+       "Distributive laws" in [Enderton] p. 30.  Use ~ uniiun to recover
+       Enderton's theorem.  (Contributed by Mario Carneiro, 30-Aug-2015.) $)
+    iunin1 $p |- U_ x e. A ( C i^i B ) = ( U_ x e. A C i^i B ) $=
+      ( cin ciun iunin2 wceq cv wcel incom a1i iuneq2i 3eqtr4i ) ABCDEZFCABDFZE
+      ABDCEZFPCEABCDGABQOQOHAIBJDCKLMPCKN $.
+
+    $( Indexed intersection of union.  Generalization of half of theorem
+       "Distributive laws" in [Enderton] p. 30.  Use ~ intiin to recover
+       Enderton's theorem.  (Contributed by NM, 19-Aug-2004.) $)
+    iinun2 $p |- |^|_ x e. A ( B u. C ) = ( B u. |^|_ x e. A C ) $=
+      ( vy cun ciin cv wcel wral wo r19.32v elun ralbii cvv eliin ax-mp 3bitr4i
+      wb vex orbi2i eqriv ) EABCDFZGZCABDGZFZEHZUCIZABJZUGCIZUGUEIZKZUGUDIZUGUF
+      IUJUGDIZKZABJUJUNABJZKUIULUJUNABLUHUOABUGCDMNUKUPUJUGOIZUKUPSETZAUGBDOPQU
+      ARUQUMUISURAUGBUCOPQUGCUEMRUB $.
+
+    $( Indexed union of class difference.  Generalization of half of theorem
+       "De Morgan's laws" in [Enderton] p. 31.  Use ~ intiin to recover
+       Enderton's theorem.  (Contributed by NM, 19-Aug-2004.) $)
+    iundif2 $p |- U_ x e. A ( B \ C ) = ( B \ |^|_ x e. A C ) $=
+      ( vy cdif ciun ciin cv wcel wrex wn wa eldif rexbii r19.42v rexnal cvv wb
+      wral vex eliin ax-mp xchbinxr anbi2i 3bitri eliun 3bitr4i eqriv ) EABCDFZ
+      GZCABDHZFZEIZUJJZABKZUNCJZUNULJZLZMZUNUKJUNUMJUPUQUNDJZLZMZABKUQVBABKZMUT
+      UOVCABUNCDNOUQVBABPVDUSUQVDVAABTZURVAABQUNRJURVESEUAAUNBDRUBUCUDUEUFAUNBU
+      JUGUNCULNUHUI $.
+  $}
+
+  ${
+    $d x B $.  $d y C $.  $d x D $.  $d x y $.
+    $( Rearrange indexed unions over intersection.  (Contributed by NM,
+       18-Dec-2008.) $)
+    2iunin $p |- U_ x e. A U_ y e. B ( C i^i D )
+        = ( U_ x e. A C i^i U_ y e. B D ) $=
+      ( cin ciun wceq cv wcel iunin2 a1i iuneq2i iunin1 eqtri ) ACBDEFGHZHACEBD
+      FHZGZHACEHRGACQSQSIAJCKBDEFLMNACREOP $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.
+    $( Indexed intersection of class difference.  Generalization of half of
+       theorem "De Morgan's laws" in [Enderton] p. 31.  Use ~ uniiun to recover
+       Enderton's theorem.  (Contributed by NM, 5-Oct-2006.) $)
+    iindif2 $p |- ( A =/= (/) ->
+                 |^|_ x e. A ( B \ C ) = ( B \ U_ x e. A C ) ) $=
+      ( vy c0 wne cdif ciin ciun cv wcel wn wa r19.28zv eldif bicomi ralbii cvv
+      wral wrex ralnex eliun xchbinxr anbi2i 3bitr3g wb vex eliin ax-mp 3bitr4g
+      eqrdv ) BFGZEABCDHZIZCABDJZHZUMEKZUNLZABTZURCLZURUPLZMZNZURUOLZURUQLUMVAU
+      RDLZMZNZABTVAVGABTZNUTVDVAVGABOVHUSABUSVHURCDPQRVIVCVAVIVFABUAVBVFABUBAUR
+      BDUCUDUEUFURSLVEUTUGEUHAURBUNSUIUJURCUPPUKUL $.
+
+    $( Indexed intersection of intersection.  Generalization of half of theorem
+       "Distributive laws" in [Enderton] p. 30.  Use ~ intiin to recover
+       Enderton's theorem.  (Contributed by Mario Carneiro, 19-Mar-2015.) $)
+    iinin2 $p |- ( A =/= (/) ->
+      |^|_ x e. A ( B i^i C ) = ( B i^i |^|_ x e. A C ) ) $=
+      ( vy c0 wne cin ciin cv wcel wral wa r19.28zv elin wb eliin ax-mp 3bitr4g
+      cvv ralbii vex anbi2i eqrdv ) BFGZEABCDHZIZCABDIZHZUEEJZUFKZABLZUJCKZUJUH
+      KZMZUJUGKZUJUIKUEUMUJDKZMZABLUMUQABLZMULUOUMUQABNUKURABUJCDOUAUNUSUMUJTKZ
+      UNUSPEUBZAUJBDTQRUCSUTUPULPVAAUJBUFTQRUJCUHOSUD $.
+
+    $( Indexed intersection of intersection.  Generalization of half of theorem
+       "Distributive laws" in [Enderton] p. 30.  Use ~ intiin to recover
+       Enderton's theorem.  (Contributed by Mario Carneiro, 19-Mar-2015.) $)
+    iinin1 $p |- ( A =/= (/) ->
+      |^|_ x e. A ( C i^i B ) = ( |^|_ x e. A C i^i B ) ) $=
+      ( c0 wne cin ciin iinin2 wceq cv wcel incom a1i iineq2i 3eqtr4g ) BEFABCD
+      GZHCABDHZGABDCGZHRCGABCDIABSQSQJAKBLDCMNORCMP $.
+  $}
+
+  ${
+    $d x A $.
+    $( The indexed intersection of a complement.  (Contributed by G&eacute;rard
+       Lang, 5-Aug-2018.) $)
+    iinvdif $p |- |^|_ x e. A ( _V \ B ) = ( _V \ U_ x e. A B ) $=
+      ( cvv cdif ciin ciun wceq c0 dif0 0iun difeq2i 0iin iineq1 iuneq1 difeq2d
+      3eqtr4ri 3eqtr4a iindif2 pm2.61ine ) ABDCEZFZDABCGZEZHBIBIHZAIUAFZDAICGZE
+      ZUBUDDIEDUHUFDJUGIDACKLAUAMQABIUANUEUCUGDABICOPRABDCST $.
+  $}
+
+  ${
+    $d A x y $.  $d X x y $.  $d B x $.
+    $( Elementhood in a relative intersection.  (Contributed by Mario Carneiro,
+       30-Dec-2016.) $)
+    elriin $p |- ( B e. ( A i^i |^|_ x e. X S ) <->
+      ( B e. A /\ A. x e. X B e. S ) ) $=
+      ( ciin cin wcel wa wral elin eliin pm5.32i bitri ) CBAEDFZGHCBHZCOHZIPCDH
+      AEJZICBOKPQRACEDBLMN $.
+
+    $( Relative intersection of an empty family.  (Contributed by Stefan
+       O'Rear, 3-Apr-2015.) $)
+    riin0 $p |- ( X = (/) -> ( A i^i |^|_ x e. X S ) = A ) $=
+      ( c0 wceq ciin cin iineq1 ineq2d cvv 0iin ineq2i inv1 eqtri syl6eq ) DEFZ
+      BADCGZHBAECGZHZBQRSBADECIJTBKHBSKBACLMBNOP $.
+
+    $( Relative intersection of a nonempty family.  (Contributed by Stefan
+       O'Rear, 3-Apr-2015.) $)
+    riinn0 $p |- ( ( A. x e. X S C_ A /\ X =/= (/) ) ->
+        ( A i^i |^|_ x e. X S ) = |^|_ x e. X S ) $=
+      ( wss wral c0 wne wa ciin incom wceq wrex r19.2z ancoms iinss df-ss sylib
+      cin syl syl5eq ) CBEZADFZDGHZIZBADCJZSUFBSZUFBUFKUEUFBEZUGUFLUEUBADMZUHUD
+      UCUIUBADNOADCBPTUFBQRUA $.
+
+    $( Relative intersection of a relative abstraction.  (Contributed by Stefan
+       O'Rear, 3-Apr-2015.) $)
+    riinrab $p |- ( A i^i |^|_ x e. X { y e. A | ph } ) =
+        { y e. A | A. x e. X ph } $=
+      ( crab ciin cin wral wceq c0 riin0 rzal ralrimivw rabid2 sylibr eqtrd wne
+      wss ssrab2 rgenw riinn0 mpan iinrab pm2.61ine ) DBEACDFZGZHZABEIZCDFZJEKE
+      KJZUHDUJBDUFELUKUICDIDUJJUKUICDABEMNUICDOPQEKRZUHUGUJUFDSZBEIULUHUGJUMBEA
+      CDTUABDUFEUBUCABCEDUDQUE $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y C $.  $d y V $.
+    iinxsng.1 $e |- ( x = A -> B = C ) $.
+    $( A singleton index picks out an instance of an indexed intersection's
+       argument.  (Contributed by NM, 15-Jan-2012.)  (Proof shortened by Mario
+       Carneiro, 17-Nov-2016.) $)
+    iinxsng $p |- ( A e. V -> |^|_ x e. { A } B = C ) $=
+      ( vy wcel csn ciin cv wral cab df-iin wceq eleq2d ralsng abbi1dv syl5eq )
+      BEHZABIZCJGKZCHZAUALZGMDAGUACNTUDGDUCUBDHABEAKBOCDUBFPQRS $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.  $d x y D $.  $d x y E $.  $d y V $.
+    $d y W $.
+    iinxprg.1 $e |- ( x = A -> C = D ) $.
+    iinxprg.2 $e |- ( x = B -> C = E ) $.
+    $( Indexed intersection with an unordered pair index.  (Contributed by NM,
+       25-Jan-2012.) $)
+    iinxprg $p |- ( ( A e. V /\ B e. W )
+        -> |^|_ x e. { A , B } C = ( D i^i E ) ) $=
+      ( vy wcel wa cv cpr wral cab ciin wceq eleq2d ralprg abbidv df-in 3eqtr4g
+      cin df-iin ) BGLCHLMZKNZDLZABCOZPZKQUHELZUHFLZMZKQAUJDREFUEUGUKUNKUIULUMA
+      BCGHANZBSDEUHITUOCSDFUHJTUAUBAKUJDUFKEFUCUD $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y C $.  $d y V $.
+    iunxsng.1 $e |- ( x = A -> B = C ) $.
+    $( A singleton index picks out an instance of an indexed union's argument.
+       (Contributed by Mario Carneiro, 25-Jun-2016.) $)
+    iunxsng $p |- ( A e. V -> U_ x e. { A } B = C ) $=
+      ( vy wcel csn ciun cv wrex eliun wceq eleq2d rexsng syl5bb eqrdv ) BEHZGA
+      BIZCJZDGKZUAHUBCHZATLSUBDHZAUBTCMUCUDABEAKBNCDUBFOPQR $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y C $.
+    iunxsn.1 $e |- A e. _V $.
+    iunxsn.2 $e |- ( x = A -> B = C ) $.
+    $( A singleton index picks out an instance of an indexed union's argument.
+       (Contributed by NM, 26-Mar-2004.)  (Proof shortened by Mario Carneiro,
+       25-Jun-2016.) $)
+    iunxsn $p |- U_ x e. { A } B = C $=
+      ( cvv wcel csn ciun wceq iunxsng ax-mp ) BGHABICJDKEABCDGFLM $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y C $.
+    $( Separate a union in an indexed union.  (Contributed by NM,
+       27-Dec-2004.)  (Proof shortened by Mario Carneiro, 17-Nov-2016.) $)
+    iunun $p |- U_ x e. A ( B u. C ) = ( U_ x e. A B u. U_ x e. A C ) $=
+      ( vy cun ciun cv wcel wrex r19.43 elun rexbii eliun orbi12i 3bitr4i eqriv
+      wo ) EABCDFZGZABCGZABDGZFZEHZSIZABJZUDUAIZUDUBIZRZUDTIUDUCIUDCIZUDDIZRZAB
+      JUJABJZUKABJZRUFUIUJUKABKUEULABUDCDLMUGUMUHUNAUDBCNAUDBDNOPAUDBSNUDUAUBLP
+      Q $.
+
+    $( Separate a union in the index of an indexed union.  (Contributed by NM,
+       26-Mar-2004.)  (Proof shortened by Mario Carneiro, 17-Nov-2016.) $)
+    iunxun $p |- U_ x e. ( A u. B ) C = ( U_ x e. A C u. U_ x e. B C ) $=
+      ( vy cun ciun cv wcel wrex rexun eliun orbi12i bitr4i elun 3bitr4i eqriv
+      wo ) EABCFZDGZABDGZACDGZFZEHZDIZASJZUDUAIZUDUBIZRZUDTIUDUCIUFUEABJZUEACJZ
+      RUIUEABCKUGUJUHUKAUDBDLAUDCDLMNAUDSDLUDUAUBOPQ $.
+  $}
+
+  ${
+    $d x y z $.  $d x z A $.  $d z B $.  $d y z C $.
+    $( Separate an indexed union in the index of an indexed union.
+       (Contributed by Mario Carneiro, 5-Dec-2016.) $)
+    iunxiun $p |- U_ x e. U_ y e. A B C = U_ y e. A U_ x e. B C $=
+      ( vz ciun cv wcel wa wex eliun anbi1i r19.41v bitr4i exbii rexcom4 df-rex
+      wrex 3bitr4i bitri rexbii eqriv ) FABCDGZEGZBCADEGZGZFHZEIZAUDSZUHUFIZBCS
+      ZUHUEIUHUGIAHZUDIZUIJZAKZUMDIZUIJZAKZBCSZUJULUPURBCSZAKUTUOVAAUOUQBCSZUIJ
+      VAUNVBUIBUMCDLMUQUIBCNOPURBACQOUIAUDRUKUSBCUKUIADSUSAUHDELUIADRUAUBTAUHUD
+      ELBUHCUFLTUC $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( A relationship involving union and indexed intersection.  Exercise 23 of
+       [Enderton] p. 33.  (Contributed by NM, 25-Nov-2003.)  (Proof shortened
+       by Mario Carneiro, 17-Nov-2016.) $)
+    iinuni $p |- ( A u. |^| B ) = |^|_ x e. B ( A u. x ) $=
+      ( vy cv wcel cint cab cun wral ciin r19.32v elun ralbii vex elint2 orbi2i
+      wo 3bitr4ri abbii df-un df-iin 3eqtr4i ) DEZBFZUDCGZFZRZDHUDBAEZIZFZACJZD
+      HBUFIACUJKUHULDUEUDUIFZRZACJUEUMACJZRULUHUEUMACLUKUNACUDBUIMNUGUOUEAUDCDO
+      PQSTDBUFUAADCUJUBUC $.
+
+    $( A relationship involving union and indexed union.  Exercise 25 of
+       [Enderton] p. 33.  (Contributed by NM, 25-Nov-2003.)  (Proof shortened
+       by Mario Carneiro, 17-Nov-2016.) $)
+    iununi $p |- ( ( B = (/) -> A = (/) ) <->
+                ( A u. U. B ) = U_ x e. B ( A u. x ) ) $=
+      ( c0 wceq wi cuni cun cv ciun wn wne iunconst sylbir iun0 iuneq2d 3eqtr4a
+      df-ne id syl6eq ja eqcomd uneq1d uniiun uneq2i iunun 3eqtr4g unieq uneq2d
+      uni0 un0 iuneq1 0iun eqeq12d biimpcd impbii ) CDEZBDEZFZBCGZHZACBAIZHZJZE
+      ZUSBACVBJZHACBJZVFHVAVDUSBVGVFUSVGBUQURVGBEZUQKCDLVHCDRACBMNURACDJDVGBACO
+      URACBDURSZPVIQUAUBUCUTVFBACUDUEACBVBUFUGUQVEURUQVABVDDUQVABDHBUQUTDBUQUTD
+      GDCDUHUJTUIBUKTUQVDADVCJDACDVCULAVCUMTUNUOUP $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Subclass relationship for power class and union.  (Contributed by NM,
+       18-Jul-2006.) $)
+    sspwuni $p |- ( A C_ ~P B <-> U. A C_ B ) $=
+      ( vx cv cpw wcel wral wss cuni vex elpw ralbii dfss3 unissb 3bitr4i ) CDZ
+      BEZFZCAGPBHZCAGAQHAIBHRSCAPBCJKLCAQMCABNO $.
+
+    $( Two ways to express a collection of subclasses.  (Contributed by NM,
+       19-Jul-2006.) $)
+    pwssb $p |- ( A C_ ~P B <-> A. x e. A x C_ B ) $=
+      ( cpw wss cuni cv wral sspwuni unissb bitri ) BCDEBFCEAGCEABHBCIABCJK $.
+  $}
+
+  $( Relationship for power class and union.  (Contributed by NM,
+     18-Jul-2006.) $)
+  elpwuni $p |- ( B e. A -> ( A C_ ~P B <-> U. A = B ) ) $=
+    ( cpw wss cuni wcel wceq sspwuni unissel expcom eqimss impbid1 syl5bb ) ABC
+    DAEZBDZBAFZNBGZABHPOQOPQABIJNBKLM $.
+
+  ${
+    $d x y A $.
+    $( The power class of an intersection in terms of indexed intersection.
+       Exercise 24(a) of [Enderton] p. 33.  (Contributed by NM,
+       29-Nov-2003.) $)
+    iinpw $p |- ~P |^| A = |^|_ x e. A ~P x $=
+      ( vy cint cpw cv ciin wss wcel wral ssint vex elpw ralbii bitr4i wb eliin
+      cvv ax-mp 3bitr4i eqriv ) CBDZEZABAFZEZGZCFZUBHZUGUEIZABJZUGUCIUGUFIZUHUG
+      UDHZABJUJAUGBKUIULABUGUDCLZMNOUGUBUMMUGRIUKUJPUMAUGBUERQSTUA $.
+
+    $( Inclusion of an indexed union of a power class in the power class of the
+       union of its index.  Part of Exercise 24(b) of [Enderton] p. 33.
+       (Contributed by NM, 25-Nov-2003.) $)
+    iunpwss $p |- U_ x e. A ~P x C_ ~P U. A $=
+      ( vy cpw ciun cuni wss wrex wcel ssiun eliun vex elpw rexbii bitri uniiun
+      cv sseq2i 3imtr4i ssriv ) CABAQZDZEZBFZDZCQZUAGZABHZUFABUAEZGZUFUCIZUFUEI
+      ZABUAUFJUKUFUBIZABHUHAUFBUBKUMUGABUFUACLZMNOULUFUDGUJUFUDUNMUDUIUFABPROST
+      $.
+  $}
+
+  $( Relative intersection of a nonempty set.  (Contributed by Stefan O'Rear,
+     3-Apr-2015.)  (Revised by Mario Carneiro, 5-Jun-2015.) $)
+  rintn0 $p |- ( ( X C_ ~P A /\ X =/= (/) ) -> ( A i^i |^| X ) = |^| X ) $=
+    ( cpw wss c0 wne wa cint incom wceq cuni intssuni2 ssid sspwuni mpbi syl6ss
+    cin df-ss sylib syl5eq ) BACZDBEFGZABHZQUCAQZUCAUCIUBUCADUDUCJUBUCUAKZABUAL
+    UAUADUEADUAMUAANOPUCARST $.
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -30811,6 +31655,16 @@ htmldef "|^|" as
   althtmldef "|^|" as '<FONT SIZE="+1">&cap;</FONT> '; /* &xcap; */
     /*althtmldef "|^|" as '&#8898;';*/ /* &xcap; */
   latexdef "|^|" as "\bigcap";
+htmldef "U_" as
+    "<IMG SRC='_cupbar.gif' WIDTH=13 HEIGHT=19 ALT=' U_' TITLE='U_'>";
+  /* 20-Sep-2017 nm Add space after U_ in althtmldef to improve "U_ ran" */
+  althtmldef "U_" as '<U><FONT SIZE="+1">&cup;</FONT></U> '; /* &xcup; */
+  latexdef "U_" as "\underline{\bigcup}";
+htmldef "|^|_" as
+    "<IMG SRC='_capbar.gif' WIDTH=13 HEIGHT=19 ALT=' |^|_' TITLE='|^|_'>";
+  /* 20-Sep-2017 nm Add space after |^|_ in althtmldef to improve "|^|_ ran" */
+  althtmldef "|^|_" as '<U><FONT SIZE="+1">&cap;</FONT></U> '; /* &xcap; */
+  latexdef "|^|_" as "\underline{\bigcap}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
