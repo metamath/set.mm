@@ -30203,6 +30203,32 @@ $( $t
 
 /******* Web page format settings *******/
 
+/* Custom CSS for Unicode fonts */
+/* The woff font file was obtained from
+   http://fred-wang.github.io/MathFonts/XITS/xits-math.woff 28-Aug-2015 */
+htmlcss '<STYLE TYPE="text/css">\n' +
+    '<!--\n' +
+    '  .set { color: red; }\n' +
+    '  .wff { color: blue; }\n' +
+    '  .class { color: #C3C; }\n' +
+    '  .symvar { border-bottom:1px dotted;color:#C3C}\n' +
+    '  .typecode { color: gray }\n' +
+    '  .hidden { color: gray }\n' +
+    '  @font-face {\n' +
+    '    font-family: XITSMath-Regular;\n' +
+    '    src: url(xits-math.woff);\n' +
+    '  }\n' +
+    '  .math { font-family: XITSMath-Regular }\n' +
+    '-->\n' +
+    '</STYLE>\n' +
+    '<LINK href="mmset.css" title="mmset"\n' +
+    '    rel="stylesheet" type="text/css">\n' +
+    '<LINK href="mmsetalt.css" title="mmsetalt"\n' +
+    '    rel="alternate stylesheet" type="text/css">';
+
+/* Tag(s) for the main SPAN surrounding all Unicode math */
+htmlfont 'CLASS=math';
+
 /* Page title, home page link */
 htmltitle "Intuitionistic Logic Explorer";
 htmlhome '<A HREF="mmil.html"><FONT SIZE=-2 FACE=sans-serif>' +
