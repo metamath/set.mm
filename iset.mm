@@ -30281,17 +30281,17 @@ $)
   ${
     $d x y A $.  $d x y B $.
     $( Indexed union of a constant class, i.e. where ` B ` does not depend on
-       ` x ` .  (Contributed by NM, 5-Sep-2004.)  (Proof shortened by Andrew
-       Salmon, 25-Jul-2011.) $)
-    iunconst $p |- ( A =/= (/) -> U_ x e. A B = B ) $=
-      ( vy c0 wne ciun cv wcel wrex r19.9rzv eliun syl6rbbr eqrdv ) BEFZDABCGZC
-      ODHZCIZRABJQPIRABKAQBCLMN $.
+       ` x ` .  (Contributed by Jim Kingdon, 15-Aug-2018.) $)
+    iunconstm $p |- ( E. x x e. A -> U_ x e. A B = B ) $=
+      ( vy cv wcel wex ciun wrex r19.9rmv eliun syl6rbbr eqrdv ) AEBFAG
+      ZDABCHZCNDEZCFZQABIPOFQABJAPBCKLM $.
 
     $( Indexed intersection of a constant class, i.e. where ` B ` does not
        depend on ` x ` .  (Contributed by Mario Carneiro, 6-Feb-2015.) $)
-    iinconst $p |- ( A =/= (/) -> |^|_ x e. A B = B ) $=
-      ( vy c0 wne ciin cv wcel wral r19.3rzv cvv vex eliin ax-mp syl6rbbr eqrdv
-      wb ) BEFZDABCGZCSDHZCIZUBABJZUATIZUBABKUALIUDUCRDMAUABCLNOPQ $.
+    iinconstm $p |- ( E. x x e. A -> |^|_ x e. A B = B ) $=
+      ( vy cv wcel wex ciin wral r19.3rmv cvv wb eliin ax-mp syl6rbbr
+      vex eqrdv ) AEBFAGZDABCHZCRDEZCFZUAABIZTSFZUAABJTKFUCUBLDPATBCK
+      MNOQ $.
   $}
 
   ${
