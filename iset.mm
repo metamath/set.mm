@@ -30230,9 +30230,8 @@ $)
        that can be thought of as ` B ( x ) ` i.e. can be substituted with a
        class expression containing ` x ` ).  An alternate definition tying
        indexed union to ordinary union is ~ dfiun2 .  Theorem ~ uniiun provides
-       a definition of ordinary union in terms of indexed union.  Theorems
-       ~ fniunfv and ~ funiunfv are useful when ` B ` is a function.
-       (Contributed by NM, 27-Jun-1998.) $)
+       a definition of ordinary union in terms of indexed union.  (Contributed
+       by NM, 27-Jun-1998.) $)
     df-iun $a |- U_ x e. A B = { y | E. x e. A y e. B } $.
 
     $( Define indexed intersection.  Definition of [Stoll] p. 45.  See the
@@ -30714,10 +30713,8 @@ $)
       ( vy c0 ciin cv wcel wral cab cvv df-iin vex ral0 2th abbi2i eqtr4i ) ADB
       ECFZBGZADHZCIJACDBKSCJQJGSCLRAMNOP $.
 
-    $( Indexed intersection with a universal index class.  When ` A ` doesn't
-       depend on ` x ` , this evaluates to ` A ` by ~ 19.3 and ~ abid2 .  When
-       ` A = x ` , this evaluates to ` (/) ` by ~ intiin and ~ intv .
-       (Contributed by NM, 11-Sep-2008.) $)
+    $( Indexed intersection with a universal index class.  (Contributed by NM,
+       11-Sep-2008.) $)
     viin $p |- |^|_ x e. _V A = { y | A. x y e. A } $=
       ( cvv ciin cv wcel wral cab wal df-iin ralv abbii eqtri ) ADCEBFCGZADHZBI
       OAJZBIABDCKPQBOALMN $.
