@@ -30626,7 +30626,7 @@ $)
     $( The indexed union of a class abstraction.  (Contributed by NM,
        27-Dec-2004.) $)
     iunab $p |- U_ x e. A { y | ph } = { y | E. x e. A ph } $=
-      ( cab ciun wrex wceq cv wcel wb nfcv nfab1 nfiun cleqf abid eliun 3bitr4i
+      ( cab ciun wrex wceq cv wcel wb nfcv nfab1 nfiunxy cleqf abid eliun 3bitr4i
       rexbii mpgbir ) BDACEZFZABDGZCEZHCIZUBJZUEUDJZKCCUBUDBCDUACDLACMNUCCMOUEU
       AJZBDGUCUFUGUHABDACPSBUEDUAQUCCPRT $.
 
