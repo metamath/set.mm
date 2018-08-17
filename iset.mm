@@ -18553,6 +18553,23 @@ $)
     ( wn wral cv wcel wi wal wrex df-ral wa wex alinexa df-rex xchbinxr bitri )
     ADZBCEBFCGZRHBIZABCJZDRBCKTSALBMUASABNABCOPQ $.
 
+  $( Relationship between restricted universal and existential quantifiers.  In
+     classical logic this would be a biconditional.  (Contributed by Jim
+     Kingdon, 17-Aug-2018.) $)
+  rexnalim $p |- ( E. x e. A -. ph -> -. A. x e. A ph ) $=
+    ( wn wrex cv wcel wa wex wral df-rex wal exanaliim df-ral sylnibr
+    wi sylbi ) ADZBCEBFCGZRHBIZABCJZDRBCKTSAPBLUASABMABCNOQ $.
+
+  $( Relationship between restricted universal and existential quantifiers.
+     (Contributed by Jim Kingdon, 17-Aug-2018.) $)
+  ralexim $p |- ( A. x e. A ph -> -. E. x e. A -. ph ) $=
+    ( wn wrex wral rexnalim con2i ) ADBCEABCFABCGH $.
+
+  $( Relationship between restricted universal and existential quantifiers.
+     (Contributed by Jim Kingdon, 17-Aug-2018.) $)
+  rexalim $p |- ( E. x e. A ph -> -. A. x e. A -. ph ) $=
+    ( wn wral wrex ralnex biimpi con2i ) ADBCEZABCFZJKDABCGHI $.
+
   ${
     ralbida.1 $e |- F/ x ph $.
     ralbida.2 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
