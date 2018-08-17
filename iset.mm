@@ -30765,17 +30765,6 @@ $)
       cv wa a1i iinab eqtri 3eqtr4g ) BQDFZBGZCQEFZARZBDHZCIZUEABDHZRZC
       IBDACEJZKZUICEJUDUGUJCUEABDLMULBDUFCIZKUHBDUKUMUKUMNUCACEOSPUFBCD
       TUAUICEOUB $.
-
-    $d y B $.
-    $( Indexed intersection of a restricted class builder.  (Contributed by NM,
-       6-Dec-2011.) $)
-    iinrab2 $p |- ( |^|_ x e. A { y e. B | ph } i^i B )
-                      = { y e. B | A. x e. A ph } $=
-      ( crab ciin cin wral wceq c0 cvv iineq1 0iin syl6eq incom inv1 eqtri rzal
-      ineq1d rabid2 ralcom bitr2i sylib wne iinrab wss ssrab2 dfss mpbi syl6eqr
-      eqtrd pm2.61ine ) BDACEFZGZEHZABDIZCEFZJDKDKJZUPEURUSUPLEHZEUSUOLEUSUOBKU
-      NGLBDKUNMBUNNOTUTELHELEPEQROUSACEIZBDIZEURJZVABDSVCUQCEIVBUQCEUAACBEDUBUC
-      UDULDKUEZUPUREHZURVDUOUREABCDEUFTUREUGURVEJUQCEUHUREUIUJUKUM $.
   $}
 
   ${
