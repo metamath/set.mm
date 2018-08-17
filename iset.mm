@@ -30426,19 +30426,36 @@ $)
   $}
 
   ${
-    $d z A $.  $d z B $.  $d x z $.  $d y z $.
-    nfiun.1 $e |- F/_ y A $.
-    nfiun.2 $e |- F/_ y B $.
+    $d x y $.  $d z A $.  $d z B $.  $d x z $.  $d y z $.
+    nfiunxy.1 $e |- F/_ y A $.
+    nfiunxy.2 $e |- F/_ y B $.
     $( Bound-variable hypothesis builder for indexed union.  (Contributed by
        Mario Carneiro, 25-Jan-2014.) $)
-    nfiun $p |- F/_ y U_ x e. A B $=
-      ( vz ciun cv wcel wrex cab df-iun nfcri nfrex nfab nfcxfr ) BACDHGIDJZACK
+    nfiunxy $p |- F/_ y U_ x e. A B $=
+      ( vz ciun cv wcel wrex cab df-iun nfcri nfrexxy nfab nfcxfr ) BACDHGIDJZACK
       ZGLAGCDMSBGRBACEBGDFNOPQ $.
 
     $( Bound-variable hypothesis builder for indexed intersection.
        (Contributed by Mario Carneiro, 25-Jan-2014.) $)
-    nfiin $p |- F/_ y |^|_ x e. A B $=
-      ( vz ciin cv wcel wral cab df-iin nfcri nfral nfab nfcxfr ) BACDHGIDJZACK
+    nfiinxy $p |- F/_ y |^|_ x e. A B $=
+      ( vz ciin cv wcel wral cab df-iin nfcri nfralxy nfab nfcxfr ) BACDHGIDJZACK
+      ZGLAGCDMSBGRBACEBGDFNOPQ $.
+  $}
+
+  ${
+    $d x A $.  $d z A $.  $d z B $.  $d x z $.  $d y z $.
+    nfiunya.1 $e |- F/_ y A $.
+    nfiunya.2 $e |- F/_ y B $.
+    $( Bound-variable hypothesis builder for indexed union.  (Contributed by
+       Mario Carneiro, 25-Jan-2014.) $)
+    nfiunya $p |- F/_ y U_ x e. A B $=
+      ( vz ciun cv wcel wrex cab df-iun nfcri nfrexya nfab nfcxfr ) BACDHGIDJZACK
+      ZGLAGCDMSBGRBACEBGDFNOPQ $.
+
+    $( Bound-variable hypothesis builder for indexed intersection.
+       (Contributed by Mario Carneiro, 25-Jan-2014.) $)
+    nfiinya $p |- F/_ y |^|_ x e. A B $=
+      ( vz ciin cv wcel wral cab df-iin nfcri nfralya nfab nfcxfr ) BACDHGIDJZACK
       ZGLAGCDMSBGRBACEBGDFNOPQ $.
   $}
 
