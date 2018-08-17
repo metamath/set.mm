@@ -30801,15 +30801,15 @@ $)
       ( cin ciun iunin2 wceq cv wcel incom a1i iuneq2i 3eqtr4i ) ABCDEZFCABDFZE
       ABDCEZFPCEABCDGABQOQOHAIBJDCKLMPCKN $.
 
-    $( Indexed union of class difference.  Generalization of half of theorem
-       "De Morgan's laws" in [Enderton] p. 31.  Use ~ intiin to recover
-       Enderton's theorem.  (Contributed by NM, 19-Aug-2004.) $)
-    iundif2 $p |- U_ x e. A ( B \ C ) = ( B \ |^|_ x e. A C ) $=
-      ( vy cdif ciun ciin cv wcel wrex wn wa eldif rexbii r19.42v rexnal cvv wb
-      wral vex eliin ax-mp xchbinxr anbi2i 3bitri eliun 3bitr4i eqriv ) EABCDFZ
-      GZCABDHZFZEIZUJJZABKZUNCJZUNULJZLZMZUNUKJUNUMJUPUQUNDJZLZMZABKUQVBABKZMUT
-      UOVCABUNCDNOUQVBABPVDUSUQVDVAABTZURVAABQUNRJURVESEUAAUNBDRUBUCUDUEUFAUNBU
-      JUGUNCULNUHUI $.
+    $( Indexed union of class difference.  Compare to theorem "De Morgan's
+       laws" in [Enderton] p. 31.  (Contributed by Jim Kingdon,
+       17-Aug-2018.) $)
+    iundif2ss $p |- U_ x e. A ( B \ C ) C_ ( B \ |^|_ x e. A C ) $=
+      ( vy cdif ciun ciin cv wcel wrex wn wa eldif rexbii r19.42v bitri
+      wral rexnalim cvv wb vex eliin ax-mp sylnibr anim2i sylbi 3imtr4i
+      eliun ssriv ) EABCDFZGZCABDHZFZEIZUKJZABKZUOCJZUOUMJZLZMZUOULJUOU
+      NJUQURUODJZLZABKZMZVAUQURVCMZABKVEUPVFABUOCDNOURVCABPQVDUTURVDVBA
+      BRZUSVBABSUOTJUSVGUAEUBAUOBDTUCUDUEUFUGAUOBUKUIUOCUMNUHUJ $.
   $}
 
   ${
