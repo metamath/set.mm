@@ -30752,7 +30752,7 @@ $)
     $( Indexed intersection of a class builder.  (Contributed by NM,
        6-Dec-2011.) $)
     iinab $p |- |^|_ x e. A { y | ph } = { y | A. x e. A ph } $=
-      ( cab ciin wral wceq cv wcel nfcv nfab1 nfiin cleqf abid ralbii cvv eliin
+      ( cab ciin wral wceq cv wcel nfcv nfab1 nfiinxy cleqf abid ralbii cvv eliin
       wb vex ax-mp 3bitr4i mpgbir ) BDACEZFZABDGZCEZHCIZUEJZUHUGJZSCCUEUGBCDUDC
       DKACLMUFCLNUHUDJZBDGZUFUIUJUKABDACOPUHQJUIULSCTBUHDUDQRUAUFCOUBUC $.
 
