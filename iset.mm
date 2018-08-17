@@ -30739,13 +30739,12 @@ $)
 
   ${
     $d x y A $.  $d y B $.
-    $( There is a non-empty class in an indexed collection ` B ( x ) ` iff the
-       indexed union of them is non-empty.  (Contributed by NM, 15-Oct-2003.)
-       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
-    iunn0 $p |- ( E. x e. A B =/= (/) <-> U_ x e. A B =/= (/) ) $=
-      ( vy cv wcel wex wrex c0 wne rexcom4 eliun exbii bitr4i n0 rexbii 3bitr4i
-      ciun ) DEZCFZDGZABHZSABCRZFZDGZCIJZABHUCIJUBTABHZDGUETADBKUDUGDASBCLMNUFU
-      AABDCOPDUCOQ $.
+    $( There is an inhabited class in an indexed collection ` B ( x ) ` iff the
+       indexed union of them is inhabited.  (Contributed by Jim Kingdon,
+       16-Aug-2018.) $)
+    iunn0m $p |- ( E. x e. A E. y y e. B <-> E. y y e. U_ x e. A B ) $=
+      ( cv wcel wex wrex ciun rexcom4 eliun exbii bitr4i ) BEZDFZBGAC
+      HOACHZBGNACDIFZBGOABCJQPBANCDKLM $.
   $}
 
   ${
