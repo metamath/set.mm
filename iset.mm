@@ -30757,13 +30757,14 @@ $)
       DKACLMUFCLNUHUDJZBDGZUFUIUJUKABDACOPUHQJUIULSCTBUHDUDQRUAUFCOUBUC $.
 
     $d x A $.  $d x B $.
-    $( Indexed intersection of a restricted class builder.  (Contributed by NM,
-       6-Dec-2011.) $)
-    iinrab $p |- ( A =/= (/)
+    $( Indexed intersection of a restricted class builder.  (Contributed by Jim
+       Kingdon, 16-Aug-2018.) $)
+    iinrabm $p |- ( E. x x e. A
           -> |^|_ x e. A { y e. B | ph } = { y e. B | A. x e. A ph } ) $=
-      ( c0 wne cv wcel wa wral cab crab ciin r19.28zv abbidv df-rab a1i iineq2i
-      wceq iinab eqtri 3eqtr4g ) DFGZCHEIZAJZBDKZCLZUEABDKZJZCLBDACEMZNZUICEMUD
-      UGUJCUEABDOPULBDUFCLZNUHBDUKUMUKUMTBHDIACEQRSUFBCDUAUBUICEQUC $.
+      ( wcel wex wral cab crab ciin r19.28mv abbidv wceq df-rab iineq2i
+      cv wa a1i iinab eqtri 3eqtr4g ) BQDFZBGZCQEFZARZBDHZCIZUEABDHZRZC
+      IBDACEJZKZUICEJUDUGUJCUEABDLMULBDUFCIZKUHBDUKUMUKUMNUCACEOSPUFBCD
+      TUAUICEOUB $.
 
     $d y B $.
     $( Indexed intersection of a restricted class builder.  (Contributed by NM,
