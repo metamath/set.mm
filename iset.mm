@@ -30824,34 +30824,36 @@ $)
 
   ${
     $d x y A $.  $d x y B $.  $d y C $.
-    $( Indexed intersection of class difference.  Generalization of half of
-       theorem "De Morgan's laws" in [Enderton] p. 31.  Use ~ uniiun to recover
-       Enderton's theorem.  (Contributed by NM, 5-Oct-2006.) $)
-    iindif2 $p |- ( A =/= (/) ->
+    $( Indexed intersection of class difference.  Compare to Theorem "De
+       Morgan's laws" in [Enderton] p. 31.  (Contributed by Jim Kingdon,
+       17-Aug-2018.) $)
+    iindif2m $p |- ( E. x x e. A ->
                  |^|_ x e. A ( B \ C ) = ( B \ U_ x e. A C ) ) $=
-      ( vy c0 wne cdif ciin ciun cv wcel wn wa r19.28zv eldif bicomi ralbii cvv
-      wral wrex ralnex eliun xchbinxr anbi2i 3bitr3g wb vex eliin ax-mp 3bitr4g
-      eqrdv ) BFGZEABCDHZIZCABDJZHZUMEKZUNLZABTZURCLZURUPLZMZNZURUOLZURUQLUMVAU
-      RDLZMZNZABTVAVGABTZNUTVDVAVGABOVHUSABUSVHURCDPQRVIVCVAVIVFABUAVBVFABUBAUR
-      BDUCUDUEUFURSLVEUTUGEUHAURBUNSUIUJURCUPPUKUL $.
+      ( vy cv wcel wex cdif ciin ciun wral wn wa r19.28mv bicomi ralbii
+      eldif wrex cvv ralnex eliun xchbinxr anbi2i 3bitr3g eliin 3bitr4g
+      wb vex ax-mp eqrdv ) AFBGAHZEABCDIZJZCABDKZIZULEFZUMGZABLZUQCGZUQ
+      UOGZMZNZUQUNGZUQUPGULUTUQDGZMZNZABLUTVFABLZNUSVCUTVFABOVGURABURVG
+      UQCDRPQVHVBUTVHVEABSVAVEABUAAUQBDUBUCUDUEUQTGVDUSUHEUIAUQBUMTUFUJ
+      UQCUORUGUK $.
 
-    $( Indexed intersection of intersection.  Generalization of half of theorem
-       "Distributive laws" in [Enderton] p. 30.  Use ~ intiin to recover
-       Enderton's theorem.  (Contributed by Mario Carneiro, 19-Mar-2015.) $)
-    iinin2 $p |- ( A =/= (/) ->
+    $( Indexed intersection of intersection.  Compare to Theorem "Distributive
+       laws" in [Enderton] p. 30.  (Contributed by Jim Kingdon,
+       17-Aug-2018.) $)
+    iinin2m $p |- ( E. x x e. A ->
       |^|_ x e. A ( B i^i C ) = ( B i^i |^|_ x e. A C ) ) $=
-      ( vy c0 wne cin ciin cv wcel wral wa r19.28zv elin wb eliin ax-mp 3bitr4g
-      cvv ralbii vex anbi2i eqrdv ) BFGZEABCDHZIZCABDIZHZUEEJZUFKZABLZUJCKZUJUH
-      KZMZUJUGKZUJUIKUEUMUJDKZMZABLUMUQABLZMULUOUMUQABNUKURABUJCDOUAUNUSUMUJTKZ
-      UNUSPEUBZAUJBDTQRUCSUTUPULPVAAUJBUFTQRUJCUHOSUD $.
+      ( vy cv wcel wex cin ciin wral wa r19.28mv ralbii cvv eliin ax-mp
+      elin wb 3bitr4g vex anbi2i eqrdv ) AFBGAHZEABCDIZJZCABDJZIZUDEFZU
+      EGZABKZUICGZUIUGGZLZUIUFGZUIUHGUDULUIDGZLZABKULUPABKZLUKUNULUPABM
+      UJUQABUICDRNUMURULUIOGZUMURSEUAZAUIBDOPQUBTUSUOUKSUTAUIBUEOPQUICU
+      GRTUC $.
 
-    $( Indexed intersection of intersection.  Generalization of half of theorem
-       "Distributive laws" in [Enderton] p. 30.  Use ~ intiin to recover
-       Enderton's theorem.  (Contributed by Mario Carneiro, 19-Mar-2015.) $)
-    iinin1 $p |- ( A =/= (/) ->
+    $( Indexed intersection of intersection.  Compare to Theorem "Distributive
+       laws" in [Enderton] p. 30.  (Contributed by Jim Kingdon,
+       17-Aug-2018.) $)
+    iinin1m $p |- ( E. x x e. A ->
       |^|_ x e. A ( C i^i B ) = ( |^|_ x e. A C i^i B ) ) $=
-      ( c0 wne cin ciin iinin2 wceq cv wcel incom a1i iineq2i 3eqtr4g ) BEFABCD
-      GZHCABDHZGABDCGZHRCGABCDIABSQSQJAKBLDCMNORCMP $.
+      ( cv wcel wex cin ciin iinin2m wceq incom a1i iineq2i 3eqtr4g ) A
+      EBFZAGABCDHZICABDIZHABDCHZIRCHABCDJABSQSQKPDCLMNRCLO $.
   $}
 
   ${
