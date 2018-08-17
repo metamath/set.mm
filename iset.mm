@@ -30784,15 +30784,6 @@ $)
       ( cin ciun iunin2 wceq cv wcel incom a1i iuneq2i 3eqtr4i ) ABCDEZFCABDFZE
       ABDCEZFPCEABCDGABQOQOHAIBJDCKLMPCKN $.
 
-    $( Indexed intersection of union.  Generalization of half of theorem
-       "Distributive laws" in [Enderton] p. 30.  Use ~ intiin to recover
-       Enderton's theorem.  (Contributed by NM, 19-Aug-2004.) $)
-    iinun2 $p |- |^|_ x e. A ( B u. C ) = ( B u. |^|_ x e. A C ) $=
-      ( vy cun ciin cv wcel wral wo r19.32v elun ralbii cvv eliin ax-mp 3bitr4i
-      wb vex orbi2i eqriv ) EABCDFZGZCABDGZFZEHZUCIZABJZUGCIZUGUEIZKZUGUDIZUGUF
-      IUJUGDIZKZABJUJUNABJZKUIULUJUNABLUHUOABUGCDMNUKUPUJUGOIZUKUPSETZAUGBDOPQU
-      ARUQUMUISURAUGBUCOPQUGCUEMRUB $.
-
     $( Indexed union of class difference.  Generalization of half of theorem
        "De Morgan's laws" in [Enderton] p. 31.  Use ~ intiin to recover
        Enderton's theorem.  (Contributed by NM, 19-Aug-2004.) $)
