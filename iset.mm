@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Aug-2018
+$( iset.mm - Version of 17-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -10451,9 +10451,8 @@ $)
      the assertion that particular kinds of statements are decidable (or in
      this case, an assertion similar to decidability).
 
-     This axiom is similar to ~ ax-i12 , but appears to be stronger.  At least
-     for now, we keep them both as distinct axioms, but they serve similar
-     purposes.
+     This axiom implies ~ ax-i12 as can be seen at ~ axi12 .  Whether ax-bnd
+     can be proved from the remaining axioms including ~ ax-i12 is not known.
 
      The reason we call this "bundling" is that a statement without a distinct
      variable constraint "bundles" together two statements, one in which the
@@ -10534,6 +10533,15 @@ $)
   hbequid $p |- ( x = x -> A. y x = x ) $=
     ( cv wceq wal wi wo ax12or ax-8 pm2.43i alimi a1d ax-4 jaoi ax-mp ) BCACZDZ
     BEZRPPDZSBEZFZBEZGZGUAAABHRUAUCRTSQSBQSBAAIJKLZRUAUBUDUABMNNO $.
+
+  $( Proof that ~ ax-i12 follows from ~ ax-bnd .  So that we can track which
+     theorems rely on ~ ax-bnd , proofs should reference ~ ax-i12 rather than
+     this theorem.  (Contributed by Jim Kingdon, 17-Aug-2018.)  (New usage is
+     discouraged).  (Proof modification is discouraged.) $)
+  axi12 $p |- ( A. z z = x \/ ( A. z z = y \/
+                 A. z ( x = y -> A. z x = y ) ) ) $=
+    ( cv wceq wal wi wo ax-bnd sp orim2i ax-mp ) CDZADZECFZMBDZECFZNP
+    EZRCFGCFZAFZHZHOQSHZHABCIUAUBOTSQSAJKKL $.
 
   $( Commutation law for identical variable specifiers.  The antecedent and
      consequent are true when ` x ` and ` y ` are substituted with the same
@@ -30912,8 +30920,8 @@ $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
-  $( Heyting's formal system Axiom #1 from [Heyting] p. 127.
-     (Contributed by MM, 11-Aug-2018.) $)
+  $( Heyting's formal system Axiom #1 from [Heyting] p. 127.  (Contributed by
+     MM, 11-Aug-2018.) $)
   ax1hfs $p |- ( ph -> ( ph /\ ph ) ) $=
     ( wa ax-ia3 pm2.43i ) AAABAACD $.
 
