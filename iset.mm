@@ -31166,16 +31166,15 @@ $)
   $}
 
   ${
-    $d z A $.  $d z B $.  $d x z $.  $d y z $.
-    nfdisj.1 $e |- F/_ y A $.
-    nfdisj.2 $e |- F/_ y B $.
+    $d z A $.  $d z B $.  $d x y z $.
+    nfdisjv.1 $e |- F/_ y A $.
+    nfdisjv.2 $e |- F/_ y B $.
     $( Bound-variable hypothesis builder for disjoint collection.  (Contributed
-       by Mario Carneiro, 14-Nov-2016.) $)
-    nfdisj $p |- F/ y Disj_ x e. A B $=
-      ( vz wdisj cv wcel wa wmo wal dfdisj2 wnf wtru nftru weq wn a1i wnfc trud
-      nfcvf nfeld nfcri nfand adantl nfmod2 nfal nfxfr ) ACDHAIZCJZGIDJZKZALZGM
-      BAGCDNUOBGUOBOPUNBAAQBARBMSZUNBOPUPULUMBUPBUKCBAUCBCUAUPETUDUMBOUPBGDFUET
-      UFUGUHUBUIUJ $.
+       by Jim Kingdon, 19-Aug-2018.) $)
+    nfdisjv $p |- F/ y Disj_ x e. A B $=
+      ( vz wdisj cv wcel wa wmo wal dfdisj2 nfcv nfel nfcri nfan nfmo
+      nfal nfxfr ) ACDHAIZCJZGIDJZKZALZGMBAGCDNUFBGUEBAUCUDBBUBCBUBOE
+      PBGDFQRSTUA $.
   $}
 
   ${
