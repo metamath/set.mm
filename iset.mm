@@ -30878,15 +30878,6 @@ $)
       ( wss wral cv wcel wex wa ciin cin incom wceq r19.2m ancoms iinss
       wrex syl df-ss sylib syl5eq ) CBEZADFZAGDHAIZJZBADCKZLUGBLZUGBUGM
       UFUGBEZUHUGNUFUCADRZUIUEUDUJUCADOPADCBQSUGBTUAUB $.
-
-    $( Relative intersection of a relative abstraction.  (Contributed by Stefan
-       O'Rear, 3-Apr-2015.) $)
-    riinrab $p |- ( A i^i |^|_ x e. X { y e. A | ph } ) =
-        { y e. A | A. x e. X ph } $=
-      ( crab ciin cin wral wceq c0 riin0 rzal ralrimivw rabid2 sylibr eqtrd wne
-      wss ssrab2 rgenw riinn0 mpan iinrab pm2.61ine ) DBEACDFZGZHZABEIZCDFZJEKE
-      KJZUHDUJBDUFELUKUICDIDUJJUKUICDABEMNUICDOPQEKRZUHUGUJUFDSZBEIULUHUGJUMBEA
-      CDTUABDUFEUBUCABCEDUDQUE $.
   $}
 
   ${
