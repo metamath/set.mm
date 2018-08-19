@@ -19743,7 +19743,24 @@ $)
   $}
 
   ${
+    r19.32r.1 $e |- F/ x ph $.
+    $( One direction of Theorem 19.32 of [Margaris] p. 90 with restricted
+       quantifiers.  For decidable propositions this is an equivalence.
+       (Contributed by Jim Kingdon, 19-Aug-2018.) $)
+    r19.32r $p |- ( ( ph \/ A. x e. A ps ) -> A. x e. A ( ph \/ ps ) ) $=
+      ( wral wo cv wcel wi wal orc a1d alrimi df-ral imim2i
+      olc alimi sylbi jaoi sylibr ) ABCDFZGCHDIZABGZJZCKZUDCDFAUFUBAUEC
+      EAUDUCABLMNUBUCBJZCKUFBCDOUGUECBUDUCBAQPRSTUDCDOUA $.
+  $}
+
+  ${
     $d x ph $.
+    $( One direction of Theorem 19.32 of [Margaris] p. 90 with restricted
+       quantifiers.  For decidable propositions this is an equivalence, as seen
+       at ~ r19.32vdc .  (Contributed by Jim Kingdon, 19-Aug-2018.) $)
+    r19.32vr $p |- ( ( ph \/ A. x e. A ps ) -> A. x e. A ( ph \/ ps ) ) $=
+      ( nfv r19.32r ) ABCDACEF $.
+
     $( Theorem 19.32 of [Margaris] p. 90 with restricted quantifiers, where
        ` ph ` is decidable.  (Contributed by Jim Kingdon, 4-Jun-2018.) $)
     r19.32vdc $p |- ( DECID ph ->
