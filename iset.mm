@@ -30857,16 +30857,6 @@ $)
   $}
 
   ${
-    $d x A $.
-    $( The indexed intersection of a complement.  (Contributed by G&eacute;rard
-       Lang, 5-Aug-2018.) $)
-    iinvdif $p |- |^|_ x e. A ( _V \ B ) = ( _V \ U_ x e. A B ) $=
-      ( cvv cdif ciin ciun wceq c0 dif0 0iun difeq2i 0iin iineq1 iuneq1 difeq2d
-      3eqtr4ri 3eqtr4a iindif2 pm2.61ine ) ABDCEZFZDABCGZEZHBIBIHZAIUAFZDAICGZE
-      ZUBUDDIEDUHUFDJUGIDACKLAUAMQABIUANUEUCUGDABICOPRABDCST $.
-  $}
-
-  ${
     $d A x y $.  $d X x y $.  $d B x $.
     $( Elementhood in a relative intersection.  (Contributed by Mario Carneiro,
        30-Dec-2016.) $)
