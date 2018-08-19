@@ -15040,6 +15040,12 @@ $)
     nfeud $p |- ( ph -> F/ x E! y ps ) $=
       ( vz weu wsb nfv sb8eu nfsbd nfeudv nfxfrd ) BDHBDGIZGHACBDGBGJKAOCGAGJAB
       DGCEFLMN $.
+
+    $( Bound-variable hypothesis builder for "at most one."  (Contributed by
+       Mario Carneiro, 14-Nov-2016.) $)
+    nfmod $p |- ( ph -> F/ x E* y ps ) $=
+      ( wmo wex weu wi df-mo nfexd nfeud nfimd nfxfrd ) BDGBDHZBDIZJA
+      CBDKAPQCABCDEFLABCDEFMNO $.
   $}
 
   ${
@@ -15063,6 +15069,11 @@ $)
     nfeu $p |- F/ x E! y ph $=
       ( vz weu wsb nfv sb8eu nfsb nfeuv nfxfr ) ACFACEGZEFBACEAEHIMBEACEBDJKL
       $.
+
+    $( Bound-variable hypothesis builder for "at most one."  (Contributed by
+       NM, 9-Mar-1995.) $)
+    nfmo $p |- F/ x E* y ph $=
+      ( wmo wnf wtru nftru a1i nfmod trud ) ACEBFGABCCHABFGDIJK $.
   $}
 
   ${
