@@ -31045,6 +31045,383 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                     Disjointness
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Disj_ $.
+
+  $( Extend wff notation to include the statement that a family of classes
+     ` B ( x ) ` , for ` x e. A ` , is a disjoint family. $)
+  wdisj $a wff Disj_ x e. A B $.
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( A collection of classes ` B ( x ) ` is disjoint when for each element
+       ` y ` , it is in ` B ( x ) ` for at most one ` x ` .  (Contributed by
+       Mario Carneiro, 14-Nov-2016.)  (Revised by NM, 16-Jun-2017.) $)
+    df-disj $a |- ( Disj_ x e. A B <-> A. y E* x e. A y e. B ) $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( Alternate definition for disjoint classes.  (Contributed by NM,
+       17-Jun-2017.) $)
+    dfdisj2 $p |- ( Disj_ x e. A B <-> A. y E* x ( x e. A /\ y e. B ) ) $=
+      ( wdisj cv wcel wrmo wal wa wmo df-disj df-rmo albii bitri ) ACDEBFDGZACH
+      ZBIAFCGPJAKZBIABCDLQRBPACMNO $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y C $.
+    $( If each element of a collection is contained in a disjoint collection,
+       the original collection is also disjoint.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    disjss2 $p |- ( A. x e. A B C_ C ->
+      ( Disj_ x e. A C -> Disj_ x e. A B ) ) $=
+      ( vy wss wral cv wcel wrmo wal wdisj ssel ralimi rmoim syl alimdv df-disj
+      wi 3imtr4g ) CDFZABGZEHZDIZABJZEKUCCIZABJZEKABDLABCLUBUEUGEUBUFUDSZABGUEU
+      GSUAUHABCDUCMNUFUDABOPQAEBDRAEBCRT $.
+  $}
+
+  $( Equality theorem for disjoint collection.  (Contributed by Mario Carneiro,
+     14-Nov-2016.) $)
+  disjeq2 $p |- ( A. x e. A B = C ->
+    ( Disj_ x e. A B <-> Disj_ x e. A C ) ) $=
+    ( wceq wral wdisj wss wi eqimss2 ralimi disjss2 syl eqimss impbid ) CDEZABF
+    ZABCGZABDGZQDCHZABFRSIPTABDCJKABDCLMQCDHZABFSRIPUAABCDNKABCDLMO $.
+
+  ${
+    $d x ph $.
+    disjeq2dv.1 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
+    $( Equality deduction for disjoint collection.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    disjeq2dv $p |- ( ph -> ( Disj_ x e. A B <-> Disj_ x e. A C ) ) $=
+      ( wceq wral wdisj wb ralrimiva disjeq2 syl ) ADEGZBCHBCDIBCEIJANBCFKBCDEL
+      M $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.
+    $( A subset of a disjoint collection is disjoint.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    disjss1 $p |- ( A C_ B -> ( Disj_ x e. B C -> Disj_ x e. A C ) ) $=
+      ( vy wss cv wcel wa wmo wal wdisj wi ssel anim1d alrimiv moim syl dfdisj2
+      alimdv 3imtr4g ) BCFZAGZCHZEGDHZIZAJZEKUCBHZUEIZAJZEKACDLABDLUBUGUJEUBUIU
+      FMZAKUGUJMUBUKAUBUHUDUEBCUCNOPUIUFAQRTAECDSAEBDSUA $.
+
+    $( Equality theorem for disjoint collection.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    disjeq1 $p |- ( A = B -> ( Disj_ x e. A C <-> Disj_ x e. B C ) ) $=
+      ( wceq wdisj wss wi eqimss2 disjss1 syl eqimss impbid ) BCEZABDFZACDFZNCB
+      GOPHCBIACBDJKNBCGPOHBCLABCDJKM $.
+
+    disjeq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality theorem for disjoint collection.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    disjeq1d $p |- ( ph -> ( Disj_ x e. A C <-> Disj_ x e. B C ) ) $=
+      ( wceq wdisj wb disjeq1 syl ) ACDGBCEHBDEHIFBCDEJK $.
+
+    $d x ph $.
+    disjeq12d.1 $e |- ( ph -> C = D ) $.
+    $( Equality theorem for disjoint collection.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    disjeq12d $p |- ( ph -> ( Disj_ x e. A C <-> Disj_ x e. B D ) ) $=
+      ( wdisj disjeq1d wceq cv wcel adantr disjeq2dv bitrd ) ABCEIBDEIBDFIABCDE
+      GJABDEFAEFKBLDMHNOP $.
+  $}
+
+  ${
+    $d x y z A $.  $d z B $.  $d z C $.
+    cbvdisj.1 $e |- F/_ y B $.
+    cbvdisj.2 $e |- F/_ x C $.
+    cbvdisj.3 $e |- ( x = y -> B = C ) $.
+    $( Change bound variables in a disjoint collection.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    cbvdisj $p |- ( Disj_ x e. A B <-> Disj_ y e. A C ) $=
+      ( vz cv wcel wrmo wal wdisj nfcri weq eleq2d cbvrmo albii df-disj 3bitr4i
+      ) IJZDKZACLZIMUBEKZBCLZIMACDNBCENUDUFIUCUEABCBIDFOAIEGOABPDEUBHQRSAICDTBI
+      CETUA $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x C $.
+    cbvdisjv.1 $e |- ( x = y -> B = C ) $.
+    $( Change bound variables in a disjoint collection.  (Contributed by Mario
+       Carneiro, 11-Dec-2016.) $)
+    cbvdisjv $p |- ( Disj_ x e. A B <-> Disj_ y e. A C ) $=
+      ( nfcv cbvdisj ) ABCDEBDGAEGFH $.
+  $}
+
+  ${
+    $d z A $.  $d z B $.  $d x z $.  $d y z $.
+    nfdisj.1 $e |- F/_ y A $.
+    nfdisj.2 $e |- F/_ y B $.
+    $( Bound-variable hypothesis builder for disjoint collection.  (Contributed
+       by Mario Carneiro, 14-Nov-2016.) $)
+    nfdisj $p |- F/ y Disj_ x e. A B $=
+      ( vz wdisj cv wcel wa wmo wal dfdisj2 wnf wtru nftru weq wn a1i wnfc trud
+      nfcvf nfeld nfcri nfand adantl nfmod2 nfal nfxfr ) ACDHAIZCJZGIDJZKZALZGM
+      BAGCDNUOBGUOBOPUNBAAQBARBMSZUNBOPUPULUMBUPBUKCBAUCBCUAUPETUDUMBOUPBGDFUET
+      UFUGUHUBUIUJ $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    $( Bound-variable hypothesis builder for disjoint collection.  (Contributed
+       by Mario Carneiro, 14-Nov-2016.) $)
+    nfdisj1 $p |- F/ x Disj_ x e. A B $=
+      ( vy wdisj cv wcel wrmo wal df-disj nfrmo1 nfal nfxfr ) ABCEDFCGZABHZDIAA
+      DBCJOADNABKLM $.
+  $}
+
+  ${
+    $d i j x A $.  $d j x B $.  $d i x C $.
+    disjmo.1 $e |- ( i = j -> B = C ) $.
+    $( Two ways to say that a collection ` B ( i ) ` for ` i e. A ` is
+       disjoint.  (Contributed by Mario Carneiro, 26-Mar-2015.)  (Revised by
+       Mario Carneiro, 14-Nov-2016.) $)
+    disjor $p |- ( Disj_ i e. A B <->
+      A. i e. A A. j e. A ( i = j \/ ( B i^i C ) = (/) ) ) $=
+      ( vx wdisj cv wcel wrmo wal wo wral wi ralcom4 wex bitri bitr4i ralbii c0
+      weq cin wceq df-disj wa orcom df-or neq0 elin imbi1i 19.23v 3bitri eleq2d
+      wn exbii rmo4 albii 3bitr4i ) DABHGIZBJZDAKZGLZDEUBZBCUCZUAUDZMZEANZDANZD
+      GABUEVAUTCJZUFZVDOZEANZGLZDANVMDANZGLVIVCVMDGAPVHVNDAVHVLGLZEANVNVGVPEAVG
+      VFVDMVFUOZVDOZVPVDVFUGVFVDUHVRVKGQZVDOVPVQVSVDVQUTVEJZGQVSGVEUIVTVKGUTBCU
+      JUPRUKVKVDGULSUMTVLEGAPRTVBVOGVAVJDEAVDBCUTFUNUQURUSS $.
+
+    $( Two ways to say that a collection ` B ( i ) ` for ` i e. A ` is
+       disjoint.  (Contributed by Mario Carneiro, 26-Mar-2015.)
+       (New usage is discouraged.)  (Proof modification is discouraged.) $)
+    disjmoOLD $p |- ( A. x E* i ( i e. A /\ x e. B ) <->
+      A. i e. A A. j e. A ( i = j \/ ( B i^i C ) = (/) ) ) $=
+      ( cv wcel wa wmo wal wdisj wceq cin c0 wo wral dfdisj2 disjor bitr3i ) EH
+      ZBIAHCIJEKALEBCMUBFHNCDOPNQFBREBREABCSBCDEFGTUA $.
+  $}
+
+  ${
+    $d i j x A $.  $d i j B $.
+    $( Two ways to say that a collection ` B ( i ) ` for ` i e. A ` is
+       disjoint.  (Contributed by Mario Carneiro, 14-Nov-2016.) $)
+    disjors $p |- ( Disj_ x e. A B <-> A. i e. A A. j e. A
+      ( i = j \/ ( [_ i / x ]_ B i^i [_ j / x ]_ B ) = (/) ) ) $=
+      ( wdisj cv csb wceq c0 wo wral nfcv nfcsb1v csbeq1a cbvdisj csbeq1 disjor
+      cin bitri ) ABCFDBADGZCHZFUAEGZIUBAUCCHZSJIKEBLDBLADBCUBDCMAUACNAUACOPBUB
+      UDDEAUAUCCQRT $.
+  $}
+
+  ${
+    $d x y z A $.  $d y z B $.  $d x y z C $.  $d x z D $.  $d x y z X $.
+    $d x z Y $.
+    disji.1 $e |- ( x = X -> B = C ) $.
+    disji.2 $e |- ( x = Y -> B = D ) $.
+    $( Property of a disjoint collection: if ` B ( X ) = C ` and
+       ` B ( Y ) = D ` , and ` X =/= Y ` , then ` C ` and ` D ` are disjoint.
+       (Contributed by Mario Carneiro, 14-Nov-2016.) $)
+    disji2 $p |- ( ( Disj_ x e. A B /\ ( X e. A /\ Y e. A ) /\
+      X =/= Y ) -> ( C i^i D ) = (/) ) $=
+      ( vy vz wcel wa cin c0 wceq wo cv csb nfcv wdisj df-ne wral disjors eqeq1
+      wn csbhypf ineq1d eqeq1d orbi12d eqeq2 ineq2d rspc2v syl5bi impcom 3impia
+      wne ord ) ABCUAZFBLGBLMZFGUQZDENZOPZVAFGPZUFUSUTMZVCFGUBVEVDVCUTUSVDVCQZU
+      SJRZKRZPZAVGCSZAVHCSZNZOPZQZKBUCJBUCUTVFABCJKUDVNVFFVHPZDVKNZOPZQJKFGBBVG
+      FPZVIVOVMVQVGFVHUEVRVLVPOVRVJDVKAJFCDAFTADTHUGUHUIUJVHGPZVOVDVQVCVHGFUKVS
+      VPVBOVSVKEDAKGCEAGTAETIUGULUIUJUMUNUOURUNUP $.
+
+    $( Property of a disjoint collection: if ` B ( X ) = C ` and
+       ` B ( Y ) = D ` have a common element ` Z ` , then ` X = Y ` .
+       (Contributed by Mario Carneiro, 14-Nov-2016.) $)
+    disji $p |- ( ( Disj_ x e. A B /\ ( X e. A /\ Y e. A ) /\
+      ( Z e. C /\ Z e. D ) ) -> X = Y ) $=
+      ( wcel wa wdisj cin c0 wne wceq inelcm disji2 3expia necon1d syl3an3
+      3impia ) HDKHEKLABCMZFBKGBKLZDENZOPZFGQZHDERUDUEUGUHUDUELFGUFOUDUEFGPUFOQ
+      ABCDEFGIJSTUAUCUB $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d x C $.
+    $( If there is a function ` C ( y ) ` such that ` C ( y ) = x ` for all
+       ` y e. B ( x ) ` , then the sets ` B ( x ) ` for distinct ` x e. A ` are
+       disjoint.  (Contributed by Mario Carneiro, 10-Dec-2016.) $)
+    invdisj $p |- ( A. x e. A A. y e. B C = x -> Disj_ x e. A B ) $=
+      ( cv wceq wral wcel wa wmo wal wdisj nfra2 df-ral rsp eqcom syl6ib imim2i
+      wi imp3a alimi sylbi mo2icl syl alrimi dfdisj2 sylibr ) EAFZGZBDHZACHZUIC
+      IZBFDIZJZAKZBLACDMULUPBUJABCDNULUOUIEGZTZALZUPULUMUKTZALUSUKACOUTURAUTUMU
+      NUQUKUNUQTUMUKUNUJUQUJBDPEUIQRSUAUBUCUOAEUDUEUFABCDUGUH $.
+  $}
+
+  ${
+    $d x y z A $.  $d y z B $.  $d x y z C $.  $d x y z D $.
+    $( A disjoint collection yields disjoint indexed unions for disjoint index
+       sets.  (Contributed by Mario Carneiro, 26-Mar-2015.)  (Revised by Mario
+       Carneiro, 14-Nov-2016.) $)
+    disjiun $p |- ( ( Disj_ x e. A B /\
+      ( C C_ A /\ D C_ A /\ ( C i^i D ) = (/) ) ) ->
+        ( U_ x e. C B i^i U_ x e. D B ) = (/) ) $=
+      ( vy vz wss cin c0 wceq wa cv wcel wi wrex wral impcom syl syl5bi ciun wn
+      wdisj w3a wal wrmo df-disj wne elin eliun anbi12i weq wex nfv rmo2 ssralv
+      bitri an4 r19.29 id imp eleq1d biimpcd rexlimiv ex expimpd anim12d inelcm
+      syl6 exlimiv exp3a sylbi necon2bd impancom 3impa alimdv eq0 sylibr ) ABCU
+      CZDBHZEBHZDEIZJKZUDZLFMZADCUAZAECUAZIZNZUBZFUEZWHJKWDVSWKVSWECNZABUFZFUEW
+      DWKAFBCUGWDWMWJFVTWAWCWMWJOVTWALZWMWCWJWNWMLZWIWBJWIWLADPZWLAEPZLZWOWBJUH
+      ZWIWEWFNZWEWGNZLWRWEWFWGUIWTWPXAWQAWEDCUJAWEECUJUKUQWMWNWRWSOZWMWLAGULZOZ
+      ABQZGUMZWNXBOWLAGBWLGUNUOXFWNWRWSWNWRLVTWPLZWAWQLZLZXFWSVTWAWPWQURXEXIWSO
+      GXEXIGMZDNZXJENZLWSXEXGXKXHXLXEVTWPXKXEVTLXDADQZWPXKOVTXEXMXDADBUPRXMWPXK
+      XMWPLXDWLLZADPXKXDWLADUSXNXKADXNAMZDNXKXNXOXJDXDWLXCXDUTVAZVBVCVDSVESVFXE
+      WAWQXLXEWALXDAEQZWQXLOWAXEXQXDAEBUPRXQWQXLXQWQLXNAEPXLXDWLAEUSXNXLAEXNXOE
+      NXLXNXOXJEXPVBVCVDSVESVFVGXJDEVHVIVJTVKVLRTVMVNVOVPTRFWHVQVR $.
+
+    $( A disjoint collection yields disjoint indexed unions for disjoint index
+       sets.  (Contributed by Mario Carneiro, 26-Mar-2015.)
+       (New usage is discouraged.)  (Proof modification is discouraged.) $)
+    disjiunOLD $p |- ( ( A. y E* x ( x e. A /\ y e. B ) /\
+      ( C C_ A /\ D C_ A /\ ( C i^i D ) = (/) ) ) ->
+        ( U_ x e. C B i^i U_ x e. D B ) = (/) ) $=
+      ( cv wcel wa wmo wal wdisj wss cin c0 wceq w3a ciun dfdisj2 disjiun
+      sylanbr ) AGCHBGDHIAJBKACDLECMFCMEFNOPQAEDRAFDRNOPABCDSACDEFTUA $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    $( Any collection of singletons is disjoint.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    sndisj $p |- Disj_ x e. A { x } $=
+      ( vy cv csn wdisj wcel wmo dfdisj2 weq moeq simpr elsn sylib eqcomd moimi
+      wa ax-mp mpgbir ) ABADZEZFTBGZCDZUAGZQZAHZCACBUAIACJZAHUFAUCKUEUGAUEUCTUE
+      UDCAJUBUDLCTMNOPRS $.
+  $}
+
+  $( Any collection of empty sets is disjoint.  (Contributed by Mario Carneiro,
+     14-Nov-2016.) $)
+  0disj $p |- Disj_ x e. A (/) $=
+    ( c0 cv csn wss wral wdisj 0ss rgenw sndisj disjss2 mp2 ) CADEZFZABGABNHABC
+    HOABNIJABKABCNLM $.
+
+  ${
+    $d x y A $.  $d y B $.
+    $( A singleton collection is disjoint.  (Contributed by Mario Carneiro,
+       14-Nov-2016.) $)
+    disjxsn $p |- Disj_ x e. { A } B $=
+      ( vy csn wdisj cv wcel wa wmo dfdisj2 wceq moeq elsni adantr moimi mpgbir
+      ax-mp ) ABEZCFAGZSHZDGCHZIZAJZDADSCKTBLZAJUDABMUCUEAUAUEUBTBNOPRQ $.
+
+    $( An empty collection is disjoint.  (Contributed by Mario Carneiro,
+       14-Nov-2016.) $)
+    disjx0 $p |- Disj_ x e. (/) B $=
+      ( c0 csn wss wdisj 0ss disjxsn disjss1 mp2 ) CCDZEAKBFACBFKGACBHACKBIJ $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d y z C $.  $d x y z D $.  $d x y z E $.
+    disjprg.1 $e |- ( x = A -> C = D ) $.
+    disjprg.2 $e |- ( x = B -> C = E ) $.
+    $( A pair collection is disjoint iff the two sets in the family have empty
+       intersection.  (Contributed by Mario Carneiro, 14-Nov-2016.) $)
+    disjprg $p |- ( ( A e. V /\ B e. V /\ A =/= B ) ->
+      ( Disj_ x e. { A , B } C <-> ( D i^i E ) = (/) ) ) $=
+      ( vy vz wceq cin c0 wo wral wa wb nfcv wtru wcel wne w3a cv csb cpr wdisj
+      eqeq1 csbhypf ineq1d eqeq1d orbi12d ralbidv ralprg 3adant3 id eqcomd orcd
+      a1tru 2thd eqeq2 ineq2d simp3 neneqd biorf syl tru biantrur syl6bb bitr4d
+      wn eqcom incom syl6eq biantru anbi12d bitrd disjors pm4.24 3bitr4g ) BGUA
+      ZCGUAZBCUBZUCZJUDZKUDZLZAWEDUEZAWFDUEZMZNLZOZKBCUFZPZJWMPZEFMZNLZWQQZAWMD
+      UGWQWDWOBWFLZEWIMZNLZOZKWMPZCWFLZFWIMZNLZOZKWMPZQZWRWAWBWOXIRWCWNXCXHJBCG
+      GWEBLZWLXBKWMXJWGWSWKXAWEBWFUHXJWJWTNXJWHEWIAJBDEABSZAESZHUIUJUKULUMWECLZ
+      WLXGKWMXMWGXDWKXFWECWFUHXMWJXENXMWHFWIAJCDFACSZAFSZIUIUJUKULUMUNUOWDXCWQX
+      HWQWDXCTBCLZWQOZQZWQWAWBXCXRRWCXBTXQKBCGGWFBLZXBTXSWSXAXSWFBXSUPUQURXSUSU
+      TWFCLZWSXPXAWQWFCBVAXTWTWPNXTWIFEAKCDFXNXOIUIVBUKULUNUOWDWQXQXRWDXPVKWQXQ
+      RWDBCWAWBWCVCVDXPWQVEVFZTXQVGVHVIVJWDXHXQTQZWQWAWBXHYBRWCXGXQTKBCGGXSXDXP
+      XFWQXSXDCBLXPWFBCVACBVLVIXSXEWPNXSXEFEMWPXSWIEFAKBDEXKXLHUIVBFEVMVNUKULXT
+      XGTXTXDXFXTWFCXTUPUQURXTUSUTUNUOWDWQXQYBYATXQVGVOVIVJVPVQAWMDJKVRWQVSVT
+      $.
+  $}
+
+  ${
+    $d r s u v x y z A $.  $d r s u v x z B $.  $d r s u v y z C $.
+    $( An indexed union of a disjoint collection of disjoint collections is
+       disjoint if each component is disjoint, and the disjoint unions in the
+       collection are also disjoint.  Note that ` B ( y ) ` and ` C ( x ) ` may
+       have the displayed free variables.  (Contributed by Mario Carneiro,
+       14-Nov-2016.) $)
+    disjxiun $p |- ( Disj_ y e. A B -> ( Disj_ x e. U_ y e. A B C <->
+      ( A. y e. A Disj_ x e. B C /\ Disj_ y e. A U_ x e. B C ) ) ) $=
+      ( vu vv vr vs vz wdisj ciun wral wa nfcv cv wcel wss syl weq nfiu1 nfdisj
+      wi ssiun2 disjss1 com12 ralrimi a1i csb cin c0 wceq wo wn simprll nfcsb1v
+      simplr csbeq1a cbviun syl6sseqr simprlr csbeq1 sseq1d vtoclga simpl sylib
+      cbvdisj disjor rsp2 imp ord impr disjiun syl13anc expr ralrimivva iuneq1d
+      orrd sylibr nfiun ex jcad wrex eleq2i eliun anbi12i reeanv bitr4i simplrr
+      simprl simplrl disjeq1d rspc sylc ad2antrr disjors simpld simprd eleqtrrd
+      bitri adantl jca mpd wne ss2in syl2anc simprr disji2 syl121anc pm2.61dane
+      simpr sseq0 rexlimdvva syl5bi ralrimivv impbid ) BCDKZABCDLZEKZADEKZBCMZB
+      CADELZKZNZXQXSYAYCXSYAUCXQXSXTBCABXREBCDUABEOZUBBPCQZXSXTYFDXRRXSXTUCBCDU
+      DADXREUESUFUGUHXQXSYCXQXSNZFCABFPZDUIZELZKZYCYGFGTZYJABGPZDUIZELZUJZUKULZ
+      UMZGCMFCMYKYGYRFGCCYGYHCQZYMCQZNZNZYLYQYGUUAYLUNZYQYGUUAUUCNZNZXSYIXRRZYN
+      XRRZYIYNUJUKULZYQXQXSUUDUQUUEYSUUFYGYSYTUUCUOYSYIFCYILZXRFCYIUDBFCDYIFDOZ
+      BYHDUPZBYHDURZUSZUTZSUUEYTUUGYGYSYTUUCVAUUFUUGFYMCYLYIYNXRBYHYMDVBZVCUUNV
+      DSYGUUAUUCUUHUUBYLUUHYGUUAYLUUHUMZYGUUPGCMFCMZUUAUUPUCYGFCYIKZUUQYGXQUURX
+      QXSVEBFCDYIUUJUUKUULVGVFCYIYNFGUUOVHVFUUPFGCCVISVJVKVLAXREYIYNVMVNVOVRVPC
+      YJYOFGYLAYIYNEUUOVQVHVSBFCYBYJFYBOABYIEUUKYEVTBFTZADYIEUULVQVGVSWAWBXQYDX
+      SXQYDNZHITZAHPZEUIZAIPZEUIZUJZUKULZUMZIXRMHXRMXSUUTUVHHIXRXRUVBXRQZUVDXRQ
+      ZNZUVBYIQZUVDYNQZNZGCWCFCWCZUUTUVHUVKUVLFCWCZUVMGCWCZNUVOUVIUVPUVJUVQUVIU
+      VBUUIQUVPXRUUIUVBUUMWDFUVBCYIWEWTUVJUVDGCYNLZQUVQXRUVRUVDBGCDYNGDOBYMDUPB
+      YMDURUSWDGUVDCYNWEWTWFUVLUVMFGCCWGWHUUTUVNUVHFGCCUUTUUANZUVNUVHUVSUVNNUVA
+      UVGUVSUVNUVAUNZUVGUVSUVNUVTNZNZUVGYHYMUWBYLNZUVTUVGUVSUVNUVTYLWIUWCUVAUVG
+      UWCUVHIYIMHYIMZUVLUVDYIQZNUVHUWCAYIEKZUWDUVSUWFUWAYLUVSYSYAUWFUUTYSYTWJZX
+      QYAYCUUAWKXTUWFBYHCABYIEUUKYEUBUUSADYIEUULWLWMWNWOAYIEHIWPVFUWCUVLUWEUWCU
+      VLUVMUVSUVNUVTYLWKZWQUWCUVDYNYIUWCUVLUVMUWHWRYLYIYNULUWBUUOXAWSXBUVHHIYIY
+      IVIWNVKXCUWBYHYMXDZNZUVFYPRZYQUVGUWJUVCYJRZUVEYORZUWKUWJUVLUWLUWJUVLUVMUV
+      SUVNUVTUWIWKZWQUVLUVCHYIUVCLYJHYIUVCUDAHYIEUVCHEOAUVBEUPAUVBEURUSUTSUWJUV
+      MUWMUWJUVLUVMUWNWRUVMUVEIYNUVELYOIYNUVEUDAIYNEUVEIEOAUVDEUPAUVDEURUSUTSUV
+      CYJUVEYOXEXFUWJJCABJPZDUIZELZKZYSYTUWIYQUWJYCUWRUVSYCUWAUWIXQYAYCUUAWIWOB
+      JCYBUWQJYBOABUWPEBUWODUPYEVTBJTADUWPEBUWODURVQVGVFUVSYSUWAUWIUWGWOUVSYTUW
+      AUWIUUTYSYTXGWOUWBUWIXKJCUWQYJYOYHYMJFTAUWPYIEBUWOYHDVBVQJGTAUWPYNEBUWOYM
+      DVBVQXHXIUVFYPXLXFXJVOVRWAXMXNXOAXREHIWPVSWAXP $.
+  $}
+
+  ${
+    $d w x y z A $.  $d w x y z B $.  $d w y z C $.  $d w x z D $.
+    disjxun.1 $e |- ( x = y -> C = D ) $.
+    $( The union of two disjoint collections.  (Contributed by Mario Carneiro,
+       14-Nov-2016.) $)
+    disjxun $p |- ( ( A i^i B ) = (/) -> ( Disj_ x e. ( A u. B ) C <->
+      ( Disj_ x e. A C /\ Disj_ x e. B C /\
+        A. x e. A A. y e. B ( C i^i D ) = (/) ) ) ) $=
+      ( vz vw cin c0 wceq weq cv wo wral wa eqeq1d orbi12d bitri csb wdisj wcel
+      cun wn wb disjel eleq1 notbid syl5ibcom con2d impr biorf bicomd 2ralbidva
+      w3a syl anbi2d ralunb ralbii nfcv nfcsb1v nfin nfeq1 nfor equequ2 csbhypf
+      nfral ineq2d cbvralv equequ1 csbeq1a ineq1d ralbidv syl5bbr cbvral r19.26
+      nfv 3bitr3i disjor anbi1i equcom syl6bb incom syl6eq ralcom syl5bb anbi1d
+      3bitr4g disjors anbi2ci anbi12d df-3an anandir ) CDJKLZHIMZAHNZEUAZAINZEU
+      AZJZKLZOZICDUDZPZHCPZXEHDPZQZACEUBZEFJZKLZBDPACPZQZADEUBZXLQZQZAXDEUBZXIX
+      NXLUPZWOXFXMXGXOWOABMZXKOZBCPZACPZXTBDPZACPZQZYBXLQXFXMWOYDXLYBWOXTXKABCD
+      WOANZCUCZBNZDUCZQQZXKXTYJXSUEZXKXTUFWOYGYIYKWOYGQZXSYIYLYFDUCZUEXSYIUECDY
+      FUGXSYMYIYFYHDUHUIUJUKULXSXKUMUQUNUOZURXTBXDPZACPYAYCQZACPXFYEYOYPACXTBCD
+      USUTYOXEAHCYOHVRXCAIXDAXDVAWPXBAWPAVRAXAKAWRWTAWQEVBAWSEVBVCVDVEZVHYOAIMZ
+      EWTJZKLZOZIXDPAHMZXEUUAXTIBXDIBMZYRXSYTXKIBAVFUUCYSXJKUUCWTFEAIYHEFAYHVAZ
+      AFVAZGVGVIRSVJUUBUUAXCIXDUUBYRWPYTXBAHIVKUUBYSXAKUUBEWRWTAWQEVLVMRSVNVOVP
+      YAYCACVQVSXIYBXLCEFABGVTWAWIWOXCICPZHDPZXCIDPZHDPZQZXLUUIQXGXOWOUUGXLUUIU
+      UGYDWOXLUUGXTACPZBDPYDUUFUUKHBDUUFHAMZWREJZKLZOZACPHBMZUUKUUOXCAICUUOIVRY
+      QYRUULWPUUNXBAIHVFYRUUMXAKYREWTWRAWSEVLVIRSVPUUPUUOXTACUUPUULXSUUNXKUUPUU
+      LBAMXSHBAVKBAWBWCUUPUUMXJKUUPUUMFEJXJUUPWRFEAHYHEFUUDUUEGVGVMFEWDWERSVNVO
+      VJXTBADCWFTYNWGWHXGUUFUUHQZHDPUUJXEUUQHDXCICDUSUTUUFUUHHDVQTXNUUIXLADEHIW
+      JWKWIWLXQXEHXDPXHAXDEHIWJXEHCDUSTXRXIXNQXLQXPXIXNXLWMXIXNXLWNTWI $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.
+    $( Expand a disjoint collection with any number of empty sets.
+       (Contributed by Mario Carneiro, 15-Nov-2016.) $)
+    disjss3 $p |- ( ( A C_ B /\ A. x e. ( B \ A ) C = (/) ) ->
+      ( Disj_ x e. A C <-> Disj_ x e. B C ) ) $=
+      ( vy wss c0 wceq cdif wa wdisj cv wcel wmo wal wi wn syl alimdv dfdisj2
+      wral df-ral w3a simp3r n0i simp3l eldif simp2 syl5bir mpand mt3d jca 3exp
+      syl5bi imp moim 3imtr4g disjss1 adantr impbid ) BCFZDGHZACBIZUAZJZABDKZAC
+      DKZVEALZBMZELZDMZJZANZEOVHCMZVKJZANZEOVFVGVEVMVPEVEVOVLPZAOZVMVPPVAVDVRVD
+      VHVCMZVBPZAOVAVRVBAVCUBVAVTVQAVAVTVOVLVAVTVOUCZVIVKWAVIVBWAVKVBQVAVTVNVKU
+      DZDVJUERWAVNVIQZVBVAVTVNVKUFVNWCJVSWAVBVHCBUGVAVTVOUHUIUJUKWBULUMSUNUOVOV
+      LAUPRSAEBDTAECDTUQVAVGVFPVDABCDURUSUT $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -31676,6 +32053,9 @@ htmldef "|^|_" as
   /* 20-Sep-2017 nm Add space after |^|_ in althtmldef to improve "|^|_ ran" */
   althtmldef "|^|_" as '<U><FONT SIZE="+1">&cap;</FONT></U> '; /* &xcap; */
   latexdef "|^|_" as "\underline{\bigcap}";
+htmldef "Disj_" as "<u>Disj</u> ";
+  althtmldef "Disj_" as "<u>Disj</u> ";
+  latexdef "Disj_" as "\operatorname{\underline{Disj}}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
