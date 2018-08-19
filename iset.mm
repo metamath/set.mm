@@ -31034,12 +31034,15 @@ $)
       $.
   $}
 
-  $( Relative intersection of a nonempty set.  (Contributed by Stefan O'Rear,
-     3-Apr-2015.)  (Revised by Mario Carneiro, 5-Jun-2015.) $)
-  rintn0 $p |- ( ( X C_ ~P A /\ X =/= (/) ) -> ( A i^i |^| X ) = |^| X ) $=
-    ( cpw wss c0 wne wa cint incom wceq cuni intssuni2 ssid sspwuni mpbi syl6ss
-    cin df-ss sylib syl5eq ) BACZDBEFGZABHZQUCAQZUCAUCIUBUCADUDUCJUBUCUAKZABUAL
-    UAUADUEADUAMUAANOPUCARST $.
+  ${
+    $d x X $.
+    $( Relative intersection of an inhabited class.  (Contributed by Jim
+       Kingdon, 19-Aug-2018.) $)
+    rintm $p |- ( ( X C_ ~P A /\ E. x x e. X ) -> ( A i^i |^| X ) = |^| X ) $=
+      ( cpw wss cv wcel wex wa cint cin incom wceq cuni intssuni2m ssid
+      sspwuni mpbi syl6ss df-ss sylib syl5eq ) CBDZEAFCGAHIZBCJZKUEBKZU
+      EBUELUDUEBEUFUEMUDUEUCNZBACUCOUCUCEUGBEUCPUCBQRSUEBTUAUB $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
