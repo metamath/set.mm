@@ -30985,16 +30985,13 @@ $)
       UGUNUEAUDCDNOPUKUOACUDBUIQRSTDBUFUAADCUJUBUC $.
 
     $( A relationship involving union and indexed union.  Exercise 25 of
-       [Enderton] p. 33.  (Contributed by NM, 25-Nov-2003.)  (Proof shortened
-       by Mario Carneiro, 17-Nov-2016.) $)
-    iununi $p |- ( ( B = (/) -> A = (/) ) <->
-                ( A u. U. B ) = U_ x e. B ( A u. x ) ) $=
-      ( c0 wceq wi cuni cun cv ciun wn wne iunconst sylbir iun0 iuneq2d 3eqtr4a
-      df-ne id syl6eq ja eqcomd uneq1d uniiun uneq2i iunun 3eqtr4g unieq uneq2d
-      uni0 un0 iuneq1 0iun eqeq12d biimpcd impbii ) CDEZBDEZFZBCGZHZACBAIZHZJZE
-      ZUSBACVBJZHACBJZVFHVAVDUSBVGVFUSVGBUQURVGBEZUQKCDLVHCDRACBMNURACDJDVGBACO
-      URACBDURSZPVIQUAUBUCUTVFBACUDUEACBVBUFUGUQVEURUQVABVDDUQVABDHBUQUTDBUQUTD
-      GDCDUHUJTUIBUKTUQVDADVCJDACDVCULAVCUMTUNUOUP $.
+       [Enderton] p. 33 but with biconditional changed to implication.
+       (Contributed by Jim Kingdon, 19-Aug-2018.) $)
+    iununir $p |- ( ( A u. U. B ) = U_ x e. B ( A u. x ) ->
+        ( B = (/) -> A = (/) ) ) $=
+      ( c0 wceq cuni cun cv ciun unieq syl6eq uneq2d un0 iuneq1 eqeq12d
+      uni0 0iun biimpcd ) CDEZBCFZGZACBAHGZIZEBDESUABUCDSUABDGBSTDBSTDF
+      DCDJPKLBMKSUCADUBIDACDUBNAUBQKOR $.
   $}
 
   ${
