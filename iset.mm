@@ -1,4 +1,4 @@
-$( iset.mm - Version of 17-Aug-2018
+$( iset.mm - Version of 19-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -30871,13 +30871,13 @@ $)
       ( c0 wceq ciin cin iineq1 ineq2d cvv 0iin ineq2i inv1 eqtri syl6eq ) DEFZ
       BADCGZHBAECGZHZBQRSBADECIJTBKHBSKBACLMBNOP $.
 
-    $( Relative intersection of a nonempty family.  (Contributed by Stefan
-       O'Rear, 3-Apr-2015.) $)
-    riinn0 $p |- ( ( A. x e. X S C_ A /\ X =/= (/) ) ->
+    $( Relative intersection of an inhabited family.  (Contributed by Jim
+       Kingdon, 19-Aug-2018.) $)
+    riinm $p |- ( ( A. x e. X S C_ A /\ E. x x e. X ) ->
         ( A i^i |^|_ x e. X S ) = |^|_ x e. X S ) $=
-      ( wss wral c0 wne wa ciin incom wceq wrex r19.2z ancoms iinss df-ss sylib
-      cin syl syl5eq ) CBEZADFZDGHZIZBADCJZSUFBSZUFBUFKUEUFBEZUGUFLUEUBADMZUHUD
-      UCUIUBADNOADCBPTUFBQRUA $.
+      ( wss wral cv wcel wex wa ciin cin incom wceq r19.2m ancoms iinss
+      wrex syl df-ss sylib syl5eq ) CBEZADFZAGDHAIZJZBADCKZLUGBLZUGBUGM
+      UFUGBEZUHUGNUFUCADRZUIUEUDUJUCADOPADCBQSUGBTUAUB $.
 
     $( Relative intersection of a relative abstraction.  (Contributed by Stefan
        O'Rear, 3-Apr-2015.) $)
