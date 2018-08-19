@@ -30976,13 +30976,13 @@ $)
   ${
     $d x y A $.  $d x y B $.
     $( A relationship involving union and indexed intersection.  Exercise 23 of
-       [Enderton] p. 33.  (Contributed by NM, 25-Nov-2003.)  (Proof shortened
-       by Mario Carneiro, 17-Nov-2016.) $)
-    iinuni $p |- ( A u. |^| B ) = |^|_ x e. B ( A u. x ) $=
-      ( vy cv wcel cint cab cun wral ciin r19.32v elun ralbii vex elint2 orbi2i
-      wo 3bitr4ri abbii df-un df-iin 3eqtr4i ) DEZBFZUDCGZFZRZDHUDBAEZIZFZACJZD
-      HBUFIACUJKUHULDUEUDUIFZRZACJUEUMACJZRULUHUEUMACLUKUNACUDBUIMNUGUOUEAUDCDO
-      PQSTDBUFUAADCUJUBUC $.
+       [Enderton] p. 33 but with equality changed to subset.  (Contributed by
+       Jim Kingdon, 19-Aug-2018.) $)
+    iinuniss $p |- ( A u. |^| B ) C_ |^|_ x e. B ( A u. x ) $=
+      ( vy cv wcel cint wo cab cun wral ciin r19.32vr vex elint2 orbi2i
+      elun ralbii 3imtr4i ss2abi df-un df-iin 3sstr4i ) DEZBFZUDCGZFZHZ
+      DIUDBAEZJZFZACKZDIBUFJACUJLUHULDUEUDUIFZACKZHUEUMHZACKUHULUEUMACM
+      UGUNUEAUDCDNOPUKUOACUDBUIQRSTDBUFUAADCUJUBUC $.
 
     $( A relationship involving union and indexed union.  Exercise 25 of
        [Enderton] p. 33.  (Contributed by NM, 25-Nov-2003.)  (Proof shortened
