@@ -4217,7 +4217,14 @@
 "csbexgOLD" is used by "issubc".
 "csbexgOLD" is used by "itgparts".
 "csbexgOLD" is used by "unirep".
+"csbfv12gOLD" is used by "cdlemk42".
+"csbfvgOLD" is used by "cdlemk39s".
+"csbfvgOLD" is used by "cdlemkid3N".
+"csbfvgOLD" is used by "cdlemkid4".
 "csbifgOLD" is used by "cdlemk40".
+"csbima12gOLD" is used by "csbfv12gALT".
+"csbima12gOLD" is used by "csbfv12gALTVD".
+"csbima12gOLD" is used by "disjpreima".
 "csbingOLD" is used by "csbresg".
 "csbingOLD" is used by "csbresgVD".
 "csbingOLD" is used by "disjxpin".
@@ -14512,10 +14519,13 @@ New usage of "csbexOLD" is discouraged (14 uses).
 New usage of "csbexgOLD" is discouraged (7 uses).
 New usage of "csbfv12gALT" is discouraged (0 uses).
 New usage of "csbfv12gALTVD" is discouraged (0 uses).
+New usage of "csbfv12gOLD" is discouraged (1 uses).
+New usage of "csbfvgOLD" is discouraged (3 uses).
 New usage of "csbidmgOLD" is discouraged (0 uses).
 New usage of "csbifgOLD" is discouraged (1 uses).
 New usage of "csbima12gALT" is discouraged (0 uses).
 New usage of "csbima12gALTVD" is discouraged (0 uses).
+New usage of "csbima12gOLD" is discouraged (3 uses).
 New usage of "csbingOLD" is discouraged (7 uses).
 New usage of "csbingVD" is discouraged (0 uses).
 New usage of "csbnestgOLD" is discouraged (1 uses).
@@ -17840,10 +17850,13 @@ Proof modification of "csbexOLD" is discouraged (27 steps).
 Proof modification of "csbexgOLD" is discouraged (89 steps).
 Proof modification of "csbfv12gALT" is discouraged (150 steps).
 Proof modification of "csbfv12gALTVD" is discouraged (312 steps).
+Proof modification of "csbfv12gOLD" is discouraged (98 steps).
+Proof modification of "csbfvgOLD" is discouraged (35 steps).
 Proof modification of "csbidmgOLD" is discouraged (47 steps).
 Proof modification of "csbifgOLD" is discouraged (126 steps).
 Proof modification of "csbima12gALT" is discouraged (65 steps).
 Proof modification of "csbima12gALTVD" is discouraged (140 steps).
+Proof modification of "csbima12gOLD" is discouraged (100 steps).
 Proof modification of "csbingOLD" is discouraged (100 steps).
 Proof modification of "csbingVD" is discouraged (248 steps).
 Proof modification of "csbnestgOLD" is discouraged (31 steps).
