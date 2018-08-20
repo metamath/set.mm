@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Aug-2018
+$( iset.mm - Version of 20-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -18948,6 +18948,14 @@ $)
       IELABHIFLMN $.
   $}
 
+  ${
+    $d x y $.  $d A y $.
+    $( Not-free given two restricted quantifiers.  (Contributed by Jim Kingdon,
+       20-Aug-2018.) $)
+    nfra2xy $p |- F/ y A. x e. A A. y e. B ph $=
+      ( wral nfcv nfra1 nfralxy ) ACEFCBDCDGACEHI $.
+  $}
+
   $( ` x ` is not free in ` E. x e. A ph ` .  (Contributed by NM,
      19-Mar-1997.)  (Revised by Mario Carneiro, 7-Oct-2016.) $)
   nfre1 $p |- F/ x E. x e. A ph $=
@@ -31192,7 +31200,7 @@ $)
        ` y e. B ( x ) ` , then the sets ` B ( x ) ` for distinct ` x e. A ` are
        disjoint.  (Contributed by Mario Carneiro, 10-Dec-2016.) $)
     invdisj $p |- ( A. x e. A A. y e. B C = x -> Disj_ x e. A B ) $=
-      ( cv wceq wral wcel wa wmo wal wdisj nfra2 df-ral rsp eqcom syl6ib imim2i
+      ( cv wceq wral wcel wa wmo wal wdisj nfra2xy df-ral rsp eqcom syl6ib imim2i
       wi imp3a alimi sylbi mo2icl syl alrimi dfdisj2 sylibr ) EAFZGZBDHZACHZUIC
       IZBFDIZJZAKZBLACDMULUPBUJABCDNULUOUIEGZTZALZUPULUMUKTZALUSUKACOUTURAUTUMU
       NUQUKUNUQTUMUKUNUJUQUJBDPEUIQRSUAUBUCUOAEUDUEUFABCDUGUH $.
