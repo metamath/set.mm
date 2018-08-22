@@ -10915,10 +10915,17 @@ $)
   $}
 
   ${
-    19.28.1 $e |- ( ph -> A. x ph ) $.
+    19.28h.1 $e |- ( ph -> A. x ph ) $.
+    $( Theorem 19.28 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.28h $p |- ( A. x ( ph /\ ps ) <-> ( ph /\ A. x ps ) ) $=
+      ( wa wal 19.26 19.3h anbi1i bitri ) ABECFACFZBCFZEALEABCGKALACDHIJ $.
+  $}
+
+  ${
+    19.28.1 $e |- F/ x ph $.
     $( Theorem 19.28 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
     19.28 $p |- ( A. x ( ph /\ ps ) <-> ( ph /\ A. x ps ) ) $=
-      ( wa wal 19.26 19.3h anbi1i bitri ) ABECFACFZBCFZEALEABCGKALACDHIJ $.
+      ( wa wal 19.26 19.3 anbi1i bitri ) ABECFACFZBCFZEALEABCGKALACDHIJ $.
   $}
 
   ${
@@ -10927,7 +10934,7 @@ $)
     $( A closed form of ~ nfan .  (Contributed by Mario Carneiro,
        3-Oct-2016.) $)
     nfan1 $p |- F/ x ( ph /\ ps ) $=
-      ( wa wal nfrd imdistani nfri 19.28 sylibr nfi ) ABFZCNABCGZFNCGABOABCEHIA
+      ( wa wal nfrd imdistani nfri 19.28h sylibr nfi ) ABFZCNABCGZFNCGABOABCEHIA
       BCACDJKLM $.
   $}
 
@@ -11110,7 +11117,7 @@ $)
     aaan.2 $e |- ( ps -> A. x ps ) $.
     $( Rearrange universal quantifiers.  (Contributed by NM, 12-Aug-1993.) $)
     aaan $p |- ( A. x A. y ( ph /\ ps ) <-> ( A. x ph /\ A. y ps ) ) $=
-      ( wa wal 19.28 albii hbal 19.27 bitri ) ABGDHZCHABDHZGZCHACHOGNPCABDEIJAO
+      ( wa wal 19.28h albii hbal 19.27 bitri ) ABGDHZCHABDHZGZCHACHOGNPCABDEIJAO
       CBCDFKLM $.
   $}
 
@@ -11887,7 +11894,7 @@ $)
        (Contributed by NM, 18-Aug-1993.)  (Proof shortened by Andrew Salmon,
        25-May-2011.) $)
     exan $p |- E. x ( ph /\ ps ) $=
-      ( wex wal wa hbe1 19.28 mpgbi 19.29r ax-mp ) ACEZBCFGZABGCEMBGNCMBCACHIDJ
+      ( wex wal wa hbe1 19.28h mpgbi 19.29r ax-mp ) ACEZBCFGZABGCEMBGNCMBCACHIDJ
       ABCKL $.
   $}
 
@@ -13670,7 +13677,7 @@ $)
     $d x ph $.
     $( Theorem 19.28 of [Margaris] p. 90.  (Contributed by NM, 25-Mar-2004.) $)
     19.28v $p |- ( A. x ( ph /\ ps ) <-> ( ph /\ A. x ps ) ) $=
-      ( ax-17 19.28 ) ABCACDE $.
+      ( ax-17 19.28h ) ABCACDE $.
   $}
 
   ${
