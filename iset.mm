@@ -31728,13 +31728,10 @@ $)
     $d x z $.  $d y z $.  $d z ph $.
     $( Define the class abstraction of a collection of ordered pairs.
        Definition 3.3 of [Monk1] p. 34.  Usually ` x ` and ` y ` are distinct,
-       although the definition doesn't strictly require it (see ~ dfid2 for a
-       case where they are not distinct).  The brace notation is called "class
-       abstraction" by Quine; it is also (more commonly) called a "class
-       builder" in the literature.  An alternate definition using no
-       existential quantifiers is shown by ~ dfopab2 .  For example,
-` R = { <. x , y >. | ( x e. CC /\ y e. CC /\ ( x + 1 ) = y ) } -> 3 R 4 `
-       ( ~ ex-opab ).  (Contributed by NM, 4-Jul-1994.) $)
+       although the definition doesn't strictly require it.  The brace notation
+       is called "class abstraction" by Quine; it is also (more commonly)
+       called a "class builder" in the literature.  (Contributed by NM,
+       4-Jul-1994.) $)
     df-opab $a |- { <. x , y >. | ph } =
                   { z | E. x E. y ( z = <. x , y >. /\ ph ) } $.
   $}
@@ -31744,10 +31741,9 @@ $)
     $( Define maps-to notation for defining a function via a rule.  Read as
        "the function defined by the map from ` x ` (in ` A ` ) to
        ` B ( x ) ` ."  The class expression ` B ` is the value of the function
-       at ` x ` and normally contains the variable ` x ` .  An example is the
-       square function for complex numbers, ` ( x e. CC |-> ( x ^ 2 ) ) ` .
-       Similar to the definition of mapping in [ChoquetDD] p. 2.  (Contributed
-       by NM, 17-Feb-2008.) $)
+       at ` x ` and normally contains the variable ` x ` .  Similar to the
+       definition of mapping in [ChoquetDD] p. 2.  (Contributed by NM,
+       17-Feb-2008.) $)
     df-mpt $a |- ( x e. A |-> B ) =
                     { <. x , y >. | ( x e. A /\ y = B ) } $.
   $}
