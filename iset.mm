@@ -13822,40 +13822,40 @@ $)
 
   ${
     $d y x $.  $d y z $.  $d w x $.  $d w z $.
-    cbval2.1 $e |- ( ph -> A. z ph ) $.
-    cbval2.2 $e |- ( ph -> A. w ph ) $.
-    cbval2.3 $e |- ( ps -> A. x ps ) $.
-    cbval2.4 $e |- ( ps -> A. y ps ) $.
+    cbval2.1 $e |- F/ z ph $.
+    cbval2.2 $e |- F/ w ph $.
+    cbval2.3 $e |- F/ x ps $.
+    cbval2.4 $e |- F/ y ps $.
     cbval2.5 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
-    $( Rule used to change bound variables, using implicit substitition.
-       (Contributed by NM, 22-Dec-2003.) $)
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 22-Dec-2003.)  (Revised by Mario Carneiro,
+       6-Oct-2016.)  (Proof shortened by Wolf Lammen, 22-Apr-2018.) $)
     cbval2 $p |- ( A. x A. y ph <-> A. z A. w ps ) $=
-      ( wal hbal weq wb wa ax-17 hban cbvalh 19.28v expcom pm5.32d 3bitr3i mpbir
-      wi pm5.32 ) ADLZBFLZCEAEDGMBCFIMCENZUGUHOUEUIUGPZUIUHPZOUIAPZDLUIBPZFLUJU
-      KULUMDFUIAFUIFQHRUIBDUIDQJRDFNZUIABUIUNABOKUAUBSUIADTUIBFTUCUIUGUHUFUDS
-      $.
+      ( wal nfal weq wi nfv nfim wb cbval 19.21v pm5.74d 3bitr3i pm5.74ri
+      expcom ) ADLZBFLZCEAEDGMBCFIMCENZUEUFUGAOZDLUGBOZFLUGUEOUGUFOUHUIDFUGAFUG
+      FPHQUGBDUGDPJQDFNZUGABUGUJABRKUDUASUGADTUGBFTUBUCS $.
 
-    $( Rule used to change bound variables, using implicit substitition.
-       (Contributed by NM, 14-Sep-2003.) $)
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 14-Sep-2003.)  (Revised by Mario Carneiro,
+       6-Oct-2016.) $)
     cbvex2 $p |- ( E. x E. y ph <-> E. z E. w ps ) $=
-      ( wex hbex weq wb wa ax-17 hban cbvexh 19.42v expcom pm5.32d 3bitr3i mpbir
-      wi pm5.32 ) ADLZBFLZCEAEDGMBCFIMCENZUGUHOUEUIUGPZUIUHPZOUIAPZDLUIBPZFLUJU
-      KULUMDFUIAFUIFQHRUIBDUIDQJRDFNZUIABUIUNABOKUAUBSUIADTUIBFTUCUIUGUHUFUDS
-      $.
+      ( wex nfex weq wb wa nfv nfan cbvex 19.42v wi expcom pm5.32d pm5.32 mpbir
+      3bitr3i ) ADLZBFLZCEAEDGMBCFIMCENZUGUHOUAUIUGPZUIUHPZOUIAPZDLUIBPZFLUJUKU
+      LUMDFUIAFUIFQHRUIBDUIDQJRDFNZUIABUIUNABOKUBUCSUIADTUIBFTUFUIUGUHUDUES $.
   $}
 
   ${
     $d z w ph $.  $d x y ps $.  $d x w $.  $d z y $.
     cbval2v.1 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
-    $( Rule used to change bound variables, using implicit substitition.
+    $( Rule used to change bound variables, using implicit substitution.
        (Contributed by NM, 4-Feb-2005.) $)
     cbval2v $p |- ( A. x A. y ph <-> A. z A. w ps ) $=
-      ( ax-17 cbval2 ) ABCDEFAEHAFHBCHBDHGI $.
+      ( nfv cbval2 ) ABCDEFAEHAFHBCHBDHGI $.
 
-    $( Rule used to change bound variables, using implicit substitition.
+    $( Rule used to change bound variables, using implicit substitution.
        (Contributed by NM, 26-Jul-1995.) $)
     cbvex2v $p |- ( E. x E. y ph <-> E. z E. w ps ) $=
-      ( ax-17 cbvex2 ) ABCDEFAEHAFHBCHBDHGI $.
+      ( nfv cbvex2 ) ABCDEFAEHAFHBCHBDHGI $.
   $}
 
   ${
