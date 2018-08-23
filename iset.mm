@@ -31261,21 +31261,6 @@ $)
       ( c0 csn wss wdisj 0ss disjxsn disjss1 mp2 ) CCDZEAKBFACBFKGACBHACKBIJ $.
   $}
 
-  ${
-    $d x y A $.  $d x y B $.  $d y C $.
-    $( Expand a disjoint collection with any number of empty sets.
-       (Contributed by Mario Carneiro, 15-Nov-2016.) $)
-    disjss3 $p |- ( ( A C_ B /\ A. x e. ( B \ A ) C = (/) ) ->
-      ( Disj_ x e. A C <-> Disj_ x e. B C ) ) $=
-      ( vy wss c0 wceq cdif wa wdisj cv wcel wmo wal wi wn syl alimdv dfdisj2
-      wral df-ral w3a simp3r n0i simp3l eldif simp2 syl5bir mpand mt3d jca 3exp
-      syl5bi imp moim 3imtr4g disjss1 adantr impbid ) BCFZDGHZACBIZUAZJZABDKZAC
-      DKZVEALZBMZELZDMZJZANZEOVHCMZVKJZANZEOVFVGVEVMVPEVEVOVLPZAOZVMVPPVAVDVRVD
-      VHVCMZVBPZAOVAVRVBAVCUBVAVTVQAVAVTVOVLVAVTVOUCZVIVKWAVIVBWAVKVBQVAVTVNVKU
-      DZDVJUERWAVNVIQZVBVAVTVNVKUFVNWCJVSWAVBVHCBUGVAVTVOUHUIUJUKWBULUMSUNUOVOV
-      LAUPRSAEBDTAECDTUQVAVGVFPVDABCDURUSUT $.
-  $}
-
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
