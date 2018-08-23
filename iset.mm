@@ -32239,12 +32239,13 @@ $)
       DZUGEUHUBEZABJZUFUHBEZAUHBCOKUDUJUIABLZUEUKUDUJULUIABMPUEUIUKAB
       UEUIUCUKBUHUBQNRSTUA $.
 
-    $( Any non-empty transitive class includes its intersection.  Exercise 2 in
-       [TakeutiZaring] p. 44.  (Contributed by Andrew Salmon, 14-Nov-2011.) $)
-    trint0 $p |- ( ( Tr A /\ A =/= (/) ) -> |^| A C_ A ) $=
-      ( vx c0 wne wtr cint wss cv wcel wex wi intss1 trss com12 sylsyld exlimiv
-      n0 sstr2 sylbi impcom ) ACDZAEZAFZAGZUABHZAIZBJUBUDKZBAQUFUGBUFUCUEGUBUEA
-      GZUDUEALUBUFUHAUEMNUCUEAROPST $.
+    $( Any inhabited transitive class includes its intersection.  Similar to
+       Exercise 2 in [TakeutiZaring] p. 44.  (Contributed by Jim Kingdon,
+       22-Aug-2018.) $)
+    trint0m $p |- ( ( Tr A /\ E. x x e. A ) -> |^| A C_ A ) $=
+      ( cv wcel wex wtr cint wss wi intss1 trss com12 sylsyld exlimiv
+      sstr2 impcom ) ACZBDZAEBFZBGZBHZRSUAIARTQHSQBHZUAQBJSRUBBQKLTQB
+      OMNP $.
   $}
 
 $(
