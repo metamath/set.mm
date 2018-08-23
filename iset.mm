@@ -32102,6 +32102,154 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Transitive classes
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare a new symbol. $)
+  $c Tr $. $( Transitive predicate (read:  "the following class is
+              transitive") $)
+
+  $( Extend wff notation to include transitive classes.  Notation from
+     [TakeutiZaring] p. 35. $)
+  wtr $a wff Tr A $.
+
+  $( Define the transitive class predicate.  Not to be confused with a
+     transitive relation (see ~ cotr ).  Definition of [Enderton] p. 71
+     extended to arbitrary classes.  For alternate definitions, see ~ dftr2
+     (which is suggestive of the word "transitive"), ~ dftr3 , ~ dftr4 ,
+     ~ dftr5 , and (when ` A ` is a set) ~ unisuc .  The term "complete" is
+     used instead of "transitive" in Definition 3 of [Suppes] p. 130.
+     (Contributed by NM, 29-Aug-1993.) $)
+  df-tr $a |- ( Tr A <-> U. A C_ A ) $.
+
+  ${
+    $d x y A $.
+    $( An alternate way of defining a transitive class.  Exercise 7 of
+       [TakeutiZaring] p. 40.  (Contributed by NM, 24-Apr-1994.) $)
+    dftr2 $p |- ( Tr A <-> A. x A. y ( ( x e. y /\ y e. A ) -> x e. A ) ) $=
+      ( cuni wss cv wcel wi wal wa dfss2 df-tr 19.23v eluni imbi1i bitr4i albii
+      wtr wex 3bitr4i ) CDZCEAFZUAGZUBCGZHZAICRUBBFZGUFCGJZUDHBIZAIAUACKCLUHUEA
+      UHUGBSZUDHUEUGUDBMUCUIUDBUBCNOPQT $.
+
+    $( An alternate way of defining a transitive class.  (Contributed by NM,
+       20-Mar-2004.) $)
+    dftr5 $p |- ( Tr A <-> A. x e. A A. y e. x y e. A ) $=
+      ( wtr cv wcel wa wi wal wral dftr2 alcom impexp albii df-ral bitr4i bitri
+      r19.21v ) CDBEZAEZFZTCFZGSCFZHZAIBIZUCBTJZACJZBACKUEUDBIZAIZUGUDBALUIUBUF
+      HZAIUGUHUJAUHUBUCHZBTJZUJUHUAUKHZBIULUDUMBUAUBUCMNUKBTOPUBUCBTRQNUFACOPQQ
+      $.
+
+    $( An alternate way of defining a transitive class.  Definition 7.1 of
+       [TakeutiZaring] p. 35.  (Contributed by NM, 29-Aug-1993.) $)
+    dftr3 $p |- ( Tr A <-> A. x e. A x C_ A ) $=
+      ( vy wtr cv wcel wral wss dftr5 dfss3 ralbii bitr4i ) BDCEBFCAEZGZABGMBHZ
+      ABGACBIONABCMBJKL $.
+  $}
+
+  $( An alternate way of defining a transitive class.  Definition of [Enderton]
+     p. 71.  (Contributed by NM, 29-Aug-1993.) $)
+  dftr4 $p |- ( Tr A <-> A C_ ~P A ) $=
+    ( wtr cuni wss cpw df-tr sspwuni bitr4i ) ABACADAAEDAFAAGH $.
+
+  $( Equality theorem for the transitive class predicate.  (Contributed by NM,
+     17-Sep-1993.) $)
+  treq $p |- ( A = B -> ( Tr A <-> Tr B ) ) $=
+    ( wceq cuni wss wtr unieq sseq1d sseq2 bitrd df-tr 3bitr4g ) ABCZADZAEZBDZB
+    EZAFBFMOPAEQMNPAABGHABPIJAKBKL $.
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( In a transitive class, the membership relation is transitive.
+       (Contributed by NM, 19-Apr-1994.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    trel $p |- ( Tr A -> ( ( B e. C /\ C e. A ) -> B e. A ) ) $=
+      ( vy vx wtr cv wcel wa wi wal dftr2 eleq12 wb eleq1 adantl anbi12d adantr
+      wceq imbi12d spc2gv pm2.43b sylbi ) AFDGZEGZHZUEAHZIZUDAHZJZEKDKZBCHZCAHZ
+      IZBAHZJZDEALUKUNUOUJUPDEBCCAUDBSZUECSZIZUHUNUIUOUSUFULUGUMUDBUECMURUGUMNU
+      QUECAOPQUQUIUONURUDBAORTUAUBUC $.
+  $}
+
+  $( In a transitive class, the membership relation is transitive.
+     (Contributed by NM, 19-Apr-1994.) $)
+  trel3 $p |- ( Tr A -> ( ( B e. C /\ C e. D /\ D e. A ) -> B e. A ) ) $=
+    ( wtr wcel w3a wa 3anass trel anim2d syl5bi syld ) AEZBCFZCDFZDAFZGZOCAFZHZ
+    BAFROPQHZHNTOPQINUASOACDJKLABCJM $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( An element of a transitive class is a subset of the class.  (Contributed
+       by NM, 7-Aug-1994.) $)
+    trss $p |- ( Tr A -> ( B e. A -> B C_ A ) ) $=
+      ( vx wtr wcel wss cv wceq eleq1 sseq1 imbi12d imbi2d wral dftr3 rsp sylbi
+      wi vtoclg pm2.43b ) ADZBAEZBAFZTCGZAEZUCAFZQZQTUAUBQZQCBAUCBHZUFUGTUHUDUA
+      UEUBUCBAIUCBAJKLTUECAMUFCANUECAOPRS $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( The intersection of transitive classes is transitive.  (Contributed by
+       NM, 9-May-1994.) $)
+    trin $p |- ( ( Tr A /\ Tr B ) -> Tr ( A i^i B ) ) $=
+      ( vx wtr cin wss wral wcel elin trss im2anan9 syl5bi ssin syl6ib ralrimiv
+      wa cv dftr3 sylibr ) ADZBDZPZCQZABEZFZCUDGUDDUBUECUDUBUCUDHZUCAFZUCBFZPZU
+      EUFUCAHZUCBHZPUBUIUCABITUJUGUAUKUHAUCJBUCJKLUCABMNOCUDRS $.
+  $}
+
+  $( The empty set is transitive.  (Contributed by NM, 16-Sep-1993.) $)
+  tr0 $p |- Tr (/) $=
+    ( c0 wtr cpw wss 0ss dftr4 mpbir ) ABAACZDHEAFG $.
+
+  $( The universe is transitive.  (Contributed by NM, 14-Sep-2003.) $)
+  trv $p |- Tr _V $=
+    ( cvv wtr cuni wss ssv df-tr mpbir ) ABACZADHEAFG $.
+
+  ${
+    $d x y z A $.  $d y z B $.
+    $( The indexed union of a class of transitive sets is transitive.
+       (Contributed by Mario Carneiro, 16-Nov-2014.) $)
+    triun $p |- ( A. x e. A Tr B -> Tr U_ x e. A B ) $=
+      ( vy wtr wral cv ciun wss wcel wrex eliun r19.29 nfcv nfiu1 nfss trss imp
+      wa ssiun2 sstr2 syl5com syl5 rexlimi syl sylan2b ralrimiva dftr3 sylibr )
+      CEZABFZDGZABCHZIZDUMFUMEUKUNDUMULUMJUKULCJZABKZUNAULBCLUKUPSUJUOSZABKUNUJ
+      UOABMUQUNABAULUMAULNABCOPUQULCIZAGBJZUNUJUOURCULQRUSCUMIURUNABCTULCUMUAUB
+      UCUDUEUFUGDUMUHUI $.
+
+    $( The union of a class of transitive sets is transitive.  Exercise 5(a) of
+       [Enderton] p. 73.  (Contributed by Scott Fenton, 21-Feb-2011.)  (Proof
+       shortened by Mario Carneiro, 26-Apr-2014.) $)
+    truni $p |- ( A. x e. A Tr x -> Tr U. A ) $=
+      ( cv wtr wral ciun cuni triun wceq wb uniiun treq ax-mp sylibr ) ACZDABEA
+      BOFZDZBGZDZABOHRPISQJABKRPLMN $.
+
+    $( The intersection of a class of transitive sets is transitive.  Exercise
+       5(b) of [Enderton] p. 73.  (Contributed by Scott Fenton,
+       25-Feb-2011.) $)
+    trint $p |- ( A. x e. A Tr x -> Tr |^| A ) $=
+      ( vy cv wtr wral wel wss wi cint dftr3 ralbii biimpi df-ral ralcom4 bitri
+      wal sylib ralim alimi syl wcel vex elint2 ssint imbi12i albii sylibr ) AD
+      ZEZABFZCAGZABFZCDZUIHZABFZIZCQZBJZEZUKULUOIZABFZCQZURUKUOCUIFZABFZVCUKVEU
+      JVDABCUIKLMVEVACQZABFVCVDVFABUOCUINLVAACBOPRVBUQCULUOABSTUAUTUNUSHZCUSFZU
+      RCUSKVHUNUSUBZVGIZCQURVGCUSNVJUQCVIUMVGUPAUNBCUCUDAUNBUEUFUGPPUH $.
+
+    $( If ` A ` is transitive and non-null, then ` |^| A ` is a subset of
+       ` A ` .  (Contributed by Scott Fenton, 3-Mar-2011.) $)
+    trintss $p |- ( ( A =/= (/) /\ Tr A ) -> |^| A C_ A ) $=
+      ( vy vx c0 wne wtr wa cint cv wcel wel wral elint2 wrex r19.2z exp3acom23
+      vex ex trel rexlimdv sylan9 syl5bi ssrdv ) ADEZAFZGZBAHZABIZUGJBCKZCALZUF
+      UHAJZCUHABQMUDUJUICANZUEUKUDUJULUICAORUEUIUKCAUEUICIZAJUKAUHUMSPTUAUBUC
+      $.
+
+    $( Any non-empty transitive class includes its intersection.  Exercise 2 in
+       [TakeutiZaring] p. 44.  (Contributed by Andrew Salmon, 14-Nov-2011.) $)
+    trint0 $p |- ( ( Tr A /\ A =/= (/) ) -> |^| A C_ A ) $=
+      ( vx c0 wne wtr cint wss cv wcel wex wi intss1 trss com12 sylsyld exlimiv
+      n0 sstr2 sylbi impcom ) ACDZAEZAFZAGZUABHZAIZBJUBUDKZBAQUFUGBUFUCUEGUBUEA
+      GZUDUEALUBUFUHAUEMNUCUEAROPST $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -32741,6 +32889,10 @@ htmldef "|->" as " <IMG SRC='mapsto.gif' WIDTH=15 HEIGHT=19 ALT=' |-&gt;'" +
   althtmldef "|->" as ' &#8614; ';
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "|->" as "\mapsto";
+htmldef "Tr" as
+    "<IMG SRC='_ctr.gif' WIDTH=16 HEIGHT=19 ALT=' Tr' TITLE='Tr'> ";
+  althtmldef "Tr" as 'Tr ';
+  latexdef "Tr" as "{\rm Tr}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
