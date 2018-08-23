@@ -31709,6 +31709,403 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Ordered-pair class abstractions (class builders)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c |-> $.  $( Maps-to symbol $)
+
+  $( Extend class notation to include ordered-pair class abstraction (class
+     builder). $)
+  copab $a class { <. x , y >. | ph } $.
+
+  $( Extend the definition of a class to include maps-to notation for defining
+     a function via a rule. $)
+  cmpt $a class ( x e. A |-> B ) $.
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.
+    $( Define the class abstraction of a collection of ordered pairs.
+       Definition 3.3 of [Monk1] p. 34.  Usually ` x ` and ` y ` are distinct,
+       although the definition doesn't strictly require it (see ~ dfid2 for a
+       case where they are not distinct).  The brace notation is called "class
+       abstraction" by Quine; it is also (more commonly) called a "class
+       builder" in the literature.  An alternate definition using no
+       existential quantifiers is shown by ~ dfopab2 .  For example,
+` R = { <. x , y >. | ( x e. CC /\ y e. CC /\ ( x + 1 ) = y ) } -> 3 R 4 `
+       ( ~ ex-opab ).  (Contributed by NM, 4-Jul-1994.) $)
+    df-opab $a |- { <. x , y >. | ph } =
+                  { z | E. x E. y ( z = <. x , y >. /\ ph ) } $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( Define maps-to notation for defining a function via a rule.  Read as
+       "the function defined by the map from ` x ` (in ` A ` ) to
+       ` B ( x ) ` ."  The class expression ` B ` is the value of the function
+       at ` x ` and normally contains the variable ` x ` .  An example is the
+       square function for complex numbers, ` ( x e. CC |-> ( x ^ 2 ) ) ` .
+       Similar to the definition of mapping in [ChoquetDD] p. 2.  (Contributed
+       by NM, 17-Feb-2008.) $)
+    df-mpt $a |- ( x e. A |-> B ) =
+                    { <. x , y >. | ( x e. A /\ y = B ) } $.
+  $}
+
+  ${
+    $d x z R $.  $d y z R $.
+    $( The collection of ordered pairs in a class is a subclass of it.
+       (Contributed by NM, 27-Dec-1996.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    opabss $p |- { <. x , y >. | x R y } C_ R $=
+      ( vz cv wbr copab cop wceq wa wex cab df-opab df-br eleq1 biimpar sylan2b
+      wcel exlimivv abssi eqsstri ) AEZBEZCFZABGDEZUBUCHZIZUDJZBKAKZDLCUDABDMUI
+      DCUHUECRZABUDUGUFCRZUJUBUCCNUGUJUKUEUFCOPQSTUA $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.  $d z ps $.  $d z ch $.
+    opabbid.1 $e |- F/ x ph $.
+    opabbid.2 $e |- F/ y ph $.
+    opabbid.3 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equivalent wff's yield equal ordered-pair class abstractions (deduction
+       rule).  (Contributed by NM, 21-Feb-2004.)  (Proof shortened by Andrew
+       Salmon, 9-Jul-2011.) $)
+    opabbid $p |- ( ph -> { <. x , y >. | ps } = { <. x , y >. | ch } ) $=
+      ( vz cv cop wceq wa wex cab copab anbi2d exbid abbidv df-opab 3eqtr4g ) A
+      IJDJEJKLZBMZENZDNZIOUBCMZENZDNZIOBDEPCDEPAUEUHIAUDUGDFAUCUFEGABCUBHQRRSBD
+      EITCDEITUA $.
+  $}
+
+  ${
+    $d x ph $.  $d y z ph $.  $d z ps $.  $d z ch $.
+    opabbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equivalent wff's yield equal ordered-pair class abstractions (deduction
+       rule).  (Contributed by NM, 15-May-1995.) $)
+    opabbidv $p |- ( ph -> { <. x , y >. | ps } = { <. x , y >. | ch } ) $=
+      ( nfv opabbid ) ABCDEADGAEGFH $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.  $d z ps $.
+    opabbii.1 $e |- ( ph <-> ps ) $.
+    $( Equivalent wff's yield equal class abstractions.  (Contributed by NM,
+       15-May-1995.) $)
+    opabbii $p |- { <. x , y >. | ph } = { <. x , y >. | ps } $=
+      ( vz cv wceq copab eqid wb a1i opabbidv ax-mp ) FGZOHZACDIBCDIHOJPABCDABK
+      PELMN $.
+  $}
+
+  ${
+    $d x z w $.  $d y z w $.  $d ph w $.
+    nfopab.1 $e |- F/ z ph $.
+    $( Bound-variable hypothesis builder for class abstraction.  (Contributed
+       by NM, 1-Sep-1999.)  (Unnecessary distinct variable restrictions were
+       removed by Andrew Salmon, 11-Jul-2011.) $)
+    nfopab $p |- F/_ z { <. x , y >. | ph } $=
+      ( vw copab cv cop wceq wa wex cab df-opab nfv nfan nfex nfab nfcxfr ) DAB
+      CGFHBHCHIJZAKZCLZBLZFMABCFNUCDFUBDBUADCTADTDOEPQQRS $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.
+    $( The first abstraction variable in an ordered-pair class abstraction
+       (class builder) is effectively not free.  (Contributed by NM,
+       16-May-1995.)  (Revised by Mario Carneiro, 14-Oct-2016.) $)
+    nfopab1 $p |- F/_ x { <. x , y >. | ph } $=
+      ( vz copab cv cop wceq wa wex cab df-opab nfe1 nfab nfcxfr ) BABCEDFBFCFG
+      HAICJZBJZDKABCDLQBDPBMNO $.
+
+    $( The second abstraction variable in an ordered-pair class abstraction
+       (class builder) is effectively not free.  (Contributed by NM,
+       16-May-1995.)  (Revised by Mario Carneiro, 14-Oct-2016.) $)
+    nfopab2 $p |- F/_ y { <. x , y >. | ph } $=
+      ( vz copab cv cop wceq wa wex cab df-opab nfe1 nfex nfab nfcxfr ) CABCEDF
+      BFCFGHAIZCJZBJZDKABCDLSCDRCBQCMNOP $.
+  $}
+
+  ${
+    $d x y z w v $.  $d v ph $.  $d v ps $.
+    cbvopab.1 $e |- F/ z ph $.
+    cbvopab.2 $e |- F/ w ph $.
+    cbvopab.3 $e |- F/ x ps $.
+    cbvopab.4 $e |- F/ y ps $.
+    cbvopab.5 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables in an ordered-pair class
+       abstraction, using implicit substitution.  (Contributed by NM,
+       14-Sep-2003.) $)
+    cbvopab $p |- { <. x , y >. | ph } = { <. z , w >. | ps } $=
+      ( vv cv cop wceq wa wex cab nfv nfan opeq12 eqeq2d anbi12d cbvex2 df-opab
+      copab abbii 3eqtr4i ) LMZCMZDMZNZOZAPZDQCQZLRUIEMZFMZNZOZBPZFQEQZLRACDUFB
+      EFUFUOVALUNUTCDEFUMAEUMESGTUMAFUMFSHTUSBCUSCSITUSBDUSDSJTUJUPOUKUQOPZUMUS
+      ABVBULURUIUJUKUPUQUAUBKUCUDUGACDLUEBEFLUEUH $.
+  $}
+
+  ${
+    $d x y z w $.  $d z w v ph $.  $d x y v ps $.
+    cbvopabv.1 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables in an ordered-pair class
+       abstraction, using implicit substitution.  (Contributed by NM,
+       15-Oct-1996.) $)
+    cbvopabv $p |- { <. x , y >. | ph } = { <. z , w >. | ps } $=
+      ( nfv cbvopab ) ABCDEFAEHAFHBCHBDHGI $.
+  $}
+
+  ${
+    $d v w x y $.  $d v w y z $.  $d v w ph $.  $d v w ps $.
+    cbvopab1.1 $e |- F/ z ph $.
+    cbvopab1.2 $e |- F/ x ps $.
+    cbvopab1.3 $e |- ( x = z -> ( ph <-> ps ) ) $.
+    $( Change first bound variable in an ordered-pair class abstraction, using
+       explicit substitution.  (Contributed by NM, 6-Oct-2004.)  (Revised by
+       Mario Carneiro, 14-Oct-2016.) $)
+    cbvopab1 $p |- { <. x , y >. | ph } = { <. z , y >. | ps } $=
+      ( vw vv cv cop wceq wa wex cab copab wsb nfv nfan nfs1v nfex opeq1 eqeq2d
+      sbequ12 anbi12d exbidv cbvex nfsb sbequ sbie syl6bb bitri df-opab 3eqtr4i
+      abbii ) IKZCKZDKZLZMZANZDOZCOZIPUQEKZUSLZMZBNZDOZEOZIPACDQBEDQVDVJIVDUQJK
+      ZUSLZMZACJRZNZDOZJOVJVCVPCJVCJSVOCDVMVNCVMCSACJUATUBURVKMZVBVODVQVAVMAVNV
+      QUTVLUQURVKUSUCUDACJUEUFUGUHVPVIJEVOEDVMVNEVMESACJEFUITUBVIJSVKVEMZVOVHDV
+      RVMVGVNBVRVLVFUQVKVEUSUCUDVRVNACERBAJECUJABCEGHUKULUFUGUHUMUPACDIUNBEDIUN
+      UO $.
+  $}
+
+  ${
+    $d w x y z $.  $d w ph $.  $d w ps $.
+    cbvopab2.1 $e |- F/ z ph $.
+    cbvopab2.2 $e |- F/ y ps $.
+    cbvopab2.3 $e |- ( y = z -> ( ph <-> ps ) ) $.
+    $( Change second bound variable in an ordered-pair class abstraction, using
+       explicit substitution.  (Contributed by NM, 22-Aug-2013.) $)
+    cbvopab2 $p |- { <. x , y >. | ph } = { <. x , z >. | ps } $=
+      ( vw cv cop wceq wa wex cab copab nfv nfan opeq2 df-opab anbi12d 3eqtr4i
+      eqeq2d cbvex exbii abbii ) IJZCJZDJZKZLZAMZDNZCNZIOUGUHEJZKZLZBMZENZCNZIO
+      ACDPBCEPUNUTIUMUSCULURDEUKAEUKEQFRUQBDUQDQGRUIUOLZUKUQABVAUJUPUGUIUOUHSUC
+      HUAUDUEUFACDITBCEITUB $.
+  $}
+
+  ${
+    $d x y z w $.  $d z w ph $.
+    $( Change first bound variable in an ordered-pair class abstraction, using
+       explicit substitution.  (Contributed by NM, 31-Jul-2003.) $)
+    cbvopab1s $p |- { <. x , y >. | ph } = { <. z , y >. | [ z / x ] ph } $=
+      ( vw cv cop wceq wa wex cab wsb copab nfv nfs1v nfan opeq1 eqeq2d df-opab
+      nfex sbequ12 anbi12d exbidv cbvex abbii 3eqtr4i ) EFZBFZCFZGZHZAIZCJZBJZE
+      KUGDFZUIGZHZABDLZIZCJZDJZEKABCMURDCMUNVAEUMUTBDUMDNUSBCUQURBUQBNABDOPTUHU
+      OHZULUSCVBUKUQAURVBUJUPUGUHUOUIQRABDUAUBUCUDUEABCESURDCESUF $.
+  $}
+
+  ${
+    $d x y $.  $d y z $.  $d z ph $.  $d x ps $.
+    cbvopab1v.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
+    $( Rule used to change the first bound variable in an ordered pair
+       abstraction, using implicit substitution.  (Contributed by NM,
+       31-Jul-2003.)  (Proof shortened by Eric Schmidt, 4-Apr-2007.) $)
+    cbvopab1v $p |- { <. x , y >. | ph } = { <. z , y >. | ps } $=
+      ( nfv cbvopab1 ) ABCDEAEGBCGFH $.
+  $}
+
+  ${
+    $d x y z w $.  $d z w ph $.  $d y w ps $.
+    cbvopab2v.1 $e |- ( y = z -> ( ph <-> ps ) ) $.
+    $( Rule used to change the second bound variable in an ordered pair
+       abstraction, using implicit substitution.  (Contributed by NM,
+       2-Sep-1999.) $)
+    cbvopab2v $p |- { <. x , y >. | ph } = { <. x , z >. | ps } $=
+      ( vw cv cop wceq wex cab copab opeq2 eqeq2d anbi12d cbvexv exbii df-opab
+      wa abbii 3eqtr4i ) GHZCHZDHZIZJZATZDKZCKZGLUCUDEHZIZJZBTZEKZCKZGLACDMBCEM
+      UJUPGUIUOCUHUNDEUEUKJZUGUMABUQUFULUCUEUKUDNOFPQRUAACDGSBCEGSUB $.
+  $}
+
+  ${
+    $d w y z A $.  $d w ph $.  $d w x y z $.
+    $( Move substitution into a class abstraction.  (Contributed by NM,
+       6-Aug-2007.)  (Proof shortened by Mario Carneiro, 17-Nov-2016.) $)
+    csbopabg $p |- ( A e. V -> [_ A / x ]_ { <. y , z >. | ph } =
+               { <. y , z >. | [. A / x ]. ph } ) $=
+      ( vw cv copab csb wsb wceq wsbc csbeq1 dfsbcq2 opabbidv eqeq12d vex nfs1v
+      nfopab sbequ12 csbief vtoclg ) BGHZACDIZJZABGKZCDIZLBEUEJZABEMZCDIZLGEFUD
+      ELZUFUIUHUKBUDEUENULUGUJCDABGEOPQBUDUEUHGRUGCDBABGSTBHUDLAUGCDABGUAPUBUC
+      $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d ph z $.  $d ps z $.
+    $( Union of two ordered pair class abstractions.  (Contributed by NM,
+       30-Sep-2002.) $)
+    unopab $p |- ( { <. x , y >. | ph } u. { <. x , y >. | ps } ) =
+               { <. x , y >. | ( ph \/ ps ) } $=
+      ( vz cv cop wceq wa wex cab wo copab unab 19.43 andi exbii bitr2i df-opab
+      cun bitr3i abbii eqtri uneq12i 3eqtr4i ) EFCFDFGHZAIZDJZCJZEKZUFBIZDJZCJZ
+      EKZTZUFABLZIZDJZCJZEKZACDMZBCDMZTUPCDMUOUIUMLZEKUTUIUMENVCUSEVCUHULLZCJUS
+      UHULCOVDURCURUGUKLZDJVDUQVEDUFABPQUGUKDORQUAUBUCVAUJVBUNACDESBCDESUDUPCDE
+      SUE $.
+  $}
+
+  ${
+    $d x y ph $.  $d y A $.  $d y B $.  $d y C $.  $d y D $.
+    $( An equality theorem for the maps to notation.  (Contributed by Mario
+       Carneiro, 16-Dec-2013.) $)
+    mpteq12f $p |- ( ( A. x A = C /\ A. x e. A B = D ) ->
+                    ( x e. A |-> B ) = ( x e. C |-> D ) ) $=
+      ( vy wceq wal wral wa cv wcel copab cmpt nfa1 nfra1 nfan nfv rsp df-mpt
+      imp eqeq2d pm5.32da sp eleq2d anbi1d sylan9bbr opabbid 3eqtr4g ) BDGZAHZC
+      EGZABIZJZAKZBLZFKZCGZJZAFMUODLZUQEGZJZAFMABCNADENUNUSVBAFUKUMAUJAOULABPQU
+      NFRUMUSUPVAJUKVBUMUPURVAUMUPJCEUQUMUPULULABSUAUBUCUKUPUTVAUKBDUOUJAUDUEUF
+      UGUHAFBCTAFDETUI $.
+
+    mpteq12dv.1 $e |- ( ph -> A = C ) $.
+    ${
+      mpteq12dva.2 $e |- ( ( ph /\ x e. A ) -> B = D ) $.
+      $( An equality inference for the maps to notation.  (Contributed by Mario
+         Carneiro, 26-Jan-2017.) $)
+      mpteq12dva $p |- ( ph -> ( x e. A |-> B ) = ( x e. C |-> D ) ) $=
+        ( wceq wal wral cmpt alrimiv ralrimiva mpteq12f syl2anc ) ACEIZBJDFIZBC
+        KBCDLBEFLIAQBGMARBCHNBCDEFOP $.
+    $}
+
+    mpteq12dv.2 $e |- ( ph -> B = D ) $.
+    $( An equality inference for the maps to notation.  (Contributed by NM,
+       24-Aug-2011.)  (Revised by Mario Carneiro, 16-Dec-2013.) $)
+    mpteq12dv $p |- ( ph -> ( x e. A |-> B ) = ( x e. C |-> D ) ) $=
+      ( wceq cv wcel adantr mpteq12dva ) ABCDEFGADFIBJCKHLM $.
+  $}
+
+  ${
+    $d x A $.  $d x C $.
+    $( An equality theorem for the maps to notation.  (Contributed by NM,
+       16-Dec-2013.) $)
+    mpteq12 $p |- ( ( A = C /\ A. x e. A B = D ) ->
+                    ( x e. A |-> B ) = ( x e. C |-> D ) ) $=
+      ( wceq wal wral cmpt ax-17 mpteq12f sylan ) BDFZMAGCEFABHABCIADEIFMAJABCD
+      EKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( An equality theorem for the maps to notation.  (Contributed by Mario
+       Carneiro, 16-Dec-2013.) $)
+    mpteq1 $p |- ( A = B -> ( x e. A |-> C ) = ( x e. B |-> C ) ) $=
+      ( wceq wral cmpt cv wcel eqidd rgen mpteq12 mpan2 ) BCEDDEZABFABDGACDGENA
+      BAHBIDJKABDCDLM $.
+
+    mpteq1d.1 $e |- ( ph -> A = B ) $.
+    $( An equality theorem for the maps to notation.  (Contributed by Mario
+       Carneiro, 11-Jun-2016.) $)
+    mpteq1d $p |- ( ph -> ( x e. A |-> C ) = ( x e. B |-> C ) ) $=
+      ( wceq cmpt mpteq1 syl ) ACDGBCEHBDEHGFBCDEIJ $.
+  $}
+
+  ${
+    mpteq2ia.1 $e |- ( x e. A -> B = C ) $.
+    $( An equality inference for the maps to notation.  (Contributed by Mario
+       Carneiro, 16-Dec-2013.) $)
+    mpteq2ia $p |- ( x e. A |-> B ) = ( x e. A |-> C ) $=
+      ( wceq wal wral cmpt eqid ax-gen rgen mpteq12f mp2an ) BBFZAGCDFZABHABCIA
+      BDIFOABJKPABELABCBDMN $.
+  $}
+
+  ${
+    mpteq2i.1 $e |- B = C $.
+    $( An equality inference for the maps to notation.  (Contributed by Mario
+       Carneiro, 16-Dec-2013.) $)
+    mpteq2i $p |- ( x e. A |-> B ) = ( x e. A |-> C ) $=
+      ( wceq cv wcel a1i mpteq2ia ) ABCDCDFAGBHEIJ $.
+  $}
+
+  ${
+    mpteq12i.1 $e |- A = C $.
+    mpteq12i.2 $e |- B = D $.
+    $( An equality inference for the maps to notation.  (Contributed by Scott
+       Fenton, 27-Oct-2010.)  (Revised by Mario Carneiro, 16-Dec-2013.) $)
+    mpteq12i $p |- ( x e. A |-> B ) = ( x e. C |-> D ) $=
+      ( cmpt wceq wtru a1i mpteq12dv trud ) ABCHADEHIJABCDEBDIJFKCEIJGKLM $.
+  $}
+
+  ${
+    mpteq2da.1 $e |- F/ x ph $.
+    mpteq2da.2 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
+    $( Slightly more general equality inference for the maps to notation.
+       (Contributed by FL, 14-Sep-2013.)  (Revised by Mario Carneiro,
+       16-Dec-2013.) $)
+    mpteq2da $p |- ( ph -> ( x e. A |-> B ) = ( x e. A |-> C ) ) $=
+      ( wceq wal wral cmpt eqid ax-gen cv wcel ex ralrimi mpteq12f sylancr ) AC
+      CHZBIDEHZBCJBCDKBCEKHTBCLMAUABCFABNCOUAGPQBCDCERS $.
+  $}
+
+  ${
+    $d x ph $.
+    mpteq2dva.1 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
+    $( Slightly more general equality inference for the maps to notation.
+       (Contributed by Scott Fenton, 25-Apr-2012.) $)
+    mpteq2dva $p |- ( ph -> ( x e. A |-> B ) = ( x e. A |-> C ) ) $=
+      ( nfv mpteq2da ) ABCDEABGFH $.
+  $}
+
+  ${
+    $d x ph $.
+    mpteq2dv.1 $e |- ( ph -> B = C ) $.
+    $( An equality inference for the maps to notation.  (Contributed by Mario
+       Carneiro, 23-Aug-2014.) $)
+    mpteq2dv $p |- ( ph -> ( x e. A |-> B ) = ( x e. A |-> C ) ) $=
+      ( wceq cv wcel adantr mpteq2dva ) ABCDEADEGBHCIFJK $.
+  $}
+
+  ${
+    $d z A $.  $d z B $.  $d x y z $.
+    nfmpt.1 $e |- F/_ x A $.
+    nfmpt.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for the maps-to notation.
+       (Contributed by NM, 20-Feb-2013.) $)
+    nfmpt $p |- F/_ x ( y e. A |-> B ) $=
+      ( vz cmpt cv wcel wceq wa copab df-mpt nfcri nfeq2 nfan nfopab nfcxfr ) A
+      BCDHBICJZGIZDKZLZBGMBGCDNUCBGATUBAABCEOAUADFPQRS $.
+  $}
+
+  ${
+    $d A z $.  $d B z $.  $d x y $.  $d x z $.
+    $( Bound-variable hypothesis builder for the maps-to notation.
+       (Contributed by FL, 17-Feb-2008.) $)
+    nfmpt1 $p |- F/_ x ( x e. A |-> B ) $=
+      ( vz cmpt cv wcel wceq wa copab df-mpt nfopab1 nfcxfr ) AABCEAFBGDFCHIZAD
+      JADBCKNADLM $.
+  $}
+
+  ${
+    $d w z x A $.  $d w z y A $.  $d w z B $.  $d w z C $.
+    cbvmpt.1 $e |- F/_ y B $.
+    cbvmpt.2 $e |- F/_ x C $.
+    cbvmpt.3 $e |- ( x = y -> B = C ) $.
+    $( Rule to change the bound variable in a maps-to function, using implicit
+       substitution.  This version has bound-variable hypotheses in place of
+       distinct variable conditions.  (Contributed by NM, 11-Sep-2011.) $)
+    cbvmpt $p |- ( x e. A |-> B ) = ( y e. A |-> C ) $=
+      ( vz vw cv wcel wceq wa copab cmpt wsb nfv nfan weq nfs1v sbequ12 anbi12d
+      eleq1 cbvopab1 nfeq2 nfsb sbequ eqeq2d sbie syl6bb eqtri df-mpt 3eqtr4i )
+      AKZCLZIKZDMZNZAIOZBKZCLZUQEMZNZBIOZACDPBCEPUTJKZCLZURAJQZNZJIOVEUSVIAIJUS
+      JRVGVHAVGARURAJUASAJTUPVGURVHUOVFCUDURAJUBUCUEVIVDJIBVGVHBVGBRURAJBBUQDFU
+      FUGSVDJRJBTZVGVBVHVCVFVACUDVJVHURABQVCURJBAUHURVCABAUQEGUFABTDEUQHUIUJUKU
+      CUEULAICDUMBICEUMUN $.
+  $}
+
+  ${
+    $d A x $.  $d A y $.  $d B y $.  $d C x $.
+    cbvmptv.1 $e |- ( x = y -> B = C ) $.
+    $( Rule to change the bound variable in a maps-to function, using implicit
+       substitution.  (Contributed by Mario Carneiro, 19-Feb-2013.) $)
+    cbvmptv $p |- ( x e. A |-> B ) = ( y e. A |-> C ) $=
+      ( nfcv cbvmpt ) ABCDEBDGAEGFH $.
+  $}
+
+  ${
+    $d x y $.  $d y B $.
+    $( Function with universal domain in maps-to notation.  (Contributed by NM,
+       16-Aug-2013.) $)
+    mptv $p |- ( x e. _V |-> B ) = { <. x , y >. | y = B } $=
+      ( cvv cmpt cv wcel wceq wa copab df-mpt vex biantrur opabbii eqtr4i ) ADC
+      EAFDGZBFCHZIZABJQABJABDCKQRABPQALMNO $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -32343,6 +32740,11 @@ htmldef "|^|_" as
 htmldef "Disj_" as "<u>Disj</u> ";
   althtmldef "Disj_" as "<u>Disj</u> ";
   latexdef "Disj_" as "\operatorname{\underline{Disj}}";
+htmldef "|->" as " <IMG SRC='mapsto.gif' WIDTH=15 HEIGHT=19 ALT=' |-&gt;'" +
+    " TITLE='|-&gt;'> ";
+  althtmldef "|->" as ' &#8614; ';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "|->" as "\mapsto";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
