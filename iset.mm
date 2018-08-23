@@ -32115,13 +32115,11 @@ $)
      [TakeutiZaring] p. 35. $)
   wtr $a wff Tr A $.
 
-  $( Define the transitive class predicate.  Not to be confused with a
-     transitive relation (see ~ cotr ).  Definition of [Enderton] p. 71
+  $( Define the transitive class predicate.  Definition of [Enderton] p. 71
      extended to arbitrary classes.  For alternate definitions, see ~ dftr2
-     (which is suggestive of the word "transitive"), ~ dftr3 , ~ dftr4 ,
-     ~ dftr5 , and (when ` A ` is a set) ~ unisuc .  The term "complete" is
-     used instead of "transitive" in Definition 3 of [Suppes] p. 130.
-     (Contributed by NM, 29-Aug-1993.) $)
+     (which is suggestive of the word "transitive"), ~ dftr3 , ~ dftr4 , and
+     ~ dftr5 .  The term "complete" is used instead of "transitive" in
+     Definition 3 of [Suppes] p. 130.  (Contributed by NM, 29-Aug-1993.) $)
   df-tr $a |- ( Tr A <-> U. A C_ A ) $.
 
   ${
