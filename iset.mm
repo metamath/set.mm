@@ -31232,37 +31232,6 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d y z B $.  $d x y z C $.  $d x y z D $.
-    $( A disjoint collection yields disjoint indexed unions for disjoint index
-       sets.  (Contributed by Mario Carneiro, 26-Mar-2015.)  (Revised by Mario
-       Carneiro, 14-Nov-2016.) $)
-    disjiun $p |- ( ( Disj_ x e. A B /\
-      ( C C_ A /\ D C_ A /\ ( C i^i D ) = (/) ) ) ->
-        ( U_ x e. C B i^i U_ x e. D B ) = (/) ) $=
-      ( vy vz wss cin c0 wceq wa cv wcel wi wrex wral impcom syl syl5bi ciun wn
-      wdisj w3a wal wrmo df-disj wne elin eliun anbi12i weq wex nfv rmo2 ssralv
-      bitri an4 r19.29 id imp eleq1d biimpcd rexlimiv ex expimpd anim12d inelcm
-      syl6 exlimiv exp3a sylbi necon2bd impancom 3impa alimdv eq0 sylibr ) ABCU
-      CZDBHZEBHZDEIZJKZUDZLFMZADCUAZAECUAZIZNZUBZFUEZWHJKWDVSWKVSWECNZABUFZFUEW
-      DWKAFBCUGWDWMWJFVTWAWCWMWJOVTWALZWMWCWJWNWMLZWIWBJWIWLADPZWLAEPZLZWOWBJUH
-      ZWIWEWFNZWEWGNZLWRWEWFWGUIWTWPXAWQAWEDCUJAWEECUJUKUQWMWNWRWSOZWMWLAGULZOZ
-      ABQZGUMZWNXBOWLAGBWLGUNUOXFWNWRWSWNWRLVTWPLZWAWQLZLZXFWSVTWAWPWQURXEXIWSO
-      GXEXIGMZDNZXJENZLWSXEXGXKXHXLXEVTWPXKXEVTLXDADQZWPXKOVTXEXMXDADBUPRXMWPXK
-      XMWPLXDWLLZADPXKXDWLADUSXNXKADXNAMZDNXKXNXOXJDXDWLXCXDUTVAZVBVCVDSVESVFXE
-      WAWQXLXEWALXDAEQZWQXLOWAXEXQXDAEBUPRXQWQXLXQWQLXNAEPXLXDWLAEUSXNXLAEXNXOE
-      NXLXNXOXJEXPVBVCVDSVESVFVGXJDEVHVIVJTVKVLRTVMVNVOVPTRFWHVQVR $.
-
-    $( A disjoint collection yields disjoint indexed unions for disjoint index
-       sets.  (Contributed by Mario Carneiro, 26-Mar-2015.)
-       (New usage is discouraged.)  (Proof modification is discouraged.) $)
-    disjiunOLD $p |- ( ( A. y E* x ( x e. A /\ y e. B ) /\
-      ( C C_ A /\ D C_ A /\ ( C i^i D ) = (/) ) ) ->
-        ( U_ x e. C B i^i U_ x e. D B ) = (/) ) $=
-      ( cv wcel wa wmo wal wdisj wss cin c0 wceq w3a ciun dfdisj2 disjiun
-      sylanbr ) AGCHBGDHIAJBKACDLECMFCMEFNOPQAEDRAFDRNOPABCDSACDEFTUA $.
-  $}
-
-  ${
     $d x y $.  $d y A $.
     $( Any collection of singletons is disjoint.  (Contributed by Mario
        Carneiro, 14-Nov-2016.) $)
