@@ -4180,14 +4180,14 @@
 "csbabgOLD" is used by "csbfv12gALT".
 "csbabgOLD" is used by "csbfv12gALTVD".
 "csbabgOLD" is used by "csbingVD".
-"csbabgOLD" is used by "csbrng".
+"csbabgOLD" is used by "csbrngOLD".
 "csbabgOLD" is used by "csbrngVD".
 "csbabgOLD" is used by "csbsng".
 "csbabgOLD" is used by "csbsngVD".
-"csbabgOLD" is used by "csbunig".
+"csbabgOLD" is used by "csbunigOLD".
 "csbabgOLD" is used by "csbunigVD".
 "csbabgOLD" is used by "csbwrdg".
-"csbabgOLD" is used by "csbxpg".
+"csbabgOLD" is used by "csbxpgOLD".
 "csbabgOLD" is used by "csbxpgVD".
 "csbcomgOLD" is used by "ovmpt2s".
 "csbeq2g" is used by "csbfv12gALTVD".
@@ -4225,14 +4225,26 @@
 "csbima12gOLD" is used by "csbfv12gALT".
 "csbima12gOLD" is used by "csbfv12gALTVD".
 "csbima12gOLD" is used by "disjpreima".
-"csbingOLD" is used by "csbresg".
+"csbingOLD" is used by "csbresgOLD".
 "csbingOLD" is used by "csbresgVD".
 "csbingOLD" is used by "disjxpin".
 "csbingOLD" is used by "onfrALTlem4".
 "csbingOLD" is used by "onfrALTlem4VD".
 "csbingOLD" is used by "onfrALTlem5".
 "csbingOLD" is used by "onfrALTlem5VD".
+"csbiotagOLD" is used by "csbfv12".
+"csbiotagOLD" is used by "csbfv12gOLD".
 "csbnestgOLD" is used by "cdlemeg46c".
+"csbopabgOLD" is used by "csbcnvgOLD".
+"csbresgOLD" is used by "csbima12gALT".
+"csbresgOLD" is used by "csbima12gALTVD".
+"csbrngOLD" is used by "csbima12gALT".
+"csbrngOLD" is used by "csbima12gALTVD".
+"csbrngOLD" is used by "sbcf".
+"csbunigOLD" is used by "csbfv12gALT".
+"csbunigOLD" is used by "csbfv12gALTVD".
+"csbxpgOLD" is used by "csbresgOLD".
+"csbxpgOLD" is used by "csbresgVD".
 "ctpsOLD" is used by "eltopspOLD".
 "ctpsOLD" is used by "istps2OLD".
 "ctpsOLD" is used by "istps3OLD".
@@ -11784,6 +11796,8 @@
 "retbwax2" is used by "merco1lem2".
 "retbwax2" is used by "merco1lem3".
 "retbwax2" is used by "retbwax3".
+"rexsnsOLD" is used by "r19.12sn".
+"rexsnsOLD" is used by "rexsng".
 "riesz1" is used by "rnbra".
 "riesz3i" is used by "riesz1".
 "riesz3i" is used by "riesz4i".
@@ -11981,9 +11995,9 @@
 "sbcalgOLD" is used by "trsbc".
 "sbcalgOLD" is used by "trsbcVD".
 "sbcangOLD" is used by "csbingVD".
-"sbcangOLD" is used by "csbunig".
+"sbcangOLD" is used by "csbunigOLD".
 "sbcangOLD" is used by "csbunigVD".
-"sbcangOLD" is used by "csbxpg".
+"sbcangOLD" is used by "csbxpgOLD".
 "sbcangOLD" is used by "csbxpgVD".
 "sbcangOLD" is used by "onfrALTlem4VD".
 "sbcangOLD" is used by "onfrALTlem5".
@@ -11998,6 +12012,7 @@
 "sbcbiiOLD" is used by "sbc3org".
 "sbcbiiOLD" is used by "sbcssOLD".
 "sbcbiiOLD" is used by "trsbc".
+"sbcbrgOLD" is used by "csbfv12gOLD".
 "sbcco3gOLD" is used by "2rexfrabdioph".
 "sbcco3gOLD" is used by "3rexfrabdioph".
 "sbcco3gOLD" is used by "4rexfrabdioph".
@@ -12020,10 +12035,10 @@
 "sbcel2gOLD" is used by "csbcomgOLD".
 "sbcel2gOLD" is used by "csbdmg".
 "sbcel2gOLD" is used by "csbingVD".
-"sbcel2gOLD" is used by "csbrng".
-"sbcel2gOLD" is used by "csbunig".
+"sbcel2gOLD" is used by "csbrngOLD".
+"sbcel2gOLD" is used by "csbunigOLD".
 "sbcel2gOLD" is used by "csbunigVD".
-"sbcel2gOLD" is used by "csbxpg".
+"sbcel2gOLD" is used by "csbxpgOLD".
 "sbcel2gOLD" is used by "issubc".
 "sbcel2gOLD" is used by "sbccsbgOLD".
 "sbcel2gOLD" is used by "sbcss".
@@ -12031,11 +12046,11 @@
 "sbcel2gOLD" is used by "sbcssVD".
 "sbcel2gOLD" is used by "sbnfc2".
 "sbcexgOLD" is used by "csbdmg".
-"sbcexgOLD" is used by "csbrng".
+"sbcexgOLD" is used by "csbrngOLD".
 "sbcexgOLD" is used by "csbrngVD".
-"sbcexgOLD" is used by "csbunig".
+"sbcexgOLD" is used by "csbunigOLD".
 "sbcexgOLD" is used by "csbunigVD".
-"sbcexgOLD" is used by "csbxpg".
+"sbcexgOLD" is used by "csbxpgOLD".
 "sbcexgOLD" is used by "csbxpgVD".
 "sbcexgOLD" is used by "onfrALTlem5".
 "sbcexgOLD" is used by "onfrALTlem5VD".
@@ -14512,6 +14527,7 @@ New usage of "con5i" is discouraged (2 uses).
 New usage of "conventions" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
 New usage of "csbabgOLD" is discouraged (15 uses).
+New usage of "csbcnvgOLD" is discouraged (0 uses).
 New usage of "csbcomgOLD" is discouraged (1 uses).
 New usage of "csbeq2g" is discouraged (6 uses).
 New usage of "csbeq2gVD" is discouraged (0 uses).
@@ -14528,11 +14544,18 @@ New usage of "csbima12gALTVD" is discouraged (0 uses).
 New usage of "csbima12gOLD" is discouraged (3 uses).
 New usage of "csbingOLD" is discouraged (7 uses).
 New usage of "csbingVD" is discouraged (0 uses).
+New usage of "csbiotagOLD" is discouraged (2 uses).
 New usage of "csbnestgOLD" is discouraged (1 uses).
+New usage of "csbopabgOLD" is discouraged (1 uses).
+New usage of "csbovgOLD" is discouraged (0 uses).
+New usage of "csbresgOLD" is discouraged (2 uses).
 New usage of "csbresgVD" is discouraged (0 uses).
+New usage of "csbrngOLD" is discouraged (3 uses).
 New usage of "csbrngVD" is discouraged (0 uses).
 New usage of "csbsngVD" is discouraged (0 uses).
+New usage of "csbunigOLD" is discouraged (2 uses).
 New usage of "csbunigVD" is discouraged (0 uses).
+New usage of "csbxpgOLD" is discouraged (2 uses).
 New usage of "csbxpgVD" is discouraged (0 uses).
 New usage of "csmdsymi" is discouraged (0 uses).
 New usage of "ctpsOLD" is discouraged (8 uses).
@@ -17094,6 +17117,7 @@ New usage of "retpsOLD" is discouraged (0 uses).
 New usage of "reusv5OLD" is discouraged (0 uses).
 New usage of "reusv6OLD" is discouraged (0 uses).
 New usage of "reusv7OLD" is discouraged (0 uses).
+New usage of "rexsnsOLD" is discouraged (2 uses).
 New usage of "riesz1" is discouraged (1 uses).
 New usage of "riesz2" is discouraged (0 uses).
 New usage of "riesz3i" is discouraged (2 uses).
@@ -17163,6 +17187,7 @@ New usage of "sbcbi" is discouraged (4 uses).
 New usage of "sbcbiVD" is discouraged (0 uses).
 New usage of "sbcbiiOLD" is discouraged (6 uses).
 New usage of "sbcbiiiOLD" is discouraged (0 uses).
+New usage of "sbcbrgOLD" is discouraged (1 uses).
 New usage of "sbcco3gOLD" is discouraged (6 uses).
 New usage of "sbccomiegOLD" is discouraged (0 uses).
 New usage of "sbccsb2gOLD" is discouraged (0 uses).
@@ -17185,6 +17210,7 @@ New usage of "sbcrextOLD" is discouraged (0 uses).
 New usage of "sbcrot3OLD" is discouraged (0 uses).
 New usage of "sbcrot3gOLD" is discouraged (0 uses).
 New usage of "sbcrot5OLD" is discouraged (0 uses).
+New usage of "sbcsngOLD" is discouraged (0 uses).
 New usage of "sbcssOLD" is discouraged (0 uses).
 New usage of "sbcssVD" is discouraged (0 uses).
 New usage of "sbequ2OLD" is discouraged (0 uses).
@@ -17843,6 +17869,7 @@ Proof modification of "con5VD" is discouraged (47 steps).
 Proof modification of "con5i" is discouraged (13 steps).
 Proof modification of "conventions" is discouraged (1 steps).
 Proof modification of "csbabgOLD" is discouraged (93 steps).
+Proof modification of "csbcnvgOLD" is discouraged (112 steps).
 Proof modification of "csbcomgOLD" is discouraged (153 steps).
 Proof modification of "csbeq2g" is discouraged (33 steps).
 Proof modification of "csbeq2gVD" is discouraged (61 steps).
@@ -17859,11 +17886,18 @@ Proof modification of "csbima12gALTVD" is discouraged (140 steps).
 Proof modification of "csbima12gOLD" is discouraged (100 steps).
 Proof modification of "csbingOLD" is discouraged (100 steps).
 Proof modification of "csbingVD" is discouraged (248 steps).
+Proof modification of "csbiotagOLD" is discouraged (78 steps).
 Proof modification of "csbnestgOLD" is discouraged (31 steps).
+Proof modification of "csbopabgOLD" is discouraged (85 steps).
+Proof modification of "csbovgOLD" is discouraged (127 steps).
+Proof modification of "csbresgOLD" is discouraged (90 steps).
 Proof modification of "csbresgVD" is discouraged (187 steps).
+Proof modification of "csbrngOLD" is discouraged (96 steps).
 Proof modification of "csbrngVD" is discouraged (254 steps).
 Proof modification of "csbsngVD" is discouraged (196 steps).
+Proof modification of "csbunigOLD" is discouraged (130 steps).
 Proof modification of "csbunigVD" is discouraged (294 steps).
+Proof modification of "csbxpgOLD" is discouraged (228 steps).
 Proof modification of "csbxpgVD" is discouraged (520 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfbi1gb" is discouraged (100 steps).
@@ -18420,6 +18454,7 @@ Proof modification of "retpsOLD" is discouraged (21 steps).
 Proof modification of "reusv5OLD" is discouraged (99 steps).
 Proof modification of "reusv6OLD" is discouraged (370 steps).
 Proof modification of "reusv7OLD" is discouraged (297 steps).
+Proof modification of "rexsnsOLD" is discouraged (55 steps).
 Proof modification of "riota5OLD" is discouraged (26 steps).
 Proof modification of "riotasv2dOLD" is discouraged (337 steps).
 Proof modification of "riotasv3dOLD" is discouraged (241 steps).
@@ -18444,6 +18479,7 @@ Proof modification of "sbcbi" is discouraged (33 steps).
 Proof modification of "sbcbiVD" is discouraged (59 steps).
 Proof modification of "sbcbiiOLD" is discouraged (19 steps).
 Proof modification of "sbcbiiiOLD" is discouraged (6 steps).
+Proof modification of "sbcbrgOLD" is discouraged (116 steps).
 Proof modification of "sbcco3gOLD" is discouraged (30 steps).
 Proof modification of "sbccomiegOLD" is discouraged (31 steps).
 Proof modification of "sbccsb2gOLD" is discouraged (56 steps).
@@ -18466,6 +18502,7 @@ Proof modification of "sbcrextOLD" is discouraged (147 steps).
 Proof modification of "sbcrot3OLD" is discouraged (8 steps).
 Proof modification of "sbcrot3gOLD" is discouraged (42 steps).
 Proof modification of "sbcrot5OLD" is discouraged (12 steps).
+Proof modification of "sbcsngOLD" is discouraged (18 steps).
 Proof modification of "sbcssOLD" is discouraged (130 steps).
 Proof modification of "sbcssVD" is discouraged (223 steps).
 Proof modification of "sbequ2OLD" is discouraged (29 steps).
