@@ -31270,24 +31270,16 @@ $)
   $( Extend wff notation to include the general binary relation predicate.
      Note that the syntax is simply three class symbols in a row.  Since binary
      relations are the only possible wff expressions consisting of three class
-     expressions in a row, the syntax is unambiguous.  (For an example of how
-     syntax could become ambiguous if we are not careful, see the comment in
-     ~ cneg .) $)
+     expressions in a row, the syntax is unambiguous. $)
   wbr $a wff A R B $.
 
   $( Define a general binary relation.  Note that the syntax is simply three
      class symbols in a row.  Definition 6.18 of [TakeutiZaring] p. 29
-     generalized to arbitrary classes.  Class ` R ` often denotes a relation
-     such as " ` < ` " that compares two classes ` A ` and ` B ` , which might
-     be numbers such as ` 1 ` and ` 2 ` (see ~ df-ltxr for the specific
-     definition of ` < ` ).  As a wff, relations are true or false.  For
-     example, ` ( R = { <. 2 , 6 >. , <. 3 , 9 >. } -> 3 R 9 ) ` ( ~ ex-br ).
-     Often class ` R ` meets the ` Rel ` criteria to be defined in ~ df-rel ,
-     and in particular ` R ` may be a function (see ~ df-fun ).  This
-     definition of relations is well-defined, although not very meaningful,
-     when classes ` A ` and/or ` B ` are proper classes (i.e. are not sets).
-     On the other hand, we often find uses for this definition when ` R ` is a
-     proper class.  (Contributed by NM, 31-Dec-1993.) $)
+     generalized to arbitrary classes.  This definition of relations is
+     well-defined, although not very meaningful, when classes ` A ` and/or
+     ` B ` are proper classes (i.e. are not sets).  On the other hand, we often
+     find uses for this definition when ` R ` is a proper class.  (Contributed
+     by NM, 31-Dec-1993.) $)
   df-br $a |- ( A R B <-> <. A , B >. e. R ) $.
 
   $( Equality theorem for binary relations.  (Contributed by NM,
