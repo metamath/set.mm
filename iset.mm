@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Aug-2018
+$( iset.mm - Version of 22-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -13822,40 +13822,40 @@ $)
 
   ${
     $d y x $.  $d y z $.  $d w x $.  $d w z $.
-    cbval2.1 $e |- ( ph -> A. z ph ) $.
-    cbval2.2 $e |- ( ph -> A. w ph ) $.
-    cbval2.3 $e |- ( ps -> A. x ps ) $.
-    cbval2.4 $e |- ( ps -> A. y ps ) $.
+    cbval2.1 $e |- F/ z ph $.
+    cbval2.2 $e |- F/ w ph $.
+    cbval2.3 $e |- F/ x ps $.
+    cbval2.4 $e |- F/ y ps $.
     cbval2.5 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
-    $( Rule used to change bound variables, using implicit substitition.
-       (Contributed by NM, 22-Dec-2003.) $)
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 22-Dec-2003.)  (Revised by Mario Carneiro,
+       6-Oct-2016.)  (Proof shortened by Wolf Lammen, 22-Apr-2018.) $)
     cbval2 $p |- ( A. x A. y ph <-> A. z A. w ps ) $=
-      ( wal hbal weq wb wa ax-17 hban cbvalh 19.28v expcom pm5.32d 3bitr3i mpbir
-      wi pm5.32 ) ADLZBFLZCEAEDGMBCFIMCENZUGUHOUEUIUGPZUIUHPZOUIAPZDLUIBPZFLUJU
-      KULUMDFUIAFUIFQHRUIBDUIDQJRDFNZUIABUIUNABOKUAUBSUIADTUIBFTUCUIUGUHUFUDS
-      $.
+      ( wal nfal weq wi nfv nfim wb cbval 19.21v pm5.74d 3bitr3i pm5.74ri
+      expcom ) ADLZBFLZCEAEDGMBCFIMCENZUEUFUGAOZDLUGBOZFLUGUEOUGUFOUHUIDFUGAFUG
+      FPHQUGBDUGDPJQDFNZUGABUGUJABRKUDUASUGADTUGBFTUBUCS $.
 
-    $( Rule used to change bound variables, using implicit substitition.
-       (Contributed by NM, 14-Sep-2003.) $)
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 14-Sep-2003.)  (Revised by Mario Carneiro,
+       6-Oct-2016.) $)
     cbvex2 $p |- ( E. x E. y ph <-> E. z E. w ps ) $=
-      ( wex hbex weq wb wa ax-17 hban cbvexh 19.42v expcom pm5.32d 3bitr3i mpbir
-      wi pm5.32 ) ADLZBFLZCEAEDGMBCFIMCENZUGUHOUEUIUGPZUIUHPZOUIAPZDLUIBPZFLUJU
-      KULUMDFUIAFUIFQHRUIBDUIDQJRDFNZUIABUIUNABOKUAUBSUIADTUIBFTUCUIUGUHUFUDS
-      $.
+      ( wex nfex weq wb wa nfv nfan cbvex 19.42v wi expcom pm5.32d pm5.32 mpbir
+      3bitr3i ) ADLZBFLZCEAEDGMBCFIMCENZUGUHOUAUIUGPZUIUHPZOUIAPZDLUIBPZFLUJUKU
+      LUMDFUIAFUIFQHRUIBDUIDQJRDFNZUIABUIUNABOKUBUCSUIADTUIBFTUFUIUGUHUDUES $.
   $}
 
   ${
     $d z w ph $.  $d x y ps $.  $d x w $.  $d z y $.
     cbval2v.1 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
-    $( Rule used to change bound variables, using implicit substitition.
+    $( Rule used to change bound variables, using implicit substitution.
        (Contributed by NM, 4-Feb-2005.) $)
     cbval2v $p |- ( A. x A. y ph <-> A. z A. w ps ) $=
-      ( ax-17 cbval2 ) ABCDEFAEHAFHBCHBDHGI $.
+      ( nfv cbval2 ) ABCDEFAEHAFHBCHBDHGI $.
 
-    $( Rule used to change bound variables, using implicit substitition.
+    $( Rule used to change bound variables, using implicit substitution.
        (Contributed by NM, 26-Jul-1995.) $)
     cbvex2v $p |- ( E. x E. y ph <-> E. z E. w ps ) $=
-      ( ax-17 cbvex2 ) ABCDEFAEHAFHBCHBDHGI $.
+      ( nfv cbvex2 ) ABCDEFAEHAFHBCHBDHGI $.
   $}
 
   ${
@@ -31262,6 +31262,993 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                     Binary relations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Extend wff notation to include the general binary relation predicate.
+     Note that the syntax is simply three class symbols in a row.  Since binary
+     relations are the only possible wff expressions consisting of three class
+     expressions in a row, the syntax is unambiguous. $)
+  wbr $a wff A R B $.
+
+  $( Define a general binary relation.  Note that the syntax is simply three
+     class symbols in a row.  Definition 6.18 of [TakeutiZaring] p. 29
+     generalized to arbitrary classes.  This definition of relations is
+     well-defined, although not very meaningful, when classes ` A ` and/or
+     ` B ` are proper classes (i.e. are not sets).  On the other hand, we often
+     find uses for this definition when ` R ` is a proper class.  (Contributed
+     by NM, 31-Dec-1993.) $)
+  df-br $a |- ( A R B <-> <. A , B >. e. R ) $.
+
+  $( Equality theorem for binary relations.  (Contributed by NM,
+     4-Jun-1995.) $)
+  breq $p |- ( R = S -> ( A R B <-> A S B ) ) $=
+    ( wceq cop wcel wbr eleq2 df-br 3bitr4g ) CDEABFZCGLDGABCHABDHCDLIABCJABDJK
+    $.
+
+  $( Equality theorem for a binary relation.  (Contributed by NM,
+     31-Dec-1993.) $)
+  breq1 $p |- ( A = B -> ( A R C <-> B R C ) ) $=
+    ( wceq cop wcel wbr opeq1 eleq1d df-br 3bitr4g ) ABEZACFZDGBCFZDGACDHBCDHMN
+    ODABCIJACDKBCDKL $.
+
+  $( Equality theorem for a binary relation.  (Contributed by NM,
+     31-Dec-1993.) $)
+  breq2 $p |- ( A = B -> ( C R A <-> C R B ) ) $=
+    ( wceq cop wcel wbr opeq2 eleq1d df-br 3bitr4g ) ABEZCAFZDGCBFZDGCADHCBDHMN
+    ODABCIJCADKCBDKL $.
+
+  $( Equality theorem for a binary relation.  (Contributed by NM,
+     8-Feb-1996.) $)
+  breq12 $p |- ( ( A = B /\ C = D ) -> ( A R C <-> B R D ) ) $=
+    ( wceq wbr breq1 breq2 sylan9bb ) ABFACEGBCEGCDFBDEGABCEHCDBEIJ $.
+
+  ${
+    breqi.1 $e |- R = S $.
+    $( Equality inference for binary relations.  (Contributed by NM,
+       19-Feb-2005.) $)
+    breqi $p |- ( A R B <-> A S B ) $=
+      ( wceq wbr wb breq ax-mp ) CDFABCGABDGHEABCDIJ $.
+  $}
+
+  ${
+    breq1i.1 $e |- A = B $.
+    $( Equality inference for a binary relation.  (Contributed by NM,
+       8-Feb-1996.) $)
+    breq1i $p |- ( A R C <-> B R C ) $=
+      ( wceq wbr wb breq1 ax-mp ) ABFACDGBCDGHEABCDIJ $.
+
+    $( Equality inference for a binary relation.  (Contributed by NM,
+       8-Feb-1996.) $)
+    breq2i $p |- ( C R A <-> C R B ) $=
+      ( wceq wbr wb breq2 ax-mp ) ABFCADGCBDGHEABCDIJ $.
+
+    ${
+      breq12i.2 $e |- C = D $.
+      $( Equality inference for a binary relation.  (Contributed by NM,
+         8-Feb-1996.)  (Proof shortened by Eric Schmidt, 4-Apr-2007.) $)
+      breq12i $p |- ( A R C <-> B R D ) $=
+        ( wceq wbr wb breq12 mp2an ) ABHCDHACEIBDEIJFGABCDEKL $.
+    $}
+  $}
+
+  ${
+    breq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for a binary relation.  (Contributed by NM,
+       8-Feb-1996.) $)
+    breq1d $p |- ( ph -> ( A R C <-> B R C ) ) $=
+      ( wceq wbr wb breq1 syl ) ABCGBDEHCDEHIFBCDEJK $.
+
+    $( Equality deduction for a binary relation.  (Contributed by NM,
+       29-Oct-2011.) $)
+    breqd $p |- ( ph -> ( C A D <-> C B D ) ) $=
+      ( wceq wbr wb breq syl ) ABCGDEBHDECHIFDEBCJK $.
+
+    $( Equality deduction for a binary relation.  (Contributed by NM,
+       8-Feb-1996.) $)
+    breq2d $p |- ( ph -> ( C R A <-> C R B ) ) $=
+      ( wceq wbr wb breq2 syl ) ABCGDBEHDCEHIFBCDEJK $.
+
+    ${
+      breq12d.2 $e |- ( ph -> C = D ) $.
+      $( Equality deduction for a binary relation.  (Contributed by NM,
+         8-Feb-1996.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
+      breq12d $p |- ( ph -> ( A R C <-> B R D ) ) $=
+        ( wceq wbr wb breq12 syl2anc ) ABCIDEIBDFJCEFJKGHBCDEFLM $.
+    $}
+
+    ${
+      breq123d.2 $e |- ( ph -> R = S ) $.
+      breq123d.3 $e |- ( ph -> C = D ) $.
+      $( Equality deduction for a binary relation.  (Contributed by NM,
+         29-Oct-2011.) $)
+      breq123d $p |- ( ph -> ( A R C <-> B S D ) ) $=
+        ( wbr breq12d breqd bitrd ) ABDFKCEFKCEGKABCDEFHJLAFGCEIMN $.
+    $}
+
+    ${
+      breqan12i.2 $e |- ( ps -> C = D ) $.
+      $( Equality deduction for a binary relation.  (Contributed by NM,
+         8-Feb-1996.) $)
+      breqan12d $p |- ( ( ph /\ ps ) -> ( A R C <-> B R D ) ) $=
+        ( wceq wbr wb breq12 syl2an ) ACDJEFJCEGKDFGKLBHICDEFGMN $.
+
+      $( Equality deduction for a binary relation.  (Contributed by NM,
+         8-Feb-1996.) $)
+      breqan12rd $p |- ( ( ps /\ ph ) -> ( A R C <-> B R D ) ) $=
+        ( wbr wb breqan12d ancoms ) ABCEGJDFGJKABCDEFGHILM $.
+    $}
+  $}
+
+  $( Two classes are different if they don't have the same relationship to a
+     third class.  (Contributed by NM, 3-Jun-2012.) $)
+  nbrne1 $p |- ( ( A R B /\ -. A R C ) -> B =/= C ) $=
+    ( wbr wn wne wceq breq2 biimpcd necon3bd imp ) ABDEZACDEZFBCGMNBCBCHMNBCADI
+    JKL $.
+
+  $( Two classes are different if they don't have the same relationship to a
+     third class.  (Contributed by NM, 3-Jun-2012.) $)
+  nbrne2 $p |- ( ( A R C /\ -. B R C ) -> A =/= B ) $=
+    ( wbr wn wne wceq breq1 biimpcd necon3bd imp ) ACDEZBCDEZFABGMNABABHMNABCDI
+    JKL $.
+
+  ${
+    eqbrtr.1 $e |- A = B $.
+    eqbrtr.2 $e |- B R C $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    eqbrtri $p |- A R C $=
+      ( wbr breq1i mpbir ) ACDGBCDGFABCDEHI $.
+  $}
+
+  ${
+    eqbrtrd.1 $e |- ( ph -> A = B ) $.
+    eqbrtrd.2 $e |- ( ph -> B R C ) $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 8-Oct-1999.) $)
+    eqbrtrd $p |- ( ph -> A R C ) $=
+      ( wbr breq1d mpbird ) ABDEHCDEHGABCDEFIJ $.
+  $}
+
+  ${
+    eqbrtrr.1 $e |- A = B $.
+    eqbrtrr.2 $e |- A R C $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    eqbrtrri $p |- B R C $=
+      ( eqcomi eqbrtri ) BACDABEGFH $.
+  $}
+
+  ${
+    eqbrtrrd.1 $e |- ( ph -> A = B ) $.
+    eqbrtrrd.2 $e |- ( ph -> A R C ) $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 24-Oct-1999.) $)
+    eqbrtrrd $p |- ( ph -> B R C ) $=
+      ( eqcomd eqbrtrd ) ACBDEABCFHGI $.
+  $}
+
+  ${
+    breqtr.1 $e |- A R B $.
+    breqtr.2 $e |- B = C $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    breqtri $p |- A R C $=
+      ( wbr breq2i mpbi ) ABDGACDGEBCADFHI $.
+  $}
+
+  ${
+    breqtrd.1 $e |- ( ph -> A R B ) $.
+    breqtrd.2 $e |- ( ph -> B = C ) $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 24-Oct-1999.) $)
+    breqtrd $p |- ( ph -> A R C ) $=
+      ( wbr breq2d mpbid ) ABCEHBDEHFACDBEGIJ $.
+  $}
+
+  ${
+    breqtrr.1 $e |- A R B $.
+    breqtrr.2 $e |- C = B $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    breqtrri $p |- A R C $=
+      ( eqcomi breqtri ) ABCDECBFGH $.
+  $}
+
+  ${
+    breqtrrd.1 $e |- ( ph -> A R B ) $.
+    breqtrrd.2 $e |- ( ph -> C = B ) $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 24-Oct-1999.) $)
+    breqtrrd $p |- ( ph -> A R C ) $=
+      ( eqcomd breqtrd ) ABCDEFADCGHI $.
+  $}
+
+  ${
+    3brtr3.1 $e |- A R B $.
+    3brtr3.2 $e |- A = C $.
+    3brtr3.3 $e |- B = D $.
+    $( Substitution of equality into both sides of a binary relation.
+       (Contributed by NM, 11-Aug-1999.) $)
+    3brtr3i $p |- C R D $=
+      ( eqbrtrri breqtri ) CBDEACBEGFIHJ $.
+  $}
+
+  ${
+    3brtr4.1 $e |- A R B $.
+    3brtr4.2 $e |- C = A $.
+    3brtr4.3 $e |- D = B $.
+    $( Substitution of equality into both sides of a binary relation.
+       (Contributed by NM, 11-Aug-1999.) $)
+    3brtr4i $p |- C R D $=
+      ( eqbrtri breqtrri ) CBDECABEGFIHJ $.
+  $}
+
+  ${
+    3brtr3d.1 $e |- ( ph -> A R B ) $.
+    3brtr3d.2 $e |- ( ph -> A = C ) $.
+    3brtr3d.3 $e |- ( ph -> B = D ) $.
+    $( Substitution of equality into both sides of a binary relation.
+       (Contributed by NM, 18-Oct-1999.) $)
+    3brtr3d $p |- ( ph -> C R D ) $=
+      ( wbr breq12d mpbid ) ABCFJDEFJGABDCEFHIKL $.
+  $}
+
+  ${
+    3brtr4d.1 $e |- ( ph -> A R B ) $.
+    3brtr4d.2 $e |- ( ph -> C = A ) $.
+    3brtr4d.3 $e |- ( ph -> D = B ) $.
+    $( Substitution of equality into both sides of a binary relation.
+       (Contributed by NM, 21-Feb-2005.) $)
+    3brtr4d $p |- ( ph -> C R D ) $=
+      ( wbr breq12d mpbird ) ADEFJBCFJGADBECFHIKL $.
+  $}
+
+  ${
+    3brtr3g.1 $e |- ( ph -> A R B ) $.
+    3brtr3g.2 $e |- A = C $.
+    3brtr3g.3 $e |- B = D $.
+    $( Substitution of equality into both sides of a binary relation.
+       (Contributed by NM, 16-Jan-1997.) $)
+    3brtr3g $p |- ( ph -> C R D ) $=
+      ( wbr breq12i sylib ) ABCFJDEFJGBDCEFHIKL $.
+  $}
+
+  ${
+    3brtr4g.1 $e |- ( ph -> A R B ) $.
+    3brtr4g.2 $e |- C = A $.
+    3brtr4g.3 $e |- D = B $.
+    $( Substitution of equality into both sides of a binary relation.
+       (Contributed by NM, 16-Jan-1997.) $)
+    3brtr4g $p |- ( ph -> C R D ) $=
+      ( wbr breq12i sylibr ) ABCFJDEFJGDBECFHIKL $.
+  $}
+
+  ${
+    syl5eqbr.1 $e |- A = B $.
+    syl5eqbr.2 $e |- ( ph -> B R C ) $.
+    $( B chained equality inference for a binary relation.  (Contributed by NM,
+       11-Oct-1999.) $)
+    syl5eqbr $p |- ( ph -> A R C ) $=
+      ( eqid 3brtr4g ) ACDBDEGFDHI $.
+  $}
+
+  ${
+    syl5eqbrr.1 $e |- B = A $.
+    syl5eqbrr.2 $e |- ( ph -> B R C ) $.
+    $( B chained equality inference for a binary relation.  (Contributed by NM,
+       17-Sep-2004.) $)
+    syl5eqbrr $p |- ( ph -> A R C ) $=
+      ( eqid 3brtr3g ) ACDBDEGFDHI $.
+  $}
+
+  ${
+    syl5breq.1 $e |- A R B $.
+    syl5breq.2 $e |- ( ph -> B = C ) $.
+    $( B chained equality inference for a binary relation.  (Contributed by NM,
+       11-Oct-1999.) $)
+    syl5breq $p |- ( ph -> A R C ) $=
+      ( wbr a1i breqtrd ) ABCDEBCEHAFIGJ $.
+  $}
+
+  ${
+    syl5breqr.1 $e |- A R B $.
+    syl5breqr.2 $e |- ( ph -> C = B ) $.
+    $( B chained equality inference for a binary relation.  (Contributed by NM,
+       24-Apr-2005.) $)
+    syl5breqr $p |- ( ph -> A R C ) $=
+      ( eqcomd syl5breq ) ABCDEFADCGHI $.
+  $}
+
+  ${
+    syl6eqbr.1 $e |- ( ph -> A = B ) $.
+    syl6eqbr.2 $e |- B R C $.
+    $( A chained equality inference for a binary relation.  (Contributed by NM,
+       12-Oct-1999.) $)
+    syl6eqbr $p |- ( ph -> A R C ) $=
+      ( wbr breq1d mpbiri ) ABDEHCDEHGABCDEFIJ $.
+  $}
+
+  ${
+    syl6eqbrr.1 $e |- ( ph -> B = A ) $.
+    syl6eqbrr.2 $e |- B R C $.
+    $( A chained equality inference for a binary relation.  (Contributed by NM,
+       4-Jan-2006.) $)
+    syl6eqbrr $p |- ( ph -> A R C ) $=
+      ( eqcomd syl6eqbr ) ABCDEACBFHGI $.
+  $}
+
+  ${
+    syl6breq.1 $e |- ( ph -> A R B ) $.
+    syl6breq.2 $e |- B = C $.
+    $( A chained equality inference for a binary relation.  (Contributed by NM,
+       11-Oct-1999.) $)
+    syl6breq $p |- ( ph -> A R C ) $=
+      ( eqid 3brtr3g ) ABCBDEFBHGI $.
+  $}
+
+  ${
+    syl6breqr.1 $e |- ( ph -> A R B ) $.
+    syl6breqr.2 $e |- C = B $.
+    $( A chained equality inference for a binary relation.  (Contributed by NM,
+       24-Apr-2005.) $)
+    syl6breqr $p |- ( ph -> A R C ) $=
+      ( eqcomi syl6breq ) ABCDEFDCGHI $.
+  $}
+
+
+  ${
+    ssbrd.1 $e |- ( ph -> A C_ B ) $.
+    $( Deduction from a subclass relationship of binary relations.
+       (Contributed by NM, 30-Apr-2004.) $)
+    ssbrd $p |- ( ph -> ( C A D -> C B D ) ) $=
+      ( cop wcel wbr sseld df-br 3imtr4g ) ADEGZBHMCHDEBIDECIABCMFJDEBKDECKL $.
+  $}
+
+  ${
+    ssbri.1 $e |- A C_ B $.
+    $( Inference from a subclass relationship of binary relations.
+       (Contributed by NM, 28-Mar-2007.)  (Revised by Mario Carneiro,
+       8-Feb-2015.) $)
+    ssbri $p |- ( C A D -> C B D ) $=
+      ( wbr wi wtru wss a1i ssbrd trud ) CDAFCDBFGHABCDABIHEJKL $.
+  $}
+
+  ${
+    $d y z A $.  $d y z B $.  $d y z R $.  $d x y z $.  $d y ph $.
+    nfbrd.2 $e |- ( ph -> F/_ x A ) $.
+    nfbrd.3 $e |- ( ph -> F/_ x R ) $.
+    nfbrd.4 $e |- ( ph -> F/_ x B ) $.
+    $( Deduction version of bound-variable hypothesis builder ~ nfbr .
+       (Contributed by NM, 13-Dec-2005.)  (Revised by Mario Carneiro,
+       14-Oct-2016.) $)
+    nfbrd $p |- ( ph -> F/ x A R B ) $=
+      ( wbr cop wcel df-br nfopd nfeld nfxfrd ) CDEICDJZEKABCDELABPEABCDFHMGNO
+      $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d y R $.  $d x y $.
+    nfbr.1 $e |- F/_ x A $.
+    nfbr.2 $e |- F/_ x R $.
+    nfbr.3 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for binary relation.  (Contributed by
+       NM, 1-Sep-1999.)  (Revised by Mario Carneiro, 14-Oct-2016.) $)
+    nfbr $p |- F/ x A R B $=
+      ( wbr wnf wtru wnfc a1i nfbrd trud ) BCDHAIJABCDABKJELADKJFLACKJGLMN $.
+  $}
+
+  ${
+    $d x y $.  $d y z A $.  $d y z R $.
+    $( Relationship between a binary relation and a class abstraction.
+       (Contributed by Andrew Salmon, 8-Jul-2011.) $)
+    brab1 $p |- ( x R A <-> x e. { z | z R A } ) $=
+      ( vy cv wbr wsbc cab wcel cvv wb vex breq1 sbcie2g ax-mp df-sbc bitr3i )
+      AFZCDGZBFZCDGZBSHZSUBBIJSKJUCTLAMUBEFZCDGTBESKUAUDCDNUDSCDNOPUBBSQR $.
+  $}
+
+  $( The union of two binary relations.  (Contributed by NM, 21-Dec-2008.) $)
+  brun $p |- ( A ( R u. S ) B <-> ( A R B \/ A S B ) ) $=
+    ( cop cun wcel wo wbr elun df-br orbi12i 3bitr4i ) ABEZCDFZGNCGZNDGZHABOIAB
+    CIZABDIZHNCDJABOKRPSQABCKABDKLM $.
+
+  $( The intersection of two relations.  (Contributed by FL, 7-Oct-2008.) $)
+  brin $p |- ( A ( R i^i S ) B <-> ( A R B /\ A S B ) ) $=
+    ( cop cin wcel wa wbr elin df-br anbi12i 3bitr4i ) ABEZCDFZGNCGZNDGZHABOIAB
+    CIZABDIZHNCDJABOKRPSQABCKABDKLM $.
+
+  $( The difference of two binary relations.  (Contributed by Scott Fenton,
+     11-Apr-2011.) $)
+  brdif $p |- ( A ( R \ S ) B <-> ( A R B /\ -. A S B ) ) $=
+    ( cop cdif wcel wn wa wbr eldif df-br notbii anbi12i 3bitr4i ) ABEZCDFZGPCG
+    ZPDGZHZIABQJABCJZABDJZHZIPCDKABQLUARUCTABCLUBSABDLMNO $.
+
+  ${
+    $d y z A $.  $d y z B $.  $d y z C $.  $d y z D $.  $d y z R $.
+    $d x y z $.
+    $( Move substitution in and out of a binary relation.  (Contributed by NM,
+       13-Dec-2005.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
+    sbcbrg $p |- ( A e. D -> ( [. A / x ]. B R C <->
+           [_ A / x ]_ B [_ A / x ]_ R [_ A / x ]_ C ) ) $=
+      ( vy wbr wsb cv csb wsbc dfsbcq2 wceq csbeq1 breq123d nfcsb1v weq csbeq1a
+      nfbr sbie vtoclbg ) CDFHZAGIAGJZCKZAUDDKZAUDFKZHZUCABLABCKZABDKZABFKZHGBE
+      UCAGBMUDBNUEUIUFUJUGUKAUDBCOAUDBFOAUDBDOPUCUHAGAUEUFUGAUDCQAUDFQAUDDQTAGR
+      CUEDUFFUGAUDCSAUDFSAUDDSPUAUB $.
+  $}
+
+  ${
+    $d y A $.  $d y C $.  $d y D $.  $d x y R $.
+    $( Move substitution in and out of a binary relation.  (Contributed by NM,
+       13-Dec-2005.) $)
+    sbcbr12g $p |- ( A e. D ->
+                 ( [. A / x ]. B R C <-> [_ A / x ]_ B R [_ A / x ]_ C ) ) $=
+      ( wcel wbr wsbc csb sbcbrg csbconstg breqd bitrd ) BEGZCDFHABIABCJZABDJZA
+      BFJZHPQFHABCDEFKORFPQABFELMN $.
+  $}
+
+  ${
+    $d y A $.  $d x y C $.  $d y D $.  $d x y R $.
+    $( Move substitution in and out of a binary relation.  (Contributed by NM,
+       13-Dec-2005.) $)
+    sbcbr1g $p |- ( A e. D ->
+                  ( [. A / x ]. B R C <-> [_ A / x ]_ B R C ) ) $=
+      ( wcel wbr wsbc csb sbcbr12g csbconstg breq2d bitrd ) BEGZCDFHABIABCJZABD
+      JZFHPDFHABCDEFKOQDPFABDELMN $.
+  $}
+
+  ${
+    $d y A $.  $d x y B $.  $d y D $.  $d x y R $.
+    $( Move substitution in and out of a binary relation.  (Contributed by NM,
+       13-Dec-2005.) $)
+    sbcbr2g $p |- ( A e. D ->
+                  ( [. A / x ]. B R C <-> B R [_ A / x ]_ C ) ) $=
+      ( wcel wbr wsbc csb sbcbr12g csbconstg breq1d bitrd ) BEGZCDFHABIABCJZABD
+      JZFHCQFHABCDEFKOPCQFABCELMN $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Ordered-pair class abstractions (class builders)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c |-> $.  $( Maps-to symbol $)
+
+  $( Extend class notation to include ordered-pair class abstraction (class
+     builder). $)
+  copab $a class { <. x , y >. | ph } $.
+
+  $( Extend the definition of a class to include maps-to notation for defining
+     a function via a rule. $)
+  cmpt $a class ( x e. A |-> B ) $.
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.
+    $( Define the class abstraction of a collection of ordered pairs.
+       Definition 3.3 of [Monk1] p. 34.  Usually ` x ` and ` y ` are distinct,
+       although the definition doesn't strictly require it.  The brace notation
+       is called "class abstraction" by Quine; it is also (more commonly)
+       called a "class builder" in the literature.  (Contributed by NM,
+       4-Jul-1994.) $)
+    df-opab $a |- { <. x , y >. | ph } =
+                  { z | E. x E. y ( z = <. x , y >. /\ ph ) } $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( Define maps-to notation for defining a function via a rule.  Read as
+       "the function defined by the map from ` x ` (in ` A ` ) to
+       ` B ( x ) ` ."  The class expression ` B ` is the value of the function
+       at ` x ` and normally contains the variable ` x ` .  Similar to the
+       definition of mapping in [ChoquetDD] p. 2.  (Contributed by NM,
+       17-Feb-2008.) $)
+    df-mpt $a |- ( x e. A |-> B ) =
+                    { <. x , y >. | ( x e. A /\ y = B ) } $.
+  $}
+
+  ${
+    $d x z R $.  $d y z R $.
+    $( The collection of ordered pairs in a class is a subclass of it.
+       (Contributed by NM, 27-Dec-1996.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    opabss $p |- { <. x , y >. | x R y } C_ R $=
+      ( vz cv wbr copab cop wceq wa wex cab df-opab df-br eleq1 biimpar sylan2b
+      wcel exlimivv abssi eqsstri ) AEZBEZCFZABGDEZUBUCHZIZUDJZBKAKZDLCUDABDMUI
+      DCUHUECRZABUDUGUFCRZUJUBUCCNUGUJUKUEUFCOPQSTUA $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.  $d z ps $.  $d z ch $.
+    opabbid.1 $e |- F/ x ph $.
+    opabbid.2 $e |- F/ y ph $.
+    opabbid.3 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equivalent wff's yield equal ordered-pair class abstractions (deduction
+       rule).  (Contributed by NM, 21-Feb-2004.)  (Proof shortened by Andrew
+       Salmon, 9-Jul-2011.) $)
+    opabbid $p |- ( ph -> { <. x , y >. | ps } = { <. x , y >. | ch } ) $=
+      ( vz cv cop wceq wa wex cab copab anbi2d exbid abbidv df-opab 3eqtr4g ) A
+      IJDJEJKLZBMZENZDNZIOUBCMZENZDNZIOBDEPCDEPAUEUHIAUDUGDFAUCUFEGABCUBHQRRSBD
+      EITCDEITUA $.
+  $}
+
+  ${
+    $d x ph $.  $d y z ph $.  $d z ps $.  $d z ch $.
+    opabbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equivalent wff's yield equal ordered-pair class abstractions (deduction
+       rule).  (Contributed by NM, 15-May-1995.) $)
+    opabbidv $p |- ( ph -> { <. x , y >. | ps } = { <. x , y >. | ch } ) $=
+      ( nfv opabbid ) ABCDEADGAEGFH $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.  $d z ps $.
+    opabbii.1 $e |- ( ph <-> ps ) $.
+    $( Equivalent wff's yield equal class abstractions.  (Contributed by NM,
+       15-May-1995.) $)
+    opabbii $p |- { <. x , y >. | ph } = { <. x , y >. | ps } $=
+      ( vz cv wceq copab eqid wb a1i opabbidv ax-mp ) FGZOHZACDIBCDIHOJPABCDABK
+      PELMN $.
+  $}
+
+  ${
+    $d x z w $.  $d y z w $.  $d ph w $.
+    nfopab.1 $e |- F/ z ph $.
+    $( Bound-variable hypothesis builder for class abstraction.  (Contributed
+       by NM, 1-Sep-1999.)  (Unnecessary distinct variable restrictions were
+       removed by Andrew Salmon, 11-Jul-2011.) $)
+    nfopab $p |- F/_ z { <. x , y >. | ph } $=
+      ( vw copab cv cop wceq wa wex cab df-opab nfv nfan nfex nfab nfcxfr ) DAB
+      CGFHBHCHIJZAKZCLZBLZFMABCFNUCDFUBDBUADCTADTDOEPQQRS $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.
+    $( The first abstraction variable in an ordered-pair class abstraction
+       (class builder) is effectively not free.  (Contributed by NM,
+       16-May-1995.)  (Revised by Mario Carneiro, 14-Oct-2016.) $)
+    nfopab1 $p |- F/_ x { <. x , y >. | ph } $=
+      ( vz copab cv cop wceq wa wex cab df-opab nfe1 nfab nfcxfr ) BABCEDFBFCFG
+      HAICJZBJZDKABCDLQBDPBMNO $.
+
+    $( The second abstraction variable in an ordered-pair class abstraction
+       (class builder) is effectively not free.  (Contributed by NM,
+       16-May-1995.)  (Revised by Mario Carneiro, 14-Oct-2016.) $)
+    nfopab2 $p |- F/_ y { <. x , y >. | ph } $=
+      ( vz copab cv cop wceq wa wex cab df-opab nfe1 nfex nfab nfcxfr ) CABCEDF
+      BFCFGHAIZCJZBJZDKABCDLSCDRCBQCMNOP $.
+  $}
+
+  ${
+    $d x y z w v $.  $d v ph $.  $d v ps $.
+    cbvopab.1 $e |- F/ z ph $.
+    cbvopab.2 $e |- F/ w ph $.
+    cbvopab.3 $e |- F/ x ps $.
+    cbvopab.4 $e |- F/ y ps $.
+    cbvopab.5 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables in an ordered-pair class
+       abstraction, using implicit substitution.  (Contributed by NM,
+       14-Sep-2003.) $)
+    cbvopab $p |- { <. x , y >. | ph } = { <. z , w >. | ps } $=
+      ( vv cv cop wceq wa wex cab nfv nfan opeq12 eqeq2d anbi12d cbvex2 df-opab
+      copab abbii 3eqtr4i ) LMZCMZDMZNZOZAPZDQCQZLRUIEMZFMZNZOZBPZFQEQZLRACDUFB
+      EFUFUOVALUNUTCDEFUMAEUMESGTUMAFUMFSHTUSBCUSCSITUSBDUSDSJTUJUPOUKUQOPZUMUS
+      ABVBULURUIUJUKUPUQUAUBKUCUDUGACDLUEBEFLUEUH $.
+  $}
+
+  ${
+    $d x y z w $.  $d z w v ph $.  $d x y v ps $.
+    cbvopabv.1 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables in an ordered-pair class
+       abstraction, using implicit substitution.  (Contributed by NM,
+       15-Oct-1996.) $)
+    cbvopabv $p |- { <. x , y >. | ph } = { <. z , w >. | ps } $=
+      ( nfv cbvopab ) ABCDEFAEHAFHBCHBDHGI $.
+  $}
+
+  ${
+    $d v w x y $.  $d v w y z $.  $d v w ph $.  $d v w ps $.
+    cbvopab1.1 $e |- F/ z ph $.
+    cbvopab1.2 $e |- F/ x ps $.
+    cbvopab1.3 $e |- ( x = z -> ( ph <-> ps ) ) $.
+    $( Change first bound variable in an ordered-pair class abstraction, using
+       explicit substitution.  (Contributed by NM, 6-Oct-2004.)  (Revised by
+       Mario Carneiro, 14-Oct-2016.) $)
+    cbvopab1 $p |- { <. x , y >. | ph } = { <. z , y >. | ps } $=
+      ( vw vv cv cop wceq wa wex cab copab wsb nfv nfan nfs1v nfex opeq1 eqeq2d
+      sbequ12 anbi12d exbidv cbvex nfsb sbequ sbie syl6bb bitri df-opab 3eqtr4i
+      abbii ) IKZCKZDKZLZMZANZDOZCOZIPUQEKZUSLZMZBNZDOZEOZIPACDQBEDQVDVJIVDUQJK
+      ZUSLZMZACJRZNZDOZJOVJVCVPCJVCJSVOCDVMVNCVMCSACJUATUBURVKMZVBVODVQVAVMAVNV
+      QUTVLUQURVKUSUCUDACJUEUFUGUHVPVIJEVOEDVMVNEVMESACJEFUITUBVIJSVKVEMZVOVHDV
+      RVMVGVNBVRVLVFUQVKVEUSUCUDVRVNACERBAJECUJABCEGHUKULUFUGUHUMUPACDIUNBEDIUN
+      UO $.
+  $}
+
+  ${
+    $d w x y z $.  $d w ph $.  $d w ps $.
+    cbvopab2.1 $e |- F/ z ph $.
+    cbvopab2.2 $e |- F/ y ps $.
+    cbvopab2.3 $e |- ( y = z -> ( ph <-> ps ) ) $.
+    $( Change second bound variable in an ordered-pair class abstraction, using
+       explicit substitution.  (Contributed by NM, 22-Aug-2013.) $)
+    cbvopab2 $p |- { <. x , y >. | ph } = { <. x , z >. | ps } $=
+      ( vw cv cop wceq wa wex cab copab nfv nfan opeq2 df-opab anbi12d 3eqtr4i
+      eqeq2d cbvex exbii abbii ) IJZCJZDJZKZLZAMZDNZCNZIOUGUHEJZKZLZBMZENZCNZIO
+      ACDPBCEPUNUTIUMUSCULURDEUKAEUKEQFRUQBDUQDQGRUIUOLZUKUQABVAUJUPUGUIUOUHSUC
+      HUAUDUEUFACDITBCEITUB $.
+  $}
+
+  ${
+    $d x y z w $.  $d z w ph $.
+    $( Change first bound variable in an ordered-pair class abstraction, using
+       explicit substitution.  (Contributed by NM, 31-Jul-2003.) $)
+    cbvopab1s $p |- { <. x , y >. | ph } = { <. z , y >. | [ z / x ] ph } $=
+      ( vw cv cop wceq wa wex cab wsb copab nfv nfs1v nfan opeq1 eqeq2d df-opab
+      nfex sbequ12 anbi12d exbidv cbvex abbii 3eqtr4i ) EFZBFZCFZGZHZAIZCJZBJZE
+      KUGDFZUIGZHZABDLZIZCJZDJZEKABCMURDCMUNVAEUMUTBDUMDNUSBCUQURBUQBNABDOPTUHU
+      OHZULUSCVBUKUQAURVBUJUPUGUHUOUIQRABDUAUBUCUDUEABCESURDCESUF $.
+  $}
+
+  ${
+    $d x y $.  $d y z $.  $d z ph $.  $d x ps $.
+    cbvopab1v.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
+    $( Rule used to change the first bound variable in an ordered pair
+       abstraction, using implicit substitution.  (Contributed by NM,
+       31-Jul-2003.)  (Proof shortened by Eric Schmidt, 4-Apr-2007.) $)
+    cbvopab1v $p |- { <. x , y >. | ph } = { <. z , y >. | ps } $=
+      ( nfv cbvopab1 ) ABCDEAEGBCGFH $.
+  $}
+
+  ${
+    $d x y z w $.  $d z w ph $.  $d y w ps $.
+    cbvopab2v.1 $e |- ( y = z -> ( ph <-> ps ) ) $.
+    $( Rule used to change the second bound variable in an ordered pair
+       abstraction, using implicit substitution.  (Contributed by NM,
+       2-Sep-1999.) $)
+    cbvopab2v $p |- { <. x , y >. | ph } = { <. x , z >. | ps } $=
+      ( vw cv cop wceq wex cab copab opeq2 eqeq2d anbi12d cbvexv exbii df-opab
+      wa abbii 3eqtr4i ) GHZCHZDHZIZJZATZDKZCKZGLUCUDEHZIZJZBTZEKZCKZGLACDMBCEM
+      UJUPGUIUOCUHUNDEUEUKJZUGUMABUQUFULUCUEUKUDNOFPQRUAACDGSBCEGSUB $.
+  $}
+
+  ${
+    $d w y z A $.  $d w ph $.  $d w x y z $.
+    $( Move substitution into a class abstraction.  (Contributed by NM,
+       6-Aug-2007.)  (Proof shortened by Mario Carneiro, 17-Nov-2016.) $)
+    csbopabg $p |- ( A e. V -> [_ A / x ]_ { <. y , z >. | ph } =
+               { <. y , z >. | [. A / x ]. ph } ) $=
+      ( vw cv copab csb wsb wceq wsbc csbeq1 dfsbcq2 opabbidv eqeq12d vex nfs1v
+      nfopab sbequ12 csbief vtoclg ) BGHZACDIZJZABGKZCDIZLBEUEJZABEMZCDIZLGEFUD
+      ELZUFUIUHUKBUDEUENULUGUJCDABGEOPQBUDUEUHGRUGCDBABGSTBHUDLAUGCDABGUAPUBUC
+      $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d ph z $.  $d ps z $.
+    $( Union of two ordered pair class abstractions.  (Contributed by NM,
+       30-Sep-2002.) $)
+    unopab $p |- ( { <. x , y >. | ph } u. { <. x , y >. | ps } ) =
+               { <. x , y >. | ( ph \/ ps ) } $=
+      ( vz cv cop wceq wa wex cab wo copab unab 19.43 andi exbii bitr2i df-opab
+      cun bitr3i abbii eqtri uneq12i 3eqtr4i ) EFCFDFGHZAIZDJZCJZEKZUFBIZDJZCJZ
+      EKZTZUFABLZIZDJZCJZEKZACDMZBCDMZTUPCDMUOUIUMLZEKUTUIUMENVCUSEVCUHULLZCJUS
+      UHULCOVDURCURUGUKLZDJVDUQVEDUFABPQUGUKDORQUAUBUCVAUJVBUNACDESBCDESUDUPCDE
+      SUE $.
+  $}
+
+  ${
+    $d x y ph $.  $d y A $.  $d y B $.  $d y C $.  $d y D $.
+    $( An equality theorem for the maps to notation.  (Contributed by Mario
+       Carneiro, 16-Dec-2013.) $)
+    mpteq12f $p |- ( ( A. x A = C /\ A. x e. A B = D ) ->
+                    ( x e. A |-> B ) = ( x e. C |-> D ) ) $=
+      ( vy wceq wal wral wa cv wcel copab cmpt nfa1 nfra1 nfan nfv rsp df-mpt
+      imp eqeq2d pm5.32da sp eleq2d anbi1d sylan9bbr opabbid 3eqtr4g ) BDGZAHZC
+      EGZABIZJZAKZBLZFKZCGZJZAFMUODLZUQEGZJZAFMABCNADENUNUSVBAFUKUMAUJAOULABPQU
+      NFRUMUSUPVAJUKVBUMUPURVAUMUPJCEUQUMUPULULABSUAUBUCUKUPUTVAUKBDUOUJAUDUEUF
+      UGUHAFBCTAFDETUI $.
+
+    mpteq12dv.1 $e |- ( ph -> A = C ) $.
+    ${
+      mpteq12dva.2 $e |- ( ( ph /\ x e. A ) -> B = D ) $.
+      $( An equality inference for the maps to notation.  (Contributed by Mario
+         Carneiro, 26-Jan-2017.) $)
+      mpteq12dva $p |- ( ph -> ( x e. A |-> B ) = ( x e. C |-> D ) ) $=
+        ( wceq wal wral cmpt alrimiv ralrimiva mpteq12f syl2anc ) ACEIZBJDFIZBC
+        KBCDLBEFLIAQBGMARBCHNBCDEFOP $.
+    $}
+
+    mpteq12dv.2 $e |- ( ph -> B = D ) $.
+    $( An equality inference for the maps to notation.  (Contributed by NM,
+       24-Aug-2011.)  (Revised by Mario Carneiro, 16-Dec-2013.) $)
+    mpteq12dv $p |- ( ph -> ( x e. A |-> B ) = ( x e. C |-> D ) ) $=
+      ( wceq cv wcel adantr mpteq12dva ) ABCDEFGADFIBJCKHLM $.
+  $}
+
+  ${
+    $d x A $.  $d x C $.
+    $( An equality theorem for the maps to notation.  (Contributed by NM,
+       16-Dec-2013.) $)
+    mpteq12 $p |- ( ( A = C /\ A. x e. A B = D ) ->
+                    ( x e. A |-> B ) = ( x e. C |-> D ) ) $=
+      ( wceq wal wral cmpt ax-17 mpteq12f sylan ) BDFZMAGCEFABHABCIADEIFMAJABCD
+      EKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( An equality theorem for the maps to notation.  (Contributed by Mario
+       Carneiro, 16-Dec-2013.) $)
+    mpteq1 $p |- ( A = B -> ( x e. A |-> C ) = ( x e. B |-> C ) ) $=
+      ( wceq wral cmpt cv wcel eqidd rgen mpteq12 mpan2 ) BCEDDEZABFABDGACDGENA
+      BAHBIDJKABDCDLM $.
+
+    mpteq1d.1 $e |- ( ph -> A = B ) $.
+    $( An equality theorem for the maps to notation.  (Contributed by Mario
+       Carneiro, 11-Jun-2016.) $)
+    mpteq1d $p |- ( ph -> ( x e. A |-> C ) = ( x e. B |-> C ) ) $=
+      ( wceq cmpt mpteq1 syl ) ACDGBCEHBDEHGFBCDEIJ $.
+  $}
+
+  ${
+    mpteq2ia.1 $e |- ( x e. A -> B = C ) $.
+    $( An equality inference for the maps to notation.  (Contributed by Mario
+       Carneiro, 16-Dec-2013.) $)
+    mpteq2ia $p |- ( x e. A |-> B ) = ( x e. A |-> C ) $=
+      ( wceq wal wral cmpt eqid ax-gen rgen mpteq12f mp2an ) BBFZAGCDFZABHABCIA
+      BDIFOABJKPABELABCBDMN $.
+  $}
+
+  ${
+    mpteq2i.1 $e |- B = C $.
+    $( An equality inference for the maps to notation.  (Contributed by Mario
+       Carneiro, 16-Dec-2013.) $)
+    mpteq2i $p |- ( x e. A |-> B ) = ( x e. A |-> C ) $=
+      ( wceq cv wcel a1i mpteq2ia ) ABCDCDFAGBHEIJ $.
+  $}
+
+  ${
+    mpteq12i.1 $e |- A = C $.
+    mpteq12i.2 $e |- B = D $.
+    $( An equality inference for the maps to notation.  (Contributed by Scott
+       Fenton, 27-Oct-2010.)  (Revised by Mario Carneiro, 16-Dec-2013.) $)
+    mpteq12i $p |- ( x e. A |-> B ) = ( x e. C |-> D ) $=
+      ( cmpt wceq wtru a1i mpteq12dv trud ) ABCHADEHIJABCDEBDIJFKCEIJGKLM $.
+  $}
+
+  ${
+    mpteq2da.1 $e |- F/ x ph $.
+    mpteq2da.2 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
+    $( Slightly more general equality inference for the maps to notation.
+       (Contributed by FL, 14-Sep-2013.)  (Revised by Mario Carneiro,
+       16-Dec-2013.) $)
+    mpteq2da $p |- ( ph -> ( x e. A |-> B ) = ( x e. A |-> C ) ) $=
+      ( wceq wal wral cmpt eqid ax-gen cv wcel ex ralrimi mpteq12f sylancr ) AC
+      CHZBIDEHZBCJBCDKBCEKHTBCLMAUABCFABNCOUAGPQBCDCERS $.
+  $}
+
+  ${
+    $d x ph $.
+    mpteq2dva.1 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
+    $( Slightly more general equality inference for the maps to notation.
+       (Contributed by Scott Fenton, 25-Apr-2012.) $)
+    mpteq2dva $p |- ( ph -> ( x e. A |-> B ) = ( x e. A |-> C ) ) $=
+      ( nfv mpteq2da ) ABCDEABGFH $.
+  $}
+
+  ${
+    $d x ph $.
+    mpteq2dv.1 $e |- ( ph -> B = C ) $.
+    $( An equality inference for the maps to notation.  (Contributed by Mario
+       Carneiro, 23-Aug-2014.) $)
+    mpteq2dv $p |- ( ph -> ( x e. A |-> B ) = ( x e. A |-> C ) ) $=
+      ( wceq cv wcel adantr mpteq2dva ) ABCDEADEGBHCIFJK $.
+  $}
+
+  ${
+    $d z A $.  $d z B $.  $d x y z $.
+    nfmpt.1 $e |- F/_ x A $.
+    nfmpt.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for the maps-to notation.
+       (Contributed by NM, 20-Feb-2013.) $)
+    nfmpt $p |- F/_ x ( y e. A |-> B ) $=
+      ( vz cmpt cv wcel wceq wa copab df-mpt nfcri nfeq2 nfan nfopab nfcxfr ) A
+      BCDHBICJZGIZDKZLZBGMBGCDNUCBGATUBAABCEOAUADFPQRS $.
+  $}
+
+  ${
+    $d A z $.  $d B z $.  $d x y $.  $d x z $.
+    $( Bound-variable hypothesis builder for the maps-to notation.
+       (Contributed by FL, 17-Feb-2008.) $)
+    nfmpt1 $p |- F/_ x ( x e. A |-> B ) $=
+      ( vz cmpt cv wcel wceq wa copab df-mpt nfopab1 nfcxfr ) AABCEAFBGDFCHIZAD
+      JADBCKNADLM $.
+  $}
+
+  ${
+    $d w z x A $.  $d w z y A $.  $d w z B $.  $d w z C $.
+    cbvmpt.1 $e |- F/_ y B $.
+    cbvmpt.2 $e |- F/_ x C $.
+    cbvmpt.3 $e |- ( x = y -> B = C ) $.
+    $( Rule to change the bound variable in a maps-to function, using implicit
+       substitution.  This version has bound-variable hypotheses in place of
+       distinct variable conditions.  (Contributed by NM, 11-Sep-2011.) $)
+    cbvmpt $p |- ( x e. A |-> B ) = ( y e. A |-> C ) $=
+      ( vz vw cv wcel wceq wa copab cmpt wsb nfv nfan weq nfs1v sbequ12 anbi12d
+      eleq1 cbvopab1 nfeq2 nfsb sbequ eqeq2d sbie syl6bb eqtri df-mpt 3eqtr4i )
+      AKZCLZIKZDMZNZAIOZBKZCLZUQEMZNZBIOZACDPBCEPUTJKZCLZURAJQZNZJIOVEUSVIAIJUS
+      JRVGVHAVGARURAJUASAJTUPVGURVHUOVFCUDURAJUBUCUEVIVDJIBVGVHBVGBRURAJBBUQDFU
+      FUGSVDJRJBTZVGVBVHVCVFVACUDVJVHURABQVCURJBAUHURVCABAUQEGUFABTDEUQHUIUJUKU
+      CUEULAICDUMBICEUMUN $.
+  $}
+
+  ${
+    $d A x $.  $d A y $.  $d B y $.  $d C x $.
+    cbvmptv.1 $e |- ( x = y -> B = C ) $.
+    $( Rule to change the bound variable in a maps-to function, using implicit
+       substitution.  (Contributed by Mario Carneiro, 19-Feb-2013.) $)
+    cbvmptv $p |- ( x e. A |-> B ) = ( y e. A |-> C ) $=
+      ( nfcv cbvmpt ) ABCDEBDGAEGFH $.
+  $}
+
+  ${
+    $d x y $.  $d y B $.
+    $( Function with universal domain in maps-to notation.  (Contributed by NM,
+       16-Aug-2013.) $)
+    mptv $p |- ( x e. _V |-> B ) = { <. x , y >. | y = B } $=
+      ( cvv cmpt cv wcel wceq wa copab df-mpt vex biantrur opabbii eqtr4i ) ADC
+      EAFDGZBFCHZIZABJQABJABDCKQRABPQALMNO $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Transitive classes
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare a new symbol. $)
+  $c Tr $. $( Transitive predicate (read:  "the following class is
+              transitive") $)
+
+  $( Extend wff notation to include transitive classes.  Notation from
+     [TakeutiZaring] p. 35. $)
+  wtr $a wff Tr A $.
+
+  $( Define the transitive class predicate.  Definition of [Enderton] p. 71
+     extended to arbitrary classes.  For alternate definitions, see ~ dftr2
+     (which is suggestive of the word "transitive"), ~ dftr3 , ~ dftr4 , and
+     ~ dftr5 .  The term "complete" is used instead of "transitive" in
+     Definition 3 of [Suppes] p. 130.  (Contributed by NM, 29-Aug-1993.) $)
+  df-tr $a |- ( Tr A <-> U. A C_ A ) $.
+
+  ${
+    $d x y A $.
+    $( An alternate way of defining a transitive class.  Exercise 7 of
+       [TakeutiZaring] p. 40.  (Contributed by NM, 24-Apr-1994.) $)
+    dftr2 $p |- ( Tr A <-> A. x A. y ( ( x e. y /\ y e. A ) -> x e. A ) ) $=
+      ( cuni wss cv wcel wi wal wa dfss2 df-tr 19.23v eluni imbi1i bitr4i albii
+      wtr wex 3bitr4i ) CDZCEAFZUAGZUBCGZHZAICRUBBFZGUFCGJZUDHBIZAIAUACKCLUHUEA
+      UHUGBSZUDHUEUGUDBMUCUIUDBUBCNOPQT $.
+
+    $( An alternate way of defining a transitive class.  (Contributed by NM,
+       20-Mar-2004.) $)
+    dftr5 $p |- ( Tr A <-> A. x e. A A. y e. x y e. A ) $=
+      ( wtr cv wcel wa wi wal wral dftr2 alcom impexp albii df-ral bitr4i bitri
+      r19.21v ) CDBEZAEZFZTCFZGSCFZHZAIBIZUCBTJZACJZBACKUEUDBIZAIZUGUDBALUIUBUF
+      HZAIUGUHUJAUHUBUCHZBTJZUJUHUAUKHZBIULUDUMBUAUBUCMNUKBTOPUBUCBTRQNUFACOPQQ
+      $.
+
+    $( An alternate way of defining a transitive class.  Definition 7.1 of
+       [TakeutiZaring] p. 35.  (Contributed by NM, 29-Aug-1993.) $)
+    dftr3 $p |- ( Tr A <-> A. x e. A x C_ A ) $=
+      ( vy wtr cv wcel wral wss dftr5 dfss3 ralbii bitr4i ) BDCEBFCAEZGZABGMBHZ
+      ABGACBIONABCMBJKL $.
+  $}
+
+  $( An alternate way of defining a transitive class.  Definition of [Enderton]
+     p. 71.  (Contributed by NM, 29-Aug-1993.) $)
+  dftr4 $p |- ( Tr A <-> A C_ ~P A ) $=
+    ( wtr cuni wss cpw df-tr sspwuni bitr4i ) ABACADAAEDAFAAGH $.
+
+  $( Equality theorem for the transitive class predicate.  (Contributed by NM,
+     17-Sep-1993.) $)
+  treq $p |- ( A = B -> ( Tr A <-> Tr B ) ) $=
+    ( wceq cuni wss wtr unieq sseq1d sseq2 bitrd df-tr 3bitr4g ) ABCZADZAEZBDZB
+    EZAFBFMOPAEQMNPAABGHABPIJAKBKL $.
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( In a transitive class, the membership relation is transitive.
+       (Contributed by NM, 19-Apr-1994.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    trel $p |- ( Tr A -> ( ( B e. C /\ C e. A ) -> B e. A ) ) $=
+      ( vy vx wtr cv wcel wa wi wal dftr2 eleq12 wb eleq1 adantl anbi12d adantr
+      wceq imbi12d spc2gv pm2.43b sylbi ) AFDGZEGZHZUEAHZIZUDAHZJZEKDKZBCHZCAHZ
+      IZBAHZJZDEALUKUNUOUJUPDEBCCAUDBSZUECSZIZUHUNUIUOUSUFULUGUMUDBUECMURUGUMNU
+      QUECAOPQUQUIUONURUDBAORTUAUBUC $.
+  $}
+
+  $( In a transitive class, the membership relation is transitive.
+     (Contributed by NM, 19-Apr-1994.) $)
+  trel3 $p |- ( Tr A -> ( ( B e. C /\ C e. D /\ D e. A ) -> B e. A ) ) $=
+    ( wtr wcel w3a wa 3anass trel anim2d syl5bi syld ) AEZBCFZCDFZDAFZGZOCAFZHZ
+    BAFROPQHZHNTOPQINUASOACDJKLABCJM $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( An element of a transitive class is a subset of the class.  (Contributed
+       by NM, 7-Aug-1994.) $)
+    trss $p |- ( Tr A -> ( B e. A -> B C_ A ) ) $=
+      ( vx wtr wcel wss cv wceq eleq1 sseq1 imbi12d imbi2d wral dftr3 rsp sylbi
+      wi vtoclg pm2.43b ) ADZBAEZBAFZTCGZAEZUCAFZQZQTUAUBQZQCBAUCBHZUFUGTUHUDUA
+      UEUBUCBAIUCBAJKLTUECAMUFCANUECAOPRS $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( The intersection of transitive classes is transitive.  (Contributed by
+       NM, 9-May-1994.) $)
+    trin $p |- ( ( Tr A /\ Tr B ) -> Tr ( A i^i B ) ) $=
+      ( vx wtr cin wss wral wcel elin trss im2anan9 syl5bi ssin syl6ib ralrimiv
+      wa cv dftr3 sylibr ) ADZBDZPZCQZABEZFZCUDGUDDUBUECUDUBUCUDHZUCAFZUCBFZPZU
+      EUFUCAHZUCBHZPUBUIUCABITUJUGUAUKUHAUCJBUCJKLUCABMNOCUDRS $.
+  $}
+
+  $( The empty set is transitive.  (Contributed by NM, 16-Sep-1993.) $)
+  tr0 $p |- Tr (/) $=
+    ( c0 wtr cpw wss 0ss dftr4 mpbir ) ABAACZDHEAFG $.
+
+  $( The universe is transitive.  (Contributed by NM, 14-Sep-2003.) $)
+  trv $p |- Tr _V $=
+    ( cvv wtr cuni wss ssv df-tr mpbir ) ABACZADHEAFG $.
+
+  ${
+    $d x y z A $.  $d y z B $.
+    $( The indexed union of a class of transitive sets is transitive.
+       (Contributed by Mario Carneiro, 16-Nov-2014.) $)
+    triun $p |- ( A. x e. A Tr B -> Tr U_ x e. A B ) $=
+      ( vy wtr wral cv ciun wss wcel wrex eliun r19.29 nfcv nfiu1 nfss trss imp
+      wa ssiun2 sstr2 syl5com syl5 rexlimi syl sylan2b ralrimiva dftr3 sylibr )
+      CEZABFZDGZABCHZIZDUMFUMEUKUNDUMULUMJUKULCJZABKZUNAULBCLUKUPSUJUOSZABKUNUJ
+      UOABMUQUNABAULUMAULNABCOPUQULCIZAGBJZUNUJUOURCULQRUSCUMIURUNABCTULCUMUAUB
+      UCUDUEUFUGDUMUHUI $.
+
+    $( The union of a class of transitive sets is transitive.  Exercise 5(a) of
+       [Enderton] p. 73.  (Contributed by Scott Fenton, 21-Feb-2011.)  (Proof
+       shortened by Mario Carneiro, 26-Apr-2014.) $)
+    truni $p |- ( A. x e. A Tr x -> Tr U. A ) $=
+      ( cv wtr wral ciun cuni triun wceq wb uniiun treq ax-mp sylibr ) ACZDABEA
+      BOFZDZBGZDZABOHRPISQJABKRPLMN $.
+
+    $( The intersection of a class of transitive sets is transitive.  Exercise
+       5(b) of [Enderton] p. 73.  (Contributed by Scott Fenton,
+       25-Feb-2011.) $)
+    trint $p |- ( A. x e. A Tr x -> Tr |^| A ) $=
+      ( vy cv wtr wral wel wss wi cint dftr3 ralbii biimpi df-ral ralcom4 bitri
+      wal sylib ralim alimi syl wcel vex elint2 ssint imbi12i albii sylibr ) AD
+      ZEZABFZCAGZABFZCDZUIHZABFZIZCQZBJZEZUKULUOIZABFZCQZURUKUOCUIFZABFZVCUKVEU
+      JVDABCUIKLMVEVACQZABFVCVDVFABUOCUINLVAACBOPRVBUQCULUOABSTUAUTUNUSHZCUSFZU
+      RCUSKVHUNUSUBZVGIZCQURVGCUSNVJUQCVIUMVGUPAUNBCUCUDAUNBUEUFUGPPUH $.
+
+    $( If ` A ` is transitive and inhabited, then ` |^| A ` is a subset of
+       ` A ` .  (Contributed by Jim Kingdon, 22-Aug-2018.) $)
+    trintssm $p |- ( ( E. x x e. A /\ Tr A ) -> |^| A C_ A ) $=
+      ( vy cv wcel wex wtr wa cint wral elint2 wrex r19.2m exp3acom23
+      vex ex trel rexlimdv sylan9 syl5bi ssrdv ) ADZBEZAFZBGZHZCBIZBC
+      DZUGEUHUBEZABJZUFUHBEZAUHBCOKUDUJUIABLZUEUKUDUJULUIABMPUEUIUKAB
+      UEUIUCUKBUHUBQNRSTUA $.
+
+    $( Any inhabited transitive class includes its intersection.  Similar to
+       Exercise 2 in [TakeutiZaring] p. 44.  (Contributed by Jim Kingdon,
+       22-Aug-2018.) $)
+    trint0m $p |- ( ( Tr A /\ E. x x e. A ) -> |^| A C_ A ) $=
+      ( cv wcel wex wtr cint wss wi intss1 trss com12 sylsyld exlimiv
+      sstr2 impcom ) ACZBDZAEBFZBGZBHZRSUAIARTQHSQBHZUAQBJSRUBBQKLTQB
+      OMNP $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -31896,6 +32883,15 @@ htmldef "|^|_" as
 htmldef "Disj_" as "<u>Disj</u> ";
   althtmldef "Disj_" as "<u>Disj</u> ";
   latexdef "Disj_" as "\operatorname{\underline{Disj}}";
+htmldef "|->" as " <IMG SRC='mapsto.gif' WIDTH=15 HEIGHT=19 ALT=' |-&gt;'" +
+    " TITLE='|-&gt;'> ";
+  althtmldef "|->" as ' &#8614; ';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "|->" as "\mapsto";
+htmldef "Tr" as
+    "<IMG SRC='_ctr.gif' WIDTH=16 HEIGHT=19 ALT=' Tr' TITLE='Tr'> ";
+  althtmldef "Tr" as 'Tr ';
+  latexdef "Tr" as "{\rm Tr}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
