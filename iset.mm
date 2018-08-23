@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Aug-2018
+$( iset.mm - Version of 22-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -32231,13 +32231,13 @@ $)
       JVDABCUIKLMVEVACQZABFVCVDVFABUOCUINLVAACBOPRVBUQCULUOABSTUAUTUNUSHZCUSFZU
       RCUSKVHUNUSUBZVGIZCQURVGCUSNVJUQCVIUMVGUPAUNBCUCUDAUNBUEUFUGPPUH $.
 
-    $( If ` A ` is transitive and non-null, then ` |^| A ` is a subset of
-       ` A ` .  (Contributed by Scott Fenton, 3-Mar-2011.) $)
-    trintss $p |- ( ( A =/= (/) /\ Tr A ) -> |^| A C_ A ) $=
-      ( vy vx c0 wne wtr wa cint cv wcel wel wral elint2 wrex r19.2z exp3acom23
-      vex ex trel rexlimdv sylan9 syl5bi ssrdv ) ADEZAFZGZBAHZABIZUGJBCKZCALZUF
-      UHAJZCUHABQMUDUJUICANZUEUKUDUJULUICAORUEUIUKCAUEUICIZAJUKAUHUMSPTUAUBUC
-      $.
+    $( If ` A ` is transitive and inhabited, then ` |^| A ` is a subset of
+       ` A ` .  (Contributed by Jim Kingdon, 22-Aug-2018.) $)
+    trintssm $p |- ( ( E. x x e. A /\ Tr A ) -> |^| A C_ A ) $=
+      ( vy cv wcel wex wtr wa cint wral elint2 wrex r19.2m exp3acom23
+      vex ex trel rexlimdv sylan9 syl5bi ssrdv ) ADZBEZAFZBGZHZCBIZBC
+      DZUGEUHUBEZABJZUFUHBEZAUHBCOKUDUJUIABLZUEUKUDUJULUIABMPUEUIUKAB
+      UEUIUCUKBUHUBQNRSTUA $.
 
     $( Any non-empty transitive class includes its intersection.  Exercise 2 in
        [TakeutiZaring] p. 44.  (Contributed by Andrew Salmon, 14-Nov-2011.) $)
