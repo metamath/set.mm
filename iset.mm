@@ -32358,6 +32358,48 @@ $)
     ax-sep $a |- E. y A. x ( x e. y <-> ( x e. z /\ ph ) ) $.
   $}
 
+  ${
+    $d x y z w $.  $d y ph w $.  $d z w $.
+    $( A less restrictive version of the Separation Scheme ~ ax-sep , where
+       variables ` x ` and ` z ` can both appear free in the wff ` ph ` , which
+       can therefore be thought of as ` ph ( x , z ) ` .  This version was
+       derived from the more restrictive ~ ax-sep with no additional set theory
+       axioms.  (Contributed by NM, 10-Dec-2006.)  (Proof shortened by Mario
+       Carneiro, 17-Nov-2016.) $)
+    axsep2 $p |- E. y A. x ( x e. y <-> ( x e. z /\ ph ) ) $=
+      ( vw wel wa wb wal wex cv eleq2 anbi1d anabs5 syl6bb bibi2d albidv exbidv
+      weq ax-sep chvarv ) BCFZBEFZBDFZAGZGZHZBIZCJUBUEHZBIZCJEDEDSZUHUJCUKUGUIB
+      UKUFUEUBUKUFUDUEGUEUKUCUDUEEKDKBKLMUDANOPQRUEBCETUA $.
+  $}
+
+  ${
+    $d x y A z $.  $d y ph z $.
+    zfauscl.1 $e |- A e. _V $.
+    $( Separation Scheme (Aussonderung) using a class variable.  To derive this
+       from ~ ax-sep , we invoke the Axiom of Extensionality (indirectly via
+       ~ vtocl ), which is needed for the justification of class variable
+       notation.
+
+       (Contributed by NM, 5-Aug-1993.) $)
+    zfauscl $p |- E. y A. x ( x e. y <-> ( x e. A /\ ph ) ) $=
+      ( vz cv wcel wa wb wal wex eleq2 anbi1d bibi2d albidv exbidv ax-sep vtocl
+      wceq ) BGZCGHZUAFGZHZAIZJZBKZCLUBUADHZAIZJZBKZCLFDEUCDTZUGUKCULUFUJBULUEU
+      IUBULUDUHAUCDUAMNOPQABCFRS $.
+  $}
+
+  ${
+    $d x ph z $.  $d x y z $.
+    bm1.3ii.1 $e |- E. x A. y ( ph -> y e. x ) $.
+    $( Convert implication to equivalence using the Separation Scheme
+       (Aussonderung) ~ ax-sep .  Similar to Theorem 1.3ii of [BellMachover]
+       p. 463.  (Contributed by NM, 5-Aug-1993.) $)
+    bm1.3ii $p |- E. x A. y ( y e. x <-> ph ) $=
+      ( vz wel wi wal wa wex weq elequ2 imbi2d albidv cbvexv mpbi ax-sep pm3.2i
+      wb exan 19.42v bimsc1 alanimi eximi sylbir exlimiv ax-mp ) ACEFZGZCHZCBFZ
+      UHAISZCHZBJZIZEJUKASZCHZBJZUJUNEUJEJZUNAUKGZCHZBJUSDVAUJBEBEKZUTUICVBUKUH
+      ABECLMNOPACBEQRTUOUREUOUJUMIZBJURUJUMBUAVCUQBUIULUPCAUHUKUBUCUDUEUFUG $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
