@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-Aug-2018
+$( iset.mm - Version of 25-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -32398,6 +32398,30 @@ $)
       wb exan 19.42v bimsc1 alanimi eximi sylbir exlimiv ax-mp ) ACEFZGZCHZCBFZ
       UHAISZCHZBJZIZEJUKASZCHZBJZUJUNEUJEJZUNAUKGZCHZBJUSDVAUJBEBEKZUTUICVBUKUH
       ABECLMNOPACBEQRTUOUREUOUJUMIZBJURUJUMBUAVCUQBUIULUPCAUHUKUBUCUDUEUFUG $.
+  $}
+
+  ${
+    $d x y z $.
+    $( Derive a weakened version of ~ ax-i9 , where ` x ` and ` y ` must be
+       distinct, from Separation ~ ax-sep and Extensionality ~ ax-ext .  The
+       theorem ` -. A. x -. x = y ` also holds ( ~ ax9vsep ), but in
+       intuitionistic logic ` E. x x = y ` is stronger.  (Contributed by Jim
+       Kingdon, 25-Aug-2018.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    a9evsep $p |- E. x x = y $=
+      ( vz cv wcel wceq wi wa wb wal wex ax-sep id biantru bibi2i alimi
+      biimpri ax-ext syl eximi ax-mp ) CDZADZEZUBBDZEZUBUBFZUGGZHZIZCJZ
+      AKUCUEFZAKUHCABLUKULAUKUDUFIZCJULUJUMCUMUJUFUIUDUHUFUGMNOQPABCRST
+      UA $.
+
+    $( Derive a weakened version of ~ ax-9 , where ` x ` and ` y ` must be
+       distinct, from Separation ~ ax-sep and Extensionality ~ ax-ext .  In
+       intuitionistic logic ~ a9evsep is stronger and also holds.  (Contributed
+       by NM, 12-Nov-2013.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    ax9vsep $p |- -. A. x -. x = y $=
+      ( cv wceq wex wn wal a9evsep exalim ax-mp ) ACBCDZAEKFAGFABHKAI
+      J $.
   $}
 
 $(
