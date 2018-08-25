@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Aug-2018
+$( iset.mm - Version of 23-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -32291,6 +32291,71 @@ $)
       ( cv wcel wex wtr cint wss wi intss1 trss com12 sylsyld exlimiv
       sstr2 impcom ) ACZBDZAEBFZBGZBHZRSUAIARTQHSQBHZUAQBJSRUBBQKLTQB
       OMNP $.
+  $}
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+       IZF Set Theory - add the Axioms of Collection and Separation
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          Introduce the Axiom of Collection
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z w a b $.
+    ax-coll.1 $e |- F/ b ph $.
+    $( Axiom of Collection.  Axiom 7 of [Crosilla], p.  "Axioms of CZF and IZF"
+       (with unnnecessary quantifier removed).  (Contributed by Jim Kingdon,
+       23-Aug-2018.) $)
+    ax-coll $a |- ( A. x e. a E. y ph -> E. b A. x e. a E. y e. b ph ) $.
+
+    $( Axiom of Replacement.  Axiom 7' of [Crosilla], p.  "Axioms of CZF and
+       IZF" (with unnnecessary quantifier removed).  In our context this is not
+       an axiom, but a theorem proved from ~ ax-coll .  It is identical to
+       ~ zfrep6 except for the choice of a freeness hypothesis rather than a
+       distinct variable constraint between ` b ` and ` ph ` .  (Contributed by
+       Jim Kingdon, 23-Aug-2018.) $)
+    repizf $p |- ( A. x e. a E! y ph -> E. b A. x e. a E. y e. b ph ) $=
+      ( weu cv wral wex wrex euex ralimi ax-coll syl ) ACGZBDHZIACJZB
+      QIACEHKBQIEJPRBQACLMABCDEFNO $.
+  $}
+
+  ${
+    $d ph w v $.  $d x y z w v $.
+    $( A version of the Axiom of Replacement.  Normally ` ph ` would have free
+       variables ` x ` and ` y ` .  Axiom 6 of [Kunen] p. 12.  The Separation
+       Scheme ~ ax-sep cannot be derived from this version and must be stated
+       as a separate axiom in an axiom system (such as Kunen's) that uses this
+       version.  (Contributed by NM, 10-Oct-2003.) $)
+    zfrep6 $p |- ( A. x e. z E! y ph -> E. w A. x e. z E. y e. w ph ) $=
+      ( nfv repizf ) ABCDEAEFG $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          Introduce the Axiom of Separation
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z $.  $d y z ph $.
+    $( The Axiom of Separation of IZF set theory.  Axiom 6 of [Crosilla], p.
+       "Axioms of CZF and IZF" (with unnnecessary quantifier removed, and with
+       a ` F/ y ph ` condition replaced by a distinct variable constraint
+       between ` y ` and ` ph ` ).
+
+       The Separation Scheme is a weak form of Frege's Axiom of Comprehension,
+       conditioning it (with ` x e. z ` ) so that it asserts the existence of a
+       collection only if it is smaller than some other collection ` z ` that
+       already exists.  This prevents Russell's paradox ~ ru .  In some texts,
+       this scheme is called "Aussonderung" or the Subset Axiom.
+
+       (Contributed by NM, 11-Sep-2006.) $)
+    ax-sep $a |- E. y A. x ( x e. y <-> ( x e. z /\ ph ) ) $.
   $}
 
 $(
