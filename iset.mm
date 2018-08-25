@@ -4594,6 +4594,14 @@ $)
       ( wn con3d imp ) ACEBEABCDFG $.
   $}
 
+  ${
+    pm2.01da.1 $e |- ( ( ph /\ ps ) -> -. ps ) $.
+    $( Deduction based on reductio ad absurdum.  (Contributed by Mario
+       Carneiro, 9-Feb-2017.) $)
+    pm2.01da $p |- ( ph -> -. ps ) $=
+      ( wn ex pm2.01d ) ABABBDCEF $.
+  $}
+
   $( In classical logic, this is just a restatement of ~ pm3.2 .  In
      intuitionistic logic, it still holds, but is weaker than pm3.2.
      (Contributed by Mario Carneiro, 12-May-2015.) $)
@@ -5601,6 +5609,13 @@ $)
        by NM, 14-Oct-2005.) $)
     jaodan $p |- ( ( ph /\ ( ps \/ th ) ) -> ch ) $=
       ( wo ex jaod imp ) ABDGCABCDABCEHADCFHIJ $.
+
+    jaodan.3 $e |- ( ph -> ( ps \/ th ) ) $.
+    $( Eliminate a disjunction in a deduction.  A translation of natural
+       deduction rule ` \/ ` E ( ` \/ ` elimination), see ~ natded .
+       (Contributed by Mario Carneiro, 29-May-2016.) $)
+    mpjaodan $p |- ( ph -> ch ) $=
+      ( wo jaodan mpdan ) ABDHCGABCDEFIJ $.
   $}
 
   $( Theorem *4.77 of [WhiteheadRussell] p. 121.  (Contributed by NM,
@@ -9194,6 +9209,15 @@ $)
        Mario Carneiro, 9-Feb-2017.) $)
     inegd $p |- ( ph -> -. ps ) $=
       ( wfal wi wn ex dfnot sylibr ) ABDEBFABDCGBHI $.
+  $}
+
+  ${
+    pm2.21fal.1 $e |- ( ph -> ps ) $.
+    pm2.21fal.2 $e |- ( ph -> -. ps ) $.
+    $( If a wff and its negation are provable, then falsum is provable.
+       (Contributed by Mario Carneiro, 9-Feb-2017.) $)
+    pm2.21fal $p |- ( ph -> F. ) $=
+      ( wfal pm2.21dd ) ABECDF $.
   $}
 
   $( Negation inferred from embedded conjunct.  (Contributed by NM,
@@ -13478,6 +13502,17 @@ $)
   $}
 
   ${
+    exlimdd.1 $e |- F/ x ph $.
+    exlimdd.2 $e |- F/ x ch $.
+    exlimdd.3 $e |- ( ph -> E. x ps ) $.
+    exlimdd.4 $e |- ( ( ph /\ ps ) -> ch ) $.
+    $( Existential elimination rule of natural deduction.  (Contributed by
+       Mario Carneiro, 9-Feb-2017.) $)
+    exlimdd $p |- ( ph -> ch ) $=
+      ( wex ex exlimd mpd ) ABDICGABCDEFABCHJKL $.
+  $}
+
+  ${
     $d x ph $.
     $( Special case of Theorem 19.21 of [Margaris] p. 90. _Notational
        convention_:  We sometimes suffix with "v" the label of a theorem
@@ -13680,6 +13715,16 @@ $)
        31-Jul-1995.) $)
     exlimdvv $p |- ( ph -> ( E. x E. y ps -> ch ) ) $=
       ( wex exlimdv ) ABEGCDABCEFHH $.
+  $}
+
+  ${
+    $d x ch $.  $d x ph $.
+    exlimddv.1 $e |- ( ph -> E. x ps ) $.
+    exlimddv.2 $e |- ( ( ph /\ ps ) -> ch ) $.
+    $( Existential elimination rule of natural deduction.  (Contributed by
+       Mario Carneiro, 15-Jun-2016.) $)
+    exlimddv $p |- ( ph -> ch ) $=
+      ( wex ex exlimdv mpd ) ABDGCEABCDABCFHIJ $.
   $}
 
   ${
