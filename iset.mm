@@ -5612,8 +5612,8 @@ $)
 
     jaodan.3 $e |- ( ph -> ( ps \/ th ) ) $.
     $( Eliminate a disjunction in a deduction.  A translation of natural
-       deduction rule ` \/ ` E ( ` \/ ` elimination).
-       (Contributed by Mario Carneiro, 29-May-2016.) $)
+       deduction rule ` \/ ` E ( ` \/ ` elimination).  (Contributed by Mario
+       Carneiro, 29-May-2016.) $)
     mpjaodan $p |- ( ph -> ch ) $=
       ( wo jaodan mpdan ) ABDHCGABCDEFIJ $.
   $}
