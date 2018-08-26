@@ -24004,26 +24004,6 @@ $)
   $}
 
   ${
-    $d y A $.  $d y B $.  $d x y $.
-    $( The existence of proper substitution into a class.  (Contributed by NM,
-       10-Nov-2005.) $)
-    csbexg $p |- ( ( A e. V /\ A. x B e. W ) -> [_ A / x ]_ B e. _V ) $=
-      ( vy wcel wal wa csb wsbc cab cvv df-csb abid2 elex syl5eqel alimi spsbc
-      cv syl5 imp wb nfcv sbcabel adantr mpbid ) BDGZCEGZAHZIZABCJFTCGZABKFLZMA
-      FBCNUKULFLZMGZABKZUMMGZUHUJUPUJUOAHUHUPUIUOAUIUNCMFCOCEPQRUOABDSUAUBUHUPU
-      QUCUJULAFBMDAMUDUEUFUGQ $.
-  $}
-
-  ${
-    csbex.1 $e |- A e. _V $.
-    csbex.2 $e |- B e. _V $.
-    $( The existence of proper substitution into a class.  (Contributed by NM,
-       7-Aug-2007.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
-    csbex $p |- [_ A / x ]_ B e. _V $=
-      ( cvv wcel csb wal csbexg mpan mpg ) CFGZABCHFGZABFGMAINDABCFFJKEL $.
-  $}
-
-  ${
     $d y A $.  $d y B $.  $d y V $.  $d x y $.
     $( Substitution doesn't affect a constant ` B ` (in which ` x ` is not
        free).  (Contributed by Mario Carneiro, 14-Oct-2016.) $)
