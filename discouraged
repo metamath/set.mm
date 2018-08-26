@@ -11769,14 +11769,6 @@
 "riesz4" is used by "cnvbraval".
 "riesz4" is used by "riesz2".
 "riesz4i" is used by "riesz4".
-"riota5OLD" is used by "cdlemefrs32fva".
-"riota5OLD" is used by "glb0N".
-"riota5OLD" is used by "lub0N".
-"riota5OLD" is used by "lubunNEW".
-"riota5OLD" is used by "odval2".
-"riota5OLD" is used by "sqr0".
-"riota5OLD" is used by "trlval2".
-"riota5OLD" is used by "unxpwdom3".
 "riotaocN" is used by "glbconN".
 "riotasvdOLD" is used by "riotasv2dOLD".
 "riotasvdOLD" is used by "riotasv3dOLD".
@@ -17049,7 +17041,6 @@ New usage of "riesz2" is discouraged (0 uses).
 New usage of "riesz3i" is discouraged (2 uses).
 New usage of "riesz4" is discouraged (4 uses).
 New usage of "riesz4i" is discouraged (1 uses).
-New usage of "riota5OLD" is discouraged (8 uses).
 New usage of "riotaocN" is discouraged (1 uses).
 New usage of "riotasv2dOLD" is discouraged (0 uses).
 New usage of "riotasv3dOLD" is discouraged (0 uses).
@@ -18175,7 +18166,7 @@ Proof modification of "logccne0OLD" is discouraged (62 steps).
 Proof modification of "loolin" is discouraged (14 steps).
 Proof modification of "ltdiv2OLD" is discouraged (61 steps).
 Proof modification of "ltneOLD" is discouraged (17 steps).
-Proof modification of "lubunNEW" is discouraged (895 steps).
+Proof modification of "lubunNEW" is discouraged (882 steps).
 Proof modification of "luk-1" is discouraged (73 steps).
 Proof modification of "luk-2" is discouraged (52 steps).
 Proof modification of "luk-3" is discouraged (20 steps).
@@ -18380,7 +18371,6 @@ Proof modification of "reusv5OLD" is discouraged (99 steps).
 Proof modification of "reusv6OLD" is discouraged (370 steps).
 Proof modification of "reusv7OLD" is discouraged (297 steps).
 Proof modification of "rexsnsOLD" is discouraged (55 steps).
-Proof modification of "riota5OLD" is discouraged (26 steps).
 Proof modification of "riotasv2dOLD" is discouraged (337 steps).
 Proof modification of "riotasv3dOLD" is discouraged (241 steps).
 Proof modification of "riotasvdOLD" is discouraged (295 steps).
