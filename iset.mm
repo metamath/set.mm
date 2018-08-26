@@ -32449,18 +32449,6 @@ $)
 
   ${
     $d x y z w $.
-    $( Prove ~ axnul directly from ~ ax-rep using none of the equality axioms
-       ~ ax-8 through ~ ax-15 provided we accept ~ sp as an axiom.  Replace
-       ~ sp with the obsolete ~ ax-4 to see this in 'show trace_back'.
-       (Contributed by Jeff Hoffman, 3-Feb-2008.)  (Proof shortened by Mario
-       Carneiro, 17-Nov-2016.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    axnulALT $p |- E. x A. y -. y e. x $=
-      ( vw vz cv wcel wn wal wex wfal wa wb wi ax-rep sp con2i df-ex sylibr mpg
-      wceq fal mto pm2.21i intnan nex nbn albii exbii mpbir ) BEZAEZFZGZBHZAIUL
-      CEDEFZJAHZKZCIZLZBHZAIZUPUJUKTZMZBHZAIZVACJDABCNVCVEBVDVDGZAHZGVEVGVDVFAO
-      PVDAQRUPVBUPJUAJAOUBZUCSSUNUTAUMUSBURULUQCUPUOVHUDUEUFUGUHUI $.
-
     $( The Null Set Axiom of ZF set theory: there exists a set with no
        elements.  Axiom of Empty Set of [Enderton] p. 18.  In some textbooks,
        this is presented as a separate axiom; here we show it can be derived
@@ -32468,18 +32456,6 @@ $)
        that at least one empty set exists, but does not tell us that it is
        unique - we need the Axiom of Extensionality to do that (see
        ~ zfnuleu ).
-
-       This proof, suggested by Jeff Hoffman, uses only ~ ax-5 and ~ ax-gen
-       from predicate calculus, which are valid in "free logic" i.e. logic
-       holding in an empty domain (see Axiom A5 and Rule R2 of [LeBlanc]
-       p. 277).  Thus, our ~ ax-sep implies the existence of at least one set.
-       Note that Kunen's version of ~ ax-sep (Axiom 3 of [Kunen] p. 11) does
-       not imply the existence of a set because his is universally closed i.e.
-       prefixed with universal quantifiers to eliminate all free variables.
-       His existence is provided by a separate axiom stating ` E. x x = x `
-       (Axiom 0 of [Kunen] p. 10).
-
-       See ~ axnulALT for a proof directly from ~ ax-rep .
 
        This theorem should not be referenced by any proof.  Instead, use
        ~ ax-nul below so that the uses of the Null Set Axiom can be more easily
