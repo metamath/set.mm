@@ -15942,6 +15942,21 @@ $)
       JK $.
   $}
 
+  ${
+    $d x y z $.  $d ph z $.
+    bm1.1.1 $e |- F/ x ph $.
+    $( Any set defined by a property is the only set defined by that property.
+       Theorem 1.1 of [BellMachover] p. 462.  (Contributed by NM,
+       30-Jun-1994.) $)
+    bm1.1 $p |- ( E. x A. y ( y e. x <-> ph ) ->
+                  E! x A. y ( y e. x <-> ph ) ) $=
+      ( vz wel wb wal wex wsb wa weq wi weu nfv nfbi nfal elequ2 bibi1d albidv
+      sbie 19.26 biantr alimi ax-ext syl sylbir sylan2b gen2 jctr eu2 sylibr )
+      CBFZAGZCHZBIZUPUOUOBEJZKBELZMZEHBHZKUOBNUPUTUSBEUQUOCEFZAGZCHZURUOVCBEVBB
+      CVAABVABODPQURUNVBCURUMVAABECRSTUAUOVCKUNVBKZCHZURUNVBCUBVEUMVAGZCHURVDVF
+      CUMAVAUCUDBECUEUFUGUHUIUJUOBEUOEOUKUL $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                    Class abstractions (a.k.a. class builders)
