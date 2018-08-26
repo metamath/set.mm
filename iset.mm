@@ -33088,24 +33088,25 @@ htmldef "_V" as "<IMG SRC='rmcv.gif' WIDTH=10 HEIGHT=19 ALT=' _V' TITLE='_V'>";
   althtmldef "_V" as 'V';
   latexdef "_V" as "{\rm V}";
 htmldef "[." as
-    "<IMG SRC='_dlbrack.gif' WIDTH=6 HEIGHT=19 ALT=' [.' TITLE='[.'>";
+    "<IMG SRC='_dlbrack.gif' WIDTH=7 HEIGHT=19 ALT=' [.' TITLE='[.'>";
   /* althtmldef "[." as '&#x298F;'; */   /* corner tick */
-  /* U+0323 COMBINING DOT BELOW (HTML &#803;) */
-  althtmldef "[." as '[&#803;';
+  /* althtmldef "[." as '[&#803;'; */  /* combining dot below */
+  althtmldef "[." as '<B>[</B>'; /* 6-Aug-2018 nm */
   /* \underaccent is in accents package */
   latexdef "[." as "\underaccent{\dot}{[}";
 htmldef "]." as
-    "<IMG SRC='_drbrack.gif' WIDTH=5 HEIGHT=19 ALT=' ].' TITLE='].'>";
+    "<IMG SRC='_drbrack.gif' WIDTH=6 HEIGHT=19 ALT=' ].' TITLE='].'>";
   /* althtmldef "]." as '&#x298E;'; */   /* corner tick */
-  althtmldef "]." as ']&#803;';
+  /* althtmldef "]." as ']&#803;'; */  /* combining dot below */
+  althtmldef "]." as '<B>]</B>'; /* 6-Aug-2018 nm */
   latexdef "]." as "\underaccent{\dot}{]}";
 htmldef "[_" as
-    "<IMG SRC='_ulbrack.gif' WIDTH=6 HEIGHT=19 ALT=' [_' TITLE='[_'>";
-  althtmldef "[_" as '<U>[</U>'; /* &lsqb; */
+    "<IMG SRC='_ulbrack.gif' WIDTH=7 HEIGHT=19 ALT=' [_' TITLE='[_'>";
+  althtmldef "[_" as '<B>&#x298B;</B>'; /* left sq brack w underbar */
   latexdef "[_" as "\underline{[}";
 htmldef "]_" as
-    "<IMG SRC='_urbrack.gif' WIDTH=5 HEIGHT=19 ALT=' ]_' TITLE=']_'>";
-  althtmldef "]_" as '<U>]</U>'; /* &rsqb; */
+    "<IMG SRC='_urbrack.gif' WIDTH=6 HEIGHT=19 ALT=' ]_' TITLE=']_'>";
+  althtmldef "]_" as '<B>&#x298C;</B>'; /* right sq brack w underbar */
   latexdef "]_" as "\underline{]}";
 htmldef "\" as
     " <IMG SRC='setminus.gif' WIDTH=8 HEIGHT=19 ALT=' \' TITLE='\'> ";
