@@ -27311,6 +27311,16 @@ $)
       $.
   $}
 
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( The proper substitution of a proper class for a set into a class results
+       in the empty set.  (Contributed by NM, 17-Aug-2018.) $)
+    csbprc $p |- ( -. A e. _V -> [_ A / x ]_ B = (/) ) $=
+      ( vy cvv wcel wn csb cv wsbc cab c0 df-csb wfal sbcex con3i pm2.21d falim
+      impbid1 abbidv fal abf syl6eq syl5eq ) BEFZGZABCHDICFZABJZDKZLADBCMUFUIND
+      KLUFUHNDUFUHNUFUHNUHUEUGABOPQUHRSTNDUAUBUCUD $.
+  $}
+
   $( Two classes are empty iff their union is empty.  (Contributed by NM,
      11-Aug-2004.) $)
   un00 $p |- ( ( A = (/) /\ B = (/) ) <-> ( A u. B ) = (/) ) $=
