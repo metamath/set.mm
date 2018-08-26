@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Aug-2018
+$( iset.mm - Version of 25-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -5612,8 +5612,8 @@ $)
 
     jaodan.3 $e |- ( ph -> ( ps \/ th ) ) $.
     $( Eliminate a disjunction in a deduction.  A translation of natural
-       deduction rule ` \/ ` E ( ` \/ ` elimination).
-       (Contributed by Mario Carneiro, 29-May-2016.) $)
+       deduction rule ` \/ ` E ( ` \/ ` elimination).  (Contributed by Mario
+       Carneiro, 29-May-2016.) $)
     mpjaodan $p |- ( ph -> ch ) $=
       ( wo jaodan mpdan ) ABDHCGABCDEFIJ $.
   $}
@@ -32291,6 +32291,137 @@ $)
       ( cv wcel wex wtr cint wss wi intss1 trss com12 sylsyld exlimiv
       sstr2 impcom ) ACZBDZAEBFZBGZBHZRSUAIARTQHSQBHZUAQBJSRUBBQKLTQB
       OMNP $.
+  $}
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+       IZF Set Theory - add the Axioms of Collection and Separation
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          Introduce the Axiom of Collection
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z w a b $.
+    ax-coll.1 $e |- F/ b ph $.
+    $( Axiom of Collection.  Axiom 7 of [Crosilla], p.  "Axioms of CZF and IZF"
+       (with unnnecessary quantifier removed).  (Contributed by Jim Kingdon,
+       23-Aug-2018.) $)
+    ax-coll $a |- ( A. x e. a E. y ph -> E. b A. x e. a E. y e. b ph ) $.
+
+    $( Axiom of Replacement.  Axiom 7' of [Crosilla], p.  "Axioms of CZF and
+       IZF" (with unnnecessary quantifier removed).  In our context this is not
+       an axiom, but a theorem proved from ~ ax-coll .  It is identical to
+       ~ zfrep6 except for the choice of a freeness hypothesis rather than a
+       distinct variable constraint between ` b ` and ` ph ` .  (Contributed by
+       Jim Kingdon, 23-Aug-2018.) $)
+    repizf $p |- ( A. x e. a E! y ph -> E. b A. x e. a E. y e. b ph ) $=
+      ( weu cv wral wex wrex euex ralimi ax-coll syl ) ACGZBDHZIACJZB
+      QIACEHKBQIEJPRBQACLMABCDEFNO $.
+  $}
+
+  ${
+    $d ph w v $.  $d x y z w v $.
+    $( A version of the Axiom of Replacement.  Normally ` ph ` would have free
+       variables ` x ` and ` y ` .  Axiom 6 of [Kunen] p. 12.  The Separation
+       Scheme ~ ax-sep cannot be derived from this version and must be stated
+       as a separate axiom in an axiom system (such as Kunen's) that uses this
+       version.  (Contributed by NM, 10-Oct-2003.) $)
+    zfrep6 $p |- ( A. x e. z E! y ph -> E. w A. x e. z E. y e. w ph ) $=
+      ( nfv repizf ) ABCDEAEFG $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          Introduce the Axiom of Separation
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z $.  $d y z ph $.
+    $( The Axiom of Separation of IZF set theory.  Axiom 6 of [Crosilla], p.
+       "Axioms of CZF and IZF" (with unnnecessary quantifier removed, and with
+       a ` F/ y ph ` condition replaced by a distinct variable constraint
+       between ` y ` and ` ph ` ).
+
+       The Separation Scheme is a weak form of Frege's Axiom of Comprehension,
+       conditioning it (with ` x e. z ` ) so that it asserts the existence of a
+       collection only if it is smaller than some other collection ` z ` that
+       already exists.  This prevents Russell's paradox ~ ru .  In some texts,
+       this scheme is called "Aussonderung" or the Subset Axiom.
+
+       (Contributed by NM, 11-Sep-2006.) $)
+    ax-sep $a |- E. y A. x ( x e. y <-> ( x e. z /\ ph ) ) $.
+  $}
+
+  ${
+    $d x y z w $.  $d y ph w $.  $d z w $.
+    $( A less restrictive version of the Separation Scheme ~ ax-sep , where
+       variables ` x ` and ` z ` can both appear free in the wff ` ph ` , which
+       can therefore be thought of as ` ph ( x , z ) ` .  This version was
+       derived from the more restrictive ~ ax-sep with no additional set theory
+       axioms.  (Contributed by NM, 10-Dec-2006.)  (Proof shortened by Mario
+       Carneiro, 17-Nov-2016.) $)
+    axsep2 $p |- E. y A. x ( x e. y <-> ( x e. z /\ ph ) ) $=
+      ( vw wel wa wb wal wex cv eleq2 anbi1d anabs5 syl6bb bibi2d albidv exbidv
+      weq ax-sep chvarv ) BCFZBEFZBDFZAGZGZHZBIZCJUBUEHZBIZCJEDEDSZUHUJCUKUGUIB
+      UKUFUEUBUKUFUDUEGUEUKUCUDUEEKDKBKLMUDANOPQRUEBCETUA $.
+  $}
+
+  ${
+    $d x y A z $.  $d y ph z $.
+    zfauscl.1 $e |- A e. _V $.
+    $( Separation Scheme (Aussonderung) using a class variable.  To derive this
+       from ~ ax-sep , we invoke the Axiom of Extensionality (indirectly via
+       ~ vtocl ), which is needed for the justification of class variable
+       notation.
+
+       (Contributed by NM, 5-Aug-1993.) $)
+    zfauscl $p |- E. y A. x ( x e. y <-> ( x e. A /\ ph ) ) $=
+      ( vz cv wcel wa wb wal wex eleq2 anbi1d bibi2d albidv exbidv ax-sep vtocl
+      wceq ) BGZCGHZUAFGZHZAIZJZBKZCLUBUADHZAIZJZBKZCLFDEUCDTZUGUKCULUFUJBULUEU
+      IUBULUDUHAUCDUAMNOPQABCFRS $.
+  $}
+
+  ${
+    $d x ph z $.  $d x y z $.
+    bm1.3ii.1 $e |- E. x A. y ( ph -> y e. x ) $.
+    $( Convert implication to equivalence using the Separation Scheme
+       (Aussonderung) ~ ax-sep .  Similar to Theorem 1.3ii of [BellMachover]
+       p. 463.  (Contributed by NM, 5-Aug-1993.) $)
+    bm1.3ii $p |- E. x A. y ( y e. x <-> ph ) $=
+      ( vz wel wi wal wa wex weq elequ2 imbi2d albidv cbvexv mpbi ax-sep pm3.2i
+      wb exan 19.42v bimsc1 alanimi eximi sylbir exlimiv ax-mp ) ACEFZGZCHZCBFZ
+      UHAISZCHZBJZIZEJUKASZCHZBJZUJUNEUJEJZUNAUKGZCHZBJUSDVAUJBEBEKZUTUICVBUKUH
+      ABECLMNOPACBEQRTUOUREUOUJUMIZBJURUJUMBUAVCUQBUIULUPCAUHUKUBUCUDUEUFUG $.
+  $}
+
+  ${
+    $d x y z $.
+    $( Derive a weakened version of ~ ax-i9 , where ` x ` and ` y ` must be
+       distinct, from Separation ~ ax-sep and Extensionality ~ ax-ext .  The
+       theorem ` -. A. x -. x = y ` also holds ( ~ ax9vsep ), but in
+       intuitionistic logic ` E. x x = y ` is stronger.  (Contributed by Jim
+       Kingdon, 25-Aug-2018.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    a9evsep $p |- E. x x = y $=
+      ( vz cv wcel wceq wi wa wb wal wex ax-sep id biantru bibi2i alimi
+      biimpri ax-ext syl eximi ax-mp ) CDZADZEZUBBDZEZUBUBFZUGGZHZIZCJZ
+      AKUCUEFZAKUHCABLUKULAUKUDUFIZCJULUJUMCUMUJUFUIUDUHUFUGMNOQPABCRST
+      UA $.
+
+    $( Derive a weakened version of ~ ax-9 , where ` x ` and ` y ` must be
+       distinct, from Separation ~ ax-sep and Extensionality ~ ax-ext .  In
+       intuitionistic logic ~ a9evsep is stronger and also holds.  (Contributed
+       by NM, 12-Nov-2013.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    ax9vsep $p |- -. A. x -. x = y $=
+      ( cv wceq wex wn wal a9evsep exalim ax-mp ) ACBCDZAEKFAGFABHKAI
+      J $.
   $}
 
 $(
