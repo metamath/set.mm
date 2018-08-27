@@ -15942,6 +15942,21 @@ $)
       JK $.
   $}
 
+  ${
+    $d x y z $.  $d ph z $.
+    bm1.1.1 $e |- F/ x ph $.
+    $( Any set defined by a property is the only set defined by that property.
+       Theorem 1.1 of [BellMachover] p. 462.  (Contributed by NM,
+       30-Jun-1994.) $)
+    bm1.1 $p |- ( E. x A. y ( y e. x <-> ph ) ->
+                  E! x A. y ( y e. x <-> ph ) ) $=
+      ( vz wel wb wal wex wsb wa weq wi weu nfv nfbi nfal elequ2 bibi1d albidv
+      sbie 19.26 biantr alimi ax-ext syl sylbir sylan2b gen2 jctr eu2 sylibr )
+      CBFZAGZCHZBIZUPUOUOBEJZKBELZMZEHBHZKUOBNUPUTUSBEUQUOCEFZAGZCHZURUOVCBEVBB
+      CVAABVABODPQURUNVBCURUMVAABECRSTUAUOVCKUNVBKZCHZURUNVBCUBVEUMVAGZCHURVDVF
+      CUMAVAUCUDBECUEUFUGUHUIUJUOBEUOEOUKUL $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                    Class abstractions (a.k.a. class builders)
@@ -23009,7 +23024,8 @@ $)
        with a weaker Subset (or Separation) Axiom asserting that ` A ` is a set
        only when it is smaller than some other set ` B ` .  The intuitionistic
        set theory IZF includes such a separation axiom, Axiom 6 of [Crosilla]
-       p.  "Axioms of CZF and IZF".  (Contributed by NM, 7-Aug-1994.) $)
+       p.  "Axioms of CZF and IZF", which we include as ~ ax-sep .
+       (Contributed by NM, 7-Aug-1994.) $)
     ru $p |- { x | x e/ x } e/ _V $=
       ( vy cv wnel cab cvv wcel wn wceq wex wel wal pm5.19 eleq1 df-nel eleq12d
       wb id notbid mtbir syl5bb bibi12d spv mto abeq2 nex isset mpbir ) ACZUIDZ
@@ -24001,26 +24017,6 @@ $)
       ( vz cv csb wcel wsbc cab df-csb abeq2i sbcbii sbcco bitri abbii 3eqtr4i
       ) EFZABFZDGZHZBCIZEJRDHZACIZEJBCTGACDGUBUDEUBUCASIZBCIUDUAUEBCUEETAESDKLM
       UCABCNOPBECTKAECDKQ $.
-  $}
-
-  ${
-    $d y A $.  $d y B $.  $d x y $.
-    $( The existence of proper substitution into a class.  (Contributed by NM,
-       10-Nov-2005.) $)
-    csbexg $p |- ( ( A e. V /\ A. x B e. W ) -> [_ A / x ]_ B e. _V ) $=
-      ( vy wcel wal wa csb wsbc cab cvv df-csb abid2 elex syl5eqel alimi spsbc
-      cv syl5 imp wb nfcv sbcabel adantr mpbid ) BDGZCEGZAHZIZABCJFTCGZABKFLZMA
-      FBCNUKULFLZMGZABKZUMMGZUHUJUPUJUOAHUHUPUIUOAUIUNCMFCOCEPQRUOABDSUAUBUHUPU
-      QUCUJULAFBMDAMUDUEUFUGQ $.
-  $}
-
-  ${
-    csbex.1 $e |- A e. _V $.
-    csbex.2 $e |- B e. _V $.
-    $( The existence of proper substitution into a class.  (Contributed by NM,
-       7-Aug-2007.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
-    csbex $p |- [_ A / x ]_ B e. _V $=
-      ( cvv wcel csb wal csbexg mpan mpg ) CFGZABCHFGZABFGMAINDABCFFJKEL $.
   $}
 
   ${
@@ -27329,6 +27325,16 @@ $)
     eq0rdv $p |- ( ph -> A = (/) ) $=
       ( c0 wss wceq cv wcel pm2.21d ssrdv ss0 syl ) ACEFCEGABCEABHZCINEIDJKCLM
       $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( The proper substitution of a proper class for a set into a class results
+       in the empty set.  (Contributed by NM, 17-Aug-2018.) $)
+    csbprc $p |- ( -. A e. _V -> [_ A / x ]_ B = (/) ) $=
+      ( vy cvv wcel wn csb cv wsbc cab c0 df-csb wfal sbcex con3i pm2.21d falim
+      impbid1 abbidv fal abf syl6eq syl5eq ) BEFZGZABCHDICFZABJZDKZLADBCMUFUIND
+      KLUFUHNDUFUHNUFUHNUHUEUGABOPQUHRSTNDUAUBUCUD $.
   $}
 
   $( Two classes are empty iff their union is empty.  (Contributed by NM,
@@ -32425,6 +32431,87 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+              Derive the Null Set Axiom
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y $.
+    zfnuleu.1 $e |- E. x A. y -. y e. x $.
+    $( Show the uniqueness of the empty set (using the Axiom of Extensionality
+       via ~ bm1.1 to strengthen the hypothesis in the form of ~ axnul ).
+       (Contributed by NM, 22-Dec-2007.) $)
+    zfnuleu $p |- E! x A. y -. y e. x $=
+      ( wel wn wal weu wfal wb wex nbfal albii exbii mpbi nfv bm1.1 ax-mp eubii
+      mpbir ) BADZEZBFZAGTHIZBFZAGZUDAJZUEUBAJUFCUBUDAUAUCBTKLZMNHABHAOPQUBUDAU
+      GRS $.
+  $}
+
+  ${
+    $d x y z w $.
+    $( The Null Set Axiom of ZF set theory: there exists a set with no
+       elements.  Axiom of Empty Set of [Enderton] p. 18.  In some textbooks,
+       this is presented as a separate axiom; here we show it can be derived
+       from Separation ~ ax-sep .  This version of the Null Set Axiom tells us
+       that at least one empty set exists, but does not tell us that it is
+       unique - we need the Axiom of Extensionality to do that (see
+       ~ zfnuleu ).
+
+       This theorem should not be referenced by any proof.  Instead, use
+       ~ ax-nul below so that the uses of the Null Set Axiom can be more easily
+       identified.  (Contributed by Jeff Hoffman, 3-Feb-2008.)  (Revised by NM,
+       4-Feb-2008.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    axnul $p |- E. x A. y -. y e. x $=
+      ( vz cv wn wa wb wal wex ax-sep pm3.24 intnan id mtbiri alimi eximi ax-mp
+      wcel ) BDZADRZSCDRZSSRZUBEFZFZGZBHZAITEZBHZAIUCBACJUFUHAUEUGBUETUDUCUAUBK
+      LUEMNOPQ $.
+
+    $( The Null Set Axiom of IZF set theory.  It was derived as ~ axnul above
+       and is therefore redundant, but we state it as a separate axiom here so
+       that its uses can be identified more easily.  Axiom 4 of [Crosilla] p.
+       "Axioms of CZF and IZF".  (Contributed by NM, 7-Aug-2003.) $)
+    ax-nul $a |- E. x A. y -. y e. x $.
+
+    $( The Null Set Axiom of ZF set theory: the empty set exists.  Corollary
+       5.16 of [TakeutiZaring] p. 20.  For the unabbreviated version, see
+       ~ ax-nul .  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
+       Salmon, 9-Jul-2011.) $)
+    0ex $p |- (/) e. _V $=
+      ( vx vy c0 cv wceq wex wel wn wal ax-nul eq0 exbii mpbir issetri ) ACADZC
+      EZAFBAGHBIZAFABJPQABOKLMN $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    $( The existence of proper substitution into a class.  Although we adopt
+       the name ~ csbexgOLD for consistency with the Metamath Proof Explorer,
+       we do not yet have a version of this theorem without the ` A e. V `
+       condition, so unless/until that happens, this theorem is not obsolete
+       and can be used.  (Contributed by NM, 10-Nov-2005.) $)
+    csbexgOLD $p |- ( ( A e. V /\ A. x B e. W ) -> [_ A / x ]_ B e. _V ) $=
+      ( vy wcel wal wa csb wsbc cab cvv df-csb abid2 elex syl5eqel alimi spsbc
+      cv syl5 imp wb nfcv sbcabel adantr mpbid ) BDGZCEGZAHZIZABCJFTCGZABKFLZMA
+      FBCNUKULFLZMGZABKZUMMGZUHUJUPUJUOAHUHUPUIUOAUIUNCMFCOCEPQRUOABDSUAUBUHUPU
+      QUCUJULAFBMDAMUDUEUFUGQ $.
+  $}
+
+  ${
+    csbexOLD.1 $e |- A e. _V $.
+    csbexOLD.2 $e |- B e. _V $.
+    $( The existence of proper substitution into a class.  Although we adopt
+       the name ~ csbexOLD for consistency with the Metamath Proof Explorer, we
+       do not yet have a version of this theorem without the ` A e. V `
+       condition, so unless/until that happens, this theorem is not obsolete
+       and can be used.  (Contributed by NM, 7-Aug-2007.)  (Proof shortened by
+       Andrew Salmon, 29-Jun-2011.) $)
+    csbexOLD $p |- [_ A / x ]_ B e. _V $=
+      ( cvv wcel csb wal csbexgOLD mpan mpg ) CFGZABCHFGZABFGMAINDABCFFJKEL $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -32961,24 +33048,25 @@ htmldef "_V" as "<IMG SRC='rmcv.gif' WIDTH=10 HEIGHT=19 ALT=' _V' TITLE='_V'>";
   althtmldef "_V" as 'V';
   latexdef "_V" as "{\rm V}";
 htmldef "[." as
-    "<IMG SRC='_dlbrack.gif' WIDTH=6 HEIGHT=19 ALT=' [.' TITLE='[.'>";
+    "<IMG SRC='_dlbrack.gif' WIDTH=7 HEIGHT=19 ALT=' [.' TITLE='[.'>";
   /* althtmldef "[." as '&#x298F;'; */   /* corner tick */
-  /* U+0323 COMBINING DOT BELOW (HTML &#803;) */
-  althtmldef "[." as '[&#803;';
+  /* althtmldef "[." as '[&#803;'; */  /* combining dot below */
+  althtmldef "[." as '<B>[</B>'; /* 6-Aug-2018 nm */
   /* \underaccent is in accents package */
   latexdef "[." as "\underaccent{\dot}{[}";
 htmldef "]." as
-    "<IMG SRC='_drbrack.gif' WIDTH=5 HEIGHT=19 ALT=' ].' TITLE='].'>";
+    "<IMG SRC='_drbrack.gif' WIDTH=6 HEIGHT=19 ALT=' ].' TITLE='].'>";
   /* althtmldef "]." as '&#x298E;'; */   /* corner tick */
-  althtmldef "]." as ']&#803;';
+  /* althtmldef "]." as ']&#803;'; */  /* combining dot below */
+  althtmldef "]." as '<B>]</B>'; /* 6-Aug-2018 nm */
   latexdef "]." as "\underaccent{\dot}{]}";
 htmldef "[_" as
-    "<IMG SRC='_ulbrack.gif' WIDTH=6 HEIGHT=19 ALT=' [_' TITLE='[_'>";
-  althtmldef "[_" as '<U>[</U>'; /* &lsqb; */
+    "<IMG SRC='_ulbrack.gif' WIDTH=7 HEIGHT=19 ALT=' [_' TITLE='[_'>";
+  althtmldef "[_" as '<B>&#x298B;</B>'; /* left sq brack w underbar */
   latexdef "[_" as "\underline{[}";
 htmldef "]_" as
-    "<IMG SRC='_urbrack.gif' WIDTH=5 HEIGHT=19 ALT=' ]_' TITLE=']_'>";
-  althtmldef "]_" as '<U>]</U>'; /* &rsqb; */
+    "<IMG SRC='_urbrack.gif' WIDTH=6 HEIGHT=19 ALT=' ]_' TITLE=']_'>";
+  althtmldef "]_" as '<B>&#x298C;</B>'; /* right sq brack w underbar */
   latexdef "]_" as "\underline{]}";
 htmldef "\" as
     " <IMG SRC='setminus.gif' WIDTH=8 HEIGHT=19 ALT=' \' TITLE='\'> ";
