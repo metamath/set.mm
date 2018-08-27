@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Aug-2018
+$( iset.mm - Version of 27-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -11622,6 +11622,12 @@ $)
   exanaliim $p |- ( E. x ( ph /\ -. ps ) -> -. A. x ( ph -> ps ) ) $=
     ( wn wa wex wi wal annimim eximi exnalim syl ) ABDEZCFABGZDZCFNCH
     DMOCABIJNCKL $.
+
+  $( A relationship between two quantifiers and negation.  (Contributed by Jim
+     Kingdon, 27-Aug-2018.) $)
+  alexnim $p |- ( A. x E. y -. ph -> -. E. x A. y ph ) $=
+    ( wn wex wal exnalim alimi alnex sylib ) ADCEZBFACFZDZBFLBEDKMBAC
+    GHLBIJ $.
 
   ${
     ax6blem.1 $e |- ( ph -> A. x ph ) $.
