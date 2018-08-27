@@ -23024,7 +23024,8 @@ $)
        with a weaker Subset (or Separation) Axiom asserting that ` A ` is a set
        only when it is smaller than some other set ` B ` .  The intuitionistic
        set theory IZF includes such a separation axiom, Axiom 6 of [Crosilla]
-       p.  "Axioms of CZF and IZF".  (Contributed by NM, 7-Aug-1994.) $)
+       p.  "Axioms of CZF and IZF", which we include as ~ ax-sep .
+       (Contributed by NM, 7-Aug-1994.) $)
     ru $p |- { x | x e/ x } e/ _V $=
       ( vy cv wnel cab cvv wcel wn wceq wex wel wal pm5.19 eleq1 df-nel eleq12d
       wb id notbid mtbir syl5bb bibi12d spv mto abeq2 nex isset mpbir ) ACZUIDZ
@@ -32467,10 +32468,10 @@ $)
       wcel ) BDZADRZSCDRZSSRZUBEFZFZGZBHZAITEZBHZAIUCBACJUFUHAUEUGBUETUDUCUAUBK
       LUEMNOPQ $.
 
-    $( The Null Set Axiom of ZF set theory.  It was derived as ~ axnul above
+    $( The Null Set Axiom of IZF set theory.  It was derived as ~ axnul above
        and is therefore redundant, but we state it as a separate axiom here so
-       that its uses can be identified more easily.  (Contributed by NM,
-       7-Aug-2003.) $)
+       that its uses can be identified more easily.  Axiom 4 of [Crosilla] p.
+       "Axioms of CZF and IZF".  (Contributed by NM, 7-Aug-2003.) $)
     ax-nul $a |- E. x A. y -. y e. x $.
 
     $( The Null Set Axiom of ZF set theory: the empty set exists.  Corollary
