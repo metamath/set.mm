@@ -32483,20 +32483,6 @@ $)
   $}
 
   ${
-    sseliALT.1 $e |- A C_ B $.
-    $( Membership inference from subclass relationship.  This version of
-       ~ sseli shows how we can derive it from the inference form ~ sselii
-       using the weak deduction theorem.  (Contributed by NM, 24-Aug-2018.)
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
-    sseliALT $p |- ( C e. A -> C e. B ) $=
-      ( wcel csn cif wceq biidd eleq2 eleq1 wss sseq1 sseq2 ssid keephyp3v snid
-      c0 0ex elimhyp3v sselii dedth3v ) CAEZCBEZUDCUCBRFZGZEUCCRGZUFEABCUEUERAU
-      CAUEGZHUDIBUFCJCUGUFKUHUFUGUCUHBLUHUFLZUIUEUELUHUELUIABLABCUEUERAUHBMBUFU
-      HNCUGHUIIUEUHUEMUEUFUHNRUGHUIIDUEOPUCCUHEZUJUGUHERUEERUHEZUKABCUEUERAUHCJ
-      BUFHUJICUGUHKUEUHRJUEUFHUKIRUGUHKRSQTUAUB $.
-  $}
-
-  ${
     $d y A $.  $d y B $.  $d x y $.
     $( The existence of proper substitution into a class.  Although we adopt
        the name ~ csbexgOLD for consistency with the Metamath Proof Explorer,
