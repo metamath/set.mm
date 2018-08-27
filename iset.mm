@@ -32528,10 +32528,10 @@ $)
     $( No set contains all sets.  Theorem 41 of [Suppes] p. 30.  (Contributed
        by NM, 23-Aug-1993.) $)
     nalset $p |- -. E. x A. y y e. x $=
-      ( vz wel wn wex wal alexn wa wb ax-sep elequ1 elequ2 bitrd notbid anbi12d
-      weq bibi12d spv pclem6 syl eximii mpgbi ) BADZEZBFUDBGAFEAUDABHCBDZCADZCC
-      DZEZIZJZCGZUEBUICBAKULBBDZUDUMEZIZJZUEUKUPCBCBQZUFUMUJUOCBBLUQUGUDUIUNCBA
-      LUQUHUMUQUHBCDUMCBCLCBBMNOPRSUMUDTUAUBUC $.
+      ( vz wel wn wex wal alexnim wa wb ax-sep weq elequ1 elequ2 notbid anbi12d
+      bitrd bibi12d spv pclem6 syl eximii mpg ) BADZEZBFUDBGAFEAUDABHCBDZCADZCC
+      DZEZIZJZCGZUEBUICBAKULBBDZUDUMEZIZJZUEUKUPCBCBLZUFUMUJUOCBBMUQUGUDUIUNCBA
+      MUQUHUMUQUHBCDUMCBCMCBBNQOPRSUMUDTUAUBUC $.
   $}
 
   ${
