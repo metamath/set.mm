@@ -32518,6 +32518,259 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Theorems requiring subset and intersection existence
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z $.
+    $( No set contains all sets.  Theorem 41 of [Suppes] p. 30.  (Contributed
+       by NM, 23-Aug-1993.) $)
+    nalset $p |- -. E. x A. y y e. x $=
+      ( vz wel wn wex wal alexn wa wb ax-sep elequ1 elequ2 bitrd notbid anbi12d
+      weq bibi12d spv pclem6 syl eximii mpgbi ) BADZEZBFUDBGAFEAUDABHCBDZCADZCC
+      DZEZIZJZCGZUEBUICBAKULBBDZUDUMEZIZJZUEUKUPCBCBQZUFUMUJUOCBBLUQUGUDUIUNCBA
+      LUQUHUMUQUHBCDUMCBCLCBBMNOPRSUMUDTUAUBUC $.
+  $}
+
+  ${
+    $d x y $.
+    $( The universal class is not a member of itself (and thus is not a set).
+       Proposition 5.21 of [TakeutiZaring] p. 21; our proof, however, does not
+       depend on the Axiom of Regularity.  (Contributed by NM, 23-Aug-1993.) $)
+    vprc $p |- -. _V e. _V $=
+      ( vx vy cvv wcel cv wceq wex wal nalset vex tbt albii dfcleq bitr4i exbii
+      wb mtbi isset mtbir ) CCDAEZCFZAGZBEZTDZBHZAGUBABIUEUAAUEUDUCCDZPZBHUAUDU
+      GBUFUDBJKLBTCMNOQACRS $.
+  $}
+
+  $( The universal class doesn't belong to any class.  (Contributed by FL,
+     31-Dec-2006.) $)
+  nvel $p |- -. _V e. A $=
+    ( cvv wcel vprc elex mto ) BACBBCDBAEF $.
+
+  $( The universal class does not exist.  (Contributed by NM, 4-Jul-2005.) $)
+  vnex $p |- -. E. x x = _V $=
+    ( cvv wcel cv wceq wex vprc isset mtbi ) BBCADBEAFGABHI $.
+
+  ${
+    $d A x y $.  $d B x y $.
+    inex1.1 $e |- A e. _V $.
+    $( Separation Scheme (Aussonderung) using class notation.  Compare Exercise
+       4 of [TakeutiZaring] p. 22.  (Contributed by NM, 5-Aug-1993.) $)
+    inex1 $p |- ( A i^i B ) e. _V $=
+      ( vx vy cin cv wceq wex wcel wa wb zfauscl dfcleq elin bibi2i albii bitri
+      wal exbii mpbir issetri ) DABFZDGZUCHZDIEGZUDJZUFAJUFBJZKZLZESZDIUHEDACMU
+      EUKDUEUGUFUCJZLZESUKEUDUCNUMUJEULUIUGUFABOPQRTUAUB $.
+  $}
+
+  ${
+    inex2.1 $e |- A e. _V $.
+    $( Separation Scheme (Aussonderung) using class notation.  (Contributed by
+       NM, 27-Apr-1994.) $)
+    inex2 $p |- ( B i^i A ) e. _V $=
+      ( cin cvv incom inex1 eqeltri ) BADABDEBAFABCGH $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Closed-form, generalized Separation Scheme.  (Contributed by NM,
+       7-Apr-1995.) $)
+    inex1g $p |- ( A e. V -> ( A i^i B ) e. _V ) $=
+      ( vx cv cin cvv wcel wceq ineq1 eleq1d vex inex1 vtoclg ) DEZBFZGHABFZGHD
+      ACOAIPQGOABJKOBDLMN $.
+  $}
+
+  ${
+    ssex.1 $e |- B e. _V $.
+    $( The subset of a set is also a set.  Exercise 3 of [TakeutiZaring]
+       p. 22.  This is one way to express the Axiom of Separation ~ ax-sep
+       (a.k.a.  Subset Axiom).  (Contributed by NM, 27-Apr-1994.) $)
+    ssex $p |- ( A C_ B -> A e. _V ) $=
+      ( wss cin wceq cvv wcel df-ss inex2 eleq1 mpbii sylbi ) ABDABEZAFZAGHZABI
+      ONGHPBACJNAGKLM $.
+  $}
+
+  ${
+    ssexi.1 $e |- B e. _V $.
+    ssexi.2 $e |- A C_ B $.
+    $( The subset of a set is also a set.  (Contributed by NM, 9-Sep-1993.) $)
+    ssexi $p |- A e. _V $=
+      ( wss cvv wcel ssex ax-mp ) ABEAFGDABCHI $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( The subset of a set is also a set.  Exercise 3 of [TakeutiZaring] p. 22
+       (generalized).  (Contributed by NM, 14-Aug-1994.) $)
+    ssexg $p |- ( ( A C_ B /\ B e. C ) -> A e. _V ) $=
+      ( vx wcel wss cvv cv wi wceq sseq2 imbi1d vex ssex vtoclg impcom ) BCEABF
+      ZAGEZADHZFZRIQRIDBCSBJTQRSBAKLASDMNOP $.
+  $}
+
+  ${
+    ssexd.1 $e |- ( ph -> B e. C ) $.
+    ssexd.2 $e |- ( ph -> A C_ B ) $.
+    $( A subclass of a set is a set.  Deduction form of ~ ssexg .  (Contributed
+       by David Moews, 1-May-2017.) $)
+    ssexd $p |- ( ph -> A e. _V ) $=
+      ( wss wcel cvv ssexg syl2anc ) ABCGCDHBIHFEBCDJK $.
+  $}
+
+  $( Existence of a difference.  (Contributed by NM, 26-May-1998.) $)
+  difexg $p |- ( A e. V -> ( A \ B ) e. _V ) $=
+    ( cdif wss wcel cvv difss ssexg mpan ) ABDZAEACFKGFABHKACIJ $.
+
+  ${
+    $d x y A $.  $d y ph $.
+    zfausab.1 $e |- A e. _V $.
+    $( Separation Scheme (Aussonderung) in terms of a class abstraction.
+       (Contributed by NM, 8-Jun-1994.) $)
+    zfausab $p |- { x | ( x e. A /\ ph ) } e. _V $=
+      ( cv wcel wa cab ssab2 ssexi ) BECFAGBHCDABCIJ $.
+  $}
+
+  ${
+    $d x A $.
+    $( Separation Scheme in terms of a restricted class abstraction.
+       (Contributed by NM, 23-Oct-1999.) $)
+    rabexg $p |- ( A e. V -> { x e. A | ph } e. _V ) $=
+      ( crab wss wcel cvv ssrab2 ssexg mpan ) ABCEZCFCDGLHGABCILCDJK $.
+  $}
+
+  ${
+    $d x A $.
+    rabex.1 $e |- A e. _V $.
+    $( Separation Scheme in terms of a restricted class abstraction.
+       (Contributed by NM, 19-Jul-1996.) $)
+    rabex $p |- { x e. A | ph } e. _V $=
+      ( cvv wcel crab rabexg ax-mp ) CEFABCGEFDABCEHI $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ps $.
+    elssabg.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( Membership in a class abstraction involving a subset.  Unlike ~ elabg ,
+       ` A ` does not have to be a set.  (Contributed by NM, 29-Aug-2006.) $)
+    elssabg $p |- ( B e. V ->
+                  ( A e. { x | ( x C_ B /\ ph ) } <-> ( A C_ B /\ ps ) ) ) $=
+      ( wcel wss wa cvv wi cv cab wb ssexg expcom adantrd wceq sseq1 elab3g syl
+      anbi12d ) EFHZDEIZBJZDKHZLDCMZEIZAJZCNHUFOUDUEUGBUEUDUGDEFPQRUJUFCDKUHDSU
+      IUEABUHDETGUCUAUB $.
+  $}
+
+  ${
+    $d x A $.
+    $( The intersection of a non-empty class exists.  Exercise 5 of
+       [TakeutiZaring] p. 44 and its converse.  (Contributed by NM,
+       13-Aug-2002.) $)
+    intex $p |- ( A =/= (/) <-> |^| A e. _V ) $=
+      ( vx c0 wne cint cvv wcel cv wex n0 wss intss1 vex ssex syl exlimiv sylbi
+      wceq vprc inteq int0 syl6eq eleq1d mtbiri necon2ai impbii ) ACDZAEZFGZUGB
+      HZAGZBIUIBAJUKUIBUKUHUJKUIUJALUHUJBMNOPQUIACACRZUIFFGSULUHFFULUHCEFACTUAU
+      BUCUDUEUF $.
+  $}
+
+  $( If a class intersection is not a set, it must be the universe.
+     (Contributed by NM, 3-Jul-2005.) $)
+  intnex $p |- ( -. |^| A e. _V <-> |^| A = _V ) $=
+    ( cint cvv wcel wn wceq intex necon1bbii inteq int0 syl6eq sylbi vprc eleq1
+    c0 mtbiri impbii ) ABZCDZEZRCFZTAOFZUASAOAGHUBROBCAOIJKLUASCCDMRCCNPQ $.
+
+  ${
+    $d x y $.  $d ph y $.
+    $( The intersection of a non-empty class abstraction exists.  (Contributed
+       by NM, 21-Oct-2003.) $)
+    intexab $p |- ( E. x ph <-> |^| { x | ph } e. _V ) $=
+      ( wex cab c0 wne cint cvv wcel abn0 intex bitr3i ) ABCABDZEFMGHIABJMKL $.
+  $}
+
+  $( The intersection of a non-empty restricted class abstraction exists.
+     (Contributed by NM, 21-Oct-2003.) $)
+  intexrab $p |- ( E. x e. A ph <-> |^| { x e. A | ph } e. _V ) $=
+    ( cv wcel wa wex cab cint cvv wrex crab intexab df-rex df-rab inteqi eleq1i
+    3bitr4i ) BDCEAFZBGSBHZIZJEABCKABCLZIZJESBMABCNUCUAJUBTABCOPQR $.
+
+  ${
+    $d A x y $.  $d B y $.
+    $( The existence of an indexed union. ` x ` is normally a free-variable
+       parameter in ` B ` , which should be read ` B ( x ) ` .  (Contributed by
+       FL, 19-Sep-2011.) $)
+    iinexg $p |- ( ( A =/= (/) /\ A. x e. A B e. C )
+    -> |^|_ x e. A B e. _V ) $=
+      ( vy c0 wne wcel wral wa ciin cv wceq wrex cab cint cvv wex wi sylib abn0
+      dfiin2g adantl elisset rgenw r19.2z mpan2 r19.35 imp rexcom4 sylibr intex
+      eqeltrd ) BFGZCDHZABIZJZABCKZELCMZABNZEOZPZQUPURVBMUNAEBCDUBUCUQVAFGZVBQH
+      UQUTERZVCUQUSERZABNZVDUNUPVFUNUOVESZABNZUPVFSUNVGABIVHVGABECDUDUEVGABUFUG
+      UOVEABUHTUIUSAEBUJTUTEUAUKVAULTUM $.
+  $}
+
+  ${
+    $d x y $.  $d x A $.  $d y ph $.  $d x ps $.  $d x ch $.
+    intabs.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    intabs.2 $e |- ( x = |^| { y | ps } -> ( ph <-> ch ) ) $.
+    intabs.3 $e |- ( |^| { y | ps } C_ A /\ ch ) $.
+    $( Absorption of a redundant conjunct in the intersection of a class
+       abstraction.  (Contributed by NM, 3-Jul-2005.) $)
+    intabs $p |- |^| { x | ( x C_ A /\ ph ) } = |^| { x | ph } $=
+      ( cv wss wa cab cint cvv wcel wceq sseq1 anbi12d intmin3 intnex ssv sseq2
+      wn mpbiri sylbi pm2.61i cbvabv inteqi sseqtr4i simpr ss2abi intss ax-mp
+      eqssi ) DJZFKZALZDMZNZADMZNZUTBEMZNZVBVDOPZUTVDKZURVDFKZCLDVDOUPVDQUQVGAC
+      UPVDFRHSITVEUDVDOQZVFVCUAVHVFUTOKUTUBVDOUTUCUEUFUGVAVCABDEGUHUIUJUSVAKVBU
+      TKURADUQAUKULUSVAUMUNUO $.
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.
+    $( The intersection of a union ` U. A ` with a class ` B ` is equal to the
+       union of the intersections of each element of ` A ` with ` B ` .
+       (Contributed by FL, 24-Mar-2007.) $)
+    inuni $p |- ( U. A i^i B ) = U. { x | E. y e. A x = ( y i^i B ) } $=
+      ( vz cuni cin cv wceq wrex cab wcel wex eluni2 anbi1i elin r19.41v bitr4i
+      wa bitri ancom exbii rexcom4 vex inex1 eleq2 ceqsexv rexbii 3bitr4i eqriv
+      eluniab ) ECFZDGZAHZBHZDGZIZBCJZAKFZEHZUMLZUTUNLZURSZAMZUTUSLUTULLZUTDLZS
+      UTUOLZBCJZVFSZVAVDVEVHVFBUTCNOUTULDPVDUQVBSZAMZBCJZVIVDVJBCJZAMVLVCVMAVCU
+      RVBSVMVBURUAUQVBBCQRUBVJBACUCRVLVGVFSZBCJVIVKVNBCVKUTUPLZVNVBVOAUPUODBUDU
+      EUNUPUTUFUGUTUODPTUHVGVFBCQTTUIURAUTUKRUJ $.
+  $}
+
+  $( Membership in a power class.  Theorem 86 of [Suppes] p. 47.  (Contributed
+     by NM, 7-Aug-2000.) $)
+  elpw2g $p |- ( B e. V -> ( A e. ~P B <-> A C_ B ) ) $=
+    ( wcel cpw wss elpwi cvv ssexg elpwg biimparc syldan expcom impbid2 ) BCDZA
+    BEDZABFZABGQOPQOAHDZPABCIRPQABHJKLMN $.
+
+  ${
+    elpw2.1 $e |- B e. _V $.
+    $( Membership in a power class.  Theorem 86 of [Suppes] p. 47.
+       (Contributed by NM, 11-Oct-2007.) $)
+    elpw2 $p |- ( A e. ~P B <-> A C_ B ) $=
+      ( cvv wcel cpw wss wb elpw2g ax-mp ) BDEABFEABGHCABDIJ $.
+  $}
+
+
+  ${
+    $d A x y $.  $d V x y $.
+    $( The power set of a set is never a subset.  (Contributed by Stefan
+       O'Rear, 22-Feb-2015.) $)
+    pwnss $p |- ( A e. V -> -. ~P A C_ A ) $=
+      ( vx vy cpw cv wnel crab wcel wn wa wb eleq12 anidms notbid df-nel syl5bb
+      wss wceq cbvrabv elrab2 pclem6 ax-mp ssel mtoi ssrab2 elpw2g mpbiri nsyl3
+      ) AEZARZCFZULGZCAHZUJIZABIZUKUOUNAIZUNUNIZUQURJZKLUQJDFZUTIZJZUSDUNAUNUTU
+      NSZVAURVCVAURLUTUNUTUNMNOUMVBCDAUMULULIZJULUTSZVBULULPVEVDVAVEVDVALULUTUL
+      UTMNOQTUAURUQUBUCUJAUNUDUEUPUOUNARUMCAUFUNABUGUHUI $.
+  $}
+
+  $( No set equals its power set.  The sethood antecedent is necessary; compare
+     ~ pwv .  (Contributed by NM, 17-Nov-2008.)  (Proof shortened by Mario
+     Carneiro, 23-Dec-2016.) $)
+  pwne $p |- ( A e. V -> ~P A =/= A ) $=
+    ( wcel cpw wss wn wne pwnss eqimss necon3bi syl ) ABCADZAEZFLAGABHMLALAIJK
+    $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
