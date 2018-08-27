@@ -32498,31 +32498,11 @@ $)
 
   ${
     $d y A $.  $d y B $.  $d x y $.
-    $( The existence of proper substitution into a class.  (Contributed by NM,
-       10-Nov-2005.)  (Revised by NM, 17-Aug-2018.) $)
-    csbexg $p |- ( A. x B e. W -> [_ A / x ]_ B e. _V ) $=
-      ( vy cvv wcel wal csb wa wsbc cab df-csb abid2 elex syl5eqel alimi adantr
-      cv spsbc syl5 imp wb nfcv sbcabel mpbid wn csbprc 0ex syl6eqel pm2.61ian
-      c0 ) BFGZCDGZAHZABCIZFGZUMUOJZUPESCGZABKELZFAEBCMURUSELZFGZABKZUTFGZUMUOV
-      CUOVBAHUMVCUNVBAUNVACFECNCDOPQVBABFTUAUBUMVCVDUCUOUSAEBFFAFUDUERUFPUMUGZU
-      QUOVEUPULFABCUHUIUJRUK $.
-  $}
-
-  ${
-    csbex.1 $e |- B e. _V $.
-    $( The existence of proper substitution into a class.  (Contributed by NM,
-       7-Aug-2007.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.)  (Revised
-       by NM, 17-Aug-2018.) $)
-    csbex $p |- [_ A / x ]_ B e. _V $=
-      ( cvv wcel csb csbexg mpg ) CEFABCGEFAABCEHDI $.
-  $}
-
-  ${
-    $d y A $.  $d y B $.  $d x y $.
-    $( The existence of proper substitution into a class.  (Contributed by NM,
-       10-Nov-2005.)  Use ~ csbexg instead of this.  Obsolete as of
-       17-Aug-2018.  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
+    $( The existence of proper substitution into a class.  Although we adopt
+       the name ~ csbexgOLD for consistency with the Metamath Proof Explorer,
+       we do not yet have a version of this theorem without the ` A e. V `
+       condition, so unless/until that happens, this theorem is not obsolete
+       and can be used.  (Contributed by NM, 10-Nov-2005.) $)
     csbexgOLD $p |- ( ( A e. V /\ A. x B e. W ) -> [_ A / x ]_ B e. _V ) $=
       ( vy wcel wal wa csb wsbc cab cvv df-csb abid2 elex syl5eqel alimi spsbc
       cv syl5 imp wb nfcv sbcabel adantr mpbid ) BDGZCEGZAHZIZABCJFTCGZABKFLZMA
@@ -32533,10 +32513,12 @@ $)
   ${
     csbexOLD.1 $e |- A e. _V $.
     csbexOLD.2 $e |- B e. _V $.
-    $( The existence of proper substitution into a class.  (Contributed by NM,
-       7-Aug-2007.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.)  Use
-       ~ csbex instead of this.  Obsolete as of 17-Aug-2018.
-       (New usage is discouraged.)  (Proof modification is discouraged.) $)
+    $( The existence of proper substitution into a class.  Although we adopt
+       the name ~ csbexOLD for consistency with the Metamath Proof Explorer, we
+       do not yet have a version of this theorem without the ` A e. V `
+       condition, so unless/until that happens, this theorem is not obsolete
+       and can be used.  (Contributed by NM, 7-Aug-2007.)  (Proof shortened by
+       Andrew Salmon, 29-Jun-2011.) $)
     csbexOLD $p |- [_ A / x ]_ B e. _V $=
       ( cvv wcel csb wal csbexgOLD mpan mpg ) CFGZABCHFGZABFGMAINDABCFFJKEL $.
   $}
