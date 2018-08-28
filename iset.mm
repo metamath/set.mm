@@ -32678,11 +32678,11 @@ $)
       inteq ) ABZCDZAEAEFZOCCDGPNCCPNEBCAEMHIJKL $.
   $}
 
-  $( If a class intersection is not a set, it must be the universe.
-     (Contributed by NM, 3-Jul-2005.) $)
-  intnex $p |- ( -. |^| A e. _V <-> |^| A = _V ) $=
-    ( cint cvv wcel wn wceq intex necon1bbii inteq int0 syl6eq sylbi vprc eleq1
-    c0 mtbiri impbii ) ABZCDZEZRCFZTAOFZUASAOAGHUBROBCAOIJKLUASCCDMRCCNPQ $.
+  $( If a class intersection is the universe, it is not a set.  In classical
+     logic this would be an equivalence.  (Contributed by Jim Kingdon,
+     27-Aug-2018.) $)
+  intnexr $p |- ( |^| A = _V -> -. |^| A e. _V ) $=
+    ( cint cvv wceq wcel vprc eleq1 mtbiri ) ABZCDICECCEFICCGH $.
 
   ${
     $d x y $.  $d ph y $.
