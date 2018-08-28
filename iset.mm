@@ -32686,17 +32686,20 @@ $)
 
   ${
     $d x y $.  $d ph y $.
-    $( The intersection of a non-empty class abstraction exists.  (Contributed
-       by NM, 21-Oct-2003.) $)
-    intexab $p |- ( E. x ph <-> |^| { x | ph } e. _V ) $=
-      ( wex cab c0 wne cint cvv wcel abn0 intex bitr3i ) ABCABDZEFMGHIABJMKL $.
+    $( The intersection of an inhabited class abstraction exists.  (Contributed
+       by Jim Kingdon, 27-Aug-2018.) $)
+    intexabim $p |- ( E. x ph -> |^| { x | ph } e. _V ) $=
+      ( vy wex cv cab wcel cint cvv abid exbii nfsab1 nfv eleq1 cbvex
+      inteximm sylbir ) ABDBEZABFZGZBDZSHIGZTABABJKUACEZSGZCDUBUDTCBA
+      BCLTCMUCRSNOCSPQQ $.
   $}
 
-  $( The intersection of a non-empty restricted class abstraction exists.
-     (Contributed by NM, 21-Oct-2003.) $)
-  intexrab $p |- ( E. x e. A ph <-> |^| { x e. A | ph } e. _V ) $=
-    ( cv wcel wa wex cab cint cvv wrex crab intexab df-rex df-rab inteqi eleq1i
-    3bitr4i ) BDCEAFZBGSBHZIZJEABCKABCLZIZJESBMABCNUCUAJUBTABCOPQR $.
+  $( The intersection of an inhabited restricted class abstraction exists.
+     (Contributed by Jim Kingdon, 27-Aug-2018.) $)
+  intexrabim $p |- ( E. x e. A ph -> |^| { x e. A | ph } e. _V ) $=
+    ( cv wcel wa wex cab cint cvv wrex intexabim df-rex df-rab inteqi
+    crab eleq1i 3imtr4i ) BDCEAFZBGSBHZIZJEABCKABCPZIZJESBLABCMUCUAJU
+    BTABCNOQR $.
 
   ${
     $d A x y $.  $d B y $.
