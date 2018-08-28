@@ -32662,14 +32662,20 @@ $)
 
   ${
     $d x A $.
-    $( The intersection of a non-empty class exists.  Exercise 5 of
-       [TakeutiZaring] p. 44 and its converse.  (Contributed by NM,
-       13-Aug-2002.) $)
-    intex $p |- ( A =/= (/) <-> |^| A e. _V ) $=
-      ( vx c0 wne cint cvv wcel cv wex n0 wss intss1 vex ssex syl exlimiv sylbi
-      wceq vprc inteq int0 syl6eq eleq1d mtbiri necon2ai impbii ) ACDZAEZFGZUGB
-      HZAGZBIUIBAJUKUIBUKUHUJKUIUJALUHUJBMNOPQUIACACRZUIFFGSULUHFFULUHCEFACTUAU
-      BUCUDUEUF $.
+    $( The intersection of an inhabited class exists.  (Contributed by Jim
+       Kingdon, 27-Aug-2018.) $)
+    inteximm $p |- ( E. x x e. A -> |^| A e. _V ) $=
+      ( cv wcel cint cvv wss intss1 vex ssex syl exlimiv ) ACZBDZBEZF
+      DZANOMGPMBHOMAIJKL $.
+  $}
+
+  ${
+    $d x A $.
+    $( If the intersection of a class exists, the class is non-empty.
+       (Contributed by Jim Kingdon, 27-Aug-2018.) $)
+    intexr $p |- ( |^| A e. _V -> A =/= (/) ) $=
+      ( cint cvv wcel c0 wceq vprc int0 syl6eq eleq1d mtbiri necon2ai
+      inteq ) ABZCDZAEAEFZOCCDGPNCCPNEBCAEMHIJKL $.
   $}
 
   $( If a class intersection is not a set, it must be the universe.
