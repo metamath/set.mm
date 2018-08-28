@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Aug-2018
+$( iset.mm - Version of 28-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -32702,17 +32702,19 @@ $)
     BTABCNOQR $.
 
   ${
-    $d A x y $.  $d B y $.
+    $d A x y $.  $d B y $.  $d x y z $.  $d A z $.  $d B z $.
     $( The existence of an indexed union. ` x ` is normally a free-variable
        parameter in ` B ` , which should be read ` B ( x ) ` .  (Contributed by
-       FL, 19-Sep-2011.) $)
-    iinexg $p |- ( ( A =/= (/) /\ A. x e. A B e. C )
-    -> |^|_ x e. A B e. _V ) $=
-      ( vy c0 wne wcel wral wa ciin cv wceq wrex cab cint cvv wex wi sylib abn0
-      dfiin2g adantl elisset rgenw r19.2z mpan2 r19.35 imp rexcom4 sylibr intex
-      eqeltrd ) BFGZCDHZABIZJZABCKZELCMZABNZEOZPZQUPURVBMUNAEBCDUBUCUQVAFGZVBQH
-      UQUTERZVCUQUSERZABNZVDUNUPVFUNUOVESZABNZUPVFSUNVGABIVHVGABECDUDUEVGABUFUG
-      UOVEABUHTUIUSAEBUJTUTEUAUKVAULTUM $.
+       Jim Kingdon, 28-Aug-2018.) $)
+    iinexgm $p |- ( ( E. x x e. A /\ A. x e. A B e. C ) ->
+        |^|_ x e. A B e. _V ) $=
+      ( vy vz cv wcel wex wral wa ciin wceq wrex cab cint cvv syl sylib
+      wi dfiin2g adantl elisset rgenw r19.2m mpan2 r19.35-1 imp rexcom4
+      abid exbii sylibr nfv nfsab1 eleq1 cbvex inteximm eqeltrd ) AGBHA
+      IZCDHZABJZKZABCLZEGZCMZABNZEOZPZQVAVCVHMUSAEBCDUAUBVBFGZVGHZFIZVH
+      QHVBVDVGHZEIZVKVBVFEIZVMVBVEEIZABNZVNUSVAVPUSUTVOTZABNZVAVPTUSVQA
+      BJVRVQABECDUCUDVQABUEUFUTVOABUGRUHVEAEBUISVLVFEVFEUJUKULVLVJEFVLF
+      UMVFEFUNVDVIVGUOUPSFVGUQRUR $.
   $}
 
   ${
