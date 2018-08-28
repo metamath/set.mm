@@ -32718,21 +32718,6 @@ $)
   $}
 
   ${
-    $d x y $.  $d x A $.  $d y ph $.  $d x ps $.  $d x ch $.
-    intabs.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    intabs.2 $e |- ( x = |^| { y | ps } -> ( ph <-> ch ) ) $.
-    intabs.3 $e |- ( |^| { y | ps } C_ A /\ ch ) $.
-    $( Absorption of a redundant conjunct in the intersection of a class
-       abstraction.  (Contributed by NM, 3-Jul-2005.) $)
-    intabs $p |- |^| { x | ( x C_ A /\ ph ) } = |^| { x | ph } $=
-      ( cv wss wa cab cint cvv wcel wceq sseq1 anbi12d intmin3 intnex ssv sseq2
-      wn mpbiri sylbi pm2.61i cbvabv inteqi sseqtr4i simpr ss2abi intss ax-mp
-      eqssi ) DJZFKZALZDMZNZADMZNZUTBEMZNZVBVDOPZUTVDKZURVDFKZCLDVDOUPVDQUQVGAC
-      UPVDFRHSITVEUDVDOQZVFVCUAVHVFUTOKUTUBVDOUTUCUEUFUGVAVCABDEGUHUIUJUSVAKVBU
-      TKURADUQAUKULUSVAUMUNUO $.
-  $}
-
-  ${
     $d A x y z $.  $d B x y z $.
     $( The intersection of a union ` U. A ` with a class ` B ` is equal to the
        union of the intersections of each element of ` A ` with ` B ` .
