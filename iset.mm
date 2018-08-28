@@ -32767,6 +32767,96 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Theorems requiring empty set existence
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x A $.
+    $( Construct, from any class ` A ` , a set equal to it when the class
+       exists and equal to the empty set when the class is proper.  This
+       theorem shows that the constructed set always exists.  (Contributed by
+       NM, 16-Oct-2003.) $)
+    class2set $p |- { x e. A | A e. _V } e. _V $=
+      ( wcel crab rabexg wn c0 wrex wceq cv simpl nrexdv rabn0 necon1bbii sylib
+      cvv 0ex syl6eqel pm2.61i ) BPCZTABDZPCTABPETFZUAGPUBTABHZFUAGIUBTABUBAJBC
+      KLUCUAGTABMNOQRS $.
+
+    $( Equality theorem based on ~ class2set .  (Contributed by NM,
+       13-Dec-2005.)  (Proof shortened by Raph Levien, 30-Jun-2006.) $)
+    class2seteq $p |- ( A e. V -> { x e. A | A e. _V } = A ) $=
+      ( wcel cvv crab wceq elex wral cv ax-1 ralrimiv rabid2 sylibr eqcomd syl
+      ) BCDBEDZQABFZBGBCHQBRQQABIBRGQQABQAJBDKLQABMNOP $.
+  $}
+
+  $( Every power class contains the empty set.  (Contributed by NM,
+     25-Oct-2007.) $)
+  0elpw $p |- (/) e. ~P A $=
+    ( c0 cpw wcel wss 0ss 0ex elpw mpbir ) BACDBAEAFBAGHI $.
+
+  $( The empty set and its power set are not equal.  (Contributed by NM,
+     23-Dec-1993.) $)
+  0nep0 $p |- (/) =/= { (/) } $=
+    ( c0 csn 0ex snnz necomi ) ABAACDE $.
+
+  $( Something cannot be equal to both the null set and the power set of the
+     null set.  (Contributed by NM, 30-Sep-2003.) $)
+  0inp0 $p |- ( A = (/) -> -. A = { (/) } ) $=
+    ( c0 wceq csn wne 0nep0 neeq1 mpbiri neneqd ) ABCZABDZJAKEBKEFABKGHI $.
+
+  $( The removal of the empty set from a class does not affect its union.
+     (Contributed by NM, 22-Mar-2004.) $)
+  unidif0 $p |- U. ( A \ { (/) } ) = U. A $=
+    ( c0 csn cdif cuni cun uniun undif1 uncom eqtr2i unieqi 0ex uneq2i 3eqtr4ri
+    unisn un0 uneq1i 3eqtri ) ABCZDZEZBAEZFZUBBFUBUASAFZEZSEZUBFUCTSFZEUAUFFZUE
+    UATSGUDUGUGASFUDASHASIJKUHUABFUAUFBUABLOZMUAPJNSAGUFBUBUIQRBUBIUBPR $.
+
+  ${
+    $d x y A $.  $d y B $.
+    $( An indexed intersection of the empty set, with a non-empty index set, is
+       empty.  (Contributed by NM, 20-Oct-2005.) $)
+    iin0 $p |- ( A =/= (/) <-> |^|_ x e. A (/) = (/) ) $=
+      ( c0 wne ciin wceq iinconst cvv wcel wn 0ex n0i ax-mp eqeq1i mtbir iineq1
+      0iin eqeq1d mtbiri necon2ai impbii ) BCDABCEZCFZABCGUCBCBCFZUCACCEZCFZUFH
+      CFZCHIUGJKHCLMUEHCACQNOUDUBUECABCCPRSTUA $.
+  $}
+
+  ${
+    $d x A $.
+    notzfaus.1 $e |- A = { (/) } $.
+    notzfaus.2 $e |- ( ph <-> -. x e. y ) $.
+    $( In the Separation Scheme ~ zfauscl , we require that ` y ` not occur in
+       ` ph ` (which can be generalized to "not be free in").  Here we show
+       special cases of ` A ` and ` ph ` that result in a contradiction by
+       violating this requirement.  (Contributed by NM, 8-Feb-2006.) $)
+    notzfaus $p |- -. E. y A. x ( x e. y <-> ( x e. A /\ ph ) ) $=
+      ( cv wcel wa wb wal wn wex c0 wne csn 0ex snnz eqnetri mpbi n0 biimt iman
+      wi anbi2i xchbinxr syl6bb xor3 sylibr eximii exnal nex ) BGZCGHZUMDHZAIZJ
+      ZBKZCUQLZBMURLUOUSBDNOUOBMDNPNENQRSBDUATUOUNUPLZJUSUOUNUOUNUDZUTUOUNUBVAU
+      OUNLZIUPUOUNUCAVBUOFUEUFUGUNUPUHUIUJUQBUKTUL $.
+  $}
+
+  $( The intersection of the universal class is empty.  (Contributed by NM,
+     11-Sep-2008.) $)
+  intv $p |- |^| _V = (/) $=
+    ( c0 cvv wcel cint wceq 0ex int0el ax-mp ) ABCBDAEFBGH $.
+
+  ${
+    $d x y z A $.
+    axpweq.1 $e |- A e. _V $.
+    $( Two equivalent ways to express the Power Set Axiom.  Note that ~ ax-pow
+       is not used by the proof.  (Contributed by NM, 22-Jun-2009.) $)
+    axpweq $p |- ( ~P A e. _V
+                <-> E. x A. y ( A. z ( z e. y -> z e. A ) -> y e. x ) ) $=
+      ( cpw cvv wcel cv wex wel wi wal pwidg wceq pweq eleq2d spcegv wss bitri
+      mpd elex exlimiv impbii vex elpw2 pwss dfss2 imbi1i albii exbii ) DFZGHZU
+      LAIZFZHZAJZCBKCIDHLCMZBAKZLZBMZAJUMUQUMULULFZHZUQULGNUPVCAULGUNULOUOVBULU
+      NULPQRUAUPUMAULUOUBUCUDUPVAAUPULUNSZVAULUNAUEUFVDBIZDSZUSLZBMVABDUNUGVGUT
+      BVFURUSCVEDUHUIUJTTUKT $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
