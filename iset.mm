@@ -32823,21 +32823,6 @@ $)
       FCIJUBFCACKLPUASUBCABCCMNQR $.
   $}
 
-  ${
-    $d x A $.
-    notzfaus.1 $e |- A = { (/) } $.
-    notzfaus.2 $e |- ( ph <-> -. x e. y ) $.
-    $( In the Separation Scheme ~ zfauscl , we require that ` y ` not occur in
-       ` ph ` (which can be generalized to "not be free in").  Here we show
-       special cases of ` A ` and ` ph ` that result in a contradiction by
-       violating this requirement.  (Contributed by NM, 8-Feb-2006.) $)
-    notzfaus $p |- -. E. y A. x ( x e. y <-> ( x e. A /\ ph ) ) $=
-      ( cv wcel wa wb wal wn wex c0 wne csn 0ex snnz eqnetri mpbi n0 biimt iman
-      wi anbi2i xchbinxr syl6bb xor3 sylibr eximii exnal nex ) BGZCGHZUMDHZAIZJ
-      ZBKZCUQLZBMURLUOUSBDNOUOBMDNPNENQRSBDUATUOUNUPLZJUSUOUNUOUNUDZUTUOUNUBVAU
-      OUNLZIUPUOUNUCAVBUOFUEUFUGUNUPUHUIUJUQBUKTUL $.
-  $}
-
   $( The intersection of the universal class is empty.  (Contributed by NM,
      11-Sep-2008.) $)
   intv $p |- |^| _V = (/) $=
