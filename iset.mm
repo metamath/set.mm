@@ -32774,16 +32774,7 @@ $)
 
   ${
     $d x A $.
-    $( Construct, from any class ` A ` , a set equal to it when the class
-       exists and equal to the empty set when the class is proper.  This
-       theorem shows that the constructed set always exists.  (Contributed by
-       NM, 16-Oct-2003.) $)
-    class2set $p |- { x e. A | A e. _V } e. _V $=
-      ( wcel crab rabexg wn c0 wrex wceq cv simpl nrexdv rabn0 necon1bbii sylib
-      cvv 0ex syl6eqel pm2.61i ) BPCZTABDZPCTABPETFZUAGPUBTABHZFUAGIUBTABUBAJBC
-      KLUCUAGTABMNOQRS $.
-
-    $( Equality theorem based on ~ class2set .  (Contributed by NM,
+    $( Equality theorem for classes and sets .  (Contributed by NM,
        13-Dec-2005.)  (Proof shortened by Raph Levien, 30-Jun-2006.) $)
     class2seteq $p |- ( A e. V -> { x e. A | A e. _V } = A ) $=
       ( wcel cvv crab wceq elex wral cv ax-1 ralrimiv rabid2 sylibr eqcomd syl
