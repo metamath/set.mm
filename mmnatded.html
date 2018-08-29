@@ -67,6 +67,8 @@ img { margin-bottom: -4px }
 <LI> <A HREF="#introduction-natural-deduction">Introduction to natural deduction</A></LI>
 <LI> <A HREF="#natural-deduction-metamath">Natural deduction in the Metamath Proof Explorer (MPE)</A></LI>
 <LI> <A HREF="#other-natural-deduction">Other Approaches to Natural Deduction in Metamath</A></LI>
+<LI> <A HREF="#when-use-deduction-theorem-instead">When to use deduction form instead</A></LI>
+<LI><A HREF="#strengths-of-current-approach">Strengths of the current approach</A></LI>
 <LI> <A HREF="#definitions-deduction">Definitions in deduction form</A></LI>
 <LI> <A HREF="#natural-deduction-rules">Natural deduction rules</A></LI>
 </MENU>
@@ -434,10 +436,101 @@ metamath-based system to support natural deduction system called
 HREF="https://web.archive.org/web/20120402081711/http://wiki.planetmath.org/cgi-bin/wiki.pl/Natural_deduction_based_metamath_system">natural
 deduction</A> [retrieved 24-Aug-2018].
 
-
 He reports that his system was inspired by a slide show,
 <A HREF="http://web.archive.org/web/20070206192038/http://www.ags.uni-sb.de/~chris/papers/2002-pisa.pdf">"From Natural Deduction to Sequent Calculus (and back)"</A>.
 Practically this system is equivalent to Mario Carneiro's work.
+
+<P><HR NOSHADE SIZE=1><A NAME="when-use-deduction-theorem-instead"></A><B><FONT COLOR="#006633">When to use deduction form instead</FONT></B> &nbsp;&nbsp;&nbsp;
+
+<P>
+The deduction theorem (including the weak deduction theorem)
+isn't used routinely in the Metamath Proof Explorer (set.mm) today,
+since the alternatives are usually better.
+However, it can be useful to understand cases where deduction form, and the
+weak deduction theorem in particular, might provide an advantage.
+
+<P>
+As a hypothetical example, suppose we have developed a theory such as
+complex numbers where all variable-type assumptions (A e. CC, etc.) are
+stated as $e hypotheses like this:
+
+<PRE>
+$e |- A e. CC
+$e |- B e. CC
+----------------
+$p |- ( A + B ) = ( B + A )
+</PRE>
+
+<P>
+The proofs of such pure inferences are usually shorter than those of other
+methods. Proving the closed theorem form often requires extra steps to
+manipulate the order of the antecedents, and the deduction form adds a
+small overhead to each step.
+
+<p>
+Suppose that after a chain of 100 such inferences, we discover that we need
+a closed form, where the hypotheses become antecedents, for the last
+theorem in the chain. One reason for needing a closed form is to be able
+to use e.g. rexlimiv to add an existential quantifier such as "E. x e. CC
+ph -&gt; ....", which can be done only if x e. CC is an antecedent.
+
+<P>
+Our choices are (1) restate and reprove all 100 previous inferences as
+closed theorems, (2) restate and reprove all 100 theorems in natural
+deduction form (with "ph -&gt;" prefixed to hypotheses and conclusion), or (3)
+use the weak deduction theorem to convert the last theorem in the chain to
+closed form. In this case, the weak deduction theorem will result in a
+smaller overall file size than the other methods, and it will also be far
+easier to implement since we only have to add 1 theorem rather than rewrite
+and reprove 100 theorems.
+
+<P>
+In the early days of set.mm, many complex number theorems were available
+only in inference form, which motivated the development of the weak
+deduction theorem. Eventually, though, most complex number inferences
+became needed in deduction (or closed) form, and the space-saving advantage
+of the weak deduction theorem diminished. In particular, as the use of
+Mario's natural deduction method became common, the number of proofs using
+dedth decreased, e.g., from 232 in 2013 to 85 uses in August 2018.
+
+<P><HR NOSHADE SIZE=1><A NAME="strengths-of-current-approach"></A><B><FONT COLOR="#006633">Strengths of the current approach</FONT></B> &nbsp;&nbsp;&nbsp;
+
+<P>
+As far as we know there is nothing in the literature
+like either the weak deduction theorem or
+Mario Carneiro's natural deduction method
+(Mario Carneiro's method is presented in
+<A HREF="http://us.metamath.org/ocat/natded.pdf">"Natural Deductions in the
+Metamath Proof Language" by Mario Carneiro, 2014</A>).
+In order to transform a hypothesis into an antecedent,
+the literature's standard "Deduction
+Theorem" requires metalogic outside of the notions provided by the axiom
+system.
+We instead generally prefer to use
+Mario Carneiro's natural deduction method, then use the weak deduction theorem
+in cases where that is difficult to apply, and only <i>then</i> use the
+full standard deduction theorem as a last resort.
+
+<P>
+The weak deduction theorem does not require any additional metalogic but
+converts an inference directly into a closed form theorem, with a rigorous
+proof that uses only the axiom system. Unlike the standard Deduction
+Theorem, there is no implicit external justification that we have to trust
+in order to use it.
+
+<P>
+Mario's natural deduction method also does not require any new metalogical
+notions. It avoids the Deduction Theorem's metalogic by prefixing the
+hypotheses and conclusion of every would-be inference with a universal
+antecedent, "ph -&gt;", from the very start.
+
+<P>
+We think it is impressive and satisfying that we can do so much in a
+practical sense without stepping outside of our Hilbert-style axiom
+system. Of course our axiomatization, which is in the form of schemes,
+contains a metalogic of its own that we exploit. But this metalogic is
+relatively simple, and for our Deduction Theorem alternatives, we primarily
+use just the direct substitution of expressions for metavariables.
 
 <P><HR NOSHADE SIZE=1><A NAME="definitions-deduction"></A><B><FONT COLOR="#006633">Definitions in deduction form</FONT></B> &nbsp;&nbsp;&nbsp;
 At this point it's probably useful to explain in more detail <I>why</I>
