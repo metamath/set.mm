@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Aug-2018
+$( iset.mm - Version of 29-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -32810,12 +32810,17 @@ $)
 
   ${
     $d x y A $.  $d y B $.
-    $( An indexed intersection of the empty set, with a non-empty index set, is
-       empty.  (Contributed by NM, 20-Oct-2005.) $)
-    iin0 $p |- ( A =/= (/) <-> |^|_ x e. A (/) = (/) ) $=
-      ( c0 wne ciin wceq iinconst cvv wcel wn 0ex n0i ax-mp eqeq1i mtbir iineq1
-      0iin eqeq1d mtbiri necon2ai impbii ) BCDABCEZCFZABCGUCBCBCFZUCACCEZCFZUFH
-      CFZCHIUGJKHCLMUEHCACQNOUDUBUECABCCPRSTUA $.
+    $( An indexed intersection of the empty set, with an inhabited index set,
+       is empty.  (Contributed by Jim Kingdon, 29-Aug-2018.) $)
+    iin0imm $p |- ( E. x x e. A -> |^|_ x e. A (/) = (/) ) $=
+      ( c0 iinconstm ) ABCD $.
+
+    $( If an indexed intersection of the empty set is empty, the index set is
+       non-empty.  (Contributed by Jim Kingdon, 29-Aug-2018.) $)
+    iin0r $p |- ( |^|_ x e. A (/) = (/) -> A =/= (/) ) $=
+      ( c0 ciin wceq cvv wcel 0ex n0i ax-mp 0iin eqeq1i iineq1 eqeq1d
+      wn mtbir mtbiri necon2ai ) ABCDZCEZBCBCEZTACCDZCEZUCFCEZCFGUDOH
+      FCIJUBFCACKLPUASUBCABCCMNQR $.
   $}
 
   ${
