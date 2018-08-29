@@ -32856,11 +32856,15 @@ $)
 
   ${
     $d x y z w $.
-    $( Axiom of Power Sets.  An axiom of Zermelo-Fraenkel set theory.  It
-       states that a set ` y ` exists that includes the power set of a given
-       set ` x ` i.e. contains every subset of ` x ` .  The variant ~ axpow2
-       uses explicit subset notation.  A version using class notation is
-       ~ pwex .  (Contributed by NM, 5-Aug-1993.) $)
+    $( Axiom of Power Sets.  An axiom of Intuitionistic Zermelo-Fraenkel set
+       theory.  It states that a set ` y ` exists that includes the power set
+       of a given set ` x ` i.e. contains every subset of ` x ` .  This is
+       Axiom 8 of [Crosilla] p.  "Axioms of CZF and IZF" except (a) unnecessary
+       quantifiers are removed, and (b) Crosilla has a biconditional rather
+       than an implication (but the two are equivalent by ~ bm1.3ii ).
+
+       The variant ~ axpow2 uses explicit subset notation.  A version using
+       class notation is ~ pwex .  (Contributed by NM, 5-Aug-1993.) $)
     ax-pow $a |- E. y A. z ( A. w ( w e. z -> w e. x ) -> z e. y ) $.
 
     $( Axiom of Power Sets expressed with the fewest number of different
