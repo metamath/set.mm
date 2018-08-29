@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Aug-2018
+$( iset.mm - Version of 29-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -32765,6 +32765,83 @@ $)
     ( wcel cpw wss wn wne pwnss eqimss necon3bi syl ) ABCADZAEZFLAGABHMLALAIJK
     $.
 
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Theorems requiring empty set existence
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x A $.
+    $( Equality theorem for classes and sets .  (Contributed by NM,
+       13-Dec-2005.)  (Proof shortened by Raph Levien, 30-Jun-2006.) $)
+    class2seteq $p |- ( A e. V -> { x e. A | A e. _V } = A ) $=
+      ( wcel cvv crab wceq elex wral cv ax-1 ralrimiv rabid2 sylibr eqcomd syl
+      ) BCDBEDZQABFZBGBCHQBRQQABIBRGQQABQAJBDKLQABMNOP $.
+  $}
+
+  $( Every power class contains the empty set.  (Contributed by NM,
+     25-Oct-2007.) $)
+  0elpw $p |- (/) e. ~P A $=
+    ( c0 cpw wcel wss 0ss 0ex elpw mpbir ) BACDBAEAFBAGHI $.
+
+  $( The empty set and its power set are not equal.  (Contributed by NM,
+     23-Dec-1993.) $)
+  0nep0 $p |- (/) =/= { (/) } $=
+    ( c0 csn 0ex snnz necomi ) ABAACDE $.
+
+  $( Something cannot be equal to both the null set and the power set of the
+     null set.  (Contributed by NM, 30-Sep-2003.) $)
+  0inp0 $p |- ( A = (/) -> -. A = { (/) } ) $=
+    ( c0 wceq csn wne 0nep0 neeq1 mpbiri neneqd ) ABCZABDZJAKEBKEFABKGHI $.
+
+  ${
+    $d A x y $.
+    $( The removal of the empty set from a class does not affect its union.
+       (Contributed by NM, 22-Mar-2004.) $)
+    unidif0 $p |- U. ( A \ { (/) } ) = U. A $=
+      ( vx vy c0 csn cdif cuni cv wcel wn wa wex n0i pm4.71i anbi1i exbii eluni
+      wceq anbi2i bitri an32 anass 3bitr2ri eldif elsn notbii 3bitr4i eqriv ) B
+      ADEZFZGZAGZBHZCHZIZUNAIZUNDRZJZKZKZCLZUOUPKZCLUMUKIZUMULIUTVBCVBUOURKZUPK
+      VBURKUTUOVDUPUOURUNUMMNOUOUPURUAUOUPURUBUCPVCUOUNUJIZKZCLVACUMUJQVFUTCVEU
+      SUOVEUPUNUIIZJZKUSUNAUIUDVHURUPVGUQCDUEUFSTSPTCUMAQUGUH $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.
+    $( An indexed intersection of the empty set, with an inhabited index set,
+       is empty.  (Contributed by Jim Kingdon, 29-Aug-2018.) $)
+    iin0imm $p |- ( E. x x e. A -> |^|_ x e. A (/) = (/) ) $=
+      ( c0 iinconstm ) ABCD $.
+
+    $( If an indexed intersection of the empty set is empty, the index set is
+       non-empty.  (Contributed by Jim Kingdon, 29-Aug-2018.) $)
+    iin0r $p |- ( |^|_ x e. A (/) = (/) -> A =/= (/) ) $=
+      ( c0 ciin wceq cvv wcel 0ex n0i ax-mp 0iin eqeq1i iineq1 eqeq1d
+      wn mtbir mtbiri necon2ai ) ABCDZCEZBCBCEZTACCDZCEZUCFCEZCFGUDOH
+      FCIJUBFCACKLPUASUBCABCCMNQR $.
+  $}
+
+  $( The intersection of the universal class is empty.  (Contributed by NM,
+     11-Sep-2008.) $)
+  intv $p |- |^| _V = (/) $=
+    ( c0 cvv wcel cint wceq 0ex int0el ax-mp ) ABCBDAEFBGH $.
+
+  ${
+    $d x y z A $.
+    axpweq.1 $e |- A e. _V $.
+    $( Two equivalent ways to express the Power Set Axiom.  Note that the power
+       set axiom itself is not used by the proof.  (Contributed by NM,
+       22-Jun-2009.) $)
+    axpweq $p |- ( ~P A e. _V
+                <-> E. x A. y ( A. z ( z e. y -> z e. A ) -> y e. x ) ) $=
+      ( cpw cvv wcel cv wex wel wi wal pwidg wceq pweq eleq2d spcegv wss bitri
+      mpd elex exlimiv impbii vex elpw2 pwss dfss2 imbi1i albii exbii ) DFZGHZU
+      LAIZFZHZAJZCBKCIDHLCMZBAKZLZBMZAJUMUQUMULULFZHZUQULGNUPVCAULGUNULOUOVBULU
+      NULPQRUAUPUMAULUOUBUCUDUPVAAUPULUNSZVAULUNAUEUFVDBIZDSZUSLZBMVABDUNUGVGUT
+      BVFURUSCVEDUHUIUJTTUKT $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
