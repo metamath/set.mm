@@ -32831,8 +32831,9 @@ $)
   ${
     $d x y z A $.
     axpweq.1 $e |- A e. _V $.
-    $( Two equivalent ways to express the Power Set Axiom.  Note that ~ ax-pow
-       is not used by the proof.  (Contributed by NM, 22-Jun-2009.) $)
+    $( Two equivalent ways to express the Power Set Axiom.  Note that the power
+       set axiom itself is not used by the proof.  (Contributed by NM,
+       22-Jun-2009.) $)
     axpweq $p |- ( ~P A e. _V
                 <-> E. x A. y ( A. z ( z e. y -> z e. A ) -> y e. x ) ) $=
       ( cpw cvv wcel cv wex wel wi wal pwidg wceq pweq eleq2d spcegv wss bitri
