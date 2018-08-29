@@ -32845,6 +32845,271 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+             ZF Set Theory - add the Axiom of Power Sets
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+            Introduce the Axiom of Power Sets
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z w $.
+    $( Axiom of Power Sets.  An axiom of Zermelo-Fraenkel set theory.  It
+       states that a set ` y ` exists that includes the power set of a given
+       set ` x ` i.e. contains every subset of ` x ` .  The variant ~ axpow2
+       uses explicit subset notation.  A version using class notation is
+       ~ pwex .  (Contributed by NM, 5-Aug-1993.) $)
+    ax-pow $a |- E. y A. z ( A. w ( w e. z -> w e. x ) -> z e. y ) $.
+
+    $( Axiom of Power Sets expressed with the fewest number of different
+       variables.  (Contributed by NM, 14-Aug-2003.) $)
+    zfpow $p |- E. x A. y ( A. x ( x e. y -> x e. z ) -> y e. x ) $=
+      ( vw wel wal wex ax-pow weq elequ1 imbi12d cbvalv imbi1i albii exbii mpbi
+      wi ) DBEZDCEZQZDFZBAEZQZBFZAGABEZACEZQZAFZUBQZBFZAGCABDHUDUJAUCUIBUAUHUBT
+      UGDADAIRUESUFDABJDACJKLMNOP $.
+
+    $( A variant of the Axiom of Power Sets ~ ax-pow using subset notation.
+       Problem in {BellMachover] p. 466.  (Contributed by NM, 4-Jun-2006.) $)
+    axpow2 $p |- E. y A. z ( z C_ x -> z e. y ) $=
+      ( vw cv wss wel wi wal wex ax-pow dfss2 imbi1i albii exbii mpbir ) CEZAEZ
+      FZCBGZHZCIZBJDCGDAGHDIZTHZCIZBJABCDKUBUEBUAUDCSUCTDQRLMNOP $.
+
+    $( A variant of the Axiom of Power Sets ~ ax-pow .  For any set ` x ` ,
+       there exists a set ` y ` whose members are exactly the subsets of ` x `
+       i.e. the power set of ` x ` .  Axiom Pow of [BellMachover] p. 466.
+       (Contributed by NM, 4-Jun-2006.) $)
+    axpow3 $p |- E. y A. z ( z C_ x <-> z e. y ) $=
+      ( cv wss wel wb wal wex axpow2 bm1.3ii bicom albii exbii mpbir ) CDADEZCB
+      FZGZCHZBIQPGZCHZBIPBCABCJKSUABRTCPQLMNO $.
+  $}
+
+  ${
+    $d w x y z $.
+    $( Every set is an element of some other set.  See ~ elALT for a shorter
+       proof using more axioms.  (Contributed by NM, 4-Jan-2002.)  (Proof
+       shortened by Andrew Salmon, 25-Jul-2011.) $)
+    el $p |- E. y x e. y $=
+      ( vz wel wi wal zfpow weq ax-14 alrimiv ax-13 embantd spimv eximii ) BCDB
+      ADEZBFZCBDZEZCFABDZBBCAGRSCACAHZPQSTOBCABIJCABKLMN $.
+  $}
+
+  ${
+    $d A x y z $.
+    zfpowcl.1 $e |- A e. _V $.
+    $( Power set axiom expressed in class notation.  Axiom 4 of [TakeutiZaring]
+       p. 17.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
+       Salmon, 25-Jul-2011.) $)
+    pwex $p |- ~P A e. _V $=
+      ( vz vy vx cv cpw cvv wcel wceq pweq eleq1d wss cab df-pw wex wal bm1.3ii
+      wb axpow2 abeq2 exbii mpbir issetri eqeltri vtocl ) CFZGZHIAGZHICABUGAJUH
+      UIHUGAKLUHDFZUGMZDNZHDUGOEULEFZULJZEPUJUMIUKSDQZEPUKEDCEDTRUNUOEUKDUMUAUB
+      UCUDUEUF $.
+  $}
+
+  ${
+    $d x A $.
+    $( Power set axiom expressed in class notation, with the sethood
+       requirement as an antecedent.  Axiom 4 of [TakeutiZaring] p. 17.
+       (Contributed by NM, 30-Oct-2003.) $)
+    pwexg $p |- ( A e. V -> ~P A e. _V ) $=
+      ( vx cv cpw cvv wcel wceq pweq eleq1d vex pwex vtoclg ) CDZEZFGAEZFGCABNA
+      HOPFNAIJNCKLM $.
+
+    $( Existence of a class of subsets.  (Contributed by NM, 15-Jul-2006.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    abssexg $p |- ( A e. V -> { x | ( x C_ A /\ ph ) } e. _V ) $=
+      ( wcel cpw cvv cv wss wa pwexg df-pw eleq1i simpl ss2abi ssexg mpan sylbi
+      cab syl ) CDECFZGEZBHCIZAJZBSZGEZCDKUBUCBSZGEZUFUAUGGBCLMUEUGIUHUFUDUCBUC
+      ANOUEUGGPQRT $.
+  $}
+
+  ${
+    $d x y A $.
+    $( A singleton is a set.  Theorem 7.13 of [Quine] p. 51, but proved using
+       only Extensionality, Power Set, and Separation.  Unlike the proof of
+       ~ zfpair , Replacement is not needed.  (Contributed by NM, 7-Aug-1994.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.)  See also ~ snex .
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    snexALT $p |- { A } e. _V $=
+      ( cpw cvv wcel csn wss snsspw ssexg mpan wn pwexg con3i wceq snprc biimpi
+      c0 0ex syl6eqel syl pm2.61i ) ABZCDZAEZCDZUCUAFUBUDAGUCUACHIUBJACDZJZUDUE
+      UBACKLUFUCPCUFUCPMANOQRST $.
+  $}
+
+  $( The power set of the empty set (the ordinal 1) is a set.  See also
+     ~ p0exALT .  (Contributed by NM, 23-Dec-1993.) $)
+  p0ex $p |- { (/) } e. _V $=
+    ( c0 cpw csn cvv pw0 0ex pwex eqeltrri ) ABACDEAFGH $.
+
+  $( The power set of the empty set (the ordinal 1) is a set.  Alternate proof
+     which is longer and quite different from the proof of ~ p0ex if ~ snexALT
+     is expanded.  (Contributed by NM, 23-Dec-1993.)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
+  p0exALT $p |- { (/) } e. _V $=
+    ( c0 snexALT ) AB $.
+
+  $( The power set of the power set of the empty set (the ordinal 2) is a set.
+     (Contributed by NM, 5-Aug-1993.) $)
+  pp0ex $p |- { (/) , { (/) } } e. _V $=
+    ( c0 csn cpw cpr cvv pwpw0 p0ex pwex eqeltrri ) ABZCAJDEFJGHI $.
+
+  $( The ordinal number 3 is a set, proved without the Axiom of Union
+     ~ ax-un .  (Contributed by NM, 2-May-2009.) $)
+  ord3ex $p |- { (/) , { (/) } , { (/) , { (/) } } } e. _V $=
+    ( c0 csn cpr ctp cun cvv df-tp cpw pwpr pp0ex pwex eqeltrri wss unss2 ax-mp
+    snsspr2 ssexi eqeltri ) AABZASCZDTTBZEZFASTGUBTSBZTCZEZTHUEFASITJKLUAUDMUBU
+    EMUCTPUAUDTNOQR $.
+
+  ${
+    $d w x y z $.
+    $( At least two sets exist (or in terms of first-order logic, the universe
+       of discourse has two or more objects).  Note that we may not substitute
+       the same variable for both ` x ` and ` y ` (as indicated by the distinct
+       variable requirement), for otherwise we would contradict ~ stdpc6 .
+
+       This theorem is proved directly from set theory axioms (no set theory
+       definitions) and does not use ~ ax-ext or ~ ax-sep .  See ~ dtruALT for
+       a shorter proof using these axioms.
+
+       The proof makes use of dummy variables ` z ` and ` w ` which do not
+       appear in the final theorem.  They must be distinct from each other and
+       from ` x ` and ` y ` .  In other words, if we were to substitute ` x `
+       for ` z ` throughout the proof, the proof would fail.  (Contributed by
+       NM, 7-Nov-2006.) $)
+    dtru $p |- -. A. x x = y $=
+      ( vw vz weq wn wex wal wel wa el ax-nul eximii eeanv mpbir2an ax-mp con3d
+      sp ax-8 spimev ax-14 con3and 2eximi wi equequ2 notbid syl6bi a1d exlimivv
+      com12 pm2.61i exnal mpbi ) ABEZFZAGZUNAHFCDEZFZDGCGZUPACIZADIZFZJZDGCGZUS
+      VDUTCGVBDGACKVBAHVBDDALVBARMUTVBCDNOVCURCDUTUQVAUQUTVACDAUAUJUBUCPURUPCDD
+      BEZURUPUDVEURCBEZFZUPVEUQVFDBCUEUFVGUOACACEUNVFACBSQTUGVEFZUPURVHUOADADEU
+      NVEADBSQTUHUKUIPUNAULUM $.
+  $}
+
+  ${
+    $d x y $.
+    $( This theorem shows that axiom ~ ax-16 is redundant in the presence of
+       theorem ~ dtru , which states simply that at least two things exist.
+       This justifies the remark at
+       ~ http://us.metamath.org/mpeuni/mmzfcnd.html#twoness (which links to
+       this theorem).  (Proof modification is discouraged.)
+       (New usage is discouraged.)  (Contributed by NM, 7-Nov-2006.) $)
+    ax16b $p |- ( A. x x = y -> ( ph -> A. x ph ) ) $=
+      ( weq wal wi dtru pm2.21i ) BCDBEAABEFBCGH $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.
+    $( Existential uniqueness implies there is a value for which the wff
+       argument is false.  (Contributed by NM, 24-Oct-2010.) $)
+    eunex $p |- ( E! x ph -> E. x -. ph ) $=
+      ( vy wex weq wi wal wa wn weu dtru alim mtoi exlimiv adantl nfv eu3 exnal
+      3imtr4i ) ABDZABCEZFBGZCDZHABGZIZABJAIBDUCUETUBUECUBUDUABGBCKAUABLMNOABCA
+      CPQABRS $.
+  $}
+
+  ${
+    $d w x y z $.
+    $( A set variable is not free from itself.  The proof relies on ~ dtru ,
+       that is, it is not true in a one-element domain.  (Contributed by Mario
+       Carneiro, 8-Oct-2016.) $)
+    nfnid $p |- -. F/_ x x $=
+      ( vy vz vw cv wnfc wel wal weq dtru ax-ext sps alimi mto wnf df-nfc sbnf2
+      wb wsb elsb4 bibi12i 2albii bitri albii alrot3 3bitri mtbir ) AAEZFZBCGZB
+      DGZRZBHZDHZCHZUOCDIZCHCDJUNUPCUMUPDCDBKLMNUIBAGZAOZBHULDHCHZBHUOABUHPURUS
+      BURUQACSZUQADSZRZDHCHUSUQACDQVBULCDUTUJVAUKCABTDABTUAUBUCUDULBCDUEUFUG $.
+
+    $d x z $.  $d y z $.
+    $( The "distinctor" expression ` -. A. x x = y ` , stating that ` x ` and
+       ` y ` are not the same variable, can be written in terms of ` F/ ` in
+       the obvious way.  This theorem is not true in a one-element domain,
+       because then ` F/_ x y ` and ` A. x x = y ` will both be true.
+       (Contributed by Mario Carneiro, 8-Oct-2016.) $)
+    nfcvb $p |- ( F/_ x y <-> -. A. x x = y ) $=
+      ( cv wnfc weq wal wn nfnid eqidd drnfc1 mtbiri con2i nfcvf impbii ) ABCZD
+      ZABEAFZGQPQPBODBHABOOQOIJKLABMN $.
+  $}
+
+  ${
+    $d A x $.
+    $( A class is a subclass of the power class of its union.  Exercise 6(b) of
+       [Enderton] p. 38.  (Contributed by NM, 14-Oct-1996.) $)
+    pwuni $p |- A C_ ~P U. A $=
+      ( vx cuni cpw cv wcel wss elssuni vex elpw sylibr ssriv ) BAACZDZBEZAFOMG
+      ONFOAHOMBIJKL $.
+  $}
+
+  ${
+    $d x y $.
+    $( A version of ~ dtru ("two things exist") with a shorter proof that uses
+       more axioms but may be easier to understand.
+
+       Assuming that ZF set theory is consistent, we cannot prove this theorem
+       unless we specify that ` x ` and ` y ` be distinct.  Specifically,
+       theorem ~ spcev requires that ` x ` must not occur in the subexpression
+       ` -. y = { (/) } ` in step 4 nor in the subexpression ` -. y = (/) ` in
+       step 9.  The proof verifier will require that ` x ` and ` y ` be in a
+       distinct variable group to ensure this.  You can check this by deleting
+       the $d statement in set.mm and rerunning the verifier, which will print
+       a detailed explanation of the distinct variable violation.  (Contributed
+       by NM, 15-Jul-1994.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    dtruALT $p |- -. A. x x = y $=
+      ( cv wceq wn wex wal c0 csn 0inp0 p0ex eqeq2 notbid spcev syl 0ex pm2.61i
+      exnal eqcom albii xchbinx mpbi ) BCZACZDZEZAFZUDUCDZAGZEUCHDZUGUJUCHIZDZE
+      ZUGUCJUFUMAUKKUDUKDUEULUDUKUCLMNOUFUJEAHPUDHDUEUJUDHUCLMNQUGUEAGUIUEARUEU
+      HAUCUDSTUAUB $.
+  $}
+
+  ${
+    $d x y $.
+    dtrucor.1 $e |- x = y $.
+    $( Corollary of ~ dtru .  This example illustrates the danger of blindly
+       trusting the standard Deduction Theorem without accounting for free
+       variables: the theorem form of this deduction is not valid, as shown by
+       ~ dtrucor2 .  (Contributed by NM, 27-Jun-2002.) $)
+    dtrucor $p |- x =/= y $=
+      ( weq cv wne wal dtru pm2.21i mpg ) ABDZAEBEFZAKAGLABHICJ $.
+  $}
+
+  ${
+    dtrucor2.1 $e |- ( x = y -> x =/= y ) $.
+    $( The theorem form of the deduction ~ dtrucor leads to a contradiction, as
+       mentioned in the "Wrong!" example at
+       ~ http://us.metamath.org/mpeuni/mmdeduction.html#bad .  (Contributed by
+       NM, 20-Oct-2007.) $)
+    dtrucor2 $p |- ( ph /\ -. ph ) $=
+      ( weq wex wn wa a9e wi cv necon2bi pm2.01 ax-mp nex pm2.24ii ) BCEZBFAAGH
+      BCIQBQQGZJRQBKCKDLQMNOP $.
+  $}
+
+
+  ${
+    $d x y $.
+    $( Demonstration of a theorem (scheme) that requires (meta)variables ` x `
+       and ` y ` to be distinct, but no others.  It bundles the theorem schemes
+       ` E. x ( x = y -> x e. x ) ` and ` E. x ( x = y -> y e. x ) ` .  Compare
+       ~ dvdemo2 .  ("Bundles" is a term introduced by Raph Levien.)
+       (Contributed by NM, 1-Dec-2006.) $)
+    dvdemo1 $p |- E. x ( x = y -> z e. x ) $=
+      ( weq wn wel wi wex wal dtru exnal mpbir pm2.21 eximii ) ABDZEZOCAFZGAPAH
+      OAIEABJOAKLOQMN $.
+  $}
+
+  ${
+    $d x z $.
+    $( Demonstration of a theorem (scheme) that requires (meta)variables ` x `
+       and ` z ` to be distinct, but no others.  It bundles the theorem schemes
+       ` E. x ( x = x -> z e. x ) ` and ` E. x ( x = y -> y e. x ) ` .  Compare
+       ~ dvdemo1 .  (Contributed by NM, 1-Dec-2006.) $)
+    dvdemo2 $p |- E. x ( x = y -> z e. x ) $=
+      ( wel weq wi el ax-1 eximii ) CADZABEZJFACAGJKHI $.
+  $}
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
