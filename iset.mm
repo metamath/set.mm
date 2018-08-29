@@ -32796,12 +32796,17 @@ $)
   0inp0 $p |- ( A = (/) -> -. A = { (/) } ) $=
     ( c0 wceq csn wne 0nep0 neeq1 mpbiri neneqd ) ABCZABDZJAKEBKEFABKGHI $.
 
-  $( The removal of the empty set from a class does not affect its union.
-     (Contributed by NM, 22-Mar-2004.) $)
-  unidif0 $p |- U. ( A \ { (/) } ) = U. A $=
-    ( c0 csn cdif cuni cun uniun undif1 uncom eqtr2i unieqi 0ex uneq2i 3eqtr4ri
-    unisn un0 uneq1i 3eqtri ) ABCZDZEZBAEZFZUBBFUBUASAFZEZSEZUBFUCTSFZEUAUFFZUE
-    UATSGUDUGUGASFUDASHASIJKUHUABFUAUFBUABLOZMUAPJNSAGUFBUBUIQRBUBIUBPR $.
+  ${
+    $d A x y $.
+    $( The removal of the empty set from a class does not affect its union.
+       (Contributed by NM, 22-Mar-2004.) $)
+    unidif0 $p |- U. ( A \ { (/) } ) = U. A $=
+      ( vx vy c0 csn cdif cuni cv wcel wn wa wex n0i pm4.71i anbi1i exbii eluni
+      wceq anbi2i bitri an32 anass 3bitr2ri eldif elsn notbii 3bitr4i eqriv ) B
+      ADEZFZGZAGZBHZCHZIZUNAIZUNDRZJZKZKZCLZUOUPKZCLUMUKIZUMULIUTVBCVBUOURKZUPK
+      VBURKUTUOVDUPUOURUNUMMNOUOUPURUAUOUPURUBUCPVCUOUNUJIZKZCLVACUMUJQVFUTCVEU
+      SUOVEUPUNUIIZJZKUSUNAUIUDVHURUPVGUQCDUEUFSTSPTCUMAQUGUH $.
+  $}
 
   ${
     $d x y A $.  $d y B $.
