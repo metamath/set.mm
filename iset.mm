@@ -28257,8 +28257,16 @@ $)
       NOPQ $.
 
     $( Restricted existential quantification over a singleton.  (Contributed by
-       Mario Carneiro, 23-Apr-2015.) $)
-    rexsns $p |- ( A e. V -> ( E. x e. { A } ph <-> [. A / x ]. ph ) ) $=
+       Mario Carneiro, 23-Apr-2015.)  (Revised by NM, 22-Aug-2018.) $)
+    rexsns $p |- ( E. x e. { A } ph <-> [. A / x ]. ph ) $=
+      ( cv csn wcel wa wex wceq wrex wsbc elsn anbi1i exbii df-rex sbc5 3bitr4i
+      ) BDZCEZFZAGZBHRCIZAGZBHABSJABCKUAUCBTUBABCLMNABSOABCPQ $.
+
+    $( Restricted existential quantification over a singleton.  (Contributed by
+       Mario Carneiro, 23-Apr-2015.)  Obsolete as of 22-Aug-2018.  Use ~ rexsns
+       instead.  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    rexsnsOLD $p |- ( A e. V -> ( E. x e. { A } ph <-> [. A / x ]. ph ) ) $=
       ( wcel wsbc cv wceq wa wex csn wrex wb sbc5 a1i df-rex anbi1i exbii bitri
       elsn syl6rbbr ) CDEZABCFZBGZCHZAIZBJZABCKZLZUCUGMUBABCNOUIUDUHEZAIZBJUGAB
       UHPUKUFBUJUEABCTQRSUA $.
@@ -28273,7 +28281,7 @@ $)
     $( Restricted existential quantification over a singleton.  (Contributed by
        NM, 29-Jan-2012.) $)
     rexsng $p |- ( A e. V -> ( E. x e. { A } ph <-> ps ) ) $=
-      ( wcel csn wrex wsbc rexsns sbcieg bitrd ) DEGACDHIACDJBACDEKABCDEFLM $.
+      ( wcel csn wrex wsbc rexsnsOLD sbcieg bitrd ) DEGACDHIACDJBACDEKABCDEFLM $.
   $}
 
   $( There is a set being the element of a singleton if and only if there is an
@@ -28502,7 +28510,7 @@ $)
        19-May-2008.)  (Revised by Mario Carneiro, 23-Apr-2015.) $)
     r19.12sn $p |- ( E. x e. { A } A. y e. B ph
                 <-> A. y e. B E. x e. { A } ph ) $=
-      ( cvv wcel wral csn wrex wb wsbc sbcralg rexsns ralbidv 3bitr4d ax-mp ) D
+      ( cvv wcel wral csn wrex wb wsbc sbcralg rexsnsOLD ralbidv 3bitr4d ax-mp ) D
       GHZACEIZBDJZKZABUAKZCEIZLFSTBDMABDMZCEIUBUDABCDEGNTBDGOSUCUECEABDGOPQR $.
   $}
 
