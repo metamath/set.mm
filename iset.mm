@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Aug-2018
+$( iset.mm - Version of 30-Aug-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -28235,6 +28235,16 @@ $)
        a set.  (Contributed by NM, 12-Jun-1994.) $)
     elsnc2 $p |- ( A e. { B } <-> A = B ) $=
       ( cvv wcel csn wceq wb elsnc2g ax-mp ) BDEABFEABGHCABDIJ $.
+  $}
+
+  ${
+    $d x y A $.
+    $( A singleton has at most one element.  This works whether ` A ` is a
+       proper class or not, and in that sense can be seen as encompassing both
+       ~ snmg and ~ snprc .  (Contributed by Jim Kingdon, 30-Aug-2018.) $)
+    mosn $p |- E* x x e. { A } $=
+      ( cv csn wcel wmo wceq moeq elsn mobii mpbir ) ACZBDEZAFLBGZAFA
+      BHMNAABIJK $.
   $}
 
   ${
