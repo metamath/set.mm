@@ -11957,7 +11957,6 @@
 "sbcel12gOLD" is used by "csbxpgVD".
 "sbcel12gOLD" is used by "sbccsb2gOLD".
 "sbcel12gOLD" is used by "sbcel2gOLD".
-"sbcel1gvOLD" is used by "f1od2".
 "sbcel1gvOLD" is used by "onfrALTlem4VD".
 "sbcel1gvOLD" is used by "sbcoreleleqVD".
 "sbcel2gOLD" is used by "csbabgOLD".
@@ -17042,6 +17041,7 @@ New usage of "riesz3i" is discouraged (2 uses).
 New usage of "riesz4" is discouraged (4 uses).
 New usage of "riesz4i" is discouraged (1 uses).
 New usage of "riotaocN" is discouraged (1 uses).
+New usage of "riotassuniOLD" is discouraged (0 uses).
 New usage of "riotasv2dOLD" is discouraged (0 uses).
 New usage of "riotasv3dOLD" is discouraged (0 uses).
 New usage of "riotasvdOLD" is discouraged (2 uses).
@@ -17110,7 +17110,7 @@ New usage of "sbcbrgOLD" is discouraged (1 uses).
 New usage of "sbccsb2gOLD" is discouraged (0 uses).
 New usage of "sbccsbgOLD" is discouraged (0 uses).
 New usage of "sbcel12gOLD" is discouraged (4 uses).
-New usage of "sbcel1gvOLD" is discouraged (3 uses).
+New usage of "sbcel1gvOLD" is discouraged (2 uses).
 New usage of "sbcel2gOLD" is discouraged (11 uses).
 New usage of "sbcexgOLD" is discouraged (8 uses).
 New usage of "sbcim2g" is discouraged (2 uses).
@@ -18370,6 +18370,7 @@ Proof modification of "reusv5OLD" is discouraged (99 steps).
 Proof modification of "reusv6OLD" is discouraged (370 steps).
 Proof modification of "reusv7OLD" is discouraged (297 steps).
 Proof modification of "rexsnsOLD" is discouraged (55 steps).
+Proof modification of "riotassuniOLD" is discouraged (100 steps).
 Proof modification of "riotasv2dOLD" is discouraged (337 steps).
 Proof modification of "riotasv3dOLD" is discouraged (241 steps).
 Proof modification of "riotasvdOLD" is discouraged (295 steps).
