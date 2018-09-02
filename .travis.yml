@@ -43,8 +43,15 @@ install:
   # - wget -N -q http://us.metamath.org/mpegif/mmhil.html
   # This will be updated, but we need a starting point:
   - wget -N -q http://us.metamath.org/mpegif/mmbiblio.html
-  # 8/29/18 NM
-  - tar --strip-components=1 -jxf metamath.tar.bz2
+  ### # 8/29/18 NM bad - overwrites set.mm etc.
+  ### - tar --strip-components=1 -jxf metamath.tar.bz2
+  # 9/2/18 NM extract in a temporary directory to prevent overwriting .mm's
+  - mkdir mmtemp/
+  - cd mmtemp/
+  - tar --strip-components=1 -jxf ../metamath.tar.bz2
+  - mv *.c *.h ..
+  - cd ..
+  # 9/2/18 end
   - tar --strip-components=1 -jxf symbols.tar.bz2
   # Compile metamath, a C verifier (and more) by Norm Megill.
   - gcc *.c -O2 -o metamath
