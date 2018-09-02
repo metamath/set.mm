@@ -11986,6 +11986,8 @@
 "sbcorgOLD" is used by "sbc3orgVD".
 "sbcrexgOLD" is used by "2sbcrexOLD".
 "sbcrexgOLD" is used by "sbc2rexgOLD".
+"sbrim" is used by "sbco2d".
+"sbrim" is used by "sbied".
 "sh0" is used by "ch0".
 "sh0" is used by "hhssabloi".
 "sh0" is used by "hhssnv".
@@ -17134,7 +17136,7 @@ New usage of "sbftOLD" is discouraged (0 uses).
 New usage of "sbieOLD" is discouraged (0 uses).
 New usage of "sbiedOLD" is discouraged (0 uses).
 New usage of "sbnOLD" is discouraged (0 uses).
-New usage of "sbrimALT" is discouraged (0 uses).
+New usage of "sbrim" is discouraged (2 uses).
 New usage of "sbtOLD" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
