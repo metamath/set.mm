@@ -32968,10 +32968,10 @@ $)
   p0ex $p |- { (/) } e. _V $=
     ( c0 cpw csn cvv pw0 0ex pwex eqeltrri ) ABACDEAFGH $.
 
-  $( The power set of the power set of the empty set (the ordinal 2) is a set.
-     (Contributed by NM, 5-Aug-1993.) $)
+  $( ` { (/) , { (/) } } ` (the ordinal 2) is a set.  (Contributed by NM,
+     5-Aug-1993.) $)
   pp0ex $p |- { (/) , { (/) } } e. _V $=
-    ( c0 csn cpw cpr cvv pwpw0 p0ex pwex eqeltrri ) ABZCAJDEFJGHI $.
+    ( c0 csn cpr cpw p0ex pwex pwpw0ss ssexi ) AABZCIDIEFGH $.
 
   $( The ordinal number 3 is a set, proved without the Axiom of Union
      ~ ax-un .  (Contributed by NM, 2-May-2009.) $)
