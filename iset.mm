@@ -32948,7 +32948,7 @@ $)
   $}
 
   $( A singleton whose element exists is a set.  The ` A e. _V ` case of
-     Theorem 7.13 of [Quine] p. 51, proved using only Extensionality, Power
+     Theorem 7.12 of [Quine] p. 51, proved using only Extensionality, Power
      Set, and Separation.  Replacement is not needed.  (Contributed by Jim
      Kingdon, 1-Sep-2018.) $)
   snexg $p |- ( A e. _V -> { A } e. _V ) $=
@@ -32956,7 +32956,7 @@ $)
     BCZABFNLGMOAHNLBIJK $.
 
   $( A singleton whose element is a proper class is a set.  The ` -. A e. _V `
-     case of Theorem 7.13 of [Quine] p. 51, proved using only Extensionality,
+     case of Theorem 7.12 of [Quine] p. 51, proved using only Extensionality,
      Power Set, and Separation.  Replacement is not needed.  (Contributed by
      Jim Kingdon, 1-Sep-2018.) $)
   snexprc $p |- ( -. A e. _V -> { A } e. _V ) $=
