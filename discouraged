@@ -11957,6 +11957,7 @@
 "sbcel12gOLD" is used by "csbxpgVD".
 "sbcel12gOLD" is used by "sbccsb2gOLD".
 "sbcel12gOLD" is used by "sbcel2gOLD".
+"sbcel1gvOLD" is used by "f1od2".
 "sbcel1gvOLD" is used by "onfrALTlem4VD".
 "sbcel1gvOLD" is used by "sbcoreleleqVD".
 "sbcel2gOLD" is used by "csbabgOLD".
@@ -17109,7 +17110,7 @@ New usage of "sbcbrgOLD" is discouraged (1 uses).
 New usage of "sbccsb2gOLD" is discouraged (0 uses).
 New usage of "sbccsbgOLD" is discouraged (0 uses).
 New usage of "sbcel12gOLD" is discouraged (4 uses).
-New usage of "sbcel1gvOLD" is discouraged (2 uses).
+New usage of "sbcel1gvOLD" is discouraged (3 uses).
 New usage of "sbcel2gOLD" is discouraged (11 uses).
 New usage of "sbcexgOLD" is discouraged (8 uses).
 New usage of "sbcim2g" is discouraged (2 uses).
