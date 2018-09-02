@@ -1,4 +1,4 @@
-$( iset.mm - Version of 30-Aug-2018
+$( iset.mm - Version of 1-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -32947,18 +32947,21 @@ $)
       ANOUEUGGPQRT $.
   $}
 
-  ${
-    $d x y A $.
-    $( A singleton is a set.  Theorem 7.13 of [Quine] p. 51, but proved using
-       only Extensionality, Power Set, and Separation.  Unlike the proof of
-       ~ zfpair , Replacement is not needed.  (Contributed by NM, 7-Aug-1994.)
-       (Proof shortened by Andrew Salmon, 25-Jul-2011.)  See also ~ snex .
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
-    snexALT $p |- { A } e. _V $=
-      ( cpw cvv wcel csn wss snsspw ssexg mpan wn pwexg con3i wceq snprc biimpi
-      c0 0ex syl6eqel syl pm2.61i ) ABZCDZAEZCDZUCUAFUBUDAGUCUACHIUBJACDZJZUDUE
-      UBACKLUFUCPCUFUCPMANOQRST $.
-  $}
+  $( A singleton whose element exists is a set.  The ` A e. _V ` case of
+     Theorem 7.13 of [Quine] p. 51, proved using only Extensionality, Power
+     Set, and Separation.  Replacement is not needed.  (Contributed by Jim
+     Kingdon, 1-Sep-2018.) $)
+  snexg $p |- ( A e. _V -> { A } e. _V ) $=
+    ( cvv wcel cpw csn pwexg wss snsspw ssexg mpan syl ) ABCADZBCZAEZ
+    BCZABFNLGMOAHNLBIJK $.
+
+  $( A singleton whose element is a proper class is a set.  The ` -. A e. _V `
+     case of Theorem 7.13 of [Quine] p. 51, proved using only Extensionality,
+     Power Set, and Separation.  Replacement is not needed.  (Contributed by
+     Jim Kingdon, 1-Sep-2018.) $)
+  snexprc $p |- ( -. A e. _V -> { A } e. _V ) $=
+    ( cvv wcel wn csn c0 wceq snprc biimpi 0ex syl6eqel ) ABCDZAEZFBL
+    MFGAHIJK $.
 
   $( The power set of the empty set (the ordinal 1) is a set.  See also
      ~ p0exALT .  (Contributed by NM, 23-Dec-1993.) $)
