@@ -1,4 +1,4 @@
-$( iset.mm - Version of 1-Sep-2018
+$( iset.mm - Version of 2-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -32981,28 +32981,17 @@ $)
     ARJKTUCLUAUDLUBSMTUCSOPKQ $.
 
   ${
-    $d w x y z $.
+    $d x y z $.
     $( At least two sets exist (or in terms of first-order logic, the universe
-       of discourse has two or more objects).  Note that we may not substitute
-       the same variable for both ` x ` and ` y ` (as indicated by the distinct
-       variable requirement), for otherwise we would contradict ~ stdpc6 .
-
-       This theorem is proved directly from set theory axioms (no set theory
-       definitions) and does not use ~ ax-ext or ~ ax-sep .  See ~ dtruALT for
-       a shorter proof using these axioms.
-
-       The proof makes use of dummy variables ` z ` and ` w ` which do not
-       appear in the final theorem.  They must be distinct from each other and
-       from ` x ` and ` y ` .  In other words, if we were to substitute ` x `
-       for ` z ` throughout the proof, the proof would fail.  (Contributed by
-       NM, 7-Nov-2006.) $)
-    dtru $p |- -. A. x x = y $=
-      ( vw vz weq wn wex wal wel wa el ax-nul eximii eeanv mpbir2an ax-mp con3d
-      sp ax-8 spimev ax-14 con3and 2eximi wi equequ2 notbid syl6bi a1d exlimivv
-      com12 pm2.61i exnal mpbi ) ABEZFZAGZUNAHFCDEZFZDGCGZUPACIZADIZFZJZDGCGZUS
-      VDUTCGVBDGACKVBAHVBDDALVBARMUTVBCDNOVCURCDUTUQVAUQUTVACDAUAUJUBUCPURUPCDD
-      BEZURUPUDVEURCBEZFZUPVEUQVFDBCUEUFVGUOACACEUNVFACBSQTUGVEFZUPURVHUOADADEU
-      NVEADBSQTUHUKUIPUNAULUM $.
+       of discourse has two or more objects).  This theorem asserts the
+       existence of two sets which do not equal each other; compare with
+       ` E. x -. x = y ` which means we are given a set ` y ` and go from there
+       to a set ` x ` which is not equal to it.  (Contributed by Jim Kingdon,
+       2-Sep-2018.) $)
+    dtruarb $p |- E. x E. y -. x = y $=
+      ( vz wel wn wa wex weq el wal ax-nul eximii eeanv mpbir2an nelneq2 2eximi
+      sp cv ax-mp ) CADZCBDEZFZBGAGZABHEZBGAGUCTAGUABGCAIUACJUABBCKUACQLTUAABMN
+      UBUDABCRARBROPS $.
   $}
 
   ${
