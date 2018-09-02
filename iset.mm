@@ -32976,9 +32976,9 @@ $)
   $( The ordinal number 3 is a set, proved without the Axiom of Union
      ~ ax-un .  (Contributed by NM, 2-May-2009.) $)
   ord3ex $p |- { (/) , { (/) } , { (/) , { (/) } } } e. _V $=
-    ( c0 csn cpr ctp cun cvv df-tp cpw pwpr pp0ex pwex eqeltrri wss unss2 ax-mp
-    snsspr2 ssexi eqeltri ) AABZASCZDTTBZEZFASTGUBTSBZTCZEZTHUEFASITJKLUAUDMUBU
-    EMUCTPUAUDTNOQR $.
+    ( c0 csn cpr ctp cun cvv df-tp cpw pp0ex pwprss ssexi wss snsspr2
+    pwex unss2 ax-mp eqeltri ) AABZARCZDSSBZEZFARSGUASRBZSCZEZUDSHSIN
+    ARJKTUCLUAUDLUBSMTUCSOPKQ $.
 
   ${
     $d w x y z $.
