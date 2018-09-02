@@ -32963,17 +32963,10 @@ $)
     ( cvv wcel wn csn c0 wceq snprc biimpi 0ex syl6eqel ) ABCDZAEZFBL
     MFGAHIJK $.
 
-  $( The power set of the empty set (the ordinal 1) is a set.  See also
-     ~ p0exALT .  (Contributed by NM, 23-Dec-1993.) $)
+  $( The power set of the empty set (the ordinal 1) is a set.  (Contributed by
+     NM, 23-Dec-1993.) $)
   p0ex $p |- { (/) } e. _V $=
     ( c0 cpw csn cvv pw0 0ex pwex eqeltrri ) ABACDEAFGH $.
-
-  $( The power set of the empty set (the ordinal 1) is a set.  Alternate proof
-     which is longer and quite different from the proof of ~ p0ex if ~ snexALT
-     is expanded.  (Contributed by NM, 23-Dec-1993.)
-     (Proof modification is discouraged.)  (New usage is discouraged.) $)
-  p0exALT $p |- { (/) } e. _V $=
-    ( c0 snexALT ) AB $.
 
   $( The power set of the power set of the empty set (the ordinal 2) is a set.
      (Contributed by NM, 5-Aug-1993.) $)
