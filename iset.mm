@@ -32995,25 +32995,17 @@ $)
   $}
 
   ${
-    $d x y $.
-    $( This theorem shows that axiom ~ ax-16 is redundant in the presence of
-       theorem ~ dtru , which states simply that at least two things exist.
-       This justifies the remark at
-       ~ http://us.metamath.org/mpeuni/mmzfcnd.html#twoness (which links to
-       this theorem).  (Proof modification is discouraged.)
-       (New usage is discouraged.)  (Contributed by NM, 7-Nov-2006.) $)
-    ax16b $p |- ( A. x x = y -> ( ph -> A. x ph ) ) $=
-      ( weq wal wi dtru pm2.21i ) BCDBEAABEFBCGH $.
-  $}
-
-  ${
     $d x y $.  $d y ph $.
+    eunexdtru.1 $e |- E. x -. x = y $.
     $( Existential uniqueness implies there is a value for which the wff
-       argument is false.  (Contributed by NM, 24-Oct-2010.) $)
-    eunex $p |- ( E! x ph -> E. x -. ph ) $=
-      ( vy wex weq wi wal wa wn weu dtru alim mtoi exlimiv adantl nfv eu3 exnal
-      3imtr4i ) ABDZABCEZFBGZCDZHABGZIZABJAIBDUCUETUBUECUBUDUABGBCKAUABLMNOABCA
-      CPQABRS $.
+       argument is false.  The hypothesis states there are at least two sets
+       and we should be able to discard it once we have proved it (compare with
+       ~ dtruarb which is what we have so far).  (Contributed by Jim Kingdon,
+       2-Sep-2018.) $)
+    eunexdtru $p |- ( E! x ph -> E. x -. ph ) $=
+      ( weu wex cv wceq wi wal wa wn nfv eu3 nfa1 con3d eximd exlimiv
+      sp mpi adantl sylbi ) ABEABFZABGCGHZIZBJZCFZKALZBFZABCACMNUGUIU
+      CUFUICUFUDLZBFUIDUFUJUHBUEBOUFAUDUEBSPQTRUAUB $.
   $}
 
   ${
