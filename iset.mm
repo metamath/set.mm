@@ -32909,9 +32909,8 @@ $)
 
   ${
     $d w x y z $.
-    $( Every set is an element of some other set.  See ~ elALT for a shorter
-       proof using more axioms.  (Contributed by NM, 4-Jan-2002.)  (Proof
-       shortened by Andrew Salmon, 25-Jul-2011.) $)
+    $( Every set is an element of some other set.  (Contributed by NM,
+       4-Jan-2002.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
     el $p |- E. y x e. y $=
       ( vz wel wi wal zfpow weq ax-14 alrimiv ax-13 embantd spimv eximii ) BCDB
       ADEZBFZCBDZEZCFABDZBBCAGRSCACAHZPQSTOBCABIJCABKLMN $.
@@ -32973,8 +32972,8 @@ $)
   pp0ex $p |- { (/) , { (/) } } e. _V $=
     ( c0 csn cpr cpw p0ex pwex pwpw0ss ssexi ) AABZCIDIEFGH $.
 
-  $( The ordinal number 3 is a set, proved without the Axiom of Union
-     ~ ax-un .  (Contributed by NM, 2-May-2009.) $)
+  $( The ordinal number 3 is a set, proved without the Axiom of Union.
+     (Contributed by NM, 2-May-2009.) $)
   ord3ex $p |- { (/) , { (/) } , { (/) , { (/) } } } e. _V $=
     ( c0 csn cpr ctp cun cvv df-tp cpw pp0ex pwprss ssexi wss snsspr2
     pwex unss2 ax-mp eqeltri ) AABZARCZDSSBZEZFARSGUASRBZSCZEZUDSHSIN
