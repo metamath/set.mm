@@ -33009,101 +33009,12 @@ $)
   $}
 
   ${
-    $d w x y z $.
-    $( A set variable is not free from itself.  The proof relies on ~ dtru ,
-       that is, it is not true in a one-element domain.  (Contributed by Mario
-       Carneiro, 8-Oct-2016.) $)
-    nfnid $p |- -. F/_ x x $=
-      ( vy vz vw cv wnfc wel wal weq dtru ax-ext sps alimi mto wnf df-nfc sbnf2
-      wb wsb elsb4 bibi12i 2albii bitri albii alrot3 3bitri mtbir ) AAEZFZBCGZB
-      DGZRZBHZDHZCHZUOCDIZCHCDJUNUPCUMUPDCDBKLMNUIBAGZAOZBHULDHCHZBHUOABUHPURUS
-      BURUQACSZUQADSZRZDHCHUSUQACDQVBULCDUTUJVAUKCABTDABTUAUBUCUDULBCDUEUFUG $.
-
-    $d x z $.  $d y z $.
-    $( The "distinctor" expression ` -. A. x x = y ` , stating that ` x ` and
-       ` y ` are not the same variable, can be written in terms of ` F/ ` in
-       the obvious way.  This theorem is not true in a one-element domain,
-       because then ` F/_ x y ` and ` A. x x = y ` will both be true.
-       (Contributed by Mario Carneiro, 8-Oct-2016.) $)
-    nfcvb $p |- ( F/_ x y <-> -. A. x x = y ) $=
-      ( cv wnfc weq wal wn nfnid eqidd drnfc1 mtbiri con2i nfcvf impbii ) ABCZD
-      ZABEAFZGQPQPBODBHABOOQOIJKLABMN $.
-  $}
-
-  ${
     $d A x $.
     $( A class is a subclass of the power class of its union.  Exercise 6(b) of
        [Enderton] p. 38.  (Contributed by NM, 14-Oct-1996.) $)
     pwuni $p |- A C_ ~P U. A $=
       ( vx cuni cpw cv wcel wss elssuni vex elpw sylibr ssriv ) BAACZDZBEZAFOMG
       ONFOAHOMBIJKL $.
-  $}
-
-  ${
-    $d x y $.
-    $( A version of ~ dtru ("two things exist") with a shorter proof that uses
-       more axioms but may be easier to understand.
-
-       Assuming that ZF set theory is consistent, we cannot prove this theorem
-       unless we specify that ` x ` and ` y ` be distinct.  Specifically,
-       theorem ~ spcev requires that ` x ` must not occur in the subexpression
-       ` -. y = { (/) } ` in step 4 nor in the subexpression ` -. y = (/) ` in
-       step 9.  The proof verifier will require that ` x ` and ` y ` be in a
-       distinct variable group to ensure this.  You can check this by deleting
-       the $d statement in set.mm and rerunning the verifier, which will print
-       a detailed explanation of the distinct variable violation.  (Contributed
-       by NM, 15-Jul-1994.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    dtruALT $p |- -. A. x x = y $=
-      ( cv wceq wn wex wal c0 csn 0inp0 p0ex eqeq2 notbid spcev syl 0ex pm2.61i
-      exnal eqcom albii xchbinx mpbi ) BCZACZDZEZAFZUDUCDZAGZEUCHDZUGUJUCHIZDZE
-      ZUGUCJUFUMAUKKUDUKDUEULUDUKUCLMNOUFUJEAHPUDHDUEUJUDHUCLMNQUGUEAGUIUEARUEU
-      HAUCUDSTUAUB $.
-  $}
-
-  ${
-    $d x y $.
-    dtrucor.1 $e |- x = y $.
-    $( Corollary of ~ dtru .  This example illustrates the danger of blindly
-       trusting the standard Deduction Theorem without accounting for free
-       variables: the theorem form of this deduction is not valid, as shown by
-       ~ dtrucor2 .  (Contributed by NM, 27-Jun-2002.) $)
-    dtrucor $p |- x =/= y $=
-      ( weq cv wne wal dtru pm2.21i mpg ) ABDZAEBEFZAKAGLABHICJ $.
-  $}
-
-  ${
-    dtrucor2.1 $e |- ( x = y -> x =/= y ) $.
-    $( The theorem form of the deduction ~ dtrucor leads to a contradiction, as
-       mentioned in the "Wrong!" example at
-       ~ http://us.metamath.org/mpeuni/mmdeduction.html#bad .  (Contributed by
-       NM, 20-Oct-2007.) $)
-    dtrucor2 $p |- ( ph /\ -. ph ) $=
-      ( weq wex wn wa a9e wi cv necon2bi pm2.01 ax-mp nex pm2.24ii ) BCEZBFAAGH
-      BCIQBQQGZJRQBKCKDLQMNOP $.
-  $}
-
-
-  ${
-    $d x y $.
-    $( Demonstration of a theorem (scheme) that requires (meta)variables ` x `
-       and ` y ` to be distinct, but no others.  It bundles the theorem schemes
-       ` E. x ( x = y -> x e. x ) ` and ` E. x ( x = y -> y e. x ) ` .  Compare
-       ~ dvdemo2 .  ("Bundles" is a term introduced by Raph Levien.)
-       (Contributed by NM, 1-Dec-2006.) $)
-    dvdemo1 $p |- E. x ( x = y -> z e. x ) $=
-      ( weq wn wel wi wex wal dtru exnal mpbir pm2.21 eximii ) ABDZEZOCAFZGAPAH
-      OAIEABJOAKLOQMN $.
-  $}
-
-  ${
-    $d x z $.
-    $( Demonstration of a theorem (scheme) that requires (meta)variables ` x `
-       and ` z ` to be distinct, but no others.  It bundles the theorem schemes
-       ` E. x ( x = x -> z e. x ) ` and ` E. x ( x = y -> y e. x ) ` .  Compare
-       ~ dvdemo1 .  (Contributed by NM, 1-Dec-2006.) $)
-    dvdemo2 $p |- E. x ( x = y -> z e. x ) $=
-      ( wel weq wi el ax-1 eximii ) CADZABEZJFACAGJKHI $.
   $}
 
 $(
