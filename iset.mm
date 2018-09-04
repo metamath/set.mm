@@ -32861,6 +32861,42 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+             Collection principle
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d ph z w $.  $d x y z w $.
+    $( A very strong generalization of the Axiom of Replacement (compare
+       ~ zfrep6 ).  Its strength lies in the rather profound fact that
+       ` ph ( x , y ) ` does not have to be a "function-like" wff, as it does
+       in the standard Axiom of Replacement.  This theorem is sometimes called
+       the Boundedness Axiom.  In the context of IZF, it is just a slight
+       variation of ~ ax-coll .  (Contributed by NM, 17-Oct-2004.) $)
+    bnd $p |- ( A. x e. z E. y ph -> E. w A. x e. z E. y e. w ph ) $=
+      ( nfv ax-coll ) ABCDEAEFG $.
+  $}
+
+  ${
+    $d ph z w v $.  $d x z w v A $.  $d x y z w v B $.
+    bnd2.1 $e |- A e. _V $.
+    $( A variant of the Boundedness Axiom ~ bnd that picks a subset ` z ` out
+       of a possibly proper class ` B ` in which a property is true.
+       (Contributed by NM, 4-Feb-2004.) $)
+    bnd2 $p |- ( A. x e. A E. y e. B ph ->
+              E. z ( z C_ B /\ A. x e. A E. y e. z ph ) ) $=
+      ( vw vv wrex wral cv wcel wa wex wss df-rex wi wceq raleq bnd vtocl sylbi
+      ralbii exbidv imbi12d cin inex1 inss2 sseq1 mpbiri biantrurd rexeq anbi1i
+      vex elin anass bitri rexbii2 syl6bb ralbidv bitr3d spcev exlimiv syl ) AC
+      FJZBEKZCLZFMZANZCHLZJZBEKZHOZDLZFPZACVOJZBEKZNZDOZVGVJCOZBEKZVNVFWABEACFQ
+      UDWABILZKZVLBWCKZHOZRWBVNRIEGWCESZWDWBWFVNWABWCETWGWEVMHVLBWCETUEUFVJBCIH
+      UAUBUCVMVTHVSVMDVKFUGZVKFHUOUHVOWHSZVRVSVMWIVPVRWIVPWHFPVKFUIVOWHFUJUKULW
+      IVQVLBEWIVQACWHJVLACVOWHUMAVJCWHVKVHWHMZANVHVKMZVINZANWKVJNWJWLAVHVKFUPUN
+      WKVIAUQURUSUTVAVBVCVDVE $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
              ZF Set Theory - add the Axiom of Power Sets
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
