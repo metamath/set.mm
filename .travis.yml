@@ -15,7 +15,7 @@
 # We report an error if the list of "discouraged" results is unexpected;
 # this makes it easy to detect changes (which can then be specially reviewed).
 # To regenerate the "discouraged" file, you can do:
-#   metamath 'read set.mm' 'set width 9999' 'show discouraged' quit | 
+#   metamath 'read set.mm' 'set width 9999' 'show discouraged' quit |
 #   grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' |
 #   LC_ALL=C sort > discouraged.
 #
@@ -34,18 +34,29 @@ before_install:
   - g++ --version
 install:
   # Get metamath C program and supporting files (to validate against them)
-  - wget -q -r -np -nd -A .c,.h http://us.metamath.org/metamath/
+  # 8/29/18 NM Some mirrors don't allow directory listing
+  # - wget -q -r -np -nd -A .c,.h http://us.metamath.org/metamath/
+  - wget -N -q http://us.metamath.org/downloads/metamath.tar.bz2
   - wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2
   # These are now in the repo:
   # - wget -N -q http://us.metamath.org/mpegif/mmset.html
   # - wget -N -q http://us.metamath.org/mpegif/mmhil.html
   # This will be updated, but we need a starting point:
   - wget -N -q http://us.metamath.org/mpegif/mmbiblio.html
+  ### # 8/29/18 NM bad - overwrites set.mm etc.
+  ### - tar --strip-components=1 -jxf metamath.tar.bz2
+  # 9/2/18 NM extract in a temporary directory to prevent overwriting .mm's
+  - mkdir mmtemp/
+  - cd mmtemp/
+  - tar --strip-components=1 -jxf ../metamath.tar.bz2
+  - mv *.c *.h ..
+  - cd ..
+  # 9/2/18 end
   - tar --strip-components=1 -jxf symbols.tar.bz2
   # Compile metamath, a C verifier (and more) by Norm Megill.
   - gcc *.c -O2 -o metamath
   # Get mmj2, a Java verifier (and more) by Mel O'Cat and Mario Carneiro
-  - wget -N -q http://us2.metamath.org:88/ocat/mmj2/mmj2jar.zip
+  - wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
   - unzip -q mmj2jar.zip
   - printf "LoadFile,set.mm\nVerifyProof,*\nParse,*\nRunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\nRunMacro,showDiscouraged,discouraged.new\n" > RunParms.txt
   - printf "LoadFile,iset.mm\nVerifyProof,*\nParse,*\nRunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\n" > IRunParms.txt
@@ -57,7 +68,7 @@ install:
   - wget -N -q http://us.metamath.org/downloads/checkmm.cpp
   - g++ -O2 -o checkmm checkmm.cpp
 script:
-  - ./metamath 'read set.mm' 'verify proof *' 'write bibliography mmbiblio.html' 'verify markup *' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
+  - ./metamath 'read set.mm' 'verify proof *' 'write bibliography mmbiblio.html' 'verify markup */date_skip' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
   - ./metamath 'read iset.mm' 'verify proof *' 'verify markup *' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
   # Sort "show discouraged" results to ignore benign reordering
   # Regenerate "discouraged" in the same way if you *intend* for this to change
