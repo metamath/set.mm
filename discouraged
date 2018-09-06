@@ -12401,6 +12401,7 @@
 "strfvn" is used by "baseval".
 "strfvn" is used by "ndxarg".
 "strfvn" is used by "ressbas".
+"strfvn" is used by "resvsca".
 "strfvn" is used by "setsnid".
 "strfvn" is used by "str0".
 "stri" is used by "goeqi".
@@ -17049,7 +17050,7 @@ New usage of "stm1ri" is discouraged (2 uses).
 New usage of "sto1i" is discouraged (3 uses).
 New usage of "sto2i" is discouraged (1 uses).
 New usage of "strb" is discouraged (1 uses).
-New usage of "strfvn" is discouraged (5 uses).
+New usage of "strfvn" is discouraged (6 uses).
 New usage of "stri" is discouraged (2 uses).
 New usage of "strlem1" is discouraged (2 uses).
 New usage of "strlem2" is discouraged (4 uses).
