@@ -1379,6 +1379,9 @@
 "ax11indalem" is used by "ax11inda2".
 "ax11indn" is used by "ax11indi".
 "ax11v2-o" is used by "ax11a2-o".
+"ax12lem1" is used by "ax12lem2".
+"ax12lem1" is used by "nfeqf".
+"ax12lem3" is used by "dveeq2".
 "ax12olem1OLD" is used by "ax12olem2OLD".
 "ax12olem1OLD" is used by "ax12olem2OLD7".
 "ax12olem1OLD" is used by "ax12olem2wAUX7".
@@ -13532,6 +13535,8 @@ New usage of "ax11vALT" is discouraged (0 uses).
 New usage of "ax12OLD" is discouraged (0 uses).
 New usage of "ax12bOLD" is discouraged (0 uses).
 New usage of "ax12from12o" is discouraged (0 uses).
+New usage of "ax12lem1" is discouraged (2 uses).
+New usage of "ax12lem3" is discouraged (1 uses).
 New usage of "ax12oOLD" is discouraged (0 uses).
 New usage of "ax12olem1OLD" is discouraged (3 uses).
 New usage of "ax12olem2OLD" is discouraged (1 uses).
@@ -14845,7 +14850,6 @@ New usage of "dvadiaN" is discouraged (1 uses).
 New usage of "dveel2ALT" is discouraged (0 uses).
 New usage of "dveeq1-o" is discouraged (1 uses).
 New usage of "dveeq1-o16" is discouraged (0 uses).
-New usage of "dveeq1ALT" is discouraged (0 uses).
 New usage of "dveeq1OLD" is discouraged (0 uses).
 New usage of "dveeq2-o" is discouraged (4 uses).
 New usage of "dveeq2-o16" is discouraged (0 uses).
@@ -16338,7 +16342,6 @@ New usage of "nfaldOLD" is discouraged (0 uses).
 New usage of "nfanOLD" is discouraged (0 uses).
 New usage of "nfbiOLD" is discouraged (0 uses).
 New usage of "nfbidOLD" is discouraged (0 uses).
-New usage of "nfeqfALT" is discouraged (0 uses).
 New usage of "nfeqfOLD" is discouraged (0 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfexOLD" is discouraged (0 uses).
