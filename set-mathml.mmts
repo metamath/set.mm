@@ -249,6 +249,7 @@ $s class RR*s $: <msubsup href="df-xrs.html"><mo>&Ropf;</mo> <mi>&#x1D460;</mi> 
 $s class "s $: <msub href="df-imas.html"><mo>&ldquo;</mo> <mi>&#x1D460;</mi></msub> $.
 $s class /s $: <msub href="df-divs.html"><mo>/</mo> <mi>&#x1D460;</mi></msub> $.
 $s class Xs. $: <msub href="df-xps.html"><mo>&times;</mo> <mi>&#x1D460;</mi></msub> $.
+$s class |`v $: <msub href="df-resv.html"><mo>&uharr;</mo> <mi>&#x1D463;</mi></msub> $.
 
 $s class *rf $: <msub href="df-staf.html"> <mo>&lowast;</mo> <mi>&#x1D45F;&#x1D453;</mi> </msub> $.
 $s class *Ring $: <mi href="df-srng.html">*-Ring</mi> $.
@@ -297,10 +298,10 @@ $s class curryF $: <msub href="df-curf.html"><mo>curry</mo> <mi>F</mi></msub> $.
 $s class uncurryF $: <msub href="df-uncf.html"><mo>uncurry</mo> <mi>F</mi></msub> $.
 $s class DiagFunc $: <msub href="df-diag.html"><mo>&Delta;</mo> <mi>func</mi></msub> $.
 $s class HomF $: <msub href="df-hof.html"><mo>Hom</mo> <mi>F</mi></msub> $.
+$s class Yon $: <mi href="df-yon.html">Yon</mi> $.
 
 $s class 0. $: <mi href="df-p0.html">0.</mi> $.
 $s class 1. $: <mi href="df-p1.html">1.</mi> $.
-$s class Yon $: <mi href="df-yon.html">Yon</mi> $.
 
 $s class supw $: <msub href="df-spw.html"><mo>sup</mo> <mo>w</mo></msub> $.
 $s class infw $: <msub href="df-nfw.html"><mo>inf</mo> <mo>w</mo></msub> $.
@@ -438,7 +439,6 @@ $s class FuncCat $: <mi href="df-fuc.html">FuncCat</mi> $.
 $s class Arrow $: <mi href="df-arw.html">Arrow</mi> $.
 $s class SetCat $: <mi href="df-setc.html">SetCat</mi> $.
 $s class CatCat $: <mi href="df-catc.html">CatCat</mi> $.
-$s class Yon $: <mi href="df-yon.html">Yon</mi> $.
 $s class Preset $: <mi href="df-preset.html"> Preset </mi> $.
 $s class Dirset $: <mi href="df-drs.html">Dirset</mi> $.
 $s class Poset $: <mi href="df-poset.html">Poset</mi> $.
@@ -454,7 +454,7 @@ $s class ODual $: <mi href="df-odu.html">ODual</mi> $.
 $s class toInc $: <mi href="df-ipo.html">toInc</mi> $.
 $s class DLat $: <mi href="df-dlat.html">DLat</mi> $.
 $s class PosetRel $: <mi href="df-ps.html">PosetRel</mi> $.
-$s class TosetRel $: <mi href="df-tsr.html"> TosetRel </mi> $.
+$s class TosetRel $: <mi href="df-tsr.html">TosetRel</mi> $.
 $s class LatRel $: <mi href="df-lar.html">LatRel</mi> $.
 $s class DirRel $: <mi href="df-dir.html">DirRel</mi> $.
 $s class tail $: <mi href="df-tail.html">tail</mi> $.
@@ -746,12 +746,10 @@ $s class oGrp $: <mi href="df-ogrp.html">oGrp</mi> $.
 $s class oField $: <mi href="df-ofld.html">oField</mi> $.
 $s class <<< $: <mo href="df-inftm.html">&#x22D8;</mo> $.
 $s class Archi $: <mi href="df-archi.html">Archi</mi> $.
-$(
 $s class oMnd $: <mi>oMnd</mi> $.
 $s class oRing $: <mi>oRing</mi> $.
 $s class SRing $: <mi>SRing</mi> $.
 $s class SLMod $: <mi>SLMod</mi> $.
-$)
 
 $( Cannonical embeddings $)
 $s class ZRHom $: <mi href="df-zrh.html">&#8484;RHom</mi> $.
@@ -759,6 +757,7 @@ $s class ZMod $: <mi href="df-zlm.html">&#8484;Mod</mi> $.
 $s class QQHom $: <mi href="df-qqh.html">&Qopf;Hom</mi> $.
 $s class RRHom $: <mi href="df-rrh.html">&Ropf;Hom</mi> $.
 $s class RR*Hom $: <mi href="df-xrh.html"><msup><mi>&Ropf;</mi> <mo>*</mo></msup>Hom</mi> $.
+$s class RRExt $: <mi href="df-rrext.html">&Ropf;Ext</mi> $.
 
 $( Indicator function $)
 $s class _Ind $: <mi href="df-ind.html">&#x1D7D9;</mi> $.
@@ -823,6 +822,10 @@ $s class PathOn $: <mi href="df-pthon.html">PathOn</mi> $.
 $s class Circuits $: <mi href="df-crct.html">Circuits</mi> $.
 $s class Cycles $: <mi href="df-cycl.html">Cycles</mi> $.
 $s class ConnGrph $: <mi href="df-conngra.html">ConnGrph</mi> $.
+$s class WWalks $: <mi href="df-wwlk.html">WWalks</mi> $.
+$s class WWalksN $: <mi href="df-wwlkn.html">WWalksN</mi> $.
+$s class RegGrph $: <mi href="df-rgra.html">RegGrph</mi> $.
+$s class RegUSGrph $: <mi href="df-rusgra.html">RegUSGrph</mi> $.
 
 
 $s class CVecOLD $: <msub href="df-vc.html"><mo>CVec</mo> <mi>OLD</mi></msub> $.

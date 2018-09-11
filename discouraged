@@ -367,7 +367,6 @@
 "4syl" is used by "odcl2".
 "4syl" is used by "oddprm".
 "4syl" is used by "oemapso".
-"4syl" is used by "ofldaddlt".
 "4syl" is used by "oismo".
 "4syl" is used by "ordcmp".
 "4syl" is used by "ordtypelem10".
@@ -402,7 +401,6 @@
 "4syl" is used by "sdclem2".
 "4syl" is used by "sdomsdomcard".
 "4syl" is used by "serf0".
-"4syl" is used by "sitgclbn".
 "4syl" is used by "smoiso".
 "4syl" is used by "srng0".
 "4syl" is used by "ssc2".
@@ -411,7 +409,6 @@
 "4syl" is used by "stoweidlem14".
 "4syl" is used by "subfacp1lem5".
 "4syl" is used by "subgores".
-"4syl" is used by "subofld".
 "4syl" is used by "swrdccat2".
 "4syl" is used by "symgtrinv".
 "4syl" is used by "tmsxms".
@@ -1382,6 +1379,9 @@
 "ax11indalem" is used by "ax11inda2".
 "ax11indn" is used by "ax11indi".
 "ax11v2-o" is used by "ax11a2-o".
+"ax12lem1" is used by "ax12lem2".
+"ax12lem1" is used by "nfeqf".
+"ax12lem3" is used by "dveeq2".
 "ax12olem1OLD" is used by "ax12olem2OLD".
 "ax12olem1OLD" is used by "ax12olem2OLD7".
 "ax12olem1OLD" is used by "ax12olem2wAUX7".
@@ -12653,6 +12653,7 @@
 "strfvn" is used by "baseval".
 "strfvn" is used by "ndxarg".
 "strfvn" is used by "ressbas".
+"strfvn" is used by "resvsca".
 "strfvn" is used by "setsnid".
 "strfvn" is used by "str0".
 "stri" is used by "goeqi".
@@ -13305,7 +13306,7 @@ New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4exdistrOLD" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
 New usage of "4ipval3" is discouraged (0 uses).
-New usage of "4syl" is discouraged (186 uses).
+New usage of "4syl" is discouraged (183 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
 New usage of "5oalem2" is discouraged (2 uses).
@@ -13318,6 +13319,7 @@ New usage of "a16g-o" is discouraged (1 uses).
 New usage of "a16gALT" is discouraged (0 uses).
 New usage of "a16gALTOLD7" is discouraged (0 uses).
 New usage of "a16gOLD" is discouraged (0 uses).
+New usage of "a16nfALT" is discouraged (0 uses).
 New usage of "a1iiALT" is discouraged (0 uses).
 New usage of "a5i-o" is discouraged (5 uses).
 New usage of "a9e2eq" is discouraged (3 uses).
@@ -13403,6 +13405,7 @@ New usage of "adjvalval" is discouraged (1 uses).
 New usage of "aecom-o" is discouraged (4 uses).
 New usage of "aecoms-o" is discouraged (6 uses).
 New usage of "aev-o" is discouraged (1 uses).
+New usage of "aevALT" is discouraged (0 uses).
 New usage of "ajfun" is discouraged (0 uses).
 New usage of "ajfuni" is discouraged (1 uses).
 New usage of "ajfval" is discouraged (2 uses).
@@ -13533,6 +13536,8 @@ New usage of "ax11vALT" is discouraged (0 uses).
 New usage of "ax12OLD" is discouraged (0 uses).
 New usage of "ax12bOLD" is discouraged (0 uses).
 New usage of "ax12from12o" is discouraged (0 uses).
+New usage of "ax12lem1" is discouraged (2 uses).
+New usage of "ax12lem3" is discouraged (1 uses).
 New usage of "ax12oOLD" is discouraged (0 uses).
 New usage of "ax12olem1OLD" is discouraged (3 uses).
 New usage of "ax12olem2OLD" is discouraged (1 uses).
@@ -14834,6 +14839,7 @@ New usage of "dochpolN" is discouraged (0 uses).
 New usage of "dochsordN" is discouraged (0 uses).
 New usage of "dochspocN" is discouraged (0 uses).
 New usage of "dral1-o" is discouraged (4 uses).
+New usage of "dral1ALT" is discouraged (0 uses).
 New usage of "dral1OLD" is discouraged (0 uses).
 New usage of "dral2-o" is discouraged (4 uses).
 New usage of "dral2OLD" is discouraged (0 uses).
@@ -14848,6 +14854,7 @@ New usage of "dveeq1-o16" is discouraged (0 uses).
 New usage of "dveeq1OLD" is discouraged (0 uses).
 New usage of "dveeq2-o" is discouraged (4 uses).
 New usage of "dveeq2-o16" is discouraged (0 uses).
+New usage of "dveeq2ALT" is discouraged (0 uses).
 New usage of "dveeq2OLD" is discouraged (2 uses).
 New usage of "dvelimALT" is discouraged (1 uses).
 New usage of "dvelimALTNEW7" is discouraged (0 uses).
@@ -17366,7 +17373,7 @@ New usage of "stm1ri" is discouraged (2 uses).
 New usage of "sto1i" is discouraged (3 uses).
 New usage of "sto2i" is discouraged (1 uses).
 New usage of "strb" is discouraged (1 uses).
-New usage of "strfvn" is discouraged (5 uses).
+New usage of "strfvn" is discouraged (6 uses).
 New usage of "stri" is discouraged (2 uses).
 New usage of "strlem1" is discouraged (2 uses).
 New usage of "strlem2" is discouraged (4 uses).
