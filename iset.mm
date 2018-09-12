@@ -1,7 +1,8 @@
-$( iset.mm - Version of 17-Jul-2018
+$( iset.mm - Version of 2-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
-set.mm
+set.mm (with updates since then, including copying entire theorems
+and sections from set.mm).
 
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
          Metamath source file for intuitionistic logic and set theory
@@ -17,22 +18,27 @@ NM  Norman Megill - http://us.metamath.org/email.html
 
 Contributor list:
 
-DA  David Abernethy      DH  David Harvey           MO  Mel L. O'Cat
-SA  Stefan Allan         JH  Jeff Hoffman           SO  Stefan O'Rear
-JA  Juha Arpiainen       SJ  Szymon Jaroszewicz     JO  Jason Orendorff
-JBN Jonathan Ben-Naim    WL  Wolf Lammen            JP  Josh Purinton
-GB  Gregory Bush         GL  Gerard Lang            SR  Steve Rodriguez
-MC  Mario Carneiro       RL  Raph Levien            ATS Andrew Salmon
-PC  Paul Chapman         FL  Frederic Line          AS  Alan Sare
-SF  Scott Fenton         RFL Roy F. Longton         ES  Eric Schmidt
-JGH Jeffrey Hankins      JM  Jeff Madsen            DAW David A. Wheeler
-AH  Anthony Hart         RM  Rodolfo Medina         GD  Georgy Dunaev
+DA  David Abernethy      JH  Jeff Hoffman          SO  Stefan O'Rear
+SA  Stefan Allan         SJ  Szymon Jaroszewicz    JO  Jason Orendorff
+TA  Thierry Arnoux       BJ  Benoit Jubin          JP  Josh Purinton
+JA  Juha Arpiainen       JK  Jim Kingdon           SR  Steve Rodriguez
+JB  Jonathan Ben-Naim    WL  Wolf Lammen           ATS Andrew Salmon
+GB  Gregory Bush         GL  Gerard Lang           AS  Alan Sare
+MC  Mario Carneiro       BL  Brendan Leahy         ES  Eric Schmidt
+PC  Paul Chapman         RL  Raph Levien           GS  Glauco Siliprandi
+DF  Drahflow             FL  Frederic Line         SS  Saveliy Skresanov
+GD  Georgy Dunaev        RFL Roy F. Longton        JU  Jarvin Udandy
+SF  Scott Fenton         JM  Jeff Madsen           AV  Alexander van der Vekens
+JGH Jeffrey Hankins      RM  Rodolfo Medina        DAW David A. Wheeler
+AH  Anthony Hart         NM  Norman Megill         JY  Jonathan Yan
+DH  David Harvey         MO  Mel L. O'Cat          FZ  Fan Zheng
+CH  Chen-Pang He         MM  Mykola Mostovenko
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                           Contents of this header
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-1. Recent label changes
+1. Naming
 2. Quick "How To"
 3. Bibliography
 4. Metamath syntax summary
@@ -40,49 +46,21 @@ AH  Anthony Hart         RM  Rodolfo Medina         GD  Georgy Dunaev
 6. Acceptable shorter proofs
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                          1. Recent label changes
+                                1. Naming
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-This is part of an ongoing project to improve naming consistency.  If you have
-suggestions for better names, let me know.
+Theorems which are the same as in set.mm should be named the same (that is,
+where the statement of the theorem is the same; the proof can differ without
+a new name being called for).  Theorems which are different should be named
+differently.  A biconditional in set.mm which is an implication in iset.mm
+should have a "r" (for the reverse direction), or "i"/"im" (for the forward
+direction) appended.  A theorem in set.mm which has a decidability condition
+added should add "dc" to the theorem name.  A theorem in set.mm where
+"nonempty class" is changed to "inhabited class" should add "m" (for member)
+to the theorem name.
 
-If you are keeping proofs outside the master version of this file, you can
-make global substitutions into your local version by processing the
-ones WITHOUT "Notes" in _reverse_ order.  The ones WITH "Notes" may have to be
-processed manually.
-
-DONE:
-Date      Old       New         Notes
-9-Jul-18  a4ime     spimeh
-9-Jul-18  a4im      spimh
-9-Jul-18  a4imt     spimth
-9-Jul-18  a4i       spi
-23-May-18 sb8eu     sb8euh
-23-May-18 sb8e      sb8eh
-23-May-18 sb8       sb8h
-10-May-18 sbf       sbh
-9-May-18  sbied     sbiedh
-6-May-18  alrimi    alrimih
-6-May-18  cbvex     cbvexh
-6-May-18  cbval     cbvalh
-6-May-18  sbco2     sbco2h
-6-May-18  sbie      sbieh
-6-May-18  cbv3      cbv3h
-17-Apr-18 con1bidc  con1biimdc
-10-Feb-18 ax-6      hbn1
-10-Feb-18 hbn1OLD   hbn1
-10-Feb-18 a6e       ---         deleted; use sp, 19.9, and nfa1
-10-Feb-18 ax-9o     ax9o
-10-Feb-18 ax6o      ---         deleted; this was unused
-10-Feb-18 ax-6o     ---         deleted; this was unused
-10-Feb-18 ax6       ---         deleted; never was intuitionistic
-10-Feb-18 modal-b   ---         deleted; never was intuitionistic
-10-Feb-18 ax9       ---         deleted; never was intuitionistic
-10-Feb-18 ax-i11e   ax11e
-21-Dec-17 equid1    equid
-28-Jan-15 strssd    [--same--]  moved from NM's mathbox to main set.mm
-(older changes in set.mm than the above have already been applied to iset.mm;
-newer changes in set.mm might be worth applying here)
+As with set.mm, we welcome suggestions for better names (such as names which
+are more consistent with naming conventions).
 
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -1250,8 +1228,8 @@ $)
       ( com52l ) CDEABFABCDEFGHH $.
   $}
 
-  $( Elimination of a nested antecedent as a kind of reversal of inference
-     ~ ja .  (Contributed by Wolf Lammen, 9-May-2013.) $)
+  $( Elimination of a nested antecedent.  (Contributed by Wolf Lammen,
+     9-May-2013.) $)
   jarr $p |- ( ( ( ph -> ps ) -> ch ) -> ( ps -> ch ) ) $=
     ( wi ax-1 imim1i ) BABDCBAEF $.
 
@@ -3353,6 +3331,12 @@ $)
     pm4.71rd.1 $e |- ( ph -> ( ps -> ch ) ) $.
     $( Deduction converting an implication to a biconditional with
        conjunction.  Deduction from Theorem *4.71 of [WhiteheadRussell]
+       p. 120.  (Contributed by Mario Carneiro, 25-Dec-2016.) $)
+    pm4.71d $p |- ( ph -> ( ps <-> ( ps /\ ch ) ) ) $=
+      ( wi wa wb pm4.71 sylib ) ABCEBBCFGDBCHI $.
+
+    $( Deduction converting an implication to a biconditional with
+       conjunction.  Deduction from Theorem *4.71 of [WhiteheadRussell]
        p. 120.  (Contributed by NM, 10-Feb-2005.) $)
     pm4.71rd $p |- ( ph -> ( ps <-> ( ch /\ ps ) ) ) $=
       ( wi wa wb pm4.71r sylib ) ABCEBCBFGDBCHI $.
@@ -4469,9 +4453,10 @@ $)
   ax-in2 $a |- ( -. ph -> ( ph -> ps ) ) $.
 
   $( Reductio ad absurdum.  Theorem *2.01 of [WhiteheadRussell] p. 100.  This
-     is valid intuitionistically (in the terminology of [Bauer] p. 482 it is a
-     proof of negation not a proof by contradiction); compare with ~ pm2.18
-     which is not.  (Contributed by Mario Carneiro, 12-May-2015.) $)
+     is valid intuitionistically (in the terminology of Section 1.2 of [Bauer]
+     p. 482 it is a proof of negation not a proof by contradiction); compare
+     with ~ pm2.18dc which only holds for some propositions.  (Contributed by
+     Mario Carneiro, 12-May-2015.) $)
   pm2.01 $p |- ( ( ph -> -. ph ) -> -. ph ) $=
     ( ax-in1 ) AB $.
 
@@ -4571,9 +4556,9 @@ $)
   $}
 
   $( Adding double negation.  Theorem *2.12 of [WhiteheadRussell] p. 101.  This
-     one holds intuitionistically, but its converse, ~ notnot2 , does not.
-     (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen,
-     2-Mar-2013.) $)
+     one holds intuitionistically, but its converse does not (see
+     ~ notnot2dc ).  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
+     Lammen, 2-Mar-2013.) $)
   notnot1 $p |- ( ph -> -. -. ph ) $=
     ( wn id con2i ) ABZAECD $.
 
@@ -4607,6 +4592,14 @@ $)
        3-Jun-2011.) $)
     con3and $p |- ( ( ph /\ -. ch ) -> -. ps ) $=
       ( wn con3d imp ) ACEBEABCDFG $.
+  $}
+
+  ${
+    pm2.01da.1 $e |- ( ( ph /\ ps ) -> -. ps ) $.
+    $( Deduction based on reductio ad absurdum.  (Contributed by Mario
+       Carneiro, 9-Feb-2017.) $)
+    pm2.01da $p |- ( ph -> -. ps ) $=
+      ( wn ex pm2.01d ) ABABBDCEF $.
   $}
 
   $( In classical logic, this is just a restatement of ~ pm3.2 .  In
@@ -4738,9 +4731,8 @@ $)
   expt $p |- ( ( -. ( ph -> -. ps ) -> ch ) -> ( ph -> ( ps -> ch ) ) ) $=
     ( wn wi pm3.2im imim1d com12 ) AABDEDZCEBCEABICABFGH $.
 
-  $( Elimination of a nested antecedent.  Although it is a kind of reversal of
-     inference ~ ja it holds intuitionistically, while ~ ja does not.
-     (Contributed by Wolf Lammen, 10-May-2013.) $)
+  $( Elimination of a nested antecedent.  (Contributed by Wolf Lammen,
+     10-May-2013.) $)
   jarl $p |- ( ( ( ph -> ps ) -> ch ) -> ( -. ph -> ch ) ) $=
     ( wn wi pm2.21 imim1i ) ADABECABFG $.
 
@@ -4748,10 +4740,10 @@ $)
      Proofs, such as this one, which assume a proposition, here ` ph ` , derive
      a contradiction, and therefore conclude ` -. ph ` , are valid
      intuitionistically (and can be called "proof of negation", for example by
-     [Bauer] p. 482).  By contrast, proofs which assume ` -. ph ` , derive a
-     contradiction, and conclude ` ph ` , such as ~ condandc , are only valid
-     for decidable propositions.  (Contributed by NM, 5-Aug-1993.)  (Proof
-     shortened by Wolf Lammen, 8-Mar-2013.) $)
+     Section 1.2 of [Bauer] p. 482).  By contrast, proofs which assume
+     ` -. ph ` , derive a contradiction, and conclude ` ph ` , such as
+     ~ condandc , are only valid for decidable propositions.  (Contributed by
+     NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen, 8-Mar-2013.) $)
   pm2.65 $p |- ( ( ph -> ps ) -> ( ( ph -> -. ps ) -> -. ph ) ) $=
     ( wi wn pm2.27 con2d a2i ) ABCAABDZCZABIDAIBAHEFGF $.
 
@@ -5096,6 +5088,10 @@ $)
   pm3.24 $p |- -. ( ph /\ -. ph ) $=
     ( wn wi wa notnot1 imnan mpbi ) AABZBCAHDBAEAHFG $.
 
+  $( Triple negation.  (Contributed by Jim Kingdon, 28-Jul-2018.) $)
+  notnotnot $p |- ( -. -. -. ph <-> -. ph ) $=
+    ( wn notnot1 con3i impbii ) ABZBZBFAGACDFCE $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Logical disjunction
@@ -5173,7 +5169,7 @@ $)
   $}
 
   $( Theorem *2.53 of [WhiteheadRussell] p. 107.  This holds
-     intuitionistically, although its converse, ~ pm2.54 , does not.
+     intuitionistically, although its converse does not (see ~ pm2.54dc ).
      (Contributed by NM, 3-Jan-2005.)  (Revised by NM, 31-Jan-2015.) $)
   pm2.53 $p |- ( ( ph \/ ps ) -> ( -. ph -> ps ) ) $=
     ( wn wi pm2.24 ax-1 jaoi ) AACZBDBABEBHFG $.
@@ -5350,20 +5346,22 @@ $)
   $}
 
   $( Negated disjunction in terms of conjunction.  This version of DeMorgan's
-     law holds for all propositions (not just decidable ones), unlike ~ oran ,
-     ~ anordc , or ~ ianordc .  Compare Theorem *4.56 of [WhiteheadRussell]
-     p. 120.  (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
-     31-Jan-2015.) $)
+     law is a biconditional for all propositions (not just decidable ones),
+     unlike ~ oranim , ~ anordc , or ~ ianordc .  Compare Theorem *4.56 of
+     [WhiteheadRussell] p. 120.  (Contributed by NM, 5-Aug-1993.)  (Revised by
+     Mario Carneiro, 31-Jan-2015.) $)
   ioran $p |- ( -. ( ph \/ ps ) <-> ( -. ph /\ -. ps ) ) $=
     ( wo wn wa pm2.45 pm2.46 jca simpl con2i simpr jaoi impbii ) ABCZDZADZBDZEZ
     OPQABFABGHNRARDBRAPQIJRBPQKJLJM $.
 
-  $( Theorem *3.14 of [WhiteheadRussell] p. 111.  (Contributed by NM,
+  $( Theorem *3.14 of [WhiteheadRussell] p. 111.  The converse holds for
+     decidable propositions, as seen at ~ pm3.13dc .  (Contributed by NM,
      3-Jan-2005.)  (Revised by Mario Carneiro, 31-Jan-2015.) $)
   pm3.14 $p |- ( ( -. ph \/ -. ps ) -> -. ( ph /\ ps ) ) $=
     ( wn wa simpl con3i simpr jaoi ) ACABDZCBCIAABEFIBABGFH $.
 
-  $( Theorem *3.1 of [WhiteheadRussell] p. 111.  (Contributed by NM,
+  $( Theorem *3.1 of [WhiteheadRussell] p. 111.  The converse holds for
+     decidable propositions, as seen at ~ anordc .  (Contributed by NM,
      3-Jan-2005.)  (Revised by Mario Carneiro, 31-Jan-2015.) $)
   pm3.1 $p |- ( ( ph /\ ps ) -> -. ( -. ph \/ -. ps ) ) $=
     ( wn wo wa pm3.14 con2i ) ACBCDABEABFG $.
@@ -5611,6 +5609,13 @@ $)
        by NM, 14-Oct-2005.) $)
     jaodan $p |- ( ( ph /\ ( ps \/ th ) ) -> ch ) $=
       ( wo ex jaod imp ) ABDGCABCDABCEHADCFHIJ $.
+
+    jaodan.3 $e |- ( ph -> ( ps \/ th ) ) $.
+    $( Eliminate a disjunction in a deduction.  A translation of natural
+       deduction rule ` \/ ` E ( ` \/ ` elimination).  (Contributed by Mario
+       Carneiro, 29-May-2016.) $)
+    mpjaodan $p |- ( ph -> ch ) $=
+      ( wo jaodan mpdan ) ABDHCGABCDEFIJ $.
   $}
 
   $( Theorem *4.77 of [WhiteheadRussell] p. 121.  (Contributed by NM,
@@ -5786,6 +5791,53 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Stable propositions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+  $( Declare connective for stability. $)
+  $c STABLE $.
+
+  $( Extend wff definition to include stability. $)
+  wstable $a wff STABLE ph $.
+
+  $( Propositions where a double-negative can be removed are called stable.
+     See Chapter 2 [Moschovakis] p. 2.
+
+     Our notation for stability is a connective ` STABLE ` which we place
+     before the formula in question.  For example, ` STABLE x = y ` corresponds
+     to "x = y is stable".
+
+     (Contributed by David A. Wheeler, 13-Aug-2018.) $)
+  df-stable $a |- ( STABLE ph <-> ( -. -. ph -> ph ) ) $.
+
+  $( Every formula of the form ` -. ph ` is stable.  Uses ~ notnotnot .
+     (Contributed by David A. Wheeler, 13-Aug-2018.) $)
+  stablenot $p |- STABLE -. ph $=
+    ( wn wstable wi notnotnot biimpi df-stable mpbir ) ABZCIBBZIDJIAEFIGH $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Testable propositions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+  $( Declare connective for testability. $)
+  $c TESTABLE $.
+
+  $( Extend wff definition to include stability. $)
+  wtestable $a wff TESTABLE ph $.
+
+  $( Propositions where its negative or double-negative is true are called
+     testable.  See Chapter 2 [Moschovakis] p. 2.
+
+     Our notation for testability is a connective ` TESTABLE ` which we place
+     before the formula in question.  For example, ` TESTABLE x = y `
+     corresponds to "x = y is testable".
+
+     (Contributed by David A. Wheeler, 13-Aug-2018.) $)
+  df-testable $a |- ( TESTABLE ph <-> ( -. ph \/ -. -. ph ) ) $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Decidable propositions
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -5804,7 +5856,14 @@ $)
 
      Our notation for decidability is a connective ` DECID ` which we place
      before the formula in question.  For example, ` DECID x = y ` corresponds
-     to "x = y is decidable".  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
+     to "x = y is decidable".
+
+     We could transform intuitionistic logic to classical logic by adding
+     unconditional forms of ~ condc , ~ exmiddc , ~ peircedc , or ~ notnot2dc ,
+     any of which would correspond to the assertion that all propositions are
+     decidable.
+
+     (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   df-dc $a |- ( DECID ph <-> ( ph \/ -. ph ) ) $.
 
   $( Law of excluded middle, for a decidable proposition.  The law of the
@@ -5854,8 +5913,20 @@ $(
    This section is focused on such proofs, given decidability conditions.
 $)
 
-  $( Contraposition of a decidable proposition.  (Contributed by Jim Kingdon,
-     13-Mar-2018.) $)
+  $( Contraposition of a decidable proposition.
+
+     This theorem swaps or "transposes" the order of the consequents when
+     negation is removed.  An informal example is that the statement "if there
+     are no clouds in the sky, it is not raining" implies the statement "if it
+     is raining, there are clouds in the sky."  This theorem (without the
+     decidability condition, of course) is called _Transp_ or "the principle of
+     transposition" in _Principia Mathematica_ (Theorem *2.17 of
+     [WhiteheadRussell] p. 103) and is Axiom A3 of [Margaris] p. 49.  We will
+     also use the term "contraposition" for this principle, although the reader
+     is advised that in the field of philosophical logic, "contraposition" has
+     a different technical meaning.
+
+     (Contributed by Jim Kingdon, 13-Mar-2018.) $)
   condc $p |- ( DECID ph -> ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) ) $=
     ( wdc wn wo wi df-dc ax-1 a1d pm2.27 ax-in2 syl6 jaoi sylbi ) ACA
     ADZEOBDZFZBAFZFZAGASOARQABHIOQPROPJBAKLMN $.
@@ -5868,11 +5939,33 @@ $)
     ( wdc wn wi pm2.21 a2i condc syl5 pm2.43d ) ABZACZADZALKLCZDJLADKAMAMEFALGH
     I $.
 
-  $( Double negation elimination for a decidable proposition.  (Contributed by
-     Jim Kingdon, 11-Mar-2018.) $)
+  $( Double negation elimination for a decidable proposition.  The converse,
+     ~ notnot1 , holds for all propositions, not just decidable ones.  This is
+     Theorem *2.14 of [WhiteheadRussell] p. 102, but with a decidability
+     condition added.  (Contributed by Jim Kingdon, 11-Mar-2018.) $)
   notnot2dc $p |- ( DECID ph -> ( -. -. ph -> ph ) ) $=
     ( wdc wn wo wi df-dc orcom bitri pm2.53 sylbi ) ABZACZADZLCAEKALD
     MAFALGHLAIJ $.
+
+  $( Decidability implies stability.  The converse is not necessarily true.
+     (Contributed by David A. Wheeler, 13-Aug-2018.) $)
+  dcimpstable $p |- ( DECID ph -> STABLE ph ) $=
+    ( wdc wn wi wstable notnot2dc df-stable sylibr ) ABACCADAEAFAGH $.
+
+  $( Decidability implies testability.  (Contributed by David A. Wheeler,
+     14-Aug-2018.) $)
+  dcimptestable $p |- ( DECID ph -> TESTABLE ph ) $=
+    ( wn wo wdc wtestable notnot1 orim1i orcomd df-dc df-testable 3imtr4i ) AAB
+    ZCZLLBZCADAEMNLANLAFGHAIAJK $.
+
+  $( "Stable and testable" is equivalent to decidable.  (Contributed by David
+     A. Wheeler, 13-Aug-2018.) $)
+  stabletestableimpdc $p |-
+    ( ( STABLE ph /\ TESTABLE ph ) <-> DECID ph ) $=
+    ( wstable wtestable wa wdc wn wo df-testable biimpi adantl df-stable orim2d
+    wi adantr mpd orcomd df-dc sylibr dcimpstable dcimptestable jca impbii ) AB
+    ZACZDZAEZUEAAFZGUFUEUGAUEUGUGFZGZUGAGZUDUIUCUDUIAHIJUCUIUJMUDUCUHAUGUCUHAMA
+    KILNOPAQRUFUCUDASATUAUB $.
 
   $( Contraposition for a decidable proposition.  Based on theorem *2.15 of
      [WhiteheadRussell] p. 102.  (Contributed by Jim Kingdon, 29-Mar-2018.) $)
@@ -5973,9 +6066,10 @@ $)
   con34bdc $p |- ( DECID ps -> ( ( ph -> ps ) <-> ( -. ps -> -. ph ) ) ) $=
     ( wdc wi wn con3 condc impbid2 ) BCABDBEAEDABFBAGH $.
 
-  $( Double negation equivalence for a decidable proposition.  Like theorem
+  $( Double negation equivalence for a decidable proposition.  Like Theorem
      *4.13 of [WhiteheadRussell] p. 117, but with a decidability antecendent.
-     (Contributed by Jim Kingdon, 13-Mar-2018.) $)
+     The forward direction, ~ notnot1 , holds for all propositions, not just
+     decidable ones.  (Contributed by Jim Kingdon, 13-Mar-2018.) $)
   notnotdc $p |- ( DECID ph -> ( ph <-> -. -. ph ) ) $=
     ( wdc wn notnot1 notnot2dc impbid2 ) ABAACCADAEF $.
 
@@ -6103,11 +6197,17 @@ $)
       ( -. ( -. ph -> -. ps ) <-> ( -. ph /\ ps ) ) ) ) $=
     ( wdc wn wi wa wb dcn pm4.63dc syl ) ACADZCBCKBDEDKBFGEAHKBIJ $.
 
-  $( Express conjunction in terms of implication.  The biconditionalized
-     version of this theorem, ~ annim , is not valid intuitionistically.
-     (Contributed by Jim Kingdon, 24-Dec-2017.) $)
+  $( Express conjunction in terms of implication.  One direction of Theorem
+     *4.61 of [WhiteheadRussell] p. 120.  The converse holds for decidable
+     propositions, as can be seen at ~ annimdc .  (Contributed by Jim Kingdon,
+     24-Dec-2017.) $)
   annimim $p |- ( ( ph /\ -. ps ) -> -. ( ph -> ps ) ) $=
     ( wn wi pm2.27 con3 syl imp ) ABCZABDZCZAJBDIKDABEJBFGH $.
+
+  $( One direction of Theorem *4.65 of [WhiteheadRussell] p. 120.  The converse
+     holds in classical logic.  (Contributed by Jim Kingdon, 28-Jul-2018.) $)
+  pm4.65r $p |- ( ( -. ph /\ -. ps ) -> -. ( -. ph -> ps ) ) $=
+    ( wn annimim ) ACBD $.
 
   $( An implication between two decidable propositions is decidable.
      (Contributed by Jim Kingdon, 28-Mar-2018.) $)
@@ -6158,8 +6258,9 @@ $)
     ADZCZQBEABFZEAGPQBSPQDZSERPTASAHABIJKBSEPBALMNO $.
 
   $( Definition of 'or' in terms of negation and implication for a decidable
-     proposition.  Based on definition of [Margaris] p. 49.  (Contributed by
-     Jim Kingdon, 26-Mar-2018.) $)
+     proposition.  Based on definition of [Margaris] p. 49.  One direction,
+     ~ pm2.53 , holds for all propositions, not just decidable ones.
+     (Contributed by Jim Kingdon, 26-Mar-2018.) $)
   dfordc $p |- ( DECID ph -> ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) ) $=
     ( wdc wo wn wi pm2.53 pm2.54dc impbid2 ) ACABDAEBFABGABHI $.
 
@@ -6189,11 +6290,18 @@ $)
     CFFKLNABCGHMACIJ $.
 
   $( Implication in terms of disjunction for a decidable proposition.  Based on
-     theorem *4.6 of [WhiteheadRussell] p. 120.  (Contributed by Jim Kingdon,
+     theorem *4.6 of [WhiteheadRussell] p. 120.  The reverse direction,
+     ~ imorr , holds for all propositions.  (Contributed by Jim Kingdon,
      20-Apr-2018.) $)
   imordc $p |- ( DECID ph -> ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) ) $=
     ( wdc wi wn wo notnotdc imbi1d wb dcn dfordc syl bitr4d ) ACZABDA
     EZEZBDZOBFZNAPBAGHNOCRQIAJOBKLM $.
+
+  $( Implication in terms of disjunction.  One direction of theorem *4.6 of
+     [WhiteheadRussell] p. 120.  The converse holds for decidable propositions,
+     as seen at ~ imordc .  (Contributed by Jim Kingdon, 21-Jul-2018.) $)
+  imorr $p |- ( ( -. ph \/ ps ) -> ( ph -> ps ) ) $=
+    ( wn wi ax-in2 ax-1 jaoi ) ACABDBABEBAFG $.
 
   $( Implication in terms of disjunction.  Like Theorem *4.62 of
      [WhiteheadRussell] p. 120, but for a decidable antecedent.  (Contributed
@@ -6226,6 +6334,18 @@ $)
   pm4.66dc $p |- ( DECID ph -> ( ( -. ph -> -. ps ) <-> ( ph \/ -. ps ) ) ) $=
     ( wn pm4.64dc ) ABCD $.
 
+  $( One direction of theorem *4.52 of [WhiteheadRussell] p. 120.  The converse
+     also holds in classical logic.  (Contributed by Jim Kingdon,
+     27-Jul-2018.) $)
+  pm4.52im $p |- ( ( ph /\ -. ps ) -> -. ( -. ph \/ ps ) ) $=
+    ( wn wa wi wo annimim imorr nsyl ) ABCDABEACBFABGABHI $.
+
+  $( One direction of theorem *4.53 of [WhiteheadRussell] p. 120.  The converse
+     also holds in classical logic.  (Contributed by Jim Kingdon,
+     27-Jul-2018.) $)
+  pm4.53r $p |- ( ( -. ph \/ ps ) -> -. ( ph /\ -. ps ) ) $=
+    ( wn wa wo pm4.52im con2i ) ABCDACBEABFG $.
+
   $( Theorem *4.54 of [WhiteheadRussell] p. 120, for decidable propositions.
      One form of DeMorgan's law.  (Contributed by Jim Kingdon, 2-May-2018.) $)
   pm4.54dc $p |- ( DECID ph -> ( DECID ps ->
@@ -6239,10 +6359,16 @@ $)
   pm4.56 $p |- ( ( -. ph /\ -. ps ) <-> -. ( ph \/ ps ) ) $=
     ( wo wn wa ioran bicomi ) ABCDADBDEABFG $.
 
-  $( Implication distributes over disjunction.  We do not have an
-     intuitionistic proof of the converse, but both directions hold classically
-     as can be seen at ~ pm4.78 .  (Contributed by Jim Kingdon,
-     15-Jan-2018.) $)
+  $( Disjunction in terms of conjunction (DeMorgan's law).  One direction of
+     Theorem *4.57 of [WhiteheadRussell] p. 120.  The converse does not hold
+     intuitionistically but does hold in classical logic.  (Contributed by Jim
+     Kingdon, 25-Jul-2018.) $)
+  oranim $p |- ( ( ph \/ ps ) -> -. ( -. ph /\ -. ps ) ) $=
+    ( wn wa wo pm4.56 biimpi con2i ) ACBCDZABEZIJCABFGH $.
+
+  $( Implication distributes over disjunction.  One direction of Theorem *4.78
+     of [WhiteheadRussell] p. 121.  The converse holds in classical logic.
+     (Contributed by Jim Kingdon, 15-Jan-2018.) $)
   pm4.78i $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) ->
        ( ph -> ( ps \/ ch ) ) ) $=
     ( wi wo orc imim2i olc jaoi ) ABDABCEZDACDBJABCFGCJACBHGI $.
@@ -6387,14 +6513,21 @@ $)
        13-May-1999.) $)
     baib $p |- ( ps -> ( ph <-> ch ) ) $=
       ( wa ibar syl6rbbr ) BCBCEABCFDG $.
-  $}
 
-  ${
-    baibr.1 $e |- ( ph <-> ( ps /\ ch ) ) $.
     $( Move conjunction outside of biconditional.  (Contributed by NM,
        11-Jul-1994.) $)
     baibr $p |- ( ps -> ( ch <-> ph ) ) $=
       ( baib bicomd ) BACABCDEF $.
+
+    $( Move conjunction outside of biconditional.  (Contributed by Mario
+       Carneiro, 11-Sep-2015.) $)
+    rbaib $p |- ( ch -> ( ph <-> ps ) ) $=
+      ( wa ancom bitri baib ) ACBABCECBEDBCFGH $.
+
+    $( Move conjunction outside of biconditional.  (Contributed by Mario
+       Carneiro, 11-Sep-2015.) $)
+    rbaibr $p |- ( ch -> ( ps <-> ph ) ) $=
+      ( wa ancom bitri baibr ) ACBABCECBEDBCFGH $.
   $}
 
   $( Theorem *5.44 of [WhiteheadRussell] p. 125.  (Contributed by NM,
@@ -6404,12 +6537,21 @@ $)
     ( wa wi jcab baibr ) ABCDEABEACEABCFG $.
 
   $( Conjunction in antecedent versus disjunction in consequent, for a
-     decidable proposition.  Based on theorem *5.6 of [WhiteheadRussell]
-     p. 125.  (Contributed by Jim Kingdon, 2-Apr-2018.) $)
+     decidable proposition.  Theorem *5.6 of [WhiteheadRussell] p. 125, with
+     decidability condition added.  The reverse implication holds for all
+     propositions (see ~ pm5.6r ).  (Contributed by Jim Kingdon,
+     2-Apr-2018.) $)
   pm5.6dc $p |- ( DECID ps ->
         ( ( ( ph /\ -. ps ) -> ch ) <-> ( ph -> ( ps \/ ch ) ) ) ) $=
     ( wdc wo wi wn wa dfordc imbi2d impexp syl6rbbr ) BDZABCEZFABGZCF
     ZFAOHCFMNPABCIJAOCKL $.
+
+  $( Conjunction in antecedent versus disjunction in consequent.  One direction
+     of Theorem *5.6 of [WhiteheadRussell] p. 125.  If ` ps ` is decidable, the
+     converse also holds (see ~ pm5.6dc ).  (Contributed by Jim Kingdon,
+     4-Aug-2018.) $)
+  pm5.6r $p |- ( ( ph -> ( ps \/ ch ) ) -> ( ( ph /\ -. ps ) -> ch ) ) $=
+    ( wo wi wn pm2.53 imim2i imp3a ) ABCDZEABFZCJKCEABCGHI $.
 
   ${
     orcanai.1 $e |- ( ph -> ( ps \/ ch ) ) $.
@@ -6774,6 +6916,11 @@ $)
     niabn $p |- ( -. ps -> ( ( ch /\ ps ) <-> -. ph ) ) $=
       ( wa wn simpr pm2.24i pm5.21ni ) CBEBAFCBGABDHI $.
   $}
+
+  $( One direction of Theorem *4.42 of [WhiteheadRussell] p. 119.  (Contributed
+     by Jim Kingdon, 4-Aug-2018.) $)
+  pm4.42r $p |- ( ( ( ph /\ ps ) \/ ( ph /\ -. ps ) ) -> ph ) $=
+    ( wa wn ax-ia1 jaoi ) ABCAABDZCABEAGEF $.
 
   ${
     ninba.1 $e |- ph $.
@@ -7663,6 +7810,24 @@ $)
   $( Introduction in triple disjunction.  (Contributed by NM, 4-Apr-1995.) $)
   3mix3 $p |- ( ph -> ( ps \/ ch \/ ph ) ) $=
     ( w3o 3mix1 3orrot sylib ) AABCDBCADABCEABCFG $.
+
+  ${
+    3mixi.1 $e |- ph $.
+    $( Introduction in triple disjunction.  (Contributed by Mario Carneiro,
+       6-Oct-2014.) $)
+    3mix1i $p |- ( ph \/ ps \/ ch ) $=
+      ( w3o 3mix1 ax-mp ) AABCEDABCFG $.
+
+    $( Introduction in triple disjunction.  (Contributed by Mario Carneiro,
+       6-Oct-2014.) $)
+    3mix2i $p |- ( ps \/ ph \/ ch ) $=
+      ( w3o 3mix2 ax-mp ) ABACEDABCFG $.
+
+    $( Introduction in triple disjunction.  (Contributed by Mario Carneiro,
+       6-Oct-2014.) $)
+    3mix3i $p |- ( ps \/ ch \/ ph ) $=
+      ( w3o 3mix3 ax-mp ) ABCAEDABCFG $.
+  $}
 
   ${
     3pm3.2i.1 $e |- ph $.
@@ -9046,6 +9211,15 @@ $)
       ( wfal wi wn ex dfnot sylibr ) ABDEBFABDCGBHI $.
   $}
 
+  ${
+    pm2.21fal.1 $e |- ( ph -> ps ) $.
+    pm2.21fal.2 $e |- ( ph -> -. ps ) $.
+    $( If a wff and its negation are provable, then falsum is provable.
+       (Contributed by Mario Carneiro, 9-Feb-2017.) $)
+    pm2.21fal $p |- ( ph -> F. ) $=
+      ( wfal pm2.21dd ) ABECDF $.
+  $}
+
   $( Negation inferred from embedded conjunct.  (Contributed by NM,
      20-Aug-1993.)  (Proof rewritten by Jim Kingdon, 4-May-2018.) $)
   pclem6 $p |- ( ( ph <-> ( ps /\ -. ph ) ) -> -. ps ) $=
@@ -9088,8 +9262,8 @@ $)
     FUDABGUFTUBHUGUAUHUCUAATEZFUIUAFUAUGUAUIIUIUAAJKABTLPABMNOUAUCIUAUEUCBTQRO
     $.
 
-  $( A consequence of exclusive or.  In classical logic this would be an
-     equivalence.  (Contributed by Jim Kingdon, 8-Mar-2018.) $)
+  $( A consequence of exclusive or.  In classical logic the converse also
+     holds.  (Contributed by Jim Kingdon, 8-Mar-2018.) $)
   xorbin $p  |- ( ( ph \/_ ps ) -> ( ph <-> -. ps ) ) $=
     ( wn wo wa wi df-xor imnan biimpri adantl sylbi pm2.53 orcoms adantr impbid
     wxo ) ABPZABCZQABDZABECZEZARFZABGZTUBSUBTABHIJKQUARAFZUCSUDTBAUDBALMNKO $.
@@ -9188,7 +9362,7 @@ $)
     HDZUFUJDZUNUOFUEURUFUCUDURABLMNUEUFOZUCUDUFUSUCUFUIDZUDUSACLZBUILPQUHCUJIRS
     UGUFUDVAULUKFUTUCUDUFTUCUFVAUDUCUFVAVBMUACBUIIRUB $.
 
-  $( An alternate definition of the biconditional for decicable propositions.
+  $( An alternate definition of the biconditional for decidable propositions.
      Theorem *5.23 of [WhiteheadRussell] p. 124, but with decidability
      conditions.  (Contributed by Jim Kingdon, 5-May-2018.) $)
   dfbi3dc $p |- ( DECID ph -> ( DECID ps ->
@@ -9832,7 +10006,7 @@ $)
     alrimih.1 $e |- ( ph -> A. x ph ) $.
     alrimih.2 $e |- ( ph -> ps ) $.
     $( Inference from Theorem 19.21 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
+       5-Aug-1993.)  (New usage is discouraged.) $)
     alrimih $p |- ( ph -> A. x ps ) $=
       ( wal alimi syl ) AACFBCFDABCEGH $.
   $}
@@ -10038,23 +10212,23 @@ $)
     ( ax-ie2 ) ABCD $.
 
   ${
-    19.23.1 $e |- ( ps -> A. x ps ) $.
+    19.23h.1 $e |- ( ps -> A. x ps ) $.
     $( Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
        (Revised by Mario Carneiro, 1-Feb-2015.) $)
-    19.23 $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
+    19.23h $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
       ( wal wi wex wb ax-gen 19.23ht ax-mp ) BBCEFZCEABFCEACGBFHLCDIABCJK $.
   $}
 
   $( Theorem 19.7 of [Margaris] p. 89.  To read this intuitionistically, think
      of it as "if ` ph ` can be refuted for all ` x ` , then it is not possible
      to find an ` x ` for which ` ph ` holds" (and likewise for the converse).
-     Comparing this with ~ df-ex illustrates that statements which look similar
-     (to someone used to classical logic) can be different intuitionistically
-     due to different placement of negations.  (Contributed by NM,
-     5-Aug-1993.)  (Revised by NM, 1-Feb-2015.)  (Revised by Mario Carneiro,
-     12-May-2015.) $)
+     Comparing this with ~ dfexdc illustrates that statements which look
+     similar (to someone used to classical logic) can be different
+     intuitionistically due to different placement of negations.  (Contributed
+     by NM, 5-Aug-1993.)  (Revised by NM, 1-Feb-2015.)  (Revised by Mario
+     Carneiro, 12-May-2015.) $)
   alnex $p |- ( A. x -. ph <-> -. E. x ph ) $=
-    ( wfal wi wal wex wn fal pm2.21i 19.23 dfnot albii 3bitr4i ) ACDZBEABFZC
+    ( wfal wi wal wex wn fal pm2.21i 19.23h dfnot albii 3bitr4i ) ACDZBEABFZC
     DAGZBEOGACBCCBEHIJPNBAKLOKM $.
 
   ${
@@ -10066,12 +10240,20 @@ $)
   $}
 
   $( Defining ` E. x ph ` given decidability.  It is common in classical logic
-     to define ` E. x ph ` as ` -. A. x -. ph ` but in intuitionistic logic,
-     that definition only holds under certain conditions.  (Contributed by Jim
-     Kingdon, 15-Mar-2018.) $)
+     to define ` E. x ph ` as ` -. A. x -. ph ` but in intuitionistic logic
+     without a decidability condition, that is only an implication not an
+     equivalence, as seen at ~ exalim .  (Contributed by Jim Kingdon,
+     15-Mar-2018.) $)
   dfexdc $p |- ( DECID E. x ph
                  -> ( E. x ph <-> -. A. x -. ph ) ) $=
     ( wn wal wex wb wdc alnex a1i con2biidc ) ACBDZABEZKLCFLGABHIJ $.
+
+  $( One direction of a classical definition of existential quantification.
+     One direction of Definition of [Margaris] p. 49.  For a decidable
+     proposition, this is an equivalence, as seen as ~ dfexdc .  (Contributed
+     by Jim Kingdon, 29-Jul-2018.) $)
+  exalim $p |- ( E. x ph -> -. A. x -. ph ) $=
+    ( wn wal wex alnex biimpi con2i ) ACBDZABEZIJCABFGH $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -10293,9 +10475,8 @@ $)
      the assertion that particular kinds of statements are decidable (or in
      this case, an assertion similar to decidability).
 
-     This axiom is similar to ~ ax-i12 , but appears to be stronger.  At least
-     for now, we keep them both as distinct axioms, but they serve similar
-     purposes.
+     This axiom implies ~ ax-i12 as can be seen at ~ axi12 .  Whether ax-bnd
+     can be proved from the remaining axioms including ~ ax-i12 is not known.
 
      The reason we call this "bundling" is that a statement without a distinct
      variable constraint "bundles" together two statements, one in which the
@@ -10376,6 +10557,15 @@ $)
   hbequid $p |- ( x = x -> A. y x = x ) $=
     ( cv wceq wal wi wo ax12or ax-8 pm2.43i alimi a1d ax-4 jaoi ax-mp ) BCACZDZ
     BEZRPPDZSBEZFZBEZGZGUAAABHRUAUCRTSQSBQSBAAIJKLZRUAUBUDUABMNNO $.
+
+  $( Proof that ~ ax-i12 follows from ~ ax-bnd .  So that we can track which
+     theorems rely on ~ ax-bnd , proofs should reference ~ ax-i12 rather than
+     this theorem.  (Contributed by Jim Kingdon, 17-Aug-2018.)  (New usage is
+     discouraged).  (Proof modification is discouraged.) $)
+  axi12 $p |- ( A. z z = x \/ ( A. z z = y \/
+                 A. z ( x = y -> A. z x = y ) ) ) $=
+    ( cv wceq wal wi wo ax-bnd sp orim2i ax-mp ) CDZADZECFZMBDZECFZNP
+    EZRCFGCFZAFZHZHOQSHZHABCIUAUBOTSQSAJKKL $.
 
   $( Commutation law for identical variable specifiers.  The antecedent and
      consequent are true when ` x ` and ` y ` are substituted with the same
@@ -10742,17 +10932,31 @@ $)
   $}
 
   ${
-    19.27.1 $e |- ( ps -> A. x ps ) $.
+    19.27h.1 $e |- ( ps -> A. x ps ) $.
     $( Theorem 19.27 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-    19.27 $p |- ( A. x ( ph /\ ps ) <-> ( A. x ph /\ ps ) ) $=
+    19.27h $p |- ( A. x ( ph /\ ps ) <-> ( A. x ph /\ ps ) ) $=
       ( wa wal 19.26 19.3h anbi2i bitri ) ABECFACFZBCFZEKBEABCGLBKBCDHIJ $.
   $}
 
   ${
-    19.28.1 $e |- ( ph -> A. x ph ) $.
+    19.27.1 $e |- F/ x ps $.
+    $( Theorem 19.27 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.27 $p |- ( A. x ( ph /\ ps ) <-> ( A. x ph /\ ps ) ) $=
+      ( wa wal 19.26 19.3 anbi2i bitri ) ABECFACFZBCFZEKBEABCGLBKBCDHIJ $.
+  $}
+
+  ${
+    19.28h.1 $e |- ( ph -> A. x ph ) $.
+    $( Theorem 19.28 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.28h $p |- ( A. x ( ph /\ ps ) <-> ( ph /\ A. x ps ) ) $=
+      ( wa wal 19.26 19.3h anbi1i bitri ) ABECFACFZBCFZEALEABCGKALACDHIJ $.
+  $}
+
+  ${
+    19.28.1 $e |- F/ x ph $.
     $( Theorem 19.28 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
     19.28 $p |- ( A. x ( ph /\ ps ) <-> ( ph /\ A. x ps ) ) $=
-      ( wa wal 19.26 19.3h anbi1i bitri ) ABECFACFZBCFZEALEABCGKALACDHIJ $.
+      ( wa wal 19.26 19.3 anbi1i bitri ) ABECFACFZBCFZEALEABCGKALACDHIJ $.
   $}
 
   ${
@@ -10761,7 +10965,7 @@ $)
     $( A closed form of ~ nfan .  (Contributed by Mario Carneiro,
        3-Oct-2016.) $)
     nfan1 $p |- F/ x ( ph /\ ps ) $=
-      ( wa wal nfrd imdistani nfri 19.28 sylibr nfi ) ABFZCNABCGZFNCGABOABCEHIA
+      ( wa wal nfrd imdistani nfri 19.28h sylibr nfi ) ABFZCNABCGZFNCGABOABCEHIA
       BCACDJKLM $.
   $}
 
@@ -10940,11 +11144,20 @@ $)
   $}
 
   ${
-    aaan.1 $e |- ( ph -> A. y ph ) $.
-    aaan.2 $e |- ( ps -> A. x ps ) $.
+    aaanh.1 $e |- ( ph -> A. y ph ) $.
+    aaanh.2 $e |- ( ps -> A. x ps ) $.
+    $( Rearrange universal quantifiers.  (Contributed by NM, 12-Aug-1993.) $)
+    aaanh $p |- ( A. x A. y ( ph /\ ps ) <-> ( A. x ph /\ A. y ps ) ) $=
+      ( wa wal 19.28h albii hbal 19.27h bitri ) ABGDHZCHABDHZGZCHACHOGNPCABDEIJAO
+      CBCDFKLM $.
+  $}
+
+  ${
+    aaan.1 $e |- F/ y ph $.
+    aaan.2 $e |- F/ x ps $.
     $( Rearrange universal quantifiers.  (Contributed by NM, 12-Aug-1993.) $)
     aaan $p |- ( A. x A. y ( ph /\ ps ) <-> ( A. x ph /\ A. y ps ) ) $=
-      ( wa wal 19.28 albii hbal 19.27 bitri ) ABGDHZCHABDHZGZCHACHOGNPCABDEIJAO
+      ( wa wal 19.28 albii nfal 19.27 bitri ) ABGDHZCHABDHZGZCHACHOGNPCABDEIJAO
       CBCDFKLM $.
   $}
 
@@ -10978,7 +11191,7 @@ $)
   $( If a wff is true, it is true for at least one instance.  Special case of
      Theorem 19.8 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
   19.8a $p |- ( ph -> E. x ph ) $=
-    ( wex wi wal id hbe1 19.23 mpbir spi ) AABCZDZBLBEKKDKFAKBABGHIJ $.
+    ( wex wi wal id hbe1 19.23h mpbir spi ) AABCZDZBLBEKKDKFAKBABGHIJ $.
 
   ${
     19.23bi.1 $e |- ( E. x ph -> ps ) $.
@@ -10994,7 +11207,7 @@ $)
     $( Inference from Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
        5-Aug-1993.)  (Proof shortened by Andrew Salmon, 13-May-2011.) $)
     exlimih $p |- ( E. x ph -> ps ) $=
-      ( wi wex 19.23 mpgbi ) ABFACGBFCABCDHEI $.
+      ( wi wex 19.23h mpgbi ) ABFACGBFCABCDHEI $.
   $}
 
   ${
@@ -11025,7 +11238,7 @@ $)
     $( Deduction from Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
        28-Jan-1997.) $)
     exlimdh $p |- ( ph -> ( E. x ps -> ch ) ) $=
-      ( wi wal wex alrimih 19.23 sylib ) ABCHZDIBDJCHANDEGKBCDFLM $.
+      ( wi wal wex alrimih 19.23h sylib ) ABCHZDIBDJCHANDEGKBCDFLM $.
   $}
 
   ${
@@ -11213,7 +11426,8 @@ $)
   exsimpl $p |- ( E. x ( ph /\ ps ) -> E. x ph ) $=
     ( wa simpl eximi ) ABDACABEF $.
 
-  $( Theorem 19.6 of [Margaris] p. 89, given a decidability condition.
+  $( Theorem 19.6 of [Margaris] p. 89, given a decidability condition.  The
+     forward direction holds for all propositions, as seen at ~ alexim .
      (Contributed by Jim Kingdon, 2-Jun-2018.) $)
   alexdc $p |- ( A. x DECID ph -> ( A. x ph <-> -. E. x -. ph ) ) $=
     ( wdc wal wn wex nfa1 wb notnotdc sps albid alnex syl6bb ) ACZBDZ
@@ -11244,8 +11458,9 @@ $)
     ( wal wex wa 19.29r 19.29 eximi syl ) ADEZCFBDFZCEGLMGZCFABGDFZCFLMCHNOCABD
     IJK $.
 
-  $( Forward direction of Theorem 19.35 of [Margaris] p. 90.  (Contributed by
-     Mario Carneiro, 2-Feb-2015.) $)
+  $( Forward direction of Theorem 19.35 of [Margaris] p. 90.  The converse
+     holds for classical logic but not (for all propositions) in intuitionistic
+     logic (Contributed by Mario Carneiro, 2-Feb-2015.) $)
   19.35-1 $p |- ( E. x ( ph -> ps ) -> ( A. x ph -> E. x ps ) ) $=
     ( wal wi wex wa 19.29 pm3.35 eximi syl expcom ) ACDZABEZCFZBCFZMOGANGZCFPAN
     CHQBCABIJKL $.
@@ -11264,6 +11479,14 @@ $)
               ( E. y A. x ph -> E. y E. x ps ) ) $=
     ( wi wex wal 19.35-1 alimi exim syl ) ABECFZDGACGZBCFZEZDGMDFNDFELODABCHIMN
     DJK $.
+
+  $( Theorem 19.30 of [Margaris] p. 90, with an additional decidability
+     condition.  (Contributed by Jim Kingdon, 21-Jul-2018.) $)
+  19.30dc $p |- ( DECID E. x ps ->
+      ( A. x ( ph \/ ps ) -> ( A. x ph \/ E. x ps ) ) ) $=
+    ( wex wdc wn wo wal wi df-dc olc a1d alnex al2imi sylbir orc syl6
+    orel2 jaoi sylbi ) BCDZEUAUAFZGABGZCHZACHZUAGZIZUAJUAUGUBUAUFUDUA
+    UEKLUBUDUEUFUBBFZCHUDUEIBCMUHUCACBARNOUEUAPQST $.
 
   $( Theorem 19.43 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
      (Proof shortened by Mario Carneiro, 2-Feb-2015.) $)
@@ -11334,6 +11557,23 @@ $)
   19.2 $p |- ( A. x ph -> E. y ph ) $=
     ( wex 19.8a sps ) AACDBACEF $.
 
+  ${
+    i19.24.1 $e |- ( ( A. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $.
+    $( Theorem 19.24 of [Margaris] p. 90, with an additional hypothesis.  The
+       hypothesis is the converse of ~ 19.35-1 , and is a theorem of classical
+       logic, but in intuitionistic logic it will only be provable for some
+       propositions.  (Contributed by Jim Kingdon, 22-Jul-2018.) $)
+    i19.24 $p |- ( ( A. x ph -> A. x ps ) -> E. x ( ph -> ps ) ) $=
+      ( wal wi wex 19.2 imim2i syl ) ACEZBCEZFKBCGZFABFCGLMKBCCHIDJ $.
+
+    $( Theorem 19.39 of [Margaris] p. 90, with an additional hypothesis.  The
+       hypothesis is the converse of ~ 19.35-1 , and is a theorem of classical
+       logic, but in intuitionistic logic it will only be provable for some
+       propositions.  (Contributed by Jim Kingdon, 22-Jul-2018.) $)
+    i19.39 $p |- ( ( E. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $=
+      ( wex wi wal 19.2 imim1i syl ) ACEZBCEZFACGZLFABFCEMKLACCHIDJ $.
+  $}
+
   $( A closed version of one direction of ~ 19.9 .  (Contributed by NM,
      5-Aug-1993.) $)
   19.9ht $p |- ( A. x ( ph -> A. x ph ) -> ( E. x ph -> ph ) ) $=
@@ -11364,22 +11604,30 @@ $)
       ( nfri 19.9h ) ABABCDE $.
   $}
 
-  $( One direction of theorem 19.6 of [Margaris] p. 89.  (Contributed by Jim
+  $( One direction of theorem 19.6 of [Margaris] p. 89.  The converse holds
+     given a decidability condition, as seen at ~ alexdc .  (Contributed by Jim
      Kingdon, 2-Jul-2018.) $)
   alexim $p |- ( A. x ph -> -. E. x -. ph ) $=
     ( wal wn wex wfal wi pm2.24 alimi exim syl nfv 19.9 syl6ib sylibr
     dfnot ) ABCZADZBEZFGSDQSFBEZFQRFGZBCSTGAUABAFHIRFBJKFBFBLMNSPO $.
 
-  $( One direction of Theorem 19.14 of [Margaris] p. 90.  (Contributed by Jim
-     Kingdon, 15-Jul-2018.) $)
+  $( One direction of Theorem 19.14 of [Margaris] p. 90.  In classical logic
+     the converse also holds.  (Contributed by Jim Kingdon, 15-Jul-2018.) $)
   exnalim $p |- ( E. x -. ph -> -. A. x ph ) $=
     ( wal wn wex alexim con2i ) ABCADBEABFG $.
 
-  $( A transformation of quantifiers and logical connectives.  (Contributed by
-     Jim Kingdon, 15-Jul-2018.) $)
+  $( A transformation of quantifiers and logical connectives.  In classical
+     logic the converse also holds.  (Contributed by Jim Kingdon,
+     15-Jul-2018.) $)
   exanaliim $p |- ( E. x ( ph /\ -. ps ) -> -. A. x ( ph -> ps ) ) $=
     ( wn wa wex wi wal annimim eximi exnalim syl ) ABDEZCFABGZDZCFNCH
     DMOCABIJNCKL $.
+
+  $( A relationship between two quantifiers and negation.  (Contributed by Jim
+     Kingdon, 27-Aug-2018.) $)
+  alexnim $p |- ( A. x E. y -. ph -> -. E. x A. y ph ) $=
+    ( wn wex wal exnalim alimi alnex sylib ) ADCEZBFACFZDZBFLBEDKMBAC
+    GHLBIJ $.
 
   ${
     ax6blem.1 $e |- ( ph -> A. x ph ) $.
@@ -11499,7 +11747,7 @@ $)
      quantifiers on the same variable.  (Contributed by Mario Carneiro,
      24-Sep-2016.) $)
   nf2 $p |- ( F/ x ph <-> ( E. x ph -> A. x ph ) ) $=
-    ( wnf wal wi wex df-nf nfa1 nfri 19.23 bitri ) ABCAABDZEBDABFLEABGALBLBABHI
+    ( wnf wal wi wex df-nf nfa1 nfri 19.23h bitri ) ABCAABDZEBDABFLEABGALBLBABHI
     JK $.
 
   $( An alternative definition of ~ df-nf .  (Contributed by Mario Carneiro,
@@ -11507,6 +11755,24 @@ $)
   nf3 $p |- ( F/ x ph <-> A. x ( E. x ph -> ph ) ) $=
     ( wnf wex wal wi nf2 nfe1 nfri 19.21h bitr4i ) ABCABDZABEFLAFBEABGLABLBABHIJ
     K $.
+
+  $( Variable ` x ` is effectively not free in ` ph ` iff ` ph ` is always true
+     or always false, given a decidability condition.  The reverse direction,
+     ~ nf4r , holds for all propositions.  (Contributed by Jim Kingdon,
+     21-Jul-2018.) $)
+  nf4dc $p |- ( DECID E. x ph -> ( F/ x ph <-> ( A. x ph \/ A. x -. ph ) ) ) $=
+    ( wex wdc wnf wn wal wo wi nf2 imordc syl5bb orbi2i bitr4i syl6bb
+    orcom alnex ) ABCZDZABEZRFZABGZHZUBAFBGZHZTRUBISUCABJRUBKLUCUBUAH
+    UEUAUBPUDUAUBABQMNO $.
+
+  $( If ` ph ` is always true or always false, then variable ` x ` is
+     effectively not free in ` ph ` .  The converse holds given a decidability
+     condition, as seen at ~ nf4dc .  (Contributed by Jim Kingdon,
+     21-Jul-2018.) $)
+  nf4r $p |- ( ( A. x ph \/ A. x -. ph ) -> F/ x ph ) $=
+    ( wal wn wo wex wnf orcom alnex orbi2i bitr4i wi imorr nf2 sylibr
+    sylbir ) ABCZADBCZEZABFZDZQEZABGZUBQUAESUAQHRUAQABIJKUBTQLUCTQMAB
+    NOP $.
 
   ${
     19.36i.1 $e |- F/ x ps $.
@@ -11520,7 +11786,9 @@ $)
   ${
     19.36-1.1 $e |- F/ x ps $.
     $( Closed form of ~ 19.36i .  One direction of Theorem 19.36 of [Margaris]
-       p. 90.  (Contributed by Jim Kingdon, 20-Jun-2018.) $)
+       p. 90.  The converse holds in classical logic, but does not hold (for
+       all propositions) in intuitionistic logic.  (Contributed by Jim Kingdon,
+       20-Jun-2018.) $)
     19.36-1 $p |- ( E. x ( ph -> ps ) -> ( A. x ph -> ps ) ) $=
       ( wi wex wal 19.35-1 19.9 syl6ib ) ABECFACGBCFBABCHBCDIJ $.
   $}
@@ -11555,6 +11823,14 @@ $)
     ZABECFZACGZBEZRSBCGZQBABCHQUABBCIJKQTSBCFZERQBUBSBCLMABCNOP $.
 
   ${
+    19.23.1 $e |- F/ x ps $.
+    $( Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
+       (Revised by Mario Carneiro, 24-Sep-2016.) $)
+    19.23 $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
+      ( wnf wi wal wex wb 19.23t ax-mp ) BCEABFCGACHBFIDABCJK $.
+  $}
+
+  ${
     19.32dc.1 $e |- F/ x ph $.
     $( Theorem 19.32 of [Margaris] p. 90, where ` ph ` is decidable.
        (Contributed by Jim Kingdon, 4-Jun-2018.) $)
@@ -11563,6 +11839,25 @@ $)
       ( wdc wn wi wal wo wb nfn 19.21 a1i nfdc dfordc 3bitr4d
       albid ) AEZAFZBGZCHZSBCHZGZABIZCHAUBIUAUCJRSBCACDKLMRUDTCACDNABOQ
       AUBOP $.
+  $}
+
+  ${
+    19.32r.1 $e |- F/ x ph $.
+    $( One direction of Theorem 19.32 of [Margaris] p. 90.  The converse holds
+       if ` ph ` is decidable, as seen at ~ 19.32dc .  (Contributed by Jim
+       Kingdon, 28-Jul-2018.) $)
+    19.32r $p |- ( ( ph \/ A. x ps ) -> A. x ( ph \/ ps ) ) $=
+      ( wo wal orc alrimi olc alimi jaoi ) AABEZCFBCFALCDABGHBLCBAIJK $.
+  $}
+
+  ${
+    19.31r.1 $e |- F/ x ps $.
+    $( One direction of Theorem 19.31 of [Margaris] p. 90.  The converse holds
+       in classical logic, but not intuitionistic logic.  (Contributed by Jim
+       Kingdon, 28-Jul-2018.) $)
+    19.31r $p |- ( ( A. x ph \/ ps ) -> A. x ( ph \/ ps ) ) $=
+      ( wal wo 19.32r orcom albii 3imtr4i ) BACEZFBAFZCEKBFABF
+      ZCEBACDGKBHMLCABHIJ $.
   $}
 
   ${
@@ -11645,7 +11940,7 @@ $)
        (Contributed by NM, 18-Aug-1993.)  (Proof shortened by Andrew Salmon,
        25-May-2011.) $)
     exan $p |- E. x ( ph /\ ps ) $=
-      ( wex wal wa hbe1 19.28 mpgbi 19.29r ax-mp ) ACEZBCFGZABGCEMBGNCMBCACHIDJ
+      ( wex wal wa hbe1 19.28h mpgbi 19.29r ax-mp ) ACEZBCFGZABGCEMBGNCMBCACHIDJ
       ABCKL $.
   $}
 
@@ -12261,9 +12556,9 @@ $)
      When ` x ` and ` y ` are distinct, we can express proper substitution with
      the simpler expressions of ~ sb5 and ~ sb6 .
 
-     In classical logic, we have additional equivalent definitions ~ dfsb2 and
-     ~ dfsb3 , but we do not have intuitionistic proofs that those are
-     equivalent.
+     In classical logic, another possible definition is
+     ` ( x = y /\ ph ) \/ A. x ( x = y -> ph ) ` but we do not have an
+     intuitionistic proof that this is equivalent.
 
      There are no restrictions on any of the variables, including what
      variables may occur in wff ` ph ` .  (Contributed by NM, 5-Aug-1993.) $)
@@ -12878,7 +13173,7 @@ $)
              ( E. x ( x = y /\ ph ) -> A. x ( x = y -> ph ) ) ) $=
       ( vz weq wex wal wa wi wo a9e wnf dveeq2or nfnf1 nfri ax11v equequ2 ax-mp
       wb hba1 adantl nfr imp imbi1d sps albidh syl imbi2d imbi12d mpbii ex imp4a
-      alrimih 19.21t mpbid 19.23 syl6ib orim2i pm2.76 olcs exlimiv ) DCEZDFBCEZB
+      alrimih 19.21t mpbid 19.23h syl6ib orim2i pm2.76 olcs exlimiv ) DCEZDFBCEZB
       GZVCAHZBFVCAIZBGZIZJZDCKVBVIDVDVBVIVDVBVHIZJZVDVBJVIIVDVBBLZJVKBCDMVLVJVD
       VLVBVEVGIZBGZVHVLVBVMIZBGVBVNIVLVOBVLBVBBNOVLVBVCAVGVLVBVCAVGIZIZVLVBHZBD
       EZAVSAIZBGZIZIVQABDPVRVSVCWBVPVBVSVCSVLDCBQZUAVRWAVGAVRVBBGZWAVGSVLVBWDVB
@@ -13213,6 +13508,17 @@ $)
   $}
 
   ${
+    exlimdd.1 $e |- F/ x ph $.
+    exlimdd.2 $e |- F/ x ch $.
+    exlimdd.3 $e |- ( ph -> E. x ps ) $.
+    exlimdd.4 $e |- ( ( ph /\ ps ) -> ch ) $.
+    $( Existential elimination rule of natural deduction.  (Contributed by
+       Mario Carneiro, 9-Feb-2017.) $)
+    exlimdd $p |- ( ph -> ch ) $=
+      ( wex ex exlimd mpd ) ABDICGABCDEFABCHJKL $.
+  $}
+
+  ${
     $d x ph $.
     $( Special case of Theorem 19.21 of [Margaris] p. 90. _Notational
        convention_:  We sometimes suffix with "v" the label of a theorem
@@ -13304,7 +13610,7 @@ $)
     $( Special case of Theorem 19.23 of [Margaris] p. 90.  (Contributed by NM,
        28-Jun-1998.) $)
     19.23v $p |- ( A. x ( ph -> ps ) <-> ( E. x ph -> ps ) ) $=
-      ( ax-17 19.23 ) ABCBCDE $.
+      ( ax-17 19.23h ) ABCBCDE $.
   $}
 
   ${
@@ -13395,7 +13701,7 @@ $)
     $( Theorem *11.53 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
        Salmon, 24-May-2011.) $)
     pm11.53 $p |- ( A. x A. y ( ph -> ps ) <-> ( E. x ph -> A. y ps ) ) $=
-      ( wi wal wex 19.21v albii ax-17 hbal 19.23 bitri ) ABEDFZCFABDFZEZCFACGOE
+      ( wi wal wex 19.21v albii ax-17 hbal 19.23h bitri ) ABEDFZCFABDFZEZCFACGOE
       NPCABDHIAOCBCDBCJKLM $.
   $}
 
@@ -13418,17 +13724,27 @@ $)
   $}
 
   ${
+    $d x ch $.  $d x ph $.
+    exlimddv.1 $e |- ( ph -> E. x ps ) $.
+    exlimddv.2 $e |- ( ( ph /\ ps ) -> ch ) $.
+    $( Existential elimination rule of natural deduction.  (Contributed by
+       Mario Carneiro, 15-Jun-2016.) $)
+    exlimddv $p |- ( ph -> ch ) $=
+      ( wex ex exlimdv mpd ) ABDGCEABCDABCFHIJ $.
+  $}
+
+  ${
     $d x ps $.
     $( Theorem 19.27 of [Margaris] p. 90.  (Contributed by NM, 3-Jun-2004.) $)
     19.27v $p |- ( A. x ( ph /\ ps ) <-> ( A. x ph /\ ps ) ) $=
-      ( ax-17 19.27 ) ABCBCDE $.
+      ( ax-17 19.27h ) ABCBCDE $.
   $}
 
   ${
     $d x ph $.
     $( Theorem 19.28 of [Margaris] p. 90.  (Contributed by NM, 25-Mar-2004.) $)
     19.28v $p |- ( A. x ( ph /\ ps ) <-> ( ph /\ A. x ps ) ) $=
-      ( ax-17 19.28 ) ABCACDE $.
+      ( ax-17 19.28h ) ABCACDE $.
   $}
 
   ${
@@ -13557,40 +13873,40 @@ $)
 
   ${
     $d y x $.  $d y z $.  $d w x $.  $d w z $.
-    cbval2.1 $e |- ( ph -> A. z ph ) $.
-    cbval2.2 $e |- ( ph -> A. w ph ) $.
-    cbval2.3 $e |- ( ps -> A. x ps ) $.
-    cbval2.4 $e |- ( ps -> A. y ps ) $.
+    cbval2.1 $e |- F/ z ph $.
+    cbval2.2 $e |- F/ w ph $.
+    cbval2.3 $e |- F/ x ps $.
+    cbval2.4 $e |- F/ y ps $.
     cbval2.5 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
-    $( Rule used to change bound variables, using implicit substitition.
-       (Contributed by NM, 22-Dec-2003.) $)
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 22-Dec-2003.)  (Revised by Mario Carneiro,
+       6-Oct-2016.)  (Proof shortened by Wolf Lammen, 22-Apr-2018.) $)
     cbval2 $p |- ( A. x A. y ph <-> A. z A. w ps ) $=
-      ( wal hbal weq wb wa ax-17 hban cbvalh 19.28v expcom pm5.32d 3bitr3i mpbir
-      wi pm5.32 ) ADLZBFLZCEAEDGMBCFIMCENZUGUHOUEUIUGPZUIUHPZOUIAPZDLUIBPZFLUJU
-      KULUMDFUIAFUIFQHRUIBDUIDQJRDFNZUIABUIUNABOKUAUBSUIADTUIBFTUCUIUGUHUFUDS
-      $.
+      ( wal nfal weq wi nfv nfim wb cbval 19.21v pm5.74d 3bitr3i pm5.74ri
+      expcom ) ADLZBFLZCEAEDGMBCFIMCENZUEUFUGAOZDLUGBOZFLUGUEOUGUFOUHUIDFUGAFUG
+      FPHQUGBDUGDPJQDFNZUGABUGUJABRKUDUASUGADTUGBFTUBUCS $.
 
-    $( Rule used to change bound variables, using implicit substitition.
-       (Contributed by NM, 14-Sep-2003.) $)
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by NM, 14-Sep-2003.)  (Revised by Mario Carneiro,
+       6-Oct-2016.) $)
     cbvex2 $p |- ( E. x E. y ph <-> E. z E. w ps ) $=
-      ( wex hbex weq wb wa ax-17 hban cbvexh 19.42v expcom pm5.32d 3bitr3i mpbir
-      wi pm5.32 ) ADLZBFLZCEAEDGMBCFIMCENZUGUHOUEUIUGPZUIUHPZOUIAPZDLUIBPZFLUJU
-      KULUMDFUIAFUIFQHRUIBDUIDQJRDFNZUIABUIUNABOKUAUBSUIADTUIBFTUCUIUGUHUFUDS
-      $.
+      ( wex nfex weq wb wa nfv nfan cbvex 19.42v wi expcom pm5.32d pm5.32 mpbir
+      3bitr3i ) ADLZBFLZCEAEDGMBCFIMCENZUGUHOUAUIUGPZUIUHPZOUIAPZDLUIBPZFLUJUKU
+      LUMDFUIAFUIFQHRUIBDUIDQJRDFNZUIABUIUNABOKUBUCSUIADTUIBFTUFUIUGUHUDUES $.
   $}
 
   ${
     $d z w ph $.  $d x y ps $.  $d x w $.  $d z y $.
     cbval2v.1 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
-    $( Rule used to change bound variables, using implicit substitition.
+    $( Rule used to change bound variables, using implicit substitution.
        (Contributed by NM, 4-Feb-2005.) $)
     cbval2v $p |- ( A. x A. y ph <-> A. z A. w ps ) $=
-      ( ax-17 cbval2 ) ABCDEFAEHAFHBCHBDHGI $.
+      ( nfv cbval2 ) ABCDEFAEHAFHBCHBDHGI $.
 
-    $( Rule used to change bound variables, using implicit substitition.
+    $( Rule used to change bound variables, using implicit substitution.
        (Contributed by NM, 26-Jul-1995.) $)
     cbvex2v $p |- ( E. x E. y ph <-> E. z E. w ps ) $=
-      ( ax-17 cbvex2 ) ABCDEFAEHAFHBCHBDHGI $.
+      ( nfv cbvex2 ) ABCDEFAEHAFHBCHBDHGI $.
   $}
 
   ${
@@ -14676,8 +14992,8 @@ $)
 
   $( Define "there exists at most one ` x ` such that ` ph ` ."  Here we define
      it in terms of existential uniqueness.  Notation of [BellMachover] p. 460,
-     whose definition we show as ~ mo3 .  For other possible definitions see
-     ~ mo2 and ~ mo4 .  (Contributed by NM, 5-Aug-1993.) $)
+     whose definition we show as ~ mo3 .  For another possible definition see
+     ~ mo4 .  (Contributed by NM, 5-Aug-1993.) $)
   df-mo $a |- ( E* x ph <-> ( E. x ph -> E! x ph ) ) $.
 
   ${
@@ -14798,6 +15114,12 @@ $)
     nfeud $p |- ( ph -> F/ x E! y ps ) $=
       ( vz weu wsb nfv sb8eu nfsbd nfeudv nfxfrd ) BDHBDGIZGHACBDGBGJKAOCGAGJAB
       DGCEFLMN $.
+
+    $( Bound-variable hypothesis builder for "at most one."  (Contributed by
+       Mario Carneiro, 14-Nov-2016.) $)
+    nfmod $p |- ( ph -> F/ x E* y ps ) $=
+      ( wmo wex weu wi df-mo nfexd nfeud nfimd nfxfrd ) BDGBDHZBDIZJA
+      CBDKAPQCABCDEFLABCDEFMNO $.
   $}
 
   ${
@@ -14821,6 +15143,11 @@ $)
     nfeu $p |- F/ x E! y ph $=
       ( vz weu wsb nfv sb8eu nfsb nfeuv nfxfr ) ACFACEGZEFBACEAEHIMBEACEBDJKL
       $.
+
+    $( Bound-variable hypothesis builder for "at most one."  (Contributed by
+       NM, 9-Mar-1995.) $)
+    nfmo $p |- F/ x E* y ph $=
+      ( wmo wnf wtru nftru a1i nfmod trud ) ACEBFGABCCHABFGDIJK $.
   $}
 
   ${
@@ -15022,7 +15349,7 @@ $)
     mo23 $p |- ( E. y A. x ( ph -> x = y ) ->
                A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
       ( vz weq wi wal wex wsb wa nfv nfim nfal equequ2 imbi2d albidv cbvex nfri
-      nfs1v sbequ2 ax-8 imim12d cbv3 ancli aaan sylibr prth equtr2 syl6 exlimiv
+      nfs1v sbequ2 ax-8 imim12d cbv3 ancli aaanh sylibr prth equtr2 syl6 exlimiv
       2alimi syl sylbir ) ABCFZGZBHZCIABEFZGZBHZEIAABCJZKZUOGZCHBHZUTUQECUSCBAU
       RCDURCLMZNUQELECFZUSUPBVFURUOAECBOPQRUTVDEUTUSVACEFZGZKZCHBHZVDUTUTVHCHZK
       VJUTVKUSVHBCVEVAVGBABCTVGBLMZUOVAAURVGABCUABCEUBUCUDUEUSVHBCUSCVESVHBVLSU
@@ -15473,14 +15800,13 @@ $)
     $( This theorem provides us with a definition of double existential
        uniqueness ("exactly one ` x ` and exactly one ` y ` ").  Naively one
        might think (incorrectly) that it could be defined by
-       ` E! x E! y ph ` .  See ~ 2eu1 for a condition under which the naive
-       definition holds and ~ 2exeu for a one-way implication.  See ~ 2eu5 and
-       ~ 2eu8 for alternate definitions.  (Contributed by NM, 3-Dec-2001.) $)
+       ` E! x E! y ph ` .  See ~ 2exeu for a one-way implication.  (Contributed
+       by NM, 3-Dec-2001.) $)
     2eu4 $p |- ( ( E! x E. y ph /\ E! y E. x ph ) <->
       ( E. x E. y ph /\ E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) ) ) $=
       ( wex weu wa weq wal ax-17 eu3h anbi12i anbi2i bitri hba1 19.3h 19.26 albii
       wi an4 excom anidm jcab 3bitr4ri alcom bitr4i 19.23v 2albii 3bitri 2exbii
-      hbe1 hbim aaan eeanv bitr2i ) ACFZBGZABFZCGZHUQBFZUQBDIZTZBJZDFZHZUSCFZUS
+      hbe1 hbim aaanh eeanv bitr2i ) ACFZBGZABFZCGZHUQBFZUQBDIZTZBJZDFZHZUSCFZUS
       CEIZTZCJZEFZHZHVAVGHZVEVKHZHVAAVBVHHTZCJZBJZEFDFZHURVFUTVLUQBDUQDKLUSCEUS
       EKLMVAVEVGVKUAVMVAVNVRVMVAVAHVAVGVAVAACBUBNVAUCOVRVDVJHZEFDFVNVQVSDEVQAVB
       TZCJZAVHTZBJZHZCJZBJZVCVIHZCJBJVSVQWAWBCJZBJZHZBJZWFWABJZWIBJZHWLWIHZWKVQ
@@ -15565,8 +15891,8 @@ $)
   ${
     $d x y z $.
     $( Axiom of Extensionality.  It states that two sets are identical if they
-       contain the same elements.  Axiom 1 of [Crosilla] (with unnnecessary
-       quantifiers removed).
+       contain the same elements.  Axiom 1 of [Crosilla] p.  "Axioms of CZF and
+       IZF" (with unnnecessary quantifiers removed).
 
        Set theory can also be formulated with a _single_ primitive predicate
        ` e. ` on top of traditional predicate calculus _without_ equality.  In
@@ -15620,6 +15946,21 @@ $)
     axext4 $p |- ( x = y <-> A. z ( z e. x <-> z e. y ) ) $=
       ( weq wel wb wal elequ2 alrimiv axext3 impbii ) ABDZCAECBEFZCGLMCABCHIABC
       JK $.
+  $}
+
+  ${
+    $d x y z $.  $d ph z $.
+    bm1.1.1 $e |- F/ x ph $.
+    $( Any set defined by a property is the only set defined by that property.
+       Theorem 1.1 of [BellMachover] p. 462.  (Contributed by NM,
+       30-Jun-1994.) $)
+    bm1.1 $p |- ( E. x A. y ( y e. x <-> ph ) ->
+                  E! x A. y ( y e. x <-> ph ) ) $=
+      ( vz wel wb wal wex wsb wa weq wi weu nfv nfbi nfal elequ2 bibi1d albidv
+      sbie 19.26 biantr alimi ax-ext syl sylbir sylan2b gen2 jctr eu2 sylibr )
+      CBFZAGZCHZBIZUPUOUOBEJZKBELZMZEHBHZKUOBNUPUTUSBEUQUOCEFZAGZCHZURUOVCBEVBB
+      CVAABVABODPQURUNVBCURUMVAABECRSTUAUOVCKUNVBKZCHZURUNVBCUBVEUMVAGZCHURVDVF
+      CUMAVAUCUDBECUEUFUGUHUIUJUOBEUOEOUKUL $.
   $}
 
 $(
@@ -18312,6 +18653,23 @@ $)
     ( wn wral cv wcel wi wal wrex df-ral wa wex alinexa df-rex xchbinxr bitri )
     ADZBCEBFCGZRHBIZABCJZDRBCKTSALBMUASABNABCOPQ $.
 
+  $( Relationship between restricted universal and existential quantifiers.  In
+     classical logic this would be a biconditional.  (Contributed by Jim
+     Kingdon, 17-Aug-2018.) $)
+  rexnalim $p |- ( E. x e. A -. ph -> -. A. x e. A ph ) $=
+    ( wn wrex cv wcel wa wex wral df-rex wal exanaliim df-ral sylnibr
+    wi sylbi ) ADZBCEBFCGZRHBIZABCJZDRBCKTSAPBLUASABMABCNOQ $.
+
+  $( Relationship between restricted universal and existential quantifiers.
+     (Contributed by Jim Kingdon, 17-Aug-2018.) $)
+  ralexim $p |- ( A. x e. A ph -> -. E. x e. A -. ph ) $=
+    ( wn wrex wral rexnalim con2i ) ADBCEABCFABCGH $.
+
+  $( Relationship between restricted universal and existential quantifiers.
+     (Contributed by Jim Kingdon, 17-Aug-2018.) $)
+  rexalim $p |- ( E. x e. A ph -> -. A. x e. A -. ph ) $=
+    ( wn wral wrex ralnex biimpi con2i ) ADBCEZABCFZJKDABCGHI $.
+
   ${
     ralbida.1 $e |- F/ x ph $.
     ralbida.2 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
@@ -18677,6 +19035,14 @@ $)
     nfrexya $p |- F/ x E. y e. A ph $=
       ( wrex wnf wtru nftru wnfc a1i nfrexdya trud ) ACDGBHIABCDCJBDK
       IELABHIFLMN $.
+  $}
+
+  ${
+    $d x y $.  $d A y $.
+    $( Not-free given two restricted quantifiers.  (Contributed by Jim Kingdon,
+       20-Aug-2018.) $)
+    nfra2xy $p |- F/ y A. x e. A A. y e. B ph $=
+      ( wral nfcv nfra1 nfralxy ) ACEFCBDCDGACEHI $.
   $}
 
   $( ` x ` is not free in ` E. x e. A ph ` .  (Contributed by NM,
@@ -19485,7 +19851,24 @@ $)
   $}
 
   ${
+    r19.32r.1 $e |- F/ x ph $.
+    $( One direction of Theorem 19.32 of [Margaris] p. 90 with restricted
+       quantifiers.  For decidable propositions this is an equivalence.
+       (Contributed by Jim Kingdon, 19-Aug-2018.) $)
+    r19.32r $p |- ( ( ph \/ A. x e. A ps ) -> A. x e. A ( ph \/ ps ) ) $=
+      ( wral wo cv wcel wi wal orc a1d alrimi df-ral imim2i
+      olc alimi sylbi jaoi sylibr ) ABCDFZGCHDIZABGZJZCKZUDCDFAUFUBAUEC
+      EAUDUCABLMNUBUCBJZCKUFBCDOUGUECBUDUCBAQPRSTUDCDOUA $.
+  $}
+
+  ${
     $d x ph $.
+    $( One direction of Theorem 19.32 of [Margaris] p. 90 with restricted
+       quantifiers.  For decidable propositions this is an equivalence, as seen
+       at ~ r19.32vdc .  (Contributed by Jim Kingdon, 19-Aug-2018.) $)
+    r19.32vr $p |- ( ( ph \/ A. x e. A ps ) -> A. x e. A ( ph \/ ps ) ) $=
+      ( nfv r19.32r ) ABCDACEF $.
+
     $( Theorem 19.32 of [Margaris] p. 90 with restricted quantifiers, where
        ` ph ` is decidable.  (Contributed by Jim Kingdon, 4-Jun-2018.) $)
     r19.32vdc $p |- ( DECID ph ->
@@ -19504,7 +19887,9 @@ $)
   ${
     $d x ps $.
     $( One direction of a restricted quantifier version of Theorem 19.36 of
-       [Margaris] p. 90.  (Contributed by NM, 22-Oct-2003.) $)
+       [Margaris] p. 90.  In classical logic, the converse would hold if ` A `
+       has at least one element, but in intuitionistic logic, that is not a
+       sufficient condition.  (Contributed by NM, 22-Oct-2003.) $)
     r19.36av $p |- ( E. x e. A ( ph -> ps ) -> ( A. x e. A ph -> ps ) ) $=
       ( wi wrex wral r19.35-1 cv wcel idd rexlimiv imim2i syl ) ABECD
       FACDGZBCDFZEOBEABCDHPBOBBCDCIDJBKLMN $.
@@ -19513,7 +19898,9 @@ $)
   ${
     r19.37.1 $e |- F/ x ph $.
     $( Restricted version of one direction of Theorem 19.37 of [Margaris]
-       p. 90.  (Contributed by FL, 13-May-2012.)  (Revised by Mario Carneiro,
+       p. 90.  In classical logic the converse would hold if ` A ` has at least
+       one element, but that is not sufficient in intuitionistic logic.
+       (Contributed by FL, 13-May-2012.)  (Revised by Mario Carneiro,
        11-Dec-2016.) $)
     r19.37 $p |- ( E. x e. A ( ph -> ps ) -> ( ph -> E. x e. A ps ) ) $=
       ( wral wi wrex cv wcel ax-1 ralrimi r19.35-1 syl5 ) AACDFABGCDH
@@ -19523,8 +19910,7 @@ $)
   ${
     $d x ph $.
     $( Restricted version of one direction of Theorem 19.37 of [Margaris]
-       p. 90.  (The other direction doesn't hold when ` A ` is empty.)
-       (Contributed by NM, 2-Apr-2004.) $)
+       p. 90.  (Contributed by NM, 2-Apr-2004.) $)
     r19.37av $p |- ( E. x e. A ( ph -> ps ) -> ( ph -> E. x e. A ps ) ) $=
       ( nfv r19.37 ) ABCDACEF $.
   $}
@@ -19759,6 +20145,17 @@ $)
        (Contributed by NM, 19-Mar-1997.) $)
     nfrab1 $p |- F/_ x { x e. A | ph } $=
       ( crab cv wcel wa cab df-rab nfab1 nfcxfr ) BABCDBECFAGZBHABCILBJK $.
+  $}
+
+  ${
+    $d x y z $.  $d z A $.
+    nfrabxy.1 $e |- F/ x ph $.
+    nfrabxy.2 $e |- F/_ x A $.
+    $( A variable not free in a wff remains so in a restricted class
+       abstraction.  (Contributed by Jim Kingdon, 19-Jul-2018.) $)
+    nfrabxy $p |- F/_ x { y e. A | ph } $=
+      ( crab cv wcel wa cab df-rab nfcri nfan nfab nfcxfr ) BACDGCHDI
+      ZAJZCKACDLRBCQABBCDFMENOP $.
   $}
 
   ${
@@ -22106,13 +22503,15 @@ $)
 
   ${
     $d x y A $.  $d y ph $.
-    mo2iclex.1 $e |- A e. _V $.
-    $( Theorem for inferring "at most one."  (Contributed by NM, 17-Oct-1996.)
-       (Modified by Jim Kingdon, 8-Jul-2018.) $)
-    mo2iclex $p |- ( A. x ( ph -> x = A ) -> E* x ph ) $=
-      ( vy cv wceq wi wal wmo eqeq2 imbi2d albidv imbi1d nfv mo2r 19.23bi vtocl
-      ) ABFZEFZGZHZBIZABJZHASCGZHZBIZUDHECDTCGZUCUGUDUHUBUFBUHUAUEATCSKLMNUCUDE
-      ABEAEOPQR $.
+    $( Theorem for inferring "at most one."  (Contributed by NM,
+       17-Oct-1996.) $)
+    mo2icl $p |- ( A. x ( ph -> x = A ) -> E* x ph ) $=
+      ( vy cv wceq wal wex wmo cvv wcel nfa1 vex eleq1 mpbii imim2i sps
+      wi eximd 19.9v syl6ib eqeq2 imbi2d albidv imbi1d nfv mo2r 19.23bi
+      vtoclg com12 syld moabs sylibr ) ABEZCFZRZBGZABHZABIZRUSUQURCJKZU
+      SUQURUTBHUTUQAUTBUPBLUPAUTRBUOUTAUOUNJKUTBMUNCJNOPQSUTBTUAUTUQUSA
+      UNDEZFZRZBGZUSRUQUSRDCJVACFZVDUQUSVEVCUPBVEVBUOAVACUNUBUCUDUEVDUS
+      DABDADUFUGUHUIUJUKABULUM $.
   $}
 
   ${
@@ -22631,7 +23030,8 @@ $)
        with a weaker Subset (or Separation) Axiom asserting that ` A ` is a set
        only when it is smaller than some other set ` B ` .  The intuitionistic
        set theory IZF includes such a separation axiom, Axiom 6 of [Crosilla]
-       p.  "Axioms of CZF and IZF".  (Contributed by NM, 7-Aug-1994.) $)
+       p.  "Axioms of CZF and IZF", which we include as ~ ax-sep .
+       (Contributed by NM, 7-Aug-1994.) $)
     ru $p |- { x | x e/ x } e/ _V $=
       ( vy cv wnel cab cvv wcel wn wceq wex wel wal pm5.19 eleq1 df-nel eleq12d
       wb id notbid mtbir syl5bb bibi12d spv mto abeq2 nex isset mpbir ) ACZUIDZ
@@ -23623,26 +24023,6 @@ $)
       ( vz cv csb wcel wsbc cab df-csb abeq2i sbcbii sbcco bitri abbii 3eqtr4i
       ) EFZABFZDGZHZBCIZEJRDHZACIZEJBCTGACDGUBUDEUBUCASIZBCIUDUAUEBCUEETAESDKLM
       UCABCNOPBECTKAECDKQ $.
-  $}
-
-  ${
-    $d y A $.  $d y B $.  $d x y $.
-    $( The existence of proper substitution into a class.  (Contributed by NM,
-       10-Nov-2005.) $)
-    csbexg $p |- ( ( A e. V /\ A. x B e. W ) -> [_ A / x ]_ B e. _V ) $=
-      ( vy wcel wal wa csb wsbc cab cvv df-csb abid2 elex syl5eqel alimi spsbc
-      cv syl5 imp wb nfcv sbcabel adantr mpbid ) BDGZCEGZAHZIZABCJFTCGZABKFLZMA
-      FBCNUKULFLZMGZABKZUMMGZUHUJUPUJUOAHUHUPUIUOAUIUNCMFCOCEPQRUOABDSUAUBUHUPU
-      QUCUJULAFBMDAMUDUEUFUGQ $.
-  $}
-
-  ${
-    csbex.1 $e |- A e. _V $.
-    csbex.2 $e |- B e. _V $.
-    $( The existence of proper substitution into a class.  (Contributed by NM,
-       7-Aug-2007.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
-    csbex $p |- [_ A / x ]_ B e. _V $=
-      ( cvv wcel csb wal csbexg mpan mpg ) CFGZABCHFGZABFGMAINDABCFFJKEL $.
   $}
 
   ${
@@ -25373,686 +25753,7268 @@ $)
   $}
 
 $(
-###############################################################################
-                            CLASSICAL LOGIC
-###############################################################################
-
-   There are a variety of theorems that only hold for decidable propositions,
-   for example ~ df-dc , ~ notnotdc , or ~ condc , and we have stated and
-   proved them for decidable propositions.
-
-   As a historical note, however, the Intuitionistic Logic Explorer originated
-   as a fork of the non-intuitionistic Metamath Proof Explorer, and the
-   project of adding decidability conditions everywhere they are needed (or
-   replacing non-intuitionistic proofs entirely) is not yet complete.
-
-   Therefore, this section also (for now) contains the non-intuitionistic
-   ~ ax-3 and additional theorems which rely on ~ ax-3 . As we replace
-   classical proofs with intuitionistic ones, remove classical proofs which
-   are unused and not especially important to contrast classical and
-   intuitionistic results, or add decidability conditions to make proofs not
-   rely on ~ ax-3 , we plan on reducing use of ~ ax-3 , moving ~ ax-3 still
-   later in the file, and eventually removing it entirely.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        The difference, union, and intersection of two classes
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+      The difference of two classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Equality theorem for class difference.  (Contributed by NM,
+       10-Feb-1997.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    difeq1 $p |- ( A = B -> ( A \ C ) = ( B \ C ) ) $=
+      ( vx wceq cv wcel wn crab cdif rabeq dfdif2 3eqtr4g ) ABEDFCGHZDAINDBIACJ
+      BCJNDABKDACLDBCLM $.
+
+    $( Equality theorem for class difference.  (Contributed by NM,
+       10-Feb-1997.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    difeq2 $p |- ( A = B -> ( C \ A ) = ( C \ B ) ) $=
+      ( vx wceq cv wcel wn crab cdif eleq2 notbid rabbidv dfdif2 3eqtr4g ) ABEZ
+      DFZAGZHZDCIQBGZHZDCICAJCBJPSUADCPRTABQKLMDCANDCBNO $.
+  $}
+
+  $( Equality theorem for class difference.  (Contributed by FL,
+     31-Aug-2009.) $)
+  difeq12 $p |- ( ( A = B /\ C = D ) -> ( A \ C ) = ( B \ D ) ) $=
+    ( wceq cdif difeq1 difeq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
+
+  ${
+    difeq1i.1 $e |- A = B $.
+    $( Inference adding difference to the right in a class equality.
+       (Contributed by NM, 15-Nov-2002.) $)
+    difeq1i $p |- ( A \ C ) = ( B \ C ) $=
+      ( wceq cdif difeq1 ax-mp ) ABEACFBCFEDABCGH $.
+
+    $( Inference adding difference to the left in a class equality.
+       (Contributed by NM, 15-Nov-2002.) $)
+    difeq2i $p |- ( C \ A ) = ( C \ B ) $=
+      ( wceq cdif difeq2 ax-mp ) ABECAFCBFEDABCGH $.
+
+    ${
+      difeq12i.2 $e |- C = D $.
+      $( Equality inference for class difference.  (Contributed by NM,
+         29-Aug-2004.) $)
+      difeq12i $p |- ( A \ C ) = ( B \ D ) $=
+        ( cdif difeq1i difeq2i eqtri ) ACGBCGBDGABCEHCDBFIJ $.
+    $}
+  $}
+
+  ${
+    difeq1d.1 $e |- ( ph -> A = B ) $.
+    $( Deduction adding difference to the right in a class equality.
+       (Contributed by NM, 15-Nov-2002.) $)
+    difeq1d $p |- ( ph -> ( A \ C ) = ( B \ C ) ) $=
+      ( wceq cdif difeq1 syl ) ABCFBDGCDGFEBCDHI $.
+
+    $( Deduction adding difference to the left in a class equality.
+       (Contributed by NM, 15-Nov-2002.) $)
+    difeq2d $p |- ( ph -> ( C \ A ) = ( C \ B ) ) $=
+      ( wceq cdif difeq2 syl ) ABCFDBGDCGFEBCDHI $.
+  $}
+
+  ${
+    difeq12d.1 $e |- ( ph -> A = B ) $.
+    difeq12d.2 $e |- ( ph -> C = D ) $.
+    $( Equality deduction for class difference.  (Contributed by FL,
+       29-May-2014.) $)
+    difeq12d $p |- ( ph -> ( A \ C ) = ( B \ D ) ) $=
+      ( cdif difeq1d difeq2d eqtrd ) ABDHCDHCEHABCDFIADECGJK $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    difeqri.1 $e |- ( ( x e. A /\ -. x e. B ) <-> x e. C ) $.
+    $( Inference from membership to difference.  (Contributed by NM,
+       17-May-1998.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    difeqri $p |- ( A \ B ) = C $=
+      ( cdif cv wcel wn wa eldif bitri eqriv ) ABCFZDAGZNHOBHOCHIJODHOBCKELM $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    nfdif.1 $e |- F/_ x A $.
+    nfdif.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for class difference.  (Contributed by
+       NM, 3-Dec-2003.)  (Revised by Mario Carneiro, 13-Oct-2016.) $)
+    nfdif $p |- F/_ x ( A \ B ) $=
+      ( vy cdif cv wcel wn crab dfdif2 nfcri nfn nfrabxy nfcxfr ) ABCGFHCIZJZFB
+      KFBCLRAFBQAAFCEMNDOP $.
+  $}
+
+  $( Implication of membership in a class difference.  (Contributed by NM,
+     29-Apr-1994.) $)
+  eldifi $p |- ( A e. ( B \ C ) -> A e. B ) $=
+    ( cdif wcel wn eldif simplbi ) ABCDEABEACEFABCGH $.
+
+  $( Implication of membership in a class difference.  (Contributed by NM,
+     3-May-1994.) $)
+  eldifn $p |- ( A e. ( B \ C ) -> -. A e. C ) $=
+    ( cdif wcel wn eldif simprbi ) ABCDEABEACEFABCGH $.
+
+  $( A set does not belong to a class excluding it.  (Contributed by NM,
+     27-Jun-1994.) $)
+  elndif $p |- ( A e. B -> -. A e. ( C \ B ) ) $=
+    ( cdif wcel eldifn con2i ) ACBDEABEACBFG $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Double class difference.  Exercise 11 of [TakeutiZaring] p. 22.
+       (Contributed by NM, 17-May-1998.) $)
+    difdif $p |- ( A \ ( B \ A ) ) = A $=
+      ( vx cdif cv wcel wn wa ax-ia1 wi pm4.45im imanim eldif sylnibr
+      anim2i sylbi impbii difeqri ) CABADZACEZAFZTSFZGZHZUAUAUCIUAUAT
+      BFZUAJZHUDUAUEKUFUCUAUFUEUAGHUBUEUALTBAMNOPQR $.
+
+    $( Subclass relationship for class difference.  Exercise 14 of
+       [TakeutiZaring] p. 22.  (Contributed by NM, 29-Apr-1994.) $)
+    difss $p |- ( A \ B ) C_ A $=
+      ( vx cdif cv eldifi ssriv ) CABDACEABFG $.
+  $}
+
+  $( A difference of two classes is contained in the minuend.  Deduction form
+     of ~ difss .  (Contributed by David Moews, 1-May-2017.) $)
+  difssd $p |- ( ph -> ( A \ B ) C_ A ) $=
+    ( cdif wss difss a1i ) BCDBEABCFG $.
+
+  $( If a class is contained in a difference, it is contained in the minuend.
+     (Contributed by David Moews, 1-May-2017.) $)
+  difss2 $p |- ( A C_ ( B \ C ) -> A C_ B ) $=
+    ( cdif wss id difss syl6ss ) ABCDZEZAIBJFBCGH $.
+
+  ${
+    difss2d.1 $e |- ( ph -> A C_ ( B \ C ) ) $.
+    $( If a class is contained in a difference, it is contained in the
+       minuend.  Deduction form of ~ difss2 .  (Contributed by David Moews,
+       1-May-2017.) $)
+    difss2d $p |- ( ph -> A C_ B ) $=
+      ( cdif wss difss2 syl ) ABCDFGBCGEBCDHI $.
+  $}
+
+  $( Preservation of a subclass relationship by class difference.  (Contributed
+     by NM, 15-Feb-2007.) $)
+  ssdifss $p |- ( A C_ B -> ( A \ C ) C_ B ) $=
+    ( cdif wss difss sstr mpan ) ACDZAEABEIBEACFIABGH $.
+
+  ${
+    $d x A $.
+    ddifnel.1 $e |- ( -. x e. ( _V \ A ) -> x e. A ) $.
+    $( Double complement under universal class.  The hypothesis is one way of
+       expressing the idea that membership in ` A ` is decidable.  Exercise
+       4.10(s) of [Mendelson] p. 231, but with an additional hypothesis.  For a
+       version without a hypothesis, but which only states that ` A ` is a
+       subset of ` _V \ ( _V \ A ) ` , see ~ ddifss .  (Contributed by Jim
+       Kingdon, 21-Jul-2018.) $)
+    ddifnel $p |- ( _V \ ( _V \ A ) ) = A $=
+      ( cvv cdif cv wcel wn wa adantl elndif vex jctil impbii difeqri ) ADDBEZB
+      AFZDGZQPGHZIQBGZSTRCJTSRQBDKALMNO $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Contraposition law for subsets.  (Contributed by NM, 22-Mar-1998.) $)
+    ssconb $p |- ( ( A C_ C /\ B C_ C ) ->
+                  ( A C_ ( C \ B ) <-> B C_ ( C \ A ) ) ) $=
+      ( vx wss wa cv wcel cdif wi wal wn wb ssel pm5.1 jcab 3bitr4g eldif dfss2
+      imbi2i syl2an con2b a1i anbi12d albidv ) ACEZBCEZFZDGZAHZUICBIZHZJZDKUIBH
+      ZUICAIZHZJZDKAUKEBUOEUHUMUQDUHUJUICHZUNLZFZJZUNURUJLZFZJZUMUQUHUJURJZUJUS
+      JZFUNURJZUNVBJZFVAVDUHVEVGVFVHUFVEVGVEVGMUGACUINBCUINVEVGOUAVFVHMUHUJUNUB
+      UCUDUJURUSPUNURVBPQULUTUJUICBRTUPVCUNUICARTQUEDAUKSDBUOSQ $.
+
+    $( Contraposition law for subsets.  Exercise 15 of [TakeutiZaring] p. 22.
+       (Contributed by NM, 22-Mar-1998.) $)
+    sscon $p |- ( A C_ B -> ( C \ B ) C_ ( C \ A ) ) $=
+      ( vx wss cdif cv wcel wn wa ssel con3d anim2d eldif 3imtr4g ssrdv ) ABEZD
+      CBFZCAFZQDGZCHZTBHZIZJUATAHZIZJTRHTSHQUCUEUAQUDUBABTKLMTCBNTCANOP $.
+
+    $( Difference law for subsets.  (Contributed by NM, 28-May-1998.) $)
+    ssdif $p |- ( A C_ B -> ( A \ C ) C_ ( B \ C ) ) $=
+      ( vx wss cdif cv wcel wn wa ssel anim1d eldif 3imtr4g ssrdv ) ABEZDACFZBC
+      FZPDGZAHZSCHIZJSBHZUAJSQHSRHPTUBUAABSKLSACMSBCMNO $.
+  $}
+
+  ${
+    ssdifd.1 $e |- ( ph -> A C_ B ) $.
+    $( If ` A ` is contained in ` B ` , then ` ( A \ C ) ` is contained in
+       ` ( B \ C ) ` .  Deduction form of ~ ssdif .  (Contributed by David
+       Moews, 1-May-2017.) $)
+    ssdifd $p |- ( ph -> ( A \ C ) C_ ( B \ C ) ) $=
+      ( wss cdif ssdif syl ) ABCFBDGCDGFEBCDHI $.
+
+    $( If ` A ` is contained in ` B ` , then ` ( C \ B ) ` is contained in
+       ` ( C \ A ) ` .  Deduction form of ~ sscon .  (Contributed by David
+       Moews, 1-May-2017.) $)
+    sscond $p |- ( ph -> ( C \ B ) C_ ( C \ A ) ) $=
+      ( wss cdif sscon syl ) ABCFDCGDBGFEBCDHI $.
+
+    $( If ` A ` is contained in ` B ` , then ` ( A \ C ) ` is also contained in
+       ` B ` .  Deduction form of ~ ssdifss .  (Contributed by David Moews,
+       1-May-2017.) $)
+    ssdifssd $p |- ( ph -> ( A \ C ) C_ B ) $=
+      ( wss cdif ssdifss syl ) ABCFBDGCFEBCDHI $.
+
+    ssdif2d.2 $e |- ( ph -> C C_ D ) $.
+    $( If ` A ` is contained in ` B ` and ` C ` is contained in ` D ` , then
+       ` ( A \ D ) ` is contained in ` ( B \ C ) ` .  Deduction form.
+       (Contributed by David Moews, 1-May-2017.) $)
+    ssdif2d $p |- ( ph -> ( A \ D ) C_ ( B \ C ) ) $=
+      ( cdif sscond ssdifd sstrd ) ABEHBDHCDHADEBGIABCDFJK $.
+  $}
+
+  $( Restricted universal quantification on a class difference in terms of an
+     implication.  (Contributed by Alexander van der Vekens, 3-Jan-2018.) $)
+  raldifb $p |- ( A. x e. A ( x e/ B -> ph ) <-> A. x e. ( A \ B ) ph ) $=
+    ( cv wnel wi cdif wcel wa impexp bicomi wn df-nel anbi2i eldif bitri imbi1i
+    ralbii2 ) BEZDFZAGZABCCDHZTCIZUBGZUDUAJZAGZTUCIZAGUGUEUDUAAKLUFUHAUFUDTDIMZ
+    JZUHUAUIUDTDNOUHUJTCDPLQRQS $.
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+      The union of two classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Expansion of membership in class union.  Theorem 12 of [Suppes] p. 25.
+       (Contributed by NM, 7-Aug-1994.) $)
+    elun $p |- ( A e. ( B u. C ) <-> ( A e. B \/ A e. C ) ) $=
+      ( vx cun wcel cvv wo elex jaoi wceq eleq1 orbi12d df-un elab2g pm5.21nii
+      cv ) ABCEZFAGFZABFZACFZHZARITSUAABIACIJDQZBFZUCCFZHUBDARGUCAKUDTUEUAUCABL
+      UCACLMDBCNOP $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    uneqri.1 $e |- ( ( x e. A \/ x e. B ) <-> x e. C ) $.
+    $( Inference from membership to union.  (Contributed by NM, 5-Aug-1993.) $)
+    uneqri $p |- ( A u. B ) = C $=
+      ( cun cv wcel wo elun bitri eqriv ) ABCFZDAGZMHNBHNCHINDHNBCJEKL $.
+  $}
+
+  ${
+    $d x A $.
+    $( Idempotent law for union of classes.  Theorem 23 of [Suppes] p. 27.
+       (Contributed by NM, 5-Aug-1993.) $)
+    unidm $p |- ( A u. A ) = A $=
+      ( vx cv wcel oridm uneqri ) BAAABCADEF $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Commutative law for union of classes.  Exercise 6 of [TakeutiZaring]
+       p. 17.  (Contributed by NM, 25-Jun-1998.)  (Proof shortened by Andrew
+       Salmon, 26-Jun-2011.) $)
+    uncom $p |- ( A u. B ) = ( B u. A ) $=
+      ( vx cun cv wcel wo orcom elun bitr4i uneqri ) CABBADZCEZAFZMBFZGONGMLFNO
+      HMBAIJK $.
+  $}
+
+  ${
+    $( If a class equals the union of two other classes, then it equals the
+       union of those two classes commuted.  (Contributed by Alan Sare,
+       18-Feb-2012.) $)
+    equncom $p |- ( A = ( B u. C ) <-> A = ( C u. B ) ) $=
+      ( cun uncom eqeq2i ) BCDCBDABCEF $.
+  $}
+
+  ${
+    equncomi.1 $e |- A = ( B u. C ) $.
+    $( Inference form of ~ equncom .  (Contributed by Alan Sare,
+       18-Feb-2012.) $)
+    equncomi $p |- A = ( C u. B ) $=
+      ( cun wceq equncom mpbi ) ABCEFACBEFDABCGH $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Equality theorem for union of two classes.  (Contributed by NM,
+       5-Aug-1993.) $)
+    uneq1 $p |- ( A = B -> ( A u. C ) = ( B u. C ) ) $=
+      ( vx wceq cun cv wcel wo eleq2 orbi1d elun 3bitr4g eqrdv ) ABEZDACFZBCFZO
+      DGZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
+  $}
+
+  $( Equality theorem for the union of two classes.  (Contributed by NM,
+     5-Aug-1993.) $)
+  uneq2 $p |- ( A = B -> ( C u. A ) = ( C u. B ) ) $=
+    ( wceq cun uneq1 uncom 3eqtr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
+
+  $( Equality theorem for union of two classes.  (Contributed by NM,
+     29-Mar-1998.) $)
+  uneq12 $p |- ( ( A = B /\ C = D ) -> ( A u. C ) = ( B u. D ) ) $=
+    ( wceq cun uneq1 uneq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
+
+  ${
+    uneq1i.1 $e |- A = B $.
+    $( Inference adding union to the right in a class equality.  (Contributed
+       by NM, 30-Aug-1993.) $)
+    uneq1i $p |- ( A u. C ) = ( B u. C ) $=
+      ( wceq cun uneq1 ax-mp ) ABEACFBCFEDABCGH $.
+
+    $( Inference adding union to the left in a class equality.  (Contributed by
+       NM, 30-Aug-1993.) $)
+    uneq2i $p |- ( C u. A ) = ( C u. B ) $=
+      ( wceq cun uneq2 ax-mp ) ABECAFCBFEDABCGH $.
+
+    ${
+      uneq12i.2 $e |- C = D $.
+      $( Equality inference for union of two classes.  (Contributed by NM,
+         12-Aug-2004.)  (Proof shortened by Eric Schmidt, 26-Jan-2007.) $)
+      uneq12i $p |- ( A u. C ) = ( B u. D ) $=
+        ( wceq cun uneq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
+    $}
+  $}
+
+  ${
+    uneq1d.1 $e |- ( ph -> A = B ) $.
+    $( Deduction adding union to the right in a class equality.  (Contributed
+       by NM, 29-Mar-1998.) $)
+    uneq1d $p |- ( ph -> ( A u. C ) = ( B u. C ) ) $=
+      ( wceq cun uneq1 syl ) ABCFBDGCDGFEBCDHI $.
+
+    $( Deduction adding union to the left in a class equality.  (Contributed by
+       NM, 29-Mar-1998.) $)
+    uneq2d $p |- ( ph -> ( C u. A ) = ( C u. B ) ) $=
+      ( wceq cun uneq2 syl ) ABCFDBGDCGFEBCDHI $.
+
+    ${
+      uneq12d.2 $e |- ( ph -> C = D ) $.
+      $( Equality deduction for union of two classes.  (Contributed by NM,
+         29-Sep-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+      uneq12d $p |- ( ph -> ( A u. C ) = ( B u. D ) ) $=
+        ( wceq cun uneq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
+    $}
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    nfun.1 $e |- F/_ x A $.
+    nfun.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for the union of classes.
+       (Contributed by NM, 15-Sep-2003.)  (Revised by Mario Carneiro,
+       14-Oct-2016.) $)
+    nfun $p |- F/_ x ( A u. B ) $=
+      ( vy cun cv wcel wo cab df-un nfcri nfor nfab nfcxfr ) ABCGFHZBIZQCIZJZFK
+      FBCLTAFRSAAFBDMAFCEMNOP $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Associative law for union of classes.  Exercise 8 of [TakeutiZaring]
+       p. 17.  (Contributed by NM, 3-May-1994.)  (Proof shortened by Andrew
+       Salmon, 26-Jun-2011.) $)
+    unass $p |- ( ( A u. B ) u. C ) = ( A u. ( B u. C ) ) $=
+      ( vx cun cv wcel wo elun orbi2i orbi1i orass bitr2i 3bitrri uneqri ) DABE
+      ZCABCEZEZDFZRGSAGZSQGZHTSBGZSCGZHZHZSPGZUCHZSAQIUAUDTSBCIJUGTUBHZUCHUEUFU
+      HUCSABIKTUBUCLMNO $.
+  $}
+
+  $( A rearrangement of union.  (Contributed by NM, 12-Aug-2004.) $)
+  un12 $p |- ( A u. ( B u. C ) ) = ( B u. ( A u. C ) ) $=
+    ( cun uncom uneq1i unass 3eqtr3i ) ABDZCDBADZCDABCDDBACDDIJCABEFABCGBACGH
+    $.
+
+  $( A rearrangement of union.  (Contributed by NM, 12-Aug-2004.)  (Proof
+     shortened by Andrew Salmon, 26-Jun-2011.) $)
+  un23 $p |- ( ( A u. B ) u. C ) = ( ( A u. C ) u. B ) $=
+    ( cun unass un12 uncom 3eqtri ) ABDCDABCDDBACDZDIBDABCEABCFBIGH $.
+
+  $( A rearrangement of the union of 4 classes.  (Contributed by NM,
+     12-Aug-2004.) $)
+  un4 $p |- ( ( A u. B ) u. ( C u. D ) ) =
+            ( ( A u. C ) u. ( B u. D ) ) $=
+    ( cun un12 uneq2i unass 3eqtr4i ) ABCDEZEZEACBDEZEZEABEJEACELEKMABCDFGABJHA
+    CLHI $.
+
+  $( Union distributes over itself.  (Contributed by NM, 17-Aug-2004.) $)
+  unundi $p |- ( A u. ( B u. C ) ) = ( ( A u. B ) u. ( A u. C ) ) $=
+    ( cun unidm uneq1i un4 eqtr3i ) AADZBCDZDAJDABDACDDIAJAEFAABCGH $.
+
+  $( Union distributes over itself.  (Contributed by NM, 17-Aug-2004.) $)
+  unundir $p |- ( ( A u. B ) u. C ) = ( ( A u. C ) u. ( B u. C ) ) $=
+    ( cun unidm uneq2i un4 eqtr3i ) ABDZCCDZDICDACDBCDDJCICEFABCCGH $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Subclass relationship for union of classes.  Theorem 25 of [Suppes]
+       p. 27.  (Contributed by NM, 5-Aug-1993.) $)
+    ssun1 $p |- A C_ ( A u. B ) $=
+      ( vx cun cv wcel wo orc elun sylibr ssriv ) CAABDZCEZAFZNMBFZGMLFNOHMABIJ
+      K $.
+  $}
+
+  $( Subclass relationship for union of classes.  (Contributed by NM,
+     30-Aug-1993.) $)
+  ssun2 $p |- A C_ ( B u. A ) $=
+    ( cun ssun1 uncom sseqtri ) AABCBACABDABEF $.
+
+  $( Subclass law for union of classes.  (Contributed by NM, 5-Aug-1993.) $)
+  ssun3 $p |- ( A C_ B -> A C_ ( B u. C ) ) $=
+    ( wss cun ssun1 sstr2 mpi ) ABDBBCEZDAIDBCFABIGH $.
+
+  $( Subclass law for union of classes.  (Contributed by NM, 14-Aug-1994.) $)
+  ssun4 $p |- ( A C_ B -> A C_ ( C u. B ) ) $=
+    ( wss cun ssun2 sstr2 mpi ) ABDBCBEZDAIDBCFABIGH $.
+
+  $( Membership law for union of classes.  (Contributed by NM, 5-Aug-1993.) $)
+  elun1 $p |- ( A e. B -> A e. ( B u. C ) ) $=
+    ( cun ssun1 sseli ) BBCDABCEF $.
+
+  $( Membership law for union of classes.  (Contributed by NM, 30-Aug-1993.) $)
+  elun2 $p |- ( A e. B -> A e. ( C u. B ) ) $=
+    ( cun ssun2 sseli ) BCBDABCEF $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Subclass law for union of classes.  (Contributed by NM, 14-Oct-1999.)
+       (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    unss1 $p |- ( A C_ B -> ( A u. C ) C_ ( B u. C ) ) $=
+      ( vx wss cun cv wcel wo ssel orim1d elun 3imtr4g ssrdv ) ABEZDACFZBCFZODG
+      ZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
+
+    $( A relationship between subclass and union.  Theorem 26 of [Suppes]
+       p. 27.  (Contributed by NM, 30-Aug-1993.)  (Proof shortened by Andrew
+       Salmon, 26-Jun-2011.) $)
+    ssequn1 $p |- ( A C_ B <-> ( A u. B ) = B ) $=
+      ( vx cv wcel wi wal cun wb wceq wo bicom pm4.72 elun bibi1i 3bitr4i albii
+      wss dfss2 dfcleq ) CDZAEZUABEZFZCGUAABHZEZUCIZCGABRUEBJUDUGCUCUBUCKZIUHUC
+      IUDUGUCUHLUBUCMUFUHUCUAABNOPQCABSCUEBTP $.
+  $}
+
+  $( Subclass law for union of classes.  Exercise 7 of [TakeutiZaring] p. 18.
+     (Contributed by NM, 14-Oct-1999.) $)
+  unss2 $p |- ( A C_ B -> ( C u. A ) C_ ( C u. B ) ) $=
+    ( wss cun unss1 uncom 3sstr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
+
+  $( Subclass law for union of classes.  (Contributed by NM, 2-Jun-2004.) $)
+  unss12 $p |- ( ( A C_ B /\ C C_ D ) -> ( A u. C ) C_ ( B u. D ) ) $=
+    ( wss cun unss1 unss2 sylan9ss ) ABECDEACFBCFBDFABCGCDBHI $.
+
+  $( A relationship between subclass and union.  (Contributed by NM,
+     13-Jun-1994.) $)
+  ssequn2 $p |- ( A C_ B <-> ( B u. A ) = B ) $=
+    ( wss cun wceq ssequn1 uncom eqeq1i bitri ) ABCABDZBEBADZBEABFJKBABGHI $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( The union of two subclasses is a subclass.  Theorem 27 of [Suppes] p. 27
+       and its converse.  (Contributed by NM, 11-Jun-2004.) $)
+    unss $p |- ( ( A C_ C /\ B C_ C ) <-> ( A u. B ) C_ C ) $=
+      ( vx cun wss cv wcel wi wal wa dfss2 19.26 elun imbi1i jaob bitri anbi12i
+      wo albii 3bitr4i bitr2i ) ABEZCFDGZUCHZUDCHZIZDJZACFZBCFZKZDUCCLUDAHZUFIZ
+      UDBHZUFIZKZDJUMDJZUODJZKUHUKUMUODMUGUPDUGULUNSZUFIUPUEUSUFUDABNOULUFUNPQT
+      UIUQUJURDACLDBCLRUAUB $.
+  $}
+
+  ${
+    unssi.1 $e |- A C_ C $.
+    unssi.2 $e |- B C_ C $.
+    $( An inference showing the union of two subclasses is a subclass.
+       (Contributed by Raph Levien, 10-Dec-2002.) $)
+    unssi $p |- ( A u. B ) C_ C $=
+      ( wss wa cun pm3.2i unss mpbi ) ACFZBCFZGABHCFLMDEIABCJK $.
+  $}
+
+  ${
+    unssd.1 $e |- ( ph -> A C_ C ) $.
+    unssd.2 $e |- ( ph -> B C_ C ) $.
+    $( A deduction showing the union of two subclasses is a subclass.
+       (Contributed by Jonathan Ben-Naim, 3-Jun-2011.) $)
+    unssd $p |- ( ph -> ( A u. B ) C_ C ) $=
+      ( wss cun wa unss biimpi syl2anc ) ABDGZCDGZBCHDGZEFMNIOBCDJKL $.
+  $}
+
+  ${
+    unssad.1 $e |- ( ph -> ( A u. B ) C_ C ) $.
+    $( If ` ( A u. B ) ` is contained in ` C ` , so is ` A ` .  One-way
+       deduction form of ~ unss .  Partial converse of ~ unssd .  (Contributed
+       by David Moews, 1-May-2017.) $)
+    unssad $p |- ( ph -> A C_ C ) $=
+      ( wss cun wa unss sylibr simpld ) ABDFZCDFZABCGDFLMHEBCDIJK $.
+
+    $( If ` ( A u. B ) ` is contained in ` C ` , so is ` B ` .  One-way
+       deduction form of ~ unss .  Partial converse of ~ unssd .  (Contributed
+       by David Moews, 1-May-2017.) $)
+    unssbd $p |- ( ph -> B C_ C ) $=
+      ( wss cun wa unss sylibr simprd ) ABDFZCDFZABCGDFLMHEBCDIJK $.
+  $}
+
+  $( A condition that implies inclusion in the union of two classes.
+     (Contributed by NM, 23-Nov-2003.) $)
+  ssun $p |- ( ( A C_ B \/ A C_ C ) -> A C_ ( B u. C ) ) $=
+    ( wss cun ssun3 ssun4 jaoi ) ABDABCEDACDABCFACBGH $.
+
+  $( Restricted existential quantification over union.  (Contributed by Jeff
+     Madsen, 5-Jan-2011.) $)
+  rexun $p |- ( E. x e. ( A u. B ) ph <->
+                          ( E. x e. A ph \/ E. x e. B ph ) ) $=
+    ( cun wrex cv wcel wa wo df-rex 19.43 elun anbi1i andir bitri exbii orbi12i
+    wex 3bitr4i ) ABCDEZFBGZUAHZAIZBSZABCFZABDFZJZABUAKUBCHZAIZUBDHZAIZJZBSUJBS
+    ZULBSZJUEUHUJULBLUDUMBUDUIUKJZAIUMUCUPAUBCDMNUIUKAOPQUFUNUGUOABCKABDKRTP $.
+
+  $( Restricted quantification over a union.  (Contributed by Scott Fenton,
+     12-Apr-2011.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+  ralunb $p |- ( A. x e. ( A u. B ) ph <->
+                 ( A. x e. A ph /\ A. x e. B ph ) ) $=
+    ( cv cun wcel wi wal wa wral wo elun imbi1i jaob bitri albii df-ral anbi12i
+    19.26 3bitr4i ) BEZCDFZGZAHZBIZUBCGZAHZBIZUBDGZAHZBIZJZABUCKABCKZABDKZJUFUH
+    UKJZBIUMUEUPBUEUGUJLZAHUPUDUQAUBCDMNUGAUJOPQUHUKBTPABUCRUNUIUOULABCRABDRSUA
+    $.
+
+  $( Restricted quantification over union.  (Contributed by Jeff Madsen,
+     2-Sep-2009.) $)
+  ralun $p |- ( ( A. x e. A ph /\ A. x e. B ph ) -> A. x e. ( A u. B ) ph ) $=
+    ( cun wral wa ralunb biimpri ) ABCDEFABCFABDFGABCDHI $.
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+      The intersection of two classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Expansion of membership in an intersection of two classes.  Theorem 12
+       of [Suppes] p. 25.  (Contributed by NM, 29-Apr-1994.) $)
+    elin $p |- ( A e. ( B i^i C ) <-> ( A e. B /\ A e. C ) ) $=
+      ( vx cin wcel wa elex adantl cv wceq eleq1 anbi12d df-in elab2g pm5.21nii
+      cvv ) ABCEZFAQFZABFZACFZGZARHUASTACHIDJZBFZUCCFZGUBDARQUCAKUDTUEUAUCABLUC
+      ACLMDBCNOP $.
+  $}
+
+  ${
+    elin2.x $e |- X = ( B i^i C ) $.
+    $( Membership in a class defined as an intersection.  (Contributed by
+       Stefan O'Rear, 29-Mar-2015.) $)
+    elin2 $p |- ( A e. X <-> ( A e. B /\ A e. C ) ) $=
+      ( wcel cin wa eleq2i elin bitri ) ADFABCGZFABFACFHDLAEIABCJK $.
+  $}
+
+  ${
+    elin3.x $e |- X = ( ( B i^i C ) i^i D ) $.
+    $( Membership in a class defined as a ternary intersection.  (Contributed
+       by Stefan O'Rear, 29-Mar-2015.) $)
+    elin3 $p |- ( A e. X <-> ( A e. B /\ A e. C /\ A e. D ) ) $=
+      ( cin wcel wa w3a elin anbi1i elin2 df-3an 3bitr4i ) ABCGZHZADHZIABHZACHZ
+      IZRIAEHSTRJQUARABCKLAPDEFMSTRNO $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( Commutative law for intersection of classes.  Exercise 7 of
+       [TakeutiZaring] p. 17.  (Contributed by NM, 5-Aug-1993.) $)
+    incom $p |- ( A i^i B ) = ( B i^i A ) $=
+      ( vx cin cv wcel wa ancom elin 3bitr4i eqriv ) CABDZBADZCEZAFZNBFZGPOGNLF
+      NMFOPHNABINBAIJK $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    ineqri.1 $e |- ( ( x e. A /\ x e. B ) <-> x e. C ) $.
+    $( Inference from membership to intersection.  (Contributed by NM,
+       5-Aug-1993.) $)
+    ineqri $p |- ( A i^i B ) = C $=
+      ( cin cv wcel wa elin bitri eqriv ) ABCFZDAGZMHNBHNCHINDHNBCJEKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Equality theorem for intersection of two classes.  (Contributed by NM,
+       14-Dec-1993.) $)
+    ineq1 $p |- ( A = B -> ( A i^i C ) = ( B i^i C ) ) $=
+      ( vx wceq cin cv wcel wa eleq2 anbi1d elin 3bitr4g eqrdv ) ABEZDACFZBCFZO
+      DGZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
+  $}
+
+  $( Equality theorem for intersection of two classes.  (Contributed by NM,
+     26-Dec-1993.) $)
+  ineq2 $p |- ( A = B -> ( C i^i A ) = ( C i^i B ) ) $=
+    ( wceq cin ineq1 incom 3eqtr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
+
+  $( Equality theorem for intersection of two classes.  (Contributed by NM,
+     8-May-1994.) $)
+  ineq12 $p |- ( ( A = B /\ C = D ) -> ( A i^i C ) = ( B i^i D ) ) $=
+    ( wceq cin ineq1 ineq2 sylan9eq ) ABECDEACFBCFBDFABCGCDBHI $.
+
+  ${
+    ineq1i.1 $e |- A = B $.
+    $( Equality inference for intersection of two classes.  (Contributed by NM,
+       26-Dec-1993.) $)
+    ineq1i $p |- ( A i^i C ) = ( B i^i C ) $=
+      ( wceq cin ineq1 ax-mp ) ABEACFBCFEDABCGH $.
+
+    $( Equality inference for intersection of two classes.  (Contributed by NM,
+       26-Dec-1993.) $)
+    ineq2i $p |- ( C i^i A ) = ( C i^i B ) $=
+      ( wceq cin ineq2 ax-mp ) ABECAFCBFEDABCGH $.
+
+    ${
+      ineq12i.2 $e |- C = D $.
+      $( Equality inference for intersection of two classes.  (Contributed by
+         NM, 24-Jun-2004.)  (Proof shortened by Eric Schmidt, 26-Jan-2007.) $)
+      ineq12i $p |- ( A i^i C ) = ( B i^i D ) $=
+        ( wceq cin ineq12 mp2an ) ABGCDGACHBDHGEFABCDIJ $.
+    $}
+  $}
+
+  ${
+    ineq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for intersection of two classes.  (Contributed by NM,
+       10-Apr-1994.) $)
+    ineq1d $p |- ( ph -> ( A i^i C ) = ( B i^i C ) ) $=
+      ( wceq cin ineq1 syl ) ABCFBDGCDGFEBCDHI $.
+
+    $( Equality deduction for intersection of two classes.  (Contributed by NM,
+       10-Apr-1994.) $)
+    ineq2d $p |- ( ph -> ( C i^i A ) = ( C i^i B ) ) $=
+      ( wceq cin ineq2 syl ) ABCFDBGDCGFEBCDHI $.
+
+    ${
+      ineq12d.2 $e |- ( ph -> C = D ) $.
+      $( Equality deduction for intersection of two classes.  (Contributed by
+         NM, 24-Jun-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+      ineq12d $p |- ( ph -> ( A i^i C ) = ( B i^i D ) ) $=
+        ( wceq cin ineq12 syl2anc ) ABCHDEHBDICEIHFGBCDEJK $.
+    $}
+
+    ${
+      ineqan12d.2 $e |- ( ps -> C = D ) $.
+      $( Equality deduction for intersection of two classes.  (Contributed by
+         NM, 7-Feb-2007.) $)
+      ineqan12d $p |- ( ( ph /\ ps ) -> ( A i^i C ) = ( B i^i D ) ) $=
+        ( wceq cin ineq12 syl2an ) ACDIEFICEJDFJIBGHCDEFKL $.
+    $}
+  $}
+
+  $( A frequently-used variant of subclass definition ~ df-ss .  (Contributed
+     by NM, 10-Jan-2015.) $)
+  dfss1 $p |- ( A C_ B <-> ( B i^i A ) = A ) $=
+    ( wss cin wceq df-ss incom eqeq1i bitri ) ABCABDZAEBADZAEABFJKAABGHI $.
+
+  $( Another definition of subclasshood.  Similar to ~ df-ss , ~ dfss , and
+     ~ dfss1 .  (Contributed by David Moews, 1-May-2017.) $)
+  dfss5 $p |- ( A C_ B <-> A = ( B i^i A ) ) $=
+    ( wss cin wceq dfss1 eqcom bitri ) ABCBADZAEAIEABFIAGH $.
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    nfin.1 $e |- F/_ x A $.
+    nfin.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for the intersection of classes.
+       (Contributed by NM, 15-Sep-2003.)  (Revised by Mario Carneiro,
+       14-Oct-2016.) $)
+    nfin $p |- F/_ x ( A i^i B ) $=
+      ( vy cin cv wcel crab dfin5 nfcri nfrabxy nfcxfr ) ABCGFHCIZFBJFBCKO
+      AFBAFCELDMN $.
+  $}
+
+  ${
+    $d A y $.  $d C y z $.  $d D y z $.  $d x y z $.
+    $( Distribute proper substitution through an intersection relation.
+       (Contributed by Alan Sare, 22-Jul-2012.) $)
+    csbing $p |- ( A e. B -> [_ A / x ]_ ( C i^i D ) =
+                  ( [_ A / x ]_ C i^i [_ A / x ]_ D ) ) $=
+      ( vy cv cin csb wceq csbeq1 ineq12d eqeq12d nfcsb1v csbeq1a csbief vtoclg
+      vex nfin ) AFGZDEHZIZATDIZATEIZHZJABUAIZABDIZABEIZHZJFBCTBJZUBUFUEUIATBUA
+      KUJUCUGUDUHATBDKATBEKLMATUAUEFRAUCUDATDNATENSAGTJDUCEUDATDOATEOLPQ $.
+  $}
+
+  ${
+    $d x ph $.  $d x A $.  $d x B $.
+    rabbi2dva.1 $e |- ( ( ph /\ x e. A ) -> ( x e. B <-> ps ) ) $.
+    $( Deduction from a wff to a restricted class abstraction.  (Contributed by
+       NM, 14-Jan-2014.) $)
+    rabbi2dva $p |- ( ph -> ( A i^i B ) = { x e. A | ps } ) $=
+      ( cin cv wcel crab dfin5 rabbidva syl5eq ) ADEGCHEIZCDJBCDJCDEKANBCDFLM
+      $.
+  $}
+
+  ${
+    $d x A $.
+    $( Idempotent law for intersection of classes.  Theorem 15 of [Suppes]
+       p. 26.  (Contributed by NM, 5-Aug-1993.) $)
+    inidm $p |- ( A i^i A ) = A $=
+      ( vx cv wcel anidm ineqri ) BAAABCADEF $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Associative law for intersection of classes.  Exercise 9 of
+       [TakeutiZaring] p. 17.  (Contributed by NM, 3-May-1994.) $)
+    inass $p |- ( ( A i^i B ) i^i C ) = ( A i^i ( B i^i C ) ) $=
+      ( vx cin cv wcel wa anass elin anbi2i bitr4i anbi1i 3bitr4i ineqri ) DABE
+      ZCABCEZEZDFZAGZSBGZHZSCGZHZTSQGZHZSPGZUCHSRGUDTUAUCHZHUFTUAUCIUEUHTSBCJKL
+      UGUBUCSABJMSAQJNO $.
+  $}
+
+  $( A rearrangement of intersection.  (Contributed by NM, 21-Apr-2001.) $)
+  in12 $p |- ( A i^i ( B i^i C ) ) = ( B i^i ( A i^i C ) ) $=
+    ( cin incom ineq1i inass 3eqtr3i ) ABDZCDBADZCDABCDDBACDDIJCABEFABCGBACGH
+    $.
+
+  $( A rearrangement of intersection.  (Contributed by NM, 21-Apr-2001.)
+     (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+  in32 $p |- ( ( A i^i B ) i^i C ) = ( ( A i^i C ) i^i B ) $=
+    ( cin inass in12 incom 3eqtri ) ABDCDABCDDBACDZDIBDABCEABCFBIGH $.
+
+  $( A rearrangement of intersection.  (Contributed by NM, 27-Aug-2012.) $)
+  in13 $p |- ( A i^i ( B i^i C ) ) = ( C i^i ( B i^i A ) ) $=
+    ( cin in32 incom 3eqtr4i ) BCDZADBADZCDAHDCIDBCAEAHFCIFG $.
+
+  $( A rearrangement of intersection.  (Contributed by NM, 27-Aug-2012.) $)
+  in31 $p |- ( ( A i^i B ) i^i C ) = ( ( C i^i B ) i^i A ) $=
+    ( cin in12 incom 3eqtr4i ) CABDZDACBDZDHCDIADCABEHCFIAFG $.
+
+  $( Rotate the intersection of 3 classes.  (Contributed by NM,
+     27-Aug-2012.) $)
+  inrot $p |- ( ( A i^i B ) i^i C ) = ( ( C i^i A ) i^i B ) $=
+    ( cin in31 in32 eqtri ) ABDCDCBDADCADBDABCECBAFG $.
+
+  $( Rearrangement of intersection of 4 classes.  (Contributed by NM,
+     21-Apr-2001.) $)
+  in4 $p |- ( ( A i^i B ) i^i ( C i^i D ) ) =
+            ( ( A i^i C ) i^i ( B i^i D ) ) $=
+    ( cin in12 ineq2i inass 3eqtr4i ) ABCDEZEZEACBDEZEZEABEJEACELEKMABCDFGABJHA
+    CLHI $.
+
+  $( Intersection distributes over itself.  (Contributed by NM, 6-May-1994.) $)
+  inindi $p |- ( A i^i ( B i^i C ) ) = ( ( A i^i B ) i^i ( A i^i C ) ) $=
+    ( cin inidm ineq1i in4 eqtr3i ) AADZBCDZDAJDABDACDDIAJAEFAABCGH $.
+
+  $( Intersection distributes over itself.  (Contributed by NM,
+     17-Aug-2004.) $)
+  inindir $p |- ( ( A i^i B ) i^i C ) = ( ( A i^i C ) i^i ( B i^i C ) ) $=
+    ( cin inidm ineq2i in4 eqtr3i ) ABDZCCDZDICDACDBCDDJCICEFABCCGH $.
+
+  $( A relationship between subclass and intersection.  Similar to Exercise 9
+     of [TakeutiZaring] p. 18.  (Contributed by NM, 17-May-1994.) $)
+  sseqin2 $p |- ( A C_ B <-> ( B i^i A ) = A ) $=
+    ( dfss1 ) ABC $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( The intersection of two classes is a subset of one of them.  Part of
+       Exercise 12 of [TakeutiZaring] p. 18.  (Contributed by NM,
+       27-Apr-1994.) $)
+    inss1 $p |- ( A i^i B ) C_ A $=
+      ( vx cin cv wcel elin simplbi ssriv ) CABDZACEZJFKAFKBFKABGHI $.
+  $}
+
+  $( The intersection of two classes is a subset of one of them.  Part of
+     Exercise 12 of [TakeutiZaring] p. 18.  (Contributed by NM,
+     27-Apr-1994.) $)
+  inss2 $p |- ( A i^i B ) C_ B $=
+    ( cin incom inss1 eqsstr3i ) ABCBACBBADBAEF $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Subclass of intersection.  Theorem 2.8(vii) of [Monk1] p. 26.
+       (Contributed by NM, 15-Jun-2004.)  (Proof shortened by Andrew Salmon,
+       26-Jun-2011.) $)
+    ssin $p |- ( ( A C_ B /\ A C_ C ) <-> A C_ ( B i^i C ) ) $=
+      ( vx cv wcel wi wal wa cin wss elin imbi2i albii jcab 19.26 3bitrri dfss2
+      anbi12i 3bitr4i ) DEZAFZUABFZGZDHZUBUACFZGZDHZIZUBUABCJZFZGZDHZABKZACKZIA
+      UJKUMUBUCUFIZGZDHUDUGIZDHUIULUQDUKUPUBUABCLMNUQURDUBUCUFONUDUGDPQUNUEUOUH
+      DABRDACRSDAUJRT $.
+  $}
+
+  ${
+    ssini.1 $e |- A C_ B $.
+    ssini.2 $e |- A C_ C $.
+    $( An inference showing that a subclass of two classes is a subclass of
+       their intersection.  (Contributed by NM, 24-Nov-2003.) $)
+    ssini $p |- A C_ ( B i^i C ) $=
+      ( wss wa cin pm3.2i ssin mpbi ) ABFZACFZGABCHFLMDEIABCJK $.
+  $}
+
+  ${
+    ssind.1 $e |- ( ph -> A C_ B ) $.
+    ssind.2 $e |- ( ph -> A C_ C ) $.
+    $( A deduction showing that a subclass of two classes is a subclass of
+       their intersection.  (Contributed by Jonathan Ben-Naim, 3-Jun-2011.) $)
+    ssind $p |- ( ph -> A C_ ( B i^i C ) ) $=
+      ( wss cin wa ssin biimpi syl2anc ) ABCGZBDGZBCDHGZEFMNIOBCDJKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Add right intersection to subclass relation.  (Contributed by NM,
+       16-Aug-1994.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    ssrin $p |- ( A C_ B -> ( A i^i C ) C_ ( B i^i C ) ) $=
+      ( vx wss cin cv wcel wa ssel anim1d elin 3imtr4g ssrdv ) ABEZDACFZBCFZODG
+      ZAHZRCHZIRBHZTIRPHRQHOSUATABRJKRACLRBCLMN $.
+
+    $( Add left intersection to subclass relation.  (Contributed by NM,
+       19-Oct-1999.) $)
+    sslin $p |- ( A C_ B -> ( C i^i A ) C_ ( C i^i B ) ) $=
+      ( wss cin ssrin incom 3sstr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
+  $}
+
+  $( Intersection of subclasses.  (Contributed by NM, 5-May-2000.) $)
+  ss2in $p |- ( ( A C_ B /\ C C_ D ) -> ( A i^i C ) C_ ( B i^i D ) ) $=
+    ( wss cin ssrin sslin sylan9ss ) ABECDEACFBCFBDFABCGCDBHI $.
+
+  $( Intersection preserves subclass relationship.  (Contributed by NM,
+     14-Sep-1999.) $)
+  ssinss1 $p |- ( A C_ C -> ( A i^i B ) C_ C ) $=
+    ( cin wss wi inss1 sstr2 ax-mp ) ABDZAEACEJCEFABGJACHI $.
+
+  $( Inclusion of an intersection of two classes.  (Contributed by NM,
+     30-Oct-2014.) $)
+  inss $p |- ( ( A C_ C \/ B C_ C ) -> ( A i^i B ) C_ C ) $=
+    ( wss cin ssinss1 incom syl5eqss jaoi ) ACDABEZCDBCDZABCFKJBAECABGBACFHI $.
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+      Combinations of difference, union, and intersection of two classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( Absorption law for union.  (Contributed by NM, 16-Apr-2006.) $)
+  unabs $p |- ( A u. ( A i^i B ) ) = A $=
+    ( cin wss cun wceq inss1 ssequn2 mpbi ) ABCZADAJEAFABGJAHI $.
+
+  $( Absorption law for intersection.  (Contributed by NM, 16-Apr-2006.) $)
+  inabs $p |- ( A i^i ( A u. B ) ) = A $=
+    ( cun wss cin wceq ssun1 df-ss mpbi ) AABCZDAJEAFABGAJHI $.
+
+  $( Negation of subclass expressed in terms of intersection and proper
+     subclass.  (Contributed by NM, 30-Jun-2004.)  (Proof shortened by Andrew
+     Salmon, 26-Jun-2011.) $)
+  nssinpss $p |- ( -. A C_ B <-> ( A i^i B ) C. A ) $=
+    ( cin wne wss wa wn wpss inss1 biantrur df-ss necon3bbii df-pss 3bitr4i ) A
+    BCZADZOAEZPFABEZGOAHQPABIJROAABKLOAMN $.
+
+  $( Negation of subclass expressed in terms of proper subclass and union.
+     (Contributed by NM, 15-Sep-2004.) $)
+  nsspssun $p |- ( -. A C_ B <-> B C. ( A u. B ) ) $=
+    ( wss wn cun wa wpss ssun2 biantrur ssid biantru unss bitri xchnxbir dfpss3
+    bitr4i ) ABCZDBABEZCZRBCZDZFZBRGTUBQSUABAHIQQBBCZFTUCQBJKABBLMNBROP $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Double complement and subset.  Similar to ~ ddifss but inside a class
+       ` B ` instead of the universal class ` _V ` .  In classical logic the
+       subset operation on the right hand side could be an equality (that is,
+       ` A C_ B <-> ( B \ ( B \ A ) ) = A ` ).  (Contributed by Jim Kingdon,
+       24-Jul-2018.) $)
+    ssddif $p |- ( A C_ B <-> A C_ ( B \ ( B \ A ) ) ) $=
+      ( vx cv wcel wi wal cdif wss wa ancr wn ax-ia2 con2i anim2i eldif
+      notbii anbi2i bitri dfss2 sylibr syl6 eldifi imim2i albii 3bitr4i
+      impbii ) CDZAEZUHBEZFZCGUIUHBBAHZHZEZFZCGABIAUMIUKUOCUKUOUKUIUJUI
+      JZUNUIUJKUPUJUJUILZJZLZJZUNUIUSUJURUIUJUQMNOUNUJUHULEZLZJUTUHBULP
+      VBUSUJVAURUHBAPQRSUAUBUNUJUIUHBULUCUDUGUECABTCAUMTUF $.
+
+    $( Union of two classes and class difference.  In classical logic this
+       would be an equality.  (Contributed by Jim Kingdon, 24-Jul-2018.) $)
+    unssdif $p |- ( A u. B ) C_ ( _V \ ( ( _V \ A ) \ B ) ) $=
+      ( vx cun cvv cdif cv wcel wo wn wa vex eldif mpbiran anbi1i ioran 3bitr4i
+      biimpi con2i elun 3imtr4i ssriv ) CABDZEEAFZBFZFZCGZAHZUGBHZIZUGUEHZJZUGU
+      CHUGUFHZUKUJUKUJJZUGUDHZUIJZKUHJZUPKUKUNUOUQUPUOUGEHZUQCLZUGEAMNOUGUDBMUH
+      UIPQRSUGABTUMURULUSUGEUEMNUAUB $.
+
+    $( Intersection of two classes and class difference.  In classical logic
+       this would be an equality.  (Contributed by Jim Kingdon,
+       24-Jul-2018.) $)
+    inssdif $p |- ( A i^i B ) C_ ( A \ ( _V \ B ) ) $=
+      ( vx cin cvv cdif cv wcel wa wn elndif anim2i elin eldif 3imtr4i ssriv )
+      CABDZAEBFZFZCGZAHZTBHZIUATRHJZITQHTSHUBUCUATBEKLTABMTARNOP $.
+
+    $( Difference with intersection.  Theorem 33 of [Suppes] p. 29.
+       (Contributed by NM, 31-Mar-1998.)  (Proof shortened by Andrew Salmon,
+       26-Jun-2011.) $)
+    difin $p |- ( A \ ( A i^i B ) ) = ( A \ B ) $=
+      ( vx cin cdif cv wcel wa wn wi ax-in2 exp3a dfnot syl6ibr com12
+      wfal imdistani ax-ia2 con3i eldif anim2i impbii notbii 3bitr4i
+      elin anbi2i bitri eqriv ) CAABDZEZABEZCFZAGZUMULBGZHZIZHZUMUNIZ
+      HZULUJGZULUKGUQUSUMUPURUPUMURUPUMUNPJURUPUMUNPUOPKLUNMNOQURUPUM
+      UOUNUMUNRSUAUBUTUMULUIGZIZHUQULAUITVBUPUMVAUOULABUEUCUFUGULABTU
+      DUH $.
+  $}
+
+  $( Double complement under universal class.  In classical logic (or given an
+     additional hypothesis, as in ~ ddifnel ), this is equality rather than
+     subset.  (Contributed by Jim Kingdon, 24-Jul-2018.) $)
+  ddifss $p |- A C_ ( _V \ ( _V \ A ) ) $=
+    ( cvv wss cdif ssv ssddif mpbi ) ABCABBADDCAEABFG $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Union as a subset of class complement and intersection (De Morgan's
+       law).  One direction of the definition of union in [Mendelson] p. 231.
+       This would be an equality, rather than subset, in classical logic.
+       (Contributed by Jim Kingdon, 25-Jul-2018.) $)
+    unssin $p |- ( A u. B ) C_ ( _V \ ( ( _V \ A ) i^i ( _V \ B ) ) ) $=
+      ( vx cun cvv cdif cin cv wcel wo wn wa oranim eldifn anim12i nsyl sylnibr
+      elin elun vex eldif mpbiran 3imtr4i ssriv ) CABDZEEAFZEBFZGZFZCHZAIZUJBIZ
+      JZUJUHIZKZUJUEIUJUIIZUMUJUFIZUJUGIZLZUNUMUKKZULKZLUSUKULMUQUTURVAUJEANUJE
+      BNOPUJUFUGRQUJABSUPUJEIUOCTUJEUHUAUBUCUD $.
+
+    $( Intersection in terms of class difference and union (De Morgan's law).
+       Similar to Exercise 4.10(n) of [Mendelson] p. 231.  This would be an
+       equality, rather than subset, in classical logic.  (Contributed by Jim
+       Kingdon, 25-Jul-2018.) $)
+    inssun $p |- ( A i^i B ) C_ ( _V \ ( ( _V \ A ) u. ( _V \ B ) ) ) $=
+      ( vx cin cvv cdif cv wcel wa wn wo pm3.1 eldifn orim12i nsyl elun
+      cun sylnibr elin vex eldif mpbiran 3imtr4i ssriv ) CABDZEEAFZEBFZ
+      QZFZCGZAHZUJBHZIZUJUHHZJZUJUEHUJUIHZUMUJUFHZUJUGHZKZUNUMUKJZULJZK
+      USUKULLUQUTURVAUJEAMUJEBMNOUJUFUGPRUJABSUPUJEHUOCTUJEUHUAUBUCUD
+      $.
+  $}
+
+  $( Intersection of two classes and class difference.  In classical logic,
+     such as Exercise 4.10(q) of [Mendelson] p. 231, this is an equality rather
+     than subset.  (Contributed by Jim Kingdon, 26-Jul-2018.) $)
+  inssddif $p |- ( A i^i B ) C_ ( A \ ( A \ B ) ) $=
+    ( cin cdif wss inss1 ssddif mpbi difin difeq2i sseqtri ) ABCZAALD
+    ZDZAABDZDLAELNEABFLAGHMOAABIJK $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Intersection with universal complement.  Remark in [Stoll] p. 20.
+       (Contributed by NM, 17-Aug-2004.) $)
+    invdif $p |- ( A i^i ( _V \ B ) ) = ( A \ B ) $=
+      ( vx cvv cdif cin cv wcel wa vex eldif mpbiran anbi2i elin 3bitr4i eqriv
+      wn ) CADBEZFZABEZCGZAHZUARHZIUBUABHQZIUASHUATHUCUDUBUCUADHUDCJUADBKLMUAAR
+      NUAABKOP $.
+
+    $( Intersection with class difference.  Theorem 34 of [Suppes] p. 29.
+       (Contributed by NM, 17-Aug-2004.) $)
+    indif $p |- ( A i^i ( A \ B ) ) = ( A \ B ) $=
+      ( vx cdif cin cv wcel wn wa anabs5 elin eldif bitri 3bitr4i eqriv
+      anbi2i ) CAABDZEZQCFZAGZTSBGHZIZIZUBSRGZSQGZTUAJUDTUEIUCSAQKUEUBT
+      SABLZPMUFNO $.
+  $}
+
+  $( Bring an intersection in and out of a class difference.  (Contributed by
+     Jeff Hankins, 15-Jul-2009.) $)
+  indif2 $p |- ( A i^i ( B \ C ) ) = ( ( A i^i B ) \ C ) $=
+    ( cin cvv cdif inass invdif ineq2i 3eqtr3ri ) ABDZECFZDABLDZDKCFABCFZDABLGK
+    CHMNABCHIJ $.
+
+  $( Bring an intersection in and out of a class difference.  (Contributed by
+     Mario Carneiro, 15-May-2015.) $)
+  indif1 $p |- ( ( A \ C ) i^i B ) = ( ( A i^i B ) \ C ) $=
+    ( cdif cin indif2 incom difeq1i 3eqtr3i ) BACDZEBAEZCDJBEABEZCDBACFBJGKLCBA
+    GHI $.
+
+  $( Commutation law for intersection and difference.  (Contributed by Scott
+     Fenton, 18-Feb-2013.) $)
+  indifcom $p |- ( A i^i ( B \ C ) ) = ( B i^i ( A \ C ) ) $=
+    ( cin cdif incom difeq1i indif2 3eqtr4i ) ABDZCEBADZCEABCEDBACEDJKCABFGABCH
+    BACHI $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Distributive law for intersection over union.  Exercise 10 of
+       [TakeutiZaring] p. 17.  (Contributed by NM, 30-Sep-2002.)  (Proof
+       shortened by Andrew Salmon, 26-Jun-2011.) $)
+    indi $p |- ( A i^i ( B u. C ) ) = ( ( A i^i B ) u. ( A i^i C ) ) $=
+      ( vx cun cin cv wcel wo wa andi elin orbi12i bitr4i anbi2i 3bitr4i ineqri
+      elun ) DABCEZABFZACFZEZDGZAHZUCBHZUCCHZIZJZUCTHZUCUAHZIZUDUCSHZJUCUBHUHUD
+      UEJZUDUFJZIUKUDUEUFKUIUMUJUNUCABLUCACLMNULUGUDUCBCROUCTUARPQ $.
+
+    $( Distributive law for union over intersection.  Exercise 11 of
+       [TakeutiZaring] p. 17.  (Contributed by NM, 30-Sep-2002.)  (Proof
+       shortened by Andrew Salmon, 26-Jun-2011.) $)
+    undi $p |- ( A u. ( B i^i C ) ) = ( ( A u. B ) i^i ( A u. C ) ) $=
+      ( vx cin cv wcel wo wa elin orbi2i ordi elun anbi12i bitr2i 3bitri uneqri
+      cun ) DABCEZABRZACRZEZDFZAGZUCSGZHUDUCBGZUCCGZIZHUDUFHZUDUGHZIZUCUBGZUEUH
+      UDUCBCJKUDUFUGLULUCTGZUCUAGZIUKUCTUAJUMUIUNUJUCABMUCACMNOPQ $.
+  $}
+
+  $( Distributive law for intersection over union.  Theorem 28 of [Suppes]
+     p. 27.  (Contributed by NM, 30-Sep-2002.) $)
+  indir $p |- ( ( A u. B ) i^i C ) = ( ( A i^i C ) u. ( B i^i C ) ) $=
+    ( cun cin indi incom uneq12i 3eqtr4i ) CABDZECAEZCBEZDJCEACEZBCEZDCABFJCGMK
+    NLACGBCGHI $.
+
+  $( Distributive law for union over intersection.  Theorem 29 of [Suppes]
+     p. 27.  (Contributed by NM, 30-Sep-2002.) $)
+  undir $p |- ( ( A i^i B ) u. C ) = ( ( A u. C ) i^i ( B u. C ) ) $=
+    ( cin cun undi uncom ineq12i 3eqtr4i ) CABDZECAEZCBEZDJCEACEZBCEZDCABFJCGMK
+    NLACGBCGHI $.
+
+  $( Equality of union and intersection implies equality of their arguments.
+     (Contributed by NM, 16-Apr-2006.)  (Proof shortened by Andrew Salmon,
+     26-Jun-2011.) $)
+  uneqin $p |- ( ( A u. B ) = ( A i^i B ) <-> A = B ) $=
+    ( cun cin wceq wss wa eqimss unss ssin sstr sylbir simpl anim12i syl sylibr
+    eqss unidm inidm eqtr4i uneq2 ineq2 3eqtr3a impbii ) ABCZABDZEZABEZUGABFZBA
+    FZGZUHUGUEUFFZUKUEUFHULAUFFZBUFFZGUKABUFIUMUIUNUJUMAAFUIGUIAABJAABKLUNUJBBF
+    ZGUJBABJUJUOMLNLOABQPUHAACZAADZUEUFUPAUQARASTABAUAABAUBUCUD $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Distributive law for class difference.  Theorem 39 of [Suppes] p. 29.
+       (Contributed by NM, 17-Aug-2004.) $)
+    difundi $p |- ( A \ ( B u. C ) ) = ( ( A \ B ) i^i ( A \ C ) ) $=
+      ( vx cun cdif cin cv wcel wa wn eldif anbi12i elin wo notbii anbi2i bitri
+      elun ioran anandi 3bitr4ri eqriv ) DABCEZFZABFZACFZGZDHZUFIZUIUGIZJUIAIZU
+      IBIZKZJZULUICIZKZJZJZUIUHIUIUEIZUJUOUKURUIABLUIACLMUIUFUGNUTULUNUQJZJZUSU
+      TULUMUPOZKZJZVBUTULUIUDIZKZJVEUIAUDLVGVDULVFVCUIBCSPQRVDVAULUMUPTQRULUNUQ
+      UARUBUC $.
+  $}
+
+  $( Distributive law for class difference.  (Contributed by NM,
+     17-Aug-2004.) $)
+  difundir $p |- ( ( A u. B ) \ C ) = ( ( A \ C ) u. ( B \ C ) ) $=
+    ( cun cvv cdif cin indir invdif uneq12i 3eqtr3i ) ABDZECFZGAMGZBMGZDLCFACFZ
+    BCFZDABMHLCINPOQACIBCIJK $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Distributive law for class difference.  In classical logic, for example,
+       theorem 40 of [Suppes] p. 29, this is an equality instead of subset.
+       (Contributed by Jim Kingdon, 26-Jul-2018.) $)
+    difindiss $p |- ( ( A \ B ) u. ( A \ C ) ) C_ ( A \ ( B i^i C ) ) $=
+      ( vx cdif cun cin cv wcel wo elun wa wn eldif orbi12i andi bitr4i
+      pm3.14 anim2i sylbi elin notbii anbi2i bitr2i sylib ssriv ) DABEZ
+      ACEZFZABCGZEZDHZUIIULUGIZULUHIZJZULUKIZULUGUHKUOULAIZULBIZULCIZLZ
+      MZLZUPUOUQURMZUSMZJZLZVBUOUQVCLZUQVDLZJVFUMVGUNVHULABNULACNOUQVCV
+      DPQVEVAUQURUSRSTUPUQULUJIZMZLVBULAUJNVJVAUQVIUTULBCUAUBUCUDUETUF
+      $.
+  $}
+
+  $( Distributive law for class difference.  (Contributed by NM,
+     17-Aug-2004.) $)
+  difindir $p |- ( ( A i^i B ) \ C ) = ( ( A \ C ) i^i ( B \ C ) ) $=
+    ( cin cvv cdif inindir invdif ineq12i 3eqtr3i ) ABDZECFZDALDZBLDZDKCFACFZBC
+    FZDABLGKCHMONPACHBCHIJ $.
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Distribute intersection over difference.  (Contributed by Scott Fenton,
+       14-Apr-2011.) $)
+    indifdir $p |- ( ( A \ B ) i^i C ) = ( ( A i^i C ) \ ( B i^i C ) ) $=
+      ( vx cdif cin cv wcel wn wa elin notbii anbi12i eldif anbi1i bitri ax-ia1
+      an32 con3i wfal anim2i ax-in2 exp3acom23 impcom sylibr adantll jca impbii
+      wi dfnot 3bitr4ri eqriv ) DABEZCFZACFZBCFZEZDGZUOHZURUPHZIZJURAHZURCHZJZU
+      RBHZVCJZIZJZURUQHURUNHZUSVDVAVGURACKUTVFURBCKLMURUOUPNVIVBVEIZJZVCJZVHVIU
+      RUMHZVCJVLURUMCKVMVKVCURABNOPVLVDVJJZVHVBVJVCRVNVHVJVGVDVFVEVEVCQSUAVHVDV
+      JVDVGQVCVGVJVBVCVGJVETUIZVJVGVCVOVGVEVCTVFTUBUCUDVEUJUEUFUGUHPPUKUL $.
+  $}
+
+  $( Set difference with a set difference.  In classical logic this would be
+     equality rather than subset.  (Contributed by Jim Kingdon,
+     27-Jul-2018.) $)
+  difdif2ss $p |- ( ( A \ B ) u. ( A i^i C ) ) C_ ( A \ ( B \ C ) ) $=
+    ( cdif cin cun cvv wss inssdif unss2 ax-mp difindiss sstri invdif
+    eqcomi difeq2i sseqtr4i ) ABDZACEZFZABGCDZEZDZABCDZDTRAUADZFZUCSU
+    EHTUFHACISUERJKABUALMUDUBAUBUDBCNOPQ $.
+
+  $( De Morgan's law for union.  Theorem 5.2(13) of [Stoll] p. 19.
+     (Contributed by NM, 18-Aug-2004.) $)
+  undm $p |- ( _V \ ( A u. B ) ) = ( ( _V \ A ) i^i ( _V \ B ) ) $=
+    ( cvv difundi ) CABD $.
+
+  $( De Morgan's law for intersection.  In classical logic, this would be
+     equality rather than subset, as in Theorem 5.2(13') of [Stoll] p. 19.
+     (Contributed by Jim Kingdon, 27-Jul-2018.) $)
+  indmss $p |- ( ( _V \ A ) u. ( _V \ B ) ) C_ ( _V \ ( A i^i B ) ) $=
+    ( cvv difindiss ) CABD $.
+
+  $( A relationship involving double difference and union.  (Contributed by NM,
+     29-Aug-2004.) $)
+  difun1 $p |- ( A \ ( B u. C ) ) = ( ( A \ B ) \ C ) $=
+    ( cvv cdif cin cun inass invdif eqtr3i undm ineq2i difeq1i ) ADBEZFZCEZABCG
+    ZEZABEZCEANDCEZFZFZPROTFUBPANTHOCIJADQEZFUBRUCUAABCKLAQIJJOSCABIMJ $.
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( A subset relationship involving class union and class difference.  In
+       classical logic, this would be equality rather than subset, as in the
+       first equality of Exercise 13 of [TakeutiZaring] p. 22.  (Contributed by
+       Jim Kingdon, 28-Jul-2018.) $)
+    undif3ss $p |- ( A u. ( B \ C ) ) C_ ( ( A u. B ) \ ( C \ A ) ) $=
+      ( vx cdif cun cv wcel wo wn elun eldif orbi2i orc olc jca anim12i
+      wa jaoi simpl adantr adantl impbii 3bitri biimpri pm4.53r sylnibr
+      orcd ccase sylibr sylbi ssriv ) DABCEZFZABFZCAEZEZDGZUNHZURAHZURB
+      HZIZURCHZJZUTIZRZURUQHZUSUTURUMHZIUTVAVDRZIZVFURAUMKVHVIUTURBCLMV
+      JVFUTVFVIUTVBVEUTVANUTVDOPVAVBVDVEVAUTOVDUTNQSUTVDVAUTVJUTVDRUTVI
+      UTVDTUHVIUTOUTVJUTUTVINZUAUTVJVAVKUBUIUCUDVFURUOHZURUPHZJZRVGVBVL
+      VEVNVLVBURABKUEVEVCUTJRVMVCUTUFURCALUGQURUOUPLUJUKUL $.
+
+    $( Represent a set difference as an intersection with a larger difference.
+       (Contributed by Jeff Madsen, 2-Sep-2009.) $)
+    difin2 $p |- ( A C_ C -> ( A \ B ) = ( ( C \ B ) i^i A ) ) $=
+      ( vx wss cdif cin cv wcel wn ssel pm4.71d anbi1d eldif anbi1i ancom anass
+      wa elin bitr4i 3bitri 3bitr4g eqrdv ) ACEZDABFZCBFZAGZUDDHZAIZUHBIJZRUIUH
+      CIZRZUJRZUHUEIUHUGIZUDUIULUJUDUIUKACUHKLMUHABNUNUHUFIZUIRUKUJRZUIRZUMUHUF
+      ASUOUPUIUHCBNOUQUIUPRUMUPUIPUIUKUJQTUAUBUC $.
+  $}
+
+  $( Swap second and third argument of double difference.  (Contributed by NM,
+     18-Aug-2004.) $)
+  dif32 $p |- ( ( A \ B ) \ C ) = ( ( A \ C ) \ B ) $=
+    ( cun cdif uncom difeq2i difun1 3eqtr3i ) ABCDZEACBDZEABECEACEBEJKABCFGABCH
+    ACBHI $.
+
+  $( Absorption-like law for class difference: you can remove a class only
+     once.  (Contributed by FL, 2-Aug-2009.) $)
+  difabs $p |- ( ( A \ B ) \ B ) = ( A \ B ) $=
+    ( cun cdif difun1 unidm difeq2i eqtr3i ) ABBCZDABDZBDJABBEIBABFGH $.
+
+  $( Two ways to express symmetric difference.  This theorem shows the
+     equivalence of the definition of symmetric difference in [Stoll] p. 13 and
+     the restated definition in Example 4.1 of [Stoll] p. 262.  (Contributed by
+     NM, 17-Aug-2004.) $)
+  symdif1 $p |- ( ( A \ B ) u. ( B \ A ) ) = ( ( A u. B ) \ ( A i^i B ) ) $=
+    ( cun cin cdif difundir difin incom difeq2i eqtri uneq12i eqtr2i ) ABCABDZE
+    AMEZBMEZCABEZBAEZCABMFNPOQABGOBBADZEQMRBABHIBAGJKL $.
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+    Class abstractions with difference, union, and intersection of two classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+  ${
+    $d x A $.  $d x B $.
+    $( Expressing symmetric difference with exclusive-or or two differences.
+       (Contributed by Jim Kingdon, 28-Jul-2018.) $)
+    symdifxor $p |- ( ( A \ B ) u. ( B \ A ) ) =
+                  { x | ( x e. A \/_ x e. B ) } $=
+      ( cv wcel wxo cdif cun wo wn wa eldif orbi12i excxor ancom orbi2i
+      elun bitri 3bitr4i abbi2i ) ADZBEZUACEZFZABCGZCBGZHZUAUEEZUAUFEZI
+      UBUCJKZUCUBJZKZIZUAUGEUDUHUJUIULUABCLUACBLMUAUEUFQUDUJUKUCKZIUMUB
+      UCNUNULUJUKUCOPRST $.
+  $}
+
+  ${
+    $d x y $.  $d ph y $.  $d ps y $.
+    $( Union of two class abstractions.  (Contributed by NM, 29-Sep-2002.)
+       (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    unab $p |- ( { x | ph } u. { x | ps } ) = { x | ( ph \/ ps ) } $=
+      ( vy cab wo wsb cv wcel sbor df-clab orbi12i 3bitr4ri uneqri ) DACEZBCEZA
+      BFZCEZQCDGACDGZBCDGZFDHZRIUAOIZUAPIZFABCDJQDCKUBSUCTADCKBDCKLMN $.
+
+    $( Intersection of two class abstractions.  (Contributed by NM,
+       29-Sep-2002.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    inab $p |- ( { x | ph } i^i { x | ps } ) = { x | ( ph /\ ps ) } $=
+      ( vy cab wa wsb cv wcel sban df-clab anbi12i 3bitr4ri ineqri ) DACEZBCEZA
+      BFZCEZQCDGACDGZBCDGZFDHZRIUAOIZUAPIZFABCDJQDCKUBSUCTADCKBDCKLMN $.
+
+    $( Difference of two class abstractions.  (Contributed by NM,
+       23-Oct-2004.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    difab $p |- ( { x | ph } \ { x | ps } ) = { x | ( ph /\ -. ps ) } $=
+      ( vy cab wn wcel wsb df-clab sban bicomi xchbinxr anbi12i 3bitrri difeqri
+      wa cv sbn ) DACEZBCEZABFZPZCEZDQZUCGUBCDHACDHZUACDHZPUDSGZUDTGZFZPUBDCIAU
+      ACDJUEUGUFUIUGUEADCIKUFBCDHUHBCDRBDCILMNO $.
+  $}
+
+  $( A class builder defined by a negation.  (Contributed by FL,
+     18-Sep-2010.) $)
+  notab $p |- { x | -. ph } = ( _V \ { x | ph } ) $=
+    ( cv cvv wcel wn wa cab cdif crab df-rab rabab eqtr3i difab abid2 difeq1i )
+    BCDEZAFZGBHZRBHZDABHZIZRBDJSTRBDKRBLMQBHZUAISUBQABNUCDUABDOPMM $.
+
+  $( Union of two restricted class abstractions.  (Contributed by NM,
+     25-Mar-2004.) $)
+  unrab $p |- ( { x e. A | ph } u. { x e. A | ps } ) =
+              { x e. A | ( ph \/ ps ) } $=
+    ( crab cun cv wcel wa cab wo df-rab uneq12i unab andi abbii eqtr4i ) ACDEZB
+    CDEZFCGDHZAIZCJZTBIZCJZFZABKZCDEZRUBSUDACDLBCDLMUGTUFIZCJZUEUFCDLUEUAUCKZCJ
+    UIUAUCCNUHUJCTABOPQQQ $.
+
+  $( Intersection of two restricted class abstractions.  (Contributed by NM,
+     1-Sep-2006.) $)
+  inrab $p |- ( { x e. A | ph } i^i { x e. A | ps } ) =
+              { x e. A | ( ph /\ ps ) } $=
+    ( crab cin cv wcel wa cab df-rab ineq12i inab anandi abbii eqtr4i ) ACDEZBC
+    DEZFCGDHZAIZCJZSBIZCJZFZABIZCDEZQUARUCACDKBCDKLUFSUEIZCJZUDUECDKUDTUBIZCJUH
+    TUBCMUGUICSABNOPPP $.
+
+  ${
+    $d x B $.
+    $( Intersection with a restricted class abstraction.  (Contributed by NM,
+       19-Nov-2007.) $)
+    inrab2 $p |- ( { x e. A | ph } i^i B ) = { x e. ( A i^i B ) | ph } $=
+      ( crab cin cv wcel cab df-rab abid2 eqcomi ineq12i inab elin anbi1i bitri
+      wa an32 eqtr4i abbii ) ABCEZDFBGZCHZARZBIZUCDHZBIZFZABCDFZEZUBUFDUHABCJUH
+      DBDKLMUKUCUJHZARZBIZUIABUJJUIUEUGRZBIUNUEUGBNUMUOBUMUDUGRZARUOULUPAUCCDOP
+      UDUGASQUATTT $.
+  $}
+
+  $( Difference of two restricted class abstractions.  (Contributed by NM,
+     23-Oct-2004.) $)
+  difrab $p |- ( { x e. A | ph } \ { x e. A | ps } ) =
+              { x e. A | ( ph /\ -. ps ) } $=
+    ( crab cdif cv wcel wa wn df-rab difeq12i difab anass simpr con3i anim2i wi
+    cab eqtr4i pm3.2 adantr con3d imdistani impbii bitr3i abbii ) ACDEZBCDEZFCG
+    DHZAIZCSZUJBIZCSZFZABJZIZCDEZUHULUIUNACDKBCDKLURUJUQIZCSZUOUQCDKUOUKUMJZIZC
+    SUTUKUMCMUSVBCUSUKUPIZVBUJAUPNVCVBUPVAUKUMBUJBOPQUKVAUPUKBUMUJBUMRAUJBUAUBU
+    CUDUEUFUGTTT $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Alternate definition of restricted class abstraction.  (Contributed by
+       NM, 20-Sep-2003.) $)
+    dfrab2 $p |- { x e. A | ph } = ( { x | ph } i^i A ) $=
+      ( crab cv wcel wa cab cin df-rab inab abid2 ineq1i eqtr3i incom 3eqtri )
+      ABCDBECFZAGBHZCABHZIZSCIABCJQBHZSIRTQABKUACSBCLMNCSOP $.
+
+    $( Alternate definition of restricted class abstraction.  (Contributed by
+       Mario Carneiro, 8-Sep-2013.) $)
+    dfrab3 $p |- { x e. A | ph } = ( A i^i { x | ph } ) $=
+      ( crab cv wcel wa cab cin df-rab inab abid2 ineq1i 3eqtr2i ) ABCDBECFZAGB
+      HOBHZABHZICQIABCJOABKPCQBCLMN $.
+
+    $( Complementation of restricted class abstractions.  (Contributed by Mario
+       Carneiro, 3-Sep-2015.) $)
+    notrab $p |- ( A \ { x e. A | ph } ) = { x e. A | -. ph } $=
+      ( cv wcel cab cdif wn crab difab cin difin dfrab3 difeq2i difeq1i 3eqtr4i
+      wa abid2 df-rab ) BDCEZBFZABFZGZTAHZQBFCABCIZGZUDBCITABJCCUBKZGCUBGUFUCCU
+      BLUEUGCABCMNUACUBBCROPUDBCSP $.
+
+    $( Restricted class abstraction with a common superset.  (Contributed by
+       Stefan O'Rear, 12-Sep-2015.)  (Proof shortened by Mario Carneiro,
+       8-Nov-2015.) $)
+    dfrab3ss $p |- ( A C_ B -> { x e. A | ph } = ( A i^i { x e. B | ph } ) ) $=
+      ( wss cab crab wceq df-ss ineq1 eqcomd sylbi dfrab3 ineq2i eqtr4i 3eqtr4g
+      cin inass ) CDEZCABFZQZCDQZTQZABCGCABDGZQZSUBCHZUAUCHCDIUFUCUAUBCTJKLABCM
+      UECDTQZQUCUDUGCABDMNCDTROP $.
+  $}
+
+  $( Abstraction restricted to a union.  (Contributed by Stefan O'Rear,
+     5-Feb-2015.) $)
+  rabun2 $p |- { x e. ( A u. B ) | ph } =
+      ( { x e. A | ph } u. { x e. B | ph } ) $=
+    ( cun crab cv wcel wa cab df-rab uneq12i elun anbi1i andir bitri abbii unab
+    wo eqtr4i ) ABCDEZFBGZUAHZAIZBJZABCFZABDFZEZABUAKUHUBCHZAIZBJZUBDHZAIZBJZEZ
+    UEUFUKUGUNABCKABDKLUEUJUMSZBJUOUDUPBUDUIULSZAIUPUCUQAUBCDMNUIULAOPQUJUMBRTT
+    T $.
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+    Restricted uniqueness with difference, union, and intersection
+    of two classes
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    $d x A $.  $d x B $.
+    $( Transfer uniqueness to a smaller subclass.  (Contributed by NM,
+       20-Oct-2005.) $)
+    reuss2 $p |- ( ( ( A C_ B /\ A. x e. A ( ph -> ps ) ) /\
+                 ( E. x e. A ph /\ E! x e. B ps ) ) -> E! x e. A ph ) $=
+      ( wrex wreu wa wss wi wral wcel wex weu df-rex df-reu anbi12i wal sylan2b
+      cv wmo df-ral ssel prth sylan exp4b com23 a2d imp4a alimdv imp euimmo syl
+      eu5 simplbi2 syl9 imp32 sylibr ) ACDFZBCEGZHDEIZABJZCDKZHZCTZDLZAHZCMZVEE
+      LZBHZCNZHZACDGZUSVHUTVKACDOBCEPQVDVLHVGCNZVMVDVHVKVNVDVKVGCUAZVHVNVDVGVJJ
+      ZCRZVKVOJVCVAVFVBJZCRZVQVBCDUBVAVSVQVAVRVPCVAVRVFAVJVAVFVBAVJJZVAVBVFVTVA
+      VBVFAVJVAVFVIJVBVPDEVEUCVFVIABUDUEUFUGUHUIUJUKSVGVJCULUMVNVHVOVGCUNUOUPUQ
+      ACDPURS $.
+
+    $( Transfer uniqueness to a smaller subclass.  (Contributed by NM,
+       21-Aug-1999.) $)
+    reuss $p |- ( ( A C_ B /\ E. x e. A ph /\ E! x e. B ph ) ->
+                E! x e. A ph ) $=
+      ( wss wrex wreu wi wral wa cv wcel idd rgen reuss2 mpanl2 3impb ) CDEZABC
+      FZABDGZABCGZRAAHZBCISTJUAUBBCBKCLAMNAABCDOPQ $.
+
+    $( Transfer uniqueness to a smaller class.  (Contributed by NM,
+       21-Oct-2005.) $)
+    reuun1 $p |- ( ( E. x e. A ph /\ E! x e. ( A u. B ) ( ph \/ ps ) )
+                 -> E! x e. A ph ) $=
+      ( cun wss wo wi wral wrex wreu wa ssun1 orc rgenw reuss2 mpanl12 ) DDEFZG
+      AABHZIZCDJACDKTCSLMACDLDENUACDABOPATCDSQR $.
+
+    $( Transfer uniqueness to a smaller or larger class.  (Contributed by NM,
+       21-Oct-2005.) $)
+    reuun2 $p |- ( -. E. x e. B ph ->
+             ( E! x e. ( A u. B ) ph <-> E! x e. A ph ) ) $=
+      ( wrex wn cv wcel wa wo weu cun wreu wex df-rex euor2 sylnbi df-reu bitri
+      wb elun anbi1i andir orcom eubii 3bitr4g ) ABDEZFBGZDHZAIZUHCHZAIZJZBKZUL
+      BKZABCDLZMZABCMUGUJBNUNUOTABDOUJULBPQUQUHUPHZAIZBKUNABUPRUSUMBUSUKUIJZAIZ
+      UMURUTAUHCDUAUBVAULUJJUMUKUIAUCULUJUDSSUESABCRUF $.
+
+    $( Restricted uniqueness "picks" a member of a subclass.  (Contributed by
+       NM, 21-Aug-1999.) $)
+    reupick $p |- ( ( ( A C_ B /\ ( E. x e. A ph /\ E! x e. B ph ) ) /\ ph ) ->
+                  ( x e. A <-> x e. B ) ) $=
+      ( wss wrex wreu wa cv wcel wi ssel ad2antrr wex weu df-rex df-reu anbi12i
+      ancrd anim1d an32 syl6ib eximdv eupick ex syl9 com23 imp32 exp3acom23 imp
+      sylan2b impbid ) CDEZABCFZABDGZHZHZAHBIZCJZURDJZUMUSUTKUPACDURLZMUQAUTUSK
+      UQUTAUSUPUMUSAHZBNZUTAHZBOZHVDUSKZUNVCUOVEABCPABDQRUMVCVEVFUMVEVCVFUMVCVD
+      USHZBNZVEVFUMVBVGBUMVBUTUSHZAHVGUMUSVIAUMUSUTVASTUTUSAUAUBUCVEVHVFVDUSBUD
+      UEUFUGUHUKUIUJUL $.
+
+    $( Restricted uniqueness "picks" a member of a subclass.  (Contributed by
+       Mario Carneiro, 19-Nov-2016.) $)
+    reupick3 $p  |- ( ( E! x e. A ph /\ E. x e. A ( ph /\ ps ) /\ x e. A ) ->
+       ( ph -> ps ) ) $=
+      ( wreu wa wrex cv wcel wi weu wex df-reu df-rex anass exbii bitr4i eupick
+      syl2anb exp3a 3impia ) ACDEZABFZCDGZCHDIZABJUBUDFUEABUBUEAFZCKUFBFZCLZUFB
+      JUDACDMUDUEUCFZCLUHUCCDNUGUICUEABOPQUFBCRSTUA $.
+
+    $( Restricted uniqueness "picks" a member of a subclass.  (Contributed by
+       Mario Carneiro, 15-Dec-2013.)  (Proof shortened by Mario Carneiro,
+       19-Nov-2016.) $)
+    reupick2 $p |- ( ( ( A. x e. A ( ps -> ph ) /\ E. x e. A ps /\
+                       E! x e. A ph ) /\ x e. A ) -> ( ph <-> ps ) ) $=
+      ( wi wral wrex wreu w3a cv wcel ancr ralimi rexim syl reupick3 3exp com12
+      wa syl6 3imp1 rsp 3ad2ant1 imp impbid ) BAEZCDFZBCDGZACDHZIZCJDKZSABUGUHU
+      IUKABEZUGUHABSZCDGZUIUKULEZEUGBUMEZCDFUHUNEUFUPCDBALMBUMCDNOUIUNUOUIUNUKU
+      LABCDPQRTUAUJUKUFUGUHUKUFEUIUFCDUBUCUDUE $.
+  $}
+
+$(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                         Classical logic theorems
+           The empty set
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Axiom _Transp_.  Axiom A3 of [Margaris] p. 49.
+  $( Declare the symbol for the empty or null set. $)
+  $c (/) $. $( null set $)
 
-     Unconditional form of ~ condc .  We state this as an axiom for the benefit
-     of theorems which have not yet been converted over to having appropriate
-     decidability conditions added.  We could also transform intuitionistic
-     logic to classical logic by adding unconditional forms of ~ exmiddc ,
-     ~ peircedc , or ~ notnot2dc .
+  $( Extend class notation to include the empty set. $)
+  c0 $a class (/) $.
 
-     This axiom swaps or "transposes" the order of the consequents when
-     negation is removed.  An informal example is that the statement "if there
-     are no clouds in the sky, it is not raining" implies the statement "if it
-     is raining, there are clouds in the sky."  This axiom is called _Transp_
-     or "the principle of transposition" in _Principia Mathematica_ (Theorem
-     *2.17 of [WhiteheadRussell] p. 103).  We will also use the term
-     "contraposition" for this principle, although the reader is advised that
-     in the field of philosophical logic, "contraposition" has a different
-     technical meaning.  (Contributed by NM, 5-Aug-1993.)
-     (New usage is discouraged.) $)
-  ax-3 $a |- ( ( -. ph -> -. ps ) -> ( ps -> ph ) ) $.
+  $( Define the empty set.  Special case of Exercise 4.10(o) of [Mendelson]
+     p. 231.  For a more traditional definition, but requiring a dummy
+     variable, see ~ dfnul2 .  (Contributed by NM, 5-Aug-1993.) $)
+  df-nul $a |- (/) = ( _V \ _V ) $.
+
+  $( Alternate definition of the empty set.  Definition 5.14 of [TakeutiZaring]
+     p. 20.  (Contributed by NM, 26-Dec-1996.) $)
+  dfnul2 $p |- (/) = { x | -. x = x } $=
+    ( cv wceq wn c0 wcel cvv cdif wa df-nul eleq2i eldif eqid notnoti
+    pm3.24 2false 3bitri abbi2i ) ABZSCZDZAESEFSGGHZFSGFZUCDIZUAEUBSJ
+    KSGGLUDUAUCOTSMNPQR $.
+
+  $( Alternate definition of the empty set.  (Contributed by NM,
+     25-Mar-2004.) $)
+  dfnul3 $p |- (/) = { x e. A | -. x e. A } $=
+    ( weq wn cv wcel wa c0 crab equid notnoti pm3.24 2false abbii dfnul2 df-rab
+    cab 3eqtr4i ) AACZDZAQAEBFZUADZGZAQHUBABITUCATUCSAJKUALMNAOUBABPR $.
+
+  $( The empty set has no elements.  Theorem 6.14 of [Quine] p. 44.
+     (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Mario Carneiro,
+     1-Sep-2015.) $)
+  noel $p |- -. A e. (/) $=
+    ( c0 wcel cvv cdif eldifi eldifn pm2.65i df-nul eleq2i mtbir ) ABCADDEZCZMA
+    DCADDFADDGHBLAIJK $.
+
+  $( If a set has elements, it is not empty.  A set with elements is also
+     inhabited, see ~ elex2 .  (Contributed by NM, 31-Dec-1993.) $)
+  n0i $p |- ( B e. A -> -. A = (/) ) $=
+    ( c0 wceq wcel noel eleq2 mtbiri con2i ) ACDZBAEZJKBCEBFACBGHI $.
+
+  $( If a set has elements, it is not empty.  A set with elements is also
+     inhabited, see ~ elex2 .  (Contributed by NM, 31-Dec-1993.) $)
+  ne0i $p |- ( B e. A -> A =/= (/) ) $=
+    ( wcel c0 n0i neneqad ) BACADABEF $.
+
+  $( The universal class is not equal to the empty set.  (Contributed by NM,
+     11-Sep-2008.) $)
+  vn0 $p |- _V =/= (/) $=
+    ( vx cv cvv wcel c0 wne vex ne0i ax-mp ) ABZCDCEFAGCJHI $.
 
   ${
-    con4d.1 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
-    $( Deduction derived from axiom ~ ax-3 .  (Contributed by NM,
-       26-Mar-1995.) $)
-    con4d $p |- ( ph -> ( ch -> ps ) ) $=
-      ( wn wi ax-3 syl ) ABECEFCBFDBCGH $.
+    $d x y $.  $d y A $.
+    n0rf.1 $e |- F/_ x A $.
+    $( An inhabited class is nonempty.  Following the Definition of [Bauer],
+       p. 483, we call a class ` A ` nonempty if ` A =/= (/) ` and inhabited if
+       it has at least one element.  In classical logic these two concepts are
+       equivalent, for example see Proposition 5.17(1) of [TakeutiZaring]
+       p. 20.  This version of ~ n0r requires only that ` x ` not be free in,
+       rather than not occur in, ` A ` .  (Contributed by Jim Kingdon,
+       31-Jul-2018.) $)
+    n0rf $p |- ( E. x x e. A -> A =/= (/) ) $=
+      ( cv wcel wex wn wal c0 wne exalim wceq wb nfcv cleqf nbn albii
+      noel bitr4i necon3abii sylibr ) ADZBEZAFUCGZAHZGBIJUCAKUEBIBILU
+      CUBIEZMZAHUEABICAINOUDUGAUFUCUBRPQSTUA $.
   $}
 
   ${
-    con1d.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( A contraposition deduction.  (Contributed by NM, 5-Aug-1993.)  (Revised
-       by NM, 12-Feb-2013.) $)
-    con1d $p |- ( ph -> ( -. ch -> ps ) ) $=
-      ( wn notnot1 syl6 con4d ) ABCEZABECIEDCFGH $.
-  $}
+    $d x y A $.
+    $( An inhabited class is nonempty.  See ~ n0rf for more discussion.
+       (Contributed by Jim Kingdon, 31-Jul-2018.) $)
+    n0r $p |- ( E. x x e. A -> A =/= (/) ) $=
+      ( nfcv n0rf ) ABABCD $.
 
-  $( Proof by contradiction.  Theorem *2.18 of [WhiteheadRussell] p. 103.  Also
-     called the Law of Clavius.  This is not valid intuitionistically, but
-     compare with ~ pm2.01 which is.  (Contributed by NM, 5-Aug-1993.) $)
-  pm2.18 $p |- ( ( -. ph -> ph ) -> ph ) $=
-    ( wn wi pm2.21 a2i con4d pm2.43i ) ABZACZAIAIHAIBZAJDEFG $.
-
-  ${
-    pm2.18d.1 $e |- ( ph -> ( -. ps -> ps ) ) $.
-    $( Deduction based on reductio ad absurdum.  (Contributed by FL,
-       12-Jul-2009.)  (Proof shortened by Andrew Salmon, 7-May-2011.) $)
-    pm2.18d $p |- ( ph -> ps ) $=
-      ( wn wi pm2.18 syl ) ABDBEBCBFG $.
+    $( An inhabited class is nonempty.  See ~ n0rf for more discussion.
+       (Contributed by Jim Kingdon, 31-Jul-2018.) $)
+    neq0r $p |- ( E. x x e. A -> -. A = (/) ) $=
+      ( cv wcel wex c0 n0r neneqd ) ACBDAEBFABGH $.
   $}
 
   ${
-    pm2.61d.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    pm2.61d.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( Deduction eliminating an antecedent.  (Contributed by NM, 27-Apr-1994.)
-       (Proof shortened by Wolf Lammen, 12-Sep-2013.) $)
-    pm2.61d $p |- ( ph -> ch ) $=
-      ( wn con1d syld pm2.18d ) ACACFBCABCEGDHI $.
+    $d x A $.  $d x ph $.
+    reximdva0m.1 $e |- ( ( ph /\ x e. A ) -> ps ) $.
+    $( Restricted existence deduced from inhabited class.  (Contributed by Jim
+       Kingdon, 31-Jul-2018.) $)
+    reximdva0m $p |- ( ( ph /\ E. x x e. A ) -> E. x e. A ps ) $=
+      ( cv wcel wex wa wrex ex ancld eximdv imp df-rex sylibr ) ACFDG
+      ZCHZIQBIZCHZBCDJARTAQSCAQBAQBEKLMNBCDOP $.
   $}
 
   ${
-    pm2.61d1.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    pm2.61d1.2 $e |- ( -. ps -> ch ) $.
-    $( Inference eliminating an antecedent.  (Contributed by NM,
-       15-Jul-2005.) $)
-    pm2.61d1 $p |- ( ph -> ch ) $=
-      ( wn wi a1i pm2.61d ) ABCDBFCGAEHI $.
+    $d A x $.
+    $( A case of equivalence of "at most one" and "only one".  If a class is
+       inhabited, that class having at most one element is equivalent to it
+       having only one element.  (Contributed by Jim Kingdon, 31-Jul-2018.) $)
+    n0mmoeu $p |- ( E. x x e. A -> ( E* x x e. A <-> E! x x e. A ) ) $=
+      ( cv wcel exmoeu2 ) ACBDAE $.
+  $}
+
+  $( Vacuous existential quantification is false.  (Contributed by NM,
+     15-Oct-2003.) $)
+  rex0 $p |- -. E. x e. (/) ph $=
+    ( c0 cv wcel wn noel pm2.21i nrex ) ABCBDZCEAFJGHI $.
+
+  ${
+    $d x A $.
+    $( The empty set has no elements.  Theorem 2 of [Suppes] p. 22.
+       (Contributed by NM, 29-Aug-1993.) $)
+    eq0 $p |- ( A = (/) <-> A. x -. x e. A ) $=
+      ( c0 wceq cv wcel wb wal wn nfcv cleqf noel nbn albii bitr4i )
+      BCDAEZBFZPCFZGZAHQIZAHABCABJACJKTSARQPLMNO $.
+
+    $( The universe contains every set.  (Contributed by NM, 11-Sep-2006.) $)
+    eqv $p |- ( A = _V <-> A. x x e. A ) $=
+      ( cvv wceq cv wcel wb wal dfcleq vex tbt albii bitr4i ) BCDAEZBFZNCFZGZAH
+      OAHABCIOQAPOAJKLM $.
   $}
 
   ${
-    pm2.61d2.1 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    pm2.61d2.2 $e |- ( ps -> ch ) $.
-    $( Inference eliminating an antecedent.  (Contributed by NM,
-       18-Aug-1993.) $)
-    pm2.61d2 $p |- ( ph -> ch ) $=
-      ( wi a1i pm2.61d ) ABCBCFAEGDH $.
-  $}
-
-  ${
-    ja.1 $e |- ( -. ph -> ch ) $.
-    ja.2 $e |- ( ps -> ch ) $.
-    $( Inference joining the antecedents of two premises.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by O'Cat, 19-Feb-2008.) $)
-    ja $p |- ( ( ph -> ps ) -> ch ) $=
-      ( wi imim2i pm2.61d1 ) ABFACBCAEGDH $.
-  $}
-
-  ${
-    pm2.61i.1 $e |- ( ph -> ps ) $.
-    pm2.61i.2 $e |- ( -. ph -> ps ) $.
-    $( Inference eliminating an antecedent.  (Contributed by NM, 5-Apr-1994.)
-       (Proof shortened by Wolf Lammen, 12-Sep-2013.) $)
-    pm2.61i $p |- ps $=
-      ( wi id ja ax-mp ) AAEBAFAABDCGH $.
-  $}
-
-  $( Double negation elimination.  Theorem *2.14 of [WhiteheadRussell] p. 102.
-     This does not hold intuitionistically, although its coverse, ~ notnot1 ,
-     does.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by David Harvey,
-     5-Sep-1999.)  (Proof shortened by Josh Purinton, 29-Dec-2000.) $)
-  notnot2 $p |- ( -. -. ph -> ph ) $=
-    ( wn pm2.21 pm2.18d ) ABZBAEACD $.
-
-  $( Double negation.  Theorem *4.13 of [WhiteheadRussell] p. 117.
-     (Contributed by NM, 5-Aug-1993.) $)
-  notnot $p |- ( ph <-> -. -. ph ) $=
-    ( wn notnot1 notnot2 impbii ) AABBACADE $.
-
-  ${
-    impcon4bid.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    impcon4bid.2 $e |- ( ph -> ( -. ps -> -. ch ) ) $.
-    $( A variation on ~ impbid with contraposition.  (Contributed by Jeff
-       Hankins, 3-Jul-2009.) $)
-    impcon4bid $p |- ( ph -> ( ps <-> ch ) ) $=
-      ( con4d impbid ) ABCDABCEFG $.
-  $}
-
-  ${
-    con4bid.1 $e |- ( ph -> ( -. ps <-> -. ch ) ) $.
-    $( A contraposition deduction.  (Contributed by NM, 21-May-1994.)  (Revised
-       by NM, 17-Sep-2013.) $)
-    con4bid $p |- ( ph -> ( ps <-> ch ) ) $=
-      ( wn biimprd con4d biimpd impcon4bid ) ABCACBABEZCEZDFGAJKDHI $.
-  $}
-
-  $( Contraposition.  Theorem *4.11 of [WhiteheadRussell] p. 117.  (Contributed
-     by NM, 21-May-1994.)  (Proof shortened by Wolf Lammen, 12-Jun-2013.) $)
-  notbi $p |- ( ( ph <-> ps ) <-> ( -. ph <-> -. ps ) ) $=
-    ( wb wn id notbid con4bid impbii ) ABCZADBDCZIABIEFJABJEGH $.
-
-  ${
-    con1bii.1 $e |- ( -. ph <-> ps ) $.
-    $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.)  (Proof
-       shortened by Wolf Lammen, 13-Oct-2012.) $)
-    con1bii $p |- ( -. ps <-> ph ) $=
-      ( wn notnot xchbinx bicomi ) ABDAADBAECFG $.
-  $}
-
-  ${
-    con4bii.1 $e |- ( -. ph <-> -. ps ) $.
-    $( A contraposition inference.  (Contributed by NM, 21-May-1994.) $)
-    con4bii $p |- ( ph <-> ps ) $=
-      ( wb wn notbi mpbir ) ABDAEBEDCABFG $.
-  $}
-
-  ${
-    con2bii.1 $e |- ( ph <-> -. ps ) $.
-    $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.) $)
-    con2bii $p |- ( ps <-> -. ph ) $=
-      ( wn bicomi con1bii ) ADBBAABDCEFE $.
-  $}
-
-  $( Express implication in terms of conjunction.  Theorem 3.4(27) of [Stoll]
-     p. 176.  Only the forward direction, ~ imanim , is valid
-     intuitionistically.  See ~ imandc for a version which holds
-     intuitionistically, by adding a decidability condition.  (Contributed by
-     NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen, 30-Oct-2012.) $)
-  iman $p |- ( ( ph -> ps ) <-> -. ( ph /\ -. ps ) ) $=
-    ( wi wn wa notnot imbi2i imnan bitri ) ABCABDZDZCAJEDBKABFGAJHI $.
-
-  $( Express conjunction in terms of implication.  Only the forward direction,
-     ~ annimim , is valid intuitionistically.  See ~ annimdc for a version
-     which holds intuitionistically, by adding a decidability condition.
-     (Contributed by NM, 2-Aug-1994.) $)
-  annim $p |- ( ( ph /\ -. ps ) <-> -. ( ph -> ps ) ) $=
-    ( wi wn wa iman con2bii ) ABCABDEABFG $.
-
-  $( Theorem *2.54 of [WhiteheadRussell] p. 107.  This does not hold
-     intuitionistically, although its converse, ~ pm2.53 , does.  See
-     ~ pm2.54dc for a version which holds intuitionistically, by restricting
-     itself to decidable propositions.  (Contributed by NM, 3-Jan-2005.) $)
-  pm2.54 $p |- ( ( -. ph -> ps ) -> ( ph \/ ps ) ) $=
-    ( wn wo notnot2 orc syl olc ja ) ACZBABDZJCAKAEABFGBAHI $.
-
-  $( Definition of 'or' in terms of negation and implication (classical).  See
-     ~ dfordc for a version which holds intuitionistically, by restricting
-     itself to decidable propositions.  Definition of [Margaris] p. 49.
-     (Contributed by NM, 31-Jan-2015.) $)
-  df-or $p |- ( ( ph \/ ps ) <-> ( -. ph -> ps ) ) $=
-    ( wo wn wi pm2.53 pm2.54 impbii ) ABCADBEABFABGH $.
-
-  $( Implication in terms of disjunction.  Theorem *4.6 of [WhiteheadRussell]
-     p. 120.  See ~ imordc for a version which holds intuitionistically, by
-     restricting itself to decidable propositions.  (Contributed by NM,
-     5-Aug-1993.) $)
-  imor $p |- ( ( ph -> ps ) <-> ( -. ph \/ ps ) ) $=
-    ( wi wn wo notnot imbi1i df-or bitr4i ) ABCADZDZBCJBEAKBAFGJBHI $.
-
-  ${
-    orri.1 $e |- ( -. ph -> ps ) $.
-    $( Infer implication from disjunction.  This is a classical, not an
-       intuitionistic, result.  See ~ pm2.54dc for a version which holds
-       intuitionistically, by restricting itself to decidable propositions.
-       (Contributed by NM, 11-Jun-1994.) $)
-    orri $p |- ( ph \/ ps ) $=
-      ( wo wn wi df-or mpbir ) ABDAEBFCABGH $.
-  $}
-
-  $( Classical definition of existential quantification.  This does not hold
-     intuitionistically, so it depends on ~ ax-3 for its proof.  Definition of
-     [Margaris] p. 49.  (Contributed by NM, 2-Feb-2015.)  (Revised by Mario
-     Carneiro, 12-May-2015.) $)
-  df-ex $p |- ( E. x ph <-> -. A. x -. ph ) $=
-    ( wn wal wex alnex con2bii ) ACBDABEABFG $.
-
-  $( Theorem 19.6 of [Margaris] p. 89.  (Contributed by NM, 5-Aug-1993.) $)
-  alex $p |- ( A. x ph <-> -. E. x -. ph ) $=
-    ( wal wn wex notnot albii alnex bitri ) ABCADZDZBCJBEDAKBAFGJBHI $.
-
-  ${
-    mt3d.1 $e |- ( ph -> -. ch ) $.
-    mt3d.2 $e |- ( ph -> ( -. ps -> ch ) ) $.
-    $( Modus tollens deduction.  (Contributed by NM, 26-Mar-1995.) $)
-    mt3d $p |- ( ph -> ps ) $=
-      ( wn con1d mpd ) ACFBDABCEGH $.
-  $}
-
-  ${
-    nsyl2.1 $e |- ( ph -> -. ps ) $.
-    nsyl2.2 $e |- ( -. ch -> ps ) $.
-    $( A negated syllogism inference.  (Contributed by NM, 26-Jun-1994.)
-       (Revised by NM, 19-Jun-2013.) $)
-    nsyl2 $p |- ( ph -> ch ) $=
-      ( wn wi a1i mt3d ) ACBDCFBGAEHI $.
-  $}
-
-  ${
-    con1i.a $e |- ( -. ph -> ps ) $.
-    $( A contraposition inference.  (Contributed by NM, 5-Aug-1993.)  (Proof
-       shortened by O'Cat, 28-Nov-2008.)  (Proof shortened by Wolf Lammen,
-       19-Jun-2013.) $)
-    con1i $p |- ( -. ps -> ph ) $=
-      ( wn id nsyl2 ) BDZBAGECF $.
-  $}
-
-  $( Simplification.  Similar to Theorem *3.26 (Simp) of [WhiteheadRussell]
-     p. 112.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Wolf
-     Lammen, 21-Jul-2012.) $)
-  simplim $p |- ( -. ( ph -> ps ) -> ph ) $=
-    ( wi pm2.21 con1i ) AABCABDE $.
-
-  ${
-    19.32.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.32 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-    19.32 $p |- ( A. x ( ph \/ ps ) <-> ( ph \/ A. x ps ) ) $=
-      ( wn wi wal wo hbn 19.21h df-or albii 3bitr4i ) AEZBFZCGNBCGZFABHZCGAPHNBC
-      ACDIJQOCABKLAPKM $.
-  $}
-
-  ${
-    19.31.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.31 of [Margaris] p. 90.  Only the reverse direction is valid
-       intuitionistically.  (Contributed by NM, 5-Aug-1993.) $)
-    19.31 $p |- ( A. x ( ph \/ ps ) <-> ( A. x ph \/ ps ) ) $=
-      ( wo wal 19.32 orcom albii 3bitr4i ) BAEZCFBACFZEABEZCFLBEBACDGMKCABHILBH
-      J $.
-  $}
-
-  $( Theorem 19.35 of [Margaris] p. 90.  In classical logic, this theorem is
-     useful for moving an implication (in the form of the right-hand side) into
-     the scope of a single existential quantifier.  The forward direction,
-     ~ 19.35-1 , holds intuitionistically.  (Contributed by NM, 5-Aug-1993.)
-     (Proof shortened by Wolf Lammen, 27-Jun-2014.) $)
-  19.35 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> E. x ps ) ) $=
-    ( wi wex wal wn wa 19.26 annim albii alnex anbi2i 3bitr3i con4bii ) ABDZCEZ
-    ACFZBCEZDZPGZCFZRSGZHZQGTGABGZHZCFRUECFZHUBUDAUECIUFUACABJKUGUCRBCLMNPCLRSJ
-    NO $.
-
-  ${
-    19.37.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.37 of [Margaris] p. 90.  The forward direction is valid
-       intuitionistically (it could be proved from ~ 19.35-1 ), but the reverse
-       direction is not.  (Contributed by NM, 5-Aug-1993.) $)
-    19.37 $p |- ( E. x ( ph -> ps ) <-> ( ph -> E. x ps ) ) $=
-      ( wi wex wal 19.35 19.3h imbi1i bitri ) ABECFACGZBCFZEAMEABCHLAMACDIJK $.
+    $d x A $.  $d x y $.
+    $( Membership of the empty set in another class.  (Contributed by NM,
+       29-Jun-2004.) $)
+    0el $p |- ( (/) e. A <-> E. x e. A A. y -. y e. x ) $=
+      ( c0 wcel cv wceq wrex wn wal risset eq0 rexbii bitri ) DCEAFZDGZACHBFOEI
+      BJZACHADCKPQACBOLMN $.
   $}
 
   ${
     $d x ph $.
-    $( Special case of Theorem 19.37 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
-    19.37v $p |- ( E. x ( ph -> ps ) <-> ( ph -> E. x ps ) ) $=
-      ( ax-17 19.37 ) ABCACDE $.
+    $( The class builder of a decidable proposition not containing the
+       abstraction variable is either the universal class or the empty set.
+       (Contributed by Jim Kingdon, 1-Aug-2018.) $)
+    abvor0dc $p |- ( DECID ph -> ( { x | ph } = _V \/ { x | ph } = (/) ) ) $=
+      ( wdc wn wo cab cvv wceq c0 df-dc cv wcel id vex a1i 2thd abbi1dv
+      noel 2falsed orim12i sylbi ) ACAADZEABFZGHZUCIHZEAJAUDUBUEAABGAAB
+      KZGLZAMUGABNOPQUBABIUBAUFILZUBMUHDUBUFROSQTUA $.
+  $}
+
+  ${
+    $( Nonempty class abstraction.  (Contributed by Jim Kingdon,
+       1-Aug-2018.) $)
+    abn0r $p |- ( E. x ph -> { x | ph } =/= (/) ) $=
+      ( wex cv cab wcel c0 wne abid exbii nfab1 n0rf sylbir ) ABCBDABEZ
+      FZBCNGHOABABIJBNABKLM $.
+  $}
+
+  $( Non-empty restricted class abstraction.  (Contributed by Jim Kingdon,
+     1-Aug-2018.) $)
+  rabn0r $p |- ( E. x e. A ph -> { x e. A | ph } =/= (/) ) $=
+    ( cv wcel wa wex cab c0 wne wrex crab abn0r df-rex df-rab 3imtr4i
+    neeq1i ) BDCEAFZBGRBHZIJABCKABCLZIJRBMABCNTSIABCOQP $.
+
+  $( Any restricted class abstraction restricted to the empty set is empty.
+     (Contributed by NM, 15-Oct-2003.)  (Proof shortened by Andrew Salmon,
+     26-Jun-2011.) $)
+  rab0 $p |- { x e. (/) | ph } = (/) $=
+    ( cv c0 wcel wa cab wceq wn crab noel intnanr equid notnoti abbii
+    2false df-rab dfnul2 3eqtr4i ) BCZDEZAFZBGTTHZIZBGABDJDUBUDBUBUDU
+    AATKLUCBMNPOABDQBRS $.
+
+  ${
+    $d x y $.  $d A y $.  $d ph y $.
+
+    $( Condition for a restricted class abstraction to be empty.  (Contributed
+       by Jeff Madsen, 7-Jun-2010.) $)
+    rabeq0 $p |- ( { x e. A | ph } = (/) <-> A. x e. A -. ph ) $=
+      ( vy cv wcel wn wi wal wa wral crab wceq imnan albii df-ral bitri
+      c0 wsb 3bitr4ri sbn nfv sb8 eq0 cab df-rab eleq2i df-clab notbii
+      ) BECFZAGZHZBIUJAJZGZBIZUKBCKABCLZRMZULUNBUJANOUKBCPUNBDSZDIUMBDS
+      ZGZDIZUOUQURUTDUMBDUAOUNBDUNDUBUCUQDEZUPFZGZDIVADUPUDVDUTDVCUSVCV
+      BUMBUEZFUSUPVEVBABCUFUGUMDBUHQUIOQTT $.
+
+    $( Condition for a class abstraction to be empty.  (Contributed by Jim
+       Kingdon, 12-Aug-2018.) $)
+    abeq0 $p |- ( { x | ph } = (/) <-> A. x -. ph ) $=
+      ( vy wn wsb wal cab c0 wceq sbn albii nfv sb8 cv wcel eq0 df-clab
+      notbii bitri 3bitr4ri ) ADZBCEZCFABCEZDZCFZUABFABGZHIZUBUDCABCJKU
+      ABCUACLMUGCNUFOZDZCFUECUFPUIUDCUHUCACBQRKST $.
+  $}
+
+  ${
+    $d A x $.
+    $( Law of excluded middle given decidability, in terms of restricted class
+       abstractions.  (Contributed by Jim Kingdon, 2-Aug-2018.) $)
+    rabxmdc $p |- ( A. x DECID ph ->
+        A = ( { x e. A | ph } u. { x e. A | -. ph } ) ) $=
+      ( wdc wal wn wo crab cun wral wceq cv wi exmiddc a1d alimi df-ral
+      wcel sylibr rabid2 unrab syl6eqr ) ADZBEZCAAFZGZBCHZABCHUEBCHIUDU
+      FBCJZCUGKUDBLCRZUFMZBEUHUCUJBUCUFUIANOPUFBCQSUFBCTSAUEBCUAUB $.
+
+    $( Law of noncontradiction, in terms of restricted class abstractions.
+       (Contributed by Jeff Madsen, 20-Jun-2011.) $)
+    rabnc $p |- ( { x e. A | ph } i^i { x e. A | -. ph } ) = (/) $=
+      ( crab wn cin wa c0 inrab wceq rabeq0 cv wcel pm3.24 a1i mprgbir eqtri )
+      ABCDAEZBCDFARGZBCDZHARBCITHJSEZBCSBCKUABLCMANOPQ $.
+  $}
+
+  ${
+    $d x A $.
+    $( The union of a class with the empty set is itself.  Theorem 24 of
+       [Suppes] p. 27.  (Contributed by NM, 5-Aug-1993.) $)
+    un0 $p |- ( A u. (/) ) = A $=
+      ( vx c0 cv wcel wo noel biorfi bicomi uneqri ) BACABDZAEZLKCEZFMLKGHIJ $.
+
+    $( The intersection of a class with the empty set is the empty set.
+       Theorem 16 of [Suppes] p. 26.  (Contributed by NM, 5-Aug-1993.) $)
+    in0 $p |- ( A i^i (/) ) = (/) $=
+      ( vx c0 cv wcel wa noel bianfi bicomi ineqri ) BACCBDZCEZKAEZLFLMKGHIJ $.
+  $}
+
+  $( The intersection of a class with the universal class is itself.  Exercise
+     4.10(k) of [Mendelson] p. 231.  (Contributed by NM, 17-May-1998.) $)
+  inv1 $p |- ( A i^i _V ) = A $=
+    ( cvv cin inss1 ssid ssv ssini eqssi ) ABCAABDAABAEAFGH $.
+
+  $( The union of a class with the universal class is the universal class.
+     Exercise 4.10(l) of [Mendelson] p. 231.  (Contributed by NM,
+     17-May-1998.) $)
+  unv $p |- ( A u. _V ) = _V $=
+    ( cvv cun ssv ssun2 eqssi ) ABCZBGDBAEF $.
+
+  ${
+    $d A x $.
+    $( The null set is a subset of any class.  Part of Exercise 1 of
+       [TakeutiZaring] p. 22.  (Contributed by NM, 5-Aug-1993.) $)
+    0ss $p |- (/) C_ A $=
+      ( vx c0 cv wcel noel pm2.21i ssriv ) BCABDZCEIAEIFGH $.
+  $}
+
+  $( Any subset of the empty set is empty.  Theorem 5 of [Suppes] p. 23 and its
+     converse.  (Contributed by NM, 17-Sep-2003.) $)
+  ss0b $p |- ( A C_ (/) <-> A = (/) ) $=
+    ( c0 wceq wss 0ss eqss mpbiran2 bicomi ) ABCZABDZIJBADAEABFGH $.
+
+  $( Any subset of the empty set is empty.  Theorem 5 of [Suppes] p. 23.
+     (Contributed by NM, 13-Aug-1994.) $)
+  ss0 $p |- ( A C_ (/) -> A = (/) ) $=
+    ( c0 wss wceq ss0b biimpi ) ABCABDAEF $.
+
+  $( A subclass of an empty class is empty.  (Contributed by NM, 7-Mar-2007.)
+     (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+  sseq0 $p |- ( ( A C_ B /\ B = (/) ) -> A = (/) ) $=
+    ( c0 wceq wss sseq2 ss0 syl6bi impcom ) BCDZABEZACDZJKACELBCAFAGHI $.
+
+  $( A class with a nonempty subclass is nonempty.  (Contributed by NM,
+     17-Feb-2007.) $)
+  ssn0 $p |- ( ( A C_ B /\ A =/= (/) ) -> B =/= (/) ) $=
+    ( wss c0 wne wceq sseq0 ex necon3d imp ) ABCZADEBDEKBDADKBDFADFABGHIJ $.
+
+  ${
+    abf.1 $e |- -. ph $.
+    $( A class builder with a false argument is empty.  (Contributed by NM,
+       20-Jan-2012.) $)
+    abf $p |- { x | ph } = (/) $=
+      ( cab c0 wss wceq cv wcel pm2.21i abssi ss0 ax-mp ) ABDZEFNEGABEABHEICJKN
+      LM $.
+  $}
+
+  ${
+    $d x A $.  $d x ph $.
+    eq0rdv.1 $e |- ( ph -> -. x e. A ) $.
+    $( Deduction rule for equality to the empty set.  (Contributed by NM,
+       11-Jul-2014.) $)
+    eq0rdv $p |- ( ph -> A = (/) ) $=
+      ( c0 wss wceq cv wcel pm2.21d ssrdv ss0 syl ) ACEFCEGABCEABHZCINEIDJKCLM
+      $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( The proper substitution of a proper class for a set into a class results
+       in the empty set.  (Contributed by NM, 17-Aug-2018.) $)
+    csbprc $p |- ( -. A e. _V -> [_ A / x ]_ B = (/) ) $=
+      ( vy cvv wcel wn csb cv wsbc cab c0 df-csb wfal sbcex con3i pm2.21d falim
+      impbid1 abbidv fal abf syl6eq syl5eq ) BEFZGZABCHDICFZABJZDKZLADBCMUFUIND
+      KLUFUHNDUFUHNUFUHNUHUEUGABOPQUHRSTNDUAUBUCUD $.
+  $}
+
+  $( Two classes are empty iff their union is empty.  (Contributed by NM,
+     11-Aug-2004.) $)
+  un00 $p |- ( ( A = (/) /\ B = (/) ) <-> ( A u. B ) = (/) ) $=
+    ( c0 wceq wa cun uneq12 un0 syl6eq wss ssun1 sseq2 mpbii sylib ssun2 impbii
+    ss0b jca ) ACDZBCDZEZABFZCDZUAUBCCFCACBCGCHIUCSTUCACJZSUCAUBJUDABKUBCALMAQN
+    UCBCJZTUCBUBJUEBAOUBCBLMBQNRP $.
+
+  $( Only the universal class has the universal class as a subclass.
+     (Contributed by NM, 17-Sep-2003.)  (Proof shortened by Andrew Salmon,
+     26-Jun-2011.) $)
+  vss $p |- ( _V C_ A <-> A = _V ) $=
+    ( cvv wss wa wceq ssv biantrur eqss bitr4i ) BACZABCZJDABEKJAFGABHI $.
+
+  $( The null set is a proper subset of any non-empty set.  (Contributed by NM,
+     27-Feb-1996.) $)
+  0pss $p |- ( (/) C. A <-> A =/= (/) ) $=
+    ( c0 wpss wne wss 0ss df-pss mpbiran necom bitri ) BACZBADZABDKBAELAFBAGHBA
+    IJ $.
+
+  $( No set is a proper subset of the empty set.  (Contributed by NM,
+     17-Jun-1998.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+  npss0 $p |- -. A C. (/) $=
+    ( c0 wpss wss wn wa wi 0ss a1i imanim ax-mp dfpss3 mtbir ) ABCABD
+    ZBADZEFZNOGPEONAHINOJKABLM $.
+
+  $( Any non-universal class is a proper subclass of the universal class.
+     (Contributed by NM, 17-May-1998.) $)
+  pssv $p |- ( A C. _V <-> -. A = _V ) $=
+    ( cvv wpss wss wceq wn ssv dfpss2 mpbiran ) ABCABDABEFAGABHI $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Two ways of saying that two classes are disjoint (have no members in
+       common).  (Contributed by NM, 17-Feb-2004.) $)
+    disj $p |- ( ( A i^i B ) = (/) <-> A. x e. A -. x e. B ) $=
+      ( cin c0 wceq cv wcel wn wi wal wral wa cab df-in eqeq1i abeq1 imnan noel
+      wb nbn bitr2i albii 3bitri df-ral bitr4i ) BCDZEFZAGZBHZUICHZIZJZAKZULABL
+      UHUJUKMZANZEFUOUIEHZTZAKUNUGUPEABCOPUOAEQURUMAUMUOIURUJUKRUQUOUISUAUBUCUD
+      ULABUEUF $.
+
+    $( Two ways of saying that two classes are disjoint.  (Contributed by Jeff
+       Madsen, 19-Jun-2011.) $)
+    disjr $p |- ( ( A i^i B ) = (/) <-> A. x e. B -. x e. A ) $=
+      ( cin c0 wceq cv wcel wn wral incom eqeq1i disj bitri ) BCDZEFCBDZEFAGBHI
+      ACJOPEBCKLACBMN $.
+
+    $( Two ways of saying that two classes are disjoint (have no members in
+       common).  (Contributed by NM, 19-Aug-1993.) $)
+    disj1 $p |- ( ( A i^i B ) = (/) <-> A. x ( x e. A -> -. x e. B ) ) $=
+      ( cin c0 wceq cv wcel wn wral wi wal disj df-ral bitri ) BCDEFAGZCHIZABJP
+      BHQKALABCMQABNO $.
+
+    $( Two ways of saying that two classes are disjoint, using the complement
+       of ` B ` relative to a universe ` C ` .  (Contributed by NM,
+       15-Feb-2007.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    reldisj $p |- ( A C_ C -> ( ( A i^i B ) = (/) <-> A C_ ( C \ B ) ) ) $=
+      ( vx wss cv wcel wn wi wal cdif cin c0 wceq wb dfss2 pm5.44 eldif imbi2i
+      wa syl6bbr sps sylbi albidv disj1 3bitr4g ) ACEZDFZAGZUHBGHZIZDJUIUHCBKZG
+      ZIZDJABLMNAULEUGUKUNDUGUIUHCGZIZDJUKUNOZDACPUPUQDUPUKUIUOUJTZIUNUIUOUJQUM
+      URUIUHCBRSUAUBUCUDDABUEDAULPUF $.
+
+    $( Two ways of saying that two classes are disjoint.  (Contributed by NM,
+       19-May-1998.) $)
+    disj3 $p |- ( ( A i^i B ) = (/) <-> A = ( A \ B ) ) $=
+      ( vx cv wcel wn wi wal cdif wb cin c0 wa pm4.71 eldif bibi2i bitr4i albii
+      wceq disj1 dfcleq 3bitr4i ) CDZAEZUCBEFZGZCHUDUCABIZEZJZCHABKLSAUGSUFUICU
+      FUDUDUEMZJUIUDUENUHUJUDUCABOPQRCABTCAUGUAUB $.
+
+    $( Members of disjoint sets are not equal.  (Contributed by NM,
+       28-Mar-2007.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    disjne $p |- ( ( ( A i^i B ) = (/) /\ C e. A /\ D e. B ) -> C =/= D ) $=
+      ( vx cin c0 wceq wcel wne cv wn wral wi disj eleq1 notbid rspccva eleq1a
+      wa necon3bd syl5com sylanb 3impia ) ABFGHZCAIZDBIZCDJZUEEKZBIZLZEAMZUFUGU
+      HNEABOULUFTCBIZLZUGUHUKUNECAUICHUJUMUICBPQRUGUMCDDBCSUAUBUCUD $.
+  $}
+
+  $( A set can't belong to both members of disjoint classes.  (Contributed by
+     NM, 28-Feb-2015.) $)
+  disjel $p |- ( ( ( A i^i B ) = (/) /\ C e. A ) -> -. C e. B ) $=
+    ( cin c0 wceq wcel wn cdif wi disj3 eleq2 eldifn syl6bi sylbi imp ) ABDEFZC
+    AGZCBGHZQAABIZFZRSJABKUARCTGSATCLCABMNOP $.
+
+  $( Two ways of saying that two classes are disjoint.  (Contributed by NM,
+     17-May-1998.) $)
+  disj2 $p |- ( ( A i^i B ) = (/) <-> A C_ ( _V \ B ) ) $=
+    ( cvv wss cin c0 wceq cdif wb ssv reldisj ax-mp ) ACDABEFGACBHDIAJABCKL $.
+
+  $( A consequence of two classes being disjoint.  In classical logic this
+     would be a biconditional.  (Contributed by Jim Kingdon, 2-Aug-2018.) $)
+  disj4im $p |- ( ( A i^i B ) = (/) -> -. ( A \ B ) C. A ) $=
+    ( cin c0 wceq cdif wpss wn disj3 eqcom bitri wss dfpss2 simprbi con2i sylbi
+    ) ABCDEZABFZAEZRAGZHQARESABIARJKTSTRALSHRAMNOP $.
+
+  $( Intersection with a subclass of a disjoint class.  (Contributed by FL,
+     24-Jan-2007.) $)
+  ssdisj $p |- ( ( A C_ B /\ ( B i^i C ) = (/) ) -> ( A i^i C ) = (/) ) $=
+    ( wss cin c0 wceq wa ss0b wi ssrin sstr2 syl syl5bir imp ss0 ) ABDZBCEZFGZH
+    ACEZFDZTFGQSUASRFDZQUARIQTRDUBUAJABCKTRFLMNOTPM $.
+
+  $( A class is a proper subset of its union with a disjoint nonempty class.
+     (Contributed by NM, 15-Sep-2004.) $)
+  disjpss $p |- ( ( ( A i^i B ) = (/) /\ B =/= (/) ) -> A C. ( A u. B ) ) $=
+    ( cin c0 wceq wne wa wss wn cun wpss ssid biantru bitri sseq2 syl5bb syl6bi
+    ssin ss0 necon3ad imp nsspssun uncom psseq2i sylib ) ABCZDEZBDFZGBAHZIZAABJ
+    ZKZUGUHUJUGUIBDUGUIBDHZBDEUIBUFHZUGUMUIUIBBHZGUNUOUIBLMBABRNUFDBOPBSQTUAUJA
+    BAJZKULBAUBUPUKABAUCUDNUE $.
+
+  $( The union of disjoint classes is disjoint.  (Contributed by NM,
+     26-Sep-2004.) $)
+  undisj1 $p |- ( ( ( A i^i C ) = (/) /\ ( B i^i C ) = (/) ) <->
+               ( ( A u. B ) i^i C ) = (/) ) $=
+    ( cin c0 wceq wa cun un00 indir eqeq1i bitr4i ) ACDZEFBCDZEFGMNHZEFABHCDZEF
+    MNIPOEABCJKL $.
+
+  $( The union of disjoint classes is disjoint.  (Contributed by NM,
+     13-Sep-2004.) $)
+  undisj2 $p |- ( ( ( A i^i B ) = (/) /\ ( A i^i C ) = (/) ) <->
+               ( A i^i ( B u. C ) ) = (/) ) $=
+    ( cin c0 wceq wa cun un00 indi eqeq1i bitr4i ) ABDZEFACDZEFGMNHZEFABCHDZEFM
+    NIPOEABCJKL $.
+
+  $( Subclass implies empty intersection with difference from the universal
+     class.  (Contributed by NM, 17-Sep-2003.) $)
+  ssindif0im $p |- ( A C_ B -> ( A i^i ( _V \ B ) ) = (/) ) $=
+    ( wss cvv cdif cin c0 wceq ddifss sstr mpan2 disj2 sylibr ) ABCZA
+    DDBEZEZCZAOFGHNBPCQBIABPJKAOLM $.
+
+  $( The intersection of classes with a common member is nonempty.
+     (Contributed by NM, 7-Apr-1994.) $)
+  inelcm $p |- ( ( A e. B /\ A e. C ) -> ( B i^i C ) =/= (/) ) $=
+    ( wcel wa cin c0 wne elin ne0i sylbir ) ABDACDEABCFZDLGHABCILAJK $.
+
+  $( A minimum element of a class has no elements in common with the class.
+     (Contributed by NM, 22-Jun-1994.) $)
+  minel $p |- ( ( A e. B /\ ( C i^i B ) = (/) ) -> -. A e. C ) $=
+    ( cin c0 wceq wcel wn wa wi inelcm necon2bi imnan sylibr con2d impcom ) CBD
+    ZEFZABGZACGZHRTSRTSIZHTSHJUAQEACBKLTSMNOP $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Distribute union over difference.  (Contributed by NM, 17-May-1998.)
+       (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    undif4 $p |- ( ( A i^i C ) = (/) ->
+                 ( A u. ( B \ C ) ) = ( ( A u. B ) \ C ) ) $=
+      ( vx cv wcel wn wi wal cdif cun wb cin c0 wceq wo wa eldif elun 3bitr4g
+      pm2.621 olc impbid1 anbi2d orbi2i bitri anbi1i alimi disj1 dfcleq 3imtr4i
+      ordi ) DEZAFZUMCFGZHZDIUMABCJZKZFZUMABKZCJZFZLZDIACMNOURVAOUPVCDUPUNUMUQF
+      ZPZUMUTFZUOQZUSVBUPUNUMBFZPZUNUOPZQZVIUOQVEVGUPVJUOVIUPVJUOUNUOUAUOUNUBUC
+      UDVEUNVHUOQZPVKVDVLUNUMBCRUEUNVHUOULUFVFVIUOUMABSUGTUMAUQSUMUTCRTUHDACUID
+      URVAUJUK $.
+
+    $( Subset relation for disjoint classes.  (Contributed by NM,
+       25-Oct-2005.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    disjssun $p |- ( ( A i^i B ) = (/) -> ( A C_ ( B u. C ) <-> A C_ C ) ) $=
+      ( cin c0 wceq cun wss indi equncomi uneq2 un0 syl6eq syl5eq df-ss 3bitr4g
+      eqeq1d ) ABDZEFZABCGZDZAFACDZAFATHACHSUAUBASUAUBRGZUBUARUBABCIJSUCUBEGUBR
+      EUBKUBLMNQATOACOP $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Subclass implies empty difference.  One direction of Exercise 7 of
+       [TakeutiZaring] p. 22.  In classical logic this would be an
+       equivalence.  (Contributed by Jim Kingdon, 2-Aug-2018.) $)
+    ssdif0im $p |- ( A C_ B -> ( A \ B ) = (/) ) $=
+      ( vx cv wcel wi wal cdif wn c0 wceq wa imanim eldif sylnibr alimi
+      wss dfss2 eq0 3imtr4i ) CDZAEZUABEZFZCGUAABHZEZIZCGABQUEJKUDUGCUD
+      UBUCILUFUBUCMUAABNOPCABRCUEST $.
+  $}
+
+  $( Universal class equality in terms of empty difference.  (Contributed by
+     Jim Kingdon, 3-Aug-2018.) $)
+  vdif0im $p |- ( A = _V -> ( _V \ A ) = (/) ) $=
+    ( cvv wceq wss cdif c0 vss ssdif0im sylbir ) ABCBADBAEFCAGBAHI $.
+
+  ${
+    $d V x $.
+    $( If the difference between the restricting class of a restricted class
+       abstraction and the restricted class abstraction is empty, the
+       restricting class is equal to this restricted class abstraction.
+       (Contributed by Jim Kingdon, 3-Aug-2018.) $)
+    difrab0eqim $p |-
+        ( V = { x e. V | ph } -> ( V \ { x e. V | ph } ) = (/) ) $=
+      ( crab wceq wss cdif c0 ssrabeq ssdif0im sylbir ) CABCDZECLFCLGHE
+      ABCICLJK $.
+  $}
+
+  $( A subclass missing a member is a proper subclass.  (Contributed by NM,
+     12-Jan-2002.) $)
+  ssnelpss $p |- ( A C_ B -> ( ( C e. B /\ -. C e. A ) -> A C. B ) ) $=
+    ( wcel wn wa wceq wss wpss nelneq2 eqcom sylnib dfpss2 baibr syl5ib ) CBDCA
+    DEFZABGZEZABHZABIZPBAGQCBAJBAKLTSRABMNO $.
+
+  ${
+    ssnelpssd.1 $e |- ( ph -> A C_ B ) $.
+    ssnelpssd.2 $e |- ( ph -> C e. B ) $.
+    ssnelpssd.3 $e |- ( ph -> -. C e. A ) $.
+    $( Subclass inclusion with one element of the superclass missing is proper
+       subclass inclusion.  Deduction form of ~ ssnelpss .  (Contributed by
+       David Moews, 1-May-2017.) $)
+    ssnelpssd $p |- ( ph -> A C. B ) $=
+      ( wcel wn wpss wss wa wi ssnelpss syl mp2and ) ADCHZDBHIZBCJZFGABCKQRLSME
+      BCDNOP $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Intersection, subclass, and difference relationship.  In classical logic
+       the converse would also hold.  (Contributed by Jim Kingdon,
+       3-Aug-2018.) $)
+    inssdif0im $p |- ( ( A i^i B ) C_ C -> ( A i^i ( B \ C ) ) = (/) ) $=
+      ( vx cv cin wcel wi wal cdif wn wss c0 wceq wa elin imbi1i imanim
+      sylbi eldif anbi2i anass 3bitr4ri sylnib alimi dfss2 eq0 3imtr4i
+      ) DEZABFZGZUICGZHZDIUIABCJZFZGZKZDIUJCLUOMNUMUQDUMUIAGZUIBGZOZULK
+      ZOZUPUMUTULHVBKUKUTULUIABPQUTULRSURUIUNGZOURUSVAOZOUPVBVCVDURUIBC
+      TUAUIAUNPURUSVAUBUCUDUEDUJCUFDUOUGUH $.
+  $}
+
+  $( The difference between a class and itself is the empty set.  Proposition
+     5.15 of [TakeutiZaring] p. 20.  Also Theorem 32 of [Suppes] p. 28.
+     (Contributed by NM, 22-Apr-2004.) $)
+  difid $p |- ( A \ A ) = (/) $=
+    ( wss cdif c0 wceq ssid ssdif0im ax-mp ) AABAACDEAFAAGH $.
+
+  ${
+    $d x A $.
+    $( The difference between a class and itself is the empty set.  Proposition
+       5.15 of [TakeutiZaring] p. 20.  Also Theorem 32 of [Suppes] p. 28.
+       Alternate proof of ~ difid .  (Contributed by David Abernethy,
+       17-Jun-2012.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    difidALT $p |- ( A \ A ) = (/) $=
+      ( vx cdif cv wcel wn crab c0 dfdif2 dfnul3 eqtr4i ) AACBDAEFBAGHBAAIBAJK
+      $.
+  $}
+
+  $( The difference between a class and the empty set.  Part of Exercise 4.4 of
+     [Stoll] p. 16.  (Contributed by NM, 17-Aug-2004.) $)
+  dif0 $p |- ( A \ (/) ) = A $=
+    ( cdif c0 difid difeq2i difdif eqtr3i ) AAABZBACBAHCAADEAAFG $.
+
+  $( The difference between the empty set and a class.  Part of Exercise 4.4 of
+     [Stoll] p. 16.  (Contributed by NM, 17-Aug-2004.) $)
+  0dif $p |- ( (/) \ A ) = (/) $=
+    ( c0 cdif wss wceq difss ss0 ax-mp ) BACZBDIBEBAFIGH $.
+
+  $( A class and its relative complement are disjoint.  Theorem 38 of [Suppes]
+     p. 29.  (Contributed by NM, 24-Mar-1998.) $)
+  disjdif $p |- ( A i^i ( B \ A ) ) = (/) $=
+    ( cin wss cdif c0 wceq inss1 inssdif0im ax-mp ) ABCADABAECFGABHAB
+    AIJ $.
+
+  $( The difference of a class from its intersection is empty.  Theorem 37 of
+     [Suppes] p. 29.  (Contributed by NM, 17-Aug-2004.)  (Proof shortened by
+     Andrew Salmon, 26-Jun-2011.) $)
+  difin0 $p |- ( ( A i^i B ) \ B ) = (/) $=
+    ( cin wss cdif c0 wceq inss2 ssdif0im ax-mp ) ABCZBDKBEFGABHKBIJ $.
+
+  $( Absorption of difference by union.  In classical logic, as Theorem 35 of
+     [Suppes] p. 29, this would be equality rather than subset.  (Contributed
+     by Jim Kingdon, 4-Aug-2018.) $)
+  undif1ss $p |- ( ( A \ B ) u. B ) C_ ( A u. B ) $=
+    ( cdif wss cun difss unss1 ax-mp ) ABCZADIBEABEDABFIABGH $.
+
+  $( Absorption of difference by union.  In classical logic, as in Part of
+     proof of Corollary 6K of [Enderton] p. 144, this would be equality rather
+     than subset.  (Contributed by Jim Kingdon, 4-Aug-2018.) $)
+  undif2ss $p |- ( A u. ( B \ A ) ) C_ ( A u. B ) $=
+    ( cdif cun undif1ss uncom 3sstr4i ) BACZADBADAHDABDBAEAHFABFG $.
+
+  $( Absorption of difference by union.  (Contributed by NM, 18-Aug-2013.) $)
+  undifabs $p |- ( A u. ( A \ B ) ) = A $=
+    ( cdif cun ssid difss unssi ssun1 eqssi ) AABCZDAAJAAEABFGAJHI $.
+
+  $( The intersection and class difference of a class with another class are
+     contained in the original class.  In classical logic we'd be able to make
+     a stronger statement: that everything in the original class is in the
+     intersection or the difference (that is, this theorem would be equality
+     rather than subset).  (Contributed by Jim Kingdon, 4-Aug-2018.) $)
+  inundifss $p |- ( ( A i^i B ) u. ( A \ B ) ) C_ A $=
+    ( cin cdif inss1 difss unssi ) ABCABDAABEABFG $.
+
+  $( Absorption of union by difference.  Theorem 36 of [Suppes] p. 29.
+     (Contributed by NM, 19-May-1998.) $)
+  difun2 $p |- ( ( A u. B ) \ B ) = ( A \ B ) $=
+    ( cun cdif c0 difundir difid uneq2i un0 3eqtri ) ABCBDABDZBBDZCKECKABBFLEKB
+    GHKIJ $.
+
+  $( Union of complementary parts into whole.  (Contributed by Jim Kingdon,
+     4-Aug-2018.) $)
+  undifss $p |- ( A C_ B <-> ( A u. ( B \ A ) ) C_ B ) $=
+    ( wss cdif cun wa difss jctr unss sylib ssun1 sstr mpan impbii ) ABCZABADZE
+    ZBCZOOPBCZFROSBAGHAPBIJAQCROAPKAQBLMN $.
+
+  $( A subset of a difference does not intersect the subtrahend.  (Contributed
+     by Jeff Hankins, 1-Sep-2013.)  (Proof shortened by Mario Carneiro,
+     24-Aug-2015.) $)
+  ssdifin0 $p |- ( A C_ ( B \ C ) -> ( A i^i C ) = (/) ) $=
+    ( cdif wss cin c0 wceq ssrin incom disjdif eqtri sseq0 sylancl ) ABCDZEACFZ
+    OCFZEQGHPGHAOCIQCOFGOCJCBKLPQMN $.
+
+  $( A class is a subclass of itself subtracted from another iff it is the
+     empty set.  (Contributed by Steve Rodriguez, 20-Nov-2015.) $)
+  ssdifeq0 $p |- ( A C_ ( B \ A ) <-> A = (/) ) $=
+    ( cdif wss wceq cin inidm ssdifin0 syl5eqr 0ss difeq2 sseq12d mpbiri impbii
+    c0 id ) ABACZDZAOEZRAAAFOAGABAHISROBOCZDTJSAOQTSPAOBKLMN $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( A consequence of inclusion in the union of two classes.  In classical
+       logic this would be a biconditional.  (Contributed by Jim Kingdon,
+       4-Aug-2018.) $)
+    ssundifim $p |- ( A C_ ( B u. C ) -> ( A \ B ) C_ C ) $=
+      ( vx cv wcel cun wi wal cdif wss wo wn pm5.6r elun imbi2i 3imtr4i
+      wa eldif dfss2 imbi1i alimi ) DEZAFZUCBCGZFZHZDIUCABJZFZUCCFZHZDI
+      AUEKUHCKUGUKDUDUCBFZUJLZHUDULMRZUJHUGUKUDULUJNUFUMUDUCBCOPUIUNUJU
+      CABSUAQUBDAUETDUHCTQ $.
+  $}
+
+  $( Distributive law for class difference.  In classical logic, as in Exercise
+     4.8 of [Stoll] p. 16, this would be equality rather than subset.
+     (Contributed by Jim Kingdon, 4-Aug-2018.) $)
+  difdifdirss $p |- ( ( A \ B ) \ C ) C_ ( ( A \ C ) \ ( B \ C ) ) $=
+    ( cdif cvv cun cin c0 dif32 invdif eqtr4i un0 indi disjdif eqtr3i
+    incom uneq2i wss ax-mp sseqtri ddifss unss2 difeq2i sstri eqsstri
+    indmss sslin ) ABDCDZACDZEBDZCFZGZUIBCDZDZUHUIUJGZHFZULUHUOUPUHUI
+    BDUOABCIUIBJKUOLKULUOUICGZFUPUIUJCMHUQUOCUIGHUQCANCUIPOQKKULUIEUM
+    DZGZUNUKURRULUSRUKUJEECDZDZFZURCVARUKVBRCUACVAUJUBSVBEBUTGZDURBUT
+    UFVCUMEBCJUCTUDUKURUIUGSUIUMJTUE $.
+
+  $( Two ways that ` A ` and ` B ` can "partition" ` C ` (when ` A ` and ` B `
+     don't overlap and ` A ` is a part of ` C ` ).  In classical logic, the
+     second implication would be a biconditional.  (Contributed by Jim Kingdon,
+     4-Aug-2018.) $)
+  uneqdifeqim $p |- ( ( A C_ C /\ ( A i^i B ) = (/) )
+     -> ( ( A u. B ) = C -> ( C \ A ) = B ) ) $=
+    ( cin c0 wceq cun cdif wi wss uncom wa eqcomd difeq1 difun2 incom
+    eqtr eqeq1i disj3 bitri expcom eqcoms sylbi syl5com sylancl com12
+    syl mpan adantl ) ABDZEFZABGZCFZCAHZBFZIACJUMUKUOBAGZULFZUMUKUOIZ
+    BAKUQUMLZCUPFZURUSUPCUPULCQMUTUNUPAHZFZVABAHZFZURCUPANBAOVBVDLUNV
+    CFZUKUOUNVAVCQUKBVCFZVEUOIZUKBADZEFVFUJVHEABPRBASTVGVCBVEVCBFUOUN
+    VCBQUAUBUCUDUEUGUHUFUI $.
+
+  ${
+    $d x A $.
+    $( Theorem 19.2 of [Margaris] p. 89 with restricted quantifiers (compare
+       ~ 19.2 ).  The restricted version is valid only when the domain of
+       quantification is inhabited.  (Contributed by Jim Kingdon,
+       5-Aug-2018.) $)
+    r19.2m $p |- ( ( E. x x e. A /\ A. x e. A ph ) -> E. x e. A ph ) $=
+      ( wral cv wcel wex wrex wa wal df-ral exintr sylbi df-rex syl6ibr
+      wi impcom ) ABCDZBECFZBGZABCHZRTSAIBGZUARSAPBJTUBPABCKSABLMABCNOQ
+      $.
+  $}
+
+  ${
+    $d x A $.
+    r19.3rm.1 $e |- F/ x ph $.
+    $( Restricted quantification of wff not containing quantified variable.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.3rm $p |- ( E. x x e. A -> ( ph <-> A. x e. A ph ) ) $=
+      ( cv wcel wex wi wral biimt wal df-ral 19.23 bitri syl6bbr ) BECF
+      ZBGZAQAHZABCIZQAJSPAHBKRABCLPABDMNO $.
+
+    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.28m $p |- ( E. x x e. A ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
+      ( cv wcel wex wral wa r19.3rm anbi1d r19.26 syl6rbbr ) CFDGCHZABC
+      DIZJACDIZPJABJCDIOAQPACDEKLABCDMN $.
+  $}
+
+  ${
+    $d x A $.  $d x ph $.
+    $( Restricted quantification of wff not containing quantified variable.
+       (Contributed by Jim Kingdon, 6-Aug-2018.) $)
+    r19.3rmv $p |- ( E. x x e. A -> ( ph <-> A. x e. A ph ) ) $=
+      ( nfv r19.3rm ) ABCABDE $.
+
+    $( Restricted quantification of wff not containing quantified variable.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.9rmv $p |- ( E. x x e. A -> ( ph <-> E. x e. A ph ) ) $=
+      ( wrex cv wcel wex wa df-rex 19.41v bitri baibr ) ABCDZBECFZBGZAMNAHBGOAH
+      ABCINABJKL $.
+
+    $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 6-Aug-2018.) $)
+    r19.28mv $p |- ( E. x x e. A ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
+      ( nfv r19.28m ) ABCDACEF $.
+
+    $( Restricted version of Theorem 19.45 of [Margaris] p. 90.  (Contributed
+       by NM, 27-May-1998.) $)
+    r19.45mv $p |- ( E. x x e. A ->
+                   ( E. x e. A ( ph \/ ps ) <-> ( ph \/ E. x e. A ps ) ) ) $=
+      ( cv wcel wex wrex wo r19.9rmv orbi1d r19.43 syl6rbbr ) CEDFCGZAB
+      CDHZIACDHZOIABICDHNAPOACDJKABCDLM $.
+  $}
+
+  ${
+    $d x A $.
+    r19.27m.1 $e |- F/ x ps $.
+    $( Restricted quantifier version of Theorem 19.27 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.27m $p |- ( E. x x e. A ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( A. x e. A ph /\ ps ) ) ) $=
+      ( cv wcel wex wral wa r19.3rm anbi2d r19.26 syl6rbbr ) CFDGCHZACD
+      IZBJPBCDIZJABJCDIOBQPBCDEKLABCDMN $.
+  $}
+
+  ${
+    $d x A $.  $d x ps $.
+    $( Restricted quantifier version of Theorem 19.27 of [Margaris] p. 90.  It
+       is valid only when the domain of quantification is inhabited.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    r19.27mv $p |- ( E. x x e. A ->
+                   ( A. x e. A ( ph /\ ps ) <-> ( A. x e. A ph /\ ps ) ) ) $=
+      ( nfv r19.27m ) ABCDBCEF $.
+  $}
+
+  ${
+    $d x A $.
+    $( Vacuous quantification is always true.  (Contributed by NM,
+       11-Mar-1997.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+    rzal $p |- ( A = (/) -> A. x e. A ph ) $=
+      ( c0 wceq cv wcel ne0i necon2bi pm2.21d ralrimiv ) CDEZABCLBFZCGZANCDCMHI
+      JK $.
+
+    $( Restricted existential quantification implies its restriction is
+       nonempty.  (Contributed by Szymon Jaroszewicz, 3-Apr-2007.) $)
+    rexn0 $p |- ( E. x e. A ph -> A =/= (/) ) $=
+      ( c0 wne cv wcel ne0i a1d rexlimiv ) ACDEZBCBFZCGKACLHIJ $.
+
+    $( Idempotent law for restricted quantifier.  (Contributed by NM,
+       28-Mar-1997.) $)
+    ralidm $p |- ( A. x e. A A. x e. A ph <-> A. x e. A ph ) $=
+      ( wral nfra1 cv wcel wa anidm rsp2 syl5bir ralrimi wi wal wex ax-1 sylibr
+      19.23 df-ral impbii ) ABCDZBCDZUAUBABCUABCEBFCGZUCUCHUBAUCIABBCCJKLUAUCUA
+      MBNZUBUAUCBOZUAMUDUAUEPUCUABABCERQUABCSQT $.
+  $}
+
+  $( Vacuous universal quantification is always true.  (Contributed by NM,
+     20-Oct-2005.) $)
+  ral0 $p |- A. x e. (/) ph $=
+    ( c0 cv wcel noel pm2.21i rgen ) ABCBDZCEAIFGH $.
+
+  ${
+    $d x A $.
+    rgenm.1 $e |- ( ( E. x x e. A /\ x e. A ) -> ph ) $.
+    $( Generalization rule that eliminates an inhabited class requirement.
+       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
+    rgenm $p |- A. x e. A ph $=
+      ( wral cv wcel wi wal wex nfe1 ex alrimi 19.38 ax-mp pm5.4 mpbi
+      albii df-ral mpbir ) ABCEBFCGZAHZBIZUAUBHZBIZUCUABJZUCHUEUFUBBU
+      ABKUFUAADLMUAUBBNOUDUBBUAAPRQABCST $.
+  $}
+
+  ${
+    $d x A $.
+    ralf0.1 $e |- -. ph $.
+    $( The quantification of a falsehood is vacuous when true.  (Contributed by
+       NM, 26-Nov-2005.) $)
+    ralf0 $p |- ( A. x e. A ph <-> A = (/) ) $=
+      ( wral c0 wceq cv wcel wi wal wn con3 mpi alimi df-ral eq0 3imtr4i impbii
+      rzal ) ABCEZCFGZBHCIZAJZBKUCLZBKUAUBUDUEBUDALUEDUCAMNOABCPBCQRABCTS $.
+  $}
+
+  $( Inhabited classes and restricted quantification.  (Contributed by Jim
+     Kingdon, 6-Aug-2018.) $)
+  ralm $p |- ( ( E. x x e. A -> A. x e. A ph ) <-> A. x e. A ph ) $=
+    ( cv wcel wex wral wal df-ral imbi2i 19.38 sylbi pm2.43 alimi syl
+    wi sylibr ax-1 impbii ) BDCEZBFZABCGZPZUBUCTAPZBHZUBUCTUDPZBHZUEU
+    CUAUEPUGUBUEUAABCIZJTUDBKLUFUDBTAMNOUHQUBUARS $.
+
+  ${
+    $d x y A $.
+    raaan.1 $e |- F/ y ph $.
+    raaan.2 $e |- F/ x ps $.
+    $( Special case of ~ raaan where ` A ` is inhabited.  (Contributed by Jim
+       Kingdon, 6-Aug-2018.) $)
+    raaanlem $p |- ( E. x x e. A ->
+      ( A. x e. A A. y e. A ( ph /\ ps ) <->
+         ( A. x e. A ph /\ A. y e. A ps ) ) ) $=
+      ( cv wcel wex wa wral wb eleq1 cbvexv r19.28m ralbidv sylbi nfcv nfralxy
+      r19.27m bitrd ) CHZEIZCJZABKDELZCELZABDELZKZCELZACELUHKUEDHZEIZDJZUGUJMUD
+      ULCDUCUKENOUMUFUICEABDEFPQRAUHCEBCDECESGTUAUB $.
+
+    $( Rearrange restricted quantifiers.  (Contributed by NM, 26-Oct-2010.) $)
+    raaan $p |- ( A. x e. A A. y e. A ( ph /\ ps ) <->
+                  ( A. x e. A ph /\ A. y e. A ps ) ) $=
+      ( cv wcel wex wa wral wi raaanlem pm5.74i ralm jcab eleq1 bitri
+      cbvexv imbi1i anbi12i 3bitr3i ) CHZEIZCJZABKDELZCELZMUFACELZBDE
+      LZKZMZUHUKUFUHUKABCDEFGNOUGCEPULUFUIMZUFUJMZKUKUFUIUJQUMUIUNUJA
+      CEPUNDHZEIZDJZUJMUJUFUQUJUEUPCDUDUOERTUABDEPSUBSUC $.
+  $}
+
+  ${
+    $d y ph $.  $d x ps $.  $d x y A $.
+    $( Rearrange restricted quantifiers.  (Contributed by NM, 11-Mar-1997.) $)
+    raaanv $p |- ( A. x e. A A. y e. A ( ph /\ ps ) <->
+                  ( A. x e. A ph /\ A. y e. A ps ) ) $=
+      ( nfv raaan ) ABCDEADFBCFG $.
+  $}
+
+  ${
+    $d z y $.  $d z x A $.
+    $( Set substitution into the first argument of a subset relation.
+       (Contributed by Rodolfo Medina, 7-Jul-2010.)  (Proof shortened by Mario
+       Carneiro, 14-Nov-2016.) $)
+    sbss $p |- ( [ y / x ] x C_ A <-> y C_ A ) $=
+      ( vz cv wss wsb vex sbequ sseq1 nfv sbie vtoclb ) AEZCFZADGDEZCFZOABGBEZC
+      FDRBHODBAIPRCJOQADQAKNPCJLM $.
+  $}
+
+  ${
+    $d A y $.  $d B y $.  $d C y $.  $d D y $.  $d x y $.
+    $( Distribute proper substitution through a subclass relation.
+       (Contributed by Alan Sare, 22-Jul-2012.)  (Proof shortened by Alexander
+       van der Vekens, 23-Jul-2017.) $)
+    sbcss $p |- ( A e. B -> ( [. A / x ]. C C_ D <->
+      [_ A / x ]_ C C_ [_ A / x ]_ D ) ) $=
+      ( vy wcel cv wi wal wsbc csb wss sbcalg sbcimg sbcel2g bitrd albidv dfss2
+      imbi12d sbcbii 3bitr4g ) BCGZFHZDGZUDEGZIZFJZABKZUDABDLZGZUDABELZGZIZFJZD
+      EMZABKUJULMUCUIUGABKZFJUOUGFABCNUCUQUNFUCUQUEABKZUFABKZIUNUEUFABCOUCURUKU
+      SUMABUDDCPABUDECPTQRQUPUHABFDESUAFUJULSUB $.
+
   $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Existential uniqueness (supplemental)
+                          Power classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
 
-   This section contains the theorems on existential uniqueness which have
-   not yet been moved to the main section on existential uniqueness
-   in the predicate logic section. To be moved, those that rely on ~ ax-3
-   will either need a new proof, or to be restated (most likely with a
-   decidability condition).
+  $( Declare the symbol for power class. $)
+  $c ~P $.  $( Calligraphic P $)
 
+  $( Extend class notation to include power class.  (The tilde in the Metamath
+     token is meant to suggest the calligraphic font of the P.) $)
+  cpw $a class ~P A $.
+
+  ${
+    $d x A $.  $d y A $.  $d w x $.  $d w y $.  $d w A $.  $d w z $.  $d z x $.
+    $d z y $.  $d z A $.
+    $( Soundness justification theorem for ~ df-pw .  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       29-Jun-2011.) $)
+    pwjust $p |- { x | x C_ A } = { y | y C_ A } $=
+      ( vz cv wss cab sseq1 cbvabv eqtri ) AEZCFZAGDEZCFZDGBEZCFZBGLNADKMCHINPD
+      BMOCHIJ $.
+  $}
+
+  ${
+    $d x A $.
+    $( Define power class.  Definition 5.10 of [TakeutiZaring] p. 17, but we
+       also let it apply to proper classes, i.e. those that are not members of
+       ` _V ` .  When applied to a set, this produces its power set.  A power
+       set of S is the set of all subsets of S, including the empty set and S
+       itself.  For example, if ` A ` is { 3 , 5 , 7 }, then ` ~P A ` is {
+       (/) , { 3 } , { 5 } , { 7 } , { 3 , 5 } , { 3 , 7 } , { 5 , 7 } , { 3 ,
+       5 , 7 } }.  We will later introduce the Axiom of Power Sets.  Still
+       later we will prove that the size of the power set of a finite set is 2
+       raised to the power of the size of the set.  (Contributed by NM,
+       5-Aug-1993.) $)
+    df-pw $a |- ~P A = { x | x C_ A } $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Equality theorem for power class.  (Contributed by NM, 5-Aug-1993.) $)
+    pweq $p |- ( A = B -> ~P A = ~P B ) $=
+      ( vx wceq cv wss cab cpw sseq2 abbidv df-pw 3eqtr4g ) ABDZCEZAFZCGNBFZCGA
+      HBHMOPCABNIJCAKCBKL $.
+  $}
+
+  ${
+    pweqi.1 $e |- A = B $.
+    $( Equality inference for power class.  (Contributed by NM,
+       27-Nov-2013.) $)
+    pweqi $p |- ~P A = ~P B $=
+      ( wceq cpw pweq ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    pweqd.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for power class.  (Contributed by NM,
+       27-Nov-2013.) $)
+    pweqd $p |- ( ph -> ~P A = ~P B ) $=
+      ( wceq cpw pweq syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    ${
+      elpw.1 $e |- A e. _V $.
+      $( Membership in a power class.  Theorem 86 of [Suppes] p. 47.
+         (Contributed by NM, 31-Dec-1993.) $)
+      elpw $p |- ( A e. ~P B <-> A C_ B ) $=
+        ( vx cv wss cpw sseq1 df-pw elab2 ) DEZBFABFDABGCKABHDBIJ $.
+    $}
+
+    $( Membership in a power class.  Theorem 86 of [Suppes] p. 47.
+       (Contributed by NM, 6-Aug-2000.) $)
+    elpwg $p |- ( A e. V -> ( A e. ~P B <-> A C_ B ) ) $=
+      ( vx cv cpw wcel wss eleq1 sseq1 vex elpw vtoclbg ) DEZBFZGNBHAOGABHDACNA
+      OINABJNBDKLM $.
+  $}
+
+  $( Subset relation implied by membership in a power class.  (Contributed by
+     NM, 17-Feb-2007.) $)
+  elpwi $p |- ( A e. ~P B -> A C_ B ) $=
+    ( cpw wcel wss elpwg ibi ) ABCZDABEABHFG $.
+
+  ${
+    elpwid.1 $e |- ( ph -> A e. ~P B ) $.
+    $( An element of a power class is a subclass.  Deduction form of ~ elpwi .
+       (Contributed by David Moews, 1-May-2017.) $)
+    elpwid $p |- ( ph -> A C_ B ) $=
+      ( cpw wcel wss elpwi syl ) ABCEFBCGDBCHI $.
+  $}
+
+  $( If ` A ` belongs to a part of ` C ` then ` A ` belongs to ` C ` .
+     (Contributed by FL, 3-Aug-2009.) $)
+  elelpwi $p |- ( ( A e. B /\ B e. ~P C ) -> A e. C ) $=
+    ( cpw wcel elpwi sseld impcom ) BCDEZABEACEIBCABCFGH $.
+
+  ${
+    $d y z A $.  $d x y z $.
+    nfpw.1 $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for power class.  (Contributed by NM,
+       28-Oct-2003.)  (Revised by Mario Carneiro, 13-Oct-2016.) $)
+    nfpw $p |- F/_ x ~P A $=
+      ( vy cpw cv wss cab df-pw nfcv nfss nfab nfcxfr ) ABEDFZBGZDHDBIOADANBANJ
+      CKLM $.
+  $}
+
+  $( Membership of the original in a power set.  (Contributed by Stefan O'Rear,
+     1-Feb-2015.) $)
+  pwidg $p |- ( A e. V -> A e. ~P A ) $=
+    ( wcel cpw wss ssid elpwg mpbiri ) ABCAADCAAEAFAABGH $.
+
+  ${
+    pwid.1 $e |- A e. _V $.
+    $( A set is a member of its power class.  Theorem 87 of [Suppes] p. 47.
+       (Contributed by NM, 5-Aug-1993.) $)
+    pwid $p |- A e. ~P A $=
+      ( cvv wcel cpw pwidg ax-mp ) ACDAAEDBACFG $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Subclass relationship for power class.  (Contributed by NM,
+       21-Jun-2009.) $)
+    pwss $p |- ( ~P A C_ B <-> A. x ( x C_ A -> x e. B ) ) $=
+      ( cpw wss cv wcel wi wal dfss2 df-pw abeq2i imbi1i albii bitri ) BDZCEAFZ
+      PGZQCGZHZAIQBEZSHZAIAPCJTUBARUASUAAPABKLMNO $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          Unordered and ordered pairs
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new symbols needed. $)
+  $c <. $.  $( Bracket (the period distinguishes it from 'less than') $)
+  $c >. $.  $( Bracket (the period distinguishes it from 'greater than') $)
+  $c , $.  $( Comma $)
+
+  $( Extend class notation to include singleton. $)
+  csn $a class { A } $.
+  $( Extend class notation to include unordered pair. $)
+  cpr $a class { A , B } $.
+  $( Extend class notation to include unordered triplet. $)
+  ctp $a class { A , B , C } $.
+  $( Extend class notation to include ordered pair. $)
+  cop $a class <. A , B >. $.
+  $( Extend class notation to include ordered triple. $)
+  cotp $a class <. A , B , C >. $.
+
+  ${
+    $d x A $.  $d y A $.  $d z x $.  $d z y $.  $d z A $.
+    $( Soundness justification theorem for ~ df-sn .  (Contributed by Rodolfo
+       Medina, 28-Apr-2010.)  (Proof shortened by Andrew Salmon,
+       29-Jun-2011.) $)
+    snjust $p |- { x | x = A } = { y | y = A } $=
+      ( vz cv wceq cab eqeq1 cbvabv eqtri ) AEZCFZAGDEZCFZDGBEZCFZBGLNADKMCHINP
+      DBMOCHIJ $.
+  $}
+
+  ${
+    $d x A $.
+    $( Define the singleton of a class.  Definition 7.1 of [Quine] p. 48.  For
+       convenience, it is well-defined for proper classes, i.e., those that are
+       not elements of ` _V ` , although it is not very meaningful in this
+       case.  For an alternate definition see ~ dfsn2 .  (Contributed by NM,
+       5-Aug-1993.) $)
+    df-sn $a |- { A } = { x | x = A } $.
+  $}
+
+  $( Define unordered pair of classes.  Definition 7.1 of [Quine] p. 48.  They
+     are unordered, so ` { A , B } = { B , A } ` as proven by ~ prcom .  For a
+     more traditional definition, but requiring a dummy variable, see
+     ~ dfpr2 .  (Contributed by NM, 5-Aug-1993.) $)
+  df-pr $a |- { A , B } = ( { A } u. { B } ) $.
+
+  $( Define unordered triple of classes.  Definition of [Enderton] p. 19.
+     (Contributed by NM, 9-Apr-1994.) $)
+  df-tp $a |- { A , B , C } = ( { A , B } u. { C } ) $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Definition of an ordered pair, equivalent to Kuratowski's definition
+       ` { { A } , { A , B } } ` when the arguments are sets.  Since the
+       behavior of Kuratowski definition is not very useful for proper classes,
+       we define it to be empty in this case (see ~ opprc1 and ~ opprc2 ).  For
+       Kuratowski's actual definition when the arguments are sets, see ~ dfop .
+
+       Definition 9.1 of [Quine] p. 58 defines an ordered pair unconditionally
+       as ` <. A , B >. = { { A } , { A , B } } ` , which has different
+       behavior from our ~ df-op when the arguments are proper classes.
+       Ordinarily this difference is not important, since neither definition is
+       meaningful in that case.  Our ~ df-op was chosen because it often makes
+       proofs shorter by eliminating unnecessary sethood hypotheses.
+
+       There are other ways to define ordered pairs.  The basic requirement is
+       that two ordered pairs are equal iff their respective members are
+       equal.  In 1914 Norbert Wiener gave the first successful definition
+       ` <. A , B >. ` _2 ` = { { { A } , (/) } , { { B } } } ` .  This was
+       simplified by Kazimierz Kuratowski in 1921 to our present definition.
+       An even simpler definition is ` <. A , B >. ` _3
+       ` = { A , { A , B } } ` , but it requires the Axiom of Regularity for
+       its justification and is not commonly used.  Finally, an ordered pair of
+       real numbers can be represented by a complex number.  (Contributed by
+       NM, 28-May-1995.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    df-op $a |- <. A , B >. = { x |
+      ( A e. _V /\ B e. _V /\ x e. { { A } , { A , B } } ) } $.
+  $}
+
+  $( Define ordered triple of classes.  Definition of ordered triple in [Stoll]
+     p. 25.  (Contributed by NM, 3-Apr-2015.) $)
+  df-ot $a |- <. A , B , C >. = <. <. A , B >. , C >. $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Equality theorem for singletons.  Part of Exercise 4 of [TakeutiZaring]
+       p. 15.  (Contributed by NM, 5-Aug-1993.) $)
+    sneq $p |- ( A = B -> { A } = { B } ) $=
+      ( vx wceq cv cab csn eqeq2 abbidv df-sn 3eqtr4g ) ABDZCEZADZCFMBDZCFAGBGL
+      NOCABMHICAJCBJK $.
+  $}
+
+  ${
+    sneqi.1 $e |- A = B $.
+    $( Equality inference for singletons.  (Contributed by NM, 22-Jan-2004.) $)
+    sneqi $p |- { A } = { B } $=
+      ( wceq csn sneq ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    sneqd.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for singletons.  (Contributed by NM, 22-Jan-2004.) $)
+    sneqd $p |- ( ph -> { A } = { B } ) $=
+      ( wceq csn sneq syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  $( Alternate definition of singleton.  Definition 5.1 of [TakeutiZaring]
+     p. 15.  (Contributed by NM, 24-Apr-1994.) $)
+  dfsn2 $p |- { A } = { A , A } $=
+    ( cpr csn cun df-pr unidm eqtr2i ) AABACZHDHAAEHFG $.
+
+  ${
+    $d x A $.
+    $( There is only one element in a singleton.  Exercise 2 of [TakeutiZaring]
+       p. 15.  (Contributed by NM, 5-Aug-1993.) $)
+    elsn $p |- ( x e. { A } <-> x = A ) $=
+      ( cv wceq csn df-sn abeq2i ) ACBDABEABFG $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Alternate definition of unordered pair.  Definition 5.1 of
+       [TakeutiZaring] p. 15.  (Contributed by NM, 24-Apr-1994.) $)
+    dfpr2 $p |- { A , B } = { x | ( x = A \/ x = B ) } $=
+      ( cpr csn cun cv wceq cab df-pr wcel elun elsn orbi12i bitri abbi2i eqtri
+      wo ) BCDBEZCEZFZAGZBHZUBCHZRZAIBCJUEAUAUBUAKUBSKZUBTKZRUEUBSTLUFUCUGUDABM
+      ACMNOPQ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( A member of an unordered pair of classes is one or the other of them.
+       Exercise 1 of [TakeutiZaring] p. 15, generalized.  (Contributed by NM,
+       13-Sep-1995.) $)
+    elprg $p |- ( A e. V -> ( A e. { B , C } <-> ( A = B \/ A = C ) ) ) $=
+      ( vx cv wceq wo cpr eqeq1 orbi12d dfpr2 elab2g ) EFZBGZNCGZHABGZACGZHEABC
+      IDNAGOQPRNABJNACJKEBCLM $.
+  $}
+
+  ${
+    elpr.1 $e |- A e. _V $.
+    $( A member of an unordered pair of classes is one or the other of them.
+       Exercise 1 of [TakeutiZaring] p. 15.  (Contributed by NM,
+       13-Sep-1995.) $)
+    elpr $p |- ( A e. { B , C } <-> ( A = B \/ A = C ) ) $=
+      ( cvv wcel cpr wceq wo wb elprg ax-mp ) AEFABCGFABHACHIJDABCEKL $.
+  $}
+
+  ${
+    elpr2.1 $e |- B e. _V $.
+    elpr2.2 $e |- C e. _V $.
+    $( A member of an unordered pair of classes is one or the other of them.
+       Exercise 1 of [TakeutiZaring] p. 15.  (Contributed by NM,
+       14-Oct-2005.) $)
+    elpr2 $p |- ( A e. { B , C } <-> ( A = B \/ A = C ) ) $=
+      ( cpr wcel wceq wo elprg ibi cvv wb eleq1 mpbiri jaoi syl ibir impbii ) A
+      BCFZGZABHZACHZIZUAUDABCTJKUDUAUDALGZUAUDMUBUEUCUBUEBLGDABLNOUCUECLGEACLNO
+      PABCLJQRS $.
+  $}
+
+  $( If a class is an element of a pair, then it is one of the two paired
+     elements.  (Contributed by Scott Fenton, 1-Apr-2011.) $)
+  elpri $p |- ( A e. { B , C } -> ( A = B \/ A = C ) ) $=
+    ( cpr wcel wceq wo elprg ibi ) ABCDZEABFACFGABCJHI $.
+
+  ${
+    nelpri.1 $e |- A =/= B $.
+    nelpri.2 $e |- A =/= C $.
+    $( If an element doesn't match the items in an unordered pair, it is not in
+       the unordered pair.  (Contributed by David A. Wheeler, 10-May-2015.) $)
+    nelpri $p |- -. A e. { B , C } $=
+      ( wne cpr wcel wn wa wceq wo neanior elpri con3i sylbi mp2an ) ABFZACFZAB
+      CGHZIZDERSJABKACKLZIUAABACMTUBABCNOPQ $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( There is only one element in a singleton.  Exercise 2 of [TakeutiZaring]
+       p. 15 (generalized).  (Contributed by NM, 13-Sep-1995.)  (Proof
+       shortened by Andrew Salmon, 29-Jun-2011.) $)
+    elsncg $p |- ( A e. V -> ( A e. { B } <-> A = B ) ) $=
+      ( vx cv wceq csn eqeq1 df-sn elab2g ) DEZBFABFDABGCKABHDBIJ $.
+  $}
+
+  ${
+    elsnc.1 $e |- A e. _V $.
+    $( There is only one element in a singleton.  Exercise 2 of [TakeutiZaring]
+       p. 15.  (Contributed by NM, 13-Sep-1995.) $)
+    elsnc $p |- ( A e. { B } <-> A = B ) $=
+      ( cvv wcel csn wceq wb elsncg ax-mp ) ADEABFEABGHCABDIJ $.
+  $}
+
+  $( There is only one element in a singleton.  (Contributed by NM,
+     5-Jun-1994.) $)
+  elsni $p |- ( A e. { B } -> A = B ) $=
+    ( csn wcel wceq elsncg ibi ) ABCZDABEABHFG $.
+
+  $( A set is a member of its singleton.  Part of Theorem 7.6 of [Quine]
+     p. 49.  (Contributed by NM, 28-Oct-2003.) $)
+  snidg $p |- ( A e. V -> A e. { A } ) $=
+    ( wcel csn wceq eqid elsncg mpbiri ) ABCAADCAAEAFAABGH $.
+
+  $( A class is a set iff it is a member of its singleton.  (Contributed by NM,
+     5-Apr-2004.) $)
+  snidb $p |- ( A e. _V <-> A e. { A } ) $=
+    ( cvv wcel csn snidg elex impbii ) ABCAADZCABEAHFG $.
+
+  ${
+    snid.1 $e |- A e. _V $.
+    $( A set is a member of its singleton.  Part of Theorem 7.6 of [Quine]
+       p. 49.  (Contributed by NM, 31-Dec-1993.) $)
+    snid $p |- A e. { A } $=
+      ( cvv wcel csn snidb mpbi ) ACDAAEDBAFG $.
+  $}
+
+  $( There is only one element in a singleton.  Exercise 2 of [TakeutiZaring]
+     p. 15.  This variation requires only that ` B ` , rather than ` A ` , be a
+     set.  (Contributed by NM, 28-Oct-2003.) $)
+  elsnc2g $p |- ( B e. V -> ( A e. { B } <-> A = B ) ) $=
+    ( wcel csn wceq elsni snidg eleq1 syl5ibrcom impbid2 ) BCDZABEZDZABFZABGLNO
+    BMDBCHABMIJK $.
+
+  ${
+    elsnc2.1 $e |- B e. _V $.
+    $( There is only one element in a singleton.  Exercise 2 of [TakeutiZaring]
+       p. 15.  This variation requires only that ` B ` , rather than ` A ` , be
+       a set.  (Contributed by NM, 12-Jun-1994.) $)
+    elsnc2 $p |- ( A e. { B } <-> A = B ) $=
+      ( cvv wcel csn wceq wb elsnc2g ax-mp ) BDEABFEABGHCABDIJ $.
+  $}
+
+  ${
+    $d x y A $.
+    $( A singleton has at most one element.  This works whether ` A ` is a
+       proper class or not, and in that sense can be seen as encompassing both
+       ~ snmg and ~ snprc .  (Contributed by Jim Kingdon, 30-Aug-2018.) $)
+    mosn $p |- E* x x e. { A } $=
+      ( cv csn wcel wmo wceq moeq elsn mobii mpbir ) ACZBDEZAFLBGZAFA
+      BHMNAABIJK $.
+  $}
+
+  ${
+    $d A x $.  $d ps x $.
+    $( Substitution expressed in terms of quantification over a singleton.
+       (Contributed by Mario Carneiro, 23-Apr-2015.) $)
+    ralsns $p |- ( A e. V -> ( A. x e. { A } ph <-> [. A / x ]. ph ) ) $=
+      ( wcel wsbc cv wceq wal csn wral sbc6g df-ral imbi1i albii bitri syl6rbbr
+      wi elsn ) CDEABCFBGZCHZARZBIZABCJZKZABCDLUETUDEZARZBIUCABUDMUGUBBUFUAABCS
+      NOPQ $.
+
+    $( Restricted existential quantification over a singleton.  (Contributed by
+       Mario Carneiro, 23-Apr-2015.)  (Revised by NM, 22-Aug-2018.) $)
+    rexsns $p |- ( E. x e. { A } ph <-> [. A / x ]. ph ) $=
+      ( cv csn wcel wa wex wceq wrex wsbc elsn anbi1i exbii df-rex sbc5 3bitr4i
+      ) BDZCEZFZAGZBHRCIZAGZBHABSJABCKUAUCBTUBABCLMNABSOABCPQ $.
+
+    $( Restricted existential quantification over a singleton.  (Contributed by
+       Mario Carneiro, 23-Apr-2015.)  Obsolete as of 22-Aug-2018.  Use ~ rexsns
+       instead.  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    rexsnsOLD $p |- ( A e. V -> ( E. x e. { A } ph <-> [. A / x ]. ph ) ) $=
+      ( wcel wsbc cv wceq wa wex csn wrex wb sbc5 a1i df-rex anbi1i exbii bitri
+      elsn syl6rbbr ) CDEZABCFZBGZCHZAIZBJZABCKZLZUCUGMUBABCNOUIUDUHEZAIZBJUGAB
+      UHPUKUFBUJUEABCTQRSUA $.
+
+    ralsng.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( Substitution expressed in terms of quantification over a singleton.
+       (Contributed by NM, 14-Dec-2005.)  (Revised by Mario Carneiro,
+       23-Apr-2015.) $)
+    ralsng $p |- ( A e. V -> ( A. x e. { A } ph <-> ps ) ) $=
+      ( wcel csn wral wsbc ralsns sbcieg bitrd ) DEGACDHIACDJBACDEKABCDEFLM $.
+
+    $( Restricted existential quantification over a singleton.  (Contributed by
+       NM, 29-Jan-2012.) $)
+    rexsng $p |- ( A e. V -> ( E. x e. { A } ph <-> ps ) ) $=
+      ( wcel csn wrex wsbc rexsnsOLD sbcieg bitrd ) DEGACDHIACDJBACDEKABCDEFLM $.
+  $}
+
+  $( There is a set being the element of a singleton if and only if there is an
+     element of the singleton.  (Contributed by Alexander van der Vekens,
+     1-Jan-2018.) $)
+  exsnrex $p |- ( E. x M = { x } <-> E. x e. M M = { x } ) $=
+    ( cv csn wceq wex wcel wa wrex vex snid eleq2 mpbiri pm4.71ri df-rex bitr4i
+    exbii ) BACZDZEZAFRBGZTHZAFTABITUBATUATUARSGRAJKBSRLMNQTABOP $.
+
+  ${
+    $d A x $.  $d ps x $.
+    ralsn.1 $e |- A e. _V $.
+    ralsn.2 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( Convert a quantification over a singleton to a substitution.
+       (Contributed by NM, 27-Apr-2009.) $)
+    ralsn $p |- ( A. x e. { A } ph <-> ps ) $=
+      ( cvv wcel csn wral wb ralsng ax-mp ) DGHACDIJBKEABCDGFLM $.
+
+    $( Restricted existential quantification over a singleton.  (Contributed by
+       Jeff Madsen, 5-Jan-2011.) $)
+    rexsn $p |- ( E. x e. { A } ph <-> ps ) $=
+      ( cvv wcel csn wrex wb rexsng ax-mp ) DGHACDIJBKEABCDGFLM $.
+  $}
+
+  ${
+    $( Members of an unordered triple of classes.  (Contributed by FL,
+       2-Feb-2014.)  (Proof shortened by Mario Carneiro, 11-Feb-2015.) $)
+    eltpg $p |- ( A e. V -> ( A e. { B , C , D } <->
+       ( A = B \/ A = C \/ A = D ) ) ) $=
+      ( wcel cpr csn wo wceq ctp w3o elprg elsncg orbi12d cun df-tp eleq2i elun
+      bitri df-3or 3bitr4g ) AEFZABCGZFZADHZFZIZABJZACJZIZADJZIABCDKZFZUIUJULLU
+      CUEUKUGULABCEMADENOUNAUDUFPZFUHUMUOABCDQRAUDUFSTUIUJULUAUB $.
+  $}
+
+  ${
+    $( A member of an unordered triple of classes is one of them.  (Contributed
+       by Mario Carneiro, 11-Feb-2015.) $)
+    eltpi $p |- ( A e. { B , C , D } -> ( A = B \/ A = C \/ A = D ) ) $=
+      ( ctp wcel wceq w3o eltpg ibi ) ABCDEZFABGACGADGHABCDKIJ $.
+  $}
+
+  ${
+    eltp.1 $e |- A e. _V $.
+    $( A member of an unordered triple of classes is one of them.  Special case
+       of Exercise 1 of [TakeutiZaring] p. 17.  (Contributed by NM,
+       8-Apr-1994.)  (Revised by Mario Carneiro, 11-Feb-2015.) $)
+    eltp $p |- ( A e. { B , C , D } <-> ( A = B \/ A = C \/ A = D ) ) $=
+      ( cvv wcel ctp wceq w3o wb eltpg ax-mp ) AFGABCDHGABIACIADIJKEABCDFLM $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Alternate definition of unordered triple of classes.  Special case of
+       Definition 5.3 of [TakeutiZaring] p. 16.  (Contributed by NM,
+       8-Apr-1994.) $)
+    dftp2 $p |- { A , B , C } = { x | ( x = A \/ x = B \/ x = C ) } $=
+      ( cv wceq w3o ctp vex eltp abbi2i ) AEZBFLCFLDFGABCDHLBCDAIJK $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    nfpr.1 $e |- F/_ x A $.
+    nfpr.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for unordered pairs.  (Contributed by
+       NM, 14-Nov-1995.) $)
+    nfpr $p |- F/_ x { A , B } $=
+      ( vy cpr cv wceq wo cab dfpr2 nfeq2 nfor nfab nfcxfr ) ABCGFHZBIZQCIZJZFK
+      FBCLTAFRSAAQBDMAQCEMNOP $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.  $d x ps $.  $d x ch $.  $d x th $.
+    ralprg.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    ralprg.2 $e |- ( x = B -> ( ph <-> ch ) ) $.
+    $( Convert a quantification over a pair to a conjunction.  (Contributed by
+       NM, 17-Sep-2011.)  (Revised by Mario Carneiro, 23-Apr-2015.) $)
+    ralprg $p |- ( ( A e. V /\ B e. W ) ->
+      ( A. x e. { A , B } ph <-> ( ps /\ ch ) ) ) $=
+      ( cpr wral csn wa wcel cun df-pr raleqi ralunb ralsng bi2anan9 syl5bb
+      bitri ) ADEFKZLZADEMZLZADFMZLZNZEGOZFHOZNBCNUEADUFUHPZLUJADUDUMEFQRADUFUH
+      SUCUKUGBULUICABDEGITACDFHJTUAUB $.
+
+    $( Convert a quantification over a pair to a disjunction.  (Contributed by
+       NM, 17-Sep-2011.)  (Revised by Mario Carneiro, 23-Apr-2015.) $)
+    rexprg $p |- ( ( A e. V /\ B e. W ) ->
+      ( E. x e. { A , B } ph <-> ( ps \/ ch ) ) ) $=
+      ( cpr wrex csn wo wcel wa cun df-pr rexeqi rexsng orbi1d orbi2d sylan9bb
+      rexun bitri syl5bb ) ADEFKZLZADEMZLZADFMZLZNZEGOZFHOZPBCNZUHADUIUKQZLUMAD
+      UGUQEFRSADUIUKUDUEUNUMBULNUOUPUNUJBULABDEGITUAUOULCBACDFHJTUBUCUF $.
+
+    raltpg.3 $e |- ( x = C -> ( ph <-> th ) ) $.
+    $( Convert a quantification over a triple to a conjunction.  (Contributed
+       by NM, 17-Sep-2011.)  (Revised by Mario Carneiro, 23-Apr-2015.) $)
+    raltpg $p |- ( ( A e. V /\ B e. W /\ C e. X ) ->
+      ( A. x e. { A , B , C } ph <-> ( ps /\ ch /\ th ) ) ) $=
+      ( wcel w3a cpr wral csn wa ctp wb ralprg ralsng bi2anan9 3impa cun raleqi
+      df-tp ralunb bitri df-3an 3bitr4g ) FIOZGJOZHKOZPAEFGQZRZAEHSZRZTZBCTZDTZ
+      AEFGHUAZRZBCDPUNUOUPVAVCUBUNUOTURVBUPUTDABCEFGIJLMUCADEHKNUDUEUFVEAEUQUSU
+      GZRVAAEVDVFFGHUIUHAEUQUSUJUKBCDULUM $.
+
+    $( Convert a quantification over a triple to a disjunction.  (Contributed
+       by Mario Carneiro, 23-Apr-2015.) $)
+    rextpg $p |- ( ( A e. V /\ B e. W /\ C e. X ) ->
+      ( E. x e. { A , B , C } ph <-> ( ps \/ ch \/ th ) ) ) $=
+      ( wcel w3a cpr wrex csn wo ctp wb wa rexprg orbi1d rexsng orbi2d sylan9bb
+      w3o 3impa cun df-tp rexeqi rexun bitri df-3or 3bitr4g ) FIOZGJOZHKOZPAEFG
+      QZRZAEHSZRZTZBCTZDTZAEFGHUAZRZBCDUIURUSUTVEVGUBURUSUCZVEVFVDTUTVGVJVBVFVD
+      ABCEFGIJLMUDUEUTVDDVFADEHKNUFUGUHUJVIAEVAVCUKZRVEAEVHVKFGHULUMAEVAVCUNUOB
+      CDUPUQ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ps $.  $d x ch $.
+    ralpr.1 $e |- A e. _V $.
+    ralpr.2 $e |- B e. _V $.
+    ralpr.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    ralpr.4 $e |- ( x = B -> ( ph <-> ch ) ) $.
+    $( Convert a quantification over a pair to a conjunction.  (Contributed by
+       NM, 3-Jun-2007.)  (Revised by Mario Carneiro, 23-Apr-2015.) $)
+    ralpr $p |- ( A. x e. { A , B } ph <-> ( ps /\ ch ) ) $=
+      ( cvv wcel cpr wral wa wb ralprg mp2an ) EKLFKLADEFMNBCOPGHABCDEFKKIJQR
+      $.
+
+    $( Convert an existential quantification over a pair to a disjunction.
+       (Contributed by NM, 3-Jun-2007.)  (Revised by Mario Carneiro,
+       23-Apr-2015.) $)
+    rexpr $p |- ( E. x e. { A , B } ph <-> ( ps \/ ch ) ) $=
+      ( cvv wcel cpr wrex wo wb rexprg mp2an ) EKLFKLADEFMNBCOPGHABCDEFKKIJQR
+      $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.  $d x ps $.  $d x ch $.  $d x th $.
+    raltp.1 $e |- A e. _V $.
+    raltp.2 $e |- B e. _V $.
+    raltp.3 $e |- C e. _V $.
+    raltp.4 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    raltp.5 $e |- ( x = B -> ( ph <-> ch ) ) $.
+    raltp.6 $e |- ( x = C -> ( ph <-> th ) ) $.
+    $( Convert a quantification over a triple to a conjunction.  (Contributed
+       by NM, 13-Sep-2011.)  (Revised by Mario Carneiro, 23-Apr-2015.) $)
+    raltp $p |- ( A. x e. { A , B , C } ph <-> ( ps /\ ch /\ th ) ) $=
+      ( cvv wcel ctp wral w3a wb raltpg mp3an ) FOPGOPHOPAEFGHQRBCDSTIJKABCDEFG
+      HOOOLMNUAUB $.
+
+    $( Convert a quantification over a triple to a disjunction.  (Contributed
+       by Mario Carneiro, 23-Apr-2015.) $)
+    rextp $p |- ( E. x e. { A , B , C } ph <-> ( ps \/ ch \/ th ) ) $=
+      ( cvv wcel ctp wrex w3o wb rextpg mp3an ) FOPGOPHOPAEFGHQRBCDSTIJKABCDEFG
+      HOOOLMNUAUB $.
+  $}
+
+  ${
+    $d x y A $.  $d y ph $.
+    $( TODO - make obsolete; use ralsnsSBC instead - also,
+       shorten posn w/ ralsn or ralsng $)
+    $( Substitution expressed in terms of quantification over a singleton.
+       (Contributed by NM, 14-Dec-2005.)  (Revised by Mario Carneiro,
+       23-Apr-2015.) $)
+    sbcsng $p |- ( A e. V -> ( [. A / x ]. ph <-> A. x e. { A } ph ) ) $=
+      ( wcel csn wral wsbc ralsns bicomd ) CDEABCFGABCHABCDIJ $.
+  $}
+
+  ${
+    nfsn.1 $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for singletons.  (Contributed by NM,
+       14-Nov-1995.) $)
+    nfsn $p |- F/_ x { A } $=
+      ( csn cpr dfsn2 nfpr nfcxfr ) ABDBBEBFABBCCGH $.
+  $}
+
+  ${
+    $d A y $.  $d B y $.  $d V y $.  $d x y $.
+    $( Distribute proper substitution through the singleton of a class.
+       (Contributed by Alan Sare, 10-Nov-2012.) $)
+    csbsng $p |- ( A e. V -> [_ A / x ]_ { B } = { [_ A / x ]_ B } ) $=
+      ( vy wcel wceq cab csb csn wsbc csbabg sbceq2g abbidv eqtrd df-sn csbeq2i
+      cv 3eqtr4g ) BDFZABERZCGZEHZIZUAABCIZGZEHZABCJZIUEJTUDUBABKZEHUGUBAEBDLTU
+      IUFEABUACDMNOABUHUCECPQEUEPS $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Intersection with the singleton of a non-member is disjoint.
+       (Contributed by NM, 22-May-1998.)  (Proof shortened by Andrew Salmon,
+       29-Jun-2011.)  (Proof shortened by Wolf Lammen, 30-Sep-2014.) $)
+    disjsn $p |- ( ( A i^i { B } ) = (/) <-> -. B e. A ) $=
+      ( vx csn cin c0 wceq cv wcel wn wi wal wa disj1 con2b imbi1i imnan 3bitri
+      elsn albii wex alnex df-clel xchbinxr ) ABDZEFGCHZAIZUFUEIZJKZCLUFBGZUGMZ
+      JZCLZBAIZJCAUENUIULCUIUHUGJZKUJUOKULUGUHOUHUJUOCBSPUJUGQRTUMUKCUAUNUKCUBC
+      BAUCUDR $.
+  $}
+
+  $( Intersection of distinct singletons is disjoint.  (Contributed by NM,
+     25-May-1998.) $)
+  disjsn2 $p |- ( A =/= B -> ( { A } i^i { B } ) = (/) ) $=
+    ( wne csn wcel wn cin c0 wceq elsni eqcomd necon3ai disjsn sylibr ) ABCBADZ
+    EZFOBDGHIPABPBABAJKLOBMN $.
+
+  $( The intersection of distinct unordered pairs is disjoint.  (Contributed by
+     Alexander van der Vekens, 11-Nov-2017.) $)
+  disjpr2 $p |- ( ( ( A =/= C /\ B =/= C ) /\ ( A =/= D /\ B =/= D ) )
+                  -> ( { A , B } i^i { C , D } ) = (/) ) $=
+    ( wne wa cpr cin csn c0 wceq df-pr ineq1i indir eqtri disjsn2 adantr adantl
+    cun syl5eq a1i ineq2d indi jca un00 sylib uneq12d un0 syl6eq eqtrd ) ACEZBC
+    EZFZADEZBDEZFZFZABGZCDGZHURCIZDIZSZHZJUQUSVBURUSVBKUQCDLUAUBUQVCURUTHZURVAH
+    ZSZJURUTVAUCUQVFJJSJUQVDJVEJUQVDAIZUTHZBIZUTHZSZJVDVGVISZUTHVKURVLUTABLZMVG
+    VIUTNOUQVHJKZVJJKZFVKJKUQVNVOUMVNUPUKVNULACPQQUMVOUPULVOUKBCPRQUDVHVJUEUFTU
+    QVEVGVAHZVIVAHZSZJVEVLVAHVRURVLVAVMMVGVIVANOUQVPJKZVQJKZFVRJKUQVSVTUPVSUMUN
+    VSUOADPQRUPVTUMUOVTUNBDPRRUDVPVQUEUFTUGJUHUITUJ $.
+
+  ${
+    $d x A $.
+    $( The singleton of a proper class (one that doesn't exist) is the empty
+       set.  Theorem 7.2 of [Quine] p. 48.  (Contributed by NM, 5-Aug-1993.) $)
+    snprc $p |- ( -. A e. _V <-> { A } = (/) ) $=
+      ( vx cv csn wcel wex wn wceq c0 cvv elsn exbii notbii wal alnex
+      eq0 bitri isset 3bitr4ri ) BCZADZEZBFZGZTAHZBFZGUAIHZAJEZGUCUFU
+      BUEBBAKLMUGUBGBNUDBUAPUBBOQUHUFBARMS $.
+  $}
+
+  ${
+    $d x y A $.  $d x B $.
+    r19.12sn.1 $e |- A e. _V $.
+    $( Special case of ~ r19.12 where its converse holds.  (Contributed by NM,
+       19-May-2008.)  (Revised by Mario Carneiro, 23-Apr-2015.) $)
+    r19.12sn $p |- ( E. x e. { A } A. y e. B ph
+                <-> A. y e. B E. x e. { A } ph ) $=
+      ( cvv wcel wral csn wrex wb wsbc sbcralg rexsnsOLD ralbidv 3bitr4d ax-mp ) D
+      GHZACEIZBDJZKZABUAKZCEIZLFSTBDMABDMZCEIUBUDABCDEGNTBDGOSUCUECEABDGOPQR $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Condition where a restricted class abstraction is a singleton.
+       (Contributed by NM, 28-May-2006.) $)
+    rabsn $p |- ( B e. A -> { x e. A | x = B } = { B } ) $=
+      ( wcel cv wceq wa cab crab csn eleq1 pm5.32ri abbidv df-rab df-sn 3eqtr4g
+      baib ) CBDZAEZBDZSCFZGZAHUAAHUAABICJRUBUAAUBRUAUATRSCBKLQMUAABNACOP $.
+  $}
+
+  ${
+    $d x A $.  $d y ph $.
+    rabrsndc.1 $e |- A e. _V $.
+    rabrsndc.2 $e |- DECID ph $.
+    $( A class abstraction over a decidable proposition restricted to a
+       singleton is either the empty set or the singleton itself.  (Contributed
+       by Jim Kingdon, 8-Aug-2018.) $)
+    rabrsndc $p |- ( M = { x e. { A } | ph } -> ( M = (/) \/ M = { A } ) ) $=
+      ( csn crab wceq c0 wo wral wsbc cvv ax-mp wb ralsns mpbir eqeq1
+      orbi12i wn wcel wdc pm2.1dc sbcth sbcor mpbi rabeq0 eqcom bitri
+      rabid2 orbi12d mpbiri ) DABCGZHZIZDJIZDUNIZKUOJIZUOUNIZKZVAAUAZ
+      BUNLZABUNLZKZVEVBBCMZABCMZKZVBAKZBCMZVHCNUBZVJEVIBCNAUCVIFAUDOU
+      EOVBABCUFUGVCVFVDVGVKVCVFPEVBBCNQOVKVDVGPEABCNQOTRUSVCUTVDABUNU
+      HUTUNUOIVDUOUNUIABUNUKUJTRUPUQUSURUTDUOJSDUOUNSULUM $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.  $d y A $.
+    $( Another way to express existential uniqueness of a wff: its class
+       abstraction is a singleton.  (Contributed by Mario Carneiro,
+       14-Nov-2016.) $)
+    euabsn2 $p |- ( E! x ph <-> E. y { x | ph } = { y } ) $=
+      ( weu cv wceq wb wal wex cab csn df-eu wcel abeq1 elsn bibi2i albii bitri
+      exbii bitr4i ) ABDABEZCEZFZGZBHZCIABJUBKZFZCIABCLUGUECUGAUAUFMZGZBHUEABUF
+      NUIUDBUHUCABUBOPQRST $.
+
+    $( Another way to express existential uniqueness of a wff: its class
+       abstraction is a singleton.  (Contributed by NM, 22-Feb-2004.) $)
+    euabsn $p |- ( E! x ph <-> E. x { x | ph } = { x } ) $=
+      ( vy weu cab cv csn wceq wex euabsn2 nfab1 nfeq1 sneq eqeq2d cbvex bitr4i
+      nfv ) ABDABEZCFZGZHZCIRBFZGZHZBIABCJUDUABCUDCQBRTABKLUBSHUCTRUBSMNOP $.
+
+    $( A way to express restricted existential uniqueness of a wff: its
+       restricted class abstraction is a singleton.  (Contributed by NM,
+       30-May-2006.)  (Proof shortened by Mario Carneiro, 14-Nov-2016.) $)
+    reusn $p |- ( E! x e. A ph <-> E. y { x e. A | ph } = { y } ) $=
+      ( cv wcel wa weu cab csn wceq wex wreu euabsn2 df-reu df-rab eqeq1i exbii
+      crab 3bitr4i ) BEDFAGZBHUABIZCEJZKZCLABDMABDSZUCKZCLUABCNABDOUFUDCUEUBUCA
+      BDPQRT $.
+
+    $( Restricted existential uniqueness determined by a singleton.
+       (Contributed by NM, 29-May-2006.) $)
+    absneu $p |- ( ( A e. V /\ { x | ph } = { A } ) -> E! x ph ) $=
+      ( vy wcel cab csn wceq wa wex weu sneq eqeq2d spcegv imp euabsn2 sylibr
+      cv ) CDFZABGZCHZIZJUAESZHZIZEKZABLTUCUGUFUCECDUDCIUEUBUAUDCMNOPABEQR $.
+
+    $( Restricted existential uniqueness determined by a singleton.
+       (Contributed by NM, 29-May-2006.)  (Revised by Mario Carneiro,
+       23-Dec-2016.) $)
+    rabsneu $p |- ( ( A e. V /\ { x e. B | ph } = { A } ) -> E! x e. B ph ) $=
+      ( wcel crab csn wceq wa cv weu df-rab eqeq1i absneu sylan2b df-reu sylibr
+      wreu cab ) CEFZABDGZCHZIZJBKDFAJZBLZABDSUDUAUEBTZUCIUFUBUGUCABDMNUEBCEOPA
+      BDQR $.
+  $}
+
+  ${
+    $d x A $.
+    $( Two ways to express " ` A ` is a singleton."  (Contributed by NM,
+       30-Oct-2010.) $)
+    eusn $p |- ( E! x x e. A <-> E. x A = { x } ) $=
+      ( cv wcel weu cab csn wceq wex euabsn abid2 eqeq1i exbii bitri ) ACZBDZAE
+      PAFZOGZHZAIBRHZAIPAJSTAQBRABKLMN $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ps $.
+    rabsnt.1 $e |- B e. _V $.
+    rabsnt.2 $e |- ( x = B -> ( ph <-> ps ) ) $.
+    $( Truth implied by equality of a restricted class abstraction and a
+       singleton.  (Contributed by NM, 29-May-2006.)  (Proof shortened by Mario
+       Carneiro, 23-Dec-2016.) $)
+    rabsnt $p |- ( { x e. A | ph } = { B } -> ps ) $=
+      ( crab csn wceq wcel snid id syl5eleqr elrab simprbi syl ) ACDHZEIZJZERKZ
+      BTESREFLTMNUAEDKBABCEDGOPQ $.
+  $}
+
+  $( Commutative law for unordered pairs.  (Contributed by NM, 5-Aug-1993.) $)
+  prcom $p |- { A , B } = { B , A } $=
+    ( csn cun cpr uncom df-pr 3eqtr4i ) ACZBCZDJIDABEBAEIJFABGBAGH $.
+
+  $( Equality theorem for unordered pairs.  (Contributed by NM,
+     29-Mar-1998.) $)
+  preq1 $p |- ( A = B -> { A , C } = { B , C } ) $=
+    ( wceq csn cun cpr sneq uneq1d df-pr 3eqtr4g ) ABDZAEZCEZFBEZNFACGBCGLMONAB
+    HIACJBCJK $.
+
+  $( Equality theorem for unordered pairs.  (Contributed by NM, 5-Aug-1993.) $)
+  preq2 $p |- ( A = B -> { C , A } = { C , B } ) $=
+    ( wceq cpr preq1 prcom 3eqtr4g ) ABDACEBCECAECBEABCFCAGCBGH $.
+
+  $( Equality theorem for unordered pairs.  (Contributed by NM,
+     19-Oct-2012.) $)
+  preq12 $p |- ( ( A = C /\ B = D ) -> { A , B } = { C , D } ) $=
+    ( wceq cpr preq1 preq2 sylan9eq ) ACEBDEABFCBFCDFACBGBDCHI $.
+
+  ${
+    preq1i.1 $e |- A = B $.
+    $( Equality inference for unordered pairs.  (Contributed by NM,
+       19-Oct-2012.) $)
+    preq1i $p |- { A , C } = { B , C } $=
+      ( wceq cpr preq1 ax-mp ) ABEACFBCFEDABCGH $.
+
+    $( Equality inference for unordered pairs.  (Contributed by NM,
+       19-Oct-2012.) $)
+    preq2i $p |- { C , A } = { C , B } $=
+      ( wceq cpr preq2 ax-mp ) ABECAFCBFEDABCGH $.
+
+    ${
+      preq12i.2 $e |- C = D $.
+      $( Equality inference for unordered pairs.  (Contributed by NM,
+         19-Oct-2012.) $)
+      preq12i $p |- { A , C } = { B , D } $=
+        ( wceq cpr preq12 mp2an ) ABGCDGACHBDHGEFACBDIJ $.
+    $}
+  $}
+
+  ${
+    preq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for unordered pairs.  (Contributed by NM,
+       19-Oct-2012.) $)
+    preq1d $p |- ( ph -> { A , C } = { B , C } ) $=
+      ( wceq cpr preq1 syl ) ABCFBDGCDGFEBCDHI $.
+
+    $( Equality deduction for unordered pairs.  (Contributed by NM,
+       19-Oct-2012.) $)
+    preq2d $p |- ( ph -> { C , A } = { C , B } ) $=
+      ( wceq cpr preq2 syl ) ABCFDBGDCGFEBCDHI $.
+
+    preq12d.2 $e |- ( ph -> C = D ) $.
+    $( Equality deduction for unordered pairs.  (Contributed by NM,
+       19-Oct-2012.) $)
+    preq12d $p |- ( ph -> { A , C } = { B , D } ) $=
+      ( wceq cpr preq12 syl2anc ) ABCHDEHBDICEIHFGBDCEJK $.
+  $}
+
+  $( Equality theorem for unordered triples.  (Contributed by NM,
+     13-Sep-2011.) $)
+  tpeq1 $p |- ( A = B -> { A , C , D } = { B , C , D } ) $=
+    ( wceq cpr csn cun ctp preq1 uneq1d df-tp 3eqtr4g ) ABEZACFZDGZHBCFZPHACDIB
+    CDINOQPABCJKACDLBCDLM $.
+
+  $( Equality theorem for unordered triples.  (Contributed by NM,
+     13-Sep-2011.) $)
+  tpeq2 $p |- ( A = B -> { C , A , D } = { C , B , D } ) $=
+    ( wceq cpr csn cun ctp preq2 uneq1d df-tp 3eqtr4g ) ABEZCAFZDGZHCBFZPHCADIC
+    BDINOQPABCJKCADLCBDLM $.
+
+  $( Equality theorem for unordered triples.  (Contributed by NM,
+     13-Sep-2011.) $)
+  tpeq3 $p |- ( A = B -> { C , D , A } = { C , D , B } ) $=
+    ( wceq cpr csn cun ctp sneq uneq2d df-tp 3eqtr4g ) ABEZCDFZAGZHOBGZHCDAICDB
+    INPQOABJKCDALCDBLM $.
+
+  ${
+    tpeq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality theorem for unordered triples.  (Contributed by NM,
+       22-Jun-2014.) $)
+    tpeq1d $p |- ( ph -> { A , C , D } = { B , C , D } ) $=
+      ( wceq ctp tpeq1 syl ) ABCGBDEHCDEHGFBCDEIJ $.
+
+    $( Equality theorem for unordered triples.  (Contributed by NM,
+       22-Jun-2014.) $)
+    tpeq2d $p |- ( ph -> { C , A , D } = { C , B , D } ) $=
+      ( wceq ctp tpeq2 syl ) ABCGDBEHDCEHGFBCDEIJ $.
+
+    $( Equality theorem for unordered triples.  (Contributed by NM,
+       22-Jun-2014.) $)
+    tpeq3d $p |- ( ph -> { C , D , A } = { C , D , B } ) $=
+      ( wceq ctp tpeq3 syl ) ABCGDEBHDECHGFBCDEIJ $.
+
+    tpeq123d.2 $e |- ( ph -> C = D ) $.
+    tpeq123d.3 $e |- ( ph -> E = F ) $.
+    $( Equality theorem for unordered triples.  (Contributed by NM,
+       22-Jun-2014.) $)
+    tpeq123d $p |- ( ph -> { A , C , E } = { B , D , F } ) $=
+      ( ctp tpeq1d tpeq2d tpeq3d 3eqtrd ) ABDFKCDFKCEFKCEGKABCDFHLADECFIMAFGCEJ
+      NO $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Rotation of the elements of an unordered triple.  (Contributed by Alan
+       Sare, 24-Oct-2011.) $)
+    tprot $p |- { A , B , C } = { B , C , A } $=
+      ( vx cv wceq w3o cab ctp 3orrot abbii dftp2 3eqtr4i ) DEZAFZNBFZNCFZGZDHP
+      QOGZDHABCIBCAIRSDOPQJKDABCLDBCALM $.
+  $}
+
+  $( Swap 1st and 2nd members of an undordered triple.  (Contributed by NM,
+     22-May-2015.) $)
+  tpcoma $p |- { A , B , C } = { B , A , C } $=
+    ( cpr csn cun ctp prcom uneq1i df-tp 3eqtr4i ) ABDZCEZFBADZMFABCGBACGLNMABH
+    IABCJBACJK $.
+
+  $( Swap 2nd and 3rd members of an undordered triple.  (Contributed by NM,
+     22-May-2015.) $)
+  tpcomb $p |- { A , B , C } = { A , C , B } $=
+    ( ctp tpcoma tprot 3eqtr4i ) BCADCBADABCDACBDBCAEABCFACBFG $.
+
+  $( Split off the first element of an unordered triple.  (Contributed by Mario
+     Carneiro, 5-Jan-2016.) $)
+  tpass $p |- { A , B , C } = ( { A } u. { B , C } ) $=
+    ( ctp cpr csn cun df-tp tprot uncom 3eqtr4i ) BCADBCEZAFZGABCDMLGBCAHABCIML
+    JK $.
+
+  $( Two ways to write an unordered quadruple.  (Contributed by Mario Carneiro,
+     5-Jan-2016.) $)
+  qdass $p |- ( { A , B } u. { C , D } ) = ( { A , B , C } u. { D } ) $=
+    ( cpr csn cun ctp unass df-tp uneq1i df-pr uneq2i 3eqtr4ri ) ABEZCFZGZDFZGO
+    PRGZGABCHZRGOCDEZGOPRITQRABCJKUASOCDLMN $.
+
+  $( Two ways to write an unordered quadruple.  (Contributed by Mario Carneiro,
+     5-Jan-2016.) $)
+  qdassr $p |- ( { A , B } u. { C , D } ) = ( { A } u. { B , C , D } ) $=
+    ( csn cun cpr ctp unass df-pr uneq1i tpass uneq2i 3eqtr4i ) AEZBEZFZCDGZFOP
+    RFZFABGZRFOBCDHZFOPRITQRABJKUASOBCDLMN $.
+
+  $( Unordered triple ` { A , A , B } ` is just an overlong way to write
+     ` { A , B } ` .  (Contributed by David A. Wheeler, 10-May-2015.) $)
+  tpidm12 $p |- { A , A , B } = { A , B } $=
+    ( csn cun cpr ctp dfsn2 uneq1i df-pr df-tp 3eqtr4ri ) ACZBCZDAAEZMDABEAABFL
+    NMAGHABIAABJK $.
+
+  $( Unordered triple ` { A , B , A } ` is just an overlong way to write
+     ` { A , B } ` .  (Contributed by David A. Wheeler, 10-May-2015.) $)
+  tpidm13 $p |- { A , B , A } = { A , B } $=
+    ( ctp cpr tprot tpidm12 eqtr3i ) AABCABACABDAABEABFG $.
+
+  $( Unordered triple ` { A , B , B } ` is just an overlong way to write
+     ` { A , B } ` .  (Contributed by David A. Wheeler, 10-May-2015.) $)
+  tpidm23 $p |- { A , B , B } = { A , B } $=
+    ( ctp cpr tprot tpidm12 prcom 3eqtri ) ABBCBBACBADABDABBEBAFBAGH $.
+
+  $( Unordered triple ` { A , A , A } ` is just an overlong way to write
+     ` { A } ` .  (Contributed by David A. Wheeler, 10-May-2015.) $)
+  tpidm $p |- { A , A , A } = { A } $=
+    ( ctp cpr csn tpidm12 dfsn2 eqtr4i ) AAABAACADAAEAFG $.
+
+  $( An unordered triple is an unordered pair if one of its elements is
+     identical with another element.  (Contributed by Alexander van der Vekens,
+     6-Oct-2017.) $)
+  tppreq3 $p |- ( B = C -> { A , B , C } = { A , B } ) $=
+    ( wceq ctp cpr tpeq3 eqcoms tpidm23 syl6eq ) BCDABCEZABBEZABFKLDCBCBABGHABI
+    J $.
+
+  $( An unordered pair contains its first member.  Part of Theorem 7.6 of
+     [Quine] p. 49.  (Contributed by Stefan Allan, 8-Nov-2008.) $)
+  prid1g $p |- ( A e. V -> A e. { A , B } ) $=
+    ( wcel cpr wceq wo eqid orci elprg mpbiri ) ACDAABEDAAFZABFZGLMAHIAABCJK $.
+
+  $( An unordered pair contains its second member.  Part of Theorem 7.6 of
+     [Quine] p. 49.  (Contributed by Stefan Allan, 8-Nov-2008.) $)
+  prid2g $p |- ( B e. V -> B e. { A , B } ) $=
+    ( wcel cpr prid1g prcom syl6eleq ) BCDBBAEABEBACFBAGH $.
+
+  ${
+    prid1.1 $e |- A e. _V $.
+    $( An unordered pair contains its first member.  Part of Theorem 7.6 of
+       [Quine] p. 49.  (Contributed by NM, 5-Aug-1993.) $)
+    prid1 $p |- A e. { A , B } $=
+      ( cvv wcel cpr prid1g ax-mp ) ADEAABFECABDGH $.
+  $}
+
+  ${
+    prid2.1 $e |- B e. _V $.
+    $( An unordered pair contains its second member.  Part of Theorem 7.6 of
+       [Quine] p. 49.  (Contributed by NM, 5-Aug-1993.) $)
+    prid2 $p |- B e. { A , B } $=
+      ( cpr prid1 prcom eleqtri ) BBADABDBACEBAFG $.
+  $}
+
+  $( A proper class vanishes in an unordered pair.  (Contributed by NM,
+     5-Aug-1993.) $)
+  prprc1 $p |- ( -. A e. _V -> { A , B } = { B } ) $=
+    ( cvv wcel wn csn c0 wceq cpr snprc cun uneq1 df-pr uncom un0 3eqtr4g sylbi
+    eqtr2i ) ACDEAFZGHZABIZBFZHAJTSUBKGUBKZUAUBSGUBLABMUCUBGKUBGUBNUBORPQ $.
+
+  $( A proper class vanishes in an unordered pair.  (Contributed by NM,
+     22-Mar-2006.) $)
+  prprc2 $p |- ( -. B e. _V -> { A , B } = { A } ) $=
+    ( cvv wcel wn cpr csn prcom prprc1 syl5eq ) BCDEABFBAFAGABHBAIJ $.
+
+  $( An unordered pair containing two proper classes is the empty set.
+     (Contributed by NM, 22-Mar-2006.) $)
+  prprc $p |- ( ( -. A e. _V /\ -. B e. _V ) -> { A , B } = (/) ) $=
+    ( cvv wcel wn cpr csn c0 prprc1 wceq snprc biimpi sylan9eq ) ACDEBCDEZABFBG
+    ZHABINOHJBKLM $.
+
+  ${
+    tpid1.1 $e |- A e. _V $.
+    $( One of the three elements of an unordered triple.  (Contributed by NM,
+       7-Apr-1994.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+    tpid1 $p |- A e. { A , B , C } $=
+      ( ctp wcel wceq w3o eqid 3mix1i eltp mpbir ) AABCEFAAGZABGZACGZHMNOAIJAAB
+      CDKL $.
+  $}
+
+  ${
+    tpid2.1 $e |- B e. _V $.
+    $( One of the three elements of an unordered triple.  (Contributed by NM,
+       7-Apr-1994.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+    tpid2 $p |- B e. { A , B , C } $=
+      ( ctp wcel wceq w3o eqid 3mix2i eltp mpbir ) BABCEFBAGZBBGZBCGZHNMOBIJBAB
+      CDKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.  $d x D $.  $d x ps $.
+    $( Closed theorem form of ~ tpid3 .  (Contributed by Alan Sare,
+       24-Oct-2011.) $)
+    tpid3g $p |- ( A e. B -> A e. { C , D , A } ) $=
+      ( vx wcel cv wceq wex ctp elisset w3o cab wi 3mix3 a1i abid syl6ibr dftp2
+      eleq2i eleq1 mpbidi exlimdv mpd ) ABFZEGZAHZEIACDAJZFZEABKUEUGUIEUGUFUHFZ
+      UIUEUEUGUFUFCHZUFDHZUGLZEMZFZUJUEUGUMUOUGUMNUEUGUKULOPUMEQRUHUNUFECDASTRU
+      FAUHUAUBUCUD $.
+  $}
+
+  ${
+    tpid3.1 $e |- C e. _V $.
+    $( One of the three elements of an unordered triple.  (Contributed by NM,
+       7-Apr-1994.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+    tpid3 $p |- C e. { A , B , C } $=
+      ( ctp wcel wceq w3o eqid 3mix3i eltp mpbir ) CABCEFCAGZCBGZCCGZHOMNCIJCAB
+      CDKL $.
+  $}
+
+  $( The singleton of a set is not empty.  (Contributed by NM, 14-Dec-2008.) $)
+  snnzg $p |- ( A e. V -> { A } =/= (/) ) $=
+    ( wcel csn c0 wne snidg ne0i syl ) ABCAADZCJEFABGJAHI $.
+
+  ${
+    $d x A $.
+    $( The singleton of a set is inhabited.  (Contributed by Jim Kingdon,
+       11-Aug-2018.) $)
+    snmg $p |- ( A e. V -> E. x x e. { A } ) $=
+      ( wcel csn cv wex snidg elex2 syl ) BCDBBEZDAFKDAGBCHABKIJ $.
+  $}
+
+  ${
+    $d x A $.
+    snnz.1 $e |- A e. _V $.
+    $( The singleton of a set is not empty.  (Contributed by NM,
+       10-Apr-1994.) $)
+    snnz $p |- { A } =/= (/) $=
+      ( cvv wcel csn c0 wne snnzg ax-mp ) ACDAEFGBACHI $.
+
+    $( The singleton of a set is inhabited.  (Contributed by Jim Kingdon,
+       11-Aug-2018.) $)
+    snm $p |- E. x x e. { A } $=
+      ( cvv wcel cv csn wex snmg ax-mp ) BDEAFBGEAHCABDIJ $.
+  $}
+
+  ${
+    prnz.1 $e |- A e. _V $.
+    $( A pair containing a set is not empty.  (Contributed by NM,
+       9-Apr-1994.) $)
+    prnz $p |- { A , B } =/= (/) $=
+      ( cpr wcel c0 wne prid1 ne0i ax-mp ) AABDZEKFGABCHKAIJ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( A pair containing a set is not empty.  (Contributed by FL,
+       19-Sep-2011.) $)
+    prnzg $p |- ( A e. V -> { A , B } =/= (/) ) $=
+      ( vx cv cpr c0 wne wceq preq1 neeq1d vex prnz vtoclg ) DEZBFZGHABFZGHDACO
+      AIPQGOABJKOBDLMN $.
+  $}
+
+  ${
+    tpnz.1 $e |- A e. _V $.
+    $( A triplet containing a set is not empty.  (Contributed by NM,
+       10-Apr-1994.) $)
+    tpnz $p |- { A , B , C } =/= (/) $=
+      ( ctp wcel c0 wne tpid1 ne0i ax-mp ) AABCEZFLGHABCDILAJK $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    snss.1 $e |- A e. _V $.
+    $( The singleton of an element of a class is a subset of the class.
+       Theorem 7.4 of [Quine] p. 49.  (Contributed by NM, 5-Aug-1993.) $)
+    snss $p |- ( A e. B <-> { A } C_ B ) $=
+      ( vx cv csn wcel wi wal wceq wss elsn imbi1i albii dfss2 clel2 3bitr4ri )
+      DEZAFZGZRBGZHZDIRAJZUAHZDISBKABGUBUDDTUCUADALMNDSBODABCPQ $.
+  $}
+
+  $( Membership in a set with an element removed.  (Contributed by NM,
+     10-Oct-2007.) $)
+  eldifsn $p |- ( A e. ( B \ { C } ) <-> ( A e. B /\ A =/= C ) ) $=
+    ( csn cdif wcel wn wa wne eldif elsncg necon3bbid pm5.32i bitri ) ABCDZEFAB
+    FZAOFZGZHPACIZHABOJPRSPQACACBKLMN $.
+
+  $( Membership in a set with an element removed.  (Contributed by NM,
+     10-Mar-2015.) $)
+  eldifsni $p |- ( A e. ( B \ { C } ) -> A =/= C ) $=
+    ( csn cdif wcel wne eldifsn simprbi ) ABCDEFABFACGABCHI $.
+
+  $( ` A ` is not in ` ( B \ { A } ) ` .  (Contributed by David Moews,
+     1-May-2017.) $)
+  neldifsn $p |- -. A e. ( B \ { A } ) $=
+    ( csn cdif wcel wne neirr eldifsni mto ) ABACDEAAFAGABAHI $.
+
+  $( ` A ` is not in ` ( B \ { A } ) ` .  Deduction form.  (Contributed by
+     David Moews, 1-May-2017.) $)
+  neldifsnd $p |- ( ph -> -. A e. ( B \ { A } ) ) $=
+    ( csn cdif wcel wn neldifsn a1i ) BCBDEFGABCHI $.
+
+  $( Restricted existential quantification over a set with an element removed.
+     (Contributed by NM, 4-Feb-2015.) $)
+  rexdifsn $p |- ( E. x e. ( A \ { B } ) ph
+      <-> E. x e. A ( x =/= B /\ ph ) ) $=
+    ( cv wne wa csn cdif wcel eldifsn anbi1i anass bitri rexbii2 ) ABEZDFZAGZBC
+    DHIZCPSJZAGPCJZQGZAGUARGTUBAPCDKLUAQAMNO $.
+
+  ${
+    $d A x $.  $d B x $.
+    $( The singleton of an element of a class is a subset of the class.
+       Theorem 7.4 of [Quine] p. 49.  (Contributed by NM, 22-Jul-2001.) $)
+    snssg $p |- ( A e. V -> ( A e. B <-> { A } C_ B ) ) $=
+      ( vx cv wcel csn wss eleq1 wceq sneq sseq1d vex snss vtoclbg ) DEZBFPGZBH
+      ABFAGZBHDACPABIPAJQRBPAKLPBDMNO $.
+
+    $( An element not in a set can be removed without affecting the set.
+       (Contributed by NM, 16-Mar-2006.)  (Proof shortened by Andrew Salmon,
+       29-Jun-2011.) $)
+    difsn $p |- ( -. A e. B -> ( B \ { A } ) = B ) $=
+      ( vx wcel wn csn cdif cv wne wa eldifsn simpl wceq eleq1 biimpcd necon3bd
+      com12 ancld impbid2 syl5bb eqrdv ) ABDZEZCBAFGZBCHZUDDUEBDZUEAIZJZUCUFUEB
+      AKUCUHUFUFUGLUCUFUGUFUCUGUFUBUEAUEAMUFUBUEABNOPQRSTUA $.
+
+    $( Removal of a singleton from an unordered pair.  (Contributed by NM,
+       16-Mar-2006.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+    difprsnss $p |- ( { A , B } \ { A } ) C_ { B } $=
+      ( vx cpr csn cdif cv wcel wn wa wceq wo elpr elsn notbii biimparc syl2anb
+      vex biorf eldif 3imtr4i ssriv ) CABDZAEZFZBEZCGZUCHZUGUDHZIZJUGBKZUGUEHUG
+      UFHUHUGAKZUKLZULIZUKUJUGABCRMUIULCANOUNUKUMULUKSPQUGUCUDTCBNUAUB $.
+  $}
+
+  $( Removal of a singleton from an unordered pair.  (Contributed by Thierry
+     Arnoux, 4-Feb-2017.) $)
+  difprsn1 $p |- ( A =/= B -> ( { A , B } \ { A } ) = { B } ) $=
+    ( wne cpr csn cdif wceq necom cin c0 disjsn2 disj3 sylib cun df-pr equncomi
+    difeq1i difun2 eqtri syl6reqr sylbir ) ABCBACZABDZAEZFZBEZGBAHUBUFUFUDFZUEU
+    BUFUDIJGUFUGGBAKUFUDLMUEUFUDNZUDFUGUCUHUDUCUDUFABOPQUFUDRSTUA $.
+
+  $( Removal of a singleton from an unordered pair.  (Contributed by Alexander
+     van der Vekens, 5-Oct-2017.) $)
+  difprsn2 $p |- ( A =/= B -> ( { A , B } \ { B } ) = { A } ) $=
+    ( wne cpr csn cdif prcom difeq1i wceq necom difprsn1 sylbi syl5eq ) ABCZABD
+    ZBEZFBADZPFZAEZOQPABGHNBACRSIABJBAKLM $.
+
+  $( Removal of a singleton from an unordered triple.  (Contributed by
+     Alexander van der Vekens, 5-Oct-2017.) $)
+  diftpsn3 $p |- ( ( A =/= C /\ B =/= C )
+                    -> ( { A , B , C } \ { C } ) = { A , B } ) $=
+    ( wne wa ctp csn cdif cpr cun a1i c0 cin necom disjsn2 sylbi uneq12d syl6eq
+    wceq 3eqtrd df-tp difeq1d df-pr ineq1d incom indi eqtri adantr adantl unidm
+    difundir disj3 sylib eqcomd difid un0 ) ACDZBCDZEZABCFZCGZHABIZVAJZVAHZVBVA
+    HZVAVAHZJZVBUSUTVCVAUTVCSUSABCUAKUBVDVGSUSVBVAVAUKKUSVGVBLJVBUSVEVBVFLUSVBV
+    EUSVBVAMZLSVBVESUSVHAGZBGZJZVAMZVAVIMZVAVJMZJZLUSVBVKVAVBVKSUSABUCKUDVLVOSU
+    SVLVAVKMVOVKVAUEVAVIVJUFUGKUSVOLLJLUSVMLVNLUQVMLSZURUQCADVPACNCAOPUHURVNLSZ
+    UQURCBDVQBCNCBOPUIQLUJRTVBVAULUMUNVFLSUSVAUOKQVBUPRT $.
+
+  $( ` ( B \ { A } ) ` equals ` B ` if and only if ` A ` is not a member of
+     ` B ` .  Generalization of ~ difsn .  (Contributed by David Moews,
+     1-May-2017.) $)
+  difsnb $p |- ( -. A e. B <-> ( B \ { A } ) = B ) $=
+    ( wcel wn csn cdif wceq difsn neldifsnd nelne1 mpdan necomd necon2bi impbii
+    wne ) ABCZDBAEFZBGABHPQBPBQPAQCDBQOPABIABQJKLMN $.
+
+  $( ` ( B \ { A } ) ` is a proper subclass of ` B ` if ` A ` is a member of
+     ` B ` .  In classical logic, the converse holds as well.  (Contributed by
+     Jim Kingdon, 9-Aug-2018.) $)
+  difsnpssim $p |- ( A e. B -> ( B \ { A } ) C. B ) $=
+    ( wcel wn csn cdif wpss notnot1 wne wss difss biantrur necon3bbii
+    wa difsnb df-pss 3bitr4i sylib ) ABCZSDZDZBAEZFZBGZSHUCBIZUCBJZUE
+    NUAUDUFUEBUBKLTUCBABOMUCBPQR $.
+
+  $( The singleton of an element of a class is a subset of the class.
+     (Contributed by NM, 6-Jun-1994.) $)
+  snssi $p |- ( A e. B -> { A } C_ B ) $=
+    ( wcel csn wss snssg ibi ) ABCADBEABBFG $.
+
+  ${
+    snssd.1 $e |- ( ph -> A e. B ) $.
+    $( The singleton of an element of a class is a subset of the class
+       (deduction rule).  (Contributed by Jonathan Ben-Naim, 3-Jun-2011.) $)
+    snssd $p |- ( ph -> { A } C_ B ) $=
+      ( wcel csn wss wb snssg syl mpbid ) ABCEZBFCGZDALLMHDBCCIJK $.
+  $}
+
+  $( If we remove a single element from a class then put it back in, we end up
+     with a subset of the original class.  In classical logic, we could replace
+     subset with equality.  (Contributed by Jim Kingdon, 10-Aug-2018.) $)
+  difsnss $p |- ( B e. A -> ( ( A \ { B } ) u. { B } ) C_ A ) $=
+    ( wcel csn cdif cun uncom wss snssi undifss sylib syl5eqss ) BACZ
+    ABDZEZNFNOFZAONGMNAHPAHBAINAJKL $.
+
+  $( Note that ` x ` is a dummy variable in the proof below. $)
+  $( Compute the power set of the empty set.  Theorem 89 of [Suppes] p. 47.
+     (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
+     29-Jun-2011.) $)
+  pw0 $p |- ~P (/) = { (/) } $=
+    ( vx cv c0 wss cab wceq cpw csn ss0b abbii df-pw df-sn 3eqtr4i ) ABZCDZAENC
+    FZAECGCHOPANIJACKACLM $.
+
+  $( A singleton is a subset of an unordered pair containing its member.
+     (Contributed by NM, 27-Aug-2004.) $)
+  snsspr1 $p |- { A } C_ { A , B } $=
+    ( csn cun cpr ssun1 df-pr sseqtr4i ) ACZIBCZDABEIJFABGH $.
+
+  $( A singleton is a subset of an unordered pair containing its member.
+     (Contributed by NM, 2-May-2009.) $)
+  snsspr2 $p |- { B } C_ { A , B } $=
+    ( csn cun cpr ssun2 df-pr sseqtr4i ) BCZACZIDABEIJFABGH $.
+
+  $( A singleton is a subset of an unordered triple containing its member.
+     (Contributed by NM, 9-Oct-2013.) $)
+  snsstp1 $p |- { A } C_ { A , B , C } $=
+    ( csn cpr cun ctp snsspr1 ssun1 sstri df-tp sseqtr4i ) ADZABEZCDZFZABCGMNPA
+    BHNOIJABCKL $.
+
+  $( A singleton is a subset of an unordered triple containing its member.
+     (Contributed by NM, 9-Oct-2013.) $)
+  snsstp2 $p |- { B } C_ { A , B , C } $=
+    ( csn cpr cun ctp snsspr2 ssun1 sstri df-tp sseqtr4i ) BDZABEZCDZFZABCGMNPA
+    BHNOIJABCKL $.
+
+  $( A singleton is a subset of an unordered triple containing its member.
+     (Contributed by NM, 9-Oct-2013.) $)
+  snsstp3 $p |- { C } C_ { A , B , C } $=
+    ( csn cpr cun ctp ssun2 df-tp sseqtr4i ) CDZABEZKFABCGKLHABCIJ $.
+
+  $( A pair is a subset of an unordered triple containing its members.
+     (Contributed by Jim Kingdon, 11-Aug-2018.) $)
+  prsstp12 $p |- { A , B } C_ { A , B , C } $=
+    ( cpr csn cun ctp ssun1 df-tp sseqtr4i ) ABDZKCEZFABCGKLHABCIJ $.
+
+  $( A pair is a subset of an unordered triple containing its members.
+     (Contributed by Jim Kingdon, 11-Aug-2018.) $)
+  prsstp13 $p |- { A , C } C_ { A , B , C } $=
+    ( cpr ctp prsstp12 tpcomb sseqtr4i ) ACDACBEABCEACBFABCGH $.
+
+  $( A pair is a subset of an unordered triple containing its members.
+     (Contributed by Jim Kingdon, 11-Aug-2018.) $)
+  prsstp23 $p |- { B , C } C_ { A , B , C } $=
+    ( cpr ctp prsstp12 tprot sseqtr4i ) BCDBCAEABCEBCAFABCGH $.
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    prss.1 $e |- A e. _V $.
+    prss.2 $e |- B e. _V $.
+    $( A pair of elements of a class is a subset of the class.  Theorem 7.5 of
+       [Quine] p. 49.  (Contributed by NM, 30-May-1994.)  (Proof shortened by
+       Andrew Salmon, 29-Jun-2011.) $)
+    prss $p |- ( ( A e. C /\ B e. C ) <-> { A , B } C_ C ) $=
+      ( csn wss wa cun wcel cpr unss snss anbi12i df-pr sseq1i 3bitr4i ) AFZCGZ
+      BFZCGZHRTIZCGACJZBCJZHABKZCGRTCLUCSUDUAACDMBCEMNUEUBCABOPQ $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y C $.
+    $( A pair of elements of a class is a subset of the class.  Theorem 7.5 of
+       [Quine] p. 49.  (Contributed by NM, 22-Mar-2006.)  (Proof shortened by
+       Andrew Salmon, 29-Jun-2011.) $)
+    prssg $p |- ( ( A e. V /\ B e. W )
+                -> ( ( A e. C /\ B e. C ) <-> { A , B } C_ C ) ) $=
+      ( wcel wa csn wss cpr snssg bi2anan9 cun unss df-pr sseq1i bitr4i syl6bb
+      ) ADFZBEFZGACFZBCFZGAHZCIZBHZCIZGZABJZCIZSUAUDTUBUFACDKBCEKLUGUCUEMZCIUIU
+      CUECNUHUJCABOPQR $.
+  $}
+
+  $( A pair of elements of a class is a subset of the class.  (Contributed by
+     NM, 16-Jan-2015.) $)
+  prssi $p |- ( ( A e. C /\ B e. C ) -> { A , B } C_ C ) $=
+    ( wcel wa cpr wss prssg ibi ) ACDBCDEABFCGABCCCHI $.
+
+  $( An unordered pair belongs to the power class of a class iff each member
+     belongs to the class.  (Contributed by Thierry Arnoux, 3-Oct-2016.)
+     (Revised by NM, 18-Jan-2018.) $)
+  prsspwg $p |- ( ( A e. V /\ B e. W ) -> ( { A , B } C_ ~P C
+      <-> ( A C_ C /\ B C_ C ) ) ) $=
+    ( wcel wa cpw cpr wss prssg elpwg bi2anan9 bitr3d ) ADFZBEFZGACHZFZBQFZGABI
+    QJACJZBCJZGABQDEKORTPSUAACDLBCELMN $.
+
+  $( Obsolete version of ~ prsspwg as of 18-Jan-2018.  (Contributed by Thierry
+     Arnoux, 3-Oct-2016.)  (New usage is discouraged.)
+     (Proof modification is discouraged.) $)
+  prsspwgOLD $p |- ( ( A e. _V /\ B e. _V ) -> ( { A , B } C_ ~P C <->
+    ( A C_ C /\ B C_ C ) ) ) $=
+    ( cvv wcel wa cpw cpr wss prssg wb elpwg anim12i pm4.38 syl bitr3d ) ADEZBD
+    EZFZACGZEZBTEZFZABHTIACIZBCIZFZABTDDJSUAUDKZUBUEKZFUCUFKQUGRUHACDLBCDLMUAUB
+    UDUENOP $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Empty set and the singleton itself are subsets of a singleton.
+       (Contributed by Jim Kingdon, 10-Aug-2018.) $)
+    sssnr $p |- ( ( A = (/) \/ A = { B } ) -> A C_ { B } ) $=
+      ( c0 wceq csn wss 0ss sseq1 mpbiri eqimss jaoi ) ACDZABEZFZAMDLNC
+      MFMGACMHIAMJK $.
+
+    $( The inhabited subset of a singleton.  (Contributed by Jim Kingdon,
+       10-Aug-2018.) $)
+    sssnm $p |- ( E. x x e. A -> ( A C_ { B } <-> A = { B } ) ) $=
+      ( cv wcel wex csn wss wceq wa wb ssel elsni syl6 eleq1 ibd exlimdv anc2li
+      snssi eqss syl6ibr com12 eqimss impbid1 ) ADZBEZAFZBCGZHZBUHIZUIUGUJUIUGU
+      IUHBHZJUJUIUGUKUIUGCBEZUKUIUFULAUIUFULUIUFUECIZUFULKUIUFUEUHEUMBUHUELUECM
+      NUECBONPQCBSNRBUHTUAUBBUHUCUD $.
+
+    $( Two ways to express that an inhabited set equals a singleton.
+       (Contributed by Jim Kingdon, 11-Aug-2018.) $)
+    eqsnm $p |- ( E. x x e. A -> ( A = { B } <-> A. x e. A x = B ) ) $=
+      ( cv wceq wral csn wss wcel wex dfss3 elsn bitri sssnm syl5rbbr
+      ralbii ) ADZCEZABFZBCGZHZQBIAJBTEUAQTIZABFSABTKUBRABACLPMABCNO
+      $.
+  $}
+
+  ${
+    $( The subsets of a pair.  (Contributed by Jim Kingdon, 11-Aug-2018.) $)
+    ssprr $p |- (
+        ( ( A = (/) \/ A = { B } ) \/ ( A = { C } \/ A = { B , C } ) )
+        -> A C_ { B , C } ) $=
+      ( c0 wceq csn wo cpr wss 0ss mpbiri snsspr1 jaoi snsspr2 eqimss
+      sseq1 ) ADEZABFZEZGABCHZIZACFZEZATEZGQUASQUADTITJADTPKSUARTIBCL
+      ARTPKMUCUAUDUCUAUBTIBCNAUBTPKATOMM $.
+
+    $( The subsets of a triple.  (Contributed by Jim Kingdon, 11-Aug-2018.) $)
+    sstpr $p |- (
+        ( ( ( A = (/) \/ A = { B } ) \/ ( A = { C } \/ A = { B , C } ) ) \/
+          ( ( A = { D } \/ A = { B , D } ) \/
+            ( A = { C , D } \/ A = { B , C , D } ) ) )
+        -> A C_ { B , C , D } ) $=
+      ( c0 wceq csn wo cpr ctp wss ssprr prsstp12 syl6ss sseq1 mpbiri
+      snsstp3 prsstp13 jaoi prsstp23 eqimss ) AEFABGFHACGFABCIZFHHZAB
+      CDJZKZADGZFZABDIZFZHZACDIZFZAUDFZHZHUCAUBUDABCLBCDMNUJUEUNUGUEU
+      IUGUEUFUDKBCDQAUFUDOPUIUEUHUDKBCDRAUHUDOPSULUEUMULUEUKUDKBCDTAU
+      KUDOPAUDUASSS $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.  $d D x $.
+    tpss.1 $e |- A e. _V $.
+    tpss.2 $e |- B e. _V $.
+    tpss.3 $e |- C e. _V $.
+    $( A triplet of elements of a class is a subset of the class.  (Contributed
+       by NM, 9-Apr-1994.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+    tpss $p |- ( ( A e. D /\ B e. D /\ C e. D ) <-> { A , B , C } C_ D ) $=
+      ( cpr wss csn wa cun wcel w3a ctp unss df-3an prss snss anbi12i 3bitr4i
+      bitri df-tp sseq1i ) ABHZDIZCJZDIZKZUEUGLZDIADMZBDMZCDMZNZABCOZDIUEUGDPUN
+      UKULKZUMKUIUKULUMQUPUFUMUHABDEFRCDGSTUBUOUJDABCUCUDUA $.
+  $}
+
+  $( A triple of elements of a class is a subset of the class.  (Contributed by
+     Alexander van der Vekens, 1-Feb-2018.) $)
+  tpssi $p |- ( ( A e. D /\ B e. D /\ C e. D ) -> { A , B , C } C_ D ) $=
+    ( w3a ctp cpr csn cun df-tp wss prssi 3adant3 snssi 3ad2ant3 unssd syl5eqss
+    wcel ) ADRZBDRZCDRZEZABCFABGZCHZIDABCJUBUCUDDSTUCDKUAABDLMUASUDDKTCDNOPQ $.
+
+  ${
+    $d x A $.  $d x B $.
+    sneqr.1 $e |- A e. _V $.
+    $( If the singletons of two sets are equal, the two sets are equal.  Part
+       of Exercise 4 of [TakeutiZaring] p. 15.  (Contributed by NM,
+       27-Aug-1993.) $)
+    sneqr $p |- ( { A } = { B } -> A = B ) $=
+      ( csn wceq wcel snid eleq2 mpbii elsnc sylib ) ADZBDZEZAMFZABENALFOACGLMA
+      HIABCJK $.
+
+    $( If a singleton is a subset of another, their members are equal.
+       (Contributed by NM, 28-May-2006.) $)
+    snsssn $p |- ( { A } C_ { B } -> A = B ) $=
+      ( vx csn wss cv wceq wi wal wcel dfss2 elsn imbi12i albii bitri
+      cvv sbceqal ax-mp sylbi ) AEZBEZFZDGZAHZUDBHZIZDJZABHZUCUDUAKZU
+      DUBKZIZDJUHDUAUBLULUGDUJUEUKUFDAMDBMNOPAQKUHUIICDABQRST $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Closed form of ~ sneqr .  (Contributed by Scott Fenton, 1-Apr-2011.) $)
+    sneqrg $p |- ( A e. V -> ( { A } = { B } -> A = B ) ) $=
+      ( vx cv csn wceq wi sneq eqeq1d eqeq1 imbi12d vex sneqr vtoclg ) DEZFZBFZ
+      GZPBGZHAFZRGZABGZHDACPAGZSUBTUCUDQUARPAIJPABKLPBDMNO $.
+
+  $}
+
+  $( Two singletons of sets are equal iff their elements are equal.
+     (Contributed by Scott Fenton, 16-Apr-2012.) $)
+  sneqbg $p |- ( A e. V -> ( { A } = { B } <-> A = B ) ) $=
+    ( wcel csn wceq sneqrg sneq impbid1 ) ACDAEBEFABFABCGABHI $.
+
+  ${
+    $d x A $.
+    $( The singleton of a class is a subset of its power class.  (Contributed
+       by NM, 5-Aug-1993.) $)
+    snsspw $p |- { A } C_ ~P A $=
+      ( vx csn cpw cv wceq wss wcel eqimss elsn df-pw abeq2i 3imtr4i ssriv ) BA
+      CZADZBEZAFQAGZQOHQPHQAIBAJRBPBAKLMN $.
+  $}
+
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    prsspw.1 $e |- A e. _V $.
+    prsspw.2 $e |- B e. _V $.
+    $( An unordered pair belongs to the power class of a class iff each member
+       belongs to the class.  (Contributed by NM, 10-Dec-2003.)  (Proof
+       shortened by Andrew Salmon, 26-Jun-2011.) $)
+    prsspw $p |- ( { A , B } C_ ~P C <-> ( A C_ C /\ B C_ C ) ) $=
+      ( cpr cpw wss wcel wa prss elpw anbi12i bitr3i ) ABFCGZHAOIZBOIZJACHZBCHZ
+      JABODEKPRQSACDLBCELMN $.
+  $}
+
+  ${
+    preqr1.1 $e |- A e. _V $.
+    preqr1.2 $e |- B e. _V $.
+    $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
+       the same second element, the first elements are equal.  (Contributed by
+       NM, 18-Oct-1995.) $)
+    preqr1 $p |- ( { A , C } = { B , C } -> A = B ) $=
+      ( cpr wceq wcel wo prid1 eleq2 mpbii elpr sylib mpbiri eqcom eqeq2 oplem1
+      ) ACFZBCFZGZABGZACGZBAGZBCGZUAATHZUBUCIUAASHUFACDJSTAKLABCDMNUABSHZUDUEIU
+      AUGBTHBCEJSTBKOBACEMNABPACBQR $.
+  $}
+
+  ${
+    preqr2.1 $e |- A e. _V $.
+    preqr2.2 $e |- B e. _V $.
+    $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
+       the same first element, the second elements are equal.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    preqr2 $p |- ( { C , A } = { C , B } -> A = B ) $=
+      ( cpr wceq prcom eqeq12i preqr1 sylbi ) CAFZCBFZGACFZBCFZGABGLNMOCAHCBHIA
+      BCDEJK $.
+  $}
+
+  ${
+    preq12b.1 $e |- A e. _V $.
+    preq12b.2 $e |- B e. _V $.
+    preq12b.3 $e |- C e. _V $.
+    preq12b.4 $e |- D e. _V $.
+    $( Equality relationship for two unordered pairs.  (Contributed by NM,
+       17-Oct-1996.) $)
+    preq12b $p |- ( { A , B } = { C , D } <->
+                   ( ( A = C /\ B = D ) \/ ( A = D /\ B = C ) ) ) $=
+      ( cpr wceq wa wo wcel preq1 eqeq1d preqr2 syl6bi com12 ancld prcom eqeq2i
+      prid1 eleq2 mpbii elpr sylib wi sylbi orim12d preq12 syl6eq sylan9eq jaoi
+      mpd impbii ) ABIZCDIZJZACJZBDJZKZADJZBCJZKZLZURUSVBLZVEURAUQMZVFURAUPMVGA
+      BEUBUPUQAUCUDACDEUEUFURUSVAVBVDURUSUTUSURUTUSURCBIZUQJUTUSUPVHUQACBNOBDCF
+      HPQRSURVBVCURUPDCIZJZVBVCUGUQVIUPCDTUAVBVJVCVBVJDBIZVIJVCVBUPVKVIADBNZOBC
+      DFGPQRUHSUIUNVAURVDABCDUJVBVCUPBDIZUQVBUPVKVMVLDBTUKBCDNULUMUO $.
+
+    $( Equality of two unordered pairs.  (Contributed by NM, 17-Oct-1996.) $)
+    prel12 $p |- ( -. A = B -> ( { A , B } = { C , D } <->
+                   ( A e. { C , D } /\ B e. { C , D } ) ) ) $=
+      ( wceq wn cpr wcel wa eleq2 mpbii wo wi elpr eqeq2 notbid prid1 prid2 jca
+      orel2 syl6bi com3l imp ancrd orel1 orim12d orcom bitri preq12b 3imtr4g ex
+      syl5bi imp3a impbid2 ) ABIZJZABKZCDKZIZAVBLZBVBLZMVCVDVEVCAVALVDABEUAVAVB
+      ANOVCBVALVEABFUBVAVBBNOUCUTVDVEVCVDACIZADIZPZUTVEVCQZACDERUTVHVIUTVHMZBDI
+      ZBCIZPZVFVKMZVGVLMZPVEVCVJVKVNVLVOVJVKVFUTVHVKVFQVKUTVHVFVKUTVGJVHVFQVKUS
+      VGBDASTVGVFUDUEUFUGUHVJVLVGUTVHVLVGQVLUTVHVGVLUTVFJVHVGQVLUSVFBCASTVFVGUI
+      UEUFUGUHUJVEVLVKPVMBCDFRVLVKUKULABCDEFGHUMUNUOUPUQUR $.
+
+    $( A way to represent ordered pairs using unordered pairs with distinct
+       members.  (Contributed by NM, 27-Mar-2007.) $)
+    opthpr $p |- ( A =/= D ->
+                 ( { A , B } = { C , D } <-> ( A = C /\ B = D ) ) ) $=
+      ( cpr wceq wa wo wne preq12b idd wn wi df-ne pm2.21 sylbi jaod orc syl5bb
+      imp3a impbid1 ) ABICDIJACJBDJKZADJZBCJZKZLZADMZUFABCDEFGHNUKUJUFUKUFUFUIU
+      KUFOUKUGUHUFUKUGPUGUHUFQZQADRUGULSTUDUAUFUIUBUEUC $.
+  $}
+
+  ${
+    $d A x y z w $.  $d B x y z w $.  $d C x y z w $.  $d D x y z w $.
+    $d V x y z w $.  $d W x y z w $.  $d X x y z w $.  $d Y x y z w $.
+    $( Closed form of ~ preq12b .  (Contributed by Scott Fenton,
+       28-Mar-2014.) $)
+    preq12bg $p |- ( ( ( A e. V /\ B e. W ) /\ ( C e. X /\ D e. Y ) ) ->
+       ( { A , B } = { C , D } <->
+         ( ( A = C /\ B = D ) \/ ( A = D /\ B = C ) ) ) ) $=
+      ( vx vy vz vw wcel wa cpr wceq wo wb wi cv weq preq1 eqeq1d eqeq1 orbi12d
+      anbi1d bibi12d imbi2d preq2 anbi2d eqeq2 w3a vex preq12b vtoclbg vtocl3ga
+      eqeq2d a1i 3expa impr ) AEMZBFMZNCGMZDHMZABOZCDOZPZACPZBDPZNZADPZBCPZNZQZ
+      RZVAVBVCVDVOSZVDITZJTZOZKTZDOZPZIKUAZVRDPZNZVQDPZJKUAZNZQZRZSZVDAVROZWAPZ
+      AVTPZWDNZVKWGNZQZRZSVDVEWAPZWNVINZVKBVTPZNZQZRZSVPIJKABCEFGVQAPZWJWRVDXEW
+      BWMWIWQXEVSWLWAVQAVRUBUCXEWEWOWHWPXEWCWNWDVQAVTUDUFXEWFVKWGVQADUDUFUEUGUH
+      VRBPZWRXDVDXFWMWSWQXCXFWLVEWAVRBAUIUCXFWOWTWPXBXFWDVIWNVRBDUDUJXFWGXAVKVR
+      BVTUDUJUEUGUHVTCPZXDVOVDXGWSVGXCVNXGWAVFVEVTCDUBUQXGWTVJXBVMXGWNVHVIVTCAU
+      KUFXGXAVLVKVTCBUKUJUEUGUHWKVQEMVRFMVTGMULVSVTLTZOZPWCJLUAZNZILUAZWGNZQWBW
+      ILDHXHDPZXIWAVSXHDVTUIUQXNXKWEXMWHXNXJWDWCXHDVRUKUJXNXLWFWGXHDVQUKUFUEVQV
+      RVTXHIUMJUMKUMLUMUNUOURUPUSUT $.
+  $}
+
+  $( Two pairs are not equal if at least one element of the first pair is not
+     contained in the second pair.  (Contributed by Alexander van der Vekens,
+     13-Aug-2017.) $)
+  prneimg $p |- ( ( ( A e. U /\ B e. V ) /\ ( C e. X /\ D e. Y ) )
+                  -> ( ( ( A =/= C /\ A =/= D ) \/ ( B =/= C /\ B =/= D ) )
+                       -> { A , B } =/= { C , D } ) ) $=
+    ( wcel wa wne wo cpr wceq preq12bg oranim df-ne anbi12i sylnibr
+    wn orddi simpll pm1.4 ad2antll sylbi syl6bi anim12i pm4.56 syl6ib
+    jca syl6 necon2ad ) AEIBFIJCGIDHIJJZACKZADKZJZBCKZBDKZJZLZABMZCDM
+    ZUMVAVBNZUPTZUSTZJZUTTUMVCACNZADNZLZBCNZBDNZLZJZVFUMVCVGVKJVHVJJL
+    ZVMABCDEFGHOVNVIVGVJLZJZVKVHLZVKVJLZJZJZVMVGVKVHVJUAVTVIVLVIVOVSU
+    BVRVLVPVQVKVJUCUDUJUEUFVIVDVLVEVIVGTZVHTZJUPVGVHPUNWAUOWBACQADQRS
+    VLVJTZVKTZJUSVJVKPUQWCURWDBCQBDQRSUGUKUPUSUHUIUL $.
+
+  ${
+    preqsn.1 $e |- A e. _V $.
+    preqsn.2 $e |- B e. _V $.
+    preqsn.3 $e |- C e. _V $.
+    $( Equivalence for a pair equal to a singleton.  (Contributed by NM,
+       3-Jun-2008.) $)
+    preqsn $p |- ( { A , B } = { C } <-> ( A = B /\ B = C ) ) $=
+      ( cpr csn wceq wa dfsn2 eqeq2i preq12b oridm eqtr3 simpr jca eqtr bitri
+      wo impbii ) ABGZCHZIUBCCGZIZABIZBCIZJZUCUDUBCKLUEACIZUGJZUJTZUHABCCDEFFMU
+      KUJUHUJNUJUHUJUFUGABCOUIUGPQUHUIUGABCRUFUGPQUASSS $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Value of the ordered pair when the arguments are sets.  (Contributed by
+       Mario Carneiro, 26-Apr-2015.) $)
+    dfopg $p |- ( ( A e. V /\ B e. W ) ->
+      <. A , B >. = { { A } , { A , B } } ) $=
+      ( vx wcel cvv cop csn cpr wceq elex wa cab w3a df-3an baibr abbidv abid2
+      cv df-op eqcomi 3eqtr3g eqcomd syl2an ) ACFAGFZBGFZABHZAIABJJZKBDFACLBDLU
+      FUGMZUIUHUJETUIFZENUFUGUKOZENZUIUHUJUKULEULUJUKUFUGUKPQREUISUHUMEABUAUBUC
+      UDUE $.
+  $}
+
+  ${
+    dfop.1 $e |- A e. _V $.
+    dfop.2 $e |- B e. _V $.
+    $( Value of an ordered pair when the arguments are sets, with the
+       conclusion corresponding to Kuratowski's original definition.
+       (Contributed by NM, 25-Jun-1998.) $)
+    dfop $p |- <. A , B >. = { { A } , { A , B } } $=
+      ( cvv wcel cop csn cpr wceq dfopg mp2an ) AEFBEFABGAHABIIJCDABEEKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Equality theorem for ordered pairs.  (Contributed by NM, 25-Jun-1998.)
+       (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    opeq1 $p |- ( A = B -> <. A , C >. = <. B , C >. ) $=
+      ( vx wceq cvv wcel cv csn cpr w3a cab cop eleq1 anbi1d sneq preq1
+      wa df-3an df-op preq12d eleq2d anbi12d 3bitr4g abbidv 3eqtr4g ) A
+      BEZAFGZCFGZDHZAIZACJZJZGZKZDLBFGZUIUJBIZBCJZJZGZKZDLACMBCMUGUOVAD
+      UGUHUIRZUNRUPUIRZUTRUOVAUGVBVCUNUTUGUHUPUIABFNOUGUMUSUJUGUKUQULUR
+      ABPABCQUAUBUCUHUIUNSUPUIUTSUDUEDACTDBCTUF $.
+
+    $( Equality theorem for ordered pairs.  (Contributed by NM, 25-Jun-1998.)
+       (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    opeq2 $p |- ( A = B -> <. C , A >. = <. C , B >. ) $=
+      ( vx wceq cvv wcel cv csn cpr w3a cab wa eleq1 anbi2d eqidd preq2
+      cop df-3an df-op preq12d eleq2d anbi12d 3bitr4g abbidv 3eqtr4g )
+      ABEZCFGZAFGZDHZCIZCAJZJZGZKZDLUHBFGZUJUKCBJZJZGZKZDLCARCBRUGUOUTD
+      UGUHUIMZUNMUHUPMZUSMUOUTUGVAVBUNUSUGUIUPUHABFNOUGUMURUJUGUKUKULUQ
+      UGUKPABCQUAUBUCUHUIUNSUHUPUSSUDUEDCATDCBTUF $.
+  $}
+
+  $( Equality theorem for ordered pairs.  (Contributed by NM, 28-May-1995.) $)
+  opeq12 $p |- ( ( A = C /\ B = D ) -> <. A , B >. = <. C , D >. ) $=
+    ( wceq cop opeq1 opeq2 sylan9eq ) ACEBDEABFCBFCDFACBGBDCHI $.
+
+  ${
+    opeq1i.1 $e |- A = B $.
+    $( Equality inference for ordered pairs.  (Contributed by NM,
+       16-Dec-2006.) $)
+    opeq1i $p |- <. A , C >. = <. B , C >. $=
+      ( wceq cop opeq1 ax-mp ) ABEACFBCFEDABCGH $.
+
+    $( Equality inference for ordered pairs.  (Contributed by NM,
+       16-Dec-2006.) $)
+    opeq2i $p |- <. C , A >. = <. C , B >. $=
+      ( wceq cop opeq2 ax-mp ) ABECAFCBFEDABCGH $.
+
+    ${
+      opeq12i.2 $e |- C = D $.
+      $( Equality inference for ordered pairs.  (Contributed by NM,
+         16-Dec-2006.)  (Proof shortened by Eric Schmidt, 4-Apr-2007.) $)
+      opeq12i $p |- <. A , C >. = <. B , D >. $=
+        ( wceq cop opeq12 mp2an ) ABGCDGACHBDHGEFACBDIJ $.
+    $}
+  $}
+
+  ${
+    opeq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for ordered pairs.  (Contributed by NM,
+       16-Dec-2006.) $)
+    opeq1d $p |- ( ph -> <. A , C >. = <. B , C >. ) $=
+      ( wceq cop opeq1 syl ) ABCFBDGCDGFEBCDHI $.
+
+    $( Equality deduction for ordered pairs.  (Contributed by NM,
+       16-Dec-2006.) $)
+    opeq2d $p |- ( ph -> <. C , A >. = <. C , B >. ) $=
+      ( wceq cop opeq2 syl ) ABCFDBGDCGFEBCDHI $.
+
+    opeq12d.2 $e |- ( ph -> C = D ) $.
+    $( Equality deduction for ordered pairs.  (Contributed by NM,
+       16-Dec-2006.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+    opeq12d $p |- ( ph -> <. A , C >. = <. B , D >. ) $=
+      ( wceq cop opeq12 syl2anc ) ABCHDEHBDICEIHFGBDCEJK $.
+  $}
+
+  $( Equality theorem for ordered triples.  (Contributed by NM, 3-Apr-2015.) $)
+  oteq1 $p |- ( A = B -> <. A , C , D >. = <. B , C , D >. ) $=
+    ( wceq cop cotp opeq1 opeq1d df-ot 3eqtr4g ) ABEZACFZDFBCFZDFACDGBCDGLMNDAB
+    CHIACDJBCDJK $.
+
+  $( Equality theorem for ordered triples.  (Contributed by NM, 3-Apr-2015.) $)
+  oteq2 $p |- ( A = B -> <. C , A , D >. = <. C , B , D >. ) $=
+    ( wceq cop cotp opeq2 opeq1d df-ot 3eqtr4g ) ABEZCAFZDFCBFZDFCADGCBDGLMNDAB
+    CHICADJCBDJK $.
+
+  $( Equality theorem for ordered triples.  (Contributed by NM, 3-Apr-2015.) $)
+  oteq3 $p |- ( A = B -> <. C , D , A >. = <. C , D , B >. ) $=
+    ( wceq cop cotp opeq2 df-ot 3eqtr4g ) ABECDFZAFKBFCDAGCDBGABKHCDAICDBIJ $.
+
+  ${
+    oteq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for ordered triples.  (Contributed by Mario Carneiro,
+       11-Jan-2017.) $)
+    oteq1d $p |- ( ph -> <. A , C , D >. = <. B , C , D >. ) $=
+      ( wceq cotp oteq1 syl ) ABCGBDEHCDEHGFBCDEIJ $.
+
+    $( Equality deduction for ordered triples.  (Contributed by Mario Carneiro,
+       11-Jan-2017.) $)
+    oteq2d $p |- ( ph -> <. C , A , D >. = <. C , B , D >. ) $=
+      ( wceq cotp oteq2 syl ) ABCGDBEHDCEHGFBCDEIJ $.
+
+    $( Equality deduction for ordered triples.  (Contributed by Mario Carneiro,
+       11-Jan-2017.) $)
+    oteq3d $p |- ( ph -> <. C , D , A >. = <. C , D , B >. ) $=
+      ( wceq cotp oteq3 syl ) ABCGDEBHDECHGFBCDEIJ $.
+
+    oteq123d.2 $e |- ( ph -> C = D ) $.
+    oteq123d.3 $e |- ( ph -> E = F ) $.
+    $( Equality deduction for ordered triples.  (Contributed by Mario Carneiro,
+       11-Jan-2017.) $)
+    oteq123d $p |- ( ph -> <. A , C , E >. = <. B , D , F >. ) $=
+      ( cotp oteq1d oteq2d oteq3d 3eqtrd ) ABDFKCDFKCEFKCEGKABCDFHLADECFIMAFGCE
+      JNO $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d y x $.
+    nfop.1 $e |- F/_ x A $.
+    nfop.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for ordered pairs.  (Contributed by
+       NM, 14-Nov-1995.) $)
+    nfop $p |- F/_ x <. A , B >. $=
+      ( vy cop cvv wcel cv csn cpr w3a cab df-op nfel1 nfsn nfpr nfcri nf3an
+      nfab nfcxfr ) ABCGBHIZCHIZFJBKZBCLZLZIZMZFNFBCOUIAFUCUDUHAABHDPACHEPAFUGA
+      UEUFABDQABCDERRSTUAUB $.
+  $}
+
+  ${
+    $d z B $.  $d z A $.  $d x z $.
+    nfopd.2 $e |- ( ph -> F/_ x A ) $.
+    nfopd.3 $e |- ( ph -> F/_ x B ) $.
+    $( Deduction version of bound-variable hypothesis builder ~ nfop .  This
+       shows how the deduction version of a not-free theorem such as ~ nfop can
+       be created from the corresponding not-free inference theorem.
+       (Contributed by NM, 4-Feb-2008.) $)
+    nfopd $p |- ( ph -> F/_ x <. A , B >. ) $=
+      ( vz cv wcel wal cab cop wnfc nfaba1 nfop wb wa nfnfc1 wceq abidnf adantr
+      nfan adantl opeq12d nfceqdf syl2anc mpbii ) ABGHZCIZBJGKZUHDIZBJGKZLZMZBC
+      DLZMZBUJULUIBGNUKBGNOABCMZBDMZUNUPPEFUQURQZBUMUOUQURBBCRBDRUBUSUJCULDUQUJ
+      CSURBGCTUAURULDSUQBGDTUCUDUEUFUG $.
+  $}
+
+  ${
+    opid.1 $e |- A e. _V $.
+    $( The ordered pair ` <. A , A >. ` in Kuratowski's representation.
+       (Contributed by FL, 28-Dec-2011.) $)
+    opid $p |- <. A , A >. = { { A } } $=
+      ( csn cpr cop dfsn2 eqcomi preq2i dfop 3eqtr4i ) ACZAADZDKKDAAEKCLKKKLAFG
+      HAABBIKFJ $.
+  $}
+
+  ${
+    $d B x $.  $d ps x $.
+    ralunsn.1 $e |- ( x = B -> ( ph <-> ps ) ) $.
+    $( Restricted quantification over the union of a set and a singleton, using
+       implicit substitution.  (Contributed by Paul Chapman, 17-Nov-2012.)
+       (Revised by Mario Carneiro, 23-Apr-2015.) $)
+    ralunsn $p |- ( B e. C -> ( A. x e. ( A u. { B } ) ph <->
+                                ( A. x e. A ph /\ ps ) ) ) $=
+      ( csn cun wral wa wcel ralunb ralsng anbi2d syl5bb ) ACDEHZIJACDJZACQJZKE
+      FLZRBKACDQMTSBRABCEFGNOP $.
+  $}
+
+  ${
+    $d A x $.  $d B x y $.  $d C x $.  $d ch x $.  $d ps y $.  $d th x $.
+    2ralunsn.1 $e |- ( x = B -> ( ph <-> ch ) ) $.
+    2ralunsn.2 $e |- ( y = B -> ( ph <-> ps ) ) $.
+    2ralunsn.3 $e |- ( x = B -> ( ps <-> th ) ) $.
+    $( Double restricted quantification over the union of a set and a
+       singleton, using implicit substitution.  (Contributed by Paul Chapman,
+       17-Nov-2012.) $)
+    2ralunsn $p |- ( B e. C ->
+                     ( A. x e. ( A u. { B } ) A. y e. ( A u. { B } ) ph <->
+                       ( ( A. x e. A A. y e. A ph /\ A. x e. A ps ) /\
+                         ( A. y e. A ch /\ th ) ) ) ) $=
+      ( wcel csn cun wral wa ralunsn ralbidv cv wceq r19.26 anbi1i syl6bb bitrd
+      anbi12d ) HIMZAFGHNOZPZEUHPAFGPZBQZEUHPZUJEGPBEGPQZCFGPZDQZQZUGUIUKEUHABF
+      GHIKRSUGULUKEGPZUOQUPUKUOEGHIETHUAZUJUNBDURACFGJSLUFRUQUMUOUJBEGUBUCUDUE
+      $.
+  $}
+
+  ${
+    $d A x $.  $d B x y $.
+    $( Expansion of an ordered pair when either member is a proper class.
+       (Contributed by Mario Carneiro, 26-Apr-2015.) $)
+    opprc $p |- ( -. ( A e. _V /\ B e. _V ) -> <. A , B >. = (/) ) $=
+      ( vx cvv wcel wa wn cop cv csn cpr w3a cab df-op wal 3simpa con3i
+      c0 wceq alrimiv abeq0 sylibr syl5eq ) ADEZBDEZFZGZABHUDUECIAJABKK
+      EZLZCMZRCABNUGUIGZCOUJRSUGUKCUIUFUDUEUHPQTUICUAUBUC $.
+  $}
+
+  $( Expansion of an ordered pair when the first member is a proper class.  See
+     also ~ opprc .  (Contributed by NM, 10-Apr-2004.)  (Revised by Mario
+     Carneiro, 26-Apr-2015.) $)
+  opprc1 $p |- ( -. A e. _V -> <. A , B >. = (/) ) $=
+    ( cvv wcel wn wa cop c0 wceq simpl con3i opprc syl ) ACDZENBCDZFZEABGHIPNNO
+    JKABLM $.
+
+  $( Expansion of an ordered pair when the second member is a proper class.
+     See also ~ opprc .  (Contributed by NM, 15-Nov-1994.)  (Revised by Mario
+     Carneiro, 26-Apr-2015.) $)
+  opprc2 $p |- ( -. B e. _V -> <. A , B >. = (/) ) $=
+    ( cvv wcel wn wa cop c0 wceq simpr con3i opprc syl ) BCDZEACDZNFZEABGHIPNON
+    JKABLM $.
+
+  ${
+    $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d C y $.
+    $( If an ordered pair has an element, then its arguments are sets.
+       (Contributed by Mario Carneiro, 26-Apr-2015.) $)
+    oprcl $p |- ( C e. <. A , B >. -> ( A e. _V /\ B e. _V ) ) $=
+      ( vy vx cop wcel cv wex cvv wa elex2 wsb csn cpr w3a df-op eleq2i df-clab
+      cab bitri 3simpa sbimi sylbi nfv sbf sylib exlimiv syl ) CABFZGDHZUJGZDIA
+      JGZBJGZKZDCUJLULUODULUOEDMZUOULUMUNEHANABOOGZPZEDMZUPULUKURETZGUSUJUTUKEA
+      BQRURDESUAURUOEDUMUNUQUBUCUDUOEDUOEUEUFUGUHUI $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( The power set of a singleton.  (Contributed by Jim Kingdon,
+       12-Aug-2018.) $)
+    pwsnss $p |- { (/) , { A } } C_ ~P { A } $=
+      ( vx cv c0 wceq csn wo cab wss cpr cpw sssnr ss2abi dfpr2 3sstr4i
+      df-pw ) BCZDEQAFZEGZBHQRIZBHDRJRKSTBQALMBDRNBRPO $.
+
+    ${
+      $d x y $.
+      $( Compute the power set of the power set of the empty set.  (See ~ pw0
+         for the power set of the empty set.)  Theorem 90 of [Suppes] p. 48
+         (but with subset in place of equality).  (Contributed by Jim Kingdon,
+         12-Aug-2018.) $)
+      pwpw0ss $p |- { (/) , { (/) } } C_ ~P { (/) } $=
+        ( c0 pwsnss ) AB $.
+    $}
+
+    $( The power set of an unordered pair.  (Contributed by Jim Kingdon,
+       13-Aug-2018.) $)
+    pwprss $p |- ( { (/) , { A } } u. { { B } , { A , B } } ) C_ ~P { A , B } $=
+      ( vx c0 csn cpr cun cpw cv wcel wss wceq vex elpr orbi12i ssprr
+      wo sylbi elun elpw 3imtr4i ssriv ) CDAEZFZBEZABFZFZGZUFHZCIZUDJ
+      ZUJUGJZQZUJUFKZUJUHJUJUIJUMUJDLUJUCLQZUJUELUJUFLQZQUNUKUOULUPUJ
+      DUCCMZNUJUEUFUQNOUJABPRUJUDUGSUJUFUQTUAUB $.
+
+    $( The power set of an unordered triple.  (Contributed by Jim Kingdon,
+       13-Aug-2018.) $)
+    pwtpss $p |-
+        ( ( { (/) , { A } } u. { { B } , { A , B } } ) u.
+          ( { { C } , { A , C } } u. { { B , C } , { A , B , C } } ) )
+        C_ ~P { A , B , C } $=
+      ( vx c0 csn cpr cun ctp cpw cv wceq wo wcel sstpr elun elpr orbi12i bitri
+      wss vex elpw 3imtr4i ssriv ) DEAFZGZBFZABGZGZHZCFZACGZGZBCGZABCIZGZHZHZUO
+      JZDKZELUTUELMZUTUGLUTUHLMZMZUTUKLUTULLMZUTUNLUTUOLMZMZMZUTUOTUTURNZUTUSNU
+      TABCOVHUTUJNZUTUQNZMVGUTUJUQPVIVCVJVFVIUTUFNZUTUINZMVCUTUFUIPVKVAVLVBUTEU
+      EDUAZQUTUGUHVMQRSVJUTUMNZUTUPNZMVFUTUMUPPVNVDVOVEUTUKULVMQUTUNUOVMQRSRSUT
+      UOVMUBUCUD $.
+  $}
+
+  ${
+    $( Compute the power set of the power set of the power set of the empty
+       set.  (See also ~ pw0 and ~ pwpw0ss .)  (Contributed by Jim Kingdon,
+       13-Aug-2018.) $)
+    pwpwpw0ss $p |-
+        ( { (/) , { (/) } } u. { { { (/) } } , { (/) , { (/) } } } )
+        C_ ~P { (/) , { (/) } } $=
+      ( c0 csn pwprss ) AABC $.
+  $}
+
+  ${
+
+    $( The power class of the universe is the universe.  Exercise 4.12(d) of
+       [Mendelson] p. 235.  (Contributed by NM, 14-Sep-2003.) $)
+    pwv $p |- ~P _V = _V $=
+      ( vx cvv cpw cv wcel wss ssv vex elpw mpbir 2th eqriv ) ABCZBADZMEZNBEONB
+      FNGNBAHZIJPKL $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                       The union of a class
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare class union symbol. $)
+  $c U. $. $( Big cup $)
+
+  $( Extend class notation to include the union of a class (read:  'union
+     ` A ` ') $)
+  cuni $a class U. A $.
+
+  ${
+    $d x y A $.
+    $( Define the union of a class i.e. the collection of all members of the
+       members of the class.  Definition 5.5 of [TakeutiZaring] p. 16.  For
+       example, { { 1 , 3 } , { 1 , 8 } } = { 1 , 3 , 8 } .  This is similar to
+       the union of two classes ~ df-un .  (Contributed by NM, 23-Aug-1993.) $)
+    df-uni $a |- U. A = { x | E. y ( x e. y /\ y e. A ) } $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Alternate definition of class union.  (Contributed by NM,
+       28-Jun-1998.) $)
+    dfuni2 $p |- U. A = { x | E. y e. A x e. y } $=
+      ( cuni cv wcel wa wex cab wrex df-uni exancom df-rex bitr4i abbii eqtri )
+      CDAEBEZFZQCFZGBHZAIRBCJZAIABCKTUAATSRGBHUARSBLRBCMNOP $.
+  $}
+
+  ${
+    $d x A y $.  $d x B y $.
+    $( Membership in class union.  (Contributed by NM, 22-May-1994.) $)
+    eluni $p |- ( A e. U. B <-> E. x ( A e. x /\ x e. B ) ) $=
+      ( vy cuni wcel cvv cv wa wex elex adantr exlimiv wceq eleq1 anbi1d exbidv
+      df-uni elab2g pm5.21nii ) BCEZFBGFZBAHZFZUCCFZIZAJZBUAKUFUBAUDUBUEBUCKLMD
+      HZUCFZUEIZAJUGDBUAGUHBNZUJUFAUKUIUDUEUHBUCOPQDACRST $.
+
+    $( Membership in class union.  Restricted quantifier version.  (Contributed
+       by NM, 31-Aug-1999.) $)
+    eluni2 $p |- ( A e. U. B <-> E. x e. B A e. x ) $=
+      ( cv wcel wa wex cuni wrex exancom eluni df-rex 3bitr4i ) BADZEZNCEZFAGPO
+      FAGBCHEOACIOPAJABCKOACLM $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Membership in class union.  (Contributed by NM, 24-Mar-1995.) $)
+    elunii $p |- ( ( A e. B /\ B e. C ) -> A e. U. C ) $=
+      ( vx wcel wa cv cuni wceq eleq2 eleq1 anbi12d spcegv anabsi7 eluni sylibr
+      wex ) ABEZBCEZFZADGZEZUACEZFZDQZACHERSUEUDTDBCUABIUBRUCSUABAJUABCKLMNDACO
+      P $.
+  $}
+
+  ${
+    $d y z A $.  $d x y z $.
+    nfuni.1 $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for union.  (Contributed by NM,
+       30-Dec-1996.)  (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
+    nfuni $p |- F/_ x U. A $=
+      ( vy vz cuni wel wrex cab dfuni2 nfv nfrexxy nfab nfcxfr ) ABFDEGZEBHZDIDEB
+      JPADOAEBCOAKLMN $.
+  $}
+
+  ${
+    $d y z A $.  $d x y z $.  $d y z ph $.
+    nfunid.3 $e |- ( ph -> F/_ x A ) $.
+    $( Deduction version of ~ nfuni .  (Contributed by NM, 18-Feb-2013.) $)
+    nfunid $p |- ( ph -> F/_ x U. A ) $=
+      ( vy vz cuni wel wrex cab dfuni2 nfv nfvd nfrexdxy nfabd nfcxfrd ) ABCGEFHZ
+      FCIZEJEFCKARBEAELAQBFCAFLDAQBMNOP $.
+  $}
+
+  ${
+    $d A y z $.  $d B y z $.  $d V y z $.  $d x y z $.
+    $( Distribute proper substitution through the union of a class.
+       (Contributed by Alan Sare, 10-Nov-2012.) $)
+    csbunig $p |- ( A e. V -> [_ A / x ]_ U. B = U. [_ A / x ]_ B ) $=
+      ( vz vy wcel cv wa wex cab csb cuni wsbc csbabg sbcexg sbcang sbcg df-uni
+      bitrd sbcel2g anbi12d exbidv abbidv eqtrd csbeq2i 3eqtr4g ) BDGZABEHFHZGZ
+      UICGZIZFJZEKZLZUJUIABCLZGZIZFJZEKZABCMZLUPMUHUOUMABNZEKUTUMAEBDOUHVBUSEUH
+      VBULABNZFJUSULFABDPUHVCURFUHVCUJABNZUKABNZIURUJUKABDQUHVDUJVEUQUJABDRABUI
+      CDUAUBTUCTUDUEABVAUNEFCSUFEFUPSUG $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Equality theorem for class union.  Exercise 15 of [TakeutiZaring]
+       p. 18.  (Contributed by NM, 10-Aug-1993.)  (Proof shortened by Andrew
+       Salmon, 29-Jun-2011.) $)
+    unieq $p |- ( A = B -> U. A = U. B ) $=
+      ( vy vx wceq wel wrex cab cuni rexeq abbidv dfuni2 3eqtr4g ) ABEZCDFZDAGZ
+      CHODBGZCHAIBINPQCODABJKCDALCDBLM $.
+  $}
+
+  ${
+    unieqi.1 $e |- A = B $.
+    $( Inference of equality of two class unions.  (Contributed by NM,
+       30-Aug-1993.) $)
+    unieqi $p |- U. A = U. B $=
+      ( wceq cuni unieq ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    unieqd.1 $e |- ( ph -> A = B ) $.
+    $( Deduction of equality of two class unions.  (Contributed by NM,
+       21-Apr-1995.) $)
+    unieqd $p |- ( ph -> U. A = U. B ) $=
+      ( wceq cuni unieq syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
+    $d x A y $.  $d ph y $.
+    $( Membership in union of a class abstraction.  (Contributed by NM,
+       11-Aug-1994.)  (Revised by Mario Carneiro, 14-Nov-2016.) $)
+    eluniab $p |- ( A e. U. { x | ph } <-> E. x ( A e. x /\ ph ) ) $=
+      ( vy cab cuni wcel cv wa wex eluni nfv nfsab1 nfan weq eleq2 eleq1 syl6bb
+      abid anbi12d cbvex bitri ) CABEZFGCDHZGZUDUCGZIZDJCBHZGZAIZBJDCUCKUGUJDBU
+      EUFBUEBLABDMNUJDLDBOZUEUIUFAUDUHCPUKUFUHUCGAUDUHUCQABSRTUAUB $.
+
+    $( Membership in union of a class abstraction.  (Contributed by NM,
+       4-Oct-2006.) $)
+    elunirab $p |- ( A e. U. { x e. B | ph } <->
+                   E. x e. B ( A e. x /\ ph ) ) $=
+      ( cv wcel cab cuni wex crab wrex eluniab df-rab unieqi eleq2i df-rex an12
+      wa exbii bitri 3bitr4i ) CBEZDFZARZBGZHZFCUBFZUDRZBIZCABDJZHZFUGARZBDKZUD
+      BCLUKUFCUJUEABDMNOUMUCULRZBIUIULBDPUNUHBUCUGAQSTUA $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    unipr.1 $e |- A e. _V $.
+    unipr.2 $e |- B e. _V $.
+    $( The union of a pair is the union of its members.  Proposition 5.7 of
+       [TakeutiZaring] p. 16.  (Contributed by NM, 23-Aug-1993.) $)
+    unipr $p |- U. { A , B } = ( A u. B ) $=
+      ( vx vy cv wcel wo cab cpr wa wex cun cuni wceq 19.43 bitri clel3 exancom
+      vex elpr anbi2i andi exbii orbi12i 3bitr4ri abbii df-un df-uni 3eqtr4ri )
+      EGZAHZULBHZIZEJULFGZHZUPABKZHZLZFMZEJABNUROUOVAEUQUPAPZLZUQUPBPZLZIZFMVCF
+      MZVEFMZIVAUOVCVEFQUTVFFUTUQVBVDIZLVFUSVIUQUPABFUAUBUCUQVBVDUDRUEUMVGUNVHU
+      MVBUQLFMVGFULACSVBUQFTRUNVDUQLFMVHFULBDSVDUQFTRUFUGUHEABUIEFURUJUK $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.
+    $( The union of a pair is the union of its members.  Proposition 5.7 of
+       [TakeutiZaring] p. 16.  (Contributed by NM, 25-Aug-2006.) $)
+    uniprg $p |- ( ( A e. V /\ B e. W ) -> U. { A , B } = ( A u. B ) ) $=
+      ( vx vy cv cpr cuni cun wceq preq1 unieqd uneq1 eqeq12d preq2 uneq2 unipr
+      vex vtocl2g ) EGZFGZHZIZUAUBJZKAUBHZIZAUBJZKABHZIZABJZKEFABCDUAAKZUDUGUEU
+      HULUCUFUAAUBLMUAAUBNOUBBKZUGUJUHUKUMUFUIUBBAPMUBBAQOUAUBESFSRT $.
+  $}
+
+  ${
+    unisn.1 $e |- A e. _V $.
+    $( A set equals the union of its singleton.  Theorem 8.2 of [Quine] p. 53.
+       (Contributed by NM, 30-Aug-1993.) $)
+    unisn $p |- U. { A } = A $=
+      ( csn cuni cpr cun dfsn2 unieqi unipr unidm 3eqtri ) ACZDAAEZDAAFALMAGHAA
+      BBIAJK $.
+  $}
+
+  ${
+    $d x A $.
+    $( A set equals the union of its singleton.  Theorem 8.2 of [Quine] p. 53.
+       (Contributed by NM, 13-Aug-2002.) $)
+    unisng $p |- ( A e. V -> U. { A } = A ) $=
+      ( vx cv csn cuni wceq sneq unieqd id eqeq12d vex unisn vtoclg ) CDZEZFZOG
+      AEZFZAGCABOAGZQSOATPROAHITJKOCLMN $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    $( An alternative statement of the effective freeness of a class ` A ` ,
+       when it is a set.  (Contributed by Mario Carneiro, 14-Oct-2016.) $)
+    dfnfc2 $p |- ( A. x A e. V -> ( F/_ x A <-> A. y F/ x y = A ) ) $=
+      ( wcel wal wnfc cv wceq wnf nfcvd id nfeqd alrimiv wa csn cuni simpr elsn
+      df-nfc nfbii albii bitri sylibr nfunid nfa1 nfnf1 nfal nfan unisng adantr
+      sps nfceqdf mpbid ex impbid2 ) CDEZAFZACGZBHZCIZAJZBFZUSVBBUSAUTCUSAUTKUS
+      LMNURVCUSURVCOZACPZQZGUSVDAVEVDVCAVEGZURVCRVGUTVEEZAJZBFVCABVETVIVBBVHVAA
+      BCSUAUBUCUDUEVDAVFCURVCAUQAUFVBABVAAUGUHUIURVFCIZVCUQVJACDUJULUKUMUNUOUP
+      $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The class union of the union of two classes.  Theorem 8.3 of [Quine]
+       p. 53.  (Contributed by NM, 20-Aug-1993.) $)
+    uniun $p |- U. ( A u. B ) = ( U. A u. U. B ) $=
+      ( vx vy cun cuni cv wcel wa wo 19.43 elun anbi2i andi bitri exbii orbi12i
+      wex eluni 3bitr4i eqriv ) CABEZFZAFZBFZEZCGZDGZHZUHUBHZIZDRZUGUDHZUGUEHZJ
+      ZUGUCHUGUFHUIUHAHZIZUIUHBHZIZJZDRUQDRZUSDRZJULUOUQUSDKUKUTDUKUIUPURJZIUTU
+      JVCUIUHABLMUIUPURNOPUMVAUNVBDUGASDUGBSQTDUGUBSUGUDUELTUA $.
+
+    $( The class union of the intersection of two classes.  Exercise 4.12(n) of
+       [Mendelson] p. 235.  (Contributed by NM, 4-Dec-2003.)  (Proof shortened
+       by Andrew Salmon, 29-Jun-2011.) $)
+    uniin $p |- U. ( A i^i B ) C_ ( U. A i^i U. B ) $=
+      ( vx vy cin cuni cv wcel wex 19.40 elin anbi2i anandi bitri exbii anbi12i
+      wa eluni 3imtr4i ssriv ) CABEZFZAFZBFZEZCGZDGZHZUGUAHZQZDIZUFUCHZUFUDHZQZ
+      UFUBHUFUEHUHUGAHZQZUHUGBHZQZQZDIUPDIZURDIZQUKUNUPURDJUJUSDUJUHUOUQQZQUSUI
+      VBUHUGABKLUHUOUQMNOULUTUMVADUFARDUFBRPSDUFUARUFUCUDKST $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( Subclass relationship for class union.  Theorem 61 of [Suppes] p. 39.
+       (Contributed by NM, 22-Mar-1998.)  (Proof shortened by Andrew Salmon,
+       29-Jun-2011.) $)
+    uniss $p |- ( A C_ B -> U. A C_ U. B ) $=
+      ( vx vy wss cuni cv wcel wa wex ssel anim2d eximdv eluni 3imtr4g ssrdv )
+      ABEZCAFZBFZQCGZDGZHZUAAHZIZDJUBUABHZIZDJTRHTSHQUDUFDQUCUEUBABUAKLMDTANDTB
+      NOP $.
+
+    $( Subclass relationship for class union.  (Contributed by NM,
+       24-May-1994.)  (Proof shortened by Andrew Salmon, 29-Jun-2011.) $)
+    ssuni $p |- ( ( A C_ B /\ B e. C ) -> A C_ U. C ) $=
+      ( vy vx wcel wss cuni cv wi wal eleq2 imbi1d elunii expcom vtoclga imim2d
+      wceq alimdv dfss2 3imtr4g impcom ) BCFZABGZACHZGZUCDIZAFZUGBFZJZDKUHUGUEF
+      ZJZDKUDUFUCUJULDUCUIUKUHUGEIZFZUKJUIUKJEBCUMBRUNUIUKUMBUGLMUNUMCFUKUGUMCN
+      OPQSDABTDAUETUAUB $.
+  $}
+
+  ${
+    unissi.1 $e |- A C_ B $.
+    $( Subclass relationship for subclass union.  Inference form of ~ uniss .
+       (Contributed by David Moews, 1-May-2017.) $)
+    unissi $p |- U. A C_ U. B $=
+      ( wss cuni uniss ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    unissd.1 $e |- ( ph -> A C_ B ) $.
+    $( Subclass relationship for subclass union.  Deduction form of ~ uniss .
+       (Contributed by David Moews, 1-May-2017.) $)
+    unissd $p |- ( ph -> U. A C_ U. B ) $=
+      ( wss cuni uniss syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
+    $d x y A $.
+    $( The union of a set is empty iff the set is included in the singleton of
+       the empty set.  (Contributed by NM, 12-Sep-2004.) $)
+    uni0b $p |- ( U. A = (/) <-> A C_ { (/) } ) $=
+      ( vx vy cv c0 wceq wral wcel wn wal csn wss cuni eq0 ralbii ralcom4 bitri
+      dfss3 elsn albii wrex eluni2 notbii ralnex 3bitr4i 3bitr4ri ) BDZEFZBAGZC
+      DZUGHZIZBAGZCJZAEKZLZAMZEFZUIULCJZBAGUNUHUSBACUGNOULBCAPQUPUGUOHZBAGUIBAU
+      ORUTUHBABESOQUJUQHZIZCJUKBAUAZIZCJURUNVBVDCVAVCBUJAUBUCTCUQNUMVDCUKBAUDTU
+      EUF $.
+
+    $( The union of a set is empty iff all of its members are empty.
+       (Contributed by NM, 16-Aug-2006.) $)
+    uni0c $p |- ( U. A = (/) <-> A. x e. A x = (/) ) $=
+      ( cuni c0 wceq csn wss cv wcel wral uni0b dfss3 elsn ralbii 3bitri ) BCDE
+      BDFZGAHZPIZABJQDEZABJBKABPLRSABADMNO $.
+  $}
+
+  $( The union of the empty set is the empty set.  Theorem 8.7 of [Quine]
+     p. 54.  (Reproved without relying on ax-nul by Eric Schmidt.)
+     (Contributed by NM, 16-Sep-1993.)  (Revised by Eric Schmidt,
+     4-Apr-2007.) $)
+  uni0 $p |- U. (/) = (/) $=
+    ( c0 cuni wceq csn wss 0ss uni0b mpbir ) ABACAADZEIFAGH $.
+
+  $( An element of a class is a subclass of its union.  Theorem 8.6 of [Quine]
+     p. 54.  Also the basis for Proposition 7.20 of [TakeutiZaring] p. 40.
+     (Contributed by NM, 6-Jun-1994.) $)
+  elssuni $p |- ( A e. B -> A C_ U. B ) $=
+    ( wss wcel cuni ssid ssuni mpan ) AACABDABECAFAABGH $.
+
+  $( Condition turning a subclass relationship for union into an equality.
+     (Contributed by NM, 18-Jul-2006.) $)
+  unissel $p |- ( ( U. A C_ B /\ B e. A ) -> U. A = B ) $=
+    ( cuni wss wcel wa simpl elssuni adantl eqssd ) ACZBDZBAEZFKBLMGMBKDLBAHIJ
+    $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Relationship involving membership, subset, and union.  Exercise 5 of
+       [Enderton] p. 26 and its converse.  (Contributed by NM, 20-Sep-2003.) $)
+    unissb $p |- ( U. A C_ B <-> A. x e. A x C_ B ) $=
+      ( vy cv cuni wcel wi wal wss wa wex eluni imbi1i 19.23v albii bitri dfss2
+      wral 3bitr4i bitr4i alcom 19.21v impexp bi2.04 imbi2i df-ral ) DEZBFZGZUH
+      CGZHZDIZAEZBGZUNCJZHZAIZUICJUPABSUMUHUNGZUOKZUKHZAIZDIZURULVBDULUTALZUKHV
+      BUJVDUKAUHBMNUTUKAOUAPVCVADIZAIURVADAUBVEUQAUOUSUKHZHZDIUOVFDIZHVEUQUOVFD
+      UCVAVGDVAUSUOUKHHVGUSUOUKUDUSUOUKUEQPUPVHUODUNCRUFTPQQDUICRUPABUGT $.
+  $}
+
+  ${
+    $d x A $.  $d x y B $.
+    $( A subclass condition on the members of two classes that implies a
+       subclass relation on their unions.  Proposition 8.6 of [TakeutiZaring]
+       p. 59.  (Contributed by NM, 22-Mar-2004.) $)
+    uniss2 $p |- ( A. x e. A E. y e. B x C_ y -> U. A C_ U. B ) $=
+      ( cv wss wrex wral cuni wcel ssuni expcom rexlimiv ralimi unissb sylibr )
+      AEZBEZFZBDGZACHQDIZFZACHCIUAFTUBACSUBBDSRDJUBQRDKLMNACUAOP $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( If the difference ` A \ B ` contains the largest members of ` A ` , then
+       the union of the difference is the union of ` A ` .  (Contributed by NM,
+       22-Mar-2004.) $)
+    unidif $p |- ( A. x e. A E. y e. ( A \ B ) x C_ y ->
+               U. ( A \ B ) = U. A ) $=
+      ( cv wss cdif wrex wral cuni wceq uniss2 difss unissi jctil eqss sylibr
+      wa ) AEBEFBCDGZHACIZSJZCJZFZUBUAFZRUAUBKTUDUCABCSLSCCDMNOUAUBPQ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Relationship implying union.  (Contributed by NM, 10-Nov-1999.) $)
+    ssunieq $p |- ( ( A e. B /\ A. x e. B x C_ A ) -> A = U. B ) $=
+      ( wcel cv wss wral cuni wceq elssuni unissb biimpri anim12i eqss sylibr
+      wa ) BCDZAEBFACGZPBCHZFZSBFZPBSIQTRUABCJUARACBKLMBSNO $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Any member of a class is the largest of those members that it includes.
+       (Contributed by NM, 13-Aug-2002.) $)
+    unimax $p |- ( A e. B -> U. { x e. B | x C_ A } = A ) $=
+      ( vy wcel cv wss crab wral cuni wceq ssid sseq1 elrab3 elrab simprbi rgen
+      mpbiri wa ssunieq eqcomd sylancl ) BCEZBAFZBGZACHZEZDFZBGZDUFIZUFJZBKUCUG
+      BBGZBLUEULABCUDBBMNRUIDUFUHUFEUHCEUIUEUIAUHCUDUHBMOPQUGUJSBUKDBUFTUAUB $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        The intersection of a class
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare class intersection symbol. $)
+  $c |^| $. $( Big cap $)
+
+  $( Extend class notation to include the intersection of a class (read:
+     'intersect ` A ` '). $)
+  cint $a class |^| A $.
+
+  ${
+    $d x y A $.
+    $( Define the intersection of a class.  Definition 7.35 of [TakeutiZaring]
+       p. 44.  For example, ` |^| ` { { 1 , 3 } , { 1 , 8 } } = { 1 } .
+       Compare this with the intersection of two classes, ~ df-in .
+       (Contributed by NM, 18-Aug-1993.) $)
+    df-int $a |- |^| A = { x | A. y ( y e. A -> x e. y ) } $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Alternate definition of class intersection.  (Contributed by NM,
+       28-Jun-1998.) $)
+    dfint2 $p |- |^| A = { x | A. y e. A x e. y } $=
+      ( cint cv wcel wi wal cab wral df-int df-ral abbii eqtr4i ) CDBEZCFAEOFZG
+      BHZAIPBCJZAIABCKRQAPBCLMN $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Equality law for intersection.  (Contributed by NM, 13-Sep-1999.) $)
+    inteq $p |- ( A = B -> |^| A = |^| B ) $=
+      ( vx vy wceq wel wral cab cint raleq abbidv dfint2 3eqtr4g ) ABEZCDFZDAGZ
+      CHODBGZCHAIBINPQCODABJKCDALCDBLM $.
+  $}
+
+  ${
+    inteqi.1 $e |- A = B $.
+    $( Equality inference for class intersection.  (Contributed by NM,
+       2-Sep-2003.) $)
+    inteqi $p |- |^| A = |^| B $=
+      ( wceq cint inteq ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    inteqd.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for class intersection.  (Contributed by NM,
+       2-Sep-2003.) $)
+    inteqd $p |- ( ph -> |^| A = |^| B ) $=
+      ( wceq cint inteq syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
+    $d x A y $.  $d x B y $.
+    elint.1 $e |- A e. _V $.
+    $( Membership in class intersection.  (Contributed by NM, 21-May-1994.) $)
+    elint $p |- ( A e. |^| B <-> A. x ( x e. B -> A e. x ) ) $=
+      ( vy cv wcel wi wal cint wceq eleq1 imbi2d albidv df-int elab2 ) AFZCGZEF
+      ZQGZHZAIRBQGZHZAIEBCJDSBKZUAUCAUDTUBRSBQLMNEACOP $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    elint2.1 $e |- A e. _V $.
+    $( Membership in class intersection.  (Contributed by NM, 14-Oct-1999.) $)
+    elint2 $p |- ( A e. |^| B <-> A. x e. B A e. x ) $=
+      ( cint wcel cv wi wal wral elint df-ral bitr4i ) BCEFAGZCFBNFZHAIOACJABCD
+      KOACLM $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Membership in class intersection, with the sethood requirement expressed
+       as an antecedent.  (Contributed by NM, 20-Nov-2003.) $)
+    elintg $p |- ( A e. V -> ( A e. |^| B <-> A. x e. B A e. x ) ) $=
+      ( vy cv cint wcel wral eleq1 wceq ralbidv vex elint2 vtoclbg ) EFZCGZHPAF
+      ZHZACIBQHBRHZACIEBDPBQJPBKSTACPBRJLAPCEMNO $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( Membership in class intersection.  (Contributed by NM, 14-Oct-1999.)
+       (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
+    elinti $p |- ( A e. |^| B -> ( C e. B -> A e. C ) ) $=
+      ( vx cint wcel wi cv wral elintg eleq2 rspccv syl6bi pm2.43i ) ABEZFZCBFA
+      CFZGZPPADHZFZDBIRDABOJTQDCBSCAKLMN $.
+  $}
+
+  ${
+    $d y z A $.  $d x y z $.
+    nfint.1 $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for intersection.  (Contributed by NM,
+       2-Feb-1997.)  (Proof shortened by Andrew Salmon, 12-Aug-2011.) $)
+    nfint $p |- F/_ x |^| A $=
+      ( vy vz cint wel wral cab dfint2 nfv nfralxy nfab nfcxfr ) ABFDEGZEBHZDIDEB
+      JPADOAEBCOAKLMN $.
+  $}
+
+  ${
+    $d A x y $.  $d ph y $.
+    inteqab.1 $e |- A e. _V $.
+    $( Membership in the intersection of a class abstraction.  (Contributed by
+       NM, 30-Aug-1993.) $)
+    elintab $p |- ( A e. |^| { x | ph } <-> A. x ( ph -> A e. x ) ) $=
+      ( vy cab cint wcel cv wi wal elint nfsab1 nfv nfim weq eleq1 syl6bb eleq2
+      abid imbi12d cbval bitri ) CABFZGHEIZUDHZCUEHZJZEKACBIZHZJZBKECUDDLUHUKEB
+      UFUGBABEMUGBNOUKENEBPZUFAUGUJULUFUIUDHAUEUIUDQABTRUEUICSUAUBUC $.
+
+    $( Membership in the intersection of a class abstraction.  (Contributed by
+       NM, 17-Oct-1999.) $)
+    elintrab $p |- ( A e. |^| { x e. B | ph } <->
+                 A. x e. B ( ph -> A e. x ) ) $=
+      ( cv wcel wa cab cint wi wal crab wral elintab impexp albii df-rab inteqi
+      bitri eleq2i df-ral 3bitr4i ) CBFZDGZAHZBIZJZGZUEACUDGZKZKZBLZCABDMZJZGUK
+      BDNUIUFUJKZBLUMUFBCEOUPULBUEAUJPQTUOUHCUNUGABDRSUAUKBDUBUC $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d y ph $.
+    $( Membership in the intersection of a class abstraction.  (Contributed by
+       NM, 17-Feb-2007.) $)
+    elintrabg $p |- ( A e. V -> ( A e. |^| { x e. B | ph } <->
+                 A. x e. B ( ph -> A e. x ) ) ) $=
+      ( vy cv crab cint wcel wi wral eleq1 wceq imbi2d ralbidv elintrab vtoclbg
+      vex ) FGZABDHIZJATBGZJZKZBDLCUAJACUBJZKZBDLFCETCUAMTCNZUDUFBDUGUCUEATCUBM
+      OPABTDFSQR $.
+
+    $( The intersection of the empty set is the universal class.  Exercise 2 of
+       [TakeutiZaring] p. 44.  (Contributed by NM, 18-Aug-1993.) $)
+    int0 $p |- |^| (/) = _V $=
+      ( vy vx cv c0 wcel wi wal cab weq cint cvv pm2.21i ax-gen equid 2th abbii
+      noel df-int df-v 3eqtr4i ) ACZDEZBCUAEZFZAGZBHBBIZBHDJKUEUFBUEUFUDAUBUCUA
+      QLMBNOPBADRBST $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y ph $.
+    $( An element of a class includes the intersection of the class.  Exercise
+       4 of [TakeutiZaring] p. 44 (with correction), generalized to classes.
+       (Contributed by NM, 18-Nov-1995.) $)
+    intss1 $p |- ( A e. B -> |^| B C_ A ) $=
+      ( vx vy wcel cint cv wal vex elint wceq eleq1 eleq2 imbi12d spcgv pm2.43a
+      wi syl5bi ssrdv ) ABEZCBFZACGZUAEDGZBEZUBUCEZQZDHZTUBAEZDUBBCIJUGTUHUFTUH
+      QDABUCAKUDTUEUHUCABLUCAUBMNOPRS $.
+
+    $( Subclass of a class intersection.  Theorem 5.11(viii) of [Monk1] p. 52
+       and its converse.  (Contributed by NM, 14-Oct-1999.) $)
+    ssint $p |- ( A C_ |^| B <-> A. x e. B A C_ x ) $=
+      ( vy cint wss cv wcel wral dfss3 vex elint2 ralbii ralcom bitr4i 3bitri )
+      BCEZFDGZQHZDBIRAGZHZACIZDBIZBTFZACIZDBQJSUBDBARCDKLMUCUADBIZACIUEUADABCNU
+      DUFACDBTJMOP $.
+
+    $( Subclass of the intersection of a class abstraction.  (Contributed by
+       NM, 31-Jul-2006.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
+    ssintab $p |- ( A C_ |^| { x | ph } <-> A. x ( ph -> A C_ x ) ) $=
+      ( vy cab cint wss cv wral wi wal ssint sseq2 ralab2 bitri ) CABEZFGCDHZGZ
+      DPIACBHZGZJBKDCPLARTDBQSCMNO $.
+
+    $( Subclass of the least upper bound.  (Contributed by NM, 8-Aug-2000.) $)
+    ssintub $p |- A C_ |^| { x e. B | A C_ x } $=
+      ( vy cv wss crab cint ssint wcel sseq2 elrab simprbi mprgbir ) BBAEZFZACG
+      ZHFBDEZFZDQDBQIRQJRCJSPSARCORBKLMN $.
+
+    $( Subclass of the minimum value of class of supersets.  (Contributed by
+       NM, 10-Aug-2006.) $)
+    ssmin $p |- A C_ |^| { x | ( A C_ x /\ ph ) } $=
+      ( cv wss wa cab cint wi ssintab simpl mpgbir ) CCBDEZAFZBGHENMIBNBCJMAKL
+      $.
+
+    $( Any member of a class is the smallest of those members that include it.
+       (Contributed by NM, 13-Aug-2002.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    intmin $p |- ( A e. B -> |^| { x e. B | A C_ x } = A ) $=
+      ( vy wcel cv wss crab cint wi wral elintrab ssid wceq sseq2 eleq2 imbi12d
+      vex rspcv mpii syl5bi ssrdv ssintub a1i eqssd ) BCEZBAFZGZACHIZBUFDUIBDFZ
+      UIEUHUJUGEZJZACKZUFUJBEZUHAUJCDRLUFUMBBGZUNBMULUOUNJABCUGBNUHUOUKUNUGBBOU
+      GBUJPQSTUAUBBUIGUFABCUCUDUE $.
+
+    $( Intersection of subclasses.  (Contributed by NM, 14-Oct-1999.) $)
+    intss $p |- ( A C_ B -> |^| B C_ |^| A ) $=
+      ( vy vx cv wcel wal cint wss imim1 al2imi vex elint 3imtr4g alrimiv dfss2
+      wi 3imtr4i ) CEZAFZSBFZQZCGZDEZBHZFZUDAHZFZQZDGABIUEUGIUCUIDUCUAUDSFZQZCG
+      TUJQZCGUFUHUBUKULCTUAUJJKCUDBDLZMCUDAUMMNOCABPDUEUGPR $.
+
+    $( The intersection of an inhabited set is a subclass of its union.
+       (Contributed by NM, 29-Jul-2006.) $)
+    intssunim $p |- ( E. x x e. A -> |^| A C_ U. A ) $=
+      ( vy cv wcel wex cint cuni wral wrex r19.2m ex vex elint2 3imtr4g
+      eluni2 ssrdv ) ADZBEAFZCBGZBHZSCDZREZABIZUCABJZUBTEUBUAESUDUEUCAB
+      KLAUBBCMNAUBBPOQ $.
+  $}
+
+  ${
+    $d x A $.
+    $( Subclass of the intersection of a restricted class builder.
+       (Contributed by NM, 30-Jan-2015.) $)
+    ssintrab $p |- ( A C_ |^| { x e. B | ph }
+           <-> A. x e. B ( ph -> A C_ x ) ) $=
+      ( crab cint wss cv wcel wa cab wral df-rab inteqi sseq2i wal impexp albii
+      wi ssintab df-ral 3bitr4i bitri ) CABDEZFZGCBHZDIZAJZBKZFZGZACUFGZSZBDLZU
+      EUJCUDUIABDMNOUHULSZBPUGUMSZBPUKUNUOUPBUGAULQRUHBCTUMBDUAUBUC $.
+  $}
+
+  ${
+    $d x A $.
+    $( Subclass relationship for intersection and union.  (Contributed by Jim
+       Kingdon, 14-Aug-2018.) $)
+    intssuni2m $p |- ( ( A C_ B /\ E. x x e. A ) -> |^| A C_ U. B ) $=
+      ( cv wcel wex wss cint cuni intssunim uniss sylan9ssr ) ADBEAFBCG
+      BHBICIABJBCKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ps $.
+    intminss.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( Under subset ordering, the intersection of a restricted class
+       abstraction is less than or equal to any of its members.  (Contributed
+       by NM, 7-Sep-2013.) $)
+    intminss $p |- ( ( A e. B /\ ps ) -> |^| { x e. B | ph } C_ A ) $=
+      ( wcel wa crab cint wss elrab intss1 sylbir ) DEGBHDACEIZGOJDKABCDEFLDOMN
+      $.
+  $}
+
+  ${
+    $d x A $.
+    intmin2.1 $e |- A e. _V $.
+    $( Any set is the smallest of all sets that include it.  (Contributed by
+       NM, 20-Sep-2003.) $)
+    intmin2 $p |- |^| { x | A C_ x } = A $=
+      ( cv wss cvv crab cint cab rabab inteqi wcel wceq intmin ax-mp eqtr3i ) B
+      ADEZAFGZHZQAIZHBRTQAJKBFLSBMCABFNOP $.
+  $}
+
+  ${
+    $d x A $.  $d x ps $.
+    intmin3.2 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    intmin3.3 $e |- ps $.
+    $( Under subset ordering, the intersection of a class abstraction is less
+       than or equal to any of its members.  (Contributed by NM,
+       3-Jul-2005.) $)
+    intmin3 $p |- ( A e. V -> |^| { x | ph } C_ A ) $=
+      ( wcel cab cint wss elabg mpbiri intss1 syl ) DEHZDACIZHZQJDKPRBGABCDEFLM
+      DQNO $.
+  $}
+
+  ${
+    $d x y A $.  $d y ph $.
+    $( Elimination of a conjunct in a class intersection.  (Contributed by NM,
+       31-Jul-2006.) $)
+    intmin4 $p |- ( A C_ |^| { x | ph } ->
+                  |^| { x | ( A C_ x /\ ph ) } = |^| { x | ph } ) $=
+      ( vy cab cint wss cv wa wcel wi wal wb ssintab simpr impbid2 imbi1d alimi
+      ancr elintab albi syl sylbi vex 3bitr4g eqrdv ) CABEFZGZDCBHZGZAIZBEFZUGU
+      HUKDHZUIJZKZBLZAUNKZBLZUMULJUMUGJUHAUJKZBLZUPURMZABCNUTUOUQMZBLVAUSVBBUSU
+      KAUNUSUKAUJAOAUJSPQRUOUQBUAUBUCUKBUMDUDZTABUMVCTUEUF $.
+  $}
+
+  ${
+    $d x z A $.  $d x z ph $.  $d x y z $.
+    intab.1 $e |- A e. _V $.
+    intab.2 $e |- { x | E. y ( ph /\ x = A ) } e. _V $.
+    $( The intersection of a special case of a class abstraction. ` y ` may be
+       free in ` ph ` and ` A ` , which can be thought of a ` ph ( y ) ` and
+       ` A ( y ) ` .  (Contributed by NM, 28-Jul-2006.)  (Proof shortened by
+       Mario Carneiro, 14-Nov-2016.) $)
+    intab $p |- |^| { x | A. y ( ph -> A e. x ) } =
+                { x | E. y ( ph /\ x = A ) } $=
+      ( vz cv wcel wi wal cab cint wceq wa wex wss ex alrimiv sylibr cvv anbi2d
+      eqeq1 exbidv cbvabv eqeltri nfe1 nfab nfeq2 eleq2 imbi2d albid elab 19.8a
+      wsbc sbc6 df-sbc sylib mpgbir intss1 19.29r simplr pm3.35 adantlr eqeltrd
+      ax-mp exlimiv syl vex elintab abssi eqssi eqtri ) ADBHZIZJZCKZBLZMZAGHZDN
+      ZOZCPZGLZAVNDNZOZCPZBLZVSWDWDVRIZVSWDQWIADWDIZJZCVQWKCKBWDWDWHUAWCWGGBVTV
+      NNZWBWFCWLWAWEAVTVNDUCUBUDUEZFUFVNWDNZVPWKCCVNWDWCCGWBCUGUHUIWNVOWJAVNWDD
+      UJUKULUMAWCGDUOZWJAWAWCJZGKWOAWPGAWAWCWBCUNRSWCGDEUPTWCGDUQURUSWDVRUTVFWC
+      GVSWCVQVTVNIZJZBKVTVSIWCWRBWCVQWQWCVQOWBVPOZCPWQWBVPCVAWSWQCWSVTDVNAWAVPV
+      BAVPVOWAAVOVCVDVEVGVHRSVQBVTGVIVJTVKVLWMVM $.
+  $}
+
+  $( The intersection of a class containing the empty set is empty.
+     (Contributed by NM, 24-Apr-2004.) $)
+  int0el $p |- ( (/) e. A -> |^| A = (/) ) $=
+    ( c0 wcel cint intss1 wss 0ss a1i eqssd ) BACZADZBBAEBKFJKGHI $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The class intersection of the union of two classes.  Theorem 78 of
+       [Suppes] p. 42.  (Contributed by NM, 22-Sep-2002.) $)
+    intun $p |- |^| ( A u. B ) = ( |^| A i^i |^| B ) $=
+      ( vx vy cun cint cin cv wcel wi wal wa 19.26 elun imbi1i jaob bitri elint
+      wo 3bitr4i albii vex anbi12i elin eqriv ) CABEZFZAFZBFZGZDHZUFIZCHZUKIZJZ
+      DKZUMUHIZUMUIIZLZUMUGIUMUJIUKAIZUNJZUKBIZUNJZLZDKVADKZVCDKZLUPUSVAVCDMUOV
+      DDUOUTVBSZUNJVDULVGUNUKABNOUTUNVBPQUAUQVEURVFDUMACUBZRDUMBVHRUCTDUMUFVHRU
+      MUHUIUDTUE $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    intpr.1 $e |- A e. _V $.
+    intpr.2 $e |- B e. _V $.
+    $( The intersection of a pair is the intersection of its members.  Theorem
+       71 of [Suppes] p. 42.  (Contributed by NM, 14-Oct-1999.) $)
+    intpr $p |- |^| { A , B } = ( A i^i B ) $=
+      ( vx vy cpr cint cin cv wcel wi wal wa wceq 19.26 wo vex clel4 3bitr4i
+      elpr imbi1i jaob bitri albii anbi12i elint elin eqriv ) EABGZHZABIZFJZUJK
+      ZEJZUMKZLZFMZUOAKZUOBKZNZUOUKKUOULKUMAOZUPLZUMBOZUPLZNZFMVCFMZVEFMZNURVAV
+      CVEFPUQVFFUQVBVDQZUPLVFUNVIUPUMABFRUAUBVBUPVDUCUDUEUSVGUTVHFUOACSFUOBDSUF
+      TFUOUJERUGUOABUHTUI $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.
+    $( The intersection of a pair is the intersection of its members.  Closed
+       form of ~ intpr .  Theorem 71 of [Suppes] p. 42.  (Contributed by FL,
+       27-Apr-2008.) $)
+    intprg $p |- ( ( A e. V /\ B e. W ) -> |^| { A , B } = ( A i^i B ) ) $=
+      ( vx vy cv cpr cint cin wceq preq1 inteqd ineq1 eqeq12d preq2 ineq2 intpr
+      vex vtocl2g ) EGZFGZHZIZUAUBJZKAUBHZIZAUBJZKABHZIZABJZKEFABCDUAAKZUDUGUEU
+      HULUCUFUAAUBLMUAAUBNOUBBKZUGUJUHUKUMUFUIUBBAPMUBBAQOUAUBESFSRT $.
+  $}
+
+  $( Intersection of a singleton.  (Contributed by Stefan O'Rear,
+     22-Feb-2015.) $)
+  intsng $p |- ( A e. V -> |^| { A } = A ) $=
+    ( wcel csn cint cpr dfsn2 inteqi cin wceq intprg anidms inidm syl6eq syl5eq
+    ) ABCZADZEAAFZEZAQRAGHPSAAIZAPSTJAABBKLAMNO $.
+
+  ${
+    intsn.1 $e |- A e. _V $.
+    $( The intersection of a singleton is its member.  Theorem 70 of [Suppes]
+       p. 41.  (Contributed by NM, 29-Sep-2002.) $)
+    intsn $p |- |^| { A } = A $=
+      ( cvv wcel csn cint wceq intsng ax-mp ) ACDAEFAGBACHI $.
+  $}
+
+  ${
+    $d x y A $.  $d y ph $.
+    $( The union and intersection of a singleton are equal.  See also ~ eusn .
+       (Contributed by Jim Kingdon, 14-Aug-2018.) $)
+    uniintsnr $p |- ( E. x A = { x } -> U. A = |^| A ) $=
+      ( csn wceq cuni cint vex unisn unieq inteq intsn syl6eq 3eqtr4a
+      cv exlimiv ) BANZCZDZBEZBFZDARQEPSTPAGZHBQIRTQFPBQJPUAKLMO $.
+
+    $( The union and the intersection of a class abstraction are equal if there
+       is a unique satisfying value of ` ph ( x ) ` .  (Contributed by Jim
+       Kingdon, 14-Aug-2018.) $)
+    uniintabim $p |- ( E! x ph -> U. { x | ph } = |^| { x | ph } ) $=
+      ( vy weu cab cv csn wceq wex cuni cint euabsn2 uniintsnr sylbi
+      ) ABDABEZCFGHCIOJOKHABCLCOMN $.
+  $}
+
+  ${
+    intunsn.1 $e |- B e. _V $.
+    $( Theorem joining a singleton to an intersection.  (Contributed by NM,
+       29-Sep-2002.) $)
+    intunsn $p |- |^| ( A u. { B } ) = ( |^| A i^i B ) $=
+      ( csn cun cint cin intun intsn ineq2i eqtri ) ABDZEFAFZLFZGMBGALHNBMBCIJK
+      $.
+  $}
+
+  $( Relative intersection of an empty set.  (Contributed by Stefan O'Rear,
+     3-Apr-2015.) $)
+  rint0 $p |- ( X = (/) -> ( A i^i |^| X ) = A ) $=
+    ( c0 wceq cint cin inteq ineq2d cvv int0 ineq2i inv1 eqtri syl6eq ) BCDZABE
+    ZFACEZFZAOPQABCGHRAIFAQIAJKALMN $.
+
+  ${
+    $d B y $.  $d X y $.
+    $( Membership in a restricted intersection.  (Contributed by Stefan O'Rear,
+       3-Apr-2015.) $)
+    elrint $p |- ( X e. ( A i^i |^| B ) <-> ( X e. A /\ A. y e. B X e. y ) ) $=
+      ( cint cin wcel wa cv wral elin elintg pm5.32i bitri ) DBCEZFGDBGZDOGZHPD
+      AIGACJZHDBOKPQRADCBLMN $.
+
+    $( Membership in a restricted intersection.  (Contributed by Stefan O'Rear,
+       3-Apr-2015.) $)
+    elrint2 $p |- ( X e. A -> ( X e. ( A i^i |^| B ) <->
+          A. y e. B X e. y ) ) $=
+      ( cint cin wcel cv wral elrint baib ) DBCEFGDBGDAHGACIABCDJK $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Indexed union and intersection
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c U_ $. $( Underlined big cup. $)
+  $c |^|_ $. $( Underlined big cap. $)
+
+  $( Extend class notation to include indexed union.  Note:  Historically
+     (prior to 21-Oct-2005), set.mm used the notation ` U. x e. A B ` , with
+     the same union symbol as ~ cuni .  While that syntax was unambiguous, it
+     did not allow for LALR parsing of the syntax constructions in set.mm.  The
+     new syntax uses as distinguished symbol ` U_ ` instead of ` U. ` and does
+     allow LALR parsing.  Thanks to Peter Backes for suggesting this change. $)
+  ciun $a class U_ x e. A B $.
+
+  $( Extend class notation to include indexed intersection.  Note:
+     Historically (prior to 21-Oct-2005), set.mm used the notation
+     ` |^| x e. A B ` , with the same intersection symbol as ~ cint .  Although
+     that syntax was unambiguous, it did not allow for LALR parsing of the
+     syntax constructions in set.mm.  The new syntax uses a distinguished
+     symbol ` |^|_ ` instead of ` |^| ` and does allow LALR parsing.  Thanks to
+     Peter Backes for suggesting this change. $)
+  ciin $a class |^|_ x e. A B $.
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( Define indexed union.  Definition indexed union in [Stoll] p. 45.  In
+       most applications, ` A ` is independent of ` x ` (although this is not
+       required by the definition), and ` B ` depends on ` x ` i.e. can be read
+       informally as ` B ( x ) ` .  We call ` x ` the index, ` A ` the index
+       set, and ` B ` the indexed set.  In most books, ` x e. A ` is written as
+       a subscript or underneath a union symbol ` U. ` .  We use a special
+       union symbol ` U_ ` to make it easier to distinguish from plain class
+       union.  In many theorems, you will see that ` x ` and ` A ` are in the
+       same distinct variable group (meaning ` A ` cannot depend on ` x ` ) and
+       that ` B ` and ` x ` do not share a distinct variable group (meaning
+       that can be thought of as ` B ( x ) ` i.e. can be substituted with a
+       class expression containing ` x ` ).  An alternate definition tying
+       indexed union to ordinary union is ~ dfiun2 .  Theorem ~ uniiun provides
+       a definition of ordinary union in terms of indexed union.  (Contributed
+       by NM, 27-Jun-1998.) $)
+    df-iun $a |- U_ x e. A B = { y | E. x e. A y e. B } $.
+
+    $( Define indexed intersection.  Definition of [Stoll] p. 45.  See the
+       remarks for its sibling operation of indexed union ~ df-iun .  An
+       alternate definition tying indexed intersection to ordinary intersection
+       is ~ dfiin2 .  Theorem ~ intiin provides a definition of ordinary
+       intersection in terms of indexed intersection.  (Contributed by NM,
+       27-Jun-1998.) $)
+    df-iin $a |- |^|_ x e. A B = { y | A. x e. A y e. B } $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d y C $.
+    $( Membership in indexed union.  (Contributed by NM, 3-Sep-2003.) $)
+    eliun $p |- ( A e. U_ x e. B C <-> E. x e. B A e. C ) $=
+      ( vy ciun wcel wrex elex rexlimivw cv wceq eleq1 rexbidv df-iun pm5.21nii
+      cvv elab2g ) BACDFZGBQGZBDGZACHZBSIUATACBDIJEKZDGZACHUBEBSQUCBLUDUAACUCBD
+      MNAECDORP $.
+
+    $( Membership in indexed intersection.  (Contributed by NM, 3-Sep-2003.) $)
+    eliin $p |- ( A e. V -> ( A e. |^|_ x e. B C <-> A. x e. B A e. C ) ) $=
+      ( vy cv wcel wral ciin wceq eleq1 ralbidv df-iin elab2g ) FGZDHZACIBDHZAC
+      IFBACDJEPBKQRACPBDLMAFCDNO $.
+  $}
+
+  ${
+    $d y z A $.  $d x z B $.  $d z C $.  $d x y $.
+    $( Commutation of indexed unions.  (Contributed by NM, 18-Dec-2008.) $)
+    iuncom $p |- U_ x e. A U_ y e. B C = U_ y e. B U_ x e. A C $=
+      ( vz ciun cv wcel wrex rexcom eliun rexbii 3bitr4i eqriv ) FACBDEGZGZBDAC
+      EGZGZFHZPIZACJZTRIZBDJZTQITSITEIZBDJZACJUEACJZBDJUBUDUEABCDKUAUFACBTDELMU
+      CUGBDATCELMNATCPLBTDRLNO $.
+  $}
+
+  ${
+    $d y z A $.  $d y z B $.  $d x y z $.
+    $( Commutation of union with indexed union.  (Contributed by Mario
+       Carneiro, 18-Jan-2014.) $)
+    iuncom4 $p |- U_ x e. A U. B = U. U_ x e. A B $=
+      ( vy vz cuni ciun cv wcel wa wex df-rex rexbii rexcom4 bitri exbii eluni2
+      wrex eliun 3bitr4i r19.41v anbi1i eqriv ) DABCFZGZABCGZFZDHZUDIZABRZUHEHZ
+      IZEUFRZUHUEIUHUGIULECRZABRZUKCIZABRZULJZEKZUJUMUOUPULJZABRZEKZUSUOUTEKZAB
+      RVBUNVCABULECLMUTAEBNOVAUREUPULABUAPOUIUNABEUHCQMUMUKUFIZULJZEKUSULEUFLVE
+      UREVDUQULAUKBCSUBPOTAUHBUDSEUHUFQTUC $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Indexed union of a constant class, i.e. where ` B ` does not depend on
+       ` x ` .  (Contributed by Jim Kingdon, 15-Aug-2018.) $)
+    iunconstm $p |- ( E. x x e. A -> U_ x e. A B = B ) $=
+      ( vy cv wcel wex ciun wrex r19.9rmv eliun syl6rbbr eqrdv ) AEBFAG
+      ZDABCHZCNDEZCFZQABIPOFQABJAPBCKLM $.
+
+    $( Indexed intersection of a constant class, i.e. where ` B ` does not
+       depend on ` x ` .  (Contributed by Mario Carneiro, 6-Feb-2015.) $)
+    iinconstm $p |- ( E. x x e. A -> |^|_ x e. A B = B ) $=
+      ( vy cv wcel wex ciin wral r19.3rmv cvv wb eliin ax-mp syl6rbbr
+      vex eqrdv ) AEBFAGZDABCHZCRDEZCFZUAABIZTSFZUAABJTKFUCUBLDPATBCK
+      MNOQ $.
+  $}
+
+  ${
+    $d x y $.  $d y z A $.  $d x z B $.  $d z C $.
+    $( Law combining indexed union with indexed intersection.  Eq. 14 in
+       [KuratowskiMostowski] p. 109.  This theorem also appears as the last
+       example at ~ http://en.wikipedia.org/wiki/Union%5F%28set%5Ftheory%29 .
+       (Contributed by NM, 17-Aug-2004.)  (Proof shortened by Andrew Salmon,
+       25-Jul-2011.) $)
+    iuniin $p |- U_ x e. A |^|_ y e. B C C_ |^|_ y e. B U_ x e. A C $=
+      ( vz ciin ciun cv wcel wrex wral r19.12 cvv vex eliin ax-mp eliun 3imtr4i
+      wb rexbii ralbii ssriv ) FACBDEGZHZBDACEHZGZFIZUDJZACKZUHUFJZBDLZUHUEJUHU
+      GJZUHEJZBDLZACKUNACKZBDLUJULUNABCDMUIUOACUHNJZUIUOTFOZBUHDENPQUAUKUPBDAUH
+      CERUBSAUHCUDRUQUMULTURBUHDUFNPQSUC $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.
+    $( Subclass theorem for indexed union.  (Contributed by NM, 10-Dec-2004.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    iunss1 $p |- ( A C_ B -> U_ x e. A C C_ U_ x e. B C ) $=
+      ( vy wss ciun cv wcel wrex ssrexv eliun 3imtr4g ssrdv ) BCFZEABDGZACDGZOE
+      HZDIZABJSACJRPIRQISABCKARBDLARCDLMN $.
+
+    $( Subclass theorem for indexed union.  (Contributed by NM,
+       24-Jan-2012.) $)
+    iinss1 $p |- ( A C_ B -> |^|_ x e. B C C_ |^|_ x e. A C ) $=
+      ( vy wss ciin cv wcel wral ssralv cvv wb vex eliin ax-mp 3imtr4g ssrdv )
+      BCFZEACDGZABDGZSEHZDIZACJZUCABJZUBTIZUBUAIZUCABCKUBLIZUFUDMENZAUBCDLOPUHU
+      GUEMUIAUBBDLOPQR $.
+
+    $( Equality theorem for indexed union.  (Contributed by NM,
+       27-Jun-1998.) $)
+    iuneq1 $p |- ( A = B -> U_ x e. A C = U_ x e. B C ) $=
+      ( wss wa ciun wceq iunss1 anim12i eqss 3imtr4i ) BCEZCBEZFABDGZACDGZEZPOE
+      ZFBCHOPHMQNRABCDIACBDIJBCKOPKL $.
+
+    $( Equality theorem for restricted existential quantifier.  (Contributed by
+       NM, 27-Jun-1998.) $)
+    iineq1 $p |- ( A = B -> |^|_ x e. A C = |^|_ x e. B C ) $=
+      ( vy wceq cv wcel wral cab ciin raleq abbidv df-iin 3eqtr4g ) BCFZEGDHZAB
+      IZEJQACIZEJABDKACDKPRSEQABCLMAEBDNAECDNO $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y C $.
+    $( Subclass theorem for indexed union.  (Contributed by NM, 26-Nov-2003.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    ss2iun $p |- ( A. x e. A B C_ C -> U_ x e. A B C_ U_ x e. A C ) $=
+      ( vy wss wral ciun cv wcel wrex ssel ralimi rexim syl eliun 3imtr4g ssrdv
+      wi ) CDFZABGZEABCHZABDHZUAEIZCJZABKZUDDJZABKZUDUBJUDUCJUAUEUGSZABGUFUHSTU
+      IABCDUDLMUEUGABNOAUDBCPAUDBDPQR $.
+
+    $( Equality theorem for indexed union.  (Contributed by NM,
+       22-Oct-2003.) $)
+    iuneq2 $p |- ( A. x e. A B = C -> U_ x e. A B = U_ x e. A C ) $=
+      ( wss wral wa ciun wceq ss2iun anim12i eqss ralbii r19.26 bitri 3imtr4i )
+      CDEZABFZDCEZABFZGZABCHZABDHZEZUCUBEZGCDIZABFZUBUCIRUDTUEABCDJABDCJKUGQSGZ
+      ABFUAUFUHABCDLMQSABNOUBUCLP $.
+
+    $( Equality theorem for indexed intersection.  (Contributed by NM,
+       22-Oct-2003.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    iineq2 $p |- ( A. x e. A B = C -> |^|_ x e. A B = |^|_ x e. A C ) $=
+      ( vy wceq wral cv wcel cab ciin wb eleq2 ralimi syl abbidv df-iin 3eqtr4g
+      ralbi ) CDFZABGZEHZCIZABGZEJUBDIZABGZEJABCKABDKUAUDUFEUAUCUELZABGUDUFLTUG
+      ABCDUBMNUCUEABSOPAEBCQAEBDQR $.
+  $}
+
+  ${
+    iuneq2i.1 $e |- ( x e. A -> B = C ) $.
+    $( Equality inference for indexed union.  (Contributed by NM,
+       22-Oct-2003.) $)
+    iuneq2i $p |- U_ x e. A B = U_ x e. A C $=
+      ( wceq ciun iuneq2 mprg ) CDFABCGABDGFABABCDHEI $.
+
+    $( Equality inference for indexed intersection.  (Contributed by NM,
+       22-Oct-2003.) $)
+    iineq2i $p |- |^|_ x e. A B = |^|_ x e. A C $=
+      ( wceq ciin iineq2 mprg ) CDFABCGABDGFABABCDHEI $.
+  $}
+
+  ${
+    iineq2d.1 $e |- F/ x ph $.
+    iineq2d.2 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
+    $( Equality deduction for indexed intersection.  (Contributed by NM,
+       7-Dec-2011.) $)
+    iineq2d $p |- ( ph -> |^|_ x e. A B = |^|_ x e. A C ) $=
+      ( wceq wral ciin cv wcel ex ralrimi iineq2 syl ) ADEHZBCIBCDJBCEJHAQBCFAB
+      KCLQGMNBCDEOP $.
+  $}
+
+  ${
+    $d x ph $.
+    iuneq2dv.1 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
+    $( Equality deduction for indexed union.  (Contributed by NM,
+       3-Aug-2004.) $)
+    iuneq2dv $p |- ( ph -> U_ x e. A B = U_ x e. A C ) $=
+      ( wceq wral ciun ralrimiva iuneq2 syl ) ADEGZBCHBCDIBCEIGAMBCFJBCDEKL $.
+
+    $( Equality deduction for indexed intersection.  (Contributed by NM,
+       3-Aug-2004.) $)
+    iineq2dv $p |- ( ph -> |^|_ x e. A B = |^|_ x e. A C ) $=
+      ( nfv iineq2d ) ABCDEABGFH $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    iuneq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality theorem for indexed union, deduction version.  (Contributed by
+       Drahflow, 22-Oct-2015.) $)
+    iuneq1d $p |- ( ph -> U_ x e. A C = U_ x e. B C ) $=
+      ( wceq ciun iuneq1 syl ) ACDGBCEHBDEHGFBCDEIJ $.
+
+    ${
+      $d x ph $.
+      iuneq12d.2 $e |- ( ph -> C = D ) $.
+      $( Equality deduction for indexed union, deduction version.  (Contributed
+         by Drahflow, 22-Oct-2015.) $)
+      iuneq12d $p |- ( ph -> U_ x e. A C = U_ x e. B D ) $=
+        ( ciun iuneq1d wceq cv wcel adantr iuneq2dv eqtrd ) ABCEIBDEIBDFIABCDEG
+        JABDEFAEFKBLDMHNOP $.
+    $}
+  $}
+
+  ${
+    $d x ph $.  $d x A $.
+    iuneq2d.2 $e |- ( ph -> B = C ) $.
+    $( Equality deduction for indexed union.  (Contributed by Drahflow,
+       22-Oct-2015.) $)
+    iuneq2d $p |- ( ph -> U_ x e. A B = U_ x e. A C ) $=
+      ( wceq cv wcel adantr iuneq2dv ) ABCDEADEGBHCIFJK $.
+  $}
+
+  ${
+    $d x y $.  $d z A $.  $d z B $.  $d x z $.  $d y z $.
+    nfiunxy.1 $e |- F/_ y A $.
+    nfiunxy.2 $e |- F/_ y B $.
+    $( Bound-variable hypothesis builder for indexed union.  (Contributed by
+       Mario Carneiro, 25-Jan-2014.) $)
+    nfiunxy $p |- F/_ y U_ x e. A B $=
+      ( vz ciun cv wcel wrex cab df-iun nfcri nfrexxy nfab nfcxfr ) BACDHGIDJZACK
+      ZGLAGCDMSBGRBACEBGDFNOPQ $.
+
+    $( Bound-variable hypothesis builder for indexed intersection.
+       (Contributed by Mario Carneiro, 25-Jan-2014.) $)
+    nfiinxy $p |- F/_ y |^|_ x e. A B $=
+      ( vz ciin cv wcel wral cab df-iin nfcri nfralxy nfab nfcxfr ) BACDHGIDJZACK
+      ZGLAGCDMSBGRBACEBGDFNOPQ $.
+  $}
+
+  ${
+    $d x A $.  $d z A $.  $d z B $.  $d x z $.  $d y z $.
+    nfiunya.1 $e |- F/_ y A $.
+    nfiunya.2 $e |- F/_ y B $.
+    $( Bound-variable hypothesis builder for indexed union.  (Contributed by
+       Mario Carneiro, 25-Jan-2014.) $)
+    nfiunya $p |- F/_ y U_ x e. A B $=
+      ( vz ciun cv wcel wrex cab df-iun nfcri nfrexya nfab nfcxfr ) BACDHGIDJZACK
+      ZGLAGCDMSBGRBACEBGDFNOPQ $.
+
+    $( Bound-variable hypothesis builder for indexed intersection.
+       (Contributed by Mario Carneiro, 25-Jan-2014.) $)
+    nfiinya $p |- F/_ y |^|_ x e. A B $=
+      ( vz ciin cv wcel wral cab df-iin nfcri nfralya nfab nfcxfr ) BACDHGIDJZACK
+      ZGLAGCDMSBGRBACEBGDFNOPQ $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    $( Bound-variable hypothesis builder for indexed union.  (Contributed by
+       NM, 12-Oct-2003.) $)
+    nfiu1 $p |- F/_ x U_ x e. A B $=
+      ( vy ciun cv wcel wrex cab df-iun nfre1 nfab nfcxfr ) AABCEDFCGZABHZDIADB
+      CJOADNABKLM $.
+
+    $( Bound-variable hypothesis builder for indexed intersection.
+       (Contributed by NM, 15-Oct-2003.) $)
+    nfii1 $p |- F/_ x |^|_ x e. A B $=
+      ( vy ciin cv wcel wral cab df-iin nfra1 nfab nfcxfr ) AABCEDFCGZABHZDIADB
+      CJOADNABKLM $.
+  $}
+
+  ${
+    $d y z w A $.  $d y z w B $.  $d w C z $.  $d w x y z $.
+    $( Alternate definition of indexed union when ` B ` is a set.  Definition
+       15(a) of [Suppes] p. 44.  (Contributed by NM, 23-Mar-2006.)  (Proof
+       shortened by Andrew Salmon, 25-Jul-2011.) $)
+    dfiun2g $p |- ( A. x e. A B e. C ->
+                  U_ x e. A B = U. { y | E. x e. A y = B } ) $=
+      ( vz wcel wral ciun cv wceq wrex cab cuni wa wex nfra1 wb rsp syl6bb syl6
+      clel3g rexbida rexcom4 r19.41v exbii exancom bitri eliun eluniab 3bitr4g
+      imp eqrdv ) DEGZACHZFACDIZBJZDKZACLZBMNZUOFJZDGZACLZVAUQGZUSOBPZVAUPGVAUT
+      GUOVCURVDOZACLZBPZVEUOVCVFBPZACLVHUOVBVIACUNACQUOAJCGZVBVIRZUOVJUNVKUNACS
+      BVADEUBUAULUCVFABCUDTVHUSVDOZBPVEVGVLBURVDACUEUFUSVDBUGUHTAVACDUIUSBVAUJU
+      KUM $.
+
+    $( Alternate definition of indexed intersection when ` B ` is a set.
+       (Contributed by Jeff Hankins, 27-Aug-2009.) $)
+    dfiin2g $p |- ( A. x e. A B e. C
+               -> |^|_ x e. A B = |^| { y | E. x e. A y = B } ) $=
+      ( vw vz wcel wral cv cab wceq wrex wi wal df-ral wb eqeq1 albii bitr4i
+      ciin cint eleq2 biimprcd alrimiv eqid imbi12d mpii impbid2 imim2i pm5.74d
+      spcgv alimi albi syl sylbi alcom r19.23v vex rexbidv elab imbi1i 3bitr3ri
+      19.21v syl6bb syl5bb abbidv df-iin df-int 3eqtr4g ) DEHZACIZFJZDHZACIZFKG
+      JZBJZDLZACMZBKZHZVMVPHZNZGOZFKACDUAVTUBVLVOWDFVOAJCHZVNNZAOZVLWDVNACPVLWG
+      WEVPDLZWBNZGOZNZAOZWDVLWEVKNZAOZWGWLQZVKACPWNWFWKQZAOWOWMWPAWMWEVNWJVKVNW
+      JQWEVKVNWJVNWIGWHWBVNVPDVMUCZUDUEVKWJDDLZVNDUFWIWRVNNGDEWHWHWRWBVNVPDDRWQ
+      UGULUHUIUJUKUMWFWKAUNUOUPWIACIZGOZWEWINZGOZAOZWDWLWTXAAOZGOXCWSXDGWIACPSX
+      AAGUQTWSWCGWSWHACMZWBNWCWHWBACURWAXEWBVSXEBVPGUSVQVPLVRWHACVQVPDRUTVAVBTS
+      XBWKAWEWIGVDSVCVEVFVGAFCDVHFGVTVIVJ $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    dfiun2.1 $e |- B e. _V $.
+    $( Alternate definition of indexed union when ` B ` is a set.  Definition
+       15(a) of [Suppes] p. 44.  (Contributed by NM, 27-Jun-1998.)  (Revised by
+       David Abernethy, 19-Jun-2012.) $)
+    dfiun2 $p |- U_ x e. A B = U. { y | E. x e. A y = B } $=
+      ( cvv wcel ciun cv wceq wrex cab cuni dfiun2g a1i mprg ) DFGZACDHBIDJACKB
+      LMJACABCDFNQAICGEOP $.
+
+    $( Alternate definition of indexed intersection when ` B ` is a set.
+       Definition 15(b) of [Suppes] p. 44.  (Contributed by NM, 28-Jun-1998.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    dfiin2 $p |- |^|_ x e. A B = |^| { y | E. x e. A y = B } $=
+      ( cvv wcel ciin cv wceq wrex cab cint dfiin2g a1i mprg ) DFGZACDHBIDJACKB
+      LMJACABCDFNQAICGEOP $.
+  $}
+
+  ${
+    $d x z $.  $d y z w $.  $d z A $.  $d z w B $.  $d z w C $.
+    $( Define double indexed union.  (Contributed by FL, 6-Nov-2013.) $)
+    dfiunv2 $p |- U_ x e. A U_ y e. B C =
+      { z | E. x e. A E. y e. B z e. C } $=
+      ( vw ciun cv wcel wrex cab wceq df-iun a1i iuneq2i vex weq eleq1 rexbidv
+      elab rexbii abbii 3eqtri ) ADBEFHZHADGIZFJZBEKZGLZHCIZUIJZADKZCLUJFJZBEKZ
+      ADKZCLADUEUIUEUIMAIDJBGEFNOPACDUINULUOCUKUNADUHUNGUJCQGCRUGUMBEUFUJFSTUAU
+      BUCUD $.
+  $}
+
+  ${
+    $d z y A $.  $d z x A $.  $d z B $.  $d z C $.
+    cbviun.1 $e |- F/_ y B $.
+    cbviun.2 $e |- F/_ x C $.
+    cbviun.3 $e |- ( x = y -> B = C ) $.
+    $( Rule used to change the bound variables in an indexed union, with the
+       substitution specified implicitly by the hypothesis.  (Contributed by
+       NM, 26-Mar-2006.)  (Revised by Andrew Salmon, 25-Jul-2011.) $)
+    cbviun $p |- U_ x e. A B = U_ y e. A C $=
+      ( vz cv wcel wrex cab ciun nfcri weq eleq2d cbvrex abbii df-iun 3eqtr4i )
+      IJZDKZACLZIMUBEKZBCLZIMACDNBCENUDUFIUCUEABCBIDFOAIEGOABPDEUBHQRSAICDTBICE
+      TUA $.
+
+    $( Change bound variables in an indexed intersection.  (Contributed by Jeff
+       Hankins, 26-Aug-2009.)  (Revised by Mario Carneiro, 14-Oct-2016.) $)
+    cbviin $p |- |^|_ x e. A B = |^|_ y e. A C $=
+      ( vz cv wcel wral cab ciin nfcri weq eleq2d cbvral abbii df-iin 3eqtr4i )
+      IJZDKZACLZIMUBEKZBCLZIMACDNBCENUDUFIUCUEABCBIDFOAIEGOABPDEUBHQRSAICDTBICE
+      TUA $.
+  $}
+
+  ${
+    $d x A $.  $d y A $.  $d y z B $.  $d x z C $.
+    cbviunv.1 $e |- ( x = y -> B = C ) $.
+    $( Rule used to change the bound variables in an indexed union, with the
+       substitution specified implicitly by the hypothesis.  (Contributed by
+       NM, 15-Sep-2003.) $)
+    cbviunv $p |- U_ x e. A B = U_ y e. A C $=
+      ( nfcv cbviun ) ABCDEBDGAEGFH $.
+
+    $( Change bound variables in an indexed intersection.  (Contributed by Jeff
+       Hankins, 26-Aug-2009.) $)
+    cbviinv $p |- |^|_ x e. A B = |^|_ y e. A C $=
+      ( nfcv cbviin ) ABCDEBDGAEGFH $.
+  $}
+
+  ${
+    $d x y C $.  $d y A $.  $d y B $.
+    $( Subset theorem for an indexed union.  (Contributed by NM, 13-Sep-2003.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    iunss $p |- ( U_ x e. A B C_ C <-> A. x e. A B C_ C ) $=
+      ( vy ciun wss cv wcel wrex cab wal wral df-iun sseq1i abss ralbii ralcom4
+      wi dfss2 r19.23v albii 3bitrri 3bitri ) ABCFZDGEHZCIZABJZEKZDGUHUFDIZSZEL
+      ZCDGZABMZUEUIDAEBCNOUHEDPUNUGUJSZELZABMUOABMZELULUMUPABECDTQUOAEBRUQUKEUG
+      UJABUAUBUCUD $.
+  $}
+
+  ${
+    $d x y C $.  $d y A $.  $d y B $.
+    $( Subset implication for an indexed union.  (Contributed by NM,
+       3-Sep-2003.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    ssiun $p |- ( E. x e. A C C_ B -> C C_ U_ x e. A B ) $=
+      ( vy wss wrex ciun cv wcel ssel reximi r19.37av syl eliun syl6ibr ssrdv
+      wi ) DCFZABGZEDABCHZTEIZDJZUBCJZABGZUBUAJTUCUDRZABGUCUERSUFABDCUBKLUCUDAB
+      MNAUBBCOPQ $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    $( Identity law for subset of an indexed union.  (Contributed by NM,
+       12-Oct-2003.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    ssiun2 $p |- ( x e. A -> B C_ U_ x e. A B ) $=
+      ( vy cv wcel ciun wrex rspe ex eliun syl6ibr ssrdv ) AEBFZDCABCGZNDEZCFZQ
+      ABHZPOFNQRQABIJAPBCKLM $.
+  $}
+
+  ${
+    $d x A $.  $d x C $.  $d x D $.
+    ssiun2s.1 $e |- ( x = C -> B = D ) $.
+    $( Subset relationship for an indexed union.  (Contributed by NM,
+       26-Oct-2003.) $)
+    ssiun2s $p |- ( C e. A -> D C_ U_ x e. A B ) $=
+      ( ciun wss nfcv nfiu1 nfss cv wceq sseq1d ssiun2 vtoclgaf ) CABCGZHEQHADB
+      ADIAEQAEIABCJKALDMCEQFNABCOP $.
+  $}
+
+  ${
+    $d x y $.  $d x B $.  $d y C $.  $d x D $.
+    $( A subclass condition on the members of two indexed classes ` C ( x ) `
+       and ` D ( y ) ` that implies a subclass relation on their indexed
+       unions.  Generalization of Proposition 8.6 of [TakeutiZaring] p. 59.
+       Compare ~ uniss2 .  (Contributed by NM, 9-Dec-2004.) $)
+    iunss2 $p |- ( A. x e. A E. y e. B C C_ D ->
+                 U_ x e. A C C_ U_ y e. B D ) $=
+      ( wss wrex wral ciun ssiun ralimi iunss sylibr ) EFGBDHZACIEBDFJZGZACIACE
+      JPGOQACBDFEKLACEPMN $.
+  $}
+
+  ${
+    $d y A $.  $d x y $.  $d x B $.
+    $( The indexed union of a class abstraction.  (Contributed by NM,
+       27-Dec-2004.) $)
+    iunab $p |- U_ x e. A { y | ph } = { y | E. x e. A ph } $=
+      ( cab ciun wrex wceq cv wcel wb nfcv nfab1 nfiunxy cleqf abid eliun 3bitr4i
+      rexbii mpgbir ) BDACEZFZABDGZCEZHCIZUBJZUEUDJZKCCUBUDBCDUACDLACMNUCCMOUEU
+      AJZBDGUCUFUGUHABDACPSBUEDUAQUCCPRT $.
+
+    $( The indexed union of a restricted class abstraction.  (Contributed by
+       NM, 3-Jan-2004.)  (Proof shortened by Mario Carneiro, 14-Nov-2016.) $)
+    iunrab $p |- U_ x e. A { y e. B | ph } = { y e. B | E. x e. A ph } $=
+      ( cv wcel cab ciun wrex crab iunab wceq df-rab a1i iuneq2i r19.42v eqtr4i
+      wa abbii 3eqtr4i ) BDCFEGZASZCHZIUCBDJZCHZBDACEKZIABDJZCEKZUCBCDLBDUGUDUG
+      UDMBFDGACENOPUIUBUHSZCHUFUHCENUEUJCUBABDQTRUA $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.  $d x D $.
+    iunxdif2.1 $e |- ( x = y -> C = D ) $.
+    $( Indexed union with a class difference as its index.  (Contributed by NM,
+       10-Dec-2004.) $)
+    iunxdif2 $p |- ( A. x e. A E. y e. ( A \ B ) C C_ D ->
+                 U_ y e. ( A \ B ) D = U_ x e. A C ) $=
+      ( wss cdif wrex wral ciun wceq iunss2 difss iunss1 ax-mp cbviunv sseqtr4i
+      wa jctil eqss sylibr ) EFHBCDIZJACKZBUDFLZACELZHZUGUFHZTUFUGMUEUIUHABCUDE
+      FNUFBCFLZUGUDCHUFUJHCDOBUDCFPQABCEFGRSUAUFUGUBUC $.
+  $}
+
+  ${
+    $d y z A $.  $d y z B $.  $d y z C $.  $d x y z $.
+    ssiinf.1 $e |- F/_ x C $.
+    $( Subset theorem for an indexed intersection.  (Contributed by FL,
+       15-Oct-2012.)  (Proof shortened by Mario Carneiro, 14-Oct-2016.) $)
+    ssiinf $p |- ( C C_ |^|_ x e. A B <-> A. x e. A C C_ B ) $=
+      ( vy cv ciin wcel wral wss cvv vex eliin ax-mp ralbii nfcv ralcomf dfss3
+      wb bitri 3bitr4i ) FGZABCHZIZFDJZUCCIZFDJZABJZDUDKDCKZABJUFUGABJZFDJUIUEU
+      KFDUCLIUEUKTFMAUCBCLNOPUGFADBEFBQRUAFDUDSUJUHABFDCSPUB $.
+  $}
+
+  ${
+    $d x C $.
+    $( Subset theorem for an indexed intersection.  (Contributed by NM,
+       15-Oct-2003.) $)
+    ssiin $p |- ( C C_ |^|_ x e. A B <-> A. x e. A C C_ B ) $=
+      ( nfcv ssiinf ) ABCDADEF $.
+  $}
+
+  ${
+    $d x y C $.  $d y A $.  $d y B $.
+    $( Subset implication for an indexed intersection.  (Contributed by NM,
+       15-Oct-2003.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    iinss $p |- ( E. x e. A B C_ C -> |^|_ x e. A B C_ C ) $=
+      ( vy wss wrex ciin cv wcel wral cvv wb vex eliin ax-mp wi reximi r19.36av
+      ssel syl syl5bi ssrdv ) CDFZABGZEABCHZDEIZUFJZUGCJZABKZUEUGDJZUGLJUHUJMEN
+      AUGBCLOPUEUIUKQZABGUJUKQUDULABCDUGTRUIUKABSUAUBUC $.
+  $}
+
+  ${
+    $d A y $.  $d B y $.  $d x y $.
+    $( An indexed intersection is included in any of its members.  (Contributed
+       by FL, 15-Oct-2012.) $)
+    iinss2 $p |- ( x e. A -> |^|_ x e. A B C_ B ) $=
+      ( vy cv wcel ciin wral wi cvv wb vex eliin ax-mp rsp sylbi com12 ssrdv )
+      AEBFZDABCGZCDEZTFZSUACFZUBUCABHZSUCIUAJFUBUDKDLAUABCJMNUCABOPQR $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Class union in terms of indexed union.  Definition in [Stoll] p. 43.
+       (Contributed by NM, 28-Jun-1998.) $)
+    uniiun $p |- U. A = U_ x e. A x $=
+      ( vy cuni wel wrex cab cv ciun dfuni2 df-iun eqtr4i ) BDCAEABFCGABAHZICAB
+      JACBMKL $.
+
+    $( Class intersection in terms of indexed intersection.  Definition in
+       [Stoll] p. 44.  (Contributed by NM, 28-Jun-1998.) $)
+    intiin $p |- |^| A = |^|_ x e. A x $=
+      ( vy cint wel wral cab cv ciin dfint2 df-iin eqtr4i ) BDCAEABFCGABAHZICAB
+      JACBMKL $.
+
+    $( An indexed union of singletons recovers the index set.  (Contributed by
+       NM, 6-Sep-2005.) $)
+    iunid $p |- U_ x e. A { x } = A $=
+      ( vy cv csn ciun wceq cab wcel df-sn equcom abbii eqtri a1i iuneq2i iunab
+      wrex risset abid2 3eqtr2i ) ABADZEZFABUACDZGZCHZFZBABUBUEUBUEGUABIUBUCUAG
+      ZCHUECUAJUGUDCCAKLMNOUFUDABQZCHUCBIZCHBUDACBPUIUHCAUCBRLCBSTM $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    $( An indexed union of the empty set is empty.  (Contributed by NM,
+       26-Mar-2003.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    iun0 $p |- U_ x e. A (/) = (/) $=
+      ( vy c0 ciun cv wcel wrex wn noel a1i nrex eliun mtbir 2false eqriv ) CAB
+      DEZDCFZQGZRDGZSTABHTABTIAFBGRJZKLARBDMNUAOP $.
+
+    $( An empty indexed union is empty.  (Contributed by NM, 4-Dec-2004.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    0iun $p |- U_ x e. (/) A = (/) $=
+      ( vy c0 ciun cv wcel wrex rex0 eliun mtbir noel 2false eqriv ) CADBEZDCFZ
+      OGZPDGQPBGZADHRAIAPDBJKPLMN $.
+
+    $( An empty indexed intersection is the universal class.  (Contributed by
+       NM, 20-Oct-2005.) $)
+    0iin $p |- |^|_ x e. (/) A = _V $=
+      ( vy c0 ciin cv wcel wral cab cvv df-iin vex ral0 2th abbi2i eqtr4i ) ADB
+      ECFZBGZADHZCIJACDBKSCJQJGSCLRAMNOP $.
+
+    $( Indexed intersection with a universal index class.  (Contributed by NM,
+       11-Sep-2008.) $)
+    viin $p |- |^|_ x e. _V A = { y | A. x y e. A } $=
+      ( cvv ciin cv wcel wral cab wal df-iin ralv abbii eqtri ) ADCEBFCGZADHZBI
+      OAJZBIABDCKPQBOALMN $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.
+    $( There is an inhabited class in an indexed collection ` B ( x ) ` iff the
+       indexed union of them is inhabited.  (Contributed by Jim Kingdon,
+       16-Aug-2018.) $)
+    iunn0m $p |- ( E. x e. A E. y y e. B <-> E. y y e. U_ x e. A B ) $=
+      ( cv wcel wex wrex ciun rexcom4 eliun exbii bitr4i ) BEZDFZBGAC
+      HOACHZBGNACDIFZBGOABCJQPBANCDKLM $.
+  $}
+
+  ${
+    $d y A $.  $d x y $.
+    $( Indexed intersection of a class builder.  (Contributed by NM,
+       6-Dec-2011.) $)
+    iinab $p |- |^|_ x e. A { y | ph } = { y | A. x e. A ph } $=
+      ( cab ciin wral wceq cv wcel nfcv nfab1 nfiinxy cleqf abid ralbii cvv eliin
+      wb vex ax-mp 3bitr4i mpgbir ) BDACEZFZABDGZCEZHCIZUEJZUHUGJZSCCUEUGBCDUDC
+      DKACLMUFCLNUHUDJZBDGZUFUIUJUKABDACOPUHQJUIULSCTBUHDUDQRUAUFCOUBUC $.
+
+    $d x A $.  $d x B $.
+    $( Indexed intersection of a restricted class builder.  (Contributed by Jim
+       Kingdon, 16-Aug-2018.) $)
+    iinrabm $p |- ( E. x x e. A
+          -> |^|_ x e. A { y e. B | ph } = { y e. B | A. x e. A ph } ) $=
+      ( wcel wex wral cab crab ciin r19.28mv abbidv wceq df-rab iineq2i
+      cv wa a1i iinab eqtri 3eqtr4g ) BQDFZBGZCQEFZARZBDHZCIZUEABDHZRZC
+      IBDACEJZKZUICEJUDUGUJCUEABDLMULBDUFCIZKUHBDUKUMUKUMNUCACEOSPUFBCD
+      TUAUICEOUB $.
+  $}
+
+  ${
+    $d y A $.  $d x y B $.  $d y C $.
+    $( Indexed union of intersection.  Generalization of half of theorem
+       "Distributive laws" in [Enderton] p. 30.  Use ~ uniiun to recover
+       Enderton's theorem.  (Contributed by NM, 26-Mar-2004.) $)
+    iunin2 $p |- U_ x e. A ( B i^i C ) = ( B i^i U_ x e. A C ) $=
+      ( vy cin ciun cv wcel wrex r19.42v elin rexbii eliun anbi2i 3bitr4i eqriv
+      wa ) EABCDFZGZCABDGZFZEHZSIZABJZUCCIZUCUAIZRZUCTIUCUBIUFUCDIZRZABJUFUIABJ
+      ZRUEUHUFUIABKUDUJABUCCDLMUGUKUFAUCBDNOPAUCBSNUCCUALPQ $.
+
+    $( Indexed union of intersection.  Generalization of half of theorem
+       "Distributive laws" in [Enderton] p. 30.  Use ~ uniiun to recover
+       Enderton's theorem.  (Contributed by Mario Carneiro, 30-Aug-2015.) $)
+    iunin1 $p |- U_ x e. A ( C i^i B ) = ( U_ x e. A C i^i B ) $=
+      ( cin ciun iunin2 wceq cv wcel incom a1i iuneq2i 3eqtr4i ) ABCDEZFCABDFZE
+      ABDCEZFPCEABCDGABQOQOHAIBJDCKLMPCKN $.
+
+    $( Indexed union of class difference.  Compare to theorem "De Morgan's
+       laws" in [Enderton] p. 31.  (Contributed by Jim Kingdon,
+       17-Aug-2018.) $)
+    iundif2ss $p |- U_ x e. A ( B \ C ) C_ ( B \ |^|_ x e. A C ) $=
+      ( vy cdif ciun ciin cv wcel wrex wn wa eldif rexbii r19.42v bitri
+      wral rexnalim cvv wb vex eliin ax-mp sylnibr anim2i sylbi 3imtr4i
+      eliun ssriv ) EABCDFZGZCABDHZFZEIZUKJZABKZUOCJZUOUMJZLZMZUOULJUOU
+      NJUQURUODJZLZABKZMZVAUQURVCMZABKVEUPVFABUOCDNOURVCABPQVDUTURVDVBA
+      BRZUSVBABSUOTJUSVGUAEUBAUOBDTUCUDUEUFUGAUOBUKUIUOCUMNUHUJ $.
+  $}
+
+  ${
+    $d x B $.  $d y C $.  $d x D $.  $d x y $.
+    $( Rearrange indexed unions over intersection.  (Contributed by NM,
+       18-Dec-2008.) $)
+    2iunin $p |- U_ x e. A U_ y e. B ( C i^i D )
+        = ( U_ x e. A C i^i U_ y e. B D ) $=
+      ( cin ciun wceq cv wcel iunin2 a1i iuneq2i iunin1 eqtri ) ACBDEFGHZHACEBD
+      FHZGZHACEHRGACQSQSIAJCKBDEFLMNACREOP $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.
+    $( Indexed intersection of class difference.  Compare to Theorem "De
+       Morgan's laws" in [Enderton] p. 31.  (Contributed by Jim Kingdon,
+       17-Aug-2018.) $)
+    iindif2m $p |- ( E. x x e. A ->
+                 |^|_ x e. A ( B \ C ) = ( B \ U_ x e. A C ) ) $=
+      ( vy cv wcel wex cdif ciin ciun wral wn wa r19.28mv bicomi ralbii
+      eldif wrex cvv ralnex eliun xchbinxr anbi2i 3bitr3g eliin 3bitr4g
+      wb vex ax-mp eqrdv ) AFBGAHZEABCDIZJZCABDKZIZULEFZUMGZABLZUQCGZUQ
+      UOGZMZNZUQUNGZUQUPGULUTUQDGZMZNZABLUTVFABLZNUSVCUTVFABOVGURABURVG
+      UQCDRPQVHVBUTVHVEABSVAVEABUAAUQBDUBUCUDUEUQTGVDUSUHEUIAUQBUMTUFUJ
+      UQCUORUGUK $.
+
+    $( Indexed intersection of intersection.  Compare to Theorem "Distributive
+       laws" in [Enderton] p. 30.  (Contributed by Jim Kingdon,
+       17-Aug-2018.) $)
+    iinin2m $p |- ( E. x x e. A ->
+      |^|_ x e. A ( B i^i C ) = ( B i^i |^|_ x e. A C ) ) $=
+      ( vy cv wcel wex cin ciin wral wa r19.28mv ralbii cvv eliin ax-mp
+      elin wb 3bitr4g vex anbi2i eqrdv ) AFBGAHZEABCDIZJZCABDJZIZUDEFZU
+      EGZABKZUICGZUIUGGZLZUIUFGZUIUHGUDULUIDGZLZABKULUPABKZLUKUNULUPABM
+      UJUQABUICDRNUMURULUIOGZUMURSEUAZAUIBDOPQUBTUSUOUKSUTAUIBUEOPQUICU
+      GRTUC $.
+
+    $( Indexed intersection of intersection.  Compare to Theorem "Distributive
+       laws" in [Enderton] p. 30.  (Contributed by Jim Kingdon,
+       17-Aug-2018.) $)
+    iinin1m $p |- ( E. x x e. A ->
+      |^|_ x e. A ( C i^i B ) = ( |^|_ x e. A C i^i B ) ) $=
+      ( cv wcel wex cin ciin iinin2m wceq incom a1i iineq2i 3eqtr4g ) A
+      EBFZAGABCDHZICABDIZHABDCHZIRCHABCDJABSQSQKPDCLMNRCLO $.
+  $}
+
+  ${
+    $d A x y $.  $d X x y $.  $d B x $.
+    $( Elementhood in a relative intersection.  (Contributed by Mario Carneiro,
+       30-Dec-2016.) $)
+    elriin $p |- ( B e. ( A i^i |^|_ x e. X S ) <->
+      ( B e. A /\ A. x e. X B e. S ) ) $=
+      ( ciin cin wcel wa wral elin eliin pm5.32i bitri ) CBAEDFZGHCBHZCOHZIPCDH
+      AEJZICBOKPQRACEDBLMN $.
+
+    $( Relative intersection of an empty family.  (Contributed by Stefan
+       O'Rear, 3-Apr-2015.) $)
+    riin0 $p |- ( X = (/) -> ( A i^i |^|_ x e. X S ) = A ) $=
+      ( c0 wceq ciin cin iineq1 ineq2d cvv 0iin ineq2i inv1 eqtri syl6eq ) DEFZ
+      BADCGZHBAECGZHZBQRSBADECIJTBKHBSKBACLMBNOP $.
+
+    $( Relative intersection of an inhabited family.  (Contributed by Jim
+       Kingdon, 19-Aug-2018.) $)
+    riinm $p |- ( ( A. x e. X S C_ A /\ E. x x e. X ) ->
+        ( A i^i |^|_ x e. X S ) = |^|_ x e. X S ) $=
+      ( wss wral cv wcel wex wa ciin cin incom wceq r19.2m ancoms iinss
+      wrex syl df-ss sylib syl5eq ) CBEZADFZAGDHAIZJZBADCKZLUGBLZUGBUGM
+      UFUGBEZUHUGNUFUCADRZUIUEUDUJUCADOPADCBQSUGBTUAUB $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y C $.  $d y V $.
+    iinxsng.1 $e |- ( x = A -> B = C ) $.
+    $( A singleton index picks out an instance of an indexed intersection's
+       argument.  (Contributed by NM, 15-Jan-2012.)  (Proof shortened by Mario
+       Carneiro, 17-Nov-2016.) $)
+    iinxsng $p |- ( A e. V -> |^|_ x e. { A } B = C ) $=
+      ( vy wcel csn ciin cv wral cab df-iin wceq eleq2d ralsng abbi1dv syl5eq )
+      BEHZABIZCJGKZCHZAUALZGMDAGUACNTUDGDUCUBDHABEAKBOCDUBFPQRS $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.  $d x y D $.  $d x y E $.  $d y V $.
+    $d y W $.
+    iinxprg.1 $e |- ( x = A -> C = D ) $.
+    iinxprg.2 $e |- ( x = B -> C = E ) $.
+    $( Indexed intersection with an unordered pair index.  (Contributed by NM,
+       25-Jan-2012.) $)
+    iinxprg $p |- ( ( A e. V /\ B e. W )
+        -> |^|_ x e. { A , B } C = ( D i^i E ) ) $=
+      ( vy wcel wa cv cpr wral cab ciin wceq eleq2d ralprg abbidv df-in 3eqtr4g
+      cin df-iin ) BGLCHLMZKNZDLZABCOZPZKQUHELZUHFLZMZKQAUJDREFUEUGUKUNKUIULUMA
+      BCGHANZBSDEUHITUOCSDFUHJTUAUBAKUJDUFKEFUCUD $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y C $.  $d y V $.
+    iunxsng.1 $e |- ( x = A -> B = C ) $.
+    $( A singleton index picks out an instance of an indexed union's argument.
+       (Contributed by Mario Carneiro, 25-Jun-2016.) $)
+    iunxsng $p |- ( A e. V -> U_ x e. { A } B = C ) $=
+      ( vy wcel csn ciun cv wrex eliun wceq eleq2d rexsng syl5bb eqrdv ) BEHZGA
+      BIZCJZDGKZUAHUBCHZATLSUBDHZAUBTCMUCUDABEAKBNCDUBFOPQR $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y C $.
+    iunxsn.1 $e |- A e. _V $.
+    iunxsn.2 $e |- ( x = A -> B = C ) $.
+    $( A singleton index picks out an instance of an indexed union's argument.
+       (Contributed by NM, 26-Mar-2004.)  (Proof shortened by Mario Carneiro,
+       25-Jun-2016.) $)
+    iunxsn $p |- U_ x e. { A } B = C $=
+      ( cvv wcel csn ciun wceq iunxsng ax-mp ) BGHABICJDKEABCDGFLM $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y C $.
+    $( Separate a union in an indexed union.  (Contributed by NM,
+       27-Dec-2004.)  (Proof shortened by Mario Carneiro, 17-Nov-2016.) $)
+    iunun $p |- U_ x e. A ( B u. C ) = ( U_ x e. A B u. U_ x e. A C ) $=
+      ( vy cun ciun cv wcel wrex r19.43 elun rexbii eliun orbi12i 3bitr4i eqriv
+      wo ) EABCDFZGZABCGZABDGZFZEHZSIZABJZUDUAIZUDUBIZRZUDTIUDUCIUDCIZUDDIZRZAB
+      JUJABJZUKABJZRUFUIUJUKABKUEULABUDCDLMUGUMUHUNAUDBCNAUDBDNOPAUDBSNUDUAUBLP
+      Q $.
+
+    $( Separate a union in the index of an indexed union.  (Contributed by NM,
+       26-Mar-2004.)  (Proof shortened by Mario Carneiro, 17-Nov-2016.) $)
+    iunxun $p |- U_ x e. ( A u. B ) C = ( U_ x e. A C u. U_ x e. B C ) $=
+      ( vy cun ciun cv wcel wrex rexun eliun orbi12i bitr4i elun 3bitr4i eqriv
+      wo ) EABCFZDGZABDGZACDGZFZEHZDIZASJZUDUAIZUDUBIZRZUDTIUDUCIUFUEABJZUEACJZ
+      RUIUEABCKUGUJUHUKAUDBDLAUDCDLMNAUDSDLUDUAUBOPQ $.
+  $}
+
+  ${
+    $d x y z $.  $d x z A $.  $d z B $.  $d y z C $.
+    $( Separate an indexed union in the index of an indexed union.
+       (Contributed by Mario Carneiro, 5-Dec-2016.) $)
+    iunxiun $p |- U_ x e. U_ y e. A B C = U_ y e. A U_ x e. B C $=
+      ( vz ciun cv wcel wa wex eliun anbi1i r19.41v bitr4i exbii rexcom4 df-rex
+      wrex 3bitr4i bitri rexbii eqriv ) FABCDGZEGZBCADEGZGZFHZEIZAUDSZUHUFIZBCS
+      ZUHUEIUHUGIAHZUDIZUIJZAKZUMDIZUIJZAKZBCSZUJULUPURBCSZAKUTUOVAAUOUQBCSZUIJ
+      VAUNVBUIBUMCDLMUQUIBCNOPURBACQOUIAUDRUKUSBCUKUIADSUSAUHDELUIADRUAUBTAUHUD
+      ELBUHCUFLTUC $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( A relationship involving union and indexed intersection.  Exercise 23 of
+       [Enderton] p. 33 but with equality changed to subset.  (Contributed by
+       Jim Kingdon, 19-Aug-2018.) $)
+    iinuniss $p |- ( A u. |^| B ) C_ |^|_ x e. B ( A u. x ) $=
+      ( vy cv wcel cint wo cab cun wral ciin r19.32vr vex elint2 orbi2i
+      elun ralbii 3imtr4i ss2abi df-un df-iin 3sstr4i ) DEZBFZUDCGZFZHZ
+      DIUDBAEZJZFZACKZDIBUFJACUJLUHULDUEUDUIFZACKZHUEUMHZACKUHULUEUMACM
+      UGUNUEAUDCDNOPUKUOACUDBUIQRSTDBUFUAADCUJUBUC $.
+
+    $( A relationship involving union and indexed union.  Exercise 25 of
+       [Enderton] p. 33 but with biconditional changed to implication.
+       (Contributed by Jim Kingdon, 19-Aug-2018.) $)
+    iununir $p |- ( ( A u. U. B ) = U_ x e. B ( A u. x ) ->
+        ( B = (/) -> A = (/) ) ) $=
+      ( c0 wceq cuni cun cv ciun unieq syl6eq uneq2d un0 iuneq1 eqeq12d
+      uni0 0iun biimpcd ) CDEZBCFZGZACBAHGZIZEBDESUABUCDSUABDGBSTDBSTDF
+      DCDJPKLBMKSUCADUBIDACDUBNAUBQKOR $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Subclass relationship for power class and union.  (Contributed by NM,
+       18-Jul-2006.) $)
+    sspwuni $p |- ( A C_ ~P B <-> U. A C_ B ) $=
+      ( vx cv cpw wcel wral wss cuni vex elpw ralbii dfss3 unissb 3bitr4i ) CDZ
+      BEZFZCAGPBHZCAGAQHAIBHRSCAPBCJKLCAQMCABNO $.
+
+    $( Two ways to express a collection of subclasses.  (Contributed by NM,
+       19-Jul-2006.) $)
+    pwssb $p |- ( A C_ ~P B <-> A. x e. A x C_ B ) $=
+      ( cpw wss cuni cv wral sspwuni unissb bitri ) BCDEBFCEAGCEABHBCIABCJK $.
+  $}
+
+  $( Relationship for power class and union.  (Contributed by NM,
+     18-Jul-2006.) $)
+  elpwuni $p |- ( B e. A -> ( A C_ ~P B <-> U. A = B ) ) $=
+    ( cpw wss cuni wcel wceq sspwuni unissel expcom eqimss impbid1 syl5bb ) ABC
+    DAEZBDZBAFZNBGZABHPOQOPQABIJNBKLM $.
+
+  ${
+    $d x y A $.
+    $( The power class of an intersection in terms of indexed intersection.
+       Exercise 24(a) of [Enderton] p. 33.  (Contributed by NM,
+       29-Nov-2003.) $)
+    iinpw $p |- ~P |^| A = |^|_ x e. A ~P x $=
+      ( vy cint cpw cv ciin wss wcel wral ssint vex elpw ralbii bitr4i wb eliin
+      cvv ax-mp 3bitr4i eqriv ) CBDZEZABAFZEZGZCFZUBHZUGUEIZABJZUGUCIUGUFIZUHUG
+      UDHZABJUJAUGBKUIULABUGUDCLZMNOUGUBUMMUGRIUKUJPUMAUGBUERQSTUA $.
+
+    $( Inclusion of an indexed union of a power class in the power class of the
+       union of its index.  Part of Exercise 24(b) of [Enderton] p. 33.
+       (Contributed by NM, 25-Nov-2003.) $)
+    iunpwss $p |- U_ x e. A ~P x C_ ~P U. A $=
+      ( vy cpw ciun cuni wss wrex wcel ssiun eliun vex elpw rexbii bitri uniiun
+      cv sseq2i 3imtr4i ssriv ) CABAQZDZEZBFZDZCQZUAGZABHZUFABUAEZGZUFUCIZUFUEI
+      ZABUAUFJUKUFUBIZABHUHAUFBUBKUMUGABUFUACLZMNOULUFUDGUJUFUDUNMUDUIUFABPROST
+      $.
+  $}
+
+  ${
+    $d x X $.
+    $( Relative intersection of an inhabited class.  (Contributed by Jim
+       Kingdon, 19-Aug-2018.) $)
+    rintm $p |- ( ( X C_ ~P A /\ E. x x e. X ) -> ( A i^i |^| X ) = |^| X ) $=
+      ( cpw wss cv wcel wex wa cint cin incom wceq cuni intssuni2m ssid
+      sspwuni mpbi syl6ss df-ss sylib syl5eq ) CBDZEAFCGAHIZBCJZKUEBKZU
+      EBUELUDUEBEUFUEMUDUEUCNZBACUCOUCUCEUGBEUCPUCBQRSUEBTUAUB $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                     Disjointness
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c Disj_ $.
+
+  $( Extend wff notation to include the statement that a family of classes
+     ` B ( x ) ` , for ` x e. A ` , is a disjoint family. $)
+  wdisj $a wff Disj_ x e. A B $.
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( A collection of classes ` B ( x ) ` is disjoint when for each element
+       ` y ` , it is in ` B ( x ) ` for at most one ` x ` .  (Contributed by
+       Mario Carneiro, 14-Nov-2016.)  (Revised by NM, 16-Jun-2017.) $)
+    df-disj $a |- ( Disj_ x e. A B <-> A. y E* x e. A y e. B ) $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( Alternate definition for disjoint classes.  (Contributed by NM,
+       17-Jun-2017.) $)
+    dfdisj2 $p |- ( Disj_ x e. A B <-> A. y E* x ( x e. A /\ y e. B ) ) $=
+      ( wdisj cv wcel wrmo wal wa wmo df-disj df-rmo albii bitri ) ACDEBFDGZACH
+      ZBIAFCGPJAKZBIABCDLQRBPACMNO $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y C $.
+    $( If each element of a collection is contained in a disjoint collection,
+       the original collection is also disjoint.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    disjss2 $p |- ( A. x e. A B C_ C ->
+      ( Disj_ x e. A C -> Disj_ x e. A B ) ) $=
+      ( vy wss wral cv wcel wrmo wal wdisj ssel ralimi rmoim syl alimdv df-disj
+      wi 3imtr4g ) CDFZABGZEHZDIZABJZEKUCCIZABJZEKABDLABCLUBUEUGEUBUFUDSZABGUEU
+      GSUAUHABCDUCMNUFUDABOPQAEBDRAEBCRT $.
+  $}
+
+  $( Equality theorem for disjoint collection.  (Contributed by Mario Carneiro,
+     14-Nov-2016.) $)
+  disjeq2 $p |- ( A. x e. A B = C ->
+    ( Disj_ x e. A B <-> Disj_ x e. A C ) ) $=
+    ( wceq wral wdisj wss wi eqimss2 ralimi disjss2 syl eqimss impbid ) CDEZABF
+    ZABCGZABDGZQDCHZABFRSIPTABDCJKABDCLMQCDHZABFSRIPUAABCDNKABCDLMO $.
+
+  ${
+    $d x ph $.
+    disjeq2dv.1 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
+    $( Equality deduction for disjoint collection.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    disjeq2dv $p |- ( ph -> ( Disj_ x e. A B <-> Disj_ x e. A C ) ) $=
+      ( wceq wral wdisj wb ralrimiva disjeq2 syl ) ADEGZBCHBCDIBCEIJANBCFKBCDEL
+      M $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.
+    $( A subset of a disjoint collection is disjoint.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    disjss1 $p |- ( A C_ B -> ( Disj_ x e. B C -> Disj_ x e. A C ) ) $=
+      ( vy wss cv wcel wa wmo wal wdisj wi ssel anim1d alrimiv moim syl dfdisj2
+      alimdv 3imtr4g ) BCFZAGZCHZEGDHZIZAJZEKUCBHZUEIZAJZEKACDLABDLUBUGUJEUBUIU
+      FMZAKUGUJMUBUKAUBUHUDUEBCUCNOPUIUFAQRTAECDSAEBDSUA $.
+
+    $( Equality theorem for disjoint collection.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    disjeq1 $p |- ( A = B -> ( Disj_ x e. A C <-> Disj_ x e. B C ) ) $=
+      ( wceq wdisj wss wi eqimss2 disjss1 syl eqimss impbid ) BCEZABDFZACDFZNCB
+      GOPHCBIACBDJKNBCGPOHBCLABCDJKM $.
+
+    disjeq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality theorem for disjoint collection.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    disjeq1d $p |- ( ph -> ( Disj_ x e. A C <-> Disj_ x e. B C ) ) $=
+      ( wceq wdisj wb disjeq1 syl ) ACDGBCEHBDEHIFBCDEJK $.
+
+    $d x ph $.
+    disjeq12d.1 $e |- ( ph -> C = D ) $.
+    $( Equality theorem for disjoint collection.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    disjeq12d $p |- ( ph -> ( Disj_ x e. A C <-> Disj_ x e. B D ) ) $=
+      ( wdisj disjeq1d wceq cv wcel adantr disjeq2dv bitrd ) ABCEIBDEIBDFIABCDE
+      GJABDEFAEFKBLDMHNOP $.
+  $}
+
+  ${
+    $d x y z A $.  $d z B $.  $d z C $.
+    cbvdisj.1 $e |- F/_ y B $.
+    cbvdisj.2 $e |- F/_ x C $.
+    cbvdisj.3 $e |- ( x = y -> B = C ) $.
+    $( Change bound variables in a disjoint collection.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    cbvdisj $p |- ( Disj_ x e. A B <-> Disj_ y e. A C ) $=
+      ( vz cv wcel wrmo wal wdisj nfcri weq eleq2d cbvrmo albii df-disj 3bitr4i
+      ) IJZDKZACLZIMUBEKZBCLZIMACDNBCENUDUFIUCUEABCBIDFOAIEGOABPDEUBHQRSAICDTBI
+      CETUA $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x C $.
+    cbvdisjv.1 $e |- ( x = y -> B = C ) $.
+    $( Change bound variables in a disjoint collection.  (Contributed by Mario
+       Carneiro, 11-Dec-2016.) $)
+    cbvdisjv $p |- ( Disj_ x e. A B <-> Disj_ y e. A C ) $=
+      ( nfcv cbvdisj ) ABCDEBDGAEGFH $.
+  $}
+
+  ${
+    $d z A $.  $d z B $.  $d x y z $.
+    nfdisjv.1 $e |- F/_ y A $.
+    nfdisjv.2 $e |- F/_ y B $.
+    $( Bound-variable hypothesis builder for disjoint collection.  (Contributed
+       by Jim Kingdon, 19-Aug-2018.) $)
+    nfdisjv $p |- F/ y Disj_ x e. A B $=
+      ( vz wdisj cv wcel wa wmo wal dfdisj2 nfcv nfel nfcri nfan nfmo
+      nfal nfxfr ) ACDHAIZCJZGIDJZKZALZGMBAGCDNUFBGUEBAUCUDBBUBCBUBOE
+      PBGDFQRSTUA $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    $( Bound-variable hypothesis builder for disjoint collection.  (Contributed
+       by Mario Carneiro, 14-Nov-2016.) $)
+    nfdisj1 $p |- F/ x Disj_ x e. A B $=
+      ( vy wdisj cv wcel wrmo wal df-disj nfrmo1 nfal nfxfr ) ABCEDFCGZABHZDIAA
+      DBCJOADNABKLM $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d x C $.
+    $( If there is a function ` C ( y ) ` such that ` C ( y ) = x ` for all
+       ` y e. B ( x ) ` , then the sets ` B ( x ) ` for distinct ` x e. A ` are
+       disjoint.  (Contributed by Mario Carneiro, 10-Dec-2016.) $)
+    invdisj $p |- ( A. x e. A A. y e. B C = x -> Disj_ x e. A B ) $=
+      ( cv wceq wral wcel wa wmo wal wdisj nfra2xy df-ral rsp eqcom syl6ib imim2i
+      wi imp3a alimi sylbi mo2icl syl alrimi dfdisj2 sylibr ) EAFZGZBDHZACHZUIC
+      IZBFDIZJZAKZBLACDMULUPBUJABCDNULUOUIEGZTZALZUPULUMUKTZALUSUKACOUTURAUTUMU
+      NUQUKUNUQTUMUKUNUJUQUJBDPEUIQRSUAUBUCUOAEUDUEUFABCDUGUH $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    $( Any collection of singletons is disjoint.  (Contributed by Mario
+       Carneiro, 14-Nov-2016.) $)
+    sndisj $p |- Disj_ x e. A { x } $=
+      ( vy cv csn wdisj wcel wmo dfdisj2 weq moeq simpr elsn sylib eqcomd moimi
+      wa ax-mp mpgbir ) ABADZEZFTBGZCDZUAGZQZAHZCACBUAIACJZAHUFAUCKUEUGAUEUCTUE
+      UDCAJUBUDLCTMNOPRS $.
+  $}
+
+  $( Any collection of empty sets is disjoint.  (Contributed by Mario Carneiro,
+     14-Nov-2016.) $)
+  0disj $p |- Disj_ x e. A (/) $=
+    ( c0 cv csn wss wral wdisj 0ss rgenw sndisj disjss2 mp2 ) CADEZFZABGABNHABC
+    HOABNIJABKABCNLM $.
+
+  ${
+    $d x y A $.  $d y B $.
+    $( A singleton collection is disjoint.  (Contributed by Mario Carneiro,
+       14-Nov-2016.) $)
+    disjxsn $p |- Disj_ x e. { A } B $=
+      ( vy csn wdisj cv wcel wa wmo dfdisj2 wceq moeq elsni adantr moimi mpgbir
+      ax-mp ) ABEZCFAGZSHZDGCHZIZAJZDADSCKTBLZAJUDABMUCUEAUAUEUBTBNOPRQ $.
+
+    $( An empty collection is disjoint.  (Contributed by Mario Carneiro,
+       14-Nov-2016.) $)
+    disjx0 $p |- Disj_ x e. (/) B $=
+      ( c0 csn wss wdisj 0ss disjxsn disjss1 mp2 ) CCDZEAKBFACBFKGACBHACKBIJ $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                     Binary relations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Extend wff notation to include the general binary relation predicate.
+     Note that the syntax is simply three class symbols in a row.  Since binary
+     relations are the only possible wff expressions consisting of three class
+     expressions in a row, the syntax is unambiguous. $)
+  wbr $a wff A R B $.
+
+  $( Define a general binary relation.  Note that the syntax is simply three
+     class symbols in a row.  Definition 6.18 of [TakeutiZaring] p. 29
+     generalized to arbitrary classes.  This definition of relations is
+     well-defined, although not very meaningful, when classes ` A ` and/or
+     ` B ` are proper classes (i.e. are not sets).  On the other hand, we often
+     find uses for this definition when ` R ` is a proper class.  (Contributed
+     by NM, 31-Dec-1993.) $)
+  df-br $a |- ( A R B <-> <. A , B >. e. R ) $.
+
+  $( Equality theorem for binary relations.  (Contributed by NM,
+     4-Jun-1995.) $)
+  breq $p |- ( R = S -> ( A R B <-> A S B ) ) $=
+    ( wceq cop wcel wbr eleq2 df-br 3bitr4g ) CDEABFZCGLDGABCHABDHCDLIABCJABDJK
+    $.
+
+  $( Equality theorem for a binary relation.  (Contributed by NM,
+     31-Dec-1993.) $)
+  breq1 $p |- ( A = B -> ( A R C <-> B R C ) ) $=
+    ( wceq cop wcel wbr opeq1 eleq1d df-br 3bitr4g ) ABEZACFZDGBCFZDGACDHBCDHMN
+    ODABCIJACDKBCDKL $.
+
+  $( Equality theorem for a binary relation.  (Contributed by NM,
+     31-Dec-1993.) $)
+  breq2 $p |- ( A = B -> ( C R A <-> C R B ) ) $=
+    ( wceq cop wcel wbr opeq2 eleq1d df-br 3bitr4g ) ABEZCAFZDGCBFZDGCADHCBDHMN
+    ODABCIJCADKCBDKL $.
+
+  $( Equality theorem for a binary relation.  (Contributed by NM,
+     8-Feb-1996.) $)
+  breq12 $p |- ( ( A = B /\ C = D ) -> ( A R C <-> B R D ) ) $=
+    ( wceq wbr breq1 breq2 sylan9bb ) ABFACEGBCEGCDFBDEGABCEHCDBEIJ $.
+
+  ${
+    breqi.1 $e |- R = S $.
+    $( Equality inference for binary relations.  (Contributed by NM,
+       19-Feb-2005.) $)
+    breqi $p |- ( A R B <-> A S B ) $=
+      ( wceq wbr wb breq ax-mp ) CDFABCGABDGHEABCDIJ $.
+  $}
+
+  ${
+    breq1i.1 $e |- A = B $.
+    $( Equality inference for a binary relation.  (Contributed by NM,
+       8-Feb-1996.) $)
+    breq1i $p |- ( A R C <-> B R C ) $=
+      ( wceq wbr wb breq1 ax-mp ) ABFACDGBCDGHEABCDIJ $.
+
+    $( Equality inference for a binary relation.  (Contributed by NM,
+       8-Feb-1996.) $)
+    breq2i $p |- ( C R A <-> C R B ) $=
+      ( wceq wbr wb breq2 ax-mp ) ABFCADGCBDGHEABCDIJ $.
+
+    ${
+      breq12i.2 $e |- C = D $.
+      $( Equality inference for a binary relation.  (Contributed by NM,
+         8-Feb-1996.)  (Proof shortened by Eric Schmidt, 4-Apr-2007.) $)
+      breq12i $p |- ( A R C <-> B R D ) $=
+        ( wceq wbr wb breq12 mp2an ) ABHCDHACEIBDEIJFGABCDEKL $.
+    $}
+  $}
+
+  ${
+    breq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for a binary relation.  (Contributed by NM,
+       8-Feb-1996.) $)
+    breq1d $p |- ( ph -> ( A R C <-> B R C ) ) $=
+      ( wceq wbr wb breq1 syl ) ABCGBDEHCDEHIFBCDEJK $.
+
+    $( Equality deduction for a binary relation.  (Contributed by NM,
+       29-Oct-2011.) $)
+    breqd $p |- ( ph -> ( C A D <-> C B D ) ) $=
+      ( wceq wbr wb breq syl ) ABCGDEBHDECHIFDEBCJK $.
+
+    $( Equality deduction for a binary relation.  (Contributed by NM,
+       8-Feb-1996.) $)
+    breq2d $p |- ( ph -> ( C R A <-> C R B ) ) $=
+      ( wceq wbr wb breq2 syl ) ABCGDBEHDCEHIFBCDEJK $.
+
+    ${
+      breq12d.2 $e |- ( ph -> C = D ) $.
+      $( Equality deduction for a binary relation.  (Contributed by NM,
+         8-Feb-1996.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
+      breq12d $p |- ( ph -> ( A R C <-> B R D ) ) $=
+        ( wceq wbr wb breq12 syl2anc ) ABCIDEIBDFJCEFJKGHBCDEFLM $.
+    $}
+
+    ${
+      breq123d.2 $e |- ( ph -> R = S ) $.
+      breq123d.3 $e |- ( ph -> C = D ) $.
+      $( Equality deduction for a binary relation.  (Contributed by NM,
+         29-Oct-2011.) $)
+      breq123d $p |- ( ph -> ( A R C <-> B S D ) ) $=
+        ( wbr breq12d breqd bitrd ) ABDFKCEFKCEGKABCDEFHJLAFGCEIMN $.
+    $}
+
+    ${
+      breqan12i.2 $e |- ( ps -> C = D ) $.
+      $( Equality deduction for a binary relation.  (Contributed by NM,
+         8-Feb-1996.) $)
+      breqan12d $p |- ( ( ph /\ ps ) -> ( A R C <-> B R D ) ) $=
+        ( wceq wbr wb breq12 syl2an ) ACDJEFJCEGKDFGKLBHICDEFGMN $.
+
+      $( Equality deduction for a binary relation.  (Contributed by NM,
+         8-Feb-1996.) $)
+      breqan12rd $p |- ( ( ps /\ ph ) -> ( A R C <-> B R D ) ) $=
+        ( wbr wb breqan12d ancoms ) ABCEGJDFGJKABCDEFGHILM $.
+    $}
+  $}
+
+  $( Two classes are different if they don't have the same relationship to a
+     third class.  (Contributed by NM, 3-Jun-2012.) $)
+  nbrne1 $p |- ( ( A R B /\ -. A R C ) -> B =/= C ) $=
+    ( wbr wn wne wceq breq2 biimpcd necon3bd imp ) ABDEZACDEZFBCGMNBCBCHMNBCADI
+    JKL $.
+
+  $( Two classes are different if they don't have the same relationship to a
+     third class.  (Contributed by NM, 3-Jun-2012.) $)
+  nbrne2 $p |- ( ( A R C /\ -. B R C ) -> A =/= B ) $=
+    ( wbr wn wne wceq breq1 biimpcd necon3bd imp ) ACDEZBCDEZFABGMNABABHMNABCDI
+    JKL $.
+
+  ${
+    eqbrtr.1 $e |- A = B $.
+    eqbrtr.2 $e |- B R C $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    eqbrtri $p |- A R C $=
+      ( wbr breq1i mpbir ) ACDGBCDGFABCDEHI $.
+  $}
+
+  ${
+    eqbrtrd.1 $e |- ( ph -> A = B ) $.
+    eqbrtrd.2 $e |- ( ph -> B R C ) $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 8-Oct-1999.) $)
+    eqbrtrd $p |- ( ph -> A R C ) $=
+      ( wbr breq1d mpbird ) ABDEHCDEHGABCDEFIJ $.
+  $}
+
+  ${
+    eqbrtrr.1 $e |- A = B $.
+    eqbrtrr.2 $e |- A R C $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    eqbrtrri $p |- B R C $=
+      ( eqcomi eqbrtri ) BACDABEGFH $.
+  $}
+
+  ${
+    eqbrtrrd.1 $e |- ( ph -> A = B ) $.
+    eqbrtrrd.2 $e |- ( ph -> A R C ) $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 24-Oct-1999.) $)
+    eqbrtrrd $p |- ( ph -> B R C ) $=
+      ( eqcomd eqbrtrd ) ACBDEABCFHGI $.
+  $}
+
+  ${
+    breqtr.1 $e |- A R B $.
+    breqtr.2 $e |- B = C $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    breqtri $p |- A R C $=
+      ( wbr breq2i mpbi ) ABDGACDGEBCADFHI $.
+  $}
+
+  ${
+    breqtrd.1 $e |- ( ph -> A R B ) $.
+    breqtrd.2 $e |- ( ph -> B = C ) $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 24-Oct-1999.) $)
+    breqtrd $p |- ( ph -> A R C ) $=
+      ( wbr breq2d mpbid ) ABCEHBDEHFACDBEGIJ $.
+  $}
+
+  ${
+    breqtrr.1 $e |- A R B $.
+    breqtrr.2 $e |- C = B $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 5-Aug-1993.) $)
+    breqtrri $p |- A R C $=
+      ( eqcomi breqtri ) ABCDECBFGH $.
+  $}
+
+  ${
+    breqtrrd.1 $e |- ( ph -> A R B ) $.
+    breqtrrd.2 $e |- ( ph -> C = B ) $.
+    $( Substitution of equal classes into a binary relation.  (Contributed by
+       NM, 24-Oct-1999.) $)
+    breqtrrd $p |- ( ph -> A R C ) $=
+      ( eqcomd breqtrd ) ABCDEFADCGHI $.
+  $}
+
+  ${
+    3brtr3.1 $e |- A R B $.
+    3brtr3.2 $e |- A = C $.
+    3brtr3.3 $e |- B = D $.
+    $( Substitution of equality into both sides of a binary relation.
+       (Contributed by NM, 11-Aug-1999.) $)
+    3brtr3i $p |- C R D $=
+      ( eqbrtrri breqtri ) CBDEACBEGFIHJ $.
+  $}
+
+  ${
+    3brtr4.1 $e |- A R B $.
+    3brtr4.2 $e |- C = A $.
+    3brtr4.3 $e |- D = B $.
+    $( Substitution of equality into both sides of a binary relation.
+       (Contributed by NM, 11-Aug-1999.) $)
+    3brtr4i $p |- C R D $=
+      ( eqbrtri breqtrri ) CBDECABEGFIHJ $.
+  $}
+
+  ${
+    3brtr3d.1 $e |- ( ph -> A R B ) $.
+    3brtr3d.2 $e |- ( ph -> A = C ) $.
+    3brtr3d.3 $e |- ( ph -> B = D ) $.
+    $( Substitution of equality into both sides of a binary relation.
+       (Contributed by NM, 18-Oct-1999.) $)
+    3brtr3d $p |- ( ph -> C R D ) $=
+      ( wbr breq12d mpbid ) ABCFJDEFJGABDCEFHIKL $.
+  $}
+
+  ${
+    3brtr4d.1 $e |- ( ph -> A R B ) $.
+    3brtr4d.2 $e |- ( ph -> C = A ) $.
+    3brtr4d.3 $e |- ( ph -> D = B ) $.
+    $( Substitution of equality into both sides of a binary relation.
+       (Contributed by NM, 21-Feb-2005.) $)
+    3brtr4d $p |- ( ph -> C R D ) $=
+      ( wbr breq12d mpbird ) ADEFJBCFJGADBECFHIKL $.
+  $}
+
+  ${
+    3brtr3g.1 $e |- ( ph -> A R B ) $.
+    3brtr3g.2 $e |- A = C $.
+    3brtr3g.3 $e |- B = D $.
+    $( Substitution of equality into both sides of a binary relation.
+       (Contributed by NM, 16-Jan-1997.) $)
+    3brtr3g $p |- ( ph -> C R D ) $=
+      ( wbr breq12i sylib ) ABCFJDEFJGBDCEFHIKL $.
+  $}
+
+  ${
+    3brtr4g.1 $e |- ( ph -> A R B ) $.
+    3brtr4g.2 $e |- C = A $.
+    3brtr4g.3 $e |- D = B $.
+    $( Substitution of equality into both sides of a binary relation.
+       (Contributed by NM, 16-Jan-1997.) $)
+    3brtr4g $p |- ( ph -> C R D ) $=
+      ( wbr breq12i sylibr ) ABCFJDEFJGDBECFHIKL $.
+  $}
+
+  ${
+    syl5eqbr.1 $e |- A = B $.
+    syl5eqbr.2 $e |- ( ph -> B R C ) $.
+    $( B chained equality inference for a binary relation.  (Contributed by NM,
+       11-Oct-1999.) $)
+    syl5eqbr $p |- ( ph -> A R C ) $=
+      ( eqid 3brtr4g ) ACDBDEGFDHI $.
+  $}
+
+  ${
+    syl5eqbrr.1 $e |- B = A $.
+    syl5eqbrr.2 $e |- ( ph -> B R C ) $.
+    $( B chained equality inference for a binary relation.  (Contributed by NM,
+       17-Sep-2004.) $)
+    syl5eqbrr $p |- ( ph -> A R C ) $=
+      ( eqid 3brtr3g ) ACDBDEGFDHI $.
+  $}
+
+  ${
+    syl5breq.1 $e |- A R B $.
+    syl5breq.2 $e |- ( ph -> B = C ) $.
+    $( B chained equality inference for a binary relation.  (Contributed by NM,
+       11-Oct-1999.) $)
+    syl5breq $p |- ( ph -> A R C ) $=
+      ( wbr a1i breqtrd ) ABCDEBCEHAFIGJ $.
+  $}
+
+  ${
+    syl5breqr.1 $e |- A R B $.
+    syl5breqr.2 $e |- ( ph -> C = B ) $.
+    $( B chained equality inference for a binary relation.  (Contributed by NM,
+       24-Apr-2005.) $)
+    syl5breqr $p |- ( ph -> A R C ) $=
+      ( eqcomd syl5breq ) ABCDEFADCGHI $.
+  $}
+
+  ${
+    syl6eqbr.1 $e |- ( ph -> A = B ) $.
+    syl6eqbr.2 $e |- B R C $.
+    $( A chained equality inference for a binary relation.  (Contributed by NM,
+       12-Oct-1999.) $)
+    syl6eqbr $p |- ( ph -> A R C ) $=
+      ( wbr breq1d mpbiri ) ABDEHCDEHGABCDEFIJ $.
+  $}
+
+  ${
+    syl6eqbrr.1 $e |- ( ph -> B = A ) $.
+    syl6eqbrr.2 $e |- B R C $.
+    $( A chained equality inference for a binary relation.  (Contributed by NM,
+       4-Jan-2006.) $)
+    syl6eqbrr $p |- ( ph -> A R C ) $=
+      ( eqcomd syl6eqbr ) ABCDEACBFHGI $.
+  $}
+
+  ${
+    syl6breq.1 $e |- ( ph -> A R B ) $.
+    syl6breq.2 $e |- B = C $.
+    $( A chained equality inference for a binary relation.  (Contributed by NM,
+       11-Oct-1999.) $)
+    syl6breq $p |- ( ph -> A R C ) $=
+      ( eqid 3brtr3g ) ABCBDEFBHGI $.
+  $}
+
+  ${
+    syl6breqr.1 $e |- ( ph -> A R B ) $.
+    syl6breqr.2 $e |- C = B $.
+    $( A chained equality inference for a binary relation.  (Contributed by NM,
+       24-Apr-2005.) $)
+    syl6breqr $p |- ( ph -> A R C ) $=
+      ( eqcomi syl6breq ) ABCDEFDCGHI $.
+  $}
+
+
+  ${
+    ssbrd.1 $e |- ( ph -> A C_ B ) $.
+    $( Deduction from a subclass relationship of binary relations.
+       (Contributed by NM, 30-Apr-2004.) $)
+    ssbrd $p |- ( ph -> ( C A D -> C B D ) ) $=
+      ( cop wcel wbr sseld df-br 3imtr4g ) ADEGZBHMCHDEBIDECIABCMFJDEBKDECKL $.
+  $}
+
+  ${
+    ssbri.1 $e |- A C_ B $.
+    $( Inference from a subclass relationship of binary relations.
+       (Contributed by NM, 28-Mar-2007.)  (Revised by Mario Carneiro,
+       8-Feb-2015.) $)
+    ssbri $p |- ( C A D -> C B D ) $=
+      ( wbr wi wtru wss a1i ssbrd trud ) CDAFCDBFGHABCDABIHEJKL $.
+  $}
+
+  ${
+    $d y z A $.  $d y z B $.  $d y z R $.  $d x y z $.  $d y ph $.
+    nfbrd.2 $e |- ( ph -> F/_ x A ) $.
+    nfbrd.3 $e |- ( ph -> F/_ x R ) $.
+    nfbrd.4 $e |- ( ph -> F/_ x B ) $.
+    $( Deduction version of bound-variable hypothesis builder ~ nfbr .
+       (Contributed by NM, 13-Dec-2005.)  (Revised by Mario Carneiro,
+       14-Oct-2016.) $)
+    nfbrd $p |- ( ph -> F/ x A R B ) $=
+      ( wbr cop wcel df-br nfopd nfeld nfxfrd ) CDEICDJZEKABCDELABPEABCDFHMGNO
+      $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d y R $.  $d x y $.
+    nfbr.1 $e |- F/_ x A $.
+    nfbr.2 $e |- F/_ x R $.
+    nfbr.3 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for binary relation.  (Contributed by
+       NM, 1-Sep-1999.)  (Revised by Mario Carneiro, 14-Oct-2016.) $)
+    nfbr $p |- F/ x A R B $=
+      ( wbr wnf wtru wnfc a1i nfbrd trud ) BCDHAIJABCDABKJELADKJFLACKJGLMN $.
+  $}
+
+  ${
+    $d x y $.  $d y z A $.  $d y z R $.
+    $( Relationship between a binary relation and a class abstraction.
+       (Contributed by Andrew Salmon, 8-Jul-2011.) $)
+    brab1 $p |- ( x R A <-> x e. { z | z R A } ) $=
+      ( vy cv wbr wsbc cab wcel cvv wb vex breq1 sbcie2g ax-mp df-sbc bitr3i )
+      AFZCDGZBFZCDGZBSHZSUBBIJSKJUCTLAMUBEFZCDGTBESKUAUDCDNUDSCDNOPUBBSQR $.
+  $}
+
+  $( The union of two binary relations.  (Contributed by NM, 21-Dec-2008.) $)
+  brun $p |- ( A ( R u. S ) B <-> ( A R B \/ A S B ) ) $=
+    ( cop cun wcel wo wbr elun df-br orbi12i 3bitr4i ) ABEZCDFZGNCGZNDGZHABOIAB
+    CIZABDIZHNCDJABOKRPSQABCKABDKLM $.
+
+  $( The intersection of two relations.  (Contributed by FL, 7-Oct-2008.) $)
+  brin $p |- ( A ( R i^i S ) B <-> ( A R B /\ A S B ) ) $=
+    ( cop cin wcel wa wbr elin df-br anbi12i 3bitr4i ) ABEZCDFZGNCGZNDGZHABOIAB
+    CIZABDIZHNCDJABOKRPSQABCKABDKLM $.
+
+  $( The difference of two binary relations.  (Contributed by Scott Fenton,
+     11-Apr-2011.) $)
+  brdif $p |- ( A ( R \ S ) B <-> ( A R B /\ -. A S B ) ) $=
+    ( cop cdif wcel wn wa wbr eldif df-br notbii anbi12i 3bitr4i ) ABEZCDFZGPCG
+    ZPDGZHZIABQJABCJZABDJZHZIPCDKABQLUARUCTABCLUBSABDLMNO $.
+
+  ${
+    $d y z A $.  $d y z B $.  $d y z C $.  $d y z D $.  $d y z R $.
+    $d x y z $.
+    $( Move substitution in and out of a binary relation.  (Contributed by NM,
+       13-Dec-2005.)  (Proof shortened by Andrew Salmon, 9-Jul-2011.) $)
+    sbcbrg $p |- ( A e. D -> ( [. A / x ]. B R C <->
+           [_ A / x ]_ B [_ A / x ]_ R [_ A / x ]_ C ) ) $=
+      ( vy wbr wsb cv csb wsbc dfsbcq2 wceq csbeq1 breq123d nfcsb1v weq csbeq1a
+      nfbr sbie vtoclbg ) CDFHZAGIAGJZCKZAUDDKZAUDFKZHZUCABLABCKZABDKZABFKZHGBE
+      UCAGBMUDBNUEUIUFUJUGUKAUDBCOAUDBFOAUDBDOPUCUHAGAUEUFUGAUDCQAUDFQAUDDQTAGR
+      CUEDUFFUGAUDCSAUDFSAUDDSPUAUB $.
+  $}
+
+  ${
+    $d y A $.  $d y C $.  $d y D $.  $d x y R $.
+    $( Move substitution in and out of a binary relation.  (Contributed by NM,
+       13-Dec-2005.) $)
+    sbcbr12g $p |- ( A e. D ->
+                 ( [. A / x ]. B R C <-> [_ A / x ]_ B R [_ A / x ]_ C ) ) $=
+      ( wcel wbr wsbc csb sbcbrg csbconstg breqd bitrd ) BEGZCDFHABIABCJZABDJZA
+      BFJZHPQFHABCDEFKORFPQABFELMN $.
+  $}
+
+  ${
+    $d y A $.  $d x y C $.  $d y D $.  $d x y R $.
+    $( Move substitution in and out of a binary relation.  (Contributed by NM,
+       13-Dec-2005.) $)
+    sbcbr1g $p |- ( A e. D ->
+                  ( [. A / x ]. B R C <-> [_ A / x ]_ B R C ) ) $=
+      ( wcel wbr wsbc csb sbcbr12g csbconstg breq2d bitrd ) BEGZCDFHABIABCJZABD
+      JZFHPDFHABCDEFKOQDPFABDELMN $.
+  $}
+
+  ${
+    $d y A $.  $d x y B $.  $d y D $.  $d x y R $.
+    $( Move substitution in and out of a binary relation.  (Contributed by NM,
+       13-Dec-2005.) $)
+    sbcbr2g $p |- ( A e. D ->
+                  ( [. A / x ]. B R C <-> B R [_ A / x ]_ C ) ) $=
+      ( wcel wbr wsbc csb sbcbr12g csbconstg breq1d bitrd ) BEGZCDFHABIABCJZABD
+      JZFHCQFHABCDEFKOPCQFABCELMN $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Ordered-pair class abstractions (class builders)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c |-> $.  $( Maps-to symbol $)
+
+  $( Extend class notation to include ordered-pair class abstraction (class
+     builder). $)
+  copab $a class { <. x , y >. | ph } $.
+
+  $( Extend the definition of a class to include maps-to notation for defining
+     a function via a rule. $)
+  cmpt $a class ( x e. A |-> B ) $.
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.
+    $( Define the class abstraction of a collection of ordered pairs.
+       Definition 3.3 of [Monk1] p. 34.  Usually ` x ` and ` y ` are distinct,
+       although the definition doesn't strictly require it.  The brace notation
+       is called "class abstraction" by Quine; it is also (more commonly)
+       called a "class builder" in the literature.  (Contributed by NM,
+       4-Jul-1994.) $)
+    df-opab $a |- { <. x , y >. | ph } =
+                  { z | E. x E. y ( z = <. x , y >. /\ ph ) } $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.
+    $( Define maps-to notation for defining a function via a rule.  Read as
+       "the function defined by the map from ` x ` (in ` A ` ) to
+       ` B ( x ) ` ."  The class expression ` B ` is the value of the function
+       at ` x ` and normally contains the variable ` x ` .  Similar to the
+       definition of mapping in [ChoquetDD] p. 2.  (Contributed by NM,
+       17-Feb-2008.) $)
+    df-mpt $a |- ( x e. A |-> B ) =
+                    { <. x , y >. | ( x e. A /\ y = B ) } $.
+  $}
+
+  ${
+    $d x z R $.  $d y z R $.
+    $( The collection of ordered pairs in a class is a subclass of it.
+       (Contributed by NM, 27-Dec-1996.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    opabss $p |- { <. x , y >. | x R y } C_ R $=
+      ( vz cv wbr copab cop wceq wa wex cab df-opab df-br eleq1 biimpar sylan2b
+      wcel exlimivv abssi eqsstri ) AEZBEZCFZABGDEZUBUCHZIZUDJZBKAKZDLCUDABDMUI
+      DCUHUECRZABUDUGUFCRZUJUBUCCNUGUJUKUEUFCOPQSTUA $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.  $d z ps $.  $d z ch $.
+    opabbid.1 $e |- F/ x ph $.
+    opabbid.2 $e |- F/ y ph $.
+    opabbid.3 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equivalent wff's yield equal ordered-pair class abstractions (deduction
+       rule).  (Contributed by NM, 21-Feb-2004.)  (Proof shortened by Andrew
+       Salmon, 9-Jul-2011.) $)
+    opabbid $p |- ( ph -> { <. x , y >. | ps } = { <. x , y >. | ch } ) $=
+      ( vz cv cop wceq wa wex cab copab anbi2d exbid abbidv df-opab 3eqtr4g ) A
+      IJDJEJKLZBMZENZDNZIOUBCMZENZDNZIOBDEPCDEPAUEUHIAUDUGDFAUCUFEGABCUBHQRRSBD
+      EITCDEITUA $.
+  $}
+
+  ${
+    $d x ph $.  $d y z ph $.  $d z ps $.  $d z ch $.
+    opabbidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equivalent wff's yield equal ordered-pair class abstractions (deduction
+       rule).  (Contributed by NM, 15-May-1995.) $)
+    opabbidv $p |- ( ph -> { <. x , y >. | ps } = { <. x , y >. | ch } ) $=
+      ( nfv opabbid ) ABCDEADGAEGFH $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.  $d z ps $.
+    opabbii.1 $e |- ( ph <-> ps ) $.
+    $( Equivalent wff's yield equal class abstractions.  (Contributed by NM,
+       15-May-1995.) $)
+    opabbii $p |- { <. x , y >. | ph } = { <. x , y >. | ps } $=
+      ( vz cv wceq copab eqid wb a1i opabbidv ax-mp ) FGZOHZACDIBCDIHOJPABCDABK
+      PELMN $.
+  $}
+
+  ${
+    $d x z w $.  $d y z w $.  $d ph w $.
+    nfopab.1 $e |- F/ z ph $.
+    $( Bound-variable hypothesis builder for class abstraction.  (Contributed
+       by NM, 1-Sep-1999.)  (Unnecessary distinct variable restrictions were
+       removed by Andrew Salmon, 11-Jul-2011.) $)
+    nfopab $p |- F/_ z { <. x , y >. | ph } $=
+      ( vw copab cv cop wceq wa wex cab df-opab nfv nfan nfex nfab nfcxfr ) DAB
+      CGFHBHCHIJZAKZCLZBLZFMABCFNUCDFUBDBUADCTADTDOEPQQRS $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d z ph $.
+    $( The first abstraction variable in an ordered-pair class abstraction
+       (class builder) is effectively not free.  (Contributed by NM,
+       16-May-1995.)  (Revised by Mario Carneiro, 14-Oct-2016.) $)
+    nfopab1 $p |- F/_ x { <. x , y >. | ph } $=
+      ( vz copab cv cop wceq wa wex cab df-opab nfe1 nfab nfcxfr ) BABCEDFBFCFG
+      HAICJZBJZDKABCDLQBDPBMNO $.
+
+    $( The second abstraction variable in an ordered-pair class abstraction
+       (class builder) is effectively not free.  (Contributed by NM,
+       16-May-1995.)  (Revised by Mario Carneiro, 14-Oct-2016.) $)
+    nfopab2 $p |- F/_ y { <. x , y >. | ph } $=
+      ( vz copab cv cop wceq wa wex cab df-opab nfe1 nfex nfab nfcxfr ) CABCEDF
+      BFCFGHAIZCJZBJZDKABCDLSCDRCBQCMNOP $.
+  $}
+
+  ${
+    $d x y z w v $.  $d v ph $.  $d v ps $.
+    cbvopab.1 $e |- F/ z ph $.
+    cbvopab.2 $e |- F/ w ph $.
+    cbvopab.3 $e |- F/ x ps $.
+    cbvopab.4 $e |- F/ y ps $.
+    cbvopab.5 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables in an ordered-pair class
+       abstraction, using implicit substitution.  (Contributed by NM,
+       14-Sep-2003.) $)
+    cbvopab $p |- { <. x , y >. | ph } = { <. z , w >. | ps } $=
+      ( vv cv cop wceq wa wex cab nfv nfan opeq12 eqeq2d anbi12d cbvex2 df-opab
+      copab abbii 3eqtr4i ) LMZCMZDMZNZOZAPZDQCQZLRUIEMZFMZNZOZBPZFQEQZLRACDUFB
+      EFUFUOVALUNUTCDEFUMAEUMESGTUMAFUMFSHTUSBCUSCSITUSBDUSDSJTUJUPOUKUQOPZUMUS
+      ABVBULURUIUJUKUPUQUAUBKUCUDUGACDLUEBEFLUEUH $.
+  $}
+
+  ${
+    $d x y z w $.  $d z w v ph $.  $d x y v ps $.
+    cbvopabv.1 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
+    $( Rule used to change bound variables in an ordered-pair class
+       abstraction, using implicit substitution.  (Contributed by NM,
+       15-Oct-1996.) $)
+    cbvopabv $p |- { <. x , y >. | ph } = { <. z , w >. | ps } $=
+      ( nfv cbvopab ) ABCDEFAEHAFHBCHBDHGI $.
+  $}
+
+  ${
+    $d v w x y $.  $d v w y z $.  $d v w ph $.  $d v w ps $.
+    cbvopab1.1 $e |- F/ z ph $.
+    cbvopab1.2 $e |- F/ x ps $.
+    cbvopab1.3 $e |- ( x = z -> ( ph <-> ps ) ) $.
+    $( Change first bound variable in an ordered-pair class abstraction, using
+       explicit substitution.  (Contributed by NM, 6-Oct-2004.)  (Revised by
+       Mario Carneiro, 14-Oct-2016.) $)
+    cbvopab1 $p |- { <. x , y >. | ph } = { <. z , y >. | ps } $=
+      ( vw vv cv cop wceq wa wex cab copab wsb nfv nfan nfs1v nfex opeq1 eqeq2d
+      sbequ12 anbi12d exbidv cbvex nfsb sbequ sbie syl6bb bitri df-opab 3eqtr4i
+      abbii ) IKZCKZDKZLZMZANZDOZCOZIPUQEKZUSLZMZBNZDOZEOZIPACDQBEDQVDVJIVDUQJK
+      ZUSLZMZACJRZNZDOZJOVJVCVPCJVCJSVOCDVMVNCVMCSACJUATUBURVKMZVBVODVQVAVMAVNV
+      QUTVLUQURVKUSUCUDACJUEUFUGUHVPVIJEVOEDVMVNEVMESACJEFUITUBVIJSVKVEMZVOVHDV
+      RVMVGVNBVRVLVFUQVKVEUSUCUDVRVNACERBAJECUJABCEGHUKULUFUGUHUMUPACDIUNBEDIUN
+      UO $.
+  $}
+
+  ${
+    $d w x y z $.  $d w ph $.  $d w ps $.
+    cbvopab2.1 $e |- F/ z ph $.
+    cbvopab2.2 $e |- F/ y ps $.
+    cbvopab2.3 $e |- ( y = z -> ( ph <-> ps ) ) $.
+    $( Change second bound variable in an ordered-pair class abstraction, using
+       explicit substitution.  (Contributed by NM, 22-Aug-2013.) $)
+    cbvopab2 $p |- { <. x , y >. | ph } = { <. x , z >. | ps } $=
+      ( vw cv cop wceq wa wex cab copab nfv nfan opeq2 df-opab anbi12d 3eqtr4i
+      eqeq2d cbvex exbii abbii ) IJZCJZDJZKZLZAMZDNZCNZIOUGUHEJZKZLZBMZENZCNZIO
+      ACDPBCEPUNUTIUMUSCULURDEUKAEUKEQFRUQBDUQDQGRUIUOLZUKUQABVAUJUPUGUIUOUHSUC
+      HUAUDUEUFACDITBCEITUB $.
+  $}
+
+  ${
+    $d x y z w $.  $d z w ph $.
+    $( Change first bound variable in an ordered-pair class abstraction, using
+       explicit substitution.  (Contributed by NM, 31-Jul-2003.) $)
+    cbvopab1s $p |- { <. x , y >. | ph } = { <. z , y >. | [ z / x ] ph } $=
+      ( vw cv cop wceq wa wex cab wsb copab nfv nfs1v nfan opeq1 eqeq2d df-opab
+      nfex sbequ12 anbi12d exbidv cbvex abbii 3eqtr4i ) EFZBFZCFZGZHZAIZCJZBJZE
+      KUGDFZUIGZHZABDLZIZCJZDJZEKABCMURDCMUNVAEUMUTBDUMDNUSBCUQURBUQBNABDOPTUHU
+      OHZULUSCVBUKUQAURVBUJUPUGUHUOUIQRABDUAUBUCUDUEABCESURDCESUF $.
+  $}
+
+  ${
+    $d x y $.  $d y z $.  $d z ph $.  $d x ps $.
+    cbvopab1v.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
+    $( Rule used to change the first bound variable in an ordered pair
+       abstraction, using implicit substitution.  (Contributed by NM,
+       31-Jul-2003.)  (Proof shortened by Eric Schmidt, 4-Apr-2007.) $)
+    cbvopab1v $p |- { <. x , y >. | ph } = { <. z , y >. | ps } $=
+      ( nfv cbvopab1 ) ABCDEAEGBCGFH $.
+  $}
+
+  ${
+    $d x y z w $.  $d z w ph $.  $d y w ps $.
+    cbvopab2v.1 $e |- ( y = z -> ( ph <-> ps ) ) $.
+    $( Rule used to change the second bound variable in an ordered pair
+       abstraction, using implicit substitution.  (Contributed by NM,
+       2-Sep-1999.) $)
+    cbvopab2v $p |- { <. x , y >. | ph } = { <. x , z >. | ps } $=
+      ( vw cv cop wceq wex cab copab opeq2 eqeq2d anbi12d cbvexv exbii df-opab
+      wa abbii 3eqtr4i ) GHZCHZDHZIZJZATZDKZCKZGLUCUDEHZIZJZBTZEKZCKZGLACDMBCEM
+      UJUPGUIUOCUHUNDEUEUKJZUGUMABUQUFULUCUEUKUDNOFPQRUAACDGSBCEGSUB $.
+  $}
+
+  ${
+    $d w y z A $.  $d w ph $.  $d w x y z $.
+    $( Move substitution into a class abstraction.  (Contributed by NM,
+       6-Aug-2007.)  (Proof shortened by Mario Carneiro, 17-Nov-2016.) $)
+    csbopabg $p |- ( A e. V -> [_ A / x ]_ { <. y , z >. | ph } =
+               { <. y , z >. | [. A / x ]. ph } ) $=
+      ( vw cv copab csb wsb wceq wsbc csbeq1 dfsbcq2 opabbidv eqeq12d vex nfs1v
+      nfopab sbequ12 csbief vtoclg ) BGHZACDIZJZABGKZCDIZLBEUEJZABEMZCDIZLGEFUD
+      ELZUFUIUHUKBUDEUENULUGUJCDABGEOPQBUDUEUHGRUGCDBABGSTBHUDLAUGCDABGUAPUBUC
+      $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d ph z $.  $d ps z $.
+    $( Union of two ordered pair class abstractions.  (Contributed by NM,
+       30-Sep-2002.) $)
+    unopab $p |- ( { <. x , y >. | ph } u. { <. x , y >. | ps } ) =
+               { <. x , y >. | ( ph \/ ps ) } $=
+      ( vz cv cop wceq wa wex cab wo copab unab 19.43 andi exbii bitr2i df-opab
+      cun bitr3i abbii eqtri uneq12i 3eqtr4i ) EFCFDFGHZAIZDJZCJZEKZUFBIZDJZCJZ
+      EKZTZUFABLZIZDJZCJZEKZACDMZBCDMZTUPCDMUOUIUMLZEKUTUIUMENVCUSEVCUHULLZCJUS
+      UHULCOVDURCURUGUKLZDJVDUQVEDUFABPQUGUKDORQUAUBUCVAUJVBUNACDESBCDESUDUPCDE
+      SUE $.
+  $}
+
+  ${
+    $d x y ph $.  $d y A $.  $d y B $.  $d y C $.  $d y D $.
+    $( An equality theorem for the maps to notation.  (Contributed by Mario
+       Carneiro, 16-Dec-2013.) $)
+    mpteq12f $p |- ( ( A. x A = C /\ A. x e. A B = D ) ->
+                    ( x e. A |-> B ) = ( x e. C |-> D ) ) $=
+      ( vy wceq wal wral wa cv wcel copab cmpt nfa1 nfra1 nfan nfv rsp df-mpt
+      imp eqeq2d pm5.32da sp eleq2d anbi1d sylan9bbr opabbid 3eqtr4g ) BDGZAHZC
+      EGZABIZJZAKZBLZFKZCGZJZAFMUODLZUQEGZJZAFMABCNADENUNUSVBAFUKUMAUJAOULABPQU
+      NFRUMUSUPVAJUKVBUMUPURVAUMUPJCEUQUMUPULULABSUAUBUCUKUPUTVAUKBDUOUJAUDUEUF
+      UGUHAFBCTAFDETUI $.
+
+    mpteq12dv.1 $e |- ( ph -> A = C ) $.
+    ${
+      mpteq12dva.2 $e |- ( ( ph /\ x e. A ) -> B = D ) $.
+      $( An equality inference for the maps to notation.  (Contributed by Mario
+         Carneiro, 26-Jan-2017.) $)
+      mpteq12dva $p |- ( ph -> ( x e. A |-> B ) = ( x e. C |-> D ) ) $=
+        ( wceq wal wral cmpt alrimiv ralrimiva mpteq12f syl2anc ) ACEIZBJDFIZBC
+        KBCDLBEFLIAQBGMARBCHNBCDEFOP $.
+    $}
+
+    mpteq12dv.2 $e |- ( ph -> B = D ) $.
+    $( An equality inference for the maps to notation.  (Contributed by NM,
+       24-Aug-2011.)  (Revised by Mario Carneiro, 16-Dec-2013.) $)
+    mpteq12dv $p |- ( ph -> ( x e. A |-> B ) = ( x e. C |-> D ) ) $=
+      ( wceq cv wcel adantr mpteq12dva ) ABCDEFGADFIBJCKHLM $.
+  $}
+
+  ${
+    $d x A $.  $d x C $.
+    $( An equality theorem for the maps to notation.  (Contributed by NM,
+       16-Dec-2013.) $)
+    mpteq12 $p |- ( ( A = C /\ A. x e. A B = D ) ->
+                    ( x e. A |-> B ) = ( x e. C |-> D ) ) $=
+      ( wceq wal wral cmpt ax-17 mpteq12f sylan ) BDFZMAGCEFABHABCIADEIFMAJABCD
+      EKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( An equality theorem for the maps to notation.  (Contributed by Mario
+       Carneiro, 16-Dec-2013.) $)
+    mpteq1 $p |- ( A = B -> ( x e. A |-> C ) = ( x e. B |-> C ) ) $=
+      ( wceq wral cmpt cv wcel eqidd rgen mpteq12 mpan2 ) BCEDDEZABFABDGACDGENA
+      BAHBIDJKABDCDLM $.
+
+    mpteq1d.1 $e |- ( ph -> A = B ) $.
+    $( An equality theorem for the maps to notation.  (Contributed by Mario
+       Carneiro, 11-Jun-2016.) $)
+    mpteq1d $p |- ( ph -> ( x e. A |-> C ) = ( x e. B |-> C ) ) $=
+      ( wceq cmpt mpteq1 syl ) ACDGBCEHBDEHGFBCDEIJ $.
+  $}
+
+  ${
+    mpteq2ia.1 $e |- ( x e. A -> B = C ) $.
+    $( An equality inference for the maps to notation.  (Contributed by Mario
+       Carneiro, 16-Dec-2013.) $)
+    mpteq2ia $p |- ( x e. A |-> B ) = ( x e. A |-> C ) $=
+      ( wceq wal wral cmpt eqid ax-gen rgen mpteq12f mp2an ) BBFZAGCDFZABHABCIA
+      BDIFOABJKPABELABCBDMN $.
+  $}
+
+  ${
+    mpteq2i.1 $e |- B = C $.
+    $( An equality inference for the maps to notation.  (Contributed by Mario
+       Carneiro, 16-Dec-2013.) $)
+    mpteq2i $p |- ( x e. A |-> B ) = ( x e. A |-> C ) $=
+      ( wceq cv wcel a1i mpteq2ia ) ABCDCDFAGBHEIJ $.
+  $}
+
+  ${
+    mpteq12i.1 $e |- A = C $.
+    mpteq12i.2 $e |- B = D $.
+    $( An equality inference for the maps to notation.  (Contributed by Scott
+       Fenton, 27-Oct-2010.)  (Revised by Mario Carneiro, 16-Dec-2013.) $)
+    mpteq12i $p |- ( x e. A |-> B ) = ( x e. C |-> D ) $=
+      ( cmpt wceq wtru a1i mpteq12dv trud ) ABCHADEHIJABCDEBDIJFKCEIJGKLM $.
+  $}
+
+  ${
+    mpteq2da.1 $e |- F/ x ph $.
+    mpteq2da.2 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
+    $( Slightly more general equality inference for the maps to notation.
+       (Contributed by FL, 14-Sep-2013.)  (Revised by Mario Carneiro,
+       16-Dec-2013.) $)
+    mpteq2da $p |- ( ph -> ( x e. A |-> B ) = ( x e. A |-> C ) ) $=
+      ( wceq wal wral cmpt eqid ax-gen cv wcel ex ralrimi mpteq12f sylancr ) AC
+      CHZBIDEHZBCJBCDKBCEKHTBCLMAUABCFABNCOUAGPQBCDCERS $.
+  $}
+
+  ${
+    $d x ph $.
+    mpteq2dva.1 $e |- ( ( ph /\ x e. A ) -> B = C ) $.
+    $( Slightly more general equality inference for the maps to notation.
+       (Contributed by Scott Fenton, 25-Apr-2012.) $)
+    mpteq2dva $p |- ( ph -> ( x e. A |-> B ) = ( x e. A |-> C ) ) $=
+      ( nfv mpteq2da ) ABCDEABGFH $.
+  $}
+
+  ${
+    $d x ph $.
+    mpteq2dv.1 $e |- ( ph -> B = C ) $.
+    $( An equality inference for the maps to notation.  (Contributed by Mario
+       Carneiro, 23-Aug-2014.) $)
+    mpteq2dv $p |- ( ph -> ( x e. A |-> B ) = ( x e. A |-> C ) ) $=
+      ( wceq cv wcel adantr mpteq2dva ) ABCDEADEGBHCIFJK $.
+  $}
+
+  ${
+    $d z A $.  $d z B $.  $d x y z $.
+    nfmpt.1 $e |- F/_ x A $.
+    nfmpt.2 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for the maps-to notation.
+       (Contributed by NM, 20-Feb-2013.) $)
+    nfmpt $p |- F/_ x ( y e. A |-> B ) $=
+      ( vz cmpt cv wcel wceq wa copab df-mpt nfcri nfeq2 nfan nfopab nfcxfr ) A
+      BCDHBICJZGIZDKZLZBGMBGCDNUCBGATUBAABCEOAUADFPQRS $.
+  $}
+
+  ${
+    $d A z $.  $d B z $.  $d x y $.  $d x z $.
+    $( Bound-variable hypothesis builder for the maps-to notation.
+       (Contributed by FL, 17-Feb-2008.) $)
+    nfmpt1 $p |- F/_ x ( x e. A |-> B ) $=
+      ( vz cmpt cv wcel wceq wa copab df-mpt nfopab1 nfcxfr ) AABCEAFBGDFCHIZAD
+      JADBCKNADLM $.
+  $}
+
+  ${
+    $d w z x A $.  $d w z y A $.  $d w z B $.  $d w z C $.
+    cbvmpt.1 $e |- F/_ y B $.
+    cbvmpt.2 $e |- F/_ x C $.
+    cbvmpt.3 $e |- ( x = y -> B = C ) $.
+    $( Rule to change the bound variable in a maps-to function, using implicit
+       substitution.  This version has bound-variable hypotheses in place of
+       distinct variable conditions.  (Contributed by NM, 11-Sep-2011.) $)
+    cbvmpt $p |- ( x e. A |-> B ) = ( y e. A |-> C ) $=
+      ( vz vw cv wcel wceq wa copab cmpt wsb nfv nfan weq nfs1v sbequ12 anbi12d
+      eleq1 cbvopab1 nfeq2 nfsb sbequ eqeq2d sbie syl6bb eqtri df-mpt 3eqtr4i )
+      AKZCLZIKZDMZNZAIOZBKZCLZUQEMZNZBIOZACDPBCEPUTJKZCLZURAJQZNZJIOVEUSVIAIJUS
+      JRVGVHAVGARURAJUASAJTUPVGURVHUOVFCUDURAJUBUCUEVIVDJIBVGVHBVGBRURAJBBUQDFU
+      FUGSVDJRJBTZVGVBVHVCVFVACUDVJVHURABQVCURJBAUHURVCABAUQEGUFABTDEUQHUIUJUKU
+      CUEULAICDUMBICEUMUN $.
+  $}
+
+  ${
+    $d A x $.  $d A y $.  $d B y $.  $d C x $.
+    cbvmptv.1 $e |- ( x = y -> B = C ) $.
+    $( Rule to change the bound variable in a maps-to function, using implicit
+       substitution.  (Contributed by Mario Carneiro, 19-Feb-2013.) $)
+    cbvmptv $p |- ( x e. A |-> B ) = ( y e. A |-> C ) $=
+      ( nfcv cbvmpt ) ABCDEBDGAEGFH $.
+  $}
+
+  ${
+    $d x y $.  $d y B $.
+    $( Function with universal domain in maps-to notation.  (Contributed by NM,
+       16-Aug-2013.) $)
+    mptv $p |- ( x e. _V |-> B ) = { <. x , y >. | y = B } $=
+      ( cvv cmpt cv wcel wceq wa copab df-mpt vex biantrur opabbii eqtr4i ) ADC
+      EAFDGZBFCHZIZABJQABJABDCKQRABPQALMNO $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Transitive classes
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare a new symbol. $)
+  $c Tr $. $( Transitive predicate (read:  "the following class is
+              transitive") $)
+
+  $( Extend wff notation to include transitive classes.  Notation from
+     [TakeutiZaring] p. 35. $)
+  wtr $a wff Tr A $.
+
+  $( Define the transitive class predicate.  Definition of [Enderton] p. 71
+     extended to arbitrary classes.  For alternate definitions, see ~ dftr2
+     (which is suggestive of the word "transitive"), ~ dftr3 , ~ dftr4 , and
+     ~ dftr5 .  The term "complete" is used instead of "transitive" in
+     Definition 3 of [Suppes] p. 130.  (Contributed by NM, 29-Aug-1993.) $)
+  df-tr $a |- ( Tr A <-> U. A C_ A ) $.
+
+  ${
+    $d x y A $.
+    $( An alternate way of defining a transitive class.  Exercise 7 of
+       [TakeutiZaring] p. 40.  (Contributed by NM, 24-Apr-1994.) $)
+    dftr2 $p |- ( Tr A <-> A. x A. y ( ( x e. y /\ y e. A ) -> x e. A ) ) $=
+      ( cuni wss cv wcel wi wal wa dfss2 df-tr 19.23v eluni imbi1i bitr4i albii
+      wtr wex 3bitr4i ) CDZCEAFZUAGZUBCGZHZAICRUBBFZGUFCGJZUDHBIZAIAUACKCLUHUEA
+      UHUGBSZUDHUEUGUDBMUCUIUDBUBCNOPQT $.
+
+    $( An alternate way of defining a transitive class.  (Contributed by NM,
+       20-Mar-2004.) $)
+    dftr5 $p |- ( Tr A <-> A. x e. A A. y e. x y e. A ) $=
+      ( wtr cv wcel wa wi wal wral dftr2 alcom impexp albii df-ral bitr4i bitri
+      r19.21v ) CDBEZAEZFZTCFZGSCFZHZAIBIZUCBTJZACJZBACKUEUDBIZAIZUGUDBALUIUBUF
+      HZAIUGUHUJAUHUBUCHZBTJZUJUHUAUKHZBIULUDUMBUAUBUCMNUKBTOPUBUCBTRQNUFACOPQQ
+      $.
+
+    $( An alternate way of defining a transitive class.  Definition 7.1 of
+       [TakeutiZaring] p. 35.  (Contributed by NM, 29-Aug-1993.) $)
+    dftr3 $p |- ( Tr A <-> A. x e. A x C_ A ) $=
+      ( vy wtr cv wcel wral wss dftr5 dfss3 ralbii bitr4i ) BDCEBFCAEZGZABGMBHZ
+      ABGACBIONABCMBJKL $.
+  $}
+
+  $( An alternate way of defining a transitive class.  Definition of [Enderton]
+     p. 71.  (Contributed by NM, 29-Aug-1993.) $)
+  dftr4 $p |- ( Tr A <-> A C_ ~P A ) $=
+    ( wtr cuni wss cpw df-tr sspwuni bitr4i ) ABACADAAEDAFAAGH $.
+
+  $( Equality theorem for the transitive class predicate.  (Contributed by NM,
+     17-Sep-1993.) $)
+  treq $p |- ( A = B -> ( Tr A <-> Tr B ) ) $=
+    ( wceq cuni wss wtr unieq sseq1d sseq2 bitrd df-tr 3bitr4g ) ABCZADZAEZBDZB
+    EZAFBFMOPAEQMNPAABGHABPIJAKBKL $.
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( In a transitive class, the membership relation is transitive.
+       (Contributed by NM, 19-Apr-1994.)  (Proof shortened by Andrew Salmon,
+       9-Jul-2011.) $)
+    trel $p |- ( Tr A -> ( ( B e. C /\ C e. A ) -> B e. A ) ) $=
+      ( vy vx wtr cv wcel wa wi wal dftr2 eleq12 wb eleq1 adantl anbi12d adantr
+      wceq imbi12d spc2gv pm2.43b sylbi ) AFDGZEGZHZUEAHZIZUDAHZJZEKDKZBCHZCAHZ
+      IZBAHZJZDEALUKUNUOUJUPDEBCCAUDBSZUECSZIZUHUNUIUOUSUFULUGUMUDBUECMURUGUMNU
+      QUECAOPQUQUIUONURUDBAORTUAUBUC $.
+  $}
+
+  $( In a transitive class, the membership relation is transitive.
+     (Contributed by NM, 19-Apr-1994.) $)
+  trel3 $p |- ( Tr A -> ( ( B e. C /\ C e. D /\ D e. A ) -> B e. A ) ) $=
+    ( wtr wcel w3a wa 3anass trel anim2d syl5bi syld ) AEZBCFZCDFZDAFZGZOCAFZHZ
+    BAFROPQHZHNTOPQINUASOACDJKLABCJM $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( An element of a transitive class is a subset of the class.  (Contributed
+       by NM, 7-Aug-1994.) $)
+    trss $p |- ( Tr A -> ( B e. A -> B C_ A ) ) $=
+      ( vx wtr wcel wss cv wceq eleq1 sseq1 imbi12d imbi2d wral dftr3 rsp sylbi
+      wi vtoclg pm2.43b ) ADZBAEZBAFZTCGZAEZUCAFZQZQTUAUBQZQCBAUCBHZUFUGTUHUDUA
+      UEUBUCBAIUCBAJKLTUECAMUFCANUECAOPRS $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( The intersection of transitive classes is transitive.  (Contributed by
+       NM, 9-May-1994.) $)
+    trin $p |- ( ( Tr A /\ Tr B ) -> Tr ( A i^i B ) ) $=
+      ( vx wtr cin wss wral wcel elin trss im2anan9 syl5bi ssin syl6ib ralrimiv
+      wa cv dftr3 sylibr ) ADZBDZPZCQZABEZFZCUDGUDDUBUECUDUBUCUDHZUCAFZUCBFZPZU
+      EUFUCAHZUCBHZPUBUIUCABITUJUGUAUKUHAUCJBUCJKLUCABMNOCUDRS $.
+  $}
+
+  $( The empty set is transitive.  (Contributed by NM, 16-Sep-1993.) $)
+  tr0 $p |- Tr (/) $=
+    ( c0 wtr cpw wss 0ss dftr4 mpbir ) ABAACZDHEAFG $.
+
+  $( The universe is transitive.  (Contributed by NM, 14-Sep-2003.) $)
+  trv $p |- Tr _V $=
+    ( cvv wtr cuni wss ssv df-tr mpbir ) ABACZADHEAFG $.
+
+  ${
+    $d x y z A $.  $d y z B $.
+    $( The indexed union of a class of transitive sets is transitive.
+       (Contributed by Mario Carneiro, 16-Nov-2014.) $)
+    triun $p |- ( A. x e. A Tr B -> Tr U_ x e. A B ) $=
+      ( vy wtr wral cv ciun wss wcel wrex eliun r19.29 nfcv nfiu1 nfss trss imp
+      wa ssiun2 sstr2 syl5com syl5 rexlimi syl sylan2b ralrimiva dftr3 sylibr )
+      CEZABFZDGZABCHZIZDUMFUMEUKUNDUMULUMJUKULCJZABKZUNAULBCLUKUPSUJUOSZABKUNUJ
+      UOABMUQUNABAULUMAULNABCOPUQULCIZAGBJZUNUJUOURCULQRUSCUMIURUNABCTULCUMUAUB
+      UCUDUEUFUGDUMUHUI $.
+
+    $( The union of a class of transitive sets is transitive.  Exercise 5(a) of
+       [Enderton] p. 73.  (Contributed by Scott Fenton, 21-Feb-2011.)  (Proof
+       shortened by Mario Carneiro, 26-Apr-2014.) $)
+    truni $p |- ( A. x e. A Tr x -> Tr U. A ) $=
+      ( cv wtr wral ciun cuni triun wceq wb uniiun treq ax-mp sylibr ) ACZDABEA
+      BOFZDZBGZDZABOHRPISQJABKRPLMN $.
+
+    $( The intersection of a class of transitive sets is transitive.  Exercise
+       5(b) of [Enderton] p. 73.  (Contributed by Scott Fenton,
+       25-Feb-2011.) $)
+    trint $p |- ( A. x e. A Tr x -> Tr |^| A ) $=
+      ( vy cv wtr wral wel wss wi cint dftr3 ralbii biimpi df-ral ralcom4 bitri
+      wal sylib ralim alimi syl wcel vex elint2 ssint imbi12i albii sylibr ) AD
+      ZEZABFZCAGZABFZCDZUIHZABFZIZCQZBJZEZUKULUOIZABFZCQZURUKUOCUIFZABFZVCUKVEU
+      JVDABCUIKLMVEVACQZABFVCVDVFABUOCUINLVAACBOPRVBUQCULUOABSTUAUTUNUSHZCUSFZU
+      RCUSKVHUNUSUBZVGIZCQURVGCUSNVJUQCVIUMVGUPAUNBCUCUDAUNBUEUFUGPPUH $.
+
+    $( If ` A ` is transitive and inhabited, then ` |^| A ` is a subset of
+       ` A ` .  (Contributed by Jim Kingdon, 22-Aug-2018.) $)
+    trintssm $p |- ( ( E. x x e. A /\ Tr A ) -> |^| A C_ A ) $=
+      ( vy cv wcel wex wtr wa cint wral elint2 wrex r19.2m exp3acom23
+      vex ex trel rexlimdv sylan9 syl5bi ssrdv ) ADZBEZAFZBGZHZCBIZBC
+      DZUGEUHUBEZABJZUFUHBEZAUHBCOKUDUJUIABLZUEUKUDUJULUIABMPUEUIUKAB
+      UEUIUCUKBUHUBQNRSTUA $.
+
+    $( Any inhabited transitive class includes its intersection.  Similar to
+       Exercise 2 in [TakeutiZaring] p. 44.  (Contributed by Jim Kingdon,
+       22-Aug-2018.) $)
+    trint0m $p |- ( ( Tr A /\ E. x x e. A ) -> |^| A C_ A ) $=
+      ( cv wcel wex wtr cint wss wi intss1 trss com12 sylsyld exlimiv
+      sstr2 impcom ) ACZBDZAEBFZBGZBHZRSUAIARTQHSQBHZUAQBJSRUBBQKLTQB
+      OMNP $.
+  $}
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+       IZF Set Theory - add the Axioms of Collection and Separation
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          Introduce the Axiom of Collection
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
   ${
-    $d x y z $.  $d ph z $.
-    mo.1 $e |- ( ph -> A. y ph ) $.
-    $( Equivalent definitions of "there exists at most one."  (Contributed by
-       NM, 7-Aug-1994.) $)
-    mo $p |- ( E. y A. x ( ph -> x = y ) <->
-               A. x A. y ( ( ph /\ [ y / x ] ph ) -> x = y ) ) $=
-      ( vz weq wi wal wex wsb wa ax-17 hbim hbal cbv3h syl sylbir alimi wn hbn
-      equequ2 imbi2d albidv cbvexh hbs1 sbequ2 ax-8 imim12d ancli aaan prth syl6
-      sylibr equtr2 2alimi exlimiv impexp bi2.04 bitri 2albii eximi a7s syl5com
-      alim exim syl5bi alnex sbequ1 equcoms con3d pm2.21 19.8a 3syl a1d pm2.61i
-      impbii ) ABCFZGZBHZCIZAABCJZKZVQGZCHBHZVTABEFZGZBHZEIWDWGVSECWFCBAWECDWEC
-      LMZNVSELECFZWFVRBWIWEVQAECBUAUBUCUDWGWDEWGWFWACEFZGZKZCHBHZWDWGWGWKCHZKWM
-      WGWNWFWKBCWHWAWJBABCUEZWJBLMZVQWAAWEWJABCUFBCEUGUHOUIWFWKBCWHWPUJUMWLWCBC
-      WLWBWEWJKVQAWEWAWJUKBCEUNULUOPUPQWACIZWDVTGWDWAVRGZCHBHZWQVTWCWRBCWCAWAVQ
-      GGWRAWAVQUQAWAVQURUSUTWQWABHZCIZWSVTWAWTCWOVAWSWTVSGZCHZXAVTGWRXCCBWRBHXB
-      CWAVRBVDRVBWTVSCVEPVCVFWQSZVTWDXDWASZCHZVTWACVGXFASZBHVSVTXEXGCBWABWOTACD
-      TCBFAWAAWAGBCABCVHVIVJOXGVRBAVQVKRVSCVLVMQVNVOVP $.
+    $d x y z w a b $.
+    ax-coll.1 $e |- F/ b ph $.
+    $( Axiom of Collection.  Axiom 7 of [Crosilla], p.  "Axioms of CZF and IZF"
+       (with unnnecessary quantifier removed).  (Contributed by Jim Kingdon,
+       23-Aug-2018.) $)
+    ax-coll $a |- ( A. x e. a E. y ph -> E. b A. x e. a E. y e. b ph ) $.
+
+    $( Axiom of Replacement.  Axiom 7' of [Crosilla], p.  "Axioms of CZF and
+       IZF" (with unnnecessary quantifier removed).  In our context this is not
+       an axiom, but a theorem proved from ~ ax-coll .  It is identical to
+       ~ zfrep6 except for the choice of a freeness hypothesis rather than a
+       distinct variable constraint between ` b ` and ` ph ` .  (Contributed by
+       Jim Kingdon, 23-Aug-2018.) $)
+    repizf $p |- ( A. x e. a E! y ph -> E. b A. x e. a E. y e. b ph ) $=
+      ( weu cv wral wex wrex euex ralimi ax-coll syl ) ACGZBDHZIACJZB
+      QIACEHKBQIEJPRBQACLMABCDEFNO $.
+  $}
+
+  ${
+    $d ph w v $.  $d x y z w v $.
+    $( A version of the Axiom of Replacement.  Normally ` ph ` would have free
+       variables ` x ` and ` y ` .  Axiom 6 of [Kunen] p. 12.  The Separation
+       Scheme ~ ax-sep cannot be derived from this version and must be stated
+       as a separate axiom in an axiom system (such as Kunen's) that uses this
+       version.  (Contributed by NM, 10-Oct-2003.) $)
+    zfrep6 $p |- ( A. x e. z E! y ph -> E. w A. x e. z E. y e. w ph ) $=
+      ( nfv repizf ) ABCDEAEFG $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          Introduce the Axiom of Separation
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z $.  $d y z ph $.
+    $( The Axiom of Separation of IZF set theory.  Axiom 6 of [Crosilla], p.
+       "Axioms of CZF and IZF" (with unnnecessary quantifier removed, and with
+       a ` F/ y ph ` condition replaced by a distinct variable constraint
+       between ` y ` and ` ph ` ).
+
+       The Separation Scheme is a weak form of Frege's Axiom of Comprehension,
+       conditioning it (with ` x e. z ` ) so that it asserts the existence of a
+       collection only if it is smaller than some other collection ` z ` that
+       already exists.  This prevents Russell's paradox ~ ru .  In some texts,
+       this scheme is called "Aussonderung" or the Subset Axiom.
+
+       (Contributed by NM, 11-Sep-2006.) $)
+    ax-sep $a |- E. y A. x ( x e. y <-> ( x e. z /\ ph ) ) $.
+  $}
+
+  ${
+    $d x y z w $.  $d y ph w $.  $d z w $.
+    $( A less restrictive version of the Separation Scheme ~ ax-sep , where
+       variables ` x ` and ` z ` can both appear free in the wff ` ph ` , which
+       can therefore be thought of as ` ph ( x , z ) ` .  This version was
+       derived from the more restrictive ~ ax-sep with no additional set theory
+       axioms.  (Contributed by NM, 10-Dec-2006.)  (Proof shortened by Mario
+       Carneiro, 17-Nov-2016.) $)
+    axsep2 $p |- E. y A. x ( x e. y <-> ( x e. z /\ ph ) ) $=
+      ( vw wel wa wb wal wex cv eleq2 anbi1d anabs5 syl6bb bibi2d albidv exbidv
+      weq ax-sep chvarv ) BCFZBEFZBDFZAGZGZHZBIZCJUBUEHZBIZCJEDEDSZUHUJCUKUGUIB
+      UKUFUEUBUKUFUDUEGUEUKUCUDUEEKDKBKLMUDANOPQRUEBCETUA $.
+  $}
+
+  ${
+    $d x y A z $.  $d y ph z $.
+    zfauscl.1 $e |- A e. _V $.
+    $( Separation Scheme (Aussonderung) using a class variable.  To derive this
+       from ~ ax-sep , we invoke the Axiom of Extensionality (indirectly via
+       ~ vtocl ), which is needed for the justification of class variable
+       notation.
+
+       (Contributed by NM, 5-Aug-1993.) $)
+    zfauscl $p |- E. y A. x ( x e. y <-> ( x e. A /\ ph ) ) $=
+      ( vz cv wcel wa wb wal wex eleq2 anbi1d bibi2d albidv exbidv ax-sep vtocl
+      wceq ) BGZCGHZUAFGZHZAIZJZBKZCLUBUADHZAIZJZBKZCLFDEUCDTZUGUKCULUFUJBULUEU
+      IUBULUDUHAUCDUAMNOPQABCFRS $.
+  $}
+
+  ${
+    $d x ph z $.  $d x y z $.
+    bm1.3ii.1 $e |- E. x A. y ( ph -> y e. x ) $.
+    $( Convert implication to equivalence using the Separation Scheme
+       (Aussonderung) ~ ax-sep .  Similar to Theorem 1.3ii of [BellMachover]
+       p. 463.  (Contributed by NM, 5-Aug-1993.) $)
+    bm1.3ii $p |- E. x A. y ( y e. x <-> ph ) $=
+      ( vz wel wi wal wa wex weq elequ2 imbi2d albidv cbvexv mpbi ax-sep pm3.2i
+      wb exan 19.42v bimsc1 alanimi eximi sylbir exlimiv ax-mp ) ACEFZGZCHZCBFZ
+      UHAISZCHZBJZIZEJUKASZCHZBJZUJUNEUJEJZUNAUKGZCHZBJUSDVAUJBEBEKZUTUICVBUKUH
+      ABECLMNOPACBEQRTUOUREUOUJUMIZBJURUJUMBUAVCUQBUIULUPCAUHUKUBUCUDUEUFUG $.
+  $}
+
+  ${
+    $d x y z $.
+    $( Derive a weakened version of ~ ax-i9 , where ` x ` and ` y ` must be
+       distinct, from Separation ~ ax-sep and Extensionality ~ ax-ext .  The
+       theorem ` -. A. x -. x = y ` also holds ( ~ ax9vsep ), but in
+       intuitionistic logic ` E. x x = y ` is stronger.  (Contributed by Jim
+       Kingdon, 25-Aug-2018.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    a9evsep $p |- E. x x = y $=
+      ( vz cv wcel wceq wi wa wb wal wex ax-sep id biantru bibi2i alimi
+      biimpri ax-ext syl eximi ax-mp ) CDZADZEZUBBDZEZUBUBFZUGGZHZIZCJZ
+      AKUCUEFZAKUHCABLUKULAUKUDUFIZCJULUJUMCUMUJUFUIUDUHUFUGMNOQPABCRST
+      UA $.
+
+    $( Derive a weakened version of ~ ax-9 , where ` x ` and ` y ` must be
+       distinct, from Separation ~ ax-sep and Extensionality ~ ax-ext .  In
+       intuitionistic logic ~ a9evsep is stronger and also holds.  (Contributed
+       by NM, 12-Nov-2013.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    ax9vsep $p |- -. A. x -. x = y $=
+      ( cv wceq wex wn wal a9evsep exalim ax-mp ) ACBCDZAEKFAGFABHKAI
+      J $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+              Derive the Null Set Axiom
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y $.
+    zfnuleu.1 $e |- E. x A. y -. y e. x $.
+    $( Show the uniqueness of the empty set (using the Axiom of Extensionality
+       via ~ bm1.1 to strengthen the hypothesis in the form of ~ axnul ).
+       (Contributed by NM, 22-Dec-2007.) $)
+    zfnuleu $p |- E! x A. y -. y e. x $=
+      ( wel wn wal weu wfal wb wex nbfal albii exbii mpbi nfv bm1.1 ax-mp eubii
+      mpbir ) BADZEZBFZAGTHIZBFZAGZUDAJZUEUBAJUFCUBUDAUAUCBTKLZMNHABHAOPQUBUDAU
+      GRS $.
+  $}
+
+  ${
+    $d x y z w $.
+    $( The Null Set Axiom of ZF set theory: there exists a set with no
+       elements.  Axiom of Empty Set of [Enderton] p. 18.  In some textbooks,
+       this is presented as a separate axiom; here we show it can be derived
+       from Separation ~ ax-sep .  This version of the Null Set Axiom tells us
+       that at least one empty set exists, but does not tell us that it is
+       unique - we need the Axiom of Extensionality to do that (see
+       ~ zfnuleu ).
+
+       This theorem should not be referenced by any proof.  Instead, use
+       ~ ax-nul below so that the uses of the Null Set Axiom can be more easily
+       identified.  (Contributed by Jeff Hoffman, 3-Feb-2008.)  (Revised by NM,
+       4-Feb-2008.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    axnul $p |- E. x A. y -. y e. x $=
+      ( vz cv wn wa wb wal wex ax-sep pm3.24 intnan id mtbiri alimi eximi ax-mp
+      wcel ) BDZADRZSCDRZSSRZUBEFZFZGZBHZAITEZBHZAIUCBACJUFUHAUEUGBUETUDUCUAUBK
+      LUEMNOPQ $.
+
+    $( The Null Set Axiom of IZF set theory.  It was derived as ~ axnul above
+       and is therefore redundant, but we state it as a separate axiom here so
+       that its uses can be identified more easily.  Axiom 4 of [Crosilla] p.
+       "Axioms of CZF and IZF".  (Contributed by NM, 7-Aug-2003.) $)
+    ax-nul $a |- E. x A. y -. y e. x $.
+
+    $( The Null Set Axiom of ZF set theory: the empty set exists.  Corollary
+       5.16 of [TakeutiZaring] p. 20.  For the unabbreviated version, see
+       ~ ax-nul .  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
+       Salmon, 9-Jul-2011.) $)
+    0ex $p |- (/) e. _V $=
+      ( vx vy c0 cv wceq wex wel wn wal ax-nul eq0 exbii mpbir issetri ) ACADZC
+      EZAFBAGHBIZAFABJPQABOKLMN $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y $.
+    $( The existence of proper substitution into a class.  Although we adopt
+       the name ~ csbexgOLD for consistency with the Metamath Proof Explorer,
+       we do not yet have a version of this theorem without the ` A e. V `
+       condition, so unless/until that happens, this theorem is not obsolete
+       and can be used.  (Contributed by NM, 10-Nov-2005.) $)
+    csbexgOLD $p |- ( ( A e. V /\ A. x B e. W ) -> [_ A / x ]_ B e. _V ) $=
+      ( vy wcel wal wa csb wsbc cab cvv df-csb abid2 elex syl5eqel alimi spsbc
+      cv syl5 imp wb nfcv sbcabel adantr mpbid ) BDGZCEGZAHZIZABCJFTCGZABKFLZMA
+      FBCNUKULFLZMGZABKZUMMGZUHUJUPUJUOAHUHUPUIUOAUIUNCMFCOCEPQRUOABDSUAUBUHUPU
+      QUCUJULAFBMDAMUDUEUFUGQ $.
+  $}
+
+  ${
+    csbexOLD.1 $e |- A e. _V $.
+    csbexOLD.2 $e |- B e. _V $.
+    $( The existence of proper substitution into a class.  Although we adopt
+       the name ~ csbexOLD for consistency with the Metamath Proof Explorer, we
+       do not yet have a version of this theorem without the ` A e. V `
+       condition, so unless/until that happens, this theorem is not obsolete
+       and can be used.  (Contributed by NM, 7-Aug-2007.)  (Proof shortened by
+       Andrew Salmon, 29-Jun-2011.) $)
+    csbexOLD $p |- [_ A / x ]_ B e. _V $=
+      ( cvv wcel csb wal csbexgOLD mpan mpg ) CFGZABCHFGZABFGMAINDABCFFJKEL $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Theorems requiring subset and intersection existence
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z $.
+    $( No set contains all sets.  Theorem 41 of [Suppes] p. 30.  (Contributed
+       by NM, 23-Aug-1993.) $)
+    nalset $p |- -. E. x A. y y e. x $=
+      ( vz wel wn wex wal alexnim wa wb ax-sep weq elequ1 elequ2 notbid anbi12d
+      bitrd bibi12d spv pclem6 syl eximii mpg ) BADZEZBFUDBGAFEAUDABHCBDZCADZCC
+      DZEZIZJZCGZUEBUICBAKULBBDZUDUMEZIZJZUEUKUPCBCBLZUFUMUJUOCBBMUQUGUDUIUNCBA
+      MUQUHUMUQUHBCDUMCBCMCBBNQOPRSUMUDTUAUBUC $.
   $}
 
   ${
     $d x y $.
-    mo2.1 $e |- ( ph -> A. y ph ) $.
-    $( Alternate definition of "at most one."  (Contributed by NM,
-       8-Mar-1995.) $)
-    mo2 $p |- ( E* x ph <-> E. y A. x ( ph -> x = y ) ) $=
-      ( wmo wex weu wi weq wal df-mo alnex pm2.21 alimi 19.8a syl sylbir eumo0
-      wn ja eu3h simplbi2com impbii bitri ) ABEABFZABGZHZABCIZHZBJZCFZABKUGUKUEU
-      FUKUESASZBJZUKABLUMUJUKULUIBAUHMNUJCOPQABCDRTUFUEUKABCDUAUBUCUD $.
+    $( The universal class is not a member of itself (and thus is not a set).
+       Proposition 5.21 of [TakeutiZaring] p. 21; our proof, however, does not
+       depend on the Axiom of Regularity.  (Contributed by NM, 23-Aug-1993.) $)
+    vprc $p |- -. _V e. _V $=
+      ( vx vy cvv wcel cv wceq wex wal nalset vex tbt albii dfcleq bitr4i exbii
+      wb mtbi isset mtbir ) CCDAEZCFZAGZBEZTDZBHZAGUBABIUEUAAUEUDUCCDZPZBHUAUDU
+      GBUFUDBJKLBTCMNOQACRS $.
   $}
 
-  $( Something exists or at most one exists.  (Contributed by NM,
-     8-Mar-1995.) $)
-  exmo $p |- ( E. x ph \/ E* x ph ) $=
-    ( wex wmo wn weu wi pm2.21 df-mo sylibr orri ) ABCZABDZLELABFZGMLNHABIJK $.
+  $( The universal class doesn't belong to any class.  (Contributed by FL,
+     31-Dec-2006.) $)
+  nvel $p |- -. _V e. A $=
+    ( cvv wcel vprc elex mto ) BACBBCDBAEF $.
+
+  $( The universal class does not exist.  (Contributed by NM, 4-Jul-2005.) $)
+  vnex $p |- -. E. x x = _V $=
+    ( cvv wcel cv wceq wex vprc isset mtbi ) BBCADBEAFGABHI $.
 
   ${
-    moexex.1 $e |- ( ph -> A. y ph ) $.
-    $( "At most one" double quantification.  (Contributed by NM,
-       3-Dec-2001.) $)
-    moexex $p |- ( ( E* x ph /\ A. x E* y ps ) -> E* y E. x ( ph /\ ps ) ) $=
-      ( wmo wal wa wex wi hbmo1 hba1 hbe1 hbmo hbim mopick ex exlimih wn a1d ori
-      com3r alrimdh moim spsd syl6 hbex exsimpl con3i exmo syl pm2.61i imp ) ACF
-      ZBDFZCGZABHZCIZDFZACIZUNUPUSJZJZAVBCUNVACACKUPUSCUOCLURCDUQCMNOOAUNURBJZD
-      GZVAAUNVCDEADCENUNURABUNURABJABCPQUBUCVDUOUSCURBDUDUEUFRUTSZVAUNVEUSUPVEU
-      RDIZSUSVFUTURUTDADCEUGABCUHRUIVFUSURDUJUAUKTTULUM $.
-  $}
-
-  $( A condition allowing swap of "at most one" and existential quantifiers.
-     (Contributed by NM, 10-Apr-2004.) $)
-  2moswap $p |- ( A. x E* y ph -> ( E* x E. y ph -> E* y E. x ph ) ) $=
-    ( wmo wal wex wa hbe1 moexex expcom 19.8a pm4.71ri exbii mobii syl6ibr ) AC
-    DBEZACFZBDZQAGZBFZCDZABFZCDRPUAQABCACHIJUBTCASBAQACKLMNO $.
-
-  $( A condition allowing swap of uniqueness and existential quantifiers.
-     (Contributed by NM, 10-Apr-2004.) $)
-  2euswap $p |- ( A. x E* y ph -> ( E! x E. y ph -> E! y E. x ph ) ) $=
-    ( wmo wal wex wa weu wi excomim a1i 2moswap anim12d eu5 3imtr4g ) ACDBEZACF
-    ZBFZQBDZGABFZCFZTCDZGQBHTCHPRUASUBRUAIPABCJKABCLMQBNTCNO $.
-
-  ${
-    $d x y z w v u $.  $d z w v u ph $.
-    $( Two equivalent expressions for double "at most one."  (Contributed by
-       NM, 2-Feb-2005.) $)
-    2mo $p |- ( E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) <->
-              A. x A. y A. z A. w ( ( ph /\ [ z / x ] [ w / y ] ph ) ->
-                   ( x = z /\ y = w ) ) ) $=
-      ( vv vu weq wa wi wal wex wsb equequ2 bi2anan9 ax-17 albii bitri 2alimi
-      wn imbi2d 2albidv cbvex2v hbs1 hbim hbsb sbequ12 sylan9bbr equequ1 cbval2
-      imbi12d biimpi ancli alcom aaan hbal sylibr prth equtr2 anim12i an4s syl6
-      syl exlimivv sylbir impexp bi2.04 2albii alrimih 2eximi alrot4 alim al2imi
-      sylbi exim alimi syl5com syl5bi alnex notbid biimpri pm2.21 19.8a 19.23bi
-      3syl hbn a1d pm2.61i impbii ) ABDHZCEHZIZJZCKZBKZELZDLZAACEMZBDMZIZWLJZEK
-      DKZCKBKZWQABFHZCGHZIZJZCKZBKZGLFLXCXIWOFGDEFDHZGEHZIZXGWMBCXLXFWLAXJXDWJX
-      KXEWKFDBNGECNOUAUBUCXIXCFGXIXGWSDFHZEGHZIZJZIZEKZDKZCKZBKZXCXIXIXPEKZDKZI
-      ZYAXIYCXIYCXGXPBCDEXGDPXGEPZWSXOBWRBDUDZXOBPUEZWSXOCWRBDCACEUDUFZXOCPUEZW
-      LAWSXFXOWKAWRWJWSACEUGWRBDUGUHZWJXDXMWKXEXNBDFUICEGUIOUKUJULUMYAXHYBIZDKZ
-      BKYDXTYLBXTXRCKZDKYLXRCDUNYMYKDXGXPCEYEYIUOQRQXHYBBDXHDPXPBEYGUPUORUQXSXB
-      BCXQXADEXQWTXFXOIWLAXFWSXOURXDXMXEXNWLXDXMIWJXEXNIWKBDFUSCEGUSUTVAVBSSVCV
-      DVEWSELZDLZXCWQJXCWSWMJZEKDKZCKBKZYOWQXBYQBCXAYPDEXAAWSWLJJYPAWSWLVFAWSWL
-      VGRVHVHYOWSCKZBKZELZDLZYRWQWSYTDEWSYSBYFYHVIVJYRYTWOJZEKZDKZUUAWPJZDKUUBW
-      QJYRYPCKZBKZEKDKUUEYPBCDEVKUUHUUCDEUUGYSWNBWSWMCVLVMSVNUUDUUFDYTWOEVOVPUU
-      AWPDVOWEVQVRYOTZWQXCUUIWSTZEKZDKZWQUULYNTZDKUUIUUKUUMDWSEVSQYNDVSRUULATZC
-      KBKZWOWQUUOUULUUNUUJBCDEUUNDPUUNEPWSBYFWFWSCYHWFWLAWSYJVTUJWAUUNWMBCAWLWB
-      SWOWQEWPDWCWDWEVEWGWHWI $.
+    $d A x y $.  $d B x y $.
+    inex1.1 $e |- A e. _V $.
+    $( Separation Scheme (Aussonderung) using class notation.  Compare Exercise
+       4 of [TakeutiZaring] p. 22.  (Contributed by NM, 5-Aug-1993.) $)
+    inex1 $p |- ( A i^i B ) e. _V $=
+      ( vx vy cin cv wceq wex wcel wa wb zfauscl dfcleq elin bibi2i albii bitri
+      wal exbii mpbir issetri ) DABFZDGZUCHZDIEGZUDJZUFAJUFBJZKZLZESZDIUHEDACMU
+      EUKDUEUGUFUCJZLZESUKEUDUCNUMUJEULUIUGUFABOPQRTUAUB $.
   $}
 
   ${
-    $d z w ph $.  $d x y ps $.  $d x y z w $.
-    2mos.1 $e |- ( ( x = z /\ y = w ) -> ( ph <-> ps ) ) $.
-    $( Double "exists at most one", using implicit substitition.  (Contributed
-       by NM, 10-Feb-2005.) $)
-    2mos $p |- ( E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) <->
-             A. x A. y A. z A. w ( ( ph /\ ps ) -> ( x = z /\ y = w ) ) ) $=
-      ( weq wa wi wal wex wsb 2mo ax-17 sbrim wb expcom sbieh 2albii pm5.74ri
-      pm5.74d bitr3i anbi2i imbi1i bitri ) ACEHZDFHZIZJDKCKFLELAADFMZCEMZIZUIJZ
-      FKEKZDKCKABIZUIJZFKEKZDKCKACDEFNUNUQCDUMUPEFULUOUIUKBAUJBCEBCOUGUJBUGUJJU
-      GAJZDFMUGBJZUGADFUGDOPURUSDFUSDOUHUGABUGUHABQGRUBSUCUASUDUETTUF $.
-  $}
-
-  $( Double existential uniqueness.  This theorem shows a condition under which
-     a "naive" definition matches the correct one.  (Contributed by NM,
-     3-Dec-2001.) $)
-  2eu1 $p |- ( A. x E* y ph ->
-        ( E! x E! y ph <-> ( E! x E. y ph /\ E! y E. x ph ) ) ) $=
-    ( wmo wal weu wex wa wi eu5 exbii mobii anbi12i bitri simprbi anim2i ancoms
-    ax-4 sylib com12 moimi hba1 moanimh ancrd 2moswap imdistani syl 2eu2ex excom
-    syl6 jca jctild an4 syl6ibr 2exeu impbid1 ) ACDZBEZACFZBFZACGZBFZABGZCFZHZU
-    TURVEUTURVABGZVCCGZHZVABDZVCCDZHZHZVEUTURVKVHUTVAUQHZBDZURVKIUTVMBGZVNUTUSB
-    GZUSBDZHVOVNHUSBJVPVOVQVNUSVMBACJZKUSVMBVRLMNOVNURVIURHVKVNURVIVNURVAHZBDUR
-    VIIVSVMBVAURVMURUQVAUQBRPQUAURVABUQBUBUCSUDVIURVJURVIVJABCUETUFUJUGUTVFVGAB
-    CUHZUTVFVGVTABCUISUKULVEVFVIHZVGVJHZHVLVBWAVDWBVABJVCCJMVFVIVGVJUMNUNTABCUO
-    UP $.
-
-  $( Double existential uniqueness.  (Contributed by NM, 3-Dec-2001.) $)
-  2eu2 $p |- ( E! y E. x ph -> ( E! x E! y ph <-> E! x E. y ph ) ) $=
-    ( wex weu wmo wal wi eumo 2moex 2eu1 simpl syl6bi 3syl 2exeu expcom impbid
-    wa ) ABDZCEZACEBEZACDBEZTSCFACFBGZUAUBHSCIACBJUCUAUBTRUBABCKUBTLMNUBTUAABCO
-    PQ $.
-
-
-  $( Double existential uniqueness.  (Contributed by NM, 3-Dec-2001.) $)
-  2eu3 $p |- ( A. x A. y ( E* x ph \/ E* y ph ) ->
- ( ( E! x E! y ph /\ E! y E! x ph ) <-> ( E! x E. y ph /\ E! y E. x ph ) ) ) $=
-    ( wmo wo wal weu wa wex wb hbmo1 19.31 albii hbal 19.32 bitri wi 2eu1 2exeu
-    biimpd ancom syl6ib adantld adantrd jaoi ancoms jca impbid1 sylbi ) ABDZACD
-    ZECFZBFZUJCFZUKBFZEZACGBGZABGCGZHZACIBGZABICGZHZJUMUNUKEZBFUPULVCBUJUKCACKL
-    MUNUKBUJBCABKNOPUPUSVBUNUSVBQUOUNURVBUQUNURVAUTHZVBUNURVDACBRTVAUTUAUBUCUOU
-    QVBURUOUQVBABCRTUDUEVBUQURABCSVAUTURACBSUFUGUHUI $.
-
-  ${
-    $d x y z w $.  $d z w ph $.
-    $( An alternate definition of double existential uniqueness (see ~ 2eu4 ).
-       A mistake sometimes made in the literature is to use ` E! x E! y ` to
-       mean "exactly one ` x ` and exactly one ` y ` ."  (For example, see
-       Proposition 7.53 of [TakeutiZaring] p. 53.)  It turns out that this is
-       actually a weaker assertion, as can be seen by expanding out the formal
-       definitions.  This theorem shows that the erroneous definition can be
-       repaired by conjoining ` A. x E* y ph ` as an additional condition.  The
-       correct definition apparently has never been published.  ( ` E* ` means
-       "exists at most one.") (Contributed by NM, 26-Oct-2003.) $)
-    2eu5 $p |- ( ( E! x E! y ph /\ A. x E* y ph ) <->
-      ( E. x E. y ph /\ E. z E. w A. x A. y ( ph -> ( x = z /\ y = w ) ) ) ) $=
-      ( weu wmo wal wa wex weq 2eu1 pm5.32ri eumo adantl 2moex syl pm4.71i 2eu4
-      wi 3bitr2i ) ACFBFZACGBHZIACJZBFZABJZCFZIZUCIUHUDBJABDKCEKITCHBHEJDJIUCUB
-      UHABCLMUHUCUHUFCGZUCUGUIUEUFCNOACBPQRABCDESUA $.
+    inex2.1 $e |- A e. _V $.
+    $( Separation Scheme (Aussonderung) using class notation.  (Contributed by
+       NM, 27-Apr-1994.) $)
+    inex2 $p |- ( B i^i A ) e. _V $=
+      ( cin cvv incom inex1 eqeltri ) BADABDEBAFABCGH $.
   $}
 
   ${
-    $d x y z w v u $.  $d z w v u ph $.
-    $( Two equivalent expressions for double existential uniqueness.
-       (Contributed by NM, 2-Feb-2005.) $)
-    2eu6 $p |- ( ( E! x E. y ph /\ E! y E. x ph ) <->
-               E. z E. w A. x A. y ( ph <-> ( x = z /\ y = w ) ) ) $=
-      ( vu vv wex wa weq wi wal ax-17 hbsb sbequ12 equequ2 bi2anan9 hbim 2exbii
-      wsb weu 2eu4 19.29r2 hbs1 sylan9bbr cbvex2 imbi2d 2albidv cbvex2v equequ1
-      wb imbi12d cbval2 3bitri anbi12i 2albiim ancom bitri equcom imbi2i impexp
-      2mo 2albii hban sbco2h sbcom2 sbbii 3bitr3ri syl6bb anbi2d 19.21-2 3bitr3i
-      anbi2i abai 2sb6 anbi1i 3bitr2i bitr4i 3imtr4i 2alimi 2eximi 2exsb sylibr
-      bi2 bi1 jca impbii ) ACHZBUAABHCUAIWHBHZABDJZCEJZIZKZCLBLZEHDHZIZAWLUKZCL
-      BLZEHDHZABCDEUBWPWSACETZBDTZEHDHZXAXAEFTZDGTZIZDGJZEFJZIZKZFLGLZELDLZIXAX
-      JIZEHDHZWPWSXAXJDEUCWIXBWOXKAXABCDEADMAEMZWTBDUDZWTBDCACEUDNZWKAWTWJXAACE
-      OWTBDOUEZUFWOABGJZCFJZIZKZCLBLZFHGHXAXHKZELDLZFHGHXKWNYBDEGFXHWMYABCXHWLX
-      TAXFWJXRXGWKXSDGBPEFCPQUGUHUIYBYDGFYAYCBCDEYADMYAEMXAXHBXOXHBMZRXAXHCXPXH
-      CMZRWLAXAXTXHXQWJXRXFWKXSXGBDGUJCEFUJQULUMSXADEGFVBUNUOWSWLAKZCLBLZWNIZEH
-      DHXMWRYIDEWRWNYHIYIAWLBCUPWNYHUQURSXLYIDEXLXAXAWNKZIXAWNIYIXJYJXAXAAIZDBJ
-      ZECJZIZKZCLBLXAWMKZCLBLXJYJYOYPBCYOYKWLKYPYNWLYKYLWJYMWKDBUSECUSUOUTXAAWL
-      VAURVCYOXIBCGFYOGMYOFMXEXHBXAXDBXOXCDGBXAEFBXONNVDYERXEXHCXAXDCXPXCDGCXAE
-      FCXPNNVDYFRXTYKXEYNXHXTAXDXAXTAACFTZBGTZXDXSAYQXRYRACFOYQBGOUEWTEFTZBDTZD
-      GTYSBGTXDYRYSBGDYSDMVEYTXCDGWTEFBDVFVGYSYQBGACFEXNVEVGVHVIVJXRYLXFXSYMXGB
-      GDPCFEPQULUMXAWMBCXOXPVKVLVMXAWNVNXAYHWNABCDEVOVPVQSVRVSWSWIWOWSYHEHDHWIW
-      RYHDEWQYGBCAWLWDVTWAABCDEWBWCWRWNDEWQWMBCAWLWEVTWAWFWGUR $.
-  $}
-
-  $( Two equivalent expressions for double existential uniqueness.  Curiously,
-     we can put ` E! ` on either of the internal conjuncts but not both.  We
-     can also commute ` E! x E! y ` using ~ 2eu7 .  (Contributed by NM,
-     20-Feb-2005.) $)
-  2eu8 $p |- ( E! x E! y ( E. x ph /\ E. y ph ) <->
-                E! x E! y ( E! x ph /\ E. y ph ) ) $=
-    ( wex wa 2eu2 pm5.32i hbeu1 hbeu euan ancom eubii hbe1 3bitri 3bitr4ri 2eu7
-    weu 3bitr3ri ) ACDZBQZABQZCQZEZTABDZCQZEUASEZCQZBQZUDSECQBQTUBUEACBFGUBSEZB
-    QUBTEUHUCUBSBUABCABHIJUGUIBUGSUAEZCQSUBEUIUFUJCUASKLSUACACMJSUBKNLTUBKOABCP
-    R $.
-
-$(
-#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-Classical (not intuitionistic) results
-#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-$)
-
-  $( Theorem *4.52 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.)  (Proof shortened by Wolf Lammen, 5-Nov-2012.) $)
-  pm4.52 $p |- ( ( ph /\ -. ps ) <-> -. ( -. ph \/ ps ) ) $=
-    ( wn wa wi wo annim imor xchbinx ) ABCDABEACBFABGABHI $.
-
-  $( Theorem *4.53 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.53 $p |- ( -. ( ph /\ -. ps ) <-> ( -. ph \/ ps ) ) $=
-    ( wn wo wa pm4.52 con2bii bicomi ) ACBDZABCEZCJIABFGH $.
-
-  $( Disjunction in terms of conjunction (DeMorgan's law).  Compare Theorem
-     *4.57 of [WhiteheadRussell] p. 120.  As an equivalence, this does not hold
-     intuitionistically, but it would be possible to prove the forward
-     direction.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
-     Salmon, 7-May-2011.) $)
-  oran $p |- ( ( ph \/ ps ) <-> -. ( -. ph /\ -. ps ) ) $=
-    ( wn wa wo pm4.56 con2bii ) ACBCDABEABFG $.
-
-  $( Theorem *4.57 of [WhiteheadRussell] p. 120.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.57 $p |- ( -. ( -. ph /\ -. ps ) <-> ( ph \/ ps ) ) $=
-    ( wo wn wa oran bicomi ) ABCADBDEDABFG $.
-
-  $( Theorem *4.61 of [WhiteheadRussell] p. 120.  Only the reverse direction,
-     ~ annimim , is valid intuitionistically.  (Contributed by NM,
-     3-Jan-2005.) $)
-  pm4.61 $p |- ( -. ( ph -> ps ) <-> ( ph /\ -. ps ) ) $=
-    ( wn wa wi annim bicomi ) ABCDABECABFG $.
-
-  $( Theorem *4.65 of [WhiteheadRussell] p. 120.  The reverse direction is an
-     instance of ~ annimim .  (Contributed by NM, 3-Jan-2005.) $)
-  pm4.65 $p |- ( -. ( -. ph -> ps ) <-> ( -. ph /\ -. ps ) ) $=
-    ( wn pm4.61 ) ACBD $.
-
-  $( Implication distributes over disjunction.  Theorem *4.78 of
-     [WhiteheadRussell] p. 121.  We have an intuitionistic proof of one
-     direction at ~ pm4.78i .  (Contributed by NM, 3-Jan-2005.)  (Proof
-     shortened by Wolf Lammen, 19-Nov-2012.) $)
-  pm4.78 $p |- ( ( ( ph -> ps ) \/ ( ph -> ch ) ) <->
-                ( ph -> ( ps \/ ch ) ) ) $=
-    ( wn wo wi orordi imor orbi12i 3bitr4ri ) ADZBCEZEKBEZKCEZEALFABFZACFZEKBCG
-    ALHOMPNABHACHIJ $.
-
-  ${
-    19.36.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.36 of [Margaris] p. 90.  The forward direction, ~ 19.36i , is
-       valid intuitionistically, but the reverse direction is not.
-       (Contributed by NM, 5-Aug-1993.) $)
-    19.36 $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
-      ( wi wex wal 19.35 19.9h imbi2i bitri ) ABECFACGZBCFZELBEABCHMBLBCDIJK $.
+    $d x A $.  $d x B $.
+    $( Closed-form, generalized Separation Scheme.  (Contributed by NM,
+       7-Apr-1995.) $)
+    inex1g $p |- ( A e. V -> ( A i^i B ) e. _V ) $=
+      ( vx cv cin cvv wcel wceq ineq1 eleq1d vex inex1 vtoclg ) DEZBFZGHABFZGHD
+      ACOAIPQGOABJKOBDLMN $.
   $}
 
   ${
-    $d x ps $.
-    $( Special case of Theorem 19.36 of [Margaris] p. 90.  (Contributed by NM,
-       18-Aug-1993.) $)
-    19.36v $p |- ( E. x ( ph -> ps ) <-> ( A. x ph -> ps ) ) $=
-      ( ax-17 19.36 ) ABCBCDE $.
+    ssex.1 $e |- B e. _V $.
+    $( The subset of a set is also a set.  Exercise 3 of [TakeutiZaring]
+       p. 22.  This is one way to express the Axiom of Separation ~ ax-sep
+       (a.k.a.  Subset Axiom).  (Contributed by NM, 27-Apr-1994.) $)
+    ssex $p |- ( A C_ B -> A e. _V ) $=
+      ( wss cin wceq cvv wcel df-ss inex2 eleq1 mpbii sylbi ) ABDABEZAFZAGHZABI
+      ONGHPBACJNAGKLM $.
   $}
 
-  $( Theorem 19.39 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-  19.39 $p |- ( ( E. x ph -> E. x ps ) -> E. x ( ph -> ps ) ) $=
-    ( wex wi wal 19.2 imim1i 19.35 sylibr ) ACDZBCDZEACFZLEABECDMKLACCGHABCIJ
+  ${
+    ssexi.1 $e |- B e. _V $.
+    ssexi.2 $e |- A C_ B $.
+    $( The subset of a set is also a set.  (Contributed by NM, 9-Sep-1993.) $)
+    ssexi $p |- A e. _V $=
+      ( wss cvv wcel ssex ax-mp ) ABEAFGDABCHI $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( The subset of a set is also a set.  Exercise 3 of [TakeutiZaring] p. 22
+       (generalized).  (Contributed by NM, 14-Aug-1994.) $)
+    ssexg $p |- ( ( A C_ B /\ B e. C ) -> A e. _V ) $=
+      ( vx wcel wss cvv cv wi wceq sseq2 imbi1d vex ssex vtoclg impcom ) BCEABF
+      ZAGEZADHZFZRIQRIDBCSBJTQRSBAKLASDMNOP $.
+  $}
+
+  ${
+    ssexd.1 $e |- ( ph -> B e. C ) $.
+    ssexd.2 $e |- ( ph -> A C_ B ) $.
+    $( A subclass of a set is a set.  Deduction form of ~ ssexg .  (Contributed
+       by David Moews, 1-May-2017.) $)
+    ssexd $p |- ( ph -> A e. _V ) $=
+      ( wss wcel cvv ssexg syl2anc ) ABCGCDHBIHFEBCDJK $.
+  $}
+
+  $( Existence of a difference.  (Contributed by NM, 26-May-1998.) $)
+  difexg $p |- ( A e. V -> ( A \ B ) e. _V ) $=
+    ( cdif wss wcel cvv difss ssexg mpan ) ABDZAEACFKGFABHKACIJ $.
+
+  ${
+    $d x y A $.  $d y ph $.
+    zfausab.1 $e |- A e. _V $.
+    $( Separation Scheme (Aussonderung) in terms of a class abstraction.
+       (Contributed by NM, 8-Jun-1994.) $)
+    zfausab $p |- { x | ( x e. A /\ ph ) } e. _V $=
+      ( cv wcel wa cab ssab2 ssexi ) BECFAGBHCDABCIJ $.
+  $}
+
+  ${
+    $d x A $.
+    $( Separation Scheme in terms of a restricted class abstraction.
+       (Contributed by NM, 23-Oct-1999.) $)
+    rabexg $p |- ( A e. V -> { x e. A | ph } e. _V ) $=
+      ( crab wss wcel cvv ssrab2 ssexg mpan ) ABCEZCFCDGLHGABCILCDJK $.
+  $}
+
+  ${
+    $d x A $.
+    rabex.1 $e |- A e. _V $.
+    $( Separation Scheme in terms of a restricted class abstraction.
+       (Contributed by NM, 19-Jul-1996.) $)
+    rabex $p |- { x e. A | ph } e. _V $=
+      ( cvv wcel crab rabexg ax-mp ) CEFABCGEFDABCEHI $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ps $.
+    elssabg.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( Membership in a class abstraction involving a subset.  Unlike ~ elabg ,
+       ` A ` does not have to be a set.  (Contributed by NM, 29-Aug-2006.) $)
+    elssabg $p |- ( B e. V ->
+                  ( A e. { x | ( x C_ B /\ ph ) } <-> ( A C_ B /\ ps ) ) ) $=
+      ( wcel wss wa cvv wi cv cab wb ssexg expcom adantrd wceq sseq1 elab3g syl
+      anbi12d ) EFHZDEIZBJZDKHZLDCMZEIZAJZCNHUFOUDUEUGBUEUDUGDEFPQRUJUFCDKUHDSU
+      IUEABUHDETGUCUAUB $.
+  $}
+
+  ${
+    $d x A $.
+    $( The intersection of an inhabited class exists.  (Contributed by Jim
+       Kingdon, 27-Aug-2018.) $)
+    inteximm $p |- ( E. x x e. A -> |^| A e. _V ) $=
+      ( cv wcel cint cvv wss intss1 vex ssex syl exlimiv ) ACZBDZBEZF
+      DZANOMGPMBHOMAIJKL $.
+  $}
+
+  ${
+    $d x A $.
+    $( If the intersection of a class exists, the class is non-empty.
+       (Contributed by Jim Kingdon, 27-Aug-2018.) $)
+    intexr $p |- ( |^| A e. _V -> A =/= (/) ) $=
+      ( cint cvv wcel c0 wceq vprc int0 syl6eq eleq1d mtbiri necon2ai
+      inteq ) ABZCDZAEAEFZOCCDGPNCCPNEBCAEMHIJKL $.
+  $}
+
+  $( If a class intersection is the universe, it is not a set.  In classical
+     logic this would be an equivalence.  (Contributed by Jim Kingdon,
+     27-Aug-2018.) $)
+  intnexr $p |- ( |^| A = _V -> -. |^| A e. _V ) $=
+    ( cint cvv wceq wcel vprc eleq1 mtbiri ) ABZCDICECCEFICCGH $.
+
+  ${
+    $d x y $.  $d ph y $.
+    $( The intersection of an inhabited class abstraction exists.  (Contributed
+       by Jim Kingdon, 27-Aug-2018.) $)
+    intexabim $p |- ( E. x ph -> |^| { x | ph } e. _V ) $=
+      ( vy wex cv cab wcel cint cvv abid exbii nfsab1 nfv eleq1 cbvex
+      inteximm sylbir ) ABDBEZABFZGZBDZSHIGZTABABJKUACEZSGZCDUBUDTCBA
+      BCLTCMUCRSNOCSPQQ $.
+  $}
+
+  $( The intersection of an inhabited restricted class abstraction exists.
+     (Contributed by Jim Kingdon, 27-Aug-2018.) $)
+  intexrabim $p |- ( E. x e. A ph -> |^| { x e. A | ph } e. _V ) $=
+    ( cv wcel wa wex cab cint cvv wrex intexabim df-rex df-rab inteqi
+    crab eleq1i 3imtr4i ) BDCEAFZBGSBHZIZJEABCKABCPZIZJESBLABCMUCUAJU
+    BTABCNOQR $.
+
+  ${
+    $d A x y $.  $d B y $.  $d x y z $.  $d A z $.  $d B z $.
+    $( The existence of an indexed union. ` x ` is normally a free-variable
+       parameter in ` B ` , which should be read ` B ( x ) ` .  (Contributed by
+       Jim Kingdon, 28-Aug-2018.) $)
+    iinexgm $p |- ( ( E. x x e. A /\ A. x e. A B e. C ) ->
+        |^|_ x e. A B e. _V ) $=
+      ( vy vz cv wcel wex wral wa ciin wceq wrex cab cint cvv syl sylib
+      wi dfiin2g adantl elisset rgenw r19.2m mpan2 r19.35-1 imp rexcom4
+      abid exbii sylibr nfv nfsab1 eleq1 cbvex inteximm eqeltrd ) AGBHA
+      IZCDHZABJZKZABCLZEGZCMZABNZEOZPZQVAVCVHMUSAEBCDUAUBVBFGZVGHZFIZVH
+      QHVBVDVGHZEIZVKVBVFEIZVMVBVEEIZABNZVNUSVAVPUSUTVOTZABNZVAVPTUSVQA
+      BJVRVQABECDUCUDVQABUEUFUTVOABUGRUHVEAEBUISVLVFEVFEUJUKULVLVJEFVLF
+      UMVFEFUNVDVIVGUOUPSFVGUQRUR $.
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.
+    $( The intersection of a union ` U. A ` with a class ` B ` is equal to the
+       union of the intersections of each element of ` A ` with ` B ` .
+       (Contributed by FL, 24-Mar-2007.) $)
+    inuni $p |- ( U. A i^i B ) = U. { x | E. y e. A x = ( y i^i B ) } $=
+      ( vz cuni cin cv wceq wrex cab wcel wex eluni2 anbi1i elin r19.41v bitr4i
+      wa bitri ancom exbii rexcom4 vex inex1 eleq2 ceqsexv rexbii 3bitr4i eqriv
+      eluniab ) ECFZDGZAHZBHZDGZIZBCJZAKFZEHZUMLZUTUNLZURSZAMZUTUSLUTULLZUTDLZS
+      UTUOLZBCJZVFSZVAVDVEVHVFBUTCNOUTULDPVDUQVBSZAMZBCJZVIVDVJBCJZAMVLVCVMAVCU
+      RVBSVMVBURUAUQVBBCQRUBVJBACUCRVLVGVFSZBCJVIVKVNBCVKUTUPLZVNVBVOAUPUODBUDU
+      EUNUPUTUFUGUTUODPTUHVGVFBCQTTUIURAUTUKRUJ $.
+  $}
+
+  $( Membership in a power class.  Theorem 86 of [Suppes] p. 47.  (Contributed
+     by NM, 7-Aug-2000.) $)
+  elpw2g $p |- ( B e. V -> ( A e. ~P B <-> A C_ B ) ) $=
+    ( wcel cpw wss elpwi cvv ssexg elpwg biimparc syldan expcom impbid2 ) BCDZA
+    BEDZABFZABGQOPQOAHDZPABCIRPQABHJKLMN $.
+
+  ${
+    elpw2.1 $e |- B e. _V $.
+    $( Membership in a power class.  Theorem 86 of [Suppes] p. 47.
+       (Contributed by NM, 11-Oct-2007.) $)
+    elpw2 $p |- ( A e. ~P B <-> A C_ B ) $=
+      ( cvv wcel cpw wss wb elpw2g ax-mp ) BDEABFEABGHCABDIJ $.
+  $}
+
+
+  ${
+    $d A x y $.  $d V x y $.
+    $( The power set of a set is never a subset.  (Contributed by Stefan
+       O'Rear, 22-Feb-2015.) $)
+    pwnss $p |- ( A e. V -> -. ~P A C_ A ) $=
+      ( vx vy cpw cv wnel crab wcel wn wa wb eleq12 anidms notbid df-nel syl5bb
+      wss wceq cbvrabv elrab2 pclem6 ax-mp ssel mtoi ssrab2 elpw2g mpbiri nsyl3
+      ) AEZARZCFZULGZCAHZUJIZABIZUKUOUNAIZUNUNIZUQURJZKLUQJDFZUTIZJZUSDUNAUNUTU
+      NSZVAURVCVAURLUTUNUTUNMNOUMVBCDAUMULULIZJULUTSZVBULULPVEVDVAVEVDVALULUTUL
+      UTMNOQTUAURUQUBUCUJAUNUDUEUPUOUNARUMCAUFUNABUGUHUI $.
+  $}
+
+  $( No set equals its power set.  The sethood antecedent is necessary; compare
+     ~ pwv .  (Contributed by NM, 17-Nov-2008.)  (Proof shortened by Mario
+     Carneiro, 23-Dec-2016.) $)
+  pwne $p |- ( A e. V -> ~P A =/= A ) $=
+    ( wcel cpw wss wn wne pwnss eqimss necon3bi syl ) ABCADZAEZFLAGABHMLALAIJK
     $.
 
-  $( Theorem 19.24 of [Margaris] p. 90.  It does not hold in intuitionistic
-     logic.  (Contributed by NM, 5-Aug-1993.) $)
-  19.24 $p |- ( ( A. x ph -> A. x ps ) -> E. x ( ph -> ps ) ) $=
-    ( wal wi wex 19.2 imim2i 19.35 sylibr ) ACDZBCDZEKBCFZEABECFLMKBCCGHABCIJ
-    $.
-
-  ${
-    $d x ps $.  $d y ph $.
-    $( Special case of ~ 19.12 where its converse holds.  (Contributed by NM,
-       18-Jul-2001.)  (Revised by Andrew Salmon, 11-Jul-2011.) $)
-    19.12vv $p |- ( E. x A. y ( ph -> ps ) <-> A. y E. x ( ph -> ps ) ) $=
-      ( wal wex 19.21v exbii ax-17 hbal 19.36 19.36v albii 19.21h bitr2i 3bitri
-      wi ) ABQZDEZCFABDEZQZCFACEZTQZRCFZDEZSUACABDGHATCBCDBCIJKUEUBBQZDEUCUDUFD
-      ABCLMUBBDADCADIJNOP $.
-  $}
-
-  $( Theorem 19.14 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
-  exnal $p |- ( E. x -. ph <-> -. A. x ph ) $=
-    ( wal wn wex alex con2bii ) ABCADBEABFG $.
-
-  $( Part of theorem *11.5 in [WhiteheadRussell] p. 164.  (Contributed by
-     Andrew Salmon, 24-May-2011.) $)
-  2nalexn $p |- ( -. A. x A. y ph <-> E. x E. y -. ph ) $=
-    ( wn wex wal df-ex alex albii xchbinxr bicomi ) ADCEZBEZACFZBFZDMLDZBFOLBGN
-    PBACHIJK $.
-
-  $( A relationship between two quantifiers and negation.  (Contributed by NM,
-     18-Aug-1993.) $)
-  alexn $p |- ( A. x E. y -. ph <-> -. E. x A. y ph ) $=
-    ( wn wex wal exnal albii alnex bitri ) ADCEZBFACFZDZBFLBEDKMBACGHLBIJ $.
-
-  $( Theorem *11.51 in [WhiteheadRussell] p. 164.  (Contributed by Andrew
-     Salmon, 24-May-2011.)  (Proof shortened by Wolf Lammen, 25-Sep-2014.) $)
-  2exnexn $p |- ( E. x A. y ph <-> -. A. x E. y -. ph ) $=
-    ( wn wex wal alexn con2bii ) ADCEBFACFBEABCGH $.
-
-  $( A transformation of quantifiers and logical connectives.  (Contributed by
-     NM, 25-Mar-1996.)  (Proof shortened by Wolf Lammen, 4-Sep-2014.) $)
-  exanali $p |- ( E. x ( ph /\ -. ps ) <-> -. A. x ( ph -> ps ) ) $=
-    ( wn wa wex wi wal annim exbii exnal bitri ) ABDEZCFABGZDZCFNCHDMOCABIJNCKL
-    $.
-
-  $( Theorem 19.30 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
-     (Proof shortened by Andrew Salmon, 25-May-2011.) $)
-  19.30 $p |- ( A. x ( ph \/ ps ) -> ( A. x ph \/ E. x ps ) ) $=
-    ( wn wi wal wex wo exnal exim syl5bir df-or albii 3imtr4i ) ADZBEZCFZACFZDZ
-    BCGZEABHZCFRTHSOCGQTACIOBCJKUAPCABLMRTLN $.
-
-  ${
-    19.35ri.1 $e |- ( A. x ph -> E. x ps ) $.
-    $( Inference from Theorem 19.35 of [Margaris] p. 90.  (Contributed by NM,
-       5-Aug-1993.) $)
-    19.35ri $p |- E. x ( ph -> ps ) $=
-      ( wi wex wal 19.35 mpbir ) ABECFACGBCFEDABCHI $.
-  $}
-
-  $( Quantified "excluded middle."  Exercise 9.2a of Boolos, p. 111,
-     _Computability and Logic_.  (Contributed by NM, 10-Dec-2000.) $)
-  qexmid $p |- E. x ( ph -> A. x ph ) $=
-    ( wal 19.8a 19.35ri ) AABCZBFBDE $.
-
-  $( Variable ` x ` is effectively not free in ` ph ` iff ` ph ` is always true
-     or always false.  This is a classical result.  (Contributed by Mario
-     Carneiro, 24-Sep-2016.) $)
-  nf4 $p |- ( F/ x ph <-> ( A. x ph \/ A. x -. ph ) ) $=
-    ( wnf wex wal wi wn wo nf2 imor orcom alnex orbi2i bitr4i 3bitri ) ABCABDZA
-    BEZFPGZQHZQAGBEZHZABIPQJSQRHUARQKTRQABLMNO $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-             Additional substitution theorems (classical)
+                 Theorems requiring empty set existence
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-We define substitution via ~ df-sb (and also have theorems such
-as ~ dfsb7 or ~ dfsb7a ), and most of the substitution theorems such as
-~ sbim , ~ sbequ12 , or ~ sbidm have been proven intuitionistically.
-
-Here we collect substitution theorems which have not been proven
-intuitionistically, most of which probably do not have intuitionistic
-proofs.
 $)
 
-  $( A classical (not intuitionistic) alternate definition of proper
-     substitution that, like ~ df-sb , mixes free and bound variables to avoid
-     distinct variable requirements.  (Contributed by NM, 17-Feb-2005.) $)
-  dfsb2 $p |- ( [ y / x ] ph <->
-              ( ( x = y /\ ph ) \/ A. x ( x = y -> ph ) ) ) $=
-    ( wsb weq wa wi wal wo sbequ2 sps ax-4 jctild orc wn sb4 olc pm2.61i sbequ1
-    syl6 imp sb2 jaoi impbii ) ABCDZBCEZAFZUFAGBHZIZUFBHZUEUIGUJUEUGUIUJUEAUFUF
-    UEAGBABCJKUFBLMUGUHNTUJOUEUHUIABCPUHUGQTRUGUEUHUFAUEABCSUAABCUBUCUD $.
+  ${
+    $d x A $.
+    $( Equality theorem for classes and sets .  (Contributed by NM,
+       13-Dec-2005.)  (Proof shortened by Raph Levien, 30-Jun-2006.) $)
+    class2seteq $p |- ( A e. V -> { x e. A | A e. _V } = A ) $=
+      ( wcel cvv crab wceq elex wral cv ax-1 ralrimiv rabid2 sylibr eqcomd syl
+      ) BCDBEDZQABFZBGBCHQBRQQABIBRGQQABQAJBDKLQABMNOP $.
+  $}
 
-  $( A classical (not intuitionistic) alternate definition of proper
-     substitution ~ df-sb that uses only connectives on the right-hand side
-     which are, in classical logic, primitive rather than defined.
-     (Contributed by NM, 6-Mar-2007.) $)
-  dfsb3 $p |- ( [ y / x ] ph <->
-              ( ( x = y -> -. ph ) -> A. x ( x = y -> ph ) ) ) $=
-    ( weq wa wi wal wo wn wsb df-or dfsb2 imnan imbi1i 3bitr4i ) BCDZAEZPAFBGZH
-    QIZRFABCJPAIFZRFQRKABCLTSRPAMNO $.
+  $( Every power class contains the empty set.  (Contributed by NM,
+     25-Oct-2007.) $)
+  0elpw $p |- (/) e. ~P A $=
+    ( c0 cpw wcel wss 0ss 0ex elpw mpbir ) BACDBAEAFBAGHI $.
+
+  $( The empty set and its power set are not equal.  (Contributed by NM,
+     23-Dec-1993.) $)
+  0nep0 $p |- (/) =/= { (/) } $=
+    ( c0 csn 0ex snnz necomi ) ABAACDE $.
+
+  $( Something cannot be equal to both the null set and the power set of the
+     null set.  (Contributed by NM, 30-Sep-2003.) $)
+  0inp0 $p |- ( A = (/) -> -. A = { (/) } ) $=
+    ( c0 wceq csn wne 0nep0 neeq1 mpbiri neneqd ) ABCZABDZJAKEBKEFABKGHI $.
+
+  ${
+    $d A x y $.
+    $( The removal of the empty set from a class does not affect its union.
+       (Contributed by NM, 22-Mar-2004.) $)
+    unidif0 $p |- U. ( A \ { (/) } ) = U. A $=
+      ( vx vy c0 csn cdif cuni cv wcel wn wa wex n0i pm4.71i anbi1i exbii eluni
+      wceq anbi2i bitri an32 anass 3bitr2ri eldif elsn notbii 3bitr4i eqriv ) B
+      ADEZFZGZAGZBHZCHZIZUNAIZUNDRZJZKZKZCLZUOUPKZCLUMUKIZUMULIUTVBCVBUOURKZUPK
+      VBURKUTUOVDUPUOURUNUMMNOUOUPURUAUOUPURUBUCPVCUOUNUJIZKZCLVACUMUJQVFUTCVEU
+      SUOVEUPUNUIIZJZKUSUNAUIUDVHURUPVGUQCDUEUFSTSPTCUMAQUGUH $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.
+    $( An indexed intersection of the empty set, with an inhabited index set,
+       is empty.  (Contributed by Jim Kingdon, 29-Aug-2018.) $)
+    iin0imm $p |- ( E. x x e. A -> |^|_ x e. A (/) = (/) ) $=
+      ( c0 iinconstm ) ABCD $.
+
+    $( If an indexed intersection of the empty set is empty, the index set is
+       non-empty.  (Contributed by Jim Kingdon, 29-Aug-2018.) $)
+    iin0r $p |- ( |^|_ x e. A (/) = (/) -> A =/= (/) ) $=
+      ( c0 ciin wceq cvv wcel 0ex n0i ax-mp 0iin eqeq1i iineq1 eqeq1d
+      wn mtbir mtbiri necon2ai ) ABCDZCEZBCBCEZTACCDZCEZUCFCEZCFGUDOH
+      FCIJUBFCACKLPUASUBCABCCMNQR $.
+  $}
+
+  $( The intersection of the universal class is empty.  (Contributed by NM,
+     11-Sep-2008.) $)
+  intv $p |- |^| _V = (/) $=
+    ( c0 cvv wcel cint wceq 0ex int0el ax-mp ) ABCBDAEFBGH $.
+
+  ${
+    $d x y z A $.
+    axpweq.1 $e |- A e. _V $.
+    $( Two equivalent ways to express the Power Set Axiom.  Note that ~ ax-pow
+       is not used by the proof.  (Contributed by NM, 22-Jun-2009.) $)
+    axpweq $p |- ( ~P A e. _V
+                <-> E. x A. y ( A. z ( z e. y -> z e. A ) -> y e. x ) ) $=
+      ( cpw cvv wcel cv wex wel wi wal pwidg wceq pweq eleq2d spcegv wss bitri
+      mpd elex exlimiv impbii vex elpw2 pwss dfss2 imbi1i albii exbii ) DFZGHZU
+      LAIZFZHZAJZCBKCIDHLCMZBAKZLZBMZAJUMUQUMULULFZHZUQULGNUPVCAULGUNULOUOVBULU
+      NULPQRUAUPUMAULUOUBUCUDUPVAAUPULUNSZVAULUNAUEUFVDBIZDSZUSLZBMVABDUNUGVGUT
+      BVFURUSCVEDUHUIUJTTUKT $.
+  $}
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+             ZF Set Theory - add the Axiom of Power Sets
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+            Introduce the Axiom of Power Sets
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z w $.
+    $( Axiom of Power Sets.  An axiom of Intuitionistic Zermelo-Fraenkel set
+       theory.  It states that a set ` y ` exists that includes the power set
+       of a given set ` x ` i.e. contains every subset of ` x ` .  This is
+       Axiom 8 of [Crosilla] p.  "Axioms of CZF and IZF" except (a) unnecessary
+       quantifiers are removed, and (b) Crosilla has a biconditional rather
+       than an implication (but the two are equivalent by ~ bm1.3ii ).
+
+       The variant ~ axpow2 uses explicit subset notation.  A version using
+       class notation is ~ pwex .  (Contributed by NM, 5-Aug-1993.) $)
+    ax-pow $a |- E. y A. z ( A. w ( w e. z -> w e. x ) -> z e. y ) $.
+
+    $( Axiom of Power Sets expressed with the fewest number of different
+       variables.  (Contributed by NM, 14-Aug-2003.) $)
+    zfpow $p |- E. x A. y ( A. x ( x e. y -> x e. z ) -> y e. x ) $=
+      ( vw wel wal wex ax-pow weq elequ1 imbi12d cbvalv imbi1i albii exbii mpbi
+      wi ) DBEZDCEZQZDFZBAEZQZBFZAGABEZACEZQZAFZUBQZBFZAGCABDHUDUJAUCUIBUAUHUBT
+      UGDADAIRUESUFDABJDACJKLMNOP $.
+
+    $( A variant of the Axiom of Power Sets ~ ax-pow using subset notation.
+       Problem in {BellMachover] p. 466.  (Contributed by NM, 4-Jun-2006.) $)
+    axpow2 $p |- E. y A. z ( z C_ x -> z e. y ) $=
+      ( vw cv wss wel wi wal wex ax-pow dfss2 imbi1i albii exbii mpbir ) CEZAEZ
+      FZCBGZHZCIZBJDCGDAGHDIZTHZCIZBJABCDKUBUEBUAUDCSUCTDQRLMNOP $.
+
+    $( A variant of the Axiom of Power Sets ~ ax-pow .  For any set ` x ` ,
+       there exists a set ` y ` whose members are exactly the subsets of ` x `
+       i.e. the power set of ` x ` .  Axiom Pow of [BellMachover] p. 466.
+       (Contributed by NM, 4-Jun-2006.) $)
+    axpow3 $p |- E. y A. z ( z C_ x <-> z e. y ) $=
+      ( cv wss wel wb wal wex axpow2 bm1.3ii bicom albii exbii mpbir ) CDADEZCB
+      FZGZCHZBIQPGZCHZBIPBCABCJKSUABRTCPQLMNO $.
+  $}
+
+  ${
+    $d w x y z $.
+    $( Every set is an element of some other set.  (Contributed by NM,
+       4-Jan-2002.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    el $p |- E. y x e. y $=
+      ( vz wel wi wal zfpow weq ax-14 alrimiv ax-13 embantd spimv eximii ) BCDB
+      ADEZBFZCBDZEZCFABDZBBCAGRSCACAHZPQSTOBCABIJCABKLMN $.
+  $}
+
+  ${
+    $d A x y z $.
+    zfpowcl.1 $e |- A e. _V $.
+    $( Power set axiom expressed in class notation.  Axiom 4 of [TakeutiZaring]
+       p. 17.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
+       Salmon, 25-Jul-2011.) $)
+    pwex $p |- ~P A e. _V $=
+      ( vz vy vx cv cpw cvv wcel wceq pweq eleq1d wss cab df-pw wex wal bm1.3ii
+      wb axpow2 abeq2 exbii mpbir issetri eqeltri vtocl ) CFZGZHIAGZHICABUGAJUH
+      UIHUGAKLUHDFZUGMZDNZHDUGOEULEFZULJZEPUJUMIUKSDQZEPUKEDCEDTRUNUOEUKDUMUAUB
+      UCUDUEUF $.
+  $}
+
+  ${
+    $d x A $.
+    $( Power set axiom expressed in class notation, with the sethood
+       requirement as an antecedent.  Axiom 4 of [TakeutiZaring] p. 17.
+       (Contributed by NM, 30-Oct-2003.) $)
+    pwexg $p |- ( A e. V -> ~P A e. _V ) $=
+      ( vx cv cpw cvv wcel wceq pweq eleq1d vex pwex vtoclg ) CDZEZFGAEZFGCABNA
+      HOPFNAIJNCKLM $.
+
+    $( Existence of a class of subsets.  (Contributed by NM, 15-Jul-2006.)
+       (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    abssexg $p |- ( A e. V -> { x | ( x C_ A /\ ph ) } e. _V ) $=
+      ( wcel cpw cvv cv wss wa pwexg df-pw eleq1i simpl ss2abi ssexg mpan sylbi
+      cab syl ) CDECFZGEZBHCIZAJZBSZGEZCDKUBUCBSZGEZUFUAUGGBCLMUEUGIUHUFUDUCBUC
+      ANOUEUGGPQRT $.
+  $}
+
+  $( A singleton whose element exists is a set.  The ` A e. _V ` case of
+     Theorem 7.12 of [Quine] p. 51, proved using only Extensionality, Power
+     Set, and Separation.  Replacement is not needed.  (Contributed by Jim
+     Kingdon, 1-Sep-2018.) $)
+  snexg $p |- ( A e. _V -> { A } e. _V ) $=
+    ( cvv wcel cpw csn pwexg wss snsspw ssexg mpan syl ) ABCADZBCZAEZ
+    BCZABFNLGMOAHNLBIJK $.
+
+  $( A singleton whose element is a proper class is a set.  The ` -. A e. _V `
+     case of Theorem 7.12 of [Quine] p. 51, proved using only Extensionality,
+     Power Set, and Separation.  Replacement is not needed.  (Contributed by
+     Jim Kingdon, 1-Sep-2018.) $)
+  snexprc $p |- ( -. A e. _V -> { A } e. _V ) $=
+    ( cvv wcel wn csn c0 wceq snprc biimpi 0ex syl6eqel ) ABCDZAEZFBL
+    MFGAHIJK $.
+
+  $( The power set of the empty set (the ordinal 1) is a set.  (Contributed by
+     NM, 23-Dec-1993.) $)
+  p0ex $p |- { (/) } e. _V $=
+    ( c0 cpw csn cvv pw0 0ex pwex eqeltrri ) ABACDEAFGH $.
+
+  $( ` { (/) , { (/) } } ` (the ordinal 2) is a set.  (Contributed by NM,
+     5-Aug-1993.) $)
+  pp0ex $p |- { (/) , { (/) } } e. _V $=
+    ( c0 csn cpr cpw p0ex pwex pwpw0ss ssexi ) AABZCIDIEFGH $.
+
+  $( The ordinal number 3 is a set, proved without the Axiom of Union.
+     (Contributed by NM, 2-May-2009.) $)
+  ord3ex $p |- { (/) , { (/) } , { (/) , { (/) } } } e. _V $=
+    ( c0 csn cpr ctp cun cvv df-tp cpw pp0ex pwprss ssexi wss snsspr2
+    pwex unss2 ax-mp eqeltri ) AABZARCZDSSBZEZFARSGUASRBZSCZEZUDSHSIN
+    ARJKTUCLUAUDLUBSMTUCSOPKQ $.
+
+  ${
+    $d x y z $.
+    $( At least two sets exist (or in terms of first-order logic, the universe
+       of discourse has two or more objects).  This theorem asserts the
+       existence of two sets which do not equal each other; compare with
+       ` E. x -. x = y ` which means we are given a set ` y ` and go from there
+       to a set ` x ` which is not equal to it.  (Contributed by Jim Kingdon,
+       2-Sep-2018.) $)
+    dtruarb $p |- E. x E. y -. x = y $=
+      ( vz wel wn wa wex weq el wal ax-nul eximii eeanv mpbir2an nelneq2 2eximi
+      sp cv ax-mp ) CADZCBDEZFZBGAGZABHEZBGAGUCTAGUABGCAIUACJUABBCKUACQLTUAABMN
+      UBUDABCRARBROPS $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.
+    eunexdtru.1 $e |- E. x -. x = y $.
+    $( Existential uniqueness implies there is a value for which the wff
+       argument is false.  The hypothesis states there are at least two sets
+       and we should be able to discard it once we have proved it (compare with
+       ~ dtruarb which is what we have so far).  (Contributed by Jim Kingdon,
+       2-Sep-2018.) $)
+    eunexdtru $p |- ( E! x ph -> E. x -. ph ) $=
+      ( weu wex cv wceq wi wal wa wn nfv eu3 nfa1 con3d eximd exlimiv
+      sp mpi adantl sylbi ) ABEABFZABGCGHZIZBJZCFZKALZBFZABCACMNUGUIU
+      CUFUICUFUDLZBFUIDUFUJUHBUEBOUFAUDUEBSPQTRUAUB $.
+  $}
+
+  ${
+    $d A x $.
+    $( A class is a subclass of the power class of its union.  Exercise 6(b) of
+       [Enderton] p. 38.  (Contributed by NM, 14-Oct-1996.) $)
+    pwuni $p |- A C_ ~P U. A $=
+      ( vx cuni cpw cv wcel wss elssuni vex elpw sylibr ssriv ) BAACZDZBEZAFOMG
+      ONFOAHOMBIJKL $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -26075,6 +33037,32 @@ $( $t
 
 
 /******* Web page format settings *******/
+
+/* Custom CSS for Unicode fonts */
+/* The woff font file was obtained from
+   http://fred-wang.github.io/MathFonts/XITS/xits-math.woff 28-Aug-2015 */
+htmlcss '<STYLE TYPE="text/css">\n' +
+    '<!--\n' +
+    '  .set { color: red; }\n' +
+    '  .wff { color: blue; }\n' +
+    '  .class { color: #C3C; }\n' +
+    '  .symvar { border-bottom:1px dotted;color:#C3C}\n' +
+    '  .typecode { color: gray }\n' +
+    '  .hidden { color: gray }\n' +
+    '  @font-face {\n' +
+    '    font-family: XITSMath-Regular;\n' +
+    '    src: url(xits-math.woff);\n' +
+    '  }\n' +
+    '  .math { font-family: XITSMath-Regular }\n' +
+    '-->\n' +
+    '</STYLE>\n' +
+    '<LINK href="mmset.css" title="mmset"\n' +
+    '    rel="stylesheet" type="text/css">\n' +
+    '<LINK href="mmsetalt.css" title="mmsetalt"\n' +
+    '    rel="alternate stylesheet" type="text/css">';
+
+/* Tag(s) for the main SPAN surrounding all Unicode math */
+htmlfont 'CLASS=math';
 
 /* Page title, home page link */
 htmltitle "Intuitionistic Logic Explorer";
@@ -26565,24 +33553,25 @@ htmldef "_V" as "<IMG SRC='rmcv.gif' WIDTH=10 HEIGHT=19 ALT=' _V' TITLE='_V'>";
   althtmldef "_V" as 'V';
   latexdef "_V" as "{\rm V}";
 htmldef "[." as
-    "<IMG SRC='_dlbrack.gif' WIDTH=6 HEIGHT=19 ALT=' [.' TITLE='[.'>";
+    "<IMG SRC='_dlbrack.gif' WIDTH=7 HEIGHT=19 ALT=' [.' TITLE='[.'>";
   /* althtmldef "[." as '&#x298F;'; */   /* corner tick */
-  /* U+0323 COMBINING DOT BELOW (HTML &#803;) */
-  althtmldef "[." as '[&#803;';
+  /* althtmldef "[." as '[&#803;'; */  /* combining dot below */
+  althtmldef "[." as '<B>[</B>'; /* 6-Aug-2018 nm */
   /* \underaccent is in accents package */
   latexdef "[." as "\underaccent{\dot}{[}";
 htmldef "]." as
-    "<IMG SRC='_drbrack.gif' WIDTH=5 HEIGHT=19 ALT=' ].' TITLE='].'>";
+    "<IMG SRC='_drbrack.gif' WIDTH=6 HEIGHT=19 ALT=' ].' TITLE='].'>";
   /* althtmldef "]." as '&#x298E;'; */   /* corner tick */
-  althtmldef "]." as ']&#803;';
+  /* althtmldef "]." as ']&#803;'; */  /* combining dot below */
+  althtmldef "]." as '<B>]</B>'; /* 6-Aug-2018 nm */
   latexdef "]." as "\underaccent{\dot}{]}";
 htmldef "[_" as
-    "<IMG SRC='_ulbrack.gif' WIDTH=6 HEIGHT=19 ALT=' [_' TITLE='[_'>";
-  althtmldef "[_" as '<U>[</U>'; /* &lsqb; */
+    "<IMG SRC='_ulbrack.gif' WIDTH=7 HEIGHT=19 ALT=' [_' TITLE='[_'>";
+  althtmldef "[_" as '<B>&#x298B;</B>'; /* left sq brack w underbar */
   latexdef "[_" as "\underline{[}";
 htmldef "]_" as
-    "<IMG SRC='_urbrack.gif' WIDTH=5 HEIGHT=19 ALT=' ]_' TITLE=']_'>";
-  althtmldef "]_" as '<U>]</U>'; /* &rsqb; */
+    "<IMG SRC='_urbrack.gif' WIDTH=6 HEIGHT=19 ALT=' ]_' TITLE=']_'>";
+  althtmldef "]_" as '<B>&#x298C;</B>'; /* right sq brack w underbar */
   latexdef "]_" as "\underline{]}";
 htmldef "\" as
     " <IMG SRC='setminus.gif' WIDTH=8 HEIGHT=19 ALT=' \' TITLE='\'> ";
@@ -26607,6 +33596,71 @@ htmldef "C." as
   althtmldef "C." as ' &sub; ';
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "C." as "\subset";
+htmldef "(/)" as
+    "<IMG SRC='varnothing.gif' WIDTH=11 HEIGHT=19 ALT=' (/)' TITLE='(/)'>";
+  althtmldef "(/)" as '&empty;';
+    /*althtmldef "(/)" as '&empty;';*/ /* =&#8709 */ /* bad in Opera */
+    /*althtmldef "(/)" as '&#8960;';*/
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "(/)" as "\varnothing";
+htmldef "," as "<IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=' ,' TITLE=','> ";
+  althtmldef "," as ', ';
+  latexdef "," as ",";
+htmldef "~P" as "<IMG SRC='scrp.gif' WIDTH=16 HEIGHT=19 ALT=' ~P' TITLE='~P'>";
+  /* 4-Aug-2016 NM Put space after ~P, needed for e.g. ncanth where it
+     overlapped the _V */
+  althtmldef "~P" as '&#119979; ';
+  latexdef "~P" as "{\cal P}";
+htmldef "<." as
+    "<IMG SRC='langle.gif' WIDTH=4 HEIGHT=19 ALT=' &lt;.' TITLE='&lt;.'>";
+    /* The Unicode below doesn't always work on Firefox and Chrome on Windows,
+       so revert to the image above */
+  althtmldef "<." as '&lang;'; /* &#9001; */
+    /* 2-Jan-2016 restored Unicode; reverted sans-serif */
+  latexdef "<." as "\langle";
+htmldef ">." as
+    "<IMG SRC='rangle.gif' WIDTH=4 HEIGHT=19 ALT=' &gt;.' TITLE='&gt;.'>";
+    /* The Unicode below doesn't always work on Firefox and Chrome on Windows,
+       so revert to the image above */
+  althtmldef ">." as '&rang;'; /* &#9002; */
+    /* 2-Jan-2016 restored Unicode; reverted sans-serif */
+  latexdef ">." as "\rangle";
+htmldef "U." as
+    "<IMG SRC='bigcup.gif' WIDTH=13 HEIGHT=19 ALT=' U.' TITLE='U.'>";
+  /* 20-Sep-2017 nm Add space after U. in althtmldef to improve "U. ran" */
+  althtmldef "U." as '<FONT SIZE="+1">&cup;</FONT> '; /* &xcup; */
+    /* xcup does not render, and #8899 renders as a small bold cup, on
+       Mozilla 1.7.3 on Windows XP */
+    /*althtmldef "U." as '&#8899;';*/ /* &xcup; */
+  latexdef "U." as "\bigcup";
+htmldef "|^|" as
+    "<IMG SRC='bigcap.gif' WIDTH=13 HEIGHT=19 ALT=' |^|' TITLE='|^|'>";
+  /* 20-Sep-2017 nm Add space after |^| in althtmldef to improve "|^| ran" */
+  althtmldef "|^|" as '<FONT SIZE="+1">&cap;</FONT> '; /* &xcap; */
+    /*althtmldef "|^|" as '&#8898;';*/ /* &xcap; */
+  latexdef "|^|" as "\bigcap";
+htmldef "U_" as
+    "<IMG SRC='_cupbar.gif' WIDTH=13 HEIGHT=19 ALT=' U_' TITLE='U_'>";
+  /* 20-Sep-2017 nm Add space after U_ in althtmldef to improve "U_ ran" */
+  althtmldef "U_" as '<U><FONT SIZE="+1">&cup;</FONT></U> '; /* &xcup; */
+  latexdef "U_" as "\underline{\bigcup}";
+htmldef "|^|_" as
+    "<IMG SRC='_capbar.gif' WIDTH=13 HEIGHT=19 ALT=' |^|_' TITLE='|^|_'>";
+  /* 20-Sep-2017 nm Add space after |^|_ in althtmldef to improve "|^|_ ran" */
+  althtmldef "|^|_" as '<U><FONT SIZE="+1">&cap;</FONT></U> '; /* &xcap; */
+  latexdef "|^|_" as "\underline{\bigcap}";
+htmldef "Disj_" as "<u>Disj</u> ";
+  althtmldef "Disj_" as "<u>Disj</u> ";
+  latexdef "Disj_" as "\operatorname{\underline{Disj}}";
+htmldef "|->" as " <IMG SRC='mapsto.gif' WIDTH=15 HEIGHT=19 ALT=' |-&gt;'" +
+    " TITLE='|-&gt;'> ";
+  althtmldef "|->" as ' &#8614; ';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "|->" as "\mapsto";
+htmldef "Tr" as
+    "<IMG SRC='_ctr.gif' WIDTH=16 HEIGHT=19 ALT=' Tr' TITLE='Tr'> ";
+  althtmldef "Tr" as 'Tr ';
+  latexdef "Tr" as "{\rm Tr}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
@@ -26621,6 +33675,12 @@ htmldef "F." as
     " <IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 TITLE='F.' ALIGN=TOP> ";
   althtmldef "F." as ' &perp; ';
   latexdef "F." as "\bot";
+htmldef "STABLE" as "<SMALL>STABLE</SMALL> ";
+  althtmldef "STABLE" as "<SMALL>STABLE</SMALL> ";
+  latexdef "STABLE" as "\mathrm{STABLE} ";
+htmldef "TESTABLE" as "<SMALL>TESTABLE</SMALL> ";
+  althtmldef "TESTABLE" as "<SMALL>TESTABLE</SMALL> ";
+  latexdef "TESTABLE" as "\mathrm{TESTABLE} ";
 htmldef "DECID" as "<SMALL>DECID</SMALL> ";
   althtmldef "DECID" as "<SMALL>DECID</SMALL> ";
   latexdef "DECID" as "\mathrm{DECID} ";
@@ -26629,3 +33689,90 @@ htmldef "DECID" as "<SMALL>DECID</SMALL> ";
 
 $)
 
+$(
+###############################################################################
+                 SUPPLEMENTARY MATERIAL (USER'S MATHBOXES)
+###############################################################################
+$)
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+                Mathboxes for user contributions
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Mathbox guidelines
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( (_This theorem is a dummy placeholder for these guidelines.  The name of
+     this theorem, "mathbox", is hard-coded into the Metamath program to
+     identify the start of the mathbox section for web page generation_.)
+
+     A "mathbox" is a user-contributed section that is maintained by its
+     contributor independently from the main part of set.mm.
+
+     _For contributors_:
+
+     By making a contribution, you agree to release it into the public domain,
+     according to the statement at the beginning of set.mm.
+
+     Mathboxes are provided to help keep your work synchronized with changes in
+     set.mm, but they shouldn't be depended on as a permanent archive.  If you
+     want to preserve your original contribution, it is your responsibility to
+     keep your own copy of it along with the version of set.mm that works with
+     it.
+
+     _Guidelines_:
+
+     1.  If at all possible, please use only 0-ary class constants for new
+     definitions.
+
+     2.  Try to follow the style of the rest of set.mm.  Each $p and $a
+     statement must be immediately preceded with the comment that will be shown
+     on its web page description.  The metamath program command "write source
+     set.mm /rewrap" will take care of wrapping comment lines and indentation
+     conventions.  All mathbox content will be on public display and should
+     hopefully reflect the overall quality of the website.
+
+     3.  Before submitting a revised mathbox, please make sure it verifies
+     against the current set.mm.
+
+     4.  Mathboxes should be independent i.e. the proofs should verify with all
+     other mathboxes removed.  If you need a theorem from another mathbox, that
+     is fine (and encouraged), but let me know, so I can move the theorem to
+     the main section.  One way avoid undesired accidental use of other mathbox
+     theorems is to develop your mathbox using a modified set.mm that has
+     mathboxes removed.
+
+     _Notes_:
+
+     1.  We may decide to move some theorems to the main part of set.mm for
+     general use.
+
+     2.  We may make changes to mathboxes to maintain the overall quality of
+     set.mm.  Normally we will let you know if a change might impact what you
+     are working on.
+
+     3.  If you use theorems from another user's mathbox, we don't provide
+     assurance that they are based on correct or consistent $a statements.  (If
+     you find such a problem, please let us know so it can be corrected.)
+     (Contributed by NM, 20-Feb-2007.)  (New usage is discouraged.) $)
+  mathbox $p |- x = x $=
+    ( equid ) AB $.
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+                Mathbox for Mykola Mostovenko
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+  $( Heyting's formal system Axiom #1 from [Heyting] p. 127.  (Contributed by
+     MM, 11-Aug-2018.) $)
+  ax1hfs $p |- ( ph -> ( ph /\ ph ) ) $=
+    ( wa ax-ia3 pm2.43i ) AAABAACD $.
+
+$( (End of Mykola Mostovenko's mathbox.) $)
