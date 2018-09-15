@@ -13146,7 +13146,6 @@
 "w-bnj19" is used by "bnj978".
 "watfvalN" is used by "watvalN".
 "watvalN" is used by "iswatN".
-"wl-bitr1" is used by "e2ebindALT".
 "wl-mps" is used by "wl-syls1".
 "wvd2" is used by "dfvd2".
 "wvd2" is used by "dfvd2i".
@@ -17541,10 +17540,9 @@ New usage of "w-bnj17" is discouraged (103 uses).
 New usage of "w-bnj19" is discouraged (8 uses).
 New usage of "watfvalN" is discouraged (1 uses).
 New usage of "watvalN" is discouraged (1 uses).
-New usage of "wl-adnestant" is discouraged (0 uses).
-New usage of "wl-adnestantALT" is discouraged (0 uses).
-New usage of "wl-adnestantd" is discouraged (0 uses).
-New usage of "wl-bitr1" is discouraged (1 uses).
+New usage of "wl-embant" is discouraged (0 uses).
+New usage of "wl-embantALT" is discouraged (0 uses).
+New usage of "wl-embantd" is discouraged (0 uses).
 New usage of "wl-jarli" is discouraged (0 uses).
 New usage of "wl-jarri" is discouraged (0 uses).
 New usage of "wl-mps" is discouraged (1 uses).
@@ -17915,7 +17913,7 @@ Proof modification of "e23an" is discouraged (14 steps).
 Proof modification of "e2bi" is discouraged (10 steps).
 Proof modification of "e2bir" is discouraged (10 steps).
 Proof modification of "e2ebind" is discouraged (56 steps).
-Proof modification of "e2ebindALT" is discouraged (110 steps).
+Proof modification of "e2ebindALT" is discouraged (112 steps).
 Proof modification of "e2ebindVD" is discouraged (109 steps).
 Proof modification of "e3" is discouraged (15 steps).
 Proof modification of "e30" is discouraged (15 steps).
@@ -18548,10 +18546,9 @@ Proof modification of "vd13" is discouraged (18 steps).
 Proof modification of "vd23" is discouraged (15 steps).
 Proof modification of "vk15.4j" is discouraged (217 steps).
 Proof modification of "vk15.4jVD" is discouraged (268 steps).
-Proof modification of "wl-adnestant" is discouraged (9 steps).
-Proof modification of "wl-adnestantALT" is discouraged (12 steps).
-Proof modification of "wl-adnestantd" is discouraged (11 steps).
-Proof modification of "wl-bitr1" is discouraged (49 steps).
+Proof modification of "wl-embant" is discouraged (9 steps).
+Proof modification of "wl-embantALT" is discouraged (12 steps).
+Proof modification of "wl-embantd" is discouraged (11 steps).
 Proof modification of "wl-jarli" is discouraged (11 steps).
 Proof modification of "wl-jarri" is discouraged (10 steps).
 Proof modification of "wl-mps" is discouraged (14 steps).
