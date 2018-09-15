@@ -13146,19 +13146,8 @@
 "w-bnj19" is used by "bnj978".
 "watfvalN" is used by "watvalN".
 "watvalN" is used by "iswatN".
-"wl-bibi1" is used by "wl-bibi1d".
-"wl-bibi1" is used by "wl-bibi1i".
-"wl-bibi1d" is used by "wl-bibi2d".
 "wl-bitr1" is used by "e2ebindALT".
-"wl-bitr1" is used by "wl-bibi1".
-"wl-bitr1" is used by "wl-bitr".
-"wl-bitr1" is used by "wl-bitrd".
-"wl-bitr1" is used by "wl-bitri".
-"wl-jarri" is used by "wl-dedlem0a".
-"wl-jarri" is used by "wl-pm2.86i".
 "wl-mps" is used by "wl-syls1".
-"wl-pm5.74lem" is used by "wl-pm5.32".
-"wl-pm5.74lem" is used by "wl-pm5.74".
 "wvd2" is used by "dfvd2".
 "wvd2" is used by "dfvd2i".
 "wvd2" is used by "dfvd2imp".
@@ -17555,22 +17544,10 @@ New usage of "watvalN" is discouraged (1 uses).
 New usage of "wl-adnestant" is discouraged (0 uses).
 New usage of "wl-adnestantALT" is discouraged (0 uses).
 New usage of "wl-adnestantd" is discouraged (0 uses).
-New usage of "wl-bibi1" is discouraged (2 uses).
-New usage of "wl-bibi1d" is discouraged (1 uses).
-New usage of "wl-bibi1i" is discouraged (0 uses).
-New usage of "wl-bibi2d" is discouraged (0 uses).
-New usage of "wl-bitr" is discouraged (0 uses).
-New usage of "wl-bitr1" is discouraged (5 uses).
-New usage of "wl-bitrd" is discouraged (0 uses).
-New usage of "wl-bitri" is discouraged (0 uses).
-New usage of "wl-dedlem0a" is discouraged (0 uses).
+New usage of "wl-bitr1" is discouraged (1 uses).
 New usage of "wl-jarli" is discouraged (0 uses).
-New usage of "wl-jarri" is discouraged (2 uses).
+New usage of "wl-jarri" is discouraged (0 uses).
 New usage of "wl-mps" is discouraged (1 uses).
-New usage of "wl-pm2.86i" is discouraged (0 uses).
-New usage of "wl-pm5.32" is discouraged (0 uses).
-New usage of "wl-pm5.74" is discouraged (0 uses).
-New usage of "wl-pm5.74lem" is discouraged (2 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
 New usage of "wvd2" is discouraged (5 uses).
@@ -18574,22 +18551,10 @@ Proof modification of "vk15.4jVD" is discouraged (268 steps).
 Proof modification of "wl-adnestant" is discouraged (9 steps).
 Proof modification of "wl-adnestantALT" is discouraged (12 steps).
 Proof modification of "wl-adnestantd" is discouraged (11 steps).
-Proof modification of "wl-bibi1" is discouraged (29 steps).
-Proof modification of "wl-bibi1d" is discouraged (17 steps).
-Proof modification of "wl-bibi1i" is discouraged (16 steps).
-Proof modification of "wl-bibi2d" is discouraged (26 steps).
-Proof modification of "wl-bitr" is discouraged (14 steps).
 Proof modification of "wl-bitr1" is discouraged (49 steps).
-Proof modification of "wl-bitrd" is discouraged (17 steps).
-Proof modification of "wl-bitri" is discouraged (16 steps).
-Proof modification of "wl-dedlem0a" is discouraged (23 steps).
 Proof modification of "wl-jarli" is discouraged (11 steps).
 Proof modification of "wl-jarri" is discouraged (10 steps).
 Proof modification of "wl-mps" is discouraged (14 steps).
-Proof modification of "wl-pm2.86i" is discouraged (11 steps).
-Proof modification of "wl-pm5.32" is discouraged (34 steps).
-Proof modification of "wl-pm5.74" is discouraged (35 steps).
-Proof modification of "wl-pm5.74lem" is discouraged (25 steps).
 Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
 Proof modification of "xmsuspOLD" is discouraged (118 steps).
