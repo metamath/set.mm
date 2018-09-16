@@ -43,7 +43,7 @@ img { margin-bottom: -4px }
 
     <TD NOWRAP ALIGN=RIGHT VALIGN=TOP><FONT SIZE=-2
       FACE=sans-serif> <A HREF="wn.html">First &gt;</A><BR><A
-      HREF="exists2.html">Last &gt;</A></FONT>
+      HREF="ax1hfs.html">Last &gt;</A></FONT>
     </TD>
   </TR>
 
@@ -53,7 +53,8 @@ img { margin-bottom: -4px }
       <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
         &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
       &nbsp;ILE Home&nbsp; &gt;
-      &nbsp;<A HREF="mmtheorems.html">Th. List</A>
+      &nbsp;<A HREF="mmtheorems.html">Th. List</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmrecent.html">Recent</A>
       </FONT>
     </TD>
   </TR>
@@ -134,6 +135,13 @@ then extended without justification to statements about infinite collections.
 
 <MENU>
 <LI> <A HREF="mmtheorems.html">Table of Contents and Theorem List</A></LI>
+
+<LI>
+ <A HREF="mmrecent.html">Most Recent Proofs
+ (this mirror)</A>
+  (<A HREF="http://us2.metamath.org:88/ileuni/mmrecent.html">latest</A>)
+    </LI>
+
 <LI> <A HREF="mmbiblio.html">Bibliographic Cross-Reference</A></LI>
 <LI> <A HREF="mmdefinitions.html">Definition List</A></LI>
 <LI> <A HREF="mmascii.html">ASCII Equivalents for Text-Only Browsers</A></LI>
@@ -142,8 +150,8 @@ then extended without justification to statements about infinite collections.
 
 <B><FONT COLOR="#006633">External links</FONT></B>
 <MENU>
-<LI> <A HREF=" https://github.com/digama0/set.mm/commits/intuit">Github repository</A>
-          [accessed 19-Jul-2015]</LI>
+<LI> <A HREF=" https://github.com/metamath/set.mm">Github repository</A>
+          [accessed 06-Jan-2018]</LI>
 </MENU>
 
 </TD>
@@ -158,7 +166,7 @@ Overview of intuitionistic logic</FONT></B>
 <HR NOSHADE SIZE=1><A NAME="overview2"></A><B><FONT COLOR="#006633">
 Overview of this work</FONT></B>
 
-<P>(By G&eacute;rard Lang, 19-Jul-2015)
+<P>(By G&eacute;rard Lang, 7-May-2018)
 
 <P>Mario Carneiro's work (Metamath database)
  "iset.mm" provides in Metamath a development of
@@ -166,63 +174,63 @@ Overview of this work</FONT></B>
 aim is to show how many of the theorems of set theory and
 mathematics that can be derived from classical first order logic can
 also be derived from a weaker system called "intuitionistic logic."  To
-achieve this task, iset.mm adds (or substitutes) 13 intuitionistic
-axioms whose second part of the name begins with the letter "i" to the
-classical logical axioms of set.mm.
+achieve this task, iset.mm adds (or substitutes) intuitionistic
+axioms for a number of the classical logical axioms of set.mm.
 
-<P>Among these 13 new axioms, the 6 first
+<P>Among these new axioms, the 6 first
 (<A HREF="ax-ia1.html">ax-ia1</A>,
 <A HREF="ax-ia2.html">ax-ia2</A>,
 <A HREF="ax-ia3.html">ax-ia3</A>,
 <A HREF="ax-io.html">ax-io</A>,
 <A HREF="ax-in1.html">ax-in1</A>
 and
-<A HREF="ax-in2.html">ax-in2</A>), when substituted to
-<A HREF="ax-3.html">ax-3</A> and added with
+<A HREF="ax-in2.html">ax-in2</A>), when added to
 <A HREF="ax-1.html">ax-1</A>,
 <A HREF="ax-2.html">ax-2</A>
 and
 <A HREF="ax-mp.html">ax-mp</A>,
  allow for the development of intuitionistic
-propositional logic.  Each of them is a theorem of classical
+propositional logic.  We omit the classical axiom
+<SPAN CLASS=math>((&not;
+<SPAN CLASS=wff STYLE="color:blue">&#x1D711;</SPAN> &rarr; &not; <SPAN
+CLASS=wff STYLE="color:blue">&#x1D713;</SPAN>) &rarr; (<SPAN CLASS=wff
+STYLE="color:blue">&#x1D713;</SPAN> &rarr; <SPAN CLASS=wff
+STYLE="color:blue">&#x1D711;</SPAN>))</SPAN> (which is ax-3 in
+set.mm).  Each of our new axioms is a theorem of classical
 propositional logic, but ax-3 cannot be derived from them.  Similarly,
 other basic classical theorems, like the third middle excluded or the
-equvalence of a proposition with its double negation, cannot be derived
+equivalence of a proposition with its double negation, cannot be derived
 in intuitionistic propositional calculus.  Glivenko showed that a
 proposition <FONT COLOR="#0000FF"><I>&phi;</I></FONT>
  is a theorem of classical propositional calculus if and only
 if &not;&not;<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
  is a theorem of intuitionistic propositional calculus.
 
-<P>The next 4  new axioms
+<P>The next 4 new axioms
 (<A HREF="ax-ial.html">ax-ial</A>,
 <A HREF="ax-i5r.html">ax-i5r</A>,
 <A HREF="ax-ie1.html">ax-ie1</A>
 and
 <A HREF="ax-ie2.html">ax-ie2</A>)
-being added to
+together with the set.mm axioms
 <A HREF="ax-4.html">ax-4</A>,
 <A HREF="ax-5.html">ax-5</A>,
-<A HREF="ax-6.html">ax-6</A>,
 <A HREF="ax-7.html">ax-7</A>
 and
 <A HREF="ax-gen.html">ax-gen</A>
-allow for the
-development of intuitionistic pure predicate calculus.
+do not mention equality or distinct variables.
 
-<P>The last 3 new axioms
-(<A HREF="ax-i9.html">ax-i9,</A>
-<A HREF="ax-i11e.html">ax-i11e</A>
-and
-<A HREF="ax-i12.html">ax-i12</A>)
- are variants of the
-classical axioms
-<A HREF="ax-9.html">ax-9</A>,
-<A HREF="ax-11.html">ax-11</A>
-and
-<A HREF="ax-12.html">ax-12</A>.
-The substitution of ax-i9 and
-ax-i12 with ax-9 and ax-12 and the addition of ax-i11e with
+<P>The <A HREF="ax-i9.html">ax-i9</A> axiom is
+just a slight variation of the classical <A HREF="ax-9.html">ax-9</A>.
+The classical axiom <A HREF="ax-12.html">ax-12</A> is strengthened
+into first <A HREF="ax-i12.html">ax-i12</A> and then
+<A HREF="ax-bnd.html">ax-bnd</A> (two results which would be
+fairly readily equivalent to ax-12 classically but which do not
+follow from ax-12, at least not in an obvious way, in intuitionistic
+logic).
+
+The substitution of ax-i9,
+ax-i12, and ax-bnd for ax-9 and ax-12 and the inclusion of
 <A HREF="ax-8.html">ax-8</A>,
 <A HREF="ax-10.html">ax-10</A>,
 <A HREF="ax-11.html">ax-11</A>,
@@ -233,10 +241,10 @@ and
 allow for the development of the
 intuitionistic predicate calculus.
 
-<P>Each of the 13 new axioms is a theorem of classical first order
+<P>Each of the new axioms is a theorem of classical first order
 logic with equality.  But some axioms of classical first order logic
 with equality, like ax-3, cannot be derived in the intuitionistic
-predicate calculus.
+predicate calculus.</P>
 
 <P>One of the major interests of the intuitionistic predicate calculus
 is that its use can be considered as a realization of the program of the
@@ -355,9 +363,7 @@ and then deriving a contradiction only serves to prove &not; &not; <FONT COLOR="
 which in intuitionistic logic is not the same as <FONT COLOR="#0000FF"><I>&phi;</I></FONT>.</P>
 
 <P>The biconditional can be defined as the conjunction of two implications, as in
-<A HREF="dfbi2.html">dfbi2</a> and <A HREF="df-bi.html">df-bi</a>. Other ways of understanding
-the biconditional, such as <A HREF="dfbi1.html">dfbi1</a> or <A HREF="dfbi3.html">dfbi3</a>,
-however, are classical rather than intuitionistic results (following the proofs on those pages shows they depend on ax-3).</P>
+<A HREF="dfbi2.html">dfbi2</a> and <A HREF="df-bi.html">df-bi</a>.</P>
 
 <P><A NAME="pcaxioms"></A><B><FONT COLOR="#006633">Predicate
 logic</FONT></B> adds set variables (individual variables) and the ability to quantify
@@ -405,15 +411,6 @@ FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<FONT
 FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
 COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
 COLOR="#0000FF"><I>&psi;</I></FONT>))</SPAN></TD></TR>
-
-<TR ALIGN=LEFT><TD><A HREF="ax-6.html">Axiom of Quantified Negation</A></TD>
-<TD><FONT COLOR="#006633"><B>ax-6</B></FONT></TD><TD>
-<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(&not; <FONT
-FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
-COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
-FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I> &not;
-<FONT FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
-COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
 
 <TR ALIGN=LEFT><TD><A HREF="ax-7.html">Axiom of Quantifier Commutation</A></TD>
 <TD><FONT COLOR="#006633"><B>ax-7</B></FONT></TD><TD>
@@ -509,18 +506,6 @@ COLOR="#FF0000">x</FONT></I>(<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
 COLOR="#FF0000">y</FONT></I> &rarr; <FONT
 COLOR="#0000FF"><I>&phi;</I></FONT>)))</SPAN></TD></TR>
 
-<TR ALIGN=LEFT><TD><A HREF="ax-i11e.html">Axiom of Variable
-Substitution for Existence</A></TD>
-<TD><FONT COLOR="#006633"><B>ax-i11e</B></FONT></TD><TD>
-<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
-COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
-(<FONT FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
-COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
-FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<I><FONT
-COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> <FONT
-FACE=sans-serif>&and;</FONT> <FONT
-COLOR="#0000FF"><I>&phi;</I></FONT>)))</SPAN></TD></TR>
-
 <TR ALIGN=LEFT><TD><A HREF="ax-i12.html">Axiom of Quantifier
 Introduction</A></TD>
 <TD><FONT COLOR="#006633"><B>ax-i12</B></FONT></TD><TD>
@@ -530,6 +515,22 @@ COLOR="#FF0000">z</FONT></I> = <I><FONT COLOR="#FF0000">x</FONT></I> <FONT
 FACE=sans-serif> &or;</FONT> (<FONT FACE=sans-serif>&forall;</FONT><I><FONT
 COLOR="#FF0000">z</FONT></I> <I><FONT COLOR="#FF0000">z</FONT></I> = <I><FONT
 COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif> &or;</FONT> <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+<FONT FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>
+<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I>)))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-bnd.html">Axiom of Bundling</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-bnd</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I> <I><FONT
+COLOR="#FF0000">z</FONT></I> = <I><FONT COLOR="#FF0000">x</FONT></I> <FONT
+FACE=sans-serif> &or;</FONT> (<FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">z</FONT></I> <I><FONT COLOR="#FF0000">z</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif> &or;</FONT> <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
 FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<I><FONT
 COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
 <FONT FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>
@@ -566,33 +567,179 @@ COLOR="#0000FF"><I>&phi;</I></FONT></TD></TR>
 </TABLE>
 </CENTER>
 
-<HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">
-Some theorems</FONT></B>
+<P><A NAME="staxioms"></A><B><FONT COLOR="#006633">Set theory</FONT></B>
+uses the formalism of propositional and predicate calculus to assert
+properties of arbitrary mathematical objects called "sets."  A set can
+be contained in another set, and this relationship is indicated by the
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> symbol.
+Starting with the simplest mathematical object, called the empty set,
+set theory builds up more and more complex structures whose existence
+follows from the axioms, eventually resulting in extremely complicated
+sets that we identify with the real numbers and other familiar
+mathematical objects.  These axioms were developed in response to <A
+HREF="ru.html">Russell's Paradox</A>, a discovery that revolutionized
+the foundations of mathematics and logic.</P>
+
+<P><A NAME="izfaxioms"></A> In the IZF axioms that follow, <I>all set
+variables are assumed to be</I> <A HREF="#distinct">distinct</A>.  If
+you click on their links you will see the explicit distinct variable
+conditions.</P>
+
+<CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Intuitionistic Zermelo-Fraenkel Set Theory (IZF)">
+<CAPTION><B>Intuitionistic Zermelo-Fraenkel Set Theory (IZF)</B></CAPTION>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-ext.html">Axiom of Extensionality</A></TD>
+<TD NOWRAP><FONT COLOR="#006633"><B>ax-ext</B></FONT></TD>
+<TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<I><FONT
+COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">x</FONT></I> &harr; <I><FONT COLOR="#FF0000">z</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">y</FONT></I>) &rarr;
+<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I>)</SPAN></TD></TR>
+
+<TR><TD COLSPAN="3" STYLE="text-align: center">...<I>more to follow as we develop set theory</I></TD></TR>
+
+</TABLE></CENTER>
+
+<P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
+Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P><CENTER><FONT COLOR="#006633"><I>From a psychological point of view,
+learning constructive mathematics is agonizing, for it requires one to
+first unlearn certain deeply ingrained intuitions and
+habits acquired during classical mathematical training.</I>
+<BR /> &mdash;Andrej Bauer</FONT></CENTER>
+
+<P>Listed here are some examples of starting points for your journey
+through the maze.  You should study some simple proofs from
+propositional calculus until you get the hang of it.  Then try some
+predicate calculus and finally set theory.
+
+The <A HREF="mmtheorems.html">Theorem List</A> shows the complete set of
+theorems in the database.  You may also find the <A
+HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.
 
 
-<P>(Placeholder for future use)
-
-<!--
+<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%">
+<B>Propositional calculus</B>
 <MENU>
-<LI> <A HREF="axext.html">Proof of the ZF Axiom of Extensionality</A></LI>
-<LI> <A HREF="axrep.html">Proof of the ZF Axiom of Replacement</A></LI>
-<LI> <A HREF="axpow.html">Proof of the ZF Axiom of Power Sets</A></LI>
-<LI> <A HREF="axun.html">Proof of the ZF Axiom of Union</A></LI>
+<LI>
+<A HREF="id1.html">Law of identity</A></LI>
+
+<LI>
+<A HREF="prth.html">Praeclarum theorema</A></LI>
+
+<LI>
+<A HREF="con3.html">Contraposition introduction</A></LI>
+
+<LI>
+<A HREF="notnot1.html">Double negation introduction</A></LI>
+
+<LI>
+<A HREF="notnotnot.html">Triple negation</A></LI>
+
+<LI>
+<A HREF="df-xor.html">Definition of exclusive or</A></LI>
+
+<LI>
+<A HREF="dfnot.html">Negation and the false constant</A></LI>
 </MENU>
--->
+<B>Predicate calculus</B>
+<MENU>
+<LI>
+<A HREF="19.12.html">Existential and universal quantifier swap</A></LI>
+
+<LI>
+<A HREF="19.35-1.html">Existentially quantified implication</A></LI>
+
+<LI>
+<A HREF="equid.html"><I>x</I> = <I>x</I></A></LI>
+
+<LI>
+<A HREF="df-sb.html">Definition of proper substitution</A></LI>
+
+<LI>
+<A HREF="2eu7.html">Double existential uniqueness</A></LI>
+
+</MENU>
+<B>Set theory</B>
+<MENU>
+<LI>
+<A HREF="uncom.html">Commutative law for union</A></LI>
+
+<LI>
+<A HREF="abeq2.html">A basic relationship between class and wff
+variables</A></LI>
+
+<LI>
+<A HREF="isset.html">Two ways of saying &quot;is a set&quot;</A></LI>
+
+<LI>
+<A HREF="ru.html">Russell's paradox</A></LI>
+
+<LI>...<I>watch this space as we build out more of set theory</I></LI>
+
+</MENU>
+</TD></TR></TABLE>
 
 <HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
 COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
 
 <OL>
 
+<LI><A NAME="Bauer"></A> [Bauer] Bauer, Andrej, &quot;Five stages of
+accepting constructive mathematics,&quot; <I>Bulletin (New Series) of
+the American Mathematical Society</I>, 54:481-498 (2017),
+DOI: <A HREF="http://dx.doi.org/10.1090/bull/1556">10.1090/bull/1556</A> .</LI>
+
 <LI><A NAME="BellMachover"></A> [BellMachover] Bell, J. L., and M.
 Machover, <I>A Course in Mathematical Logic,</I> North-Holland,
 Amsterdam (1977) [QA9.B3953].</LI>
 
+<LI><A NAME="ChoquetDD"></A> [ChoquetDD] Choquet-Bruhat, Yvonne and Cecile
+DeWitt-Morette, with Margaret Dillard-Bleick, <I>Analysis, Manifolds and
+Physics,</I> Elsevier Science B.V., Amsterdam (1982) [QC20.7.A5C48
+1981].</LI>
+
+<LI><A NAME="Crosilla"></A> [Crosilla] Crosilla, Laura,
+&quot;Set Theory: Constructive and Intuitionistic ZF&quot;, <I>The
+Stanford Encyclopedia of Philosophy</I> (Summer 2015 Edition),
+Edward N. Zalta (ed.), <A
+HREF="https://plato.stanford.edu/archives/sum2015/entries/set-theory-constructive/">
+https://plato.stanford.edu/archives/sum2015/entries/set-theory-constructive/</A>.
+</LI>
+
+<LI><A NAME="Moschovakis"></A> [Moschovakis] Moschovakis, Joan, &quot;Intuitionistic Logic&quot;, <I>The Stanford Encyclopedia of Philosophy (Spring 2015 Edition)</I>, Edward N. Zalta (ed.), <A HREF="https://plato.stanford.edu/archives/spr2015/entries/logic-intuitionistic/">https://plato.stanford.edu/archives/spr2015/entries/logic-intuitionistic/</A>.
+</LI>
+
+<LI><A NAME="Eisenberg"></A> [Eisenberg] Eisenberg, Murray, <I>Axiomatic Theory of
+Sets and Classes,</I> Holt, Rinehart and Winston, Inc., New York (1971)
+[QA248.E36].</LI>
+
+<LI><A NAME="Enderton"></A> [Enderton] Enderton, Herbert B., <I>Elements of Set
+Theory,</I> Academic Press, Inc., San Diego, California (1977)
+[QA248.E5].</LI>
+
 <LI><A NAME="Hamilton"></A> [Hamilton] Hamilton, A. G., <I>Logic for
 Mathematicians,</I> Cambridge University Press, Cambridge, revised
 edition (1988) [QA9.H298 1988].</LI>
+
+<LI><A NAME="Heyting"></A> [Heyting] Heyting, A., <I>Intuitionism: An
+introduction</I>, North-Holland publishing company, Amsterdam, second
+edition (1966).</LI>
+
+<LI><A NAME="Hitchcock"></A> [Hitchcock] Hitchcock, David, <I>The
+peculiarities of Stoic propositional logic</I>, McMaster University;
+available at <A
+HREF="http://www.humanities.mcmaster.ca/~hitchckd/peculiarities.pdf">
+http://www.humanities.mcmaster.ca/~hitchckd/peculiarities.pdf</A>
+(retrieved 3 Jul 2016).</LI>
+
+<LI><A NAME="Jech"></A> [Jech] Jech, Thomas, <I>Set Theory,</I>
+Academic Press, San Diego (1978) [QA248.J42].</LI>
 
 <LI><A NAME="KalishMontague"></A> [KalishMontague] Kalish, D. and R.
 Montague, &quot;On Tarski's formalization of predicate logic with
@@ -602,6 +749,21 @@ Grundlagenforschung,</I> 7:81-101 (1965) [QA.A673].</LI>
 <LI><A NAME="Kunen"></A> [Kunen] Kunen, Kenneth, <I>Set Theory:  An
 Introduction to Independence Proofs,</I> Elsevier Science B.V.,
 Amsterdam (1980) [QA248.K75].</LI>
+
+<LI><A NAME="KuratowskiMostowski"></A> [KuratowskiMostowski] Kuratowski, K.
+and A. Mostowski, <I>Set Theory: with an Introduction to
+Descriptive Set Theory,</I> 2nd ed., North-Holland,
+Amsterdam (1976) [QA248.K7683 1976].</LI>
+
+<LI><A NAME="Levy"></A> [Levy] Levy, Azriel, <I>Basic Set Theory</I>,
+Dover Publications, Mineola, N.Y. (2002) [QA248.L398 2002]. </LI>
+
+<LI><A NAME="Lopez-Astorga"></A> [Lopez-Astorga] Lopez-Astorga, Miguel,
+"The First Rule of Stoic Logic and its Relationship with the
+Indemonstrables", <I>Revista de Filosofía Tópicos</I> (2016); available
+at <A HREF="http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf">
+http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf</A> (retrieved 3 Jul
+2016).</LI>
 
 <LI><A NAME="Margaris"></A> [Margaris] Margaris, Angelo, <I>First Order
 Mathematical Logic,</I> Blaisdell Publishing Company, Waltham,
@@ -621,6 +783,9 @@ page itself, not the PDF page numbers.</LI>
 <LI><A NAME="Mendelson"></A> [Mendelson] Mendelson, Elliott, <I>Introduction to
 Mathematical Logic,</I> 2nd ed., D. Van Nostrand (1979) [QA9.M537].</LI>
 
+<LI><A NAME="Monk1"></A> [Monk1] Monk, J. Donald, <I>Introduction to Set
+Theory,</I> McGraw-Hill, Inc. (1969) [QA248.M745].</LI>
+
 <LI><A NAME="Monk2"></A> [Monk2] Monk, J. Donald, &quot;Substitutionless
 Predicate Logic with Identity,&quot; <I>Archiv f&uuml;r Mathematische Logik
 und Grundlagenforschung,</I> 7:103-121 (1965) [QA.A673].</LI>
@@ -629,8 +794,17 @@ und Grundlagenforschung,</I> 7:103-121 (1965) [QA.A673].</LI>
 and Its Logic,</I> Harvard University Press, Cambridge, Massachusetts,
 revised edition (1969) [QA248.Q7 1969].</LI>
 
+<LI><A NAME="Sanford"></A> [Sanford] Sanford, David H., <I>If P, then Q:
+Conditionals and the Foundations of Reasoning</I>, 2nd ed., Routledge
+Taylor &amp; Francis Group (2003); ISBN 0-415-28369-8; available at <A
+HREF="https://books.google.com/books?id=h_AUynB6PA8C&amp;pg=PA39#v=onepage&amp;q&amp;f=false">https://books.google.com/books?id=h_AUynB6PA8C&amp;pg=PA39#v=onepage&amp;q&amp;f=false</A>
+(retrieved 3 Jul 2016).</LI>
+
 <LI><A NAME="Stoll"></A> [Stoll] Stoll, Robert R., <I>Set Theory and Logic,</I>
 Dover Publications, Inc. (1979) [QA248.S7985 1979].</LI>
+
+<LI><A NAME="Suppes"></A> [Suppes] Suppes, Patrick, <I>Axiomatic Set Theory,</I>
+Dover Publications, Inc. (1972) [QA248.S959].</LI>
 
 <LI><A NAME="TakeutiZaring"></A> [TakeutiZaring] Takeuti, Gaisi, and
 Wilson M. Zaring, <I>Introduction to Axiomatic Set Theory,</I>
@@ -656,7 +830,7 @@ Cambridge University Press, Cambridge, 1962 [QA9.W592 1962].</LI>
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 22-Jul-2015.</FONT></I><BR><FONT
+ page was last updated on 15-Aug-2015.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
