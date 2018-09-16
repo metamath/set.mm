@@ -17727,6 +17727,8 @@ Proof modification of "ax6" is discouraged (50 steps).
 Proof modification of "ax67" is discouraged (37 steps).
 Proof modification of "ax67to6" is discouraged (37 steps).
 Proof modification of "ax67to7" is discouraged (32 steps).
+Proof modification of "ax7-pm" is discouraged (39 steps).
+Proof modification of "ax7-pm2" is discouraged (119 steps).
 Proof modification of "ax9from9o" is discouraged (24 steps).
 Proof modification of "ax9o" is discouraged (37 steps).
 Proof modification of "ax9oNEW7" is discouraged (37 steps).
@@ -17739,6 +17741,8 @@ Proof modification of "axnulALT" is discouraged (95 steps).
 Proof modification of "binom2aiOLD" is discouraged (171 steps).
 Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
+Proof modification of "bj-19.21t" is discouraged (39 steps).
+Proof modification of "bj-stdpc5" is discouraged (20 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "brabsbOLD" is discouraged (42 steps).
 Proof modification of "cbv1OLD" is discouraged (17 steps).
@@ -18453,7 +18457,9 @@ Proof modification of "ssralv2" is discouraged (83 steps).
 Proof modification of "ssralv2VD" is discouraged (147 steps).
 Proof modification of "sstrALT2" is discouraged (81 steps).
 Proof modification of "sstrALT2VD" is discouraged (84 steps).
+Proof modification of "stdpc5-2" is discouraged (34 steps).
 Proof modification of "stdpc5OLD" is discouraged (21 steps).
+Proof modification of "stdpc5t" is discouraged (23 steps).
 Proof modification of "sucdomiOLD" is discouraged (34 steps).
 Proof modification of "sucidALT" is discouraged (28 steps).
 Proof modification of "sucidALTVD" is discouraged (28 steps).
