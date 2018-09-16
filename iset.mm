@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Sep-2018
+$( iset.mm - Version of 7-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -32782,6 +32782,39 @@ $)
   pwne $p |- ( A e. V -> ~P A =/= A ) $=
     ( wcel cpw wss wn wne pwnss eqimss necon3bi syl ) ABCADZAEZFLAGABHMLALAIJK
     $.
+
+  $( Lemma for ~ repizf2 .  If we have a function-like proposition which
+     provides at most one value of ` y ` for each ` x ` in a set ` w ` , we can
+     change "at most one" to "exactly one" by restricting the values of ` x `
+     to those values for which the proposition provides a value of ` y ` .
+     (Contributed by Jim Kingdon, 7-Sep-2018.) $)
+  repizf2lem $p |- ( A. x e. w E* y ph <->
+      A. x e. { x e. w | E. y ph } E! y ph ) $=
+    ( cv wcel wmo wi wal wex weu wral crab df-mo imbi2i albii df-ral wa rabid
+    bitri imbi1i impexp 3bitr4i ) BEZDEZFZACGZHZBIUFACJZACKZHZHZBIZUGBUELUJBU
+    IBUEMZLZUHULBUGUKUFACNOPUGBUEQUOUDUNFZUJHZBIUMUJBUNQUQULBUQUFUIRZUJHULUPU
+    RUJUIBUESUAUFUIUJUBTPTUC $.
+
+  ${
+    $d v x y z w $.  $d v ph $.
+    repizf2.1 $e |- F/ z ph $.
+    $( Replacement.  This version of replacement is stronger than ~ repizf in
+       the sense that ` ph ` does not need to map all values of ` x ` in ` w `
+       to a value of ` y ` .  The resulting set contains those elements for
+       which there is a value of ` y ` and in that sense, this theorem combines
+       ~ repizf with ~ ax-sep .  Another variation would be
+       ` A. x e. w E* y ph -> { y | E. x ( x e. w /\ ph ) } e. _V ` but we
+       don't have a proof of that yet.  (Contributed by Jim Kingdon,
+       7-Sep-2018.) $)
+    repizf2 $p |- ( A. x e. w E* y ph ->
+        E. z A. x e. { x e. w | E. y ph } E. y e. z ph ) $=
+      ( vv wmo cv wral wrex wex crab wi vex rabex wceq weu repizf2lem raleqf wa
+      nfcv nfrab1 repizf syl6bir syl5bi wel cab df-rab nfv nfex nfan nfab nfeq2
+      nfcxfr exbid sylibd vtocle ) ACHBEIZJZACDIKZBACLZBUSMZJZDLZNGVCVBBUSEOPGI
+      ZVCQZUTVABVFJZDLZVEUTACRZBVCJZVGVIABCESVGVKVJBVFJVIVJBVFVCBVFUBZVBBUSUCZT
+      ABCGDFUDUEUFVGVHVDDDVFVCDVCBEUGZVBUAZBUHVBBUSUIVODBVNVBDVNDUJADCFUKULUMUO
+      UNVABVFVCVLVMTUPUQUR $.
+  $}
 
 
 $(
