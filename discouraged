@@ -774,7 +774,6 @@
 "adjeq" is used by "hmopadj".
 "adjeq" is used by "unopadj2".
 "adjeu" is used by "adjbdln".
-"adjeu" is used by "adjval".
 "adjlnop" is used by "adjsslnop".
 "adjmo" is used by "adjeu".
 "adjmo" is used by "cnlnadjeui".
@@ -11775,8 +11774,6 @@
 "riesz4" is used by "riesz2".
 "riesz4i" is used by "riesz4".
 "riotaocN" is used by "glbconN".
-"riotasvdOLD" is used by "riotasv2dOLD".
-"riotasvdOLD" is used by "riotasv3dOLD".
 "rnbra" is used by "bra11".
 "rnbra" is used by "cnvbraval".
 "rnelshi" is used by "hmopidmchi".
@@ -13173,7 +13170,6 @@
 "zfinf" is used by "axinf2".
 "zfinf" is used by "axinfndlem1".
 "zfpair" is used by "axpr".
-"zfpair" is used by "clatl".
 "zrdivrng" is used by "dvrunz".
 New usage of "00sr" is discouraged (4 uses).
 New usage of "0bdop" is discouraged (2 uses).
@@ -13386,7 +13382,7 @@ New usage of "adjcl" is discouraged (5 uses).
 New usage of "adjcoi" is discouraged (1 uses).
 New usage of "adjeq" is discouraged (5 uses).
 New usage of "adjeq0" is discouraged (0 uses).
-New usage of "adjeu" is discouraged (2 uses).
+New usage of "adjeu" is discouraged (1 uses).
 New usage of "adjlnop" is discouraged (1 uses).
 New usage of "adjmo" is discouraged (3 uses).
 New usage of "adjmul" is discouraged (0 uses).
@@ -14466,6 +14462,7 @@ New usage of "csbopabgOLD" is discouraged (1 uses).
 New usage of "csbovgOLD" is discouraged (0 uses).
 New usage of "csbresgOLD" is discouraged (2 uses).
 New usage of "csbresgVD" is discouraged (0 uses).
+New usage of "csbriotagOLD" is discouraged (0 uses).
 New usage of "csbrngOLD" is discouraged (2 uses).
 New usage of "csbrngVD" is discouraged (0 uses).
 New usage of "csbsngVD" is discouraged (0 uses).
@@ -15828,7 +15825,6 @@ New usage of "isablod" is discouraged (0 uses).
 New usage of "isabloda" is discouraged (1 uses).
 New usage of "isabloi" is discouraged (5 uses).
 New usage of "isass" is discouraged (1 uses).
-New usage of "isatliN" is discouraged (0 uses).
 New usage of "isblo" is discouraged (5 uses).
 New usage of "isblo2" is discouraged (1 uses).
 New usage of "isblo3i" is discouraged (2 uses).
@@ -15871,7 +15867,6 @@ New usage of "isnvi" is discouraged (3 uses).
 New usage of "isnvlem" is discouraged (1 uses).
 New usage of "isolatiN" is discouraged (0 uses).
 New usage of "isomliN" is discouraged (0 uses).
-New usage of "isopiN" is discouraged (0 uses).
 New usage of "ispautN" is discouraged (0 uses).
 New usage of "isph" is discouraged (2 uses).
 New usage of "isphg" is discouraged (4 uses).
@@ -17042,11 +17037,10 @@ New usage of "riesz2" is discouraged (0 uses).
 New usage of "riesz3i" is discouraged (2 uses).
 New usage of "riesz4" is discouraged (4 uses).
 New usage of "riesz4i" is discouraged (1 uses).
+New usage of "riotaiotaOLD" is discouraged (0 uses).
 New usage of "riotaocN" is discouraged (1 uses).
+New usage of "riotaprcOLD" is discouraged (0 uses).
 New usage of "riotassuniOLD" is discouraged (0 uses).
-New usage of "riotasv2dOLD" is discouraged (0 uses).
-New usage of "riotasv3dOLD" is discouraged (0 uses).
-New usage of "riotasvdOLD" is discouraged (2 uses).
 New usage of "rmo4fOLD" is discouraged (0 uses).
 New usage of "rmoxfrdOLD" is discouraged (0 uses).
 New usage of "rnbra" is discouraged (2 uses).
@@ -17579,7 +17573,7 @@ New usage of "zfac" is discouraged (1 uses).
 New usage of "zfcndac" is discouraged (0 uses).
 New usage of "zfcndinf" is discouraged (0 uses).
 New usage of "zfinf" is discouraged (2 uses).
-New usage of "zfpair" is discouraged (2 uses).
+New usage of "zfpair" is discouraged (1 uses).
 New usage of "zfregs2VD" is discouraged (0 uses).
 New usage of "zrdivrng" is discouraged (1 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
@@ -18364,10 +18358,6 @@ Proof modification of "reusv5OLD" is discouraged (99 steps).
 Proof modification of "reusv6OLD" is discouraged (370 steps).
 Proof modification of "reusv7OLD" is discouraged (297 steps).
 Proof modification of "rexsnsOLD" is discouraged (55 steps).
-Proof modification of "riotassuniOLD" is discouraged (100 steps).
-Proof modification of "riotasv2dOLD" is discouraged (337 steps).
-Proof modification of "riotasv3dOLD" is discouraged (241 steps).
-Proof modification of "riotasvdOLD" is discouraged (295 steps).
 Proof modification of "rmo4fOLD" is discouraged (198 steps).
 Proof modification of "rmoxfrdOLD" is discouraged (126 steps).
 Proof modification of "rspsbc2" is discouraged (65 steps).
