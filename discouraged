@@ -1381,6 +1381,9 @@
 "ax11indalem" is used by "ax11inda2".
 "ax11indn" is used by "ax11indi".
 "ax11v2-o" is used by "ax11a2-o".
+"ax12lem1" is used by "ax12lem2".
+"ax12lem1" is used by "nfeqf".
+"ax12lem3" is used by "dveeq2".
 "ax12olem1OLD" is used by "ax12olem2OLD".
 "ax12olem1OLD" is used by "ax12olem2OLD7".
 "ax12olem1OLD" is used by "ax12olem2wAUX7".
@@ -4205,6 +4208,7 @@
 "csbresgOLD" is used by "csbima12gALTVD".
 "csbrngOLD" is used by "csbima12gALTOLD".
 "csbrngOLD" is used by "csbima12gALTVD".
+"csbungOLD" is used by "csbuni2OLD".
 "csbunigOLD" is used by "csbfv12gALTOLD".
 "csbunigOLD" is used by "csbfv12gALTVD".
 "csbxpgOLD" is used by "csbresgOLD".
@@ -13146,19 +13150,7 @@
 "w-bnj19" is used by "bnj978".
 "watfvalN" is used by "watvalN".
 "watvalN" is used by "iswatN".
-"wl-bibi1" is used by "wl-bibi1d".
-"wl-bibi1" is used by "wl-bibi1i".
-"wl-bibi1d" is used by "wl-bibi2d".
-"wl-bitr1" is used by "e2ebindALT".
-"wl-bitr1" is used by "wl-bibi1".
-"wl-bitr1" is used by "wl-bitr".
-"wl-bitr1" is used by "wl-bitrd".
-"wl-bitr1" is used by "wl-bitri".
-"wl-jarri" is used by "wl-dedlem0a".
-"wl-jarri" is used by "wl-pm2.86i".
 "wl-mps" is used by "wl-syls1".
-"wl-pm5.74lem" is used by "wl-pm5.32".
-"wl-pm5.74lem" is used by "wl-pm5.74".
 "wvd2" is used by "dfvd2".
 "wvd2" is used by "dfvd2i".
 "wvd2" is used by "dfvd2imp".
@@ -13320,6 +13312,7 @@ New usage of "a16g-o" is discouraged (1 uses).
 New usage of "a16gALT" is discouraged (0 uses).
 New usage of "a16gALTOLD7" is discouraged (0 uses).
 New usage of "a16gOLD" is discouraged (0 uses).
+New usage of "a16nfALT" is discouraged (0 uses).
 New usage of "a1iiALT" is discouraged (0 uses).
 New usage of "a5i-o" is discouraged (5 uses).
 New usage of "a9e2eq" is discouraged (3 uses).
@@ -13405,6 +13398,7 @@ New usage of "adjvalval" is discouraged (1 uses).
 New usage of "aecom-o" is discouraged (4 uses).
 New usage of "aecoms-o" is discouraged (6 uses).
 New usage of "aev-o" is discouraged (1 uses).
+New usage of "aevALT" is discouraged (0 uses).
 New usage of "ajfun" is discouraged (0 uses).
 New usage of "ajfuni" is discouraged (1 uses).
 New usage of "ajfval" is discouraged (2 uses).
@@ -13535,6 +13529,8 @@ New usage of "ax11vALT" is discouraged (0 uses).
 New usage of "ax12OLD" is discouraged (0 uses).
 New usage of "ax12bOLD" is discouraged (0 uses).
 New usage of "ax12from12o" is discouraged (0 uses).
+New usage of "ax12lem1" is discouraged (2 uses).
+New usage of "ax12lem3" is discouraged (1 uses).
 New usage of "ax12oOLD" is discouraged (0 uses).
 New usage of "ax12olem1OLD" is discouraged (3 uses).
 New usage of "ax12olem2OLD" is discouraged (1 uses).
@@ -14473,6 +14469,8 @@ New usage of "csbresgVD" is discouraged (0 uses).
 New usage of "csbrngOLD" is discouraged (2 uses).
 New usage of "csbrngVD" is discouraged (0 uses).
 New usage of "csbsngVD" is discouraged (0 uses).
+New usage of "csbungOLD" is discouraged (1 uses).
+New usage of "csbuni2OLD" is discouraged (0 uses).
 New usage of "csbunigOLD" is discouraged (2 uses).
 New usage of "csbunigVD" is discouraged (0 uses).
 New usage of "csbxpgOLD" is discouraged (2 uses).
@@ -14836,6 +14834,7 @@ New usage of "dochpolN" is discouraged (0 uses).
 New usage of "dochsordN" is discouraged (0 uses).
 New usage of "dochspocN" is discouraged (0 uses).
 New usage of "dral1-o" is discouraged (4 uses).
+New usage of "dral1ALT" is discouraged (0 uses).
 New usage of "dral1OLD" is discouraged (0 uses).
 New usage of "dral2-o" is discouraged (4 uses).
 New usage of "dral2OLD" is discouraged (0 uses).
@@ -14847,7 +14846,6 @@ New usage of "dvadiaN" is discouraged (1 uses).
 New usage of "dveel2ALT" is discouraged (0 uses).
 New usage of "dveeq1-o" is discouraged (1 uses).
 New usage of "dveeq1-o16" is discouraged (0 uses).
-New usage of "dveeq1ALT" is discouraged (0 uses).
 New usage of "dveeq1OLD" is discouraged (0 uses).
 New usage of "dveeq2-o" is discouraged (4 uses).
 New usage of "dveeq2-o16" is discouraged (0 uses).
@@ -17546,25 +17544,12 @@ New usage of "w-bnj17" is discouraged (103 uses).
 New usage of "w-bnj19" is discouraged (8 uses).
 New usage of "watfvalN" is discouraged (1 uses).
 New usage of "watvalN" is discouraged (1 uses).
-New usage of "wl-adnestant" is discouraged (0 uses).
-New usage of "wl-adnestantALT" is discouraged (0 uses).
-New usage of "wl-adnestantd" is discouraged (0 uses).
-New usage of "wl-bibi1" is discouraged (2 uses).
-New usage of "wl-bibi1d" is discouraged (1 uses).
-New usage of "wl-bibi1i" is discouraged (0 uses).
-New usage of "wl-bibi2d" is discouraged (0 uses).
-New usage of "wl-bitr" is discouraged (0 uses).
-New usage of "wl-bitr1" is discouraged (5 uses).
-New usage of "wl-bitrd" is discouraged (0 uses).
-New usage of "wl-bitri" is discouraged (0 uses).
-New usage of "wl-dedlem0a" is discouraged (0 uses).
+New usage of "wl-embant" is discouraged (0 uses).
+New usage of "wl-embantALT" is discouraged (0 uses).
+New usage of "wl-embantd" is discouraged (0 uses).
 New usage of "wl-jarli" is discouraged (0 uses).
-New usage of "wl-jarri" is discouraged (2 uses).
+New usage of "wl-jarri" is discouraged (0 uses).
 New usage of "wl-mps" is discouraged (1 uses).
-New usage of "wl-pm2.86i" is discouraged (0 uses).
-New usage of "wl-pm5.32" is discouraged (0 uses).
-New usage of "wl-pm5.74" is discouraged (0 uses).
-New usage of "wl-pm5.74lem" is discouraged (2 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
 New usage of "wvd2" is discouraged (5 uses).
@@ -17814,6 +17799,8 @@ Proof modification of "csbresgVD" is discouraged (187 steps).
 Proof modification of "csbrngOLD" is discouraged (96 steps).
 Proof modification of "csbrngVD" is discouraged (254 steps).
 Proof modification of "csbsngVD" is discouraged (196 steps).
+Proof modification of "csbungOLD" is discouraged (52 steps).
+Proof modification of "csbuni2OLD" is discouraged (26 steps).
 Proof modification of "csbunigOLD" is discouraged (130 steps).
 Proof modification of "csbunigVD" is discouraged (294 steps).
 Proof modification of "csbxpgOLD" is discouraged (228 steps).
@@ -17930,7 +17917,7 @@ Proof modification of "e23an" is discouraged (14 steps).
 Proof modification of "e2bi" is discouraged (10 steps).
 Proof modification of "e2bir" is discouraged (10 steps).
 Proof modification of "e2ebind" is discouraged (56 steps).
-Proof modification of "e2ebindALT" is discouraged (110 steps).
+Proof modification of "e2ebindALT" is discouraged (112 steps).
 Proof modification of "e2ebindVD" is discouraged (109 steps).
 Proof modification of "e3" is discouraged (15 steps).
 Proof modification of "e30" is discouraged (15 steps).
@@ -18563,25 +18550,12 @@ Proof modification of "vd13" is discouraged (18 steps).
 Proof modification of "vd23" is discouraged (15 steps).
 Proof modification of "vk15.4j" is discouraged (217 steps).
 Proof modification of "vk15.4jVD" is discouraged (268 steps).
-Proof modification of "wl-adnestant" is discouraged (9 steps).
-Proof modification of "wl-adnestantALT" is discouraged (12 steps).
-Proof modification of "wl-adnestantd" is discouraged (11 steps).
-Proof modification of "wl-bibi1" is discouraged (29 steps).
-Proof modification of "wl-bibi1d" is discouraged (17 steps).
-Proof modification of "wl-bibi1i" is discouraged (16 steps).
-Proof modification of "wl-bibi2d" is discouraged (26 steps).
-Proof modification of "wl-bitr" is discouraged (14 steps).
-Proof modification of "wl-bitr1" is discouraged (49 steps).
-Proof modification of "wl-bitrd" is discouraged (17 steps).
-Proof modification of "wl-bitri" is discouraged (16 steps).
-Proof modification of "wl-dedlem0a" is discouraged (23 steps).
+Proof modification of "wl-embant" is discouraged (9 steps).
+Proof modification of "wl-embantALT" is discouraged (12 steps).
+Proof modification of "wl-embantd" is discouraged (11 steps).
 Proof modification of "wl-jarli" is discouraged (11 steps).
 Proof modification of "wl-jarri" is discouraged (10 steps).
 Proof modification of "wl-mps" is discouraged (14 steps).
-Proof modification of "wl-pm2.86i" is discouraged (11 steps).
-Proof modification of "wl-pm5.32" is discouraged (34 steps).
-Proof modification of "wl-pm5.74" is discouraged (35 steps).
-Proof modification of "wl-pm5.74lem" is discouraged (25 steps).
 Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
 Proof modification of "xmsuspOLD" is discouraged (118 steps).
