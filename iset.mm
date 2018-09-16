@@ -33087,52 +33087,20 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                   Derive the Axiom of Pairing
+                   Axiom of Pairing
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
   ${
     $d x z w v $.  $d y z w v $.
-    $( The Axiom of Pairing of Zermelo-Fraenkel set theory.  Axiom 2 of
-       [TakeutiZaring] p. 15.  In some textbooks this is stated as a separate
-       axiom; here we show it is redundant since it can be derived from the
-       other axioms.
-
-       This theorem should not be referenced by any proof other than ~ axpr .
-       Instead, use ~ zfpair2 below so that the uses of the Axiom of Pairing
-       can be more easily identified.  (Contributed by NM, 18-Oct-1995.)
-       (New usage is discouraged.) $)
-    zfpair $p |- { x , y } e. _V $=
-      ( vw vz vv cv cpr weq wo cab cvv dfpr2 c0 wceq wex isseti mpbiran equequ2
-      wa 19.41v csn 19.43 prlem2 exbii 0ex p0ex orbi12i 3bitr3ri abbii eqeltrri
-      pp0ex wi wal 0inp0 prlem1 alrimdv spimev orcom syl7bi jaoi zfrep4 eqeltri
-      con2i ) AFZBFZGCAHZCBHZIZCJZKCVDVELVIDFZMNZVJMUAZNZIZVKVFSZVMVGSZIZSZDOZC
-      JKVHVSCVQDOVODOZVPDOZIVSVHVOVPDUBVQVRDVKVFVMVGUCUDVTVFWAVGVTVKDOVFDMUEPVK
-      VFDTQWAVMDOVGDVLUFPVMVGDTQUGUHUIVNVQDCEMVLGVNDJKDMVLLUKUJVKVQCEHZULZCUMZE
-      OVMVKWDEAEAHZVKWCCWEVKVFVMVGWBEACRVJUNZUOUPUQVMWDEBEBHZVMWCCVQVPVOIWGVMWB
-      VOVPURWGVMVGVKVFWBEBCRVKVMWFVCUOUSUPUQUTVAVBVB $.
-
-    $( Unabbreviated version of the Axiom of Pairing of ZF set theory, derived
-       as a theorem from the other axioms.
-
-       This theorem should not be referenced by any proof.  Instead, use
-       ~ ax-pr below so that the uses of the Axiom of Pairing can be more
-       easily identified.  (Contributed by NM, 14-Nov-2006.)
-       (New usage is discouraged.) $)
-    axpr $p |- E. z A. w ( ( w = x \/ w = y ) -> w e. z ) $=
-      ( cv cpr wceq wo wcel wi wal zfpair isseti wb dfcleq vex bibi2i bi2 sylbi
-      elpr alimi eximii ) CEZAEZBEZFZGZDEZUDGUHUEGHZUHUCIZJZDKZCCUFABLMUGUJUHUF
-      IZNZDKULDUCUFOUNUKDUNUJUINUKUMUIUJUHUDUEDPTQUJUIRSUASUB $.
-
-    $( The Axiom of Pairing of ZF set theory.  It was derived as theorem ~ axpr
-       above and is therefore redundant, but we state it as a separate axiom
-       here so that its uses can be identified more easily.  (Contributed by
-       NM, 14-Nov-2006.) $)
+    $( The Axiom of Pairing of IZF set theory.  Axiom 2 of [Crosilla] p.
+       "Axioms of CZF and IZF", except (a) unnecessary quantifiers are removed,
+       and (b) Crosilla has a biconditional rather than an implication (but the
+       two are equivalent by ~ bm1.3ii ).  (Contributed by NM, 14-Nov-2006.) $)
     ax-pr $a |- E. z A. w ( ( w = x \/ w = y ) -> w e. z ) $.
 
     $( Derive the abbreviated version of the Axiom of Pairing from ~ ax-pr .
-       See ~ zfpair for its derivation from the other axioms.  (Contributed by
-       NM, 14-Nov-2006.) $)
+       (Contributed by NM, 14-Nov-2006.) $)
     zfpair2 $p |- { x , y } e. _V $=
       ( vz vw cv cpr wceq wex wcel wo wal ax-pr bm1.3ii dfcleq vex bibi2i albii
       wb elpr bitri exbii mpbir issetri ) CAEZBEZFZCEZUFGZCHDEZUGIZUIUDGUIUEGJZ
