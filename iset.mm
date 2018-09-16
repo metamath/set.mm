@@ -33109,18 +33109,6 @@ $)
   $}
 
   ${
-    $d x A $.
-    $( A singleton is a set.  Theorem 7.12 of [Quine] p. 51, proved using
-       Extensionality, Separation, and Pairing.  See also ~ snexALT .
-       (Contributed by NM, 7-Aug-1994.)  (Revised by Mario Carneiro,
-       19-May-2013.)  (Proof modification is discouraged.) $)
-    snex $p |- { A } e. _V $=
-      ( vx cvv wcel csn cpr dfsn2 cv wceq preq12 anidms eleq1d zfpair2 syl5eqel
-      vtoclg wn c0 snprc biimpi 0ex syl6eqel pm2.61i ) ACDZAEZCDUCUDAAFZCAGBHZU
-      FFZCDUECDBACUFAIZUGUECUHUGUEIUFUFAAJKLBBMONUCPZUDQCUIUDQIARSTUAUB $.
-  $}
-
-  ${
     $d x y A $.  $d x y B $.
     $( The Axiom of Pairing using class variables.  Theorem 7.13 of [Quine]
        p. 51.  By virtue of its definition, an unordered pair remains a set
