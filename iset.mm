@@ -33140,8 +33140,8 @@ $)
   $( A pair of two sets belongs to the power class of a class containing those
      two sets.  (Contributed by Thierry Arnoux, 10-Mar-2017.) $)
   prelpwi $p |- ( ( A e. C /\ B e. C ) -> { A , B } e. ~P C ) $=
-    ( wcel wa cpr wss cpw prssi prex elpw sylibr ) ACDBCDEABFZCGMCHDABCIMCABJKL
-    $.
+    ( wcel wa cpr cpw wss prssi cvv wb elex prexg syl2an elpwg syl mpbird ) ACD
+    ZBCDZEZABFZCGDZUACHZABCITUAJDZUBUCKRAJDBJDUDSACLBCLABMNUACJOPQ $.
 
   ${
     $d x y z $.
