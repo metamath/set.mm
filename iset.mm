@@ -33161,10 +33161,11 @@ $)
        subclasses.  Exercise 18 of [TakeutiZaring] p. 18.  (Contributed by NM,
        13-Oct-1996.) $)
     sspwb $p |- ( A C_ B <-> ~P A C_ ~P B ) $=
-      ( vx wss cpw wcel sstr2 com12 vex elpw 3imtr4g ssrdv csn ssel snex bitr4i
-      cv snss 3imtr3g impbii ) ABDZAEZBEZDZUACUBUCUACQZADZUEBDZUEUBFUEUCFUFUAUG
-      UEABGHUEACIZJUEBUHJKLUDCABUDUEMZUBFZUIUCFZUEAFZUEBFZUBUCUINUJUIADULUIAUEO
-      ZJUEAUHRPUKUIBDUMUIBUNJUEBUHRPSLT $.
+      ( vx wss cpw cv wcel sstr2 com12 vex elpw 3imtr4g ssrdv csn cvv
+      ssel snexg ax-mp snss bitr4i 3imtr3g impbii ) ABDZAEZBEZDZUCCUD
+      UEUCCFZADZUGBDZUGUDGUGUEGUHUCUIUGABHIUGACJZKUGBUJKLMUFCABUFUGNZ
+      UDGZUKUEGZUGAGZUGBGZUDUEUKPULUKADUNUKAUGOGUKOGUJUGQRZKUGAUJSTUM
+      UKBDUOUKBUPKUGBUJSTUAMUB $.
   $}
 
   ${
