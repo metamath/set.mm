@@ -33133,7 +33133,8 @@ $)
     $( A singleton of a set belongs to the power class of a class containing
        the set.  (Contributed by NM, 1-Apr-1998.) $)
     snelpw $p |- ( A e. B <-> { A } e. ~P B ) $=
-      ( wcel csn wss cpw snss snex elpw bitr4i ) ABDAEZBFLBGDABCHLBAIJK $.
+      ( wcel csn wss cpw snss cvv snexg ax-mp elpw bitr4i ) ABDAEZBFN
+      BGDABCHNBAIDNIDCAJKLM $.
   $}
 
   $( A pair of two sets belongs to the power class of a class containing those
