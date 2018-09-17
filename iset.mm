@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Sep-2018
+$( iset.mm - Version of 17-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -33206,11 +33206,11 @@ $)
       ( wss wa cv wi wal wceq wb ssextss anbi12i eqss albiim 3bitr4i ) BCDZCBDZ
       EAFZBDZRCDZGAHZTSGAHZEBCISTJAHPUAQUBABCKACBKLBCMSTANO $.
 
-    $( Negation of subclass relationship.  Compare ~ nss .  (Contributed by NM,
-       30-Jun-2004.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
-    nssss $p |- ( -. A C_ B <-> E. x ( x C_ A /\ -. x C_ B ) ) $=
-      ( cv wss wn wa wex wi wal exanali ssextss xchbinxr bicomi ) ADZBEZOCEZFGA
-      HZBCEZFRPQIAJSPQAKABCLMN $.
+    $( Negation of subclass relationship.  Compare ~ nssr .  (Contributed by
+       Jim Kingdon, 17-Sep-2018.) $)
+    nssssr $p |- ( E. x ( x C_ A /\ -. x C_ B ) -> -. A C_ B ) $=
+      ( cv wss wn wa wex wi wal exanaliim ssextss sylnibr ) ADZBEZNCEZF
+      GAHOPIAJBCEOPAKABCLM $.
   $}
 
   $( Classes are equal if and only if their power classes are equal.  Exercise
