@@ -33122,16 +33122,6 @@ $)
 
   ${
     $d x y $.
-    $( Every set is an element of some other set.  This has a shorter proof
-       than ~ el but uses more axioms.  (Contributed by NM, 4-Jan-2002.)
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
-    elALT $p |- E. y x e. y $=
-      ( cv csn wcel wex vex snid snex eleq2 spcev ax-mp ) ACZMDZEZMBCZEZBFMAGHQ
-      OBNMIPNMJKL $.
-  $}
-
-  ${
-    $d x y $.
     $( An alternative proof of ~ dtru ("two things exist") using ~ ax-pr
        instead of ~ ax-pow .  (Contributed by Mario Carneiro, 31-Aug-2015.)
        (Proof modification is discouraged.)  (New usage is discouraged.) $)
