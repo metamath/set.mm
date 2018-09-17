@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Sep-2018
+$( iset.mm - Version of 16-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -33111,15 +33111,13 @@ $)
   ${
     $d x y A $.  $d x y B $.
     $( The Axiom of Pairing using class variables.  Theorem 7.13 of [Quine]
-       p. 51.  By virtue of its definition, an unordered pair remains a set
-       (even though no longer a pair) even when its components are proper
-       classes (see ~ prprc ), so we can dispense with hypotheses requiring
-       them to be sets.  (Contributed by NM, 5-Aug-1993.) $)
-    prex $p |- { A , B } e. _V $=
-      ( vx vy cvv wcel cpr wi wceq preq2 eleq1d zfpair2 vtoclg preq1 syl5ib csn
-      cv wn snex syl6eqel vtocleg prprc1 prprc2 pm2.61nii ) AEFZBEFZABGZEFZUFUH
-      HCAEUFCQZBGZEFZUIAIZUHUIDQZGZEFUKDBEUMBIUNUJEUMBUIJKCDLMULUJUGEUIABNKOUAU
-      ERUGBPEABUBBSTUFRUGAPEABUCASTUD $.
+       p. 51, but restricted to classes which exist.  For proper classes, see
+       ~ prprc , ~ prprc1 , and ~ prprc2 .  (Contributed by Jim Kingdon,
+       16-Sep-2018.) $)
+    prexg $p |- ( ( A e. _V /\ B e. _V ) -> { A , B } e. _V ) $=
+      ( vx vy cvv wcel cpr wi wceq preq2 eleq1d zfpair2 vtoclg syl5ib
+      cv preq1 vtocleg imp ) AEFBEFZABGZEFZSUAHCAESCOZBGZEFZUBAIZUAUB
+      DOZGZEFUDDBEUFBIUGUCEUFBUBJKCDLMUEUCTEUBABPKNQR $.
   $}
 
   ${
