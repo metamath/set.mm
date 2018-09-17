@@ -33121,18 +33121,6 @@ $)
   $}
 
   ${
-    $d x y $.
-    $( An alternative proof of ~ dtru ("two things exist") using ~ ax-pr
-       instead of ~ ax-pow .  (Contributed by Mario Carneiro, 31-Aug-2015.)
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
-    dtruALT2 $p |- -. A. x x = y $=
-      ( cv wceq wn wex wal c0 csn 0inp0 snex eqeq2 notbid spcev syl 0ex pm2.61i
-      exnal eqcom albii xchbinx mpbi ) BCZACZDZEZAFZUDUCDZAGZEUCHDZUGUJUCHIZDZE
-      ZUGUCJUFUMAUKHKUDUKDUEULUDUKUCLMNOUFUJEAHPUDHDUEUJUDHUCLMNQUGUEAGUIUEARUE
-      UHAUCUDSTUAUB $.
-  $}
-
-  ${
     $( A singleton of a set belongs to the power class of a class containing
        the set.  (Contributed by Alan Sare, 25-Aug-2011.) $)
     snelpwi $p |- ( A e. B -> { A } e. ~P B ) $=
