@@ -33149,9 +33149,10 @@ $)
        singleton.  Exercise 8 of [TakeutiZaring] p. 16.  (Contributed by NM,
        10-Aug-1993.) $)
     rext $p |- ( A. z ( x e. z -> y e. z ) -> x = y ) $=
-      ( cv wcel wi wal csn wceq vex snid snex eleq2 imbi12d spcv mpi elsn sylbi
-      equcomi syl ) ADZCDZEZBDZUBEZFZCGZUDUAHZEZUAUDIZUGUAUHEZUIUAAJKUFUKUIFCUH
-      UALUBUHIUCUKUEUIUBUHUAMUBUHUDMNOPUIUDUAIUJBUAQBASRT $.
+      ( cv wcel wi wal csn wceq vex snid cvv snexg ax-mp imbi12d spcv
+      eleq2 mpi elsn equcomi sylbi syl ) ADZCDZEZBDZUDEZFZCGZUFUCHZEZ
+      UCUFIZUIUCUJEZUKUCAJZKUHUMUKFCUJUCLEUJLEUNUCMNUDUJIUEUMUGUKUDUJ
+      UCQUDUJUFQOPRUKUFUCIULBUCSBATUAUB $.
   $}
 
   ${
