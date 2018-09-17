@@ -33124,7 +33124,8 @@ $)
     $( A singleton of a set belongs to the power class of a class containing
        the set.  (Contributed by Alan Sare, 25-Aug-2011.) $)
     snelpwi $p |- ( A e. B -> { A } e. ~P B ) $=
-      ( wcel csn wss cpw snssi snex elpw sylibr ) ABCADZBEKBFCABGKBAHIJ $.
+      ( wcel csn cpw wss snssi cvv wb elex snexg elpwg 3syl mpbird ) ABCZADZBEC
+      ZPBFZABGOAHCPHCQRIABJAKPBHLMN $.
   $}
 
   ${
