@@ -1,4 +1,4 @@
-$( iset.mm - Version of 17-Sep-2018
+$( iset.mm - Version of 18-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -27216,6 +27216,16 @@ $)
   rabn0r $p |- ( E. x e. A ph -> { x e. A | ph } =/= (/) ) $=
     ( cv wcel wa wex cab c0 wne wrex crab abn0r df-rex df-rab 3imtr4i
     neeq1i ) BDCEAFZBGRBHZIJABCKABCLZIJRBMABCNTSIABCOQP $.
+
+  ${
+    $d x y $.  $d A y $.  $d ph y $.
+    $( Inhabited restricted class abstraction.  (Contributed by Jim Kingdon,
+       18-Sep-2018.) $)
+    rabn0m $p |- ( E. y y e. { x e. A | ph } <-> E. x e. A ph ) $=
+      ( wrex cv wcel wa wex df-rex rabid exbii nfv cab df-rab eleq2i nfsab1 nfxfr
+      crab eleq1 cbvex 3bitr2ri ) ABDEBFZDGAHZBIUCABDSZGZBICFZUEGZCIABDJUFUDBABDK
+      LUFUHBCUFCMUHUGUDBNZGBUEUIUGABDOPUDBCQRUCUGUETUAUB $.
+  $}
 
   $( Any restricted class abstraction restricted to the empty set is empty.
      (Contributed by NM, 15-Oct-2003.)  (Proof shortened by Andrew Salmon,
