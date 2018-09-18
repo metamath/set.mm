@@ -13523,7 +13523,6 @@ New usage of "ax11v2-o" is discouraged (1 uses).
 New usage of "ax11v2OLD" is discouraged (0 uses).
 New usage of "ax11vALT" is discouraged (0 uses).
 New usage of "ax12OLD" is discouraged (0 uses).
-New usage of "ax12bOLD" is discouraged (0 uses).
 New usage of "ax12from12o" is discouraged (0 uses).
 New usage of "ax12lem1" is discouraged (2 uses).
 New usage of "ax12lem3" is discouraged (1 uses).
@@ -17287,7 +17286,6 @@ New usage of "spimeOLD" is discouraged (1 uses).
 New usage of "spimedOLD" is discouraged (0 uses).
 New usage of "spimehOLD" is discouraged (0 uses).
 New usage of "spimtOLD" is discouraged (0 uses).
-New usage of "spnfwOLD" is discouraged (0 uses).
 New usage of "sps-o" is discouraged (7 uses).
 New usage of "spsbeOLD" is discouraged (0 uses).
 New usage of "spvwOLD" is discouraged (0 uses).
@@ -17681,7 +17679,6 @@ Proof modification of "ax11v2-o" is discouraged (107 steps).
 Proof modification of "ax11v2OLD" is discouraged (107 steps).
 Proof modification of "ax11vALT" is discouraged (81 steps).
 Proof modification of "ax12OLD" is discouraged (72 steps).
-Proof modification of "ax12bOLD" is discouraged (81 steps).
 Proof modification of "ax12from12o" is discouraged (72 steps).
 Proof modification of "ax12oOLD" is discouraged (31 steps).
 Proof modification of "ax12olem1OLD" is discouraged (71 steps).
@@ -18433,7 +18430,6 @@ Proof modification of "spimeOLD" is discouraged (33 steps).
 Proof modification of "spimedOLD" is discouraged (39 steps).
 Proof modification of "spimehOLD" is discouraged (91 steps).
 Proof modification of "spimtOLD" is discouraged (77 steps).
-Proof modification of "spnfwOLD" is discouraged (20 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
 Proof modification of "spsbeOLD" is discouraged (35 steps).
 Proof modification of "spvwOLD" is discouraged (10 steps).
