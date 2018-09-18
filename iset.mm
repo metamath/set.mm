@@ -33231,16 +33231,16 @@ $)
   $}
 
   ${
-    $d x y A $.
-    $( A non-empty class (even if proper) has a non-empty subset.  (Contributed
-       by NM, 23-Aug-2003.) $)
-    nnullss $p |- ( A =/= (/) -> E. x ( x C_ A /\ x =/= (/) ) ) $=
-      ( vy c0 wne cv wcel wex wss wa n0 csn vex snss snnz snex wceq sseq1 neeq1
-      sylbi anbi12d spcev mpan2 exlimiv ) BDECFZBGZCHAFZBIZUGDEZJZAHZCBKUFUKCUF
-      UELZBIZUKUEBCMZNUMULDEZUKUEUNOUJUMUOJAULUEPUGULQUHUMUIUOUGULBRUGULDSUAUBU
-      CTUDT $.
+    $d w x y $.  $d w x z $.  $d x y A $.
+    $( An inhabited class (even if proper) has an inhabited subset.
+       (Contributed by Jim Kingdon, 17-Sep-2018.) $)
+    mss $p |- ( E. y y e. A -> E. x ( x C_ A /\ E. z z e. x ) ) $=
+      ( vw cv wcel wex wss wa csn vex snss snm cvv snexg ax-mp wceq sseq1 eleq2
+      exbidv anbi12d spcev mpan2 sylbi exlimiv elequ1 cbvexv anbi2i sylibr
+      exbii ) BFZDGZBHAFZDIZEFZUNGZEHZJZAHZUOCFUNGZCHZJZAHUMUTBUMULKZDIZUTULDBL
+      ZMVEUPVDGZEHZUTEULVFNUSVEVHJAVDULOGVDOGVFULPQUNVDRZUOVEURVHUNVDDSVIUQVGEU
+      NVDUPTUAUBUCUDUEUFVCUSAVBURUOVAUQCECEAUGUHUIUKUJ $.
   $}
-
   ${
     $d x y z A $.  $d y z ph $.
     $( Restricted existence in a class (even if proper) implies restricted
