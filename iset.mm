@@ -33225,32 +33225,10 @@ $)
     $( The intersection of all sets to which a set belongs is the singleton of
        that set.  (Contributed by NM, 5-Jun-2009.) $)
     intid $p |- |^| { x | A e. x } = { A } $=
-      ( cv wcel cab cint csn cvv wss snex eleq2 intmin3 ax-mp wi elintab mpgbir
-      snid id snssi eqssi ) BADZEZAFGZBHZUEIEUDUEJBKUCBUEEAUEIUBUEBLBCRMNBUDEZU
-      EUDJUFUCUCOAUCABCPUCSQBUDTNUA $.
+      ( cv wcel cab cint csn cvv wss snexg ax-mp snid intmin3 elintab
+      eleq2 wi id mpgbir snssi eqssi ) BADZEZAFGZBHZUEIEZUDUEJBIEUFCB
+      KLUCBUEEAUEIUBUEBPBCMNLBUDEZUEUDJUGUCUCQAUCABCOUCRSBUDTLUA $.
   $}
-
-  ${
-    $d x y $.  $d y ph $.
-    $( "At most one" existence implies a class abstraction exists.
-       (Contributed by NM, 30-Dec-1996.) $)
-    moabex $p |- ( E* x ph -> { x | ph } e. _V ) $=
-      ( vy wmo weq wi wal wex cab cvv wcel nfv mo2 cv csn wss abss imbi2i albii
-      elsn bitri snex ssex sylbir exlimiv sylbi ) ABDABCEZFZBGZCHABIZJKZABCACLM
-      UIUKCUIUJCNZOZPZUKUNABNUMKZFZBGUIABUMQUPUHBUOUGABULTRSUAUJUMULUBUCUDUEUF
-      $.
-  $}
-
-  $( Restricted "at most one" existence implies a restricted class abstraction
-     exists.  (Contributed by NM, 17-Jun-2017.) $)
-  rmorabex $p |- ( E* x e. A ph -> { x e. A | ph } e. _V ) $=
-    ( cv wcel wa wmo cab cvv wrmo crab moabex df-rmo df-rab eleq1i 3imtr4i ) BD
-    CEAFZBGQBHZIEABCJABCKZIEQBLABCMSRIABCNOP $.
-
-  $( The abstraction of a wff with existential uniqueness exists.  (Contributed
-     by NM, 25-Nov-1994.) $)
-  euabex $p |- ( E! x ph -> { x | ph } e. _V ) $=
-    ( weu wmo cab cvv wcel eumo moabex syl ) ABCABDABEFGABHABIJ $.
 
   ${
     $d x y A $.
