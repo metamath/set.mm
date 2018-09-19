@@ -1,4 +1,4 @@
-$( iset.mm - Version of 18-Sep-2018
+$( iset.mm - Version of 19-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -33270,17 +33270,18 @@ $)
       UKVTWGWAWHVSWFDVEABVSWFVFVGVHVIVJQ $.
   $}
 
-  $( An ordered pair of classes is a set.  Exercise 7 of [TakeutiZaring]
-     p. 16.  (Contributed by NM, 18-Aug-1993.)  (Revised by Mario Carneiro,
-     26-Apr-2015.) $)
-  opex $p |- <. A , B >. e. _V $=
-    ( cop cvv wcel wa csn cpr c0 cif dfopif prex 0ex ifex eqeltri ) ABCADEBDEFZ
-    AGZABHZHZIJDABKPSIQRLMNO $.
+  $( An ordered pair of sets is a set.  (Contributed by Jim Kingdon,
+     19-Sep-2018.) $)
+  opexg $p |- ( ( A e. _V /\ B e. _V ) -> <. A , B >. e. _V ) $=
+    ( cvv wcel cop csn cpr dfopg snexg adantr prexg jca syl eqeltrd
+    wa ) ACDZBCDZOZABEAFZABGZGZCABCCHRSCDZTCDZOUACDRUBUCPUBQAIJABKLST
+    KMN $.
 
-  $( An ordered triple of classes is a set.  (Contributed by NM,
-     3-Apr-2015.) $)
-  otex $p |- <. A , B , C >. e. _V $=
-    ( cotp cop cvv df-ot opex eqeltri ) ABCDABEZCEFABCGJCHI $.
+  $( An ordered triple of sets is a set.  (Contributed by Jim Kingdon,
+     19-Sep-2018.) $)
+  otexg $p |- ( ( A e. _V /\ B e. _V /\ C e. _V ) -> <. A , B , C >. e. _V ) $=
+    ( cvv wcel cotp wa cop df-ot opexg sylan syl5eqel 3impa ) ADEZBDEZCDEZABCFZ
+    DENOGZPGQABHZCHZDABCIRSDEPTDEABJSCJKLM $.
 
   ${
     elop.1 $e |- A e. _V $.
