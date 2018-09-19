@@ -33251,20 +33251,23 @@ $)
       ZMVEUPVDGZEHZUTEULVFNUSVEVHJAVDULOGVDOGVFULPQUNVDRZUOVEURVHUNVDDSVIUQVGEU
       NVDUPTUAUBUCUDUEUFVCUSAVBURUOVAUQCECEAUGUHUIUKUJ $.
   $}
+
   ${
-    $d x y z A $.  $d y z ph $.
+    $d x y z A w $.  $d y z ph w $.
     $( Restricted existence in a class (even if proper) implies restricted
        existence in a subset.  (Contributed by NM, 23-Aug-2003.) $)
     exss $p |- ( E. x e. A ph -> E. y ( y C_ A /\ E. x e. y ph ) ) $=
-      ( vz wrex cv wcel wa cab wex wss crab c0 wne df-rab rabn0 sylbi wsb bitri
-      neeq1i 3bitr3i csn vex snss ssab2 sstr2 mpi simpr wceq equsb1 sbbii mpbir
-      n0 elsn jctil df-clab sban eleq2i 3imtr4i ne0i syl sylib snex sseq1 rexeq
-      anbi12d spcev syl2anc exlimiv ) ABDFZEGZBGZDHZAIZBJZHZEKZCGZDLZABVSFZIZCK
-      ZABDMZNOVPNOVKVRWDVPNABDPUAABDQEVPUNUBVQWCEVQVLUCZDLZABWEFZWCVQWEVPLZWFVL
-      VPEUDUEWHVPDLWFABDUFWEVPDUGUHRVQABWEMZNOZWGVQVLWIHZWJVNBESZABESZIZVMWEHZB
-      ESZWMIZVQWKWNWMWPWLWMUIWPVMVLUJZBESBEUKWOWRBEBVLUOULUMUPVQVOBESWNVOEBUQVN
-      ABEURTWKVLWOAIZBJZHZWQWIWTVLABWEPUSXAWSBESWQWSEBUQWOABEURTTUTWIVLVAVBABWE
-      QVCWBWFWGICWEVLVDVSWEUJVTWFWAWGVSWEDVEABVSWEVFVGVHVIVJR $.
+      ( vz vw wrex cv wcel wa cab wex crab rabn0m df-rab eleq2i sylbi
+      wss wsb bitri exbii bitr3i csn vex ssab2 sstr2 mpi simpr equsb1
+      snss wceq elsn sbbii mpbir jctil df-clab sban 3imtr4i elex2 syl
+      sylib cvv snexg ax-mp sseq1 rexeq anbi12d spcev syl2anc exlimiv
+      ) ABDGZEHZBHZDIZAJZBKZIZELZCHZDRZABVSGZJZCLZVKVLABDMZIZELVRABED
+      NWEVQEWDVPVLABDOPUAUBVQWCEVQVLUCZDRZABWFGZWCVQWFVPRZWGVLVPEUDZU
+      JWIVPDRWGABDUEWFVPDUFUGQVQFHABWFMZIFLZWHVQVLWKIZWLVNBESZABESZJZ
+      VMWFIZBESZWOJZVQWMWPWOWRWNWOUHWRVMVLUKZBESBEUIWQWTBEBVLULUMUNUO
+      VQVOBESWPVOEBUPVNABEUQTWMVLWQAJZBKZIZWSWKXBVLABWFOPXCXABESWSXAE
+      BUPWQABEUQTTURFVLWKUSUTABFWFNVAWBWGWHJCWFVLVBIWFVBIWJVLVCVDVSWF
+      UKVTWGWAWHVSWFDVEABVSWFVFVGVHVIVJQ $.
   $}
 
   $( An ordered pair of classes is a set.  Exercise 7 of [TakeutiZaring]
