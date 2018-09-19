@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Sep-2018
+$( iset.mm - Version of 19-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -27217,6 +27217,16 @@ $)
     ( cv wcel wa wex cab c0 wne wrex crab abn0r df-rex df-rab 3imtr4i
     neeq1i ) BDCEAFZBGRBHZIJABCKABCLZIJRBMABCNTSIABCOQP $.
 
+  ${
+    $d x y $.  $d A y $.  $d ph y $.
+    $( Inhabited restricted class abstraction.  (Contributed by Jim Kingdon,
+       18-Sep-2018.) $)
+    rabn0m $p |- ( E. y y e. { x e. A | ph } <-> E. x e. A ph ) $=
+      ( wrex cv wcel wa wex df-rex rabid exbii nfv cab df-rab eleq2i nfsab1 nfxfr
+      crab eleq1 cbvex 3bitr2ri ) ABDEBFZDGAHZBIUCABDSZGZBICFZUEGZCIABDJUFUDBABDK
+      LUFUHBCUFCMUHUGUDBNZGBUEUIUGABDOPUDBCQRUCUGUETUAUB $.
+  $}
+
   $( Any restricted class abstraction restricted to the empty set is empty.
      (Contributed by NM, 15-Oct-2003.)  (Proof shortened by Andrew Salmon,
      26-Jun-2011.) $)
@@ -32783,6 +32793,39 @@ $)
     ( wcel cpw wss wn wne pwnss eqimss necon3bi syl ) ABCADZAEZFLAGABHMLALAIJK
     $.
 
+  $( Lemma for ~ repizf2 .  If we have a function-like proposition which
+     provides at most one value of ` y ` for each ` x ` in a set ` w ` , we can
+     change "at most one" to "exactly one" by restricting the values of ` x `
+     to those values for which the proposition provides a value of ` y ` .
+     (Contributed by Jim Kingdon, 7-Sep-2018.) $)
+  repizf2lem $p |- ( A. x e. w E* y ph <->
+      A. x e. { x e. w | E. y ph } E! y ph ) $=
+    ( cv wcel wmo wi wal wex weu wral crab df-mo imbi2i albii df-ral wa rabid
+    bitri imbi1i impexp 3bitr4i ) BEZDEZFZACGZHZBIUFACJZACKZHZHZBIZUGBUELUJBU
+    IBUEMZLZUHULBUGUKUFACNOPUGBUEQUOUDUNFZUJHZBIUMUJBUNQUQULBUQUFUIRZUJHULUPU
+    RUJUIBUESUAUFUIUJUBTPTUC $.
+
+  ${
+    $d v x y z w $.  $d v ph $.
+    repizf2.1 $e |- F/ z ph $.
+    $( Replacement.  This version of replacement is stronger than ~ repizf in
+       the sense that ` ph ` does not need to map all values of ` x ` in ` w `
+       to a value of ` y ` .  The resulting set contains those elements for
+       which there is a value of ` y ` and in that sense, this theorem combines
+       ~ repizf with ~ ax-sep .  Another variation would be
+       ` A. x e. w E* y ph -> { y | E. x ( x e. w /\ ph ) } e. _V ` but we
+       don't have a proof of that yet.  (Contributed by Jim Kingdon,
+       7-Sep-2018.) $)
+    repizf2 $p |- ( A. x e. w E* y ph ->
+        E. z A. x e. { x e. w | E. y ph } E. y e. z ph ) $=
+      ( vv wmo cv wral wrex wex crab wi vex rabex wceq weu repizf2lem raleqf wa
+      nfcv nfrab1 repizf syl6bir syl5bi wel cab df-rab nfv nfex nfan nfab nfeq2
+      nfcxfr exbid sylibd vtocle ) ACHBEIZJZACDIKZBACLZBUSMZJZDLZNGVCVBBUSEOPGI
+      ZVCQZUTVABVFJZDLZVEUTACRZBVCJZVGVIABCESVGVKVJBVFJVIVJBVFVCBVFUBZVBBUSUCZT
+      ABCGDFUDUEUFVGVHVDDDVFVCDVCBEUGZVBUAZBUHVBBUSUIVODBVNVBDVNDUJADCFUKULUMUO
+      UNVABVFVCVLVMTUPUQUR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -32858,6 +32901,42 @@ $)
       LAIZFZHZAJZCBKCIDHLCMZBAKZLZBMZAJUMUQUMULULFZHZUQULGNUPVCAULGUNULOUOVBULU
       NULPQRUAUPUMAULUOUBUCUDUPVAAUPULUNSZVAULUNAUEUFVDBIZDSZUSLZBMVABDUNUGVGUT
       BVFURUSCVEDUHUIUJTTUKT $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+             Collection principle
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d ph z w $.  $d x y z w $.
+    $( A very strong generalization of the Axiom of Replacement (compare
+       ~ zfrep6 ).  Its strength lies in the rather profound fact that
+       ` ph ( x , y ) ` does not have to be a "function-like" wff, as it does
+       in the standard Axiom of Replacement.  This theorem is sometimes called
+       the Boundedness Axiom.  In the context of IZF, it is just a slight
+       variation of ~ ax-coll .  (Contributed by NM, 17-Oct-2004.) $)
+    bnd $p |- ( A. x e. z E. y ph -> E. w A. x e. z E. y e. w ph ) $=
+      ( nfv ax-coll ) ABCDEAEFG $.
+  $}
+
+  ${
+    $d ph z w v $.  $d x z w v A $.  $d x y z w v B $.
+    bnd2.1 $e |- A e. _V $.
+    $( A variant of the Boundedness Axiom ~ bnd that picks a subset ` z ` out
+       of a possibly proper class ` B ` in which a property is true.
+       (Contributed by NM, 4-Feb-2004.) $)
+    bnd2 $p |- ( A. x e. A E. y e. B ph ->
+              E. z ( z C_ B /\ A. x e. A E. y e. z ph ) ) $=
+      ( vw vv wrex wral cv wcel wa wex wss df-rex wi wceq raleq bnd vtocl sylbi
+      ralbii exbidv imbi12d cin inex1 inss2 sseq1 mpbiri biantrurd rexeq anbi1i
+      vex elin anass bitri rexbii2 syl6bb ralbidv bitr3d spcev exlimiv syl ) AC
+      FJZBEKZCLZFMZANZCHLZJZBEKZHOZDLZFPZACVOJZBEKZNZDOZVGVJCOZBEKZVNVFWABEACFQ
+      UDWABILZKZVLBWCKZHOZRWBVNRIEGWCESZWDWBWFVNWABWCETWGWEVMHVLBWCETUEUFVJBCIH
+      UAUBUCVMVTHVSVMDVKFUGZVKFHUOUHVOWHSZVRVSVMWIVPVRWIVPWHFPVKFUIVOWHFUJUKULW
+      IVQVLBEWIVQACWHJVLACVOWHUMAVJCWHVKVHWHMZANVHVKMZVINZANWKVJNWJWLAVHVKFUPUN
+      WKVIAUQURUSUTVAVBVCVDVE $.
   $}
 
 $(
@@ -33014,6 +33093,222 @@ $)
     pwuni $p |- A C_ ~P U. A $=
       ( vx cuni cpw cv wcel wss elssuni vex elpw sylibr ssriv ) BAACZDZBEZAFOMG
       ONFOAHOMBIJKL $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                   Axiom of Pairing
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x z w v $.  $d y z w v $.
+    $( The Axiom of Pairing of IZF set theory.  Axiom 2 of [Crosilla] p.
+       "Axioms of CZF and IZF", except (a) unnecessary quantifiers are removed,
+       and (b) Crosilla has a biconditional rather than an implication (but the
+       two are equivalent by ~ bm1.3ii ).  (Contributed by NM, 14-Nov-2006.) $)
+    ax-pr $a |- E. z A. w ( ( w = x \/ w = y ) -> w e. z ) $.
+
+    $( Derive the abbreviated version of the Axiom of Pairing from ~ ax-pr .
+       (Contributed by NM, 14-Nov-2006.) $)
+    zfpair2 $p |- { x , y } e. _V $=
+      ( vz vw cv cpr wceq wex wcel wo wal ax-pr bm1.3ii dfcleq vex bibi2i albii
+      wb elpr bitri exbii mpbir issetri ) CAEZBEZFZCEZUFGZCHDEZUGIZUIUDGUIUEGJZ
+      RZDKZCHUKCDABCDLMUHUMCUHUJUIUFIZRZDKUMDUGUFNUOULDUNUKUJUIUDUEDOSPQTUAUBUC
+      $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The Axiom of Pairing using class variables.  Theorem 7.13 of [Quine]
+       p. 51, but restricted to classes which exist.  For proper classes, see
+       ~ prprc , ~ prprc1 , and ~ prprc2 .  (Contributed by Jim Kingdon,
+       16-Sep-2018.) $)
+    prexg $p |- ( ( A e. _V /\ B e. _V ) -> { A , B } e. _V ) $=
+      ( vx vy cvv wcel cpr wi wceq preq2 eleq1d zfpair2 vtoclg syl5ib
+      cv preq1 vtocleg imp ) AEFBEFZABGZEFZSUAHCAESCOZBGZEFZUBAIZUAUB
+      DOZGZEFUDDBEUFBIUGUCEUFBUBJKCDLMUEUCTEUBABPKNQR $.
+  $}
+
+  ${
+    $( A singleton of a set belongs to the power class of a class containing
+       the set.  (Contributed by Alan Sare, 25-Aug-2011.) $)
+    snelpwi $p |- ( A e. B -> { A } e. ~P B ) $=
+      ( wcel csn cpw wss snssi cvv wb elex snexg elpwg 3syl mpbird ) ABCZADZBEC
+      ZPBFZABGOAHCPHCQRIABJAKPBHLMN $.
+  $}
+
+  ${
+    snelpw.1 $e |- A e. _V $.
+    $( A singleton of a set belongs to the power class of a class containing
+       the set.  (Contributed by NM, 1-Apr-1998.) $)
+    snelpw $p |- ( A e. B <-> { A } e. ~P B ) $=
+      ( wcel csn wss cpw snss cvv snexg ax-mp elpw bitr4i ) ABDAEZBFN
+      BGDABCHNBAIDNIDCAJKLM $.
+  $}
+
+  $( A pair of two sets belongs to the power class of a class containing those
+     two sets.  (Contributed by Thierry Arnoux, 10-Mar-2017.) $)
+  prelpwi $p |- ( ( A e. C /\ B e. C ) -> { A , B } e. ~P C ) $=
+    ( wcel wa cpr cpw wss prssi cvv wb elex prexg syl2an elpwg syl mpbird ) ACD
+    ZBCDZEZABFZCGDZUACHZABCITUAJDZUBUCKRAJDBJDUDSACLBCLABMNUACJOPQ $.
+
+  ${
+    $d x y z $.
+    $( A theorem similar to extensionality, requiring the existence of a
+       singleton.  Exercise 8 of [TakeutiZaring] p. 16.  (Contributed by NM,
+       10-Aug-1993.) $)
+    rext $p |- ( A. z ( x e. z -> y e. z ) -> x = y ) $=
+      ( cv wcel wi wal csn wceq vex snid cvv snexg ax-mp imbi12d spcv
+      eleq2 mpi elsn equcomi sylbi syl ) ADZCDZEZBDZUDEZFZCGZUFUCHZEZ
+      UCUFIZUIUCUJEZUKUCAJZKUHUMUKFCUJUCLEUJLEUNUCMNUDUJIUEUMUGUKUDUJ
+      UCQUDUJUFQOPRUKUFUCIULBUCSBATUAUB $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( Classes are subclasses if and only if their power classes are
+       subclasses.  Exercise 18 of [TakeutiZaring] p. 18.  (Contributed by NM,
+       13-Oct-1996.) $)
+    sspwb $p |- ( A C_ B <-> ~P A C_ ~P B ) $=
+      ( vx wss cpw cv wcel sstr2 com12 vex elpw 3imtr4g ssrdv csn cvv
+      ssel snexg ax-mp snss bitr4i 3imtr3g impbii ) ABDZAEZBEZDZUCCUD
+      UEUCCFZADZUGBDZUGUDGUGUEGUHUCUIUGABHIUGACJZKUGBUJKLMUFCABUFUGNZ
+      UDGZUKUEGZUGAGZUGBGZUDUEUKPULUKADUNUKAUGOGUKOGUJUGQRZKUGAUJSTUM
+      UKBDUOUKBUPKUGBUJSTUAMUB $.
+  $}
+
+  ${
+    $d A x y $.
+    $( A class equals the union of its power class.  Exercise 6(a) of
+       [Enderton] p. 38.  (Contributed by NM, 14-Oct-1996.)  (Proof shortened
+       by Alan Sare, 28-Dec-2008.) $)
+    unipw $p |- U. ~P A = A $=
+      ( vx vy cpw cuni cv wcel wex eluni elelpwi exlimiv sylbi csn snid snelpwi
+      wa vex elunii sylancr impbii eqriv ) BADZEZABFZUCGZUDAGZUEUDCFZGUGUBGPZCH
+      UFCUDUBIUHUFCUDUGAJKLUFUDUDMZGUIUBGUEUDBQNUDAOUDUIUBRSTUA $.
+  $}
+
+  $( Membership of a power class.  Exercise 10 of [Enderton] p. 26.
+     (Contributed by NM, 13-Jan-2007.) $)
+  pwel $p |- ( A e. B -> ~P A e. ~P ~P U. B ) $=
+    ( wcel cpw cuni wss elssuni sspwb sylib cvv wb pwexg elpwg syl mpbird ) ABC
+    ZADZBEZDZDCZQSFZPARFUAABGARHIPQJCTUAKABLQSJMNO $.
+
+  $( A class is transitive iff its power class is transitive.  (Contributed by
+     Alan Sare, 25-Aug-2011.)  (Revised by Mario Carneiro, 15-Jun-2014.) $)
+  pwtr $p |- ( Tr A <-> Tr ~P A ) $=
+    ( cpw cuni wss wtr unipw sseq1i df-tr dftr4 3bitr4ri ) ABZCZKDAKDKEAELAKAFG
+    KHAIJ $.
+
+  ${
+    $d A x $.  $d B x $.
+    $( An extensionality-like principle defining subclass in terms of subsets.
+       (Contributed by NM, 30-Jun-2004.) $)
+    ssextss $p |- ( A C_ B <-> A. x ( x C_ A -> x C_ B ) ) $=
+      ( wss cpw cv wcel wi wal sspwb dfss2 vex elpw imbi12i albii 3bitri ) BCDB
+      EZCEZDAFZQGZSRGZHZAISBDZSCDZHZAIBCJAQRKUBUEATUCUAUDSBALZMSCUFMNOP $.
+
+    $( An extensionality-like principle that uses the subset instead of the
+       membership relation: two classes are equal iff they have the same
+       subsets.  (Contributed by NM, 30-Jun-2004.) $)
+    ssext $p |- ( A = B <-> A. x ( x C_ A <-> x C_ B ) ) $=
+      ( wss wa cv wi wal wceq wb ssextss anbi12i eqss albiim 3bitr4i ) BCDZCBDZ
+      EAFZBDZRCDZGAHZTSGAHZEBCISTJAHPUAQUBABCKACBKLBCMSTANO $.
+
+    $( Negation of subclass relationship.  Compare ~ nssr .  (Contributed by
+       Jim Kingdon, 17-Sep-2018.) $)
+    nssssr $p |- ( E. x ( x C_ A /\ -. x C_ B ) -> -. A C_ B ) $=
+      ( cv wss wn wa wex wi wal exanaliim ssextss sylnibr ) ADZBEZNCEZF
+      GAHOPIAJBCEOPAKABCLM $.
+  $}
+
+  $( Classes are equal if and only if their power classes are equal.  Exercise
+     19 of [TakeutiZaring] p. 18.  (Contributed by NM, 13-Oct-1996.) $)
+  pweqb $p |- ( A = B <-> ~P A = ~P B ) $=
+    ( wss wa cpw wceq sspwb anbi12i eqss 3bitr4i ) ABCZBACZDAEZBEZCZNMCZDABFMNF
+    KOLPABGBAGHABIMNIJ $.
+
+  ${
+    $d x A $.
+    intid.1 $e |- A e. _V $.
+    $( The intersection of all sets to which a set belongs is the singleton of
+       that set.  (Contributed by NM, 5-Jun-2009.) $)
+    intid $p |- |^| { x | A e. x } = { A } $=
+      ( cv wcel cab cint csn cvv wss snexg ax-mp snid intmin3 elintab
+      eleq2 wi id mpgbir snssi eqssi ) BADZEZAFGZBHZUEIEZUDUEJBIEUFCB
+      KLUCBUEEAUEIUBUEBPBCMNLBUDEZUEUDJUGUCUCQAUCABCOUCRSBUDTLUA $.
+  $}
+
+  ${
+    $d w x y $.  $d w x z $.  $d x y A $.
+    $( An inhabited class (even if proper) has an inhabited subset.
+       (Contributed by Jim Kingdon, 17-Sep-2018.) $)
+    mss $p |- ( E. y y e. A -> E. x ( x C_ A /\ E. z z e. x ) ) $=
+      ( vw cv wcel wex wss wa csn vex snss snm cvv snexg ax-mp wceq sseq1 eleq2
+      exbidv anbi12d spcev mpan2 sylbi exlimiv elequ1 cbvexv anbi2i sylibr
+      exbii ) BFZDGZBHAFZDIZEFZUNGZEHZJZAHZUOCFUNGZCHZJZAHUMUTBUMULKZDIZUTULDBL
+      ZMVEUPVDGZEHZUTEULVFNUSVEVHJAVDULOGVDOGVFULPQUNVDRZUOVEURVHUNVDDSVIUQVGEU
+      NVDUPTUAUBUCUDUEUFVCUSAVBURUOVAUQCECEAUGUHUIUKUJ $.
+  $}
+
+  ${
+    $d x y z A w $.  $d y z ph w $.
+    $( Restricted existence in a class (even if proper) implies restricted
+       existence in a subset.  (Contributed by NM, 23-Aug-2003.) $)
+    exss $p |- ( E. x e. A ph -> E. y ( y C_ A /\ E. x e. y ph ) ) $=
+      ( vz vw wrex cv wcel wa cab wex crab rabn0m df-rab eleq2i sylbi
+      wss wsb bitri exbii bitr3i csn vex ssab2 sstr2 mpi simpr equsb1
+      snss wceq elsn sbbii mpbir jctil df-clab sban 3imtr4i elex2 syl
+      sylib cvv snexg ax-mp sseq1 rexeq anbi12d spcev syl2anc exlimiv
+      ) ABDGZEHZBHZDIZAJZBKZIZELZCHZDRZABVSGZJZCLZVKVLABDMZIZELVRABED
+      NWEVQEWDVPVLABDOPUAUBVQWCEVQVLUCZDRZABWFGZWCVQWFVPRZWGVLVPEUDZU
+      JWIVPDRWGABDUEWFVPDUFUGQVQFHABWFMZIFLZWHVQVLWKIZWLVNBESZABESZJZ
+      VMWFIZBESZWOJZVQWMWPWOWRWNWOUHWRVMVLUKZBESBEUIWQWTBEBVLULUMUNUO
+      VQVOBESWPVOEBUPVNABEUQTWMVLWQAJZBKZIZWSWKXBVLABWFOPXCXABESWSXAE
+      BUPWQABEUQTTURFVLWKUSUTABFWFNVAWBWGWHJCWFVLVBIWFVBIWJVLVCVDVSWF
+      UKVTWGWAWHVSWFDVEABVSWFVFVGVHVIVJQ $.
+  $}
+
+  $( An ordered pair of sets is a set.  (Contributed by Jim Kingdon,
+     19-Sep-2018.) $)
+  opexg $p |- ( ( A e. _V /\ B e. _V ) -> <. A , B >. e. _V ) $=
+    ( cvv wcel cop csn cpr dfopg snexg adantr prexg jca syl eqeltrd
+    wa ) ACDZBCDZOZABEAFZABGZGZCABCCHRSCDZTCDZOUACDRUBUCPUBQAIJABKLST
+    KMN $.
+
+  $( An ordered triple of sets is a set.  (Contributed by Jim Kingdon,
+     19-Sep-2018.) $)
+  otexg $p |- ( ( A e. _V /\ B e. _V /\ C e. _V ) -> <. A , B , C >. e. _V ) $=
+    ( cvv wcel cotp wa cop df-ot opexg sylan syl5eqel 3impa ) ADEZBDEZCDEZABCFZ
+    DENOGZPGQABHZCHZDABCIRSDEPTDEABJSCJKLM $.
+
+  ${
+    elop.1 $e |- A e. _V $.
+    elop.2 $e |- B e. _V $.
+    elop.3 $e |- C e. _V $.
+    $( An ordered pair has two elements.  Exercise 3 of [TakeutiZaring] p. 15.
+       (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
+       26-Apr-2015.) $)
+    elop $p |- ( A e. <. B , C >. <-> ( A = { B } \/ A = { B , C } ) ) $=
+      ( cop wcel csn cpr wceq wo dfop eleq2i elpr bitri ) ABCGZHABIZBCJZJZHARKA
+      SKLQTABCEFMNARSDOP $.
+  $}
+
+  ${
+    opi1.1 $e |- A e. _V $.
+    opi1.2 $e |- B e. _V $.
+    $( One of the two elements in an ordered pair.  (Contributed by NM,
+       5-Aug-1993.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    opi1 $p |- { A } e. <. A , B >. $=
+      ( csn cpr cop cvv wcel snexg ax-mp prid1 dfop eleqtrri ) AEZOAB
+      FZFABGOPAHIOHICAJKLABCDMN $.
+
+    $( One of the two elements of an ordered pair.  (Contributed by NM,
+       5-Aug-1993.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    opi2 $p |- { A , B } e. <. A , B >. $=
+      ( cpr csn cop cvv wcel prexg mp2an prid2 dfop eleqtrri ) ABEZAF
+      ZOEABGPOAHIBHIOHICDABJKLABCDMN $.
   $}
 
 $(
