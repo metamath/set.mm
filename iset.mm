@@ -33301,12 +33301,14 @@ $)
     $( One of the two elements in an ordered pair.  (Contributed by NM,
        5-Aug-1993.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
     opi1 $p |- { A } e. <. A , B >. $=
-      ( csn cpr cop snex prid1 dfop eleqtrri ) AEZLABFZFABGLMAHIABCDJK $.
+      ( csn cpr cop cvv wcel snexg ax-mp prid1 dfop eleqtrri ) AEZOAB
+      FZFABGOPAHIOHICAJKLABCDMN $.
 
     $( One of the two elements of an ordered pair.  (Contributed by NM,
        5-Aug-1993.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
     opi2 $p |- { A , B } e. <. A , B >. $=
-      ( cpr csn cop prex prid2 dfop eleqtrri ) ABEZAFZLEABGMLABHIABCDJK $.
+      ( cpr csn cop cvv wcel prexg mp2an prid2 dfop eleqtrri ) ABEZAF
+      ZOEABGPOAHIBHIOHICDABJKLABCDMN $.
   $}
 
 $(
