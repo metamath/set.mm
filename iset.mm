@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Sep-2018
+$( iset.mm - Version of 21-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -28886,11 +28886,27 @@ $)
   $}
 
   ${
+    $d x A $.  $d x B $.
+    $( A pair containing a set is inhabited.  (Contributed by Jim Kingdon,
+       21-Sep-2018.) $)
+    prmg $p |- ( A e. V -> E. x x e. { A , B } ) $=
+      ( wcel cv csn wex cpr snmg wceq orc elsn vex elpr 3imtr4i eximi
+      wo syl ) BDEAFZBGEZAHTBCIEZAHABDJUAUBATBKZUCTCKZRUAUBUCUDLABMTB
+      CANOPQS $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
     prnz.1 $e |- A e. _V $.
     $( A pair containing a set is not empty.  (Contributed by NM,
        9-Apr-1994.) $)
     prnz $p |- { A , B } =/= (/) $=
       ( cpr wcel c0 wne prid1 ne0i ax-mp ) AABDZEKFGABCHKAIJ $.
+
+    $( A pair containing a set is inhabited.  (Contributed by Jim Kingdon,
+       21-Sep-2018.) $)
+    prm $p |- E. x x e. { A , B } $=
+      ( cvv wcel cv cpr wex prmg ax-mp ) BEFAGBCHFAIDABCEJK $.
   $}
 
   ${
