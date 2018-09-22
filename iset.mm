@@ -33593,11 +33593,12 @@ $)
     $( Equivalence for an ordered pair equal to a singleton.  (Contributed by
        NM, 3-Jun-2008.) $)
     opeqsn $p |- ( <. A , B >. = { C } <-> ( A = B /\ C = { A } ) ) $=
-      ( cop csn wceq cpr dfop eqeq1i snex prex preqsn eqcom anbi2i bitri 3bitri
-      wa anidm anbi1i dfsn2 preq2 syl5req eqeq1d syl6bb pm5.32i ) ABGZCHZIAHZAB
-      JZJZUJIUKULIZULCIZTZABIZCUKIZTZUIUMUJABDEKLUKULCAMABNFOUPUQUOTUSUNUQUOUNU
-      LUKIUQBAIZTZUQUKULPABADEDOVAUQUQTUQUTUQUQBAPQUQUARSUBUQUOURUQUOUKCIURUQUL
-      UKCUQUKAAJULAUCABAUDUEUFUKCPUGUHRS $.
+      ( cop csn wceq cpr wa dfop eqeq1i wcel snexg preqsn eqcom bitri
+      cvv 3bitri ax-mp prexg mp2an anbi2i anidm anbi1i syl5req eqeq1d
+      dfsn2 preq2 syl6bb pm5.32i ) ABGZCHZIAHZABJZJZUNIUOUPIZUPCIZKZA
+      BIZCUOIZKZUMUQUNABDELMUOUPCASNZUOSNDAOUAVDBSNUPSNDEABUBUCFPUTVA
+      USKVCURVAUSURUPUOIVABAIZKZVAUOUPQABADEDPVFVAVAKVAVEVAVABAQUDVAU
+      ERTUFVAUSVBVAUSUOCIVBVAUPUOCVAUOAAJUPAUIABAUJUGUHUOCQUKULRT $.
   $}
 
   ${
