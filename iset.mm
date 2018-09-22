@@ -29269,6 +29269,25 @@ $)
       JABODEKPRQSACDLBCELMN $.
   $}
 
+  $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
+     the same second element, the first elements are equal.  Closed form of
+     ~ preqr1 .  (Contributed by Jim Kingdon, 21-Sep-2018.) $)
+  preqr1g $p |- ( ( A e. _V /\ B e. _V ) ->
+      ( { A , C } = { B , C } -> A = B ) ) $=
+    ( cvv wcel wa cpr wceq wo wi prid1g eleq2 syl5ibcom sylibd adantr
+    elprg imp syl5ibrcom adantl eqcom eqeq2 oplem1 ex ) ADEZBDEZFZACG
+    ZBCGZHZABHZUFUIFUJACHZBAHZBCHZUFUIUJUKIZUDUIUNJUEUDUIAUHEZUNUDAUG
+    EUIUOACDKUGUHALMABCDPNOQUFUIULUMIZUEUIUPJUDUEUIBUGEZUPUEUQUIBUHEB
+    CDKUGUHBLRBACDPNSQABTACBUAUBUC $.
+
+  $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
+     the same second element, the second elements are equal.  Closed form of
+     ~ preqr2 .  (Contributed by Jim Kingdon, 21-Sep-2018.) $)
+  preqr2g $p |- ( ( A e. _V /\ B e. _V ) ->
+      ( { C , A } = { C , B } -> A = B ) ) $=
+    ( cpr wceq cvv wcel wa prcom eqeq12i preqr1g syl5bi ) CADZCBDZEAC
+    DZBCDZEAFGBFGHABEMONPCAICBIJABCKL $.
+
   ${
     preqr1.1 $e |- A e. _V $.
     preqr1.2 $e |- B e. _V $.
