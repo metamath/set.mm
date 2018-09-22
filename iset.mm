@@ -33677,24 +33677,6 @@ $)
   ${
     opthw.1 $e |- A e. _V $.
     opthw.2 $e |- B e. _V $.
-    $( Justification theorem for the ordered pair definition in Norbert Wiener,
-       "A simplification of the logic of relations," _Proc. of the Cambridge
-       Philos.  Soc_., 1914, vol. 17, pp.387-390.  It is also shown as a
-       definition in [Enderton] p. 36 and as Exercise 4.8(b) of [Mendelson]
-       p. 230.  It is meaningful only for classes that exist as sets (i.e. are
-       not proper classes).  See ~ df-op for other ordered pair definitions.
-       (Contributed by NM, 28-Sep-2003.) $)
-    opthwiener $p |- ( { { { A } , (/) } , { { B } } } =
-                    { { { C } , (/) } , { { D } } } <-> ( A = C /\ B = D ) ) $=
-      ( csn c0 cpr wceq wcel snex prid2 wn 0ex eqcom preq2d syl sneqr sneq elpr
-      wa id wo eleq2 mpbii sylib wb snnz elsnc bitri nemtbir nelneq2 mp2an mtbi
-      biorf ax-mp sylibr eqtr4d prex preqr1 jca preq1d sylan9eq impbii ) AGZHIZ
-      BGZGZIZCGZHIZDGZGZIZJZACJZBDJZUBVPVQVRVPVFVKJZVQVPVGVLJZVSVPVJVLVIIZJVTVP
-      VJVOWAVPUCVPVIVNVLVPVIVLJZVIVNJZUDZWCVPVIVOKZWDVPVIVJKWEVGVIVHLZMVJVOVIUE
-      UFVIVLVNWFUAUGWBNWCWDUHVLVIJZWBHVLKHVIKZNWGNVKHOMWHVHHBFUIWHHVHJVHHJHVHOU
-      JHVHPUKULHVLVIUMUNVLVIPUOWBWCUPUQURZQUSVGVLVIVFHUTVKHUTVARVFVKHALCLVARACE
-      SRVPVHVMJZVRVPWCWJWIVHVMBLSRBDFSRVBVQVRVJWAVOVQVGVLVIVQVFVKHACTVCVCVRVIVN
-      VLVRWJWCBDTVHVMTRQVDVE $.
 
     $( The union of an ordered pair.  Theorem 65 of [Suppes] p. 39.
        (Contributed by NM, 17-Aug-2004.)  (Revised by Mario Carneiro,
