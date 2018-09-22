@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Sep-2018
+$( iset.mm - Version of 22-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -15451,6 +15451,13 @@ $)
   exmodc $p |- ( DECID E. x ph -> ( E. x ph \/ E* x ph ) ) $=
     ( wex wdc wn wo wmo df-dc weu wi pm2.21 df-mo sylibr orim2i sylbi
     ) ABCZDPPEZFPABGZFPHQRPQPABIZJRPSKABLMNO $.
+
+  $( There is at most one of something which does not exist.  Unlike ~ exmodc
+     there is no decidability condition.  (Contributed by Jim Kingdon,
+     22-Sep-2018.) $)
+  exmonim $p |- ( -. E. x ph -> E* x ph ) $=
+    ( wex wn weu wi wmo pm2.21 df-mo sylibr ) ABCZDKABEZFABGKLHABIJ
+    $.
 
   ${
     $d x y $.
@@ -33677,7 +33684,6 @@ $)
   ${
     opthw.1 $e |- A e. _V $.
     opthw.2 $e |- B e. _V $.
-
     $( The union of an ordered pair.  Theorem 65 of [Suppes] p. 39.
        (Contributed by NM, 17-Aug-2004.)  (Revised by Mario Carneiro,
        26-Apr-2015.) $)
