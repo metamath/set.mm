@@ -33682,9 +33682,10 @@ $)
        (Contributed by NM, 17-Aug-2004.)  (Revised by Mario Carneiro,
        26-Apr-2015.) $)
     uniop $p |- U. <. A , B >. = { A , B } $=
-      ( cop cuni csn cpr cun dfop snex prex unipr wss wceq snsspr1 ssequn1 mpbi
-      unieqi 3eqtri ) ABEZFAGZABHZHZFUBUCIZUCUAUDABCDJSUBUCAKABLMUBUCNUEUCOABPU
-      BUCQRT $.
+      ( cop cuni csn cpr cun dfop unieqi wcel snexg ax-mp prexg mp2an
+      cvv unipr wss wceq snsspr1 ssequn1 mpbi 3eqtri ) ABEZFAGZABHZHZ
+      FUFUGIZUGUEUHABCDJKUFUGAQLZUFQLCAMNUJBQLUGQLCDABOPRUFUGSUIUGTAB
+      UAUFUGUBUCUD $.
 
     $( Ordered pair membership is inherited by class union.  (Contributed by
        NM, 13-May-2008.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
