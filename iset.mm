@@ -33372,12 +33372,15 @@ $)
   $}
 
   ${
+    $d x A $.  $d x B $.  $d x C $.  $d x D $.
     opth1.1 $e |- A e. _V $.
     opth1.2 $e |- B e. _V $.
-    $( An ordered pair is nonempty if the arguments are sets.  (Contributed by
-       Mario Carneiro, 26-Apr-2015.) $)
+    $( An ordered pair is nonempty if the arguments are sets (it is also
+       inhabited; see ~ opm ).  (Contributed by Mario Carneiro,
+       26-Apr-2015.) $)
     opnzi $p |- <. A , B >. =/= (/) $=
-      ( cop c0 wne cvv wcel opnz mpbir2an ) ABEFGAHIBHICDABJK $.
+      ( vx cv cop wcel wex c0 wne cvv opm mpbir2an n0r ax-mp ) EFABGZHEIZQJKRAL
+      HBLHCDEABMNEQOP $.
 
     $( Equality of the first members of equal ordered pairs.  (Contributed by
        NM, 28-May-2008.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
@@ -33389,7 +33392,6 @@ $)
       VDCACAUGUHUIUQURUSVBJZNUTVCUBUQURUPVLVJUQVHVIUPVLHVJVKCDOOUJUKULURUSVBUMT
       UN $.
 
-    $d x B $.  $d x C $.  $d x D $.
     $( The ordered pair theorem.  If two ordered pairs are equal, their first
        elements are equal and their second elements are equal.  Exercise 6 of
        [TakeutiZaring] p. 16.  Note that ` C ` and ` D ` are not required to be
