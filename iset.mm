@@ -33340,11 +33340,16 @@ $(
 $)
 
   ${
-    $( An ordered pair is nonempty iff the arguments are sets.  (Contributed by
-       NM, 24-Jan-2004.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
-    opnz $p |- ( <. A , B >. =/= (/) <-> ( A e. _V /\ B e. _V ) ) $=
-      ( cop c0 wne cvv wcel wa opprc necon1ai csn cpr dfopg snex eqnetrd impbii
-      prnz a1i ) ABCZDEAFGBFGHZTSDABIJTSAKZABLZLZDABFFMUCDETUAUBANQROP $.
+    $d A x $.  $d B x $.
+
+    $( An ordered pair is inhabited iff the arguments are sets.  (Contributed
+       by Jim Kingdon, 21-Sep-2018.) $)
+    opm $p |- ( E. x x e. <. A , B >. <-> ( A e. _V /\ B e. _V ) ) $=
+      ( cv cop wcel wex cvv csn cpr w3a wa df-op eleq2i exbii abid bitri 19.42v
+      cab df-3an 3bitr4ri 3simpa snexg adantr prmg syl sylanbrc impbii 3bitr2i
+      id ) ADZBCEZFZAGZBHFZCHFZUKBIZBCJZJFZKZAGZUOUPUSAGZKZUOUPLZUNUKUTASZFZAGV
+      AUMVFAULVEUKABCMNOVFUTAUTAPOQVDUSLZAGVDVBLVAVCVDUSARUTVGAUOUPUSTOUOUPVBTZ
+      UAVCVDUOUPVBUBVDVDVBVCVDUJVDUQHFZVBUOVIUPBUCUDAUQURHUEUFVHUGUHUI $.
   $}
 
   ${
