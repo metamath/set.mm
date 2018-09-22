@@ -33449,8 +33449,9 @@ $)
        26-Apr-2015.) $)
     otth2 $p |- ( <. <. A , B >. , R >. = <. <. C , D >. , S >. <->
                 ( A = C /\ B = D /\ R = S ) ) $=
-      ( cop wceq wa w3a opth anbi1i opex df-3an 3bitr4i ) ABJZCDJZKZEFKZLACKZBD
-      KZLZUBLSEJTFJKUCUDUBMUAUEUBABCDGHNOSETFABPINUCUDUBQR $.
+      ( cop wceq wa w3a opth anbi1i cvv wcel opexg mp2an df-3an
+      3bitr4i ) ABJZCDJZKZEFKZLACKZBDKZLZUELUBEJUCFJKUFUGUEMUDUHUEABC
+      DGHNOUBEUCFAPQBPQUBPQGHABRSINUFUGUETUA $.
 
     $( Ordered triple theorem.  (Contributed by NM, 25-Sep-2014.)  (Revised by
        Mario Carneiro, 26-Apr-2015.) $)
