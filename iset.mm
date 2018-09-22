@@ -33564,25 +33564,6 @@ $)
     DFZGZEHZQIZEJTRIZEJAKIBKILCKIDKILSUAUBEQRTMNEABOECDOP $.
   $}
 
-  $( Equivalence of existence implied by equality of ordered triples.
-     (Contributed by NM, 26-Apr-2015.) $)
-  oteqex2 $p |- ( <. <. A , B >. , C >. = <. <. R , S >. , T >. ->
-    ( C e. _V <-> T e. _V ) ) $=
-    ( cop wceq cvv wcel wa opeqex opex biantrur 3bitr4g ) ABGZCGDEGZFGHPIJZCIJZ
-    KQIJZFIJZKSUAPCQFLRSABMNTUADEMNO $.
-
-  $( Equivalence of existence implied by equality of ordered triples.
-     (Contributed by NM, 28-May-2008.)  (Revised by Mario Carneiro,
-     26-Apr-2015.) $)
-  oteqex $p |- ( <. <. A , B >. , C >. = <. <. R , S >. , T >. ->
-    ( ( A e. _V /\ B e. _V /\ C e. _V ) <->
-      ( R e. _V /\ S e. _V /\ T e. _V ) ) ) $=
-    ( cop wceq cvv wcel w3a wi simp3 a1i oteqex2 syl5ibr wb wa opex df-3an mpan
-    opthg simprbda opeqex syl adantl anbi12d 3bitr4g expcom pm5.21ndd ) ABGZCGD
-    EGZFGHZCIJZAIJZBIJZUNKZDIJZEIJZFIJZKZUQUNLUMUOUPUNMNVAUNUMUTURUSUTMABCDEFOZ
-    PUNUMUQVAQUNUMRZUOUPRZUNRURUSRZUTRUQVAVCVDVEUNUTVCUKULHZVDVEQUNUMVFCFHZUKIJ
-    UNUMVFVGRQABSUKCULFIIUBUAUCABDEUDUEUMUNUTQUNVBUFUGUOUPUNTURUSUTTUHUIUJ $.
-
   ${
     opcom.1 $e |- A e. _V $.
     opcom.2 $e |- B e. _V $.
