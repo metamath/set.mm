@@ -5152,6 +5152,12 @@ $)
        by NM, 18-Aug-1994.)  (Revised by NM, 4-Apr-2013.) $)
     jaod $p |- ( ph -> ( ( ps \/ th ) -> ch ) ) $=
       ( wo wi com12 jaoi ) BDGACBACHDABCEIADCFIJI $.
+
+    jaod.3 $e |- ( ph -> ( ps \/ th ) ) $.
+    $( Eliminate a disjunction in a deduction.  (Contributed by Mario Carneiro,
+       29-May-2016.) $)
+    mpjaod $p |- ( ph -> ch ) $=
+      ( wo jaod mpd ) ABDHCGABCDEFIJ $.
   $}
 
   ${
