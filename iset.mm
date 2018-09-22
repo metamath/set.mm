@@ -33553,12 +33553,16 @@ $)
     UICUJUKGZEULUICUHUMUIIUIAJEZBJEZKUHUMSABCLZABJJMNOCUJUKPNUICUJQZCUKQZKULTUI
     UQURUIUJCUIUNUJCQUIUNUOUPUAZAJUBNRUIUKCUIUNUKCQUSABJUCNRUDCUJCUKUEUFUG $.
 
-  $( Equivalence of existence implied by equality of ordered pairs.
-     (Contributed by NM, 28-May-2008.) $)
-  opeqex $p |- ( <. A , B >. = <. C , D >. ->
-    ( ( A e. _V /\ B e. _V ) <-> ( C e. _V /\ D e. _V ) ) ) $=
-    ( cop wceq c0 wne cvv wcel wa neeq1 opnz 3bitr3g ) ABEZCDEZFOGHPGHAIJBIJKCI
-    JDIJKOPGLABMCDMN $.
+  ${
+    $d A x $.  $d B x $.  $d C x $.  $d D x $.
+
+    $( Equivalence of existence implied by equality of ordered pairs.
+       (Contributed by NM, 28-May-2008.) $)
+    opeqex $p |- ( <. A , B >. = <. C , D >. ->
+      ( ( A e. _V /\ B e. _V ) <-> ( C e. _V /\ D e. _V ) ) ) $=
+    ( vx cop wceq cv wcel wex cvv wa eleq2 exbidv opm 3bitr3g ) ABFZC
+    DFZGZEHZQIZEJTRIZEJAKIBKILCKIDKILSUAUBEQRTMNEABOECDOP $.
+  $}
 
   $( Equivalence of existence implied by equality of ordered triples.
      (Contributed by NM, 26-Apr-2015.) $)
