@@ -33610,9 +33610,10 @@ $)
        (Contributed by NM, 3-Jun-2008.) $)
     opeqpr $p |- ( <. A , B >. = { C , D }
   <-> ( ( C = { A } /\ D = { A , B } ) \/ ( C = { A , B } /\ D = { A } ) ) ) $=
-      ( cop cpr wceq csn wa wo eqcom dfop eqeq2i snex prex preq12b 3bitri ) ABI
-      ZCDJZKUCUBKUCALZABJZJZKCUDKDUEKMCUEKDUDKMNUBUCOUBUFUCABEFPQCDUDUEGHARABST
-      UA $.
+      ( cop cpr wceq csn wa wo eqcom dfop eqeq2i cvv wcel snexg ax-mp
+      prexg mp2an preq12b 3bitri ) ABIZCDJZKUGUFKUGALZABJZJZKCUHKDUIK
+      MCUIKDUHKMNUFUGOUFUJUGABEFPQCDUHUIGHARSZUHRSEATUAUKBRSUIRSEFABU
+      BUCUDUE $.
   $}
 
   ${
