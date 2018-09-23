@@ -33624,29 +33624,6 @@ $)
   $}
 
   ${
-    $d x y z A $.
-    $( "At most one" remains true inside ordered pair quantification.
-       (Contributed by NM, 28-Aug-2007.) $)
-    mosubopt $p |- ( A. y A. z E* x ph ->
-                 E* x E. y E. z ( A = <. y , z >. /\ ph ) ) $=
-      ( wmo wal cv cop wceq wex wa nfa1 nfe1 nfmo wi nfex sps exlimd wn copsexg
-      mobidv biimpcd simpl 2eximi exlimiv con3i exmo ori syl pm2.61d1 ) ABFZDGZ
-      CGZECHDHIJZDKZCKZUOALZDKZCKZBFZUNUPVACUMCMUTCBUSCNOUMUPVAPCUMUOVADULDMUTD
-      BUSDCURDNQOULUOVAPDUOULVAUOAUTBACDEUAUBUCRSRSUQTUTBKZTVAVBUQUTUQBURUOCDUO
-      AUDUEUFUGVBVAUTBUHUIUJUK $.
-  $}
-
-  ${
-    $d x y z A $.
-    mosubop.1 $e |- E* x ph $.
-    $( "At most one" remains true inside ordered pair quantification.
-       (Contributed by NM, 28-May-1995.) $)
-    mosubop $p |- E* x E. y E. z ( A = <. y , z >. /\ ph ) $=
-      ( wmo wal cv cop wceq wa wex gen2 mosubopt ax-mp ) ABGZDHCHECIDIJKALDMCMB
-      GQCDFNABCDEOP $.
-  $}
-
-  ${
     $d x ph $.  $d x A $.  $d x y $.
     euop2.1 $e |- A e. _V $.
     $( Transfer existential uniqueness to second member of an ordered pair.
