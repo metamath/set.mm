@@ -33624,15 +33624,6 @@ $)
   $}
 
   ${
-    $d x ph $.  $d x A $.  $d x y $.
-    euop2.1 $e |- A e. _V $.
-    $( Transfer existential uniqueness to second member of an ordered pair.
-       (Contributed by NM, 10-Apr-2004.) $)
-    euop2 $p |- ( E! x E. y ( x = <. A , y >. /\ ph ) <-> E! y ph ) $=
-      ( cv cop opex moop2 euxfr2 ) ABCDCFZGDKHCBFDEIJ $.
-  $}
-
-  ${
     $d a b c x y A $.  $d a b c x y B $.  $d a b c x y C $.  $d a b c x ph $.
     $d y ps $.
     euotd.1 $e |- ( ph -> A e. _V ) $.
