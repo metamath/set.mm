@@ -33719,8 +33719,8 @@ $)
        (Contributed by NM, 14-Apr-1995.)  (Proof shortened by Andrew Salmon,
        25-Jul-2011.) $)
     opabid $p |- ( <. x , y >. e. { <. x , y >. | ph } <-> ph ) $=
-      ( vz cv cop wceq wa wex copab opex copsexg bicomd df-opab elab2 ) DEZBEZC
-      EZFZGZAHCIBIZADSABCJQRKTAUAABCPLMABCDNO $.
+      ( vz cv cop wceq wa wex copab opexv copsexg bicomd df-opab elab2 ) DEZBEC
+      EFZGZAHCIBIZADQABCJBCKRASABCPLMABCDNO $.
   $}
 
   ${
