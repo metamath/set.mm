@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Sep-2018
+$( iset.mm - Version of 22-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -5152,6 +5152,12 @@ $)
        by NM, 18-Aug-1994.)  (Revised by NM, 4-Apr-2013.) $)
     jaod $p |- ( ph -> ( ( ps \/ th ) -> ch ) ) $=
       ( wo wi com12 jaoi ) BDGACBACHDABCEIADCFIJI $.
+
+    jaod.3 $e |- ( ph -> ( ps \/ th ) ) $.
+    $( Eliminate a disjunction in a deduction.  (Contributed by Mario Carneiro,
+       29-May-2016.) $)
+    mpjaod $p |- ( ph -> ch ) $=
+      ( wo jaod mpd ) ABDHCGABCDEFIJ $.
   $}
 
   ${
@@ -15445,6 +15451,13 @@ $)
   exmodc $p |- ( DECID E. x ph -> ( E. x ph \/ E* x ph ) ) $=
     ( wex wdc wn wo wmo df-dc weu wi pm2.21 df-mo sylibr orim2i sylbi
     ) ABCZDPPEZFPABGZFPHQRPQPABIZJRPSKABLMNO $.
+
+  $( There is at most one of something which does not exist.  Unlike ~ exmodc
+     there is no decidability condition.  (Contributed by Jim Kingdon,
+     22-Sep-2018.) $)
+  exmonim $p |- ( -. E. x ph -> E* x ph ) $=
+    ( wex wn weu wi wmo pm2.21 df-mo sylibr ) ABCZDKABEZFABGKLHABIJ
+    $.
 
   ${
     $d x y $.
@@ -28886,11 +28899,27 @@ $)
   $}
 
   ${
+    $d x A $.  $d x B $.
+    $( A pair containing a set is inhabited.  (Contributed by Jim Kingdon,
+       21-Sep-2018.) $)
+    prmg $p |- ( A e. V -> E. x x e. { A , B } ) $=
+      ( wcel cv csn wex cpr snmg wceq orc elsn vex elpr 3imtr4i eximi
+      wo syl ) BDEAFZBGEZAHTBCIEZAHABDJUAUBATBKZUCTCKZRUAUBUCUDLABMTB
+      CANOPQS $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
     prnz.1 $e |- A e. _V $.
     $( A pair containing a set is not empty.  (Contributed by NM,
        9-Apr-1994.) $)
     prnz $p |- { A , B } =/= (/) $=
       ( cpr wcel c0 wne prid1 ne0i ax-mp ) AABDZEKFGABCHKAIJ $.
+
+    $( A pair containing a set is inhabited.  (Contributed by Jim Kingdon,
+       21-Sep-2018.) $)
+    prm $p |- E. x x e. { A , B } $=
+      ( cvv wcel cv cpr wex prmg ax-mp ) BEFAGBCHFAIDABCEJK $.
   $}
 
   ${
@@ -29246,6 +29275,25 @@ $)
       ( cpr cpw wss wcel wa prss elpw anbi12i bitr3i ) ABFCGZHAOIZBOIZJACHZBCHZ
       JABODEKPRQSACDLBCELMN $.
   $}
+
+  $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
+     the same second element, the first elements are equal.  Closed form of
+     ~ preqr1 .  (Contributed by Jim Kingdon, 21-Sep-2018.) $)
+  preqr1g $p |- ( ( A e. _V /\ B e. _V ) ->
+      ( { A , C } = { B , C } -> A = B ) ) $=
+    ( cvv wcel wa cpr wceq wo wi prid1g eleq2 syl5ibcom sylibd adantr
+    elprg imp syl5ibrcom adantl eqcom eqeq2 oplem1 ex ) ADEZBDEZFZACG
+    ZBCGZHZABHZUFUIFUJACHZBAHZBCHZUFUIUJUKIZUDUIUNJUEUDUIAUHEZUNUDAUG
+    EUIUOACDKUGUHALMABCDPNOQUFUIULUMIZUEUIUPJUDUEUIBUGEZUPUEUQUIBUHEB
+    CDKUGUHBLRBACDPNSQABTACBUAUBUC $.
+
+  $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
+     the same second element, the second elements are equal.  Closed form of
+     ~ preqr2 .  (Contributed by Jim Kingdon, 21-Sep-2018.) $)
+  preqr2g $p |- ( ( A e. _V /\ B e. _V ) ->
+      ( { C , A } = { C , B } -> A = B ) ) $=
+    ( cpr wceq cvv wcel wa prcom eqeq12i preqr1g syl5bi ) CADZCBDZEAC
+    DZBCDZEAFGBFGHABEMONPCAICBIJABCKL $.
 
   ${
     preqr1.1 $e |- A e. _V $.
@@ -33309,6 +33357,315 @@ $)
     opi2 $p |- { A , B } e. <. A , B >. $=
       ( cpr csn cop cvv wcel prexg mp2an prid2 dfop eleqtrri ) ABEZAF
       ZOEABGPOAHIBHIOHICDABJKLABCDMN $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                   Ordered pair theorem
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x $.  $d B x $.
+
+    $( An ordered pair is inhabited iff the arguments are sets.  (Contributed
+       by Jim Kingdon, 21-Sep-2018.) $)
+    opm $p |- ( E. x x e. <. A , B >. <-> ( A e. _V /\ B e. _V ) ) $=
+      ( cv cop wcel wex cvv csn cpr w3a wa df-op eleq2i exbii abid bitri 19.42v
+      cab df-3an 3bitr4ri 3simpa snexg adantr prmg syl sylanbrc impbii 3bitr2i
+      id ) ADZBCEZFZAGZBHFZCHFZUKBIZBCJZJFZKZAGZUOUPUSAGZKZUOUPLZUNUKUTASZFZAGV
+      AUMVFAULVEUKABCMNOVFUTAUTAPOQVDUSLZAGVDVBLVAVCVDUSARUTVGAUOUPUSTOUOUPVBTZ
+      UAVCVDUOUPVBUBVDVDVBVCVDUJVDUQHFZVBUOVIUPBUCUDAUQURHUEUFVHUGUHUI $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.  $d x D $.
+    opth1.1 $e |- A e. _V $.
+    opth1.2 $e |- B e. _V $.
+    $( An ordered pair is nonempty if the arguments are sets (it is also
+       inhabited; see ~ opm ).  (Contributed by Mario Carneiro,
+       26-Apr-2015.) $)
+    opnzi $p |- <. A , B >. =/= (/) $=
+      ( vx cv cop wcel wex c0 wne cvv opm mpbir2an n0r ax-mp ) EFABGZHEIZQJKRAL
+      HBLHCDEABMNEQOP $.
+
+    $( Equality of the first members of equal ordered pairs.  (Contributed by
+       NM, 28-May-2008.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    opth1 $p |- ( <. A , B >. = <. C , D >. -> A = C ) $=
+      ( cop wceq csn cpr wi sneqr a1i wcel cvv wa opi1 id syl5eleq syl oprcl wo
+      simpld prid1g eleq2 syl5ibrcom elsni eqcomd syl6 dfopg 3syl eleqtrd elpri
+      mpjaod ) ABGZCDGZHZAIZCIZHZACHZURCDJZHZUTVAKUQACELMUQVCCURNZVAUQVDVCCVBNZ
+      UQCONZVEUQVFDONZUQURUPNZVFVGPZUQURUOUPABEFQUQRSZCDURUAZTUCCDOUDTURVBCUEUF
+      VDCACAUGUHUIUQURUSVBJZNUTVCUBUQURUPVLVJUQVHVIUPVLHVJVKCDOOUJUKULURUSVBUMT
+      UN $.
+
+    $( The ordered pair theorem.  If two ordered pairs are equal, their first
+       elements are equal and their second elements are equal.  Exercise 6 of
+       [TakeutiZaring] p. 16.  Note that ` C ` and ` D ` are not required to be
+       sets due our specific ordered pair definition.  (Contributed by NM,
+       28-May-1995.) $)
+    opth $p |- ( <. A , B >. = <. C , D >. <-> ( A = C /\ B = D ) ) $=
+      ( vx cop wceq wa cvv wcel cpr csn syl eqtr3d dfopg sylancl wi prexg opth1
+      opi1 id syl5eleq oprcl simprd opeq1d simpld preqr2g syl2anc mpd cv eqeq2d
+      preq2 eqeq2 imbi12d vex preqr2 vtoclg sylc jca opeq12 impbii ) ABHZCDHZIZ
+      ACIZBDIZJVFVGVHABCDEFUAZVFDKLZCBMZCDMZIZVHVFCKLZVJVFANZVELVNVJJZVFVOVDVEA
+      BEFUBVFUCZUDCDVOUEOZUFVFCNZVKMZVSVLMZIZVMVFVEVTWAVFCBHZVEVTVFVDWCVEVFACBV
+      IUGVQPVFVNBKLZWCVTIVFVNVJVRUHZFCBKKQRPVFVPVEWAIVRCDKKQOPVFVKKLZVLKLZWBVMS
+      VFVNWDWFWEFCBTRVFVPWGVRCDTOVKVLVSUIUJUKVKCGULZMZIZBWHIZSVMVHSGDKWHDIZWJVM
+      WKVHWLWIVLVKWHDCUNUMWHDBUOUPBWHCFGUQURUSUTVAABCDVBVC $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y C $.  $d x y D $.
+    $( Ordered pair theorem. ` C ` and ` D ` are not required to be sets under
+       our specific ordered pair definition.  (Contributed by NM,
+       14-Oct-2005.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    opthg $p |- ( ( A e. V /\ B e. W ) ->
+                 ( <. A , B >. = <. C , D >. <-> ( A = C /\ B = D ) ) ) $=
+      ( vx vy cv cop wceq wa wb opeq1 eqeq1d eqeq1 anbi1d bibi12d opeq2 vex
+      anbi2d opth vtocl2g ) GIZHIZJZCDJZKZUDCKZUEDKZLZMAUEJZUGKZACKZUJLZMABJZUG
+      KZUNBDKZLZMGHABEFUDAKZUHUMUKUOUTUFULUGUDAUENOUTUIUNUJUDACPQRUEBKZUMUQUOUS
+      VAULUPUGUEBASOVAUJURUNUEBDPUARUDUECDGTHTUBUC $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y C $.  $d x y D $.  $d x y X $.
+    $( Ordered pair theorem.  (Contributed by NM, 14-Oct-2005.)  (Revised by
+       Mario Carneiro, 26-Apr-2015.) $)
+    opthg2 $p |- ( ( C e. V /\ D e. W ) ->
+                 ( <. A , B >. = <. C , D >. <-> ( A = C /\ B = D ) ) ) $=
+      ( wcel wa cop wceq opthg eqcom anbi12i 3bitr4g ) CEGDFGHCDIZABIZJCAJZDBJZ
+      HPOJACJZBDJZHCDABEFKPOLSQTRACLBDLMN $.
+  $}
+
+  ${
+    opth2.1 $e |- C e. _V $.
+    opth2.2 $e |- D e. _V $.
+    $( Ordered pair theorem.  (Contributed by NM, 21-Sep-2014.) $)
+    opth2 $p |- ( <. A , B >. = <. C , D >. <-> ( A = C /\ B = D ) ) $=
+      ( cvv wcel cop wceq wa wb opthg2 mp2an ) CGHDGHABICDIJACJBDJKLEFABCDGGMN
+      $.
+  $}
+
+  ${
+    otth.1 $e |- A e. _V $.
+    otth.2 $e |- B e. _V $.
+    otth.3 $e |- R e. _V $.
+    $( Ordered triple theorem, with triple express with ordered pairs.
+       (Contributed by NM, 1-May-1995.)  (Revised by Mario Carneiro,
+       26-Apr-2015.) $)
+    otth2 $p |- ( <. <. A , B >. , R >. = <. <. C , D >. , S >. <->
+                ( A = C /\ B = D /\ R = S ) ) $=
+      ( cop wceq wa w3a opth anbi1i cvv wcel opexg mp2an df-3an
+      3bitr4i ) ABJZCDJZKZEFKZLACKZBDKZLZUELUBEJUCFJKUFUGUEMUDUHUEABC
+      DGHNOUBEUCFAPQBPQUBPQGHABRSINUFUGUETUA $.
+
+    $( Ordered triple theorem.  (Contributed by NM, 25-Sep-2014.)  (Revised by
+       Mario Carneiro, 26-Apr-2015.) $)
+    otth $p |- ( <. A , B , R >. = <. C , D , S >. <->
+      ( A = C /\ B = D /\ R = S ) ) $=
+      ( cotp wceq cop w3a df-ot eqeq12i otth2 bitri ) ABEJZCDFJZKABLELZCDLFLZKA
+      CKBDKEFKMRTSUAABENCDFNOABCDEFGHIPQ $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    eqvinop.1 $e |- B e. _V $.
+    eqvinop.2 $e |- C e. _V $.
+    $( A variable introduction law for ordered pairs.  Analog of Lemma 15 of
+       [Monk2] p. 109.  (Contributed by NM, 28-May-1995.) $)
+    eqvinop $p |- ( A = <. B , C >. <-> E. x E. y ( A = <. x , y >. /\
+                  <. x , y >. = <. B , C >. ) ) $=
+      ( cv cop wceq wa wex opth2 anbi2i ancom anass 3bitri exbii eqeq2d ceqsexv
+      19.42v opeq2 opeq1 bitr2i ) CAHZBHZIZJZUGDEIZJZKZBLZALUEDJZCUEEIZJZKZALCU
+      IJZULUPAULUMUFEJZUHKZKZBLUMUSBLZKUPUKUTBUKUHUMURKZKVBUHKUTUJVBUHUEUFDEFGM
+      NUHVBOUMURUHPQRUMUSBUAVAUOUMUHUOBEGURUGUNCUFEUEUBSTNQRUOUQADFUMUNUICUEDEU
+      CSTUD $.
+  $}
+
+  ${
+    $d x z w A $.  $d y z w A $.  $d z w ph $.
+    $( Substitution of class ` A ` for ordered pair ` <. x , y >. ` .
+       (Contributed by NM, 27-Dec-1996.)  (Revised by Andrew Salmon,
+       11-Jul-2011.) $)
+    copsexg $p |- ( A = <. x , y >. ->
+                  ( ph <-> E. x E. y ( A = <. x , y >. /\ ph ) ) ) $=
+      ( vz vw cv cop wceq wa wex wb wi vex 19.8a weq syl5bi syl5 weu euequ1 wal
+      eqvinop 19.23bi ex opth anbi1i 2exbii nfe1 wnf wo dveeq2or nfae anass a1i
+      anim2d eximd biidd drex1 sylibd exbii 19.40 19.9t biimpd anim1d syl6 jaoi
+      ax-mp exlimi equcom eubii eupick com12 sylan9 sylbi impbid anbi1d 2exbidv
+      mpbi mpan eqeq1 bibi2d imbi12d mpbiri adantr exlimivv pm2.43i ) DBGZCGZHZ
+      IZAWJAJZCKBKZLZWJDEGZFGZHZIZWPWIIZJZFKEKWJWMMZEFDWGWHBNCNUBWSWTEFWQWTWRWQ
+      WTWRAWRAJZCKZBKZLZMWRAXCWRAXCXAXCCXBBOUCUDWREBPZFCPZJZXCAMWNWOWGWHENFNUEZ
+      XCXGAJZCKZBKZXGAXAXIBCWRXGAXHUFUGXKXEXFAJZCKZJZBKZXGAXJXOBXNBUHCBPCUAZXEC
+      UIZUJXJXOMZCBEUKXPXRXQXPXJXNCKXOXPXIXNCCBCULXIXEXLJZXPXNXEXFAUMZXPXLXMXEX
+      LXMMXPXLCOUNUOQUPXNXNCBXPXNUQURUSXQXJXNXOXJXSCKZXQXNXIXSCXTUTYAXECKZXMJXQ
+      XNXEXLCVAXQYBXEXMXQYBXEXECVBVCVDRQXNBOVEVFVGVHXEXOXMXFAXOXEXMXEBSZXOXEXMM
+      BEPZBSYCBETYDXEBBEVIVJVRXEXMBVKVSVLXMXFAXFCSZXMXFAMCFPZCSYECFTYFXFCCFVIVJ
+      VRXFACVKVSVLVMRQVNVOWQWJWRWMXDDWPWIVTZWQWLXCAWQWKXABCWQWJWRAYGVPVQWAWBWCW
+      DWEVNWF $.
+  $}
+
+  ${
+    $d x y ps $.  $d x y A $.  $d x y B $.
+    $( Closed theorem form of ~ copsex2g .  (Contributed by NM,
+       17-Feb-2013.) $)
+    copsex2t $p |- ( ( A. x A. y ( ( x = A /\ y = B ) -> ( ph <-> ps ) )
+      /\ ( A e. V /\ B e. W ) ) ->
+                  ( E. x E. y ( <. A , B >. = <. x , y >. /\ ph ) <-> ps ) ) $=
+      ( wcel wa cv wceq wb wal wex cop elisset nfe1 nfv nfbi anim12i eeanv nfa1
+      wi sylibr nfa2 nfex opeq12 copsexg eqcoms syl adantl sp 19.21bi bitr3d ex
+      imp exlimd sylan2 ) EGIZFHIZJZCKZELZDKZFLZJZABMZUDZDNZCNZVGDOZCOZEFPZVCVE
+      PZLAJZDOZCOZBMZVBVDCOZVFDOZJVMUTVTVAWACEGQDFHQUAVDVFCDUBUEVKVMVSVKVLVSCVJ
+      CUCVRBCVQCRBCSTVKVGVSDVIDCUFVRBDVQDCVPDRUGBDSTVKVGVSVKVGJAVRBVGAVRMZVKVGV
+      OVNLWBVCVEEFUHWBVNVOACDVNUIUJUKULVKVGVHVKVIDVJCUMUNUQUOUPURURUQUS $.
+  $}
+
+  ${
+    $d x y ps $.  $d x y A $.  $d x y B $.
+    copsex2g.1 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
+    $( Implicit substitution inference for ordered pairs.  (Contributed by NM,
+       28-May-1995.) $)
+    copsex2g $p |- ( ( A e. V /\ B e. W ) ->
+                  ( E. x E. y ( <. A , B >. = <. x , y >. /\ ph ) <-> ps ) ) $=
+      ( wcel cv wceq wex cop wa wb elisset nfe1 nfv nfbi eeanv nfex copsexg syl
+      opeq12 eqcoms bitr3d exlimi sylbir syl2an ) EGJCKZELZCMZDKZFLZDMZEFNZUKUN
+      NZLAOZDMZCMZBPZFHJCEGQDFHQUMUPOULUOOZDMZCMVBULUOCDUAVDVBCVABCUTCRBCSTVCVB
+      DVABDUTDCUSDRUBBDSTVCAVABVCURUQLAVAPZUKUNEFUEVEUQURACDUQUCUFUDIUGUHUHUIUJ
+      $.
+  $}
+
+  ${
+    $d x y z w A $.  $d x y z w B $.  $d x y z w C $.  $d x y z w D $.
+    $d x y z w ps $.  $d x y z w R $.  $d x y z w S $.
+    copsex4g.1 $e |- ( ( ( x = A /\ y = B ) /\ ( z = C /\ w = D ) ) ->
+                     ( ph <-> ps ) ) $.
+    $( An implicit substitution inference for 2 ordered pairs.  (Contributed by
+       NM, 5-Aug-1995.) $)
+    copsex4g $p |- ( ( ( A e. R /\ B e. S ) /\ ( C e. R /\ D e. S ) ) ->
+                      ( E. x E. y E. z E. w ( ( <. A , B >. = <. x , y >. /\
+                      <. C , D >. = <. z , w >. ) /\ ph ) <-> ps ) ) $=
+      ( wcel wa cop cv wceq wex vex eqcom opth bitri anbi12i anbi1i a1i 4exbidv
+      wb id cgsex4g bitrd ) GKNHLNOIKNJLNOOZGHPZCQZDQZPZRZIJPZEQZFQZPZRZOZAOZFS
+      ESDSCSUNGRUOHROZUSIRUTJROZOZAOZFSESDSCSBULVDVHCDEFVDVHUHULVCVGAUQVEVBVFUQ
+      UPUMRVEUMUPUAUNUOGHCTDTUBUCVBVAURRVFURVAUAUSUTIJETFTUBUCUDUEUFUGABVGCDEFG
+      HIJKLVGUIMUJUK $.
+  $}
+
+  $( A property of ordered pairs.  (Contributed by Mario Carneiro,
+     26-Apr-2015.) $)
+  0nelop $p |- -. (/) e. <. A , B >. $=
+    ( c0 cop wcel csn cpr wo id cvv wa oprcl dfopg syl eleqtrd elpri wne necomd
+    wceq wn simpld snnzg prnzg jca neanior sylib pm2.65i ) CABDZEZCAFZSCABGZSHZ
+    UICUJUKGZEULUICUHUMUIIUIAJEZBJEZKUHUMSABCLZABJJMNOCUJUKPNUICUJQZCUKQZKULTUI
+    UQURUIUJCUIUNUJCQUIUNUOUPUAZAJUBNRUIUKCUIUNUKCQUSABJUCNRUDCUJCUKUEUFUG $.
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.  $d D x $.
+
+    $( Equivalence of existence implied by equality of ordered pairs.
+       (Contributed by NM, 28-May-2008.) $)
+    opeqex $p |- ( <. A , B >. = <. C , D >. ->
+      ( ( A e. _V /\ B e. _V ) <-> ( C e. _V /\ D e. _V ) ) ) $=
+    ( vx cop wceq cv wcel wex cvv wa eleq2 exbidv opm 3bitr3g ) ABFZC
+    DFZGZEHZQIZEJTRIZEJAKIBKILCKIDKILSUAUBEQRTMNEABOECDOP $.
+  $}
+
+  ${
+    opcom.1 $e |- A e. _V $.
+    opcom.2 $e |- B e. _V $.
+    $( An ordered pair commutes iff its members are equal.  (Contributed by NM,
+       28-May-2009.) $)
+    opcom $p |- ( <. A , B >. = <. B , A >. <-> A = B ) $=
+      ( cop wceq wa opth eqcom anbi2i anidm 3bitri ) ABEBAEFABFZBAFZGMMGMABBACD
+      HNMMBAIJMKL $.
+  $}
+
+  ${
+    $d x y z A $.  $d y z B $.
+    moop2.1 $e |- B e. _V $.
+    $( "At most one" property of an ordered pair.  (Contributed by NM,
+       11-Apr-2004.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    moop2 $p |- E* x A = <. B , x >. $=
+      ( vy cv cop wceq wmo csb wa wal eqtr2 vex opth simprbi syl gen2 nfcsb1v
+      wi nfcv nfop nfeq2 csbeq1a id opeq12d eqeq2d mo4f mpbir ) BCAFZGZHZAIULBA
+      EFZCJZUMGZHZKZUJUMHZTZELALUSAEUQUKUOHZURBUKUOMUTCUNHURCUJUNUMDANOPQRULUPA
+      EABUOAUNUMAUMCSAUMUAUBUCURUKUOBURCUNUJUMAUMCUDURUEUFUGUHUI $.
+  $}
+
+  ${
+    opeqsn.1 $e |- A e. _V $.
+    opeqsn.2 $e |- B e. _V $.
+    opeqsn.3 $e |- C e. _V $.
+    $( Equivalence for an ordered pair equal to a singleton.  (Contributed by
+       NM, 3-Jun-2008.) $)
+    opeqsn $p |- ( <. A , B >. = { C } <-> ( A = B /\ C = { A } ) ) $=
+      ( cop csn wceq cpr wa dfop eqeq1i wcel snexg preqsn eqcom bitri
+      cvv 3bitri ax-mp prexg mp2an anbi2i anidm anbi1i syl5req eqeq1d
+      dfsn2 preq2 syl6bb pm5.32i ) ABGZCHZIAHZABJZJZUNIUOUPIZUPCIZKZA
+      BIZCUOIZKZUMUQUNABDELMUOUPCASNZUOSNDAOUAVDBSNUPSNDEABUBUCFPUTVA
+      USKVCURVAUSURUPUOIVABAIZKZVAUOUPQABADEDPVFVAVAKVAVEVAVABAQUDVAU
+      ERTUFVAUSVBVAUSUOCIVBVAUPUOCVAUOAAJUPAUIABAUJUGUHUOCQUKULRT $.
+  $}
+
+  ${
+    opeqpr.1 $e |- A e. _V $.
+    opeqpr.2 $e |- B e. _V $.
+    opeqpr.3 $e |- C e. _V $.
+    opeqpr.4 $e |- D e. _V $.
+    $( Equivalence for an ordered pair equal to an unordered pair.
+       (Contributed by NM, 3-Jun-2008.) $)
+    opeqpr $p |- ( <. A , B >. = { C , D }
+  <-> ( ( C = { A } /\ D = { A , B } ) \/ ( C = { A , B } /\ D = { A } ) ) ) $=
+      ( cop cpr wceq csn wa wo eqcom dfop eqeq2i cvv wcel snexg ax-mp
+      prexg mp2an preq12b 3bitri ) ABIZCDJZKUGUFKUGALZABJZJZKCUHKDUIK
+      MCUIKDUHKMNUFUGOUFUJUGABEFPQCDUHUIGHARSZUHRSEATUAUKBRSUIRSEFABU
+      BUCUDUE $.
+  $}
+
+  ${
+    $d a b c x y A $.  $d a b c x y B $.  $d a b c x y C $.  $d a b c x ph $.
+    $d y ps $.
+    euotd.1 $e |- ( ph -> A e. _V ) $.
+    euotd.2 $e |- ( ph -> B e. _V ) $.
+    euotd.3 $e |- ( ph -> C e. _V ) $.
+    euotd.4 $e |- ( ph -> ( ps <-> ( a = A /\ b = B /\ c = C ) ) ) $.
+    $( Prove existential uniqueness for an ordered triple.  (Contributed by
+       Mario Carneiro, 20-May-2015.) $)
+    euotd $p |- ( ph -> E! x E. a E. b E. c ( x = <. a , b , c >. /\ ps ) ) $=
+      ( vy cv wceq wa wex cvv wtru cotp wb wal weu otexg syl3anc w3a biimpa vex
+      wcel otth sylibr eqeq2d biimpd impancom expimpd exlimdv exlimdvv wsbc tru
+      adantr ad2antrr simpr eqcomd biimpar jca a1tru 2thd sbcied mpbiri spesbcd
+      3anassrs nfcv nfsbc1v nfex sbceq1a exbidv spcegf sylc 2exbidv sylib eqeq1
+      excom13 anbi1d 3exbidv syl5ibrcom impbid eqeq2 bibi2d albidv spcegv df-eu
+      alrimiv ) ACOZGOZHOZIOZUAZPZBQZIRZHRGRZWNNOZPZUBZCUCZNRZXBCUDADEFUAZSUJZX
+      BWNXHPZUBZCUCZXGADSUJESUJZFSUJZXIJKLDEFUEUFAXKCAXBXJAXAXJGHAWTXJIAWSBXJAB
+      WSXJABQZWSXJXOWRXHWNXOWODPZWPEPZWQFPZUGZWRXHPZABXSMUHWOWPDEWQFGUIHUIIUIUK
+      ZULUMUNUOUPUQURAXBXJXHWRPZBQZIRHRGRZAYCGRHRZIRZYDAXNYCIFUSZGRZHRZYFLAXMYG
+      HEUSZGRZYIKAYJGDAYJGDUSTUTAYJTGDSJAXPQZYGTHESAXMXPKVAYLXQQYCTIFSAXNXPXQLV
+      BAXPXQXRYCTUBAXSQZYCTYMYBBYMWRXHYMXSXTAXSVCYAULVDABXSMVEVFYMVGVHVLVIVIVIV
+      JVKYHYKHESHEVMYJHGYGHEVNVOXQYGYJGYGHEVPVQVRVSYEYIIFSIFVMYHIHYGIGYCIFVNVOV
+      OXRYCYGHGYCIFVPVTVRVSYCIHGWCWAXJWTYCGHIXJWSYBBWNXHWRWBWDWEWFWGWMXFXLNXHSX
+      CXHPZXEXKCYNXDXJXBXCXHWNWHWIWJWKVSXBCNWLUL $.
+  $}
+
+  ${
+    opthw.1 $e |- A e. _V $.
+    opthw.2 $e |- B e. _V $.
+    $( The union of an ordered pair.  Theorem 65 of [Suppes] p. 39.
+       (Contributed by NM, 17-Aug-2004.)  (Revised by Mario Carneiro,
+       26-Apr-2015.) $)
+    uniop $p |- U. <. A , B >. = { A , B } $=
+      ( cop cuni csn cpr cun dfop unieqi wcel snexg ax-mp prexg mp2an
+      cvv unipr wss wceq snsspr1 ssequn1 mpbi 3eqtri ) ABEZFAGZABHZHZ
+      FUFUGIZUGUEUHABCDJKUFUGAQLZUFQLCAMNUJBQLUGQLCDABOPRUFUGSUIUGTAB
+      UAUFUGUBUCUD $.
+
+    $( Ordered pair membership is inherited by class union.  (Contributed by
+       NM, 13-May-2008.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    uniopel $p |- ( <. A , B >. e. C -> U. <. A , B >. e. U. C ) $=
+      ( cop wcel cuni cpr uniop opi2 eqeltri elssuni sseld mpi ) ABFZCGZPHZPGRC
+      HZGRABIPABDEJABDEKLQPSRPCMNO $.
   $}
 
 $(
