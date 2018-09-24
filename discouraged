@@ -17122,6 +17122,7 @@ New usage of "sbcne12gOLD" is discouraged (0 uses).
 New usage of "sbco2OLD" is discouraged (0 uses).
 New usage of "sbco3OLD" is discouraged (0 uses).
 New usage of "sbcoOLD" is discouraged (0 uses).
+New usage of "sbcom2OLD" is discouraged (0 uses).
 New usage of "sbcom3OLD" is discouraged (0 uses).
 New usage of "sbcomOLD" is discouraged (0 uses).
 New usage of "sbcoreleleq" is discouraged (2 uses).
@@ -17554,6 +17555,7 @@ New usage of "wl-embantd" is discouraged (0 uses).
 New usage of "wl-jarli" is discouraged (0 uses).
 New usage of "wl-jarri" is discouraged (0 uses).
 New usage of "wl-mps" is discouraged (1 uses).
+New usage of "wl-sbcom3" is discouraged (0 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
 New usage of "wvd2" is discouraged (5 uses).
@@ -18409,6 +18411,7 @@ Proof modification of "sbcne12gOLD" is discouraged (70 steps).
 Proof modification of "sbco2OLD" is discouraged (82 steps).
 Proof modification of "sbco3OLD" is discouraged (96 steps).
 Proof modification of "sbcoOLD" is discouraged (48 steps).
+Proof modification of "sbcom2OLD" is discouraged (238 steps).
 Proof modification of "sbcom3OLD" is discouraged (2558 steps).
 Proof modification of "sbcomOLD" is discouraged (380 steps).
 Proof modification of "sbcoreleleq" is discouraged (91 steps).
@@ -18571,6 +18574,7 @@ Proof modification of "wl-embantd" is discouraged (11 steps).
 Proof modification of "wl-jarli" is discouraged (11 steps).
 Proof modification of "wl-jarri" is discouraged (10 steps).
 Proof modification of "wl-mps" is discouraged (14 steps).
+Proof modification of "wl-sbcom3" is discouraged (93 steps).
 Proof modification of "wl-syls1" is discouraged (12 steps).
 Proof modification of "wl-syls2" is discouraged (14 steps).
 Proof modification of "xmsuspOLD" is discouraged (118 steps).
