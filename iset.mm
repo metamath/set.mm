@@ -33729,10 +33729,10 @@ $)
        24-Mar-1998.) $)
     elopab $p |- ( A e. { <. x , y >. | ph } <->
                  E. x E. y ( A = <. x , y >. /\ ph ) ) $=
-      ( vz copab wcel cvv cv cop wceq wa elex opex eleq1 mpbiri adantr exlimivv
-      wex eqeq1 anbi1d 2exbidv df-opab elab2g pm5.21nii ) DABCFZGDHGZDBIZCIZJZK
-      ZALZCSBSZDUFMULUGBCUKUGAUKUGUJHGUHUINDUJHOPQREIZUJKZALZCSBSUMEDUFHUNDKZUP
-      ULBCUQUOUKAUNDUJTUAUBABCEUCUDUE $.
+      ( vz copab wcel cvv cv cop wceq wa wex elex opexv mpbiri adantr
+      eleq1 exlimivv eqeq1 anbi1d 2exbidv df-opab elab2g pm5.21nii )
+      DABCFZGDHGZDBICIJZKZALZCMBMZDUFNUJUGBCUIUGAUIUGUHHGBCODUHHRPQSE
+      IZUHKZALZCMBMUKEDUFHULDKZUNUJBCUOUMUIAULDUHTUAUBABCEUCUDUE $.
   $}
 
   ${
