@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Sep-2018
+$( iset.mm - Version of 25-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -13324,10 +13324,18 @@ $)
     BDZABCFZARSPBCFZAAPBCGTPAABCHABIJKQASEBPSAABCLMNO $.
 
   ${
-    sbid2.1 $e |- ( ph -> A. x ph ) $.
+    sbid2h.1 $e |- ( ph -> A. x ph ) $.
     $( An identity law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
-    sbid2 $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
+    sbid2h $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
       ( wsb sbcof2 sbh bitri ) ACBEBCEABCEAABCDFABCDGH $.
+  $}
+
+  ${
+    sbid2.1 $e |- F/ x ph $.
+    $( An identity law for substitution.  (Contributed by NM, 5-Aug-1993.)
+       (Revised by Mario Carneiro, 6-Oct-2016.) $)
+    sbid2 $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
+      ( nfri sbid2h ) ABCABDEF $.
   $}
 
   $( An idempotent law for substitution.  (Contributed by NM, 30-Jun-1994.)
@@ -13345,13 +13353,13 @@ $)
     $( Reversed substitution.  (Contributed by NM, 3-Feb-2005.)  (Proof
        shortened by Andrew Salmon, 25-May-2011.) $)
     sb5rf $p |- ( ph <-> E. y ( y = x /\ [ y / x ] ph ) ) $=
-      ( weq wsb wa wex sbid2 sb1 sylbir stdpc7 imp exlimih impbii ) ACBEZABCFZGZ
+      ( weq wsb wa wex sbid2h sb1 sylbir stdpc7 imp exlimih impbii ) ACBEZABCFZGZ
       CHZAQCBFSACBDIQCBJKRACDPQAACBLMNO $.
 
     $( Reversed substitution.  (Contributed by NM, 5-Aug-1993.)  (Proof
        shortened by Andrew Salmon, 25-May-2011.) $)
     sb6rf $p |- ( ph <-> A. y ( y = x -> [ y / x ] ph ) ) $=
-      ( weq wsb wi wal sbequ1 equcoms com12 alrimih sb2 sbid2 sylib impbii ) ACB
+      ( weq wsb wi wal sbequ1 equcoms com12 alrimih sb2 sbid2h sylib impbii ) ACB
       EZABCFZGZCHZASCDQARARGBCABCIJKLTRCBFARCBMACBDNOP $.
   $}
 
@@ -14654,7 +14662,7 @@ $( The theorems in this section make use of the $d statement. $)
        [Megill] p. 449 (p. 16 of the preprint).  (Contributed by NM,
        5-Aug-1993.) $)
     sbid2v $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
-      ( ax-17 sbid2 ) ABCABDE $.
+      ( ax-17 sbid2h ) ABCABDE $.
   $}
 
   ${
@@ -14755,6 +14763,32 @@ $( The theorems in this section make use of the $d statement. $)
        18-Aug-1993.) $)
     sbalv $p |- ( [ y / x ] A. z ph <-> A. z ps ) $=
       ( wal wsb sbal albii bitri ) AEGCDHACDHZEGBEGAECDILBEFJK $.
+  $}
+
+  ${
+    $d u v ph $.  $d u v x $.  $d u v y $.
+    $( Lemma for ~ sbco4 .  This is like ~ sbco4 except that the variable ` v `
+       is used on both the left hand side and the right hand side.
+       (Contributed by Jim Kingdon, 25-Sep-2018.) $)
+    sbco4lem $p |- ( [ y / u ] [ x / v ] [ u / x ] [ v / y ] ph <->
+        [ x / v ] [ y / x ] [ v / y ] ph ) $=
+      ( wsb sbcom2 nfv sbco2 sbbii bitr3i ) ACDFZBEFZDBFECFMECFZDBFLB
+      CFZDBFMECDBGNODBLBCELEHIJK $.
+  $}
+
+  ${
+    $d u v ph $.  $d u v x $.  $d u v y $.  $d w ph $.  $d w x $.  $d w y $.
+    $d v w $.
+    $( Two ways of exchanging two variables.  The distinct variable constraint
+       between ` v ` and ` w ` is an artifact of the current proof, and perhaps
+       could be removed in the future.  (Contributed by Jim Kingdon,
+       25-Sep-2018.) $)
+    sbco4 $p |- ( [ y / u ] [ x / v ] [ u / x ] [ v / y ] ph <->
+        [ x / w ] [ y / x ] [ w / y ] ph ) $=
+      ( wsb sbco4lem sbcom2 sbbii nfv sbco2 bitri sbid2 3bitr3i ) ACE
+      GZBFGEBGFCGPBCGZEBGZACDGZBCGZDBGZABCEFHSDEGZBCGZEDGZDBGZUBEDGZB
+      CGZDBGRUAUDUGDBUBBCEDIJUEQEDGZDBGRUDUHDBUCQEDUBPBCACEDADKLJJJQE
+      BDQDKLMUGTDBUFSBCSEDSEKNJJOM $.
   $}
 
   ${
