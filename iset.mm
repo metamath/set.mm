@@ -3851,6 +3851,11 @@ $)
        5-Aug-1993.) $)
     anbi12i $p |- ( ( ph /\ ch ) <-> ( ps /\ th ) ) $=
       ( wa anbi1i anbi2i bitri ) ACGBCGBDGABCEHCDBFIJ $.
+
+    $( Variant of ~ anbi12i with commutation.  (Contributed by Jonathan
+       Ben-Naim, 3-Jun-2011.) $)
+    anbi12ci $p |- ( ( ph /\ ch ) <-> ( th /\ ps ) ) $=
+      ( wa anbi12i ancom bitri ) ACGBDGDBGABCDEFHBDIJ $.
   $}
 
   ${
