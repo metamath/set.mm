@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Sep-2018
+$( iset.mm - Version of 25-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -14763,6 +14763,32 @@ $( The theorems in this section make use of the $d statement. $)
        18-Aug-1993.) $)
     sbalv $p |- ( [ y / x ] A. z ph <-> A. z ps ) $=
       ( wal wsb sbal albii bitri ) AEGCDHACDHZEGBEGAECDILBEFJK $.
+  $}
+
+  ${
+    $d u v ph $.  $d u v x $.  $d u v y $.
+    $( Lemma for ~ sbco4 .  This is like ~ sbco4 except that the variable ` v `
+       is used on both the left hand side and the right hand side.
+       (Contributed by Jim Kingdon, 25-Sep-2018.) $)
+    sbco4lem $p |- ( [ y / u ] [ x / v ] [ u / x ] [ v / y ] ph <->
+        [ x / v ] [ y / x ] [ v / y ] ph ) $=
+      ( wsb sbcom2 nfv sbco2 sbbii bitr3i ) ACDFZBEFZDBFECFMECFZDBFLB
+      CFZDBFMECDBGNODBLBCELEHIJK $.
+  $}
+
+  ${
+    $d u v ph $.  $d u v x $.  $d u v y $.  $d w ph $.  $d w x $.  $d w y $.
+    $d v w $.
+    $( Two ways of exchanging two variables.  The distinct variable constraint
+       between ` v ` and ` w ` is an artifact of the current proof, and perhaps
+       could be removed in the future.  (Contributed by Jim Kingdon,
+       25-Sep-2018.) $)
+    sbco4 $p |- ( [ y / u ] [ x / v ] [ u / x ] [ v / y ] ph <->
+        [ x / w ] [ y / x ] [ w / y ] ph ) $=
+      ( wsb sbco4lem sbcom2 sbbii nfv sbco2 bitri sbid2 3bitr3i ) ACE
+      GZBFGEBGFCGPBCGZEBGZACDGZBCGZDBGZABCEFHSDEGZBCGZEDGZDBGZUBEDGZB
+      CGZDBGRUAUDUGDBUBBCEDIJUEQEDGZDBGRUDUHDBUCQEDUBPBCACEDADKLJJJQE
+      BDQDKLMUGTDBUFSBCSEDSEKNJJOM $.
   $}
 
   ${
