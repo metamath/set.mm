@@ -14766,24 +14766,11 @@ $( The theorems in this section make use of the $d statement. $)
   $}
 
   ${
-    $d u v ph $.  $d u v x $.  $d u v y $.
-    $( Lemma for ~ sbco4 .  This is like ~ sbco4 except that the variable ` v `
-       is used on both the left hand side and the right hand side.  Because it
-       is a special case of ~ sbco4 there is no need to use it other than in
-       the proof of ~ sbco4 itself.  (Contributed by Jim Kingdon,
-       25-Sep-2018.)  (New usage is discouraged.) $)
-    sbco4lem1 $p |- ( [ y / u ] [ x / v ] [ u / x ] [ v / y ] ph <->
-        [ x / v ] [ y / x ] [ v / y ] ph ) $=
-      ( wsb sbcom2 nfv sbco2 sbbii bitr3i ) ACDFZBEFZDBFECFMECFZDBFLB
-      CFZDBFMECDBGNODBLBCELEHIJK $.
-  $}
-
-  ${
     $d v w ph $.  $d v w x $.  $d v w y $.
     $( Lemma for ~ sbco4 .  It replaces the temporary variable ` v ` with
        another temporary variable ` w ` .  (Contributed by Jim Kingdon,
        26-Sep-2018.) $)
-    sbco4lem2 $p |- ( [ x / v ] [ y / x ] [ v / y ] ph <->
+    sbco4lem $p |- ( [ x / v ] [ y / x ] [ v / y ] ph <->
         [ x / w ] [ y / x ] [ w / y ] ph ) $=
       ( wsb sbcom2 sbbii nfv sbco2 bitri sbid2 3bitr3i ) ACDFZDEFZBCF
       ZEDFZDBFZOEDFZBCFZDBFACEFZBCFZEBFZNBCFZDBFQTDBOBCEDGHRUBEDFZDBF
@@ -14799,8 +14786,9 @@ $( The theorems in this section make use of the $d statement. $)
        25-Sep-2018.) $)
     sbco4 $p |- ( [ y / u ] [ x / v ] [ u / x ] [ v / y ] ph <->
         [ x / w ] [ y / x ] [ w / y ] ph ) $=
-      ( vt wsb sbco4lem1 sbco4lem2 3bitri ) ACEHZBFHEBHFCHLBCHEBHACGH
-      BCHGBHACDHBCHDBHABCEFIABCGEJABCDGJK $.
+      ( vt wsb sbcom2 nfv sbco2 sbbii bitr3i sbco4lem 3bitri ) ACEHZBFHZEBHFCH
+      ZPBCHZEBHZACGHBCHGBHACDHBCHDBHRQFCHZEBHTQFCEBIUASEBPBCFPFJKLMABCGENABCDGN
+      O $.
   $}
 
   ${
