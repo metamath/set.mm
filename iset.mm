@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Sep-2018
+$( iset.mm - Version of 26-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -14768,27 +14768,39 @@ $( The theorems in this section make use of the $d statement. $)
   ${
     $d u v ph $.  $d u v x $.  $d u v y $.
     $( Lemma for ~ sbco4 .  This is like ~ sbco4 except that the variable ` v `
-       is used on both the left hand side and the right hand side.
-       (Contributed by Jim Kingdon, 25-Sep-2018.) $)
-    sbco4lem $p |- ( [ y / u ] [ x / v ] [ u / x ] [ v / y ] ph <->
+       is used on both the left hand side and the right hand side.  Because it
+       is a special case of ~ sbco4 there is no need to use it other than in
+       the proof of ~ sbco4 itself.  (Contributed by Jim Kingdon,
+       25-Sep-2018.)  (New usage is discouraged.) $)
+    sbco4lem1 $p |- ( [ y / u ] [ x / v ] [ u / x ] [ v / y ] ph <->
         [ x / v ] [ y / x ] [ v / y ] ph ) $=
       ( wsb sbcom2 nfv sbco2 sbbii bitr3i ) ACDFZBEFZDBFECFMECFZDBFLB
       CFZDBFMECDBGNODBLBCELEHIJK $.
   $}
 
   ${
-    $d u v ph $.  $d u v x $.  $d u v y $.  $d w ph $.  $d w x $.  $d w y $.
-    $d v w $.
-    $( Two ways of exchanging two variables.  The distinct variable constraint
-       between ` v ` and ` w ` is an artifact of the current proof, and perhaps
-       could be removed in the future.  (Contributed by Jim Kingdon,
+    $d v w ph $.  $d v w x $.  $d v w y $.
+    $( Lemma for ~ sbco4 .  It replaces the temporary variable ` v ` with
+       another temporary variable ` w ` .  (Contributed by Jim Kingdon,
+       26-Sep-2018.) $)
+    sbco4lem2 $p |- ( [ x / v ] [ y / x ] [ v / y ] ph <->
+        [ x / w ] [ y / x ] [ w / y ] ph ) $=
+      ( wsb sbcom2 sbbii nfv sbco2 bitri sbid2 3bitr3i ) ACDFZDEFZBCF
+      ZEDFZDBFZOEDFZBCFZDBFACEFZBCFZEBFZNBCFZDBFQTDBOBCEDGHRUBEDFZDBF
+      UCQUEDBPUBEDOUABCACEDADIJHHHUBEBDUBDIJKTUDDBSNBCNEDNEILHHM $.
+  $}
+
+  ${
+    $d t u v ph $.  $d t u v x $.  $d t u v y $.  $d w ph $.  $d w x $.
+    $d w y $.  $d t w $.
+    $( Two ways of exchanging two variables.  Both sides of the biconditional
+       exchange ` x ` and ` y ` , either via two temporary variables ` u ` and
+       ` v ` , or a single temporary ` w ` .  (Contributed by Jim Kingdon,
        25-Sep-2018.) $)
     sbco4 $p |- ( [ y / u ] [ x / v ] [ u / x ] [ v / y ] ph <->
         [ x / w ] [ y / x ] [ w / y ] ph ) $=
-      ( wsb sbco4lem sbcom2 sbbii nfv sbco2 bitri sbid2 3bitr3i ) ACE
-      GZBFGEBGFCGPBCGZEBGZACDGZBCGZDBGZABCEFHSDEGZBCGZEDGZDBGZUBEDGZB
-      CGZDBGRUAUDUGDBUBBCEDIJUEQEDGZDBGRUDUHDBUCQEDUBPBCACEDADKLJJJQE
-      BDQDKLMUGTDBUFSBCSEDSEKNJJOM $.
+      ( vt wsb sbco4lem1 sbco4lem2 3bitri ) ACEHZBFHEBHFCHLBCHEBHACGH
+      BCHGBHACDHBCHDBHABCEFIABCGEJABCDGJK $.
   $}
 
   ${
