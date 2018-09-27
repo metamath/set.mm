@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Sep-2018
+$( iset.mm - Version of 27-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -17539,6 +17539,16 @@ $)
        (Contributed by NM, 26-Dec-1993.) $)
     abid2 $p |- { x | x e. A } = A $=
       ( cv wcel cab biid abbi2i eqcomi ) BACBDZAEIABIFGH $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d ph z $.
+    sb8ab.1 $e |- F/ y ph $.
+    $( Substitution of variable in class abstraction.  (Contributed by Jim
+       Kingdon, 27-Sep-2018.) $)
+    sb8ab $p |- { x | ph } = { y | [ y / x ] ph } $=
+      ( vz cab wsb cv wcel sbco2 df-clab 3bitr4ri eqriv ) EABFZABCGZCFZOCEGABEG
+      EHZPIQNIABECDJOECKAEBKLM $.
   $}
 
   ${
