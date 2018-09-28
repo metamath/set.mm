@@ -4611,6 +4611,7 @@
 "df-nv" is used by "isnvlem".
 "df-nv" is used by "nvss".
 "df-oc" is used by "ocval".
+"df-op" is used by "dfopif".
 "df-ph" is used by "isphg".
 "df-ph" is used by "phnv".
 "df-pjh" is used by "pjhfval".
@@ -4715,6 +4716,34 @@
 "dfiop2" is used by "hoico1".
 "dfiop2" is used by "hoico2".
 "dfiop2" is used by "hoif".
+"dfop" is used by "elop".
+"dfop" is used by "funopg".
+"dfop" is used by "op1stb".
+"dfop" is used by "opeqpr".
+"dfop" is used by "opeqsn".
+"dfop" is used by "opi1".
+"dfop" is used by "opi2".
+"dfop" is used by "opid".
+"dfop" is used by "relop".
+"dfop" is used by "uniop".
+"dfop" is used by "xpsspw".
+"dfop" is used by "xpsspwOLD".
+"dfopg" is used by "0nelop".
+"dfopg" is used by "dfop".
+"dfopg" is used by "gruop".
+"dfopg" is used by "opnz".
+"dfopg" is used by "opth".
+"dfopg" is used by "opth1".
+"dfopg" is used by "opwf".
+"dfopg" is used by "rankopb".
+"dfopg" is used by "tskop".
+"dfopg" is used by "wunop".
+"dfopif" is used by "dfopg".
+"dfopif" is used by "nfop".
+"dfopif" is used by "opeq1".
+"dfopif" is used by "opeq2".
+"dfopif" is used by "opex".
+"dfopif" is used by "opprc".
 "dfpjop" is used by "elpjch".
 "dfpjop" is used by "elpjhmop".
 "dfpjop" is used by "elpjidm".
@@ -5690,6 +5719,7 @@
 "elnpi" is used by "prn0".
 "elnpi" is used by "prnmax".
 "elnpi" is used by "prpssnq".
+"elop" is used by "relop".
 "elpaddatiN" is used by "osumcllem7N".
 "elpaddatiN" is used by "pexmidlem4N".
 "elpclN" is used by "pclfinclN".
@@ -10919,6 +10949,14 @@
 "opelreal" is used by "axrnegex".
 "opelreal" is used by "axrrecex".
 "opelreal" is used by "ltresr".
+"opeqpr" is used by "relop".
+"opi1" is used by "opth".
+"opi1" is used by "opth1".
+"opi2" is used by "elvvuni".
+"opi2" is used by "opeluu".
+"opi2" is used by "uniopel".
+"opid" is used by "dmsnsnsn".
+"opid" is used by "funopg".
 "opidon" is used by "opidon2".
 "opidon" is used by "rngopid".
 "opidon2" is used by "exidreslem".
@@ -11753,6 +11791,7 @@
 "recmulnq" is used by "recrecnq".
 "recrecnq" is used by "reclem2pr".
 "reexALT" is used by "cnexALT".
+"relop" is used by "funopg".
 "relrngo" is used by "iscrngo2".
 "relrngo" is used by "isdrngo1".
 "relrngo" is used by "isrngo".
@@ -14627,6 +14666,7 @@ New usage of "df-nq" is discouraged (5 uses).
 New usage of "df-nr" is discouraged (24 uses).
 New usage of "df-nv" is discouraged (2 uses).
 New usage of "df-oc" is discouraged (1 uses).
+New usage of "df-op" is discouraged (1 uses).
 New usage of "df-ph" is discouraged (2 uses).
 New usage of "df-pjh" is discouraged (2 uses).
 New usage of "df-pli" is discouraged (2 uses).
@@ -14669,6 +14709,9 @@ New usage of "dfch2" is discouraged (0 uses).
 New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
 New usage of "dfiop2" is discouraged (3 uses).
+New usage of "dfop" is discouraged (12 uses).
+New usage of "dfopg" is discouraged (10 uses).
+New usage of "dfopif" is discouraged (6 uses).
 New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfsup2OLD" is discouraged (1 uses).
 New usage of "dfsup3OLD" is discouraged (0 uses).
@@ -15088,6 +15131,7 @@ New usage of "elnlfn" is discouraged (4 uses).
 New usage of "elnlfn2" is discouraged (2 uses).
 New usage of "elnp" is discouraged (5 uses).
 New usage of "elnpi" is discouraged (4 uses).
+New usage of "elop" is discouraged (1 uses).
 New usage of "elpaddatiN" is discouraged (2 uses).
 New usage of "elpaddatriN" is discouraged (0 uses).
 New usage of "elpclN" is discouraged (1 uses).
@@ -16675,6 +16719,10 @@ New usage of "opelopab4" is discouraged (0 uses).
 New usage of "opelopabsbOLD" is discouraged (4 uses).
 New usage of "opelreal" is discouraged (8 uses).
 New usage of "opelresiOLD" is discouraged (0 uses).
+New usage of "opeqpr" is discouraged (1 uses).
+New usage of "opi1" is discouraged (2 uses).
+New usage of "opi2" is discouraged (3 uses).
+New usage of "opid" is discouraged (2 uses).
 New usage of "opidon" is discouraged (2 uses).
 New usage of "opidon2" is discouraged (1 uses).
 New usage of "opsqrlem1" is discouraged (0 uses).
@@ -17033,6 +17081,7 @@ New usage of "reclem4pr" is discouraged (1 uses).
 New usage of "recmulnq" is discouraged (3 uses).
 New usage of "recrecnq" is discouraged (1 uses).
 New usage of "reexALT" is discouraged (1 uses).
+New usage of "relop" is discouraged (1 uses).
 New usage of "relopabVD" is discouraged (0 uses).
 New usage of "relrngo" is discouraged (6 uses).
 New usage of "renicax" is discouraged (0 uses).
