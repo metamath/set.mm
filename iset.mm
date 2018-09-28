@@ -33772,22 +33772,24 @@ $)
   $}
 
   ${
-    $d x y z w $.  $d w z A $.  $d w x B $.  $d w z ph $.
+    $d u v x y z w $.  $d u v w z A $.  $d u v w x B $.  $d u v w z ph $.
     $( The law of concretion in terms of substitutions.  (Contributed by NM,
        30-Sep-2002.)  (Revised by Mario Carneiro, 18-Nov-2016.) $)
     opelopabsb $p |- ( <. A , B >. e. { <. x , y >. | ph }
                  <-> [. A / x ]. [. B / y ]. ph ) $=
-      ( vz vw cop wcel cvv wa wsbc c0 wne wceq cv wex wb eleq1d bibi12d vex nex
-      copab wn opnzi simpl eqcomd necon3ai ax-mp elopab mtbir eleq1 mtbiri opnz
-      necon2ai sylib sbcex spesbc exlimiv syl jca opeq1 dfsbcq2 sbcbidv nfopab1
-      wsb opeq2 nfel2 nfs1v nfbi sbequ12 nfopab2 opabid chvar vtocl2g pm5.21nii
-      weq ) DEHZABCUCZIZDJIZEJIZKZACELZBDLZVTVRMNWCVTVRMVRMOVTMVSIZWFMBPZCPZHZO
-      ZAKZCQZBQWLBWKCWIMNWKUDWGWHBUACUAUEWKWIMWKMWIWJAUFUGUHUIUBUBABCMUJUKVRMVS
-      ULUMUODEUNUPWEWAWBWDBDUQWEWDBQWBWDBDURWDWBBACEUQUSUTVAFPZGPZHZVSIZACGVFZB
-      FVFZRZDWNHZVSIZWQBDLZRVTWERFGDEJJWMDOZWPXAWRXBXCWOWTVSWMDWNVBSWQBFDVCTWNE
-      OZXAVTXBWEXDWTVRVSWNEDVGSXDWQWDBDACGEVCVDTWGWNHZVSIZWQRZWSBFWPWRBBWOVSABC
-      VEVHWQBFVIVJBFVQZXFWPWQWRXHXEWOVSWGWMWNVBSWQBFVKTWIVSIZARXGCGXFWQCCXEVSAB
-      CVLVHACGVIVJCGVQZXIXFAWQXJWIXEVSWHWNWGVGSACGVKTABCVMVNVNVOVP $.
+      ( vv vu vz vw cop wcel cvv wa wsb cv wceq wex nfs1v weq wb copab wsbc vex
+      elopab ax-ia1 eqcomd sylib 2eximi eeanv isset anbi12i bitr4i sylbi nfsbxy
+      opth nfv sbequ12 sylan9bbr cbvopab eleq2s sbcex spesbc exlimiv syl eleq1d
+      jca opeq1 dfsbcq2 bibi12d opeq2 sbcbidv nfopab1 nfel2 nfbi nfopab2 opabid
+      chvar vtocl2g pm5.21nii ) DEJZABCUAZKZDLKZELKZMZACEUBZBDUBZWEVTACFNZBGNZG
+      FUAZWAVTWJKVTGOZFOZJZPZWIMZFQGQZWEWIGFVTUDWPWKDPZWLEPZMZFQGQZWEWOWSGFWOWM
+      VTPWSWOVTWMWNWIUEUFWKWLDEGUCFUCUOUGUHWTWQGQZWRFQZMWEWQWRGFUIWCXAWDXBGDUJF
+      EUJUKULUGUMAWIBCGFAGUPAFUPWHBGRWHBGCACFRUNCFSAWHBGSWIACFUQWHBGUQURUSUTWGW
+      CWDWFBDVAWGWFBQWDWFBDVBWFWDBACEVAVCVDVFHOZIOZJZWAKZACINZBHNZTZDXDJZWAKZXG
+      BDUBZTWBWGTHIDELLXCDPZXFXKXHXLXMXEXJWAXCDXDVGVEXGBHDVHVIXDEPZXKWBXLWGXNXJ
+      VTWAXDEDVJVEXNXGWFBDACIEVHVKVIBOZXDJZWAKZXGTZXIBHXFXHBBXEWAABCVLVMXGBHRVN
+      BHSZXQXFXGXHXSXPXEWAXOXCXDVGVEXGBHUQVIXOCOZJZWAKZATXRCIXQXGCCXPWAABCVOVMA
+      CIRVNCISZYBXQAXGYCYAXPWAXTXDXOVJVEACIUQVIABCVPVQVQVRVS $.
 
     brabsb.1 $e |- R = { <. x , y >. | ph } $.
     $( The law of concretion in terms of substitutions.  (Contributed by NM,
