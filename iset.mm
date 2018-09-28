@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Sep-2018
+$( iset.mm - Version of 29-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -34003,13 +34003,12 @@ $)
 
   ${
     $d z ph $.  $d z x $.  $d z y $.
-    $( Non-empty ordered pair class abstraction.  (Contributed by NM,
-       10-Oct-2007.) $)
-    opabn0 $p |- ( { <. x , y >. | ph } =/= (/) <-> E. x E. y ph ) $=
-      ( vz copab c0 wne cv wcel wex n0 cop wceq elopab exbii exrot3 opex isseti
-      wa bitri 19.41v mpbiran 2exbii ) ABCEZFGDHZUDIZDJZACJBJZDUDKUGUEBHZCHZLZM
-      ZASZCJBJZDJZUHUFUNDABCUENOUOUMDJZCJBJUHUMDBCPUPABCUPULDJADUKUIUJQRULADUAU
-      BUCTTT $.
+    $( Inhabited ordered pair class abstraction.  (Contributed by Jim Kingdon,
+       29-Sep-2018.) $)
+    opabm $p |- ( E. z z e. { <. x , y >. | ph } <-> E. x E. y ph ) $=
+      ( cv copab wcel wex cop wceq wa elopab exbii exrot3 isseti 19.41v mpbiran
+      opexv 2exbii 3bitri ) DEZABCFGZDHUABECEIZJZAKZCHBHZDHUEDHZCHBHACHBHUBUFDA
+      BCUALMUEDBCNUGABCUGUDDHADUCBCROUDADPQST $.
   $}
 
   ${
