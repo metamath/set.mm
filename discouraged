@@ -17149,6 +17149,7 @@ New usage of "sbcrextOLD" is discouraged (0 uses).
 New usage of "sbcsngOLD" is discouraged (0 uses).
 New usage of "sbcssOLD" is discouraged (0 uses).
 New usage of "sbcssgVD" is discouraged (0 uses).
+New usage of "sbel2xOLD" is discouraged (0 uses).
 New usage of "sbequ2OLD" is discouraged (0 uses).
 New usage of "sbequ8ALT" is discouraged (0 uses).
 New usage of "sbequiOLD" is discouraged (0 uses).
@@ -18441,6 +18442,7 @@ Proof modification of "sbcrextOLD" is discouraged (147 steps).
 Proof modification of "sbcsngOLD" is discouraged (18 steps).
 Proof modification of "sbcssOLD" is discouraged (130 steps).
 Proof modification of "sbcssgVD" is discouraged (223 steps).
+Proof modification of "sbel2xOLD" is discouraged (75 steps).
 Proof modification of "sbequ2OLD" is discouraged (29 steps).
 Proof modification of "sbftOLD" is discouraged (58 steps).
 Proof modification of "sbieOLD" is discouraged (31 steps).
