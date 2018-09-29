@@ -34012,34 +34012,6 @@ $)
   $}
 
   ${
-    $d w y z A $.  $d w ph $.  $d w x y z $.
-    $( Move substitution into a class abstraction.  (Contributed by NM,
-       6-Aug-2007.)  (Revised by NM, 23-Aug-2018.) $)
-    csbopab $p |- [_ A / x ]_ { <. y , z >. | ph }
-              = { <. y , z >. | [. A / x ]. ph } $=
-      ( vw cvv wcel copab csb wsbc wceq cv wsb csbeq1 opabbidv wn c0 wex nexdv
-      dfsbcq2 eqeq12d vex nfs1v nfopab sbequ12 csbief vtoclg csbprc sbcex con3i
-      weq opabn0 necon1bbii sylib eqtr4d pm2.61i ) EGHZBEACDIZJZABEKZCDIZLZBFMZ
-      USJZABFNZCDIZLVCFEGVDELZVEUTVGVBBVDEUSOVHVFVACDABFEUAPUBBVDUSVGFUCVFCDBAB
-      FUDUEBFULAVFCDABFUFPUGUHURQZUTRVBBEUSUIVIVADSZCSZQVBRLVIVJCVIVADVAURABEUJ
-      UKTTVKVBRVACDUMUNUOUPUQ $.
-  $}
-
-  ${
-    $d w y z A $.  $d w ph $.  $d w x y z $.
-    $( Move substitution into a class abstraction.  (Contributed by NM,
-       6-Aug-2007.)  (Proof shortened by Mario Carneiro, 17-Nov-2016.)
-       Obsolete as of 22-Aug-2018.  Use ~ csbopab instead.
-       (New usage is discouraged.)  (Proof modification is discouraged.) $)
-    csbopabgOLD $p |- ( A e. V -> [_ A / x ]_ { <. y , z >. | ph }
-              = { <. y , z >. | [. A / x ]. ph } ) $=
-      ( vw cv copab csb wsb wceq wsbc csbeq1 dfsbcq2 opabbidv eqeq12d vex nfs1v
-      nfopab sbequ12 csbief vtoclg ) BGHZACDIZJZABGKZCDIZLBEUEJZABEMZCDIZLGEFUD
-      ELZUFUIUHUKBUDEUENULUGUJCDABGEOPQBUDUEUHGRUGCDBABGSTBHUDLAUGCDABGUAPUBUC
-      $.
-  $}
-
-  ${
     $d ph w $.  $d A w x $.  $d A y $.  $d w y z $.  $d x z $.
     $( Move indexed union inside an ordered-pair abstraction.  (Contributed by
        Stefan O'Rear, 20-Feb-2015.) $)
