@@ -34076,6 +34076,95 @@ $)
     wa ) ABCBACDZABEFZAFBFEZCZQPCZNZPQGORTABHSRABIJKPQLM $.
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Epsilon and identity relations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new constant symbols. $)
+  $c _E $. $( Letter E (for epsilon relation) $)
+  $c _I $.  $( Letter I (for identity relation) $)
+
+  $( Extend class notation to include the epsilon relation. $)
+  cep $a class _E $.
+
+  $( Extend the definition of a class to include identity relation. $)
+  cid $a class _I $.
+
+  ${
+    $d x y $.
+    $( Define the epsilon relation.  Similar to Definition 6.22 of
+       [TakeutiZaring] p. 30.  The epsilon relation and set membership are the
+       same, that is, ` ( A _E B <-> A e. B ) ` when ` B ` is a set by
+       ~ epelg .  Thus, ` 5 _E { 1 , 5 } ` ( ~ ex-eprel ).  (Contributed by NM,
+       13-Aug-1995.) $)
+    df-eprel $a |- _E = { <. x , y >. | x e. y } $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( The epsilon relation and membership are the same.  General version of
+       ~ epel .  (Contributed by Scott Fenton, 27-Mar-2011.)  (Revised by Mario
+       Carneiro, 28-Apr-2015.) $)
+    epelg $p |- ( B e. V -> ( A _E B <-> A e. B ) ) $=
+      ( vx vy wcel cvv cep wbr wi cop df-br cv copab wceq wa wex vex sylbi a1i
+      elopab pm3.2i opeqex mpbiri simpld adantr exlimivv df-eprel eleq2s eleq12
+      elex wb brabga expcom pm5.21ndd ) BCFZAGFZABHIZABFZURUQJUPURABKZHFUQABHLU
+      QUTDMZEMZFZDENZHUTVDFUTVAVBKOZVCPZEQDQUQVCDEUTUAVFUQDEVEUQVCVEUQBGFZVEUQV
+      GPVAGFZVBGFZPVHVIDRERUBABVAVBUCUDUEUFUGSDEUHZUISTUSUQJUPABUKTUQUPURUSULVC
+      USDEABHGCVAAVBBUJVJUMUNUO $.
+  $}
+
+  ${
+    epelc.1 $e |- B e. _V $.
+    $( The epsilon relationship and the membership relation are the same.
+       (Contributed by Scott Fenton, 11-Apr-2012.) $)
+    epelc $p |- ( A _E B <-> A e. B ) $=
+      ( cvv wcel cep wbr wb epelg ax-mp ) BDEABFGABEHCABDIJ $.
+  $}
+
+  $( The epsilon relation and the membership relation are the same.
+     (Contributed by NM, 13-Aug-1995.) $)
+  epel $p |- ( x _E y <-> x e. y ) $=
+    ( cv vex epelc ) ACBCBDE $.
+
+  ${
+    $d x y $.
+    $( Define the identity relation.  Definition 9.15 of [Quine] p. 64.  For
+       example, ` 5 _I 5 ` and ` -. 4 _I 5 ` ( ~ ex-id ).  (Contributed by NM,
+       13-Aug-1995.) $)
+    df-id $a |- _I = { <. x , y >. | x = y } $.
+  $}
+
+  ${
+    $d w z x $.  $d w z y $.
+    $( A stronger version of ~ df-id that doesn't require ` x ` and ` y ` to be
+       distinct.  Ordinarily, we wouldn't use this as a definition, since
+       non-distinct dummy variables would make soundness verification more
+       difficult (as the proof here shows).  The proof can be instructive in
+       showing how distinct variable requirements may be eliminated, a task
+       that is not necessarily obvious.  (Contributed by NM, 5-Feb-2008.)
+       (Revised by Mario Carneiro, 18-Nov-2016.) $)
+    dfid3 $p |- _I = { <. x , y >. | x = y } $=
+      ( vz vw weq copab cv cop wa wex cab wb exbii opeq2 eqeq2d equequ2 anbi12d
+      wceq nfnae nfcvd cid df-id wal ancom equcom anbi1i bitri vex equid 3bitri
+      ceqsexv biantru nfe1 19.9 bitr4i drex1 drex2 syl5bb wn nfcvf2 nfopd nfeqd
+      sps nfand wi a1i cbvexd exbid pm2.61i abbii df-opab 3eqtr4i eqtri ) UAACE
+      ZACFZABEZABFZACUBDGZAGZCGZHZRZVNIZCJZAJZDKVRVSBGZHZRZVPIZBJZAJZDKVOVQWEWK
+      DVPAUCZWEWKLWEVRVSVSHZRZAAEZIZAJZAJZWLWKWEWQWRWDWPAWDCAEZWBIZCJWNWPWCWTCW
+      CVNWBIWTWBVNUDVNWSWBACUEUFUGMWBWNCVSAUHWSWAWMVRVTVSVSNOUKWOWNAUIULUJMWQAW
+      PAUMUNUOWQWJABAWPWIABVPWPWILAVPWNWHWOVPVPWMWGVRVSWFVSNOABAPQVCUPUQURWLUSZ
+      WDWJAABASXAWCWICBABBSXAWBVNBXABVRWAXABVRTXABVSVTABUTZXABVTTZVAVBXABVSVTXB
+      XCVBVDCBEZWCWILVEXAXDWBWHVNVPXDWAWGVRVTWFVSNOCBAPQVFVGVHVIVJVNACDVKVPABDV
+      KVLVM $.
+  $}
+
+  $( Alternate definition of the identity relation.  (Contributed by NM,
+     15-Mar-2007.) $)
+  dfid2 $p |- _I = { <. x , x >. | x = x } $=
+    ( dfid3 ) AAB $.
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -34720,6 +34809,14 @@ htmldef "Tr" as
     "<IMG SRC='_ctr.gif' WIDTH=16 HEIGHT=19 ALT=' Tr' TITLE='Tr'> ";
   althtmldef "Tr" as 'Tr ';
   latexdef "Tr" as "{\rm Tr}";
+htmldef "_E" as
+    " <IMG SRC='rmce.gif' WIDTH=9 HEIGHT=19 ALT=' _E' TITLE='_E'> ";
+  althtmldef "_E" as ' E ';
+  latexdef "_E" as "{\rm E}";
+htmldef "_I" as
+    " <IMG SRC='rmci.gif' WIDTH=4 HEIGHT=19 ALT=' _I' TITLE='_I'> ";
+  althtmldef "_I" as ' I ';
+  latexdef "_I" as "{\rm I}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
