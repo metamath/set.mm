@@ -34069,11 +34069,11 @@ $)
 
   $( The power class of the union of two classes equals the union of their
      power classes, iff one class is a subclass of the other.  Part of Exercise
-     7(b) of [Enderton] p. 28.  (Contributed by NM, 23-Nov-2003.) $)
-  pwun $p |- ( ( A C_ B \/ B C_ A ) <->
-             ~P ( A u. B ) = ( ~P A u. ~P B ) ) $=
-    ( cun cpw wss wa wo wceq pwunss biantru pwssun eqss 3bitr4i ) ABCDZADBDCZEZ
-    PONEZFABEBAEGNOHQPABIJABKNOLM $.
+     7(b) of [Enderton] p. 28.  (Contributed by Jim Kingdon, 30-Sep-2018.) $)
+  pwunim $p |- ( ( A C_ B \/ B C_ A ) ->
+      ~P ( A u. B ) = ( ~P A u. ~P B ) ) $=
+    ( wss wo cun cpw wceq pwssunim pwunss biantru sylib eqss sylibr
+    wa ) ABCBACDZABEFZAFBFEZCZQPCZNZPQGORTABHSRABIJKPQLM $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
