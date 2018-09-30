@@ -34096,7 +34096,7 @@ $)
     $( Define the epsilon relation.  Similar to Definition 6.22 of
        [TakeutiZaring] p. 30.  The epsilon relation and set membership are the
        same, that is, ` ( A _E B <-> A e. B ) ` when ` B ` is a set by
-       ~ epelg .  Thus, ` 5 _E { 1 , 5 } ` ( ~ ex-eprel ).  (Contributed by NM,
+       ~ epelg .  Thus, 5 ` _E ` { 1 , 5 }.  (Contributed by NM,
        13-Aug-1995.) $)
     df-eprel $a |- _E = { <. x , y >. | x e. y } $.
   $}
@@ -34131,7 +34131,7 @@ $)
   ${
     $d x y $.
     $( Define the identity relation.  Definition 9.15 of [Quine] p. 64.  For
-       example, ` 5 _I 5 ` and ` -. 4 _I 5 ` ( ~ ex-id ).  (Contributed by NM,
+       example, 5 ` _I ` 5 and ` -. ` 4 ` _I ` 5.  (Contributed by NM,
        13-Aug-1995.) $)
     df-id $a |- _I = { <. x , y >. | x = y } $.
   $}
