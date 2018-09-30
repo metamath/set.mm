@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Sep-2018
+$( iset.mm - Version of 29-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -3851,6 +3851,11 @@ $)
        5-Aug-1993.) $)
     anbi12i $p |- ( ( ph /\ ch ) <-> ( ps /\ th ) ) $=
       ( wa anbi1i anbi2i bitri ) ACGBCGBDGABCEHCDBFIJ $.
+
+    $( Variant of ~ anbi12i with commutation.  (Contributed by Jonathan
+       Ben-Naim, 3-Jun-2011.) $)
+    anbi12ci $p |- ( ( ph /\ ch ) <-> ( th /\ ps ) ) $=
+      ( wa anbi12i ancom bitri ) ACGBDGDBGABCDEFHBDIJ $.
   $}
 
   ${
@@ -17534,6 +17539,16 @@ $)
        (Contributed by NM, 26-Dec-1993.) $)
     abid2 $p |- { x | x e. A } = A $=
       ( cv wcel cab biid abbi2i eqcomi ) BACBDZAEIABIFGH $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d ph z $.
+    sb8ab.1 $e |- F/ y ph $.
+    $( Substitution of variable in class abstraction.  (Contributed by Jim
+       Kingdon, 27-Sep-2018.) $)
+    sb8ab $p |- { x | ph } = { y | [ y / x ] ph } $=
+      ( vz cab wsb cv wcel sbco2 df-clab 3bitr4ri eqriv ) EABFZABCGZCFZOCEGABEG
+      EHZPIQNIABECDJOECKAEBKLM $.
   $}
 
   ${
@@ -33359,6 +33374,11 @@ $)
     wa ) ACDZBCDZOZABEAFZABGZGZCABCCHRSCDZTCDZOUACDRUBUCPUBQAIJABKLST
     KMN $.
 
+  $( An ordered pair of set variables is a set.  (Contributed by Jim Kingdon,
+     24-Sep-2018.) $)
+  opexv $p |- <. x , y >. e. _V $=
+    ( cv cvv wcel cop vex opexg mp2an ) ACZDEBCZDEJKFDEAGBGJKHI $.
+
   $( An ordered triple of sets is a set.  (Contributed by Jim Kingdon,
      19-Sep-2018.) $)
   otexg $p |- ( ( A e. _V /\ B e. _V /\ C e. _V ) -> <. A , B , C >. e. _V ) $=
@@ -33700,6 +33720,307 @@ $)
     uniopel $p |- ( <. A , B >. e. C -> U. <. A , B >. e. U. C ) $=
       ( cop wcel cuni cpr uniop opi2 eqeltri elssuni sseld mpi ) ABFZCGZPHZPGRC
       HZGRABIPABDEJABDEKLQPSRPCMNO $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Ordered-pair class abstractions (cont.)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x z w v $.  $d y z w v $.  $d ph z w v $.
+    $( The law of concretion.  Special case of Theorem 9.5 of [Quine] p. 61.
+       (Contributed by NM, 14-Apr-1995.)  (Proof shortened by Andrew Salmon,
+       25-Jul-2011.) $)
+    opabid $p |- ( <. x , y >. e. { <. x , y >. | ph } <-> ph ) $=
+      ( vz cv cop wceq wa wex copab opexv copsexg bicomd df-opab elab2 ) DEZBEC
+      EFZGZAHCIBIZADQABCJBCKRASABCPLMABCDNO $.
+  $}
+
+  ${
+    $d x z A $.  $d y z A $.  $d z ph $.
+    $( Membership in a class abstraction of pairs.  (Contributed by NM,
+       24-Mar-1998.) $)
+    elopab $p |- ( A e. { <. x , y >. | ph } <->
+                 E. x E. y ( A = <. x , y >. /\ ph ) ) $=
+      ( vz copab wcel cvv cv cop wceq wa wex elex opexv mpbiri adantr
+      eleq1 exlimivv eqeq1 anbi1d 2exbidv df-opab elab2g pm5.21nii )
+      DABCFZGDHGZDBICIJZKZALZCMBMZDUFNUJUGBCUIUGAUIUGUHHGBCODUHHRPQSE
+      IZUHKZALZCMBMUKEDUFHULDKZUNUJBCUOUMUIAULDUHTUAUBABCEUCUDUE $.
+  $}
+
+  ${
+    $d x y z v $.  $d x y w v $.  $d v ph $.
+    $( The law of concretion in terms of substitutions.  (Contributed by NM,
+       30-Sep-2002.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.)
+       (New usage is discouraged.)  (Proof modification is discouraged.) $)
+    opelopabsbOLD $p |- ( <. z , w >. e. { <. x , y >. | ph }
+                 <-> [ w / y ] [ z / x ] ph ) $=
+      ( cv cop wceq wa wex copab wcel wsb excom vex opth equcom anbi12ci anbi1i
+      bitri 2exbii elopab 2sb5 3bitr4i ) DFZEFZGZBFZCFZGHZAIZCJBJZUIUFHZUHUEHZI
+      ZAIZBJCJZUGABCKLABDMCEMULUKBJCJUQUKBCNUKUPCBUJUOAUJUEUHHZUFUIHZIUOUEUFUHU
+      IDOEOPURUNUSUMDBQECQRTSUATABCUGUBACBEDUCUD $.
+
+    brabsbOLD.1 $e |- R = { <. x , y >. | ph } $.
+    $( The law of concretion in terms of substitutions.  (Contributed by NM,
+       17-Mar-2008.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    brabsbOLD $p |- ( z R w <-> [ w / y ] [ z / x ] ph ) $=
+      ( cv wbr copab cop wcel wsb breqi df-br opelopabsbOLD 3bitri ) DHZEHZFIRS
+      ABCJZIRSKTLABDMCEMRSFTGNRSTOABCDEPQ $.
+  $}
+
+  ${
+    $d u v x y z w $.  $d u v w z A $.  $d u v w x B $.  $d u v w z ph $.
+    $( The law of concretion in terms of substitutions.  (Contributed by NM,
+       30-Sep-2002.)  (Revised by Mario Carneiro, 18-Nov-2016.) $)
+    opelopabsb $p |- ( <. A , B >. e. { <. x , y >. | ph }
+                 <-> [. A / x ]. [. B / y ]. ph ) $=
+      ( vv vu vz vw cop wcel cvv wa wsb cv wceq wex nfs1v weq wb copab wsbc vex
+      elopab ax-ia1 eqcomd sylib 2eximi eeanv isset anbi12i bitr4i sylbi nfsbxy
+      opth nfv sbequ12 sylan9bbr cbvopab eleq2s sbcex spesbc exlimiv syl eleq1d
+      jca opeq1 dfsbcq2 bibi12d opeq2 sbcbidv nfopab1 nfel2 nfbi nfopab2 opabid
+      chvar vtocl2g pm5.21nii ) DEJZABCUAZKZDLKZELKZMZACEUBZBDUBZWEVTACFNZBGNZG
+      FUAZWAVTWJKVTGOZFOZJZPZWIMZFQGQZWEWIGFVTUDWPWKDPZWLEPZMZFQGQZWEWOWSGFWOWM
+      VTPWSWOVTWMWNWIUEUFWKWLDEGUCFUCUOUGUHWTWQGQZWRFQZMWEWQWRGFUIWCXAWDXBGDUJF
+      EUJUKULUGUMAWIBCGFAGUPAFUPWHBGRWHBGCACFRUNCFSAWHBGSWIACFUQWHBGUQURUSUTWGW
+      CWDWFBDVAWGWFBQWDWFBDVBWFWDBACEVAVCVDVFHOZIOZJZWAKZACINZBHNZTZDXDJZWAKZXG
+      BDUBZTWBWGTHIDELLXCDPZXFXKXHXLXMXEXJWAXCDXDVGVEXGBHDVHVIXDEPZXKWBXLWGXNXJ
+      VTWAXDEDVJVEXNXGWFBDACIEVHVKVIBOZXDJZWAKZXGTZXIBHXFXHBBXEWAABCVLVMXGBHRVN
+      BHSZXQXFXGXHXSXPXEWAXOXCXDVGVEXGBHUQVIXOCOZJZWAKZATXRCIXQXGCCXPWAABCVOVMA
+      CIRVNCISZYBXQAXGYCYAXPWAXTXDXOVJVEACIUQVIABCVPVQVQVRVS $.
+
+    brabsb.1 $e |- R = { <. x , y >. | ph } $.
+    $( The law of concretion in terms of substitutions.  (Contributed by NM,
+       17-Mar-2008.) $)
+    brabsb $p |- ( A R B <-> [. A / x ]. [. B / y ]. ph ) $=
+      ( wbr cop wcel copab wsbc df-br eleq2i opelopabsb 3bitri ) DEFHDEIZFJQABC
+      KZJACELBDLDEFMFRQGNABCDEOP $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y ch $.  $d z ph $.
+    $( Closed theorem form of ~ opelopab .  (Contributed by NM,
+       19-Feb-2013.) $)
+    opelopabt $p |- ( ( A. x A. y ( x = A -> ( ph <-> ps ) )
+                     /\ A. x A. y ( y = B -> ( ps <-> ch ) )
+                     /\ ( A e. V /\ B e. W ) ) ->
+                    ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) ) $=
+      ( cop copab wcel cv wceq wa wex wb wi wal w3a elopab prth 2alimi copsex2t
+      19.26-2 bitr syl6 sylbir sylan 3impa syl5bb ) FGJZADEKLULDMZEMZJNAOEPDPZU
+      MFNZABQZRZESDSZUNGNZBCQZRZESDSZFHLGILOZTCADEULUAUSVCVDUOCQZUSVCOZUPUTOZAC
+      QZRZESDSZVDVEVFURVBOZESDSVJURVBDEUEVKVIDEVKVGUQVAOVHUPUQUTVAUBABCUFUGUCUH
+      ACDEFGHIUDUIUJUK $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ps $.
+    opelopabga.1 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  (Contributed by
+       Mario Carneiro, 19-Dec-2013.) $)
+    opelopabga $p |- ( ( A e. V /\ B e. W ) ->
+                    ( <. A , B >. e. { <. x , y >. | ph } <-> ps ) ) $=
+      ( cop copab wcel cv wceq wa wex elopab copsex2g syl5bb ) EFJZACDKLTCMDMJN
+      AODPCPEGLFHLOBACDTQABCDEFGHIRS $.
+
+    ${
+      brabga.2 $e |- R = { <. x , y >. | ph } $.
+      $( The law of concretion for a binary relation.  (Contributed by Mario
+         Carneiro, 19-Dec-2013.) $)
+      brabga $p |- ( ( A e. V /\ B e. W ) -> ( A R B <-> ps ) ) $=
+        ( wbr cop copab wcel wa df-br eleq2i bitri opelopabga syl5bb ) EFGLZEFM
+        ZACDNZOZEHOFIOPBUBUCGOUEEFGQGUDUCKRSABCDEFHIJTUA $.
+    $}
+
+    $d x y C $.  $d x y D $.
+    $( Ordered pair membership in an ordered pair class abstraction.
+       (Contributed by Mario Carneiro, 19-Dec-2013.) $)
+    opelopab2a $p |- ( ( A e. C /\ B e. D ) -> ( <. A , B >. e.
+                 { <. x , y >. | ( ( x e. C /\ y e. D ) /\ ph ) } <-> ps ) ) $=
+      ( wcel wa cop cv copab wceq eleq1 bi2anan9 anbi12d opelopabga bianabs ) E
+      GJZFHJZKZEFLCMZGJZDMZHJZKZAKZCDNJBUIUCBKCDEFGHUDEOZUFFOZKUHUCABUJUEUAUKUG
+      UBUDEGPUFFHPQIRST $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ps $.
+    opelopaba.1 $e |- A e. _V $.
+    opelopaba.2 $e |- B e. _V $.
+    opelopaba.3 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  (Contributed by
+       Mario Carneiro, 19-Dec-2013.) $)
+    opelopaba $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ps ) $=
+      ( cvv wcel cop copab wb opelopabga mp2an ) EJKFJKEFLACDMKBNGHABCDEFJJIOP
+      $.
+
+    ${
+      braba.4 $e |- R = { <. x , y >. | ph } $.
+      $( The law of concretion for a binary relation.  (Contributed by NM,
+         19-Dec-2013.) $)
+      braba $p |- ( A R B <-> ps ) $=
+        ( cvv wcel wbr wb brabga mp2an ) ELMFLMEFGNBOHIABCDEFGLLJKPQ $.
+    $}
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ch $.
+    opelopabg.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopabg.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  (Contributed by
+       NM, 28-May-1995.)  (Revised by Mario Carneiro, 19-Dec-2013.) $)
+    opelopabg $p |- ( ( A e. V /\ B e. W ) ->
+                    ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) ) $=
+      ( cv wceq sylan9bb opelopabga ) ACDEFGHIDLFMABELGMCJKNO $.
+
+    ${
+      brabg.5 $e |- R = { <. x , y >. | ph } $.
+      $( The law of concretion for a binary relation.  (Contributed by NM,
+         16-Aug-1999.)  (Revised by Mario Carneiro, 19-Dec-2013.) $)
+      brabg $p |- ( ( A e. C /\ B e. D ) -> ( A R B <-> ch ) ) $=
+        ( cv wceq sylan9bb brabga ) ACDEFGJHIDNFOABENGOCKLPMQ $.
+    $}
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.  $d x y D $.  $d x y ch $.
+    opelopab2.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopab2.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( Ordered pair membership in an ordered pair class abstraction.
+       (Contributed by NM, 14-Oct-2007.)  (Revised by Mario Carneiro,
+       19-Dec-2013.) $)
+    opelopab2 $p |- ( ( A e. C /\ B e. D ) -> ( <. A , B >. e.
+                 { <. x , y >. | ( ( x e. C /\ y e. D ) /\ ph ) } <-> ch ) ) $=
+      ( cv wceq sylan9bb opelopab2a ) ACDEFGHIDLFMABELGMCJKNO $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ch $.
+    opelopab.1 $e |- A e. _V $.
+    opelopab.2 $e |- B e. _V $.
+    opelopab.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopab.4 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  (Contributed by
+       NM, 16-May-1995.) $)
+    opelopab $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) $=
+      ( cvv wcel cop copab wb opelopabg mp2an ) FLMGLMFGNADEOMCPHIABCDEFGLLJKQR
+      $.
+
+    ${
+      brab.5 $e |- R = { <. x , y >. | ph } $.
+      $( The law of concretion for a binary relation.  (Contributed by NM,
+         16-Aug-1999.) $)
+      brab $p |- ( A R B <-> ch ) $=
+        ( cvv wcel wbr wb brabg mp2an ) FNOGNOFGHPCQIJABCDEFGNNHKLMRS $.
+    $}
+  $}
+
+  ${
+    $d w x y z A $.  $d w x y z B $.  $d w z ph $.  $d w z ps $.
+    opelopabaf.x $e |- F/ x ps $.
+    opelopabaf.y $e |- F/ y ps $.
+    opelopabaf.1 $e |- A e. _V $.
+    opelopabaf.2 $e |- B e. _V $.
+    opelopabaf.3 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  This version of
+       ~ opelopab uses bound-variable hypotheses in place of distinct variable
+       conditions."  (Contributed by Mario Carneiro, 19-Dec-2013.)  (Proof
+       shortened by Mario Carneiro, 18-Nov-2016.) $)
+    opelopabaf $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ps ) $=
+      ( cop copab wcel wsbc opelopabsb cvv wb nfv sbc2iegf mp2an bitri ) EFLACD
+      MNADFOCEOZBACDEFPEQNFQNZUCBRIJABCDEFQQGHUDCSKTUAUB $.
+  $}
+
+  ${
+    $d w x y z A $.  $d w x y z B $.  $d w z ch $.  $d w z ph $.
+    opelopabf.x $e |- F/ x ps $.
+    opelopabf.y $e |- F/ y ch $.
+    opelopabf.1 $e |- A e. _V $.
+    opelopabf.2 $e |- B e. _V $.
+    opelopabf.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopabf.4 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  This version of
+       ~ opelopab uses bound-variable hypotheses in place of distinct variable
+       conditions."  (Contributed by NM, 19-Dec-2008.) $)
+    opelopabf $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) $=
+      ( cop wcel wsbc cvv wb sbciegf ax-mp copab opelopabsb nfcv cv wceq 3bitri
+      nfsbc sbcbidv ) FGNADEUAOAEGPZDFPZBEGPZCADEFGUBFQOUJUKRJUIUKDFQBDEGDGUCHU
+      GDUDFUEABEGLUHSTGQOUKCRKBCEGQIMSTUF $.
+  $}
+
+  ${
+    $d ph z $.  $d ps z $.  $d x z $.  $d y z $.
+    $( Equivalence of ordered pair abstraction subclass and implication.
+       (Contributed by NM, 27-Dec-1996.)  (Revised by Mario Carneiro,
+       19-May-2013.) $)
+    ssopab2 $p |- ( A. x A. y ( ph -> ps ) ->
+        { <. x , y >. | ph } C_ { <. x , y >. | ps } ) $=
+      ( vz wi wal cv cop wceq wa wex cab copab nfa1 sp anim2d eximd sps df-opab
+      ss2abdv 3sstr4g ) ABFZDGZCGZEHCHDHIJZAKZDLZCLZEMUFBKZDLZCLZEMACDNBCDNUEUI
+      ULEUEUHUKCUDCOUDUHUKFCUDUGUJDUCDOUDABUFUCDPQRSRUAACDETBCDETUB $.
+  $}
+
+  ${
+    $d ph z $.  $d ps z $.  $d x z $.  $d y z $.
+    $( Equivalence of ordered pair abstraction subclass and implication.
+       (Contributed by NM, 27-Dec-1996.)  (Proof shortened by Mario Carneiro,
+       18-Nov-2016.) $)
+    ssopab2b $p |- ( { <. x , y >. | ph } C_ { <. x , y >. | ps } <->
+               A. x A. y ( ph -> ps ) ) $=
+      ( copab wss wi wal nfopab1 nfss nfopab2 cv cop wcel opabid 3imtr3g alrimi
+      ssel ssopab2 impbii ) ACDEZBCDEZFZABGZDHZCHUCUECCUAUBACDIBCDIJUCUDDDUAUBA
+      CDKBCDKJUCCLDLMZUANUFUBNABUAUBUFRACDOBCDOPQQABCDST $.
+  $}
+
+  ${
+    ssopab2i.1 $e |- ( ph -> ps ) $.
+    $( Inference of ordered pair abstraction subclass from implication.
+       (Contributed by NM, 5-Apr-1995.) $)
+    ssopab2i $p |- { <. x , y >. | ph } C_ { <. x , y >. | ps } $=
+      ( wi wal copab wss ssopab2 ax-gen mpg ) ABFZDGACDHBCDHICABCDJMDEKL $.
+  $}
+
+  ${
+    $d x ph $.  $d y ph $.
+    ssopab2dv.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Inference of ordered pair abstraction subclass from implication.
+       (Contributed by NM, 19-Jan-2014.)  (Revised by Mario Carneiro,
+       24-Jun-2014.) $)
+    ssopab2dv $p |- ( ph -> { <. x , y >. | ps } C_ { <. x , y >. | ch } ) $=
+      ( wi wal copab wss alrimivv ssopab2 syl ) ABCGZEHDHBDEICDEIJANDEFKBCDELM
+      $.
+  $}
+
+  ${
+    $d ph z $.  $d ps z $.  $d x z $.  $d y z $.
+    $( Equivalence of ordered pair abstraction equality and biconditional.
+       (Contributed by Mario Carneiro, 4-Jan-2017.) $)
+    eqopab2b $p |- ( { <. x , y >. | ph } = { <. x , y >. | ps }
+                <-> A. x A. y ( ph <-> ps ) ) $=
+      ( copab wss wa wi wal wceq wb ssopab2b anbi12i eqss 2albiim 3bitr4i ) ACD
+      EZBCDEZFZRQFZGABHDICIZBAHDICIZGQRJABKDICISUATUBABCDLBACDLMQRNABCDOP $.
+  $}
+
+  ${
+    $d z ph $.  $d z x $.  $d z y $.
+    $( Inhabited ordered pair class abstraction.  (Contributed by Jim Kingdon,
+       29-Sep-2018.) $)
+    opabm $p |- ( E. z z e. { <. x , y >. | ph } <-> E. x E. y ph ) $=
+      ( cv copab wcel wex cop wceq wa elopab exbii exrot3 isseti 19.41v mpbiran
+      opexv 2exbii 3bitri ) DEZABCFGZDHUABECEIZJZAKZCHBHZDHUEDHZCHBHACHBHUBUFDA
+      BCUALMUEDBCNUGABCUGUDDHADUCBCROUDADPQST $.
+  $}
+
+  ${
+    $d ph w $.  $d A w x $.  $d A y $.  $d w y z $.  $d x z $.
+    $( Move indexed union inside an ordered-pair abstraction.  (Contributed by
+       Stefan O'Rear, 20-Feb-2015.) $)
+    iunopab $p |- U_ z e. A { <. x , y >. | ph } =
+        { <. x , y >. | E. z e. A ph } $=
+      ( vw cv copab wcel wrex cab cop wceq wex ciun elopab rexcom4 exbii bitri
+      wa rexbii r19.42v abbii df-iun df-opab 3eqtr4i ) FGZABCHZIZDEJZFKUGBGCGLM
+      ZADEJZTZCNZBNZFKDEUHOULBCHUJUOFUJUKATZCNZBNZDEJZUOUIURDEABCUGPUAUSUQDEJZB
+      NUOUQDBEQUTUNBUTUPDEJZCNUNUPDCEQVAUMCUKADEUBRSRSSUCDFEUHUDULBCFUEUF $.
   $}
 
 $(
