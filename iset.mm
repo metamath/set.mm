@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Sep-2018
+$( iset.mm - Version of 30-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -34048,22 +34048,15 @@ $)
       UHUDUIUEUCACKZLUCBUJLMNUCUAUJLOP $.
 
     $( The power class of the union of two classes is a subset of the union of
-       their power classes, iff one class is a subclass of the other.  Exercise
-       4.12(l) of [Mendelson] p. 235.  (Contributed by NM, 23-Nov-2003.) $)
-    pwssun $p |- ( ( A C_ B \/ B C_ A ) <->
+       their power classes, if one class is a subclass of the other.  One
+       direction of Exercise 4.12(l) of [Mendelson] p. 235.  (Contributed by
+       Jim Kingdon, 30-Sep-2018.) $)
+    pwssunim $p |- ( ( A C_ B \/ B C_ A ) ->
                ~P ( A u. B ) C_ ( ~P A u. ~P B ) ) $=
-      ( vy vx wss wo cun cpw wceq pweq eqimss syl sylbi orim12i wn wa wcel elpw
-      cv wi ssequn2 ssequn1 orcoms ssun cpr csn vex snss unss12 syl2anb zfpair2
-      df-pr sseq1i bitr2i sylib ssel syl5 exp3acom23 imp31 elun simprbi simplbi
-      prss bitr4i ord impancom ssrdv exp31 con1b syl6ib com23 imp orrd impbii
-      ex ) ABEZBAEZFZABGZHZAHZBHZGZEZVRVTWAEZVTWBEZFZWDVQVPWGVQWEVPWFVQVSAIZWEB
-      AUAWHVTWAIWEVSAJVTWAKLMVPVSBIZWFABUBWIVTWBIWFVSBJVTWBKLMNUCVTWAWBUDLWDVPV
-      QWDVPOZVQWDWJPCBAWDWJCSZBQZWKAQZTWDWLWJWMWDWLWMOZVPTWJWMTWDWLWNVPWDWLPZWN
-      PDABWODSZAQZWNWPBQZWOWQPZWMWRWSWPWKUEZWAQZWTWBQZFZWMWRFWSWTWCQZXCWDWLWQXD
-      WDWQWLXDWQWLPZWTVTQZWDXDXEWPUFZWKUFZGZVSEZXFWQXGAEXHBEXJWLWPADUGZUHWKBCUG
-      ZUHXGAXHBUIUJXFWTVSEXJWTVSDCUKZRWTXIVSWPWKULUMUNUOVTWCWTUPUQURUSWTWAWBUTU
-      OXAWMXBWRXAWQWMXAWTAEWQWMPWTAXMRWPWKAXKXLVCVDVAXBWRWLXBWTBEWRWLPWTBXMRWPW
-      KBXKXLVCVDVBNLVEVFVGVHWMVPVIVJVKVLVGVOVMVN $.
+      ( wss wo cun cpw wceq ssequn2 pweq eqimss sylbi ssequn1 orim12i
+      syl orcoms ssun ) ABCZBACZDABEZFZAFZCZTBFZCZDZTUAUCECRQUERUBQUD
+      RSAGZUBBAHUFTUAGUBSAITUAJNKQSBGZUDABLUGTUCGUDSBITUCJNKMOTUAUCPN
+      $.
   $}
 
   $( Break up the power class of a union into a union of smaller classes.
