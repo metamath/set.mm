@@ -17112,6 +17112,8 @@ New usage of "sb6OLD" is discouraged (0 uses).
 New usage of "sb6aOLD" is discouraged (0 uses).
 New usage of "sb6rfOLD" is discouraged (0 uses).
 New usage of "sb9iOLD" is discouraged (0 uses).
+New usage of "sbal1OLD" is discouraged (0 uses).
+New usage of "sbalOLD" is discouraged (0 uses).
 New usage of "sbc2rexgOLD" is discouraged (1 uses).
 New usage of "sbc3angOLD" is discouraged (0 uses).
 New usage of "sbc3or" is discouraged (1 uses).
@@ -17149,6 +17151,7 @@ New usage of "sbcrextOLD" is discouraged (0 uses).
 New usage of "sbcsngOLD" is discouraged (0 uses).
 New usage of "sbcssOLD" is discouraged (0 uses).
 New usage of "sbcssgVD" is discouraged (0 uses).
+New usage of "sbel2xOLD" is discouraged (0 uses).
 New usage of "sbequ2OLD" is discouraged (0 uses).
 New usage of "sbequ8ALT" is discouraged (0 uses).
 New usage of "sbequiOLD" is discouraged (0 uses).
@@ -18402,6 +18405,8 @@ Proof modification of "sb6OLD" is discouraged (40 steps).
 Proof modification of "sb6aOLD" is discouraged (42 steps).
 Proof modification of "sb6rfOLD" is discouraged (47 steps).
 Proof modification of "sb9iOLD" is discouraged (93 steps).
+Proof modification of "sbal1OLD" is discouraged (193 steps).
+Proof modification of "sbalOLD" is discouraged (69 steps).
 Proof modification of "sbc2or" is discouraged (134 steps).
 Proof modification of "sbc2rexgOLD" is discouraged (62 steps).
 Proof modification of "sbc3angOLD" is discouraged (78 steps).
@@ -18441,6 +18446,7 @@ Proof modification of "sbcrextOLD" is discouraged (147 steps).
 Proof modification of "sbcsngOLD" is discouraged (18 steps).
 Proof modification of "sbcssOLD" is discouraged (130 steps).
 Proof modification of "sbcssgVD" is discouraged (223 steps).
+Proof modification of "sbel2xOLD" is discouraged (75 steps).
 Proof modification of "sbequ2OLD" is discouraged (29 steps).
 Proof modification of "sbftOLD" is discouraged (58 steps).
 Proof modification of "sbieOLD" is discouraged (31 steps).
