@@ -34024,6 +34024,65 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Power class of union and intersection
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( The power class of the intersection of two classes is the intersection
+       of their power classes.  Exercise 4.12(j) of [Mendelson] p. 235.
+       (Contributed by NM, 23-Nov-2003.) $)
+    pwin $p |- ~P ( A i^i B ) = ( ~P A i^i ~P B ) $=
+      ( vx cpw cin cv wss wa wcel ssin vex elpw anbi12i 3bitr4i ineqri eqcomi )
+      ADZBDZEABEZDZCQRTCFZAGZUABGZHUASGUAQIZUARIZHUATIUAABJUDUBUEUCUAACKZLUABUF
+      LMUASUFLNOP $.
+
+    $( The power class of the union of two classes includes the union of their
+       power classes.  Exercise 4.12(k) of [Mendelson] p. 235.  (Contributed by
+       NM, 23-Nov-2003.) $)
+    pwunss $p |- ( ~P A u. ~P B ) C_ ~P ( A u. B ) $=
+      ( vx cpw cun cv wss wcel ssun elun vex elpw orbi12i bitri 3imtr4i ssriv
+      wo ) CADZBDZEZABEZDZCFZAGZUCBGZQZUCUAGUCTHZUCUBHUCABIUGUCRHZUCSHZQUFUCRSJ
+      UHUDUIUEUCACKZLUCBUJLMNUCUAUJLOP $.
+
+    $( The power class of the union of two classes is a subset of the union of
+       their power classes, iff one class is a subclass of the other.  Exercise
+       4.12(l) of [Mendelson] p. 235.  (Contributed by NM, 23-Nov-2003.) $)
+    pwssun $p |- ( ( A C_ B \/ B C_ A ) <->
+               ~P ( A u. B ) C_ ( ~P A u. ~P B ) ) $=
+      ( vy vx wss wo cun cpw wceq pweq eqimss syl sylbi orim12i wn wa wcel elpw
+      cv wi ssequn2 ssequn1 orcoms ssun cpr csn vex snss unss12 syl2anb zfpair2
+      df-pr sseq1i bitr2i sylib ssel syl5 exp3acom23 imp31 elun simprbi simplbi
+      prss bitr4i ord impancom ssrdv exp31 con1b syl6ib com23 imp orrd impbii
+      ex ) ABEZBAEZFZABGZHZAHZBHZGZEZVRVTWAEZVTWBEZFZWDVQVPWGVQWEVPWFVQVSAIZWEB
+      AUAWHVTWAIWEVSAJVTWAKLMVPVSBIZWFABUBWIVTWBIWFVSBJVTWBKLMNUCVTWAWBUDLWDVPV
+      QWDVPOZVQWDWJPCBAWDWJCSZBQZWKAQZTWDWLWJWMWDWLWMOZVPTWJWMTWDWLWNVPWDWLPZWN
+      PDABWODSZAQZWNWPBQZWOWQPZWMWRWSWPWKUEZWAQZWTWBQZFZWMWRFWSWTWCQZXCWDWLWQXD
+      WDWQWLXDWQWLPZWTVTQZWDXDXEWPUFZWKUFZGZVSEZXFWQXGAEXHBEXJWLWPADUGZUHWKBCUG
+      ZUHXGAXHBUIUJXFWTVSEXJWTVSDCUKZRWTXIVSWPWKULUMUNUOVTWCWTUPUQURUSWTWAWBUTU
+      OXAWMXBWRXAWQWMXAWTAEWQWMPWTAXMRWPWKAXKXLVCVDVAXBWRWLXBWTBEWRWLPWTBXMRWPW
+      KBXKXLVCVDVBNLVEVFVGVHWMVPVIVJVKVLVGVOVMVN $.
+  $}
+
+  $( Break up the power class of a union into a union of smaller classes.
+     (Contributed by NM, 25-Mar-2007.)  (Proof shortened by Thierry Arnoux,
+     20-Dec-2016.) $)
+  pwundif $p |- ~P ( A u. B ) =
+                ( ( ~P ( A u. B ) \ ~P A ) u. ~P A ) $=
+    ( cun cpw cdif undif1 wss wceq pwunss unss mpbir simpli ssequn2 mpbi eqtr2i
+    wa ) ABCDZADZERCQRCZQQRFRQGZSQHTBDZQGZTUBPRUACQGABIRUAQJKLRQMNO $.
+
+  $( The power class of the union of two classes equals the union of their
+     power classes, iff one class is a subclass of the other.  Part of Exercise
+     7(b) of [Enderton] p. 28.  (Contributed by NM, 23-Nov-2003.) $)
+  pwun $p |- ( ( A C_ B \/ B C_ A ) <->
+             ~P ( A u. B ) = ( ~P A u. ~P B ) ) $=
+    ( cun cpw wss wa wo wceq pwunss biantru pwssun eqss 3bitr4i ) ABCDZADBDCZEZ
+    PONEZFABEBAEGNOHQPABIJABKNOLM $.
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
