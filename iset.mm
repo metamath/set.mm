@@ -34136,34 +34136,6 @@ $)
     df-id $a |- _I = { <. x , y >. | x = y } $.
   $}
 
-  ${
-    $d w z x $.  $d w z y $.
-    $( A stronger version of ~ df-id that doesn't require ` x ` and ` y ` to be
-       distinct.  Ordinarily, we wouldn't use this as a definition, since
-       non-distinct dummy variables would make soundness verification more
-       difficult (as the proof here shows).  The proof can be instructive in
-       showing how distinct variable requirements may be eliminated, a task
-       that is not necessarily obvious.  (Contributed by NM, 5-Feb-2008.)
-       (Revised by Mario Carneiro, 18-Nov-2016.) $)
-    dfid3 $p |- _I = { <. x , y >. | x = y } $=
-      ( vz vw weq copab cv cop wa wex cab wb exbii opeq2 eqeq2d equequ2 anbi12d
-      wceq nfnae nfcvd cid df-id wal ancom equcom anbi1i bitri vex equid 3bitri
-      ceqsexv biantru nfe1 19.9 bitr4i drex1 drex2 syl5bb wn nfcvf2 nfopd nfeqd
-      sps nfand wi a1i cbvexd exbid pm2.61i abbii df-opab 3eqtr4i eqtri ) UAACE
-      ZACFZABEZABFZACUBDGZAGZCGZHZRZVNIZCJZAJZDKVRVSBGZHZRZVPIZBJZAJZDKVOVQWEWK
-      DVPAUCZWEWKLWEVRVSVSHZRZAAEZIZAJZAJZWLWKWEWQWRWDWPAWDCAEZWBIZCJWNWPWCWTCW
-      CVNWBIWTWBVNUDVNWSWBACUEUFUGMWBWNCVSAUHWSWAWMVRVTVSVSNOUKWOWNAUIULUJMWQAW
-      PAUMUNUOWQWJABAWPWIABVPWPWILAVPWNWHWOVPVPWMWGVRVSWFVSNOABAPQVCUPUQURWLUSZ
-      WDWJAABASXAWCWICBABBSXAWBVNBXABVRWAXABVRTXABVSVTABUTZXABVTTZVAVBXABVSVTXB
-      XCVBVDCBEZWCWILVEXAXDWBWHVNVPXDWAWGVRVTWFVSNOCBAPQVFVGVHVIVJVNACDVKVPABDV
-      KVLVM $.
-  $}
-
-  $( Alternate definition of the identity relation.  (Contributed by NM,
-     15-Mar-2007.) $)
-  dfid2 $p |- _I = { <. x , x >. | x = x } $=
-    ( dfid3 ) AAB $.
-
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
