@@ -34060,12 +34060,12 @@ $)
   $}
 
   $( Break up the power class of a union into a union of smaller classes.
-     (Contributed by NM, 25-Mar-2007.)  (Proof shortened by Thierry Arnoux,
-     20-Dec-2016.) $)
-  pwundif $p |- ~P ( A u. B ) =
-                ( ( ~P ( A u. B ) \ ~P A ) u. ~P A ) $=
-    ( cun cpw cdif undif1 wss wceq pwunss unss mpbir simpli ssequn2 mpbi eqtr2i
-    wa ) ABCDZADZERCQRCZQQRFRQGZSQHTBDZQGZTUBPRUACQGABIRUAQJKLRQMNO $.
+     (Contributed by Jim Kingdon, 30-Sep-2018.) $)
+  pwundifss $p |- ( ( ~P ( A u. B ) \ ~P A ) u. ~P A ) C_
+      ~P ( A u. B ) $=
+    ( cun cpw cdif undif1ss wss wceq pwunss unss mpbir simpli ssequn2
+    wa mpbi sseqtri ) ABCDZADZERCQRCZQQRFRQGZSQHTBDZQGZTUBNRUACQGABIR
+    UAQJKLRQMOP $.
 
   $( The power class of the union of two classes equals the union of their
      power classes, iff one class is a subclass of the other.  Part of Exercise
