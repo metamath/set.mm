@@ -34798,7 +34798,7 @@ $)
     $( Bound-variable hypothesis builder for partial orders.  (Contributed by
        Stefan O'Rear, 20-Jan-2015.) $)
     nfpo $p |- F/ x R Po A $=
-      ( va vb vc wpo cv wbr wn wa wi wral df-po nfcv nfbr nfan nfral nfim nfxfr
+      ( va vb vc wpo cv wbr wn wa wi wral df-po nfcv nfbr nfan nfralxy nfim nfxfr
       nfn ) BCIFJZUDCKZLZUDGJZCKZUGHJZCKZMZUDUICKZNZMZHBOZGBOZFBOAFGHBCPUPAFBEU
       OAGBEUNAHBEUFUMAUEAAUDUDCAUDQZDUQRUCUKULAUHUJAAUDUGCUQDAUGQZRAUGUICURDAUI
       QZRSAUDUICUQDUSRUASTTTUB $.
