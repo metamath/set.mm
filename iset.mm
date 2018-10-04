@@ -34733,13 +34733,13 @@ $)
 
   $( Declare new constant symbols. $)
   $c Po $.  $( Partial ordering predicate symbol (read: 'partial ordering'). $)
-  $c Or $.  $( Strict complete ordering predicate symbol (read: 'orders'). $)
+  $c Or $.  $( Strict linear ordering predicate symbol (read: 'orders'). $)
 
   $( Extend wff notation to include the strict partial ordering predicate.
      Read:  ' ` R ` is a partial order on ` A ` .' $)
   wpo $a wff R Po A $.
 
-  $( Extend wff notation to include the strict complete ordering predicate.
+  $( Extend wff notation to include the strict linear ordering predicate.
      Read:  ' ` R ` orders ` A ` .' $)
   wor $a wff R Or A $.
 
@@ -34752,12 +34752,15 @@ $)
     df-po $a |- ( R Po A <-> A. x e. A A. y e. A A. z e. A
                 ( -. x R x /\ ( ( x R y /\ y R z ) -> x R z ) ) ) $.
 
-    $( Define the strict complete (linear) order predicate.  The expression
-       ` R Or A ` is true if relationship ` R ` orders ` A ` .  For example,
-       ` < Or RR ` is true ( ~ ltso ).  Equivalent to Definition 6.19(1) of
-       [TakeutiZaring] p. 29.  (Contributed by NM, 21-Jan-1996.) $)
-    df-so $a |- ( R Or A <-> ( R Po A /\ A. x e. A A. y e. A
-                ( x R y \/ x = y \/ y R x ) ) ) $.
+    $( Define the strict linear order predicate.  The expression ` R Or A ` is
+       true if relationship ` R ` orders ` A ` .  The property
+       ` x R y -> ( x R z \/ z R y ) ` is called weak linearity by Proposition
+       (11.2.3) of [HoTT], p.  (varies).  If we assumed excluded middle, it
+       would be equivalent to trichotomy, ` x R y \/ x = y \/ y R x ` .
+       (Contributed by NM, 21-Jan-1996.)  (Revised by Jim Kingdon,
+       4-Oct-2018.) $)
+    df-iso $a |- ( R Or A <-> ( R Po A /\ A. x e. A A. y e. A A. z e. A
+                ( x R y -> ( x R z \/ z R y ) ) ) ) $.
   $}
 
   ${
