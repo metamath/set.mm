@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Sep-2018
+$( iset.mm - Version of 30-Sep-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -34024,6 +34024,119 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Power class of union and intersection
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( The power class of the intersection of two classes is the intersection
+       of their power classes.  Exercise 4.12(j) of [Mendelson] p. 235.
+       (Contributed by NM, 23-Nov-2003.) $)
+    pwin $p |- ~P ( A i^i B ) = ( ~P A i^i ~P B ) $=
+      ( vx cpw cin cv wss wa wcel ssin vex elpw anbi12i 3bitr4i ineqri eqcomi )
+      ADZBDZEABEZDZCQRTCFZAGZUABGZHUASGUAQIZUARIZHUATIUAABJUDUBUEUCUAACKZLUABUF
+      LMUASUFLNOP $.
+
+    $( The power class of the union of two classes includes the union of their
+       power classes.  Exercise 4.12(k) of [Mendelson] p. 235.  (Contributed by
+       NM, 23-Nov-2003.) $)
+    pwunss $p |- ( ~P A u. ~P B ) C_ ~P ( A u. B ) $=
+      ( vx cpw cun cv wss wcel ssun elun vex elpw orbi12i bitri 3imtr4i ssriv
+      wo ) CADZBDZEZABEZDZCFZAGZUCBGZQZUCUAGUCTHZUCUBHUCABIUGUCRHZUCSHZQUFUCRSJ
+      UHUDUIUEUCACKZLUCBUJLMNUCUAUJLOP $.
+
+    $( The power class of the union of two classes is a subset of the union of
+       their power classes, if one class is a subclass of the other.  One
+       direction of Exercise 4.12(l) of [Mendelson] p. 235.  (Contributed by
+       Jim Kingdon, 30-Sep-2018.) $)
+    pwssunim $p |- ( ( A C_ B \/ B C_ A ) ->
+               ~P ( A u. B ) C_ ( ~P A u. ~P B ) ) $=
+      ( wss wo cun cpw wceq ssequn2 pweq eqimss sylbi ssequn1 orim12i
+      syl orcoms ssun ) ABCZBACZDABEZFZAFZCZTBFZCZDZTUAUCECRQUERUBQUD
+      RSAGZUBBAHUFTUAGUBSAITUAJNKQSBGZUDABLUGTUCGUDSBITUCJNKMOTUAUCPN
+      $.
+  $}
+
+  $( Break up the power class of a union into a union of smaller classes.
+     (Contributed by Jim Kingdon, 30-Sep-2018.) $)
+  pwundifss $p |- ( ( ~P ( A u. B ) \ ~P A ) u. ~P A ) C_
+      ~P ( A u. B ) $=
+    ( cun cpw cdif undif1ss wss wceq pwunss unss mpbir simpli ssequn2
+    wa mpbi sseqtri ) ABCDZADZERCQRCZQQRFRQGZSQHTBDZQGZTUBNRUACQGABIR
+    UAQJKLRQMOP $.
+
+  $( The power class of the union of two classes equals the union of their
+     power classes, iff one class is a subclass of the other.  Part of Exercise
+     7(b) of [Enderton] p. 28.  (Contributed by Jim Kingdon, 30-Sep-2018.) $)
+  pwunim $p |- ( ( A C_ B \/ B C_ A ) ->
+      ~P ( A u. B ) = ( ~P A u. ~P B ) ) $=
+    ( wss wo cun cpw wceq pwssunim pwunss biantru sylib eqss sylibr
+    wa ) ABCBACDZABEFZAFBFEZCZQPCZNZPQGORTABHSRABIJKPQLM $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Epsilon and identity relations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new constant symbols. $)
+  $c _E $. $( Letter E (for epsilon relation) $)
+  $c _I $.  $( Letter I (for identity relation) $)
+
+  $( Extend class notation to include the epsilon relation. $)
+  cep $a class _E $.
+
+  $( Extend the definition of a class to include identity relation. $)
+  cid $a class _I $.
+
+  ${
+    $d x y $.
+    $( Define the epsilon relation.  Similar to Definition 6.22 of
+       [TakeutiZaring] p. 30.  The epsilon relation and set membership are the
+       same, that is, ` ( A _E B <-> A e. B ) ` when ` B ` is a set by
+       ~ epelg .  Thus, 5 ` _E ` { 1 , 5 }.  (Contributed by NM,
+       13-Aug-1995.) $)
+    df-eprel $a |- _E = { <. x , y >. | x e. y } $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( The epsilon relation and membership are the same.  General version of
+       ~ epel .  (Contributed by Scott Fenton, 27-Mar-2011.)  (Revised by Mario
+       Carneiro, 28-Apr-2015.) $)
+    epelg $p |- ( B e. V -> ( A _E B <-> A e. B ) ) $=
+      ( vx vy wcel cvv cep wbr wi cop df-br cv copab wceq wa wex vex sylbi a1i
+      elopab pm3.2i opeqex mpbiri simpld adantr exlimivv df-eprel eleq2s eleq12
+      elex wb brabga expcom pm5.21ndd ) BCFZAGFZABHIZABFZURUQJUPURABKZHFUQABHLU
+      QUTDMZEMZFZDENZHUTVDFUTVAVBKOZVCPZEQDQUQVCDEUTUAVFUQDEVEUQVCVEUQBGFZVEUQV
+      GPVAGFZVBGFZPVHVIDRERUBABVAVBUCUDUEUFUGSDEUHZUISTUSUQJUPABUKTUQUPURUSULVC
+      USDEABHGCVAAVBBUJVJUMUNUO $.
+  $}
+
+  ${
+    epelc.1 $e |- B e. _V $.
+    $( The epsilon relationship and the membership relation are the same.
+       (Contributed by Scott Fenton, 11-Apr-2012.) $)
+    epelc $p |- ( A _E B <-> A e. B ) $=
+      ( cvv wcel cep wbr wb epelg ax-mp ) BDEABFGABEHCABDIJ $.
+  $}
+
+  $( The epsilon relation and the membership relation are the same.
+     (Contributed by NM, 13-Aug-1995.) $)
+  epel $p |- ( x _E y <-> x e. y ) $=
+    ( cv vex epelc ) ACBCBDE $.
+
+  ${
+    $d x y $.
+    $( Define the identity relation.  Definition 9.15 of [Quine] p. 64.  For
+       example, 5 ` _I ` 5 and ` -. ` 4 ` _I ` 5.  (Contributed by NM,
+       13-Aug-1995.) $)
+    df-id $a |- _I = { <. x , y >. | x = y } $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -34668,6 +34781,14 @@ htmldef "Tr" as
     "<IMG SRC='_ctr.gif' WIDTH=16 HEIGHT=19 ALT=' Tr' TITLE='Tr'> ";
   althtmldef "Tr" as 'Tr ';
   latexdef "Tr" as "{\rm Tr}";
+htmldef "_E" as
+    " <IMG SRC='rmce.gif' WIDTH=9 HEIGHT=19 ALT=' _E' TITLE='_E'> ";
+  althtmldef "_E" as ' E ';
+  latexdef "_E" as "{\rm E}";
+htmldef "_I" as
+    " <IMG SRC='rmci.gif' WIDTH=4 HEIGHT=19 ALT=' _I' TITLE='_I'> ";
+  althtmldef "_I" as ' I ';
+  latexdef "_I" as "{\rm I}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
