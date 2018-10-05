@@ -34941,12 +34941,12 @@ $)
   $}
 
   ${
-    $d x y R $.  $d x y A $.
+    $d x y z R $.  $d x y z A $.
     $( A strict linear order is a strict partial order.  (Contributed by NM,
        28-Mar-1997.) $)
     sopo $p |- ( R Or A -> R Po A ) $=
-      ( vx vy wor wpo cv wbr weq w3o wral df-so simplbi ) ABEABFCGZDGZBHCDIONBH
-      JDAKCAKCDABLM $.
+      ( vx vy vz wor wpo cv wbr wo wi wral df-iso simplbi ) ABFABGCHZ
+      DHZBIOEHZBIQPBIJKEALDALCALCDEABMN $.
   $}
 
   ${
