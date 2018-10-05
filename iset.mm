@@ -35046,15 +35046,6 @@ $)
     ( wor wcel wa wceq wbr wo wn sotrieq ioran syl6bb ) ADEBAFCAFGGBCHBCDIZCBDI
     ZJKOKPKGABCDLOPMN $.
 
-  $( A transitivity relation.  (Read ` B <_ C ` and ` C < D ` implies
-     ` B < D ` .)  (Contributed by Mario Carneiro, 10-May-2013.) $)
-  sotr2 $p |- ( ( R Or A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
-                ( ( -. C R B /\ C R D ) -> B R D ) ) $=
-    ( wor wcel w3a wa wbr wn wceq wo wi sotric ancom2s 3adantr3 con2bid breq1
-    wb biimpd a1i sotr exp3a jaod sylbird imp3a ) AEFZBAGZCAGZDAGZHIZCBEJZKZCDE
-    JZBDEJZULUNCBLZBCEJZMZUOUPNZULUMUSUHUIUJUMUSKTZUKUHUJUIVAACBEOPQRULUQUTURUQ
-    UTNULUQUOUPCBDESUAUBULURUOUPABCDEUCUDUEUFUG $.
-
   ${
     $d x y R $.  $d x y A $.  $d x y ph $.
     issod.1 $e |- ( ph -> R Po A ) $.
