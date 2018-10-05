@@ -34806,9 +34806,10 @@ $)
     $( Bound-variable hypothesis builder for total orders.  (Contributed by
        Stefan O'Rear, 20-Jan-2015.) $)
     nfso $p |- F/ x R Or A $=
-      ( va vb wor wpo cv wbr weq w3o wral wa df-so nfpo nfcv nfbr nfral nf3or
-      nfv nfan nfxfr ) BCHBCIZFJZGJZCKZFGLZUGUFCKZMZGBNZFBNZOAFGBCPUEUMAABCDEQU
-      LAFBEUKAGBEUHUIUJAAUFUGCAUFRZDAUGRZSUIAUBAUGUFCUODUNSUATTUCUD $.
+      ( va vb vc wor wpo cv wbr wo wi wral df-iso nfcv nfbr nfralxy
+      wa nfpo nfor nfim nfan nfxfr ) BCIBCJZFKZGKZCLZUGHKZCLZUJUHCLZM
+      ZNZHBOZGBOZFBOZTAFGHBCPUFUQAABCDEUAUPAFBEUOAGBEUNAHBEUIUMAAUGUH
+      CAUGQZDAUHQZRUKULAAUGUJCURDAUJQZRAUJUHCUTDUSRUBUCSSSUDUE $.
   $}
 
   ${
