@@ -34950,15 +34950,16 @@ $)
   $}
 
   ${
-    $d x y R $.  $d x y A $.  $d x y B $.
+    $d x y z R $.  $d x y z A $.  $d x y z B $.
     $( Subset theorem for the strict ordering predicate.  (Contributed by NM,
        16-Mar-1997.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
     soss $p |- ( A C_ B -> ( R Or B -> R Or A ) ) $=
-      ( vx vy wss wpo cv wbr wral wa wor wcel wi wal ssel anim12d 3imtr4g df-so
-      r2al weq w3o poss imim1d 2alimdv ) ABFZBCGZDHZEHZCIDEUAUIUHCIUBZEBJDBJZKA
-      CGZUJEAJDAJZKBCLACLUFUGULUKUMABCUCUFUHBMZUIBMZKZUJNZEODOUHAMZUIAMZKZUJNZE
-      ODOUKUMUFUQVADEUFUTUPUJUFURUNUSUOABUHPABUIPQUDUEUJDEBBTUJDEAATRQDEBCSDEAC
-      SR $.
+      ( vx vy vz wpo cv wbr wi wral wa wor wcel w3a ssel r3al 3imtr4g
+      wal df-iso wss wo poss 3anim123d imim1d 2alimdv alimdv anim12d
+      ) ABUAZBCGZDHZEHZCIUKFHZCIUMULCIUBJZFBKEBKDBKZLACGZUNFAKEAKDAKZ
+      LBCMACMUIUJUPUOUQABCUCUIUKBNZULBNZUMBNZOZUNJZFSESZDSUKANZULANZU
+      MANZOZUNJZFSESZDSUOUQUIVCVIDUIVBVHEFUIVGVAUNUIVDURVEUSVFUTABUKP
+      ABULPABUMPUDUEUFUGUNDEFBBBQUNDEFAAAQRUHDEFBCTDEFACTR $.
   $}
 
   ${
