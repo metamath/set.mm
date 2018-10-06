@@ -34747,8 +34747,7 @@ $)
     $d x y z R $.  $d x y z A $.
     $( Define the strict partial order predicate.  Definition of [Enderton]
        p. 168.  The expression ` R Po A ` means ` R ` is a partial order on
-       ` A ` .  For example, ` < Po RR ` is true, while ` <_ Po RR ` is false
-       ( ~ ex-po ).  (Contributed by NM, 16-Mar-1997.) $)
+       ` A ` .  (Contributed by NM, 16-Mar-1997.) $)
     df-po $a |- ( R Po A <-> A. x e. A A. y e. A A. z e. A
                 ( -. x R x /\ ( ( x R y /\ y R z ) -> x R z ) ) ) $.
 
