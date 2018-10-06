@@ -35092,12 +35092,12 @@ $)
   $}
 
   ${
-    $d x y R $.
+    $d x y z R $.
     $( Any relation is a strict ordering of the empty set.  (Contributed by NM,
        16-Mar-1997.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
     so0 $p |- R Or (/) $=
-      ( vx vy c0 wor wpo cv wbr weq w3o wral po0 ral0 df-so mpbir2an ) DAEDAFBG
-      ZCGZAHBCIQPAHJCDKZBDKALRBMBCDANO $.
+      ( vx vy vz c0 wor wpo cv wbr wo wral po0 ral0 df-iso mpbir2an
+      wi ) EAFEAGBHZCHZAIQDHZAISRAIJPDEKCEKZBEKALTBMBCDEANO $.
   $}
 
   ${
