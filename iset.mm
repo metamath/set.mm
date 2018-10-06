@@ -34962,14 +34962,15 @@ $)
   $}
 
   ${
-    $d x y R $.  $d x y S $.  $d x y A $.
+    $d x y z R $.  $d x y z S $.  $d x y z A $.
     $( Equality theorem for the strict ordering predicate.  (Contributed by NM,
        16-Mar-1997.) $)
     soeq1 $p |- ( R = S -> ( R Or A <-> S Or A ) ) $=
-      ( vx vy wceq wpo cv wbr w3o wral wa wor poeq1 breq biidd 2ralbidv anbi12d
-      3orbi123d df-so 3bitr4g ) BCFZABGZDHZEHZBIZUDUEFZUEUDBIZJZEAKDAKZLACGZUDU
-      ECIZUGUEUDCIZJZEAKDAKZLABMACMUBUCUKUJUOABCNUBUIUNDEAAUBUFULUGUGUHUMUDUEBC
-      OUBUGPUEUDBCOSQRDEABTDEACTUA $.
+      ( vx vy vz wceq wpo cv wbr wo wi wral wa wor poeq1 breq orbi12d
+      imbi12d df-iso 2ralbidv ralbidv anbi12d 3bitr4g ) BCGZABHZDIZEI
+      ZBJZUGFIZBJZUJUHBJZKZLZFAMEAMZDAMZNACHZUGUHCJZUGUJCJZUJUHCJZKZL
+      ZFAMEAMZDAMZNABOACOUEUFUQUPVDABCPUEUOVCDAUEUNVBEFAAUEUIURUMVAUG
+      UHBCQUEUKUSULUTUGUJBCQUJUHBCQRSUAUBUCDEFABTDEFACTUD $.
   $}
 
   $( Equality theorem for the strict ordering predicate.  (Contributed by NM,
