@@ -1,4 +1,4 @@
-$( iset.mm - Version of 30-Sep-2018
+$( iset.mm - Version of 6-Oct-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -9297,6 +9297,11 @@ $)
     ( wdc wb wn wa dcn dcbi syl5 imp pm5.18dc a1d con2biddc bicomd ex
     mpd ) ACZBCZABDZEZABEZDZDQRFZUBTUCUBCZUBTDQRUDRUACQUDBGAUAHIJUCSU
     BUCSUBEDZUDQRUEABKJLMPNO $.
+
+  $( ` \/_ ` is commutative.  (Contributed by David A. Wheeler, 6-Oct-2018.) $)
+  xorcom $p |- ( ( ph \/_ ps ) <-> ( ps \/_ ph ) ) $=
+    ( wo wa wn wxo orcom ancom notbii anbi12i df-xor 3bitr4i ) ABCZABDZEZDBACZB
+    ADZEZDABFBAFMPORABGNQABHIJABKBAKL $.
 
   $( A decidable proposition is equivalent to a decidable proposition or its
      negation.  Based on theorem *5.15 of [WhiteheadRussell] p. 124.
