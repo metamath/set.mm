@@ -9406,7 +9406,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Operations on true and false constants
+        Truth tables: Operations on true and false constants
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   For classical logic, truth tables can be used to define propositional
@@ -9423,7 +9423,8 @@ $(
   ` \/ ` (disjunction aka logical inclusive 'or') ~ wo ,
   ` -> ` (implies) ~ wi ,
   ` -. ` (not) ~ wn ,
-  ` <-> ` (logical equivalence) ~ df-bi .
+  ` <-> ` (logical equivalence) ~ df-bi , and
+  ` \/_ ` (exclusive or) ~ df-xor .
 $)
 
   $( A ` /\ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
