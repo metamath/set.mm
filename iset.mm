@@ -9298,6 +9298,11 @@ $)
     mpd ) ACZBCZABDZEZABEZDZDQRFZUBTUCUBCZUBTDQRUDRUACQUDBGAUAHIJUCSU
     BUCSUBEDZUDQRUEABKJLMPNO $.
 
+  $( ` \/_ ` is commutative.  (Contributed by David A. Wheeler, 6-Oct-2018.) $)
+  xorcom $p |- ( ( ph \/_ ps ) <-> ( ps \/_ ph ) ) $=
+    ( wo wa wn wxo orcom ancom notbii anbi12i df-xor 3bitr4i ) ABCZABDZEZDBACZB
+    ADZEZDABFBAFMPORABGNQABHIJABKBAKL $.
+
   $( A decidable proposition is equivalent to a decidable proposition or its
      negation.  Based on theorem *5.15 of [WhiteheadRussell] p. 124.
      (Contributed by Jim Kingdon, 18-Apr-2018.) $)
