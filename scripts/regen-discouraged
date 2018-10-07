@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Regenerate 'discouraged' values for set.mm using metamath.exe
+
+metamath 'read set.mm' 'set width 9999' 'show discouraged' quit |
+  grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' |
+  LC_ALL=C sort > discouraged
+
