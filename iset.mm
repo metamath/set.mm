@@ -34992,17 +34992,19 @@ $)
     JLAEMABCDENO $.
 
   ${
-    $d x y A $.  $d x y B $.  $d x y C $.  $d x y R $.
-    $( A strict order relation is linear (satisfies trichotomy).  (Contributed
-       by NM, 21-Jan-1996.) $)
-    solin $p |- ( ( R Or A /\ ( B e. A /\ C e. A ) ) ->
-              ( B R C \/ B = C \/ C R B ) ) $=
-      ( vx vy wcel wa wor wbr wceq w3o cv wi breq1 eqeq1 breq2 3orbi123d imbi2d
-      wral eqeq2 wpo df-so rsp2 adantl sylbi com12 vtocl2ga impcom ) BAGCAGHADI
-      ZBCDJZBCKZCBDJZLZUJEMZFMZDJZUOUPKZUPUODJZLZNUJBUPDJZBUPKZUPBDJZLZNUJUNNEF
-      BCAAUOBKZUTVDUJVEUQVAURVBUSVCUOBUPDOUOBUPPUOBUPDQRSUPCKZVDUNUJVFVAUKVBULV
-      CUMUPCBDQUPCBUAUPCBDORSUJUOAGUPAGHZUTUJADUBZUTFATEATZHVGUTNZEFADUCVIVJVHU
-      TEFAAUDUEUFUGUHUI $.
+    $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.  $d x y z R $.
+    $( A strict order relation satisfies weak linearity.  (Contributed by Jim
+       Kingdon, 6-Oct-2018.) $)
+    sowlin $p |- ( ( R Or A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
+        ( B R C -> ( B R D \/ D R C ) ) ) $=
+      ( vx vy vz wcel w3a wbr wo wi cv wceq breq1 imbi2d breq2 wral wa wor rsp2
+      orbi1d imbi12d orbi2d orbi12d wpo df-iso 3anass imp3a syl5bi adantl sylbi
+      rsp syl6 com12 vtocl3ga impcom ) BAICAIDAIJAEUAZBCEKZBDEKZDCEKZLZMZUSFNZG
+      NZEKZVEHNZEKZVHVFEKZLZMZMUSBVFEKZBVHEKZVJLZMZMUSUTVNVHCEKZLZMZMUSVDMFGHBC
+      DAAAVEBOZVLVPUSVTVGVMVKVOVEBVFEPVTVIVNVJVEBVHEPUCUDQVFCOZVPVSUSWAVMUTVOVR
+      VFCBERWAVJVQVNVFCVHERUEUDQVHDOZVSVDUSWBVRVCUTWBVNVAVQVBVHDBERVHDCEPUFQQUS
+      VEAIZVFAIZVHAIZJZVLUSAEUGZVLHASGASZFASZTWFVLMZFGHAEUHWIWJWGWFWCWDWETZTWIV
+      LWCWDWEUIWIWCWKVLWIWCWHWKVLMWHFAUNVLGHAAUBUOUJUKULUMUPUQUR $.
   $}
 
   $( A strict order relation has no 2-cycle loops.  (Contributed by NM,
