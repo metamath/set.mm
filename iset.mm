@@ -35021,33 +35021,6 @@ $)
     ( wor wpo wcel w3a wbr wn sopo po3nr sylan ) AEFAEGBAHCAHDAHIBCEJCDEJDBEJIK
     AELABCDEMN $.
 
-  $( A strict order relation satisfies strict trichotomy.  (Contributed by NM,
-     19-Feb-1996.) $)
-  sotric $p |- ( ( R Or A /\ ( B e. A /\ C e. A ) ) ->
-              ( B R C <-> -. ( B = C \/ C R B ) ) ) $=
-    ( wor wcel wa wceq wo wn wi sonr breq2 notbid syl5ibcom adantrr so2nr imnan
-    wbr sylibr con2d jaod w3o solin 3orass df-or bitri sylib impbid con2bid ) A
-    DEZBAFZCAFZGGZBCHZCBDSZIZBCDSZUNUQURJZUNUOUSUPUKULUOUSKUMUKULGBBDSZJUOUSABD
-    LUOUTURBCBDMNOPUNURUPUNURUPGJURUPJKABCDQURUPRTUAUBUNURUOUPUCZUSUQKZABCDUDVA
-    URUQIVBURUOUPUEURUQUFUGUHUIUJ $.
-
-  $( Trichotomy law for strict order relation.  (Contributed by NM,
-     9-Apr-1996.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
-  sotrieq $p |- ( ( R Or A /\ ( B e. A /\ C e. A ) ) ->
-              ( B = C <-> -. ( B R C \/ C R B ) ) ) $=
-    ( wor wcel wa wo wceq wn sonr adantrr pm1.2 nsyl breq2 breq1 orbi12d notbid
-    wbr syl5ibcom con2d w3o solin 3orass or12 df-or 3bitri sylib impbid con2bid
-    wi ) ADEZBAFZCAFZGGZBCDSZCBDSZHZBCIZUOURUSJZUOUSURUOBBDSZVAHZJUSURJUOVAVBUL
-    UMVAJUNABDKLVAMNUSVBURUSVAUPVAUQBCBDOBCBDPQRTUAUOUPUSUQUBZUTURUKZABCDUCVCUP
-    USUQHHUSURHVDUPUSUQUDUPUSUQUEUSURUFUGUHUIUJ $.
-
-  $( Trichotomy law for strict order relation.  (Contributed by NM,
-     5-May-1999.) $)
-  sotrieq2 $p |- ( ( R Or A /\ ( B e. A /\ C e. A ) ) ->
-              ( B = C <-> ( -. B R C /\ -. C R B ) ) ) $=
-    ( wor wcel wa wceq wbr wo wn sotrieq ioran syl6bb ) ADEBAFCAFGGBCHBCDIZCBDI
-    ZJKOKPKGABCDLOPMN $.
-
   ${
     $d x y R $.  $d x y A $.  $d x y ph $.
     issod.1 $e |- ( ph -> R Po A ) $.
