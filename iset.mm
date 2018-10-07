@@ -1,4 +1,4 @@
-$( iset.mm - Version of 6-Oct-2018
+$( iset.mm - Version of 7-Oct-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -9272,6 +9272,30 @@ $)
     3bitr4ri ancom orbi2i ) ABCZBADZEZABDZEZFZUCUAFUCTBEZFSABFZTUBFEUFTEZUFUBEZ
     FUDABGUFTUBHUGUAUHUCUAATEZFUIUAFUAUGUAUIIUIUAAJKABTLPABMNOUAUCIUAUEUCBTQRO
     $.
+
+  ${
+    xorbid.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Deduction joining an equivalence and a left operand to form equivalence
+       of exclusive-or.  (Contributed by Jim Kingdon, 7-Oct-2018.) $)
+    xorbi2d $p |- ( ph -> ( ( th \/_ ps ) <-> ( th \/_ ch ) ) ) $=
+      ( wo wa wn wxo orbi2d anbi2d notbid anbi12d df-xor 3bitr4g ) AD
+      BFZDBGZHZGDCFZDCGZHZGDBIDCIAPSRUAABCDEJAQTABCDEKLMDBNDCNO $.
+
+    $( Deduction joining an equivalence and a right operand to form equivalence
+       of exclusive-or.  (Contributed by Jim Kingdon, 7-Oct-2018.) $)
+    xorbi1d $p |- ( ph -> ( ( ps \/_ th ) <-> ( ch \/_ th ) ) ) $=
+      ( wo wa wn wxo orbi1d anbi1d notbid anbi12d df-xor 3bitr4g ) AB
+      DFZBDGZHZGCDFZCDGZHZGBDICDIAPSRUAABCDEJAQTABCDEKLMBDNCDNO $.
+  $}
+
+  ${
+    xorbi12d.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    xorbi12d.2 $e |- ( ph -> ( th <-> ta ) ) $.
+    $( Deduction joining two equivalences to form equivalence of exclusive-or.
+       (Contributed by Jim Kingdon, 7-Oct-2018.) $)
+    xorbi12d $p |- ( ph -> ( ( ps \/_ th ) <-> ( ch \/_ ta ) ) ) $=
+      ( wxo xorbi1d xorbi2d bitrd ) ABDHCDHCEHABCDFIADECGJK $.
+  $}
 
   $( A consequence of exclusive or.  In classical logic the converse also
      holds.  (Contributed by Jim Kingdon, 8-Mar-2018.) $)
