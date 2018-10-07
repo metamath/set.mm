@@ -35022,51 +35022,6 @@ $)
     AELABCDEMN $.
 
   ${
-    $d x y R $.  $d x y A $.  $d x y ph $.
-    issod.1 $e |- ( ph -> R Po A ) $.
-    issod.2 $e |- ( ( ph /\ ( x e. A /\ y e. A ) ) ->
-                    ( x R y \/ x = y \/ y R x ) ) $.
-    $( An irreflexive, transitive, linear relation is a strict ordering.
-       (Contributed by NM, 21-Jan-1996.)  (Revised by Mario Carneiro,
-       9-Jul-2014.) $)
-    issod $p |- ( ph -> R Or A ) $=
-      ( wpo cv wbr weq w3o wral wor ralrimivva df-so sylanbrc ) ADEHBIZCIZEJBCK
-      SREJLZCDMBDMDENFATBCDDGOBCDEPQ $.
-  $}
-
-  ${
-    $d x y z R $.  $d x y z A $.
-    issoi.1 $e |- ( x e. A -> -. x R x ) $.
-    issoi.2 $e |- ( ( x e. A /\ y e. A /\ z e. A ) ->
-                  ( ( x R y /\ y R z ) -> x R z ) ) $.
-    issoi.3 $e |- ( ( x e. A /\ y e. A ) -> ( x R y \/ x = y \/ y R x ) ) $.
-    $( An irreflexive, transitive, linear relation is a strict ordering.
-       (Contributed by NM, 21-Jan-1996.)  (Revised by Mario Carneiro,
-       9-Jul-2014.) $)
-    issoi $p |- R Or A $=
-      ( wor wtru cv wcel wbr wn adantl w3a wa wi ispod weq w3o issod trud ) DEI
-      JABDEJABCDEAKZDLZUDUDEMNJFOUEBKZDLZCKZDLPUDUFEMZUFUHEMQUDUHEMRJGOSUEUGQUI
-      ABTUFUDEMUAJHOUBUC $.
-  $}
-
-  ${
-    $d x y z R $.  $d x y z A $.
-    isso2i.1 $e |- ( ( x e. A /\ y e. A ) ->
-                     ( x R y <-> -. ( x = y \/ y R x ) ) ) $.
-    isso2i.2 $e |- ( ( x e. A /\ y e. A /\ z e. A ) ->
-                     ( ( x R y /\ y R z ) -> x R z ) ) $.
-    $( Deduce strict ordering from its properties.  (Contributed by NM,
-       29-Jan-1996.)  (Revised by Mario Carneiro, 9-Jul-2014.) $)
-    isso2i $p |- R Or A $=
-      ( cv wcel wbr wn wa weq wo equid orci wb wi eleq1 anbi2d breq1 notbid w3o
-      equequ2 orbi12d breq2 bibi12d imbi12d con2bid chvarv mpbii anidms biimprd
-      3orass df-or bitri sylibr issoi ) ABCDEAHZDIZUSUSEJZKZUTUTLZAAMZVANZVBVDV
-      AAOPUTBHZDIZLZABMZVFUSEJZNZUSVFEJZKZQZRVCVEVBQZRBABAMZVHVCVNVOVPVGUTUTVFU
-      SDSTVPVKVEVMVBVPVIVDVJVABAAUDVFUSUSEUAUEVPVLVAVFUSUSEUFUBUGUHVHVLVKFUIZUJ
-      UKULGVHVMVKRZVLVIVJUCZVHVKVMVQUMVSVLVKNVRVLVIVJUNVLVKUOUPUQUR $.
-  $}
-
-  ${
     $d x y z R $.
     $( Any relation is a strict ordering of the empty set.  (Contributed by NM,
        16-Mar-1997.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
