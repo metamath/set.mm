@@ -9433,6 +9433,14 @@ $)
     ZUTUFVAURVCGAUPLJVBUSABCMNOPUOUIUQAUNUIUQGZUFUGUHVDBCQJRSUOUKDZULDZUMUTGUFU
     GVEUHUFUGVEABTJUAUFUHVFUGUFUHVFACTJUBUKULQUCUDUE $.
 
+  $( Conjunction distributes over exclusive-or.  (Contributed by Mario Carneiro
+     and Jim Kingdon, 7-Oct-2018.) $)
+  anxordi $p |- ( ( ph /\ ( ps \/_ ch ) ) <->
+      ( ( ph /\ ps ) \/_ ( ph /\ ch ) ) ) $=
+    ( wxo wa ax-ia1 wo wn df-xor simplbi simpl jaoi syl ibar xorbi12d
+    bitr3d pm5.21nii ) ABCDZEZAABEZACEZDZARFUBTUAGZAUBUCTUAEHTUAIJTAU
+    AABKACKLMARSUBARNABTCUAABNACNOPQ $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Truth tables: Operations on true and false constants
