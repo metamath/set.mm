@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Verify source file $1 (default "set.mm")
+source="${1:-set.mm}"
+
+./metamath "read ${source}" 'verify proof *' 'verify markup *' quit
