@@ -23,8 +23,12 @@ LoadFile,set.mm
 VerifyProof,*
 Parse,*
 RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc
-${extra}
 RUNPARAMS
+
+# Append $extra to the run parameters if we have it.
+if [ -n "$extra" ] ; then
+  printf '%s\n' ${extra} >> runparams$$.txt
+fi
 
 # Run verify command, tee results to a separate file so we can examine it.
 java -Xms512M -Xmx1024M -jar mmj2.jar runparams$$.txt | tee mmj2-$$.log
