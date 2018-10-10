@@ -35032,55 +35032,26 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                Founded and well-ordering relations
+                Set-like relations
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
   $( Declare new constant symbols. $)
-  $c Fr $. $( Well-founded predicate symbol (read: 'well-founded'). $)
   $c Se $. $( Set-like predicate symbol (read: 'set-like'). $)
-  $c We $. $( Well-ordering predicate symbol (read: 'well-orders') $)
-
-  $( Extend wff notation to include the well-founded predicate.  Read:  ' ` R `
-     is a well-founded relation on ` A ` .' $)
-  wfr $a wff R Fr A $.
 
   $( Extend wff notation to include the set-like predicate.  Read:  ' ` R ` is
      set-like on ` A ` .' $)
   wse $a wff R Se A $.
 
-  $( Extend wff notation to include the well-ordering predicate.
-     Read:  ' ` R ` well-orders ` A ` .' $)
-  wwe $a wff R We A $.
-
   ${
-    $d x y z R $.  $d x y z A $.
-    $( Define the well-founded relation predicate.  Definition 6.24(1) of
-       [TakeutiZaring] p. 30.  For alternate definitions, see ~ dffr2 and
-       ~ dffr3 .  (Contributed by NM, 3-Apr-1994.) $)
-    df-fr $a |- ( R Fr A <-> A. x ( ( x C_ A /\ x =/= (/) ) ->
-                E. y e. x A. z e. x -. z R y ) ) $.
-
+    $d x y R $.  $d x y A $.
     $( Define the set-like predicate.  (Contributed by Mario Carneiro,
        19-Nov-2014.) $)
     df-se $a |- ( R Se A <-> A. x e. A { y e. A | y R x } e. _V ) $.
   $}
 
-  $( Define the well-ordering predicate.  For an alternate definition, see
-     ~ dfwe2 .  (Contributed by NM, 3-Apr-1994.) $)
-  df-we $a |- ( R We A <-> ( R Fr A /\ R Or A ) ) $.
-
   ${
     $d x y z A $.  $d x y z B $.  $d x y z R $.  $d x y V $.
-    $( Property of well-founded relation (one direction of definition).
-       (Contributed by NM, 18-Mar-1997.) $)
-    fri $p |- ( ( ( B e. C /\ R Fr A ) /\ ( B C_ A /\ B =/= (/) ) ) ->
-                E. x e. B A. y e. B -. y R x ) $=
-      ( vz wcel wfr wss c0 wne wa cv wbr wn wral wrex wi wal df-fr wceq anbi12d
-      sseq1 neeq1 raleq rexeqbi1dv imbi12d spcgv syl5bi imp31 ) DEHZCFIZDCJZDKL
-      ZMZBNANFOPZBDQZADRZUMGNZCJZUTKLZMZUQBUTQZAUTRZSZGTULUPUSSZGABCFUAVFVGGDEU
-      TDUBZVCUPVEUSVHVAUNVBUOUTDCUDUTDKUEUCVDURAUTDUQBUTDUFUGUHUIUJUK $.
-
     $( The ` R ` -preimage of an element of the base set in a set-like relation
        is a set.  (Contributed by Mario Carneiro, 19-Nov-2014.) $)
     seex $p |- ( ( R Se A /\ B e. A ) -> { x e. A | x R B } e. _V ) $=
@@ -35096,42 +35067,7 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d x y z R $.
-    $( Alternate definition of well-founded relation.  Similar to Definition
-       6.21 of [TakeutiZaring] p. 30.  (Contributed by NM, 17-Feb-2004.)
-       (Proof shortened by Andrew Salmon, 27-Aug-2011.)  (Proof shortened by
-       Mario Carneiro, 23-Jun-2015.) $)
-    dffr2 $p |- ( R Fr A <-> A. x ( ( x C_ A /\ x =/= (/) ) ->
-                E. y e. x { z e. x | z R y } = (/) ) ) $=
-      ( wfr cv wss c0 wne wa wbr wn wral wrex wi wal crab wceq df-fr rabeq0
-      rexbii imbi2i albii bitr4i ) DEFAGZDHUFIJKZCGBGELZMCUFNZBUFOZPZAQUGUHCUFR
-      ISZBUFOZPZAQABCDETUNUKAUMUJUGULUIBUFUHCUFUAUBUCUDUE $.
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.  $d x y R $.
-    frc.1 $e |- B e. _V $.
-    $( Property of well-founded relation (one direction of definition using
-       class variables).  (Contributed by NM, 17-Feb-2004.)  (Revised by Mario
-       Carneiro, 19-Nov-2014.) $)
-    frc $p |- ( ( R Fr A /\ B C_ A /\ B =/= (/) ) ->
-                E. x e. B { y e. B | y R x } = (/) ) $=
-      ( wfr wss c0 wne w3a cv wbr wn wral wrex crab wceq cvv wcel wa fri mpanl1
-      3impb rabeq0 rexbii sylibr ) CEGZDCHZDIJZKBLALEMZNBDOZADPZUKBDQIRZADPUHUI
-      UJUMDSTUHUIUJUAUMFABCDSEUBUCUDUNULADUKBDUEUFUG $.
-  $}
-
-  ${
     $d x y z A $.  $d x y z B $.  $d x y z R $.  $d x y S $.
-    $( Subset theorem for the well-founded predicate.  Exercise 1 of
-       [TakeutiZaring] p. 31.  (Contributed by NM, 3-Apr-1994.)  (Proof
-       shortened by Andrew Salmon, 25-Jul-2011.) $)
-    frss $p |- ( A C_ B -> ( R Fr B -> R Fr A ) ) $=
-      ( vx vz vy wss cv c0 wne wa wbr wn wral wrex wi wal wfr sstr2 df-fr com12
-      anim1d imim1d alimdv 3imtr4g ) ABGZDHZBGZUGIJZKZEHFHCLMEUGNFUGOZPZDQUGAGZ
-      UIKZUKPZDQBCRACRUFULUODUFUNUJUKUFUMUHUIUMUFUHUGABSUAUBUCUDDFEBCTDFEACTUE
-      $.
-
     $( Subset theorem for the set-like predicate.  (Contributed by Mario
        Carneiro, 24-Jun-2015.) $)
     sess1 $p |- ( R C_ S -> ( S Se A -> R Se A ) ) $=
@@ -35147,23 +35083,6 @@ $)
       syl ralimdv syld 3imtr4g ) ABFZDGEGCHZDBIZJKZEBLZUEDAIZJKZEALZBCMACMUDUHU
       GEALUKUGEABNUDUGUJEAUDUIUFFZUGUJOUEDABPULUGUJUIUFJQRTUAUBEDBCSEDACSUC $.
   $}
-
-  ${
-    $d x y z R $.  $d x y z S $.  $d x y z A $.
-    $( Equality theorem for the well-founded predicate.  (Contributed by NM,
-       9-Mar-1997.) $)
-    freq1 $p |- ( R = S -> ( R Fr A <-> S Fr A ) ) $=
-      ( vx vz vy wceq cv wss c0 wne wa wbr wn wral wrex wi wal wfr df-fr notbid
-      breq rexralbidv imbi2d albidv 3bitr4g ) BCGZDHZAIUHJKLZEHZFHZBMZNZEUHOFUH
-      PZQZDRUIUJUKCMZNZEUHOFUHPZQZDRABSACSUGUOUSDUGUNURUIUGUMUQFEUHUHUGULUPUJUK
-      BCUBUAUCUDUEDFEABTDFEACTUF $.
-  $}
-
-  $( Equality theorem for the well-founded predicate.  (Contributed by NM,
-     3-Apr-1994.) $)
-  freq2 $p |- ( A = B -> ( R Fr A <-> R Fr B ) ) $=
-    ( wceq wfr wss wi eqimss2 frss syl eqimss impbid ) ABDZACEZBCEZMBAFNOGBAHBA
-    CIJMABFONGABKABCIJL $.
 
   $( Equality theorem for the set-like predicate.  (Contributed by Mario
      Carneiro, 24-Jun-2015.) $)
@@ -35181,15 +35100,6 @@ $)
     $d y R a b c $.  $d y A a b c $.  $d x y a b c $.
     nffr.r $e |- F/_ x R $.
     nffr.a $e |- F/_ x A $.
-    $( Bound-variable hypothesis builder for well-founded relations.
-       (Contributed by Stefan O'Rear, 20-Jan-2015.)  (Revised by Mario
-       Carneiro, 14-Oct-2016.) $)
-    nffr $p |- F/ x R Fr A $=
-      ( va vc vb wfr cv wss c0 wne wa wbr wn wral wrex wi nfcv wal nfss nfv nfn
-      df-fr nfan nfbr nfral nfrex nfim nfal nfxfr ) BCIFJZBKZUMLMZNZGJZHJZCOZPZ
-      GUMQZHUMRZSZFUAAFHGBCUEVCAFUPVBAUNUOAAUMBAUMTZEUBUOAUCUFVAAHUMVDUTAGUMVDU
-      SAAUQURCAUQTDAURTUGUDUHUIUJUKUL $.
-
     $( Bound-variable hypothesis builder for set-like relations.  (Contributed
        by Mario Carneiro, 24-Jun-2015.)  (Revised by Mario Carneiro,
        14-Oct-2016.) $)
@@ -35197,91 +35107,7 @@ $)
       ( va vb wse cv wbr crab cvv wcel wral df-se nfcv nfbr nfrab nfel1 nfral
       nfxfr ) BCHFIZGIZCJZFBKZLMZGBNAGFBCOUFAGBEAUELUDAFBAUBUCCAUBPDAUCPQERSTUA
       $.
-
-    $( Bound-variable hypothesis builder for well-orderings.  (Contributed by
-       Stefan O'Rear, 20-Jan-2015.)  (Revised by Mario Carneiro,
-       14-Oct-2016.) $)
-    nfwe $p |- F/ x R We A $=
-      ( wwe wfr wor wa df-we nffr nfso nfan nfxfr ) BCFBCGZBCHZIABCJOPAABCDEKAB
-      CDELMN $.
   $}
-
-  ${
-    $d x y A $.  $d x y B $.  $d x y R $.
-    $( A well-founded relation is irreflexive.  Special case of Proposition
-       6.23 of [TakeutiZaring] p. 30.  (Contributed by NM, 2-Jan-1994.)
-       (Revised by Mario Carneiro, 22-Jun-2015.) $)
-    frirr $p |- ( ( R Fr A /\ B e. A ) -> -. B R B ) $=
-      ( vx vy wfr wcel wa cv wbr csn crab c0 wceq wrex wss adantl wral notbid
-      wn wne simpl simpr snssd snnzg frc syl3anc wb rabeq0 breq2 ralbidv syl5bb
-      snex rexsng breq1 ralsng bitrd mpbid ) ACFZBAGZHZDIZEIZCJZDBKZLMNZEVEOZBB
-      CJZTZVAUSVEAPVEMUAZVGUSUTUBVABAUSUTUCUDUTVJUSBAUEQEDAVECBUMUFUGUTVGVIUHUS
-      UTVGVBBCJZTZDVERZVIVFVMEBAVFVDTZDVERVCBNZVMVDDVEUIVOVNVLDVEVOVDVKVCBVBCUJ
-      SUKULUNVLVIDBAVBBNVKVHVBBBCUOSUPUQQUR $.
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.  $d x y C $.  $d x y R $.
-    $( A well-founded relation has no 2-cycle loops.  Special case of
-       Proposition 6.23 of [TakeutiZaring] p. 30.  (Contributed by NM,
-       30-May-1994.)  (Revised by Mario Carneiro, 22-Jun-2015.) $)
-    fr2nr $p |- ( ( R Fr A /\ ( B e. A /\ C e. A ) ) ->
-                -. ( B R C /\ C R B ) ) $=
-      ( vx vy wcel wa wbr wn wo cv wral cvv adantl ad2antrl wceq notbid ralbidv
-      breq2 wfr cpr wrex wss wne prex a1i simpl prssi prnzg fri syl22anc rexprg
-      c0 wb mpbid wi prid2g ad2antll breq1 syl prid1g orim12d mpd orcomd sylibr
-      rspcv ianor ) ADUAZBAGZCAGZHZHZBCDIZJZCBDIZJZKVNVPHJVMVQVOVMELZBDIZJZEBCU
-      BZMZVRCDIZJZEWAMZKZVQVOKVMVRFLZDIZJZEWAMZFWAUCZWFVMWANGZVIWAAUDZWAUNUEZWK
-      WLVMBCUFUGVIVLUHVLWMVIBCAUIOVJWNVIVKBCAUJPFEAWANDUKULVLWKWFUOVIWJWBWEFBCA
-      AWGBQZWIVTEWAWOWHVSWGBVRDTRSWGCQZWIWDEWAWPWHWCWGCVRDTRSUMOUPVMWBVQWEVOVMC
-      WAGZWBVQUQVKWQVIVJBCAURUSVTVQECWAVRCQVSVPVRCBDUTRVGVAVMBWAGZWEVOUQVJWRVIV
-      KBCAVBPWDVOEBWAVRBQWCVNVRBCDUTRVGVAVCVDVEVNVPVHVF $.
-  $}
-
-  ${
-    $d x y z R $.
-    $( Any relation is well-founded on the empty set.  (Contributed by NM,
-       17-Sep-1993.) $)
-    fr0 $p |- R Fr (/) $=
-      ( vx vz vy c0 wfr cv wss wne wa wbr crab wceq wrex dffr2 ss0 a1d necon1ad
-      wi wn imp mpgbir ) EAFBGZEHZUCEIZJCGDGAKCUCLEMDUCNZSBBDCEAOUDUEUFUDUFUCEU
-      DUCEMUFTUCPQRUAUB $.
-  $}
-
-  ${
-    $d A x y z $.  $d R x y z $.  $d ph y z $.  $d ps x z $.
-    frminex.1 $e |- A e. _V $.
-    frminex.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    $( If an element of a well-founded set satisfies a property ` ph ` , then
-       there is a minimal element that satisfies ` ph ` .  (Contributed by Jeff
-       Madsen, 18-Jun-2010.)  (Proof shortened by Mario Carneiro,
-       18-Nov-2016.) $)
-    frminex $p |- ( R Fr A -> ( E. x e. A ph ->
-                      E. x e. A ( ph /\ A. y e. A ( ps -> -. y R x ) ) ) ) $=
-      ( vz wrex crab c0 wne cv wbr wn wi wral wa cvv wfr rabn0 wss rabex ssrab2
-      wcel fri ralrab rexbii weq breq2 notbid imbi2d ralbidv rexrab2 bitri an4s
-      sylib mpanl12 ex syl5bir ) ACEJACEKZLMZEFUAZABDNZCNZFOZPZQZDERZSCEJZACEUB
-      VDVCVKVBTUFZVBEUCZVDVCSVKACEGUDACEUEVLVDVMVCVKVLVDSVMVCSSVEINZFOZPZDVBRZI
-      VBJZVKIDEVBTFUGVRBVPQZDERZIVBJVKVQVTIVBABVPDCEHUHUIAVTVJICEICUJZVSVIDEWAV
-      PVHBWAVOVGVNVFVEFUKULUMUNUOUPURUQUSUTVA $.
-  $}
-
-  ${
-    $d x A $.
-    $( Irreflexivity of the epsilon relation: a class founded by epsilon is not
-       a member of itself.  (Contributed by NM, 18-Apr-1994.)  (Revised by
-       Mario Carneiro, 22-Jun-2015.) $)
-    efrirr $p |- ( _E Fr A -> -. A e. A ) $=
-      ( cep wfr wcel wa wbr frirr wb epelg adantl mtbid pm2.01da ) ABCZAADZMNEA
-      ABFZNAABGNONHMAAAIJKL $.
-  $}
-
-  $( A set founded by epsilon contains no 2-cycle loops.  (Contributed by NM,
-     19-Apr-1994.) $)
-  efrn2lp $p |- ( ( _E Fr A /\ ( B e. A /\ C e. A ) ) ->
-                -. ( B e. C /\ C e. B ) ) $=
-    ( cep wfr wcel wa wbr fr2nr wb epelg bi2anan9r adantl mtbid ) ADEZBAFZCAFZG
-    ZGBCDHZCBDHZGZBCFZCBFZGZABCDIRUAUDJOQSUBPTUCBCAKCBAKLMN $.
 
   ${
     $d x y A $.
@@ -35293,151 +35119,6 @@ $)
       ( vy vx cep wse cv wbr crab cvv wcel wral cab epel bicomi abbi2i eqeltrri
       vex rabssab ssexi rgenw df-se mpbir ) ADEBFZCFZDGZBAHZIJZCAKUGCAUFUEBLZUD
       UHIUEBUDUEUCUDJBCMNOCQPUEBARSTCBADUAUB $.
-  $}
-
-  $( Similar to Theorem 7.2 of [TakeutiZaring] p. 35, of except that the Axiom
-     of Regularity is not required due to antecedent ` _E Fr A ` .
-     (Contributed by NM, 4-May-1994.) $)
-  tz7.2 $p |- ( ( Tr A /\ _E Fr A /\ B e. A ) -> ( B C_ A /\ B =/= A ) ) $=
-    ( wtr cep wfr wcel wss wne wa trss wn wceq efrirr eleq1 syl5ibrcom necon2ad
-    notbid anim12ii 3impia ) ACZADEZBAFZBAGZBAHZITUBUCUAUDABJUAUBBAUAUBKBALZAAF
-    ZKAMUEUBUFBAANQOPRS $.
-
-  ${
-    $d x y z A $.
-    $( An alternate way of saying that the epsilon relation is well-founded.
-       (Contributed by NM, 17-Feb-2004.)  (Revised by Mario Carneiro,
-       23-Jun-2015.) $)
-    dfepfr $p |- ( _E Fr A <-> A. x ( ( x C_ A /\ x =/= (/) ) ->
-                  E. y e. x ( x i^i y ) = (/) ) ) $=
-      ( vz cep wfr cv wss c0 wne wa wbr crab wceq wrex wi wal cin dffr2 wel a1i
-      wb epel rabbiia dfin5 eqtr4i eqeq1i rexbii imbi2i albii bitri ) CEFAGZCHU
-      LIJKZDGBGZELZDULMZINZBULOZPZAQUMULUNRZINZBULOZPZAQABDCESUSVCAURVBUMUQVABU
-      LUPUTIUPDBTZDULMUTUOVDDULUOVDUBDATDBUCUAUDDULUNUEUFUGUHUIUJUK $.
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.
-    epfrc.1 $e |- B e. _V $.
-    $( A subset of an epsilon-founded class has a minimal element.
-       (Contributed by NM, 17-Feb-2004.)  (Revised by David Abernethy,
-       22-Feb-2011.) $)
-    epfrc $p |- ( ( _E Fr A /\ B C_ A /\ B =/= (/) ) ->
-                  E. x e. B ( B i^i x ) = (/) ) $=
-      ( vy cep wfr wss c0 wne w3a cv wbr crab wceq wrex cin frc wcel dfin5 epel
-      wb a1i rabbiia eqtr4i eqeq1i rexbii sylibr ) BFGCBHCIJKELZALZFMZECNZIOZAC
-      PCUJQZIOZACPAEBCFDRUOUMACUNULIUNUIUJSZECNULECUJTUKUPECUKUPUBUICSEAUAUCUDU
-      EUFUGUH $.
-  $}
-
-  $( Subset theorem for the well-ordering predicate.  Exercise 4 of
-     [TakeutiZaring] p. 31.  (Contributed by NM, 19-Apr-1994.) $)
-  wess $p |- ( A C_ B -> ( R We B -> R We A ) ) $=
-    ( wss wfr wor wa wwe frss soss anim12d df-we 3imtr4g ) ABDZBCEZBCFZGACEZACF
-    ZGBCHACHNOQPRABCIABCJKBCLACLM $.
-
-  $( Equality theorem for the well-ordering predicate.  (Contributed by NM,
-     9-Mar-1997.) $)
-  weeq1 $p |- ( R = S -> ( R We A <-> S We A ) ) $=
-    ( wceq wfr wor wa wwe freq1 soeq1 anbi12d df-we 3bitr4g ) BCDZABEZABFZGACEZ
-    ACFZGABHACHNOQPRABCIABCJKABLACLM $.
-
-  $( Equality theorem for the well-ordering predicate.  (Contributed by NM,
-     3-Apr-1994.) $)
-  weeq2 $p |- ( A = B -> ( R We A <-> R We B ) ) $=
-    ( wceq wfr wor wa wwe freq2 soeq2 anbi12d df-we 3bitr4g ) ABDZACEZACFZGBCEZ
-    BCFZGACHBCHNOQPRABCIABCJKACLBCLM $.
-
-  $( A well-ordering is well-founded.  (Contributed by NM, 22-Apr-1994.) $)
-  wefr $p |- ( R We A -> R Fr A ) $=
-    ( wwe wfr wor df-we simplbi ) ABCABDABEABFG $.
-
-  $( A well-ordering is a strict ordering.  (Contributed by NM,
-     16-Mar-1997.) $)
-  weso $p |- ( R We A -> R Or A ) $=
-    ( wwe wfr wor df-we simprbi ) ABCABDABEABFG $.
-
-  $( The elements of an epsilon well-ordering are comparable.  (Contributed by
-     NM, 17-May-1994.) $)
-  wecmpep $p |- ( ( _E We A /\ ( x e. A /\ y e. A ) ) ->
-                 ( x e. y \/ x = y \/ y e. x ) ) $=
-    ( cep wwe wor cv wcel wa weq w3o weso solin epel biid 3orbi123i sylib sylan
-    wbr ) CDECDFZAGZCHBGZCHIZUAUBHZABJZUBUAHZKZCDLTUCIUAUBDSZUEUBUADSZKUGCUAUBD
-    MUHUDUEUEUIUFABNUEOBANPQR $.
-
-  $( An epsilon well-ordering is a transitive relation.  (Contributed by NM,
-     22-Apr-1994.) $)
-  wetrep $p |- ( ( _E We A /\ ( x e. A /\ y e. A /\ z e. A ) ) ->
-             ( ( x e. y /\ y e. z ) -> x e. z ) ) $=
-    ( cep wwe cv wcel w3a wa wbr wel wor weso sotr sylan epel anbi12i 3imtr3g
-    wi ) DEFZAGZDHBGZDHCGZDHIZJUBUCEKZUCUDEKZJZUBUDEKZABLZBCLZJACLUADEMUEUHUITD
-    ENDUBUCUDEOPUFUJUGUKABQBCQRACQS $.
-
-  ${
-    $d x y z R $.  $d y z A $.  $d x y z B $.
-    $( A non-empty (possibly proper) subclass of a class well-ordered by ` _E `
-       has a minimal element.  Special case of Proposition 6.26 of
-       [TakeutiZaring] p. 31.  (Contributed by NM, 17-Feb-2004.) $)
-    wefrc $p |- ( ( _E We A /\ B C_ A /\ B =/= (/) ) ->
-               E. x e. B ( B i^i x ) = (/) ) $=
-      ( vy vz cep wwe wss c0 wne cv cin wceq wrex wi wcel wa eqeq1d ex wel wess
-      wex n0 ineq2 rspcev adantl inss1 wfr wefr vex inex2 syl3an1 3exp mpi elin
-      epfrc anbi1i anass rexbii2 syl6ib adantr wral df-3an 3anrot bitr3i wetrep
-      bitri w3a exp3a sylan2b exp44 imp com34 imp3a syl5bi imp4a com23 ralrimdv
-      dfss3 syl6ibr dfss in32 eqeq2i biimpi biimprd syl6 reximdvai syld exlimdv
-      pm2.61dne syl6com 3imp ) BFGZCBHZCIJZCAKZLZIMZACNZWNWMCFGZWOWSOCBFUAWODKZ
-      CPZDUBWTWSDCUCWTXBWSDWTXBWSWTXBQZWSCXALZIXBXDIMZWSOWTXBXEWSWRXEAXACWPXAMW
-      QXDIWPXACUDRUESUFXCXDIJZADTZXDWPLZIMZQZACNZWSWTXFXKOXBWTXFXIAXDNZXKWTXDCH
-      ZXFXLOCXAUGWTXMXFXLWTCFUHXMXFXLCFUIACXDXACDUJUKUPULUMUNXIXJAXDCWPXDPZXIQW
-      PCPZXGQZXIQXOXJQXNXPXIWPCXAUOUQXOXGXIURVGUSUTVAXCXJWRACXCXOXGXIWRXCXOXGXI
-      WROZXCXPWQXAHZXQXCXPEDTZEWQVBXRXCXPXSEWQXCEKZWQPZXPXSXCYAXOXGXSYAXTCPZEAT
-      ZQXCXOXGXSOZOZXTCWPUOXCYBYCYEXCYBXOYCYDWTXBYBXOYCYDOZOOWTXBYBXOYFXBYBQXOQ
-      ZWTYBXOXBVHZYFYGXBYBXOVHYHXBYBXOVCXBYBXOVDVEWTYHQYCXGXSEADCVFVIVJVKVLVMVN
-      VOVPVQVREWQXAVSVTXRWRXIXRWQXHIXRWQXHMZXRWQWQXALZMYIWQXAWAYJXHWQCWPXAWBWCV
-      GWDRWEWFVIVPWGWHWJSWIVOWKWL $.
-  $}
-
-  $( Any relation is a well-ordering of the empty set.  (Contributed by NM,
-     16-Mar-1997.) $)
-  we0 $p |- R We (/) $=
-    ( c0 wwe wfr wor fr0 so0 df-we mpbir2an ) BACBADBAEAFAGBAHI $.
-
-  ${
-    $d x y z A $.  $d w x y z B $.  $d w x y z R $.
-    $( A subset of a well-ordered set has a unique minimal element.
-       (Contributed by NM, 18-Mar-1997.)  (Revised by Mario Carneiro,
-       28-Apr-2015.) $)
-    wereu $p |- ( ( R We A /\ ( B e. V /\ B C_ A /\ B =/= (/) ) ) ->
-                E! x e. B A. y e. B -. y R x ) $=
-      ( wwe wcel wss c0 wne w3a wa cv wbr wn wral wrex wi wor wrmo wreu wfr fri
-      wefr exp32 expcom 3imp2 sylan simpr2 weso adantr soss sylc somo syl reu5
-      sylanbrc ) CEGZDFHZDCIZDJKZLZMZBNANEOPBDQZADRZVEADUAZVEADUBUSCEUCZVCVFCEU
-      EVHUTVAVBVFUTVHVAVBVFSSUTVHMVAVBVFABCDFEUDUFUGUHUIVDDETZVGVDVACETZVIUSUTV
-      AVBUJUSVJVCCEUKULDCEUMUNABDEUOUPVEADUQUR $.
-
-    $( All nonempty (possibly proper) subclasses of ` A ` , which has a
-       well-founded relation ` R ` , have ` R `-minimal elements.  Proposition
-       6.26 of [TakeutiZaring] p. 31.  (Contributed by Scott Fenton,
-       29-Jan-2011.)  (Revised by Mario Carneiro, 24-Jun-2015.) $)
-    wereu2 $p |- ( ( ( R We A /\ R Se A ) /\ ( B C_ A /\ B =/= (/) ) ) ->
-                E! x e. B A. y e. B -. y R x ) $=
-      ( vz vw wa c0 cv wbr wn wral wrex wcel wi breq1 syl5bi sylc ad2antrr wrmo
-      wwe wse wss wne wreu wex n0 crab wceq rabeq0 notbid cbvralv breq2 ralbidv
-      weq syl5bb rspcev ex ad2antll cvv simprl simplr sess2 simprr seex syl2anc
-      wfr wefr ssrab2 syl5ss fri expr syl21anc rexrab ralrab wor weso soss sotr
-      simpr syl13anc ancomsd expdimp an32s con3d idd jad ralimdva reximdva syld
-      expimpd pm2.61dne exlimdv impr somo syl reu5 sylanbrc ) CEUBZCEUCZHZDCUDZ
-      DIUEZHZHZBJZAJZEKZLZBDMZADNZXKADUAZXKADUFXBXCXDXLXDFJZDOZFUGXBXCHZXLFDUHX
-      PXOXLFXBXCXOXLXBXCXOHZHZXLGJZXNEKZGDUIZIYAIUJXTLZGDMZXRXLXTGDUKXOYCXLPXBX
-      CXOYCXLXKYCAXNDXKXSXHEKZLZGDMAFUPZYCXJYEBGDBGUPXIYDXGXSXHEQULUMYFYEYBGDYF
-      YDXTXHXNXSEUNULUOUQURUSUTRXRYAIUEZXJBYAMZAYANZXLXRYAVAOZCEVHZYACUDZYGYIPX
-      RDEUCZXOYJXRXCXAYMXBXCXOVBZWTXAXQVCDCEVDSXBXCXOVEZGDXNEVFVGWTYKXAXQCEVITX
-      RYADCXTGDVJYNVKYJYKHYLYGYIABCYAVAEVLVMVNYIXHXNEKZYHHZADNXRXLXTYPYHAGDXSXH
-      XNEQVOXRYQXKADXRXHDOZHZYPYHXKYHXGXNEKZXJPZBDMYSYPHZXKXTYTXJBGDXSXGXNEQVPU
-      UBUUAXJBDUUBXGDOZHZYTXJXJUUDXIYTYSUUCYPXIYTPYSUUCHZYPXIYTUUEXIYPYTUUEDEVQ
-      ZUUCYRXOXIYPHYTPXRUUFYRUUCXRXCCEVQZUUFYNWTUUGXAXQCEVRZTDCEVSZSTYSUUCWAXRY
-      RUUCVCXRXOYRUUCYOTDXGXHXNEVTWBWCWDWEWFUUDXJWGWHWIRWLWJRWKWMVMWNRWOXFUUFXM
-      XFXCUUGUUFXBXCXDVBWTUUGXAXEUUHTUUISABDEWPWQXKADWRWS $.
   $}
 
 $(
@@ -36101,17 +35782,9 @@ htmldef "Or" as
     " <IMG SRC='_or.gif' WIDTH=18 HEIGHT=19 ALT=' Or' TITLE='Or'> ";
   althtmldef "Or" as ' Or ';
   latexdef "Or" as "{\rm Or}";
-htmldef "Fr" as
-    " <IMG SRC='_fr.gif' WIDTH=15 HEIGHT=19 ALT=' Fr' TITLE='Fr'> ";
-  althtmldef "Fr" as ' Fr ';
-  latexdef "Fr" as "{\rm Fr}";
 htmldef "Se" as ' Se ';
   althtmldef "Se" as ' Se ';
   latexdef "Se" as "{\rm Se}";
-htmldef "We" as
-    " <IMG SRC='_we.gif' WIDTH=21 HEIGHT=19 ALT=' We' TITLE='We'> ";
-  althtmldef "We" as ' We ';
-  latexdef "We" as "{\rm We}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
