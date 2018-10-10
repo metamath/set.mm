@@ -35030,21 +35030,6 @@ $)
       wi ) EAFEAGBHZCHZAIQDHZAISRAIJPDEKCEKZBEKALTBMBCDEANO $.
   $}
 
-  ${
-    $d x y z A $.  $d x y z R $.
-    $( A totally ordered set has at most one minimal element.  (Contributed by
-       Mario Carneiro, 24-Jun-2015.)  (Revised by NM, 16-Jun-2017.) $)
-    somo $p |- ( R Or A -> E* x e. A A. y e. A -. y R x ) $=
-      ( vz wor cv wbr wn wral wa weq wi wrmo wcel breq1 notbid rspcv im2anan9
-      wo ancomsd imp ioran w3o solin df-3or or32 bitri sylib syl5bir syl5 exp4b
-      ord pm2.43d ralrimivv breq2 ralbidv rmo4 sylibr ) CDFZBGZAGZDHZIZBCJZVAEG
-      ZDHZIZBCJZKZAELZMZECJACJVEACNUTVLAECCUTVBCOZVFCOZKZVLUTVOVOVJVKVOVJKVBVFD
-      HZIZVFVBDHZIZKZUTVOKZVKVOVJVTVOVIVEVTVMVIVQVNVEVSVHVQBVBCBALVGVPVAVBVFDPQ
-      RVDVSBVFCBELVCVRVAVFVBDPQRSUAUBVTVPVRTZIWAVKVPVRUCWAWBVKWAVPVKVRUDZWBVKTZ
-      CVBVFDUEWCVPVKTVRTWDVPVKVRUFVPVKVRUGUHUIUMUJUKULUNUOVEVIAECVKVDVHBCVKVCVG
-      VBVFVADUPQUQURUS $.
-  $}
-
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
