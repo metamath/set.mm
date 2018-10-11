@@ -19,6 +19,11 @@ make
 # install metamath to $prefix/bin (by default, $HOME/bin); this honors DESTDIR:
 make prefix="${prefix:-"$HOME"}" install
 
+# If there's no more recent mmbiblio.html, use this one.
+if ! [ -e ../mmbiblio.html ] ; then
+  cp -p mmbiblio.html ../
+fi
+
 cd ../
 
 tar --strip-components=1 -jxf symbols.tar.bz2
