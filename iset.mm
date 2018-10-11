@@ -35897,6 +35897,6 @@ $)
   $( Heyting's formal system Axiom #1 from [Heyting] p. 127.  (Contributed by
      MM, 11-Aug-2018.) $)
   ax1hfs $p |- ( ph -> ( ph /\ ph ) ) $=
-    ( wa ax-ia3 pm2.43i ) AAABAACD $.
+    ( wa ax-ia3 pm2.43i ) AAABACDA $.
 
 $( (End of Mykola Mostovenko's mathbox.) $)
