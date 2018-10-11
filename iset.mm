@@ -35122,6 +35122,911 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordinals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c Ord $. $( Ordinal predicate $)
+  $c On $. $( The class of ordinal numbers $)
+  $c Lim $. $( Limit ordinal predicate $)
+  $c suc $. $( Successor function (read:  'successor of') $)
+
+  $( Extend the definition of a wff to include the ordinal predicate. $)
+  word $a wff Ord A $.
+
+  $( Extend the definition of a class to include the class of all ordinal
+     numbers.  (The 0 in the name prevents creating a file called con.html,
+     which causes problems in Windows.) $)
+  con0 $a class On $.
+
+  $( Extend the definition of a wff to include the limit ordinal predicate. $)
+  wlim $a wff Lim A $.
+
+  $( Extend class notation to include the successor function. $)
+  csuc $a class suc A $.
+
+  $( Define the ordinal predicate, which is true for a class that is transitive
+     and is well-ordered by the epsilon relation.  Variant of definition of
+     [BellMachover] p. 468.  (Contributed by NM, 17-Sep-1993.) $)
+  df-ord $a |- ( Ord A <-> ( Tr A /\ _E We A ) ) $.
+
+  $( Define the class of all ordinal numbers.  Definition 7.11 of
+     [TakeutiZaring] p. 38.  (Contributed by NM, 5-Jun-1994.) $)
+  df-on $a |- On = { x | Ord x } $.
+
+  $( Define the limit ordinal predicate, which is true for a non-empty ordinal
+     that is not a successor (i.e. that is the union of itself).  Our
+     definition combines the definition of Lim of [BellMachover] p. 471 and
+     Exercise 1 of [TakeutiZaring] p. 42.  See ~ dflim2 , ~ dflim3 , and dflim4
+     for alternate definitions.  (Contributed by NM, 22-Apr-1994.) $)
+  df-lim $a |- ( Lim A <-> ( Ord A /\ A =/= (/) /\ A = U. A ) ) $.
+
+  $( Define the successor of a class.  When applied to an ordinal number, the
+     successor means the same thing as "plus 1" (see ~ oa1suc ).  Definition
+     7.22 of [TakeutiZaring] p. 41, who use "+ 1" to denote this function.  Our
+     definition is a generalization to classes.  Although it is not
+     conventional to use it with proper classes, it has no effect on a proper
+     class ( ~ sucprc ), so that the successor of any ordinal class is still an
+     ordinal class ( ~ ordsuc ), simplifying certain proofs.  Some authors
+     denote the successor operation with a prime (apostrophe-like) symbol, such
+     as Definition 6 of [Suppes] p. 134 and the definition of successor in
+     [Mendelson] p. 246 (who uses the symbol "Suc" as a predicate to mean "is a
+     successor ordinal").  The definition of successor of [Enderton] p. 68
+     denotes the operation with a plus-sign superscript.  (Contributed by NM,
+     30-Aug-1993.) $)
+  df-suc $a |- suc A = ( A u. { A } ) $.
+
+  $( Equality theorem for the ordinal predicate.  (Contributed by NM,
+     17-Sep-1993.) $)
+  ordeq $p |- ( A = B -> ( Ord A <-> Ord B ) ) $=
+    ( wceq wtr cep wwe wa word treq weeq2 anbi12d df-ord 3bitr4g ) ABCZADZAEFZG
+    BDZBEFZGAHBHNOQPRABIABEJKALBLM $.
+
+  ${
+    $d x A $.
+    $( An ordinal number is an ordinal set.  (Contributed by NM,
+       5-Jun-1994.) $)
+    elong $p |- ( A e. V -> ( A e. On <-> Ord A ) ) $=
+      ( vx cv word con0 ordeq df-on elab2g ) CDZEAECAFBJAGCHI $.
+  $}
+
+  ${
+    elon.1 $e |- A e. _V $.
+    $( An ordinal number is an ordinal set.  (Contributed by NM,
+       5-Jun-1994.) $)
+    elon $p |- ( A e. On <-> Ord A ) $=
+      ( cvv wcel con0 word wb elong ax-mp ) ACDAEDAFGBACHI $.
+  $}
+
+  $( An ordinal number has the ordinal property.  (Contributed by NM,
+     5-Jun-1994.) $)
+  eloni $p |- ( A e. On -> Ord A ) $=
+    ( con0 wcel word elong ibi ) ABCADABEF $.
+
+  $( An ordinal number is an ordinal set.  (Contributed by NM, 8-Feb-2004.) $)
+  elon2 $p |- ( A e. On <-> ( Ord A /\ A e. _V ) ) $=
+    ( con0 wcel word cvv wa eloni elex jca elong biimparc impbii ) ABCZADZAECZF
+    MNOAGABHIOMNAEJKL $.
+
+  $( Equality theorem for the limit predicate.  (Contributed by NM,
+     22-Apr-1994.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+  limeq $p |- ( A = B -> ( Lim A <-> Lim B ) ) $=
+    ( wceq word c0 wne cuni w3a wlim ordeq neeq1 unieq eqeq12d 3anbi123d df-lim
+    id 3bitr4g ) ABCZADZAEFZAAGZCZHBDZBEFZBBGZCZHAIBIRSUCTUDUBUFABJABEKRABUAUER
+    PABLMNAOBOQ $.
+
+  $( Epsilon well-orders every ordinal.  Proposition 7.4 of [TakeutiZaring]
+     p. 36.  (Contributed by NM, 3-Apr-1994.) $)
+  ordwe $p |- ( Ord A -> _E We A ) $=
+    ( word wtr cep wwe df-ord simprbi ) ABACADEAFG $.
+
+  $( An ordinal class is transitive.  (Contributed by NM, 3-Apr-1994.) $)
+  ordtr $p |- ( Ord A -> Tr A ) $=
+    ( word wtr cep wwe df-ord simplbi ) ABACADEAFG $.
+
+  $( Epsilon is well-founded on an ordinal class.  (Contributed by NM,
+     22-Apr-1994.) $)
+  ordfr $p |- ( Ord A -> _E Fr A ) $=
+    ( word cep wwe wfr ordwe wefr syl ) ABACDACEAFACGH $.
+
+  $( An element of an ordinal class is a subset of it.  (Contributed by NM,
+     30-May-1994.) $)
+  ordelss $p |- ( ( Ord A /\ B e. A ) -> B C_ A ) $=
+    ( word wtr wcel wss ordtr trss imp sylan ) ACADZBAEZBAFZAGKLMABHIJ $.
+
+  $( A transitive subclass of an ordinal class is ordinal.  (Contributed by NM,
+     29-May-1994.) $)
+  trssord $p |- ( ( Tr A /\ A C_ B /\ Ord B ) -> Ord A ) $=
+    ( wtr wss word w3a cep wwe ordwe wess imp sylan2 anim2i 3impb df-ord sylibr
+    wa ) ACZABDZBEZFRAGHZQZAERSTUBSTQUARTSBGHZUABISUCUAABGJKLMNAOP $.
+
+  $( Epsilon irreflexivity of ordinals: no ordinal class is a member of
+     itself.  Theorem 2.2(i) of [BellMachover] p. 469, generalized to classes.
+     We prove this without invoking the Axiom of Regularity.  (Contributed by
+     NM, 2-Jan-1994.) $)
+  ordirr $p |- ( Ord A -> -. A e. A ) $=
+    ( word cep wfr wcel wn ordfr efrirr syl ) ABACDAAEFAGAHI $.
+
+  $( A member of an ordinal class is not equal to it.  (Contributed by NM,
+     25-May-1998.) $)
+  nordeq $p |- ( ( Ord A /\ B e. A ) -> A =/= B ) $=
+    ( word wcel wne wn wceq ordirr eleq1 notbid syl5ibcom necon2ad imp ) ACZBAD
+    ZABENOABNAADZFABGZOFAHQPOABAIJKLM $.
+
+  $( An ordinal class cannot an element of one of its members.  Variant of
+     first part of Theorem 2.2(vii) of [BellMachover] p. 469.  (Contributed by
+     NM, 3-Apr-1994.) $)
+  ordn2lp $p |- ( Ord A -> -. ( A e. B /\ B e. A ) ) $=
+    ( word wcel wa ordirr wtr wi ordtr trel syl mtod ) ACZABDBADEZAADZAFMAGNOHA
+    IAABJKL $.
+
+  ${
+    $d x B $.
+    $( A subclass (possibly proper) of an ordinal class has a minimal element.
+       Proposition 7.5 of [TakeutiZaring] p. 36.  (Contributed by NM,
+       18-Feb-2004.)  (Revised by David Abernethy, 16-Mar-2011.) $)
+    tz7.5 $p |- ( ( Ord A /\ B C_ A /\ B =/= (/) ) ->
+               E. x e. B ( B i^i x ) = (/) ) $=
+      ( word cep wwe wss c0 wne cv cin wceq wrex ordwe wefrc syl3an1 ) BDBEFCBG
+      CHICAJKHLACMBNABCOP $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.
+    $( An element of an ordinal class is ordinal.  Proposition 7.6 of
+       [TakeutiZaring] p. 36.  (Contributed by NM, 23-Apr-1994.) $)
+    ordelord $p |- ( ( Ord A /\ B e. A ) -> Ord B ) $=
+      ( vx vz vy word wcel cv wa wceq eleq1 anbi2d wtr cep wwe wel wal w3a syl
+      wi ordeq imbi12d simpll 3anrot 3anass ordtr trel3 syl5bir impl exp3acom23
+      bitr3i trel imp31 adantrl simplr ordwe sylan syl13anc ex pm2.43d alrimivv
+      wetrep dftr2 sylibr wss trss wess syl5com syld imp df-ord sylanbrc vtoclg
+      anabsi7 ) AFZBAGZBFZVOCHZAGZIZVRFZTVOVPIZVQTCBAVRBJZVTWBWAVQWCVSVPVOVRBAK
+      LVRBUAUBVTVRMZVRNOZWAVTDEPZECPZIZDCPZTZEQDQWDVTWJDEVTWHWIVTWHWJVTWHIVODHZ
+      AGZEHZAGZVSWJVOVSWHUCVOVSWHWLVSWHIZWFWGVSRZVOWLWPVSWFWGRWOVSWFWGUDVSWFWGU
+      EUKVOAMZWPWLTAUFZAWKWMVRUGSUHUIVTWGWNWFVOVSWGWNVOWGVSWNVOWQWGVSIWNTWRAWMV
+      RULSUJUMUNVOVSWHUOVOANOZWLWNVSRWJAUPZDECAVBUQURUSUTVADEVRVCVDVOVSWEVOVSVR
+      AVEZWEVOWQVSXATWRAVRVFSVOWSXAWEWTVRANVGVHVIVJVRVKVLVMVN $.
+  $}
+
+  ${
+    $d x y $.
+    $( The class of all ordinal numbers is transitive.  (Contributed by NM,
+       4-May-2009.) $)
+    tron $p |- Tr On $=
+      ( vx vy con0 wtr cv wss dftr3 wcel word vex elon ordelord sylanb ex ssrdv
+      syl6ibr mprgbir ) CDAEZCFACACGRCHZBRCSBEZRHZTIZTCHSUAUBSRIUAUBRAJKRTLMNTB
+      JKPOQ $.
+  $}
+
+  $( An element of an ordinal class is an ordinal number.  (Contributed by NM,
+     26-Oct-2003.) $)
+  ordelon $p |- ( ( Ord A /\ B e. A ) -> B e. On ) $=
+    ( word wcel wa con0 ordelord wb elong adantl mpbird ) ACZBADZEBFDZBCZABGMNO
+    HLBAIJK $.
+
+  $( An element of an ordinal number is an ordinal number.  Theorem 2.2(iii) of
+     [BellMachover] p. 469.  (Contributed by NM, 26-Oct-2003.) $)
+  onelon $p |- ( ( A e. On /\ B e. A ) -> B e. On ) $=
+    ( con0 wcel word eloni ordelon sylan ) ACDAEBADBCDAFABGH $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Proposition 7.7 of [TakeutiZaring] p. 37.  (Contributed by NM,
+       5-May-1994.) $)
+    tz7.7 $p |- ( ( Ord A /\ Tr B ) ->
+                ( B e. A <-> ( B C_ A /\ B =/= A ) ) ) $=
+      ( vx vy word wtr wa wcel wss wne wi cep c0 cv wceq imp32 wn nsyli adantll
+      imp wfr ordtr ordfr tz7.2 3exp sylc adantr cdif pssdifn0 wrex difss tz7.5
+      cin mp3an2 eldifi trss difin0ss com12 syl56 ad2antrr eleq1 biimpcd eldifn
+      syl adantl trel exp3acom23 ex adantld w3o wwe ordwe ssel2 anim12i wecmpep
+      syl2an adantlr ecase23d exp44 com34 imp31 ssrdv adantrr ad2antrl eqeltrrd
+      eqssd rexlimdvaa syl5 exp4b com23 adantrd pm2.43i syl7 exp4a imp3a impbid
+      pm2.43d ) AEZBFZGZBAHZBAIZBAJZGZWRXAXDKZWSWRAFZALUAZXEAUBZAUCXFXGXAXDABUD
+      UEUFUGWTXBXCXAWTXBXCXAKWTXBXBXCXAXDABUHZMJZWTXBXABAUIWTXBXJXAKZKZWTWRXLWS
+      WTXBWRXKWTXBWRXJXAWRXJGXICNZUMMOZCXIUJZWTXBGZXAWRXIAIXJXOABUKCAXIULUNXPXN
+      XACXIXPXMXIHZXNGGZXMBAXRXMBXPXQXNXMBIZWRXQXNXSKZKZWSXBWRXFYAXHXQXMAHZXFXM
+      AIZXTXMABUOZAXMUPXNYCXSABXMUQURUSVDUTPXPXQBXMIXNXPXQGDBXMWTXBXQDNZBHZYEXM
+      HZKWTXBYFXQYGWTXBYFXQYGWTXBYFGZXQGZGYGYEXMOZXMYEHZYIYJQZWTYFXQYLXBYFXQYLY
+      FYJXMBHZXQYJYFYMYEXMBVAVBXMABVCZRTSVEWSYIYKQZWRWSYHXQYOWSYFXQYOKZXBWSYFYP
+      WSYFGYKYMXQWSYFYKYMKWSYKYFYMBXMYEVFVGTYNRVHVIPSWRYIYGYJYKVJZWSWRALVKYEAHZ
+      YBGYQYIAVLYHYRXQYBBAYEVMYDVNDCAVOVPVQVRVSVTWAWBWCWFXQYBXPXNYDWDWEWGWHWIWJ
+      WKWLWMWNWQWOWP $.
+  $}
+
+  $( Corollary 7.8 of [TakeutiZaring] p. 37.  (Contributed by NM,
+     25-Nov-1995.) $)
+  ordelssne $p |- ( ( Ord A /\ Ord B ) ->
+              ( A e. B <-> ( A C_ B /\ A =/= B ) ) ) $=
+    ( word wcel wss wne wa wb wtr ordtr tz7.7 sylan2 ancoms ) BCZACZABDABEABFGH
+    ZONAIPAJBAKLM $.
+
+  $( Corollary 7.8 of [TakeutiZaring] p. 37.  (Contributed by NM,
+     17-Jun-1998.) $)
+  ordelpss $p |- ( ( Ord A /\ Ord B ) -> ( A e. B <-> A C. B ) ) $=
+    ( word wa wcel wss wne wpss ordelssne df-pss syl6bbr ) ACBCDABEABFABGDABHAB
+    IABJK $.
+
+  $( For ordinal classes, subclass is equivalent to membership or equality.
+     (Contributed by NM, 25-Nov-1995.)  (Proof shortened by Andrew Salmon,
+     25-Jul-2011.) $)
+  ordsseleq $p |- ( ( Ord A /\ Ord B ) ->
+                  ( A C_ B <-> ( A e. B \/ A = B ) ) ) $=
+    ( word wa wcel wceq wo wpss wss ordelpss orbi1d sspss syl6rbbr ) ACBCDZABEZ
+    ABFZGABHZPGABINOQPABJKABLM $.
+
+  $( The intersection of two ordinal classes is ordinal.  Proposition 7.9 of
+     [TakeutiZaring] p. 37.  (Contributed by NM, 9-May-1994.) $)
+  ordin $p |- ( ( Ord A /\ Ord B ) -> Ord ( A i^i B ) ) $=
+    ( word cin wtr ordtr trin syl2an wss inss2 trssord mp3an2 sylancom ) ACZBCZ
+    ABDZEZPCZNAEBEQOAFBFABGHQPBIORABJPBKLM $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The intersection of two ordinal numbers is an ordinal number.
+       (Contributed by NM, 7-Apr-1995.) $)
+    onin $p |- ( ( A e. On /\ B e. On ) -> ( A i^i B ) e. On ) $=
+      ( con0 wcel wa cin word eloni ordin syl2an cvv wb simpl inex1g elong 3syl
+      mpbird ) ACDZBCDZEZABFZCDZUAGZRAGBGUCSAHBHABIJTRUAKDUBUCLRSMABCNUAKOPQ $.
+  $}
+
+  $( A trichotomy law for ordinals.  Proposition 7.10 of [TakeutiZaring]
+     p. 38.  (Contributed by NM, 10-May-1994.)  (Proof shortened by Andrew
+     Salmon, 25-Jul-2011.) $)
+  ordtri3or $p |- ( ( Ord A /\ Ord B ) -> ( A e. B \/ A = B \/ B e. A ) ) $=
+    ( word wa wcel wceq w3o wpss wss wo ordin sylib inss1 ordsseleq mpbii sylan
+    cin wn ord df-ss ordirr syl ianor elin incom eleq1i anbi2i xchnxbir anabss1
+    bitri syl6ibr anabss4 orim12d mpd sspsstri ordelpss ancoms 3orbi123d mpbird
+    biidd wb ) ACZBCZDZABEZABFZBAEZGABHZVFBAHZGZVDABIZBAIZJZVJVDABQZAEZRZBAQZBE
+    ZRZJZVMVDVNVNEZRZVTVDVNCZWBABKZVNUAUBVOVRDZVTWAVOVRUCWAVOVNBEZDWEVNABUDWFVR
+    VOVNVQBABUEUFUGUJUHLVDVPVKVSVLVDVPVNAFZVKVDVOWGVBVCVOWGJZVDWCVBWHWDWCVBDVNA
+    IWHABMVNANOPUISABTUKVDVSVQBFZVLVDVRWIVBVCVRWIJZVCVBDVQCZVCWJBAKWKVCDVQBIWJB
+    AMVQBNOPULSBATUKUMUNABUOLVDVEVHVFVFVGVIABUPVDVFUTVCVBVGVIVABAUPUQURUS $.
+
+  $( A trichotomy law for ordinals.  (Contributed by NM, 25-Mar-1995.)  (Proof
+     shortened by Andrew Salmon, 25-Jul-2011.) $)
+  ordtri1 $p |- ( ( Ord A /\ Ord B ) -> ( A C_ B <-> -. B e. A ) ) $=
+    ( word wa wss wcel wceq wo wn ordsseleq wi imnan sylibr ordirr eleq2 notbid
+    ordn2lp syl5ibrcom jaao w3o ordtri3or df-3or sylib orcomd ord impbid bitrd
+    ) ACZBCZDZABEABFZABGZHZBAFZIZABJUJUMUOUHUKUOUIULUHUKUNDIUKUOKABQUKUNLMUIUOU
+    LBBFZIBNULUNUPABBOPRSUJUNUMUJUMUNUJUKULUNTUMUNHABUAUKULUNUBUCUDUEUFUG $.
+
+  $( A trichotomy law for ordinal numbers.  (Contributed by NM, 6-Nov-2003.) $)
+  ontri1 $p |- ( ( A e. On /\ B e. On ) -> ( A C_ B <-> -. B e. A ) ) $=
+    ( con0 wcel word wss wn wb eloni ordtri1 syl2an ) ACDAEBEABFBADGHBCDAIBIABJ
+    K $.
+
+  $( A trichotomy law for ordinals.  (Contributed by NM, 25-Nov-1995.) $)
+  ordtri2 $p |- ( ( Ord A /\ Ord B ) ->
+               ( A e. B <-> -. ( A = B \/ B e. A ) ) ) $=
+    ( word wa wceq wcel wo wn wb wss ordsseleq eqcom orbi2i orcom bitri ordtri1
+    syl6bb bitr3d ancoms con2bid ) ACZBCZDABEZBAFZGZABFZUBUAUEUFHZIUBUADZBAJZUE
+    UGUHUIUDBAEZGZUEBAKUKUDUCGUEUJUCUDBALMUDUCNOQBAPRST $.
+
+  $( A trichotomy law for ordinals.  (Contributed by NM, 18-Oct-1995.)  (Proof
+     shortened by Andrew Salmon, 25-Jul-2011.) $)
+  ordtri3 $p |- ( ( Ord A /\ Ord B ) ->
+               ( A = B <-> -. ( A e. B \/ B e. A ) ) ) $=
+    ( word wa wceq wcel wo wn ordirr eleq2 notbid syl5ib syl5ibr anim12d pm4.56
+    com12 syl6ib w3o ordtri3or sylib df-3or or32 ord impbid ) ACZBCZDZABEZABFZB
+    AFZGZHZUGUHUIHZUJHZDZULUHUGUOUHUEUMUFUNUEAAFZHUHUMAIUHUPUIABAJKLUFUNUHBBFZH
+    BIUHUJUQABBJKMNPUIUJOQUGUKUHUGUIUHGUJGZUKUHGUGUIUHUJRURABSUIUHUJUATUIUHUJUB
+    TUCUD $.
+
+  $( A trichotomy law for ordinals.  (Contributed by NM, 1-Nov-2003.)  (Proof
+     shortened by Andrew Salmon, 25-Jul-2011.) $)
+  ordtri4 $p |- ( ( Ord A /\ Ord B ) ->
+               ( A = B <-> ( A C_ B /\ -. A e. B ) ) ) $=
+    ( wceq wss wa word wcel wn eqss wb ordtri1 ancoms anbi2d syl5bb ) ABCABDZBA
+    DZEAFZBFZEZOABGHZEABISPTORQPTJBAKLMN $.
+
+  $( An ordinal class and its singleton are disjoint.  (Contributed by NM,
+     19-May-1998.) $)
+  orddisj $p |- ( Ord A -> ( A i^i { A } ) = (/) ) $=
+    ( word wcel wn csn cin c0 wceq ordirr disjsn sylibr ) ABAACDAAEFGHAIAAJK $.
+
+  ${
+    $d x y z $.
+    $( The ordinal class is well-founded.  This lemma is needed for ~ ordon in
+       order to eliminate the need for the Axiom of Regularity.  (Contributed
+       by NM, 17-May-1994.) $)
+    onfr $p |- _E Fr On $=
+      ( vx vz vy con0 cep wfr cv wss c0 wne wa cin wceq wrex dfepfr wcel eqeq1d
+      wi syl adantr wex ineq2 rspcev adantll inss1 word ssel2 eloni ordfr inss2
+      n0 vex inex1 epfrc mp3an2 sylan wb inass simpr sseldi ordelss dfss1 sylib
+      syl2anc ineq2d syl5eq rexbidva mpbid ssrexv pm2.61dane exlimdv syl5bi imp
+      mpsyl ex mpgbir ) DEFAGZDHZVQIJZKVQBGZLZIMZBVQNZRAABDOVRVSWCVSCGZVQPZCUAV
+      RWCCVQUKVRWEWCCVRWEWCVRWEKZWCVQWDLZIWEWGIMZWCVRWBWHBWDVQVTWDMWAWGIVTWDVQU
+      BQUCUDWGVQHWFWGIJZKZWBBWGNZWCVQWDUEWJWGVTLZIMZBWGNZWKWFWDEFZWIWNWFWDUFZWO
+      WFWDDPWPVQDWDUGWDUHSZWDUISWOWGWDHWIWNVQWDUJZBWDWGVQWDAULUMUNUOUPWFWNWKUQW
+      IWFWMWBBWGWFVTWGPZKZWLWAIWTWLVQWDVTLZLWAVQWDVTURWTXAVTVQWTVTWDHZXAVTMWTWP
+      VTWDPXBWFWPWSWQTWTWGWDVTWRWFWSUSUTWDVTVAVDVTWDVBVCVEVFQVGTVHWBBWGVQVIVNVJ
+      VOVKVLVMVP $.
+  $}
+
+  $( Relationship between membership and proper subset of an ordinal number.
+     (Contributed by NM, 15-Sep-1995.) $)
+  onelpss $p |- ( ( A e. On /\ B e. On ) ->
+               ( A e. B <-> ( A C_ B /\ A =/= B ) ) ) $=
+    ( con0 wcel word wss wne wa wb eloni ordelssne syl2an ) ACDAEBEABDABFABGHIB
+    CDAJBJABKL $.
+
+  $( Relationship between subset and membership of an ordinal number.
+     (Contributed by NM, 15-Sep-1995.) $)
+  onsseleq $p |- ( ( A e. On /\ B e. On ) ->
+                 ( A C_ B <-> ( A e. B \/ A = B ) ) ) $=
+    ( con0 wcel word wss wceq wo wb eloni ordsseleq syl2an ) ACDAEBEABFABDABGHI
+    BCDAJBJABKL $.
+
+  $( An element of an ordinal number is a subset of the number.  (Contributed
+     by NM, 5-Jun-1994.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+  onelss $p |- ( A e. On -> ( B e. A -> B C_ A ) ) $=
+    ( con0 wcel word wss wi eloni ordelss ex syl ) ACDAEZBADZBAFZGAHLMNABIJK $.
+
+  $( Transitive law for ordinal classes.  (Contributed by NM, 12-Dec-2004.) $)
+  ordtr1 $p |- ( Ord C -> ( ( A e. B /\ B e. C ) -> A e. C ) ) $=
+    ( word wtr wcel wa wi ordtr trel syl ) CDCEABFBCFGACFHCICABJK $.
+
+  $( Transitive law for ordinal classes.  (Contributed by NM, 12-Dec-2004.)
+     (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+  ordtr2 $p |- ( ( Ord A /\ Ord C ) -> ( ( A C_ B /\ B e. C ) -> A e. C ) ) $=
+    ( word wa wss wcel wpss wi ordelord ex ancld anc2li ordelpss ancoms sspsstr
+    wb expcom syl6bi com23 imp32 com12 syl9 imp3a adantl sylibrd ) ADZCDZEABFZB
+    CGZEZACHZACGUHUKULIUGUHUIUJULUHUJUHUJBDZEZEZUIULUHUJUNUHUJUMUHUJUMCBJKLMUOU
+    IULUHUJUMUIULIZUHUMUJUPUHUMUJUPIUHUMEUJBCHZUPUMUHUJUQQBCNOUIUQULABCPRSKTUAU
+    BUCUDUEACNUF $.
+
+  $( Transitive law for ordinal classes.  (Contributed by Mario Carneiro,
+     30-Dec-2014.) $)
+  ordtr3 $p |- ( ( Ord B /\ Ord C ) -> ( A e. B -> ( A e. C \/ C e. B ) ) ) $=
+    ( word wa wcel wo wss simplr ordelord adantlr ordtri1 syl2anc ordtr2 ancoms
+    wn wb wi ancomsd expdimp sylbird orrd ex ) BDZCDZEZABFZACFZCBFZGUFUGEZUHUIU
+    JUHPZCAHZUIUJUEADZULUKQUDUEUGIUDUGUMUEBAJKCALMUFUGULUIUFULUGUIUEUDULUGEUIRC
+    ABNOSTUAUBUC $.
+
+  $( Transitive law for ordinal numbers.  Theorem 7M(b) of [Enderton] p. 192.
+     (Contributed by NM, 11-Aug-1994.) $)
+  ontr1 $p |- ( C e. On -> ( ( A e. B /\ B e. C ) -> A e. C ) ) $=
+    ( con0 wcel word wa wi eloni ordtr1 syl ) CDECFABEBCEGACEHCIABCJK $.
+
+  $( Transitive law for ordinal numbers.  Exercise 3 of [TakeutiZaring] p. 40.
+     (Contributed by NM, 6-Nov-2003.) $)
+  ontr2 $p |- ( ( A e. On /\ C e. On ) ->
+              ( ( A C_ B /\ B e. C ) -> A e. C ) ) $=
+    ( con0 wcel word wss wa wi eloni ordtr2 syl2an ) ADEAFCFABGBCEHACEICDEAJCJA
+    BCKL $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The union of an ordinal stays the same if a subset equal to one of its
+       elements is removed.  (Contributed by NM, 10-Dec-2004.) $)
+    ordunidif $p |- ( ( Ord A /\ B e. A ) -> U. ( A \ B ) = U. A ) $=
+      ( vx vy word wcel wa cv wss cdif wrex wi syl wn eldif adantl sseq2 rspcev
+      cuni syl6 wral wceq con0 ordelon onelss eloni ordirr simplbi2 syl5 jctild
+      mpd adantr biimpri ssid jctir ex pm2.61d ralrimiva unidif ) AEZBAFZGZCHZD
+      HZIZDABJZKZCAUAVFSASUBVBVGCAVBVCAFZGZVCBFZVGVIVJBVFFZVCBIZGZVGVBVJVMLVHVB
+      VJVLVKVBBUCFZVJVLLABUDZBVCUEMVBVNVKVOVAVNVKLUTVNBBFNZVAVKVNBEVPBUFBUGMVKV
+      AVPBABOUHUIPUKUJULVEVLDBVFVDBVCQRTVHVJNZVGLVBVHVQVCVFFZVCVCIZGZVGVHVQVTVH
+      VQGZVRVSVRWAVCABOUMVCUNUOUPVEVSDVCVFVDVCVCQRTPUQURCDABUSM $.
+
+    $( If ` B ` is smaller than ` A ` , then it equals the intersection of the
+       difference.  Exercise 11 in [TakeutiZaring] p. 44.  (Contributed by
+       Andrew Salmon, 14-Nov-2011.) $)
+    ordintdif $p |- ( ( Ord A /\ Ord B /\ ( A \ B ) =/= (/) )
+      -> B = |^| ( A \ B ) ) $=
+      ( vx cdif c0 wne word wss wn cint wceq ssdif0 necon3bbii w3a cv wcel crab
+      dfdif2 wa ordtri1 inteqi con2bid wb ordelord ancoms sylan bicomd rabbidva
+      an32s inteqd intmin sylan9eq ex sylbird 3impia syl5req syl3an3br ) ABDZEF
+      AGZBGZABHZIZBURJZKVAUREABLMUSUTVBNVCCOZBPIZCAQZJZBURVFCABRUAUSUTVBVGBKZUS
+      UTSZVBBAPZVHVIVAVJABTUBVIVJVHVIVJVGBVDHZCAQZJBVIVFVLVIVEVKCAVIVDAPZSVKVEU
+      SVMUTVKVEUCZUSVMSVDGZUTVNAVDUDUTVOVNBVDTUEUFUIUGUHUJCBAUKULUMUNUOUPUQ $.
+  $}
+
+  ${
+    $d x ps $.  $d x A $.
+    onintss.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( If a property is true for an ordinal number, then the minimum ordinal
+       number for which it is true is smaller or equal.  Theorem Schema 61 of
+       [Suppes] p. 228.  (Contributed by NM, 3-Oct-2003.) $)
+    onintss $p |- ( A e. On -> ( ps -> |^| { x e. On | ph } C_ A ) ) $=
+      ( con0 wcel crab cint wss intminss ex ) DFGBACFHIDJABCDFEKL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( A way to show that an ordinal number equals the minimum of a collection
+       of ordinal numbers: it must be in the collection, and it must not be
+       larger than any member of the collection.  (Contributed by NM,
+       14-Nov-2003.) $)
+    oneqmini $p |- ( B C_ On -> ( ( A e. B /\ A. x e. A -. x e. B )
+                    -> A = |^| B ) ) $=
+      ( con0 wss wcel cv wn wral wa cint wceq ssint wi ssel anim12d ontri1 syl6
+      wb expdimp pm5.74d con2b syl6bb syl5bb biimprd expimpd intss1 a1i adantrd
+      ralbidv2 jcad eqss syl6ibr ) CDEZBCFZAGZCFZHZABIZJZBCKZEZVABEZJBVALUNUTVB
+      VCUNUOUSVBUNUOJZVBUSVBBUPEZACIVDUSABCMVDVEURACBVDUQVENUQUPBFZHZNVFURNVDUQ
+      VEVGUNUOUQVEVGSZUNUOUQJBDFZUPDFZJVHUNUOVIUQVJCDBOCDUPOPBUPQRTUAUQVFUBUCUJ
+      UDUEUFUNUOVCUSUOVCNUNBCUGUHUIUKBVAULUM $.
+  $}
+
+  $( The empty set is an ordinal class.  (Contributed by NM, 11-May-1994.) $)
+  ord0 $p |- Ord (/) $=
+    ( c0 word wtr cep wwe tr0 we0 df-ord mpbir2an ) ABACADEFDGAHI $.
+
+  $( The empty set is an ordinal number.  Corollary 7N(b) of [Enderton]
+     p. 193.  (Contributed by NM, 17-Sep-1993.) $)
+  0elon $p |- (/) e. On $=
+    ( c0 con0 wcel word ord0 0ex elon mpbir ) ABCADEAFGH $.
+
+  $( A non-empty ordinal contains the empty set.  (Contributed by NM,
+     25-Nov-1995.) $)
+  ord0eln0 $p |- ( Ord A -> ( (/) e. A <-> A =/= (/) ) ) $=
+    ( word c0 wcel wne ne0i wceq wn df-ne wo ord0 wa noel ordtri2 con2bid mpan2
+    mpbiri ord syl5bi impbid2 ) ABZCADZACEZACFUCACGZHUAUBACIUAUDUBUACBZUDUBJZKU
+    AUELZUFACDZHAMUGUHUFACNOQPRST $.
+
+  $( An ordinal number contains zero iff it is nonzero.  (Contributed by NM,
+     6-Dec-2004.) $)
+  on0eln0 $p |- ( A e. On -> ( (/) e. A <-> A =/= (/) ) ) $=
+    ( con0 wcel word c0 wne wb eloni ord0eln0 syl ) ABCADEACAEFGAHAIJ $.
+
+  $( An alternate definition of a limit ordinal.  (Contributed by NM,
+     4-Nov-2004.) $)
+  dflim2 $p |- ( Lim A <-> ( Ord A /\ (/) e. A /\ A = U. A ) ) $=
+    ( wlim word c0 wne cuni wceq w3a wcel df-lim ord0eln0 anbi1d pm5.32i 3anass
+    wa 3bitr4i bitr4i ) ABACZADEZAAFGZHZRDAIZTHZAJRUBTOZORSTOZOUCUARUDUERUBSTAK
+    LMRUBTNRSTNPQ $.
+
+  $( The intersection of the class of ordinal numbers is the empty set.
+     (Contributed by NM, 20-Oct-2003.) $)
+  inton $p |- |^| On = (/) $=
+    ( c0 con0 wcel cint wceq 0elon int0el ax-mp ) ABCBDAEFBGH $.
+
+  $( The empty set is not a limit ordinal.  (Contributed by NM, 24-Mar-1995.)
+     (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+  nlim0 $p |- -. Lim (/) $=
+    ( c0 wlim word wcel cuni wceq w3a noel simp2 mto dflim2 mtbir ) ABACZAADZAA
+    EFZGZPNAHMNOIJAKL $.
+
+  $( A limit ordinal is ordinal.  (Contributed by NM, 4-May-1995.) $)
+  limord $p |- ( Lim A -> Ord A ) $=
+    ( wlim word c0 wne cuni wceq df-lim simp1bi ) ABACADEAAFGAHI $.
+
+  $( A limit ordinal is its own supremum (union).  (Contributed by NM,
+     4-May-1995.) $)
+  limuni $p |- ( Lim A -> A = U. A ) $=
+    ( wlim word c0 wne cuni wceq df-lim simp3bi ) ABACADEAAFGAHI $.
+
+  $( The union of a limit ordinal is a limit ordinal.  (Contributed by NM,
+     19-Sep-2006.) $)
+  limuni2 $p |- ( Lim A -> Lim U. A ) $=
+    ( wlim cuni wceq wb limuni limeq syl ibi ) ABZACZBZJAKDJLEAFAKGHI $.
+
+  $( A limit ordinal contains the empty set.  (Contributed by NM,
+     15-May-1994.) $)
+  0ellim $p |- ( Lim A -> (/) e. A ) $=
+    ( wlim c0 wcel wne wceq nlim0 limeq mtbiri necon2ai word wb limord ord0eln0
+    syl mpbird ) ABZCADZACEZQACACFQCBGACHIJQAKRSLAMANOP $.
+
+  $( A limit ordinal class that is also a set is an ordinal number.
+     (Contributed by NM, 26-Apr-2004.) $)
+  limelon $p |- ( ( A e. B /\ Lim A ) -> A e. On ) $=
+    ( wcel wlim con0 word limord elong syl5ibr imp ) ABCZADZAECZLMKAFAGABHIJ $.
+
+  $( The class of all ordinal numbers in not empty.  (Contributed by NM,
+     17-Sep-1995.) $)
+  onn0 $p |- On =/= (/) $=
+    ( c0 con0 wcel wne 0elon ne0i ax-mp ) ABCBADEBAFG $.
+
+  $( Equality of successors.  (Contributed by NM, 30-Aug-1993.)  (Proof
+     shortened by Andrew Salmon, 25-Jul-2011.) $)
+  suceq $p |- ( A = B -> suc A = suc B ) $=
+    ( wceq csn cun csuc id sneq uneq12d df-suc 3eqtr4g ) ABCZAADZEBBDZEAFBFLABM
+    NLGABHIAJBJK $.
+
+  $( Membership in a successor.  This one-way implication does not require that
+     either ` A ` or ` B ` be sets.  (Contributed by NM, 6-Jun-1994.) $)
+  elsuci $p |- ( A e. suc B -> ( A e. B \/ A = B ) ) $=
+    ( csuc wcel csn wo wceq cun df-suc eleq2i elun bitri elsni orim2i sylbi ) A
+    BCZDZABDZABEZDZFZRABGZFQABSHZDUAPUCABIJABSKLTUBRABMNO $.
+
+  $( Membership in a successor.  Exercise 5 of [TakeutiZaring] p. 17.
+     (Contributed by NM, 15-Sep-1995.) $)
+  elsucg $p |- ( A e. V -> ( A e. suc B <-> ( A e. B \/ A = B ) ) ) $=
+    ( csuc wcel csn wo wceq cun df-suc eleq2i elun bitri elsncg orbi2d syl5bb )
+    ABDZEZABEZABFZEZGZACEZSABHZGRABTIZEUBQUEABJKABTLMUCUAUDSABCNOP $.
+
+  $( Variant of membership in a successor, requiring that ` B ` rather than
+     ` A ` be a set.  (Contributed by NM, 28-Oct-2003.) $)
+  elsuc2g $p |- ( B e. V -> ( A e. suc B <-> ( A e. B \/ A = B ) ) ) $=
+    ( csuc wcel csn cun wceq wo df-suc eleq2i elun elsnc2g orbi2d syl5bb ) ABDZ
+    EABBFZGZEZBCEZABEZABHZIZPRABJKSUAAQEZITUCABQLTUDUBUAABCMNOO $.
+
+  ${
+    elsuc.1 $e |- A e. _V $.
+    $( Membership in a successor.  Exercise 5 of [TakeutiZaring] p. 17.
+       (Contributed by NM, 15-Sep-2003.) $)
+    elsuc $p |- ( A e. suc B <-> ( A e. B \/ A = B ) ) $=
+      ( cvv wcel csuc wceq wo wb elsucg ax-mp ) ADEABFEABEABGHICABDJK $.
+
+    $( Membership in a successor.  (Contributed by NM, 15-Sep-2003.) $)
+    elsuc2 $p |- ( B e. suc A <-> ( B e. A \/ B = A ) ) $=
+      ( cvv wcel csuc wceq wo wb elsuc2g ax-mp ) ADEBAFEBAEBAGHICBADJK $.
+  $}
+
+  ${
+    $d y A $.  $d x y $.
+    nfsuc.1 $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for successor.  (Contributed by NM,
+       15-Sep-2003.) $)
+    nfsuc $p |- F/_ x suc A $=
+      ( csuc csn cun df-suc nfsn nfun nfcxfr ) ABDBBEZFBGABKCABCHIJ $.
+  $}
+
+  $( Membership in a successor.  (Contributed by NM, 20-Jun-1998.) $)
+  elelsuc $p |- ( A e. B -> A e. suc B ) $=
+    ( wcel csuc wceq wo orc elsucg mpbird ) ABCZABDCJABEZFJKGABBHI $.
+
+  ${
+    $d x y A $.  $d x B $.
+    $( Membership of a successor in another class.  (Contributed by NM,
+       29-Jun-2004.) $)
+    sucel $p |- ( suc A e. B <->
+                E. x e. B A. y ( y e. x <-> ( y e. A \/ y = A ) ) ) $=
+      ( csuc wcel cv wceq wrex wo wb wal risset dfcleq elsuc bibi2i albii bitri
+      vex rexbii ) CEZDFAGZUAHZADIBGZUBFZUDCFUDCHJZKZBLZADIAUADMUCUHADUCUEUDUAF
+      ZKZBLUHBUBUANUJUGBUIUFUEUDCBSOPQRTR $.
+  $}
+
+  $( The successor of the empty set.  (Contributed by NM, 1-Feb-2005.) $)
+  suc0 $p |- suc (/) = { (/) } $=
+    ( c0 csuc csn cun df-suc uncom un0 3eqtri ) ABAACZDIADIAEAIFIGH $.
+
+  $( A proper class is its own successor.  (Contributed by NM, 3-Apr-1995.) $)
+  sucprc $p |- ( -. A e. _V -> suc A = A ) $=
+    ( cvv wcel wn csuc cun csn df-suc wceq snprc uneq2 sylbi syl5eq un0 syl6eq
+    c0 ) ABCDZAEZAPFZAQRAAGZFZSAHQTPIUASIAJTPAKLMANO $.
+
+  ${
+    unisuc.1 $e |- A e. _V $.
+    $( A transitive class is equal to the union of its successor.  Combines
+       Theorem 4E of [Enderton] p. 72 and Exercise 6 of [Enderton] p. 73.
+       (Contributed by NM, 30-Aug-1993.) $)
+    unisuc $p |- ( Tr A <-> U. suc A = A ) $=
+      ( cuni wss cun wceq wtr csuc ssequn1 df-tr csn df-suc unieqi uniun uneq2i
+      unisn 3eqtri eqeq1i 3bitr4i ) ACZADTAEZAFAGAHZCZAFTAIAJUCUAAUCAAKZEZCTUDC
+      ZEUAUBUEALMAUDNUFATABPOQRS $.
+  $}
+
+  $( A class is included in its own successor.  Part of Proposition 7.23 of
+     [TakeutiZaring] p. 41 (generalized to arbitrary classes).  (Contributed by
+     NM, 31-May-1994.) $)
+  sssucid $p |- A C_ suc A $=
+    ( csn cun csuc ssun1 df-suc sseqtr4i ) AAABZCADAHEAFG $.
+
+  $( Part of Proposition 7.23 of [TakeutiZaring] p. 41 (generalized).
+     (Contributed by NM, 25-Mar-1995.)  (Proof shortened by Scott Fenton,
+     20-Feb-2012.) $)
+  sucidg $p |- ( A e. V -> A e. suc A ) $=
+    ( wcel csuc wceq wo eqid olci elsucg mpbiri ) ABCAADCAACZAAEZFLKAGHAABIJ $.
+
+  ${
+    sucid.1 $e |- A e. _V $.
+    $( A set belongs to its successor.  (Contributed by NM, 22-Jun-1994.)
+       (Proof shortened by Alan Sare, 18-Feb-2012.)  (Proof shortened by Scott
+       Fenton, 20-Feb-2012.) $)
+    sucid $p |- A e. suc A $=
+      ( cvv wcel csuc sucidg ax-mp ) ACDAAEDBACFG $.
+  $}
+
+  $( No successor is empty.  (Contributed by NM, 3-Apr-1995.) $)
+  nsuceq0 $p |- suc A =/= (/) $=
+    ( csuc c0 wcel wceq wn noel sucidg eleq2 syl5ibcom mtoi sucprc eqeq1d eleq1
+    cvv 0ex mpbiri syl6bi con3d pm2.43i pm2.61i neir ) ABZCAODZUCCEZFZUDUEACDZA
+    GUDAUCDUEUGAOHUCCAIJKUDFZUFUHUEUDUHUEACEZUDUHUCACALMUIUDCODPACONQRSTUAUB $.
+
+  ${
+    eqelsuc.1 $e |- A e. _V $.
+    $( A set belongs to the successor of an equal set.  (Contributed by NM,
+       18-Aug-1994.) $)
+    eqelsuc $p |- ( A = B -> A e. suc B ) $=
+      ( wceq csuc sucid suceq syl5eleq ) ABDAAEBEACFABGH $.
+  $}
+
+  ${
+    $d A x y $.  $d B y $.  $d C x y $.
+    iunsuc.1 $e |- A e. _V $.
+    iunsuc.2 $e |- ( x = A -> B = C ) $.
+    $( Inductive definition for the indexed union at a successor.  (Contributed
+       by Mario Carneiro, 4-Feb-2013.)  (Proof shortened by Mario Carneiro,
+       18-Nov-2016.) $)
+    iunsuc $p |- U_ x e. suc A B = ( U_ x e. A B u. C ) $=
+      ( csuc ciun csn cun wceq df-suc iuneq1 ax-mp iunxun iunxsn uneq2i 3eqtri
+      ) ABGZCHZABBIZJZCHZABCHZAUACHZJUDDJSUBKTUCKBLASUBCMNABUACOUEDUDABCDEFPQR
+      $.
+  $}
+
+  ${
+    $d z y A $.
+    $( The successor of a transtive class is transitive.  (Contributed by Alan
+       Sare, 11-Apr-2009.) $)
+    suctrALT $p |- ( Tr A -> Tr suc A ) $=
+      ( vz vy wtr cv wcel csuc wa wi wal wceq simpr vex elsuc sylib simpl eleq2
+      wo syl6 mpdi syl5ibcom elelsuc trel exp3a adantrd syl8 jao alrimivv dftr2
+      sylibr ) ADZBEZCEZFZUMAGZFZHZULUOFZIZCJBJUODUKUSBCUKUQUMAFZUMAKZRZURUQUPV
+      BUNUPLUMACMNOUKUQVAURIZVBURIZUQVAULAFZURUQUNVAVEUNUPPUMAULQUAULAUBZSUKUQU
+      TURIVCVDIUKUQUTVEURUKUNUTVEIUPUKUNUTVEAULUMUCUDUEVFUFUTURVAUGSTTUHBCUOUIU
+      J $.
+  $}
+
+  ${
+    $d z A $.  $d y A $.  $d z y $.
+    $( The sucessor of a transitive class is transitive.  The proof of
+       ~ http://www.virtualdeduction.com/suctrvd.html is a Virtual Deduction
+       proof verified by automatically transforming it into the Metamath proof
+       of ~ suctr using completeusersproof, which is verified by the Metamath
+       program.  The proof of ~ http://www.virtualdeduction.com/suctrro.html is
+       a form of the completed proof which preserves the Virtual Deduction
+       proof's step numbers and their ordering.  (Contributed by Alan Sare,
+       11-Apr-2009.)  See ~ suctrALT for the original proof before this
+       revision.  (Revised by Alan Sare, 12-Jun-2018.)
+       (Proof modification is discouraged.) $)
+    suctr $p |- ( Tr A -> Tr suc A ) $=
+      ( vz vy wtr cv wcel csuc wa wi wal wceq w3a sssucid id simpld trel sseldi
+      adantl ex syl 3impib syl3an 3expia adantr eleqtrd wo simprd elsuci mpjaod
+      idi alrimivv dftr2 biimpri ) ADZBEZCEZFZUPAGZFZHZUOURFZIZCJBJZURDZUNVBBCU
+      NUTVAUNUTHUPAFZVAUPAKZUNUTVEVAUNUTVELAURUOAMZUNUNUTUQVEVEUOAFZUNNUTUQUSUT
+      NZOZVENUNUQVELVHIUNUQVEVHAUOUPPUAUJUBQUCUTVFVAIUNUTVFVAUTVFHZAURUOVGVKUOU
+      PAUTUQVFVJUDVFVFUTVFNRUEQSRUTVEVFUFZUNUTUSVLUTUQUSVIUGUPAUHTRUISUKVDVCBCU
+      RULUMT $.
+  $}
+
+  $( A set whose successor belongs to a transitive class also belongs.
+     (Contributed by NM, 5-Sep-2003.)  (Proof shortened by Andrew Salmon,
+     12-Aug-2011.) $)
+  trsuc $p |- ( ( Tr A /\ suc B e. A ) -> B e. A ) $=
+    ( wtr csuc wcel cvv wss sssucid ssexg mpan sucidg syl ancri trel syl5 imp
+    wa ) ACZBDZAEZBAEZTBSEZTQRUATUBTBFEZUBBSGTUCBHBSAIJBFKLMABSNOP $.
+
+  $( A member of the successor of a transitive class is a subclass of it.
+     (Contributed by NM, 4-Oct-2003.) $)
+  trsucss $p |- ( Tr A -> ( B e. suc A -> B C_ A ) ) $=
+    ( csuc wcel wceq wo wtr wss elsuci trss wi eqimss a1i jaod syl5 ) BACDBADZB
+    AEZFAGZBAHZBAIRPSQABJQSKRBALMNO $.
+
+  $( A subset of an ordinal belongs to its successor.  (Contributed by NM,
+     28-Nov-2003.) $)
+  ordsssuc $p |- ( ( A e. On /\ Ord B ) -> ( A C_ B <-> A e. suc B ) ) $=
+    ( con0 wcel word wa wss wceq wo csuc wb eloni ordsseleq sylan elsucg adantr
+    bitr4d ) ACDZBEZFABGZABDABHIZABJDZRAESTUAKALABMNRUBUAKSABCOPQ $.
+
+  $( A subset of an ordinal number belongs to its successor.  (Contributed by
+     NM, 15-Sep-1995.) $)
+  onsssuc $p |- ( ( A e. On /\ B e. On ) -> ( A C_ B <-> A e. suc B ) ) $=
+    ( con0 wcel word wss csuc wb eloni ordsssuc sylan2 ) BCDACDBEABFABGDHBIABJK
+    $.
+
+  $( An ordinal subset of an ordinal number belongs to its successor.
+     (Contributed by NM, 1-Feb-2005.)  (Proof shortened by Andrew Salmon,
+     12-Aug-2011.) $)
+  ordsssuc2 $p |- ( ( Ord A /\ B e. On ) -> ( A C_ B <-> A e. suc B ) ) $=
+    ( cvv wcel word con0 wa wss csuc wb wi elong biimprd anim1d onsssuc syl6 wn
+    annim ssexg ex elex a1d pm5.21ni sylbi expcom adantld pm2.61i ) ACDZAEZBFDZ
+    GZABHZABIZDZJZKUHUKAFDZUJGUOUHUIUPUJUHUPUIACLMNABOPUHQZUJUOUIUJUQUOUJUQGUJU
+    HKZQUOUJUHRULURUNULUJUHABFSTUNUHUJAUMUAUBUCUDUEUFUG $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( When its successor is subtracted from a class of ordinal numbers, an
+       ordinal number is less than the minimum of the resulting subclass.
+       (Contributed by NM, 1-Dec-2003.) $)
+    onmindif $p |- ( ( A C_ On /\ B e. On ) -> B e. |^| ( A \ suc B ) ) $=
+      ( vx con0 wss wcel wa csuc cdif cint cv wral wn eldif wi wb ssel2 onsssuc
+      ontri1 bitr3d con1bid sylan biimpd exp31 com23 imp4b syl5bi elintg adantl
+      ralrimiv mpbird ) ADEZBDFZGZBABHZIZJFZBCKZFZCUPLZUNUSCUPURUPFURAFZURUOFZM
+      ZGUNUSURAUONULUMVAVCUSULVAUMVCUSOZULVAUMVDULVAGZUMGVCUSVEURDFZUMVCUSPADUR
+      QVFUMGZUSVBVGURBEUSMVBURBSURBRTUAUBUCUDUEUFUGUJUMUQUTPULCBUPDUHUIUK $.
+  $}
+
+  $( There is no set between an ordinal class and its successor.  Generalized
+     Proposition 7.25 of [TakeutiZaring] p. 41.  (Contributed by NM,
+     21-Jun-1998.) $)
+  ordnbtwn $p |- ( Ord A -> -. ( A e. B /\ B e. suc A ) ) $=
+    ( word wcel wa wo csuc wn ordn2lp ordirr ioran sylanbrc elsuci anim2i sylib
+    wceq andi eleq2 biimpac orim2i syl nsyl ) ACZABDZBADZEZAADZFZUDBAGDZEZUCUFH
+    UGHUHHABIAJUFUGKLUJUFUDBAPZEZFZUHUJUDUEUKFZEUMUIUNUDBAMNUDUEUKQOULUGUFUKUDU
+    GBAARSTUAUB $.
+
+  $( There is no set between an ordinal number and its successor.  Proposition
+     7.25 of [TakeutiZaring] p. 41.  (Contributed by NM, 9-Jun-1994.) $)
+  onnbtwn $p |- ( A e. On -> -. ( A e. B /\ B e. suc A ) ) $=
+    ( con0 wcel word csuc wa wn eloni ordnbtwn syl ) ACDAEABDBAFDGHAIABJK $.
+
+  $( A set whose successor is a subset of another class is a member of that
+     class.  (Contributed by NM, 16-Sep-1995.) $)
+  sucssel $p |- ( A e. V -> ( suc A C_ B -> A e. B ) ) $=
+    ( wcel csuc wss sucidg ssel syl5com ) ACDAAEZDJBFABDACGJBAHI $.
+
+  $( Ordinal derived from its successor.  (Contributed by NM, 20-May-1998.) $)
+  orddif $p |- ( Ord A -> A = ( suc A \ { A } ) ) $=
+    ( word csn cin wceq csuc cdif orddisj disj3 cun df-suc difeq1i difun2 eqtri
+    c0 eqeq2i bitr4i sylib ) ABAACZDOEZAAFZSGZEZAHTAASGZEUCASIUBUDAUBASJZSGUDUA
+    UESAKLASMNPQR $.
+
+  $( An ordinal class includes its union.  (Contributed by NM, 13-Sep-2003.) $)
+  orduniss $p |- ( Ord A -> U. A C_ A ) $=
+    ( word wtr cuni wss ordtr df-tr sylib ) ABACADAEAFAGH $.
+
+  $( A trichotomy law for ordinal classes.  (Contributed by NM, 13-Sep-2003.)
+     (Proof shortened by Andrew Salmon, 12-Aug-2011.) $)
+  ordtri2or $p |- ( ( Ord A /\ Ord B ) -> ( A e. B \/ B C_ A ) ) $=
+    ( word wa wcel wss wn wb ordtri1 ancoms biimprd orrd ) ACZBCZDZABEZBAFZOQPG
+    ZNMQRHBAIJKL $.
+
+  $( A trichotomy law for ordinal classes.  (Contributed by NM, 2-Nov-2003.) $)
+  ordtri2or2 $p |- ( ( Ord A /\ Ord B ) -> ( A C_ B \/ B C_ A ) ) $=
+    ( word wa wcel wss wo ordtri2or wi ordelss ex orim1d adantl mpd ) ACZBCZDAB
+    EZBAFZGZABFZRGZABHPSUAIOPQTRPQTBAJKLMN $.
+
+  $( A consequence of total ordering for ordinal classes.  Similar to
+     ~ ordtri2or2 .  (Contributed by David Moews, 1-May-2017.) $)
+  ordtri2or3 $p |- ( ( Ord A /\ Ord B ) ->
+                     ( A = ( A i^i B ) \/ B = ( A i^i B ) ) ) $=
+    ( word wa wss wo cin wceq ordtri2or2 dfss dfss5 orbi12i sylib ) ACBCDABEZBA
+    EZFAABGZHZBPHZFABINQORABJBAKLM $.
+
+  $( The intersection of two ordinal classes is an element of a third if and
+     only if either one of them is.  (Contributed by David Moews,
+     1-May-2017.) $)
+  ordelinel $p |- ( ( Ord A /\ Ord B /\ Ord C ) ->
+                    ( ( A i^i B ) e. C <-> ( A e. C \/ B e. C ) ) ) $=
+    ( word w3a cin wcel wo wceq wi ordtri2or3 3adant3 eleq1 orc syl6bir syl wss
+    wa ordtr2 mpani olc jaoi inss1 ordin anim1i 3impa inss2 jaod impbid ) ADZBD
+    ZCDZEZABFZCGZACGZBCGZHZUMAUNIZBUNIZHZUOURJZUJUKVAULABKLUSVBUTUSUOUPURAUNCMU
+    PUQNOUTUOUQURBUNCMUQUPUAOUBPUMUPUOUQUMUNAQZUPUOABUCUMUNDZULRZVCUPRUOJUJUKUL
+    VEUJUKRVDULABUDUEUFZUNACSPTUMUNBQZUQUOABUGUMVEVGUQRUOJVFUNBCSPTUHUI $.
+
+  $( Property of a subclass of the maximum (i.e. union) of two ordinals.
+     (Contributed by NM, 28-Nov-2003.) $)
+  ordssun $p |- ( ( Ord B /\ Ord C ) ->
+               ( A C_ ( B u. C ) <-> ( A C_ B \/ A C_ C ) ) ) $=
+    ( word wa cun wss wo wi ordtri2or2 wceq wb ssequn1 sseq2 olc syl6bi ssequn2
+    sylbi orc jaoi syl ssun impbid1 ) BDCDEZABCFZGZABGZACGZHZUDBCGZCBGZHUFUIIZB
+    CJUJULUKUJUFUHUIUJUECKUFUHLBCMUECANRUHUGOPUKUFUGUIUKUEBKUFUGLCBQUEBANRUGUHS
+    PTUAABCUBUC $.
+
+  $( The maximum (i.e. union) of two ordinals is either one or the other.
+     Similar to Exercise 14 of [TakeutiZaring] p. 40.  (Contributed by NM,
+     28-Nov-2003.) $)
+  ordequn $p |- ( ( Ord B /\ Ord C ) ->
+               ( A = ( B u. C ) -> ( A = B \/ A = C ) ) ) $=
+    ( word wa wss wo cun wceq wi ordtri2or2 wb ssequn1 eqeq2 olc syl6bi ssequn2
+    sylbi orc jaoi syl ) BDCDEBCFZCBFZGABCHZIZABIZACIZGZJZBCKUBUIUCUBUEUGUHUBUD
+    CIUEUGLBCMUDCANRUGUFOPUCUEUFUHUCUDBIUEUFLCBQUDBANRUFUGSPTUA $.
+
+  $( The maximum (i.e. union) of two ordinals is ordinal.  Exercise 12 of
+     [TakeutiZaring] p. 40.  (Contributed by NM, 28-Nov-2003.) $)
+  ordun $p |- ( ( Ord A /\ Ord B ) -> Ord ( A u. B ) ) $=
+    ( word wa cun wceq wo eqid ordequn mpi ordeq biimprcd jaao mpd ) ACZBCZDZAB
+    EZAFZRBFZGZRCZQRRFUARHRABIJOSUBPTSUBORAKLTUBPRBKLMN $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( A subclass relationship for union and successor of ordinal classes.
+       (Contributed by NM, 28-Nov-2003.) $)
+    ordunisssuc $p |- ( ( A C_ On /\ Ord B ) ->
+                      ( U. A C_ B <-> A C_ suc B ) ) $=
+      ( vx con0 word wa cv wral csuc wcel cuni wb ssel2 ordsssuc sylan ralbidva
+      wss an32s unissb dfss3 3bitr4g ) ADQZBEZFZCGZBQZCAHUEBIZJZCAHAKBQAUGQUDUF
+      UHCAUBUEAJZUCUFUHLZUBUIFUEDJUCUJADUEMUEBNORPCABSCAUGTUA $.
+  $}
+
+  $( The successor operation behaves like a one-to-one function.  Compare
+     Exercise 16 of [Enderton] p. 194.  (Contributed by NM, 3-Sep-2003.) $)
+  suc11 $p |- ( ( A e. On /\ B e. On ) -> ( suc A = suc B <-> A = B ) ) $=
+    ( con0 wcel wa csuc wceq wn wo wi word eloni ordn2lp wss sucssel elsuci ord
+    syl5 com12 syl9 ianor sylib syl adantr eqimss eqimss2 eqcom syl6ib jaao mpd
+    suceq impbid1 ) ACDZBCDZEZAFZBFZGZABGZUOABDZHZBADZHZIZURUSJZUMVDUNUMAKZVDAL
+    VFUTVBEHVDABMUTVBUAUBUCUDUMVAVEUNVCUMURAUQDZVAUSURUPUQNUMVGUPUQUEAUQCORVGVA
+    USVGUTUSABPQSTUNURBUPDZVCUSURUQUPNUNVHUQUPUFBUPCORVCVHBAGZUSVHVCVIVHVBVIBAP
+    QSBAUGUHTUIUJABUKUL $.
+
+  ${
+    on.1 $e |- A e. On $.
+    $( An ordinal number is an ordinal class.  (Contributed by NM,
+       11-Jun-1994.) $)
+    onordi $p |- Ord A $=
+      ( con0 wcel word eloni ax-mp ) ACDAEBAFG $.
+
+    $( An ordinal number is a transitive class.  (Contributed by NM,
+       11-Jun-1994.) $)
+    ontrci $p |- Tr A $=
+      ( word wtr onordi ordtr ax-mp ) ACADABEAFG $.
+
+    $( An ordinal number is not a member of itself.  Theorem 7M(c) of
+       [Enderton] p. 192.  (Contributed by NM, 11-Jun-1994.) $)
+    onirri $p |- -. A e. A $=
+      ( word wcel wn onordi ordirr ax-mp ) ACAADEABFAGH $.
+
+    $( A member of an ordinal number is an ordinal number.  Theorem 7M(a) of
+       [Enderton] p. 192.  (Contributed by NM, 11-Jun-1994.) $)
+    oneli $p |- ( B e. A -> B e. On ) $=
+      ( con0 wcel onelon mpan ) ADEBAEBDECABFG $.
+
+    $( A member of an ordinal number is a subset of it.  (Contributed by NM,
+       11-Aug-1994.) $)
+    onelssi $p |- ( B e. A -> B C_ A ) $=
+      ( con0 wcel wss wi onelss ax-mp ) ADEBAEBAFGCABHI $.
+
+    $( An ordering law for ordinal numbers.  (Contributed by NM,
+       13-Jun-1994.) $)
+    onssneli $p |- ( A C_ B -> -. B e. A ) $=
+      ( wcel wss con0 word wn oneli eloni ordirr 3syl ssel com12 mtod con2i ) B
+      ADZABEZQRBBDZQBFDBGSHABCIBJBKLRQSABBMNOP $.
+
+    $( An ordering law for ordinal numbers.  (Contributed by NM,
+       13-Jun-1994.) $)
+    onssnel2i $p |- ( B C_ A -> -. A e. B ) $=
+      ( wss wcel onirri ssel mtoi ) BADABEAAEACFBAAGH $.
+
+    $( An element of an ordinal number equals the intersection with it.
+       (Contributed by NM, 11-Jun-1994.) $)
+    onelini $p |- ( B e. A -> B = ( B i^i A ) ) $=
+      ( wcel wss cin wceq onelssi dfss sylib ) BADBAEBBAFGABCHBAIJ $.
+
+    $( An ordinal number equals its union with any element.  (Contributed by
+       NM, 13-Jun-1994.) $)
+    oneluni $p |- ( B e. A -> ( A u. B ) = A ) $=
+      ( wcel wss cun wceq onelssi ssequn2 sylib ) BADBAEABFAGABCHBAIJ $.
+
+    $( An ordinal number is equal to the union of its successor.  (Contributed
+       by NM, 12-Jun-1994.) $)
+    onunisuci $p |- U. suc A = A $=
+      ( wtr csuc cuni wceq ontrci con0 elexi unisuc mpbi ) ACADEAFABGAAHBIJK $.
+
+    ${
+      on.2 $e |- B e. On $.
+      $( Subset is equivalent to membership or equality for ordinal numbers.
+         (Contributed by NM, 15-Sep-1995.) $)
+      onsseli $p |- ( A C_ B <-> ( A e. B \/ A = B ) ) $=
+        ( con0 wcel wss wceq wo wb onsseleq mp2an ) AEFBEFABGABFABHIJCDABKL $.
+
+      $( The union of two ordinal numbers is an ordinal number.  (Contributed
+         by NM, 13-Jun-1994.) $)
+      onun2i $p |- ( A u. B ) e. On $=
+        ( wcel wss wo con0 word onordi ordtri2or mp2an oneluni syl6eqel ssequn1
+        cun wceq eleq1 mpbiri sylbi jaoi ax-mp ) BAEZABFZGZABPZHEZBIAIUEBDJACJB
+        AKLUCUGUDUCUFAHABCMCNUDUFBQZUGABOUHUGBHEDUFBHRSTUAUB $.
+    $}
+  $}
+
+  $( An ordinal equal to its own union is either zero or a limit ordinal.
+     (Contributed by NM, 1-Oct-2003.) $)
+  unizlim $p |- ( Ord A -> ( A = U. A <-> ( A = (/) \/ Lim A ) ) ) $=
+    ( word cuni wceq c0 wlim wo wa wn wne df-ne w3a df-lim biimpri 3exp syl5bir
+    wi com23 imp orrd ex uni0 eqcomi id unieq 3eqtr4a limuni jaoi impbid1 ) ABZ
+    AACZDZAEDZAFZGZUJULUOUJULHUMUNUJULUMIZUNQUJUPULUNUPAEJZUJULUNQAEKUJUQULUNUN
+    UJUQULLAMNOPRSTUAUMULUNUMEECZAUKUREUBUCUMUDAEUEUFAUGUHUI $.
+
+  $( An ordinal number either equals zero or contains zero.  (Contributed by
+     NM, 1-Jun-2004.) $)
+  on0eqel $p |- ( A e. On -> ( A = (/) \/ (/) e. A ) ) $=
+    ( con0 wcel c0 wceq wo wss 0ss 0elon onsseleq mpan mpbii eqcom orbi2i orcom
+    wb bitri sylib ) ABCZDACZDAEZFZADEZTFZSDAGZUBAHDBCSUEUBPIDAJKLUBTUCFUDUAUCT
+    DAMNTUCOQR $.
+
+  $( The singleton of the singleton of the empty set is not an ordinal (nor a
+     natural number by ~ omsson ).  It can be used to represent an "undefined"
+     value for a partial operation on natural or ordinal numbers.  See also
+     ~ onxpdisj .  (Contributed by NM, 21-May-2004.)  (Proof shortened by
+     Andrew Salmon, 12-Aug-2011.) $)
+  snsn0non $p |- -. { { (/) } } e. On $=
+    ( c0 csn con0 wcel wceq wo wn p0ex snid n0i ax-mp eqcom mtbir elsnc pm3.2ni
+    0ex on0eqel mto ) ABZBZCDTAEZATDZFUAUBSTDUAGSHITSJKUBASEZUCSAEZASDUDGAPISAJ
+    KASLMASPNMOTQR $.
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -35785,6 +36690,21 @@ htmldef "Or" as
 htmldef "Se" as ' Se ';
   althtmldef "Se" as ' Se ';
   latexdef "Se" as "{\rm Se}";
+htmldef "Ord" as
+    "<IMG SRC='_ord.gif' WIDTH=26 HEIGHT=19 ALT=' Ord' TITLE='Ord'> ";
+  althtmldef "Ord" as 'Ord ';
+  latexdef "Ord" as "{\rm Ord}";
+htmldef "On" as "<IMG SRC='_on.gif' WIDTH=20 HEIGHT=19 ALT=' On' TITLE='On'>";
+  althtmldef "On" as 'On';
+  latexdef "On" as "{\rm On}";
+htmldef "Lim" as
+    "<IMG SRC='_lim.gif' WIDTH=26 HEIGHT=19 ALT=' Lim' TITLE='Lim'> ";
+  althtmldef "Lim" as 'Lim ';
+  latexdef "Lim" as "{\rm Lim}";
+htmldef "suc" as
+    "<IMG SRC='_suc.gif' WIDTH=22 HEIGHT=19 ALT=' suc' TITLE='suc'> ";
+  althtmldef "suc" as 'suc ';
+  latexdef "suc" as "{\rm suc}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
