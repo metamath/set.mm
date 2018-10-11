@@ -35221,19 +35221,9 @@ $)
     id 3bitr4g ) ABCZADZAEFZAAGZCZHBDZBEFZBBGZCZHAIBIRSUCTUDUBUFABJABEKRABUAUER
     PABLMNAOBOQ $.
 
-  $( Epsilon well-orders every ordinal.  Proposition 7.4 of [TakeutiZaring]
-     p. 36.  (Contributed by NM, 3-Apr-1994.) $)
-  ordwe $p |- ( Ord A -> _E We A ) $=
-    ( word wtr cep wwe df-ord simprbi ) ABACADEAFG $.
-
   $( An ordinal class is transitive.  (Contributed by NM, 3-Apr-1994.) $)
   ordtr $p |- ( Ord A -> Tr A ) $=
     ( word wtr cep wwe df-ord simplbi ) ABACADEAFG $.
-
-  $( Epsilon is well-founded on an ordinal class.  (Contributed by NM,
-     22-Apr-1994.) $)
-  ordfr $p |- ( Ord A -> _E Fr A ) $=
-    ( word cep wwe wfr ordwe wefr syl ) ABACDACEAFACGH $.
 
   $( An element of an ordinal class is a subset of it.  (Contributed by NM,
      30-May-1994.) $)
@@ -35429,25 +35419,6 @@ $)
      19-May-1998.) $)
   orddisj $p |- ( Ord A -> ( A i^i { A } ) = (/) ) $=
     ( word wcel wn csn cin c0 wceq ordirr disjsn sylibr ) ABAACDAAEFGHAIAAJK $.
-
-  ${
-    $d x y z $.
-    $( The ordinal class is well-founded.  This lemma is needed for ~ ordon in
-       order to eliminate the need for the Axiom of Regularity.  (Contributed
-       by NM, 17-May-1994.) $)
-    onfr $p |- _E Fr On $=
-      ( vx vz vy con0 cep wfr cv wss c0 wne wa cin wceq wrex dfepfr wcel eqeq1d
-      wi syl adantr wex ineq2 rspcev adantll inss1 word ssel2 eloni ordfr inss2
-      n0 vex inex1 epfrc mp3an2 sylan wb inass simpr sseldi ordelss dfss1 sylib
-      syl2anc ineq2d syl5eq rexbidva mpbid ssrexv pm2.61dane exlimdv syl5bi imp
-      mpsyl ex mpgbir ) DEFAGZDHZVQIJZKVQBGZLZIMZBVQNZRAABDOVRVSWCVSCGZVQPZCUAV
-      RWCCVQUKVRWEWCCVRWEWCVRWEKZWCVQWDLZIWEWGIMZWCVRWBWHBWDVQVTWDMWAWGIVTWDVQU
-      BQUCUDWGVQHWFWGIJZKZWBBWGNZWCVQWDUEWJWGVTLZIMZBWGNZWKWFWDEFZWIWNWFWDUFZWO
-      WFWDDPWPVQDWDUGWDUHSZWDUISWOWGWDHWIWNVQWDUJZBWDWGVQWDAULUMUNUOUPWFWNWKUQW
-      IWFWMWBBWGWFVTWGPZKZWLWAIWTWLVQWDVTLZLWAVQWDVTURWTXAVTVQWTVTWDHZXAVTMWTWP
-      VTWDPXBWFWPWSWQTWTWGWDVTWRWFWSUSUTWDVTVAVDVTWDVBVCVEVFQVGTVHWBBWGVQVIVNVJ
-      VOVKVLVMVP $.
-  $}
 
   $( Relationship between membership and proper subset of an ordinal number.
      (Contributed by NM, 15-Sep-1995.) $)
