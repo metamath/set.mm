@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# Build metamath executable, extract related files, and install the executable.
+# This assumes the needed files are downloaded, see download-metamath
+# The executable is installed in $prefix/bin; default $prefix is $HOME
+
+set -e -v
+
+cd metamath/
+tar --strip-components=1 -jxf ./metamath.tar.bz2
+
+# Compile metamath, a C verifier (and more) of metamath files by Norm Megill.
+# We could just run "gcc *.c -O2 -o metamath", but this will do some
+# auto-detection to try to find the best available options.
+autoreconf -i
+./configure
+make
+
+# install metamath to $prefix/bin (by default, $HOME/bin); this honors DESTDIR:
+make prefix="${prefix:-"$HOME"}" install
+
+cd ../
+
+tar --strip-components=1 -jxf symbols.tar.bz2
