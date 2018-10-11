@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Get metamath C program and supporting files (to validate against them)
+# We create subdirectory "metamath/" and put metamath.tar.bz2 there, and
+# also download symbols.tar.bz2 into the current directory.
+
+# 8/29/18 NM Some mirrors don't allow directory listing
+# Note that set.mm includes mmset.html and mmhil.html
+
+set -v -e
+
+# Extract into a different directory to prevent overwriting .mm's
+mkdir -p metamath/
+cd metamath/
+rm -fr *.bz2
+wget -N -q http://us.metamath.org/downloads/metamath.tar.bz2
+# This will be updated, but we need a starting point:
+wget -N -q http://us.metamath.org/mpegif/mmbiblio.html
+cd ..
+
+rm -f symbols.tar.bz2
+wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2

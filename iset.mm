@@ -34719,6 +34719,409 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                  Partial and complete ordering
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+$(
+We have not yet defined relations ( ~ df-rel ), but here we introduce a
+few related notions we will use to develop ordinals.  The class variable
+` R ` is no different from other class variables, but it reminds us that
+normally it represents what we will later call a "relation."
+$)
+
+  $( Declare new constant symbols. $)
+  $c Po $.  $( Partial ordering predicate symbol (read: 'partial ordering'). $)
+  $c Or $.  $( Strict linear ordering predicate symbol (read: 'orders'). $)
+
+  $( Extend wff notation to include the strict partial ordering predicate.
+     Read:  ' ` R ` is a partial order on ` A ` .' $)
+  wpo $a wff R Po A $.
+
+  $( Extend wff notation to include the strict linear ordering predicate.
+     Read:  ' ` R ` orders ` A ` .' $)
+  wor $a wff R Or A $.
+
+  ${
+    $d x y z R $.  $d x y z A $.
+    $( Define the strict partial order predicate.  Definition of [Enderton]
+       p. 168.  The expression ` R Po A ` means ` R ` is a partial order on
+       ` A ` .  (Contributed by NM, 16-Mar-1997.) $)
+    df-po $a |- ( R Po A <-> A. x e. A A. y e. A A. z e. A
+                ( -. x R x /\ ( ( x R y /\ y R z ) -> x R z ) ) ) $.
+
+    $( Define the strict linear order predicate.  The expression ` R Or A ` is
+       true if relationship ` R ` orders ` A ` .  The property
+       ` x R y -> ( x R z \/ z R y ) ` is called weak linearity by Proposition
+       (11.2.3) of [HoTT], p.  (varies).  If we assumed excluded middle, it
+       would be equivalent to trichotomy, ` x R y \/ x = y \/ y R x ` .
+       (Contributed by NM, 21-Jan-1996.)  (Revised by Jim Kingdon,
+       4-Oct-2018.) $)
+    df-iso $a |- ( R Or A <-> ( R Po A /\ A. x e. A A. y e. A A. z e. A
+                ( x R y -> ( x R z \/ z R y ) ) ) ) $.
+  $}
+
+  ${
+    $d x y z R $.  $d x y z A $.  $d x y z B $.
+    $( Subset theorem for the partial ordering predicate.  (Contributed by NM,
+       27-Mar-1997.)  (Proof shortened by Mario Carneiro, 18-Nov-2016.) $)
+    poss $p |- ( A C_ B -> ( R Po B -> R Po A ) ) $=
+      ( vx vy vz wss cv wbr wn wa wi wral wpo ssralv ralimdv syld df-po 3imtr4g
+      ) ABGZDHZUACIJUAEHZCIUBFHZCIKUAUCCILKZFBMZEBMZDBMZUDFAMZEAMZDAMZBCNACNTUG
+      UFDAMUJUFDABOTUFUIDATUFUEEAMUIUEEABOTUEUHEAUDFABOPQPQDEFBCRDEFACRS $.
+  $}
+
+  ${
+    $d x y z R $.  $d x y z S $.  $d x y z A $.
+    $( Equality theorem for partial ordering predicate.  (Contributed by NM,
+       27-Mar-1997.) $)
+    poeq1 $p |- ( R = S -> ( R Po A <-> S Po A ) ) $=
+      ( vx vy vz wceq cv wbr wn wa wral wpo breq notbid anbi12d imbi12d ralbidv
+      wi df-po 2ralbidv 3bitr4g ) BCGZDHZUDBIZJZUDEHZBIZUGFHZBIZKZUDUIBIZSZKZFA
+      LZEALDALUDUDCIZJZUDUGCIZUGUICIZKZUDUICIZSZKZFALZEALDALABMACMUCUOVDDEAAUCU
+      NVCFAUCUFUQUMVBUCUEUPUDUDBCNOUCUKUTULVAUCUHURUJUSUDUGBCNUGUIBCNPUDUIBCNQP
+      RUADEFABTDEFACTUB $.
+  $}
+
+  $( Equality theorem for partial ordering predicate.  (Contributed by NM,
+     27-Mar-1997.) $)
+  poeq2 $p |- ( A = B -> ( R Po A <-> R Po B ) ) $=
+    ( wceq wpo wss wi eqimss2 poss syl eqimss impbid ) ABDZACEZBCEZMBAFNOGBAHBA
+    CIJMABFONGABKABCIJL $.
+
+  ${
+    $d R a b c $.  $d A a b c $.  $d x a b c $.
+    nfpo.r $e |- F/_ x R $.
+    nfpo.a $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for partial orders.  (Contributed by
+       Stefan O'Rear, 20-Jan-2015.) $)
+    nfpo $p |- F/ x R Po A $=
+      ( va vb vc wpo cv wbr wn wa wi wral df-po nfcv nfbr nfan nfralxy nfim nfxfr
+      nfn ) BCIFJZUDCKZLZUDGJZCKZUGHJZCKZMZUDUICKZNZMZHBOZGBOZFBOAFGHBCPUPAFBEU
+      OAGBEUNAHBEUFUMAUEAAUDUDCAUDQZDUQRUCUKULAUHUJAAUDUGCUQDAUGQZRAUGUICURDAUI
+      QZRSAUDUICUQDUSRUASTTTUB $.
+
+    $( Bound-variable hypothesis builder for total orders.  (Contributed by
+       Stefan O'Rear, 20-Jan-2015.) $)
+    nfso $p |- F/ x R Or A $=
+      ( va vb vc wor wpo cv wbr wo wi wral df-iso nfcv nfbr nfralxy
+      wa nfpo nfor nfim nfan nfxfr ) BCIBCJZFKZGKZCLZUGHKZCLZUJUHCLZM
+      ZNZHBOZGBOZFBOZTAFGHBCPUFUQAABCDEUAUPAFBEUOAGBEUNAHBEUIUMAAUGUH
+      CAUGQZDAUHQZRUKULAAUGUJCURDAUJQZRAUJUHCUTDUSRUBUCSSSUDUE $.
+  $}
+
+  ${
+    $d x y z R $.  $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.
+    $( Properties of partial order relation in class notation.  (Contributed by
+       NM, 27-Mar-1997.) $)
+    pocl $p |- ( R Po A -> ( ( B e. A /\ C e. A /\ D e. A ) ->
+               ( -. B R B /\ ( ( B R C /\ C R D ) -> B R D ) ) ) ) $=
+      ( vx vy vz wcel wbr wa wi cv wceq breq1 imbi2d breq2 anbi2d wal wral r3al
+      w3a wn id breq12d notbid anbi1d imbi12d anbi12d imbi1d df-po bitri biimpi
+      wpo 19.21bbi 19.21bi com12 vtocl3ga ) BAICAIDAIUBAEUNZBBEJZUCZBCEJZCDEJZK
+      ZBDEJZLZKZUSFMZVHEJZUCZVHGMZEJZVKHMZEJZKZVHVMEJZLZKZLUSVABVKEJZVNKZBVMEJZ
+      LZKZLUSVAVBCVMEJZKZWALZKZLUSVGLFGHBCDAAAVHBNZVRWCUSWHVJVAVQWBWHVIUTWHVHBV
+      HBEWHUDZWIUEUFWHVOVTVPWAWHVLVSVNVHBVKEOUGVHBVMEOUHUIPVKCNZWCWGUSWJWBWFVAW
+      JVTWEWAWJVSVBVNWDVKCBEQVKCVMEOUIUJRPVMDNZWGVGUSWKWFVFVAWKWEVDWAVEWKWDVCVB
+      VMDCEQRVMDBEQUHRPUSVHAIVKAIVMAIUBZVRUSWLVRLZHUSWMHSZFGUSWNGSFSZUSVRHATGAT
+      FATWOFGHAEUKVRFGHAAAUAULUMUOUPUQURUQ $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z R $.  $d x y z ph $.
+    ispod.1 $e |- ( ( ph /\ x e. A ) -> -. x R x ) $.
+    ispod.2 $e |- ( ( ph /\ ( x e. A /\ y e. A /\ z e. A ) ) ->
+                    ( ( x R y /\ y R z ) -> x R z ) ) $.
+    $( Sufficient conditions for a partial order.  (Contributed by NM,
+       9-Jul-2014.) $)
+    ispod $p |- ( ph -> R Po A ) $=
+      ( cv wbr wn wa wi wral wpo wcel w3a 3ad2antr1 jca ralrimivvva sylibr
+      df-po ) ABIZUCFJKZUCCIZFJUEDIZFJLUCUFFJMZLZDENCENBENEFOAUHBCDEEEAUCEPZUEE
+      PZUFEPZQLUDUGAUJUIUDUKGRHSTBCDEFUBUA $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z ph $.  $d x y z R $.  $d x y z X $.  $d y z Y $.
+    $d z Z $.
+    swopolem.1 $e |- ( ( ph /\ ( x e. A /\ y e. A /\ z e. A ) ) ->
+                    ( x R y -> ( x R z \/ z R y ) ) ) $.
+    $( Perform the substitutions into the strict weak ordering law.
+       (Contributed by Mario Carneiro, 31-Dec-2014.) $)
+    swopolem $p |- ( ( ph /\ ( X e. A /\ Y e. A /\ Z e. A ) ) ->
+                    ( X R Y -> ( X R Z \/ Z R Y ) ) ) $=
+      ( cv wbr wo wi wral wcel wceq breq1 imbi12d breq2 w3a ralrimivvva orbi12d
+      orbi1d orbi2d imbi2d rspc3v mpan9 ) ABKZCKZFLZUIDKZFLZULUJFLZMZNZDEOCEOBE
+      OGEPHEPIEPUAGHFLZGIFLZIHFLZMZNZAUPBCDEEEJUBUPVAGUJFLZGULFLZUNMZNUQVCULHFL
+      ZMZNBCDGHIEEEUIGQZUKVBUOVDUIGUJFRVGUMVCUNUIGULFRUDSUJHQZVBUQVDVFUJHGFTVHU
+      NVEVCUJHULFTUESULIQZVFUTUQVIVCURVEUSULIGFTULIHFRUCUFUGUH $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z R $.  $d x y z ph $.
+    swopo.1 $e |- ( ( ph /\ ( y e. A /\ z e. A ) ) ->
+                    ( y R z -> -. z R y ) ) $.
+    swopo.2 $e |- ( ( ph /\ ( x e. A /\ y e. A /\ z e. A ) ) ->
+                    ( x R y -> ( x R z \/ z R y ) ) ) $.
+    $( A strict weak order is a partial order.  (Contributed by Mario Carneiro,
+       9-Jul-2014.) $)
+    swopo $p |- ( ph -> R Po A ) $=
+      ( cv wcel wa wbr wn wi wral weq breq1 breq2 notbid imbi12d ralrimivva w3a
+      id ancli rspc2va syl2anr pm2.01d 3adantr1 wo imp orcomd ord expimpd ispod
+      sylan2d ) ABCDEFABIZEJZKUPUPFLZUQUQUQKCIZDIZFLZUTUSFLZMZNZDEOCEOURURMZNZA
+      UQUQUQUCUDAVDCDEEGUAVDVFUPUTFLZUTUPFLZMZNCDUPUPEECBPZVAVGVCVIUSUPUTFQVJVB
+      VHUSUPUTFRSTDBPZVGURVIVEUTUPUPFRVKVHURUTUPUPFQSTUEUFUGAUQUSEJZUTEJZUBKZVA
+      VCUPUSFLZVGAVLVMVDUQGUHVNVOVCVGVNVOKZVBVGVPVGVBVNVOVGVBUIHUJUKULUMUOUN $.
+  $}
+
+  $( A partial order relation is irreflexive.  (Contributed by NM,
+     27-Mar-1997.) $)
+  poirr $p |- ( ( R Po A /\ B e. A ) -> -. B R B ) $=
+    ( wcel wpo w3a wbr wn wa df-3an anabs1 anidm 3bitrri wi pocl simpld sylan2b
+    imp ) BADZACEZSSSFZBBCGZHZUASSIZSIUDSSSSJSSKSLMTUAIUCUBUBIUBNZTUAUCUEIABBBC
+    ORPQ $.
+
+  $( A partial order relation is a transitive relation.  (Contributed by NM,
+     27-Mar-1997.) $)
+  potr $p |- ( ( R Po A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
+             ( ( B R C /\ C R D ) -> B R D ) ) $=
+    ( wpo wcel w3a wa wbr wn wi pocl imp simprd ) AEFZBAGCAGDAGHZIBBEJKZBCEJCDE
+    JIBDEJLZPQRSIABCDEMNO $.
+
+  $( A partial order relation has no 2-cycle loops.  (Contributed by NM,
+     27-Mar-1997.) $)
+  po2nr $p |- ( ( R Po A /\ ( B e. A /\ C e. A ) ) ->
+              -. ( B R C /\ C R B ) ) $=
+    ( wpo wcel wa wbr wn poirr adantrr wi potr 3exp2 com34 pm2.43d imp32 mtod )
+    ADEZBAFZCAFZGGBCDHCBDHGZBBDHZSTUCIUAABDJKSTUAUBUCLZSTUAUDLSTUATUDSTUATUDABC
+    BDMNOPQR $.
+
+  $( A partial order relation has no 3-cycle loops.  (Contributed by NM,
+     27-Mar-1997.) $)
+  po3nr $p |- ( ( R Po A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
+             -. ( B R C /\ C R D /\ D R B ) ) $=
+    ( wpo wcel w3a wa wbr wn po2nr 3adantr2 df-3an potr anim1d syl5bi mtod ) AE
+    FZBAGZCAGZDAGZHIZBCEJZCDEJZDBEJZHZBDEJZUFIZSTUBUIKUAABDELMUGUDUEIZUFIUCUIUD
+    UEUFNUCUJUHUFABCDEOPQR $.
+
+  ${
+    $d x y z R $.
+    $( Any relation is a partial ordering of the empty set.  (Contributed by
+       NM, 28-Mar-1997.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    po0 $p |- R Po (/) $=
+      ( vx vy vz c0 wpo cv wbr wn wa wi wral ral0 df-po mpbir ) EAFBGZPAHIPCGZA
+      HQDGZAHJPRAHKJDELCELZBELSBMBCDEANO $.
+  $}
+
+  ${
+    $d R v w x y z $.  $d S v w z $.  $d X v w y z $.  $d Y x z $.
+    $d A v w x z $.  $d B v w x z $.
+    pofun.1 $e |- S = { <. x , y >. | X R Y } $.
+    pofun.2 $e |- ( x = y -> X = Y ) $.
+    $( A function preserves a partial order relation.  (Contributed by Jeff
+       Madsen, 18-Jun-2011.) $)
+    pofun $p |- ( ( R Po B /\ A. x e. A X e. B ) -> S Po A ) $=
+      ( vv vw vz wcel wa cv wbr csb weq cop wpo wn nfcsb1v nfel1 csbeq1a eleq1d
+      wral rspc impcom poirr copab df-br eleq2i nfcv nfbr nfv vex breq1d csbief
+      csbeq1 syl5eqr breq2d opelopabf 3bitri sylnibr sylan2 w3a com12 3anim123d
+      anassrs wi imp adantll potr anbi12i 3imtr4g adantlr syldan ispod ) DEUAZG
+      DNZACUGZOZKLMCFVTWBKPZCNZWDWDFQZUBZWBWEOVTAWDGRZDNZWGWEWBWIWAWIAWDCAWHDAW
+      DGUCZUDAKSZGWHDAWDGUEZUFUHZUIVTWIOWHWHEQZWFDWHEUJWFWDWDTZFNWOGHEQZABUKZNW
+      NWDWDFULFWQWOIUMWPWHHEQZWNABWDWDAWHHEWJAEUNZAHUNZUOZWNBUPKUQZXBWKGWHHEWLU
+      RZBKSZHWHWHEXDHABPZGRZWHAXEGHBUQWTJUSZAXEWDGUTVAVBVCVDVEVFVJWCWELPZCNZMPZ
+      CNZVGZWIAXHGRZDNZAXJGRZDNZVGZWDXHFQZXHXJFQZOZWDXJFQZVKZWBXLXQVTWBXLXQWBWE
+      WIXIXNXKXPWEWBWIWMVHXIWBXNWAXNAXHCAXMDAXHGUCZUDALSZGXMDAXHGUEZUFUHVHXKWBX
+      PWAXPAXJCAXODAXJGUCUDAMSGXODAXJGUEUFUHVHVIVLVMVTXQYBWBVTXQOWHXMEQZXMXOEQZ
+      OWHXOEQZXTYADWHXMXOEVNXRYFXSYGXRWDXHTZFNYIWQNYFWDXHFULFWQYIIUMWPWRYFABWDX
+      HXAYFBUPXBLUQZXCBLSZHXMWHEYKHXFXMXGAXEXHGUTVAVBVCVDXSXHXJTZFNYLWQNYGXHXJF
+      ULFWQYLIUMWPXMHEQYGABXHXJAXMHEYCWSWTUOYGBUPYJMUQZYDGXMHEYEURBMSZHXOXMEYNH
+      XFXOXGAXEXJGUTVAZVBVCVDVOYAWDXJTZFNYPWQNYHWDXJFULFWQYPIUMWPWRYHABWDXJXAYH
+      BUPXBYMXCYNHXOWHEYOVBVCVDVPVQVRVS $.
+  $}
+
+  ${
+    $d x y z R $.  $d x y z A $.
+    $( A strict linear order is a strict partial order.  (Contributed by NM,
+       28-Mar-1997.) $)
+    sopo $p |- ( R Or A -> R Po A ) $=
+      ( vx vy vz wor wpo cv wbr wo wi wral df-iso simplbi ) ABFABGCHZ
+      DHZBIOEHZBIQPBIJKEALDALCALCDEABMN $.
+  $}
+
+  ${
+    $d x y z R $.  $d x y z A $.  $d x y z B $.
+    $( Subset theorem for the strict ordering predicate.  (Contributed by NM,
+       16-Mar-1997.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    soss $p |- ( A C_ B -> ( R Or B -> R Or A ) ) $=
+      ( vx vy vz wpo cv wbr wi wral wa wor wcel w3a ssel r3al 3imtr4g
+      wal df-iso wss wo poss 3anim123d imim1d 2alimdv alimdv anim12d
+      ) ABUAZBCGZDHZEHZCIUKFHZCIUMULCIUBJZFBKEBKDBKZLACGZUNFAKEAKDAKZ
+      LBCMACMUIUJUPUOUQABCUCUIUKBNZULBNZUMBNZOZUNJZFSESZDSUKANZULANZU
+      MANZOZUNJZFSESZDSUOUQUIVCVIDUIVBVHEFUIVGVAUNUIVDURVEUSVFUTABUKP
+      ABULPABUMPUDUEUFUGUNDEFBBBQUNDEFAAAQRUHDEFBCTDEFACTR $.
+  $}
+
+  ${
+    $d x y z R $.  $d x y z S $.  $d x y z A $.
+    $( Equality theorem for the strict ordering predicate.  (Contributed by NM,
+       16-Mar-1997.) $)
+    soeq1 $p |- ( R = S -> ( R Or A <-> S Or A ) ) $=
+      ( vx vy vz wceq wpo cv wbr wo wi wral wa wor poeq1 breq orbi12d
+      imbi12d df-iso 2ralbidv ralbidv anbi12d 3bitr4g ) BCGZABHZDIZEI
+      ZBJZUGFIZBJZUJUHBJZKZLZFAMEAMZDAMZNACHZUGUHCJZUGUJCJZUJUHCJZKZL
+      ZFAMEAMZDAMZNABOACOUEUFUQUPVDABCPUEUOVCDAUEUNVBEFAAUEUIURUMVAUG
+      UHBCQUEUKUSULUTUGUJBCQUJUHBCQRSUAUBUCDEFABTDEFACTUD $.
+  $}
+
+  $( Equality theorem for the strict ordering predicate.  (Contributed by NM,
+     16-Mar-1997.) $)
+  soeq2 $p |- ( A = B -> ( R Or A <-> R Or B ) ) $=
+    ( wceq wor wss wa wi wb soss anim12i eqss dfbi2 3imtr4i bicomd ) ABDZBCEZAC
+    EZABFZBAFZGQRHZRQHZGPQRISUATUBABCJBACJKABLQRMNO $.
+
+  $( A strict order relation is irreflexive.  (Contributed by NM,
+     24-Nov-1995.) $)
+  sonr $p |- ( ( R Or A /\ B e. A ) -> -. B R B ) $=
+    ( wor wpo wcel wbr wn sopo poirr sylan ) ACDACEBAFBBCGHACIABCJK $.
+
+  $( A strict order relation is a transitive relation.  (Contributed by NM,
+     21-Jan-1996.) $)
+  sotr $p |- ( ( R Or A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
+             ( ( B R C /\ C R D ) -> B R D ) ) $=
+    ( wor wpo wcel w3a wbr wa wi sopo potr sylan ) AEFAEGBAHCAHDAHIBCEJCDEJKBDE
+    JLAEMABCDENO $.
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.  $d x y z R $.
+    $( A strict order relation satisfies weak linearity.  (Contributed by Jim
+       Kingdon, 6-Oct-2018.) $)
+    sowlin $p |- ( ( R Or A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
+        ( B R C -> ( B R D \/ D R C ) ) ) $=
+      ( vx vy vz wcel w3a wbr wo wi cv wceq breq1 imbi2d breq2 wral wa wor rsp2
+      orbi1d imbi12d orbi2d orbi12d wpo df-iso 3anass imp3a syl5bi adantl sylbi
+      rsp syl6 com12 vtocl3ga impcom ) BAICAIDAIJAEUAZBCEKZBDEKZDCEKZLZMZUSFNZG
+      NZEKZVEHNZEKZVHVFEKZLZMZMUSBVFEKZBVHEKZVJLZMZMUSUTVNVHCEKZLZMZMUSVDMFGHBC
+      DAAAVEBOZVLVPUSVTVGVMVKVOVEBVFEPVTVIVNVJVEBVHEPUCUDQVFCOZVPVSUSWAVMUTVOVR
+      VFCBERWAVJVQVNVFCVHERUEUDQVHDOZVSVDUSWBVRVCUTWBVNVAVQVBVHDBERVHDCEPUFQQUS
+      VEAIZVFAIZVHAIZJZVLUSAEUGZVLHASGASZFASZTWFVLMZFGHAEUHWIWJWGWFWCWDWETZTWIV
+      LWCWDWEUIWIWCWKVLWIWCWHWKVLMWHFAUNVLGHAAUBUOUJUKULUMUPUQUR $.
+  $}
+
+  $( A strict order relation has no 2-cycle loops.  (Contributed by NM,
+     21-Jan-1996.) $)
+  so2nr $p |- ( ( R Or A /\ ( B e. A /\ C e. A ) ) ->
+              -. ( B R C /\ C R B ) ) $=
+    ( wor wpo wcel wa wbr wn sopo po2nr sylan ) ADEADFBAGCAGHBCDICBDIHJADKABCDL
+    M $.
+
+  $( A strict order relation has no 3-cycle loops.  (Contributed by NM,
+     21-Jan-1996.) $)
+  so3nr $p |- ( ( R Or A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
+             -. ( B R C /\ C R D /\ D R B ) ) $=
+    ( wor wpo wcel w3a wbr wn sopo po3nr sylan ) AEFAEGBAHCAHDAHIBCEJCDEJDBEJIK
+    AELABCDEMN $.
+
+  ${
+    $d x y z R $.
+    $( Any relation is a strict ordering of the empty set.  (Contributed by NM,
+       16-Mar-1997.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    so0 $p |- R Or (/) $=
+      ( vx vy vz c0 wor wpo cv wbr wo wral po0 ral0 df-iso mpbir2an
+      wi ) EAFEAGBHZCHZAIQDHZAISRAIJPDEKCEKZBEKALTBMBCDEANO $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Set-like relations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new constant symbols. $)
+  $c Se $. $( Set-like predicate symbol (read: 'set-like'). $)
+
+  $( Extend wff notation to include the set-like predicate.  Read:  ' ` R ` is
+     set-like on ` A ` .' $)
+  wse $a wff R Se A $.
+
+  ${
+    $d x y R $.  $d x y A $.
+    $( Define the set-like predicate.  (Contributed by Mario Carneiro,
+       19-Nov-2014.) $)
+    df-se $a |- ( R Se A <-> A. x e. A { y e. A | y R x } e. _V ) $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z R $.  $d x y V $.
+    $( The ` R ` -preimage of an element of the base set in a set-like relation
+       is a set.  (Contributed by Mario Carneiro, 19-Nov-2014.) $)
+    seex $p |- ( ( R Se A /\ B e. A ) -> { x e. A | x R B } e. _V ) $=
+      ( vy wse cv wbr crab cvv wcel wral df-se wceq breq2 rabbidv eleq1d sylanb
+      rspccva ) BDFAGZEGZDHZABIZJKZEBLCBKTCDHZABIZJKZEABDMUDUGECBUACNZUCUFJUHUB
+      UEABUACTDOPQSR $.
+
+    $( Any relation on a set is set-like on it.  (Contributed by Mario
+       Carneiro, 22-Jun-2015.) $)
+    exse $p |- ( A e. V -> R Se A ) $=
+      ( vy vx wcel cv wbr crab cvv wral wse rabexg ralrimivw df-se sylibr ) ACF
+      ZDGEGBHZDAIJFZEAKABLQSEARDACMNEDABOP $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z R $.  $d x y S $.
+    $( Subset theorem for the set-like predicate.  (Contributed by Mario
+       Carneiro, 24-Jun-2015.) $)
+    sess1 $p |- ( R C_ S -> ( S Se A -> R Se A ) ) $=
+      ( vy vx wss cv wbr crab cvv wcel wral wi simpl ssbrd ss2rabdv ssexg df-se
+      wse wa ex syl ralimdv 3imtr4g ) BCFZDGZEGZCHZDAIZJKZEALUFUGBHZDAIZJKZEALA
+      CSABSUEUJUMEAUEULUIFZUJUMMUEUKUHDAUEUFAKZTBCUFUGUEUONOPUNUJUMULUIJQUAUBUC
+      EDACREDABRUD $.
+
+    $( Subset theorem for the set-like predicate.  (Contributed by Mario
+       Carneiro, 24-Jun-2015.) $)
+    sess2 $p |- ( A C_ B -> ( R Se B -> R Se A ) ) $=
+      ( vy vx wss cv wbr crab cvv wcel wral wse ssralv wi rabss2 ssexg ex df-se
+      syl ralimdv syld 3imtr4g ) ABFZDGEGCHZDBIZJKZEBLZUEDAIZJKZEALZBCMACMUDUHU
+      GEALUKUGEABNUDUGUJEAUDUIUFFZUGUJOUEDABPULUGUJUIUFJQRTUAUBEDBCSEDACSUC $.
+  $}
+
+  $( Equality theorem for the set-like predicate.  (Contributed by Mario
+     Carneiro, 24-Jun-2015.) $)
+  seeq1 $p |- ( R = S -> ( R Se A <-> S Se A ) ) $=
+    ( wceq wse wss wi eqimss2 sess1 syl eqimss impbid ) BCDZABEZACEZMCBFNOGCBHA
+    CBIJMBCFONGBCKABCIJL $.
+
+  $( Equality theorem for the set-like predicate.  (Contributed by Mario
+     Carneiro, 24-Jun-2015.) $)
+  seeq2 $p |- ( A = B -> ( R Se A <-> R Se B ) ) $=
+    ( wceq wse wss wi eqimss2 sess2 syl eqimss impbid ) ABDZACEZBCEZMBAFNOGBAHB
+    ACIJMABFONGABKABCIJL $.
+
+  ${
+    $d y R a b c $.  $d y A a b c $.  $d x y a b c $.
+    nffr.r $e |- F/_ x R $.
+    nffr.a $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for set-like relations.  (Contributed
+       by Mario Carneiro, 24-Jun-2015.)  (Revised by Mario Carneiro,
+       14-Oct-2016.) $)
+    nfse $p |- F/ x R Se A $=
+      ( va vb wse cv wbr crab cvv wcel wral df-se nfcv nfbr nfrabxy nfel1 nfralxy
+      nfxfr ) BCHFIZGIZCJZFBKZLMZGBNAGFBCOUFAGBEAUELUDAFBAUBUCCAUBPDAUCPQERSTUA
+      $.
+  $}
+
+  ${
+    $d x y A $.
+    $( The epsilon relation is set-like on any class.  (This is the origin of
+       the term "set-like": a set-like relation "acts like" the epsilon
+       relation of sets and their elements.)  (Contributed by Mario Carneiro,
+       22-Jun-2015.) $)
+    epse $p |- _E Se A $=
+      ( vy vx cep wse cv wbr crab cvv wcel wral cab epel bicomi abbi2i eqeltrri
+      vex rabssab ssexi rgenw df-se mpbir ) ADEBFZCFZDGZBAHZIJZCAKUGCAUFUEBLZUD
+      UHIUEBUDUEUCUDJBCMNOCQPUEBARSTCBADUAUB $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -35371,6 +35774,17 @@ htmldef "_I" as
     " <IMG SRC='rmci.gif' WIDTH=4 HEIGHT=19 ALT=' _I' TITLE='_I'> ";
   althtmldef "_I" as ' I ';
   latexdef "_I" as "{\rm I}";
+htmldef "Po" as
+    " <IMG SRC='_po.gif' WIDTH=16 HEIGHT=19 ALT=' Po' TITLE='Po'> ";
+  althtmldef "Po" as ' Po ';
+  latexdef "Po" as "{\rm Po}";
+htmldef "Or" as
+    " <IMG SRC='_or.gif' WIDTH=18 HEIGHT=19 ALT=' Or' TITLE='Or'> ";
+  althtmldef "Or" as ' Or ';
+  latexdef "Or" as "{\rm Or}";
+htmldef "Se" as ' Se ';
+  althtmldef "Se" as ' Se ';
+  latexdef "Se" as "{\rm Se}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
