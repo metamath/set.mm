@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Oct-2018
+$( iset.mm - Version of 10-Oct-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -35147,10 +35147,14 @@ $)
   $( Extend class notation to include the successor function. $)
   csuc $a class suc A $.
 
-  $( Define the ordinal predicate, which is true for a class that is transitive
-     and is well-ordered by the epsilon relation.  Variant of definition of
-     [BellMachover] p. 468.  (Contributed by NM, 17-Sep-1993.) $)
-  df-ord $a |- ( Ord A <-> ( Tr A /\ _E We A ) ) $.
+  ${
+    $d x A $.
+    $( Define the ordinal predicate, which is true for a class that is
+       transitive and whose elements are transitive.  Definition of ordinal in
+       [Crosilla], p.  "Set-theoretic principles incompatible with
+       intuitionistic logic".  (Contributed by Jim Kingdon, 10-Oct-2018.) $)
+    df-iord $a |- ( Ord A <-> ( Tr A /\ A. x e. A Tr x ) ) $.
+  $}
 
   $( Define the class of all ordinal numbers.  Definition 7.11 of
      [TakeutiZaring] p. 38.  (Contributed by NM, 5-Jun-1994.) $)
