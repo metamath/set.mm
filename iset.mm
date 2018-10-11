@@ -35182,11 +35182,14 @@ $)
      30-Aug-1993.) $)
   df-suc $a |- suc A = ( A u. { A } ) $.
 
-  $( Equality theorem for the ordinal predicate.  (Contributed by NM,
-     17-Sep-1993.) $)
-  ordeq $p |- ( A = B -> ( Ord A <-> Ord B ) ) $=
-    ( wceq wtr cep wwe wa word treq weeq2 anbi12d df-ord 3bitr4g ) ABCZADZAEFZG
-    BDZBEFZGAHBHNOQPRABIABEJKALBLM $.
+  ${
+    $d x A $.  $d x B $.
+    $( Equality theorem for the ordinal predicate.  (Contributed by NM,
+       17-Sep-1993.) $)
+    ordeq $p |- ( A = B -> ( Ord A <-> Ord B ) ) $=
+      ( vx wceq wtr cv wral wa word treq raleq anbi12d df-iord 3bitr4g )
+      ABDZAEZCFEZCAGZHBEZQCBGZHAIBIOPSRTABJQCABKLCAMCBMN $.
+  $}
 
   ${
     $d x A $.
