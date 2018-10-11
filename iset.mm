@@ -35031,6 +35031,97 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Set-like relations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new constant symbols. $)
+  $c Se $. $( Set-like predicate symbol (read: 'set-like'). $)
+
+  $( Extend wff notation to include the set-like predicate.  Read:  ' ` R ` is
+     set-like on ` A ` .' $)
+  wse $a wff R Se A $.
+
+  ${
+    $d x y R $.  $d x y A $.
+    $( Define the set-like predicate.  (Contributed by Mario Carneiro,
+       19-Nov-2014.) $)
+    df-se $a |- ( R Se A <-> A. x e. A { y e. A | y R x } e. _V ) $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z R $.  $d x y V $.
+    $( The ` R ` -preimage of an element of the base set in a set-like relation
+       is a set.  (Contributed by Mario Carneiro, 19-Nov-2014.) $)
+    seex $p |- ( ( R Se A /\ B e. A ) -> { x e. A | x R B } e. _V ) $=
+      ( vy wse cv wbr crab cvv wcel wral df-se wceq breq2 rabbidv eleq1d sylanb
+      rspccva ) BDFAGZEGZDHZABIZJKZEBLCBKTCDHZABIZJKZEABDMUDUGECBUACNZUCUFJUHUB
+      UEABUACTDOPQSR $.
+
+    $( Any relation on a set is set-like on it.  (Contributed by Mario
+       Carneiro, 22-Jun-2015.) $)
+    exse $p |- ( A e. V -> R Se A ) $=
+      ( vy vx wcel cv wbr crab cvv wral wse rabexg ralrimivw df-se sylibr ) ACF
+      ZDGEGBHZDAIJFZEAKABLQSEARDACMNEDABOP $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z R $.  $d x y S $.
+    $( Subset theorem for the set-like predicate.  (Contributed by Mario
+       Carneiro, 24-Jun-2015.) $)
+    sess1 $p |- ( R C_ S -> ( S Se A -> R Se A ) ) $=
+      ( vy vx wss cv wbr crab cvv wcel wral wi simpl ssbrd ss2rabdv ssexg df-se
+      wse wa ex syl ralimdv 3imtr4g ) BCFZDGZEGZCHZDAIZJKZEALUFUGBHZDAIZJKZEALA
+      CSABSUEUJUMEAUEULUIFZUJUMMUEUKUHDAUEUFAKZTBCUFUGUEUONOPUNUJUMULUIJQUAUBUC
+      EDACREDABRUD $.
+
+    $( Subset theorem for the set-like predicate.  (Contributed by Mario
+       Carneiro, 24-Jun-2015.) $)
+    sess2 $p |- ( A C_ B -> ( R Se B -> R Se A ) ) $=
+      ( vy vx wss cv wbr crab cvv wcel wral wse ssralv wi rabss2 ssexg ex df-se
+      syl ralimdv syld 3imtr4g ) ABFZDGEGCHZDBIZJKZEBLZUEDAIZJKZEALZBCMACMUDUHU
+      GEALUKUGEABNUDUGUJEAUDUIUFFZUGUJOUEDABPULUGUJUIUFJQRTUAUBEDBCSEDACSUC $.
+  $}
+
+  $( Equality theorem for the set-like predicate.  (Contributed by Mario
+     Carneiro, 24-Jun-2015.) $)
+  seeq1 $p |- ( R = S -> ( R Se A <-> S Se A ) ) $=
+    ( wceq wse wss wi eqimss2 sess1 syl eqimss impbid ) BCDZABEZACEZMCBFNOGCBHA
+    CBIJMBCFONGBCKABCIJL $.
+
+  $( Equality theorem for the set-like predicate.  (Contributed by Mario
+     Carneiro, 24-Jun-2015.) $)
+  seeq2 $p |- ( A = B -> ( R Se A <-> R Se B ) ) $=
+    ( wceq wse wss wi eqimss2 sess2 syl eqimss impbid ) ABDZACEZBCEZMBAFNOGBAHB
+    ACIJMABFONGABKABCIJL $.
+
+  ${
+    $d y R a b c $.  $d y A a b c $.  $d x y a b c $.
+    nffr.r $e |- F/_ x R $.
+    nffr.a $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for set-like relations.  (Contributed
+       by Mario Carneiro, 24-Jun-2015.)  (Revised by Mario Carneiro,
+       14-Oct-2016.) $)
+    nfse $p |- F/ x R Se A $=
+      ( va vb wse cv wbr crab cvv wcel wral df-se nfcv nfbr nfrabxy nfel1 nfralxy
+      nfxfr ) BCHFIZGIZCJZFBKZLMZGBNAGFBCOUFAGBEAUELUDAFBAUBUCCAUBPDAUCPQERSTUA
+      $.
+  $}
+
+  ${
+    $d x y A $.
+    $( The epsilon relation is set-like on any class.  (This is the origin of
+       the term "set-like": a set-like relation "acts like" the epsilon
+       relation of sets and their elements.)  (Contributed by Mario Carneiro,
+       22-Jun-2015.) $)
+    epse $p |- _E Se A $=
+      ( vy vx cep wse cv wbr crab cvv wcel wral cab epel bicomi abbi2i eqeltrri
+      vex rabssab ssexi rgenw df-se mpbir ) ADEBFZCFZDGZBAHZIJZCAKUGCAUFUEBLZUD
+      UHIUEBUDUEUCUDJBCMNOCQPUEBARSTCBADUAUB $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -35691,6 +35782,9 @@ htmldef "Or" as
     " <IMG SRC='_or.gif' WIDTH=18 HEIGHT=19 ALT=' Or' TITLE='Or'> ";
   althtmldef "Or" as ' Or ';
   latexdef "Or" as "{\rm Or}";
+htmldef "Se" as ' Se ';
+  althtmldef "Se" as ' Se ';
+  latexdef "Se" as "{\rm Se}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
