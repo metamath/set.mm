@@ -28,28 +28,13 @@ before_install:
   - gcc --version
   - g++ --version
 install:
+  # Download, build, and install what we need.
+  # NOTE: We install programs in $HOME/bin, so ensure that's on the PATH
+  # (usually it is on any non-Windows system).
   # Get metamath C program and supporting files (to validate against them)
-  # 8/29/18 NM Some mirrors don't allow directory listing
-  # - wget -q -r -np -nd -A .c,.h http://us.metamath.org/metamath/
-  - wget -N -q http://us.metamath.org/downloads/metamath.tar.bz2
-  - wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2
-  # These are now in the repo:
-  # - wget -N -q http://us.metamath.org/mpegif/mmset.html
-  # - wget -N -q http://us.metamath.org/mpegif/mmhil.html
-  # This will be updated, but we need a starting point:
-  - wget -N -q http://us.metamath.org/mpegif/mmbiblio.html
-  ### # 8/29/18 NM bad - overwrites set.mm etc.
-  ### - tar --strip-components=1 -jxf metamath.tar.bz2
-  # 9/2/18 NM extract in a temporary directory to prevent overwriting .mm's
-  - mkdir mmtemp/
-  - cd mmtemp/
-  - tar --strip-components=1 -jxf ../metamath.tar.bz2
-  - mv *.c *.h ..
-  - cd ..
-  # 9/2/18 end
-  - tar --strip-components=1 -jxf symbols.tar.bz2
-  # Compile metamath, a C verifier (and more) by Norm Megill.
-  - gcc *.c -O2 -o metamath
+  - scripts/download-metamath
+  # Build/install metamath, a C verifier (and more) by Norm Megill.
+  - scripts/build-metamath
   # Get mmj2, a Java verifier (and more) by Mel O'Cat and Mario Carneiro
   - wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
   - unzip -q mmj2jar.zip
