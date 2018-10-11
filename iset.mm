@@ -35236,11 +35236,15 @@ $)
   ordelss $p |- ( ( Ord A /\ B e. A ) -> B C_ A ) $=
     ( word wtr wcel wss ordtr trss imp sylan ) ACADZBAEZBAFZAGKLMABHIJ $.
 
-  $( A transitive subclass of an ordinal class is ordinal.  (Contributed by NM,
-     29-May-1994.) $)
-  trssord $p |- ( ( Tr A /\ A C_ B /\ Ord B ) -> Ord A ) $=
-    ( wtr wss word w3a cep wwe ordwe wess imp sylan2 anim2i 3impb df-ord sylibr
-    wa ) ACZABDZBEZFRAGHZQZAERSTUBSTQUARTSBGHZUABISUCUAABGJKLMNAOP $.
+  ${
+    $d A x $.  $d B x $.
+    $( A transitive subclass of an ordinal class is ordinal.  (Contributed by
+       NM, 29-May-1994.) $)
+    trssord $p |- ( ( Tr A /\ A C_ B /\ Ord B ) -> Ord A ) $=
+      ( vx wtr wss word w3a wral df-iord simprbi ssralv syl5 imp anim2i
+      cv wa 3impb sylibr ) ADZABEZBFZGSCODZCAHZPZAFSTUAUDTUAPUCSTUAUCUA
+      UBCBHZTUCUABDUECBIJUBCABKLMNQCAIR $.
+  $}
 
   $( Epsilon irreflexivity of ordinals: no ordinal class is a member of
      itself.  Theorem 2.2(i) of [BellMachover] p. 469, generalized to classes.
