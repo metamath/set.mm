@@ -35224,9 +35224,12 @@ $)
     id 3bitr4g ) ABCZADZAEFZAAGZCZHBDZBEFZBBGZCZHAIBIRSUCTUDUBUFABJABEKRABUAUER
     PABLMNAOBOQ $.
 
-  $( An ordinal class is transitive.  (Contributed by NM, 3-Apr-1994.) $)
-  ordtr $p |- ( Ord A -> Tr A ) $=
-    ( word wtr cep wwe df-ord simplbi ) ABACADEAFG $.
+  ${
+    $d x A $.
+    $( An ordinal class is transitive.  (Contributed by NM, 3-Apr-1994.) $)
+    ordtr $p |- ( Ord A -> Tr A ) $=
+      ( vx word wtr cv wral df-iord simplbi ) ACADBEDBAFBAGH $.
+  $}
 
   $( An element of an ordinal class is a subset of it.  (Contributed by NM,
      30-May-1994.) $)
