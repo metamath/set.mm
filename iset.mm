@@ -35246,26 +35246,6 @@ $)
       UBCBHZTUCUABDUECBIJUBCABKLMNQCAIR $.
   $}
 
-  $( Epsilon irreflexivity of ordinals: no ordinal class is a member of
-     itself.  Theorem 2.2(i) of [BellMachover] p. 469, generalized to classes.
-     We prove this without invoking the Axiom of Regularity.  (Contributed by
-     NM, 2-Jan-1994.) $)
-  ordirr $p |- ( Ord A -> -. A e. A ) $=
-    ( word cep wfr wcel wn ordfr efrirr syl ) ABACDAAEFAGAHI $.
-
-  $( A member of an ordinal class is not equal to it.  (Contributed by NM,
-     25-May-1998.) $)
-  nordeq $p |- ( ( Ord A /\ B e. A ) -> A =/= B ) $=
-    ( word wcel wne wn wceq ordirr eleq1 notbid syl5ibcom necon2ad imp ) ACZBAD
-    ZABENOABNAADZFABGZOFAHQPOABAIJKLM $.
-
-  $( An ordinal class cannot an element of one of its members.  Variant of
-     first part of Theorem 2.2(vii) of [BellMachover] p. 469.  (Contributed by
-     NM, 3-Apr-1994.) $)
-  ordn2lp $p |- ( Ord A -> -. ( A e. B /\ B e. A ) ) $=
-    ( word wcel wa ordirr wtr wi ordtr trel syl mtod ) ACZABDBADEZAADZAFMAGNOHA
-    IAABJKL $.
-
   ${
     $d x B $.
     $( A subclass (possibly proper) of an ordinal class has a minimal element.
@@ -35375,61 +35355,6 @@ $)
       mpbird ) ACDZBCDZEZABFZCDZUAGZRAGBGUCSAHBHABIJTRUAKDUBUCLRSMABCNUAKOPQ $.
   $}
 
-  $( A trichotomy law for ordinals.  Proposition 7.10 of [TakeutiZaring]
-     p. 38.  (Contributed by NM, 10-May-1994.)  (Proof shortened by Andrew
-     Salmon, 25-Jul-2011.) $)
-  ordtri3or $p |- ( ( Ord A /\ Ord B ) -> ( A e. B \/ A = B \/ B e. A ) ) $=
-    ( word wa wcel wceq w3o wpss wss wo ordin sylib inss1 ordsseleq mpbii sylan
-    cin wn ord df-ss ordirr syl ianor elin incom eleq1i anbi2i xchnxbir anabss1
-    bitri syl6ibr anabss4 orim12d mpd sspsstri ordelpss ancoms 3orbi123d mpbird
-    biidd wb ) ACZBCZDZABEZABFZBAEZGABHZVFBAHZGZVDABIZBAIZJZVJVDABQZAEZRZBAQZBE
-    ZRZJZVMVDVNVNEZRZVTVDVNCZWBABKZVNUAUBVOVRDZVTWAVOVRUCWAVOVNBEZDWEVNABUDWFVR
-    VOVNVQBABUEUFUGUJUHLVDVPVKVSVLVDVPVNAFZVKVDVOWGVBVCVOWGJZVDWCVBWHWDWCVBDVNA
-    IWHABMVNANOPUISABTUKVDVSVQBFZVLVDVRWIVBVCVRWIJZVCVBDVQCZVCWJBAKWKVCDVQBIWJB
-    AMVQBNOPULSBATUKUMUNABUOLVDVEVHVFVFVGVIABUPVDVFUTVCVBVGVIVABAUPUQURUS $.
-
-  $( A trichotomy law for ordinals.  (Contributed by NM, 25-Mar-1995.)  (Proof
-     shortened by Andrew Salmon, 25-Jul-2011.) $)
-  ordtri1 $p |- ( ( Ord A /\ Ord B ) -> ( A C_ B <-> -. B e. A ) ) $=
-    ( word wa wss wcel wceq wo wn ordsseleq wi imnan sylibr ordirr eleq2 notbid
-    ordn2lp syl5ibrcom jaao w3o ordtri3or df-3or sylib orcomd ord impbid bitrd
-    ) ACZBCZDZABEABFZABGZHZBAFZIZABJUJUMUOUHUKUOUIULUHUKUNDIUKUOKABQUKUNLMUIUOU
-    LBBFZIBNULUNUPABBOPRSUJUNUMUJUMUNUJUKULUNTUMUNHABUAUKULUNUBUCUDUEUFUG $.
-
-  $( A trichotomy law for ordinal numbers.  (Contributed by NM, 6-Nov-2003.) $)
-  ontri1 $p |- ( ( A e. On /\ B e. On ) -> ( A C_ B <-> -. B e. A ) ) $=
-    ( con0 wcel word wss wn wb eloni ordtri1 syl2an ) ACDAEBEABFBADGHBCDAIBIABJ
-    K $.
-
-  $( A trichotomy law for ordinals.  (Contributed by NM, 25-Nov-1995.) $)
-  ordtri2 $p |- ( ( Ord A /\ Ord B ) ->
-               ( A e. B <-> -. ( A = B \/ B e. A ) ) ) $=
-    ( word wa wceq wcel wo wn wb wss ordsseleq eqcom orbi2i orcom bitri ordtri1
-    syl6bb bitr3d ancoms con2bid ) ACZBCZDABEZBAFZGZABFZUBUAUEUFHZIUBUADZBAJZUE
-    UGUHUIUDBAEZGZUEBAKUKUDUCGUEUJUCUDBALMUDUCNOQBAPRST $.
-
-  $( A trichotomy law for ordinals.  (Contributed by NM, 18-Oct-1995.)  (Proof
-     shortened by Andrew Salmon, 25-Jul-2011.) $)
-  ordtri3 $p |- ( ( Ord A /\ Ord B ) ->
-               ( A = B <-> -. ( A e. B \/ B e. A ) ) ) $=
-    ( word wa wceq wcel wo wn ordirr eleq2 notbid syl5ib syl5ibr anim12d pm4.56
-    com12 syl6ib w3o ordtri3or sylib df-3or or32 ord impbid ) ACZBCZDZABEZABFZB
-    AFZGZHZUGUHUIHZUJHZDZULUHUGUOUHUEUMUFUNUEAAFZHUHUMAIUHUPUIABAJKLUFUNUHBBFZH
-    BIUHUJUQABBJKMNPUIUJOQUGUKUHUGUIUHGUJGZUKUHGUGUIUHUJRURABSUIUHUJUATUIUHUJUB
-    TUCUD $.
-
-  $( A trichotomy law for ordinals.  (Contributed by NM, 1-Nov-2003.)  (Proof
-     shortened by Andrew Salmon, 25-Jul-2011.) $)
-  ordtri4 $p |- ( ( Ord A /\ Ord B ) ->
-               ( A = B <-> ( A C_ B /\ -. A e. B ) ) ) $=
-    ( wceq wss wa word wcel wn eqss wb ordtri1 ancoms anbi2d syl5bb ) ABCABDZBA
-    DZEAFZBFZEZOABGHZEABISPTORQPTJBAKLMN $.
-
-  $( An ordinal class and its singleton are disjoint.  (Contributed by NM,
-     19-May-1998.) $)
-  orddisj $p |- ( Ord A -> ( A i^i { A } ) = (/) ) $=
-    ( word wcel wn csn cin c0 wceq ordirr disjsn sylibr ) ABAACDAAEFGHAIAAJK $.
-
   $( Relationship between membership and proper subset of an ordinal number.
      (Contributed by NM, 15-Sep-1995.) $)
   onelpss $p |- ( ( A e. On /\ B e. On ) ->
@@ -35484,17 +35409,6 @@ $)
 
   ${
     $d x y A $.  $d x y B $.
-    $( The union of an ordinal stays the same if a subset equal to one of its
-       elements is removed.  (Contributed by NM, 10-Dec-2004.) $)
-    ordunidif $p |- ( ( Ord A /\ B e. A ) -> U. ( A \ B ) = U. A ) $=
-      ( vx vy word wcel wa cv wss cdif wrex wi syl wn eldif adantl sseq2 rspcev
-      cuni syl6 wral wceq con0 ordelon onelss eloni ordirr simplbi2 syl5 jctild
-      mpd adantr biimpri ssid jctir ex pm2.61d ralrimiva unidif ) AEZBAFZGZCHZD
-      HZIZDABJZKZCAUAVFSASUBVBVGCAVBVCAFZGZVCBFZVGVIVJBVFFZVCBIZGZVGVBVJVMLVHVB
-      VJVLVKVBBUCFZVJVLLABUDZBVCUEMVBVNVKVOVAVNVKLUTVNBBFNZVAVKVNBEVPBUFBUGMVKV
-      AVPBABOUHUIPUKUJULVEVLDBVFVDBVCQRTVHVJNZVGLVBVHVQVCVFFZVCVCIZGZVGVHVQVTVH
-      VQGZVRVSVRWAVCABOUMVCUNUOUPVEVSDVCVFVDVCVCQRTPUQURCDABUSM $.
-
     $( If ` B ` is smaller than ` A ` , then it equals the intersection of the
        difference.  Exercise 11 in [TakeutiZaring] p. 44.  (Contributed by
        Andrew Salmon, 14-Nov-2011.) $)
@@ -35813,15 +35727,6 @@ $)
       QVFUMGZUSVBVGURBEUSMVBURBSURBRTUAUBUCUDUEUFUGUJUMUQUTPULCBUPDUHUIUK $.
   $}
 
-  $( There is no set between an ordinal class and its successor.  Generalized
-     Proposition 7.25 of [TakeutiZaring] p. 41.  (Contributed by NM,
-     21-Jun-1998.) $)
-  ordnbtwn $p |- ( Ord A -> -. ( A e. B /\ B e. suc A ) ) $=
-    ( word wcel wa wo csuc wn ordn2lp ordirr ioran sylanbrc elsuci anim2i sylib
-    wceq andi eleq2 biimpac orim2i syl nsyl ) ACZABDZBADZEZAADZFZUDBAGDZEZUCUFH
-    UGHUHHABIAJUFUGKLUJUFUDBAPZEZFZUHUJUDUEUKFZEUMUIUNUDBAMNUDUEUKQOULUGUFUKUDU
-    GBAARSTUAUB $.
-
   $( There is no set between an ordinal number and its successor.  Proposition
      7.25 of [TakeutiZaring] p. 41.  (Contributed by NM, 9-Jun-1994.) $)
   onnbtwn $p |- ( A e. On -> -. ( A e. B /\ B e. suc A ) ) $=
@@ -35928,11 +35833,6 @@ $)
     ontrci $p |- Tr A $=
       ( word wtr onordi ordtr ax-mp ) ACADABEAFG $.
 
-    $( An ordinal number is not a member of itself.  Theorem 7M(c) of
-       [Enderton] p. 192.  (Contributed by NM, 11-Jun-1994.) $)
-    onirri $p |- -. A e. A $=
-      ( word wcel wn onordi ordirr ax-mp ) ACAADEABFAGH $.
-
     $( A member of an ordinal number is an ordinal number.  Theorem 7M(a) of
        [Enderton] p. 192.  (Contributed by NM, 11-Jun-1994.) $)
     oneli $p |- ( B e. A -> B e. On ) $=
@@ -35942,12 +35842,6 @@ $)
        11-Aug-1994.) $)
     onelssi $p |- ( B e. A -> B C_ A ) $=
       ( con0 wcel wss wi onelss ax-mp ) ADEBAEBAFGCABHI $.
-
-    $( An ordering law for ordinal numbers.  (Contributed by NM,
-       13-Jun-1994.) $)
-    onssneli $p |- ( A C_ B -> -. B e. A ) $=
-      ( wcel wss con0 word wn oneli eloni ordirr 3syl ssel com12 mtod con2i ) B
-      ADZABEZQRBBDZQBFDBGSHABCIBJBKLRQSABBMNOP $.
 
     $( An ordering law for ordinal numbers.  (Contributed by NM,
        13-Jun-1994.) $)
