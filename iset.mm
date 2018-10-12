@@ -35247,17 +35247,6 @@ $)
   $}
 
   ${
-    $d x B $.
-    $( A subclass (possibly proper) of an ordinal class has a minimal element.
-       Proposition 7.5 of [TakeutiZaring] p. 36.  (Contributed by NM,
-       18-Feb-2004.)  (Revised by David Abernethy, 16-Mar-2011.) $)
-    tz7.5 $p |- ( ( Ord A /\ B C_ A /\ B =/= (/) ) ->
-               E. x e. B ( B i^i x ) = (/) ) $=
-      ( word cep wwe wss c0 wne cv cin wceq wrex ordwe wefrc syl3an1 ) BDBEFCBG
-      CHICAJKHLACMBNABCOP $.
-  $}
-
-  ${
     $d x y z A $.  $d x y z B $.
     $( An element of an ordinal class is ordinal.  Proposition 7.6 of
        [TakeutiZaring] p. 36.  (Contributed by NM, 23-Apr-1994.) $)
