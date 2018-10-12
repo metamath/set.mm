@@ -35278,51 +35278,6 @@ $)
   onelon $p |- ( ( A e. On /\ B e. A ) -> B e. On ) $=
     ( con0 wcel word eloni ordelon sylan ) ACDAEBADBCDAFABGH $.
 
-  ${
-    $d x y A $.  $d x y B $.
-    $( Proposition 7.7 of [TakeutiZaring] p. 37.  (Contributed by NM,
-       5-May-1994.) $)
-    tz7.7 $p |- ( ( Ord A /\ Tr B ) ->
-                ( B e. A <-> ( B C_ A /\ B =/= A ) ) ) $=
-      ( vx vy word wtr wa wcel wss wne wi cep c0 cv wceq imp32 wn nsyli adantll
-      imp wfr ordtr ordfr tz7.2 3exp sylc adantr cdif pssdifn0 wrex difss tz7.5
-      cin mp3an2 eldifi trss difin0ss com12 syl56 ad2antrr eleq1 biimpcd eldifn
-      syl adantl trel exp3acom23 ex adantld w3o wwe ordwe ssel2 anim12i wecmpep
-      syl2an adantlr ecase23d exp44 com34 imp31 ssrdv adantrr ad2antrl eqeltrrd
-      eqssd rexlimdvaa syl5 exp4b com23 adantrd pm2.43i syl7 exp4a imp3a impbid
-      pm2.43d ) AEZBFZGZBAHZBAIZBAJZGZWRXAXDKZWSWRAFZALUAZXEAUBZAUCXFXGXAXDABUD
-      UEUFUGWTXBXCXAWTXBXCXAKWTXBXBXCXAXDABUHZMJZWTXBXABAUIWTXBXJXAKZKZWTWRXLWS
-      WTXBWRXKWTXBWRXJXAWRXJGXICNZUMMOZCXIUJZWTXBGZXAWRXIAIXJXOABUKCAXIULUNXPXN
-      XACXIXPXMXIHZXNGGZXMBAXRXMBXPXQXNXMBIZWRXQXNXSKZKZWSXBWRXFYAXHXQXMAHZXFXM
-      AIZXTXMABUOZAXMUPXNYCXSABXMUQURUSVDUTPXPXQBXMIXNXPXQGDBXMWTXBXQDNZBHZYEXM
-      HZKWTXBYFXQYGWTXBYFXQYGWTXBYFGZXQGZGYGYEXMOZXMYEHZYIYJQZWTYFXQYLXBYFXQYLY
-      FYJXMBHZXQYJYFYMYEXMBVAVBXMABVCZRTSVEWSYIYKQZWRWSYHXQYOWSYFXQYOKZXBWSYFYP
-      WSYFGYKYMXQWSYFYKYMKWSYKYFYMBXMYEVFVGTYNRVHVIPSWRYIYGYJYKVJZWSWRALVKYEAHZ
-      YBGYQYIAVLYHYRXQYBBAYEVMYDVNDCAVOVPVQVRVSVTWAWBWCWFXQYBXPXNYDWDWEWGWHWIWJ
-      WKWLWMWNWQWOWP $.
-  $}
-
-  $( Corollary 7.8 of [TakeutiZaring] p. 37.  (Contributed by NM,
-     25-Nov-1995.) $)
-  ordelssne $p |- ( ( Ord A /\ Ord B ) ->
-              ( A e. B <-> ( A C_ B /\ A =/= B ) ) ) $=
-    ( word wcel wss wne wa wb wtr ordtr tz7.7 sylan2 ancoms ) BCZACZABDABEABFGH
-    ZONAIPAJBAKLM $.
-
-  $( Corollary 7.8 of [TakeutiZaring] p. 37.  (Contributed by NM,
-     17-Jun-1998.) $)
-  ordelpss $p |- ( ( Ord A /\ Ord B ) -> ( A e. B <-> A C. B ) ) $=
-    ( word wa wcel wss wne wpss ordelssne df-pss syl6bbr ) ACBCDABEABFABGDABHAB
-    IABJK $.
-
-  $( For ordinal classes, subclass is equivalent to membership or equality.
-     (Contributed by NM, 25-Nov-1995.)  (Proof shortened by Andrew Salmon,
-     25-Jul-2011.) $)
-  ordsseleq $p |- ( ( Ord A /\ Ord B ) ->
-                  ( A C_ B <-> ( A e. B \/ A = B ) ) ) $=
-    ( word wa wcel wceq wo wpss wss ordelpss orbi1d sspss syl6rbbr ) ACBCDZABEZ
-    ABFZGABHZPGABINOQPABJKABLM $.
-
   $( The intersection of two ordinal classes is ordinal.  Proposition 7.9 of
      [TakeutiZaring] p. 37.  (Contributed by NM, 9-May-1994.) $)
   ordin $p |- ( ( Ord A /\ Ord B ) -> Ord ( A i^i B ) ) $=
@@ -35337,20 +35292,6 @@ $)
       ( con0 wcel wa cin word eloni ordin syl2an cvv wb simpl inex1g elong 3syl
       mpbird ) ACDZBCDZEZABFZCDZUAGZRAGBGUCSAHBHABIJTRUAKDUBUCLRSMABCNUAKOPQ $.
   $}
-
-  $( Relationship between membership and proper subset of an ordinal number.
-     (Contributed by NM, 15-Sep-1995.) $)
-  onelpss $p |- ( ( A e. On /\ B e. On ) ->
-               ( A e. B <-> ( A C_ B /\ A =/= B ) ) ) $=
-    ( con0 wcel word wss wne wa wb eloni ordelssne syl2an ) ACDAEBEABDABFABGHIB
-    CDAJBJABKL $.
-
-  $( Relationship between subset and membership of an ordinal number.
-     (Contributed by NM, 15-Sep-1995.) $)
-  onsseleq $p |- ( ( A e. On /\ B e. On ) ->
-                 ( A C_ B <-> ( A e. B \/ A = B ) ) ) $=
-    ( con0 wcel word wss wceq wo wb eloni ordsseleq syl2an ) ACDAEBEABFABDABGHI
-    BCDAJBJABKL $.
 
   $( An element of an ordinal number is a subset of the number.  (Contributed
      by NM, 5-Jun-1994.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
