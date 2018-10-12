@@ -1564,6 +1564,7 @@
 "bitr3" is used by "e2ebindVD".
 "bitr3" is used by "sbc3orgVD".
 "bitr3" is used by "trsbcVD".
+"bj-csbsnlem" is used by "bj-csbsn".
 "blo3i" is used by "ipblnfi".
 "blocn" is used by "blocn2".
 "blocn2" is used by "ubthlem1".
@@ -13660,6 +13661,8 @@ New usage of "bdopssadj" is discouraged (4 uses).
 New usage of "binom2aiOLD" is discouraged (0 uses).
 New usage of "bitr3" is discouraged (6 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
+New usage of "bj-csbsnlem" is discouraged (1 uses).
+New usage of "bj-sbeqALT" is discouraged (0 uses).
 New usage of "blo3i" is discouraged (1 uses).
 New usage of "blocn" is discouraged (1 uses).
 New usage of "blocn2" is discouraged (2 uses).
