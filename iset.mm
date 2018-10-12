@@ -35251,16 +35251,10 @@ $)
     $( An element of an ordinal class is ordinal.  Proposition 7.6 of
        [TakeutiZaring] p. 36.  (Contributed by NM, 23-Apr-1994.) $)
     ordelord $p |- ( ( Ord A /\ B e. A ) -> Ord B ) $=
-      ( vx vz vy word wcel cv wa wceq eleq1 anbi2d wtr cep wwe wel wal w3a syl
-      wi ordeq imbi12d simpll 3anrot 3anass ordtr trel3 syl5bir impl exp3acom23
-      bitr3i trel imp31 adantrl simplr ordwe sylan syl13anc ex pm2.43d alrimivv
-      wetrep dftr2 sylibr wss trss wess syl5com syld imp df-ord sylanbrc vtoclg
-      anabsi7 ) AFZBAGZBFZVOCHZAGZIZVRFZTVOVPIZVQTCBAVRBJZVTWBWAVQWCVSVPVOVRBAK
-      LVRBUAUBVTVRMZVRNOZWAVTDEPZECPZIZDCPZTZEQDQWDVTWJDEVTWHWIVTWHWJVTWHIVODHZ
-      AGZEHZAGZVSWJVOVSWHUCVOVSWHWLVSWHIZWFWGVSRZVOWLWPVSWFWGRWOVSWFWGUDVSWFWGU
-      EUKVOAMZWPWLTAUFZAWKWMVRUGSUHUIVTWGWNWFVOVSWGWNVOWGVSWNVOWQWGVSIWNTWRAWMV
-      RULSUJUMUNVOVSWHUOVOANOZWLWNVSRWJAUPZDECAVBUQURUSUTVADEVRVCVDVOVSWEVOVSVR
-      AVEZWEVOWQVSXATWRAVRVFSVOWSXAWEWTVRANVGVHVIVJVRVKVLVMVN $.
+      ( vx word wcel cv wa wceq eleq1 anbi2d ordeq imbi12d wtr wss wral df-iord
+      wi simprbi r19.21bi ordelss ax-ia1 trssord syl3anc vtoclg anabsi7 ) ADZBA
+      EZBDZUFCFZAEZGZUIDZQUFUGGZUHQCBAUIBHZUKUMULUHUNUJUGUFUIBAIJUIBKLUKUIMZUIA
+      NUFULUFUOCAUFAMUOCAOCAPRSAUITUFUJUAUIAUBUCUDUE $.
   $}
 
   ${
