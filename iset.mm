@@ -35317,22 +35317,6 @@ $)
       ( con0 wcel crab cint wss intminss ex ) DFGBACFHIDJABCDFEKL $.
   $}
 
-  ${
-    $d x A $.  $d x B $.
-    $( A way to show that an ordinal number equals the minimum of a collection
-       of ordinal numbers: it must be in the collection, and it must not be
-       larger than any member of the collection.  (Contributed by NM,
-       14-Nov-2003.) $)
-    oneqmini $p |- ( B C_ On -> ( ( A e. B /\ A. x e. A -. x e. B )
-                    -> A = |^| B ) ) $=
-      ( con0 wss wcel cv wn wral wa cint wceq ssint wi ssel anim12d ontri1 syl6
-      wb expdimp pm5.74d con2b syl6bb syl5bb biimprd expimpd intss1 a1i adantrd
-      ralbidv2 jcad eqss syl6ibr ) CDEZBCFZAGZCFZHZABIZJZBCKZEZVABEZJBVALUNUTVB
-      VCUNUOUSVBUNUOJZVBUSVBBUPEZACIVDUSABCMVDVEURACBVDUQVENUQUPBFZHZNVFURNVDUQ
-      VEVGUNUOUQVEVGSZUNUOUQJBDFZUPDFZJVHUNUOVIUQVJCDBOCDUPOPBUPQRTUAUQVFUBUCUJ
-      UDUEUFUNUOVCUSUOVCNUNBCUGUHUIUKBVAULUM $.
-  $}
-
   $( The empty set is an ordinal class.  (Contributed by NM, 11-May-1994.) $)
   ord0 $p |- Ord (/) $=
     ( c0 word wtr cep wwe tr0 we0 df-ord mpbir2an ) ABACADEFDGAHI $.
