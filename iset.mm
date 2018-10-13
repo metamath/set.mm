@@ -35302,14 +35302,6 @@ $)
   ordtr1 $p |- ( Ord C -> ( ( A e. B /\ B e. C ) -> A e. C ) ) $=
     ( word wtr wcel wa wi ordtr trel syl ) CDCEABFBCFGACFHCICABJK $.
 
-  $( Transitive law for ordinal classes.  (Contributed by Mario Carneiro,
-     30-Dec-2014.) $)
-  ordtr3 $p |- ( ( Ord B /\ Ord C ) -> ( A e. B -> ( A e. C \/ C e. B ) ) ) $=
-    ( word wa wcel wo wss simplr ordelord adantlr ordtri1 syl2anc ordtr2 ancoms
-    wn wb wi ancomsd expdimp sylbird orrd ex ) BDZCDZEZABFZACFZCBFZGUFUGEZUHUIU
-    JUHPZCAHZUIUJUEADZULUKQUDUEUGIUDUGUMUEBAJKCALMUFUGULUIUFULUGUIUEUDULUGEUIRC
-    ABNOSTUAUBUC $.
-
   $( Transitive law for ordinal numbers.  Theorem 7M(b) of [Enderton] p. 192.
      (Contributed by NM, 11-Aug-1994.) $)
   ontr1 $p |- ( C e. On -> ( ( A e. B /\ B e. C ) -> A e. C ) ) $=
