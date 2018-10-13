@@ -35335,8 +35335,8 @@ $)
   $( The empty set is not a limit ordinal.  (Contributed by NM, 24-Mar-1995.)
      (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
   nlim0 $p |- -. Lim (/) $=
-    ( c0 wlim word wcel cuni wceq w3a noel simp2 mto dflim2 mtbir ) ABACZAADZAA
-    EFZGZPNAHMNOIJAKL $.
+    ( c0 wlim word wne cuni wceq w3a neirr simp2 mto df-lim mtbir ) A
+    BACZAADZAAEFZGZPNAHMNOIJAKL $.
 
   $( A limit ordinal is ordinal.  (Contributed by NM, 4-May-1995.) $)
   limord $p |- ( Lim A -> Ord A ) $=
