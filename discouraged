@@ -1402,7 +1402,6 @@
 "ax16ALTNEW7" is used by "dvelimALTNEW7".
 "ax17el" is used by "dveel2ALT".
 "ax17eq" is used by "dveeq1-o16".
-"ax17eq" is used by "dveeq2-o16".
 "ax46" is used by "ax46to4".
 "ax46" is used by "ax46to6".
 "ax467" is used by "ax467to4".
@@ -1565,6 +1564,7 @@
 "bitr3" is used by "e2ebindVD".
 "bitr3" is used by "sbc3orgVD".
 "bitr3" is used by "trsbcVD".
+"bj-csbsnlem" is used by "bj-csbsn".
 "blo3i" is used by "ipblnfi".
 "blocn" is used by "blocn2".
 "blocn2" is used by "ubthlem1".
@@ -4189,12 +4189,12 @@
 "csbabgOLD" is used by "csbunigVD".
 "csbabgOLD" is used by "csbxpgOLD".
 "csbabgOLD" is used by "csbxpgVD".
-"csbeq2g" is used by "csbfv12gALTVD".
-"csbeq2g" is used by "csbima12gALTVD".
-"csbeq2g" is used by "csbresgVD".
-"csbeq2g" is used by "csbrngVD".
-"csbeq2g" is used by "csbsngVD".
-"csbeq2g" is used by "csbxpgVD".
+"csbeq2gOLD" is used by "csbfv12gALTVD".
+"csbeq2gOLD" is used by "csbima12gALTVD".
+"csbeq2gOLD" is used by "csbresgVD".
+"csbeq2gOLD" is used by "csbrngVD".
+"csbeq2gOLD" is used by "csbsngVD".
+"csbeq2gOLD" is used by "csbxpgVD".
 "csbexgOLD" is used by "csbexOLD".
 "csbima12gOLD" is used by "csbfv12gALTOLD".
 "csbima12gOLD" is used by "csbfv12gALTVD".
@@ -5100,7 +5100,6 @@
 "dveeq2-o" is used by "ax11v2-o".
 "dveeq2OLD" is used by "ax10OLD".
 "dveeq2OLD" is used by "ax9OLD".
-"dvelimALT" is used by "dveeq2-o16".
 "dvelimf-o" is used by "ax11el".
 "dvelimf-o" is used by "dveeq1-o".
 "dvelimf-o" is used by "dveeq2-o".
@@ -13545,7 +13544,7 @@ New usage of "ax16ALTNEW7" is discouraged (1 uses).
 New usage of "ax16b" is discouraged (0 uses).
 New usage of "ax172" is discouraged (0 uses).
 New usage of "ax17el" is discouraged (1 uses).
-New usage of "ax17eq" is discouraged (2 uses).
+New usage of "ax17eq" is discouraged (1 uses).
 New usage of "ax17o" is discouraged (0 uses).
 New usage of "ax1cn" is discouraged (0 uses).
 New usage of "ax1ne0" is discouraged (0 uses).
@@ -13662,6 +13661,8 @@ New usage of "bdopssadj" is discouraged (4 uses).
 New usage of "binom2aiOLD" is discouraged (0 uses).
 New usage of "bitr3" is discouraged (6 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
+New usage of "bj-csbsnlem" is discouraged (1 uses).
+New usage of "bj-sbeqALT" is discouraged (0 uses).
 New usage of "blo3i" is discouraged (1 uses).
 New usage of "blocn" is discouraged (1 uses).
 New usage of "blocn2" is discouraged (2 uses).
@@ -14457,7 +14458,7 @@ New usage of "csbabgOLD" is discouraged (11 uses).
 New usage of "csbcnvgOLD" is discouraged (0 uses).
 New usage of "csbcomgOLD" is discouraged (0 uses).
 New usage of "csbdmgOLD" is discouraged (0 uses).
-New usage of "csbeq2g" is discouraged (6 uses).
+New usage of "csbeq2gOLD" is discouraged (6 uses).
 New usage of "csbeq2gVD" is discouraged (0 uses).
 New usage of "csbexOLD" is discouraged (0 uses).
 New usage of "csbexgOLD" is discouraged (1 uses).
@@ -14860,10 +14861,9 @@ New usage of "dveeq1-o" is discouraged (1 uses).
 New usage of "dveeq1-o16" is discouraged (0 uses).
 New usage of "dveeq1OLD" is discouraged (0 uses).
 New usage of "dveeq2-o" is discouraged (4 uses).
-New usage of "dveeq2-o16" is discouraged (0 uses).
 New usage of "dveeq2ALT" is discouraged (0 uses).
 New usage of "dveeq2OLD" is discouraged (2 uses).
-New usage of "dvelimALT" is discouraged (1 uses).
+New usage of "dvelimALT" is discouraged (0 uses).
 New usage of "dvelimALTNEW7" is discouraged (0 uses).
 New usage of "dvelimdfOLD" is discouraged (0 uses).
 New usage of "dvelimf-o" is discouraged (3 uses).
@@ -15195,7 +15195,6 @@ New usage of "fh3i" is discouraged (1 uses).
 New usage of "fh4i" is discouraged (0 uses).
 New usage of "fisucdomOLD" is discouraged (0 uses).
 New usage of "flddivrng" is discouraged (2 uses).
-New usage of "fmpt2dOLD" is discouraged (0 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "fngid" is discouraged (0 uses).
 New usage of "fnprOLD" is discouraged (0 uses).
@@ -17814,7 +17813,7 @@ Proof modification of "csbabgOLD" is discouraged (93 steps).
 Proof modification of "csbcnvgOLD" is discouraged (112 steps).
 Proof modification of "csbcomgOLD" is discouraged (153 steps).
 Proof modification of "csbdmgOLD" is discouraged (96 steps).
-Proof modification of "csbeq2g" is discouraged (33 steps).
+Proof modification of "csbeq2gOLD" is discouraged (33 steps).
 Proof modification of "csbeq2gVD" is discouraged (61 steps).
 Proof modification of "csbexOLD" is discouraged (27 steps).
 Proof modification of "csbexgOLD" is discouraged (89 steps).
@@ -17880,7 +17879,6 @@ Proof modification of "dveeq1-o" is discouraged (20 steps).
 Proof modification of "dveeq1-o16" is discouraged (22 steps).
 Proof modification of "dveeq1OLD" is discouraged (14 steps).
 Proof modification of "dveeq2-o" is discouraged (20 steps).
-Proof modification of "dveeq2-o16" is discouraged (18 steps).
 Proof modification of "dveeq2OLD" is discouraged (14 steps).
 Proof modification of "dvelimALT" is discouraged (106 steps).
 Proof modification of "dvelimALTNEW7" is discouraged (106 steps).
@@ -18113,7 +18111,6 @@ Proof modification of "exlimivOLD" is discouraged (16 steps).
 Proof modification of "exsbOLD" is discouraged (36 steps).
 Proof modification of "f1oweALT" is discouraged (805 steps).
 Proof modification of "fisucdomOLD" is discouraged (90 steps).
-Proof modification of "fmpt2dOLD" is discouraged (40 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "fnprOLD" is discouraged (258 steps).
 Proof modification of "fsumiunOLD" is discouraged (39 steps).
