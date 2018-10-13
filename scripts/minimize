@@ -5,4 +5,4 @@ theorem="$1"
 source="${2:-set.mm}"
 
 metamath "read ${source}" "prove ${theorem}" 'minimize *' \
-  'save new /compressed' 'write source ${source} /rewrap' quit quit
+  'save new /compressed' "write source ${source} /rewrap" quit quit
