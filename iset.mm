@@ -35327,13 +35327,6 @@ $)
   0elon $p |- (/) e. On $=
     ( c0 con0 wcel word ord0 0ex elon mpbir ) ABCADEAFGH $.
 
-  $( An alternate definition of a limit ordinal.  (Contributed by NM,
-     4-Nov-2004.) $)
-  dflim2 $p |- ( Lim A <-> ( Ord A /\ (/) e. A /\ A = U. A ) ) $=
-    ( wlim word c0 wne cuni wceq w3a wcel df-lim ord0eln0 anbi1d pm5.32i 3anass
-    wa 3bitr4i bitr4i ) ABACZADEZAAFGZHZRDAIZTHZAJRUBTOZORSTOZOUCUARUDUERUBSTAK
-    LMRUBTNRSTNPQ $.
-
   $( The intersection of the class of ordinal numbers is the empty set.
      (Contributed by NM, 20-Oct-2003.) $)
   inton $p |- |^| On = (/) $=
