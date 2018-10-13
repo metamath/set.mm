@@ -35307,13 +35307,6 @@ $)
   ontr1 $p |- ( C e. On -> ( ( A e. B /\ B e. C ) -> A e. C ) ) $=
     ( con0 wcel word wa wi eloni ordtr1 syl ) CDECFABEBCEGACEHCIABCJK $.
 
-  $( Transitive law for ordinal numbers.  Exercise 3 of [TakeutiZaring] p. 40.
-     (Contributed by NM, 6-Nov-2003.) $)
-  ontr2 $p |- ( ( A e. On /\ C e. On ) ->
-              ( ( A C_ B /\ B e. C ) -> A e. C ) ) $=
-    ( con0 wcel word wss wa wi eloni ordtr2 syl2an ) ADEAFCFABGBCEHACEICDEAJCJA
-    BCKL $.
-
   ${
     $d x y A $.  $d x y B $.
     $( If ` B ` is smaller than ` A ` , then it equals the intersection of the
