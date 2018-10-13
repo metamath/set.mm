@@ -35308,21 +35308,6 @@ $)
     ( con0 wcel word wa wi eloni ordtr1 syl ) CDECFABEBCEGACEHCIABCJK $.
 
   ${
-    $d x y A $.  $d x y B $.
-    $( If ` B ` is smaller than ` A ` , then it equals the intersection of the
-       difference.  Exercise 11 in [TakeutiZaring] p. 44.  (Contributed by
-       Andrew Salmon, 14-Nov-2011.) $)
-    ordintdif $p |- ( ( Ord A /\ Ord B /\ ( A \ B ) =/= (/) )
-      -> B = |^| ( A \ B ) ) $=
-      ( vx cdif c0 wne word wss wn cint wceq ssdif0 necon3bbii w3a cv wcel crab
-      dfdif2 wa ordtri1 inteqi con2bid wb ordelord ancoms sylan bicomd rabbidva
-      an32s inteqd intmin sylan9eq ex sylbird 3impia syl5req syl3an3br ) ABDZEF
-      AGZBGZABHZIZBURJZKVAUREABLMUSUTVBNVCCOZBPIZCAQZJZBURVFCABRUAUSUTVBVGBKZUS
-      UTSZVBBAPZVHVIVAVJABTUBVIVJVHVIVJVGBVDHZCAQZJBVIVFVLVIVEVKCAVIVDAPZSVKVEU
-      SVMUTVKVEUCZUSVMSVDGZUTVNAVDUDUTVOVNBVDTUEUFUIUGUHUJCBAUKULUMUNUOUPUQ $.
-  $}
-
-  ${
     $d x ps $.  $d x A $.
     onintss.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     $( If a property is true for an ordinal number, then the minimum ordinal
