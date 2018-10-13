@@ -35327,18 +35327,6 @@ $)
   0elon $p |- (/) e. On $=
     ( c0 con0 wcel word ord0 0ex elon mpbir ) ABCADEAFGH $.
 
-  $( A non-empty ordinal contains the empty set.  (Contributed by NM,
-     25-Nov-1995.) $)
-  ord0eln0 $p |- ( Ord A -> ( (/) e. A <-> A =/= (/) ) ) $=
-    ( word c0 wcel wne ne0i wceq wn df-ne wo ord0 wa noel ordtri2 con2bid mpan2
-    mpbiri ord syl5bi impbid2 ) ABZCADZACEZACFUCACGZHUAUBACIUAUDUBUACBZUDUBJZKU
-    AUELZUFACDZHAMUGUHUFACNOQPRST $.
-
-  $( An ordinal number contains zero iff it is nonzero.  (Contributed by NM,
-     6-Dec-2004.) $)
-  on0eln0 $p |- ( A e. On -> ( (/) e. A <-> A =/= (/) ) ) $=
-    ( con0 wcel word c0 wne wb eloni ord0eln0 syl ) ABCADEACAEFGAHAIJ $.
-
   $( An alternate definition of a limit ordinal.  (Contributed by NM,
      4-Nov-2004.) $)
   dflim2 $p |- ( Lim A <-> ( Ord A /\ (/) e. A /\ A = U. A ) ) $=
