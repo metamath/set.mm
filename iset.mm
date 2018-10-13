@@ -35302,15 +35302,6 @@ $)
   ordtr1 $p |- ( Ord C -> ( ( A e. B /\ B e. C ) -> A e. C ) ) $=
     ( word wtr wcel wa wi ordtr trel syl ) CDCEABFBCFGACFHCICABJK $.
 
-  $( Transitive law for ordinal classes.  (Contributed by NM, 12-Dec-2004.)
-     (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
-  ordtr2 $p |- ( ( Ord A /\ Ord C ) -> ( ( A C_ B /\ B e. C ) -> A e. C ) ) $=
-    ( word wa wss wcel wpss wi ordelord ex ancld anc2li ordelpss ancoms sspsstr
-    wb expcom syl6bi com23 imp32 com12 syl9 imp3a adantl sylibrd ) ADZCDZEABFZB
-    CGZEZACHZACGUHUKULIUGUHUIUJULUHUJUHUJBDZEZEZUIULUHUJUNUHUJUMUHUJUMCBJKLMUOU
-    IULUHUJUMUIULIZUHUMUJUPUHUMUJUPIUHUMEUJBCHZUPUMUHUJUQQBCNOUIUQULABCPRSKTUAU
-    BUCUDUEACNUF $.
-
   $( Transitive law for ordinal classes.  (Contributed by Mario Carneiro,
      30-Dec-2014.) $)
   ordtr3 $p |- ( ( Ord B /\ Ord C ) -> ( A e. B -> ( A e. C \/ C e. B ) ) ) $=
