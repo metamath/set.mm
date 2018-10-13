@@ -35319,7 +35319,8 @@ $)
 
   $( The empty set is an ordinal class.  (Contributed by NM, 11-May-1994.) $)
   ord0 $p |- Ord (/) $=
-    ( c0 word wtr cep wwe tr0 we0 df-ord mpbir2an ) ABACADEFDGAHI $.
+    ( vx c0 word wtr cv wral tr0 ral0 df-iord mpbir2an ) BCBDAEDZABFG
+    KAHABIJ $.
 
   $( The empty set is an ordinal number.  Corollary 7N(b) of [Enderton]
      p. 193.  (Contributed by NM, 17-Sep-1993.) $)
