@@ -143,6 +143,7 @@ deduction using modus ponens <A HREF="ax-mp.html">ax-mp</A>.
 An example of this is the derivation of the inference
 <A HREF="simpli.html">simpli</A> from the theorem <A
 HREF="simpl.html">simpl</A>.
+<A HREF="#conversion">More details about conversions are covered below</A>.
 
 <P>
 In traditional logic books, this is often resolved using a metatheorem
@@ -194,7 +195,7 @@ The rest of this page explains these easier ways.
 encourage using forms that are easier to deal with directly.
 
 <P>
-In particular, there is a preference for
+In general there is a preference for
 writing assertions in "deduction form"
 instead of writing a proof that would require use of the deduction theorem.
 Applying this approach is called "deduction style".
@@ -239,6 +240,67 @@ we'll explain why definitions are allowed in deduction form.
 In deduction form the antecedent
 (e.g., <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>)
 mimics the context handled in the deduction theorem.
+
+<P>
+Sometimes we have assertions in multiple forms, and we have
+<A HREF="conventions.html">conventions for their labels (names)</a>.
+As just noted, an assertion is in "deduction form" whenever the
+conclusion and all hypotheses are each prefixed with an implication using
+the same antecedent
+(<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT=' ph' TITLE='ph'>).
+Theorems in deduction form have a label suffix of "d" if there
+are other forms of the same assertion.
+We call the simpler version with hypotheses but no common
+antecedent an "inference form" and suffix its label with "i".
+Finally, an assertion in "tautology form" has no hypotheses; all of
+its preconditions (if any) are part of its implication's antecedent,
+and the assertion label (name) has no suffix.
+You can see this by comparing
+<A HREF="pm2.43.html">pm2.43</A> (tautology form),
+<A HREF="pm2.43i.html">pm2.43i</A> (inference form), and
+<A HREF="pm2.43d.html">pm2.43d</A> (deduction form).
+
+<P id="conversion">
+Once you have an assertion in deduction form, you can easily convert it
+to inference form or tautology form:
+<UL>
+<LI>To prove some assertion Ti in induction form,
+given assertion Td in deduction form, there is a simple mechanical
+process you can use.
+First take each Ti hypothesis and insert a <tt>T. -&gt;</tt>
+prefix using <A HREF="a1i.html">a1i</a>.
+You can then use the existing assertion Td to prove the resulting conclusion
+with a <tt>T. -&gt;</tt> prefix.
+Finally, you can remove that prefix using
+<A HREF="trud.html">trud</A>, resulting in the conclusion you
+wanted to prove.</LI>
+
+<LI>To prove some assertion T in tautology form,
+given assertion Td in deduction form, there is another simple mechanical
+process you can use.
+First, select an expression that is the conjunction
+(...<IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT=' /\' TITLE='/\'>...)
+of all of the hypotheses of Td.
+Next, prove that this expression implies each of the separate hypotheses
+of Td in turn by eliminating conjuctions
+(there are a variety of proven assertions to do this, including
+<A HREF="simpl.html">simpl</A>,
+<A HREF="simpr.html">simpr</A>,
+<A HREF="3simpa.html">3simpa</A>,
+<A HREF="3simpb.html">3simpb</A>,
+<A HREF="3simpc.html">3simpc</A>,
+<A HREF="simp1.html">simp1</A>,
+<A HREF="simp2.html">simp2</A>, and
+<A HREF="simp3.html">simp3</A>).
+If the expression is a conjunction of conjunctions, it may sometimes
+take multiple steps to prove some of the hypotheses
+(to break the expression into its parts).
+As your final step, you can then apply the already-proven
+assertion Td (which is in deduction form), proving
+assertion T in tautology form.</LI>
+</UL>
+
+<P>
 The deduction form antecedent can also be used to represent
 the context necessary to support
 <A HREF="#natural-deduction-metamath">natural deduction systems</A>.
