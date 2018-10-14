@@ -1,4 +1,4 @@
-$( iset.mm - Version of 10-Oct-2018
+$( iset.mm - Version of 14-Oct-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -35463,11 +35463,10 @@ $)
       ( cvv wcel csuc sucidg ax-mp ) ACDAAEDBACFG $.
   $}
 
-  $( No successor is empty.  (Contributed by NM, 3-Apr-1995.) $)
-  nsuceq0 $p |- suc A =/= (/) $=
-    ( csuc c0 wcel wceq wn noel sucidg eleq2 syl5ibcom mtoi sucprc eqeq1d eleq1
-    cvv 0ex mpbiri syl6bi con3d pm2.43i pm2.61i neir ) ABZCAODZUCCEZFZUDUEACDZA
-    GUDAUCDUEUGAOHUCCAIJKUDFZUFUHUEUDUHUEACEZUDUHUCACALMUIUDCODPACONQRSTUAUB $.
+  $( No successor is empty.  (Contributed by Jim Kingdon, 14-Oct-2018.) $)
+  nsuceq0g $p |- ( A e. _V -> suc A =/= (/) ) $=
+    ( cvv wcel csuc c0 wceq noel sucidg eleq2 syl5ibcom mtoi neneqad
+    ) ABCZADZEMNEFZAECZAGMANCOPABHNEAIJKL $.
 
   ${
     eqelsuc.1 $e |- A e. _V $.
