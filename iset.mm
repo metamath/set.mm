@@ -35352,12 +35352,6 @@ $)
   limuni2 $p |- ( Lim A -> Lim U. A ) $=
     ( wlim cuni wceq wb limuni limeq syl ibi ) ABZACZBZJAKDJLEAFAKGHI $.
 
-  $( A limit ordinal contains the empty set.  (Contributed by NM,
-     15-May-1994.) $)
-  0ellim $p |- ( Lim A -> (/) e. A ) $=
-    ( wlim c0 wcel wne wceq nlim0 limeq mtbiri necon2ai word wb limord ord0eln0
-    syl mpbird ) ABZCADZACEZQACACFQCBGACHIJQAKRSLAMANOP $.
-
   $( A limit ordinal class that is also a set is an ordinal number.
      (Contributed by NM, 26-Apr-2004.) $)
   limelon $p |- ( ( A e. B /\ Lim A ) -> A e. On ) $=
