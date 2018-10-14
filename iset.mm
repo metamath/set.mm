@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Sep-2018
+$( iset.mm - Version of 7-Oct-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -3851,6 +3851,11 @@ $)
        5-Aug-1993.) $)
     anbi12i $p |- ( ( ph /\ ch ) <-> ( ps /\ th ) ) $=
       ( wa anbi1i anbi2i bitri ) ACGBCGBDGABCEHCDBFIJ $.
+
+    $( Variant of ~ anbi12i with commutation.  (Contributed by Jonathan
+       Ben-Naim, 3-Jun-2011.) $)
+    anbi12ci $p |- ( ( ph /\ ch ) <-> ( th /\ ps ) ) $=
+      ( wa anbi12i ancom bitri ) ACGBDGDBGABCDEFHBDIJ $.
   $}
 
   ${
@@ -5152,6 +5157,12 @@ $)
        by NM, 18-Aug-1994.)  (Revised by NM, 4-Apr-2013.) $)
     jaod $p |- ( ph -> ( ( ps \/ th ) -> ch ) ) $=
       ( wo wi com12 jaoi ) BDGACBACHDABCEIADCFIJI $.
+
+    jaod.3 $e |- ( ph -> ( ps \/ th ) ) $.
+    $( Eliminate a disjunction in a deduction.  (Contributed by Mario Carneiro,
+       29-May-2016.) $)
+    mpjaod $p |- ( ph -> ch ) $=
+      ( wo jaod mpd ) ABDHCGABCDEFIJ $.
   $}
 
   ${
@@ -9262,6 +9273,30 @@ $)
     FUDABGUFTUBHUGUAUHUCUAATEZFUIUAFUAUGUAUIIUIUAAJKABTLPABMNOUAUCIUAUEUCBTQRO
     $.
 
+  ${
+    xorbid.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Deduction joining an equivalence and a left operand to form equivalence
+       of exclusive-or.  (Contributed by Jim Kingdon, 7-Oct-2018.) $)
+    xorbi2d $p |- ( ph -> ( ( th \/_ ps ) <-> ( th \/_ ch ) ) ) $=
+      ( wo wa wn wxo orbi2d anbi2d notbid anbi12d df-xor 3bitr4g ) AD
+      BFZDBGZHZGDCFZDCGZHZGDBIDCIAPSRUAABCDEJAQTABCDEKLMDBNDCNO $.
+
+    $( Deduction joining an equivalence and a right operand to form equivalence
+       of exclusive-or.  (Contributed by Jim Kingdon, 7-Oct-2018.) $)
+    xorbi1d $p |- ( ph -> ( ( ps \/_ th ) <-> ( ch \/_ th ) ) ) $=
+      ( wo wa wn wxo orbi1d anbi1d notbid anbi12d df-xor 3bitr4g ) AB
+      DFZBDGZHZGCDFZCDGZHZGBDICDIAPSRUAABCDEJAQTABCDEKLMBDNCDNO $.
+  $}
+
+  ${
+    xorbi12d.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    xorbi12d.2 $e |- ( ph -> ( th <-> ta ) ) $.
+    $( Deduction joining two equivalences to form equivalence of exclusive-or.
+       (Contributed by Jim Kingdon, 7-Oct-2018.) $)
+    xorbi12d $p |- ( ph -> ( ( ps \/_ th ) <-> ( ch \/_ ta ) ) ) $=
+      ( wxo xorbi1d xorbi2d bitrd ) ABDHCDHCEHABCDFIADECGJK $.
+  $}
+
   $( A consequence of exclusive or.  In classical logic the converse also
      holds.  (Contributed by Jim Kingdon, 8-Mar-2018.) $)
   xorbin $p  |- ( ( ph \/_ ps ) -> ( ph <-> -. ps ) ) $=
@@ -9286,6 +9321,11 @@ $)
     ( wdc wb wn wa dcn dcbi syl5 imp pm5.18dc a1d con2biddc bicomd ex
     mpd ) ACZBCZABDZEZABEZDZDQRFZUBTUCUBCZUBTDQRUDRUACQUDBGAUAHIJUCSU
     BUCSUBEDZUDQRUEABKJLMPNO $.
+
+  $( ` \/_ ` is commutative.  (Contributed by David A. Wheeler, 6-Oct-2018.) $)
+  xorcom $p |- ( ( ph \/_ ps ) <-> ( ps \/_ ph ) ) $=
+    ( wo wa wn wxo orcom ancom notbii anbi12i df-xor 3bitr4i ) ABCZABDZEZDBACZB
+    ADZEZDABFBAFMPORABGNQABHIJABKBAKL $.
 
   $( A decidable proposition is equivalent to a decidable proposition or its
      negation.  Based on theorem *5.15 of [WhiteheadRussell] p. 124.
@@ -9393,9 +9433,17 @@ $)
     ZUTUFVAURVCGAUPLJVBUSABCMNOPUOUIUQAUNUIUQGZUFUGUHVDBCQJRSUOUKDZULDZUMUTGUFU
     GVEUHUFUGVEABTJUAUFUHVFUGUFUHVFACTJUBUKULQUCUDUE $.
 
+  $( Conjunction distributes over exclusive-or.  (Contributed by Mario Carneiro
+     and Jim Kingdon, 7-Oct-2018.) $)
+  anxordi $p |- ( ( ph /\ ( ps \/_ ch ) ) <->
+      ( ( ph /\ ps ) \/_ ( ph /\ ch ) ) ) $=
+    ( wxo wa ax-ia1 wo wn df-xor simplbi simpl jaoi syl ibar xorbi12d
+    bitr3d pm5.21nii ) ABCDZEZAABEZACEZDZARFUBTUAGZAUBUCTUAEHTUAIJTAU
+    AABKACKLMARSUBARNABTCUAABNACNOPQ $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-        Operations on true and false constants
+        Truth tables: Operations on true and false constants
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
   For classical logic, truth tables can be used to define propositional
@@ -9412,7 +9460,8 @@ $(
   ` \/ ` (disjunction aka logical inclusive 'or') ~ wo ,
   ` -> ` (implies) ~ wi ,
   ` -. ` (not) ~ wn ,
-  ` <-> ` (logical equivalence) ~ df-bi .
+  ` <-> ` (logical equivalence) ~ df-bi , and
+  ` \/_ ` (exclusive or) ~ df-xor .
 $)
 
   $( A ` /\ ` identity.  (Contributed by Anthony Hart, 22-Oct-2010.) $)
@@ -11535,6 +11584,12 @@ $)
   exintr $p |- ( A. x ( ph -> ps ) -> ( E. x ph -> E. x ( ph /\ ps ) ) ) $=
     ( wi wal wex wa exintrbi biimpd ) ABDCEACFABGCFABCHI $.
 
+  $( Theorem *10.3 in [WhiteheadRussell] p. 150.  (Contributed by Andrew
+     Salmon, 8-Jun-2011.) $)
+  alsyl $p |- ( ( A. x ( ph -> ps ) /\ A. x ( ps -> ch ) ) ->
+        A. x ( ph -> ch ) ) $=
+    ( wi pm3.33 alanimi ) ABEBCEACEDABCFG $.
+
   ${
     hbex.1 $e |- ( ph -> A. x ph ) $.
     $( If ` x ` is not free in ` ph ` , it is not free in ` E. y ph ` .
@@ -13318,10 +13373,18 @@ $)
     BDZABCFZARSPBCFZAAPBCGTPAABCHABIJKQASEBPSAABCLMNO $.
 
   ${
-    sbid2.1 $e |- ( ph -> A. x ph ) $.
+    sbid2h.1 $e |- ( ph -> A. x ph ) $.
     $( An identity law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
-    sbid2 $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
+    sbid2h $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
       ( wsb sbcof2 sbh bitri ) ACBEBCEABCEAABCDFABCDGH $.
+  $}
+
+  ${
+    sbid2.1 $e |- F/ x ph $.
+    $( An identity law for substitution.  (Contributed by NM, 5-Aug-1993.)
+       (Revised by Mario Carneiro, 6-Oct-2016.) $)
+    sbid2 $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
+      ( nfri sbid2h ) ABCABDEF $.
   $}
 
   $( An idempotent law for substitution.  (Contributed by NM, 30-Jun-1994.)
@@ -13339,13 +13402,13 @@ $)
     $( Reversed substitution.  (Contributed by NM, 3-Feb-2005.)  (Proof
        shortened by Andrew Salmon, 25-May-2011.) $)
     sb5rf $p |- ( ph <-> E. y ( y = x /\ [ y / x ] ph ) ) $=
-      ( weq wsb wa wex sbid2 sb1 sylbir stdpc7 imp exlimih impbii ) ACBEZABCFZGZ
+      ( weq wsb wa wex sbid2h sb1 sylbir stdpc7 imp exlimih impbii ) ACBEZABCFZGZ
       CHZAQCBFSACBDIQCBJKRACDPQAACBLMNO $.
 
     $( Reversed substitution.  (Contributed by NM, 5-Aug-1993.)  (Proof
        shortened by Andrew Salmon, 25-May-2011.) $)
     sb6rf $p |- ( ph <-> A. y ( y = x -> [ y / x ] ph ) ) $=
-      ( weq wsb wi wal sbequ1 equcoms com12 alrimih sb2 sbid2 sylib impbii ) ACB
+      ( weq wsb wi wal sbequ1 equcoms com12 alrimih sb2 sbid2h sylib impbii ) ACB
       EZABCFZGZCHZASCDQARARGBCABCIJKLTRCBFARCBMACBDNOP $.
   $}
 
@@ -14648,7 +14711,7 @@ $( The theorems in this section make use of the $d statement. $)
        [Megill] p. 449 (p. 16 of the preprint).  (Contributed by NM,
        5-Aug-1993.) $)
     sbid2v $p |- ( [ y / x ] [ x / y ] ph <-> ph ) $=
-      ( ax-17 sbid2 ) ABCABDE $.
+      ( ax-17 sbid2h ) ABCABDE $.
   $}
 
   ${
@@ -14749,6 +14812,32 @@ $( The theorems in this section make use of the $d statement. $)
        18-Aug-1993.) $)
     sbalv $p |- ( [ y / x ] A. z ph <-> A. z ps ) $=
       ( wal wsb sbal albii bitri ) AEGCDHACDHZEGBEGAECDILBEFJK $.
+  $}
+
+  ${
+    $d v w ph $.  $d v w x $.  $d v w y $.
+    $( Lemma for ~ sbco4 .  It replaces the temporary variable ` v ` with
+       another temporary variable ` w ` .  (Contributed by Jim Kingdon,
+       26-Sep-2018.) $)
+    sbco4lem $p |- ( [ x / v ] [ y / x ] [ v / y ] ph <->
+        [ x / w ] [ y / x ] [ w / y ] ph ) $=
+      ( wsb sbcom2 sbbii nfv sbco2 bitri sbid2 3bitr3i ) ACDFZDEFZBCF
+      ZEDFZDBFZOEDFZBCFZDBFACEFZBCFZEBFZNBCFZDBFQTDBOBCEDGHRUBEDFZDBF
+      UCQUEDBPUBEDOUABCACEDADIJHHHUBEBDUBDIJKTUDDBSNBCNEDNEILHHM $.
+  $}
+
+  ${
+    $d t u v ph $.  $d t u v x $.  $d t u v y $.  $d w ph $.  $d w x $.
+    $d w y $.  $d t w $.
+    $( Two ways of exchanging two variables.  Both sides of the biconditional
+       exchange ` x ` and ` y ` , either via two temporary variables ` u ` and
+       ` v ` , or a single temporary ` w ` .  (Contributed by Jim Kingdon,
+       25-Sep-2018.) $)
+    sbco4 $p |- ( [ y / u ] [ x / v ] [ u / x ] [ v / y ] ph <->
+        [ x / w ] [ y / x ] [ w / y ] ph ) $=
+      ( vt wsb sbcom2 nfv sbco2 sbbii bitr3i sbco4lem 3bitri ) ACEHZBFHZEBHFCH
+      ZPBCHZEBHZACGHBCHGBHACDHBCHDBHRQFCHZEBHTQFCEBIUASEBPBCFPFJKLMABCGENABCDGN
+      O $.
   $}
 
   ${
@@ -15446,6 +15535,13 @@ $)
     ( wex wdc wn wo wmo df-dc weu wi pm2.21 df-mo sylibr orim2i sylbi
     ) ABCZDPPEZFPABGZFPHQRPQPABIZJRPSKABLMNO $.
 
+  $( There is at most one of something which does not exist.  Unlike ~ exmodc
+     there is no decidability condition.  (Contributed by Jim Kingdon,
+     22-Sep-2018.) $)
+  exmonim $p |- ( -. E. x ph -> E* x ph ) $=
+    ( wex wn weu wi wmo pm2.21 df-mo sylibr ) ABCZDKABEZFABGKLHABIJ
+    $.
+
   ${
     $d x y $.
     mo2r.1 $e |- F/ y ph $.
@@ -15851,6 +15947,544 @@ $)
       ax16 com12 alexim syl6 con2d imp ) ABDZAEBDZBFZUDGZBHZEUBUFUCUB
       UFABIZUCEUFUBUGUFAUGBUEBJABKUFUDCFGBIAUGLBCMABCPNOQABRSTUA $.
   $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+               Aristotelian logic: Assertic syllogisms
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  Model the Aristotelian assertic syllogisms using modern notation.
+  This section shows that the Aristotelian assertic syllogisms can be proven
+  with our axioms of logic, and also provides generally useful theorems.
+
+  In antiquity Aristotelian logic and Stoic logic
+  (see ~ mpto1 ) were the leading logical systems.
+  Aristotelian logic became the leading system in medieval Europe;
+  this section models this system (including later refinements to it).
+  Aristotle defined syllogisms very generally
+  ("a discourse in which certain (specific) things having been supposed,
+  something different from the things supposed results of necessity
+  because these things are so")
+  Aristotle, _Prior Analytics_ 24b18-20.
+  However, in _Prior Analytics_ he limits himself to
+  categorical syllogisms that consist of three categorical propositions
+  with specific structures.  The syllogisms are the valid subset of
+  the possible combinations of these structures.
+  The medieval schools used vowels to identify the types of terms
+  (a=all, e=none, i=some, and o=some are not), and named the different
+  syllogisms with Latin words that had the vowels in the intended order.
+
+  "There is a surprising amount of scholarly debate
+  about how best to formalize Aristotle's syllogisms..." according to
+  _Aristotle's Modal Proofs: Prior Analytics A8-22 in Predicate Logic_,
+  Adriane Rini, Springer, 2011, ISBN 978-94-007-0049-9, page 28.
+  For example, Lukasiewicz believes it is important to note that
+  "Aristotle does not introduce singular terms or premisses into his system".
+  Lukasiewicz also believes that Aristotelian syllogisms are
+  predicates (having a true/false value), not inference rules:
+  "The characteristic sign of an inference is the word 'therefore'...
+  no syllogism is formulated by Aristotle primarily as an inference,
+  but they are all implications."
+  Jan Lukasiewicz, _Aristotle's Syllogistic from the Standpoint of
+  Modern Formal Logic_, Second edition, Oxford, 1957, page 1-2.
+  Lukasiewicz devised a specialized prefix notation for representing
+  Aristotelian syllogisms instead of using standard predicate logic notation.
+
+  We instead translate each Aristotelian syllogism into an inference rule,
+  and each rule is defined using standard predicate logic notation and
+  predicates.  The predicates are represented by wff variables
+  that may depend on the quantified variable ` x ` .
+  Our translation is essentially identical to the one
+  use in Rini page 18, Table 2 "Non-Modal Syllogisms in
+  Lower Predicate Calculus (LPC)", which uses
+  standard predicate logic with predicates.  Rini states,
+  "the crucial point is that we capture the meaning Aristotle intends,
+  and the method by which we represent that meaning is less important."
+  There are two differences: we make the existence criteria explicit, and
+  we use ` ph ` , ` ps ` , and ` ch ` in the order they appear
+  (a common Metamath convention).
+  Patzig also uses standard predicate logic notation and predicates
+  (though he interprets them as conditional propositions, not as
+  inference rules); see
+  Gunther Patzig, _Aristotle's Theory of the Syllogism_ second edition, 1963,
+  English translation by Jonathan Barnes, 1968, page 38.
+  Terms such as "all" and "some" are translated into predicate logic
+  using the aproach devised by Frege and Russell.
+  "Frege (and Russell) devised an ingenious procedure for regimenting
+  binary quantifiers like "every" and "some" in terms of unary quantifiers
+  like "everything" and "something": they formalized sentences of the form
+  "Some A is B" and "Every A is B" as
+  exists x (Ax and Bx) and all x (Ax implies Bx), respectively."
+  "Quantifiers and Quantification", _Stanford Encyclopedia of Philosophy_,
+  ~ http://plato.stanford.edu/entries/quantification/ .
+  See _Principia Mathematica_ page 22 and *10 for more information
+  (especially *10.3 and *10.26).
+
+  Expressions of the form "no ` ph ` is ` ps ` " are consistently translated as
+  ` A. x ( ph -> -. ps ) ` .  These can also be expressed as
+  ` -. E. x ( ph /\ ps ) ` , per ~ alinexa .
+  We translate "all ` ph ` is ` ps ` " to ` A. x ( ph -> ps ) ` ,
+  "some ` ph ` is ` ps ` " to ` E. x ( ph /\ ps ) ` , and
+  "some ` ph ` is not ` ps ` " to ` E. x ( ph /\ -. ps ) ` .
+  It is traditional to use the singular verb "is", not the plural
+  verb "are", in the generic expressions.
+  By convention the major premise is listed first.
+
+  In traditional Aristotelian syllogisms the predicates
+  have a restricted form ("x is a ..."); those predicates
+  could be modeled in modern notation by constructs such as
+  ` x = A ` , ` x e. A ` , or ` x C_ A ` .
+  Here we use wff variables instead of specialized restricted forms.
+  This generalization makes the syllogisms more useful
+  in more circumstances.  In addition, these expressions make
+  it clearer that the syllogisms of Aristolean logic are the
+  forerunners of predicate calculus.  If we used restricted forms
+  like ` x e. A ` instead, we would not only unnecessarily limit
+  their use, but we would also need to use set and class axioms,
+  making their relationship to predicate calculus less clear.
+
+  There are some widespread misconceptions about the existential
+  assumptions made by Aristotle (aka "existential import").
+  Aristotle was not trying to develop something exactly corresponding
+  to modern logic.  Aristotle devised "a companion-logic for science.
+  He relegates fictions like fairy godmothers and mermaids and unicorns to
+  the realms of poetry and literature. In his mind, they exist outside the
+  ambit of science. This is why he leaves no room for such non-existent
+  entities in his logic.  This is a thoughtful choice, not an inadvertent
+  omission. Technically, Aristotelian science is a search for definitions,
+  where a definition is "a phrase signifying a thing's essence."
+  (Topics, I.5.102a37, Pickard-Cambridge.)...
+  Because non-existent entities cannot be anything, they do not, in
+  Aristotle's mind, possess an essence...  This is why he leaves
+  no place for fictional entities like goat-stags (or unicorns)."
+  Source: Louis F. Groarke, "Aristotle: Logic",
+  section 7. (Existential Assumptions),
+  _Internet Encyclopedia of Philosophy_ (A Peer-Reviewed Academic Resource),
+  ~ http://www.iep.utm.edu/aris-log/ .
+  Thus, some syllogisms have "extra" existence
+  hypotheses that do not directly appear in Aristotle's original materials
+  (since they were always assumed); they are added where they are needed.
+  This affects ~ barbari , ~ celaront , ~ cesaro , ~ camestros , ~ felapton ,
+  ~ darapti , ~ calemos , ~ fesapo , and ~ bamalip .
+
+  These are only the _assertic_ syllogisms.
+  Aristotle also defined modal syllogisms that deal with modal
+  qualifiers such as "necessarily" and "possibly".
+  Historically Aristotelian modal syllogisms were not as widely used.
+  For more about modal syllogisms in a modern context, see Rini as well as
+  _Aristotle's Modal Syllogistic_ by Marko Malink, Harvard
+  University Press, November 2013.  We do not treat them further here.
+
+  Aristotelean logic is essentially the forerunner of predicate calculus
+  (as well as set theory since it discusses membership in groups),
+  while Stoic logic is essentially the forerunner of propositional calculus.
+$)
+
+  $( Figure 1.  Aristotelian syllogisms are grouped by "figures",
+     which doesn't matter for our purposes but is a reasonable way
+     to order them. $)
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Barbara", e.g.,
+       "All men are mortal". By convention, the major premise is first. $)
+    barbara.maj $e |- A. x ( ph -> ps ) $.
+    $( Minor premise for Barbara, e.g., "Socrates is a man". $)
+    barbara.min $e |- A. x ( ch -> ph ) $.
+    $( "Barbara", one of the fundamental syllogisms of Aristotelian logic.  All
+       ` ph ` is ` ps ` , and all ` ch ` is ` ph ` , therefore all ` ch ` is
+       ` ps ` .  (In Aristotelian notation, AAA-1:  MaP and SaM therefore SaP.)
+       For example, given "All men are mortal" and "Socrates is a man", we can
+       prove "Socrates is mortal".  If H is the set of men, M is the set of
+       mortal beings, and S is Socrates, these word phrases can be represented
+       as ` A. x ( x e. H -> x e. M ) ` (all men are mortal) and
+       ` A. x ( x = S -> x e. H ) ` (Socrates is a man) therefore
+       ` A. x ( x = S -> x e. M ) ` (Socrates is mortal).  Russell and
+       Whitehead note that the "syllogism in Barbara is derived..." from
+       ~ syl .  (quote after Theorem *2.06 of [WhiteheadRussell] p. 101).  Most
+       of the proof is in ~ alsyl .  There are a legion of sources for Barbara,
+       including ~ http://www.friesian.com/aristotl.htm ,
+       ~ http://plato.stanford.edu/entries/aristotle-logic/ , and
+       ~ https://en.wikipedia.org/wiki/Syllogism .  (Contributed by David A.
+       Wheeler, 24-Aug-2016.) $)
+    barbara $p |- A. x ( ch -> ps ) $=
+      ( wi wal alsyl mp2an ) CAGDHABGDHCBGDHFECABDIJ $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Celarent", e.g.,
+       "No reptiles have fur". $)
+    celarent.maj $e |- A. x ( ph -> -. ps ) $.
+    $( Minor premise for Celarent, e.g., "All snakes are reptiles". $)
+    celarent.min $e |- A. x ( ch -> ph ) $.
+    $( "Celarent", one of the syllogisms of Aristotelian logic.  No ` ph ` is
+       ` ps ` , and all ` ch ` is ` ph ` , therefore no ` ch ` is ` ps ` .  (In
+       Aristotelian notation, EAE-1:  MeP and SaM therefore SeP.) For example,
+       given the "No reptiles have fur" and "All snakes are reptiles",
+       therefore "No snakes have fur".  Example from
+       ~ https://en.wikipedia.org/wiki/Syllogism .  (Contributed by David A.
+       Wheeler, 24-Aug-2016.)  (Revised by David A. Wheeler, 2-Sep-2016.) $)
+    celarent $p |- A. x ( ch -> -. ps ) $=
+      ( wn barbara ) ABGCDEFH $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Darii", e.g.,
+       "All rabbits have fur". $)
+    darii.maj $e |- A. x ( ph -> ps ) $.
+    $( Minor premise for Darii, e.g., "Some pets are rabbits." $)
+    darii.min $e |- E. x ( ch /\ ph ) $.
+    $( "Darii", one of the syllogisms of Aristotelian logic.  All ` ph ` is
+       ` ps ` , and some ` ch ` is ` ph ` , therefore some ` ch ` is ` ps ` .
+       (In Aristotelian notation, AII-1:  MaP and SiM therefore SiP.) For
+       example, given "All rabbits have fur" and "Some pets are rabbits",
+       therefore "Some pets have fur".  Example from
+       ~ https://en.wikipedia.org/wiki/Syllogism .  (Contributed by David A.
+       Wheeler, 24-Aug-2016.) $)
+    darii $p |- E. x ( ch /\ ps ) $=
+      ( wa wi spi anim2i eximii ) CAGCBGDFABCABHDEIJK $.
+  $}
+
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Ferio" ("Ferioque"),
+       e.g., "No homework is fun". $)
+    ferio.maj $e |- A. x ( ph -> -. ps ) $.
+    $( Minor premise for Ferio, e.g., "Some reading is homework." $)
+    ferio.min $e |- E. x ( ch /\ ph ) $.
+    $( "Ferio" ("Ferioque"), one of the syllogisms of Aristotelian logic.  No
+       ` ph ` is ` ps ` , and some ` ch ` is ` ph ` , therefore some ` ch ` is
+       not ` ps ` .  (In Aristotelian notation, EIO-1:  MeP and SiM therefore
+       SoP.) For example, given "No homework is fun" and "Some reading is
+       homework", therefore "Some reading is not fun".  This is essentially a
+       logical axiom in Aristotelian logic.  Example from
+       ~ https://en.wikipedia.org/wiki/Syllogism .  (Contributed by David A.
+       Wheeler, 24-Aug-2016.)  (Revised by David A. Wheeler, 2-Sep-2016.) $)
+    ferio $p |- E. x ( ch /\ -. ps ) $=
+      ( wn darii ) ABGCDEFH $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Barbari", e.g.,
+       e.g., "All men are mortal". $)
+    barbari.maj $e |- A. x ( ph -> ps ) $.
+    $( Minor premise for Barbari, e.g., "All Greeks are men." $)
+    barbari.min $e |- A. x ( ch -> ph ) $.
+    $( Existence premise for Barbari, e.g., "Greeks exist." $)
+    barbari.e $e |- E. x ch $.
+    $( "Barbari", one of the syllogisms of Aristotelian logic.  All ` ph ` is
+       ` ps ` , all ` ch ` is ` ph ` , and some ` ch ` exist, therefore some
+       ` ch ` is ` ps ` .  (In Aristotelian notation, AAI-1:  MaP and SaM
+       therefore SiP.) For example, given "All men are mortal", "All Greeks are
+       men", and "Greeks exist", therefore "Some Greeks are mortal".  Note the
+       existence hypothesis (to prove the "some" in the conclusion).  Example
+       from ~ https://en.wikipedia.org/wiki/Syllogism .  (Contributed by David
+       A. Wheeler, 27-Aug-2016.)  (Revised by David A. Wheeler,
+       30-Aug-2016.) $)
+    barbari $p |- E. x ( ch /\ ps ) $=
+      ( wa wi barbara spi ancli eximii ) CCBHDGCBCBIDABCDEFJKLM $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Celaront", e.g.,
+       e.g., "No reptiles have fur". $)
+    celaront.maj $e |- A. x ( ph -> -. ps ) $.
+    $( Minor premise for Celaront, e.g., "All Snakes are reptiles." $)
+    celaront.min $e |- A. x ( ch -> ph ) $.
+    $( Existence premise for Celaront, e.g., "Snakes exist." $)
+    celaront.e $e |- E. x ch $.
+    $( "Celaront", one of the syllogisms of Aristotelian logic.  No ` ph ` is
+       ` ps ` , all ` ch ` is ` ph ` , and some ` ch ` exist, therefore some
+       ` ch ` is not ` ps ` .  (In Aristotelian notation, EAO-1:  MeP and SaM
+       therefore SoP.) For example, given "No reptiles have fur", "All snakes
+       are reptiles.", and "Snakes exist.", prove "Some snakes have no fur".
+       Note the existence hypothesis.  Example from
+       ~ https://en.wikipedia.org/wiki/Syllogism .  (Contributed by David A.
+       Wheeler, 27-Aug-2016.)  (Revised by David A. Wheeler, 2-Sep-2016.) $)
+    celaront $p |- E. x ( ch /\ -. ps ) $=
+      ( wn barbari ) ABHCDEFGI $.
+  $}
+
+  $( Figure 2 $)
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Cesare" $)
+    cesare.maj $e |- A. x ( ph -> -. ps ) $.
+    $( Minor premise for Cesare $)
+    cesare.min $e |- A. x ( ch -> ps ) $.
+    $( "Cesare", one of the syllogisms of Aristotelian logic.  No ` ph ` is
+       ` ps ` , and all ` ch ` is ` ps ` , therefore no ` ch ` is ` ph ` .  (In
+       Aristotelian notation, EAE-2:  PeM and SaM therefore SeP.) Related to
+       ~ celarent .  (Contributed by David A. Wheeler, 27-Aug-2016.)  (Revised
+       by David A. Wheeler, 13-Nov-2016.) $)
+    cesare $p |- A. x ( ch -> -. ph ) $=
+      ( wn wi spi nsyl3 ax-gen ) CAGHDABCABGHDEICBHDFIJK $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Camestres" $)
+    camestres.maj $e |- A. x ( ph -> ps ) $.
+    $( Minor premise for Camestres $)
+    camestres.min $e |- A. x ( ch -> -. ps ) $.
+    $( "Camestres", one of the syllogisms of Aristotelian logic.  All ` ph ` is
+       ` ps ` , and no ` ch ` is ` ps ` , therefore no ` ch ` is ` ph ` .  (In
+       Aristotelian notation, AEE-2:  PaM and SeM therefore SeP.) (Contributed
+       by David A. Wheeler, 28-Aug-2016.)  (Revised by David A. Wheeler,
+       2-Sep-2016.) $)
+    camestres $p |- A. x ( ch -> -. ph ) $=
+      ( wn wi spi nsyl ax-gen ) CAGHDCBACBGHDFIABHDEIJK $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Festino" $)
+    festino.maj $e |- A. x ( ph -> -. ps ) $.
+    $( Minor premise for Festino $)
+    festino.min $e |- E. x ( ch /\ ps ) $.
+    $( "Festino", one of the syllogisms of Aristotelian logic.  No ` ph ` is
+       ` ps ` , and some ` ch ` is ` ps ` , therefore some ` ch ` is not
+       ` ph ` .  (In Aristotelian notation, EIO-2:  PeM and SiM therefore SoP.)
+       (Contributed by David A. Wheeler, 25-Nov-2016.) $)
+    festino $p |- E. x ( ch /\ -. ph ) $=
+      ( wa wn wi spi con2i anim2i eximii ) CBGCAHZGDFBNCABABHIDEJKLM $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Baroco" $)
+    baroco.maj $e |- A. x ( ph -> ps ) $.
+    $( Minor premise for Baroco $)
+    baroco.min $e |- E. x ( ch /\ -. ps ) $.
+    $( "Baroco", one of the syllogisms of Aristotelian logic.  All ` ph ` is
+       ` ps ` , and some ` ch ` is not ` ps ` , therefore some ` ch ` is not
+       ` ph ` .  (In Aristotelian notation, AOO-2:  PaM and SoM therefore SoP.)
+       For example, "All informative things are useful", "Some websites are not
+       useful", therefore "Some websites are not informative."  (Contributed by
+       David A. Wheeler, 28-Aug-2016.) $)
+    baroco $p |- E. x ( ch /\ -. ph ) $=
+      ( wn wa wi spi con3i anim2i eximii ) CBGZHCAGZHDFNOCABABIDEJKLM $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Cesaro" $)
+    cesaro.maj $e |- A. x ( ph -> -. ps ) $.
+    $( Minor premise for Cesaro $)
+    cesaro.min $e |- A. x ( ch -> ps ) $.
+    $( Existence premise for Cesaro $)
+    cesaro.e $e |- E. x ch $.
+    $( "Cesaro", one of the syllogisms of Aristotelian logic.  No ` ph ` is
+       ` ps ` , all ` ch ` is ` ps ` , and ` ch ` exist, therefore some ` ch `
+       is not ` ph ` .  (In Aristotelian notation, EAO-2:  PeM and SaM
+       therefore SoP.) (Contributed by David A. Wheeler, 28-Aug-2016.)
+       (Revised by David A. Wheeler, 2-Sep-2016.) $)
+    cesaro $p |- E. x ( ch /\ -. ph ) $=
+      ( wn wa wi spi nsyl3 ancli eximii ) CCAHZIDGCOABCABHJDEKCBJDFKLMN $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Camestros" $)
+    camestros.maj $e |- A. x ( ph -> ps ) $.
+    $( Minor premise for  $)
+    camestros.min $e |- A. x ( ch -> -. ps ) $.
+    $( Existence premise for Camestros $)
+    camestros.e $e |- E. x ch $.
+    $( "Camestros", one of the syllogisms of Aristotelian logic.  All ` ph ` is
+       ` ps ` , no ` ch ` is ` ps ` , and ` ch ` exist, therefore some ` ch `
+       is not ` ph ` .  (In Aristotelian notation, AEO-2:  PaM and SeM
+       therefore SoP.) For example, "All horses have hooves", "No humans have
+       hooves", and humans exist, therefore "Some humans are not horses".
+       (Contributed by David A. Wheeler, 28-Aug-2016.)  (Revised by David A.
+       Wheeler, 2-Sep-2016.) $)
+    camestros $p |- E. x ( ch /\ -. ph ) $=
+      ( wn wa wi spi nsyl ancli eximii ) CCAHZIDGCOCBACBHJDFKABJDEKLMN $.
+  $}
+
+  $( Figure 3 $)
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Datisi" $)
+    datisi.maj $e |- A. x ( ph -> ps ) $.
+    $( Minor premise for  $)
+    datisi.min $e |- E. x ( ph /\ ch ) $.
+    $( "Datisi", one of the syllogisms of Aristotelian logic.  All ` ph ` is
+       ` ps ` , and some ` ph ` is ` ch ` , therefore some ` ch ` is ` ps ` .
+       (In Aristotelian notation, AII-3:  MaP and MiS therefore SiP.)
+       (Contributed by David A. Wheeler, 28-Aug-2016.) $)
+    datisi $p |- E. x ( ch /\ ps ) $=
+      ( wa simpr wi spi adantr jca eximii ) ACGZCBGDFNCBACHABCABIDEJKLM $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Disamis" $)
+    disamis.maj $e |- E. x ( ph /\ ps ) $.
+    $( Minor premise for  $)
+    disamis.min $e |- A. x ( ph -> ch ) $.
+    $( "Disamis", one of the syllogisms of Aristotelian logic.  Some ` ph ` is
+       ` ps ` , and all ` ph ` is ` ch ` , therefore some ` ch ` is ` ps ` .
+       (In Aristotelian notation, IAI-3:  MiP and MaS therefore SiP.)
+       (Contributed by David A. Wheeler, 28-Aug-2016.) $)
+    disamis $p |- E. x ( ch /\ ps ) $=
+      ( wa wi spi anim1i eximii ) ABGCBGDEACBACHDFIJK $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Ferison" $)
+    ferison.maj $e |- A. x ( ph -> -. ps ) $.
+    $( Minor premise for  $)
+    ferison.min $e |- E. x ( ph /\ ch ) $.
+    $( "Ferison", one of the syllogisms of Aristotelian logic.  No ` ph ` is
+       ` ps ` , and some ` ph ` is ` ch ` , therefore some ` ch ` is not
+       ` ps ` .  (In Aristotelian notation, EIO-3:  MeP and MiS therefore SoP.)
+       (Contributed by David A. Wheeler, 28-Aug-2016.)  (Revised by David A.
+       Wheeler, 2-Sep-2016.) $)
+    ferison $p |- E. x ( ch /\ -. ps ) $=
+      ( wn datisi ) ABGCDEFH $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Bocardo" $)
+    bocardo.maj $e |- E. x ( ph /\ -. ps ) $.
+    $( Minor premise for  $)
+    bocardo.min $e |- A. x ( ph -> ch ) $.
+    $( "Bocardo", one of the syllogisms of Aristotelian logic.  Some ` ph ` is
+       not ` ps ` , and all ` ph ` is ` ch ` , therefore some ` ch ` is not
+       ` ps ` .  (In Aristotelian notation, OAO-3:  MoP and MaS therefore SoP.)
+       For example, "Some cats have no tails", "All cats are mammals",
+       therefore "Some mammals have no tails".  A reorder of ~ disamis ; prefer
+       using that instead.  (Contributed by David A. Wheeler, 28-Aug-2016.)
+       (New usage is discouraged.) $)
+    bocardo $p |- E. x ( ch /\ -. ps ) $=
+      ( wn disamis ) ABGCDEFH $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Felapton" $)
+    felapton.maj $e |- A. x ( ph -> -. ps ) $.
+    $( Minor premise for  $)
+    felapton.min $e |- A. x ( ph -> ch ) $.
+    $( Existence premise for Felapton $)
+    felapton.e $e |- E. x ph $.
+    $( "Felapton", one of the syllogisms of Aristotelian logic.  No ` ph ` is
+       ` ps ` , all ` ph ` is ` ch ` , and some ` ph ` exist, therefore some
+       ` ch ` is not ` ps ` .  (In Aristotelian notation, EAO-3:  MeP and MaS
+       therefore SoP.) For example, "No flowers are animals" and "All flowers
+       are plants", therefore "Some plants are not animals".  (Contributed by
+       David A. Wheeler, 28-Aug-2016.)  (Revised by David A. Wheeler,
+       2-Sep-2016.) $)
+    felapton $p |- E. x ( ch /\ -. ps ) $=
+      ( wn wa wi spi jca eximii ) ACBHZIDGACNACJDFKANJDEKLM $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Darapti" $)
+    darapti.maj $e |- A. x ( ph -> ps ) $.
+    $( Minor premise for  $)
+    darapti.min $e |- A. x ( ph -> ch ) $.
+    $( Existence premise for Darapti $)
+    darapti.e $e |- E. x ph $.
+    $( "Darapti", one of the syllogisms of Aristotelian logic.  All ` ph ` is
+       ` ps ` , all ` ph ` is ` ch ` , and some ` ph ` exist, therefore some
+       ` ch ` is ` ps ` .  (In Aristotelian notation, AAI-3:  MaP and MaS
+       therefore SiP.) For example, "All squares are rectangles" and "All
+       squares are rhombuses", therefore "Some rhombuses are rectangles".
+       (Contributed by David A. Wheeler, 28-Aug-2016.) $)
+    darapti $p |- E. x ( ch /\ ps ) $=
+      ( wa wi spi jca eximii ) ACBHDGACBACIDFJABIDEJKL $.
+  $}
+
+  $( Figure 4 $)
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Calemes" $)
+    calemes.maj $e |- A. x ( ph -> ps ) $.
+    $( Minor premise for  $)
+    calemes.min $e |- A. x ( ps -> -. ch ) $.
+    $( "Calemes", one of the syllogisms of Aristotelian logic.  All ` ph ` is
+       ` ps ` , and no ` ps ` is ` ch ` , therefore no ` ch ` is ` ph ` .  (In
+       Aristotelian notation, AEE-4:  PaM and MeS therefore SeP.) (Contributed
+       by David A. Wheeler, 28-Aug-2016.)  (Revised by David A. Wheeler,
+       2-Sep-2016.) $)
+    calemes $p |- A. x ( ch -> -. ph ) $=
+      ( wn wi spi con2i nsyl ax-gen ) CAGHDCBABCBCGHDFIJABHDEIKL $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Dimatis" $)
+    dimatis.maj $e |- E. x ( ph /\ ps ) $.
+    $( Minor premise for  $)
+    dimatis.min $e |- A. x ( ps -> ch ) $.
+    $( "Dimatis", one of the syllogisms of Aristotelian logic.  Some ` ph ` is
+       ` ps ` , and all ` ps ` is ` ch ` , therefore some ` ch ` is ` ph ` .
+       (In Aristotelian notation, IAI-4:  PiM and MaS therefore SiP.) For
+       example, "Some pets are rabbits.", "All rabbits have fur", therefore
+       "Some fur bearing animals are pets".  Like ~ darii with positions
+       interchanged.  (Contributed by David A. Wheeler, 28-Aug-2016.) $)
+    dimatis $p |- E. x ( ch /\ ph ) $=
+      ( wa wi spi adantl simpl jca eximii ) ABGZCAGDENCABCABCHDFIJABKLM $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Fresison" $)
+    fresison.maj $e |- A. x ( ph -> -. ps ) $.
+    $( Minor premise for  $)
+    fresison.min $e |- E. x ( ps /\ ch ) $.
+    $( "Fresison", one of the syllogisms of Aristotelian logic.  No ` ph ` is
+       ` ps ` (PeM), and some ` ps ` is ` ch ` (MiS), therefore some ` ch ` is
+       not ` ph ` (SoP).  (In Aristotelian notation, EIO-4:  PeM and MiS
+       therefore SoP.) (Contributed by David A. Wheeler, 28-Aug-2016.)
+       (Revised by David A. Wheeler, 2-Sep-2016.) $)
+    fresison $p |- E. x ( ch /\ -. ph ) $=
+      ( wa wn simpr wi spi con2i adantr jca eximii ) BCGZCAHZGDFPCQBCIBQCABABHJ
+      DEKLMNO $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Calemos" $)
+    calemos.maj $e |- A. x ( ph -> ps ) $.
+    $( Minor premise for  $)
+    calemos.min $e |- A. x ( ps -> -. ch ) $.
+    $( Existence premise for Calemos $)
+    calemos.e $e |- E. x ch $.
+    $( "Calemos", one of the syllogisms of Aristotelian logic.  All ` ph ` is
+       ` ps ` (PaM), no ` ps ` is ` ch ` (MeS), and ` ch ` exist, therefore
+       some ` ch ` is not ` ph ` (SoP).  (In Aristotelian notation, AEO-4:  PaM
+       and MeS therefore SoP.) (Contributed by David A. Wheeler, 28-Aug-2016.)
+       (Revised by David A. Wheeler, 2-Sep-2016.) $)
+    calemos $p |- E. x ( ch /\ -. ph ) $=
+      ( wn wa wi spi con2i nsyl ancli eximii ) CCAHZIDGCPCBABCBCHJDFKLABJDEKMNO
+      $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Fesapo" $)
+    fesapo.maj $e |- A. x ( ph -> -. ps ) $.
+    $( Minor premise for  $)
+    fesapo.min $e |- A. x ( ps -> ch ) $.
+    $( Existence premise for Fesapo $)
+    fesapo.e $e |- E. x ps $.
+    $( "Fesapo", one of the syllogisms of Aristotelian logic.  No ` ph ` is
+       ` ps ` , all ` ps ` is ` ch ` , and ` ps ` exist, therefore some ` ch `
+       is not ` ph ` .  (In Aristotelian notation, EAO-4:  PeM and MaS
+       therefore SoP.) (Contributed by David A. Wheeler, 28-Aug-2016.)
+       (Revised by David A. Wheeler, 2-Sep-2016.) $)
+    fesapo $p |- E. x ( ch /\ -. ph ) $=
+      ( wn wa wi spi con2i jca eximii ) BCAHZIDGBCOBCJDFKABABHJDEKLMN $.
+  $}
+
+  ${
+    $( Major premise for the Aristotelian syllogism "Bamalip" $)
+    bamalip.maj $e |- A. x ( ph -> ps ) $.
+    $( Minor premise for  $)
+    bamalip.min $e |- A. x ( ps -> ch ) $.
+    $( Existence premise for Bamalip $)
+    bamalip.e $e |- E. x ph $.
+    $( "Bamalip", one of the syllogisms of Aristotelian logic.  All ` ph ` is
+       ` ps ` , all ` ps ` is ` ch ` , and ` ph ` exist, therefore some ` ch `
+       is ` ph ` .  (In Aristotelian notation, AAI-4:  PaM and MaS therefore
+       SiP.) Like ~ barbari .  (Contributed by David A. Wheeler,
+       28-Aug-2016.) $)
+    bamalip $p |- E. x ( ch /\ ph ) $=
+      ( wa wi spi syl ancri eximii ) ACAHDGACABCABIDEJBCIDFJKLM $.
+  $}
+
 
 $(
 ###############################################################################
@@ -17487,6 +18121,16 @@ $)
        (Contributed by NM, 26-Dec-1993.) $)
     abid2 $p |- { x | x e. A } = A $=
       ( cv wcel cab biid abbi2i eqcomi ) BACBDZAEIABIFGH $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d ph z $.
+    sb8ab.1 $e |- F/ y ph $.
+    $( Substitution of variable in class abstraction.  (Contributed by Jim
+       Kingdon, 27-Sep-2018.) $)
+    sb8ab $p |- { x | ph } = { y | [ y / x ] ph } $=
+      ( vz cab wsb cv wcel sbco2 df-clab 3bitr4ri eqriv ) EABFZABCGZCFZOCEGABEG
+      EHZPIQNIABECDJOECKAEBKLM $.
   $}
 
   ${
@@ -27217,6 +27861,16 @@ $)
     ( cv wcel wa wex cab c0 wne wrex crab abn0r df-rex df-rab 3imtr4i
     neeq1i ) BDCEAFZBGRBHZIJABCKABCLZIJRBMABCNTSIABCOQP $.
 
+  ${
+    $d x y $.  $d A y $.  $d ph y $.
+    $( Inhabited restricted class abstraction.  (Contributed by Jim Kingdon,
+       18-Sep-2018.) $)
+    rabn0m $p |- ( E. y y e. { x e. A | ph } <-> E. x e. A ph ) $=
+      ( wrex cv wcel wa wex df-rex rabid exbii nfv cab df-rab eleq2i nfsab1 nfxfr
+      crab eleq1 cbvex 3bitr2ri ) ABDEBFZDGAHZBIUCABDSZGZBICFZUEGZCIABDJUFUDBABDK
+      LUFUHBCUFCMUHUGUDBNZGBUEUIUGABDOPUDBCQRUCUGUETUAUB $.
+  $}
+
   $( Any restricted class abstraction restricted to the empty set is empty.
      (Contributed by NM, 15-Oct-2003.)  (Proof shortened by Andrew Salmon,
      26-Jun-2011.) $)
@@ -28876,11 +29530,27 @@ $)
   $}
 
   ${
+    $d x A $.  $d x B $.
+    $( A pair containing a set is inhabited.  (Contributed by Jim Kingdon,
+       21-Sep-2018.) $)
+    prmg $p |- ( A e. V -> E. x x e. { A , B } ) $=
+      ( wcel cv csn wex cpr snmg wceq orc elsn vex elpr 3imtr4i eximi
+      wo syl ) BDEAFZBGEZAHTBCIEZAHABDJUAUBATBKZUCTCKZRUAUBUCUDLABMTB
+      CANOPQS $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
     prnz.1 $e |- A e. _V $.
     $( A pair containing a set is not empty.  (Contributed by NM,
        9-Apr-1994.) $)
     prnz $p |- { A , B } =/= (/) $=
       ( cpr wcel c0 wne prid1 ne0i ax-mp ) AABDZEKFGABCHKAIJ $.
+
+    $( A pair containing a set is inhabited.  (Contributed by Jim Kingdon,
+       21-Sep-2018.) $)
+    prm $p |- E. x x e. { A , B } $=
+      ( cvv wcel cv cpr wex prmg ax-mp ) BEFAGBCHFAIDABCEJK $.
   $}
 
   ${
@@ -29236,6 +29906,25 @@ $)
       ( cpr cpw wss wcel wa prss elpw anbi12i bitr3i ) ABFCGZHAOIZBOIZJACHZBCHZ
       JABODEKPRQSACDLBCELMN $.
   $}
+
+  $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
+     the same second element, the first elements are equal.  Closed form of
+     ~ preqr1 .  (Contributed by Jim Kingdon, 21-Sep-2018.) $)
+  preqr1g $p |- ( ( A e. _V /\ B e. _V ) ->
+      ( { A , C } = { B , C } -> A = B ) ) $=
+    ( cvv wcel wa cpr wceq wo wi prid1g eleq2 syl5ibcom sylibd adantr
+    elprg imp syl5ibrcom adantl eqcom eqeq2 oplem1 ex ) ADEZBDEZFZACG
+    ZBCGZHZABHZUFUIFUJACHZBAHZBCHZUFUIUJUKIZUDUIUNJUEUDUIAUHEZUNUDAUG
+    EUIUOACDKUGUHALMABCDPNOQUFUIULUMIZUEUIUPJUDUEUIBUGEZUPUEUQUIBUHEB
+    CDKUGUHBLRBACDPNSQABTACBUAUBUC $.
+
+  $( Reverse equality lemma for unordered pairs.  If two unordered pairs have
+     the same second element, the second elements are equal.  Closed form of
+     ~ preqr2 .  (Contributed by Jim Kingdon, 21-Sep-2018.) $)
+  preqr2g $p |- ( ( A e. _V /\ B e. _V ) ->
+      ( { C , A } = { C , B } -> A = B ) ) $=
+    ( cpr wceq cvv wcel wa prcom eqeq12i preqr1g syl5bi ) CADZCBDZEAC
+    DZBCDZEAFGBFGHABEMONPCAICBIJABCKL $.
 
   ${
     preqr1.1 $e |- A e. _V $.
@@ -32783,6 +33472,39 @@ $)
     ( wcel cpw wss wn wne pwnss eqimss necon3bi syl ) ABCADZAEZFLAGABHMLALAIJK
     $.
 
+  $( Lemma for ~ repizf2 .  If we have a function-like proposition which
+     provides at most one value of ` y ` for each ` x ` in a set ` w ` , we can
+     change "at most one" to "exactly one" by restricting the values of ` x `
+     to those values for which the proposition provides a value of ` y ` .
+     (Contributed by Jim Kingdon, 7-Sep-2018.) $)
+  repizf2lem $p |- ( A. x e. w E* y ph <->
+      A. x e. { x e. w | E. y ph } E! y ph ) $=
+    ( cv wcel wmo wi wal wex weu wral crab df-mo imbi2i albii df-ral wa rabid
+    bitri imbi1i impexp 3bitr4i ) BEZDEZFZACGZHZBIUFACJZACKZHZHZBIZUGBUELUJBU
+    IBUEMZLZUHULBUGUKUFACNOPUGBUEQUOUDUNFZUJHZBIUMUJBUNQUQULBUQUFUIRZUJHULUPU
+    RUJUIBUESUAUFUIUJUBTPTUC $.
+
+  ${
+    $d v x y z w $.  $d v ph $.
+    repizf2.1 $e |- F/ z ph $.
+    $( Replacement.  This version of replacement is stronger than ~ repizf in
+       the sense that ` ph ` does not need to map all values of ` x ` in ` w `
+       to a value of ` y ` .  The resulting set contains those elements for
+       which there is a value of ` y ` and in that sense, this theorem combines
+       ~ repizf with ~ ax-sep .  Another variation would be
+       ` A. x e. w E* y ph -> { y | E. x ( x e. w /\ ph ) } e. _V ` but we
+       don't have a proof of that yet.  (Contributed by Jim Kingdon,
+       7-Sep-2018.) $)
+    repizf2 $p |- ( A. x e. w E* y ph ->
+        E. z A. x e. { x e. w | E. y ph } E. y e. z ph ) $=
+      ( vv wmo cv wral wrex wex crab wi vex rabex wceq weu repizf2lem raleqf wa
+      nfcv nfrab1 repizf syl6bir syl5bi wel cab df-rab nfv nfex nfan nfab nfeq2
+      nfcxfr exbid sylibd vtocle ) ACHBEIZJZACDIKZBACLZBUSMZJZDLZNGVCVBBUSEOPGI
+      ZVCQZUTVABVFJZDLZVEUTACRZBVCJZVGVIABCESVGVKVJBVFJVIVJBVFVCBVFUBZVBBUSUCZT
+      ABCGDFUDUEUFVGVHVDDDVFVCDVCBEUGZVBUAZBUHVBBUSUIVODBVNVBDVNDUJADCFUKULUMUO
+      UNVABVFVCVLVMTUPUQUR $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -32858,6 +33580,42 @@ $)
       LAIZFZHZAJZCBKCIDHLCMZBAKZLZBMZAJUMUQUMULULFZHZUQULGNUPVCAULGUNULOUOVBULU
       NULPQRUAUPUMAULUOUBUCUDUPVAAUPULUNSZVAULUNAUEUFVDBIZDSZUSLZBMVABDUNUGVGUT
       BVFURUSCVEDUHUIUJTTUKT $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+             Collection principle
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d ph z w $.  $d x y z w $.
+    $( A very strong generalization of the Axiom of Replacement (compare
+       ~ zfrep6 ).  Its strength lies in the rather profound fact that
+       ` ph ( x , y ) ` does not have to be a "function-like" wff, as it does
+       in the standard Axiom of Replacement.  This theorem is sometimes called
+       the Boundedness Axiom.  In the context of IZF, it is just a slight
+       variation of ~ ax-coll .  (Contributed by NM, 17-Oct-2004.) $)
+    bnd $p |- ( A. x e. z E. y ph -> E. w A. x e. z E. y e. w ph ) $=
+      ( nfv ax-coll ) ABCDEAEFG $.
+  $}
+
+  ${
+    $d ph z w v $.  $d x z w v A $.  $d x y z w v B $.
+    bnd2.1 $e |- A e. _V $.
+    $( A variant of the Boundedness Axiom ~ bnd that picks a subset ` z ` out
+       of a possibly proper class ` B ` in which a property is true.
+       (Contributed by NM, 4-Feb-2004.) $)
+    bnd2 $p |- ( A. x e. A E. y e. B ph ->
+              E. z ( z C_ B /\ A. x e. A E. y e. z ph ) ) $=
+      ( vw vv wrex wral cv wcel wa wex wss df-rex wi wceq raleq bnd vtocl sylbi
+      ralbii exbidv imbi12d cin inex1 inss2 sseq1 mpbiri biantrurd rexeq anbi1i
+      vex elin anass bitri rexbii2 syl6bb ralbidv bitr3d spcev exlimiv syl ) AC
+      FJZBEKZCLZFMZANZCHLZJZBEKZHOZDLZFPZACVOJZBEKZNZDOZVGVJCOZBEKZVNVFWABEACFQ
+      UDWABILZKZVLBWCKZHOZRWBVNRIEGWCESZWDWBWFVNWABWCETWGWEVMHVLBWCETUEUFVJBCIH
+      UAUBUCVMVTHVSVMDVKFUGZVKFHUOUHVOWHSZVRVSVMWIVPVRWIVPWHFPVKFUIVOWHFUJUKULW
+      IVQVLBEWIVQACWHJVLACVOWHUMAVJCWHVKVHWHMZANVHVKMZVINZANWKVJNWJWLAVHVKFUPUN
+      WKVIAUQURUSUTVAVBVCVDVE $.
   $}
 
 $(
@@ -33014,6 +33772,1353 @@ $)
     pwuni $p |- A C_ ~P U. A $=
       ( vx cuni cpw cv wcel wss elssuni vex elpw sylibr ssriv ) BAACZDZBEZAFOMG
       ONFOAHOMBIJKL $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                   Axiom of Pairing
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x z w v $.  $d y z w v $.
+    $( The Axiom of Pairing of IZF set theory.  Axiom 2 of [Crosilla] p.
+       "Axioms of CZF and IZF", except (a) unnecessary quantifiers are removed,
+       and (b) Crosilla has a biconditional rather than an implication (but the
+       two are equivalent by ~ bm1.3ii ).  (Contributed by NM, 14-Nov-2006.) $)
+    ax-pr $a |- E. z A. w ( ( w = x \/ w = y ) -> w e. z ) $.
+
+    $( Derive the abbreviated version of the Axiom of Pairing from ~ ax-pr .
+       (Contributed by NM, 14-Nov-2006.) $)
+    zfpair2 $p |- { x , y } e. _V $=
+      ( vz vw cv cpr wceq wex wcel wo wal ax-pr bm1.3ii dfcleq vex bibi2i albii
+      wb elpr bitri exbii mpbir issetri ) CAEZBEZFZCEZUFGZCHDEZUGIZUIUDGUIUEGJZ
+      RZDKZCHUKCDABCDLMUHUMCUHUJUIUFIZRZDKUMDUGUFNUOULDUNUKUJUIUDUEDOSPQTUAUBUC
+      $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The Axiom of Pairing using class variables.  Theorem 7.13 of [Quine]
+       p. 51, but restricted to classes which exist.  For proper classes, see
+       ~ prprc , ~ prprc1 , and ~ prprc2 .  (Contributed by Jim Kingdon,
+       16-Sep-2018.) $)
+    prexg $p |- ( ( A e. _V /\ B e. _V ) -> { A , B } e. _V ) $=
+      ( vx vy cvv wcel cpr wi wceq preq2 eleq1d zfpair2 vtoclg syl5ib
+      cv preq1 vtocleg imp ) AEFBEFZABGZEFZSUAHCAESCOZBGZEFZUBAIZUAUB
+      DOZGZEFUDDBEUFBIUGUCEUFBUBJKCDLMUEUCTEUBABPKNQR $.
+  $}
+
+  ${
+    $( A singleton of a set belongs to the power class of a class containing
+       the set.  (Contributed by Alan Sare, 25-Aug-2011.) $)
+    snelpwi $p |- ( A e. B -> { A } e. ~P B ) $=
+      ( wcel csn cpw wss snssi cvv wb elex snexg elpwg 3syl mpbird ) ABCZADZBEC
+      ZPBFZABGOAHCPHCQRIABJAKPBHLMN $.
+  $}
+
+  ${
+    snelpw.1 $e |- A e. _V $.
+    $( A singleton of a set belongs to the power class of a class containing
+       the set.  (Contributed by NM, 1-Apr-1998.) $)
+    snelpw $p |- ( A e. B <-> { A } e. ~P B ) $=
+      ( wcel csn wss cpw snss cvv snexg ax-mp elpw bitr4i ) ABDAEZBFN
+      BGDABCHNBAIDNIDCAJKLM $.
+  $}
+
+  $( A pair of two sets belongs to the power class of a class containing those
+     two sets.  (Contributed by Thierry Arnoux, 10-Mar-2017.) $)
+  prelpwi $p |- ( ( A e. C /\ B e. C ) -> { A , B } e. ~P C ) $=
+    ( wcel wa cpr cpw wss prssi cvv wb elex prexg syl2an elpwg syl mpbird ) ACD
+    ZBCDZEZABFZCGDZUACHZABCITUAJDZUBUCKRAJDBJDUDSACLBCLABMNUACJOPQ $.
+
+  ${
+    $d x y z $.
+    $( A theorem similar to extensionality, requiring the existence of a
+       singleton.  Exercise 8 of [TakeutiZaring] p. 16.  (Contributed by NM,
+       10-Aug-1993.) $)
+    rext $p |- ( A. z ( x e. z -> y e. z ) -> x = y ) $=
+      ( cv wcel wi wal csn wceq vex snid cvv snexg ax-mp imbi12d spcv
+      eleq2 mpi elsn equcomi sylbi syl ) ADZCDZEZBDZUDEZFZCGZUFUCHZEZ
+      UCUFIZUIUCUJEZUKUCAJZKUHUMUKFCUJUCLEUJLEUNUCMNUDUJIUEUMUGUKUDUJ
+      UCQUDUJUFQOPRUKUFUCIULBUCSBATUAUB $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.
+    $( Classes are subclasses if and only if their power classes are
+       subclasses.  Exercise 18 of [TakeutiZaring] p. 18.  (Contributed by NM,
+       13-Oct-1996.) $)
+    sspwb $p |- ( A C_ B <-> ~P A C_ ~P B ) $=
+      ( vx wss cpw cv wcel sstr2 com12 vex elpw 3imtr4g ssrdv csn cvv
+      ssel snexg ax-mp snss bitr4i 3imtr3g impbii ) ABDZAEZBEZDZUCCUD
+      UEUCCFZADZUGBDZUGUDGUGUEGUHUCUIUGABHIUGACJZKUGBUJKLMUFCABUFUGNZ
+      UDGZUKUEGZUGAGZUGBGZUDUEUKPULUKADUNUKAUGOGUKOGUJUGQRZKUGAUJSTUM
+      UKBDUOUKBUPKUGBUJSTUAMUB $.
+  $}
+
+  ${
+    $d A x y $.
+    $( A class equals the union of its power class.  Exercise 6(a) of
+       [Enderton] p. 38.  (Contributed by NM, 14-Oct-1996.)  (Proof shortened
+       by Alan Sare, 28-Dec-2008.) $)
+    unipw $p |- U. ~P A = A $=
+      ( vx vy cpw cuni cv wcel wex eluni elelpwi exlimiv sylbi csn snid snelpwi
+      wa vex elunii sylancr impbii eqriv ) BADZEZABFZUCGZUDAGZUEUDCFZGUGUBGPZCH
+      UFCUDUBIUHUFCUDUGAJKLUFUDUDMZGUIUBGUEUDBQNUDAOUDUIUBRSTUA $.
+  $}
+
+  $( Membership of a power class.  Exercise 10 of [Enderton] p. 26.
+     (Contributed by NM, 13-Jan-2007.) $)
+  pwel $p |- ( A e. B -> ~P A e. ~P ~P U. B ) $=
+    ( wcel cpw cuni wss elssuni sspwb sylib cvv wb pwexg elpwg syl mpbird ) ABC
+    ZADZBEZDZDCZQSFZPARFUAABGARHIPQJCTUAKABLQSJMNO $.
+
+  $( A class is transitive iff its power class is transitive.  (Contributed by
+     Alan Sare, 25-Aug-2011.)  (Revised by Mario Carneiro, 15-Jun-2014.) $)
+  pwtr $p |- ( Tr A <-> Tr ~P A ) $=
+    ( cpw cuni wss wtr unipw sseq1i df-tr dftr4 3bitr4ri ) ABZCZKDAKDKEAELAKAFG
+    KHAIJ $.
+
+  ${
+    $d A x $.  $d B x $.
+    $( An extensionality-like principle defining subclass in terms of subsets.
+       (Contributed by NM, 30-Jun-2004.) $)
+    ssextss $p |- ( A C_ B <-> A. x ( x C_ A -> x C_ B ) ) $=
+      ( wss cpw cv wcel wi wal sspwb dfss2 vex elpw imbi12i albii 3bitri ) BCDB
+      EZCEZDAFZQGZSRGZHZAISBDZSCDZHZAIBCJAQRKUBUEATUCUAUDSBALZMSCUFMNOP $.
+
+    $( An extensionality-like principle that uses the subset instead of the
+       membership relation: two classes are equal iff they have the same
+       subsets.  (Contributed by NM, 30-Jun-2004.) $)
+    ssext $p |- ( A = B <-> A. x ( x C_ A <-> x C_ B ) ) $=
+      ( wss wa cv wi wal wceq wb ssextss anbi12i eqss albiim 3bitr4i ) BCDZCBDZ
+      EAFZBDZRCDZGAHZTSGAHZEBCISTJAHPUAQUBABCKACBKLBCMSTANO $.
+
+    $( Negation of subclass relationship.  Compare ~ nssr .  (Contributed by
+       Jim Kingdon, 17-Sep-2018.) $)
+    nssssr $p |- ( E. x ( x C_ A /\ -. x C_ B ) -> -. A C_ B ) $=
+      ( cv wss wn wa wex wi wal exanaliim ssextss sylnibr ) ADZBEZNCEZF
+      GAHOPIAJBCEOPAKABCLM $.
+  $}
+
+  $( Classes are equal if and only if their power classes are equal.  Exercise
+     19 of [TakeutiZaring] p. 18.  (Contributed by NM, 13-Oct-1996.) $)
+  pweqb $p |- ( A = B <-> ~P A = ~P B ) $=
+    ( wss wa cpw wceq sspwb anbi12i eqss 3bitr4i ) ABCZBACZDAEZBEZCZNMCZDABFMNF
+    KOLPABGBAGHABIMNIJ $.
+
+  ${
+    $d x A $.
+    intid.1 $e |- A e. _V $.
+    $( The intersection of all sets to which a set belongs is the singleton of
+       that set.  (Contributed by NM, 5-Jun-2009.) $)
+    intid $p |- |^| { x | A e. x } = { A } $=
+      ( cv wcel cab cint csn cvv wss snexg ax-mp snid intmin3 elintab
+      eleq2 wi id mpgbir snssi eqssi ) BADZEZAFGZBHZUEIEZUDUEJBIEUFCB
+      KLUCBUEEAUEIUBUEBPBCMNLBUDEZUEUDJUGUCUCQAUCABCOUCRSBUDTLUA $.
+  $}
+
+  ${
+    $d w x y $.  $d w x z $.  $d x y A $.
+    $( An inhabited class (even if proper) has an inhabited subset.
+       (Contributed by Jim Kingdon, 17-Sep-2018.) $)
+    mss $p |- ( E. y y e. A -> E. x ( x C_ A /\ E. z z e. x ) ) $=
+      ( vw cv wcel wex wss wa csn vex snss snm cvv snexg ax-mp wceq sseq1 eleq2
+      exbidv anbi12d spcev mpan2 sylbi exlimiv elequ1 cbvexv anbi2i sylibr
+      exbii ) BFZDGZBHAFZDIZEFZUNGZEHZJZAHZUOCFUNGZCHZJZAHUMUTBUMULKZDIZUTULDBL
+      ZMVEUPVDGZEHZUTEULVFNUSVEVHJAVDULOGVDOGVFULPQUNVDRZUOVEURVHUNVDDSVIUQVGEU
+      NVDUPTUAUBUCUDUEUFVCUSAVBURUOVAUQCECEAUGUHUIUKUJ $.
+  $}
+
+  ${
+    $d x y z A w $.  $d y z ph w $.
+    $( Restricted existence in a class (even if proper) implies restricted
+       existence in a subset.  (Contributed by NM, 23-Aug-2003.) $)
+    exss $p |- ( E. x e. A ph -> E. y ( y C_ A /\ E. x e. y ph ) ) $=
+      ( vz vw wrex cv wcel wa cab wex crab rabn0m df-rab eleq2i sylbi
+      wss wsb bitri exbii bitr3i csn vex ssab2 sstr2 mpi simpr equsb1
+      snss wceq elsn sbbii mpbir jctil df-clab sban 3imtr4i elex2 syl
+      sylib cvv snexg ax-mp sseq1 rexeq anbi12d spcev syl2anc exlimiv
+      ) ABDGZEHZBHZDIZAJZBKZIZELZCHZDRZABVSGZJZCLZVKVLABDMZIZELVRABED
+      NWEVQEWDVPVLABDOPUAUBVQWCEVQVLUCZDRZABWFGZWCVQWFVPRZWGVLVPEUDZU
+      JWIVPDRWGABDUEWFVPDUFUGQVQFHABWFMZIFLZWHVQVLWKIZWLVNBESZABESZJZ
+      VMWFIZBESZWOJZVQWMWPWOWRWNWOUHWRVMVLUKZBESBEUIWQWTBEBVLULUMUNUO
+      VQVOBESWPVOEBUPVNABEUQTWMVLWQAJZBKZIZWSWKXBVLABWFOPXCXABESWSXAE
+      BUPWQABEUQTTURFVLWKUSUTABFWFNVAWBWGWHJCWFVLVBIWFVBIWJVLVCVDVSWF
+      UKVTWGWAWHVSWFDVEABVSWFVFVGVHVIVJQ $.
+  $}
+
+  $( An ordered pair of sets is a set.  (Contributed by Jim Kingdon,
+     19-Sep-2018.) $)
+  opexg $p |- ( ( A e. _V /\ B e. _V ) -> <. A , B >. e. _V ) $=
+    ( cvv wcel cop csn cpr dfopg snexg adantr prexg jca syl eqeltrd
+    wa ) ACDZBCDZOZABEAFZABGZGZCABCCHRSCDZTCDZOUACDRUBUCPUBQAIJABKLST
+    KMN $.
+
+  $( An ordered pair of set variables is a set.  (Contributed by Jim Kingdon,
+     24-Sep-2018.) $)
+  opexv $p |- <. x , y >. e. _V $=
+    ( cv cvv wcel cop vex opexg mp2an ) ACZDEBCZDEJKFDEAGBGJKHI $.
+
+  $( An ordered triple of sets is a set.  (Contributed by Jim Kingdon,
+     19-Sep-2018.) $)
+  otexg $p |- ( ( A e. _V /\ B e. _V /\ C e. _V ) -> <. A , B , C >. e. _V ) $=
+    ( cvv wcel cotp wa cop df-ot opexg sylan syl5eqel 3impa ) ADEZBDEZCDEZABCFZ
+    DENOGZPGQABHZCHZDABCIRSDEPTDEABJSCJKLM $.
+
+  ${
+    elop.1 $e |- A e. _V $.
+    elop.2 $e |- B e. _V $.
+    elop.3 $e |- C e. _V $.
+    $( An ordered pair has two elements.  Exercise 3 of [TakeutiZaring] p. 15.
+       (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
+       26-Apr-2015.) $)
+    elop $p |- ( A e. <. B , C >. <-> ( A = { B } \/ A = { B , C } ) ) $=
+      ( cop wcel csn cpr wceq wo dfop eleq2i elpr bitri ) ABCGZHABIZBCJZJZHARKA
+      SKLQTABCEFMNARSDOP $.
+  $}
+
+  ${
+    opi1.1 $e |- A e. _V $.
+    opi1.2 $e |- B e. _V $.
+    $( One of the two elements in an ordered pair.  (Contributed by NM,
+       5-Aug-1993.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    opi1 $p |- { A } e. <. A , B >. $=
+      ( csn cpr cop cvv wcel snexg ax-mp prid1 dfop eleqtrri ) AEZOAB
+      FZFABGOPAHIOHICAJKLABCDMN $.
+
+    $( One of the two elements of an ordered pair.  (Contributed by NM,
+       5-Aug-1993.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    opi2 $p |- { A , B } e. <. A , B >. $=
+      ( cpr csn cop cvv wcel prexg mp2an prid2 dfop eleqtrri ) ABEZAF
+      ZOEABGPOAHIBHIOHICDABJKLABCDMN $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                   Ordered pair theorem
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x $.  $d B x $.
+
+    $( An ordered pair is inhabited iff the arguments are sets.  (Contributed
+       by Jim Kingdon, 21-Sep-2018.) $)
+    opm $p |- ( E. x x e. <. A , B >. <-> ( A e. _V /\ B e. _V ) ) $=
+      ( cv cop wcel wex cvv csn cpr w3a wa df-op eleq2i exbii abid bitri 19.42v
+      cab df-3an 3bitr4ri 3simpa snexg adantr prmg syl sylanbrc impbii 3bitr2i
+      id ) ADZBCEZFZAGZBHFZCHFZUKBIZBCJZJFZKZAGZUOUPUSAGZKZUOUPLZUNUKUTASZFZAGV
+      AUMVFAULVEUKABCMNOVFUTAUTAPOQVDUSLZAGVDVBLVAVCVDUSARUTVGAUOUPUSTOUOUPVBTZ
+      UAVCVDUOUPVBUBVDVDVBVCVDUJVDUQHFZVBUOVIUPBUCUDAUQURHUEUFVHUGUHUI $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.  $d x D $.
+    opth1.1 $e |- A e. _V $.
+    opth1.2 $e |- B e. _V $.
+    $( An ordered pair is nonempty if the arguments are sets (it is also
+       inhabited; see ~ opm ).  (Contributed by Mario Carneiro,
+       26-Apr-2015.) $)
+    opnzi $p |- <. A , B >. =/= (/) $=
+      ( vx cv cop wcel wex c0 wne cvv opm mpbir2an n0r ax-mp ) EFABGZHEIZQJKRAL
+      HBLHCDEABMNEQOP $.
+
+    $( Equality of the first members of equal ordered pairs.  (Contributed by
+       NM, 28-May-2008.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    opth1 $p |- ( <. A , B >. = <. C , D >. -> A = C ) $=
+      ( cop wceq csn cpr wi sneqr a1i wcel cvv wa opi1 id syl5eleq syl oprcl wo
+      simpld prid1g eleq2 syl5ibrcom elsni eqcomd syl6 dfopg 3syl eleqtrd elpri
+      mpjaod ) ABGZCDGZHZAIZCIZHZACHZURCDJZHZUTVAKUQACELMUQVCCURNZVAUQVDVCCVBNZ
+      UQCONZVEUQVFDONZUQURUPNZVFVGPZUQURUOUPABEFQUQRSZCDURUAZTUCCDOUDTURVBCUEUF
+      VDCACAUGUHUIUQURUSVBJZNUTVCUBUQURUPVLVJUQVHVIUPVLHVJVKCDOOUJUKULURUSVBUMT
+      UN $.
+
+    $( The ordered pair theorem.  If two ordered pairs are equal, their first
+       elements are equal and their second elements are equal.  Exercise 6 of
+       [TakeutiZaring] p. 16.  Note that ` C ` and ` D ` are not required to be
+       sets due our specific ordered pair definition.  (Contributed by NM,
+       28-May-1995.) $)
+    opth $p |- ( <. A , B >. = <. C , D >. <-> ( A = C /\ B = D ) ) $=
+      ( vx cop wceq wa cvv wcel cpr csn syl eqtr3d dfopg sylancl wi prexg opth1
+      opi1 id syl5eleq oprcl simprd opeq1d simpld preqr2g syl2anc mpd cv eqeq2d
+      preq2 eqeq2 imbi12d vex preqr2 vtoclg sylc jca opeq12 impbii ) ABHZCDHZIZ
+      ACIZBDIZJVFVGVHABCDEFUAZVFDKLZCBMZCDMZIZVHVFCKLZVJVFANZVELVNVJJZVFVOVDVEA
+      BEFUBVFUCZUDCDVOUEOZUFVFCNZVKMZVSVLMZIZVMVFVEVTWAVFCBHZVEVTVFVDWCVEVFACBV
+      IUGVQPVFVNBKLZWCVTIVFVNVJVRUHZFCBKKQRPVFVPVEWAIVRCDKKQOPVFVKKLZVLKLZWBVMS
+      VFVNWDWFWEFCBTRVFVPWGVRCDTOVKVLVSUIUJUKVKCGULZMZIZBWHIZSVMVHSGDKWHDIZWJVM
+      WKVHWLWIVLVKWHDCUNUMWHDBUOUPBWHCFGUQURUSUTVAABCDVBVC $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y C $.  $d x y D $.
+    $( Ordered pair theorem. ` C ` and ` D ` are not required to be sets under
+       our specific ordered pair definition.  (Contributed by NM,
+       14-Oct-2005.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    opthg $p |- ( ( A e. V /\ B e. W ) ->
+                 ( <. A , B >. = <. C , D >. <-> ( A = C /\ B = D ) ) ) $=
+      ( vx vy cv cop wceq wa wb opeq1 eqeq1d eqeq1 anbi1d bibi12d opeq2 vex
+      anbi2d opth vtocl2g ) GIZHIZJZCDJZKZUDCKZUEDKZLZMAUEJZUGKZACKZUJLZMABJZUG
+      KZUNBDKZLZMGHABEFUDAKZUHUMUKUOUTUFULUGUDAUENOUTUIUNUJUDACPQRUEBKZUMUQUOUS
+      VAULUPUGUEBASOVAUJURUNUEBDPUARUDUECDGTHTUBUC $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y C $.  $d x y D $.  $d x y X $.
+    $( Ordered pair theorem.  (Contributed by NM, 14-Oct-2005.)  (Revised by
+       Mario Carneiro, 26-Apr-2015.) $)
+    opthg2 $p |- ( ( C e. V /\ D e. W ) ->
+                 ( <. A , B >. = <. C , D >. <-> ( A = C /\ B = D ) ) ) $=
+      ( wcel wa cop wceq opthg eqcom anbi12i 3bitr4g ) CEGDFGHCDIZABIZJCAJZDBJZ
+      HPOJACJZBDJZHCDABEFKPOLSQTRACLBDLMN $.
+  $}
+
+  ${
+    opth2.1 $e |- C e. _V $.
+    opth2.2 $e |- D e. _V $.
+    $( Ordered pair theorem.  (Contributed by NM, 21-Sep-2014.) $)
+    opth2 $p |- ( <. A , B >. = <. C , D >. <-> ( A = C /\ B = D ) ) $=
+      ( cvv wcel cop wceq wa wb opthg2 mp2an ) CGHDGHABICDIJACJBDJKLEFABCDGGMN
+      $.
+  $}
+
+  ${
+    otth.1 $e |- A e. _V $.
+    otth.2 $e |- B e. _V $.
+    otth.3 $e |- R e. _V $.
+    $( Ordered triple theorem, with triple express with ordered pairs.
+       (Contributed by NM, 1-May-1995.)  (Revised by Mario Carneiro,
+       26-Apr-2015.) $)
+    otth2 $p |- ( <. <. A , B >. , R >. = <. <. C , D >. , S >. <->
+                ( A = C /\ B = D /\ R = S ) ) $=
+      ( cop wceq wa w3a opth anbi1i cvv wcel opexg mp2an df-3an
+      3bitr4i ) ABJZCDJZKZEFKZLACKZBDKZLZUELUBEJUCFJKUFUGUEMUDUHUEABC
+      DGHNOUBEUCFAPQBPQUBPQGHABRSINUFUGUETUA $.
+
+    $( Ordered triple theorem.  (Contributed by NM, 25-Sep-2014.)  (Revised by
+       Mario Carneiro, 26-Apr-2015.) $)
+    otth $p |- ( <. A , B , R >. = <. C , D , S >. <->
+      ( A = C /\ B = D /\ R = S ) ) $=
+      ( cotp wceq cop w3a df-ot eqeq12i otth2 bitri ) ABEJZCDFJZKABLELZCDLFLZKA
+      CKBDKEFKMRTSUAABENCDFNOABCDEFGHIPQ $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    eqvinop.1 $e |- B e. _V $.
+    eqvinop.2 $e |- C e. _V $.
+    $( A variable introduction law for ordered pairs.  Analog of Lemma 15 of
+       [Monk2] p. 109.  (Contributed by NM, 28-May-1995.) $)
+    eqvinop $p |- ( A = <. B , C >. <-> E. x E. y ( A = <. x , y >. /\
+                  <. x , y >. = <. B , C >. ) ) $=
+      ( cv cop wceq wa wex opth2 anbi2i ancom anass 3bitri exbii eqeq2d ceqsexv
+      19.42v opeq2 opeq1 bitr2i ) CAHZBHZIZJZUGDEIZJZKZBLZALUEDJZCUEEIZJZKZALCU
+      IJZULUPAULUMUFEJZUHKZKZBLUMUSBLZKUPUKUTBUKUHUMURKZKVBUHKUTUJVBUHUEUFDEFGM
+      NUHVBOUMURUHPQRUMUSBUAVAUOUMUHUOBEGURUGUNCUFEUEUBSTNQRUOUQADFUMUNUICUEDEU
+      CSTUD $.
+  $}
+
+  ${
+    $d x z w A $.  $d y z w A $.  $d z w ph $.
+    $( Substitution of class ` A ` for ordered pair ` <. x , y >. ` .
+       (Contributed by NM, 27-Dec-1996.)  (Revised by Andrew Salmon,
+       11-Jul-2011.) $)
+    copsexg $p |- ( A = <. x , y >. ->
+                  ( ph <-> E. x E. y ( A = <. x , y >. /\ ph ) ) ) $=
+      ( vz vw cv cop wceq wa wex wb wi vex 19.8a weq syl5bi syl5 weu euequ1 wal
+      eqvinop 19.23bi ex opth anbi1i 2exbii nfe1 wnf wo dveeq2or nfae anass a1i
+      anim2d eximd biidd drex1 sylibd exbii 19.40 19.9t biimpd anim1d syl6 jaoi
+      ax-mp exlimi equcom eubii eupick com12 sylan9 sylbi impbid anbi1d 2exbidv
+      mpbi mpan eqeq1 bibi2d imbi12d mpbiri adantr exlimivv pm2.43i ) DBGZCGZHZ
+      IZAWJAJZCKBKZLZWJDEGZFGZHZIZWPWIIZJZFKEKWJWMMZEFDWGWHBNCNUBWSWTEFWQWTWRWQ
+      WTWRAWRAJZCKZBKZLZMWRAXCWRAXCXAXCCXBBOUCUDWREBPZFCPZJZXCAMWNWOWGWHENFNUEZ
+      XCXGAJZCKZBKZXGAXAXIBCWRXGAXHUFUGXKXEXFAJZCKZJZBKZXGAXJXOBXNBUHCBPCUAZXEC
+      UIZUJXJXOMZCBEUKXPXRXQXPXJXNCKXOXPXIXNCCBCULXIXEXLJZXPXNXEXFAUMZXPXLXMXEX
+      LXMMXPXLCOUNUOQUPXNXNCBXPXNUQURUSXQXJXNXOXJXSCKZXQXNXIXSCXTUTYAXECKZXMJXQ
+      XNXEXLCVAXQYBXEXMXQYBXEXECVBVCVDRQXNBOVEVFVGVHXEXOXMXFAXOXEXMXEBSZXOXEXMM
+      BEPZBSYCBETYDXEBBEVIVJVRXEXMBVKVSVLXMXFAXFCSZXMXFAMCFPZCSYECFTYFXFCCFVIVJ
+      VRXFACVKVSVLVMRQVNVOWQWJWRWMXDDWPWIVTZWQWLXCAWQWKXABCWQWJWRAYGVPVQWAWBWCW
+      DWEVNWF $.
+  $}
+
+  ${
+    $d x y ps $.  $d x y A $.  $d x y B $.
+    $( Closed theorem form of ~ copsex2g .  (Contributed by NM,
+       17-Feb-2013.) $)
+    copsex2t $p |- ( ( A. x A. y ( ( x = A /\ y = B ) -> ( ph <-> ps ) )
+      /\ ( A e. V /\ B e. W ) ) ->
+                  ( E. x E. y ( <. A , B >. = <. x , y >. /\ ph ) <-> ps ) ) $=
+      ( wcel wa cv wceq wb wal wex cop elisset nfe1 nfv nfbi anim12i eeanv nfa1
+      wi sylibr nfa2 nfex opeq12 copsexg eqcoms syl adantl sp 19.21bi bitr3d ex
+      imp exlimd sylan2 ) EGIZFHIZJZCKZELZDKZFLZJZABMZUDZDNZCNZVGDOZCOZEFPZVCVE
+      PZLAJZDOZCOZBMZVBVDCOZVFDOZJVMUTVTVAWACEGQDFHQUAVDVFCDUBUEVKVMVSVKVLVSCVJ
+      CUCVRBCVQCRBCSTVKVGVSDVIDCUFVRBDVQDCVPDRUGBDSTVKVGVSVKVGJAVRBVGAVRMZVKVGV
+      OVNLWBVCVEEFUHWBVNVOACDVNUIUJUKULVKVGVHVKVIDVJCUMUNUQUOUPURURUQUS $.
+  $}
+
+  ${
+    $d x y ps $.  $d x y A $.  $d x y B $.
+    copsex2g.1 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
+    $( Implicit substitution inference for ordered pairs.  (Contributed by NM,
+       28-May-1995.) $)
+    copsex2g $p |- ( ( A e. V /\ B e. W ) ->
+                  ( E. x E. y ( <. A , B >. = <. x , y >. /\ ph ) <-> ps ) ) $=
+      ( wcel cv wceq wex cop wa wb elisset nfe1 nfv nfbi eeanv nfex copsexg syl
+      opeq12 eqcoms bitr3d exlimi sylbir syl2an ) EGJCKZELZCMZDKZFLZDMZEFNZUKUN
+      NZLAOZDMZCMZBPZFHJCEGQDFHQUMUPOULUOOZDMZCMVBULUOCDUAVDVBCVABCUTCRBCSTVCVB
+      DVABDUTDCUSDRUBBDSTVCAVABVCURUQLAVAPZUKUNEFUEVEUQURACDUQUCUFUDIUGUHUHUIUJ
+      $.
+  $}
+
+  ${
+    $d x y z w A $.  $d x y z w B $.  $d x y z w C $.  $d x y z w D $.
+    $d x y z w ps $.  $d x y z w R $.  $d x y z w S $.
+    copsex4g.1 $e |- ( ( ( x = A /\ y = B ) /\ ( z = C /\ w = D ) ) ->
+                     ( ph <-> ps ) ) $.
+    $( An implicit substitution inference for 2 ordered pairs.  (Contributed by
+       NM, 5-Aug-1995.) $)
+    copsex4g $p |- ( ( ( A e. R /\ B e. S ) /\ ( C e. R /\ D e. S ) ) ->
+                      ( E. x E. y E. z E. w ( ( <. A , B >. = <. x , y >. /\
+                      <. C , D >. = <. z , w >. ) /\ ph ) <-> ps ) ) $=
+      ( wcel wa cop cv wceq wex vex eqcom opth bitri anbi12i anbi1i a1i 4exbidv
+      wb id cgsex4g bitrd ) GKNHLNOIKNJLNOOZGHPZCQZDQZPZRZIJPZEQZFQZPZRZOZAOZFS
+      ESDSCSUNGRUOHROZUSIRUTJROZOZAOZFSESDSCSBULVDVHCDEFVDVHUHULVCVGAUQVEVBVFUQ
+      UPUMRVEUMUPUAUNUOGHCTDTUBUCVBVAURRVFURVAUAUSUTIJETFTUBUCUDUEUFUGABVGCDEFG
+      HIJKLVGUIMUJUK $.
+  $}
+
+  $( A property of ordered pairs.  (Contributed by Mario Carneiro,
+     26-Apr-2015.) $)
+  0nelop $p |- -. (/) e. <. A , B >. $=
+    ( c0 cop wcel csn cpr wo id cvv wa oprcl dfopg syl eleqtrd elpri wne necomd
+    wceq wn simpld snnzg prnzg jca neanior sylib pm2.65i ) CABDZEZCAFZSCABGZSHZ
+    UICUJUKGZEULUICUHUMUIIUIAJEZBJEZKUHUMSABCLZABJJMNOCUJUKPNUICUJQZCUKQZKULTUI
+    UQURUIUJCUIUNUJCQUIUNUOUPUAZAJUBNRUIUKCUIUNUKCQUSABJUCNRUDCUJCUKUEUFUG $.
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.  $d D x $.
+
+    $( Equivalence of existence implied by equality of ordered pairs.
+       (Contributed by NM, 28-May-2008.) $)
+    opeqex $p |- ( <. A , B >. = <. C , D >. ->
+      ( ( A e. _V /\ B e. _V ) <-> ( C e. _V /\ D e. _V ) ) ) $=
+    ( vx cop wceq cv wcel wex cvv wa eleq2 exbidv opm 3bitr3g ) ABFZC
+    DFZGZEHZQIZEJTRIZEJAKIBKILCKIDKILSUAUBEQRTMNEABOECDOP $.
+  $}
+
+  ${
+    opcom.1 $e |- A e. _V $.
+    opcom.2 $e |- B e. _V $.
+    $( An ordered pair commutes iff its members are equal.  (Contributed by NM,
+       28-May-2009.) $)
+    opcom $p |- ( <. A , B >. = <. B , A >. <-> A = B ) $=
+      ( cop wceq wa opth eqcom anbi2i anidm 3bitri ) ABEBAEFABFZBAFZGMMGMABBACD
+      HNMMBAIJMKL $.
+  $}
+
+  ${
+    $d x y z A $.  $d y z B $.
+    moop2.1 $e |- B e. _V $.
+    $( "At most one" property of an ordered pair.  (Contributed by NM,
+       11-Apr-2004.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    moop2 $p |- E* x A = <. B , x >. $=
+      ( vy cv cop wceq wmo csb wa wal eqtr2 vex opth simprbi syl gen2 nfcsb1v
+      wi nfcv nfop nfeq2 csbeq1a id opeq12d eqeq2d mo4f mpbir ) BCAFZGZHZAIULBA
+      EFZCJZUMGZHZKZUJUMHZTZELALUSAEUQUKUOHZURBUKUOMUTCUNHURCUJUNUMDANOPQRULUPA
+      EABUOAUNUMAUMCSAUMUAUBUCURUKUOBURCUNUJUMAUMCUDURUEUFUGUHUI $.
+  $}
+
+  ${
+    opeqsn.1 $e |- A e. _V $.
+    opeqsn.2 $e |- B e. _V $.
+    opeqsn.3 $e |- C e. _V $.
+    $( Equivalence for an ordered pair equal to a singleton.  (Contributed by
+       NM, 3-Jun-2008.) $)
+    opeqsn $p |- ( <. A , B >. = { C } <-> ( A = B /\ C = { A } ) ) $=
+      ( cop csn wceq cpr wa dfop eqeq1i wcel snexg preqsn eqcom bitri
+      cvv 3bitri ax-mp prexg mp2an anbi2i anidm anbi1i syl5req eqeq1d
+      dfsn2 preq2 syl6bb pm5.32i ) ABGZCHZIAHZABJZJZUNIUOUPIZUPCIZKZA
+      BIZCUOIZKZUMUQUNABDELMUOUPCASNZUOSNDAOUAVDBSNUPSNDEABUBUCFPUTVA
+      USKVCURVAUSURUPUOIVABAIZKZVAUOUPQABADEDPVFVAVAKVAVEVAVABAQUDVAU
+      ERTUFVAUSVBVAUSUOCIVBVAUPUOCVAUOAAJUPAUIABAUJUGUHUOCQUKULRT $.
+  $}
+
+  ${
+    opeqpr.1 $e |- A e. _V $.
+    opeqpr.2 $e |- B e. _V $.
+    opeqpr.3 $e |- C e. _V $.
+    opeqpr.4 $e |- D e. _V $.
+    $( Equivalence for an ordered pair equal to an unordered pair.
+       (Contributed by NM, 3-Jun-2008.) $)
+    opeqpr $p |- ( <. A , B >. = { C , D }
+  <-> ( ( C = { A } /\ D = { A , B } ) \/ ( C = { A , B } /\ D = { A } ) ) ) $=
+      ( cop cpr wceq csn wa wo eqcom dfop eqeq2i cvv wcel snexg ax-mp
+      prexg mp2an preq12b 3bitri ) ABIZCDJZKUGUFKUGALZABJZJZKCUHKDUIK
+      MCUIKDUHKMNUFUGOUFUJUGABEFPQCDUHUIGHARSZUHRSEATUAUKBRSUIRSEFABU
+      BUCUDUE $.
+  $}
+
+  ${
+    $d a b c x y A $.  $d a b c x y B $.  $d a b c x y C $.  $d a b c x ph $.
+    $d y ps $.
+    euotd.1 $e |- ( ph -> A e. _V ) $.
+    euotd.2 $e |- ( ph -> B e. _V ) $.
+    euotd.3 $e |- ( ph -> C e. _V ) $.
+    euotd.4 $e |- ( ph -> ( ps <-> ( a = A /\ b = B /\ c = C ) ) ) $.
+    $( Prove existential uniqueness for an ordered triple.  (Contributed by
+       Mario Carneiro, 20-May-2015.) $)
+    euotd $p |- ( ph -> E! x E. a E. b E. c ( x = <. a , b , c >. /\ ps ) ) $=
+      ( vy cv wceq wa wex cvv wtru cotp wb wal weu otexg syl3anc w3a biimpa vex
+      wcel otth sylibr eqeq2d biimpd impancom expimpd exlimdv exlimdvv wsbc tru
+      adantr ad2antrr simpr eqcomd biimpar jca a1tru 2thd sbcied mpbiri spesbcd
+      3anassrs nfcv nfsbc1v nfex sbceq1a exbidv spcegf sylc 2exbidv sylib eqeq1
+      excom13 anbi1d 3exbidv syl5ibrcom impbid eqeq2 bibi2d albidv spcegv df-eu
+      alrimiv ) ACOZGOZHOZIOZUAZPZBQZIRZHRGRZWNNOZPZUBZCUCZNRZXBCUDADEFUAZSUJZX
+      BWNXHPZUBZCUCZXGADSUJESUJZFSUJZXIJKLDEFUEUFAXKCAXBXJAXAXJGHAWTXJIAWSBXJAB
+      WSXJABQZWSXJXOWRXHWNXOWODPZWPEPZWQFPZUGZWRXHPZABXSMUHWOWPDEWQFGUIHUIIUIUK
+      ZULUMUNUOUPUQURAXBXJXHWRPZBQZIRHRGRZAYCGRHRZIRZYDAXNYCIFUSZGRZHRZYFLAXMYG
+      HEUSZGRZYIKAYJGDAYJGDUSTUTAYJTGDSJAXPQZYGTHESAXMXPKVAYLXQQYCTIFSAXNXPXQLV
+      BAXPXQXRYCTUBAXSQZYCTYMYBBYMWRXHYMXSXTAXSVCYAULVDABXSMVEVFYMVGVHVLVIVIVIV
+      JVKYHYKHESHEVMYJHGYGHEVNVOXQYGYJGYGHEVPVQVRVSYEYIIFSIFVMYHIHYGIGYCIFVNVOV
+      OXRYCYGHGYCIFVPVTVRVSYCIHGWCWAXJWTYCGHIXJWSYBBWNXHWRWBWDWEWFWGWMXFXLNXHSX
+      CXHPZXEXKCYNXDXJXBXCXHWNWHWIWJWKVSXBCNWLUL $.
+  $}
+
+  ${
+    opthw.1 $e |- A e. _V $.
+    opthw.2 $e |- B e. _V $.
+    $( The union of an ordered pair.  Theorem 65 of [Suppes] p. 39.
+       (Contributed by NM, 17-Aug-2004.)  (Revised by Mario Carneiro,
+       26-Apr-2015.) $)
+    uniop $p |- U. <. A , B >. = { A , B } $=
+      ( cop cuni csn cpr cun dfop unieqi wcel snexg ax-mp prexg mp2an
+      cvv unipr wss wceq snsspr1 ssequn1 mpbi 3eqtri ) ABEZFAGZABHZHZ
+      FUFUGIZUGUEUHABCDJKUFUGAQLZUFQLCAMNUJBQLUGQLCDABOPRUFUGSUIUGTAB
+      UAUFUGUBUCUD $.
+
+    $( Ordered pair membership is inherited by class union.  (Contributed by
+       NM, 13-May-2008.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    uniopel $p |- ( <. A , B >. e. C -> U. <. A , B >. e. U. C ) $=
+      ( cop wcel cuni cpr uniop opi2 eqeltri elssuni sseld mpi ) ABFZCGZPHZPGRC
+      HZGRABIPABDEJABDEKLQPSRPCMNO $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Ordered-pair class abstractions (cont.)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x z w v $.  $d y z w v $.  $d ph z w v $.
+    $( The law of concretion.  Special case of Theorem 9.5 of [Quine] p. 61.
+       (Contributed by NM, 14-Apr-1995.)  (Proof shortened by Andrew Salmon,
+       25-Jul-2011.) $)
+    opabid $p |- ( <. x , y >. e. { <. x , y >. | ph } <-> ph ) $=
+      ( vz cv cop wceq wa wex copab opexv copsexg bicomd df-opab elab2 ) DEZBEC
+      EFZGZAHCIBIZADQABCJBCKRASABCPLMABCDNO $.
+  $}
+
+  ${
+    $d x z A $.  $d y z A $.  $d z ph $.
+    $( Membership in a class abstraction of pairs.  (Contributed by NM,
+       24-Mar-1998.) $)
+    elopab $p |- ( A e. { <. x , y >. | ph } <->
+                 E. x E. y ( A = <. x , y >. /\ ph ) ) $=
+      ( vz copab wcel cvv cv cop wceq wa wex elex opexv mpbiri adantr
+      eleq1 exlimivv eqeq1 anbi1d 2exbidv df-opab elab2g pm5.21nii )
+      DABCFZGDHGZDBICIJZKZALZCMBMZDUFNUJUGBCUIUGAUIUGUHHGBCODUHHRPQSE
+      IZUHKZALZCMBMUKEDUFHULDKZUNUJBCUOUMUIAULDUHTUAUBABCEUCUDUE $.
+  $}
+
+  ${
+    $d x y z v $.  $d x y w v $.  $d v ph $.
+    $( The law of concretion in terms of substitutions.  (Contributed by NM,
+       30-Sep-2002.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.)
+       (New usage is discouraged.)  (Proof modification is discouraged.) $)
+    opelopabsbOLD $p |- ( <. z , w >. e. { <. x , y >. | ph }
+                 <-> [ w / y ] [ z / x ] ph ) $=
+      ( cv cop wceq wa wex copab wcel wsb excom vex opth equcom anbi12ci anbi1i
+      bitri 2exbii elopab 2sb5 3bitr4i ) DFZEFZGZBFZCFZGHZAIZCJBJZUIUFHZUHUEHZI
+      ZAIZBJCJZUGABCKLABDMCEMULUKBJCJUQUKBCNUKUPCBUJUOAUJUEUHHZUFUIHZIUOUEUFUHU
+      IDOEOPURUNUSUMDBQECQRTSUATABCUGUBACBEDUCUD $.
+
+    brabsbOLD.1 $e |- R = { <. x , y >. | ph } $.
+    $( The law of concretion in terms of substitutions.  (Contributed by NM,
+       17-Mar-2008.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    brabsbOLD $p |- ( z R w <-> [ w / y ] [ z / x ] ph ) $=
+      ( cv wbr copab cop wcel wsb breqi df-br opelopabsbOLD 3bitri ) DHZEHZFIRS
+      ABCJZIRSKTLABDMCEMRSFTGNRSTOABCDEPQ $.
+  $}
+
+  ${
+    $d u v x y z w $.  $d u v w z A $.  $d u v w x B $.  $d u v w z ph $.
+    $( The law of concretion in terms of substitutions.  (Contributed by NM,
+       30-Sep-2002.)  (Revised by Mario Carneiro, 18-Nov-2016.) $)
+    opelopabsb $p |- ( <. A , B >. e. { <. x , y >. | ph }
+                 <-> [. A / x ]. [. B / y ]. ph ) $=
+      ( vv vu vz vw cop wcel cvv wa wsb cv wceq wex nfs1v weq wb copab wsbc vex
+      elopab ax-ia1 eqcomd sylib 2eximi eeanv isset anbi12i bitr4i sylbi nfsbxy
+      opth nfv sbequ12 sylan9bbr cbvopab eleq2s sbcex spesbc exlimiv syl eleq1d
+      jca opeq1 dfsbcq2 bibi12d opeq2 sbcbidv nfopab1 nfel2 nfbi nfopab2 opabid
+      chvar vtocl2g pm5.21nii ) DEJZABCUAZKZDLKZELKZMZACEUBZBDUBZWEVTACFNZBGNZG
+      FUAZWAVTWJKVTGOZFOZJZPZWIMZFQGQZWEWIGFVTUDWPWKDPZWLEPZMZFQGQZWEWOWSGFWOWM
+      VTPWSWOVTWMWNWIUEUFWKWLDEGUCFUCUOUGUHWTWQGQZWRFQZMWEWQWRGFUIWCXAWDXBGDUJF
+      EUJUKULUGUMAWIBCGFAGUPAFUPWHBGRWHBGCACFRUNCFSAWHBGSWIACFUQWHBGUQURUSUTWGW
+      CWDWFBDVAWGWFBQWDWFBDVBWFWDBACEVAVCVDVFHOZIOZJZWAKZACINZBHNZTZDXDJZWAKZXG
+      BDUBZTWBWGTHIDELLXCDPZXFXKXHXLXMXEXJWAXCDXDVGVEXGBHDVHVIXDEPZXKWBXLWGXNXJ
+      VTWAXDEDVJVEXNXGWFBDACIEVHVKVIBOZXDJZWAKZXGTZXIBHXFXHBBXEWAABCVLVMXGBHRVN
+      BHSZXQXFXGXHXSXPXEWAXOXCXDVGVEXGBHUQVIXOCOZJZWAKZATXRCIXQXGCCXPWAABCVOVMA
+      CIRVNCISZYBXQAXGYCYAXPWAXTXDXOVJVEACIUQVIABCVPVQVQVRVS $.
+
+    brabsb.1 $e |- R = { <. x , y >. | ph } $.
+    $( The law of concretion in terms of substitutions.  (Contributed by NM,
+       17-Mar-2008.) $)
+    brabsb $p |- ( A R B <-> [. A / x ]. [. B / y ]. ph ) $=
+      ( wbr cop wcel copab wsbc df-br eleq2i opelopabsb 3bitri ) DEFHDEIZFJQABC
+      KZJACELBDLDEFMFRQGNABCDEOP $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y ch $.  $d z ph $.
+    $( Closed theorem form of ~ opelopab .  (Contributed by NM,
+       19-Feb-2013.) $)
+    opelopabt $p |- ( ( A. x A. y ( x = A -> ( ph <-> ps ) )
+                     /\ A. x A. y ( y = B -> ( ps <-> ch ) )
+                     /\ ( A e. V /\ B e. W ) ) ->
+                    ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) ) $=
+      ( cop copab wcel cv wceq wa wex wb wi wal w3a elopab prth 2alimi copsex2t
+      19.26-2 bitr syl6 sylbir sylan 3impa syl5bb ) FGJZADEKLULDMZEMZJNAOEPDPZU
+      MFNZABQZRZESDSZUNGNZBCQZRZESDSZFHLGILOZTCADEULUAUSVCVDUOCQZUSVCOZUPUTOZAC
+      QZRZESDSZVDVEVFURVBOZESDSVJURVBDEUEVKVIDEVKVGUQVAOVHUPUQUTVAUBABCUFUGUCUH
+      ACDEFGHIUDUIUJUK $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ps $.
+    opelopabga.1 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  (Contributed by
+       Mario Carneiro, 19-Dec-2013.) $)
+    opelopabga $p |- ( ( A e. V /\ B e. W ) ->
+                    ( <. A , B >. e. { <. x , y >. | ph } <-> ps ) ) $=
+      ( cop copab wcel cv wceq wa wex elopab copsex2g syl5bb ) EFJZACDKLTCMDMJN
+      AODPCPEGLFHLOBACDTQABCDEFGHIRS $.
+
+    ${
+      brabga.2 $e |- R = { <. x , y >. | ph } $.
+      $( The law of concretion for a binary relation.  (Contributed by Mario
+         Carneiro, 19-Dec-2013.) $)
+      brabga $p |- ( ( A e. V /\ B e. W ) -> ( A R B <-> ps ) ) $=
+        ( wbr cop copab wcel wa df-br eleq2i bitri opelopabga syl5bb ) EFGLZEFM
+        ZACDNZOZEHOFIOPBUBUCGOUEEFGQGUDUCKRSABCDEFHIJTUA $.
+    $}
+
+    $d x y C $.  $d x y D $.
+    $( Ordered pair membership in an ordered pair class abstraction.
+       (Contributed by Mario Carneiro, 19-Dec-2013.) $)
+    opelopab2a $p |- ( ( A e. C /\ B e. D ) -> ( <. A , B >. e.
+                 { <. x , y >. | ( ( x e. C /\ y e. D ) /\ ph ) } <-> ps ) ) $=
+      ( wcel wa cop cv copab wceq eleq1 bi2anan9 anbi12d opelopabga bianabs ) E
+      GJZFHJZKZEFLCMZGJZDMZHJZKZAKZCDNJBUIUCBKCDEFGHUDEOZUFFOZKUHUCABUJUEUAUKUG
+      UBUDEGPUFFHPQIRST $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ps $.
+    opelopaba.1 $e |- A e. _V $.
+    opelopaba.2 $e |- B e. _V $.
+    opelopaba.3 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  (Contributed by
+       Mario Carneiro, 19-Dec-2013.) $)
+    opelopaba $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ps ) $=
+      ( cvv wcel cop copab wb opelopabga mp2an ) EJKFJKEFLACDMKBNGHABCDEFJJIOP
+      $.
+
+    ${
+      braba.4 $e |- R = { <. x , y >. | ph } $.
+      $( The law of concretion for a binary relation.  (Contributed by NM,
+         19-Dec-2013.) $)
+      braba $p |- ( A R B <-> ps ) $=
+        ( cvv wcel wbr wb brabga mp2an ) ELMFLMEFGNBOHIABCDEFGLLJKPQ $.
+    $}
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ch $.
+    opelopabg.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopabg.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  (Contributed by
+       NM, 28-May-1995.)  (Revised by Mario Carneiro, 19-Dec-2013.) $)
+    opelopabg $p |- ( ( A e. V /\ B e. W ) ->
+                    ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) ) $=
+      ( cv wceq sylan9bb opelopabga ) ACDEFGHIDLFMABELGMCJKNO $.
+
+    ${
+      brabg.5 $e |- R = { <. x , y >. | ph } $.
+      $( The law of concretion for a binary relation.  (Contributed by NM,
+         16-Aug-1999.)  (Revised by Mario Carneiro, 19-Dec-2013.) $)
+      brabg $p |- ( ( A e. C /\ B e. D ) -> ( A R B <-> ch ) ) $=
+        ( cv wceq sylan9bb brabga ) ACDEFGJHIDNFOABENGOCKLPMQ $.
+    $}
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.  $d x y D $.  $d x y ch $.
+    opelopab2.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopab2.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( Ordered pair membership in an ordered pair class abstraction.
+       (Contributed by NM, 14-Oct-2007.)  (Revised by Mario Carneiro,
+       19-Dec-2013.) $)
+    opelopab2 $p |- ( ( A e. C /\ B e. D ) -> ( <. A , B >. e.
+                 { <. x , y >. | ( ( x e. C /\ y e. D ) /\ ph ) } <-> ch ) ) $=
+      ( cv wceq sylan9bb opelopab2a ) ACDEFGHIDLFMABELGMCJKNO $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y ch $.
+    opelopab.1 $e |- A e. _V $.
+    opelopab.2 $e |- B e. _V $.
+    opelopab.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopab.4 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  (Contributed by
+       NM, 16-May-1995.) $)
+    opelopab $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) $=
+      ( cvv wcel cop copab wb opelopabg mp2an ) FLMGLMFGNADEOMCPHIABCDEFGLLJKQR
+      $.
+
+    ${
+      brab.5 $e |- R = { <. x , y >. | ph } $.
+      $( The law of concretion for a binary relation.  (Contributed by NM,
+         16-Aug-1999.) $)
+      brab $p |- ( A R B <-> ch ) $=
+        ( cvv wcel wbr wb brabg mp2an ) FNOGNOFGHPCQIJABCDEFGNNHKLMRS $.
+    $}
+  $}
+
+  ${
+    $d w x y z A $.  $d w x y z B $.  $d w z ph $.  $d w z ps $.
+    opelopabaf.x $e |- F/ x ps $.
+    opelopabaf.y $e |- F/ y ps $.
+    opelopabaf.1 $e |- A e. _V $.
+    opelopabaf.2 $e |- B e. _V $.
+    opelopabaf.3 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  This version of
+       ~ opelopab uses bound-variable hypotheses in place of distinct variable
+       conditions."  (Contributed by Mario Carneiro, 19-Dec-2013.)  (Proof
+       shortened by Mario Carneiro, 18-Nov-2016.) $)
+    opelopabaf $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ps ) $=
+      ( cop copab wcel wsbc opelopabsb cvv wb nfv sbc2iegf mp2an bitri ) EFLACD
+      MNADFOCEOZBACDEFPEQNFQNZUCBRIJABCDEFQQGHUDCSKTUAUB $.
+  $}
+
+  ${
+    $d w x y z A $.  $d w x y z B $.  $d w z ch $.  $d w z ph $.
+    opelopabf.x $e |- F/ x ps $.
+    opelopabf.y $e |- F/ y ch $.
+    opelopabf.1 $e |- A e. _V $.
+    opelopabf.2 $e |- B e. _V $.
+    opelopabf.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    opelopabf.4 $e |- ( y = B -> ( ps <-> ch ) ) $.
+    $( The law of concretion.  Theorem 9.5 of [Quine] p. 61.  This version of
+       ~ opelopab uses bound-variable hypotheses in place of distinct variable
+       conditions."  (Contributed by NM, 19-Dec-2008.) $)
+    opelopabf $p |- ( <. A , B >. e. { <. x , y >. | ph } <-> ch ) $=
+      ( cop wcel wsbc cvv wb sbciegf ax-mp copab opelopabsb nfcv cv wceq 3bitri
+      nfsbc sbcbidv ) FGNADEUAOAEGPZDFPZBEGPZCADEFGUBFQOUJUKRJUIUKDFQBDEGDGUCHU
+      GDUDFUEABEGLUHSTGQOUKCRKBCEGQIMSTUF $.
+  $}
+
+  ${
+    $d ph z $.  $d ps z $.  $d x z $.  $d y z $.
+    $( Equivalence of ordered pair abstraction subclass and implication.
+       (Contributed by NM, 27-Dec-1996.)  (Revised by Mario Carneiro,
+       19-May-2013.) $)
+    ssopab2 $p |- ( A. x A. y ( ph -> ps ) ->
+        { <. x , y >. | ph } C_ { <. x , y >. | ps } ) $=
+      ( vz wi wal cv cop wceq wa wex cab copab nfa1 sp anim2d eximd sps df-opab
+      ss2abdv 3sstr4g ) ABFZDGZCGZEHCHDHIJZAKZDLZCLZEMUFBKZDLZCLZEMACDNBCDNUEUI
+      ULEUEUHUKCUDCOUDUHUKFCUDUGUJDUCDOUDABUFUCDPQRSRUAACDETBCDETUB $.
+  $}
+
+  ${
+    $d ph z $.  $d ps z $.  $d x z $.  $d y z $.
+    $( Equivalence of ordered pair abstraction subclass and implication.
+       (Contributed by NM, 27-Dec-1996.)  (Proof shortened by Mario Carneiro,
+       18-Nov-2016.) $)
+    ssopab2b $p |- ( { <. x , y >. | ph } C_ { <. x , y >. | ps } <->
+               A. x A. y ( ph -> ps ) ) $=
+      ( copab wss wi wal nfopab1 nfss nfopab2 cv cop wcel opabid 3imtr3g alrimi
+      ssel ssopab2 impbii ) ACDEZBCDEZFZABGZDHZCHUCUECCUAUBACDIBCDIJUCUDDDUAUBA
+      CDKBCDKJUCCLDLMZUANUFUBNABUAUBUFRACDOBCDOPQQABCDST $.
+  $}
+
+  ${
+    ssopab2i.1 $e |- ( ph -> ps ) $.
+    $( Inference of ordered pair abstraction subclass from implication.
+       (Contributed by NM, 5-Apr-1995.) $)
+    ssopab2i $p |- { <. x , y >. | ph } C_ { <. x , y >. | ps } $=
+      ( wi wal copab wss ssopab2 ax-gen mpg ) ABFZDGACDHBCDHICABCDJMDEKL $.
+  $}
+
+  ${
+    $d x ph $.  $d y ph $.
+    ssopab2dv.1 $e |- ( ph -> ( ps -> ch ) ) $.
+    $( Inference of ordered pair abstraction subclass from implication.
+       (Contributed by NM, 19-Jan-2014.)  (Revised by Mario Carneiro,
+       24-Jun-2014.) $)
+    ssopab2dv $p |- ( ph -> { <. x , y >. | ps } C_ { <. x , y >. | ch } ) $=
+      ( wi wal copab wss alrimivv ssopab2 syl ) ABCGZEHDHBDEICDEIJANDEFKBCDELM
+      $.
+  $}
+
+  ${
+    $d ph z $.  $d ps z $.  $d x z $.  $d y z $.
+    $( Equivalence of ordered pair abstraction equality and biconditional.
+       (Contributed by Mario Carneiro, 4-Jan-2017.) $)
+    eqopab2b $p |- ( { <. x , y >. | ph } = { <. x , y >. | ps }
+                <-> A. x A. y ( ph <-> ps ) ) $=
+      ( copab wss wa wi wal wceq wb ssopab2b anbi12i eqss 2albiim 3bitr4i ) ACD
+      EZBCDEZFZRQFZGABHDICIZBAHDICIZGQRJABKDICISUATUBABCDLBACDLMQRNABCDOP $.
+  $}
+
+  ${
+    $d z ph $.  $d z x $.  $d z y $.
+    $( Inhabited ordered pair class abstraction.  (Contributed by Jim Kingdon,
+       29-Sep-2018.) $)
+    opabm $p |- ( E. z z e. { <. x , y >. | ph } <-> E. x E. y ph ) $=
+      ( cv copab wcel wex cop wceq wa elopab exbii exrot3 isseti 19.41v mpbiran
+      opexv 2exbii 3bitri ) DEZABCFGZDHUABECEIZJZAKZCHBHZDHUEDHZCHBHACHBHUBUFDA
+      BCUALMUEDBCNUGABCUGUDDHADUCBCROUDADPQST $.
+  $}
+
+  ${
+    $d ph w $.  $d A w x $.  $d A y $.  $d w y z $.  $d x z $.
+    $( Move indexed union inside an ordered-pair abstraction.  (Contributed by
+       Stefan O'Rear, 20-Feb-2015.) $)
+    iunopab $p |- U_ z e. A { <. x , y >. | ph } =
+        { <. x , y >. | E. z e. A ph } $=
+      ( vw cv copab wcel wrex cab cop wceq wex ciun elopab rexcom4 exbii bitri
+      wa rexbii r19.42v abbii df-iun df-opab 3eqtr4i ) FGZABCHZIZDEJZFKUGBGCGLM
+      ZADEJZTZCNZBNZFKDEUHOULBCHUJUOFUJUKATZCNZBNZDEJZUOUIURDEABCUGPUAUSUQDEJZB
+      NUOUQDBEQUTUNBUTUPDEJZCNUNUPDCEQVAUMCUKADEUBRSRSSUCDFEUHUDULBCFUEUF $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Power class of union and intersection
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( The power class of the intersection of two classes is the intersection
+       of their power classes.  Exercise 4.12(j) of [Mendelson] p. 235.
+       (Contributed by NM, 23-Nov-2003.) $)
+    pwin $p |- ~P ( A i^i B ) = ( ~P A i^i ~P B ) $=
+      ( vx cpw cin cv wss wa wcel ssin vex elpw anbi12i 3bitr4i ineqri eqcomi )
+      ADZBDZEABEZDZCQRTCFZAGZUABGZHUASGUAQIZUARIZHUATIUAABJUDUBUEUCUAACKZLUABUF
+      LMUASUFLNOP $.
+
+    $( The power class of the union of two classes includes the union of their
+       power classes.  Exercise 4.12(k) of [Mendelson] p. 235.  (Contributed by
+       NM, 23-Nov-2003.) $)
+    pwunss $p |- ( ~P A u. ~P B ) C_ ~P ( A u. B ) $=
+      ( vx cpw cun cv wss wcel ssun elun vex elpw orbi12i bitri 3imtr4i ssriv
+      wo ) CADZBDZEZABEZDZCFZAGZUCBGZQZUCUAGUCTHZUCUBHUCABIUGUCRHZUCSHZQUFUCRSJ
+      UHUDUIUEUCACKZLUCBUJLMNUCUAUJLOP $.
+
+    $( The power class of the union of two classes is a subset of the union of
+       their power classes, if one class is a subclass of the other.  One
+       direction of Exercise 4.12(l) of [Mendelson] p. 235.  (Contributed by
+       Jim Kingdon, 30-Sep-2018.) $)
+    pwssunim $p |- ( ( A C_ B \/ B C_ A ) ->
+               ~P ( A u. B ) C_ ( ~P A u. ~P B ) ) $=
+      ( wss wo cun cpw wceq ssequn2 pweq eqimss sylbi ssequn1 orim12i
+      syl orcoms ssun ) ABCZBACZDABEZFZAFZCZTBFZCZDZTUAUCECRQUERUBQUD
+      RSAGZUBBAHUFTUAGUBSAITUAJNKQSBGZUDABLUGTUCGUDSBITUCJNKMOTUAUCPN
+      $.
+  $}
+
+  $( Break up the power class of a union into a union of smaller classes.
+     (Contributed by Jim Kingdon, 30-Sep-2018.) $)
+  pwundifss $p |- ( ( ~P ( A u. B ) \ ~P A ) u. ~P A ) C_
+      ~P ( A u. B ) $=
+    ( cun cpw cdif undif1ss wss wceq pwunss unss mpbir simpli ssequn2
+    wa mpbi sseqtri ) ABCDZADZERCQRCZQQRFRQGZSQHTBDZQGZTUBNRUACQGABIR
+    UAQJKLRQMOP $.
+
+  $( The power class of the union of two classes equals the union of their
+     power classes, iff one class is a subclass of the other.  Part of Exercise
+     7(b) of [Enderton] p. 28.  (Contributed by Jim Kingdon, 30-Sep-2018.) $)
+  pwunim $p |- ( ( A C_ B \/ B C_ A ) ->
+      ~P ( A u. B ) = ( ~P A u. ~P B ) ) $=
+    ( wss wo cun cpw wceq pwssunim pwunss biantru sylib eqss sylibr
+    wa ) ABCBACDZABEFZAFBFEZCZQPCZNZPQGORTABHSRABIJKPQLM $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Epsilon and identity relations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new constant symbols. $)
+  $c _E $. $( Letter E (for epsilon relation) $)
+  $c _I $.  $( Letter I (for identity relation) $)
+
+  $( Extend class notation to include the epsilon relation. $)
+  cep $a class _E $.
+
+  $( Extend the definition of a class to include identity relation. $)
+  cid $a class _I $.
+
+  ${
+    $d x y $.
+    $( Define the epsilon relation.  Similar to Definition 6.22 of
+       [TakeutiZaring] p. 30.  The epsilon relation and set membership are the
+       same, that is, ` ( A _E B <-> A e. B ) ` when ` B ` is a set by
+       ~ epelg .  Thus, 5 ` _E ` { 1 , 5 }.  (Contributed by NM,
+       13-Aug-1995.) $)
+    df-eprel $a |- _E = { <. x , y >. | x e. y } $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( The epsilon relation and membership are the same.  General version of
+       ~ epel .  (Contributed by Scott Fenton, 27-Mar-2011.)  (Revised by Mario
+       Carneiro, 28-Apr-2015.) $)
+    epelg $p |- ( B e. V -> ( A _E B <-> A e. B ) ) $=
+      ( vx vy wcel cvv cep wbr wi cop df-br cv copab wceq wa wex vex sylbi a1i
+      elopab pm3.2i opeqex mpbiri simpld adantr exlimivv df-eprel eleq2s eleq12
+      elex wb brabga expcom pm5.21ndd ) BCFZAGFZABHIZABFZURUQJUPURABKZHFUQABHLU
+      QUTDMZEMZFZDENZHUTVDFUTVAVBKOZVCPZEQDQUQVCDEUTUAVFUQDEVEUQVCVEUQBGFZVEUQV
+      GPVAGFZVBGFZPVHVIDRERUBABVAVBUCUDUEUFUGSDEUHZUISTUSUQJUPABUKTUQUPURUSULVC
+      USDEABHGCVAAVBBUJVJUMUNUO $.
+  $}
+
+  ${
+    epelc.1 $e |- B e. _V $.
+    $( The epsilon relationship and the membership relation are the same.
+       (Contributed by Scott Fenton, 11-Apr-2012.) $)
+    epelc $p |- ( A _E B <-> A e. B ) $=
+      ( cvv wcel cep wbr wb epelg ax-mp ) BDEABFGABEHCABDIJ $.
+  $}
+
+  $( The epsilon relation and the membership relation are the same.
+     (Contributed by NM, 13-Aug-1995.) $)
+  epel $p |- ( x _E y <-> x e. y ) $=
+    ( cv vex epelc ) ACBCBDE $.
+
+  ${
+    $d x y $.
+    $( Define the identity relation.  Definition 9.15 of [Quine] p. 64.  For
+       example, 5 ` _I ` 5 and ` -. ` 4 ` _I ` 5.  (Contributed by NM,
+       13-Aug-1995.) $)
+    df-id $a |- _I = { <. x , y >. | x = y } $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                  Partial and complete ordering
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+$(
+We have not yet defined relations ( ~ df-rel ), but here we introduce a
+few related notions we will use to develop ordinals.  The class variable
+` R ` is no different from other class variables, but it reminds us that
+normally it represents what we will later call a "relation."
+$)
+
+  $( Declare new constant symbols. $)
+  $c Po $.  $( Partial ordering predicate symbol (read: 'partial ordering'). $)
+  $c Or $.  $( Strict linear ordering predicate symbol (read: 'orders'). $)
+
+  $( Extend wff notation to include the strict partial ordering predicate.
+     Read:  ' ` R ` is a partial order on ` A ` .' $)
+  wpo $a wff R Po A $.
+
+  $( Extend wff notation to include the strict linear ordering predicate.
+     Read:  ' ` R ` orders ` A ` .' $)
+  wor $a wff R Or A $.
+
+  ${
+    $d x y z R $.  $d x y z A $.
+    $( Define the strict partial order predicate.  Definition of [Enderton]
+       p. 168.  The expression ` R Po A ` means ` R ` is a partial order on
+       ` A ` .  (Contributed by NM, 16-Mar-1997.) $)
+    df-po $a |- ( R Po A <-> A. x e. A A. y e. A A. z e. A
+                ( -. x R x /\ ( ( x R y /\ y R z ) -> x R z ) ) ) $.
+
+    $( Define the strict linear order predicate.  The expression ` R Or A ` is
+       true if relationship ` R ` orders ` A ` .  The property
+       ` x R y -> ( x R z \/ z R y ) ` is called weak linearity by Proposition
+       (11.2.3) of [HoTT], p.  (varies).  If we assumed excluded middle, it
+       would be equivalent to trichotomy, ` x R y \/ x = y \/ y R x ` .
+       (Contributed by NM, 21-Jan-1996.)  (Revised by Jim Kingdon,
+       4-Oct-2018.) $)
+    df-iso $a |- ( R Or A <-> ( R Po A /\ A. x e. A A. y e. A A. z e. A
+                ( x R y -> ( x R z \/ z R y ) ) ) ) $.
+  $}
+
+  ${
+    $d x y z R $.  $d x y z A $.  $d x y z B $.
+    $( Subset theorem for the partial ordering predicate.  (Contributed by NM,
+       27-Mar-1997.)  (Proof shortened by Mario Carneiro, 18-Nov-2016.) $)
+    poss $p |- ( A C_ B -> ( R Po B -> R Po A ) ) $=
+      ( vx vy vz wss cv wbr wn wa wi wral wpo ssralv ralimdv syld df-po 3imtr4g
+      ) ABGZDHZUACIJUAEHZCIUBFHZCIKUAUCCILKZFBMZEBMZDBMZUDFAMZEAMZDAMZBCNACNTUG
+      UFDAMUJUFDABOTUFUIDATUFUEEAMUIUEEABOTUEUHEAUDFABOPQPQDEFBCRDEFACRS $.
+  $}
+
+  ${
+    $d x y z R $.  $d x y z S $.  $d x y z A $.
+    $( Equality theorem for partial ordering predicate.  (Contributed by NM,
+       27-Mar-1997.) $)
+    poeq1 $p |- ( R = S -> ( R Po A <-> S Po A ) ) $=
+      ( vx vy vz wceq cv wbr wn wa wral wpo breq notbid anbi12d imbi12d ralbidv
+      wi df-po 2ralbidv 3bitr4g ) BCGZDHZUDBIZJZUDEHZBIZUGFHZBIZKZUDUIBIZSZKZFA
+      LZEALDALUDUDCIZJZUDUGCIZUGUICIZKZUDUICIZSZKZFALZEALDALABMACMUCUOVDDEAAUCU
+      NVCFAUCUFUQUMVBUCUEUPUDUDBCNOUCUKUTULVAUCUHURUJUSUDUGBCNUGUIBCNPUDUIBCNQP
+      RUADEFABTDEFACTUB $.
+  $}
+
+  $( Equality theorem for partial ordering predicate.  (Contributed by NM,
+     27-Mar-1997.) $)
+  poeq2 $p |- ( A = B -> ( R Po A <-> R Po B ) ) $=
+    ( wceq wpo wss wi eqimss2 poss syl eqimss impbid ) ABDZACEZBCEZMBAFNOGBAHBA
+    CIJMABFONGABKABCIJL $.
+
+  ${
+    $d R a b c $.  $d A a b c $.  $d x a b c $.
+    nfpo.r $e |- F/_ x R $.
+    nfpo.a $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for partial orders.  (Contributed by
+       Stefan O'Rear, 20-Jan-2015.) $)
+    nfpo $p |- F/ x R Po A $=
+      ( va vb vc wpo cv wbr wn wa wi wral df-po nfcv nfbr nfan nfralxy nfim nfxfr
+      nfn ) BCIFJZUDCKZLZUDGJZCKZUGHJZCKZMZUDUICKZNZMZHBOZGBOZFBOAFGHBCPUPAFBEU
+      OAGBEUNAHBEUFUMAUEAAUDUDCAUDQZDUQRUCUKULAUHUJAAUDUGCUQDAUGQZRAUGUICURDAUI
+      QZRSAUDUICUQDUSRUASTTTUB $.
+
+    $( Bound-variable hypothesis builder for total orders.  (Contributed by
+       Stefan O'Rear, 20-Jan-2015.) $)
+    nfso $p |- F/ x R Or A $=
+      ( va vb vc wor wpo cv wbr wo wi wral df-iso nfcv nfbr nfralxy
+      wa nfpo nfor nfim nfan nfxfr ) BCIBCJZFKZGKZCLZUGHKZCLZUJUHCLZM
+      ZNZHBOZGBOZFBOZTAFGHBCPUFUQAABCDEUAUPAFBEUOAGBEUNAHBEUIUMAAUGUH
+      CAUGQZDAUHQZRUKULAAUGUJCURDAUJQZRAUJUHCUTDUSRUBUCSSSUDUE $.
+  $}
+
+  ${
+    $d x y z R $.  $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.
+    $( Properties of partial order relation in class notation.  (Contributed by
+       NM, 27-Mar-1997.) $)
+    pocl $p |- ( R Po A -> ( ( B e. A /\ C e. A /\ D e. A ) ->
+               ( -. B R B /\ ( ( B R C /\ C R D ) -> B R D ) ) ) ) $=
+      ( vx vy vz wcel wbr wa wi cv wceq breq1 imbi2d breq2 anbi2d wal wral r3al
+      w3a wn id breq12d notbid anbi1d imbi12d anbi12d imbi1d df-po bitri biimpi
+      wpo 19.21bbi 19.21bi com12 vtocl3ga ) BAICAIDAIUBAEUNZBBEJZUCZBCEJZCDEJZK
+      ZBDEJZLZKZUSFMZVHEJZUCZVHGMZEJZVKHMZEJZKZVHVMEJZLZKZLUSVABVKEJZVNKZBVMEJZ
+      LZKZLUSVAVBCVMEJZKZWALZKZLUSVGLFGHBCDAAAVHBNZVRWCUSWHVJVAVQWBWHVIUTWHVHBV
+      HBEWHUDZWIUEUFWHVOVTVPWAWHVLVSVNVHBVKEOUGVHBVMEOUHUIPVKCNZWCWGUSWJWBWFVAW
+      JVTWEWAWJVSVBVNWDVKCBEQVKCVMEOUIUJRPVMDNZWGVGUSWKWFVFVAWKWEVDWAVEWKWDVCVB
+      VMDCEQRVMDBEQUHRPUSVHAIVKAIVMAIUBZVRUSWLVRLZHUSWMHSZFGUSWNGSFSZUSVRHATGAT
+      FATWOFGHAEUKVRFGHAAAUAULUMUOUPUQURUQ $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z R $.  $d x y z ph $.
+    ispod.1 $e |- ( ( ph /\ x e. A ) -> -. x R x ) $.
+    ispod.2 $e |- ( ( ph /\ ( x e. A /\ y e. A /\ z e. A ) ) ->
+                    ( ( x R y /\ y R z ) -> x R z ) ) $.
+    $( Sufficient conditions for a partial order.  (Contributed by NM,
+       9-Jul-2014.) $)
+    ispod $p |- ( ph -> R Po A ) $=
+      ( cv wbr wn wa wi wral wpo wcel w3a 3ad2antr1 jca ralrimivvva sylibr
+      df-po ) ABIZUCFJKZUCCIZFJUEDIZFJLUCUFFJMZLZDENCENBENEFOAUHBCDEEEAUCEPZUEE
+      PZUFEPZQLUDUGAUJUIUDUKGRHSTBCDEFUBUA $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z ph $.  $d x y z R $.  $d x y z X $.  $d y z Y $.
+    $d z Z $.
+    swopolem.1 $e |- ( ( ph /\ ( x e. A /\ y e. A /\ z e. A ) ) ->
+                    ( x R y -> ( x R z \/ z R y ) ) ) $.
+    $( Perform the substitutions into the strict weak ordering law.
+       (Contributed by Mario Carneiro, 31-Dec-2014.) $)
+    swopolem $p |- ( ( ph /\ ( X e. A /\ Y e. A /\ Z e. A ) ) ->
+                    ( X R Y -> ( X R Z \/ Z R Y ) ) ) $=
+      ( cv wbr wo wi wral wcel wceq breq1 imbi12d breq2 w3a ralrimivvva orbi12d
+      orbi1d orbi2d imbi2d rspc3v mpan9 ) ABKZCKZFLZUIDKZFLZULUJFLZMZNZDEOCEOBE
+      OGEPHEPIEPUAGHFLZGIFLZIHFLZMZNZAUPBCDEEEJUBUPVAGUJFLZGULFLZUNMZNUQVCULHFL
+      ZMZNBCDGHIEEEUIGQZUKVBUOVDUIGUJFRVGUMVCUNUIGULFRUDSUJHQZVBUQVDVFUJHGFTVHU
+      NVEVCUJHULFTUESULIQZVFUTUQVIVCURVEUSULIGFTULIHFRUCUFUGUH $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z R $.  $d x y z ph $.
+    swopo.1 $e |- ( ( ph /\ ( y e. A /\ z e. A ) ) ->
+                    ( y R z -> -. z R y ) ) $.
+    swopo.2 $e |- ( ( ph /\ ( x e. A /\ y e. A /\ z e. A ) ) ->
+                    ( x R y -> ( x R z \/ z R y ) ) ) $.
+    $( A strict weak order is a partial order.  (Contributed by Mario Carneiro,
+       9-Jul-2014.) $)
+    swopo $p |- ( ph -> R Po A ) $=
+      ( cv wcel wa wbr wn wi wral weq breq1 breq2 notbid imbi12d ralrimivva w3a
+      id ancli rspc2va syl2anr pm2.01d 3adantr1 wo imp orcomd ord expimpd ispod
+      sylan2d ) ABCDEFABIZEJZKUPUPFLZUQUQUQKCIZDIZFLZUTUSFLZMZNZDEOCEOURURMZNZA
+      UQUQUQUCUDAVDCDEEGUAVDVFUPUTFLZUTUPFLZMZNCDUPUPEECBPZVAVGVCVIUSUPUTFQVJVB
+      VHUSUPUTFRSTDBPZVGURVIVEUTUPUPFRVKVHURUTUPUPFQSTUEUFUGAUQUSEJZUTEJZUBKZVA
+      VCUPUSFLZVGAVLVMVDUQGUHVNVOVCVGVNVOKZVBVGVPVGVBVNVOVGVBUIHUJUKULUMUOUN $.
+  $}
+
+  $( A partial order relation is irreflexive.  (Contributed by NM,
+     27-Mar-1997.) $)
+  poirr $p |- ( ( R Po A /\ B e. A ) -> -. B R B ) $=
+    ( wcel wpo w3a wbr wn wa df-3an anabs1 anidm 3bitrri wi pocl simpld sylan2b
+    imp ) BADZACEZSSSFZBBCGZHZUASSIZSIUDSSSSJSSKSLMTUAIUCUBUBIUBNZTUAUCUEIABBBC
+    ORPQ $.
+
+  $( A partial order relation is a transitive relation.  (Contributed by NM,
+     27-Mar-1997.) $)
+  potr $p |- ( ( R Po A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
+             ( ( B R C /\ C R D ) -> B R D ) ) $=
+    ( wpo wcel w3a wa wbr wn wi pocl imp simprd ) AEFZBAGCAGDAGHZIBBEJKZBCEJCDE
+    JIBDEJLZPQRSIABCDEMNO $.
+
+  $( A partial order relation has no 2-cycle loops.  (Contributed by NM,
+     27-Mar-1997.) $)
+  po2nr $p |- ( ( R Po A /\ ( B e. A /\ C e. A ) ) ->
+              -. ( B R C /\ C R B ) ) $=
+    ( wpo wcel wa wbr wn poirr adantrr wi potr 3exp2 com34 pm2.43d imp32 mtod )
+    ADEZBAFZCAFZGGBCDHCBDHGZBBDHZSTUCIUAABDJKSTUAUBUCLZSTUAUDLSTUATUDSTUATUDABC
+    BDMNOPQR $.
+
+  $( A partial order relation has no 3-cycle loops.  (Contributed by NM,
+     27-Mar-1997.) $)
+  po3nr $p |- ( ( R Po A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
+             -. ( B R C /\ C R D /\ D R B ) ) $=
+    ( wpo wcel w3a wa wbr wn po2nr 3adantr2 df-3an potr anim1d syl5bi mtod ) AE
+    FZBAGZCAGZDAGZHIZBCEJZCDEJZDBEJZHZBDEJZUFIZSTUBUIKUAABDELMUGUDUEIZUFIUCUIUD
+    UEUFNUCUJUHUFABCDEOPQR $.
+
+  ${
+    $d x y z R $.
+    $( Any relation is a partial ordering of the empty set.  (Contributed by
+       NM, 28-Mar-1997.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    po0 $p |- R Po (/) $=
+      ( vx vy vz c0 wpo cv wbr wn wa wi wral ral0 df-po mpbir ) EAFBGZPAHIPCGZA
+      HQDGZAHJPRAHKJDELCELZBELSBMBCDEANO $.
+  $}
+
+  ${
+    $d R v w x y z $.  $d S v w z $.  $d X v w y z $.  $d Y x z $.
+    $d A v w x z $.  $d B v w x z $.
+    pofun.1 $e |- S = { <. x , y >. | X R Y } $.
+    pofun.2 $e |- ( x = y -> X = Y ) $.
+    $( A function preserves a partial order relation.  (Contributed by Jeff
+       Madsen, 18-Jun-2011.) $)
+    pofun $p |- ( ( R Po B /\ A. x e. A X e. B ) -> S Po A ) $=
+      ( vv vw vz wcel wa cv wbr csb weq cop wpo wn nfcsb1v nfel1 csbeq1a eleq1d
+      wral rspc impcom poirr copab df-br eleq2i nfcv nfbr nfv vex breq1d csbief
+      csbeq1 syl5eqr breq2d opelopabf 3bitri sylnibr sylan2 w3a com12 3anim123d
+      anassrs wi imp adantll potr anbi12i 3imtr4g adantlr syldan ispod ) DEUAZG
+      DNZACUGZOZKLMCFVTWBKPZCNZWDWDFQZUBZWBWEOVTAWDGRZDNZWGWEWBWIWAWIAWDCAWHDAW
+      DGUCZUDAKSZGWHDAWDGUEZUFUHZUIVTWIOWHWHEQZWFDWHEUJWFWDWDTZFNWOGHEQZABUKZNW
+      NWDWDFULFWQWOIUMWPWHHEQZWNABWDWDAWHHEWJAEUNZAHUNZUOZWNBUPKUQZXBWKGWHHEWLU
+      RZBKSZHWHWHEXDHABPZGRZWHAXEGHBUQWTJUSZAXEWDGUTVAVBVCVDVEVFVJWCWELPZCNZMPZ
+      CNZVGZWIAXHGRZDNZAXJGRZDNZVGZWDXHFQZXHXJFQZOZWDXJFQZVKZWBXLXQVTWBXLXQWBWE
+      WIXIXNXKXPWEWBWIWMVHXIWBXNWAXNAXHCAXMDAXHGUCZUDALSZGXMDAXHGUEZUFUHVHXKWBX
+      PWAXPAXJCAXODAXJGUCUDAMSGXODAXJGUEUFUHVHVIVLVMVTXQYBWBVTXQOWHXMEQZXMXOEQZ
+      OWHXOEQZXTYADWHXMXOEVNXRYFXSYGXRWDXHTZFNYIWQNYFWDXHFULFWQYIIUMWPWRYFABWDX
+      HXAYFBUPXBLUQZXCBLSZHXMWHEYKHXFXMXGAXEXHGUTVAVBVCVDXSXHXJTZFNYLWQNYGXHXJF
+      ULFWQYLIUMWPXMHEQYGABXHXJAXMHEYCWSWTUOYGBUPYJMUQZYDGXMHEYEURBMSZHXOXMEYNH
+      XFXOXGAXEXJGUTVAZVBVCVDVOYAWDXJTZFNYPWQNYHWDXJFULFWQYPIUMWPWRYHABWDXJXAYH
+      BUPXBYMXCYNHXOWHEYOVBVCVDVPVQVRVS $.
+  $}
+
+  ${
+    $d x y z R $.  $d x y z A $.
+    $( A strict linear order is a strict partial order.  (Contributed by NM,
+       28-Mar-1997.) $)
+    sopo $p |- ( R Or A -> R Po A ) $=
+      ( vx vy vz wor wpo cv wbr wo wi wral df-iso simplbi ) ABFABGCHZ
+      DHZBIOEHZBIQPBIJKEALDALCALCDEABMN $.
+  $}
+
+  ${
+    $d x y z R $.  $d x y z A $.  $d x y z B $.
+    $( Subset theorem for the strict ordering predicate.  (Contributed by NM,
+       16-Mar-1997.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    soss $p |- ( A C_ B -> ( R Or B -> R Or A ) ) $=
+      ( vx vy vz wpo cv wbr wi wral wa wor wcel w3a ssel r3al 3imtr4g
+      wal df-iso wss wo poss 3anim123d imim1d 2alimdv alimdv anim12d
+      ) ABUAZBCGZDHZEHZCIUKFHZCIUMULCIUBJZFBKEBKDBKZLACGZUNFAKEAKDAKZ
+      LBCMACMUIUJUPUOUQABCUCUIUKBNZULBNZUMBNZOZUNJZFSESZDSUKANZULANZU
+      MANZOZUNJZFSESZDSUOUQUIVCVIDUIVBVHEFUIVGVAUNUIVDURVEUSVFUTABUKP
+      ABULPABUMPUDUEUFUGUNDEFBBBQUNDEFAAAQRUHDEFBCTDEFACTR $.
+  $}
+
+  ${
+    $d x y z R $.  $d x y z S $.  $d x y z A $.
+    $( Equality theorem for the strict ordering predicate.  (Contributed by NM,
+       16-Mar-1997.) $)
+    soeq1 $p |- ( R = S -> ( R Or A <-> S Or A ) ) $=
+      ( vx vy vz wceq wpo cv wbr wo wi wral wa wor poeq1 breq orbi12d
+      imbi12d df-iso 2ralbidv ralbidv anbi12d 3bitr4g ) BCGZABHZDIZEI
+      ZBJZUGFIZBJZUJUHBJZKZLZFAMEAMZDAMZNACHZUGUHCJZUGUJCJZUJUHCJZKZL
+      ZFAMEAMZDAMZNABOACOUEUFUQUPVDABCPUEUOVCDAUEUNVBEFAAUEUIURUMVAUG
+      UHBCQUEUKUSULUTUGUJBCQUJUHBCQRSUAUBUCDEFABTDEFACTUD $.
+  $}
+
+  $( Equality theorem for the strict ordering predicate.  (Contributed by NM,
+     16-Mar-1997.) $)
+  soeq2 $p |- ( A = B -> ( R Or A <-> R Or B ) ) $=
+    ( wceq wor wss wa wi wb soss anim12i eqss dfbi2 3imtr4i bicomd ) ABDZBCEZAC
+    EZABFZBAFZGQRHZRQHZGPQRISUATUBABCJBACJKABLQRMNO $.
+
+  $( A strict order relation is irreflexive.  (Contributed by NM,
+     24-Nov-1995.) $)
+  sonr $p |- ( ( R Or A /\ B e. A ) -> -. B R B ) $=
+    ( wor wpo wcel wbr wn sopo poirr sylan ) ACDACEBAFBBCGHACIABCJK $.
+
+  $( A strict order relation is a transitive relation.  (Contributed by NM,
+     21-Jan-1996.) $)
+  sotr $p |- ( ( R Or A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
+             ( ( B R C /\ C R D ) -> B R D ) ) $=
+    ( wor wpo wcel w3a wbr wa wi sopo potr sylan ) AEFAEGBAHCAHDAHIBCEJCDEJKBDE
+    JLAEMABCDENO $.
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.  $d x y z R $.
+    $( A strict order relation satisfies weak linearity.  (Contributed by Jim
+       Kingdon, 6-Oct-2018.) $)
+    sowlin $p |- ( ( R Or A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
+        ( B R C -> ( B R D \/ D R C ) ) ) $=
+      ( vx vy vz wcel w3a wbr wo wi cv wceq breq1 imbi2d breq2 wral wa wor rsp2
+      orbi1d imbi12d orbi2d orbi12d wpo df-iso 3anass imp3a syl5bi adantl sylbi
+      rsp syl6 com12 vtocl3ga impcom ) BAICAIDAIJAEUAZBCEKZBDEKZDCEKZLZMZUSFNZG
+      NZEKZVEHNZEKZVHVFEKZLZMZMUSBVFEKZBVHEKZVJLZMZMUSUTVNVHCEKZLZMZMUSVDMFGHBC
+      DAAAVEBOZVLVPUSVTVGVMVKVOVEBVFEPVTVIVNVJVEBVHEPUCUDQVFCOZVPVSUSWAVMUTVOVR
+      VFCBERWAVJVQVNVFCVHERUEUDQVHDOZVSVDUSWBVRVCUTWBVNVAVQVBVHDBERVHDCEPUFQQUS
+      VEAIZVFAIZVHAIZJZVLUSAEUGZVLHASGASZFASZTWFVLMZFGHAEUHWIWJWGWFWCWDWETZTWIV
+      LWCWDWEUIWIWCWKVLWIWCWHWKVLMWHFAUNVLGHAAUBUOUJUKULUMUPUQUR $.
+  $}
+
+  $( A strict order relation has no 2-cycle loops.  (Contributed by NM,
+     21-Jan-1996.) $)
+  so2nr $p |- ( ( R Or A /\ ( B e. A /\ C e. A ) ) ->
+              -. ( B R C /\ C R B ) ) $=
+    ( wor wpo wcel wa wbr wn sopo po2nr sylan ) ADEADFBAGCAGHBCDICBDIHJADKABCDL
+    M $.
+
+  $( A strict order relation has no 3-cycle loops.  (Contributed by NM,
+     21-Jan-1996.) $)
+  so3nr $p |- ( ( R Or A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
+             -. ( B R C /\ C R D /\ D R B ) ) $=
+    ( wor wpo wcel w3a wbr wn sopo po3nr sylan ) AEFAEGBAHCAHDAHIBCEJCDEJDBEJIK
+    AELABCDEMN $.
+
+  ${
+    $d x y z R $.
+    $( Any relation is a strict ordering of the empty set.  (Contributed by NM,
+       16-Mar-1997.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
+    so0 $p |- R Or (/) $=
+      ( vx vy vz c0 wor wpo cv wbr wo wral po0 ral0 df-iso mpbir2an
+      wi ) EAFEAGBHZCHZAIQDHZAISRAIJPDEKCEKZBEKALTBMBCDEANO $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Set-like relations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new constant symbols. $)
+  $c Se $. $( Set-like predicate symbol (read: 'set-like'). $)
+
+  $( Extend wff notation to include the set-like predicate.  Read:  ' ` R ` is
+     set-like on ` A ` .' $)
+  wse $a wff R Se A $.
+
+  ${
+    $d x y R $.  $d x y A $.
+    $( Define the set-like predicate.  (Contributed by Mario Carneiro,
+       19-Nov-2014.) $)
+    df-se $a |- ( R Se A <-> A. x e. A { y e. A | y R x } e. _V ) $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z R $.  $d x y V $.
+    $( The ` R ` -preimage of an element of the base set in a set-like relation
+       is a set.  (Contributed by Mario Carneiro, 19-Nov-2014.) $)
+    seex $p |- ( ( R Se A /\ B e. A ) -> { x e. A | x R B } e. _V ) $=
+      ( vy wse cv wbr crab cvv wcel wral df-se wceq breq2 rabbidv eleq1d sylanb
+      rspccva ) BDFAGZEGZDHZABIZJKZEBLCBKTCDHZABIZJKZEABDMUDUGECBUACNZUCUFJUHUB
+      UEABUACTDOPQSR $.
+
+    $( Any relation on a set is set-like on it.  (Contributed by Mario
+       Carneiro, 22-Jun-2015.) $)
+    exse $p |- ( A e. V -> R Se A ) $=
+      ( vy vx wcel cv wbr crab cvv wral wse rabexg ralrimivw df-se sylibr ) ACF
+      ZDGEGBHZDAIJFZEAKABLQSEARDACMNEDABOP $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z R $.  $d x y S $.
+    $( Subset theorem for the set-like predicate.  (Contributed by Mario
+       Carneiro, 24-Jun-2015.) $)
+    sess1 $p |- ( R C_ S -> ( S Se A -> R Se A ) ) $=
+      ( vy vx wss cv wbr crab cvv wcel wral wi simpl ssbrd ss2rabdv ssexg df-se
+      wse wa ex syl ralimdv 3imtr4g ) BCFZDGZEGZCHZDAIZJKZEALUFUGBHZDAIZJKZEALA
+      CSABSUEUJUMEAUEULUIFZUJUMMUEUKUHDAUEUFAKZTBCUFUGUEUONOPUNUJUMULUIJQUAUBUC
+      EDACREDABRUD $.
+
+    $( Subset theorem for the set-like predicate.  (Contributed by Mario
+       Carneiro, 24-Jun-2015.) $)
+    sess2 $p |- ( A C_ B -> ( R Se B -> R Se A ) ) $=
+      ( vy vx wss cv wbr crab cvv wcel wral wse ssralv wi rabss2 ssexg ex df-se
+      syl ralimdv syld 3imtr4g ) ABFZDGEGCHZDBIZJKZEBLZUEDAIZJKZEALZBCMACMUDUHU
+      GEALUKUGEABNUDUGUJEAUDUIUFFZUGUJOUEDABPULUGUJUIUFJQRTUAUBEDBCSEDACSUC $.
+  $}
+
+  $( Equality theorem for the set-like predicate.  (Contributed by Mario
+     Carneiro, 24-Jun-2015.) $)
+  seeq1 $p |- ( R = S -> ( R Se A <-> S Se A ) ) $=
+    ( wceq wse wss wi eqimss2 sess1 syl eqimss impbid ) BCDZABEZACEZMCBFNOGCBHA
+    CBIJMBCFONGBCKABCIJL $.
+
+  $( Equality theorem for the set-like predicate.  (Contributed by Mario
+     Carneiro, 24-Jun-2015.) $)
+  seeq2 $p |- ( A = B -> ( R Se A <-> R Se B ) ) $=
+    ( wceq wse wss wi eqimss2 sess2 syl eqimss impbid ) ABDZACEZBCEZMBAFNOGBAHB
+    ACIJMABFONGABKABCIJL $.
+
+  ${
+    $d y R a b c $.  $d y A a b c $.  $d x y a b c $.
+    nffr.r $e |- F/_ x R $.
+    nffr.a $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for set-like relations.  (Contributed
+       by Mario Carneiro, 24-Jun-2015.)  (Revised by Mario Carneiro,
+       14-Oct-2016.) $)
+    nfse $p |- F/ x R Se A $=
+      ( va vb wse cv wbr crab cvv wcel wral df-se nfcv nfbr nfrabxy nfel1 nfralxy
+      nfxfr ) BCHFIZGIZCJZFBKZLMZGBNAGFBCOUFAGBEAUELUDAFBAUBUCCAUBPDAUCPQERSTUA
+      $.
+  $}
+
+  ${
+    $d x y A $.
+    $( The epsilon relation is set-like on any class.  (This is the origin of
+       the term "set-like": a set-like relation "acts like" the epsilon
+       relation of sets and their elements.)  (Contributed by Mario Carneiro,
+       22-Jun-2015.) $)
+    epse $p |- _E Se A $=
+      ( vy vx cep wse cv wbr crab cvv wcel wral cab epel bicomi abbi2i eqeltrri
+      vex rabssab ssexi rgenw df-se mpbir ) ADEBFZCFZDGZBAHZIJZCAKUGCAUFUEBLZUD
+      UHIUEBUDUEUCUDJBCMNOCQPUEBARSTCBADUAUB $.
   $}
 
 $(
@@ -33661,6 +35766,25 @@ htmldef "Tr" as
     "<IMG SRC='_ctr.gif' WIDTH=16 HEIGHT=19 ALT=' Tr' TITLE='Tr'> ";
   althtmldef "Tr" as 'Tr ';
   latexdef "Tr" as "{\rm Tr}";
+htmldef "_E" as
+    " <IMG SRC='rmce.gif' WIDTH=9 HEIGHT=19 ALT=' _E' TITLE='_E'> ";
+  althtmldef "_E" as ' E ';
+  latexdef "_E" as "{\rm E}";
+htmldef "_I" as
+    " <IMG SRC='rmci.gif' WIDTH=4 HEIGHT=19 ALT=' _I' TITLE='_I'> ";
+  althtmldef "_I" as ' I ';
+  latexdef "_I" as "{\rm I}";
+htmldef "Po" as
+    " <IMG SRC='_po.gif' WIDTH=16 HEIGHT=19 ALT=' Po' TITLE='Po'> ";
+  althtmldef "Po" as ' Po ';
+  latexdef "Po" as "{\rm Po}";
+htmldef "Or" as
+    " <IMG SRC='_or.gif' WIDTH=18 HEIGHT=19 ALT=' Or' TITLE='Or'> ";
+  althtmldef "Or" as ' Or ';
+  latexdef "Or" as "{\rm Or}";
+htmldef "Se" as ' Se ';
+  althtmldef "Se" as ' Se ';
+  latexdef "Se" as "{\rm Se}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
