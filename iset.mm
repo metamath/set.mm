@@ -35596,12 +35596,18 @@ $)
 
   ${
     $d w x y z $.
-    $( Axiom of Union.  An axiom of Zermelo-Fraenkel set theory.  It states
-       that a set ` y ` exists that includes the union of a given set ` x `
-       i.e. the collection of all members of the members of ` x ` .  The
-       variant ~ axun2 states that the union itself exists.  A version with the
-       standard abbreviation for union is ~ uniex2 .  A version using class
-       notation is ~ uniex .
+    $( Axiom of Union.  An axiom of Intuitionistic Zermelo-Fraenkel set
+       theory.  It states that a set ` y ` exists that includes the union of a
+       given set ` x ` i.e. the collection of all members of the members of
+       ` x ` .  The variant ~ axun2 states that the union itself exists.  A
+       version with the standard abbreviation for union is ~ uniex2 .  A
+       version using class notation is ~ uniex .
+
+       This is Axiom 3 of [Crosilla] p.  "Axioms of CZF and IZF", except (a)
+       unnecessary quantifiers are removed, (b) Crosilla has a biconditional
+       rather than an implication (but the two are equivalent by ~ bm1.3ii ),
+       and (c) the order of the conjuncts is swapped (which is equivalent by
+       ~ ancom ).
 
        The union of a class ~ df-uni should not be confused with the union of
        two classes ~ df-un .  Their relationship is shown in ~ unipr .
