@@ -35584,14 +35584,6 @@ $)
       ( wtr csuc cuni wceq ontrci con0 elexi unisuc mpbi ) ACADEAFABGAAHBIJK $.
   $}
 
-  $( An ordinal equal to its own union is either zero or a limit ordinal.
-     (Contributed by NM, 1-Oct-2003.) $)
-  unizlim $p |- ( Ord A -> ( A = U. A <-> ( A = (/) \/ Lim A ) ) ) $=
-    ( word cuni wceq c0 wlim wo wa wn wne df-ne w3a df-lim biimpri 3exp syl5bir
-    wi com23 imp orrd ex uni0 eqcomi id unieq 3eqtr4a limuni jaoi impbid1 ) ABZ
-    AACZDZAEDZAFZGZUJULUOUJULHUMUNUJULUMIZUNQUJUPULUNUPAEJZUJULUNQAEKUJUQULUNUN
-    UJUQULLAMNOPRSTUAUMULUNUMEECZAUKUREUBUCUMUDAEUEUFAUGUHUI $.
-
   $( An ordinal number either equals zero or contains zero.  (Contributed by
      NM, 1-Jun-2004.) $)
   on0eqel $p |- ( A e. On -> ( A = (/) \/ (/) e. A ) ) $=
