@@ -35584,17 +35584,6 @@ $)
       ( wtr csuc cuni wceq ontrci con0 elexi unisuc mpbi ) ACADEAFABGAAHBIJK $.
   $}
 
-  $( The singleton of the singleton of the empty set is not an ordinal (nor a
-     natural number by ~ omsson ).  It can be used to represent an "undefined"
-     value for a partial operation on natural or ordinal numbers.  See also
-     ~ onxpdisj .  (Contributed by NM, 21-May-2004.)  (Proof shortened by
-     Andrew Salmon, 12-Aug-2011.) $)
-  snsn0non $p |- -. { { (/) } } e. On $=
-    ( c0 csn con0 wcel wceq wo wn p0ex snid n0i ax-mp eqcom mtbir elsnc pm3.2ni
-    0ex on0eqel mto ) ABZBZCDTAEZATDZFUAUBSTDUAGSHITSJKUBASEZUCSAEZASDUDGAPISAJ
-    KASLMASPNMOTQR $.
-
-
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
