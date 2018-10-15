@@ -36324,59 +36324,6 @@ $)
       VHABVFBJZVTVHWDVTTVFVGRZVGVFRZTVHWDWEVTWFVFBUQVGVFURVAVFVGUSUTVBVCVDVE $.
   $}
 
-  ${
-    $d x y A $.  $d x y B $.  $d x y C $.  $d x y D $.  $d x y R $.
-    $( A well-founded relation has no 3-cycle loops.  Special case of
-       Proposition 6.23 of [TakeutiZaring] p. 30.  (Contributed by NM,
-       10-Apr-1994.)  (Revised by Mario Carneiro, 22-Jun-2015.) $)
-    fr3nr $p |- ( ( R Fr A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
-                -. ( B R C /\ C R D /\ D R B ) ) $=
-      ( vy vx wcel w3a wbr wn wral wss csn wb snssg syl mpbiri wceq notbid wrex
-      wfr wa w3o cv ctp cvv c0 wne tpex a1i simpl cpr df-tp simpr1 simpr2 prssi
-      cun syl2anc simpr3 snssd unssd syl5eqss snsstp1 ne0i fri syl22anc ralbidv
-      breq2 rextpg adantl mpbid wi snsstp3 breq1 rspcv snsstp2 3orim123d 3ianor
-      mpd sylibr 3anrot sylnib ) AEUBZBAHZCAHZDAHZIZUCZDBEJZBCEJZCDEJZIZWKWLWJI
-      WIWJKZWKKZWLKZUDZWMKWIFUEZBEJZKZFBCDUFZLZWRCEJZKZFXALZWRDEJZKZFXALZUDZWQW
-      IWRGUEZEJZKZFXALZGXAUAZXIWIXAUGHZWDXAAMXAUHUIZXNXOWIBCDUJUKWDWHULWIXABCUM
-      ZDNZURABCDUNWIXQXRAWIWEWFXQAMWDWEWFWGUOZWDWEWFWGUPZBCAUQUSWIDAWDWEWFWGUTZ
-      VAVBVCWIBXAHZXPWIYBBNXAMZBCDVDWIWEYBYCOXSBXAAPQRZXABVEQGFAXAUGEVFVGWHXNXI
-      OWDXMXBXEXHGBCDAAAXJBSZXLWTFXAYEXKWSXJBWREVITVHXJCSZXLXDFXAYFXKXCXJCWREVI
-      TVHXJDSZXLXGFXAYGXKXFXJDWREVITVHVJVKVLWIXBWNXEWOXHWPWIDXAHZXBWNVMWIYHXRXA
-      MZBCDVNWIWGYHYIOYADXAAPQRWTWNFDXAWRDSWSWJWRDBEVOTVPQWIYBXEWOVMYDXDWOFBXAW
-      RBSXCWKWRBCEVOTVPQWICXAHZXHWPVMWIYJCNXAMZBCDVQWIWFYJYKOXTCXAAPQRXGWPFCXAW
-      RCSXFWLWRCDEVOTVPQVRVTWJWKWLVSWAWJWKWLWBWC $.
-  $}
-
-  $( A set well-founded by epsilon contains no 3-cycle loops.  (Contributed by
-     NM, 19-Apr-1994.)  (Revised by Mario Carneiro, 22-Jun-2015.) $)
-  epne3 $p |- ( ( _E Fr A /\ ( B e. A /\ C e. A /\ D e. A ) ) ->
-                -. ( B e. C /\ C e. D /\ D e. B ) ) $=
-    ( cep wfr wcel w3a wa wbr fr3nr wb epelg 3ad2ant2 3ad2ant3 3anbi123d adantl
-    3ad2ant1 mtbid ) AEFZBAGZCAGZDAGZHZIBCEJZCDEJZDBEJZHZBCGZCDGZDBGZHZABCDEKUD
-    UHULLTUDUEUIUFUJUGUKUBUAUEUILUCBCAMNUCUAUFUJLUBCDAMOUAUBUGUKLUCDBAMRPQS $.
-
-  ${
-    $d x y z R $.  $d x y z A $.
-    $( Alternate definition of well-ordering.  Definition 6.24(2) of
-       [TakeutiZaring] p. 30.  (Contributed by NM, 16-Mar-1997.)  (Proof
-       shortened by Andrew Salmon, 12-Aug-2011.) $)
-    dfwe2 $p |- ( R We A <-> ( R Fr A /\ A. x e. A A. y e. A
-                ( x R y \/ x = y \/ y R x ) ) ) $=
-      ( vz wa cv wbr weq w3o wral wn wi wcel w3a wal breq2 r3al 3imtr4g ralbii
-      wwe wfr wor df-we df-so simpr ax-1 fr2nr 3adantr3 anbi2d notbid syl5ibcom
-      wpo a1i pm2.21 syl6 fr3nr df-3an biimpri ancoms pm2.21d exp3a 3jaod frirr
-      nsyl 3ad2antr1 jctild a2d alimdv 2alimdv ralidm equequ2 3orbi123d cbvralv
-      ex breq1 bitr3i df-po ancrd impbid2 syl5bb pm5.32i bitri ) CDUACDUBZCDUCZ
-      FWDAGZBGZDHZABIZWGWFDHZJZBCKZACKZFCDUDWDWEWMWECDUMZWMFZWDWMABCDUEWDWOWMWN
-      WMUFWDWMWNWDWFEGZDHZAEIZWPWFDHZJZECKZBCKZACKZWFWFDHLZWHWGWPDHZFZWQMZFZECK
-      BCKACKZWMWNWDWFCNZWGCNZWPCNZOZWTMZEPZBPAPXMXHMZEPZBPAPXCXIWDXOXQABWDXNXPE
-      WDXMWTXHWDXMWTXHMWDXMFZWTXGXDXRWQXGWRWSWQXGMXRWQXFUGUNXRWRXFLZXGXRWHWJFZL
-      ZWRXSWDXJXKYAXLCWFWGDUHUIWRXTXFWRWJXEWHWFWPWGDQUJUKULXFWQUOUPXRWSXFWQXRWS
-      XFFZWQXRWHXEWSOZYBCWFWGWPDUQXFWSYCYCXFWSFWHXEWSURUSUTVEVAVBVCWDXKXJXDXLCW
-      FDVDVFVGVOVHVIVJWTABECCCRXHABECCCRSWLXBACWLWLBCKXBWKBCVKWLXABCWKWTBECBEIW
-      HWQWIWRWJWSWGWPWFDQBEAVLWGWPWFDVPVMVNTVQTABECDVRSVSVTWAWBWC $.
-  $}
-
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
