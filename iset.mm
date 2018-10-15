@@ -35568,11 +35568,6 @@ $)
     onelssi $p |- ( B e. A -> B C_ A ) $=
       ( con0 wcel wss wi onelss ax-mp ) ADEBAEBAFGCABHI $.
 
-    $( An ordering law for ordinal numbers.  (Contributed by NM,
-       13-Jun-1994.) $)
-    onssnel2i $p |- ( B C_ A -> -. A e. B ) $=
-      ( wss wcel onirri ssel mtoi ) BADABEAAEACFBAAGH $.
-
     $( An element of an ordinal number equals the intersection with it.
        (Contributed by NM, 11-Jun-1994.) $)
     onelini $p |- ( B e. A -> B = ( B i^i A ) ) $=
