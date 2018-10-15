@@ -35671,11 +35671,6 @@ $)
       FABGHABCDIOAHJBHJOHJCDABKLMN $.
   $}
 
-  $( A triple of classes exists.  (Contributed by NM, 10-Apr-1994.) $)
-  tpex $p |- { A , B , C } e. _V $=
-    ( ctp cpr csn cun cvv df-tp prex snex unex eqeltri ) ABCDABEZCFZGHABCINOABJ
-    CKLM $.
-
   ${
     $d x y A $.  $d x y B $.
     $( Existence of union is equivalent to existence of its components.
@@ -35692,6 +35687,12 @@ $)
   unexg $p |- ( ( A e. V /\ B e. W ) -> ( A u. B ) e. _V ) $=
     ( wcel cvv cun elex wa unexb biimpi syl2an ) ACEAFEZBFEZABGFEZBDEACHBDHMNIO
     ABJKL $.
+
+  $( A triple of classes exists.  (Contributed by NM, 10-Apr-1994.) $)
+  tpexg $p |- ( ( A e. _V /\ B e. _V /\ C e. _V ) -> { A , B , C } e. _V ) $=
+    ( cvv wcel w3a ctp cpr csn cun df-tp wa prexg snexg anim12i 3impa
+    unexg syl syl5eqel ) ADEZBDEZCDEZFZABCGABHZCIZJZDABCKUCUDDEZUEDEZ
+    LZUFDETUAUBUITUALUGUBUHABMCNOPUDUEDDQRS $.
 
   ${
     $( A version of ~ unisn without the ` A e. _V ` hypothesis.  (Contributed
