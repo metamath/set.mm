@@ -35163,23 +35163,20 @@ $)
   $( Define the limit ordinal predicate, which is true for a non-empty ordinal
      that is not a successor (i.e. that is the union of itself).  Our
      definition combines the definition of Lim of [BellMachover] p. 471 and
-     Exercise 1 of [TakeutiZaring] p. 42.  See ~ dflim2 , ~ dflim3 , and dflim4
-     for alternate definitions.  (Contributed by NM, 22-Apr-1994.) $)
+     Exercise 1 of [TakeutiZaring] p. 42.  (Contributed by NM, 22-Apr-1994.) $)
   df-lim $a |- ( Lim A <-> ( Ord A /\ A =/= (/) /\ A = U. A ) ) $.
 
   $( Define the successor of a class.  When applied to an ordinal number, the
-     successor means the same thing as "plus 1" (see ~ oa1suc ).  Definition
-     7.22 of [TakeutiZaring] p. 41, who use "+ 1" to denote this function.  Our
+     successor means the same thing as "plus 1".  Definition 7.22 of
+     [TakeutiZaring] p. 41, who use "+ 1" to denote this function.  Our
      definition is a generalization to classes.  Although it is not
      conventional to use it with proper classes, it has no effect on a proper
-     class ( ~ sucprc ), so that the successor of any ordinal class is still an
-     ordinal class ( ~ ordsuc ), simplifying certain proofs.  Some authors
-     denote the successor operation with a prime (apostrophe-like) symbol, such
-     as Definition 6 of [Suppes] p. 134 and the definition of successor in
-     [Mendelson] p. 246 (who uses the symbol "Suc" as a predicate to mean "is a
-     successor ordinal").  The definition of successor of [Enderton] p. 68
-     denotes the operation with a plus-sign superscript.  (Contributed by NM,
-     30-Aug-1993.) $)
+     class ( ~ sucprc ).  Some authors denote the successor operation with a
+     prime (apostrophe-like) symbol, such as Definition 6 of [Suppes] p. 134
+     and the definition of successor in [Mendelson] p. 246 (who uses the symbol
+     "Suc" as a predicate to mean "is a successor ordinal").  The definition of
+     successor of [Enderton] p. 68 denotes the operation with a plus-sign
+     superscript.  (Contributed by NM, 30-Aug-1993.) $)
   df-suc $a |- suc A = ( A u. { A } ) $.
 
   ${
