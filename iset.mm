@@ -35546,16 +35546,6 @@ $)
   orduniss $p |- ( Ord A -> U. A C_ A ) $=
     ( word wtr cuni wss ordtr df-tr sylib ) ABACADAEAFAGH $.
 
-  $( The successor operation behaves like a one-to-one function.  Compare
-     Exercise 16 of [Enderton] p. 194.  (Contributed by NM, 3-Sep-2003.) $)
-  suc11 $p |- ( ( A e. On /\ B e. On ) -> ( suc A = suc B <-> A = B ) ) $=
-    ( con0 wcel wa csuc wceq wn wo wi word eloni ordn2lp wss sucssel elsuci ord
-    syl5 com12 syl9 ianor sylib syl adantr eqimss eqimss2 eqcom syl6ib jaao mpd
-    suceq impbid1 ) ACDZBCDZEZAFZBFZGZABGZUOABDZHZBADZHZIZURUSJZUMVDUNUMAKZVDAL
-    VFUTVBEHVDABMUTVBUAUBUCUDUMVAVEUNVCUMURAUQDZVAUSURUPUQNUMVGUPUQUEAUQCORVGVA
-    USVGUTUSABPQSTUNURBUPDZVCUSURUQUPNUNVHUQUPUFBUPCORVCVHBAGZUSVHVCVIVHVBVIBAP
-    QSBAUGUHTUIUJABUKUL $.
-
   ${
     on.1 $e |- A e. On $.
     $( An ordinal number is an ordinal class.  (Contributed by NM,
