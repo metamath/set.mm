@@ -35537,11 +35537,6 @@ $)
     ( csuc wcel wceq wo wtr wss elsuci trss wi eqimss a1i jaod syl5 ) BACDBADZB
     AEZFAGZBAHZBAIRPSQABJQSKRBALMNO $.
 
-  $( There is no set between an ordinal number and its successor.  Proposition
-     7.25 of [TakeutiZaring] p. 41.  (Contributed by NM, 9-Jun-1994.) $)
-  onnbtwn $p |- ( A e. On -> -. ( A e. B /\ B e. suc A ) ) $=
-    ( con0 wcel word csuc wa wn eloni ordnbtwn syl ) ACDAEABDBAFDGHAIABJK $.
-
   $( A set whose successor is a subset of another class is a member of that
      class.  (Contributed by NM, 16-Sep-1995.) $)
   sucssel $p |- ( A e. V -> ( suc A C_ B -> A e. B ) ) $=
