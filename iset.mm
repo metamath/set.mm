@@ -35584,13 +35584,6 @@ $)
       ( wtr csuc cuni wceq ontrci con0 elexi unisuc mpbi ) ACADEAFABGAAHBIJK $.
   $}
 
-  $( An ordinal number either equals zero or contains zero.  (Contributed by
-     NM, 1-Jun-2004.) $)
-  on0eqel $p |- ( A e. On -> ( A = (/) \/ (/) e. A ) ) $=
-    ( con0 wcel c0 wceq wo wss 0ss 0elon onsseleq mpan mpbii eqcom orbi2i orcom
-    wb bitri sylib ) ABCZDACZDAEZFZADEZTFZSDAGZUBAHDBCSUEUBPIDAJKLUBTUCFUDUAUCT
-    DAMNTUCOQR $.
-
   $( The singleton of the singleton of the empty set is not an ordinal (nor a
      natural number by ~ omsson ).  It can be used to represent an "undefined"
      value for a partial operation on natural or ordinal numbers.  See also
