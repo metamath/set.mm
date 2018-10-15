@@ -35667,7 +35667,8 @@ $)
     $( The union of two sets is a set.  Corollary 5.8 of [TakeutiZaring]
        p. 16.  (Contributed by NM, 1-Jul-1994.) $)
     unex $p |- ( A u. B ) e. _V $=
-      ( cpr cuni cun cvv unipr prex uniex eqeltrri ) ABEZFABGHABCDIMABJKL $.
+      ( cpr cuni cun cvv unipr wcel prexg mp2an uniex eqeltrri ) ABEZ
+      FABGHABCDIOAHJBHJOHJCDABKLMN $.
   $}
 
   $( A triple of classes exists.  (Contributed by NM, 10-Apr-1994.) $)
