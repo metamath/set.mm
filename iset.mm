@@ -35546,59 +35546,6 @@ $)
   orduniss $p |- ( Ord A -> U. A C_ A ) $=
     ( word wtr cuni wss ordtr df-tr sylib ) ABACADAEAFAGH $.
 
-  $( A trichotomy law for ordinal classes.  (Contributed by NM, 13-Sep-2003.)
-     (Proof shortened by Andrew Salmon, 12-Aug-2011.) $)
-  ordtri2or $p |- ( ( Ord A /\ Ord B ) -> ( A e. B \/ B C_ A ) ) $=
-    ( word wa wcel wss wn wb ordtri1 ancoms biimprd orrd ) ACZBCZDZABEZBAFZOQPG
-    ZNMQRHBAIJKL $.
-
-  $( A trichotomy law for ordinal classes.  (Contributed by NM, 2-Nov-2003.) $)
-  ordtri2or2 $p |- ( ( Ord A /\ Ord B ) -> ( A C_ B \/ B C_ A ) ) $=
-    ( word wa wcel wss wo ordtri2or wi ordelss ex orim1d adantl mpd ) ACZBCZDAB
-    EZBAFZGZABFZRGZABHPSUAIOPQTRPQTBAJKLMN $.
-
-  $( A consequence of total ordering for ordinal classes.  Similar to
-     ~ ordtri2or2 .  (Contributed by David Moews, 1-May-2017.) $)
-  ordtri2or3 $p |- ( ( Ord A /\ Ord B ) ->
-                     ( A = ( A i^i B ) \/ B = ( A i^i B ) ) ) $=
-    ( word wa wss wo cin wceq ordtri2or2 dfss dfss5 orbi12i sylib ) ACBCDABEZBA
-    EZFAABGZHZBPHZFABINQORABJBAKLM $.
-
-  $( The intersection of two ordinal classes is an element of a third if and
-     only if either one of them is.  (Contributed by David Moews,
-     1-May-2017.) $)
-  ordelinel $p |- ( ( Ord A /\ Ord B /\ Ord C ) ->
-                    ( ( A i^i B ) e. C <-> ( A e. C \/ B e. C ) ) ) $=
-    ( word w3a cin wcel wo wceq wi ordtri2or3 3adant3 eleq1 orc syl6bir syl wss
-    wa ordtr2 mpani olc jaoi inss1 ordin anim1i 3impa inss2 jaod impbid ) ADZBD
-    ZCDZEZABFZCGZACGZBCGZHZUMAUNIZBUNIZHZUOURJZUJUKVAULABKLUSVBUTUSUOUPURAUNCMU
-    PUQNOUTUOUQURBUNCMUQUPUAOUBPUMUPUOUQUMUNAQZUPUOABUCUMUNDZULRZVCUPRUOJUJUKUL
-    VEUJUKRVDULABUDUEUFZUNACSPTUMUNBQZUQUOABUGUMVEVGUQRUOJVFUNBCSPTUHUI $.
-
-  $( Property of a subclass of the maximum (i.e. union) of two ordinals.
-     (Contributed by NM, 28-Nov-2003.) $)
-  ordssun $p |- ( ( Ord B /\ Ord C ) ->
-               ( A C_ ( B u. C ) <-> ( A C_ B \/ A C_ C ) ) ) $=
-    ( word wa cun wss wo wi ordtri2or2 wceq wb ssequn1 sseq2 olc syl6bi ssequn2
-    sylbi orc jaoi syl ssun impbid1 ) BDCDEZABCFZGZABGZACGZHZUDBCGZCBGZHUFUIIZB
-    CJUJULUKUJUFUHUIUJUECKUFUHLBCMUECANRUHUGOPUKUFUGUIUKUEBKUFUGLCBQUEBANRUGUHS
-    PTUAABCUBUC $.
-
-  $( The maximum (i.e. union) of two ordinals is either one or the other.
-     Similar to Exercise 14 of [TakeutiZaring] p. 40.  (Contributed by NM,
-     28-Nov-2003.) $)
-  ordequn $p |- ( ( Ord B /\ Ord C ) ->
-               ( A = ( B u. C ) -> ( A = B \/ A = C ) ) ) $=
-    ( word wa wss wo cun wceq wi ordtri2or2 wb ssequn1 eqeq2 olc syl6bi ssequn2
-    sylbi orc jaoi syl ) BDCDEBCFZCBFZGABCHZIZABIZACIZGZJZBCKUBUIUCUBUEUGUHUBUD
-    CIUEUGLBCMUDCANRUGUFOPUCUEUFUHUCUDBIUEUFLCBQUDBANRUFUGSPTUA $.
-
-  $( The maximum (i.e. union) of two ordinals is ordinal.  Exercise 12 of
-     [TakeutiZaring] p. 40.  (Contributed by NM, 28-Nov-2003.) $)
-  ordun $p |- ( ( Ord A /\ Ord B ) -> Ord ( A u. B ) ) $=
-    ( word wa cun wceq wo eqid ordequn mpi ordeq biimprcd jaao mpd ) ACZBCZDZAB
-    EZAFZRBFZGZRCZQRRFUARHRABIJOSUBPTSUBORAKLTUBPRBKLMN $.
-
   $( The successor operation behaves like a one-to-one function.  Compare
      Exercise 16 of [Enderton] p. 194.  (Contributed by NM, 3-Sep-2003.) $)
   suc11 $p |- ( ( A e. On /\ B e. On ) -> ( suc A = suc B <-> A = B ) ) $=
