@@ -35582,21 +35582,6 @@ $)
        by NM, 12-Jun-1994.) $)
     onunisuci $p |- U. suc A = A $=
       ( wtr csuc cuni wceq ontrci con0 elexi unisuc mpbi ) ACADEAFABGAAHBIJK $.
-
-    ${
-      on.2 $e |- B e. On $.
-      $( Subset is equivalent to membership or equality for ordinal numbers.
-         (Contributed by NM, 15-Sep-1995.) $)
-      onsseli $p |- ( A C_ B <-> ( A e. B \/ A = B ) ) $=
-        ( con0 wcel wss wceq wo wb onsseleq mp2an ) AEFBEFABGABFABHIJCDABKL $.
-
-      $( The union of two ordinal numbers is an ordinal number.  (Contributed
-         by NM, 13-Jun-1994.) $)
-      onun2i $p |- ( A u. B ) e. On $=
-        ( wcel wss wo con0 word onordi ordtri2or mp2an oneluni syl6eqel ssequn1
-        cun wceq eleq1 mpbiri sylbi jaoi ax-mp ) BAEZABFZGZABPZHEZBIAIUEBDJACJB
-        AKLUCUGUDUCUFAHABCMCNUDUFBQZUGABOUHUGBHEDUFBHRSTUAUB $.
-    $}
   $}
 
   $( An ordinal equal to its own union is either zero or a limit ordinal.
