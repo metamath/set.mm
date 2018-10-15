@@ -35542,12 +35542,6 @@ $)
   sucssel $p |- ( A e. V -> ( suc A C_ B -> A e. B ) ) $=
     ( wcel csuc wss sucidg ssel syl5com ) ACDAAEZDJBFABDACGJBAHI $.
 
-  $( Ordinal derived from its successor.  (Contributed by NM, 20-May-1998.) $)
-  orddif $p |- ( Ord A -> A = ( suc A \ { A } ) ) $=
-    ( word csn cin wceq csuc cdif orddisj disj3 cun df-suc difeq1i difun2 eqtri
-    c0 eqeq2i bitr4i sylib ) ABAACZDOEZAAFZSGZEZAHTAASGZEUCASIUBUDAUBASJZSGUDUA
-    UESAKLASMNPQR $.
-
   $( An ordinal class includes its union.  (Contributed by NM, 13-Sep-2003.) $)
   orduniss $p |- ( Ord A -> U. A C_ A ) $=
     ( word wtr cuni wss ordtr df-tr sylib ) ABACADAEAFAGH $.
