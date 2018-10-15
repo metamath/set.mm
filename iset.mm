@@ -35695,15 +35695,6 @@ $)
     LZUFDETUAUBUITUALUGUBUHABMCNOPUDUEDDQRS $.
 
   ${
-    $( A version of ~ unisn without the ` A e. _V ` hypothesis.  (Contributed
-       by Stefan Allan, 14-Mar-2006.) $)
-    unisn2 $p |- U. { A } e. { (/) , A } $=
-      ( cvv wcel csn cuni c0 cpr unisng prid2g eqeltrd wceq snprc biimpi unieqd
-      wn uni0 0ex prid1 eqeltri syl6eqel pm2.61i ) ABCZADZEZFAGZCUBUDAUEABHFABI
-      JUBOZUDFEZUEUFUCFUFUCFKALMNUGFUEPFAQRSTUA $.
-  $}
-
-  ${
     $d x A $.  $d x B $.
     $( Union of a singleton in the form of a restricted class abstraction.
        (Contributed by NM, 3-Jul-2008.) $)
