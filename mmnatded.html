@@ -293,17 +293,14 @@ of Td in turn by eliminating conjuncts
 <A HREF="simp1.html">simp1</A>,
 <A HREF="simp2.html">simp2</A>, and
 <A HREF="simp3.html">simp3</A>).
-If the expression is a conjunction of conjunctions, it may sometimes
-take multiple steps to prove some of the hypotheses
-(to break the expression into its parts).
 If the expression has nested conjunctions,
 inner conjuncts can be broken out by chaining the above theorems
 with <A HREF="syl.html">syl</A>.
 (There are actually many theorems (labeled simp* such as
 <A HREF="simp333.html">simp333</A>)
 that break out inner conjuncts in one step,
-but rather than learning them you can just use simple sequences to
-prove them, and then let the
+but rather than learning them you can just use the chaining
+we just described to prove them, and then let the
 metamath.exe command "minimize_with" figure out
 the right ones needed to collapse them.)
 As your final step, you can then apply the already-proven
