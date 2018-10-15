@@ -35537,40 +35537,6 @@ $)
     ( csuc wcel wceq wo wtr wss elsuci trss wi eqimss a1i jaod syl5 ) BACDBADZB
     AEZFAGZBAHZBAIRPSQABJQSKRBALMNO $.
 
-  $( A subset of an ordinal belongs to its successor.  (Contributed by NM,
-     28-Nov-2003.) $)
-  ordsssuc $p |- ( ( A e. On /\ Ord B ) -> ( A C_ B <-> A e. suc B ) ) $=
-    ( con0 wcel word wa wss wceq wo csuc wb eloni ordsseleq sylan elsucg adantr
-    bitr4d ) ACDZBEZFABGZABDABHIZABJDZRAESTUAKALABMNRUBUAKSABCOPQ $.
-
-  $( A subset of an ordinal number belongs to its successor.  (Contributed by
-     NM, 15-Sep-1995.) $)
-  onsssuc $p |- ( ( A e. On /\ B e. On ) -> ( A C_ B <-> A e. suc B ) ) $=
-    ( con0 wcel word wss csuc wb eloni ordsssuc sylan2 ) BCDACDBEABFABGDHBIABJK
-    $.
-
-  $( An ordinal subset of an ordinal number belongs to its successor.
-     (Contributed by NM, 1-Feb-2005.)  (Proof shortened by Andrew Salmon,
-     12-Aug-2011.) $)
-  ordsssuc2 $p |- ( ( Ord A /\ B e. On ) -> ( A C_ B <-> A e. suc B ) ) $=
-    ( cvv wcel word con0 wa wss csuc wb wi elong biimprd anim1d onsssuc syl6 wn
-    annim ssexg ex elex a1d pm5.21ni sylbi expcom adantld pm2.61i ) ACDZAEZBFDZ
-    GZABHZABIZDZJZKUHUKAFDZUJGUOUHUIUPUJUHUPUIACLMNABOPUHQZUJUOUIUJUQUOUJUQGUJU
-    HKZQUOUJUHRULURUNULUJUHABFSTUNUHUJAUMUAUBUCUDUEUFUG $.
-
-  ${
-    $d x A $.  $d x B $.
-    $( When its successor is subtracted from a class of ordinal numbers, an
-       ordinal number is less than the minimum of the resulting subclass.
-       (Contributed by NM, 1-Dec-2003.) $)
-    onmindif $p |- ( ( A C_ On /\ B e. On ) -> B e. |^| ( A \ suc B ) ) $=
-      ( vx con0 wss wcel wa csuc cdif cint cv wral wn eldif wi wb ssel2 onsssuc
-      ontri1 bitr3d con1bid sylan biimpd exp31 com23 imp4b syl5bi elintg adantl
-      ralrimiv mpbird ) ADEZBDFZGZBABHZIZJFZBCKZFZCUPLZUNUSCUPURUPFURAFZURUOFZM
-      ZGUNUSURAUONULUMVAVCUSULVAUMVCUSOZULVAUMVDULVAGZUMGVCUSVEURDFZUMVCUSPADUR
-      QVFUMGZUSVBVGURBEUSMVBURBSURBRTUAUBUCUDUEUFUGUJUMUQUTPULCBUPDUHUIUK $.
-  $}
-
   $( There is no set between an ordinal number and its successor.  Proposition
      7.25 of [TakeutiZaring] p. 41.  (Contributed by NM, 9-Jun-1994.) $)
   onnbtwn $p |- ( A e. On -> -. ( A e. B /\ B e. suc A ) ) $=
@@ -35643,17 +35609,6 @@ $)
   ordun $p |- ( ( Ord A /\ Ord B ) -> Ord ( A u. B ) ) $=
     ( word wa cun wceq wo eqid ordequn mpi ordeq biimprcd jaao mpd ) ACZBCZDZAB
     EZAFZRBFZGZRCZQRRFUARHRABIJOSUBPTSUBORAKLTUBPRBKLMN $.
-
-  ${
-    $d x A $.  $d x B $.
-    $( A subclass relationship for union and successor of ordinal classes.
-       (Contributed by NM, 28-Nov-2003.) $)
-    ordunisssuc $p |- ( ( A C_ On /\ Ord B ) ->
-                      ( U. A C_ B <-> A C_ suc B ) ) $=
-      ( vx con0 word wa cv wral csuc wcel cuni wb ssel2 ordsssuc sylan ralbidva
-      wss an32s unissb dfss3 3bitr4g ) ADQZBEZFZCGZBQZCAHUEBIZJZCAHAKBQAUGQUDUF
-      UHCAUBUEAJZUCUFUHLZUBUIFUEDJUCUJADUEMUEBNORPCABSCAUGTUA $.
-  $}
 
   $( The successor operation behaves like a one-to-one function.  Compare
      Exercise 16 of [Enderton] p. 194.  (Contributed by NM, 3-Sep-2003.) $)
