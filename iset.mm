@@ -35869,7 +35869,7 @@ $)
     reusv3 $p |- ( E. y e. B ( ph /\ C e. A )
           -> ( A. y e. B A. z e. B ( ( ph /\ ps ) -> C = D )
                    <-> E. x e. A A. y e. B ( ph -> x = C ) ) ) $=
-      ( wcel wa wrex wceq wi wral cv bitri ralbii eleq1d anbi12d nfra2 nfv nfim
+      ( wcel wa wrex wceq wi wral cv bitri ralbii eleq1d anbi12d nfra2xy nfv nfim
       cbvrexv risset ralcom impexp bi2.04 r19.21v sylbi com3l imp31 eqeq1 eqcom
       rsp syl6bb imbi2d ralbidv syl5ibrcom reximdv com23 syl5bi expimpd rexlimi
       ex reusv3i impbid1 ) AHFLZMZDGNZABMHIOZPZEGQDGQZACRZHOZPZDGQZCFNZVLBIFLZM
