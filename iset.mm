@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Oct-2018
+$( iset.mm - Version of 16-Oct-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -28456,6 +28456,12 @@ $)
        nonempty.  (Contributed by Szymon Jaroszewicz, 3-Apr-2007.) $)
     rexn0 $p |- ( E. x e. A ph -> A =/= (/) ) $=
       ( c0 wne cv wcel ne0i a1d rexlimiv ) ACDEZBCBFZCGKACLHIJ $.
+
+    $( Restricted existential quantification implies its restriction is
+       inhabited.  (Contributed by Jim Kingdon, 16-Oct-2018.) $)
+    rexm $p |- ( E. x e. A ph -> E. x x e. A ) $=
+      ( wrex cv wcel wa wex df-rex ax-ia1 eximi sylbi ) ABCDBECFZAGZB
+      HMBHABCINMBMAJKL $.
 
     $( Idempotent law for restricted quantifier.  (Contributed by NM,
        28-Mar-1997.) $)
