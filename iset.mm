@@ -35811,9 +35811,9 @@ $)
        ` A ( x ) ` .  (Contributed by NM, 14-Oct-2010.)  (Revised by Mario
        Carneiro, 18-Nov-2016.) $)
     eusv2i $p |- ( E! y A. x y = A -> E! y E. x y = A ) $=
-      ( cv wceq wal weu wex nfeu1 wnf nfcvd eusvnf nfeqd nf2 sylib 19.2 impbid1
-      wi eubid ibir ) BDZCEZAFZBGZUBAHZBGUDUEUCBUCBIUDUEUCUDUBAJUEUCRUDAUACUDAU
-      AKABCLMUBANOUBAPQST $.
+      ( cv wceq wal weu wex nfeu1 wnf wi nfcvd eusvnf nfeqd nf2 sylib
+      19.2 impbid1 eubid ibir ) BDZCEZAFZBGZUBAHZBGUDUEUCBUCBIUDUEUCU
+      DUBAJUEUCKUDAUACUDAUALABCMNUBAOPUBAAQRST $.
   $}
 
   ${
