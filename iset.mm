@@ -12033,6 +12033,14 @@ $)
   a9e $p |- E. x x = y $=
     ( ax-i9 ) ABC $.
 
+  ${
+    $d x y $.
+    $( At least one individual exists.  Weaker version of ~ a9e .  (Contributed
+       by NM, 3-Aug-2017.) $)
+    a9ev $p |- E. x x = y $=
+      ( ax-i9 ) ABC $.
+  $}
+
   $( An implication related to substitution.  (Contributed by NM, 5-Aug-1993.)
      (Revised by NM, 3-Feb-2015.) $)
   ax9o $p |- ( A. x ( x = y -> A. x ph ) -> ph ) $=
@@ -19204,6 +19212,22 @@ $(
         Negated membership
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
+
+  ${
+    neli.1 $e |- A e/ B $.
+    $( Inference associated with ~ df-nel .  (Contributed by BJ,
+       7-Jul-2018.) $)
+    neli $p |- -. A e. B $=
+      ( wnel wcel wn df-nel mpbi ) ABDABEFCABGH $.
+  $}
+
+  ${
+    nelir.1 $e |- -. A e. B $.
+    $( Inference associated with ~ df-nel .  (Contributed by BJ,
+       7-Jul-2018.) $)
+    nelir $p |- A e/ B $=
+      ( wnel wcel wn df-nel mpbir ) ABDABEFCABGH $.
+  $}
 
   $( Equality theorem for negated membership.  (Contributed by NM,
      20-Nov-1994.) $)
