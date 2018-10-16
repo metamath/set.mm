@@ -35741,14 +35741,6 @@ $)
       IVOUJUKULUMVBIUNUOUP $.
   $}
 
-  $( If the subtrahend of a class difference exists, then the minuend exists
-     iff the difference exists.  (Contributed by NM, 12-Nov-2003.)  (Proof
-     shortened by Andrew Salmon, 12-Aug-2011.) $)
-  difex2 $p |- ( B e. C -> ( A e. _V <-> ( A \ B ) e. _V ) ) $=
-    ( wcel cvv cdif difexg wa cun ssun2 uncom undif2 eqtr2i sseqtri unexg ssexg
-    wss sylancr expcom impbid2 ) BCDZAEDZABFZEDZABEGUDUAUBUDUAHAUCBIZQUEEDUBABA
-    IZUEABJUEBUCIUFUCBKBALMNUCBECOAUEEPRST $.
-
   ${
     opeluu.1 $e |- A e. _V $.
     opeluu.2 $e |- B e. _V $.
