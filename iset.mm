@@ -35732,12 +35732,13 @@ $)
     $( The class of all singletons is a proper class.  (Contributed by NM,
        10-Oct-2008.)  (Proof shortened by Eric Schmidt, 7-Dec-2008.) $)
     snnex $p |- { x | E. y x = { y } } e/ _V $=
-      ( vz cv csn wceq wex cab cvv wcel cuni vprc wa vex snid a9ev sneq equcoms
-      eximii snex eleq2 eqeq1 exbidv anbi12d spcev mp2an mpbir 2th eqriv eleq1i
-      eluniab mtbir uniexg mto nelir ) ADZBDZEZFZBGZAHZIVAIJVAKZIJZVCIIJLVBIICV
-      BICDZVBJZVDIJVEVDUPJZUTMZAGZVDVDEZJZVIURFZBGZVHVDCNZOUQVDFVKBBCPVKCBVDUQQ
-      RSVGVJVLMAVIVDTUPVIFZVFVJUTVLUPVIVDUAVNUSVKBUPVIURUBUCUDUEUFUTAVDUKUGVMUH
-      UIUJULVAIUMUNUO $.
+      ( vz cv csn wceq wex cab cvv wcel cuni vprc wa vex snid equcoms
+      a9ev sneq eximii snexg ax-mp eleq2 eqeq1 exbidv anbi12d eluniab
+      spcev mp2an mpbir 2th eqriv eleq1i mtbir uniexg mto nelir ) ADZ
+      BDZEZFZBGZAHZIVBIJVBKZIJZVDIIJLVCIICVCICDZVCJZVEIJZVFVEUQJZVAMZ
+      AGZVEVEEZJZVKUSFZBGZVJVECNZOURVEFVMBBCQVMCBVEURRPSVIVLVNMAVKVGV
+      KIJVOVETUAUQVKFZVHVLVAVNUQVKVEUBVPUTVMBUQVKUSUCUDUEUGUHVAAVEUFU
+      IVOUJUKULUMVBIUNUOUP $.
   $}
 
   $( If the subtrahend of a class difference exists, then the minuend exists
