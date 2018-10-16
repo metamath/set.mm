@@ -35887,16 +35887,6 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d x z B $.
-    eusv4.1 $e |- B e. _V $.
-    $( Two ways to express single-valuedness of a class expression
-       ` B ( x ) ` .  (Contributed by NM, 27-Oct-2010.) $)
-    eusv4 $p |- ( E! x E. y e. A x = B <-> E! x A. y e. A x = B ) $=
-      ( cvv wcel cv wceq wrex weu wral wb reusv2lem3 a1i mprg ) DFGZAHDIZBCJAKR
-      BCLAKMBCABCDNQBHCGEOP $.
-  $}
-
-  ${
     $d x A $.  $d x y B $.  $d x C $.  $d x y $.
     $( Two ways to express single-valuedness of a class expression
        ` C ( y ) ` .  (Contributed by NM, 16-Dec-2012.)
