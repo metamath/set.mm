@@ -35887,68 +35887,6 @@ $)
   $}
 
   ${
-    $d x A $.  $d x y B $.  $d x C $.  $d x y $.
-    $( Two ways to express single-valuedness of a class expression
-       ` C ( y ) ` .  (Contributed by NM, 16-Dec-2012.)
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
-    reusv5OLD $p |- ( B =/= (/) -> ( E! x e. A A. y e. B x = C
-                     <-> E. x e. A A. y e. B x = C ) ) $=
-      ( c0 wne cv wceq wrex wral wreu wb wcel wex wa equid biantru exbii n0 wi
-      df-rex 3bitr4i reusv1 a1bi ralbii reubii rexbii 3bitr4g sylbi ) DFGZBHZUL
-      IZBDJZAHEIZBDKZACLZUPACJZMULDNZBOUSUMPZBOUKUNUSUTBUMUSBQZRSBDTUMBDUBUCUNU
-      MUOUAZBDKZACLVCACJUQURUMABCDEUDUPVCACUOVBBDUMUOVAUEUFZUGUPVCACVDUHUIUJ $.
-  $}
-
-  ${
-    $d v w x y z A $.  $d v w x y z B $.  $d v w x z C $.
-    $( Two ways to express single-valuedness of a class expression
-       ` C ( y ) ` .  The converse does not hold.  Note that ` U. A = |^| A `
-       means ` A ` is a singleton ( ~ uniintsn ).  (Contributed by NM,
-       30-Oct-2010.)  (Proof shortened by Mario Carneiro, 24-Dec-2016.)
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
-    reusv6OLD $p |- ( ( U. A =/= |^| A \/ B =/= (/) )
-          -> ( E! x e. A A. y e. B x = C -> E! x e. A E. y e. B x = C ) ) $=
-      ( vz wne cv wceq wral wreu wi c0 wcel wa weu csn wex nfv ex cuni wn raleq
-      cint wrex reubidv df-reu uniintsn eusn ral0 biantru 3bitr2i bitr4i syl6bb
-      eubii necon3bbid pm2.21 syl6bir crab wss nfrab1 nfeq1 nfan w3a nfra1 nfcv
-      nfrab nf3an vex snid simp2 syl5eleqr eqeq1 ralbidv elrab simprbi r19.21bi
-      syl eqeq2d biimprd elsn syl6ibr rexlimd 3expia ralrimi rabss sylibr simpr
-      sseqtr4d r19.2z adantr ss2rabdv eqssd eqtrd eximdv reusn 3imtr4g a1d jaoi
-      pm2.61ine ) CUAZCUDZGZAHZEIZBDJZACKZXEBDUEZACKZLZDMGZXCXJLDMDMIZXCXGUBXJX
-      LXGXAXBXLXGXEBMJZACKZXAXBIZXLXFXMACXEBDMUCUFXNXDCNZXMOZAPZXOXMACUGXOCXDQI
-      ARXPAPXRACUHACUIXPXQAXMXPXEBUJUKUOULUMUNUPXGXIUQURXKXJXCXKXFACUSZFHZQZIZF
-      RXHACUSZYAIZFRXGXIXKYBYDFXKYBYDXKYBOZYCXSYAYEYCXSYEYCYAXSYEXHXDYANZLZACJY
-      CYAUTYEYGACXKYBAXKASAXSYAXFACVAVBVCXKYBXPYGXKYBXPVDZXEYFBDXKYBXPBXKBSBXSY
-      AXFBACXEBDVEBCVFVGVBXPBSVHYFBSYHBHDNZXEYFLYHYIOZXEXDXTIZYFYJYKXEYJXTEXDYH
-      XTEIZBDYHXTXSNZYLBDJZYHXTYAXSXTFVIVJXKYBXPVKVLYMXTCNYNXFYNAXTCYKXEYLBDXDX
-      TEVMVNVOVPVRVQVSVTAXTWAWBTWCWDWEXHACYAWFWGXKYBWHZWIXKXSYCUTYBXKXFXHACXKXF
-      XHLXPXKXFXHXEBDWJTWKWLWKWMYOWNTWOXFAFCWPXHAFCWPWQZWRWTYPWS $.
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.  $d x C $.
-    reusv7.1 $e |- ( y e. B -> C e. A ) $.
-    $( Two ways to express single-valuedness of a class expression
-       ` C ( y ) ` .  Note that ` U. A = |^| A ` means ` A ` is a singleton
-       ( ~ uniintsn ).  (Contributed by NM, 14-Dec-2012.)
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
-    reusv7OLD $p |- ( ( U. A =/= |^| A \/ B =/= (/) )
-          -> ( E! x e. A E. y e. B x = C <-> E! x e. A A. y e. B x = C ) ) $=
-      ( wne cv wceq wrex wreu wral wb c0 wi wn wa wcel weu df-reu raleq reubidv
-      cuni cint csn uniintsn eusn ral0 biantru 3bitr2i bitr4i syl6bb necon3bbid
-      eubii biimprd reurex rexn0 rexlimivw necon2bi jctild pm5.21 syl6 r19.28zv
-      wex syl eubidv reusv2lem4 equid biantrur rexbii reubii biantrurd pm5.32ri
-      eleq1 syl6rbbr biimt bitrd imbi1i ralbiia 3bitr4i 3bitr4g pm2.61ine jaoi
-      a1d ) CUCZCUDZGZAHZEIZBDJZACKZWIBDLZACKZMZDNGZWGWNODNDNIZWGWKPZWMPZQWNWPW
-      GWRWQWPWRWGWPWMWEWFWPWMWIBNLZACKZWEWFIZWPWLWSACWIBDNUAUBWTWHCRZWSQZASZXAW
-      SACTXACWHUEIAVDXBASXDACUFACUGXBXCAWSXBWIBUHUIUNUJUKULUMUOWKDNWKWJACJWOWJA
-      CUPWJWOACWIBDUQURVEUSUTWKWMVAVBWOWNWGWOXBWIQZBDLZASZXBWLQZASWKWMWOXFXHAXB
-      WIBDVCVFBHZXIIZWIQZBDJZACKECRZXJQZWIOZBDLZASWKXGXJABCDEVGWJXLACWIXKBDXJWI
-      BVHZVIVJVKXFXPAXEXOBDXIDRZXEXMWIOZXOXRXEWIXSXRWIXMWIQXEXRXMWIFVLWIXBXMWHE
-      CVNVMVOXRXMWIXSMFXMWIVPVEVQXMXNWIXJXMXQUIVRULVSUNVTWLACTWAZWDWBXTWC $.
-  $}
-
-  ${
     $d x A $.  $d y ph $.  $d x ps $.  $d x y $.
     alxfr.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     $( Transfer universal quantification from a variable ` x ` to another
