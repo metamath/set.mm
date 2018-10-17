@@ -35945,8 +35945,10 @@ $)
        Carneiro, 20-Aug-2014.)  (Proof shortened by Mario Carneiro,
        19-Nov-2016.) $)
     rexxfr2d $p |- ( ph -> ( E. x e. B ps <-> E. y e. C ch ) ) $=
-      ( wn wral wrex cv wceq wa notbid dfrex2 ralxfr2d 3bitr4g ) ABMZDGNZMCMZEH
-      NZMBDGOCEHOAUDUFAUCUEDEFGHIJKADPFQRBCLSUASBDGTCEHTUB $.
+      ( cv wcel wa wceq wex elisset syl wi wrex wral biimprd r19.21bi
+      r19.23v sylibr eleq1 mpbidi exlimdv mpd biimpa rexxfrd ) ABCDEF
+      GHAEMHNOZDMZFPZDQZFGNZUMFINUPJDFIRSUMUOUQDUOUNGNZUQUMAUOURTZEHA
+      UOEHUAZURTUSEHUBAURUTKUCUOUREHUEUFUDUNFGUGUHUIUJAURUTKUKLUL $.
   $}
 
   ${
