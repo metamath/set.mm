@@ -35918,8 +35918,12 @@ $)
        variable ` y ` contained in expression ` A ` .  (Contributed by FL,
        10-Apr-2007.)  (Revised by Mario Carneiro, 15-Aug-2014.) $)
     rexxfrd $p |- ( ph -> ( E. x e. B ps <-> E. y e. C ch ) ) $=
-      ( wn wral wrex cv wceq wa notbid ralxfrd dfrex2 3bitr4g ) ABLZDGMZLCLZEHM
-      ZLBDGNCEHNAUCUEAUBUDDEFGHIJADOFPQBCKRSRBDGTCEHTUA $.
+      ( wrex wal cv wcel wa nfv wex df-rex rexlimdva 19.3 wceq 19.29 an12 exbii
+      wi sylib sylibr sylan2b biimpd expimpd ancomsd reximdv syl5 adantr mpan2d
+      syl5bir wb adantlr rspcedv impbid ) ABDGLZCEHLZABVCDGBBEMZADNZGOZPZVCBEBE
+      QUAVGVDVEFUBZEHLZVCJAVDVIPZVCUFVFVJBVHPZEHLZAVCVIVDENHOZVHPZERZVLVHEHSVDV
+      OPZVMVKPZERZVLVPBVNPZERVRBVNEUCVSVQEBVMVHUDUEUGVKEHSUHUIAVKCEHAVHBCAVHBCA
+      VHPBCKUJUKULUMUNUOUPUQTACVBEHAVMPBCDFGIAVHBCURVMKUSUTTVA $.
   $}
 
   ${
