@@ -36018,64 +36018,6 @@ $)
   $}
 
   ${
-    $d x y ph $.  $d x ps $.  $d x A $.  $d x y B $.
-    reuxfr2d.1 $e |- ( ( ph /\ y e. B ) -> A e. B ) $.
-    reuxfr2d.2 $e |- ( ( ph /\ x e. B ) -> E* y e. B x = A ) $.
-    $( Transfer existential uniqueness from a variable ` x ` to another
-       variable ` y ` contained in expression ` A ` .  (Contributed by NM,
-       16-Jan-2012.)  (Revised by NM, 16-Jun-2017.) $)
-    reuxfr2d $p |- ( ph
-        -> ( E! x e. B E. y e. B ( x = A /\ ps ) <-> E! y e. B ps ) ) $=
-      ( cv wa wrex wreu wrmo wral wi wcel syl ancom 2reuswap wmo wceq ralrimiva
-      rmoan rmobii sylib df-rmo ralbii moeq moani an12 bitri mobii mpbi impbid1
-      sylbir a1i mprg wb biidd ceqsrexv reubidva bitrd ) ACIZEUAZBJZDFKCFLZVECF
-      KZDFLZBDFLAVFVHAVEDFMZCFNVFVHOAVICFAVCFPZJZBVDJZDFMZVIVKVDDFMVMHVDBDFUCQV
-      LVEDFBVDRUDUEUBVECDFFSQVJVEJZCTZVHVFOZDFVODFNVECFMZDFNVPVQVODFVECFUFUGVED
-      CFFSUOVODIFPZVJBJZVDJZCTVOVDVSCCEUHUIVTVNCVTVDVSJVNVSVDRVDVJBUJUKULUMUPUQ
-      UNAVGBDFAVRJEFPVGBURGBBCEFVDBUSUTQVAVB $.
-  $}
-
-  ${
-    $d x ph $.  $d x A $.  $d x y B $.
-    reuxfr2.1 $e |- ( y e. B -> A e. B ) $.
-    reuxfr2.2 $e |- ( x e. B -> E* y e. B x = A ) $.
-    $( Transfer existential uniqueness from a variable ` x ` to another
-       variable ` y ` contained in expression ` A ` .  (Contributed by NM,
-       14-Nov-2004.)  (Revised by NM, 16-Jun-2017.) $)
-    reuxfr2 $p |- ( E! x e. B E. y e. B ( x = A /\ ph ) <-> E! y e. B ph ) $=
-      ( cv wceq wa wrex wreu wb wtru wcel adantl wrmo reuxfr2d trud ) BHZDIZAJC
-      EKBELACELMNABCDECHEODEONFPTEOUACEQNGPRS $.
-  $}
-
-  ${
-    $d x y ph $.  $d y ps $.  $d x ch $.  $d x A $.  $d x y B $.
-    reuxfrd.1 $e |- ( ( ph /\ y e. B ) -> A e. B ) $.
-    reuxfrd.2 $e |- ( ( ph /\ x e. B ) -> E! y e. B x = A ) $.
-    reuxfrd.3 $e |- ( x = A -> ( ps <-> ch ) ) $.
-    $( Transfer existential uniqueness from a variable ` x ` to another
-       variable ` y ` contained in expression ` A ` .  Use ~ reuhypd to
-       eliminate the second hypothesis.  (Contributed by NM, 16-Jan-2012.) $)
-    reuxfrd $p |- ( ph -> ( E! x e. B ps <-> E! y e. B ch ) ) $=
-      ( wreu cv wceq wa wrex wcel reurex syl biantrurd r19.41v pm5.32i reubidva
-      rexbii bitr3i syl6bb wrmo reurmo reuxfr2d bitrd ) ABDGKDLZFMZCNZEGOZDGKCE
-      GKABUMDGAUJGPNZBUKEGOZBNZUMUNUOBUNUKEGKZUOIUKEGQRSUPUKBNZEGOUMUKBEGTURULE
-      GUKBCJUAUCUDUEUBACDEFGHUNUQUKEGUFIUKEGUGRUHUI $.
-  $}
-
-  ${
-    $d x ps $.  $d y ph $.  $d x A $.  $d x y B $.
-    reuxfr.1 $e |- ( y e. B -> A e. B ) $.
-    reuxfr.2 $e |- ( x e. B -> E! y e. B x = A ) $.
-    reuxfr.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
-    $( Transfer existential uniqueness from a variable ` x ` to another
-       variable ` y ` contained in expression ` A ` .  Use ~ reuhyp to
-       eliminate the second hypothesis.  (Contributed by NM, 14-Nov-2004.) $)
-    reuxfr $p |- ( E! x e. B ph <-> E! y e. B ps ) $=
-      ( wreu wb wtru cv wcel adantl wceq reuxfrd trud ) ACFJBDFJKLABCDEFDMFNEFN
-      LGOCMZFNSEPDFJLHOIQR $.
-  $}
-
-  ${
     $d y ph $.  $d y B $.  $d y C $.  $d x y $.
     reuhypd.1 $e |- ( ( ph /\ x e. C ) -> B e. C ) $.
     reuhypd.2 $e |- ( ( ph /\ x e. C /\ y e. C ) -> ( x = A <-> y = B ) ) $.
