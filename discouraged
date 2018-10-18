@@ -404,6 +404,8 @@
 "4syl" is used by "sdclem2".
 "4syl" is used by "sdomsdomcard".
 "4syl" is used by "serf0".
+"4syl" is used by "signstfvp".
+"4syl" is used by "signstres".
 "4syl" is used by "smoiso".
 "4syl" is used by "srng0".
 "4syl" is used by "ssc2".
@@ -4314,6 +4316,16 @@
 "df-ba" is used by "bafval".
 "df-bdop" is used by "elbdop".
 "df-bdop" is used by "hhbloi".
+"df-bj-2uple" is used by "bj-2upleeq".
+"df-bj-2uple" is used by "bj-2upleex".
+"df-bj-2uple" is used by "bj-pr1val".
+"df-bj-2uple" is used by "bj-pr2val".
+"df-bj-pr1" is used by "bj-pr1eq".
+"df-bj-pr1" is used by "bj-pr1ex".
+"df-bj-pr1" is used by "bj-pr1val".
+"df-bj-pr2" is used by "bj-pr2eq".
+"df-bj-pr2" is used by "bj-pr2ex".
+"df-bj-pr2" is used by "bj-pr2val".
 "df-blo" is used by "bloval".
 "df-bnj13" is used by "bnj1489".
 "df-bnj13" is used by "bnj93".
@@ -13298,7 +13310,7 @@ New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4exdistrOLD" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
 New usage of "4ipval3" is discouraged (0 uses).
-New usage of "4syl" is discouraged (186 uses).
+New usage of "4syl" is discouraged (188 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
 New usage of "5oalem2" is discouraged (2 uses).
@@ -14534,6 +14546,9 @@ New usage of "df-ass" is discouraged (1 uses).
 New usage of "df-at" is discouraged (2 uses).
 New usage of "df-ba" is discouraged (1 uses).
 New usage of "df-bdop" is discouraged (2 uses).
+New usage of "df-bj-2uple" is discouraged (4 uses).
+New usage of "df-bj-pr1" is discouraged (3 uses).
+New usage of "df-bj-pr2" is discouraged (3 uses).
 New usage of "df-blo" is discouraged (1 uses).
 New usage of "df-bnj13" is discouraged (2 uses).
 New usage of "df-bnj14" is discouraged (5 uses).
