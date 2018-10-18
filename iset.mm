@@ -35977,8 +35977,8 @@ $)
        contained in expression ` A ` .  (Contributed by NM, 10-Jun-2005.)
        (Revised by Mario Carneiro, 15-Aug-2014.) $)
     rexxfr $p |- ( E. x e. B ph <-> E. y e. C ps ) $=
-      ( wrex wn wral dfrex2 cv wceq notbid ralxfr xchbinxr bitr4i ) ACFKALZCFMZ
-      LBDGKZACFNUCBLZDGMUBBDGNUAUDCDEFGHICOEPABJQRST $.
+      ( wrex wb wtru cv wcel adantl wceq rexxfrd trud ) ACFKBDGKLMABC
+      DEFGDNGOEFOMHPCNZFOTEQZDGKMIPUAABLMJPRS $.
   $}
 
   ${
