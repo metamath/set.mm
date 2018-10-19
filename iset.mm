@@ -36021,8 +36021,8 @@ $)
     $d y ph $.  $d y B $.  $d y C $.  $d x y $.
     reuhypd.1 $e |- ( ( ph /\ x e. C ) -> B e. C ) $.
     reuhypd.2 $e |- ( ( ph /\ x e. C /\ y e. C ) -> ( x = A <-> y = B ) ) $.
-    $( A theorem useful for eliminating the restricted existential uniqueness
-       hypotheses in ~ riotaxfrd .  (Contributed by NM, 16-Jan-2012.) $)
+    $( A theorem useful for eliminating restricted existential uniqueness
+       hypotheses.  (Contributed by NM, 16-Jan-2012.) $)
     reuhypd $p |- ( ( ph /\ x e. C ) -> E! y e. C x = A ) $=
       ( cv wcel wa wceq weu wreu cvv elex syl eueq sylib eleq1 syl5ibrcom 3expa
       pm4.71rd wb pm5.32da bitr4d eubidv mpbid df-reu sylibr ) ABIZFJZKZCIZFJZU
@@ -36034,8 +36034,8 @@ $)
     $d y B $.  $d y C $.  $d x y $.
     reuhyp.1 $e |- ( x e. C -> B e. C ) $.
     reuhyp.2 $e |- ( ( x e. C /\ y e. C ) -> ( x = A <-> y = B ) ) $.
-    $( A theorem useful for eliminating the restricted existential uniqueness
-       hypotheses in ~ reuxfr .  (Contributed by NM, 15-Nov-2004.) $)
+    $( A theorem useful for eliminating restricted existential uniqueness
+       hypotheses.  (Contributed by NM, 15-Nov-2004.) $)
     reuhyp $p |- ( x e. C -> E! y e. C x = A ) $=
       ( wtru cv wcel wceq wreu tru adantl wb 3adant1 reuhypd mpan ) HAIZEJZSCKZ
       BELMHABCDETDEJHFNTBIZEJUAUBDKOHGPQR $.
@@ -36073,9 +36073,7 @@ $)
     op1stb.1 $e |- A e. _V $.
     op1stb.2 $e |- B e. _V $.
     $( Extract the first member of an ordered pair.  Theorem 73 of [Suppes]
-       p. 42.  (See ~ op2ndb to extract the second member, ~ op1sta for an
-       alternate version, and ~ op1st for the preferred version.)  (Contributed
-       by NM, 25-Nov-2003.) $)
+       p. 42.  (Contributed by NM, 25-Nov-2003.) $)
     op1stb $p |- |^| |^| <. A , B >. = A $=
       ( cop cint csn cpr dfop inteqi cin wcel snexg ax-mp prexg mp2an
       cvv intpr wss eqtri wceq snsspr1 df-ss mpbi intsn ) ABEZFZFAGZF
