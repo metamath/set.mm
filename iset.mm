@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Oct-2018
+$( iset.mm - Version of 16-Oct-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -12033,6 +12033,14 @@ $)
   a9e $p |- E. x x = y $=
     ( ax-i9 ) ABC $.
 
+  ${
+    $d x y $.
+    $( At least one individual exists.  Weaker version of ~ a9e .  (Contributed
+       by NM, 3-Aug-2017.) $)
+    a9ev $p |- E. x x = y $=
+      ( ax-i9 ) ABC $.
+  $}
+
   $( An implication related to substitution.  (Contributed by NM, 5-Aug-1993.)
      (Revised by NM, 3-Feb-2015.) $)
   ax9o $p |- ( A. x ( x = y -> A. x ph ) -> ph ) $=
@@ -19204,6 +19212,22 @@ $(
         Negated membership
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
+
+  ${
+    neli.1 $e |- A e/ B $.
+    $( Inference associated with ~ df-nel .  (Contributed by BJ,
+       7-Jul-2018.) $)
+    neli $p |- -. A e. B $=
+      ( wnel wcel wn df-nel mpbi ) ABDABEFCABGH $.
+  $}
+
+  ${
+    nelir.1 $e |- -. A e. B $.
+    $( Inference associated with ~ df-nel .  (Contributed by BJ,
+       7-Jul-2018.) $)
+    nelir $p |- A e/ B $=
+      ( wnel wcel wn df-nel mpbir ) ABDABEFCABGH $.
+  $}
 
   $( Equality theorem for negated membership.  (Contributed by NM,
      20-Nov-1994.) $)
@@ -28433,6 +28457,12 @@ $)
     rexn0 $p |- ( E. x e. A ph -> A =/= (/) ) $=
       ( c0 wne cv wcel ne0i a1d rexlimiv ) ACDEZBCBFZCGKACLHIJ $.
 
+    $( Restricted existential quantification implies its restriction is
+       inhabited.  (Contributed by Jim Kingdon, 16-Oct-2018.) $)
+    rexm $p |- ( E. x e. A ph -> E. x x e. A ) $=
+      ( wrex cv wcel wa wex df-rex ax-ia1 eximi sylbi ) ABCDBECFZAGZB
+      HMBHABCINMBMAJKL $.
+
     $( Idempotent law for restricted quantifier.  (Contributed by NM,
        28-Mar-1997.) $)
     ralidm $p |- ( A. x e. A A. x e. A ph <-> A. x e. A ph ) $=
@@ -33620,7 +33650,7 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-             ZF Set Theory - add the Axiom of Power Sets
+          IZF Set Theory - add the Axioms of Power Sets and Pairing
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -35580,6 +35610,494 @@ $)
     onunisuci $p |- U. suc A = A $=
       ( wtr csuc cuni wceq ontrci con0 elexi unisuc mpbi ) ACADEAFABGAAHBIJK $.
   $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+             ZF Set Theory - add the Axiom of Union
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                  Introduce the Axiom of Union
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d w x y z $.
+    $( Axiom of Union.  An axiom of Intuitionistic Zermelo-Fraenkel set
+       theory.  It states that a set ` y ` exists that includes the union of a
+       given set ` x ` i.e. the collection of all members of the members of
+       ` x ` .  The variant ~ axun2 states that the union itself exists.  A
+       version with the standard abbreviation for union is ~ uniex2 .  A
+       version using class notation is ~ uniex .
+
+       This is Axiom 3 of [Crosilla] p.  "Axioms of CZF and IZF", except (a)
+       unnecessary quantifiers are removed, (b) Crosilla has a biconditional
+       rather than an implication (but the two are equivalent by ~ bm1.3ii ),
+       and (c) the order of the conjuncts is swapped (which is equivalent by
+       ~ ancom ).
+
+       The union of a class ~ df-uni should not be confused with the union of
+       two classes ~ df-un .  Their relationship is shown in ~ unipr .
+       (Contributed by NM, 23-Dec-1993.) $)
+    ax-un $a |- E. y A. z ( E. w ( z e. w /\ w e. x ) -> z e. y ) $.
+
+    $( Axiom of Union expressed with the fewest number of different variables.
+       (Contributed by NM, 14-Aug-2003.) $)
+    zfun $p |- E. x A. y ( E. x ( y e. x /\ x e. z ) -> y e. x ) $=
+      ( vw wel wa wex wi wal ax-un weq elequ2 elequ1 anbi12d cbvexv albii exbii
+      imbi1i mpbi ) BDEZDCEZFZDGZBAEZHZBIZAGUDACEZFZAGZUDHZBIZAGCABDJUFUKAUEUJB
+      UCUIUDUBUHDADAKTUDUAUGDABLDACMNORPQS $.
+
+    $( A variant of the Axiom of Union ~ ax-un .  For any set ` x ` , there
+       exists a set ` y ` whose members are exactly the members of the members
+       of ` x ` i.e. the union of ` x ` .  Axiom Union of [BellMachover]
+       p. 466.  (Contributed by NM, 4-Jun-2006.) $)
+    axun2 $p |- E. y A. z ( z e. y <-> E. w ( z e. w /\ w e. x ) ) $=
+      ( wel wa wex ax-un bm1.3ii ) CDEDAEFDGBCABCDHI $.
+
+    $( The Axiom of Union using the standard abbreviation for union.  Given any
+       set ` x ` , its union ` y ` exists.  (Contributed by NM, 4-Jun-2006.) $)
+    uniex2 $p |- E. y y = U. x $=
+      ( vz cv cuni wceq wex wcel wb wi wa zfun eluni imbi1i albii exbii bm1.3ii
+      wal mpbir dfcleq ) BDZADZEZFZBGCDZUAHZUEUCHZICRZBGUGBCUGUFJZCRZBGUFUAUBHK
+      BGZUFJZCRZBGBCALUJUMBUIULCUGUKUFBUEUBMNOPSQUDUHBCUAUCTPS $.
+  $}
+
+  ${
+    $d x y A $.
+    uniex.1 $e |- A e. _V $.
+    $( The Axiom of Union in class notation.  This says that if ` A ` is a set
+       i.e. ` A e. _V ` (see ~ isset ), then the union of ` A ` is also a set.
+       Same as Axiom 3 of [TakeutiZaring] p. 16.  (Contributed by NM,
+       11-Aug-1993.) $)
+    uniex $p |- U. A e. _V $=
+      ( vx vy cv cuni cvv wcel wceq unieq eleq1d uniex2 issetri vtocl ) CEZFZGH
+      AFZGHCABOAIPQGOAJKDPCDLMN $.
+  $}
+
+  ${
+    $d x A $.
+    $( The ZF Axiom of Union in class notation, in the form of a theorem
+       instead of an inference.  We use the antecedent ` A e. V ` instead of
+       ` A e. _V ` to make the theorem more general and thus shorten some
+       proofs; obviously the universal class constant ` _V ` is one possible
+       substitution for class variable ` V ` .  (Contributed by NM,
+       25-Nov-1994.) $)
+    uniexg $p |- ( A e. V -> U. A e. _V ) $=
+      ( vx cv cuni cvv wcel wceq unieq eleq1d vex uniex vtoclg ) CDZEZFGAEZFGCA
+      BNAHOPFNAIJNCKLM $.
+  $}
+
+  ${
+    unex.1 $e |- A e. _V $.
+    unex.2 $e |- B e. _V $.
+    $( The union of two sets is a set.  Corollary 5.8 of [TakeutiZaring]
+       p. 16.  (Contributed by NM, 1-Jul-1994.) $)
+    unex $p |- ( A u. B ) e. _V $=
+      ( cpr cuni cun cvv unipr wcel prexg mp2an uniex eqeltrri ) ABEZ
+      FABGHABCDIOAHJBHJOHJCDABKLMN $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Existence of union is equivalent to existence of its components.
+       (Contributed by NM, 11-Jun-1998.) $)
+    unexb $p |- ( ( A e. _V /\ B e. _V ) <-> ( A u. B ) e. _V ) $=
+      ( vx vy cvv wcel wa cun cv wceq uneq1 eleq1d uneq2 vex unex vtocl2g ssun1
+      wss ssexg mpan ssun2 jca impbii ) AEFZBEFZGABHZEFZCIZDIZHZEFAUIHZEFUGCDAB
+      EEUHAJUJUKEUHAUIKLUIBJUKUFEUIBAMLUHUICNDNOPUGUDUEAUFRUGUDABQAUFESTBUFRUGU
+      EBAUABUFESTUBUC $.
+  $}
+
+  $( A union of two sets is a set.  Corollary 5.8 of [TakeutiZaring] p. 16.
+     (Contributed by NM, 18-Sep-2006.) $)
+  unexg $p |- ( ( A e. V /\ B e. W ) -> ( A u. B ) e. _V ) $=
+    ( wcel cvv cun elex wa unexb biimpi syl2an ) ACEAFEZBFEZABGFEZBDEACHBDHMNIO
+    ABJKL $.
+
+  $( A triple of classes exists.  (Contributed by NM, 10-Apr-1994.) $)
+  tpexg $p |- ( ( A e. _V /\ B e. _V /\ C e. _V ) -> { A , B , C } e. _V ) $=
+    ( cvv wcel w3a ctp cpr csn cun df-tp wa prexg snexg anim12i 3impa
+    unexg syl syl5eqel ) ADEZBDEZCDEZFZABCGABHZCIZJZDABCKUCUDDEZUEDEZ
+    LZUFDETUAUBUITUALUGUBUHABMCNOPUDUEDDQRS $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Union of a singleton in the form of a restricted class abstraction.
+       (Contributed by NM, 3-Jul-2008.) $)
+    unisn3 $p |- ( A e. B -> U. { x e. B | x = A } = A ) $=
+      ( wcel cv wceq crab cuni csn rabsn unieqd unisng eqtrd ) BCDZAEBFACGZHBIZ
+      HBNOPACBJKBCLM $.
+  $}
+
+  ${
+    $d x y z $.
+    $( The class of all singletons is a proper class.  (Contributed by NM,
+       10-Oct-2008.)  (Proof shortened by Eric Schmidt, 7-Dec-2008.) $)
+    snnex $p |- { x | E. y x = { y } } e/ _V $=
+      ( vz cv csn wceq wex cab cvv wcel cuni vprc wa vex snid equcoms
+      a9ev sneq eximii snexg ax-mp eleq2 eqeq1 exbidv anbi12d eluniab
+      spcev mp2an mpbir 2th eqriv eleq1i mtbir uniexg mto nelir ) ADZ
+      BDZEZFZBGZAHZIVBIJVBKZIJZVDIIJLVCIICVCICDZVCJZVEIJZVFVEUQJZVAMZ
+      AGZVEVEEZJZVKUSFZBGZVJVECNZOURVEFVMBBCQVMCBVEURRPSVIVLVNMAVKVGV
+      KIJVOVETUAUQVKFZVHVLVAVNUQVKVEUBVPUTVMBUQVKUSUCUDUEUGUHVAAVEUFU
+      IVOUJUKULUMVBIUNUOUP $.
+  $}
+
+  ${
+    opeluu.1 $e |- A e. _V $.
+    opeluu.2 $e |- B e. _V $.
+    $( Each member of an ordered pair belongs to the union of the union of a
+       class to which the ordered pair belongs.  Lemma 3D of [Enderton] p. 41.
+       (Contributed by NM, 31-Mar-1995.)  (Revised by Mario Carneiro,
+       27-Feb-2016.) $)
+    opeluu $p |- ( <. A , B >. e. C ->
+                 ( A e. U. U. C /\ B e. U. U. C ) ) $=
+      ( cop wcel cuni cpr prid1 opi2 elunii mpan sylancr prid2 jca ) ABFZCGZACH
+      ZHZGZBTGZRAABIZGUCSGZUAABDJUCQGRUDABDEKUCQCLMZAUCSLNRBUCGUDUBABEOUEBUCSLN
+      P $.
+  $}
+
+  ${
+    $d A x y v z $.  $d A x y u z $.
+    $( Expression for double union that moves union into a class builder.
+       (Contributed by FL, 28-May-2007.) $)
+    uniuni $p |- U. U. A = U. { x | E. y ( x = U. y /\ y e. A ) } $=
+      ( vz vu vv wel cv cuni wcel wex cab wceq eluni anbi2i exbii 19.42v bicomi
+      wa 3bitri excom anass ancom bitr3i 2exbii exdistr vex uniex eleq2 ceqsexv
+      exancom bitri 3bitr2i eqeq1 anbi1d exbidv elab abbii df-uni 3eqtr4i ) DEG
+      ZEHZCIZJZSZEKZDLDFGZFHZAHZBHZIZMZVJCJZSZBKZALZJZSZFKZDLVCIVPIVFVSDVFVAEBG
+      ZVMSZBKZSZEKZVMDHZVKJZSZBKZVSVEWCEVDWBVABVBCNOPWDVAWASZBKZEKZVMVAVTSZEKZS
+      ZBKZWHWCWJEWJWCVAWABQRPWKWIEKBKVMWLSZEKBKWOWIEBUAWIWPBEWIWLVMSWPVAVTVMUBW
+      LVMUCUDUEVMWLBEUFTWNWGBWMWFVMWFWMEWEVJNROPTWHVGVHVKMZVMSZSZFKZBKWSBKFKZVS
+      WGWTBWGVMVGWQSZFKZSVMXBSZFKWTWFXCVMWFWQVGSFKXCVGWFFVKVJBUGUHVHVKWEUIUJWQV
+      GFUKUDOVMXBFQXDWSFXDXBVMSWSVMXBUCVGWQVMUBULPUMPWSBFUAXAVGWRBKZSZFKVSVGWRF
+      BUFXFVRFXEVQVGVQXEVOXEAVHFUGVIVHMZVNWRBXGVLWQVMVIVHVKUNUOUPUQROPULTTURDEV
+      CUSDFVPUSUT $.
+  $}
+
+  ${
+    $d x y z $.  $d A y z $.
+    $( Two ways to express single-valuedness of a class expression
+       ` A ( x ) ` .  (Contributed by NM, 14-Oct-2010.) $)
+    eusv1 $p |- ( E! y A. x y = A <-> E. y A. x y = A ) $=
+      ( vz cv wceq wal weu wex wa wi sp eqtr3 syl2an gen2 eqeq1 albidv mpbiran2
+      eu4 ) BEZCFZAGZBHUBBIUBDEZCFZAGZJTUCFZKZDGBGUGBDUBUAUDUFUEUAALUDALTUCCMNO
+      UBUEBDUFUAUDATUCCPQSR $.
+  $}
+
+  ${
+    $d x y z w $.  $d A y z w $.
+    $( Even if ` x ` is free in ` A ` , it is effectively bound when
+       ` A ( x ) ` is single-valued.  (Contributed by NM, 14-Oct-2010.)
+       (Revised by Mario Carneiro, 14-Oct-2016.) $)
+    eusvnf $p |- ( E! y A. x y = A -> F/_ x A ) $=
+      ( vz vw cv wceq wal csb cvv wcel wi vex nfcv nfcsb1v nfeq2 csbeq1a eqeq2d
+      spcgf ax-mp weu wex wnfc euex eqtr3d alrimivv sbnfc2 sylibr exlimiv syl )
+      BFZCGZAHZBUAUMBUBACUCZUMBUDUMUNBUMADFZCIZAEFZCIZGZEHDHUNUMUSDEUMUKUPURUOJ
+      KUMUKUPGZLDMULUTAUOJAUONAUKUPAUOCOPAFZUOGCUPUKAUOCQRSTUQJKUMUKURGZLEMULVB
+      AUQJAUQNAUKURAUQCOPVAUQGCURUKAUQCQRSTUEUFADECUGUHUIUJ $.
+
+    $( Two ways to say that ` A ( x ) ` is a set expression that does not
+       depend on ` x ` .  (Contributed by Mario Carneiro, 18-Nov-2016.) $)
+    eusvnfb $p |- ( E! y A. x y = A <-> ( F/_ x A /\ A e. _V ) ) $=
+      ( cv wceq wal weu wnfc cvv wcel eusvnf wex euex vex syl6eqelr sps exlimiv
+      wa id syl jca isset nfcvd nfeqd nfrd eximdv syl5bi eusv1 sylibr impbii
+      imp ) BDZCEZAFZBGZACHZCIJZRZUOUPUQABCKUOUNBLZUQUNBMUNUQBUMUQAUMCULIUMSBNO
+      PQTUAURUSUOUPUQUSUQUMBLUPUSBCUBUPUMUNBUPUMAUPAULCUPAULUCUPSUDUEUFUGUKABCU
+      HUIUJ $.
+  $}
+
+  ${
+    $d x y $.  $d A y $.
+    $( Two ways to express single-valuedness of a class expression
+       ` A ( x ) ` .  (Contributed by NM, 14-Oct-2010.)  (Revised by Mario
+       Carneiro, 18-Nov-2016.) $)
+    eusv2i $p |- ( E! y A. x y = A -> E! y E. x y = A ) $=
+      ( cv wceq wal weu wex nfeu1 wnf wi nfcvd eusvnf nfeqd nf2 sylib
+      19.2 impbid1 eubid ibir ) BDZCEZAFZBGZUBAHZBGUDUEUCBUCBIUDUEUCU
+      DUBAJUEUCKUDAUACUDAUALABCMNUBAOPUBAAQRST $.
+  $}
+
+  ${
+    $d x y z v w $.  $d A y z w v $.
+    eusv2.1 $e |- A e. _V $.
+    $( Two ways to express single-valuedness of a class expression
+       ` A ( x ) ` .  (Contributed by Mario Carneiro, 18-Nov-2016.) $)
+    eusv2nf $p |- ( E! y E. x y = A <-> F/_ x A ) $=
+      ( cv wceq wex weu wnfc wnf wal nfeu1 wi nfe1 nfeu wa isseti alrimi sylibr
+      cvv 19.8a ancri eximii eupick mpan2 nf3 wcel wb dfnfc2 mpg eusvnfb eusv2i
+      mpbiran2 sylbir impbii ) BECFZAGZBHZACIZURUPAJZBKZUSURUTBUQBLURUQUPMZAKUT
+      URVBAUQABUPANOURUQUPPZBGVBUPVCBBCDQUPUQUPAUAUBUCUQUPBUDUERUPAUFSRCTUGZUSV
+      AUHAABCTUIDUJSUSUPAKBHZURVEUSVDDABCUKUMABCULUNUO $.
+
+    $( Two ways to express single-valuedness of a class expression
+       ` A ( x ) ` .  (Contributed by NM, 15-Oct-2010.)  (Proof shortened by
+       Mario Carneiro, 18-Nov-2016.) $)
+    eusv2 $p |- ( E! y E. x y = A <-> E! y A. x y = A ) $=
+      ( cv wceq wex weu wnfc wal eusv2nf cvv wcel eusvnfb mpbiran2 bitr4i ) BEC
+      FZAGBHACIZQAJBHZABCDKSRCLMDABCNOP $.
+  $}
+
+  ${
+    $d x z A $.  $d w x z B $.  $d x z C $.  $d w x z ph $.  $d w x y z $.
+    $( Two ways to express single-valuedness of a class expression
+       ` C ( y ) ` .  (Contributed by NM, 16-Dec-2012.)  (Proof shortened by
+       Mario Carneiro, 18-Nov-2016.) $)
+    reusv1 $p |- ( E. y e. B ph -> ( E! x e. A A. y e. B ( ph -> x = C )
+                   <-> E. x e. A A. y e. B ( ph -> x = C ) ) ) $=
+      ( wrex cv wceq wi wral wmo wrmo wreu wb nfra1 nfmo wcel wa wal imp3a moeq
+      rsp com12 alrimiv moim ee10 ex rexlimi mormo reu5 rbaib 3syl ) ACEGABHFIZ
+      JZCEKZBLZUPBDMZUPBDNZUPBDGZOAUQCEUPCBUOCEPQCHERZAUQVAASZUPUNJZBTUNBLUQVBV
+      CBUPVBUNUPVAAUNUOCEUCUAUDUEBFUBUPUNBUFUGUHUIUPBDUJUSUTURUPBDUKULUM $.
+  $}
+
+  ${
+    $d x y z B $.  $d x z C $.  $d x y D $.  $d x z ph $.  $d x y ps $.
+    reusv3.1 $e |- ( y = z -> ( ph <-> ps ) ) $.
+    reusv3.2 $e |- ( y = z -> C = D ) $.
+    $( Two ways of expressing existential uniqueness via an indirect equality.
+       (Contributed by NM, 23-Dec-2012.) $)
+    reusv3i $p |- ( E. x e. A A. y e. B ( ph -> x = C )
+            -> A. y e. B A. z e. B ( ( ph /\ ps ) -> C = D ) ) $=
+      ( cv wceq wi wral wa eqeq2d imbi12d cbvralv ralimi biimpi prth eqtr2 syl6
+      raaanv sylbir mpdan rexlimivw ) ACLZHMZNZDGOZABPZHIMZNZEGOZDGOZCFULBUIIMZ
+      NZEGOZUQULUTUKUSDEGDLELMZABUJURJVAHIUIKQRSUAULUTPUKUSPZEGOZDGOUQUKUSDEGUE
+      VCUPDGVBUOEGVBUMUJURPUNAUJBURUBUIHIUCUDTTUFUGUH $.
+
+    $d x y z A $.
+    $( Two ways to express single-valuedness of a class expression
+       ` C ( y ) ` .  See ~ reusv1 for the connection to uniqueness.
+       (Contributed by NM, 27-Dec-2012.) $)
+    reusv3 $p |- ( E. y e. B ( ph /\ C e. A )
+          -> ( A. y e. B A. z e. B ( ( ph /\ ps ) -> C = D )
+                   <-> E. x e. A A. y e. B ( ph -> x = C ) ) ) $=
+      ( wcel wa wrex wceq wi wral cv bitri ralbii eleq1d anbi12d nfra2xy nfv nfim
+      cbvrexv risset ralcom impexp bi2.04 r19.21v sylbi com3l imp31 eqeq1 eqcom
+      rsp syl6bb imbi2d ralbidv syl5ibrcom reximdv com23 syl5bi expimpd rexlimi
+      ex reusv3i impbid1 ) AHFLZMZDGNZABMHIOZPZEGQDGQZACRZHOZPZDGQZCFNZVLBIFLZM
+      ZEGNVOVTPZVKWBDEGDRERZOZABVJWAJWEHIFKUAUBUFWBWCEGVOVTEVNDEGGUCVTEUDUEWDGL
+      ZBWAWCWAVPIOZCFNZWFBMZWCCIFUGWIVOWHVTWIVOWHVTPWIVOMZWGVSCFWJVSWGAVMPZDGQZ
+      WFBVOWLVOWFBWLVOBWLPZEGQZWFWMPVOVNDGQZEGQWNVNDEGGUHWOWMEGWOBWKPZDGQWMVNWP
+      DGVNABVMPPWPABVMUIABVMUJSTBWKDGUKSTSWMEGUQULUMUNWGVRWKDGWGVQVMAWGVQIHOVMV
+      PIHUOIHUPURUSUTVAVBVGVCVDVEVFULABCDEFGHIJKVHVI $.
+  $}
+
+  ${
+    $d x A $.  $d y ph $.  $d x ps $.  $d x y $.
+    alxfr.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( Transfer universal quantification from a variable ` x ` to another
+       variable ` y ` contained in expression ` A ` .  (Contributed by NM,
+       18-Feb-2007.) $)
+    alxfr $p |- ( ( A. y A e. B /\ A. x E. y x = A ) ->
+                ( A. x ph <-> A. y ps ) ) $=
+      ( wcel wal cv wceq wex wa wi spcgv com12 alimdv adantr nfa1 nfv sp exlimd
+      syl5ibrcom adantl impbid ) EFHZDIZCJEKZDLZCIZMACIZBDIZUGUKULNUJUKUGULUKUF
+      BDUFUKBABCEFGOPQPRUJULUKNUGULUJUKULUIACULUHADBDSADTULAUHBBDUAGUCUBQPUDUE
+      $.
+  $}
+
+  ${
+    $d x A $.  $d x y B $.  $d x C $.  $d x ch $.  $d x y ph $.  $d y ps $.
+    ralxfrd.1 $e |- ( ( ph /\ y e. C ) -> A e. B ) $.
+    ralxfrd.2 $e |- ( ( ph /\ x e. B ) -> E. y e. C x = A ) $.
+    ralxfrd.3 $e |- ( ( ph /\ x = A ) -> ( ps <-> ch ) ) $.
+    $( Transfer universal quantification from a variable ` x ` to another
+       variable ` y ` contained in expression ` A ` .  (Contributed by NM,
+       15-Aug-2014.)  (Proof shortened by Mario Carneiro, 19-Nov-2016.) $)
+    ralxfrd $p |- ( ph -> ( A. x e. B ps <-> A. y e. C ch ) ) $=
+      ( wral cv wcel wa wceq wb adantlr ralrimdva wrex rspcdv r19.29 wi biimprd
+      expimpd ancomsd ad2antrr rexlimdva syl5 mpan2d impbid ) ABDGLZCEHLZAULCEH
+      AEMHNZOBCDFGIADMZFPZBCQUNKRUASAUMBDGAUOGNZOZUMUPEHTZBJUMUSOCUPOZEHTURBCUP
+      EHUBURUTBEHAUTBUCUQUNAUPCBAUPCBAUPOBCKUDUEUFUGUHUIUJSUK $.
+
+    $( Transfer universal quantification from a variable ` x ` to another
+       variable ` y ` contained in expression ` A ` .  (Contributed by FL,
+       10-Apr-2007.)  (Revised by Mario Carneiro, 15-Aug-2014.) $)
+    rexxfrd $p |- ( ph -> ( E. x e. B ps <-> E. y e. C ch ) ) $=
+      ( wrex wal cv wcel wa nfv wex df-rex rexlimdva 19.3 wceq 19.29 an12 exbii
+      wi sylib sylibr sylan2b biimpd expimpd ancomsd reximdv syl5 adantr mpan2d
+      syl5bir wb adantlr rspcedv impbid ) ABDGLZCEHLZABVCDGBBEMZADNZGOZPZVCBEBE
+      QUAVGVDVEFUBZEHLZVCJAVDVIPZVCUFVFVJBVHPZEHLZAVCVIVDENHOZVHPZERZVLVHEHSVDV
+      OPZVMVKPZERZVLVPBVNPZERVRBVNEUCVSVQEBVMVHUDUEUGVKEHSUHUIAVKCEHAVHBCAVHBCA
+      VHPBCKUJUKULUMUNUOUPUQTACVBEHAVMPBCDFGIAVHBCURVMKUSUTTVA $.
+  $}
+
+  ${
+    $d x A $.  $d x y B $.  $d x C $.  $d x ch $.  $d x y ph $.  $d y ps $.
+    ralxfr2d.1 $e |- ( ( ph /\ y e. C ) -> A e. V ) $.
+    ralxfr2d.2 $e |- ( ph -> ( x e. B <-> E. y e. C x = A ) ) $.
+    ralxfr2d.3 $e |- ( ( ph /\ x = A ) -> ( ps <-> ch ) ) $.
+    $( Transfer universal quantification from a variable ` x ` to another
+       variable ` y ` contained in expression ` A ` .  (Contributed by Mario
+       Carneiro, 20-Aug-2014.) $)
+    ralxfr2d $p |- ( ph -> ( A. x e. B ps <-> A. y e. C ch ) ) $=
+      ( cv wcel wa wceq wex elisset syl wi wrex biimprd r19.23v sylibr r19.21bi
+      wral eleq1 mpbidi exlimdv mpd biimpa ralxfrd ) ABCDEFGHAEMHNOZDMZFPZDQZFG
+      NZUMFINUPJDFIRSUMUOUQDUOUNGNZUQUMAUOURTZEHAUOEHUAZURTUSEHUFAURUTKUBUOUREH
+      UCUDUEUNFGUGUHUIUJAURUTKUKLUL $.
+
+    $( Transfer universal quantification from a variable ` x ` to another
+       variable ` y ` contained in expression ` A ` .  (Contributed by Mario
+       Carneiro, 20-Aug-2014.)  (Proof shortened by Mario Carneiro,
+       19-Nov-2016.) $)
+    rexxfr2d $p |- ( ph -> ( E. x e. B ps <-> E. y e. C ch ) ) $=
+      ( cv wcel wa wceq wex elisset syl wi wrex wral biimprd r19.21bi
+      r19.23v sylibr eleq1 mpbidi exlimdv mpd biimpa rexxfrd ) ABCDEF
+      GHAEMHNOZDMZFPZDQZFGNZUMFINUPJDFIRSUMUOUQDUOUNGNZUQUMAUOURTZEHA
+      UOEHUAZURTUSEHUBAURUTKUCUOUREHUEUFUDUNFGUGUHUIUJAURUTKUKLUL $.
+  $}
+
+  ${
+    $d x ps $.  $d y ph $.  $d x A $.  $d x y B $.  $d x C $.
+    ralxfr.1 $e |- ( y e. C -> A e. B ) $.
+    ralxfr.2 $e |- ( x e. B -> E. y e. C x = A ) $.
+    ralxfr.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( Transfer universal quantification from a variable ` x ` to another
+       variable ` y ` contained in expression ` A ` .  (Contributed by NM,
+       10-Jun-2005.)  (Revised by Mario Carneiro, 15-Aug-2014.) $)
+    ralxfr $p |- ( A. x e. B ph <-> A. y e. C ps ) $=
+      ( wral wb wtru cv wcel adantl wceq wrex ralxfrd trud ) ACFKBDGKLMABCDEFGD
+      NGOEFOMHPCNZFOUAEQZDGRMIPUBABLMJPST $.
+
+    $( Transfer universal quantification from a variable ` x ` to another
+       variable ` y ` contained in expression ` A ` .  This proof does not use
+       ~ ralxfrd .  (Contributed by NM, 10-Jun-2005.)  (Revised by Mario
+       Carneiro, 15-Aug-2014.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    ralxfrALT $p |- ( A. x e. B ph <-> A. y e. C ps ) $=
+      ( wral cv wcel wi rspcv syl com12 ralrimiv wceq wrex nfv biimprcd rexlimd
+      nfra1 rsp syl6 syl5 impbii ) ACFKZBDGKZUIBDGDLGMZUIBUKEFMUIBNHABCEFJOPQRU
+      JACFCLZFMULESZDGTUJAIUJUMADGBDGUDADUAUJUKBUMANBDGUEUMABJUBUFUCUGRUH $.
+
+    $( Transfer existence from a variable ` x ` to another variable ` y `
+       contained in expression ` A ` .  (Contributed by NM, 10-Jun-2005.)
+       (Revised by Mario Carneiro, 15-Aug-2014.) $)
+    rexxfr $p |- ( E. x e. B ph <-> E. y e. C ps ) $=
+      ( wrex wb wtru cv wcel adantl wceq rexxfrd trud ) ACFKBDGKLMABC
+      DEFGDNGOEFOMHPCNZFOTEQZDGKMIPUAABLMJPRS $.
+  $}
+
+  ${
+    $d x A $.  $d x y D $.  $d y ph $.  $d y ps $.  $d x ch $.
+    rabxfrd.1 $e |- F/_ y B $.
+    rabxfrd.2 $e |- F/_ y C $.
+    rabxfrd.3 $e |- ( ( ph /\ y e. D ) -> A e. D ) $.
+    rabxfrd.4 $e |- ( x = A -> ( ps <-> ch ) ) $.
+    rabxfrd.5 $e |- ( y = B -> A = C ) $.
+    $( Class builder membership after substituting an expression ` A `
+       (containing ` y ` ) for ` x ` in the class expression ` ch ` .
+       (Contributed by NM, 16-Jan-2012.) $)
+    rabxfrd $p |- ( ( ph /\ B e. D ) ->
+                 ( C e. { x e. D | ps } <-> B e. { y e. D | ch } ) ) $=
+      ( wcel crab wb wa wi imp cv ibibr sylib anbi1d elrab rabid 3bitr4g eleq2d
+      ex rabbidva nfcv nfel1 wceq eleq1d elrabf nfrab1 nfel eleq1 pm5.32 sylibr
+      3bitr3g ) AGIOZHBDIPZOZGCEIPZOZQZAVBVDRZVBVFRZQVBVGSAGFVCOZEIPZOGEUAZVEOZ
+      EIPZOVHVIAVKVNGAVJVMEIAVLIOZRZFIOZCRVOCRVJVMVPVQVOCAVOVQVOQZAVOVQSVOVRSAV
+      OVQLUIVOVQUBUCTUDBCDFIMUECEIUFUGUJUHVJVDEGIJEIUKZEHVCKULVLGUMFHVCNUNUOVMV
+      FEGIJVSEGVEJCEIUPUQVLGVEURUOVAVBVDVFUSUTT $.
+  $}
+
+  ${
+    $d x A $.  $d z B $.  $d z C $.  $d x y z D $.  $d y z ph $.  $d x z ps $.
+    rabxfr.1 $e |- F/_ y B $.
+    rabxfr.2 $e |- F/_ y C $.
+    rabxfr.3 $e |- ( y e. D -> A e. D ) $.
+    rabxfr.4 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    rabxfr.5 $e |- ( y = B -> A = C ) $.
+    $( Class builder membership after substituting an expression ` A `
+       (containing ` y ` ) for ` x ` in the class expression ` ph ` .
+       (Contributed by NM, 10-Jun-2005.) $)
+    rabxfr $p |- ( B e. D ->
+                 ( C e. { x e. D | ph } <-> B e. { y e. D | ps } ) ) $=
+      ( wtru wcel crab wb tru cv adantl rabxfrd mpan ) NFHOGACHPOFBDHPOQRNABCDE
+      FGHIJDSHOEHONKTLMUAUB $.
+  $}
+
+  ${
+    $d y ph $.  $d y B $.  $d y C $.  $d x y $.
+    reuhypd.1 $e |- ( ( ph /\ x e. C ) -> B e. C ) $.
+    reuhypd.2 $e |- ( ( ph /\ x e. C /\ y e. C ) -> ( x = A <-> y = B ) ) $.
+    $( A theorem useful for eliminating restricted existential uniqueness
+       hypotheses.  (Contributed by NM, 16-Jan-2012.) $)
+    reuhypd $p |- ( ( ph /\ x e. C ) -> E! y e. C x = A ) $=
+      ( cv wcel wa wceq weu wreu cvv elex syl eueq sylib eleq1 syl5ibrcom 3expa
+      pm4.71rd wb pm5.32da bitr4d eubidv mpbid df-reu sylibr ) ABIZFJZKZCIZFJZU
+      KDLZKZCMZUPCFNUMUNELZCMZURUMEOJZUTUMEFJZVAGEFPQCERSUMUSUQCUMUSUOUSKUQUMUS
+      UOUMUOUSVBGUNEFTUAUCUMUOUPUSAULUOUPUSUDHUBUEUFUGUHUPCFUIUJ $.
+  $}
+
+  ${
+    $d y B $.  $d y C $.  $d x y $.
+    reuhyp.1 $e |- ( x e. C -> B e. C ) $.
+    reuhyp.2 $e |- ( ( x e. C /\ y e. C ) -> ( x = A <-> y = B ) ) $.
+    $( A theorem useful for eliminating restricted existential uniqueness
+       hypotheses.  (Contributed by NM, 15-Nov-2004.) $)
+    reuhyp $p |- ( x e. C -> E! y e. C x = A ) $=
+      ( wtru cv wcel wceq wreu tru adantl wb 3adant1 reuhypd mpan ) HAIZEJZSCKZ
+      BELMHABCDETDEJHFNTBIZEJUAUBDKOHGPQR $.
+  $}
+
+  $( The Axiom of Union and its converse.  A class is a set iff its union is a
+     set.  (Contributed by NM, 11-Nov-2003.) $)
+  uniexb $p |- ( A e. _V <-> U. A e. _V ) $=
+    ( cvv wcel cuni uniexg cpw wss pwuni pwexg ssexg sylancr impbii ) ABCZADZBC
+    ZABEOANFZGPBCMAHNBIAPBJKL $.
+
+  $( The Axiom of Power Sets and its converse.  A class is a set iff its power
+     class is a set.  (Contributed by NM, 11-Nov-2003.) $)
+  pwexb $p |- ( A e. _V <-> ~P A e. _V ) $=
+    ( cpw cvv wcel cuni uniexb unipw eleq1i bitr2i ) ABZCDJEZCDACDJFKACAGHI $.
+
+  $( The union of the universe is the universe.  Exercise 4.12(c) of
+     [Mendelson] p. 235.  (Contributed by NM, 14-Sep-2003.) $)
+  univ $p |- U. _V = _V $=
+    ( cvv cpw cuni pwv unieqi unipw eqtr3i ) ABZCACAHADEAFG $.
+
+  ${
+    eldifpw.1 $e |- C e. _V $.
+    $( Membership in a power class difference.  (Contributed by NM,
+       25-Mar-2007.) $)
+    eldifpw $p |- ( ( A e. ~P B /\ -. C C_ B ) ->
+                   ( A u. C ) e. ( ~P ( B u. C ) \ ~P B ) ) $=
+      ( cpw wcel wss wn wa cun elpwi unss1 cvv wb unexg mpan2 elpwg syl syl5ibr
+      cdif mpd unssbd con3i anim12i eldif sylibr ) ABEZFZCBGZHZIACJZBCJZEZFZUKU
+      GFZHZIUKUMUGTFUHUNUJUPUHABGZUNABKUQUNUHUKULGZABCLUHUKMFZUNURNUHCMFUSDACUG
+      MOPUKULMQRSUAUOUIUOACBUKBKUBUCUDUKUMUGUEUF $.
+  $}
+
+  ${
+    op1stb.1 $e |- A e. _V $.
+    op1stb.2 $e |- B e. _V $.
+    $( Extract the first member of an ordered pair.  Theorem 73 of [Suppes]
+       p. 42.  (Contributed by NM, 25-Nov-2003.) $)
+    op1stb $p |- |^| |^| <. A , B >. = A $=
+      ( cop cint csn cpr dfop inteqi cin wcel snexg ax-mp prexg mp2an
+      cvv intpr wss eqtri wceq snsspr1 df-ss mpbi intsn ) ABEZFZFAGZF
+      AUGUHUGUHABHZHZFZUHUFUJABCDIJUKUHUIKZUHUHUIAQLZUHQLCAMNUMBQLUIQ
+      LCDABOPRUHUISULUHUAABUBUHUIUCUDTTJACUET $.
+  $}
+
+  ${
+    $d x y A $.
+    iunpw.1 $e |- A e. _V $.
+    $( An indexed union of a power class in terms of the power class of the
+       union of its index.  Part of Exercise 24(b) of [Enderton] p. 33.
+       (Contributed by NM, 29-Nov-2003.) $)
+    iunpw $p |- ( E. x e. A x = U. A <-> ~P U. A = U_ x e. A ~P x ) $=
+      ( vy cuni wceq wrex cpw ciun wcel sseq2 biimprcd reximdv com12 ssiun elpw
+      cv wss eliun wa uniiun syl6sseqr impbid1 df-pw abeq2i bitri 3bitr4g eqrdv
+      vex rexbii ssid uniex eleq2 syl5bbr mpbii sylib elssuni elpwi eqss sylibr
+      anim12i ex reximia syl impbii ) AQZBEZFZABGZVGHZABVFHZIZFZVIDVJVLVIDQZVGR
+      ZVNVFRZABGZVNVJJVNVLJZVIVOVQVOVIVQVOVHVPABVHVPVOVFVGVNKLMNVQVNABVFIVGABVF
+      VNOABUAUBUCVNVGDUIPVRVNVKJZABGVQAVNBVKSVSVPABVPDVKDVFUDUEUJUFUGUHVMVGVKJZ
+      ABGZVIVMVGVLJZWAVMVGVGRZWBVGUKWCVGVJJVMWBVGVGBCULPVJVLVGUMUNUOAVGBVKSUPVT
+      VHABVFBJZVTVHWDVTTVFVGRZVGVFRZTVHWDWEVTWFVFBUQVGVFURVAVFVGUSUTVBVCVDVE $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
