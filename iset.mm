@@ -36070,21 +36070,6 @@ $)
   $}
 
   ${
-    $d x A $.  $d x B $.  $d x C $.
-    $( Membership in an extension of a power class.  (Contributed by NM,
-       26-Mar-2007.) $)
-    elpwunsn $p |- ( A e. ( ~P ( B u. { C } ) \ ~P B ) -> C e. A ) $=
-      ( vx csn cun cpw cdif wcel wn wa eldif cv wrex wral wss elpwg dfss3 sylbi
-      wi syl6bb notbid biimpa rexnal sylibr wceq elpwi ssel wo elsni orim2i ord
-      elun imim2i imp3a 3syl eleq1 biimpd syl6 exp3a com4r pm2.43b rexlimdv imp
-      syldan ) ABCEZFZGZBGZHIAVHIZAVIIZJZKZCAIZAVHVILVJVLDMZBIZJZDANZVNVMVPDAOZ
-      JZVRVJVLVTVJVKVSVJVKABPVSABVHQDABRUAUBUCVPDAUDUEVJVRVNVJVQVNDAVJVOAIZVQVN
-      TVJWAVQWAVNVJWAVQWAVNTZVJWAVQKZVOCUFZWBVJAVGPWAVOVGIZTZWCWDTAVGUGAVGVOUHW
-      FWAVQWDWEVQWDTZWAWEVPVOVFIZUIZWGVOBVFUMWIVPWDWHWDVPVOCUJUKULSUNUOUPWDWAVN
-      VOCAUQURUSUTVAVBVCVDVES $.
-  $}
-
-  ${
     op1stb.1 $e |- A e. _V $.
     op1stb.2 $e |- B e. _V $.
     $( Extract the first member of an ordered pair.  Theorem 73 of [Suppes]
