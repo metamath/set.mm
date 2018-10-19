@@ -36067,14 +36067,6 @@ $)
       cdif mpd unssbd con3i anim12i eldif sylibr ) ABEZFZCBGZHZIACJZBCJZEZFZUKU
       GFZHZIUKUMUGTFUHUNUJUPUHABGZUNABKUQUNUHUKULGZABCLUHUKMFZUNURNUHCMFUSDACUG
       MOPUKULMQRSUAUOUIUOACBUKBKUBUCUDUKUMUGUEUF $.
-
-    $( Membership in the power class of a union.  (Contributed by NM,
-       26-Mar-2007.) $)
-    elpwun $p |- ( A e. ~P ( B u. C ) <-> ( A \ C ) e. ~P B ) $=
-      ( cun cpw wcel cvv cdif wb difex2 ax-mp sylibr wss elpwg difexg syl uncom
-      elex sseq2i ssundif bitri syl6rbbr bitrd pm5.21nii ) ABCEZFZGZAHGZACIZBFZ
-      GZAUGSULUJHGZUIUJUKSCHGUIUMJDACHKLMUIUHAUFNZULAUFHOUIULUJBNZUNUIUMULUOJAC
-      HPUJBHOQUNACBEZNUOUFUPABCRTACBUAUBUCUDUE $.
   $}
 
   ${
