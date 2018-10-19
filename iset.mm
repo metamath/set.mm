@@ -36077,9 +36077,10 @@ $)
        alternate version, and ~ op1st for the preferred version.)  (Contributed
        by NM, 25-Nov-2003.) $)
     op1stb $p |- |^| |^| <. A , B >. = A $=
-      ( cop cint csn cpr dfop inteqi cin snex prex intpr wss wceq snsspr1 df-ss
-      mpbi eqtri intsn ) ABEZFZFAGZFAUCUDUCUDABHZHZFZUDUBUFABCDIJUGUDUEKZUDUDUE
-      ALABMNUDUEOUHUDPABQUDUERSTTJACUAT $.
+      ( cop cint csn cpr dfop inteqi cin wcel snexg ax-mp prexg mp2an
+      cvv intpr wss eqtri wceq snsspr1 df-ss mpbi intsn ) ABEZFZFAGZF
+      AUGUHUGUHABHZHZFZUHUFUJABCDIJUKUHUIKZUHUHUIAQLZUHQLCAMNUMBQLUIQ
+      LCDABOPRUHUISULUHUAABUBUHUIUCUDTTJACUET $.
   $}
 
   ${
