@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Oct-2018
+$( iset.mm - Version of 19-Oct-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36096,6 +36096,29 @@ $)
       VNOABUAUBUCVNVGDUIPVRVNVKJZABGVQAVNBVKSVSVPABVPDVKDVFUDUEUJUFUGUHVMVGVKJZ
       ABGZVIVMVGVLJZWAVMVGVGRZWBVGUKWCVGVJJVMWBVGVGBCULPVJVLVGUMUNUOAVGBVKSUPVT
       VHABVFBJZVTVHWDVTTVFVGRZVGVFRZTVHWDWEVTWFVFBUQVGVFURVAVFVGUSUTVBVCVDVE $.
+  $}
+
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+          IZF Set Theory - add the Axiom of Membership-Induction
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          Introduce the Axiom of Membership-Induction
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d y a $.  $d ph y $.
+    $( Axiom of ` e. `-Induction.  An axiom of Intuitionistic Zermelo-Fraenkel
+       set theory.  Axiom 9 of [Crosilla] p.  "Axioms of CZF and IZF".  This
+       replaces the Axiom of Foundation (also called Regularity) from
+       Zermelo-Fraenkel set theory.  (Contributed by Jim Kingdon,
+       19-Oct-2018.) $)
+    ax-elind $a |- ( A. a ( A. y e. a [ y / a ] ph -> ph ) -> A. a ph ) $.
   $}
 
 
