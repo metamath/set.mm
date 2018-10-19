@@ -36100,6 +36100,31 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordinals (continued)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( A successor exists iff its class argument exists.  (Contributed by NM,
+     22-Jun-1998.) $)
+  sucexb $p |- ( A e. _V <-> suc A e. _V ) $=
+    ( cvv wcel csn wa cun csuc unexb snex biantru df-suc eleq1i 3bitr4i ) ABCZA
+    DZBCZEAOFZBCNAGZBCAOHPNAIJRQBAKLM $.
+
+  $( The successor of a set is a set (generalization).  (Contributed by NM,
+     5-Jun-1994.) $)
+  sucexg $p |- ( A e. V -> suc A e. _V ) $=
+    ( wcel cvv csuc elex sucexb sylib ) ABCADCAEDCABFAGH $.
+
+  ${
+    sucex.1 $e |- A e. _V $.
+    $( The successor of a set is a set.  (Contributed by NM, 30-Aug-1993.) $)
+    sucex $p |- suc A e. _V $=
+      ( cvv wcel csuc sucexg ax-mp ) ACDAECDBACFG $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
           IZF Set Theory - add the Axiom of Membership-Induction
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
