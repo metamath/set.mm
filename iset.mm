@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Oct-2018
+$( iset.mm - Version of 22-Oct-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36121,6 +36121,16 @@ $)
     ax-elind $a |- ( A. a ( A. y e. a [ y / a ] ph -> ph ) -> A. a ph ) $.
   $}
 
+  ${
+    $d x y S $.
+    $( ` e. `-Induction in terms of membership in a class.  (Contributed by
+       Mario Carneiro and Jim Kingdon, 22-Oct-2018.) $)
+    elindel $p |- ( A. x ( A. y ( y e. x -> y e. S ) -> x e. S ) -> S = _V ) $=
+      ( cv wcel wi wal cvv wceq wral clelsb3 ralbii df-ral bitri imbi1i
+      wsb albii ax-elind sylbir eqv sylibr ) BDZADZEUBCEZFBGZUCCEZFZAGZ
+      UFAGZCHIUHUFABPZBUCJZUFFZAGUIULUGAUKUEUFUKUDBUCJUEUJUDBUCBACKLUDB
+      UCMNOQUFBARSACTUA $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
