@@ -36132,6 +36132,15 @@ $)
       UCMNOQUFBARSACTUA $.
   $}
 
+  ${
+    $d x y A $.
+    $( Set (epsilon) induction.  Theorem 5.22 of [TakeutiZaring] p. 21.
+       (Contributed by NM, 17-Sep-2003.) $)
+    setind $p |- ( A. x ( x C_ A -> x e. A ) -> A = _V ) $=
+      ( vy cv wss wcel wal cvv wceq dfss2 imbi1i albii elindel sylbi
+      wi ) ADZBEZPBFZOZAGCDZPFTBFOCGZROZAGBHISUBAQUARCPBJKLACBMN $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
