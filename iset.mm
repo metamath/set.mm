@@ -36141,6 +36141,16 @@ $)
       wi ) ADZBEZPBFZOZAGCDZPFTBFOCGZROZAGBHISUBAQUARCPBJKLACBMN $.
   $}
 
+  ${
+    $d x A $.
+    $( Set (epsilon) induction, stated compactly.  Given as a homework problem
+       in 1992 by George Boolos (1940-1996).  (Contributed by NM,
+       17-Sep-2003.) $)
+    setind2 $p |- ( ~P A C_ A -> A = _V ) $=
+      ( vx cpw wss cv wcel wi wal cvv wceq pwss setind sylbi ) ACADBEZADNAFGBHA
+      IJBAAKBALM $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
