@@ -36132,6 +36132,25 @@ $)
       UCMNOQUFBARSACTUA $.
   $}
 
+  ${
+    $d x y A $.
+    $( Set (epsilon) induction.  Theorem 5.22 of [TakeutiZaring] p. 21.
+       (Contributed by NM, 17-Sep-2003.) $)
+    setind $p |- ( A. x ( x C_ A -> x e. A ) -> A = _V ) $=
+      ( vy cv wss wcel wal cvv wceq dfss2 imbi1i albii elindel sylbi
+      wi ) ADZBEZPBFZOZAGCDZPFTBFOCGZROZAGBHISUBAQUARCPBJKLACBMN $.
+  $}
+
+  ${
+    $d x A $.
+    $( Set (epsilon) induction, stated compactly.  Given as a homework problem
+       in 1992 by George Boolos (1940-1996).  (Contributed by NM,
+       17-Sep-2003.) $)
+    setind2 $p |- ( ~P A C_ A -> A = _V ) $=
+      ( vx cpw wss cv wcel wi wal cvv wceq pwss setind sylbi ) ACADBEZADNAFGBHA
+      IJBAAKBALM $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
