@@ -36108,8 +36108,8 @@ $)
   $( A successor exists iff its class argument exists.  (Contributed by NM,
      22-Jun-1998.) $)
   sucexb $p |- ( A e. _V <-> suc A e. _V ) $=
-    ( cvv wcel csn wa cun csuc unexb snex biantru df-suc eleq1i 3bitr4i ) ABCZA
-    DZBCZEAOFZBCNAGZBCAOHPNAIJRQBAKLM $.
+    ( cvv wcel csn cun csuc unexb snexg pm4.71i df-suc eleq1i 3bitr4i
+    wa ) ABCZADZBCZMAOEZBCNAFZBCAOGNPAHIRQBAJKL $.
 
   $( The successor of a set is a set (generalization).  (Contributed by NM,
      5-Jun-1994.) $)
