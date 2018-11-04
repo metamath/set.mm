@@ -36100,6 +36100,31 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordinals (continued)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( A successor exists iff its class argument exists.  (Contributed by NM,
+     22-Jun-1998.) $)
+  sucexb $p |- ( A e. _V <-> suc A e. _V ) $=
+    ( cvv wcel csn cun csuc unexb snexg pm4.71i df-suc eleq1i 3bitr4i
+    wa ) ABCZADZBCZMAOEZBCNAFZBCAOGNPAHIRQBAJKL $.
+
+  $( The successor of a set is a set (generalization).  (Contributed by NM,
+     5-Jun-1994.) $)
+  sucexg $p |- ( A e. V -> suc A e. _V ) $=
+    ( wcel cvv csuc elex sucexb sylib ) ABCADCAEDCABFAGH $.
+
+  ${
+    sucex.1 $e |- A e. _V $.
+    $( The successor of a set is a set.  (Contributed by NM, 30-Aug-1993.) $)
+    sucex $p |- suc A e. _V $=
+      ( cvv wcel csuc sucexg ax-mp ) ACDAECDBACFG $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
           IZF Set Theory - add the Axiom of Membership-Induction
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -36130,6 +36155,25 @@ $)
       wsb albii ax-elind sylbir eqv sylibr ) BDZADZEUBCEZFBGZUCCEZFZAGZ
       UFAGZCHIUHUFABPZBUCJZUFFZAGUIULUGAUKUEUFUKUDBUCJUEUJUDBUCBACKLUDB
       UCMNOQUFBARSACTUA $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Set (epsilon) induction.  Theorem 5.22 of [TakeutiZaring] p. 21.
+       (Contributed by NM, 17-Sep-2003.) $)
+    setind $p |- ( A. x ( x C_ A -> x e. A ) -> A = _V ) $=
+      ( vy cv wss wcel wal cvv wceq dfss2 imbi1i albii elindel sylbi
+      wi ) ADZBEZPBFZOZAGCDZPFTBFOCGZROZAGBHISUBAQUARCPBJKLACBMN $.
+  $}
+
+  ${
+    $d x A $.
+    $( Set (epsilon) induction, stated compactly.  Given as a homework problem
+       in 1992 by George Boolos (1940-1996).  (Contributed by NM,
+       17-Sep-2003.) $)
+    setind2 $p |- ( ~P A C_ A -> A = _V ) $=
+      ( vx cpw wss cv wcel wi wal cvv wceq pwss setind sylbi ) ACADBEZADNAFGBHA
+      IJBAAKBALM $.
   $}
 
 $(
