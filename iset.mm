@@ -36177,6 +36177,34 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          Transfinite induction
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y A $.
+    $( The Principle of Transfinite Induction.  Theorem 7.17 of [TakeutiZaring]
+       p. 39.  This principle states that if ` A ` is a class of ordinal
+       numbers with the property that every ordinal number included in ` A `
+       also belongs to ` A ` , then every ordinal number is in ` A ` .
+
+       (Contributed by NM, 18-Feb-2004.) $)
+    tfi $p |- ( ( A C_ On /\ A. x e. On ( x C_ A -> x e. A ) ) -> A = On ) $=
+      ( vy con0 wss cv wcel wi wral wa wal df-ral albii bitri imbi1i spi imim1i
+      dfss2 impexp wsb wceq imdi imbi2i 19.21v bitr4i ax-ia1 wtr tron dftr2 jca
+      mpbi bi2.04 3imtr3i alimi sylbi adantl sbim clelsb3 imbi12i ralbii sylbir
+      ax-elind sylibr syl eqss biimpri syldan ) BDEZAFZBEZVIBGZHZADIZDBEZBDUAZV
+      HVMJCFZVIGZVPDGZVPBGZHZHZCKZVIDGZVKHZHZAKZVNVMWFVHVMWCVQVSHZHZCKZWDHZAKZW
+      FVMWCVJHZWDHZAKZWKVMWCVLHZAKWNVLADLWOWMAWCVJVKUBMNWMWJAWLWIWDWLWCWGCKZHWI
+      VJWPWCCVIBRUCWCWGCUDUEOMNWJWEAWBWIWDWAWHCVQVRJZVSHVQWCJZVSHZWAWHWRWQVSWRV
+      QVRVQWCUFWRVRHZAWTAKZCDUGXACKUHCADUIUKPPUJQVQVRVSSWSVQWCVSHHWHVQWCVSSVQWC
+      VSULNUMUNQUNUOUPWFWDAKZVNWFWDACTZCVIIZWDHZAKXBXEWEAXDWBWDXDVTCVIIWBXCVTCV
+      IXCWCACTZVKACTZHVTWCVKACUQXFVRXGVSCADURCABURUSNUTVTCVILNOMWDCAVBVAADBRVCV
+      DVOVHVNJBDVEVFVG $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
