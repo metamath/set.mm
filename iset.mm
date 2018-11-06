@@ -36204,6 +36204,95 @@ $)
       DVOVHVNJBDVEVFVG $.
   $}
 
+  ${
+    $d w y z ph $.  $d w x y z $.
+    tfis.1 $e |- ( x e. On -> ( A. y e. x [ y / x ] ph -> ph ) ) $.
+    $( Transfinite Induction Schema.  If all ordinal numbers less than a given
+       number ` x ` have a property (induction hypothesis), then all ordinal
+       numbers have the property (conclusion).  Exercise 25 of [Enderton]
+       p. 200.  (Contributed by NM, 1-Aug-1994.)  (Revised by Mario Carneiro,
+       20-Nov-2016.) $)
+    tfis $p |- ( x e. On -> ph ) $=
+      ( vz vw cv con0 wcel crab wss wi wral wceq ssrab2 wa nfcv syl5bbr simprbi
+      wsb nfrab1 nfss nfcri dfss3 sseq1 rabid eleq1 imbi12d sbequ nfs1v sbequ12
+      nfim nfv cbvrab elrab2 ralimi syl5 anc2li vtoclgaf rgen tfi mp2an rabeq2i
+      eqcomi ) BGZHIZVFAABHHABHJZHVGHKEGZVGKZVHVGIZLZEHMVGHNABHOVKEHCGZVGIZCVEM
+      ZVFAPZLVKBVHHBVHQZVIVJBBVHVGVPABHUAZUBBEVGVQUCULVEVHNZVNVIVOVJVNVEVGKVRVI
+      CVEVGUDVEVHVGUERVOVEVGIVRVJABHUFVEVHVGUGRUHVFVNAVNABCTZCVEMVFAVMVSCVEVMVL
+      HIVSABFTZVSFVLHVGAFCBUIAVTBFHBHQFHQAFUMABFUJABFUKUNUOSUPDUQURUSUTEVGVAVBV
+      DVCS $.
+  $}
+
+  ${
+    $d y ph $.  $d x y $.
+    tfis2f.1 $e |- F/ x ps $.
+    tfis2f.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    tfis2f.3 $e |- ( x e. On -> ( A. y e. x ps -> ph ) ) $.
+    $( Transfinite Induction Schema, using implicit substitution.  (Contributed
+       by NM, 18-Aug-1994.) $)
+    tfis2f $p |- ( x e. On -> ph ) $=
+      ( wsb cv wral con0 wcel sbie ralbii syl5bi tfis ) ACDACDHZDCIZJBDRJRKLAQB
+      DRABCDEFMNGOP $.
+  $}
+
+  ${
+    $d x ps $.  $d y ph $.  $d x y $.
+    tfis2.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    tfis2.2 $e |- ( x e. On -> ( A. y e. x ps -> ph ) ) $.
+    $( Transfinite Induction Schema, using implicit substitution.  (Contributed
+       by NM, 18-Aug-1994.) $)
+    tfis2 $p |- ( x e. On -> ph ) $=
+      ( nfv tfis2f ) ABCDBCGEFH $.
+  $}
+
+  ${
+    $d x ps $.  $d y ph $.  $d x ch $.  $d x A $.  $d x y $.
+    tfis3.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    tfis3.2 $e |- ( x = A -> ( ph <-> ch ) ) $.
+    tfis3.3 $e |- ( x e. On -> ( A. y e. x ps -> ph ) ) $.
+    $( Transfinite Induction Schema, using implicit substitution.  (Contributed
+       by NM, 4-Nov-2003.) $)
+    tfis3 $p |- ( A e. On -> ch ) $=
+      ( con0 tfis2 vtoclga ) ACDFJHABDEGIKL $.
+  $}
+
+  ${
+    $d x v w y z T $.  $d v w y z R $.  $d x v w z S $.  $d x v w z ch $.
+    $d x v w y z ph $.  $d w y z ps $.  $d x A $.  $d x th $.
+    tfisi.a $e |- ( ph -> A e. V ) $.
+    tfisi.b $e |- ( ph -> T e. On ) $.
+    tfisi.c $e |- ( ( ph /\ ( R e. On /\ R C_ T ) /\
+          A. y ( S e. R -> ch ) ) -> ps ) $.
+    tfisi.d $e |- ( x = y -> ( ps <-> ch ) ) $.
+    tfisi.e $e |- ( x = A -> ( ps <-> th ) ) $.
+    tfisi.f $e |- ( x = y -> R = S ) $.
+    tfisi.g $e |- ( x = A -> R = T ) $.
+    $( A transfinite induction scheme in "implicit" form where the induction is
+       done on an object derived from the object of interest.  (Contributed by
+       Stefan O'Rear, 24-Aug-2015.) $)
+    tfisi $p |- ( ph -> th ) $=
+      ( vv wi vz vw wss ssid wceq wa eqid wcel wal con0 weq eqeq2 anbi2d imbi1d
+      cv sseq1 imbi12d albidv eqeq1d imbi2d cbvalv syl6bb wral w3a simp3l simp2
+      simp1l eqeltrd simp3r eqsstrd csb wsb simpl3l simpl1l simpr simpl2 onelss
+      eleqtrd simpl3r sstrd simpl1r rspcva syl2anc eqidd csbhypf eqcomd equcoms
+      sylc nfcv wb nfv sbhypf bicomd spv mp2and ex alrimiv sylib syl121anc 3exp
+      eleq1d tfis3 syl spcgv mpi exp3a pm2.43i ) AJJUCZDJUDAXHDTAAXHDAJJUEZAXHU
+      FZDTZJUGAGKUHHJUEZXJBTZTZEUIZXIXKTZLAJUJUHXOMHUAUOZUEZAXQJUCZUFZBTZTZEUIZ
+      IUBUOZUEZAYDJUCZUFZCTZTZFUIZXOUAUBJUAUBUKZYCHYDUEZYGBTZTZEUIYJYKYBYNEYKXR
+      YLYAYMXQYDHULYKXTYGBYKXSYFAXQYDJUPUMUNUQURYNYIEFEFUKZYLYEYMYHYOHIYDQUSYOB
+      CYGOUTUQVAVBXQJUEZYBXNEYPXRXLYAXMXQJHULYPXTXJBYPXSXHAXQJJUPUMUNUQURXQUJUH
+      ZYJUBXQVCZYCYQYRUFZYBEYSXRXTBYSXRXTVDZAHUJUHHJUCIHUHZCTZFUIZBYSXRAXSVEYTH
+      XQUJYSXRXTVFZYQYRXRXTVGVHYTHXQJUUDYSXRAXSVIVJYTESUOHVKZHUHZBESVLZTZSUIUUC
+      YTUUHSYTUUFUUGYTUUFUFZAUUEJUCZUUGAXSYSXRUUFVMUUIUUEXQJUUIYQUUEXQUHZUUEXQU
+      CYQYRXRXTUUFVNUUIUUEHXQYTUUFVOYSXRXTUUFVPVRZXQUUEVQWHAXSYSXRUUFVSVTUUIIUU
+      EUEZAUUJUFZCTZTZFUIZUUEUUEUEZUUNUUGTZUUIUUKYRUUQUULYQYRXRXTUUFWAYJUUQUBUU
+      EXQYDUUEUEZYIUUPFUUTYEUUMYHUUOYDUUEIULUUTYGUUNCUUTYFUUJAYDUUEJUPUMUNUQURW
+      BWCUUIUUEWDUUPUURUUSTFSFSUKZUUMUURUUOUUSUVAIUUEUUEUUMSFSFUKZUUEIESFUOZHIE
+      UVCWIEIWIQWEZWFWGUSUVACUUGUUNCUUGWJSFUVBUUGCBCESUVCCEWKOWLZWMWGUTUQWNWHWO
+      WPWQUUHUUBSFUVBUUFUUAUUGCUVBUUEIHUVDXAUVEUQVAWRNWSWTWQWPXBXCXNXPEGKEUOGUE
+      ZXLXIXMXKUVFHJJRUSUVFBDXJPUTUQXDWHXEXFXGXE $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
