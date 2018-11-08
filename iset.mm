@@ -36115,6 +36115,35 @@ $)
       wcel rgen ) BCBDAEZDZABFGQABPBNPCZQRABAHIPJKOABLM $.
   $}
 
+  ${
+    $d x y A $.
+    $( The union of a class of ordinal numbers is ordinal.  Proposition 7.19 of
+       [TakeutiZaring] p. 40.  (Contributed by NM, 30-May-1994.)  (Proof
+       shortened by Andrew Salmon, 12-Aug-2011.) $)
+    ssorduni $p |- ( A C_ On -> Ord U. A ) $=
+      ( vx vy con0 wss cuni wtr word cv wral wcel wrex eluni2 wa wi ssel onelss
+      syl6 rexlimdv syl5bi anc2r syl ssuni syl8 ralrimiv dftr3 sylibr onelon ex
+      ssrdv ordon trssord 3exp mpii sylc ) ADEZAFZGZUQDEZUQHZUPBIZUQEZBUQJURUPV
+      BBUQVAUQKZVACIZKZCALZUPVBCVAAMZUPVEVBCAUPVDAKZVEVAVDEZVHNZVBUPVHVEVIOZOVH
+      VEVJOOUPVHVDDKZVKADVDPZVDVAQRVHVEVIUAUBVAVDAUCUDSTUEBUQUFUGUPBUQDVCVFUPVA
+      DKZVGUPVEVNCAUPVHVLVEVNOVMVLVEVNVDVAUHUIRSTUJURUSDHZUTUKURUSVOUTUQDULUMUN
+      UO $.
+  $}
+
+  $( The union of a set of ordinal numbers is an ordinal number.  Theorem 9 of
+     [Suppes] p. 132.  (Contributed by NM, 1-Nov-2003.) $)
+  ssonuni $p |- ( A e. V -> ( A C_ On -> U. A e. On ) ) $=
+    ( con0 wss cuni wcel word ssorduni cvv wb uniexg elong syl syl5ibr ) ACDAEZ
+    CFZABFZOGZAHQOIFPRJABKOILMN $.
+
+  ${
+    ssonuni.1 $e |- A e. _V $.
+    $( The union of a set of ordinal numbers is an ordinal number.  Corollary
+       7N(d) of [Enderton] p. 193.  (Contributed by NM, 20-Sep-2003.) $)
+    ssonunii $p |- ( A C_ On -> U. A e. On ) $=
+      ( cvv wcel con0 wss cuni wi ssonuni ax-mp ) ACDAEFAGEDHBACIJ $.
+  $}
+
   $( A successor exists iff its class argument exists.  (Contributed by NM,
      22-Jun-1998.) $)
   sucexb $p |- ( A e. _V <-> suc A e. _V ) $=
