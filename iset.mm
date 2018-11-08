@@ -36144,6 +36144,20 @@ $)
       ( cvv wcel con0 wss cuni wi ssonuni ax-mp ) ACDAEFAGEDHBACIJ $.
   $}
 
+  ${
+    $d x A $.
+    $( Any ordinal class is a subclass of the class of ordinal numbers.
+       Corollary 7.15 of [TakeutiZaring] p. 38.  (Contributed by NM,
+       18-May-1994.) $)
+    ordsson $p |- ( Ord A -> A C_ On ) $=
+      ( vx word con0 cv wcel ordelon ex ssrdv ) ACZBADJBEZAFKDFAKGHI $.
+  $}
+
+  $( An ordinal number is a subset of the class of ordinal numbers.
+     (Contributed by NM, 5-Jun-1994.) $)
+  onss $p |- ( A e. On -> A C_ On ) $=
+    ( con0 wcel word wss eloni ordsson syl ) ABCADABEAFAGH $.
+
   $( A successor exists iff its class argument exists.  (Contributed by NM,
      22-Jun-1998.) $)
   sucexb $p |- ( A e. _V <-> suc A e. _V ) $=
