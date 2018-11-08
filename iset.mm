@@ -36222,6 +36222,18 @@ $)
       ACHUEUCBCUDUAIJKUCUAUANZFUFCFUBUAALOUAMUAUFCPQRS $.
   $}
 
+  ${
+    onssi.1 $e |- A e. On $.
+    $( An ordinal number is a subset of ` On ` .  (Contributed by NM,
+       11-Aug-1994.) $)
+    onssi $p |- A C_ On $=
+      ( con0 wcel wss onss ax-mp ) ACDACEBAFG $.
+
+    $( The successor of an ordinal number is an ordinal number.  Corollary
+       7N(c) of [Enderton] p. 193.  (Contributed by NM, 12-Jun-1994.) $)
+    onsuci $p |- suc A e. On $=
+      ( con0 wcel csuc suceloni ax-mp ) ACDAECDBAFG $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
