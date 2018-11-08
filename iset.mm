@@ -36168,6 +36168,17 @@ $)
   orduni $p |- ( Ord A -> Ord U. A ) $=
     ( word con0 wss cuni ordsson ssorduni syl ) ABACDAEBAFAGH $.
 
+  ${
+    $d x y A $.
+    bm2.5ii.1 $e |- A e. _V $.
+    $( Problem 2.5(ii) of [BellMachover] p. 471.  (Contributed by NM,
+       20-Sep-2003.) $)
+    bm2.5ii $p |- ( A C_ On -> U. A = |^| { x e. On | A. y e. A y C_ x } ) $=
+      ( con0 wss cuni wcel cv wral crab cint wceq ssonunii wb unissb a1i inteqi
+      rabbiia intmin syl5reqr syl ) CEFCGZEHZUCBIAIZFBCJZAEKZLZMCDNUDUHUCUEFZAE
+      KZLUCUJUGUIUFAEUIUFOUEEHBCUEPQSRAUCETUAUB $.
+  $}
+
   $( A successor exists iff its class argument exists.  (Contributed by NM,
      22-Jun-1998.) $)
   sucexb $p |- ( A e. _V <-> suc A e. _V ) $=
