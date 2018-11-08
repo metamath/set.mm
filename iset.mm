@@ -36158,6 +36158,16 @@ $)
   onss $p |- ( A e. On -> A C_ On ) $=
     ( con0 wcel word wss eloni ordsson syl ) ABCADABEAFAGH $.
 
+  $( The union of an ordinal number is an ordinal number.  (Contributed by NM,
+     29-Sep-2006.) $)
+  onuni $p |- ( A e. On -> U. A e. On ) $=
+    ( con0 wcel wss cuni onss ssonuni mpd ) ABCABDAEBCAFABGH $.
+
+  $( The union of an ordinal class is ordinal.  (Contributed by NM,
+     12-Sep-2003.) $)
+  orduni $p |- ( Ord A -> Ord U. A ) $=
+    ( word con0 wss cuni ordsson ssorduni syl ) ABACDAEBAFAGH $.
+
   $( A successor exists iff its class argument exists.  (Contributed by NM,
      22-Jun-1998.) $)
   sucexb $p |- ( A e. _V <-> suc A e. _V ) $=
