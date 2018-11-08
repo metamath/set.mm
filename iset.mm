@@ -36115,6 +36115,70 @@ $)
       wcel rgen ) BCBDAEZDZABFGQABPBNPCZQRABAHIPJKOABLM $.
   $}
 
+  ${
+    $d x y A $.
+    $( The union of a class of ordinal numbers is ordinal.  Proposition 7.19 of
+       [TakeutiZaring] p. 40.  (Contributed by NM, 30-May-1994.)  (Proof
+       shortened by Andrew Salmon, 12-Aug-2011.) $)
+    ssorduni $p |- ( A C_ On -> Ord U. A ) $=
+      ( vx vy con0 wss cuni wtr word cv wral wcel wrex eluni2 wa wi ssel onelss
+      syl6 rexlimdv syl5bi anc2r syl ssuni syl8 ralrimiv dftr3 sylibr onelon ex
+      ssrdv ordon trssord 3exp mpii sylc ) ADEZAFZGZUQDEZUQHZUPBIZUQEZBUQJURUPV
+      BBUQVAUQKZVACIZKZCALZUPVBCVAAMZUPVEVBCAUPVDAKZVEVAVDEZVHNZVBUPVHVEVIOZOVH
+      VEVJOOUPVHVDDKZVKADVDPZVDVAQRVHVEVIUAUBVAVDAUCUDSTUEBUQUFUGUPBUQDVCVFUPVA
+      DKZVGUPVEVNCAUPVHVLVEVNOVMVLVEVNVDVAUHUIRSTUJURUSDHZUTUKURUSVOUTUQDULUMUN
+      UO $.
+  $}
+
+  $( The union of a set of ordinal numbers is an ordinal number.  Theorem 9 of
+     [Suppes] p. 132.  (Contributed by NM, 1-Nov-2003.) $)
+  ssonuni $p |- ( A e. V -> ( A C_ On -> U. A e. On ) ) $=
+    ( con0 wss cuni wcel word ssorduni cvv wb uniexg elong syl syl5ibr ) ACDAEZ
+    CFZABFZOGZAHQOIFPRJABKOILMN $.
+
+  ${
+    ssonuni.1 $e |- A e. _V $.
+    $( The union of a set of ordinal numbers is an ordinal number.  Corollary
+       7N(d) of [Enderton] p. 193.  (Contributed by NM, 20-Sep-2003.) $)
+    ssonunii $p |- ( A C_ On -> U. A e. On ) $=
+      ( cvv wcel con0 wss cuni wi ssonuni ax-mp ) ACDAEFAGEDHBACIJ $.
+  $}
+
+  ${
+    $d x A $.
+    $( Any ordinal class is a subclass of the class of ordinal numbers.
+       Corollary 7.15 of [TakeutiZaring] p. 38.  (Contributed by NM,
+       18-May-1994.) $)
+    ordsson $p |- ( Ord A -> A C_ On ) $=
+      ( vx word con0 cv wcel ordelon ex ssrdv ) ACZBADJBEZAFKDFAKGHI $.
+  $}
+
+  $( An ordinal number is a subset of the class of ordinal numbers.
+     (Contributed by NM, 5-Jun-1994.) $)
+  onss $p |- ( A e. On -> A C_ On ) $=
+    ( con0 wcel word wss eloni ordsson syl ) ABCADABEAFAGH $.
+
+  $( The union of an ordinal number is an ordinal number.  (Contributed by NM,
+     29-Sep-2006.) $)
+  onuni $p |- ( A e. On -> U. A e. On ) $=
+    ( con0 wcel wss cuni onss ssonuni mpd ) ABCABDAEBCAFABGH $.
+
+  $( The union of an ordinal class is ordinal.  (Contributed by NM,
+     12-Sep-2003.) $)
+  orduni $p |- ( Ord A -> Ord U. A ) $=
+    ( word con0 wss cuni ordsson ssorduni syl ) ABACDAEBAFAGH $.
+
+  ${
+    $d x y A $.
+    bm2.5ii.1 $e |- A e. _V $.
+    $( Problem 2.5(ii) of [BellMachover] p. 471.  (Contributed by NM,
+       20-Sep-2003.) $)
+    bm2.5ii $p |- ( A C_ On -> U. A = |^| { x e. On | A. y e. A y C_ x } ) $=
+      ( con0 wss cuni wcel cv wral crab cint wceq ssonunii wb unissb a1i inteqi
+      rabbiia intmin syl5reqr syl ) CEFCGZEHZUCBIAIZFBCJZAEKZLZMCDNUDUHUCUEFZAE
+      KZLUCUJUGUIUFAEUIUFOUEEHBCUEPQSRAUCETUAUB $.
+  $}
+
   $( A successor exists iff its class argument exists.  (Contributed by NM,
      22-Jun-1998.) $)
   sucexb $p |- ( A e. _V <-> suc A e. _V ) $=
@@ -36133,6 +36197,43 @@ $)
       ( cvv wcel csuc sucexg ax-mp ) ACDAECDBACFG $.
   $}
 
+  ${
+    $d x A $.
+    $( The successor of an ordinal number is an ordinal number.  Proposition
+       7.24 of [TakeutiZaring] p. 41.  (Contributed by NM, 6-Jun-1994.) $)
+    suceloni $p |- ( A e. On -> suc A e. On ) $=
+      ( vx con0 wcel csuc word wtr wss cv wral csn wo onelss wi wceq elsn sylbi
+      eqimss a1i cvv orim12d cun df-suc eleq2i elun oridm 3imtr3g sssucid sstr2
+      bitr2i syl6mpi ralrimiv dftr3 sylibr onss snssi unssd syl5eqss ordon 3exp
+      trssord mpii sylc wb sucexg elong syl mpbird ) ACDZAEZCDZVJFZVIVJGZVJCHZV
+      LVIBIZVJHZBVJJVMVIVPBVJVIVOVJDZVOAHZAVJHVPVIVOADZVOAKZDZLZVRVRLVQVRVIVSVR
+      WAVRAVOMWAVRNVIWAVOAOVRBAPVOARQSUAVQVOAVTUBZDWBVJWCVOAUCZUDVOAVTUEUJVRUFU
+      GAUHVOAVJUIUKULBVJUMUNVIVJWCCWDVIAVTCAUOACUPUQURVMVNCFZVLUSVMVNWEVLVJCVAU
+      TVBVCVIVJTDVKVLVDACVEVJTVFVGVH $.
+  $}
+
+  ${
+    $d x y A $.
+    $( The class of all ordinal numbers is its own union.  Exercise 11 of
+       [TakeutiZaring] p. 40.  (Contributed by NM, 12-Nov-2003.) $)
+    unon $p |- U. On = On $=
+      ( vx vy con0 cuni cv wcel wrex eluni2 onelon rexlimiva sylbi vex suceloni
+      csuc sucid elunii sylancr impbii eqriv ) ACDZCAEZTFZUACFZUBUABEZFZBCGUCBU
+      ACHUEUCBCUDUAIJKUCUAUANZFUFCFUBUAALOUAMUAUFCPQRS $.
+  $}
+
+  ${
+    onssi.1 $e |- A e. On $.
+    $( An ordinal number is a subset of ` On ` .  (Contributed by NM,
+       11-Aug-1994.) $)
+    onssi $p |- A C_ On $=
+      ( con0 wcel wss onss ax-mp ) ACDACEBAFG $.
+
+    $( The successor of an ordinal number is an ordinal number.  Corollary
+       7N(c) of [Enderton] p. 193.  (Contributed by NM, 12-Jun-1994.) $)
+    onsuci $p |- suc A e. On $=
+      ( con0 wcel csuc suceloni ax-mp ) ACDAECDBAFG $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
