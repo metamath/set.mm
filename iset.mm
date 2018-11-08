@@ -36197,6 +36197,21 @@ $)
       ( cvv wcel csuc sucexg ax-mp ) ACDAECDBACFG $.
   $}
 
+  ${
+    $d x A $.
+    $( The successor of an ordinal number is an ordinal number.  Proposition
+       7.24 of [TakeutiZaring] p. 41.  (Contributed by NM, 6-Jun-1994.) $)
+    suceloni $p |- ( A e. On -> suc A e. On ) $=
+      ( vx con0 wcel csuc word wtr wss cv wral csn wo onelss wi wceq elsn sylbi
+      eqimss a1i cvv orim12d cun df-suc eleq2i elun oridm 3imtr3g sssucid sstr2
+      bitr2i syl6mpi ralrimiv dftr3 sylibr onss snssi unssd syl5eqss ordon 3exp
+      trssord mpii sylc wb sucexg elong syl mpbird ) ACDZAEZCDZVJFZVIVJGZVJCHZV
+      LVIBIZVJHZBVJJVMVIVPBVJVIVOVJDZVOAHZAVJHVPVIVOADZVOAKZDZLZVRVRLVQVRVIVSVR
+      WAVRAVOMWAVRNVIWAVOAOVRBAPVOARQSUAVQVOAVTUBZDWBVJWCVOAUCZUDVOAVTUEUJVRUFU
+      GAUHVOAVJUIUKULBVJUMUNVIVJWCCWDVIAVTCAUOACUPUQURVMVNCFZVLUSVMVNWEVLVJCVAU
+      TVBVCVIVJTDVKVLVDACVEVJTVFVGVH $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
