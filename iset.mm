@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Oct-2018
+$( iset.mm - Version of 8-Nov-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36195,6 +36195,19 @@ $)
     $( The successor of a set is a set.  (Contributed by NM, 30-Aug-1993.) $)
     sucex $p |- suc A e. _V $=
       ( cvv wcel csuc sucexg ax-mp ) ACDAECDBACFG $.
+  $}
+
+  ${
+    $d x A $.
+    $( The successor of an ordinal class is ordinal.  (Contributed by Jim
+       Kingdon, 8-Nov-2018.) $)
+    ordsucim $p |- ( Ord A -> Ord suc A ) $=
+      ( vx word csuc wtr cv wral ordtr suctr syl wcel wceq wo csn df-suc eleq2i
+      cun elun elsn df-iord orbi2i 3bitri wal simprbi df-ral sylib 19.21bi treq
+      wi syl5ibrcom jaod syl5bi ralrimiv sylanbrc ) ACZADZEZBFZEZBUPGUPCUOAEZUQ
+      AHZAIJUOUSBUPURUPKZURAKZURALZMZUOUSVBURAANZQZKVCURVFKZMVEUPVGURAOPURAVFRV
+      HVDVCBASUAUBUOVCUSVDUOVCUSUIZBUOUSBAGZVIBUCUOUTVJBATUDUSBAUEUFUGUOUSVDUTV
+      AURAUHUJUKULUMBUPTUN $.
   $}
 
   ${
