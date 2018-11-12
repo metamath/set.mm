@@ -36241,6 +36241,12 @@ $)
       ACHUEUCBCUDUAIJKUCUAUANZFUFCFUBUAALOUAMUAUFCPQRS $.
   $}
 
+  $( The class of ordinal numbers is a limit ordinal.  (Contributed by NM,
+     24-Mar-1995.) $)
+  limon $p |- Lim On $=
+    ( con0 wlim word c0 wcel cuni wceq ordon 0elon unon eqcomi dflim2
+    mpbir3an ) ABACDAEAAFZGHINAJKALM $.
+
   ${
     onssi.1 $e |- A e. On $.
     $( An ordinal number is a subset of ` On ` .  (Contributed by NM,
