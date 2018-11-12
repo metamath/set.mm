@@ -1,4 +1,4 @@
-$( iset.mm - Version of 8-Nov-2018
+$( iset.mm - Version of 11-Nov-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -35190,11 +35190,18 @@ $)
      [TakeutiZaring] p. 38.  (Contributed by NM, 5-Jun-1994.) $)
   df-on $a |- On = { x | Ord x } $.
 
-  $( Define the limit ordinal predicate, which is true for a non-empty ordinal
-     that is not a successor (i.e. that is the union of itself).  Our
-     definition combines the definition of Lim of [BellMachover] p. 471 and
-     Exercise 1 of [TakeutiZaring] p. 42.  (Contributed by NM, 22-Apr-1994.) $)
-  df-lim $a |- ( Lim A <-> ( Ord A /\ A =/= (/) /\ A = U. A ) ) $.
+  $( Define the limit ordinal predicate, which is true for an ordinal that has
+     the empty set as an element and is not a successor (i.e. that is the union
+     of itself).  Our definition combines the definition of Lim of
+     [BellMachover] p. 471 and Exercise 1 of [TakeutiZaring] p. 42, and then
+     changes ` A =/= (/) ` to ` (/) e. A ` (which would be equivalent given the
+     law of the excluded middle, but which is not for us).  (Contributed by Jim
+     Kingdon, 11-Nov-2018.) $)
+  df-ilim $a |- ( Lim A <-> ( Ord A /\ (/) e. A /\ A = U. A ) ) $.
+
+  $( Another name for ~ df-ilim .  (Contributed by NM, 4-Nov-2004.) $)
+  dflim2 $p |- ( Lim A <-> ( Ord A /\ (/) e. A /\ A = U. A ) ) $=
+    ( df-ilim ) AB $.
 
   $( Define the successor of a class.  When applied to an ordinal number, the
      successor means the same thing as "plus 1".  Definition 7.22 of
@@ -35247,9 +35254,9 @@ $)
   $( Equality theorem for the limit predicate.  (Contributed by NM,
      22-Apr-1994.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
   limeq $p |- ( A = B -> ( Lim A <-> Lim B ) ) $=
-    ( wceq word c0 wne cuni w3a wlim ordeq neeq1 unieq eqeq12d 3anbi123d df-lim
-    id 3bitr4g ) ABCZADZAEFZAAGZCZHBDZBEFZBBGZCZHAIBIRSUCTUDUBUFABJABEKRABUAUER
-    PABLMNAOBOQ $.
+    ( wceq word c0 wcel cuni wlim ordeq eleq2 unieq eqeq12d 3anbi123d
+    w3a id dflim2 3bitr4g ) ABCZADZEAFZAAGZCZNBDZEBFZBBGZCZNAHBHRSUCT
+    UDUBUFABIABEJRABUAUEROABKLMAPBPQ $.
 
   ${
     $d x A $.
@@ -35362,22 +35369,27 @@ $)
   $( The empty set is not a limit ordinal.  (Contributed by NM, 24-Mar-1995.)
      (Proof shortened by Andrew Salmon, 25-Jul-2011.) $)
   nlim0 $p |- -. Lim (/) $=
-    ( c0 wlim word wne cuni wceq w3a neirr simp2 mto df-lim mtbir ) A
-    BACZAADZAAEFZGZPNAHMNOIJAKL $.
+    ( c0 wlim word wcel cuni wceq w3a noel simp2 mto dflim2 mtbir ) ABACZAADZAA
+    EFZGZPNAHMNOIJAKL $.
 
   $( A limit ordinal is ordinal.  (Contributed by NM, 4-May-1995.) $)
   limord $p |- ( Lim A -> Ord A ) $=
-    ( wlim word c0 wne cuni wceq df-lim simp1bi ) ABACADEAAFGAHI $.
+    ( wlim word c0 wcel cuni wceq dflim2 simp1bi ) ABACDAEAAFGAHI $.
 
   $( A limit ordinal is its own supremum (union).  (Contributed by NM,
      4-May-1995.) $)
   limuni $p |- ( Lim A -> A = U. A ) $=
-    ( wlim word c0 wne cuni wceq df-lim simp3bi ) ABACADEAAFGAHI $.
+    ( wlim word c0 wcel cuni wceq dflim2 simp3bi ) ABACDAEAAFGAHI $.
 
   $( The union of a limit ordinal is a limit ordinal.  (Contributed by NM,
      19-Sep-2006.) $)
   limuni2 $p |- ( Lim A -> Lim U. A ) $=
     ( wlim cuni wceq wb limuni limeq syl ibi ) ABZACZBZJAKDJLEAFAKGHI $.
+
+  $( A limit ordinal contains the empty set.  (Contributed by NM,
+     15-May-1994.) $)
+  0ellim $p |- ( Lim A -> (/) e. A ) $=
+    ( wlim word c0 wcel cuni wceq dflim2 simp2bi ) ABACDAEAAFGAHI $.
 
   $( A limit ordinal class that is also a set is an ordinal number.
      (Contributed by NM, 26-Apr-2004.) $)
