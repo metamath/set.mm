@@ -1,4 +1,4 @@
-$( iset.mm - Version of 11-Nov-2018
+$( iset.mm - Version of 14-Nov-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36258,6 +36258,28 @@ $)
        7N(c) of [Enderton] p. 193.  (Contributed by NM, 12-Jun-1994.) $)
     onsuci $p |- suc A e. On $=
       ( con0 wcel csuc suceloni ax-mp ) ACDAECDBAFG $.
+  $}
+
+  ${
+    $d x y z w s $.  $d z w s ph $.  $d x ph $.
+    ordtriexmid.1 $e |- A. x e. On A. y e. On ( x e. y \/ x = y \/ y e. x ) $.
+    $( Ordinal trichotomy implies the law of the excluded middle (that is,
+       decidability of an arbitrary proposition).  (Contributed by Mario
+       Carneiro and Jim Kingdon, 14-Nov-2018.) $)
+    ordtriexmid $p |- ( ph \/ -. ph ) $=
+      ( vz vs vw wo c0 wceq wcel noel w3o con0 word cv wa wi eleq2 ax-mp wn csn
+      crab wtr wss wal ax-ia1 elrabi elsn sylib mtbiri syl adantl pm2.21dd gen2
+      dftr2 mpbir ssrab2 csuc ord0 ordsucim suc0 ordeq mpbi trssord mp3an rabex
+      wb p0ex eleq1 eqeq1 3orbi123d 0elon 0ex anbi2d eqeq2 imbi12d rspec2 vtocl
+      elon mpan2 vtoclga 3orass mtp-or biidd elrab3 sylnib biimpi orim12i orcom
+      snid ) AAUAZHWLAHZAEIUBZUCZIJZIWOKZHZWMWOIKZWRWOLWSWPWQMZWSWRHWONKZWTXAWO
+      OZWOUDZWOWNUEWNOZXBXCFPZGPZKZXFWOKZQZXEWOKZRZGUFFUFXKFGXIXGXJXGXHUGXHXGUA
+      ZXGXHXFIJZXLXHXFWNKXMAEXFWNUHGIUIUJXMXGXEIKXELXFIXESUKULUMUNUOFGWOUPUQAEW
+      NURIUSZOZXDIOXOUTIVATXNWNJXOXDVHVBXNWNVCTVDWOWNVEVFWOAEWNVIVGVTUQBPZIKZXP
+      IJZIXPKZMZWTBWONXPWOJXQWSXRWPXSWQXPWOIVJXPWOIVKXPWOISVLXPNKZINKZXTVMYACPZ
+      NKZQZXPYCKZXPYCJZYCXPKZMZRYAYBQZXTRCIVNYCIJZYEYJYIXTYKYDYBYAYCINVJVOYKYFX
+      QYGXRYHXSYCIXPSYCIXPVPYCIXPVJVLVQYIBCNNDVRVSWAWBTWSWPWQWCVDWDWPWLWQAWPWQA
+      WPWQIIKILWOIISUKIWNKWQAVHIVNWKAAEIWNEPIJAWEWFTZWGWQAYLWHWITAWLWJUQ $.
   $}
 
 $(
