@@ -36231,6 +36231,21 @@ $)
       cvv ) ABCZADZBCZOEZNAEQAFAGHNOMCPQIABJOMKHL $.
   $}
 
+  $( The successor of an element of an ordinal class is a subset of it.
+     (Contributed by NM, 21-Jun-1998.) $)
+  ordsucss $p |- ( Ord B -> ( A e. B -> suc A C_ B ) ) $=
+    ( word wtr wcel csuc wss wi ordtr csn cun wa trss snssi jcad unss
+    a1i syl6ib df-suc sseq1i syl6ibr syl ) BCBDZABEZAFZBGZHBIUCUDAAJZ
+    KZBGZUFUCUDABGZUGBGZLUIUCUDUJUKBAMUDUKHUCABNQOAUGBPRUEUHBASTUAUB
+    $.
+
+  $( A set belongs to an ordinal iff its successor is a subset of the ordinal.
+     Exercise 8 of [TakeutiZaring] p. 42 and its converse.  (Contributed by NM,
+     29-Nov-2003.) $)
+  ordelsuc $p |- ( ( A e. C /\ Ord B ) -> ( A e. B <-> suc A C_ B ) ) $=
+    ( wcel word wa csuc wss wi ordsucss adantl sucssel adantr impbid ) ACDZBEZF
+    ABDZAGBHZPQRIOABJKORQIPABCLMN $.
+
   ${
     $d x y A $.
     $( The class of all ordinal numbers is its own union.  Exercise 11 of
@@ -36246,6 +36261,18 @@ $)
   limon $p |- Lim On $=
     ( con0 wlim word c0 wcel cuni wceq ordon 0elon unon eqcomi dflim2
     mpbir3an ) ABACDAEAAFZGHINAJKALM $.
+
+  ${
+    $d x y A $.
+
+    $( An ordinal which contains the successor of each of its members is equal
+       to its union.  (Contributed by Jim Kingdon, 14-Nov-2018.) $)
+    ordunisuc2r $p |- ( Ord A -> ( A. x e. A suc x e. A -> A = U. A ) ) $=
+      ( word cv csuc wcel wral cuni wss wa wceq wi wal sucid elunii mpan imim2i
+      vex alimi df-ral dfss2 3imtr4i a1i orduniss jctird eqss syl6ibr ) BCZADZE
+      ZBFZABGZBBHZIZUMBIZJBUMKUHULUNUOULUNLUHUIBFZUKLZAMUPUIUMFZLZAMULUNUQUSAUK
+      URUPUIUJFUKURUIARNUIUJBOPQSUKABTABUMUAUBUCBUDUEBUMUFUG $.
+  $}
 
   ${
     onssi.1 $e |- A e. On $.
