@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Nov-2018
+$( iset.mm - Version of 16-Nov-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36476,6 +36476,36 @@ $)
       UVCWIEIWIQWEZWFWGUSUVACUUGUUNCUUGWJSFUVBUUGCBCESUVCCEWKOWLZWMWGUTUQWNWHWO
       WPWQUUHUUBSFUVBUUFUUAUUGCUVBUUEIHUVDXAUVEUQVAWRNWSWTWQWPXBXCXNXPEGKEUOGUE
       ZXLXIXMXKUVFHJJRUSUVFBDXJPUTUQXDWHXEXFXGXE $.
+  $}
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+             ZF Set Theory - add the Axiom of Infinity
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Introduce the Axiom of Infinity
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y $.
+    $( Axiom of Infinity.  Axiom 5 of [Crosilla] p.  "Axioms of CZF and IZF".
+       (Contributed by Jim Kingdon, 16-Nov-2018.) $)
+    ax-iinf $a |- E. x ( (/) e. x /\ A. y ( y e. x -> suc y e. x ) ) $.
+  $}
+
+  ${
+    $d x y z w $.
+    $( A standard version of the Axiom of Infinity, using definitions to
+       abbreviate.  Axiom Inf of [BellMachover] p. 472.  (Contributed by NM,
+       30-Aug-1993.) $)
+    zfinf2 $p |- E. x ( (/) e. x /\ A. y e. x suc y e. x ) $=
+      ( c0 cv wcel csuc wral wa wex wi wal ax-iinf df-ral exbii mpbir
+      anbi2i ) CADZEZBDZFQEZBQGZHZAIRSQETJBKZHZAIABLUBUDAUAUCRTBQMPNO
+      $.
   $}
 
 $(
