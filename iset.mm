@@ -36237,6 +36237,13 @@ $)
     ( cvv wcel word csuc ordsucim sucidg ordelord ex syl5com impbid2
     ) ABCZADZAEZDZAFLANCZOMABGOPMNAHIJK $.
 
+  $( The successor of an ordinal number is an ordinal number.  (Contributed by
+     NM, 9-Sep-2003.) $)
+  sucelon $p |- ( A e. On <-> suc A e. On ) $=
+    ( con0 wcel csuc suceloni word eloni cvv wb elex sucexb elong ordsucg bitrd
+    sylibr syl mpbird impbii ) ABCZADZBCZAEUASTFZTGUAAHCZSUBIUATHCUCTBJAKOUCSAF
+    UBAHLAMNPQR $.
+
   $( The successor of an element of an ordinal class is a subset of it.
      (Contributed by NM, 21-Jun-1998.) $)
   ordsucss $p |- ( Ord B -> ( A e. B -> suc A C_ B ) ) $=
