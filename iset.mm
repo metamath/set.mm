@@ -36260,6 +36260,16 @@ $)
     ABDZAGBHZPQRIOABJKORQIPABCLMN $.
 
   ${
+    $d x A $.
+    $( The successor of an ordinal number is the smallest larger ordinal
+       number.  (Contributed by NM, 28-Nov-2003.) $)
+    onsucmin $p |- ( A e. On -> suc A = |^| { x e. On | A e. x } ) $=
+      ( con0 wcel cv crab cint csuc wss word wb ordelsuc sylan2 rabbidva inteqd
+      eloni wceq sucelon intmin sylbi eqtr2d ) BCDZBAEZDZACFZGBHZUCIZACFZGZUFUB
+      UEUHUBUDUGACUCCDUBUCJUDUGKUCPBUCCLMNOUBUFCDUIUFQBRAUFCSTUA $.
+  $}
+
+  ${
     $d x y A $.
     $( The class of all ordinal numbers is its own union.  Exercise 11 of
        [TakeutiZaring] p. 40.  (Contributed by NM, 12-Nov-2003.) $)
