@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Nov-2018
+$( iset.mm - Version of 28-Nov-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36230,6 +36230,12 @@ $)
       ( con0 wcel csuc word eloni ordsucim syl wb sucexg elong mpbird
       cvv ) ABCZADZBCZOEZNAEQAFAGHNOMCPQIABJOMKHL $.
   $}
+
+  $( The successor of an ordinal class is ordinal.  (Contributed by Jim
+     Kingdon, 20-Nov-2018.) $)
+  ordsucg $p |- ( A e. _V -> ( Ord A <-> Ord suc A ) ) $=
+    ( cvv wcel word csuc ordsucim sucidg ordelord ex syl5com impbid2
+    ) ABCZADZAEZDZAFLANCZOMABGOPMNAHIJK $.
 
   $( The successor of an element of an ordinal class is a subset of it.
      (Contributed by NM, 21-Jun-1998.) $)
