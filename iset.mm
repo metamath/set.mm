@@ -36654,6 +36654,39 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        The natural numbers (i.e. finite ordinals)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new symbol. $)
+  $c om $. $( Greek letter omega $)
+
+  $( Extend class notation to include the class of natural numbers. $)
+  com $a class om $.
+
+  ${
+    $d x y z $.
+    $( Define the class of natural numbers as the smallest inductive set, which
+       is valid provided we assume the Axiom of Infinity.  Definition 6.3 of
+       [Eisenberg] p. 82.
+
+       _Note_: the natural numbers ` om ` are a subset of the ordinal numbers
+       ~ df-on .  Later, when we define complex numbers, we will be able to
+       also define a subset of the complex numbers with analogous properties
+       and operations, but they will be different sets.  (Contributed by NM,
+       6-Aug-1994.) $)
+    df-iom $a |- om = |^| { x | ( (/) e. x /\ A. y e. x suc y e. x ) } $.
+  $}
+
+  ${
+    $d x y z $.
+    $( Another name for ~ df-iom .  (Contributed by NM, 6-Aug-1994.) $)
+    dfom3 $p |- om = |^| { x | ( (/) e. x /\ A. y e. x suc y e. x ) } $=
+      ( df-iom ) ABC $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -37332,6 +37365,11 @@ htmldef "suc" as
     "<IMG SRC='_suc.gif' WIDTH=22 HEIGHT=19 ALT=' suc' TITLE='suc'> ";
   althtmldef "suc" as 'suc ';
   latexdef "suc" as "{\rm suc}";
+htmldef "om" as
+    "<IMG SRC='omega.gif' WIDTH=11 HEIGHT=19 ALT=' om' TITLE='om'>";
+  /*althtmldef "om" as '&omega;';*/
+  althtmldef "om" as '&#x1D714;'; /* math italic omega */
+  latexdef "om" as "\omega";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
