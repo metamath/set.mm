@@ -17978,6 +17978,16 @@ $)
   $}
 
   ${
+    $d y A $.  $d w y $.  $d w A $.  $d w x $.
+    $( Substitution applied to an atomic wff (class version of ~ elsb4 ).
+       (Contributed by Jim Kingdon, 22-Nov-2018.) $)
+    clelsb4 $p |- ( [ x / y ] A e. y <-> A e. x ) $=
+      ( vw cv wcel wsb nfv sbco2 eleq2 sbie sbbii 3bitr3i ) CDEZFZDBG
+      ZBAGODAGCBEZFZBAGCAEZFZODABOBHIPRBAORDBRDHNQCJKLOTDATDHNSCJKM
+      $.
+  $}
+
+  ${
     hbxfr.1 $e |- A = B $.
     hbxfr.2 $e |- ( y e. B -> A. x y e. B ) $.
     $( A utility lemma to transfer a bound-variable hypothesis builder into a
