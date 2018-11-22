@@ -36707,6 +36707,78 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Peano's postulates
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z $.
+    $( Zero is a natural number.  One of Peano's 5 postulates for arithmetic.
+       Proposition 7.30(1) of [TakeutiZaring] p. 42.  (Contributed by NM,
+       15-May-1994.) $)
+    peano1 $p |- (/) e. om $=
+      ( vy vx vz c0 cv wcel csuc wral wa cab cint com wi 0ex wsb df-clab ax-ia1
+      elint sbimi clelsb4 sylib sylbi mpgbir dfom3 eleqtrri ) DDAEZFZBEGUFFBUFH
+      ZIZAJZKZLDUKFCEZUJFZDULFZMCCDUJNRUMUIACOZUNUICAPUOUGACOUNUIUGACUGUHQSCADT
+      UAUBUCABUDUE $.
+  $}
+
+  ${
+    $d x y z A $.
+    $( The successor of any natural number is a natural number.  One of Peano's
+       5 postulates for arithmetic.  Proposition 7.30(2) of [TakeutiZaring]
+       p. 42.  (Contributed by NM, 3-Sep-2003.) $)
+    peano2 $p |- ( A e. om -> suc A e. om ) $=
+      ( vy vx vz cvv wcel com csuc cv wa wi wb imbi12d adantl wsb wal sylib nfv
+      wral nfan elex c0 cab cint ax-ia1 wceq eleq1 eleq1d df-clab ax-ia2 df-ral
+      suceq sbimi sbim elsb4 clelsb4 imbi12i bitri sbalv sylbi nfra1 nfsab nfvd
+      19.21bi nfcvd vtocldf ralrimiva ralim elintg sucexg syl syl5ibr mpd dfom3
+      eleq2i 3imtr4g mpcom ) AEFZAGFZAHZGFZAGUAVRAUBBIZFZCIZHZWBFZCWBSZJZBUCZUD
+      ZFZVTWJFZVSWAVRADIZFZVTWMFZKZDWISZWKWLKZVRWPDWIVRWMWIFZJZWDWMFZWEWMFZKZWP
+      CAEVRWSUEWDAUFZXCWPLWTXDXAWNXBWOWDAWMUGXDWEVTWMWDAULUHMNWSXCVRWSXCCWSWHBD
+      OZXCCPZWHDBUIXEWDWBFZWFKZCPZBDOXFWHXIBDWHWGXIWCWGUJWFCWBUKQUMXHXCBDCXHBDO
+      XGBDOZWFBDOZKXCXGWFBDUNXJXAXKXBDBCUODBWEUPUQURUSQUTVDNVRWSCVRCRWHCBDWCWGC
+      WCCRWFCWBVATVBTWTCAVEWTWPCVCVFVGWQWRVRWNDWISZWODWISZKWNWODWIVHVRWKXLWLXMD
+      AWIEVIVRVTEFWLXMLAEVJDVTWIEVIVKMVLVMGWJABCVNZVOGWJVTXNVOVPVQ $.
+  $}
+
+  $( The successor of any natural number is not zero.  One of Peano's 5
+     postulates for arithmetic.  Proposition 7.30(3) of [TakeutiZaring] p. 42.
+     (Contributed by NM, 3-Sep-2003.) $)
+  peano3 $p |- ( A e. om -> suc A =/= (/) ) $=
+    ( com wcel cvv csuc c0 wne elex nsuceq0g syl ) ABCADCAEFGABHAIJ $.
+
+  $( Two natural numbers are equal iff their successors are equal, i.e. the
+     successor function is one-to-one.  One of Peano's 5 postulates for
+     arithmetic.  Proposition 7.30(4) of [TakeutiZaring] p. 43.  (Contributed
+     by NM, 3-Sep-2003.) $)
+  peano4 $p |- ( ( A e. om /\ B e. om ) -> ( suc A = suc B <-> A = B ) ) $=
+    ( com suc11g ) ABCCD $.
+
+  ${
+    $d x y A $.
+    $( The induction postulate: any class containing zero and closed under the
+       successor operation contains all natural numbers.  One of Peano's 5
+       postulates for arithmetic.  Proposition 7.30(5) of [TakeutiZaring]
+       p. 43.  The more traditional statement of mathematical induction as a
+       theorem schema, with a basis and an induction hypothesis, is derived
+       from this theorem as theorem ~ findes .  (Contributed by NM,
+       18-Feb-2004.) $)
+    peano5 $p |- ( ( (/) e. A /\
+                 A. x e. om ( x e. A -> suc x e. A ) ) -> om C_ A ) $=
+      ( vy c0 wcel cv csuc wi com wral wa cin wss cint elin df-ral sylibr eleq2
+      cab wal dfom3 peano1 mpbiran biimpri peano2 adantr a1i jcad alimi imbi12i
+      pm3.31 albii 3imtr4i anim12i omex wceq raleqbi1dv anbi12d elab intss1 syl
+      inex1 syl5eqss ssid biantrur ssin bitri ) DBEZAFZBEZVIGZBEZHZAIJZKZIIBLZM
+      ZIBMZVOIDCFZEZVKVSEZAVSJZKZCSZNZVPCAUAVOVPWDEZWEVPMVODVPEZVKVPEZAVPJZKZWF
+      VHWGVNWIWGVHWGDIEVHUBDIBOUCUDVNVIVPEZWHHZATZWIVIIEZVMHZATWNVJKZVKIEZVLKZH
+      ZATVNWMWOWSAWOWPWQVLWPWQHWOWNWQVJVIUEUFUGWNVJVLUKUHUIVMAIPWLWSAWKWPWHWRVI
+      IBOVKIBOUJULUMWHAVPPQUNWCWJCVPIBUOVBVSVPUPVTWGWBWIVSVPDRWAWHAVSVPVSVPVKRU
+      QURUSQVPWDUTVAVCVRIIMZVRKVQWTVRIVDVEIIBVFVGQ $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
