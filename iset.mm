@@ -36686,6 +36686,16 @@ $)
       ( df-iom ) ABC $.
   $}
 
+  ${
+    $d x y $.
+    $( The existence of omega (the class of natural numbers).  Axiom 7 of
+       [TakeutiZaring] p. 43.  (Contributed by NM, 6-Aug-1994.) $)
+    omex $p |- om e. _V $=
+      ( vy vx com cvv wcel c0 csuc wral cab cint wex zfinf2 intexabim
+      cv wa ax-mp dfom3 eleq1i mpbir ) CDEFANZEBNGTEBTHOZAIJZDEZUAAKU
+      CABLUAAMPCUBDABQRS $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
