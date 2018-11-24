@@ -4,6 +4,9 @@
 # This script is released as open source software under the MIT license.
 # SPDX-License-Identifier: MIT
 
+# Compute dates of .mm file specified in $1 (default set.mm)
+mmfile="${1:-set.mm}"
+
 # Requires GNU extension for grep (-o)
 # We use the grep "-E" option for extended regular expressions.
 
@@ -29,7 +32,7 @@ BEGIN {
 # Extract the "Contributed by" dates, convert them to ISO 8601 date format,
 # sort and count how many occur on each date, and finally convert
 # them to cumulative values.
-tr '\n' ' ' < set.mm | grep -Eo '\(Contributed by [^)]*\)' | \
+tr '\n' ' ' < "$mmfile" | grep -Eo '\(Contributed by [^)]*\)' | \
   grep -Eo '[1-9][0-9]?-[A-Z][a-z][a-z]-[0-9]{4}' |
   sed -Ee 's/([0-9]*)-Jan-([0-9]{4})/\2-01-\1/' \
       -e 's/([0-9]*)-Feb-([0-9]{4})/\2-02-\1/' \
