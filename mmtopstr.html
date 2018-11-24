@@ -69,14 +69,13 @@ builders</FONT></B>&nbsp;&nbsp;&nbsp;Maybe put overview of extensible
 structure builders here?
 
 <P><B><FONT COLOR="#006633">Topological
-hierarchy</FONT></B>&nbsp;&nbsp;&nbsp;Put description of the
-picture and embedded image or pdf link here.
+hierarchy</FONT></B>&nbsp;&nbsp;&nbsp;The following picture attempts to show the relationships between the main topological objects formalized in set.mm:
 
-
+<!-- Note - To edit or update the figure, please use "https://www.draw.io/". You can load the SVG file directly there. -->
 <P>     <A NAME="figure1"></A>
-<TABLE ALIGN=CENTER WIDTH="10%"><TR><TD>
- <IMG BORDER=0 SRC="_tophierarchy.gif"
-WIDTH=592 HEIGHT=369
+<TABLE ALIGN=CENTER><TR><TD>
+ <IMG BORDER=0 SRC="_tophierarchy.svg"
+WIDTH="100%"
 ALT="Relationships between topological structures. Credit: T. Arnoux
 2018. Public domain."
 TITLE="Relationships between topological structures.
@@ -85,13 +84,26 @@ ALIGN=RIGHT STYLE="margin-bottom:0px">
 </TD></TR>
 
 <TR><TD ALIGN=CENTER><FONT SIZE="-1"><B>Figure 1.</B> Topological
-hierarchy.  Some additional description.</FONT>
+hierarchy in set.mm.</FONT>
 </TABLE>
 
-
-
-<P><B><FONT COLOR="#006633">Notes</FONT></B>&nbsp;&nbsp;&nbsp;Maybe
-add some additional notes if any.
+<P><B><FONT COLOR="#006633">Notes</FONT></B>
+In this figure, set.mm's tokens are written in fixed width, followed by the mathematical name in italics.
+Extensible structures are represented as rectangles, and classes of objects as circles. The same background
+color is used for classes of the same family.
+<UL>
+	<LI>Bold arrows represent inclusion relationships.</LI>
+	<LI>Blue arrows with names represent way to derive one object from another. For example:
+	<P><CENTER><IMG BORDER=0 STYLE="margin:10px" SRC="_relexample.svg"></CENTER>
+	means that one can derive a topological space from a topological basis using topGen.
+	In set.mm, this is written as:
+	<pre>|- ( B e. TopBases -> ( topGen ` B ) e. Top )</pre>
+	(See <A HREF="tgcl.html">~tgcl</A>)</LI>
+</UL>
+There are often two ways to extract a component from a structure, either by directly using the component
+(TopSet, UnifSet), or by restricting it to the base class (TopOpen, UnifSt). Both are listed in the figure, with
+the direct component in italics, since it is usually less practical.
+<P>Dotted line arrows show how some additional relations and the theorems that provide them.
 
 
 <HR NOSHADE SIZE=1>
