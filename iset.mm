@@ -35626,7 +35626,7 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-             ZF Set Theory - add the Axiom of Union
+             IZF Set Theory - add the Axiom of Union
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -36260,6 +36260,16 @@ $)
     ABDZAGBHZPQRIOABJKORQIPABCLMN $.
 
   ${
+    $d x A $.
+    $( The successor of an ordinal number is the smallest larger ordinal
+       number.  (Contributed by NM, 28-Nov-2003.) $)
+    onsucmin $p |- ( A e. On -> suc A = |^| { x e. On | A e. x } ) $=
+      ( con0 wcel cv crab cint csuc wss word wb ordelsuc sylan2 rabbidva inteqd
+      eloni wceq sucelon intmin sylbi eqtr2d ) BCDZBAEZDZACFZGBHZUCIZACFZGZUFUB
+      UEUHUBUDUGACUCCDUBUCJUDUGKUCPBUCCLMNOUBUFCDUIUFQBRAUFCSTUA $.
+  $}
+
+  ${
     $d x y A $.
     $( The class of all ordinal numbers is its own union.  Exercise 11 of
        [TakeutiZaring] p. 40.  (Contributed by NM, 12-Nov-2003.) $)
@@ -36324,33 +36334,33 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-          IZF Set Theory - add the Axiom of Membership-Induction
+          IZF Set Theory - add the Axiom of Set Induction
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-          Introduce the Axiom of Membership-Induction
+          Introduce the Axiom of Set Induction
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
   ${
     $d y a $.  $d ph y $.
-    $( Axiom of ` e. `-Induction.  An axiom of Intuitionistic Zermelo-Fraenkel
-       set theory.  Axiom 9 of [Crosilla] p.  "Axioms of CZF and IZF".  This
-       replaces the Axiom of Foundation (also called Regularity) from
-       Zermelo-Fraenkel set theory.  (Contributed by Jim Kingdon,
-       19-Oct-2018.) $)
-    ax-elind $a |- ( A. a ( A. y e. a [ y / a ] ph -> ph ) -> A. a ph ) $.
+    $( Axiom of ` e. `-Induction (also known as set induction).  An axiom of
+       Intuitionistic Zermelo-Fraenkel set theory.  Axiom 9 of [Crosilla] p.
+       "Axioms of CZF and IZF".  This replaces the Axiom of Foundation (also
+       called Regularity) from Zermelo-Fraenkel set theory.  (Contributed by
+       Jim Kingdon, 19-Oct-2018.) $)
+    ax-setind $a |- ( A. a ( A. y e. a [ y / a ] ph -> ph ) -> A. a ph ) $.
   $}
 
   ${
     $d x y S $.
     $( ` e. `-Induction in terms of membership in a class.  (Contributed by
        Mario Carneiro and Jim Kingdon, 22-Oct-2018.) $)
-    elindel $p |- ( A. x ( A. y ( y e. x -> y e. S ) -> x e. S ) -> S = _V ) $=
+    setindel $p |- ( A. x ( A. y ( y e. x -> y e. S ) -> x e. S ) -> S = _V ) $=
       ( cv wcel wi wal cvv wceq wral clelsb3 ralbii df-ral bitri imbi1i
-      wsb albii ax-elind sylbir eqv sylibr ) BDZADZEUBCEZFBGZUCCEZFZAGZ
+      wsb albii ax-setind sylbir eqv sylibr ) BDZADZEUBCEZFBGZUCCEZFZAGZ
       UFAGZCHIUHUFABPZBUCJZUFFZAGUIULUGAUKUEUFUKUDBUCJUEUJUDBUCBACKLUDB
       UCMNOQUFBARSACTUA $.
   $}
@@ -36360,7 +36370,7 @@ $)
     $( Set (epsilon) induction.  Theorem 5.22 of [TakeutiZaring] p. 21.
        (Contributed by NM, 17-Sep-2003.) $)
     setind $p |- ( A. x ( x C_ A -> x e. A ) -> A = _V ) $=
-      ( vy cv wss wcel wal cvv wceq dfss2 imbi1i albii elindel sylbi
+      ( vy cv wss wcel wal cvv wceq dfss2 imbi1i albii setindel sylbi
       wi ) ADZBEZPBFZOZAGCDZPFTBFOCGZROZAGBHISUBAQUARCPBJKLACBMN $.
   $}
 
@@ -36392,7 +36402,7 @@ $)
       ( vy con0 wss cv wcel wi wral wa wal df-ral albii bitri imbi1i spi imim1i
       dfss2 impexp wsb wceq imdi imbi2i 19.21v bitr4i ax-ia1 wtr tron dftr2 jca
       mpbi bi2.04 3imtr3i alimi sylbi adantl sbim clelsb3 imbi12i ralbii sylbir
-      ax-elind sylibr syl eqss biimpri syldan ) BDEZAFZBEZVIBGZHZADIZDBEZBDUAZV
+      ax-setind sylibr syl eqss biimpri syldan ) BDEZAFZBEZVIBGZHZADIZDBEZBDUAZV
       HVMJCFZVIGZVPDGZVPBGZHZHZCKZVIDGZVKHZHZAKZVNVMWFVHVMWCVQVSHZHZCKZWDHZAKZW
       FVMWCVJHZWDHZAKZWKVMWCVLHZAKWNVLADLWOWMAWCVJVKUBMNWMWJAWLWIWDWLWCWGCKZHWI
       VJWPWCCVIBRUCWCWGCUDUEOMNWJWEAWBWIWDWAWHCVQVRJZVSHVQWCJZVSHZWAWHWRWQVSWRV
@@ -36493,7 +36503,7 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-             ZF Set Theory - add the Axiom of Infinity
+             IZF Set Theory - add the Axiom of Infinity
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
