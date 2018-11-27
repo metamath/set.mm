@@ -8,7 +8,7 @@
 
 <META HTTP-EQUIV="Content-Type"
  CONTENT="text/html; charset=iso-8859-1">
- <TITLE>Topological Structures - Metamath Proof Explorer</TITLE>
+ <TITLE>Topological and Algebraic Structures - Metamath Proof Explorer</TITLE>
 <LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
 
 <STYLE TYPE="text/css">
@@ -37,7 +37,7 @@ img { margin-bottom: -4px }
     </TD>
     <TD ALIGN=CENTER VALIGN=TOP><FONT SIZE="+3"
       COLOR="#006633"><B>Metamath Proof Explorer</B></FONT><BR>
-       <FONT SIZE="+2" COLOR="#006633"><B>Topological Structures</B>
+       <FONT SIZE="+2" COLOR="#006633"><B>Topological and Algebraic Structures</B>
         </FONT>
     </TD>
     <TD NOWRAP ALIGN=RIGHT VALIGN=TOP> &nbsp;
@@ -50,7 +50,7 @@ img { margin-bottom: -4px }
       <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
         &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
       &nbsp;<A HREF="mmset.html">MPE Home</A>&nbsp; &gt;
-      &nbsp;Topological Structures
+      &nbsp;Topological and Algebraic Structures
       </FONT>
     </TD>
   </TR>
@@ -63,24 +63,49 @@ Variable Conditions</B></FONT></CENTER>
 
 <HR NOSHADE SIZE=1>
 
+<B><FONT COLOR="#006633">Contents of this
+page</FONT></B>&nbsp;&nbsp;&nbsp;
+On this page we present a topological hierarchy
+(showing the relationships between the main topological objects
+formalized in set.mm) and an
+algebraic hierarchy (showing the relationships between the
+main algebraic objects formalized in set.mm).
+For these figures to make sense,
+we first describe extensible structure builders (since they are widely
+used) and notes on the figures (especially the notation used in the figures).
 
-<B><FONT COLOR="#006633">Extensible structure
-builders</FONT></B>&nbsp;&nbsp;&nbsp;Maybe put overview of extensible
-structure builders here?
-
+<P><B><FONT COLOR="#006633">Extensible structure
+builders</FONT></B>&nbsp;&nbsp;&nbsp;
+An "extensible structure" is a function (set of ordered pairs) on a finite
+(and not necessarily sequential) subset of the natural numbers,
+used to define a specific
+group, ring, poset, etc.  The function's argument is the index of a structure
+component (such as 1 for the base set of a group), and its value is the
+component (such as the base set).  A group will have at least two components
+(base set and operation), although it can be further specialized by adding
+other components such as a multiplicative operation for rings (and still
+remain a group per our definition).  Thus, every ring is also a group.  This
+allows theorems from more general structures (groups) to be reused for more
+specialized structures (rings) without having to reprove them.
 
 <P><B><FONT COLOR="#006633">Notes</FONT></B>
 In the following figures, set.mm's tokens are written in <CODE>fixed width</CODE>, followed by the mathematical name in <I>italics</I>.
 Extensible structures are represented as rectangles, and classes of objects as circles. The same background
 color is used for classes of the same family.
 <UL>
-	<LI>Bold arrows represent inclusion relationships.</LI>
+	<LI>Bold arrows represent inclusion relationships.
+            That is, if <TT>PreHil</TT> has a bold arrow pointing
+            to <TT>LVec</TT>, then <TT>PreHil</TT> is a subset of <TT>LVec</TT>.
+            In set.mm, this is written as:
+            <TT>|- ( W e. PreHil -> W e. LVec )</TT>.
+	    (See <A HREF="phllvec.html">phllvec</A>.)</LI>
 	<LI>Blue arrows with names represent way to derive one object from another. For example:
 	<P><CENTER><IMG BORDER=0 STYLE="margin:10px" SRC="_relexample.svg" ALT="Legend/Example"></CENTER>
-	means that one can derive a topological space from a topological basis using topGen.
+	means that one can derive a topological space (in <TT>Top</TT>)
+        from a topological base (in <TT>TopBases</TT>) using <TT>topGen</TT>.
 	In set.mm, this is written as:
 	<pre>|- ( B e. TopBases -> ( topGen ` B ) e. Top )</pre>
-	(See <A HREF="tgcl.html">~tgcl</A>)</LI>
+	(See <A HREF="tgcl.html">~tgcl</A>.)</LI>
 </UL>
 There are often two ways to extract a component from a structure, either by directly using the component
 (TopSet, UnifSet), or by restricting it to the base class (TopOpen, UnifSt). Both are listed in the figure, with
