@@ -36384,6 +36384,23 @@ $)
       IJBAAKBALM $.
   $}
 
+  ${
+    $d A x y $.
+    $( No class is a member of itself.  Exercise 6 of [TakeutiZaring] p. 22.
+       (Contributed by NM, 7-Aug-1994.)  (Proof rewritten by Mario Carneiro and
+       Jim Kingdon, 26-Nov-2018.) $)
+    elirr $p |- -. A e. A $=
+      ( vx vy wcel cvv csn cdif cv wal wsb wral wi wn neldifsnd eleq1 spcgv mpd
+      wceq sylibr albii wa w3a simp1 imbi12d pm2.43b 3ad2ant2 wb eleq2 3ad2ant3
+      imbi1d mpbid 3expia mtod vex eldif mpbiran elsn xchbinx ex alrimiv df-ral
+      clelsb3 imbi2i bitri imbi1i ax-setind syl pm2.65i ) AADZAEAFZGZDZVIBHZVKD
+      ZBIZVLVIVNBCJZCVMKZVNLZBIZVOVICHZVMDZVTVKDZLZCIZVNLZBIVSVIWEBVIWDVNVIWDUA
+      ZVMARZMVNWFWGVLWFAENVIWDWGVLVIWDWGUBZVIVLVIWDWGUCWHAVMDZVLLZVIVLLZWDVIWJW
+      GWDWIVLWCWJCAVMVTARWAWIWBVLVTAVMOVTAVKOUDPUEUFWGVIWJWKUGWDWGWIVIVLVMAAUHU
+      JUIUKQULUMVNVMVJDZWGVNVMEDWLMBUNVMEVJUOUPBAUQURSUSUTVRWEBVQWDVNVQWAVPLZCI
+      WDVPCVMVAWMWCCVPWBWACBVKVBVCTVDVETSVNCBVFVGVNVLBAAVMAVKOPQVIAENVH $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Transfinite induction
