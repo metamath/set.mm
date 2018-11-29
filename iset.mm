@@ -9096,11 +9096,8 @@ $)
   ${
     ecased.1 $e |- ( ph -> -. ch ) $.
     ecased.2 $e |- ( ph -> ( ps \/ ch ) ) $.
-    $( Elimination by cases based on a disjunction (rather than an implication)
-       does hold intuitionistically.  However, it is more of a curiosity than
-       something useful in proofs, because in intuitionistic logic it will be
-       just as hard to prove ` ph \/ ps ` as it would be to prove one of ` ph `
-       or ` ps ` .  (Contributed by Jim Kingdon, 9-Dec-2017.) $)
+    $( Deduction form of disjunctive syllogism.  (Contributed by Jim Kingdon,
+       9-Dec-2017.) $)
     ecased $p |- ( ph -> ps ) $=
       ( wn wo wa jca orel2 imp syl ) ACFZBCGZHBAMNDEI
       MNBCBJKL $.
