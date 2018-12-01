@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Nov-2018
+$( iset.mm - Version of 1-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -5364,6 +5364,12 @@ $)
   ioran $p |- ( -. ( ph \/ ps ) <-> ( -. ph /\ -. ps ) ) $=
     ( wo wn wa pm2.45 pm2.46 jca simpl con2i simpr jaoi impbii ) ABCZDZADZBDZEZ
     OPQABFABGHNRARDBRAPQIJRBPQKJLJM $.
+
+  $( Negated conjunction in terms of disjunction (one direction of De Morgan's
+     law).  The biconditional holds for decidable propositions as seen at
+     ~ ianordc .  (Contributed by Jim Kingdon, 1-Dec-2018.) $)
+  ianorr $p |- ( ( -. ph \/ -. ps ) -> -. ( ph /\ ps ) ) $=
+    ( wn wa ax-ia1 con3i ax-ia2 jaoi ) ACABDZCBCIAABEFIBABGFH $.
 
   $( Theorem *3.14 of [WhiteheadRussell] p. 111.  The converse holds for
      decidable propositions, as seen at ~ pm3.13dc .  (Contributed by NM,
