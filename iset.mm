@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Nov-2018
+$( iset.mm - Version of 1-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -5365,6 +5365,12 @@ $)
     ( wo wn wa pm2.45 pm2.46 jca simpl con2i simpr jaoi impbii ) ABCZDZADZBDZEZ
     OPQABFABGHNRARDBRAPQIJRBPQKJLJM $.
 
+  $( Negated conjunction in terms of disjunction (one direction of De Morgan's
+     law).  The biconditional holds for decidable propositions as seen at
+     ~ ianordc .  (Contributed by Jim Kingdon, 1-Dec-2018.) $)
+  ianorr $p |- ( ( -. ph \/ -. ps ) -> -. ( ph /\ ps ) ) $=
+    ( wn wa ax-ia1 con3i ax-ia2 jaoi ) ACABDZCBCIAABEFIBABGFH $.
+
   $( Theorem *3.14 of [WhiteheadRussell] p. 111.  The converse holds for
      decidable propositions, as seen at ~ pm3.13dc .  (Contributed by NM,
      3-Jan-2005.)  (Revised by Mario Carneiro, 31-Jan-2015.) $)
@@ -9096,11 +9102,8 @@ $)
   ${
     ecased.1 $e |- ( ph -> -. ch ) $.
     ecased.2 $e |- ( ph -> ( ps \/ ch ) ) $.
-    $( Elimination by cases based on a disjunction (rather than an implication)
-       does hold intuitionistically.  However, it is more of a curiosity than
-       something useful in proofs, because in intuitionistic logic it will be
-       just as hard to prove ` ph \/ ps ` as it would be to prove one of ` ph `
-       or ` ps ` .  (Contributed by Jim Kingdon, 9-Dec-2017.) $)
+    $( Deduction form of disjunctive syllogism.  (Contributed by Jim Kingdon,
+       9-Dec-2017.) $)
     ecased $p |- ( ph -> ps ) $=
       ( wn wo wa jca orel2 imp syl ) ACFZBCGZHBAMNDEI
       MNBCBJKL $.
@@ -36402,6 +36405,41 @@ $)
   $}
 
   ${
+    $d x y z $.
+    $( The membership relation is irreflexive: no set is a member of itself.
+       Theorem 105 of [Suppes] p. 54.  (Contributed by NM, 19-Aug-1993.) $)
+    elirrv $p |- -. x e. x $=
+      ( cv elirr ) ABC $.
+  $}
+
+  ${
+    $d A x $.
+    $( A class is equal to its successor iff it is a proper class (assuming the
+       Axiom of Regularity).  (Contributed by NM, 9-Jul-2004.) $)
+    sucprcreg $p |- ( -. A e. _V <-> suc A = A ) $=
+      ( vx cvv wcel wn csuc sucprc cv wi wal elirr nfv eleq1 ceqsalg mtbiri csn
+      wceq elsn wss syl5bir wo olc cun elun wb df-suc eqeq1i sseq1 sylbi mpbiri
+      ssid sseld syl5 alrimiv nsyl3 impbii ) ACDZEAFZAQZAGUQBHZAQZUTADZIZBJZUSU
+      QVDAADZAKVBVEBACVEBLUTAAMNOUSVCBVAUTAPZDZUSVBBARVGVBVGUAZUSVBVGVBUBVHUTAV
+      FUCZDUSVBUTAVFUDUSVIAUTUSVIASZAASZAUKUSVIAQVJVKUEURVIAAUFUGVIAAUHUIUJULTU
+      MTUNUOUP $.
+  $}
+
+  $( The Russell class is equal to the universe ` _V ` .  Exercise 5 of
+     [TakeutiZaring] p. 22.  (Contributed by Alan Sare, 4-Oct-2008.) $)
+  ruv $p |- { x | x e/ x } = _V $=
+    ( cvv weq cab cv wnel df-v equid elirrv nelir 2th abbii eqtr2i ) BAACZADAEZ
+    OFZADAGNPANPAHOOAIJKLM $.
+
+  $( Alternate proof of Russell's Paradox ~ ru , simplified using (indirectly)
+     the Axiom of Regularity ~ ax-setind .  (Contributed by Alan Sare,
+     4-Oct-2008.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  ruALT $p |- { x | x e/ x } e/ _V $=
+    ( cv wnel cab cvv wcel wn vprc df-nel mpbir wceq wb ruv neleq1 ax-mp ) ABZP
+    CADZECZEECZSEEFGHEEIJQEKRSLAMQEENOJ $.
+
+  ${
     $d A x y $.  $d B x y $.
     $( No class has 2-cycle membership loops.  Theorem 7X(b) of [Enderton]
        p. 206.  (Contributed by NM, 16-Oct-1996.)  (Proof rewritten by Mario
@@ -36423,6 +36461,50 @@ $)
       FZWHGWENVGWHABYEVHVIVJVKVLWMWTCWLWSWIWLWPWKJZDIWSWKDWHVMYFWRDWKWQWPDCWFVN
       VPVQVRVSVQVJWIDCVTSWBWJWGJWCWIWGCABWHAWFPQRTXSWA $.
   $}
+
+  ${
+    preleq.1 $e |- A e. _V $.
+    preleq.2 $e |- B e. _V $.
+    preleq.3 $e |- C e. _V $.
+    preleq.4 $e |- D e. _V $.
+    $( Equality of two unordered pairs when one member of each pair contains
+       the other member.  (Contributed by NM, 16-Oct-1996.) $)
+    preleq $p |- ( ( ( A e. B /\ C e. D ) /\ { A , B } = { C , D } ) ->
+                   ( A = C /\ B = D ) ) $=
+      ( wcel wa cpr wceq wn en2lp eleq12 anbi1d mtbiri con2i adantr wo preq12b
+      biimpi adantl ecased ) ABIZCDIZJZABKCDKLZJACLBDLJZADLBCLJZUGUJMUHUJUGUJUG
+      DCIZUFJDCNUJUEUKUFADBCOPQRSUHUIUJTZUGUHULABCDEFGHUAUBUCUD $.
+
+    $( Theorem for alternate representation of ordered pairs, requiring the
+       Axiom of Set Induction ~ ax-setind (via the ~ preleq step).  See ~ df-op
+       for a description of other ordered pair representations.  Exercise 34 of
+       [Enderton] p. 207.  (Contributed by NM, 16-Oct-1996.) $)
+    opthreg $p |- ( { A , { A , B } } = { C , { C , D } } <->
+                   ( A = C /\ B = D ) ) $=
+      ( cpr wceq wa prid1 cvv prexg mp2an preleq mpanl12 preq1 eqeq1d
+      wcel preqr2 syl6bi imdistani adantr preq12 preq2d eqtrd impbii
+      syl ) AABIZIZCCDIZIZJZACJZBDJZKZUNUOUJULJZKZUQAUJTCULTUNUSABELC
+      DGLAUJCULEAMTBMTUJMTEFABNOGCMTDMTULMTGHCDNOPQUOURUPUOURCBIZULJU
+      PUOUJUTULACBRSBDCFHUAUBUCUIUQUKCUJIZUMUOUKVAJUPACUJRUDUQUJULCAB
+      CDUEUFUGUH $.
+  $}
+
+  $( The successor operation behaves like a one-to-one function (assuming the
+     Axiom of Set Induction).  Similar to Exercise 35 of [Enderton] p. 208 and
+     its converse.  (Contributed by NM, 25-Oct-2003.) $)
+  suc11g $p |- ( ( A e. V /\ B e. W ) -> ( suc A = suc B <-> A = B ) ) $=
+    ( wcel wa csuc w3a wn en2lp sucidg eleq2 syl5ibrcom elsucg sylibd
+    wceq wo imp 3adant1 syl5ibcom jca eqcom orbi2i anbi1i sylib ordir
+    3adant2 sylibr ord mpi 3expia suceq impbid1 ) ACEZBDEZFAGZBGZPZAB
+    PZUNUOURUSUNUOURHZBAEZABEZFZIUSBAJUTVCUSUTVAUSQZVBUSQZFZVCUSQUTVA
+    BAPZQZVEFVFUTVHVEUOURVHUNUOURVHUOURBUPEZVHUOVIURBUQEBDKUPUQBLMBAD
+    NORSUNURVEUOUNURVEUNURAUQEZVEUNAUPEURVJACKUPUQALTABCNORUGUAVHVDVE
+    VGUSVABAUBUCUDUEVAVBUSUFUHUIUJUKABULUM $.
+
+  $( The successor operation behaves like a one-to-one function.  Compare
+     Exercise 16 of [Enderton] p. 194.  (Contributed by NM, 3-Sep-2003.) $)
+  suc11 $p |- ( ( A e. On /\ B e. On ) -> ( suc A = suc B <-> A = B ) ) $=
+    ( con0 suc11g ) ABCCD $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
