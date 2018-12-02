@@ -17978,6 +17978,16 @@ $)
   $}
 
   ${
+    $d y A $.  $d w y $.  $d w A $.  $d w x $.
+    $( Substitution applied to an atomic wff (class version of ~ elsb4 ).
+       (Contributed by Jim Kingdon, 22-Nov-2018.) $)
+    clelsb4 $p |- ( [ x / y ] A e. y <-> A e. x ) $=
+      ( vw cv wcel wsb nfv sbco2 eleq2 sbie sbbii 3bitr3i ) CDEZFZDBG
+      ZBAGODAGCBEZFZBAGCAEZFZODABOBHIPRBAORDBRDHNQCJKLOTDATDHNSCJKM
+      $.
+  $}
+
+  ${
     hbxfr.1 $e |- A = B $.
     hbxfr.2 $e |- ( y e. B -> A. x y e. B ) $.
     $( A utility lemma to transfer a bound-variable hypothesis builder into a
@@ -36654,6 +36664,248 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        The natural numbers (i.e. finite ordinals)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new symbol. $)
+  $c om $. $( Greek letter omega $)
+
+  $( Extend class notation to include the class of natural numbers. $)
+  com $a class om $.
+
+  ${
+    $d x y z $.
+    $( Define the class of natural numbers as the smallest inductive set, which
+       is valid provided we assume the Axiom of Infinity.  Definition 6.3 of
+       [Eisenberg] p. 82.
+
+       _Note_: the natural numbers ` om ` are a subset of the ordinal numbers
+       ~ df-on .  Later, when we define complex numbers, we will be able to
+       also define a subset of the complex numbers with analogous properties
+       and operations, but they will be different sets.  (Contributed by NM,
+       6-Aug-1994.) $)
+    df-iom $a |- om = |^| { x | ( (/) e. x /\ A. y e. x suc y e. x ) } $.
+  $}
+
+  ${
+    $d x y z $.
+    $( Another name for ~ df-iom .  (Contributed by NM, 6-Aug-1994.) $)
+    dfom3 $p |- om = |^| { x | ( (/) e. x /\ A. y e. x suc y e. x ) } $=
+      ( df-iom ) ABC $.
+  $}
+
+  ${
+    $d x y $.
+    $( The existence of omega (the class of natural numbers).  Axiom 7 of
+       [TakeutiZaring] p. 43.  (Contributed by NM, 6-Aug-1994.) $)
+    omex $p |- om e. _V $=
+      ( vy vx com cvv wcel c0 csuc wral cab cint wex zfinf2 intexabim
+      cv wa ax-mp dfom3 eleq1i mpbir ) CDEFANZEBNGTEBTHOZAIJZDEZUAAKU
+      CABLUAAMPCUBDABQRS $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Peano's postulates
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z $.
+    $( Zero is a natural number.  One of Peano's 5 postulates for arithmetic.
+       Proposition 7.30(1) of [TakeutiZaring] p. 42.  (Contributed by NM,
+       15-May-1994.) $)
+    peano1 $p |- (/) e. om $=
+      ( vy vx vz c0 cv wcel csuc wral wa cab cint com wi 0ex wsb df-clab ax-ia1
+      elint sbimi clelsb4 sylib sylbi mpgbir dfom3 eleqtrri ) DDAEZFZBEGUFFBUFH
+      ZIZAJZKZLDUKFCEZUJFZDULFZMCCDUJNRUMUIACOZUNUICAPUOUGACOUNUIUGACUGUHQSCADT
+      UAUBUCABUDUE $.
+  $}
+
+  ${
+    $d x y z A $.
+    $( The successor of any natural number is a natural number.  One of Peano's
+       5 postulates for arithmetic.  Proposition 7.30(2) of [TakeutiZaring]
+       p. 42.  (Contributed by NM, 3-Sep-2003.) $)
+    peano2 $p |- ( A e. om -> suc A e. om ) $=
+      ( vy vx vz cvv wcel com csuc cv wa wi wb imbi12d adantl wsb wal sylib nfv
+      wral nfan elex c0 cab cint ax-ia1 wceq eleq1 eleq1d df-clab ax-ia2 df-ral
+      suceq sbimi sbim elsb4 clelsb4 imbi12i bitri sbalv sylbi nfra1 nfsab nfvd
+      19.21bi nfcvd vtocldf ralrimiva ralim elintg sucexg syl syl5ibr mpd dfom3
+      eleq2i 3imtr4g mpcom ) AEFZAGFZAHZGFZAGUAVRAUBBIZFZCIZHZWBFZCWBSZJZBUCZUD
+      ZFZVTWJFZVSWAVRADIZFZVTWMFZKZDWISZWKWLKZVRWPDWIVRWMWIFZJZWDWMFZWEWMFZKZWP
+      CAEVRWSUEWDAUFZXCWPLWTXDXAWNXBWOWDAWMUGXDWEVTWMWDAULUHMNWSXCVRWSXCCWSWHBD
+      OZXCCPZWHDBUIXEWDWBFZWFKZCPZBDOXFWHXIBDWHWGXIWCWGUJWFCWBUKQUMXHXCBDCXHBDO
+      XGBDOZWFBDOZKXCXGWFBDUNXJXAXKXBDBCUODBWEUPUQURUSQUTVDNVRWSCVRCRWHCBDWCWGC
+      WCCRWFCWBVATVBTWTCAVEWTWPCVCVFVGWQWRVRWNDWISZWODWISZKWNWODWIVHVRWKXLWLXMD
+      AWIEVIVRVTEFWLXMLAEVJDVTWIEVIVKMVLVMGWJABCVNZVOGWJVTXNVOVPVQ $.
+  $}
+
+  $( The successor of any natural number is not zero.  One of Peano's 5
+     postulates for arithmetic.  Proposition 7.30(3) of [TakeutiZaring] p. 42.
+     (Contributed by NM, 3-Sep-2003.) $)
+  peano3 $p |- ( A e. om -> suc A =/= (/) ) $=
+    ( com wcel cvv csuc c0 wne elex nsuceq0g syl ) ABCADCAEFGABHAIJ $.
+
+  $( Two natural numbers are equal iff their successors are equal, i.e. the
+     successor function is one-to-one.  One of Peano's 5 postulates for
+     arithmetic.  Proposition 7.30(4) of [TakeutiZaring] p. 43.  (Contributed
+     by NM, 3-Sep-2003.) $)
+  peano4 $p |- ( ( A e. om /\ B e. om ) -> ( suc A = suc B <-> A = B ) ) $=
+    ( com suc11g ) ABCCD $.
+
+  ${
+    $d x y A $.
+    $( The induction postulate: any class containing zero and closed under the
+       successor operation contains all natural numbers.  One of Peano's 5
+       postulates for arithmetic.  Proposition 7.30(5) of [TakeutiZaring]
+       p. 43.  The more traditional statement of mathematical induction as a
+       theorem schema, with a basis and an induction hypothesis, is derived
+       from this theorem as theorem ~ findes .  (Contributed by NM,
+       18-Feb-2004.) $)
+    peano5 $p |- ( ( (/) e. A /\
+                 A. x e. om ( x e. A -> suc x e. A ) ) -> om C_ A ) $=
+      ( vy c0 wcel cv csuc wi com wral wa cin wss cint elin df-ral sylibr eleq2
+      cab wal dfom3 peano1 mpbiran biimpri peano2 adantr a1i jcad alimi imbi12i
+      pm3.31 albii 3imtr4i anim12i omex wceq raleqbi1dv anbi12d elab intss1 syl
+      inex1 syl5eqss ssid biantrur ssin bitri ) DBEZAFZBEZVIGZBEZHZAIJZKZIIBLZM
+      ZIBMZVOIDCFZEZVKVSEZAVSJZKZCSZNZVPCAUAVOVPWDEZWEVPMVODVPEZVKVPEZAVPJZKZWF
+      VHWGVNWIWGVHWGDIEVHUBDIBOUCUDVNVIVPEZWHHZATZWIVIIEZVMHZATWNVJKZVKIEZVLKZH
+      ZATVNWMWOWSAWOWPWQVLWPWQHWOWNWQVJVIUEUFUGWNVJVLUKUHUIVMAIPWLWSAWKWPWHWRVI
+      IBOVKIBOUJULUMWHAVPPQUNWCWJCVPIBUOVBVSVPUPVTWGWBWIVSVPDRWAWHAVSVPVSVPVKRU
+      QURUSQVPWDUTVAVCVRIIMZVRKVQWTVRIVDVEIIBVFVGQ $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+              Finite induction (for finite ordinals)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x A $.
+    find.1 $e |- ( A C_ om /\ (/) e. A /\ A. x e. A suc x e. A ) $.
+    $( The Principle of Finite Induction (mathematical induction).  Corollary
+       7.31 of [TakeutiZaring] p. 43.  The simpler hypothesis shown here was
+       suggested in an email from "Colin" on 1-Oct-2001.  The hypothesis states
+       that ` A ` is a set of natural numbers, zero belongs to ` A ` , and
+       given any member of ` A ` the member's successor also belongs to
+       ` A ` .  The conclusion is that every natural number is in ` A ` .
+       (Contributed by NM, 22-Feb-2004.)  (Proof shortened by Andrew Salmon,
+       27-Aug-2011.) $)
+    find $p |- A = om $=
+      ( com wss c0 wcel cv csuc wral simp1i wi wa w3a 3simpc ax-mp df-ral alral
+      wal sylbi anim2i peano5 eqssi ) BDBDEZFBGZAHZIBGZABJZCKUEUFBGUGLZADJZMZDB
+      EUEUHMZUKUDUEUHNULCUDUEUHOPUHUJUEUHUIASUJUGABQUIADRTUAPABUBPUC $.
+  $}
+
+  ${
+    $d x y $.  $d x A $.  $d x ps $.  $d x ch $.  $d x th $.  $d x ta $.
+    $d y ph $.
+    $( Substitutions. $)
+    finds.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.
+    finds.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    finds.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.
+    finds.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    finds.5 $e |- ps $.
+    $( Induction hypothesis. $)
+    finds.6 $e |- ( y e. om -> ( ch -> th ) ) $.
+    $( Principle of Finite Induction (inference schema), using implicit
+       substitutions.  The first four hypotheses establish the substitutions we
+       need.  The last two are the basis and the induction hypothesis.  Theorem
+       Schema 22 of [Suppes] p. 136.  (Contributed by NM, 14-Apr-1995.) $)
+    finds $p |- ( A e. om -> ta ) $=
+      ( com wcel cab c0 cv elab csuc wi wral wss 0ex mpbir sucex 3imtr4g peano5
+      vex rgen mp2an sseli elabg mpbid ) HOPHAFQZPEOUPHRUPPZGSZUPPZURUAZUPPZUBZ
+      GOUCOUPUDUQBMABFRUEITUFVBGOUROPCDUSVANACFURGUJZJTADFUTURVCUGKTUHUKGUPUIUL
+      UMAEFHOLUNUO $.
+  $}
+
+  ${
+    $d x y ta $.  $d x ps $.  $d x ch $.  $d x th $.  $d y ph $.
+    $( Substitutions. $)
+    finds2.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.
+    finds2.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    finds2.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.
+    $( Basis. $)
+    finds2.4 $e |- ( ta -> ps ) $.
+    $( Induction hypothesis. $)
+    finds2.5 $e |- ( y e. om -> ( ta -> ( ch -> th ) ) ) $.
+    $( Principle of Finite Induction (inference schema), using implicit
+       substitutions.  The first three hypotheses establish the substitutions
+       we need.  The last two are the basis and the induction hypothesis.
+       Theorem Schema 22 of [Suppes] p. 136.  (Contributed by NM,
+       29-Nov-2002.) $)
+    finds2 $p |- ( x e. om -> ( ta -> ph ) ) $=
+      ( cv com wcel wi c0 wceq imbi2d elab cab csuc wss 0ex mpbir a2d vex sucex
+      wral 3imtr4g rgen peano5 mp2an sseli abid sylib ) FMZNOUQEAPZFUAZOURNUSUQ
+      QUSOZGMZUSOZVAUBZUSOZPZGNUINUSUCUTEBPZKURVFFQUDUQQRABEHSTUEVEGNVANOZECPZE
+      DPZVBVDVGECDLUFURVHFVAGUGZUQVARACEISTURVIFVCVAVJUHUQVCRADEJSTUJUKGUSULUMU
+      NURFUOUP $.
+  $}
+
+  ${
+    $d x y $.  $d x ps $.  $d x ch $.  $d x th $.  $d y ph $.
+    $( Substitutions. $)
+    finds1.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.
+    finds1.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    finds1.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.
+    $( Basis. $)
+    finds1.4 $e |- ps $.
+    $( Induction hypothesis. $)
+    finds1.5 $e |- ( y e. om -> ( ch -> th ) ) $.
+    $( Principle of Finite Induction (inference schema), using implicit
+       substitutions.  The first three hypotheses establish the substitutions
+       we need.  The last two are the basis and the induction hypothesis.
+       Theorem Schema 22 of [Suppes] p. 136.  (Contributed by NM,
+       22-Mar-2006.) $)
+    finds1 $p |- ( x e. om -> ph ) $=
+      ( cv com wcel c0 wceq eqid a1i wi a1d finds2 mpi ) ELMNOOPZAOQABCDUCEFGHI
+      BUCJRFLMNCDSUCKTUAUB $.
+  $}
+
+  ${
+    $d x y z $.  $d y z ph $.
+    findes.1 $e |- [. (/) / x ]. ph $.
+    findes.2 $e |- ( x e. om -> ( ph -> [. suc x / x ]. ph ) ) $.
+    $( Finite induction with explicit substitution.  The first hypothesis is
+       the basis and the second is the induction hypothesis.  Theorem Schema 22
+       of [Suppes] p. 136.  (Contributed by Raph Levien, 9-Jul-2003.) $)
+    findes $p |- ( x e. om -> ph ) $=
+      ( vz vy wsb c0 wsbc csuc dfsbcq2 sbequ sbequ12r com wcel nfv nfim imbi12d
+      cv wi nfs1v nfsbc1v weq eleq1 sbequ12 wceq suceq dfsbcq syl chvar finds
+      wb ) ABEGABHIABFGZABFSZJZIZAEFBSZABEHKAEFBLABEUOKAEBMCUQNOZAABUQJZIZTZTUN
+      NOZUMUPTZTBFVBVCBVBBPUMUPBABFUAABUOUBQQBFUCZURVBVAVCUQUNNUDVDAUMUTUPABFUE
+      VDUSUOUFUTUPULUQUNUGABUSUOUHUIRRDUJUK $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                  The Natural Numbers (continued)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z A $.
+
+    $( A natural number is either 0 or a successor.  Similar theorems for
+       arbitrary sets or real numbers will not be provable (without the law of
+       the excluded middle), but equality of natural numbers is decidable.
+       (Contributed by NM, 27-May-1998.) $)
+    nn0suc $p |- ( A e. om -> ( A = (/) \/ E. x e. om A = suc x ) ) $=
+      ( vy vz cv c0 wceq csuc wrex wo eqeq1 rexbidv orbi12d eqid orci
+      com wcel suceq eqeq2d rspcev mpan2 olcd a1d finds ) CEZFGZUEAEZ
+      HZGZAPIZJFFGZFUHGZAPIZJDEZFGZUNUHGZAPIZJZUNHZFGZUSUHGZAPIZJZBFG
+      ZBUHGZAPIZJCDBUFUFUKUJUMUEFFKUFUIULAPUEFUHKLMUEUNGZUFUOUJUQUEUN
+      FKVGUIUPAPUEUNUHKLMUEUSGZUFUTUJVBUEUSFKVHUIVAAPUEUSUHKLMUEBGZUF
+      VDUJVFUEBFKVIUIVEAPUEBUHKLMUKUMFNOUNPQZVCURVJVBUTVJUSUSGZVBUSNV
+      AVKAUNPUGUNGUHUSUSUGUNRSTUAUBUCUD $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -37332,6 +37584,11 @@ htmldef "suc" as
     "<IMG SRC='_suc.gif' WIDTH=22 HEIGHT=19 ALT=' suc' TITLE='suc'> ";
   althtmldef "suc" as 'suc ';
   latexdef "suc" as "{\rm suc}";
+htmldef "om" as
+    "<IMG SRC='omega.gif' WIDTH=11 HEIGHT=19 ALT=' om' TITLE='om'>";
+  /*althtmldef "om" as '&omega;';*/
+  althtmldef "om" as '&#x1D714;'; /* math italic omega */
+  latexdef "om" as "\omega";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
