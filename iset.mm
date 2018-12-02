@@ -36779,6 +36779,111 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+              Finite induction (for finite ordinals)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x A $.
+    find.1 $e |- ( A C_ om /\ (/) e. A /\ A. x e. A suc x e. A ) $.
+    $( The Principle of Finite Induction (mathematical induction).  Corollary
+       7.31 of [TakeutiZaring] p. 43.  The simpler hypothesis shown here was
+       suggested in an email from "Colin" on 1-Oct-2001.  The hypothesis states
+       that ` A ` is a set of natural numbers, zero belongs to ` A ` , and
+       given any member of ` A ` the member's successor also belongs to
+       ` A ` .  The conclusion is that every natural number is in ` A ` .
+       (Contributed by NM, 22-Feb-2004.)  (Proof shortened by Andrew Salmon,
+       27-Aug-2011.) $)
+    find $p |- A = om $=
+      ( com wss c0 wcel cv csuc wral simp1i wi wa w3a 3simpc ax-mp df-ral alral
+      wal sylbi anim2i peano5 eqssi ) BDBDEZFBGZAHZIBGZABJZCKUEUFBGUGLZADJZMZDB
+      EUEUHMZUKUDUEUHNULCUDUEUHOPUHUJUEUHUIASUJUGABQUIADRTUAPABUBPUC $.
+  $}
+
+  ${
+    $d x y $.  $d x A $.  $d x ps $.  $d x ch $.  $d x th $.  $d x ta $.
+    $d y ph $.
+    $( Substitutions. $)
+    finds.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.
+    finds.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    finds.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.
+    finds.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    finds.5 $e |- ps $.
+    $( Induction hypothesis. $)
+    finds.6 $e |- ( y e. om -> ( ch -> th ) ) $.
+    $( Principle of Finite Induction (inference schema), using implicit
+       substitutions.  The first four hypotheses establish the substitutions we
+       need.  The last two are the basis and the induction hypothesis.  Theorem
+       Schema 22 of [Suppes] p. 136.  (Contributed by NM, 14-Apr-1995.) $)
+    finds $p |- ( A e. om -> ta ) $=
+      ( com wcel cab c0 cv elab csuc wi wral wss 0ex mpbir sucex 3imtr4g peano5
+      vex rgen mp2an sseli elabg mpbid ) HOPHAFQZPEOUPHRUPPZGSZUPPZURUAZUPPZUBZ
+      GOUCOUPUDUQBMABFRUEITUFVBGOUROPCDUSVANACFURGUJZJTADFUTURVCUGKTUHUKGUPUIUL
+      UMAEFHOLUNUO $.
+  $}
+
+  ${
+    $d x y ta $.  $d x ps $.  $d x ch $.  $d x th $.  $d y ph $.
+    $( Substitutions. $)
+    finds2.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.
+    finds2.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    finds2.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.
+    $( Basis. $)
+    finds2.4 $e |- ( ta -> ps ) $.
+    $( Induction hypothesis. $)
+    finds2.5 $e |- ( y e. om -> ( ta -> ( ch -> th ) ) ) $.
+    $( Principle of Finite Induction (inference schema), using implicit
+       substitutions.  The first three hypotheses establish the substitutions
+       we need.  The last two are the basis and the induction hypothesis.
+       Theorem Schema 22 of [Suppes] p. 136.  (Contributed by NM,
+       29-Nov-2002.) $)
+    finds2 $p |- ( x e. om -> ( ta -> ph ) ) $=
+      ( cv com wcel wi c0 wceq imbi2d elab cab csuc wss 0ex mpbir a2d vex sucex
+      wral 3imtr4g rgen peano5 mp2an sseli abid sylib ) FMZNOUQEAPZFUAZOURNUSUQ
+      QUSOZGMZUSOZVAUBZUSOZPZGNUINUSUCUTEBPZKURVFFQUDUQQRABEHSTUEVEGNVANOZECPZE
+      DPZVBVDVGECDLUFURVHFVAGUGZUQVARACEISTURVIFVCVAVJUHUQVCRADEJSTUJUKGUSULUMU
+      NURFUOUP $.
+  $}
+
+  ${
+    $d x y $.  $d x ps $.  $d x ch $.  $d x th $.  $d y ph $.
+    $( Substitutions. $)
+    finds1.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.
+    finds1.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    finds1.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.
+    $( Basis. $)
+    finds1.4 $e |- ps $.
+    $( Induction hypothesis. $)
+    finds1.5 $e |- ( y e. om -> ( ch -> th ) ) $.
+    $( Principle of Finite Induction (inference schema), using implicit
+       substitutions.  The first three hypotheses establish the substitutions
+       we need.  The last two are the basis and the induction hypothesis.
+       Theorem Schema 22 of [Suppes] p. 136.  (Contributed by NM,
+       22-Mar-2006.) $)
+    finds1 $p |- ( x e. om -> ph ) $=
+      ( cv com wcel c0 wceq eqid a1i wi a1d finds2 mpi ) ELMNOOPZAOQABCDUCEFGHI
+      BUCJRFLMNCDSUCKTUAUB $.
+  $}
+
+  ${
+    $d x y z $.  $d y z ph $.
+    findes.1 $e |- [. (/) / x ]. ph $.
+    findes.2 $e |- ( x e. om -> ( ph -> [. suc x / x ]. ph ) ) $.
+    $( Finite induction with explicit substitution.  The first hypothesis is
+       the basis and the second is the induction hypothesis.  Theorem Schema 22
+       of [Suppes] p. 136.  (Contributed by Raph Levien, 9-Jul-2003.) $)
+    findes $p |- ( x e. om -> ph ) $=
+      ( vz vy wsb c0 wsbc csuc dfsbcq2 sbequ sbequ12r com wcel nfv nfim imbi12d
+      cv wi nfs1v nfsbc1v weq eleq1 sbequ12 wceq suceq dfsbcq syl chvar finds
+      wb ) ABEGABHIABFGZABFSZJZIZAEFBSZABEHKAEFBLABEUOKAEBMCUQNOZAABUQJZIZTZTUN
+      NOZUMUPTZTBFVBVCBVBBPUMUPBABFUAABUOUBQQBFUCZURVBVAVCUQUNNUDVDAUMUTUPABFUE
+      VDUSUOUFUTUPULUQUNUGABUSUOUHUIRRDUJUK $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
