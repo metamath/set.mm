@@ -36929,6 +36929,57 @@ $)
       UGUIPRUIUGRZUIULRUNSUHUMJUJUGTUAUBUCACUDUE $.
   $}
 
+  ${
+    $( Omega is an ordinal number.  (Contributed by Mario Carneiro,
+       30-Jan-2013.) $)
+    omelon2 $p |- ( om e. _V -> om e. On ) $=
+      ( com cvv wcel con0 word ordom elong mpbiri ) ABCADCAEFABGH $.
+  $}
+
+  $( Omega is an ordinal number.  (Contributed by NM, 10-May-1998.)  (Revised
+     by Mario Carneiro, 30-Jan-2013.) $)
+  omelon $p |- om e. On $=
+    ( com cvv wcel con0 omex omelon2 ax-mp ) ABCADCEFG $.
+
+  $( A natural number is an ordinal number.  (Contributed by NM,
+     27-Jun-1994.) $)
+  nnon $p |- ( A e. om -> A e. On ) $=
+    ( com omelon oneli ) BACD $.
+
+  ${
+    nnoni.1 $e |- A e. om $.
+    $( A natural number is an ordinal number.  (Contributed by NM,
+       27-Jun-1994.) $)
+    nnoni $p |- A e. On $=
+      ( com wcel con0 nnon ax-mp ) ACDAEDBAFG $.
+  $}
+
+  $( A natural number is ordinal.  (Contributed by NM, 17-Oct-1995.) $)
+  nnord $p |- ( A e. om -> Ord A ) $=
+    ( com wcel con0 word nnon eloni syl ) ABCADCAEAFAGH $.
+
+  ${
+    $d x y $.
+    $( Omega is a subset of ` On ` .  (Contributed by NM, 13-Jun-1994.) $)
+    omsson $p |- om C_ On $=
+      ( vx com con0 cv nnon ssriv ) ABCADEF $.
+  $}
+
+  $( A class belongs to omega iff its successor does.  (Contributed by NM,
+     3-Dec-1995.) $)
+  peano2b $p |- ( A e. om <-> suc A e. om ) $=
+    ( com wcel csuc peano2 cvv elex sucexb sylibr sucidg elnn mpancom
+    syl impbii ) ABCZADZBCZAEAPCZQOQAFCZRQPFCSPBGAHIAFJMAPKLN $.
+
+  ${
+    $d x A $.
+    $( A nonzero natural number is a successor.  (Contributed by NM,
+       18-Feb-2004.) $)
+    nnsuc $p |- ( ( A e. om /\ A =/= (/) ) -> E. x e. om A = suc x ) $=
+      ( c0 wne com wcel wceq wn cv csuc wrex df-ne nn0suc ord sylan2b
+      imp ) BCDBEFZBCGZHZBAIJGAEKZBCLQSTQRTABMNPO $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
