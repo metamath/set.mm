@@ -36425,7 +36425,7 @@ $)
   ${
     $d A x $.
     $( A class is equal to its successor iff it is a proper class (assuming the
-       Axiom of Regularity).  (Contributed by NM, 9-Jul-2004.) $)
+       Axiom of Set Induction).  (Contributed by NM, 9-Jul-2004.) $)
     sucprcreg $p |- ( -. A e. _V <-> suc A = A ) $=
       ( vx cvv wcel wn csuc sucprc cv wi wal elirr nfv eleq1 ceqsalg mtbiri csn
       wceq elsn wss syl5bir wo olc cun elun wb df-suc eqeq1i sseq1 sylbi mpbiri
@@ -36442,7 +36442,7 @@ $)
     OFZADAGNPANPAHOOAIJKLM $.
 
   $( Alternate proof of Russell's Paradox ~ ru , simplified using (indirectly)
-     the Axiom of Regularity ~ ax-setind .  (Contributed by Alan Sare,
+     the Axiom of Set Induction ~ ax-setind .  (Contributed by Alan Sare,
      4-Oct-2008.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   ruALT $p |- { x | x e/ x } e/ _V $=
