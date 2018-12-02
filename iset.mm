@@ -36905,6 +36905,19 @@ $)
       AVKAUNPUGUNGUHUSUSUGUNRSTUAUBUCUD $.
   $}
 
+  ${
+    $d x y B $.
+
+    $( A member of a natural number is a natural number.  (Contributed by NM,
+       21-Jun-1998.) $)
+    elnn $p |- ( ( A e. B /\ B e. om ) -> A e. om ) $=
+      ( vy vx com wcel wss cv c0 csuc sseq1 0ss wa csn cun unss vex snss anbi2i
+      df-suc sseq1i 3bitr4i biimpi expcom finds ssel2 ancoms sylan2 ) BEFABFZBE
+      GZAEFZCHZEGIEGDHZEGZUMJZEGZUJCDBULIEKULUMEKULUOEKULBEKELUNUMEFZUPUNUQMZUP
+      UNUMNZEGZMUMUSOZEGURUPUMUSEPUQUTUNUMEDQRSUOVAEUMTUAUBUCUDUEUJUIUKBEAUFUGU
+      H $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
