@@ -36882,6 +36882,28 @@ $)
       VDUSUOUFUTUPULUQUNUGABUSUOUHUIRRDUJUK $.
   $}
 
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                  The Natural Numbers (continued)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x y z A $.
+
+    $( A natural number is either 0 or a successor.  Similar theorems for
+       arbitrary sets or real numbers will not be provable (without the law of
+       the excluded middle), but equality of natural numbers is decidable.
+       (Contributed by NM, 27-May-1998.) $)
+    nn0suc $p |- ( A e. om -> ( A = (/) \/ E. x e. om A = suc x ) ) $=
+      ( vy vz cv c0 wceq csuc wrex wo eqeq1 rexbidv orbi12d eqid orci
+      com wcel suceq eqeq2d rspcev mpan2 olcd a1d finds ) CEZFGZUEAEZ
+      HZGZAPIZJFFGZFUHGZAPIZJDEZFGZUNUHGZAPIZJZUNHZFGZUSUHGZAPIZJZBFG
+      ZBUHGZAPIZJCDBUFUFUKUJUMUEFFKUFUIULAPUEFUHKLMUEUNGZUFUOUJUQUEUN
+      FKVGUIUPAPUEUNUHKLMUEUSGZUFUTUJVBUEUSFKVHUIVAAPUEUSUHKLMUEBGZUF
+      VDUJVFUEBFKVIUIVEAPUEBUHKLMUKUMFNOUNPQZVCURVJVBUTVJUSUSGZVBUSNV
+      AVKAUNPUGUNGUHUSUSUGUNRSTUAUBUCUD $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
