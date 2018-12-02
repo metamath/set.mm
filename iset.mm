@@ -36918,6 +36918,17 @@ $)
       H $.
   $}
 
+  ${
+    $d x y $.
+    $( Omega is ordinal.  Theorem 7.32 of [TakeutiZaring] p. 43.  (Contributed
+       by NM, 18-Oct-1995.) $)
+    ordom $p |- Ord om $=
+      ( vx vy com word wtr cv wral wcel wa wi wal elnn gen2 dftr2 mpbir
+      c0 csuc treq tr0 suctr a1i finds rgen df-iord mpbir2an ) CDCEZAFZ
+      EZACGUFUGBFZHUICHIUGCHZJZBKAKUKABUGUILMABCNOUHACUIEPEUHUGQZEZUHBA
+      UGUIPRUIUGRZUIULRUNSUHUMJUJUGTUAUBUCACUDUE $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
