@@ -36425,7 +36425,7 @@ $)
   ${
     $d A x $.
     $( A class is equal to its successor iff it is a proper class (assuming the
-       Axiom of Regularity).  (Contributed by NM, 9-Jul-2004.) $)
+       Axiom of Set Induction).  (Contributed by NM, 9-Jul-2004.) $)
     sucprcreg $p |- ( -. A e. _V <-> suc A = A ) $=
       ( vx cvv wcel wn csuc sucprc cv wi wal elirr nfv eleq1 ceqsalg mtbiri csn
       wceq elsn wss syl5bir wo olc cun elun wb df-suc eqeq1i sseq1 sylbi mpbiri
@@ -36442,7 +36442,7 @@ $)
     OFZADAGNPANPAHOOAIJKLM $.
 
   $( Alternate proof of Russell's Paradox ~ ru , simplified using (indirectly)
-     the Axiom of Regularity ~ ax-setind .  (Contributed by Alan Sare,
+     the Axiom of Set Induction ~ ax-setind .  (Contributed by Alan Sare,
      4-Oct-2008.)  (Proof modification is discouraged.)
      (New usage is discouraged.) $)
   ruALT $p |- { x | x e/ x } e/ _V $=
@@ -36903,6 +36903,81 @@ $)
       FKVGUIUPAPUEUNUHKLMUEUSGZUFUTUJVBUEUSFKVHUIVAAPUEUSUHKLMUEBGZUF
       VDUJVFUEBFKVIUIVEAPUEBUHKLMUKUMFNOUNPQZVCURVJVBUTVJUSUSGZVBUSNV
       AVKAUNPUGUNGUHUSUSUGUNRSTUAUBUCUD $.
+  $}
+
+  ${
+    $d x y B $.
+
+    $( A member of a natural number is a natural number.  (Contributed by NM,
+       21-Jun-1998.) $)
+    elnn $p |- ( ( A e. B /\ B e. om ) -> A e. om ) $=
+      ( vy vx com wcel wss cv c0 csuc sseq1 0ss wa csn cun unss vex snss anbi2i
+      df-suc sseq1i 3bitr4i biimpi expcom finds ssel2 ancoms sylan2 ) BEFABFZBE
+      GZAEFZCHZEGIEGDHZEGZUMJZEGZUJCDBULIEKULUMEKULUOEKULBEKELUNUMEFZUPUNUQMZUP
+      UNUMNZEGZMUMUSOZEGURUPUMUSEPUQUTUNUMEDQRSUOVAEUMTUAUBUCUDUEUJUIUKBEAUFUGU
+      H $.
+  $}
+
+  ${
+    $d x y $.
+    $( Omega is ordinal.  Theorem 7.32 of [TakeutiZaring] p. 43.  (Contributed
+       by NM, 18-Oct-1995.) $)
+    ordom $p |- Ord om $=
+      ( vx vy com word wtr cv wral wcel wa wi wal elnn gen2 dftr2 mpbir
+      c0 csuc treq tr0 suctr a1i finds rgen df-iord mpbir2an ) CDCEZAFZ
+      EZACGUFUGBFZHUICHIUGCHZJZBKAKUKABUGUILMABCNOUHACUIEPEUHUGQZEZUHBA
+      UGUIPRUIUGRZUIULRUNSUHUMJUJUGTUAUBUCACUDUE $.
+  $}
+
+  ${
+    $( Omega is an ordinal number.  (Contributed by Mario Carneiro,
+       30-Jan-2013.) $)
+    omelon2 $p |- ( om e. _V -> om e. On ) $=
+      ( com cvv wcel con0 word ordom elong mpbiri ) ABCADCAEFABGH $.
+  $}
+
+  $( Omega is an ordinal number.  (Contributed by NM, 10-May-1998.)  (Revised
+     by Mario Carneiro, 30-Jan-2013.) $)
+  omelon $p |- om e. On $=
+    ( com cvv wcel con0 omex omelon2 ax-mp ) ABCADCEFG $.
+
+  $( A natural number is an ordinal number.  (Contributed by NM,
+     27-Jun-1994.) $)
+  nnon $p |- ( A e. om -> A e. On ) $=
+    ( com omelon oneli ) BACD $.
+
+  ${
+    nnoni.1 $e |- A e. om $.
+    $( A natural number is an ordinal number.  (Contributed by NM,
+       27-Jun-1994.) $)
+    nnoni $p |- A e. On $=
+      ( com wcel con0 nnon ax-mp ) ACDAEDBAFG $.
+  $}
+
+  $( A natural number is ordinal.  (Contributed by NM, 17-Oct-1995.) $)
+  nnord $p |- ( A e. om -> Ord A ) $=
+    ( com wcel con0 word nnon eloni syl ) ABCADCAEAFAGH $.
+
+  ${
+    $d x y $.
+    $( Omega is a subset of ` On ` .  (Contributed by NM, 13-Jun-1994.) $)
+    omsson $p |- om C_ On $=
+      ( vx com con0 cv nnon ssriv ) ABCADEF $.
+  $}
+
+  $( A class belongs to omega iff its successor does.  (Contributed by NM,
+     3-Dec-1995.) $)
+  peano2b $p |- ( A e. om <-> suc A e. om ) $=
+    ( com wcel csuc peano2 cvv elex sucexb sylibr sucidg elnn mpancom
+    syl impbii ) ABCZADZBCZAEAPCZQOQAFCZRQPFCSPBGAHIAFJMAPKLN $.
+
+  ${
+    $d x A $.
+    $( A nonzero natural number is a successor.  (Contributed by NM,
+       18-Feb-2004.) $)
+    nnsuc $p |- ( ( A e. om /\ A =/= (/) ) -> E. x e. om A = suc x ) $=
+      ( c0 wne com wcel wceq wn cv csuc wrex df-ne nn0suc ord sylan2b
+      imp ) BCDBEFZBCGZHZBAIJGAEKZBCLQSTQRTABMNPO $.
   $}
 
 $(
