@@ -37570,29 +37570,12 @@ $)
       BABNUNVACAUHAOZUMUTDAVCUIAOZKZUJURUKUKULUSUHUIAABPVEUKQVDVCULUSTUIUHAABPU
       AUBUCUDUECDABRCDAUPRUF $.
 
-    $( Intersection of well-founded relation with cross product of its field.
-       (Contributed by Mario Carneiro, 10-Jul-2014.) $)
-    frinxp $p |- ( R Fr A <-> ( R i^i ( A X. A ) ) Fr A ) $=
-      ( vz vy vx cv wss c0 wa wbr wn wral wrex wi wal wfr wb wcel ssel df-fr
-      wne cxp cin anim12d brinxp ancoms notbid ralbidva rexbidva adantr pm5.74i
-      syl6 impl albii 3bitr4i ) CFZAGZUPHUAZIZDFZEFZBJZKZDUPLZEUPMZNZCOUSUTVABA
-      AUBUCZJZKZDUPLZEUPMZNZCOABPAVGPVFVLCUSVEVKUQVEVKQURUQVDVJEUPUQVAUPRZIZVCV
-      IDUPVNUTUPRZIVBVHUQVMVOVBVHQZUQVMVOIVAARZUTARZIVPUQVMVQVOVRUPAVASUPAUTSUD
-      VRVQVPUTVAAABUEUFULUMUGUHUIUJUKUNCEDABTCEDAVGTUO $.
-
     $( Intersection of set-like relation with cross product of its field.
        (Contributed by Mario Carneiro, 22-Jun-2015.) $)
     seinxp $p |- ( R Se A <-> ( R i^i ( A X. A ) ) Se A ) $=
       ( vy vx cv wbr crab cvv wcel cxp cin wse wb brinxp ancoms rabbidva eleq1d
       wral ralbiia df-se 3bitr4i ) CEZDEZBFZCAGZHIZDARUBUCBAAJKZFZCAGZHIZDARABL
       AUGLUFUJDAUCAIZUEUIHUKUDUHCAUBAIUKUDUHMUBUCAABNOPQSDCABTDCAUGTUA $.
-
-    $( Intersection of well-ordering with cross product of its field.
-       (Contributed by NM, 9-Mar-1997.)  (Revised by Mario Carneiro,
-       10-Jul-2014.) $)
-    weinxp $p |- ( R We A <-> ( R i^i ( A X. A ) ) We A ) $=
-      ( wfr wor wa cxp cin wwe frinxp soinxp anbi12i df-we 3bitr4i ) ABCZABDZEA
-      BAAFGZCZAPDZEABHAPHNQORABIABJKABLAPLM $.
   $}
 
   ${
@@ -37617,28 +37600,6 @@ $)
       w3o 3mix2 syl rgen2a df-so mpbiran2 posn syl5bb ) AEZBFZUGBGZBHAABIJUHUIC
       KZDKZBIZCDLZUKUJBIZSZDUGMCUGMUOCDUGUJUGNZUKUGNZOUMUOUPUQUJAUKUJAPUQUKAUKA
       PQRUMULUNTUAUBCDUGBUCUDABUEUF $.
-
-    $( Founded relation on a singleton.  (Contributed by Mario Carneiro,
-       28-Dec-2014.)  (Revised by Mario Carneiro, 23-Apr-2015.) $)
-    frsn $p |- ( Rel R -> ( R Fr { A } <-> -. A R A ) ) $=
-      ( vz vy vx cvv wfr wbr wn wb wa cv wral wrex c0 wne wi wal wceq adantl wo
-      wrel wcel csn wss df-fr df-ne simpr sssn sylib ord syl5bi eqimss ad2antlr
-      impr snnzg eqnetrd jca impbida imbi1d albidv snex raleq rexeqbi1dv syl6bb
-      ceqsalv syl5bb breq2 notbid ralbidv rexsng breq1 ralsng bitrd snprc freq2
-      fr0 mpbiri sylbi brrelex ex con3and 2thd pm2.61dan ) BUBZAFUCZAUDZBGZAABH
-      ZIZJWEWFKZWHCLZDLZBHZIZCWGMZDWGNZWJWHELZWGUEZWROPZKZWOCWRMZDWRNZQZERZWKWQ
-      EDCWGBUFWKXEWRWGSZXCQZERWQWKXDXGEWKXAXFXCWKXAXFWKWSWTXFWTWROSZIWKWSKZXFWR
-      OUGXIXHXFXIWSXHXFUAWKWSUHWRAUIUJUKULUOWKXFKZWSWTXFWSWKWRWGUMTXJWRWGOWKXFU
-      HWFWGOPWEXFAFUPUNUQURUSUTVAXCWQEWGAVBXBWPDWRWGWOCWRWGVCVDVFVEVGWFWQWJJWEW
-      FWQWLABHZIZCWGMZWJWPXMDAFWMASZWOXLCWGXNWNXKWMAWLBVHVIVJVKXLWJCAFWLASXKWIW
-      LAABVLVIVMVNTVNWEWFIZKWHWJXOWHWEXOWGOSZWHAVOXPWHOBGBVQWGOBVPVRVSTWEWIWFWE
-      WIWFAABVTWAWBWCWD $.
-
-    $( Well-ordering of a singleton.  (Contributed by Mario Carneiro,
-       28-Dec-2014.) $)
-    wesn $p |- ( Rel R -> ( R We { A } <-> -. A R A ) ) $=
-      ( wrel csn wfr wor wa wbr wn wwe frsn sosn anbi12d df-we pm4.24 3bitr4g )
-      BCZADZBEZRBFZGAABHIZUAGRBJUAQSUATUAABKABLMRBNUAOP $.
   $}
 
   ${
@@ -40176,20 +40137,6 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d x y z R $.
-    $( Alternate definition of well-founded relation.  Definition 6.21 of
-       [TakeutiZaring] p. 30.  (Contributed by NM, 23-Apr-2004.)  (Revised by
-       Mario Carneiro, 23-Jun-2015.) $)
-    dffr3 $p |- ( R Fr A <-> A. x ( ( x C_ A /\ x =/= (/) ) ->
-                E. y e. x ( x i^i ( `' R " { y } ) ) = (/) ) ) $=
-      ( vz wfr cv wss c0 wne wa wbr crab wceq wrex wi wal ccnv cin cvv csn cima
-      dffr2 cab wcel vex iniseg ax-mp ineq2i dfrab3 eqtr4i eqeq1i rexbii imbi2i
-      albii bitr4i ) CDFAGZCHUQIJKZEGBGZDLZEUQMZINZBUQOZPZAQURUQDRUSUAUBZSZINZB
-      UQOZPZAQABECDUCVIVDAVHVCURVGVBBUQVFVAIVFUQUTEUDZSVAVEVJUQUSTUEVEVJNBUFEDU
-      STUGUHUIUTEUQUJUKULUMUNUOUP $.
-  $}
-
-  ${
     $d x y A $.  $d x y R $.  $d x V $.
     $( Alternate definition of set-like relation.  (Contributed by Mario
        Carneiro, 23-Jun-2015.) $)
@@ -40513,48 +40460,6 @@ $)
     wb wi potr breq2 biimpac a1d jaodan sylbid ) EDFZAEGZBEGZCEGZHZIZABDJZBCDKL
     JZIUNBCDJZBCMZNZIZACDJZUMUOURUNULUOURTZUHUKUIVAUJBCDEOPQRUSUMUTUNUPUMUTUAUQ
     UMUNUPIUTEABCDUBSUNUQIUTUMUQUNUTBCADUCUDUEUFSUG $.
-
-  $( Property of a minimum in a strict order.  (Contributed by Stefan O'Rear,
-     17-Jan-2015.) $)
-  somin1 $p |- ( ( R Or X /\ ( A e. X /\ B e. X ) ) ->
-      if ( A R B , A , B ) ( R u. _I ) A ) $=
-    ( wor wcel wa wbr cif cid cun wceq wo iftrue olcd adantl wn sotric mpbird
-    wb orcom eqcom orbi2i bitri notbii syl6bb con2bid biimpar iffalse breq1 syl
-    eqeq1 orbi12d pm2.61dan poleloe ad2antrl ) DCEZADFZBDFZGGZABCHZABIZACJKHZVB
-    ACHZVBALZMZUTVAVFVAVFUTVAVEVDVAABNOPUTVAQZGVFBACHZBALZMZUTVJVGUTVAVJUTVAABL
-    ZVHMZQVJQDABCRVLVJVLVHVKMVJVKVHUAVKVIVHABUBUCUDUEUFUGUHVGVFVJTZUTVGVBBLZVMV
-    AABUIVNVDVHVEVIVBBACUJVBBAULUMUKPSUNURVCVFTUQUSVBACDUOUPS $.
-
-  $( Commutativity of minimum in a total order.  (Contributed by Stefan O'Rear,
-     17-Jan-2015.) $)
-  somincom $p |- ( ( R Or X /\ ( A e. X /\ B e. X ) ) ->
-      if ( A R B , A , B ) = if ( B R A , B , A ) ) $=
-    ( wor wcel wa wbr cif wceq iftrue adantl wn wi so2nr nan mpbi iffalse eqtrd
-    eqcomd syl wo sotric con2bid ifeq2 ifid syl6req jaoi syl6bir imp pm2.61dan
-    ) DCEADFBDFGGZABCHZUMABIZBACHZBAIZJULUMGZUNAUPUMUNAJULUMABKLUQUPAUQUOMZUPAJ
-    ULUMUOGMNUQURNDABCOULUMUOPQUOBARUATSULUMMZGUNBUPUSUNBJULUMABRLULUSBUPJZULUS
-    ABJZUOUBZUTULUMVBDABCUCUDVAUTUOVAUPUOBBIBUOABBUEUOBUFUGUOUPBUOBAKTUHUIUJSUK
-    $.
-
-  $( Property of a minimum in a strict order.  (Contributed by Stefan O'Rear,
-     17-Jan-2015.) $)
-  somin2 $p |- ( ( R Or X /\ ( A e. X /\ B e. X ) ) ->
-      if ( A R B , A , B ) ( R u. _I ) B ) $=
-    ( wor wcel wa wbr cif cid cun somincom somin1 ancom2s eqbrtrd ) DCEZADFZBDF
-    ZGGABCHABIBACHBAIZBCJKZABCDLPRQSBTHBACDMNO $.
-
-  $( Being less than a minimum, for a general total order.  (Contributed by
-     Stefan O'Rear, 17-Jan-2015.) $)
-  soltmin $p |- ( ( R Or X /\ ( A e. X /\ B e. X /\ C e. X ) ) ->
-      ( A R if ( B R C , B , C ) <-> ( A R B /\ A R C ) ) ) $=
-    ( wor wcel w3a wa wbr cif wpo cid cun 3jca syl12anc poltletr syl22anc breq2
-    imp sopo ad2antrr simplr1 simplr2 simplr3 ifcl syl2anc simpll somin1 somin2
-    simpr jca ex ifboth impbid1 ) EDFZAEGZBEGZCEGZHZIZABCDJZBCKZDJZABDJZACDJZIZ
-    VAVDVGVAVDIZVEVFVHEDLZUQVCEGZURHZVDVCBDMNZJZVEUPVIUTVDEDUAUBZVHUQVJURUQURUS
-    UPVDUCZVHURUSVJUQURUSUPVDUDZUQURUSUPVDUEZVBBCEUFUGZVPOVAVDUKZVHUPURUSVMUPUT
-    VDUHZVPVQBCDEUIPVIVKIVDVMIVEAVCBDEQTRVHVIUQVJUSHZVDVCCVLJZVFVNVHUQVJUSVOVRV
-    QOVSVHUPURUSWBVTVPVQBCDEUJPVIWAIVDWBIVFAVCCDEQTRULUMVBVEVFVDBCBVCADSCVCADSU
-    NUO $.
 
   ${
     $d x y z w $.  $d z w ph $.
@@ -40895,16 +40800,6 @@ $)
     ZEUPARRBUBWBAWCBAUCWCBRFBRBUDBUCMUEUFPCUPUSUJVOVRVSFZVNFWAVFWDVNVFCUSVSFZFW
     DVEWECDARUGPCUSVSUHQNVRVSVNUHMUIUKVKVJBREZFVQVJBJVPWFVJRBULPQTUMBVJSZFWGBFV
     LVHBWGUDVJBUNVGWGBVFUONTUTUOTQUI $.
-
-  $( The image by a constant function (or other cross product).  (Contributed
-     by Thierry Arnoux, 4-Feb-2017.) $)
-  xpima $p |- ( ( A X. B ) " C ) = if ( ( A i^i C ) = (/) , (/) , B ) $=
-    ( cxp cima cin c0 wceq cif wa wn wo exmid crn cvv rneqi syl6eq syl5eq ancli
-    cres df-ima df-res eqtri inxp inv1 xpeq2i 3eqtri xpeq1 0xp rneqd df-ne rnxp
-    rn0 wne sylbir orim12i ax-mp eqif mpbir ) ABDZCEZACFZGHZGBIHVCVAGHZJZVCKZVA
-    BHZJZLZVCVFLVIVCMVCVEVFVHVCVDVCVAVBBDZNZGVAUTCODFZNZVBBOFZDZNVKVAUTCTZNVMUT
-    CUAVPVLUTCUBPUCVLVOABCOUDPVOVJVNBVBBUEUFPUGZVCVKGNGVCVJGVCVJGBDGVBGBUHBUIQU
-    JUMQRSVFVGVFVAVKBVQVFVBGUNVKBHVBGUKVBBULUORSUPUQVCVAGBURUS $.
 
   $( The image by a cross product.  (Contributed by Thierry Arnoux,
      16-Dec-2017.) $)
