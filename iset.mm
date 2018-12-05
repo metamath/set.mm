@@ -33963,6 +33963,16 @@ $)
   $}
 
   ${
+    $d y x $.  $d y ph $.
+    $( The abstraction of a wff with existential uniqueness exists.
+       (Contributed by NM, 25-Nov-1994.) $)
+    euabex $p |- ( E! x ph -> { x | ph } e. _V ) $=
+      ( vy weu cab csn wceq wex cvv wcel euabsn2 vex snexg ax-mp mpbiri
+      cv eleq1 exlimiv sylbi ) ABDABEZCPZFZGZCHTIJZABCKUCUDCUCUDUBIJZUA
+      IJUECLUAMNTUBIQORS $.
+  $}
+
+  ${
     $d w x y $.  $d w x z $.  $d x y A $.
     $( An inhabited class (even if proper) has an inhabited subset.
        (Contributed by Jim Kingdon, 17-Sep-2018.) $)
