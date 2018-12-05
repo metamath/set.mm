@@ -5812,25 +5812,25 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
   $( Declare connective for stability. $)
-  $c STABLE $.
+  $c STAB $.
 
   $( Extend wff definition to include stability. $)
-  wstable $a wff STABLE ph $.
+  wstab $a wff STAB ph $.
 
   $( Propositions where a double-negative can be removed are called stable.
      See Chapter 2 [Moschovakis] p. 2.
 
-     Our notation for stability is a connective ` STABLE ` which we place
-     before the formula in question.  For example, ` STABLE x = y ` corresponds
+     Our notation for stability is a connective ` STAB ` which we place
+     before the formula in question.  For example, ` STAB x = y ` corresponds
      to "x = y is stable".
 
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
-  df-stable $a |- ( STABLE ph <-> ( -. -. ph -> ph ) ) $.
+  df-stab $a |- ( STAB ph <-> ( -. -. ph -> ph ) ) $.
 
   $( Every formula of the form ` -. ph ` is stable.  Uses ~ notnotnot .
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
-  stablenot $p |- STABLE -. ph $=
-    ( wn wstable wi notnotnot biimpi df-stable mpbir ) ABZCIBBZIDJIAEFIGH $.
+  stabnot $p |- STAB -. ph $=
+    ( wn wstab wi notnotnot biimpi df-stab mpbir ) ABZCIBBZIDJIAEFIGH $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -5838,25 +5838,25 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
   $( Declare connective for testability. $)
-  $c TESTABLE $.
+  $c TEST $.
 
   $( Extend wff definition to include stability. $)
-  wtestable $a wff TESTABLE ph $.
+  wtest $a wff TEST ph $.
 
   $( Propositions where its negative or double-negative is true are called
      testable.  See Chapter 2 [Moschovakis] p. 2.
 
-     Our notation for testability is a connective ` TESTABLE ` which we place
-     before the formula in question.  For example, ` TESTABLE x = y `
+     Our notation for testability is a connective ` TEST ` which we place
+     before the formula in question.  For example, ` TEST x = y `
      corresponds to "x = y is testable".
 
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
-  df-testable $a |- ( TESTABLE ph <-> ( -. ph \/ -. -. ph ) ) $.
+  df-test $a |- ( TEST ph <-> ( -. ph \/ -. -. ph ) ) $.
 
   $( A testable proposition is testable when negated.  See also ~ dcn .
     (Contributed by David A.  Wheeler, 5-Dec-2018.) $)
-  testablen $p |- ( TESTABLE ph -> TESTABLE -. ph ) $=
-    ( wn wo wtestable notnot1 orim1i orcomd df-testable 3imtr4i ) ABZJBZCZKKBZC
+  testn $p |- ( TEST ph -> TEST -. ph ) $=
+    ( wn wo wtest notnot1 orim1i orcomd df-test 3imtr4i ) ABZJBZCZKKBZC
     ADJDLMKJMKJEFGAHJHI $.
 
 $(
@@ -5972,21 +5972,21 @@ $)
 
   $( Decidability implies stability.  The converse is not necessarily true.
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
-  dcimpstable $p |- ( DECID ph -> STABLE ph ) $=
-    ( wdc wn wi wstable notnot2dc df-stable sylibr ) ABACCADAEAFAGH $.
+  dcimpstab $p |- ( DECID ph -> STAB ph ) $=
+    ( wdc wn wi wstab notnot2dc df-stab sylibr ) ABACCADAEAFAGH $.
 
   $( Decidability implies testability.  (Contributed by David A. Wheeler,
      14-Aug-2018.) $)
-  dcimptestable $p |- ( DECID ph -> TESTABLE ph ) $=
-    ( wn wo wdc wtestable notnot1 orim1i orcomd df-dc df-testable 3imtr4i ) AAB
+  dcimptest $p |- ( DECID ph -> TEST ph ) $=
+    ( wn wo wdc wtest notnot1 orim1i orcomd df-dc df-test 3imtr4i ) AAB
     ZCZLLBZCADAEMNLANLAFGHAIAJK $.
 
   $( "Stable and testable" is equivalent to decidable.  (Contributed by David
      A. Wheeler, 13-Aug-2018.) $)
-  stabletestableimpdc $p |-
-    ( ( STABLE ph /\ TESTABLE ph ) <-> DECID ph ) $=
-    ( wstable wtestable wa wdc wn wo df-testable biimpi adantl df-stable orim2d
-    wi adantr mpd orcomd df-dc sylibr dcimpstable dcimptestable jca impbii ) AB
+  stabtestimpdc $p |-
+    ( ( STAB ph /\ TEST ph ) <-> DECID ph ) $=
+    ( wstab wtest wa wdc wn wo df-test biimpi adantl df-stab orim2d
+    wi adantr mpd orcomd df-dc sylibr dcimpstab dcimptest jca impbii ) AB
     ZACZDZAEZUEAAFZGUFUEUGAUEUGUGFZGZUGAGZUDUIUCUDUIAHIJUCUIUJMUDUCUHAUGUCUHAMA
     KILNOPAQRUFUCUDASATUAUB $.
 
@@ -37694,12 +37694,12 @@ htmldef "F." as
     " <IMG SRC='perp.gif' WIDTH=11 HEIGHT=19 TITLE='F.' ALIGN=TOP> ";
   althtmldef "F." as ' &perp; ';
   latexdef "F." as "\bot";
-htmldef "STABLE" as "<SMALL>STABLE</SMALL> ";
-  althtmldef "STABLE" as "<SMALL>STABLE</SMALL> ";
-  latexdef "STABLE" as "\mathrm{STABLE} ";
-htmldef "TESTABLE" as "<SMALL>TESTABLE</SMALL> ";
-  althtmldef "TESTABLE" as "<SMALL>TESTABLE</SMALL> ";
-  latexdef "TESTABLE" as "\mathrm{TESTABLE} ";
+htmldef "STAB" as "<SMALL>STAB</SMALL> ";
+  althtmldef "STAB" as "<SMALL>STAB</SMALL> ";
+  latexdef "STAB" as "\mathrm{STAB} ";
+htmldef "TEST" as "<SMALL>TEST</SMALL> ";
+  althtmldef "TEST" as "<SMALL>TEST</SMALL> ";
+  latexdef "TEST" as "\mathrm{TEST} ";
 htmldef "DECID" as "<SMALL>DECID</SMALL> ";
   althtmldef "DECID" as "<SMALL>DECID</SMALL> ";
   latexdef "DECID" as "\mathrm{DECID} ";
