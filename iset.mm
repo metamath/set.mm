@@ -5838,25 +5838,25 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
   $( Declare connective for testability. $)
-  $c TESTABLE $.
+  $c TEST $.
 
   $( Extend wff definition to include stability. $)
-  wtestable $a wff TESTABLE ph $.
+  wtest $a wff TEST ph $.
 
   $( Propositions where its negative or double-negative is true are called
      testable.  See Chapter 2 [Moschovakis] p. 2.
 
-     Our notation for testability is a connective ` TESTABLE ` which we place
-     before the formula in question.  For example, ` TESTABLE x = y `
+     Our notation for testability is a connective ` TEST ` which we place
+     before the formula in question.  For example, ` TEST x = y `
      corresponds to "x = y is testable".
 
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
-  df-testable $a |- ( TESTABLE ph <-> ( -. ph \/ -. -. ph ) ) $.
+  df-test $a |- ( TEST ph <-> ( -. ph \/ -. -. ph ) ) $.
 
   $( A testable proposition is testable when negated.  See also ~ dcn .
     (Contributed by David A.  Wheeler, 5-Dec-2018.) $)
-  testablen $p |- ( TESTABLE ph -> TESTABLE -. ph ) $=
-    ( wn wo wtestable notnot1 orim1i orcomd df-testable 3imtr4i ) ABZJBZCZKKBZC
+  testn $p |- ( TEST ph -> TEST -. ph ) $=
+    ( wn wo wtest notnot1 orim1i orcomd df-test 3imtr4i ) ABZJBZCZKKBZC
     ADJDLMKJMKJEFGAHJHI $.
 
 $(
@@ -5977,16 +5977,16 @@ $)
 
   $( Decidability implies testability.  (Contributed by David A. Wheeler,
      14-Aug-2018.) $)
-  dcimptestable $p |- ( DECID ph -> TESTABLE ph ) $=
-    ( wn wo wdc wtestable notnot1 orim1i orcomd df-dc df-testable 3imtr4i ) AAB
+  dcimptest $p |- ( DECID ph -> TEST ph ) $=
+    ( wn wo wdc wtest notnot1 orim1i orcomd df-dc df-test 3imtr4i ) AAB
     ZCZLLBZCADAEMNLANLAFGHAIAJK $.
 
   $( "Stable and testable" is equivalent to decidable.  (Contributed by David
      A. Wheeler, 13-Aug-2018.) $)
-  stabletestableimpdc $p |-
-    ( ( STABLE ph /\ TESTABLE ph ) <-> DECID ph ) $=
-    ( wstable wtestable wa wdc wn wo df-testable biimpi adantl df-stable orim2d
-    wi adantr mpd orcomd df-dc sylibr dcimpstable dcimptestable jca impbii ) AB
+  stabletestimpdc $p |-
+    ( ( STABLE ph /\ TEST ph ) <-> DECID ph ) $=
+    ( wstable wtest wa wdc wn wo df-test biimpi adantl df-stable orim2d
+    wi adantr mpd orcomd df-dc sylibr dcimpstable dcimptest jca impbii ) AB
     ZACZDZAEZUEAAFZGUFUEUGAUEUGUGFZGZUGAGZUDUIUCUDUIAHIJUCUIUJMUDUCUHAUGUCUHAMA
     KILNOPAQRUFUCUDASATUAUB $.
 
@@ -37697,9 +37697,9 @@ htmldef "F." as
 htmldef "STABLE" as "<SMALL>STABLE</SMALL> ";
   althtmldef "STABLE" as "<SMALL>STABLE</SMALL> ";
   latexdef "STABLE" as "\mathrm{STABLE} ";
-htmldef "TESTABLE" as "<SMALL>TESTABLE</SMALL> ";
-  althtmldef "TESTABLE" as "<SMALL>TESTABLE</SMALL> ";
-  latexdef "TESTABLE" as "\mathrm{TESTABLE} ";
+htmldef "TEST" as "<SMALL>TEST</SMALL> ";
+  althtmldef "TEST" as "<SMALL>TEST</SMALL> ";
+  latexdef "TEST" as "\mathrm{TEST} ";
 htmldef "DECID" as "<SMALL>DECID</SMALL> ";
   althtmldef "DECID" as "<SMALL>DECID</SMALL> ";
   latexdef "DECID" as "\mathrm{DECID} ";
