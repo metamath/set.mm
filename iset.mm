@@ -5853,6 +5853,12 @@ $)
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
   df-testable $a |- ( TESTABLE ph <-> ( -. ph \/ -. -. ph ) ) $.
 
+  $( A testable proposition is testable when negated.  See also ~ dcn .
+    (Contributed by David A.  Wheeler, 5-Dec-2018.) $)
+  testablen $p |- ( TESTABLE ph -> TESTABLE -. ph ) $=
+    ( wn wo wtestable notnot1 orim1i orcomd df-testable 3imtr4i ) ABZJBZCZKKBZC
+    ADJDLMKJMKJEFGAHJHI $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Decidable propositions
