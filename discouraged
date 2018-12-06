@@ -1385,6 +1385,9 @@
 "ax11v2-o" is used by "ax11a2-o".
 "ax12lem1" is used by "ax12lem2".
 "ax12lem1" is used by "nfeqf".
+"ax12lem2" is used by "a9e".
+"ax12lem2" is used by "ax12lem3".
+"ax12lem2" is used by "dveeq2".
 "ax12lem3" is used by "dveeq2".
 "ax12olem1OLD" is used by "ax12olem2OLD".
 "ax12olem1OLD" is used by "ax12olem2OLD7".
@@ -13540,6 +13543,7 @@ New usage of "ax11vALT" is discouraged (0 uses).
 New usage of "ax12OLD" is discouraged (0 uses).
 New usage of "ax12from12o" is discouraged (0 uses).
 New usage of "ax12lem1" is discouraged (2 uses).
+New usage of "ax12lem2" is discouraged (3 uses).
 New usage of "ax12lem3" is discouraged (1 uses).
 New usage of "ax12oOLD" is discouraged (0 uses).
 New usage of "ax12olem1OLD" is discouraged (3 uses).
@@ -17703,6 +17707,7 @@ Proof modification of "a9e2ndVD" is discouraged (199 steps).
 Proof modification of "a9e2ndeq" is discouraged (175 steps).
 Proof modification of "a9e2ndeqALT" is discouraged (342 steps).
 Proof modification of "a9e2ndeqVD" is discouraged (340 steps).
+Proof modification of "a9eOLD" is discouraged (17 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
@@ -17783,6 +17788,7 @@ Proof modification of "ax67to6" is discouraged (37 steps).
 Proof modification of "ax67to7" is discouraged (32 steps).
 Proof modification of "ax7-pm" is discouraged (39 steps).
 Proof modification of "ax7-pm2" is discouraged (119 steps).
+Proof modification of "ax9OLD" is discouraged (88 steps).
 Proof modification of "ax9from9o" is discouraged (24 steps).
 Proof modification of "ax9o" is discouraged (37 steps).
 Proof modification of "ax9oNEW7" is discouraged (37 steps).
@@ -18513,6 +18519,7 @@ Proof modification of "sotriOLD" is discouraged (83 steps).
 Proof modification of "spOLD" is discouraged (76 steps).
 Proof modification of "speivOLD" is discouraged (18 steps).
 Proof modification of "spfalwOLD" is discouraged (15 steps).
+Proof modification of "spimOLD" is discouraged (28 steps).
 Proof modification of "spimeOLD" is discouraged (33 steps).
 Proof modification of "spimedOLD" is discouraged (39 steps).
 Proof modification of "spimehOLD" is discouraged (91 steps).
