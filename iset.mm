@@ -37562,14 +37562,17 @@ $)
       IVRUNVFUPVGVPUNVFPVQUJUMAABQUIVOVQUPVGPVNUMUOAABQUDTVNVQURVIPVOUJUOAABQUE
       UFTRRUGCDEABSCDEAVCSUH $.
 
-    $( Intersection of total order with cross product of its field.
+    $( Intersection of linear order with cross product of its field.
        (Contributed by Mario Carneiro, 10-Jul-2014.) $)
     soinxp $p |- ( R Or A <-> ( R i^i ( A X. A ) ) Or A ) $=
-      ( vx vy wpo cv wbr weq w3o wral wa cxp cin poinxp wcel brinxp biidd df-so
-      wor wb ancoms 3orbi123d ralbidva ralbiia anbi12i 3bitr4i ) ABEZCFZDFZBGZC
-      DHZUIUHBGZIZDAJZCAJZKABAALMZEZUHUIUPGZUKUIUHUPGZIZDAJZCAJZKABSAUPSUGUQUOV
-      BABNUNVACAUHAOZUMUTDAVCUIAOZKZUJURUKUKULUSUHUIAABPVEUKQVDVCULUSTUIUHAABPU
-      AUBUCUDUECDABRCDAUPRUF $.
+      ( vx vy vz wpo cv wbr wo wi wral cxp cin wor poinxp wcel brinxp
+      wa wb df-iso w3a 3adant3 3adant2 ancoms 3adant1 orbi12d imbi12d
+      3expb 2ralbidva ralbiia anbi12i 3bitr4i ) ABFZCGZDGZBHZUNEGZBHZ
+      UQUOBHZIZJZEAKDAKZCAKZRABAALMZFZUNUOVDHZUNUQVDHZUQUOVDHZIZJZEAK
+      DAKZCAKZRABNAVDNUMVEVCVLABOVBVKCAUNAPZVAVJDEAAVMUOAPZUQAPZVAVJS
+      VMVNVOUAZUPVFUTVIVMVNUPVFSVOUNUOAABQUBVPURVGUSVHVMVOURVGSVNUNUQ
+      AABQUCVNVOUSVHSZVMVOVNVQUQUOAABQUDUEUFUGUHUIUJUKCDEABTCDEAVDTUL
+      $.
 
     $( Intersection of set-like relation with cross product of its field.
        (Contributed by Mario Carneiro, 22-Jun-2015.) $)
