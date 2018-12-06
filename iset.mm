@@ -5820,9 +5820,9 @@ $)
   $( Propositions where a double-negative can be removed are called stable.
      See Chapter 2 [Moschovakis] p. 2.
 
-     Our notation for stability is a connective ` STAB ` which we place
-     before the formula in question.  For example, ` STAB x = y ` corresponds
-     to "x = y is stable".
+     Our notation for stability is a connective ` STAB ` which we place before
+     the formula in question.  For example, ` STAB x = y ` corresponds to "x =
+     y is stable".
 
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
   df-stab $a |- ( STAB ph <-> ( -. -. ph -> ph ) ) $.
@@ -5847,14 +5847,14 @@ $)
      testable.  See Chapter 2 [Moschovakis] p. 2.
 
      Our notation for testability is a connective ` TEST ` which we place
-     before the formula in question.  For example, ` TEST x = y `
-     corresponds to "x = y is testable".
+     before the formula in question.  For example, ` TEST x = y ` corresponds
+     to "x = y is testable".
 
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
   df-test $a |- ( TEST ph <-> ( -. ph \/ -. -. ph ) ) $.
 
   $( A proposition is testable iff its negation is testable.  See also ~ dcn .
-    (Contributed by David A.  Wheeler, 6-Dec-2018.) $)
+     (Contributed by David A. Wheeler, 6-Dec-2018.) $)
   testbitestn $p |- ( TEST ph <-> TEST -. ph ) $=
     ( wn wo wtest notnotnot orbi2i orcom bitri df-test 3bitr4ri ) ABZ
     BZLBZCZKLCZKDADNLKCOMKLAEFLKGHKIAIJ $.
