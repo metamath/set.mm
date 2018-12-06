@@ -37584,26 +37584,27 @@ $)
 
   ${
     $d x y z A $.  $d x y z R $.
-    $( Partial ordering of a singleton.  (Contributed by NM, 27-Apr-2009.)
-       (Revised by Mario Carneiro, 23-Apr-2015.) $)
-    posn $p |- ( Rel R -> ( R Po { A } <-> -. A R A ) ) $=
-      ( vx vy vz cvv wpo wbr wn wb cv wa wi wral breq2 anbi2d ralsng ralbidv c0
-      wceq wrel wcel csn df-po simpl syl5ib biantrud bicomd bitrd breq12 anidms
-      imbi12d notbid adantl syl5bb po0 snprc poeq2 sylbi mpbiri brrelex con3and
-      ex 2thd pm2.61dan ) BUAZAFUBZAUCZBGZAABHZIZJVICKZVLBHZIZVLDKZBHZVOEKZBHZL
-      ZVLVQBHZMZLZEVHNZDVHNZCVHNZVFVGLVKCDEVHBUDVGWEVKJVFVGWEVNCVHNVKVGWDVNCVHV
-      GWDVNVPVOABHZLZVLABHZMZLZDVHNVNVGWCWJDVHWBWJEAFVQATZWAWIVNWKVSWGVTWHWKVRW
-      FVPVQAVOBOPVQAVLBOULPQRWJVNDAFVOATZVNWJWLWIVNWGVPWLWHVPWFUEVOAVLBOUFUGUHQ
-      UIRVNVKCAFVLATZVMVJWMVMVJJVLAVLABUJUKUMQUIUNUOVFVGIZLVIVKWNVIVFWNVISBGZBU
-      PWNVHSTVIWOJAUQVHSBURUSUTUNVFVJVGVFVJVGAABVAVCVBVDVE $.
+    $( Partial ordering of a singleton.  (Contributed by Jim Kingdon,
+       5-Dec-2018.) $)
+    posng $p |- ( ( Rel R /\ A e. _V ) -> ( R Po { A } <-> -. A R A ) ) $=
+      ( vz vy vx csn cv wbr wn wa wi wral wb wceq breq2 anbi2d ralsng
+      cvv ralbidv bitrd wrel wcel df-po imbi12d simpl syl5ib biantrud
+      wpo bicomd breq12 anidms notbid adantl syl5bb ) AFZBUHCGZUPBHZI
+      ZUPDGZBHZUSEGZBHZJZUPVABHZKZJZEUOLZDUOLZCUOLZBUAZARUBZJAABHZIZC
+      DEUOBUCVKVIVMMVJVKVIURCUOLVMVKVHURCUOVKVHURUTUSABHZJZUPABHZKZJZ
+      DUOLURVKVGVRDUOVFVREARVAANZVEVQURVSVCVOVDVPVSVBVNUTVAAUSBOPVAAU
+      PBOUDPQSVRURDARUSANZURVRVTVQURVOUTVTVPUTVNUEUSAUPBOUFUGUIQTSURV
+      MCARUPANZUQVLWAUQVLMUPAUPABUJUKULQTUMUN $.
 
-    $( Strict ordering on a singleton.  (Contributed by Mario Carneiro,
-       28-Dec-2014.) $)
-    sosn $p |- ( Rel R -> ( R Or { A } <-> -. A R A ) ) $=
-      ( vx vy csn wor wpo wrel wbr wn cv weq wral wcel wa elsni eqcomd sylan9eq
-      w3o 3mix2 syl rgen2a df-so mpbiran2 posn syl5bb ) AEZBFZUGBGZBHAABIJUHUIC
-      KZDKZBIZCDLZUKUJBIZSZDUGMCUGMUOCDUGUJUGNZUKUGNZOUMUOUPUQUJAUKUJAPUQUKAUKA
-      PQRUMULUNTUAUBCDUGBUCUDABUEUF $.
+    $( Strict linear ordering on a singleton.  (Contributed by Jim Kingdon,
+       5-Dec-2018.) $)
+    sosng $p |- ( ( Rel R /\ A e. _V ) -> ( R Or { A } <-> -. A R A ) ) $=
+      ( vx vy vz wrel cvv wcel wa csn wor wbr wn wpo sopo cv wral elsni adantl
+      wi posng syl5ib wo ax-in2 adantr wb breqan12d imbi1d ralrimivw ralrimivva
+      biimpar mpbird df-iso sylanbrc ex impbid ) BFAGHIZAJZBKZAABLZMZUSURBNZUQV
+      AURBOABUAZUBUQVAUSUQVAIVBCPZDPZBLZVDEPZBLVGVEBLUCZTZEURQZDURQCURQZUSUQVBV
+      AVCUKVAVKUQVAVJCDURURVAVDURHZVEURHZIZIZVIEURVOVIUTVHTZVAVPVNUTVHUDUEVNVIV
+      PUFVAVNVFUTVHVLVMVDAVEABVDARVEARUGUHSULUIUJSCDEURBUMUNUOUP $.
   $}
 
   ${
