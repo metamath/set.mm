@@ -28564,17 +28564,17 @@ $)
   $}
 
   ${
-    $d A y $.  $d B y $.  $d C y $.  $d D y $.  $d x y $.
+    $d A y $.  $d B y $.  $d C y $.  $d V y $.  $d x y $.
     $( Distribute proper substitution through a subclass relation.
        (Contributed by Alan Sare, 22-Jul-2012.)  (Proof shortened by Alexander
        van der Vekens, 23-Jul-2017.) $)
-    sbcss $p |- ( A e. B -> ( [. A / x ]. C C_ D <->
-      [_ A / x ]_ C C_ [_ A / x ]_ D ) ) $=
-      ( vy wcel cv wi wal wsbc csb wss sbcalg sbcimg sbcel2g bitrd albidv dfss2
-      imbi12d sbcbii 3bitr4g ) BCGZFHZDGZUDEGZIZFJZABKZUDABDLZGZUDABELZGZIZFJZD
-      EMZABKUJULMUCUIUGABKZFJUOUGFABCNUCUQUNFUCUQUEABKZUFABKZIUNUEUFABCOUCURUKU
-      SUMABUDDCPABUDECPTQRQUPUHABFDESUAFUJULSUB $.
-
+    sbcssg $p |- ( A e. V -> ( [. A / x ]. B C_ C <->
+      [_ A / x ]_ B C_ [_ A / x ]_ C ) ) $=
+      ( vy wcel cv wi wal csb wss sbcalg sbcimg sbcel2g imbi12d bitrd
+      wsbc albidv dfss2 sbcbii 3bitr4g ) BEGZFHZCGZUDDGZIZFJZABRZUDAB
+      CKZGZUDABDKZGZIZFJZCDLZABRUJULLUCUIUGABRZFJUOUGFABEMUCUQUNFUCUQ
+      UEABRZUFABRZIUNUEUFABENUCURUKUSUMABUDCEOABUDDEOPQSQUPUHABFCDTUA
+      FUJULTUB $.
   $}
 
 $(
