@@ -37728,19 +37728,6 @@ $)
       VKGHFUJULUN $.
   $}
 
-  ${
-    $d x y z $.
-    $( Ordinal numbers and ordered pairs are disjoint collections.  This
-       theorem can be used if we want to extend a set of ordinal numbers or
-       ordered pairs with disjoint elements.  See also ~ snsn0non .
-       (Contributed by NM, 1-Jun-2004.)  (Proof shortened by Andrew Salmon,
-       27-Aug-2011.) $)
-    onxpdisj $p |- ( On i^i ( _V X. _V ) ) = (/) $=
-      ( vx con0 cvv cxp cin c0 wceq cv wcel wn disj on0eqel 0nelxp eleq1 mtbiri
-      wo 0nelelxp con2i jaoi syl mprgbir ) BCCDZEFGAHZUBIZJZABABUBKUCBIUCFGZFUC
-      IZPUEUCLUFUEUGUFUDFUBICCMUCFUBNOUDUGCCUCQRSTUA $.
-  $}
-
   $( The class of ordinal numbers is not equal to the universe.  (Contributed
      by NM, 16-Jun-2007.)  (Proof shortened by Mario Carneiro, 10-Jan-2013.) $)
   onnev $p |- On =/= _V $=
