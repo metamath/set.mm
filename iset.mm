@@ -37715,27 +37715,11 @@ $)
   ${
     $d A w y z $.  $d B w y z $.  $d C w y z $.  $d D w y z $.  $d w x y z $.
     $( Distribute proper substitution through the cross product of two
-       classes.  (Contributed by Alan Sare, 10-Nov-2012.)  (Revised by NM,
-       23-Aug-2018.) $)
-    csbxp $p |- [_ A / x ]_ ( B X. C ) = ( [_ A / x ]_ B X. [_ A / x ]_ C ) $=
-      ( vz vw vy cv wcel wex cab csb cxp wsbc sbcex2 sbcan bitri intnand eqtri
-      wa cop wceq csbab cvv wb sbcg sbcel2 anbi12i a1i anbi12d sbcex con3i noel
-      wn c0 neleqtrrd 2falsed pm2.61i exbii abbii copab df-opab csbeq2i 3eqtr4i
-      csbprc df-xp ) ABEHFHZGHZUAUBZVGCIZVHDIZTZTZGJZFJZEKZLZVIVGABCLZIZVHABDLZ
-      IZTZTZGJZFJZEKZABCDMZLVRVTMZVQVOABNZEKWFVOAEBUCWIWEEWIVNABNZFJWEVNFABOWJW
-      DFWJVMABNZGJWDVMGABOWKWCGWKVIABNZVLABNZTZWCVIVLABPBUDIZWNWCUEWOWLVIWMWBVI
-      ABUDUFWMWBUEWOWMVJABNZVKABNZTWBVJVKABPWPVSWQWAABVGCUGABVHDUGUHQUIUJWOUNZW
-      NWCWRWMWLWMWOVLABUKULRWRWBVIWRWAVSWRVTUOVHVHUOIUNWRVHUMUIABDVEUPRRUQURQUS
-      QUSQUTSABWGVPWGVLFGVAVPFGCDVFVLFGEVBSVCWHWBFGVAWFFGVRVTVFWBFGEVBSVD $.
-
-    $( Distribute proper substitution through the cross product of two
-       classes.  (Contributed by Alan Sare, 10-Nov-2012.)  Obsolete as of
-       23-Aug-2018.  Use ~ csbrn instead.  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    csbxpgOLD $p |- ( A e. D -> [_ A / x ]_ ( B X. C ) =
+       classes.  (Contributed by Alan Sare, 10-Nov-2012.) $)
+    csbxpg $p |- ( A e. D -> [_ A / x ]_ ( B X. C ) =
                 ( [_ A / x ]_ B X. [_ A / x ]_ C ) ) $=
-      ( vz vw vy wcel cv wa wex cab csb cxp wsbc sbcexgOLD sbcangOLD sbcel2gOLD
-      bitrd wceq csbabgOLD sbcg anbi12d exbidv abbidv eqtrd copab df-xp df-opab
+      ( vz vw vy wcel cv wa wex cab csb cxp wsbc sbcexg sbcang sbcel2g
+      bitrd wceq csbabg sbcg anbi12d exbidv abbidv eqtrd copab df-xp df-opab
       cop eqtri csbeq2i 3eqtr4g ) BEIZABFJGJZHJZUKUAZUPCIZUQDIZKZKZHLZGLZFMZNZU
       RUPABCNZIZUQABDNZIZKZKZHLZGLZFMZABCDOZNVGVIOZUOVFVDABPZFMVOVDAFBEUBUOVRVN
       FUOVRVCABPZGLVNVCGABEQUOVSVMGUOVSVBABPZHLVMVBHABEQUOVTVLHUOVTURABPZVAABPZ
