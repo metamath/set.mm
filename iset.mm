@@ -37963,8 +37963,8 @@ $)
     $( A singleton of an ordered pair is a relation.  (Contributed by NM,
        17-May-1998.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
     relsnop $p |- Rel { <. A , B >. } $=
-      ( cop csn wrel cvv cxp wcel opelvv opex relsn mpbir ) ABEZFGOHHIJABCDKOAB
-      LMN $.
+      ( cop csn wrel cvv cxp wcel opelvv opexg mp2an relsn mpbir ) AB
+      EZFGPHHIJABCDKPAHJBHJPHJCDABLMNO $.
   $}
 
   ${
