@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Rewrap source file $1 (default "set.mm")
+source="${1:-set.mm}"
+
+metamath "read ${source}" 'save proof */c/f' \
+  "write source ${source} /rewrap" quit

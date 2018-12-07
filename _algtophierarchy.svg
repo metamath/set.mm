@@ -1,0 +1,979 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	version="1.1" width="990px" height="962px" viewBox="-0.5 -0.5 990 962"
+	content="&lt;mxfile modified=&quot;2018-12-07T00:04:34.165Z&quot; host=&quot;www.draw.io&quot; agent=&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36&quot; etag=&quot;QMWRgWHRpThRo2Xz7rp4&quot; version=&quot;9.5.9&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;VvEZPDWqsug1bKHTSRZH&quot; name=&quot;Page-1&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;"
+	style="background-color: rgb(255, 255, 255);">
+	<defs />
+	<path
+		d="M 637.71 260.53 L 637.71 265.24 Q 637.71 269.94 627.71 269.94 L 518.29 269.94 Q 508.29 269.94 508.29 279.94 L 508.29 359.94 Q 508.29 369.94 518.29 369.94 L 627.71 369.94 Q 637.71 369.94 637.71 378 L 637.71 386.06"
+		fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 637.71 396.06 L 634.37 386.06 L 641.04 386.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="499" y="320" width="20" height="20" fill="#ffffff"
+		stroke="none" pointer-events="none" />
+	<path
+		d="M 637.71 460.53 L 637.71 465.24 Q 637.71 469.94 627.71 469.94 L 518.29 469.94 Q 508.29 469.94 508.29 479.94 L 508.29 659.94 Q 508.29 669.94 518.29 669.94 L 627.71 669.94 Q 637.71 669.94 637.71 678 L 637.71 686.06"
+		fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 637.71 696.06 L 634.37 686.06 L 641.04 686.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="499" y="620" width="20" height="20" fill="#ffffff"
+		stroke="none" pointer-events="none" />
+	<path
+		d="M 377.71 460.53 L 377.71 465.24 Q 377.71 469.94 367.71 469.94 L 267.71 469.94 Q 257.71 469.94 257.71 479.94 L 257.71 659.94 Q 257.71 669.94 267.71 669.94 L 367.71 669.94 Q 377.71 669.94 377.71 678 L 377.71 686.06"
+		fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 377.71 696.06 L 374.37 686.06 L 381.04 686.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="249.5" y="520" width="20" height="20" fill="#ffffff"
+		stroke="none" pointer-events="none" />
+	<rect x="248" y="620" width="20" height="20" fill="#ffffff"
+		stroke="none" pointer-events="none" />
+	<rect x="808" y="300" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(857.5,312.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="78" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				Ban
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Banach Space
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="39" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 808.29 329.94 L 742.77 329.94" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 732.77 329.94 L 742.77 326.61 L 742.77 333.27 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="548" y="300" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(576.5,312.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="120" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				NrmVec
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Normed Vector Space
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="60" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<rect x="808" y="900.21" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(833.5,912.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="127" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-weight: normal">
+				<span style="font-size: 16px">
+					CMetSp
+					<br />
+				</span>
+				<i style="font-family: &quot;verdana&quot; ; font-size: 11px">
+					Complete Metric Space
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="64" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path
+		d="M 897.71 360.53 L 897.71 379.94 Q 897.71 389.94 897.71 399.94 L 897.71 886.06"
+		fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 897.71 896.06 L 894.37 886.06 L 901.04 886.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 917.71 360.53 L 917.71 889.41" fill="none" stroke="#66b2ff"
+		stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 917.71 899.41 L 914.37 889.41 L 921.04 889.41 Z" fill="#66b2ff"
+		stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<g transform="translate(926.5,364.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="43" height="12"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">
+				Scalar
+				<br />
+			</div></div></foreignObject>
+			<text x="22" y="12" fill="#000000" text-anchor="middle"
+				font-size="12px" font-family="Courier New">Scalar&lt;br&gt;</text>
+		</switch>
+	</g>
+	<rect x="548" y="0" width="180" height="60" fill="#dae8fc" stroke="#6c8ebf"
+		pointer-events="none" />
+	<g transform="translate(573.5,12.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="126" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-weight: normal">
+				<span style="font-size: 16px">
+					CHil
+					<br />
+				</span>
+				<i style="font-family: &quot;verdana&quot; ; font-size: 11px">
+					Complex Hilbert Space
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="63" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<rect x="548" y="200" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(562.5,212.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="149" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-weight: normal">
+				<span style="font-size: 16px">
+					CPreHil
+					<br />
+				</span>
+				<i style="font-family: &quot;verdana&quot; ; font-size: 11px">
+					Complex Pre-Hilbert Space
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="75" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<rect x="548" y="400" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(593.5,412.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="87" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				NrmMod
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Normed Module
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="44" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 548.29 729.94 L 470.53 729.94" fill="none" stroke="#b3b3b3"
+		stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none" />
+	<path d="M 477.41 727.27 L 469.41 729.94 L 477.41 732.61" fill="none"
+		stroke="#b3b3b3" stroke-miterlimit="10" pointer-events="none" />
+	<g transform="translate(484.5,713.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="46" height="12"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 11px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;"><font face="Courier New" color="#b3b3b3">
+				~ngptgp
+			</font></div></div></foreignObject>
+			<text x="23" y="12" fill="#000000" text-anchor="middle"
+				font-size="11px" font-family="Helvetica">[Not supported by viewer]</text>
+		</switch>
+	</g>
+	<rect x="548" y="700" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(596.5,712.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="81" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				NrmGrp
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Normed Group
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="41" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<rect x="28" y="400" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(84.5,412.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="64" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				LMod
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Left Module
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="32" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 288.29 429.94 L 222.77 429.94" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 212.77 429.94 L 222.77 426.61 L 222.77 433.27 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 637.71 60.53 L 637.71 186.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 637.71 196.06 L 634.37 186.06 L 641.04 186.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path
+		d="M 728.29 29.94 L 887.71 29.94 Q 897.71 29.94 897.71 39.94 L 897.71 286.06"
+		fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 897.71 296.06 L 894.37 286.06 L 901.04 286.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="28" y="300" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(68.5,312.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="97" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				LVec
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Left Vector Space
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="49" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 288.29 329.94 L 222.77 329.94" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 212.77 329.94 L 222.77 326.61 L 222.77 333.27 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 637.71 360.53 L 637.71 386.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 637.71 396.06 L 634.37 386.06 L 641.04 386.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="28" y="200" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(68.5,212.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="97" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-weight: normal">
+				<span style="font-size: 16px">
+					PreHil
+					<br />
+				</span>
+				<i style="font-family: &quot;verdana&quot; ; font-size: 11px">
+					pre-Hilbert Space
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="49" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path
+		d="M 548.29 229.94 L 407.71 229.94 Q 397.71 229.94 387.71 229.94 L 222.77 229.94"
+		fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 212.77 229.94 L 222.77 226.61 L 222.77 233.27 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 117.71 260.53 L 117.71 286.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 117.71 296.06 L 114.37 286.06 L 121.04 286.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 117.71 360.53 L 117.71 386.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 117.71 396.06 L 114.37 386.06 L 121.04 386.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="28" y="700" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(99.5,712.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="34" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				Grp
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Group
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="17" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<rect x="548" y="900" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(601.5,912.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="71" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-weight: normal">
+				<span style="font-size: 16px">
+					MetSp
+					<br />
+				</span>
+				<i style="font-family: &quot;verdana&quot; ; font-size: 11px">
+					Metric Space
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="36" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 637.71 760.53 L 637.71 886.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 637.71 896.06 L 634.37 886.06 L 641.04 886.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="548" y="600" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(600.5,612.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="72" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				NrmRing
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Normed Ring
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="36" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 637.71 660.53 L 637.71 686.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 637.71 696.06 L 634.37 686.06 L 641.04 686.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="28" y="600" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(97.5,612.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="38" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				Ring
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Ring
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="19" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 117.71 660.53 L 117.71 686.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 117.71 696.06 L 114.37 686.06 L 121.04 686.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path
+		d="M 117.71 460.53 L 117.71 465.24 Q 117.71 469.94 107.71 469.94 L 18.29 469.94 Q 8.29 469.94 8.29 479.94 L 8.29 659.94 Q 8.29 669.94 18.29 669.94 L 107.71 669.94 Q 117.71 669.94 117.71 678 L 117.71 686.06"
+		fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 117.71 696.06 L 114.37 686.06 L 121.04 686.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 208.29 445.24 L 218 460 L 218 600 L 214.44 605.38"
+		fill="none" stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 208.91 613.72 L 211.66 603.54 L 217.21 607.22 Z" fill="#66b2ff"
+		stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<g transform="translate(216.5,443.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="43" height="12"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">
+				Scalar
+				<br />
+			</div></div></foreignObject>
+			<text x="22" y="12" fill="#000000" text-anchor="middle"
+				font-size="12px" font-family="Courier New">Scalar&lt;br&gt;</text>
+		</switch>
+	</g>
+	<path d="M 548.29 629.94 L 482.77 629.94" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 472.77 629.94 L 482.77 626.61 L 482.77 633.27 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 808.29 929.94 L 742.77 929.94" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 732.77 929.94 L 742.77 926.61 L 742.77 933.27 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="28" y="100" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(79.5,112.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="74" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-weight: normal">
+				<span style="font-size: 16px">
+					Hil
+					<br />
+				</span>
+				<i style="font-family: &quot;verdana&quot; ; font-size: 11px">
+					Hilbert Space
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="37" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path
+		d="M 548.29 29.94 L 127.71 29.94 Q 117.71 29.94 117.71 39.94 L 117.71 86.06"
+		fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 117.71 96.06 L 114.37 86.06 L 121.04 86.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path
+		d="M 117.71 160.53 L 117.71 170.53 Q 117.71 180.53 117.71 183.03 L 117.71 185.53"
+		fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 117.71 195.53 L 114.37 185.53 L 121.04 185.53 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="28" y="500" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(80.5,512.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="72" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				DivRing
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Division Ring
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="36" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 117.71 560.53 L 117.71 586.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 117.71 596.06 L 114.37 586.06 L 121.04 586.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="288" y="700" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(327.5,712.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="99" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				TopGrp
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Topological Group
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="50" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<rect x="288" y="800" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(324.5,812.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="105" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				TopMnd
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Topological Monoid
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="53" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<rect x="288" y="600" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(331.5,612.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="90" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				TopRing
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Topological Ring
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="45" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<rect x="288" y="500" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(308.5,512.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="137" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				TopDRing
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Topological Division Ring
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="69" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path
+		d="M 288.29 729.94 L 258.29 729.94 Q 248.29 729.94 238.29 729.94 L 222.77 729.94"
+		fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 212.77 729.94 L 222.77 726.61 L 222.77 733.27 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 377.71 760.53 L 377.71 786.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 377.71 796.06 L 374.37 786.06 L 381.04 786.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="28" y="800" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(97.5,812.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="39" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-weight: normal">
+				<span style="font-size: 16px">
+					Mnd
+					<br />
+				</span>
+				<i style="font-family: &quot;verdana&quot; ; font-size: 11px">
+					Monoid
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="20" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 288.29 829.94 L 222.77 829.94" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 212.77 829.94 L 222.77 826.61 L 222.77 833.27 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 117.71 760.53 L 117.71 786.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 117.71 796.06 L 114.37 786.06 L 121.04 786.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path
+		d="M 288.29 629.94 L 258.29 629.94 Q 248.29 629.94 238.29 629.94 L 222.77 629.94"
+		fill="none" stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 212.77 629.94 L 222.77 626.61 L 222.77 633.27 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 377.71 660.53 L 377.71 686.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 377.71 696.06 L 374.37 686.06 L 381.04 686.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 468.29 645.24 L 478 660 L 478 800 L 474.44 805.38"
+		fill="none" stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 468.91 813.72 L 471.66 803.54 L 477.21 807.22 Z" fill="#66b2ff"
+		stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<g transform="translate(486.5,674.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="43" height="12"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">
+				mulGrp
+				<br />
+			</div></div></foreignObject>
+			<text x="22" y="12" fill="#000000" text-anchor="middle"
+				font-size="12px" font-family="Courier New">mulGrp&lt;br&gt;</text>
+		</switch>
+	</g>
+	<path d="M 288.29 529.94 L 222.77 529.94" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 212.77 529.94 L 222.77 526.61 L 222.77 533.27 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 377.71 560.53 L 377.71 586.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 377.71 596.06 L 374.37 586.06 L 381.04 586.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<rect x="288" y="400" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(324.5,412.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="105" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				TopMod
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Topological Module
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="53" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<rect x="288" y="300" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(307.5,312.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="138" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><span style="font-weight: normal"><font style="font-size: 16px">
+				TopVec
+			</font></span><br /><font
+				face="Verdana" style="font-weight: normal" size="1">
+				<i style="font-size: 11px">
+					Topological Vector Space
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="69" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 548.29 329.94 L 482.77 329.94" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 472.77 329.94 L 482.77 326.61 L 482.77 333.27 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 377.71 360.53 L 377.71 386.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 377.71 396.06 L 374.37 386.06 L 381.04 386.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 468.29 345.24 L 488 360 L 488 510 L 476.11 522.03"
+		fill="none" stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 469.08 529.15 L 473.74 519.69 L 478.48 524.38 Z" fill="#66b2ff"
+		stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<g transform="translate(496.5,374.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="43" height="12"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">
+				Scalar
+				<br />
+			</div></div></foreignObject>
+			<text x="22" y="12" fill="#000000" text-anchor="middle"
+				font-size="12px" font-family="Courier New">Scalar&lt;br&gt;</text>
+		</switch>
+	</g>
+	<path d="M 468.29 445.24 L 478 460 L 478 600 L 474.44 605.38"
+		fill="none" stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 468.91 613.72 L 471.66 603.54 L 477.21 607.22 Z" fill="#66b2ff"
+		stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<g transform="translate(496.5,444.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="43" height="12"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">
+				Scalar
+				<br />
+			</div></div></foreignObject>
+			<text x="22" y="12" fill="#000000" text-anchor="middle"
+				font-size="12px" font-family="Courier New">Scalar&lt;br&gt;</text>
+		</switch>
+	</g>
+	<path d="M 548.29 429.94 L 482.77 429.94" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 472.77 429.94 L 482.77 426.61 L 482.77 433.27 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 208.29 214.65 L 537.18 214.65" fill="none" stroke="#66b2ff"
+		stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 547.18 214.65 L 537.18 217.98 L 537.18 211.31 Z" fill="#66b2ff"
+		stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<g transform="translate(216.5,193.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="43" height="12"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">
+				toCHil
+				<br />
+			</div></div></foreignObject>
+			<text x="22" y="12" fill="#000000" text-anchor="middle"
+				font-size="12px" font-family="Courier New">toCHil&lt;br&gt;</text>
+		</switch>
+	</g>
+	<path d="M 190.65 761.71 L 208 770 L 558 770 L 569.65 765.62"
+		fill="none" stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 579.01 762.1 L 570.83 768.74 L 568.48 762.5 Z" fill="#66b2ff"
+		stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<g transform="translate(189.5,774.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="58" height="12"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">
+				toNrmGrp
+				<br />
+			</div></div></foreignObject>
+			<text x="29" y="12" fill="#000000" text-anchor="middle"
+				font-size="12px" font-family="Courier New">toNrmGrp&lt;br&gt;</text>
+		</switch>
+	</g>
+	<path d="M 728 445.17 L 738 460.5 L 738 600 L 734.12 605.88" fill="none"
+		stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 728.62 614.23 L 731.34 604.05 L 736.9 607.72 Z" fill="#66b2ff"
+		stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<g transform="translate(746.5,441.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="43" height="12"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">
+				Scalar
+				<br />
+			</div></div></foreignObject>
+			<text x="22" y="12" fill="#000000" text-anchor="middle"
+				font-size="12px" font-family="Courier New">Scalar&lt;br&gt;</text>
+		</switch>
+	</g>
+	<ellipse cx="828" cy="730" rx="40" ry="40" fill="#d5e8d4"
+		stroke="#82b366" pointer-events="none" />
+	<g transform="translate(811.5,722.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="31" height="13"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 31px; white-space: nowrap; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font face="Verdana">
+				<span style="font-size: 11px">
+					<i>Norm</i>
+				</span>
+			</font><br /></div></div></foreignObject>
+			<text x="16" y="13" fill="#000000" text-anchor="middle"
+				font-size="12px" font-family="Courier New">[Not supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 728.29 729.94 L 777.18 729.94" fill="none" stroke="#66b2ff"
+		stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 787.18 729.94 L 777.18 733.27 L 777.18 726.61 Z" fill="#66b2ff"
+		stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<g transform="translate(734.5,714.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="29" height="12"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">
+				norm
+				<br />
+			</div></div></foreignObject>
+			<text x="15" y="12" fill="#000000" text-anchor="middle"
+				font-size="12px" font-family="Courier New">norm&lt;br&gt;</text>
+		</switch>
+	</g>
+	<rect x="288" y="900" width="180" height="60" fill="#dae8fc"
+		stroke="#6c8ebf" pointer-events="none" />
+	<g transform="translate(327.5,912.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="99" height="33"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 14px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; font-weight: bold; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font style="font-weight: normal">
+				<span style="font-size: 16px">
+					TopSp
+					<br />
+				</span>
+				<i style="font-family: &quot;verdana&quot; ; font-size: 11px">
+					Topological Space
+					<br />
+				</i>
+			</font></div></div></foreignObject>
+			<text x="50" y="24" fill="#000000" text-anchor="middle"
+				font-size="14px" font-family="Courier New" font-weight="bold">[Not
+				supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 377.71 860.53 L 377.71 886.06" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 377.71 896.06 L 374.37 886.06 L 381.04 886.06 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<path d="M 548.29 929.94 L 482.77 929.94" fill="none" stroke="#000000"
+		stroke-width="4" stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 472.77 929.94 L 482.77 926.61 L 482.77 933.27 Z" fill="#000000"
+		stroke="#000000" stroke-width="4" stroke-miterlimit="10"
+		pointer-events="none" />
+	<ellipse cx="308" cy="130" rx="40" ry="40" fill="#d5e8d4"
+		stroke="#82b366" pointer-events="none" />
+	<g transform="translate(268.5,115.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="77" height="28"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 77px; white-space: normal; overflow-wrap: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;"><font face="Verdana">
+				<span style="font-size: 11px">
+					<i>Orthogonal Projection</i>
+				</span>
+			</font><br /></div></div></foreignObject>
+			<text x="39" y="20" fill="#000000" text-anchor="middle"
+				font-size="12px" font-family="Courier New">[Not supported by viewer]</text>
+		</switch>
+	</g>
+	<path d="M 208.29 129.94 L 256 129.94" fill="none" stroke="#66b2ff"
+		stroke-miterlimit="10" pointer-events="none" />
+	<path d="M 266 129.94 L 256 133.27 L 256 126.61 Z" fill="#66b2ff"
+		stroke="#66b2ff" stroke-miterlimit="10" pointer-events="none" />
+	<g transform="translate(212.5,114.5)">
+		<switch>
+			<foreignObject style="overflow:visible;"
+				pointer-events="all" width="29" height="12"
+				requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display: inline-block; font-size: 12px; font-family: &quot;Courier New&quot;; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml"
+				style="display:inline-block;text-align:inherit;text-decoration:inherit;background-color:#ffffff;">
+				proj
+				<br />
+			</div></div></foreignObject>
+			<text x="15" y="12" fill="#000000" text-anchor="middle"
+				font-size="12px" font-family="Courier New">proj&lt;br&gt;</text>
+		</switch>
+	</g>
+</svg>
