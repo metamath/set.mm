@@ -1,0 +1,32 @@
+#!/bin/sh
+# List the metamath 100 theorems that are in mathboxes (not in the main body)
+
+# Defend against mistakes in writing shell scripts
+IFS="$(printf '\n\t')"
+set -e
+
+# Create list of metamath 100. Skip mm* since those aren't really theorems.
+mm100=$(
+  grep -o -E 'mpeuni\/[^.]*.html' mm_100.html |
+    sed -E -e 's/mpeuni\///' -e 's/\.html$//' -e '/^mm.+/d'
+)
+
+# Return line# of label $1 within set.mm.
+find_line_of_proof () {
+  # Presumes that it's a label followed by $p on same line (true in practice)
+  grep -n "^ *$1 \$p " set.mm | head -1 | sed -e 's/:.*//'
+}
+
+mathbox_line=$(find_line_of_proof mathbox)
+
+for theorem in $mm100
+do
+  line=$(find_line_of_proof "$theorem")
+  if [ -z "$line" ]; then
+    echo "NOT FOUND: $theorem"
+    continue
+  fi 
+  if [ "$line" -gt "$mathbox_line" ]; then
+    echo "$line $theorem"
+  fi
+done | sort -n
