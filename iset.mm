@@ -38017,21 +38017,6 @@ $)
       UTTVHVFWKVCVAVB $.
   $}
 
-  ${
-    $d x y A $.  $d x y B $.
-    $( A cross product is included in the power of the power of the union of
-       its arguments.  (Contributed by NM, 13-Sep-2006.)
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
-    xpsspwOLD $p |- ( A X. B ) C_ ~P ~P ( A u. B ) $=
-      ( vx vy cxp cun cpw relxp cv wcel csn cpr wss snssi syl elpw sylibr sylib
-      wa vex opelxp ssun3 snex adantr df-pr ssun4 anim12i unss syl5eqss zfpair2
-      cop jca prex dfop eleq1i prss 3bitr4ri sylbi relssi ) CDABEZABFZGZGZABHCI
-      ZDIZUKZUTJVDAJZVEBJZSZVFVCJZVDVEABUAVIVDKZVBJZVDVELZVBJZSZVJVIVLVNVGVLVHV
-      GVKVAMZVLVGVKAMVPVDANVKABUBOZVKVAVDUCZPQUDVIVMVAMVNVIVMVKVEKZFZVAVDVEUEVI
-      VPVSVAMZSVTVAMVGVPVHWAVQVHVSBMWAVEBNVSBAUFOUGVKVSVAUHRUIVMVACDUJZPQULVKVM
-      LZVCJWCVBMVJVOWCVBVKVMUMPVFWCVCVDVECTDTUNUOVKVMVBVRWBUPUQRURUS $.
-  $}
-
   $( The double class union of a cross product is included in the union of its
      arguments.  (Contributed by NM, 16-Sep-2006.) $)
   unixpss $p |- U. U. ( A X. B ) C_ ( A u. B ) $=
