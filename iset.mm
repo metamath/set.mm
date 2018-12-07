@@ -38122,7 +38122,7 @@ $)
        [Mendelson] p. 235.  (Contributed by NM, 26-Apr-1998.)  (Revised by
        Mario Carneiro, 21-Dec-2013.) $)
     reli $p |- Rel _I $=
-      ( vx vy weq cid dfid3 relopabi ) ABCABDABEF $.
+      ( vx vy cv wceq cid df-id relopabi ) ACBCDABEABFG $.
 
     $( The membership relation is a relation.  (Contributed by NM,
        26-Apr-1998.)  (Revised by Mario Carneiro, 21-Dec-2013.) $)
