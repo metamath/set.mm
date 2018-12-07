@@ -37728,12 +37728,6 @@ $)
       VKGHFUJULUN $.
   $}
 
-  $( The class of ordinal numbers is not equal to the universe.  (Contributed
-     by NM, 16-Jun-2007.)  (Proof shortened by Mario Carneiro, 10-Jan-2013.) $)
-  onnev $p |- On =/= _V $=
-    ( c0 csn con0 wcel wn cvv wne snsn0non wceq snex syl5eleqr necon3bi ax-mp
-    id ) ABZBZCDZECFGHQCFCFIZPFCOJRNKLM $.
-
   $( Equality theorem for the relation predicate.  (Contributed by NM,
      1-Aug-1994.) $)
   releq $p |- ( A = B -> ( Rel A <-> Rel B ) ) $=
