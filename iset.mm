@@ -38253,9 +38253,12 @@ $)
        (Contributed by Mario Carneiro, 14-Feb-2015.) $)
     rexiunxp $p |- ( E. x e. U_ y e. A ( { y } X. B ) ph <->
       E. y e. A E. z e. B ps ) $=
-      ( wn cv csn cxp ciun wral wrex cop wceq notbid raliunxp dfrex2 3bitr4i
-      ralnex ralbii bitri notbii ) AIZCDFDJZKGLMZNZIBEGOZIZDFNZIACUHOUJDFOUIULU
-      IBIZEGNZDFNULUFUMCDEFGCJUGEJPQABHRSUNUKDFBEGUBUCUDUEACUHTUJDFTUA $.
+      ( cv csn cxp ciun wcel wa wex wrex cop wceq exbii bitri eliunxp
+      anbi1i 19.41vv bitr4i exrot3 anass anbi2d ceqsexv 2exbii df-rex
+      opexv r2ex 3bitr4i ) CIZDFDIZJGKLZMZANZCOZUOFMEIZGMNZBNZEODOZAC
+      UPPBEGPDFPUSUNUOUTQZRZVANZANZEODOZCOZVCURVHCURVFEODOZANVHUQVJAD
+      EFGUNUAUBVFADEUCUDSVIVGCOZEODOVCVGCDEUEVKVBDEVKVEVAANZNZCOVBVGV
+      MCVEVAAUFSVLVBCVDDEUKVEABVAHUGUHTUITTACUPUJBDEFGULUM $.
 
     $d y B $.
     $( Universal quantification restricted to a cross product is equivalent to
