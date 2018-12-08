@@ -38308,9 +38308,15 @@ $)
     $( Version of ~ rexxp with bound-variable hypotheses.  (Contributed by NM,
        19-Dec-2008.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
     rexxpf $p |- ( E. x e. ( A X. B ) ph <-> E. y e. A E. z e. B ps ) $=
-      ( wn cxp wral wrex nfn cv cop wceq dfrex2 notbid ralxpf ralnex 3bitr4i
-      ralbii bitri notbii ) ALZCFGMZNZLBEGOZLZDFNZLACUIOUKDFOUJUMUJBLZEGNZDFNUM
-      UHUNCDEFGADHPAEIPBCJPCQDQEQRSABKUAUBUOULDFBEGUCUEUFUGACUITUKDFTUD $.
+      ( vv vw vu wrex wsb cv wceq vex nfsb cbvrexsv rexbii nfcv nfs1v
+      cxp nfv nfrexxy sbequ12 rexbidv cbvrex cop wa wb eqvinop sbhypf
+      wex nfbi opth sylan9bb sylbi exlimi rexxp 3bitr4ri bitri ) ACFG
+      UEZOACLPZLVEOZBEGOZDFOZACLVEUABDMPZEGOZMFOVJENPZNGOZMFOVIVGVKVM
+      MFVJENGUAUBVHVKDMFVHMUFVJDEGDGUCBDMUDZUGDQZMQZRZBVJEGBDMUHZUIUJ
+      VFVLLMNFGLQZVPNQZUKZRVSVOEQZUKZRZWCWARZULZEUPZDUPVFVLUMZDEVSVPV
+      TMSNSUNWGWHDVFVLDACLDHTVJENDVNTUQWFWHEVFVLEACLEITVJENUDUQWDVFBW
+      EVLABCLWCJKUOWEVQWBVTRZULBVLUMVOWBVPVTDSESURVQBVJWIVLVRVJENUHUS
+      UTUSVAVAUTVBVCVD $.
   $}
 
   ${
