@@ -38181,18 +38181,19 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d x y z C $.  $d y z B $.
+    $d x y z w A $.  $d x y z w C $.  $d z w B $.
     $( Distributive law for cross product over indexed intersection.
-       (Contributed by Mario Carneiro, 21-Mar-2015.) $)
-    xpiindi $p |- ( A =/= (/) ->
+       (Contributed by Jim Kingdon, 7-Dec-2018.) $)
+    xpiindim $p |- ( E. y y e. A ->
       ( C X. |^|_ x e. A B ) = |^|_ x e. A ( C X. B ) ) $=
-      ( vy vz ciin cxp wrel wa wral relxp cv wcel wb eliin ax-mp opelxp 3bitr4g
-      cvv wne wceq wrex rgenw r19.2z mpan2 reliin syl jctil cop r19.28zv bicomd
-      c0 vex anbi2i ralbii opex eqrelrdv2 mpancom ) DABCGZHZIZABDCHZGZIZJBUMUAZ
-      VAVDUBVFVEVBVFVCIZABUCZVEVFVGABKVHVGABDCLUDVGABUEUFABVCUGUHDUTLUIVFEFVAVD
-      VFEMZDNZFMZUTNZJZVIVKUJZVCNZABKZVNVANVNVDNZVFVJVKCNZABKZJZVJVRJZABKZVMVPV
-      FWBVTVJVRABUKULVLVSVJVKTNVLVSOFUNAVKBCTPQUOVOWAABVIVKDCRUPSVIVKDUTRVNTNVQ
-      VPOVIVKUQAVNBVCTPQSURUS $.
+      ( vw vz ciin cxp wrel wa cv wcel wex wral relxp wb cvv eliin ax-mp cbvexv
+      wceq wrex rgenw eleq1 r19.2m sylanbr mpan2 reliin syl cop r19.28mv sylbir
+      jctil bicomd vex anbi2i opelxp ralbii 3bitr4g opexv eqrelrdv2 mpancom ) E
+      ACDHZIZJZACEDIZHZJZKBLZCMZBNZVEVHUBVLVIVFVLVGJZACUCZVIVLVMACOZVNVMACEDPUD
+      VLALZCMZANZVOVNVQVKABVPVJCUEUAZVMACUFUGUHACVGUIUJEVDPUNVLFGVEVHVLFLZEMZGL
+      ZVDMZKZVTWBUKZVGMZACOZWEVEMWEVHMZVLWAWBDMZACOZKZWAWIKZACOZWDWGVLWMWKVLVRW
+      MWKQVSWAWIACULUMUOWCWJWAWBRMWCWJQGUPAWBCDRSTUQWFWLACVTWBEDURUSUTVTWBEVDUR
+      WERMWHWGQFGVAAWECVGRSTUTVBVC $.
 
     $( Distributive law for cross product over relativized indexed
        intersection.  (Contributed by Mario Carneiro, 21-Mar-2015.) $)
