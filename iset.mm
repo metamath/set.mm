@@ -38196,13 +38196,12 @@ $)
       WERMWHWGQFGVAAWECVGRSTUTVBVC $.
 
     $( Distributive law for cross product over relativized indexed
-       intersection.  (Contributed by Mario Carneiro, 21-Mar-2015.) $)
-    xpriindi $p |- ( C X. ( D i^i |^|_ x e. A B ) ) =
-      ( ( C X. D ) i^i |^|_ x e. A ( C X. B ) ) $=
-      ( ciin cin cxp wceq c0 cvv iineq1 0iin syl6eq ineq2d xpeq2d eqtr4d xpindi
-      inv1 wne xpiindi syl5eq pm2.61ine ) DEABCFZGZHZDEHZABDCHZFZGZIBJBJIZUFUGU
-      JUKUEEDUKUEEKGEUKUDKEUKUDAJCFKABJCLACMNOESNPUKUJUGKGUGUKUIKUGUKUIAJUHFKAB
-      JUHLAUHMNOUGSNQBJTZUFUGDUDHZGUJDEUDRULUMUIUGABCDUAOUBUC $.
+       intersection.  (Contributed by Jim Kingdon, 7-Dec-2018.) $)
+    xpriindim $p |- ( E. y y e. A ->
+        ( C X. ( D i^i |^|_ x e. A B ) ) =
+        ( ( C X. D ) i^i |^|_ x e. A ( C X. B ) ) ) $=
+      ( cv wcel wex ciin cin cxp xpindi xpiindim ineq2d syl5eq ) BGCH
+      BIZEFACDJZKLEFLZERLZKSACEDLJZKEFRMQTUASABCDENOP $.
   $}
 
   ${
