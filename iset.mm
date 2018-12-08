@@ -38240,12 +38240,13 @@ $)
        (Contributed by Mario Carneiro, 29-Dec-2014.) $)
     raliunxp $p |- ( A. x e. U_ y e. A ( { y } X. B ) ph <->
       A. y e. A A. z e. B ps ) $=
-      ( cv csn cxp ciun wcel wi wal wa wral wex albii bitri wceq eliunxp imbi1i
-      cop 19.23vv bitr4i alrot3 impexp opex imbi2d ceqsalv 2albii r2al 3bitr4i
-      df-ral ) CIZDFDIZJGKLZMZANZCOZUQFMEIZGMPZBNZEODOZACURQBEGQDFQVAUPUQVBUDZU
-      AZVCPZANZEODOZCOZVEUTVJCUTVHERDRZANVJUSVLADEFGUPUBUCVHADEUEUFSVKVICOZEODO
-      VEVICDEUGVMVDDEVMVGVCANZNZCOVDVIVOCVGVCAUHSVNVDCVFUQVBUIVGABVCHUJUKTULTTA
-      CURUOBDEFGUMUN $.
+      ( cv csn cxp ciun wcel wi wal wa wral wex albii bitri cop opexv
+      wceq eliunxp imbi1i 19.23vv bitr4i alrot3 impexp imbi2d ceqsalv
+      2albii df-ral r2al 3bitr4i ) CIZDFDIZJGKLZMZANZCOZUQFMEIZGMPZBN
+      ZEODOZACURQBEGQDFQVAUPUQVBUAZUCZVCPZANZEODOZCOZVEUTVJCUTVHERDRZ
+      ANVJUSVLADEFGUPUDUEVHADEUFUGSVKVICOZEODOVEVICDEUHVMVDDEVMVGVCAN
+      ZNZCOVDVIVOCVGVCAUISVNVDCVFDEUBVGABVCHUJUKTULTTACURUMBDEFGUNUO
+      $.
 
     $( Write a double restricted quantification as one universal quantifier.
        In this version of ~ rexxp , ` B ( y ) ` is not assumed to be constant.
