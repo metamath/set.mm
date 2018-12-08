@@ -38295,14 +38295,15 @@ $)
     $( Version of ~ ralxp with bound-variable hypotheses.  (Contributed by NM,
        18-Aug-2006.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
     ralxpf $p |- ( A. x e. ( A X. B ) ph <-> A. y e. A A. z e. B ps ) $=
-      ( vw vu vv wral wsb cv wceq vex nfsb cxp cbvralsv ralbii nfcv nfs1v nfral
-      nfv sbequ12 ralbidv cbvral cop wa wex wb eqvinop nfbi opth sylan9bb sylbi
-      sbhypf exlimi ralxp 3bitr4ri bitri ) ACFGUAZOACLPZLVEOZBEGOZDFOZACLVEUBBD
-      MPZEGOZMFOVJENPZNGOZMFOVIVGVKVMMFVJENGUBUCVHVKDMFVHMUGVJDEGDGUDBDMUEZUFDQ
-      ZMQZRZBVJEGBDMUHZUIUJVFVLLMNFGLQZVPNQZUKZRVSVOEQZUKZRZWCWARZULZEUMZDUMVFV
-      LUNZDEVSVPVTMSNSUOWGWHDVFVLDACLDHTVJENDVNTUPWFWHEVFVLEACLEITVJENUEUPWDVFB
-      WEVLABCLWCJKUTWEVQWBVTRZULBVLUNVOWBVPVTDSESUQVQBVJWIVLVRVJENUHURUSURVAVAU
-      SVBVCVD $.
+      ( vv vw vu wral wsb cv wceq vex nfsb cbvralsv ralbii nfcv nfs1v
+      cxp nfv nfralxy sbequ12 ralbidv cbvral cop wa wb eqvinop sbhypf
+      wex nfbi opth sylan9bb sylbi exlimi ralxp 3bitr4ri bitri ) ACFG
+      UEZOACLPZLVEOZBEGOZDFOZACLVEUABDMPZEGOZMFOVJENPZNGOZMFOVIVGVKVM
+      MFVJENGUAUBVHVKDMFVHMUFVJDEGDGUCBDMUDZUGDQZMQZRZBVJEGBDMUHZUIUJ
+      VFVLLMNFGLQZVPNQZUKZRVSVOEQZUKZRZWCWARZULZEUPZDUPVFVLUMZDEVSVPV
+      TMSNSUNWGWHDVFVLDACLDHTVJENDVNTUQWFWHEVFVLEACLEITVJENUDUQWDVFBW
+      EVLABCLWCJKUOWEVQWBVTRZULBVLUMVOWBVPVTDSESURVQBVJWIVLVRVJENUHUS
+      UTUSVAVAUTVBVCVD $.
 
     $( Version of ~ rexxp with bound-variable hypotheses.  (Contributed by NM,
        19-Dec-2008.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
