@@ -38957,12 +38957,6 @@ $)
       UBDBNUEBOUBUBDBUBQPUADABRST $.
   $}
 
-  $( The domain of a square cross product.  (Contributed by NM,
-     28-Jul-1995.) $)
-  dmxpid $p |- dom ( A X. A ) = A $=
-    ( cxp cdm wceq c0 dm0 xpeq1 0xp syl6eq dmeqd id 3eqtr4a dmxp pm2.61ine ) AA
-    BZCZADAEAEDZECEPAFQOEQOEABEAEAGAHIJQKLAAMN $.
-
   $( The domain of the intersection of two square cross products.  Unlike
      ~ dmin , equality holds.  (Contributed by NM, 29-Jan-2008.) $)
   dmxpin $p |- dom ( ( A X. A ) i^i ( B X. B ) ) = ( A i^i B ) $=
