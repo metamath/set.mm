@@ -38951,10 +38951,10 @@ $)
     $( The domain of a cross product.  Part of Theorem 3.13(x) of [Monk1]
        p. 37.  (Contributed by NM, 28-Jul-1995.)  (Proof shortened by Andrew
        Salmon, 27-Aug-2011.) $)
-    dmxp $p |- ( B =/= (/) -> dom ( A X. B ) = A ) $=
-      ( vy vx c0 wne cxp cdm cv wcel wa copab df-xp dmeqi wex wral n0 ralrimivw
-      wceq biimpi dmopab3 sylib syl5eq ) BEFZABGZHCIAJDIBJZKCDLZHZAUEUGCDABMNUD
-      UFDOZCAPUHASUDUICAUDUIDBQTRUFCDAUAUBUC $.
+    dmxpm $p |- ( E. x x e. B -> dom ( A X. B ) = A ) $=
+      ( vy cv wcel wex cxp cdm wa copab df-xp dmeqi wral wceq ralrimivw
+      id dmopab3 sylib syl5eq ) AECFZAGZBCHZIDEBFUAJDAKZIZBUCUDDABCLMUB
+      UBDBNUEBOUBUBDBUBQPUADABRST $.
   $}
 
   $( The domain of a square cross product.  (Contributed by NM,
