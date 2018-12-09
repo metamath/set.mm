@@ -38957,10 +38957,15 @@ $)
       UBDBNUEBOUBUBDBUBQPUADABRST $.
   $}
 
-  $( The domain of the intersection of two square cross products.  Unlike
-     ~ dmin , equality holds.  (Contributed by NM, 29-Jan-2008.) $)
-  dmxpin $p |- dom ( ( A X. A ) i^i ( B X. B ) ) = ( A i^i B ) $=
-    ( cxp cin cdm inxp dmeqi dmxpid eqtri ) AACBBCDZEABDZKCZEKJLAABBFGKHI $.
+  ${
+    $d x A $.  $d x B $.
+    $( The domain of the intersection of two square cross products.  Unlike
+       ~ dmin , equality holds.  (Contributed by NM, 29-Jan-2008.) $)
+    dmxpinm $p |- ( E. x x e. ( A i^i B ) ->
+        dom ( ( A X. A ) i^i ( B X. B ) ) = ( A i^i B ) ) $=
+      ( cv cin wcel wex cxp cdm wceq inxp dmeqi a1i dmxpm eqtrd ) ADBCE
+      ZFAGZBBHCCHEZIZPPHZIZPSUAJQRTBBCCKLMAPPNO $.
+  $}
 
   $( The cross product of a class with itself is one-to-one.  (Contributed by
      NM, 5-Nov-2006.)  (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
