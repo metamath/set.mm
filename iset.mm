@@ -38743,13 +38743,12 @@ $)
   ${
     $d A w y $.  $d B w y $.  $d V w y $.  $d x w y $.
     $( Distribute proper substitution through the domain of a class.
-       (Contributed by Alexander van der Vekens, 23-Jul-2017.)  (Revised by NM,
-       24-Aug-2018.) $)
-    csbdm $p |- [_ A / x ]_ dom B = dom [_ A / x ]_ B $=
-      ( vy vw cv cop wcel wex cab csb cdm csbab sbcex2 sbcel2 exbii bitri abbii
-      wsbc dfdm3 eqtri csbeq2i 3eqtr4i ) ABDFEFGZCHZEIZDJZKZUDABCKZHZEIZDJZABCL
-      ZKUILUHUFABSZDJULUFADBMUNUKDUNUEABSZEIUKUEEABNUOUJEABUDCOPQRUAABUMUGDECTU
-      BDEUITUC $.
+       (Contributed by Jim Kingdon, 8-Dec-2018.) $)
+    csbdmg $p |- ( A e. V -> [_ A / x ]_ dom B = dom [_ A / x ]_ B ) $=
+      ( vy vw wcel cop wex cab csb cdm wsbc csbabg sbcex2 sbcel2g exbidv syl5bb
+      cv dfdm3 abbidv eqtrd csbeq2i 3eqtr4g ) BDGZABESFSHZCGZFIZEJZKZUFABCKZGZF
+      IZEJZABCLZKUKLUEUJUHABMZEJUNUHAEBDNUEUPUMEUPUGABMZFIUEUMUGFABOUEUQULFABUF
+      CDPQRUAUBABUOUIEFCTUCEFUKTUD $.
   $}
 
   ${
