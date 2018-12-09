@@ -38651,23 +38651,13 @@ $)
   ${
     $d y z A $.  $d y z F $.  $d y z V $.  $d x y z $.
     $( Move class substitution in and out of the converse of a function.
-       (Contributed by Thierry Arnoux, 8-Feb-2017.)  (Revised by NM,
-       23-Aug-2018.) $)
-    csbcnv $p |- `' [_ A / x ]_ F = [_ A / x ]_ `' F $=
-      ( vz vy csb ccnv cv wbr copab wsbc sbcbr opabbii csbopab 3eqtr4ri csbeq2i
-      df-cnv eqtr4i ) ABCFZGZABDHZEHZCIZEDJZFZABCGZFUCABKZEDJUAUBSIZEDJUETUGUHE
-      DABUAUBCLMUCAEDBNEDSQOABUFUDEDCQPR $.
-
-    $( Move class substitution in and out of the converse of a function.
-       (Contributed by Thierry Arnoux, 8-Feb-2017.)  Obsolete as of
-       23-Aug-2018.  Use ~ csbcnv instead.  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    csbcnvgOLD $p |- ( A e. V -> `' [_ A / x ]_ F = [_ A / x ]_ `' F ) $=
-      ( vz vy wcel csb ccnv cv wbr copab wsbc sbcbr123 csbconstg breq12d syl5bb
-      opabbidv csbopabgOLD df-cnv wceq a1i 3eqtr4rd csbeq2i syl6eqr ) BDGZABCHZ
-      IZABEJZFJZCKZFELZHZABCIZHUFUKABMZFELUIUJUGKZFELZUMUHUFUOUPFEUOABUIHZABUJH
-      ZUGKUFUPABUIUJCNUFURUIUSUJUGABUIDOABUJDOPQRUKAFEBDSUHUQUAUFFEUGTUBUCABUNU
-      LFECTUDUE $.
+       (Contributed by Thierry Arnoux, 8-Feb-2017.) $)
+    csbcnvg $p |- ( A e. V -> `' [_ A / x ]_ F = [_ A / x ]_ `' F ) $=
+      ( vz vy wcel csb ccnv cv wbr copab wsbc csbconstg breq12d bitrd
+      sbcbrg opabbidv csbopabg df-cnv wceq 3eqtr4rd csbeq2i syl6eqr
+      a1i ) BDGZABCHZIZABEJZFJZCKZFELZHZABCIZHUFUKABMZFELUIUJUGKZFELZ
+      UMUHUFUOUPFEUFUOABUIHZABUJHZUGKUPABUIUJDCQUFURUIUSUJUGABUIDNABU
+      JDNOPRUKAFEBDSUHUQUAUFFEUGTUEUBABUNULFECTUCUD $.
   $}
 
   ${
