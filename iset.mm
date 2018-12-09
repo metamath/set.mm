@@ -38967,11 +38967,16 @@ $)
       ZFAGZBBHCCHEZIZPPHZIZPSUAJQRTBBCCKLMAPPNO $.
   $}
 
-  $( The cross product of a class with itself is one-to-one.  (Contributed by
-     NM, 5-Nov-2006.)  (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
-  xpid11 $p |- ( ( A X. A ) = ( B X. B ) <-> A = B ) $=
-    ( cxp wceq cdm dmeq dmxpid 3eqtr3g xpeq12 anidms impbii ) AACZBBCZDZABDZNLE
-    MEABLMFAGBGHONABABIJK $.
+  ${
+    $d x A $.  $d x B $.
+    $( The cross product of a class with itself is one-to-one.  (Contributed by
+       Jim Kingdon, 8-Dec-2018.) $)
+    xpid11m $p |- ( ( E. x x e. A /\ E. x x e. B ) ->
+        ( ( A X. A ) = ( B X. B ) <-> A = B ) ) $=
+      ( cv wcel wex wa cxp wceq cdm dmxpm adantr dmeq sylan9req ad2antlr xpeq12
+      eqtrd ex anidms impbid1 ) ADZBEAFZUACEAFZGZBBHZCCHZIZBCIZUDUGUHUDUGGBUFJZ
+      CUDUGBUEJZUIUBUJBIUCABBKLUEUFMNUCUICIUBUGACCKOQRUHUGBCBCPST $.
+  $}
 
   $( The domain of the double converse of a class (which doesn't have to be a
      relation as in ~ dfrel2 ).  (Contributed by NM, 8-Apr-2007.) $)
