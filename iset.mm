@@ -39402,22 +39402,10 @@ $)
   $}
 
   $( Distribute proper substitution through the restriction of a class.
-     (Contributed by Alan Sare, 10-Nov-2012.)  (Revised by NM, 23-Aug-2018.) $)
-  csbres $p |- [_ A / x ]_ ( B |` C ) = ( [_ A / x ]_ B |` [_ A / x ]_ C ) $=
-    ( cres csb cvv cxp cin df-res csbeq2i wcel csbxp csbconstg xpeq2d syl5eq wn
-    wceq c0 csbprc 0xp a1i xpeq1d 3eqtr4rd pm2.61i ineq2i csbin 3eqtr4i eqtri )
-    ABCDEZFABCDGHZIZFZABCFZABDFZEZABUJULCDJKUNABUKFZIUNUOGHZIUMUPUQURUNBGLZUQUR
-    RUSUQUOABGFZHURABDGMUSUTGUOABGGNOPUSQZSGHZSURUQVBSRVAGUAUBVAUOSGABDTUCABUKT
-    UDUEUFABCUKUGUNUOJUHUI $.
-
-  $( Distribute proper substitution through the restriction of a class.
-     ~ csbresgOLD is derived from the virtual deduction proof ~ csbresgVD .
-     (Contributed by Alan Sare, 10-Nov-2012.)  Obsolete as of 23-Aug-2018.  Use
-     ~ csbres instead.  (New usage is discouraged.)
-     (Proof modification is discouraged.) $)
-  csbresgOLD $p |- ( A e. V -> [_ A / x ]_ ( B |` C ) =
+     (Contributed by Alan Sare, 10-Nov-2012.) $)
+  csbresg $p |- ( A e. V -> [_ A / x ]_ ( B |` C ) =
                  ( [_ A / x ]_ B |` [_ A / x ]_ C ) ) $=
-    ( wcel cvv cxp cin csbingOLD csbxpgOLD csbconstg xpeq2d eqtrd ineq2d df-res
+    ( wcel cvv cxp cin csbing csbxpg csbconstg xpeq2d eqtrd ineq2d df-res
     csb cres csbeq2i 3eqtr4g ) BEFZABCDGHZIZQZABCQZABDQZGHZIZABCDRZQUEUFRUAUDUE
     ABUBQZIUHABECUBJUAUJUGUEUAUJUFABGQZHUGABDGEKUAUKGUFABGELMNONABUIUCCDPSUEUFP
     T $.
