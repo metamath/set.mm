@@ -1,4 +1,4 @@
-$( iset.mm - Version of 5-Dec-2018
+$( iset.mm - Version of 10-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -5853,11 +5853,11 @@ $)
      (Contributed by David A. Wheeler, 13-Aug-2018.) $)
   df-test $a |- ( TEST ph <-> ( -. ph \/ -. -. ph ) ) $.
 
-  $( A testable proposition is testable when negated.  See also ~ dcn .
-    (Contributed by David A.  Wheeler, 5-Dec-2018.) $)
-  testn $p |- ( TEST ph -> TEST -. ph ) $=
-    ( wn wo wtest notnot1 orim1i orcomd df-test 3imtr4i ) ABZJBZCZKKBZC
-    ADJDLMKJMKJEFGAHJHI $.
+  $( A proposition is testable iff its negation is testable.  See also ~ dcn .
+    (Contributed by David A.  Wheeler, 6-Dec-2018.) $)
+  testbitestn $p |- ( TEST ph <-> TEST -. ph ) $=
+    ( wn wo wtest notnotnot orbi2i orcom bitri df-test 3bitr4ri ) ABZ
+    BZLBZCZKLCZKDADNLKCOMKLAEFLKGHKIAIJ $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -28650,6 +28650,11 @@ $)
         ( vx cv wss cpw sseq1 df-pw elab2 ) DEZBFABFDABGCKABHDBIJ $.
     $}
 
+    $( Set variable membership in a power class (common case).  See ~ elpw .
+       (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+    selpw $p |- ( x e. ~P A <-> x C_ A ) $=
+      ( cv vex elpw ) ACBADE $.
+
     $( Membership in a power class.  Theorem 86 of [Suppes] p. 47.
        (Contributed by NM, 6-Aug-2000.) $)
     elpwg $p |- ( A e. V -> ( A e. ~P B <-> A C_ B ) ) $=
@@ -28923,6 +28928,11 @@ $)
     snid $p |- A e. { A } $=
       ( cvv wcel csn snidb mpbi ) ACDAAEDBAFG $.
   $}
+
+  $( A set variable is a member of its singleton (common case).  (Contributed
+     by David A. Wheeler, 8-Dec-2018.) $)
+  ssnid $p |- x e. { x } $=
+    ( cv vex snid ) ABACD $.
 
   $( There is only one element in a singleton.  Exercise 2 of [TakeutiZaring]
      p. 15.  This variation requires only that ` B ` , rather than ` A ` , be a
