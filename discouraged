@@ -1161,6 +1161,7 @@
 "ax-hv0cl" is used by "hvsubadd".
 "ax-hv0cl" is used by "hvsubeq0".
 "ax-hv0cl" is used by "hvsubsub4".
+"ax-hv0cl" is used by "ifhvhv0".
 "ax-hv0cl" is used by "lnfn0i".
 "ax-hv0cl" is used by "lnfnmuli".
 "ax-hv0cl" is used by "lnop0".
@@ -6603,6 +6604,7 @@
 "helch" is used by "hoid1ri".
 "helch" is used by "hst0".
 "helch" is used by "hstrlem3a".
+"helch" is used by "ifchhv".
 "helch" is used by "mdsym".
 "helch" is used by "ococ".
 "helch" is used by "ococin".
@@ -13495,7 +13497,7 @@ New usage of "ax-his1" is discouraged (12 uses).
 New usage of "ax-his2" is discouraged (14 uses).
 New usage of "ax-his3" is discouraged (25 uses).
 New usage of "ax-his4" is discouraged (5 uses).
-New usage of "ax-hv0cl" is discouraged (92 uses).
+New usage of "ax-hv0cl" is discouraged (93 uses).
 New usage of "ax-hvaddid" is discouraged (27 uses).
 New usage of "ax-hvass" is discouraged (9 uses).
 New usage of "ax-hvcom" is discouraged (21 uses).
@@ -15429,7 +15431,7 @@ New usage of "hdmaprnlem8N" is discouraged (1 uses).
 New usage of "hdmaprnlem9N" is discouraged (1 uses).
 New usage of "hdmapval3N" is discouraged (0 uses).
 New usage of "hdmapval3lemN" is discouraged (1 uses).
-New usage of "helch" is discouraged (41 uses).
+New usage of "helch" is discouraged (42 uses).
 New usage of "helloworld" is discouraged (0 uses).
 New usage of "helsh" is discouraged (10 uses).
 New usage of "hfmmval" is discouraged (3 uses).
@@ -15797,6 +15799,8 @@ New usage of "idn2" is discouraged (39 uses).
 New usage of "idn3" is discouraged (12 uses).
 New usage of "idrval" is discouraged (2 uses).
 New usage of "idunop" is discouraged (1 uses).
+New usage of "ifchhv" is discouraged (0 uses).
+New usage of "ifhvhv0" is discouraged (0 uses).
 New usage of "iidn3" is discouraged (1 uses).
 New usage of "iin1" is discouraged (3 uses).
 New usage of "iin2" is discouraged (0 uses).
