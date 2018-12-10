@@ -11484,6 +11484,12 @@ $)
   exsimpl $p |- ( E. x ( ph /\ ps ) -> E. x ph ) $=
     ( wa simpl eximi ) ABDACABEF $.
 
+  $( Simplification of an existentially quantified conjunction.  (Contributed
+     by Rodolfo Medina, 25-Sep-2010.)  (Proof shortened by Andrew Salmon,
+     29-Jun-2011.) $)
+  exsimpr $p |- ( E. x ( ph /\ ps ) -> E. x ps ) $=
+    ( wa simpr eximi ) ABDBCABEF $.
+
   $( Theorem 19.6 of [Margaris] p. 89, given a decidability condition.  The
      forward direction holds for all propositions, as seen at ~ alexim .
      (Contributed by Jim Kingdon, 2-Jun-2018.) $)
