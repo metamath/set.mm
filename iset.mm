@@ -39752,7 +39752,7 @@ $)
        by FL, 25-Apr-2012.) $)
     opabresid $p |- { <. x , y >. | ( x e. A /\ y = x ) } = ( _I |` A ) $=
       ( weq copab cres cv wcel cid resopab equcom opabbii eqtr4i reseq1i eqtr3i
-      wa dfid3 ) BADZABEZCFAGCHRPABEICFRABCJSICSABDZABEIRTABBAKLABQMNO $.
+      wa df-id ) BADZABEZCFAGCHRPABEICFRABCJSICSABDZABEIRTABBAKLABQMNO $.
   $}
 
   ${
