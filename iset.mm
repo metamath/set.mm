@@ -39951,19 +39951,9 @@ $)
   ${
     $d A y z $.  $d B y z $.  $d C y z $.  $d x y z $.  $d F y z $.
     $( Move class substitution in and out of the image of a function.
-       (Contributed by FL, 15-Dec-2006.)  (Revised by NM, 20-Aug-2018.) $)
-    csbima12 $p |- [_ A / x ]_ ( F " B ) = ( [_ A / x ]_ F " [_ A / x ]_ B ) $=
-      ( vy cvv wcel cima csb wceq csbeq1 imaeq12d eqeq12d nfcsb1v nfima csbeq1a
-      cv vex c0 csbprc weq csbief vtoclg wn imaeq2d ima0 syl6req eqtrd pm2.61i
-      ) BFGZABDCHZIZABDIZABCIZHZJZAEQZUKIZAUQDIZAUQCIZHZJUPEBFUQBJZURULVAUOAUQB
-      UKKVBUSUMUTUNAUQBDKAUQBCKLMAUQUKVAERAUSUTAUQDNAUQCNOAEUADUSCUTAUQDPAUQCPL
-      UBUCUJUDZULSUOABUKTVCUOUMSHSVCUNSUMABCTUEUMUFUGUHUI $.
-
-    $( Move class substitution in and out of the image of a function.
        (Contributed by FL, 15-Dec-2006.)  (Proof shortened by Mario Carneiro,
-       4-Dec-2016.)  Obsolete as of 20-Aug-2018.  Use ~ csbfv12 instead.
-       (New usage is discouraged.)  (Proof modification is discouraged.) $)
-    csbima12gOLD $p |- ( A e. C -> [_ A / x ]_ ( F " B ) =
+       4-Dec-2016.) $)
+    csbima12g $p |- ( A e. C -> [_ A / x ]_ ( F " B ) =
                  ( [_ A / x ]_ F " [_ A / x ]_ B ) ) $=
       ( vy cv cima csb csbeq1 imaeq12d eqeq12d vex nfcsb1v nfima csbeq1a csbief
       wceq vtoclg ) AFGZECHZIZATEIZATCIZHZRABUAIZABEIZABCIZHZRFBDTBRZUBUFUEUIAT
