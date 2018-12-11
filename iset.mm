@@ -39985,14 +39985,6 @@ $)
       cv breq1 syl ) BCFBGFZDBHZIZBASZDJZAKZLBCMUBUDESZUEDJZEUCNZAKUGEADUCOUBUJ
       UFAUIUFEBGUHBUEDTPQRUA $.
 
-    $( The image of a singleton.  (Contributed by NM, 20-May-1998.) $)
-    relimasn $p |- ( Rel R -> ( R " { A } ) = { y | A R y } ) $=
-      ( wrel cvv wcel csn cima cv wbr cab wceq wn wa c0 snprc imaeq2 sylbi ima0
-      ex syl6eq adantl wex brrelex con3and nexdv necon1bbii sylib eqtr4d imasng
-      abn0 pm2.61d2 ) CDZBEFZCBGZHZBAIZCJZAKZLZUMUNMZUTUMVANZUPOUSVAUPOLUMVAUPC
-      OHZOVAUOOLUPVCLBPUOOCQRCSUAUBVBURAUCZMUSOLVBURAUMURUNUMURUNBUQCUDTUEUFVDU
-      SOURAUKUGUHUITABECUJUL $.
-
     $( Elementhood in the image of a singleton.  (Contributed by Mario
        Carneiro, 3-Nov-2015.) $)
     elrelimasn $p |- ( Rel R -> ( B e. ( R " { A } ) <-> A R B ) ) $=
