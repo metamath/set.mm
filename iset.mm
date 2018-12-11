@@ -40213,13 +40213,14 @@ $)
        irreflexivity in [Schechter] p. 51.  (Contributed by NM, 9-Sep-2004.)
        (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
     intirr $p |- ( ( R i^i _I ) = (/) <-> A. x -. x R x ) $=
-      ( vy cid cin c0 wceq cv cop wcel cvv cdif wi wal wbr wn wss incom 3bitr2i
-      df-br eqeq1i disj2 wrel wb reli ssrel ax-mp 3bitri equcom vex wa biantrur
-      ideq opex eldif bitr4i xchnxbir imbi12i 2albii breq2 notbid equsalh albii
-      nfv ) BDEZFGZAHZCHZIZDJZVIKBLZJZMZCNANZVHVGGZVGVHBOZPZMZCNZANVGVGBOZPZANV
-      FDBEZFGDVKQZVNVEWBFBDRUADBUBDUCWCVNUDUEACDVKUFUGUHVRVMACVOVJVQVLVOVGVHGVG
-      VHDOVJCAUIVGVHCUJUMVGVHDTSVIBJZVLVPWDPZVIKJZWEUKVLWFWEVGVHUNULVIKBUOUPVGV
-      HBTUQURUSVSWAAVQWACAWACVDVOVPVTVHVGVGBUTVAVBVCS $.
+      ( vy cid cin c0 wceq cv cop wcel cvv cdif wi wal wn incom df-br
+      wbr wss 3bitr2i eqeq1i disj2 wrel ssrel ax-mp 3bitri equcom vex
+      wb reli ideq wa opexv biantrur eldif bitr4i xchnxbir 2albii nfv
+      imbi12i breq2 notbid equsal albii ) BDEZFGZAHZCHZIZDJZVIKBLZJZM
+      ZCNANZVHVGGZVGVHBRZOZMZCNZANVGVGBRZOZANVFDBEZFGDVKSZVNVEWBFBDPU
+      ADBUBDUCWCVNUIUJACDVKUDUEUFVRVMACVOVJVQVLVOVGVHGVGVHDRVJCAUGVGV
+      HCUHUKVGVHDQTVIBJZVLVPWDOZVIKJZWEULVLWFWEACUMUNVIKBUOUPVGVHBQUQ
+      UTURVSWAAVQWACAWACUSVOVPVTVHVGVGBVAVBVCVDT $.
 
     $( Two ways of saying that two elements have an upper bound.  (Contributed
        by Mario Carneiro, 3-Nov-2015.) $)
