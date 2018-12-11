@@ -1,7 +1,9 @@
 #!/bin/python
 # Process a file's `...` instructions using an mmfile's typographical commands
-# Reads from stdin and sends to stdout.
+# Reads from stdin and sends to stdout.  By default the mmfile is "set.mm".
 # Use the "--help" option to see all the options.
+# Sample usage:
+# python scripts/typeset.py --html < demo.html.raw > demo.html
 
 # Copyright 2018, David A. Wheeler
 # SPDX-License-Identifier: MIT
@@ -114,16 +116,23 @@ def read_definitions():
             remains = '' # clear out line so we'll read next one
 
 # This searches for backquoted text in a line.
-backquoted = re.compile(r'(^| )` +(([^`]|``)*) `($| )')
+backquoted = re.compile(r'(?:^|(?<= ))` +(([^`]|``)*) +`(?=$| )')
 
 def replace_typographically(m):
     '''
-    Given a match item, return string; each word replaced using typo_definition
+    Given a match item, return string;
+    each word is replaced using typo_definition.
+    If something isn't in the list, return the original list surrounded
+    by backquotes (presumably we weren't supposed to get this).
     '''
-    inner = m.group(2) # The text to change
-    translated_list = list(map(lambda i: typo_definition[i], inner.split()))
-    translation = ' '.join(translated_list)
-    return ' ' + translation + ' '
+    inner = m.group(1) # The text to change
+    translated_list = list(map(lambda i: typo_definition.get(i, None),
+        inner.split()))
+    if None in translated_list:
+        return '` ' + inner + ' `' # Return untransformed version
+    else:
+        translation = ' '.join(translated_list)
+        return translation.strip()
 
 # Set up option handling
 my_parser = argparse.ArgumentParser()
@@ -156,4 +165,4 @@ read_definitions()
 for line in sys.stdin:
     s = backquoted.search(line)
     new_line = re.sub(backquoted, replace_typographically, line)
-    print(new_line)
+    print(new_line, end='')
