@@ -40118,13 +40118,6 @@ $)
       wb pm5.21ndd ) CDZAEFZBEFZGZABCHZIZBACIZUEUCJTUDDUEUCCKABUDLMNTUFUCTUFGUB
       UABACLOPUCUEUFRJTABEECQNS $.
 
-    $( Eliminate the class existence constraint in ~ eliniseg .  (Contributed
-       by Mario Carneiro, 5-Dec-2014.)  (Revised by Mario Carneiro,
-       17-Nov-2015.) $)
-    eliniseg2 $p |- ( Rel A -> ( C e. ( `' A " { B } ) <-> C A B ) ) $=
-      ( ccnv csn cima wcel wbr wrel wb relcnv elrelimasn ax-mp relbrcnvg syl5bb
-      ) CADZBEFGZBCPHZAICBAHPIQRJAKBCPLMBCANO $.
-
     relbrcnv.1 $e |- Rel R $.
     $( When ` R ` is a relation, the sethood assumptions on ~ brcnv can be
        omitted.  (Contributed by Mario Carneiro, 28-Apr-2015.) $)
