@@ -40196,22 +40196,6 @@ $)
       JWQUQOVCPVDWAWDWEURQRWAWFBUSPRVMTZVPTWIVTHVLTWTCUTCVLVAVBFVOVEABVMVPVFVGW
       GAVOVHQ $.
 
-    $( Two ways of saying a relation is antisymmetric and reflexive.
-       (Contributed by NM, 6-May-2008.)  (Proof shortened by Mario Carneiro,
-       4-Dec-2016.) $)
-    asymref2 $p |- ( ( R i^i `' R ) = ( _I |` U. U. R ) <->
-   ( A. x e. U. U. R x R x /\ A. x A. y ( ( x R y /\ y R x ) -> x = y ) ) ) $=
-      ( ccnv cin cid cuni wceq cv wbr wa wral wi ralbii albii bitri wcel 3bitri
-      wal vex cres wb asymref albiim r19.26 ancom equcom imbi1i nfv breq2 breq1
-      anbi12d anidm syl6bb equsal df-ral cop df-br opeluu simpld adantr pm2.24d
-      wn sylbi com12 alrimiv id ja ax-1 impbii anbi12i ) CCDEFCGGZUAHAIZBIZCJZV
-      NVMCJZKZVMVNHZUBBSZAVLLVQVRMZBSZVRVQMZBSZKZAVLLZVMVMCJZAVLLZWAASZKZABCUCV
-      SWDAVLVQVRBUDNWEWAAVLLZWCAVLLZKWKWJKWIWAWCAVLUEWJWKUFWKWGWJWHWCWFAVLWCVNV
-      MHZVQMZBSWFWBWMBVRWLVQABUGUHOVQWFBAWFBUIWLVQWFWFKWFWLVOWFVPWFVNVMVMCUJVNV
-      MVMCUKULWFUMUNUOPNWJVMVLQZWAMZASWHWAAVLUPWOWAAWOWAWNWAWAWNVCZVTBVQWPVRVQW
-      NVRVOWNVPVOVMVNUQCQZWNVMVNCURWQWNVNVLQVMVNCATBTUSUTVDVAVBVEVFWAVGVHWAWNVI
-      VJOPVKRR $.
-
     $( Two ways of saying a relation is irreflexive.  Definition of
        irreflexivity in [Schechter] p. 51.  (Contributed by NM, 9-Sep-2004.)
        (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
