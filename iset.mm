@@ -567,6 +567,15 @@ $)
   $}
 
   ${
+    mp1i.a $e |- ph $.
+    mp1i.b $e |- ( ph -> ps ) $.
+    $( Drop and replace an antecedent.  (Contributed by Stefan O'Rear,
+       29-Jan-2015.) $)
+    mp1i $p |- ( ch -> ps ) $=
+      ( ax-mp a1i ) BCABDEFG $.
+  $}
+
+  ${
     $( Premise for ~ a2i . $)
     a2i.1 $e |- ( ph -> ( ps -> ch ) ) $.
     $( Inference derived from axiom ~ ax-2 .  (Contributed by NM,
