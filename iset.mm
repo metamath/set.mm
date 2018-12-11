@@ -34046,7 +34046,7 @@ $)
 
   $( An ordered pair of set variables is a set.  (Contributed by Jim Kingdon,
      24-Sep-2018.) $)
-  opexv $p |- <. x , y >. e. _V $=
+  sopex $p |- <. x , y >. e. _V $=
     ( cv cvv wcel cop vex opexg mp2an ) ACZDEBCZDEJKFDEAGBGJKHI $.
 
   $( An ordered triple of sets is a set.  (Contributed by Jim Kingdon,
@@ -34404,7 +34404,7 @@ $)
        (Contributed by NM, 14-Apr-1995.)  (Proof shortened by Andrew Salmon,
        25-Jul-2011.) $)
     opabid $p |- ( <. x , y >. e. { <. x , y >. | ph } <-> ph ) $=
-      ( vz cv cop wceq wa wex copab opexv copsexg bicomd df-opab elab2 ) DEZBEC
+      ( vz cv cop wceq wa wex copab sopex copsexg bicomd df-opab elab2 ) DEZBEC
       EFZGZAHCIBIZADQABCJBCKRASABCPLMABCDNO $.
   $}
 
@@ -34414,7 +34414,7 @@ $)
        24-Mar-1998.) $)
     elopab $p |- ( A e. { <. x , y >. | ph } <->
                  E. x E. y ( A = <. x , y >. /\ ph ) ) $=
-      ( vz copab wcel cvv cv cop wceq wa wex elex opexv mpbiri adantr
+      ( vz copab wcel cvv cv cop wceq wa wex elex sopex mpbiri adantr
       eleq1 exlimivv eqeq1 anbi1d 2exbidv df-opab elab2g pm5.21nii )
       DABCFZGDHGZDBICIJZKZALZCMBMZDUFNUJUGBCUIUGAUIUGUHHGBCODUHHRPQSE
       IZUHKZALZCMBMUKEDUFHULDKZUNUJBCUOUMUIAULDUHTUAUBABCEUCUDUE $.
@@ -34677,7 +34677,7 @@ $)
        29-Sep-2018.) $)
     opabm $p |- ( E. z z e. { <. x , y >. | ph } <-> E. x E. y ph ) $=
       ( cv copab wcel wex cop wceq wa elopab exbii exrot3 isseti 19.41v mpbiran
-      opexv 2exbii 3bitri ) DEZABCFGZDHUABECEIZJZAKZCHBHZDHUEDHZCHBHACHBHUBUFDA
+      sopex 2exbii 3bitri ) DEZABCFGZDHUABECEIZJZAKZCHBHZDHUEDHZCHBHACHBHUBUFDA
       BCUALMUEDBCNUGABCUGUDDHADUCBCROUDADPQST $.
   $}
 
@@ -37538,7 +37538,7 @@ $)
     elvvv $p |- ( A e. ( ( _V X. _V ) X. _V )
                  <-> E. x E. y E. z A = <. <. x , y >. , z >. ) $=
       ( vw cvv cxp wcel cv cop wceq wa wex elxp anass ancom 2exbii bitr3i bitri
-      19.42vv vex biantru elvv anbi2i 3bitr4ri exrot4 excom opexv opeq1 ceqsexv
+      19.42vv vex biantru elvv anbi2i 3bitr4ri exrot4 excom sopex opeq1 ceqsexv
       eqeq2d exbii ) DFFGZFGHDEIZCIZJZKZUNUMHZUOFHZLLZCMEMZDAIBIJZUOJZKZCMZBMAM
       ZECDUMFNVAUNVBKZUQLZBMAMZCMEMZVFUTVIECUTUQURLZUSLZVIUQURUSOUQVGLZBMAMUQVG
       BMAMZLZVIVLUQVGABTVHVMABVGUQPQVLVKVOUSVKCUAUBURVNUQABUNUCUDRUERQVJVHCMEMZ
@@ -38207,7 +38207,7 @@ $)
       ( C X. |^|_ x e. A B ) = |^|_ x e. A ( C X. B ) ) $=
       ( vw vz ciin cxp wrel wa cv wcel wex wral relxp wb cvv eliin ax-mp cbvexv
       wceq wrex rgenw eleq1 r19.2m sylanbr mpan2 reliin syl cop r19.28mv sylbir
-      jctil bicomd vex anbi2i opelxp ralbii 3bitr4g opexv eqrelrdv2 mpancom ) E
+      jctil bicomd vex anbi2i opelxp ralbii 3bitr4g sopex eqrelrdv2 mpancom ) E
       ACDHZIZJZACEDIZHZJZKBLZCMZBNZVEVHUBVLVIVFVLVGJZACUCZVIVLVMACOZVNVMACEDPUD
       VLALZCMZANZVOVNVQVKABVPVJCUEUAZVMACUFUGUHACVGUIUJEVDPUNVLFGVEVHVLFLZEMZGL
       ZVDMZKZVTWBUKZVGMZACOZWEVEMWEVHMZVLWAWBDMZACOZKZWAWIKZACOZWDWGVLWMWKVLVRW
@@ -38259,7 +38259,7 @@ $)
        (Contributed by Mario Carneiro, 29-Dec-2014.) $)
     raliunxp $p |- ( A. x e. U_ y e. A ( { y } X. B ) ph <->
       A. y e. A A. z e. B ps ) $=
-      ( cv csn cxp ciun wcel wi wal wa wral wex albii bitri cop opexv
+      ( cv csn cxp ciun wcel wi wal wa wral wex albii bitri cop sopex
       wceq eliunxp imbi1i 19.23vv bitr4i alrot3 impexp imbi2d ceqsalv
       2albii df-ral r2al 3bitr4i ) CIZDFDIZJGKLZMZANZCOZUQFMEIZGMPZBN
       ZEODOZACURQBEGQDFQVAUPUQVBUAZUCZVCPZANZEODOZCOZVEUTVJCUTVHERDRZ
@@ -38274,7 +38274,7 @@ $)
       E. y e. A E. z e. B ps ) $=
       ( cv csn cxp ciun wcel wa wex wrex cop wceq exbii bitri eliunxp
       anbi1i 19.41vv bitr4i exrot3 anass anbi2d ceqsexv 2exbii df-rex
-      opexv r2ex 3bitr4i ) CIZDFDIZJGKLZMZANZCOZUOFMEIZGMNZBNZEODOZAC
+      sopex r2ex 3bitr4i ) CIZDFDIZJGKLZMZANZCOZUOFMEIZGMNZBNZEODOZAC
       UPPBEGPDFPUSUNUOUTQZRZVANZANZEODOZCOZVCURVHCURVFEODOZANVHUQVJAD
       EFGUNUAUBVFADEUCUDSVIVGCOZEODOVCVGCDEUEVKVBDEVKVEVAANZNZCOVBVGV
       MCVEVAAUFSVLVBCVDDEUKVEABVAHUGUHTUITTACUPUJBDEFGULUM $.
@@ -40215,7 +40215,7 @@ $)
     intirr $p |- ( ( R i^i _I ) = (/) <-> A. x -. x R x ) $=
       ( vy cid cin c0 wceq cv cop wcel cvv cdif wi wal wn incom df-br
       wbr wss 3bitr2i eqeq1i disj2 wrel ssrel ax-mp 3bitri equcom vex
-      wb reli ideq wa opexv biantrur eldif bitr4i xchnxbir 2albii nfv
+      wb reli ideq wa sopex biantrur eldif bitr4i xchnxbir 2albii nfv
       imbi12i breq2 notbid equsal albii ) BDEZFGZAHZCHZIZDJZVIKBLZJZM
       ZCNANZVHVGGZVGVHBRZOZMZCNZANVGVGBRZOZANVFDBEZFGDVKSZVNVEWBFBDPU
       ADBUBDUCWCVNUIUJACDVKUDUEUFVRVMACVOVJVQVLVOVGVHGVGVHDRVJCAUGVGV
