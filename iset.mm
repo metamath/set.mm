@@ -32107,8 +32107,8 @@ $)
      generalized to arbitrary classes.  This definition of relations is
      well-defined, although not very meaningful, when classes ` A ` and/or
      ` B ` are proper classes (i.e. are not sets).  On the other hand, we often
-     find uses for this definition when ` R ` is a proper class.  (Contributed
-     by NM, 31-Dec-1993.) $)
+     find uses for this definition when ` R ` is a proper class (see for
+     example ~ iprc ).  (Contributed by NM, 31-Dec-1993.) $)
   df-br $a |- ( A R B <-> <. A , B >. e. R ) $.
 
   $( Equality theorem for binary relations.  (Contributed by NM,
