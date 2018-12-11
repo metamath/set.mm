@@ -40017,14 +40017,6 @@ $)
       UAQRUFCMZUOURUQUTUFCUNUBVBUPUSAUFCBUCQRAUGUFGSFSUDUE $.
   $}
 
-  $( Membership in an image of a singleton.  (Contributed by NM,
-     5-Aug-2010.) $)
-  elimasni $p |- ( C e. ( A " { B } ) -> B A C ) $=
-    ( cvv wcel wa csn cima wbr wn c0 noel wceq snprc biimpi imaeq2d ima0 syl6eq
-    eleq2d mtbiri con4i elex jca cop elimasng df-br syl6bbr biimpd mpcom ) BDEZ
-    CDEZFZCABGZHZEZBCAIZUOUJUKUJUOUJJZUOCKECLUQUNKCUQUNAKHKUQUMKAUQUMKMBNOPAQRS
-    TUACUNUBUCULUOUPULUOBCUDAEUPABCDDUEBCAUFUGUHUI $.
-
   ${
     $d y F $.  $d x y $.
     $( Two ways to express the class of unique-valued arguments of ` F ` ,
