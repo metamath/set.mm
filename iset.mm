@@ -12250,13 +12250,26 @@ $)
     HZBIZQAHZBISQBIUABCJRQBKLTUBBRQUBQAMNOP $.
 
   ${
-    equsal.1 $e |- ( ps -> A. x ps ) $.
-    equsal.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    $( A useful equivalence related to substitution.  (Contributed by NM,
-       5-Aug-1993.)  (Proof shortened by Andrew Salmon, 12-Aug-2011.) $)
-    equsal $p |- ( A. x ( x = y -> ph ) <-> ps ) $=
+    equsalh.1 $e |- ( ps -> A. x ps ) $.
+    equsalh.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( A useful equivalence related to substitution.  New proofs should use
+       ~ equsal instead.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by
+       Andrew Salmon, 12-Aug-2011.)  (New usage is discouraged.) $)
+    equsalh $p |- ( A. x ( x = y -> ph ) <-> ps ) $=
       ( weq wi wal 19.3h syl6bbr pm5.74i albii a1d alrimih ax9o impbii bitr4i ) C
       DGZAHZCISBCIZHZCIZBTUBCSAUASABUAFBCEJKLMBUCBUBCEBUASENOBCDPQR $.
+  $}
+
+  ${
+    equsal.1 $e |- F/ x ps $.
+    equsal.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( A useful equivalence related to substitution.  (Contributed by NM,
+       5-Aug-1993.)  (Proof shortened by Andrew Salmon, 12-Aug-2011.)  (Revised
+       by Mario Carneiro, 3-Oct-2016.)  (Proof shortened by Wolf Lammen,
+       5-Feb-2018.) $)
+    equsal $p |- ( A. x ( x = y -> ph ) <-> ps ) $=
+      ( weq wi wal wex 19.23 pm5.74i albii a9e a1bi 3bitr4i ) CDGZBHZCIQCJZBHQA
+      HZCIBQBCEKTRCQABFLMSBCDNOP $.
   $}
 
   ${
@@ -12746,7 +12759,7 @@ $)
        (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew Salmon,
        12-Aug-2011.) $)
     sb6x $p |- ( [ y / x ] ph <-> A. x ( x = y -> ph ) ) $=
-      ( wsb weq wi wal sbh biidd equsal bitr4i ) ABCEABCFZAGBHABCDIAABCDMAJKL
+      ( wsb weq wi wal sbh biidd equsalh bitr4i ) ABCEABCFZAGBHABCDIAABCDMAJKL
       $.
   $}
 
@@ -13089,7 +13102,7 @@ $)
        of ~ ax-12 .  This shows that ~ ax-12 could be replaced by ~ dveeq2 (the
        last hypothesis).  (Contributed by Andrew Salmon, 21-Jul-2011.) $)
     dvelimfALT2 $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
-      ( cv wceq wal wn wi ax-17 hbn1 a1i hbimd hbald equsal albii 3imtr3g ) CJD
+      ( cv wceq wal wn wi ax-17 hbn1 a1i hbimd hbald equsalh albii 3imtr3g ) CJD
       JZKZCLMZEJUCKZANZELZUHCLBBCLUEUGCEUEEOUEUFACUDCPIAACLNUEFQRSABEDGHTZUHBCU
       IUAUB $.
   $}
@@ -14892,7 +14905,7 @@ $( The theorems in this section make use of the $d statement. $)
        17-May-2008.)  (Proof modification is discouraged.) $)
     dvelimALT $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
       ( weq wal wn wi wnf nfv wo ax-i12 orcom orbi2i mpbi a1i nfimd orass mpbir
-      nfa1 ax16ALT nfd nfi df-nf id sylbir jaoi orim1i ax-mp nfald ax-17 equsal
+      nfa1 ax16ALT nfd nfi df-nf id sylbir jaoi orim1i ax-mp nfald ax-17 equsalh
       ori nfbii sylib nfrd ) CDHCIZJZBCVAEDHZAKZEIZCLBCLVAVCCEVAEMUTVCCLZVEUTNZ
       UTVENCEHZCIZVBVBCIKCIZNZUTNZVFVKVHVIUTNZNZVHUTVINZNVMEDCOVNVLVHUTVIPQRVHV
       IUTUAUBVJVEUTVHVEVIVHVBACVHVBCVGCUCVBCEUDUEACLZVHACFUFZSTVIVBCLZVEVBCUGVQ
@@ -14908,7 +14921,7 @@ $( The theorems in this section make use of the $d statement. $)
        ` z ` .  (Contributed by Jim Kingdon, 6-Mar-2018.) $)
     dvelimfv $p |- ( -. A. x x = y -> ( ps -> A. x ps ) ) $=
       ( weq wal wn wi wnf nfnae wo ax-i12 orcom mpbi a1i nfimd orass mpbir nfae
-      orbi2i ax16ALT nfd nfi df-nf id sylbir jaoi orim1i ax-mp ori nfald equsal
+      orbi2i ax16ALT nfd nfi df-nf id sylbir jaoi orim1i ax-mp ori nfald equsalh
       nfbii sylib nfrd ) CDICJZKZBCVAEDIZALZEJZCMBCMVAVCCECDENUTVCCMZVEUTOZUTVE
       OCEICJZVBVBCJLCJZOZUTOZVFVJVGVHUTOZOZVGUTVHOZOVLEDCPVMVKVGUTVHQUDRVGVHUTU
       AUBVIVEUTVGVEVHVGVBACVGVBCCECUCVBCEUEUFACMZVGACFUGZSTVHVBCMZVEVBCUHVPVBAC
@@ -15004,7 +15017,7 @@ $( The theorems in this section make use of the $d statement. $)
        substituted for ` z ` ).  (Contributed by Jim Kingdon, 11-May-2018.) $)
     dvelimor $p |- ( A. x x = y \/ F/ x ps ) $=
       ( weq wal wi wnf wo ax-bnd orcom orbi2i mpbi orass mpbir nfae ax-mp a16nf
-      alrimi df-nf a1i nfimd sylbir alimi orim1i nfalt ax-17 equsal nfbii sylib
+      alrimi df-nf a1i nfimd sylbir alimi orim1i nfalt ax-17 equsalh nfbii sylib
       id jaoi orim2i ) CDHCIZEDHZAJZCKZEIZLZUQBCKZLVAUQLZVBCEHCIZURURCIJCIZEIZL
       ZUQLZVDVIVEVGUQLZLZVEUQVGLZLVKEDCMVLVJVEUQVGNOPVEVGUQQRVHVAUQVEVAVGVEUTEC
       EESUSCECUAUBVFUTEVFURCKZUTURCUCVMURACVMUNACKVMFUDUEUFUGUOUHTVAUQNPVAVCUQV
@@ -40202,7 +40215,7 @@ $)
     intirr $p |- ( ( R i^i _I ) = (/) <-> A. x -. x R x ) $=
       ( vy cid cin c0 wceq cv cop wcel cvv cdif wi wal wbr wn wss incom 3bitr2i
       df-br eqeq1i disj2 wrel wb reli ssrel ax-mp 3bitri equcom vex wa biantrur
-      ideq opex eldif bitr4i xchnxbir imbi12i 2albii breq2 notbid equsal albii
+      ideq opex eldif bitr4i xchnxbir imbi12i 2albii breq2 notbid equsalh albii
       nfv ) BDEZFGZAHZCHZIZDJZVIKBLZJZMZCNANZVHVGGZVGVHBOZPZMZCNZANVGVGBOZPZANV
       FDBEZFGDVKQZVNVEWBFBDRUADBUBDUCWCVNUDUEACDVKUFUGUHVRVMACVOVJVQVLVOVGVHGVG
       VHDOVJCAUIVGVHCUJUMVGVHDTSVIBJZVLVPWDPZVIKJZWEUKVLWFWEVGVHUNULVIKBUOUPVGV
