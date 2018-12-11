@@ -39985,12 +39985,13 @@ $)
       cv breq1 syl ) BCFBGFZDBHZIZBASZDJZAKZLBCMUBUDESZUEDJZEUCNZAKUGEADUCOUBUJ
       UFAUIUFEBGUHBUEDTPQRUA $.
 
-    $( Elementhood in the image of a singleton.  (Contributed by Mario
-       Carneiro, 3-Nov-2015.) $)
-    elrelimasn $p |- ( Rel R -> ( B e. ( R " { A } ) <-> A R B ) ) $=
-      ( vx wrel csn cima cv wbr cab relimasn eleq2d cvv wi wb brrelex2 ex breq2
-      wcel elab3g syl bitrd ) CEZBCAFGZSBADHZCIZDJZSZABCIZUCUDUGBDACKLUCUIBMSZN
-      UHUIOUCUIUJABCPQUFUIDBMUEBACRTUAUB $.
+    $( Elementhood in the image of a singleton.  (Contributed by Jim Kingdon,
+       10-Dec-2018.) $)
+    elreimasng $p |- ( ( Rel R /\ A e. V ) -> ( B e. ( R " { A } ) <-> A R B ) ) $=
+      ( vx wcel csn cima cv wbr cab wrel imasng eleq2d wi wb brrelex2
+      cvv ex breq2 elab3g syl sylan9bbr ) ADFZBCAGHZFBAEIZCJZEKZFZCLZ
+      ABCJZUDUEUHBEADCMNUJUKBRFZOUIUKPUJUKULABCQSUGUKEBRUFBACTUAUBUC
+      $.
   $}
 
   ${
