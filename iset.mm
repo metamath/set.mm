@@ -40305,8 +40305,8 @@ $)
     $( A strict order relation is irreflexive.  (Contributed by NM,
        10-Feb-1996.)  (Revised by Mario Carneiro, 10-May-2013.) $)
     soirri $p |- -. A R A $=
-      ( wcel wa wbr wn wor sonr mpan adantl brel con3i pm2.61i ) ACFZQGZAABHZIZ
-      QTQCBJQTDCABKLMSRAACCBENOP $.
+      ( wbr id wor wcel wn brel simpld sonr sylancr pm2.65i ) AABFZPPGPCBHACIZP
+      JDPQQAACCBEKLCABMNO $.
 
     ${
       $d A x $.  $d B x $.  $d R x $.
