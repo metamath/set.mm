@@ -40404,8 +40404,9 @@ $)
        p. 62.  (Contributed by NM, 25-Mar-1998.)  (Revised by Mario Carneiro,
        26-Jun-2014.) $)
     cnvin $p |- `' ( A i^i B ) = ( `' A i^i `' B ) $=
-      ( cdif ccnv cin cnvdif difeq2i eqtri dfin4 cnveqi 3eqtr4i ) AABCZCZDZADZO
-      BDZCZCZABEZDOPENOLDZCRALFTQOABFGHSMABIJOPIK $.
+      ( vy vx cin ccnv cv wbr copab df-cnv inopab brin opabbii eqtr4i
+      wa ineq12i ) ABEZFZCGZDGZAHZDCIZSTBHZDCIZEZAFZBFZERSTQHZDCIZUED
+      CQJUEUAUCOZDCIUIUAUCDCKUHUJDCSTABLMNNUFUBUGUDDCAJDCBJPN $.
   $}
 
   $( Distributive law for range over union.  Theorem 8 of [Suppes] p. 60.
