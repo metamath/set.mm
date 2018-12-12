@@ -201,13 +201,13 @@ numbers</A> as specific subsets of
 ` CC ` ,
 leading to the nice <A HREF="nthruc.html">relationships</A>
 ` NN `
-` (. `
+` C. `
 ` ZZ `
-` (. `
+` C. `
 ` QQ `
-` (. `
+` C. `
 ` RR `
-` (. `
+` C. `
 ` CC ` .
 We later define the set of extended reals
 (real numbers, positive infinity, and negative infinity), and once those
@@ -237,7 +237,7 @@ SUMMARY="The 22 Axioms for Complex Numbers">
 <TR><TH>#</TH><TH>Ref</TH><TH>Expression</TH></TR>
 
 <TR ALIGN=LEFT><TD>1</TD><TD><A HREF="ax-resscn.html">ax-resscn</A></TD><TD>
-` |- RR (_ CC ` </TD></TR>
+` |- RR C_ CC ` </TD></TR>
 
 <TR ALIGN=LEFT><TD>2</TD><TD><A HREF="ax-1cn.html">ax-1cn</A></TD><TD>
 ` |- 1 e. CC `
@@ -600,10 +600,10 @@ HREF="df-xr.html">df-xr</A> and related theorems) that includes ` +oo ` and ` -o
 <P>Analysis textbooks rarely if ever actually define ` +oo ` and ` -oo ` as concrete
 objects.  Instead, they just say that they are two "new" distinguished
 elements.  But we must choose specific sets in order to use set theory
-to work with them.  So we pick ` P~ U. CC `
+to work with them.  So we pick ` ~P U. CC `
 (the power set of the union of the set of complex numbers) for
 ` +oo ` (<A
-HREF="df-pnf.html">df-pnf</A>) and ` P~ +oo ` for ` -oo ` (<A HREF="df-mnf.html">df-mnf</A>), which we can
+HREF="df-pnf.html">df-pnf</A>) and ` ~P +oo ` for ` -oo ` (<A HREF="df-mnf.html">df-mnf</A>), which we can
 prove are different from each other and to not belong to ` RR ` (see theorems <A
 HREF="pnfnemnf.html">pnfnemnf</A>, <A HREF="pnfnre.html">pnfnre</A>, and
 <A HREF="mnfnre.html">mnfnre</A>).  Many other choices are possible too.
@@ -875,7 +875,7 @@ properties described in our informal argument section above.
 <P> What makes it complicated is the fact that ` G ` and ` H ` depend not only on ` F ` but on each other as well.  So, we
 have to construct them in parallel, and we do this using a
 &quot;sequence builder&quot; that you can see defined in <A
-HREF="df-seq1.html">df-seq1</A>.  The sequence builder takes in the
+HREF="df-seq.html">df-seq</A>.  The sequence builder takes in the
 functions ` C ` and
 ` D ` defined in
 hypotheses ruclem.1 and ruclem.2 of <A
@@ -888,7 +888,7 @@ make use of the previous values of both ` G ` and ` H ` simultaneously for its i
 construction.
 
 <P> The function ` C ` , which provides the second argument or &quot;input
-sequence&quot; for the sequence builder ` seq1 ` , is constructed from ` F ` as follows.  Its first value
+sequence&quot; for the sequence builder ` seq ` , is constructed from ` F ` as follows.  Its first value
 (value at 1) is the ordered pair ` <. ( ( F `` 1 ) + 1 ) , ( ( F `` 1 ) + 2 ) >. ` .  This provides the
 &quot;seed&quot; for the sequence builder, corresponding to the initial
 assignment to <I>g</I>(1) and <I>h</I>(1) in the informal argument
