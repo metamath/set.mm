@@ -8,12 +8,18 @@
 # Copyright 2018, David A. Wheeler
 # SPDX-License-Identifier: MIT
 
+# Use Python 3 print() syntax, even if we run this in Python 2.
 from __future__ import print_function
 
 import sys
 import re
 import fileinput
 import argparse
+
+# Force hashes to be sorted by insertion order, so --list is easy.
+# All hashes do this on Python 3.7+, but we want it to happen
+# in Python 2.7+ as well.  Using OrderedDict makes it work in all cases.
+from collections import OrderedDict
 
 # TODO: Currently each `...` must not cross lines.
 # TODO: Currently this doesn't handle 'no space if followed by punctuation'.
@@ -35,7 +41,7 @@ remains = ''
 
 # This is the set of definitions we read from typo_file.
 # Each key can be in `...`; the corresponding values are their translations.
-typo_definition = {}
+typo_definition = OrderedDict()
 
 def read_fill_line():
     '''
@@ -143,6 +149,10 @@ my_parser.add_argument('--althtml', help='Use ALTHTML format (default)',
 my_parser.add_argument('--latex', help='Use LaTex format',
     action="store_true")
 my_parser.add_argument('--mmfile', help='Use this mmfile (default set.mm)')
+my_parser.add_argument('--list',
+    help='List symbols and their results (in tab separated value format). ' +
+    'This is sorted in $t order (this may differ from $c declaration order)',
+    action="store_true")
 args = my_parser.parse_args()
 
 # Handle command-line options
@@ -159,6 +169,12 @@ if args.mmfile:
 read_definitions()
 
 # print(typo_definition)
+
+if args.list:
+    print('symbol\ttranslation')
+    for sym, translation in typo_definition.items():
+        print('{}\t{}'.format(sym, translation))
+    sys.exit(0)
 
 # Now translate stdin using those definitions.
 
