@@ -40322,23 +40322,22 @@ $)
       son2lpi $p |- -. ( A R B /\ B R A ) $=
         ( wbr wa soirri sotri mto ) ABCGBACGHAACGACDEFIABACDEFJK $.
 
-      $( A transitivity relation.  (Read ` A <_ B ` and ` B < C ` implies
-         ` A < C ` .)  (Contributed by Mario Carneiro, 10-May-2013.) $)
+      $( A transitivity relation.  (Read ` -. ` B < A and B < C implies A <
+         C .)  (Contributed by Mario Carneiro, 10-May-2013.) $)
       sotri2 $p |- ( ( A e. S /\ -. B R A /\ B R C ) -> A R C ) $=
-        ( wcel wbr wn wi brel simpld wa wceq wo wor wb sotric mpan breq1 biimpd
-        con2bid sotri ex jaoi syl6bir com3r mpand com3l 3imp ) AEHZBADIZJZBCDIZ
-        ACDIZUOULUNUPUOBEHZULUNUPKUOUQCEHBCEEDGLMUQULNZUNUOUPURUNBAOZABDIZPZUOU
-        PKZURUMVAEDQURUMVAJRFEBADSTUCUSVBUTUSUOUPBACDUAUBUTUOUPABCDEFGUDUEUFUGU
-        HUIUJUK $.
+        ( wcel wbr wn simp2 wo wa brel 3ad2ant3 simp1 df-3an sylanbrc
+        w3a simp3 wor wi sowlin mpan sylc ord mpd ) AEHZBADIZJZBCDIZS
+        ZUJACDIZUHUJUKKULUIUMULBEHZCEHZUHSZUKUIUMLZULUNUOMZUHUPUKUHUR
+        UJBCEEDGNOUHUJUKPUNUOUHQRUHUJUKTEDUAUPUKUQUBFEBCADUCUDUEUFUG
+        $.
 
-      $( A transitivity relation.  (Read ` A < B ` and ` B <_ C ` implies
-         ` A < C ` .)  (Contributed by Mario Carneiro, 10-May-2013.) $)
+      $( A transitivity relation.  (Read A < B and ` -. ` C < B implies A <
+         C .)  (Contributed by Mario Carneiro, 10-May-2013.) $)
       sotri3 $p |- ( ( C e. S /\ A R B /\ -. C R B ) -> A R C ) $=
-        ( wcel wbr wn wi brel simprd wa wceq wo wor wb sotric mpan breq2 expcom
-        con2bid biimprd sotri jaoi syl6bir com3r mpan2d com12 3imp ) CEHZABDIZC
-        BDIZJZACDIZUMULUOUPKZUMULBEHZUQUMAEHURABEEDGLMULURNZUOUMUPUSUOCBOZBCDIZ
-        PZUMUPKZUSUNVBEDQUSUNVBJRFECBDSTUCUTVCVAUTUPUMCBADUAUDUMVAUPABCDEFGUEUB
-        UFUGUHUIUJUK $.
+        ( wcel wbr wn w3a simp3 wo wa brel 3ad2ant2 simp1 df-3an sylanbrc simp2
+        wor wi sowlin mpan sylc ecased ) CEHZABDIZCBDIZJZKZACDIZUIUGUHUJLUKAEHZ
+        BEHZUGKZUHULUIMZUKUMUNNZUGUOUHUGUQUJABEEDGOPUGUHUJQUMUNUGRSUGUHUJTEDUAU
+        OUHUPUBFEABCDUCUDUEUF $.
     $}
   $}
 
