@@ -40341,39 +40341,6 @@ $)
     $}
   $}
 
-  ${
-    soiOLD.1 $e |- A e. _V $.
-    soiOLD.2 $e |- R Or S $.
-    soiOLD.3 $e |- R C_ ( S X. S ) $.
-    $( A strict order relation is irreflexive.  (Contributed by NM,
-       10-Feb-1996.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    soirriOLD $p |- -. A R A $=
-      ( wcel wa wbr wn wor sonr mpan adantl brel con3i pm2.61i ) ACGZRHZAABIZJZ
-      RUARCBKRUAECABLMNTSAACCBFOPQ $.
-
-    ${
-      sotriOLD.4 $e |- B e. _V $.
-      sotriOLD.5 $e |- C e. _V $.
-      $( A strict order relation is a transitive relation.  (Contributed by NM,
-         10-Feb-1996.)  (Proof modification is discouraged.)
-         (New usage is discouraged.) $)
-      sotriOLD $p |- ( ( A R B /\ B R C ) -> A R C ) $=
-        ( wcel w3a wbr wa brel wi id 3exp a1dd imp43 syl2an wor sotr mpan mpcom
-        ) AEKZBEKZCEKZLZABDMZBCDMZNZACDMZUJUFUGNUGUHNUIUKABEEDHOBCEEDHOUFUGUGUH
-        UIUFUGUHUIPUGUFUGUHUIUIQRSTUAEDUBUIULUMPGEABCDUCUDUE $.
-    $}
-
-    ${
-      son2lpiOLD.4 $e |- B e. _V $.
-      $( A strict order relation has no 2-cycle loops.  (Contributed by NM,
-         10-Feb-1996.)  (Proof modification is discouraged.)
-         (New usage is discouraged.) $)
-      son2lpiOLD $p |- -. ( A R B /\ B R A ) $=
-        ( wbr wa soirri sotri mto ) ABCIBACIJAACIACDFGKABACDFGLM $.
-    $}
-  $}
-
   $( Express "less than or equals" for general strict orders.  (Contributed by
      Stefan O'Rear, 17-Jan-2015.) $)
   poleloe $p |- ( B e. V -> ( A ( R u. _I ) B <-> ( A R B \/ A = B ) ) ) $=
