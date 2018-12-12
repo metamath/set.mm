@@ -1,4 +1,4 @@
-$( iset.mm - Version of 10-Dec-2018
+$( iset.mm - Version of 11-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -40511,16 +40511,14 @@ $)
 
   ${
     $d x y z A $.  $d x y z B $.
-    $( The cross product of nonempty classes is nonempty.  (Variation of a
-       theorem contributed by Raph Levien, 30-Jun-2006.)  (Contributed by NM,
-       30-Jun-2006.) $)
-    xpnz $p |- ( ( A =/= (/) /\ B =/= (/) ) <-> ( A X. B ) =/= (/) ) $=
-      ( vx vy vz c0 wne wa cxp cv wcel wex anbi12i eeanv bitr4i cop wceq syl6eq
-      n0 necon3i opex eleq1 opelxp syl6bb spcev sylibr exlimivv sylbi xpeq1 0xp
-      xpeq2 xp0 jca impbii ) AFGZBFGZHZABIZFGZUQCJZAKZDJZBKZHZDLCLZUSUQVACLZVCD
-      LZHVEUOVFUPVGCASDBSMVAVCCDNOVDUSCDVDEJZURKZELUSVIVDEUTVBPZUTVBUAVHVJQVIVJ
-      URKVDVHVJURUBUTVBABUCUDUEEURSUFUGUHUSUOUPAFURFAFQURFBIFAFBUIBUJRTBFURFBFQ
-      URAFIFBFAUKAULRTUMUN $.
+    $( The cross product of inhabited classes is inhabited.  (Contributed by
+       Jim Kingdon, 11-Dec-2018.) $)
+    xpm $p |- ( ( E. x x e. A /\ E. y y e. B ) <-> E. z z e. ( A X. B ) ) $=
+      ( cv wcel wex wa cxp eeanv sopex wceq eleq1 opelxp syl6bb spcev
+      cop exlimivv sylbir ax-ia2 2eximi sylbi exlimiv sylib impbii
+      elxp ) AFZDGZAHBFZEGZBHIZCFZDEJZGZCHZULUIUKIZBHAHZUPUIUKABKZUQU
+      PABUOUQCUHUJRZABLUMUTMZUOUTUNGUQUMUTUNNUHUJDEOPQSTUPURULUOURCUO
+      VAUQIZBHAHURABUMDEUGVBUQABVAUQUAUBUCUDUSUEUF $.
   $}
 
   $( At least one member of an empty cross product is empty.  (Contributed by
