@@ -1,4 +1,4 @@
-$( iset.mm - Version of 11-Dec-2018
+$( iset.mm - Version of 12-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -40521,11 +40521,11 @@ $)
       VAUQIZBHAHURABUMDEUGVBUQABVAUQUAUBUCUDUSUEUF $.
   $}
 
-  $( At least one member of an empty cross product is empty.  (Contributed by
-     NM, 27-Aug-2006.) $)
-  xpeq0 $p |- ( ( A X. B ) = (/) <-> ( A = (/) \/ B = (/) ) ) $=
-    ( cxp c0 wceq wne wa wn wo xpnz necon2bbii ianor nne orbi12i 3bitri ) ABCZD
-    EADFZBDFZGZHQHZRHZIADEZBDEZISPDABJKQRLTUBUAUCADMBDMNO $.
+  $( A cross product is empty if at least one member is empty.  (Contributed by
+     Jim Kingdon, 12-Dec-2018.) $)
+  xpeq0r $p |- ( ( A = (/) \/ B = (/) ) -> ( A X. B ) = (/) ) $=
+    ( c0 wceq cxp xpeq1 0xp syl6eq xpeq2 xp0 jaoi ) ACDZABEZCDBCDZLMC
+    BECACBFBGHNMACECBCAIAJHK $.
 
   $( Cross products with disjoint sets are disjoint.  (Contributed by NM,
      13-Sep-2004.) $)
