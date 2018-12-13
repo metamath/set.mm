@@ -40588,10 +40588,16 @@ $)
     ( cxp crn ccnv cdm df-rn cnvxp dmeqi dmxpss eqsstri ) ABCZDLEZFZBLGNBACZFBM
     OABHIBAJKK $.
 
-  $( The range of a square cross product.  (Contributed by FL, 17-May-2010.) $)
-  rnxpid $p |- ran ( A X. A ) = A $=
-    ( cxp crn wceq c0 rn0 xpeq2 xp0 syl6eq rneqd id 3eqtr4a rnxp pm2.61ine ) AA
-    BZCZADAEAEDZECEPAFQOEQOAEBEAEAGAHIJQKLAAMN $.
+  ${
+    $d x y A $.
+    $( The range of a square cross product.  (Contributed by FL,
+       17-May-2010.) $)
+    rnxpid $p |- ran ( A X. A ) = A $=
+      ( vx vy cxp crn rnxpss cv wcel cop wex wa opelxp anidm bitri weq wb opeq1
+      eleq1d equcoms biimpd spimev sylbir vex elrn2 sylibr ssriv eqssi ) AADZEZ
+      AAAFBAUIBGZAHZCGZUJIZUHHZCJZUJUIHUKUJUJIZUHHZUOUQUKUKKUKUJUJAALUKMNUQUNCB
+      CBOUQUNUQUNPBCBCOUPUMUHUJULUJQRSTUAUBCUJUHBUCUDUEUFUG $.
+  $}
 
   $( A cross-product subclass relationship is equivalent to the relationship
      for it components.  (Contributed by NM, 17-Dec-2008.) $)
