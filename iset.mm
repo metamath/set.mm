@@ -1,4 +1,4 @@
-$( iset.mm - Version of 12-Dec-2018
+$( iset.mm - Version of 13-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -40513,12 +40513,23 @@ $)
     $d x y z A $.  $d x y z B $.
     $( The cross product of inhabited classes is inhabited.  (Contributed by
        Jim Kingdon, 11-Dec-2018.) $)
-    xpm $p |- ( ( E. x x e. A /\ E. y y e. B ) <-> E. z z e. ( A X. B ) ) $=
+    xpmlem $p |- ( ( E. x x e. A /\ E. y y e. B ) <-> E. z z e. ( A X. B ) ) $=
       ( cv wcel wex wa cxp eeanv sopex wceq eleq1 opelxp syl6bb spcev
       cop exlimivv sylbir ax-ia2 2eximi sylbi exlimiv sylib impbii
       elxp ) AFZDGZAHBFZEGZBHIZCFZDEJZGZCHZULUIUKIZBHAHZUPUIUKABKZUQU
       PABUOUQCUHUJRZABLUMUTMZUOUTUNGUQUMUTUNNUHUJDEOPQSTUPURULUOURCUO
       VAUQIZBHAHURABUMDEUGVBUQABVAUQUAUBUCUDUSUEUF $.
+  $}
+
+  ${
+    $d x A $.  $d y B $.  $d z A $.  $d z B $.  $d a b w A $.  $d a b w B $.
+    $d a x $.  $d b y $.  $d z w $.
+    $( The cross product of inhabited classes is inhabited.  (Contributed by
+       Jim Kingdon, 13-Dec-2018.) $)
+    xpm $p |- ( ( E. x x e. A /\ E. y y e. B ) <-> E. z z e. ( A X. B ) ) $=
+      ( va vb vw cv wcel wex wa cxp xpmlem eleq1 cbvexv anbi12i 3bitr3i ) FIZDJ
+      ZFKZGIZEJZGKZLHIZDEMZJZHKAIZDJZAKZBIZEJZBKZLCIZUFJZCKFGHDENUAUJUDUMTUIFAS
+      UHDOPUCULGBUBUKEOPQUGUOHCUEUNUFOPR $.
   $}
 
   $( A cross product is empty if at least one member is empty.  (Contributed by
