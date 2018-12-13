@@ -40562,11 +40562,15 @@ $)
     ( cin c0 wceq cres resres reseq2 res0 syl6eq syl5eq ) ABDZEFZCAGBGCMGZECABH
     NOCEGEMECICJKL $.
 
-  $( The range of a cross product.  Part of Theorem 3.13(x) of [Monk1] p. 37.
-     (Contributed by NM, 12-Apr-2004.) $)
-  rnxp $p |- ( A =/= (/) -> ran ( A X. B ) = B ) $=
-    ( c0 wne cxp crn cdm ccnv df-rn cnvxp dmeqi eqtri dmxp syl5eq ) ACDABEZFZBA
-    EZGZBPOHZGROISQABJKLBAMN $.
+  ${
+    $d x A $.  $d x B $.
+    $( The range of a cross product.  Part of Theorem 3.13(x) of [Monk1] p. 37,
+       with non-empty changed to inhabited.  (Contributed by Jim Kingdon,
+       12-Dec-2018.) $)
+    rnxpm $p |- ( E. x x e. A -> ran ( A X. B ) = B ) $=
+      ( wcel wex cxp crn cdm ccnv df-rn cnvxp dmeqi eqtri dmxpm syl5eq
+      cv ) APBDAEBCFZGZCBFZHZCRQIZHTQJUASBCKLMACBNO $.
+  $}
 
   $( The domain of a cross product is a subclass of the first factor.
      (Contributed by NM, 19-Mar-2007.) $)
