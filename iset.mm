@@ -40599,15 +40599,19 @@ $)
       CBOUQUNUQUNPBCBCOUPUMUHUJULUJQRSTUAUBCUJUHBUCUDUEUFUG $.
   $}
 
-  $( A cross-product subclass relationship is equivalent to the relationship
-     for it components.  (Contributed by NM, 17-Dec-2008.) $)
-  ssxpb $p |- ( ( A X. B ) =/= (/) -> ( ( A X. B ) C_ ( C X. D ) <->
-              ( A C_ C /\ B C_ D ) ) ) $=
-    ( cxp c0 wne wss wa cdm wceq xpnz dmxp adantl sylbir adantr eqsstr3d syl6ss
-    dmss crn dmxpss rnxp rnss rnxpss jca ex xpss12 impbid1 ) ABEZFGZUICDEZHZACH
-    ZBDHZIZUJULUOUJULIZUMUNUPAUKJZCUPAUIJZUQUJURAKZULUJAFGZBFGZIZUSABLZVAUSUTAB
-    MNOPULURUQHUJUIUKSNQCDUARUPBUKTZDUPBUITZVDUJVEBKZULUJVBVFVCUTVFVAABUBPOPULV
-    EVDHUJUIUKUCNQCDUDRUEUFACBDUGUH $.
+  ${
+    $d x a b A $.  $d x a b B $.
+    $( A cross-product subclass relationship is equivalent to the relationship
+       for its components.  (Contributed by Jim Kingdon, 12-Dec-2018.) $)
+    ssxpbm $p |- ( E. x x e. ( A X. B ) -> ( ( A X. B ) C_ ( C X. D ) <->
+                ( A C_ C /\ B C_ D ) ) ) $=
+      ( va vb cv cxp wcel wex wss wa wceq adantl sylbir adantr eqsstr3d
+      cdm syl6ss xpm dmxpm dmss dmxpss crn rnxpm rnss rnxpss jca xpss12
+      ex impbid1 ) AHBCIZJAKZUMDEIZLZBDLZCELZMZUNUPUSUNUPMZUQURUTBUOSZD
+      UTBUMSZVAUNVBBNZUPUNFHBJFKZGHCJGKZMZVCFGABCUAZVEVCVDGBCUBOPQUPVBV
+      ALUNUMUOUCORDEUDTUTCUOUEZEUTCUMUEZVHUNVICNZUPUNVFVJVGVDVJVEFBCUFQ
+      PQUPVIVHLUNUMUOUGORDEUHTUIUKBDCEUJUL $.
+  $}
 
   $( The cross product of non-empty classes is one-to-one.  (Contributed by NM,
      31-May-2008.) $)
