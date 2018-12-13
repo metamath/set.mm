@@ -40572,12 +40572,14 @@ $)
       cv ) APBDAEBCFZGZCBFZHZCRQIZHTQJUASBCKLMACBNO $.
   $}
 
-  $( The domain of a cross product is a subclass of the first factor.
-     (Contributed by NM, 19-Mar-2007.) $)
-  dmxpss $p |- dom ( A X. B ) C_ A $=
-    ( cxp cdm wss c0 wceq xpeq2 xp0 syl6eq dm0 0ss syl6eqss wne dmxp eqimss syl
-    dmeqd pm2.61ine ) ABCZDZAEZBFBFGZUAFAUCUAFDFUCTFUCTAFCFBFAHAIJRKJALMBFNUAAG
-    UBABOUAAPQS $.
+  ${
+    $d x y A $.  $d x y B $.
+    $( The domain of a cross product is a subclass of the first factor.
+       (Contributed by NM, 19-Mar-2007.) $)
+    dmxpss $p |- dom ( A X. B ) C_ A $=
+      ( vx vy cxp cdm cv wcel cop wex vex eldm2 opelxp1 exlimiv sylbi ssriv ) C
+      ABEZFZACGZRHSDGZIQHZDJSAHZDSQCKLUAUBDSTABMNOP $.
+  $}
 
   $( The range of a cross product is a subclass of the second factor.
      (Contributed by NM, 16-Jan-2006.)  (Proof shortened by Andrew Salmon,
