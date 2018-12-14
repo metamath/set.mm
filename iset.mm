@@ -40679,14 +40679,18 @@ $)
       ZBDHZCDHZIZRQIZJBCIZCBIZJQRKBCKPSUATUBABCDLACBDLMQRNBCNO $.
   $}
 
-  $( If a nonempty cross product is a set, so are both of its components.
-     (Contributed by NM, 27-Aug-2006.) $)
-  xpexr2 $p |- ( ( ( A X. B ) e. C /\ ( A X. B ) =/= (/) ) ->
-               ( A e. _V /\ B e. _V ) ) $=
-    ( cxp c0 wne wcel wa cvv xpnz cdm wceq dmxp adantl adantr eqeltrrd crn rnxp
-    dmexg rnexg anim12dan ancom2s sylan2br ) ABDZEFUDCGZAEFZBEFZHAIGZBIGZHZABJU
-    EUGUFUJUEUGUHUFUIUEUGHUDKZAIUGUKALUEABMNUEUKIGUGUDCSOPUEUFHUDQZBIUFULBLUEAB
-    RNUEULIGUFUDCTOPUAUBUC $.
+  ${
+    $d x a A $.  $d x b B $.
+    $( If a nonempty cross product is a set, so are both of its components.
+       (Contributed by Jim Kingdon, 14-Dec-2018.) $)
+    xpexr2m $p |- ( ( ( A X. B ) e. C /\ E. x x e. ( A X. B ) ) ->
+                 ( A e. _V /\ B e. _V ) ) $=
+      ( va vb cv cxp wcel wex wa cvv xpm wceq dmxpm adantl dmexg adantr
+      cdm eqeltrrd crn rnxpm rnexg anim12dan ancom2s sylan2br ) AGBCHZI
+      AJUGDIZEGBIEJZFGCIFJZKBLIZCLIZKZEFABCMUHUJUIUMUHUJUKUIULUHUJKUGSZ
+      BLUJUNBNUHFBCOPUHUNLIUJUGDQRTUHUIKUGUAZCLUIUOCNUHEBCUBPUHUOLIUIUG
+      DUCRTUDUEUF $.
+  $}
 
   ${
     $d x y A $.  $d x y B $.  $d x y C $.
