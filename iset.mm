@@ -40637,6 +40637,18 @@ $)
   $}
 
   ${
+    $d x C $.
+    $( Cross product subset cancellation.  (Contributed by Jim Kingdon,
+       14-Dec-2018.) $)
+    ssxp2 $p |- ( E. x x e. C ->
+        ( ( C X. A ) C_ ( C X. B ) <-> A C_ B ) ) $=
+      ( cv wcel wex cxp wss wa wceq rnxpm adantr rnss adantl eqsstr3d
+      crn rnxpss syl6ss ex xpss2 impbid1 ) AEDFAGZDBHZDCHZIZBCIZUCUFU
+      GUCUFJZBUEQZCUHBUDQZUIUCUJBKUFADBLMUFUJUIIUCUDUENOPDCRSTBCDUAUB
+      $.
+  $}
+
+  ${
     $d x A $.  $d y B $.  $d A z $.  $d B z $.  $d C z $.  $d D z $.
     $( The cross product of inhabited classes is one-to-one.  (Contributed by
        Jim Kingdon, 13-Dec-2018.) $)
@@ -40652,18 +40664,16 @@ $)
       UMUNCEDFUOUP $.
   $}
 
-  $( Cancellation law for cross-product.  (Contributed by NM, 30-Aug-2011.) $)
-  xpcan $p |- ( C =/= (/) -> ( ( C X. A ) = ( C X. B ) <-> A = B ) ) $=
-    ( c0 wne cxp wceq wb wa xp11 eqid biantrur syl6bbr wn wi simpr xpeq2 syl6eq
-    nne xp0 eqeq1d eqcom syl6bb adantl df-ne wo xpeq0 orel1 syl5bi sylbi adantr
-    sylbid eqtr3 ee12an sylan2b impbid1 pm2.61dan ) CDEZADEZCAFZCBFZGZABGZHURUS
-    IVBCCGZVCIVCCACBJVDVCCKLMURUSNZIVBVCVEURADGZVBVCOADSURVFIZVFVBBDGZVCURVFPVG
-    VBVADGZVHVFVBVIHURVFVBDVAGVIVFUTDVAVFUTCDFDADCQCTRUADVAUBUCUDURVIVHOZVFURCD
-    GZNZVJCDUEVIVKVHUFVLVHCBUGVKVHUHUIUJUKULABDUMUNUOABCQUPUQ $.
-
   ${
     $d x C $.
-    $( Cancellation law for cross-product.  (Contributed by Jim Kingdon, 14-Dec-2018.) $)
+    $( Cancellation law for cross-product.  (Contributed by Jim Kingdon,
+       14-Dec-2018.) $)
+    xpcanm $p |- ( E. x x e. C -> ( ( C X. A ) = ( C X. B ) <-> A = B ) ) $=
+      ( cv wcel wex cxp wss wa wceq ssxp2 anbi12d eqss 3bitr4g ) AEDFAG
+      ZDBHZDCHZIZRQIZJBCIZCBIZJQRKBCKPSUATUBABCDLACBDLMQRNBCNO $.
+
+    $( Cancellation law for cross-product.  (Contributed by Jim Kingdon,
+       14-Dec-2018.) $)
     xpcan2m $p |- ( E. x x e. C -> ( ( A X. C ) = ( B X. C ) <-> A = B ) ) $=
       ( cv wcel wex cxp wss wa wceq ssxp1 anbi12d eqss 3bitr4g ) AEDFAG
       ZBDHZCDHZIZRQIZJBCIZCBIZJQRKBCKPSUATUBABCDLACBDLMQRNBCNO $.
