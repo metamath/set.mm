@@ -40626,6 +40626,17 @@ $)
   $}
 
   ${
+    $d x C $.
+    $( Cross product subset cancellation.  (Contributed by Jim Kingdon,
+       14-Dec-2018.) $)
+    ssxp1 $p |- ( E. x x e. C ->
+        ( ( A X. C ) C_ ( B X. C ) <-> A C_ B ) ) $=
+      ( cv wcel wex cxp wss cdm wceq dmxpm adantr adantl eqsstr3d dmxpss syl6ss
+      wa dmss ex xpss1 impbid1 ) AEDFAGZBDHZCDHZIZBCIZUCUFUGUCUFRZBUEJZCUHBUDJZ
+      UIUCUJBKUFABDLMUFUJUIIUCUDUESNOCDPQTBCDUAUB $.
+  $}
+
+  ${
     $d x A $.  $d y B $.  $d A z $.  $d B z $.  $d C z $.  $d D z $.
     $( The cross product of inhabited classes is one-to-one.  (Contributed by
        Jim Kingdon, 13-Dec-2018.) $)
