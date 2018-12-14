@@ -40624,16 +40624,21 @@ $)
       PQUPVIVHLUNUMUOUGORDEUHTUIUKBDCEUJUL $.
   $}
 
-  $( The cross product of non-empty classes is one-to-one.  (Contributed by NM,
-     31-May-2008.) $)
-  xp11 $p |- ( ( A =/= (/) /\ B =/= (/) )
-      -> ( ( A X. B ) = ( C X. D ) <-> ( A = C /\ B = D ) ) ) $=
-    ( c0 wne wa cxp wceq wi xpnz anidm neeq1 anbi2d syl5bbr wss ssxpb syl5ibcom
-    eqimss eqss eqimss2 anim12d anbi12i bitr4i syl6ib sylbid com12 sylbi xpeq12
-    an4 impbid1 ) AEFBEFGZABHZCDHZIZACIZBDIZGZULUMEFZUOURJABKUOUSURUOUSUSUNEFZG
-    ZURUSUSUSGUOVAUSLUOUSUTUSUMUNEMNOUOVAACPZBDPZGZCAPZDBPZGZGZURUOUSVDUTVGUOUM
-    UNPUSVDUMUNSABCDQRUOUNUMPUTVGUNUMUACDABQRUBVHVBVEGZVCVFGZGURVBVCVEVFUJUPVIU
-    QVJACTBDTUCUDUEUFUGUHACBDUIUK $.
+  ${
+    $d x A $.  $d y B $.  $d A z $.  $d B z $.  $d C z $.  $d D z $.
+    $( The cross product of inhabited classes is one-to-one.  (Contributed by
+       Jim Kingdon, 13-Dec-2018.) $)
+    xp11m $p |- ( ( E. x x e. A /\ E. y y e. B )
+        -> ( ( A X. B ) = ( C X. D ) <-> ( A = C /\ B = D ) ) ) $=
+      ( vz cv wcel wex wa cxp wceq wi xpm anidm ssxpbm syl5ibcom eqss
+      wss exbidv anbi2d syl5bbr eqimss eqimss2 anim12d anbi12i bitr4i
+      eleq2 an4 syl6ib sylbid com12 sylbi xpeq12 impbid1 ) AHCIAJBHDI
+      BJKZCDLZEFLZMZCEMZDFMZKZUQGHZURIZGJZUTVCNABGCDOUTVFVCUTVFVFVDUS
+      IZGJZKZVCVFVFVFKUTVIVFPUTVFVHVFUTVEVGGURUSVDUIUAUBUCUTVICETZDFT
+      ZKZECTZFDTZKZKZVCUTVFVLVHVOUTURUSTVFVLURUSUDGCDEFQRUTUSURTVHVOU
+      SURUEGEFCDQRUFVPVJVMKZVKVNKZKVCVJVKVMVNUJVAVQVBVRCESDFSUGUHUKUL
+      UMUNCEDFUOUP $.
+  $}
 
   $( Cancellation law for cross-product.  (Contributed by NM, 30-Aug-2011.) $)
   xpcan $p |- ( C =/= (/) -> ( ( C X. A ) = ( C X. B ) <-> A = B ) ) $=
