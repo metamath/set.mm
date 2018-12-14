@@ -40679,13 +40679,6 @@ $)
       ZBDHZCDHZIZRQIZJBCIZCBIZJQRKBCKPSUATUBABCDLACBDLMQRNBCNO $.
   $}
 
-  $( If a cross product is a set, one of its components must be a set.
-     (Contributed by NM, 27-Aug-2006.) $)
-  xpexr $p |- ( ( A X. B ) e. C -> ( A e. _V \/ B e. _V ) ) $=
-    ( cxp wcel cvv wn wi wceq 0ex eleq1 mpbiri pm2.24d a1d wne crn rnexg eleq1d
-    c0 rnxp syl5ib a1dd pm2.61ine orrd ) ABDZCEZAFEZBFEZUFUGGZUHHZHASASIZUJUFUK
-    UGUHUKUGSFEJASFKLMNASOZUFUHUIUFUEPZFEULUHUECQULUMBFABTRUAUBUCUD $.
-
   $( If a nonempty cross product is a set, so are both of its components.
      (Contributed by NM, 27-Aug-2006.) $)
   xpexr2 $p |- ( ( ( A X. B ) e. C /\ ( A X. B ) =/= (/) ) ->
