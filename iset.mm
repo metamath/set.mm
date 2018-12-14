@@ -1,4 +1,4 @@
-$( iset.mm - Version of 13-Dec-2018
+$( iset.mm - Version of 14-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -38975,14 +38975,15 @@ $)
   $}
 
   ${
-    $d x y A $.  $d x y B $.
+    $d y z A $.  $d x y z B $.
     $( The domain of a cross product.  Part of Theorem 3.13(x) of [Monk1]
        p. 37.  (Contributed by NM, 28-Jul-1995.)  (Proof shortened by Andrew
        Salmon, 27-Aug-2011.) $)
     dmxpm $p |- ( E. x x e. B -> dom ( A X. B ) = A ) $=
-      ( vy cv wcel wex cxp cdm wa copab df-xp dmeqi wral wceq ralrimivw
-      id dmopab3 sylib syl5eq ) AECFZAGZBCHZIDEBFUAJDAKZIZBUCUDDABCLMUB
-      UBDBNUEBOUBUBDBUBQPUADABRST $.
+      ( vz vy cv wcel wex cxp cdm wceq eleq1 cbvexv copab df-xp dmeqi
+      wa wral id ralrimivw dmopab3 sylib syl5eq sylbi ) AFZCGZAHDFZCG
+      ZDHZBCIZJZBKUFUHADUEUGCLMUIUKEFBGUHQEDNZJZBUJULEDBCOPUIUIEBRUMB
+      KUIUIEBUISTUHEDBUAUBUCUD $.
   $}
 
   ${
@@ -40574,7 +40575,7 @@ $)
     NOCEGEMECICJKL $.
 
   ${
-    $d x A $.  $d x B $.
+    $d x A $.
     $( The range of a cross product.  Part of Theorem 3.13(x) of [Monk1] p. 37,
        with non-empty changed to inhabited.  (Contributed by Jim Kingdon,
        12-Dec-2018.) $)
