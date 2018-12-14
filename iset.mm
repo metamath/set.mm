@@ -40661,14 +40661,13 @@ $)
     VBVADGZVHVFVBVIHURVFVBDVAGVIVFUTDVAVFUTCDFDADCQCTRUADVAUBUCUDURVIVHOZVFURCD
     GZNZVJCDUEVIVKVHUFVLVHCBUGVKVHUHUIUJUKULABDUMUNUOABCQUPUQ $.
 
-  $( Cancellation law for cross-product.  (Contributed by NM, 30-Aug-2011.) $)
-  xpcan2 $p |- ( C =/= (/) -> ( ( A X. C ) = ( B X. C ) <-> A = B ) ) $=
-    ( c0 wne cxp wceq wb wa xp11 eqid biantru syl6bbr wn nne simpl xpeq1 syl6eq
-    0xp eqeq1d eqcom syl6bb adantr wi df-ne wo xpeq0 orel2 syl5bi adantl sylbid
-    sylbi eqtr3 ee12an impbid1 sylanb pm2.61ian ) ADEZCDEZACFZBCFZGZABGZHZURUSI
-    VBVCCCGZIVCACBCJVEVCCKLMURNADGZUSVDADOVFUSIZVBVCVGVFVBBDGZVCVFUSPVGVBVADGZV
-    HVFVBVIHUSVFVBDVAGVIVFUTDVAVFUTDCFDADCQCSRTDVAUAUBUCUSVIVHUDZVFUSCDGZNZVJCD
-    UEVIVHVKUFVLVHBCUGVKVHUHUIULUJUKABDUMUNABCQUOUPUQ $.
+  ${
+    $d x C $.
+    $( Cancellation law for cross-product.  (Contributed by Jim Kingdon, 14-Dec-2018.) $)
+    xpcan2m $p |- ( E. x x e. C -> ( ( A X. C ) = ( B X. C ) <-> A = B ) ) $=
+      ( cv wcel wex cxp wss wa wceq ssxp1 anbi12d eqss 3bitr4g ) AEDFAG
+      ZBDHZCDHZIZRQIZJBCIZCBIZJQRKBCKPSUATUBABCDLACBDLMQRNBCNO $.
+  $}
 
   $( If a cross product is a set, one of its components must be a set.
      (Contributed by NM, 27-Aug-2006.) $)
