@@ -40762,11 +40762,15 @@ $)
       IFZSUIUEDMUJUKUEDNOUKUHBCDKPOQAUCUGRTCUAUB $.
   $}
 
-  $( The image of a singleton by a cross product.  (Contributed by Thierry
-     Arnoux, 14-Jan-2018.) $)
-  xpimasn $p |- ( X e. A -> ( ( A X. B ) " { X } ) = B ) $=
-    ( wcel csn cin wne cxp cima wceq wss snssi dfss1 sylib snnzg eqnetrd xpima2
-    c0 syl ) CADZACEZFZRGABHUAIBJTUBUARTUAAKUBUAJCALUAAMNCAOPABUAQS $.
+  ${
+    $d A x $.  $d X x $.
+    $( The image of a singleton by a cross product.  (Contributed by Thierry
+       Arnoux, 14-Jan-2018.) $)
+    xpimasn $p |- ( X e. A -> ( ( A X. B ) " { X } ) = B ) $=
+      ( vx wcel cv csn cin wex cxp cima wceq snmg wss snssi dfss1 sylib
+      eleq2d exbidv mpbird xpima2m syl ) CAEZDFZACGZHZEZDIZABJUEKBLUCUH
+      UDUEEZDIDCAMUCUGUIDUCUFUEUDUCUEANUFUELCAOUEAPQRSTDABUEUAUB $.
+  $}
 
   ${
     $d x y A $.  $d x B $.  $d x y R $.  $d x V $.
