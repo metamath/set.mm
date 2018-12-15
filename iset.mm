@@ -40773,46 +40773,6 @@ $)
   $}
 
   ${
-    $d x y A $.  $d x B $.  $d x y R $.  $d x V $.
-    $( The base set of a strict order is contained in the field of the
-       relation, except possibly for one element (note that
-       ` (/) Or { B } ` ).  (Contributed by Mario Carneiro, 27-Apr-2015.) $)
-    sossfld $p |- ( ( R Or A /\ B e. A ) ->
-      ( A \ { B } ) C_ ( dom R u. ran R ) ) $=
-      ( vx wor wcel wa csn cdif cdm crn cun cv wne eldifsn wo wi 3expia adantll
-      wbr sotrieq necon2abid breldmg an32s brelrng orim12d elun syl6ibr sylbird
-      wb anass1rs expimpd syl5bi ssrdv ) ACEZBAFZGZDABHIZCJZCKZLZDMZURFVBAFZVBB
-      NZGUQVBVAFZVBABOUQVCVDVEUQVCGZVDVBBCTZBVBCTZPZVEUOVCUPVIVDUJUOVCUPGGVIVBB
-      AVBBCUAUBUKVFVIVBUSFZVBUTFZPVEVFVGVJVHVKUOVCUPVGVJQZVCUPVLUOVCUPVGVJVBBAA
-      CUCRSUDUPVCVHVKQUOUPVCVHVKBVBCAAUERSUFVBUSUTUGUHUIULUMUN $.
-
-    $( The base set of a nonempty strict order is the same as the field of the
-       relation.  (Contributed by Mario Carneiro, 15-May-2015.) $)
-    sofld $p |- ( ( R Or A /\ R C_ ( A X. A ) /\ R =/= (/) ) ->
-      A = ( dom R u. ran R ) ) $=
-      ( vx vy wor cxp wss c0 cdm crn wa wrel ad2antlr wcel ssun1 syl6sseq unssd
-      cun cv ex wne w3a wn wceq relxp relss mpi cop wbr df-br csn cdif sseqtr4i
-      undif1 simpll dmxpid releldm sylancom sseldd sossfld syl2anc sseldi snssd
-      dmss syl5ss syl5bir con3and pm2.21d relssdv necon1ad 3impia rnss 3ad2ant2
-      ss0 syl rnxpid eqssd ) ABEZBAAFZGZBHUAZUBABIZBJZRZVRVTWAAWDGZVRVTKZWEBHWF
-      WEUCZBHUDZWFWGKZBHGWHWICDBHVTBLZVRWGVTVSLWJAAUEBVSUFUGZMWICSZDSZUHZBNZWNH
-      NWFWOWEWOWLWMBUIZWFWEWLWMBUJWFWPWEWFWPKZAAWLUKZULZWRRZWDAAWRRWTAWROAWRUNU
-      MWQWSWRWDWQVRWLANWSWDGVRVTWPUOWQWBAWLVTWBAGVRWPVTWBVSIABVSVDAUPPZMWFWPWJW
-      LWBNVTWJVRWPWKMWLWMBUQURZUSAWLBUTVAWQWLWDWQWBWDWLWBWCOXBVBVCQVETVFVGVHVIB
-      VNVOTVJVKVTVRWDAGWAVTWBWCAXAVTWCVSJABVSVLAVPPQVMVQ $.
-
-    $( If the relation in a strict order is a set, then the base field is also
-       a set.  (Contributed by Mario Carneiro, 27-Apr-2015.) $)
-    soex $p |- ( ( R Or A /\ R e. V ) -> A e. _V ) $=
-      ( vx wor wcel wa cvv c0 wceq simpr 0ex syl6eqel wne cv wex cun unexg wss
-      n0 csn cdm snex dmexg rnexg syl2anc sylancr ad2antlr cdif sossfld adantlr
-      crn ssundif sylibr ssexd ex exlimdv imp sylan2b pm2.61dane ) ABEZBCFZGZAH
-      FZAIVCAIJZGAIHVCVEKLMAINVCDOZAFZDPZVDDATVCVHVDVCVGVDDVCVGVDVCVGGZAVFUAZBU
-      BZBULZQZQZHVBVNHFZVAVGVBVJHFVMHFZVOVFUCVBVKHFVLHFVPBCUDBCUEVKVLHHRUFVJVMH
-      HRUGUHVIAVJUIVMSZAVNSVAVGVQVBAVFBUJUKAVJVMUMUNUOUPUQURUSUT $.
-  $}
-
-  ${
     $d x y R $.
     $( The set of all ordered pairs in a class is the same as the double
        converse.  (Contributed by Mario Carneiro, 16-Aug-2015.) $)
