@@ -2,7 +2,7 @@
 # regen-from-raw - regenerate files from .raw parts
 
 # Simple raw.html files
-simple_raw='mmcomplex mmnatded mmset'
+simple_raw='mmcomplex mmnatded mmset mmdeduction'
 markup_options="${1:-"/HTML"} /SYMBOLS"
 
 generate_simple_html() {
