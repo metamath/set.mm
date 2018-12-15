@@ -46,6 +46,8 @@ install:
   - wget -N -q http://us.metamath.org/downloads/checkmm.cpp
   - g++ -O2 -o checkmm checkmm.cpp
 script:
+  # Create mmset.html so we can verify against it.
+  - metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
   - scripts/verify --date_skip --extra 'write bibliography mmbiblio.html' set.mm
   - scripts/verify iset.mm
   # Verify and also generate 'discouraged.new':
