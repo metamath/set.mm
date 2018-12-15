@@ -12,7 +12,7 @@ generate_metamath_commands () {
   echo "read \"$mmfile\""
   echo 'set scroll continuous'
   for file in "$@" ; do
-    echo "markup \"${file}\" \",${file}.TRASH\" /ALT_HTML /SYMBOLS_ONLY"
+    echo "markup \"${file}\" \",${file}.TRASH\" /ALT_HTML /SYMBOLS"
   done
   echo quit
 }
