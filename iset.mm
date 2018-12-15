@@ -40845,22 +40845,12 @@ $)
   dfrn4 $p |- ran A = ( A " _V ) $=
     ( cvv cima cres crn df-ima rnresv eqtr2i ) ABCABDEAEABFAGH $.
 
-  $( Distribute proper substitution through the range of a class.  (Contributed
-     by Alan Sare, 10-Nov-2012.) $)
-  csbrn $p |- [_ A / x ]_ ran B = ran [_ A / x ]_ B $=
-    ( cvv cima csb crn csbima12 wcel wceq csbconstg imaeq2d wn c0 eqcomi csbprc
-    0ima imaeq1d syl6eq dfrn4 3eqtr4a pm2.61i eqtri csbeq2i 3eqtr4i ) ABCDEZFZA
-    BCFZDEZABCGZFUHGUGUHABDFZEZUIABDCHBDIZULUIJUMUKDUHABDDKLUMMZNNDEZULUIUONDQO
-    UNULNUKENUNUHNUKABCPZRUKQSUNUHNDUPRUAUBUCABUJUFCTUDUHTUE $.
-
   ${
     $d A w y $.  $d B w y $.  $d V w y $.  $d x w y $.
     $( Distribute proper substitution through the range of a class.
-       (Contributed by Alan Sare, 10-Nov-2012.)  Obsolete as of 23-Aug-2018.
-       Use ~ csbrn instead.  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    csbrngOLD $p |- ( A e. V -> [_ A / x ]_ ran B = ran [_ A / x ]_ B ) $=
-      ( vw vy wcel cv cop wex cab csb crn csbabgOLD sbcexgOLD sbcel2gOLD exbidv
+       (Contributed by Alan Sare, 10-Nov-2012.) $)
+    csbrng $p |- ( A e. V -> [_ A / x ]_ ran B = ran [_ A / x ]_ B ) $=
+      ( vw vy wcel cv cop wex cab csb crn csbabg sbcexg sbcel2g exbidv
       wsbc bitrd dfrn3 abbidv eqtrd csbeq2i 3eqtr4g ) BDGZABEHFHIZCGZEJZFKZLZUF
       ABCLZGZEJZFKZABCMZLUKMUEUJUHABRZFKUNUHAFBDNUEUPUMFUEUPUGABRZEJUMUGEABDOUE
       UQULEABUFCDPQSUAUBABUOUIEFCTUCEFUKTUD $.
