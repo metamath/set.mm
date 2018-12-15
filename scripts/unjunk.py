@@ -21,7 +21,7 @@ from __future__ import print_function
 import sys, re
 
 # This searches for img references
-re_img = re.compile(r'<IMG\s[^>]*\sALT=[\'"]([^\'"]+)[\'"][^>]*>')
+re_img = re.compile(r'<IMG\s[^>]*\sALT=[\'"] *([^\' "]+) *[\'"][^>]*>')
 
 # We temporarily replace function calls with this so we can handle them.
 function_call_stub = 'FUNCTION_CALL_STUB_' + 'XYZZY'
