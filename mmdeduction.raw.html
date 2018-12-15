@@ -121,35 +121,19 @@ click on the theorem referenced in the step
 just before the reference to <A HREF="dedth.html">dedth</A>
 and ignore everything else.  All that <A HREF="dedth.html">dedth</A>
 does is turn a
-hypothesis into an antecedent (i.e. the hypothesis followed by <IMG
-SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> is placed in
+hypothesis into an antecedent (i.e. the hypothesis followed by ` -> ` is placed in
 front of the assertion, and the hypothesis itself is eliminated).
 <B>Example:</B> Look at the proof of
 <A HREF="renegcl.html">renegcl</A>.  In step 5, there is a reference
 to the deduction <A HREF="renegcli.html">renegcli</A>,
-"<IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 ALT='|-'> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
-ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG
-SRC='bbr.gif' WIDTH=13 HEIGHT=19 ALT='RR'>&nbsp;&nbsp;<IMG
-SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
-SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT='-u'><IMG SRC='_ca.gif'
-WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
-ALT='e.'> <IMG SRC='bbr.gif' WIDTH=13 HEIGHT=19 ALT='RR'
-ALIGN=TOP>".  A special substitution instance of
+"` |- A e. RR `&nbsp;&nbsp;` => `&nbsp;&nbsp;
+` |- -u A e. RR `".  A special substitution instance of
 <A HREF="renegcli.html">renegcli</A>
 is used to feed the last hypothesis of
 the deduction theorem <A HREF="dedth.html">dedth</A>, which in turn
 converts it to the theorem
-"<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
-WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
-ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
-<IMG SRC='bbr.gif' WIDTH=13 HEIGHT=19 ALT='RR'> <IMG SRC='to.gif'
-WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='shortminus.gif' WIDTH=8
-HEIGHT=19 ALT='-u'><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
-ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG
-SRC='bbr.gif' WIDTH=13 HEIGHT=19 ALT='RR'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'>" in step 6.  The somewhat
+"` |- ( A e. `
+` RR -> -u A e. RR ) `" in step 6.  The somewhat
 strange-looking steps before step 5 are just some technical stuff that
 makes this magic work, and they can be ignored for a quick
 overview of the proof.  To continue following the "important" part of
@@ -159,13 +143,7 @@ step 5.
 <P>On this page we attempt to show you how this technical stuff works if you
 are interested.  We also discuss the
 <A HREF="#set">conditional operator</A>
-"<IMG
-SRC='_if.gif' WIDTH=11 HEIGHT=19 ALT='if'><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','><IMG
-SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='comma.gif' WIDTH=4
-HEIGHT=19 ALT=','><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>" that you
+"` if ( ph , A , B ) `" that you
 will find in these proofs.
 
 <P>
@@ -200,45 +178,24 @@ deduction is the contraposition inference:
 
 <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
 
-<TR ALIGN=LEFT><TD><A HREF="con3i.html">con3i</A></TD><TD><IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG
-SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='_psi.gif'
-WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
-WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lnot.gif' WIDTH=10 HEIGHT=19
-ALT='-.'> <IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'>
-<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='lnot.gif'
-WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='_varphi.gif' WIDTH=11
-HEIGHT=19 ALT='ph'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP></TD></TR>
+<TR ALIGN=LEFT><TD><A HREF="con3i.html">con3i</A></TD><TD>` |- ( ph -> ps ) `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+` |- ( -. ps `
+` -> -. ph ) ` </TD></TR>
 
 </TABLE></CENTER>
 
 <P>This means that if we have proved a theorem of the form
-<IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG
-SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='_psi.gif'
-WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'>
+` |- ( ph -> ps ) `
 (where
-<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>
+` ph `
 and
-<IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'>
+` ps `
 are any wffs), then
 we can conclude the theorem
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
-WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lnot.gif' WIDTH=10 HEIGHT=19
-ALT='-.'> <IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'>
-<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='lnot.gif'
-WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='_varphi.gif' WIDTH=11
-HEIGHT=19 ALT='ph'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP>.
+` |- ( -. ps `
+` -> -. ph ) ` .
   Here, the symbol
-&quot;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'>&quot;
+&quot;` |- `&quot;
 is just a place-holder that can be read
 as &quot;a proof exists for&quot;.  The big arrow connecting the hypothesis and
 conclusion isn't a formal mathematical symbol; I put it there
@@ -253,19 +210,9 @@ in the sky.&quot;  From contraposition we can conclude,
 <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
 
 <TR ALIGN=LEFT><TD><A HREF="con3th.html">con3th</A></TD><TD>
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
-WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG
-SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='_psi.gif'
-WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
-<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lnot.gif'
-WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19
-ALT='ps'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
-<IMG SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT='-.'> <IMG
-SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'><IMG SRC='rp.gif'
-WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP></TD></TR>
+` |- ( ( ph -> ps ) -> `
+` ( -. ps -> `
+` -. ph ) ) ` </TD></TR>
 
 </TABLE></CENTER>
 
@@ -284,12 +231,7 @@ of the form
 
 <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
 
-<TR ALIGN=LEFT><TD><IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
-ALIGN=TOP> <IMG SRC='_sigma.gif' WIDTH=10 HEIGHT=19 ALT='si'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19
-ALT='=&gt;'>&nbsp;&nbsp;&nbsp; <IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 ALT='|-'> <IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19
-ALT='ta'></TD></TR>
+<TR ALIGN=LEFT><TD>` |- si `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp; ` |- ta ` </TD></TR>
 
 </TABLE></CENTER>
 
@@ -297,25 +239,20 @@ ALT='ta'></TD></TR>
 
 <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
 
-<TR ALIGN=LEFT><TD> <IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
-ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_sigma.gif' WIDTH=10 HEIGHT=19 ALT='si'> <IMG
-SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG
-SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'><IMG SRC='rp.gif'
-WIDTH=5 HEIGHT=19 ALT=')'> </TD></TR>
+<TR ALIGN=LEFT><TD> ` |- ( si -> ta ) ` </TD></TR>
 
 </TABLE></CENTER>
 
 <P>Doing this is not as simple as you might think.  The deduction says,
 "if we can prove
-<IMG SRC='_sigma.gif' WIDTH=10 HEIGHT=19 ALT='si'>
+` si `
  then we can prove
-<IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'>,&quot;
+` ta ` ,&quot;
 which is in some
 sense weaker<FONT SIZE=-1>*</FONT> than saying
-&quot;<IMG SRC='_sigma.gif' WIDTH=10 HEIGHT=19 ALT='si'>
+&quot;` si `
 implies
-<IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'>.&quot;
+` ta ` .&quot;
 Now, there is no axiom of logic that
 permits us to directly obtain the theorem given the deduction.
 However, it is possible to make use of information contained in the
@@ -379,33 +316,23 @@ large tree of lemmas building up to it) to quantify over a free variable
 contained in one of its hypotheses, then converting that hypothesis to
 an antecedent may fail.
 
-The following example shows why.  When <IMG SRC='_x.gif'
-WIDTH=10 HEIGHT=19 ALT='x'> and <IMG SRC='_y.gif' WIDTH=9
-HEIGHT=19 ALT='y'> are distinct variables, the following
+The following example shows why.  When ` x ` and ` y ` are distinct variables, the following
 (silly) deduction can be <A HREF="dtrucor.html">proved</A> in set theory:
 
 <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
 
-<TR ALIGN=LEFT><TD><IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 ALT='|-'> <IMG
-SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'>
-<IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='>
-<IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'>
-<IMG SRC='ne.gif' WIDTH=12 HEIGHT=19 ALT='=/='>
-<IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'></TD></TR>
+<TR ALIGN=LEFT><TD>` |- x `
+` = `
+` y `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+` |- x `
+` =/= `
+` y ` </TD></TR>
 
 </TABLE></CENTER>
 
 <P>The reason this deduction holds is that the hypothesis, which
 effectively states (using <A HREF="ax-gen.html">ax-gen</A>) "for all
-<IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'> and <IMG
-SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'>, <IMG SRC='_x.gif'
-WIDTH=10 HEIGHT=19 ALT='x'> <IMG SRC='eq.gif' WIDTH=12
-HEIGHT=19 ALT='='> <IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'
-ALIGN=TOP> is true," can never be proved as a stand-alone theorem.  In
+` x ` and ` y ` , ` x = y ` is true," can never be proved as a stand-alone theorem.  In
 fact it is provably false (by <A HREF="dtru.html">dtru</A>), so any
 conclusion whatsoever follows from it.  However, if we naively apply the
 Standard Deduction Theorem and blindly convert the hypothesis to an
@@ -414,16 +341,12 @@ antecedent, the theorem form of this deduction:
 <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
 
 <TR ALIGN=LEFT><TD><B><I>Wrong!</I></B>&nbsp;&nbsp;
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
-ALIGN=TOP> <IMG SRC='lp.gif'
-WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'>
-<IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='>
-<IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
-<IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'>
-<IMG SRC='ne.gif' WIDTH=12 HEIGHT=19 ALT='=/='>
-<IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 ALT='y'><IMG SRC='rp.gif'
-WIDTH=5 HEIGHT=19 ALT=')'>
+` |- ( x `
+` = `
+` y -> `
+` x `
+` =/= `
+` y ) `
 </TD></TR>
 
 </TABLE></CENTER>
@@ -434,8 +357,7 @@ then they are not equal") is obviously
 
 <P><I>Note.</I> The way we have presented the Standard Deduction
 Theorem above is slightly different from that in most textbooks, which
-use a list of hypotheses to the left of the the turnstile symbol <IMG
-SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'>.  This is
+use a list of hypotheses to the left of the the turnstile symbol ` |- ` .  This is
 discussed further in the <A HREF="#meta">Logic, Metalogic,..."</A>
 section below.
 
@@ -490,27 +412,11 @@ intuitive, nor has it ever been published.
 <P>What are its limitations?  Specifically, we must be able to prove a
 special case of the deduction's hypothesis as a stand-alone theorem.
 This means it cannot be used in all cases&mdash;for example, it cannot be
-used when the hypothesis is a contradiction such as <IMG SRC='lp.gif'
-WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif' WIDTH=11
-HEIGHT=19 ALT='ph'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
-ALT='/\'> <IMG SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT='-.'
-ALIGN=TOP> <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>.
+used when the hypothesis is a contradiction such as ` ( ph /\ -. ph ) ` .
 However, in the case of the contraposition deduction above, by
-substituting <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP> for <IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP> in the hypothesis <IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19
-ALT='|-'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>
-<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG
-SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif'
-WIDTH=5 HEIGHT=19 ALT=')'>, we obtain the trivially proved
-identity theorem <A HREF="id.html">id</A>,&nbsp; <IMG SRC='_vdash.gif'
-WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19
-ALT='ph'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'
-ALIGN=TOP> <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>.  This
+substituting ` ph ` for ` ps ` in the hypothesis ` |- ( ph `
+` -> ps ) ` , we obtain the trivially proved
+identity theorem <A HREF="id.html">id</A>,&nbsp; ` |- ( ph -> ph ) ` .  This
 special case can be used (together with some auxilliary lemmas) to
 eliminate the hypothesis and introduce it as an antecedent.
 
@@ -571,47 +477,28 @@ Metalogic, and Metametalogic</FONT></B>
 In logic textbooks, the treatment of the Standard Deduction Theorem is
 slightly different from how we presented it above.  They typically
 show deductions in the following way: the set of hypotheses is shown
-to the left of the turnstile <IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19
-ALT='|-'>, and the conclusion from them to the right.  For
+to the left of the turnstile ` |- ` , and the conclusion from them to the right.  For
 example, the deduction <A HREF="con3i.html">con3i</A> in <A
 HREF="#dedvsth">Deductions vs.  Theorems</A> would be represented as
 
 <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
 
-<TR ALIGN=LEFT><TD><A HREF="con3i.html">con3i</A></TD><TD><IMG
-SRC='lbrace.gif' WIDTH=6 HEIGHT=19 ALT='{'> <IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'> <IMG SRC='to.gif' WIDTH=15
-HEIGHT=19 ALT='-&gt;'> <IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19
-ALT='ps'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP><IMG SRC='rbrace.gif' WIDTH=6
-HEIGHT=19 ALT='}'>
+<TR ALIGN=LEFT><TD><A HREF="con3i.html">con3i</A></TD><TD>` { ( ph -> ps ) } `
 
 
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lnot.gif'
-WIDTH=10 HEIGHT=19 ALT='-.' > <IMG SRC='_psi.gif' WIDTH=12
-HEIGHT=19 ALT='ps'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
-ALT='-&gt;'> <IMG SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT='-.'
-ALIGN=TOP> <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP></TD></TR>
+` |- ( -. ps -> -. ph ) ` </TD></TR>
 
 </TABLE></CENTER>
 
 <P>In order to talk conveniently about deductions in general, the set of
-hypotheses may represented by a metavariable such as <IMG
-SRC='_cgammagreen.gif' WIDTH=10 HEIGHT=19 ALT='Gamma'> that
+hypotheses may represented by a metavariable such as ` _G ` that
 ranges over sets of wffs, with a conclusion represented by a
-metavariable such as <IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'
-ALIGN=TOP> ranging over wffs:
+metavariable such as ` ta ` ranging over wffs:
 
 <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
 
-<TR ALIGN=LEFT><TD><IMG
-SRC='_cgammagreen.gif' WIDTH=10 HEIGHT=19 ALT='Gamma'>
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
-SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'></TD></TR>
+<TR ALIGN=LEFT><TD>` _G `
+` |- ta ` </TD></TR>
 
 </TABLE></CENTER>
 
@@ -621,35 +508,24 @@ notation),
 
 <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
 
-<TR ALIGN=LEFT><TD>If <IMG SRC='_cgammagreen.gif' WIDTH=10 HEIGHT=19
-ALT='Gamma'> <IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
-ALIGN=TOP> <IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'>,
-then <IMG SRC='_cgammagreen.gif' WIDTH=10 HEIGHT=19 ALT='Gamma'>
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
-SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT='A.' ><IMG
-SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'><IMG SRC='_tau.gif'
-WIDTH=10 HEIGHT=19 ALT='ta'>, provided that <IMG SRC='_x.gif'
-WIDTH=10 HEIGHT=19 ALT='x'> is not free in <IMG
-SRC='_cgammagreen.gif' WIDTH=10 HEIGHT=19 ALT='Gamma'>.</TD></TR>
+<TR ALIGN=LEFT><TD>If ` _G |- ta ` ,
+then ` _G `
+` |- A. x ta ` , provided that ` x ` is not free in ` _G ` .</TD></TR>
 
 </TABLE></CENTER>
 
 <P>There are actually three kinds of implications in this statement.
-First we have any implication arrow <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
-ALT='-&gt;'> (not shown) that might be present in the wff
-represented by <IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'
-ALIGN=TOP>.  At the next higher level, we have the connection between
-<IMG SRC='_cgammagreen.gif' WIDTH=10 HEIGHT=19 ALT='Gamma'>
-and <IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'> that is
-represented by the turnstile <IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19
-ALT='|-'>.  Finally at the top-most level, we have the
+First we have any implication arrow ` -> ` (not shown) that might be present in the wff
+represented by ` ta ` .  At the next higher level, we have the connection between
+` _G `
+and ` ta ` that is
+represented by the turnstile ` |- ` .  Finally at the top-most level, we have the
 connection between the two deductions of the theorem, represented by the
 English phrase "If...then".  We might think of these three as belonging
 to the logic, the metalogic, and the metametalogic respectively.
 
 <!--  (If we
-want to have fun with words, in Metamath an implication arrow <IMG
-SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> is actually part
+want to have fun with words, in Metamath an implication arrow ` -> ` is actually part
 of a <A HREF="mmset.html#schemes">scheme</A> and thus at the level of
 metalogic.  So the two higher levels are really metametalogic and
 metametametalogic!)
@@ -670,16 +546,8 @@ HREF="http://wiki.planetmath.org/cgi-bin/wiki.pl/Natural_deduction_based_metamat
 [external], developed by Fr&eacute;d&eacute;ric Lin&eacute;, shows how
 this can be done in the Metamath language.  Under such a system,
 Margaris's theorem would be represented in the database with a
-premise ($e statement) for the expression "<IMG
-SRC='_cgammagreen.gif' WIDTH=10 HEIGHT=19 ALT='Gamma'> <IMG
-SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
-SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'>" and with a
-provable conclusion ($p statement) for the expression "<IMG
-SRC='_cgammagreen.gif' WIDTH=10 HEIGHT=19 ALT='Gamma'> <IMG
-SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
-SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT='A.' ><IMG
-SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'><IMG SRC='_tau.gif'
-WIDTH=10 HEIGHT=19 ALT='ta'>".
+premise ($e statement) for the expression "` _G |- ta `" and with a
+provable conclusion ($p statement) for the expression "` _G |- A. x ta `".
 
 <!--
 <P>Looking at it this way, the Weak Deduction Theorem is actually quite
@@ -732,105 +600,27 @@ an antecedent.  Below we show these auxilliary lemmas.
 <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"> <CAPTION><B>Auxilliary
 lemmas for the Weak Deduction Theorem</B></CAPTION>
 
-<TR ALIGN=LEFT><TD><A HREF="elimh.html">elimh</A></TD><TD><IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 ALT='&lt;-&gt;'> <IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
-SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'> <IMG SRC='vee.gif' WIDTH=11 HEIGHT=19 ALT='\/'
-ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'> <IMG SRC='wedge.gif'
-WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='lnot.gif' WIDTH=10 HEIGHT=19
-ALT='-.'> <IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'
-ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 ALT='&lt;-&gt;'> <IMG
-SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'> <IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
-ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_psi.gif' WIDTH=12
-HEIGHT=19 ALT='ps'> <IMG SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19
-ALT='&lt;-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG SRC='wedge.gif'
-WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19
-ALT='ch'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
-SRC='vee.gif' WIDTH=11 HEIGHT=19 ALT='\/'> <IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
-SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='_chi.gif'
-WIDTH=12 HEIGHT=19 ALT='ch'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='to.gif' WIDTH=15
-HEIGHT=19 ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_theta.gif' WIDTH=8 HEIGHT=19 ALT='th'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 ALT='&lt;-&gt;'> <IMG
-SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'> <IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
-ALIGN=TOP> <IMG SRC='_theta.gif' WIDTH=8 HEIGHT=19 ALT='th'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
-SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'> </TD></TR>
+<TR ALIGN=LEFT><TD><A HREF="elimh.html">elimh</A></TD><TD>` |- ( ( ph <-> ( ( ph /\ ch ) \/ ( ps /\ -. ch ) ) ) -> ( ch <-> ta ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;` |- ( ( ps <-> ( ( ph /\ ch ) \/ ( ps /\ -. ch ) ) ) -> ( th <-> ta ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;` |- th `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+` |- ta ` </TD></TR>
 
-<TR ALIGN=LEFT><TD><A HREF="dedt.html">dedt</A></TD><TD><IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 ALT='&lt;-&gt;'> <IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
-SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'> <IMG SRC='vee.gif' WIDTH=11 HEIGHT=19 ALT='\/'
-ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'> <IMG SRC='wedge.gif'
-WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='lnot.gif' WIDTH=10 HEIGHT=19
-ALT='-.'> <IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'
-ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_theta.gif' WIDTH=8 HEIGHT=19 ALT='th'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 ALT='&lt;-&gt;'> <IMG
-SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'> <IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
-ALIGN=TOP> <IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'>
-&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
-WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19
-ALT='ch'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
-<IMG SRC='_theta.gif' WIDTH=8 HEIGHT=19 ALT='th'><IMG SRC='rp.gif'
-WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+<TR ALIGN=LEFT><TD><A HREF="dedt.html">dedt</A></TD><TD>` |- ( ( ph <-> ( ( ph /\ ch ) \/ ( ps /\ -. ch ) ) ) -> ( th <-> ta ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;` |- ta `
+&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+` |- ( ch -> `
+` th ) ` </TD></TR>
 
 </TABLE></CENTER>
 
 <P>In lemma <A HREF="elimh.html">elimh</A>, the wff
-<IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'>
+` ch `
 is the hypothesis of the original deduction. The wff
-<IMG SRC='_theta.gif' WIDTH=8 HEIGHT=19 ALT='th'>
+` th `
 is the special case
 (such as <A HREF="id.html">id</A> in our example above) of
 that hypothesis.
-<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>
+` ph `
 is the wff variable of the deduction's hypothesis that is replaced
 with wff variable
-<IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP>
+` ps `
 to result in the special case.
 The first two
 hypotheses of <A HREF="elimh.html">elimh</A> are trivially-proved
@@ -838,47 +628,26 @@ hypotheses of <A HREF="elimh.html">elimh</A> are trivially-proved
 that specify the substitution
 instances we need.  The first one tells <A HREF="elimh.html">elimh</A>
 that when the wff&nbsp;
-<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
-ALT='/\'> <IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
-SRC='vee.gif' WIDTH=11 HEIGHT=19 ALT='\/'> <IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
-SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='_chi.gif'
-WIDTH=12 HEIGHT=19 ALT='ch'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>&nbsp;
+` ( ( ph /\ ch ) \/ ( ps /\ -. ch ) ) `&nbsp;
 is substituted for the wff variable
-<IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'>
+` ph `
 in wff
-<IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'>
+` ch `
 (the hypothesis of the original deduction), the result is wff
-<IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'>.
+` ta ` .
 The "substitution" of
-<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
-ALT='/\'> <IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
-SRC='vee.gif' WIDTH=11 HEIGHT=19 ALT='\/'> <IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
-SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='_chi.gif'
-WIDTH=12 HEIGHT=19 ALT='ch'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>&nbsp;
+` ( ( ph /\ ch ) \/ ( ps /\ -. ch ) ) `&nbsp;
 for
-<IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'>
+` ps `
 (in wff
-<IMG SRC='_theta.gif' WIDTH=8 HEIGHT=19 ALT='th'>
+` th `
 to result in wff
-<IMG SRC='_tau.gif' WIDTH=10 HEIGHT=19 ALT='ta'>)
+` ta `)
 specified by the
 second hypothesis of <A HREF="elimh.html">elimh</A>
 is special&mdash;not
 all occurrences of wff variable
-<IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'>
+` ps `
 are replaced, but only the ones at the
 variable positions replaced in the first <A HREF="elimh.html">elimh</A>
 hypothesis (step 6 of
@@ -891,40 +660,23 @@ wff that is applied to the second hypothesis of lemma <A
 HREF="dedt.html">dedt</A>.
 
 <P>In lemma <A HREF="dedt.html">dedt</A>, the wff
-<IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'>
+` ch `
 is the hypothesis of the original deduction, and the
 wff
-<IMG SRC='_theta.gif'
-WIDTH=8 HEIGHT=19 ALT='th'> is the conclusion
+` th ` is the conclusion
 of the original deduction.
 The first hypothesis of <A HREF="dedt.html">dedt</A>
 tells it that when the wff&nbsp;
-<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19
-ALT='/\'> <IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
-SRC='vee.gif' WIDTH=11 HEIGHT=19 ALT='\/'> <IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
-SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='_chi.gif'
-WIDTH=12 HEIGHT=19 ALT='ch'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>&nbsp;
+` ( ( ph /\ ch ) \/ ( ps /\ -. ch ) ) `&nbsp;
 is substituted for the wff variable
-<IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'>
+` ph `
 in wff
-<IMG SRC='_theta.gif'
-WIDTH=8 HEIGHT=19 ALT='th'>, the result is
+` th ` , the result is
 wff
-<IMG SRC='_tau.gif' WIDTH=10
-HEIGHT=19 ALT='ta'>.
+` ta ` .
 The conclusion of <A HREF="dedt.html">dedt</A>, the wff&nbsp;
-<IMG SRC='lp.gif'
-WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19
-ALT='ch'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
-<IMG SRC='_theta.gif' WIDTH=8 HEIGHT=19 ALT='th'><IMG SRC='rp.gif'
-WIDTH=5 HEIGHT=19 ALT=')'>,
+` ( ch -> `
+` th ) ` ,
 is the desired theorem.
 
 <P>It may be hard to understand intuitively how the Weak Deduction
@@ -956,165 +708,44 @@ occurrences of the thing being substituted for are replaced.
 
 <P>Step 4
 proves that the substitution of&nbsp;
-<IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
-ALT='-&gt;'> <IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='vee.gif' WIDTH=11
-HEIGHT=19 ALT='\/'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG
-SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='lnot.gif'
-WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
-ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>
-<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='_psi.gif'
-WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>
+` ( ( ps /\ ( ph -> ps ) ) \/ ( ph /\ -. ( ph `
+` -> ps ) ) ) `
 for
-<IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP>
+` ps `
 in the contraposition hypothesis wff&nbsp;
-<IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
-ALT='-&gt;'> <IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>
+` ( ph -> ps ) `
 results in&nbsp;
-<IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
-ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'> <IMG SRC='wedge.gif'
-WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
-ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>
-<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='_psi.gif'
-WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
-SRC='vee.gif' WIDTH=11 HEIGHT=19 ALT='\/'> <IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
-SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG
-SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>.
+` ( ph -> ( ( ps /\ ( ph `
+` -> ps ) ) \/ ( ph /\ -. ( ph -> ps ) ) ) ) ` .
 This is assigned to the first hypothesis of
 <A HREF="elimh.html">elimh</A>.
 
 <P>Step 6
 proves that the substitution of&nbsp;
-<IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
-ALT='-&gt;'> <IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='vee.gif' WIDTH=11
-HEIGHT=19 ALT='\/'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG
-SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='lnot.gif'
-WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
-ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>
-<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='_psi.gif'
-WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>
+` ( ( ps /\ ( ph -> ps ) ) \/ ( ph /\ -. ( ph `
+` -> ps ) ) ) `
 for the <I>only the second</I>
-<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>
+` ph `
 in the special case wff&nbsp;
-<IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
-ALT='-&gt;'> <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>
+` ( ph -> ph ) `
 results in&nbsp;
-<IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
-ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'> <IMG SRC='wedge.gif'
-WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
-ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>
-<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='_psi.gif'
-WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
-SRC='vee.gif' WIDTH=11 HEIGHT=19 ALT='\/'> <IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
-SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG
-SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>.
+` ( ph -> ( ( ps /\ ( ph `
+` -> ps ) ) \/ ( ph /\ -. ( ph -> ps ) ) ) ) ` .
 Unlike a "normal" substitution, we replaced only the second one because
 that was the position where the substitution took place in step 4. This
 is assigned to the second hypothesis of <A HREF="elimh.html">elimh</A>.
 
 <P>Step 3
 proves that the substitution of&nbsp;
-<IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
-ALT='-&gt;'> <IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='vee.gif' WIDTH=11
-HEIGHT=19 ALT='\/'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG
-SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='lnot.gif'
-WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
-ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>
-<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='_psi.gif'
-WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>
+` ( ( ps /\ ( ph -> ps ) ) \/ ( ph /\ -. ( ph `
+` -> ps ) ) ) `
 for
-<IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'>
+` ps `
 in the contraposition conclusion wff&nbsp;
-<IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lnot.gif' WIDTH=10
-HEIGHT=19 ALT='-.'> <IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG
-SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'>
+` ( -. ps -> -. ph ) `
 results in&nbsp;
-<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='lnot.gif' WIDTH=10 HEIGHT=19 ALT='-.'> <IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP> <IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
-ALT='-&gt;'> <IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='vee.gif' WIDTH=11
-HEIGHT=19 ALT='\/'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG
-SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='lnot.gif'
-WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
-ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>
-<IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='_psi.gif'
-WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='to.gif' WIDTH=15
-HEIGHT=19 ALT='-&gt;'> <IMG SRC='lnot.gif' WIDTH=10 HEIGHT=19
-ALT='-.'> <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>.
+` ( -. ( ( ps /\ ( ph -> ps ) ) \/ ( ph /\ -. ( ph `
+` -> ps ) ) ) -> -. ph ) ` .
 This is assigned to the first hypothesis of
 <A HREF="dedt.html">dedt</A>.
 
@@ -1138,28 +769,14 @@ instead of wffs.
 
 <P>To make things more efficient, we introduce a special notation
 called the &quot;conditional operator,&quot;
-&quot;<IMG
-SRC='_if.gif' WIDTH=11 HEIGHT=19 ALT='if'><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','><IMG
-SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='comma.gif' WIDTH=4
-HEIGHT=19 ALT=','><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'>,&quot;
+&quot;` if ( ph , A , B ) ` ,&quot;
 which combines a wff and two classes to produce another class.
 See definition <A HREF="df-if.html">df-if</A>.
-Read &quot;<IMG SRC='_if.gif' WIDTH=11 HEIGHT=19 ALT='if'><IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif'
-WIDTH=11 HEIGHT=19 ALT='ph'><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19
-ALT=','> <IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG
-SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','> <IMG SRC='_cb.gif'
-WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-ALT=')'>&quot; as &quot;if
-       <IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'>
+Read &quot;` if ( ph , A , B ) `&quot; as &quot;if
+       ` ph `
 is true then
-the value is <IMG
-SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> else
-the value is <IMG SRC='_cb.gif'
-WIDTH=12 HEIGHT=19 ALT='B'>.&quot;
+the value is ` A ` else
+the value is ` B ` .&quot;
   It is
 just an abbreviation for a more complicated class expression like other
 such abbreviations (class union, etc.).  This abbreviation makes working
@@ -1192,139 +809,19 @@ can be used if we wish to eliminate some hypotheses but keep others.
 the conditional operator, and three key lemmas</B></CAPTION>
 
 <TR ALIGN=LEFT><TD><A HREF="df-if.html">df-if</A></TD><TD>
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
-SRC='_if.gif' WIDTH=11 HEIGHT=19 ALT='if'><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'
-ALIGN=TOP><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','><IMG
-SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'><IMG SRC='comma.gif' WIDTH=4
-HEIGHT=19 ALT=','><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG
-SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='lbrace.gif'
-WIDTH=6 HEIGHT=19 ALT='{'><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19
-ALT='x'> <IMG SRC='vert.gif' WIDTH=3 HEIGHT=19 ALT='|'>
-<IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 ALT='('><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 ALT='x'
-ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG
-SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='wedge.gif'
-WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='_varphi.gif' WIDTH=11
-HEIGHT=19 ALT='ph'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP> <IMG SRC='vee.gif' WIDTH=11 HEIGHT=19 ALT='\/'> <IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_x.gif' WIDTH=10
-HEIGHT=19 ALT='x'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'
-ALIGN=TOP> <IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG
-SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'> <IMG SRC='lnot.gif'
-WIDTH=10 HEIGHT=19 ALT='-.'> <IMG SRC='_varphi.gif' WIDTH=11
-HEIGHT=19 ALT='ph'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'><IMG
-SRC='rbrace.gif' WIDTH=6 HEIGHT=19 ALT='}'></TD></TR>
+` |- if ( ph , A , B ) = { x | `
+` ( ( x e. A /\ ph ) \/ ( x e. B /\ -. ph ) ) } ` </TD></TR>
 
 
-<TR ALIGN=LEFT><TD><A HREF="elimhyp.html">elimhyp</A></TD><TD><IMG SRC='_vdash.gif'
-WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
-ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
-SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='_if.gif' WIDTH=11
-HEIGHT=19 ALT='if'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'><IMG
-SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','><IMG SRC='_ca.gif' WIDTH=11
-HEIGHT=19 ALT='A'><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','
-ALIGN=TOP><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='to.gif' WIDTH=15
-HEIGHT=19 ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 ALT='&lt;-&gt;'> <IMG
-SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
-ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='eq.gif' WIDTH=12
-HEIGHT=19 ALT='='> <IMG SRC='_if.gif' WIDTH=11 HEIGHT=19 ALT='if'
-ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'><IMG SRC='comma.gif'
-WIDTH=4 HEIGHT=19 ALT=','><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
-ALT='A'><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','><IMG
-SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'
-ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 ALT='&lt;-&gt;'> <IMG
-SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
-ALIGN=TOP> <IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
-SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'></TD></TR>
+<TR ALIGN=LEFT><TD><A HREF="elimhyp.html">elimhyp</A></TD><TD>` |- ( A = if ( ph , A , B ) -> ( ph <-> ps ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;` |- ( B = if ( ph , A , B ) -> ( ch <-> ps ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;` |- ch `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+` |- ps ` </TD></TR>
 
-<TR ALIGN=LEFT><TD><A HREF="dedth.html">dedth</A></TD><TD><IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
-SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='_if.gif' WIDTH=11
-HEIGHT=19 ALT='if'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'><IMG
-SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','><IMG SRC='_ca.gif' WIDTH=11
-HEIGHT=19 ALT='A'><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','
-ALIGN=TOP><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='to.gif' WIDTH=15
-HEIGHT=19 ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 ALT='&lt;-&gt;'> <IMG
-SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
-ALIGN=TOP> <IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
-WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19
-ALT='ph'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'>
-<IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'><IMG SRC='rp.gif'
-WIDTH=5 HEIGHT=19 ALT=')'></TD></TR>
+<TR ALIGN=LEFT><TD><A HREF="dedth.html">dedth</A></TD><TD>` |- ( A = if ( ph , A , B ) -> ( ps <-> ch ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;` |- ch `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+` |- ( ph -> `
+` ps ) ` </TD></TR>
 
-<TR ALIGN=LEFT><TD><A HREF="keephyp.html">keephyp</A></TD><TD><IMG SRC='_vdash.gif'
-WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
-ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG
-SRC='eq.gif' WIDTH=12 HEIGHT=19 ALT='='> <IMG SRC='_if.gif' WIDTH=11
-HEIGHT=19 ALT='if'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'><IMG
-SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','><IMG SRC='_ca.gif' WIDTH=11
-HEIGHT=19 ALT='A'><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','
-ALIGN=TOP><IMG SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'> <IMG SRC='to.gif' WIDTH=15
-HEIGHT=19 ALT='-&gt;'> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('
-ALIGN=TOP><IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 ALT='&lt;-&gt;'> <IMG
-SRC='_theta.gif' WIDTH=8 HEIGHT=19 ALT='th'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
-ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'> <IMG SRC='eq.gif' WIDTH=12
-HEIGHT=19 ALT='='> <IMG SRC='_if.gif' WIDTH=11 HEIGHT=19 ALT='if'
-ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_varphi.gif' WIDTH=11 HEIGHT=19 ALT='ph'><IMG SRC='comma.gif'
-WIDTH=4 HEIGHT=19 ALT=','><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
-ALT='A'><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=','><IMG
-SRC='_cb.gif' WIDTH=12 HEIGHT=19 ALT='B'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19 ALT='-&gt;'
-ALIGN=TOP> <IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 ALT='('><IMG
-SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 ALT='&lt;-&gt;'> <IMG
-SRC='_theta.gif' WIDTH=8 HEIGHT=19 ALT='th'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 ALT=')'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
-ALIGN=TOP> <IMG SRC='_psi.gif' WIDTH=12 HEIGHT=19 ALT='ps'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'
-ALIGN=TOP> <IMG SRC='_chi.gif' WIDTH=12 HEIGHT=19 ALT='ch'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'
-ALIGN=TOP>&nbsp;&nbsp;&nbsp;
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
-SRC='_theta.gif' WIDTH=8 HEIGHT=19 ALT='th'></TD></TR>
+<TR ALIGN=LEFT><TD><A HREF="keephyp.html">keephyp</A></TD><TD>` |- ( A = if ( ph , A , B ) -> ( ps <-> th ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;` |- ( B = if ( ph , A , B ) -> ( ch <-> th ) ) `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;` |- ps `&nbsp;&nbsp;&nbsp;` & `&nbsp;&nbsp;&nbsp;` |- ch `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp;
+` |- th ` </TD></TR>
 
 </TABLE></CENTER>
 
@@ -1350,17 +847,7 @@ result
 
 <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
 
-<TR ALIGN=LEFT><TD><A HREF="renegcli.html">renegcli</A></TD><TD><IMG
-SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
-SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif'
-WIDTH=10 HEIGHT=19 ALT='e.' > <IMG SRC='bbr.gif' WIDTH=13
-HEIGHT=19 ALT='RR'>&nbsp;&nbsp;&nbsp;<IMG SRC='bigto.gif'
-WIDTH=15 HEIGHT=19 ALT='=&gt;'>&nbsp;&nbsp;&nbsp; <IMG
-SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG
-SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT='-u'><IMG
-SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'> <IMG SRC='in.gif'
-WIDTH=10 HEIGHT=19 ALT='e.' > <IMG SRC='bbr.gif' WIDTH=13
-HEIGHT=19 ALT='RR'></TD></TR>
+<TR ALIGN=LEFT><TD><A HREF="renegcli.html">renegcli</A></TD><TD>` |- A e. RR `&nbsp;&nbsp;&nbsp;` => `&nbsp;&nbsp;&nbsp; ` |- -u A e. RR ` </TD></TR>
 
 </TABLE></CENTER>
 
@@ -1375,23 +862,16 @@ look at):
 <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
 
 <TR ALIGN=LEFT><TD><A HREF="renegcl.html">renegcl</A></TD><TD>
-<IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 ALT='|-'> <IMG SRC='lp.gif'
-WIDTH=5 HEIGHT=19 ALT='('><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19
-ALT='A'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>
-<IMG SRC='bbr.gif' WIDTH=13 HEIGHT=19 ALT='RR'> <IMG SRC='to.gif'
-WIDTH=15 HEIGHT=19 ALT='-&gt;'> <IMG SRC='shortminus.gif' WIDTH=8
-HEIGHT=19 ALT='-u'><IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'
-ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> <IMG
-SRC='bbr.gif' WIDTH=13 HEIGHT=19 ALT='RR'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 ALT=')'></TD></TR>
+` |- ( A e. `
+` RR -> -u A e. RR ) ` </TD></TR>
 
 </TABLE></CENTER>
 
 <P>which means that
-&quot;<IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'>
+&quot;` A `
 is a real
 number&quot; implies &quot;the negative of
-<IMG SRC='_ca.gif' WIDTH=11 HEIGHT=19 ALT='A'>
+` A `
 is a real number&quot;.  In the proof, we made use of <A
 HREF="elimel.html">elimel</A>, which is a frequently used special case
 of <A HREF="elimhyp.html">elimhyp</A>.  Also, we made use of the special
@@ -1414,11 +894,9 @@ HREF="dedt.html">dedt</A> implement this construction into a more
 compact form for practical application.  This proof was adapted from an
 email I wrote, and I left it in its original ASCII form, where
 <TT>~</TT> means
-<IMG SRC='lnot.gif'
-WIDTH=10 HEIGHT=19 ALT='-.'>,
+` -. ` ,
 <TT>^</TT> means
-<IMG SRC='wedge.gif' WIDTH=11 HEIGHT=19 ALT='/\'
-ALIGN=TOP>,
+` /\ ` ,
 etc.
 
 <!-- <P><CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#FAEEFF"><TR><TD ALIGN=LEFT> -->
@@ -1607,3 +1085,4 @@ urchinTracker();
 -->
 
 </BODY></HTML>
+
