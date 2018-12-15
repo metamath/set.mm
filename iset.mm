@@ -40748,8 +40748,9 @@ $)
   $( The image by a cross product.  (Contributed by Thierry Arnoux,
      16-Dec-2017.) $)
   xpima1 $p |- ( ( A i^i C ) = (/) -> ( ( A X. B ) " C ) = (/) ) $=
-    ( cin c0 wceq cxp cima cif xpima iftrue syl5eq ) ACDEFZABGCHMEBIEABCJMEBKL
-    $.
+    ( cin c0 wceq cxp cima cvv crn cres df-ima df-res rneqi 3eqtri xpeq1 syl6eq
+    inxp 0xp rneq rn0 syl syl5eq ) ACDZEFZABGZCHZUDBIDZGZJZEUGUFCKZJUFCIGDZJUJU
+    FCLUKULUFCMNULUIABCIRNOUEUIEFZUJEFUEUIEUHGEUDEUHPUHSQUMUJEJEUIETUAQUBUC $.
 
   $( The image by a cross product.  (Contributed by Thierry Arnoux,
      16-Dec-2017.) $)
