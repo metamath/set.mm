@@ -3,7 +3,7 @@
 
 # Simple raw.html files
 simple_raw='mmcomplex mmnatded'
-markup_options="${1:-"/HTML"} /SYMBOLS_ONLY"
+markup_options="${1:-"/HTML"} /SYMBOLS"
 
 generate_simple_html() {
   echo "read set.mm"

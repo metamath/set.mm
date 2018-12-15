@@ -63,6 +63,6 @@ script:
   - scripts/regen-from-raw '/HTML'
   - mkdir -p mpegif-html/
   - for f in *.raw.html; do echo mv $f mpegif-html/${f%.raw.html}.html ; done
-  - scripts/regen-from-raw '/ALTHTML'
+  - scripts/regen-from-raw '/ALT_HTML'
   - mkdir -p mpeuni-html/
   - for f in *.raw.html; do echo mv $f mpeuni-html/${f%.raw.html}.html ; done
