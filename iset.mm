@@ -40896,11 +40896,14 @@ $)
       UHUEUFUJOUGBACPSUGBUAUBTUCTUD $.
   $}
 
-  $( The range of a singleton is nonzero iff the singleton argument is an
-     ordered pair.  (Contributed by NM, 14-Dec-2008.) $)
-  rnsnn0 $p |- ( A e. ( _V X. _V ) <-> ran { A } =/= (/) ) $=
-    ( cvv cxp wcel csn cdm c0 wne crn dmsnn0 dm0rn0 necon3bii bitri ) ABBCDAEZF
-    ZGHNIZGHAJOGPGNKLM $.
+  ${
+    $d x A $.
+    $( The range of a singleton is inhabited iff the singleton argument is an
+       ordered pair.  (Contributed by Jim Kingdon, 15-Dec-2018.) $)
+    rnsnm $p |- ( A e. ( _V X. _V ) <-> E. x x e. ran { A } ) $=
+      ( cvv cxp wcel cv csn cdm wex crn dmsnm dmmrnm bitri ) BCCDEAFZBG
+      ZHEAINOJEAIABKAAOLM $.
+  $}
 
   $( The domain of the singleton of the empty set is empty.  (Contributed by
      NM, 30-Jan-2004.) $)
