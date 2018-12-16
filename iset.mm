@@ -40908,8 +40908,8 @@ $)
   $( The domain of the singleton of the empty set is empty.  (Contributed by
      NM, 30-Jan-2004.) $)
   dmsn0 $p |- dom { (/) } = (/) $=
-    ( c0 csn cdm wceq cvv cxp wcel wn 0nelxp dmsnn0 necon2bbii mpbir ) ABCZADAE
-    EFGZHEEINMAAJKL $.
+    ( vx c0 csn cdm wceq cv wcel wn wal wex cvv cxp 0nelxp dmsnm mtbi alnex eq0
+    mpbir ) BCDZBEAFSGZHAIZUATAJZHBKKLGUBKKMABNOTAPRASQR $.
 
   $( The converse of the singleton of the empty set is empty.  (Contributed by
      Mario Carneiro, 30-Aug-2015.) $)
