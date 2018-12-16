@@ -38975,6 +38975,17 @@ $)
   $}
 
   ${
+    $d y z A $.  $d x z A $.
+    $( A domain is inhabited if and only if the range is inhabited.
+       (Contributed by Jim Kingdon, 15-Dec-2018.) $)
+    dmmrnm $p |- ( E. x x e. dom A <-> E. y y e. ran A ) $=
+      ( vz cdm wcel wex wbr crn cab df-dm eleq2i exbii abid bitri dfrn2 excom
+      cv eleq1 cbvexv 3bitr2i ) ARZCEZFZAGZUBDRZCHZDGZAGZUFCIZFZDGZBRZUJFZBGU
+      EUBUHAJZFZAGUIUDUPAUCUOUBADCKLMUPUHAUHANMOULUFUGAGZDJZFZDGZUIUKUSDUJURU
+      FADCPLMUTUQDGUIUSUQDUQDNMUGDAQOOUKUNDBUFUMUJSTUA $.
+  $}
+
+  ${
     $d y z A $.  $d x y z B $.
     $( The domain of a cross product.  Part of Theorem 3.13(x) of [Monk1]
        p. 37.  (Contributed by NM, 28-Jul-1995.)  (Proof shortened by Andrew
