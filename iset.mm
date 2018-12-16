@@ -40917,11 +40917,15 @@ $)
     ( c0 csn ccnv wceq crn dfdm4 dmsn0 eqtr3i wrel wb relcnv relrn0 ax-mp mpbir
     cdm ) ABZCZADZQEZADZPOSAPFGHQIRTJPKQLMN $.
 
-  $( The domain of a singleton is empty if the singleton's argument contains
-     the empty set.  (Contributed by NM, 15-Dec-2008.) $)
-  dmsn0el $p |- ( (/) e. A -> dom { A } = (/) ) $=
-    ( c0 wcel csn cdm wne cvv cxp wn dmsnn0 0nelelxp sylbir necon4ai ) BACZADEZ
-    BOBFAGGHCNIAJGGAKLM $.
+  ${
+    $d x A $.
+    $( The domain of a singleton is empty if the singleton's argument contains
+       the empty set.  (Contributed by NM, 15-Dec-2008.) $)
+    dmsn0el $p |- ( (/) e. A -> dom { A } = (/) ) $=
+      ( vx c0 wcel cv csn cdm wal wceq wex cvv cxp 0nelelxp con2i dmsnm
+      wn sylnib alnex sylibr eq0 ) CADZBEAFGZDZPBHZUBCIUAUCBJZPUDUAAKKL
+      DZUEUFUAKKAMNBAOQUCBRSBUBTS $.
+  $}
 
   ${
     relsn2.1 $e |- A e. _V $.
