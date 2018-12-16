@@ -40991,11 +40991,11 @@ $)
        this does not need any sethood assumptions on ` A ` and ` B ` .)
        (Contributed by Mario Carneiro, 26-Apr-2015.) $)
     cnvcnvsn $p |- `' `' { <. A , B >. } = `' { <. B , A >. } $=
-      ( vx vy cop csn ccnv relcnv cv wcel vex opelcnv wceq wa opth 3bitr4i opex
-      ancom elsnc bitri eqrelriiv ) CDABEZFZGZGZBAEZFZGZUDHUGHCIZDIZEZUEJUJUIEZ
-      UDJZUKUHJZUIUJUDCKZDKZLUKUCJZULUGJZUMUNUKUBMZULUFMZUQURUIAMZUJBMZNVBVANUS
-      UTVAVBRUIUJABUOUPOUJUIBAUPUOOPUKUBUIUJQSULUFUJUIQSPUJUIUCUPUOLUIUJUGUOUPL
-      PTUA $.
+      ( vy vx cop csn ccnv relcnv cv wcel vex opelcnv wceq ancom opth
+      wa 3bitr4i sopex elsnc bitri eqrelriiv ) CDABEZFZGZGZBAEZFZGZUD
+      HUGHCIZDIZEZUEJUJUIEZUDJZUKUHJZUIUJUDCKZDKZLUKUCJZULUGJZUMUNUKU
+      BMZULUFMZUQURUIAMZUJBMZPVBVAPUSUTVAVBNUIUJABUOUPOUJUIBAUPUOOQUK
+      UBCDRSULUFDCRSQUJUIUCUPUOLUIUJUGUOUPLQTUA $.
 
     $( The domain of the singleton of the singleton of a singleton.
        (Contributed by NM, 15-Sep-2004.)  (Revised by Mario Carneiro,
