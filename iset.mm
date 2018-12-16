@@ -40928,12 +40928,13 @@ $)
   $}
 
   ${
-    relsn2.1 $e |- A e. _V $.
-    $( A singleton is a relation iff it has a nonempty domain.  (Contributed by
-       NM, 25-Sep-2013.) $)
-    relsn2 $p |- ( Rel { A } <-> dom { A } =/= (/) ) $=
-      ( csn wrel cvv cxp wcel cdm c0 wne relsn dmsnn0 bitri ) ACZDAEEFGNHIJABKA
-      LM $.
+    $d x A $.
+    relsn2m.1 $e |- A e. _V $.
+    $( A singleton is a relation iff it has an inhabited domain.  (Contributed
+       by Jim Kingdon, 16-Dec-2018.) $)
+    relsn2m $p |- ( Rel { A } <-> E. x x e. dom { A } ) $=
+      ( csn wrel cvv cxp wcel cv cdm wex relsn dmsnm bitri ) BDZEBFFG
+      HAIOJHAKBCLABMN $.
   $}
 
   ${
