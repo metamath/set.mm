@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Dec-2018
+$( iset.mm - Version of 15-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -40876,14 +40876,13 @@ $)
 
   ${
     $d x y A $.
-    $( The domain of a singleton is nonzero iff the singleton argument is an
-       ordered pair.  (Contributed by NM, 14-Dec-2008.)  (Proof shortened by
-       Andrew Salmon, 27-Aug-2011.) $)
-    dmsnn0 $p |- ( A e. ( _V X. _V ) <-> dom { A } =/= (/) ) $=
-      ( vx vy cv cop wceq wex csn cdm wcel cvv cxp wne wbr vex eldm df-br exbii
-      c0 opex elsnc eqcom 3bitri bitr2i elvv n0 3bitr4i ) ABDZCDZEZFZCGZBGUHAHZ
-      IZJZBGAKKLJUNSMULUOBUOUHUIUMNZCGULCUHUMBOPUPUKCUPUJUMJUJAFUKUHUIUMQUJAUHU
-      ITUAUJAUBUCRUDRBCAUEBUNUFUG $.
+    $( The domain of a singleton is inhabited iff the singleton argument is an
+       ordered pair.  (Contributed by Jim Kingdon, 15-Dec-2018.) $)
+    dmsnm $p |- ( A e. ( _V X. _V ) <-> E. x x e. dom { A } ) $=
+      ( vy cvv cxp wcel cop wceq wex csn cdm elvv wbr vex df-br sopex
+      cv eldm elsnc exbii eqcom 3bitri bitr2i bitri ) BDDEFBAQZCQZGZH
+      ZCIZAIUEBJZKFZAIACBLUIUKAUKUEUFUJMZCIUICUEUJANRULUHCULUGUJFUGBH
+      UHUEUFUJOUGBACPSUGBUAUBTUCTUD $.
   $}
 
   $( The range of a singleton is nonzero iff the singleton argument is an
