@@ -40949,14 +40949,6 @@ $)
       UKUPBUOPRSTUHVAUQULFZEKUSEUOULVBUAVEUREUQUKDEUBUCUDUEDAUFUIUG
       $.
 
-    $( The domain of a singleton of an ordered pair is a subset of the
-       singleton of the first member (with no sethood assumptions on ` B ` ).
-       (Contributed by Mario Carneiro, 30-Apr-2015.) $)
-    dmsnopss $p |- dom { <. A , B >. } C_ { A } $=
-      ( cvv wcel cop csn cdm wss dmsnopg eqimss syl wn opprc2 sneqd dmeqd dmsn0
-      wceq c0 syl6eq 0ss syl6eqss pm2.61i ) BCDZABEZFZGZAFZHZUCUFUGQUHABCIUFUGJ
-      KUCLZUFRUGUIUFRFZGRUIUEUJUIUDRABMNOPSUGTUAUB $.
-
     $( The domain of an unordered pair of ordered pairs.  (Contributed by Mario
        Carneiro, 26-Apr-2015.) $)
     dmpropg $p |- ( ( B e. V /\ D e. W ) ->
