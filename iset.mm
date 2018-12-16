@@ -40942,11 +40942,12 @@ $)
     $( The domain of a singleton of an ordered pair is the singleton of the
        first member.  (Contributed by Mario Carneiro, 26-Apr-2015.) $)
     dmsnopg $p |- ( B e. V -> dom { <. A , B >. } = { A } ) $=
-      ( vx vy wcel cop csn cdm cv wceq wex vex opth1 exlimiv opeq1 opeq2 eqeq1d
-      spcegv syl5 impbid2 eldm2 opex elsnc exbii bitri elsn 3bitr4g eqrdv ) BCF
-      ZDABGZHZIZAHZUJDJZEJZGZUKKZELZUOAKZUOUMFZUOUNFUJUSUTURUTEUOUPABDMZEMNOUTU
-      OBGZUKKZUJUSUOABPURVDEBCUPBKUQVCUKUPBUOQRSTUAVAUQULFZELUSEUOULVBUBVEUREUQ
-      UKUOUPUCUDUEUFDAUGUHUI $.
+      ( vx vy wcel cop csn cdm wceq wex vex opth1 exlimiv opeq1 opeq2
+      cv eqeq1d spcegv syl5 eldm2 sopex elsnc exbii bitri elsn eqrdv
+      impbid2 3bitr4g ) BCFZDABGZHZIZAHZUJDQZEQZGZUKJZEKZUOAJZUOUMFZU
+      OUNFUJUSUTURUTEUOUPABDLZELMNUTUOBGZUKJZUJUSUOABOURVDEBCUPBJUQVC
+      UKUPBUOPRSTUHVAUQULFZEKUSEUOULVBUAVEUREUQUKDEUBUCUDUEDAUFUIUG
+      $.
 
     $( The domain of a singleton of an ordered pair is a subset of the
        singleton of the first member (with no sethood assumptions on ` B ` ).
