@@ -41070,13 +41070,13 @@ $)
       IUFUKUQUCUHUQUBUGTAUALMNUQUEUJTAUAOMPUABKZUIUNUKUPURUHUMURUGULUABAOMNURUJ
       UOUABALMPTUAEQFQSR $.
 
-    $( Swap the members of an ordered pair.  (Contributed by NM, 14-Dec-2008.)
-       (Revised by Mario Carneiro, 30-Aug-2015.) $)
-    opswap $p |- U. `' { <. A , B >. } = <. B , A >. $=
-      ( cvv wcel wa cop csn ccnv cuni wceq cnvsng unieqd opex unisn syl6eq uni0
-      wn c0 opprc sneqd cnveqd cnvsn0 ancom sylnbi 3eqtr4a pm2.61i ) ACDZBCDZEZ
-      ABFZGZHZIZBAFZJUIUMUNGZIUNUIULUOABCCKLUNBAMNOUIQZRIRUMUNPUPULRUPULRGZHRUP
-      UKUQUPUJRABSTUAUBOLUIUHUGEUNRJUGUHUCBASUDUEUF $.
+    $( Swap the members of an ordered pair.  (Contributed by Jim Kingdon,
+       16-Dec-2018.) $)
+    opswapg $p |- ( ( A e. V /\ B e. W ) ->
+        U. `' { <. A , B >. } = <. B , A >. ) $=
+      ( wcel cop csn ccnv cuni cnvsng unieqd cvv wceq elex opexg syl2anr unisng
+      wa syl eqtrd ) ACEZBDEZRZABFGHZIBAFZGZIZUEUCUDUFABCDJKUCUELEZUGUEMUBBLEAL
+      EUHUABDNACNBAOPUELQST $.
 
     $( Membership in a cross product.  This version requires no quantifiers or
        dummy variables.  See also ~ elxp5 , ~ elxp6 , and ~ elxp7 .
