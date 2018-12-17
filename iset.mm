@@ -41047,8 +41047,9 @@ $)
        an alternate version, and ~ op2nd for the preferred version.)
        (Contributed by NM, 25-Nov-2003.) $)
     op2ndb $p |- |^| |^| |^| `' { <. A , B >. } = B $=
-      ( cop csn ccnv cint cnvsn inteqi opex intsn eqtri op1stb ) ABEFGZHZHZHBAE
-      ZHZHBQSPRPRFZHROTABCDIJRBAKLMJJBADCNM $.
+      ( cop csn ccnv cint cnvsn inteqi opexg mp2an intsn eqtri op1stb
+      cvv wcel ) ABEFGZHZHZHBAEZHZHBTUBSUASUAFZHUARUCABCDIJUABPQAPQUA
+      PQDCBAKLMNJJBADCON $.
 
     $( Extract the second member of an ordered pair.  (See ~ op1sta to extract
        the first member, ~ op2ndb for an alternate version, and ~ op2nd for the
