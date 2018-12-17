@@ -40998,14 +40998,11 @@ $)
       UBCDRSULUFDCRSQUJUIUCUPUOLUIUJUGUOUPLQTUA $.
 
     $( The domain of the singleton of the singleton of a singleton.
-       (Contributed by NM, 15-Sep-2004.)  (Revised by Mario Carneiro,
-       26-Apr-2015.) $)
-    dmsnsnsn $p |- dom { { { A } } } = { A } $=
-      ( vx cvv wcel csn cdm wceq cv cop vex opid sneq sneqd syl5eq dmeqd dmsnop
-      eqeq12d vtoclg wn c0 0ex snid dmsn0el ax-mp snprc biimpi 3eqtr4a pm2.61i
-      ) ACDZAEZEZEZFZUJGZBHZUOIZEZFZUOEZGUNBACUOAGZURUMUSUJUTUQULUTUPUKUTUPUSEU
-      KUOBJZKUTUSUJUOALZMNMOVBQUOUOVAPRUISZTEZEZFZTUMUJTVDDVFTGTUAUBVDUCUDVCULV
-      EVCUKVDVCUJTVCUJTGAUEUFZMMOVGUGUH $.
+       (Contributed by Jim Kingdon, 16-Dec-2018.) $)
+    dmsnsnsng $p |- ( A e. _V -> dom { { { A } } } = { A } ) $=
+      ( vx cv cop csn cdm wceq cvv vex opid sneq sneqd syl5eq eqeq12d
+      dmeqd dmsnop vtoclg ) BCZRDZEZFZREZGAEZEZEZFZUCGBAHRAGZUAUFUBUC
+      UGTUEUGSUDUGSUBEUDRBIZJUGUBUCRAKZLMLOUINRRUHPQ $.
   $}
 
   $( The range of a singleton of an ordered pair is the singleton of the second
