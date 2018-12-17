@@ -1129,18 +1129,11 @@
 "ax-his4" is used by "his6".
 "ax-his4" is used by "normgt0".
 "ax-hv0cl" is used by "0cnop".
-"ax-hv0cl" is used by "bcs".
 "ax-hv0cl" is used by "bra0".
 "ax-hv0cl" is used by "choc0".
 "ax-hv0cl" is used by "df0op2".
 "ax-hv0cl" is used by "dmadjrnb".
-"ax-hv0cl" is used by "eigorth".
-"ax-hv0cl" is used by "eigre".
 "ax-hv0cl" is used by "elch0".
-"ax-hv0cl" is used by "elspansn".
-"ax-hv0cl" is used by "elspansn2".
-"ax-hv0cl" is used by "h1datom".
-"ax-hv0cl" is used by "h1de2ci".
 "ax-hv0cl" is used by "helch".
 "ax-hv0cl" is used by "hhssnv".
 "ax-hv0cl" is used by "hi01".
@@ -1153,22 +1146,14 @@
 "ax-hv0cl" is used by "hon0".
 "ax-hv0cl" is used by "hsn0elch".
 "ax-hv0cl" is used by "hv2neg".
-"ax-hv0cl" is used by "hvaddcan".
 "ax-hv0cl" is used by "hvaddid2".
 "ax-hv0cl" is used by "hvmul0".
-"ax-hv0cl" is used by "hvnegdi".
 "ax-hv0cl" is used by "hvsub0".
-"ax-hv0cl" is used by "hvsubadd".
-"ax-hv0cl" is used by "hvsubeq0".
-"ax-hv0cl" is used by "hvsubsub4".
 "ax-hv0cl" is used by "ifhvhv0".
 "ax-hv0cl" is used by "lnfn0i".
 "ax-hv0cl" is used by "lnfnmuli".
 "ax-hv0cl" is used by "lnop0".
-"ax-hv0cl" is used by "lnopeq0lem2".
-"ax-hv0cl" is used by "lnophmi".
 "ax-hv0cl" is used by "lnopmul".
-"ax-hv0cl" is used by "lnopunii".
 "ax-hv0cl" is used by "nlelshi".
 "ax-hv0cl" is used by "nmcexi".
 "ax-hv0cl" is used by "nmcfnexi".
@@ -1180,47 +1165,14 @@
 "ax-hv0cl" is used by "nmop0h".
 "ax-hv0cl" is used by "nmopge0".
 "ax-hv0cl" is used by "nmopsetn0".
-"ax-hv0cl" is used by "norm-ii".
-"ax-hv0cl" is used by "norm-iii".
 "ax-hv0cl" is used by "norm0".
-"ax-hv0cl" is used by "norm3adifi".
-"ax-hv0cl" is used by "norm3dif".
 "ax-hv0cl" is used by "norm3difi".
-"ax-hv0cl" is used by "norm3lemt".
-"ax-hv0cl" is used by "normlem9at".
 "ax-hv0cl" is used by "normneg".
-"ax-hv0cl" is used by "normpar".
-"ax-hv0cl" is used by "normpyth".
-"ax-hv0cl" is used by "normsq".
-"ax-hv0cl" is used by "normsub".
-"ax-hv0cl" is used by "normsub0".
 "ax-hv0cl" is used by "ocsh".
 "ax-hv0cl" is used by "pj0i".
-"ax-hv0cl" is used by "pjaddi".
-"ax-hv0cl" is used by "pjadji".
-"ax-hv0cl" is used by "pjch".
-"ax-hv0cl" is used by "pjch1".
-"ax-hv0cl" is used by "pjcjt2".
-"ax-hv0cl" is used by "pjdifnormi".
-"ax-hv0cl" is used by "pjinormi".
-"ax-hv0cl" is used by "pjmuli".
-"ax-hv0cl" is used by "pjnel".
-"ax-hv0cl" is used by "pjnorm".
-"ax-hv0cl" is used by "pjoc1".
-"ax-hv0cl" is used by "pjoc2".
-"ax-hv0cl" is used by "pjopyth".
-"ax-hv0cl" is used by "pjpyth".
-"ax-hv0cl" is used by "pjss2coi".
-"ax-hv0cl" is used by "pjssge0i".
-"ax-hv0cl" is used by "pjssmi".
-"ax-hv0cl" is used by "pjsubi".
-"ax-hv0cl" is used by "polid".
 "ax-hv0cl" is used by "riesz3i".
 "ax-hv0cl" is used by "shintcli".
 "ax-hv0cl" is used by "shscli".
-"ax-hv0cl" is used by "spansn".
-"ax-hv0cl" is used by "spansncv".
-"ax-hv0cl" is used by "spansnj".
 "ax-hvaddid" is used by "3oalem2".
 "ax-hvaddid" is used by "5oalem1".
 "ax-hvaddid" is used by "5oalem2".
@@ -6587,15 +6539,7 @@
 "hdmaprnlem8N" is used by "hdmaprnlem9N".
 "hdmaprnlem9N" is used by "hdmaprnlem10N".
 "hdmapval3lemN" is used by "hdmapval3N".
-"helch" is used by "chdmm1".
-"helch" is used by "chincl".
 "helch" is used by "chj1i".
-"helch" is used by "chjass".
-"helch" is used by "chjo".
-"helch" is used by "chrelat2".
-"helch" is used by "chsscon3".
-"helch" is used by "cvexch".
-"helch" is used by "cvmd".
 "helch" is used by "dfiop2".
 "helch" is used by "helsh".
 "helch" is used by "hne0".
@@ -6605,27 +6549,13 @@
 "helch" is used by "hst0".
 "helch" is used by "hstrlem3a".
 "helch" is used by "ifchhv".
-"helch" is used by "mdsym".
-"helch" is used by "ococ".
 "helch" is used by "ococin".
-"helch" is used by "osum".
-"helch" is used by "pjch".
 "helch" is used by "pjch1".
-"helch" is used by "pjcjt2".
 "helch" is used by "pjclem3".
-"helch" is used by "pjhth".
-"helch" is used by "pjnel".
-"helch" is used by "pjnorm".
 "helch" is used by "pjo".
-"helch" is used by "pjoc1".
 "helch" is used by "pjoci".
-"helch" is used by "pjoml3".
-"helch" is used by "pjopyth".
-"helch" is used by "pjpyth".
 "helch" is used by "pjsslem".
 "helch" is used by "pjtoi".
-"helch" is used by "spansncv".
-"helch" is used by "spansnj".
 "helch" is used by "st0".
 "helch" is used by "stcltr2i".
 "helch" is used by "strlem3a".
@@ -8193,6 +8123,76 @@
 "idrval" is used by "cmpidelt".
 "idrval" is used by "iorlid".
 "idunop" is used by "idlnop".
+"ifchhv" is used by "chdmm1".
+"ifchhv" is used by "chincl".
+"ifchhv" is used by "chjass".
+"ifchhv" is used by "chjo".
+"ifchhv" is used by "chrelat2".
+"ifchhv" is used by "chsscon3".
+"ifchhv" is used by "cvexch".
+"ifchhv" is used by "cvmd".
+"ifchhv" is used by "mdsym".
+"ifchhv" is used by "ococ".
+"ifchhv" is used by "osum".
+"ifchhv" is used by "pjch".
+"ifchhv" is used by "pjcjt2".
+"ifchhv" is used by "pjhth".
+"ifchhv" is used by "pjnel".
+"ifchhv" is used by "pjnorm".
+"ifchhv" is used by "pjoc1".
+"ifchhv" is used by "pjoml3".
+"ifchhv" is used by "pjopyth".
+"ifchhv" is used by "pjpyth".
+"ifchhv" is used by "spansncv".
+"ifchhv" is used by "spansnj".
+"ifhvhv0" is used by "bcs".
+"ifhvhv0" is used by "eigorth".
+"ifhvhv0" is used by "eigre".
+"ifhvhv0" is used by "elspansn".
+"ifhvhv0" is used by "elspansn2".
+"ifhvhv0" is used by "h1datom".
+"ifhvhv0" is used by "h1de2ci".
+"ifhvhv0" is used by "hvaddcan".
+"ifhvhv0" is used by "hvnegdi".
+"ifhvhv0" is used by "hvsubadd".
+"ifhvhv0" is used by "hvsubeq0".
+"ifhvhv0" is used by "hvsubsub4".
+"ifhvhv0" is used by "lnopeq0lem2".
+"ifhvhv0" is used by "lnophmi".
+"ifhvhv0" is used by "lnopunii".
+"ifhvhv0" is used by "norm-ii".
+"ifhvhv0" is used by "norm-iii".
+"ifhvhv0" is used by "norm3adifi".
+"ifhvhv0" is used by "norm3dif".
+"ifhvhv0" is used by "norm3lemt".
+"ifhvhv0" is used by "normlem9at".
+"ifhvhv0" is used by "normpar".
+"ifhvhv0" is used by "normpyth".
+"ifhvhv0" is used by "normsq".
+"ifhvhv0" is used by "normsub".
+"ifhvhv0" is used by "normsub0".
+"ifhvhv0" is used by "pjaddi".
+"ifhvhv0" is used by "pjadji".
+"ifhvhv0" is used by "pjch".
+"ifhvhv0" is used by "pjch1".
+"ifhvhv0" is used by "pjcjt2".
+"ifhvhv0" is used by "pjdifnormi".
+"ifhvhv0" is used by "pjinormi".
+"ifhvhv0" is used by "pjmuli".
+"ifhvhv0" is used by "pjnel".
+"ifhvhv0" is used by "pjnorm".
+"ifhvhv0" is used by "pjoc1".
+"ifhvhv0" is used by "pjoc2".
+"ifhvhv0" is used by "pjopyth".
+"ifhvhv0" is used by "pjpyth".
+"ifhvhv0" is used by "pjss2coi".
+"ifhvhv0" is used by "pjssge0i".
+"ifhvhv0" is used by "pjssmi".
+"ifhvhv0" is used by "pjsubi".
+"ifhvhv0" is used by "polid".
+"ifhvhv0" is used by "spansn".
+"ifhvhv0" is used by "spansncv".
+"ifhvhv0" is used by "spansnj".
 "iidn3" is used by "trintALT".
 "iin1" is used by "sspwimp".
 "iin1" is used by "sspwimpcf".
@@ -13497,7 +13497,7 @@ New usage of "ax-his1" is discouraged (12 uses).
 New usage of "ax-his2" is discouraged (14 uses).
 New usage of "ax-his3" is discouraged (25 uses).
 New usage of "ax-his4" is discouraged (5 uses).
-New usage of "ax-hv0cl" is discouraged (93 uses).
+New usage of "ax-hv0cl" is discouraged (45 uses).
 New usage of "ax-hvaddid" is discouraged (27 uses).
 New usage of "ax-hvass" is discouraged (9 uses).
 New usage of "ax-hvcom" is discouraged (21 uses).
@@ -15431,7 +15431,7 @@ New usage of "hdmaprnlem8N" is discouraged (1 uses).
 New usage of "hdmaprnlem9N" is discouraged (1 uses).
 New usage of "hdmapval3N" is discouraged (0 uses).
 New usage of "hdmapval3lemN" is discouraged (1 uses).
-New usage of "helch" is discouraged (42 uses).
+New usage of "helch" is discouraged (20 uses).
 New usage of "helloworld" is discouraged (0 uses).
 New usage of "helsh" is discouraged (10 uses).
 New usage of "hfmmval" is discouraged (3 uses).
@@ -15799,8 +15799,8 @@ New usage of "idn2" is discouraged (39 uses).
 New usage of "idn3" is discouraged (12 uses).
 New usage of "idrval" is discouraged (2 uses).
 New usage of "idunop" is discouraged (1 uses).
-New usage of "ifchhv" is discouraged (0 uses).
-New usage of "ifhvhv0" is discouraged (0 uses).
+New usage of "ifchhv" is discouraged (22 uses).
+New usage of "ifhvhv0" is discouraged (48 uses).
 New usage of "iidn3" is discouraged (1 uses).
 New usage of "iin1" is discouraged (3 uses).
 New usage of "iin2" is discouraged (0 uses).
