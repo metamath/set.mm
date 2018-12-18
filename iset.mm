@@ -1,4 +1,4 @@
-$( iset.mm - Version of 17-Dec-2018
+$( iset.mm - Version of 18-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -41521,13 +41521,17 @@ $)
     ACZDZDZUFEZUFFZGZAEZULGULUFBZDZDUHUKUNUGUMUFUMUEUEBCUFUEAHUEAIJKKUFOLUIULUJ
     ULUEEZAFZMZUIULMUPUOANPZUEAQRUJUEFZULUQUJUSMURUEASRATUAUBULUCUD $.
 
-  $( The double class union of a non-empty cross product is the union of it
-     members.  (Contributed by NM, 17-Sep-2006.) $)
-  unixp $p |- ( ( A X. B ) =/= (/) -> U. U. ( A X. B ) = ( A u. B ) ) $=
-    ( cxp c0 wne cuni cdm crn cun wrel wceq relxp relfld ax-mp xpeq2 xp0 syl6eq
-    necon3i xpeq1 0xp dmxp rnxp uneq12 syl2an syl2anc syl5eq ) ABCZDEZUGFFZUGGZ
-    UGHZIZABIZUGJUIULKABLUGMNUHBDEZADEZULUMKZBDUGDBDKUGADCDBDAOAPQRADUGDADKUGDB
-    CDADBSBTQRUNUJAKUKBKUPUOABUAABUBUJAUKBUCUDUEUF $.
+  ${
+    $d x a A $.  $d x b B $.
+    $( The double class union of an inhabited cross product is the union of its
+       members.  (Contributed by Jim Kingdon, 18-Dec-2018.) $)
+    unixpm $p |- ( E. x x e. ( A X. B ) -> U. U. ( A X. B ) = ( A u. B ) ) $=
+      ( vb va cv cxp wcel wex cuni cdm crn cun wrel wceq relxp relfld
+      ax-mp wa ancom bitri dmxpm rnxpm uneq12 syl2an sylbir syl5eq
+      xpm ) AFBCGZHAIZUIJJZUIKZUILZMZBCMZUINUKUNOBCPUIQRUJDFCHDIZEFBH
+      EIZSZUNUOOZURUQUPSUJUPUQTEDABCUHUAUPULBOUMCOUSUQDBCUBEBCUCULBUM
+      CUDUEUFUG $.
+  $}
 
   ${
     $d x y z A $.  $d x y z B $.
