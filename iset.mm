@@ -3016,6 +3016,11 @@ $)
        NM, 5-Aug-1993.)  (Proof shortened by Wolf Lammen, 14-Dec-2013.) $)
     anim12i $p |- ( ( ph /\ ch ) -> ( ps /\ th ) ) $=
       ( wa id syl2an ) ABDBDGZCEFJHI $.
+
+    $( Variant of ~ anim12i with commutation.  (Contributed by Jonathan
+       Ben-Naim, 3-Jun-2011.) $)
+    anim12ci $p |- ( ( ph /\ ch ) -> ( th /\ ps ) ) $=
+      ( wa anim12i ancoms ) CADBGCDABFEHI $.
   $}
 
   ${
