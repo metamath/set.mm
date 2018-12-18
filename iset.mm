@@ -27836,6 +27836,11 @@ $)
   vn0 $p |- _V =/= (/) $=
     ( vx cv cvv wcel c0 wne vex ne0i ax-mp ) ABZCDCEFAGCJHI $.
 
+  $( The universal class is inhabited.  (Contributed by Jim Kingdon,
+     17-Dec-2018.) $)
+  vn0m $p |- E. x x e. _V $=
+    ( cv cvv wcel wex vex 19.8a ax-mp ) ABCDZIAEAFIAGH $.
+
   ${
     $d x y $.  $d y A $.
     n0rf.1 $e |- F/_ x A $.
@@ -41439,11 +41444,12 @@ $)
   $( Two ways to describe the structure of a two-place operation.  (Contributed
      by NM, 17-Dec-2008.) $)
   relrelss $p |- ( ( Rel A /\ Rel dom A ) <-> A C_ ( ( _V X. _V ) X. _V ) ) $=
-    ( wrel cdm wa cvv cxp wss df-rel anbi2i crn relssdmrn xpss12 mpan2 sylan9ss
-    ssv xpss sstr sylibr dmss c0 wne wceq vn0 dmxp ax-mp syl6sseq impbii bitri
-    jca ) ABZACZBZDUJUKEEFZGZDZAUMEFZGZULUNUJUKHIUOUQUJUNAUKAJZFZUPAKUNUREGUSUP
-    GUROUKUMURELMNUQUJUNUQAUMGZUJUQUPUMGUTUMEPAUPUMQMAHRUQUKUPCZUMAUPSETUAVAUMU
-    BUCUMEUDUEUFUIUGUH $.
+    ( vx wrel cdm wa cvv cxp wss df-rel anbi2i relssdmrn xpss12 mpan2
+    crn ssv sylan9ss xpss sstr sylibr dmss wcel wceq vn0m dmxpm ax-mp
+    cv wex syl6sseq jca impbii bitri ) ACZADZCZEULUMFFGZHZEZAUOFGZHZU
+    NUPULUMIJUQUSULUPAUMANZGZURAKUPUTFHVAURHUTOUMUOUTFLMPUSULUPUSAUOH
+    ZULUSURUOHVBUOFQAURUORMAISUSUMURDZUOAURTBUFFUABUGVCUOUBBUCBUOFUDU
+    EUHUIUJUK $.
 
   ${
     $d x y A $.  $d x y R $.
