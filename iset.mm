@@ -41535,14 +41535,10 @@ $)
 
   ${
     $d x y z A $.  $d x y z B $.
-    $( A cross product is empty iff its union is empty.  (Contributed by NM,
-       20-Sep-2006.) $)
-    unixp0 $p |- ( ( A X. B ) = (/) <-> U. ( A X. B ) = (/) ) $=
-      ( vz vx vy cxp c0 wceq cuni unieq uni0 syl6eq wne cv wex n0 cop vex sylbi
-      wcel elxp3 wss elssuni opnzi ssn0 sylancl adantl exlimivv exlimiv necon4i
-      wa impbii ) ABFZGHZUMIZGHUNUOGIGUMGJKLUMGUOGUMGMCNZUMTZCOUOGMZCUMPUQURCUQ
-      DNZENZQZUPHZVAUMTZUKZEODOURDEUPABUAVDURDEVCURVBVCVAUOUBVAGMURVAUMUCUSUTDR
-      ERUDVAUOUEUFUGUHSUISUJUL $.
+    $( The union of an empty cross product is empty.  (Contributed by Jim
+       Kingdon, 18-Dec-2018.) $)
+    unixp0im $p |- ( ( A X. B ) = (/) -> U. ( A X. B ) = (/) ) $=
+      ( cxp c0 wceq cuni unieq uni0 syl6eq ) ABCZDEJFDFDJDGHI $.
   $}
 
   $( Field of a square cross product.  (Contributed by FL, 10-Oct-2009.) $)
