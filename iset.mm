@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Dec-2018
+$( iset.mm - Version of 17-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36161,6 +36161,17 @@ $)
   $}
 
   ${
+    $( Extract the first member of an ordered pair.  Theorem 73 of [Suppes]
+       p. 42.  (Contributed by Jim Kingdon, 17-Dec-2018.) $)
+    op1stbg $p |- ( ( A e. V /\ B e. W ) -> |^| |^| <. A , B >. = A ) $=
+      ( wcel wa cop cint csn cpr dfopg inteqd cin cvv wceq elex snexg syl eqtrd
+      adantr prexg syl2an intprg syl2anc wss snsspr1 df-ss mpbi syl6eq intsng )
+      ACEZBDEZFZABGZHZHAIZHZAUMUOUPUMUOUPABJZJZHZUPUMUNUSABCDKLUMUTUPURMZUPUMUP
+      NEZURNEZUTVAOUKVBULUKANEZVBACPZAQRTUKVDBNEVCULVEBDPABUAUBUPURNNUCUDUPURUE
+      VAUPOABUFUPURUGUHUISLUKUQAOULACUJTS $.
+  $}
+
+  ${
     $d x y A $.
     iunpw.1 $e |- A e. _V $.
     $( An indexed union of a power class in terms of the power class of the
@@ -41105,17 +41116,21 @@ $)
        ~ int0 ).  (Contributed by NM, 1-Aug-2004.) $)
     elxp5 $p |- ( A e. ( B X. C ) <-> ( A = <. |^| |^| A , U. ran { A } >.
                  /\ ( |^| |^| A e. B /\ U. ran { A } e. C ) ) ) $=
-      ( vx vy wcel cv cop wceq wex cint csn crn cuni vex syl6req pm4.71ri eleq1
-      wa cvv elxp sneq rneqd unieqd op2nda anbi1i anass bitri exbii uniex opeq2
-      snex rnex eqeq2d anbi2d anbi12d ceqsexv inteq inteqd op1stb 3bitri adantr
-      cxp mpbii exlimiv elex ad2antrl opeq1 anbi1d ceqsexgv pm5.21nii ) ABCVCFA
-      DGZEGZHZIZVLBFZVMCFZSZSZEJZDJVLAKZKZIZAVLALZMZNZHZIZVPWFCFZSZSZSZDJZAWBWF
-      HZIZWBBFZWISZSZDEABCUAVTWLDVTWKWCWHSZWJSWLVTVMWFIZVSSZEJWKVSXAEVSWTVOSZVR
-      SXAVOXBVRVOWTVOWFVNLZMZNVMVOWEXDVOWDXCAVNUBUCUDVLVMDOZEOUEPQUFWTVOVRUGUHU
-      IVSWKEWFWEWDAULUMUJZWTVOWHVRWJWTVNWGAVMWFVLUKUNWTVQWIVPVMWFCRUOUPUQUHWHWS
-      WJWHWCWHWBWGKZKVLWHWAXGAWGURUSVLWFXEXFUTPQUFWCWHWJUGVAUIWMWBTFZWRWLXHDWCX
-      HWKWCVLTFXHXEVLWBTRVDVBVEWPXHWOWIWBBVFVGWKWRDWBTWCWHWOWJWQWCWGWNAVLWBWFVH
-      UNWCVPWPWIVLWBBRVIUPVJVKVA $.
+      ( vx vy wcel cvv cint csn crn cuni cop wceq wa elex eleq1 adantr wex syl
+      wb cxp anim12i opexg adantl mpbird sylan2 cv elxp rneqd unieqd vex op2nda
+      syl6req pm4.71ri anbi1i anass bitri exbii snexg rnexg uniexg opeq2 eqeq2d
+      sneq anbi2d anbi12d ceqsexgv syl5bb inteq inteqd op1stbg sylancr pm4.71rd
+      eqtr2d ex anbi1d a1i 3bitrd exbidv mpbii exlimiv ad2antrl opeq1 pm5.21nii
+      syl6bb ) ABCUAZFZAGFZAAHZHZAIZJZKZLZMZWJBFZWMCFZNZNZAWFOWRWOWJGFZWMGFZNZW
+      HWPWTWQXAWJBOZWMCOUBWOXBNWHWNGFZXBXDWOWJWMUCUDWOWHXDTXBAWNGPQUEUFWHWGDUGZ
+      WJMZAXEWMLZMZXEBFZWQNZNZNZDRZWSWGAXEEUGZLZMZXIXNCFZNZNZERZDRWHXMDEABCUHWH
+      XTXLDWHXTXKXFXHNZXJNZXLXTXNWMMZXSNZERZWHXKXSYDEXSYCXPNZXRNYDXPYFXRXPYCXPW
+      MXOIZJZKXNXPWLYHXPWKYGAXOVDUIUJXEXNDUKZEUKULUMUNUOYCXPXRUPUQURWHXAYEXKTWH
+      WLGFZXAWHWKGFYJAUSWKGUTSWLGVASZXSXKEWMGYCXPXHXRXJYCXOXGAXNWMXEVBVCYCXQWQX
+      IXNWMCPVEVFVGSVHWHXHYAXJWHXHXFWHXHXFWHXHNWJXGHZHZXEXHWJYMMWHXHWIYLAXGVIVJ
+      UDWHYMXEMZXHWHXEGFZXAYNYIYKXEWMGGVKVLQVNVOVMVPYBXLTWHXFXHXJUPVQVRVSVHXMWT
+      WSXLWTDXFWTXKXFYOWTYIXEWJGPVTQWAWPWTWOWQXCWBXKWSDWJGXFXHWOXJWRXFXGWNAXEWJ
+      WMWCVCXFXIWPWQXEWJBPVPVFVGWDWEWD $.
   $}
 
   ${
