@@ -41541,14 +41541,6 @@ $)
       ( cxp c0 wceq cuni unieq uni0 syl6eq ) ABCZDEJFDFDJDGHI $.
   $}
 
-  $( Field of a square cross product.  (Contributed by FL, 10-Oct-2009.) $)
-  unixpid $p |- U. U. ( A X. A ) = A $=
-    ( c0 wceq cxp cuni xpeq1 syl6eq wi unieq unieqd uni0 unieqi eqtri wa expcom
-    0xp eqtr eqcoms syl5com wne sylancl mpcom wn df-ne cun unixp unidm sylancbr
-    xpnz sylbi pm2.61i ) ABCZAADZEZEZACZUMBCZULUPULUMBADBABAFAPGUQUOBEZEZCZUSBC
-    ZULUPHUQUNURUMBIJUSURBURBKLKMUTVANUOBCZULUPUOUSBQVBUPHBAVBBACUPUOBAQORSUAUB
-    ULUCABTZVCUPABUDZVDVCVCNUMBTZUPAAUIVEUOAAUEAAAUFAUGGUJUHUK $.
-
   $( The converse of a set is a set.  Corollary 6.8(1) of [TakeutiZaring]
      p. 26.  (Contributed by NM, 17-Mar-1998.) $)
   cnvexg $p |- ( A e. V -> `' A e. _V ) $=
