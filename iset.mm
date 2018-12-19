@@ -41575,17 +41575,19 @@ $)
   $}
 
   ${
-    $d A a b x $.  $d B a b $.
+    $d A a b x $.  $d B a b $.  $d A a b y $.
     $( The converse of an intersection is the intersection of the converse.
-       (Contributed by FL, 15-Oct-2012.) $)
-    cnviin $p |- ( A =/= (/) -> `' |^|_ x e. A B = |^|_ x e. A `' B ) $=
-      ( va vb ciin ccnv wrel relcnv cvv wss wral cv wcel df-rel cop eliin ax-mp
-      wb opex c0 wne wceq cxp wrex r19.2z expcom mpbi a1i mprg iinss syl sylibr
-      wi vex opelcnv ralbii bitri 3bitr4i eqrelriv sylancr ) BUAUBZABCFZGZHABCG
-      ZFZHZVDVFUCVCIVBVFJJUDZKZVGVBVEVHKZABUEZVIVJVBVKUNABVBVJABLVKVJABUFUGVJAM
-      BNVEHVJCIVEOUHUIUJABVEVHUKULVFOUMDEVDVFEMZDMZPZVCNZVNCNZABLZVMVLPZVDNVRVF
-      NZVNJNVOVQSVLVMTAVNBCJQRVMVLVCDUOZEUOZUPVSVRVENZABLZVQVRJNVSWCSVMVLTAVRBV
-      EJQRWBVPABVMVLCVTWAUPUQURUSUTVA $.
+       (Contributed by Jim Kingdon, 18-Dec-2018.) $)
+    cnviinm $p |- ( E. y y e. A -> `' |^|_ x e. A B = |^|_ x e. A `' B ) $=
+      ( va vb cv wcel wex ciin ccnv eleq1 cbvexv wrel relcnv cvv df-rel
+      wss wral cop wceq cxp wrex wi r19.2m expcom mpbi a1i iinss sylibr
+      mprg syl wb sopex eliin ax-mp vex opelcnv ralbii 3bitr4i eqrelriv
+      bitri sylancr sylbir sylbi ) BGZCHZBIEGZCHZEIZACDJZKZACDKZJZUAZVG
+      VIBEVFVHCLMVJAGZCHZAIZVOVQVIAEVPVHCLMVRVLNVNNZVOVKOVRVNPPUBZRZVSV
+      RVMVTRZACUCZWAWBVRWCUDACVRWBACSWCWBACUEUFWBVQVMNWBDOVMQUGUHUKACVM
+      VTUIULVNQUJEFVLVNFGZVHTZVKHZWEDHZACSZVHWDTZVLHWIVNHZWEPHWFWHUMFEU
+      NAWECDPUOUPVHWDVKEUQZFUQZURWJWIVMHZACSZWHWIPHWJWNUMEFUNAWICVMPUOU
+      PWMWGACVHWDDWKWLURUSVBUTVAVCVDVE $.
   $}
 
   ${
