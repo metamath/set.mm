@@ -1,4 +1,4 @@
-$( iset.mm - Version of 18-Dec-2018
+$( iset.mm - Version of 19-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -28435,10 +28435,12 @@ $)
 
   ${
     $d x A $.
-    r19.3rm.1 $e |- F/ x ph $.
+    r19.3rmOLD.1 $e |- F/ x ph $.
     $( Restricted quantification of wff not containing quantified variable.
-       (Contributed by Jim Kingdon, 5-Aug-2018.) $)
-    r19.3rm $p |- ( E. x x e. A -> ( ph <-> A. x e. A ph ) ) $=
+       This is a special case of ~ r19.3rm where the two set variables are both
+       ` x ` , so new proofs should just use ~ r19.3rm instead.  (Contributed
+       by Jim Kingdon, 5-Aug-2018.)  (New usage is discouraged.) $)
+    r19.3rmOLD $p |- ( E. x x e. A -> ( ph <-> A. x e. A ph ) ) $=
       ( cv wcel wex wi wral biimt wal df-ral 19.23 bitri syl6bbr ) BECF
       ZBGZAQAHZABCIZQAJSPAHBKRABCLPABDMNO $.
 
@@ -28447,8 +28449,20 @@ $)
        (Contributed by Jim Kingdon, 5-Aug-2018.) $)
     r19.28m $p |- ( E. x x e. A ->
                    ( A. x e. A ( ph /\ ps ) <-> ( ph /\ A. x e. A ps ) ) ) $=
-      ( cv wcel wex wral wa r19.3rm anbi1d r19.26 syl6rbbr ) CFDGCHZABC
+      ( cv wcel wex wral wa r19.3rmOLD anbi1d r19.26 syl6rbbr ) CFDGCHZABC
       DIZJACDIZPJABJCDIOAQPACDEKLABCDMN $.
+  $}
+
+  ${
+    $d a x A $.  $d a y A $.
+    r19.3rm.1 $e |- F/ x ph $.
+    $( Restricted quantification of wff not containing quantified variable.
+       (Contributed by Jim Kingdon, 19-Dec-2018.) $)
+    r19.3rm $p |- ( E. y y e. A -> ( ph <-> A. x e. A ph ) ) $=
+      ( va cv wcel wex wral wb eleq1 cbvexv wi biimt wal df-ral 19.23
+      bitri syl6bbr sylbi sylbir ) CGZDHZCIFGZDHZFIZAABDJZKZUFUDFCUEU
+      CDLMUGBGZDHZBIZUIUFUKFBUEUJDLMULAULANZUHULAOUHUKANBPUMABDQUKABE
+      RSTUAUB $.
   $}
 
   ${
@@ -28456,7 +28470,7 @@ $)
     $( Restricted quantification of wff not containing quantified variable.
        (Contributed by Jim Kingdon, 6-Aug-2018.) $)
     r19.3rmv $p |- ( E. x x e. A -> ( ph <-> A. x e. A ph ) ) $=
-      ( nfv r19.3rm ) ABCABDE $.
+      ( nfv r19.3rmOLD ) ABCABDE $.
 
     $( Restricted quantification of wff not containing quantified variable.
        (Contributed by Jim Kingdon, 5-Aug-2018.) $)
@@ -28487,7 +28501,7 @@ $)
        (Contributed by Jim Kingdon, 5-Aug-2018.) $)
     r19.27m $p |- ( E. x x e. A ->
                    ( A. x e. A ( ph /\ ps ) <-> ( A. x e. A ph /\ ps ) ) ) $=
-      ( cv wcel wex wral wa r19.3rm anbi2d r19.26 syl6rbbr ) CFDGCHZACD
+      ( cv wcel wex wral wa r19.3rmOLD anbi2d r19.26 syl6rbbr ) CFDGCHZACD
       IZBJPBCDIZJABJCDIOBQPBCDEKLABCDMN $.
   $}
 
