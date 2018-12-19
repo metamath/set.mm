@@ -28466,11 +28466,11 @@ $)
   $}
 
   ${
-    $d x A $.  $d x ph $.
+    $d x A $.  $d y A $.  $d x ph $.
     $( Restricted quantification of wff not containing quantified variable.
        (Contributed by Jim Kingdon, 6-Aug-2018.) $)
-    r19.3rmv $p |- ( E. x x e. A -> ( ph <-> A. x e. A ph ) ) $=
-      ( nfv r19.3rmOLD ) ABCABDE $.
+    r19.3rmv $p |- ( E. y y e. A -> ( ph <-> A. x e. A ph ) ) $=
+      ( nfv r19.3rm ) ABCDABEF $.
 
     $( Restricted quantification of wff not containing quantified variable.
        (Contributed by Jim Kingdon, 5-Aug-2018.) $)
@@ -31238,13 +31238,16 @@ $)
     iunconstm $p |- ( E. x x e. A -> U_ x e. A B = B ) $=
       ( vy cv wcel wex ciun wrex r19.9rmv eliun syl6rbbr eqrdv ) AEBFAG
       ZDABCHZCNDEZCFZQABIPOFQABJAPBCKLM $.
+  $}
 
+  ${
+    $d x z A $.  $d x z B $.  $d y z A $.
     $( Indexed intersection of a constant class, i.e. where ` B ` does not
-       depend on ` x ` .  (Contributed by Mario Carneiro, 6-Feb-2015.) $)
-    iinconstm $p |- ( E. x x e. A -> |^|_ x e. A B = B ) $=
-      ( vy cv wcel wex ciin wral r19.3rmv cvv wb eliin ax-mp syl6rbbr
-      vex eqrdv ) AEBFAGZDABCHZCRDEZCFZUAABIZTSFZUAABJTKFUCUBLDPATBCK
-      MNOQ $.
+       depend on ` x ` .  (Contributed by Jim Kingdon, 19-Dec-2018.) $)
+    iinconstm $p |- ( E. y y e. A -> |^|_ x e. A B = B ) $=
+      ( vz cv wcel wex ciin wral r19.3rmv wb eliin ax-mp syl6rbbr eqrdv
+      cvv vex ) BFCGBHZEACDIZDSEFZDGZUBACJZUATGZUBABCKUAQGUDUCLERAUACDQ
+      MNOP $.
   $}
 
   ${
@@ -33660,12 +33663,15 @@ $)
   $}
 
   ${
-    $d x y A $.  $d y B $.
+    $d y A $.  $d x A $.
     $( An indexed intersection of the empty set, with an inhabited index set,
        is empty.  (Contributed by Jim Kingdon, 29-Aug-2018.) $)
-    iin0imm $p |- ( E. x x e. A -> |^|_ x e. A (/) = (/) ) $=
-      ( c0 iinconstm ) ABCD $.
+    iin0imm $p |- ( E. y y e. A -> |^|_ x e. A (/) = (/) ) $=
+      ( c0 iinconstm ) ABCDE $.
+  $}
 
+  ${
+    $d x y A $.  $d y B $.
     $( If an indexed intersection of the empty set is empty, the index set is
        non-empty.  (Contributed by Jim Kingdon, 29-Aug-2018.) $)
     iin0r $p |- ( |^|_ x e. A (/) = (/) -> A =/= (/) ) $=
