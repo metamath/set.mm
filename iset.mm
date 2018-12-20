@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Dec-2018
+$( iset.mm - Version of 20-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -41656,16 +41656,16 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d x y z B $.  $d x y z C $.
-    $( Composition of two cross products.  (Contributed by Thierry Arnoux,
-       17-Nov-2017.) $)
-    xpco $p |- ( B =/= (/) -> ( ( B X. C ) o. ( A X. B ) ) = ( A X. C ) ) $=
-      ( vx vy vz c0 wne cv cxp wbr wa wex copab wcel ccom biimpi biantrurd brxp
-      n0 ancom anbi1i anbi12i anandi 3bitr4i exbii 19.41v bitr2i opabbidv df-co
-      syl6rbb df-xp 3eqtr4g ) BGHZDIZEIZABJZKZUPFIZBCJZKZLZEMZDFNUOAOZUSCOZLZDF
-      NUTUQPACJUNVCVFDFUNVFUPBOZEMZVFLZVCUNVHVFUNVHEBTQRVCVGVFLZEMVIVBVJEVDVGLZ
-      VGVELZLVGVDLZVLLVBVJVKVMVLVDVGUAUBURVKVAVLUOUPABSUPUSBCSUCVGVDVEUDUEUFVGV
-      FEUGUHUKUIDFEUTUQUJDFACULUM $.
+    $d x a c A $.  $d x a c B $.  $d x a c C $.
+    $( Composition of two cross products.  (Contributed by Jim Kingdon,
+       20-Dec-2018.) $)
+    xpcom $p |- ( E. x x e. B -> ( ( B X. C ) o. ( A X. B ) ) = ( A X. C ) ) $=
+      ( va vc cv wcel wex cxp wa copab ccom ibar ancom anbi1i anbi12i
+      wbr brxp anandi 3bitr4i exbii 19.41v bitr2i syl6rbb df-co df-xp
+       opabbidv 3eqtr4g ) AGZCHZAIZEGZUJBCJZRZUJFGZCDJZRZKZAIZEFLUMBHZ
+      UPDHZKZEFLUQUNMBDJULUTVCEFULVCULVCKZUTULVCNUTUKVCKZAIVDUSVEAVAU
+      KKZUKVBKZKUKVAKZVGKUSVEVFVHVGVAUKOPUOVFURVGUMUJBCSUJUPCDSQUKVAV
+      BTUAUBUKVCAUCUDUEUHEFAUQUNUFEFBDUGUI $.
   $}
 
   ${
