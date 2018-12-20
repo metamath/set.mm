@@ -37122,12 +37122,12 @@ $)
   ${
     $d x y z A $.  $d x y z B $.
     $( Define the cross product of two classes.  Definition 9.11 of [Quine]
-       p. 64.  For example, ` ( { 1 , 5 } X. { 2 , 7 } ) = `
-       ` ( { <. 1 , 2 >. , <. 1 , 7 >. } u. { <. 5 , 2 >. , <. 5 , 7 >. } ) `
-       ( ~ ex-xp ).  Another example is that the set of rational numbers are
-       defined in ~ df-q using the cross-product ` ( ZZ X. NN ) ` ; the left-
-       and right-hand sides of the cross-product represent the top (integer)
-       and bottom (natural) numbers of a fraction.  (Contributed by NM,
+       p. 64.  For example, ( { 1 , 5 } ` X. ` { 2 , 7 } ) = ( { ` <. ` 1 , 2
+       ` >. ` , ` <. ` 1 , 7 ` >. ` } ` u. ` { ` <. ` 5 , 2 ` >. ` , ` <. ` 5 ,
+       7 ` >. ` } ) .  Another example is that the set of rational numbers are
+       defined in using the cross-product ( Z ` X. ` N ) ; the left- and
+       right-hand sides of the cross-product represent the top (integer) and
+       bottom (natural) numbers of a fraction.  (Contributed by NM,
        4-Jul-1994.) $)
     df-xp $a |- ( A X. B ) = { <. x , y >. | ( x e. A /\ y e. B ) } $.
 
@@ -37139,10 +37139,10 @@ $)
     $( Define the converse of a class.  Definition 9.12 of [Quine] p. 64.  The
        converse of a binary relation swaps its arguments, i.e., if ` A e. _V `
        and ` B e. _V ` then ` ( A ``' R B <-> B R A ) ` , as proven in ~ brcnv
-       (see ~ df-br and ~ df-rel for more on relations).  For example,
-       ` ``' { <. 2 , 6 >. , <. 3 , 9 >. } = { <. 6 , 2 >. , <. 9 , 3 >. } `
-       ( ~ ex-cnv ).  We use Quine's breve accent (smile) notation.  Like
-       Quine, we use it as a prefix, which eliminates the need for
+       (see ~ df-br and ~ df-rel for more on relations).  For example, ` ``' `
+       { ` <. ` 2 , 6 ` >. ` , ` <. ` 3 , 9 ` >. ` } = { ` <. ` 6 , 2 ` >. ` ,
+       ` <. ` 9 , 3 ` >. ` } .  We use Quine's breve accent (smile) notation.
+       Like Quine, we use it as a prefix, which eliminates the need for
        parentheses.  Many authors use the postfix superscript "to the minus
        one."  "Converse" is Quine's terminology; some authors call it
        "inverse," especially when the argument is a function.  (Contributed by
@@ -37150,46 +37150,37 @@ $)
     df-cnv $a |- `' A = { <. x , y >. | y A x } $.
 
     $( Define the composition of two classes.  Definition 6.6(3) of
-       [TakeutiZaring] p. 24.  For example, ` ( ( exp o. cos ) `` 0 ) = _e `
-       ( ~ ex-co ) because ` ( cos `` 0 ) = 1 ` (see ~ cos0 ) and
-       ` ( exp `` 1 ) = _e ` (see ~ df-e ).  Note that Definition 7 of [Suppes]
-       p. 63 reverses ` A ` and ` B ` , uses ` /. ` instead of ` o. ` , and
-       calls the operation "relative product."  (Contributed by NM,
-       4-Jul-1994.) $)
+       [TakeutiZaring] p. 24.  Note that Definition 7 of [Suppes] p. 63
+       reverses ` A ` and ` B ` , uses a slash instead of ` o. ` , and calls
+       the operation "relative product."  (Contributed by NM, 4-Jul-1994.) $)
     df-co $a |- ( A o. B ) = { <. x , y >. | E. z ( x B z /\ z A y ) } $.
 
     $( Define the domain of a class.  Definition 3 of [Suppes] p. 59.  For
-       example, ` F = { <. 2 , 6 >. , <. 3 , 9 >. } -> dom F = { 2 , 3 } `
-       ( ~ ex-dm ).  Another example is the domain of the complex arctangent,
-       ` ( A e. dom arctan <-> ( A e. CC /\ A =/= -u _i /\ A =/= _i ) ) ` (for
-       proof see ~ atandm ).  Contrast with range (defined in ~ df-rn ).  For
-       alternate definitions see ~ dfdm2 , ~ dfdm3 , and ~ dfdm4 .  The
+       example, F = { ` <. ` 2 , 6 ` >. ` , ` <. ` 3 , 9 ` >. ` } ` -> ` dom F
+       = { 2 , 3 } .  Contrast with range (defined in ~ df-rn ).  For alternate
+       definitions see ~ dfdm2 , ~ dfdm3 , and ~ dfdm4 .  The
        notation " ` dom ` " is used by Enderton; other authors sometimes use
        script D. (Contributed by NM, 1-Aug-1994.) $)
     df-dm $a |- dom A = { x | E. y x A y } $.
 
-    $( Define the range of a class.  For example,
-       ` F = { <. 2 , 6 >. , <. 3 , 9 >. } -> ran F = { 6 , 9 } ` ( ~ ex-rn ).
-       Contrast with domain (defined in ~ df-dm ).  For alternate definitions,
-       see ~ dfrn2 , ~ dfrn3 , and ~ dfrn4 .  The notation " ` ran ` " is used
-       by Enderton; other authors sometimes use script R or script W.
-       (Contributed by NM, 1-Aug-1994.) $)
+    $( Define the range of a class.  For example, F = { ` <. ` 2 , 6 ` >. ` ,
+       ` <. ` 3 , 9 ` >. ` } -> ran F = { 6 , 9 } .  Contrast with domain
+       (defined in ~ df-dm ).  For alternate definitions, see ~ dfrn2 ,
+       ~ dfrn3 , and ~ dfrn4 .  The notation " ` ran ` " is used by Enderton;
+       other authors sometimes use script R or script W. (Contributed by NM,
+       1-Aug-1994.) $)
     df-rn $a |- ran A = dom `' A $.
 
     $( Define the restriction of a class.  Definition 6.6(1) of [TakeutiZaring]
-       p. 24.  For example, the expression ` ( exp |`` RR ) ` (used in
-       ~ reeff1 ) means "the exponential function e to the x, but the exponent
-       x must be in the reals" ( ~ df-ef defines the exponential function,
-       which normally allows the exponent to be a complex number).  Another
-       example is that ` ( F = { <. 2 , 6 >. , <. 3 , 9 >. } `
-       ` /\ B = { 1 , 2 } ) -> ( F |`` B ) = { <. 2 , 6 >. } ` ( ~ ex-res ).
+       p. 24.  For example ( F = { ` <. ` 2 , 6 ` >. ` , ` <. ` 3 , 9 ` >. ` }
+       ` /\ ` B = { 1 , 2 } ) -> ( F ` |`` ` B ) = { ` <. ` 2 , 6 ` >. ` } .
        (Contributed by NM, 2-Aug-1994.) $)
     df-res $a |- ( A |` B ) = ( A i^i ( B X. _V ) ) $.
 
     $( Define the image of a class (as restricted by another class).
-       Definition 6.6(2) of [TakeutiZaring] p. 24.  For example,
-` ( F = { <. 2 , 6 >. , <. 3 , 9 >. } /\ B = { 1 , 2 } ) -> ( F " B ) = { 6 } `
-       ( ~ ex-ima ).  Contrast with restriction ( ~ df-res ) and range
+       Definition 6.6(2) of [TakeutiZaring] p. 24.  For example, ( F = { ` <. `
+       2 , 6 ` >. ` , ` <. ` 3 , 9 ` >. ` } /\ B = { 1 , 2 } ) -> ( F ` " ` B )
+       = { 6 } .  Contrast with restriction ( ~ df-res ) and range
        ( ~ df-rn ).  For an alternate definition, see ~ dfima2 .  (Contributed
        by NM, 2-Aug-1994.) $)
     df-ima $a |- ( A " B ) = ran ( A |` B ) $.
@@ -37998,10 +37989,9 @@ $)
       CNVOVCVPCVLVKVCVLVGVAVJVBVFUTDRVFUTERUDUEUFVLVKCUGSUHVMVKABULSUIUJUKUMFDU
       QTFDETUNUOUP $.
 
-    $( Extensionality principle for ordered triples (used by 2-place operations
-       ~ df-oprab ), analogous to ~ eqrel .  Use ~ relrelss to express the
-       antecedent in terms of the relation predicate.  (Contributed by NM,
-       17-Dec-2008.) $)
+    $( Extensionality principle for ordered triples, analogous to ~ eqrel .
+       Use ~ relrelss to express the antecedent in terms of the relation
+       predicate.  (Contributed by NM, 17-Dec-2008.) $)
     eqrelrel $p |- ( ( A u. B ) C_ ( ( _V X. _V ) X. _V ) -> ( A = B <->
                    A. x A. y A. z ( <. <. x , y >. , z >. e. A
                        <-> <. <. x , y >. , z >. e. B ) ) ) $=
@@ -38093,8 +38083,7 @@ $)
     BGHNIJHMIJ $.
 
   $( The cross product of two sets is a set.  Proposition 6.2 of
-     [TakeutiZaring] p. 23.  See also ~ xpexgALT .  (Contributed by NM,
-     14-Aug-1994.) $)
+     [TakeutiZaring] p. 23.  (Contributed by NM, 14-Aug-1994.) $)
   xpexg $p |- ( ( A e. V /\ B e. W ) -> ( A X. B ) e. _V ) $=
     ( wcel wa cxp cun cpw wss cvv xpsspw unexg pwexg 3syl ssexg sylancr ) ACEBD
     EFZABGZABHZIZIZJUBKEZSKEABLRTKEUAKEUCABCDMTKNUAKNOSUBKPQ $.
@@ -39376,8 +39365,7 @@ $)
 
   $( The identity function is a proper class.  This means, for example, that we
      cannot use it as a member of the class of continuous functions unless it
-     is restricted to a set, as in ~ idcn .  (Contributed by NM,
-     1-Jan-2007.) $)
+     is restricted to a set.  (Contributed by NM, 1-Jan-2007.) $)
   iprc $p |- -. _I e. _V $=
     ( cid cvv wcel cdm vprc dmi eleq1i mtbir dmexg mto ) ABCADZBCZLBBCEKBBFGHAB
     IJ $.
@@ -39767,8 +39755,7 @@ $)
       GUEUCUHIUIUDUHUCUDUFCJGRZKZBCEUHBCDGMUFUKBCUJUFCSNOPQUCUHUATUFABCUBTT $.
 
     $( The existence of a restricted identity function, proved without using
-       the Axiom of Replacement (unlike ~ resfunexg ).  (Contributed by NM,
-       13-Jan-2007.) $)
+       the Axiom of Replacement.  (Contributed by NM, 13-Jan-2007.) $)
     resiexg $p |- ( A e. V -> ( _I |` A ) e. _V ) $=
       ( vx vy wcel cid cres cxp wss cvv relres weq cv wa cop simpr eleq1 biimpa
       jca vex opelres wbr df-br bitr3i anbi1i bitri opelxp 3imtr4i relssi xpexg
@@ -40098,9 +40085,7 @@ $)
        which is the same as the domain of ` F ` whenever ` F ` is a function.
        The left-hand side of the equality is from Definition 10.2 of [Quine]
        p. 65.  Quine uses the notation "arg ` F ` " for this class (for which
-       we have no separate notation).  Observe the resemblance to the
-       alternative definition ~ dffv4 of function value, which is based on the
-       idea in Quine's definition.  (Contributed by NM, 8-May-2005.) $)
+       we have no separate notation).  (Contributed by NM, 8-May-2005.) $)
     args $p |- { x | E. y ( F " { x } ) = { y } } = { x | E! y x F y } $=
       ( cv csn cima wceq wex wbr weu cab cvv wcel vex imasng ax-mp eqeq1i exbii
       euabsn bitr4i abbii ) CADZEFZBDZEZGZBHZUBUDCIZBJZAUGUHBKZUEGZBHUIUFUKBUCU
@@ -40839,9 +40824,8 @@ $)
       releq mpbii impbii ) ADZAEZEZAFZUADZSUBTGZBCUAABHZCHZIZUAJUFUEITJUGAJUEUF
       TBKZCKZLUFUEAUIUHLMNOUBUCSUDUAAPQR $.
 
-    $( A relation can be expressed as the set of ordered pairs in it.  An
-       analogue of ~ dffn5 for relations.  (Contributed by Mario Carneiro,
-       16-Aug-2015.) $)
+    $( A relation can be expressed as the set of ordered pairs in it.
+       (Contributed by Mario Carneiro, 16-Aug-2015.) $)
     dfrel4v $p |- ( Rel R <-> R = { <. x , y >. | x R y } ) $=
       ( wrel ccnv wceq cv wbr copab dfrel2 eqcom cnvcnv3 eqeq2i 3bitri ) CDCEEZ
       CFCOFCAGBGCHABIZFCJOCKOPCABCLMN $.
@@ -41072,8 +41056,8 @@ $)
 
     cnvsn.2 $e |- B e. _V $.
     $( Extract the first member of an ordered pair.  (See ~ op2nda to extract
-       the second member, ~ op1stb for an alternate version, and ~ op1st for
-       the preferred version.)  (Contributed by Raph Levien, 4-Dec-2003.) $)
+       the second member and ~ op1stb for an alternate version.)  (Contributed
+       by Raph Levien, 4-Dec-2003.) $)
     op1sta $p |- U. dom { <. A , B >. } = A $=
       ( cop csn cdm cuni dmsnop unieqi unisn eqtri ) ABEFGZHAFZHAMNABDIJACKL $.
 
@@ -41084,18 +41068,17 @@ $)
       EFGOBAHOIPOJBADCKOLMN $.
 
     $( Extract the second member of an ordered pair.  Theorem 5.12(ii) of
-       [Monk1] p. 52.  (See ~ op1stb to extract the first member, ~ op2nda for
-       an alternate version, and ~ op2nd for the preferred version.)
-       (Contributed by NM, 25-Nov-2003.) $)
+       [Monk1] p. 52.  (See ~ op1stb to extract the first member and ~ op2nda
+       for an alternate version.)  (Contributed by NM, 25-Nov-2003.) $)
     op2ndb $p |- |^| |^| |^| `' { <. A , B >. } = B $=
       ( cop csn ccnv cint cnvsn inteqi opexg mp2an intsn eqtri op1stb
       cvv wcel ) ABEFGZHZHZHBAEZHZHBTUBSUASUAFZHUARUCABCDIJUABPQAPQUA
       PQDCBAKLMNJJBADCON $.
 
     $( Extract the second member of an ordered pair.  (See ~ op1sta to extract
-       the first member, ~ op2ndb for an alternate version, and ~ op2nd for the
-       preferred version.)  (Contributed by NM, 17-Feb-2004.)  (Proof shortened
-       by Andrew Salmon, 27-Aug-2011.) $)
+       the first member and ~ op2ndb for an alternate version.)  (Contributed
+       by NM, 17-Feb-2004.)  (Proof shortened by Andrew Salmon,
+       27-Aug-2011.) $)
     op2nda $p |- U. ran { <. A , B >. } = B $=
       ( cop csn crn cuni rnsnop unieqi unisn eqtri ) ABEFGZHBFZHBMNABCIJBDKL $.
   $}
@@ -41120,8 +41103,8 @@ $)
       EUHUABDNACNBAOPUELQST $.
 
     $( Membership in a cross product.  This version requires no quantifiers or
-       dummy variables.  See also ~ elxp5 , ~ elxp6 , and ~ elxp7 .
-       (Contributed by NM, 17-Feb-2004.) $)
+       dummy variables.  See also ~ elxp5 .  (Contributed by NM,
+       17-Feb-2004.) $)
     elxp4 $p |- ( A e. ( B X. C ) <-> ( A = <. U. dom { A } , U. ran { A } >.
                  /\ ( U. dom { A } e. B /\ U. ran { A } e. C ) ) ) $=
       ( vx vy wcel cvv csn cdm cuni crn cop wceq wa elex eleq1 wex unieqd syl
