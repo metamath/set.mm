@@ -41628,13 +41628,15 @@ $)
       VNUTP $.
 
     $( The converse of a strict order relation is a strict order relation.
-       (Contributed by NM, 15-Jun-2005.) $)
-    cnvso $p |- ( R Or A <-> `' R Or A ) $=
-      ( vx vy wpo cv wbr weq w3o wral wa ccnv wor cnvpo ralcom vex brcnv equcom
-      3orbi123i df-so 2ralbii bitr4i anbi12i 3bitr4i ) ABEZCFZDFZBGZCDHZUGUFBGZ
-      IZDAJCAJZKABLZEZUGUFUMGZDCHZUFUGUMGZIZCAJDAJZKABMAUMMUEUNULUSABNULUKCAJDA
-      JUSUKCDAAOURUKDCAAUOUHUPUIUQUJUGUFBDPZCPZQDCRUFUGBVAUTQSUAUBUCCDABTDCAUMT
-      UD $.
+       (Contributed by Jim Kingdon, 19-Dec-2018.) $)
+    cnvsom $p |- ( E. x x e. A -> ( R Or A <-> `' R Or A ) ) $=
+      ( vy vz cv wcel wex wpo wbr wo wi wral wa ccnv wor cnvpom brcnv
+      vex df-iso wb orbi12i orcom bitri imbi12i ralbii 2ralbii ralcom
+      bitr3i a1i anbi12d 3bitr4g ) AFZBGAHZBCIZUMDFZCJZUMEFZCJZURUPCJ
+      ZKZLZEBMZDBMABMZNBCOZIZUPUMVEJZUPURVEJZURUMVEJZKZLZEBMZABMDBMZN
+      BCPBVEPUNUOVFVDVMABCQVDVMUAUNVDVLDBMABMVMVLVCADBBVKVBEBVGUQVJVA
+      UPUMCDSZASZRVJUTUSKVAVHUTVIUSUPURCVNESZRURUMCVPVORUBUTUSUCUDUEU
+      FUGVLADBBUHUIUJUKADEBCTDAEBVETUL $.
   $}
 
   $( The composition of two sets is a set.  (Contributed by NM,
