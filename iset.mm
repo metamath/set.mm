@@ -41668,14 +41668,6 @@ $)
       BTUAUBUKVCAUCUDUEUHEFAUQUNUFEFBDUGUI $.
   $}
 
-  ${
-    $( Composition of two square cross products.  (Contributed by Thierry
-       Arnoux, 14-Jan-2018.) $)
-    xpcoid $p |- ( ( A X. A ) o. ( A X. A ) ) = ( A X. A ) $=
-      ( cxp ccom wceq c0 co01 xpeq12d 0xp syl6eq coeq12d 3eqtr4a xpco pm2.61ine
-      id ) AABZOCZODAEAEDZEECEPOEFQOEOEQOEEBEQAEAEQNZRGEHIZSJSKAAALM $.
-  $}
-
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
