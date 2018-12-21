@@ -41953,14 +41953,6 @@ $)
     BUCUDUE $.
 
   ${
-    $( The ` iota ` operation using the ` if ` operator.  (Contributed by Scott
-       Fenton, 6-Oct-2017.) $)
-    dfiota4 $p |- ( iota x ph ) = if ( E! x ph , U. { x | ph } , (/) ) $=
-      ( weu cio cab cuni cif wceq iotauni iftrue eqtr4d iotanul iffalse pm2.61i
-      c0 wn ) ABCZABDZQABEFZOGZHQRSTABIQSOJKQPROTABLQSOMKN $.
-  $}
-
-  ${
     $d A y z $.  $d x y z $.  $d ph z $.
     $( Class substitution within a description binder.  (Contributed by Scott
        Fenton, 6-Oct-2017.)  (Revised by NM, 23-Aug-2018.) $)
