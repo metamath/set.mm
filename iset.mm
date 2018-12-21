@@ -41685,8 +41685,7 @@ $)
        Sometimes proofs need to expand an iota-based definition.  That is,
        given "X = the x for which ... x ... x ..." holds, the proof needs to
        get to "...  X ...  X ...".  A general strategy to do this is to use
-       ~ riotacl2 (or ~ iotacl for unbounded iota), as demonstrated in the
-       proof of ~ supub .  This can be easier than applying ~ riotasbc or a
+       ~ iotacl (for unbounded iota).  This can be easier than applying a
        version that applies an explicit substitution, because substituting an
        iota into its own property always has a bound variable clash which must
        be first renamed or else guarded with NF.
@@ -41900,8 +41899,7 @@ $)
   $( Membership law for descriptions.
 
      This can useful for expanding an unbounded iota-based definition (see
-     ~ df-iota ).  If you have a bounded iota-based definition, ~ riotacl2 may
-     be useful.
+     ~ df-iota ).
 
      (Contributed by Andrew Salmon, 1-Aug-2011.) $)
   iotacl $p |- ( E! x ph -> ( iota x ph ) e. { x | ph } ) $=
