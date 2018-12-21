@@ -41836,15 +41836,21 @@ $)
       unissd sylnbi ss0 syl ) ABDZEABFZGHZUOGIUNABCJKBLZCMZUPABCNUREZUOUQCOZSZG
       ABCPUSVAGSGUSUTGUSUQEZCLZUTGHUQCQVCUTCCJEZCOZGVCUQVDTZCLUTVEHVBVFCUQVDRUA
       UQVDCUBUCCUDUEUFUJUGUHUIUKUOULUM $.
+  $}
 
-    $( Theorem 8.23 in [Quine] p. 58.  This theorem proves the existence of the
-       ` iota ` class under our definition.  (Contributed by Andrew Salmon,
-       11-Jul-2011.) $)
-    iotaex $p |- ( iota x ph ) e. _V $=
-      ( vz weu cio cvv wcel cv wceq wb wal wex iotaval eqcomd eximi df-eu isset
-      3imtr4i wn c0 iotanul 0ex syl6eqel pm2.61i ) ABDZABEZFGZABHCHZIJBKZCLUHUF
-      IZCLUEUGUIUJCUIUFUHABCMNOABCPCUFQRUESUFTFABUAUBUCUD $.
+  ${
+    $d ph y $.  $d x y $.
+    $( Theorem 8.23 in [Quine] p. 58, with existential uniqueness condition
+       added.  This theorem proves the existence of the ` iota ` class under
+       our definition.  (Contributed by Jim Kingdon, 21-Dec-2018.) $)
+    euiotaex $p |- ( E! x ph -> ( iota x ph ) e. _V ) $=
+      ( vy cv wceq wb wal wex cio weu wcel iotaval eqcomd eximi df-eu
+      cvv isset 3imtr4i ) ABDCDZEFBGZCHSABIZEZCHABJUAPKTUBCTUASABCLMN
+      ABCOCUAQR $.
+  $}
 
+  ${
+    $d ph z $.  $d ps z $.  $d x y z $.
     $( Theorem *14.22 in [WhiteheadRussell] p. 190.  (Contributed by Andrew
        Salmon, 12-Jul-2011.) $)
     iota4 $p |- ( E! x ph -> [. ( iota x ph ) / x ]. ph ) $=
