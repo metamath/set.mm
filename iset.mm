@@ -41817,8 +41817,8 @@ $)
     $( Equivalence between two different forms of ` iota ` .  (Contributed by
        Mario Carneiro, 24-Dec-2016.) $)
     iotaint $p |- ( E! x ph -> ( iota x ph ) = |^| { x | ph } ) $=
-      ( weu cio cab cuni cint iotauni wceq uniintab biimpi eqtrd ) ABCZABDABEZF
-      ZNGZABHMOPIABJKL $.
+      ( weu cio cab cuni cint iotauni uniintabim eqtrd ) ABCABDABEZFK
+      GABHABIJ $.
 
     $( Property of iota.  (Contributed by NM, 23-Aug-2011.)  (Revised by Mario
        Carneiro, 23-Dec-2016.) $)
