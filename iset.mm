@@ -41831,11 +41831,11 @@ $)
        isn't exactly one ` x ` that satisfies ` ph ` .  (Contributed by Andrew
        Salmon, 11-Jul-2011.) $)
     iotanul $p |- ( -. E! x ph -> ( iota x ph ) = (/) ) $=
-      ( vz weu weq wb wal wex cio c0 wceq df-eu wn cab cuni dfiota2 alnex eqidd
-      ax-1 cv impbid1 con2bid alimi abbi sylib dfnul2 sylbir unieqd uni0 syl6eq
-      syl6eqr syl5eq sylnbi ) ABDABCEFBGZCHZABIZJKABCLUOMZUPUNCNZOZJABCPUQUSJOJ
-      UQURJUQUNMZCGZURJKUNCQVAURCCEZMZCNZJVAUNVCFZCGURVDKUTVECUTVBUNUTVBUTUTVBS
-      UTCTRUAUBUCUNVCCUDUECUFUKUGUHUIUJULUM $.
+      ( vz weu wn cio c0 wss wceq weq wb wal wex df-eu cab dfiota2 alnex ax-in2
+      cuni wi alimi ss2ab sylibr dfnul2 syl6sseqr sylbir uni0 syl6sseq syl5eqss
+      unissd sylnbi ss0 syl ) ABDZEABFZGHZUOGIUNABCJKBLZCMZUPABCNUREZUOUQCOZSZG
+      ABCPUSVAGSGUSUTGUSUQEZCLZUTGHUQCQVCUTCCJEZCOZGVCUQVDTZCLUTVEHVBVFCUQVDRUA
+      UQVDCUBUCCUDUEUFUJUGUHUIUKUOULUM $.
 
     $( Theorem 8.23 in [Quine] p. 58.  This theorem proves the existence of the
        ` iota ` class under our definition.  (Contributed by Andrew Salmon,
