@@ -41718,7 +41718,7 @@ $)
     $d z ps $.  $d z ph $.  $d x y z $.
     nfiotadxy.1 $e |- F/ y ph $.
     nfiotadxy.2 $e |- ( ph -> F/ x ps ) $.
-    $( Deduction version of ~ nfiota .  (Contributed by Jim Kingdon,
+    $( Deduction version of ~ nfiotaxy .  (Contributed by Jim Kingdon,
        21-Dec-2018.) $)
     nfiotadxy $p |- ( ph -> F/_ x ( iota y ps ) ) $=
       ( vz cio cv wceq wb wal cab cuni dfiota2 nfv wnf nfcv nfeq a1i
@@ -41727,12 +41727,12 @@ $)
   $}
 
   ${
-    $d w z ph $.  $d w x z $.  $d w y z $.
+    $d w z ph $.  $d w x y z $.
     nfiota.1 $e |- F/ x ph $.
     $( Bound-variable hypothesis builder for the ` iota ` class.  (Contributed
        by NM, 23-Aug-2011.) $)
-    nfiota $p |- F/_ x ( iota y ph ) $=
-      ( cio wnfc wtru nftru wnf a1i nfiotad trud ) BACEFGABCCHABIGDJKL $.
+    nfiotaxy $p |- F/_ x ( iota y ph ) $=
+      ( cio wnfc wtru nftru wnf a1i nfiotadxy trud ) BACEFGABCCHABIGDJKL $.
   $}
 
   ${
