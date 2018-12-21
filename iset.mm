@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Dec-2018
+$( iset.mm - Version of 21-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -41715,15 +41715,15 @@ $)
   $}
 
   ${
-    $d z ps $.  $d z ph $.  $d x z $.  $d y z $.
-    nfiotad.1 $e |- F/ y ph $.
-    nfiotad.2 $e |- ( ph -> F/ x ps ) $.
-    $( Deduction version of ~ nfiota .  (Contributed by NM, 18-Feb-2013.) $)
-    nfiotad $p |- ( ph -> F/_ x ( iota y ps ) ) $=
-      ( vz cio weq wb wal cab cuni dfiota2 nfv wn wa wnf adantr cv nfcvf adantl
-      wnfc nfcvd nfeqd nfbid nfald2 nfabd nfunid nfcxfrd ) ACBDHBDGIZJZDKZGLZMB
-      DGNACUNAUMCGAGOAULCDEACDICKPZQZBUKCABCRUOFSUPCDTZGTZUOCUQUCACDUAUBUPCURUD
-      UEUFUGUHUIUJ $.
+    $d z ps $.  $d z ph $.  $d x y z $.
+    nfiotadxy.1 $e |- F/ y ph $.
+    nfiotadxy.2 $e |- ( ph -> F/ x ps ) $.
+    $( Deduction version of ~ nfiota .  (Contributed by Jim Kingdon,
+       21-Dec-2018.) $)
+    nfiotadxy $p |- ( ph -> F/_ x ( iota y ps ) ) $=
+      ( vz cio cv wceq wb wal cab cuni dfiota2 nfv wnf nfcv nfeq a1i
+      nfbid nfald nfabd nfunid nfcxfrd ) ACBDHBDIZGIZJZKZDLZGMZNBDGOA
+      CUKAUJCGAGPAUICDEABUHCFUHCQACUFUGCUFRCUGRSTUAUBUCUDUE $.
   $}
 
   ${
