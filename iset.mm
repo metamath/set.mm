@@ -41653,6 +41653,337 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Definite description binder (inverted iota)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c iota $.
+  $( Extend class notation with Russell's definition description binder
+     (inverted iota). $)
+  cio $a class ( iota x ph ) $.
+
+  ${
+    $d w x z $.  $d ph w z $.  $d ph w y $.  $d x y $.
+    $( Soundness justification theorem for ~ df-iota .  (Contributed by Andrew
+       Salmon, 29-Jun-2011.) $)
+    iotajust $p |- U. { y | { x | ph } = { y } } =
+       U. { z | { x | ph } = { z } } $=
+      ( vw cab cv csn wceq sneq eqeq2d cbvabv eqtri unieqi ) ABFZCGZHZIZCFZODGZ
+      HZIZDFZSOEGZHZIZEFUCRUFCEPUDIQUEOPUDJKLUFUBEDUDTIUEUAOUDTJKLMN $.
+  $}
+
+  ${
+    $d y x $.  $d y ph $.
+    $( Define Russell's definition description binder, which can be read as
+       "the unique ` x ` such that ` ph ` ," where ` ph ` ordinarily contains
+       ` x ` as a free variable.  Our definition is meaningful only when there
+       is exactly one ` x ` such that ` ph ` is true (see ~ iotaval );
+       otherwise, it evaluates to the empty set (see ~ iotanul ).  Russell used
+       the inverted iota symbol ` iota ` to represent the binder.
+
+       Sometimes proofs need to expand an iota-based definition.  That is,
+       given "X = the x for which ... x ... x ..." holds, the proof needs to
+       get to "...  X ...  X ...".  A general strategy to do this is to use
+       ~ riotacl2 (or ~ iotacl for unbounded iota), as demonstrated in the
+       proof of ~ supub .  This can be easier than applying ~ riotasbc or a
+       version that applies an explicit substitution, because substituting an
+       iota into its own property always has a bound variable clash which must
+       be first renamed or else guarded with NF.
+
+       (Contributed by Andrew Salmon, 30-Jun-2011.) $)
+    df-iota $a |- ( iota x ph ) = U. { y | { x | ph } = { y } } $.
+  $}
+
+  ${
+    $d y x $.  $d y ph $.
+    $( Alternate definition for descriptions.  Definition 8.18 in [Quine]
+       p. 56.  (Contributed by Andrew Salmon, 30-Jun-2011.) $)
+    dfiota2 $p |- ( iota x ph ) = U. { y | A. x ( ph <-> x = y ) } $=
+      ( cio cab cv csn wceq cuni wb wal df-iota df-sn eqeq2i abbi bitr4i unieqi
+      abbii eqtri ) ABDABEZCFZGZHZCEZIABFUAHZJBKZCEZIABCLUDUGUCUFCUCTUEBEZHUFUB
+      UHTBUAMNAUEBOPRQS $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.
+    $( Bound-variable hypothesis builder for the ` iota ` class.  (Contributed
+       by Andrew Salmon, 11-Jul-2011.)  (Revised by Mario Carneiro,
+       15-Oct-2016.) $)
+    nfiota1 $p |- F/_ x ( iota x ph ) $=
+      ( vy cio weq wb wal cab cuni dfiota2 nfaba1 nfuni nfcxfr ) BABDABCEFZBGCH
+      ZIABCJBONBCKLM $.
+  $}
+
+  ${
+    $d z ps $.  $d z ph $.  $d x z $.  $d y z $.
+    nfiotad.1 $e |- F/ y ph $.
+    nfiotad.2 $e |- ( ph -> F/ x ps ) $.
+    $( Deduction version of ~ nfiota .  (Contributed by NM, 18-Feb-2013.) $)
+    nfiotad $p |- ( ph -> F/_ x ( iota y ps ) ) $=
+      ( vz cio weq wb wal cab cuni dfiota2 nfv wn wa wnf adantr cv nfcvf adantl
+      wnfc nfcvd nfeqd nfbid nfald2 nfabd nfunid nfcxfrd ) ACBDHBDGIZJZDKZGLZMB
+      DGNACUNAUMCGAGOAULCDEACDICKPZQZBUKCABCRUOFSUPCDTZGTZUOCUQUCACDUAUBUPCURUD
+      UEUFUGUHUIUJ $.
+  $}
+
+  ${
+    $d w z ph $.  $d w x z $.  $d w y z $.
+    nfiota.1 $e |- F/ x ph $.
+    $( Bound-variable hypothesis builder for the ` iota ` class.  (Contributed
+       by NM, 23-Aug-2011.) $)
+    nfiota $p |- F/_ x ( iota y ph ) $=
+      ( cio wnfc wtru nftru wnf a1i nfiotad trud ) BACEFGABCCHABIGDJKL $.
+  $}
+
+  ${
+    $d z w x $.  $d z w y $.  $d z w ph $.  $d z w ps $.
+    cbviota.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    cbviota.2 $e |- F/ y ph $.
+    cbviota.3 $e |- F/ x ps $.
+    $( Change bound variables in a description binder.  (Contributed by Andrew
+       Salmon, 1-Aug-2011.) $)
+    cbviota $p |- ( iota x ph ) = ( iota y ps ) $=
+      ( vw vz weq wb wal cab cuni cio wsb nfv nfbi equequ1 bibi12d sbequ12 nfsb
+      nfs1v cbval sbequ sbie syl6bb bitri abbii unieqi dfiota2 3eqtr4i ) ACHJZK
+      ZCLZHMZNBDHJZKZDLZHMZNACOBDOUPUTUOUSHUOACIPZIHJZKZILUSUNVCCIUNIQVAVBCACIU
+      CVBCQRCIJAVAUMVBACIUACIHSTUDVCURIDVAVBDACIDFUBVBDQRURIQIDJZVABVBUQVDVAACD
+      PBAIDCUEABCDGEUFUGIDHSTUDUHUIUJACHUKBDHUKUL $.
+  $}
+
+  ${
+    $d ph y $.  $d ps x $.
+    cbviotav.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Change bound variables in a description binder.  (Contributed by Andrew
+       Salmon, 1-Aug-2011.) $)
+    cbviotav $p |- ( iota x ph ) = ( iota y ps ) $=
+      ( nfv cbviota ) ABCDEADFBCFG $.
+  $}
+
+  ${
+    $d w z ph $.  $d w z x $.  $d w z y $.
+    sb8iota.1 $e |- F/ y ph $.
+    $( Variable substitution in description binder.  Compare ~ sb8eu .
+       (Contributed by NM, 18-Mar-2013.) $)
+    sb8iota $p |- ( iota x ph ) = ( iota y [ y / x ] ph ) $=
+      ( vz vw weq wal cab cuni wsb cio nfv sb8 sbbi nfsb equsb3 nfxfr dfiota2
+      wb nfbi sbequ cbval sblbis albii 3bitri abbii unieqi 3eqtr4i ) ABEGZTZBHZ
+      EIZJABCKZCEGZTZCHZEIZJABLUNCLUMURULUQEULUKBFKZFHUKBCKZCHUQUKBFUKFMNUSUTFC
+      USABFKZUJBFKZTCAUJBFOVAVBCABFCDPVBFEGZCFBEQVCCMRUARUTFMUKFCBUBUCUTUPCUJUO
+      ABCCBEQUDUEUFUGUHABESUNCESUI $.
+  $}
+
+  ${
+    $d y z $.  $d x z $.  $d ph z $.
+    $( Equality theorem for descriptions.  (Contributed by Andrew Salmon,
+       30-Jun-2011.) $)
+    iotaeq $p |- ( A. x x = y -> ( iota x ph ) = ( iota y ph ) ) $=
+      ( vz cv wceq wal cab csn cuni cio wcel drsb1 df-clab 3bitr4g eqrdv eqeq1d
+      wsb abbidv df-iota unieqd 3eqtr4g ) BECEFBGZABHZDEZIZFZDHZJACHZUFFZDHZJAB
+      KACKUCUHUKUCUGUJDUCUDUIUFUCDUDUIUCABDRACDRUEUDLUEUILABCDMADBNADCNOPQSUAAB
+      DTACDTUB $.
+  $}
+
+  ${
+    $d ph z $.  $d ps z $.  $d x y z $.
+    $( Equivalence theorem for descriptions.  (Contributed by Andrew Salmon,
+       30-Jun-2011.) $)
+    iotabi $p |- ( A. x ( ph <-> ps ) -> ( iota x ph ) = ( iota x ps ) ) $=
+      ( vz wb wal cab cv csn wceq cuni abbi biimpi eqeq1d abbidv unieqd df-iota
+      cio 3eqtr4g ) ABECFZACGZDHIZJZDGZKBCGZUBJZDGZKACRBCRTUDUGTUCUFDTUAUEUBTUA
+      UEJABCLMNOPACDQBCDQS $.
+
+    $( Part of Theorem 8.17 in [Quine] p. 56.  This theorem serves as a lemma
+       for the fundamental property of iota.  (Contributed by Andrew Salmon,
+       11-Jul-2011.) $)
+    uniabio $p |- ( A. x ( ph <-> x = y ) -> U. { x | ph } = y ) $=
+      ( cv wceq wb wal cab cuni csn abbi biimpi df-sn syl6eqr unieqd vex syl6eq
+      unisn ) ABDCDZEZFBGZABHZISJZISUAUBUCUAUBTBHZUCUAUBUDEATBKLBSMNOSCPRQ $.
+
+    $( Theorem 8.19 in [Quine] p. 57.  This theorem is the fundamental property
+       of iota.  (Contributed by Andrew Salmon, 11-Jul-2011.) $)
+    iotaval $p |- ( A. x ( ph <-> x = y ) -> ( iota x ph ) = y ) $=
+      ( vz weq wb wal cio cab cuni cv dfiota2 wceq cvv wcel vex sbeqalb equcomi
+      wa wi ax-mp ex equequ2 equcoms bibi2d biimpd alimdv com12 alrimiv uniabio
+      syl6 impbid syl syl5eq ) ABCEZFZBGZABHABDEZFZBGZDIJZCKZABDLUQUTDCEZFZDGVA
+      VBMUQVDDUQUTVCUQUTVCVBNOZUQUTSZVCTCPVEVFCDEVCABVBDKNQCDRUKUAUBVCUQUTVCUPU
+      SBVCUPUSVCUOURAUOURFCDCDBUCUDUEUFUGUHULUIUTDCUJUMUN $.
+
+    $( Equivalence between two different forms of ` iota ` .  (Contributed by
+       Andrew Salmon, 12-Jul-2011.) $)
+    iotauni $p |- ( E! x ph -> ( iota x ph ) = U. { x | ph } ) $=
+      ( vz weu cv wceq wb wal wex cio cuni df-eu iotaval uniabio eqtr4d exlimiv
+      cab sylbi ) ABDABECEZFGBHZCIABJZABQKZFZABCLTUCCTUASUBABCMABCNOPR $.
+
+    $( Equivalence between two different forms of ` iota ` .  (Contributed by
+       Mario Carneiro, 24-Dec-2016.) $)
+    iotaint $p |- ( E! x ph -> ( iota x ph ) = |^| { x | ph } ) $=
+      ( weu cio cab cuni cint iotauni wceq uniintab biimpi eqtrd ) ABCZABDABEZF
+      ZNGZABHMOPIABJKL $.
+
+    $( Property of iota.  (Contributed by NM, 23-Aug-2011.)  (Revised by Mario
+       Carneiro, 23-Dec-2016.) $)
+    iota1 $p |- ( E! x ph -> ( ph <-> ( iota x ph ) = x ) ) $=
+      ( vz weu cv wceq wb wal wex cio df-eu iotaval eqeq2d bitr4d eqcom exlimiv
+      sp syl6bb sylbi ) ABDABEZCEZFZGZBHZCIAABJZTFZGZABCKUDUGCUDATUEFZUFUDAUBUH
+      UCBQUDUEUATABCLMNTUEORPS $.
+
+    $( Theorem 8.22 in [Quine] p. 57.  This theorem is the result if there
+       isn't exactly one ` x ` that satisfies ` ph ` .  (Contributed by Andrew
+       Salmon, 11-Jul-2011.) $)
+    iotanul $p |- ( -. E! x ph -> ( iota x ph ) = (/) ) $=
+      ( vz weu weq wb wal wex cio c0 wceq df-eu wn cab cuni dfiota2 alnex eqidd
+      ax-1 cv impbid1 con2bid alimi abbi sylib dfnul2 sylbir unieqd uni0 syl6eq
+      syl6eqr syl5eq sylnbi ) ABDABCEFBGZCHZABIZJKABCLUOMZUPUNCNZOZJABCPUQUSJOJ
+      UQURJUQUNMZCGZURJKUNCQVAURCCEZMZCNZJVAUNVCFZCGURVDKUTVECUTVBUNUTVBUTUTVBS
+      UTCTRUAUBUCUNVCCUDUECUFUKUGUHUIUJULUM $.
+
+    $( The ` iota ` class is a subset of the union of all elements satisfying
+       ` ph ` .  (Contributed by Mario Carneiro, 24-Dec-2016.) $)
+    iotassuni $p |- ( iota x ph ) C_ U. { x | ph } $=
+      ( weu cio cab cuni wss wceq iotauni eqimss syl wn c0 iotanul 0ss syl6eqss
+      pm2.61i ) ABCZABDZABEFZGZRSTHUAABISTJKRLSMTABNTOPQ $.
+
+    $( Theorem 8.23 in [Quine] p. 58.  This theorem proves the existence of the
+       ` iota ` class under our definition.  (Contributed by Andrew Salmon,
+       11-Jul-2011.) $)
+    iotaex $p |- ( iota x ph ) e. _V $=
+      ( vz weu cio cvv wcel cv wceq wb wal wex iotaval eqcomd eximi df-eu isset
+      3imtr4i wn c0 iotanul 0ex syl6eqel pm2.61i ) ABDZABEZFGZABHCHZIJBKZCLUHUF
+      IZCLUEUGUIUJCUIUFUHABCMNOABCPCUFQRUESUFTFABUAUBUCUD $.
+
+    $( Theorem *14.22 in [WhiteheadRussell] p. 190.  (Contributed by Andrew
+       Salmon, 12-Jul-2011.) $)
+    iota4 $p |- ( E! x ph -> [. ( iota x ph ) / x ]. ph ) $=
+      ( vz weu weq wb wal wex cio wsbc df-eu wsb bi2 alimi sb2 syl wceq iotaval
+      wi cv eqcomd dfsbcq2 mpbid exlimiv sylbi ) ABDABCEZFZBGZCHABABIZJZABCKUHU
+      JCUHABCLZUJUHUFASZBGUKUGULBAUFMNABCOPUHCTZUIQUKUJFUHUIUMABCRUAABCUIUBPUCU
+      DUE $.
+  $}
+
+  $( Theorem *14.23 in [WhiteheadRussell] p. 191.  (Contributed by Andrew
+     Salmon, 12-Jul-2011.) $)
+  iota4an $p |- ( E! x ( ph /\ ps )
+            -> [. ( iota x ( ph /\ ps ) ) / x ]. ph ) $=
+    ( wa weu cio wsbc iota4 wi cvv wcel iotaex simpl sbcth ax-mp wb sbcimg mpbi
+    syl ) ABDZCETCTCFZGZACUAGZTCHTAIZCUAGZUBUCIZUAJKZUETCLZUDCUAJABMNOUGUEUFPUH
+    TACUAJQORS $.
+
+  ${
+    $d x y A $.  $d x V $.  $d x ph $.  $d y ps $.
+    iota5.1 $e |- ( ( ph /\ A e. V ) -> ( ps <-> x = A ) ) $.
+    $( A method for computing iota.  (Contributed by NM, 17-Sep-2013.) $)
+    iota5 $p |- ( ( ph /\ A e. V ) -> ( iota x ps ) = A ) $=
+      ( vy wcel wa cv wceq wb wal cio alrimiv wi eqeq2 bibi2d albidv imbi12d
+      iotaval vtoclg adantl mpd ) ADEHZIZBCJZDKZLZCMZBCNZDKZUFUICFOUEUJULPZABUG
+      GJZKZLZCMZUKUNKZPUMGDEUNDKZUQUJURULUSUPUICUSUOUHBUNDUGQRSUNDUKQTBCGUAUBUC
+      UD $.
+  $}
+
+  ${
+    $d x ph $.
+    iotabidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building deduction rule for iota.  (Contributed by NM,
+       20-Aug-2011.) $)
+    iotabidv $p |- ( ph -> ( iota x ps ) = ( iota x ch ) ) $=
+      ( wb wal cio wceq alrimiv iotabi syl ) ABCFZDGBDHCDHIAMDEJBCDKL $.
+  $}
+
+  ${
+    iotabii.1 $e |- ( ph <-> ps ) $.
+    $( Formula-building deduction rule for iota.  (Contributed by Mario
+       Carneiro, 2-Oct-2015.) $)
+    iotabii $p |- ( iota x ph ) = ( iota x ps ) $=
+      ( wb cio wceq iotabi mpg ) ABEACFBCFGCABCHDI $.
+  $}
+
+  $( Membership law for descriptions.
+
+     This can useful for expanding an unbounded iota-based definition (see
+     ~ df-iota ).  If you have a bounded iota-based definition, ~ riotacl2 may
+     be useful.
+
+     (Contributed by Andrew Salmon, 1-Aug-2011.) $)
+  iotacl $p |- ( E! x ph -> ( iota x ph ) e. { x | ph } ) $=
+    ( weu cio wsbc cab wcel iota4 df-sbc sylib ) ABCABABDZEKABFGABHABKIJ $.
+
+  ${
+    $d x y $.  $d y B $.  $d y ps $.
+    iota2df.1 $e |- ( ph -> B e. V ) $.
+    iota2df.2 $e |- ( ph -> E! x ps ) $.
+    iota2df.3 $e |- ( ( ph /\ x = B ) -> ( ps <-> ch ) ) $.
+    ${
+      iota2df.4 $e |- F/ x ph $.
+      iota2df.5 $e |- ( ph -> F/ x ch ) $.
+      iota2df.6 $e |- ( ph -> F/_ x B ) $.
+      $( A condition that allows us to represent "the unique element such that
+         ` ph ` " with a class expression ` A ` .  (Contributed by NM,
+         30-Dec-2014.) $)
+      iota2df $p |- ( ph -> ( ch <-> ( iota x ps ) = B ) ) $=
+        ( cio cv wceq wb wa simpr eqeq2d bibi12d weu iota1 syl wnfc nfiota1 a1i
+        nfeqd nfbid vtocldf ) ABBDMZDNZOZPZCUJEOZPDEFGAUKEOZQZBCULUNIUPUKEUJAUO
+        RSTABDUAUMHBDUBUCJLACUNDKADUJEDUJUDABDUEUFLUGUHUI $.
+    $}
+
+    $d x B $.  $d x ph $.  $d x ch $.
+    $( A condition that allows us to represent "the unique element such that
+       ` ph ` " with a class expression ` A ` .  (Contributed by NM,
+       30-Dec-2014.) $)
+    iota2d $p |- ( ph -> ( ch <-> ( iota x ps ) = B ) ) $=
+      ( nfv nfvd nfcvd iota2df ) ABCDEFGHIADJACDKADELM $.
+  $}
+
+  ${
+    $d A x $.  $d ps x $.
+    iota2.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
+    $( The unique element such that ` ph ` .  (Contributed by Jeff Madsen,
+       1-Jun-2011.)  (Revised by Mario Carneiro, 23-Dec-2016.) $)
+    iota2 $p |- ( ( A e. B /\ E! x ph ) -> ( ps <-> ( iota x ph ) = A ) ) $=
+      ( wcel cvv weu cio wceq wb elex wa simpl simpr cv adantl nfv nfeu1 nfcvd
+      nfan nfvd iota2df sylan ) DEGDHGZACIZBACJDKLDEMUFUGNZABCDHUFUGOUFUGPCQDKA
+      BLUHFRUFUGCUFCSACTUBUHBCUCUHCDUAUDUE $.
+  $}
+
+  $( A class abstraction with a unique member can be expressed as a singleton.
+     (Contributed by Mario Carneiro, 23-Dec-2016.) $)
+  sniota $p |- ( E! x ph -> { x | ph } = { ( iota x ph ) } ) $=
+    ( weu cv cab wcel cio csn wb wal wceq nfeu1 iota1 eqcom syl6bb abid 3bitr4g
+    vex elsnc alrimi nfab1 nfiota1 nfsn cleqf sylibr ) ABCZBDZABEZFZUGABGZHZFZI
+    ZBJUHUKKUFUMBABLUFAUGUJKZUIULUFAUJUGKUNABMUJUGNOABPUGUJBRSQTBUHUKABUABUJABU
+    BUCUDUE $.
+
+  ${
+    $( The ` iota ` operation using the ` if ` operator.  (Contributed by Scott
+       Fenton, 6-Oct-2017.) $)
+    dfiota4 $p |- ( iota x ph ) = if ( E! x ph , U. { x | ph } , (/) ) $=
+      ( weu cio cab cuni cif wceq iotauni iftrue eqtr4d iotanul iffalse pm2.61i
+      c0 wn ) ABCZABDZQABEFZOGZHQRSTABIQSOJKQPROTABLQSOMKN $.
+  $}
+
+  ${
+    $d A y z $.  $d x y z $.  $d ph z $.
+    $( Class substitution within a description binder.  (Contributed by Scott
+       Fenton, 6-Oct-2017.)  (Revised by NM, 23-Aug-2018.) $)
+    csbiota $p |- [_ A / x ]_ ( iota y ph ) = ( iota y [. A / x ]. ph ) $=
+      ( vz cvv wcel cio csb wsbc wceq cv wsb csbeq1 dfsbcq2 iotabidv eqeq12d wn
+      c0 con3i vex nfs1v nfiota weq sbequ12 csbief vtoclg csbprc wex sbcex euex
+      weu nexdv iotanul 3syl eqtr4d pm2.61i ) DFGZBDACHZIZABDJZCHZKZBELZUSIZABE
+      MZCHZKVCEDFVDDKZVEUTVGVBBVDDUSNVHVFVACABEDOPQBVDUSVGEUAVFBCABEUBUCBEUDAVF
+      CABEUEPUFUGURRZUTSVBBDUSUHVIVACUIZRVACULZRVBSKVIVACVAURABDUJTUMVKVJVACUKT
+      VACUNUOUPUQ $.
+
+    $( Class substitution within a description binder.  (Contributed by Scott
+       Fenton, 6-Oct-2017.)  Obsolete as of 23-Aug-2018.  Use ~ csbiota
+       instead.  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    csbiotagOLD $p |- ( A e. V ->
+        [_ A / x ]_ ( iota y ph ) = ( iota y [. A / x ]. ph ) ) $=
+      ( vz cv cio csb wsb wceq csbeq1 dfsbcq2 iotabidv eqeq12d vex nfs1v nfiota
+      wsbc weq sbequ12 csbief vtoclg ) BFGZACHZIZABFJZCHZKBDUEIZABDSZCHZKFDEUDD
+      KZUFUIUHUKBUDDUELULUGUJCABFDMNOBUDUEUHFPUGBCABFQRBFTAUGCABFUANUBUC $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -42370,6 +42701,10 @@ htmldef "Rel" as
     "<IMG SRC='_rel.gif' WIDTH=22 HEIGHT=19 ALT=' Rel' TITLE='Rel'> ";
   althtmldef "Rel" as 'Rel ';
   latexdef "Rel" as "{\rm Rel}";
+htmldef "iota" as
+    "<IMG SRC='riota.gif' WIDTH=6 HEIGHT=19 ALT=' iota' TITLE='iota'>";
+  althtmldef "iota" as '&#8489;';
+  latexdef "iota" as "\mathrm{\rotatebox[origin=C]{180}{$\iota$}}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
