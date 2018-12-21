@@ -959,7 +959,7 @@
 "ax-c4" is used by "ax4".
 "ax-c4" is used by "equid1".
 "ax-c5" is used by "ax10".
-"ax-c5" is used by "ax12from12o".
+"ax-c5" is used by "ax12fromc9".
 "ax-c5" is used by "ax13".
 "ax-c5" is used by "ax13inda2ALT".
 "ax-c5" is used by "ax13indalem".
@@ -978,7 +978,7 @@
 "ax-c7" is used by "axc711".
 "ax-c7" is used by "equid1".
 "ax-c7" is used by "equid1ALT".
-"ax-c9" is used by "ax12from12o".
+"ax-c9" is used by "ax12fromc9".
 "ax-c9" is used by "ax5eq".
 "ax-c9" is used by "dvelimf-o".
 "ax-c9" is used by "equid1".
@@ -13521,7 +13521,7 @@ New usage of "ax-pre-sup" is discouraged (1 uses).
 New usage of "ax1" is discouraged (0 uses).
 New usage of "ax10" is discouraged (3 uses).
 New usage of "ax12OLD" is discouraged (0 uses).
-New usage of "ax12from12o" is discouraged (0 uses).
+New usage of "ax12fromc9" is discouraged (0 uses).
 New usage of "ax12lem1" is discouraged (2 uses).
 New usage of "ax12lem2" is discouraged (3 uses).
 New usage of "ax12lem3" is discouraged (1 uses).
@@ -17728,7 +17728,7 @@ Proof modification of "ax10" is discouraged (50 steps).
 Proof modification of "ax11-pm" is discouraged (39 steps).
 Proof modification of "ax11-pm2" is discouraged (119 steps).
 Proof modification of "ax12OLD" is discouraged (72 steps).
-Proof modification of "ax12from12o" is discouraged (72 steps).
+Proof modification of "ax12fromc9" is discouraged (72 steps).
 Proof modification of "ax13" is discouraged (57 steps).
 Proof modification of "ax13a2-o" is discouraged (22 steps).
 Proof modification of "ax13el" is discouraged (577 steps).
