@@ -41837,12 +41837,6 @@ $)
       UQURJUQUNMZCGZURJKUNCQVAURCCEZMZCNZJVAUNVCFZCGURVDKUTVECUTVBUNUTVBUTUTVBS
       UTCTRUAUBUCUNVCCUDUECUFUKUGUHUIUJULUM $.
 
-    $( The ` iota ` class is a subset of the union of all elements satisfying
-       ` ph ` .  (Contributed by Mario Carneiro, 24-Dec-2016.) $)
-    iotassuni $p |- ( iota x ph ) C_ U. { x | ph } $=
-      ( weu cio cab cuni wss wceq iotauni eqimss syl wn c0 iotanul 0ss syl6eqss
-      pm2.61i ) ABCZABDZABEFZGZRSTHUAABISTJKRLSMTABNTOPQ $.
-
     $( Theorem 8.23 in [Quine] p. 58.  This theorem proves the existence of the
        ` iota ` class under our definition.  (Contributed by Andrew Salmon,
        11-Jul-2011.) $)
