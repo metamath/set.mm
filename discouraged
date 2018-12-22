@@ -440,10 +440,10 @@
 "5oalem5" is used by "5oalem6".
 "5oalem6" is used by "5oalem7".
 "5oalem7" is used by "5oai".
-"a16g-o" is used by "ax13inda2".
+"a16g-o" is used by "ax12inda2".
 "a4i-o" is used by "aev-o".
-"a4i-o" is used by "ax13inda2ALT".
-"a4i-o" is used by "ax13indalem".
+"a4i-o" is used by "ax12inda2ALT".
+"a4i-o" is used by "ax12indalem".
 "a4i-o" is used by "axc11n-16".
 "a4i-o" is used by "hbae-o".
 "a6e2eq" is used by "a6e2ndeq".
@@ -791,11 +791,11 @@
 "adjvalval" is used by "nmopadjlei".
 "aecom-o" is used by "aecoms-o".
 "aecom-o" is used by "aev-o".
-"aecom-o" is used by "ax13indalem".
+"aecom-o" is used by "ax12indalem".
 "aecom-o" is used by "naecoms-o".
 "aecoms-o" is used by "aev-o".
-"aecoms-o" is used by "ax13inda2ALT".
-"aecoms-o" is used by "ax13indalem".
+"aecoms-o" is used by "ax12inda2ALT".
+"aecoms-o" is used by "ax12indalem".
 "aecoms-o" is used by "dral1-o".
 "aecoms-o" is used by "dvelimf-o".
 "aecoms-o" is used by "hbae-o".
@@ -914,7 +914,7 @@
 "atssch" is used by "shatomistici".
 "atsseq" is used by "atnemeq0".
 "atssma" is used by "atordi".
-"ax-12" is used by "ax12v".
+"ax-13" is used by "ax13v".
 "ax-6" is used by "ax6v".
 "ax-ac" is used by "ac2".
 "ax-ac" is used by "zfac".
@@ -948,9 +948,9 @@
 "ax-c11" is used by "dvelimf-o".
 "ax-c11" is used by "hbae-o".
 "ax-c11n" is used by "axc11-o".
-"ax-c14" is used by "ax13el".
+"ax-c14" is used by "ax12el".
 "ax-c14" is used by "ax5el".
-"ax-c15" is used by "ax13".
+"ax-c15" is used by "ax12".
 "ax-c16" is used by "a16g-o".
 "ax-c16" is used by "ax5el".
 "ax-c16" is used by "ax5eq".
@@ -959,10 +959,10 @@
 "ax-c4" is used by "ax4".
 "ax-c4" is used by "equid1".
 "ax-c5" is used by "ax10".
-"ax-c5" is used by "ax12fromc9".
-"ax-c5" is used by "ax13".
-"ax-c5" is used by "ax13inda2ALT".
-"ax-c5" is used by "ax13indalem".
+"ax-c5" is used by "ax12".
+"ax-c5" is used by "ax12inda2ALT".
+"ax-c5" is used by "ax12indalem".
+"ax-c5" is used by "ax13fromc9".
 "ax-c5" is used by "ax4".
 "ax-c5" is used by "axc5c7".
 "ax-c5" is used by "axc5c711".
@@ -978,7 +978,7 @@
 "ax-c7" is used by "axc711".
 "ax-c7" is used by "equid1".
 "ax-c7" is used by "equid1ALT".
-"ax-c9" is used by "ax12fromc9".
+"ax-c9" is used by "ax13fromc9".
 "ax-c9" is used by "ax5eq".
 "ax-c9" is used by "dvelimf-o".
 "ax-c9" is used by "equid1".
@@ -1329,17 +1329,17 @@
 "ax10" is used by "axc5c711".
 "ax10" is used by "equidq".
 "ax10" is used by "hba1-o".
-"ax12lem1" is used by "ax12lem2".
-"ax12lem1" is used by "nfeqf".
-"ax12lem2" is used by "a6e".
-"ax12lem2" is used by "ax12lem3".
-"ax12lem2" is used by "dveeq2".
-"ax12lem3" is used by "dveeq2".
-"ax13" is used by "axc11-o".
-"ax13inda2" is used by "ax13inda".
-"ax13indalem" is used by "ax13inda2".
-"ax13indn" is used by "ax13indi".
-"ax13v2-o" is used by "ax13a2-o".
+"ax12" is used by "axc11-o".
+"ax12inda2" is used by "ax12inda".
+"ax12indalem" is used by "ax12inda2".
+"ax12indn" is used by "ax12indi".
+"ax12v2-o" is used by "ax12a2-o".
+"ax13lem1" is used by "ax13lem2".
+"ax13lem1" is used by "nfeqf".
+"ax13lem2" is used by "a6e".
+"ax13lem2" is used by "ax13lem3".
+"ax13lem2" is used by "dveeq2".
+"ax13lem3" is used by "dveeq2".
 "ax16ALT" is used by "dvelimALT".
 "ax16ALT2" is used by "a16gALT".
 "ax16ALT2OLD11" is used by "a16gALTOLD11".
@@ -5051,24 +5051,24 @@
 "docavalN" is used by "docaclN".
 "dochfN" is used by "dochpolN".
 "dral1-o" is used by "a16g-o".
-"dral1-o" is used by "ax13".
-"dral1-o" is used by "ax13inda2ALT".
-"dral1-o" is used by "ax13indalem".
-"dral2-o" is used by "ax13el".
-"dral2-o" is used by "ax13eq".
-"dral2-o" is used by "ax13inda2ALT".
-"dral2-o" is used by "ax13indalem".
+"dral1-o" is used by "ax12".
+"dral1-o" is used by "ax12inda2ALT".
+"dral1-o" is used by "ax12indalem".
+"dral2-o" is used by "ax12el".
+"dral2-o" is used by "ax12eq".
+"dral2-o" is used by "ax12inda2ALT".
+"dral2-o" is used by "ax12indalem".
 "drngoi" is used by "dvrunz".
 "drngoi" is used by "fldcrng".
 "dvadiaN" is used by "diarnN".
-"dveeq1-o" is used by "ax13inda2ALT".
-"dveeq2-o" is used by "ax13el".
-"dveeq2-o" is used by "ax13eq".
-"dveeq2-o" is used by "ax13inda".
-"dveeq2-o" is used by "ax13v2-o".
+"dveeq1-o" is used by "ax12inda2ALT".
+"dveeq2-o" is used by "ax12el".
+"dveeq2-o" is used by "ax12eq".
+"dveeq2-o" is used by "ax12inda".
+"dveeq2-o" is used by "ax12v2-o".
 "dveeq2OLD" is used by "ax6OLD".
 "dveeq2OLD" is used by "axc11nOLD".
-"dvelimf-o" is used by "ax13el".
+"dvelimf-o" is used by "ax12el".
 "dvelimf-o" is used by "dveeq1-o".
 "dvelimf-o" is used by "dveeq2-o".
 "dvelimvOLD" is used by "axc11nlem4OLD".
@@ -6480,9 +6480,9 @@
 "hatomici" is used by "mdsymlem2".
 "hatomistici" is used by "chpssati".
 "hba1-o" is used by "a4i-o".
-"hba1-o" is used by "ax13inda".
-"hba1-o" is used by "ax13inda2ALT".
-"hba1-o" is used by "ax13indalem".
+"hba1-o" is used by "ax12inda".
+"hba1-o" is used by "ax12inda2ALT".
+"hba1-o" is used by "ax12indalem".
 "hba1-o" is used by "axc5c711toc7".
 "hba1-o" is used by "axc711toc7".
 "hba1-o" is used by "dvelimf-o".
@@ -6494,8 +6494,8 @@
 "hbalg" is used by "hbexgVD".
 "hbequid" is used by "equidq".
 "hbequid" is used by "nfequid-o".
-"hbnae-o" is used by "ax13inda2ALT".
-"hbnae-o" is used by "ax13indalem".
+"hbnae-o" is used by "ax12inda2ALT".
+"hbnae-o" is used by "ax12indalem".
 "hbnae-o" is used by "dvelimf-o".
 "hbntal" is used by "hbexgVD".
 "hbntal" is used by "hbimpg".
@@ -9718,10 +9718,10 @@
 "mulsrpr" is used by "mulcomsr".
 "mulsrpr" is used by "mulgt0sr".
 "mulsrpr" is used by "recexsrlem".
-"naecoms-o" is used by "ax13inda2ALT".
-"nfa1-o" is used by "ax13el".
-"nfa1-o" is used by "ax13eq".
-"nfa1-o" is used by "ax13v2-o".
+"naecoms-o" is used by "ax12inda2ALT".
+"nfa1-o" is used by "ax12el".
+"nfa1-o" is used by "ax12eq".
+"nfa1-o" is used by "ax12v2-o".
 "nfa1-o" is used by "axc11n-16".
 "nic-ax" is used by "lukshef-ax1".
 "nic-ax" is used by "nic-id".
@@ -12532,10 +12532,10 @@
 "spanval" is used by "spanss2".
 "specval" is used by "speccl".
 "spimeOLD" is used by "spimedOLD".
-"sps-o" is used by "ax13el".
-"sps-o" is used by "ax13eq".
-"sps-o" is used by "ax13inda".
-"sps-o" is used by "ax13v2-o".
+"sps-o" is used by "ax12el".
+"sps-o" is used by "ax12eq".
+"sps-o" is used by "ax12inda".
+"sps-o" is used by "ax12v2-o".
 "sps-o" is used by "axc11-o".
 "sps-o" is used by "axc11n-16".
 "sps-o" is used by "axc5c711toc7".
@@ -13468,7 +13468,7 @@ New usage of "atssch" is discouraged (4 uses).
 New usage of "atsseq" is discouraged (1 uses).
 New usage of "atssma" is discouraged (1 uses).
 New usage of "avril1" is discouraged (0 uses).
-New usage of "ax-12" is discouraged (1 uses).
+New usage of "ax-13" is discouraged (1 uses).
 New usage of "ax-6" is discouraged (1 uses).
 New usage of "ax-ac" is discouraged (2 uses).
 New usage of "ax-addass" is discouraged (1 uses).
@@ -13520,25 +13520,25 @@ New usage of "ax-pre-mulgt0" is discouraged (1 uses).
 New usage of "ax-pre-sup" is discouraged (1 uses).
 New usage of "ax1" is discouraged (0 uses).
 New usage of "ax10" is discouraged (3 uses).
-New usage of "ax12OLD" is discouraged (0 uses).
-New usage of "ax12fromc9" is discouraged (0 uses).
-New usage of "ax12lem1" is discouraged (2 uses).
-New usage of "ax12lem2" is discouraged (3 uses).
-New usage of "ax12lem3" is discouraged (1 uses).
-New usage of "ax13" is discouraged (1 uses).
-New usage of "ax13a2-o" is discouraged (0 uses).
-New usage of "ax13el" is discouraged (0 uses).
-New usage of "ax13eq" is discouraged (0 uses).
-New usage of "ax13f" is discouraged (0 uses).
-New usage of "ax13inda" is discouraged (0 uses).
-New usage of "ax13inda2" is discouraged (1 uses).
-New usage of "ax13inda2ALT" is discouraged (0 uses).
-New usage of "ax13indalem" is discouraged (1 uses).
-New usage of "ax13indi" is discouraged (0 uses).
-New usage of "ax13indn" is discouraged (1 uses).
-New usage of "ax13v2-o" is discouraged (1 uses).
-New usage of "ax13v2OLD" is discouraged (0 uses).
-New usage of "ax13vALT" is discouraged (0 uses).
+New usage of "ax12" is discouraged (1 uses).
+New usage of "ax12a2-o" is discouraged (0 uses).
+New usage of "ax12el" is discouraged (0 uses).
+New usage of "ax12eq" is discouraged (0 uses).
+New usage of "ax12f" is discouraged (0 uses).
+New usage of "ax12inda" is discouraged (0 uses).
+New usage of "ax12inda2" is discouraged (1 uses).
+New usage of "ax12inda2ALT" is discouraged (0 uses).
+New usage of "ax12indalem" is discouraged (1 uses).
+New usage of "ax12indi" is discouraged (0 uses).
+New usage of "ax12indn" is discouraged (1 uses).
+New usage of "ax12v2-o" is discouraged (1 uses).
+New usage of "ax12v2OLD" is discouraged (0 uses).
+New usage of "ax12vALT" is discouraged (0 uses).
+New usage of "ax13OLD" is discouraged (0 uses).
+New usage of "ax13fromc9" is discouraged (0 uses).
+New usage of "ax13lem1" is discouraged (2 uses).
+New usage of "ax13lem2" is discouraged (3 uses).
+New usage of "ax13lem3" is discouraged (1 uses).
 New usage of "ax16ALT" is discouraged (1 uses).
 New usage of "ax16ALT2" is discouraged (1 uses).
 New usage of "ax16ALT2OLD11" is discouraged (1 uses).
@@ -17729,22 +17729,22 @@ Proof modification of "ax1" is discouraged (3 steps).
 Proof modification of "ax10" is discouraged (50 steps).
 Proof modification of "ax11-pm" is discouraged (39 steps).
 Proof modification of "ax11-pm2" is discouraged (119 steps).
-Proof modification of "ax12OLD" is discouraged (72 steps).
-Proof modification of "ax12fromc9" is discouraged (72 steps).
-Proof modification of "ax13" is discouraged (57 steps).
-Proof modification of "ax13a2-o" is discouraged (22 steps).
-Proof modification of "ax13el" is discouraged (577 steps).
-Proof modification of "ax13eq" is discouraged (500 steps).
-Proof modification of "ax13f" is discouraged (23 steps).
-Proof modification of "ax13inda" is discouraged (146 steps).
-Proof modification of "ax13inda2" is discouraged (51 steps).
-Proof modification of "ax13inda2ALT" is discouraged (220 steps).
-Proof modification of "ax13indalem" is discouraged (272 steps).
-Proof modification of "ax13indi" is discouraged (83 steps).
-Proof modification of "ax13indn" is discouraged (70 steps).
-Proof modification of "ax13v2-o" is discouraged (107 steps).
-Proof modification of "ax13v2OLD" is discouraged (107 steps).
-Proof modification of "ax13vALT" is discouraged (81 steps).
+Proof modification of "ax12" is discouraged (57 steps).
+Proof modification of "ax12a2-o" is discouraged (22 steps).
+Proof modification of "ax12el" is discouraged (577 steps).
+Proof modification of "ax12eq" is discouraged (500 steps).
+Proof modification of "ax12f" is discouraged (23 steps).
+Proof modification of "ax12inda" is discouraged (146 steps).
+Proof modification of "ax12inda2" is discouraged (51 steps).
+Proof modification of "ax12inda2ALT" is discouraged (220 steps).
+Proof modification of "ax12indalem" is discouraged (272 steps).
+Proof modification of "ax12indi" is discouraged (83 steps).
+Proof modification of "ax12indn" is discouraged (70 steps).
+Proof modification of "ax12v2-o" is discouraged (107 steps).
+Proof modification of "ax12v2OLD" is discouraged (107 steps).
+Proof modification of "ax12vALT" is discouraged (81 steps).
+Proof modification of "ax13OLD" is discouraged (72 steps).
+Proof modification of "ax13fromc9" is discouraged (72 steps).
 Proof modification of "ax16ALT" is discouraged (20 steps).
 Proof modification of "ax16ALT2" is discouraged (62 steps).
 Proof modification of "ax16ALT2OLD11" is discouraged (62 steps).
