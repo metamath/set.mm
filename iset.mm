@@ -41864,9 +41864,9 @@ $)
      Salmon, 12-Jul-2011.) $)
   iota4an $p |- ( E! x ( ph /\ ps )
             -> [. ( iota x ( ph /\ ps ) ) / x ]. ph ) $=
-    ( wa weu cio wsbc iota4 wi cvv wcel iotaex simpl sbcth ax-mp wb sbcimg mpbi
-    syl ) ABDZCETCTCFZGZACUAGZTCHTAIZCUAGZUBUCIZUAJKZUETCLZUDCUAJABMNOUGUEUFPUH
-    TACUAJQORS $.
+    ( wa weu cio wsbc iota4 wi cvv euiotaex simpl sbcth syl wb sbcimg
+    wcel mpbid mpd ) ABDZCEZTCTCFZGZACUBGZTCHUATAIZCUBGZUCUDIZUAUBJQZ
+    UFTCKZUECUBJABLMNUAUHUFUGOUITACUBJPNRS $.
 
   ${
     $d x y A $.  $d x V $.  $d x ph $.  $d y ps $.
