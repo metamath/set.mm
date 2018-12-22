@@ -1055,7 +1055,7 @@ are also wffs.
 well as a placeholder for which other wffs can be substituted.
 
 <P>The axioms below are examples of wffs.  Each page describing an
-axiom, for example ~ ax-13 , presents the axiom's
+axiom, for example ~ ax-12 , presents the axiom's
 construction in a syntax breakdown chart, showing that it follows these
 rules and is therefore a wff.  You may want to look at a few of these
 to make sure you understand how wffs are constructed and how to
@@ -1277,16 +1277,16 @@ SUMMARY="Axioms of predicate calculus with equality">
 ` |- ( A. x A. y ph -> `
 ` A. y A. x ph ) ` </TD></TR>
 
-<TR ALIGN=LEFT><TD><A HREF="ax-12.html">Quantified Equality</A></TD>
+<TR ALIGN=LEFT><TD><A HREF="ax-12.html">Substitution</A></TD>
 <TD NOWRAP><FONT COLOR="#006633"><B>ax-12</B></FONT></TD>
 <TD>
-` |- ( -. x `
-` = y -> ( y = z -> A. x ` ` y = z ) ) `
+` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD></TR>
 
-<TR ALIGN=LEFT><TD><A HREF="ax-13.html">Substitution</A></TD>
+<TR ALIGN=LEFT><TD><A HREF="ax-13.html">Quantified Equality</A></TD>
 <TD NOWRAP><FONT COLOR="#006633"><B>ax-13</B></FONT></TD>
 <TD>
-` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD></TR>
+` |- ( -. x `
+` = y -> ( y = z -> A. x ` ` y = z ) ) `  </TD></TR>
 
 </TABLE>
 
@@ -2338,10 +2338,10 @@ descriptions.)<P>
 &lt;- <A HREF="sb4.html" TITLE="One direction of a simplified definition of substitution when variables...">sb4</A>
 &lt;- <A HREF="equs5.html" TITLE="Lemma used in proofs of substitution properties.">equs5</A>
 &lt;- <A HREF="axc15.html" TITLE="Derivation of set.mm's original ~~ ax-c15 from ~~ ax-c11n and the shorter...">axc15</A>
-&lt;- <A HREF="ax13a2.html" TITLE="Derive ~~ ax-c15 from a hypothesis in the form of ~~ ax-13 . ~~ ax-c11n and...">ax13a2</A>
-&lt;- <A HREF="ax13v2.html" TITLE="Recovery of ~~ ax-c15 from ~~ ax13v .  This proof uses ~~ ax-c11n and...">ax13v2</A>
+&lt;- <A HREF="ax13a2.html" TITLE="Derive ~~ ax-c15 from a hypothesis in the form of ~~ ax-12 . ~~ ax-c11n and...">ax13a2</A>
+&lt;- <A HREF="ax13v2.html" TITLE="Recovery of ~~ ax-c15 from ~~ ax12v .  This proof uses ~~ ax-c11n and...">ax13v2</A>
 &lt;- <A HREF="dveeq2.html" TITLE="Quantifier introduction when one pair of variables is distinct.  Revised...">dveeq2</A>
-&lt;- <A HREF="ax12lem3.html" TITLE="Lemma for ~~ dveeq2 .  This lemma is equivalent to ~~ ax12v with one...">ax12lem3</A>
+&lt;- <A HREF="ax12lem3.html" TITLE="Lemma for ~~ dveeq2 .  This lemma is equivalent to ~~ ax13v with one...">ax12lem3</A>
 &lt;- <A HREF="19.36v.html" TITLE="Special case of Theorem 19.36 of [Margaris] p. 90.">19.36v</A>
 &lt;- <A HREF="19.36.html" TITLE="Theorem 19.36 of [Margaris] p. 90.">19.36</A>
 &lt;- <A HREF="19.9.html" TITLE="A wff may be existentially quantified with a variable not free in it....">19.9</A>
@@ -2734,14 +2734,14 @@ not occur in ` ph ` </TD></TR>
 <TR ALIGN=LEFT>
 <TD NOWRAP> ~ ax-12 </TD>
 <TD>
-` |- ( -. x `
-` = y -> ( y = z -> A. x ` ` y = z ) ) `  </TD>
+` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD>
 <TD>&nbsp;</TD></TR>
 
 <TR ALIGN=LEFT>
 <TD NOWRAP> ~ ax-13 </TD>
 <TD>
-` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD>
+` |- ( -. x `
+` = y -> ( y = z -> A. x ` ` y = z ) ) `  </TD>
 <TD>&nbsp;</TD></TR>
 
 </TABLE>
@@ -2753,10 +2753,10 @@ metatheorems of Tarski's original system, meaning that they are sound
  not involving wff metavariables (and with all set
 metavariables mutually distinct) can be proved inside of Metamath from
 Tarski's axiom schemes; see theorem schemes ~ ax10w , ~ ax11w ,
-~ ax12w , and ~ ax13w .  These
+~ ax13w , and ~ ax12w .  These
 theorem schemes have hypotheses that can be eliminated for such
-instances.  Theorem ~ ax13wdemo shows an
-example of how we can eliminate the hypotheses of ~ ax13w .  Finally, we combine all such
+instances.  Theorem ~ ax12wdemo shows an
+example of how we can eliminate the hypotheses of ~ ax12w .  Finally, we combine all such
 instances (outside of Metamath) to result in the metatheorem
 represented by our extensions.
 
@@ -3360,11 +3360,11 @@ requirement in the "Distinct variable groups" list on the ~ cleljust page.
 how distinct variables requirements are inherited from referenced axioms
 or theorems in order to satisfy their distinct variable requirements.
 Let us consider an example (courtesy of G&eacute;rard Lang).  Naively,
-one might think that ~ ax-12 (which has no
+one might think that ~ ax-13 (which has no
 distinct variable requirements) is derivable from ~ ax-5 , arguing as follows.  Since the letter ` x ` has no occurrence in
 the wff ` y = z ` , one might think that a direct
 application of ~ ax-5 would give (` y = z -> A. x ` ` y = z `) as a theorem with no distinct
-variable requirements, so that ~ ax-12 easily
+variable requirements, so that ~ ax-13 easily
 follows by adding an antecedent with ~ a1i .
 However, "distinct" does not <I>merely</I> mean that two set variables
 have different names; it means that we also must prevent them from being
@@ -3376,10 +3376,10 @@ HREF="#axiomnotedv">Distinct metavariables</A> above.)  To apply ~ ax-5 , we mus
 could further substitute ` x ` for ` y ` to
 arrive at (` x = z -> A. x ` ` x = z `); this violates the ~ ax-5 requirement since ` x ` <I>does</I> appear in ` x = z ` .
 In fact, from ~ ax-5 we can conclude only the
-very restricted theorem ~ ax12w , which because of
-its distinct variable requirements is much weaker than axiom ~ ax-12 .  (If we omit them, the Metamath proof
+very restricted theorem ~ ax13w , which because of
+its distinct variable requirements is much weaker than axiom ~ ax-13 .  (If we omit them, the Metamath proof
 verifier will give an error message.)  We say that the distinct variable
-requirements in ~ ax12w are inherited from ~ ax-5 .
+requirements in ~ ax13w are inherited from ~ ax-5 .
 
 
 
@@ -4322,7 +4322,7 @@ long.</TD></TR>
 <TR><TD>
 
 <!--
-~ ax-13 , ~ ax-c15
+~ ax-12 , ~ ax-c15
 -->
 
 Omit all predicate calculus axioms <I>except</I>
@@ -4348,7 +4348,7 @@ bundled set variables cannot be derived.  In particular,
 derivable.
 </TD></TR>
 
-<TR><TD> ~ ax-c11n , ~ ax-13 ,
+<TR><TD> ~ ax-c11n , ~ ax-12 ,
 ~ ax-c15 , ~ ax-c16 , ~ ax-5 </TD><TD> <A NAME="dvfreesystem"></A>
 <B>System with no distinct variables.</B> This system has no distinct
 variable contraints, making the concept of substitution as simple as it
@@ -4361,7 +4361,7 @@ that for it to be considered complete, we must ignore antecedents called
 what would be distinct variable constraints (see the linked discussion).
 
 <P>
-We can optionally include ~ ax-c15 or ~ ax-13 for a somewhat more powerful metalogic,
+We can optionally include ~ ax-c15 or ~ ax-12 for a somewhat more powerful metalogic,
 since these also involve no distinct variable restrictions (although
 without them we can still derive any instance of them not containing wff
 metavariables).
@@ -4374,11 +4374,11 @@ is conjectured that ~ ax-c15 cannot be derived
 from the axioms of this subsystem.  See Item 9b on the <A
 HREF="../award2003.html#9b">Workshop Miscellany</A> page.</TD></TR>
 
-<TR><TD> ~ ax-13 , ~ ax-c16 , ~ ax-5 </TD><TD>It
-is known that ~ ax-13 can be derived from the
-axioms of this subsystem (see theorem ~ ax13 ).</TD></TR>
+<TR><TD> ~ ax-12 , ~ ax-c16 , ~ ax-5 </TD><TD>It
+is known that ~ ax-12 can be derived from the
+axioms of this subsystem (see theorem ~ ax12 ).</TD></TR>
 
-<TR><TD> ~ ax-c11 and ~ ax-13 </TD><TD>It is conjectured that ~ ax-c11 cannot be derived from the axioms of this
+<TR><TD> ~ ax-c11 and ~ ax-12 </TD><TD>It is conjectured that ~ ax-c11 cannot be derived from the axioms of this
 subsystem.</TD></TR>
 
 
