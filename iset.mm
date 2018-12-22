@@ -42157,11 +42157,11 @@ $)
        distinct variable conditions.  (Contributed by NM, 9-Mar-1995.)
        (Revised by Mario Carneiro, 15-Oct-2016.) $)
     dffun6f $p |- ( Fun A <-> ( Rel A /\ A. x E* y x A y ) ) $=
-      ( vw vv vu wfun wrel cv wbr weq wal wa wmo nfcv nfbr nfv albii wex dffun3
-      wi breq2 cbvmo mo2 nfmo breq1 mobidv cbval 3bitr3ri anbi2i bitr4i ) CICJZ
-      FKZGKZCLZGHMUCGNHUAZFNZOUNAKZBKZCLZBPZANZOFGHCUBVDUSUNUQGPZFNUOVACLZBPZFN
-      USVDVEVGFUQVFGBBUOUPCBUOQEBUPQRVFGSUPVAUOCUDUETVEURFUQGHUQHSUFTVGVCFAVFAB
-      AUOVACAUOQDAVAQRUGVCFSFAMVFVBBUOUTVACUHUIUJUKULUM $.
+      ( vw vv vu wfun cv wbr wa weq wal wmo nfcv nfbr nfv breq2 albii wi dffun2
+      wrel cbvmo mo4 nfmo breq1 mobidv cbval 3bitr3ri anbi2i bitr4i ) CICUCZFJZ
+      GJZCKZUNHJZCKZLGHMUAHNGNZFNZLUMAJZBJZCKZBOZANZLFGHCUBVEUTUMUPGOZFNUNVBCKZ
+      BOZFNUTVEVFVHFUPVGGBBUNUOCBUNPEBUOPQVGGRUOVBUNCSUDTVFUSFUPURGHUOUQUNCSUET
+      VHVDFAVGABAUNVBCAUNPDAVBPQUFVDFRFAMVGVCBUNVAVBCUGUHUIUJUKUL $.
   $}
 
   ${
