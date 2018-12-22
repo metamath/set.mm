@@ -42124,13 +42124,6 @@ $)
       CNZVQHVOGVQUSBCUDUEUSVRVQBCADURUFUGVLVFBCUHOVNVPBVNVGALZCLVPVMVSCVMVEAMZV
       FTVSVLVTVFVKVEAVJVCVDVBVADBPAPUIUJUKUMVEVFAUNUOQVGCARSQVHBAROUPS $.
 
-    $( Alternate definition of function.  (Contributed by NM, 29-Dec-1996.) $)
-    dffun3 $p |- ( Fun A <-> ( Rel A /\
-                 A. x E. z A. y ( x A y -> y = z ) ) ) $=
-      ( wfun wrel cv wbr wa weq wi wal wex dffun2 wmo breq2 mo4 nfv mo2 bitr3i
-      albii anbi2i bitri ) DEDFZAGZBGZDHZUECGZDHZIBCJZKCLBLZALZIUDUGUJKBLCMZALZ
-      IABCDNULUNUDUKUMAUKUGBOUMUGUIBCUFUHUEDPQUGBCUGCRSTUAUBUC $.
-
     $( Alternate definition of a function.  Definition 6.4(4) of
        [TakeutiZaring] p. 24.  (Contributed by NM, 29-Dec-1996.) $)
     dffun4 $p |- ( Fun A <-> ( Rel A /\
@@ -42140,13 +42133,6 @@ $)
       wi albii anbi2i bitri ) DEDFZAGZBGZDHZUDCGZDHZIZBCJZSZCKZBKAKZIUCUDUELDMZ
       UDUGLDMZIZUJSZCKZBKAKZIABCDNUMUSUCULURABUKUQCUIUPUJUFUNUHUOUDUEDOUDUGDOPQ
       TRUAUB $.
-
-    $( Alternate definition of function.  (Contributed by NM, 29-Dec-1996.) $)
-    dffun5 $p |- ( Fun A <-> ( Rel A /\
-                 A. x E. z A. y ( <. x , y >. e. A -> y = z ) ) ) $=
-      ( wfun wrel cv wbr weq wi wal wex wa wcel dffun3 df-br imbi1i albii exbii
-      cop anbi2i bitri ) DEDFZAGZBGZDHZBCIZJZBKZCLZAKZMUCUDUETDNZUGJZBKZCLZAKZM
-      ABCDOUKUPUCUJUOAUIUNCUHUMBUFULUGUDUEDPQRSRUAUB $.
   $}
 
   ${
