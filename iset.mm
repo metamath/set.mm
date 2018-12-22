@@ -41953,22 +41953,10 @@ $)
   ${
     $d A y z $.  $d x y z $.  $d ph z $.
     $( Class substitution within a description binder.  (Contributed by Scott
-       Fenton, 6-Oct-2017.)  (Revised by NM, 23-Aug-2018.) $)
-    csbiota $p |- [_ A / x ]_ ( iota y ph ) = ( iota y [. A / x ]. ph ) $=
-      ( vz cvv wcel cio csb wsbc wceq cv wsb csbeq1 dfsbcq2 iotabidv eqeq12d wn
-      c0 con3i vex nfs1v nfiota weq sbequ12 csbief vtoclg csbprc wex sbcex euex
-      weu nexdv iotanul 3syl eqtr4d pm2.61i ) DFGZBDACHZIZABDJZCHZKZBELZUSIZABE
-      MZCHZKVCEDFVDDKZVEUTVGVBBVDDUSNVHVFVACABEDOPQBVDUSVGEUAVFBCABEUBUCBEUDAVF
-      CABEUEPUFUGURRZUTSVBBDUSUHVIVACUIZRVACULZRVBSKVIVACVAURABDUJTUMVKVJVACUKT
-      VACUNUOUPUQ $.
-
-    $( Class substitution within a description binder.  (Contributed by Scott
-       Fenton, 6-Oct-2017.)  Obsolete as of 23-Aug-2018.  Use ~ csbiota
-       instead.  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    csbiotagOLD $p |- ( A e. V ->
+       Fenton, 6-Oct-2017.) $)
+    csbiotag $p |- ( A e. V ->
         [_ A / x ]_ ( iota y ph ) = ( iota y [. A / x ]. ph ) ) $=
-      ( vz cv cio csb wsb wceq csbeq1 dfsbcq2 iotabidv eqeq12d vex nfs1v nfiota
+      ( vz cv cio csb wsb wceq csbeq1 dfsbcq2 iotabidv eqeq12d vex nfs1v nfiotaxy
       wsbc weq sbequ12 csbief vtoclg ) BFGZACHZIZABFJZCHZKBDUEIZABDSZCHZKFDEUDD
       KZUFUIUHUKBUDDUELULUGUJCABFDMNOBUDUEUHFPUGBCABFQRBFTAUGCABFUANUBUC $.
   $}
