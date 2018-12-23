@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Dec-2018
+$( iset.mm - Version of 23-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -8837,6 +8837,12 @@ $)
       ( w3a wi 3ad2ant1 3ad2ant2 3ad2ant3 3jaod ) ADFKBCEGADBCLFHMDAECLFINFAGCL
       DJOP $.
   $}
+
+  $( Triple disjunction implies negated triple conjunction.  (Contributed by
+     Jim Kingdon, 23-Dec-2018.) $)
+  3ianorr $p |- ( ( -. ph \/ -. ps \/ -. ch ) -> -. ( ph /\ ps /\ ch ) ) $=
+    ( wn w3a simp1 con3i simp2 simp3 3jaoi ) ADABCEZDBDCDKAABCFGKBABC
+    HGKCABCIGJ $.
 
   ${
     syl3an9b.1 $e |- ( ph -> ( ps <-> ch ) ) $.
@@ -18609,6 +18615,10 @@ $(
         Negated equality
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
+
+  $( Negation of inequality.  (Contributed by Jim Kingdon, 23-Dec-2018.) $)
+  nner $p |- ( A = B -> -. A =/= B ) $=
+    ( wne wceq wn df-ne biimpi con2i ) ABCZABDZIJEABFGH $.
 
   $( Negation of inequality where equality is decidable.  (Contributed by Jim
      Kingdon, 15-May-2018.) $)
