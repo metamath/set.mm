@@ -42042,71 +42042,57 @@ $)
     $d x A $.  $d x F $.
     $( Define predicate that determines if some class ` A ` is a function.
        Definition 10.1 of [Quine] p. 65.  For example, the expression
-       ` Fun cos ` is true once we define cosine ( ~ df-cos ).  This is not the
-       same as defining a specific function's mapping, which is typically done
-       using the format of ~ cmpt with the maps-to notation (see ~ df-mpt and
-       ~ df-mpt2 ).  Contrast this predicate with the predicates to determine
-       if some class is a function with a given domain ( ~ df-fn ), a function
-       with a given domain and codomain ( ~ df-f ), a one-to-one function
-       ( ~ df-f1 ), an onto function ( ~ df-fo ), or a one-to-one onto function
-       ( ~ df-f1o ).  For alternate definitions, see ~ dffun2 , ~ dffun3 ,
-       ~ dffun4 , ~ dffun5 , ~ dffun6 , ~ dffun7 , ~ dffun8 , and ~ dffun9 .
-       (Contributed by NM, 1-Aug-1994.) $)
+       ` Fun _I ` is true ( ~ funi ).  This is not the same as defining a
+       specific function's mapping, which is typically done using the format of
+       ~ cmpt with the maps-to notation (see ~ df-mpt ).  Contrast this
+       predicate with the predicates to determine if some class is a function
+       with a given domain ( ~ df-fn ), a function with a given domain and
+       codomain ( ~ df-f ), a one-to-one function ( ~ df-f1 ), an onto function
+       ( ~ df-fo ), or a one-to-one onto function ( ~ df-f1o ).  For alternate
+       definitions, see ~ dffun2 , ~ dffun4 , ~ dffun6 , ~ dffun7 , ~ dffun8 ,
+       and ~ dffun9 .  (Contributed by NM, 1-Aug-1994.) $)
     df-fun $a |- ( Fun A <-> ( Rel A /\ ( A o. `' A ) C_ _I ) ) $.
 
     $( Define a function with domain.  Definition 6.15(1) of [TakeutiZaring]
-       p. 27.  For alternate definitions, see ~ dffn2 , ~ dffn3 , ~ dffn4 , and
-       ~ dffn5 .  (Contributed by NM, 1-Aug-1994.) $)
+       p. 27.  (Contributed by NM, 1-Aug-1994.) $)
     df-fn $a |- ( A Fn B <-> ( Fun A /\ dom A = B ) ) $.
 
     $( Define a function (mapping) with domain and codomain.  Definition
-       6.15(3) of [TakeutiZaring] p. 27.  For alternate definitions, see
-       ~ dff2 , ~ dff3 , and ~ dff4 .  (Contributed by NM, 1-Aug-1994.) $)
+       6.15(3) of [TakeutiZaring] p. 27.  (Contributed by NM, 1-Aug-1994.) $)
     df-f $a |- ( F : A --> B <-> ( F Fn A /\ ran F C_ B ) ) $.
 
-    $( Define a one-to-one function.  For equivalent definitions see ~ dff12
-       and ~ dff13 .  Compare Definition 6.15(5) of [TakeutiZaring] p. 27.  We
-       use their notation ("1-1" above the arrow).  (Contributed by NM,
-       1-Aug-1994.) $)
+    $( Define a one-to-one function.  Compare Definition 6.15(5) of
+       [TakeutiZaring] p. 27.  We use their notation ("1-1" above the arrow).
+       (Contributed by NM, 1-Aug-1994.) $)
     df-f1 $a |- ( F : A -1-1-> B <-> ( F : A --> B /\ Fun `' F ) ) $.
 
     $( Define an onto function.  Definition 6.15(4) of [TakeutiZaring] p. 27.
-       We use their notation ("onto" under the arrow).  For alternate
-       definitions, see ~ dffo2 , ~ dffo3 , ~ dffo4 , and ~ dffo5 .
-       (Contributed by NM, 1-Aug-1994.) $)
+       We use their notation ("onto" under the arrow).  (Contributed by NM,
+       1-Aug-1994.) $)
     df-fo $a |- ( F : A -onto-> B <-> ( F Fn A /\ ran F = B ) ) $.
 
-    $( Define a one-to-one onto function.  For equivalent definitions see
-       ~ dff1o2 , ~ dff1o3 , ~ dff1o4 , and ~ dff1o5 .  Compare Definition
-       6.15(6) of [TakeutiZaring] p. 27.  We use their notation ("1-1" above
-       the arrow and "onto" below the arrow).  (Contributed by NM,
-       1-Aug-1994.) $)
+    $( Define a one-to-one onto function.  Compare Definition 6.15(6) of
+       [TakeutiZaring] p. 27.  We use their notation ("1-1" above the arrow and
+       "onto" below the arrow).  (Contributed by NM, 1-Aug-1994.) $)
     df-f1o $a |- ( F : A -1-1-onto-> B <->
                 ( F : A -1-1-> B /\ F : A -onto-> B ) ) $.
 
     $( Define the value of a function, ` ( F `` A ) ` , also known as function
-       application.  For example, ` ( cos `` 0 ) = 1 ` (we prove this in ~ cos0
-       after we define cosine in ~ df-cos ).  Typically, function ` F ` is
-       defined using maps-to notation (see ~ df-mpt and ~ df-mpt2 ), but this
-       is not required.  For example,
-       ` F = { <. 2 , 6 >. , <. 3 , 9 >. } -> ( F `` 3 ) = 9 ` ( ~ ex-fv ).
-       Note that ~ df-ov will define two-argument functions using ordered pairs
-       as ` ( A F B ) = ( F `` <. A , B >. ) ` .  This particular definition is
+       application.  For example, ` ( _I `` (/) ) = (/) ` .  Typically,
+       function ` F ` is defined using maps-to notation (see ~ df-mpt ), but
+       this is not required.  For example, F = { ` <. ` 2 , 6 ` >. ` , ` <. `
+       3 , 9 ` >. ` } -> ( F ` `` ` 3 ) = 9 .  We will later define
+       two-argument functions using ordered pairs as
+       ` ( A F B ) = ( F `` <. A , B >. ) ` .  This particular definition is
        quite convenient: it can be applied to any class and evaluates to the
-       empty set when it is not meaningful (as shown by ~ ndmfv and ~ fvprc ).
-       The left apostrophe notation originated with Peano and was adopted in
-       Definition *30.01 of [WhiteheadRussell] p. 235, Definition 10.11 of
-       [Quine] p. 68, and Definition 6.11 of [TakeutiZaring] p. 26.  It means
-       the same thing as the more familiar ` F ( A ) ` notation for a
-       function's value at ` A ` , i.e.  " ` F ` of ` A ` ," but without
-       context-dependent notational ambiguity.  Alternate definitions are
-       ~ dffv2 , ~ dffv3 , ~ fv2 , and ~ fv3 (the latter two previously
-       required ` A ` to be a set.)  Restricted equivalents that require ` F `
-       to be a function are shown in ~ funfv and ~ funfv2 .  For the familiar
-       definition of function value in terms of ordered pair membership, see
-       ~ funopfvb .  (Contributed by NM, 1-Aug-1994.)  Revised to use
-       ` iota ` .  Original version is now theorem ~ dffv4 .  (Revised by Scott
-       Fenton, 6-Oct-2017.) $)
+       empty set when it is not meaningful.  The left apostrophe notation
+       originated with Peano and was adopted in Definition *30.01 of
+       [WhiteheadRussell] p. 235, Definition 10.11 of [Quine] p. 68, and
+       Definition 6.11 of [TakeutiZaring] p. 26.  It means the same thing as
+       the more familiar ` F ( A ) ` notation for a function's value at ` A ` ,
+       i.e.  " ` F ` of ` A ` ," but without context-dependent notational
+       ambiguity.  (Contributed by NM, 1-Aug-1994.)  Revised to use ` iota ` .
+       (Revised by Scott Fenton, 6-Oct-2017.) $)
     df-fv $a |- ( F ` A ) = ( iota x A F x ) $.
   $}
 
