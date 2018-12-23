@@ -41850,6 +41850,20 @@ $)
   $}
 
   ${
+    $d x y A $.  $d y ph $.
+    $( Value of iota based on a proposition which holds only for values which
+       are subsets of a given class.  (Contributed by Mario Carneiro and Jim
+       Kingdon, 21-Dec-2018.) $)
+    iotass $p |- ( A. x ( ph -> x C_ A ) -> ( iota x ph ) C_ A ) $=
+      ( vy cv wss wal cio cab csn wceq cuni df-iota cpw unieq vex df-pw sspwuni
+      wi sylib unisn syl6eq sseq2i ss2ab bitri biimpri sseq1 syl2anr ex ss2abdv
+      biimpa syl6sseqr syl5eqss ) ABECFZSBGZABHABIZDEZJZKZDIZLZCABDMUOUTCNZFVAC
+      FUOUTUQCFZDIVBUOUSVCDUOUSVCUSUPLZUQKZVDCFZVCUOUSVDURLUQUPUROUQDPUAUBUOUPV
+      BFZVFVGUOVGUPUNBIZFUOVBVHUPBCQUCAUNBUDUEUFUPCRTVEVFVCVDUQCUGUKUHUIUJDCQUL
+      UTCRTUM $.
+  $}
+
+  ${
     $d ph z $.  $d ps z $.  $d x y z $.
     $( Theorem *14.22 in [WhiteheadRussell] p. 190.  (Contributed by Andrew
        Salmon, 12-Jul-2011.) $)
