@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-Dec-2018
+$( iset.mm - Version of 24-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -42812,12 +42812,26 @@ $)
       MCAYETWRXJEWMCBYETVTWAWBEWMCWFYETWMWHWIVRWBWC $.
   $}
 
-  $( The image of an intersection is the intersection of images.  (Contributed
-     by Paul Chapman, 11-Apr-2009.) $)
-  imain $p |- ( Fun `' F ->
-                ( F " ( A i^i B ) ) = ( ( F " A ) i^i ( F " B ) ) ) $=
-    ( ccnv wfun cdif cima cin imadif difeq2d eqtrd dfin4 imaeq2i 3eqtr4g ) CDEZ
-    CAABFZFZGZCAGZSCBGZFZFZCABHZGSTHORSCPGZFUBAPCIOUDUASABCIJKUCQCABLMSTLN $.
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z F $.
+    $( The image of an intersection is the intersection of images.
+       (Contributed by Paul Chapman, 11-Apr-2009.) $)
+    imain $p |- ( Fun `' F ->
+                  ( F " ( A i^i B ) ) = ( ( F " A ) i^i ( F " B ) ) ) $=
+      ( vx vy vz cin cima cv wbr wrex cab wa wcel wex df-rex anbi12i dfima2 wal
+      sylbi ccnv wfun wss elin anbi1i anandir bitri exbii sylibr ss2abi ineq12i
+      19.40 inab eqtri 3sstr4i a1i eeanv simprll weq ax-ia2 anim12i wi funcnveq
+      biimpi 19.21bi 19.21bbi imp sylan2 simprrl eqeltrd jca simprlr ex exlimdv
+      eximdv syl5bir 3imtr4g ss2abdv 3sstr4g eqssd ) CUAUBZCABGZHZCAHZCBHZGZWCW
+      FUCWADIZEIZCJZDWBKZELZWIDAKZWIDBKZMZELZWCWFWJWNEWJWGANZWIMZDOZWGBNZWIMZDO
+      ZMZWNWJWGWBNZWIMZDOZXBWIDWBPZXEWQWTMZDOXBXDXGDXDWPWSMZWIMXGXCXHWIWGABUDZU
+      EWPWSWIUFUGUHWQWTDULTTWLWRWMXAWIDAPZWIDBPQUIUJDECWBRZWFWLELZWMELZGWOWDXLW
+      EXMDECARZDECBRUKWLWMEUMUNUOUPWAWLFIZWHCJZFBKZMZELZWKWFWCWAXRWJEWAWRXOBNZX
+      PMZFOZMZXEXRWJYCWQYAMZFOZDOWAXEWQYADFUQWAYEXDDWAYDXDFWAYDXDWAYDMZXCWIYFXH
+      XCYFWPWSWAWPWIYAURYFWGXOBYDWAWIXPMZDFUSZWQWIYAXPWPWIUTXTXPUTVAWAYGYHWAYGY
+      HVBZEFWAYIFSESZDWAYJDSDEFCVCVDVEVFVGVHWAWQXTXPVIVJVKXIUIWAWPWIYAVLVKVMVNV
+      OVPWLWRXQYBXJXPFBPQXFVQVRWFXLXQELZGXSWDXLWEYKXNFECBRUKWLXQEUMUNXKVSVT $.
+  $}
 
   ${
     $d w B $.  $d x y z w A $.
