@@ -43306,16 +43306,6 @@ $)
       $.
   $}
 
-  ${
-    elimf.1 $e |- G : A --> B $.
-    $( Eliminate a mapping hypothesis for the weak deduction theorem ~ dedth ,
-       when a special case ` G : A --> B ` is provable, in order to convert
-       ` F : A --> B ` from a hypothesis to an antecedent.  (Contributed by NM,
-       24-Aug-2006.) $)
-    elimf $p |- if ( F : A --> B , F , G ) : A --> B $=
-      ( wf cif feq1 elimhyp ) ABCFZABJCDGZFABDFCDABCKHABDKHEI $.
-  $}
-
   $( A mapping is a function.  (Contributed by NM, 2-Aug-1994.) $)
   ffn $p |- ( F : A --> B -> F Fn A ) $=
     ( wf wfn crn wss df-f simplbi ) ABCDCAECFBGABCHI $.
@@ -44530,11 +44520,6 @@ $)
     fvex $p |- ( F ` A ) e. _V $=
       ( vx cfv cv wbr cio cvv df-fv iotaex eqeltri ) ABDACEBFZCGHCABILCJK $.
   $}
-
-  $( Move a conditional outside of a function.  (Contributed by Jeff Madsen,
-     2-Sep-2009.) $)
-  fvif $p |- ( F ` if ( ph , A , B ) ) = if ( ph , ( F ` A ) , ( F ` B ) ) $=
-    ( cif cfv fveq2 ifsb ) ABCABCEZDFBDFCDFIBDGICDGH $.
 
   ${
     $d x y z F $.  $d x y z A $.
