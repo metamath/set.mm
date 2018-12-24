@@ -42798,9 +42798,8 @@ $)
   ${
     zfrep5.1 $e |- B e. _V $.
     $( The image of a set under any function is also a set.  Equivalent of
-       Axiom of Replacement ~ ax-rep .  Axiom 39(vi) of [Quine] p. 284.
-       Compare Exercise 9 of [TakeutiZaring] p. 29.  (Contributed by NM,
-       17-Nov-2002.) $)
+       Axiom of Replacement.  Axiom 39(vi) of [Quine] p. 284.  Compare Exercise
+       9 of [TakeutiZaring] p. 29.  (Contributed by NM, 17-Nov-2002.) $)
     funimaex $p |- ( Fun A -> ( A " B ) e. _V ) $=
       ( wfun cvv wcel cima funimaexg mpan2 ) ADBEFABGEFCABEHI $.
   $}
@@ -43088,8 +43087,7 @@ $)
     ADZABEZFGZHCIZBEZFGZCBJFGQUBSQUARFQTABACKLMNCBOP $.
 
   $( Images under a function never map nonempty sets to empty sets.
-     _EDITORIAL_: usable in ~ fnwe2lem2 .  (Contributed by Stefan O'Rear,
-     21-Jan-2015.) $)
+     (Contributed by Stefan O'Rear, 21-Jan-2015.) $)
   fnimaeq0 $p |- ( ( F Fn A /\ B C_ A ) ->
       ( ( F " B ) = (/) <-> B = (/) ) ) $=
     ( cima c0 wceq cdm cin wfn wa imadisj incom fndm sseq2d biimpar df-ss sylib
@@ -43372,9 +43370,9 @@ $)
     frn sstrd ) ABCDZCCEZCFZGZABGZTCHCUCIABCJCKLTUAAIZUBBIUCUDITUAAMUEABCNUAAOL
     ABCRUAAUBBPQS $.
 
-  $( A function with bounded domain and range is a set.  This version of ~ fex
-     is proven without the Axiom of Replacement.  (Contributed by Mario
-     Carneiro, 24-Jun-2015.) $)
+  $( A function with bounded domain and range is a set.  This version is proven
+     without the Axiom of Replacement.  (Contributed by Mario Carneiro,
+     24-Jun-2015.) $)
   fex2 $p |- ( ( F : A --> B /\ A e. V /\ B e. W ) -> F e. _V ) $=
     ( wf wcel w3a cxp cvv xpexg 3adant1 wss fssxp 3ad2ant1 ssexd ) ABCFZADGZBEG
     ZHCABIZJRSTJGQABDEKLQRCTMSABCNOP $.
@@ -45315,11 +45313,9 @@ $)
     fvmptex.1 $e |- F = ( x e. A |-> B ) $.
     fvmptex.2 $e |- G = ( x e. A |-> ( _I ` B ) ) $.
     $( Express a function ` F ` whose value ` B ` may not always be a set in
-       terms of another function ` G ` for which sethood is guaranteed.  (Note
-       that ` ( _I `` B ) ` is just shorthand for
-       ` if ( B e. _V , B , (/) ) ` , and it is always a set by ~ fvex .)  Note
-       also that these functions are not the same; wherever ` B ( C ) ` is not
-       a set, ` C ` is not in the domain of ` F ` (so it evaluates to the empty
+       terms of another function ` G ` for which sethood is guaranteed.  Note
+       that these functions are not the same; wherever ` B ( C ) ` is not a
+       set, ` C ` is not in the domain of ` F ` (so it evaluates to the empty
        set), but ` C ` is in the domain of ` G ` , and ` G ( C ) ` is defined
        to be the empty set.  (Contributed by Mario Carneiro, 14-Jul-2013.)
        (Revised by Mario Carneiro, 23-Apr-2014.) $)
@@ -46299,10 +46295,10 @@ $)
     fmptco.3 $e |- ( ph -> G = ( y e. B |-> S ) ) $.
     fmptco.4 $e |- ( y = R -> S = T ) $.
     $( Composition of two functions expressed as ordered-pair class
-       abstractions.  If ` F ` has the equation ` ( x + 2 ) ` and ` G ` the
-       equation ` ( 3 * z ) ` then ` ( G o. F ) ` has the equation
-       ` ( 3 * ( x + 2 ) ) ` .  (Contributed by FL, 21-Jun-2012.)  (Revised by
-       Mario Carneiro, 24-Jul-2014.) $)
+       abstractions.  If ` F ` has the equation ( x + 2 ) and ` G ` the
+       equation ( 3 * z ) then ` ( G o. F ) ` has the equation ( 3 * ( x +
+       2 ) ) .  (Contributed by FL, 21-Jun-2012.)  (Revised by Mario Carneiro,
+       24-Jul-2014.) $)
     fmptco $p |- ( ph -> ( G o. F ) = ( x e. A |-> T ) ) $=
       ( vu cv wbr wa wcel wceq vz vw vv ccom cmpt relco wfun wrel funmpt funrel
       ax-mp wex csb cop cfv eqid fmptd feq1d mpbird ffun syl funbrfv imp eqcomd
