@@ -42610,7 +42610,22 @@ $)
       eubii 3bitr4i ) ADZBDZCEZAFZBCGZHUNAIZUOSZBUPHCJKUNACLZMZBUPHUOURBUPUMUPN
       ZUQUOVAUQUQBUPABCOPQUAUBABCUCUTURBUPUTULUSNZUNSZARUNARURUNAUSUDUNVCAUNVBU
       LUMCATBTUEUFUJUNAUGUHUIUK $.
+  $}
 
+  ${
+    $d x y z A $.
+    $( Another way of expressing that a class is single-rooted.  Counterpart to
+       ~ dffun2 .  (Contributed by Jim Kingdon, 24-Dec-2018.) $)
+    funcnveq $p |- ( Fun `' A <->
+        A. x A. y A. z ( ( x A y /\ z A y ) -> x = z ) ) $=
+      ( ccnv wfun cv wbr wa weq wi wal wrel relcnv dffun2 mpbiran alcom anbi12i
+      vex brcnv imbi1i 2albii albii 3bitri ) DEZFZBGZAGZUEHZUGCGZUEHZIZACJZKZCL
+      ZALBLZUOBLZALUHUGDHZUJUGDHZIZUMKZCLBLZALUFUEMUPDNBACUEOPUOBAQUQVBAUNVABCU
+      LUTUMUIURUKUSUGUHDBSZASTUGUJDVCCSTRUAUBUCUD $.
+  $}
+
+  ${
+    $d f g x y z w v A $.  $d x y B $.  $d x y R $.
     $( The double converse of a class is a function iff the class is
        single-valued.  Each side is equivalent to Definition 6.4(2) of
        [TakeutiZaring] p. 23, who use the notation "Un(A)" for single-valued.
