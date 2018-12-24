@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Dec-2018
+$( iset.mm - Version of 23-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -8837,6 +8837,12 @@ $)
       ( w3a wi 3ad2ant1 3ad2ant2 3ad2ant3 3jaod ) ADFKBCEGADBCLFHMDAECLFINFAGCL
       DJOP $.
   $}
+
+  $( Triple disjunction implies negated triple conjunction.  (Contributed by
+     Jim Kingdon, 23-Dec-2018.) $)
+  3ianorr $p |- ( ( -. ph \/ -. ps \/ -. ch ) -> -. ( ph /\ ps /\ ch ) ) $=
+    ( wn w3a simp1 con3i simp2 simp3 3jaoi ) ADABCEZDBDCDKAABCFGKBABC
+    HGKCABCIGJ $.
 
   ${
     syl3an9b.1 $e |- ( ph -> ( ps <-> ch ) ) $.
@@ -18609,6 +18615,10 @@ $(
         Negated equality
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
+
+  $( Negation of inequality.  (Contributed by Jim Kingdon, 23-Dec-2018.) $)
+  nner $p |- ( A = B -> -. A =/= B ) $=
+    ( wne wceq wn df-ne biimpi con2i ) ABCZABDZIJEABFGH $.
 
   $( Negation of inequality where equality is decidable.  (Contributed by Jim
      Kingdon, 15-May-2018.) $)
@@ -41976,6 +41986,581 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                                 Functions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c : $. $( Colon $)
+  $c Fun $. $( Function predicate $)
+  $c Fn $. $( Function connective $)
+  $c --> $. $( Domain-codomain connective $)
+  $c -1-1-> $. $( 'One-to-one' domain-codomain connective $)
+  $c -onto-> $. $( 'Onto' domain-codomain connective $)
+  $c -1-1-onto-> $. $( 'One-to-one' and 'onto' domain-codomain connective $)
+  $c ` $. $( Left apostrophe (function value symbol) $)
+  $c Isom $. $( Isomorphism $)
+
+  $( Extend the definition of a wff to include the function predicate.  (Read:
+     ` A ` is a function.) $)
+  wfun $a wff Fun A $.
+
+  $( Extend the definition of a wff to include the function predicate with a
+     domain.  (Read: ` A ` is a function on ` B ` .) $)
+  wfn $a wff A Fn B $.
+
+  $( Extend the definition of a wff to include the function predicate with
+     domain and codomain.  (Read: ` F ` maps ` A ` into ` B ` .) $)
+  wf $a wff F : A --> B $.
+
+  $( Extend the definition of a wff to include one-to-one functions.  (Read:
+     ` F ` maps ` A ` one-to-one into ` B ` .)  The notation ("1-1" above the
+     arrow) is from Definition 6.15(5) of [TakeutiZaring] p. 27. $)
+  wf1 $a wff F : A -1-1-> B $.
+
+  $( Extend the definition of a wff to include onto functions.  (Read: ` F `
+     maps ` A ` onto ` B ` .)  The notation ("onto" below the arrow) is from
+     Definition 6.15(4) of [TakeutiZaring] p. 27. $)
+  wfo $a wff F : A -onto-> B $.
+
+  $( Extend the definition of a wff to include one-to-one onto functions.
+     (Read: ` F ` maps ` A ` one-to-one onto ` B ` .)  The notation ("1-1"
+     above the arrow and "onto" below the arrow) is from Definition 6.15(6) of
+     [TakeutiZaring] p. 27. $)
+  wf1o $a wff F : A -1-1-onto-> B $.
+
+  $( Extend the definition of a class to include the value of a function.
+     (Read:  The value of ` F ` at ` A ` , or " ` F ` of ` A ` .") $)
+  cfv $a class ( F ` A ) $.
+
+  $( Extend the definition of a wff to include the isomorphism property.
+     (Read: ` H ` is an ` R ` , ` S ` isomorphism of ` A ` onto ` B ` .) $)
+  wiso $a wff H Isom R , S ( A , B ) $.
+
+  ${
+    $d x A $.  $d x F $.
+    $( Define predicate that determines if some class ` A ` is a function.
+       Definition 10.1 of [Quine] p. 65.  For example, the expression
+       ` Fun _I ` is true ( ~ funi ).  This is not the same as defining a
+       specific function's mapping, which is typically done using the format of
+       ~ cmpt with the maps-to notation (see ~ df-mpt ).  Contrast this
+       predicate with the predicates to determine if some class is a function
+       with a given domain ( ~ df-fn ), a function with a given domain and
+       codomain ( ~ df-f ), a one-to-one function ( ~ df-f1 ), an onto function
+       ( ~ df-fo ), or a one-to-one onto function ( ~ df-f1o ).  For alternate
+       definitions, see ~ dffun2 , ~ dffun4 , ~ dffun6 , ~ dffun7 , ~ dffun8 ,
+       and ~ dffun9 .  (Contributed by NM, 1-Aug-1994.) $)
+    df-fun $a |- ( Fun A <-> ( Rel A /\ ( A o. `' A ) C_ _I ) ) $.
+
+    $( Define a function with domain.  Definition 6.15(1) of [TakeutiZaring]
+       p. 27.  (Contributed by NM, 1-Aug-1994.) $)
+    df-fn $a |- ( A Fn B <-> ( Fun A /\ dom A = B ) ) $.
+
+    $( Define a function (mapping) with domain and codomain.  Definition
+       6.15(3) of [TakeutiZaring] p. 27.  (Contributed by NM, 1-Aug-1994.) $)
+    df-f $a |- ( F : A --> B <-> ( F Fn A /\ ran F C_ B ) ) $.
+
+    $( Define a one-to-one function.  Compare Definition 6.15(5) of
+       [TakeutiZaring] p. 27.  We use their notation ("1-1" above the arrow).
+       (Contributed by NM, 1-Aug-1994.) $)
+    df-f1 $a |- ( F : A -1-1-> B <-> ( F : A --> B /\ Fun `' F ) ) $.
+
+    $( Define an onto function.  Definition 6.15(4) of [TakeutiZaring] p. 27.
+       We use their notation ("onto" under the arrow).  (Contributed by NM,
+       1-Aug-1994.) $)
+    df-fo $a |- ( F : A -onto-> B <-> ( F Fn A /\ ran F = B ) ) $.
+
+    $( Define a one-to-one onto function.  Compare Definition 6.15(6) of
+       [TakeutiZaring] p. 27.  We use their notation ("1-1" above the arrow and
+       "onto" below the arrow).  (Contributed by NM, 1-Aug-1994.) $)
+    df-f1o $a |- ( F : A -1-1-onto-> B <->
+                ( F : A -1-1-> B /\ F : A -onto-> B ) ) $.
+
+    $( Define the value of a function, ` ( F `` A ) ` , also known as function
+       application.  For example, ` ( _I `` (/) ) = (/) ` .  Typically,
+       function ` F ` is defined using maps-to notation (see ~ df-mpt ), but
+       this is not required.  For example, F = { ` <. ` 2 , 6 ` >. ` , ` <. `
+       3 , 9 ` >. ` } -> ( F ` `` ` 3 ) = 9 .  We will later define
+       two-argument functions using ordered pairs as
+       ` ( A F B ) = ( F `` <. A , B >. ) ` .  This particular definition is
+       quite convenient: it can be applied to any class and evaluates to the
+       empty set when it is not meaningful.  The left apostrophe notation
+       originated with Peano and was adopted in Definition *30.01 of
+       [WhiteheadRussell] p. 235, Definition 10.11 of [Quine] p. 68, and
+       Definition 6.11 of [TakeutiZaring] p. 26.  It means the same thing as
+       the more familiar ` F ( A ) ` notation for a function's value at ` A ` ,
+       i.e.  " ` F ` of ` A ` ," but without context-dependent notational
+       ambiguity.  (Contributed by NM, 1-Aug-1994.)  Revised to use ` iota ` .
+       (Revised by Scott Fenton, 6-Oct-2017.) $)
+    df-fv $a |- ( F ` A ) = ( iota x A F x ) $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y R $.  $d x y S $.  $d x y H $.
+    $( Define the isomorphism predicate.  We read this as " ` H ` is an ` R ` ,
+       ` S ` isomorphism of ` A ` onto ` B ` ."  Normally, ` R ` and ` S ` are
+       ordering relations on ` A ` and ` B ` respectively.  Definition 6.28 of
+       [TakeutiZaring] p. 32, whose notation is the same as ours except that
+       ` R ` and ` S ` are subscripts.  (Contributed by NM, 4-Mar-1997.) $)
+    df-isom $a |- ( H Isom R , S ( A , B ) <-> ( H : A -1-1-onto-> B /\
+                 A. x e. A A. y e. A ( x R y <-> ( H ` x ) S ( H ` y ) ) ) ) $.
+  $}
+
+  ${
+    $d x y z A $.
+    $( Alternate definition of a function.  (Contributed by NM,
+       29-Dec-1996.) $)
+    dffun2 $p |- ( Fun A <-> ( Rel A /\
+                 A. x A. y A. z ( ( x A y /\ x A z ) -> y = z ) ) ) $=
+      ( wfun wrel cid wss wa cv wbr wal wex copab 3bitri vex albii alcom bitri
+      wi ccnv ccom df-fun df-id sseq2i df-co sseq1i ssopab2b brcnv anbi1i exbii
+      weq imbi1i 19.23v bitr4i anbi2i ) DEDFZDDUAZUBZGHZIUQAJZBJZDKZVACJDKZIZBC
+      ULZTZCLZBLALZIDUCUTVIUQUTVBVAURKZVDIZAMZVFTZCLZBLZVHALZBLVIUTUSVFBCNZHVLB
+      CNZVQHVOGVQUSBCUDUEUSVRVQBCADURUFUGVLVFBCUHOVNVPBVNVGALZCLVPVMVSCVMVEAMZV
+      FTVSVLVTVFVKVEAVJVCVDVBVADBPAPUIUJUKUMVEVFAUNUOQVGCARSQVHBAROUPS $.
+
+    $( Alternate definition of a function.  Definition 6.4(4) of
+       [TakeutiZaring] p. 24.  (Contributed by NM, 29-Dec-1996.) $)
+    dffun4 $p |- ( Fun A <-> ( Rel A /\
+                 A. x A. y A. z ( ( <. x , y >. e. A /\ <. x , z >. e. A )
+                 -> y = z ) ) ) $=
+      ( wfun wrel cv wbr wa weq wal cop wcel dffun2 df-br anbi12i imbi1i 2albii
+      wi albii anbi2i bitri ) DEDFZAGZBGZDHZUDCGZDHZIZBCJZSZCKZBKAKZIUCUDUELDMZ
+      UDUGLDMZIZUJSZCKZBKAKZIABCDNUMUSUCULURABUKUQCUIUPUJUFUNUHUOUDUEDOUDUGDOPQ
+      TRUAUB $.
+  $}
+
+  ${
+    $d x y w v u $.  $d A w v u $.
+    dffun6f.1 $e |- F/_ x A $.
+    dffun6f.2 $e |- F/_ y A $.
+    $( Definition of function, using bound-variable hypotheses instead of
+       distinct variable conditions.  (Contributed by NM, 9-Mar-1995.)
+       (Revised by Mario Carneiro, 15-Oct-2016.) $)
+    dffun6f $p |- ( Fun A <-> ( Rel A /\ A. x E* y x A y ) ) $=
+      ( vw vv vu wfun cv wbr wa weq wal wmo nfcv nfbr nfv breq2 albii wi dffun2
+      wrel cbvmo mo4 nfmo breq1 mobidv cbval 3bitr3ri anbi2i bitr4i ) CICUCZFJZ
+      GJZCKZUNHJZCKZLGHMUAHNGNZFNZLUMAJZBJZCKZBOZANZLFGHCUBVEUTUMUPGOZFNUNVBCKZ
+      BOZFNUTVEVFVHFUPVGGBBUNUOCBUNPEBUOPQVGGRUOVBUNCSUDTVFUSFUPURGHUOUQUNCSUET
+      VHVDFAVGABAUNVBCAUNPDAVBPQUFVDFRFAMVGVCBUNVAVBCUGUHUIUJUKUL $.
+  $}
+
+  ${
+    $d x y A $.  $d x y z F $.
+    $( Alternate definition of a function using "at most one" notation.
+       (Contributed by NM, 9-Mar-1995.) $)
+    dffun6 $p |- ( Fun F <-> ( Rel F /\ A. x E* y x F y ) ) $=
+      ( nfcv dffun6f ) ABCACDBCDE $.
+
+    $( A function has at most one value for each argument.  (Contributed by NM,
+       24-May-1998.) $)
+    funmo $p |- ( Fun F -> E* y A F y ) $=
+      ( vx wfun cv wbr cvv wcel wa wi wal wmo wrel dffun6 simplbi brrelex ancrd
+      ex syl alrimiv wceq breq1 mobidv imbi2d simprbi 19.21bi vtoclg com12 moim
+      moanimv sylibr sylc ) CEZBAFZCGZBHIZUPJZKZALURAMZUPAMZUNUSAUNUPUQUNCNZUPU
+      QKUNVBDFZUOCGZAMZDLZDACOZPVBUPUQBUOCQSTRUAUNUQVAKUTUQUNVAUNVEKUNVAKDBHVCB
+      UBZVEVAUNVHVDUPAVCBUOCUCUDUEUNVEDUNVBVFVGUFUGUHUIUQUPAUKULUPURAUJUM $.
+  $}
+
+  $( A function is a relation.  (Contributed by NM, 1-Aug-1994.) $)
+  funrel $p |- ( Fun A -> Rel A ) $=
+    ( wfun wrel ccnv ccom cid wss df-fun simplbi ) ABACAADEFGAHI $.
+
+  ${
+    $d x y z A $.  $d x y z B $.
+    $( Subclass theorem for function predicate.  (Contributed by NM,
+       16-Aug-1994.)  (Proof shortened by Mario Carneiro, 24-Jun-2014.) $)
+    funss $p |- ( A C_ B -> ( Fun B -> Fun A ) ) $=
+      ( wss wrel ccnv ccom cid wa wfun relss wi coss1 cnvss coss2 sstrd anim12d
+      syl sstr2 df-fun 3imtr4g ) ABCZBDZBBEZFZGCZHADZAAEZFZGCZHBIAIUAUBUFUEUIAB
+      JUAUHUDCUEUIKUAUHBUGFZUDABUGLUAUGUCCUJUDCABMUGUCBNQOUHUDGRQPBSAST $.
+  $}
+
+  $( Equality theorem for function predicate.  (Contributed by NM,
+     16-Aug-1994.) $)
+  funeq $p |- ( A = B -> ( Fun A <-> Fun B ) ) $=
+    ( wceq wfun wss wi eqimss2 funss syl eqimss impbid ) ABCZADZBDZLBAEMNFBAGBA
+    HILABENMFABJABHIK $.
+
+  ${
+    funeqi.1 $e |- A = B $.
+    $( Equality inference for the function predicate.  (Contributed by Jonathan
+       Ben-Naim, 3-Jun-2011.) $)
+    funeqi $p |- ( Fun A <-> Fun B ) $=
+      ( wceq wfun wb funeq ax-mp ) ABDAEBEFCABGH $.
+  $}
+
+  ${
+    funeqd.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for the function predicate.  (Contributed by NM,
+       23-Feb-2013.) $)
+    funeqd $p |- ( ph -> ( Fun A <-> Fun B ) ) $=
+      ( wceq wfun wb funeq syl ) ABCEBFCFGDBCHI $.
+  $}
+
+  ${
+    nffun.1 $e |- F/_ x F $.
+    $( Bound-variable hypothesis builder for a function.  (Contributed by NM,
+       30-Jan-2004.) $)
+    nffun $p |- F/ x Fun F $=
+      ( wfun wrel ccnv ccom cid wa df-fun nfrel nfcnv nfco nfcv nfss nfan nfxfr
+      wss ) BDBEZBBFZGZHRZIABJSUBAABCKAUAHABTCABCLMAHNOPQ $.
+  $}
+
+  ${
+    $d A w y z $.  $d F w y z $.  $d V w y z $.  $d x w y z $.
+    $( Distribute proper substitution through the function predicate.
+       (Contributed by Alexander van der Vekens, 23-Jul-2017.) $)
+    sbcfung $p |- ( A e. V -> ( [. A / x ]. Fun F <-> Fun [_ A / x ]_ F ) ) $=
+      ( vw vy vz wrel cv wbr wa wi wal wsbc sbcal csbconstg bitrd syl5bb albidv
+      csb wcel weq wfun sbcan sbcrel sbcimg sbcbrg breq12d anbi12d sbcg imbi12d
+      dffun2 sbcbii 3bitr4g ) BDUAZCHZEIZFIZCJZUQGIZCJZKZFGUBZLZGMZFMZEMZKZABNZ
+      ABCTZHZUQURVJJZUQUTVJJZKZVCLZGMZFMZEMZKZCUCZABNVJUCVIUPABNZVGABNZKUOVSUPV
+      GABUDUOWAVKWBVRABCDUEWBVFABNZEMUOVRVFEABOUOWCVQEWCVEABNZFMUOVQVEFABOUOWDV
+      PFWDVDABNZGMUOVPVDGABOUOWEVOGUOWEVBABNZVCABNZLVOVBVCABDUFUOWFVNWGVCWFUSAB
+      NZVAABNZKUOVNUSVAABUDUOWHVLWIVMUOWHABUQTZABURTZVJJVLABUQURDCUGUOWJUQWKURV
+      JABUQDPZABURDPUHQUOWIWJABUTTZVJJVMABUQUTDCUGUOWJUQWMUTVJWLABUTDPUHQUIRVCA
+      BDUJUKQSRSRSRUIRVTVHABEFGCULUMEFGVJULUN $.
+  $}
+
+  ${
+    $d y A $.  $d y F $.
+    $( There is exactly one value of a function.  (Contributed by NM,
+       22-Apr-2004.)  (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
+    funeu $p |- ( ( Fun F /\ A F B ) -> E! y A F y ) $=
+      ( wfun wbr wa cv wex weu cdm wcel wrel funrel releldm sylan eldmg ibi syl
+      wmo wi funmo adantr df-mo sylib mpd ) DEZBCDFZGZBAHDFZAIZUJAJZUIBDKZLZUKU
+      GDMUHUNDNBCDOPUNUKABDUMQRSUIUJATZUKULUAUGUOUHABDUBUCUJAUDUEUF $.
+
+    $( There is exactly one value of a function.  (Contributed by NM,
+       3-Aug-1994.) $)
+    funeu2 $p |- ( ( Fun F /\ <. A , B >. e. F ) -> E! y <. A , y >. e. F ) $=
+      ( cop wcel wfun wbr cv weu df-br wa funeu eubii sylib sylan2br ) BCEDFDGZ
+      BCDHZBAIZEDFZAJZBCDKQRLBSDHZAJUAABCDMUBTABSDKNOP $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Alternate definition of a function.  One possibility for the definition
+       of a function in [Enderton] p. 42.  (Enderton's definition is ambiguous
+       because "there is only one" could mean either "there is at most one" or
+       "there is exactly one."  However, ~ dffun8 shows that it doesn't matter
+       which meaning we pick.)  (Contributed by NM, 4-Nov-2002.) $)
+    dffun7 $p |- ( Fun A <-> ( Rel A /\ A. x e. dom A E* y x A y ) ) $=
+      ( wfun wrel cv wbr wmo wal wa cdm wral dffun6 wcel wi wex vex eldm bitr4i
+      moabs imbi1i albii df-ral anbi2i bitri ) CDCEZAFZBFCGZBHZAIZJUFUIACKZLZJA
+      BCMUJULUFUJUGUKNZUIOZAIULUIUNAUIUHBPZUIOUNUHBTUMUOUIBUGCAQRUASUBUIAUKUCSU
+      DUE $.
+
+    $( Alternate definition of a function.  One possibility for the definition
+       of a function in [Enderton] p. 42.  Compare ~ dffun7 .  (Contributed by
+       NM, 4-Nov-2002.)  (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
+    dffun8 $p |- ( Fun A <-> ( Rel A /\ A. x e. dom A E! y x A y ) ) $=
+      ( wfun wrel cv wbr wmo cdm wral wa weu dffun7 wex wi wcel df-mo vex eldm
+      wb pm5.5 sylbi syl5bb ralbiia anbi2i bitri ) CDCEZAFZBFCGZBHZACIZJZKUGUIB
+      LZAUKJZKABCMULUNUGUJUMAUKUJUIBNZUMOZUHUKPZUMUIBQUQUOUPUMTBUHCARSUOUMUAUBU
+      CUDUEUF $.
+
+    $( Alternate definition of a function.  (Contributed by NM, 28-Mar-2007.)
+       (Revised by NM, 16-Jun-2017.) $)
+    dffun9 $p |- ( Fun A <->
+                 ( Rel A /\ A. x e. dom A E* y e. ran A x A y ) ) $=
+      ( wfun wrel cv wbr wmo cdm wral wa wrmo dffun7 wcel brelrn pm4.71ri mobii
+      crn vex df-rmo bitr4i ralbii anbi2i bitri ) CDCEZAFZBFZCGZBHZACIZJZKUEUHB
+      CRZLZAUJJZKABCMUKUNUEUIUMAUJUIUGULNZUHKZBHUMUHUPBUHUOUFUGCASBSOPQUHBULTUA
+      UBUCUD $.
+  $}
+
+  $( An equivalence for the function predicate.  (Contributed by NM,
+     13-Aug-2004.) $)
+  funfn $p |- ( Fun A <-> A Fn dom A ) $=
+    ( wfun cdm wceq wa wfn eqid biantru df-fn bitr4i ) ABZKACZLDZEALFMKLGHALIJ
+    $.
+
+  $( The identity relation is a function.  Part of Theorem 10.4 of [Quine]
+     p. 65.  (Contributed by NM, 30-Apr-1998.) $)
+  funi $p |- Fun _I $=
+    ( cid wfun wrel ccnv ccom wss reli wceq relcnv coi2 ax-mp cnvi eqtri df-fun
+    eqimssi mpbir2an ) ABACAADZEZAFGRARQAQCRQHAIQJKLMOANP $.
+
+  $( The universe is not a function.  (Contributed by Raph Levien,
+     27-Jan-2004.) $)
+  nfunv $p |- -. Fun _V $=
+    ( cvv wfun wrel cxp wcel 0nelxp 0ex wss df-rel biimpi sseld mpi mto funrel
+    c0 ) ABACZPOAADZEZAAFPOAERGPAQOPAQHAIJKLMANM $.
+
+  ${
+    $d t u v w x y z A $.  $d t u v w x y z B $.
+    $( A Kuratowski ordered pair is a function only if its components are
+       equal.  (Contributed by NM, 5-Jun-2008.)  (Revised by Mario Carneiro,
+       26-Apr-2015.) $)
+    funopg $p |- ( ( A e. V /\ B e. W /\ Fun <. A , B >. ) -> A = B ) $=
+      ( vu vt vx vy vz vw vv wcel cop wfun wceq cv wi cpr vex cvv csn
+      opeq1 funeqd eqeq1 imbi12d opeq2 eqeq2 wa wex wrel funrel relop
+      sylib opth opid preq1i dfop preq2i snexg ax-mp zfpair2 3eqtr4ri
+      eqeq2i bitr3i wal dffun4 simprbi sopex prid1 eleq2 mpbiri prid2
+      jca w3a opeq12 3adant3 eleq1d 3adant2 anbi12d wb eqeq12 3adant1
+      spc3gv mp3an syl2im syl5bi dfsn2 preq2 syl5req eqeq2d eqtr3 imp
+      expcom syl6bi com13 sylcom exlimdvv mpd vtocl2g 3impia ) ACLBDL
+      ABMZNZABOZEPZFPZMZNZXDXEOZQAXEMZNZAXEOZQXBXCQEFABCDXDAOZXGXJXHX
+      KXLXFXIXDAXEUBUCXDAXEUDUEXEBOZXJXBXKXCXMXIXAXEBAUFUCXEBAUGUEXGX
+      DGPZUAZOZXEXNHPZRZOZUHZHUIGUIZXHXGXFUJZYAXFUKGHXDXEESZFSZULUMXG
+      XTXHGHXGXTXNXQOZXHXTXFXNXNMZXNXQMZRZOZXGYEXTXFXOXRMZOYIXDXEXOXR
+      YCYDUNYJYHXFYFXOXRRZRXOUAZYKRYHYJYFYLYKXNGSZUOUPYGYKYFXNXQYMHSZ
+      UQURXOXRXNTLZXOTLYMXNUSUTGHVAUQVBVCVDXGIPZJPZMZXFLZYPKPZMZXFLZU
+      HZYQYTOZQZKVEJVEIVEZYIYFXFLZYGXFLZUHZYEXGYBUUFIJKXFVFVGYIUUGUUH
+      YIUUGYFYHLYFYGGGVHVIXFYHYFVJVKYIUUHYGYHLYFYGGHVHVLXFYHYGVJVKVMY
+      OYOXQTLUUFUUIYEQZQYMYMYNUUEUUJIJKXNXNXQTTTYPXNOZYQXNOZYTXQOZVNZ
+      UUCUUIUUDYEUUNYSUUGUUBUUHUUNYRYFXFUUKUULYRYFOUUMYPYQXNXNVOVPVQU
+      UNUUAYGXFUUKUUMUUAYGOUULYPYTXNXQVOVRVQVSUULUUMUUDYEVTUUKYQXNYTX
+      QWAWBUEWCWDWEWFXPXSYEXHQYEXSXPXHYEXSXEXOOZXPXHQYEXRXOXEYEXOXNXN
+      RXRXNWGXNXQXNWHWIWJXPUUOXHXDXEXOWKWMWNWOWLWPWQWRWSWT $.
+  $}
+
+
+  ${
+    $d x y z $.  $d z ph $.
+    $( A class of ordered pairs is a function when there is at most one second
+       member for each pair.  (Contributed by NM, 16-May-1995.) $)
+    funopab $p |- ( Fun { <. x , y >. | ph } <-> A. x E* y ph ) $=
+      ( copab wfun wbr wmo wal wrel relopab nfopab1 nfopab2 dffun6f mpbiran cop
+      cv wcel df-br opabid bitri mobii albii ) ABCDZEZBPZCPZUCFZCGZBHZACGZBHUDU
+      CIUIABCJBCUCABCKABCLMNUHUJBUGACUGUEUFOUCQAUEUFUCRABCSTUAUBT $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.
+    $( A class of ordered pairs of values is a function.  (Contributed by NM,
+       14-Nov-1995.) $)
+    funopabeq $p |- Fun { <. x , y >. | y = A } $=
+      ( cv wceq copab wfun wmo funopab moeq mpgbir ) BDCEZABFGLBHALABIBCJK $.
+
+    $( A class of ordered pairs of values in the form used by ~ df-mpt is a
+       function.  (Contributed by NM, 17-Feb-2013.) $)
+    funopab4 $p |- Fun { <. x , y >. | ( ph /\ y = A ) } $=
+      ( cv wceq wa copab wss wfun simpr ssopab2i funopabeq funss mp2 ) ACEDFZGZ
+      BCHZPBCHZISJRJQPBCAPKLBCDMRSNO $.
+  $}
+
+  ${
+    $d A y $.  $d B y $.  $d x y $.
+    $( A function in maps-to notation is a function.  (Contributed by Mario
+       Carneiro, 13-Jan-2013.) $)
+    funmpt $p |- Fun ( x e. A |-> B ) $=
+      ( vy cmpt wfun cv wcel wceq wa copab funopab4 df-mpt funeqi mpbir ) ABCEZ
+      FAGBHZDGCIJADKZFQADCLPRADBCMNO $.
+  $}
+
+  ${
+    funmpt2.1 $e |- F = ( x e. A |-> B ) $.
+    $( Functionality of a class given by a "maps to" notation.  (Contributed by
+       FL, 17-Feb-2008.)  (Revised by Mario Carneiro, 31-May-2014.) $)
+    funmpt2 $p |- Fun F $=
+      ( wfun cmpt funmpt funeqi mpbir ) DFABCGZFABCHDKEIJ $.
+  $}
+
+  $( A restriction of a function is a function.  Compare Exercise 18 of
+     [TakeutiZaring] p. 25.  (Contributed by NM, 16-Aug-1994.) $)
+  funres $p |- ( Fun F -> Fun ( F |` A ) ) $=
+    ( cres wss wfun wi resss funss ax-mp ) BACZBDBEJEFBAGJBHI $.
+
+  ${
+    $d x y F $.  $d x y G $.  $d x y A $.
+    $( The restriction of a function to the domain of a subclass equals the
+       subclass.  (Contributed by NM, 15-Aug-1994.) $)
+    funssres $p |- ( ( Fun F /\ G C_ F ) -> ( F |` dom G ) = G ) $=
+      ( vx vy wfun wss wa cdm cres wceq cv cop wcel wb wal wi vex wex imp wrel
+      ssel opeldm a1i adantl weu funeu2 eldm2 ancrd eximdv syl5bi eupick syl2an
+      jcad exp43 com23 com34 pm2.43d imp3a impbid opelres syl6rbbr relres relss
+      alrimivv funrel mpan9 eqrel sylancr mpbird ) AEZBAFZGZABHZIZBJZCKZDKZLZVN
+      MZVRBMZNZDOCOZVLWACDVLVTVRAMZVPVMMZGZVSVLVTWEVKVTWEPVJVKVTWCWDBAVRUAZVTWD
+      PVKVPVQBCQZDQZUBUCUMUDVLWCWDVTVLWCWDVTPVLWCWDWCVTVJVKWCWDWCVTPZPZPVJWCVKW
+      JVJWCVKWDWIVJWCGWCDUEWCVTGZDRZWIVKWDGDVPVQAUFVKWDWLWDVTDRVKWLDVPBWGUGVKVT
+      WKDVKVTWCWFUHUIUJSWCVTDUKULUNUOSUPUQURUSVPVQAVMWHUTVAVDVLVNTBTZVOWBNAVMVB
+      VJATVKWMAVEBAVCVFCDVNBVGVHVI $.
+  $}
+
+  $( Equality of restrictions of a function and a subclass.  (Contributed by
+     NM, 16-Aug-1994.) $)
+  fun2ssres $p |- ( ( Fun F /\ G C_ F /\ A C_ dom G ) ->
+                  ( F |` A ) = ( G |` A ) ) $=
+    ( wfun wss cdm cres wceq wa resabs1 eqcomd funssres reseq1d sylan9eqr 3impa
+    ) BDZCBEZACFZEZBAGZCAGZHSPQIZTBRGZAGZUASUDTBARJKUBUCCABCLMNO $.
+
+  ${
+    $d x y z F $.  $d x y z G $.
+    $( The union of functions with disjoint domains is a function.  Theorem 4.6
+       of [Monk1] p. 43.  (Contributed by NM, 12-Aug-1994.) $)
+    funun $p |- ( ( ( Fun F /\ Fun G ) /\ ( dom F i^i dom G ) = (/) ) ->
+                Fun ( F u. G ) ) $=
+      ( vx vy vz wfun wa cdm wrel cv wi wal anim12i wo wn 19.21bi opeldm dffun4
+      wcel vex cin c0 wceq cun cop funrel relun sylibr elun anbi12i anddi bitri
+      adantr disj1 biimpi imnan sylib nsyl orel2 syl con2d orel1 orim12d adantl
+      syl5bi simprbi 19.21bbi jaao syld alrimiv alrimivv sylanbrc ) AFZBFZGZAHZ
+      BHZUAUBUCZGZABUDZIZCJZDJZUEZVTSZWBEJZUEZVTSZGZWCWFUCZKZELZDLCLVTFVOWAVRVO
+      AIZBIZGWAVMWMVNWNAUFBUFMABUGUHUMVSWLCDVSWKEVSWIWDASZWGASZGZWDBSZWGBSZGZNZ
+      WJWIWQWOWSGZNZWRWPGZWTNZNZVSXAWIWOWRNZWPWSNZGXFWEXGWHXHWDABUIWGABUIUJWOWR
+      WPWSUKULVRXFXAKVOVRXCWQXEWTVRXBOXCWQKVRWBVPSZWBVQSZGZXBVRXIXJOKZXKOVRXLCV
+      RXLCLCVPVQUNUOPZXIXJUPUQWOXIWSXJWBWCACTZDTZQWBWFBXNETZQMURXBWQUSUTVRXDOXE
+      WTKVRXJXIGZXDVRXJXIOKXQOVRXIXJXMVAXJXIUPUQWRXJWPXIWBWCBXNXOQWBWFAXNXPQMUR
+      XDWTVBUTVCVDVEVOXAWJKVRVMWQWJVNWTVMWQWJKZDEVMXRELDLZCVMWMXSCLCDEARVFPVGVN
+      WTWJKZDEVNXTELDLZCVNWNYACLCDEBRVFPVGVHUMVIVJVKCDEVTRVL $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The converse singleton of an ordered pair is a function.  This is
+       equivalent to ~ funsn via ~ cnvsn , but stating it this way allows us to
+       skip the sethood assumptions on ` A ` and ` B ` .  (Contributed by NM,
+       30-Apr-2015.) $)
+    funcnvsn $p |- Fun `' { <. A , B >. } $=
+      ( vx vy cop csn ccnv wfun wrel cv wbr wmo wal relcnv wceq moeq wcel brcnv
+      vex df-br bitri elsni opth1 syl sylbi moimi ax-mp ax-gen dffun6 mpbir2an
+      ) ABEZFZGZHUMICJZDJZUMKZDLZCMULNUQCUOAOZDLUQDAPUPURDUPUOUNEZULQZURUPUOUNU
+      LKUTUNUOULCSZDSZRUOUNULTUAUTUSUKOURUSUKUBUOUNABVBVAUCUDUEUFUGUHCDUMUIUJ
+      $.
+
+    $( A singleton of an ordered pair is a function.  Theorem 10.5 of [Quine]
+       p. 65.  (Contributed by NM, 28-Jun-2011.) $)
+    funsng $p |- ( ( A e. V /\ B e. W ) -> Fun { <. A , B >. } ) $=
+      ( wcel wa cop csn ccnv wfun funcnvsn wceq cnvsng ancoms funeqd mpbii ) AC
+      EZBDEZFZBAGHIZJABGHZJBAKSTUARQTUALBADCMNOP $.
+
+    $( Functionality and domain of the singleton of an ordered pair.
+       (Contributed by Mario Carneiro, 30-Apr-2015.) $)
+    fnsng $p |- ( ( A e. V /\ B e. W ) -> { <. A , B >. } Fn { A } ) $=
+      ( wcel wa cop csn wfun cdm wceq wfn funsng dmsnopg adantl df-fn sylanbrc
+      ) ACEZBDEZFABGHZITJAHZKZTUALABCDMSUBRABDNOTUAPQ $.
+
+    funsn.1 $e |- A e. _V $.
+    funsn.2 $e |- B e. _V $.
+    $( A singleton of an ordered pair is a function.  Theorem 10.5 of [Quine]
+       p. 65.  (Contributed by NM, 12-Aug-1994.) $)
+    funsn $p |- Fun { <. A , B >. } $=
+      ( cvv wcel cop csn wfun funsng mp2an ) AEFBEFABGHICDABEEJK $.
+  $}
+
+  $( A set of two pairs is a function if their first members are different.
+     (Contributed by FL, 26-Jun-2011.) $)
+  funprg $p |- ( ( ( A e. V /\ B e. W ) /\ ( C e. X /\ D e. Y ) /\ A =/= B )
+     -> Fun { <. A , C >. , <. B , D >. } ) $=
+    ( wcel wa cop csn wfun cdm cin c0 wceq funsng syl2anc dmsnopg simp1l simp2l
+    wne w3a cun cpr simp1r simp2r ineq12d disjsn2 3ad2ant3 eqtrd funun syl21anc
+    syl df-pr funeqi sylibr ) AEIZBFIZJZCGIZDHIZJZABUCZUDZACKZLZBDKZLZUEZMZVGVI
+    UFZMVFVHMZVJMZVHNZVJNZOZPQVLVFUSVBVNUSUTVDVEUAVAVBVCVEUBZACEGRSVFUTVCVOUSUT
+    VDVEUGVAVBVCVEUHZBDFHRSVFVRALZBLZOZPVFVPWAVQWBVFVBVPWAQVSACGTUOVFVCVQWBQVTB
+    DHTUOUIVEVAWCPQVDABUJUKULVHVJUMUNVMVKVGVIUPUQUR $.
+
+  $( A set of three pairs is a function if their first members are different.
+     (Contributed by Alexander van der Vekens, 5-Dec-2017.) $)
+  funtpg $p |- ( ( ( X e. U /\ Y e. V /\ Z e. W )
+                   /\ ( A e. F /\ B e. G /\ C e. H )
+                   /\ ( X =/= Y /\ X =/= Z /\ Y =/= Z ) )
+                 -> Fun { <. X , A >. , <. Y , B >. , <. Z , C >. } ) $=
+    ( wcel w3a wne cop wfun wceq syl wn cpr csn cun ctp cdm cin c0 wa
+    3simpa simp1 funprg syl3an simp13 simp23 syl2anc 3ad2ant2 dmpropg
+    funsng dmsnopg ineq12d wo elpri w3o nner 3mix2 3mix3 jaoi 3ianorr
+    eqcoms con2i disjsn sylibr 3ad2ant3 eqtrd funun syl21anc funeqi
+    df-tp ) JDMZKHMZLIMZNZAEMZBFMZCGMZNZJKOZJLOZKLOZNZNZJAPZKBPZUAZLC
+    PZUBZUCZQZWLWMWOUDZQWKWNQZWPQZWNUEZWPUEZUFZUGRWRWBVSVTUHWFWCWDUHZ
+    WJWGWTVSVTWAUIWCWDWEUIZWGWHWIUJJKABDHEFUKULWKWAWEXAVSVTWAWFWJUMWB
+    WCWDWEWJUNZLCIGURUOWKXDJKUAZLUBZUFZUGWKXBXHXCXIWKXEXBXHRWFWBXEWJX
+    FUPJAKBEFUQSWKWEXCXIRXGLCGUSSUTWJWBXJUGRZWFWJLXHMZTXKXLWJXLLJRZLK
+    RZVAZWJTZLJKVBXOWGTZWHTZWITZVCZXPXMXTXNXMXRXTXRJLJLVDVIXRXQXSVESX
+    NXSXTXSKLKLVDVIXSXQXRVFSVGWGWHWIVHSSVJXHLVKVLVMVNWNWPVOVPWSWQWLWM
+    WOVRVQVL $.
+
+  ${
+    funpr.1 $e |- A e. _V $.
+    funpr.2 $e |- B e. _V $.
+    funpr.3 $e |- C e. _V $.
+    funpr.4 $e |- D e. _V $.
+    $( A function with a domain of two elements.  (Contributed by Jeff Madsen,
+       20-Jun-2010.) $)
+    funpr $p |- ( A =/= B -> Fun { <. A , C >. , <. B , D >. } ) $=
+      ( cvv wcel wa wne cop cpr wfun pm3.2i funprg mp3an12 ) AIJZBIJZKCIJZDIJZK
+      ABLACMBDMNOSTEFPUAUBGHPABCDIIIIQR $.
+  $}
+
+  ${
+    funtp.1 $e |- A e. _V $.
+    funtp.2 $e |- B e. _V $.
+    funtp.3 $e |- C e. _V $.
+    funtp.4 $e |- D e. _V $.
+    funtp.5 $e |- E e. _V $.
+    funtp.6 $e |- F e. _V $.
+    $( A function with a domain of three elements.  (Contributed by NM,
+       14-Sep-2011.) $)
+    funtp $p |- ( ( A =/= B /\ A =/= C /\ B =/= C )
+                    -> Fun { <. A , D >. , <. B , E >. , <. C , F >. } ) $=
+      ( wne cop csn wfun wa cin c0 wceq w3a cpr cun ctp funpr funsn jctir df-pr
+      cdm dmprop eqtri dmsnop ineq12i disjsn2 anim12i sylib syl5eq funun syl2an
+      undisj1 3impb df-tp funeqi sylibr ) ABMZACMZBCMZUAADNZBENZUBZCFNZOZUCZPZV
+      HVIVKUDZPVEVFVGVNVEVJPZVLPZQVJUIZVLUIZRZSTVNVFVGQZVEVPVQABDEGHJKUECFILUFU
+      GWAVTAOZBOZUCZCOZRZSVRWDVSWEVRABUBWDADBEJKUJABUHUKCFLULUMWAWBWERSTZWCWERS
+      TZQWFSTVFWGVGWHACUNBCUNUOWBWCWEUTUPUQVJVLURUSVAVOVMVHVIVKVBVCVD $.
+  $}
+
+  ${
+    fnsn.1 $e |- A e. _V $.
+    fnsn.2 $e |- B e. _V $.
+    $( Functionality and domain of the singleton of an ordered pair.
+       (Contributed by Jonathan Ben-Naim, 3-Jun-2011.) $)
+    fnsn $p |- { <. A , B >. } Fn { A } $=
+      ( cvv wcel cop csn wfn fnsng mp2an ) AEFBEFABGHAHICDABEEJK $.
+  $}
+
+  $( Function with a domain of two different values.  (Contributed by FL,
+     26-Jun-2011.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+  fnprg $p |- ( ( ( A e. V /\ B e. W ) /\ ( C e. X /\ D e. Y ) /\ A =/= B )
+         -> { <. A , C >. , <. B , D >. } Fn { A , B } ) $=
+    ( wcel wa wne w3a cop cpr wfun cdm wceq wfn funprg dmpropg 3ad2ant2 df-fn
+    sylanbrc ) AEIBFIJZCGIDHIJZABKZLACMBDMNZOUGPABNZQZUGUHRABCDEFGHSUEUDUIUFACB
+    DGHTUAUGUHUBUC $.
+
+  $( Function with a domain of three different values.  (Contributed by
+     Alexander van der Vekens, 5-Dec-2017.) $)
+  fntpg $p |- ( ( ( X e. U /\ Y e. V /\ Z e. W )
+                  /\ ( A e. F /\ B e. G /\ C e. H )
+                  /\ ( X =/= Y /\ X =/= Z /\ Y =/= Z ) )
+           -> { <. X , A >. , <. Y , B >. , <. Z , C >. } Fn { X , Y , Z } ) $=
+    ( wcel w3a wne cop cdm wceq csn cun ctp wfun wfn funtpg wa dmsnopg 3ad2ant1
+    cpr 3ad2ant2 jca uneq12 syl df-pr syl6eqr dmeqi eqeq1i dmun sylibr 3ad2ant3
+    bitri uneq12d df-tp eqtri 3eqtr4g df-fn sylanbrc ) JDMKHMLIMNZAEMZBFMZCGMZN
+    ZJKOJLOKLONZNZJAPZKBPZLCPZUAZUBVQQZJKLUAZRVQVSUCABCDEFGHIJKLUDVMVNVOUHZQZVP
+    SZQZTZJKUHZLSZTVRVSVMWAWEWCWFVMVNSZQZVOSZQZTZWERZWAWERZVMWKJSZKSZTZWEVMWHWN
+    RZWJWORZUEZWKWPRVKVGWSVLVKWQWRVHVIWQVJJAEUFUGVIVHWRVJKBFUFUIUJUIWHWNWJWOUKU
+    LJKUMUNWMWGWITZQZWERWLWAXAWEVTWTVNVOUMUOUPXAWKWEWGWIUQUPUTURVKVGWCWFRZVLVJV
+    HXBVILCGUFUSUIVAVRVTWBTZQWDVQXCVNVOVPVBUOVTWBUQVCJKLVBVDVQVSVEVF $.
+
+  ${
+    fntp.1 $e |- A e. _V $.
+    fntp.2 $e |- B e. _V $.
+    fntp.3 $e |- C e. _V $.
+    fntp.4 $e |- D e. _V $.
+    fntp.5 $e |- E e. _V $.
+    fntp.6 $e |- F e. _V $.
+    $( A function with a domain of three elements.  (Contributed by NM,
+       14-Sep-2011.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
+    fntp $p |- ( ( A =/= B /\ A =/= C /\ B =/= C )
+          -> { <. A , D >. , <. B , E >. , <. C , F >. } Fn { A , B , C } ) $=
+      ( wne w3a cop ctp wfun cdm wceq wfn funtp dmtpop a1i df-fn sylanbrc ) ABM
+      ACMBCMNZADOBEOCFOPZQUGRABCPZSZUGUHTABCDEFGHIJKLUAUIUFADBECFJKLUBUCUGUHUDU
+      E $.
+  $}
+
+  $( The empty set is a function.  Theorem 10.3 of [Quine] p. 65.  (Contributed
+     by NM, 7-Apr-1998.) $)
+  fun0 $p |- Fun (/) $=
+    ( c0 cop csn wss wfun 0ss 0ex funsn funss mp2 ) AAABCZDKEAEKFAAGGHAKIJ $.
+
+  $( The double converse of a function is a function.  (Contributed by NM,
+     21-Sep-2004.) $)
+  funcnvcnv $p |- ( Fun A -> Fun `' `' A ) $=
+    ( ccnv wss wfun wi cnvcnvss funss ax-mp ) ABBZACADIDEAFIAGH $.
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -42697,6 +43282,64 @@ htmldef "iota" as
     "<IMG SRC='riota.gif' WIDTH=6 HEIGHT=19 ALT=' iota' TITLE='iota'>";
   althtmldef "iota" as '&#8489;';
   latexdef "iota" as "\mathrm{\rotatebox[origin=C]{180}{$\iota$}}";
+htmldef "Fun" as
+    "<IMG SRC='_fun.gif' WIDTH=25 HEIGHT=19 ALT=' Fun' TITLE='Fun'> ";
+  althtmldef "Fun" as 'Fun ';
+  latexdef "Fun" as "{\rm Fun}";
+htmldef "Fn" as
+    " <IMG SRC='_fn.gif' WIDTH=17 HEIGHT=19 ALT=' Fn' TITLE='Fn'> ";
+  althtmldef "Fn" as ' Fn ';
+  latexdef "Fn" as "{\rm Fn}";
+htmldef ":" as "<IMG SRC='colon.gif' WIDTH=4 HEIGHT=19 ALT=' :' TITLE=':'>";
+  althtmldef ":" as ':';
+  latexdef ":" as ":";
+htmldef "-->" as
+  "<IMG SRC='longrightarrow.gif' WIDTH=23 HEIGHT=19 " +
+    "ALT=' --&gt;' TITLE='--&gt;'>";
+  /* althtmldef "-->" as '&ndash;&rarr;'; */
+  althtmldef "-->" as '&#x27F6;';
+    /* &#xAD;&#x2010;&ndash;&mdash;&minus; (possible symbols test) */
+  latexdef "-->" as "\longrightarrow";
+htmldef "-1-1->" as "<IMG SRC='onetoone.gif' WIDTH=23 HEIGHT=19 " +
+    "ALT=' -1-1-&gt;' TITLE='-1-1-&gt;'>";
+  althtmldef "-1-1->" as
+    '&ndash;<FONT SIZE=-2 FACE=sans-serif>1-1</FONT>&rarr;';
+  latexdef "-1-1->" as
+    "\raisebox{.5ex}{${\textstyle{\:}_{\mbox{\footnotesize\rm 1" +
+    "\tt -\rm 1}}}\atop{\textstyle{" +
+    "\longrightarrow}\atop{\textstyle{}^{\mbox{\footnotesize\rm {\ }}}}}$}";
+htmldef "-onto->" as
+    "<IMG SRC='onto.gif' WIDTH=23 HEIGHT=19 " +
+    "ALT=' -onto-&gt;' TITLE='-onto-&gt;'>";
+  althtmldef "-onto->" as
+    '&ndash;<FONT SIZE=-2 FACE=sans-serif>onto</FONT>&rarr;';
+  latexdef "-onto->" as
+    "\raisebox{.5ex}{${\textstyle{\:}_{\mbox{\footnotesize\rm {\ }}}}" +
+    "\atop{\textstyle{" +
+    "\longrightarrow}\atop{\textstyle{}^{\mbox{\footnotesize\rm onto}}}}$}";
+htmldef "-1-1-onto->" as "<IMG SRC='onetooneonto.gif' WIDTH=23 HEIGHT=19 " +
+    "ALT=' -1-1-onto-&gt;' TITLE='-1-1-onto-&gt;'>";
+  althtmldef "-1-1-onto->" as '&ndash;<FONT SIZE=-2 '
+    + 'FACE=sans-serif>1-1</FONT>-<FONT SIZE=-2 '
+    + 'FACE=sans-serif>onto</FONT>&rarr;';
+  latexdef "-1-1-onto->" as
+    "\raisebox{.5ex}{${\textstyle{\:}_{\mbox{\footnotesize\rm 1" +
+    "\tt -\rm 1}}}\atop{\textstyle{" +
+    "\longrightarrow}\atop{\textstyle{}^{\mbox{\footnotesize\rm onto}}}}$}";
+htmldef "`" as
+    "<IMG SRC='backtick.gif' WIDTH=4 HEIGHT=19 ALT=' ` ' TITLE='` '>";
+    /* Above, IE7 _printing_ is corrupted by '`'; use '` ' which works */
+  /*althtmldef "`" as ' &lsquo;';*/
+  /* I took out the leading space to make e.g. ( log ` A ) look better.
+     I added the leading space a long time ago because the quote overlapped
+     the character to its left, making it sometimes hidden, but that seems
+     to be no longer a problem with the XITS font. - 29-Aug-2017 nm */
+  althtmldef "`" as '&lsquo;';
+  latexdef "`" as "`";
+htmldef "Isom" as
+    " <IMG SRC='_isom.gif' WIDTH=30 HEIGHT=19 ALT=' Isom' TITLE='Isom'> ";
+  althtmldef "Isom" as ' Isom ';
+  latexdef "Isom" as "{\rm Isom}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
