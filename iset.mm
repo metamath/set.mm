@@ -7072,6 +7072,29 @@ $)
   3anrev $p |- ( ( ph /\ ps /\ ch ) <-> ( ch /\ ps /\ ph ) ) $=
     ( w3a 3ancoma 3anrot bitr4i ) ABCDBACDCBADABCECBAFG $.
 
+  $( Convert triple conjunction to conjunction, then commute.  (Contributed by
+     Jonathan Ben-Naim, 3-Jun-2011.) $)
+  3anan32 $p |- ( ( ph /\ ps /\ ch ) <-> ( ( ph /\ ch ) /\ ps ) ) $=
+    ( w3a wa df-3an an32 bitri ) ABCDABECEACEBEABCFABCGH $.
+
+  $( Convert triple conjunction to conjunction, then commute.  (Contributed by
+     Jonathan Ben-Naim, 3-Jun-2011.)  (Proof shortened by Andrew Salmon,
+     14-Jun-2011.) $)
+  3anan12 $p |- ( ( ph /\ ps /\ ch ) <-> ( ps /\ ( ph /\ ch ) ) ) $=
+    ( w3a wa 3ancoma 3anass bitri ) ABCDBACDBACEEABCFBACGH $.
+
+  $( Distribution of triple conjunction over conjunction.  (Contributed by
+     David A. Wheeler, 4-Nov-2018.) $)
+  anandi3 $p |- ( ( ph /\ ps /\ ch ) <-> ( ( ph /\ ps ) /\ ( ph /\ ch ) ) )
+    $=
+    ( w3a wa 3anass anandi bitri ) ABCDABCEEABEACEEABCFABCGH $.
+
+  $( Distribution of triple conjunction over conjunction.  (Contributed by
+     David A. Wheeler, 4-Nov-2018.) $)
+  anandi3r $p |- ( ( ph /\ ps /\ ch ) <-> ( ( ph /\ ps ) /\ ( ch /\ ps ) ) )
+    $=
+    ( w3a wa 3anan32 anandir bitri ) ABCDACEBEABECBEEABCFACBGH $.
+
   $( Negated triple disjunction as triple conjunction.  (Contributed by Scott
      Fenton, 19-Apr-2011.) $)
   3ioran $p |- ( -. ( ph \/ ps \/ ch ) <-> ( -. ph /\ -. ps /\ -. ch ) ) $=
