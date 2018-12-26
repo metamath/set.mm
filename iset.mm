@@ -1,4 +1,4 @@
-$( iset.mm - Version of 24-Dec-2018
+$( iset.mm - Version of 25-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -42790,6 +42790,22 @@ $)
     ( ccnv cima wss wfun imass2 crn cin funimacnv sseq2d inss1 sstr2 mpi syl6bi
     imp sylan2 ) ACDBEZFCGZCAEZCSEZFZUABFZASCHTUCUDTUCUABCIZJZFZUDTUBUFUABCKLUG
     UFBFUDBUEMUAUFBNOPQR $.
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y F $.
+    $( One direction of ~ imadif .  This direction does not require
+       ` Fun ``' F ` .  (Contributed by Jim Kingdon, 25-Dec-2018.) $)
+    imadiflem $p |- ( ( F " A ) \ ( F " B ) ) C_ ( F " ( A \ B ) ) $=
+      ( vx vy cv wbr wrex wn wa cab cdif cima wcel wex df-rex notbii wal sylibr
+      dfima2 alnex 19.29r sylan2br ax-ia1 simplr ax-ia2 ancom imnan sylib jca32
+      wi bitr4i mpd eldif anbi1i anandir bitri eximi syl syl2anb difeq12i difab
+      ss2abi eqtri 3sstr4i ) DFZEFCGZDAHZVGDBHZIZJZEKZVGDABLZHZEKCAMZCBMZLZCVMM
+      VKVNEVHVFANZVGJZDOZVFBNZVGJZDOZIZVNVJVGDAPVIWCVGDBPQVTWDJZVFVMNZVGJZDOZVN
+      WEVSWBIZJZDOZWHWDVTWIDRWKWBDUAVSWIDUBUCWJWGDWJVSWAIZVGJJZWGWJVSWLVGVSWIUD
+      WJVGWLVRVGWIUEZWJWIVGWLUKZVSWIUFWIVGWAJZIWOWBWPWAVGUGQVGWAUHULUIUMWNUJWGV
+      RWLJZVGJWMWFWQVGVFABUNUOVRWLVGUPUQSURUSVGDVMPSUTVCVQVHEKZVIEKZLVLVOWRVPWS
+      DECATDECBTVAVHVIEVBVDDECVMTVE $.
+  $}
 
   ${
     $d x y A $.  $d x y B $.  $d x y F $.
