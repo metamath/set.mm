@@ -42829,24 +42829,35 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.  $d x y F $.
+    $( One direction of ~ imain .  This direction does not require
+       ` Fun ``' F ` .  (Contributed by Jim Kingdon, 25-Dec-2018.) $)
+    imainlem $p |- ( F " ( A i^i B ) ) C_ ( ( F " A ) i^i ( F " B ) ) $=
+      ( vx vy wbr cin wrex cab cima wcel wex df-rex elin anbi1i anandir
+      cv wa sylbi dfima2 bitri exbii anbi12i sylibr ss2abi ineq12i inab
+      19.40 eqtri 3sstr4i ) DQZEQCFZDABGZHZEIULDAHZULDBHZRZEIZCUMJCAJZC
+      BJZGZUNUQEUNUKAKZULRZDLZUKBKZULRZDLZRZUQUNUKUMKZULRZDLZVHULDUMMVK
+      VCVFRZDLVHVJVLDVJVBVERZULRVLVIVMULUKABNOVBVEULPUAUBVCVFDUHSSUOVDU
+      PVGULDAMULDBMUCUDUEDECUMTVAUOEIZUPEIZGURUSVNUTVODECATDECBTUFUOUPE
+      UGUIUJ $.
+  $}
+
+  ${
     $d x y z A $.  $d x y z B $.  $d x y z F $.
     $( The image of an intersection is the intersection of images.
        (Contributed by Paul Chapman, 11-Apr-2009.) $)
     imain $p |- ( Fun `' F ->
                   ( F " ( A i^i B ) ) = ( ( F " A ) i^i ( F " B ) ) ) $=
-      ( vx vy vz cin cima cv wbr wrex cab wa wcel wex df-rex anbi12i dfima2 wal
-      sylbi ccnv wfun wss elin anbi1i anandir bitri exbii sylibr ss2abi ineq12i
-      19.40 inab eqtri 3sstr4i a1i eeanv simprll weq ax-ia2 anim12i wi funcnveq
-      biimpi 19.21bi 19.21bbi imp sylan2 simprrl eqeltrd jca simprlr ex exlimdv
-      eximdv syl5bir 3imtr4g ss2abdv 3sstr4g eqssd ) CUAUBZCABGZHZCAHZCBHZGZWCW
-      FUCWADIZEIZCJZDWBKZELZWIDAKZWIDBKZMZELZWCWFWJWNEWJWGANZWIMZDOZWGBNZWIMZDO
-      ZMZWNWJWGWBNZWIMZDOZXBWIDWBPZXEWQWTMZDOXBXDXGDXDWPWSMZWIMXGXCXHWIWGABUDZU
-      EWPWSWIUFUGUHWQWTDULTTWLWRWMXAWIDAPZWIDBPQUIUJDECWBRZWFWLELZWMELZGWOWDXLW
-      EXMDECARZDECBRUKWLWMEUMUNUOUPWAWLFIZWHCJZFBKZMZELZWKWFWCWAXRWJEWAWRXOBNZX
-      PMZFOZMZXEXRWJYCWQYAMZFOZDOWAXEWQYADFUQWAYEXDDWAYDXDFWAYDXDWAYDMZXCWIYFXH
-      XCYFWPWSWAWPWIYAURYFWGXOBYDWAWIXPMZDFUSZWQWIYAXPWPWIUTXTXPUTVAWAYGYHWAYGY
-      HVBZEFWAYIFSESZDWAYJDSDEFCVCVDVEVFVGVHWAWQXTXPVIVJVKXIUIWAWPWIYAVLVKVMVNV
-      OVPWLWRXQYBXJXPFBPQXFVQVRWFXLXQELZGXSWDXLWEYKXNFECBRUKWLXQEUMUNXKVSVT $.
+      ( vx vy vz ccnv cin cima cv wbr wrex wa cab wcel wex ax-ia2 df-rex dfima2
+      wal wss imainlem a1i eeanv simprll weq anim12i wi funcnveq biimpi 19.21bi
+      wfun 19.21bbi imp sylan2 simprrl eqeltrd elin sylanbrc simprlr ex exlimdv
+      eximdv syl5bir anbi12i 3imtr4g ss2abdv ineq12i inab eqtri 3sstr4g eqssd
+      jca ) CGULZCABHZIZCAIZCBIZHZVPVSUAVNABCUBUCVNDJZEJZCKZDALZFJZWACKZFBLZMZE
+      NZWBDVOLZENVSVPVNWGWIEVNVTAOZWBMZDPZWDBOZWEMZFPZMZVTVOOZWBMZDPZWGWIWPWKWN
+      MZFPZDPVNWSWKWNDFUDVNXAWRDVNWTWRFVNWTWRVNWTMZWQWBXBWJVTBOWQVNWJWBWNUEXBVT
+      WDBWTVNWBWEMZDFUFZWKWBWNWEWJWBQWMWEQUGVNXCXDVNXCXDUHZEFVNXEFTETZDVNXFDTDE
+      FCUIUJUKUMUNUOVNWKWMWEUPUQVTABURUSVNWJWBWNUTVMVAVBVCVDWCWLWFWOWBDARWEFBRV
+      EWBDVORVFVGVSWCENZWFENZHWHVQXGVRXHDECASFECBSVHWCWFEVIVJDECVOSVKVL $.
   $}
 
   ${
