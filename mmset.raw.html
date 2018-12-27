@@ -209,10 +209,13 @@ Depends On</A></LI>
 <LI> <A HREF="#subsys">Appendix 7: Some Predicate Calculus
 Subsystems</A>
 
-<!--
+</LI>
+
+<LI> <A HREF="#oldaxioms">Appendix 8: Axiom numbering
+before December 2018</A>
+
 <FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>Added</FONT> <FONT
-SIZE=-1><I>15-Jul-2007</I></FONT>
--->
+SIZE=-1><I>26-Dec-2018</I></FONT>
 
 </LI>
 
@@ -1316,7 +1319,7 @@ occurring in a wff" (or wish to do so to simplify the metalogic), we can
 omit axiom ~ ax-5 and still have a complete
 system of logic.  However, ~ ax-5 provides us
 with more general theorem <I>schemes</I> and can make proofs
-considerably shorter.  Interestingly, if we include ~ ax-5 , then ~ ax-c14 and ~ ax-c16 become redundant (see ~ axc14 and ~ ax16 ).
+considerably shorter.  Interestingly, if we include ~ ax-5 , then ~ ax-c14 and ~ ax-c16 become redundant (see ~ axc14 and ~ axc16 ).
 
 <P>To simplify the metalogic even further&mdash;with no restrictions on
 substitutions at all&mdash;we can omit both ~ ax-c16
@@ -2213,6 +2216,23 @@ axioms.  (Hint:  hovering the mouse over the links below will show their
 descriptions.)<P>
 
 
+<!-- The list below was made by hand as follows (last updated 22-Dec-2018):
+1. 'show tr 2p2e4/e/ax/m a*' to determine the complex number axioms used;
+  currently they are:   ax-resscn ax-1cn ax-icn ax-addcl ax-addrcl
+  ax-mulcl ax-mulrcl ax-addass ax-i2m1 ax-1ne0 ax-rrecex ax-cnre
+2. In a temporary copy of set.mm that will be used hereafter, after ax-cnre
+   through 2p2e4, change the labels of these to eliminate the "-" e.g. change
+   ax-resscn to axresscn
+3. 'show tr 2p2e4/e/count' to get the basic list below
+4. Change the last list entry to ax-2 instead of a2i.1.
+5. Use the first line of the description in 'show statement 2p2e4/comment' etc.
+   for the TITLE field.  Add "..." when line continues to next line (look
+   for absence of either trailing '"' or "(Contributed").  Delete starting
+   from "(Contributed" if line has "(Contributed".  Delete trailing '"'
+   if any.
+6. Assemble and format the information into the list below.
+7. Change tilde to ~~, backquote to `` so that 'markup' won't process them
+-->
 <FONT SIZE=-1>
 <A HREF="2p2e4.html" TITLE="Two plus two equals four.  For more information, see '2+2=4 Trivia' on the...">2p2e4</A>
 &lt;- <A HREF="2cn.html" TITLE="The number 2 is a complex number.">2cn</A>
@@ -2991,7 +3011,7 @@ but merely a proof verifier.
 HREF="#bibmegill">Megill</A>] paper.  The claim in Remark 9.6, "C14' is
 omitted from S3' because it can be proved from the others using only
 simple metalogic," is proved in theorem ~ axc14 .
-Axiom C16' is also redundant&mdash;see theorem ~ ax16 , whose proof was discovered in 2006 and not
+Axiom C16' is also redundant&mdash;see theorem ~ axc16 , whose proof was discovered in 2006 and not
 known at the time of the paper.  The somewhat strange-looking axiom C10'
 ( ~ ax-c10 ) was
 found to be equivalent to the simpler ~ ax-6 after
@@ -4269,7 +4289,7 @@ same with the "-" omitted.  For example, obsolete axiom ~ ax-c5 is
 proved as theorem ~ axc5 from using axioms ~ ax-4 through ~ ax-13 .
 
 <P>Axioms with names starting "ax-c" are part of system S3' in Remark
-9.6 of [<A HREF="#bibmegill">Megill</A>], for example ~ ax-c4 is axiom
+9.6 of [<A HREF="#bibmegill">Megill</A>]; for example, ~ ax-c4 is axiom
 C4' there.  Axiom ~ ax-c11n was a newer alternative to ~ ax-c11 ,
 although eventually we proved it redundant (theorem ~ axc11n ).
 
@@ -4289,13 +4309,12 @@ SUMMARY="Variations of axiom system">
 
 </TH><TH>Discussion of resulting subsystem</TH></TR>
 
-<TR><TD> ~ ax-c5 , ~ ax-c4 , ~ ax-c7 , ~ ax-c10 , ~ ax-c11n , ~ ax-c11 , ~ ax-c15 ,
-~ ax-c9 , ~ ax-c14 , and ~ ax-c16
+<TR><TD> ~ ax-c5 , ~ ax-c4 , ~ ax-c7 , ~ ax-c10 , ~ ax-c11n , ~ ax-c11 ,
+~ ax-c15 , ~ ax-c9 , ~ ax-c14 , and ~ ax-c16
 <TD>As mentioned above, these 10 omitted
-axioms can be derived from the others (see theorems ~ axc5 , ~ axc4 , ~ axc7 , ~ axc10 , ~ axc11 ,
-~ axc15 ,
-~ axc9 ,
-~ axc14 , ~ ax16 ).  This system
+axioms can be derived from the others (see theorems ~ axc5 , ~ axc4 , ~ axc7 ,
+~ axc10 , ~ axc11 , ~ axc11n , ~ axc15 , ~ axc9 ,
+~ axc14 , ~ axc16 ).  This system
 is <A HREF="#axiomnote">metalogically complete</A> and is the one we
 ordinarily use.  It is equivalent to system S3' in Remark 9.6 of [<A
 HREF="#bibmegill">Megill</A>].
@@ -4412,6 +4431,136 @@ equivalent subsystem.  Theorems ~ ax4 , ~ ax10 , ~ axc4 , and ~ axc7 prove the e
 </TABLE>
 </CENTER>
 
+
+<P><HR NOSHADE SIZE=1><A NAME="oldaxioms"></A><B><FONT
+COLOR="#006633">Appendix 8:  Axiom numbering
+before December 2018</FONT></B>&nbsp;&nbsp;&nbsp;
+
+On 20-Dec-2018, the predicate calculus axiom schemes were renumbered
+to eliminate gaps caused by obsolete or redundant axiom schemes, as
+well as to order them according to their current
+organization.  Some papers and slide presentations reference the old
+numbering, so this list provides a cross reference.
+
+<P>Axioms with names starting "ax-c" are now obsolete, but they were
+part of system S3' in Remark 9.6 of [<A HREF="#bibmegill">Megill</A>];
+for example, ~ ax-c4 is axiom C4' there.  Axiom ~ ax-c11n was a newer
+alternative to ~ ax-c11 , although eventually we proved it redundant
+(theorem ~ axc11n ). Axiom C5 (not primed) is taken from system S3 but
+is included in S3' as stated in the paper.  The
+obsolete axioms ~ ax-c4 through ~ ax-c16 are kept for historical
+purposes in a deprecated section of set.mm and shouldn't be used outside
+of that section.
+
+<P>In the "Proof" column, the referenced theorem has two meanings.  In
+the rows for new axiom numbers ~ ax-4 through ~ ax-13 , the "Proof"
+column theorem shows a proof of the axiom from the obsolete ones ~ ax-c4
+through ~ ax-c16 . This is useful to see how our current axioms can be
+derived from the old ones in [<A HREF="#bibmegill">Megill</A>].  In the
+rows for ~ ax-c4 through ~ ax-c16 , the "Proof" column theorem shows a
+derivation of the obsolete axiom from our current system ~ ax-4 through
+~ ax-13 .  Together, these proofs show that our current system is
+equivalent to the one in [<A HREF="#bibmegill">Megill</A>].
+
+<!-- Note that &#8203; is a zero-width space that prevents the
+  label from being changed if a global substitution is done. -->
+
+
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Cress reference between orginal and new predicate calculus axioms">
+
+<TR ALIGN=LEFT>
+<TD><FONT COLOR="#006633"><B>New number</B></FONT></TD>
+<TD><FONT COLOR="#006633"><B>Old number</B></FONT></TD>
+<TD><FONT COLOR="#006633"><B>Proof</B></FONT></TD>
+<TD><FONT COLOR="#006633"><B>[<A HREF="#bibmegill">Megill</A>]</B></FONT></TD>
+<TD><FONT COLOR="#006633"><B>Content</B></FONT></TD>
+</TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-4 </TD><TD> ax-5&#8203; </TD><TD> ~ ax4 </TD><TD> - </TD>
+<TD> ` |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-5 </TD><TD> ax-17&#8203; </TD><TD> - </TD><TD> C5 </TD>
+<TD> ` |- ( ph -> A. x ph ) ` , where ` x ` doesn't occur in ` ph ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-6 </TD><TD> ax-9&#8203; </TD><TD> ~ ax6fromc10 </TD><TD> - </TD>
+<TD> ` |- -. A. x ` ` -. x = y ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-7 </TD><TD> ax-8&#8203; </TD><TD> - </TD><TD> C8' </TD>
+<TD> ` |- ( x = y -> ( x = z -> y = z ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-8 </TD><TD> ax-13&#8203; </TD><TD> - </TD><TD> C12' </TD>
+<TD> ` |- ( x = y -> ( x e. z -> y e. z ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-9 </TD><TD> ax-14&#8203; </TD><TD> - </TD><TD> C13' </TD>
+<TD> ` |- ( x = y -> ( z e. x -> z e. y ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-10 </TD><TD> ax-6&#8203; </TD><TD> ~ ax10 </TD><TD> - </TD>
+<TD> ` |- ( -. A. x ph -> A. x -. A. x ph ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-11 </TD><TD> ax-7&#8203; </TD><TD> - </TD><TD> C6' </TD>
+<TD> ` |- ( A. x A. y ph -> A. y A. x ph ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-12 </TD><TD> ax-11&#8203; </TD><TD> ~ ax12 </TD><TD> - </TD>
+<TD> ` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-13 </TD><TD> ax-12&#8203; </TD><TD> ~ ax13fromc9 </TD><TD> - </TD>
+<TD> ` |- ( -. x = y -> ( y = z -> A. x y = z ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c4 </TD><TD> ax-5o&#8203; </TD><TD> ~ axc4 </TD><TD> C4' </TD>
+<TD> ` |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c5 </TD><TD> ax-4&#8203; </TD><TD> ~ axc5 </TD><TD> C5' </TD>
+<TD> ` |- ( A. x ph -> ph ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c7 </TD><TD> ax-6o&#8203; </TD><TD> ~ axc7 </TD><TD> C7' </TD>
+<TD> ` |- ( -. A. x -. A. x ph -> ph ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c9 </TD><TD> ax-12o&#8203; </TD><TD> ~ axc9 </TD><TD> C9' </TD>
+<TD> ` |- ( -. A. z ` ` z = x -> ( -. A. z ` ` z = y -> ( x = y -> A. z ` ` x = y ) ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c10 </TD><TD> ax-9o&#8203; </TD><TD> ~ axc10 </TD><TD> C10' </TD>
+<TD> ` |- ( A. x ( x = y -> A. x ph ) -> ph ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c11 </TD><TD> ax-10o&#8203; </TD><TD> ~ axc11 </TD><TD> C11' </TD>
+<TD> ` |- ( A. x ` ` x = y -> ( A. x ph -> A. y ph ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c11n </TD><TD> ax-10&#8203; </TD><TD> ~ axc11n </TD><TD> - </TD>
+<TD> ` |- ( A. x ` ` x = y -> A. y ` ` y = x ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c14 </TD><TD> ax-15&#8203; </TD><TD> ~ axc14 </TD><TD> C14' </TD>
+<TD> ` |- ( -. A. z ` ` z = x -> ( -. A. z ` ` z = y -> ( x e. y -> A. z ` ` x e. y ) ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c15 </TD><TD> ax-11o&#8203; </TD><TD> ~ axc15 </TD><TD> C15' </TD>
+<TD> ` |- ( -. A. x ` ` x = y -> ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) ` </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c16 </TD><TD> ax-16&#8203; </TD><TD> ~ axc16 </TD><TD> C16' </TD>
+<TD> ` |- ( A. x ` ` x = y -> ( ph -> A. x ph ) ) ` , where ` x ` and ` y ` are distinct </TD></TR>
+
+
+</TABLE>
+</CENTER>
 
 
 <P><HR NOSHADE SIZE=1><A NAME="read"></A><B><FONT
