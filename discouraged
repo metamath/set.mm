@@ -15249,6 +15249,9 @@ New usage of "euanOLD" is discouraged (0 uses).
 New usage of "euexOLD" is discouraged (0 uses).
 New usage of "eufOLD" is discouraged (0 uses).
 New usage of "eujustALT" is discouraged (0 uses).
+New usage of "euor2OLD" is discouraged (0 uses).
+New usage of "eupickbOLD" is discouraged (0 uses).
+New usage of "eupickbiOLD" is discouraged (0 uses).
 New usage of "ex-gt" is discouraged (0 uses).
 New usage of "ex-gte" is discouraged (0 uses).
 New usage of "exanOLD" is discouraged (0 uses).
@@ -16394,6 +16397,7 @@ New usage of "mo3OLD" is discouraged (0 uses).
 New usage of "moOLD" is discouraged (0 uses).
 New usage of "moaneuOLD" is discouraged (0 uses).
 New usage of "moanimOLD" is discouraged (0 uses).
+New usage of "mopickOLD" is discouraged (0 uses).
 New usage of "morimOLD" is discouraged (0 uses).
 New usage of "morimvOLD" is discouraged (0 uses).
 New usage of "mp2ALT" is discouraged (0 uses).
@@ -18201,6 +18205,9 @@ Proof modification of "euanOLD" is discouraged (106 steps).
 Proof modification of "euexOLD" is discouraged (32 steps).
 Proof modification of "eufOLD" is discouraged (73 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
+Proof modification of "euor2OLD" is discouraged (39 steps).
+Proof modification of "eupickbOLD" is discouraged (60 steps).
+Proof modification of "eupickbiOLD" is discouraged (60 steps).
 Proof modification of "ex-natded5.13" is discouraged (67 steps).
 Proof modification of "ex-natded5.13-2" is discouraged (21 steps).
 Proof modification of "ex-natded5.2" is discouraged (18 steps).
@@ -18395,6 +18402,7 @@ Proof modification of "mo3OLD" is discouraged (35 steps).
 Proof modification of "moOLD" is discouraged (254 steps).
 Proof modification of "moaneuOLD" is discouraged (37 steps).
 Proof modification of "moanimOLD" is discouraged (84 steps).
+Proof modification of "mopickOLD" is discouraged (123 steps).
 Proof modification of "morimOLD" is discouraged (17 steps).
 Proof modification of "morimvOLD" is discouraged (67 steps).
 Proof modification of "mp2" is discouraged (11 steps).
