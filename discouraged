@@ -441,11 +441,6 @@
 "5oalem6" is used by "5oalem7".
 "5oalem7" is used by "5oai".
 "a16g-o" is used by "ax12inda2".
-"a4i-o" is used by "aev-o".
-"a4i-o" is used by "ax12inda2ALT".
-"a4i-o" is used by "ax12indalem".
-"a4i-o" is used by "axc11n-16".
-"a4i-o" is used by "hbae-o".
 "a6e2eq" is used by "a6e2ndeq".
 "a6e2eq" is used by "a6e2ndeqALT".
 "a6e2eq" is used by "a6e2ndeqVD".
@@ -1349,16 +1344,6 @@
 "ax12indalem" is used by "ax12inda2".
 "ax12indn" is used by "ax12indi".
 "ax12v2-o" is used by "ax12a2-o".
-"ax13lem1" is used by "ax13lem2".
-"ax13lem1" is used by "nfeqf".
-"ax13lem2" is used by "a6e".
-"ax13lem2" is used by "ax13lem3".
-"ax13lem2" is used by "dveeq2".
-"ax13lem3" is used by "dveeq2".
-"ax16ALT" is used by "dvelimALT".
-"ax16ALT2" is used by "a16gALT".
-"ax16ALT2OLD11" is used by "a16gALTOLD11".
-"ax16ALTNEW11" is used by "dvelimALTNEW11".
 "ax5el" is used by "dveel2ALT".
 "ax5eq" is used by "dveeq1-o16".
 "ax6fromc10" is used by "equidqe".
@@ -1372,6 +1357,15 @@
 "axc11nlem3OLD" is used by "dvelimvOLD".
 "axc11nlem4OLD" is used by "axc11nlem5OLD".
 "axc11nlem5OLD" is used by "axc11nOLD".
+"axc16ALT" is used by "dvelimALT".
+"axc16ALT2" is used by "a16gALT".
+"axc16ALT2OLD11" is used by "a16gALTOLD11".
+"axc16ALTNEW11" is used by "dvelimALTNEW11".
+"axc4i-o" is used by "aev-o".
+"axc4i-o" is used by "ax12inda2ALT".
+"axc4i-o" is used by "ax12indalem".
+"axc4i-o" is used by "axc11n-16".
+"axc4i-o" is used by "hbae-o".
 "axc5c7" is used by "axc5c7toc5".
 "axc5c7" is used by "axc5c7toc7".
 "axc5c711" is used by "axc5c711to11".
@@ -1381,10 +1375,16 @@
 "axc711" is used by "axc711to11".
 "axc711" is used by "axc711toc7".
 "axc711toc7" is used by "axc711to11".
+"axc9lem1" is used by "axc9lem2".
+"axc9lem1" is used by "nfeqf".
 "axc9lem1OLD" is used by "axc9lem2OLD".
 "axc9lem1OLD" is used by "axc9lem2OLD11".
 "axc9lem1OLD" is used by "axc9lem2wAUX11".
+"axc9lem2" is used by "a6e".
+"axc9lem2" is used by "axc9lem3".
+"axc9lem2" is used by "dveeq2".
 "axc9lem2OLD" is used by "axc9lem4OLD".
+"axc9lem3" is used by "dveeq2".
 "axc9lem3OLD" is used by "axc9lem4OLD".
 "axc9lem3OLD" is used by "axc9lem4OLD11".
 "axc9lem3OLD" is used by "axc9lem4wAUX11".
@@ -6494,10 +6494,10 @@
 "hatomici" is used by "hatomistici".
 "hatomici" is used by "mdsymlem2".
 "hatomistici" is used by "chpssati".
-"hba1-o" is used by "a4i-o".
 "hba1-o" is used by "ax12inda".
 "hba1-o" is used by "ax12inda2ALT".
 "hba1-o" is used by "ax12indalem".
+"hba1-o" is used by "axc4i-o".
 "hba1-o" is used by "axc5c711toc7".
 "hba1-o" is used by "axc711toc7".
 "hba1-o" is used by "dvelimf-o".
@@ -13384,7 +13384,6 @@ New usage of "a16gALTOLD11" is discouraged (0 uses).
 New usage of "a16gOLD" is discouraged (0 uses).
 New usage of "a16nfALT" is discouraged (0 uses).
 New usage of "a1iiALT" is discouraged (0 uses).
-New usage of "a4i-o" is discouraged (5 uses).
 New usage of "a6e2eq" is discouraged (3 uses).
 New usage of "a6e2eqVD" is discouraged (0 uses).
 New usage of "a6e2nd" is discouraged (3 uses).
@@ -13593,14 +13592,6 @@ New usage of "ax12v2OLD" is discouraged (0 uses).
 New usage of "ax12vALT" is discouraged (0 uses).
 New usage of "ax13OLD" is discouraged (0 uses).
 New usage of "ax13fromc9" is discouraged (0 uses).
-New usage of "ax13lem1" is discouraged (2 uses).
-New usage of "ax13lem2" is discouraged (3 uses).
-New usage of "ax13lem3" is discouraged (1 uses).
-New usage of "ax16ALT" is discouraged (1 uses).
-New usage of "ax16ALT2" is discouraged (1 uses).
-New usage of "ax16ALT2OLD11" is discouraged (1 uses).
-New usage of "ax16ALTNEW11" is discouraged (1 uses).
-New usage of "ax16b" is discouraged (0 uses).
 New usage of "ax1cn" is discouraged (0 uses).
 New usage of "ax1ne0" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
@@ -13632,6 +13623,12 @@ New usage of "axc11nlem2OLD" is discouraged (1 uses).
 New usage of "axc11nlem3OLD" is discouraged (2 uses).
 New usage of "axc11nlem4OLD" is discouraged (1 uses).
 New usage of "axc11nlem5OLD" is discouraged (1 uses).
+New usage of "axc16ALT" is discouraged (1 uses).
+New usage of "axc16ALT2" is discouraged (1 uses).
+New usage of "axc16ALT2OLD11" is discouraged (1 uses).
+New usage of "axc16ALTNEW11" is discouraged (1 uses).
+New usage of "axc16b" is discouraged (0 uses).
+New usage of "axc4i-o" is discouraged (5 uses).
 New usage of "axc5" is discouraged (0 uses).
 New usage of "axc5c7" is discouraged (2 uses).
 New usage of "axc5c711" is discouraged (3 uses).
@@ -13645,8 +13642,11 @@ New usage of "axc711" is discouraged (2 uses).
 New usage of "axc711to11" is discouraged (0 uses).
 New usage of "axc711toc7" is discouraged (1 uses).
 New usage of "axc9OLD" is discouraged (0 uses).
+New usage of "axc9lem1" is discouraged (2 uses).
 New usage of "axc9lem1OLD" is discouraged (3 uses).
+New usage of "axc9lem2" is discouraged (3 uses).
 New usage of "axc9lem2OLD" is discouraged (1 uses).
+New usage of "axc9lem3" is discouraged (1 uses).
 New usage of "axc9lem3OLD" is discouraged (3 uses).
 New usage of "axc9lem4OLD" is discouraged (1 uses).
 New usage of "axc9lem5OLD" is discouraged (2 uses).
@@ -14147,6 +14147,7 @@ New usage of "bralnfn" is discouraged (2 uses).
 New usage of "bramul" is discouraged (1 uses).
 New usage of "branmfn" is discouraged (1 uses).
 New usage of "braval" is discouraged (10 uses).
+New usage of "bwthOLD" is discouraged (0 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (58 uses).
 New usage of "cadanOLD" is discouraged (0 uses).
@@ -17828,13 +17829,6 @@ Proof modification of "ax12v2OLD" is discouraged (107 steps).
 Proof modification of "ax12vALT" is discouraged (81 steps).
 Proof modification of "ax13OLD" is discouraged (72 steps).
 Proof modification of "ax13fromc9" is discouraged (72 steps).
-Proof modification of "ax16ALT" is discouraged (20 steps).
-Proof modification of "ax16ALT2" is discouraged (62 steps).
-Proof modification of "ax16ALT2OLD11" is discouraged (62 steps).
-Proof modification of "ax16ALTNEW11" is discouraged (20 steps).
-Proof modification of "ax16b" is discouraged (14 steps).
-Proof modification of "ax16i" is discouraged (135 steps).
-Proof modification of "ax16iNEW11" is discouraged (135 steps).
 Proof modification of "ax2" is discouraged (46 steps).
 Proof modification of "ax3" is discouraged (24 steps).
 Proof modification of "ax4" is discouraged (45 steps).
@@ -17860,6 +17854,13 @@ Proof modification of "axc11nlem2OLD" is discouraged (84 steps).
 Proof modification of "axc11nlem3OLD" is discouraged (48 steps).
 Proof modification of "axc11nlem5OLD" is discouraged (48 steps).
 Proof modification of "axc14" is discouraged (72 steps).
+Proof modification of "axc16ALT" is discouraged (20 steps).
+Proof modification of "axc16ALT2" is discouraged (62 steps).
+Proof modification of "axc16ALT2OLD11" is discouraged (62 steps).
+Proof modification of "axc16ALTNEW11" is discouraged (20 steps).
+Proof modification of "axc16b" is discouraged (14 steps).
+Proof modification of "axc16i" is discouraged (135 steps).
+Proof modification of "axc16iNEW11" is discouraged (135 steps).
 Proof modification of "axc4" is discouraged (49 steps).
 Proof modification of "axc5" is discouraged (3 steps).
 Proof modification of "axc5c4c711to11" is discouraged (111 steps).
