@@ -43417,10 +43417,11 @@ $)
        domain.  (Contributed by Alexander van der Vekens, 15-Jul-2018.) $)
     sbcfng $p |- ( X e. V -> ( [. X / x ]. F Fn A
                               <-> [_ X / x ]_ F Fn [_ X / x ]_ A ) ) $=
-      ( wcel wfn wsbc wfun cdm wa csb wb df-fn a1i sbcbidv sbcfung sbceqg csbdm
-      wceq eqeq1i syl6bb anbi12d sbcan 3bitr4g bitrd ) EDFZCBGZAEHCIZCJZBTZKZAE
-      HZAECLZAEBLZGZUGUHULAEUHULMUGCBNOPUGUIAEHZUKAEHZKUNIZUNJZUOTZKUMUPUGUQUSU
-      RVAAECDQUGURAEUJLZUOTVAAEUJBDRVBUTUOAECSUAUBUCUIUKAEUDUNUONUEUF $.
+      ( wcel wfn wsbc wfun cdm wa csb wb df-fn sbcbidv sbcfung sbceqg
+      wceq a1i bitrd csbdmg eqeq1d anbi12d sbcan 3bitr4g ) EDFZCBGZAE
+      HCIZCJZBRZKZAEHZAECLZAEBLZGZUFUGUKAEUGUKMUFCBNSOUFUHAEHZUJAEHZK
+      UMIZUMJZUNRZKULUOUFUPURUQUTAECDPUFUQAEUILZUNRUTAEUIBDQUFVAUSUNA
+      ECDUAUBTUCUHUJAEUDUMUNNUET $.
 
     $( Distribute proper substitution through the function predicate with
        domain and codomain.  (Contributed by Alexander van der Vekens,
