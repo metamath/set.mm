@@ -43428,11 +43428,11 @@ $)
        15-Jul-2018.) $)
     sbcfg $p |- ( X e. V -> ( [. X / x ]. F : A --> B
                  <-> [_ X / x ]_ F : [_ X / x ]_ A --> [_ X / x ]_ B ) ) $=
-      ( wcel wf wsbc wfn crn wss wa csb wb df-f a1i sbcbidv sbcfng sbcssg csbrn
-      sseq1i syl6bb anbi12d sbcan 3bitr4g bitrd ) FEGZBCDHZAFIDBJZDKZCLZMZAFIZA
-      FBNZAFCNZAFDNZHZUHUIUMAFUIUMOUHBCDPQRUHUJAFIZULAFIZMUQUOJZUQKZUPLZMUNURUH
-      USVAUTVCABDEFSUHUTAFUKNZUPLVCAFUKCETVDVBUPAFDUAUBUCUDUJULAFUEUOUPUQPUFUG
-      $.
+      ( wcel wf wsbc wfn crn wss wa csb df-f a1i sbcbidv sbcfng bitrd
+      wb sbcssg csbrng sseq1d anbi12d sbcan 3bitr4g ) FEGZBCDHZAFIDBJ
+      ZDKZCLZMZAFIZAFBNZAFCNZAFDNZHZUGUHULAFUHULTUGBCDOPQUGUIAFIZUKAF
+      IZMUPUNJZUPKZUOLZMUMUQUGURUTUSVBABDEFRUGUSAFUJNZUOLVBAFUJCEUAUG
+      VCVAUOAFDEUBUCSUDUIUKAFUEUNUOUPOUFS $.
   $}
 
   $( A mapping is a function.  (Contributed by NM, 2-Aug-1994.) $)
