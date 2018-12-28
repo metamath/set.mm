@@ -43575,19 +43575,24 @@ $)
     wceq syl feq1d mpbid ) ABCEZADFZBCUCGZEZUCBCDGZEUBUCAHUEADIABUCCJKUBUCBUDUF
     UBUDCAGZDGUFCADLUBUGCDUBCAMUGCRABCNACOSPQTUA $.
 
-  $( If two functions agree on their common domain, express their union as a
-     union of three functions with pairwise disjoint domains.  (Contributed by
-     Stefan O'Rear, 9-Oct-2014.) $)
-  resasplit $p |- ( ( F Fn A /\ G Fn B /\
-      ( F |` ( A i^i B ) ) = ( G |` ( A i^i B ) ) ) -> ( F u. G ) =
-  ( ( F |` ( A i^i B ) ) u. ( ( F |` ( A \ B ) ) u. ( G |` ( B \ A ) ) ) ) ) $=
-    ( wfn cin cres w3a cun fnresdm uneq12 syl2an inundif reseq2i resundi eqtr3i
-    wceq cdif uneq1i syl6eq 3adant3 simp3 uneq1d uneq2d incom eqtri uneq12i un4
-    syl6reqr unidm eqtr3d ) CAEZDBEZCABFZGZDUNGZQZHZCAGZDBGZIZCDIZUOCABRZGZDBAR
-    ZGZIZIZULUMVAVBQZUQULUSCQUTDQVIUMACJBDJUSCUTDKLUAURVAUOUOIZVGIZVHURVAUOVDIZ
-    UOVFIZIZVKURVNVLUPVFIZIVAURVMVOVLURUOUPVFULUMUQUBUCUDUSVLUTVOCUNVCIZGUSVLVP
-    ACABMNCUNVCOPDUNVEIZGUTVOVQBDVQBAFZVEIBUNVRVEABUESBAMUFNDUNVEOPUGUIUOVDUOVF
-    UHTVJUOVGUOUJSTUK $.
+  $( If two functions agree on their common domain, their union contains a
+     union of three functions with pairwise disjoint domains.  If we assumed
+     the law of the excluded middle, this would be equality rather than
+     subset.  (Contributed by Jim Kingdon, 28-Dec-2018.) $)
+  resasplitss $p |- ( ( F Fn A /\ G Fn B /\
+      ( F |` ( A i^i B ) ) = ( G |` ( A i^i B ) ) ) ->
+        ( ( F |` ( A i^i B ) ) u. ( ( F |` ( A \ B ) ) u. ( G |` ( B \ A ) ) ) )
+        C_ ( F u. G )
+      ) $=
+    ( wfn cin cres wceq w3a cun uneq1i resundi inundifss ssres2 ax-mp
+    cdif wss eqsstr3i syl5eqssr fnresdm unidm un4 simp3 uneq1d uneq2d
+    incom eqsstri unss12 mp2an syl6eqss uneq12 syl2an 3adant3 sseqtrd
+    ) CAEZDBEZCABFZGZDUQGZHZIZURCABPZGZDBAPZGZJZJZCAGZDBGZJZCDJZVAVGU
+    RURJZVFJZVJVLURVFURUAKVAVMURVCJZURVEJZJZVJURVCURVEUBVAVPVNUSVEJZJ
+    ZVJVAVOVQVNVAURUSVEUOUPUTUCUDUEVNVHQVQVIQVRVJQVNCUQVBJZGZVHCUQVBL
+    VSAQVTVHQABMVSACNORVQDUQVDJZGZVIDUQVDLWABQWBVIQWABAFZVDJBUQWCVDAB
+    UFKBAMUGWABDNORVNVHVQVIUHUIUJSSUOUPVJVKHZUTUOVHCHVIDHWDUPACTBDTVH
+    CVIDUKULUMUN $.
 
   $( The union of two functions which agree on their common domain is a
      function.  (Contributed by Stefan O'Rear, 9-Oct-2014.) $)
