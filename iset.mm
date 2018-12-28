@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Dec-2018
+$( iset.mm - Version of 27-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -42860,18 +42860,41 @@ $)
   $}
 
   ${
-    $d w B $.  $d x y z w A $.
-    $( Axiom of Replacement using abbreviations.  Axiom 39(vi) of [Quine]
-       p. 284.  Compare Exercise 9 of [TakeutiZaring] p. 29.  (Contributed by
-       NM, 10-Sep-2006.) $)
-    funimaexg $p |- ( ( Fun A /\ B e. C ) -> ( A " B ) e. _V ) $=
-      ( vw vx vy vz wcel wfun cima cvv cv wceq imaeq2 eleq1d wal wex wel bitri
-      wi imbi2d cop wrel dffun5 simprbi wa wb nfv axrep4 isset cab dfima3 abeq2
-      eqeq2i exbii sylibr syl vtoclg impcom ) BCHAIZABJZKHZUTADLZJZKHZTUTVBTDBC
-      VCBMZVEVBUTVFVDVAKVCBANOUAUTELFLZUBAHZVGGLZMTFPGQEPZVEUTAUCVJEFGAUDUEVJFG
-      REDRVHUFEQZUGFPZGQZVEVHEFGDVHGUHUIVEVIVDMZGQVMGVDUJVNVLGVNVIVKFUKZMVLVDVO
-      VIEFAVCULUNVKFVIUMSUOSUPUQURUS $.
+    $d A b x y z $.  $d B b x y z $.  $d C z $.
+    $( Lemma for ~ funimaexg .  It constitutes the interesting part of
+       ~ funimaexg , in which ` B C_ dom A ` .  (Contributed by Jim Kingdon,
+       27-Dec-2018.) $)
+    funimaexglem $p |- ( ( Fun A /\ B e. C /\ B C_ dom A ) -> ( A " B ) e. _V ) $=
+      ( vz vx vy vb wcel wss w3a cv wex wrex wel wi wal wral wa simprbi exbii
+      wfun cdm cima cvv wbr cab wmo dffun7 3ad2ant1 ssralv 3ad2ant3 mpd alrimiv
+      wrel wceq weu sseq1 biimpar 3adant1 jca dffun8 adantl ssel adantr sylsyld
+      simp1 rsp ralrimiv zfrep6 3syl raleq exbidv 3ad2ant2 mpbid 3com12 vtocleg
+      wb 3expib 3impib df-rex exancom bitri sylib 19.29 nfcv nfmo1 nfralxy nfe1
+      ralbii r19.26 mopick ralimi sylbir alrimi eximi syl syl2anc r19.23v albii
+      nfan abss sylibr dfima2 sseq1i vex ssex exlimiv ) AUAZBCHZBAUBZIZJZABUCZD
+      KZIZDLZXMUDHZXLEKZFKAUEZEBMZFUFZXNIZDLZXPXLXTFDNZOZFPZDLZYCXLXSYDOZEBQZFP
+      ZDLZYGXLXSFUGZEBQZDPZXSYDRZFLZEBQZDLZYKXLYMDXLYLEXJQZYMXHXIYSXKXHAUNZYSEF
+      AUHSUIXKXHYSYMOXIYLEBXJUJUKULUMXLXSFXNMZEBQZDLZYRXIXHXKUUCXIXHXKUUCXHXKRU
+      UCOGBCGKZBUOZXHXKUUCXHUUEXKUUCXHUUEXKJZUUAEUUDQZDLZUUCUUFUUDXJIZXHRZXSFUP
+      ZEUUDQUUHUUFUUIXHUUEXKUUIXHUUEUUIXKUUDBXJUQURUSXHUUEXKVFUTUUJUUKEUUDUUJUU
+      KEXJQZEGNZXRXJHZUUKXHUULUUIXHYTUULEFAVASVBUUIUUMUUNOXHUUDXJXRVCVDUUKEXJVG
+      VEVHXSEFGDVIVJUUEXHUUHUUCVQXKUUEUUGUUBDUUAEUUDBVKVLVMVNVOVRVPVSVOUUBYQDUU
+      AYPEBUUAYDXSRFLYPXSFXNVTYDXSFWAWBWITWCYNYRRYMYQRZDLYKYMYQDWDUUOYJDUUOYIFY
+      MYQFYLFEBFBWEZXSFWFWGYPFEBUUPYOFWHWGWTUUOYLYPRZEBQYIYLYPEBWJUUQYHEBXSYDFW
+      KWLWMWNWOWPWQYJYFDYIYEFXSYDEBWRWSTWCYBYFDXTFXNXATXBXOYBDXMYAXNEFABXCXDTXB
+      XOXQDXMXNDXEXFXGWP $.
   $}
+
+  $( Axiom of Replacement using abbreviations.  Axiom 39(vi) of [Quine]
+     p. 284.  Compare Exercise 9 of [TakeutiZaring] p. 29.  (Contributed by NM,
+     10-Sep-2006.) $)
+  funimaexg $p |- ( ( Fun A /\ B e. C ) -> ( A " B ) e. _V ) $=
+    ( wfun wcel wa cdm cin cima cvv wrel wceq ax-ia1 funrel cres resres reseq2i
+    crn incom df-ima eqtr4i resdm reseq1d syl5eqr rneqd 3eqtr4g 3syl inex1g wss
+    inss2 funimaexglem mp3an3 sylan2 eqeltrrd ) ADZBCEZFZABAGZHZIZABIZJUQUOAKZU
+    TVALUOUPMANVBAUSOZRABOZRUTVAVBVCVDVBVCAUROZBOZVDVFAURBHZOVCAURBPUSVGABURSQU
+    AVBVEABAUBUCUDUEAUSTABTUFUGUPUOUSJEZUTJEZBURCUHUOVHUSURUIVIBURUJAUSJUKULUMU
+    N $.
 
   ${
     zfrep5.1 $e |- B e. _V $.
