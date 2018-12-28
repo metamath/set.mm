@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Dec-2018
+$( iset.mm - Version of 28-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -15921,6 +15921,19 @@ $)
       DCUARSSAVAVEBMZDKZVGAVAVIDADEUBZADCVKRVAVEABVAVEABMABCUCUDUEUFVJV
       BVFCVEBDUGUHUJQUSVGVAUSVFVCUSVEDFZHVFVLURVEURDADCVKUKABCUIQULVEDU
       MUNTTUOUPUQ $.
+  $}
+
+  ${
+    euexex.1 $e |- F/ y ph $.
+    $( Existential uniqueness and "at most one" double quantification.
+       (Contributed by Jim Kingdon, 28-Dec-2018.) $)
+    euexex $p |-
+        ( ( E! x ph /\ A. x E* y ps ) -> E* y E. x ( ph /\ ps ) ) $=
+      ( weu wmo wal wa wex wi eu5 nfmo1 nfa1 nfe1 nfmo nfim mopick ex
+      imp com3r alrimd moim spsd syl6 exlimi sylbi ) ACFZBDGZCHZABIZC
+      JZDGZUHACJZACGZIUJUMKZACLUNUOUPAUOUPKCUOUPCACMUJUMCUICNULCDUKCO
+      PQQAUOULBKZDHZUPAUOUQDEADCEPUOULABUOULABKABCRSUAUBURUIUMCULBDUC
+      UDUEUFTUGT $.
   $}
 
   $( Double quantification with "at most one."  (Contributed by NM,
