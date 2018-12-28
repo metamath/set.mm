@@ -155,14 +155,14 @@ SIZE=-1><I>19-May-2003</I></FONT>
 
 </LI>
 <LI> <A HREF="#trivia">2 + 2 = 4 Trivia</A>  &nbsp;
-    <FONT SIZE=-1><A HREF="#2p2e4length">more</A></FONT>
+    <FONT SIZE=-1>(<A HREF="#2p2e4length">more</A>
 
-<!--
-<FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>Revised</FONT> <FONT
-SIZE=-1><I>2-Jun-2008 (added mouseovers)</I></FONT>
--->
+<FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>Added</FONT> <FONT
+  SIZE=-1><I>22-Dec-2018</I></FONT>)
 
+</FONT>
 </LI>
+
 <LI> <A HREF="#axiomnote">Appendix 1: A Note on the Axioms</A>
 
 <!--
@@ -211,8 +211,8 @@ Subsystems</A>
 
 </LI>
 
-<LI> <A HREF="#oldaxioms">Appendix 8: Axiom numbering
-before December 2018</A>
+<LI> <A HREF="#oldaxioms">Appendix 8: Axiom Numbering
+Before December 2018</A>
 
 <FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>Added</FONT> <FONT
 SIZE=-1><I>26-Dec-2018</I></FONT>
@@ -1307,6 +1307,10 @@ such theorems.
 devised by logician Alfred Tarski and auxiliary axioms needed to endow the
 system with a property called "metalogical completeness."  This is
 explained <A HREF="#compare">below</A>.
+
+<P>In December 2018, the axioms were renumbered and may not correspond
+to the numbers in older papers, slide presentations, and websites.  See <A
+HREF="#oldaxioms">Appendix 8</A> for details.
 
 <!--
 <P>(This ends the section on predicate calculus.)
@@ -4433,14 +4437,21 @@ equivalent subsystem.  Theorems ~ ax4 , ~ ax10 , ~ axc4 , and ~ axc7 prove the e
 
 
 <P><HR NOSHADE SIZE=1><A NAME="oldaxioms"></A><B><FONT
-COLOR="#006633">Appendix 8:  Axiom numbering
-before December 2018</FONT></B>&nbsp;&nbsp;&nbsp;
+COLOR="#006633">Appendix 8:  Axiom Numbering
+Before December 2018</FONT></B>&nbsp;&nbsp;&nbsp;
 
-On 20-Dec-2018, the predicate calculus axiom schemes were renumbered
-to eliminate gaps caused by obsolete or redundant axiom schemes, as
-well as to order them according to their current
-organization.  Some papers and slide presentations reference the old
-numbering, so this list provides a cross reference.
+On 20-Dec-2018, the <A HREF="#pcaxioms">predicate calculus</A> axiom
+schemes were renumbered to eliminate gaps caused by obsolete or
+redundant axiom schemes, as well as to order them according to their
+current organization.  Older papers, slide presentations, and websites
+may reference the old numbering, and the table below provides a cross
+reference.
+
+<P>For further information about this renumbering, see this <A
+HREF="https://groups.google.com/d/msg/metamath/OS4I_A32RTQ/6J2DmsJWCwAJ">Google
+Group discussion</A> [retrieved 27-Dec-2018] and this <A
+HREF="https://github.com/metamath/set.mm/issues/703">GitHub
+discussion</A> [retrieved 27-Dec-2018].
 
 <P>Axioms with names starting "ax-c" are now obsolete, but they were
 part of system S3' in Remark 9.6 of [<A HREF="#bibmegill">Megill</A>];
@@ -4449,7 +4460,7 @@ alternative to ~ ax-c11 , although eventually we proved it redundant
 (theorem ~ axc11n ). Axiom C5 (not primed) is taken from system S3 but
 is included in S3' as stated in the paper.  The
 obsolete axioms ~ ax-c4 through ~ ax-c16 are kept for historical
-purposes in a deprecated section of set.mm and shouldn't be used outside
+reasons in a deprecated section of set.mm and shouldn't be used outside
 of that section.
 
 <P>In the "Proof" column, the referenced theorem has two meanings.  In
@@ -4468,7 +4479,7 @@ equivalent to the one in [<A HREF="#bibmegill">Megill</A>].
 
 <CENTER>
 <TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
-SUMMARY="Cress reference between orginal and new predicate calculus axioms">
+SUMMARY="Cross reference between orginal and new predicate calculus axioms">
 
 <TR ALIGN=LEFT>
 <TD><FONT COLOR="#006633"><B>New number</B></FONT></TD>
@@ -4476,87 +4487,111 @@ SUMMARY="Cress reference between orginal and new predicate calculus axioms">
 <TD><FONT COLOR="#006633"><B>Proof</B></FONT></TD>
 <TD><FONT COLOR="#006633"><B>[<A HREF="#bibmegill">Megill</A>]</B></FONT></TD>
 <TD><FONT COLOR="#006633"><B>Content</B></FONT></TD>
+<TD><FONT COLOR="#006633"><B>Description</B></FONT></TD>
 </TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-4 </TD><TD> ax-5&#8203; </TD><TD> ~ ax4 </TD><TD> - </TD>
-<TD> ` |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) ` </TD></TR>
+<TD> ` |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) ` </TD>
+<TD> Quantified Implication </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-5 </TD><TD> ax-17&#8203; </TD><TD> - </TD><TD> C5 </TD>
-<TD> ` |- ( ph -> A. x ph ) ` , where ` x ` doesn't occur in ` ph ` </TD></TR>
+<TD> ` |- ( ph -> A. x ph ) ` , where ` x ` does not occur in ` ph ` </TD>
+<TD> Distinctness </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-6 </TD><TD> ax-9&#8203; </TD><TD> ~ ax6fromc10 </TD><TD> - </TD>
-<TD> ` |- -. A. x ` ` -. x = y ` </TD></TR>
+<TD> ` |- -. A. x ` ` -. x = y ` </TD>
+<TD> Existence </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-7 </TD><TD> ax-8&#8203; </TD><TD> - </TD><TD> C8' </TD>
-<TD> ` |- ( x = y -> ( x = z -> y = z ) ) ` </TD></TR>
+<TD> ` |- ( x = y -> ( x = z -> y = z ) ) ` </TD>
+<TD> Equality </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-8 </TD><TD> ax-13&#8203; </TD><TD> - </TD><TD> C12' </TD>
-<TD> ` |- ( x = y -> ( x e. z -> y e. z ) ) ` </TD></TR>
+<TD> ` |- ( x = y -> ( x e. z -> y e. z ) ) ` </TD>
+<TD> Left Equality for Binary Predicate </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-9 </TD><TD> ax-14&#8203; </TD><TD> - </TD><TD> C13' </TD>
-<TD> ` |- ( x = y -> ( z e. x -> z e. y ) ) ` </TD></TR>
+<TD> ` |- ( x = y -> ( z e. x -> z e. y ) ) ` </TD>
+<TD> Right Equality for Binary Predicate </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-10 </TD><TD> ax-6&#8203; </TD><TD> ~ ax10 </TD><TD> - </TD>
-<TD> ` |- ( -. A. x ph -> A. x -. A. x ph ) ` </TD></TR>
+<TD> ` |- ( -. A. x ph -> A. x -. A. x ph ) ` </TD>
+<TD> Quantified Negation </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-11 </TD><TD> ax-7&#8203; </TD><TD> - </TD><TD> C6' </TD>
-<TD> ` |- ( A. x A. y ph -> A. y A. x ph ) ` </TD></TR>
+<TD> ` |- ( A. x A. y ph -> A. y A. x ph ) ` </TD>
+<TD> Quantifier Commutation </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-12 </TD><TD> ax-11&#8203; </TD><TD> ~ ax12 </TD><TD> - </TD>
-<TD> ` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD></TR>
+<TD> ` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD>
+<TD> Substitution </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-13 </TD><TD> ax-12&#8203; </TD><TD> ~ ax13fromc9 </TD><TD> - </TD>
-<TD> ` |- ( -. x = y -> ( y = z -> A. x y = z ) ) ` </TD></TR>
+<TD> ` |- ( -. x = y -> ( y = z -> A. x y = z ) ) ` </TD>
+<TD> Quantified Equality </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD COLSPAN=6> </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-c4 </TD><TD> ax-5o&#8203; </TD><TD> ~ axc4 </TD><TD> C4' </TD>
-<TD> ` |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) ` </TD></TR>
+<TD> ` |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) ` </TD>
+<TD> Quantified Implication </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-c5 </TD><TD> ax-4&#8203; </TD><TD> ~ axc5 </TD><TD> C5' </TD>
-<TD> ` |- ( A. x ph -> ph ) ` </TD></TR>
+<TD> ` |- ( A. x ph -> ph ) ` </TD>
+<TD> Specialization </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-c7 </TD><TD> ax-6o&#8203; </TD><TD> ~ axc7 </TD><TD> C7' </TD>
-<TD> ` |- ( -. A. x -. A. x ph -> ph ) ` </TD></TR>
+<TD> ` |- ( -. A. x -. A. x ph -> ph ) ` </TD>
+<TD> Quantified Negation </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-c9 </TD><TD> ax-12o&#8203; </TD><TD> ~ axc9 </TD><TD> C9' </TD>
-<TD> ` |- ( -. A. z ` ` z = x -> ( -. A. z ` ` z = y -> ( x = y -> A. z ` ` x = y ) ) ) ` </TD></TR>
+<TD> ` |- ( -. A. z ` ` z = x -> ( -. A. z ` ` z = y -> ( x = y -> A. z ` ` x = y ) ) ) ` </TD>
+<TD> Quantified Equality </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-c10 </TD><TD> ax-9o&#8203; </TD><TD> ~ axc10 </TD><TD> C10' </TD>
-<TD> ` |- ( A. x ( x = y -> A. x ph ) -> ph ) ` </TD></TR>
+<TD> ` |- ( A. x ( x = y -> A. x ph ) -> ph ) ` </TD>
+<TD> Existence </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-c11 </TD><TD> ax-10o&#8203; </TD><TD> ~ axc11 </TD><TD> C11' </TD>
-<TD> ` |- ( A. x ` ` x = y -> ( A. x ph -> A. y ph ) ) ` </TD></TR>
+<TD> ` |- ( A. x ` ` x = y -> ( A. x ph -> A. y ph ) ) ` </TD>
+<TD> Quantifier Substitution </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-c11n </TD><TD> ax-10&#8203; </TD><TD> ~ axc11n </TD><TD> - </TD>
-<TD> ` |- ( A. x ` ` x = y -> A. y ` ` y = x ) ` </TD></TR>
+<TD> ` |- ( A. x ` ` x = y -> A. y ` ` y = x ) ` </TD>
+<TD> Quantifier Substitution </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-c14 </TD><TD> ax-15&#8203; </TD><TD> ~ axc14 </TD><TD> C14' </TD>
-<TD> ` |- ( -. A. z ` ` z = x -> ( -. A. z ` ` z = y -> ( x e. y -> A. z ` ` x e. y ) ) ) ` </TD></TR>
+<TD> ` |- ( -. A. z ` ` z = x -> ( -. A. z ` ` z = y -> ( x e. y -> A. z ` ` x e. y ) ) ) ` </TD>
+<TD> Quantified Binary Predicate </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-c15 </TD><TD> ax-11o&#8203; </TD><TD> ~ axc15 </TD><TD> C15' </TD>
-<TD> ` |- ( -. A. x ` ` x = y -> ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) ` </TD></TR>
+<TD> ` |- ( -. A. x ` ` x = y -> ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) ` </TD>
+<TD> Variable Substitution </TD></TR>
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-c16 </TD><TD> ax-16&#8203; </TD><TD> ~ axc16 </TD><TD> C16' </TD>
-<TD> ` |- ( A. x ` ` x = y -> ( ph -> A. x ph ) ) ` , where ` x ` and ` y ` are distinct </TD></TR>
+<TD> ` |- ( A. x ` ` x = y -> ( ph -> A. x ph ) ) ` , where ` x ` and ` y ` are distinct </TD>
+<TD> Distinct Variables </TD></TR>
 
 
 </TABLE>
@@ -5297,7 +5332,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 20-Dec-2018.</FONT></I><BR><FONT
+ page was last updated on 27-Dec-2018.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
