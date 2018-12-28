@@ -42396,6 +42396,22 @@ $)
       ( wfun cmpt funmpt funeqi mpbir ) DFABCGZFABCHDKEIJ $.
   $}
 
+  ${
+    $d x y z F $.  $d x y z G $.
+    $( The composition of two functions is a function.  Exercise 29 of
+       [TakeutiZaring] p. 25.  (Contributed by NM, 26-Jan-1997.)  (Proof
+       shortened by Andrew Salmon, 17-Sep-2011.) $)
+    funco $p |- ( ( Fun F /\ Fun G ) -> Fun ( F o. G ) ) $=
+      ( vx vy vz wfun ccom wrel wbr wmo cdm wral wex wss dmcoss weu sylibr wcel
+      wa cv wal funmo alrimiv ralrimivw dffun8 simprbi r19.26 nfv euexex ralimi
+      anim12ci ssralv mpsyl copab df-br df-co eleq2i opabid 3bitri mobii ralbii
+      syl cop relco jctil dffun7 ) AFZBFZSZABGZHZCTZDTZVJIZDJZCVJKZLZSVJFVIVQVK
+      VIVLETZBIZVRVMAIZSEMZDJZCVPLZVQVPBKZNVIWBCWDLZWCABOVIVSEPZVTDJZEUAZSZCWDL
+      ZWEVIWFCWDLZWHCWDLZSWJVGWLVHWKVGWHCWDVGWGEDVRAUBUCUDVHBHWKCEBUEUFUKWFWHCW
+      DUGQWIWBCWDVSVTEDVSDUHUIUJVBWBCVPWDULUMVOWBCVPVNWADVNVLVMVCZVJRWMWACDUNZR
+      WAVLVMVJUOVJWNWMCDEABUPUQWACDURUSUTVAQABVDVECDVJVFQ $.
+  $}
+
   $( A restriction of a function is a function.  Compare Exercise 18 of
      [TakeutiZaring] p. 25.  (Contributed by NM, 16-Aug-1994.) $)
   funres $p |- ( Fun F -> Fun ( F |` A ) ) $=
