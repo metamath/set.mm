@@ -44221,18 +44221,6 @@ $)
     VRQCEARACVRTVHWAXAVTQDEBRBDVTTVHVIVQXCWDWSXAJWGABEVJWSCXADVKVLVMVNWDWGWCWEV
     ONVP $.
 
-  $( The restriction of a one-to-one onto function to an intersection maps onto
-     the intersection of the images.  (Contributed by Paul Chapman,
-     11-Apr-2009.) $)
-  resin $p |- ( ( Fun `' F /\ ( F |` A ) : A -onto-> C /\
-                               ( F |` B ) : B -onto-> D ) ->
-      ( F |` ( A i^i B ) ) : ( A i^i B ) -1-1-onto-> ( C i^i D ) ) $=
-    ( ccnv wfun cres wfo w3a cdif wf1o cin resdif f1ofo syl wceq wb dfin4 ax-mp
-    syld3an3 f1oeq3 f1oeq2 reseq2i f1oeq1 3bitrri sylib ) EFGZACEAHIZBDEBHIZJZA
-    ABKZKZCCDKZKZEUMHZLZABMZCDMZEURHZLZUHUIUJULUNEULHZIZUQUKULUNVBLVCABCDENULUN
-    VBOPAULCUNENUAVAURUOUTLZUMUOUTLZUQUSUOQVAVDRCDSUSUOURUTUBTURUMQVDVERABSZURU
-    MUOUTUCTUTUPQVEUQRURUMEVFUDUMUOUTUPUETUFUG $.
-
   $( Composition of one-to-one onto functions.  (Contributed by NM,
      19-Mar-1998.) $)
   f1oco $p |- ( ( F : B -1-1-onto-> C /\ G : A -1-1-onto-> B ) ->
