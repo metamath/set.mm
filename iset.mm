@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Dec-2018
+$( iset.mm - Version of 29-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -33905,8 +33905,8 @@ $)
     $( At least two sets exist (or in terms of first-order logic, the universe
        of discourse has two or more objects).  This theorem asserts the
        existence of two sets which do not equal each other; compare with
-       ` E. x -. x = y ` which means we are given a set ` y ` and go from there
-       to a set ` x ` which is not equal to it.  (Contributed by Jim Kingdon,
+       ~ dtruex in which we are given a set ` y ` and go from there to a set
+       ` x ` which is not equal to it.  (Contributed by Jim Kingdon,
        2-Sep-2018.) $)
     dtruarb $p |- E. x E. y -. x = y $=
       ( vz wel wn wa wex weq el wal ax-nul eximii eeanv mpbir2an nelneq2 2eximi
@@ -36656,6 +36656,33 @@ $)
      Exercise 16 of [Enderton] p. 194.  (Contributed by NM, 3-Sep-2003.) $)
   suc11 $p |- ( ( A e. On /\ B e. On ) -> ( suc A = suc B <-> A = B ) ) $=
     ( con0 suc11g ) ABCCD $.
+
+  ${
+    $d x y $.
+    $( At least two sets exist (or in terms of first-order logic, the universe
+       of discourse has two or more objects).  Although ~ dtruarb can also be
+       summarized as "at least two sets exist", the difference is that
+       ~ dtruarb shows the existence of two sets which are not equal to each
+       other, but this theorem says that given a specific ` y ` , we can
+       construct a set ` x ` which does not equal it.  (Contributed by Jim
+       Kingdon, 29-Dec-2018.) $)
+    dtruex $p |- E. x -. x = y $=
+      ( cv wceq wn wex csn cvv wcel vex snexg ax-mp isset mpbi wa elirr
+      ssnid eleq2 mpbiri mto eqtr ancom imnani eximi eqcom notbii exbii
+      mtbi ) BCZACZDZEZAFZUJUIDZEZAFUJUIGZDZAFZUMUPHIZURUIHIUSBJUIKLAUP
+      MNUQULAUQUKUKUQOZUQUKOUTUIUPDZVAUIUIIZUIPVAVBUIUPIBQUIUPUIRSTUIUJ
+      UPUATUKUQUBUHUCUDLULUOAUKUNUIUJUEUFUGN $.
+  $}
+
+  ${
+    $d x y $.
+    $( At least two sets exist (or in terms of first-order logic, the universe
+       of discourse has two or more objects).  If we assumed the law of the
+       excluded middle this would be equivalent to ~ dtruex .  (Contributed by
+       Jim Kingdon, 29-Dec-2018.) $)
+    dtru $p |- -. A. x x = y $=
+      ( weq wn wex wal dtruex exnalim ax-mp ) ABCZDAEJAFDABGJAHI $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
