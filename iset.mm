@@ -43939,13 +43939,6 @@ $)
     LURUNUTUPULUNUTGDNZUSJZUPULUNVBBJUTVCBCDOVBUSBPQVCULUPVCUKUOCDERSUAQUBUCUDU
     EACUIKUF $.
 
-  $( A nonzero constant function is onto.  (Contributed by NM, 12-Jan-2007.) $)
-  foconst $p |- ( ( F : A --> { B } /\ F =/= (/) ) -> F : A -onto-> { B } ) $=
-    ( csn wf c0 wne wa crn wceq wfo wn wrel wb frel relrn0 necon3abid syl wss
-    wo frn sssn sylib ord sylbid imdistani dffo2 sylibr ) ABDZCEZCFGZHUJCIZUIJZ
-    HAUICKUJUKUMUJUKULFJZLZUMUJCMZUKUONAUICOUPUNCFCPQRUJUNUMUJULUISUNUMTAUICUAU
-    LBUBUCUDUEUFAUICUGUH $.
-
   $( Equality theorem for one-to-one onto functions.  (Contributed by NM,
      10-Feb-1997.) $)
   f1oeq1 $p |- ( F = G -> ( F : A -1-1-onto-> B <-> G : A -1-1-onto-> B ) ) $=
