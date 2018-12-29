@@ -43594,36 +43594,6 @@ $)
     UFKBAMUGWABDNORVNVHVQVIUHUIUJSSUOUPVJVKHZUTUOVHCHVIDHWDUPACTBDTVH
     CVIDUKULUMUN $.
 
-  $( From the union of two functions that agree on the domain overlap, either
-     component can be recovered by restriction.  (Contributed by Stefan O'Rear,
-     9-Oct-2014.) $)
-  fresaunres2 $p |- ( ( F : A --> C /\ G : B --> C /\
-      ( F |` ( A i^i B ) ) = ( G |` ( A i^i B ) ) ) ->
-    ( ( F u. G ) |` B ) = G ) $=
-    ( wf cin cres wceq cun cdif wfn ffn resundir wss ax-mp c0 cdm eqtri syl5eq
-    w3a id resasplit syl3an reseq1d inss2 resabs2 uneq12i ineq2i disjdif ineq1i
-    dmres inass inss1 0ss eqssi 3eqtr3i wrel wb relres reldm0 mpbir difss simp3
-    uneq2i uneq1d wa uncom un0 resundi incom uneq1i inundif reseq2i fnresdm syl
-    adantl syl5eqr 3adant3 eqtrd ) ACDFZBCEFZDABGZHZEWCHZIZUAZDEJZBHWDDABKZHZEB
-    AKZHZJZJZBHZEWGWHWNBWADALWBEBLZWFWFWHWNIACDMBCEMZWFUBABDEUCUDUEWGWOWDBHZWMB
-    HZJZEWDWMBNWGWTWDWJBHZWLBHZJZJZEWRWDWSXCWCBOWRWDIABUFDWCBUGPWJWLBNUHWGXDWDQ
-    WLJZJZEXCXEWDXAQXBWLXAQIZXARZQIZXHBWJRZGZQWJBULXKBWIDRZGZGZQXJXMBDWIULUIBWI
-    GZXLGQXLGZXNQXOQXLBAUJUKBWIXLUMXPQQXLUNXPUOUPUQSSXAURXGXIUSWJBUTXAVAPVBWKBO
-    XBWLIBAVCEWKBUGPUHVEWGXFWEXEJZEWGWDWEXEWAWBWFVDVFWAWBXQEIWFWAWBVGZXQWEWLJZE
-    XEWLWEXEWLQJWLQWLVHWLVISVEXRXSEWCWKJZHZEEWCWKVJXRYAEBHZEXTBEXTBAGZWKJBWCYCW
-    KABVKVLBAVMSVNWBYBEIZWAWBWPYDWQBEVOVPVQTVRTVSVTTTTVT $.
-
-  $( From the union of two functions that agree on the domain overlap, either
-     component can be recovered by restriction.  (Contributed by Mario
-     Carneiro, 16-Feb-2015.) $)
-  fresaunres1 $p |- ( ( F : A --> C /\ G : B --> C /\
-      ( F |` ( A i^i B ) ) = ( G |` ( A i^i B ) ) ) ->
-    ( ( F u. G ) |` A ) = F ) $=
-    ( wf cin cres w3a cun uncom reseq1i incom reseq2i eqeq12i eqcom fresaunres2
-    wceq bitri 3com12 syl3an3b syl5eq ) ACDFZBCEFZDABGZHZEUEHZRZIDEJZAHEDJZAHZD
-    UIUJADEKLUHUCUDEBAGZHZDULHZRZUKDRZUHUNUMRUOUFUNUGUMUEULDABMZNUEULEUQNOUNUMP
-    SUDUCUOUPBACEDQTUAUB $.
-
   ${
     $d x y z A $.  $d x y z B $.  $d x y z F $.
     $( Composition of a mapping and restricted identity.  (Contributed by NM,
