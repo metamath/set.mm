@@ -44456,30 +44456,27 @@ $)
   $}
 
   ${
-    $d F x y $.  $d A x y $.
-    $( A definition of function value in terms of iota.  (Contributed by Scott
-       Fenton, 19-Feb-2013.) $)
-    dffv3 $p |- ( F ` A ) = ( iota x x e. ( F " { A } ) ) $=
-      ( cvv wcel cfv cv csn cima cio wceq wbr wb vex wa cop iotabidv wn syl6eq
-      c0 elimasng df-br syl6bbr mpan2 df-fv syl6reqr fvprc snprc biimpi imaeq2d
-      ima0 eleq2d weu wex noel nex euex mto iotanul ax-mp eqtr4d pm2.61i ) BDEZ
-      BCFZAGZCBHZIZEZAJZKVCVIBVECLZAJVDVCVHVJAVCVEDEZVHVJMANVCVKOVHBVEPCEVJCBVE
-      DDUABVECUBUCUDQABCUEUFVCRZVDTVIBCUGVLVIVETEZAJZTVLVHVMAVLVGTVEVLVGCTITVLV
-      FTCVLVFTKBUHUIUJCUKSULQVMAUMZRVNTKVOVMAUNVMAVEUOUPVMAUQURVMAUSUTSVAVB $.
+    $d F x y $.  $d A x y $.  $d V x $.
+    $( A definition of function value in terms of iota.  (Contributed by Jim
+       Kingdon, 29-Dec-2018.) $)
+    dffv3g $p |- ( A e. V -> ( F ` A ) = ( iota x x e. ( F " { A } ) ) ) $=
+      ( wcel cv csn cima cio wbr cfv cvv wb vex wa cop elimasng df-br
+      syl6bbr mpan2 iotabidv df-fv syl6reqr ) BDEZAFZCBGHEZAIBUECJZAI
+      BCKUDUFUGAUDUELEZUFUGMANUDUHOUFBUEPCEUGCBUEDLQBUECRSTUAABCUBUC
+      $.
   $}
 
-
   ${
-    $d x y A $.  $d x y F $.
+    $d x y A $.  $d x y F $.  $d x y V $.
     $( The previous definition of function value, from before the ` iota `
        operator was introduced.  Although based on the idea embodied by
        Definition 10.2 of [Quine] p. 65 (see ~ args ), this definition
        apparently does not appear in the literature.  (Contributed by NM,
        1-Aug-1994.) $)
-    dffv4 $p |- ( F ` A ) = U. { x | ( F " { A } ) = { x } } $=
-      ( vy cfv csn cima wcel cio cab wceq cuni dffv3 df-iota abid2 eqeq1i abbii
-      cv unieqi 3eqtri ) BCEDRCBFGZHZDIUBDJZARFZKZAJZLUAUDKZAJZLDBCMUBDANUFUHUE
-      UGAUCUAUDDUAOPQST $.
+    dffv4g $p |- ( A e. V -> ( F ` A ) = U. { x | ( F " { A } ) = { x } } ) $=
+      ( vy wcel cfv cv csn cima cio wceq cab cuni dffv3g abid2 eqeq1i
+      df-iota abbii unieqi eqtri syl6eq ) BDFBCGEHCBIJZFZEKZUCAHIZLZA
+      MZNZEBCDOUEUDEMZUFLZAMZNUIUDEARULUHUKUGAUJUCUFEUCPQSTUAUB $.
   $}
 
   ${
