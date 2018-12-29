@@ -44366,27 +44366,8 @@ $)
       TVBUMUQUGBAUBPULUPUNURQNRUEUGESFSUCUD $.
   $}
 
-  ${
-    $d A a b $.  $d B b $.
-    $( A two-element swap is a bijection on a pair.  (Contributed by Mario
-       Carneiro, 23-Jan-2015.) $)
-    f1oprswap $p |- ( ( A e. V /\ B e. W ) ->
-      { <. A , B >. , <. B , A >. } : { A , B } -1-1-onto-> { A , B } ) $=
-      ( wcel cpr cop wf1o wceq csn f1osng anidms ad2antrr dfsn2 syl5eq wfn ccnv
-      wa cun cnvsng opeq2 opeq1 preq12d preq2 f1oeq123d adantl mpbid wne simpll
-      wb simplr simpr fnprg syl221anc ancoms uneq12d uncom syl6eq adantr cnveqi
-      df-pr cnvun eqtri 3eqtr4g fneq1d mpbird dff1o4 sylanbrc pm2.61dane ) ACEZ
-      BDEZRZABFZVMABGZBAGZFZHZABVLABIZRAJZVSAAGZJZHZVQVJWBVKVRVJWBAACCKLMVRWBVQ
-      UJVLVRVSVMVSVMWAVPVRWAVTVTFVPVTNVRVTVNVTVOABAUAABAUBUCOVRVSAAFVMANABAUDOZ
-      WCUEUFUGVLABUHZRZVPVMPZVPQZVMPZVQWEVJVKVKVJWDWFVJVKWDUIZVJVKWDUKZWJWIVLWD
-      ULABBACDDCUMUNZWEWHWFWKWEVMWGVPWEVNJZQZVOJZQZSZWLWNSZWGVPVLWPWQIWDVLWPWNW
-      LSWQVLWMWNWOWLABCDTVKVJWOWLIBADCTUOUPWNWLUQURUSWGWQQWPVPWQVNVOVAZUTWLWNVB
-      VCWRVDVEVFVMVMVPVGVHVI $.
-  $}
-
   $( An unordered pair of ordered pairs with different elements is a one-to-one
-     onto function, analogous to ~ f1oprswap .  (Contributed by Alexander van
-     der Vekens, 14-Aug-2017.) $)
+     onto function.  (Contributed by Alexander van der Vekens, 14-Aug-2017.) $)
   f1oprg $p |- ( ( ( A e. V /\ B e. W ) /\ ( C e. X /\ D e. Y ) )
       -> ( ( A =/= C /\ B =/= D )
       -> { <. A , B >. , <. C , D >. } : { A , C } -1-1-onto-> { B , D } ) ) $=
