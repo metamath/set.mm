@@ -43594,23 +43594,6 @@ $)
     UFKBAMUGWABDNORVNVHVQVIUHUIUJSSUOUPVJVKHZUTUOVHCHVIDHWDUPACTBDTVH
     CVIDUKULUMUN $.
 
-  $( The union of two functions which agree on their common domain is a
-     function.  (Contributed by Stefan O'Rear, 9-Oct-2014.) $)
-  fresaun $p |- ( ( F : A --> C /\ G : B --> C /\
-      ( F |` ( A i^i B ) ) = ( G |` ( A i^i B ) ) ) ->
-    ( F u. G ) : ( A u. B ) --> C ) $=
-    ( wf cin cres wceq cdif cun c0 wss fssres sylancl difss disjdif 3eqtri fun2
-    a1i w3a simp1 inss1 simp2 indifdir difeq1i 0dif syl21anc inass ineq2i incom
-    indi in0 ineq1i eqtri uneq12i un0 wfn id resasplit syl3an feq1d un12 uneq1i
-    ffn inundif uneq2i undif1 feq2i syl6rbbr mpbid ) ACDFZBCEFZDABGZHZEVNHIZUAZ
-    VNABJZBAJZKZKZCVODVRHZEVSHZKZKZFZABKZCDEKZFZVQVNCVOFZVTCWDFZVNVTGZLIZWFVQVL
-    VNAMWJVLVMVPUBZABUCACVNDNOVQVRCWBFZVSCWCFZVRVSGZLIZWKVQVLVRAMWOWNABPACVRDNO
-    VQVMVSBMWPVLVMVPUDBAPBCVSENOWRVQWQAVSGZBVSGZJLWTJLABVSUEWSLWTABQZUFWTUGRTVR
-    VSCWBWCSUHWMVQWLVNVRGZVNVSGZKLLKLVNVRVSULXBLXCLXBABVRGZGALGLABVRUIXDLABAQUJ
-    AUMRXCBAGZVSGZLVNXEVSABUKZUNXFBWSGBLGLBAVSUIWSLBXAUJBUMRUOUPLUQRTVNVTCVOWDS
-    UHVQWIWGCWEFWFVQWGCWHWEVLDAURVMEBURVPVPWHWEIACDVEBCEVEVPUSABDEUTVAVBWAWGCWE
-    WAVRVNVSKZKVRBKWGVNVRVSVCXHBVRXHXEVSKBVNXEVSXGVDBAVFUOVGABVHRVIVJVK $.
-
   $( From the union of two functions that agree on the domain overlap, either
      component can be recovered by restriction.  (Contributed by Stefan O'Rear,
      9-Oct-2014.) $)
