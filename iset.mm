@@ -33915,20 +33915,6 @@ $)
   $}
 
   ${
-    $d x y $.  $d y ph $.
-    eunexdtru.1 $e |- E. x -. x = y $.
-    $( Existential uniqueness implies there is a value for which the wff
-       argument is false.  The hypothesis states there are at least two sets
-       and we should be able to discard it once we have proved it (compare with
-       ~ dtruarb which is what we have so far).  (Contributed by Jim Kingdon,
-       2-Sep-2018.) $)
-    eunexdtru $p |- ( E! x ph -> E. x -. ph ) $=
-      ( weu wex cv wceq wi wal wa wn nfv eu3 nfa1 con3d eximd exlimiv
-      sp mpi adantl sylbi ) ABEABFZABGCGHZIZBJZCFZKALZBFZABCACMNUGUIU
-      CUFUICUFUDLZBFUIDUFUJUHBUEBOUFAUDUEBSPQTRUAUB $.
-  $}
-
-  ${
     $d A x $.
     $( A class is a subclass of the power class of its union.  Exercise 6(b) of
        [Enderton] p. 38.  (Contributed by NM, 14-Oct-1996.) $)
@@ -36682,6 +36668,16 @@ $)
        Jim Kingdon, 29-Dec-2018.) $)
     dtru $p |- -. A. x x = y $=
       ( weq wn wex wal dtruex exnalim ax-mp ) ABCZDAEJAFDABGJAHI $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.
+    $( Existential uniqueness implies there is a value for which the wff
+       argument is false.  (Contributed by Jim Kingdon, 29-Dec-2018.) $)
+    eunex $p |- ( E! x ph -> E. x -. ph ) $=
+      ( vy weu wex cv wceq wi wal wa wn nfv eu3 dtruex sp con3d eximd
+      nfa1 mpi exlimiv adantl sylbi ) ABDABEZABFCFGZHZBIZCEZJAKZBEZAB
+      CACLMUGUIUCUFUICUFUDKZBEUIBCNUFUJUHBUEBRUFAUDUEBOPQSTUAUB $.
   $}
 
 $(
