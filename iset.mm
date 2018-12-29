@@ -43647,13 +43647,14 @@ $)
 
   ${
     $d x A $.  $d x B $.  $d x C $.  $d x F $.
-    fint.1 $e |- B =/= (/) $.
-    $( Function into an intersection.  (Contributed by NM, 14-Oct-1999.)
-       (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
-    fint $p |- ( F : A --> |^| B <-> A. x e. B F : A --> x ) $=
-      ( wfn crn cint wss wa cv wral wf ssint anbi2i c0 wne wb r19.28zv df-f
-      ax-mp bitr4i ralbii 3bitr4i ) DBFZDGZCHZIZJZUEUFAKZIZJZACLZBUGDMBUJDMZACL
-      UIUEUKACLZJZUMUHUOUEAUFCNOCPQUMUPREUEUKACSUAUBBUGDTUNULACBUJDTUCUD $.
+    fintm.1 $e |- E. x x e. B $.
+    $( Function into an intersection.  (Contributed by Jim Kingdon,
+       28-Dec-2018.) $)
+    fintm $p |- ( F : A --> |^| B <-> A. x e. B F : A --> x ) $=
+      ( wfn crn cint wss wa cv wral wf ssint anbi2i wcel wex r19.28mv
+      wb df-f ax-mp bitr4i ralbii 3bitr4i ) DBFZDGZCHZIZJZUEUFAKZIZJZ
+      ACLZBUGDMBUJDMZACLUIUEUKACLZJZUMUHUOUEAUFCNOUJCPAQUMUPSEUEUKACR
+      UAUBBUGDTUNULACBUJDTUCUD $.
   $}
 
   $( Mapping into an intersection.  (Contributed by NM, 14-Sep-1999.)  (Proof
