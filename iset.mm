@@ -44560,8 +44560,8 @@ $)
     $( Bound-variable hypothesis builder for function value.  (Contributed by
        NM, 14-Nov-1995.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
     nffv $p |- F/_ x ( F ` A ) $=
-      ( vy cfv cv wbr cio df-fv nfcv nfbr nfiota nfcxfr ) ABCGBFHZCIZFJFBCKQAFA
-      BPCEDAPLMNO $.
+      ( vy cfv cv wbr cio df-fv nfcv nfbr nfiotaxy nfcxfr ) ABCGBFHZC
+      IZFJFBCKQAFABPCEDAPLMNO $.
   $}
 
   ${
