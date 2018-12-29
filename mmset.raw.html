@@ -4010,13 +4010,15 @@ more or less obvious by inspection.
 convention that most definitions, beyond the basics needed for a
 practical development of set theory, consist of a single new class
 constant symbol followed by an equal sign followed by a class expression
-built from earlier symbols, for example the definition of power class ~ df-pw .  Thus the definition is more or less a
+built from earlier symbols, for example the definition of power class ~ df-pw .
+Thus the definition is more or less a
 drop-in replacement that abbreviates a fixed, more complicated
 expression (with possible renaming of bound variables).  The soundness
 of such definitions is simple to check by inspection:  if (1) the
 left-hand constant symbol is new and doesn't appear in the right-hand
 side, (2) all variables are distinct (all of them appear in a single $d
-statement), and (3) we can prove (with a Metamath theorem, e.g. ~ pwjust for <A HREF="df-pw.html">df-q</A>) that
+statement), and (3) we can prove (with a Metamath theorem,
+e.g. ~ pwjust for ~ df-pw ) that
 the right-hand expression equals itself with all variables renamed, then
 the definition is sound.  This convention allows all but 4 definitions
 to be verified automatically by mmj2 as described above.
@@ -4192,7 +4194,7 @@ instead of
 where we use
 &quot;` ( * `` A ) `&quot;
 instead of
-&quot;` A * `&quot; (or sometimes with an overbar),
+&quot;` A `<sup>*</sup>&quot; (or sometimes with an overbar),
  both of which you can see in theorem
 ~ cjval .
 Another example is the factorial function, which we express as
@@ -4205,15 +4207,16 @@ these four examples use four different positional relationships to
 indicate one concept (the value of a function), but I decided to use a
 single syntax for all four to make the development of proofs simpler.
 
-<P>There is an exception to the above convention: the
-unary minus function
-~ df-neg is so common I decided to
-create a special syntax for it.  So, the negative of a complex number is
-represented as the visually more familiar &quot;` -u A `&quot; rather than the more tedious
-               &quot;` ( -u `` A ) `&quot;.  A drawback is that we have to prove separately
- certain
-theorems such as the equality theorem ~ negeq
-instead of being able to reuse the general-purpose ~ fveq2 .
+<P>There is an exception to the above convention:  the unary minus
+function ~ df-neg is so common I decided to create a special syntax for
+it.  So, the negative of a complex number is represented as the visually
+more familiar &quot;` -u A `&quot; rather than the more tedious
+&quot;` ( -u `` A ) `&quot;.  One drawback is that we have to prove
+separately certain theorems such as the equality theorem ~ negeq instead
+of being able to reuse the general-purpose ~ fveq2 . Moreover, the bare
+symbol &quot;` -u `&quot; has no meaning in isolation, in contrast to
+say the bare symbol &quot;` sqr `&quot;, which is itself a set and
+can be manipulated as a stand-alone function for various purposes.
 
 <P>Another very important exception is the notation for an <B>operation
 value</B>, which is the function value of an ordered pair as defined by
@@ -4223,7 +4226,8 @@ expressions surrounded by parentheses, such as "( 3 + 2 )".  While this
 may appear to be syntactically ambiguous with such expressions as the
 union of two classes ( ~ cun ), "` ( A `
 ` u. B ) `", the difference is that operation value notation requires that
-the center symbol be a class expression:  "+" is a class expression ( ~ caddc ) but a stand-alone "` u. `" is not.  (We do not define the union of
+the center symbol be a class expression:  "+" is a class expression
+( ~ caddc ) but a stand-alone "` u. `" is not.  (We do not define the union of
 two classes as an operation because it must work with proper classes as
 arguments&mdash;not to mention that the operation value definition
 ultimately depends on it anyway.)
@@ -4467,7 +4471,7 @@ of that section.
 the rows for new axiom numbers ~ ax-4 through ~ ax-13 , the "Proof"
 column theorem shows a proof of the axiom from the obsolete ones ~ ax-c4
 through ~ ax-c16 . This is useful to see how our current axioms can be
-derived from the old ones in [<A HREF="#bibmegill">Megill</A>].  In the
+derived from the original ones in [<A HREF="#bibmegill">Megill</A>].  In the
 rows for ~ ax-c4 through ~ ax-c16 , the "Proof" column theorem shows a
 derivation of the obsolete axiom from our current system ~ ax-4 through
 ~ ax-13 .  Together, these proofs show that our current system is
@@ -4537,7 +4541,7 @@ SUMMARY="Cross reference between orginal and new predicate calculus axioms">
 
 <TR ALIGN=LEFT>
 <TD> ~ ax-13 </TD><TD> ax-12&#8203; </TD><TD> ~ ax13fromc9 </TD><TD> - </TD>
-<TD> ` |- ( -. x = y -> ( y = z -> A. x y = z ) ) ` </TD>
+<TD> ` |- ( -. x = y -> ( y = z -> A. x ` ` y = z ) ) ` </TD>
 <TD> Quantified Equality </TD></TR>
 
 <TR ALIGN=LEFT>
@@ -5332,7 +5336,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 27-Dec-2018.</FONT></I><BR><FONT
+ page was last updated on 29-Dec-2018.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
