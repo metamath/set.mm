@@ -44680,11 +44680,21 @@ $)
       UHUEBCPZQSTUAUBULUCUKUD $.
   $}
 
-  $( The value of a non-member of a restriction is the empty set.  (Contributed
-     by NM, 13-Nov-1995.) $)
-  nfvres $p |- ( -. A e. B -> ( ( F |` B ) ` A ) = (/) ) $=
-    ( wcel wn cres cdm cfv wceq cin dmres inss1 eqsstri sseli con3i ndmfv syl
-    c0 ) ABDZEACBFZGZDZEATHRIUBSUABAUABCGZJBCBKBUCLMNOATPQ $.
+  ${
+    $d x y z w A $.  $d x y z w B $.  $d x y z w F $.
+    $( The value of a non-member of a restriction is the empty set.
+       (Contributed by NM, 13-Nov-1995.) $)
+    nfvres $p |- ( -. A e. B -> ( ( F |` B ) ` A ) = (/) ) $=
+      ( vz vx vw vy wcel wn cres cfv cv wex cab csn wceq eleq2i bitri sylbi cvv
+      wbr weu cuni cio df-fv df-iota eqtri eluni exsimpr wsb df-clab nfv eqeq2d
+      wa sneq sbie exbii sylib euabsn2 sylibr euex cop cxp df-br df-res simprbi
+      cin elin opelxp1 syl exlimiv 3syl con3i eq0rdv ) ABHZIDACBJZKZDLZVQHZVOVS
+      AELZVPUAZEUBZWAEMVOVSWAENZFLZOZPZFMZWBVSWDWCGLZOZPZGNZHZFMZWGVSVRWDHZWLUN
+      FMZWMVSVRWKUCZHWOVQWPVRVQWAEUDWPEAVPUEWAEGUFUGQFVRWKUHRWNWLFUISWLWFFWLWJG
+      FUJWFWJFGUKWJWFGFWFGULWHWDPWIWEWCWHWDUOUMUPRUQURWAEFUSUTWAEVAWAVOEWAAVTVB
+      ZBTVCZHZVOWAWQCWRVGZHZWSWAWQVPHXAAVTVPVDVPWTWQCBVEQRXAWQCHWSWQCWRVHVFSAVT
+      BTVIVJVKVLVMVN $.
+  $}
 
   ${
     $d x y A $.  $d x y F $.
