@@ -44680,16 +44680,6 @@ $)
       UHUEBCPZQSTUAUBULUCUKUD $.
   $}
 
-  ${
-    ndmfvrcl.1 $e |- dom F = S $.
-    ndmfvrcl.2 $e |- -. (/) e. S $.
-    $( Reverse closure law for function with the empty set not in its domain.
-       (Contributed by NM, 26-Apr-1996.) $)
-    ndmfvrcl $p |- ( ( F ` A ) e. S -> A e. S ) $=
-      ( cfv wcel cdm wn c0 ndmfv eleq1d mtbiri con4i syl6eleq ) ACFZBGZACHZBARG
-      ZQSIZQJBGETPJBACKLMNDO $.
-  $}
-
   $( If a function value has a member, the argument belongs to the domain.
      (Contributed by NM, 12-Feb-2007.) $)
   elfvdm $p |- ( A e. ( F ` B ) -> B e. dom F ) $=
