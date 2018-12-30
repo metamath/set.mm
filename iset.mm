@@ -44681,41 +44681,6 @@ $)
   $}
 
   ${
-    $d x y F $.  $d x y A $.  $d y B $.
-    $( Corollary of Theorem 6.12(2) of [TakeutiZaring] p. 27.  (Contributed by
-       Mario Carneiro, 17-Nov-2014.) $)
-    tz6.12i $p |- ( B =/= (/) -> ( ( F ` A ) = B -> A F B ) ) $=
-      ( vy cfv wceq c0 wne wbr wi fvex cv neeq1 tz6.12-2 necon1ai tz6.12c breq2
-      weu wb 3imtr3d syl biimpcd sylbird eqcoms vtocle a1i com12 ) ACEZBFZBGHZA
-      BCIZUIUHGHZAUHCIZUJUKULUMJZUIUNDUHACKDLZUHFUOGHZAUOCIZULUMUPUQJUHUOUHUOFZ
-      UPULUQUHUOGMULURUQULUQDRZURUQSUSUHGDACNODACPUAUBUCUDUOUHGMUOUHACQTUEUFUHB
-      GMUHBACQTUG $.
-  $}
-
-  $( Two possibilities for the behavior of a function value.  (Contributed by
-     Stefan O'Rear, 2-Nov-2014.)  (Proof shortened by Mario Carneiro,
-     31-Aug-2015.) $)
-  fvbr0 $p |- ( X F ( F ` X ) \/ ( F ` X ) = (/) ) $=
-    ( cfv wbr c0 wceq wne eqid tz6.12i mpi necon1bi orri ) BBACZADZMEFNMEMEGMMF
-    NMHBMAIJKL $.
-
-  $( A function value is a member of the range plus null.  (Contributed by
-     Scott Fenton, 8-Jun-2011.)  (Revised by Stefan O'Rear, 3-Jan-2015.) $)
-  fvrn0 $p |- ( F ` X ) e. ( ran F u. { (/) } ) $=
-    ( cfv c0 wceq crn csn cun wcel id ssun2 0ex snid sselii syl6eqel wn cvv wbr
-    ssun1 con1i fvprc fvex a1i fvbr0 ori brelrng syl3anc sseldi pm2.61i ) BACZD
-    EZUJAFZDGZHZIUKUJDUNUKJUMUNDUMULKDLMNOUKPZULUNUJULUMSUOBQIZUJQIZBUJARZUJULI
-    UPUKBAUATUQUOBAUBUCURUKURUKABUDUETBUJAQQUFUGUHUI $.
-
-  $( The result of a function value is always a subset of the union of the
-     range, even if it is invalid and thus empty.  (Contributed by Stefan
-     O'Rear, 2-Nov-2014.)  (Revised by Mario Carneiro, 31-Aug-2015.) $)
-  fvssunirn $p |- ( F ` X ) C_ U. ran F $=
-    ( cfv crn c0 csn cun cuni wcel wss fvrn0 elssuni ax-mp uniun 0ex uneq2i un0
-    unisn 3eqtri sseqtri ) BACZADZEFZGZHZUBHZUAUDIUAUEJABKUAUDLMUEUFUCHZGUFEGUF
-    UBUCNUGEUFEORPUFQST $.
-
-  ${
     $d x y A $.  $d x y F $.
     $( The value of a class outside its domain is the empty set.  (Contributed
        by NM, 24-Aug-1995.) $)
