@@ -44680,25 +44680,6 @@ $)
       UHUEBCPZQSTUAUBULUCUKUD $.
   $}
 
-  $( If a function value has a member, the argument belongs to the domain.
-     (Contributed by NM, 12-Feb-2007.) $)
-  elfvdm $p |- ( A e. ( F ` B ) -> B e. dom F ) $=
-    ( cfv wcel c0 wne cdm ne0i ndmfv necon1ai syl ) ABCDZEMFGBCHEZMAINMFBCJKL
-    $.
-
-  $( If a function value has a member, the argument is a set.  (Contributed by
-     Mario Carneiro, 6-Nov-2015.) $)
-  elfvex $p |- ( A e. ( F ` B ) -> B e. _V ) $=
-    ( cfv wcel cdm cvv elfvdm elex syl ) ABCDEBCFZEBGEABCHBKIJ $.
-
-  ${
-    elfvexd.1 $e |- ( ph -> A e. ( B ` C ) ) $.
-    $( If a function value is nonempty, its argument is a set.  Deduction form
-       of ~ elfvex .  (Contributed by David Moews, 1-May-2017.) $)
-    elfvexd $p |- ( ph -> C e. _V ) $=
-      ( cfv wcel cvv elfvex syl ) ABDCFGDHGEBDCIJ $.
-  $}
-
   $( The value of a non-member of a restriction is the empty set.  (Contributed
      by NM, 13-Nov-1995.) $)
   nfvres $p |- ( -. A e. B -> ( ( F |` B ) ` A ) = (/) ) $=
@@ -44972,12 +44953,6 @@ $)
 
   ${
     $d x y A $.  $d y B $.  $d x y F $.
-    $( The value of the identity function is a subset of the argument.
-       (Contributed by Mario Carneiro, 27-Feb-2016.) $)
-    fviss $p |- ( _I ` A ) C_ A $=
-      ( vx cid cfv cv wcel id cvv wceq elfvex fvi syl eleqtrd ssriv ) BACDZABEZ
-      OFZPOAQGQAHFOAIPACJAHKLMN $.
-
     $( The indexed intersection of a function's values is the intersection of
        its range.  (Contributed by NM, 20-Oct-2005.) $)
     fniinfv $p |- ( F Fn A -> |^|_ x e. A ( F ` x ) = |^| ran F ) $=
