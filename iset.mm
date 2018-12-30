@@ -44681,16 +44681,6 @@ $)
   $}
 
   ${
-    $d x y A $.  $d x y F $.
-    $( The value of a class outside its domain is the empty set.  (Contributed
-       by NM, 24-Aug-1995.) $)
-    ndmfv $p |- ( -. A e. dom F -> ( F ` A ) = (/) ) $=
-      ( vx cvv wcel cdm wn cfv c0 wceq wi cv wbr weu wex eldmg syl5ibr tz6.12-2
-      euex con3d syl6 fvprc a1d pm2.61i ) ADEZABFEZGZABHIJZKUEUGACLBMZCNZGUHUEU
-      JUFUJUFUEUICOUICSCABDPQTCABRUAUEGUHUGABUBUCUD $.
-  $}
-
-  ${
     ndmfvrcl.1 $e |- dom F = S $.
     ndmfvrcl.2 $e |- -. (/) e. S $.
     $( Reverse closure law for function with the empty set not in its domain.
