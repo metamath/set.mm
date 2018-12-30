@@ -44587,11 +44587,24 @@ $)
   $}
 
   ${
-    $d x A $.  $d x F $.
-    $( The value of a class exists.  Corollary 6.13 of [TakeutiZaring] p. 27.
-       (Contributed by NM, 30-Dec-1996.) $)
-    fvex $p |- ( F ` A ) e. _V $=
-      ( vx cfv cv wbr cio cvv df-fv iotaex eqeltri ) ABDACEBFZCGHCABILCJK $.
+    $d x y A $.  $d x y F $.
+    $( A function has one value given an argument in its domain.  (Contributed
+       by Jim Kingdon, 29-Dec-2018.) $)
+    funfveu $p |- ( ( Fun F /\ A e. dom F ) -> E! y A F y ) $=
+      ( vx wfun cdm wcel cv wbr weu wa wceq eleq1 anbi2d eubidv imbi12d
+      wi breq1 wrel wral dffun8 simprbi r19.21bi vtoclg anabsi7 ) CEZBC
+      FZGZBAHZCIZAJZUFDHZUGGZKZULUICIZAJZQUFUHKZUKQDBUGULBLZUNUQUPUKURU
+      MUHUFULBUGMNURUOUJAULBUICROPUFUPDUGUFCSUPDUGTDACUAUBUCUDUE $.
+  $}
+
+  ${
+    $d x y A $.  $d x y F $.
+    $( The value of a function exists.  A special case of Corollary 6.13 of
+       [TakeutiZaring] p. 27.  (Contributed by Jim Kingdon, 29-Dec-2018.) $)
+    funfvex $p |- ( ( Fun F /\ A e. dom F ) -> ( F ` A ) e. _V ) $=
+      ( vy wfun cdm wcel wa cfv cv wbr cio cvv df-fv funfveu euiotaex
+      weu syl syl5eqel ) BDABEFGZABHACIBJZCKZLCABMSTCPUALFCABNTCOQR
+      $.
   $}
 
   ${
