@@ -44830,8 +44830,8 @@ $)
        values.  (Contributed by NM, 20-Oct-2005.)  (Proof shortened by Mario
        Carneiro, 31-Aug-2015.) $)
     fnrnfv $p |- ( F Fn A -> ran F = { y | E. x e. A y = ( F ` x ) } ) $=
-      ( wfn crn cv cfv cmpt wceq wrex cab dffn5 rneq sylbi eqid rnmpt syl6eq )
-      DCEZDFZACAGDHZIZFZBGUAJACKBLSDUBJTUCJACDMDUBNOABCUAUBUBPQR $.
+      ( wfn crn cv cfv cmpt wceq wrex cab dffn5im rneqd eqid rnmpt syl6eq ) DCE
+      ZDFACAGDHZIZFBGSJACKBLRDTACDMNABCSTTOPQ $.
 
     $( A member of a function's range is a value of the function.  (Contributed
        by NM, 31-Oct-1995.) $)
