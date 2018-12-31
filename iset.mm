@@ -44774,11 +44774,12 @@ $)
        19-Apr-2004.)  (Revised by Mario Carneiro, 28-Apr-2015.) $)
     fnbrfvb $p |- ( ( F Fn A /\ B e. A ) ->
                    ( ( F ` B ) = C <-> B F C ) ) $=
-      ( vx wfn wcel wa cfv wceq wbr eqid cv wb wi fvex eqeq2 breq2 bibi12d syl
-      imbi2d weu fneu tz6.12c vtocl mpbii syl5ibcom fnfun funbrfv adantr impbid
-      wfun ) DAFZBAGZHZBDIZCJZBCDKZUOBUPDKZUQURUOUPUPJZUSUPLUOUPEMZJZBVADKZNZOU
-      OUTUSNZOEUPBDPVAUPJZVDVEUOVFVBUTVCUSVAUPUPQVAUPBDRSUAUOVCEUBVDEABDUCEBDUD
-      TUEUFUPCBDRUGUMURUQOZUNUMDULVGADUHBCDUITUJUK $.
+      ( vx wfn wcel wa cfv wceq wbr eqid cvv wb funfvex funfni cv wi breq2 syl
+      eqeq2 bibi12d imbi2d fneu tz6.12c vtoclg mpcom mpbii syl5ibcom wfun fnfun
+      weu funbrfv adantr impbid ) DAFZBAGZHZBDIZCJZBCDKZURBUSDKZUTVAURUSUSJZVBU
+      SLUSMGZURVCVBNZVDABDBDOPURUSEQZJZBVFDKZNZRURVEREUSMVFUSJZVIVEURVJVGVCVHVB
+      VFUSUSUAVFUSBDSUBUCURVHEULVIEABDUDEBDUETUFUGUHUSCBDSUIUPVAUTRZUQUPDUJVKAD
+      UKBCDUMTUNUO $.
 
     $( Equivalence of function value and ordered pair membership.  (Contributed
        by NM, 7-Nov-1995.) $)
