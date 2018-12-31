@@ -44741,17 +44741,8 @@ $)
       ( wcel cfv csb csbfv12g csbconstg fveq1d eqtrd ) BDFZABCEGHABCH
       ZABEHZGNEGABCDEIMNOEABEDJKL $.
 
-    $( Substitution for a function value.  (Contributed by NM, 1-Jan-2006.)
-       (Revised by NM, 20-Aug-2018.) $)
-    csbfv $p |- [_ A / x ]_ ( F ` x ) = ( F ` A ) $=
-      ( cvv wcel cv cfv csb csbfv2g csbvarg fveq2d eqtrd wn csbprc fvprc eqtr4d
-      wceq c0 pm2.61i ) BDEZABAFZCGZHZBCGZQTUCABUAHZCGUDABUADCITUEBCABDJKLTMUCR
-      UDABUBNBCOPS $.
-
-    $( Substitution for a function value.  (Contributed by NM, 1-Jan-2006.)
-       Obsolete as of 20-Aug-2018.  Use ~ csbfv instead.
-       (New usage is discouraged.)  (Proof modification is discouraged.) $)
-    csbfvgOLD $p |- ( A e. C -> [_ A / x ]_ ( F ` x ) = ( F ` A ) ) $=
+    $( Substitution for a function value.  (Contributed by NM, 1-Jan-2006.) $)
+    csbfvg $p |- ( A e. C -> [_ A / x ]_ ( F ` x ) = ( F ` A ) ) $=
       ( wcel cv cfv csb csbfv2g csbvarg fveq2d eqtrd ) BCEZABAFZDGHABNHZDGBDGAB
       NCDIMOBDABCJKL $.
   $}
