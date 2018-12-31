@@ -44720,14 +44720,6 @@ $)
       FCKUGUEBLUEBUEAUDMZCNUHQAUDCOPRUEBSTUEBUAUBUC $.
   $}
 
-  $( Equal values imply equal values in a restriction.  (Contributed by NM,
-     13-Nov-1995.) $)
-  fveqres $p |- ( ( F ` A ) = ( G ` A ) ->
-                ( ( F |` B ) ` A ) = ( ( G |` B ) ` A ) ) $=
-    ( wcel cfv wceq cres wi fvres eqeq12d biimprd wn nfvres eqtr4d a1d pm2.61i
-    c0 ) ABEZACFZADFZGZACBHFZADBHFZGZISUEUBSUCTUDUAABCJABDJKLSMZUEUBUFUCRUDABCN
-    ABDNOPQ $.
-
   ${
     $d y z A $.  $d y z B $.  $d y z C $.  $d y z F $.  $d x y z $.
     $( Move class substitution in and out of a function value.  (Contributed by
