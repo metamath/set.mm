@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Dec-2018
+$( iset.mm - Version of 31-Dec-2018
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -44815,15 +44815,16 @@ $)
       wi ex pm5.32da bitr4d ) CDZABCEZACFGZUBHUCACIBJZHUAUBUCUACKZUBUCQCLUEUBUC
       ABCMRNOUAUCUDUBABCPST $.
 
-    $( Representation of a function in terms of its values.  (Contributed by
-       FL, 14-Sep-2013.)  (Proof shortened by Mario Carneiro, 31-Aug-2015.) $)
-    dffn5 $p |- ( F Fn A <-> F = ( x e. A |-> ( F ` x ) ) ) $=
-      ( vy wfn cv cfv cmpt wceq wcel wa copab wbr wrel fnrel dfrel4v sylib fnbr
-      ex pm4.71rd eqcom fnbrfvb syl5bb pm5.32da bitr4d opabbidv eqtrd fvex eqid
-      df-mpt syl6eqr fnmpti fneq1 mpbiri impbii ) CBEZCABAFZCGZHZIZUPCUQBJZDFZU
-      RIZKZADLZUSUPCUQVBCMZADLZVEUPCNCVGIBCOADCPQUPVFVDADUPVFVAVFKVDUPVFVAUPVFV
-      ABUQVBCRSTUPVAVCVFVCURVBIUPVAKVFVBURUABUQVBCUBUCUDUEUFUGADBURUJUKUTUPUSBE
-      ABURUSUQCUHUSUIULBCUSUMUNUO $.
+    $( Representation of a function in terms of its values.  The converse holds
+       given the law of the excluded middle; as it is we have most of the
+       converse via ~ funmpt and ~ dmmptss .  (Contributed by Jim Kingdon,
+       31-Dec-2018.) $)
+    dffn5im $p |- ( F Fn A -> F = ( x e. A |-> ( F ` x ) ) ) $=
+      ( vy wfn cv wcel cfv wceq wa copab cmpt wbr fnrel dfrel4v sylib
+      wrel fnbr ex pm4.71rd eqcom syl5bb pm5.32da bitr4d eqtrd df-mpt
+      fnbrfvb opabbidv syl6eqr ) CBEZCAFZBGZDFZUKCHZIZJZADKZABUNLUJCU
+      KUMCMZADKZUQUJCQCUSIBCNADCOPUJURUPADUJURULURJUPUJURULUJURULBUKU
+      MCRSTUJULUOURUOUNUMIUJULJURUMUNUABUKUMCUGUBUCUDUHUEADBUNUFUI $.
 
     $( The range of a function expressed as a collection of the function's
        values.  (Contributed by NM, 20-Oct-2005.)  (Proof shortened by Mario
@@ -44884,7 +44885,7 @@ $)
   ${
     $d x y A $.  $d x C $.  $d x y F $.
     feqmptd.1 $e |- ( ph -> F : A --> B ) $.
-    $( Deduction form of ~ dffn5 .  (Contributed by Mario Carneiro,
+    $( Deduction form of ~ dffn5im .  (Contributed by Mario Carneiro,
        8-Jan-2015.) $)
     feqmptd $p |- ( ph -> F = ( x e. A |-> ( F ` x ) ) ) $=
       ( wfn cv cfv cmpt wceq wf ffn syl dffn5 sylib ) AECGZEBCBHEIJKACDELQFCDEM
