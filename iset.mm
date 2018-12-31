@@ -44723,21 +44723,10 @@ $)
   ${
     $d y z A $.  $d y z B $.  $d y z C $.  $d y z F $.  $d x y z $.
     $( Move class substitution in and out of a function value.  (Contributed by
-       NM, 11-Nov-2005.)  (Revised by NM, 20-Aug-2018.) $)
-    csbfv12 $p |- [_ A / x ]_ ( F ` B ) = ( [_ A / x ]_ F ` [_ A / x ]_ B ) $=
-      ( vy cvv wcel cfv csb wceq cv wbr cio csbiota sbcbr123 csbconstg df-fv c0
-      wsbc csbprc breq2d syl5bb iotabidv syl5eq csbeq2i 3eqtr4g wn fveq1d eqtrd
-      0fv syl6req pm2.61i ) BFGZABCDHZIZABCIZABDIZHZJUMABCEKZDLZEMZIZUPUSUQLZEM
-      ZUOURUMVBUTABSZEMVDUTAEBNUMVEVCEVEUPABUSIZUQLUMVCABCUSDOUMVFUSUPUQABUSFPU
-      AUBUCUDABUNVAECDQUEEUPUQQUFUMUGZUORURABUNTVGURUPRHRVGUPUQRABDTUHUPUJUKUIU
-      L $.
-
-    $( Move class substitution in and out of a function value.  (Contributed by
-       NM, 11-Nov-2005.)  Obsolete as of 20-Aug-2018.  Use ~ csbfv12 instead.
-       (New usage is discouraged.)  (Proof modification is discouraged.) $)
-    csbfv12gOLD $p |- ( A e. C ->
+       NM, 11-Nov-2005.) $)
+    csbfv12g $p |- ( A e. C ->
                  [_ A / x ]_ ( F ` B ) = ( [_ A / x ]_ F ` [_ A / x ]_ B ) ) $=
-      ( vy wcel cv wbr cio csb cfv csbiotagOLD sbcbrgOLD csbconstg breq2d bitrd
+      ( vy wcel cv wbr cio csb cfv csbiotag sbcbrg csbconstg breq2d bitrd
       wsbc iotabidv df-fv eqtrd csbeq2i 3eqtr4g ) BDGZABCFHZEIZFJZKZABCKZUEABEK
       ZIZFJZABCELZKUIUJLUDUHUFABRZFJULUFAFBDMUDUNUKFUDUNUIABUEKZUJIUKABCUEDENUD
       UOUEUIUJABUEDOPQSUAABUMUGFCETUBFUIUJTUC $.
