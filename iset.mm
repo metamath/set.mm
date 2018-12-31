@@ -44710,11 +44710,15 @@ $)
       SUGSUKTUHBUQUIULDCURUMUNUOCABUPT $.
   $}
 
-  $( Function value of the empty set.  (Contributed by Stefan O'Rear,
-     26-Nov-2014.) $)
-  0fv $p |- ( (/) ` A ) = (/) $=
-    ( c0 cdm wcel wn cfv wceq noel dm0 eleq2i mtbir ndmfv ax-mp ) ABCZDZEABFBGO
-    ABDAHNBAIJKABLM $.
+  ${
+    $d x A $.
+    $( Function value of the empty set.  (Contributed by Stefan O'Rear,
+       26-Nov-2014.) $)
+    0fv $p |- ( (/) ` A ) = (/) $=
+      ( vx c0 cfv cv wbr cio df-fv weu wn wceq wex cop wcel df-br mtbir
+      noel nex euex mto iotanul ax-mp eqtri ) ACDABEZCFZBGZCBACHUEBIZJU
+      FCKUGUEBLUEBUEAUDMZCNUHQAUDCOPRUEBSTUEBUAUBUC $.
+  $}
 
   $( Equal values imply equal values in a restriction.  (Contributed by NM,
      13-Nov-1995.) $)
