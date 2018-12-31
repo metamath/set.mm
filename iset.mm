@@ -44836,10 +44836,13 @@ $)
     $( A member of a function's range is a value of the function.  (Contributed
        by NM, 31-Oct-1995.) $)
     fvelrnb $p |- ( F Fn A -> ( B e. ran F <-> E. x e. A ( F ` x ) = B ) ) $=
-      ( vy wfn crn wcel cv cfv wceq wrex cab fnrnfv eleq2d cvv fvex eleq1 mpbii
-      syl6bb rexlimivw eqeq1 eqcom rexbidv elab3 ) DBFZCDGZHCEIZAIZDJZKZABLZEMZ
-      HUJCKZABLZUFUGUMCAEBDNOULUOECUNCPHZABUNUJPHUPUIDQUJCPRSUAUHCKZUKUNABUQUKC
-      UJKUNUHCUJUBCUJUCTUDUET $.
+      ( vy cv cfv wceq wrex cvv wcel wi wfn crn wb wa wex df-rex 19.41v ax-ia1
+      anim1i ancomd funfvex funfni syl ax-ia2 eleq1d adantr mpbid sylbir sylanb
+      exlimiv expcom fnrnfv eleq2d eqeq1 eqcom syl6bb rexbidv sylan9bbr mpancom
+      cab elab3g ) AFZDGZCHZABIZCJKZLZDBMZCDNZKZVGOVGVJVHVGVDBKZVFPZAQZVJVHVFAB
+      RVOVJPVNVJPZAQVHVNVJASVPVHAVPVEJKZVHVPVJVMPVQVPVMVJVNVMVJVMVFTUAUBVQBVDDV
+      DDUCUDUEVNVQVHOVJVNVECJVMVFUFUGUHUIULUJUKUMVJVLCEFZVEHZABIZEVBZKVIVGVJVKW
+      ACAEBDUNUOVTVGECJVRCHZVSVFABWBVSCVEHVFVRCVEUPCVEUQURUSVCUTVA $.
 
     $( Alternate definition of the image of a function.  (Contributed by Raph
        Levien, 20-Nov-2006.) $)
