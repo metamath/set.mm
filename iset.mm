@@ -44702,11 +44702,12 @@ $)
        value is the empty set.  (Contributed by NM, 8-Aug-2010.)  (Proof
        shortened by Andrew Salmon, 22-Oct-2011.) $)
     nfunsn $p |- ( -. Fun ( F |` { A } ) -> ( F ` A ) = (/) ) $=
-      ( vx vy cfv c0 wceq csn cres wfun wn wrel cv wbr wmo wal weu eumo sylbi
-      wa wcel vex brres wb elsn breq1 biimpac moimi syl tz6.12-2 alrimiv relres
-      nsyl4 jctil dffun6 sylibr con1i ) ABEFGZBAHZIZJZURKZUTLZCMZDMZUTNZDOZCPZT
-      VAVBVHVCVBVGCAVEBNZDQZVGURVJVIDOVGVIDRVFVIDVFVDVEBNZVDUSUAZTVIVDVEBUSDUBU
-      CVLVKVIVLVDAGVKVIUDCAUEVDAVEBUFSUGSUHUIDABUJUMUKBUSULUNCDUTUOUPUQ $.
+      ( vy vx csn cres wfun wn cv wbr weu cfv c0 wceq wrel wmo wal wa
+      sylbi syl eumo wcel vex brres elsn breq1 biimpac alrimiv relres
+      wb moimi jctil dffun6 sylibr con3i tz6.12-2 ) BAEZFZGZHACIZBJZC
+      KZHABLMNVBUSVBUROZDIZUTURJZCPZDQZRUSVBVGVCVBVFDVBVACPVFVACUAVEV
+      ACVEVDUTBJZVDUQUBZRVAVDUTBUQCUCUDVIVHVAVIVDANVHVAUJDAUEVDAUTBUF
+      SUGSUKTUHBUQUIULDCURUMUNUOCABUPT $.
   $}
 
   $( If a class's value at an argument is not the empty set, the argument is
