@@ -44738,8 +44738,8 @@ $)
        NM, 10-Nov-2005.) $)
     csbfv2g $p |- ( A e. C -> [_ A / x ]_ ( F ` B ) =
                   ( F ` [_ A / x ]_ B ) ) $=
-      ( wcel cfv csb csbfv12 csbconstg fveq1d syl5eq ) BDFZABCEGHABCHZABEHZGNEG
-      ABCEIMNOEABEDJKL $.
+      ( wcel cfv csb csbfv12g csbconstg fveq1d eqtrd ) BDFZABCEGHABCH
+      ZABEHZGNEGABCDEIMNOEABEDJKL $.
 
     $( Substitution for a function value.  (Contributed by NM, 1-Jan-2006.)
        (Revised by NM, 20-Aug-2018.) $)
