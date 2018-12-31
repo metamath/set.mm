@@ -44710,15 +44710,6 @@ $)
       SUGSUKTUHBUQUIULDCURUMUNUOCABUPT $.
   $}
 
-  $( If a class's value at an argument is not the empty set, the argument is
-     contained in the domain of the class, and the class restricted to the
-     argument is a function.  (Contributed by Alexander van der Vekens,
-     26-May-2017.) $)
-  fvfundmfvn0 $p |- ( ( F ` A ) =/= (/)
-                      -> ( A e. dom F /\ Fun ( F |` { A } ) ) ) $=
-    ( cdm wcel csn cres wfun wa cfv c0 wn wo wceq ianor ndmfv nfunsn jaoi sylbi
-    necon1ai ) ABCDZBAEFGZHZABIZJUBKTKZUAKZLUCJMZTUANUDUFUEABOABPQRS $.
-
   $( Function value of the empty set.  (Contributed by Stefan O'Rear,
      26-Nov-2014.) $)
   0fv $p |- ( (/) ` A ) = (/) $=
