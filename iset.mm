@@ -44949,10 +44949,10 @@ $)
 
     $( Singleton of function value.  (Contributed by NM, 22-May-1998.) $)
     fnsnfv $p |- ( ( F Fn A /\ B e. A ) -> { ( F ` B ) } = ( F " { B } ) ) $=
-      ( vy wfn wcel wa cv cfv wceq cab wbr csn cima eqcom fnbrfvb syl5bb abbidv
-      df-sn a1i wrel fnrel relimasn syl adantr 3eqtr4d ) CAEZBAFZGZDHZBCIZJZDKZ
-      BUJCLZDKZUKMZCBMNZUIULUNDULUKUJJUIUNUJUKOABUJCPQRUPUMJUIDUKSTUGUQUOJZUHUG
-      CUAURACUBDBCUCUDUEUF $.
+      ( vy wfn wcel wa cfv wceq cab wbr csn cima eqcom fnbrfvb syl5bb
+      cv abbidv df-sn a1i imasng adantl 3eqtr4d ) CAEZBAFZGZDQZBCHZIZ
+      DJZBUGCKZDJZUHLZCBLMZUFUIUKDUIUHUGIUFUKUGUHNABUGCOPRUMUJIUFDUHS
+      TUEUNULIUDDBACUAUBUC $.
   $}
 
   $( The image of a pair under a function.  (Contributed by Jeff Madsen,
