@@ -44942,8 +44942,10 @@ $)
     $( The indexed intersection of a function's values is the intersection of
        its range.  (Contributed by NM, 20-Oct-2005.) $)
     fniinfv $p |- ( F Fn A -> |^|_ x e. A ( F ` x ) = |^| ran F ) $=
-      ( vy wfn crn cint cv cfv wceq wrex cab ciin fnrnfv inteqd dfiin2 syl6reqr
-      fvex ) CBEZCFZGDHAHZCIZJABKDLZGABUBMSTUCADBCNOADBUBUACRPQ $.
+      ( vy wfn cv cfv ciin wceq wrex cab cint crn wcel funfvex funfni
+      cvv wral ralrimiva dfiin2g syl fnrnfv inteqd eqtr4d ) CBEZABAFZ
+      CGZHZDFUGIABJDKZLZCMZLUEUGQNZABRUHUJIUEULABULBUFCUFCOPSADBUGQTU
+      AUEUKUIADBCUBUCUD $.
 
     $( Singleton of function value.  (Contributed by NM, 22-May-1998.) $)
     fnsnfv $p |- ( ( F Fn A /\ B e. A ) -> { ( F ` B ) } = ( F " { B } ) ) $=
