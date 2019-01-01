@@ -44892,8 +44892,8 @@ $)
     $( Deduction form of ~ dffn5im .  (Contributed by Mario Carneiro,
        8-Jan-2015.) $)
     feqmptd $p |- ( ph -> F = ( x e. A |-> ( F ` x ) ) ) $=
-      ( wfn cv cfv cmpt wceq wf ffn syl dffn5 sylib ) AECGZEBCBHEIJKACDELQFCDEM
-      NBCEOP $.
+      ( wfn cv cfv cmpt wceq wf ffn syl dffn5im ) AECGZEBCBHEIJKACDEL
+      PFCDEMNBCEON $.
 
     feqresmpt.2 $e |- ( ph -> C C_ A ) $.
     $( Express a restricted function as a mapping.  (Contributed by Mario
