@@ -45009,23 +45009,26 @@ $)
   ${
     $d y A $.  $d y F $.
     $( The value of a function.  Definition of function value in [Enderton]
-       p. 43.  (Contributed by NM, 22-May-1998.) $)
-    funfv2 $p |- ( Fun F -> ( F ` A ) = U. { y | A F y } ) $=
-      ( wfun cfv csn cima cuni cv wbr cab funfv wrel funrel relimasn syl unieqd
-      wceq eqtrd ) CDZBCECBFGZHBAICJAKZHBCLTUAUBTCMUAUBRCNABCOPQS $.
+       p. 43.  (Contributed by Jim Kingdon, 1-Jan-2019.) $)
+    funfvdm2 $p |- ( ( Fun F /\ A e. dom F ) ->
+        ( F ` A ) = U. { y | A F y } ) $=
+      ( wfun cdm wcel wa cfv csn cima cuni cv wbr funfvdm wceq imasng
+      cab adantl unieqd eqtrd ) CDZBCEZFZGZBCHCBIJZKBALCMAQZKBCNUDUEU
+      FUCUEUFOUAABUBCPRST $.
   $}
 
   ${
     $d w z A $.  $d w z F $.  $d w y z $.
-    funfv2f.1 $e |- F/_ y A $.
-    funfv2f.2 $e |- F/_ y F $.
-    $( The value of a function.  Version of ~ funfv2 using a bound-variable
-       hypotheses instead of distinct variable conditions.  (Contributed by NM,
-       19-Feb-2006.) $)
-    funfv2f $p |- ( Fun F -> ( F ` A ) = U. { y | A F y } ) $=
-      ( vw wfun cfv wbr cab cuni funfv2 nfcv nfbr nfv breq2 cbvab unieqi syl6eq
-      cv ) CGBCHBFTZCIZFJZKBATZCIZAJZKFBCLUCUFUBUEFAABUACDEAUAMNUEFOUAUDBCPQRS
-      $.
+    funfvdm2f.1 $e |- F/_ y A $.
+    funfvdm2f.2 $e |- F/_ y F $.
+    $( The value of a function.  Version of ~ funfvdm2 using a bound-variable
+       hypotheses instead of distinct variable conditions.  (Contributed by Jim
+       Kingdon, 1-Jan-2019.) $)
+    funfvdm2f $p |- ( ( Fun F /\ A e. dom F ) ->
+        ( F ` A ) = U. { y | A F y } ) $=
+      ( vw wfun cdm wcel wa cfv wbr cab cuni funfvdm2 nfcv nfbr breq2
+      cv nfv cbvab unieqi syl6eq ) CGBCHIJBCKBFSZCLZFMZNBASZCLZAMZNFB
+      COUFUIUEUHFAABUDCDEAUDPQUHFTUDUGBCRUAUBUC $.
   $}
 
   $( Value of the union of two functions when the domains are separate.
