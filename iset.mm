@@ -44905,12 +44905,12 @@ $)
 
   ${
     $d x z $.  $d x z A $.  $d z F $.
-    dffn5f.1 $e |- F/_ x F $.
+    dffn5imf.1 $e |- F/_ x F $.
     $( Representation of a function in terms of its values.  (Contributed by
-       Mario Carneiro, 3-Jul-2015.) $)
-    dffn5f $p |- ( F Fn A <-> F = ( x e. A |-> ( F ` x ) ) ) $=
-      ( vz wfn cv cfv cmpt wceq dffn5 nfcv nffv fveq2 cbvmpt eqeq2i bitri ) CBF
-      CEBEGZCHZIZJCABAGZCHZIZJEBCKTUCCEABSUBARCDARLMEUBLRUACNOPQ $.
+       Jim Kingdon, 31-Dec-2018.) $)
+    dffn5imf $p |- ( F Fn A -> F = ( x e. A |-> ( F ` x ) ) ) $=
+      ( vz wfn cv cfv cmpt dffn5im nfcv nffv fveq2 cbvmpt syl6eq ) CBFCEBEGZCHZ
+      IABAGZCHZIEBCJEABQSAPCDAPKLESKPRCMNO $.
   $}
 
   ${
