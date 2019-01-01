@@ -44914,19 +44914,21 @@ $)
   $}
 
   ${
-    $d y A $.  $d x y B $.  $d x y C $.  $d x y F $.
+    $d u v A $.  $d x u v B $.  $d x u v C $.  $d x u v F $.
     $( Function value in an image.  (Contributed by NM, 20-Jan-2007.)  (Proof
        shortened by Andrew Salmon, 22-Oct-2011.)  (Revised by David Abernethy,
        17-Dec-2011.) $)
     fvelimab $p |- ( ( F Fn A /\ B C_ A ) -> ( C e. ( F " B ) <->
                   E. x e. B ( F ` x ) = C ) ) $=
-      ( vy wfn wss wa cima wcel cv cfv wceq wrex cvv anim2i eleq1 wb wi rexbidv
-      elex fvex mpbii rexlimivw eqeq2 bibi12d imbi2d wfun cdm fnfun adantr fndm
-      cab sseq2d biimpar dfimafn syl2anc abeq2d vtoclg impcom pm5.21nd ) EBGZCB
-      HZIZDECJZKZALZEMZDNZACOZVEDPKZIVGVLVEDVFUBQVKVLVEVJVLACVJVIPKVLVHEUCVIDPR
-      UDUEQVLVEVGVKSZVEFLZVFKZVIVNNZACOZSZTVEVMTFDPVNDNZVRVMVEVSVOVGVQVKVNDVFRV
-      SVPVJACVNDVIUFUAUGUHVEVQFVFVEEUIZCEUJZHZVFVQFUNNVCVTVDBEUKULVCWBVDVCWABCB
-      EUMUOUPAFCEUQURUSUTVAVB $.
+      ( vu vv wfn wss wa cima wcel cv cfv wceq wrex cvv eleq1 wb wi elex anim2i
+      ssel2 funfvex funfni sylan2 anassrs syl5ibcom rexlimdva imdistani rexbidv
+      eqeq2 bibi12d imbi2d wfun cdm fnfun adantr sseq2d biimpar dfimafn syl2anc
+      cab fndm abeq2d vtoclg impcom pm5.21nd fveq2 eqeq1d cbvrexv syl6bb ) EBHZ
+      CBIZJZDECKZLZFMZENZDOZFCPZAMZENZDOZACPVOVQWAVODQLZJVQWEVODVPUAUBVOWAWEVOV
+      TWEFCVOVRCLZJVSQLZVTWEVMVNWFWGVNWFJVMVRBLWGCBVRUCWGBVREVREUDUEUFUGVSDQRUH
+      UIUJWEVOVQWASZVOGMZVPLZVSWIOZFCPZSZTVOWHTGDQWIDOZWMWHVOWNWJVQWLWAWIDVPRWN
+      WKVTFCWIDVSULUKUMUNVOWLGVPVOEUOZCEUPZIZVPWLGVCOVMWOVNBEUQURVMWQVNVMWPBCBE
+      VDUSUTFGCEVAVBVEVFVGVHVTWDFACVRWBOVSWCDVRWBEVIVJVKVL $.
   $}
 
   $( The value of the identity function.  (Contributed by NM, 1-May-2004.)
