@@ -1,4 +1,4 @@
-$( iset.mm - Version of 31-Dec-2018
+$( iset.mm - Version of 1-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -44999,12 +44999,12 @@ $)
   $}
 
   $( A simplified expression for the value of a function when we know it's a
-     function.  (Contributed by NM, 22-May-1998.) $)
-  funfv $p |- ( Fun F -> ( F ` A ) = U. ( F " { A } ) ) $=
-    ( wfun cdm wcel cfv csn cima cuni wceq fvex unisn wfn df-fn mpbiran2 fnsnfv
-    wa eqid unieqd c0 sylanbr syl5eqr ex wn ndmfv ndmima syl6eq eqtr4d pm2.61d1
-    uni0 ) BCZABDZEZABFZBAGHZIZJZUKUMUQUKUMQZUNUNGZIUPUNABKLURUSUOUKBULMZUMUSUO
-    JUTUKULULJULRBULNOULABPUASUBUCUMUDZUNTUPABUEVAUPTITVAUOTABUFSUJUGUHUI $.
+     function.  (Contributed by Jim Kingdon, 1-Jan-2019.) $)
+  funfvdm $p |- ( ( Fun F /\ A e. dom F ) -> ( F ` A ) = U. ( F " { A } ) ) $=
+    ( wfun cdm wcel cfv csn cuni cima cvv wceq funfvex unisng syl wfn
+    wa eqid df-fn mpbiran2 fnsnfv sylanbr unieqd eqtr3d ) BCZABDZEZPZ
+    ABFZGZHZUHBAGIZHUGUHJEUJUHKABLUHJMNUGUIUKUDBUEOZUFUIUKKULUDUEUEKU
+    EQBUERSUEABTUAUBUC $.
 
   ${
     $d y A $.  $d y F $.
