@@ -44867,14 +44867,15 @@ $)
        subclass.  (Contributed by Raph Levien, 20-Nov-2006.) $)
     funimass4 $p |- ( ( Fun F /\ A C_ dom F ) ->
                     ( ( F " A ) C_ B <-> A. x e. A ( F ` x ) e. B ) ) $=
-      ( vy cdm wss wfun cima cv cfv wcel wral wb wi wal wa wceq wrex syl5bb wbr
-      dfss2 eqcom ssel funbrfvb ex syl9 imp31 rexbidva vex elima imbi1d r19.23v
-      syl6rbbr syl6bbr albidv ralcom4 eleq1 ceqsalv ralbii bitr3i syl6bb ancoms
-      fvex ) BDFZGZDHZDBIZCGZAJZDKZCLZABMZNVIEJZVHLZVNCLZOZEPZVFVGQZVMEVHCUBVSV
-      RVNVKRZVPOZABMZEPZVMVSVQWBEVSVQVTABSZVPOWBVSVOWDVPVSWDVJVNDUAZABSVOVSVTWE
-      ABVTVKVNRZVSVJBLZQWEVNVKUCVFVGWGWFWENZVFWGVJVELZVGWHBVEVJUDVGWIWHVJVNDUEU
-      FUGUHTUIAVNDBEUJUKUNULVTVPABUMUOUPWCWAEPZABMVMWAAEBUQWJVLABVPVLEVKVJDVDVN
-      VKCURUSUTVAVBTVC $.
+      ( vy cima wss cv wcel wi wal wfun cdm wa wral wceq wb wrex syl5bb cvv cfv
+      dfss2 wbr eqcom ssel funbrfvb ex imp31 rexbidva vex elima syl6rbbr imbi1d
+      syl9 r19.23v syl6bbr albidv ancoms ralcom4 w3a ssel2 anim2i 3impb funfvex
+      nfv eleq1 ceqsalg 3syl 3expa ralbidva syl5bbr bitrd ) DBFZCGEHZVMIZVNCIZJ
+      ZEKZDLZBDMZGZNZAHZDUAZCIZABOZEVMCUBWBVRVNWDPZVPJZABOZEKZWFWAVSVRWJQWAVSNZ
+      VQWIEWKVQWGABRZVPJWIWKVOWLVPWKWLWCVNDUCZABRVOWKWGWMABWGWDVNPZWKWCBIZNWMVN
+      WDUDWAVSWOWNWMQZWAWOWCVTIZVSWPBVTWCUEVSWQWPWCVNDUFUGUNUHSUIAVNDBEUJUKULUM
+      WGVPABUOUPUQURWJWHEKZABOWBWFWHAEBUSWBWRWEABVSWAWOWRWEQZVSWAWOUTVSWQNZWDTI
+      WSVSWAWOWTWAWONWQVSBVTWCVAVBVCWCDVDVPWEEWDTWEEVEVNWDCVFVGVHVIVJVKVLS $.
 
     $( Function value in an image.  Part of Theorem 4.4(iii) of [Monk1] p. 42.
        (Contributed by NM, 29-Apr-2004.)  (Proof shortened by Andrew Salmon,
