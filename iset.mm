@@ -45100,18 +45100,6 @@ $)
     MN $.
 
   ${
-    fvco4i.a $e |- (/) = ( F ` (/) ) $.
-    fvco4i.b $e |- Fun G $.
-    $( Conditions for a composition to be expandable without conditions on the
-       argument.  (Contributed by Stefan O'Rear, 31-Mar-2015.) $)
-    fvco4i $p |- ( ( F o. G ) ` X ) = ( F ` ( G ` X ) ) $=
-      ( cdm wcel ccom cfv wceq wfn wfun funfn mpbi fvco2 mpan wn dmcoss ndmfv
-      c0 sseli con3i syl fveq2d 3eqtr4a pm2.61i ) CBFZGZCABHZIZCBIZAIZJZBUGKZUH
-      UMBLUNEBMNUGABCOPUHQZTTAIUJULDUOCUIFZGZQUJTJUQUHUPUGCABRUAUBCUISUCUOUKTAC
-      BSUDUEUF $.
-  $}
-
-  ${
     $d x y A $.  $d x y B $.  $d x y C $.  $d x y ch $.
     fvopab3g.2 $e |- ( x = A -> ( ph <-> ps ) ) $.
     fvopab3g.3 $e |- ( y = B -> ( ps <-> ch ) ) $.
