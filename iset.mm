@@ -45077,9 +45077,11 @@ $)
        16-Oct-2014.) $)
     fvco2 $p |- ( ( G Fn A /\ X e. A ) -> ( ( F o. G ) ` X ) =
           ( F ` ( G ` X ) ) ) $=
-      ( vx wfn wcel wa cv ccom csn cio cfv fnsnfv imaeq2d imaco syl6reqr eleq2d
-      cima dffv3 iotabidv 3eqtr4g ) CAFDAGHZEIZBCJZDKZSZGZELUDBDCMZKZSZGZELDUEM
-      UIBMUCUHULEUCUGUKUDUCUKBCUFSZSUGUCUJUMBADCNOBCUFPQRUAEDUETEUIBTUB $.
+      ( vx wfn wcel wa cv ccom csn cima cio fnsnfv imaeq2d imaco wceq
+      cfv dffv3g cvv syl6reqr eleq2d iotabidv adantl funfvex 3eqtr4d
+      funfni syl ) CAFZDAGZHZEIZBCJZDKZLZGZEMZULBDCRZKZLZGZEMZDUMRZUR
+      BRZUKUPVAEUKUOUTULUKUTBCUNLZLUOUKUSVEBADCNOBCUNPUAUBUCUJVCUQQUI
+      EDUMASUDUKURTGZVDVBQVFADCDCUEUGEURBTSUHUF $.
   $}
 
   $( Value of a function composition.  Similar to Exercise 5 of [TakeutiZaring]
