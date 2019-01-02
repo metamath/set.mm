@@ -45031,29 +45031,23 @@ $)
       COUFUIUEUHFAABUDCDEAUDPQUHFTUDUGBCRUAUBUC $.
   $}
 
-  $( Value of the union of two functions when the domains are separate.
-     (Contributed by FL, 7-Nov-2011.) $)
-  fvun $p |- ( ( ( Fun F /\ Fun G ) /\ ( dom F i^i dom G ) = (/) ) ->
-                ( ( F u. G ) ` A ) = ( ( F ` A ) u. ( G ` A ) ) ) $=
-    ( wfun wa cdm cin c0 wceq cun cfv csn cima cuni funun funfv imaundir eqcomd
-    syl a1i unieqd uniun anim12i adantr uneq12 syl5eq 3eqtrd ) BDZCDZEZBFCFGHIZ
-    EZABCJZKZUMALZMZNZBUOMZCUOMZJZNZABKZACKZJZULUMDUNUQIBCOAUMPSULUPUTUPUTIULBC
-    UOQTUAULVAURNZUSNZJZVDURUSUBULVEVBIZVFVCIZEZVGVDIUJVJUKUHVHUIVIUHVBVEABPRUI
-    VCVFACPRUCUDVEVBVFVCUESUFUG $.
-
   ${
     $d A x $.  $d B x $.  $d X x $.
     $( The value of a union when the argument is in the first domain.
        (Contributed by Scott Fenton, 29-Jun-2013.) $)
     fvun1 $p |- ( ( F Fn A /\ G Fn B /\ ( ( A i^i B ) = (/) /\ X e. A ) ) ->
     ( ( F u. G ) ` X ) = ( F ` X ) ) $=
-      ( wfn cin c0 wceq wcel wa w3a cun cfv wfun cdm fnfun 3ad2ant1 fndm wn syl
-      3ad2ant2 eqeq1d biimprd adantrd 3impia fvun syl21anc disjel adantl eleq2d
-      ineqan12d wb adantr mtbird 3adant1 ndmfv uneq2d un0 syl6eq eqtrd ) CAFZDB
-      FZABGZHIZEAJZKZLZECDMNZECNZEDNZMZVJVHCOZDOZCPZDPZGZHIZVIVLIVBVCVMVGACQRVC
-      VBVNVGBDQUBVBVCVGVRVBVCKZVEVRVFVSVRVEVSVQVDHVBVCVOAVPBACSBDSZULUCUDUEUFEC
-      DUGUHVHVLVJHMVJVHVKHVJVHEVPJZTZVKHIVCVGWBVBVCVGKWAEBJZVGWCTVCABEUIUJVCWAW
-      CUMVGVCVPBEVTUKUNUOUPEDUQUAURVJUSUTVA $.
+      ( wfn cin c0 wceq wcel wa w3a wfun cdm cun cfv fnfun 3ad2ant1 cima cuni
+      3ad2ant2 ineqan12d eqeq1d biimprd adantrd 3impia simp3r eleq2d mpbird csn
+      fndm wb funun wss ssun1 dmss ax-mp sseli anim12i anasss 3impa funfvdm syl
+      imaundir a1i unieqd disjel ndmima 3ad2ant3 uneq2d un0 syl6eq eqtrd eqcomd
+      wn adantrl 3adant2 3eqtrd syl112anc ) CAFZDBFZABGZHIZEAJZKZLZCMZDMZCNZDNZ
+      GZHIZEWIJZECDOZPZECPZIVTWAWGWEACQRWAVTWHWEBDQUAVTWAWEWLVTWAKZWCWLWDWQWLWC
+      WQWKWBHVTWAWIAWJBACUKZBDUKUBUCUDUEUFWFWMWDVTWAWCWDUGVTWAWMWDULWEVTWIAEWRU
+      HRUIWGWHWLWMKZLZWOWNEUJZSZTZCXASZTZWPWTWNMZEWNNZJZKZWOXCIWGWHWSXIWGWHKZWL
+      WMXIXJWLKXFWMXHCDUMWIXGECWNUNWIXGUNCDUOCWNUPUQURUSUTVAEWNVBVCWTXCXDDXASZO
+      ZTXEWTXBXLXBXLIWTCDXAVDVEVFWTXLXDWTXLXDHOXDWTXKHXDWSWGXKHIZWHWSEWJJVOXMWI
+      WJEVGEDVHVCVIVJXDVKVLVFVMWGWSXEWPIZWHWGWMXNWLWGWMKWPXEECVBVNVPVQVRVS $.
   $}
 
   $( The value of a union when the argument is in the second domain.
