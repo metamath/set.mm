@@ -45143,14 +45143,6 @@ $)
       eqtri fvopab3ig mpi ) BEKDFKLDDMZBGNDMDOJPZCMZUIDMUHAJBDEFGAPZBMCDUIHQUID
       DRUJJSUKEKZJCTUAGAECUBULUJLAJUCIAJECUDUEUFUG $.
 
-    $( Value of a function given in maps-to notation.  (Contributed by Mario
-       Carneiro, 23-Apr-2014.) $)
-    fvmpti $p |- ( A e. D -> ( F ` A ) = ( _I ` C ) ) $=
-      ( wcel cvv cfv cid wceq wa fvmptg fvi adantl eqtr4d wn c0 cv eleq1d dmmpt
-      cdm elrab2 baib notbid ndmfv syl6bir imp fvprc pm2.61dan ) BEIZDJIZBFKZDL
-      KZMUMUNNUODUPABCDEJFGHOUNUPDMUMDJPQRUMUNSZNUOTUPUMUQUOTMZUMUQBFUDZIZSURUM
-      UTUNUTUMUNCJIUNABEUSAUABMCDJGUBAECFHUCUEUFUGBFUHUIUJUQUPTMUMDLUKQRUL $.
-
     ${
       fvmpt.3 $e |- C e. _V $.
       $( Value of a function given in maps-to notation.  (Contributed by NM,
@@ -45210,13 +45202,6 @@ $)
   ${
     $d x y z A $.  $d y z B $.  $d y D $.  $d y z F $.
     fvmpt2.1 $e |- F = ( x e. A |-> B ) $.
-    $( Value of a function given by the "maps to" notation.  (Contributed by
-       Mario Carneiro, 23-Apr-2014.) $)
-    fvmpt2i $p |- ( x e. A -> ( F ` x ) = ( _I ` B ) ) $=
-      ( vy cv csb weq csbeq1 csbid syl6eq cmpt nfcv nfcsb1v cbvmpt eqtri fvmpti
-      csbeq1a ) FAGZAFGZCHZCBDFAIUBATCHCAUATCJACKLDABCMFBUBMEAFBCUBFCNAUACOAUAC
-      SPQR $.
-
     $( Value of a function given by the "maps to" notation.  (Contributed by
        FL, 21-Jun-2010.) $)
     fvmpt2 $p |- ( ( x e. A /\ B e. C ) -> ( F ` x ) = B ) $=
