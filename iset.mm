@@ -45063,12 +45063,13 @@ $)
     $( Domains of a function composition.  (Contributed by NM, 27-Jan-1997.) $)
     dmfco $p |- ( ( Fun G /\ A e. dom G ) ->
                ( A e. dom ( F o. G ) <-> ( G ` A ) e. dom F ) ) $=
-      ( vx vy wfun cdm wcel wa ccom cv cop wex cfv wb eldm2g exbidv wceq syl5bb
-      cvv vex opelco2g mpan2 bitrd adantl fvex eldm2 opeq1 eleq1d ceqsexv eqcom
-      funopfvb anbi1d syl5bbr bitr4d ) CFZACGZHZIZABCJZGHZADKZLCHZVBEKZLZBHZIZD
-      MZEMZACNZBGHZURVAVIOUPURVAAVDLUTHZEMVIEAUTUQPURVLVHEURVDTHVLVHOEUADAVDBCU
-      QTUBUCQUDUEVKVJVDLZBHZEMUSVIEVJBACUFZUGUSVNVHEVNVBVJRZVFIZDMUSVHVFVNDVJVO
-      VPVEVMBVBVJVDUHUIUJUSVQVGDUSVPVCVFVPVJVBRUSVCVBVJUKAVBCULSUMQUNQSUO $.
+      ( vy vx wfun cdm wcel wa cfv cv cop wex ccom wceq cvv syl exbidv eldm2g
+      wb opeq1 eleq1d ceqsexgv eqcom funopfvb syl5bb anbi1d bitr3d vex opelco2g
+      funfvex mpan2 bitrd adantl 3bitr4rd ) CFZACGZHZIZACJZDKZLZBHZDMZAEKZLCHZV
+      EVALZBHZIZEMZDMZUTBGHZABCNZGHZUSVCVJDUSVEUTOZVHIZEMZVCVJUSUTPHZVQVCTACUKZ
+      VHVCEUTPVOVGVBBVEUTVAUAUBUCQUSVPVIEUSVOVFVHVOUTVEOUSVFVEUTUDAVECUEUFUGRUH
+      RUSVRVLVDTVSDUTBPSQURVNVKTUPURVNAVALVMHZDMVKDAVMUQSURVTVJDURVAPHVTVJTDUIE
+      AVABCUQPUJULRUMUNUO $.
 
     $( Value of a function composition.  Similar to second part of Theorem 3H
        of [Enderton] p. 47.  (Contributed by NM, 9-Oct-2004.)  (Proof shortened
