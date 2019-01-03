@@ -45351,9 +45351,10 @@ $)
        22-Oct-2011.)  (Proof shortened by Mario Carneiro, 31-Aug-2015.) $)
     eqfnfv $p |- ( ( F Fn A /\ G Fn A ) -> ( F = G <->
                  A. x e. A ( F ` x ) = ( G ` x ) ) ) $=
-      ( wfn wa wceq cv cfv cmpt wral dffn5 eqeq12 syl2anb cvv wcel rgenw mpteqb
-      wb fvex ax-mp syl6bb ) CBEZDBEZFCDGZABAHZCIZJZABUFDIZJZGZUGUIGABKZUCCUHGD
-      UJGUEUKSUDABCLABDLCUHDUJMNUGOPZABKUKULSUMABUFCTQABUGUIORUAUB $.
+      ( wfn wa wceq cv cfv cmpt wral dffn5im eqeqan12d wb cvv funfvex ralrimiva
+      wcel funfni mpteqb syl adantr bitrd ) CBEZDBEZFCDGABAHZCIZJZABUFDIZJZGZUG
+      UIGABKZUDUECUHDUJABCLABDLMUDUKULNZUEUDUGORZABKUMUDUNABUNBUFCUFCPSQABUGUIO
+      TUAUBUC $.
 
     $( Equality of functions is determined by their values.  Exercise 4 of
        [TakeutiZaring] p. 28.  (Contributed by NM, 3-Aug-1994.)  (Revised by
