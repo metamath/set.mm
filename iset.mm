@@ -45205,7 +45205,9 @@ $)
     $( Value of a function given by the "maps to" notation.  (Contributed by
        FL, 21-Jun-2010.) $)
     fvmpt2 $p |- ( ( x e. A /\ B e. C ) -> ( F ` x ) = B ) $=
-      ( cv wcel cfv cid fvmpt2i fvi sylan9eq ) AGZBHCDHNEICJICABCEFKCDLM $.
+      ( vy cv csb weq csbeq1 csbid syl6eq cmpt nfcv nfcsb1v cbvmpt eqtri fvmptg
+      csbeq1a ) GAHZAGHZCIZCBDEGAJUCAUACICAUBUACKACLMEABCNGBUCNFAGBCUCGCOAUBCPA
+      UBCTQRS $.
 
     $d x y z C $.
     $( If all the values of the mapping are subsets of a class ` C ` , then so
