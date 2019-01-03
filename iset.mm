@@ -45328,17 +45328,6 @@ $)
   $}
 
   ${
-    $d x y A $.
-    fvopab4ndm.1 $e |- F = { <. x , y >. | ( x e. A /\ ph ) } $.
-    $( Value of a function given by an ordered-pair class abstraction, outside
-       of its domain.  (Contributed by NM, 28-Mar-2008.) $)
-    fvopab4ndm $p |- ( -. B e. A -> ( F ` B ) = (/) ) $=
-      ( wcel wn cdm cfv c0 wceq cv wa copab dmeqi dmopabss eqsstri sseli con3i
-      ndmfv syl ) EDHZIEFJZHZIEFKLMUFUDUEDEUEBNDHAOBCPZJDFUGGQABCDRSTUAEFUBUC
-      $.
-  $}
-
-  ${
     $d A x y $.  $d ps x y $.  $d B y $.  $d C x y $.
     fvopab6.1 $e |- F = { <. x , y >. | ( ph /\ y = B ) } $.
     fvopab6.2 $e |- ( x = A -> ( ph <-> ps ) ) $.
