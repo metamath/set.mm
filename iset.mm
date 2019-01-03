@@ -1,4 +1,4 @@
-$( iset.mm - Version of 1-Jan-2019
+$( iset.mm - Version of 3-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -45211,18 +45211,18 @@ $)
 
     $d x y z C $.
     $( If all the values of the mapping are subsets of a class ` C ` , then so
-       is any evaluation of the mapping, even if ` D ` is not in the base set
-       ` A ` .  (Contributed by Mario Carneiro, 13-Feb-2015.) $)
-    fvmptss $p |- ( A. x e. A B C_ C -> ( F ` D ) C_ C ) $=
-      ( vy wss wcel cfv cv wi wceq fveq2 sseq1d imbi2d nfcv wa c0 dmmptss sseli
-      wral cdm nfra1 cmpt nfmpt1 nfcxfr nffv nfss nfim cvv dmmpt rabeq2i fvmpt2
-      eqimss syl sylbi wn ndmfv 0ss syl6eqss pm2.61i rsp impcom syl5ss vtoclgaf
-      ex vtoclga sylan2 adantl pm2.61dan ) CDIZABUCZEFUDZJZEFKZDIZVPVNEBJZVRVOB
-      EABCFGUAUBVSVNVRVNHLZFKZDIZMZVNVRMHEBVTENZWBVRVNWDWAVQDVTEFOPQVNALZFKZDIZ
-      MWCAVTBAVTRZVNWBAVMABUEAWADAVTFAFABCUFGABCUGUHWHUIADRUJUKWEVTNZWGWBVNWIWF
-      WADWEVTFOPQWEBJZVNWGWJVNSWFCDWEVOJZWFCIZWKWJCULJZSZWLWMAVOBABCFGUMUNWNWFC
-      NWLABCULFGUOWFCUPUQURWKUSWFTCWEFUTCVAVBVCVNWJVMVMABVDVEVFVHVGVIVEVJVNVPUS
-      ZSVQTDWOVQTNVNEFUTVKDVAVBVL $.
+       is any evaluation of the mapping at a value in the domain of the
+       mapping.  (Contributed by Jim Kingdon, 3-Jan-2018.) $)
+    fvmptssdm $p |- ( ( D e. dom F /\ A. x e. A B C_ C ) -> ( F ` D ) C_ C ) $=
+      ( vy wcel wss cfv wi cvv cv wceq fveq2 sseq1d imbi2d nfcv nfim cdm nfrab1
+      wral crab nfcri nfra1 cmpt nfmpt1 nfcxfr nffv nfss eleq1 imbi12d dmmpt wa
+      eleq2i rabeq2i fvmpt2 eqimss syl sylbi adantr dmmptss sseli rsp ex sylbir
+      mpan9 sstrd chvar vtoclga eleq2s imp ) EFUAZICDJZABUCZEFKZDJZVPVRLZECMIZA
+      BUDZVNVPHNZFKZDJZLZVSHEWAWBEOZWDVRVPWFWCVQDWBEFPQRANZWAIZVPWGFKZDJZLZLWBW
+      AIZWELAHWLWEAAHWAVTABUBUEVPWDAVOABUFAWCDAWBFAFABCUGGABCUHUIAWBSUJADSUKTTW
+      GWBOZWHWLWKWEWGWBWAULWMWJWDVPWMWIWCDWGWBFPQRUMWHWGVNIZWKVNWAWGABCFGUNZUPW
+      NVPWJWNVPUOWICDWNWICJZVPWNWGBIZVTUOZWPVTAVNBWOUQWRWICOWPABCMFGURWICUSUTVA
+      VBWNWQVPVOVNBWGABCFGVCVDVOABVEVHVIVFVGVJVKWOVLVM $.
   $}
 
   ${
