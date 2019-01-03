@@ -45238,27 +45238,6 @@ $)
   $}
 
   ${
-    $d x z $.  $d x y A $.  $d y z B $.  $d y C $.
-    fvmptex.1 $e |- F = ( x e. A |-> B ) $.
-    fvmptex.2 $e |- G = ( x e. A |-> ( _I ` B ) ) $.
-    $( Express a function ` F ` whose value ` B ` may not always be a set in
-       terms of another function ` G ` for which sethood is guaranteed.  Note
-       that these functions are not the same; wherever ` B ( C ) ` is not a
-       set, ` C ` is not in the domain of ` F ` (so it evaluates to the empty
-       set), but ` C ` is in the domain of ` G ` , and ` G ( C ) ` is defined
-       to be the empty set.  (Contributed by Mario Carneiro, 14-Jul-2013.)
-       (Revised by Mario Carneiro, 23-Apr-2014.) $)
-    fvmptex $p |- ( F ` C ) = ( G ` C ) $=
-      ( vy wcel cfv wceq csb cid cv cmpt nfcv cbvmpt eqtri c0 nfcsb1v nffv fvex
-      csbeq1 csbeq1a fvmpti fveq2d fvmpt eqtr4d wn cdm sseli con3i ndmfv dmmpti
-      dmmptss syl eleq2i sylnbir pm2.61i ) DBJZDEKZDFKZLVAVBADCMZNKZVCIDAIOZCMZ
-      VDBEAVFDCUDZEABCPIBVGPGAIBCVGICQAVFCUAZAVFCUEZRSUFIDVGNKZVEBFVFDLVGVDNVHU
-      GFABCNKZPIBVKPHAIBVLVKIVLQAVGNANQVIUBAOVFLCVGNVJUGRSVDNUCUHUIVAUJZVBTVCVM
-      DEUKZJZUJVBTLVOVAVNBDABCEGUPULUMDEUNUQVADFUKZJVCTLVPBDABVLFCNUCHUOURDFUNU
-      SUIUT $.
-  $}
-
-  ${
     $d x A $.  $d x D $.  $d x ph $.
     fvmptdf.1 $e |- ( ph -> A e. D ) $.
     fvmptdf.2 $e |- ( ( ph /\ x = A ) -> B e. V ) $.
@@ -45346,33 +45325,12 @@ $)
       nfeq nfim eqeq12d imbi12d fvmpt2 ex vtoclgaf syl5 imp ) BELZDGLZBFMZDNZUP
       DOLZUOURDGPCOLZAQZFMZCNZRUSURRABEHUSURAADOISAUQDABFAFAECTKAECUAUBHUCIUFUG
       VABNZUTUSVCURVDCDOJUDVDVBUQCDVABFUEJUHUIVAELUTVCAECOFKUJUKULUMUN $.
-
-    $( The value of a function given by an ordered-pair class abstraction is
-       the empty set when the class it would otherwise map to is a proper
-       class.  This version of ~ fvmptn uses bound-variable hypotheses instead
-       of distinct variable conditions.  (Contributed by NM, 21-Oct-2003.)
-       (Revised by Mario Carneiro, 11-Sep-2015.) $)
-    fvmptnf $p |- ( -. C e. _V -> ( F ` A ) = (/) ) $=
-      ( cvv wcel wn cdm cfv c0 wceq dmmptss sseli cid cmpt eqid fvmptex fvex cv
-      nfcv nffv fveq2d fvmptf mpan2 syl5eq fvprc sylan9eq expcom ndmfv pm2.61d1
-      syl5 ) DKLMZBFNZLZBFOZPQZUTBELZURVBUSEBAECFJRSVCURVBVCURVADTOZPVCVABAECTO
-      ZUAZOZVDAECBFVFJVFUBZUCVCVDKLVGVDQDTUDABVEVDEVFKGADTATUFHUGAUEBQCDTIUHVHU
-      IUJUKDTULUMUNUQBFUOUP $.
   $}
 
   ${
     $d x y A $.  $d y B $.  $d x y C $.  $d x y D $.  $d y F $.
     fvmptn.1 $e |- ( x = D -> B = C ) $.
     fvmptn.2 $e |- F = ( x e. A |-> B ) $.
-    $( This somewhat non-intuitive theorem tells us the value of its function
-       is the empty set when the class ` C ` it would otherwise map to is a
-       proper class.  This is a technical lemma that can help eliminate
-       redundant sethood antecedents otherwise required by ~ fvmptg .
-       (Contributed by NM, 21-Oct-2003.)  (Revised by Mario Carneiro,
-       9-Sep-2013.) $)
-    fvmptn $p |- ( -. C e. _V -> ( F ` D ) = (/) ) $=
-      ( nfcv fvmptnf ) AECDBFAEIADIGHJ $.
-
     $( A mapping always evaluates to a subset of the substituted expression in
        the mapping, even if this is a proper class, or we are out of the
        domain.  (Contributed by Mario Carneiro, 13-Feb-2015.) $)
