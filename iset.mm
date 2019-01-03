@@ -45328,19 +45328,6 @@ $)
   $}
 
   ${
-    $d x y A $.  $d y B $.  $d x y C $.  $d x y D $.  $d y F $.
-    fvmptn.1 $e |- ( x = D -> B = C ) $.
-    fvmptn.2 $e |- F = ( x e. A |-> B ) $.
-    $( A mapping always evaluates to a subset of the substituted expression in
-       the mapping, even if this is a proper class, or we are out of the
-       domain.  (Contributed by Mario Carneiro, 13-Feb-2015.) $)
-    fvmptss2 $p |- ( F ` D ) C_ C $=
-      ( cdm wcel cfv wss cvv wa cv wceq eleq1d dmmpt elrab2 fvmptg eqimss sylbi
-      syl wn c0 ndmfv 0ss syl6eqss pm2.61i ) EFIZJZEFKZDLZUKEBJDMJZNZUMCMJUNAEB
-      UJAOEPCDMGQABCFHRSUOULDPUMAECDBMFGHTULDUAUCUBUKUDULUEDEFUFDUGUHUI $.
-  $}
-
-  ${
     $d x y A $.
     fvopab4ndm.1 $e |- F = { <. x , y >. | ( x e. A /\ ph ) } $.
     $( Value of a function given by an ordered-pair class abstraction, outside
