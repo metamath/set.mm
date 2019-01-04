@@ -45573,20 +45573,6 @@ $)
       JMZHZUOSMUPUQTUIUKURUTUKURHUSUIBUJUNUAUBUCUNDUDUOCSUEUFUGUH $.
   $}
 
-
-  $( Another proof of ~ fvimacnv , based on ~ funimass3 .  If ~ funimass3 is
-     ever proved directly, as opposed to using ~ funimacnv pointwise, then the
-     proof of ~ funimacnv should be replaced with this one.  (Contributed by
-     Raph Levien, 20-Nov-2006.)  (Proof modification is discouraged.)
-     (New usage is discouraged.) $)
-  fvimacnvALT $p |- ( ( Fun F /\ A e. dom F ) ->
-                    ( ( F ` A ) e. B <-> A e. ( `' F " B ) ) ) $=
-    ( wfun cdm wcel wa csn cima wss ccnv cfv wb snssi funimass3 sylan2 fvex wfn
-    snss wceq eqid df-fn biimpri mpan2 fnsnfv sylan sseq1d syl5bb snssg 3bitr4d
-    adantl ) CDZACEZFZGZCAHZIZBJZUPCKBIZJZACLZBFZAUSFZUNULUPUMJURUTMAUMNUPBCOPV
-    BVAHZBJUOURVABACQSUOVDUQBULCUMRZUNVDUQTULUMUMTZVEUMUAVEULVFGCUMUBUCUDUMACUE
-    UFUGUHUNVCUTMULAUSUMUIUKUJ $.
-
   $( Membership in the preimage of a set under a function.  (Contributed by
      Jeff Madsen, 2-Sep-2009.) $)
   elpreima $p |- ( F Fn A -> ( B e. ( `' F " C )
