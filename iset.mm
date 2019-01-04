@@ -45449,15 +45449,6 @@ $)
       a1i wceq 3eqtr4a ) BAEZCAEZFDGZBHZUDCHZIZDAJUFUEIZDAJZBCKLCBKLZUGUHDAUGUH
       MUDANUEUFOSPDABCQUCUBUJUITDACBQRUA $.
 
-    $( The difference set of two functions is empty if and only if the
-       functions are equal.  (Contributed by Stefan O'Rear, 17-Jan-2015.) $)
-    fndmdifeq0 $p |- ( ( F Fn A /\ G Fn A ) ->
-        ( dom ( F \ G ) = (/) <-> F = G ) ) $=
-      ( vx wfn wa cdif cdm c0 wceq cv cfv wne crab fndmdif eqeq1d eqfnfv rabeq0
-      wral wn nne ralbii bitri syl6rbbr bitrd ) BAECAEFZBCGHZIJDKZBLZUHCLZMZDAN
-      ZIJZBCJZUFUGULIDABCOPUFUNUIUJJZDASZUMDABCQUMUKTZDASUPUKDARUQUODAUIUJUAUBU
-      CUDUE $.
-
     $( Two ways to express the locus of equality between two functions.
        (Contributed by Stefan O'Rear, 17-Jan-2015.) $)
     fndmin $p |- ( ( F Fn A /\ G Fn A ) -> dom ( F i^i G ) =
