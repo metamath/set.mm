@@ -45607,9 +45607,10 @@ $)
        (Contributed by Stefan O'Rear, 1-Feb-2015.) $)
     fniniseg2 $p |- ( F Fn A -> ( `' F " { B } ) =
           { x e. A | ( F ` x ) = B } ) $=
-      ( wfn ccnv csn cima cv cfv wcel crab wceq fncnvima2 wb fvex elsnc rabbiia
-      a1i syl6eq ) DBEDFCGZHAIZDJZUAKZABLUCCMZABLABUADNUDUEABUDUEOUBBKUCCUBDPQS
-      RT $.
+      ( wfn ccnv csn cima cv cfv wcel crab wceq fncnvima2 wb wfun cdm
+      wa cvv funfvex elsncg syl funfni rabbidva eqtrd ) DBEZDFCGZHAIZ
+      DJZUGKZABLUICMZABLABUGDNUFUJUKABUJUKOZBUHDDPUHDQKRUISKULUHDTUIC
+      SUAUBUCUDUE $.
 
     $( Support sets of functions expressed as abstractions.  (Contributed by
        Stefan O'Rear, 1-Feb-2015.) $)
