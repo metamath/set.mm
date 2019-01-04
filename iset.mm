@@ -45567,9 +45567,10 @@ $)
        (Contributed by NM, 8-Mar-2007.) $)
     funconstss $p |- ( ( Fun F /\ A C_ dom F ) ->
                      ( A. x e. A ( F ` x ) = B <-> A C_ ( `' F " { B } ) ) ) $=
-      ( wfun cdm wss wa cfv wceq wral cima csn ccnv wcel funimass4 elsnc ralbii
-      cv fvex syl6rbb funimass3 bitrd ) DEBDFGHZASZDIZCJZABKZDBLCMZGZBDNUILGUDU
-      JUFUIOZABKUHABUIDPUKUGABUFCUEDTQRUABUIDUBUC $.
+      ( wfun cdm wss wa cima csn cv cfv wcel wral ccnv wceq funimass4 funimass3
+      cvv wb ssel2 anim2i anassrs funfvex elsncg 3syl ralbidva 3bitr3rd ) DEZBD
+      FZGZHZDBICJZGAKZDLZUMMZABNBDOUMIGUOCPZABNABUMDQBUMDRULUPUQABULUNBMZHUIUNU
+      JMZHZUOSMUPUQTUIUKURUTUKURHUSUIBUJUNUAUBUCUNDUDUOCSUEUFUGUH $.
   $}
 
 
