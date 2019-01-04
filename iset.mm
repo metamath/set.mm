@@ -45682,33 +45682,6 @@ $)
     UGGZAUGBHUFUICIZACJUFUJAAABCKZALZMNOUFCAFZBPZAUHPZUFUMCGBCAHABCQOUFCRAUJPUN
     UOSABCTUFAAUJULUKUAABCUBUCUDUE $.
 
-  ${
-    $d k F $.  $d k ph $.  $d k W $.  $d k Z $.
-    suppss.f $e |- ( ph -> F : A --> B ) $.
-    suppss.n $e |- ( ( ph /\ k e. ( A \ W ) ) -> ( F ` k ) = Z ) $.
-    $( Show that the support of a function is contained in a set.  (Contributed
-       by Mario Carneiro, 19-Dec-2014.) $)
-    suppss $p |- ( ph -> ( `' F " ( _V \ { Z } ) ) C_ W ) $=
-      ( ccnv cvv csn cdif cima cv wcel cfv wa wf wfn ffn elpreima 3syl wne fvex
-      wb eldifsn mpbiran wceq eldif sylan2br expr necon1ad syl5bi expimpd ssrdv
-      wn sylbid ) ADEJKGLMZNZFADOZUTPZVABPZVAEQZUSPZRZVAFPZABCESEBTVBVFUFHBCEUA
-      BVAUSEUBUCAVCVEVGVEVDGUDZAVCRZVGVEVDKPVHVAEUEVDKGUGUHVIVGVDGAVCVGUQZVDGUI
-      ZVCVJRAVABFMPVKVABFUJIUKULUMUNUOURUP $.
-  $}
-
-  ${
-    suppssr.f $e |- ( ph -> F : A --> B ) $.
-    suppssr.n $e |- ( ph -> ( `' F " ( _V \ { Z } ) ) C_ W ) $.
-    $( A function is zero outside its support.  (Contributed by Mario Carneiro,
-       19-Dec-2014.) $)
-    suppssr $p |- ( ( ph /\ X e. ( A \ W ) ) -> ( F ` X ) = Z ) $=
-      ( cdif wcel wn wa cfv wceq eldif wne cvv csn fvex eldifsn mpbiran ccnv wf
-      cima wfn wb ffn elpreima 3syl sseld sylbird expdimp syl5bir necon1bd impr
-      sylan2b ) FBEJKAFBKZFEKZLZMFDNZGOZFBEPAURUTVBAURMZUSVAGVAGQZVARGSJZKZVCUS
-      VFVARKVDFDTVARGUAUBAURVFUSAURVFMZFDUCVEUEZKZUSABCDUDDBUFVIVGUGHBCDUHBFVED
-      UIUJAVHEFIUKULUMUNUOUPUQ $.
-  $}
-
   $( Ordered pair with function value.  Part of Theorem 4.3(i) of [Monk1]
      p. 41.  (Contributed by NM, 30-Sep-2004.) $)
   fnopfv $p |- ( ( F Fn A /\ B e. A ) -> <. B , ( F ` B ) >. e. F ) $=
