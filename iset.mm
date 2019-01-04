@@ -45521,10 +45521,11 @@ $)
   $( A member of a preimage is a function value argument.  (Contributed by NM,
      4-May-2007.) $)
   fvimacnvi $p |- ( ( Fun F /\ A e. ( `' F " B ) ) -> ( F ` A ) e. B ) $=
-    ( wfun ccnv cima wcel cfv csn wss snssi funimass2 sylan2 fvex snss cdm wceq
-    wa cnvimass sseli wfn funfn fnsnfv sylanb sseq1d syl5bb mpbird ) CDZACEBFZG
-    ZRZACHZBGZCAIZFZBJZUJUHUNUIJUPAUIKUNBCLMUMULIZBJUKUPULBACNOUKUQUOBUJUHACPZG
-    ZUQUOQZUIURACBSTUHCURUAUSUTCUBURACUCUDMUEUFUG $.
+    ( wfun ccnv cima wcel cfv csn wss snssi funimass2 sylan2 cnvimass
+    wa cdm wb sseli cvv funfvex snssg wceq funfn fnsnfv sylanb sseq1d
+    syl wfn bitrd mpbird ) CDZACEBFZGZOZACHZBGZCAIZFZBJZUMUKUQULJUSAU
+    LKUQBCLMUNUPUOIZBJZUSUMUKACPZGZUPVAQZULVBACBNRZUKVCOUOSGVDACTUOBS
+    UAUGMUNUTURBUMUKVCUTURUBZVEUKCVBUHVCVFCUCVBACUDUEMUFUIUJ $.
 
   $( The argument of a function value belongs to the preimage of any class
      containing the function value.  Raph Levien remarks:  "This proof is
