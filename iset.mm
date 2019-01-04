@@ -45453,13 +45453,14 @@ $)
        (Contributed by Stefan O'Rear, 17-Jan-2015.) $)
     fndmin $p |- ( ( F Fn A /\ G Fn A ) -> dom ( F i^i G ) =
           { x e. A | ( F ` x ) = ( G ` x ) } ) $=
-      ( vy wfn wa cin cdm cv cfv wceq copab cmpt dffn5 biimpi df-mpt syl6eq wex
-      cab wcel ineqan12d inopab dmeqd 19.42v anandi exbii eqeq1 ceqsexv 3bitr3i
-      crab fvex anbi2i abbii dmopab df-rab 3eqtr4i ) CBFZDBFZGZCDHZIAJZBUAZEJZV
-      BCKZLZGZVCVDVBDKZLZGZGZAEMZIZVEVHLZABUKZUTVAVLUTVAVGAEMZVJAEMZHVLURUSCVPD
-      VQURCABVENZVPURCVRLABCOPAEBVEQRUSDABVHNZVQUSDVSLABDOPAEBVHQRUBVGVJAEUCRUD
-      VKESZATVCVNGZATVMVOVTWAAVCVFVIGZGZESVCWBESZGVTWAVCWBEUEWCVKEVCVFVIUFUGWDV
-      NVCVIVNEVEVBCULVDVEVHUHUIUMUJUNVKAEUOVNABUPUQR $.
+      ( vy wfn wa cin cdm cv wcel cfv wceq copab cmpt dffn5im df-mpt syl6eq wex
+      cab crab ineqan12d inopab dmeqd anandi exbii 19.42v bitr3i wb cvv funfvex
+      wfun eqeq1 ceqsexgv syl funfni syl5bb abbidv dmopab df-rab 3eqtr4g adantr
+      pm5.32da eqtrd ) CBFZDBFZGZCDHZIAJZBKZEJZVICLZMZGZVJVKVIDLZMZGZGZAENZIZVL
+      VOMZABUAZVGVHVSVGVHVNAENZVQAENZHVSVEVFCWCDWDVECABVLOWCABCPAEBVLQRVFDABVOO
+      WDABDPAEBVOQRUBVNVQAEUCRUDVEVTWBMVFVEVRESZATVJWAGZATVTWBVEWEWFAWEVJVMVPGZ
+      ESZGZVEWFWEVJWGGZESWIWJVREVJVMVPUEUFVJWGEUGUHVEVJWHWAWHWAUIZBVICCULVICIKG
+      VLUJKWKVICUKVPWAEVLUJVKVLVOUMUNUOUPVCUQURVRAEUSWAABUTVAVBVD $.
   $}
 
   ${
