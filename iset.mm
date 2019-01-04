@@ -45589,8 +45589,10 @@ $)
        Carneiro, 28-Apr-2015.) $)
     fniniseg $p |- ( F Fn A -> ( C e. ( `' F " { B } ) <->
                      ( C e. A /\ ( F ` C ) = B ) ) ) $=
-      ( wfn ccnv csn cima wcel cfv wa wceq elpreima fvex elsnc anbi2i syl6bb )
-      DAECDFBGZHICAIZCDJZRIZKSTBLZKACRDMUAUBSTBCDNOPQ $.
+      ( wfn ccnv csn cima wcel cfv wceq elpreima wfun cdm cvv funfvex
+      wa wb elsncg syl funfni pm5.32da bitrd ) DAEZCDFBGZHICAIZCDJZUE
+      IZQUFUGBKZQACUEDLUDUFUHUIUHUIRZACDDMCDNIQUGOIUJCDPUGBOSTUAUBUC
+      $.
   $}
 
   ${
