@@ -45674,29 +45674,6 @@ $)
       CVJVFBTVIWIWAWBVHVJACSURUSUTVAVB $.
   $}
 
-  ${
-    $d A x y $.  $d B y $.  $d F x y $.
-    $( Preimage of an intersection.  (Contributed by FL, 16-Apr-2012.) $)
-    iinpreima $p |- ( ( Fun F /\ A =/= (/) )
-        -> ( `' F " |^|_ x e. A B ) = |^|_ x e. A ( `' F " B ) ) $=
-      ( vy ciin cima wcel wral simpll cnvimass sseli adantl cvv fvimacnvi eliin
-      wa wb ax-mp wi wfun wne ccnv cdm cfv fvex adantlr biimpa sylancr fvimacnv
-      c0 cv ralbidv syl21anc vex sylibr biimpd ralimdv sylc wrex r19.2zb biimpi
-      ex rexlimivw syl6 syl5bi imp syl2anc mpbid impbida eqrdv ) DUAZBUKUBZQZED
-      UCZABCFZGZABVOCGZFZVNEULZVQHZVTVSHZVNWAQZVTVRHZABIZWBWCVLVTDUDZHZVTDUEZCH
-      ZABIZWEVLVMWAJWAWGVNVQWFVTDVPKLMWCWHNHZWHVPHZWJVTDUFZVLWAWLVMVTVPDOUGWKWL
-      WJAWHBCNPZUHUIVLWGQZWJWEWOWIWDABVTCDUJUMUHUNVTNHZWBWEREUOZAVTBVRNPZSZUPVN
-      WBQZWLWAWTWJWLWTVLWEWJVLVMWBJZWBWEVNWPWBWETWQWPWBWEWRUQSMVLWDWIABVLWDWIVT
-      CDOVCURUSWKWLWJRWMWNSUPWTVLWGWLWARXAVNWBWGVMWBWGTVLWBWEVMWGWSVMWEWDABUTZW
-      GVMWEXBTWDABVAVBWDWGABVRWFVTDCKLVDVEVFMVGVTVPDUJVHVIVJVK $.
-
-    $( Preimage of an intersection.  (Contributed by FL, 28-Apr-2012.) $)
-    intpreima $p |- ( ( Fun F /\ A =/= (/) )
-        -> ( `' F " |^| A ) = |^|_ x e. A ( `' F " x ) ) $=
-      ( wfun c0 wne wa ccnv cint cima cv ciin intiin imaeq2i iinpreima syl5eq )
-      CDBEFGCHZBIZJQABAKZLZJABQSJLRTQABMNABSCOP $.
-  $}
-
   $( The preimage of the codomain of a mapping is the mapping's domain.
      (Contributed by FL, 25-Jan-2007.) $)
   fimacnv $p |- ( F : A --> B -> ( `' F " B ) = A ) $=
