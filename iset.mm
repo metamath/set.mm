@@ -45534,11 +45534,13 @@ $)
      20-Nov-2006.) $)
   fvimacnv $p |- ( ( Fun F /\ A e. dom F ) ->
                  ( ( F ` A ) e. B <-> A e. ( `' F " B ) ) ) $=
-    ( wfun cdm wcel wa cfv ccnv cima csn cop funfvop wb fvex mpan adantl mpbird
-    cvv wss opelcnvg elimasng imass2 sylbi sseld syl5com wi fvimacnvi ex adantr
-    snss impbid ) CDZACEZFZGZACHZBFZACIZBJZFZUPAUSUQKZJZFZURVAUPVDUQALUSFZUPVEA
-    UQLCFZACMUOVEVFNZUMUQSFZUOVGACOZUQASUNCUAPQRUOVDVENZUMVHUOVJVIUSUQASUNUBPQR
-    URVCUTAURVBBTVCUTTUQBVIUKVBBUSUCUDUEUFUMVAURUGUOUMVAURABCUHUIUJUL $.
+    ( wfun cdm wcel cfv ccnv cima csn cop funfvop cvv sylancom mpbird
+    wa wb wi wss ex funfvex opelcnvg elimasng snssg syl imass2 syl6bi
+    imp sseld mpid fvimacnvi adantr impbid ) CDZACEZFZPZACGZBFZACHZBI
+    ZFZUQUSAUTURJZIZFZVBUQVEURAKUTFZUQVFAURKCFZACLUNUPURMFZVFVGQACUAZ
+    URAMUOCUBNOUNUPVHVEVFQVIUTURAMUOUCNOUQUSVEVBRUQUSPVDVAAUQUSVDVASZ
+    UQUSVCBSZVJUQVHUSVKQVIURBMUDUEVCBUTUFUGUHUITUJUNVBUSRUPUNVBUSABCU
+    KTULUM $.
 
   ${
     $d F x $.  $d A x $.  $d B x $.
