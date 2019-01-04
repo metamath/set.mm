@@ -45616,9 +45616,10 @@ $)
        Stefan O'Rear, 1-Feb-2015.) $)
     fnniniseg2 $p |- ( F Fn A -> ( `' F " ( _V \ { B } ) ) =
           { x e. A | ( F ` x ) =/= B } ) $=
-      ( wfn ccnv cvv csn cdif cima cv cfv wcel wne fncnvima2 wb eldifsn mpbiran
-      crab fvex a1i rabbiia syl6eq ) DBEDFGCHIZJAKZDLZUDMZABSUFCNZABSABUDDOUGUH
-      ABUGUHPUEBMUGUFGMUHUEDTUFGCQRUAUBUC $.
+      ( wfn ccnv cvv csn cdif cima cv cfv wcel crab fncnvima2 funfvex
+      wne wa funfni biantrurd eldifsn syl6rbbr rabbidva eqtrd ) DBEZD
+      FGCHIZJAKZDLZUFMZABNUHCQZABNABUFDOUEUIUJABUEUGBMRZUJUHGMZUJRUIU
+      KULUJULBUGDUGDPSTUHGCUAUBUCUD $.
   $}
 
   ${
