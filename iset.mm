@@ -46142,10 +46142,10 @@ $)
        by Mario Carneiro, 27-Dec-2014.) $)
     fcompt $p |- ( ( A : D --> E /\ B : C --> D ) -> ( A o. B ) = ( x e. C |->
         ( A ` ( B ` x ) ) ) ) $=
-      ( vy wf wa cv cfv wcel ffvelrn adantll wfn cmpt wceq ffn dffn5 sylib
-      adantl adantr fveq2 fmptco ) EFBHZDECHZIZAGDEAJZCKZGJZBKZUIBKCBUFUHDLUIEL
-      UEDEUHCMNUGCDOZCADUIPQUFULUEDECRUAADCSTUGBEOZBGEUKPQUEUMUFEFBRUBGEBSTUJUI
-      BUCUD $.
+      ( vy wf wa cv cfv wcel ffvelrn adantll wfn cmpt ffn dffn5im syl
+      wceq adantl adantr fveq2 fmptco ) EFBHZDECHZIZAGDEAJZCKZGJZBKZU
+      IBKCBUFUHDLUIELUEDEUHCMNUGCDOZCADUIPTUFULUEDECQUAADCRSUGBEOZBGE
+      UKPTUEUMUFEFBQUBGEBRSUJUIBUCUD $.
   $}
 
   ${
