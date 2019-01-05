@@ -45837,14 +45837,14 @@ $)
       CDEULUGUHZVDEUIRVDVLEUJUKVIVOVQVMVJUMZVSVTVOVQOVLSNWAVDEUNVFVMBVL
       SVEVLVDEUOUPTRUQVCVKVHVCVOVKVRBVDEURTQVFBUSUTVAVB $.
 
-    $( Alternate definition of a mapping.  (Contributed by NM, 20-Mar-2007.) $)
-    dff4 $p |- ( F : A --> B <->
-              ( F C_ ( A X. B ) /\ A. x e. A E! y e. B x F y ) ) $=
-      ( wf cxp wss cv wbr weu wral wa wreu dff3 wcel cop df-br ssel opelxp2
-      syl6 syl5bi pm4.71rd eubidv df-reu syl6bbr ralbidv pm5.32i bitri ) CDEFEC
-      DGZHZAIZBIZEJZBKZACLZMUKUNBDNZACLZMABCDEOUKUPURUKUOUQACUKUOUMDPZUNMZBKUQU
-      KUNUTBUKUNUSUNULUMQZEPZUKUSULUMERUKVBVAUJPUSEUJVASULUMCDTUAUBUCUDUNBDUEUF
-      UGUHUI $.
+    $( Property of a mapping.  (Contributed by Jim Kingdon, 4-Jan-2019.) $)
+    dff4im $p |- ( F : A --> B ->
+        ( F C_ ( A X. B ) /\ A. x e. A E! y e. B x F y ) ) $=
+      ( wf cxp wss cv wbr weu wral wa wreu dff3im wcel cop df-br ssel
+      opelxp2 syl6 syl5bi eubidv df-reu syl6bbr ralbidv pm5.32i sylib
+      pm4.71rd ) CDEFECDGZHZAIZBIZEJZBKZACLZMUKUNBDNZACLZMABCDEOUKUPU
+      RUKUOUQACUKUOUMDPZUNMZBKUQUKUNUTBUKUNUSUNULUMQZEPZUKUSULUMERUKV
+      BVAUJPUSEUJVASULUMCDTUAUBUIUCUNBDUDUEUFUGUH $.
 
     $( An onto mapping expressed in terms of function values.  (Contributed by
        NM, 29-Oct-2006.) $)
