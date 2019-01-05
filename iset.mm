@@ -45818,17 +45818,6 @@ $)
       VD $.
   $}
 
-  ${
-    $d x y A $.  $d x y C $.  $d x y D $.  $d y B $.
-    f0cl.1 $e |- F : A --> B $.
-    f0cl.2 $e |- (/) e. B $.
-    $( Unconditional closure of a function when the range includes the empty
-       set.  (Contributed by Mario Carneiro, 12-Sep-2013.) $)
-    f0cli $p |- ( F ` C ) e. B $=
-      ( wcel cfv ffvelrni cdm fdmi eleq2i wn c0 ndmfv syl6eqel sylnbir pm2.61i
-      ) CAGZCDHZBGZABCDEISCDJZGZUAUBACABDEKLUCMTNBCDOFPQR $.
-  $}
-
   $( Alternate definition of a mapping.  (Contributed by NM, 14-Nov-2007.) $)
   dff2 $p |- ( F : A --> B <-> ( F Fn A /\ F C_ ( A X. B ) ) ) $=
     ( wf wfn cxp wss wa ffn fssxp jca crn rnss rnxpss syl6ss anim2i df-f sylibr
