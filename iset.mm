@@ -45806,8 +45806,16 @@ $)
        Carneiro, 20-Aug-2015.) $)
     rexrnmpt $p |- ( A. x e. A B e. V ->
       ( E. y e. ran F ps <-> E. x e. A ch ) ) $=
-      ( wcel wral wn crn wrex cv wceq notbid ralrnmpt dfrex2 3bitr4g ) FHKCELZA
-      MZDGNZLZMBMZCELZMADUDOBCEOUBUEUGUCUFCDEFGHIDPFQABJRSRADUDTBCETUA $.
+      ( vw vz wcel wral wrex cv wsbc wb nfv wa crn cfv wfn fnmpt dfsbcq nfsbc1v
+      rexrn syl sbceq1a cbvrex bicomi cmpt nfmpt1 nfcxfr nfcv nfsbc weq sbceq1d
+      fveq2 3bitr3g fvmpt2 sbcieg adantl bitrd ralimiaa wi wal wex pm5.32 albii
+      nffv exbi sylbi df-ral df-rex bibi12i 3imtr4i ) FHMZCENZADGUAZOZADCPZGUBZ
+      QZCEOZBCEOZVSADKPZQZKVTOZADLPZGUBZQZLEOZWAWEVSGEUCWIWMRCEFGHIUDWHWLKLEGAD
+      WGWKUEUGUHWAWIAWHDKVTAKSADWGUFADWGUIUJUKWLWDLCEACDWKCWJGCGCEFULICEFUMUNCW
+      JUOVKACSUPWDLSLCUQADWKWCWJWBGUSURUJUTVSWDBRZCENZWEWFRZVRWNCEWBEMZVRTZWDAD
+      FQZBWRADWCFCEFHGIVAURVRWSBRWQABDFHJVBVCVDVEWQWNVFZCVGZWQWDTZCVHZWQBTZCVHZ
+      RZWOWPXAXBXDRZCVGXFWTXGCWQWDBVIVJXBXDCVLVMWNCEVNWEXCWFXEWDCEVOBCEVOVPVQUH
+      VD $.
   $}
 
   ${
