@@ -45783,23 +45783,6 @@ $)
                                  -> E. x e. ran F x = ( F ` Y ) ) ) $=
       ( wfun cdm wcel cv cfv wceq crn wrex wa fvelrn eqid eqeq1 rspcev sylancl
       ex ) BDZCBEFZAGZCBHZIZABJZKZSTLUBUDFUBUBIZUECBMUBNUCUFAUBUDUAUBUBOPQR $.
-
-    $( For any element in the domain of a function there is an element in the
-       range of the function which is the function value for the element of the
-       domain.  Because of the special definition of a function value, the
-       theorem is only valid in general if the empty set is not contained in
-       the range of the function.  Otherwise, it cannot be distinguished
-       between the empty set as a valid function value, or as an indication
-       that the function is not defined.  (Contributed by Alexander van der
-       Vekens, 17-Dec-2017.) $)
-    eldmrexrnb $p |- ( ( Fun F /\ (/) e/ ran F )
-                         -> ( Y e. dom F <-> E. x e. ran F x = ( F ` Y ) ) ) $=
-      ( vy wfun c0 crn wnel wa cdm wcel cv cfv wceq wrex eldmrexrn adantr eleq1
-      wi wne wn df-nel nelne2 sylan2b wex n0 elfvdm exlimiv sylbi expcom adantl
-      syl com12 syl6bi com13 rexlimdv impbid ) BEZFBGZHZIZCBJKZALZCBMZNZAUSOZUR
-      VBVFSUTABCPQVAVEVBAUSVEVCUSKZVAVBVEVGVDUSKZVAVBSVCVDUSRVAVHVBUTVHVBSURVHU
-      TVBVHUTIVDFTZVBUTVHFUSKUAVIFUSUBVDFUSUCUDVIDLZVDKZDUEVBDVDUFVKVBDVJCBUGUH
-      UIULUJUKUMUNUOUPUQ $.
   $}
 
   ${
