@@ -45692,11 +45692,12 @@ $)
     $( A function's value belongs to its range.  (Contributed by NM,
        14-Oct-1996.) $)
     fvelrn $p |- ( ( Fun F /\ A e. dom F ) -> ( F ` A ) e. ran F ) $=
-      ( vx vy wfun cdm wcel cfv cv wa wi wceq eleq1 anbi2d fveq2 eleq1d imbi12d
-      crn cop wex funfvop vex opeq1 spcev syl fvex elrn2 sylibr vtoclg anabsi7
-      ) BEZABFZGZABHZBRZGZUKCIZULGZJZUQBHZUOGZKUKUMJZUPKCAULUQALZUSVBVAUPVCURUM
-      UKUQAULMNVCUTUNUOUQABOPQUSDIZUTSZBGZDTZVAUSUQUTSZBGZVGUQBUAVFVIDUQCUBVDUQ
-      LVEVHBVDUQUTUCPUDUEDUTBUQBUFUGUHUIUJ $.
+      ( vx vy wfun cdm wcel cfv crn cv wa wi wceq eleq1 anbi2d eleq1d
+      fveq2 cop syl cvv imbi12d wex funfvop vex opeq1 spcev wb elrn2g
+      funfvex mpbird vtoclg anabsi7 ) BEZABFZGZABHZBIZGZUMCJZUNGZKZUS
+      BHZUQGZLUMUOKZURLCAUNUSAMZVAVDVCURVEUTUOUMUSAUNNOVEVBUPUQUSABQP
+      UAVAVCDJZVBRZBGZDUBZVAUSVBRZBGZVIUSBUCVHVKDUSCUDVFUSMVGVJBVFUSV
+      BUEPUFSVAVBTGVCVIUGUSBUIDVBBTUHSUJUKUL $.
   $}
 
   $( A function's value belongs to its range.  (Contributed by NM,
