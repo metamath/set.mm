@@ -23051,6 +23051,21 @@ $)
   $}
 
   ${
+    $d x A $.  $d x B $.  $d x ps $.
+    $( Membership in a restricted class abstraction, using implicit
+       substitution.  (Closed theorem version of ~ elrab3 .)  (Contributed by
+       Thierry Arnoux, 31-Aug-2017.) $)
+    elrab3t $p |- ( ( A. x ( x = A -> ( ph <-> ps ) ) /\ A e. B ) ->
+                                           ( A e. { x e. B | ph } <-> ps ) ) $=
+      ( cv wceq wb wi wal wcel wa cab crab simpr nfa1 nfv nfan simpl 19.21bi
+      eleq1 biimparc biantrurd bibi1d adantl mpbid alrimi elabgt syl2anc df-rab
+      pm5.74da eleq2i bibi1i sylibr ) CFZDGZABHZIZCJZDEKZLZDUOEKZALZCMZKZBHZDAC
+      ENZKZBHVAUTUPVCBHZIZCJVFUSUTOVAVJCUSUTCURCPUTCQRVAURVJVAURCUSUTSTUTURVJHU
+      SUTUPUQVIUTUPLZAVCBVKVBAUPVBUTUODEUAUBUCUDUKUEUFUGVCBCDEUHUIVHVEBVGVDDACE
+      UJULUMUN $.
+  $}
+
+  ${
     $d x ps $.  $d x y A $.  $d x y B $.
     elrab.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     $( Membership in a restricted class abstraction, using implicit
