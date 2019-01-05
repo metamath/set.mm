@@ -45881,20 +45881,6 @@ $)
       CDEFCDEGZAHZBHZEIZACJZBDKZLZUMUPAMZBDKZLZABCDENUSVBURVAUMUQUTBDUPACOPQUMV
       AURUMUTUQBDUMUTUNCRZUPLZAMUQUMUPVDAUMUPVCUMECSZUPVCTCDEUBVEUPVCCUNUOEUCUA
       UDUEUFUPACUGUHUIUJUKUL $.
-
-    $( A relation equivalent to the existence of an onto mapping.  The
-       right-hand ` f ` is not necessarily a function.  (Contributed by NM,
-       20-Mar-2007.) $)
-    exfo $p |- ( E. f f : A -onto-> B <->
-           E. f ( A. x e. A E! y e. B x f y /\ A. x e. B E. y e. A y f x ) ) $=
-      ( vg cv wfo wex wbr wreu wral wrex wa wf dffo4 wss dff4 sylibr foeq1 wceq
-      cxp simprbi anim1i sylbi eximi cin crn wcel brinxp reubidva ralimia inss2
-      biimpd jctil rninxp biimpri anim12i dffo2 vex inex1 exlimiv cbvexv impbii
-      spcev syl sylib ) CDEGZHZEIZAGZBGZVHJZBDKZACLZVLVKVHJBCMADLZNZEIZVIVQEVIC
-      DVHOZVPNVQBACDVHPVSVOVPVSVHCDUBZQVOABCDVHRUCUDUEUFVRCDFGZHZFIZVJVQWCEVQCD
-      VHVTUGZHZWCVQCDWDOZWDUHDUAZNWEVOWFVPWGVOWDVTQZVKVLWDJZBDKZACLZNWFVOWKWHVN
-      WJACVKCUIZVNWJWLVMWIBDVKVLCDVHUJUKUNULVHVTUMUOABCDWDRSWGVPBACDVHUPUQURCDW
-      DUSSWBWEFWDVHVTEUTVACDWAWDTVEVFVBWBVIFECDWAVHTVCVGVD $.
   $}
 
   ${
