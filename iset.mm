@@ -46167,17 +46167,19 @@ $)
     $( A function maps a singleton to a singleton iff it is the singleton of an
        ordered pair.  (Contributed by NM, 10-Dec-2003.) $)
     fsn $p |- ( F : { A } --> { B } <-> F = { <. A , B >. } ) $=
-      ( vx vy csn cop wceq cv wcel wb wal wa elsn weu eleq1d bitr4i bitr2i wreu
-      wf opelf anbi12i sylib ex snid feu mpan2 anbi1i opeq2 pm5.32i ancom eubii
-      eueq1 biantru euanv df-reu 3bitr4i sylibr opeq12 syl5ibrcom impbid syl6bb
-      opex elsnc opth2 wrel frel relsnop eqrel sylancl mpbird wf1o f1osn f1oeq1
-      alrimivv mpbiri f1of syl impbii ) AHZBHZCUBZCABIZHZJZWDWGFKZGKZIZCLZWJWFL
-      ZMZGNFNZWDWMFGWDWKWHAJZWIBJZOZWLWDWKWQWDWKWQWDWKOWHWBLZWIWCLZOWQWBWCWHWIC
-      UCWRWOWSWPFAPGBPZUDUEUFWDWKWQWECLZWDAWIIZCLZGWCUAZXAWDAWBLXDADUGGWBWCACUH
-      UIXAWPOZGQZWSXCOZGQXAXDXEXGGXGWPXCOZXEWSWPXCWTUJXHWPXAOXEWPXCXAWPXBWECWIB
-      AUKRULXAWPUMSTUNXAXAWPGQZOXFXIXAGBEUOUPXAWPGUQSXCGWCURUSUTWQWJWECWHWIABVA
-      RVBVCWLWJWEJWQWJWEWHWIVEVFWHWIABDEVGTVDVQWDCVHWFVHWGWNMWBWCCVIABDEVJFGCWF
-      VKVLVMWGWBWCCVNZWDWGXJWBWCWFVNABDEVOWBWCCWFVPVRWBWCCVSVTWA $.
+      ( vx vy csn cop wceq cv wcel wb wal wa weu eleq1d bitr4i bitr2i
+      elsn wf opelf anbi12i sylib ex wreu snid feu mpan2 anbi1i opeq2
+      pm5.32i ancom eubii eueq1 euanv df-reu sylibr opeq12 syl5ibrcom
+      biantru 3bitr4i impbid sopex elsnc syl6bb alrimivv wrel relsnop
+      opth2 frel eqrel sylancl mpbird wf1o f1osn f1oeq1 mpbiri impbii
+      f1of syl ) AHZBHZCUAZCABIZHZJZWDWGFKZGKZIZCLZWJWFLZMZGNFNZWDWMF
+      GWDWKWHAJZWIBJZOZWLWDWKWQWDWKWQWDWKOWHWBLZWIWCLZOWQWBWCWHWICUBW
+      RWOWSWPFATGBTZUCUDUEWDWKWQWECLZWDAWIIZCLZGWCUFZXAWDAWBLXDADUGGW
+      BWCACUHUIXAWPOZGPZWSXCOZGPXAXDXEXGGXGWPXCOZXEWSWPXCWTUJXHWPXAOX
+      EWPXCXAWPXBWECWIBAUKQULXAWPUMRSUNXAXAWPGPZOXFXIXAGBEUOVAXAWPGUP
+      RXCGWCUQVBURWQWJWECWHWIABUSQUTVCWLWJWEJWQWJWEFGVDVEWHWIABDEVJSV
+      FVGWDCVHWFVHWGWNMWBWCCVKABDEVIFGCWFVLVMVNWGWBWCCVOZWDWGXJWBWCWF
+      VOABDEVPWBWCCWFVQVRWBWCCVTWAVS $.
   $}
 
   ${
