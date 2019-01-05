@@ -45749,9 +45749,10 @@ $)
        (Contributed by Mario Carneiro, 24-Dec-2013.)  (Revised by Mario
        Carneiro, 20-Aug-2014.) $)
     ralrn $p |- ( F Fn A -> ( A. x e. ran F ph <-> A. y e. A ps ) ) $=
-      ( wfn cv cfv crn cvv wcel wa fvex a1i wceq wrex fvelrnb eqcom wb ralxfr2d
-      rexbii syl6bb adantl ) FEHZABCDDIZFJZFKZELUHLMUFUGEMNUGFOPUFCIZUIMUHUJQZD
-      ERUJUHQZDERDEUJFSUKULDEUHUJTUCUDULABUAUFGUEUB $.
+      ( wfn cv cfv crn cvv wcel funfvex funfni wceq wrex eqcom rexbii
+      fvelrnb syl6bb wb adantl ralxfr2d ) FEHZABCDDIZFJZFKZELUGLMEUFF
+      UFFNOUECIZUHMUGUIPZDEQUIUGPZDEQDEUIFTUJUKDEUGUIRSUAUKABUBUEGUCU
+      D $.
   $}
 
   ${
