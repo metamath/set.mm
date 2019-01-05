@@ -46201,13 +46201,16 @@ $)
        ordered pair.  (Contributed by NM, 19-May-2004.) $)
     fsn2 $p |- ( F : { A } --> B <->
                ( ( F ` A ) e. B /\ F = { <. A , ( F ` A ) >. } ) ) $=
-      ( csn wf cfv wcel cop wceq snid ffvelrn mpan2 wfn ffn crn dffn3 cima syl
-      wa biimpi wb cdm imadmrn fndm imaeq2d syl5eqr fnsnfv eqtr4d mpbid jca wss
-      feq3 snssi fss ancoms sylan impbii fvex fsn anbi2i bitri ) AEZBCFZACGZBHZ
-      VCVEEZCFZTZVFCAVEIEJZTVDVIVDVFVHVDAVCHZVFADKZVCBACLMVDCVCNZVHVCBCOVMVCCPZ
-      CFZVHVMVOVCCQUAVMVNVGJVOVHUBVMVNCVCRZVGVMVNCCUCZRVPCUDVMVQVCCVCCUEUFUGVMV
-      KVGVPJVLVCACUHMUIVNVGVCCUMSUJSUKVFVGBULZVHVDVEBUNVHVRVDVCVGBCUOUPUQURVHVJ
-      VFAVECDACUSUTVAVB $.
+      ( csn wf cfv cvv wcel cop wceq wa wfn ffn snid funfvex mpan2 wb
+      syl cima funfni elex adantr ffvelrn crn biimpi cdm imadmrn fndm
+      dffn3 imaeq2d syl5eqr fnsnfv eqtr4d feq3 mpbid jca snssi ancoms
+      wss fss sylan impbii fsng mpan anbi2d syl5bb pm5.21nii ) AEZBCF
+      ZACGZHIZVKBIZCAVKJEKZLZVJCVIMZVLVIBCNZVPAVIIZVLADOZVLVIACACPUAQ
+      SVMVLVNVKBUBUCVJVMVIVKEZCFZLZVLVOVJWBVJVMWAVJVRVMVSVIBACUDQVJVP
+      WAVQVPVICUEZCFZWAVPWDVICUJUFVPWCVTKWDWARVPWCCVITZVTVPWCCCUGZTWE
+      CUHVPWFVICVICUIUKULVPVRVTWEKVSVIACUMQUNWCVTVICUOSUPSUQVMVTBUTZW
+      AVJVKBURWAWGVJVIVTBCVAUSVBVCVLWAVNVMAHIVLWAVNRDAVKHHCVDVEVFVGVH
+      $.
   $}
 
   $( The cross product of two singletons.  (Contributed by Mario Carneiro,
