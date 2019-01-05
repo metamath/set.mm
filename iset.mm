@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Jan-2019
+$( iset.mm - Version of 4-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -45826,25 +45826,16 @@ $)
 
   ${
     $d f g x y z A $.  $d f g x y z B $.  $d x y z F $.
-    $( Alternate definition of a mapping.  (Contributed by NM, 20-Mar-2007.) $)
-    dff3 $p |- ( F : A --> B <->
-              ( F C_ ( A X. B ) /\ A. x e. A E! y x F y ) ) $=
-      ( vz cxp wss cv wbr weu wa wcel wex cop adantr sylibr sylanbrc wi syl6 wf
-      wral fssxp wmo cfv wfun cdm ffun fdm eleq2d biimpar funfvop syl2anc df-br
-      fvex breq2 spcev syl funmo eu5 ralrimiva jca wfn crn wceq wrel xpss mpan2
-      wal cvv sstr df-rel df-ral eumo imim2i adantl ssel syl5bi opelxp1 exlimdv
-      wn con3d exmo ori pm2.61d ex alimdv imp dffun6 dmxpss syl6ss breq1 eubidv
-      dmss rspccv euex eldm ssrdv anim12i eqss df-fn rnss rnxpss df-f impbii
-      vex ) CDEUAZECDGZHZAIZBIZEJZBKZACUBZLZXGXIXNCDEUCXGXMACXGXJCMZLZXLBNZXLBU
-      DZXMXQXJXJEUEZEJZXRXQXJXTOEMZYAXQEUFZXJEUGZMZYBXGYCXPCDEUHZPXGYEXPXGYDCXJ
-      CDEUIUJUKXJEULUMXJXTEUNQXLYABXTXJEUOXKXTXJEUPUQURXGXSXPXGYCXSYFBXJEUSURPX
-      LBUTRVAVBXOECVCZEVDZDHZXGXOYCYDCVEZYGXOEVFZXSAVIZYCXIYKXNXIEVJVJGZHZYKXIX
-      HYMHYNCDVGEXHYMVKVHEVLQPXIXNYLXNXPXMSZAVIXIYLXMACVMXIYOXSAXIYOXSXIYOLXPXS
-      YOXPXSSXIXMXSXPXLBVNVOVPXIXPWAZXSSYOXIYPXRWAXSXIXRXPXIXLXPBXIXLXJXKOZXHMZ
-      XPXLYQEMXIYRXJXKEUNEXHYQVQVRXJXKCDVSTVTWBXRXSXLBWCWDTPWEWFWGVRWHABEWIRXOY
-      DCHZCYDHZLYJXIYSXNYTXIYDXHUGCEXHWNCDWJWKXNFCYDXNFIZCMUUAXKEJZBKZUUAYDMZXM
-      UUCAUUACXJUUAVEXLUUBBXJUUAXKEWLWMWOUUCUUBBNUUDUUBBWPBUUAEFXFWQQTWRWSYDCWT
-      QECXARXIYIXNXIYHXHVDDEXHXBCDXCWKPCDEXDRXE $.
+    $( Property of a mapping.  (Contributed by Jim Kingdon, 4-Jan-2019.) $)
+    dff3im $p |- ( F : A --> B ->
+        ( F C_ ( A X. B ) /\ A. x e. A E! y x F y ) ) $=
+      ( wf cxp wss cv wbr weu wral fssxp wcel wa wex adantr syl2anc cvv
+      syl wmo cfv cop wfun cdm ffun eleq2d biimpar funfvop df-br sylibr
+      fdm wi funfvex breq2 spcegv mpd funmo eu5 sylanbrc ralrimiva jca
+      ) CDEFZECDGHAIZBIZEJZBKZACLCDEMVCVGACVCVDCNZOZVFBPZVFBUAZVGVIVDVD
+      EUBZEJZVJVIVDVLUCENZVMVIEUDZVDEUEZNZVNVCVOVHCDEUFZQZVCVQVHVCVPCVD
+      CDEULUGUHZVDEUIRVDVLEUJUKVIVOVQVMVJUMZVSVTVOVQOVLSNWAVDEUNVFVMBVL
+      SVEVLVDEUOUPTRUQVCVKVHVCVOVKVRBVDEURTQVFBUSUTVAVB $.
 
     $( Alternate definition of a mapping.  (Contributed by NM, 20-Mar-2007.) $)
     dff4 $p |- ( F : A --> B <->
