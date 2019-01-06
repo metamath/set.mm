@@ -1,4 +1,4 @@
-$( iset.mm - Version of 4-Jan-2019
+$( iset.mm - Version of 5-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -37142,6 +37142,20 @@ $)
     $( Omega is a subset of ` On ` .  (Contributed by NM, 13-Jun-1994.) $)
     omsson $p |- om C_ On $=
       ( vx com con0 cv nnon ssriv ) ABCADEF $.
+  $}
+
+  ${
+    $d x z $.
+    $( Omega is a limit ordinal.  Theorem 2.8 of [BellMachover] p. 473.
+       (Contributed by NM, 26-Mar-1995.)  (Proof rewritten by Jim Kingdon,
+       5-Jan-2019.) $)
+    limom $p |- Lim om $=
+      ( vx vz com wlim word c0 wcel cuni wceq ordom peano1 cv wa wex csuc sucex
+      wi vex isseti peano2 sucid jctil eleq2 eleq1 anbi12d syl5ibr eximii eluni
+      19.37aiv sylibr ssriv wss orduniss ax-mp eqssi df-ilim mpbir3an ) CDCEZFC
+      GCCHZIJKCUSACUSALZCGZUTBLZGZVBCGZMZBNUTUSGVAVEBVBUTOZIZVAVEQBBVFUTARZPSVA
+      VEVGUTVFGZVFCGZMVAVJVIUTTUTVHUAUBVGVCVIVDVJVBVFUTUCVBVFCUDUEUFUGUIBUTCUHU
+      JUKURUSCULJCUMUNUOCUPUQ $.
   $}
 
   $( A class belongs to omega iff its successor does.  (Contributed by NM,
