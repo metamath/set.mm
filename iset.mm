@@ -37173,6 +37173,21 @@ $)
       imp ) BCDBEFZBCGZHZBAIJGAEKZBCLQSTQRTABMNPO $.
   $}
 
+  ${
+    $d x y A $.
+    $( A natural number is either zero or nonzero.  Decidable equality for
+       natural numbers is a special case of the law of the excluded middle
+       which holds in most constructive set theories including ours.
+       (Contributed by Jim Kingdon, 5-Jan-2019.) $)
+    nndc $p |- ( A e. om -> DECID A = (/) ) $=
+      ( vx vy com wcel c0 wceq wn wo wdc csuc eqeq1 notbid orbi12d eqid
+      cv orci peano3 neneqd olcd a1d finds df-dc sylibr ) ADEAFGZUEHZIZ
+      UEJBPZFGZUIHZIFFGZUKHZICPZFGZUNHZIZUMKZFGZURHZIZUGBCAUIUIUKUJULUH
+      FFLZUIUIUKVAMNUHUMGZUIUNUJUOUHUMFLZVBUIUNVCMNUHUQGZUIURUJUSUHUQFL
+      ZVDUIURVEMNUHAGZUIUEUJUFUHAFLZVFUIUEVGMNUKULFOQUMDEZUTUPVHUSURVHU
+      QFUMRSTUAUBUEUCUD $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                               Relations
