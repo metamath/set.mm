@@ -46366,15 +46366,6 @@ $)
       UJUKWDWPWGWQWOWCVTWNWBWLWAVRVRVSEZWLWAKDULZVRVSCUMUNUOUPUQWGWMWPWGWHWRWMW
       FVKWIWHVRAURWKUSWSWMVSVRVTVRVTUTVAVBVDVEVFVGVHVIVJ $.
 
-    $( A function restricted to a singleton.  (Contributed by Mario Carneiro,
-       16-Nov-2014.) $)
-    funressn $p |- ( Fun F -> ( F |` { B } ) C_ { <. B , ( F ` B ) >. } ) $=
-      ( wfun cdm wcel csn cres cfv cop wss wceq wfn funfn fnressn sylanb eqimss
-      wa syl wn c0 cin disjsn fnresdisj sylbi syl5bbr biimpa syl6eqss pm2.61dan
-      wb 0ss ) BCZABDZEZBAFZGZAABHIFZJZUKUMQUOUPKZUQUKBULLZUMURBMZULABNOUOUPPRU
-      KUMSZQUOTUPUKVAUOTKZVAULUNUATKZUKVBULAUBUKUSVCVBUIUTULUNBUCUDUEUFUPUJUGUH
-      $.
-
     $( The value of a function restricted to a singleton.  (Contributed by NM,
        9-Oct-2004.) $)
     fressnfv $p |- ( ( F Fn A /\ B e. A ) ->
