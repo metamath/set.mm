@@ -47955,29 +47955,6 @@ $)
     $d w x y z R $.  $d w x y z S $.
     isofrlem.1 $e |- ( ph -> H Isom R , S ( A , B ) ) $.
     isofrlem.2 $e |- ( ph -> ( H " x ) e. _V ) $.
-    $( Lemma for ~ isofr .  (Contributed by NM, 29-Apr-2004.)  (Revised by
-       Mario Carneiro, 18-Nov-2014.) $)
-    isofrlem $p |- ( ph -> ( S Fr B -> R Fr A ) ) $=
-      ( vy vw vz cv c0 wa cima wceq wi syl wcel wfr wss wne ccnv wrex wf1o wiso
-      csn cin wal isof1o wfn f1ofn wex n0 w3a cfv fnfvima 3expia exlimdv syl5bi
-      ne0i expimpd wfo f1ofo crn imassrn forn syl5sseq jctild dffr3 sseq1 neeq1
-      cvv anbi12d ineq1 eqeq1d rexeqbi1dv imbi12d spcgv syl5d wfun adantr simpl
-      f1ofun fvelima syl2an simpr wb ssel imdistani isomin sneq ineq2d sylan9bb
-      imaeq2d syl5ibr exp42 imp com3l com4t reximdvai mpd rexlimdvaa ex adantrd
-      a2d syld alrimdv syl6ibr ) ADFUAZBMZCUBZXLNUCZOZXLEUDJMZUHPUINQZJXLUEZRZB
-      UJCEUAAXKXSBAXKXOGXLPZFUDZKMZUHZPZUIZNQZKXTUEZRXSAXOXTDUBZXTNUCZOZXKYGACD
-      GUFZXOYJRACDEFGUGZYKHCDEFGUKSZYKXOYIYHYKGCULZXOYIRCDGUMYNXMXNYIXNXPXLTZJU
-      NYNXMOZYIJXLUOYPYOYIJYNXMYOYIYNXMYOUPXPGUQZXTTYICXLGXPURXTYQVBSUSUTVAVCSY
-      KCDGVDZYHCDGVEYRGVFXTDGXLVGCDGVHVISVJSXKLMZDUBZYSNUCZOZYSYDUIZNQZKYSUEZRZ
-      LUJZAYJYGRZLKDFVKAXTVNTUUGUUHRIUUFUUHLXTVNYSXTQZUUBYJUUEYGUUIYTYHUUAYIYSX
-      TDVLYSXTNVMVOUUDYFKYSXTUUIUUCYENYSXTYDVPVQVRVSVTSVAWAAXOYGXRAXMYGXRRZXNAX
-      MUUJAXMOZYFXRKXTUUKYBXTTZYFOZOZYQYBQZJXLUEZXRUUKGWBZUULUUPUUMUUKYKUUQAYKX
-      MYMWCCDGWESUULYFWDJYBXLGWFWGUUNUUOXQJXLUUKUUMYOUUOXQRRYOUUOUUKUUMXQUUKYOU
-      UOUUMXQRZAXMYOUUOUURRRAXMYOUUOUURUUMXQAXMYOOZOZUUOOYFUULYFWHUUTXQXTYAYQUH
-      ZPZUIZNQZUUOYFAYLXMXPCTZOXQUVDWIUUSHXMYOUVEXLCXPWJWKCDXLXPEFGWLWGUUOUVCYE
-      NUUOUVBYDXTUUOUVAYCYAYQYBWMWPWNVQWOWQWRWSWTXAWSXBXCXDXEXFXGXHXIBJCEVKXJ
-      $.
-
     $( Lemma for ~ isose .  (Contributed by Mario Carneiro, 23-Jun-2015.) $)
     isoselem $p |- ( ph -> ( R Se A -> S Se B ) ) $=
       ( vy vz cv csn cima cin cvv wcel wral wi wceq wse ccnv cfv dfse2 r19.21bi
@@ -47994,15 +47971,6 @@ $)
 
   ${
     $d x A $.  $d x B $.  $d x H $.  $d x R $.  $d x S $.  $d x V $.
-    $( An isomorphism preserves well-foundedness.  Proposition 6.32(1) of
-       [TakeutiZaring] p. 33.  (Contributed by NM, 30-Apr-2004.)  (Revised by
-       Mario Carneiro, 18-Nov-2014.) $)
-    isofr $p |- ( H Isom R , S ( A , B ) -> ( R Fr A <-> S Fr B ) ) $=
-      ( vx wiso wfr ccnv id wf1o wfun cima cvv wcel isof1o f1ofun funimaex 3syl
-      isofrlem wi isocnv cv vex syl impbid ) ABCDEGZACHZBDHZUGBADCEIZGZUHUIUAAB
-      CDEUBUKFBADCUJUKJUKBAUJKUJLUJFUCZMNOBADCUJPBAUJQUJULFUDZRSTUEUGFABCDEUGJU
-      GABEKELEULMNOABCDEPABEQEULUMRSTUF $.
-
     $( An isomorphism preserves set-like relations.  (Contributed by Mario
        Carneiro, 23-Jun-2015.) $)
     isose $p |- ( H Isom R , S ( A , B ) -> ( R Se A <-> S Se B ) ) $=
@@ -48010,14 +47978,6 @@ $)
       id cv 3syl ccnv isocnv 4syl impbid ) ABCDEGZACHBDHUFFABCDEUFSUFABEIEJEFTZ
       KLMABCDENABEOEUGFPZQUARUFFBADCEUBZABCDEUCZUFBADCUIGBAUIIUIJUIUGKLMUJBADCU
       INBAUIOUIUGUHQUDRUE $.
-
-    $( A weak form of ~ isofr that does not need Replacement.  (Contributed by
-       Mario Carneiro, 18-Nov-2014.) $)
-    isofr2 $p |- ( ( H Isom R , S ( A , B ) /\ B e. V ) ->
-                   ( S Fr B -> R Fr A ) ) $=
-      ( vx wiso wcel wa simpl cv cima wss cvv crn imassrn wf1o wf isof1o syl5ss
-      f1of frn 3syl ssexg sylan isofrlem ) ABCDEHZBFIZJGABCDEUHUIKUHEGLZMZBNUIU
-      KOIUHUKEPZBEUJQUHABERABESULBNABCDETABEUBABEUCUDUAUKBFUEUFUG $.
   $}
 
   ${
@@ -48070,26 +48030,6 @@ $)
   $}
 
   ${
-    $d x y z w A $.  $d x y z w B $.  $d x y R $.  $d x y z w S $.
-    $d x y z w H $.
-    $( An isomorphism preserves well-ordering.  Proposition 6.32(3) of
-       [TakeutiZaring] p. 33.  (Contributed by NM, 30-Apr-2004.)  (Revised by
-       Mario Carneiro, 18-Nov-2014.) $)
-    isowe $p |- ( H Isom R , S ( A , B ) -> ( R We A <-> S We B ) ) $=
-      ( wiso wfr wor wa wwe isofr isoso anbi12d df-we 3bitr4g ) ABCDEFZACGZACHZ
-      IBDGZBDHZIACJBDJPQSRTABCDEKABCDELMACNBDNO $.
-
-    $( A weak form of ~ isowe that does not need Replacement.  (Contributed by
-       Mario Carneiro, 18-Nov-2014.) $)
-    isowe2 $p |- ( ( H Isom R , S ( A , B ) /\ A. x ( H " x ) e. _V ) ->
-                   ( S We B -> R We A ) ) $=
-      ( vy wiso cv cima cvv wcel wal wa wfr wor wwe simpl weq df-we isofrlem wi
-      imaeq2 eleq1d spv adantl isosolem adantr anim12d 3imtr4g ) BCDEFHZFAIZJZK
-      LZAMZNZCEOZCEPZNBDOZBDPZNCEQBDQUPUQUSURUTUPGBCDEFUKUORUOFGIZJZKLZUKUNVCAG
-      AGSUMVBKULVAFUCUDUEUFUAUKURUTUBUOBCDEFUGUHUICETBDTUJ $.
-  $}
-
-  ${
     $d x y z w v u A $.  $d x y v u B $.  $d x y z w v u H $.
     $d x y z w v u R $.  $d v u S $.
     $( Any one-to-one onto function determines an isomorphism with an induced
@@ -48138,79 +48078,6 @@ $)
       WDYAYBWOVJZWDCDWJGYHVGTVHYDWFWJXCXDEWDYCWMWNVKYDWGWEMZXCWFMZYDWEWGYESYDWD
       YAYKYLVLYFYGCDWFWEGVMTVNYDWKWIMZXDWJMZYDWIWKYISYDWDYBYMYNVLYFYJCDWJWIGVMT
       VNVOVPVQVRVSVTWAIJABCDEFGWBWC $.
-  $}
-
-  ${
-    $d z w R $.  $d x y z w S $.  $d z w A $.  $d z w B $.  $d x y z w F $.
-    f1owe.1 $e |- R = { <. x , y >. | ( F ` x ) S ( F ` y ) } $.
-    $( Well-ordering of isomorphic relations.  (Contributed by NM,
-       4-Mar-1997.) $)
-    f1owe $p |- ( F : A -1-1-onto-> B -> ( S We B -> R We A ) ) $=
-      ( vz vw wf1o wwe cv wbr cfv wb wral weq fveq2 breq1d breq2d brabg wa wiso
-      rgen2a df-isom isowe sylbir mpan2 biimprd ) CDGKZCELZDFLZUKIMZJMZENUNGOZU
-      OGOZFNZPZJCQICQZULUMPZUSIJCAMZGOZBMZGOZFNUPVEFNURABUNUOCCEAIRVCUPVEFVBUNG
-      STBJRVEUQUPFVDUOGSUAHUBUEUKUTUCCDEFGUDVAIJCDEFGUFCDEFGUGUHUIUJ $.
-  $}
-
-  ${
-    $d A a b c $.  $d R b c $.  $d F a b c $.
-    $( A set-like well-ordering has no nontrivial automorphisms.  (Contributed
-       by Stefan O'Rear, 16-Nov-2014.)  (Revised by Mario Carneiro,
-       25-Jun-2015.) $)
-    weniso $p |- ( ( R We A /\ R Se A /\ F Isom R , R ( A , A ) ) ->
-        F = ( _I |` A ) ) $=
-      ( va vc vb wceq cfv wral wn wbr wa syl wcel wi fveq2 id eqeq12d wb adantr
-      wwe wse wiso w3a cid cres cv crab c0 wne wrex rabn0 rexnal bitri wreu wss
-      simpl1 simpl2 ssrab2 a1i simpr wereu2 syl22anc reurex notbid elrab ralrab
-      ex con34b bicomi ralbii wf1o wf simpl3 isof1o f1of ffvelrnd breq1 imbi12d
-      simprl rspcv com23 f1of1 f1fveq syl12anc pm2.21 ad2antll sylbid syld ccnv
-      imp wf1 f1ocnv 3syl isorel f1ocnvfv2 syl2anc breq1d bitr2d biimpa simplrr
-      sylc adantl fveq2d 3eqtr3d wo simprr weso sotrieq con2bid mpbird mpjaodan
-      wor syl5bi rexlimdv syl5bir pm2.18d fvresi biimprd ralimia 3ad2ant3 f1ofn
-      eqeq2d wfn fnresi eqfnfv ) ABUAZABUBZAABBCUCZUDZCUEAUFZGZDUGZCHZYMYKHZGZD
-      AIZYJYNYMGZDAIZYQYJYSYSJZYRJZDAUHZUIUJZYJYSUUCUUADAUKYTUUADAULYRDAUMUNYJU
-      UCEUGZFUGZBKZJZEUUBIZFUUBUKZYSYJUUCUUIYJUUCLZUUHFUUBUOZUUIUUJYGYHUUBAUPZU
-      UCUUKYGYHYIUUCUQYGYHYIUUCURUULUUJUUADAUSUTYJUUCVAFEAUUBBVBVCUUHFUUBVDMVHY
-      JUUHYSFUUBUUEUUBNUUEANZUUECHZUUEGZJZLZYJUUHYSOZUUAUUPDUUEAYMUUEGZYRUUOUUS
-      YNUUNYMUUEYMUUECPUUSQRVEVFYJUUQUURUUHUUFUUDCHZUUDGZOZEAIZYJUUQLZYSUUHUVAJ
-      ZUUGOZEAIUVCUUAUVEUUGEDAYMUUDGZYRUVAUVGYNUUTYMUUDYMUUDCPUVGQRVEVGUVFUVBEA
-      UVBUVFUUFUVAVIVJVKUNUVDUUNUUEBKZUVCYSOUUEUUNBKZUVDUVHLUVCUUNCHZUUNGZYSUVD
-      UVHUVCUVKOUVDUVCUVHUVKUVDUUNANZUVCUVHUVKOZOUVDAAUUECUVDAACVLZAACVMUVDYIUV
-      NYGYHYIUUQVNZAABBCVOZMZAACVPMYJUUMUUPVTZVQZUVBUVMEUUNAUUDUUNGZUUFUVHUVAUV
-      KUUDUUNUUEBVRUVTUUTUVJUUDUUNUUDUUNCPUVTQRVSWAMWBWKUVDUVKYSOUVHUVDUVKUUOYS
-      UVDAACWLZUVLUUMUVKUUOSUVDUVNUWAUVQAACWCMUVSUVRAAUUNUUECWDWEUUPUUOYSOYJUUM
-      UUOYSWFZWGWHTWIUVDUVILZUVCUUECWJZHZCHZUWEGZYSUWCUWEANZUWEUUEBKZUVCUWGOUVD
-      UWHUVIUVDAAUUEUWDUVDUVNAAUWDVLAAUWDVMUVQAACWMAAUWDVPWNUVRVQZTUVDUVIUWIUVD
-      UWIUWFUUNBKZUVIUVDYIUWHUUMUWIUWKSUVOUWJUVRAAUWEUUEBBCWOWEUVDUWFUUEUUNBUVD
-      UVNUUMUWFUUEGZUVQUVRAAUUECWPWQZWRWSWTUWHUVCUWIUWGUVBUWIUWGOEUWEAUUDUWEGZU
-      UFUWIUVAUWGUUDUWEUUEBVRUWNUUTUWFUUDUWEUUDUWECPUWNQRVSWAWBXBUVDUWGYSOUVIUV
-      DUWGYSUVDUWGLZUUPUUOYSYJUUMUUPUWGXAUWOUWFCHZUWFUUNUUEUWGUWPUWFGUVDUWFUWEC
-      PXCUVDUWPUUNGUWGUVDUWFUUECUWMXDTUVDUWLUWGUWMTXEUWBXBVHTWIUVDUVHUVIXFZUUPY
-      JUUMUUPXGUVDUUOUWQUVDABXMZUVLUUMUUOUWQJSUVDYGUWRYGYHYIUUQUQABXHMUVSUVRAUU
-      NUUEBXIWEXJXKXLXNVHXNXOWIXPXQYRYPDAYMANZYPYRUWSYOYMYNAYMXRYCXSXTMYJCAYDZY
-      KAYDZYLYQSYJUVNUWTYIYGUVNYHUVPYAAACYBMUXAYJAYEUTDACYKYFWQXK $.
-
-    $( Thus, there is at most one isomorphism between any two set-like
-       well-ordered classes.  Class version of ~ wemoiso .  (Contributed by
-       Mario Carneiro, 25-Jun-2015.) $)
-    weisoeq $p |- ( ( ( R We A /\ R Se A ) /\
-      ( F Isom R , S ( A , B ) /\ G Isom R , S ( A , B ) ) ) -> F = G ) $=
-      ( wwe wse wa wiso wceq ccnv ccom cid cres wf1 wf1o isof1o f1of1 3syl id
-      isocnv isotr syl2anr weniso sylan2 simprl simprr f1eqcocnv syl2anc mpbird
-      3expa wb ) ACGZACHZIZABCDEJZABCDFJZIZIZEFKZELZFMZNAOKZUSUPAACCVCJZVDURURB
-      ADCVBJVEUQURUAABCDEUBABACDCVBFUCUDUNUOVEVDACVCUEULUFUTABEPZABFPZVAVDUMUTU
-      QABEQVFUPUQURUGABCDERABESTUTURABFQVGUPUQURUHABCDFRABFSTABEFUIUJUK $.
-
-    $( Thus, there is at most one isomorphism between any two set-like
-       well-ordered classes.  Class version of ~ wemoiso2 .  (Contributed by
-       Mario Carneiro, 25-Jun-2015.) $)
-    weisoeq2 $p |- ( ( ( S We B /\ S Se B ) /\
-      ( F Isom R , S ( A , B ) /\ G Isom R , S ( A , B ) ) ) -> F = G ) $=
-      ( wwe wse wa wiso wceq ccnv isocnv anim12i weisoeq wrel wf1o isof1o 3syl
-      f1orel sylan2 wb simprl simprr cnveqb syl2anc mpbird ) BDGBDHIZABCDEJZABC
-      DFJZIZIZEFKZELZFLZKZUKUHBADCUNJZBADCUOJZIUPUIUQUJURABCDEMABCDFMNBADCUNUOO
-      UAULEPZFPZUMUPUBULUIABEQUSUHUIUJUCABCDERABETSULUJABFQUTUHUIUJUDABCDFRABFT
-      SEFUEUFUG $.
   $}
 
   ${
