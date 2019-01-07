@@ -46386,22 +46386,6 @@ $)
     $.
 
   ${
-    $d x A $.  $d x F $.
-    fnsnb.1 $e |- A e. _V $.
-    $( A function whose domain is a singleton can be represented as a singleton
-       of an ordered pair.  (Contributed by Jonathan Ben-Naim, 3-Jun-2011.)
-       Revised to add reverse implication.  (Revised by NM, 29-Dec-2018.) $)
-    fnsnb $p |- ( F Fn { A } <-> F = { <. A , ( F ` A ) >. } ) $=
-      ( vx csn wfn cfv cop wceq cv wcel wal cres fnresdm wfun syl mpbiri sylibr
-      wb wa wss fnfun funressn eqsstr3d sseld elsni syl6 cdm df-fn eleq2 anim2i
-      snid sylbi funfvop syl5ibrcom impbid elsn bibi2i alrimiv dfcleq fvex fnsn
-      eleq1 fneq1 impbii ) BAEZFZBAABGZHZEZIZVGDJZBKZVLVJKZSZDLVKVGVODVGVMVLVII
-      ZSVOVGVMVPVGVMVNVPVGBVJVLVGBBVFMZVJVFBNVGBOZVQVJUAVFBUBABUCPUDUEVLVIUFUGV
-      GVMVPVIBKZVGVRABUHZKZTZVSVGVRVTVFIZTWBBVFUIWCWAVRWCWAAVFKACULVTVFAUJQUKUM
-      ABUNPVLVIBVCUOUPVNVPVMDVIUQURRUSDBVJUTRVKVGVJVFFAVHCABVAVBVFBVJVDQVE $.
-  $}
-
-  ${
     $d x A $.  $d x B $.
     $( Express a singleton function in maps-to notation.  (Contributed by NM,
        6-Jun-2006.)  (Proof shortened by Andrew Salmon, 22-Oct-2011.)  (Revised
