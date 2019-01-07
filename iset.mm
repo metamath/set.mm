@@ -46357,13 +46357,14 @@ $)
     fnressn $p |- ( ( F Fn A /\ B e. A ) ->
                   ( F |` { B } ) = { <. B , ( F ` B ) >. } ) $=
       ( vx wcel wfn csn cres cfv cop wceq cv wi sneq reseq2d fveq2 opeq12 mpdan
-      wa cvv sneqd eqeq12d imbi2d wss vex snss fnssres sylan2b wf fsn2 biantrur
-      dffn2 ssnid fvres ax-mp opeq2i eqeq2i bitr3i 3bitri expcom vtoclga impcom
-      fvex sneqi sylib ) BAECAFZCBGZHZBBCIZJZGZKZVFCDLZGZHZVMVMCIZJZGZKZMVFVLMD
-      BAVMBKZVSVLVFVTVOVHVRVKVTVNVGCVMBNOVTVQVJVTVPVIKVQVJKVMBCPVMVPBVIQRUAUBUC
-      VFVMAEZVSVFWASVOVNFZVSWAVFVNAUDWBVMADUEZUFAVNCUGUHWBVNTVOUIVMVOIZTEZVOVMW
-      DJZGZKZSZVSVNVOULVMTVOWCUJWIWHVSWEWHVMVOVCUKWGVRVOWFVQWDVPVMVMVNEWDVPKDUM
-      VMVNCUNUOUPVDUQURUSVEUTVAVB $.
+      wa cvv sneqd eqeq12d imbi2d wss vex snss fnssres sylan2b dffn2 fsn2 bitri
+      ssnid fvres ax-mp opeq2i sneqi eqeq2i snssi sylan2 funfvex funfni sylancl
+      wf biantrurd syl5rbbr syl5bb mpbid expcom vtoclga impcom ) BAECAFZCBGZHZB
+      BCIZJZGZKZVKCDLZGZHZVRVRCIZJZGZKZMVKVQMDBAVRBKZWDVQVKWEVTVMWCVPWEVSVLCVRB
+      NOWEWBVOWEWAVNKWBVOKVRBCPVRWABVNQRUAUBUCVKVRAEZWDVKWFSZVTVSFZWDWFVKVSAUDZ
+      WHVRADUEZUFAVSCUGZUHWHVRVTIZTEZVTVRWLJZGZKZSZWGWDWHVSTVTVCWQVSVTUIVRTVTWJ
+      UJUKWDWPWGWQWOWCVTWNWBWLWAVRVRVSEZWLWAKDULZVRVSCUMUNUOUPUQWGWMWPWGWHWRWMW
+      FVKWIWHVRAURWKUSWSWMVSVRVTVRVTUTVAVBVDVEVFVGVHVIVJ $.
 
     $( A function restricted to a singleton.  (Contributed by Mario Carneiro,
        16-Nov-2014.) $)
