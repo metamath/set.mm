@@ -46855,9 +46855,8 @@ $)
 
   $( If the domain of a function is a set, the function is a set.  Theorem
      6.16(1) of [TakeutiZaring] p. 28.  This theorem is derived using the Axiom
-     of Replacement in the form of ~ resfunexg .  See ~ fnexALT for alternate
-     proof.  (Contributed by NM, 14-Aug-1994.)  (Proof shortened by Andrew
-     Salmon, 17-Sep-2011.) $)
+     of Replacement in the form of ~ resfunexg .  (Contributed by NM,
+     14-Aug-1994.)  (Proof shortened by Andrew Salmon, 17-Sep-2011.) $)
   fnex $p |- ( ( F Fn A /\ A e. B ) -> F e. _V ) $=
     ( wfn wcel wrel cdm cres cvv fnrel adantr wfun wceq eleq1a impcom resfunexg
     wa df-fn sylan2 anassrs sylanb resdm eleq1d biimpa syl2anc ) CADZABEZQCFZCC
@@ -47131,7 +47130,7 @@ $)
   ${
     $d x y A $.  $d x y F $.
     $( Membership in the union of the range of a function, proved directly.
-       Unlike ~ elunirn , it doesn't appeal to ~ ndmfv (via ~ funiunfv ).
+       Unlike ~ elunirn , it doesn't appeal to ndmfv (via ~ funiunfv ).
        (Contributed by NM, 24-Sep-2006.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
     elunirnALT $p |- ( Fun F -> ( A e. U. ran F <->
