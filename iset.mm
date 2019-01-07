@@ -1,4 +1,4 @@
-$( iset.mm - Version of 4-Jan-2019
+$( iset.mm - Version of 5-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -37144,6 +37144,20 @@ $)
       ( vx com con0 cv nnon ssriv ) ABCADEF $.
   $}
 
+  ${
+    $d x z $.
+    $( Omega is a limit ordinal.  Theorem 2.8 of [BellMachover] p. 473.
+       (Contributed by NM, 26-Mar-1995.)  (Proof rewritten by Jim Kingdon,
+       5-Jan-2019.) $)
+    limom $p |- Lim om $=
+      ( vx vz com wlim word c0 wcel cuni wceq ordom peano1 cv wa wex csuc sucex
+      wi vex isseti peano2 sucid jctil eleq2 eleq1 anbi12d syl5ibr eximii eluni
+      19.37aiv sylibr ssriv wss orduniss ax-mp eqssi df-ilim mpbir3an ) CDCEZFC
+      GCCHZIJKCUSACUSALZCGZUTBLZGZVBCGZMZBNUTUSGVAVEBVBUTOZIZVAVEQBBVFUTARZPSVA
+      VEVGUTVFGZVFCGZMVAVJVIUTTUTVHUAUBVGVCVIVDVJVBVFUTUCVBVFCUDUEUFUGUIBUTCUHU
+      JUKURUSCULJCUMUNUOCUPUQ $.
+  $}
+
   $( A class belongs to omega iff its successor does.  (Contributed by NM,
      3-Dec-1995.) $)
   peano2b $p |- ( A e. om <-> suc A e. om ) $=
@@ -37157,6 +37171,21 @@ $)
     nnsuc $p |- ( ( A e. om /\ A =/= (/) ) -> E. x e. om A = suc x ) $=
       ( c0 wne com wcel wceq wn cv csuc wrex df-ne nn0suc ord sylan2b
       imp ) BCDBEFZBCGZHZBAIJGAEKZBCLQSTQRTABMNPO $.
+  $}
+
+  ${
+    $d x y A $.
+    $( A natural number is either zero or nonzero.  Decidable equality for
+       natural numbers is a special case of the law of the excluded middle
+       which holds in most constructive set theories including ours.
+       (Contributed by Jim Kingdon, 5-Jan-2019.) $)
+    nndc $p |- ( A e. om -> DECID A = (/) ) $=
+      ( vx vy com wcel c0 wceq wn wo wdc csuc eqeq1 notbid orbi12d eqid
+      cv orci peano3 neneqd olcd a1d finds df-dc sylibr ) ADEAFGZUEHZIZ
+      UEJBPZFGZUIHZIFFGZUKHZICPZFGZUNHZIZUMKZFGZURHZIZUGBCAUIUIUKUJULUH
+      FFLZUIUIUKVAMNUHUMGZUIUNUJUOUHUMFLZVBUIUNVCMNUHUQGZUIURUJUSUHUQFL
+      ZVDUIURVEMNUHAGZUIUEUJUFUHAFLZVFUIUEVGMNUKULFOQUMDEZUTUPVHUSURVHU
+      QFUMRSTUAUBUEUCUD $.
   $}
 
 $(
