@@ -46673,53 +46673,6 @@ $)
   $}
 
   ${
-    $d F x $.  $d A x $.  $d B x $.
-    fnprb.1 $e |- A e. _V $.
-    fnprb.2 $e |- B e. _V $.
-    $( A function whose domain has at most two elements can be represented as a
-       set of at most two ordered pairs.  (Contributed by FL, 26-Jun-2011.)
-       (Proof shortened by Scott Fenton, 12-Oct-2017.)  Revised to eliminate
-       unnecessary antecedent ` A =/= B ` .  (Revised by NM, 29-Dec-2018.) $)
-    fnprb $p |- ( F Fn { A , B }
-        <-> F = { <. A , ( F ` A ) >. , <. B , ( F ` B ) >. } ) $=
-      ( vx cpr wfn cfv cop wceq wb csn dfsn2 a1i fveq2 wa cdm fvex adantl fnsnb
-      fneq2i eqeq2i 3bitr3i preq2 fneq2d opeq12d preq2d eqeq2d 3bitr3d wne wral
-      id cv fndm dmprop syl6eqr wcel eleq2d wo elpr fvpr1 adantr eqcomd eqeq12d
-      vex syl5ibrcom fvpr2 jaod syl5bi sylbid ralrimiv wfun fnfun funpr eqfunfv
-      syl2anr mpbir2and df-fn sylanbrc fneq1 biimprd mpan9 impbida pm2.61ine )
-      CABGZHZCAACIZJZBBCIZJZGZKZLABABKZCAAGZHZCWIWIGZKZWGWMWPWRLWNCAMZHCWIMZKWP
-      WRACDUAWSWOCANUBWTWQCWINUCUDOWNWOWFCABAUEUFWNWQWLCWNWIWKWIWNABWHWJWNUMABC
-      PUGUHUIUJABUKZWGWMXAWGQZWMCRZWLRZKZFUNZCIZXFWLIZKZFXCULZWGXEXAWGXCWFXDWFC
-      UOZAWHBWJACSZBCSZUPZUQTXBXIFXCXBXFXCURXFWFURZXIXBXCWFXFWGXCWFKXAXKTUSXOXF
-      AKZXFBKZUTXBXIXFABFVFVAXBXPXIXQXBXIXPWHAWLIZKXBXRWHXAXRWHKWGABWHWJDXLVBVC
-      VDXPXGWHXHXRXFACPXFAWLPVEVGXBXIXQWJBWLIZKXBXSWJXAXSWJKWGABWHWJEXMVHVCVDXQ
-      XGWJXHXSXFBCPXFBWLPVEVGVIVJVKVLWGCVMWLVMZWMXEXJQLXAWFCVNABWHWJDEXLXMVOZFC
-      WLVPVQVRXAWLWFHZWMWGXAXTXDWFKZYBYAYCXAXNOWLWFVSVTWMWGYBWFCWLWAWBWCWDWE $.
-  $}
-
-  ${
-    $d F x $.  $d I x $.  $d J x $.
-    fnprOLD.1 $e |- I e. _V $.
-    fnprOLD.2 $e |- J e. _V $.
-    $( Obsolete version of ~ fnprb as of 29-Dec-2018.  Representation as a set
-       of pairs of a function whose domain has two distinct elements.
-       (Contributed by FL, 26-Jun-2011.)  (Proof shortened by Scott Fenton,
-       12-Oct-2017.)  (Revised by NM, 10-Dec-2017.) $)
-    fnprOLD $p |- ( I =/= J -> ( F Fn { I , J } <->
-       F = { <. I , ( F ` I ) >. , <. J , ( F ` J ) >. } ) ) $=
-      ( vx cpr wfn cfv cop wceq wa fvex adantl wcel adantr eqcomd fveq2 eqeq12d
-      cdm wne cv wral fndm dmprop syl6eqr eleq2d wo elpr fvpr1 syl5ibrcom fvpr2
-      jaod syl5bi sylbid ralrimiv wfun wb fnfun funpr eqfunfv syl2anr mpbir2and
-      vex a1i df-fn sylanbrc fneq1 biimprd mpan9 impbida ) BCUAZABCGZHZABBAIZJC
-      CAIZJGZKZVLVNLZVRATZVQTZKZFUBZAIZWCVQIZKZFVTUCZVNWBVLVNVTVMWAVMAUDZBVOCVP
-      BAMZCAMZUEZUFNVSWFFVTVSWCVTOWCVMOZWFVSVTVMWCVNVTVMKVLWHNUGWLWCBKZWCCKZUHV
-      SWFWCBCFVDUIVSWMWFWNVSWFWMVOBVQIZKVSWOVOVLWOVOKVNBCVOVPDWIUJPQWMWDVOWEWOW
-      CBARWCBVQRSUKVSWFWNVPCVQIZKVSWPVPVLWPVPKVNBCVOVPEWJULPQWNWDVPWEWPWCCARWCC
-      VQRSUKUMUNUOUPVNAUQVQUQZVRWBWGLURVLVMAUSBCVOVPDEWIWJUTZFAVQVAVBVCVLVQVMHZ
-      VRVNVLWQWAVMKZWSWRWTVLWKVEVQVMVFVGVRVNWSVMAVQVHVIVJVK $.
-  $}
-
-  ${
     $d F a $.  $d V a $.  $d A a $.  $d B a $.  $d Z a $.
     $( Two ways to express restriction of a support set.  (Contributed by
        Stefan O'Rear, 5-Feb-2015.) $)
