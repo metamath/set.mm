@@ -46581,6 +46581,32 @@ $)
     ZBDJZKZLZBUKMZLZDUGUIUMUONUHUGUITUMBUNUJMOZLUOBULUPULUKUJKUPUJUKP
     UKUJQRSUNACBEUAUBUCUGUHUODNUIBDEFUDUEUF $.
 
+  $( The value of a function with a domain of (at most) three elements.
+     (Contributed by Alexander van der Vekens, 4-Dec-2017.) $)
+  fvtp1g $p |- ( ( ( A e. V /\ D e. W ) /\ ( A =/= B /\ A =/= C ) )
+                -> ( { <. A , D >. , <. B , E >. , <. C , F >. } ` A ) = D ) $=
+    ( wcel wa wne cop ctp cfv cpr csn cun df-tp fveq1i wceq ad2ant2rl
+    necom fvunsng sylan2b fvpr1g 3expa adantrr eqtrd syl5eq ) AGIZDHI
+    ZJZABKZACKZJJZAADLZBELZCFLZMZNAUPUQOZURPQZNZDAUSVAUPUQURRSUOVBAUT
+    NZDUJUNVBVCTZUKUMUNUJCAKVDACUBUTCFAGUCUDUAULUMVCDTZUNUJUKUMVEABDE
+    GHUEUFUGUHUI $.
+
+  $( The value of a function with a domain of (at most) three elements.
+     (Contributed by Alexander van der Vekens, 4-Dec-2017.) $)
+  fvtp2g $p |- ( ( ( B e. V /\ E e. W ) /\ ( A =/= B /\ B =/= C ) )
+                -> ( { <. A , D >. , <. B , E >. , <. C , F >. } ` B ) = E ) $=
+    ( wcel wa wne cop ctp cfv tprot fveq1i wceq wi necom fvtp1g expcom ancoms
+    sylanb impcom syl5eq ) BGIEHIJZABKZBCKZJZJBADLZBELZCFLZMZNBUKULUJMZNZEBUMUN
+    UJUKULOPUIUFUOEQZUGBAKZUHUFUPRZABSUHUQURUFUHUQJUPBCAEFDGHTUAUBUCUDUE $.
+
+  $( The value of a function with a domain of (at most) three elements.
+     (Contributed by Alexander van der Vekens, 4-Dec-2017.) $)
+  fvtp3g $p |- ( ( ( C e. V /\ F e. W ) /\ ( A =/= C /\ B =/= C ) )
+                -> ( { <. A , D >. , <. B , E >. , <. C , F >. } ` C ) = F ) $=
+    ( wcel wa wne cop ctp cfv tprot fveq1i wceq wi necom fvtp2g expcom sylan2b
+    ancoms impcom syl5eq ) CGIFHIJZACKZBCKZJZJCADLZBELZCFLZMZNCUKULUJMZNZFCUMUN
+    UJUKULOPUIUFUOFQZUHUGUFUPRZUGUHCAKZUQACSUFUHURJUPBCAEFDGHTUAUBUCUDUE $.
+
   ${
     fvtp1.1 $e |- A e. _V $.
     fvtp1.4 $e |- D e. _V $.
@@ -46588,9 +46614,8 @@ $)
        (Contributed by NM, 14-Sep-2011.) $)
     fvtp1 $p |- ( ( A =/= B /\ A =/= C )
              -> ( { <. A , D >. , <. B , E >. , <. C , F >. } ` A ) = D ) $=
-      ( wne wa cop ctp cfv cpr csn cun df-tp fveq1i wceq necom fvunsn sylan9eqr
-      sylbi fvpr1 syl5eq ) ABIZACIZJAADKZBEKZCFKZLZMAUHUINZUJOPZMZDAUKUMUHUIUJQ
-      RUGUFUNAULMZDUGCAIUNUOSACTULCFAUAUCABDEGHUDUBUE $.
+      ( cvv wcel wne wa cop ctp cfv wceq fvtp1g mpanl12 ) AIJDIJABKACKL
+      AADMBEMCFMNODPGHABCDEFIIQR $.
   $}
 
   ${
@@ -46616,31 +46641,6 @@ $)
       ) ACIZBCIZJCADKZBEKZCFKZLZMCUEUFUDLZMZFCUGUHUDUEUFNOUCUBUIFPZUBUCCAIUJACQ
       BCAEFDGHRSTUA $.
   $}
-
-  $( The value of a function with a domain of (at most) three elements.
-     (Contributed by Alexander van der Vekens, 4-Dec-2017.) $)
-  fvtp1g $p |- ( ( ( A e. V /\ D e. W ) /\ ( A =/= B /\ A =/= C ) )
-                -> ( { <. A , D >. , <. B , E >. , <. C , F >. } ` A ) = D ) $=
-    ( wcel wa wne cop ctp cfv cpr csn cun df-tp fveq1i wceq necom fvunsn fvpr1g
-    sylbi ad2antll 3expa adantrr eqtrd syl5eq ) AGIZDHIZJZABKZACKZJJZAADLZBELZC
-    FLZMZNAUPUQOZURPQZNZDAUSVAUPUQURRSUOVBAUTNZDUNVBVCTZULUMUNCAKVDACUAUTCFAUBU
-    DUEULUMVCDTZUNUJUKUMVEABDEGHUCUFUGUHUI $.
-
-  $( The value of a function with a domain of (at most) three elements.
-     (Contributed by Alexander van der Vekens, 4-Dec-2017.) $)
-  fvtp2g $p |- ( ( ( B e. V /\ E e. W ) /\ ( A =/= B /\ B =/= C ) )
-                -> ( { <. A , D >. , <. B , E >. , <. C , F >. } ` B ) = E ) $=
-    ( wcel wa wne cop ctp cfv tprot fveq1i wceq wi necom fvtp1g expcom ancoms
-    sylanb impcom syl5eq ) BGIEHIJZABKZBCKZJZJBADLZBELZCFLZMZNBUKULUJMZNZEBUMUN
-    UJUKULOPUIUFUOEQZUGBAKZUHUFUPRZABSUHUQURUFUHUQJUPBCAEFDGHTUAUBUCUDUE $.
-
-  $( The value of a function with a domain of (at most) three elements.
-     (Contributed by Alexander van der Vekens, 4-Dec-2017.) $)
-  fvtp3g $p |- ( ( ( C e. V /\ F e. W ) /\ ( A =/= C /\ B =/= C ) )
-                -> ( { <. A , D >. , <. B , E >. , <. C , F >. } ` C ) = F ) $=
-    ( wcel wa wne cop ctp cfv tprot fveq1i wceq wi necom fvtp2g expcom sylan2b
-    ancoms impcom syl5eq ) CGIFHIJZACKZBCKZJZJCADLZBELZCFLZMZNCUKULUJMZNZFCUMUN
-    UJUKULOPUIUFUOFQZUHUGUFUPRZUGUHCAKZUQACSUFUHURJUPBCAEFDGHTUAUBUCUDUE $.
 
   $( The value of a constant function.  (Contributed by NM, 20-Aug-2005.) $)
   fvconst2g $p |- ( ( B e. D /\ C e. A ) -> ( ( A X. { B } ) ` C ) = B ) $=
