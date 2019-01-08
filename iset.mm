@@ -46567,19 +46567,19 @@ $)
      (Contributed by Alexander van der Vekens, 3-Dec-2017.) $)
   fvpr1g $p |- ( ( A e. V /\ C e. W /\ A =/= B )
                  -> ( { <. A , C >. , <. B , D >. } ` A ) = C ) $=
-    ( wcel wne w3a cop cpr cfv csn wceq cun df-pr fveq1i necom fvunsn sylbi
-    syl5eq 3ad2ant3 fvsng 3adant3 eqtrd ) AEGZCFGZABHZIAACJZBDJZKZLZAUIMZLZCUHU
-    FULUNNUGUHULAUMUJMOZLZUNAUKUOUIUJPQUHBAHUPUNNABRUMBDASTUAUBUFUGUNCNUHACEFUC
-    UDUE $.
+    ( wcel wne w3a cop cpr cfv csn wceq wa df-pr fveq1i necom fvunsng
+    cun sylan2b syl5eq 3adant2 fvsng 3adant3 eqtrd ) AEGZCFGZABHZIAAC
+    JZBDJZKZLZAUJMZLZCUGUIUMUONUHUGUIOUMAUNUKMTZLZUOAULUPUJUKPQUIUGBA
+    HUQUONABRUNBDAESUAUBUCUGUHUOCNUIACEFUDUEUF $.
 
   $( The value of a function with a domain of (at most) two elements.
      (Contributed by Alexander van der Vekens, 3-Dec-2017.) $)
   fvpr2g $p |- ( ( B e. V /\ D e. W /\ A =/= B )
                  -> ( { <. A , C >. , <. B , D >. } ` B ) = D ) $=
-    ( wcel wne w3a cop cpr cfv csn wceq cun prcom df-pr eqtri fveq1i fvunsn
-    syl5eq 3ad2ant3 fvsng 3adant3 eqtrd ) BEGZDFGZABHZIBACJZBDJZKZLZBUJMZLZDUHU
-    FULUNNUGUHULBUMUIMOZLUNBUKUOUKUJUIKUOUIUJPUJUIQRSUMACBTUAUBUFUGUNDNUHBDEFUC
-    UDUE $.
+    ( wcel wne w3a cop cpr cfv csn wceq cun prcom df-pr eqtri fveq1i
+    wa fvunsng syl5eq 3adant2 fvsng 3adant3 eqtrd ) BEGZDFGZABHZIBACJ
+    ZBDJZKZLZBUKMZLZDUGUIUMUONUHUGUITUMBUNUJMOZLUOBULUPULUKUJKUPUJUKP
+    UKUJQRSUNACBEUAUBUCUGUHUODNUIBDEFUDUEUF $.
 
   ${
     fvtp1.1 $e |- A e. _V $.
