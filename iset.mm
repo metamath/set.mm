@@ -1,4 +1,4 @@
-$( iset.mm - Version of 5-Jan-2019
+$( iset.mm - Version of 7-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -46453,16 +46453,15 @@ $)
     ( wcel cid cres cfv fvres fvi eqtrd ) BACBDAEFBDFBBADGBAHI $.
 
   $( Remove an ordered pair not participating in a function value.
-     (Contributed by NM, 1-Oct-2013.)  (Revised by Mario Carneiro,
-     28-May-2014.) $)
-  fvunsn $p |- ( B =/= D
+     (Contributed by Jim Kingdon, 7-Jan-2019.) $)
+  fvunsng $p |- ( ( D e. V /\ B =/= D )
        -> ( ( A u. { <. B , C >. } ) ` D ) = ( A ` D ) ) $=
-    ( wne cop csn cun cres cfv c0 wcel wceq syl cvv fvres fvprc eqtr4d pm2.61i
-    wn resundir elsni necon3ai ressnop0 uneq2d un0 syl6eq syl5eq fveq1d 3eqtr3g
-    snidg ) BDEZDABCFGZHZDGZIZJZDAUOIZJZDUNJZDAJZULDUPURULUPURUMUOIZHZURAUMUOUA
-    ULVCURKHURULVBKURULBUOLZTVBKMVDBDBDUBUCBCUOUDNUEURUFUGUHUIDOLZUQUTMZVEDUOLZ
-    VFDOUKZDUOUNPNVETZUQKUTDUPQDUNQRSVEUSVAMZVEVGVJVHDUOAPNVIUSKVADURQDAQRSUJ
-    $.
+    ( wcel wne wa cop csn cun cfv cres snidg fvres syl resundir c0 wn
+    wceq elsni necon3ai ressnop0 uneq2d syl6eq syl5eq sylan9req eqtrd
+    un0 fveq1d adantr ) DEFZBDGZHDABCIJZKZLZDADJZMZLZDALZULUMUPDUOUQM
+    ZLZUSULDUQFZVBUPTDENZDUQUOOPUMDVAURUMVAURUNUQMZKZURAUNUQQUMVFURRK
+    URUMVERURUMBUQFZSVERTVGBDBDUAUBBCUQUCPUDURUIUEUFUJUGULUSUTTZUMULV
+    CVHVDDUQAOPUKUH $.
 
   ${
     fvsn.1 $e |- A e. _V $.
