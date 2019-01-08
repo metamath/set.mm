@@ -46672,19 +46672,6 @@ $)
       ( cvv wcel csn wf cxp wceq wb fconst2g ax-mp ) BEFABGZCHCANIJKDABECLM $.
   $}
 
-  $( Two ways to express that a function is constant.  (Contributed by NM,
-     27-Nov-2007.) $)
-  fconst5 $p |- ( ( F Fn A /\ A =/= (/) ) -> ( F = ( A X. { B } ) <->
-                 ran F = { B } ) ) $=
-    ( wfn c0 wne wa csn cxp wceq crn wi eqeq2d syl5ib adantl cvv adantrd adantr
-    rneq wb rnxp wcel wf wfo df-fo fof sylbir fconst2g exp3a fnrel snprc relrn0
-    wn wrel biimprd eqeq2 xpeq2 xp0 syl6eq 3imtr4d ex sylbi syl5 pm2.61i impbid
-    ) CADZAEFZGZCABHZIZJZCKZVIJZVGVKVMLVFVKVLVJKZJVGVMCVJSVGVNVIVLAVIUAMNOBPUBZ
-    VHVMVKLZLVOVFVPVGVOVFVMVKVFVMGZAVICUCZVOVKVQAVICUDVRAVICUEAVICUFUGABPCUHNUI
-    QVOUMZVFVPVGVFCUNZVSVPACUJVSVIEJZVTVPLBUKWAVTVPWAVTGVLEJZCEJZVMVKVTWBWCLWAV
-    TWCWBCULUOOWAVMWBTVTVIEVLUPRWAVKWCTVTWAVJECWAVJAEIEVIEAUQAURUSMRUTVAVBVCQVD
-    VE $.
-
   ${
     $d F x $.  $d A x $.  $d B x $.
     fnprb.1 $e |- A e. _V $.
