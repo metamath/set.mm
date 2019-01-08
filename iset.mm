@@ -46673,35 +46673,6 @@ $)
   $}
 
   ${
-    $d F a $.  $d V a $.  $d A a $.  $d B a $.  $d Z a $.
-    $( Two ways to express restriction of a support set.  (Contributed by
-       Stefan O'Rear, 5-Feb-2015.) $)
-    fnsuppres $p |- ( ( F Fn ( A u. B ) /\ ( A i^i B ) = (/) /\ Z e. V ) ->
-        ( ( `' F " ( _V \ { Z } ) ) C_ A <-> ( F |` B ) = ( B X. { Z } ) ) ) $=
-      ( va cun wfn wceq wcel cfv crab wss wral wa wn wb a1i syl5bb syl2anc cres
-      cin w3a wne csn cxp ccnv cvv cdif cima unss ssrab2 biantrur rabun2 sseq1i
-      c0 cv 3bitr4ri wi rabss fvres adantl fvconst2g 3ad2antl3 eqeq12d id simp2
-      nne minel syl2anr mtt syl 3bitr2rd ralbidva fnniniseg2 sseq1d simp1 ssun2
-      3ad2ant1 fnssres fnconstg 3ad2ant3 eqfnfv 3bitr4d ) CABGZHZABUBUPIZEDJZUC
-      ZFUQZCKZEUDZFWELZAMZWJCBUAZKZWJBEUEZUFZKZIZFBNZCUGUHWQUIUJZAMWOWRIZWNWLFB
-      LZAMZWIXAWLFALZAMZXEOXFXDGZAMXEWNXFXDAUKXGXEWLFAULUMWMXHAWLFABUNUOURXEWLW
-      JAJZUSZFBNWIXAWLFBAUTWIXJWTFBWIWJBJZOZWTWKEIZWLPZXJXLWPWKWSEXKWPWKIWIWJBC
-      VAVBWHWFXKWSEIWGBEWJDVCVDVEXNXMQXLWKEVHRXLXIPZXNXJQXKXKWGXOWIXKVFWFWGWHVG
-      WJBAVIVJXIWLVKVLVMVNSSWIXBWMAWFWGXBWMIWHFWEECVOVSVPWIWOBHZWRBHZXCXAQWIWFB
-      WEMZXPWFWGWHVQXRWIBAVRRWEBCVTTWHWFXQWGBEDWAWBFBWOWRWCTWD $.
-
-    $( The support of a function is empty iff it is identically zero.
-       (Contributed by Stefan O'Rear, 22-Mar-2015.) $)
-    fnsuppeq0 $p |- ( ( F Fn A /\ Z e. V ) ->
-        ( ( `' F " ( _V \ { Z } ) ) = (/) <-> F = ( A X. { Z } ) ) ) $=
-      ( wfn wcel wa ccnv cvv csn cdif cima c0 wceq cres cxp wss cun cin adantr
-      ss0b un0 uncom eqtr3i fneq2i biimpi incom in0 eqtri a1i fnsuppres syl3anc
-      wb simpr syl5bbr fnresdm eqeq1d bitrd ) BAEZDCFZGZBHIDJZKLZMNZBAOZAVBPZNZ
-      BVFNVDVCMQZVAVGVCUAVABMARZEZMASZMNZUTVHVGUMUSVJUTUSVJAVIBAMRAVIAUBAMUCUDU
-      EUFTVLVAVKAMSMMAUGAUHUIUJUSUTUNMABCDUKULUOVAVEBVFUSVEBNUTABUPTUQUR $.
-  $}
-
-  ${
     $d x y z A $.  $d x y z B $.  $d x y z F $.
     $( A constant function expressed in terms of its functionality, domain, and
        value.  See also ~ fconst2 .  (Contributed by NM, 27-Aug-2004.) $)
