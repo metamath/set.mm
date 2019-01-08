@@ -46547,9 +46547,10 @@ $)
     $( The value of a function with a domain of two elements.  (Contributed by
        Jeff Madsen, 20-Jun-2010.) $)
     fvpr1 $p |- ( A =/= B -> ( { <. A , C >. , <. B , D >. } ` A ) = C ) $=
-      ( wne cop cpr cfv csn df-pr fveq1i wceq necom fvunsn sylbi syl5eq fvsn
-      cun syl6eq ) ABGZAACHZBDHZIZJZAUCKZJZCUBUFAUGUDKTZJZUHAUEUIUCUDLMUBBAGUJU
-      HNABOUGBDAPQRACEFSUA $.
+      ( wne cop cpr cfv csn cun df-pr fveq1i wceq necom cvv wcel mpan
+      fvunsng sylbi syl5eq fvsn syl6eq ) ABGZAACHZBDHZIZJZAUFKZJZCUEU
+      IAUJUGKLZJZUKAUHULUFUGMNUEBAGZUMUKOZABPAQRUNUOEUJBDAQTSUAUBACEF
+      UCUD $.
   $}
 
   ${
