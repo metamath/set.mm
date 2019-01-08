@@ -46520,15 +46520,6 @@ $)
     VGVIUFTVDVAVNUSUTVAVCUGAEUHUIAVEBVGCVIUCUJVDVHBQZVKVLUKVDVGBUOZVPVCUSVQVBFB
     ULUMVGBUNUPVHBVFVJUQTUR $.
 
-  $( Adjoining a point to a punctured function gives a function.  (Contributed
-     by Stefan O'Rear, 28-Feb-2015.) $)
-  fsnunf2 $p |- ( ( F : ( S \ { X } ) --> T /\ X e. S /\ Y e. T ) ->
-      ( F u. { <. X , Y >. } ) : S --> T ) $=
-    ( csn cdif wf wcel w3a cun cop simp1 simp2 neldifsnd simp3 fsnunf syl121anc
-    wn wceq difsnid 3ad2ant2 feq2d mpbid ) ADFZGZBCHZDAIZEBIZJZUFUEKZBCDELFKZHZ
-    ABULHUJUGUHDUFISUIUMUGUHUIMUGUHUINUJDAOUGUHUIPUFBCADEQRUJUKABULUHUGUKATUIAD
-    UAUBUCUD $.
-
   $( Recover the added point from a point-added function.  (Contributed by
      Stefan O'Rear, 28-Feb-2015.)  (Revised by NM, 18-May-2017.) $)
   fsnunfv $p |- ( ( X e. V /\ Y e. W /\ -. X e. dom F ) ->
