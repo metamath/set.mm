@@ -46509,15 +46509,6 @@ $)
       QURVAUHUIUJEURUKULQUTUMUTUNSSUODURFTDURETUP $.
   $}
 
-  $( Split a function into a single point and all the rest.  (Contributed by
-     Stefan O'Rear, 27-Feb-2015.) $)
-  fnsnsplit $p |- ( ( F Fn A /\ X e. A ) ->
-      F = ( ( F |` ( A \ { X } ) ) u. { <. X , ( F ` X ) >. } ) ) $=
-    ( wfn wcel wa cres csn cdif cfv cop cun wceq fnresdm adantr resundi difsnid
-    adantl reseq2d fnressn uneq2d 3eqtr3a eqtr3d ) BADZCAEZFZBAGZBBACHZIZGZCCBJ
-    KHZLZUDUGBMUEABNOUFBUIUHLZGUJBUHGZLUGULBUIUHPUFUMABUEUMAMUDACQRSUFUNUKUJACB
-    TUAUBUC $.
-
   $( Adjoining a point to a function gives a function.  (Contributed by Stefan
      O'Rear, 28-Feb-2015.) $)
   fsnunf $p |- ( ( F : S --> T /\ ( X e. V /\ -. X e. S ) /\ Y e. T ) ->
