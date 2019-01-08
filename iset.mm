@@ -46469,8 +46469,8 @@ $)
     $( The value of a singleton of an ordered pair is the second member.
        (Contributed by NM, 12-Aug-1994.) $)
     fvsn $p |- ( { <. A , B >. } ` A ) = B $=
-      ( cop csn wfun wcel cfv wceq funsn opex snid funopfv mp2 ) ABEZFZGPQHAQIB
-      JABCDKPABLMABQNO $.
+      ( cop csn wfun wcel cfv wceq funsn cvv opexg mp2an snid funopfv
+      mp2 ) ABEZFZGRSHASIBJABCDKRALHBLHRLHCDABMNOABSPQ $.
   $}
 
   ${
