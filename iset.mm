@@ -46688,30 +46688,35 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d x y z B $.  $d x y z F $.
+    $d x w z A $.  $d x w z B $.  $d x w z F $.  $d y w A $.
     $( A constant function expressed in terms of its functionality, domain, and
-       value.  See also ~ fconst2 .  (Contributed by NM, 27-Aug-2004.) $)
-    fconstfv $p |- ( F : A --> { B } <->
-                   ( F Fn A /\ A. x e. A ( F ` x ) = B ) ) $=
-      ( vy vz csn wf wfn cv cfv wceq wral wa syl6bb wcel wrex eqeq1d sylan9bbr
-      c0 ffn fvconst ralrimiva jca wi fneq2 fn0 feq1 mpbiri syl6bi feq2 sylibrd
-      adantrd wne crn fvelrnb fveq2 rspccva rexbidva r19.9rzv bicomd elsn eqcom
-      f0 bitr2i eqrdv an32s exp31 imdistand wfo df-fo fof sylbir syl6 pm2.61ine
-      impbii ) BCGZDHZDBIZAJZDKZCLZABMZNZVRVSWCBVQDUAVRWBABBCVTDUBUCUDWDVRUEBTB
-      TLZVSVRWCWEVSTVQDHZVRWEVSDTLZWFWEVSDTIWGBTDUFDUGOWGWFTVQTHVQVDTVQDTUHUIUJ
-      BTVQDUKULUMBTUNZWDVSDUOZVQLZNZVRWHVSWCWJWHVSWCWJWHWCVSWJWHWCNZVSNZEWIVQWM
-      EJZWIPZCWNLZWNVQPZVSWOFJZDKZWNLZFBQZWLWPFBWNDUPWCXAWPFBQZWHWPWCWTWPFBWCWR
-      BPNWSCWNWBWSCLAWRBVTWRLWAWSCVTWRDUQRURRUSWHWPXBWPFBUTVASSWQWNCLWPECVBWNCV
-      CVEOVFVGVHVIWKBVQDVJVRBVQDVKBVQDVLVMVNVOVP $.
+       value.  See also ~ fconst2 .  (Contributed by Jim Kingdon,
+       8-Jan-2019.) $)
+    fconstfvm $p |- ( E. y y e. A -> (
+        F : A --> { B } <->
+          ( F Fn A /\ A. x e. A ( F ` x ) = B ) ) ) $=
+      ( vw vz cv wcel wex csn wfn cfv wceq wral wrex eqeq1d sylan9bbr
+      wf wa ffn fvconst ralrimiva jca fvelrnb fveq2 rexbidva r19.9rmv
+      crn bicomd elsn eqcom bitr2i syl6bb eqrdv an32s exp31 imdistand
+      rspccva wfo df-fo fof sylbir syl6 impbid2 ) BHCIBJZCDKZESZECLZA
+      HZEMZDNZACOZTZVHVIVMCVGEUAVHVLACCDVJEUBUCUDVFVNVIEUIZVGNZTZVHVF
+      VIVMVPVFVIVMVPVFVMVIVPVFVMTZVITZFVOVGVSFHZVOIZDVTNZVTVGIZVIWAGH
+      ZEMZVTNZGCPZVRWBGCVTEUEVMWGWBGCPZVFWBVMWFWBGCVMWDCITWEDVTVLWEDN
+      AWDCVJWDNVKWEDVJWDEUFQUSQUGVFWBWHWBGBCUHUJRRWCVTDNWBFDUKVTDULUM
+      UNUOUPUQURVQCVGEUTVHCVGEVACVGEVBVCVDVE $.
+  $}
 
-    $( Two ways to express a constant function.  (Contributed by NM,
-       15-Mar-2007.) $)
-    fconst3 $p |- ( F : A --> { B } <->
-                  ( F Fn A /\ A C_ ( `' F " { B } ) ) ) $=
-      ( vx csn wf wfn cv cfv wceq wral wa ccnv cima wss fconstfv wfun cdm fnfun
-      wb fndm eqimss2 syl funconstss syl2anc pm5.32i bitri ) ABEZCFCAGZDHCIBJDA
-      KZLUIACMUHNOZLDABCPUIUJUKUICQACRZOZUJUKTACSUIULAJUMACUAAULUBUCDABCUDUEUFU
-      G $.
+  ${
+    $d x A $.  $d y B $.  $d y F $.  $d y A $.  $d y x $.
+    $( Two ways to express a constant function.  (Contributed by Jim Kingdon,
+       8-Jan-2019.) $)
+    fconst3m $p |- ( E. x x e. A -> (
+        F : A --> { B } <->
+          ( F Fn A /\ A C_ ( `' F " { B } ) ) ) ) $=
+      ( vy cv wcel wex csn wf wfn cfv wceq wral wa ccnv wss fconstfvm
+      cima wfun cdm fnfun fndm eqimss2 syl funconstss syl2anc pm5.32i
+      wb syl6bb ) AFBGAHBCIZDJDBKZEFDLCMEBNZOULBDPUKSQZOEABCDRULUMUNU
+      LDTBDUAZQZUMUNUIBDUBULUOBMUPBDUCBUOUDUEEBCDUFUGUHUJ $.
   $}
 
   $( Two ways to express a constant function.  (Contributed by NM,
