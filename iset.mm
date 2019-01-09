@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Jan-2019
+$( iset.mm - Version of 8-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -28532,12 +28532,27 @@ $)
        (Contributed by Jim Kingdon, 6-Aug-2018.) $)
     r19.3rmv $p |- ( E. y y e. A -> ( ph <-> A. x e. A ph ) ) $=
       ( nfv r19.3rm ) ABCDABEF $.
+  $}
 
+  ${
+    $d x a A $.  $d y a A $.  $d x ph $.
     $( Restricted quantification of wff not containing quantified variable.
        (Contributed by Jim Kingdon, 5-Aug-2018.) $)
-    r19.9rmv $p |- ( E. x x e. A -> ( ph <-> E. x e. A ph ) ) $=
-      ( wrex cv wcel wex wa df-rex 19.41v bitri baibr ) ABCDZBECFZBGZAMNAHBGOAH
-      ABCINABJKL $.
+    r19.9rmv $p |- ( E. y y e. A -> ( ph <-> E. x e. A ph ) ) $=
+      ( va cv wcel wex wrex wb eleq1 cbvexv df-rex 19.41v bitri baibr
+      wa sylbi sylbir ) CFZDGZCHEFZDGZEHZAABDIZJZUCUAECUBTDKLUDBFZDGZ
+      BHZUFUCUHEBUBUGDKLUEUIAUEUHAQBHUIAQABDMUHABNOPRS $.
+  $}
+
+  ${
+    $d x A $.  $d y A $.  $d x ph $.
+    $( Restricted quantification of wff not containing quantified variable.
+       This is a special case of ~ r19.9rmv where ` x ` and ` y ` are the same
+       variable, but new proofs should use ~r19.9rmv instead.
+       (New usage is discouraged.)  (Contributed by Jim Kingdon,
+       5-Aug-2018.) $)
+    r19.9rmvOLD $p |- ( E. x x e. A -> ( ph <-> E. x e. A ph ) ) $=
+      ( r19.9rmv ) ABBCD $.
 
     $( Restricted quantifier version of Theorem 19.28 of [Margaris] p. 90.  It
        is valid only when the domain of quantification is inhabited.
@@ -28550,7 +28565,7 @@ $)
        by NM, 27-May-1998.) $)
     r19.45mv $p |- ( E. x x e. A ->
                    ( E. x e. A ( ph \/ ps ) <-> ( ph \/ E. x e. A ps ) ) ) $=
-      ( cv wcel wex wrex wo r19.9rmv orbi1d r19.43 syl6rbbr ) CEDFCGZAB
+      ( cv wcel wex wrex wo r19.9rmvOLD orbi1d r19.43 syl6rbbr ) CEDFCGZAB
       CDHZIACDHZOIABICDHNAPOACDJKABCDLM $.
   $}
 
@@ -31297,7 +31312,7 @@ $)
     $( Indexed union of a constant class, i.e. where ` B ` does not depend on
        ` x ` .  (Contributed by Jim Kingdon, 15-Aug-2018.) $)
     iunconstm $p |- ( E. x x e. A -> U_ x e. A B = B ) $=
-      ( vy cv wcel wex ciun wrex r19.9rmv eliun syl6rbbr eqrdv ) AEBFAG
+      ( vy cv wcel wex ciun wrex r19.9rmvOLD eliun syl6rbbr eqrdv ) AEBFAG
       ZDABCHZCNDEZCFZQABIPOFQABJAPBCKLM $.
   $}
 
