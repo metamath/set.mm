@@ -46,15 +46,25 @@ install:
   - wget -N -q http://us.metamath.org/downloads/checkmm.cpp
   - g++ -O2 -o checkmm checkmm.cpp
 script:
+  # Create mmset.html so we can verify against it.
+  - metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
   - scripts/verify --date_skip --extra 'write bibliography mmbiblio.html' set.mm
   - scripts/verify iset.mm
-  # Verify and also also generate 'discouraged.new':
+  # Verify and also generate 'discouraged.new':
   - scripts/verify-mmj2 --extra 'RunMacro,showDiscouraged,discouraged.new' set.mm
   - echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
   - scripts/verify-mmj2 iset.mm
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
+  - scripts/check-raw-html set.mm *.raw.html
   - echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
   - echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
   - ./checkmm set.mm
   - ./checkmm iset.mm
+  # Generate HTML from raw files into mpegif-html/ and mpeuni-html/
+  - scripts/regen-from-raw '/HTML'
+  - mkdir -p mpegif-html/
+  - for f in *.demo.html; do mv $f mpegif-html/${f%.demo.html}.html ; done
+  - scripts/regen-from-raw '/ALT_HTML'
+  - mkdir -p mpeuni-html/
+  - for f in *.demo.html; do mv $f mpeuni-html/${f%.demo.html}.html ; done

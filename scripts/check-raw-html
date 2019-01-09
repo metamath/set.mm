@@ -1,0 +1,29 @@
+#!/bin/sh
+# check-raw-html - check if raw HTML is okay
+# $1 = MMFILE
+# $2+ = files to check
+
+mmfile="$1"
+shift
+
+error=0
+
+generate_metamath_commands () {
+  echo "read \"$mmfile\""
+  echo 'set scroll continuous'
+  for file in "$@" ; do
+    echo "markup \"${file}\" \",${file}.TRASH\" /ALT_HTML /SYMBOLS"
+  done
+  echo quit
+}
+
+generate_metamath_commands "$@" | metamath | tee ,check-raw-html-log
+
+if grep -E '^\?(Warning|Error): ' ,check-raw-html-log ; then
+  error=1
+fi
+
+rm -fr ,*.TRASH
+rm -fr ,check-raw-html-log
+
+exit "$error"
