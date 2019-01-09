@@ -1,4 +1,4 @@
-$( iset.mm - Version of 8-Jan-2019
+$( iset.mm - Version of 9-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -46292,6 +46292,26 @@ $)
       HUIUDOZABNZETULAEBUDUGUGPQUKUNEUJUMABEUDRUAUBSAEBUEUCSS $.
   $}
 
+  ${
+    $( Alternate definition for the "maps to" notation ~ df-mpt (which requires
+       that ` B ` be a set).  (Contributed by Jim Kingdon, 9-Jan-2019.) $)
+    dfmptg $p |- ( A. x e. A B e. V ->
+        ( x e. A |-> B ) = U_ x e. A { <. x , B >. } ) $=
+      ( wcel wral cmpt cv csn cxp ciun cop dfmpt3 wceq cvv xpsng ralimi
+      vex mpan iuneq2 syl syl5eq ) CDEZABFZABCGABAHZICIJZKZABUECLIZKZAB
+      CMUDUFUHNZABFUGUINUCUJABUEOEUCUJARUECODPSQABUFUHTUAUB $.
+
+    $d x y $.  $d y A $.  $d y B $.
+    $( A function expressed as the range of another function.  (Contributed by
+       Jim Kingdon, 9-Jan-2019.) $)
+    fnasrng $p |- ( A. x e. A B e. V ->
+        ( x e. A |-> B ) = ran ( x e. A |-> <. x , B >. ) ) $=
+      ( vy wcel wral cmpt cop csn ciun crn dfmptg wrex cab wceq rnmpt
+      cv eqid eqtr4i elsn rexbii abbii df-iun syl6eqr ) CDFABGABCHABA
+      RCIZJZKZABUFHZLZABCDMUJERZUGFZABNZEOZUHUJUKUFPZABNZEOUNAEBUFUIU
+      ISQUMUPEULUOABEUFUAUBUCTAEBUGUDTUE $.
+  $}
+
   $( If ` A ` is not in ` C ` , then the restriction of a singleton of
      ` <. A , B >. ` to ` C ` is null.  (Contributed by Scott Fenton,
      15-Apr-2011.) $)
@@ -46719,13 +46739,18 @@ $)
       LDTBDUAZQZUMUNUIBDUBULUOBMUPBDUCBUOUDUEEBCDUFUGUHUJ $.
   $}
 
-  $( Two ways to express a constant function.  (Contributed by NM,
-     8-Mar-2007.) $)
-  fconst4 $p |- ( F : A --> { B } <->
-                ( F Fn A /\ ( `' F " { B } ) = A ) ) $=
-    ( csn wf wfn ccnv cima wss wa wceq fconst3 cnvimass fndm syl5sseq biantrurd
-    cdm eqss syl6bbr pm5.32i bitri ) ABDZCECAFZACGUBHZIZJUCUDAKZJABCLUCUEUFUCUE
-    UDAIZUEJUFUCUGUEUCCQUDACUBMACNOPUDARSTUA $.
+  ${
+    $d x A $.
+    $( Two ways to express a constant function.  (Contributed by NM,
+       8-Mar-2007.) $)
+    fconst4m $p |- ( E. x x e. A -> (
+        F : A --> { B } <->
+          ( F Fn A /\ ( `' F " { B } ) = A ) ) ) $=
+      ( cv wcel wex csn wf wfn ccnv cima wss wceq fconst3m cdm cnvimass
+      wa fndm syl5sseq biantrurd eqss syl6bbr pm5.32i syl6bb ) AEBFAGBC
+      HZDIDBJZBDKUFLZMZRUGUHBNZRABCDOUGUIUJUGUIUHBMZUIRUJUGUKUIUGDPUHBD
+      UFQBDSTUAUHBUBUCUDUE $.
+  $}
 
   ${
     $d x y A $.  $d x y B $.
