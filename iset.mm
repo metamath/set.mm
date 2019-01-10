@@ -46973,8 +46973,10 @@ $)
        Compare Definition 5.4 of [Monk1] p. 50.  (Contributed by NM,
        27-Sep-2004.) $)
     fniunfv $p |- ( F Fn A -> U_ x e. A ( F ` x ) = U. ran F ) $=
-      ( vy wfn crn cuni cv cfv wceq wrex cab ciun fnrnfv unieqd dfiun2 syl6reqr
-      fvex ) CBEZCFZGDHAHZCIZJABKDLZGABUBMSTUCADBCNOADBUBUACRPQ $.
+      ( vy wfn cv cfv ciun wceq wrex cab cuni crn wcel funfvex funfni
+      cvv wral ralrimiva dfiun2g syl fnrnfv unieqd eqtr4d ) CBEZABAFZ
+      CGZHZDFUGIABJDKZLZCMZLUEUGQNZABRUHUJIUEULABULBUFCUFCOPSADBUGQTU
+      AUEUKUIADBCUBUCUD $.
 
     $( The indexed union of a function's values is the union of its image under
        the index class.
