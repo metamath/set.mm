@@ -46758,12 +46758,14 @@ $)
        of [TakeutiZaring] p. 28.  (Contributed by NM, 7-Apr-1995.)  (Revised by
        Mario Carneiro, 22-Jun-2013.) $)
     resfunexg $p |- ( ( Fun A /\ B e. C ) -> ( A |` B ) e. _V ) $=
-      ( vx wfun wcel wa cres cdm cv cfv cop cmpt cima cvv crn wceq funres sylib
-      wfn adantr funfn dffn5 fvex fnasrn syl6eq opex eqid dmmpti imaeq2i eqtr3i
-      imadmrn syl6eqr funmpt dmresexg adantl funimaexg sylancr eqeltrd ) AEZBCF
-      ZGZABHZDVCIZDJZVEVCKZLZMZVDNZOVBVCVHPZVIVBVCDVDVFMZVJVBVCVDTZVCVKQVBVCEZV
-      LUTVMVABARUAVCUBSDVDVCUCSDVDVFVEVCUDUEUFVHVHIZNVIVJVNVDVHDVDVGVHVEVFUGVHU
-      HUIUJVHULUKUMVBVHEVDOFZVIOFDVDVGUNVAVOUTABCUOUPVHVDOUQURUS $.
+      ( vx wfun wcel cres cdm cfv cmpt cima cvv wceq wral ralrimiva 3syl adantr
+      wa cv sylancr cop crn funfvex fnasrng wfn funfn sylib dffn5im syl imadmrn
+      funres vex opexg dmmptg imaeq2d syl5reqr funmpt dmresexg adantl funimaexg
+      3eqtr4d eqeltrd ) AEZBCFZRZABGZDVFHZDSZVHVFIZUAZJZVGKZLVEDVGVIJZVKUBZVFVL
+      VCVMVNMZVDVCVFEZVILFZDVGNVOBAUKZVPVQDVGVHVFUCZODVGVILUDPQVEVFVGUEZVFVMMVE
+      VPVTVCVPVDVRQVFUFUGDVGVFUHUIVCVLVNMVDVCVNVKVKHZKVLVKUJVCWAVGVKVCVPVJLFZDV
+      GNWAVGMVRVPWBDVGVPVHVGFRVHLFVQWBDULVSVHVIUMTODVGVJLUNPUOUPQVAVEVKEVGLFZVL
+      LFDVGVJUQVDWCVCABCURUSVKVGLUTTVB $.
   $}
 
   $( If the domain of a function is a set, the function is a set.  Theorem
