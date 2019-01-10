@@ -47008,13 +47008,21 @@ $)
                    ( B e. U. ( F " A ) <-> E. x e. A B e. ( F ` x ) ) ) $=
       ( cv cfv wcel wrex ciun wfn cima cuni eliun funiunfvdm syl5rbbr
       eleq2d ) CAEDFZGABHCABQIZGDBJZCDBKLZGACBQMSRTCABDNPO $.
+  $}
 
-    $( Membership in the union of the range of a function.  See ~ elunirnALT
-       for alternate proof.  (Contributed by NM, 24-Sep-2006.) $)
-    elunirn $p |- ( Fun F ->
-                     ( A e. U. ran F <-> E. x e. dom F A e. ( F ` x ) ) ) $=
-      ( crn cuni wcel cdm cima wfun cv cfv wrex imadmrn unieqi eluniima syl5bbr
-      eleq2i ) BCDZEZFBCCGZHZEZFCIBAJCKFATLUBSBUARCMNQATBCOP $.
+  ${
+    $d x y A $.  $d x y F $.
+    $( Membership in the union of the range of a function.  (Contributed by NM,
+       24-Sep-2006.) $)
+    elunirn $p |- ( Fun F -> ( A e. U. ran F <->
+                E. x e. dom F A e. ( F ` x ) ) ) $=
+      ( vy crn cuni wcel cv wa wex wfun cfv cdm wrex eluni wceq wfn eleq2 cvv
+      wb funfn fvelrnb anbi2d r19.42v syl6bbr biimparc reximi syl6bi exlimdv wi
+      sylbi fvelrn funfvex eleq1 anbi12d spcegv mpan2d rexlimdva impbid syl5bb
+      syl ) BCEZFGBDHZGZVCVBGZIZDJZCKZBAHZCLZGZACMZNZDBVBOVHVGVMVHVFVMDVHVFVDVJ
+      VCPZIZAVLNZVMVHVFVDVNAVLNZIVPVHVEVQVDVHCVLQVEVQTCUAAVLVCCUBUKUCVDVNAVLUDU
+      EVOVKAVLVNVKVDVJVCBRUFUGUHUIVHVKVGAVLVHVIVLGIZVKVJVBGZVGVICULVRVJSGVKVSIZ
+      VGUJVICUMVFVTDVJSVCVJPVDVKVEVSVCVJBRVCVJVBUNUOUPVAUQURUSUT $.
   $}
 
   ${
@@ -47025,23 +47033,6 @@ $)
         E. x e. I A e. ( F ` x ) ) ) $=
       ( wfn crn cuni wcel cv cfv cdm wrex wfun fnfun elunirn fndm rexeqdv bitrd
       wb syl ) CDEZBCFGHZBAICJHZACKZLZUCADLUACMUBUESDCNABCOTUAUCAUDDDCPQR $.
-  $}
-
-  ${
-    $d x y A $.  $d x y F $.
-    $( Membership in the union of the range of a function, proved directly.
-       Unlike ~ elunirn , it doesn't appeal to ndmfv (via ~ funiunfv ).
-       (Contributed by NM, 24-Sep-2006.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    elunirnALT $p |- ( Fun F -> ( A e. U. ran F <->
-                E. x e. dom F A e. ( F ` x ) ) ) $=
-      ( vy crn cuni wcel cv wa wex wfun cfv cdm wrex eluni wceq wfn funfn eleq2
-      wb fvelrnb sylbi anbi2d r19.42v syl6bbr biimparc reximi syl6bi fvelrn a1d
-      exlimdv ancld fvex eleq1 anbi12d spcev syl6 rexlimdva impbid syl5bb ) BCE
-      ZFGBDHZGZVBVAGZIZDJZCKZBAHZCLZGZACMZNZDBVAOVGVFVLVGVEVLDVGVEVCVIVBPZIZAVK
-      NZVLVGVEVCVMAVKNZIVOVGVDVPVCVGCVKQVDVPTCRAVKVBCUAUBUCVCVMAVKUDUEVNVJAVKVM
-      VJVCVIVBBSUFUGUHUKVGVJVFAVKVGVHVKGIZVJVJVIVAGZIZVFVQVJVRVQVRVJVHCUIUJULVE
-      VSDVIVHCUMVBVIPVCVJVDVRVBVIBSVBVIVAUNUOUPUQURUSUT $.
   $}
 
   ${
