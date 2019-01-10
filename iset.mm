@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-Jan-2019
+$( iset.mm - Version of 10-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -46979,34 +46979,25 @@ $)
       AUEUKUIADBCUBUCUD $.
 
     $( The indexed union of a function's values is the union of its image under
-       the index class.
-
-       Note:  This theorem depends on the fact that our function value is the
-       empty set outside of its domain.  If the antecedent is changed to
-       ` F Fn A ` , the theorem can be proved without this dependency.
-       (Contributed by NM, 26-Mar-2006.)  (Proof shortened by Mario Carneiro,
-       31-Aug-2015.) $)
-    funiunfv $p |- ( Fun F -> U_ x e. A ( F ` x ) = U. ( F " A ) ) $=
-      ( wfun cres cdm cv cfv ciun crn cuni cima wfn wceq syl eqtri wcel iuneq2i
-      cun c0 funres funfn sylib fniunfv cdif undif2 wss cin dmres inss1 eqsstri
-      ssequn1 mpbi iuneq1 ax-mp iunxun wn eldifn ndmfv iun0 uneq2i un0 3eqtr3ri
-      fvres df-ima unieqi 3eqtr4g ) CDZACBEZFZAGZVIHZIZVIJZKZABVKCHZIZCBLZKVHVI
-      VJMZVMVONVHVIDVSBCUAVIUBUCAVJVIUDOAVJBVJUEZSZVLIZABVLIZVMVQWABNWBWCNWAVJB
-      SZBVJBUFVJBUGWDBNVJBCFZUHBCBUIBWEUJUKVJBULUMPAWABVLUNUOWBVMAVTVLIZSZVMAVJ
-      VTVLUPWGVMTSVMWFTVMWFAVTTITAVTVLTVKVTQVKVJQUQVLTNVKBVJURVKVIUSORAVTUTPVAV
-      MVBPPABVLVPVKBCVDRVCVRVNCBVEVFVG $.
+       the index class.  This theorem is a slight variation of ~ fniunfv .
+       (Contributed by Jim Kingdon, 10-Jan-2019.) $)
+    funiunfvdm $p |- ( F Fn A -> U_ x e. A ( F ` x ) = U. ( F " A ) ) $=
+      ( wfn cv cfv ciun crn cuni cima fniunfv imadmrn imaeq2d syl5eqr
+      cdm fndm unieqd eqtrd ) CBDZABAECFGCHZICBJZIABCKSTUASTCCOZJUACL
+      SUBBCBCPMNQR $.
   $}
 
   ${
     $d x z A $.  $d y z F $.  $d x y $.
     funiunfvf.1 $e |- F/_ x F $.
     $( The indexed union of a function's values is the union of its image under
-       the index class.  This version of ~ funiunfv uses a bound-variable
+       the index class.  This version of ~ funiunfvdm uses a bound-variable
        hypothesis in place of a distinct variable condition.  (Contributed by
-       NM, 26-Mar-2006.)  (Revised by David Abernethy, 15-Apr-2013.) $)
-    funiunfvf $p |- ( Fun F -> U_ x e. A ( F ` x ) = U. ( F " A ) ) $=
-      ( vz wfun cv cfv ciun cima cuni nfcv nffv fveq2 cbviun funiunfv syl5eqr )
-      CFABAGZCHZIEBEGZCHZICBJKEABUASATCDATLMESLTRCNOEBCPQ $.
+       Jim Kingdon, 10-Jan-2019.) $)
+    funiunfvdmf $p |- ( F Fn A -> U_ x e. A ( F ` x ) = U. ( F " A ) ) $=
+      ( vz wfn cfv ciun cima cuni nfcv nffv cbviun funiunfvdm syl5eqr
+      cv fveq2 ) CBFABAPZCGZHEBEPZCGZHCBIJEABUASATCDATKLESKTRCQMEBCNO
+      $.
   $}
 
   ${
