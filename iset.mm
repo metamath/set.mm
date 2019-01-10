@@ -46830,13 +46830,13 @@ $)
     $( A function is uniquely determined by its values.  (Contributed by NM,
        31-Aug-2011.) $)
     eufnfv $p |- E! f ( f Fn A /\ A. x e. A ( f ` x ) = B ) $=
-      ( vz cv wfn cfv wceq wral wa weu wb wal wex cmpt mptex cvv eqeq2 pm4.71ri
-      bibi2d albidv spcev eqid fnmpti fneq1 mpbiri dffn5 eqeq1 sylbi wcel rgenw
-      fvex mpteqb ax-mp syl6bb pm5.32i bitr2i mpg df-eu mpbir ) DHZBIZAHZVDJZCK
-      ABLZMZDNVIVDGHZKZOZDPZGQZVIVDABCRZKZOZVNDVMVQDPGVOABCESVJVOKZVLVQDVRVKVPV
-      IVJVOVDUAUCUDUEVPVEVPMVIVPVEVPVEVOBIABCVOFVOUFUGBVDVOUHUIUBVEVPVHVEVPABVG
-      RZVOKZVHVEVDVSKVPVTOABVDUJVDVSVOUKULVGTUMZABLVTVHOWAABVFVDUOUNABVGCTUPUQU
-      RUSUTVAVIDGVBVC $.
+      ( vy cv wfn cfv wceq wral wa weu wb wal wex cmpt mptex cvv eqeq2 pm4.71ri
+      bibi2d albidv spcev eqid fnmpti mpbiri dffn5im eqeq1d wcel funfvex funfni
+      fneq1 ralrimiva mpteqb syl bitrd pm5.32i bitr2i mpg df-eu mpbir ) DHZBIZA
+      HZVDJZCKABLZMZDNVIVDGHZKZOZDPZGQZVIVDABCRZKZOZVNDVMVQDPGVOABCESVJVOKZVLVQ
+      DVRVKVPVIVJVOVDUAUCUDUEVPVEVPMVIVPVEVPVEVOBIABCVOFVOUFUGBVDVOUNUHUBVEVPVH
+      VEVPABVGRZVOKZVHVEVDVSVOABVDUIUJVEVGTUKZABLVTVHOVEWAABWABVFVDVFVDULUMUOAB
+      VGCTUPUQURUSUTVAVIDGVBVC $.
   $}
 
   $( A function's value in a preimage belongs to the image.  (Contributed by
