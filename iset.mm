@@ -47002,12 +47002,12 @@ $)
 
   ${
     $d x A $.  $d x B $.  $d x F $.
-    $( Membership in the union of an image of a function.  (Contributed by NM,
-       28-Sep-2006.) $)
-    eluniima $p |- ( Fun F ->
+    $( Membership in the union of an image of a function.  (Contributed by Jim
+       Kingdon, 10-Jan-2019.) $)
+    eluniimadm $p |- ( F Fn A ->
                    ( B e. U. ( F " A ) <-> E. x e. A B e. ( F ` x ) ) ) $=
-      ( cv cfv wcel wrex ciun wfun cima cuni eliun funiunfv eleq2d syl5rbbr ) C
-      AEDFZGABHCABQIZGDJZCDBKLZGACBQMSRTCABDNOP $.
+      ( cv cfv wcel wrex ciun wfn cima cuni eliun funiunfvdm syl5rbbr
+      eleq2d ) CAEDFZGABHCABQIZGDBJZCDBKLZGACBQMSRTCABDNPO $.
 
     $( Membership in the union of the range of a function.  See ~ elunirnALT
        for alternate proof.  (Contributed by NM, 24-Sep-2006.) $)
