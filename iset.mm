@@ -46918,18 +46918,6 @@ $)
   $}
 
   ${
-    $d x y F $.
-    $( Upper bound for the class of values of a class.  (Contributed by NM,
-       9-Nov-1995.) $)
-    fvclss $p |- { y | E. x y = ( F ` x ) } C_ ( ran F u. { (/) } ) $=
-      ( cv cfv wceq wex cab crn wcel c0 csn wo cun wn wne eqcom tz6.12i syl6ibr
-      wbr syl5bi eximdv vex elrn com12 necon1bd elsn orrd ss2abi df-un sseqtr4i
-      ) BDZADZCEZFZAGZBHULCIZJZULKLZJZMZBHUQUSNUPVABUPURUTUPUROULKFUTUPURULKULK
-      PZUPURVBUPUMULCTZAGURVBUOVCAUOUNULFVBVCULUNQUMULCRUAUBAULCBUCUDSUEUFBKUGS
-      UHUIBUQUSUJUK $.
-  $}
-
-  ${
     $d w y z B $.  $d w x y z A $.
     elabrex.1 $e |- B e. _V $.
     $( Elementhood in an image set.  (Contributed by Mario Carneiro,
