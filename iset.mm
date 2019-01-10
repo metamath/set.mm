@@ -46862,11 +46862,12 @@ $)
        of the singleton of the argument.  (Contributed by NM, 23-Mar-2004.) $)
     funfvima3 $p |- ( ( Fun F /\ F C_ G ) -> ( A e. dom F ->
                     ( F ` A ) e. ( G " { A } ) ) ) $=
-      ( vx wss wfun cdm wcel cfv csn cima wi wa cop funfvop ssel syl5 imp wb cv
-      wceq sneq imaeq2d eleq2d opeq1 eleq1d vex elimasn vtoclbg ad2antll mpbird
-      fvex exp32 impcom ) BCEZBFZABGZHZABIZCAJZKZHZLUOUPURVBUOUPURMZMVBAUSNZCHZ
-      UOVCVEVCVDBHUOVEABOBCVDPQRURVBVESUOUPUSCDTZJZKZHVFUSNZCHVBVEDAUQVFAUAZVHV
-      AUSVJVGUTCVFAUBUCUDVJVIVDCVFAUSUEUFCVFUSDUGABULUHUIUJUKUMUN $.
+      ( vx wss wfun cdm wcel cfv csn cima wi wa cop funfvop ssel syl5 wb adantl
+      cvv imp ax-ia2 wceq sneq imaeq2d eleq2d opeq1 eleq1d bibi12d vex elimasng
+      cv funfvex sylancr vtocld mpbird exp32 impcom ) BCEZBFZABGZHZABIZCAJZKZHZ
+      LUSUTVBVFUSUTVBMZMVFAVCNZCHZUSVGVIVGVHBHUSVIABOBCVHPQUAVGVFVIRZUSVGVCCDUL
+      ZJZKZHZVKVCNZCHZRZVJDAVAUTVBUBVKAUCZVQVJRVGVRVNVFVPVIVRVMVEVCVRVLVDCVKAUD
+      UEUFVRVOVHCVKAVCUGUHUISVGVKTHVCTHVQDUJABUMCVKVCTTUKUNUOSUPUQUR $.
   $}
 
   $( The function value of an operand in a set is contained in the image of
