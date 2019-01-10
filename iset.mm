@@ -46894,9 +46894,11 @@ $)
        (Contributed by Stefan O'Rear, 21-Jan-2015.) $)
     ralima $p |- ( ( F Fn A /\ B C_ A ) ->
         ( A. x e. ( F " B ) ph <-> A. y e. B ps ) ) $=
-      ( wfn wss wa cv cfv cima cvv wcel fvex a1i wceq wrex rexbii syl6bb adantl
-      fvelimab eqcom wb ralxfr2d ) GEIFEJKZABCDDLZGMZGFNZFOUJOPUHUIFPKUIGQRUHCL
-      ZUKPUJULSZDFTULUJSZDFTDEFULGUDUMUNDFUJULUEUAUBUNABUFUHHUCUG $.
+      ( wfn wss wa cv cfv cima cvv wcel ssel2 funfvex wceq wrex eqcom
+      funfni sylan2 anassrs fvelimab rexbii syl6bb wb adantl ralxfr2d
+      ) GEIZFEJZKZABCDDLZGMZGFNZFOUKULUNFPZUOOPZULUQKUKUNEPURFEUNQURE
+      UNGUNGRUBUCUDUMCLZUPPUOUSSZDFTUSUOSZDFTDEFUSGUEUTVADFUOUSUAUFUG
+      VAABUHUMHUIUJ $.
   $}
 
   ${
