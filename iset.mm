@@ -46910,11 +46910,11 @@ $)
        (Contributed by FL, 15-Jan-2012.)  (Proof shortened by Mario Carneiro,
        3-Nov-2015.)  (Proof modification is discouraged.) $)
     idref $p |- ( ( _I |` A ) C_ R <-> A. x e. A x R x ) $=
-      ( cv cop wcel wral cmpt crn wss wbr cid cres wf eqid fmpt wfn opex fnmpti
-      df-f mpbiran bitri df-br ralbii mptresid fnasrn eqtr3i sseq1i 3bitr4ri
-      vex ) ADZUKEZCFZABGZABULHZIZCJZUKUKCKZABGLBMZCJUNBCUONZUQABCULUOUOOZPUTUO
-      BQUQABULUOUKUKRVASBCUOTUAUBURUMABUKUKCUCUDUSUPCABUKHUSUPABUEABUKAUJUFUGUH
-      UI $.
+      ( cv cop wcel wral cmpt crn wss wbr cid cres wf eqid fmpt sopex
+      wfn fnmpti df-f mpbiran bitri ralbii mptresid vex fnasrn eqtr3i
+      df-br sseq1i 3bitr4ri ) ADZUKEZCFZABGZABULHZIZCJZUKUKCKZABGLBMZ
+      CJUNBCUONZUQABCULUOUOOZPUTUOBRUQABULUOAAQVASBCUOTUAUBURUMABUKUK
+      CUHUCUSUPCABUKHUSUPABUDABUKAUEUFUGUIUJ $.
   $}
 
   ${
