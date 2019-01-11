@@ -47570,7 +47570,7 @@ $)
        NM, 17-May-2004.)  (Proof shortened by Andrew Salmon, 22-Oct-2011.) $)
     nfiso $p |- F/ x H Isom R , S ( A , B ) $=
       ( vy vz cv wbr cfv wral nfcv nfbr nffv wiso wf1o wb wa df-isom nff1o nfbi
-      nfral nfan nfxfr ) BCDEFUABCFUBZLNZMNZDOZULFPZUMFPZEOZUCZMBQZLBQZUDALMBCD
+      nfralxy nfan nfxfr ) BCDEFUABCFUBZLNZMNZDOZULFPZUMFPZEOZUCZMBQZLBQZUDALMBCD
       EFUEUKUTAABCFGJKUFUSALBJURAMBJUNUQAAULUMDAULRZHAUMRZSAUOUPEAULFGVATIAUMFG
       VBTSUGUHUHUIUJ $.
   $}
