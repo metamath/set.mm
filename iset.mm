@@ -47391,31 +47391,6 @@ $)
   $}
 
   ${
-    fveqf1o.1 $e |- G = ( F o. ( ( _I |` ( A \ { C , ( `' F ` D ) } ) ) u.
-      { <. C , ( `' F ` D ) >. , <. ( `' F ` D ) , C >. } ) ) $.
-    $( Given a bijection ` F ` , produce another bijection ` G ` which
-       additionally maps two specified points.  (Contributed by Mario Carneiro,
-       30-May-2015.) $)
-    fveqf1o $p |- ( ( F : A -1-1-onto-> B /\ C e. A /\ D e. B ) ->
-      ( G : A -1-1-onto-> B /\ ( G ` C ) = D ) ) $=
-      ( wf1o wcel cfv wceq cpr cop cun cin a1i syl2anc wb syl eqtrd w3a ccnv c0
-      cid cdif cres ccom simp1 f1oi simp2 wf f1of 3syl simp3 ffvelrnd f1oprswap
-      f1ocnv incom disjdif eqtri f1oun syl22anc uncom prssi undif syl5eq f1oeq2
-      wss sylib mpbid f1oeq3 f1oco f1oeq1 ax-mp sylibr fveq1i wfn fnresi prid1g
-      fvco3 f1ofn fvun2 syl112anc wfun f1ofun opex prid1 funopfv ee10 f1ocnvfv2
-      fveq2d jca ) ABEHZCAIZDBIZUAZABFHZCFJZDKWPABEUDACDEUBZJZLZUEZUFZCWTMZWTCM
-      ZLZNZUGZHZWQWPWMAAXGHZXIWMWNWOUHZWPAXBXANZXGHZXJWPXLXLXGHZXMWPXBXBXCHZXAX
-      AXFHZXBXAOZUCKZXRXNXOWPXBUIPWPWNWTAIZXPWMWNWOUJZWPBADWSWPWMBAWSHBAWSUKXKA
-      BEUQBAWSULUMWMWNWOUNZUOZCWTAAUPQZXRWPXQXAXBOUCXBXAURXAAUSUTPZYDXBXBXAXAXC
-      XFVAVBWPXLAKZXNXMRWPXLXAXBNZAXBXAVCWPXAAVHZYFAKWPWNXSYGXTYBCWTAVDQXAAVEVI
-      VFZXLAXLXGVGSVJWPYEXMXJRYHXLAAXGVKSVJZAABEXGVLQFXHKWQXIRGABFXHVMVNVOWPWRC
-      XGJZEJZDWPWRCXHJZYKCFXHGVPWPAAXGUKZWNYLYKKWPXJYMYIAAXGULSXTAACEXGVTQVFWPY
-      KWTEJZDWPYJWTEWPYJCXFJZWTWPXCXBVQZXFXAVQZXRCXAIZYJYOKYPWPXBVRPWPXPYQYCXAX
-      AXFWASYDWPWNYRXTCWTAVSSXBXAXCXFCWBWCWPXFWDZXDXFIYOWTKWPXPYSYCXAXAXFWESXDX
-      ECWTWFWGCWTXFWHWITWKWPWMWOYNDKXKYAABDEWJQTTWL $.
-  $}
-
-  ${
     $d u v y z A $.  $d u v y z B $.  $d u v x z C $.  $d x y z R $.  $d x Y $.
     $d u v x z D $.  $d u v y z F $.  $d u v x y z ph $.  $d u v x y z X $.
     $d x y z S $.
