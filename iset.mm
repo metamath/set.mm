@@ -47292,8 +47292,9 @@ $)
     $( Change bound variable between domain and range of function.
        (Contributed by NM, 23-Feb-1997.) $)
     cbvexfo $p |- ( F : A -onto-> B -> ( E. x e. A ph <-> E. y e. B ps ) ) $=
-      ( wfo wn wral wrex cv cfv wceq notbid cbvfo dfrex2 3bitr4g ) EFGIZAJZCEKZ
-      JBJZDFKZJACELBDFLTUBUDUAUCCDEFGCMGNDMOABHPQPACERBDFRS $.
+      ( wfo crn wrex wfn wb fofn cv cfv wceq bicomd eqcoms rexrn forn
+      syl rexeqdv bitr3d ) EFGIZBDGJZKZACEKZBDFKUEGELUGUHMEFGNBADCEGB
+      AMCOGPZDOZUIUJQABHRSTUBUEBDUFFEFGUAUCUD $.
   $}
 
   ${
