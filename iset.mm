@@ -1,4 +1,4 @@
-$( iset.mm - Version of 10-Jan-2019
+$( iset.mm - Version of 11-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -34164,8 +34164,16 @@ $)
   $}
 
   $( An ordered pair of sets is a set.  (Contributed by Jim Kingdon,
-     19-Sep-2018.) $)
-  opexg $p |- ( ( A e. _V /\ B e. _V ) -> <. A , B >. e. _V ) $=
+     11-Jan-2019.) $)
+  opexg $p |- ( ( A e. V /\ B e. W ) -> <. A , B >. e. _V ) $=
+    ( wcel wa cop csn cpr cvv dfopg elex snexg syl adantr prexg syl2anc eqeltrd
+    syl2an ) ACEZBDEZFZABGAHZABIZIZJABCDKUBUCJEZUDJEZUEJETUFUATAJEZUFACLZAMNOTU
+    HBJEUGUAUIBDLABPSUCUDPQR $.
+
+  $( An ordered pair of sets is a set.  This is a special case of ~ opexg and
+     new proofs should use ~ opexg instead.  (Contributed by Jim Kingdon,
+     19-Sep-2018.)  (New usage is discouraged.) $)
+  opexgOLD $p |- ( ( A e. _V /\ B e. _V ) -> <. A , B >. e. _V ) $=
     ( cvv wcel cop csn cpr dfopg snexg adantr prexg jca syl eqeltrd
     wa ) ACDZBCDZOZABEAFZABGZGZCABCCHRSCDZTCDZOUACDRUBUCPUBQAIJABKLST
     KMN $.
@@ -34173,12 +34181,12 @@ $)
   $( An ordered pair of set variables is a set.  (Contributed by Jim Kingdon,
      24-Sep-2018.) $)
   sopex $p |- <. x , y >. e. _V $=
-    ( cv cvv wcel cop vex opexg mp2an ) ACZDEBCZDEJKFDEAGBGJKHI $.
+    ( cv cvv wcel cop vex opexgOLD mp2an ) ACZDEBCZDEJKFDEAGBGJKHI $.
 
   $( An ordered triple of sets is a set.  (Contributed by Jim Kingdon,
      19-Sep-2018.) $)
   otexg $p |- ( ( A e. _V /\ B e. _V /\ C e. _V ) -> <. A , B , C >. e. _V ) $=
-    ( cvv wcel cotp wa cop df-ot opexg sylan syl5eqel 3impa ) ADEZBDEZCDEZABCFZ
+    ( cvv wcel cotp wa cop df-ot opexgOLD sylan syl5eqel 3impa ) ADEZBDEZCDEZABCFZ
     DENOGZPGQABHZCHZDABCIRSDEPTDEABJSCJKLM $.
 
   ${
@@ -34306,7 +34314,7 @@ $)
        26-Apr-2015.) $)
     otth2 $p |- ( <. <. A , B >. , R >. = <. <. C , D >. , S >. <->
                 ( A = C /\ B = D /\ R = S ) ) $=
-      ( cop wceq wa w3a opth anbi1i cvv wcel opexg mp2an df-3an
+      ( cop wceq wa w3a opth anbi1i cvv wcel opexgOLD mp2an df-3an
       3bitr4i ) ABJZCDJZKZEFKZLACKZBDKZLZUELUBEJUCFJKUFUGUEMUDUHUEABC
       DGHNOUBEUCFAPQBPQUBPQGHABRSINUFUGUETUA $.
 
@@ -37650,7 +37658,7 @@ $)
     opeliunxp $p |- ( <. x , C >. e. U_ x e. A ( { x } X. B ) <->
                      ( x e. A /\ C e. B ) ) $=
       ( vz vy cv cop csn cxp ciun wcel cvv elex wex wceq eleq2d anbi12d bitri
-      wa vex adantl opexg sylancr wsb csb wrex df-rex nfv nfs1v nfcv nfxp nfcri
+      wa vex adantl opexgOLD sylancr wsb csb wrex df-rex nfv nfs1v nfcv nfxp nfcri
       nfcsb1v nfan sbequ12 sneq csbeq1a cbvex eleq1 anbi2d exbidv syl5bb df-iun
       xpeq12d elab2g opelxp anbi2i an12 elsn equcom anbi1i 3bitri exbii equcoms
       sbequ12r eqcomd ceqsexv syl6bb pm5.21nii ) AGZDHZABWAIZCJZKZLZWBMLZWABLZD
@@ -37904,7 +37912,7 @@ $)
        NM, 5-Aug-1995.) $)
     opbrop $p |- ( ( ( A e. S /\ B e. S ) /\ ( C e. S /\ D e. S ) ) ->
                    ( <. A , B >. R <. C , D >. <-> ps ) ) $=
-      ( wcel wa wex cvv cop cxp cv wceq wbr copsex4g anbi2d wb elex opexg eleq1
+      ( wcel wa wex cvv cop cxp cv wceq wbr copsex4g anbi2d wb elex opexgOLD eleq1
       syl2an anbi1d eqeq1 4exbidv anbi12d opelxpi anim12i biantrurd 3bitr4d
       brabg ) INQZJNQZRZKNQZLNQZRZRZIJUAZNNUBZQZKLUAZVJQZRZVIEUCFUCUAZUDZVLGUCH
       UCUAZUDZRZARZHSGSFSESZRZVNBRVIVLMUEZBVHWABVNABEFGHIJKLNNOUFUGVDVITQZVLTQZ
@@ -38175,7 +38183,7 @@ $)
     $( A singleton of an ordered pair is a relation.  (Contributed by NM,
        17-May-1998.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
     relsnop $p |- Rel { <. A , B >. } $=
-      ( cop csn wrel cvv cxp wcel opelvv opexg mp2an relsn mpbir ) AB
+      ( cop csn wrel cvv cxp wcel opelvv opexgOLD mp2an relsn mpbir ) AB
       EZFGPHHIJABCDKPAHJBHJPHJCDABLMNO $.
   $}
 
@@ -41224,7 +41232,7 @@ $)
        [Monk1] p. 52.  (See ~ op1stb to extract the first member and ~ op2nda
        for an alternate version.)  (Contributed by NM, 25-Nov-2003.) $)
     op2ndb $p |- |^| |^| |^| `' { <. A , B >. } = B $=
-      ( cop csn ccnv cint cnvsn inteqi opexg mp2an intsn eqtri op1stb
+      ( cop csn ccnv cint cnvsn inteqi opexgOLD mp2an intsn eqtri op1stb
       cvv wcel ) ABEFGZHZHZHBAEZHZHBTUBSUASUAFZHUARUCABCDIJUABPQAPQUA
       PQDCBAKLMNJJBADCON $.
 
@@ -41251,7 +41259,7 @@ $)
        16-Dec-2018.) $)
     opswapg $p |- ( ( A e. V /\ B e. W ) ->
         U. `' { <. A , B >. } = <. B , A >. ) $=
-      ( wcel cop csn ccnv cuni cnvsng unieqd cvv wceq elex opexg syl2anr unisng
+      ( wcel cop csn ccnv cuni cnvsng unieqd cvv wceq elex opexgOLD syl2anr unisng
       wa syl eqtrd ) ACEZBDEZRZABFGHZIBAFZGZIZUEUCUDUFABCDJKUCUELEZUGUEMUBBLEAL
       EUHUABDNACNBAOPUELQST $.
 
@@ -41261,7 +41269,7 @@ $)
     elxp4 $p |- ( A e. ( B X. C ) <-> ( A = <. U. dom { A } , U. ran { A } >.
                  /\ ( U. dom { A } e. B /\ U. ran { A } e. C ) ) ) $=
       ( vx vy wcel cvv csn cdm cuni crn cop wceq wa elex eleq1 wex unieqd syl
-      wb cxp anim12i opexg adantl adantr mpbird sylan2 cv elxp a1i rneqd op2nda
+      wb cxp anim12i opexgOLD adantl adantr mpbird sylan2 cv elxp a1i rneqd op2nda
       sneq vex syl6req anbi1i anass bitri exbii snexg rnexg uniexg opeq2 eqeq2d
       pm4.71ri anbi2d anbi12d ceqsexgv syl5bb dmeqd dmsnopg unisn syl6eq eqtr2d
       ex pm4.71rd anbi1d 3bitrd exbidv dmexg opeq1 pm5.21nii ) ABCUAZFZAGFZAAHZ
@@ -41283,7 +41291,7 @@ $)
     elxp5 $p |- ( A e. ( B X. C ) <-> ( A = <. |^| |^| A , U. ran { A } >.
                  /\ ( |^| |^| A e. B /\ U. ran { A } e. C ) ) ) $=
       ( vx vy wcel cvv cint csn crn cuni cop wceq wa elex eleq1 adantr wex syl
-      wb cxp anim12i opexg adantl mpbird sylan2 cv elxp rneqd unieqd vex op2nda
+      wb cxp anim12i opexgOLD adantl mpbird sylan2 cv elxp rneqd unieqd vex op2nda
       syl6req pm4.71ri anbi1i anass bitri exbii snexg rnexg uniexg opeq2 eqeq2d
       sneq anbi2d anbi12d ceqsexgv syl5bb inteq inteqd op1stbg sylancr pm4.71rd
       eqtr2d ex anbi1d a1i 3bitrd exbidv mpbii exlimiv ad2antrl opeq1 pm5.21nii
@@ -46529,7 +46537,7 @@ $)
     $( The value of a singleton of an ordered pair is the second member.
        (Contributed by NM, 12-Aug-1994.) $)
     fvsn $p |- ( { <. A , B >. } ` A ) = B $=
-      ( cop csn wfun wcel cfv wceq funsn cvv opexg mp2an snid funopfv
+      ( cop csn wfun wcel cfv wceq funsn cvv opexgOLD mp2an snid funopfv
       mp2 ) ABEZFZGRSHASIBJABCDKRALHBLHRLHCDABMNOABSPQ $.
   $}
 
@@ -46785,7 +46793,7 @@ $)
     resfunexg $p |- ( ( Fun A /\ B e. C ) -> ( A |` B ) e. _V ) $=
       ( vx wfun wcel cres cdm cfv cmpt cima cvv wceq wral ralrimiva 3syl adantr
       wa cv sylancr cop crn funfvex fnasrng wfn funfn sylib dffn5im syl imadmrn
-      funres vex opexg dmmptg imaeq2d syl5reqr funmpt dmresexg adantl funimaexg
+      funres vex opexgOLD dmmptg imaeq2d syl5reqr funmpt dmresexg adantl funimaexg
       3eqtr4d eqeltrd ) AEZBCFZRZABGZDVFHZDSZVHVFIZUAZJZVGKZLVEDVGVIJZVKUBZVFVL
       VCVMVNMZVDVCVFEZVILFZDVGNVOBAUKZVPVQDVGVHVFUCZODVGVILUDPQVEVFVGUEZVFVMMVE
       VPVTVCVPVDVRQVFUFUGDVGVFUHUIVCVLVNMVDVCVNVKVKHZKVLVKUJVCWAVGVKVCVPVJLFZDV
@@ -47407,7 +47415,7 @@ $)
     $( Elementhood in the relation ` F ` .  (Contributed by Mario Carneiro,
        23-Dec-2016.) $)
     fliftel $p |- ( ph -> ( C F D <-> E. x e. X ( C = A /\ D = B ) ) ) $=
-      ( cop wceq wrex wa wcel cvv wb wbr cmpt crn df-br eleq2i bitri wral opexg
+      ( cop wceq wrex wa wcel cvv wb wbr cmpt crn df-br eleq2i bitri wral opexgOLD
       cv elex syl2an syl2anc ralrimiva eqid elrnmptg syl syl5bb opthg2 rexbidva
       bitrd ) AEFIUAZEFNZCDNZOZBJPZECOFDOQZBJPVAVBBJVCUBZUCZRZAVEVAVBIRVIEFIUDI
       VHVBKUEUFAVCSRZBJUGVIVETAVJBJABUIJRQZCGRZDHRZVJLMVLCSRDSRVJVMCGUJDHUJCDUH
