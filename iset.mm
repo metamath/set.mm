@@ -47407,10 +47407,11 @@ $)
     $( Elementhood in the relation ` F ` .  (Contributed by Mario Carneiro,
        23-Dec-2016.) $)
     fliftel $p |- ( ph -> ( C F D <-> E. x e. X ( C = A /\ D = B ) ) ) $=
-      ( wbr cop wceq wrex wa wcel cmpt crn df-br eleq2i eqid elrnmpti 3bitri cv
-      opex wb opthg2 syl2anc rexbidva syl5bb ) EFINZEFOZCDOZPZBJQZAECPFDPRZBJQU
-      NUOISUOBJUPTZUAZSUREFIUBIVAUOKUCBJUPUOUTUTUDCDUHUEUFAUQUSBJABUGJSRCGSDHSU
-      QUSUILMEFCDGHUJUKULUM $.
+      ( cop wceq wrex wa wcel cvv wb wbr cmpt crn df-br eleq2i bitri wral opexg
+      cv elex syl2an syl2anc ralrimiva eqid elrnmptg syl syl5bb opthg2 rexbidva
+      bitrd ) AEFIUAZEFNZCDNZOZBJPZECOFDOQZBJPVAVBBJVCUBZUCZRZAVEVAVBIRVIEFIUDI
+      VHVBKUEUFAVCSRZBJUGVIVETAVJBJABUIJRQZCGRZDHRZVJLMVLCSRDSRVJVMCGUJDHUJCDUH
+      UKULUMBJVCVBVGSVGUNUOUPUQAVDVFBJVKVLVMVDVFTLMEFCDGHURULUSUT $.
 
     $( Elementhood in the relation ` F ` .  (Contributed by Mario Carneiro,
        23-Dec-2016.) $)
