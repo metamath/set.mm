@@ -47424,9 +47424,10 @@ $)
     $( Elementhood in the relation ` F ` .  (Contributed by Mario Carneiro,
        23-Dec-2016.) $)
     fliftel1 $p |- ( ( ph /\ x e. X ) -> A F B ) $=
-      ( cv wcel wa cop wbr cmpt crn cvv opex eqid mpan2 adantl syl6eleqr sylibr
-      elrnmpt1 df-br ) ABLHMZNZCDOZGMCDGPUIUJBHUJQZRZGUHUJULMZAUHUJSMUMCDTBHUJU
-      KSUKUAUFUBUCIUDCDGUGUE $.
+      ( cv wcel wa cop wbr cmpt crn cvv opexg eqid elrnmpt1 syl6eleqr
+      syl2anc adantll mpdan df-br sylibr ) ABLHMZNZCDOZGMCDGPUJUKBHUK
+      QZRZGUJUKSMZUKUMMZUJCEMDFMUNJKCDEFTUDUIUNUOABHUKULSULUAUBUEUFIU
+      CCDGUGUH $.
 
     $( Converse of the relation ` F ` .  (Contributed by Mario Carneiro,
        23-Dec-2016.) $)
