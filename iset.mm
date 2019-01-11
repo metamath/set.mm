@@ -22751,6 +22751,17 @@ $)
   $}
 
   ${
+    $d x y z A $.  $d x y z B $.
+    $( A variable introduction law for class equality, deduction version.
+       (Contributed by Thierry Arnoux, 2-Mar-2017.) $)
+    eqvincg $p |- ( A e. V -> ( A = B <-> E. x ( x = A /\ x = B ) ) ) $=
+      ( wcel wceq cv wa wex wi elisset ax-1 eqtr ex eximi pm3.43 3syl
+      jca nfv 19.37-1 syl eqtr2 exlimiv impbid1 ) BDEZBCFZAGZBFZUGCFZ
+      HZAIZUEUFUJJZAIZUFUKJUEUHAIUFUHJZUFUIJZHZAIUMABDKUHUPAUHUNUOUHU
+      FLUHUFUIUGBCMNROUPULAUFUHUIPOQUFUJAUFASTUAUJUFAUGBCUBUCUD $.
+  $}
+
+  ${
     $d A y $.  $d B y $.  $d x y $.
     eqvincf.1 $e |- F/_ x A $.
     eqvincf.2 $e |- F/_ x B $.
