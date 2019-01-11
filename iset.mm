@@ -644,6 +644,20 @@ $)
       ( syl ) ACDABCEFHGH $.
   $}
 
+  ${
+    4syl.1 $e |- ( ph -> ps ) $.
+    4syl.2 $e |- ( ps -> ch ) $.
+    4syl.3 $e |- ( ch -> th ) $.
+    4syl.4 $e |- ( th -> ta ) $.
+    $( Inference chaining three syllogisms.  The use of this theorem is marked
+       "discouraged" because it can cause the "minimize" command to have very
+       long run times.  However, feel free to use "minimize 4syl /override" if
+       you wish.  (Contributed by BJ, 14-Jul-2018.)
+       (New usage is discouraged.) $)
+    4syl $p |- ( ph -> ta ) $=
+      ( 3syl syl ) ADEABCDFGHJIK $.
+  $}
+
   $( Principle of identity.  Theorem *2.08 of [WhiteheadRussell] p. 101.  For
      another version of the proof directly from axioms, see ~ id1 .
      (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Stefan Allan,
