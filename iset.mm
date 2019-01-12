@@ -47720,37 +47720,6 @@ $)
 
   ${
     $d x y A $.  $d x y B $.  $d x y R $.  $d x y S $.  $d x y H $.
-    $d x y C $.  $d x y D $.
-    $( Isomorphisms preserve minimal elements.  Note that ` ( ``' R " { D } ) `
-       is Takeuti and Zaring's idiom for the initial segment
-       ` { x | x R D } ` .  Proposition 6.31(1) of [TakeutiZaring] p. 33.
-       (Contributed by NM, 19-Apr-2004.) $)
-    isomin $p |- ( ( H Isom R , S ( A , B ) /\ ( C C_ A /\ D e. A ) ) ->
-               ( ( C i^i ( `' R " { D } ) ) = (/) <->
-               ( ( H " C ) i^i ( `' S " { ( H ` D ) } ) ) = (/) ) ) $=
-      ( vy vx wcel wa cima wceq wex wrex wbr wb wi syl9r cvv wss csn cin c0 cfv
-      wiso ccnv wn cv neq0 ssel wf1o wfn isof1o f1ofn fnbrfvb ex imp31 rexbidva
-      3syl vex syl6rbbr fvex eliniseg mp1i anbi12d elin r19.41v 3bitr4g adantrr
-      elima breq1 biimpar ad2antll isorel bitrd syl5ibr exp32 com34 imp32 exbii
-      reximdvai sylbid df-rex 3bitr4i syl6ibr exlimdv syl5bi syl fnfvima 3expia
-      con4d sylan adantrd biimpd ax-mp imp3a jcad 3imtr4g n0i syl6 impcon4bid )
-      ABEFGUFZCAUAZDAJZKZKZCEUGDUBLZUCZUDMZGCLZFUGDGUEZUBLZUCZUDMZXGXOXJXOUHZHU
-      IZXNJZHNXGXJUHZHXNUJXGXRXSHXGXRIUIZXHJZICOZXSXGXRXTGUEZXQMZXQXLFPZKZICOZY
-      BXCXDXRYGQXEXCXDKZXQXKJZXQXMJZKYDICOZYEKXRYGYHYIYKYJYEYHYKXTXQGPZICOYIYHY
-      DYLICXCXDXTCJZYDYLQZXDYMXTAJZXCYNCAXTUKZXCABGULZGAUMZYOYNRABEFGUNZABGUOZY
-      RYOYNAXTXQGUPUQUTSURUSIXQGCHVAZVKVBXLTJZYJYEQYHDGVCZFXLXQTUUAVDVEVFXQXKXM
-      VGYDYEICVHVIVJXGYFYAICXCXDXEYMYFYARZRXCXDYMXEUUDXDYMYOXCXEUUDRYPXCYOXEUUD
-      YFYAXCYOXEKKZYCXLFPZYDUUFYEYCXQXLFVLVMUUEYAXTDEPZUUFXEYAUUGQXCYOEDXTAIVAV
-      DVNZABXTDEFGVOZVPVQVRSVSVTWBWCXTXIJZINZYMYAKZINXSYBUUJUULIXTCXHVGZWAIXIUJ
-      ZYAICWDWEWFWGWHWLXSUUKXGXPUUNXGUUJXPIXGUUJYCXNJZXPXGUULYCXKJZYCXMJZKUUJUU
-      OXGUULUUPUUQXGYMUUPYAXCYRXFYMUUPRZXCYQYRYSYTWIYRXDUURXEYRXDYMUUPACGXTWJWK
-      VJWMWNXGYMYAUUQXCXDXEYMYAUUQRZRXCXDYMXEUUSXDYMYOXCXEUUSRYPXCYOXEUUSUUEYAU
-      UGUUQUUHUUEUUGUUFUUQUUEUUGUUFUUIWOUUBUUQUUFQUUCFXLYCTXTGVCVDWPWFWCVRSVSVT
-      WQWRUUMYCXKXMVGWSXNYCWTXAWGWHXB $.
-  $}
-
-  ${
-    $d x y A $.  $d x y B $.  $d x y R $.  $d x y S $.  $d x y H $.
     $d x y D $.
     $( Isomorphisms preserve initial segments.  Proposition 6.31(2) of
        [TakeutiZaring] p. 33.  (Contributed by NM, 20-Apr-2004.) $)
