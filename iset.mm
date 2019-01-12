@@ -47642,11 +47642,15 @@ $)
        30-Jan-2014.) $)
     isocnv2 $p |- ( H Isom R , S ( A , B ) <->
                     H Isom `' R , `' S ( A , B ) ) $=
-      ( vy vx wf1o cv wbr cfv wb wral wa ccnv wiso vex brcnv fvex df-isom
-      ralcom bibi12i 2ralbii bitr4i anbi2i 3bitr4i ) ABEHZFIZGIZCJZUHEKZUIEKZDJ
-      ZLZGAMFAMZNUGUIUHCOZJZULUKDOZJZLZFAMGAMZNABCDEPABUPUREPUOVAUGUOUNFAMGAMVA
-      UNFGAAUAUTUNGFAAUQUJUSUMUIUHCGQFQRULUKDUIESUHESRUBUCUDUEFGABCDETGFABUPURE
-      TUF $.
+      ( vy vx wiso ccnv isof1o syl cv wbr cfv wb wral wa wcel vex cvv
+      wfn wf1o f1ofn a1i funfvex funfni adantr adantlr brcnvg syl2anc
+      brcnv bibi12d ralbidva ralcom syl6rbbr anbi2d df-isom pm5.21nii
+      3bitr4g ) ABCDEHZEAUAZABCIZDIZEHZUTABEUBZVAABCDEJABEUCZKVDVEVAA
+      BVBVCEJVFKVAVEFLZGLZCMZVGENZVHENZDMZOZGAPFAPZQVEVHVGVBMZVKVJVCM
+      ZOZFAPZGAPZQUTVDVAVNVSVEVAVSVMFAPZGAPVNVAVRVTGAVAVHARZQZVQVMFAW
+      BVGARZQZVOVIVPVLVOVIOWDVHVGCGSFSUKUDWDVKTRZVJTRZVPVLOWBWEWCWEAV
+      HEVHEUEUFUGVAWCWFWAWFAVGEVGEUEUFUHVKVJTTDUIUJULUMUMVMFGAAUNUOUP
+      FGABCDEUQGFABVBVCEUQUSUR $.
 
     isocnv3.1 $e |- C = ( ( A X. A ) \ R ) $.
     isocnv3.2 $e |- D = ( ( B X. B ) \ S ) $.
