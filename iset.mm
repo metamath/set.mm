@@ -47905,35 +47905,6 @@ $)
       VNVOVPVQVRVSVTWAIJABCDEFGWBWC $.
   $}
 
-  ${
-    $d w x y z A $.  $d w x y z F $.  $d w V $.  $d w x y X $.
-    knatar.1 $e |- X = |^| { z e. ~P A | ( F ` z ) C_ z } $.
-    $( The Knaster-Tarski theorem says that every monotone function over a
-       complete lattice has a (least) fixpoint.  Here we specialize this
-       theorem to the case when the lattice is the powerset lattice ` ~P A ` .
-       (Contributed by Mario Carneiro, 11-Jun-2015.) $)
-    knatar $p |- ( ( A e. V /\ ( F ` A ) C_ A /\
-        A. x e. ~P A A. y e. ~P x ( F ` y ) C_ ( F ` x ) ) ->
-      ( X C_ A /\ ( F ` X ) = X ) ) $=
-      ( vw wcel cfv wss cv cpw wral wceq fveq2 sylibr rspcv sylc w3a crab pwidg
-      cint 3ad2ant1 simp2 id sseq12d intminss syl2anc syl5eqss wi wa adantl vex
-      elpw2 simprl simpl3 pweq sseq2d raleqbidv sseq1d sstrd ralrimiva ssintrab
-      simprr expr cbvrabv inteqi eqtri syl6sseqr elpw2g mpbird simp3 fvex eqssd
-      wb elpw jca ) DFJZDEKZDLZBMZEKZAMZEKZLZBWENZOZADNZOZUAZGDLZGEKZGPWLGCMZEK
-      ZWOLZCWJUBZUDZDHWLDWJJZWBWSDLVTWBWTWKDFUCUEZVTWBWKUFZWQWBCDWJWODPZWPWAWOD
-      WODEQXCUGUHUIUJUKZWLWNGWLWNIMZEKZXELZIWJUBZUDZGWLXGWNXELZULZIWJOWNXILWLXK
-      IWJWLXEWJJZXGXJWLXLXGUMZUMZWNXFXEXNGXENZJZWDXFLZBXOOZWNXFLZXNGXELXPXNGWSX
-      EHXMWSXELWLWQXGCXEWJWOXEPZWPXFWOXEWOXEEQXTUGUHZUIUNUKGXEIUOUPRXNXLWKXRWLX
-      LXGUQVTWBWKXMURWIXRAXEWJWEXEPZWGXQBWHXOWEXEUSYBWFXFWDWEXEEQUTVASTXQXSBGXO
-      WCGPZWDWNXFWCGEQZVBSTWLXLXGVFVCVGVDXGIWNWJVERGWSXIHWRXHWQXGCIWJYAVHVIVJZV
-      KZWLGXIWNYEWLWNWJJZWNEKZWNLZXIWNLWLWNDLYGWLWNWADWLGWJJZWDWALZBWJOZWNWALZW
-      LYJWMXDVTWBYJWMVQWKGDFVLUEVMZWLWTWKYLXAVTWBWKVNZWIYLADWJWEDPZWGYKBWHWJWED
-      USYPWFWAWDWEDEQUTVASTYKYMBGWJYCWDWNWAYDVBSTXBVCWNDGEVOZVRRWLWNGNZJZWDWNLZ
-      BYROZYIWLWNGLYSYFWNGYQVRRWLYJWKUUAYNYOWIUUAAGWJWEGPZWGYTBWHYRWEGUSUUBWFWN
-      WDWEGEQUTVASTYTYIBWNYRWCWNPWDYHWNWCWNEQVBSTXGYIIWNWJXEWNPZXFYHXEWNXEWNEQU
-      UCUGUHUIUJUKVPVS $.
-  $}
-
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
