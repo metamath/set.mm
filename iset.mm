@@ -47823,27 +47823,34 @@ $)
     isopo $p |- ( H Isom R , S ( A , B ) -> ( R Po A <-> S Po B ) ) $=
       ( wiso wpo ccnv wi isocnv isopolem syl impbid ) ABCDEFZACGZBDGZNBADCEHZFO
       PIABCDEJBADCQKLABCDEKM $.
+  $}
 
+  ${
+    $d H a b c x y z $.  $d R a b c x y z $.  $d S a b c x y z $.
+    $d A a b c x y z $.  $d B a b c x y z $.
     $( Lemma for ~ isoso .  (Contributed by Stefan O'Rear, 16-Nov-2014.) $)
     isosolem $p |- ( H Isom R , S ( A , B ) -> ( S Or B -> R Or A ) ) $=
-      ( va vb vc vd wpo cv wbr weq w3o wral wa wor wcel wceq 3orbi123d isopolem
-      wiso cfv wi wf1o wf isof1o f1of ffvelrn ex anim12d 3syl breq1 eqeq1 breq2
-      imp eqeq2 rspc2v syl isorel wf1 f1of1 f1fveq sylan bicomd ancom2s sylibrd
-      wb ralrimdvva df-so 3imtr4g ) ABCDEUBZBDJZFKZGKZDLZFGMZVOVNDLZNZGBOFBOZPA
-      CJZHKZIKZCLZHIMZWCWBCLZNZIAOHAOZPBDQACQVLVMWAVTWHABCDEUAVLVTWGHIAAVLWBARZ
-      WCARZPZPZVTWBEUCZWCEUCZDLZWMWNSZWNWMDLZNZWGWLWMBRZWNBRZPZVTWRUDVLWKXAVLAB
-      EUEZABEUFZWKXAUDABCDEUGZABEUHXCWIWSWJWTXCWIWSABWBEUIUJXCWJWTABWCEUIUJUKUL
-      UPVSWRWMVODLZWMVOSZVOWMDLZNFGWMWNBBVNWMSVPXEVQXFVRXGVNWMVODUMVNWMVOUNVNWM
-      VODUOTVOWNSXEWOXFWPXGWQVOWNWMDUOVOWNWMUQVOWNWMDUMTURUSWLWDWOWEWPWFWQABWBW
-      CCDEUTWLWPWEVLABEVAZWKWPWEVHVLXBXHXDABEVBUSABWBWCEVCVDVEVLWJWIWFWQVHABWCW
-      BCDEUTVFTVGVIUKFGBDVJHIACVJVK $.
-
-    $( An isomorphism preserves strict ordering.  (Contributed by Stefan
-       O'Rear, 16-Nov-2014.) $)
-    isoso $p |- ( H Isom R , S ( A , B ) -> ( R Or A <-> S Or B ) ) $=
-      ( wiso wor ccnv wi isocnv isosolem syl impbid ) ABCDEFZACGZBDGZNBADCEHZFO
-      PIABCDEJBADCQKLABCDEKM $.
+      ( vx vy vz va vb vc cv wbr wo wi wral wa wcel cfv ffvelrn wiso wpo df-3an
+      wor isopolem w3a wf1o wf isof1o f1of 3anim123d 3syl imp wceq breq1 orbi1d
+      ex imbi12d breq2 orbi2d orbi12d imbi2d rspc3v wb isorel 3adantr3 3adantr2
+      syl ancom2s 3adantr1 sylibrd sylan2br anassrs ralrimdva ralrimdvva df-iso
+      anim12d 3imtr4g ) ABCDEUAZBDUBZFLZGLZDMZWAHLZDMZWDWBDMZNZOZHBPGBPFBPZQACU
+      BZILZJLZCMZWKKLZCMZWNWLCMZNZOZKAPZJAPIAPZQBDUDACUDVSVTWJWIWTABCDEUEVSWIWS
+      IJAAVSWKARZWLARZQZQWIWRKAVSXCWNARZWIWROZXCXDQVSXAXBXDUFZXEXAXBXDUCVSXFQZW
+      IWKESZWLESZDMZXHWNESZDMZXKXIDMZNZOZWRXGXHBRZXIBRZXKBRZUFZWIXOOVSXFXSVSABE
+      UGABEUHZXFXSOABCDEUIABEUJXTXAXPXBXQXDXRXTXAXPABWKETUQXTXBXQABWLETUQXTXDXR
+      ABWNETUQUKULUMWHXOXHWBDMZXHWDDMZWFNZOXJYBWDXIDMZNZOFGHXHXIXKBBBWAXHUNZWCY
+      AWGYCWAXHWBDUOYFWEYBWFWAXHWDDUOUPURWBXIUNZYAXJYCYEWBXIXHDUSYGWFYDYBWBXIWD
+      DUSUTURWDXKUNZYEXNXJYHYBXLYDXMWDXKXHDUSWDXKXIDUOVAVBVCVHXGWMXJWQXNVSXAXBW
+      MXJVDXDABWKWLCDEVEVFXGWOXLWPXMVSXAXDWOXLVDXBABWKWNCDEVEVGVSXBXDWPXMVDZXAV
+      SXDXBYIABWNWLCDEVEVIVJVAURVKVLVMVNVOVQFGHBDVPIJKACVPVR $.
   $}
+
+  $( An isomorphism preserves strict ordering.  (Contributed by Stefan O'Rear,
+     16-Nov-2014.) $)
+  isoso $p |- ( H Isom R , S ( A , B ) -> ( R Or A <-> S Or B ) ) $=
+    ( wiso wor ccnv wi isocnv isosolem syl impbid ) ABCDEFZACGZBDGZNBADCEHZFO
+    PIABCDEJBADCQKLABCDEKM $.
 
   ${
     $d x y z w v u A $.  $d x y v u B $.  $d x y z w v u H $.
