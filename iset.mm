@@ -48237,31 +48237,6 @@ $)
   $}
 
   ${
-    $d x B $.  $d x z C $.  $d x y z A $.  $d x y ph $.  $d ps y z $.
-    $d ch x z $.
-    riotaxfrd.1 $e |- F/_ y C $.
-    riotaxfrd.2 $e |- ( ( ph /\ y e. A ) -> B e. A ) $.
-    riotaxfrd.3 $e |- ( ( ph /\ ( iota_ y e. A ch ) e. A ) -> C e. A ) $.
-    riotaxfrd.4 $e |- ( x = B -> ( ps <-> ch ) ) $.
-    riotaxfrd.5 $e |- ( y = ( iota_ y e. A ch ) -> B = C ) $.
-    riotaxfrd.6 $e |- ( ( ph /\ x e. A ) -> E! y e. A x = B ) $.
-    $( Change the variable ` x ` in the expression for "the unique ` x ` such
-       that ` ps ` " to another variable ` y ` contained in expression ` B ` .
-       Use ~ reuhypd to eliminate the last hypothesis.  (Contributed by NM,
-       16-Jan-2012.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
-    riotaxfrd $p |- ( ( ph /\ E! x e. A ps )
-         -> ( iota_ x e. A ps ) = C ) $=
-      ( wreu wa crio crab wcel adantl rabid baib riotabiia wceq reuxfrd riotacl
-      cv riotacl2 wb nfriota1 rabxfrd sylan2 mpbird ex sylbid imp baibr reubiia
-      syl5 biimpi nfcv nfrab1 nfel2 eleq1 riota2f syl2anc mpbid syl5eqr ) ABDFO
-      ZPZBDFQDUGZBDFRZSZDFQZHVMBDFVMVKFSZBBDFUAZUBUCVJHVLSZVNHUDZAVIVQAVICEFOZV
-      QABCDEGFJNLUEZAVSVQAVSPVQCEFQZCEFRSZVSWBACEFUHTVSAWAFSZVQWBUICEFUFZABCDEG
-      WAHFCEFUJIJLMUKULUMUNUOUPVJHFSZVMDFOZVQVRUIAVIWEAVIVSWEVTVSWCAWEWDAWCWEKU
-      NUSUOUPVIWFAVIWFBVMDFVMVOBVPUQURUTTVMVQDFHDHVADHVLBDFVBVCVKHVLVDVEVFVGVH
-      $.
-  $}
-
-  ${
     $d x y z A $.  $d x z B $.
     eusvobj1.1 $e |- B e. _V $.
     $( Specify the same property in two ways when class ` B ( y ) ` is
