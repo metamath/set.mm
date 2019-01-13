@@ -48038,23 +48038,13 @@ $)
   ${
     $d y z A $.  $d x z w B $.  $d w z ph $.  $d w x y $.
     $( Interchange class substitution and restricted description binder.
-       (Contributed by NM, 24-Feb-2013.)  (Revised by NM, 2-Sep-2018.) $)
-    csbriota $p |- [_ A / x ]_ ( iota_ y e. B ph )
-          = ( iota_ y e. B [. A / x ]. ph ) $=
-      ( vz cvv wcel crio csb wsbc wceq cv wsb csbeq1 dfsbcq2 riotabidv wn syl
-      c0 eqeq12d vex nfs1v nfcv nfriota weq sbequ12 csbief vtoclg csbprc wa cio
-      df-riota weu wex sbcex adantl exlimiv con3i iotanul syl5req eqtrd pm2.61i
-      euex ) DGHZBDACEIZJZABDKZCEIZLZBFMZVFJZABFNZCEIZLVJFDGVKDLZVLVGVNVIBVKDVF
-      OVOVMVHCEABFDPQUABVKVFVNFUBVMBCEABFUCBEUDUEBFUFAVMCEABFUGQUHUIVERZVGTVIBD
-      VFUJVPVICMEHZVHUKZCULZTVHCEUMVPVRCUNZRVSTLVTVEVTVRCUOVEVRCVDVRVECVHVEVQAB
-      DUPUQURSUSVRCUTSVAVBVC $.
-
-    $( Interchange class substitution and restricted description binder.
-       (Contributed by NM, 24-Feb-2013.)  Obsolete as of 2-Sep-2018.  Use
-       ~ csbriota instead.  (New usage is discouraged.) $)
-    csbriotagOLD $p |- ( A e. V
-    -> [_ A / x ]_ ( iota_ y e. B ph ) = ( iota_ y e. B [. A / x ]. ph ) ) $=
-      ( crio csb wsbc wceq wcel csbriota a1i ) BDACEGHABDICEGJDFKABCDELM $.
+       (Contributed by NM, 24-Feb-2013.) $)
+    csbriotag $p |- ( A e. V
+      -> [_ A / x ]_ ( iota_ y e. B ph ) = ( iota_ y e. B [. A / x ]. ph ) ) $=
+      ( vz cv crio csb wsb wceq wsbc csbeq1 dfsbcq2 riotabidv eqeq12d vex nfs1v
+      nfcv nfriota weq sbequ12 csbief vtoclg ) BGHZACEIZJZABGKZCEIZLBDUGJZABDMZ
+      CEIZLGDFUFDLZUHUKUJUMBUFDUGNUNUIULCEABGDOPQBUFUGUJGRUIBCEABGSBETUABGUBAUI
+      CEABGUCPUDUE $.
   $}
 
   $( Membership law for "the unique element in ` A ` such that ` ph ` ."
