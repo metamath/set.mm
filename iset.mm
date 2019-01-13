@@ -48007,8 +48007,8 @@ $)
     $( A variable not free in a wff remains so in a restricted iota
        descriptor.  (Contributed by NM, 12-Oct-2011.) $)
     nfriota $p |- F/_ x ( iota_ y e. A ph ) $=
-      ( crio wnfc wtru nftru wnf a1i nfriotad trud ) BACDGHIABCDCJABKIELBDHIFLM
-      N $.
+      ( crio wnfc wtru nftru wnf a1i nfriotadxy trud ) BACDGHIABCDCJABKIELBDHIF
+      LMN $.
   $}
 
   ${
