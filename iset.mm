@@ -47988,17 +47988,16 @@ $)
   $}
 
   ${
-    nfriotad.1 $e |- F/ y ph $.
-    nfriotad.2 $e |- ( ph -> F/ x ps ) $.
-    nfriotad.3 $e |- ( ph -> F/_ x A ) $.
-    $( Deduction version of ~ nfriota .  (Contributed by NM, 18-Feb-2013.)
-       (Revised by Mario Carneiro, 15-Oct-2016.) $)
-    nfriotad $p |- ( ph -> F/_ x ( iota_ y e. A ps ) ) $=
-      ( crio cv wcel wa cio df-riota weq wal wnfc wn nfnae adantr nfcvf nfiotad
-      nfan adantl nfeld wnf nfand nfiota1 eqidd drnfc1 mpbiri pm2.61d2 nfcxfrd
-      ex ) ACBDEIDJZEKZBLZDMZBDENACDOCPZCURQZAUSRZUTAVALZUQCDAVADFCDDSUCVBUPBCV
-      BCUOEVACUOQACDUAUDACEQVAHTUEABCUFVAGTUGUBUNUSUTDURQUQDUHCDURURUSURUIUJUKU
-      LUM $.
+    $d x y $.
+    nfriotadxy.1 $e |- F/ y ph $.
+    nfriotadxy.2 $e |- ( ph -> F/ x ps ) $.
+    nfriotadxy.3 $e |- ( ph -> F/_ x A ) $.
+    $( Deduction version of ~ nfriota .  (Contributed by Jim Kingdon,
+       12-Jan-2019.) $)
+    nfriotadxy $p |- ( ph -> F/_ x ( iota_ y e. A ps ) ) $=
+      ( crio cv wcel cio df-riota wnfc nfcv a1i nfeld nfand nfiotadxy
+      wa nfcxfrd ) ACBDEIDJZEKZBTZDLBDEMAUDCDFAUCBCACUBECUBNACUBOPHQG
+      RSUA $.
   $}
 
   ${
