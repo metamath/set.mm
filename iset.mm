@@ -48300,22 +48300,6 @@ $)
            -> ( iota_ x e. A ph ) = ( iota x ( x e. A /\ ph ) ) ) $=
       ( crio cv wcel wa cio wceq cvv wn df-riota a1i ) ABCDBECFAGBHICJFKABCLM
       $.
-
-    $( The restricted iota class is limited in size by the base set.
-       (Contributed by Mario Carneiro, 24-Dec-2016.)  Obsolete as of
-       28-Aug-2018.  (New usage is discouraged.) $)
-    riotassuniOLD $p |- ( iota_ x e. A ph ) C_ ( ~P U. A u. U. A ) $=
-      ( wreu crio cuni cpw cun crab riotauni ssrab2 unissi ssun2 sstri syl6eqss
-      wss wn c0 riotaund 0ss pm2.61i ) ABCDZABCEZCFZGZUDHZPUBUCABCIZFZUFABCJUHU
-      DUFUGCABCKLUDUEMNOUBQUCRUFABCSUFTOUA $.
-
-    $( Bidirectional closure of restricted iota when domain is not empty.
-       (Contributed by NM, 28-Feb-2013.)  (Revised by Mario Carneiro,
-       24-Dec-2016.)  (Revised by NM, 13-Sep-2018.) $)
-    riotaclb $p |- ( -. (/) e. A
-          -> ( E! x e. A ph <-> ( iota_ x e. A ph ) e. A ) ) $=
-      ( c0 wcel wreu crio riotacl riotaund eleq1d notbid biimprcd con4d impbid2
-      wn ) DCEZOZABCFZABCGZCEZABCHQRTROZTOQUATPUASDCABCIJKLMN $.
   $}
 
 
