@@ -1,4 +1,4 @@
-$( iset.mm - Version of 11-Jan-2019
+$( iset.mm - Version of 12-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -47906,6 +47906,404 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      Restricted iota (description binder)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c iota_ $.
+
+  $( Extend class notation with restricted description binder. $)
+  crio $a class ( iota_ x e. A ph ) $.
+
+  $( Define restricted description binder.  In case there is no unique ` x `
+     such that ` ( x e. A /\ ph ) ` holds, it evaluates to the empty set.  See
+     also comments for ~ df-iota .  (Contributed by NM, 15-Sep-2011.)  (Revised
+     by Mario Carneiro, 15-Oct-2016.)  (Revised by NM, 2-Sep-2018.) $)
+  df-riota $a |- ( iota_ x e. A ph ) = ( iota x ( x e. A /\ ph ) ) $.
+
+  ${
+    $d x ph $.
+    riotaeqdv.1 $e |- ( ph -> A = B ) $.
+    $( Formula-building deduction rule for iota.  (Contributed by NM,
+       15-Sep-2011.) $)
+    riotaeqdv $p |- ( ph -> ( iota_ x e. A ps ) = ( iota_ x e. B ps ) ) $=
+      ( cv wcel wa cio crio eleq2d anbi1d iotabidv df-riota 3eqtr4g ) ACGZDHZBI
+      ZCJQEHZBIZCJBCDKBCEKASUACARTBADEQFLMNBCDOBCEOP $.
+  $}
+
+  ${
+    $d x ph $.
+    riotabidv.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Formula-building deduction rule for restricted iota.  (Contributed by
+       NM, 15-Sep-2011.) $)
+    riotabidv $p |- ( ph -> ( iota_ x e. A ps ) = ( iota_ x e. A ch ) ) $=
+      ( cv wcel wa cio crio biidd anbi12d iotabidv df-riota 3eqtr4g ) ADGEHZBIZ
+      DJQCIZDJBDEKCDEKARSDAQQBCAQLFMNBDEOCDEOP $.
+  $}
+
+  ${
+    $d x ph $.
+    riotaeqbidv.1 $e |- ( ph -> A = B ) $.
+    riotaeqbidv.2 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equality deduction for restricted universal quantifier.  (Contributed by
+       NM, 15-Sep-2011.) $)
+    riotaeqbidv $p |- ( ph -> ( iota_ x e. A ps ) = ( iota_ x e. B ch ) ) $=
+      ( crio riotabidv riotaeqdv eqtrd ) ABDEICDEICDFIABCDEHJACDEFGKL $.
+  $}
+
+  $( Restricted iota is a set.  (Contributed by Jim Kingdon, 12-Jan-2019.) $)
+  reuiotaex $p |- ( E! x e. A ps -> ( iota_ x e. A ps ) e. _V ) $=
+    ( wreu crio cv wcel wa cio cvv df-riota weu df-reu euiotaex sylbi
+    syl5eqel ) ABCDZABCEBFCGAHZBIZJABCKQRBLSJGABCMRBNOP $.
+
+  $( An iota restricted to the universe is unrestricted.  (Contributed by NM,
+     18-Sep-2011.) $)
+  riotav $p |- ( iota_ x e. _V ph ) = ( iota x ph ) $=
+    ( cvv crio cv wcel wa cio df-riota vex biantrur iotabii eqtr4i ) ABCDBECFZA
+    GZBHABHABCIAOBNABJKLM $.
+
+  $( Restricted iota in terms of iota.  (Contributed by NM, 15-Sep-2011.)
+     Obsolete as of 2-Sep-2019.  Use ~ df-riota instead.
+     (New usage is discouraged.) $)
+  riotaiotaOLD $p |- ( E! x e. A ph
+         -> ( iota_ x e. A ph ) = ( iota x ( x e. A /\ ph ) ) ) $=
+    ( crio cv wcel wa cio wceq wreu df-riota a1i ) ABCDBECFAGBHIABCJABCKL $.
+
+  $( Restricted iota in terms of class union.  (Contributed by NM,
+     11-Oct-2011.) $)
+  riotauni $p |- ( E! x e. A ph
+                    -> ( iota_ x e. A ph ) = U. { x e. A | ph } ) $=
+    ( wreu cv wcel wa cio cab cuni crio crab wceq df-reu iotauni sylbi df-riota
+    weu df-rab unieqi 3eqtr4g ) ABCDZBECFAGZBHZUCBIZJZABCKABCLZJUBUCBRUDUFMABCN
+    UCBOPABCQUGUEABCSTUA $.
+
+  ${
+    $d x y A $.  $d y ph $.
+    $( The abstraction variable in a restricted iota descriptor isn't free.
+       (Contributed by NM, 12-Oct-2011.)  (Revised by Mario Carneiro,
+       15-Oct-2016.) $)
+    nfriota1 $p |- F/_ x ( iota_ x e. A ph ) $=
+      ( crio cv wcel wa cio df-riota nfiota1 nfcxfr ) BABCDBECFAGZBHABCILBJK $.
+  $}
+
+  ${
+    $d x y $.
+    nfriotadxy.1 $e |- F/ y ph $.
+    nfriotadxy.2 $e |- ( ph -> F/ x ps ) $.
+    nfriotadxy.3 $e |- ( ph -> F/_ x A ) $.
+    $( Deduction version of ~ nfriota .  (Contributed by Jim Kingdon,
+       12-Jan-2019.) $)
+    nfriotadxy $p |- ( ph -> F/_ x ( iota_ y e. A ps ) ) $=
+      ( crio cv wcel cio df-riota wnfc nfcv a1i nfeld nfand nfiotadxy
+      wa nfcxfrd ) ACBDEIDJZEKZBTZDLBDEMAUDCDFAUCBCACUBECUBNACUBOPHQG
+      RSUA $.
+  $}
+
+  ${
+    $d x y z $.  $d z A $.  $d z ph $.
+    nfriota.1 $e |- F/ x ph $.
+    nfriota.2 $e |- F/_ x A $.
+    $( A variable not free in a wff remains so in a restricted iota
+       descriptor.  (Contributed by NM, 12-Oct-2011.) $)
+    nfriota $p |- F/_ x ( iota_ y e. A ph ) $=
+      ( crio wnfc wtru nftru wnf a1i nfriotadxy trud ) BACDGHIABCDCJABKIELBDHIF
+      LMN $.
+  $}
+
+  ${
+    $d x z A $.  $d y z A $.  $d z ph $.  $d z ps $.
+    cbvriota.1 $e |- F/ y ph $.
+    cbvriota.2 $e |- F/ x ps $.
+    cbvriota.3 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Change bound variable in a restricted description binder.  (Contributed
+       by NM, 18-Mar-2013.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
+    cbvriota $p |- ( iota_ x e. A ph ) = ( iota_ y e. A ps ) $=
+      ( vz cv wcel wa cio crio wsb weq eleq1 anbi12d nfv nfan nfs1v sbie syl6bb
+      sbequ12 cbviota sbequ nfsb eqtri df-riota 3eqtr4i ) CJZEKZALZCMZDJZEKZBLZ
+      DMZACENBDENUNIJZEKZACIOZLZIMURUMVBCICIPULUTAVAUKUSEQACIUDRUMISUTVACUTCSAC
+      IUATUEVBUQIDIDPZUTUPVABUSUOEQVCVAACDOBAIDCUFABCDGHUBUCRUTVADUTDSACIDFUGTU
+      QISUEUHACEUIBDEUIUJ $.
+  $}
+
+  ${
+    $d x A $.  $d y A $.  $d y ph $.  $d x ps $.
+    cbvriotav.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Change bound variable in a restricted description binder.  (Contributed
+       by NM, 18-Mar-2013.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
+    cbvriotav $p |- ( iota_ x e. A ph ) = ( iota_ y e. A ps ) $=
+      ( nfv cbvriota ) ABCDEADGBCGFH $.
+  $}
+
+  ${
+    $d y z A $.  $d x z w B $.  $d w z ph $.  $d w x y $.
+    $( Interchange class substitution and restricted description binder.
+       (Contributed by NM, 24-Feb-2013.) $)
+    csbriotag $p |- ( A e. V
+      -> [_ A / x ]_ ( iota_ y e. B ph ) = ( iota_ y e. B [. A / x ]. ph ) ) $=
+      ( vz cv crio csb wsb wceq wsbc csbeq1 dfsbcq2 riotabidv eqeq12d vex nfs1v
+      nfcv nfriota weq sbequ12 csbief vtoclg ) BGHZACEIZJZABGKZCEIZLBDUGJZABDMZ
+      CEIZLGDFUFDLZUHUKUJUMBUFDUGNUNUIULCEABGDOPQBUFUGUJGRUIBCEABGSBETUABGUBAUI
+      CEABGUCPUDUE $.
+  $}
+
+  $( Membership law for "the unique element in ` A ` such that ` ph ` ."
+
+     (Contributed by NM, 21-Aug-2011.)  (Revised by Mario Carneiro,
+     23-Dec-2016.) $)
+  riotacl2 $p |- ( E! x e. A ph -> ( iota_ x e. A ph ) e. { x e. A | ph } ) $=
+    ( wreu cv wcel wa cio cab crio crab weu df-reu iotacl sylbi df-riota df-rab
+    3eltr4g ) ABCDZBECFAGZBHZTBIZABCJABCKSTBLUAUBFABCMTBNOABCPABCQR $.
+
+  ${
+    $d x A $.
+    $( Closure of restricted iota.  (Contributed by NM, 21-Aug-2011.) $)
+    riotacl $p |- ( E! x e. A ph -> ( iota_ x e. A ph ) e. A ) $=
+      ( wreu crab crio ssrab2 riotacl2 sseldi ) ABCDABCECABCFABCGABCHI $.
+  $}
+
+  $( Substitution law for descriptions.  (Contributed by NM, 23-Aug-2011.)
+     (Proof shortened by Mario Carneiro, 24-Dec-2016.) $)
+  riotasbc $p |- ( E! x e. A ph -> [. ( iota_ x e. A ph ) / x ]. ph ) $=
+    ( wreu crio cab wcel wsbc crab rabssab riotacl2 sseldi df-sbc sylibr ) ABCD
+    ZABCEZABFZGABPHOABCIQPABCJABCKLABPMN $.
+
+  ${
+    $d x ph $.
+    riotabidva.1 $e |- ( ( ph /\ x e. A ) -> ( ps <-> ch ) ) $.
+    $( Equivalent wff's yield equal restricted class abstractions (deduction
+       rule).  ( ~ rabbidva analog.)  (Contributed by NM, 17-Jan-2012.) $)
+    riotabidva $p |- ( ph -> ( iota_ x e. A ps ) = ( iota_ x e. A ch ) ) $=
+      ( cv wcel wa cio crio pm5.32da iotabidv df-riota 3eqtr4g ) ADGEHZBIZDJPCI
+      ZDJBDEKCDEKAQRDAPBCFLMBDENCDENO $.
+  $}
+
+  ${
+    riotabiia.1 $e |- ( x e. A -> ( ph <-> ps ) ) $.
+    $( Equivalent wff's yield equal restricted iotas (inference rule).
+       ( ~ rabbiia analog.)  (Contributed by NM, 16-Jan-2012.) $)
+    riotabiia $p |- ( iota_ x e. A ph ) = ( iota_ x e. A ps ) $=
+      ( cvv wceq crio eqid cv wcel wb adantl riotabidva ax-mp ) FFGZACDHBCDHGFI
+      PABCDCJDKABLPEMNO $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Property of restricted iota.  Compare ~ iota1 .  (Contributed by Mario
+       Carneiro, 15-Oct-2016.) $)
+    riota1 $p |- ( E! x e. A ph ->
+      ( ( x e. A /\ ph ) <-> ( iota_ x e. A ph ) = x ) ) $=
+      ( wreu cv wcel wa cio wceq crio weu wb df-reu iota1 sylbi df-riota eqeq1i
+      syl6bbr ) ABCDZBEZCFAGZUABHZTIZABCJZTISUABKUAUCLABCMUABNOUDUBTABCPQR $.
+  $}
+
+  $( Property of iota.  (Contributed by NM, 23-Aug-2011.) $)
+  riota1a $p |- ( ( x e. A /\ E! x e. A ph ) ->
+          ( ph <-> ( iota x ( x e. A /\ ph ) ) = x ) ) $=
+    ( cv wcel wa wreu cio wceq ibar weu wb df-reu iota1 sylbi sylan9bb ) BDZCEZ
+    ARAFZABCGZSBHQIZRAJTSBKSUALABCMSBNOP $.
+
+  ${
+    $d x A $.
+    riota2df.1 $e |- F/ x ph $.
+    riota2df.2 $e |- ( ph -> F/_ x B ) $.
+    riota2df.3 $e |- ( ph -> F/ x ch ) $.
+    riota2df.4 $e |- ( ph -> B e. A ) $.
+    riota2df.5 $e |- ( ( ph /\ x = B ) -> ( ps <-> ch ) ) $.
+    $( A deduction version of ~ riota2f .  (Contributed by NM, 17-Feb-2013.)
+       (Revised by Mario Carneiro, 15-Oct-2016.) $)
+    riota2df $p |- ( ( ph /\ E! x e. A ps ) ->
+            ( ch <-> ( iota_ x e. A ps ) = B ) ) $=
+      ( wreu wa cv wcel cio wceq crio adantr simpr weu df-reu eqeltrd biantrurd
+      sylib adantlr bitr3d nfreu1 nfan wnf wnfc iota2df df-riota eqeq1i syl6bbr
+      wb ) ABDELZMZCDNZEOZBMZDPZFQBDERZFQURVACDFEAFEOZUQJSZURUQVADUAAUQTBDEUBUE
+      URUSFQZMZBVACVGUTBVGUSFEURVFTURVDVFVESUCUDAVFBCUPUQKUFUGAUQDGBDEUHUIACDUJ
+      UQISADFUKUQHSULVCVBFBDEUMUNUO $.
+  $}
+
+  ${
+    $d y ph $.  $d x y A $.  $d y B $.
+    riota2f.1 $e |- F/_ x B $.
+    riota2f.2 $e |- F/ x ps $.
+    riota2f.3 $e |- ( x = B -> ( ph <-> ps ) ) $.
+    $( This theorem shows a condition that allows us to represent a descriptor
+       with a class expression ` B ` .  (Contributed by NM, 23-Aug-2011.)
+       (Revised by Mario Carneiro, 15-Oct-2016.) $)
+    riota2f $p |- ( ( B e. A /\ E! x e. A ph ) ->
+            ( ps <-> ( iota_ x e. A ph ) = B ) ) $=
+      ( wcel nfel1 wnfc a1i wnf id cv wceq wb adantl riota2df ) EDIZABCDECEDFJC
+      EKTFLBCMTGLTNCOEPABQTHRS $.
+  $}
+
+  ${
+    $d x ps $.  $d x A $.  $d x B $.
+    riota2.1 $e |- ( x = B -> ( ph <-> ps ) ) $.
+    $( This theorem shows a condition that allows us to represent a descriptor
+       with a class expression ` B ` .  (Contributed by NM, 23-Aug-2011.)
+       (Revised by Mario Carneiro, 10-Dec-2016.) $)
+    riota2 $p |- ( ( B e. A /\ E! x e. A ph ) ->
+            ( ps <-> ( iota_ x e. A ph ) = B ) ) $=
+      ( nfcv nfv riota2f ) ABCDECEGBCHFI $.
+  $}
+
+  ${
+    $d y ph $.  $d x y A $.  $d y B $.
+    riotaprop.0 $e |- F/ x ps $.
+    riotaprop.1 $e |- B = ( iota_ x e. A ph ) $.
+    riotaprop.2 $e |- ( x = B -> ( ph <-> ps ) ) $.
+    $( Properties of a restricted definite description operator.  Todo
+       ( ~ df-riota update): can some uses of ~ riota2f be shortened with
+       this?  (Contributed by NM, 23-Nov-2013.) $)
+    riotaprop $p |- ( E! x e. A ph -> ( B e. A /\ ps ) ) $=
+      ( wreu wcel crio riotacl syl5eqel wa wceq eqcomi nfriota1 nfcxfr riota2f
+      mpbiri mpancom jca ) ACDIZEDJZBUCEACDKZDGACDLMZUDUCBUFUDUCNBUEEOEUEGPABCD
+      ECEUEGACDQRFHSTUAUB $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.  $d x y ph $.  $d y ps $.
+    riota5f.1 $e |- ( ph -> F/_ x B ) $.
+    riota5f.2 $e |- ( ph -> B e. A ) $.
+    riota5f.3 $e |- ( ( ph /\ x e. A ) -> ( ps <-> x = B ) ) $.
+    $( A method for computing restricted iota.  (Contributed by NM,
+       16-Apr-2013.)  (Revised by Mario Carneiro, 15-Oct-2016.) $)
+    riota5f $p |- ( ph -> ( iota_ x e. A ps ) = B ) $=
+      ( vy cv wceq wb wral ralrimiva wi wcel wa wtru a1tru nfv crio wsbc adantl
+      wreu reu6i nfra1 nfan nfcvd nfvd simprl simpr simplrr simplrl eqeltrd rsp
+      sylc mpbird 2thd mpdan mpbid expr rspsbc nfeqd nfan1 eqeq2d bibi2d ralbid
+      riota2df imbi12d sbcied mpd ) ABCJZEKZLZCDMZBCDUAZEKZAVNCDHNABVLIJZKZLZCD
+      MZVPVRKZOZIEUBZVOVQOZAEDPWCIDMWDGAWCIDAVRDPZWAWBAWFWAQZQZRWBWHSWHBCDUDZRW
+      BLWGWIABCDVRUEUCWHBRCDVRAWGCACTZWFWACWFCTVTCDUFUGUGWHCVRUHWHRCUIAWFWAUJWH
+      VSQZBRWKBVSWHVSUKZWKWAVLDPVTAWFWAVSULWKVLVRDWLAWFWAVSUMUNVTCDUOUPUQWKSURV
+      HUSUTVANWCIEDVBUPAWCWEIEDGAVREKZQZWAVOWBVQWNVTVNCDAWMCWJACVREACVRUHFVCVDW
+      NVSVMBWNVREVLAWMUKZVEVFVGWNVREVPWOVEVIVJUTVK $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ph $.
+    riota5.1 $e |- ( ph -> B e. A ) $.
+    riota5.2 $e |- ( ( ph /\ x e. A ) -> ( ps <-> x = B ) ) $.
+    $( A method for computing restricted iota.  (Contributed by NM,
+       20-Oct-2011.)  (Revised by Mario Carneiro, 6-Dec-2016.) $)
+    riota5 $p |- ( ph -> ( iota_ x e. A ps ) = B ) $=
+      ( nfcvd riota5f ) ABCDEACEHFGI $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Restriction of a unique element to a smaller class.  (Contributed by NM,
+       21-Aug-2011.)  (Revised by NM, 22-Mar-2013.) $)
+    riotass2 $p |- ( ( ( A C_ B /\ A. x e. A ( ph -> ps ) )
+           /\ ( E. x e. A ph /\ E! x e. B ps ) )
+         -> ( iota_ x e. A ph ) = ( iota_ x e. B ps ) ) $=
+      ( wi wral wa wrex wreu crio wsbc wceq reuss2 simplr riotasbc wcel riotacl
+      wss syl rspsbc sbcimg sylibd mpid sylc wb ssel ad2antrr mpd simprr nfsbc1
+      nfriota1 sbceq1a riota2f syl2anc mpbid eqcomd ) DESZABFZCDGZHZACDIZBCEJZH
+      ZHZBCEKZACDKZVEBCVGLZVFVGMZVEACDJZUTVHABCDENZURUTVDOVJUTACVGLZVHACDPVJVGD
+      QZUTVLVHFZFACDRZVMUTUSCVGLVNUSCVGDUAABCVGDUBUCTUDUEVEVGEQZVCVHVIUFVEVMVPV
+      EVJVMVKVOTURVMVPFUTVDDEVGUGUHUIVAVBVCUJBVHCEVGACDULZBCVGVQUKBCVGUMUNUOUPU
+      Q $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y ph $.
+    $( Restriction of a unique element to a smaller class.  (Contributed by NM,
+       19-Oct-2005.)  (Revised by Mario Carneiro, 24-Dec-2016.) $)
+    riotass $p |- ( ( A C_ B /\ E. x e. A ph /\ E! x e. B ph ) ->
+                ( iota_ x e. A ph ) = ( iota_ x e. B ph ) ) $=
+      ( wss wrex wreu w3a crio wsbc wceq reuss riotasbc syl wcel riotacl sseldd
+      wb simp1 simp3 nfriota1 nfsbc1 sbceq1a riota2f syl2anc mpbid eqcomd ) CDE
+      ZABCFZABDGZHZABDIZABCIZUKABUMJZULUMKZUKABCGZUNABCDLZABCMNUKUMDOUJUNUORUKC
+      DUMUHUIUJSUKUPUMCOUQABCPNQUHUIUJTAUNBDUMABCUAZABUMURUBABUMUCUDUEUFUG $.
+
+    $( Restriction of a unique element to a smaller class.  (Contributed by NM,
+       19-Feb-2006.)  (Revised by NM, 16-Jun-2017.) $)
+    moriotass $p |- ( ( A C_ B /\ E. x e. A ph /\ E* x e. B ph ) ->
+                ( iota_ x e. A ph ) = ( iota_ x e. B ph ) ) $=
+      ( wss wrex wrmo wreu crio wceq w3a ssrexv imp 3adant3 simp3 reu5 sylanbrc
+      riotass syld3an3 ) CDEZABCFZABDGZABDHZABCIABDIJTUAUBKABDFZUBUCTUAUDUBTUAU
+      DABCDLMNTUAUBOABDPQABCDRS $.
+  $}
+
+  ${
+    $d y A $.  $d y ph $.  $d x y $.
+    $( A restricted class abstraction with a unique member can be expressed as
+       a singleton.  (Contributed by NM, 30-May-2006.) $)
+    snriota $p |- ( E! x e. A ph ->
+                   { x e. A | ph } = { ( iota_ x e. A ph ) } ) $=
+      ( wreu cv wcel wa cab cio csn crab crio wceq df-reu sniota sylbi df-riota
+      weu df-rab sneqi 3eqtr4g ) ABCDZBECFAGZBHZUCBIZJZABCKABCLZJUBUCBRUDUFMABC
+      NUCBOPABCSUGUEABCQTUA $.
+  $}
+
+  ${
+    $d x y z A $.  $d x z B $.
+    eusvobj1.1 $e |- B e. _V $.
+    $( Specify the same property in two ways when class ` B ( y ) ` is
+       single-valued.  (Contributed by NM, 1-Nov-2010.)  (Proof shortened by
+       Mario Carneiro, 24-Dec-2016.) $)
+    eusvobj2 $p |- ( E! x E. y e. A x = B
+       -> ( E. y e. A x = B <-> A. y e. A x = B ) ) $=
+      ( vz cv wceq wrex weu wral cab csn wex wi euabsn2 eleq2 exlimiv
+      wcel abid 3bitr3g nfre1 nfeq1 elabrex elsnc eqcom syl6bb syl5ib
+      elsn nfab bitri ralrimi eqeq1 syl5ibrcom sylbid sylbi euex rexm
+      ralbidv r19.2m ex 3syl impbid ) AGZDHZBCIZAJZVFVEBCKZVGVFALZFGZ
+      MZHZFNVFVHOZVFAFPVLVMFVLVFVDVJHZVHVLVDVISVDVKSVFVNVIVKVDQVFATAV
+      JUIUAVLVHVNVJDHZBCKVLVOBCBVIVKVFBAVEBCUBUJUCBGCSZDVISZVLVOBACDE
+      UDVLVQDVKSZVOVIVKDQVRDVJHVODVJEUEDVJUFUKUGUHULVNVEVOBCVDVJDUMUS
+      UNUORUPVGVFANVPBNZVHVFOVFAUQVFVSAVEBCURRVSVHVFVEBCUTVAVBVC $.
+
+    $( Specify the same object in two ways when class ` B ( y ) ` is
+       single-valued.  (Contributed by NM, 1-Nov-2010.)  (Proof shortened by
+       Mario Carneiro, 19-Nov-2016.) $)
+    eusvobj1 $p |- ( E! x E. y e. A x = B
+       -> ( iota x E. y e. A x = B ) = ( iota x A. y e. A x = B ) ) $=
+      ( cv wceq wrex weu wral wb wal cio nfeu1 eusvobj2 alrimi iotabi syl ) AFD
+      GZBCHZAIZTSBCJZKZALTAMUBAMGUAUCATANABCDEOPTUBAQR $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.  $d x F $.
+    $( There is one domain element for each value of a one-to-one onto
+       function.  (Contributed by NM, 26-May-2006.) $)
+    f1ofveu $p |- ( ( F : A -1-1-onto-> B /\ C e. B ) ->
+                  E! x e. A ( F ` x ) = C ) $=
+      ( wf1o wcel wa cv cfv wceq wreu cop ccnv wf f1ocnv f1of syl wb wfn 3com23
+      feu sylan f1ocnvfvb dff1o4 simprbi fnopfvb 3adant3 syl3an1 bitrd reubidva
+      w3a 3expa mpbird ) BCEFZDCGZHZAIZEJDKZABLDURMENZGZABLZUOCBUTOZUPVBUOCBUTF
+      VCBCEPCBUTQRACBDUTUBUCUQUSVAABUOUPURBGZUSVASUOUPVDULUSDUTJURKZVAUOVDUPUSV
+      ESBCURDEUDUAUOUTCTZUPVDVEVASZUOEBTVFBCEUEUFVFUPVGVDCDURUTUGUHUIUJUMUKUN
+      $.
+
+    $( Value of the converse of a one-to-one onto function.  (Contributed by
+       NM, 26-May-2006.)  (Proof shortened by Mario Carneiro, 24-Dec-2016.) $)
+    f1ocnvfv3 $p |- ( ( F : A -1-1-onto-> B /\ C e. B ) ->
+                  ( `' F ` C ) = ( iota_ x e. A ( F ` x ) = C ) ) $=
+      ( wf1o wcel wa cv cfv wceq crio ccnv f1ocnvdm f1ocnvfvb 3expa an32s eqcom
+      wb syl6bbr riota5 eqcomd ) BCEFZDCGZHZAIZEJDKZABLDEMJZUEUGABUHBCDENUEUFBG
+      ZHUGUHUFKZUFUHKUCUIUDUGUJSZUCUIUDUKBCUFDEOPQUFUHRTUAUB $.
+  $}
+
+  ${
+    $d x A $.
+    $( Restricted iota equals the empty set when not meaningful.  (Contributed
+       by NM, 16-Jan-2012.)  (Revised by Mario Carneiro, 15-Oct-2016.)
+       (Revised by NM, 13-Sep-2018.) $)
+    riotaund $p |- ( -. E! x e. A ph -> ( iota_ x e. A ph ) = (/) ) $=
+      ( wreu wn crio cv wcel cio df-riota weu wceq df-reu iotanul sylnbi syl5eq
+      wa c0 ) ABCDZEABCFBGCHAQZBIZRABCJSTBKUARLABCMTBNOP $.
+
+    $( For proper classes, restricted and unrestricted iota are the same.
+       (Contributed by NM, 15-Sep-2011.)  Obsolete as of 2-Sep-2018.  Use
+       ~ df-riota instead.  (New usage is discouraged.) $)
+    riotaprcOLD $p |- ( -. A e. _V
+           -> ( iota_ x e. A ph ) = ( iota x ( x e. A /\ ph ) ) ) $=
+      ( crio cv wcel wa cio wceq cvv wn df-riota a1i ) ABCDBECFAGBHICJFKABCLM
+      $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -48685,6 +49083,11 @@ htmldef "Isom" as
     " <IMG SRC='_isom.gif' WIDTH=30 HEIGHT=19 ALT=' Isom' TITLE='Isom'> ";
   althtmldef "Isom" as ' Isom ';
   latexdef "Isom" as "{\rm Isom}";
+htmldef "iota_" as
+    "<IMG SRC='_riotabar.gif' WIDTH=6 HEIGHT=19 ALT=' iota_' TITLE='iota_'>";
+  althtmldef "iota_" as '<U>&#8489;</U>';
+  latexdef "iota_" as
+      "\underline{\mathrm{\rotatebox[origin=C]{180}{$\iota$}}}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
