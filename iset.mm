@@ -49096,19 +49096,6 @@ $)
   $}
 
   ${
-    elimdelov.1 $e |- ( ph -> C e. ( A F B ) ) $.
-    elimdelov.2 $e |- Z e. ( X F Y ) $.
-    $( Eliminate a hypothesis which is a predicate expressing membership in the
-       result of an operator (deduction version).  See ~ ghomgrplem for an
-       example of its use.  (Contributed by Paul Chapman, 25-Mar-2008.) $)
-    elimdelov $p |- if ( ph , C , Z ) e.
-                     ( if ( ph , A , X ) F if ( ph , B , Y ) ) $=
-      ( cif co wcel iftrue oveq12d 3eltr4d wn iffalse syl6eqel eleqtrrd pm2.61i
-      ) AADHKZABFKZACGKZELZMADBCELUBUEIADHNAUCBUDCEABFNACGNOPAQZUBFGELZUEUFUBHU
-      GADHRJSUFUCFUDGEABFRACGROTUA $.
-  $}
-
-  ${
     $d x z w $.  $d y z w $.  $d w ph $.
     $( The domain of an operation class abstraction.  (Contributed by NM,
        17-Mar-1995.)  (Revised by David Abernethy, 19-Jun-2012.) $)
