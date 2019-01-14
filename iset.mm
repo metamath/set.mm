@@ -48244,13 +48244,14 @@ $)
        Mario Carneiro, 24-Dec-2016.) $)
     eusvobj2 $p |- ( E! x E. y e. A x = B
        -> ( E. y e. A x = B <-> A. y e. A x = B ) ) $=
-      ( vz cv wceq wrex weu wral cab csn wex wi euabsn2 wcel eleq2 abid exlimiv
-      3bitr3g nfre1 nfeq1 elabrex elsnc eqcom bitri syl6bb syl5ib ralrimi eqeq1
-      elsn nfab ralbidv syl5ibrcom sylbid sylbi c0 wne euex rexn0 r19.2z impbid
-      ex 3syl ) AGZDHZBCIZAJZVHVGBCKZVIVHALZFGZMZHZFNVHVJOZVHAFPVNVOFVNVHVFVLHZ
-      VJVNVFVKQVFVMQVHVPVKVMVFRVHASAVLULUAVNVJVPVLDHZBCKVNVQBCBVKVMVHBAVGBCUBUM
-      UCBGCQDVKQZVNVQBACDEUDVNVRDVMQZVQVKVMDRVSDVLHVQDVLEUEDVLUFUGUHUIUJVPVGVQB
-      CVFVLDUKUNUOUPTUQVIVHANCURUSZVJVHOVHAUTVHVTAVGBCVATVTVJVHVGBCVBVDVEVC $.
+      ( vz cv wceq wrex weu wral cab csn wex wi euabsn2 eleq2 exlimiv
+      wcel abid 3bitr3g nfre1 nfeq1 elabrex elsnc eqcom syl6bb syl5ib
+      elsn nfab bitri ralrimi eqeq1 syl5ibrcom sylbid sylbi euex rexm
+      ralbidv r19.2m ex 3syl impbid ) AGZDHZBCIZAJZVFVEBCKZVGVFALZFGZ
+      MZHZFNVFVHOZVFAFPVLVMFVLVFVDVJHZVHVLVDVISVDVKSVFVNVIVKVDQVFATAV
+      JUIUAVLVHVNVJDHZBCKVLVOBCBVIVKVFBAVEBCUBUJUCBGCSZDVISZVLVOBACDE
+      UDVLVQDVKSZVOVIVKDQVRDVJHVODVJEUEDVJUFUKUGUHULVNVEVOBCVDVJDUMUS
+      UNUORUPVGVFANVPBNZVHVFOVFAUQVFVSAVEBCURRVSVHVFVEBCUTVAVBVC $.
 
     $( Specify the same object in two ways when class ` B ( y ) ` is
        single-valued.  (Contributed by NM, 1-Nov-2010.)  (Proof shortened by
