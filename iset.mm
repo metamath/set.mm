@@ -48062,8 +48062,8 @@ $)
       ( wreu crab crio ssrab2 riotacl2 sseldi ) ABCDABCECABCFABCGABCHI $.
   $}
 
-  $( Substitution law for descriptions.  Compare ~ iotasbc .  (Contributed by
-     NM, 23-Aug-2011.)  (Proof shortened by Mario Carneiro, 24-Dec-2016.) $)
+  $( Substitution law for descriptions.  (Contributed by NM, 23-Aug-2011.)
+     (Proof shortened by Mario Carneiro, 24-Dec-2016.) $)
   riotasbc $p |- ( E! x e. A ph -> [. ( iota_ x e. A ph ) / x ]. ph ) $=
     ( wreu crio cab wcel wsbc crab rabssab riotacl2 sseldi df-sbc sylibr ) ABCD
     ZABCEZABFZGABPHOABCIQPABCJABCKLABPMN $.
