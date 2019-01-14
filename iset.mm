@@ -48310,12 +48310,11 @@ $(
 $)
 
   $( Extend class notation to include the value of an operation ` F ` (such as
-     ` + ` ) for two arguments ` A ` and ` B ` .  Note that the syntax is
-     simply three class symbols in a row surrounded by parentheses.  Since
-     operation values are the only possible class expressions consisting of
-     three class expressions in a row surrounded by parentheses, the syntax is
-     unambiguous.  (For an example of how syntax could become ambiguous if we
-     are not careful, see the comment in ~ cneg .) $)
+     + ) for two arguments ` A ` and ` B ` .  Note that the syntax is simply
+     three class symbols in a row surrounded by parentheses.  Since operation
+     values are the only possible class expressions consisting of three class
+     expressions in a row surrounded by parentheses, the syntax is
+     unambiguous. $)
   co $a class ( A F B ) $.
 
   $( Extend class notation to include class abstraction (class builder) of
@@ -48332,14 +48331,13 @@ $)
      on what those class expressions may be, although only certain kinds of
      class expressions - a binary operation ` F ` and its arguments ` A ` and
      ` B ` - will be useful for proving meaningful theorems.  For example, if
-     class ` F ` is the operation ` + ` and arguments ` A ` and ` B ` are ` 3 `
-     and ` 2 ` , the expression ` ( 3 + 2 ) ` can be proved to equal ` 5 ` (see
-     ~ 3p2e5 ).  This definition is well-defined, although not very meaningful,
-     when classes ` A ` and/or ` B ` are proper classes (i.e. are not sets);
-     see ~ ovprc1 and ~ ovprc2 .  On the other hand, we often find uses for
-     this definition when ` F ` is a proper class, such as ` +o ` in ~ oav .
-     ` F ` is normally equal to a class of nested ordered pairs of the form
-     defined by ~ df-oprab .  (Contributed by NM, 28-Feb-1995.) $)
+     class ` F ` is the operation + and arguments ` A ` and ` B ` are 3 and 2 ,
+     the expression ( 3 + 2 ) can be proved to equal 5 .  This definition is
+     well-defined, although not very meaningful, when classes ` A ` and/or
+     ` B ` are proper classes (i.e. are not sets); see ~ ovprc1 and ~ ovprc2 .
+     On the other hand, we often find uses for this definition when ` F ` is a
+     proper class. ` F ` is normally equal to a class of nested ordered pairs
+     of the form defined by ~ df-oprab .  (Contributed by NM, 28-Feb-1995.) $)
   df-ov $a |- ( A F B ) = ( F ` <. A , B >. ) $.
 
   ${
