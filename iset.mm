@@ -12965,13 +12965,12 @@ $)
     UFKBBCDLMZNUDUHBCUAUBUFAUJOPQABDSACDSR $.
 
   ${
-    exdistrf.1 $e |- ( A. x x = y \/ A. x F/ y ph ) $.
+    exdistrfor.1 $e |- ( A. x x = y \/ A. x F/ y ph ) $.
     $( Distribution of existential quantifiers, with a bound-variable
        hypothesis saying that ` y ` is not free in ` ph ` , but ` x ` can be
        free in ` ph ` (and there is no distinct variable condition on ` x ` and
-       ` y ` ).  (Contributed by Mario Carneiro, 20-Mar-2013.)  (Hypothesis and
-       proof modified for intuitionistic logic by Jim Kingdon, 25-Feb-2018.) $)
-    exdistrf $p |- ( E. x E. y ( ph /\ ps ) -> E. x ( ph /\ E. y ps ) ) $=
+       ` y ` ).  (Contributed by Jim Kingdon, 25-Feb-2018.) $)
+    exdistrfor $p |- ( E. x E. y ( ph /\ ps ) -> E. x ( ph /\ E. y ps ) ) $=
       ( weq wal wnf wo wa wex wi biidd drex1 drex2 hbe1 19.9h 19.8a anim2i eximi
       sylbi syl6bir ax-ial 19.40 19.9t biimpd anim1d syl5 sps eximdh jaoi ax-mp
       ) CDFCGZADHZCGZIABJZDKZCKZABDKZJZCKZLZEUMVBUOUMURUPCKZCKZVAVCUQCDCUPUPCDU
