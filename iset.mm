@@ -48579,39 +48579,11 @@ $)
   $}
 
   ${
-    $d y A $.  $d y B $.  $d y C $.  $d y F $.  $d x y $.
-    $( Move class substitution in and out of an operation.  (Contributed by NM,
-       12-Nov-2005.)  (Revised by NM, 23-Aug-2018.) $)
-    csbov123 $p |- [_ A / x ]_ ( B F C ) =
-           ( [_ A / x ]_ B [_ A / x ]_ F [_ A / x ]_ C ) $=
-      ( vy cvv wcel co csb wceq csbeq1 oveq123d nfcsb1v csbeq1a c0 csbprc eqtrd
-      cfv a1i cv eqeq12d vex nfov weq csbief vtoclg cop df-ov eqid eqtri fveq1d
-      wn 0fv eqcomd pm2.61i ) BGHZABCDEIZJZABCJZABDJZABEJZIZKZAFUAZURJZAVECJZAV
-      EDJZAVEEJZIZKVDFBGVEBKZVFUSVJVCAVEBURLVKVGUTVHVAVIVBAVEBELAVEBCLAVEBDLMUB
-      AVEURVJFUCAVGVHVIAVECNAVEENAVEDNUDAFUECVGDVHEVIAVEEOAVECOAVEDOMUFUGUQUMZU
-      SPVCABURQVLVCPVLVCUTVAUHZVBSZPVCVNKVLVCVNVNUTVAVBUIVNUJUKTVLVNVMPSZPVLVMV
-      BPABEQULVOPKVLVMUNTRRUORUP $.
-  $}
-
-  ${
-    $d x B $.  $d x C $.
-    $( Move class substitution in and out of an operation.  (Contributed by NM,
-       23-Aug-2018.) $)
-    csbov $p |- [_ A / x ]_ ( B F C ) = ( B [_ A / x ]_ F C ) $=
-      ( co csb csbov123 cvv wcel wceq csbconstg oveq12d cop cfv 0fv df-ov eqtri
-      c0 oveqd wn 3eqtr4ri csbprc 3eqtr4a pm2.61i ) ABCDEFGABCGZABDGZABEGZFZCDU
-      HFZABCDEHBIJZUIUJKUKUFCUGDUHABCILABDILMUKUAZUFUGSFZCDSFZUIUJCDNZSOSUNUMUO
-      PCDSQUMUFUGNZSOSUFUGSQUPPRUBULUHSUFUGABEUCZTULUHSCDUQTUDUER $.
-  $}
-
-  ${
     $d y z A $.  $d y z B $.  $d y z C $.  $d y z D $.  $d y z F $.
     $d x y z $.
     $( Move class substitution in and out of an operation.  (Contributed by NM,
-       12-Nov-2005.)  (Proof shortened by Mario Carneiro, 5-Dec-2016.)
-       Obsolete as of 20-Aug-2018.  Use ~ csbov123 instead.
-       (New usage is discouraged.)  (Proof modification is discouraged.) $)
-    csbovgOLD $p |- ( A e. D -> [_ A / x ]_ ( B F C ) =
+       12-Nov-2005.)  (Proof shortened by Mario Carneiro, 5-Dec-2016.) $)
+    csbov123g $p |- ( A e. D -> [_ A / x ]_ ( B F C ) =
            ( [_ A / x ]_ B [_ A / x ]_ F [_ A / x ]_ C ) ) $=
       ( vy cv co csb wceq csbeq1 oveq123d eqeq12d nfcsb1v csbeq1a csbief vtoclg
       vex nfov ) AGHZCDFIZJZAUACJZAUADJZAUAFJZIZKABUBJZABCJZABDJZABFJZIZKGBEUAB
@@ -48620,13 +48592,13 @@ $)
   $}
 
   ${
-    $d x F $.
+    $d y A $.  $d y C $.  $d y V $.  $d x y F $.
     $( Move class substitution in and out of an operation.  (Contributed by NM,
        12-Nov-2005.) $)
     csbov12g $p |- ( A e. V ->
                  [_ A / x ]_ ( B F C ) = ( [_ A / x ]_ B F [_ A / x ]_ C ) ) $=
-      ( wcel co csb csbov123 csbconstg oveqd syl5eq ) BFGZABCDEHIABCIZABDIZABEI
-      ZHOPEHABCDEJNQEOPABEFKLM $.
+      ( wcel co csb csbov123g csbconstg oveqd eqtrd ) BFGZABCDEHIABCI
+      ZABDIZABEIZHOPEHABCDFEJNQEOPABEFKLM $.
   $}
 
   ${
