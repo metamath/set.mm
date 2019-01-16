@@ -48543,11 +48543,6 @@ $)
     funfvex 3impb syl5eqel ) ECDFZGZACHZBDHZIABEJABKZELZMABENUCUDUEUG
     MHZUDUEOUCUFUBHUHABCDPUHUBUFEUFESQRTUA $.
 
-  $( The result of an operation value is always a subset of the union of the
-     range.  (Contributed by Mario Carneiro, 12-Jan-2017.) $)
-  ovssunirn $p |- ( X F Y ) C_ U. ran F $=
-    ( co cop cfv crn cuni df-ov fvssunirn eqsstri ) BCADBCEZAFAGHBCAIALJK $.
-
   ${
     ovprc1.1 $e |- Rel dom F $.
     $( The value of an operation when the one of the arguments is a proper
