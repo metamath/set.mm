@@ -44772,6 +44772,16 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y F $.
+    $( The value of a class outside its domain is the empty set.  (Contributed
+       by Jim Kingdon, 15-Jan-2019.) $)
+    ndmfvg $p |- ( ( A e. _V /\ -. A e. dom F ) -> ( F ` A ) = (/) ) $=
+      ( vx cvv wcel cdm wn cfv c0 wceq wbr weu wex euex eldmg syl5ibr
+      cv con3d tz6.12-2 syl6 imp ) ADEZABFEZGZABHIJZUBUDACQBKZCLZGUEU
+      BUGUCUGUCUBUFCMUFCNCABDOPRCABSTUA $.
+  $}
+
+  ${
     $d x y z w A $.  $d x y z w B $.  $d x y z w F $.
     $( The value of a non-member of a restriction is the empty set.
        (Contributed by NM, 13-Nov-1995.) $)
