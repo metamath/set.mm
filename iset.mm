@@ -48560,9 +48560,10 @@ $)
        operation value, function value, and ordered pair.  (Contributed by
        Mario Carneiro, 26-Apr-2015.) $)
     ovprc $p |- ( -. ( A e. _V /\ B e. _V ) -> ( A F B ) = (/) ) $=
-      ( cvv wcel wa wn co cop cfv df-ov cdm wceq wbr df-br wrel brrelex12 mpan
-      c0 sylbir con3i ndmfv syl syl5eq ) AEFBEFGZHZABCIABJZCKZTABCLUGUHCMZFZHUI
-      TNUKUFUKABUJOZUFABUJPUJQULUFDABUJRSUAUBUHCUCUDUE $.
+      ( cvv wcel wa wn co cop cfv df-ov cdm wceq opprc 0ex syl6eqel wbr df-br
+      c0 wrel brrelex12 mpan sylbir con3i ndmfvg syl2anc syl5eq ) AEFBEFGZHZABC
+      IABJZCKZTABCLUJUKEFUKCMZFZHULTNUJUKTEABOPQUNUIUNABUMRZUIABUMSUMUAUOUIDABU
+      MUBUCUDUEUKCUFUGUH $.
 
     $( The value of an operation when the first argument is a proper class.
        (Contributed by NM, 16-Jun-2004.) $)
