@@ -48576,11 +48576,6 @@ $)
     ovprc2 $p |- ( -. B e. _V -> ( A F B ) = (/) ) $=
       ( cvv wcel wn wa co c0 wceq simpr con3i ovprc syl ) BEFZGAEFZPHZGABCIJKRP
       QPLMABCDNO $.
-
-    $( Reverse closure for an operation value.  (Contributed by Mario Carneiro,
-       5-May-2015.) $)
-    ovrcl $p |- ( C e. ( A F B ) -> ( A e. _V /\ B e. _V ) ) $=
-      ( co wcel c0 wceq cvv wa n0i ovprc nsyl2 ) CABDFZGOHIAJGBJGKOCLABDEMN $.
   $}
 
   ${
