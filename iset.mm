@@ -48535,9 +48535,13 @@ $)
       WQAXAWRWSWTXAWRDWEWSCWEWTBWEVDWFWGABCDEWHWI $.
   $}
 
-  $( The result of an operation is a set.  (Contributed by NM, 13-Mar-1995.) $)
-  ovex $p |- ( A F B ) e. _V $=
-    ( co cop cfv cvv df-ov fvex eqeltri ) ABCDABEZCFGABCHKCIJ $.
+  $( The result of an operation is a set.  (Contributed by Jim Kingdon,
+     15-Jan-2019.) $)
+  fnovex $p |- ( ( F Fn ( C X. D ) /\ A e. C /\ B e. D ) ->
+      ( A F B ) e. _V ) $=
+    ( cxp wfn wcel w3a co cop cfv cvv df-ov wa opelxp funfni sylan2br
+    funfvex 3impb syl5eqel ) ECDFZGZACHZBDHZIABEJABKZELZMABENUCUDUEUG
+    MHZUDUEOUCUFUBHUHABCDPUHUBUFEUFESQRTUA $.
 
   $( The result of an operation value is always a subset of the union of the
      range.  (Contributed by Mario Carneiro, 12-Jan-2017.) $)
