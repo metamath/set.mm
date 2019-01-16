@@ -1,4 +1,4 @@
-$( iset.mm - Version of 12-Jan-2019
+$( iset.mm - Version of 15-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -48494,29 +48494,45 @@ $)
   $}
 
   ${
+    $d x z $.  $d y z $.
+    $( Slight elaboration of ~ exdistrfor .  A lemma for ~ oprabid .
+       (Contributed by Jim Kingdon, 15-Jan-2019.) $)
+    oprabidlem $p |-
+        ( E. x E. y ( x = z /\ ps ) -> E. x ( x = z /\ E. y ps ) ) $=
+      ( weq wal wi wo wnf ax-bnd ax-10 wn pm2.53 mpi df-nf albii sylibr orim12i
+      dtru ax-mp exdistrfor ) BDEZABCCBECFZCDECFZUBUBCFGCFZBFZHZHBCEBFZUBCIZBFZ
+      HBDCJUCUHUGUJCBKUGUFUJUGUDLUFCDSUDUFMNUIUEBUBCOPQRTUA $.
+  $}
+
+  ${
     $d a ph r s t w $.  $d a r s t w x $.  $d a r s t w y $.  $d a r s t w z $.
     $( The law of concretion.  Special case of Theorem 9.5 of [Quine] p. 61.
-       (Contributed by Mario Carneiro, 20-Mar-2013.) $)
+       Although this theorem would be useful with a distinct variable
+       constraint between ` x ` , ` y ` , and ` z ` , we use ~ ax-bnd to
+       eliminate that constraint.  (Contributed by Mario Carneiro,
+       20-Mar-2013.) $)
     oprabid $p |- ( <. <. x , y >. , z >. e.
         { <. <. x , y >. , z >. | ph } <-> ph ) $=
-      ( vw va vt vr vs cv cop wceq wa wex wi vex weq wal wn nfcvf2 opex eqvinop
-      coprab biimpi eqeq1 opth1 syl6bi opeq1 eqeq2d df-3an anbi1i 3bitri 3exbii
-      w3a otth2 bitri anass nfcvd nfeqd exdistrf eximi excom 3imtr4i 3syl sylbi
-      anim2i weu euequ1 eupick mpan syl6 3impd syl5bi com12 eqcom syl6bb anbi1d
-      syl5 3exbidv imbi1d imbi12d mpbiri adantr exlimivv com3l mpdd mpcom 19.8a
-      ex impbid df-oprab elab2 ) EJZBJZCJZKZDJZKZLZAMZDNZCNZBNZAEWRABCDUCWPWQUA
-      WSXCAWMFJZGJZKZLZXFWRLZMZGNFNZWSXCAOZWSXJFGWMWPWQWNWOUADPZUBUDXIWSXKOZFGX
-      GXMXHXGWSXDWPLZXKXGWSXHXNWMXFWRUEXDXEWPWQFPGPUFUGXNXGWSXKXNXDHJZIJZKZLZXQ
-      WPLZMZINHNXGXMOZHIXDWNWOBPZCPZUBXTYAHIXRYAXSXRXGWMXQXEKZLZXMXRXFYDWMXDXQX
-      EUHUIYEXMWRYDLZYFAMZDNCNBNZAOZOYHBHQZCIQZDGQZAMZDNZMCNZMZBNZYFAYHYJYKYMMZ
-      MZDNZCNBNZYQYGYSBCDYGYJYKMZYLMZAMUUBYMMYSYFUUCAYFYJYKYLUNZUUCWNWOXOXPWQXE
-      YBYCXLUOZYJYKYLUJUPUKUUBYLAUQYJYKYMUQULUMUUAYJYRDNZMZCNBNZYJUUFCNZMZBNYQY
-      TBNZCNUUGBNZCNUUAUUHUUKUULCYJYRBDBDQBRSZDWNXOBDTUUMDXOURUSUTVAYTBCVBUUGBC
-      VBVCYJUUFBCBCQBRSZCWNXOBCTUUNCXOURUSUTUUJYPBUUIYOYJYKYMCDCDQCRSZDWOXPCDTU
-      UODXPURUSUTVFVAVDVEYQYFAYFUUDYQAUUEYQYJYKYLAYQYJYOYKYLAOZOYJBVGYQYJYOOBHV
-      HYJYOBVIVJYOYKYNUUPYKCVGYOYKYNOCIVHYKYNCVIVJYLDVGYNUUPDGVHYLADVIVJVKVKVLV
-      MVNVRYEWSYFXKYIYEWSYDWRLYFWMYDWRUEYDWRVOVPZYEXCYHAYEWTYGBCDYEWSYFAUUQVQVS
-      VTWAWBUGWCWDVEWEWFWCWDWGWSAXCWTXAXBXCWTDWHXACWHXBBWHVDWIWJABCDEWKWL $.
+      ( vw va vt vr vs cv cop wceq wa wex cvv wcel vex oprabidlem weu
+      wi coprab sopex opexg mp2an biimpi eqeq1 opth1 syl6bi opeq1 w3a
+      eqvinop eqeq2d otth2 df-3an anbi1i 3bitri 3exbii 3imtr4i anim2i
+      bitri anass eximi excom 3syl sylbi euequ1 mpan syl6 3impd com12
+      eupick syl5bi eqcom syl6bb anbi1d 3exbidv imbi1d imbi12d mpbiri
+      syl5 adantr exlimivv com3l mpcom 19.8a ex impbid df-oprab elab2
+      mpdd ) EJZBJZCJZKZDJZKZLZAMZDNZCNZBNZAEWPABCDUAWNOPWOOPWPOPBCUB
+      ZDQZWNWOOOUCUDWQXAAWKFJZGJZKZLZXFWPLZMZGNFNZWQXAATZWQXJFGWKWNWO
+      XBXCUKUEXIWQXKTZFGXGXLXHXGWQXDWNLZXKXGWQXHXMWKXFWPUFXDXEWNWOFQG
+      QUGUHXMXGWQXKXMXDHJZIJZKZLZXPWNLZMZINHNXGXLTZHIXDWLWMBQZCQZUKXS
+      XTHIXQXTXRXQXGWKXPXEKZLZXLXQXFYCWKXDXPXEUIULYDXLWPYCLZYEAMZDNCN
+      BNZATZTYGWLXNLZWMXOLZWOXELZAMZDNZMCNZMZBNZYEAYGYIYJYLMZMZDNZCNB
+      NZYPYFYRBCDYFYIYJMZYKMZAMUUAYLMYRYEUUBAYEYIYJYKUJZUUBWLWMXNXOWO
+      XEYAYBXCUMZYIYJYKUNUTUOUUAYKAVAYIYJYLVAUPUQYTYIYQDNZMZCNBNZYIUU
+      ECNZMZBNYPYSBNZCNUUFBNZCNYTUUGUUJUUKCYQBDHRVBYSBCVCUUFBCVCURUUE
+      BCHRUUIYOBUUHYNYIYLCDIRUSVBVDVEYPYEAYEUUCYPAUUDYPYIYJYKAYPYIYNY
+      JYKATZTYIBSYPYIYNTBHVFYIYNBVKVGYNYJYMUULYJCSYNYJYMTCIVFYJYMCVKV
+      GYKDSYMUULDGVFYKADVKVGVHVHVIVLVJVTYDWQYEXKYHYDWQYCWPLYEWKYCWPUF
+      YCWPVMVNZYDXAYGAYDWRYFBCDYDWQYEAUUMVOVPVQVRVSUHWAWBVEWCWJWAWBWD
+      WQAXAWRWSWTXAWRDWEWSCWEWTBWEVDWFWGABCDEWHWI $.
   $}
 
   $( The result of an operation is a set.  (Contributed by NM, 13-Mar-1995.) $)
