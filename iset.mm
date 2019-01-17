@@ -49400,12 +49400,12 @@ $)
   ${
     $d x y z w A $.  $d x y z w B $.  $d x y z w F $.
     $( Representation of a function in terms of its values.  (Contributed by
-       NM, 7-Feb-2004.)  (Revised by Mario Carneiro, 31-Aug-2015.) $)
-    fnov $p |- ( F Fn ( A X. B ) <->
+       Jim Kingdon, 16-Jan-2019.) $)
+    fnovim $p |- ( F Fn ( A X. B ) ->
                     F = ( x e. A , y e. B |-> ( x F y ) ) ) $=
-      ( vz cxp wfn cv cfv cmpt wceq cmpt2 dffn5 cop fveq2 df-ov syl6eqr mpt2mpt
-      co eqeq2i bitri ) ECDGZHEFUCFIZEJZKZLEABCDAIZBIZETZMZLFUCENUFUJEABFCDUEUI
-      UDUGUHOZLUEUKEJUIUDUKEPUGUHEQRSUAUB $.
+      ( vz cxp wfn cv cfv cmpt wceq cmpt2 dffn5im fveq2 df-ov syl6eqr
+      co cop mpt2mpt eqeq2i sylib ) ECDGZHEFUCFIZEJZKZLEABCDAIZBIZERZ
+      MZLFUCENUFUJEABFCDUEUIUDUGUHSZLUEUKEJUIUDUKEOUGUHEPQTUAUB $.
   $}
 
   ${
