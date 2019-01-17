@@ -48706,13 +48706,14 @@ $)
        ordered pairs.  (Contributed by NM, 12-Mar-1995.) $)
     dfoprab2 $p |- { <. <. x , y >. , z >. | ph } =
                    { <. w , z >. | E. x E. y ( w = <. x , y >. /\ ph ) } $=
-      ( vv cv cop wceq wa wex cab coprab copab excom exrot4 opeq1 3bitr3i bitri
-      eqeq2d pm5.32ri anbi1i anass an32 exbii opex isseti 19.42v 3exbii 19.42vv
-      mpbiran2 2exbii abbii df-oprab df-opab 3eqtr4i ) FGZBGZCGZHZDGZHZIZAJZDKC
-      KBKZFLUQEGZVAHZIZVFUTIZAJZCKBKZJZDKEKZFLABCDMVKEDNVEVMFVHVJJZCKBKZEKDKZVO
-      DKEKVEVMVODEOVPVNEKZDKCKBKVEVNDEBCPVQVDBCDVQVDVIJZEKZVDVNVREVHVIJZAJVCVIJ
-      ZAJVNVRVTWAAVIVHVCVIVGVBUQVFUTVAQTUAUBVHVIAUCVCVIAUDRUEVSVDVIEKEUTURUSUFU
-      GVDVIEUHUKSUISVOVLEDVHVJBCUJULRUMABCDFUNVKEDFUOUP $.
+      ( vv cv cop wceq wex cab coprab copab excom exrot4 opeq1 eqeq2d
+      wa 3bitr3i bitri pm5.32ri anbi1i anass an32 exbii isseti 19.42v
+      sopex mpbiran2 3exbii 19.42vv 2exbii df-oprab df-opab 3eqtr4i
+      abbii ) FGZBGCGHZDGZHZIZARZDJCJBJZFKUQEGZUSHZIZVDURIZARZCJBJZRZ
+      DJEJZFKABCDLVIEDMVCVKFVFVHRZCJBJZEJDJZVMDJEJVCVKVMDENVNVLEJZDJC
+      JBJVCVLDEBCOVOVBBCDVOVBVGRZEJZVBVLVPEVFVGRZARVAVGRZARVLVPVRVSAV
+      GVFVAVGVEUTUQVDURUSPQUAUBVFVGAUCVAVGAUDSUEVQVBVGEJEURBCUHUFVBVG
+      EUGUITUJTVMVJEDVFVHBCUKULSUPABCDFUMVIEDFUNUO $.
 
     $( An operation class abstraction is a relation.  (Contributed by NM,
        16-Jun-2004.) $)
@@ -49140,10 +49141,10 @@ $)
        30-Aug-2004.)  (Revised by David Abernethy, 19-Apr-2013.) $)
     rnoprab $p |- ran { <. <. x , y >. , z >. | ph } =
                   { z | E. x E. y ph } $=
-      ( vw coprab crn cv cop wceq wa wex copab cab dfoprab2 rneqi rnopab exrot3
-      opex isseti 19.41v mpbiran 2exbii bitri abbii 3eqtri ) ABCDFZGEHBHZCHZIZJ
-      ZAKZCLBLZEDMZGUMELZDNACLBLZDNUGUNABCDEOPUMEDQUOUPDUOULELZCLBLUPULEBCRUQAB
-      CUQUKELAEUJUHUISTUKAEUAUBUCUDUEUF $.
+      ( vw coprab crn cv cop wceq wex copab cab dfoprab2 rneqi rnopab
+      wa exrot3 sopex isseti 19.41v mpbiran 2exbii bitri abbii 3eqtri
+      ) ABCDFZGEHBHCHIZJZAQZCKBKZEDLZGUKEKZDMACKBKZDMUGULABCDENOUKEDP
+      UMUNDUMUJEKZCKBKUNUJEBCRUOABCUOUIEKAEUHBCSTUIAEUAUBUCUDUEUF $.
   $}
 
   ${
