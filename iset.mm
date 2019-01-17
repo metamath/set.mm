@@ -48847,7 +48847,7 @@ $)
        Carneiro, 16-Dec-2013.)  (Revised by Mario Carneiro, 19-Mar-2015.) $)
     mpt2eq123 $p |- ( ( A = D /\ A. x e. A ( B = E /\ A. y e. B C = F ) ) ->
                  ( x e. A , y e. B |-> C ) = ( x e. D , y e. E |-> F ) ) $=
-      ( vz wceq wral wa cv wcel coprab cmpt2 nfv nfra1 nfan wb nfcv nfral eqeq2
+      ( vz wceq wral wa cv wcel coprab cmpt2 nfv nfra1 nfan wb nfcv nfralxy eqeq2
       rsp pm5.32d eleq2 anbi1d sylan9bbr anass 3bitr4g oprabbid df-mpt2 3eqtr4g
       syl6 ) CFJZDGJZEHJZBDKZLZACKZLZAMZCNZBMZDNZLIMZEJZLZABIOVBFNZVDGNZLVFHJZL
       ZABIOABCDEPABFGHPVAVHVLABIUOUTAUOAQUSACRSUOUTBUOBQUSBACBCUAUPURBUPBQUQBDR
