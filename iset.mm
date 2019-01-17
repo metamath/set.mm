@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Jan-2019
+$( iset.mm - Version of 16-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -48686,13 +48686,19 @@ $)
     COPQUPURCUKCCDUJABCUAPQUOURAUNDUBZUOURUCZULUMBRCRUDUSUOMUTUNDUEUO
     URUFSUIUGTTSUH $.
 
-  $( If two classes are in a relationship given by an ordered-pair class
-     abstraction, the classes are sets.  (Contributed by Alexander van der
-     Vekens, 5-Nov-2017.) $)
-  brabv $p |- ( X { <. x , y >. | ph } Y -> ( X e. _V /\ Y e. _V ) ) $=
-    ( copab wbr cop wcel cvv wa df-br wn wceq opprc 0neqopab eleq1 mtbiri syl
-    c0 con4i sylbi ) DEABCFZGDEHZUCIZDJIEJIKZDEUCLUFUEUFMUDTNZUEMDEOUGUETUCIABC
-    PUDTUCQRSUAUB $.
+  ${
+    $d x y X $.  $d x y Y $.
+    $( If two classes are in a relationship given by an ordered-pair class
+       abstraction, the classes are sets.  (Contributed by Jim Kingdon,
+       16-Jan-2019.) $)
+    brabvv $p |- ( X { <. x , y >. | ph } Y -> ( X e. _V /\ Y e. _V ) ) $=
+      ( copab wbr cv wceq wex wa cvv cop df-br elopab bitri exsimpl vex
+      wcel isset eximi sylbi opth biimpi eqcoms syl eeanv sylib anbi12i
+      2eximi sylibr ) DEABCFZGZBHZDIZBJZCHZEIZCJZKZDLSZELSZKUMUOURKZCJB
+      JZUTUMDEMZUNUQMZIZCJZBJZVDUMVGAKCJZBJZVIUMVEULSVKDEULNABCVEOPVJVH
+      BVGACQUAUBVGVCBCVCVFVEVFVEIVCUNUQDEBRCRUCUDUEUJUFUOURBCUGUHVAUPVB
+      USBDTCETUIUK $.
+  $}
 
   ${
     $d x z w v $.  $d y z w v $.  $d w ph v $.
