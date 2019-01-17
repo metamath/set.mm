@@ -48680,10 +48680,11 @@ $)
   $( The empty set is never an element in an ordered-pair class abstraction.
      (Contributed by Alexander van der Vekens, 5-Nov-2017.) $)
   0neqopab $p |- -. (/) e. { <. x , y >. | ph } $=
-    ( c0 copab wcel wn cv cop wa wex elopab nfopab1 nfel2 nfn nfopab2 vex sylbi
-    wceq exlimi wne wi opnzi nesym pm2.21 ax-mp adantr id pm2.61i ) DABCEZFZUKG
-    ZUKDBHZCHZIZSZAJZCKZBKULABCDLURULBUKBBDUJABCMNOUQULCUKCCDUJABCPNOUPULAUODUA
-    ZUPULUBZUMUNBQCQUCUSUPGUTUODUDUPULUERUFUGTTRULUHUI $.
+    ( c0 copab wcel id cv cop wceq wa wex wn elopab nfopab1 nfel2 nfn
+    vex sylbi exlimi nfopab2 wne wi opnzi nesym pm2.21 adantr pm2.65i
+    ax-mp ) DABCEZFZUKUKGUKDBHZCHZIZJZAKZCLZBLUKMZABCDNUQURBUKBBDUJAB
+    COPQUPURCUKCCDUJABCUAPQUOURAUNDUBZUOURUCZULUMBRCRUDUSUOMUTUNDUEUO
+    URUFSUIUGTTSUH $.
 
   $( If two classes are in a relationship given by an ordered-pair class
      abstraction, the classes are sets.  (Contributed by Alexander van der
