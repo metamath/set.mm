@@ -18935,6 +18935,25 @@ $)
       ( wne wceq wn necon3ad df-ne syl6ibr ) ADEGBCHZIBCGAMDEFJBCKL $.
   $}
 
+  $( Characterization of inequality in terms of reversed equality (see
+     ~ bicom ).  (Contributed by BJ, 7-Jul-2018.) $)
+  nesym $p |- ( A =/= B <-> -. B = A ) $=
+    ( wceq eqcom necon3abii ) BACABABDE $.
+
+  ${
+    nesymi.1 $e |- A =/= B $.
+    $( Inference associated with ~ nesym .  (Contributed by BJ, 7-Jul-2018.) $)
+    nesymi $p |- -. B = A $=
+      ( wne wceq wn nesym mpbi ) ABDBAEFCABGH $.
+  $}
+
+  ${
+    nesymir.1 $e |- -. A = B $.
+    $( Inference associated with ~ nesym .  (Contributed by BJ, 7-Jul-2018.) $)
+    nesymir $p |- B =/= A $=
+      ( wne wceq wn nesym mpbir ) BADABEFCBAGH $.
+  $}
+
   ${
     necon3i.1 $e |- ( A = B -> C = D ) $.
     $( Contrapositive inference for inequality.  (Contributed by NM,
