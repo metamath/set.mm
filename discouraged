@@ -13205,7 +13205,6 @@
 "wl-pm2.27" is used by "wl-com12".
 "wl-syl" is used by "wl-a1d".
 "wl-syl" is used by "wl-ax1".
-"wl-syl" is used by "wl-con4i".
 "wl-syl" is used by "wl-id".
 "wl-syl" is used by "wl-pm2.18d".
 "wl-syl" is used by "wl-pm2.27".
@@ -13214,6 +13213,7 @@
 "wl-syl5" is used by "wl-ax3".
 "wl-syl5" is used by "wl-com12".
 "wl-syl5" is used by "wl-con1i".
+"wl-syl5" is used by "wl-con4i".
 "wl-syl5" is used by "wl-ja".
 "wl-syl5" is used by "wl-mpi".
 "wl-syl6" is used by "wl-ax3".
@@ -13313,6 +13313,7 @@ New usage of "2llnne2N" is discouraged (1 uses).
 New usage of "2llnneN" is discouraged (0 uses).
 New usage of "2lplnm2N" is discouraged (0 uses).
 New usage of "2lplnmN" is discouraged (0 uses).
+New usage of "2moOLD" is discouraged (0 uses).
 New usage of "2pm13.193" is discouraged (3 uses).
 New usage of "2pm13.193VD" is discouraged (0 uses).
 New usage of "2pmaplubN" is discouraged (1 uses).
@@ -17674,8 +17675,8 @@ New usage of "wl-pm2.27" is discouraged (1 uses).
 New usage of "wl-sbcom3" is discouraged (0 uses).
 New usage of "wl-section-boot" is discouraged (0 uses).
 New usage of "wl-section-prop" is discouraged (0 uses).
-New usage of "wl-syl" is discouraged (8 uses).
-New usage of "wl-syl5" is discouraged (5 uses).
+New usage of "wl-syl" is discouraged (7 uses).
+New usage of "wl-syl5" is discouraged (6 uses).
 New usage of "wl-syl6" is discouraged (2 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
@@ -17731,6 +17732,7 @@ Proof modification of "1div0apr" is discouraged (77 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
 Proof modification of "2bornot2b" is discouraged (26 steps).
 Proof modification of "2exsbOLD" is discouraged (110 steps).
+Proof modification of "2moOLD" is discouraged (474 steps).
 Proof modification of "2pm13.193" is discouraged (91 steps).
 Proof modification of "2pm13.193VD" is discouraged (223 steps).
 Proof modification of "2sb5nd" is discouraged (125 steps).
@@ -18708,7 +18710,7 @@ Proof modification of "wl-ax2" is discouraged (24 steps).
 Proof modification of "wl-ax3" is discouraged (27 steps).
 Proof modification of "wl-com12" is discouraged (11 steps).
 Proof modification of "wl-con1i" is discouraged (14 steps).
-Proof modification of "wl-con4i" is discouraged (21 steps).
+Proof modification of "wl-con4i" is discouraged (14 steps).
 Proof modification of "wl-embant" is discouraged (9 steps).
 Proof modification of "wl-embantALT" is discouraged (12 steps).
 Proof modification of "wl-embantd" is discouraged (11 steps).
