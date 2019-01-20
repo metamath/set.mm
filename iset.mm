@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Jan-2019
+$( iset.mm - Version of 19-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -37771,6 +37771,19 @@ $)
       ( vx vy cvv cxp wcel cv cop wceq wex cuni elvv cpr vex uniop opi2 eqeltri
       unieq id eleq12d mpbiri exlimivv sylbi ) ADDEFABGZCGZHZIZCJBJAKZAFZBCALUG
       UIBCUGUIUFKZUFFUJUDUEMUFUDUEBNZCNZOUDUEUKULPQUGUHUJAUFAUFRUGSTUAUBUC $.
+  $}
+
+  ${
+    $d x y z A $.
+    $( "At most one" remains true inside ordered pair quantification.
+       (Contributed by NM, 28-Aug-2007.) $)
+    mosubopt $p |- ( A. y A. z E* x ph ->
+                 E* x E. y E. z ( A = <. y , z >. /\ ph ) ) $=
+      ( wmo wal cv cop wceq wex wa wi nfa1 nfe1 nfmo copsexg sps exlimd
+      nfex mobidv biimpcd moanimv ax-ia1 2eximi ancri moimi sylbir syl
+      ) ABFZDGZCGZECHDHIJZDKZCKZUMALZDKZCKZBFZMZUSULUNUSCUKCNURCBUQCOPU
+      KUNUSMCUKUMUSDUJDNURDBUQDCUPDOTPUJUMUSMDUMUJUSUMAURBACDEQUAUBRSRS
+      UTUOURLZBFUSUOURBUCURVABURUOUPUMCDUMAUDUEUFUGUHUI $.
   $}
 
   $( Intersection of binary relation with cross product.  (Contributed by NM,
