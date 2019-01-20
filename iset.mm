@@ -23314,15 +23314,24 @@ $)
   $}
 
   ${
-    $d x y A $.  $d x z $.  $d y z $.  $d A z $.  $d ph z $.
-    mosubex.1 $e |- A e. _V $.
-    mosubex.2 $e |- E* x ph $.
+    $d x y A $.
+    $( "At most one" remains true after substitution.  (Contributed by Jim
+       Kingdon, 18-Jan-2019.) $)
+    mosubt $p |- ( A. y E* x ph -> E* x E. y ( y = A /\ ph ) ) $=
+      ( wmo wal cv wceq wex wa wi weu cvv wcel eueq bitr3i nfv euexex
+      isset sylanbr expcom moanimv sylibr ax-ia1 eximi ancri moimi
+      syl ) ABECFZCGDHZCIZUJAJZCIZJZBEZUMBEZUIUKUPKUOUKUIUPUKUJCLZUIU
+      PUQDMNUKCDOCDSPUJACBUJBQRTUAUKUMBUBUCUMUNBUMUKULUJCUJAUDUEUFUGU
+      H $.
+  $}
+
+  ${
+    $d x y A $.
+    mosub.1 $e |- E* x ph $.
     $( "At most one" remains true after substitution.  (Contributed by NM,
-       9-Mar-1995.)  (Modified by Jim Kingdon, 8-Jul-2018.) $)
-    mosubex $p |- E* x E. y ( y = A /\ ph ) $=
-      ( vz cv wceq wa wex wmo eqeq2 anbi1d exbidv mobidv wsb sbt sbmo mpbi sb5
-      mobii vtocl ) CHZGHZIZAJZCKZBLZUDDIZAJZCKZBLGDEUEDIZUHULBUMUGUKCUMUFUJAUE
-      DUDMNOPACGQZBLZUIABLZCGQUOUPCGFRACGBSTUNUHBACGUAUBTUC $.
+       9-Mar-1995.) $)
+    mosub $p |- E* x E. y ( y = A /\ ph ) $=
+      ( wmo cv wceq wa wex mosubt mpg ) ABFCGDHAICJBFCABCDKEL $.
   $}
 
   ${
