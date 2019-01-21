@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Jan-2019
+$( iset.mm - Version of 21-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -20548,6 +20548,14 @@ $)
   ralbi $p |- ( A. x e. A ( ph <-> ps ) ->
                ( A. x e. A ph <-> A. x e. A ps ) ) $=
     ( wb wral nfra1 cv wcel rsp imp ralbida ) ABEZCDFZABCDMCDGNCHDIMMCDJKL $.
+
+  $( Distribute a restricted existential quantifier over a biconditional.
+     Theorem 19.18 of [Margaris] p. 90 with restricted quantification.
+     (Contributed by Jim Kingdon, 21-Jan-2019.) $)
+  rexbi $p |- ( A. x e. A ( ph <-> ps ) ->
+               ( E. x e. A ph <-> E. x e. A ps ) ) $=
+    ( wb wral nfra1 cv wcel rsp imp rexbida ) ABEZCDFZABCDMCDGNCHDIMM
+    CDJKL $.
 
   $( Split a biconditional and distribute quantifier.  (Contributed by NM,
      3-Jun-2012.) $)
