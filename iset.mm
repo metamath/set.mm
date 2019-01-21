@@ -49517,9 +49517,13 @@ $)
        Carneiro, 1-Sep-2015.) $)
     rexrnmpt2 $p |- ( A. x e. A A. y e. B C e. V ->
       ( E. z e. ran F ph <-> E. x e. A E. y e. B ps ) ) $=
-      ( wcel wral wn crn wrex cv notbid dfrex2 wceq rexbii rexnal bitri 3bitr4g
-      ralrnmpt2 ) HJMDGNCFNZAOZEIPZNZOBOZDGNZCFNZOZAEUIQBDGQZCFQZUGUJUMUHUKCDEF
-      GHIJKERHUAABLSUFSAEUITUPULOZCFQUNUOUQCFBDGTUBULCFUCUDUE $.
+      ( vw wrex cv wceq wa wex wral wb crn wcel cab rnmpt2 eqeq1 2rexbidv rexab
+      rexeqi rexcom4 r19.41v exbii bitr2i 3bitri bitri ralimi rexbi syl syl5bbr
+      ceqsexgv syl5bb ) AEIUAZNZEOZHPZDGNZAQZERZCFNZHJUBZDGSZCFSZBDGNZCFNZVBAEM
+      OZHPZDGNCFNZMUCZNVECFNZAQZERZVHAEVAVQCDMFGHIKUDUHVPVRAEMVNVCPVOVDCDFGVNVC
+      HUEUFUGVHVFCFNZERVTVFCEFUIWAVSEVEACFUJUKULUMVKVGVLTZCFSVHVMTVJWBCFVGVDAQZ
+      ERZDGNZVJVLWEWCDGNZERVGWCDEGUIWFVFEVDADGUJUKUNVJWDBTZDGSWEVLTVIWGDGABEHJL
+      USUOWDBDGUPUQURUOVGVLCFUPUQUT $.
   $}
 
   ${
