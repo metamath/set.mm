@@ -37786,6 +37786,16 @@ $)
       UTUOURLZBFUSUOURBUCURVABURUOUPUMCDUMAUDUEUFUGUHUI $.
   $}
 
+  ${
+    $d x y z A $.
+    mosubop.1 $e |- E* x ph $.
+    $( "At most one" remains true inside ordered pair quantification.
+       (Contributed by NM, 28-May-1995.) $)
+    mosubop $p |- E* x E. y E. z ( A = <. y , z >. /\ ph ) $=
+      ( wmo wal cv cop wceq wa wex gen2 mosubopt ax-mp ) ABGZDHCHECIDIJKALDMCMB
+      GQCDFNABCDEOP $.
+  $}
+
   $( Intersection of binary relation with cross product.  (Contributed by NM,
      3-Mar-2007.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
   brinxp2 $p |- ( A ( R i^i ( C X. D ) ) B <->
