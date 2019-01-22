@@ -50456,66 +50456,6 @@ $)
       caov13 $p |- ( A F ( B F C ) ) = ( C F ( B F A ) ) $=
         ( co caov31 caovass 3eqtr3i ) DEGMFGMFEGMDGMDEFGMGMFEDGMGMABCDEFGHIJKLN
         ABCDEFGHIJLOABCFEDGJIHLOP $.
-
-      ${
-        caov.4 $e |- D e. _V $.
-        $( Rearrange arguments in a commutative, associative operation.
-           (Contributed by NM, 26-Aug-1995.) $)
-        caov4 $p |- ( ( A F B ) F ( C F D ) ) = ( ( A F C ) F ( B F D ) ) $=
-          ( co caov12 oveq2i ovex caovass 3eqtr4i ) DEFGHOZHOZHODFEGHOZHOZHODEH
-          OUAHODFHOUCHOUBUDDHABCEFGHJKNLMPQABCDEUAHIJFGHRMSABCDFUCHIKEGHRMST $.
-
-        $( Rearrange arguments in a commutative, associative operation.
-           (Contributed by NM, 26-Aug-1995.) $)
-        caov411 $p |- ( ( A F B ) F ( C F D ) ) = ( ( C F B ) F ( A F D ) ) $=
-          ( co caov31 oveq1i ovex caovass 3eqtr3i ) DEHOZFHOZGHOFEHOZDHOZGHOUAF
-          GHOHOUCDGHOHOUBUDGHABCDEFHIJKLMPQABCUAFGHDEHRKNMSABCUCDGHFEHRINMST $.
-
-        $( Rearrange arguments in a commutative, associative operation.
-           (Contributed by NM, 26-Aug-1995.) $)
-        caov42 $p |- ( ( A F B ) F ( C F D ) ) =
-                        ( ( A F C ) F ( D F B ) ) $=
-          ( co caov4 caovcom oveq2i eqtri ) DEHOFGHOHODFHOZEGHOZHOTGEHOZHOABCDE
-          FGHIJKLMNPUAUBTHABEGHJNLQRS $.
-      $}
-    $}
-
-    ${
-      caovdir.1 $e |- A e. _V $.
-      caovdir.2 $e |- B e. _V $.
-      caovdir.3 $e |- C e. _V $.
-      caovdir.com $e |- ( x G y ) = ( y G x ) $.
-      caovdir.distr $e |- ( x G ( y F z ) ) = ( ( x G y ) F ( x G z ) ) $.
-      $( Reverse distributive law.  (Contributed by NM, 26-Aug-1995.) $)
-      caovdir $p |- ( ( A F B ) G C ) = ( ( A G C ) F ( B G C ) ) $=
-        ( co caovdi ovex caovcom oveq12i 3eqtr3i ) FDEGNZHNFDHNZFEHNZGNTFHNDFHN
-        ZEFHNZGNABCFDEGHKIJMOABFTHKDEGPLQUAUCUBUDGABFDHKILQABFEHKJLQRS $.
-
-      $d x y z H $.  $d x y z R $.
-      caovdl.4 $e |- D e. _V $.
-      caovdl.5 $e |- H e. _V $.
-      caovdl.ass $e |- ( ( x G y ) G z ) = ( x G ( y G z ) ) $.
-      $( Lemma used by real number construction.  (Contributed by NM,
-         26-Aug-1995.) $)
-      caovdilem $p |- ( ( ( A G C ) F ( B G D ) ) G H ) =
-                       ( ( A G ( C G H ) ) F ( B G ( D G H ) ) ) $=
-        ( co ovex caovdir caovass oveq12i eqtri ) DFISZEGISZHSJISUEJISZUFJISZHS
-        DFJISISZEGJISISZHSABCUEUFJHIDFITEGITQNOUAUGUIUHUJHABCDFJIKMQRUBABCEGJIL
-        PQRUBUCUD $.
-
-      caovdl2.6 $e |- R e. _V $.
-      caovdl2.com $e |- ( x F y ) = ( y F x ) $.
-      caovdl2.ass $e |- ( ( x F y ) F z ) = ( x F ( y F z ) ) $.
-      $( Lemma used in real number construction.  (Contributed by NM,
-         26-Aug-1995.) $)
-      caovlem2 $p |- ( ( ( ( A G C ) F ( B G D ) ) G H ) F
-                        ( ( ( A G D ) F ( B G C ) ) G R ) ) =
-   ( ( A G ( ( C G H ) F ( D G R ) ) ) F ( B G ( ( C G R ) F ( D G H ) ) ) ) $=
-        ( co ovex caov42 caovdilem oveq12i caovdi 3eqtr4i ) DFKJUCZJUCZEGKJUCZJ
-        UCZIUCZDGHJUCZJUCZEFHJUCZJUCZIUCZIUCUKUPIUCZURUMIUCZIUCDFJUCEGJUCIUCKJU
-        CZDGJUCEFJUCIUCHJUCZIUCDUJUOIUCJUCZEUQULIUCJUCZIUCABCUKUMUPURIDUJJUDEUL
-        JUDDUOJUDUAUBEUQJUDUEVBUNVCUSIABCDEFGIJKLMNOPQRSUFABCDEGFIJHLMQOPNTSUFU
-        GVDUTVEVAIABCDUJUOIJLFKJUDGHJUDPUHABCEUQULIJMFHJUDGKJUDPUHUGUI $.
     $}
 
     ${
