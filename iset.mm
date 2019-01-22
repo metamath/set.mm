@@ -50032,14 +50032,6 @@ $)
       EBGHZDEABIZCJIZKDELZUBMZCDEUBNTUCUAGUDCODEABPUACUCFQRS $.
   $}
 
-  $( The value of an operation outside its domain.  (Contributed by Alexander
-     van der Vekens, 7-Sep-2017.) $)
-  nssdmovg $p |- ( ( dom F C_ ( R X. S ) /\ -. ( A e. R /\ B e. S ) )
-              -> ( A F B ) = (/) ) $=
-    ( cdm cxp wss wcel wa wn co cop cfv c0 df-ov wceq ssel2 opelxp sylib ex syl
-    con3and ndmfv syl5eq ) EFZCDGZHZACIBDIJZKJZABELABMZENZOABEPUJUKUFIZKULOQUHU
-    MUIUHUMUIUHUMJUKUGIUIUFUGUKRABCDSTUAUCUKEUDUBUE $.
-
   $( The value of an operation outside its domain.  (Contributed by NM,
      28-Mar-2008.) $)
   ndmovg $p |- ( ( dom F = ( R X. S ) /\ -. ( A e. R /\ B e. S ) )
