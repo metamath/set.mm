@@ -50457,34 +50457,6 @@ $)
         ( co caov31 caovass 3eqtr3i ) DEGMFGMFEGMDGMDEFGMGMFEDGMGMABCDEFGHIJKLN
         ABCDEFGHIJLOABCFEDGJIHLOP $.
     $}
-
-    ${
-      $d u w A $.  $d u v w x y B $.  $d u v w x y z F $.  $d w x S $.
-      $( Identity element. $)
-      caovmo.2 $e |- B e. S $.
-      caovmo.dom $e |- dom F = ( S X. S ) $.
-      caovmo.3 $e |- -. (/) e. S $.
-      caovmo.com $e |- ( x F y ) = ( y F x ) $.
-      caovmo.ass $e |- ( ( x F y ) F z ) = ( x F ( y F z ) ) $.
-      caovmo.id $e |- ( x e. S -> ( x F B ) = x ) $.
-      $( Uniqueness of inverse element in commutative, associative operation
-         with identity.  Remark in proof of Proposition 9-2.4 of [Gleason]
-         p. 119.  (Contributed by NM, 4-Mar-1996.) $)
-      caovmo $p |- E* w ( A F w ) = B $=
-        ( vv wcel co wceq wa syl vu cv wmo wi oveq1 eqeq1d mobidv wal oveq2 mo4
-        simpr oveq2d simpl oveq1d vex caovass caov12 eqtri elexi caovcom eqtr3d
-        3eqtr3g syl6eqel simprd id eqeq12d vtoclga 3eqtr3d ax-gen mpgbir vtoclg
-        ndmovrcl moanimv mpbir eleq1 mpbiri simpld ancri moimi ax-mp ) EGPZEDUB
-        ZHQZFRZSZDUCZWDDUCZWFWAWGUDUAUBZWBHQZFRZDUCZWGUAEGWHERZWJWDDWLWIWCFWHEW
-        BHUEUFUGWKWJWHOUBZHQZFRZSZWBWMRZUDZOUHDWJWODOWQWIWNFWBWMWHHUIUFUJWROWPW
-        BFHQZWMFHQZWBWMWPWBWNHQZWSWTWPWNFWBHWJWOUKZULWPWIWMHQZFWMHQXAWTWPWIFWMH
-        WJWOUMZUNXCWHWBWMHQHQXAABCWHWBWMHUAUOZDUOZOUOZMUPABCWHWBWMHXEXFXGLMUQUR
-        ABFWMHFGIUSXGLUTVBVAWPWBGPZWSWBRZWPWHGPZXHWPWIGPXJXHSWPWIFGXDIVCWHWBGHJ
-        KVLTVDAUBZFHQZXKRZXIAWBGXKWBRZXLWSXKWBXKWBFHUEXNVEVFNVGTWPWMGPZWTWMRZWP
-        XJXOWPWNGPXJXOSWPWNFGXBIVCWHWMGHJKVLTVDXMXPAWMGXKWMRZXLWTXKWMXKWMFHUEXQ
-        VEVFNVGTVHVIVJVKWAWDDVMVNWDWEDWDWAWDWAXHWDWCGPZWAXHSWDXRFGPIWCFGVOVPEWB
-        GHJKVLTVQVRVSVT $.
-    $}
   $}
 
   ${
