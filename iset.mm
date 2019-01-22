@@ -50520,6 +50520,194 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        "Maps to" notation
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d C z $.
+    elmpt2cl.f $e |- F = ( x e. A , y e. B |-> C ) $.
+    $( If a two-parameter class is not empty, constrain the implicit pair.
+       (Contributed by Stefan O'Rear, 7-Mar-2015.) $)
+    elmpt2cl $p |- ( X e. ( S F T ) -> ( S e. A /\ T e. B ) ) $=
+      ( vz co wcel cop cxp wa cdm cv wceq coprab cmpt2 df-mpt2 dmoprabss elfvdm
+      eqtri dmeqi eqsstri cfv df-ov eleq2s sseldi opelxp sylib ) IFGHLZMZFGNZCD
+      OZMFCMGDMPUOHQZUQUPURARCMBRDMPKRESZPABKTZQUQHUTHABCDEUAUTJABKCDEUBUEUFUSA
+      BKCDUCUGUPURMIUPHUHUNIUPHUDFGHUIUJUKFGCDULUM $.
+
+    $( If a two-parameter class is not empty, the first argument is in its
+       nominal domain.  (Contributed by FL, 15-Oct-2012.)  (Revised by Stefan
+       O'Rear, 7-Mar-2015.) $)
+    elmpt2cl1 $p |- ( X e. ( S F T ) -> S e. A ) $=
+      ( co wcel elmpt2cl simpld ) IFGHKLFCLGDLABCDEFGHIJMN $.
+
+    $( If a two-parameter class is not empty, the second argument is in its
+       nominal domain.  (Contributed by FL, 15-Oct-2012.)  (Revised by Stefan
+       O'Rear, 7-Mar-2015.) $)
+    elmpt2cl2 $p |- ( X e. ( S F T ) -> T e. B ) $=
+      ( co wcel elmpt2cl simprd ) IFGHKLFCLGDLABCDEFGHIJMN $.
+  $}
+
+  ${
+    $d A a b $.  $d B a b $.  $d E a b $.  $d F a b $.  $d X a b $.
+    $d Y a b $.  $d V a b $.
+    elovmpt2.d $e |- D = ( a e. A , b e. B |-> C ) $.
+    elovmpt2.c $e |- C e. _V $.
+    elovmpt2.e $e |- ( ( a = X /\ b = Y ) -> C = E ) $.
+    $( Utility lemma for two-parameter classes.
+
+       _EDITORIAL_: can simplify ~ isghm , ~ islmhm .  (Contributed by Stefan
+       O'Rear, 21-Jan-2015.) $)
+    elovmpt2 $p |- ( F e. ( X D Y ) <-> ( X e. A /\ Y e. B /\ F e. E ) ) $=
+      ( co wcel wa cvv wceq wal cv w3a elmpt2cl gen2 eleq1d spc2gv mpi ovmpt2ga
+      mpd3an3 eleq2d biadan2 df-3an bitr4i ) FGHDNZOZGAOZHBOZPZFEOZPUOUPURUAUNU
+      QURIJABCGHDFKUBUQUMEFUOUPEQOZUMERUQCQOZJSISUSUTIJLUCUTUSIJGHABITGRJTHRPCE
+      QMUDUEUFIJGHABCEDQMKUGUHUIUJUOUPURUKUL $.
+  $}
+
+  ${
+    $d x w A $.  $d w B $.  $d w F $.
+    relmptopab.1 $e |- F = ( x e. A |-> { <. y , z >. | ph } ) $.
+    $( Any function to sets of ordered pairs produces a relation on function
+       value unconditionally.  (Contributed by Mario Carneiro, 7-Aug-2014.)
+       (Proof shortened by Mario Carneiro, 24-Dec-2016.) $)
+    relmptopab $p |- Rel ( F ` B ) $=
+      ( cfv wrel cvv cxp wss copab fvmptss cv wcel relopab df-rel mpbi a1i mprg
+      mpbir ) FGIZJUDKKLZMZACDNZUEMZUFBEBEUGUEFGHOUHBPEQUGJUHACDRUGSTUAUBUDSUC
+      $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d y C $.  $d x D $.  $d x y ph $.
+    f1od.1 $e |- F = ( x e. A |-> C ) $.
+    ${
+      f1od.2 $e |- ( ( ph /\ x e. A ) -> C e. W ) $.
+      f1od.3 $e |- ( ( ph /\ y e. B ) -> D e. X ) $.
+      f1od.4 $e |- ( ph -> ( ( x e. A /\ y = C ) <-> ( y e. B /\ x = D ) ) ) $.
+      $( Describe an implicit one-to-one onto function.  (Contributed by Mario
+         Carneiro, 30-Apr-2015.) $)
+      f1ocnvd $p |- ( ph ->
+        ( F : A -1-1-onto-> B /\ `' F = ( y e. B |-> D ) ) ) $=
+        ( ccnv cmpt wceq wfn wcel copab wf1o wral ralrimiva fnmpt eqid opabbidv
+        cv wa df-mpt eqtri cnveqi cnvopab 3eqtr4g fneq1d mpbird dff1o4 sylanbrc
+        syl jca ) ADEHUAZHOZCEGPZQAHDRZVAERZUTAFISZBDUBVCAVEBDLUCBDFHIKUDURAVDV
+        BERZAGJSZCEUBVFAVGCEMUCCEGVBJVBUEUDURAEVAVBABUGZDSCUGZFQUHZCBTZVIESVHGQ
+        UHZCBTVAVBAVJVLCBNUFVAVJBCTZOVKHVMHBDFPVMKBCDFUIUJUKVJBCULUJCBEGUIUMZUN
+        UODEHUPUQVNUS $.
+
+      $( Describe an implicit one-to-one onto function.  (Contributed by Mario
+         Carneiro, 12-May-2014.) $)
+      f1od $p |- ( ph -> F : A -1-1-onto-> B ) $=
+        ( wf1o ccnv cmpt wceq f1ocnvd simpld ) ADEHOHPCEGQRABCDEFGHIJKLMNST $.
+    $}
+
+    f1o2d.2 $e |- ( ( ph /\ x e. A ) -> C e. B ) $.
+    f1o2d.3 $e |- ( ( ph /\ y e. B ) -> D e. A ) $.
+    f1o2d.4 $e |- ( ( ph /\ ( x e. A /\ y e. B ) ) ->
+                    ( x = D <-> y = C ) ) $.
+    $( Describe an implicit one-to-one onto function.  (Contributed by Mario
+       Carneiro, 30-Apr-2015.) $)
+    f1ocnv2d $p |- ( ph ->
+      ( F : A -1-1-onto-> B /\ `' F = ( y e. B |-> D ) ) ) $=
+      ( cv wcel wceq wa wi eleq1a syl impr biimpar exp42 com34 imp32 jcai com23
+      biimpa impbida f1ocnvd ) ABCDEFGHEDIJKABMZDNZCMZFOZPZULENZUJGOZPZAUNPUOUP
+      AUKUMUOAUKPFENUMUOQJFEULRSTAUKUMUOUPQAUKUOUMUPAUKUOUMUPAUKUOPPZUPUMLUAUBU
+      CUDUEAUQPUKUMAUOUPUKAUOPGDNUPUKQKGDUJRSTAUOUPUKUMQAUOUKUPUMAUKUOUPUMQAUKU
+      OUPUMURUPUMLUGUBUFUCUDUEUHUI $.
+
+    $( Describe an implicit one-to-one onto function.  (Contributed by Mario
+       Carneiro, 12-May-2014.) $)
+    f1o2d $p |- ( ph -> F : A -1-1-onto-> B ) $=
+      ( wf1o ccnv cmpt wceq f1ocnv2d simpld ) ADEHMHNCEGOPABCDEFGHIJKLQR $.
+  $}
+
+  ${
+    $d a b A $.  $d a b B $.  $d a b F $.  $d a b ph $.
+    f1opw2.1 $e |- ( ph -> F : A -1-1-onto-> B ) $.
+    f1opw2.2 $e |- ( ph -> ( `' F " a ) e. _V ) $.
+    f1opw2.3 $e |- ( ph -> ( F " b ) e. _V ) $.
+    $( A one-to-one mapping induces a one-to-one mapping on power sets.  This
+       version of ~ f1opw avoids the Axiom of Replacement.  (Contributed by
+       Mario Carneiro, 26-Jun-2015.) $)
+    f1opw2 $p |- ( ph ->
+        ( b e. ~P A |-> ( F " b ) ) : ~P A -1-1-onto-> ~P B ) $=
+      ( cpw cv cima wcel wss crn imassrn wceq syl cvv adantr ccnv cmpt eqid wfo
+      wf1o f1ofo forn syl5sseq wb elpwg mpbird cdm dfdm4 f1odm syl5eqr wa elpwi
+      adantl foimacnv syl2an eqcomd imaeq2 eqeq2d syl5ibrcom wf1 f1of1 f1imacnv
+      impbid f1o2d ) AFEBJZCJZDFKZLZDUAZEKZLZFVJVMUBZVQUCAVMVKMZVLVJMZAVRVMCNZA
+      DOZVMCDVLPABCDUDZWACQABCDUEZWBGBCDUFRZBCDUGRUHAVMSMVRVTUIIVMCSUJRUKTAVPVJ
+      MZVOVKMZAWEVPBNZAVNOZVPBVNVOPAWHDULZBDUMAWCWIBQGBCDUNRUOUHAVPSMWEWGUIHVPB
+      SUJRUKTAVSWFUPZUPZVLVPQZVOVMQZWKWMWLVODVPLZQWKWNVOAWBVOCNZWNVOQWJWDWFWOVS
+      VOCUQURBCVODUSUTVAWLVMWNVOVLVPDVBVCVDWKWLWMVLVNVMLZQWKWPVLABCDVEZVLBNZWPV
+      LQWJAWCWQGBCDVFRVSWRWFVLBUQTBCVLDVGUTVAWMVPWPVLVOVMVNVBVCVDVHVI $.
+  $}
+
+  ${
+    $d a b A $.  $d a b B $.  $d a b F $.
+    $( A one-to-one mapping induces a one-to-one mapping on power sets.
+       (Contributed by Stefan O'Rear, 18-Nov-2014.)  (Revised by Mario
+       Carneiro, 26-Jun-2015.) $)
+    f1opw $p |- ( F : A -1-1-onto-> B -> ( b e. ~P A |-> ( F " b ) ) :
+          ~P A -1-1-onto-> ~P B ) $=
+      ( va wf1o id ccnv wfun cv cima cvv wfo dff1o3 simprbi vex funimaex f1ofun
+      wcel syl f1opw2 ) ABCFZABCEDUBGUBCHZIZUCEJZKLSUBABCMUDABCNOUCUEEPQTUBCICD
+      JZKLSABCRCUFDPQTUA $.
+  $}
+
+  ${
+    $d k x y A $.  $d x y B $.  $d k x ph $.  $d k x y W $.  $d k x y Z $.
+    suppss2.n $e |- ( ( ph /\ k e. ( A \ W ) ) -> B = Z ) $.
+    $( Show that the support of a function is contained in a set.  (Contributed
+       by Mario Carneiro, 19-Dec-2014.)  (Revised by Mario Carneiro,
+       22-Mar-2015.) $)
+    suppss2 $p |- ( ph -> ( `' ( k e. A |-> B ) " ( _V \ { Z } ) ) C_ W ) $=
+      ( cmpt ccnv cvv csn cdif cima wcel crab eqid mptpreima cv wne wa eldifsni
+      wn wceq eldif sylan2br expr necon1ad syl5 3impia rabssdv syl5eqss ) ADBCH
+      ZIJFKLZMCUMNZDBOEDBCUMULULPQAUNDBEADRZBNZUNUOENZUNCFSAUPTZUQCJFUAURUQCFAU
+      PUQUBZCFUCZUPUSTAUOBELNUTUOBEUDGUEUFUGUHUIUJUK $.
+  $}
+
+  ${
+    $d ph x $.  $d Y x $.  $d Z x $.
+    suppssfv.a $e |- ( ph -> ( `' ( x e. D |-> A ) " ( _V \ { Y } ) ) C_ L ) $.
+    suppssfv.f $e |- ( ph -> ( F ` Y ) = Z ) $.
+    suppssfv.v $e |- ( ( ph /\ x e. D ) -> A e. V ) $.
+    $( Formula building theorem for support restriction, on a function which
+       preserves zero.  (Contributed by Stefan O'Rear, 9-Mar-2015.) $)
+    suppssfv $p |- ( ph -> ( `' ( x e. D |-> ( F ` A ) ) "
+            ( _V \ { Z } ) ) C_ L ) $=
+      ( cfv cmpt ccnv cvv csn cdif wcel wceq cima crab wne cv eldifsni elex syl
+      wa adantr wi fveq2 eqeq1d syl5ibrcom necon3d imp eldifsn sylanbrc ex syl5
+      ss2rabdv eqid mptpreima 3sstr4g sstrd ) ABDCEMZNZOPIQRZUAZBDCNZOPHQRZUAZF
+      AVEVGSZBDUBCVJSZBDUBVHVKAVLVMBDVLVEIUCZABUDDSZUHZVMVEPIUEVPVNVMVPVNUHCPSZ
+      CHUCZVMVPVQVNVPCGSVQLCGUFUGUIVPVNVRAVNVRUJVOACHVEIAVEITCHTZHEMZITKVSVEVTI
+      CHEUKULUMUNUIUOCPHUPUQURUSUTBDVEVGVFVFVAVBBDCVJVIVIVAVBVCJVD $.
+  $}
+
+  ${
+    $d ph v $.  $d ph x $.  $d B v $.  $d O v $.  $d R v $.  $d Y v $.
+    $d Y x $.  $d Z v $.  $d Z x $.
+    suppssov1.s $e |- ( ph ->
+        ( `' ( x e. D |-> A ) " ( _V \ { Y } ) ) C_ L ) $.
+    suppssov1.o $e |- ( ( ph /\ v e. R ) -> ( Y O v ) = Z ) $.
+    suppssov1.a $e |- ( ( ph /\ x e. D ) -> A e. V ) $.
+    suppssov1.b $e |- ( ( ph /\ x e. D ) -> B e. R ) $.
+    $( Formula building theorem for support restrictions: operator with left
+       annihilator.  (Contributed by Stefan O'Rear, 9-Mar-2015.) $)
+    suppssov1 $p |- ( ph -> ( `' ( x e. D |-> ( A O B ) ) "
+            ( _V \ { Z } ) ) C_ L ) $=
+      ( co cvv wcel wceq cmpt ccnv csn cdif cima crab cv wa wne elex syl adantr
+      eldifsni wral ralrimiva oveq2 eqeq1d rspcva syl2anc oveq1 syl5ibrcom syl5
+      necon3d imp eldifsn sylanbrc ex ss2rabdv eqid mptpreima 3sstr4g sstrd ) A
+      BFDEIQZUAZUBRLUCUDZUEZBFDUAZUBRKUCUDZUEZHAVMVOSZBFUFDVRSZBFUFVPVSAVTWABFA
+      BUGFSZUHZVTWAWCVTUHDRSZDKUIZWAWCWDVTWCDJSWDODJUJUKULWCVTWEVTVMLUIWCWEVMRL
+      UMWCDKVMLWCVMLTDKTZKEIQZLTZWCEGSKCUGZIQZLTZCGUNZWHPAWLWBAWKCGNUOULWKWHCEG
+      WIETWJWGLWIEKIUPUQURUSWFVMWGLDKEIUTUQVAVCVBVDDRKVEVFVGVHBFVMVOVNVNVIVJBFD
+      VRVQVQVIVJVKMVL $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
