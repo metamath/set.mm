@@ -49998,10 +49998,11 @@ $)
        30-Jan-2014.) $)
     ovelrn $p |- ( F Fn ( A X. B ) -> ( C e. ran F <->
                   E. x e. A E. y e. B C = ( x F y ) ) ) $=
-      ( vz cxp wfn crn wcel cv co wceq wrex cab fnrnov eleq2d cvv rexlimivw
-      ovex eleq1 mpbiri eqeq1 2rexbidv elab3 syl6bb ) FCDHIZEFJZKEGLZALZBLZFMZN
-      ZBDOACOZGPZKEUMNZBDOZACOZUHUIUPEABGCDFQRUOUSGEURESKZACUQUTBDUQUTUMSKUKULF
-      UAEUMSUBUCTTUJENUNUQABCDUJEUMUDUEUFUG $.
+      ( vz cxp wfn crn wcel cv co wceq wrex cab fnrnov cvv wi a1i eleq2d fnovex
+      elex w3a eleq1 syl5ibrcom 3expb rexlimdvva eqeq1 2rexbidv elabg pm5.21ndd
+      wb bitrd ) FCDHIZEFJZKEGLZALZBLZFMZNZBDOACOZGPZKZEUTNZBDOACOZUOUPVCEABGCD
+      FQUAUOERKZVDVFVDVGSUOEVCUCTUOVEVGABCDUOURCKZUSDKZVEVGSUOVHVIUDVGVEUTRKURU
+      SCDFUBEUTRUEUFUGUHVGVDVFUMSUOVBVFGERUQENVAVEABCDUQEUTUIUJUKTULUN $.
 
     $( Membership relation for the values of a function whose image is a
        subclass.  (Contributed by Mario Carneiro, 23-Dec-2013.) $)

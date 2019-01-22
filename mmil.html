@@ -860,6 +860,13 @@ or one of its variants to remove the antecedent (example: elxp4).</LI>
 
 <LI>If a statement has multiple equivalences in set.mm (e.g. mo2 and mo3 , or dffun2 and dffun3 ) and only some of them in iset.mm, sometimes a pretty similar proof will work (that is, which one to use in the original proof may have been a fairly arbitrary choice).</LI>
 
+<LI>A number of theorems related to functions (especially ovex and fvex ) in
+set.mm perform case elimination based on whether we are evaluating the function
+within its domain or outside it. The iset.mm replacements (fnovex and funfvex )
+only work within the domain. This is rarely a problem but often means that
+logic must be rearranged, for example by changing rexlimivw to rexlimdva .
+(example: ovelrn or indeed most uses of fnovex and funfvex ).</LI>
+
 <LI>If you get stuck, ask! (for example in a github issue or on the mailing list). We have a number of contributors who have experience in constructive mathematics in general, or iset.mm in particular, and one of the best things about doing/learning mathematics in metamath is the collaborative nature of how we develop it.
 </UL>
 
