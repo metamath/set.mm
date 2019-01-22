@@ -807,16 +807,16 @@ COLOR="#006633">How to intuitionize classical proofs</FONT></B>&nbsp;&nbsp;&nbsp
 can be baffling. One can get over some of the intial hurdles of understanding
 how constructive mathematics works and why it might be interesting by reading
 <A HREF="#Bauer">[Bauer]</A> but that work does little to explain in concrete terms how to write
-proofs in intuitionistc logic. Fortunately, metamath helps with one of the
+proofs in intuitionistic logic. Fortunately, metamath helps with one of the
 biggest hurdles: noticing when one is even using the law of the excluded
 middle or the axiom of choice. But suppose you have a classical proof from
 the Metamath Proof Explorer and it fails to verify when you copy it over to
-the Intuitionistc Logic Explorer. What then? Here are some rules of thumb
+the Intuitionistic Logic Explorer. What then? Here are some rules of thumb
 in converting classical proofs to intuitionistic ones.</P>
 
 <UL>
 
-<LI>If you see pm2.61 or its variants you'll probably end up with two theorems for the two cases. In particular, if the cases were A e. _V and -. A e. _V you probably just care about the A e. _V case.</LI>
+<LI>If you see case elimination (pm2.61 or its variants) you'll probably end up with two theorems for the two cases. In particular, if the cases were A e. _V and -. A e. _V you probably just care about the A e. _V case.</LI>
 
 <LI>Non-empty almost always needs to be changed to inhabited.</LI>
 
@@ -829,6 +829,16 @@ in converting classical proofs to intuitionistic ones.</P>
 <LI>If there is case elimination on whether variables are distinct, most of the time you just need the variant with distinct variables. Sometimes you can then remove the constraint with a temporary variable (e.g. the various sbco2* variants, nfrabya).</LI>
 
 <LI>Sometimes one direction of a biconditional holds, or subset holds instead of equality. You might be able to keep the easy direction and worry about the other one later.</LI>
+
+<LI>If there is case elimination sometimes only one of the two cases is possible. For
+example, in mosubopt the rest of the formula being proved constrains which case
+matters.</LI>
+
+<LI>If you need an additional condition (for example, because the original
+proof used case elimination) and you are proving a biconditional, consider whether
+both sides of the biconditional imply the condition. If so, you'll be able to
+prove the biconditional with that condition as an antecedent, and then use pm5.21nii
+or one of its variants to remove the antecedent (example: elxp4).</LI>
 
 <LI>If your proof relies on dveeq2 try dveeq2or and likewise for the other things downstream of ax-i12 or ax-bnd .</LI>
 
@@ -849,6 +859,13 @@ in converting classical proofs to intuitionistic ones.</P>
 <LI>In many cases statements which are equivalent in classical logic become several non-equivalent statements (e.g. xor, ordinals, non-empty versus inhabited, apartness versus negated equality). This is usually a good place to look for a literature reference, but don't be afraid to change the statement being proved to "what you really meant is X" as appropriate.</LI>
 
 <LI>If a statement has multiple equivalences in set.mm (e.g. mo2 and mo3 , or dffun2 and dffun3 ) and only some of them in iset.mm, sometimes a pretty similar proof will work (that is, which one to use in the original proof may have been a fairly arbitrary choice).</LI>
+
+<LI>A number of theorems related to functions (especially ovex and fvex ) in
+set.mm perform case elimination based on whether we are evaluating the function
+within its domain or outside it. The iset.mm replacements (fnovex and funfvex )
+only work within the domain. This is rarely a problem but often means that
+logic must be rearranged, for example by changing rexlimivw to rexlimdva .
+(example: ovelrn or indeed most uses of fnovex and funfvex ).</LI>
 
 <LI>If you get stuck, ask! (for example in a github issue or on the mailing list). We have a number of contributors who have experience in constructive mathematics in general, or iset.mm in particular, and one of the best things about doing/learning mathematics in metamath is the collaborative nature of how we develop it.
 </UL>
