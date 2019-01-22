@@ -50032,18 +50032,6 @@ $)
       EBGHZDEABIZCJIZKDELZUBMZCDEUBNTUCUAGUDCODEABPUACUCFQRS $.
   $}
 
-  ${
-    $d x y S $.  $d x y F $.
-    oprssdm.1 $e |- -. (/) e. S $.
-    oprssdm.2 $e |- ( ( x e. S /\ y e. S ) -> ( x F y ) e. S ) $.
-    $( Domain of closure of an operation.  (Contributed by NM, 24-Aug-1995.) $)
-    oprssdm $p |- ( S X. S ) C_ dom F $=
-      ( cxp cdm relxp cv cop wcel wa opelxp cfv co df-ov syl5eqelr wn c0 eleq1d
-      ndmfv mtbiri con4i syl sylbi relssi ) ABCCGZDHZCCIAJZBJZKZUHLUJCLUKCLMZUL
-      UILZUJUKCCNUMULDOZCLZUNUMUOUJUKDPCUJUKDQFRUNUPUNSZUPTCLEUQUOTCULDUBUAUCUD
-      UEUFUG $.
-  $}
-
   $( The value of an operation outside its domain.  (Contributed by Alexander
      van der Vekens, 7-Sep-2017.) $)
   nssdmovg $p |- ( ( dom F C_ ( R X. S ) /\ -. ( A e. R /\ B e. S ) )
