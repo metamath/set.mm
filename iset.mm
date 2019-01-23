@@ -50543,10 +50543,12 @@ $)
     $( If a two-parameter class is not empty, constrain the implicit pair.
        (Contributed by Stefan O'Rear, 7-Mar-2015.) $)
     elmpt2cl $p |- ( X e. ( S F T ) -> ( S e. A /\ T e. B ) ) $=
-      ( vz co wcel cop cxp wa cdm cv wceq coprab cmpt2 df-mpt2 dmoprabss elfvdm
-      eqtri dmeqi eqsstri cfv df-ov eleq2s sseldi opelxp sylib ) IFGHLZMZFGNZCD
-      OZMFCMGDMPUOHQZUQUPURARCMBRDMPKRESZPABKTZQUQHUTHABCDEUAUTJABKCDEUBUEUFUSA
-      BKCDUCUGUPURMIUPHUHUNIUPHUDFGHUIUJUKFGCDULUM $.
+      ( vz co wcel cop cxp wa cdm cv wceq coprab cmpt2 dmoprabss wrel
+      df-mpt2 eqtri dmeqi eqsstri wfun mpt2fun funrel ax-mp relelfvdm
+      cfv mpan df-ov eleq2s sseldi opelxp sylib ) IFGHLZMZFGNZCDOZMFC
+      MGDMPVAHQZVCVBVDARCMBRDMPKRESZPABKTZQVCHVFHABCDEUAVFJABKCDEUDUE
+      UFVEABKCDUBUGVBVDMZIVBHUMZUTHUCZIVHMVGHUHVIABCDEHJUIHUJUKIVBHUL
+      UNFGHUOUPUQFGCDURUS $.
 
     $( If a two-parameter class is not empty, the first argument is in its
        nominal domain.  (Contributed by FL, 15-Oct-2012.)  (Revised by Stefan
