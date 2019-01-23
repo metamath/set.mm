@@ -50581,18 +50581,6 @@ $)
   $}
 
   ${
-    $d x w A $.  $d w B $.  $d w F $.
-    relmptopab.1 $e |- F = ( x e. A |-> { <. y , z >. | ph } ) $.
-    $( Any function to sets of ordered pairs produces a relation on function
-       value unconditionally.  (Contributed by Mario Carneiro, 7-Aug-2014.)
-       (Proof shortened by Mario Carneiro, 24-Dec-2016.) $)
-    relmptopab $p |- Rel ( F ` B ) $=
-      ( cfv wrel cvv cxp wss copab fvmptss cv wcel relopab df-rel mpbi a1i mprg
-      mpbir ) FGIZJUDKKLZMZACDNZUEMZUFBEBEUGUEFGHOUHBPEQUGJUHACDRUGSTUAUBUDSUC
-      $.
-  $}
-
-  ${
     $d x y A $.  $d x y B $.  $d y C $.  $d x D $.  $d x y ph $.
     f1od.1 $e |- F = ( x e. A |-> C ) $.
     ${
