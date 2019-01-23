@@ -50695,6 +50695,585 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                             Function operation
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c oF $.
+  $c oR $.
+
+  $( Extend class notation to include mapping of an operation to a function
+     operation. $)
+  cof $a class oF R $.
+
+  $( Extend class notation to include mapping of a binary relation to a
+     function relation. $)
+  cofr $a class oR R $.
+
+  ${
+    $d f g x R $.
+    $( Define the function operation map.  The definition is designed so that
+       if ` R ` is a binary operation, then ` oF R ` is the analogous operation
+       on functions which corresponds to applying ` R ` pointwise to the values
+       of the functions.  (Contributed by Mario Carneiro, 20-Jul-2014.) $)
+    df-of $a |- oF R = ( f e. _V , g e. _V |->
+     ( x e. ( dom f i^i dom g ) |-> ( ( f ` x ) R ( g ` x ) ) ) ) $.
+
+    $( Define the function relation map.  The definition is designed so that if
+       ` R ` is a binary relation, then ` oF R ` is the analogous relation on
+       functions which is true when each element of the left function relates
+       to the corresponding element of the right function.  (Contributed by
+       Mario Carneiro, 28-Jul-2014.) $)
+    df-ofr $a |- oR R = { <. f , g >. |
+      A. x e. ( dom f i^i dom g ) ( f ` x ) R ( g ` x ) } $.
+  $}
+
+  ${
+    $d f g x y R $.  $d f g x y S $.
+    $( Equality theorem for function operation.  (Contributed by Mario
+       Carneiro, 20-Jul-2014.) $)
+    ofeq $p |- ( R = S -> oF R = oF S ) $=
+      ( vf vg vx wceq cvv cv cdm cin cfv co cmpt cmpt2 cof wcel w3a simp1 oveqd
+      df-of mpteq2dv mpt2eq3dva 3eqtr4g ) ABFZCDGGECHZIDHZIJZEHZUEKZUHUFKZALZMZ
+      NCDGGEUGUIUJBLZMZNAOBOUDCDGGULUNUDUEGPZUFGPZQZEUGUKUMUQABUIUJUDUOUPRSUAUB
+      EACDTEBCDTUC $.
+
+    $( Equality theorem for function relation.  (Contributed by Mario Carneiro,
+       28-Jul-2014.) $)
+    ofreq $p |- ( R = S -> oR R = oR S ) $=
+      ( vx vf vg wceq cv cfv wbr cdm cin wral cofr breq ralbidv opabbidv df-ofr
+      copab 3eqtr4g ) ABFZCGZDGZHZUAEGZHZAIZCUBJUDJKZLZDERUCUEBIZCUGLZDERAMBMTU
+      HUJDETUFUICUGUCUEABNOPCADEQCBDEQS $.
+
+    $( A function operation restricted to a set is a set.  (Contributed by NM,
+       28-Jul-2014.) $)
+    ofexg $p |- ( A e. V -> ( oF R |` A ) e. _V ) $=
+      ( vf vg vx cof wfun wcel cres cvv cv cdm cin cmpt df-of mpt2fun resfunexg
+      cfv co mpan ) BGZHACIUBAJKIDEKKFDLZMELZMNFLZUCSUEUDSBTOUBFBDEPQUBACRUA $.
+
+    nfof.1 $e |- F/_ x R $.
+    $( Hypothesis builder for function operation.  (Contributed by Mario
+       Carneiro, 20-Jul-2014.) $)
+    nfof $p |- F/_ x oF R $=
+      ( cof nfcv ) ABDE $.
+
+    $( Hypothesis builder for function relation.  (Contributed by Mario
+       Carneiro, 28-Jul-2014.) $)
+    nfofr $p |- F/_ x oR R $=
+      ( cofr nfcv ) ABDE $.
+  $}
+
+  ${
+    $d x A $.  $d f g x F $.  $d f g x G $.  $d x ph $.  $d x S $.  $d x X $.
+    $d f g x R $.
+    offval.1 $e |- ( ph -> F Fn A ) $.
+    offval.2 $e |- ( ph -> G Fn B ) $.
+    offval.3 $e |- ( ph -> A e. V ) $.
+    offval.4 $e |- ( ph -> B e. W ) $.
+    offval.5 $e |- ( A i^i B ) = S $.
+    ${
+      offval.6 $e |- ( ( ph /\ x e. A ) -> ( F ` x ) = C ) $.
+      offval.7 $e |- ( ( ph /\ x e. B ) -> ( G ` x ) = D ) $.
+      $( Value of an operation applied to two functions.  (Contributed by Mario
+         Carneiro, 20-Jul-2014.) $)
+      offval $p |- ( ph -> ( F oF R G ) = ( x e. S |-> ( C R D ) ) ) $=
+        ( cvv vf vg cof co cdm cin cfv cmpt wcel wceq wfn fnex syl2anc fndm syl
+        cv ineq12d syl6eq mpteq1d inex1g syl5eqelr mptexg 3syl eqeltrd wa fveq1
+        dmeq ineqan12d oveqan12d mpteq12dv df-of ovmpt2ga syl3anc eleq2i bitr3i
+        elin adantrr adantrl oveq12d sylan2b mpteq2dva 3eqtrd ) AIJGUCZUDZBIUEZ
+        JUEZUFZBUPZIUGZWHJUGZGUDZUHZBHWKUHZBHEFGUDZUHAITUIZJTUIZWLTUIWDWLUJAICU
+        KZCKUIZWOMOCKIULUMAJDUKZDLUIWPNPDLJULUMAWLWMTABWGHWKAWGCDUFZHAWECWFDAWQ
+        WECUJMCIUNUOAWSWFDUJNDJUNUOUQQURUSZAWRHTUIWMTUIOWRHWTTQCDKUTVABHWKTVBVC
+        VDUAUBIJTTBUAUPZUEZUBUPZUEZUFZWHXBUGZWHXDUGZGUDZUHWLWCTXBIUJZXDJUJZVEBX
+        FXIWGWKXJXKXCWEXEWFXBIVGXDJVGVHXJXKXGWIXHWJGWHXBIVFWHXDJVFVIVJBGUAUBVKV
+        LVMXAABHWKWNWHHUIZAWHCUIZWHDUIZVEZWKWNUJXLWHWTUIXOWTHWHQVNWHCDVPVOAXOVE
+        WIEWJFGAXMWIEUJXNRVQAXNWJFUJXMSVRVSVTWAWB $.
+
+      $( Value of a relation applied to two functions.  (Contributed by Mario
+         Carneiro, 28-Jul-2014.) $)
+      ofrfval $p |- ( ph -> ( F oR R G <-> A. x e. S C R D ) ) $=
+        ( wcel vf vg cofr wbr cv cfv cdm cin wral cvv wb fnex syl2anc wceq dmeq
+        wfn wa ineqan12d fveq1 breqan12d raleqbidv df-ofr brabga ineq12d syl6eq
+        fndm raleqdv inss1 eqsstr3i sseli sylan2 inss2 breq12d ralbidva 3bitrd
+        syl ) AIJGUCZUDZBUEZIUFZVSJUFZGUDZBIUGZJUGZUHZUIZWBBHUIEFGUDZBHUIAIUJTZ
+        JUJTZVRWFUKAICUPZCKTWHMOCKIULUMAJDUPZDLTWINPDLJULUMVSUAUEZUFZVSUBUEZUFZ
+        GUDZBWLUGZWNUGZUHZUIWFUAUBIJVQUJUJWLIUNZWNJUNZUQWPWBBWSWEWTXAWQWCWRWDWL
+        IUOWNJUOURWTXAWMVTWOWAGVSWLIUSVSWNJUSUTVABGUAUBVBVCUMAWBBWEHAWECDUHZHAW
+        CCWDDAWJWCCUNMCIVFVPAWKWDDUNNDJVFVPVDQVEVGAWBWGBHAVSHTZUQVTEWAFGXCAVSCT
+        VTEUNHCVSHXBCQCDVHVIVJRVKXCAVSDTWAFUNHDVSHXBDQCDVLVIVJSVKVMVNVO $.
+    $}
+
+    ${
+      ofval.6 $e |- ( ( ph /\ X e. A ) -> ( F ` X ) = C ) $.
+      ofval.7 $e |- ( ( ph /\ X e. B ) -> ( G ` X ) = D ) $.
+      $( Evaluate a function operation at a point.  (Contributed by Mario
+         Carneiro, 20-Jul-2014.) $)
+      ofval $p |- ( ( ph /\ X e. S ) -> ( ( F oF R G ) ` X ) = ( C R D ) ) $=
+        ( cfv vx wcel wa cof co cv cmpt wceq eqidd offval fveq1d adantr oveq12d
+        fveq2 eqid ovex fvmpt adantl inss1 eqsstr3i sseli sylan2 inss2 3eqtrd
+        cin ) ALGUBZUCZLHIFUDUEZTZLUAGUAUFZHTZVJITZFUEZUGZTZLHTZLITZFUEZDEFUEAV
+        IVOUHVFALVHVNAUABCVKVLFGHIJKMNOPQAVJBUBUCVKUIAVJCUBUCVLUIUJUKULVFVOVRUH
+        AUALVMVRGVNVJLUHVKVPVLVQFVJLHUNVJLIUNUMVNUOVPVQFUPUQURVGVPDVQEFVFALBUBV
+        PDUHGBLGBCVEZBQBCUSUTVARVBVFALCUBVQEUHGCLGVSCQBCVCUTVASVBUMVD $.
+
+      $( Exhibit a function relation at a point.  (Contributed by Mario
+         Carneiro, 28-Jul-2014.) $)
+      ofrval $p |- ( ( ph /\ F oR R G /\ X e. S ) -> C R D ) $=
+        ( wcel vx cofr wbr w3a cfv wa cv wral eqidd ofrfval biimpa wceq breq12d
+        wi fveq2 rspccv syl 3impia simp1 cin inss1 eqsstr3i simp3 syl2anc inss2
+        sseldi 3brtr3d ) AHIFUBUCZLGTZUDZLHUEZLIUEZDEFAVHVIVKVLFUCZAVHUFUAUGZHU
+        EZVNIUEZFUCZUAGUHZVIVMUNAVHVRAUABCVOVPFGHIJKMNOPQAVNBTUFVOUIAVNCTUFVPUI
+        UJUKVQVMUALGVNLULVOVKVPVLFVNLHUOVNLIUOUMUPUQURVJALBTVKDULAVHVIUSZVJGBLG
+        BCUTZBQBCVAVBAVHVIVCZVFRVDVJALCTVLEULVSVJGCLGVTCQBCVEVBWAVFSVDVG $.
+    $}
+
+    $( The function operation produces a function.  (Contributed by Mario
+       Carneiro, 22-Jul-2014.) $)
+    offn $p |- ( ph -> ( F oF R G ) Fn S ) $=
+      ( vx co wfn cfv wcel wa cof cv cmpt ovex eqid fnmpti offval fneq1d mpbiri
+      eqidd ) AFGDUAPZEQOEOUBZFRZULGRZDPZUCZEQOEUOUPUMUNDUDUPUEUFAEUKUPAOBCUMUN
+      DEFGHIJKLMNAULBSTUMUJAULCSTUNUJUGUHUI $.
+  $}
+
+  ${
+    ofmresval.f $e |- ( ph -> F e. A ) $.
+    ofmresval.g $e |- ( ph -> G e. B ) $.
+    $( Value of a restriction of the function operation map.  (Contributed by
+       NM, 20-Oct-2014.) $)
+    ofmresval $p |- ( ph -> ( F ( oF R |` ( A X. B ) ) G ) = ( F oF R G ) ) $=
+      ( wcel cof cxp cres co wceq ovres syl2anc ) AEBIFCIEFDJZBCKLMEFQMNGHEFBCQ
+      OP $.
+  $}
+
+  $( Function value of a pointwise composition.  (Contributed by Stefan O'Rear,
+     5-Oct-2014.)  (Proof shortened by Mario Carneiro, 5-Jun-2015.) $)
+  fnfvof $p |- ( ( ( F Fn A /\ G Fn A ) /\ ( A e. V /\ X e. A ) ) ->
+      ( ( F oF R G ) ` X ) = ( ( F ` X ) R ( G ` X ) ) ) $=
+    ( wfn wa wcel cof co cfv wceq simpll simplr simpr inidm eqidd ofval anasss
+    ) CAGZDAGZHZAEIZFAIZFCDBJKLFCLZFDLZBKMUCUDHZAAUFUGBACDEEFUAUBUDNUAUBUDOUCUD
+    PZUIAQUHUEHZUFRUJUGRST $.
+
+  ${
+    $d z A $.  $d z C $.  $d y z G $.  $d x y z ph $.  $d x y S $.  $d x y T $.
+    $d x y z F $.  $d x y z R $.  $d x y z U $.
+    off.1 $e |- ( ( ph /\ ( x e. S /\ y e. T ) ) -> ( x R y ) e. U ) $.
+    off.2 $e |- ( ph -> F : A --> S ) $.
+    off.3 $e |- ( ph -> G : B --> T ) $.
+    off.4 $e |- ( ph -> A e. V ) $.
+    off.5 $e |- ( ph -> B e. W ) $.
+    off.6 $e |- ( A i^i B ) = C $.
+    $( The function operation produces a function.  (Contributed by Mario
+       Carneiro, 20-Jul-2014.) $)
+    off $p |- ( ph -> ( F oF R G ) : C --> U ) $=
+      ( vz cof co wf cv cfv cmpt wcel wa wral cin inss1 eqsstr3i ffvelrn syl2an
+      sseli inss2 ralrimivva adantr wceq oveq1 eleq1d oveq2 syl21anc eqid fmptd
+      rspc2va wfn ffn syl eqidd offval feq1d mpbird ) AFJKLGUBUCZUDFJUAFUAUEZKU
+      FZVPLUFZGUCZUGZUDAUAFVSJVTAVPFUHZUIVQHUHZVRIUHZBUEZCUEZGUCZJUHZCIUJBHUJZV
+      SJUHZADHKUDZVPDUHZWBWAPFDVPFDEUKZDTDEULUMUPDHVPKUNUOAEILUDZVPEUHZWCWAQFEV
+      PFWLETDEUQUMUPEIVPLUNUOAWHWAAWGBCHIOURUSWGWIVQWEGUCZJUHBCVQVRHIWDVQUTWFWO
+      JWDVQWEGVAVBWEVRUTWOVSJWEVRVQGVCVBVGVDVTVEVFAFJVOVTAUADEVQVRGFKLMNAWJKDVH
+      PDHKVIVJAWMLEVHQEILVIVJRSTAWKUIVQVKAWNUIVRVKVLVMVN $.
+  $}
+
+  ${
+    $d x A $.  $d x C $.  $d x F $.  $d x G $.  $d x ph $.  $d x R $.
+    ofres.1 $e |- ( ph -> F Fn A ) $.
+    ofres.2 $e |- ( ph -> G Fn B ) $.
+    ofres.3 $e |- ( ph -> A e. V ) $.
+    ofres.4 $e |- ( ph -> B e. W ) $.
+    ofres.5 $e |- ( A i^i B ) = C $.
+    $( Restrict the operands of a function operation to the same domain as that
+       of the operation itself.  (Contributed by Mario Carneiro,
+       15-Sep-2014.) $)
+    ofres $p |- ( ph -> ( F oF R G ) = ( ( F |` C ) oF R ( G |` C ) ) ) $=
+      ( vx co cfv wcel cvv wfn cof cv cmpt cres eqidd offval wss inss1 eqsstr3i
+      wa cin fnssres sylancl inss2 ssexg sylancr inidm wceq fvres adantl eqtr4d
+      ) AFGEUAZPODOUBZFQZVCGQZEPUCFDUDZGDUDZVBPAOBCVDVEEDFGHIJKLMNAVCBRUJVDUEAV
+      CCRUJVEUEUFAODDVDVEEDVFVGSSAFBTDBUGZVFDTJDBCUKZBNBCUHUIZBDFULUMAGCTDCUGVG
+      DTKDVICNBCUNUICDGULUMAVHBHRDSRVJLDBHUOUPZVKDUQVCDRZVCVFQVDURAVCDFUSUTVLVC
+      VGQVEURAVCDGUSUTUFVA $.
+  $}
+
+  ${
+    $d x y z A $.  $d y z B $.  $d y z C $.  $d y F $.  $d y G $.  $d x y ph $.
+    $d x y z R $.
+    offval2.1 $e |- ( ph -> A e. V ) $.
+    offval2.2 $e |- ( ( ph /\ x e. A ) -> B e. W ) $.
+    offval2.3 $e |- ( ( ph /\ x e. A ) -> C e. X ) $.
+    offval2.4 $e |- ( ph -> F = ( x e. A |-> B ) ) $.
+    offval2.5 $e |- ( ph -> G = ( x e. A |-> C ) ) $.
+    $( The function operation expressed as a mapping.  (Contributed by Mario
+       Carneiro, 20-Jul-2014.) $)
+    offval2 $p |- ( ph -> ( F oF R G ) = ( x e. A |-> ( B R C ) ) ) $=
+      ( vy co cmpt wceq cof cv cfv wcel wral ralrimiva eqid fnmpt fneq1d mpbird
+      wfn inidm wa adantr fveq1d offval nffvmpt1 nfcv nfov fveq2 oveq12d cbvmpt
+      syl simpr fvmpt2 syl2anc mpteq2dva syl5eq eqtrd ) AGHFUARQCQUBZBCDSZUCZVJ
+      BCESZUCZFRZSZBCDEFRZSZAQCCVLVNFCGHIIAGCUKVKCUKZADJUDZBCUEVSAVTBCMUFBCDVKJ
+      VKUGZUHVCACGVKOUIUJAHCUKVMCUKZAEKUDZBCUEWBAWCBCNUFBCEVMKVMUGZUHVCACHVMPUI
+      UJLLCULAVJCUDZUMZVJGVKAGVKTWEOUNUOWFVJHVMAHVMTWEPUNUOUPAVPBCBUBZVKUCZWGVM
+      UCZFRZSVRQBCVOWJBVLVNFBCDVJUQBFURBCEVJUQUSQWJURVJWGTVLWHVNWIFVJWGVKUTVJWG
+      VMUTVAVBABCWJVQAWGCUDZUMZWHDWIEFWLWKVTWHDTAWKVDZMBCDJVKWAVEVFWLWKWCWIETWM
+      NBCEKVMWDVEVFVAVGVHVI $.
+
+    $( The function relation acting on maps.  (Contributed by Mario Carneiro,
+       20-Jul-2014.) $)
+    ofrfval2 $p |- ( ph -> ( F oR R G <-> A. x e. A B R C ) ) $=
+      ( vy wbr wral wceq cofr cmpt cfv wfn wcel ralrimiva eqid fnmpt syl fneq1d
+      cv mpbird inidm wa adantr fveq1d ofrfval nffvmpt1 nfcv nfbr fveq2 breq12d
+      nfv cbvral simpr fvmpt2 syl2anc ralbidva syl5bb bitrd ) AGHFUARQUKZBCDUBZ
+      UCZVKBCEUBZUCZFRZQCSZDEFRZBCSZAQCCVMVOFCGHIIAGCUDVLCUDZADJUEZBCSVTAWABCMU
+      FBCDVLJVLUGZUHUIACGVLOUJULAHCUDVNCUDZAEKUEZBCSWCAWDBCNUFBCEVNKVNUGZUHUIAC
+      HVNPUJULLLCUMAVKCUEZUNZVKGVLAGVLTWFOUOUPWGVKHVNAHVNTWFPUOUPUQVQBUKZVLUCZW
+      HVNUCZFRZBCSAVSVPWKQBCBVMVOFBCDVKURBFUSBCEVKURUTWKQVCVKWHTVMWIVOWJFVKWHVL
+      VAVKWHVNVAVBVDAWKVRBCAWHCUEZUNZWIDWJEFWMWLWAWIDTAWLVEZMBCDJVLWBVFVGWMWLWD
+      WJETWNNBCEKVNWEVFVGVBVHVIVJ $.
+  $}
+
+  ${
+    $d ph v x $.  $d A x $.  $d B v x $.  $d D x $.  $d O v x $.  $d R v $.
+    $d Y v x $.  $d Z v x $.
+    suppssof1.s $e |- ( ph -> ( `' A " ( _V \ { Y } ) ) C_ L ) $.
+    suppssof1.o $e |- ( ( ph /\ v e. R ) -> ( Y O v ) = Z ) $.
+    suppssof1.a $e |- ( ph -> A : D --> V ) $.
+    suppssof1.b $e |- ( ph -> B : D --> R ) $.
+    suppssof1.d $e |- ( ph -> D e. W ) $.
+    $( Formula building theorem for support restrictions: vector operation with
+       left annihilator.  (Contributed by Stefan O'Rear, 9-Mar-2015.) $)
+    suppssof1 $p |- ( ph -> ( `' ( A oF O B ) " ( _V \ { Z } ) ) C_ L ) $=
+      ( vx ccnv cvv cof co csn cdif cima cv cfv cmpt wf wfn ffn syl inidm eqidd
+      wcel wa offval cnveqd imaeq1d feqmptd eqsstr3d fvex a1i ffvelrnda eqsstrd
+      suppssov1 ) ACDHUAUBZSZTLUCUDZUERERUFZCUGZVJDUGZHUBUHZSZVIUEGAVHVNVIAVGVM
+      AREEVKVLHECDJJAEICUICEUJOEICUKULAEFDUIDEUJPEFDUKULQQEUMAVJEUOUPZVKUNVOVLU
+      NUQURUSARBVKVLEFGHTKLAREVKUHZSZTKUCUDZUECSZVRUEGAVSVQVRACVPAREICOUTURUSMV
+      ANVKTUOVOVJCVBVCAEFVJDPVDVFVE $.
+  $}
+
+  ${
+    $d y A $.  $d x y C $.  $d x y F $.  $d x y G $.  $d x y H $.  $d x y ph $.
+    $d x D $.  $d x y R $.
+    ofco.1 $e |- ( ph -> F Fn A ) $.
+    ofco.2 $e |- ( ph -> G Fn B ) $.
+    ofco.3 $e |- ( ph -> H : D --> C ) $.
+    ofco.4 $e |- ( ph -> A e. V ) $.
+    ofco.5 $e |- ( ph -> B e. W ) $.
+    ofco.6 $e |- ( ph -> D e. X ) $.
+    ofco.7 $e |- ( A i^i B ) = C $.
+    $( The composition of a function operation with another function.
+       (Contributed by Mario Carneiro, 19-Dec-2014.) $)
+    ofco $p |- ( ph ->
+      ( ( F oF R G ) o. H ) = ( ( F o. H ) oF R ( G o. H ) ) ) $=
+      ( cfv vx vy cof co ccom cv cmpt ffvelrnda feqmptd wcel eqidd offval fveq2
+      wa oveq12d fmptco wfn wf wss cin inss1 eqsstr3i fss sylancl fnfco syl2anc
+      wceq inss2 inidm ffn syl fvco2 sylan eqtr4d ) AGHFUCZUDZIUEUAEUAUFZITZGTZ
+      VRHTZFUDZUGGIUEZHIUEZVOUDAUAUBEDVRUBUFZGTZWDHTZFUDWAIVPAEDVQIOUHAUAEDIOUI
+      AUBBCWEWFFDGHJKMNPQSAWDBUJUNWEUKAWDCUJUNWFUKULWDVRVGWEVSWFVTFWDVRGUMWDVRH
+      UMUOUPAUAEEVSVTFEWBWCLLAGBUQEBIURZWBEUQMAEDIURZDBUSWGODBCUTZBSBCVAVBEDBIV
+      CVDBEGIVEVFAHCUQECIURZWCEUQNAWHDCUSWJODWICSBCVHVBEDCIVCVDCEHIVEVFRREVIAIE
+      UQZVQEUJZVQWBTVSVGAWHWKOEDIVJVKZEGIVQVLVMAWKWLVQWCTVTVGWMEHIVQVLVMULVN $.
+  $}
+
+  ${
+    $d x A $.  $d x F $.  $d x G $.  $d x H $.  $d x ph $.  $d x R $.
+    offveq.1 $e |- ( ph -> A e. V ) $.
+    offveq.2 $e |- ( ph -> F Fn A ) $.
+    offveq.3 $e |- ( ph -> G Fn A ) $.
+    offveq.4 $e |- ( ph -> H Fn A ) $.
+    offveq.5 $e |- ( ( ph /\ x e. A ) -> ( F ` x ) = B ) $.
+    offveq.6 $e |- ( ( ph /\ x e. A ) -> ( G ` x ) = C ) $.
+    ${
+      offveq.7 $e |- ( ( ph /\ x e. A ) -> ( B R C ) = ( H ` x ) ) $.
+      $( Convert an identity of the operation to the analogous identity on the
+         function operation.  (Contributed by Mario Carneiro, 24-Jul-2014.) $)
+      offveq $p |- ( ph -> ( F oF R G ) = H ) $=
+        ( cof co cfv inidm offn cv wcel wa ofval eqtrd eqfnfvd ) ABCGHFRSZIACCF
+        CGHJJLMKKCUAZUBNABUCZCUDUEUKUITDEFSUKITACCDEFCGHJJUKLMKKUJOPUFQUGUH $.
+    $}
+
+    $d y A $.  $d y z B $.  $d y z C $.  $d x y z F $.  $d y z G $.  $d y H $.
+    $d y R $.  $d y ph $.
+    $( Equivalent expressions for equality with a function operation.
+       (Contributed by NM, 9-Oct-2014.)  (Proof shortened by Mario Carneiro,
+       5-Dec-2016.) $)
+    offveqb $p |- ( ph
+          -> ( H = ( F oF R G ) <-> A. x e. A ( H ` x ) = ( B R C ) ) ) $=
+      ( co wceq cmpt wral cof cfv wfn dffn5 sylib inidm offval eqeq12d cvv wcel
+      cv wb fvex a1i ralrimivw mpteqb syl bitrd ) AIGHFUAQZRBCBUKZIUBZSZBCDEFQZ
+      SZRZVAVCRBCTZAIVBUSVDAICUCIVBRNBCIUDUEABCCDEFCGHJJLMKKCUFOPUGUHAVAUIUJZBC
+      TVEVFULAVGBCVGAUTIUMUNUOBCVAVCUIUPUQUR $.
+  $}
+
+  ${
+    ofc1.1 $e |- ( ph -> A e. V ) $.
+    ofc1.2 $e |- ( ph -> B e. W ) $.
+    ofc1.3 $e |- ( ph -> F Fn A ) $.
+    ofc1.4 $e |- ( ( ph /\ X e. A ) -> ( F ` X ) = C ) $.
+    $( Left operation by a constant.  (Contributed by Mario Carneiro,
+       24-Jul-2014.) $)
+    ofc1 $p |- ( ( ph /\ X e. A ) ->
+      ( ( ( A X. { B } ) oF R F ) ` X ) = ( B R C ) ) $=
+      ( csn cxp wcel wfn fnconstg syl inidm cfv wceq fvconst2g sylan ofval ) AB
+      BCDEBBCNOZFGGIACHPZUFBQKBCHRSLJJBTAUGIBPIUFUACUBKBCIHUCUDMUE $.
+  $}
+
+  ${
+    ofc2.1 $e |- ( ph -> A e. V ) $.
+    ofc2.2 $e |- ( ph -> B e. W ) $.
+    ofc2.3 $e |- ( ph -> F Fn A ) $.
+    ofc2.4 $e |- ( ( ph /\ X e. A ) -> ( F ` X ) = C ) $.
+    $( Right operation by a constant.  (Contributed by NM, 7-Oct-2014.) $)
+    ofc2 $p |- ( ( ph /\ X e. A ) ->
+      ( ( F oF R ( A X. { B } ) ) ` X ) = ( C R B ) ) $=
+      ( csn cxp wcel wfn fnconstg syl inidm cfv wceq fvconst2g sylan ofval ) AB
+      BDCEBFBCNOZGGILACHPZUFBQKBCHRSJJBTMAUGIBPIUFUACUBKBCIHUCUDUE $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.  $d x ph $.  $d x R $.  $d x W $.
+    $d x X $.
+    ofc12.1 $e |- ( ph -> A e. V ) $.
+    ofc12.2 $e |- ( ph -> B e. W ) $.
+    ofc12.3 $e |- ( ph -> C e. X ) $.
+    $( Function operation on two constant functions.  (Contributed by Mario
+       Carneiro, 28-Jul-2014.) $)
+    ofc12 $p |- ( ph ->
+      ( ( A X. { B } ) oF R ( A X. { C } ) ) = ( A X. { ( B R C ) } ) ) $=
+      ( vx csn cxp co cmpt wcel adantr wceq fconstmpt cof a1i offval2 syl6eqr
+      cv ) ABCMNZBDMNZEUAOLBCDEOZPBUHMNALBCDEUFUGFGHIACGQLUEBQZJRADHQUIKRUFLBCP
+      SALBCTUBUGLBDPSALBDTUBUCLBUHTUD $.
+  $}
+
+  ${
+    $d w x B $.  $d w x C $.  $d w x y z F $.  $d w x y z G $.  $d w x y z H $.
+    $d w x y z O $.  $d w x y z P $.  $d w x y z ph $.  $d w x y z R $.
+    $d w A $.  $d w x y z S $.  $d w x y z T $.  $d w x y z U $.
+    caofref.1 $e |- ( ph -> A e. V ) $.
+    caofref.2 $e |- ( ph -> F : A --> S ) $.
+    ${
+      caofref.3 $e |- ( ( ph /\ x e. S ) -> x R x ) $.
+      $( Transfer a reflexive law to the function relation.  (Contributed by
+         Mario Carneiro, 28-Jul-2014.) $)
+      caofref $p |- ( ph -> F oR R F ) $=
+        ( vw cofr wbr cv cfv wral wcel wa ffvelrnda ralrimiva adantr id breq12d
+        wceq rspcv sylc wf wfn ffn syl inidm eqidd ofrfval mpbird ) AFFDLMKNZFO
+        ZUPDMZKCPAUQKCAUOCQZRZUPEQBNZUTDMZBEPZUQACEUOFISAVBURAVABEJTUAVAUQBUPEU
+        TUPUDZUTUPUTUPDVCUBZVDUCUEUFTAKCCUPUPDCFFGGACEFUGFCUHICEFUIUJZVEHHCUKUS
+        UPULZVFUMUN $.
+    $}
+
+    ${
+      $d v A $.  $d v F $.  $d x v N $.  $d v S $.  $d v ph $.  $d v w $.
+      caofinv.3 $e |- ( ph -> B e. W ) $.
+      caofinv.4 $e |- ( ph -> N : S --> S ) $.
+      caofinv.5 $e |- ( ph -> G = ( v e. A |-> ( N ` ( F ` v ) ) ) ) $.
+      ${
+        caofinvl.6 $e |- ( ( ph /\ x e. S ) -> ( ( N ` x ) R x ) = B ) $.
+        $( Transfer a left inverse law to the function operation.  (Contributed
+           by NM, 22-Oct-2014.) $)
+        caofinvl $p |- ( ph -> ( G oF R F ) = ( A X. { B } ) ) $=
+          ( vw cfv cof co cmpt csn cv wf wcel wa adantr ffvelrnda ffvelrnd eqid
+          cxp fmptd feq1d mpbird wfn wceq fvex fnmpti fneq1d mpbiri dffn5 sylib
+          feqmptd offval2 fveq1d fveq2 fveq2d sylan9eq oveq1d wral ralrimiva id
+          fvmpt oveq12d eqeq1d rspcva syl2anc eqtrd mpteq2dva fconstmpt syl6eqr
+          ) AIHFUAUBZSDEUCZDEUDUMAWDSDSUEZITZWFHTZFUBZUCWEASDWGWHFIHKGGMADGWFIA
+          DGIUFDGCDCUEZHTZJTZUCZUFACDWLGWMAWJDUGZUHGGWKJAGGJUFWNPUIADGWJHNUJUKW
+          MULZUNADGIWMQUOUPUJADGWFHNUJZAIDUQZISDWGUCURAWQWMDUQCDWLWMWKJUSWOUTAD
+          IWMQVAVBSDIVCVDASDGHNVEVFASDWIEAWFDUGZUHZWIWHJTZWHFUBZEWSWGWTWHFAWRWG
+          WFWMTWTAWFIWMQVGCWFWLWTDWMWJWFURWKWHJWJWFHVHVIWOWHJUSVOVJVKWSWHGUGBUE
+          ZJTZXBFUBZEURZBGVLZXAEURZWPAXFWRAXEBGRVMUIXEXGBWHGXBWHURZXDXAEXHXCWTX
+          BWHFXBWHJVHXHVNVPVQVRVSVTWAVTSDEWBWC $.
+      $}
+    $}
+
+    ${
+      caofid0.3 $e |- ( ph -> B e. W ) $.
+      ${
+        caofid0l.5 $e |- ( ( ph /\ x e. S ) -> ( B R x ) = x ) $.
+        $( Transfer a left identity law to the function operation.
+           (Contributed by NM, 21-Oct-2014.) $)
+        caofid0l $p |- ( ph -> ( ( A X. { B } ) oF R F ) = F ) $=
+          ( vw cv cfv wcel wfn syl wceq csn cxp fnconstg wf ffn fvconst2g sylan
+          wa eqidd ffvelrnda wral ralrimiva oveq2 eqeq12d rspccva syldan offveq
+          co id ) ANCDNOZGPZECDUAUBZGGHJADIQZVBCRLCDIUCSACFGUDGCRKCFGUESZVDAVCU
+          TCQZUTVBPDTLCDUTIUFUGAVEUHVAUIAVEVAFQZDVAEURZVATZACFUTGKUJADBOZEURZVI
+          TZBFUKVFVHAVKBFMULVKVHBVAFVIVATZVJVGVIVAVIVADEUMVLUSUNUOUGUPUQ $.
+      $}
+
+      ${
+        caofid0r.5 $e |- ( ( ph /\ x e. S ) -> ( x R B ) = x ) $.
+        $( Transfer a right identity law to the function operation.
+           (Contributed by NM, 21-Oct-2014.) $)
+        caofid0r $p |- ( ph -> ( F oF R ( A X. { B } ) ) = F ) $=
+          ( vw cv cfv wfn syl wcel wceq csn cxp wf ffn fnconstg eqidd fvconst2g
+          wa sylan ffvelrnda wral ralrimiva oveq1 eqeq12d rspccva syldan offveq
+          co id ) ANCNOZGPZDEGCDUAUBZGHJACFGUCGCQKCFGUDRZADISZVBCQLCDIUERVCAUTC
+          SZUHVAUFAVDVEUTVBPDTLCDUTIUGUIAVEVAFSZVADEURZVATZACFUTGKUJABOZDEURZVI
+          TZBFUKVFVHAVKBFMULVKVHBVAFVIVATZVJVGVIVAVIVADEUMVLUSUNUOUIUPUQ $.
+      $}
+
+      caofid1.4 $e |- ( ph -> C e. X ) $.
+      ${
+        caofid1.5 $e |- ( ( ph /\ x e. S ) -> ( x R B ) = C ) $.
+        $( Transfer a right absorption law to the function operation.
+           (Contributed by Mario Carneiro, 28-Jul-2014.) $)
+        caofid1 $p |- ( ph -> ( F oF R ( A X. { B } ) ) = ( A X. { C } ) ) $=
+          ( cfv wfn wcel wceq vw cv csn cxp wf ffn syl fnconstg eqidd fvconst2g
+          wa sylan ffvelrnda wral ralrimiva eqeq1d rspccva syldan eqtr4d offveq
+          co oveq1 ) AUACUAUBZHQZDFHCDUCUDZCEUCUDZILACGHUEHCRMCGHUFUGADJSZVECRN
+          CDJUHUGAEKSZVFCROCEKUHUGAVCCSZUKZVDUIAVGVIVCVEQDTNCDVCJUJULVJVDDFVAZE
+          VCVFQZAVIVDGSZVKETZACGVCHMUMABUBZDFVAZETZBGUNVMVNAVQBGPUOVQVNBVDGVOVD
+          TVPVKEVOVDDFVBUPUQULURAVHVIVLETOCEVCKUJULUSUT $.
+      $}
+
+      caofid2.5 $e |- ( ( ph /\ x e. S ) -> ( B R x ) = C ) $.
+      $( Transfer a right absorption law to the function operation.
+         (Contributed by Mario Carneiro, 28-Jul-2014.) $)
+      caofid2 $p |- ( ph -> ( ( A X. { B } ) oF R F ) = ( A X. { C } ) ) $=
+        ( cfv wcel wfn wceq vw cv csn cxp fnconstg syl wf fvconst2g sylan eqidd
+        ffn wa co ffvelrnda ralrimiva oveq2 eqeq1d rspccva syldan eqtr4d offveq
+        wral ) AUACDUAUBZHQZFCDUCUDZHCEUCUDZILADJRZVECSNCDJUEUFACGHUGHCSMCGHUKU
+        FAEKRZVFCSOCEKUEUFAVGVCCRZVCVEQDTNCDVCJUHUIAVIULZVDUJVJDVDFUMZEVCVFQZAV
+        IVDGRZVKETZACGVCHMUNADBUBZFUMZETZBGVBVMVNAVQBGPUOVQVNBVDGVOVDTVPVKEVOVD
+        DFUPUQURUIUSAVHVIVLETOCEVCKUHUIUTVA $.
+    $}
+
+    caofcom.3 $e |- ( ph -> G : A --> S ) $.
+    ${
+      caofcom.4 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+                        ( x R y ) = ( y R x ) ) $.
+      $( Transfer a commutative law to the function operation.  (Contributed by
+         Mario Carneiro, 26-Jul-2014.) $)
+      caofcom $p |- ( ph -> ( F oF R G ) = ( G oF R F ) ) $=
+        ( vw cfv co cmpt wcel wa ffvelrnda cv cof jca caovcomg syldan mpteq2dva
+        wceq feqmptd offval2 3eqtr4d ) ANDNUAZGOZUKHOZEPZQNDUMULEPZQGHEUBZPHGUP
+        PANDUNUOAUKDRZULFRZUMFRZSUNUOUGAUQSURUSADFUKGKTZADFUKHLTZUCABCULUMFEMUD
+        UEUFANDULUMEGHIFFJUTVAANDFGKUHZANDFHLUHZUIANDUMULEHGIFFJVAUTVCVBUIUJ $.
+    $}
+
+    ${
+      caofrss.4 $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+                        ( x R y -> x T y ) ) $.
+      $( Transfer a relation subset law to the function relation.  (Contributed
+         by Mario Carneiro, 28-Jul-2014.) $)
+      caofrss $p |- ( ph -> ( F oR R G -> F oR T G ) ) $=
+        ( vw cv wbr wral wcel wi cofr wa ffvelrnda ralrimivva adantr wceq breq1
+        cfv imbi12d breq2 rspc2va syl21anc ralimdva wfn ffn inidm eqidd ofrfval
+        wf syl 3imtr4d ) AOPZHUHZVBIUHZEQZODRVCVDGQZODRHIEUAQHIGUAQAVEVFODAVBDS
+        ZUBZVCFSVDFSBPZCPZEQZVIVJGQZTZCFRBFRZVEVFTZADFVBHLUCADFVBIMUCAVNVGAVMBC
+        FFNUDUEVMVOVCVJEQZVCVJGQZTBCVCVDFFVIVCUFVKVPVLVQVIVCVJEUGVIVCVJGUGUIVJV
+        DUFVPVEVQVFVJVDVCEUJVJVDVCGUJUIUKULUMAODDVCVDEDHIJJADFHUSHDUNLDFHUOUTZA
+        DFIUSIDUNMDFIUOUTZKKDUPZVHVCUQZVHVDUQZURAODDVCVDGDHIJJVRVSKKVTWAWBURVA
+        $.
+    $}
+
+    caofass.4 $e |- ( ph -> H : A --> S ) $.
+    ${
+      caofass.5 $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
+                        ( ( x R y ) T z ) = ( x O ( y P z ) ) ) $.
+      $( Transfer an associative law to the function operation.  (Contributed
+         by Mario Carneiro, 26-Jul-2014.) $)
+      caofass $p |- ( ph ->
+        ( ( F oF R G ) oF T H ) = ( F oF O ( G oF P H ) ) ) $=
+        ( co vw cv cfv cmpt cof wcel wa wceq ralrimivvva adantr ffvelrnda oveq1
+        wral wi oveq1d eqeq12d oveq2d rspc3v syl3anc mpd mpteq2dva cvv ovex a1i
+        oveq2 feqmptd offval2 3eqtr4d ) AUAEUAUBZJUCZVIKUCZGTZVILUCZITZUDUAEVJV
+        KVMFTZMTZUDJKGUETZLIUETJKLFUETZMUETAUAEVNVPAVIEUFZUGZBUBZCUBZGTZDUBZITZ
+        WAWBWDFTZMTZUHZDHUMCHUMBHUMZVNVPUHZAWIVSAWHBCDHHHSUIUJVTVJHUFVKHUFVMHUF
+        WIWJUNAEHVIJPUKZAEHVIKQUKZAEHVILRUKZWHWJVJWBGTZWDITZVJWFMTZUHVLWDITZVJV
+        KWDFTZMTZUHBCDVJVKVMHHHWAVJUHZWEWOWGWPWTWCWNWDIWAVJWBGULUOWAVJWFMULUPWB
+        VKUHZWOWQWPWSXAWNVLWDIWBVKVJGVEUOXAWFWRVJMWBVKWDFULUQUPWDVMUHZWQVNWSVPW
+        DVMVLIVEXBWRVOVJMWDVMVKFVEUQUPURUSUTVAAUAEVLVMIVQLNVBHOVLVBUFVTVJVKGVCV
+        DWMAUAEVJVKGJKNHHOWKWLAUAEHJPVFZAUAEHKQVFZVGAUAEHLRVFZVGAUAEVJVOMJVRNHV
+        BOWKVOVBUFVTVKVMFVCVDXCAUAEVKVMFKLNHHOWLWMXDXEVGVGVH $.
+    $}
+
+    ${
+      caoftrn.5 $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
+                        ( ( x R y /\ y T z ) -> x U z ) ) $.
+      $( Transfer a transitivity law to the function relation.  (Contributed by
+         Mario Carneiro, 28-Jul-2014.) $)
+      caoftrn $p |- ( ph -> ( ( F oR R G /\ G oR T H ) -> F oR U H ) ) $=
+        ( vw wbr cv cfv wa wral cofr wcel wi ralrimivvva adantr ffvelrnda breq1
+        wceq anbi1d imbi12d breq2 anbi12d imbi1d anbi2d rspc3v syl3anc ralimdva
+        mpd wf wfn ffn syl inidm eqidd ofrfval r19.26 syl6bbr 3imtr4d ) ASUAZJU
+        BZVMKUBZFTZVOVMLUBZHTZUCZSEUDZVNVQITZSEUDJKFUETZKLHUETZUCZJLIUETAVSWASE
+        AVMEUFZUCZBUAZCUAZFTZWHDUAZHTZUCZWGWJITZUGZDGUDCGUDBGUDZVSWAUGZAWOWEAWN
+        BCDGGGRUHUIWFVNGUFVOGUFVQGUFWOWPUGAEGVMJOUJAEGVMKPUJAEGVMLQUJWNWPVNWHFT
+        ZWKUCZVNWJITZUGVPVOWJHTZUCZWSUGBCDVNVOVQGGGWGVNULZWLWRWMWSXBWIWQWKWGVNW
+        HFUKUMWGVNWJIUKUNWHVOULZWRXAWSXCWQVPWKWTWHVOVNFUOWHVOWJHUKUPUQWJVQULZXA
+        VSWSWAXDWTVRVPWJVQVOHUOURWJVQVNIUOUNUSUTVBVAAWDVPSEUDZVRSEUDZUCVTAWBXEW
+        CXFASEEVNVOFEJKMMAEGJVCJEVDOEGJVEVFZAEGKVCKEVDPEGKVEVFZNNEVGZWFVNVHZWFV
+        OVHZVIASEEVOVQHEKLMMXHAEGLVCLEVDQEGLVEVFZNNXIXKWFVQVHZVIUPVPVRSEVJVKASE
+        EVNVQIEJLMMXGXLNNXIXJXMVIVL $.
+    $}
+  $}
+
+  ${
+    $d w x y z A $.  $d w x y z F $.  $d w x y z G $.  $d w x y z ph $.
+    $d w x y z H $.  $d w x y z K $.  $d w x y z O $.  $d w x y z R $.
+    $d w x y z S $.  $d w x y z T $.
+    caofdi.1 $e |- ( ph -> A e. V ) $.
+    caofdi.2 $e |- ( ph -> F : A --> K ) $.
+    caofdi.3 $e |- ( ph -> G : A --> S ) $.
+    caofdi.4 $e |- ( ph -> H : A --> S ) $.
+    ${
+      caofdi.5 $e |- ( ( ph /\ ( x e. K /\ y e. S /\ z e. S ) ) ->
+                          ( x T ( y R z ) ) = ( ( x T y ) O ( x T z ) ) ) $.
+      $( Transfer a distributive law to the function operation.  (Contributed
+         by Mario Carneiro, 26-Jul-2014.) $)
+      caofdi $p |- ( ph ->
+        ( F oF T ( G oF R H ) ) = ( ( F oF T G ) oF O ( F oF T H ) ) ) $=
+        ( co vw cv cfv cmpt cof wcel wa w3a adantlr ffvelrnda caovdid mpteq2dva
+        wceq cvv ovex a1i feqmptd offval2 3eqtr4d ) AUAEUAUBZIUCZUTJUCZUTKUCZFT
+        ZHTZUDUAEVAVBHTZVAVCHTZMTZUDIJKFUETZHUEZTIJVJTZIKVJTZMUETAUAEVEVHAUTEUF
+        ZUGZBCDVAVBVCGFHMLABUBZLUFCUBZGUFDUBZGUFUHVOVPVQFTHTVOVPHTVOVQHTMTUMVMS
+        UIAELUTIPUJZAEGUTJQUJZAEGUTKRUJZUKULAUAEVAVDHIVINLUNOVRVDUNUFVNVBVCFUOU
+        PAUAELIPUQZAUAEVBVCFJKNGGOVSVTAUAEGJQUQZAUAEGKRUQZURURAUAEVFVGMVKVLNUNU
+        NOVFUNUFVNVAVBHUOUPVGUNUFVNVAVCHUOUPAUAEVAVBHIJNLGOVRVSWAWBURAUAEVAVCHI
+        KNLGOVRVTWAWCURURUS $.
+    $}
+
+    ${
+      caofdir.5 $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. K ) ) ->
+                          ( ( x R y ) T z ) = ( ( x T z ) O ( y T z ) ) ) $.
+      $( Transfer a reverse distributive law to the function operation.
+         (Contributed by NM, 19-Oct-2014.) $)
+      caofdir $p |- ( ph ->
+        ( ( G oF R H ) oF T F ) = ( ( G oF T F ) oF O ( H oF T F ) ) ) $=
+        ( co vw cfv cmpt cof wcel w3a wceq adantlr ffvelrnda caovdird mpteq2dva
+        cv wa cvv ovex a1i feqmptd offval2 3eqtr4d ) AUAEUAULZJUBZUTKUBZFTZUTIU
+        BZHTZUCUAEVAVDHTZVBVDHTZMTZUCJKFUDTZIHUDZTJIVJTZKIVJTZMUDTAUAEVEVHAUTEU
+        EZUMZBCDVAVBVDGFHMLABULZGUECULZGUEDULZLUEUFVOVPFTVQHTVOVQHTVPVQHTMTUGVM
+        SUHAEGUTJQUIZAEGUTKRUIZAELUTIPUIZUJUKAUAEVCVDHVIINUNLOVCUNUEVNVAVBFUOUP
+        VTAUAEVAVBFJKNGGOVRVSAUAEGJQUQZAUAEGKRUQZURAUAELIPUQZURAUAEVFVGMVKVLNUN
+        UNOVFUNUEVNVAVDHUOUPVGUNUEVNVBVDHUOUPAUAEVAVDHJINGLOVRVTWAWCURAUAEVBVDH
+        KINGLOVSVTWBWCURURUS $.
+    $}
+  $}
+
+  ${
+    $d ph x y z $.  $d A x y z $.  $d B y z $.  $d I z $.  $d M x y z $.
+    $d S x y $.
+    caonncan.i $e |- ( ph -> I e. V ) $.
+    caonncan.a $e |- ( ph -> A : I --> S ) $.
+    caonncan.b $e |- ( ph -> B : I --> S ) $.
+    caonncan.z $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+        ( x M ( x M y ) ) = y ) $.
+    $( Transfer ~ nncan -shaped laws to vectors of numbers.  (Contributed by
+       Stefan O'Rear, 27-Mar-2015.) $)
+    caonncan $p |- ( ph -> ( A oF M ( A oF M B ) ) = B ) $=
+      ( vz cv co wcel wceq cvv a1i cfv cmpt wa wral ffvelrnda ralrimivva adantr
+      cof id oveq1 oveq12d eqeq1d oveq2 eqeq12d rspc2va syl21anc mpteq2dva fvex
+      oveq2d ovex feqmptd offval2 3eqtr4d ) ANGNOZDUAZVEVDEUAZHPZHPZUBNGVFUBDDE
+      HUHZPZVIPEANGVHVFAVDGQZUCZVEFQVFFQBOZVMCOZHPZHPZVNRZCFUDBFUDZVHVFRZAGFVDD
+      KUEAGFVDELUEAVRVKAVQBCFFMUFUGVQVSVEVEVNHPZHPZVNRBCVEVFFFVMVERZVPWAVNWBVMV
+      EVOVTHWBUIVMVEVNHUJUKULVNVFRZWAVHVNVFWCVTVGVEHVNVFVEHUMUSWCUIUNUOUPUQANGV
+      EVGHDVJISSJVESQVLVDDURTZVGSQVLVEVFHUTTANGFDKVAZANGVEVFHDEISSJWDVFSQVLVDEU
+      RTWEANGFELVAZVBVBWFVC $.
+  $}
+
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -51479,6 +52058,18 @@ htmldef "iota_" as
   althtmldef "iota_" as '<U>&#8489;</U>';
   latexdef "iota_" as
       "\underline{\mathrm{\rotatebox[origin=C]{180}{$\iota$}}}";
+htmldef "oF" as
+    " <IMG SRC='circ.gif' WIDTH=8 HEIGHT=19 ALT=' o' TITLE='o'>" +
+    "<IMG SRC='subf.gif' WIDTH=6 HEIGHT=19 ALT=' F' TITLE='F'>";
+  althtmldef "oF" as " &#8728;<SUB>&#x1D453;</SUB> ";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "oF" as "\circ_f";
+htmldef "oR" as
+    " <IMG SRC='circ.gif' WIDTH=8 HEIGHT=19 ALT=' o' TITLE='o'>" +
+    "<IMG SRC='subr.gif' WIDTH=5 HEIGHT=19 ALT=' R' TITLE='R'>";
+  althtmldef "oR" as " &#8728;<SUB>&#x1D45F;</SUB> ";
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "oR" as "\circ_r";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
