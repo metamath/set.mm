@@ -50569,10 +50569,8 @@ $)
     elovmpt2.d $e |- D = ( a e. A , b e. B |-> C ) $.
     elovmpt2.c $e |- C e. _V $.
     elovmpt2.e $e |- ( ( a = X /\ b = Y ) -> C = E ) $.
-    $( Utility lemma for two-parameter classes.
-
-       _EDITORIAL_: can simplify ~ isghm , ~ islmhm .  (Contributed by Stefan
-       O'Rear, 21-Jan-2015.) $)
+    $( Utility lemma for two-parameter classes.  (Contributed by Stefan O'Rear,
+       21-Jan-2015.) $)
     elovmpt2 $p |- ( F e. ( X D Y ) <-> ( X e. A /\ Y e. B /\ F e. E ) ) $=
       ( co wcel wa cvv wceq wal cv w3a elmpt2cl gen2 eleq1d spc2gv mpi ovmpt2ga
       mpd3an3 eleq2d biadan2 df-3an bitr4i ) FGHDNZOZGAOZHBOZPZFEOZPUOUPURUAUNU
