@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Jan-2019
+$( iset.mm - Version of 22-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -44838,6 +44838,18 @@ $)
       ( vx cvv wcel cdm wn cfv c0 wceq wbr weu wex euex eldmg syl5ibr
       cv con3d tz6.12-2 syl6 imp ) ADEZABFEZGZABHIJZUBUDACQBKZCLZGUEU
       BUGUCUGUCUBUFCMUFCNCABDOPRCABSTUA $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y F $.
+    $( If a function value has a member, the argument belongs to the domain.
+       (Contributed by Jim Kingdon, 22-Jan-2019.) $)
+    relelfvdm $p |- ( ( Rel F /\ A e. ( F ` B ) ) -> B e. dom F ) $=
+      ( vx vy wrel cfv wcel wa cv wbr wex cdm weq wb wal elfv exsimpr wsb syl
+      sylbi equsb1 spsbbi mpbiri breq2 sylib eximi anim2i 19.42v sylibr releldm
+      nfv sbie exlimiv ) CFZABCGHZIZUOBDJZCKZIZDLZBCMHZUQUOUSDLZIVAUPVCUOUPBEJZ
+      CKZEDNZOEPZDLZVCUPAURHZVGIDLVHDEABCQVIVGDRUAVGUSDVGVEEDSZUSVGVJVFEDSEDUBV
+      EVFEDUCUDVEUSEDUSEULVDURBCUEUMUFUGTUHUOUSDUIUJUTVBDBURCUKUNT $.
   $}
 
   ${
