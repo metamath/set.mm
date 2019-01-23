@@ -50658,19 +50658,6 @@ $)
   $}
 
   ${
-    $d k x y A $.  $d x y B $.  $d k x ph $.  $d k x y W $.  $d k x y Z $.
-    suppss2.n $e |- ( ( ph /\ k e. ( A \ W ) ) -> B = Z ) $.
-    $( Show that the support of a function is contained in a set.  (Contributed
-       by Mario Carneiro, 19-Dec-2014.)  (Revised by Mario Carneiro,
-       22-Mar-2015.) $)
-    suppss2 $p |- ( ph -> ( `' ( k e. A |-> B ) " ( _V \ { Z } ) ) C_ W ) $=
-      ( cmpt ccnv cvv csn cdif cima wcel crab eqid mptpreima cv wne wa eldifsni
-      wn wceq eldif sylan2br expr necon1ad syl5 3impia rabssdv syl5eqss ) ADBCH
-      ZIJFKLZMCUMNZDBOEDBCUMULULPQAUNDBEADRZBNZUNUOENZUNCFSAUPTZUQCJFUAURUQCFAU
-      PUQUBZCFUCZUPUSTAUOBELNUTUOBEUDGUEUFUGUHUIUJUK $.
-  $}
-
-  ${
     $d ph x $.  $d Y x $.  $d Z x $.
     suppssfv.a $e |- ( ph -> ( `' ( x e. D |-> A ) " ( _V \ { Y } ) ) C_ L ) $.
     suppssfv.f $e |- ( ph -> ( F ` Y ) = Z ) $.
