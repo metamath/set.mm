@@ -50986,10 +50986,11 @@ $)
        5-Dec-2016.) $)
     offveqb $p |- ( ph
           -> ( H = ( F oF R G ) <-> A. x e. A ( H ` x ) = ( B R C ) ) ) $=
-      ( co wceq cmpt wral cof cfv wfn dffn5 sylib inidm offval eqeq12d cvv wcel
-      cv wb fvex a1i ralrimivw mpteqb syl bitrd ) AIGHFUAQZRBCBUKZIUBZSZBCDEFQZ
-      SZRZVAVCRBCTZAIVBUSVDAICUCIVBRNBCIUDUEABCCDEFCGHJJLMKKCUFOPUGUHAVAUIUJZBC
-      TVEVFULAVGBCVGAUTIUMUNUOBCVAVCUIUPUQUR $.
+      ( co wceq cmpt wral cof cv cfv wfn dffn5im inidm offval eqeq12d
+      syl cvv wcel wb funfvex funfni sylan ralrimiva mpteqb bitrd ) A
+      IGHFUAQZRBCBUBZIUCZSZBCDEFQZSZRZVAVCRBCTZAIVBUSVDAICUDZIVBRNBCI
+      UEUIABCCDEFCGHJJLMKKCUFOPUGUHAVAUJUKZBCTVEVFULAVHBCAVGUTCUKVHNV
+      HCUTIUTIUMUNUOUPBCVAVCUJUQUIUR $.
   $}
 
   ${
