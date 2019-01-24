@@ -50937,12 +50937,13 @@ $)
     $( Formula building theorem for support restrictions: vector operation with
        left annihilator.  (Contributed by Stefan O'Rear, 9-Mar-2015.) $)
     suppssof1 $p |- ( ph -> ( `' ( A oF O B ) " ( _V \ { Z } ) ) C_ L ) $=
-      ( vx ccnv cvv cof co csn cdif cima cv cfv cmpt wf wfn ffn syl inidm eqidd
-      wcel wa offval cnveqd imaeq1d feqmptd eqsstr3d fvex a1i ffvelrnda eqsstrd
-      suppssov1 ) ACDHUAUBZSZTLUCUDZUERERUFZCUGZVJDUGZHUBUHZSZVIUEGAVHVNVIAVGVM
-      AREEVKVLHECDJJAEICUICEUJOEICUKULAEFDUIDEUJPEFDUKULQQEUMAVJEUOUPZVKUNVOVLU
-      NUQURUSARBVKVLEFGHTKLAREVKUHZSZTKUCUDZUECSZVRUEGAVSVQVRACVPAREICOUTURUSMV
-      ANVKTUOVOVJCVBVCAEFVJDPVDVFVE $.
+      ( vx ccnv cvv cof co csn cdif cima cv cfv cmpt wf wfn ffn inidm
+      syl wcel wa eqidd offval cnveqd imaeq1d feqmptd eqsstr3d funfni
+      funfvex sylan ffvelrnda suppssov1 eqsstrd ) ACDHUAUBZSZTLUCUDZU
+      ERERUFZCUGZVKDUGZHUBUHZSZVJUEGAVIVOVJAVHVNAREEVLVMHECDJJAEICUIC
+      EUJZOEICUKUMZAEFDUIDEUJPEFDUKUMQQEULAVKEUNZUOZVLUPVSVMUPUQURUSA
+      RBVLVMEFGHTKLAREVLUHZSZTKUCUDZUECSZWBUEGAWCWAWBACVTAREICOUTURUS
+      MVANAVPVRVLTUNZVQWDEVKCVKCVCVBVDAEFVKDPVEVFVG $.
   $}
 
   ${
