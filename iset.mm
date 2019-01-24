@@ -51105,27 +51105,6 @@ $)
     $}
   $}
 
-  ${
-    $d ph x y z $.  $d A x y z $.  $d B y z $.  $d I z $.  $d M x y z $.
-    $d S x y $.
-    caonncan.i $e |- ( ph -> I e. V ) $.
-    caonncan.a $e |- ( ph -> A : I --> S ) $.
-    caonncan.b $e |- ( ph -> B : I --> S ) $.
-    caonncan.z $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
-        ( x M ( x M y ) ) = y ) $.
-    $( Transfer ~ nncan -shaped laws to vectors of numbers.  (Contributed by
-       Stefan O'Rear, 27-Mar-2015.) $)
-    caonncan $p |- ( ph -> ( A oF M ( A oF M B ) ) = B ) $=
-      ( vz cv co wcel wceq cvv a1i cfv cmpt wa wral ffvelrnda ralrimivva adantr
-      cof id oveq1 oveq12d eqeq1d oveq2 eqeq12d rspc2va syl21anc mpteq2dva fvex
-      oveq2d ovex feqmptd offval2 3eqtr4d ) ANGNOZDUAZVEVDEUAZHPZHPZUBNGVFUBDDE
-      HUHZPZVIPEANGVHVFAVDGQZUCZVEFQVFFQBOZVMCOZHPZHPZVNRZCFUDBFUDZVHVFRZAGFVDD
-      KUEAGFVDELUEAVRVKAVQBCFFMUFUGVQVSVEVEVNHPZHPZVNRBCVEVFFFVMVERZVPWAVNWBVMV
-      EVOVTHWBUIVMVEVNHUJUKULVNVFRZWAVHVNVFWCVTVGVEHVNVFVEHUMUSWCUIUNUOUPUQANGV
-      EVGHDVJISSJVESQVLVDDURTZVGSQVLVEVFHUTTANGFDKVAZANGVEVFHDEISSJWDVFSQVLVDEU
-      RTWEANGFELVAZVBVBWFVC $.
-  $}
-
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
