@@ -51083,25 +51083,6 @@ $)
     $}
 
     caofass.4 $e |- ( ph -> H : A --> S ) $.
-    ${
-      caofass.5 $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
-                        ( ( x R y ) T z ) = ( x O ( y P z ) ) ) $.
-      $( Transfer an associative law to the function operation.  (Contributed
-         by Mario Carneiro, 26-Jul-2014.) $)
-      caofass $p |- ( ph ->
-        ( ( F oF R G ) oF T H ) = ( F oF O ( G oF P H ) ) ) $=
-        ( co vw cv cfv cmpt cof wcel wa wceq ralrimivvva adantr ffvelrnda oveq1
-        wral wi oveq1d eqeq12d oveq2d rspc3v syl3anc mpd mpteq2dva cvv ovex a1i
-        oveq2 feqmptd offval2 3eqtr4d ) AUAEUAUBZJUCZVIKUCZGTZVILUCZITZUDUAEVJV
-        KVMFTZMTZUDJKGUETZLIUETJKLFUETZMUETAUAEVNVPAVIEUFZUGZBUBZCUBZGTZDUBZITZ
-        WAWBWDFTZMTZUHZDHUMCHUMBHUMZVNVPUHZAWIVSAWHBCDHHHSUIUJVTVJHUFVKHUFVMHUF
-        WIWJUNAEHVIJPUKZAEHVIKQUKZAEHVILRUKZWHWJVJWBGTZWDITZVJWFMTZUHVLWDITZVJV
-        KWDFTZMTZUHBCDVJVKVMHHHWAVJUHZWEWOWGWPWTWCWNWDIWAVJWBGULUOWAVJWFMULUPWB
-        VKUHZWOWQWPWSXAWNVLWDIWBVKVJGVEUOXAWFWRVJMWBVKWDFULUQUPWDVMUHZWQVNWSVPW
-        DVMVLIVEXBWRVOVJMWDVMVKFVEUQUPURUSUTVAAUAEVLVMIVQLNVBHOVLVBUFVTVJVKGVCV
-        DWMAUAEVJVKGJKNHHOWKWLAUAEHJPVFZAUAEHKQVFZVGAUAEHLRVFZVGAUAEVJVOMJVRNHV
-        BOWKVOVBUFVTVKVMFVCVDXCAUAEVKVMFKLNHHOWLWMXDXEVGVGVH $.
-    $}
 
     ${
       caoftrn.5 $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
@@ -51121,49 +51102,6 @@ $)
         CXFASEEVNVOFEJKMMAEGJVCJEVDOEGJVEVFZAEGKVCKEVDPEGKVEVFZNNEVGZWFVNVHZWFV
         OVHZVIASEEVOVQHEKLMMXHAEGLVCLEVDQEGLVEVFZNNXIXKWFVQVHZVIUPVPVRSEVJVKASE
         EVNVQIEJLMMXGXLNNXIXJXMVIVL $.
-    $}
-  $}
-
-  ${
-    $d w x y z A $.  $d w x y z F $.  $d w x y z G $.  $d w x y z ph $.
-    $d w x y z H $.  $d w x y z K $.  $d w x y z O $.  $d w x y z R $.
-    $d w x y z S $.  $d w x y z T $.
-    caofdi.1 $e |- ( ph -> A e. V ) $.
-    caofdi.2 $e |- ( ph -> F : A --> K ) $.
-    caofdi.3 $e |- ( ph -> G : A --> S ) $.
-    caofdi.4 $e |- ( ph -> H : A --> S ) $.
-    ${
-      caofdi.5 $e |- ( ( ph /\ ( x e. K /\ y e. S /\ z e. S ) ) ->
-                          ( x T ( y R z ) ) = ( ( x T y ) O ( x T z ) ) ) $.
-      $( Transfer a distributive law to the function operation.  (Contributed
-         by Mario Carneiro, 26-Jul-2014.) $)
-      caofdi $p |- ( ph ->
-        ( F oF T ( G oF R H ) ) = ( ( F oF T G ) oF O ( F oF T H ) ) ) $=
-        ( co vw cv cfv cmpt cof wcel wa w3a adantlr ffvelrnda caovdid mpteq2dva
-        wceq cvv ovex a1i feqmptd offval2 3eqtr4d ) AUAEUAUBZIUCZUTJUCZUTKUCZFT
-        ZHTZUDUAEVAVBHTZVAVCHTZMTZUDIJKFUETZHUEZTIJVJTZIKVJTZMUETAUAEVEVHAUTEUF
-        ZUGZBCDVAVBVCGFHMLABUBZLUFCUBZGUFDUBZGUFUHVOVPVQFTHTVOVPHTVOVQHTMTUMVMS
-        UIAELUTIPUJZAEGUTJQUJZAEGUTKRUJZUKULAUAEVAVDHIVINLUNOVRVDUNUFVNVBVCFUOU
-        PAUAELIPUQZAUAEVBVCFJKNGGOVSVTAUAEGJQUQZAUAEGKRUQZURURAUAEVFVGMVKVLNUNU
-        NOVFUNUFVNVAVBHUOUPVGUNUFVNVAVCHUOUPAUAEVAVBHIJNLGOVRVSWAWBURAUAEVAVCHI
-        KNLGOVRVTWAWCURURUS $.
-    $}
-
-    ${
-      caofdir.5 $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. K ) ) ->
-                          ( ( x R y ) T z ) = ( ( x T z ) O ( y T z ) ) ) $.
-      $( Transfer a reverse distributive law to the function operation.
-         (Contributed by NM, 19-Oct-2014.) $)
-      caofdir $p |- ( ph ->
-        ( ( G oF R H ) oF T F ) = ( ( G oF T F ) oF O ( H oF T F ) ) ) $=
-        ( co vw cfv cmpt cof wcel w3a wceq adantlr ffvelrnda caovdird mpteq2dva
-        cv wa cvv ovex a1i feqmptd offval2 3eqtr4d ) AUAEUAULZJUBZUTKUBZFTZUTIU
-        BZHTZUCUAEVAVDHTZVBVDHTZMTZUCJKFUDTZIHUDZTJIVJTZKIVJTZMUDTAUAEVEVHAUTEU
-        EZUMZBCDVAVBVDGFHMLABULZGUECULZGUEDULZLUEUFVOVPFTVQHTVOVQHTVPVQHTMTUGVM
-        SUHAEGUTJQUIZAEGUTKRUIZAELUTIPUIZUJUKAUAEVCVDHVIINUNLOVCUNUEVNVAVBFUOUP
-        VTAUAEVAVBFJKNGGOVRVSAUAEGJQUQZAUAEGKRUQZURAUAELIPUQZURAUAEVFVGMVKVLNUN
-        UNOVFUNUEVNVAVDHUOUPVGUNUEVNVBVDHUOUPAUAEVAVDHJINGLOVRVTWAWCURAUAEVBVDH
-        KINGLOVSVTWBWCURURUS $.
     $}
   $}
 
