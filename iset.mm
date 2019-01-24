@@ -50850,14 +50850,6 @@ $)
       OP $.
   $}
 
-  $( Function value of a pointwise composition.  (Contributed by Stefan O'Rear,
-     5-Oct-2014.)  (Proof shortened by Mario Carneiro, 5-Jun-2015.) $)
-  fnfvof $p |- ( ( ( F Fn A /\ G Fn A ) /\ ( A e. V /\ X e. A ) ) ->
-      ( ( F oF R G ) ` X ) = ( ( F ` X ) R ( G ` X ) ) ) $=
-    ( wfn wa wcel cof co cfv wceq simpll simplr simpr inidm eqidd ofval anasss
-    ) CAGZDAGZHZAEIZFAIZFCDBJKLFCLZFDLZBKMUCUDHZAAUFUGBACDEEFUAUBUDNUAUBUDOUCUD
-    PZUIAQUHUEHZUFRUJUGRST $.
-
   ${
     $d z A $.  $d z C $.  $d y z G $.  $d x y z ph $.  $d x y S $.  $d x y T $.
     $d x y z F $.  $d x y z R $.  $d x y z U $.
