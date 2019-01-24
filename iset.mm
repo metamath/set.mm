@@ -50838,13 +50838,6 @@ $)
         UJUKVQVMUALGVNLULVOVKVPVLFVNLHUOVNLIUOUMUPUQURVJALBTVKDULAVHVIUSZVJGBLG
         BCUTZBQBCVAVBAVHVIVCZVFRVDVJALCTVLEULVSVJGCLGVTCQBCVEVBWAVFSVDVG $.
     $}
-
-    $( The function operation produces a function.  (Contributed by Mario
-       Carneiro, 22-Jul-2014.) $)
-    offn $p |- ( ph -> ( F oF R G ) Fn S ) $=
-      ( vx co wfn cfv wcel wa cof cv cmpt ovex eqid fnmpti offval fneq1d mpbiri
-      eqidd ) AFGDUAPZEQOEOUBZFRZULGRZDPZUCZEQOEUOUPUMUNDUDUPUEUFAEUKUPAOBCUMUN
-      DEFGHIJKLMNAULBSTUMUJAULCSTUNUJUGUHUI $.
   $}
 
   ${
@@ -50992,14 +50985,6 @@ $)
     offveq.4 $e |- ( ph -> H Fn A ) $.
     offveq.5 $e |- ( ( ph /\ x e. A ) -> ( F ` x ) = B ) $.
     offveq.6 $e |- ( ( ph /\ x e. A ) -> ( G ` x ) = C ) $.
-    ${
-      offveq.7 $e |- ( ( ph /\ x e. A ) -> ( B R C ) = ( H ` x ) ) $.
-      $( Convert an identity of the operation to the analogous identity on the
-         function operation.  (Contributed by Mario Carneiro, 24-Jul-2014.) $)
-      offveq $p |- ( ph -> ( F oF R G ) = H ) $=
-        ( cof co cfv inidm offn cv wcel wa ofval eqtrd eqfnfvd ) ABCGHFRSZIACCF
-        CGHJJLMKKCUAZUBNABUCZCUDUEUKUITDEFSUKITACCDEFCGHJJUKLMKKUJOPUFQUGUH $.
-    $}
 
     $d y A $.  $d y z B $.  $d y z C $.  $d x y z F $.  $d y z G $.  $d y H $.
     $d y R $.  $d y ph $.
@@ -51094,58 +51079,6 @@ $)
           ZJTZXBFUBZEURZBGVLZXAEURZWPAXFWRAXEBGRVMUIXEXGBWHGXBWHURZXDXAEXHXCWTX
           BWHFXBWHJVHXHVNVPVQVRVSVTWAVTSDEWBWC $.
       $}
-    $}
-
-    ${
-      caofid0.3 $e |- ( ph -> B e. W ) $.
-      ${
-        caofid0l.5 $e |- ( ( ph /\ x e. S ) -> ( B R x ) = x ) $.
-        $( Transfer a left identity law to the function operation.
-           (Contributed by NM, 21-Oct-2014.) $)
-        caofid0l $p |- ( ph -> ( ( A X. { B } ) oF R F ) = F ) $=
-          ( vw cv cfv wcel wfn syl wceq csn cxp fnconstg wf ffn fvconst2g sylan
-          wa eqidd ffvelrnda wral ralrimiva oveq2 eqeq12d rspccva syldan offveq
-          co id ) ANCDNOZGPZECDUAUBZGGHJADIQZVBCRLCDIUCSACFGUDGCRKCFGUESZVDAVCU
-          TCQZUTVBPDTLCDUTIUFUGAVEUHVAUIAVEVAFQZDVAEURZVATZACFUTGKUJADBOZEURZVI
-          TZBFUKVFVHAVKBFMULVKVHBVAFVIVATZVJVGVIVAVIVADEUMVLUSUNUOUGUPUQ $.
-      $}
-
-      ${
-        caofid0r.5 $e |- ( ( ph /\ x e. S ) -> ( x R B ) = x ) $.
-        $( Transfer a right identity law to the function operation.
-           (Contributed by NM, 21-Oct-2014.) $)
-        caofid0r $p |- ( ph -> ( F oF R ( A X. { B } ) ) = F ) $=
-          ( vw cv cfv wfn syl wcel wceq csn cxp wf ffn fnconstg eqidd fvconst2g
-          wa sylan ffvelrnda wral ralrimiva oveq1 eqeq12d rspccva syldan offveq
-          co id ) ANCNOZGPZDEGCDUAUBZGHJACFGUCGCQKCFGUDRZADISZVBCQLCDIUERVCAUTC
-          SZUHVAUFAVDVEUTVBPDTLCDUTIUGUIAVEVAFSZVADEURZVATZACFUTGKUJABOZDEURZVI
-          TZBFUKVFVHAVKBFMULVKVHBVAFVIVATZVJVGVIVAVIVADEUMVLUSUNUOUIUPUQ $.
-      $}
-
-      caofid1.4 $e |- ( ph -> C e. X ) $.
-      ${
-        caofid1.5 $e |- ( ( ph /\ x e. S ) -> ( x R B ) = C ) $.
-        $( Transfer a right absorption law to the function operation.
-           (Contributed by Mario Carneiro, 28-Jul-2014.) $)
-        caofid1 $p |- ( ph -> ( F oF R ( A X. { B } ) ) = ( A X. { C } ) ) $=
-          ( cfv wfn wcel wceq vw cv csn cxp wf ffn syl fnconstg eqidd fvconst2g
-          wa sylan ffvelrnda wral ralrimiva eqeq1d rspccva syldan eqtr4d offveq
-          co oveq1 ) AUACUAUBZHQZDFHCDUCUDZCEUCUDZILACGHUEHCRMCGHUFUGADJSZVECRN
-          CDJUHUGAEKSZVFCROCEKUHUGAVCCSZUKZVDUIAVGVIVCVEQDTNCDVCJUJULVJVDDFVAZE
-          VCVFQZAVIVDGSZVKETZACGVCHMUMABUBZDFVAZETZBGUNVMVNAVQBGPUOVQVNBVDGVOVD
-          TVPVKEVOVDDFVBUPUQULURAVHVIVLETOCEVCKUJULUSUT $.
-      $}
-
-      caofid2.5 $e |- ( ( ph /\ x e. S ) -> ( B R x ) = C ) $.
-      $( Transfer a right absorption law to the function operation.
-         (Contributed by Mario Carneiro, 28-Jul-2014.) $)
-      caofid2 $p |- ( ph -> ( ( A X. { B } ) oF R F ) = ( A X. { C } ) ) $=
-        ( cfv wcel wfn wceq vw cv csn cxp fnconstg syl wf fvconst2g sylan eqidd
-        ffn wa co ffvelrnda ralrimiva oveq2 eqeq1d rspccva syldan eqtr4d offveq
-        wral ) AUACDUAUBZHQZFCDUCUDZHCEUCUDZILADJRZVECSNCDJUEUFACGHUGHCSMCGHUKU
-        FAEKRZVFCSOCEKUEUFAVGVCCRZVCVEQDTNCDVCJUHUIAVIULZVDUJVJDVDFUMZEVCVFQZAV
-        IVDGRZVKETZACGVCHMUNADBUBZFUMZETZBGVBVMVNAVQBGPUOVQVNBVDGVOVDTVPVKEVOVD
-        DFUPUQURUIUSAVHVIVLETOCEVCKUHUIUTVA $.
     $}
 
     caofcom.3 $e |- ( ph -> G : A --> S ) $.
