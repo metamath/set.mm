@@ -50807,16 +50807,27 @@ $)
     ${
       ofval.6 $e |- ( ( ph /\ X e. A ) -> ( F ` X ) = C ) $.
       ofval.7 $e |- ( ( ph /\ X e. B ) -> ( G ` X ) = D ) $.
+      ofval.8 $e |- ( ph -> R Fn ( U X. V ) ) $.
+      ofval.9 $e |- ( ph -> C e. U ) $.
+      ofval.10 $e |- ( ph -> D e. V ) $.
       $( Evaluate a function operation at a point.  (Contributed by Mario
          Carneiro, 20-Jul-2014.) $)
-      ofval $p |- ( ( ph /\ X e. S ) -> ( ( F oF R G ) ` X ) = ( C R D ) ) $=
-        ( cfv vx wcel wa cof co cv cmpt wceq eqidd offval fveq1d adantr oveq12d
-        fveq2 eqid ovex fvmpt adantl inss1 eqsstr3i sseli sylan2 inss2 3eqtrd
-        cin ) ALGUBZUCZLHIFUDUEZTZLUAGUAUFZHTZVJITZFUEZUGZTZLHTZLITZFUEZDEFUEAV
-        IVOUHVFALVHVNAUABCVKVLFGHIJKMNOPQAVJBUBUCVKUIAVJCUBUCVLUIUJUKULVFVOVRUH
-        AUALVMVRGVNVJLUHVKVPVLVQFVJLHUNVJLIUNUMVNUOVPVQFUPUQURVGVPDVQEFVFALBUBV
-        PDUHGBLGBCVEZBQBCUSUTVARVBVFALCUBVQEUHGCLGVSCQBCVCUTVASVBUMVD $.
+      fnofval $p |- ( ( ph /\ X e. S ) -> ( ( F oF R G ) ` X ) = ( C R D ) ) $=
+        ( vx wcel wa cof co cfv cv cmpt wceq offval fveq1d adantr cvv
+        eqidd ax-ia2 cxp wfn inss1 eqsstr3i sseli sylan2 eleq1d inss2
+        cin mpbird fnovex syl3anc fveq2 oveq12d fvmptg syl2anc 3eqtrd
+        eqid ) AMGUEZUFZMIJFUGUHZUIZMUDGUDUJZIUIZWAJUIZFUHZUKZUIZMIUI
+        ZMJUIZFUHZDEFUHAVTWFULVQAMVSWEAUDBCWBWCFGIJKLNOPQRAWABUEUFWBU
+        QAWACUEUFWCUQUMUNUOVRVQWIUPUEZWFWIULAVQURVRFHKUSUTZWGHUEZWHKU
+        EZWJAWKVQUAUOVRWLDHUEZAWNVQUBUOVRWGDHVQAMBUEWGDULGBMGBCVGZBRB
+        CVAVBVCSVDZVEVHVRWMEKUEZAWQVQUCUOVRWHEKVQAMCUEWHEULGCMGWOCRBC
+        VFVBVCTVDZVEVHWGWHHKFVIVJUDMWDWIGUPWEWAMULWBWGWCWHFWAMIVKWAMJ
+        VKVLWEVPVMVNVRWGDWHEFWPWRVLVO $.
+    $}
 
+    ${
+      ofrval.6 $e |- ( ( ph /\ X e. A ) -> ( F ` X ) = C ) $.
+      ofrval.7 $e |- ( ( ph /\ X e. B ) -> ( G ` X ) = D ) $.
       $( Exhibit a function relation at a point.  (Contributed by Mario
          Carneiro, 28-Jul-2014.) $)
       ofrval $p |- ( ( ph /\ F oR R G /\ X e. S ) -> C R D ) $=
