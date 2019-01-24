@@ -50994,31 +50994,6 @@ $)
   $}
 
   ${
-    ofc1.1 $e |- ( ph -> A e. V ) $.
-    ofc1.2 $e |- ( ph -> B e. W ) $.
-    ofc1.3 $e |- ( ph -> F Fn A ) $.
-    ofc1.4 $e |- ( ( ph /\ X e. A ) -> ( F ` X ) = C ) $.
-    $( Left operation by a constant.  (Contributed by Mario Carneiro,
-       24-Jul-2014.) $)
-    ofc1 $p |- ( ( ph /\ X e. A ) ->
-      ( ( ( A X. { B } ) oF R F ) ` X ) = ( B R C ) ) $=
-      ( csn cxp wcel wfn fnconstg syl inidm cfv wceq fvconst2g sylan ofval ) AB
-      BCDEBBCNOZFGGIACHPZUFBQKBCHRSLJJBTAUGIBPIUFUACUBKBCIHUCUDMUE $.
-  $}
-
-  ${
-    ofc2.1 $e |- ( ph -> A e. V ) $.
-    ofc2.2 $e |- ( ph -> B e. W ) $.
-    ofc2.3 $e |- ( ph -> F Fn A ) $.
-    ofc2.4 $e |- ( ( ph /\ X e. A ) -> ( F ` X ) = C ) $.
-    $( Right operation by a constant.  (Contributed by NM, 7-Oct-2014.) $)
-    ofc2 $p |- ( ( ph /\ X e. A ) ->
-      ( ( F oF R ( A X. { B } ) ) ` X ) = ( C R B ) ) $=
-      ( csn cxp wcel wfn fnconstg syl inidm cfv wceq fvconst2g sylan ofval ) AB
-      BDCEBFBCNOZGGILACHPZUFBQKBCHRSJJBTMAUGIBPIUFUACUBKBCIHUCUDUE $.
-  $}
-
-  ${
     $d x A $.  $d x B $.  $d x C $.  $d x ph $.  $d x R $.  $d x W $.
     $d x X $.
     ofc12.1 $e |- ( ph -> A e. V ) $.
