@@ -51160,14 +51160,15 @@ $)
   $( The value of the first-member function at the empty set.  (Contributed by
      NM, 23-Apr-2007.) $)
   1st0 $p |- ( 1st ` (/) ) = (/) $=
-    ( c0 c1st cfv csn cdm cuni 1stval dmsn0 unieqi uni0 3eqtri ) ABCADEZFAFAAGL
-    AHIJK $.
+    ( c0 c1st cfv csn cdm cuni cvv wcel wceq 0ex 1stvalg ax-mp unieqi
+    dmsn0 uni0 3eqtri ) ABCZADEZFZAFAAGHQSIJAKLRANMOP $.
 
   $( The value of the second-member function at the empty set.  (Contributed by
      NM, 23-Apr-2007.) $)
   2nd0 $p |- ( 2nd ` (/) ) = (/) $=
-    ( c0 c2nd cfv csn crn cuni 2ndval wceq dmsn0 dm0rn0 mpbi unieqi uni0 3eqtri
-    cdm ) ABCADZEZFAFAAGQAPOAHQAHIPJKLMN $.
+    ( c2nd cfv csn crn cuni cvv wcel wceq 0ex 2ndvalg ax-mp cdm dmsn0
+    c0 dm0rn0 mpbi unieqi uni0 3eqtri ) NABZNCZDZEZNENNFGTUCHINJKUBNU
+    ALNHUBNHMUAOPQRS $.
 
   ${
     op1st.1 $e |- A e. _V $.
