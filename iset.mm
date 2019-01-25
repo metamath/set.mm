@@ -51142,20 +51142,19 @@ $)
     $( The value of the function that extracts the first member of an ordered
        pair.  (Contributed by NM, 9-Oct-2004.)  (Revised by Mario Carneiro,
        8-Sep-2013.) $)
-    1stval $p |- ( 1st ` A ) = U. dom { A } $=
-      ( vx cvv wcel c1st cfv csn cdm cuni wceq cv sneq dmeqd unieqd df-1st snex
-      dmex uniex c0 syl6eq fvmpt wn fvprc snprc biimpi dm0 uni0 eqtr4d pm2.61i
-      ) ACDZAEFZAGZHZIZJBABKZGZHZIUNCEUOAJZUQUMURUPULUOALMNBOUMULAPQRUAUJUBZUKS
-      UNAEUCUSUNSISUSUMSUSUMSHSUSULSUSULSJAUDUEMUFTNUGTUHUI $.
+    1stvalg $p |- ( A e. _V -> ( 1st ` A ) = U. dom { A } ) $=
+      ( vx cvv wcel csn cdm cuni c1st cfv wceq snexg dmexg uniexg 3syl cv dmeqd
+      sneq unieqd df-1st fvmptg mpdan ) ACDZAEZFZGZCDZAHIUEJUBUCCDUDCDUFAKUCCLU
+      DCMNBABOZEZFZGUECCHUGAJZUIUDUJUHUCUGAQPRBSTUA $.
 
     $( The value of the function that extracts the second member of an ordered
        pair.  (Contributed by NM, 9-Oct-2004.)  (Revised by Mario Carneiro,
        8-Sep-2013.) $)
-    2ndval $p |- ( 2nd ` A ) = U. ran { A } $=
-      ( vx cvv wcel c2nd cfv csn crn cuni wceq cv sneq rneqd unieqd df-2nd snex
-      rnex uniex c0 syl6eq fvmpt wn fvprc snprc biimpi rn0 uni0 eqtr4d pm2.61i
-      ) ACDZAEFZAGZHZIZJBABKZGZHZIUNCEUOAJZUQUMURUPULUOALMNBOUMULAPQRUAUJUBZUKS
-      UNAEUCUSUNSISUSUMSUSUMSHSUSULSUSULSJAUDUEMUFTNUGTUHUI $.
+    2ndvalg $p |- ( A e. _V -> ( 2nd ` A ) = U. ran { A } ) $=
+      ( vx cvv wcel csn crn cuni c2nd wceq snexg rnexg uniexg 3syl cv
+      cfv sneq rneqd unieqd df-2nd fvmptg mpdan ) ACDZAEZFZGZCDZAHOUE
+      IUBUCCDUDCDUFAJUCCKUDCLMBABNZEZFZGUECCHUGAIZUIUDUJUHUCUGAPQRBST
+      UA $.
   $}
 
   $( Value of the first-member function at non-pairs.  (Contributed by Thierry
