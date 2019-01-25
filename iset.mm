@@ -51176,12 +51176,16 @@ $)
     $( Extract the first member of an ordered pair.  (Contributed by NM,
        5-Oct-2004.) $)
     op1st $p |- ( 1st ` <. A , B >. ) = A $=
-      ( cop c1st cfv csn cdm cuni 1stval op1sta eqtri ) ABEZFGNHIJANKABCDLM $.
+      ( cop c1st cfv csn cdm cuni wcel wceq opexg mp2an 1stvalg ax-mp
+      cvv op1sta eqtri ) ABEZFGZTHIJZATQKZUAUBLAQKBQKUCCDABQQMNTOPABC
+      DRS $.
 
     $( Extract the second member of an ordered pair.  (Contributed by NM,
        5-Oct-2004.) $)
     op2nd $p |- ( 2nd ` <. A , B >. ) = B $=
-      ( cop c2nd cfv csn crn cuni 2ndval op2nda eqtri ) ABEZFGNHIJBNKABCDLM $.
+      ( cop c2nd cfv csn crn cuni wcel wceq opexg mp2an 2ndvalg ax-mp
+      cvv op2nda eqtri ) ABEZFGZTHIJZBTQKZUAUBLAQKBQKUCCDABQQMNTOPABC
+      DRS $.
 
     $( Extract the first member of an ordered pair.  (Contributed by Mario
        Carneiro, 31-Aug-2015.) $)
