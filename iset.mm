@@ -51157,20 +51157,6 @@ $)
       UA $.
   $}
 
-  $( Value of the first-member function at non-pairs.  (Contributed by Thierry
-     Arnoux, 22-Sep-2017.) $)
-  1stnpr $p |- ( -. A e. ( _V X. _V ) -> ( 1st ` A ) = (/) ) $=
-    ( cvv cxp wcel wn c1st cfv csn cdm cuni c0 1stval wne dmsnn0 biimpri unieqd
-    necon1bi uni0 syl6eq syl5eq ) ABBCDZEZAFGAHIZJZKALUBUDKJKUBUCKUAUCKUAUCKMAN
-    OQPRST $.
-
-  $( Value of the second-member function at non-pairs.  (Contributed by Thierry
-     Arnoux, 22-Sep-2017.) $)
-  2ndnpr $p |- ( -. A e. ( _V X. _V ) -> ( 2nd ` A ) = (/) ) $=
-    ( cvv cxp wcel wn c2nd cfv csn crn cuni c0 2ndval wne rnsnn0 biimpri unieqd
-    necon1bi uni0 syl6eq syl5eq ) ABBCDZEZAFGAHIZJZKALUBUDKJKUBUCKUAUCKUAUCKMAN
-    OQPRST $.
-
   $( The value of the first-member function at the empty set.  (Contributed by
      NM, 23-Apr-2007.) $)
   1st0 $p |- ( 1st ` (/) ) = (/) $=
