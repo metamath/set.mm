@@ -51221,19 +51221,20 @@ $)
        Mario Carneiro, 2-May-2015.) $)
     ot1stg $p |- ( ( A e. V /\ B e. W /\ C e. X )
          -> ( 1st ` ( 1st ` <. A , B , C >. ) ) = A ) $=
-      ( wcel cotp c1st cfv wceq wa cop df-ot fveq2i cvv opex op1stg mpan syl5eq
-      fveq2d sylan9eqr 3impa ) ADGZBEGZCFGZABCHZIJZIJZAKUFUDUELUIABMZIJAUFUHUJI
-      UFUHUJCMZIJZUJUGUKIABCNOUJPGUFULUJKABQUJCPFRSTUAABDERUBUC $.
+      ( wcel w3a cotp c1st cfv cop df-ot fveq2i wceq cvv opexg op1stg
+      wa sylan 3impa syl5eq fveq2d 3adant3 eqtrd ) ADGZBEGZCFGZHZABCI
+      ZJKZJKABLZJKZAUIUKULJUIUKULCLZJKZULUJUNJABCMNUFUGUHUOULOZUFUGSU
+      LPGUHUPABDEQULCPFRTUAUBUCUFUGUMAOUHABDERUDUE $.
 
     $( Extract the second member of an ordered triple.  (See ~ ot1stg
        comment.)  (Contributed by NM, 3-Apr-2015.)  (Revised by Mario Carneiro,
        2-May-2015.) $)
     ot2ndg $p |- ( ( A e. V /\ B e. W /\ C e. X )
          -> ( 2nd ` ( 1st ` <. A , B , C >. ) ) = B ) $=
-      ( wcel cotp c1st cfv c2nd wceq wa cop df-ot fveq2i cvv opex op1stg mpan
-      syl5eq fveq2d op2ndg sylan9eqr 3impa ) ADGZBEGZCFGZABCHZIJZKJZBLUHUFUGMUK
-      ABNZKJBUHUJULKUHUJULCNZIJZULUIUMIABCOPULQGUHUNULLABRULCQFSTUAUBABDEUCUDUE
-      $.
+      ( wcel w3a cotp c1st cfv c2nd df-ot fveq2i wceq wa opexg op1stg
+      cop cvv sylan 3impa syl5eq fveq2d op2ndg 3adant3 eqtrd ) ADGZBE
+      GZCFGZHZABCIZJKZLKABSZLKZBUKUMUNLUKUMUNCSZJKZUNULUPJABCMNUHUIUJ
+      UQUNOZUHUIPUNTGUJURABDEQUNCTFRUAUBUCUDUHUIUOBOUJABDEUEUFUG $.
 
     $( Extract the third member of an ordered triple.  (See ~ ot1stg comment.)
        (Contributed by NM, 3-Apr-2015.) $)
