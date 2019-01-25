@@ -51386,10 +51386,12 @@ $)
      dummy variables.  See also ~ elxp4 .  (Contributed by NM, 9-Oct-2004.) $)
   elxp6 $p |- ( A e. ( B X. C ) <-> ( A = <. ( 1st ` A ) , ( 2nd ` A ) >.
                /\ ( ( 1st ` A ) e. B /\ ( 2nd ` A ) e. C ) ) ) $=
-    ( cxp wcel csn cdm cuni crn cop wceq wa c1st cfv elxp4 1stval 2ndval eleq1i
-    c2nd anbi12i opeq12i eqeq2i bitr4i ) ABCDEAAFZGHZUDIHZJZKZUEBEZUFCEZLZLAAMN
-    ZASNZJZKZULBEZUMCEZLZLABCOUOUHURUKUNUGAULUEUMUFAPZAQZUAUBUPUIUQUJULUEBUSRUM
-    UFCUTRTTUC $.
+    ( cxp wcel cvv c1st cfv c2nd wceq wa elex opexg adantl eleq1 cuni
+    cop wb eleq1d anbi12d adantr mpbird csn cdm 1stvalg 2ndvalg elxp4
+    crn opeq12d eqeq2d syl6rbbr pm5.21nii ) ABCDZEZAFEZAAGHZAIHZQZJZU
+    PBEZUQCEZKZKZAUMLVCUOURFEZVBVDUSUPUQBCMNUSUOVDRVBAURFOUAUBUOVCAAU
+    CZUDPZVEUHPZQZJZVFBEZVGCEZKZKUNUOUSVIVBVLUOURVHAUOUPVFUQVGAUEZAUF
+    ZUIUJUOUTVJVAVKUOUPVFBVMSUOUQVGCVNSTTABCUGUKUL $.
 
   $( Membership in a cross product.  This version requires no quantifiers or
      dummy variables.  See also ~ elxp4 .  (Contributed by NM, 19-Aug-2006.) $)
