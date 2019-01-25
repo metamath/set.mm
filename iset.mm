@@ -51238,9 +51238,11 @@ $)
 
     $( Extract the third member of an ordered triple.  (See ~ ot1stg comment.)
        (Contributed by NM, 3-Apr-2015.) $)
-    ot3rdg $p |- ( C e. V -> ( 2nd ` <. A , B , C >. ) = C ) $=
-      ( wcel cotp c2nd cfv cop df-ot fveq2i cvv wceq opex op2ndg mpan syl5eq )
-      CDEZABCFZGHABIZCIZGHZCSUAGABCJKTLERUBCMABNTCLDOPQ $.
+    ot3rdgg $p |- ( ( A e. V /\ B e. W /\ C e. X )
+        -> ( 2nd ` <. A , B , C >. ) = C ) $=
+      ( wcel w3a cotp c2nd cfv cop df-ot fveq2i wceq wa cvv opexg sylan
+      op2ndg 3impa syl5eq ) ADGZBEGZCFGZHABCIZJKABLZCLZJKZCUFUHJABCMNUC
+      UDUEUICOZUCUDPUGQGUEUJABDERUGCQFTSUAUB $.
 
     $( Alternate value of the function that extracts the first member of an
        ordered pair.  Definition 5.13 (i) of [Monk1] p. 52.  (Contributed by
