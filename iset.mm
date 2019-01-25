@@ -51397,9 +51397,12 @@ $)
      dummy variables.  See also ~ elxp4 .  (Contributed by NM, 19-Aug-2006.) $)
   elxp7 $p |- ( A e. ( B X. C ) <-> ( A e. ( _V X. _V )
                /\ ( ( 1st ` A ) e. B /\ ( 2nd ` A ) e. C ) ) ) $=
-    ( cxp wcel c1st cfv c2nd cop wceq wa cvv fvex pm3.2i mpbiran2 anbi1i bitr4i
-    elxp6 ) ABCDEAAFGZAHGZIJZSBETCEKZKALLDEZUBKABCRUCUAUBUCUASLEZTLEZKUDUEAFMAH
-    MNALLROPQ $.
+    ( cxp wcel cvv c1st cfv c2nd wa elex wfn wfo ax-mp funfvex funfni
+    fofn mpan elxp6 syl6rbbr adantr cop wceq fo1st fo2nd jca biantrud
+    anbi1d pm5.21nii ) ABCDZEZAFEZAFFDZEZAGHZBEAIHZCEJZJZAUJKUNULUQAU
+    MKUAULURAUOUPUBUCZUQJUKULUNUSUQULUSUSUOFEZUPFEZJZJUNULVBUSULUTVAG
+    FLZULUTFFGMVCUDFFGQNUTFAGAGOPRIFLZULVAFFIMVDUEFFIQNVAFAIAIOPRUFUG
+    AFFSTUHABCSTUI $.
 
   $( Equality with an ordered pair.  (Contributed by NM, 15-Dec-2008.)
      (Revised by Mario Carneiro, 23-Feb-2014.) $)
