@@ -51310,30 +51310,38 @@ $)
       ZVFBMVFNZTVGDFZEFZOZGZHZIZBJZEBLDALVODEABVJBJZVOVIAJVOVPVNVJBVIVJDPEPUAUB
       ULUCUDVEVOCDEABVAVKQZVDVNBVQVCVMVQVBVLVAVKUEUFUGUHUIUJCVFBVDVHVHCRVDSZVFN
       ZCVFVDSZMVRVFCUKUMVFRUNVSVTQVFUOCRVFVDUPUQURUSUT $.
+  $}
 
+  ${
+    $d y B $.  $d u v x $.  $d u v y $.  $d u v A $.  $d u v B $.
     $( Onto mapping of a restriction of the ` 1st ` (first member of an ordered
-       pair) function.  (Contributed by NM, 14-Dec-2008.) $)
-    fo1stres $p |- ( B =/= (/) ->
+       pair) function.  (Contributed by Jim Kingdon, 24-Jan-2019.) $)
+    fo1stresm $p |- ( E. y y e. B ->
                  ( 1st |` ( A X. B ) ) : ( A X. B ) -onto-> A ) $=
-      ( vx vy c0 wne cxp c1st cres wf crn wa wss cv wcel cfv ax-mp jctil sylibr
-      vex wfo wex wi n0 cop opelxp fvres op1st syl6req wfn f1stres ffn fnfvelrn
-      wceq mpan eqeltrd sylbir expcom exlimiv sylbi ssrdv frn eqss dffo2 ) BEFZ
-      ABGZAHVFIZJZVGKZAUNZLVFAVGUAVEVJVHVEVIAMZAVIMZLVJVEVLVKVECAVIVEDNZBOZDUBC
-      NZAOZVOVIOZUCZDBUDVNVRDVPVNVQVPVNLVOVMUEZVFOZVQVOVMABUFVTVOVSVGPZVIVTWAVS
-      HPVOVSVFHUGVOVMCTDTUHUIVGVFUJZVTWAVIOVHWBABUKZVFAVGULQVFVSVGUMUOUPUQURUSU
-      TVAVHVKWCVFAVGVBQRVIAVCSWCRVFAVGVDS $.
+      ( vv vu cv wcel wex cxp c1st cres wfo wa wss cfv vex ax-mp sylbir
+      jctil sylibr eleq1 cbvexv wf crn wceq wi cop opelxp fvres syl6req
+      op1st wfn f1stres fnfvelrn mpan eqeltrd expcom exlimiv ssrdv eqss
+      ffn frn dffo2 ) AFZCGZAHDFZCGZDHZBCIZBJVIKZLZVGVEDAVFVDCUAUBVHVIB
+      VJUCZVJUDZBUEZMVKVHVNVLVHVMBNZBVMNZMVNVHVPVOVHEBVMVGEFZBGZVQVMGZU
+      FDVRVGVSVRVGMVQVFUGZVIGZVSVQVFBCUHWAVQVTVJOZVMWAWBVTJOVQVTVIJUIVQ
+      VFEPDPUKUJVJVIULZWAWBVMGVLWCBCUMZVIBVJVAQVIVTVJUNUOUPRUQURUSVLVOW
+      DVIBVJVBQSVMBUTTWDSVIBVJVCTR $.
+  $}
 
+  ${
+    $d x A $.  $d u v x $.  $d u v y $.  $d u v A $.  $d u v B $.
     $( Onto mapping of a restriction of the ` 2nd ` (second member of an
-       ordered pair) function.  (Contributed by NM, 14-Dec-2008.) $)
-    fo2ndres $p |- ( A =/= (/) ->
+       ordered pair) function.  (Contributed by Jim Kingdon, 24-Jan-2019.) $)
+    fo2ndresm $p |- ( E. x x e. A ->
                  ( 2nd |` ( A X. B ) ) : ( A X. B ) -onto-> B ) $=
-      ( vy vx c0 wne cxp c2nd cres wf crn wa wss cv wcel cfv ax-mp jctil sylibr
-      vex wfo wex wi n0 cop opelxp fvres op2nd syl6req wfn f2ndres ffn fnfvelrn
-      wceq mpan eqeltrd sylbir ex exlimiv sylbi ssrdv frn eqss dffo2 ) AEFZABGZ
-      BHVFIZJZVGKZBUNZLVFBVGUAVEVJVHVEVIBMZBVIMZLVJVEVLVKVECBVIVEDNZAOZDUBCNZBO
-      ZVOVIOZUCZDAUDVNVRDVNVPVQVNVPLVMVOUEZVFOZVQVMVOABUFVTVOVSVGPZVIVTWAVSHPVO
-      VSVFHUGVMVODTCTUHUIVGVFUJZVTWAVIOVHWBABUKZVFBVGULQVFVSVGUMUOUPUQURUSUTVAV
-      HVKWCVFBVGVBQRVIBVCSWCRVFBVGVDS $.
+      ( vu vv cv wcel wex cxp c2nd cres wfo wa wss ax-mp sylbir jctil
+      cfv vex sylibr eleq1 cbvexv wf crn wceq wi opelxp fvres syl6req
+      cop op2nd wfn f2ndres ffn fnfvelrn eqeltrd ex exlimiv ssrdv frn
+      mpan eqss dffo2 ) AFZBGZAHDFZBGZDHZBCIZCJVIKZLZVGVEDAVFVDBUAUBV
+      HVICVJUCZVJUDZCUEZMVKVHVNVLVHVMCNZCVMNZMVNVHVPVOVHECVMVGEFZCGZV
+      QVMGZUFDVGVRVSVGVRMVFVQUJZVIGZVSVFVQBCUGWAVQVTVJRZVMWAWBVTJRVQV
+      TVIJUHVFVQDSESUKUIVJVIULZWAWBVMGVLWCBCUMZVICVJUNOVIVTVJUOVAUPPU
+      QURUSVLVOWDVICVJUTOQVMCVBTWDQVICVJVCTP $.
   $}
 
   ${
