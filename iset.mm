@@ -51269,23 +51269,25 @@ $)
     $( The ` 1st ` function maps the universe onto the universe.  (Contributed
        by NM, 14-Oct-2004.)  (Revised by Mario Carneiro, 8-Sep-2013.) $)
     fo1st $p |- 1st : _V -onto-> _V $=
-      ( vx vy cvv c1st wfo wfn crn wceq cv csn cdm cuni snex dmex df-1st fnmpti
-      uniex wrex cab wcel rnmpt vex opex op1sta eqcomi sneq dmeqd unieqd eqeq2d
-      cop rspcev mp2an 2th abbi2i eqtr4i df-fo mpbir2an ) CCDEDCFDGZCHACAIZJZKZ
-      LZDVAUTUSMNQAOZPURBIZVBHZACRZBSCABCVBDVCUAVFBCVDCTVFBUBZVDVDUJZCTVDVHJZKZ
-      LZHZVFVDVDUCVKVDVDVDVGVGUDUEVEVLAVHCUSVHHZVBVKVDVMVAVJVMUTVIUSVHUFUGUHUIU
-      KULUMUNUOCCDUPUQ $.
+      ( vx vy cvv c1st wfo wfn crn wceq csn cdm cuni wcel snexg ax-mp
+      cv vex dmex uniex df-1st fnmpti wrex cab rnmpt cop sopex op1sta
+      eqcomi dmeqd unieqd eqeq2d rspcev mp2an 2th abbi2i eqtr4i df-fo
+      sneq mpbir2an ) CCDEDCFDGZCHACAOZIZJZKZDVBVAUTCLVACLAPUTMNQRASZ
+      TUSBOZVCHZACUAZBUBCABCVCDVDUCVGBCVECLVGBPZVEVEUDZCLVEVIIZJZKZHZ
+      VGBBUEVLVEVEVEVHVHUFUGVFVMAVICUTVIHZVCVLVEVNVBVKVNVAVJUTVIUQUHU
+      IUJUKULUMUNUOCCDUPUR $.
 
     $d x y z w v A $.  $d x y z B $.  $d x y z w v u $.
     $( The ` 2nd ` function maps the universe onto the universe.  (Contributed
        by NM, 14-Oct-2004.)  (Revised by Mario Carneiro, 8-Sep-2013.) $)
     fo2nd $p |- 2nd : _V -onto-> _V $=
-      ( vx vy cvv c2nd wfo wfn crn wceq cv csn cuni snex rnex uniex df-2nd wrex
-      fnmpti cab rnmpt wcel vex cop opex op2nda eqcomi sneq rneqd unieqd eqeq2d
-      rspcev mp2an 2th abbi2i eqtr4i df-fo mpbir2an ) CCDEDCFDGZCHACAIZJZGZKZDU
-      TUSURLMNAOZQUQBIZVAHZACPZBRCABCVADVBSVEBCVCCTVEBUAZVCVCUBZCTVCVGJZGZKZHZV
-      EVCVCUCVJVCVCVCVFVFUDUEVDVKAVGCURVGHZVAVJVCVLUTVIVLUSVHURVGUFUGUHUIUJUKUL
-      UMUNCCDUOUP $.
+      ( vx vy cvv c2nd wfo wfn crn wceq csn cuni wcel vex snexg ax-mp
+      cv rnex uniex df-2nd fnmpti wrex rnmpt sopex op2nda eqcomi sneq
+      cab cop rneqd unieqd eqeq2d rspcev mp2an abbi2i eqtr4i mpbir2an
+      2th df-fo ) CCDEDCFDGZCHACAOZIZGZJZDVAUTUSCKUTCKALUSMNPQARZSURB
+      OZVBHZACTZBUFCABCVBDVCUAVFBCVDCKVFBLZVDVDUGZCKVDVHIZGZJZHZVFBBU
+      BVKVDVDVDVGVGUCUDVEVLAVHCUSVHHZVBVKVDVMVAVJVMUTVIUSVHUEUHUIUJUK
+      ULUPUMUNCCDUQUO $.
 
     $( Mapping of a restriction of the ` 1st ` (first member of an ordered
        pair) function.  (Contributed by NM, 11-Oct-2004.)  (Revised by Mario
