@@ -51344,37 +51344,6 @@ $)
       QURUSVLVOWDVICVJUTOQVMCVBTWDQVICVJVCTP $.
   $}
 
-  ${
-    $d x y z w v $.  $d v w A $.
-    $( Value of an alternate definition of the ` 1st ` function.  (Contributed
-       by NM, 14-Oct-2004.)  (Revised by Mario Carneiro, 30-Dec-2014.) $)
-    1st2val $p |- ( { <. <. x , y >. , z >. | z = x } ` A ) = ( 1st ` A ) $=
-      ( vw vv cvv wcel weq cfv wceq cv wex vex syl6eq eqtr4d cdm cuni c0 copab
-      cxp coprab c1st cop fveq2 co df-ov simpl cmpt2 mpt2v eqcomi ovmpt2a mp2an
-      elvv eqtr3i op1std exlimivv sylbi wn csn wa pm3.2i a6ev 2th opabbii df-xp
-      dmoprab 3eqtr4ri eleq2i ndmfv sylnbir dmsnn0 biimpri necon1bi unieqd uni0
-      wne 1stval syl6eqr pm2.61i ) DGGUAZHZDCAIZABCUBZJZDUCJZKZWBDELZFLZUDZKZFM
-      EMWGEFDUNWKWGEFWKWEWHWFWKWEWJWDJZWHDWJWDUEWHWIWDUFZWLWHWHWIWDUGWHGHWIGHWM
-      WHKENZFNZABWHWIGGALZWHWDAEIBFIUHABGGWPUIWDABCWPUJUKWNULUMUOOWHWIDWNWOUPPU
-      QURWBUSZWEDUTQZRZWFWQWESWSWBDWDQZHWESKWTWADWPGHZBLGHZVAZABTWCCMZABTWAWTXC
-      XDABXCXDXAXBANBNVBCAVCVDVEABGGVFWCABCVGVHVIDWDVJVKWQWSSRSWQWRSWBWRSWBWRSV
-      QDVLVMVNVOVPOPDVRVSVT $.
-
-    $( Value of an alternate definition of the ` 2nd ` function.  (Contributed
-       by NM, 10-Aug-2006.)  (Revised by Mario Carneiro, 30-Dec-2014.) $)
-    2nd2val $p |- ( { <. <. x , y >. , z >. | z = y } ` A ) = ( 2nd ` A ) $=
-      ( vw vv cvv cxp wcel weq cfv wceq cv wex vex syl6eq eqtr4d cuni c0 copab
-      coprab c2nd cop elvv fveq2 co df-ov simpr cmpt2 mpt2v eqcomi mp2an eqtr3i
-      ovmpt2a op2ndd exlimivv sylbi wn csn crn cdm wa pm3.2i a6ev opabbii df-xp
-      2th dmoprab 3eqtr4ri eleq2i ndmfv sylnbir wne rnsnn0 necon1bi unieqd uni0
-      biimpri 2ndval syl6eqr pm2.61i ) DGGHZIZDCBJZABCUAZKZDUBKZLZWCDEMZFMZUCZL
-      ZFNENWHEFDUDWLWHEFWLWFWJWGWLWFWKWEKZWJDWKWEUEWIWJWEUFZWMWJWIWJWEUGWIGIWJG
-      IWNWJLEOZFOZABWIWJGGBMZWJWEAEJBFJUHABGGWQUIWEABCWQUJUKWPUNULUMPWIWJDWOWPU
-      OQUPUQWCURZWFDUSUTZRZWGWRWFSWTWCDWEVAZIWFSLXAWBDAMGIZWQGIZVBZABTWDCNZABTW
-      BXAXDXEABXDXEXBXCAOBOVCCBVDVGVEABGGVFWDABCVHVIVJDWEVKVLWRWTSRSWRWSSWCWSSW
-      CWSSVMDVNVRVOVPVQPQDVSVTWA $.
-  $}
-
   $( Composition of the first member function with another function.
      (Contributed by NM, 12-Oct-2007.) $)
   1stcof $p |- ( F : A --> ( B X. C ) -> ( 1st o. F ) : A --> B ) $=
