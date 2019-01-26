@@ -51489,11 +51489,12 @@ $)
        23-Feb-2014.) $)
     op1steq $p |- ( A e. ( V X. W )
          -> ( ( 1st ` A ) = B <-> E. x A = <. B , x >. ) ) $=
-      ( cxp wcel cvv c1st cfv wceq cv cop wex wb xpss sseli wa c2nd syl eqid ex
-      eqopi mpanr2 fvex opeq2 eqeq2d spcev eqop simpl syl6bi exlimdv impbid ) B
-      DEFZGBHHFZGZBIJCKZBCALZMZKZANZOUNUOBDEPQUPUQVAUPUQVAUPUQRBCBSJZMZKZVAUPUQ
-      VBVBKVDVBUABCVBHHUCUDUTVDAVBBSUEURVBKUSVCBURVBCUFUGUHTUBUPUTUQAUPUTUQVBUR
-      KZRUQBCURHHUIUQVEUJUKULUMT $.
+      ( cxp wcel cvv c1st cfv wceq cv cop wex wb xpss sseli wa c2nd eqid mpanr2
+      eqopi wi elex 2ndexg opeq2 eqeq2d spcegv 3syl adantr ex eqop simpl syl6bi
+      mpd exlimdv impbid syl ) BDEFZGBHHFZGZBIJCKZBCALZMZKZANZOUSUTBDEPQVAVBVFV
+      AVBVFVAVBRBCBSJZMZKZVFVAVBVGVGKVIVGTBCVGHHUBUAVAVIVFUCZVBVABHGVGHGVJBUTUD
+      BUEVEVIAVGHVCVGKVDVHBVCVGCUFUGUHUIUJUOUKVAVEVBAVAVEVBVGVCKZRVBBCVCHHULVBV
+      KUMUNUPUQUR $.
   $}
 
   $( Swap the members of an ordered pair.  (Contributed by NM, 31-Dec-2014.) $)
