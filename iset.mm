@@ -51702,13 +51702,14 @@ $)
        ordered pair extractors.  (Contributed by NM, 6-Nov-2006.)  (Revised by
        David Abernethy, 19-Jun-2012.) $)
     eloprabi $p |- ( A e. { <. <. x , y >. , z >. | ph } -> th ) $=
-      ( vw cv wceq wex c1st cfv wb syl c2nd coprab wcel wa eqeq1 anbi1d 3exbidv
-      cop df-oprab elab2g ibi opex vex op1std fveq2d op1st syl6req op2nd op2ndd
-      eqcomd 3bitrd biimpa exlimiv ) HAEFGUAZUBZHEMZFMZUGZGMZUGZNZAUCZGOZFOZEOZ
-      DVDVNLMZVINZAUCZGOFOEOVNLHVCVCVOHNZVQVKEFGVRVPVJAVOHVIUDUEUFAEFGLUHUIUJVM
-      DEVLDFVKDGVJADVJABCDVJVEHPQZPQZNABRVJVTVGPQVEVJVSVGPVGVHHVEVFUKZGULZUMZUN
-      VEVFEULZFULZUOUPISVJVFVSTQZNBCRVJWFVGTQVFVJVSVGTWCUNVEVFWDWEUQUPJSVJVHHTQ
-      ZNCDRVJWGVHVGVHHWAWBURUSKSUTVAVBVBVBS $.
+      ( vw cv wceq wex c1st cfv wb syl c2nd coprab wcel cop wa anbi1d
+      eqeq1 3exbidv df-oprab elab2g ibi sopex vex op1std fveq2d op1st
+      syl6req op2nd op2ndd eqcomd 3bitrd biimpa exlimiv ) HAEFGUAZUBZ
+      HEMZFMZUCZGMZUCZNZAUDZGOZFOZEOZDVDVNLMZVINZAUDZGOFOEOVNLHVCVCVO
+      HNZVQVKEFGVRVPVJAVOHVIUFUEUGAEFGLUHUIUJVMDEVLDFVKDGVJADVJABCDVJ
+      VEHPQZPQZNABRVJVTVGPQVEVJVSVGPVGVHHEFUKZGULZUMZUNVEVFEULZFULZUO
+      UPISVJVFVSTQZNBCRVJWFVGTQVFVJVSVGTWCUNVEVFWDWEUQUPJSVJVHHTQZNCD
+      RVJWGVHVGVHHWAWBURUSKSUTVAVBVBVBS $.
   $}
 
   ${
