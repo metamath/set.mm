@@ -51687,9 +51687,10 @@ $)
     $( A consequence of membership in an ordered-pair class abstraction, using
        ordered pair extractors.  (Contributed by NM, 29-Aug-2006.) $)
     elopabi $p |- ( A e. { <. x , y >. | ph } -> ch ) $=
-      ( copab wcel c1st cfv c2nd cop wrel wceq relopab 1st2nd mpan fvex sylib
-      id eqeltrrd opelopab ) FADEIZJZFKLZFMLZNZUEJCUFFUIUEUEOUFFUIPADEQFUERSUFU
-      BUCABCDEUGUHFKTFMTGHUDUA $.
+      ( copab wcel c1st cfv c2nd cop wrel wceq relopab 1st2nd mpan
+      cvv id eqeltrrd wb 1stexg 2ndexg opelopabg syl2anc mpbid ) FADE
+      IZJZFKLZFMLZNZUIJZCUJFUMUIUIOUJFUMPADEQFUIRSUJUAUBUJUKTJULTJUNC
+      UCFUIUDFUIUEABCDEUKULTTGHUFUGUH $.
   $}
 
   ${
