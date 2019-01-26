@@ -51447,9 +51447,12 @@ $)
   xpopth $p |- ( ( A e. ( C X. D ) /\ B e. ( R X. S ) ) ->
        ( ( ( 1st ` A ) = ( 1st ` B ) /\
      ( 2nd ` A ) = ( 2nd ` B ) ) <-> A = B ) ) $=
-    ( cxp wcel wa wceq c1st cfv c2nd cop 1st2nd2 eqeqan12d fvex opth syl6rbb )
-    ACDGHZBEFGHZIABJAKLZAMLZNZBKLZBMLZNZJUBUEJUCUFJITUAAUDBUGACDOBEFOPUBUCUEUFA
-    KQAMQRS $.
+    ( cxp wcel wceq c1st cfv c2nd cop 1st2nd2 cvv wfn wfo fofn ax-mp
+    wa eqeqan12d wb elex adantr fo1st funfvex funfni mpan fo2nd opthg
+    syl2anc syl bitr2d ) ACDGZHZBEFGHZTZABIAJKZALKZMZBJKZBLKZMZIZURVA
+    IUSVBITZUOUPAUTBVCACDNBEFNUAUQAOHZVDVEUBZUOVFUPAUNUCUDVFUROHZUSOH
+    ZVGJOPZVFVHOOJQVJUEOOJRSVHOAJAJUFUGUHLOPZVFVIOOLQVKUIOOLRSVIOALAL
+    UFUGUHURUSVAVBOOUJUKULUM $.
 
   $( Two ways to express equality with an ordered pair.  (Contributed by NM,
      3-Sep-2007.)  (Proof shortened by Mario Carneiro, 26-Apr-2015.) $)
