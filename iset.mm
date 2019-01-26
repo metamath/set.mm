@@ -51527,8 +51527,9 @@ $)
   $( The second ordered pair component of a member of a relation belongs to the
      range of the relation.  (Contributed by NM, 17-Sep-2006.) $)
   2ndrn $p |- ( ( Rel R /\ A e. R ) -> ( 2nd ` A ) e. ran R ) $=
-    ( wrel wcel wa c1st cfv c2nd cop crn 1st2nd simpr eqeltrrd fvex opelrn syl
-    ) BCZABDZEZAFGZAHGZIZBDUABJDSAUBBABKQRLMTUABAFNAHNOP $.
+    ( wrel wcel wa c1st cfv cop crn simpr 1st2nd eqeltrrd cvv 1stexg 2ndexg jca
+    c2nd opelrng 3expa sylan syl2anc ) BCZABDZEZUCAFGZAQGZHZBDZUFBIDZUBUCJZUDAU
+    GBABKUJLUCUEMDZUFMDZEUHUIUCUKULABNABOPUKULUHUIUEUFBMMRSTUA $.
 
   $( Express an element of a relation as a relationship between first and
      second components.  (Contributed by Mario Carneiro, 22-Jun-2016.) $)
