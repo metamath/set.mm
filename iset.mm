@@ -51173,28 +51173,6 @@ $)
     ( wfun cdm wcel cvv crn funex ex rnexg syl6com ) BCZBDAEZBFEZBGFELMNABHIBFJ
     K $.
 
-  ${
-    $d ph w v $.  $d x y z w v $.
-    $( A version of the Axiom of Replacement.  Normally ` ph ` would have free
-       variables ` x ` and ` y ` .  Axiom 6 of [Kunen] p. 12.  The Separation
-       Scheme ~ ax-sep cannot be derived from this version and must be stated
-       as a separate axiom in an axiom system (such as Kunen's) that uses this
-       version in place of our ~ ax-rep .  (Contributed by NM, 10-Oct-2003.) $)
-    zfrep6 $p |- ( A. x e. z E! y ph -> E. w A. x e. z E. y e. w ph ) $=
-      ( cv wral wcel wa cvv wrex wex wceq sylibr cab vex wi wal wmo 3imtr4i weu
-      copab crn wfun crab euex ralimi rabid2 19.42v abbii dmopab df-rab 3eqtr4i
-      cdm syl6reqr syl6eqel eumo imim2i moanimv alimi df-ral funopab sylc nfra1
-      funrnex eleq2d cop opabid opelrn sylbir impac eximi abeq2i df-rex syl6bir
-      ex ralrimi nfopab1 nfrn nfeq2 nfcv nfopab2 rexeqf ralbid spcegv ) ACUAZBD
-      FZGZBFZWGHZAIZBCUBZUCZJHZACWMKZBWGGZACEFZKZBWGGZELWHWLUNZJHWLUDZWNWHWTWGJ
-      WHWGACLZBWGUEZWTWHXBBWGGWGXCMWFXBBWGACUFUGXBBWGUHNWKCLZBOWJXBIZBOWTXCXDXE
-      BWJACUIUJWKBCUKZXBBWGULUMUOZDPUPWJWFQZBRWKCSZBRWHXAXHXIBXHWJACSZQXIWFXJWJ
-      ACUQURWJACUSNUTWFBWGVAWKBCVBTJWLVEVCWHWOBWGWFBWGVDWHWJWIWTHZWOWHWTWGWIXGV
-      FXDCFZWMHZAIZCLXKWOWKXNCWJAXMWJAXMWKWIXLVGWLHXMWKBCVHWIXLWLBPCPVIVJVPVKVL
-      XDBWTXFVMACWMVNTVOVQWSWPEWMJWQWMMWRWOBWGBWQWMBWLWKBCVRVSVTACWQWMCWQWACWLW
-      KBCWBVSWCWDWEVC $.
-  $}
-
   $( If the domain of an onto function exists, so does its codomain.
      (Contributed by NM, 23-Jul-2004.) $)
   fornex $p |- ( A e. C -> ( F : A -onto-> B -> B e. _V ) ) $=
