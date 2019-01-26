@@ -51120,6 +51120,480 @@ $)
     $}
   $}
 
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Functions (continued)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The restriction of a function to a set exists.  Compare Proposition 6.17
+     of [TakeutiZaring] p. 28.  This version has a shorter proof than
+     ~ resfunexg but requires ~ ax-pow and ~ ax-un .  (Contributed by NM,
+     7-Apr-1995.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  resfunexgALT $p |- ( ( Fun A /\ B e. C ) -> ( A |` B ) e. _V ) $=
+    ( wfun wcel cres cdm cvv crn cxp dmresexg adantl df-ima funimaexg syl5eqelr
+    wa cima jca xpexg wss wrel relres relssdmrn ax-mp ssexg mpan 3syl ) ADZBCEZ
+    PZABFZGZHEZUKIZHEZPULUNJZHEZUKHEZUJUMUOUIUMUHABCKLUJUNABQHABMABCNORULUNHHSU
+    KUPTZUQURUKUAUSABUBUKUCUDUKUPHUEUFUG $.
+
+  $( Existence of a composition when the first member is a function.
+     (Contributed by NM, 8-Oct-2007.) $)
+  cofunexg $p |- ( ( Fun A /\ B e. C ) -> ( A o. B ) e. _V ) $=
+    ( wfun wcel wa ccom cdm crn cxp wss wrel relco relssdmrn ax-mp dmcoss ssexg
+    cvv sylancr rnexg dmexg adantl cres rnco resfunexg sylan2 syl xpexg syl2anc
+    syl5eqel ) ADZBCEZFZABGZUNHZUNIZJZKZUQREZUNREUNLURABMUNNOUMUOREZUPREUSULUTU
+    KULUOBHZKVAREUTABPBCUAUOVARQSUBUMUPABIZUCZIZRABUDUMVCREZVDREULUKVBREVEBCTAV
+    BRUEUFVCRTUGUJUOUPRRUHUIUNUQRQS $.
+
+  $( Existence of a composition when the second member is one-to-one.
+     (Contributed by NM, 8-Oct-2007.) $)
+  cofunex2g $p |- ( ( A e. V /\ Fun `' B ) -> ( A o. B ) e. _V ) $=
+    ( ccnv wfun wcel ccom cvv wa cnvexg cofunexg sylan2 cnvco cocnvcnv2 3eqtrri
+    cocnvcnv1 syl5eqel syl ancoms ) BDZEZACFZABGZHFZUAUBITADZGZHFZUDUBUAUEHFUGA
+    CJTUEHKLUGUCUFDZHUHUEDZTDGUIBGUCTUEMUIBNABPOUFHJQRS $.
+
+  $( If the domain of a function is a set, the function is a set.  Theorem
+     6.16(1) of [TakeutiZaring] p. 28.  This theorem is derived using the Axiom
+     of Replacement in the form of ~ funimaexg .  This version of ~ fnex uses
+     ~ ax-pow and ~ ax-un , whereas ~ fnex does not.  (Contributed by NM,
+     14-Aug-1994.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  fnexALT $p |- ( ( F Fn A /\ A e. B ) -> F e. _V ) $=
+    ( wfn wcel wa cdm crn cxp wss cvv fnrel relssdmrn syl adantr eleq1d biimpar
+    wrel cima syl2anc fndm fnfun funimaexg sylan imadmrn imaeq2d syl5eqr syldan
+    wfun xpexg ssexg ) CADZABEZFZCCGZCHZIZJZUQKEZCKEULURUMULCRURACLCMNOUNUOBEZU
+    PKEZUSULUTUMULUOABACUAZPQULUMCASZKEZVAULCUIUMVDACUBCABUCUDULVAVDULUPVCKULUP
+    CUOSVCCUEULUOACVBUFUGPQUHUOUPBKUJTCUQKUKT $.
+
+  $( If the domain of a function exists, so does its range.  Part of Theorem
+     4.15(v) of [Monk1] p. 46.  This theorem is derived using the Axiom of
+     Replacement in the form of ~ funex .  (Contributed by NM, 11-Nov-1995.) $)
+  funrnex $p |- ( dom F e. B -> ( Fun F -> ran F e. _V ) ) $=
+    ( wfun cdm wcel cvv crn funex ex rnexg syl6com ) BCZBDAEZBFEZBGFELMNABHIBFJ
+    K $.
+
+  ${
+    $d ph w v $.  $d x y z w v $.
+    $( A version of the Axiom of Replacement.  Normally ` ph ` would have free
+       variables ` x ` and ` y ` .  Axiom 6 of [Kunen] p. 12.  The Separation
+       Scheme ~ ax-sep cannot be derived from this version and must be stated
+       as a separate axiom in an axiom system (such as Kunen's) that uses this
+       version in place of our ~ ax-rep .  (Contributed by NM, 10-Oct-2003.) $)
+    zfrep6 $p |- ( A. x e. z E! y ph -> E. w A. x e. z E. y e. w ph ) $=
+      ( cv wral wcel wa cvv wrex wex wceq sylibr cab vex wi wal wmo 3imtr4i weu
+      copab crn wfun crab euex ralimi rabid2 19.42v abbii dmopab df-rab 3eqtr4i
+      cdm syl6reqr syl6eqel eumo imim2i moanimv alimi df-ral funopab sylc nfra1
+      funrnex eleq2d cop opabid opelrn sylbir impac eximi abeq2i df-rex syl6bir
+      ex ralrimi nfopab1 nfrn nfeq2 nfcv nfopab2 rexeqf ralbid spcegv ) ACUAZBD
+      FZGZBFZWGHZAIZBCUBZUCZJHZACWMKZBWGGZACEFZKZBWGGZELWHWLUNZJHWLUDZWNWHWTWGJ
+      WHWGACLZBWGUEZWTWHXBBWGGWGXCMWFXBBWGACUFUGXBBWGUHNWKCLZBOWJXBIZBOWTXCXDXE
+      BWJACUIUJWKBCUKZXBBWGULUMUOZDPUPWJWFQZBRWKCSZBRWHXAXHXIBXHWJACSZQXIWFXJWJ
+      ACUQURWJACUSNUTWFBWGVAWKBCVBTJWLVEVCWHWOBWGWFBWGVDWHWJWIWTHZWOWHWTWGWIXGV
+      FXDCFZWMHZAIZCLXKWOWKXNCWJAXMWJAXMWKWIXLVGWLHXMWKBCVHWIXLWLBPCPVIVJVPVKVL
+      XDBWTXFVMACWMVNTVOVQWSWPEWMJWQWMMWRWOBWGBWQWMBWLWKBCVRVSVTACWQWMCWQWACWLW
+      KBCWBVSWCWDWEVC $.
+  $}
+
+  $( If the domain of an onto function exists, so does its codomain.
+     (Contributed by NM, 23-Jul-2004.) $)
+  fornex $p |- ( A e. C -> ( F : A -onto-> B -> B e. _V ) ) $=
+    ( wfo wcel cvv cdm crn wfun funrnex syl5com wf wceq fof fdm syl eleq1d forn
+    fofun 3imtr3d com12 ) ABDEZACFZBGFZUCDHZCFZDIZGFZUDUEUCDJUGUIABDTCDKLUCUFAC
+    UCABDMUFANABDOABDPQRUCUHBGABDSRUAUB $.
+
+  $( If the codomain of a one-to-one function exists, so does its domain.  This
+     theorem is equivalent to the Axiom of Replacement ~ ax-rep .  (Contributed
+     by NM, 4-Sep-2004.) $)
+  f1dmex $p |- ( ( F : A -1-1-> B /\ B e. C ) -> A e. _V ) $=
+    ( wf1 wcel cvv crn wss wf f1f frn syl ssexg sylan ex ccnv wfo wf1o f1cnv
+    f1ofo fornex syl5com syld imp ) ABDEZBCFZAGFZUFUGDHZGFZUHUFUGUJUFUIBIZUGUJU
+    FABDJUKABDKABDLMUIBCNOPUFUIADQZRZUJUHUFUIAULSUMABDTUIAULUAMUIAGULUBUCUDUE
+    $.
+
+  ${
+    $d x y F $.
+    fvclex.1 $e |- F e. _V $.
+    $( Existence of the class of values of a set.  (Contributed by NM,
+       9-Nov-1995.) $)
+    fvclex $p |- { y | E. x y = ( F ` x ) } e. _V $=
+      ( cv cfv wceq wex cab crn c0 csn cun rnex p0ex unex fvclss ssexi ) BEAECF
+      GAHBICJZKLZMSTCDNOPABCQR $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z F $.
+    fvresex.1 $e |- A e. _V $.
+    $( Existence of the class of values of a restricted class.  (Contributed by
+       NM, 14-Nov-1995.)  (Revised by Mario Carneiro, 11-Sep-2015.) $)
+    fvresex $p |- { y | E. x y = ( ( F |` A ) ` x ) } e. _V $=
+      ( vz cv cfv cmpt wceq wex cab cres cvv wss ssv resmpt ax-mp fveq1i wcel
+      vex fveq2 eqid fvex fvmpt eqtr3i eqeq2i exbii abbii mptex fvclex eqeltrri
+      fveqres ) BGZAGZFCFGZDHZIZHZJZAKZBLUNUODCMHZJZAKZBLNVAVDBUTVCAUSVBUNUOFNU
+      QIZCMZHZUSVBUOVFURCNOVFURJCPFNCUQQRSUOVEHUODHZJZVGVBJUONTVIAUAFUOUQVHNVEU
+      PUODUBVEUCUODUDUERUOCVEDUMRUFUGUHUIABURFCUQEUJUKUL $.
+  $}
+
+  ${
+    $d x y z w A $.  $d y z w B $.
+    abrexex.1 $e |- A e. _V $.
+    $( Existence of a class abstraction of existentially restricted sets. ` x `
+       is normally a free-variable parameter in the class expression
+       substituted for ` B ` , which can be thought of as ` B ( x ) ` .  This
+       simple-looking theorem is actually quite powerful and appears to involve
+       the Axiom of Replacement in an intrinsic way, as can be seen by tracing
+       back through the path ~ mptexg , ~ funex , ~ fnex , ~ resfunexg , and
+       ~ funimaexg .  See also ~ abrexex2 .  (Contributed by NM, 16-Oct-2003.)
+       (Proof shortened by Mario Carneiro, 31-Aug-2015.) $)
+    abrexex $p |- { y | E. x e. A y = B } e. _V $=
+      ( cmpt crn cv wceq wrex cab cvv eqid rnmpt mptex rnex eqeltrri ) ACDFZGBH
+      DIACJBKLABCDRRMNRACDEOPQ $.
+  $}
+
+  ${
+    $d x y z A $.  $d y z B $.
+    $( Existence of a class abstraction of existentially restricted sets. ` x `
+       is normally a free-variable parameter in ` B ` .  The antecedent assures
+       us that ` A ` is a set.  (Contributed by NM, 3-Nov-2003.) $)
+    abrexexg $p |- ( A e. V -> { y | E. x e. A y = B } e. _V ) $=
+      ( wcel wceq wrex cab cmpt crn cvv eqid rnmpt mptexg rnexg syl syl5eqelr
+      cv ) CEFZBSDGACHBIACDJZKZLABCDUAUAMNTUALFUBLFACDEOUALPQR $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.
+    $( The existence of an indexed union. ` x ` is normally a free-variable
+       parameter in ` B ` .  (Contributed by NM, 23-Mar-2006.) $)
+    iunexg $p |- ( ( A e. V /\ A. x e. A B e. W ) -> U_ x e. A B e. _V ) $=
+      ( vy wcel wral ciun wceq wrex cab cuni cvv dfiun2g adantl abrexexg uniexg
+      wa cv syl adantr eqeltrd ) BDGZCEGABHZSABCIZFTCJABKFLZMZNUEUFUHJUDAFBCEOP
+      UDUHNGZUEUDUGNGUIAFBCDQUGNRUAUBUC $.
+  $}
+
+  ${
+    $d A x y z $.  $d V x y z $.  $d W x y z $.  $d ph z $.
+    $( Existence of an existentially restricted class abstraction.
+       (Contributed by Jeff Madsen, 2-Sep-2009.) $)
+    abrexex2g $p |- ( ( A e. V /\ A. x e. A { y | ph } e. W )
+                                  -> { y | E. x e. A ph } e. _V ) $=
+      ( vz wcel cab wral wa wrex cv cvv wsb nfv nfcv nfs1v nfrex weq cbvab ciun
+      sbequ12 rexbidv df-clab rexbii eqtr4i df-iun iunexg syl5eqelr syl5eqel
+      abbii ) DEHACIZFHBDJKZABDLZCIZGMUMHZBDLZGIZNUPACGOZBDLZGIUSUOVACGUOGPUTCB
+      DCDQACGRSCGTAUTBDACGUCUDUAURVAGUQUTBDAGCUEUFULUGUNUSBDUMUBNBGDUMUHBDUMEFU
+      IUJUK $.
+  $}
+
+  ${
+    $d A x y v w z $.  $d ps v w z $.  $d ph x $.
+    opabex3d.1 $e |- ( ph -> A e. _V ) $.
+    opabex3d.2 $e |- ( ( ph /\ x e. A ) -> { y | ps } e. _V ) $.
+    $( Existence of an ordered pair abstraction, deduction version.
+       (Contributed by Alexander van der Vekens, 19-Oct-2017.) $)
+    opabex3d $p |- ( ph -> { <. x , y >. | ( x e. A /\ ps ) } e. _V ) $=
+      ( vz vv vw cv wcel wa cvv wex cop wceq an12 exbii bitri copab csn cab cxp
+      ciun 19.42v elxp excom weq elsn anbi1i opeq1 eqeq2d anbi1d ceqsexv nfsab1
+      vex nfv nfan opeq2 wsb wb sbequ12 equcoms df-clab syl6rbbr anbi12d 3bitri
+      cbvex anbi2i 3bitr4ri wrex eliun df-rex elopab 3bitr4i eqriv wral sylancr
+      snex xpexg ralrimiva iunexg syl2anc syl5eqelr ) ACKZELZBMZCDUAZCEWFUBZBDU
+      CZUDZUEZNHWMWIWGHKZWLLZMZCOZWNWFDKZPZQZWHMZDOZCOWNWMLZWNWILWPXBCWGWTBMZMZ
+      DOWGXDDOZMXBWPWGXDDUFXAXEDWTWGBRSWOXFWGWOWNIKZJKZPZQZXGWJLZXHWKLZMMZJOIOZ
+      WNWFXHPZQZXLMZJOZXFIJWNWJWKUGXNXMIOZJOXRXMIJUHXSXQJXSICUIZXJXLMZMZIOXQXMY
+      BIXMXKYAMYBXJXKXLRXKXTYAIWFUJUKTSYAXQIWFCUQXTXJXPXLXTXIXOWNXGWFXHULUMUNUO
+      TSTXQXDJDXPXLDXPDURBDJUPUSXDJURJDUIZXPWTXLBYCXOWSWNXHWRWFUTUMYCBBDJVAZXLB
+      YDVBDJBDJVCVDBJDVEVFVGVIVHVJVKSXCWOCEVLWQCWNEWLVMWOCEVNTWHCDWNVOVPVQAENLW
+      LNLZCEVRWMNLFAYECEAWGMWJNLWKNLYEWFVTGWJWKNNWAVSWBCEWLNNWCWDWE $.
+  $}
+
+  ${
+    $d A x y v w z $.  $d ph v w z $.
+    opabex3.1 $e |- A e. _V $.
+    opabex3.2 $e |- ( x e. A -> { y | ph } e. _V ) $.
+    $( Existence of an ordered pair abstraction.  (Contributed by Jeff Madsen,
+       2-Sep-2009.) $)
+    opabex3 $p |- { <. x , y >. | ( x e. A /\ ph ) } e. _V $=
+      ( vz vv vw cv wcel wa cvv wex cop wceq an12 exbii bitri eqeq2d ciun copab
+      csn cab cxp 19.42v elxp excom elsn anbi1i vex opeq1 anbi1d ceqsexv nfsab1
+      nfv nfan opeq2 wsb sbequ12 equcoms df-clab syl6rbbr anbi12d 3bitri anbi2i
+      wb cbvex 3bitr4ri wrex eliun df-rex 3bitr4i eqriv wral snex xpexg sylancr
+      elopab rgen iunexg mp2an eqeltrri ) BDBJZUCZACUDZUEZUAZWDDKZALZBCUBZMGWHW
+      KWIGJZWGKZLZBNZWLWDCJZOZPZWJLZCNZBNWLWHKZWLWKKWNWTBWIWRALZLZCNWIXBCNZLWTW
+      NWIXBCUFWSXCCWRWIAQRWMXDWIWMWLHJZIJZOZPZXEWEKZXFWFKZLLZINHNZWLWDXFOZPZXJL
+      ZINZXDHIWLWEWFUGXLXKHNZINXPXKHIUHXQXOIXQXEWDPZXHXJLZLZHNXOXKXTHXKXIXSLXTX
+      HXIXJQXIXRXSHWDUIUJSRXSXOHWDBUKXRXHXNXJXRXGXMWLXEWDXFULTUMUNSRSXOXBICXNXJ
+      CXNCUPACIUOUQXBIUPXFWPPZXNWRXJAYAXMWQWLXFWPWDURTYAAACIUSZXJAYBVGCIACIUTVA
+      AICVBVCVDVHVEVFVIRXAWMBDVJWOBWLDWGVKWMBDVLSWJBCWLVSVMVNDMKWGMKZBDVOWHMKEY
+      CBDWIWEMKWFMKYCWDVPFWEWFMMVQVRVTBDWGMMWAWBWC $.
+  $}
+
+  ${
+    $d x A $.
+    iunex.1 $e |- A e. _V $.
+    iunex.2 $e |- B e. _V $.
+    $( The existence of an indexed union. ` x ` is normally a free-variable
+       parameter in the class expression substituted for ` B ` , which can be
+       read informally as ` B ( x ) ` .  (Contributed by NM, 13-Oct-2003.) $)
+    iunex $p |- U_ x e. A B e. _V $=
+      ( cvv wcel wral ciun rgenw iunexg mp2an ) BFGCFGZABHABCIFGDMABEJABCFFKL
+      $.
+  $}
+
+  ${
+    $d x y z A $.  $d z ph $.
+    abrexex2.1 $e |- A e. _V $.
+    abrexex2.2 $e |- { y | ph } e. _V $.
+    $( Existence of an existentially restricted class abstraction. ` ph ` is
+       normally has free-variable parameters ` x ` and ` y ` .  See also
+       ~ abrexex .  (Contributed by NM, 12-Sep-2004.) $)
+    abrexex2 $p |- { y | E. x e. A ph } e. _V $=
+      ( vz wrex cab cv wcel cvv wsb nfv nfcv nfs1v nfrex weq sbequ12 rexbidv
+      cbvab df-clab rexbii abbii eqtr4i ciun df-iun iunex eqeltrri eqeltri ) AB
+      DHZCIZGJACIZKZBDHZGIZLULACGMZBDHZGIUPUKURCGUKGNUQCBDCDOACGPQCGRAUQBDACGST
+      UAUOURGUNUQBDAGCUBUCUDUEBDUMUFUPLBGDUMUGBDUMEFUHUIUJ $.
+
+    $( Existence of a class abstraction with an existentially quantified
+       expression.  Both ` x ` and ` y ` can be free in ` ph ` .  (Contributed
+       by NM, 29-Jul-2006.) $)
+    abexssex $p |- { y | E. x ( x C_ A /\ ph ) } e. _V $=
+      ( cpw wrex cab cv wss wa wex cvv wcel df-rex selpw anbi1i exbii bitri
+      abbii pwex abrexex2 eqeltrri ) ABDGZHZCIBJZDKZALZBMZCINUFUJCUFUGUEOZALZBM
+      UJABUEPULUIBUKUHABDQRSTUAABCUEDEUBFUCUD $.
+  $}
+
+  ${
+    $d x y A $.
+    abexex.1 $e |- A e. _V $.
+    abexex.2 $e |- ( ph -> x e. A ) $.
+    abexex.3 $e |- { y | ph } e. _V $.
+    $( A condition where a class builder continues to exist after its wff is
+       existentially quantified.  (Contributed by NM, 4-Mar-2007.) $)
+    abexex $p |- { y | E. x ph } e. _V $=
+      ( wrex cab wex cvv cv wcel wa df-rex pm4.71ri exbii bitr4i abbii abrexex2
+      eqeltrri ) ABDHZCIABJZCIKUBUCCUBBLDMZANZBJUCABDOAUEBAUDFPQRSABCDEGTUA $.
+  $}
+
+  ${
+    $d z w v u f R $.  $d x y z w v u f S $.  $d z w v u f A $.
+    $d z w v u f B $.  $d x y z w v u f F $.
+    f1oweALT.1 $e |- R = { <. x , y >. | ( F ` x ) S ( F ` y ) } $.
+    $( Well-ordering of isomorphic relations.  This version of ~ f1owe is
+       proved directly instead of with the isomorphism predicate but also uses
+       ~ ax-un .  (Contributed by NM, 4-Mar-1997.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    f1oweALT $p |- ( F : A -1-1-onto-> B -> ( S We B -> R We A ) ) $=
+      ( vu vf vw vv cv wbr wceq wral wa wi wcel cfv vz wf1o wfr w3o wwe wfo wfn
+      f1ofo crn df-fo freq2 biimprd wfun cdm df-fn wss c0 wne wn wrex wal df-fr
+      cima cvv vex funimaex wex n0 funfvima2 ne0i syl6 exlimdv syl5bi imp jctil
+      imassrn sseq1 neeq1 anbi12d raleq rexeqbi1dv imbi12d spcgv syl7 syl com23
+      exp3a anabsi5 imp3a cres wb fores fvres breqan12rd breq1d breq2d syl6rbbr
+      fveq2 brab notbid rexbiia breq1 cbvfo rexbidv breq2 ralbidv cbvexfo bitrd
+      ralbidva syl5bb sylibrd exp4b com34 alrimdv syl6ibr biimpd sylan9 sylan9r
+      imp4a sylbi df-f1o f1fveq bicomd 3orbi123d 2ralbidva eqeq1 eqeq2 sylan9bb
+      wf1 a1i anim12d dfwe2 3imtr4g ) CDGUBZDFUCZIMZJMZFNZYPYQOZYQYPFNZUDZJDPZI
+      DPZQCEUCZKMZLMZENZUUEUUFOZUUFUUEENZUDZLCPKCPZQDFUECEUEYNYOUUDUUCUUKYNCDGU
+      FZYOUUDRZCDGUHUULGCUGZGUIZDOZQUUMCDGUJUUPYOUUOFUCZUUNUUDUUPUUQYOUUODFUKUL
+      UUNGUMZGUNZCOZQUUQUUDRGCUOUURUUQUUSEUCZUUTUUDUURUUQUAMZUUSUPZUVBUQURZQUUI
+      USZLUVBPZKUVBUTZRZUAVAUVAUURUUQUVHUAUURUUQUVCUVDUVGUURUVCUUQUVDUVGRUURUVC
+      UVDUUQUVGUURUVCUVDUUQUVGUURUVCQZUVDUUQQYTUSZJGUVBVCZPZIUVKUTZUVGUVIUVDUUQ
+      UVMUURUVCUVDUUQUVMRZRUURUVIUVDUVNUURUUQUVIUVDQZUVMUUQUUEUUOUPZUUEUQURZQZU
+      VJJUUEPZIUUEUTZRZKVAZUURUVOUVMRZKIJUUOFVBUURUVKVDSZUWBUWCRGUVBUAVEVFUVOUV
+      KUUOUPZUVKUQURZQZUWDUWBUVMUVOUWFUWEUVIUVDUWFUVDUUEUVBSZKVGUVIUWFKUVBVHUVI
+      UWHUWFKUVIUWHUUEGTZUVKSUWFUVBUUEGVIUVKUWIVJVKVLVMVNGUVBVPVOUWAUWGUVMRKUVK
+      VDUUEUVKOZUVRUWGUVTUVMUWJUVPUWEUVQUWFUUEUVKUUOVQUUEUVKUQVRVSUVSUVLIUUEUVK
+      UVJJUUEUVKVTWAWBWCWDWEVMWFWGWHWIUVIUVBUVKGUVBWJZUFZUVGUVMWKUVBGWLUVGUUFUW
+      KTZUUEUWKTZFNZUSZLUVBPZKUVBUTZUWLUVMUVFUWQKUVBUWHUVEUWPLUVBUWHUUFUVBSZQZU
+      UIUWOUWTUWOUUFGTZUWIFNZUUIUWSUWHUWMUXAUWNUWIFUUFUVBGWMUUEUVBGWMWNAMZGTZBM
+      ZGTZFNZUXAUXFFNUXBABUUFUUEELVEZKVEZUXCUUFOUXDUXAUXFFUXCUUFGWRWOUXEUUEOUXF
+      UWIUXAFUXEUUEGWRWPHWSZWQWTXIXAUWLUWRYQUWNFNZUSZJUVKPZKUVBUTUVMUWLUWQUXMKU
+      VBUWPUXLLJUVBUVKUWKUWMYQOUWOUXKUWMYQUWNFXBWTXCXDUXMUVLKIUVBUVKUWKUWNYPOZU
+      XLUVJJUVKUXNUXKYTUWNYPYQFXEWTXFXGXHXJWEXKXLXMWFXSXNUAKLUUSEVBXOUUTUVAUUDU
+      USCEUKXPXQXTXRXTWEYNUUKUUCYNCDGYIZUULQUUKUUCWKCDGYAUXOUUKUWIUXAFNZUWIUXAO
+      ZUXBUDZLCPZKCPZUULUUCUXOUUJUXRKLCCUXOUUECSUUFCSQQZUUGUXPUUHUXQUUIUXBUUGUX
+      PWKUYAUXGUWIUXFFNUXPABUUEUUFEUXIUXHUXCUUEOUXDUWIUXFFUXCUUEGWRWOUXEUUFOUXF
+      UXAUWIFUXEUUFGWRWPHWSYJUYAUXQUUHCDUUEUUFGYBYCUUIUXBWKUYAUXJYJYDYEUULUXTYP
+      UXAFNZYPUXAOZUXAYPFNZUDZLCPZIDPUUCUXSUYFKICDGUWIYPOZUXRUYELCUYGUXPUYBUXQU
+      YCUXBUYDUWIYPUXAFXBUWIYPUXAYFUWIYPUXAFXEYDXFXCUULUYFUUBIDUYEUUALJCDGUXAYQ
+      OUYBYRUYCYSUYDYTUXAYQYPFXEUXAYQYPYGUXAYQYPFXBYDXCXFXHYHXTULYKIJDFYLKLCEYL
+      YM $.
+  $}
+
+  ${
+    $d R f g $.  $d A f g $.  $d S f g $.  $d B f g $.
+    $( Thus, there is at most one isomorphism between any two well-ordered
+       sets.  TODO:  Shorten ~ finnisoeu .  (Contributed by Stefan O'Rear,
+       12-Feb-2015.)  (Revised by Mario Carneiro, 25-Jun-2015.) $)
+    wemoiso $p |- ( R We A -> E* f f Isom R , S ( A , B ) ) $=
+      ( vg wwe cv wiso wa weq wi wal wmo wse simpl cvv wcel wf syl isof1o dmfex
+      vex wf1o f1of sylancr ad2antrl exse jca weisoeq sylancom ex isoeq1 sylibr
+      alrimivv mo4 ) ACGZABCDEHZIZABCDFHZIZJZEFKZLZFMEMUSENUQVDEFUQVBVCUQVBUQAC
+      OZJVCUQVBJZUQVEUQVBPVFAQRZVEUSVGUQVAUSURQRABURSZVGEUCUSABURUDVHABCDURUAAB
+      URUETABQURUBUFUGACQUHTUIABCDURUTUJUKULUOUSVAEFABCDUTURUMUPUN $.
+
+    $( Thus, there is at most one isomorphism between any two well-ordered
+       sets.  (Contributed by Stefan O'Rear, 12-Feb-2015.)  (Revised by Mario
+       Carneiro, 25-Jun-2015.) $)
+    wemoiso2 $p |- ( S We B -> E* f f Isom R , S ( A , B ) ) $=
+      ( vg wwe cv wiso wa wceq wi wal wmo wse simpl cvv wcel crn wf1o wfo f1ofo
+      isof1o forn 3syl vex rnex syl6eqelr ad2antrl syl jca weisoeq2 sylancom ex
+      exse alrimivv isoeq1 mo4 sylibr ) BDGZABCDEHZIZABCDFHZIZJZVAVCKZLZFMEMVBE
+      NUTVGEFUTVEVFUTVEUTBDOZJVFUTVEJZUTVHUTVEPVIBQRZVHVBVJUTVDVBBVASZQVBABVATA
+      BVAUAVKBKABCDVAUCABVAUBABVAUDUEVAEUFUGUHUIBDQUOUJUKABCDVAVCULUMUNUPVBVDEF
+      ABCDVCVAUQURUS $.
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d ph x y z $.
+    oprabexd.1 $e |- ( ph -> A e. _V ) $.
+    oprabexd.2 $e |- ( ph -> B e. _V ) $.
+    oprabexd.3 $e |- ( ( ph /\ ( x e. A /\ y e. B ) ) -> E* z ps ) $.
+    oprabexd.4 $e |- ( ph -> F = { <. <. x , y >. , z >. |
+                                        ( ( x e. A /\ y e. B ) /\ ps ) } ) $.
+    $( Existence of an operator abstraction.  (Contributed by Jeff Madsen,
+       2-Sep-2009.) $)
+    oprabexd $p |- ( ph -> F e. _V ) $=
+      ( cv wcel wa coprab cvv wmo wal syl2anc cdm wi ex moanimv sylibr alrimivv
+      wfun funoprabg syl cxp wss dmoprabss xpexg ssexg sylancr funex eqeltrd )
+      AHCMFNDMGNOZBOZCDEPZQLAUTUGZUTUAZQNZUTQNAUSERZDSCSVAAVDCDAURBERZUBVDAURVE
+      KUCURBEUDUEUFUSCDEUHUIAVBFGUJZUKVFQNZVCBCDEFGULAFQNGQNVGIJFGQQUMTVBVFQUNU
+      OQUTUPTUQ $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.
+    oprabex.1 $e |- A e. _V $.
+    oprabex.2 $e |- B e. _V $.
+    oprabex.3 $e |- ( ( x e. A /\ y e. B ) -> E* z ph ) $.
+    oprabex.4 $e |- F = { <. <. x , y >. , z >. | ( ( x e. A /\ y e. B )
+             /\ ph ) } $.
+    $( Existence of an operation class abstraction.  (Contributed by NM,
+       19-Oct-2004.) $)
+    oprabex $p |- F e. _V $=
+      ( cv wcel wa coprab cvv wfun cdm wmo wi mpbir funoprab cxp xpex dmoprabss
+      moanimv ssexi funex mp2an eqeltri ) GBLEMCLFMNZANZBCDOZPKUMQUMRZPMUMPMULB
+      CDULDSUKADSTJUKADUFUAUBUNEFUCEFHIUDABCDEFUEUGPUMUHUIUJ $.
+  $}
+
+  ${
+    $d x y z w v u f A $.  $d x y z w v u f B $.  $d x y z w v u f C $.
+    $d x y z w v u f D $.  $d x y z w v u f H $.  $d x y z R $.
+    $d x y z w v u f S $.
+    oprabex3.1 $e |- H e. _V $.
+    oprabex3.2 $e |- F = { <. <. x , y >. , z >. | ( ( x e. ( H X. H ) /\
+                      y e. ( H X. H ) ) /\
+                      E. w E. v E. u E. f ( ( x = <. w , v >. /\
+                      y = <. u , f >. ) /\ z = R ) ) } $.
+    $( Existence of an operation class abstraction (special case).
+       (Contributed by NM, 19-Oct-2004.) $)
+    oprabex3 $p |- F e. _V $=
+      ( cv cop wceq wa wex wmo wcel mosubop cxp xpex anass 2exbii 19.42vv bitri
+      moeq mobii mpbir a1i oprabex ) AMZDMEMNOZBMZFMHMNOZPCMGOZPZHQFQZEQDQZABCJ
+      JUAZUTIJJKKUBZVAUSCRZULUTSUNUTSPVBUMUOUPPZHQFQZPZEQDQZCRVDCDEULUPCFHUNCGU
+      GTTUSVFCURVEDEURUMVCPZHQFQVEUQVGFHUMUOUPUCUDUMVCFHUEUFUDUHUIUJLUK $.
+  $}
+
+  ${
+    $d A v x y z w $.  $d ph v $.
+    oprabrexex2.1 $e |- A e. _V $.
+    oprabrexex2.2 $e |- { <. <. x , y >. , z >. | ph } e. _V $.
+    $( Existence of an existentially restricted operation abstraction.
+       (Contributed by Jeff Madsen, 11-Jun-2010.) $)
+    oprabrexex2 $p |- { <. <. x , y >. , z >. | E. w e. A ph } e. _V $=
+      ( vv wrex coprab cv cop wa wex cab cvv df-oprab rexcom4 exbii wceq bitr2i
+      r19.42v bitri abbii eqtri eqeltrri abrexex2 eqeltri ) AEFJZBCDKZILBLCLMDL
+      MUAZANZDOZCOZBOZEFJZIPZQUKULUJNZDOZCOZBOZIPURUJBCDIRVBUQIUQUOEFJZBOVBUOEB
+      FSVCVABVCUNEFJZCOVAUNECFSVDUTCVDUMEFJZDOUTUMEDFSVEUSDULAEFUCTUDTUDTUBUEUF
+      UPEIFGABCDKUPIPQABCDIRHUGUHUI $.
+  $}
+
+  ${
+    $d x z A $.  $d y z B $.  $d z C $.
+    ab2rexex.1 $e |- A e. _V $.
+    ab2rexex.2 $e |- B e. _V $.
+    $( Existence of a class abstraction of existentially restricted sets.
+       Variables ` x ` and ` y ` are normally free-variable parameters in the
+       class expression substituted for ` C ` , which can be thought of as
+       ` C ( x , y ) ` .  See comments for ~ abrexex .  (Contributed by NM,
+       20-Sep-2011.) $)
+    ab2rexex $p |- { z | E. x e. A E. y e. B z = C } e. _V $=
+      ( cv wceq wrex abrexex abrexex2 ) CIFJBEKACDGBCEFHLM $.
+  $}
+
+  ${
+    $d x z A $.  $d y z B $.
+    ab2rexex2.1 $e |- A e. _V $.
+    ab2rexex2.2 $e |- B e. _V $.
+    ab2rexex2.3 $e |- { z | ph } e. _V $.
+    $( Existence of an existentially restricted class abstraction. ` ph `
+       normally has free-variable parameters ` x ` , ` y ` , and ` z ` .
+       Compare ~ abrexex2 .  (Contributed by NM, 20-Sep-2011.) $)
+    ab2rexex2 $p |- { z | E. x e. A E. y e. B ph } e. _V $=
+      ( wrex abrexex2 ) ACFJBDEGACDFHIKK $.
+  $}
+
+  ${
+    $d A w x y z $.  $d B w x y z $.  $d V w y z $.
+    $( The cross product of two sets is a set.  Proposition 6.2 of
+       [TakeutiZaring] p. 23.  This version is proven using Replacement; see
+       ~ xpexg for a version that uses the Power Set axiom instead.
+       (Contributed by Mario Carneiro, 20-May-2013.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    xpexgALT $p |- ( ( A e. V /\ B e. W ) -> ( A X. B ) e. _V ) $=
+      ( vy vx wcel wa cxp cv csn ciun iunid xpeq2i xpiundi eqtr3i wral syl5eqel
+      cvv id cmpt fconstmpt mptexg ralrimivw iunexg syl2anr ) ACGZBDGZHABIZEBAE
+      JZKZIZLZSAEBUKLZIUIUMUNBAEBMNEBUKAOPUHUHULSGZEBQUMSGUGUHTUGUOEBUGULFAUJUA
+      SFAUJUBFAUJCUCRUDEBULDSUEUFR $.
+  $}
+
+  ${
+    $d F x a b $.  $d G x a b $.  $d V x $.  $d W x $.  $d R x a b $.
+    $d D x $.
+    $( General value of ` ( F oF R G ) ` with no assumptions on functionality
+       of ` F ` and ` G ` .  (Contributed by Stefan O'Rear, 24-Jan-2015.) $)
+    offval3 $p |- ( ( F e. V /\ G e. W ) -> ( F oF R G ) =
+        ( x e. ( dom F i^i dom G ) |-> ( ( F ` x ) R ( G ` x ) ) ) ) $=
+      ( va vb wcel wa cvv cdm cin cv cfv co cmpt wceq elex adantr adantl inex1g
+      dmexg mptexg 3syl dmeq ineqan12d fveq1 oveqan12d mpteq12dv df-of ovmpt2ga
+      cof syl3anc ) CEIZDFIZJCKIZDKIZACLZDLZMZANZCOZVBDOZBPZQZKIZCDBUMZPVFRUOUQ
+      UPCESTUPURUODFSUAUOVGUPUOUSKIVAKIVGCEUCUSUTKUBAVAVEKUDUETGHCDKKAGNZLZHNZL
+      ZMZVBVIOZVBVKOZBPZQVFVHKVICRZVKDRZJAVMVPVAVEVQVRVJUSVLUTVICUFVKDUFUGVQVRV
+      NVCVOVDBVBVICUHVBVKDUHUIUJABGHUKULUN $.
+
+    $( Pointwise combination commutes with restriction.  (Contributed by Stefan
+       O'Rear, 24-Jan-2015.) $)
+    offres $p |- ( ( F e. V /\ G e. W ) -> ( ( F oF R G ) |` D ) =
+        ( ( F |` D ) oF R ( G |` D ) ) ) $=
+      ( vx wcel cdm cin cfv co cmpt cres wceq fvres dmres 3eqtr4ri offval3 cvv
+      wa cv cof inss2 sseli oveq12d mpteq2ia inindi incom ineq12i eqid mpteq12i
+      syl resmpt3 reseq1d resexg syl2an 3eqtr4a ) CEHZDFHZUAZGCIZDIZJZGUBZCKZVE
+      DKZBLZMZANZGCANZIZDANZIZJZVEVKKZVEVMKZBLZMZCDBUCZLZANVKVMVTLZGVDAJZVRMGWC
+      VHMVSVJGWCVRVHVEWCHVEAHZVRVHOWCAVEVDAUDUEWDVPVFVQVGBVEACPVEADPUFUMUGGVOVR
+      WCVRAVDJAVBJZAVCJZJWCVOAVBVCUHVDAUIVLWEVNWFCAQDAQUJRVRUKULGVDAVHUNRVAWAVI
+      AGBCDEFSUOUSVKTHVMTHWBVSOUTCAEUPDAFUPGBVKVMTTSUQUR $.
+  $}
+
+  ${
+    $d f g A $.  $d f g B $.  $d f g x R $.
+    $( Equivalent expressions for a restriction of the function operation map.
+       Unlike ` oF R ` which is a proper class, ` ( oF R | `` ( A X. B ) ) `
+       can be a set by ~ ofmresex , allowing it to be used as a function or
+       structure argument.  By ~ ofmresval , the restricted operation map
+       values are the same as the original values, allowing theorems for
+       ` oF R ` to be reused.  (Contributed by NM, 20-Oct-2014.) $)
+    ofmres $p |- ( oF R |` ( A X. B ) ) =
+         ( f e. A , g e. B |-> ( f oF R g ) ) $=
+      ( vx cvv cv cdm cin cfv co cmpt2 cres wss wceq ssv eqid wcel vex cmpt cxp
+      cof resmpt2 mp2an df-of reseq1i dmex inex1 mptex ovmpt4g mp3an mpt2eq123i
+      3eqtr4i ) DEGGFDHZIZEHZIZJZFHZUOKUTUQKCLZUAZMZABUBZNZDEABVBMZCUCZVDNDEABU
+      OUQVGLZMAGOBGOVEVFPAQBQDEGGABVBUDUEVGVCVDFCDEUFZUGDEABVHABVBARBRUOGSUQGSV
+      BGSVHVBPDTZETFUSVAUPURUOVJUHUIUJDEGGVBVGGVIUKULUMUN $.
+
+    ofmresex.a $e |- ( ph -> A e. V ) $.
+    ofmresex.b $e |- ( ph -> B e. W ) $.
+    $( Existence of a restriction of the function operation map.  (Contributed
+       by NM, 20-Oct-2014.) $)
+    ofmresex $p |- ( ph -> ( oF R |` ( A X. B ) ) e. _V ) $=
+      ( cxp cvv wcel cof cres xpexg syl2anc ofexg syl ) ABCIZJKZDLRMJKABEKCFKSG
+      HBCEFNORDJPQ $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
