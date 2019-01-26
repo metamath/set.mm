@@ -51669,36 +51669,6 @@ $)
   $}
 
   ${
-    $d w x y z A $.  $d w x y z B $.  $d w x y z C $.  $d y ch $.  $d w z ph $.
-    $d w x y z D $.  $d x ps $.
-    opiota.1 $e |- I =
-      ( iota z E. x e. A E. y e. B ( z = <. x , y >. /\ ph ) ) $.
-    opiota.2 $e |- X = ( 1st ` I ) $.
-    opiota.3 $e |- Y = ( 2nd ` I ) $.
-    opiota.4 $e |- ( x = C -> ( ph <-> ps ) ) $.
-    opiota.5 $e |- ( y = D -> ( ps <-> ch ) ) $.
-    $( The property of a uniquely specified ordered pair.  The proof uses
-       properties of the ` iota ` description binder.  (Contributed by Mario
-       Carneiro, 21-May-2015.) $)
-    opiota $p |- ( E! z E. x e. A E. y e. B ( z = <. x , y >. /\ ph ) ->
-      ( ( C e. A /\ D e. B /\ ch ) <-> ( C = X /\ D = Y ) ) ) $=
-      ( wceq wa cv cop wrex weu wcel c1st cfv c2nd w3a ceqsrex2v bicomd cio cvv
-      opex a1i id wb eqeq1 eqcom opth bitri syl6bb anbi1d 2rexbidv adantl nfeu1
-      vex nfcvd iota2df eqeq1i syl6bbr sylan9bbr pm5.32da cxp cab opelxpi simpl
-      nfvd eleq1d syl5ibrcom rexlimivv abssi iotacl sseldi opelxp eleq1 syl5bbr
-      syl5eqel pm4.71rd 1st2nd2 eqeq2d 3bitr2d df-3an eqeq2i anbi12i fvex opth2
-      syl bitr4i 3bitr4g ) FUAZDUAZEUAZUBZSZATZEHUCDGUCZFUDZIGUEZJHUEZTZCTZIJUB
-      ZKUFUGZKUHUGZUBZSZXIXJCUIILSZJMSZTZXHXLXKXMKSZTYAXQXHXKCYAXKCXBISXCJSTZAT
-      ZEHUCDGUCZXHYAXKYDCABCDEIJGHQRUJUKXHYDXGFULZXMSZYAXHXGYDFXMUMXMUMUEXHIJUN
-      UOXHUPXAXMSZXGYDUQXHYGXFYCDEGHYGXEYBAYGXEXMXDSZYBXAXMXDURYHXDXMSYBXMXDUSX
-      BXCIJDVGEVGUTVAVBVCVDVEXGFVFXHYDFVRXHFXMVHVIYAKXMSYFXMKUSKYEXMNVJVAVKVLVM
-      XHYAXKXHXKYAKGHVNZUEZXHKYEYINXHXGFVOYIYEXGFYIXFXAYIUEZDEGHXBGUEXCHUETYKXF
-      XDYIUEXBXCGHVPXFXAXDYIXEAVQVSVTWAWBXGFWCWDWHZXKXMYIUEYAYJIJGHWEXMKYIWFWGV
-      TWIXHKXPXMXHYJKXPSYLKGHWJWRWKWLXIXJCWMXTIXNSZJXOSZTXQXRYMXSYNLXNIOWNMXOJP
-      WNWOIJXNXOKUFWPKUHWPWQWSWT $.
-  $}
-
-  ${
     $d x y z u A $.  $d x y z u B $.  $d x y z u C $.
     $( Define the cross product of three classes.  Compare ~ df-xp .
        (Contributed by FL, 6-Nov-2013.)  (Proof shortened by Mario Carneiro,
