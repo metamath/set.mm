@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Jan-2019
+$( iset.mm - Version of 26-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -39319,6 +39319,12 @@ $)
     ( wcel wbr w3a ccnv cdm crn wb brcnvg ancoms biimp3ar 3com12 syld3an3 df-rn
     breldmg syl6eleqr ) ADFZBEFZABCGZHBCIZJZCKUAUBUCBAUDGZBUEFZUAUBUFUCUBUAUFUC
     LBAEDCMNOUBUAUFUGBAEDUDSPQCRT $.
+
+  $( Membership of second member of an ordered pair in a range.  (Contributed
+     by Jim Kingdon, 26-Jan-2019.) $)
+  opelrng $p |- ( ( A e. F /\ B e. G /\ <. A , B >. e. C ) -> B e. ran C ) $=
+    ( cop wcel wbr crn df-br brelrng syl3an3br ) ABFCGADGBEGABCHBCIGA
+    BCJABCDEKL $.
 
   ${
     brelrn.1 $e |- A e. _V $.
