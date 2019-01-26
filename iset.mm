@@ -52220,42 +52220,6 @@ $)
   $}
 
   ${
-    $d E a b e f p v $.  $d V a b c e f p v $.  $d ps c e v $.
-    bropopvvv.o $e |- O = ( v e. _V , e e. _V |-> ( a e. v , b e. v |->
-                            { <. f , p >. | ph } ) ) $.
-    bropopvvv.p $e |- ( ( v = V /\ e = E ) -> ( ph <-> ps ) ) $.
-    bropopvvv.oo $e |- ( ( ( V e. _V /\ E e. _V ) /\ ( A e. V /\ B e. V ) )
-                         -> ( A ( V O E ) B ) = { <. f , p >. | th } ) $.
-    $( If a binary relation holds for the result of an operation which is a
-       result of an operation, the involved classes are sets.  (Contributed by
-       Alexander van der Vekens, 12-Dec-2017.) $)
-    bropopvvv $p |- ( F ( A ( V O E ) B ) P -> ( ( V e. _V /\ E e. _V )
-      /\ ( F e. _V /\ P e. _V ) /\ ( A e. V /\ B e. V ) ) ) $=
-      ( wcel vc co wbr cvv wa w3a cop wi df-br c0 wne cdm ne0i cfv df-ov syl5eq
-      wn ndmfv necon1ai copab cmpt2 cv wceq simpl opabbidv mpt2eq123dv ovmpt2ga
-      dmeqd eleq2d coprab cxp dmoprabss sseli opelxp breqd anim2i adantr sylbid
-      brabv com23 a1d reldmmpt2 ovprc fveq1 0fv syl6eq df-ne pm2.21 sylbi com12
-      ex 3syl pm2.61i pm2.43i anc2ri df-3an syl6ibr df-mpt2 dmeqi eleq2s syl6bi
-      syl w3o 3ianor wo df-3or ianor dm0 eleq2i syl6bb noel pm2.21i sylbir anor
-      id ancri mpt2exga pm2.24d imp jaoi jaoi2 ) KGEFMJLUBZUBZUCZMUDTZJUDTZUEZK
-      UDTGUDTUEZEMTFMTUEZUFZYDKGUGZYCTZYDYJUHZKGYCUIZYLYCUJUKZEFUGZYBULZTZYMYCY
-      KUMZYRYCUJYRUQYCYPYBUNZUJEFYBUOZYPYBURUPUSYEYFOPMMBINUTZVAZUDTZUFZYRYMUHZ
-      UUEYRYPUUCULZTYMUUEYQUUGYPUUEYBUUCDHMJUDUDOPDVBZUUHAINUTZVAZUUCLUDUUHMVCZ
-      HVBJVCZUEZOPUUHUUHUUIMMUUBUUKUULVDZUUNUUMABINRVEVFQVGVHVIYMYPOVBMTPVBMTUE
-      UAVBUUBVCZUEOPUAVJZULZUUGYPUUQTYPMMVKZTZYMUUQUURYPUUOOPUAMMVLVMUUSYIYMEFM
-      MVNYIYDYGYHUEZYIUEYJYIYDUUTYDYIUUTYDYIUUTUHZYDYLYDUVAUHZYNYLYOUVBYSYGYOUV
-      BUHZYGUVBYOYGYIYDUUTYGYIYDUUTUHYGYIUEZYDKGCINUTZUCZUUTUVDYCUVEKGSVOYGUVFU
-      UTUHYIYGUVFUUTUVFYHYGCINKGVSVPWKVQVRWKVTWAYGUQZYBUJVCZYCUJVCZUVCMJLDHUDUD
-      UUJLQWBWCZUVHYCYPUJUNZUJUVHYCYTUVKUUAYPYBUJWDUPYPWEWFYOUVIUVBYOUVIUQUVIUV
-      BUHYCUJWGUVIUVBWHWIWJWLWMXBWIWNWJWOYGYHYIWPWQWIXBUUCUUPOPUAMMUUBWRWSWTXAU
-      UEUQYEUQZYFUQZUUDUQZXCZUUFYEYFUUDXDUVOUVLUVMXEZUVNXEUUFUVLUVMUVNXFUVPUUFU
-      VNUVPUUFUVPUQZUVNUEUVPUVGUUFYEYFXGUVGYRYPUJTZYMUVGYRYPUJULZTUVRUVGYQUVSYP
-      UVGYBUJUVJVHVIUVSUJYPXHXIXJUVRYMYPXKXLXAXMUVQUVNUUFUVQYGUVNUUFUHYEYFXNYGU
-      UDUUFYGYEYEUEZUUDYEUVTYFYEYEYEXOXPVQOPMMUUBUDUDXQXBXRXMXSXTYAWIWIWMWLWIWN
-      $.
-  $}
-
-  ${
     $d u v x y z A $.  $d u v y z B $.  $d u v z C $.  $d u v x y z X $.
     ovmptss.1 $e |- F = ( x e. A , y e. B |-> C ) $.
     $( If all the values of the mapping are subsets of a class ` X ` , then so
