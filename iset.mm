@@ -51190,29 +51190,6 @@ $)
     $.
 
   ${
-    $d x y F $.
-    fvclex.1 $e |- F e. _V $.
-    $( Existence of the class of values of a set.  (Contributed by NM,
-       9-Nov-1995.) $)
-    fvclex $p |- { y | E. x y = ( F ` x ) } e. _V $=
-      ( cv cfv wceq wex cab crn c0 csn cun rnex p0ex unex fvclss ssexi ) BEAECF
-      GAHBICJZKLZMSTCDNOPABCQR $.
-  $}
-
-  ${
-    $d x y z A $.  $d x y z F $.
-    fvresex.1 $e |- A e. _V $.
-    $( Existence of the class of values of a restricted class.  (Contributed by
-       NM, 14-Nov-1995.)  (Revised by Mario Carneiro, 11-Sep-2015.) $)
-    fvresex $p |- { y | E. x y = ( ( F |` A ) ` x ) } e. _V $=
-      ( vz cv cfv cmpt wceq wex cab cres cvv wss ssv resmpt ax-mp fveq1i wcel
-      vex fveq2 eqid fvex fvmpt eqtr3i eqeq2i exbii abbii mptex fvclex eqeltrri
-      fveqres ) BGZAGZFCFGZDHZIZHZJZAKZBLUNUODCMHZJZAKZBLNVAVDBUTVCAUSVBUNUOFNU
-      QIZCMZHZUSVBUOVFURCNOVFURJCPFNCUQQRSUOVEHUODHZJZVGVBJUONTVIAUAFUOUQVHNVEU
-      PUODUBVEUCUODUDUERUOCVEDUMRUFUGUHUIABURFCUQEUJUKUL $.
-  $}
-
-  ${
     $d x y z w A $.  $d y z w B $.
     abrexex.1 $e |- A e. _V $.
     $( Existence of a class abstraction of existentially restricted sets. ` x `
