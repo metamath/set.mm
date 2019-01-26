@@ -51466,8 +51466,10 @@ $)
      3-Sep-2007.)  (Proof shortened by Mario Carneiro, 26-Apr-2015.) $)
   eqop $p |- ( A e. ( V X. W ) -> ( A = <. B , C >.
             <-> ( ( 1st ` A ) = B /\ ( 2nd ` A ) = C ) ) ) $=
-    ( cxp wcel cop wceq c1st cfv c2nd wa 1st2nd2 eqeq1d fvex opth syl6bb ) ADEF
-    GZABCHZIAJKZALKZHZTIUABIUBCIMSAUCTADENOUAUBBCAJPALPQR $.
+    ( cxp wcel cop wceq c1st cfv c2nd wa 1st2nd2 eqeq1d cvv wb 1stexg
+    elex 2ndexg opthg syl2anc syl bitrd ) ADEFZGZABCHZIAJKZALKZHZUGIZ
+    UHBIUICIMZUFAUJUGADENOUFAPGZUKULQZAUESUMUHPGUIPGUNARATUHUIBCPPUAU
+    BUCUD $.
 
   ${
     eqop2.1 $e |- B e. _V $.
