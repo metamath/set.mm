@@ -51543,13 +51543,14 @@ $)
        (Contributed by NM, 22-Sep-2013.) $)
     releldm2 $p |- ( Rel A
          -> ( B e. dom A <-> E. x e. A ( 1st ` x ) = B ) ) $=
-      ( vy wrel cdm wcel cv c1st cfv wceq wrex cvv wa elex anim2i id fvex wex
-      wb syl6eqelr rexlimivw cop eldm2g adantl cxp wss wi df-rel ssel sylbi imp
-      op1steq syl rexbidva adantr rexcom4 risset bitr4i syl6bb bitr4d pm5.21nd
-      exbii ) BEZCBFZGZAHZIJZCKZABLZVDCMGZNZVFVKVDCVEOPVJVKVDVIVKABVICVHMVIQVGI
-      RUAUBPVLVFCDHUCZBGZDSZVJVKVFVOTVDDCBMUDUEVLVJVGVMKZDSZABLZVOVDVJVRTVKVDVI
-      VQABVDVGBGZNVGMMUFZGZVIVQTVDVSWAVDBVTUGVSWAUHBUIBVTVGUJUKULDVGCMMUMUNUOUP
-      VRVPABLZDSVOVPADBUQVNWBDAVMBURVCUSUTVAVB $.
+      ( vy wrel cdm wcel cv c1st cfv wceq wrex cvv wa elex anim2i vex
+      id wex wb 1stexg ax-mp syl6eqelr rexlimivw cop eldm2g adantl wi
+      cxp wss df-rel ssel sylbi imp op1steq syl adantr rexcom4 risset
+      rexbidva exbii bitr4i syl6bb bitr4d pm5.21nd ) BEZCBFZGZAHZIJZC
+      KZABLZVFCMGZNZVHVMVFCVGOPVLVMVFVKVMABVKCVJMVKRVIMGVJMGAQVIMUAUB
+      UCUDPVNVHCDHUEZBGZDSZVLVMVHVQTVFDCBMUFUGVNVLVIVOKZDSZABLZVQVFVL
+      VTTVMVFVKVSABVFVIBGZNVIMMUIZGZVKVSTVFWAWCVFBWBUJWAWCUHBUKBWBVIU
+      LUMUNDVICMMUOUPUTUQVTVRABLZDSVQVRADBURVPWDDAVOBUSVAVBVCVDVE $.
   $}
 
   ${
@@ -51557,11 +51558,12 @@ $)
     $( An expression for the domain of a relation.  (Contributed by NM,
        22-Sep-2013.) $)
     reldm $p |- ( Rel A -> dom A = ran ( x e. A |-> ( 1st ` x ) ) ) $=
-      ( vy vz wrel cdm cv c1st cfv cmpt crn wcel wceq wrex releldm2 wfn wb fvex
-      eqid fnmpti fvelrnb ax-mp fveq2 fvmpt eqeq1d rexbiia syl5rbb bitrd eqrdv
-      a1i ) BEZCBFZABAGZHIZJZKZUKCGZULLDGZHIZUQMZDBNZUQUPLZDBUQOVBURUOIZUQMZDBN
-      ZUKVAUOBPVBVEQABUNUOUMHRUOSZTDBUQUOUAUBVEVAQUKVDUTDBURBLVCUSUQAURUNUSBUOU
-      MURHUCVFURHRUDUEUFUJUGUHUI $.
+      ( vy vz wrel cdm cv c1st cfv cmpt crn wcel wceq releldm2 wb cvv
+      wrex vex 1stexg ax-mp fnmpti fvelrnb fveq2 fvmpt eqeq1d rexbiia
+      wfn eqid a1i syl5rbb bitrd eqrdv ) BEZCBFZABAGZHIZJZKZUMCGZUNLD
+      GZHIZUSMZDBQZUSURLZDBUSNVDUTUQIZUSMZDBQZUMVCUQBUGVDVGOABUPUQUOP
+      LUPPLARUOPSTUQUHZUADBUSUQUBTVGVCOUMVFVBDBUTBLVEVAUSAUTUPVABUQUO
+      UTHUCVHUTPLVAPLDRUTPSTUDUEUFUIUJUKUL $.
   $}
 
   $( Equality theorem for substitution of a class for an ordered pair (analog
@@ -51620,11 +51622,13 @@ $)
        (Contributed by NM, 16-Dec-2008.) $)
     dfoprab3 $p |- { <. w , z >. | ( w e. ( _V X. _V ) /\ ph ) } =
        { <. <. x , y >. , z >. | ps } $=
-      ( coprab cv cvv c2nd cfv wsbc c1st wa copab fvex wceq wb eqcom wcel eqopi
-      cxp dfoprab3s cop anbi12i sylan2b syl bicomd ex sbc2iedv pm5.32i opabbii
-      eqtr2i ) BCDEHFIZJJUCUAZBDUOKLZMCUONLZMZOZFEPUPAOZFEPBCDEFUDUTVAFEUPUSAUP
-      BACDURUQUONQUOKQUPCIZURRZDIZUQRZOZBASUPVFOZABVGUOVBVDUERZABSVFUPURVBRZUQV
-      DRZOVHVCVIVEVJVBURTVDUQTUFUOVBVDJJUBUGGUHUIUJUKULUMUN $.
+      ( coprab cv cvv cxp wcel cfv wsbc wa copab ax-mp wceq wb eqcom
+      c2nd c1st dfoprab3s vex 1stexg 2ndexg cop anbi12i eqopi sylan2b
+      syl bicomd ex sbc2iedv pm5.32i opabbii eqtr2i ) BCDEHFIZJJKLZBD
+      URUAMZNCURUBMZNZOZFEPUSAOZFEPBCDEFUCVCVDFEUSVBAUSBACDVAUTURJLZV
+      AJLFUDZURJUEQVEUTJLVFURJUFQUSCIZVARZDIZUTRZOZBASUSVKOZABVLURVGV
+      IUGRZABSVKUSVAVGRZUTVIRZOVMVHVNVJVOVGVATVIUTTUHURVGVIJJUIUJGUKU
+      LUMUNUOUPUQ $.
   $}
 
   ${
