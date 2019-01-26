@@ -51389,16 +51389,16 @@ $)
   $}
 
   $( Existence of the first member of a set.  (Contributed by Jim Kingdon,
-     25-Jan-2019.) $)
-  1stexg $p |- ( A e. _V -> ( 1st ` A ) e. _V ) $=
-    ( c1st cvv wfn wcel cfv wfo fo1st fofn ax-mp funfvex funfni mpan
-    ) BCDZACEABFCEZCCBGNHCCBIJOCABABKLM $.
+     26-Jan-2019.) $)
+  1stexg $p |- ( A e. V -> ( 1st ` A ) e. _V ) $=
+    ( wcel cvv c1st cfv elex wfn fo1st fofn ax-mp funfvex funfni mpan
+    wfo syl ) ABCADCZAEFDCZABGEDHZQRDDEOSIDDEJKRDAEAELMNP $.
 
   $( Existence of the first member of a set.  (Contributed by Jim Kingdon,
-     25-Jan-2019.) $)
-  2ndexg $p |- ( A e. _V -> ( 2nd ` A ) e. _V ) $=
-    ( c2nd cvv wfn wcel cfv wfo fo2nd fofn ax-mp funfvex funfni mpan
-    ) BCDZACEABFCEZCCBGNHCCBIJOCABABKLM $.
+     26-Jan-2019.) $)
+  2ndexg $p |- ( A e. V -> ( 2nd ` A ) e. _V ) $=
+    ( wcel cvv c2nd cfv elex wfn fo2nd fofn ax-mp funfvex funfni mpan
+    wfo syl ) ABCADCZAEFDCZABGEDHZQRDDEOSIDDEJKRDAEAELMNP $.
 
   $( Membership in a cross product.  This version requires no quantifiers or
      dummy variables.  See also ~ elxp4 .  (Contributed by NM, 9-Oct-2004.) $)
@@ -51415,10 +51415,10 @@ $)
      dummy variables.  See also ~ elxp4 .  (Contributed by NM, 19-Aug-2006.) $)
   elxp7 $p |- ( A e. ( B X. C ) <-> ( A e. ( _V X. _V )
                /\ ( ( 1st ` A ) e. B /\ ( 2nd ` A ) e. C ) ) ) $=
-    ( cxp wcel cvv c1st cfv c2nd wa elex adantr cop wceq 1stexg 2ndexg biantrud
-    jca elxp6 syl6rbbr anbi1d pm5.21nii ) ABCDZEZAFEZAFFDZEZAGHZBEAIHZCEJZJZAUC
-    KUGUEUJAUFKLUEUKAUHUIMNZUJJUDUEUGULUJUEULULUHFEZUIFEZJZJUGUEUOULUEUMUNAOAPR
-    QAFFSTUAABCSTUB $.
+    ( cxp wcel cvv c1st cfv c2nd elex adantr wceq 1stexg 2ndexg
+    wa cop jca biantrud elxp6 syl6rbbr anbi1d pm5.21nii ) ABCDZEZAFEZ
+    AFFDZEZAGHZBEAIHZCEOZOZAUCJUGUEUJAUFJKUEUKAUHUIPLZUJOUDUEUGULUJUE
+    ULULUHFEZUIFEZOZOUGUEUOULUEUMUNAFMAFNQRAFFSTUAABCSTUB $.
 
   $( Equality with an ordered pair.  (Contributed by NM, 15-Dec-2008.)
      (Revised by Mario Carneiro, 23-Feb-2014.) $)
@@ -51463,19 +51463,18 @@ $)
   xpopth $p |- ( ( A e. ( C X. D ) /\ B e. ( R X. S ) ) ->
        ( ( ( 1st ` A ) = ( 1st ` B ) /\
      ( 2nd ` A ) = ( 2nd ` B ) ) <-> A = B ) ) $=
-    ( cxp wcel wa wceq c1st cfv c2nd cop 1st2nd2 eqeqan12d cvv wb elex adantr
-    1stexg 2ndexg opthg syl2anc syl bitr2d ) ACDGZHZBEFGHZIZABJAKLZAMLZNZBKLZBM
-    LZNZJZUKUNJULUOJIZUHUIAUMBUPACDOBEFOPUJAQHZUQURRZUHUSUIAUGSTUSUKQHULQHUTAUA
-    AUBUKULUNUOQQUCUDUEUF $.
+    ( cxp wcel wceq c1st cfv c2nd cop 1st2nd2 eqeqan12d cvv 1stexg
+    wa wb 2ndexg opthg syl2anc adantr bitr2d ) ACDGZHZBEFGHZRABIAJ
+    KZALKZMZBJKZBLKZMZIZUHUKIUIULIRZUFUGAUJBUMACDNBEFNOUFUNUOSZUGUFUH
+    PHUIPHUPAUEQAUETUHUIUKULPPUAUBUCUD $.
 
   $( Two ways to express equality with an ordered pair.  (Contributed by NM,
      3-Sep-2007.)  (Proof shortened by Mario Carneiro, 26-Apr-2015.) $)
   eqop $p |- ( A e. ( V X. W ) -> ( A = <. B , C >.
             <-> ( ( 1st ` A ) = B /\ ( 2nd ` A ) = C ) ) ) $=
-    ( cxp wcel cop wceq c1st cfv c2nd wa 1st2nd2 eqeq1d cvv wb 1stexg
-    elex 2ndexg opthg syl2anc syl bitrd ) ADEFZGZABCHZIAJKZALKZHZUGIZ
-    UHBIUICIMZUFAUJUGADENOUFAPGZUKULQZAUESUMUHPGUIPGUNARATUHUIBCPPUAU
-    BUCUD $.
+    ( cxp wcel cop wceq c1st cfv c2nd wa 1st2nd2 eqeq1d cvv 1stexg
+    wb 2ndexg opthg syl2anc bitrd ) ADEFZGZABCHZIAJKZALKZHZUEIZUFB
+    IUGCIMZUDAUHUEADENOUDUFPGUGPGUIUJRAUCQAUCSUFUGBCPPTUAUB $.
 
   ${
     eqop2.1 $e |- B e. _V $.
@@ -51495,21 +51494,21 @@ $)
        23-Feb-2014.) $)
     op1steq $p |- ( A e. ( V X. W )
          -> ( ( 1st ` A ) = B <-> E. x A = <. B , x >. ) ) $=
-      ( cxp wcel cvv c1st cfv wceq cv cop wex wb xpss sseli wa c2nd eqid mpanr2
-      eqopi wi elex 2ndexg opeq2 eqeq2d spcegv 3syl adantr ex eqop simpl syl6bi
-      mpd exlimdv impbid syl ) BDEFZGBHHFZGZBIJCKZBCALZMZKZANZOUSUTBDEPQVAVBVFV
-      AVBVFVAVBRBCBSJZMZKZVFVAVBVGVGKVIVGTBCVGHHUBUAVAVIVFUCZVBVABHGVGHGVJBUTUD
-      BUEVEVIAVGHVCVGKVDVHBVCVGCUFUGUHUIUJUOUKVAVEVBAVAVEVBVGVCKZRVBBCVCHHULVBV
-      KUMUNUPUQUR $.
+      ( cxp wcel cvv c1st cfv wceq cv cop wex wb xpss sseli c2nd syl
+      wa eqid eqopi mpanr2 wi 2ndexg opeq2 eqeq2d spcegv adantr ex
+      mpd eqop simpl syl6bi exlimdv impbid ) BDEFZGBHHFZGZBIJCKZBCALZ
+      MZKZANZOUQURBDEPQUSUTVDUSUTVDUSUTTBCBRJZMZKZVDUSUTVEVEKVGVEUABC
+      VEHHUBUCUSVGVDUDZUTUSVEHGVHBURUEVCVGAVEHVAVEKVBVFBVAVECUFUGUHSU
+      IUKUJUSVCUTAUSVCUTVEVAKZTUTBCVAHHULUTVIUMUNUOUPS $.
   $}
 
   $( Swap the members of an ordered pair.  (Contributed by NM, 31-Dec-2014.) $)
   2nd1st $p |- ( A e. ( B X. C ) ->
     U. `' { A } = <. ( 2nd ` A ) , ( 1st ` A ) >. ) $=
     ( cxp wcel csn ccnv cuni c1st cfv cop 1st2nd2 sneqd cnveqd unieqd
-    c2nd cvv wceq elex 1stexg 2ndexg opswapg syl2anc syl eqtrd ) ABCD
-    ZEZAFZGZHAIJZAPJZKZFZGZHZUKUJKZUGUIUNUGUHUMUGAULABCLMNOUGAQEZUOUP
-    RZAUFSUQUJQEUKQEURATAUAUJUKQQUBUCUDUE $.
+    c2nd cvv wceq 1stexg 2ndexg opswapg syl2anc eqtrd ) ABCDZEZ
+    AFZGZHAIJZAPJZKZFZGZHZUIUHKZUEUGULUEUFUKUEAUJABCLMNOUEUHQEUIQEUMU
+    NRAUDSAUDTUHUIQQUAUBUC $.
 
   $( Reconstruction of a member of a relation in terms of its ordered pair
      components.  (Contributed by NM, 29-Aug-2006.) $)
