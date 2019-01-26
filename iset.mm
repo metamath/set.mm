@@ -33959,11 +33959,20 @@ $)
 
   $( A singleton whose element exists is a set.  The ` A e. _V ` case of
      Theorem 7.12 of [Quine] p. 51, proved using only Extensionality, Power
-     Set, and Separation.  Replacement is not needed.  (Contributed by Jim
-     Kingdon, 1-Sep-2018.) $)
-  snexg $p |- ( A e. _V -> { A } e. _V ) $=
+     Set, and Separation.  Replacement is not needed.  This is a special case
+     of ~ snexg and new proofs should use ~ snexg instead.  (Contributed by Jim
+     Kingdon, 26-Jan-2019.)  (New usage is discouraged.) $)
+  snexgOLD $p |- ( A e. _V -> { A } e. _V ) $=
     ( cvv wcel cpw csn pwexg wss snsspw ssexg mpan syl ) ABCADZBCZAEZ
     BCZABFNLGMOAHNLBIJK $.
+
+  $( A singleton whose element exists is a set.  The ` A e. _V ` case of
+     Theorem 7.12 of [Quine] p. 51, proved using only Extensionality, Power
+     Set, and Separation.  Replacement is not needed.  (Contributed by Jim
+     Kingdon, 1-Sep-2018.) $)
+  snexg $p |- ( A e. V -> { A } e. _V ) $=
+    ( wcel cpw cvv csn pwexg wss snsspw ssexg mpan syl ) ABCADZECZAFZ
+    ECZABGOMHNPAIOMEJKL $.
 
   $( A singleton whose element is a proper class is a set.  The ` -. A e. _V `
      case of Theorem 7.12 of [Quine] p. 51, proved using only Extensionality,
@@ -34052,7 +34061,7 @@ $)
     $( A singleton of a set belongs to the power class of a class containing
        the set.  (Contributed by Alan Sare, 25-Aug-2011.) $)
     snelpwi $p |- ( A e. B -> { A } e. ~P B ) $=
-      ( wcel csn cpw wss snssi cvv wb elex snexg elpwg 3syl mpbird ) ABCZADZBEC
+      ( wcel csn cpw wss snssi cvv wb elex snexgOLD elpwg 3syl mpbird ) ABCZADZBEC
       ZPBFZABGOAHCPHCQRIABJAKPBHLMN $.
   $}
 
@@ -34061,7 +34070,7 @@ $)
     $( A singleton of a set belongs to the power class of a class containing
        the set.  (Contributed by NM, 1-Apr-1998.) $)
     snelpw $p |- ( A e. B <-> { A } e. ~P B ) $=
-      ( wcel csn wss cpw snss cvv snexg ax-mp elpw bitr4i ) ABDAEZBFN
+      ( wcel csn wss cpw snss cvv snexgOLD ax-mp elpw bitr4i ) ABDAEZBFN
       BGDABCHNBAIDNIDCAJKLM $.
   $}
 
@@ -34077,7 +34086,7 @@ $)
        singleton.  Exercise 8 of [TakeutiZaring] p. 16.  (Contributed by NM,
        10-Aug-1993.) $)
     rext $p |- ( A. z ( x e. z -> y e. z ) -> x = y ) $=
-      ( cv wcel wi wal csn wceq vex snid cvv snexg ax-mp imbi12d spcv
+      ( cv wcel wi wal csn wceq vex snid cvv snexgOLD ax-mp imbi12d spcv
       eleq2 mpi elsn equcomi sylbi syl ) ADZCDZEZBDZUDEZFZCGZUFUCHZEZ
       UCUFIZUIUCUJEZUKUCAJZKUHUMUKFCUJUCLEUJLEUNUCMNUDUJIUEUMUGUKUDUJ
       UCQUDUJUFQOPRUKUFUCIULBUCSBATUAUB $.
@@ -34090,7 +34099,7 @@ $)
        13-Oct-1996.) $)
     sspwb $p |- ( A C_ B <-> ~P A C_ ~P B ) $=
       ( vx wss cpw cv wcel sstr2 com12 vex elpw 3imtr4g ssrdv csn cvv
-      ssel snexg ax-mp snss bitr4i 3imtr3g impbii ) ABDZAEZBEZDZUCCUD
+      ssel snexgOLD ax-mp snss bitr4i 3imtr3g impbii ) ABDZAEZBEZDZUCCUD
       UEUCCFZADZUGBDZUGUDGUGUEGUHUCUIUGABHIUGACJZKUGBUJKLMUFCABUFUGNZ
       UDGZUKUEGZUGAGZUGBGZUDUEUKPULUKADUNUKAUGOGUKOGUJUGQRZKUGAUJSTUM
       UKBDUOUKBUPKUGBUJSTUAMUB $.
@@ -34153,7 +34162,7 @@ $)
     $( The intersection of all sets to which a set belongs is the singleton of
        that set.  (Contributed by NM, 5-Jun-2009.) $)
     intid $p |- |^| { x | A e. x } = { A } $=
-      ( cv wcel cab cint csn cvv wss snexg ax-mp snid intmin3 elintab
+      ( cv wcel cab cint csn cvv wss snexgOLD ax-mp snid intmin3 elintab
       eleq2 wi id mpgbir snssi eqssi ) BADZEZAFGZBHZUEIEZUDUEJBIEUFCB
       KLUCBUEEAUEIUBUEBPBCMNLBUDEZUEUDJUGUCUCQAUCABCOUCRSBUDTLUA $.
   $}
@@ -34163,7 +34172,7 @@ $)
     $( The abstraction of a wff with existential uniqueness exists.
        (Contributed by NM, 25-Nov-1994.) $)
     euabex $p |- ( E! x ph -> { x | ph } e. _V ) $=
-      ( vy weu cab csn wceq wex cvv wcel euabsn2 vex snexg ax-mp mpbiri
+      ( vy weu cab csn wceq wex cvv wcel euabsn2 vex snexgOLD ax-mp mpbiri
       cv eleq1 exlimiv sylbi ) ABDABEZCPZFZGZCHTIJZABCKUCUDCUCUDUBIJZUA
       IJUECLUAMNTUBIQORS $.
   $}
@@ -34173,7 +34182,7 @@ $)
     $( An inhabited class (even if proper) has an inhabited subset.
        (Contributed by Jim Kingdon, 17-Sep-2018.) $)
     mss $p |- ( E. y y e. A -> E. x ( x C_ A /\ E. z z e. x ) ) $=
-      ( vw cv wcel wex wss wa csn vex snss snm cvv snexg ax-mp wceq sseq1 eleq2
+      ( vw cv wcel wex wss wa csn vex snss snm cvv snexgOLD ax-mp wceq sseq1 eleq2
       exbidv anbi12d spcev mpan2 sylbi exlimiv elequ1 cbvexv anbi2i sylibr
       exbii ) BFZDGZBHAFZDIZEFZUNGZEHZJZAHZUOCFUNGZCHZJZAHUMUTBUMULKZDIZUTULDBL
       ZMVEUPVDGZEHZUTEULVFNUSVEVHJAVDULOGVDOGVFULPQUNVDRZUOVEURVHUNVDDSVIUQVGEU
@@ -34188,7 +34197,7 @@ $)
       ( vz vw wrex cv wcel wa cab wex crab rabn0m df-rab eleq2i sylbi
       wss wsb bitri exbii bitr3i csn vex ssab2 sstr2 mpi simpr equsb1
       snss wceq elsn sbbii mpbir jctil df-clab sban 3imtr4i elex2 syl
-      sylib cvv snexg ax-mp sseq1 rexeq anbi12d spcev syl2anc exlimiv
+      sylib cvv snexgOLD ax-mp sseq1 rexeq anbi12d spcev syl2anc exlimiv
       ) ABDGZEHZBHZDIZAJZBKZIZELZCHZDRZABVSGZJZCLZVKVLABDMZIZELVRABED
       NWEVQEWDVPVLABDOPUAUBVQWCEVQVLUCZDRZABWFGZWCVQWFVPRZWGVLVPEUDZU
       JWIVPDRWGABDUEWFVPDUFUGQVQFHABWFMZIFLZWHVQVLWKIZWLVNBESZABESZJZ
@@ -34201,7 +34210,7 @@ $)
   $( An ordered pair of sets is a set.  (Contributed by Jim Kingdon,
      11-Jan-2019.) $)
   opexg $p |- ( ( A e. V /\ B e. W ) -> <. A , B >. e. _V ) $=
-    ( wcel wa cop csn cpr cvv dfopg elex snexg syl adantr prexg syl2anc eqeltrd
+    ( wcel wa cop csn cpr cvv dfopg elex snexgOLD syl adantr prexg syl2anc eqeltrd
     syl2an ) ACEZBDEZFZABGAHZABIZIZJABCDKUBUCJEZUDJEZUEJETUFUATAJEZUFACLZAMNOTU
     HBJEUGUAUIBDLABPSUCUDPQR $.
 
@@ -34209,7 +34218,7 @@ $)
      new proofs should use ~ opexg instead.  (Contributed by Jim Kingdon,
      19-Sep-2018.)  (New usage is discouraged.) $)
   opexgOLD $p |- ( ( A e. _V /\ B e. _V ) -> <. A , B >. e. _V ) $=
-    ( cvv wcel cop csn cpr dfopg snexg adantr prexg jca syl eqeltrd
+    ( cvv wcel cop csn cpr dfopg snexgOLD adantr prexg jca syl eqeltrd
     wa ) ACDZBCDZOZABEAFZABGZGZCABCCHRSCDZTCDZOUACDRUBUCPUBQAIJABKLST
     KMN $.
 
@@ -34242,7 +34251,7 @@ $)
     $( One of the two elements in an ordered pair.  (Contributed by NM,
        5-Aug-1993.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
     opi1 $p |- { A } e. <. A , B >. $=
-      ( csn cpr cop cvv wcel snexg ax-mp prid1 dfop eleqtrri ) AEZOAB
+      ( csn cpr cop cvv wcel snexgOLD ax-mp prid1 dfop eleqtrri ) AEZOAB
       FZFABGOPAHIOHICAJKLABCDMN $.
 
     $( One of the two elements of an ordered pair.  (Contributed by NM,
@@ -34265,7 +34274,7 @@ $)
        by Jim Kingdon, 21-Sep-2018.) $)
     opm $p |- ( E. x x e. <. A , B >. <-> ( A e. _V /\ B e. _V ) ) $=
       ( cv cop wcel wex cvv csn cpr w3a wa df-op eleq2i exbii abid bitri 19.42v
-      cab df-3an 3bitr4ri 3simpa snexg adantr prmg syl sylanbrc impbii 3bitr2i
+      cab df-3an 3bitr4ri 3simpa snexgOLD adantr prmg syl sylanbrc impbii 3bitr2i
       id ) ADZBCEZFZAGZBHFZCHFZUKBIZBCJZJFZKZAGZUOUPUSAGZKZUOUPLZUNUKUTASZFZAGV
       AUMVFAULVEUKABCMNOVFUTAUTAPOQVDUSLZAGVDVBLVAVCVDUSARUTVGAUOUPUSTOUOUPVBTZ
       UAVCVDUOUPVBUBVDVDVBVCVDUJVDUQHFZVBUOVIUPBUCUDAUQURHUEUFVHUGUHUI $.
@@ -34493,7 +34502,7 @@ $)
     $( Equivalence for an ordered pair equal to a singleton.  (Contributed by
        NM, 3-Jun-2008.) $)
     opeqsn $p |- ( <. A , B >. = { C } <-> ( A = B /\ C = { A } ) ) $=
-      ( cop csn wceq cpr wa dfop eqeq1i wcel snexg preqsn eqcom bitri
+      ( cop csn wceq cpr wa dfop eqeq1i wcel snexgOLD preqsn eqcom bitri
       cvv 3bitri ax-mp prexg mp2an anbi2i anidm anbi1i syl5req eqeq1d
       dfsn2 preq2 syl6bb pm5.32i ) ABGZCHZIAHZABJZJZUNIUOUPIZUPCIZKZA
       BIZCUOIZKZUMUQUNABDELMUOUPCASNZUOSNDAOUAVDBSNUPSNDEABUBUCFPUTVA
@@ -34510,7 +34519,7 @@ $)
        (Contributed by NM, 3-Jun-2008.) $)
     opeqpr $p |- ( <. A , B >. = { C , D }
   <-> ( ( C = { A } /\ D = { A , B } ) \/ ( C = { A , B } /\ D = { A } ) ) ) $=
-      ( cop cpr wceq csn wa wo eqcom dfop eqeq2i cvv wcel snexg ax-mp
+      ( cop cpr wceq csn wa wo eqcom dfop eqeq2i cvv wcel snexgOLD ax-mp
       prexg mp2an preq12b 3bitri ) ABIZCDJZKUGUFKUGALZABJZJZKCUHKDUIK
       MCUIKDUHKMNUFUGOUFUJUGABEFPQCDUHUIGHARSZUHRSEATUAUKBRSUIRSEFABU
       BUCUDUE $.
@@ -34549,7 +34558,7 @@ $)
        (Contributed by NM, 17-Aug-2004.)  (Revised by Mario Carneiro,
        26-Apr-2015.) $)
     uniop $p |- U. <. A , B >. = { A , B } $=
-      ( cop cuni csn cpr cun dfop unieqi wcel snexg ax-mp prexg mp2an
+      ( cop cuni csn cpr cun dfop unieqi wcel snexgOLD ax-mp prexg mp2an
       cvv unipr wss wceq snsspr1 ssequn1 mpbi 3eqtri ) ABEZFAGZABHZHZ
       FUFUGIZUGUEUHABCDJKUFUGAQLZUFQLCAMNUJBQLUGQLCDABOPRUFUGSUIUGTAB
       UAUFUGUBUCUD $.
@@ -35959,7 +35968,7 @@ $)
 
   $( A triple of classes exists.  (Contributed by NM, 10-Apr-1994.) $)
   tpexg $p |- ( ( A e. _V /\ B e. _V /\ C e. _V ) -> { A , B , C } e. _V ) $=
-    ( cvv wcel w3a ctp cpr csn cun df-tp wa prexg snexg anim12i 3impa
+    ( cvv wcel w3a ctp cpr csn cun df-tp wa prexg snexgOLD anim12i 3impa
     unexg syl syl5eqel ) ADEZBDEZCDEZFZABCGABHZCIZJZDABCKUCUDDEZUEDEZ
     LZUFDETUAUBUITUALUGUBUHABMCNOPUDUEDDQRS $.
 
@@ -35978,7 +35987,7 @@ $)
        10-Oct-2008.)  (Proof shortened by Eric Schmidt, 7-Dec-2008.) $)
     snnex $p |- { x | E. y x = { y } } e/ _V $=
       ( vz cv csn wceq wex cab cvv wcel cuni vprc wa vex snid equcoms
-      a9ev sneq eximii snexg ax-mp eleq2 eqeq1 exbidv anbi12d eluniab
+      a9ev sneq eximii snexgOLD ax-mp eleq2 eqeq1 exbidv anbi12d eluniab
       spcev mp2an mpbir 2th eqriv eleq1i mtbir uniexg mto nelir ) ADZ
       BDZEZFZBGZAHZIVBIJVBKZIJZVDIIJLVCIICVCICDZVCJZVEIJZVFVEUQJZVAMZ
       AGZVEVEEZJZVKUSFZBGZVJVECNZOURVEFVMBBCQVMCBVEURRPSVIVLVNMAVKVGV
@@ -36314,7 +36323,7 @@ $)
     $( Extract the first member of an ordered pair.  Theorem 73 of [Suppes]
        p. 42.  (Contributed by NM, 25-Nov-2003.) $)
     op1stb $p |- |^| |^| <. A , B >. = A $=
-      ( cop cint csn cpr dfop inteqi cin wcel snexg ax-mp prexg mp2an
+      ( cop cint csn cpr dfop inteqi cin wcel snexgOLD ax-mp prexg mp2an
       cvv intpr wss eqtri wceq snsspr1 df-ss mpbi intsn ) ABEZFZFAGZF
       AUGUHUGUHABHZHZFZUHUFUJABCDIJUKUHUIKZUHUHUIAQLZUHQLCAMNUMBQLUIQ
       LCDABOPRUHUISULUHUAABUBUHUIUCUDTTJACUET $.
@@ -36324,7 +36333,7 @@ $)
     $( Extract the first member of an ordered pair.  Theorem 73 of [Suppes]
        p. 42.  (Contributed by Jim Kingdon, 17-Dec-2018.) $)
     op1stbg $p |- ( ( A e. V /\ B e. W ) -> |^| |^| <. A , B >. = A ) $=
-      ( wcel wa cop cint csn cpr dfopg inteqd cin cvv wceq elex snexg syl eqtrd
+      ( wcel wa cop cint csn cpr dfopg inteqd cin cvv wceq elex snexgOLD syl eqtrd
       adantr prexg syl2an intprg syl2anc wss snsspr1 df-ss mpbi syl6eq intsng )
       ACEZBDEZFZABGZHZHAIZHZAUMUOUPUMUOUPABJZJZHZUPUMUNUSABCDKLUMUTUPURMZUPUMUP
       NEZURNEZUTVAOUKVBULUKANEZVBACPZAQRTUKVDBNEVCULVEBDPABUAUBUPURNNUCUDUPURUE
@@ -36432,7 +36441,7 @@ $)
   $( A successor exists iff its class argument exists.  (Contributed by NM,
      22-Jun-1998.) $)
   sucexb $p |- ( A e. _V <-> suc A e. _V ) $=
-    ( cvv wcel csn cun csuc unexb snexg pm4.71i df-suc eleq1i 3bitr4i
+    ( cvv wcel csn cun csuc unexb snexgOLD pm4.71i df-suc eleq1i 3bitr4i
     wa ) ABCZADZBCZMAOEZBCNAFZBCAOGNPAHIRQBAJKL $.
 
   $( The successor of a set is a set (generalization).  (Contributed by NM,
@@ -36751,7 +36760,7 @@ $)
        construct a set ` x ` which does not equal it.  (Contributed by Jim
        Kingdon, 29-Dec-2018.) $)
     dtruex $p |- E. x -. x = y $=
-      ( cv wceq wn wex csn cvv wcel vex snexg ax-mp isset mpbi wa elirr
+      ( cv wceq wn wex csn cvv wcel vex snexgOLD ax-mp isset mpbi wa elirr
       ssnid eleq2 mpbiri mto eqtr ancom imnani eximi eqcom notbii exbii
       mtbi ) BCZACZDZEZAFZUJUIDZEZAFUJUIGZDZAFZUMUPHIZURUIHIUSBJUIKLAUP
       MNUQULAUQUKUKUQOZUQUKOUTUIUPDZVAUIUIIZUIPVAVBUIUPIBQUIUPUIRSTUIUJ
@@ -38633,7 +38642,7 @@ $)
     relop $p |- ( Rel <. A , B >.
              <-> E. x E. y ( A = { x } /\ B = { x , y } ) ) $=
       ( vz vw vv cop cvv cv wceq wa wex wi wcel bitri weq eqeq2d cxp wss df-rel
-      wrel csn cpr wal dfss2 vex elop elvv imbi12i jaob albii 19.26 snexg ax-mp
+      wrel csn cpr wal dfss2 vex elop elvv imbi12i jaob albii 19.26 snexgOLD ax-mp
       wo eqeq1 eqcom opeqsn syl6bb 2exbidv imbi12d spcv sneq cbvexv a9ev equcom
       exbii mpbi 19.41v mpbiran eqid a1bi 3bitr2ri sylib prexg mp2an mpi opeqpr
       idd eqtr2 preqsn simplbi dfsn2 preq2 syl5req syl5eq anbi12d biimpd adantr
@@ -41334,7 +41343,7 @@ $)
                  /\ ( U. dom { A } e. B /\ U. ran { A } e. C ) ) ) $=
       ( vx vy wcel cvv csn cdm cuni crn cop wceq wa elex eleq1 wex unieqd syl
       wb cxp anim12i opexgOLD adantl adantr mpbird sylan2 cv elxp a1i rneqd op2nda
-      sneq vex syl6req anbi1i anass bitri exbii snexg rnexg uniexg opeq2 eqeq2d
+      sneq vex syl6req anbi1i anass bitri exbii snexgOLD rnexg uniexg opeq2 eqeq2d
       pm4.71ri anbi2d anbi12d ceqsexgv syl5bb dmeqd dmsnopg unisn syl6eq eqtr2d
       ex pm4.71rd anbi1d 3bitrd exbidv dmexg opeq1 pm5.21nii ) ABCUAZFZAGFZAAHZ
       IZJZWFKZJZLZMZWHBFZWJCFZNZNZAWCOWOWLWHGFZWJGFZNZWEWMWQWNWRWHBOWJCOUBWLWSN
@@ -41356,7 +41365,7 @@ $)
                  /\ ( |^| |^| A e. B /\ U. ran { A } e. C ) ) ) $=
       ( vx vy wcel cvv cint csn crn cuni cop wceq wa elex eleq1 adantr wex syl
       wb cxp anim12i opexgOLD adantl mpbird sylan2 cv elxp rneqd unieqd vex op2nda
-      syl6req pm4.71ri anbi1i anass bitri exbii snexg rnexg uniexg opeq2 eqeq2d
+      syl6req pm4.71ri anbi1i anass bitri exbii snexgOLD rnexg uniexg opeq2 eqeq2d
       sneq anbi2d anbi12d ceqsexgv syl5bb inteq inteqd op1stbg sylancr pm4.71rd
       eqtr2d ex anbi1d a1i 3bitrd exbidv mpbii exlimiv ad2antrl opeq1 pm5.21nii
       syl6bb ) ABCUAZFZAGFZAAHZHZAIZJZKZLZMZWJBFZWMCFZNZNZAWFOWRWOWJGFZWMGFZNZW
@@ -42513,7 +42522,7 @@ $)
     funopg $p |- ( ( A e. V /\ B e. W /\ Fun <. A , B >. ) -> A = B ) $=
       ( vu vt vx vy vz vw vv wcel cop wfun wceq cv wi cpr vex cvv csn
       opeq1 funeqd eqeq1 imbi12d opeq2 eqeq2 wa wex wrel funrel relop
-      sylib opth opid preq1i dfop preq2i snexg ax-mp zfpair2 3eqtr4ri
+      sylib opth opid preq1i dfop preq2i snexgOLD ax-mp zfpair2 3eqtr4ri
       eqeq2i bitr3i wal dffun4 simprbi sopex prid1 eleq2 mpbiri prid2
       jca w3a opeq12 3adant3 eleq1d 3adant2 anbi12d wb eqeq12 3adant1
       spc3gv mp3an syl2im syl5bi dfsn2 preq2 syl5req eqeq2d eqtr3 imp
@@ -51149,7 +51158,7 @@ $)
        pair.  (Contributed by NM, 9-Oct-2004.)  (Revised by Mario Carneiro,
        8-Sep-2013.) $)
     1stvalg $p |- ( A e. _V -> ( 1st ` A ) = U. dom { A } ) $=
-      ( vx cvv wcel csn cdm cuni c1st cfv wceq snexg dmexg uniexg 3syl cv dmeqd
+      ( vx cvv wcel csn cdm cuni c1st cfv wceq snexgOLD dmexg uniexg 3syl cv dmeqd
       sneq unieqd df-1st fvmptg mpdan ) ACDZAEZFZGZCDZAHIUEJUBUCCDUDCDUFAKUCCLU
       DCMNBABOZEZFZGUECCHUGAJZUIUDUJUHUCUGAQPRBSTUA $.
 
@@ -51157,7 +51166,7 @@ $)
        pair.  (Contributed by NM, 9-Oct-2004.)  (Revised by Mario Carneiro,
        8-Sep-2013.) $)
     2ndvalg $p |- ( A e. _V -> ( 2nd ` A ) = U. ran { A } ) $=
-      ( vx cvv wcel csn crn cuni c2nd wceq snexg rnexg uniexg 3syl cv
+      ( vx cvv wcel csn crn cuni c2nd wceq snexgOLD rnexg uniexg 3syl cv
       cfv sneq rneqd unieqd df-2nd fvmptg mpdan ) ACDZAEZFZGZCDZAHOUE
       IUBUCCDUDCDUFAJUCCKUDCLMBABNZEZFZGUECCHUGAIZUIUDUJUHUCUGAPQRBST
       UA $.
@@ -51275,7 +51284,7 @@ $)
     $( The ` 1st ` function maps the universe onto the universe.  (Contributed
        by NM, 14-Oct-2004.)  (Revised by Mario Carneiro, 8-Sep-2013.) $)
     fo1st $p |- 1st : _V -onto-> _V $=
-      ( vx vy cvv c1st wfo wfn crn wceq csn cdm cuni wcel snexg ax-mp
+      ( vx vy cvv c1st wfo wfn crn wceq csn cdm cuni wcel snexgOLD ax-mp
       cv vex dmex uniex df-1st fnmpti wrex cab rnmpt cop sopex op1sta
       eqcomi dmeqd unieqd eqeq2d rspcev mp2an 2th abbi2i eqtr4i df-fo
       sneq mpbir2an ) CCDEDCFDGZCHACAOZIZJZKZDVBVAUTCLVACLAPUTMNQRASZ
@@ -51287,7 +51296,7 @@ $)
     $( The ` 2nd ` function maps the universe onto the universe.  (Contributed
        by NM, 14-Oct-2004.)  (Revised by Mario Carneiro, 8-Sep-2013.) $)
     fo2nd $p |- 2nd : _V -onto-> _V $=
-      ( vx vy cvv c2nd wfo wfn crn wceq csn cuni wcel vex snexg ax-mp
+      ( vx vy cvv c2nd wfo wfn crn wceq csn cuni wcel vex snexgOLD ax-mp
       cv rnex uniex df-2nd fnmpti wrex rnmpt sopex op2nda eqcomi sneq
       cab cop rneqd unieqd eqeq2d rspcev mp2an abbi2i eqtr4i mpbir2an
       2th df-fo ) CCDEDCFDGZCHACAOZIZGZJZDVAUTUSCKUTCKALUSMNPQARZSURB
