@@ -52184,10 +52184,11 @@ $)
     $( Existence of an operation class abstraction (version for dependent
        domains).  (Contributed by Mario Carneiro, 30-Dec-2016.) $)
     mpt2exxg $p |- ( ( A e. R /\ A. x e. A B e. S ) -> F e. _V ) $=
-      ( wcel wral wa wfun cdm cvv mpt2fun cv csn cxp sylancr ciun wss dmmpt2ssx
-      snex xpexg mpan ralimi iunexg sylan2 ssexg funex ) CFJZDGJZACKZLZHMHNZOJZ
-      HOJABCDEHIPUOUPACAQZRZDSZUAZUBVAOJZUQABCDEHIUCUNULUTOJZACKVBUMVCACUSOJUMV
-      CURUDUSDOGUEUFUGACUTFOUHUIUPVAOUJTOHUKT $.
+      ( wcel wral wa wfun cdm cvv mpt2fun cv csn cxp sylancr ciun wss
+      dmmpt2ssx vex snexg ax-mp xpexg mpan ralimi iunexg sylan2 ssexg
+      funex ) CFJZDGJZACKZLZHMHNZOJZHOJABCDEHIPUQURACAQZRZDSZUAZUBVCO
+      JZUSABCDEHIUCUPUNVBOJZACKVDUOVEACVAOJZUOVEUTOJVFAUDUTOUEUFVADOG
+      UGUHUIACVBFOUJUKURVCOULTOHUMT $.
 
     $d x B $.
     $( Existence of an operation class abstraction (special case).
