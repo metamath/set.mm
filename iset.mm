@@ -51305,7 +51305,7 @@ $)
        normally has free-variable parameters ` x ` and ` y ` .  See also
        ~ abrexex .  (Contributed by NM, 12-Sep-2004.) $)
     abrexex2 $p |- { y | E. x e. A ph } e. _V $=
-      ( vz wrex cab cv wcel cvv wsb nfv nfcv nfs1v nfrex weq sbequ12 rexbidv
+      ( vz wrex cab cv wcel cvv wsb nfv nfcv nfs1v nfrexxy weq sbequ12 rexbidv
       cbvab df-clab rexbii abbii eqtr4i ciun df-iun iunex eqeltrri eqeltri ) AB
       DHZCIZGJACIZKZBDHZGIZLULACGMZBDHZGIUPUKURCGUKGNUQCBDCDOACGPQCGRAUQBDACGST
       UAUOURGUNUQBDAGCUBUCUDUEBDUMUFUPLBGDUMUGBDUMEFUHUIUJ $.
