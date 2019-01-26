@@ -51442,13 +51442,6 @@ $)
     ( cxp wcel c1st cfv c2nd cop wceq wa elxp6 simplbi ) ABCDEAAFGZAHGZIJNBEOCE
     KABCLM $.
 
-  $( Reconstruction of an ordered pair in terms of its components.
-     (Contributed by NM, 25-Feb-2014.) $)
-  1st2ndb $p |- ( A e. ( _V X. _V )
-      <-> A = <. ( 1st ` A ) , ( 2nd ` A ) >. ) $=
-    ( cvv cxp wcel c1st cfv c2nd cop wceq 1st2nd2 fvex opelvv syl6eqel impbii
-    id ) ABBCZDAAEFZAGFZHZIZABBJTASPTOQRAEKAGKLMN $.
-
   $( An ordered pair theorem for members of cross products.  (Contributed by
      NM, 20-Jun-2007.) $)
   xpopth $p |- ( ( A e. ( C X. D ) /\ B e. ( R X. S ) ) ->
