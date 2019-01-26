@@ -51500,8 +51500,10 @@ $)
   $( Swap the members of an ordered pair.  (Contributed by NM, 31-Dec-2014.) $)
   2nd1st $p |- ( A e. ( B X. C ) ->
     U. `' { A } = <. ( 2nd ` A ) , ( 1st ` A ) >. ) $=
-    ( cxp wcel csn ccnv cuni c1st cfv 1st2nd2 sneqd cnveqd unieqd opswap syl6eq
-    c2nd cop ) ABCDEZAFZGZHAIJZAQJZRZFZGZHUCUBRSUAUFSTUESAUDABCKLMNUBUCOP $.
+    ( cxp wcel csn ccnv cuni c1st cfv cop 1st2nd2 sneqd cnveqd unieqd
+    c2nd cvv wceq elex 1stexg 2ndexg opswapg syl2anc syl eqtrd ) ABCD
+    ZEZAFZGZHAIJZAPJZKZFZGZHZUKUJKZUGUIUNUGUHUMUGAULABCLMNOUGAQEZUOUP
+    RZAUFSUQUJQEUKQEURATAUAUJUKQQUBUCUDUE $.
 
   $( Reconstruction of a member of a relation in terms of its ordered pair
      components.  (Contributed by NM, 29-Aug-2006.) $)
