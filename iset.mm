@@ -51231,11 +51231,11 @@ $)
        (Contributed by Jeff Madsen, 2-Sep-2009.) $)
     abrexex2g $p |- ( ( A e. V /\ A. x e. A { y | ph } e. W )
                                   -> { y | E. x e. A ph } e. _V ) $=
-      ( vz wcel cab wral wa wrex cv cvv wsb nfv nfcv nfs1v nfrex weq cbvab ciun
-      sbequ12 rexbidv df-clab rexbii eqtr4i df-iun iunexg syl5eqelr syl5eqel
-      abbii ) DEHACIZFHBDJKZABDLZCIZGMUMHZBDLZGIZNUPACGOZBDLZGIUSUOVACGUOGPUTCB
-      DCDQACGRSCGTAUTBDACGUCUDUAURVAGUQUTBDAGCUEUFULUGUNUSBDUMUBNBGDUMUHBDUMEFU
-      IUJUK $.
+      ( vz wcel cab wral wa wrex cvv wsb nfv nfcv nfs1v nfrexxy wceq
+      cv sbequ12 rexbidv cbvab rexbii abbii eqtr4i ciun df-iun iunexg
+      df-clab syl5eqelr syl5eqel ) DEHACIZFHBDJKZABDLZCIZGTZUMHZBDLZG
+      IZMUPACGNZBDLZGIUTUOVBCGUOGOVACBDCDPACGQRCTUQSAVABDACGUAUBUCUSV
+      BGURVABDAGCUJUDUEUFUNUTBDUMUGMBGDUMUHBDUMEFUIUKUL $.
   $}
 
   ${
