@@ -51382,6 +51382,18 @@ $)
       HUJDEUEUGUJUFUEUJUGUEUIUDCUCUDADOEOPTQRUAUB $.
   $}
 
+  $( Existence of the first member of a set.  (Contributed by Jim Kingdon,
+     25-Jan-2019.) $)
+  1stexg $p |- ( A e. _V -> ( 1st ` A ) e. _V ) $=
+    ( c1st cvv wfn wcel cfv wfo fo1st fofn ax-mp funfvex funfni mpan
+    ) BCDZACEABFCEZCCBGNHCCBIJOCABABKLM $.
+
+  $( Existence of the first member of a set.  (Contributed by Jim Kingdon,
+     25-Jan-2019.) $)
+  2ndexg $p |- ( A e. _V -> ( 2nd ` A ) e. _V ) $=
+    ( c2nd cvv wfn wcel cfv wfo fo2nd fofn ax-mp funfvex funfni mpan
+    ) BCDZACEABFCEZCCBGNHCCBIJOCABABKLM $.
+
   $( Membership in a cross product.  This version requires no quantifiers or
      dummy variables.  See also ~ elxp4 .  (Contributed by NM, 9-Oct-2004.) $)
   elxp6 $p |- ( A e. ( B X. C ) <-> ( A = <. ( 1st ` A ) , ( 2nd ` A ) >.
@@ -51397,12 +51409,10 @@ $)
      dummy variables.  See also ~ elxp4 .  (Contributed by NM, 19-Aug-2006.) $)
   elxp7 $p |- ( A e. ( B X. C ) <-> ( A e. ( _V X. _V )
                /\ ( ( 1st ` A ) e. B /\ ( 2nd ` A ) e. C ) ) ) $=
-    ( cxp wcel cvv c1st cfv c2nd wa elex wfn wfo ax-mp funfvex funfni
-    fofn mpan elxp6 syl6rbbr adantr cop wceq fo1st fo2nd jca biantrud
-    anbi1d pm5.21nii ) ABCDZEZAFEZAFFDZEZAGHZBEAIHZCEJZJZAUJKUNULUQAU
-    MKUAULURAUOUPUBUCZUQJUKULUNUSUQULUSUSUOFEZUPFEZJZJUNULVBUSULUTVAG
-    FLZULUTFFGMVCUDFFGQNUTFAGAGOPRIFLZULVAFFIMVDUEFFIQNVAFAIAIOPRUFUG
-    AFFSTUHABCSTUI $.
+    ( cxp wcel cvv c1st cfv c2nd wa elex adantr cop wceq 1stexg 2ndexg biantrud
+    jca elxp6 syl6rbbr anbi1d pm5.21nii ) ABCDZEZAFEZAFFDZEZAGHZBEAIHZCEJZJZAUC
+    KUGUEUJAUFKLUEUKAUHUIMNZUJJUDUEUGULUJUEULULUHFEZUIFEZJZJUGUEUOULUEUMUNAOAPR
+    QAFFSTUAABCSTUB $.
 
   $( Equality with an ordered pair.  (Contributed by NM, 15-Dec-2008.)
      (Revised by Mario Carneiro, 23-Feb-2014.) $)
@@ -51447,12 +51457,10 @@ $)
   xpopth $p |- ( ( A e. ( C X. D ) /\ B e. ( R X. S ) ) ->
        ( ( ( 1st ` A ) = ( 1st ` B ) /\
      ( 2nd ` A ) = ( 2nd ` B ) ) <-> A = B ) ) $=
-    ( cxp wcel wceq c1st cfv c2nd cop 1st2nd2 cvv wfn wfo fofn ax-mp
-    wa eqeqan12d wb elex adantr fo1st funfvex funfni mpan fo2nd opthg
-    syl2anc syl bitr2d ) ACDGZHZBEFGHZTZABIAJKZALKZMZBJKZBLKZMZIZURVA
-    IUSVBITZUOUPAUTBVCACDNBEFNUAUQAOHZVDVEUBZUOVFUPAUNUCUDVFUROHZUSOH
-    ZVGJOPZVFVHOOJQVJUEOOJRSVHOAJAJUFUGUHLOPZVFVIOOLQVKUIOOLRSVIOALAL
-    UFUGUHURUSVAVBOOUJUKULUM $.
+    ( cxp wcel wa wceq c1st cfv c2nd cop 1st2nd2 eqeqan12d cvv wb elex adantr
+    1stexg 2ndexg opthg syl2anc syl bitr2d ) ACDGZHZBEFGHZIZABJAKLZAMLZNZBKLZBM
+    LZNZJZUKUNJULUOJIZUHUIAUMBUPACDOBEFOPUJAQHZUQURRZUHUSUIAUGSTUSUKQHULQHUTAUA
+    AUBUKULUNUOQQUCUDUEUF $.
 
   $( Two ways to express equality with an ordered pair.  (Contributed by NM,
      3-Sep-2007.)  (Proof shortened by Mario Carneiro, 26-Apr-2015.) $)
