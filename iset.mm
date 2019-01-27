@@ -52383,26 +52383,6 @@ $)
       VNVITVJUMVMVDVHUMVLBPVMVDTBUDVLBUOUEUFUGUHUJUKUL $.
   $}
 
-  ${
-    $d w x y z $.
-    $( A function that can be used to feed a common value to both operands of
-       an operation.  Use as the second argument of a composition with the
-       function of ~ fpar in order to build compound functions such as
-       ` y = ( ( sqr `` x ) + ( abs `` x ) ) ` .  (Contributed by NM,
-       17-Sep-2007.) $)
-    fsplit $p |- `' ( 1st |` _I ) = ( x e. _V |-> <. x , x >. ) $=
-      ( vy vz cv c1st cid cres ccnv wbr copab cop wceq cvv cmpt vex wcel wa wex
-      exbii bitri brcnv brres cfv 19.42v op1std eqeq1d pm5.32ri wfn wb wfo fofn
-      fo1st ax-mp fnbrfvb mp2an dfid2 eleq2i nfe1 elopab biantru 3bitr4i bitr2i
-      19.9 equid anbi12i 3bitr3ri id opeq12d eqeq2d ceqsexv opabbii wrel relcnv
-      dfrel4v mpbi mptv 3eqtr4i ) ADZBDZEFGZHZIZABJZVSVRVRKZLZABJWAAMWDNWBWEABW
-      BVSVRVTIZWEVRVSVTAOZBOZUAWFVSVREIZVSFPZQZWEVSVREFWGUBWKCDZVRLZVSWLWLKZLZQ
-      ZCRZWEVSEUCZVRLZWOQZCRWSWOCRZQWQWKWSWOCUDWTWPCWOWSWMWOWRWLVRWLWLVSCOZXBUE
-      UFUGSWSWIXAWJEMUHZVSMPWSWIUIMMEUJXCULMMEUKUMWHMVSVREUNUOWJVSWLWLLZCCJZPZX
-      AFXEVSCUPUQWOXDQZCRZCRXHXFXAXHCXGCURVCXDCCVSUSWOXGCXDWOCVDUTSVAVBVEVFWOWE
-      CVRWGWMWNWDVSWMWLVRWLVRWMVGZXIVHVIVJTTTVKWAVLWAWCLVTVMABWAVNVOABWDVPVQ $.
-  $}
-
   $( The ` 2nd ` (second member of an ordered pair) function restricted to a
      function ` F ` is a function of ` F ` into the codomain of ` F ` .
      (Contributed by Alexander van der Vekens, 4-Feb-2018.) $)
