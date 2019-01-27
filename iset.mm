@@ -52524,36 +52524,6 @@ $)
       DEFGIJMNHXCXGXEXHWAXIUTXJXKXLXMXLXMXLXMXNXOVGXPUTXQXRUAUBUIYOGXSXT $.
   $}
 
-  ${
-    $d x y z A $.  $d u w B $.  $d u w x y F $.  $d w z ph $.  $d u w x y R $.
-    $d u z $.  $d x y S $.  $d w z T $.
-    fnse.1 $e |- T = { <. x , y >. | ( ( x e. A /\ y e. A ) /\
-      ( ( F ` x ) R ( F ` y ) \/ ( ( F ` x ) = ( F ` y ) /\ x S y ) ) ) } $.
-    fnse.2 $e |- ( ph -> F : A --> B ) $.
-    fnse.3 $e |- ( ph -> R Se B ) $.
-    fnse.4 $e |- ( ph -> ( `' F " w ) e. _V ) $.
-    $( Condition for the well-order in ~ fnwe to be set-like.  (Contributed by
-       Mario Carneiro, 25-Jun-2015.) $)
-    fnse $p |- ( ph -> T Se A ) $=
-      ( vz cv cvv wcel wa wbr ccnv csn cima cin wral wse cfv crab cun ffvelrnda
-      vu seex sylan syldan snex sylancl wceq imaeq2 eleq1d imbi2d vtoclg impcom
-      unexg wi wss inss2 wb vex eliniseg ax-mp fveq2 breqan12d eqeqan12d breq12
-      anbi12d orbi12d brab2ga adantrr breq1 elrab3 syl biimprd simpl fvex elsnc
-      wo sylibr a1i orim12d elun syl6ibr simprl jctild wfn ffn elpreima sylibrd
-      wf adantr expimpd syl5bi ssrdv syl5ss ssexd ralrimiva dfse2 ) AEIUAOPZUBU
-      CZUDZQRZOEUEEIUFAXJOEAXGERZSZXIJUAZUKPZXGJUGZGTZUKFUHZXOUBZUIZUCZQAXKXSQR
-      ZXTQRZXLXQQRZXRQRYAAXKXOFRZYCAEFXGJLUJAFGUFYDYCMUKFXOGULUMUNXOUOXQXRQQVCU
-      PYAAYBAXMDPZUCZQRZVDAYBVDDXSQYEXSUQZYGYBAYHYFXTQYEXSXMURUSUTNVAVBUNAXIXTV
-      EXKAXIXHXTEXHVFADXHXTYEXHRZYEXGITZAYEXTRZXGQRYIYJVGOVHIXGYEQDVHVIVJYJYEER
-      ZXKSZYEJUGZXOGTZYNXOUQZYEXGHTZSZWFZSAYKBPZJUGZCPZJUGZGTZUUAUUCUQZYTUUBHTZ
-      SZWFYSBCYEXGEEIYTYEUQZUUBXGUQZSZUUDYOUUGYRUUHUUIUUAYNUUCXOGYTYEJVKZUUBXGJ
-      VKZVLUUJUUEYPUUFYQUUHUUIUUAYNUUCXOUUKUULVMYTYEUUBXGHVNVOVPKVQAYMYSYKAYMSZ
-      YSYLYNXSRZSZYKUUMYSUUNYLUUMYSYNXQRZYNXRRZWFUUNUUMYOUUPYRUUQUUMUUPYOUUMYNF
-      RZUUPYOVGAYLUURXKAEFYEJLUJVRXPYOUKYNFXNYNXOGVSVTWAWBYRUUQVDUUMYRYPUUQYPYQ
-      WCYNXOYEJWDWEWGWHWIYNXQXRWJWKAYLXKWLWMUUMJEWNZYKUUOVGAUUSYMAEFJWRUUSLEFJW
-      OWAWSEYEXSJWPWAWQWTXAXAXBXCWSXDXEOEIXFWG $.
-  $}
-
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
