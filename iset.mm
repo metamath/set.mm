@@ -52279,20 +52279,20 @@ $)
     $( An alternate possible definition of the ` 1st ` function.  (Contributed
        by NM, 14-Oct-2004.)  (Revised by Mario Carneiro, 31-Aug-2015.) $)
     df1st2 $p |- { <. <. x , y >. , z >. | z = x } = ( 1st |` ( _V X. _V ) ) $=
-      ( vw c1st cvv cxp cres cv cfv wceq copab wcel wa coprab wfn wfo fo1st vex
-      cmpt fofn ax-mp dffn5 mpbi mptv eqtri reseq1i resopab cop op1std dfoprab3
-      eqeq2d 3eqtrri ) EFFGZHCIZDIZEJZKZDCLZUNHUPUNMURNDCLUOAIZKZABCOEUSUNEDFUQ
-      TZUSEFPZEVBKFFEQVCRFFEUAUBDFEUCUDDCUQUEUFUGURDCUNUHURVAABCDUPUTBIZUIKUQUT
-      UOUTVDUPASBSUJULUKUM $.
+      ( vw c1st cvv cxp cres cv cfv wceq copab wcel wa coprab wfo wfn fo1st vex
+      cmpt fofn dffn5im mp2b mptv eqtri reseq1i resopab op1std dfoprab3 3eqtrri
+      cop eqeq2d ) EFFGZHCIZDIZEJZKZDCLZUMHUOUMMUQNDCLUNAIZKZABCOEURUMEDFUPTZUR
+      FFEPEFQEVAKRFFEUADFEUBUCDCUPUDUEUFUQDCUMUGUQUTABCDUOUSBIZUKKUPUSUNUSVBUOA
+      SBSUHULUIUJ $.
 
     $( An alternate possible definition of the ` 2nd ` function.  (Contributed
        by NM, 10-Aug-2006.)  (Revised by Mario Carneiro, 31-Aug-2015.) $)
     df2nd2 $p |- { <. <. x , y >. , z >. | z = y } = ( 2nd |` ( _V X. _V ) ) $=
-      ( vw c2nd cvv cxp cres cv cfv wceq copab wcel wa coprab wfn wfo fo2nd vex
-      cmpt fofn ax-mp dffn5 mpbi mptv eqtri reseq1i resopab cop op2ndd dfoprab3
-      eqeq2d 3eqtrri ) EFFGZHCIZDIZEJZKZDCLZUNHUPUNMURNDCLUOBIZKZABCOEUSUNEDFUQ
-      TZUSEFPZEVBKFFEQVCRFFEUAUBDFEUCUDDCUQUEUFUGURDCUNUHURVAABCDUPAIZUTUIKUQUT
-      UOVDUTUPASBSUJULUKUM $.
+      ( vw c2nd cvv cxp cres cv cfv wceq copab wcel wa coprab wfo wfn fo2nd vex
+      cmpt fofn dffn5im mp2b mptv eqtri reseq1i resopab op2ndd dfoprab3 3eqtrri
+      cop eqeq2d ) EFFGZHCIZDIZEJZKZDCLZUMHUOUMMUQNDCLUNBIZKZABCOEURUMEDFUPTZUR
+      FFEPEFQEVAKRFFEUADFEUBUCDCUPUDUEUFUQDCUMUGUQUTABCDUOAIZUSUKKUPUSUNVBUSUOA
+      SBSUHULUIUJ $.
   $}
 
   ${
