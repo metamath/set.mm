@@ -52360,12 +52360,14 @@ $)
   $( Lemma for ~ cnvf1o .  (Contributed by Mario Carneiro, 27-Apr-2014.) $)
   cnvf1olem $p |- ( ( Rel A /\ ( B e. A /\ C = U. `' { B } ) ) ->
                     ( C e. `' A /\ B = U. `' { C } ) ) $=
-    ( wrel wcel csn ccnv cuni wceq c2nd cfv c1st cop simprr sneqd cnveqd unieqd
-    wa opswap fvex 1st2nd adantrr syl6eq simprl eqeltrrd opelcnv sylibr eqeltrd
-    eqtrd eqcomi 3eqtr4a jca ) ADZBAEZCBFZGZHZIZRRZCAGZEBCFZGZHZIUSCBJKZBLKZMZU
-    TUSCVEVDMZFZGZHZVFUSCUQVJUMUNURNUSUPVIUSUOVHUSBVGUMUNBVGIURBAUAUBZOPQUIVEVD
-    SUCZUSVGAEVFUTEUSBVGAVKUMUNURUDUEVDVEABJTBLTUFUGUHUSVGVFFZGZHZBVCVOVGVDVESU
-    JVKUSVBVNUSVAVMUSCVFVLOPQUKUL $.
+    ( wrel wcel csn ccnv cuni wceq c2nd cfv cop sneqd cnveqd unieqd cvv opswapg
+    wa syl2anc ad2antrl c1st simprr 1st2nd 1stexg 2ndexg 3eqtrd simprl eqeltrrd
+    adantrr wb opelcnvg mpbird eqeltrd eqcomd 3eqtr4d jca ) ADZBAEZCBFZGZHZIZRR
+    ZCAGZEBCFZGZHZIVCCBJKZBUAKZLZVDVCCVAVIVHLZFZGZHZVJUQURVBUBVCUTVMVCUSVLVCBVK
+    UQURBVKIVBBAUCUIZMNOURVNVJIZUQVBURVIPEZVHPEZVPBAUDZBAUEZVIVHPPQSTUFZVCVJVDE
+    ZVKAEZVCBVKAVOUQURVBUGUHURWBWCUJZUQVBURVRVQWDVTVSVHVIPPAUKSTULUMVCVKVJFZGZH
+    ZBVGURVKWGIUQVBURWGVKURVRVQWGVKIVTVSVHVIPPQSUNTVOVCVFWFVCVEWEVCCVJWAMNOUOUP
+    $.
 
   ${
     $d x y A $.
