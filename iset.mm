@@ -52348,11 +52348,13 @@ $)
        (Revised by Mario Carneiro, 31-Aug-2015.) $)
     dfmpt2 $p |- ( x e. A , y e. B |-> C )
                 = U_ x e. A U_ y e. B { <. <. x , y >. , C >. } $=
-      ( vw cmpt2 cxp cv cfv csb cop csn ciun csbex nfcv nfcsb1v nfop nfsn dfmpt
-      c1st c2nd cmpt mpt2mpts nfcsb wceq csbopeq1a opeq12d sneqd iunxpf 3eqtri
-      id ) ABCDEHGCDIZAGJZUBKZBUOUCKZELZLZUDGUNUOUSMZNZOACBDAJBJMZEMZNZOOABGCDE
-      UEGUNUSAUPURBUQEFPPUAGABCDVAVDAUTAUOUSAUOQAUPURRSTBUTBUOUSBUOQBAUPURBUPQB
-      UQERUFSTGVDQUOVBUGZUTVCVEUOVBUSEVEUMABUOEUHUIUJUKUL $.
+      ( vw cfv csb cop csn ciun wcel ax-mp csbexOLD nfcv nfcsb1v nfop
+      cv cvv cmpt2 cxp c1st c2nd cmpt mpt2mpts vex 1stexg 2ndexg nfsn
+      dfmpt nfcsb wceq id csbopeq1a opeq12d sneqd iunxpf 3eqtri ) ABC
+      DEUAGCDUBZAGSZUCHZBVAUDHZEIZIZUEGUTVAVEJZKZLACBDASBSJZEJZKZLLAB
+      GCDEUFGUTVEAVBVDVATMZVBTMGUGZVATUHNBVCEVKVCTMVLVATUINFOOUKGABCD
+      VGVJAVFAVAVEAVAPAVBVDQRUJBVFBVAVEBVAPBAVBVDBVBPBVCEQULRUJGVJPVA
+      VHUMZVFVIVMVAVHVEEVMUNABVAEUOUPUQURUS $.
   $}
 
   ${
