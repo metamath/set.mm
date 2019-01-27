@@ -52375,12 +52375,12 @@ $)
        bijectively.  (Contributed by Mario Carneiro, 27-Apr-2014.) $)
     cnvf1o $p |- ( Rel A ->
                    ( x e. A |-> U. `' { x } ) : A -1-1-onto-> `' A ) $=
-      ( vy wrel ccnv cv csn cuni cmpt cvv eqid wcel wa snex cnvex a1i cnvf1olem
-      uniex wceq wb relcnv simpr sylancr dfrel2 eleq2 sylbi anbi1d adantr mpbid
-      impbida f1od ) BDZACBBEZAFZGZEZHZCFZGZEZHZABUQIZJJVBKUQJLULUNBLZMUPUOUNNO
-      RPVAJLULURUMLZMUTUSURNORPULVCURUQSZMZVDUNVASMZBUNURQULVGMZUNUMEZLZVEMZVFV
-      HUMDVGVKBUAULVGUBUMURUNQUCULVKVFTVGULVJVCVEULVIBSVJVCTBUDVIBUNUEUFUGUHUIU
-      JUK $.
+      ( vy wrel ccnv cv csn cuni cmpt wcel snexg cnvexg uniexg 3syl adantl wceq
+      cvv wa cnvf1olem wb relcnv simpr sylancr dfrel2 eleq2 sylbi anbi1d adantr
+      eqid mpbid impbida f1od ) BDZACBBEZAFZGZEZHZCFZGZEZHZABURIZQQVCUIUOBJZURQ
+      JZUMVDUPQJUQQJVEUOBKUPQLUQQMNOUSUNJZVBQJZUMVFUTQJVAQJVGUSUNKUTQLVAQMNOUMV
+      DUSURPZRZVFUOVBPRZBUOUSSUMVJRZUOUNEZJZVHRZVIVKUNDVJVNBUAUMVJUBUNUSUOSUCUM
+      VNVITVJUMVMVDVHUMVLBPVMVDTBUDVLBUOUEUFUGUHUJUKUL $.
   $}
 
   ${
