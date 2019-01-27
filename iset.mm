@@ -51181,8 +51181,8 @@ $)
     UCABDMUFANABDOABDPQRUCUHBGABDSRUAUB $.
 
   $( If the codomain of a one-to-one function exists, so does its domain.  This
-     theorem is equivalent to the Axiom of Replacement ~ ax-rep .  (Contributed
-     by NM, 4-Sep-2004.) $)
+     can be thought of as a form of the Axiom of Replacement.  (Contributed by
+     NM, 4-Sep-2004.) $)
   f1dmex $p |- ( ( F : A -1-1-> B /\ B e. C ) -> A e. _V ) $=
     ( wf1 wcel cvv crn wss wf f1f frn syl ssexg sylan ex ccnv wfo wf1o f1cnv
     f1ofo fornex syl5com syld imp ) ABDEZBCFZAGFZUFUGDHZGFZUHUFUGUJUFUIBIZUGUJU
