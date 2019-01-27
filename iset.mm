@@ -52254,9 +52254,9 @@ $)
        Jeff Madsen, 2-Sep-2009.)  (Proof shortened by Mario Carneiro,
        26-Sep-2015.) $)
     oprabco $p |- ( H Fn D -> G = ( H o. F ) ) $=
-      ( vz wfn ccom cfv cmpt2 cv wcel wceq adantl a1i cmpt dffn5 biimpi fmpt2co
-      wa fveq2 syl6reqr ) IFNZIGOABCDEIPZQHUJABMCDFEMRZIPZUKGIARCSBRDSUGEFSUJJU
-      AGABCDEQTUJKUBUJIMFUMUCTMFIUDUEULEIUHUFLUI $.
+      ( vz wfn ccom cfv cmpt2 cv wcel wa adantl dffn5im fveq2 fmpt2co
+      wceq a1i syl6reqr ) IFNZIGOABCDEIPZQHUHABMCDFEMRZIPUIGIARCSBRDS
+      TEFSUHJUAGABCDEQUEUHKUFMFIUBUJEIUCUDLUG $.
   $}
 
   ${
