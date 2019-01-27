@@ -52301,39 +52301,43 @@ $)
        function.  (Contributed by NM, 14-Dec-2008.) $)
     1stconst $p |- ( B e. V ->
              ( 1st |` ( A X. { B } ) ) : ( A X. { B } ) -1-1-onto-> A ) $=
-      ( vx vy wcel csn cxp c1st wfo cv wbr wmo wceq wa vex cfv cvv jca syl2anc
-      cres ccnv wfun wf1o c0 wne snnzg fo1stres syl wal cop moeq moani brres wb
-      wfn fo1st fofn ax-mp fnbrfvb mp2an anbi1i c2nd elxp7 eleq1 biimpa adantrr
-      adantrl elsni sylanr2 adantrrl sylan2b adantl simprr fveq2d simprl op1stg
-      eqopi an12s simpl eqtrd snidg adantr opelxpi eqeltrd syl5bb mobidv mpbiri
-      impbida syl5bbr alrimiv funcnv2 sylibr dff1o3 sylanbrc ) BCFZABGZHZAIWRUA
-      ZJZWSUBUCZWRAWSUDWPWQUEUFWTBCUGAWQUHUIWPDKZEKZWSLZDMZEUJXAWPXEEWPXEXCAFZX
-      BXCBUKZNZOZDMXHXFDDXGULUMWPXDXIDXDXBXCILZXBWRFZOZWPXIXBXCIWREPUNXLXBIQZXC
-      NZXKOZWPXIXNXJXKIRUPZXBRFXNXJUORRIJXPUQRRIURUSDPRXBXCIUTVAVBWPXOXIXOXIWPX
-      KXNXBRRHFZXMAFZXBVCQZWQFZOZOZXIXBAWQVDXNYBOXFXHXNYAXFXQXNXRXFXTXNXRXFXMXC
-      AVEVFVGVHXNXQXTXHXRXTXNXQXSBNZXHXSBVIXQXNYCXHXBXCBRRVRVSVJVKSVLVMWPXIOZXN
-      XKYDXMXGIQZXCYDXBXGIWPXFXHVNZVOYDXFWPYEXCNWPXFXHVPZWPXIVTXCBACVQTWAYDXBXG
-      WRYFYDXFBWQFZXGWRFYGWPYHXIBCWBWCXCBAWQWDTWESWIWJWFWGWHWKDEWSWLWMWRAWSWNWO
-      $.
+      ( vx vy wcel csn cxp c1st wfo cv wbr wmo wa vex cfv cvv syl2anc
+      wceq jca cres ccnv wfun wf1o wex snmg fo1stresm syl moani brres
+      wal cop moeq wfn wb fo1st fofn ax-mp fnbrfvb mp2an anbi1i elxp7
+      eleq1 biimpa adantrr adantrl elsni eqopi an12s sylanr2 adantrrl
+      sylan2b adantl simprr fveq2d simprl simpl op1stg adantr opelxpi
+      c2nd eqtrd eqeltrd impbida syl5bbr syl5bb mobidv mpbiri alrimiv
+      snidg funcnv2 sylibr dff1o3 sylanbrc ) BCFZABGZHZAIWQUAZJZWRUBU
+      CZWQAWRUDWODKZWPFDUEWSDBCUFDAWPUGUHWOXAEKZWRLZDMZEUKWTWOXDEWOXD
+      XBAFZXAXBBULZSZNZDMXGXEDDXFUMUIWOXCXHDXCXAXBILZXAWQFZNZWOXHXAXB
+      IWQEOUJXKXAIPZXBSZXJNZWOXHXMXIXJIQUNZXAQFXMXIUOQQIJXOUPQQIUQURD
+      OQXAXBIUSUTVAWOXNXHXNXHWOXJXMXAQQHFZXLAFZXAWAPZWPFZNZNZXHXAAWPV
+      BXMYANXEXGXMXTXEXPXMXQXEXSXMXQXEXLXBAVCVDVEVFXMXPXSXGXQXSXMXPXR
+      BSZXGXRBVGXPXMYBXGXAXBBQQVHVIVJVKTVLVMWOXHNZXMXJYCXLXFIPZXBYCXA
+      XFIWOXEXGVNZVOYCXEWOYDXBSWOXEXGVPZWOXHVQXBBACVRRWBYCXAXFWQYEYCX
+      EBWPFZXFWQFYFWOYGXHBCWJVSXBBAWPVTRWCTWDWEWFWGWHWIDEWRWKWLWQAWRW
+      MWN $.
 
     $( The mapping of a restriction of the ` 2nd ` function to a converse
        constant function.  (Contributed by NM, 27-Mar-2008.) $)
     2ndconst $p |- ( A e. V ->
              ( 2nd |` ( { A } X. B ) ) : ( { A } X. B ) -1-1-onto-> B ) $=
-      ( vx vy wcel csn cxp c2nd wfo cv wbr wmo wceq wa vex cfv cvv adantrl jca
-      cres ccnv wfun wf1o c0 wne snnzg fo2ndres syl wal cop moeq moani brres wb
-      fo2nd fofn ax-mp fnbrfvb mp2an anbi1i c1st elxp7 eleq1 biimpa elsni eqopi
-      wfn ancom2s an12s sylanr2 adantrrr sylan2b adantl op2ndg sylan9eqr simprr
-      fveq2 adantr simprl opelxpi syl2anc eqeltrd impbida syl5bbr syl5bb mobidv
-      mpan2 snidg mpbiri alrimiv funcnv2 sylibr dff1o3 sylanbrc ) ACFZAGZBHZBIW
-      RUAZJZWSUBUCZWRBWSUDWPWQUEUFWTACUGWQBUHUIWPDKZEKZWSLZDMZEUJXAWPXEEWPXEXCB
-      FZXBAXCUKZNZOZDMXHXFDDXGULUMWPXDXIDXDXBXCILZXBWRFZOZWPXIXBXCIWREPZUNXLXBI
-      QZXCNZXKOZWPXIXOXJXKIRVHZXBRFXOXJUORRIJXQUPRRIUQURDPRXBXCIUSUTVAWPXPXIXPX
-      IWPXKXOXBRRHFZXBVBQZWQFZXNBFZOZOZXIXBWQBVCXOYCOXFXHXOYBXFXRXOYAXFXTXOYAXF
-      XNXCBVDVESSXOXRXTXHYAXTXOXRXSANZXHXSAVFXRXOYDXHXRYDXOXHXBAXCRRVGVIVJVKVLT
-      VMVNWPXIOZXOXKWPXHXOXFXHWPXNXGIQZXCXBXGIVRWPXCRFYFXCNXMAXCCRVOWHVPSYEXBXG
-      WRWPXFXHVQYEAWQFZXFXGWRFWPYGXIACWIVSWPXFXHVTAXCWQBWAWBWCTWDWEWFWGWJWKDEWS
-      WLWMWRBWSWNWO $.
+      ( vx vy wcel csn cxp c2nd wfo cv wbr wmo wa vex cfv cvv adantrl
+      wceq jca cres ccnv wfun wf1o wex snmg fo2ndresm syl moani brres
+      wal cop moeq wfn wb fo2nd fofn ax-mp fnbrfvb mp2an anbi1i elxp7
+      eleq1 biimpa elsni eqopi ancom2s an12s sylanr2 adantrrr sylan2b
+      adantl fveq2 op2ndg mpan2 sylan9eqr simprr snidg adantr opelxpi
+      c1st simprl syl2anc eqeltrd impbida syl5bb mobidv mpbiri sylibr
+      syl5bbr alrimiv funcnv2 dff1o3 sylanbrc ) ACFZAGZBHZBIWQUAZJZWR
+      UBUCZWQBWRUDWODKZWPFDUEWSDACUFDWPBUGUHWOXAEKZWRLZDMZEUKWTWOXDEW
+      OXDXBBFZXAAXBULZSZNZDMXGXEDDXFUMUIWOXCXHDXCXAXBILZXAWQFZNZWOXHX
+      AXBIWQEOZUJXKXAIPZXBSZXJNZWOXHXNXIXJIQUNZXAQFXNXIUOQQIJXPUPQQIU
+      QURDOQXAXBIUSUTVAWOXOXHXOXHWOXJXNXAQQHFZXAWAPZWPFZXMBFZNZNZXHXA
+      WPBVBXNYBNXEXGXNYAXEXQXNXTXEXSXNXTXEXMXBBVCVDRRXNXQXSXGXTXSXNXQ
+      XRASZXGXRAVEXQXNYCXGXQYCXNXGXAAXBQQVFVGVHVIVJTVKVLWOXHNZXNXJWOX
+      GXNXEXGWOXMXFIPZXBXAXFIVMWOXBQFYEXBSXLAXBCQVNVOVPRYDXAXFWQWOXEX
+      GVQYDAWPFZXEXFWQFWOYFXHACVRVSWOXEXGWBAXBWPBVTWCWDTWEWJWFWGWHWKD
+      EWRWLWIWQBWRWMWN $.
   $}
 
   ${
