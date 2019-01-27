@@ -52220,38 +52220,6 @@ $)
   $}
 
   ${
-    $d u v x y z A $.  $d u v y z B $.  $d u v z C $.  $d u v x y z X $.
-    ovmptss.1 $e |- F = ( x e. A , y e. B |-> C ) $.
-    $( If all the values of the mapping are subsets of a class ` X ` , then so
-       is any evaluation of the mapping.  (Contributed by Mario Carneiro,
-       24-Dec-2016.) $)
-    ovmptss $p |- ( A. x e. A A. y e. B C C_ X -> ( E F G ) C_ X ) $=
-      ( vz vu vv cv cfv csb wss wral sseq1d nfcv c1st c2nd csn cxp cop co cmpt2
-      ciun cmpt mpt2mptsx eqtri fvmptss wceq vex op1std csbeq1d op2ndd csbeq2dv
-      eqtrd raliunxp nfcsb1v nfxp sneq csbeq1a xpeq12d cbviun raleqi nfss nfral
-      weq nfv cbvral raleqbidv syl5bb 3bitr4ri df-ov sseq1i 3imtr4i ) AKNZUAOZB
-      VSUBOZEPZPZIQZKACANZUCZDUDZUHZRZFHUEZGOZIQEIQZBDRZACRZFHGUFZIQKWHWCIWJGGA
-      BCDEUGKWHWCUIJABKCDEUJUKULWDKLCLNZUCZAWPDPZUDZUHZRAWPBMNZEPZPZIQZMWRRZLCR
-      WIWNWDXDKLMCWRVSWPXAUEUMZWCXCIXFWCAWPWBPXCXFAVTWPWBWPXAVSLUNZMUNZUOUPXFAW
-      PWBXBXFBWAXAEWPXAVSXGXHUQUPURUSSUTWDKWHWTALCWGWSLWGTAWQWRAWQTAWPDVAZVBALV
-      JZWFWQDWRWEWPVCAWPDVDZVEVFVGWMXEALCWMLVKXDAMWRXIAXCIAWPXBVAAITVHVIWMXBIQZ
-      MDRXJXEWLXLBMDWLMVKBXBIBXAEVABITVHBMVJEXBIBXAEVDSVLXJXLXDMDWRXKXJXBXCIAWP
-      XBVDSVMVNVLVOWOWKIFHGVPVQVR $.
-  $}
-
-  ${
-    $d t u v w x y z $.  $d t u v y B $.  $d t C $.  $d t D $.  $d t u v ph $.
-    $d t u v x y A $.
-    relmpt2opab.1 $e |- F = ( x e. A , y e. B |-> { <. z , w >. | ph } ) $.
-    $( Any function to sets of ordered pairs produces a relation on function
-       value unconditionally.  (Contributed by Mario Carneiro, 9-Feb-2015.) $)
-    relmpt2opab $p |- Rel ( C F D ) $=
-      ( co wrel cvv cxp wss copab wral relopab df-rel mpbi rgen2w ovmptss ax-mp
-      mpbir ) HIJLZMUFNNOZPZADEQZUGPZCGRBFRUHUJBCFGUIMUJADESUITUAUBBCFGUIHJIUGK
-      UCUDUFTUE $.
-  $}
-
-  ${
     $d t u v w x y B $.  $d t u w x y z C $.  $d x y ph $.  $d t u v w x y S $.
     $d u v w x y A $.  $d t u v w z R $.  $d t z T $.
     fmpt2co.1 $e |- ( ( ph /\ ( x e. A /\ y e. B ) ) -> R e. C ) $.
