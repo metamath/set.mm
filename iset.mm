@@ -52447,9 +52447,10 @@ $)
     $( Lemma for ~ algrf and related theorems.  (Contributed by Mario Carneiro,
        28-May-2014.)  (Revised by Mario Carneiro, 30-Apr-2015.) $)
     algrflem $p |- ( B ( F o. 1st ) C ) = ( F ` B ) $=
-      ( c1st ccom co cop cfv df-ov cvv wf wcel wceq wfo fo1st fof ax-mp opex
-      fvco3 mp2an op1st fveq2i 3eqtri ) ABCFGZHABIZUFJZUGFJZCJZACJABUFKLLFMZUGL
-      NUHUJOLLFPUKQLLFRSABTLLUGCFUAUBUIACABDEUCUDUE $.
+      ( c1st ccom co cop cfv df-ov cvv wf wcel wceq fo1st ax-mp mp2an
+      wfo fof opexg fvco3 op1st fveq2i 3eqtri ) ABCFGZHABIZUFJZUGFJZC
+      JZACJABUFKLLFMZUGLNZUHUJOLLFSUKPLLFTQALNBLNULDEABLLUARLLUGCFUBR
+      UIACABDEUCUDUE $.
   $}
 
   ${
