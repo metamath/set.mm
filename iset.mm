@@ -51505,16 +51505,16 @@ $)
 
   $( Define a function that extracts the first member, or abscissa, of an
      ordered pair.  Theorem ~ op1st proves that it does this.  For example,
-     ` ( 1st `` <. 3 , 4 >. ) = 3 ` .  Equivalent to Definition 5.13 (i) of
+     ( ` 1st `` <. ` 3 , 4 ` >. ` ) = 3 .  Equivalent to Definition 5.13 (i) of
      [Monk1] p. 52 (compare ~ op1sta and ~ op1stb ).  The notation is the same
      as Monk's.  (Contributed by NM, 9-Oct-2004.) $)
   df-1st $a |- 1st = ( x e. _V |-> U. dom { x } ) $.
 
   $( Define a function that extracts the second member, or ordinate, of an
      ordered pair.  Theorem ~ op2nd proves that it does this.  For example,
-     ` ( 2nd `` <. 3 , 4 >. ) = 4 ` .  Equivalent to Definition 5.13 (ii) of
-     [Monk1] p. 52 (compare ~ op2nda and ~ op2ndb ).  The notation is the same
-     as Monk's.  (Contributed by NM, 9-Oct-2004.) $)
+     ` ( 2nd `` <. ` 3 , 4 ` >. ` ) = 4 .  Equivalent to Definition 5.13 (ii)
+     of [Monk1] p. 52 (compare ~ op2nda and ~ op2ndb ).  The notation is the
+     same as Monk's.  (Contributed by NM, 9-Oct-2004.) $)
   df-2nd $a |- 2nd = ( x e. _V |-> U. ran { x } ) $.
 
   ${
@@ -51597,7 +51597,7 @@ $)
     $( Extract the first member of an ordered triple.  (Due to infrequent
        usage, it isn't worthwhile at this point to define special extractors
        for triples, so we reuse the ordered pair extractors for ~ ot1stg ,
-       ~ ot2ndg , ~ ot3rdg .)  (Contributed by NM, 3-Apr-2015.)  (Revised by
+       ~ ot2ndg , ~ ot3rdgg .)  (Contributed by NM, 3-Apr-2015.)  (Revised by
        Mario Carneiro, 2-May-2015.) $)
     ot1stg $p |- ( ( A e. V /\ B e. W /\ C e. X )
          -> ( 1st ` ( 1st ` <. A , B , C >. ) ) = A ) $=
@@ -52444,7 +52444,7 @@ $)
   ${
     algrflem.1 $e |- B e. _V $.
     algrflem.2 $e |- C e. _V $.
-    $( Lemma for ~ algrf and related theorems.  (Contributed by Mario Carneiro,
+    $( Lemma for algrf and related theorems.  (Contributed by Mario Carneiro,
        28-May-2014.)  (Revised by Mario Carneiro, 30-Apr-2015.) $)
     algrflem $p |- ( B ( F o. 1st ) C ) = ( F ` B ) $=
       ( c1st ccom co cop cfv df-ov cvv wf wcel wceq fo1st ax-mp mp2an
