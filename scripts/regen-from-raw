@@ -14,4 +14,14 @@ generate_simple_html() {
   echo quit
 }
 
+generate_iset_html() {
+  echo "read iset.mm"
+  echo 'set scroll continuous'
+  for file in mmil ; do
+    echo "markup \"${file}.raw.html\" \"${file}.demo.html\" ${markup_options}"
+  done
+  echo quit
+}
+
 generate_simple_html | metamath
+generate_iset_html | metamath
