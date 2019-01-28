@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Jan-2019
+$( iset.mm - Version of 29-Jan-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36558,25 +36558,38 @@ $)
   $}
 
   ${
+    $d x y z $.  $d ph y z $.
+    $( Lemma for decidability and ordinals.  The set ` { x e. { (/) } | ph } `
+       is a way of connecting statements about ordinals (such as trichotomy in
+       ~ ordtriexmid or weak linearity in ~ ordsoexmid ) with a proposition
+       ` ph ` .  Our lemma states that it is an ordinal number.  (Contributed
+       by Jim Kingdon, 28-Jan-2019.) $)
+    ordtriexmidlem $p |- { x e. { (/) } | ph } e. On $=
+      ( vy vz c0 csn crab con0 wcel word wtr wss cv wa wal ax-ia1 mpbir
+      wi wceq ax-mp wn elrabi elsn sylib noel eleq2 mtbiri syl pm2.21dd
+      adantl gen2 dftr2 ssrab2 csuc ord0 ordsucim wb suc0 ordeq trssord
+      mpbi mp3an p0ex rabex elon ) ABEFZGZHIVGJZVGKZVGVFLVFJZVHVICMZDMZ
+      IZVLVGIZNZVKVGIZRZDOCOVQCDVOVMVPVMVNPVNVMUAZVMVNVLESZVRVNVLVFIVSA
+      BVLVFUBDEUCUDVSVMVKEIVKUEVLEVKUFUGUHUJUIUKCDVGULQABVFUMEUNZJZVJEJ
+      WAUOEUPTVTVFSWAVJUQURVTVFUSTVAVGVFUTVBVGABVFVCVDVEQ $.
+  $}
+
+  ${
     $d x y z w s $.  $d z w s ph $.  $d x ph $.
     ordtriexmid.1 $e |- A. x e. On A. y e. On ( x e. y \/ x = y \/ y e. x ) $.
     $( Ordinal trichotomy implies the law of the excluded middle (that is,
        decidability of an arbitrary proposition).  (Contributed by Mario
        Carneiro and Jim Kingdon, 14-Nov-2018.) $)
     ordtriexmid $p |- ( ph \/ -. ph ) $=
-      ( vz vs vw wo c0 wceq wcel noel w3o con0 word cv wa wi eleq2 ax-mp wn csn
-      crab wtr wss wal ax-ia1 elrabi elsn sylib mtbiri syl adantl pm2.21dd gen2
-      dftr2 mpbir ssrab2 csuc ord0 ordsucim suc0 ordeq mpbi trssord mp3an rabex
-      wb p0ex eleq1 eqeq1 3orbi123d 0elon 0ex anbi2d eqeq2 imbi12d rspec2 vtocl
-      elon mpan2 vtoclga 3orass mtp-or biidd elrab3 sylnib biimpi orim12i orcom
-      snid ) AAUAZHWLAHZAEIUBZUCZIJZIWOKZHZWMWOIKZWRWOLWSWPWQMZWSWRHWONKZWTXAWO
-      OZWOUDZWOWNUEWNOZXBXCFPZGPZKZXFWOKZQZXEWOKZRZGUFFUFXKFGXIXGXJXGXHUGXHXGUA
-      ZXGXHXFIJZXLXHXFWNKXMAEXFWNUHGIUIUJXMXGXEIKXELXFIXESUKULUMUNUOFGWOUPUQAEW
-      NURIUSZOZXDIOXOUTIVATXNWNJXOXDVHVBXNWNVCTVDWOWNVEVFWOAEWNVIVGVTUQBPZIKZXP
-      IJZIXPKZMZWTBWONXPWOJXQWSXRWPXSWQXPWOIVJXPWOIVKXPWOISVLXPNKZINKZXTVMYACPZ
-      NKZQZXPYCKZXPYCJZYCXPKZMZRYAYBQZXTRCIVNYCIJZYEYJYIXTYKYDYBYAYCINVJVOYKYFX
-      QYGXRYHXSYCIXPSYCIXPVPYCIXPVJVLVQYIBCNNDVRVSWAWBTWSWPWQWCVDWDWPWLWQAWPWQA
-      WPWQIIKILWOIISUKIWNKWQAVHIVNWKAAEIWNEPIJAWEWFTZWGWQAYLWHWITAWLWJUQ $.
+      ( vz wo c0 wceq wcel noel w3o con0 cv eleq1 eleq2 3orbi123d wa 0ex ax-mp
+      wi wn csn crab ordtriexmidlem eqeq1 0elon anbi2d eqeq2 rspec2 vtocl mpan2
+      imbi12d vtoclga 3orass mpbi mtp-or mtbiri snid biidd elrab3 sylnib biimpi
+      wb orim12i orcom mpbir ) AAUAZFVGAFZAEGUBZUCZGHZGVJIZFZVHVJGIZVMVJJVNVKVL
+      KZVNVMFVJLIVOAEUDBMZGIZVPGHZGVPIZKZVOBVJLVPVJHVQVNVRVKVSVLVPVJGNVPVJGUEVP
+      VJGOPVPLIZGLIZVTUFWACMZLIZQZVPWCIZVPWCHZWCVPIZKZTWAWBQZVTTCGRWCGHZWEWJWIV
+      TWKWDWBWAWCGLNUGWKWFVQWGVRWHVSWCGVPOWCGVPUHWCGVPNPULWIBCLLDUIUJUKUMSVNVKV
+      LUNUOUPVKVGVLAVKVLAVKVLGGIGJVJGGOUQGVIIVLAVCGRURAAEGVIEMGHAUSUTSZVAVLAWLV
+      BVDSAVGVEVF $.
   $}
 
 $(
@@ -36785,6 +36798,32 @@ $)
       ( vy weu wex cv wceq wi wal wa wn nfv eu3 dtruex sp con3d eximd
       nfa1 mpi exlimiv adantl sylbi ) ABDABEZABFCFGZHZBIZCEZJAKZBEZAB
       CACLMUGUIUCUFUICUFUDKZBEUIBCNUFUJUHBUEBRUFAUDUEBOPQSTUAUB $.
+  $}
+
+  ${
+    $d x y z w ph $.
+    ordsoexmid.1 $e |- _E Or On $.
+    $( Weak linearity of ordinals implies the law of the excluded middle (that
+       is, decidability of an arbitrary proposition).  (Contributed by Mario
+       Carneiro and Jim Kingdon, 29-Jan-2019.) $)
+    ordsoexmid $p |- ( ph \/ -. ph ) $=
+      ( vw vx vy vz wo c0 wcel con0 wi cv w3a wceq eleq1 imbi12d eleq2 cep wral
+      wbr wn csn crab csuc ordtriexmidlem elexi sucid onsuci suc0 0elon 3anbi1d
+      eqeltrri orbi1d 3anbi2d orbi2d p0ex 3anbi3d orbi12d imbi2d wpo wor df-iso
+      mpbi simpri epel orbi12i imbi12i 2ralbii ralbii rspec3 vtocl mp3an rabeq0
+      wa ax-mp elsnc wex wb 0ex snm r19.3rmv 3bitr4i biimpi elirr elrabi elsuci
+      mto ord mpi biidd rabsnt eqcoms syl orim12i orcom ) AUAZAGZAWPGACHUBZUCZW
+      RIZWRWSUDZIZGZWQWSXAIZXCWSWSJACUEZUFZUGWSJIZXAJIZWRJIZXDXCKZXEWSXEUHZHUDW
+      RJUIHUJUHULDLZJIZXHXIMZXLXAIZXLWRIZXBGZKZKZXGXHXIMZXJKDWSXFXLWSNZXNXTXRXJ
+      YAXMXGXHXIXLWSJOUKYAXOXDXQXCXLWSXAOYAXPWTXBXLWSWROUMPPXMELZJIZXIMZXLYBIZX
+      PWRYBIZGZKZKZXSEXAXAJXKUFYBXANZYDXNYHXRYJYCXHXMXIYBXAJOUNYJYEXOYGXQYBXAXL
+      QYJYFXBXPYBXAWRQUOPPXMYCFLZJIZMZYEXLYKIZYKYBIZGZKZKYIFWRUPYKWRNZYMYDYQYHY
+      RYLXIXMYCYKWRJOUQYRYPYGYEYRYNXPYOYFYKWRXLQYKWRYBOURUSPYQDEFJJJXLYBRTZXLYK
+      RTZYKYBRTZGZKZFJSEJSZDJSZYQFJSEJSZDJSJRUTZUUEJRVAUUGUUEVNBDEFJRVBVCVDUUDU
+      UFDJUUCYQEFJJYSYEUUBYPDEVEYTYNUUAYODFVEFEVEVFVGVHVIVCVJVKVKVKVLVOWTWPXBAW
+      TWPWSHNWPCWRSZWTWPACWRVMWSHXFVPCLZWRICVQWPUUHVRCHVSVTWPCCWRWAVOWBWCXBWRWS
+      NZAXBWRWSIZUAUUJUUKWRWRIWRWDACWRWRWEWGXBUUKUUJWRWSWFWHWIAWSWRAACWRHVSUUIH
+      NAWJWKWLWMWNVOWPAWOVC $.
   $}
 
 $(
