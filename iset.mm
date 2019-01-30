@@ -52609,14 +52609,15 @@ $)
     mpt2xopoveq $p |- ( ( ( V e. X /\ W e. Y ) /\ K e. V )
                  -> ( <. V , W >. F K )
                       = { n e. V | [. <. V , W >. / x ]. [. K / y ]. ph } ) $=
-      ( vz wcel wa cvv cv c1st wceq adantl nfcv cop cfv crab cmpt2 fveq2 op1stg
-      wsbc a1i adantr sylan9eqr adantrr wb sbceq1a bitrd rabeqbidv simpr rabexg
-      opex ad2antrr weq wnf equid nfvd ax-mp nfsbc1v nfrab nfsbc ovmpt2dxf ) GI
-      MZHJMZNZFGMZNZBCGHUAZFOBPZQUBZADVPUCZACFUGZBVNUGZDGUCZEGOEBCOVPVQUDRVMKUH
-      VMVOVNRZCPFRZNZNZAVSDVPGVMWAVPGRWBWAVMVPVNQUBZGVOVNQUEVKWEGRVLGHIJUFUIUJZ
-      UKWDAVRVSWCAVRULZVMWBWGWAACFUMSSWCVRVSULZVMWAWHWBVRBVNUMUISUNUOWFVNOMVMGH
-      URUHVKVLUPVIVTOMVJVLVSDGIUQUSLLUTZVMBVALVBZWIVMBVCVDWIVMCVAWJWIVMCVCVDCVN
-      TZBFTVSBDGVRBVNVEBGTVFVSCDGVRCBVNWKACFVEVGCGTVFVH $.
+      ( wcel wa cvv cv c1st wceq adantr adantl nfcv cop cfv crab wsbc
+      vz cmpt2 fveq2 op1stg sylan9eqr adantrr sbceq1a bitrd rabeqbidv
+      a1i wb opexg simpr rabexg ad2antrr wnf equid nfvd ax-mp nfsbc1v
+      nfrabxy nfsbc ovmpt2dxf ) GILZHJLZMZFGLZMZBCGHUAZFNBOZPUBZADVOU
+      CZACFUDZBVMUDZDGUCZEGNEBCNVOVPUFQVLKUNVLVNVMQZCOFQZMZMZAVRDVOGV
+      LVTVOGQWAVTVLVOVMPUBZGVNVMPUGVJWDGQVKGHIJUHRUIZUJWCAVQVRWBAVQUO
+      ZVLWAWFVTACFUKSSWBVQVRUOZVLVTWGWAVQBVMUKRSULUMWEVJVMNLVKGHIJUPR
+      VJVKUQVHVSNLVIVKVRDGIURUSUEOZWHQZVLBUTUEVAZWIVLBVBVCWIVLCUTWJWI
+      VLCVBVCCVMTZBFTVRBDGVQBVMVDBGTVEVRCDGVQCBVMWKACFVDVFCGTVEVG $.
 
     $d N x y $.
     $( Element of the value of an operation given by a maps-to rule, where the
