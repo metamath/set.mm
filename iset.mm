@@ -52596,62 +52596,6 @@ $)
       BOPZNZGINHJNQZEGNVDVBELZARASZTVIOPZUAUBZNZVFVDDUOZVKVHABRVJCDKU
       CVHVMNZFVHDPZVCDUEZFVONVNDUFVPABRVJCDKUDDUGUHFVHDUIUJVBEDUKULUM
       VLVBRNVFARVJVBEVEVIVBOUNUPUQURVGVEGEGHIJUSUTVA $.
-
-    $d K n $.  $d F n $.  $d V n $.  $d W n $.  $d X n $.  $d Y n $.
-    $( If the second argument of an operation given by a maps-to rule, where
-       the first argument is a pair and the base set of the second argument is
-       the first component of the first argument is not element of the first
-       component of the first argument, then the value of the operation is the
-       empty set.  (Contributed by Alexander van der Vekens, 10-Oct-2017.) $)
-    mpt2xopynvov0g $p |- ( ( ( V e. X /\ W e. Y ) /\ K e/ V )
-                          -> ( <. V , W >. F K ) = (/) ) $=
-      ( vn wcel wa wnel cop co c0 wceq wn cv neq0 mpt2xopn0yelv syl6ibr exlimdv
-      wex nnel syl5bi con4d imp ) FHLGILMZEFNZFGOEDPZQRZUJUMUKUMSKTZULLZKUEUJUK
-      SZKULUAUJUOUPKUJUOEFLUPABCDEUNFGHIJUBEFUFUCUDUGUHUI $.
-
-    $d F x $.
-    $( If the first argument of an operation given by a maps-to rule, where the
-       first argument is a pair and the base set of the second argument is the
-       first component of the first argument, is not an ordered pair, then the
-       value of the operation is the empty set.  (Contributed by Alexander van
-       der Vekens, 10-Oct-2017.) $)
-    mpt2xopxnop0 $p |- ( -. V e. ( _V X. _V ) -> ( V F K ) = (/) ) $=
-      ( vn c0 cvv cxp wcel cv wex csn c1st cfv cdm wa sylbi co wceq wn neq0 cop
-      ciun dmmpt2ssx elfvdm df-ov eleq2s sseldi fveq2 opeliunxp2 cuni eluni wne
-      wi ne0i ad2antlr dmsnn0 sylibr ex exlimiv 1stval impcom syl con1i ) FEDUA
-      ZIUBZFJJKLZVIUCAMZVHLZANVJAVHUDVLVJAVLFEUEZAJVKOVKPQZKUFZLZVJVLDRZVOVMABJ
-      VNCDGUGVMVQLVKVMDQVHVKVMDUHFEDUIUJUKVPFJLZEFPQZLZSVJAJVNFEVSVKFPULUMVTVRV
-      JVRVJUQZEFORZUNZVSEWCLEHMZLZWDWBLZSZHNWAHEWBUOWGWAHWGVRVJWGVRSWBIUPZVJWFW
-      HWEVRWBWDURUSFUTVAVBVCTFVDUJVETVFVCTVG $.
-
-    $( If the first argument of an operation given by a maps-to rule, where the
-       first argument is a pair and the base set of the second argument is the
-       first component of the first argument, is the empty set, then the value
-       of the operation is the empty set.  (Contributed by Alexander van der
-       Vekens, 10-Oct-2017.) $)
-    mpt2xopx0ov0 $p |- ( (/) F K ) = (/) $=
-      ( c0 cvv cxp wcel wn co wceq 0nelxp mpt2xopxnop0 ax-mp ) GHHIJKGEDLGMHHNA
-      BCDEGFOP $.
-
-    $( If the components of the first argument of an operation given by a
-       maps-to rule, where the first argument is a pair and the base set of the
-       second argument is the first component of the first argument, are not
-       sets, then the value of the operation is the empty set.  (Contributed by
-       Alexander van der Vekens, 10-Oct-2017.) $)
-    mpt2xopxprcov0 $p |- ( -. ( V e. _V /\ W e. _V )
-                           -> ( <. V , W >. F K ) = (/) ) $=
-      ( cvv wcel wa cop cxp co c0 wceq opelxp mpt2xopxnop0 sylnbir ) FIJGIJKFGL
-      ZIIMJTEDNOPFGIIQABCDETHRS $.
-
-    $( If the second argument of an operation given by a maps-to rule, where
-       the first argument is a pair and the base set of the second argument is
-       the first component of the first argument is not element of the first
-       component of the first argument, then the value of the operation is the
-       empty set.  (Contributed by Alexander van der Vekens, 10-Oct-2017.) $)
-    mpt2xopynvov0 $p |- ( K e/ V -> ( <. V , W >. F K ) = (/) ) $=
-      ( cvv wcel wa wnel cop co c0 wceq wi mpt2xopynvov0g ex wn mpt2xopxprcov0
-      a1d pm2.61i ) FIJGIJKZEFLZFGMEDNOPZQUDUEUFABCDEFGIIHRSUDTUFUEABCDEFGHUAUB
-      UC $.
   $}
 
   ${
@@ -52688,22 +52632,6 @@ $)
       ADBUBUFUCREFGHIJKLUDUEURVCVBVDVFNZNVGURVBVAVHURVBNZVAGACFQZBUSQZDHRZMZVHV
       IUTVLGABCDEFHIJKLUGUHVMVDVKDGQZNVHVKDGHDHUIUJVNVFVDVNVJDGQZBUSQVFVJDBGUSS
       VOVEBUSADCGFSUKTULTUMUNVBVDVFUOUPUQ $.
-
-    $d F x $.
-    mpt2xopoveqd.1 $e |- ( ps -> ( V e. X /\ W e. Y ) ) $.
-    mpt2xopoveqd.2 $e |- ( ( ps /\ -. K e. V )
-                -> { n e. V | [. <. V , W >. / x ]. [. K / y ]. ph } = (/) ) $.
-    $( Value of an operation given by a maps-to rule, where the first argument
-       is a pair and the base set of the second argument is the first component
-       of the first argument, deduction version.  (Contributed by Alexander van
-       der Vekens, 11-Oct-2017.) $)
-    mpt2xopoveqd $p |- ( ps -> ( <. V , W >. F K )
-                       = { n e. V | [. <. V , W >. / x ]. [. K / y ]. ph } ) $=
-      ( wcel wsbc crab wceq wa c0 cop co wi mpt2xopoveq ex com12 wn wnel df-nel
-      syl cv c1st cfv mpt2xopynvov0 sylbir adantr eqcomd ancoms eqtrd pm2.61i )
-      GHOZBHIUAZGFUBZADGPCVBPEHQZRZUCBVAVEBHJOIKOSZVAVEUCMVFVAVEACDEFGHIJKLUDUE
-      UJUFVAUGZBVEVGBSVCTVDVGVCTRZBVGGHUHVHGHUICDAECUKULUMQFGHILUNUOUPBVGTVDRBV
-      GSVDTNUQURUSUEUT $.
   $}
 
   ${
