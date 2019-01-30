@@ -128,6 +128,7 @@ then extended without justification to statements about infinite collections.
   <LI> <A HREF="#axioms">The axioms</A></LI>
   <LI> <A HREF="#theorems">Some theorems</A></LI>
   <LI> <A HREF="#intuitionize">How to intuitionize classical proofs</A></LI>
+  <LI> <A HREF="#setmm">Metamath Proof Explorer cross reference</A></LI>
   <LI> <A HREF="#bib">Bibliography</A></LI>
 </MENU></TD>
 
@@ -869,6 +870,54 @@ logic must be rearranged, for example by changing ~ rexlimivw to ~ rexlimdva .
 
 <LI>If you get stuck, ask! (for example in a github issue or on the mailing list). We have a number of contributors who have experience in constructive mathematics in general, or iset.mm in particular, and one of the best things about doing/learning mathematics in metamath is the collaborative nature of how we develop it.
 </UL>
+
+<HR NOSHADE SIZE=1><A NAME="setmm"></A><B><FONT
+COLOR="#006633">Metamath Proof Explorer cross reference</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P>This is a list of theorems from the Metamath Proof Explorer (which
+assumes the law of the excluded middle throughout) which we do not
+have in the Intuitionistic Logic Explorer (generally because they
+are not provable without the law of the excluded middle), together
+with the closest replacements.</P>
+
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR>
+<TH>set.mm</TH>
+<TH>iset.mm</TH>
+<TH>notes</TH>
+</TR>
+
+<TR>
+<TD>19.35</TD>
+<TD>~ 19.35-1 </TD>
+</TR>
+
+<TR>
+<TD>opex</TD>
+<TD>~ opexg , ~ sopex </TD>
+</TR>
+
+<TR>
+<TD>relimasn</TD>
+<TD>~ imasng </TD>
+</TR>
+
+<TR>
+<TD ROWSPAN="2">fvex</TD>
+<TD>~ funfvex </TD>
+<TD>when evaluating a function within its domain</TD>
+</TR>
+
+<TR>
+<TD>~ 1stexg , ~ 2ndexg </TD>
+<TD>for the functions ` 1st ` and ` 2nd `</TD>
+</TR>
+
+<TR>
+<TD>elfvdm</TD>
+<TD>~ relelfvdm </TD>
+</TR>
+</TABLE>
 
 <HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
 COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
