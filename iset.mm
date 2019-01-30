@@ -52590,10 +52590,12 @@ $)
        (Contributed by Alexander van der Vekens, 10-Oct-2017.) $)
     mpt2xopn0yelv $p |- ( ( V e. X /\ W e. Y )
                           -> ( N e. ( <. V , W >. F K ) -> K e. V ) ) $=
-      ( cop co wcel c1st cfv wa cvv cv csn cxp ciun cdm dmmpt2ssx elfvdm eleq2s
-      df-ov sseldi fveq2 opeliunxp2 simprbi syl op1stg eleq2d syl5ib ) FGHLZEDM
-      ZNZEUPOPZNZGINHJNQZEGNURUPELZARASZTVCOPZUAUBZNZUTURDUCZVEVBABRVDCDKUDVBVG
-      NFVBDPUQFVBDUEUPEDUGUFUHVFUPRNUTARVDUPEUSVCUPOUIUJUKULVAUSGEGHIJUMUNUO $.
+      ( cop co wcel c1st cfv wa cvv cv csn cxp ciun dmmpt2ssx mpt2fun
+      wrel wfun funrel ax-mp relelfvdm mpan df-ov eleq2s sseldi fveq2
+      cdm opeliunxp2 simprbi syl op1stg eleq2d syl5ib ) FGHLZEDMZNZEV
+      BOPZNZGINHJNQZEGNVDVBELZARASZTVIOPZUAUBZNZVFVDDUOZVKVHABRVJCDKU
+      CVHVMNZFVHDPZVCDUEZFVONVNDUFVPABRVJCDKUDDUGUHFVHDUIUJVBEDUKULUM
+      VLVBRNVFARVJVBEVEVIVBOUNUPUQURVGVEGEGHIJUSUTVA $.
 
     $d K n $.  $d F n $.  $d V n $.  $d W n $.  $d X n $.  $d Y n $.
     $( If the second argument of an operation given by a maps-to rule, where
