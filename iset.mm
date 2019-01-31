@@ -52669,6 +52669,395 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Function transposition
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c tpos $. $( Function transposition $)
+
+  $( The transposition of a function. $)
+  ctpos $a class tpos F $.
+
+  ${
+    $d F x $.
+    $( Define the transposition of a function, which is a function
+       ` G = tpos F ` satisfying ` G ( x , y ) = F ( y , x ) ` .  (Contributed
+       by Mario Carneiro, 10-Sep-2015.) $)
+    df-tpos $a |- tpos F = ( F o.
+        ( x e. ( `' dom F u. { (/) } ) |-> U. `' { x } ) ) $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d w x y z F $.  $d x G $.
+    $( Subset theorem for transposition.  (Contributed by Mario Carneiro,
+       10-Sep-2015.) $)
+    tposss $p |- ( F C_ G -> tpos F C_ tpos G ) $=
+      ( vx wss cdm ccnv c0 csn cun cv cuni cmpt ccom ctpos coss1 cres wceq dmss
+      cnvss df-tpos unss1 resmpt 4syl resss syl6eqssr coss2 syl sstrd 3sstr4g )
+      ABDZACAEZFZGHZIZCJHFKZLZMZBCBEZFZUMIZUOLZMZANBNUJUQBUPMZVBABUPOUJUPVADVCV
+      BDUJUPVAUNPZVAUJUKURDULUSDUNUTDVDUPQABRUKURSULUSUMUACUTUNUOUBUCVAUNUDUEUP
+      VABUFUGUHCATCBTUI $.
+
+    $( Equality theorem for transposition.  (Contributed by Mario Carneiro,
+       10-Sep-2015.) $)
+    tposeq $p |- ( F = G -> tpos F = tpos G ) $=
+      ( wceq ctpos wss eqimss tposss syl eqimss2 eqssd ) ABCZADZBDZKABELMEABFAB
+      GHKBAEMLEBAIBAGHJ $.
+
+    ${
+      tposeqd.1 $e |- ( ph -> F = G ) $.
+      $( Equality theorem for transposition.  (Contributed by Mario Carneiro,
+         7-Jan-2017.) $)
+      tposeqd $p |- ( ph -> tpos F = tpos G ) $=
+        ( wceq ctpos tposeq syl ) ABCEBFCFEDBCGH $.
+    $}
+
+    $( The transposition is a subset of a cross product.  (Contributed by Mario
+       Carneiro, 12-Jan-2017.) $)
+    tposssxp $p |- tpos F C_ ( ( `' dom F u. { (/) } ) X. ran F ) $=
+      ( vx ctpos cdm ccnv csn cun cuni cmpt crn cxp ccom df-tpos cossxp eqsstri
+      c0 cv wss eqid dmmptss xpss1 ax-mp sstri ) ACZBADEPFGZBQFEHZIZDZAJZKZUEUI
+      KZUDAUGLUJBAMAUGNOUHUERUJUKRBUEUFUGUGSTUHUEUIUAUBUC $.
+
+    $( The transposition is a relation.  (Contributed by Mario Carneiro,
+       10-Sep-2015.) $)
+    reltpos $p |- Rel tpos F $=
+      ( ctpos cdm ccnv c0 csn cun crn cxp wss wrel tposssxp relxp relss mp2 ) A
+      BZACDEFGZAHZIZJSKPKALQRMPSNO $.
+
+    $( Value of the transposition at a pair ` <. A , B >. ` .  (Contributed by
+       Mario Carneiro, 10-Sep-2015.) $)
+    brtpos2 $p |- ( B e. V -> ( A tpos F B <->
+      ( A e. ( `' dom F u. { (/) } ) /\ U. `' { A } F B ) ) ) $=
+      ( vy vx wcel cvv wbr cdm ccnv csn cuni wa wi a1i wb cv wceq bitri reltpos
+      ctpos c0 cun brrelexi elex adantr cmpt wex df-tpos breqi brcog syl5bb cfv
+      ccom wfun funmpt funbrfv2b ax-mp snex cnvex uniex eqid dmmpti eleq2i sneq
+      eqcom anbi12i cnveqd unieqd fvmpt eqeq2d pm5.32i ancom anbi1i anass exbii
+      breq1 anbi2d ceqsexv syl6bb expcom pm5.21ndd ) BDGZAHGZABCUBZIZACJKUCLUDZ
+      GZALZKZMZBCIZNZWGWEOWDABWFCUAUEPWNWEOWDWIWEWMAWHUFUGPWEWDWGWNQWEWDNZWGAER
+      ZFWHFRZLZKZMZUHZIZWPBCIZNZEUIZWNWGABCXAUOZIWOXEABWFXFFCUJUKEABCXAHDULUMXE
+      WPWLSZWIXCNZNZEUIWNXDXIEXDXGWINZXCNXIXBXJXCXBWIXGNZXJXBAXAJZGZAXAUNZWPSZN
+      ZXKXAUPXBXPQFWHWTUQAWPXAURUSXPWIWPXNSZNXKXMWIXOXQXLWHAFWHWTXAWSWRWQUTVAVB
+      XAVCZVDVEXNWPVGVHWIXQXGWIXNWLWPFAWTWLWHXAWQASZWSWKXSWRWJWQAVFVIVJXRWKWJAU
+      TVAVBZVKVLVMTTWIXGVNTVOXGWIXCVPTVQXHWNEWLXTXGXCWMWIWPWLBCVRVSVTTWAWBWC $.
+
+    $( The behavior of ` tpos ` when the left argument is the empty set (which
+       is not an ordered pair but is the "default" value of an ordered pair
+       when the arguments are proper classes).  This allows us to eliminate
+       sethood hypotheses on ` A , B ` in ~ brtpos .  (Contributed by Mario
+       Carneiro, 10-Sep-2015.) $)
+    brtpos0 $p |- ( A e. V -> ( (/) tpos F A <-> (/) F A ) ) $=
+      ( wcel c0 ctpos wbr cdm ccnv csn cun cuni brtpos2 ssun2 0ex snid biantrur
+      wa sselii cnvsn0 unieqi uni0 eqtri breq1i bitr3i syl6bb ) ACDEABFGEBHIZEJ
+      ZKZDZUHIZLZABGZRZEABGZEABCMUNUMUOUJUMUHUIEUHUGNEOPSQULEABULELEUKETUAUBUCU
+      DUEUF $.
+
+    $( Necessary and sufficient condition for ` dom tpos F ` to be a relation.
+       (Contributed by Mario Carneiro, 10-Sep-2015.) $)
+    reldmtpos $p |- ( Rel dom tpos F <-> -. (/) e. dom F ) $=
+      ( vy vx cdm wrel c0 wcel wn cv wbr wex 0ex eldm cvv wb vex ax-mp wi sylbi
+      wss ctpos brtpos0 cxp 0nelxp df-rel ssel mtoi breldm nsyl3 sylbir exlimiv
+      con2i wa ccnv csn relcnv mpbi sseli a1i elsni breq1d pm2.24d syl6bi com3l
+      impcom wo cuni brtpos2 simplbi elun sylib adantl mpjaod ex exlimdv syl5bi
+      cun ssrdv sylibr impbii ) AUAZDZEZFADZGZHZWEWCWEFBIZAJZBKWCHZBFALMWHWIBWH
+      FWGWAJZWIWGNGZWJWHOBPZWGANUBQZWCFWBGZWJWCWNFNNUCZGZNNUDWCWBWOTZWNWPRWBUEZ
+      WBWOFUFSUGFWGWALWLUHUIUJUKSULWFWQWCWFCWBWOCIZWBGWSWGWAJZBKWFWSWOGZBWSWACP
+      MWFWTXABWFWTXAWFWTUMZWSWDUNZGZXAWSFUOZGZXDXARXBXCWOWSXCEXCWOTWDUPXCUEUQUR
+      USWTWFXFXARXFWTWFXAXFWTWJWFXARZXFWSFWGWAWSFUTVAWJWHXGWMWHWEXAFWGALWLUHVBS
+      VCVDVEWTXDXFVFZWFWTWSXCXEVQGZXHWTXIWSUOUNVGWGAJZWKWTXIXJUMOWLWSWGANVHQVIW
+      SXCXEVJVKVLVMVNVOVPVRWRVSVT $.
+
+    $( The transposition swaps arguments of a three-parameter relation.
+       (Contributed by Mario Carneiro, 10-Sep-2015.) $)
+    brtpos $p |- ( C e. V -> ( <. A , B >. tpos F C <-> <. B , A >. F C ) ) $=
+      ( wcel cvv wa cop ctpos wbr wb cdm ccnv c0 csn adantr wn opprc breq1d cun
+      cuni brtpos2 wi opex breldmg 3expia mpan opelcnvg adantl sylibrd pm4.71rd
+      elun1 opswap breq1i anbi2i syl6bbr bitr4d ex brtpos0 ancom sylnbi bibi12d
+      syl6 syl5ibrcom pm2.61d ) CEFZAGFZBGFZHZABIZCDJZKZBAIZCDKZLZVGVJVPVGVJHZV
+      MVKDMZNZOPZUAFZVKPNUBZCDKZHZVOVGVMWDLVJVKCDEUCQVQVOWAVOHWDVQVOWAVQVOVKVSF
+      ZWAVQVOVNVRFZWEVGVOWFUDZVJVNGFZVGWGBAUEWHVGVOWFVNCGEDUFUGUHQVJWEWFLVGABGG
+      VRUIUJUKVKVSVTUMVDULWCVOWAWBVNCDABUNUOUPUQURUSVGVPVJRZOCVLKZOCDKZLCDEUTWI
+      VMWJVOWKWIVKOCVLABSTVJVIVHHZVOWKLVHVIVAWLRVNOCDBASTVBVCVEVF $.
+
+    $( The transposition swaps the first two elements in a collection of
+       ordered triples.  (Contributed by Mario Carneiro, 1-Dec-2014.) $)
+    ottpos $p |- ( C e. V ->
+      ( <. A , B , C >. e. tpos F <-> <. B , A , C >. e. F ) ) $=
+      ( wcel cop ctpos cotp wbr brtpos df-br 3bitr3g df-ot eleq1i 3bitr4g ) CEF
+      ZABGZCGZDHZFZBAGZCGZDFZABCIZTFBACIZDFQRCTJUBCDJUAUDABCDEKRCTLUBCDLMUESTAB
+      CNOUFUCDBACNOP $.
+
+    $( The transposition swaps arguments of a three-parameter relation.
+       (Contributed by Mario Carneiro, 3-Nov-2015.) $)
+    relbrtpos $p |- ( Rel F ->
+      ( <. A , B >. tpos F C <-> <. B , A >. F C ) ) $=
+      ( wrel cop ctpos wbr cvv wcel reltpos a1i brrelex2 sylan brtpos pm5.21nd
+      ) DEZABFZCDGZHZBAFZCDHCIJZQSEZTUBUCQDKLRCSMNUACDMABCDIOP $.
+
+    $( The domain of ` tpos F ` when ` dom F ` is a relation.  (Contributed by
+       Mario Carneiro, 10-Sep-2015.) $)
+    dmtpos $p |- ( Rel dom F -> dom tpos F = `' dom F ) $=
+      ( vx vy vz ctpos cdm wrel ccnv wa wceq cvv wcel cop wbr wex vex opex eldm
+      c0 cv cxp wss wn 0nelxp ssel df-rel reldmtpos 3imtr4i relcnv jctir brtpos
+      mtoi wb mp1i exbidv opelcnv bitri 3bitr4g eqrelrdv2 mpancom ) AEZFZGZAFZH
+      ZGZIVDGZVBVEJVGVCVFVDKKUAZUBZSVDLZUCVGVCVIVJSVHLKKUDVDVHSUEULVDUFAUGUHVDU
+      IUJVGBCVBVEVGBTZCTZMZDTZVANZDOVLVKMZVNANZDOZVMVBLVMVELZVGVOVQDVNKLVOVQUMV
+      GDPVKVLVNAKUKUNUODVMVAVKVLQRVSVPVDLVRVKVLVDBPCPUPDVPAVLVKQRUQURUSUT $.
+
+    $( The range of ` tpos F ` when ` dom F ` is a relation.  (Contributed by
+       Mario Carneiro, 10-Sep-2015.) $)
+    rntpos $p |- ( Rel dom F -> ran tpos F = ran F ) $=
+      ( vz vw vx vy cdm wrel crn cv wcel wbr wex vex elrn cop wceq breldm elrel
+      wi breq1 ctpos ccnv dmtpos eleq2d syl5ib relcnv mpan syl6 wb brtpos ax-mp
+      cvv syl6bb opex brelrn syl6bi exlimivv syli exlimdv syl5bi ex syl5 impbid
+      syl6bbr eqrdv ) AFZGZBAUAZHZAHZVGBIZVIJZVKVJJZVLCIZVKVHKZCLVGVMCVKVHBMZNV
+      GVOVMCVOVGVNDIZEIZOZPZELDLZVMVGVOVNVFUBZJZWAVOVNVHFZJVGWCVNVKVHCMZVPQVGWD
+      WBVNAUCUDUEWBGWCWAVFUFDEVNWBRUGUHVTVOVMSDEVTVOVRVQOZVKAKZVMVTVOVSVKVHKZWG
+      VNVSVKVHTVKULJWHWGUIVPVQVRVKAULUJUKZUMWFVKAVRVQUNVPUOUPUQURUSUTVMVNVKAKZC
+      LVGVLCVKAVPNVGWJVLCWJVGVNWFPZDLELZVLWJVNVFJZVGWLVNVKAWEVPQVGWMWLEDVNVFRVA
+      VBWKWJVLSEDWKWJWHVLWKWJWGWHVNWFVKATWIVDVSVKVHVQVRUNVPUOUPUQURUSUTVCVE $.
+
+    $( The transposition of a set is a set.  (Contributed by Mario Carneiro,
+       10-Sep-2015.) $)
+    tposexg $p |- ( F e. V -> tpos F e. _V ) $=
+      ( wcel ctpos cdm ccnv c0 csn cun crn cxp wss cvv tposssxp cnvexg syl p0ex
+      dmexg unexg sylancl rnexg xpexg syl2anc ssexg sylancr ) ABCZADZAEZFZGHZIZ
+      AJZKZLUMMCZUGMCANUFUKMCZULMCUNUFUIMCZUJMCUOUFUHMCUPABRUHMOPQUIUJMMSTABUAU
+      KULMMUBUCUGUMMUDUE $.
+
+    $( The transposition swaps the arguments in a two-argument function.  When
+       ` F ` is a matrix, which is to say a function from
+       ` ( 1 ... m ) X. ( 1 ... n ) ` to ` RR ` or some ring, ` tpos F ` is the
+       transposition of ` F ` , which is where the name comes from.
+       (Contributed by Mario Carneiro, 10-Sep-2015.) $)
+    ovtpos $p |- ( A tpos F B ) = ( B F A ) $=
+      ( vy cop ctpos cfv co cv wbr cio cvv wcel wb vex brtpos ax-mp df-fv df-ov
+      3eqtr4i iotabii ) ABEZCFZGZBAEZCGZABUCHBACHUBDIZUCJZDKUEUGCJZDKUDUFUHUIDU
+      GLMUHUINDOABUGCLPQUADUBUCRDUECRTABUCSBACST $.
+
+    $( The transposition of a function is a function.  (Contributed by Mario
+       Carneiro, 10-Sep-2015.) $)
+    tposfun $p |- ( Fun F -> Fun tpos F ) $=
+      ( vx wfun cdm ccnv c0 csn cun cv cuni cmpt ccom ctpos funco mpan2 df-tpos
+      funmpt funeqi sylibr ) ACZABADEFGHZBIGEJZKZLZCZAMZCTUCCUEBUAUBQAUCNOUFUDB
+      APRS $.
+
+    $( Alternate definition of ` tpos ` when ` F ` has relational domain.
+       (Contributed by Mario Carneiro, 10-Sep-2015.) $)
+    dftpos2 $p |- ( Rel dom F -> tpos F =
+        ( F o. ( x e. `' dom F |-> U. `' { x } ) ) ) $=
+      ( cdm wrel ctpos cres ccnv csn cuni cmpt ccom dmtpos reseq2d wceq reltpos
+      cv resdm ax-mp c0 cun df-tpos reseq1i resco resmpt coeq2i 3eqtri 3eqtr3g
+      wss ssun1 ) BCZDZBEZULCZFZULUJGZFZULBAUOAPHGIZJZKZUKUMUOULBLMULDUNULNBOUL
+      QRUPBAUOSHZTZUQJZKZUOFBVBUOFZKUSULVCUOABUAUBBVBUOUCVDURBUOVAUHVDURNUOUTUI
+      AVAUOUQUDRUEUFUG $.
+
+    $( Alternate definition of ` tpos ` when ` F ` has relational domain.
+       Compare ~ df-cnv .  (Contributed by Mario Carneiro, 10-Sep-2015.) $)
+    dftpos3 $p |- ( Rel dom F -> tpos F =
+      { <. <. x , y >. , z >. | <. y , x >. F z } ) $=
+      ( vw cdm wrel ctpos cv cop wceq wbr wa wex cab wcel cvv cxp bitr3i syl6bb
+      coprab wss relcnv dmtpos releqd mpbiri reltpos jctil relrelss sylib sseld
+      ccnv elvvv syl6ib pm4.71rd 19.41vvv eleq1 df-br vex brtpos pm5.32i 3exbii
+      wb ax-mp abbi2dv df-oprab syl6eqr ) DFZGZDHZEIZAIZBIZJZCIZJZKZVMVLJVODLZM
+      ZCNBNANZEOVRABCUAVIVTEVJVIVKVJPZVQCNBNANZWAMZVTVIWAWBVIWAVKQQRQRZPWBVIVJW
+      DVKVIVJGZVJFZGZMVJWDUBVIWGWEVIWGVHULZGVHUCVIWFWHDUDUEUFDUGUHVJUIUJUKABCVK
+      UMUNUOWCVQWAMZCNBNANVTVQWAABCUPWIVSABCVQWAVRVQWAVPVJPZVRVKVPVJUQWJVNVOVJL
+      ZVRVNVOVJURVOQPWKVRVCCUSVLVMVODQUTVDSTVAVBSTVEVRABCEVFVG $.
+
+    $( Alternate definition of ` tpos ` .  (Contributed by Mario Carneiro,
+       4-Oct-2015.) $)
+    dftpos4 $p |- tpos F =
+        ( F o. ( x e. ( ( _V X. _V ) u. { (/) } ) |-> U. `' { x } ) ) $=
+      ( vy vz vw cvv csn cun cv ccnv cuni wss wceq cop wcel wbr wa wex vex wb
+      ctpos cxp cmpt ccom cdm df-tpos cres wrel relcnv df-rel mpbi unss1 resmpt
+      c0 mp2b resss eqsstr3i coss2 ax-mp eqsstri relco opelco eleq1 sneq cnveqd
+      unieqd eqeq2d anbi12d anbi2d df-mpt brab wi simplr breldm adantl eqeltrrd
+      eqeq1 opswap eleq1i opelcnv bitr4i eleq1d bibi12d mpbiri exlimivv biimpcd
+      elvv sylbi elun1 syl6 syl elun2 a1i wo simpll sylib mpjaod simpr eqbrtrrd
+      elun jca sylanb brtpos2 sylibr df-br exlimiv relssi eqssi ) BUAZBAFFUBZUN
+      GZHZAIZGZJZKZUCZUDZXIBABUEZJZXKHZXPUCZUDZXRABUFYBXQLYCXRLYBXQYAUGZXQXTXJL
+      ZYAXLLYDYBMXTUHYEXSUIXTUJUKXTXJXKULAXLYAXPUMUOXQYAUPUQYBXQBURUSUTCDXRXIBX
+      QVACIZDIZNZXROYFEIZXQPZYIYGBPZQZERYHXIOZEYFYGBXQCSZDSZVBYLYMEYLYFYGXIPZYM
+      YLYFYAOZYFGZJZKZYGBPZQZYPYJYFXLOZYIYTMZQZYKUUBXMXLOZYGXPMZQUUCYGYTMZQUUEA
+      DYFYIXQYNESZXMYFMZUUFUUCUUGUUHXMYFXLVCUUJXPYTYGUUJXOYSUUJXNYRXMYFVDVEVFVG
+      VHYGYIMUUHUUDUUCYGYIYTVQVIADXLXPVJVKUUEYKQZYQUUAUUKYFXJOZYQYFXKOZUUKYTXSO
+      ZUULYQVLUUKYIYTXSUUCUUDYKVMZYKYIXSOUUEYIYGBUUIYOVNVOVPUUNUULYFXTOZYQUULUU
+      NUUPUULYFYGYINZMZERDRUUNUUPTZDEYFWGUURUUSDEUURUUSUUQGZJZKZXSOZUUQXTOZTUVC
+      YIYGNZXSOUVDUVBUVEXSYGYIVRVSYGYIXSYOUUIVTWAUURUUNUVCUUPUVDUURYTUVBXSUURYS
+      UVAUURYRUUTYFUUQVDVEVFWBYFUUQXTVCWCWDWEWHWFYFXTXKWIWJWKUUMYQVLUUKYFXKXTWL
+      WMUUKUUCUULUUMWNUUCUUDYKWOYFXJXKWTWPWQUUKYIYTYGBUUOUUEYKWRWSXAXBYGFOYPUUB
+      TYOYFYGBFXCUSXDYFYGXIXEWPXFWHXGXH $.
+
+    $( Value of the double transposition for a general class ` F ` .
+       (Contributed by Mario Carneiro, 16-Sep-2015.) $)
+    tpostpos $p |- tpos tpos F =
+        ( F i^i ( ( ( _V X. _V ) u. { (/) } ) X. _V ) ) $=
+      ( vz vx vy cvv c0 csn wrel cv ccnv wcel wbr wa wo wb syl6bb syl6eq breq1d
+      cuni vex vw ctpos cxp cun cin reltpos wss inss2 relxp relss relcnv df-rel
+      mp2 cdm mpbi simpl sseldi simpr cop wceq elvv eleq1 opelcnv cnveqd unieqd
+      sneq opswap anbi12d opex breldm pm4.71ri brtpos ax-mp bitr3i breq1 bitr4d
+      wex exlimivv sylbi iba bitrd pm5.21nii elsni sneqd cnvsn0 brtpos0 pm5.32i
+      uni0 ancom bitri orbi12i andi 3bitr4i elun anbi1i mpbiran2 anbi2i brtpos2
+      andir brxp brin eqbrriv ) UABAUBZUBZAEEUCZFGZUDZEUCZUEZXCUFXIXHUGXHHXIHAX
+      HUHXGEUIXIXHUJUMUAIZXCUNZJZXFUDKZXJGZJZSZBIZXCLZMZXJXQALZXJXQXHLZMZXJXQXD
+      LZXJXQXILXJXLKZXJXFKZNZXRMZXTXJXEKZYENZMZXSYBYDXRMZYEXRMZNXTYHMZXTYEMZNYG
+      YJYKYMYLYNYKYHYMYKXLXEXJXLHXLXEUGXKUKXLULUOYDXRUPUQXTYHURYHYKXTYMYHXJCIZD
+      IZUSZUTZDVQCVQYKXTOZCDXJVAYRYSCDYRYKYQXQALZXTYRYKYPYOUSZXKKZUUAXQXCLZMZYT
+      YRYDUUBXRUUCYRYDYQXLKUUBXJYQXLVBYOYPXKCTDTVCPYRXPUUAXQXCYRXPYQGZJZSUUAYRX
+      OUUFYRXNUUEXJYQVFVDVEYOYPVGQRVHUUDUUCYTUUCUUBUUAXQXCYPYOVIBTZVJVKXQEKZUUC
+      YTOUUGYPYOXQAEVLVMVNPXJYQXQAVOVPVRVSYHXTVTWAWBYLYEXTMYNYEXRXTYEXRFXQALZXT
+      YEXRFXQXCLZUUIYEXPFXQXCYEXPFSFYEXOFYEXOXFJFYEXNXFYEXJFXJFWCZWDVDWEQVEWHQR
+      UUHUUJUUIOUUGXQAEWFVMPYEXJFXQAUUKRVPWGYEXTWIWJWKYDYEXRWSXTYHYEWLWMXMYFXRX
+      JXLXFWNWOYAYIXTYAXJXGKZYIYAUULUUHUUGXJXQXGEWTWPXJXEXFWNWJWQWMUUHYCXSOUUGX
+      JXQXCEWRVMXJXQAXHXAWMXB $.
+
+    $( Value of the double transposition for a relation on triples.
+       (Contributed by Mario Carneiro, 16-Sep-2015.) $)
+    tpostpos2 $p |- ( ( Rel F /\ Rel dom F ) -> tpos tpos F = F ) $=
+      ( wrel cdm wa ctpos cvv cxp csn cun cin tpostpos wss relrelss ssun1 xpss1
+      c0 wceq ax-mp sstr mpan2 sylbi df-ss sylib syl5eq ) ABACBDZAEEAFFGZPHZIZF
+      GZJZAAKUEAUILZUJAQUEAUFFGZLZUKAMUMULUILZUKUFUHLUNUFUGNUFUHFORAULUISTUAAUI
+      UBUCUD $.
+
+    $( The domain of a transposition.  (Contributed by NM, 10-Sep-2015.) $)
+    tposfn2 $p |- ( Rel A -> ( F Fn A -> tpos F Fn `' A ) ) $=
+      ( wrel wfun cdm wceq wa ctpos ccnv wfn wi tposfun a1i dmtpos releq eqeq2d
+      cnveq 3imtr3d com12 df-fn anim12d 3imtr4g ) ACZBDZBEZAFZGBHZDZUGEZAIZFZGB
+      AJUGUJJUCUDUHUFUKUDUHKUCBLMUFUCUKUFUECZUIUEIZFZUCUKULUNKUFBNMUEAOUFUMUJUI
+      UEAQPRSUABATUGUJTUB $.
+
+    $( Condition for a surjective transposition.  (Contributed by NM,
+       10-Sep-2015.) $)
+    tposfo2 $p |- ( Rel A ->
+        ( F : A -onto-> B -> tpos F : `' A -onto-> B ) ) $=
+      ( wrel wfn crn wceq wa ctpos ccnv wfo tposfn2 adantrd cdm releqd biimparc
+      fndm rntpos syl df-fo eqeq1d biimprd expimpd jcad 3imtr4g ) ADZCAEZCFZBGZ
+      HZCIZAJZEZUKFZBGZHABCKULBUKKUFUJUMUOUFUGUMUIACLMUFUGUIUOUFUGHZUOUIUPUNUHB
+      UPCNZDZUNUHGUGURUFUGUQAACQOPCRSUAUBUCUDABCTULBUKTUE $.
+
+    $( The domain and range of a transposition.  (Contributed by NM,
+       10-Sep-2015.) $)
+    tposf2 $p |- ( Rel A -> ( F : A --> B -> tpos F : `' A --> B ) ) $=
+      ( wrel wf ccnv ctpos crn wss wfo wfn ffn dffn4 sylib tposfo2 syl5 imp fof
+      wa syl frn adantl fss syl2anc ex ) ADZABCEZAFZBCGZEZUFUGSZUHCHZUIEZULBIZU
+      JUKUHULUIJZUMUFUGUOUGAULCJZUFUOUGCAKUPABCLACMNAULCOPQUHULUIRTUGUNUFABCUAU
+      BUHULBUIUCUDUE $.
+
+    $( Condition for an injective transposition.  (Contributed by NM,
+       10-Sep-2015.) $)
+    tposf12 $p |- ( Rel A -> ( F : A -1-1-> B -> tpos F : `' A -1-1-> B ) ) $=
+      ( vx wrel wf1 ccnv ctpos wa cdm cv csn cuni cmpt wceq wb syl f1eq1 mpbird
+      3syl ccom simpr relcnv cnvf1o f1of1 simpl dfrel2 sylib f1eq3 mpbii cnveqd
+      wf1o mp2b f1dm mpteq1 f1co syl2anc releqd biimparc dftpos2 ex ) AEZABCFZA
+      GZBCHZFZVBVCIZVFVDBCDCJZGZDKLGMZNZUAZFZVGVCVDAVKFZVMVBVCUBZVGVNVDADVDVJNZ
+      FZVGVDVDGZVPFZVQVDEVDVRVPULVSAUCDVDUDVDVRVPUEUMVGVRAOZVSVQPVGVBVTVBVCUFAU
+      GUHVRAVDVPUIQUJVGVIVDOVKVPOVNVQPVGVHAVGVCVHAOVOABCUNZQUKDVIVDVJUOVDAVKVPR
+      TSVDABCVKUPUQVGVHEZVEVLOVFVMPVCWBVBVCVHAWAURUSDCUTVDBVEVLRTSVA $.
+
+    $( Condition of a bijective transposition.  (Contributed by NM,
+       10-Sep-2015.) $)
+    tposf1o2 $p |- ( Rel A ->
+      ( F : A -1-1-onto-> B -> tpos F : `' A -1-1-onto-> B ) ) $=
+      ( wrel wf1 wfo wa ccnv ctpos wf1o tposf12 tposfo2 anim12d df-f1o 3imtr4g
+      ) ADZABCEZABCFZGAHZBCIZEZSBTFZGABCJSBTJPQUARUBABCKABCLMABCNSBTNO $.
+
+    $( The domain and range of a transposition.  (Contributed by NM,
+       10-Sep-2015.) $)
+    tposfo $p |- ( F : ( A X. B ) -onto-> C ->
+              tpos F : ( B X. A ) -onto-> C ) $=
+      ( cxp wfo ccnv ctpos wrel wi relxp tposfo2 ax-mp wceq cnvxp foeq2 sylib
+      wb ) ABEZCDFZSGZCDHZFZBAEZCUBFZSITUCJABKSCDLMUAUDNUCUERABOUAUDCUBPMQ $.
+
+    $( The domain and range of a transposition.  (Contributed by NM,
+       10-Sep-2015.) $)
+    tposf $p |- ( F : ( A X. B ) --> C -> tpos F : ( B X. A ) --> C ) $=
+      ( cxp wf ccnv ctpos wrel wi relxp tposf2 ax-mp cnvxp feq2i sylib ) ABEZCD
+      FZQGZCDHZFZBAEZCTFQIRUAJABKQCDLMSUBCTABNOP $.
+
+    $( Functionality of a transposition.  (Contributed by Mario Carneiro,
+       4-Oct-2015.) $)
+    tposfn $p |- ( F Fn ( A X. B ) -> tpos F Fn ( B X. A ) ) $=
+      ( cxp cvv wf ctpos wfn tposf dffn2 3imtr4i ) ABDZECFBADZECGZFCLHNMHABECIL
+      CJMNJK $.
+
+    $( Transposition of the empty set.  (Contributed by NM, 10-Sep-2015.) $)
+    tpos0 $p |- tpos (/) = (/) $=
+      ( c0 ctpos wfn wceq ccnv wrel rel0 eqid fn0 mpbir tposfn2 mp2 cnv0 fneq2i
+      mpbi ) ABZACZPADPAEZCZQAFAACZSGTAADAHAIJAAKLRAPMNOPIO $.
+
+    $( Transposition of a composition.  (Contributed by Mario Carneiro,
+       4-Oct-2015.) $)
+    tposco $p |- tpos ( F o. G ) = ( F o. tpos G ) $=
+      ( vx ccom cvv cxp c0 csn cun cv ccnv cuni cmpt ctpos coass dftpos4 coeq2i
+      3eqtr4i ) ABDZCEEFGHICJHKLMZDABTDZDSNABNZDABTOCSPUBUAACBPQR $.
+
+    $( Two ways to say a function is symmetric.  (Contributed by Mario
+       Carneiro, 4-Oct-2015.) $)
+    tpossym $p |- ( F Fn ( A X. A ) ->
+      ( tpos F = F <-> A. x e. A A. y e. A ( x F y ) = ( y F x ) ) ) $=
+      ( cxp ctpos wceq cv co wral wb tposfn eqfnov2 mpancom eqcom ovtpos eqeq2i
+      wfn bitri 2ralbii syl6bb ) DCCEZRZDFZDGZAHZBHZUDIZUFUGDIZGZBCJACJZUIUGUFD
+      IZGZBCJACJUDUBRUCUEUKKCCDLABCCUDDMNUJUMABCCUJUIUHGUMUHUIOUHULUIUFUGDPQSTU
+      A $.
+
+  $}
+
+  ${
+    tposeqi.1 $e |- F = G $.
+    $( Equality theorem for transposition.  (Contributed by Mario Carneiro,
+       10-Sep-2015.) $)
+    tposeqi $p |- tpos F = tpos G $=
+      ( wceq ctpos tposeq ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    tposex.1 $e |- F e. _V $.
+    $( A transposition is a set.  (Contributed by Mario Carneiro,
+       10-Sep-2015.) $)
+    tposex $p |- tpos F e. _V $=
+      ( cvv wcel ctpos tposexg ax-mp ) ACDAECDBACFG $.
+  $}
+
+  ${
+    $d x y $.  $d y F $.
+    nftpos.1 $e |- F/_ x F $.
+    $( Hypothesis builder for transposition.  (Contributed by Mario Carneiro,
+       10-Sep-2015.) $)
+    nftpos $p |- F/_ x tpos F $=
+      ( vy ctpos cvv cxp c0 csn cv ccnv cuni cmpt ccom dftpos4 nfcv nfco nfcxfr
+      cun ) ABEBDFFGHISDJIKLMZNDBOABTCATPQR $.
+  $}
+
+  ${
+    $d a b c w x y z $.  $d a b c w ph $.
+    tposoprab.1 $e |- F = { <. <. x , y >. , z >. | ph } $.
+    $( Transposition of a class of ordered triples.  (Contributed by Mario
+       Carneiro, 10-Sep-2015.) $)
+    tposoprab $p |- tpos F = { <. <. y , x >. , z >. | ph } $=
+      ( vb va vc ctpos coprab cv cop wbr tposeqi wceq nfcv nfbr nfv weq dftpos3
+      cdm reldmoprab ax-mp nfoprab2 nfoprab1 wa opeq12 ancoms breq1d cbvoprab12
+      wrel nfoprab3 breq2 df-br oprabid bitri syl6bb cbvoprab3 eqtri 3eqtri
+      wcel ) EJABCDKZJZGLZHLZMZILZVCNZHGIKZACBDKZEVCFOVCUBULVDVJPABCDUCHGIVCUAU
+      DVJBLZCLZMZVHVCNZCBIKVKVIVOHGICBCVGVHVCCVGQABCDUECVHQRBVGVHVCBVGQABCDUFBV
+      HQRVOHSVOGSHCTZGBTZUGVGVNVHVCVQVPVGVNPVEVFVLVMUHUIUJUKVOACBIDDVNVHVCDVNQA
+      BCDUMDVHQRAISIDTVOVNDLZVCNZAVHVRVNVCUNVSVNVRMVCVBAVNVRVCUOABCDUPUQURUSUTV
+      A $.
+  $}
+
+  ${
+    $d x y z $.  $d z A $.  $d z B $.  $d z C $.
+    tposmpt2.1 $e |- F = ( x e. A , y e. B |-> C ) $.
+    $( Transposition of a two-argument mapping.  (Contributed by Mario
+       Carneiro, 10-Sep-2015.) $)
+    tposmpt2 $p |- tpos F = ( y e. B , x e. A |-> C ) $=
+      ( vz ctpos cv wcel wceq coprab cmpt2 df-mpt2 ancom anbi1i oprabbii 3eqtri
+      wa tposoprab eqtr4i ) FIBJDKZAJCKZTZHJELZTZBAHMBADCENUGABHFFABCDENUDUCTZU
+      FTZABHMUGABHMGABHCDEOUIUGABHUHUEUFUDUCPQRSUABAHDCEOUB $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -53473,6 +53862,9 @@ htmldef "2nd" as
     "<IMG SRC='_2nd.gif' WIDTH=21 HEIGHT=19 ALT=' 2nd' TITLE='2nd'>";
   althtmldef "2nd" as '2<SUP>nd</SUP> ';
   latexdef "2nd" as "2^{\rm nd}";
+htmldef "tpos" as "tpos ";
+  althtmldef "tpos" as 'tpos ';
+  latexdef "tpos" as "{\rm tpos}";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
