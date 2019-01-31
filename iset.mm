@@ -52636,18 +52636,6 @@ $)
   $}
 
   ${
-    $d x y z $.  $d X x y z $.  $d Y x y z $.  $d C z $.
-    mpt2ndm0.f $e |- F = ( x e. X , y e. Y |-> C ) $.
-    $( The value of an operation given by a maps-to rule is the empty set if
-       the arguments are not contained in the base sets of the rule.
-       (Contributed by Alexander van der Vekens, 12-Oct-2017.) $)
-    mpt2ndm0 $p |- ( -. ( V e. X /\ W e. Y ) -> ( V F W ) = (/) ) $=
-      ( vz cdm cxp wss wcel wa wn co c0 wceq cv cmpt2 df-mpt2 dmoprabss eqsstri
-      coprab eqtri dmeqi nssdmovg mpan ) DKZGHLZMEGNFHNOPEFDQRSUJATGNBTHNOJTCSZ
-      OABJUEZKUKDUMDABGHCUAUMIABJGHCUBUFUGULABJGHUCUDEFGHDUHUI $.
-  $}
-
-  ${
     $d x y $.
     brovex.1 $e |- O = ( x e. _V , y e. _V |-> C ) $.
     brovex.2 $e |- ( ( V e. _V /\ E e. _V ) -> Rel ( V O E ) ) $.
