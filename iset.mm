@@ -52730,17 +52730,22 @@ $)
        Mario Carneiro, 10-Sep-2015.) $)
     brtpos2 $p |- ( B e. V -> ( A tpos F B <->
       ( A e. ( `' dom F u. { (/) } ) /\ U. `' { A } F B ) ) ) $=
-      ( vy vx wcel cvv wbr cdm ccnv csn cuni wa wi a1i wb cv wceq bitri reltpos
-      ctpos c0 cun brrelexi elex adantr cmpt wex df-tpos breqi brcog syl5bb cfv
-      ccom wfun funmpt funbrfv2b ax-mp snex cnvex uniex eqid dmmpti eleq2i sneq
-      eqcom anbi12i cnveqd unieqd fvmpt eqeq2d pm5.32i ancom anbi1i anass exbii
-      breq1 anbi2d ceqsexv syl6bb expcom pm5.21ndd ) BDGZAHGZABCUBZIZACJKUCLUDZ
-      GZALZKZMZBCIZNZWGWEOWDABWFCUAUEPWNWEOWDWIWEWMAWHUFUGPWEWDWGWNQWEWDNZWGAER
-      ZFWHFRZLZKZMZUHZIZWPBCIZNZEUIZWNWGABCXAUOZIWOXEABWFXFFCUJUKEABCXAHDULUMXE
-      WPWLSZWIXCNZNZEUIWNXDXIEXDXGWINZXCNXIXBXJXCXBWIXGNZXJXBAXAJZGZAXAUNZWPSZN
-      ZXKXAUPXBXPQFWHWTUQAWPXAURUSXPWIWPXNSZNXKXMWIXOXQXLWHAFWHWTXAWSWRWQUTVAVB
-      XAVCZVDVEXNWPVGVHWIXQXGWIXNWLWPFAWTWLWHXAWQASZWSWKXSWRWJWQAVFVIVJXRWKWJAU
-      TVAVBZVKVLVMTTWIXGVNTVOXGWIXCVPTVQXHWNEWLXTXGXCWMWIWPWLBCVRVSVTTWAWBWC $.
+      ( vy vx wcel cvv wbr cdm ccnv csn cuni wa wi wex wceq syl bitri
+      wb ctpos cun reltpos brrelexi a1i elex adantr cmpt ccom df-tpos
+      c0 breqi brcog syl5bb cfv wfun funmpt funbrfv2b ax-mp vex snexg
+      cnvex uniex eqid dmmpti eleq2i eqcom anbi12i cnvexg uniexg sneq
+      cv cnveqd unieqd fvmptg mpdan eqeq2d pm5.32i ancom anbi1i anass
+      exbii exsimpr exsimpl 19.9v sylib ax-ia1 breq1 anbi2d pm5.21nii
+      ceqsexgv syl6bb expcom pm5.21ndd ) BDGZAHGZABCUAZIZACJKUKLUBZGZ
+      ALZKZMZBCIZNZWRWPOWOABWQCUCUDUEXEWPOWOWTWPXDAWSUFUGUEWPWOWRXETW
+      PWONZWRAEVLZFWSFVLZLZKZMZUHZIZXGBCIZNZEPZXEWRABCXLUIZIXFXPABWQX
+      QFCUJULEABCXLHDUMUNXPXGXCQZWTXNNZNZEPZXEXOXTEXOXRWTNZXNNXTXMYBX
+      NXMWTXRNZYBXMAXLJZGZAXLUOZXGQZNZYCXLUPXMYHTFWSXKUQAXGXLURUSYHWT
+      XGYFQZNYCYEWTYGYIYDWSAFWSXKXLXJXIXHHGXIHGFUTXHHVAUSVBVCXLVDZVEV
+      FYFXGVGVHWTYIXRWTYFXCXGWTXCHGZYFXCQWTXBHGZYKWTXAHGYLAWSVAXAHVIR
+      XBHVJRZFAXKXCWSHXLXHAQZXJXBYNXIXAXHAVKVMVNYJVOVPVQVRSSWTXRVSSVT
+      XRWTXNWASWBYAWTXEYAXSEPZWTXRXSEWCYOWTEPWTWTXNEWDWTEWEWFRWTXDWGW
+      TYKYAXETYMXSXEEXCHXRXNXDWTXGXCBCWHWIWKRWJSWLWMWN $.
 
     $( The behavior of ` tpos ` when the left argument is the empty set (which
        is not an ordered pair but is the "default" value of an ordered pair
