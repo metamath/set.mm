@@ -52564,6 +52564,111 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+         Special "Maps to" operations
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+The following theorems are about maps-to operations (see ~ df-mpt2 ) where the
+first argument is a pair and the base set of the second argument is the first
+component of the first argument, in short "x-maps-to operations". For labels,
+the abbreviations "mpt2x" are used (since "x" usually denotes the first
+argument). This is in line with the currently used conventions for such cases
+(see ~ cbvmpt2x , ~ ovmpt2x and ~ fmpt2x ). However, there is a proposal by
+Norman Megill to use the abbreviation "mpo" or "mpto" instead of "mpt2"
+(see beginning of set.mm). If this proposal will be realized, the labels in the
+following should also be adapted. If the first argument is an ordered pair,
+as in the following, the abbreviation is extended to "mpt2xop", and the maps-to
+operations are called "x-op maps-to operations" for short.
+$)
+
+  ${
+    $d x y $.  $d K x $.  $d V x $.  $d W x $.
+    mpt2xopn0yelv.f $e |- F = ( x e. _V , y e. ( 1st ` x ) |-> C ) $.
+    $( If there is an element of the value of an operation given by a maps-to
+       rule, where the first argument is a pair and the base set of the second
+       argument is the first component of the first argument, then the second
+       argument is an element of the first component of the first argument.
+       (Contributed by Alexander van der Vekens, 10-Oct-2017.) $)
+    mpt2xopn0yelv $p |- ( ( V e. X /\ W e. Y )
+                          -> ( N e. ( <. V , W >. F K ) -> K e. V ) ) $=
+      ( cop co wcel c1st cfv wa cvv cv csn cxp ciun dmmpt2ssx mpt2fun
+      wrel wfun funrel ax-mp relelfvdm mpan df-ov eleq2s sseldi fveq2
+      cdm opeliunxp2 simprbi syl op1stg eleq2d syl5ib ) FGHLZEDMZNZEV
+      BOPZNZGINHJNQZEGNVDVBELZARASZTVIOPZUAUBZNZVFVDDUOZVKVHABRVJCDKU
+      CVHVMNZFVHDPZVCDUEZFVONVNDUFVPABRVJCDKUDDUGUHFVHDUIUJVBEDUKULUM
+      VLVBRNVFARVJVBEVEVIVBOUNUPUQURVGVEGEGHIJUSUTVA $.
+  $}
+
+  ${
+    $d K n x y $.  $d V n x y $.  $d W n x y $.  $d X n x y $.  $d Y n x y $.
+    mpt2xopoveq.f $e |- F = ( x e. _V , y e. ( 1st ` x )
+                            |-> { n e. ( 1st ` x ) | ph } ) $.
+    $( Value of an operation given by a maps-to rule, where the first argument
+       is a pair and the base set of the second argument is the first component
+       of the first argument.  (Contributed by Alexander van der Vekens,
+       11-Oct-2017.) $)
+    mpt2xopoveq $p |- ( ( ( V e. X /\ W e. Y ) /\ K e. V )
+                 -> ( <. V , W >. F K )
+                      = { n e. V | [. <. V , W >. / x ]. [. K / y ]. ph } ) $=
+      ( wcel wa cvv cv c1st wceq adantr adantl nfcv cop cfv crab wsbc
+      vz cmpt2 fveq2 op1stg sylan9eqr adantrr sbceq1a bitrd rabeqbidv
+      a1i wb opexg simpr rabexg ad2antrr wnf equid nfvd ax-mp nfsbc1v
+      nfrabxy nfsbc ovmpt2dxf ) GILZHJLZMZFGLZMZBCGHUAZFNBOZPUBZADVOU
+      CZACFUDZBVMUDZDGUCZEGNEBCNVOVPUFQVLKUNVLVNVMQZCOFQZMZMZAVRDVOGV
+      LVTVOGQWAVTVLVOVMPUBZGVNVMPUGVJWDGQVKGHIJUHRUIZUJWCAVQVRWBAVQUO
+      ZVLWAWFVTACFUKSSWBVQVRUOZVLVTWGWAVQBVMUKRSULUMWEVJVMNLVKGHIJUPR
+      VJVKUQVHVSNLVIVKVRDGIURUSUEOZWHQZVLBUTUEVAZWIVLBVBVCWIVLCUTWJWI
+      VLCVBVCCVMTZBFTVRBDGVQBVMVDBGTVEVRCDGVQCBVMWKACFVDVFCGTVEVG $.
+
+    $d N x y $.
+    $( Element of the value of an operation given by a maps-to rule, where the
+       first argument is a pair and the base set of the second argument is the
+       first component of the first argument.  (Contributed by Alexander van
+       der Vekens and Mario Carneiro, 10-Oct-2017.) $)
+    mpt2xopovel $p |- ( ( V e. X /\ W e. Y ) -> ( N e. ( <. V , W >. F K )
+                <-> ( K e. V /\ N e. V /\ [. <. V , W >. / x ].
+                      [. K / y ]. [. N / n ]. ph ) ) ) $=
+      ( wcel wa cop co wsbc crab sbccom bitri w3a cv cfv mpt2xopn0yelv pm4.71rd
+      c1st mpt2xopoveq eleq2d nfcv elrabsf sbcbii anbi2i syl6bb pm5.32da 3anass
+      syl6bbr bitrd ) HJMIKMNZGHIOZFEPZMZFHMZVANZVBGHMZADGQCFQZBUSQZUAZURVAVBBC
+      ADBUBUFUCREFGHIJKLUDUEURVCVBVDVFNZNVGURVBVAVHURVBNZVAGACFQZBUSQZDHRZMZVHV
+      IUTVLGABCDEFHIJKLUGUHVMVDVKDGQZNVHVKDGHDHUIUJVNVFVDVNVJDGQZBUSQVFVJDBGUSS
+      VOVEBUSADCGFSUKTULTUMUNVBVDVFUOUPUQ $.
+  $}
+
+  ${
+    $d E e f p v $.  $d V e f p v $.  $d W e v $.  $d ps e v $.
+    sprmpt2.1 $e |- M = ( v e. _V , e e. _V
+                          |-> { <. f , p >. | ( f ( v W e ) p /\ ch ) } ) $.
+    sprmpt2.2 $e |- ( ( v = V /\ e = E ) -> ( ch <-> ps ) ) $.
+    sprmpt2.3 $e |- ( ( V e. _V /\ E e. _V ) -> ( f ( V W E ) p -> th ) ) $.
+    sprmpt2.4 $e |- ( ( V e. _V /\ E e. _V ) -> { <. f , p >. | th } e. _V ) $.
+    $( The extension of a binary relation which is the value of an operation
+       given in maps-to notation.  (Contributed by Alexander van der Vekens,
+       30-Oct-2017.) $)
+    sprmpt2 $p |- ( ( V e. _V /\ E e. _V ) -> ( V M E )
+                    = { <. f , p >. | ( f ( V W E ) p /\ ps ) } ) $=
+      ( cvv wcel wa cv wceq co wbr copab cmpt2 a1i oveq12 adantl breqd opabbidv
+      wb anbi12d simpl simpr opabbrex ovmpt2d ) IPQZGPQZRZDEIGPPFSZKSZDSZESZJUA
+      ZUBZBRZFKUCZUSUTIGJUAZUBZARZFKUCHPHDEPPVFUDTURLUEURVAITVBGTRZRZVEVIFKVKVD
+      VHBAVKVCVGUSUTVJVCVGTURVAIVBGJUFUGUHVJBAUJURMUGUKUIUPUQULUPUQUMACFGIJKNOU
+      NUO $.
+  $}
+
+  ${
+    $d F f p $.  $d P f p $.  $d W f p $.  $d ch f p $.
+    isprmpt2.1 $e |- ( ph -> M = { <. f , p >. | ( f W p /\ ps ) } ) $.
+    isprmpt2.2 $e |- ( ( f = F /\ p = P ) -> ( ps <-> ch ) ) $.
+    $( Properties of a pair in an extended binary relation.  (Contributed by
+       Alexander van der Vekens, 30-Oct-2017.) $)
+    isprmpt2 $p |- ( ph -> ( ( F e. X /\ P e. Y )
+                     -> ( F M P <-> ( F W P /\ ch ) ) ) ) $=
+      ( wcel wa wbr wb cop cv wceq copab adantr eleq2d syl5bb breq12 opelopabga
+      df-br anbi12d adantl bitrd ex ) AFINDJNOZFDGPZFDHPZCOZQAULOZUMFDRZESZKSZH
+      PZBOZEKUAZNZUOUMUQGNUPVCFDGUGUPGVBUQAGVBTULLUBUCUDULVCUOQAVAUOEKFDIJURFTU
+      SDTOUTUNBCURFUSDHUEMUHUFUIUJUK $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
