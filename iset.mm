@@ -52636,31 +52636,6 @@ $)
   $}
 
   ${
-    $d x y $.
-    brovex.1 $e |- O = ( x e. _V , y e. _V |-> C ) $.
-    brovex.2 $e |- ( ( V e. _V /\ E e. _V ) -> Rel ( V O E ) ) $.
-    $( A binary relation of the value of an operation given by the "maps to"
-       notation.  (Contributed by Alexander van der Vekens, 21-Oct-2017.) $)
-    brovex $p |- ( F ( V O E ) P
-                   -> ( ( V e. _V /\ E e. _V ) /\ ( F e. _V /\ P e. _V ) ) ) $=
-      ( co wbr cvv wcel wa cop wi df-br c0 wne ne0i mpt2ndm0 necon1ai brrelex12
-      wrel sylan id syldan ex 3syl sylbi pm2.43i ) FDHEGKZLZHMNEMNOZFMNDMNOZOZU
-      NFDPZUMNZUNUQQZFDUMRUSUMSTUOUTUMURUAUOUMSABCGHEMMIUBUCUOUNUQUOUNUPUQUOUMU
-      EUNUPJFDUMUDUFUQUGUHUIUJUKUL $.
-  $}
-
-  ${
-    $d w x y z $.
-    brovmpt2ex.1 $e |- O = ( x e. _V , y e. _V |-> { <. z , w >. | ph } ) $.
-    $( A binary relation of the value of an operation given by the "maps to"
-       notation.  (Contributed by Alexander van der Vekens, 21-Oct-2017.) $)
-    brovmpt2ex $p |- ( F ( V O E ) P
-                   -> ( ( V e. _V /\ E e. _V ) /\ ( F e. _V /\ P e. _V ) ) ) $=
-      ( copab co wrel cvv wcel wa relmpt2opab a1i brovex ) BCADELFGHIJKJGIMNJOP
-      GOPQABCDEOOJGIKRST $.
-  $}
-
-  ${
     $d E e f p v $.  $d V e f p v $.  $d W e v $.  $d ps e v $.
     sprmpt2.1 $e |- M = ( v e. _V , e e. _V
                           |-> { <. f , p >. | ( f ( v W e ) p /\ ch ) } ) $.
