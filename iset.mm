@@ -52793,13 +52793,6 @@ $)
       cotp wbr ) AEHBFHCGHIZABJZCJZDKZHZBAJZCJZDHZABCRZUCHBACRZDHTUAC
       UCSUECDSUDUGABCDEFGLUACUCMUECDMNUHUBUCABCOPUIUFDBACOPQ $.
 
-    $( The transposition swaps arguments of a three-parameter relation.
-       (Contributed by Mario Carneiro, 3-Nov-2015.) $)
-    relbrtpos $p |- ( Rel F ->
-      ( <. A , B >. tpos F C <-> <. B , A >. F C ) ) $=
-      ( wrel cop ctpos wbr cvv wcel reltpos a1i brrelex2 sylan brtpos pm5.21nd
-      ) DEZABFZCDGZHZBAFZCDHCIJZQSEZTUBUCQDKLRCSMNUACDMABCDIOP $.
-
     $( The domain of ` tpos F ` when ` dom F ` is a relation.  (Contributed by
        Mario Carneiro, 10-Sep-2015.) $)
     dmtpos $p |- ( Rel dom F -> dom tpos F = `' dom F ) $=
