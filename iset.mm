@@ -52825,17 +52825,24 @@ $)
       dmexg unexg sylancl rnexg xpexg syl2anc ssexg sylancr ) ABCZADZAEZFZGHZIZ
       AJZKZLUMMCZUGMCANUFUKMCZULMCUNUFUIMCZUJMCUOUFUHMCUPABRUHMOPQUIUJMMSTABUAU
       KULMMUBUCUGUMMUDUE $.
+  $}
 
+  ${
+    $d y A $.  $d y B $.  $d y F $.  $d y V $.  $d y W $.
     $( The transposition swaps the arguments in a two-argument function.  When
        ` F ` is a matrix, which is to say a function from
        ` ( 1 ... m ) X. ( 1 ... n ) ` to ` RR ` or some ring, ` tpos F ` is the
        transposition of ` F ` , which is where the name comes from.
        (Contributed by Mario Carneiro, 10-Sep-2015.) $)
-    ovtpos $p |- ( A tpos F B ) = ( B F A ) $=
-      ( vy cop ctpos cfv co cv wbr cio cvv wcel wb vex brtpos ax-mp df-fv df-ov
-      3eqtr4i iotabii ) ABEZCFZGZBAEZCGZABUCHBACHUBDIZUCJZDKUEUGCJZDKUDUFUHUIDU
-      GLMUHUINDOABUGCLPQUADUBUCRDUECRTABUCSBACST $.
+    ovtposg $p |- ( ( A e. V /\ B e. W ) -> ( A tpos F B ) = ( B F A ) ) $=
+      ( vy wcel wa cop ctpos cfv co cv wbr cio cvv wb df-fv 3eqtr4g df-ov vex
+      brtposg mp3an3 iotabidv ) ADGZBEGZHZABIZCJZKZBAIZCKZABUILBACLUGUHFMZUINZF
+      OUKUMCNZFOUJULUGUNUOFUEUFUMPGUNUOQFUAABUMCDEPUBUCUDFUHUIRFUKCRSABUITBACTS
+      $.
+  $}
 
+  ${
+    $d x y A $.  $d x y B $.  $d w x y z F $.  $d x G $.
     $( The transposition of a function is a function.  (Contributed by Mario
        Carneiro, 10-Sep-2015.) $)
     tposfun $p |- ( Fun F -> Fun tpos F ) $=
