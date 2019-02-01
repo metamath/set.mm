@@ -52787,11 +52787,11 @@ $)
 
     $( The transposition swaps the first two elements in a collection of
        ordered triples.  (Contributed by Mario Carneiro, 1-Dec-2014.) $)
-    ottpos $p |- ( C e. V ->
-      ( <. A , B , C >. e. tpos F <-> <. B , A , C >. e. F ) ) $=
-      ( wcel cop ctpos cotp wbr brtpos df-br 3bitr3g df-ot eleq1i 3bitr4g ) CEF
-      ZABGZCGZDHZFZBAGZCGZDFZABCIZTFBACIZDFQRCTJUBCDJUAUDABCDEKRCTLUBCDLMUESTAB
-      CNOUFUCDBACNOP $.
+    ottposg $p |- ( ( A e. V /\ B e. W /\ C e. X ) ->
+        ( <. A , B , C >. e. tpos F <-> <. B , A , C >. e. F ) ) $=
+      ( wcel w3a cop ctpos brtposg df-br 3bitr3g df-ot eleq1i 3bitr4g
+      cotp wbr ) AEHBFHCGHIZABJZCJZDKZHZBAJZCJZDHZABCRZUCHBACRZDHTUAC
+      UCSUECDSUDUGABCDEFGLUACUCMUECDMNUHUBUCABCOPUIUFDBACOPQ $.
 
     $( The transposition swaps arguments of a three-parameter relation.
        (Contributed by Mario Carneiro, 3-Nov-2015.) $)
