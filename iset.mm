@@ -52796,12 +52796,13 @@ $)
     $( The domain of ` tpos F ` when ` dom F ` is a relation.  (Contributed by
        Mario Carneiro, 10-Sep-2015.) $)
     dmtpos $p |- ( Rel dom F -> dom tpos F = `' dom F ) $=
-      ( vx vy vz ctpos cdm wrel ccnv wa wceq cvv wcel cop wbr wex vex opex eldm
-      c0 cv cxp wss wn 0nelxp ssel df-rel reldmtpos 3imtr4i relcnv jctir brtpos
-      mtoi wb mp1i exbidv opelcnv bitri 3bitr4g eqrelrdv2 mpancom ) AEZFZGZAFZH
-      ZGZIVDGZVBVEJVGVCVFVDKKUAZUBZSVDLZUCVGVCVIVJSVHLKKUDVDVHSUEULVDUFAUGUHVDU
-      IUJVGBCVBVEVGBTZCTZMZDTZVANZDOVLVKMZVNANZDOZVMVBLVMVELZVGVOVQDVNKLVOVQUMV
-      GDPVKVLVNAKUKUNUODVMVAVKVLQRVSVPVDLVRVKVLVDBPCPUPDVPAVLVKQRUQURUSUT $.
+      ( vx vy vz ctpos cdm wrel ccnv wa wceq cvv c0 wcel cop wbr wex sopex eldm
+      cv vex cxp wss wn 0nelxp ssel mtoi df-rel reldmtpos 3imtr4i jctir brtposg
+      relcnv wb mp3an a1i exbidv opelcnv bitri 3bitr4g eqrelrdv2 mpancom ) AEZF
+      ZGZAFZHZGZIVEGZVCVFJVHVDVGVEKKUAZUBZLVEMZUCVHVDVJVKLVIMKKUDVEVILUEUFVEUGA
+      UHUIVEULUJVHBCVCVFVHBSZCSZNZDSZVBOZDPVMVLNZVOAOZDPZVNVCMVNVFMZVHVPVRDVPVR
+      UMZVHVLKMVMKMVOKMWABTZCTZDTVLVMVOAKKKUKUNUOUPDVNVBBCQRVTVQVEMVSVLVMVEWBWC
+      UQDVQACBQRURUSUTVA $.
 
     $( The range of ` tpos F ` when ` dom F ` is a relation.  (Contributed by
        Mario Carneiro, 10-Sep-2015.) $)
