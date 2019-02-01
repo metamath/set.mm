@@ -52774,16 +52774,16 @@ $)
       SXCXEVJVKVLVMVNVOVPVRWRVSVT $.
 
     $( The transposition swaps arguments of a three-parameter relation.
-       (Contributed by Mario Carneiro, 10-Sep-2015.) $)
-    brtpos $p |- ( C e. V -> ( <. A , B >. tpos F C <-> <. B , A >. F C ) ) $=
-      ( wcel cvv wa cop ctpos wbr wb cdm ccnv c0 csn adantr wn opprc breq1d cun
-      cuni brtpos2 wi opex breldmg 3expia mpan opelcnvg adantl sylibrd pm4.71rd
-      elun1 opswap breq1i anbi2i syl6bbr bitr4d ex brtpos0 ancom sylnbi bibi12d
-      syl6 syl5ibrcom pm2.61d ) CEFZAGFZBGFZHZABIZCDJZKZBAIZCDKZLZVGVJVPVGVJHZV
-      MVKDMZNZOPZUAFZVKPNUBZCDKZHZVOVGVMWDLVJVKCDEUCQVQVOWAVOHWDVQVOWAVQVOVKVSF
-      ZWAVQVOVNVRFZWEVGVOWFUDZVJVNGFZVGWGBAUEWHVGVOWFVNCGEDUFUGUHQVJWEWFLVGABGG
-      VRUIUJUKVKVSVTUMVDULWCVOWAWBVNCDABUNUOUPUQURUSVGVPVJRZOCVLKZOCDKZLCDEUTWI
-      VMWJVOWKWIVKOCVLABSTVJVIVHHZVOWKLVHVIVAWLRVNOCDBASTVBVCVEVF $.
+       (Contributed by Jim Kingdon, 31-Jan-2019.) $)
+    brtposg $p |- ( ( A e. V /\ B e. W /\ C e. X ) ->
+        ( <. A , B >. tpos F C <-> <. B , A >. F C ) ) $=
+      ( wcel w3a cop cdm ccnv c0 csn cun wbr wa wb 3adant3 cvv opswapg 3ad2ant3
+      cuni ctpos breq1d anbi2d brtpos2 opexg ancoms anim1i 3impa breldmg 3expia
+      wi syl opelcnvg sylibrd elun1 syl6 pm4.71rd 3bitr4d ) AEHZBFHZCGHZIZABJZD
+      KZLZMNZOHZVFNLUCZCDPZQZVJBAJZCDPZQVFCDUDPZVOVEVLVOVJVBVCVLVORVDVBVCQZVKVN
+      CDABEFUAUESUFVDVBVPVMRVCVFCDGUGUBVEVOVJVEVOVFVHHZVJVEVOVNVGHZVRVEVNTHZVDQ
+      ZVOVSUNVBVCVDWAVQVTVDVCVBVTBAFEUHUIUJUKVTVDVOVSVNCTGDULUMUOVBVCVRVSRVDABE
+      FVGUPSUQVFVHVIURUSUTVA $.
 
     $( The transposition swaps the first two elements in a collection of
        ordered triples.  (Contributed by Mario Carneiro, 1-Dec-2014.) $)
