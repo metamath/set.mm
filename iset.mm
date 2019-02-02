@@ -53013,10 +53013,11 @@ $)
        Carneiro, 4-Oct-2015.) $)
     tpossym $p |- ( F Fn ( A X. A ) ->
       ( tpos F = F <-> A. x e. A A. y e. A ( x F y ) = ( y F x ) ) ) $=
-      ( cxp ctpos wceq cv co wral wb tposfn eqfnov2 mpancom eqcom ovtpos eqeq2i
-      wfn bitri 2ralbii syl6bb ) DCCEZRZDFZDGZAHZBHZUDIZUFUGDIZGZBCJACJZUIUGUFD
-      IZGZBCJACJUDUBRUCUEUKKCCDLABCCUDDMNUJUMABCCUJUIUHGUMUHUIOUHULUIUFUGDPQSTU
-      A $.
+      ( cxp wfn ctpos wceq cv co wral wb tposfn eqfnov2 mpancom eqcom
+      cvv wcel vex ovtposg mp2an eqeq2i bitri 2ralbii syl6bb ) DCCEZF
+      ZDGZDHZAIZBIZUHJZUJUKDJZHZBCKACKZUMUKUJDJZHZBCKACKUHUFFUGUIUOLC
+      CDMABCCUHDNOUNUQABCCUNUMULHUQULUMPULUPUMUJQRUKQRULUPHASBSUJUKDQ
+      QTUAUBUCUDUE $.
 
   $}
 
