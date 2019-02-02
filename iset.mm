@@ -53101,20 +53101,6 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d y z B $.
-    $( The nonempty indexed intersection of a class of ordinal numbers
-       ` B ( x ) ` is an ordinal number.  (Contributed by NM, 13-Oct-2003.)
-       (Proof shortened by Mario Carneiro, 5-Dec-2016.) $)
-    iinon $p |- ( ( A. x e. A B e. On /\ A =/= (/) ) ->
-                |^|_ x e. A B e. On ) $=
-      ( con0 wcel wral c0 wne wa ciin cmpt crn cint wceq dfiin3g adantr wf eqid
-      wss fmpt frn sylbi dm0rn0 dmmptg eqeq1d syl5bbr necon3bid biimpar oninton
-      cdm syl2anc eqeltrd ) CDEABFZBGHZIZABCJZABCKZLZMZDUMUPUSNUNABCDOPUOURDSZU
-      RGHZUSDEUMUTUNUMBDUQQUTABDCUQUQRTBDUQUAUBPUMVAUNUMURGBGURGNUQUJZGNUMBGNUQ
-      UCUMVBBGABCDUDUEUFUGUHURUIUKUL $.
-  $}
-
-  ${
     $d x y S $.  $d x y F $.  $d x T $.
     onfununi.1 $e |- ( Lim y -> ( F ` y ) = U_ x e. y ( F ` x ) ) $.
     onfununi.2 $e |- ( ( x e. On /\ y e. On /\ x C_ y )
