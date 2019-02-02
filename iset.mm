@@ -53074,6 +53074,476 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Functions on ordinals; strictly monotone ordinal functions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x A $.
+    $( The indexed union of a set of ordinal numbers ` B ( x ) ` is an ordinal
+       number.  (Contributed by NM, 13-Oct-2003.)  (Revised by Mario Carneiro,
+       5-Dec-2016.) $)
+    iunon $p |- ( ( A e. V /\ A. x e. A B e. On ) -> U_ x e. A B e. On ) $=
+      ( wcel con0 wral wa ciun cmpt crn cuni wceq dfiun3g adantl cvv wss mptexg
+      rnexg syl wf eqid fmpt frn sylbi ssonuni imp syl2an eqeltrd ) BDEZCFEABGZ
+      HABCIZABCJZKZLZFUKULUOMUJABCFNOUJUNPEZUNFQZUOFEZUKUJUMPEUPABCDRUMPSTUKBFU
+      MUAUQABFCUMUMUBUCBFUMUDUEUPUQURUNPUFUGUHUI $.
+
+    iunonOLD.1 $e |- A e. _V $.
+    iunonOLD.2 $e |- B e. _V $.
+    $( The indexed union of a set of ordinal numbers ` B ( x ) ` is an ordinal
+       number.  (Contributed by NM, 13-Oct-2003.)  (Revised by Mario Carneiro,
+       5-Dec-2016.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    iunonOLD $p |- ( A. x e. A B e. On -> U_ x e. A B e. On ) $=
+      ( cvv wcel con0 wral ciun iunon mpan ) BFGCHGABIABCJHGDABCFKL $.
+  $}
+
+  ${
+    $d x y z A $.  $d y z B $.
+    $( The nonempty indexed intersection of a class of ordinal numbers
+       ` B ( x ) ` is an ordinal number.  (Contributed by NM, 13-Oct-2003.)
+       (Proof shortened by Mario Carneiro, 5-Dec-2016.) $)
+    iinon $p |- ( ( A. x e. A B e. On /\ A =/= (/) ) ->
+                |^|_ x e. A B e. On ) $=
+      ( con0 wcel wral c0 wne wa ciin cmpt crn cint wceq dfiin3g adantr wf eqid
+      wss fmpt frn sylbi dm0rn0 dmmptg eqeq1d syl5bbr necon3bid biimpar oninton
+      cdm syl2anc eqeltrd ) CDEABFZBGHZIZABCJZABCKZLZMZDUMUPUSNUNABCDOPUOURDSZU
+      RGHZUSDEUMUTUNUMBDUQQUTABDCUQUQRTBDUQUAUBPUMVAUNUMURGBGURGNUQUJZGNUMBGNUQ
+      UCUMVBBGABCDUDUEUFUGUHURUIUKUL $.
+  $}
+
+  ${
+    $d x y S $.  $d x y F $.  $d x T $.
+    onfununi.1 $e |- ( Lim y -> ( F ` y ) = U_ x e. y ( F ` x ) ) $.
+    onfununi.2 $e |- ( ( x e. On /\ y e. On /\ x C_ y )
+                  -> ( F ` x ) C_ ( F ` y ) ) $.
+    $( A property of functions on ordinal numbers.  Generalization of Theorem
+       Schema 8E of [Enderton] p. 218.  (Contributed by Eric Schmidt,
+       26-May-2009.) $)
+    onfununi $p |- ( ( S e. T /\ S C_ On /\ S =/= (/) )
+                -> ( F ` U. S ) = U_ x e. S ( F ` x ) ) $=
+      ( wcel con0 wss cfv ciun wa wceq word wi syl6 imp adantr fveq2 c0 wne w3a
+      cuni cv wn wlim ssorduni ad2antrr nelneq wo elssuni adantl ssel ordsseleq
+      eloni syl2an anabss1 mpbid ord con1d syl5 exp4b pm2.43d com23 ssrdv sylan
+      wb ssn0 unissd orduniss syl eqssd df-lim syl3anbrc an32s 3adantl1 ssonuni
+      limeq iuneq1 eqeq12d imbi12d vtoclg 3adant3 mpd wral eluni2 anim1d onelon
+      wrex adantrd a1i syland 3jcad exp3a reximdvai syl5bi ssiun ralrimiv iunss
+      ordelss sylibr cbviunv syl6sseq 3ad2ant2 eqsstrd ex ssiun2s pm2.61d2 jcad
+      sseq2 anbi2d sseq2d 3com12 3expib vtoclga sylsyld ) CDHZCIJZCUAUBZUCZCUDZ
+      EKZACAUEZEKZLZYAYBCHZYCYFJZYAYGUFZYHYAYIMZYCAYBYELZYFYJYBUGZYCYKNZXSXTYIY
+      LXRXSYIXTYLXSYIMZXTMYBOZYBUAUBZYBYBUDZNZYLXSYOYIXTCUHZUIYNCYBJXTYPYNACYBX
+      SYIYDCHZYDYBHZPXSYTYIUUAXSYTYIUUAPXSYTYTYIUUAYTYIMYDYBNZUFXSYTMZUUAYDYBCU
+      JUUCUUAUUBUUCUUAUUBUUCYDYBJZUUAUUBUKZYTUUDXSYDCULZUMXSYTUUDUUEVHZUUCYDOZY
+      OUUGXSXSYTUUHXSYTYDIHZUUHCIYDUNZYDUPQRYSYDYBUOUQURUSUTVAVBVCVDVERVFZCYBVI
+      VGYNYRXTYNYBYQYNCYBUUKVJXSYQYBJZYIXSYOUULYSYBVKVLSVMSYBVNVOVPVQYAYLYMPZYI
+      XRXSUUMXTXRXSUUMXRXSYBIHZUUMCDVRZBUEZUGZUUPEKZAUUPYELZNZPUUMBYBIUUPYBNZUU
+      QYLUUTYMUUPYBVSUVAUURYCUUSYKUUPYBETZAUUPYBYEVTWAWBFWCQRWDSWEYAYKYFJZYIXSX
+      RUVCXTXSYKBCUURLZYFXSYEUVDJZAYBWFYKUVDJXSUVEAYBXSUUAYEUURJZBCWJZUVEUUAYDU
+      UPHZBCWJXSUVGBYDCWGXSUVHUVFBCXSUUPCHZUVHUVFXSUVIUVHMZUUIUUPIHZYDUUPJZUCUV
+      FXSUVJUUIUVKUVLXSUVJUVKUVHMUUIXSUVIUVKUVHCIUUPUNZWHUUPYDWIQXSUVIUVKUVHUVM
+      WKXSUVIUUPOZUVHUVLXSUVIUVKUVNUVMUUPUPQUVNUVHMUVLPXSUUPYDXAWLWMWNGQWOWPWQB
+      CUURYEWRQWSAYBYEUVDWTXBBACUURYEUUPYDETXCXDXESXFXGACYEYBYCYDYBETXHXIYAYEYC
+      JZACWFYFYCJYAUVOACYAUUNYTUUIUUDMZUVOXRXSUUNXTXRXSUUNUUORWDYAYTUUIUUDXSXRY
+      TUUIPXTUUJXEYTUUDPYAUUFWLXJUUIUVLMZUVFPUVPUVOPBYBIUVAUVQUVPUVFUVOUVAUVLUU
+      DUUIUUPYBYDXKXLUVAUURYCYEUVBXMWBUVKUUIUVLUVFUUIUVKUVLUVFGXNXOXPXQWSACYEYC
+      WTXBVM $.
+  $}
+
+  ${
+    $d w x y z A $.  $d w x y z F $.  $d w x y z K $.  $d w x y L $.
+    $d w x y z S $.  $d w T $.
+    onovuni.1 $e |- ( Lim y -> ( A F y ) = U_ x e. y ( A F x ) ) $.
+    onovuni.2 $e |- ( ( x e. On /\ y e. On /\ x C_ y )
+                  -> ( A F x ) C_ ( A F y ) ) $.
+    ${
+      $d x T $.
+      $( A variant of ~ onfununi for operations.  (Contributed by Eric Schmidt,
+         26-May-2009.)  (Revised by Mario Carneiro, 11-Sep-2015.) $)
+      onovuni $p |- ( ( S e. T /\ S C_ On /\ S =/= (/) )
+                     -> ( A F U. S ) = U_ x e. S ( A F x ) ) $=
+        ( vz wcel con0 cvv cv co cfv ciun wceq oveq2 ovex fvmpt wss c0 wne cuni
+        w3a cmpt wlim vex ax-mp a1i iuneq2i 3eqtr4g 3sstr4g onfununi uniexg syl
+        eqid 3ad2ant1 3eqtr3d ) DEJZDKUAZDUBUCZUEZDUDZILCIMZFNZUFZOZADAMZVGOZPZ
+        CVDFNZADCVIFNZPZABDEVGBMZUGCVOFNZAVOVMPVOVGOZAVOVJPGVOLJVQVPQBUHIVOVFVP
+        LVGVEVOCFRVGUQZCVOFSTUIZAVOVJVMVJVMQZVIVOJVILJVTAUHIVIVFVMLVGVEVICFRVRC
+        VIFSTUIZUJUKULVIKJVOKJVIVOUAUEVMVPVJVQHWAVSUMUNUTVAVHVLQZVBUTVDLJWBDEUO
+        IVDVFVLLVGVEVDCFRVRCVDFSTUPURVKVNQVCADVJVMVTVIDJWAUJUKUJUS $.
+    $}
+
+    $( A variant of ~ onovuni with indexed unions.  (Contributed by Eric
+       Schmidt, 26-May-2009.)  (Proof shortened by Mario Carneiro,
+       5-Dec-2016.) $)
+    onoviun $p |- ( ( K e. T /\ A. z e. K L e. On /\ K =/= (/) )
+                -> ( A F U_ z e. K L ) = U_ z e. K ( A F L ) ) $=
+      ( vw wcel con0 c0 wne ciun co wceq 3ad2ant2 cvv wral w3a cmpt crn cuni cv
+      dfiun3g oveq2d wss simp1 mptexg rnexg 3syl wf simp2 eqid fmpt frn syl cdm
+      sylib dmmptg simp3 eqnetrd dm0rn0 necon3bii onovuni syl3anc wrex wb oveq2
+      eleq2d rexrnmpt eliun 3bitr4g eqrdv 3eqtrd ) GELZHMLCGUAZGNOZUBZDCGHPZFQD
+      CGHUCZUDZUEZFQZAWDDAUFZFQZPZCGDHFQZPZWAWBWEDFVSVRWBWERVTCGHMUGSUHWAWDTLZW
+      DMUIZWDNOZWFWIRWAVRWCTLWLVRVSVTUJCGHEUKWCTULUMWAGMWCUNZWMWAVSWOVRVSVTUOCG
+      MHWCWCUPZUQVAGMWCURUSWAWCUTZNOWNWAWQGNVSVRWQGRVTCGHMVBSVRVSVTVCVDWQNWDNWC
+      VEVFVAABDWDTFIJVGVHWAKWIWKWAKUFZWHLZAWDVIZWRWJLZCGVIZWRWILWRWKLVSVRWTXBVJ
+      VTWSXACAGHWCMWPWGHRWHWJWRWGHDFVKVLVMSAWRWDWHVNCWRGWJVNVOVPVQ $.
+  $}
+
+  ${
+    $d w x y z F $.
+    $( There are no length ` om ` decreasing sequences in the ordinals.  See
+       also ~ noinfep for a stronger version assuming Regularity.  (Contributed
+       by Mario Carneiro, 19-May-2015.) $)
+    onnseq $p |- ( ( F ` (/) ) e. On ->
+      E. x e. om -. ( F ` suc x ) e. ( F ` x ) ) $=
+      ( vy vw vz c0 cfv con0 wcel cv csuc com wral wrex wceq fveq2 eleq1d sylib
+      wne cvv wn cmpt crn cin wa cep wwe wss epweon a1i wf simpl fveq2d eleq12d
+      wi suceq rspcv onelon expcom syl6 adantld finds2 com12 ralrimiv eqid fmpt
+      frn syl cdm peano1 fdm syl5eleqr ne0i dm0rn0 necon3bii wefrc syl3anc fvex
+      wb rgenw cbvmptv ineq2 eqeq1d rexrnmpt ax-mp peano2 adantl eqeq2d sylancl
+      rspcev elrnmpt sylibr rspccva adantll inelcm syl2anc neneqd nrexdv rexnal
+      pm2.65da ) FBGZHIZAJZKZBGZXCBGZIZALMZUAXGUAALNXBXHCLCJZBGZUBZUCZDJZBGZUDZ
+      FOZDLNZXBXHUEZXLEJZUDZFOZEXLNZXQXRHUFUGZXLHUHZXLFSZYBYCXRUIUJXRLHXKUKZYDX
+      RXJHIZCLMYFXRYGCLXILIXRYGYGXBXSBGZHIZXSKZBGZHIZXRCEXIFOXJXAHXIFBPQXIXSOXJ
+      YHHXIXSBPQXIYJOXJYKHXIYJBPQXBXHULXSLIZXHYIYLUOZXBYMXHYKYHIZYNXGYOAXSLXCXS
+      OZXEYKXFYHYPXDYJBXCXSUPUMXCXSBPUNUQYIYOYLYHYKURUSUTVAVBVCVDCLHXJXKXKVEZVF
+      RZLHXKVGVHXRXKVIZFSZYEXRFYSIYTXRFLYSVJXRYFYSLOYRLHXKVKVHVLYSFVMVHYSFXLFXK
+      VNVOREHXLVPVQXNTIZDLMYBXQVSUUADLXMBVRVTYAXPDELXNXKTCDLXJXNXIXMBPWAXSXNOXT
+      XOFXSXNXLWBWCWDWERXRXPDLXRXMLIZUEZXOFUUCXMKZBGZXLIZUUEXNIZXOFSUUCUUEXJOZC
+      LNZUUFUUCUUDLIZUUEUUEOZUUIUUBUUJXRXMWFWGUUEVEUUHUUKCUUDLXIUUDOXJUUEUUEXIU
+      UDBPWHWJWIUUETIUUFUUIVSUUDBVRCLXJUUEXKTYQWKWEWLXHUUBUUGXBXGUUGAXMLXCXMOZX
+      EUUEXFXNUULXDUUDBXCXMUPUMXCXMBPUNWMWNUUEXLXNWOWPWQWRWTXGALWSWL $.
+  $}
+
+  $c Smo $.
+
+  $( Introduce the strictly monotone ordinal function.  A strictly monotone
+     function is one that is constantly increasing across the ordinals. $)
+  wsmo $a wff Smo A $.
+
+  ${
+    $d x y A $.
+    $( Definition of a strictly monotone ordinal function.  Definition 7.46 in
+       [TakeutiZaring] p. 50.  (Contributed by Andrew Salmon, 15-Nov-2011.) $)
+    df-smo $a |- ( Smo A <-> ( A : dom A --> On /\ Ord dom A /\ A. x e. dom A
+       A. y e. dom A ( x e. y -> ( A ` x ) e. ( A ` y ) ) ) ) $.
+  $}
+
+  ${
+    $d F x y $.
+    $( Alternate definition of a strictly monotone ordinal function.
+       (Contributed by Mario Carneiro, 4-Mar-2013.) $)
+    dfsmo2 $p |- ( Smo F <-> ( F : dom F --> On /\ Ord dom F /\ A. x e. dom F
+       A. y e. x ( F ` y ) e. ( F ` x ) ) ) $=
+      ( wsmo cdm con0 wf word wel cfv wcel wral w3a df-smo ralcom impexp 3anass
+      cv wi wa simpr ordtr1 3impib 3com23 simp3 3expia impbid2 syl5bbr ralbidv2
+      jca imbi1d ralbidva syl5bb pm5.32i anbi2i 3bitr4i bitri ) CDCEZFCGZURHZBA
+      IZBRZCJARZCJKZSZAURLBURLZMZUSUTVDBVCLZAURLZMZBACNUSUTVFTZTUSUTVITZTVGVJVK
+      VLUSUTVFVIVFVEBURLZAURLUTVIVEBAURUROUTVMVHAURUTVCURKZTZVEVDBURVCVBURKZVES
+      VPVATZVDSVOVEVPVAVDPVOVQVAVDVOVQVAVPVAUAUTVNVAVQUTVNVAMVPVAUTVAVNVPUTVAVN
+      VPVBVCURUBUCUDUTVNVAUEUJUFUGUKUHUIULUMUNUOUSUTVFQUSUTVIQUPUQ $.
+  $}
+
+  ${
+    $d x y A $.
+    issmo.1 $e |- A : B --> On $.
+    issmo.2 $e |- Ord B $.
+    issmo.3 $e |- ( ( x e. B /\ y e. B ) -> ( x e. y -> ( A ` x ) e. ( A ` y
+       ) ) ) $.
+    issmo.4 $e |- dom A = B $.
+    $( Conditions for which ` A ` is a strictly monotone ordinal function.
+       (Contributed by Andrew Salmon, 15-Nov-2011.) $)
+    issmo $p |- Smo A $=
+      ( wsmo cdm con0 wf word cv wcel cfv wi wral mpbir eleq2i feq2i wceq ordeq
+      wb ax-mp syl2anb rgen2a df-smo mpbir3an ) CICJZKCLZUJMZANZBNZOUMCPUNCPOQZ
+      BUJRAUJRUKDKCLEUJDKCHUASULDMZFUJDUBULUPUDHUJDUCUESUOABUJUMUJOUMDOUNDOUOUN
+      UJOUJDUMHTUJDUNHTGUFUGABCUHUI $.
+  $}
+
+  ${
+    $d A x $.  $d F x y $.
+    $( Alternative definition of a strictly monotone ordinal function.
+       (Contributed by Mario Carneiro, 12-Mar-2013.) $)
+    issmo2 $p |- ( F : A --> B -> ( ( B C_ On /\ Ord A /\
+       A. x e. A A. y e. x ( F ` y ) e. ( F ` x ) ) -> Smo F ) ) $=
+      ( wf con0 wss word cv cfv wcel wral w3a cdm wsmo fss ex fdm biimprd feq2d
+      sylibrd wceq wb ordeq syl raleqdv 3anim123d dfsmo2 syl6ibr ) CDEFZDGHZCIZ
+      BJEKAJZEKLBUNMZACMZNEOZGEFZUQIZUOAUQMZNEPUKULURUMUSUPUTUKULCGEFZURUKULVAC
+      DGEQRUKUQCGECDESZUAUBUKUSUMUKUQCUCUSUMUDVBUQCUEUFTUKUTUPUKUOAUQCVBUGTUHAB
+      EUIUJ $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Equality theorem for strictly monotone functions.  (Contributed by
+       Andrew Salmon, 16-Nov-2011.) $)
+    smoeq $p |- ( A = B -> ( Smo A <-> Smo B ) ) $=
+      ( vx vy wceq cdm con0 wf word cv wcel cfv wi wral w3a wsmo raleqdv df-smo
+      id fveq1 dmeq feq12d wb ordeq syl eleq12d imbi2d ralbidv 3bitrd 3anbi123d
+      2ralbidv 3bitr4g ) ABEZAFZGAHZUNIZCJZDJZKZUQALZURALZKZMZDUNNCUNNZOBFZGBHZ
+      VEIZUSUQBLZURBLZKZMZDVENZCVENZOAPBPUMUOVFUPVGVDVMUMUNVEGABUMSABUAZUBUMUNV
+      EEUPVGUCVNUNVEUDUEUMVDVKDUNNZCUNNVLCUNNVMUMVCVKCDUNUNUMVBVJUSUMUTVHVAVIUQ
+      ABTURABTUFUGUKUMVOVLCUNUMVKDUNVEVNQUHUMVLCUNVEVNQUIUJCDARCDBRUL $.
+
+    $( The domain of a strictly monotone function is an ordinal.  (Contributed
+       by Andrew Salmon, 16-Nov-2011.) $)
+    smodm $p |- ( Smo A -> Ord dom A ) $=
+      ( vx vy wsmo cdm con0 wf word cv wcel cfv wi wral df-smo simp2bi ) ADAEZF
+      AGPHBIZCIZJQAKRAKJLCPMBPMBCANO $.
+
+    $( A strictly monotone function restricted to an ordinal remains strictly
+       monotone.  (Contributed by Andrew Salmon, 16-Nov-2011.)  (Proof
+       shortened by Mario Carneiro, 5-Dec-2016.) $)
+    smores $p |- ( ( Smo A /\ B e. dom A ) -> Smo ( A |` B ) ) $=
+      ( vx vy cdm wcel wsmo con0 wf word cv cfv wi wral w3a wss ax-mp wceq syl
+      wa cres wfn crn wfun funres funfn 3imtr3i resss rnss sstr anim12i 3imtr4i
+      mpan df-f a1i ordelord expcom ordin ex syli wb dmres ordeq syl6ibr ssralv
+      cin ralimi inss1 eqsstri simpl sseldi fvres simpr eleq12d imbi2d ralbidva
+      dmss ralbiia sylibr 3anim123d df-smo 3imtr4g impcom ) BAEZFZAGZABUAZGZWEW
+      DHAIZWDJZCKZDKZFZWKALZWLALZFZMZDWDNZCWDNZOWGEZHWGIZWTJZWMWKWGLZWLWGLZFZMZ
+      DWTNZCWTNZOWFWHWEWIXAWJXBWSXHWIXAMWEAWDUBZAUCZHPZTWGWTUBZWGUCZHPZTWIXAXIX
+      LXKXNAUDWGUDXIXLBAUEAUFWGUFUGXMXJPZXKXNWGAPZXOABUHZWGAUIQXMXJHUJUMUKWDHAU
+      NWTHWGUNULUOWEWJBWDVFZJZXBWJWEBJZXSWJWEXTWDBUPUQXTWJXSBWDURUSUTWTXRRXBXSV
+      AABVBZWTXRVCQVDWSXHMWEWSWQDWTNZCWTNZXHWSWRCWTNZYCWTWDPZWSYDMXPYEXQWGAVQQZ
+      WRCWTWDVEQWRYBCWTYEWRYBMYFWQDWTWDVEQVGSXGYBCWTWKWTFZXFWQDWTYGWLWTFZTZXEWP
+      WMYIXCWNXDWOYIWKBFXCWNRYIWTBWKWTXRBYABWDVHVIZYGYHVJVKWKBAVLSYIWLBFXDWORYI
+      WTBWLYJYGYHVMVKWLBAVLSVNVOVPVRVSUOVTCDAWACDWGWAWBWC $.
+
+    $( A strictly monotone function restricted to an ordinal remains strictly
+       monotone.  (Contributed by Andrew Salmon, 19-Nov-2011.) $)
+    smores3 $p |- ( ( Smo ( A |` B ) /\ C e. ( dom A i^i B ) /\ Ord B ) -> Smo
+       ( A |` C ) ) $=
+      ( cres wsmo cdm cin wcel word w3a dmres incom eqtri eleq2i smores 3adant3
+      sylan2br wss wceq wb inss2 sseli ordelss sylan 3adant1 resabs1 smoeq 3syl
+      ancoms mpbid ) ABDZEZCAFZBGZHZBIZJZUKCDZEZACDZEZULUOUSUPUOULCUKFZHUSVBUNC
+      VBBUMGUNABKBUMLMNUKCOQPUQCBRZURUTSUSVATUOUPVCULUOCBHZUPVCUNBCUMBUAUBUPVDV
+      CBCUCUIUDUEACBUFURUTUGUHUJ $.
+  $}
+
+  ${
+    $d A x y $.  $d F x y $.
+    $( A strictly monotone ordinal function restricted to an ordinal is still
+       monotone.  (Contributed by Mario Carneiro, 15-Mar-2013.) $)
+    smores2 $p |- ( ( Smo F /\ Ord A ) -> Smo ( F |` A ) ) $=
+      ( vy vx wsmo word wa cdm con0 wf cv cfv wcel wral crn wss wfun dfsmo2 syl
+      wceq cres wfn simp1bi ffun funres funfn sylib df-ima imassrn eqsstr3i frn
+      cima syl5ss df-f sylanbrc adantr smodm cin ordin dmres ordeq ax-mp sylibr
+      wb ancoms sylan resss dmss simp3bi ssralv mpsyl wel wi ordtr1 inss1 sseli
+      eqsstri exp3acom23 imp31 fvres ad2antlr eleq12d ralbidva mpbird syl3anbrc
+      syl6 ) BEZAFZGZBAUAZHZIWJJZWKFZCKZWJLZDKZWJLZMZCWPNZDWKNZWJEWGWLWHWGWJWKU
+      BZWJOZIPWLWGBQZXAWGBHZIBJZXCWGXEXDFZWNBLZWPBLZMZCWPNZDXDNZDCBRZUCZXDIBUDS
+      XCWJQXAABUEWJUFUGSWGXBBOZIXBBAULXNBAUHBAUIUJWGXEXNIPXMXDIBUKSUMWKIWJUNUOU
+      PWGXFWHWMBUQWHXFWMWHXFGAXDURZFZWMAXDUSWKXOTWMXPVDBAUTZWKXOVAVBVCVEVFZWIWT
+      XJDWKNZWGXSWHWKXDPZWGXKXSWJBPXTBAVGWJBVHVBWGXEXFXKXLVIXJDWKXDVJVKUPWIWSXJ
+      DWKWIWPWKMZGZWRXICWPYBCDVLZGZWOXGWQXHYDWNAMZWOXGTWIYAYCYEWIYCYAYEWIYCYAGZ
+      WNWKMZYEWIWMYFYGVMXRWNWPWKVNSWKAWNWKXOAXQAXDVOVQZVPWFVRVSWNABVTSYAWQXHTZW
+      IYCYAWPAMYIWKAWPYHVPWPABVTSWAWBWCWCWDDCWJRWE $.
+  $}
+
+  $( The domain of a strictly monotone ordinal function is an ordinal.
+     (Contributed by Mario Carneiro, 12-Mar-2013.) $)
+  smodm2 $p |- ( ( F Fn A /\ Smo F ) -> Ord A ) $=
+    ( wsmo wfn cdm word smodm wceq wb fndm ordeq syl biimpa sylan2 ) BCBADZBEZF
+    ZAFZBGOQROPAHQRIABJPAKLMN $.
+
+  ${
+    $d F x y $.
+    $( The function values of a strictly monotone ordinal function are
+       ordinals.  (Contributed by Mario Carneiro, 12-Mar-2013.) $)
+    smofvon2 $p |- ( Smo F -> ( F ` B ) e. On ) $=
+      ( vy vx cdm wcel wsmo cfv con0 wi word wral dfsmo2 simp1bi ffvelrn expcom
+      wf cv syl5 wn c0 ndmfv 0elon syl6eqel a1d pm2.61i ) ABEZFZBGZABHZIFZJUIUG
+      IBQZUHUKUIULUGKCRBHDRZBHFCUMLDUGLDCBMNULUHUKUGIABOPSUHTZUKUIUNUJUAIABUBUC
+      UDUEUF $.
+  $}
+
+  ${
+    $d x y A $.
+    iordsmo.1 $e |- Ord A $.
+    $( The identity relation restricted to the ordinals is a strictly monotone
+       function.  (Contributed by Andrew Salmon, 16-Nov-2011.) $)
+    iordsmo $p |- Smo ( _I |` A ) $=
+      ( vx vy cid cres con0 wf wfn crn wss fnresi rnresi word ordsson wcel wceq
+      cv cfv fvresi ax-mp eqsstri df-f mpbir2an wa adantr adantl eleq12d dmresi
+      biimprd issmo ) CDEAFZAAGULHULAIULJZGKALUMAGAMANAGKBAOUAUBAGULUCUDBCRZAPZ
+      DRZAPZUEZUNULSZUPULSZPUNUPPURUSUNUTUPUOUSUNQUQAUNTUFUQUTUPQUOAUPTUGUHUJAU
+      IUK $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.  $d x y F $.
+    $( The null set is a strictly monotone ordinal function.  (Contributed by
+       Andrew Salmon, 20-Nov-2011.) $)
+    smo0 $p |- Smo (/) $=
+      ( cid c0 cres wsmo ord0 iordsmo wceq wb res0 smoeq ax-mp mpbi ) ABCZDZBDZ
+      BEFMBGNOHAIMBJKL $.
+
+    $( If ` B ` is a strictly monotone ordinal function, and ` A ` is in the
+       domain of ` B ` , then the value of the function at ` A ` is an
+       ordinal.  (Contributed by Andrew Salmon, 20-Nov-2011.) $)
+    smofvon $p |- ( ( Smo B /\ A e. dom B ) -> ( B ` A ) e. On ) $=
+      ( vx vy wsmo cdm con0 wf word cv wcel cfv wral df-smo simp1bi ffvelrnda
+      wi ) BEZBFZGABRSGBHSICJZDJZKTBLUABLKQDSMCSMCDBNOP $.
+
+    $( If ` x ` is less than ` y ` then a strictly monotone function's value
+       will be strictly less at ` x ` than at ` y ` .  (Contributed by Andrew
+       Salmon, 22-Nov-2011.) $)
+    smoel $p |- ( ( Smo B /\ A e. dom B /\ C e. A ) -> ( B ` C ) e. ( B ` A )
+       ) $=
+      ( vx vy wsmo cdm wcel cfv wa wi word smodm ordtr1 expdimp wral wceq fveq2
+      cv imbi12d ancomsd sylan con0 w3a df-smo eleq1 eleq1d eleq2 eleq2d rspc2v
+      wf ancoms com12 3ad2ant3 sylbi syld pm2.43d 3impia ) BFZABGZHZCAHZCBIZABI
+      ZHZUSVAJZVBVEVFVBCUTHZVBVEKZUSUTLZVAVBVGKBMVIVAVBVGVIVBVAVGCAUTNUAOUBUSVA
+      VGVHUSUTUCBUKZVIDSZESZHZVKBIZVLBIZHZKZEUTPDUTPZUDVAVGJZVHKZDEBUEVRVJVTVIV
+      SVRVHVGVAVRVHKVQVHCVLHZVCVOHZKDECAUTUTVKCQZVMWAVPWBVKCVLUFWCVNVCVOVKCBRUG
+      TVLAQZWAVBWBVEVLACUHWDVOVDVCVLABRUITUJULUMUNUOOUPUQUR $.
+
+    $( The value of a strictly monotone ordinal function contains its indexed
+       union.  (Contributed by Andrew Salmon, 22-Nov-2011.) $)
+    smoiun $p |- ( ( Smo B /\ A e. dom B ) -> U_ x e. A ( B ` x )
+       C_ ( B ` A ) ) $=
+      ( vy wsmo cdm wcel wa cv cfv ciun wrex eliun con0 wi smofvon smoel 3expia
+      ontr1 exp3acom23 sylsyld rexlimdv syl5bi ssrdv ) CEZBCFGZHZDABAIZCJZKZBCJ
+      ZDIZUJGULUIGZABLUGULUKGZAULBUIMUGUMUNABUGUKNGZUHBGZUIUKGZUMUNOBCPUEUFUPUQ
+      BCUHQRUOUMUQUNULUIUKSTUAUBUCUD $.
+
+    $( If ` F ` is an isomorphism from an ordinal ` A ` onto ` B ` , which is a
+       subset of the ordinals, then ` F ` is a strictly monotonic function.
+       Exercise 3 in [TakeutiZaring] p. 50.  (Contributed by Andrew Salmon,
+       24-Nov-2011.) $)
+    smoiso $p |- ( ( F Isom _E , _E ( A , B ) /\ Ord A /\ B C_ On )
+        -> Smo F ) $=
+      ( vx vy cep wiso word con0 wss w3a wf cv wcel cfv wral wb wa eleq2d wbr
+      cdm wi wsmo wf1o isof1o f1of syl ffdm simpld fss 3adant2 syl3an1 wceq fdm
+      sylan eqcomd ordeq 4syl biimpa 3adant3 3syl isorel epel fvex epelc biimpd
+      anbi12d 3bitr3g ex sylbid ralrimivv 3ad2ant1 df-smo syl3anbrc ) ABFFCGZAH
+      ZBIJZKCUAZICLZVRHZDMZEMZNZWACOZWBCOZNZUBZEVRPDVRPZCUCVOABCLZVPVQVSVOABCUD
+      ZWIABFFCUEZABCUFZUGWIVQVSVPWIVRBCLZVQVSWIWMVRAJABCUHUIVRBICUJUOUKULVOVPVT
+      VQVOVPVTVOWJWIAVRUMVPVTQWKWLWIVRAABCUNZUPAVRUQURUSUTVOVPWHVQVOWGDEVRVRVOW
+      AVRNZWBVRNZRZWAANZWBANZRZWGVOWJWIWQWTQWKWLWIWOWRWPWSWIVRAWAWNSWIVRAWBWNSV
+      GVAVOWTWGVOWTRZWCWFXAWAWBFTWDWEFTWCWFABWAWBFFCVBDEVCWDWEWBCVDVEVHVFVIVJVK
+      VLDECVMVN $.
+  $}
+
+  ${
+    $d A w x z $.  $d B w z $.  $d F w x y z $.
+    $( A strictly monotone ordinal function preserves the epsilon relation.
+       (Contributed by Mario Carneiro, 12-Mar-2013.) $)
+    smoel2 $p |- ( ( ( F Fn A /\ Smo F ) /\ ( B e. A /\ C e. B ) )
+      -> ( F ` C ) e. ( F ` B ) ) $=
+      ( wfn wsmo wa wcel cfv cdm fndm eleq2d anbi1d biimprd smoel 3expib sylan9
+      imp ) DAEZDFZGBAHZCBHZGZCDIBDIHZSUCBDJZHZUBGZTUDSUGUCSUFUAUBSUEABADKLMNTU
+      FUBUDBDCOPQR $.
+  $}
+
+  ${
+    $d A w x y z $.  $d F w x y z $.
+    $( A strictly monotone ordinal function is one-to-one.  (Contributed by
+       Mario Carneiro, 28-Feb-2013.) $)
+    smo11 $p |- ( ( F : A --> B /\ Smo F ) -> F : A -1-1-> B ) $=
+      ( vz vw vy vx wa cv cfv weq wi wral wcel word ex w3a 3ad2ant1 fveq2 sylan
+      wsmo wceq wf1 simpl wfn ffn smodm2 ordelord syl anim12d wel w3o ordtri3or
+      wf simp1rr smoel2 ralrimivva adantr simp2 eleq2d raleqbi1dv eleq1d rspccv
+      simp3 rspcv syl6 3imp eleq1 biimpac syl31anc wn con0 smofvon2 ordirr 3syl
+      eloni ad2antlr pm2.21dd 3exp ax-1 simp1rl eleq2 3jaod syl5 mpdd ralrimivv
+      a1i dff13 sylanbrc ) ABCUNZCUAZHWJDIZCJZEIZCJZUBZDEKZLZEAMDAMZABCUCWJWKUD
+      WJCAUEZWKWSABCUFWTWKHZWRDEAAXAWLANZWNANZHZWLOZWNOZHZWRXAXBXEXCXFXAAOZXBXE
+      LACUGZXHXBXEAWLUHPUIXAXHXCXFLXIXHXCXFAWNUHPUIUJXAXDXGWRLXGDEUKZWQEDUKZULX
+      AXDHZWRWLWNUMXLXJWRWQXKXLXJWPWQXLXJWPQZWOWONZWQXMXCFIZCJZGIZCJZNZFXQMZGAM
+      ZXJWPXNXBXCXAXJWPUOXLXJYAWPXAYAXDXAXSGFAXQAXQXOCUPUQURZRXLXJWPUSXLXJWPVDX
+      CYAXJQWMWONZWPXNXCYAXJYCXCYAXPWONZFWNMZXJYCLXTYEGWNAXSYDFXQWNGEKXRWOXPXQW
+      NCSUTVAVEYDYCFWLWNFDKXPWMWOXOWLCSVBVCVFVGWPYCXNWMWOWOVHVITVJXLXJXNVKZWPWK
+      YFWTXDWKWOVLNWOOYFWNCVMWOVPWOVNVOVQZRVRVSWQWRLXLWQWPVTWGXLXKWPWQXLXKWPQZX
+      NWQYHXBYAXKWPXNXBXCXAXKWPWAXLXKYAWPYBRXLXKWPUSXLXKWPVDXBYAXKQWOWMNZWPXNXB
+      YAXKYIXBYAXPWMNZFWLMZXKYILXTYKGWLAXSYJFXQWLGDKXRWMXPXQWLCSUTVAVEYJYIFWNWL
+      FEKXPWOWMXOWNCSVBVCVFVGWPYIXNWMWOWOWBVITVJXLXKYFWPYGRVRVSWCWDPWEWFTDEABCW
+      HWI $.
+  $}
+
+  ${
+    $( A strictly monotone ordinal function preserves strict ordering.
+       (Contributed by Mario Carneiro, 4-Mar-2013.) $)
+    smoord $p |- ( ( ( F Fn A /\ Smo F ) /\ ( C e. A /\ D e. A ) ) ->
+      ( C e. D <-> ( F ` C ) e. ( F ` D ) ) ) $=
+      ( wa wcel word cfv ordelord syl2anc w3a simp3 wi smoel2 3expia ordirr syl
+      wn 3adant3 neleqtrd wfn wsmo wb smodm2 adantr simprl simprr w3o ordtri3or
+      wceq expr adantrl 3impia 2thd con0 smofvon2 ad2antlr eloni fveq2d 2falsed
+      3syl ordn2lp pm3.2 3ad2ant3 mtod adantrlr 3impb pm3.21 3jaod syl5 mp2and
+      ) DAUAZDUBZEZBAFZCAFZEZEZBGZCGZBCFZBDHZCDHZFZUCZVRAGZVOVSVNWFVQADUDUEZVNV
+      OVPUFABIJZVRWFVPVTWGVNVOVPUGACIJZVSVTEWABCUJZCBFZUHVRWEBCUIVRWAWEWJWKVNVQ
+      WAWEVNVQWAKWAWDVNVQWALVNVQWAWDVNVPWAWDMVOVNVPWAWDACBDNUKULUMUNOVNVQWJWEVN
+      VQWJKZWAWDWLBCBVNVQBBFRZWJVRVSWMWHBPQSVNVQWJLZTWLWBWCWBVNVQWBWBFRZWJVRWBU
+      OFZWBGZWOVMWPVLVQBDUPUQZWBURZWBPVASWLBCDWNUSTUTOVNVQWKWEVNVQWKKZWAWDWTWAW
+      KWAEZWTVTXARVNVQVTWKWISCBVBQWKVNWAXAMVQWKWAVCVDVEWTWDWDWCWBFZEZWTWQXCRVNV
+      QWQWKVRWPWQWRWSQSWBWCVBQWTXBWDXCMVNVQWKXBVNVOWKXBVPABCDNVFVGXBWDVHQVEUTOV
+      IVJVK $.
+  $}
+
+  ${
+    $( A strictly monotone ordinal function preserves weak ordering.
+       (Contributed by Mario Carneiro, 4-Mar-2013.) $)
+    smoword $p |- ( ( ( F Fn A /\ Smo F ) /\ ( C e. A /\ D e. A ) ) ->
+      ( C C_ D <-> ( F ` C ) C_ ( F ` D ) ) ) $=
+      ( wfn wsmo wa wcel wn cfv wss word ordelord syl2anc ordtri1 con0 smofvon2
+      wb eloni 3syl smoord notbid ancom2s smodm2 adantr simprl simprr 3bitr4d
+      simplr ) DAEZDFZGZBAHZCAHZGZGZCBHZIZCDJZBDJZHZIZBCKZUTUSKZULUNUMURVBRULUN
+      UMGGUQVAACBDUAUBUCUPBLZCLZVCURRUPALZUMVEULVGUOADUDUEZULUMUNUFABMNUPVGUNVF
+      VHULUMUNUGACMNBCONUPUTLZUSLZVDVBRUPUKUTPHVIUJUKUOUIZBDQUTSTUPUKUSPHVJVKCD
+      QUSSTUTUSONUH $.
+  $}
+
+  ${
+    $d A y x $.  $d C x $.  $d F y x $.
+    $( A strictly monotone ordinal function is greater than or equal to its
+       argument.  Exercise 1 in [TakeutiZaring] p. 50.  (Contributed by Andrew
+       Salmon, 23-Nov-2011.)  (Revised by Mario Carneiro, 28-Feb-2013.) $)
+    smogt $p |- ( ( F Fn A /\ Smo F /\ C e. A ) -> C C_ ( F ` C ) ) $=
+      ( vx vy wcel cfv wss wa cv wi id fveq2 sseq12d w3a word syl2anc imp com12
+      wral wfn wsmo wceq imbi2d con0 smodm2 3adant3 simp3 ordelord vex elon weq
+      sylibr eleq1 3anbi3d imbi12d simpl1 simpl2 ordtr1 exp3acom23 sylc syl3anc
+      wel pm2.27 ralimdva simp31 simp32 smofvon2 3ad2ant2 eloni simp33 3adantr3
+      smoel2 3impa ordtr2 syl22anc 3expia 3expd 3impia dfss3 syl6ibr syld tfis2
+      syl a1i mpcom vtoclga ) CAUAZCUBZBAFZBBCGZHZWJWHWIIZWLWMDJZWNCGZHZKWMWLKD
+      BAWNBUCZWPWLWMWQWNBWOWKWQLWNBCMNUDWMWNAFZWPWHWIWRWPWNUEFZWHWIWROZWPWTWNPZ
+      WSWTAPZWRXAWHWIXBWRACUFZUGZWHWIWRUHZAWNUIZQWNDUJUKUMWTWPKZWHWIEJZAFZOZXHX
+      HCGZHZKZDEDEULZWTXJWPXLXNWRXIWHWIWNXHAUNUOXNWNXHWOXKXNLWNXHCMNUPXMEWNTZXG
+      KWSWTXOWPWTXOXLEWNTZWPWTXMXLEWNWTEDVCZIWHWIXIXMXLKWHWIWRXQUQWHWIWRXQURWTX
+      QXIWTXBWRXQXIKXDXEXBXQWRXIXHWNAUSUTVARXJXLVDVBVEWTXPXHWOFZEWNTWPWTXLXREWN
+      WTXQXLXRKZWHWIWRXQXSKWMWRXQXLXRWHWIWRXQXLOZXRWHWIXTOZXHPZWOPZXLXKWOFZXRYA
+      XAXQYBYAXBWRXAWHWIXBXTXCUGWHWIWRXQXLVFXFQWHWIWRXQXLVGWNXHUIQYAWOUEFZYCWIW
+      HYEXTWNCVHVIWOVJWDWHWIWRXQXLVKWHWIXTYDWMWRXQYDXLAWNXHCVMVLVNYBYCIXLYDIXRX
+      HXKWOVORVPVQVRVSRVEEWNWOVTWAWBSWEWCWFVQSWGSVS $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d F x $.
+    $( The range of a strictly monotone ordinal function dominates the domain.
+       (Contributed by Mario Carneiro, 13-Mar-2013.) $)
+    smorndom $p |- ( ( F : A --> B /\ Smo F /\ Ord B ) -> A C_ B ) $=
+      ( vx wf wsmo word w3a cv wcel wa cfv wss wfn simpl1 ffn syl simpl2 smodm2
+      syl2anc ordelord sylancom simpl3 simpr smogt syl3anc 3ad2antl1 ordtr2 imp
+      ffvelrn syl22anc ex ssrdv ) ABCEZCFZBGZHZDABUQDIZAJZURBJZUQUSKZURGZUPURUR
+      CLZMZVCBJZUTUQUSAGZVBVACANZUOVFVAUNVGUNUOUPUSOABCPQZUNUOUPUSRZACSTAURUAUB
+      UNUOUPUSUCVAVGUOUSVDVHVIUQUSUDAURCUEUFUNUOUSVEUPABURCUJUGVBUPKVDVEKUTURVC
+      BUHUIUKULUM $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.  $d F x y $.
+    $( The strictly monotone ordinal functions are also epsilon isomorphisms of
+       subclasses of ` On ` .  (Contributed by Mario Carneiro, 20-Mar-2013.) $)
+    smoiso2 $p |- ( ( Ord A /\ B C_ On ) ->
+      ( ( F : A -onto-> B /\ Smo F ) <-> F Isom _E , _E ( A , B ) ) ) $=
+      ( vx vy word con0 wss wa wfo wsmo cep cv wbr cfv wral sylan sylanbrc wcel
+      adantl wiso wf1o wb wf1 fof smo11 simpl df-f1o wfn fofn smoord epel epelc
+      wf 3bitr4g ralrimivva df-isom ex w3a isof1o f1ofo syl 3ad2ant1 smoiso jca
+      fvex 3expib com12 impbid ) AFZBGHZIZABCJZCKZIZABLLCUAZVLVOVPVLVOIABCUBZDM
+      ZEMZLNZVRCOZVSCOZLNZUCZEAPDAPZVPVOVQVLVOABCUDZVMVQVMABCUNVNWFABCUEABCUFQV
+      MVNUGABCUHRTVOWEVLVMCAUIZVNWEABCUJWGVNIZWDDEAAWHVRASVSASIIVRVSSWAWBSVTWCA
+      VRVSCUKDEULWAWBVSCVFUMUOUPQTDEABLLCUQRURVPVLVOVPVJVKVOVPVJVKUSVMVNVPVJVMV
+      KVPVQVMABLLCUTABCVAVBVCABCVDVEVGVHVI $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -53795,6 +54265,11 @@ htmldef "iota" as
     "<IMG SRC='riota.gif' WIDTH=6 HEIGHT=19 ALT=' iota' TITLE='iota'>";
   althtmldef "iota" as '&#8489;';
   latexdef "iota" as "\mathrm{\rotatebox[origin=C]{180}{$\iota$}}";
+htmldef "Smo" as
+    "<IMG SRC='_smo.gif' WIDTH=27 HEIGHT=19 ALT=' Smo' TITLE='Smo'> ";
+  althtmldef "Smo" as "Smo ";
+  latexdef "Smo" as "{\rm Smo}";
+
 htmldef "Fun" as
     "<IMG SRC='_fun.gif' WIDTH=25 HEIGHT=19 ALT=' Fun' TITLE='Fun'> ";
   althtmldef "Fun" as 'Fun ';
