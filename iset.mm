@@ -52749,9 +52749,8 @@ $)
 
     $( The behavior of ` tpos ` when the left argument is the empty set (which
        is not an ordered pair but is the "default" value of an ordered pair
-       when the arguments are proper classes).  This allows us to eliminate
-       sethood hypotheses on ` A , B ` in ~ brtpos .  (Contributed by Mario
-       Carneiro, 10-Sep-2015.) $)
+       when the arguments are proper classes).  (Contributed by Mario Carneiro,
+       10-Sep-2015.) $)
     brtpos0 $p |- ( A e. V -> ( (/) tpos F A <-> (/) F A ) ) $=
       ( wcel c0 ctpos wbr cdm ccnv csn cun cuni brtpos2 ssun2 0ex snid biantrur
       wa sselii cnvsn0 unieqi uni0 eqtri breq1i bitr3i syl6bb ) ACDEABFGEBHIZEJ
