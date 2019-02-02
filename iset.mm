@@ -52864,14 +52864,16 @@ $)
        Compare ~ df-cnv .  (Contributed by Mario Carneiro, 10-Sep-2015.) $)
     dftpos3 $p |- ( Rel dom F -> tpos F =
       { <. <. x , y >. , z >. | <. y , x >. F z } ) $=
-      ( vw cdm wrel ctpos cv cop wceq wbr wa wex cab wcel cvv cxp bitr3i syl6bb
-      coprab wss relcnv dmtpos releqd mpbiri reltpos jctil relrelss sylib sseld
-      ccnv elvvv syl6ib pm4.71rd 19.41vvv eleq1 df-br vex brtpos pm5.32i 3exbii
-      wb ax-mp abbi2dv df-oprab syl6eqr ) DFZGZDHZEIZAIZBIZJZCIZJZKZVMVLJVODLZM
-      ZCNBNANZEOVRABCUAVIVTEVJVIVKVJPZVQCNBNANZWAMZVTVIWAWBVIWAVKQQRQRZPWBVIVJW
-      DVKVIVJGZVJFZGZMVJWDUBVIWGWEVIWGVHULZGVHUCVIWFWHDUDUEUFDUGUHVJUIUJUKABCVK
-      UMUNUOWCVQWAMZCNBNANVTVQWAABCUPWIVSABCVQWAVRVQWAVPVJPZVRVKVPVJUQWJVNVOVJL
-      ZVRVNVOVJURVOQPWKVRVCCUSVLVMVODQUTVDSTVAVBSTVEVRABCEVFVG $.
+      ( vw cdm wrel ctpos cv cop wceq wbr wex wcel cvv cxp vex bitr3i
+      wa syl6bb cab coprab wss ccnv relcnv dmtpos releqd mpbiri jctil
+      relrelss sylib sseld elvvv syl6ib pm4.71rd 19.41vvv eleq1 df-br
+      reltpos brtposg mp3an pm5.32i 3exbii abbi2dv df-oprab syl6eqr
+      wb ) DFZGZDHZEIZAIZBIZJZCIZJZKZVMVLJVODLZSZCMBMAMZEUAVRABCUBVIV
+      TEVJVIVKVJNZVQCMBMAMZWASZVTVIWAWBVIWAVKOOPOPZNWBVIVJWDVKVIVJGZV
+      JFZGZSVJWDUCVIWGWEVIWGVHUDZGVHUEVIWFWHDUFUGUHDUSUIVJUJUKULABCVK
+      UMUNUOWCVQWASZCMBMAMVTVQWAABCUPWIVSABCVQWAVRVQWAVPVJNZVRVKVPVJU
+      QWJVNVOVJLZVRVNVOVJURVLONVMONVOONWKVRVGAQBQCQVLVMVODOOOUTVARTVB
+      VCRTVDVRABCEVEVF $.
 
     $( Alternate definition of ` tpos ` .  (Contributed by Mario Carneiro,
        4-Oct-2015.) $)
