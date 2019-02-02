@@ -53235,11 +53235,9 @@ $)
     $d F x y $.
     $( The function values of a strictly monotone ordinal function are
        ordinals.  (Contributed by Mario Carneiro, 12-Mar-2013.) $)
-    smofvon2 $p |- ( Smo F -> ( F ` B ) e. On ) $=
-      ( vy vx cdm wcel wsmo cfv con0 wi word wral dfsmo2 simp1bi ffvelrn expcom
-      wf cv syl5 wn c0 ndmfv 0elon syl6eqel a1d pm2.61i ) ABEZFZBGZABHZIFZJUIUG
-      IBQZUHUKUIULUGKCRBHDRZBHFCUMLDUGLDCBMNULUHUKUGIABOPSUHTZUKUIUNUJUAIABUBUC
-      UDUEUF $.
+    smofvon2dm $p |- ( ( Smo F /\ B e. dom F ) -> ( F ` B ) e. On ) $=
+      ( vy vx wsmo cdm con0 wf word cv cfv wcel wral dfsmo2 simp1bi ffvelrnda )
+      BEZBFZGABQRGBHRICJBKDJZBKLCSMDRMDCBNOP $.
   $}
 
   ${
