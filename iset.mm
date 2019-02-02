@@ -53100,32 +53100,6 @@ $)
       ( cvv wcel con0 wral ciun iunon mpan ) BFGCHGABIABCJHGDABCFKL $.
   $}
 
-  ${
-    $d w x y z F $.
-    $( There are no length ` om ` decreasing sequences in the ordinals.  See
-       also ~ noinfep for a stronger version assuming Regularity.  (Contributed
-       by Mario Carneiro, 19-May-2015.) $)
-    onnseq $p |- ( ( F ` (/) ) e. On ->
-      E. x e. om -. ( F ` suc x ) e. ( F ` x ) ) $=
-      ( vy vw vz c0 cfv con0 wcel cv csuc com wral wrex wceq fveq2 eleq1d sylib
-      wne cvv wn cmpt crn cin wa cep wwe wss epweon a1i wf simpl fveq2d eleq12d
-      wi suceq rspcv onelon expcom syl6 adantld finds2 com12 ralrimiv eqid fmpt
-      frn syl cdm peano1 fdm syl5eleqr ne0i dm0rn0 necon3bii wefrc syl3anc fvex
-      wb rgenw cbvmptv ineq2 eqeq1d rexrnmpt ax-mp peano2 adantl eqeq2d sylancl
-      rspcev elrnmpt sylibr rspccva adantll inelcm syl2anc neneqd nrexdv rexnal
-      pm2.65da ) FBGZHIZAJZKZBGZXCBGZIZALMZUAXGUAALNXBXHCLCJZBGZUBZUCZDJZBGZUDZ
-      FOZDLNZXBXHUEZXLEJZUDZFOZEXLNZXQXRHUFUGZXLHUHZXLFSZYBYCXRUIUJXRLHXKUKZYDX
-      RXJHIZCLMYFXRYGCLXILIXRYGYGXBXSBGZHIZXSKZBGZHIZXRCEXIFOXJXAHXIFBPQXIXSOXJ
-      YHHXIXSBPQXIYJOXJYKHXIYJBPQXBXHULXSLIZXHYIYLUOZXBYMXHYKYHIZYNXGYOAXSLXCXS
-      OZXEYKXFYHYPXDYJBXCXSUPUMXCXSBPUNUQYIYOYLYHYKURUSUTVAVBVCVDCLHXJXKXKVEZVF
-      RZLHXKVGVHXRXKVIZFSZYEXRFYSIYTXRFLYSVJXRYFYSLOYRLHXKVKVHVLYSFVMVHYSFXLFXK
-      VNVOREHXLVPVQXNTIZDLMYBXQVSUUADLXMBVRVTYAXPDELXNXKTCDLXJXNXIXMBPWAXSXNOXT
-      XOFXSXNXLWBWCWDWERXRXPDLXRXMLIZUEZXOFUUCXMKZBGZXLIZUUEXNIZXOFSUUCUUEXJOZC
-      LNZUUFUUCUUDLIZUUEUUEOZUUIUUBUUJXRXMWFWGUUEVEUUHUUKCUUDLXIUUDOXJUUEUUEXIU
-      UDBPWHWJWIUUETIUUFUUIVSUUDBVRCLXJUUEXKTYQWKWEWLXHUUBUUGXBXGUUGAXMLXCXMOZX
-      EUUEXFXNUULXDUUDBXCXMUPUMXCXMBPUNWMWNUUEXLXNWOWPWQWRWTXGALWSWL $.
-  $}
-
   $c Smo $.
 
   $( Introduce the strictly monotone ordinal function.  A strictly monotone
