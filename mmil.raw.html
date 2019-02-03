@@ -127,6 +127,8 @@ then extended without justification to statements about infinite collections.
   <LI> <A HREF="#overview2">Overview of this work</A></LI>
   <LI> <A HREF="#axioms">The axioms</A></LI>
   <LI> <A HREF="#theorems">Some theorems</A></LI>
+  <LI> <A HREF="#intuitionize">How to intuitionize classical proofs</A></LI>
+  <LI> <A HREF="#setmm">Metamath Proof Explorer cross reference</A></LI>
   <LI> <A HREF="#bib">Bibliography</A></LI>
 </MENU></TD>
 
@@ -178,17 +180,17 @@ achieve this task, iset.mm adds (or substitutes) intuitionistic
 axioms for a number of the classical logical axioms of set.mm.
 
 <P>Among these new axioms, the 6 first
-(<A HREF="ax-ia1.html">ax-ia1</A>,
-<A HREF="ax-ia2.html">ax-ia2</A>,
-<A HREF="ax-ia3.html">ax-ia3</A>,
-<A HREF="ax-io.html">ax-io</A>,
-<A HREF="ax-in1.html">ax-in1</A>
+( ~ ax-ia1 ,
+~ ax-ia2 ,
+~ ax-ia3 ,
+~ ax-io ,
+~ ax-in1
 and
-<A HREF="ax-in2.html">ax-in2</A>), when added to
-<A HREF="ax-1.html">ax-1</A>,
-<A HREF="ax-2.html">ax-2</A>
+~ ax-in2 ), when added to
+~ ax-1 ,
+~ ax-2
 and
-<A HREF="ax-mp.html">ax-mp</A>,
+~ ax-mp ,
  allow for the development of intuitionistic
 propositional logic.  We omit the classical axiom
 <SPAN CLASS=math>((&not;
@@ -207,37 +209,37 @@ if &not;&not;<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
  is a theorem of intuitionistic propositional calculus.
 
 <P>The next 4 new axioms
-(<A HREF="ax-ial.html">ax-ial</A>,
-<A HREF="ax-i5r.html">ax-i5r</A>,
-<A HREF="ax-ie1.html">ax-ie1</A>
+( ~ ax-ial ,
+~ ax-i5r ,
+~ ax-ie1
 and
-<A HREF="ax-ie2.html">ax-ie2</A>)
+~ ax-ie2 )
 together with the set.mm axioms
-<A HREF="ax-4.html">ax-4</A>,
-<A HREF="ax-5.html">ax-5</A>,
-<A HREF="ax-7.html">ax-7</A>
+~ ax-4 ,
+~ ax-5 ,
+~ ax-7
 and
-<A HREF="ax-gen.html">ax-gen</A>
+~ ax-gen
 do not mention equality or distinct variables.
 
-<P>The <A HREF="ax-i9.html">ax-i9</A> axiom is
-just a slight variation of the classical <A HREF="ax-9.html">ax-9</A>.
-The classical axiom <A HREF="ax-12.html">ax-12</A> is strengthened
-into first <A HREF="ax-i12.html">ax-i12</A> and then
-<A HREF="ax-bnd.html">ax-bnd</A> (two results which would be
+<P>The ~ ax-i9 axiom is
+just a slight variation of the classical ~ ax-9 .
+The classical axiom ~ ax-12 is strengthened
+into first ~ ax-i12 and then
+~ ax-bnd (two results which would be
 fairly readily equivalent to ax-12 classically but which do not
 follow from ax-12, at least not in an obvious way, in intuitionistic
 logic).
 
 The substitution of ax-i9,
 ax-i12, and ax-bnd for ax-9 and ax-12 and the inclusion of
-<A HREF="ax-8.html">ax-8</A>,
-<A HREF="ax-10.html">ax-10</A>,
-<A HREF="ax-11.html">ax-11</A>,
-<A HREF="ax-13.html">ax-13</A>,
-<A HREF="ax-14.html">ax-14</A>
+~ ax-8 ,
+~ ax-10 ,
+~ ax-11 ,
+~ ax-13 ,
+~ ax-14
 and
-<A HREF="ax-17.html">ax-17</A>
+~ ax-17
 allow for the development of the
 intuitionistic predicate calculus.
 
@@ -782,10 +784,160 @@ variables</A></LI>
 <LI>
 <A HREF="ordtriexmid.html">Ordinal trichotomy implies excluded middle</A></LI>
 
+<LI>
+<A HREF="findes.html">Mathematical (finite) induction</A></LI>
+
+<LI>Peano's postulates for arithmetic:
+<A HREF="peano1.html">1</A>
+<A HREF="peano2.html">2</A>
+<A HREF="peano3.html">3</A>
+<A HREF="peano4.html">4</A>
+<A HREF="peano5.html">5</A></LI>
+
+<LI><A HREF="nndc.html">A natural number is either zero or nonzero</A> (a special case of the law of the excluded middle which we can prove).
+
 <LI>...<I>watch this space as we build out more of set theory</I></LI>
 
 </MENU>
 </TD></TR></TABLE>
+
+<HR NOSHADE SIZE=1><A NAME="intuitionize"></A><B><FONT
+COLOR="#006633">How to intuitionize classical proofs</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P>For the student or master of classical mathematics, constructive mathematics
+can be baffling. One can get over some of the intial hurdles of understanding
+how constructive mathematics works and why it might be interesting by reading
+<A HREF="#Bauer">[Bauer]</A> but that work does little to explain in concrete terms how to write
+proofs in intuitionistic logic. Fortunately, metamath helps with one of the
+biggest hurdles: noticing when one is even using the law of the excluded
+middle or the axiom of choice. But suppose you have a classical proof from
+the Metamath Proof Explorer and it fails to verify when you copy it over to
+the Intuitionistic Logic Explorer. What then? Here are some rules of thumb
+in converting classical proofs to intuitionistic ones.</P>
+
+<UL>
+
+<LI>If you see case elimination ( pm2.61 or its variants) you'll probably end up with two theorems for the two cases. In particular, if the cases were ` A e. _V ` and ` -. A e. _V ` you probably just care about the ` A e. _V ` case.</LI>
+
+<LI>Non-empty almost always needs to be changed to inhabited (those terms are defined at ~ n0rf ).</LI>
+
+<LI>If the original proof relied on propositional/predicate logic which isn't a theorem of intuitionistic logic, maybe there is a way of expressing the logic more directly. This is perhaps the hardest one to put in cookbook form: you might need to try some things and see if anything works.</LI>
+
+<LI>If the original proof relied on df-ex so that it could prove a theorem for A. and then get E. for free (or vice versa), instead go look at the original proof and try to come up the analogues to each step for the other quantifier (for example, ~ cbvrexcsf , ~ sbcrext , ~ rexxpf ).</LI>
+
+<LI>If you are dealing with a definition, try to find the best constructive definition from the literature ([HoTT] book, Stanford Encyclopedia of Philosophy, [Bauer], etc). Once you pick a definition, that'll affect the proofs which rely on that definition.</LI>
+
+<LI>If there is case elimination on whether variables are distinct, most of the time you just need the variant with distinct variables. Sometimes you can then remove the constraint with a temporary variable (e.g. the various sbco2* variants, ~ nfralya ).</LI>
+
+<LI>Sometimes one direction of a biconditional holds, or subset holds instead of equality. You might be able to keep the easy direction and worry about the other one later.</LI>
+
+<LI>If there is case elimination sometimes only one of the two cases is possible. For
+example, in ~ mosubopt the rest of the formula being proved constrains which case
+matters.</LI>
+
+<LI>If you need an additional condition (for example, because the original
+proof used case elimination) and you are proving a biconditional, consider whether
+both sides of the biconditional imply the condition. If so, you'll be able to
+prove the biconditional with that condition as an antecedent, and then use ~ pm5.21nii
+or one of its variants to remove the antecedent (example: ~ elxp4 ).</LI>
+
+<LI>If your proof relies on dveeq2 try ~ dveeq2or and likewise for the other things downstream of ~ ax-i12 or ~ ax-bnd .</LI>
+
+<LI>If you have a disjunction, be reluctant to turn it into an implication using ~ ord and the like. Instead, show that each disjunct implies what you are trying to prove and use ~ jaoi to join those two implications into something which can hook up to the disjunction.</LI>
+
+<LI>Disjunctive syllogism holds in intuitionistic logic but we don't have a lot of theorems to make it easy to apply. Unless we add those, you'll use ~ ord or something similar followed by ~ mpd or something similar. This may add a few steps but they are straightforward ones.</LI>
+
+<LI>If your proof is doing tricky things perhaps in the interest of shortness, try just expanding the definitions and applying logic in a straightforward way. See if this gets you a working (although perhaps longer) proof.</LI>
+
+<LI>If your proof relies on a biconditional in set.mm which isn't in iset.mm, see if one direction is in iset.mm and see which direction your proof is using. For example ~ 19.35-1 or ~ exnalim .</LI>
+
+<LI>If you are doing things with inhabited classes (beyond just applying existing inhabited class theorems), you may be able to dig up some predicate logic you haven't used in a while (e.g. ~ raaan ).</LI>
+
+<LI>Consider the possibility of giving up. Some things just won't have intuitionistic proofs. The more it looks like excluded middle or other non-intuitionistic statements, the more likely you are dealing with one of these. But it can be hard to have good intuition about this. In some cases it may be possible to ask "can I use this statement to prove 'ph or not ph' for an arbitrary proposition" (see ~ ordtriexmid for example ), but this is not always an easy technique to apply.</LI>
+
+<LI>Switching between ~ 2th and ~ 2false might help (e.g. ~ dfnul2 , ~ dfnul3 , ~ rab0 ).</LI>
+
+<LI>In many cases statements which are equivalent in classical logic become several non-equivalent statements (e.g. exclusive or, ordinals, non-empty versus inhabited, apartness versus negated equality). This is usually a good place to look for a literature reference, but don't be afraid to change the statement being proved to "what you really meant is X" as appropriate.</LI>
+
+<LI>If a statement has multiple equivalences in set.mm (e.g. mo2 and mo3 , or dffun2 and dffun3 ) and only some of them in iset.mm, sometimes a pretty similar proof will work (that is, which one to use in the original proof may have been a fairly arbitrary choice).</LI>
+
+<LI>A number of theorems related to functions (especially ovex and fvex ) in
+set.mm perform case elimination based on whether we are evaluating the function
+within its domain or outside it. The iset.mm replacements ( ~ fnovex and ~ funfvex )
+only work within the domain. This is rarely a problem but often means that
+logic must be rearranged, for example by changing ~ rexlimivw to ~ rexlimdva .
+(example: ~ ovelrn or indeed most uses of ~ fnovex and ~ funfvex ).</LI>
+
+<LI>If you get stuck, ask! (for example in a github issue or on the mailing list). We have a number of contributors who have experience in constructive mathematics in general, or iset.mm in particular, and one of the best things about doing/learning mathematics in metamath is the collaborative nature of how we develop it.
+</UL>
+
+<HR NOSHADE SIZE=1><A NAME="setmm"></A><B><FONT
+COLOR="#006633">Metamath Proof Explorer cross reference</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P>This is a list of theorems from the Metamath Proof Explorer (which
+assumes the law of the excluded middle throughout) which we do not
+have in the Intuitionistic Logic Explorer (generally because they
+are not provable without the law of the excluded middle), together
+with the closest replacements.</P>
+
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR>
+<TH>set.mm</TH>
+<TH>iset.mm</TH>
+<TH>notes</TH>
+</TR>
+
+<TR>
+<TD>19.35</TD>
+<TD>~ 19.35-1 </TD>
+</TR>
+
+<TR>
+<TD>opex</TD>
+<TD>~ opexg , ~ sopex </TD>
+</TR>
+
+<TR>
+<TD>relimasn</TD>
+<TD>~ imasng </TD>
+</TR>
+
+<TR>
+<TD>opswap</TD>
+<TD>~ opswapg </TD>
+</TR>
+
+<TR>
+<TD ROWSPAN="2">fvex</TD>
+<TD>~ funfvex </TD>
+<TD>when evaluating a function within its domain</TD>
+</TR>
+
+<TR>
+<TD>~ 1stexg , ~ 2ndexg </TD>
+<TD>for the functions ` 1st ` and ` 2nd `</TD>
+</TR>
+
+<TR>
+<TD>elfvdm</TD>
+<TD>~ relelfvdm </TD>
+</TR>
+
+<TR>
+<TD>brtpos</TD>
+<TD>~ brtposg </TD>
+</TR>
+
+<TR>
+<TD>ottpos</TD>
+<TD>~ ottposg </TD>
+</TR>
+
+<TR>
+<TD>ovtpos</TD>
+<TD>~ ovtposg </TD>
+</TR>
+</TABLE>
 
 <HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
 COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
@@ -800,6 +952,13 @@ DOI: <A HREF="http://dx.doi.org/10.1090/bull/1556">10.1090/bull/1556</A> .</LI>
 <LI><A NAME="BellMachover"></A> [BellMachover] Bell, J. L., and M.
 Machover, <I>A Course in Mathematical Logic,</I> North-Holland,
 Amsterdam (1977) [QA9.B3953].</LI>
+
+<LI><A NAME="BourbakiEns"></A> [BourbakiEns] Bourbaki, Nicolas,
+<I>Th&eacute;orie des ensembles,</I> Springer-Verlag,
+Berlin Heidelberg (2007); available in English (for purchase) at
+<A HREF="http://www.springer.com/us/book/9783540225256">
+http://www.springer.com/us/book/9783540225256</A> (retrieved
+15-Aug-2016). Page references in iset.mm are for the French edition.</LI>
 
 <LI><A NAME="ChoquetDD"></A> [ChoquetDD] Choquet-Bruhat, Yvonne and Cecile
 DeWitt-Morette, with Margaret Dillard-Bleick, <I>Analysis, Manifolds and
@@ -836,8 +995,8 @@ edition (1966).</LI>
 <LI><A NAME="Hitchcock"></A> [Hitchcock] Hitchcock, David, <I>The
 peculiarities of Stoic propositional logic</I>, McMaster University;
 available at <A
-HREF="http://www.humanities.mcmaster.ca/~hitchckd/peculiarities.pdf">
-http://www.humanities.mcmaster.ca/~hitchckd/peculiarities.pdf</A>
+HREF="http://www.humanities.mcmaster.ca/~~hitchckd/peculiarities.pdf">
+http://www.humanities.mcmaster.ca/~~hitchckd/peculiarities.pdf</A>
 (retrieved 3 Jul 2016).</LI>
 
 <LI><A NAME="HoTT"></A> [HoTT] The {Univalent Foundations Program,
@@ -867,7 +1026,8 @@ Dover Publications, Mineola, N.Y. (2002) [QA248.L398 2002]. </LI>
 
 <LI><A NAME="Lopez-Astorga"></A> [Lopez-Astorga] Lopez-Astorga, Miguel,
 "The First Rule of Stoic Logic and its Relationship with the
-Indemonstrables", <I>Revista de Filosofía Tópicos</I> (2016); available
+Indemonstrables", <I>Revista de Filosof&#xED;a T&#xF3;picos</I>
+(2016); available
 at <A HREF="http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf">
 http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf</A> (retrieved 3 Jul
 2016).</LI>
@@ -964,3 +1124,4 @@ HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
 
 </BODY>
 </HTML>
+
