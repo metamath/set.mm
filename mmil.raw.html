@@ -827,7 +827,7 @@ in converting classical proofs to intuitionistic ones.</P>
 
 <LI>If you are dealing with a definition, try to find the best constructive definition from the literature ([HoTT] book, Stanford Encyclopedia of Philosophy, [Bauer], etc). Once you pick a definition, that'll affect the proofs which rely on that definition.</LI>
 
-<LI>If there is case elimination on whether variables are distinct, most of the time you just need the variant with distinct variables. Sometimes you can then remove the constraint with a temporary variable (e.g. the various sbco2* variants, ~ nfralya ).</LI>
+<LI>If there is case elimination on whether variables are distinct, most of the time you just need the variant with distinct variables. Sometimes you can then remove the constraint with a temporary variable (e.g. the various sbco2* variants, ~ nfralya , ~ r19.3rm ).</LI>
 
 <LI>Sometimes one direction of a biconditional holds, or subset holds instead of equality. You might be able to keep the easy direction and worry about the other one later.</LI>
 
@@ -845,7 +845,7 @@ or one of its variants to remove the antecedent (example: ~ elxp4 ).</LI>
 
 <LI>If you have a disjunction, be reluctant to turn it into an implication using ~ ord and the like. Instead, show that each disjunct implies what you are trying to prove and use ~ jaoi to join those two implications into something which can hook up to the disjunction.</LI>
 
-<LI>Disjunctive syllogism holds in intuitionistic logic but we don't have a lot of theorems to make it easy to apply. Unless we add those, you'll use ~ ord or something similar followed by ~ mpd or something similar. This may add a few steps but they are straightforward ones.</LI>
+<LI>Disjunctive syllogism holds in intuitionistic logic and we state it a few ways (for example ~ orel1 and ~ ecased ) but we don't have a wide variety of convenience theorems. Unless we add those, you'll use ~ ord or something similar followed by ~ mpd or something similar. This may add a few steps but they are straightforward ones.</LI>
 
 <LI>If your proof is doing tricky things perhaps in the interest of shortness, try just expanding the definitions and applying logic in a straightforward way. See if this gets you a working (although perhaps longer) proof.</LI>
 
@@ -877,7 +877,8 @@ COLOR="#006633">Metamath Proof Explorer cross reference</FONT></B>&nbsp;&nbsp;&n
 <P>This is a list of theorems from the Metamath Proof Explorer (which
 assumes the law of the excluded middle throughout) which we do not
 have in the Intuitionistic Logic Explorer (generally because they
-are not provable without the law of the excluded middle), together
+are not provable without the law of the excluded middle, perhaps a
+few which could be proved but aren't yet), together
 with the closest replacements.</P>
 
 <TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
@@ -888,8 +889,36 @@ with the closest replacements.</P>
 </TR>
 
 <TR>
+<TD>df-ex</TD>
+<TD>~ exalim </TD>
+</TR>
+
+<TR>
 <TD>19.35</TD>
 <TD>~ 19.35-1 </TD>
+</TR>
+
+<TR>
+<TD>mo2</TD>
+<TD>~ mo2r , ~ mo3 </TD>
+</TR>
+
+<TR>
+<TD>dfrex2</TD>
+<TD>~ rexalim </TD>
+</TR>
+
+<TR>
+<TD>moabsn</TD>
+<TD>~ euabsn </TD>
+<TD>In general, most of the set.mm ` E! ` theorems still hold, but a
+decent number of the ` E* ` ones get caught up on "there are two cases: the
+set exists or it does not"
+</TR>
+
+<TR>
+<TD>snex</TD>
+<TD>~ snexg </TD>
 </TR>
 
 <TR>
