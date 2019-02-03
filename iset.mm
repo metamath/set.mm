@@ -36661,6 +36661,13 @@ $)
       WDVPCVMVAWMWCCVPWBWACBVKVBVCTVDVETSVNCBVFVGVNVLBAAVMAVKOPQVIAENVH $.
   $}
 
+  $( Epsilon irreflexivity of ordinals: no ordinal class is a member of
+     itself.  Theorem 2.2(i) of [BellMachover] p. 469, generalized to classes.
+     (Contributed by
+     NM, 2-Jan-1994.) $)
+  ordirr $p |- ( Ord A -> -. A e. A ) $=
+    ( wcel wn word elirr a1i ) AABCADAEF $.
+
   ${
     $d x y z $.
     $( The membership relation is irreflexive: no set is a member of itself.
@@ -53074,6 +53081,255 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  Functions on ordinals; strictly monotone ordinal functions
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x A $.
+    $( The indexed union of a set of ordinal numbers ` B ( x ) ` is an ordinal
+       number.  (Contributed by NM, 13-Oct-2003.)  (Revised by Mario Carneiro,
+       5-Dec-2016.) $)
+    iunon $p |- ( ( A e. V /\ A. x e. A B e. On ) -> U_ x e. A B e. On ) $=
+      ( wcel con0 wral wa ciun cmpt crn cuni wceq dfiun3g adantl cvv wss mptexg
+      rnexg syl wf eqid fmpt frn sylbi ssonuni imp syl2an eqeltrd ) BDEZCFEABGZ
+      HABCIZABCJZKZLZFUKULUOMUJABCFNOUJUNPEZUNFQZUOFEZUKUJUMPEUPABCDRUMPSTUKBFU
+      MUAUQABFCUMUMUBUCBFUMUDUEUPUQURUNPUFUGUHUI $.
+
+    iunonOLD.1 $e |- A e. _V $.
+    iunonOLD.2 $e |- B e. _V $.
+    $( The indexed union of a set of ordinal numbers ` B ( x ) ` is an ordinal
+       number.  (Contributed by NM, 13-Oct-2003.)  (Revised by Mario Carneiro,
+       5-Dec-2016.)  (New usage is discouraged.)
+       (Proof modification is discouraged.) $)
+    iunonOLD $p |- ( A. x e. A B e. On -> U_ x e. A B e. On ) $=
+      ( cvv wcel con0 wral ciun iunon mpan ) BFGCHGABIABCJHGDABCFKL $.
+  $}
+
+  $c Smo $.
+
+  $( Introduce the strictly monotone ordinal function.  A strictly monotone
+     function is one that is constantly increasing across the ordinals. $)
+  wsmo $a wff Smo A $.
+
+  ${
+    $d x y A $.
+    $( Definition of a strictly monotone ordinal function.  Definition 7.46 in
+       [TakeutiZaring] p. 50.  (Contributed by Andrew Salmon, 15-Nov-2011.) $)
+    df-smo $a |- ( Smo A <-> ( A : dom A --> On /\ Ord dom A /\ A. x e. dom A
+       A. y e. dom A ( x e. y -> ( A ` x ) e. ( A ` y ) ) ) ) $.
+  $}
+
+  ${
+    $d F x y $.
+    $( Alternate definition of a strictly monotone ordinal function.
+       (Contributed by Mario Carneiro, 4-Mar-2013.) $)
+    dfsmo2 $p |- ( Smo F <-> ( F : dom F --> On /\ Ord dom F /\ A. x e. dom F
+       A. y e. x ( F ` y ) e. ( F ` x ) ) ) $=
+      ( wsmo cdm con0 wf word wel cfv wcel wral w3a df-smo ralcom impexp 3anass
+      cv wi wa simpr ordtr1 3impib 3com23 simp3 3expia impbid2 syl5bbr ralbidv2
+      jca imbi1d ralbidva syl5bb pm5.32i anbi2i 3bitr4i bitri ) CDCEZFCGZURHZBA
+      IZBRZCJARZCJKZSZAURLBURLZMZUSUTVDBVCLZAURLZMZBACNUSUTVFTZTUSUTVITZTVGVJVK
+      VLUSUTVFVIVFVEBURLZAURLUTVIVEBAURUROUTVMVHAURUTVCURKZTZVEVDBURVCVBURKZVES
+      VPVATZVDSVOVEVPVAVDPVOVQVAVDVOVQVAVPVAUAUTVNVAVQUTVNVAMVPVAUTVAVNVPUTVAVN
+      VPVBVCURUBUCUDUTVNVAUEUJUFUGUKUHUIULUMUNUOUSUTVFQUSUTVIQUPUQ $.
+  $}
+
+  ${
+    $d x y A $.
+    issmo.1 $e |- A : B --> On $.
+    issmo.2 $e |- Ord B $.
+    issmo.3 $e |- ( ( x e. B /\ y e. B ) -> ( x e. y -> ( A ` x ) e. ( A ` y
+       ) ) ) $.
+    issmo.4 $e |- dom A = B $.
+    $( Conditions for which ` A ` is a strictly monotone ordinal function.
+       (Contributed by Andrew Salmon, 15-Nov-2011.) $)
+    issmo $p |- Smo A $=
+      ( wsmo cdm con0 wf word cv wcel cfv wi wral mpbir eleq2i feq2i wceq ordeq
+      wb ax-mp syl2anb rgen2a df-smo mpbir3an ) CICJZKCLZUJMZANZBNZOUMCPUNCPOQZ
+      BUJRAUJRUKDKCLEUJDKCHUASULDMZFUJDUBULUPUDHUJDUCUESUOABUJUMUJOUMDOUNDOUOUN
+      UJOUJDUMHTUJDUNHTGUFUGABCUHUI $.
+  $}
+
+  ${
+    $d A x $.  $d F x y $.
+    $( Alternative definition of a strictly monotone ordinal function.
+       (Contributed by Mario Carneiro, 12-Mar-2013.) $)
+    issmo2 $p |- ( F : A --> B -> ( ( B C_ On /\ Ord A /\
+       A. x e. A A. y e. x ( F ` y ) e. ( F ` x ) ) -> Smo F ) ) $=
+      ( wf con0 wss word cv cfv wcel wral w3a cdm wsmo fss ex fdm biimprd feq2d
+      sylibrd wceq wb ordeq syl raleqdv 3anim123d dfsmo2 syl6ibr ) CDEFZDGHZCIZ
+      BJEKAJZEKLBUNMZACMZNEOZGEFZUQIZUOAUQMZNEPUKULURUMUSUPUTUKULCGEFZURUKULVAC
+      DGEQRUKUQCGECDESZUAUBUKUSUMUKUQCUCUSUMUDVBUQCUEUFTUKUTUPUKUOAUQCVBUGTUHAB
+      EUIUJ $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Equality theorem for strictly monotone functions.  (Contributed by
+       Andrew Salmon, 16-Nov-2011.) $)
+    smoeq $p |- ( A = B -> ( Smo A <-> Smo B ) ) $=
+      ( vx vy wceq cdm con0 wf word cv wcel cfv wi wral w3a wsmo raleqdv df-smo
+      id fveq1 dmeq feq12d wb ordeq syl eleq12d imbi2d ralbidv 3bitrd 3anbi123d
+      2ralbidv 3bitr4g ) ABEZAFZGAHZUNIZCJZDJZKZUQALZURALZKZMZDUNNCUNNZOBFZGBHZ
+      VEIZUSUQBLZURBLZKZMZDVENZCVENZOAPBPUMUOVFUPVGVDVMUMUNVEGABUMSABUAZUBUMUNV
+      EEUPVGUCVNUNVEUDUEUMVDVKDUNNZCUNNVLCUNNVMUMVCVKCDUNUNUMVBVJUSUMUTVHVAVIUQ
+      ABTURABTUFUGUKUMVOVLCUNUMVKDUNVEVNQUHUMVLCUNVEVNQUIUJCDARCDBRUL $.
+
+    $( The domain of a strictly monotone function is an ordinal.  (Contributed
+       by Andrew Salmon, 16-Nov-2011.) $)
+    smodm $p |- ( Smo A -> Ord dom A ) $=
+      ( vx vy wsmo cdm con0 wf word cv wcel cfv wi wral df-smo simp2bi ) ADAEZF
+      AGPHBIZCIZJQAKRAKJLCPMBPMBCANO $.
+
+    $( A strictly monotone function restricted to an ordinal remains strictly
+       monotone.  (Contributed by Andrew Salmon, 16-Nov-2011.)  (Proof
+       shortened by Mario Carneiro, 5-Dec-2016.) $)
+    smores $p |- ( ( Smo A /\ B e. dom A ) -> Smo ( A |` B ) ) $=
+      ( vx vy cdm wcel wsmo con0 wf word cv cfv wi wral w3a wss ax-mp wceq syl
+      wa cres wfn crn wfun funres funfn 3imtr3i resss rnss sstr anim12i 3imtr4i
+      mpan df-f a1i ordelord expcom ordin ex syli wb dmres ordeq syl6ibr ssralv
+      cin ralimi inss1 eqsstri simpl sseldi fvres simpr eleq12d imbi2d ralbidva
+      dmss ralbiia sylibr 3anim123d df-smo 3imtr4g impcom ) BAEZFZAGZABUAZGZWEW
+      DHAIZWDJZCKZDKZFZWKALZWLALZFZMZDWDNZCWDNZOWGEZHWGIZWTJZWMWKWGLZWLWGLZFZMZ
+      DWTNZCWTNZOWFWHWEWIXAWJXBWSXHWIXAMWEAWDUBZAUCZHPZTWGWTUBZWGUCZHPZTWIXAXIX
+      LXKXNAUDWGUDXIXLBAUEAUFWGUFUGXMXJPZXKXNWGAPZXOABUHZWGAUIQXMXJHUJUMUKWDHAU
+      NWTHWGUNULUOWEWJBWDVFZJZXBWJWEBJZXSWJWEXTWDBUPUQXTWJXSBWDURUSUTWTXRRXBXSV
+      AABVBZWTXRVCQVDWSXHMWEWSWQDWTNZCWTNZXHWSWRCWTNZYCWTWDPZWSYDMXPYEXQWGAVQQZ
+      WRCWTWDVEQWRYBCWTYEWRYBMYFWQDWTWDVEQVGSXGYBCWTWKWTFZXFWQDWTYGWLWTFZTZXEWP
+      WMYIXCWNXDWOYIWKBFXCWNRYIWTBWKWTXRBYABWDVHVIZYGYHVJVKWKBAVLSYIWLBFXDWORYI
+      WTBWLYJYGYHVMVKWLBAVLSVNVOVPVRVSUOVTCDAWACDWGWAWBWC $.
+
+    $( A strictly monotone function restricted to an ordinal remains strictly
+       monotone.  (Contributed by Andrew Salmon, 19-Nov-2011.) $)
+    smores3 $p |- ( ( Smo ( A |` B ) /\ C e. ( dom A i^i B ) /\ Ord B ) -> Smo
+       ( A |` C ) ) $=
+      ( cres wsmo cdm cin wcel word w3a dmres incom eqtri eleq2i smores 3adant3
+      sylan2br wss wceq wb inss2 sseli ordelss sylan 3adant1 resabs1 smoeq 3syl
+      ancoms mpbid ) ABDZEZCAFZBGZHZBIZJZUKCDZEZACDZEZULUOUSUPUOULCUKFZHUSVBUNC
+      VBBUMGUNABKBUMLMNUKCOQPUQCBRZURUTSUSVATUOUPVCULUOCBHZUPVCUNBCUMBUAUBUPVDV
+      CBCUCUIUDUEACBUFURUTUGUHUJ $.
+  $}
+
+  ${
+    $d A x y $.  $d F x y $.
+    $( A strictly monotone ordinal function restricted to an ordinal is still
+       monotone.  (Contributed by Mario Carneiro, 15-Mar-2013.) $)
+    smores2 $p |- ( ( Smo F /\ Ord A ) -> Smo ( F |` A ) ) $=
+      ( vy vx wsmo word wa cdm con0 wf cv cfv wcel wral crn wss wfun dfsmo2 syl
+      wceq cres wfn simp1bi ffun funres funfn sylib df-ima imassrn eqsstr3i frn
+      cima syl5ss df-f sylanbrc adantr smodm cin ordin dmres ordeq ax-mp sylibr
+      wb ancoms sylan resss dmss simp3bi ssralv mpsyl wel wi ordtr1 inss1 sseli
+      eqsstri exp3acom23 imp31 fvres ad2antlr eleq12d ralbidva mpbird syl3anbrc
+      syl6 ) BEZAFZGZBAUAZHZIWJJZWKFZCKZWJLZDKZWJLZMZCWPNZDWKNZWJEWGWLWHWGWJWKU
+      BZWJOZIPWLWGBQZXAWGBHZIBJZXCWGXEXDFZWNBLZWPBLZMZCWPNZDXDNZDCBRZUCZXDIBUDS
+      XCWJQXAABUEWJUFUGSWGXBBOZIXBBAULXNBAUHBAUIUJWGXEXNIPXMXDIBUKSUMWKIWJUNUOU
+      PWGXFWHWMBUQWHXFWMWHXFGAXDURZFZWMAXDUSWKXOTWMXPVDBAUTZWKXOVAVBVCVEVFZWIWT
+      XJDWKNZWGXSWHWKXDPZWGXKXSWJBPXTBAVGWJBVHVBWGXEXFXKXLVIXJDWKXDVJVKUPWIWSXJ
+      DWKWIWPWKMZGZWRXICWPYBCDVLZGZWOXGWQXHYDWNAMZWOXGTWIYAYCYEWIYCYAYEWIYCYAGZ
+      WNWKMZYEWIWMYFYGVMXRWNWPWKVNSWKAWNWKXOAXQAXDVOVQZVPWFVRVSWNABVTSYAWQXHTZW
+      IYCYAWPAMYIWKAWPYHVPWPABVTSWAWBWCWCWDDCWJRWE $.
+  $}
+
+  $( The domain of a strictly monotone ordinal function is an ordinal.
+     (Contributed by Mario Carneiro, 12-Mar-2013.) $)
+  smodm2 $p |- ( ( F Fn A /\ Smo F ) -> Ord A ) $=
+    ( wsmo wfn cdm word smodm wceq wb fndm ordeq syl biimpa sylan2 ) BCBADZBEZF
+    ZAFZBGOQROPAHQRIABJPAKLMN $.
+
+  ${
+    $d F x y $.
+    $( The function values of a strictly monotone ordinal function are
+       ordinals.  (Contributed by Mario Carneiro, 12-Mar-2013.) $)
+    smofvon2dm $p |- ( ( Smo F /\ B e. dom F ) -> ( F ` B ) e. On ) $=
+      ( vy vx wsmo cdm con0 wf word cv cfv wcel wral dfsmo2 simp1bi ffvelrnda )
+      BEZBFZGABQRGBHRICJBKDJZBKLCSMDRMDCBNOP $.
+  $}
+
+  ${
+    $d x y A $.
+    iordsmo.1 $e |- Ord A $.
+    $( The identity relation restricted to the ordinals is a strictly monotone
+       function.  (Contributed by Andrew Salmon, 16-Nov-2011.) $)
+    iordsmo $p |- Smo ( _I |` A ) $=
+      ( vx vy cid cres con0 wf wfn crn wss fnresi rnresi word ordsson wcel wceq
+      cv cfv fvresi ax-mp eqsstri df-f mpbir2an wa adantr adantl eleq12d dmresi
+      biimprd issmo ) CDEAFZAAGULHULAIULJZGKALUMAGAMANAGKBAOUAUBAGULUCUDBCRZAPZ
+      DRZAPZUEZUNULSZUPULSZPUNUPPURUSUNUTUPUOUSUNQUQAUNTUFUQUTUPQUOAUPTUGUHUJAU
+      IUK $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.  $d x y F $.
+    $( The null set is a strictly monotone ordinal function.  (Contributed by
+       Andrew Salmon, 20-Nov-2011.) $)
+    smo0 $p |- Smo (/) $=
+      ( cid c0 cres wsmo ord0 iordsmo wceq wb res0 smoeq ax-mp mpbi ) ABCZDZBDZ
+      BEFMBGNOHAIMBJKL $.
+
+    $( If ` B ` is a strictly monotone ordinal function, and ` A ` is in the
+       domain of ` B ` , then the value of the function at ` A ` is an
+       ordinal.  (Contributed by Andrew Salmon, 20-Nov-2011.) $)
+    smofvon $p |- ( ( Smo B /\ A e. dom B ) -> ( B ` A ) e. On ) $=
+      ( vx vy wsmo cdm con0 wf word cv wcel cfv wral df-smo simp1bi ffvelrnda
+      wi ) BEZBFZGABRSGBHSICJZDJZKTBLUABLKQDSMCSMCDBNOP $.
+
+    $( If ` x ` is less than ` y ` then a strictly monotone function's value
+       will be strictly less at ` x ` than at ` y ` .  (Contributed by Andrew
+       Salmon, 22-Nov-2011.) $)
+    smoel $p |- ( ( Smo B /\ A e. dom B /\ C e. A ) -> ( B ` C ) e. ( B ` A )
+       ) $=
+      ( vx vy wsmo cdm wcel cfv wa wi word smodm ordtr1 expdimp wral wceq fveq2
+      cv imbi12d ancomsd sylan con0 w3a df-smo eleq1 eleq1d eleq2 eleq2d rspc2v
+      wf ancoms com12 3ad2ant3 sylbi syld pm2.43d 3impia ) BFZABGZHZCAHZCBIZABI
+      ZHZUSVAJZVBVEVFVBCUTHZVBVEKZUSUTLZVAVBVGKBMVIVAVBVGVIVBVAVGCAUTNUAOUBUSVA
+      VGVHUSUTUCBUKZVIDSZESZHZVKBIZVLBIZHZKZEUTPDUTPZUDVAVGJZVHKZDEBUEVRVJVTVIV
+      SVRVHVGVAVRVHKVQVHCVLHZVCVOHZKDECAUTUTVKCQZVMWAVPWBVKCVLUFWCVNVCVOVKCBRUG
+      TVLAQZWAVBWBVEVLACUHWDVOVDVCVLABRUITUJULUMUNUOOUPUQUR $.
+
+    $( The value of a strictly monotone ordinal function contains its indexed
+       union.  (Contributed by Andrew Salmon, 22-Nov-2011.) $)
+    smoiun $p |- ( ( Smo B /\ A e. dom B ) -> U_ x e. A ( B ` x )
+       C_ ( B ` A ) ) $=
+      ( vy wsmo cdm wcel wa cv cfv ciun wrex eliun con0 wi smofvon smoel 3expia
+      ontr1 exp3acom23 sylsyld rexlimdv syl5bi ssrdv ) CEZBCFGZHZDABAIZCJZKZBCJ
+      ZDIZUJGULUIGZABLUGULUKGZAULBUIMUGUMUNABUGUKNGZUHBGZUIUKGZUMUNOBCPUEUFUPUQ
+      BCUHQRUOUMUQUNULUIUKSTUAUBUCUD $.
+
+    $( If ` F ` is an isomorphism from an ordinal ` A ` onto ` B ` , which is a
+       subset of the ordinals, then ` F ` is a strictly monotonic function.
+       Exercise 3 in [TakeutiZaring] p. 50.  (Contributed by Andrew Salmon,
+       24-Nov-2011.) $)
+    smoiso $p |- ( ( F Isom _E , _E ( A , B ) /\ Ord A /\ B C_ On )
+        -> Smo F ) $=
+      ( vx vy cep word con0 wss wf cv wcel cfv wral syl wb eleq2d wbr
+      wa cvv wiso w3a cdm wsmo wf1o isof1o f1of ffdm simpld fss sylan
+      wi 3adant2 syl3an1 wceq fdm eqcomd ordeq biimpa 3adant3 anbi12d
+      4syl 3syl isorel syl5bbr wfn adantr simprr funfvex funfni epelg
+      ffn syl2anc bitrd biimpd ex sylbid ralrimivv 3ad2ant1 syl3anbrc
+      epel df-smo ) ABFFCUAZAGZBHIZUBCUCZHCJZWFGZDKZEKZLZWICMZWJCMZLZ
+      ULZEWFNDWFNZCUDWCABCJZWDWEWGWCABCUEZWQABFFCUFZABCUGZOZWQWEWGWDW
+      QWFBCJZWEWGWQXBWFAIABCUHUIWFBHCUJUKUMUNWCWDWHWEWCWDWHWCWRWQAWFU
+      OWDWHPWSWTWQWFAABCUPZUQAWFURVBUSUTWCWDWPWEWCWODEWFWFWCWIWFLZWJW
+      FLZSZWIALZWJALZSZWOWCWRWQXFXIPWSWTWQXDXGXEXHWQWFAWIXCQWQWFAWJXC
+      QVAVCWCXIWOWCXISZWKWNXJWKWLWMFRZWNWKWIWJFRXJXKDEWAABWIWJFFCVDVE
+      XJCAVFZXHXKWNPZWCXLXIWCWQXLXAABCVLOVGWCXGXHVHXLXHSWMTLZXMXNAWJC
+      WJCVIVJWLWMTVKOVMVNVOVPVQVRVSDECWBVT $.
+  $}
+
+  ${
+    $d A w x z $.  $d B w z $.  $d F w x y z $.
+    $( A strictly monotone ordinal function preserves the epsilon relation.
+       (Contributed by Mario Carneiro, 12-Mar-2013.) $)
+    smoel2 $p |- ( ( ( F Fn A /\ Smo F ) /\ ( B e. A /\ C e. B ) )
+      -> ( F ` C ) e. ( F ` B ) ) $=
+      ( wfn wsmo wa wcel cfv cdm fndm eleq2d anbi1d biimprd smoel 3expib sylan9
+      imp ) DAEZDFZGBAHZCBHZGZCDIBDIHZSUCBDJZHZUBGZTUDSUGUCSUFUAUBSUEABADKLMNTU
+      FUBUDBDCOPQR $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -53795,6 +54051,11 @@ htmldef "iota" as
     "<IMG SRC='riota.gif' WIDTH=6 HEIGHT=19 ALT=' iota' TITLE='iota'>";
   althtmldef "iota" as '&#8489;';
   latexdef "iota" as "\mathrm{\rotatebox[origin=C]{180}{$\iota$}}";
+htmldef "Smo" as
+    "<IMG SRC='_smo.gif' WIDTH=27 HEIGHT=19 ALT=' Smo' TITLE='Smo'> ";
+  althtmldef "Smo" as "Smo ";
+  latexdef "Smo" as "{\rm Smo}";
+
 htmldef "Fun" as
     "<IMG SRC='_fun.gif' WIDTH=25 HEIGHT=19 ALT=' Fun' TITLE='Fun'> ";
   althtmldef "Fun" as 'Fun ';
