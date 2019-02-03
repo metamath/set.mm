@@ -119,6 +119,7 @@
 "0r" is used by "mulresr".
 "0r" is used by "opelreal".
 "0r" is used by "sqgt0sr".
+"0reALT" is used by "psgnodpmr".
 "0vfval" is used by "hh0v".
 "0vfval" is used by "nv0".
 "0vfval" is used by "nv0lid".
@@ -1393,6 +1394,9 @@
 "axc9lem5OLD" is used by "axc9lem7OLD".
 "axc9lem6OLD" is used by "axc9lem7OLD".
 "axc9lem7OLD" is used by "axc9OLD".
+"axia2" is used by "mdetleib2".
+"axia2" is used by "mdetrlin".
+"axia2" is used by "psgnodpm".
 "axicn" is used by "sineq0ALT".
 "axinfnd" is used by "axinfprim".
 "axinfnd" is used by "zfcndinf".
@@ -4151,7 +4155,6 @@
 "con5" is used by "con5i".
 "con5i" is used by "vk15.4j".
 "con5i" is used by "vk15.4jVD".
-"csbabgOLD" is used by "csbdmgOLD".
 "csbabgOLD" is used by "csbfv12gALTOLD".
 "csbabgOLD" is used by "csbfv12gALTVD".
 "csbabgOLD" is used by "csbingVD".
@@ -4515,6 +4518,7 @@
 "df-m1r" is used by "map2psrpr".
 "df-m1r" is used by "mappsrpr".
 "df-md" is used by "mdbr".
+"df-mdetOLD" is used by "mdetfvalOLD".
 "df-metuOLD" is used by "metuvalOLD".
 "df-mgm" is used by "ismgm".
 "df-mi" is used by "dmmulpi".
@@ -5814,6 +5818,9 @@
 "enrex" is used by "mulclsr".
 "enrex" is used by "mulsrpr".
 "enrex" is used by "recexsrlem".
+"eqid1" is used by "evpmss".
+"eqid1" is used by "mdetralt".
+"eqid1" is used by "zrhpsgnmhm".
 "eqresr" is used by "ax1ne0".
 "eqresr" is used by "axpre-lttri".
 "eqresr" is used by "axrrecex".
@@ -9285,6 +9292,7 @@
 "mddmd" is used by "mdsldmd1i".
 "mddmd" is used by "mdsymi".
 "mddmd2" is used by "atmd".
+"mdetfvalOLD" is used by "mdetleibOLD".
 "mdi" is used by "atabsi".
 "mdi" is used by "mdexchi".
 "mdi" is used by "mdsl3".
@@ -11994,7 +12002,6 @@
 "sbcel1gvOLD" is used by "sbcoreleleqVD".
 "sbcel2gOLD" is used by "csbabgOLD".
 "sbcel2gOLD" is used by "csbcomgOLD".
-"sbcel2gOLD" is used by "csbdmgOLD".
 "sbcel2gOLD" is used by "csbingVD".
 "sbcel2gOLD" is used by "csbrngOLD".
 "sbcel2gOLD" is used by "csbunigOLD".
@@ -12003,7 +12010,6 @@
 "sbcel2gOLD" is used by "sbccsbgOLD".
 "sbcel2gOLD" is used by "sbcssOLD".
 "sbcel2gOLD" is used by "sbcssgVD".
-"sbcexgOLD" is used by "csbdmgOLD".
 "sbcexgOLD" is used by "csbrngOLD".
 "sbcexgOLD" is used by "csbrngVD".
 "sbcexgOLD" is used by "csbunigOLD".
@@ -13267,7 +13273,7 @@ New usage of "0oval" is discouraged (3 uses).
 New usage of "0psubN" is discouraged (0 uses).
 New usage of "0psubclN" is discouraged (1 uses).
 New usage of "0r" is discouraged (11 uses).
-New usage of "0reALT" is discouraged (0 uses).
+New usage of "0reALT" is discouraged (1 uses).
 New usage of "0vfval" is discouraged (9 uses).
 New usage of "19.12OLD" is discouraged (0 uses).
 New usage of "19.21a3con13vVD" is discouraged (0 uses).
@@ -13675,7 +13681,7 @@ New usage of "axi2m1" is discouraged (0 uses).
 New usage of "axi4" is discouraged (0 uses).
 New usage of "axi9" is discouraged (0 uses).
 New usage of "axia1" is discouraged (0 uses).
-New usage of "axia2" is discouraged (0 uses).
+New usage of "axia2" is discouraged (3 uses).
 New usage of "axia3" is discouraged (0 uses).
 New usage of "axial" is discouraged (0 uses).
 New usage of "axicn" is discouraged (1 uses).
@@ -14525,10 +14531,9 @@ New usage of "con5VD" is discouraged (0 uses).
 New usage of "con5i" is discouraged (2 uses).
 New usage of "conventions" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
-New usage of "csbabgOLD" is discouraged (11 uses).
+New usage of "csbabgOLD" is discouraged (10 uses).
 New usage of "csbcnvgOLD" is discouraged (0 uses).
 New usage of "csbcomgOLD" is discouraged (0 uses).
-New usage of "csbdmgOLD" is discouraged (0 uses).
 New usage of "csbeq2gOLD" is discouraged (6 uses).
 New usage of "csbeq2gVD" is discouraged (0 uses).
 New usage of "csbexOLD" is discouraged (0 uses).
@@ -14681,7 +14686,9 @@ New usage of "df-ltp" is discouraged (2 uses).
 New usage of "df-ltpq" is discouraged (2 uses).
 New usage of "df-ltr" is discouraged (2 uses).
 New usage of "df-m1r" is discouraged (5 uses).
+New usage of "df-maduOLD" is discouraged (0 uses).
 New usage of "df-md" is discouraged (1 uses).
+New usage of "df-mdetOLD" is discouraged (1 uses).
 New usage of "df-metuOLD" is discouraged (1 uses).
 New usage of "df-mgm" is discouraged (1 uses).
 New usage of "df-mi" is discouraged (2 uses).
@@ -15203,7 +15210,7 @@ New usage of "enrbreq" is discouraged (3 uses).
 New usage of "enreceq" is discouraged (9 uses).
 New usage of "enrer" is discouraged (7 uses).
 New usage of "enrex" is discouraged (9 uses).
-New usage of "eqid1" is discouraged (0 uses).
+New usage of "eqid1" is discouraged (3 uses).
 New usage of "eqresr" is discouraged (4 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
 New usage of "equid1" is discouraged (0 uses).
@@ -16273,6 +16280,8 @@ New usage of "mdcompli" is discouraged (1 uses).
 New usage of "mddmd" is discouraged (3 uses).
 New usage of "mddmd2" is discouraged (1 uses).
 New usage of "mddmdin0i" is discouraged (0 uses).
+New usage of "mdetfvalOLD" is discouraged (1 uses).
+New usage of "mdetleibOLD" is discouraged (0 uses).
 New usage of "mdexchi" is discouraged (0 uses).
 New usage of "mdi" is discouraged (4 uses).
 New usage of "mdoc1i" is discouraged (3 uses).
@@ -17214,8 +17223,8 @@ New usage of "sbccsb2gOLD" is discouraged (0 uses).
 New usage of "sbccsbgOLD" is discouraged (0 uses).
 New usage of "sbcel12gOLD" is discouraged (4 uses).
 New usage of "sbcel1gvOLD" is discouraged (2 uses).
-New usage of "sbcel2gOLD" is discouraged (11 uses).
-New usage of "sbcexgOLD" is discouraged (8 uses).
+New usage of "sbcel2gOLD" is discouraged (10 uses).
+New usage of "sbcexgOLD" is discouraged (7 uses).
 New usage of "sbcim2g" is discouraged (2 uses).
 New usage of "sbcim2gVD" is discouraged (0 uses).
 New usage of "sbcimdvOLD" is discouraged (0 uses).
@@ -17910,7 +17919,6 @@ Proof modification of "conventions" is discouraged (1 steps).
 Proof modification of "csbabgOLD" is discouraged (93 steps).
 Proof modification of "csbcnvgOLD" is discouraged (112 steps).
 Proof modification of "csbcomgOLD" is discouraged (153 steps).
-Proof modification of "csbdmgOLD" is discouraged (96 steps).
 Proof modification of "csbeq2gOLD" is discouraged (33 steps).
 Proof modification of "csbeq2gVD" is discouraged (61 steps).
 Proof modification of "csbexOLD" is discouraged (27 steps).
@@ -18308,6 +18316,8 @@ Proof modification of "lukshefth1" is discouraged (88 steps).
 Proof modification of "lukshefth2" is discouraged (129 steps).
 Proof modification of "max1ALT" is discouraged (48 steps).
 Proof modification of "mayete3iOLD" is discouraged (766 steps).
+Proof modification of "mdetfvalOLD" is discouraged (382 steps).
+Proof modification of "mdetleibOLD" is discouraged (115 steps).
 Proof modification of "measdivcstOLD" is discouraged (627 steps).
 Proof modification of "merco1" is discouraged (57 steps).
 Proof modification of "merco1lem1" is discouraged (191 steps).
