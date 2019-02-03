@@ -53330,42 +53330,6 @@ $)
   $}
 
   ${
-    $d A y x $.  $d C x $.  $d F y x $.
-    $( A strictly monotone ordinal function is greater than or equal to its
-       argument.  Exercise 1 in [TakeutiZaring] p. 50.  (Contributed by Andrew
-       Salmon, 23-Nov-2011.)  (Revised by Mario Carneiro, 28-Feb-2013.) $)
-    smogt $p |- ( ( F Fn A /\ Smo F /\ C e. A ) -> C C_ ( F ` C ) ) $=
-      ( vx vy wcel cfv wss wa cv wi id fveq2 sseq12d w3a word syl2anc imp com12
-      wral wfn wsmo wceq imbi2d con0 smodm2 3adant3 simp3 ordelord vex elon weq
-      sylibr eleq1 3anbi3d imbi12d simpl1 simpl2 ordtr1 exp3acom23 sylc syl3anc
-      wel pm2.27 ralimdva simp31 simp32 smofvon2 3ad2ant2 eloni simp33 3adantr3
-      smoel2 3impa ordtr2 syl22anc 3expia 3expd 3impia dfss3 syl6ibr syld tfis2
-      syl a1i mpcom vtoclga ) CAUAZCUBZBAFZBBCGZHZWJWHWIIZWLWMDJZWNCGZHZKWMWLKD
-      BAWNBUCZWPWLWMWQWNBWOWKWQLWNBCMNUDWMWNAFZWPWHWIWRWPWNUEFZWHWIWROZWPWTWNPZ
-      WSWTAPZWRXAWHWIXBWRACUFZUGZWHWIWRUHZAWNUIZQWNDUJUKUMWTWPKZWHWIEJZAFZOZXHX
-      HCGZHZKZDEDEULZWTXJWPXLXNWRXIWHWIWNXHAUNUOXNWNXHWOXKXNLWNXHCMNUPXMEWNTZXG
-      KWSWTXOWPWTXOXLEWNTZWPWTXMXLEWNWTEDVCZIWHWIXIXMXLKWHWIWRXQUQWHWIWRXQURWTX
-      QXIWTXBWRXQXIKXDXEXBXQWRXIXHWNAUSUTVARXJXLVDVBVEWTXPXHWOFZEWNTWPWTXLXREWN
-      WTXQXLXRKZWHWIWRXQXSKWMWRXQXLXRWHWIWRXQXLOZXRWHWIXTOZXHPZWOPZXLXKWOFZXRYA
-      XAXQYBYAXBWRXAWHWIXBXTXCUGWHWIWRXQXLVFXFQWHWIWRXQXLVGWNXHUIQYAWOUEFZYCWIW
-      HYEXTWNCVHVIWOVJWDWHWIWRXQXLVKWHWIXTYDWMWRXQYDXLAWNXHCVMVLVNYBYCIXLYDIXRX
-      HXKWOVORVPVQVRVSRVEEWNWOVTWAWBSWEWCWFVQSWGSVS $.
-  $}
-
-  ${
-    $d A x $.  $d B x $.  $d F x $.
-    $( The range of a strictly monotone ordinal function dominates the domain.
-       (Contributed by Mario Carneiro, 13-Mar-2013.) $)
-    smorndom $p |- ( ( F : A --> B /\ Smo F /\ Ord B ) -> A C_ B ) $=
-      ( vx wf wsmo word w3a cv wcel wa cfv wss wfn simpl1 ffn syl simpl2 smodm2
-      syl2anc ordelord sylancom simpl3 simpr smogt syl3anc 3ad2antl1 ordtr2 imp
-      ffvelrn syl22anc ex ssrdv ) ABCEZCFZBGZHZDABUQDIZAJZURBJZUQUSKZURGZUPURUR
-      CLZMZVCBJZUTUQUSAGZVBVACANZUOVFVAUNVGUNUOUPUSOABCPQZUNUOUPUSRZACSTAURUAUB
-      UNUOUPUSUCVAVGUOUSVDVHVIUQUSUDAURCUEUFUNUOUSVEUPABURCUJUGVBUPKVDVEKUTURVC
-      BUHUIUKULUM $.
-  $}
-
-  ${
     $d A x y $.  $d B x y $.  $d F x y $.
     $( The strictly monotone ordinal functions are also epsilon isomorphisms of
        subclasses of ` On ` .  (Contributed by Mario Carneiro, 20-Mar-2013.) $)
