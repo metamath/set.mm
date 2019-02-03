@@ -53329,22 +53329,6 @@ $)
       FUBUDBDCOPQR $.
   $}
 
-  ${
-    $d A x y $.  $d B x y $.  $d F x y $.
-    $( The strictly monotone ordinal functions are also epsilon isomorphisms of
-       subclasses of ` On ` .  (Contributed by Mario Carneiro, 20-Mar-2013.) $)
-    smoiso2 $p |- ( ( Ord A /\ B C_ On ) ->
-      ( ( F : A -onto-> B /\ Smo F ) <-> F Isom _E , _E ( A , B ) ) ) $=
-      ( vx vy word con0 wss wa wfo wsmo cep cv wbr cfv wral sylan sylanbrc wcel
-      adantl wiso wf1o wb wf1 fof smo11 simpl df-f1o wfn fofn smoord epel epelc
-      wf 3bitr4g ralrimivva df-isom ex w3a isof1o f1ofo syl 3ad2ant1 smoiso jca
-      fvex 3expib com12 impbid ) AFZBGHZIZABCJZCKZIZABLLCUAZVLVOVPVLVOIABCUBZDM
-      ZEMZLNZVRCOZVSCOZLNZUCZEAPDAPZVPVOVQVLVOABCUDZVMVQVMABCUNVNWFABCUEABCUFQV
-      MVNUGABCUHRTVOWEVLVMCAUIZVNWEABCUJWGVNIZWDDEAAWHVRASVSASIIVRVSSWAWBSVTWCA
-      VRVSCUKDEULWAWBVSCVFUMUOUPQTDEABLLCUQRURVPVLVOVPVJVKVOVPVJVKUSVMVNVPVJVMV
-      KVPVQVMABLLCUTABCVAVBVCABCVDVEVGVHVI $.
-  $}
-
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
