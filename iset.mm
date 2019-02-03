@@ -53323,30 +53323,6 @@ $)
   $}
 
   ${
-    $d A w x y z $.  $d F w x y z $.
-    $( A strictly monotone ordinal function is one-to-one.  (Contributed by
-       Mario Carneiro, 28-Feb-2013.) $)
-    smo11 $p |- ( ( F : A --> B /\ Smo F ) -> F : A -1-1-> B ) $=
-      ( vz vw vy vx wa cv cfv weq wi wral wcel word ex w3a 3ad2ant1 fveq2 sylan
-      wsmo wceq wf1 simpl wfn ffn smodm2 ordelord syl anim12d wel w3o ordtri3or
-      wf simp1rr smoel2 ralrimivva adantr simp2 eleq2d raleqbi1dv eleq1d rspccv
-      simp3 rspcv syl6 3imp eleq1 biimpac syl31anc wn con0 smofvon2 ordirr 3syl
-      eloni ad2antlr pm2.21dd 3exp ax-1 simp1rl eleq2 3jaod syl5 mpdd ralrimivv
-      a1i dff13 sylanbrc ) ABCUNZCUAZHWJDIZCJZEIZCJZUBZDEKZLZEAMDAMZABCUCWJWKUD
-      WJCAUEZWKWSABCUFWTWKHZWRDEAAXAWLANZWNANZHZWLOZWNOZHZWRXAXBXEXCXFXAAOZXBXE
-      LACUGZXHXBXEAWLUHPUIXAXHXCXFLXIXHXCXFAWNUHPUIUJXAXDXGWRLXGDEUKZWQEDUKZULX
-      AXDHZWRWLWNUMXLXJWRWQXKXLXJWPWQXLXJWPQZWOWONZWQXMXCFIZCJZGIZCJZNZFXQMZGAM
-      ZXJWPXNXBXCXAXJWPUOXLXJYAWPXAYAXDXAXSGFAXQAXQXOCUPUQURZRXLXJWPUSXLXJWPVDX
-      CYAXJQWMWONZWPXNXCYAXJYCXCYAXPWONZFWNMZXJYCLXTYEGWNAXSYDFXQWNGEKXRWOXPXQW
-      NCSUTVAVEYDYCFWLWNFDKXPWMWOXOWLCSVBVCVFVGWPYCXNWMWOWOVHVITVJXLXJXNVKZWPWK
-      YFWTXDWKWOVLNWOOYFWNCVMWOVPWOVNVOVQZRVRVSWQWRLXLWQWPVTWGXLXKWPWQXLXKWPQZX
-      NWQYHXBYAXKWPXNXBXCXAXKWPWAXLXKYAWPYBRXLXKWPUSXLXKWPVDXBYAXKQWOWMNZWPXNXB
-      YAXKYIXBYAXPWMNZFWLMZXKYILXTYKGWLAXSYJFXQWLGDKXRWMXPXQWLCSUTVAVEYJYIFWNWL
-      FEKXPWOWMXOWNCSVBVCVFVGWPYIXNWMWOWOWBVITVJXLXKYFWPYGRVRVSWCWDPWEWFTDEABCW
-      HWI $.
-  $}
-
-  ${
     $( A strictly monotone ordinal function preserves strict ordering.
        (Contributed by Mario Carneiro, 4-Mar-2013.) $)
     smoord $p |- ( ( ( F Fn A /\ Smo F ) /\ ( C e. A /\ D e. A ) ) ->
