@@ -53330,38 +53330,6 @@ $)
   $}
 
   ${
-    $( A strictly monotone ordinal function preserves strict ordering.
-       (Contributed by Mario Carneiro, 4-Mar-2013.) $)
-    smoord $p |- ( ( ( F Fn A /\ Smo F ) /\ ( C e. A /\ D e. A ) ) ->
-      ( C e. D <-> ( F ` C ) e. ( F ` D ) ) ) $=
-      ( wa wcel word cfv ordelord syl2anc w3a simp3 wi smoel2 3expia ordirr syl
-      wn 3adant3 neleqtrd wfn wsmo wb smodm2 adantr simprl simprr w3o ordtri3or
-      wceq expr adantrl 3impia 2thd con0 smofvon2 ad2antlr eloni fveq2d 2falsed
-      3syl ordn2lp pm3.2 3ad2ant3 mtod adantrlr 3impb pm3.21 3jaod syl5 mp2and
-      ) DAUAZDUBZEZBAFZCAFZEZEZBGZCGZBCFZBDHZCDHZFZUCZVRAGZVOVSVNWFVQADUDUEZVNV
-      OVPUFABIJZVRWFVPVTWGVNVOVPUGACIJZVSVTEWABCUJZCBFZUHVRWEBCUIVRWAWEWJWKVNVQ
-      WAWEVNVQWAKWAWDVNVQWALVNVQWAWDVNVPWAWDMVOVNVPWAWDACBDNUKULUMUNOVNVQWJWEVN
-      VQWJKZWAWDWLBCBVNVQBBFRZWJVRVSWMWHBPQSVNVQWJLZTWLWBWCWBVNVQWBWBFRZWJVRWBU
-      OFZWBGZWOVMWPVLVQBDUPUQZWBURZWBPVASWLBCDWNUSTUTOVNVQWKWEVNVQWKKZWAWDWTWAW
-      KWAEZWTVTXARVNVQVTWKWISCBVBQWKVNWAXAMVQWKWAVCVDVEWTWDWDWCWBFZEZWTWQXCRVNV
-      QWQWKVRWPWQWRWSQSWBWCVBQWTXBWDXCMVNVQWKXBVNVOWKXBVPABCDNVFVGXBWDVHQVEUTOV
-      IVJVK $.
-  $}
-
-  ${
-    $( A strictly monotone ordinal function preserves weak ordering.
-       (Contributed by Mario Carneiro, 4-Mar-2013.) $)
-    smoword $p |- ( ( ( F Fn A /\ Smo F ) /\ ( C e. A /\ D e. A ) ) ->
-      ( C C_ D <-> ( F ` C ) C_ ( F ` D ) ) ) $=
-      ( wfn wsmo wa wcel wn cfv wss word ordelord syl2anc ordtri1 con0 smofvon2
-      wb eloni 3syl smoord notbid ancom2s smodm2 adantr simprl simprr 3bitr4d
-      simplr ) DAEZDFZGZBAHZCAHZGZGZCBHZIZCDJZBDJZHZIZBCKZUTUSKZULUNUMURVBRULUN
-      UMGGUQVAACBDUAUBUCUPBLZCLZVCURRUPALZUMVEULVGUOADUDUEZULUMUNUFABMNUPVGUNVF
-      VHULUMUNUGACMNBCONUPUTLZUSLZVDVBRUPUKUTPHVIUJUKUOUIZBDQUTSTUPUKUSPHVJVKCD
-      QUSSTUTUSONUH $.
-  $}
-
-  ${
     $d A y x $.  $d C x $.  $d F y x $.
     $( A strictly monotone ordinal function is greater than or equal to its
        argument.  Exercise 1 in [TakeutiZaring] p. 50.  (Contributed by Andrew
