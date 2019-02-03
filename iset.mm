@@ -53374,7 +53374,7 @@ $)
        O'Rear, 18-Jan-2015.) $)
     nfrecs $p |- F/_ x recs ( F ) $=
       ( va vb vc crecs cv wfn cfv cres wceq wral wa con0 wrex cuni df-recs nfcv
-      cab nfv nffv nfeq2 nfral nfan nfrex nfab nfuni nfcxfr ) ABGDHZEHZIZFHZUJJ
+      cab nfv nffv nfeq2 nfralxy nfan nfrexxy nfab nfuni nfcxfr ) ABGDHZEHZIZFHZUJJ
       ZUJUMKZBJZLZFUKMZNZEOPZDTZQEFDBRAVAUTADUSAEOAOSULURAULAUAUQAFUKAUKSAUNUPA
       UOBCAUOSUBUCUDUEUFUGUHUI $.
   $}
