@@ -36663,8 +36663,7 @@ $)
 
   $( Epsilon irreflexivity of ordinals: no ordinal class is a member of
      itself.  Theorem 2.2(i) of [BellMachover] p. 469, generalized to classes.
-     (Contributed by
-     NM, 2-Jan-1994.) $)
+     (Contributed by NM, 2-Jan-1994.) $)
   ordirr $p |- ( Ord A -> -. A e. A ) $=
     ( wcel wn word elirr a1i ) AABCADAEF $.
 
@@ -53330,6 +53329,242 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    "Strong" transfinite recursion
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c recs $.
+
+  $( Notation for a function defined by strong transfinite recursion. $)
+  crecs $a class recs ( F ) $.
+
+  ${
+    $d F f x y $.
+    $( Define a function ` recs ( F ) ` on ` On ` , the class of ordinal
+       numbers, by transfinite recursion given a rule ` F ` which sets the next
+       value given all values so far.  If we were assuming the law of the
+       excluded middle, we would then build on top of that a form of recursion
+       which has separate cases for the empty set, successor ordinals, and
+       limit ordinals.  This version allows the update rule to use _all_
+       previous values, which is why it is described as "strong".
+
+       (Contributed by Stefan O'Rear, 18-Jan-2015.) $)
+    df-recs $a |- recs ( F ) = U. { f | E. x e. On ( f Fn x /\
+        A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+  $}
+
+  ${
+    $d F a b c y $.  $d G a b c y $.  $d x y a b c $.
+    $( Equality theorem for ` recs ` .  (Contributed by Stefan O'Rear,
+       18-Jan-2015.) $)
+    recseq $p |- ( F = G -> recs ( F ) = recs ( G ) ) $=
+      ( va vb vc wceq cv wfn cfv cres wral wa con0 wrex cuni crecs fveq1 eqeq2d
+      cab df-recs ralbidv anbi2d rexbidv abbidv unieqd 3eqtr4g ) ABFZCGZDGZHZEG
+      ZUHIZUHUKJZAIZFZEUIKZLZDMNZCSZOUJULUMBIZFZEUIKZLZDMNZCSZOAPBPUGUSVEUGURVD
+      CUGUQVCDMUGUPVBUJUGUOVAEUIUGUNUTULUMABQRUAUBUCUDUEDECATDECBTUF $.
+
+    nfrecs.f $e |- F/_ x F $.
+    $( Bound-variable hypothesis builder for ` recs ` .  (Contributed by Stefan
+       O'Rear, 18-Jan-2015.) $)
+    nfrecs $p |- F/_ x recs ( F ) $=
+      ( va vb vc crecs cv wfn cfv cres wceq wral wa con0 wrex cuni df-recs nfcv
+      cab nfv nffv nfeq2 nfralxy nfan nfrexxy nfab nfuni nfcxfr ) ABGDHZEHZIZFHZUJJ
+      ZUJUMKZBJZLZFUKMZNZEOPZDTZQEFDBRAVAUTADUSAEOAOSULURAULAUAUQAFUKAUKSAUNUPA
+      UOBCAUOSUBUCUDUEUFUGUHUI $.
+  $}
+
+  ${
+    $d x y z A $.  $d y z B $.  $d x y z w F $.  $d x y z w G $.
+    $( A technical lemma for transfinite recursion.  Compare Lemma 1 of
+       [TakeutiZaring] p. 47.  (Contributed by NM, 23-Mar-1995.)  (Revised by
+       David Abernethy, 19-Jun-2012.) $)
+    tfrlem1 $p |- ( A e. On -> ( ( F Fn A /\ G Fn A ) ->
+                  ( A. x e. A ( ( F ` x ) = ( B ` ( F |` x ) ) /\
+                                        ( G ` x ) = ( B ` ( G |` x ) ) ) ->
+                  A. x e. A ( F ` x ) = ( G ` x ) ) ) ) $=
+      ( vy vz vw con0 wcel wa wss cv cfv wceq wral wi raleq imbi12d syl6 imbi2d
+      wfn cres ssid sseq1 anbi2d anbi12d ralim onelss sstr2 anim2d ssralv com23
+      anim12d ralrimdv nfra1 fveq2 eqeq12d cbvralv syl5bb cbvral fvreseq fveq2d
+      nfv biimpar eqeq12 syl5ibr exp4c com4l syl9 imp4a ralimdva syl5bi imim12d
+      imp31 ex pm2.43 syl56 tfis2 vtoclga mpii ) BIJDBUBEBUBKZBBLZAMZDNZDWDUCZC
+      NZOWDENZEWDUCZCNZOKZABPZWEWHOZABPZQZBUDWBFMZBLZWKAWPPZWMAWPPZQZQZQWBWCWOQ
+      ZQFBIWPBOZXAXBWBXCWQWCWTWOWPBBUEXCWRWLWSWNWKAWPBRWMAWPBRSSUAWPIJZWBWQWRWS
+      WBWQKZWRKZWSQZWBGMZBLZKZWKAXHPZKZWMAXHPZQZFGWPXHOZXFXLWSXMXOXEXJWRXKXOWQX
+      IWBWPXHBUEUFWKAWPXHRUGWMAWPXHRSXNGWPPXLGWPPZXMGWPPZQXDXFXGQXGXLXMGWPUHXDX
+      FXPXQXGXDXFXLGWPXDXHWPJZXFXLXDXRXHWPLZXFXLQWPXHUIXSXEXJWRXKXSWQXIWBXHWPBU
+      JUKWKAXHWPULUNTUMUOXDXQXEWRWSXDXEXQWTXDXEXQWTQXQHMZDNZXTENZOZHWDPZAWPPZXD
+      XEKZWTXMYDGAWPWMAXHUPYDGVDXMYCHXHPXHWDOYDWMYCAHXHWDXTOWEYAWHYBWDXTDUQWDXT
+      EUQURUSYCHXHWDRUTVAYFYEWKWMQZAWPPWTYFYDYGAWPXDXEWDWPJZYDYGQZXDYHXEYIXDYHW
+      BWQYIXDYHWDWPLZWBWQYIQQWPWDUIYJWQWDBLZWBYIWDWPBUJWKWBYKYDWMWKWBYKYDWMWBYK
+      KZYDKZWMWKWGWJOYMWFWICYLWFWIOYDHBWDDEVBVEVCWEWGWHWJVFVGVHVIVJTVKUMVOVLWKW
+      MAWPUHTVMVPUMVKVNXFWSVQVRVSVHVTWA $.
+  $}
+
+  ${
+    $d w A $.  $d w F $.  $d w G $.  $d w x $.
+    $( Lemma for transfinite recursion.  This provides some messy details
+       needed to link ~ tfrlem1 into the main proof.  (Contributed by NM,
+       23-Mar-1995.)  (Revised by David Abernethy, 19-Jun-2012.) $)
+    tfrlem2 $p |- ( ( F Fn A /\ G Fn A ) ->
+       ( ( <. x , y >. e. F /\ <. x , z >. e. G ) ->
+       ( A e. On -> ( A. w ( A e. On -> ( w e. A ->
+          ( ( F ` w ) = ( B ` ( F |` w ) ) /\
+            ( G ` w ) = ( B ` ( G |` w ) ) ) ) ) ->
+       y = z ) ) ) ) $=
+      ( wfn wa cv cop wcel cfv cres wceq wi wal 19.28v imp con0 abai albii wral
+      df-ral anbi2i fnop adantlr tfrlem1 com12 imp3a adantr fveq2 eqeq12d rspcv
+      3bitr3ri sylsyld adantlrr sylan2br wfun fnfun anim12i funopfv an4s eqeq12
+      wb sylan syl mpbid sylan2b exp43 ) GEIZHEIZJZAKZBKZLGMZVOCKZLHMZJZEUAMZWA
+      DKZEMWBGNZGWBOFNPWBHNZHWBOFNPJZQZQZDRZVPVRPZWAWHJZVNVTJZWAWFDRZJZWIWAWFJZ
+      DRWAWGJZDRWMWJWNWODWAWFUBUCWAWFDSWAWGDSUPWKWMJVOGNZVOHNZPZWIWMWKWAWEDEUDZ
+      JZWRWSWLWAWEDEUEUFVNVQWTWRVSVNVQJZWTWRXAVOEMZWTWCWDPZDEUDZWRVLVQXBVMEVOVP
+      GUGUHVNWTXDQVQVNWAWSXDWAVNWSXDQDEFGHUIUJUKULXCWRDVOEWBVOPWCWPWDWQWBVOGUMW
+      BVOHUMUNUOUQTURUSWKWRWIVFZWMWKWPVPPZWQVRPZJZXEVNGUTZHUTZJVTXHVLXIVMXJEGVA
+      EHVAVBXIVQXJVSXHXIVQJXFXJVSJXGXIVQXFVOVPGVCTXJVSXGVOVRHVCTVBVDVGWPVPWQVRV
+      EVHULVIVJVK $.
+  $}
+
+  ${
+    $d x y f g $.  $d x y z $.  $d g z $.  $d f g F $.  $d x z F $.
+    tfrlem3.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    $( Lemma for transfinite recursion.  Let ` A ` be the class of "acceptable"
+       functions.  The final thing we're interested in is the union of all
+       these acceptable functions.  This lemma just changes some bound
+       variables in ` A ` for later use.  (Contributed by NM, 9-Apr-1995.) $)
+    tfrlem3 $p |- A = { g | E. z e. On ( g Fn z /\
+                A. y e. z ( g ` y ) = ( F ` ( g |` y ) ) ) } $=
+      ( cv wfn cfv cres wceq wral wa con0 wrex cab wcel anbi12d vex fneq1 fveq1
+      reseq1 fveq2d eqeq12d ralbidv rexbidv elab fneq2 raleq bitri abbi2i eqtri
+      cbvrexv ) DEIZAIZJZBIZUPKZUPUSLZGKZMZBUQNZOZAPQZERZFIZCIZJZUSVHKZVHUSLZGK
+      ZMZBVINZOZCPQZFRHVQFVGVHVGSVHUQJZVNBUQNZOZAPQZVQVFWAEVHFUAUPVHMZVEVTAPWBU
+      RVRVDVSUQUPVHUBWBVCVNBUQWBUTVKVBVMUSUPVHUCWBVAVLGUPVHUSUDUEUFUGTUHUIVTVPA
+      CPUQVIMVRVJVSVOUQVIVHUJVNBUQVIUKTUOULUMUN $.
+  $}
+
+  ${
+    $d x y f g $.  $d f g F $.
+    tfrlem3a.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    $( Lemma for transfinite recursion.  Let ` A ` be the class of "acceptable"
+       functions.  The final thing we're interested in is the union of all
+       these acceptable functions.  This lemma just changes some bound
+       variables in ` A ` for later use.  (Contributed by NM, 22-Jul-2012.) $)
+    tfrlem3a $p |- A = { g | E. x e. On ( g Fn x /\
+                A. y e. x ( g ` y ) = ( F ` ( g |` y ) ) ) } $=
+      ( cv wfn cfv cres wceq wral wa con0 wrex cab fneq1 fveq1 reseq1 eqeq12d
+      fveq2d ralbidv anbi12d rexbidv cbvabv eqtri ) CDHZAHZIZBHZUHJZUHUKKZFJZLZ
+      BUIMZNZAOPZDQEHZUIIZUKUSJZUSUKKZFJZLZBUIMZNZAOPZEQGURVGDEUHUSLZUQVFAOVHUJ
+      UTUPVEUIUHUSRVHUOVDBUIVHULVAUNVCUKUHUSSVHUMVBFUHUSUKTUBUAUCUDUEUFUG $.
+  $}
+
+  ${
+    $d f g x y z B $.  $d f x y z C $.  $d f g h u v w x y z F $.
+    $d g h z A $.
+    tfrlem.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    $( Lemma for transfinite recursion. ` A ` is the class of all "acceptable"
+       functions, and ` F ` is their union.  First we show that an acceptable
+       function is in fact a function.  (Contributed by NM, 9-Apr-1995.) $)
+    tfrlem4 $p |- ( g e. A -> Fun g ) $=
+      ( vz cv wcel wfn cfv cres wceq wral wa con0 wrex wfun tfrlem3 fnfun sylbi
+      abeq2i adantr rexlimivw ) EIZCJUFHIZKZBIZUFLUFUIMFLNBUGOZPZHQRZUFSZULECAB
+      HCDEFGTUCUKUMHQUHUMUJUGUFUAUDUEUB $.
+
+    $( Lemma for transfinite recursion.  The values of two acceptable functions
+       are the same within their domains.  (Contributed by NM, 9-Apr-1995.) $)
+    tfrlem5 $p |- ( ( g e. A /\ h e. A ) ->
+                  ( ( <. x , u >. e. g /\ <. x , v >. e. h ) -> u = v ) ) $=
+      ( vz vw cv wcel wa wfn cfv cres con0 wi wceq wral wrex cop tfrlem3 abeq2i
+      weq anbi12i reeanv bitr4i cin wal onin r19.26m simpr elin sylib prth syl5
+      wss wb onelss impac fvres resabs1 fveq2d eqeqan12rd anbi12d bicomd mpbidi
+      exp3a sylbir anim2i an4s 2elresin fnresin1 fnresin2 tfrlem2 syl2an sylbid
+      syl alimi com24 com3r imp32 ex rexlimivv sylbi ) GMZENZHMZENZOZWIKMZPZBMZ
+      WIQZWIWPRZIQZUAZBWNUBZOZWKLMZPZWPWKQZWKWPRZIQZUAZBXCUBZOZOZLSUCKSUCZAMZDM
+      UDZWINXMCMUDZWKNOZDCUGZTZWMXBKSUCZXJLSUCZOXLWJXSWLXTXSGEABKEFGIJUEUFXTHEA
+      BLEFHIJUEUFUHXBXJKLSSUIUJXKXRKLSSWNSNXCSNOZXKXRYAWNXCUKZSNZWOXDOZYCWPYBNZ
+      WPWIYBRZQZYFWPRZIQZUAZWPWKYBRZQZYKWPRZIQZUAZOZTTZBULZOZXRXKWNXCUMWOXDXAXI
+      YSXAXIOZYRYDYTWPWNNZWTTWPXCNZXHTOZBULYRWTXHBWNXCUNUUCYQBUUCYCYEYPYCYEOZWT
+      XHOZYPUUCUUDUUAUUBOZUUCUUEUUDYEUUFYCYEUOWPWNXCUPUQUUAWTUUBXHURUSUUDYPUUEU
+      UDWPYBUTZYEOZYPUUEVAYCYEUUGYBWPVBVCUUHYJWTYOXHYEUUGYGWQYIWSWPYBWIVDUUGYHW
+      RIWIWPYBVEVFVGYEUUGYLXEYNXGWPYBWKVDUUGYMXFIWKWPYBVEVFVGVHWAVIVJVKWBVLVMVN
+      YCYDYRXRYDYRYCXRYDXPYCYRXQYDXPXNYFNXOYKNOZYCYRXQTTZADCWNXCWIWKVOWOYFYBPYK
+      YBPUUIUUJTXDWNXCWIVPXCWNWKVQADCBYBIYFYKVRVSVTWCWDWEVSWFWGWH $.
+
+    $( Lemma for transfinite recursion.  The definition ` recs ` is the union
+       of all acceptable functions.  (Contributed by Mario Carneiro,
+       9-May-2015.) $)
+    recsfval $p |- recs ( F ) = U. A $=
+      ( crecs cv wfn cfv cres wceq wral wa con0 wrex cab cuni df-recs unieqi
+      eqtr4i ) EGDHZAHZIBHZUBJUBUDKEJLBUCMNAOPDQZRCRABDESCUEFTUA $.
+
+    $( Lemma for transfinite recursion.  The union of all acceptable functions
+       is a relation.  (Contributed by NM, 8-Aug-1994.)  (Revised by Mario
+       Carneiro, 9-May-2015.) $)
+    tfrlem6 $p |- Rel recs ( F ) $=
+      ( vg crecs wrel cuni reluni wcel wfun tfrlem4 funrel syl mprgbir recsfval
+      cv releqi mpbir ) EHZICJZIZUDGSZIZGCGCKUECLUEMUFABCDGEFNUEOPQUBUCABCDEFRT
+      UA $.
+
+    $( Lemma for transfinite recursion.  The union of all acceptable functions
+       is a function.  (Contributed by NM, 9-Aug-1994.) $)
+    tfrlem7 $p |- Fun recs ( F ) $=
+      ( vu vv vg vh cv cop wcel wa wal wex eleq2i eluni bitri sylbi wfun weq wi
+      crecs wrel tfrlem6 cuni recsfval anbi12i eeanv an4 ancom tfrlem5 exlimivv
+      bitr4i imp ax-gen gen2 dffun4 mpbir2an ) EUDZUAVAUEAKZGKLZVAMZVBHKLZVAMZN
+      ZGHUBZUCZHOZGOAOABCDEFUFVJAGVIHVGVCIKZMZVKCMZNZVEJKZMZVOCMZNZNZJPIPZVHVGV
+      NIPZVRJPZNVTVDWAVFWBVDVCCUGZMWAVAWCVCABCDEFUHZQIVCCRSVFVEWCMWBVAWCVEWDQJV
+      ECRSUIVNVRIJUJUOVSVHIJVSVMVQNZVLVPNZNZVHVSWFWENWGVLVMVPVQUKWFWEULSWEWFVHA
+      BHGCDIJEFUMUPTUNTUQURAGHVAUSUT $.
+
+    $( Lemma for transfinite recursion.  The domain of ` recs ` is ordinal.
+       (Contributed by NM, 14-Aug-1994.)  (Proof shortened by Alan Sare,
+       11-Mar-2008.) $)
+    tfrlem8 $p |- Ord dom recs ( F ) $=
+      ( vz vg crecs cdm word cv wceq wrex cuni con0 wcel cfv rexlimiv ax-mp cab
+      wss wi wfn cres wral wa tfrlem3 abeq2i fndm adantr eleq1d biimprcd eleq1a
+      sylbi syl abssi ssorduni ciun recsfval dmeqi dmuni vex dmex dfiun2 3eqtri
+      wb ordeq mpbir ) EIZJZKZGLZHLZJZMZHCNZGUAZOZKZVRPUBVTVQGPVPVMPQZHCVNCQZVO
+      PQZVPWAUCWBVNVMUDZBLZVNRVNWEUEERMBVMUFZUGZGPNZWCWHHCABGCDHEFUHUIWGWCGPWGW
+      CWAWGVOVMPWDVOVMMWFVMVNUJUKULUMSUOVOPVMUNUPSUQVRURTVKVSMVLVTVGVKCOZJHCVOU
+      SVSVJWIABCDEFUTVAHCVBHGCVOVNHVCVDVEVFVKVSVHTVI $.
+
+    $( Lemma for transfinite recursion.  Here we compute the value of ` recs `
+       (the union of all acceptable functions).  (Contributed by NM,
+       17-Aug-1994.) $)
+    tfrlem9 $p |- ( B e. dom recs ( F ) ->
+      ( recs ( F ) ` B ) = ( F ` ( recs ( F ) |` B ) ) ) $=
+      ( vz cdm wcel cv wex cfv cres wceq wa con0 wi syl com3l crecs cop ibi wfn
+      eldm2g wral wrex cab cuni df-recs eleq2i eluniab bitri wss abeq2i elssuni
+      fnop rspe recsfval syl6sseqr sylbir fveq2 reseq2 fveq2d rspcv fndm eleq2d
+      eqeq12d wfun tfrlem7 funssfv mp3an1 adantrl eleq1d onelss imp31 fun2ssres
+      syl6bir w3a sylan2 exbiri exp31 com34 com24 sylbird syld imp4d mpdi exp4d
+      ex com4r pm2.43i imp4a rexlimdv imp exlimiv sylbi ) DFUAZIZJZDHKZUBZWRJZH
+      LZDWRMZWRDNZFMZOZWTXDHDWRWSUEUCXCXHHXCXBEKZJZXIAKZUDZBKZXIMZXIXMNZFMZOZBX
+      KUFZPZAQUGZPZELZXHXCXBXTEUHUIZJYBWRYCXBABEFUJUKXTEXBULUMYAXHEXJXTXHXJXSXH
+      AQXJXKQJZXLXRXHXLXJYDXRXHRZXLXJYDYERRXLXJYDXLYEXLXJYDXLYERRXLXJPZYDXLXRXH
+      YFDXKJZYDXSPZXHRXKDXAXIUQYGYHXIWRUNZXHYHXTYIXSAQURXTXICJZYIXTECGUOYJXICUI
+      WRXICUPABCEFGUSUTVASYGYDXLXRYIXHRZYGXRXLYDYKYGXRDXIMZXIDNZFMZOZXLYDYKRZRX
+      QYOBDXKXMDOZXNYLXPYNXMDXIVBYQXOYMFXMDXIVCVDVHVEXLYGYOYPXLYGDXIIZJZYOYPRXL
+      YRXKDXKXIVFZVGXLYDYOYSYKXLYDYSYOYKXLYDYSYOYKRYIXLYDPZYSPZYOXHYIUUBXHYOYIU
+      UBPXEYLXGYNYIYSXEYLOZUUAWRVIZYIYSUUCABCEFGVJZDWRXIVKVLVMUUBYIDYRUNZXGYNOZ
+      XLYDYSUUFXLYDYRQJYSUUFRXLYRXKQYTVNYRDVOVRVPUUDYIUUFUUGUUEUUDYIUUFVSXFYMFD
+      WRXIVQVDVLVTVHWATWBWCWDWETWFWDWGWHSWIWJWKWLTWMWNWOWPWQWPS $.
+  $}
+
+  ${
+    $d f x y A $.  $d x y B $.  $d x y F $.  $d f u v x y G $.
+    tfr.1 $e |- F = recs ( G ) $.
+    $( A weak version of transfinite recursion.  (Contributed by Mario Carneiro, 24-Jun-2015.) $)
+    tfr2a $p |- ( A e. dom F -> ( F ` A ) = ( G ` ( F |` A ) ) ) $=
+      ( vx vy vf cdm wcel crecs cfv cres wceq cv wfn wral wa con0 wrex cab eqid
+      tfrlem9 dmeqi eleq2s fveq1i reseq1i fveq2i 3eqtr4g ) ABHZIACJZKZUJALZCKZA
+      BKBALZCKUKUMMAUJHUIEFGNZENZOFNZUOKUOUQLCKMFUPPQERSGTZAGCURUAUBBUJDUCUDABU
+      JDUEUNULCBUJADUFUGUH $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -54055,6 +54290,9 @@ htmldef "Smo" as
     "<IMG SRC='_smo.gif' WIDTH=27 HEIGHT=19 ALT=' Smo' TITLE='Smo'> ";
   althtmldef "Smo" as "Smo ";
   latexdef "Smo" as "{\rm Smo}";
+htmldef "recs" as "recs";
+  althtmldef "recs" as "recs";
+  latexdef "recs" as "\mathrm{recs}";
 
 htmldef "Fun" as
     "<IMG SRC='_fun.gif' WIDTH=25 HEIGHT=19 ALT=' Fun' TITLE='Fun'> ";
