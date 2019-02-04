@@ -36663,8 +36663,7 @@ $)
 
   $( Epsilon irreflexivity of ordinals: no ordinal class is a member of
      itself.  Theorem 2.2(i) of [BellMachover] p. 469, generalized to classes.
-     (Contributed by
-     NM, 2-Jan-1994.) $)
+     (Contributed by NM, 2-Jan-1994.) $)
   ordirr $p |- ( Ord A -> -. A e. A ) $=
     ( wcel wn word elirr a1i ) AABCADAEF $.
 
