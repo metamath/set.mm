@@ -155,14 +155,14 @@ SIZE=-1><I>19-May-2003</I></FONT>
 
 </LI>
 <LI> <A HREF="#trivia">2 + 2 = 4 Trivia</A>  &nbsp;
-    <FONT SIZE=-1><A HREF="#2p2e4length">more</A></FONT>
+    <FONT SIZE=-1>(<A HREF="#2p2e4length">more</A>
 
-<!--
-<FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>Revised</FONT> <FONT
-SIZE=-1><I>2-Jun-2008 (added mouseovers)</I></FONT>
--->
+<FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>Added</FONT> <FONT
+  SIZE=-1><I>22-Dec-2018</I></FONT>)
 
+</FONT>
 </LI>
+
 <LI> <A HREF="#axiomnote">Appendix 1: A Note on the Axioms</A>
 
 <!--
@@ -209,10 +209,13 @@ Depends On</A></LI>
 <LI> <A HREF="#subsys">Appendix 7: Some Predicate Calculus
 Subsystems</A>
 
-<!--
+</LI>
+
+<LI> <A HREF="#oldaxioms">Appendix 8: Axiom Numbering
+Before December 2018</A>
+
 <FONT SIZE=-2 FACE="Comic Sans MS" COLOR=ORANGE>Added</FONT> <FONT
-SIZE=-1><I>15-Jul-2007</I></FONT>
--->
+SIZE=-1><I>26-Dec-2018</I></FONT>
 
 </LI>
 
@@ -1055,7 +1058,7 @@ are also wffs.
 well as a placeholder for which other wffs can be substituted.
 
 <P>The axioms below are examples of wffs.  Each page describing an
-axiom, for example ~ ax-13 , presents the axiom's
+axiom, for example ~ ax-12 , presents the axiom's
 construction in a syntax breakdown chart, showing that it follows these
 rules and is therefore a wff.  You may want to look at a few of these
 to make sure you understand how wffs are constructed and how to
@@ -1277,16 +1280,16 @@ SUMMARY="Axioms of predicate calculus with equality">
 ` |- ( A. x A. y ph -> `
 ` A. y A. x ph ) ` </TD></TR>
 
-<TR ALIGN=LEFT><TD><A HREF="ax-12.html">Quantified Equality</A></TD>
+<TR ALIGN=LEFT><TD><A HREF="ax-12.html">Substitution</A></TD>
 <TD NOWRAP><FONT COLOR="#006633"><B>ax-12</B></FONT></TD>
 <TD>
-` |- ( -. x `
-` = y -> ( y = z -> A. x ` ` y = z ) ) `
+` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD></TR>
 
-<TR ALIGN=LEFT><TD><A HREF="ax-13.html">Substitution</A></TD>
+<TR ALIGN=LEFT><TD><A HREF="ax-13.html">Quantified Equality</A></TD>
 <TD NOWRAP><FONT COLOR="#006633"><B>ax-13</B></FONT></TD>
 <TD>
-` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD></TR>
+` |- ( -. x `
+` = y -> ( y = z -> A. x ` ` y = z ) ) `  </TD></TR>
 
 </TABLE>
 
@@ -1305,6 +1308,10 @@ devised by logician Alfred Tarski and auxiliary axioms needed to endow the
 system with a property called "metalogical completeness."  This is
 explained <A HREF="#compare">below</A>.
 
+<P>In December 2018, the axioms were renumbered and may not correspond
+to the numbers in older papers, slide presentations, and websites.  See <A
+HREF="#oldaxioms">Appendix 8</A> for details.
+
 <!--
 <P>(This ends the section on predicate calculus.)
 -->
@@ -1316,7 +1323,7 @@ occurring in a wff" (or wish to do so to simplify the metalogic), we can
 omit axiom ~ ax-5 and still have a complete
 system of logic.  However, ~ ax-5 provides us
 with more general theorem <I>schemes</I> and can make proofs
-considerably shorter.  Interestingly, if we include ~ ax-5 , then ~ ax-c14 and ~ ax-c16 become redundant (see ~ axc14 and ~ ax16 ).
+considerably shorter.  Interestingly, if we include ~ ax-5 , then ~ ax-c14 and ~ ax-c16 become redundant (see ~ axc14 and ~ axc16 ).
 
 <P>To simplify the metalogic even further&mdash;with no restrictions on
 substitutions at all&mdash;we can omit both ~ ax-c16
@@ -2213,6 +2220,23 @@ axioms.  (Hint:  hovering the mouse over the links below will show their
 descriptions.)<P>
 
 
+<!-- The list below was made by hand as follows (last updated 22-Dec-2018):
+1. 'show tr 2p2e4/e/ax/m a*' to determine the complex number axioms used;
+  currently they are:   ax-resscn ax-1cn ax-icn ax-addcl ax-addrcl
+  ax-mulcl ax-mulrcl ax-addass ax-i2m1 ax-1ne0 ax-rrecex ax-cnre
+2. In a temporary copy of set.mm that will be used hereafter, after ax-cnre
+   through 2p2e4, change the labels of these to eliminate the "-" e.g. change
+   ax-resscn to axresscn
+3. 'show tr 2p2e4/e/count' to get the basic list below
+4. Change the last list entry to ax-2 instead of a2i.1.
+5. Use the first line of the description in 'show statement 2p2e4/comment' etc.
+   for the TITLE field.  Add "..." when line continues to next line (look
+   for absence of either trailing '"' or "(Contributed").  Delete starting
+   from "(Contributed" if line has "(Contributed".  Delete trailing '"'
+   if any.
+6. Assemble and format the information into the list below.
+7. Change tilde to ~~, backquote to `` so that 'markup' won't process them
+-->
 <FONT SIZE=-1>
 <A HREF="2p2e4.html" TITLE="Two plus two equals four.  For more information, see '2+2=4 Trivia' on the...">2p2e4</A>
 &lt;- <A HREF="2cn.html" TITLE="The number 2 is a complex number.">2cn</A>
@@ -2338,10 +2362,10 @@ descriptions.)<P>
 &lt;- <A HREF="sb4.html" TITLE="One direction of a simplified definition of substitution when variables...">sb4</A>
 &lt;- <A HREF="equs5.html" TITLE="Lemma used in proofs of substitution properties.">equs5</A>
 &lt;- <A HREF="axc15.html" TITLE="Derivation of set.mm's original ~~ ax-c15 from ~~ ax-c11n and the shorter...">axc15</A>
-&lt;- <A HREF="ax13a2.html" TITLE="Derive ~~ ax-c15 from a hypothesis in the form of ~~ ax-13 . ~~ ax-c11n and...">ax13a2</A>
-&lt;- <A HREF="ax13v2.html" TITLE="Recovery of ~~ ax-c15 from ~~ ax13v .  This proof uses ~~ ax-c11n and...">ax13v2</A>
+&lt;- <A HREF="ax13a2.html" TITLE="Derive ~~ ax-c15 from a hypothesis in the form of ~~ ax-12 . ~~ ax-c11n and...">ax13a2</A>
+&lt;- <A HREF="ax13v2.html" TITLE="Recovery of ~~ ax-c15 from ~~ ax12v .  This proof uses ~~ ax-c11n and...">ax13v2</A>
 &lt;- <A HREF="dveeq2.html" TITLE="Quantifier introduction when one pair of variables is distinct.  Revised...">dveeq2</A>
-&lt;- <A HREF="ax12lem3.html" TITLE="Lemma for ~~ dveeq2 .  This lemma is equivalent to ~~ ax12v with one...">ax12lem3</A>
+&lt;- <A HREF="ax12lem3.html" TITLE="Lemma for ~~ dveeq2 .  This lemma is equivalent to ~~ ax13v with one...">ax12lem3</A>
 &lt;- <A HREF="19.36v.html" TITLE="Special case of Theorem 19.36 of [Margaris] p. 90.">19.36v</A>
 &lt;- <A HREF="19.36.html" TITLE="Theorem 19.36 of [Margaris] p. 90.">19.36</A>
 &lt;- <A HREF="19.9.html" TITLE="A wff may be existentially quantified with a variable not free in it....">19.9</A>
@@ -2734,14 +2758,14 @@ not occur in ` ph ` </TD></TR>
 <TR ALIGN=LEFT>
 <TD NOWRAP> ~ ax-12 </TD>
 <TD>
-` |- ( -. x `
-` = y -> ( y = z -> A. x ` ` y = z ) ) `  </TD>
+` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD>
 <TD>&nbsp;</TD></TR>
 
 <TR ALIGN=LEFT>
 <TD NOWRAP> ~ ax-13 </TD>
 <TD>
-` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD>
+` |- ( -. x `
+` = y -> ( y = z -> A. x ` ` y = z ) ) `  </TD>
 <TD>&nbsp;</TD></TR>
 
 </TABLE>
@@ -2753,10 +2777,10 @@ metatheorems of Tarski's original system, meaning that they are sound
  not involving wff metavariables (and with all set
 metavariables mutually distinct) can be proved inside of Metamath from
 Tarski's axiom schemes; see theorem schemes ~ ax10w , ~ ax11w ,
-~ ax12w , and ~ ax13w .  These
+~ ax13w , and ~ ax12w .  These
 theorem schemes have hypotheses that can be eliminated for such
-instances.  Theorem ~ ax13wdemo shows an
-example of how we can eliminate the hypotheses of ~ ax13w .  Finally, we combine all such
+instances.  Theorem ~ ax12wdemo shows an
+example of how we can eliminate the hypotheses of ~ ax12w .  Finally, we combine all such
 instances (outside of Metamath) to result in the metatheorem
 represented by our extensions.
 
@@ -2991,7 +3015,7 @@ but merely a proof verifier.
 HREF="#bibmegill">Megill</A>] paper.  The claim in Remark 9.6, "C14' is
 omitted from S3' because it can be proved from the others using only
 simple metalogic," is proved in theorem ~ axc14 .
-Axiom C16' is also redundant&mdash;see theorem ~ ax16 , whose proof was discovered in 2006 and not
+Axiom C16' is also redundant&mdash;see theorem ~ axc16 , whose proof was discovered in 2006 and not
 known at the time of the paper.  The somewhat strange-looking axiom C10'
 ( ~ ax-c10 ) was
 found to be equivalent to the simpler ~ ax-6 after
@@ -3360,11 +3384,11 @@ requirement in the "Distinct variable groups" list on the ~ cleljust page.
 how distinct variables requirements are inherited from referenced axioms
 or theorems in order to satisfy their distinct variable requirements.
 Let us consider an example (courtesy of G&eacute;rard Lang).  Naively,
-one might think that ~ ax-12 (which has no
+one might think that ~ ax-13 (which has no
 distinct variable requirements) is derivable from ~ ax-5 , arguing as follows.  Since the letter ` x ` has no occurrence in
 the wff ` y = z ` , one might think that a direct
 application of ~ ax-5 would give (` y = z -> A. x ` ` y = z `) as a theorem with no distinct
-variable requirements, so that ~ ax-12 easily
+variable requirements, so that ~ ax-13 easily
 follows by adding an antecedent with ~ a1i .
 However, "distinct" does not <I>merely</I> mean that two set variables
 have different names; it means that we also must prevent them from being
@@ -3376,10 +3400,10 @@ HREF="#axiomnotedv">Distinct metavariables</A> above.)  To apply ~ ax-5 , we mus
 could further substitute ` x ` for ` y ` to
 arrive at (` x = z -> A. x ` ` x = z `); this violates the ~ ax-5 requirement since ` x ` <I>does</I> appear in ` x = z ` .
 In fact, from ~ ax-5 we can conclude only the
-very restricted theorem ~ ax12w , which because of
-its distinct variable requirements is much weaker than axiom ~ ax-12 .  (If we omit them, the Metamath proof
+very restricted theorem ~ ax13w , which because of
+its distinct variable requirements is much weaker than axiom ~ ax-13 .  (If we omit them, the Metamath proof
 verifier will give an error message.)  We say that the distinct variable
-requirements in ~ ax12w are inherited from ~ ax-5 .
+requirements in ~ ax13w are inherited from ~ ax-5 .
 
 
 
@@ -3986,13 +4010,15 @@ more or less obvious by inspection.
 convention that most definitions, beyond the basics needed for a
 practical development of set theory, consist of a single new class
 constant symbol followed by an equal sign followed by a class expression
-built from earlier symbols, for example the definition of power class ~ df-pw .  Thus the definition is more or less a
+built from earlier symbols, for example the definition of power class ~ df-pw .
+Thus the definition is more or less a
 drop-in replacement that abbreviates a fixed, more complicated
 expression (with possible renaming of bound variables).  The soundness
 of such definitions is simple to check by inspection:  if (1) the
 left-hand constant symbol is new and doesn't appear in the right-hand
 side, (2) all variables are distinct (all of them appear in a single $d
-statement), and (3) we can prove (with a Metamath theorem, e.g. ~ pwjust for <A HREF="df-pw.html">df-q</A>) that
+statement), and (3) we can prove (with a Metamath theorem,
+e.g. ~ pwjust for ~ df-pw ) that
 the right-hand expression equals itself with all variables renamed, then
 the definition is sound.  This convention allows all but 4 definitions
 to be verified automatically by mmj2 as described above.
@@ -4168,7 +4194,7 @@ instead of
 where we use
 &quot;` ( * `` A ) `&quot;
 instead of
-&quot;` A * `&quot; (or sometimes with an overbar),
+&quot;` A `<sup>*</sup>&quot; (or sometimes with an overbar),
  both of which you can see in theorem
 ~ cjval .
 Another example is the factorial function, which we express as
@@ -4181,15 +4207,16 @@ these four examples use four different positional relationships to
 indicate one concept (the value of a function), but I decided to use a
 single syntax for all four to make the development of proofs simpler.
 
-<P>There is an exception to the above convention: the
-unary minus function
-~ df-neg is so common I decided to
-create a special syntax for it.  So, the negative of a complex number is
-represented as the visually more familiar &quot;` -u A `&quot; rather than the more tedious
-               &quot;` ( -u `` A ) `&quot;.  A drawback is that we have to prove separately
- certain
-theorems such as the equality theorem ~ negeq
-instead of being able to reuse the general-purpose ~ fveq2 .
+<P>There is an exception to the above convention:  the unary minus
+function ~ df-neg is so common that I decided to create a special syntax for
+it.  So, the negative of a complex number is represented as the visually
+more familiar &quot;` -u A `&quot; rather than the more tedious
+&quot;` ( -u `` A ) `&quot;.  One drawback is that we have to prove
+separately certain theorems such as the equality theorem ~ negeq instead
+of being able to reuse the general-purpose ~ fveq2 . Moreover, the bare
+symbol &quot;` -u `&quot; has no meaning in isolation, in contrast to
+say the bare symbol &quot;` sqr `&quot;, which is itself a set and
+can be manipulated as a stand-alone function for various purposes.
 
 <P>Another very important exception is the notation for an <B>operation
 value</B>, which is the function value of an ordered pair as defined by
@@ -4199,7 +4226,8 @@ expressions surrounded by parentheses, such as "( 3 + 2 )".  While this
 may appear to be syntactically ambiguous with such expressions as the
 union of two classes ( ~ cun ), "` ( A `
 ` u. B ) `", the difference is that operation value notation requires that
-the center symbol be a class expression:  "+" is a class expression ( ~ caddc ) but a stand-alone "` u. `" is not.  (We do not define the union of
+the center symbol be a class expression:  "+" is a class expression
+( ~ caddc ) but a stand-alone "` u. `" is not.  (We do not define the union of
 two classes as an operation because it must work with proper classes as
 arguments&mdash;not to mention that the operation value definition
 ultimately depends on it anyway.)
@@ -4269,7 +4297,7 @@ same with the "-" omitted.  For example, obsolete axiom ~ ax-c5 is
 proved as theorem ~ axc5 from using axioms ~ ax-4 through ~ ax-13 .
 
 <P>Axioms with names starting "ax-c" are part of system S3' in Remark
-9.6 of [<A HREF="#bibmegill">Megill</A>], for example ~ ax-c4 is axiom
+9.6 of [<A HREF="#bibmegill">Megill</A>]; for example, ~ ax-c4 is axiom
 C4' there.  Axiom ~ ax-c11n was a newer alternative to ~ ax-c11 ,
 although eventually we proved it redundant (theorem ~ axc11n ).
 
@@ -4289,13 +4317,12 @@ SUMMARY="Variations of axiom system">
 
 </TH><TH>Discussion of resulting subsystem</TH></TR>
 
-<TR><TD> ~ ax-c5 , ~ ax-c4 , ~ ax-c7 , ~ ax-c10 , ~ ax-c11n , ~ ax-c11 , ~ ax-c15 ,
-~ ax-c9 , ~ ax-c14 , and ~ ax-c16
+<TR><TD> ~ ax-c5 , ~ ax-c4 , ~ ax-c7 , ~ ax-c10 , ~ ax-c11n , ~ ax-c11 ,
+~ ax-c15 , ~ ax-c9 , ~ ax-c14 , and ~ ax-c16
 <TD>As mentioned above, these 10 omitted
-axioms can be derived from the others (see theorems ~ axc5 , ~ axc4 , ~ axc7 , ~ axc10 , ~ axc11 ,
-~ axc15 ,
-~ axc9 ,
-~ axc14 , ~ ax16 ).  This system
+axioms can be derived from the others (see theorems ~ axc5 , ~ axc4 , ~ axc7 ,
+~ axc10 , ~ axc11 , ~ axc11n , ~ axc15 , ~ axc9 ,
+~ axc14 , ~ axc16 ).  This system
 is <A HREF="#axiomnote">metalogically complete</A> and is the one we
 ordinarily use.  It is equivalent to system S3' in Remark 9.6 of [<A
 HREF="#bibmegill">Megill</A>].
@@ -4322,7 +4349,7 @@ long.</TD></TR>
 <TR><TD>
 
 <!--
-~ ax-13 , ~ ax-c15
+~ ax-12 , ~ ax-c15
 -->
 
 Omit all predicate calculus axioms <I>except</I>
@@ -4348,7 +4375,7 @@ bundled set variables cannot be derived.  In particular,
 derivable.
 </TD></TR>
 
-<TR><TD> ~ ax-c11n , ~ ax-13 ,
+<TR><TD> ~ ax-c11n , ~ ax-12 ,
 ~ ax-c15 , ~ ax-c16 , ~ ax-5 </TD><TD> <A NAME="dvfreesystem"></A>
 <B>System with no distinct variables.</B> This system has no distinct
 variable contraints, making the concept of substitution as simple as it
@@ -4361,7 +4388,7 @@ that for it to be considered complete, we must ignore antecedents called
 what would be distinct variable constraints (see the linked discussion).
 
 <P>
-We can optionally include ~ ax-c15 or ~ ax-13 for a somewhat more powerful metalogic,
+We can optionally include ~ ax-c15 or ~ ax-12 for a somewhat more powerful metalogic,
 since these also involve no distinct variable restrictions (although
 without them we can still derive any instance of them not containing wff
 metavariables).
@@ -4374,11 +4401,11 @@ is conjectured that ~ ax-c15 cannot be derived
 from the axioms of this subsystem.  See Item 9b on the <A
 HREF="../award2003.html#9b">Workshop Miscellany</A> page.</TD></TR>
 
-<TR><TD> ~ ax-13 , ~ ax-c16 , ~ ax-5 </TD><TD>It
-is known that ~ ax-13 can be derived from the
-axioms of this subsystem (see theorem ~ ax13 ).</TD></TR>
+<TR><TD> ~ ax-12 , ~ ax-c16 , ~ ax-5 </TD><TD>It
+is known that ~ ax-12 can be derived from the
+axioms of this subsystem (see theorem ~ ax12 ).</TD></TR>
 
-<TR><TD> ~ ax-c11 and ~ ax-13 </TD><TD>It is conjectured that ~ ax-c11 cannot be derived from the axioms of this
+<TR><TD> ~ ax-c11 and ~ ax-12 </TD><TD>It is conjectured that ~ ax-c11 cannot be derived from the axioms of this
 subsystem.</TD></TR>
 
 
@@ -4412,6 +4439,167 @@ equivalent subsystem.  Theorems ~ ax4 , ~ ax10 , ~ axc4 , and ~ axc7 prove the e
 </TABLE>
 </CENTER>
 
+
+<P><HR NOSHADE SIZE=1><A NAME="oldaxioms"></A><B><FONT
+COLOR="#006633">Appendix 8:  Axiom Numbering
+Before December 2018</FONT></B>&nbsp;&nbsp;&nbsp;
+
+On 20-Dec-2018, the <A HREF="#pcaxioms">predicate calculus</A> axiom
+schemes were renumbered to eliminate gaps caused by obsolete or
+redundant axiom schemes, as well as to order them according to their
+current organization.  Older papers, slide presentations, and websites
+may reference the old numbering, and the table below provides a cross
+reference.
+
+<P>For further information about this renumbering, see this <A
+HREF="https://groups.google.com/d/msg/metamath/OS4I_A32RTQ/6J2DmsJWCwAJ">Google
+Group discussion</A> [retrieved 27-Dec-2018] and this <A
+HREF="https://github.com/metamath/set.mm/issues/703">GitHub
+discussion</A> [retrieved 27-Dec-2018].
+
+<P>Axioms with names starting "ax-c" are now obsolete, but they were
+part of system S3' in Remark 9.6 of [<A HREF="#bibmegill">Megill</A>];
+for example, ~ ax-c4 is axiom C4' there.  Axiom ~ ax-c11n was a newer
+alternative to ~ ax-c11 , although eventually we proved it redundant
+(theorem ~ axc11n ). Axiom C5 (not primed) is taken from system S3 but
+is included in S3' as stated in the paper.  The
+obsolete axioms ~ ax-c4 through ~ ax-c16 are kept for historical
+reasons in a deprecated section of set.mm and shouldn't be used outside
+of that section.
+
+<P>In the "Proof" column, the referenced theorem has two meanings.  In
+the rows for new axiom numbers ~ ax-4 through ~ ax-13 , the "Proof"
+column theorem shows a proof of the axiom from the obsolete ones ~ ax-c4
+through ~ ax-c16 . This is useful to see how our current axioms can be
+derived from the original ones in [<A HREF="#bibmegill">Megill</A>].  In the
+rows for ~ ax-c4 through ~ ax-c16 , the "Proof" column theorem shows a
+derivation of the obsolete axiom from our current system ~ ax-4 through
+~ ax-13 .  Together, these proofs show that our current system is
+equivalent to the one in [<A HREF="#bibmegill">Megill</A>].
+
+<!-- Note that &#8203; is a zero-width space that prevents the
+  label from being changed if a global substitution is done. -->
+
+
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Cross reference between orginal and new predicate calculus axioms">
+
+<TR ALIGN=LEFT>
+<TD><FONT COLOR="#006633"><B>New number</B></FONT></TD>
+<TD><FONT COLOR="#006633"><B>Old number</B></FONT></TD>
+<TD><FONT COLOR="#006633"><B>Proof</B></FONT></TD>
+<TD><FONT COLOR="#006633"><B>[<A HREF="#bibmegill">Megill</A>]</B></FONT></TD>
+<TD><FONT COLOR="#006633"><B>Content</B></FONT></TD>
+<TD><FONT COLOR="#006633"><B>Description</B></FONT></TD>
+</TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-4 </TD><TD> ax-5&#8203; </TD><TD> ~ ax4 </TD><TD> - </TD>
+<TD> ` |- ( A. x ( ph -> ps ) -> ( A. x ph -> A. x ps ) ) ` </TD>
+<TD> Quantified Implication </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-5 </TD><TD> ax-17&#8203; </TD><TD> - </TD><TD> C5 </TD>
+<TD> ` |- ( ph -> A. x ph ) ` , where ` x ` does not occur in ` ph ` </TD>
+<TD> Distinctness </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-6 </TD><TD> ax-9&#8203; </TD><TD> ~ ax6fromc10 </TD><TD> - </TD>
+<TD> ` |- -. A. x ` ` -. x = y ` </TD>
+<TD> Existence </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-7 </TD><TD> ax-8&#8203; </TD><TD> - </TD><TD> C8' </TD>
+<TD> ` |- ( x = y -> ( x = z -> y = z ) ) ` </TD>
+<TD> Equality </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-8 </TD><TD> ax-13&#8203; </TD><TD> - </TD><TD> C12' </TD>
+<TD> ` |- ( x = y -> ( x e. z -> y e. z ) ) ` </TD>
+<TD> Left Equality for Binary Predicate </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-9 </TD><TD> ax-14&#8203; </TD><TD> - </TD><TD> C13' </TD>
+<TD> ` |- ( x = y -> ( z e. x -> z e. y ) ) ` </TD>
+<TD> Right Equality for Binary Predicate </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-10 </TD><TD> ax-6&#8203; </TD><TD> ~ ax10 </TD><TD> - </TD>
+<TD> ` |- ( -. A. x ph -> A. x -. A. x ph ) ` </TD>
+<TD> Quantified Negation </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-11 </TD><TD> ax-7&#8203; </TD><TD> - </TD><TD> C6' </TD>
+<TD> ` |- ( A. x A. y ph -> A. y A. x ph ) ` </TD>
+<TD> Quantifier Commutation </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-12 </TD><TD> ax-11&#8203; </TD><TD> ~ ax12 </TD><TD> - </TD>
+<TD> ` |- ( x = y -> ( A. y ph -> A. x ( x = y -> ph ) ) ) ` </TD>
+<TD> Substitution </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-13 </TD><TD> ax-12&#8203; </TD><TD> ~ ax13fromc9 </TD><TD> - </TD>
+<TD> ` |- ( -. x = y -> ( y = z -> A. x ` ` y = z ) ) ` </TD>
+<TD> Quantified Equality </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD COLSPAN=6> </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c4 </TD><TD> ax-5o&#8203; </TD><TD> ~ axc4 </TD><TD> C4' </TD>
+<TD> ` |- ( A. x ( A. x ph -> ps ) -> ( A. x ph -> A. x ps ) ) ` </TD>
+<TD> Quantified Implication </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c5 </TD><TD> ax-4&#8203; </TD><TD> ~ axc5 </TD><TD> C5' </TD>
+<TD> ` |- ( A. x ph -> ph ) ` </TD>
+<TD> Specialization </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c7 </TD><TD> ax-6o&#8203; </TD><TD> ~ axc7 </TD><TD> C7' </TD>
+<TD> ` |- ( -. A. x -. A. x ph -> ph ) ` </TD>
+<TD> Quantified Negation </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c9 </TD><TD> ax-12o&#8203; </TD><TD> ~ axc9 </TD><TD> C9' </TD>
+<TD> ` |- ( -. A. z ` ` z = x -> ( -. A. z ` ` z = y -> ( x = y -> A. z ` ` x = y ) ) ) ` </TD>
+<TD> Quantified Equality </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c10 </TD><TD> ax-9o&#8203; </TD><TD> ~ axc10 </TD><TD> C10' </TD>
+<TD> ` |- ( A. x ( x = y -> A. x ph ) -> ph ) ` </TD>
+<TD> Existence </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c11 </TD><TD> ax-10o&#8203; </TD><TD> ~ axc11 </TD><TD> C11' </TD>
+<TD> ` |- ( A. x ` ` x = y -> ( A. x ph -> A. y ph ) ) ` </TD>
+<TD> Quantifier Substitution </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c11n </TD><TD> ax-10&#8203; </TD><TD> ~ axc11n </TD><TD> - </TD>
+<TD> ` |- ( A. x ` ` x = y -> A. y ` ` y = x ) ` </TD>
+<TD> Quantifier Substitution </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c14 </TD><TD> ax-15&#8203; </TD><TD> ~ axc14 </TD><TD> C14' </TD>
+<TD> ` |- ( -. A. z ` ` z = x -> ( -. A. z ` ` z = y -> ( x e. y -> A. z ` ` x e. y ) ) ) ` </TD>
+<TD> Quantified Binary Predicate </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c15 </TD><TD> ax-11o&#8203; </TD><TD> ~ axc15 </TD><TD> C15' </TD>
+<TD> ` |- ( -. A. x ` ` x = y -> ( x = y -> ( ph -> A. x ( x = y -> ph ) ) ) ) ` </TD>
+<TD> Variable Substitution </TD></TR>
+
+<TR ALIGN=LEFT>
+<TD> ~ ax-c16 </TD><TD> ax-16&#8203; </TD><TD> ~ axc16 </TD><TD> C16' </TD>
+<TD> ` |- ( A. x ` ` x = y -> ( ph -> A. x ph ) ) ` , where ` x ` and ` y ` are distinct </TD>
+<TD> Distinct Variables </TD></TR>
+
+
+</TABLE>
+</CENTER>
 
 
 <P><HR NOSHADE SIZE=1><A NAME="read"></A><B><FONT
@@ -5148,7 +5336,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 20-Dec-2018.</FONT></I><BR><FONT
+ page was last updated on 29-Dec-2018.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
