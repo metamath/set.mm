@@ -1394,9 +1394,6 @@
 "axc9lem5OLD" is used by "axc9lem7OLD".
 "axc9lem6OLD" is used by "axc9lem7OLD".
 "axc9lem7OLD" is used by "axc9OLD".
-"axia2" is used by "mdetleib2".
-"axia2" is used by "mdetrlin".
-"axia2" is used by "psgnodpm".
 "axicn" is used by "sineq0ALT".
 "axinfnd" is used by "axinfprim".
 "axinfnd" is used by "zfcndinf".
@@ -5818,9 +5815,6 @@
 "enrex" is used by "mulclsr".
 "enrex" is used by "mulsrpr".
 "enrex" is used by "recexsrlem".
-"eqid1" is used by "evpmss".
-"eqid1" is used by "mdetralt".
-"eqid1" is used by "zrhpsgnmhm".
 "eqresr" is used by "ax1ne0".
 "eqresr" is used by "axpre-lttri".
 "eqresr" is used by "axrrecex".
@@ -13681,7 +13675,7 @@ New usage of "axi2m1" is discouraged (0 uses).
 New usage of "axi4" is discouraged (0 uses).
 New usage of "axi9" is discouraged (0 uses).
 New usage of "axia1" is discouraged (0 uses).
-New usage of "axia2" is discouraged (3 uses).
+New usage of "axia2" is discouraged (0 uses).
 New usage of "axia3" is discouraged (0 uses).
 New usage of "axial" is discouraged (0 uses).
 New usage of "axicn" is discouraged (1 uses).
@@ -15210,7 +15204,7 @@ New usage of "enrbreq" is discouraged (3 uses).
 New usage of "enreceq" is discouraged (9 uses).
 New usage of "enrer" is discouraged (7 uses).
 New usage of "enrex" is discouraged (9 uses).
-New usage of "eqid1" is discouraged (3 uses).
+New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqresr" is discouraged (4 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
 New usage of "equid1" is discouraged (0 uses).
