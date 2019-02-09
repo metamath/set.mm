@@ -36702,6 +36702,19 @@ $)
     ( cv wnel cab cvv wcel wn vprc df-nel mpbir wceq wb ruv neleq1 ax-mp ) ABZP
     CADZECZEECZSEEFGHEEIJQEKRSLAMQEENOJ $.
 
+  $( No set contains all ordinal numbers.  Proposition 7.13 of [TakeutiZaring]
+     p. 38.  This is also known as the Burali-Forti paradox (remark in
+     [Enderton] p. 194).  In 1897, Cesare Burali-Forti noticed that since the
+     "set" of all ordinal numbers is an ordinal class ( ~ ordon ), it must be
+     both an element of the set of all ordinal numbers yet greater than every
+     such element.  ZF set theory resolves this paradox by not allowing the
+     class of all ordinal numbers to be a set (so instead it is a proper
+     class).  Here we prove the denial of its existence.  (Contributed by NM,
+     18-May-1994.) $)
+  onprc $p |- -. On e. _V $=
+    ( con0 cvv wcel word wn ordon ordirr ax-mp elong mpbiri mto ) ABCZAACZADZME
+    FAGHLMNFABIJK $.
+
   ${
     $d A x y $.  $d B x y $.
     $( No class has 2-cycle membership loops.  Theorem 7X(b) of [Enderton]
@@ -53556,7 +53569,8 @@ $)
   ${
     $d f x y A $.  $d x y B $.  $d x y F $.  $d f u v x y G $.
     tfr.1 $e |- F = recs ( G ) $.
-    $( A weak version of transfinite recursion.  (Contributed by Mario Carneiro, 24-Jun-2015.) $)
+    $( A weak version of transfinite recursion.  (Contributed by Mario
+       Carneiro, 24-Jun-2015.) $)
     tfr2a $p |- ( A e. dom F -> ( F ` A ) = ( G ` ( F |` A ) ) ) $=
       ( vx vy vf cdm wcel crecs cfv cres wceq cv wfn wral wa con0 wrex cab eqid
       tfrlem9 dmeqi eleq2s fveq1i reseq1i fveq2i 3eqtr4g ) ABHZIACJZKZUJALZCKZA
