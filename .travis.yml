@@ -53,7 +53,7 @@ script:
   - scripts/verify iset.mm
   # Verify and also generate 'discouraged.new', and do extra checking
   # (the 'printf' lets us insert multiple lines):
-  - scripts/verify-mmj2 --extra "$(printf 'SetParser,mmj.verify.LRParser\nParse,*\nRunMacro,showDiscouraged,discouraged.new')" set.mm
+  - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\nRunMacro,showDiscouraged,discouraged.new')" set.mm
   - echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
   - scripts/verify-mmj2 iset.mm
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
