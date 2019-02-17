@@ -8,7 +8,7 @@ setparser='' # Set to mmj.verify.LRParser for rigorous parse check
 while [ $# -gt 0 ] ; do
   case "$1" in
     --extra) shift ; extra="$1"; shift ;; # Extra command
-    --setparser) shift ; setparser="SetParser,$1\n"; shift ;;
+    --setparser) shift ; setparser="$(printf '%s\n' "SetParser,$1")"; shift ;;
     --*) echo "Error, unknown option $1" ; exit 1 ;;
     *) break ;;
   esac
