@@ -55,7 +55,8 @@ script:
   # (the 'printf' lets us insert multiple lines):
   - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\nRunMacro,showDiscouraged,discouraged.new')" set.mm
   - echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
-  - scripts/verify-mmj2 iset.mm
+  # Use setparser to check that definitions don't create syntax ambiguities
+  - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' iset.mm
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
   - scripts/check-raw-html set.mm *.raw.html
