@@ -35635,10 +35635,16 @@ $)
   limelon $p |- ( ( A e. B /\ Lim A ) -> A e. On ) $=
     ( wcel wlim con0 word limord elong syl5ibr imp ) ABCZADZAECZLMKAFAGABHIJ $.
 
-  $( The class of all ordinal numbers in not empty.  (Contributed by NM,
+  $( The class of all ordinal numbers is not empty.  (Contributed by NM,
      17-Sep-1995.) $)
   onn0 $p |- On =/= (/) $=
     ( c0 con0 wcel wne 0elon ne0i ax-mp ) ABCBADEBAFG $.
+
+  $( The class of all ordinal numbers is inhabited.  (Contributed by Jim
+     Kingdon, 6-Mar-2019.) $)
+  onm $p |- E. x x e. On $=
+    ( cv c0 wceq con0 wcel wa wex 0elon 0ex eleq1 ceqsexv mpbir exsimpr ax-mp )
+    ABZCDZPEFZGAHZRAHSCEFZIRTACJPCEKLMQRANO $.
 
   $( Equality of successors.  (Contributed by NM, 30-Aug-1993.)  (Proof
      shortened by Andrew Salmon, 25-Jul-2011.) $)
