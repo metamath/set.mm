@@ -1159,10 +1159,18 @@ $s class _ZZ $: <mover href="df-za.html"><mi>&Zopf;</mi> <mo>&oline;</mo></mover
 $s class IntgOver $: <mi href="df-itgo.html">IntgOver</mi> $.
 $s class pmTrsp $: <mi href="df-pmtr.html">pmTrsp</mi> $.
 $s class pmSgn $: <mi href="df-psgn.html">pmSgn</mi> $.
+$s class pmEven $: <mi href="df-evpm.html">pmEven</mi> $.
 $s class maMul $: <mi href="df-mamu.html"> maMul </mi> $.
 $s class Mat $: <mi href="df-mat.html"> Mat </mi> $.
+$s class maVecMul $: <mi href="df-mvmul.html"> maVecMul </mi> $.
+$s class matRRep $: <mi href="df-marrep.html"> matRRep </mi> $.
+$s class matRepV $: <mi href="df-marepv.html"> matRepV </mi> $.
+$s class subMat $: <mi href="df-subma.html"> Mat </mi> $.
 $s class maDet $: <mi href="df-mdet.html"> maDet </mi> $.
 $s class maAdju $: <mi href="df-madu.html"> maAdju </mi> $.
+$s class maDetOLD $: <mi href="df-mdetOLD.html"> maDetOLD </mi> $.
+$s class maAdjuOLD $: <mi href="df-maduOLD.html"> maAdjuOLD </mi> $.
+$s class minMatR1 $: <mi href="df-minmar1.html"> minMatR1 </mi> $.
 $s class MEndo $: <mi href="df-mend.html">MEndo</mi> $.
 $s class SubDRing $: <mi href="df-sdrg.html">SubDRing</mi> $.
 $s class Cntr $: <mi href="df-cntr.html">Cntr</mi> $.
@@ -1297,8 +1305,8 @@ $s class HGMap $: <mi href="df-hgmap.html">HGMap</mi> $.
 $s class HLHil $: <mi href="df-hlhil.html">HLHil</mi> $.
 $s class mapd $: <mi href="df-mapd.html">mapd</mi> $.
 
-
-
+$( Jim Kingdon $)
+$s class tau $: <mi href="df-tau.html"> &tau; </mi> $.
 
 $( Schemes with unknown tokens:
 $s class ==3 $: <mi> &#x2261;&#x2083; </mi> $.
