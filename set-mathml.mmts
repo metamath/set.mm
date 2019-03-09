@@ -1350,11 +1350,11 @@ $s class <" A B C D E F G H "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C##D##E##
 
 
 $( Orders $)
-$s wff R Po A $: <mrow> #R# <mi>Po</mi> #A# </mrow> $.
-$s wff R Or A $: <mrow> #R# <mi>Or</mi> #A# </mrow> $.
-$s wff R Fr A $: <mrow> #R# <mi>Fr</mi> #A# </mrow> $.
-$s wff R Se A $: <mrow> #R# <mi>Se</mi> #A# </mrow> $.
-$s wff R We A $: <mrow> #R# <mi>We</mi> #A# </mrow> $.
+$s wff R Po A $: <mrow> #R# <mi href="df-po.html">Po</mi> #A# </mrow> $.
+$s wff R Or A $: <mrow> #R# <mi href="df-so.html">Or</mi> #A# </mrow> $.
+$s wff R Fr A $: <mrow> #R# <mi href="df-fr.html">Fr</mi> #A# </mrow> $.
+$s wff R Se A $: <mrow> #R# <mi href="df-se.html">Se</mi> #A# </mrow> $.
+$s wff R We A $: <mrow> #R# <mi href="df-we.html">We</mi> #A# </mrow> $.
 $s wff Ord A $: <mrow> <mi href="df-ord.html">Ord</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
 $s wff Lim A $: <mrow> <mi href="df-lim.html">Lim</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
 $s class suc A $: <mrow> <mi href="df-suc.html">suc</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
