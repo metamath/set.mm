@@ -42454,6 +42454,26 @@ $)
       UBZVEVAUNVHVDUPAVCBUOCUCUDUEUNVEDUNVBVFVGUFUGUHUIUQUPAUKULUPURAUJUM $.
   $}
 
+  ${
+    $d x y z w v u $.  $d A w v u $.
+    dffun4f.1 $e |- F/_ x A $.
+    dffun4f.2 $e |- F/_ y A $.
+    dffun4f.3 $e |- F/_ z A $.
+    $( Definition of function like ~ dffun4 but using bound-variable hypotheses
+       instead of distinct variable conditions.  (Contributed by Jim Kingdon,
+       17-Mar-2019.) $)
+    dffun4f $p |- ( Fun A <-> ( Rel A /\
+                 A. x A. y A. z ( ( <. x , y >. e. A /\ <. x , z >. e. A )
+                 -> y = z ) ) ) $=
+      ( vw cv wbr wal wa weq wi cop wcel nfcv nfbr breq2 albii wfun wmo dffun6f
+      wrel mo4f nfv nfan nfim anbi2d equequ2 imbi12d cbval bitr4i df-br anbi12i
+      anbi2i imbi1i 2albii 3bitri ) DUADUDZAIZBIZDJZBUBZAKZLUTVCVACIZDJZLZBCMZN
+      ZCKZBKZAKZLUTVAVBODPZVAVFODPZLZVINZCKBKZAKZLABDEFUCVEVMUTVDVLAVDVCVAHIZDJ
+      ZLZBHMZNZHKZBKVLVCWABHBVAVTDBVAQFBVTQRVBVTVADSUEVKWEBVJWDCHVJHUFWBWCCVCWA
+      CCVAVBDCVAQZGCVBQRCVAVTDWFGCVTQRUGWCCUFUHCHMZVHWBVIWCWGVGWAVCVFVTVADSUICH
+      BUJUKULTUMTUPVMVSUTVLVRAVJVQBCVHVPVIVCVNVGVOVAVBDUNVAVFDUNUOUQURTUPUS $.
+  $}
+
   $( A function is a relation.  (Contributed by NM, 1-Aug-1994.) $)
   funrel $p |- ( Fun A -> Rel A ) $=
     ( wfun wrel ccnv ccom cid wss df-fun simplbi ) ABACAADEFGAHI $.
