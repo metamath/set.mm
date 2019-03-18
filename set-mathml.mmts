@@ -700,7 +700,7 @@ $s class denom $: <mi href="df-denom.html">denom</mi> $.
 $( PseudoMetrics and Uniformities $)
 $s class PsMet $: <mi href="df-psmet.html">PsMet</mi> $.
 $s class uCn $: <mi href="df-ucn.html">uCn</mi> $.
-$s class CnExt $: <mi href="df-cnext.html">CnExtt</mi> $.
+$s class CnExt $: <mi href="df-cnext.html">CnExt</mi> $.
 $s class UnifSt $: <mi href="df-uss.html">UnifSt</mi> $.
 $s class unifTop $: <mi href="df-utop.html">unifTop</mi> $.
 $s class UnifOn $: <mi href="df-ust.html">UnifOn</mi> $.
