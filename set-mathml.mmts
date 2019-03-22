@@ -700,7 +700,7 @@ $s class denom $: <mi href="df-denom.html">denom</mi> $.
 $( PseudoMetrics and Uniformities $)
 $s class PsMet $: <mi href="df-psmet.html">PsMet</mi> $.
 $s class uCn $: <mi href="df-ucn.html">uCn</mi> $.
-$s class CnExt $: <mi href="df-cnext.html">CnExtt</mi> $.
+$s class CnExt $: <mi href="df-cnext.html">CnExt</mi> $.
 $s class UnifSt $: <mi href="df-uss.html">UnifSt</mi> $.
 $s class unifTop $: <mi href="df-utop.html">unifTop</mi> $.
 $s class UnifOn $: <mi href="df-ust.html">UnifOn</mi> $.
@@ -1159,10 +1159,18 @@ $s class _ZZ $: <mover href="df-za.html"><mi>&Zopf;</mi> <mo>&oline;</mo></mover
 $s class IntgOver $: <mi href="df-itgo.html">IntgOver</mi> $.
 $s class pmTrsp $: <mi href="df-pmtr.html">pmTrsp</mi> $.
 $s class pmSgn $: <mi href="df-psgn.html">pmSgn</mi> $.
+$s class pmEven $: <mi href="df-evpm.html">pmEven</mi> $.
 $s class maMul $: <mi href="df-mamu.html"> maMul </mi> $.
 $s class Mat $: <mi href="df-mat.html"> Mat </mi> $.
+$s class maVecMul $: <mi href="df-mvmul.html"> maVecMul </mi> $.
+$s class matRRep $: <mi href="df-marrep.html"> matRRep </mi> $.
+$s class matRepV $: <mi href="df-marepv.html"> matRepV </mi> $.
+$s class subMat $: <mi href="df-subma.html"> Mat </mi> $.
 $s class maDet $: <mi href="df-mdet.html"> maDet </mi> $.
 $s class maAdju $: <mi href="df-madu.html"> maAdju </mi> $.
+$s class maDetOLD $: <mi href="df-mdetOLD.html"> maDetOLD </mi> $.
+$s class maAdjuOLD $: <mi href="df-maduOLD.html"> maAdjuOLD </mi> $.
+$s class minMatR1 $: <mi href="df-minmar1.html"> minMatR1 </mi> $.
 $s class MEndo $: <mi href="df-mend.html">MEndo</mi> $.
 $s class SubDRing $: <mi href="df-sdrg.html">SubDRing</mi> $.
 $s class Cntr $: <mi href="df-cntr.html">Cntr</mi> $.
@@ -1297,8 +1305,8 @@ $s class HGMap $: <mi href="df-hgmap.html">HGMap</mi> $.
 $s class HLHil $: <mi href="df-hlhil.html">HLHil</mi> $.
 $s class mapd $: <mi href="df-mapd.html">mapd</mi> $.
 
-
-
+$( Jim Kingdon $)
+$s class tau $: <mi href="df-tau.html"> &tau; </mi> $.
 
 $( Schemes with unknown tokens:
 $s class ==3 $: <mi> &#x2261;&#x2083; </mi> $.
@@ -1342,15 +1350,15 @@ $s class <" A B C D E F G H "> $: <mrow> <mo>&lang;&ldquo;</mo> #A##B##C##D##E##
 
 
 $( Orders $)
-$s wff R Po A $: <mrow> #R# <mi>Po</mi> #A# </mrow> $.
-$s wff R Or A $: <mrow> #R# <mi>Or</mi> #A# </mrow> $.
-$s wff R Fr A $: <mrow> #R# <mi>Fr</mi> #A# </mrow> $.
-$s wff R Se A $: <mrow> #R# <mi>Se</mi> #A# </mrow> $.
-$s wff R We A $: <mrow> #R# <mi>We</mi> #A# </mrow> $.
-$s wff Ord A $: <mrow> <mi>Ord</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
-$s wff Lim A $: <mrow> <mi>Lim</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
-$s class suc A $: <mrow> <mi>suc</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
-$s class AC_ A $: <mrow> <munder><mi>AC</mi> <mo>&#x5F;</mo></munder> #A# </mrow> $.
+$s wff R Po A $: <mrow> #R# <mi href="df-po.html">Po</mi> #A# </mrow> $.
+$s wff R Or A $: <mrow> #R# <mi href="df-so.html">Or</mi> #A# </mrow> $.
+$s wff R Fr A $: <mrow> #R# <mi href="df-fr.html">Fr</mi> #A# </mrow> $.
+$s wff R Se A $: <mrow> #R# <mi href="df-se.html">Se</mi> #A# </mrow> $.
+$s wff R We A $: <mrow> #R# <mi href="df-we.html">We</mi> #A# </mrow> $.
+$s wff Ord A $: <mrow> <mi href="df-ord.html">Ord</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s wff Lim A $: <mrow> <mi href="df-lim.html">Lim</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class suc A $: <mrow> <mi href="df-suc.html">suc</mi> <mo>&ApplyFunction;</mo> #A# </mrow> $.
+$s class AC_ A $: <mrow> <munder><mi href="df-acn.html">AC</mi> <mo>&#x5F;</mo></munder> #A# </mrow> $.
 
 
 $(
@@ -1607,8 +1615,8 @@ $s class ( Z/nZ ` A ) $: <mrow><mi href="df-zn.html">&Zopf;</mi><mo>/</mo>#A#<mi
 $( Constructs $)
 $s class ( O _C P ) $: <mrow> <mo>(</mo> <mfrac linethickness="0">#O# #P#</mfrac><mo>)</mo> </mrow> $.
 $s class-o ( O _C P ) $: <mrow> <mo>(</mo> <mfrac linethickness="0">#O# #P#</mfrac><mo>)</mo> </mrow> $.
-$s class ( x e. A , y e. B |-> O ) $: <mfenced separators=",&longmapsto;"><mrow>#x# <mo>&isin;</mo> #A#</mrow> <mrow> #y# <mo>&isin;</mo> #B#</mrow> #O#</mfenced> $.
-$s class ( x e. A |-> O ) $: <mfenced separators="&longmapsto;"><mrow>#x# <mo href="df-mpt.html">&isin;</mo> #A#</mrow> #O#</mfenced> $.
+$s class ( x e. A , y e. B |-> O ) $: <mfenced> <mrow> #x# <mo href="df-mpt2.html">&isin;</mo> #A# <mo>,</mo> #y# <mo href="df-mpt2.html">&isin;</mo> #B# <mo href="df-mpt2.html">&longmapsto;</mo> #O# </mrow></mfenced> $.
+$s class ( x e. A |-> O ) $: <mfenced> <mrow> #x# <mo href="df-mpt.html">&isin;</mo> #A# <mo href="df-mpt.html">&longmapsto;</mo> #O# </mrow></mfenced> $.
 $s class if ( ph , O , P ) $: <mrow> <mo href="df-if.html">if</mo> <mfenced>#ph# #O# #P#</mfenced></mrow> $.
 $s class sup ( O , P , Q ) $: <mrow> <mo href="df-sup.html">sup</mo> <mfenced>#O# #P# #Q#</mfenced></mrow> $.
 $s class |^|_ x e. ( O ... P ) A $: <mrow><munderover><mo href="df-uni.html">&xcap;</mo> <mrow>#x# <mo>=</mo> #O#</mrow> #P# </munderover> #A# </mrow> $.
