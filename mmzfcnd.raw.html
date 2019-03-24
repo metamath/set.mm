@@ -70,7 +70,7 @@ Variable Conditions</B></FONT></CENTER>
 axioms</FONT></B>&nbsp;&nbsp;&nbsp;Each of our <A
 HREF="mmset.html#zfcaxioms">standard ZFC (Zermelo-Fraenkel
 with Choice) set theory axioms</A> is accompanied by
-the proviso that all of its set variables be <A
+the proviso that all of its setvar variables be <A
 HREF="mmset.html#distinct">distinct</A> from each other.  This is
 indicated by the "Distinct variable group" on its web page
 (for example <A HREF="ax-ext.html">ax-ext</A>) and
@@ -95,11 +95,11 @@ they will state the Axiom of Extensionality as a single actual axiom
 with fixed individual variables, not a scheme ranging over an infinite
 number of actual axioms.  To recover the textbook version from
 Metamath's version, we simply make a fixed assignment of individual
-variables to our set metavariables, outside of Metamath; in other
+variables to our setvar metavariables, outside of Metamath; in other
 words, we pick any instance of the scheme that our Axiom of Extensionality
 statement represents.  The math works
 out exactly the same, because we have attached provisos to our standard
-version of the ZFC axioms stating that their set metavariables must be
+version of the ZFC axioms stating that their setvar metavariables must be
 distinct from each other, and a metatheorem of predicate calculus states
 that the truth of an axiom is not affected by renaming its variables
 as long as the variable names remain distinct.
@@ -205,7 +205,7 @@ scope vanishes&mdash;all variables become "global" throughout the
 expression.  Think about what that means&mdash;it is a rather startling and
 even counterintuitive property if you are used to working with
 first-order logic.  For example, in our condition-free Axiom of Union, we
-can blindly change all of its free and bound set variables to ` x ` , and the
+can blindly change all of its free and bound setvar variables to ` x ` , and the
 strange-looking result,
 ` |- E. x A. x ( E. x ( x e. x /\ x e. x ) -> x e. x ) ` , is still a sound (although probably not very useful)
 theorem scheme of set theory!
@@ -331,7 +331,7 @@ standard ones.
 <TD ALIGN=left VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
 &nbsp;</FONT></TD>
 
-<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 18-May-2018.</I>
+<TD NOWRAP ALIGN=CENTER><I>This page was last updated on 24-Mar-2019.</I>
 <BR><FONT SIZE=-2 FACE=ARIAL>
 Copyright terms:
 <A HREF="../copyright.html#pd">Public domain</A>
