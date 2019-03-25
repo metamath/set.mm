@@ -53,7 +53,12 @@ script:
   - scripts/verify iset.mm
   # Verify and also generate 'discouraged.new', and do extra checking
   # (the 'printf' lets us insert multiple lines):
+  ##### 25-Mar-2019 nm TEMPORARY WORKAROUND (delete next 2 lines after definitionCheck.js updated)
+  - cp -p set.mm set.mm.save
+  - sed -e 's/setvar/set/g' < set.mm.save > set.mm
   - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\nRunMacro,showDiscouraged,discouraged.new')" set.mm
+  ##### 25-Mar-2019 nm TEMPORARY WORKAROUND (delete next line after definitionCheck.js updated)
+  - mv set.mm.save set.mm
   - echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
   # Use setparser to check that definitions don't create syntax ambiguities
   - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' iset.mm
