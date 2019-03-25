@@ -3,7 +3,7 @@
 # Verify mmfile $1 (default "set.mm")
 
 extra=''
-date_skip=''
+top_date_skip=''
 
 while [ $# -gt 0 ] ; do
   case "$1" in
@@ -24,7 +24,7 @@ read ${mmfile}
 set scroll continuous
 verify proof *
 ${extra}
-verify markup *${date_skip}
+verify markup *${top_date_skip}
 quit
 COMMANDS
 }
