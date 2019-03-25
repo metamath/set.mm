@@ -7,7 +7,7 @@ date_skip=''
 
 while [ $# -gt 0 ] ; do
   case "$1" in
-    --date_skip) shift ; date_skip=' /date_skip' ;; # Extra command
+    --top_date_skip) shift ; top_date_skip=' /top_date_skip' ;; # Extra command
     --extra) shift ; extra="$1"; shift ;; # Extra command
     --*) echo "Error, unknown option $1" ; exit 1 ;;
     *) break ;;
