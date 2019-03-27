@@ -39,6 +39,9 @@ install:
   - wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
   - unzip -q mmj2jar.zip
   - jdk_switcher use oraclejdk8
+  ##### 27-Mar-2019 daw TEMPORARY WORKAROUND - modify mmj2 definitionCheck.js
+  ##### so that it looks for "setvar" instead of "set":
+  - sed -i -e 's/"set"/"setvar"/g' macros/definitionCheck.js
   # Install smetamath-rs (smm3), a Rust verifier by Stefan O'Rear
   # See: https://github.com/sorear/smetamath-rs
   - "[ -x  ~/.cargo/bin/smetamath ] || cargo install smetamath --vers 3.0.0"
@@ -53,12 +56,7 @@ script:
   - scripts/verify iset.mm
   # Verify and also generate 'discouraged.new', and do extra checking
   # (the 'printf' lets us insert multiple lines):
-  ##### 25-Mar-2019 nm TEMPORARY WORKAROUND (delete next 2 lines after definitionCheck.js updated)
-  - cp -p set.mm set.mm.save
-  - sed -e 's/setvar/set/g' < set.mm.save > set.mm
   - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\nRunMacro,showDiscouraged,discouraged.new')" set.mm
-  ##### 25-Mar-2019 nm TEMPORARY WORKAROUND (delete next line after definitionCheck.js updated)
-  - mv set.mm.save set.mm
   - echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
   # Use setparser to check that definitions don't create syntax ambiguities
   - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' iset.mm
