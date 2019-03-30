@@ -33,7 +33,7 @@
 tools
 match 1.tmp '(None)' n
 match 1.tmp 'MM>' n
-match 1.tmp ' ' y
+match 1.tmp '  ' y
 break 1.tmp ''
 add 1.tmp 'prove ' '$min xxx/no_new ax-*$save new_proof/compressed$_exit_pa$'
 ! If you want to do a "dry run" without saving proofs, change above line to:
