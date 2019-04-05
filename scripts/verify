@@ -3,11 +3,11 @@
 # Verify mmfile $1 (default "set.mm")
 
 extra=''
-date_skip=''
+top_date_skip=''
 
 while [ $# -gt 0 ] ; do
   case "$1" in
-    --date_skip) shift ; date_skip='/date_skip' ;; # Extra command
+    --top_date_skip) shift ; top_date_skip=' /top_date_skip' ;; # Extra command
     --extra) shift ; extra="$1"; shift ;; # Extra command
     --*) echo "Error, unknown option $1" ; exit 1 ;;
     *) break ;;
@@ -21,9 +21,10 @@ mmfile="${1:-'set.mm'}"
 run_verify () {
   metamath << COMMANDS
 read ${mmfile}
+set scroll continuous
 verify proof *
 ${extra}
-verify markup *${date_skip}
+verify markup *${top_date_skip}
 quit
 COMMANDS
 }

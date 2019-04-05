@@ -39,6 +39,9 @@ install:
   - wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
   - unzip -q mmj2jar.zip
   - jdk_switcher use oraclejdk8
+  ##### 27-Mar-2019 daw TEMPORARY WORKAROUND - modify mmj2 definitionCheck.js
+  ##### so that it looks for "setvar" instead of "set":
+  - sed -i -e 's/"set"/"setvar"/g' macros/definitionCheck.js
   # Install smetamath-rs (smm3), a Rust verifier by Stefan O'Rear
   # See: https://github.com/sorear/smetamath-rs
   - "[ -x  ~/.cargo/bin/smetamath ] || cargo install smetamath --vers 3.0.0"
@@ -49,7 +52,7 @@ script:
   # Create mmset.html so we can verify against it.
   - metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
   - metamath 'read iset.mm' 'markup mmil.raw.html mmil.html /ALT /CSS' quit
-  - scripts/verify --date_skip --extra 'write bibliography mmbiblio.html' set.mm
+  - scripts/verify --top_date_skip --extra 'write bibliography mmbiblio.html' set.mm
   - scripts/verify iset.mm
   # Verify and also generate 'discouraged.new', and do extra checking
   # (the 'printf' lets us insert multiple lines):

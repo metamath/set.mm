@@ -309,6 +309,7 @@
 "4syl" is used by "elaa".
 "4syl" is used by "erdsze2lem1".
 "4syl" is used by "f1ocnvfvrneq".
+"4syl" is used by "f1otrg".
 "4syl" is used by "fbssfi".
 "4syl" is used by "fcof1o".
 "4syl" is used by "filssufil".
@@ -13366,7 +13367,7 @@ New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4exdistrOLD" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
 New usage of "4ipval3" is discouraged (0 uses).
-New usage of "4syl" is discouraged (188 uses).
+New usage of "4syl" is discouraged (189 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
 New usage of "5oalem2" is discouraged (2 uses).
@@ -17873,6 +17874,7 @@ Proof modification of "axc9lem6OLD" is discouraged (78 steps).
 Proof modification of "axc9lem7OLD" is discouraged (15 steps).
 Proof modification of "axnul" is discouraged (52 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
+Proof modification of "babygodel" is discouraged (54 steps).
 Proof modification of "binom2aiOLD" is discouraged (171 steps).
 Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
