@@ -5973,6 +5973,8 @@
 "glbconxN" is used by "polval2N".
 "golem1" is used by "golem2".
 "golem2" is used by "goeqi".
+"grothac" is used by "axgroth3".
+"grothpwex" is used by "isrnsigaOLD".
 "grpbasex" is used by "cnaddablx".
 "grpbasex" is used by "isgrpix".
 "grpbasex" is used by "zaddablx".
@@ -15321,6 +15323,10 @@ New usage of "glbconxN" is discouraged (1 uses).
 New usage of "goeqi" is discouraged (0 uses).
 New usage of "golem1" is discouraged (1 uses).
 New usage of "golem2" is discouraged (1 uses).
+New usage of "grothac" is discouraged (1 uses).
+New usage of "grothomex" is discouraged (0 uses).
+New usage of "grothpw" is discouraged (0 uses).
+New usage of "grothpwex" is discouraged (1 uses).
 New usage of "grpbasex" is discouraged (3 uses).
 New usage of "grpo2grp" is discouraged (0 uses).
 New usage of "grpo2inv" is discouraged (10 uses).
