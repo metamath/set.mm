@@ -29,6 +29,7 @@
 ! MM> open log log.txt                (recommended, to review result later)
 ! MM> submit 1.tmp
 ! MM> write source set.mm
+! MM> close log
 
 tools
 match 1.tmp '(None)' n
@@ -36,8 +37,7 @@ match 1.tmp 'MM>' n
 match 1.tmp '  ' y
 break 1.tmp ''
 unduplicate 1.tmp
-add 1.tmp 'prove '
-'$min xxx/no_new ax-*$save new_proof/compressed$_exit_pa$'
+add 1.tmp 'prove ' '$min xxx/no_new ax-*$save new_proof/compressed$_exit_pa$'
 ! If you want to do a "dry run" without saving proofs, change above line
 ! to:
 ! add 1.tmp 'prove ' '$min xxx/no_new ax-*$_exit_pa/force$'
