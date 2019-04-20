@@ -13746,6 +13746,7 @@ New usage of "binom2aiOLD" is discouraged (0 uses).
 New usage of "bitr3" is discouraged (6 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bj-csbsnlem" is discouraged (1 uses).
+New usage of "bj-godellob" is discouraged (0 uses).
 New usage of "bj-sbeqALT" is discouraged (0 uses).
 New usage of "blo3i" is discouraged (1 uses).
 New usage of "blocn" is discouraged (1 uses).
@@ -17892,12 +17893,12 @@ Proof modification of "axc9lem6OLD" is discouraged (78 steps).
 Proof modification of "axc9lem7OLD" is discouraged (15 steps).
 Proof modification of "axnul" is discouraged (52 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
-Proof modification of "babygodel" is discouraged (54 steps).
 Proof modification of "binom2aiOLD" is discouraged (171 steps).
 Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "bj-19.21t" is discouraged (39 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
+Proof modification of "bj-godellob" is discouraged (19 steps).
 Proof modification of "bj-stdpc5" is discouraged (20 steps).
 Proof modification of "bnj142OLD" is discouraged (51 steps).
 Proof modification of "bnj145OLD" is discouraged (112 steps).
