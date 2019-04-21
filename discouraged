@@ -1359,10 +1359,8 @@
 "axc11nlem3OLD" is used by "dvelimvOLD".
 "axc11nlem4OLD" is used by "axc11nlem5OLD".
 "axc11nlem5OLD" is used by "axc11nOLD".
-"axc16ALT" is used by "dvelimALT".
 "axc16ALT2" is used by "a16gALT".
 "axc16ALT2OLD11" is used by "a16gALTOLD11".
-"axc16ALTNEW11" is used by "dvelimALTNEW11".
 "axc4i-o" is used by "aev-o".
 "axc4i-o" is used by "ax12inda2ALT".
 "axc4i-o" is used by "ax12indalem".
@@ -13632,10 +13630,10 @@ New usage of "axc11nlem2OLD" is discouraged (1 uses).
 New usage of "axc11nlem3OLD" is discouraged (2 uses).
 New usage of "axc11nlem4OLD" is discouraged (1 uses).
 New usage of "axc11nlem5OLD" is discouraged (1 uses).
-New usage of "axc16ALT" is discouraged (1 uses).
+New usage of "axc16ALT" is discouraged (0 uses).
 New usage of "axc16ALT2" is discouraged (1 uses).
 New usage of "axc16ALT2OLD11" is discouraged (1 uses).
-New usage of "axc16ALTNEW11" is discouraged (1 uses).
+New usage of "axc16ALTNEW11" is discouraged (0 uses).
 New usage of "axc16b" is discouraged (0 uses).
 New usage of "axc4i-o" is discouraged (5 uses).
 New usage of "axc5" is discouraged (0 uses).
@@ -13748,6 +13746,7 @@ New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bj-csbsnlem" is discouraged (1 uses).
 New usage of "bj-godellob" is discouraged (0 uses).
 New usage of "bj-sbeqALT" is discouraged (0 uses).
+New usage of "bj-xpima1snALT" is discouraged (0 uses).
 New usage of "blo3i" is discouraged (1 uses).
 New usage of "blocn" is discouraged (1 uses).
 New usage of "blocn2" is discouraged (2 uses).
@@ -14954,8 +14953,6 @@ New usage of "dveeq1OLD" is discouraged (0 uses).
 New usage of "dveeq2-o" is discouraged (4 uses).
 New usage of "dveeq2ALT" is discouraged (0 uses).
 New usage of "dveeq2OLD" is discouraged (2 uses).
-New usage of "dvelimALT" is discouraged (0 uses).
-New usage of "dvelimALTNEW11" is discouraged (0 uses).
 New usage of "dvelimdfOLD" is discouraged (0 uses).
 New usage of "dvelimf-o" is discouraged (3 uses).
 New usage of "dvelimfOLD" is discouraged (0 uses).
@@ -17898,8 +17895,12 @@ Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "bj-19.21t" is discouraged (39 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
+Proof modification of "bj-equsal" is discouraged (31 steps).
 Proof modification of "bj-godellob" is discouraged (19 steps).
+Proof modification of "bj-sbceqgALT" is discouraged (143 steps).
 Proof modification of "bj-stdpc5" is discouraged (20 steps).
+Proof modification of "bj-xpima1snALT" is discouraged (34 steps).
+Proof modification of "bj-xpima2sn" is discouraged (23 steps).
 Proof modification of "bnj142OLD" is discouraged (51 steps).
 Proof modification of "bnj145OLD" is discouraged (112 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
@@ -18006,8 +18007,6 @@ Proof modification of "dveeq1-o16" is discouraged (22 steps).
 Proof modification of "dveeq1OLD" is discouraged (14 steps).
 Proof modification of "dveeq2-o" is discouraged (20 steps).
 Proof modification of "dveeq2OLD" is discouraged (14 steps).
-Proof modification of "dvelimALT" is discouraged (106 steps).
-Proof modification of "dvelimALTNEW11" is discouraged (106 steps).
 Proof modification of "dvelimdfOLD" is discouraged (76 steps).
 Proof modification of "dvelimf-o" is discouraged (129 steps).
 Proof modification of "dvelimfOLD" is discouraged (81 steps).
