@@ -4289,10 +4289,13 @@
 "df-bj-1upl" is used by "bj-1upleq".
 "df-bj-1upl" is used by "bj-1uplex".
 "df-bj-1upl" is used by "bj-1upln0".
+"df-bj-1upl" is used by "bj-2upln1upl".
 "df-bj-1upl" is used by "bj-pr11val".
 "df-bj-1upl" is used by "bj-pr22val".
 "df-bj-2upl" is used by "bj-2upleq".
 "df-bj-2upl" is used by "bj-2uplex".
+"df-bj-2upl" is used by "bj-2upln0".
+"df-bj-2upl" is used by "bj-2upln1upl".
 "df-bj-2upl" is used by "bj-pr21val".
 "df-bj-2upl" is used by "bj-pr22val".
 "df-bj-pr1" is used by "bj-pr1eq".
@@ -13745,6 +13748,8 @@ New usage of "bitr3" is discouraged (6 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bj-csbsnlem" is discouraged (1 uses).
 New usage of "bj-godellob" is discouraged (0 uses).
+New usage of "bj-rabtrALT" is discouraged (0 uses).
+New usage of "bj-rabtrAUTO" is discouraged (0 uses).
 New usage of "bj-sbeqALT" is discouraged (0 uses).
 New usage of "bj-xpima1snALT" is discouraged (0 uses).
 New usage of "blo3i" is discouraged (1 uses).
@@ -14617,8 +14622,8 @@ New usage of "df-ass" is discouraged (1 uses).
 New usage of "df-at" is discouraged (2 uses).
 New usage of "df-ba" is discouraged (1 uses).
 New usage of "df-bdop" is discouraged (2 uses).
-New usage of "df-bj-1upl" is discouraged (5 uses).
-New usage of "df-bj-2upl" is discouraged (4 uses).
+New usage of "df-bj-1upl" is discouraged (6 uses).
+New usage of "df-bj-2upl" is discouraged (6 uses).
 New usage of "df-bj-pr1" is discouraged (4 uses).
 New usage of "df-bj-pr2" is discouraged (4 uses).
 New usage of "df-bj-proj" is discouraged (4 uses).
@@ -17897,6 +17902,8 @@ Proof modification of "bj-19.21t" is discouraged (39 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
 Proof modification of "bj-equsal" is discouraged (31 steps).
 Proof modification of "bj-godellob" is discouraged (19 steps).
+Proof modification of "bj-rabtrALT" is discouraged (36 steps).
+Proof modification of "bj-rabtrAUTO" is discouraged (33 steps).
 Proof modification of "bj-sbceqgALT" is discouraged (143 steps).
 Proof modification of "bj-stdpc5" is discouraged (20 steps).
 Proof modification of "bj-xpima1snALT" is discouraged (34 steps).
