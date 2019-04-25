@@ -852,7 +852,7 @@ interesting exercise for figuring out the substitutions involved in its
 proof.]</FONT>
 -->
 
-<P>Similarly, blue wff variables and red set variables can be substituted
+<P>Similarly, blue wff variables and red setvar variables can be substituted
 only with expressions that qualify as those types.
 
 <P>In other words, we must "prove" that any expression we want to
@@ -903,7 +903,7 @@ ensured that they have been met.
 <P> <B><FONT COLOR="#006633">Class
 variables</FONT></B>&nbsp;&nbsp;&nbsp; Our example of 2+2=4, with its
 purple class variables, depends on a definitional mechanism that
-extends the wff and set variables used in the axioms to greatly simplify
+extends the wff and setvar variables used in the axioms to greatly simplify
 our presentation.  After the axiom section below, we describe the <A
 HREF="#class">theory of classes</A>, which you should read to understand
 how these tie into the primitive concepts used by the axioms.
@@ -954,33 +954,37 @@ in, for all).
 
 <P>Variables are placeholders that can be substituted with other
 expressions (strings of symbols).  There are two kinds of variables in
-the axioms, <B>set variables</B> (lowercase italic letters in
+the axioms, <B>setvar variables</B> (lowercase italic letters in
 <FONT COLOR="#FF0000">red</FONT>) and
 <B>wff ("well-formed formula") variables</B> (lowercase Greek letters
 in <FONT
 COLOR="#0000FF">blue</FONT>). A wff variable can be
 substituted with any expression qualifying as a wff (see below).
- A set variable can be substituted only
-with another set variable (in other words with an expression of length one,
-whose only symbol is a set variable) since there are no rules that
-let us construct more complex expressions for them;
-you may want to think of this as just
-renaming the set variable.
+A setvar variable can be substituted only with another setvar variable
+(in other words with an expression of length one, whose only symbol is a
+setvar variable) since there are no rules that let us construct more
+complex expressions for them.  We call these "setvar variables" rather
+than just "set variables" to emphasize this restriction.  The reason for
+this restriction is that they often serve as bound or dummy variables in
+expressions, i.e. the first argument of the ` A. ` quantifier connective
+introduced below.  It is the same reason that you can't substitute say 2
+for x in "the integral of x dx" to result in "the integral of 2 d2",
+which would be nonsense.
 
 
-<P><FONT SIZE="-1">[In later proofs you will see a third kind of
-variable, called a <B>class variable</B>, which is shown in <FONT
-COLOR="#CC33CC">purple</FONT> (usually as uppercase italic letters)
- and is a kind of generalization of the set
-variable.  The <A HREF="#class">theory of classes</A> will be discussed
-in the next section.]</FONT><P>
+<P><FONT SIZE="-1">[In later proofs you will see a third kind of variable, called a
+<B>class variable</B>, which is shown in <FONT
+COLOR="#CC33CC">purple</FONT> (usually as uppercase italic letters) and
+is a kind of generalization of the setvar variable that can be
+substituted with expressions such as 2 or ` ( pi + 3 ) `. The <A
+HREF="#class">theory of classes</A> will be discussed in the next
+section.]</FONT><P>
 
 Following the tradition in the literature, we use italic Greek letters for
-wff variables and lower-case italic letters for set variables.
+wff variables and lower-case italic letters for setvar variables.
 
 <P><FONT SIZE="-1">[If you
- are colorblind or
-use a monochrome display or printout, the red variables are
+use a monochrome display or printout, or are colorblind, the red variables are
 lowercase italic
 letters, the purple ones uppercase italic, and the blue ones
 italic Greek.   Sometimes we use mathematical symbols (such as +)
@@ -992,8 +996,13 @@ can see the list of all symbols including variables on the
 
 Any mathematical object whatsoever, such as the number 2, the
 operation of taking a square root, or the surface of a sphere, is
-considered to be a <B>set</B> in set theory.  The red set variables are
-placeholders that represent arbitrary sets.
+considered to be a <B>set</B> in set theory.  The red setvar variables
+represent arbitrary sets such as these. (You can't substitute
+the expressions for these sets directly into the setvars, as discussed
+above, but must use the setvars as part of a formula that specifies the
+properties of these sets indirectly.  Our theory of classes in the
+next section makes direct substitutions possible, giving us an
+often more convenient mechanism for practical work.)
 
 <P><I>A set can be equal to another set, can be contained in another
 set, and can contain other sets.</I> <!-- ("Is contained in," "is a
@@ -1006,8 +1015,8 @@ to the laws for real numbers in the presence of the ZFC axioms.
 The square root operation is a set
 containing an infinite number of ordered pairs, one for each nonnegative
 real number; the first member of each pair is the number and the second
-member its square root.  (Recall that a set variable can only be
-replaced with another set variable, so we cannot replace a set variable
+member its square root.  (Recall that a setvar variable can only be
+replaced with another setvar variable, so we cannot replace a setvar variable
 with say the symbol "2".  Manipulation of such symbols uses the
 definitional mechanism we will introduce in the <A HREF="#class">Theory
 of Classes</A> section below.)
@@ -1015,7 +1024,7 @@ of Classes</A> section below.)
 <P>A <B>wff</B> is an expression (string of symbols)
 constructed as follows.
 A starting wff either is a wff variable, or it consists of two
-set variables connected with either
+setvar variables connected with either
 ` = `
 ("equals," "is identical to") or
 ` e. `
@@ -1028,14 +1037,14 @@ result to prevent ambiguity.  A wff may be prefixed with
 ("not") to form a new wff.  And finally, a wff may be prefixed with
 ` A. `
 ("for all," "for each," "for every")
-and a set variable to form a new wff.&nbsp;  <I>To summarize:</I>
+and a setvar variable to form a new wff.&nbsp;  <I>To summarize:</I>
 If
 ` ph `
 is a wff variable and
 ` x `
 and
 ` y `
-are set variables, then  ` ph ` ,
+are setvar variables, then  ` ph ` ,
 ` x = y ` ,
 and
 ` x e. y `
@@ -1046,7 +1055,7 @@ and
 ` ps `
 are wffs and
 ` x `
-is a set variable, then
+is a setvar variable, then
 ` ( ph -> `
 ` ps ) ` ,
 ` -. ph ` ,
@@ -1191,18 +1200,21 @@ used informally in the table above to indicate the relationship between
 hypotheses and conclusion; they are not part of the formal language.
 
 <P><A NAME="pcaxioms"></A><B><FONT COLOR="#006633">Predicate
-calculus</FONT></B> introduces three new symbols, ` = ` ("equals"), ` e. ` ("is a member of"), and ` A. ` ("for all").  The first two are called
+calculus</FONT></B> introduces three new symbols, ` = ` ("equals"), ` e. `
+("is a member of"), and ` A. ` ("for all").  The first two are called
 "predicates."  A predicate specifies a true or false relationship
 between its two arguments.  As an example, ` x = x ` always evaluates to true
 regardless of what ` x ` is, as
 the theorem ~ equid demonstrates.  The "for all"
 symbol, also called the "universal quantifier," ranges over or "scans"
-all possible values of its first (set variable) argument, applying them
-to the second (wff) argument, and returns true if and only if the second
-argument is true for every value of the first.  The wff ` A. x ph ` is read "for all x, it is the case that phi is true."  The
+all possible values of its first (setvar variable) argument, applying them
+to the second (wff expression) argument,
+and returns true if and only if the second
+argument is true for every value of the first.  The wff ` A. x ph ` is
+read "for all x, it is the case that phi is true."  The
 axioms of predicate calculus express the logical properties of these new
 symbols that are universally true, independent from any theory (like set
-theory) making use of them.  (What we call "set variables" are more
+theory) making use of them.  (What we call "setvar variables" are more
 generally called "individual variables" in predicate calculus without
 set theory.)
 
@@ -1318,7 +1330,7 @@ HREF="#oldaxioms">Appendix 8</A> for details.
 
 <!--
 
-<P>If we are willing to live without the concept of "a set variable not
+<P>If we are willing to live without the concept of "a setvar variable not
 occurring in a wff" (or wish to do so to simplify the metalogic), we can
 omit axiom ~ ax-5 and still have a complete
 system of logic.  However, ~ ax-5 provides us
@@ -1441,7 +1453,7 @@ detailed descriptions.  We derive the redundant ZF axioms of
 <A HREF="axnul.html">Null Set</A>, and
 <A HREF="axpr.html">Pairing</A> from the others as theorems.
 
-<P><A NAME="zfcaxioms"></A> In the ZFC axioms that follow, <I>all set
+<P><A NAME="zfcaxioms"></A> In the ZFC axioms that follow, <I>all setvar
 variables are assumed to be</I> <A HREF="#distinct">distinct</A>.  If
 you click on their links you will see the explicit distinct variable
 conditions.  (There is also an <A HREF="mmzfcnd.html">unusual
@@ -1600,22 +1612,25 @@ In <A HREF="#figure1">Figure 1</A> above that shows part of the proof of
 2+2=4, there are some purple-colored variables such as ` A ` and ` B ` that do not appear
 in any of the axioms of logic and set theory that we just presented.
 Even the number 2 is a symbol (a constant) that we cannot manipulate
-with the axioms, because of the rule that only set variables (and not
-constants or other expressions) can be substituted for set variables.
+with the axioms, because of the rule that only setvar variables (and not
+constants or other expressions) can be substituted for setvar variables.
 You may at this point feel lost, wondering how our introductory 2+2=4
 example bears any relationship at all to the axioms!  In this section,
 we will discuss how this notation ties into our axioms and how to
 convert it to the primitive or basic language used by the axioms.
 
-<P>In principle, mathematics can be done using only the set and wff
+<P>In principle, mathematics can be done using only the setvar and wff
 variables that appear in the axioms.  But the notation can be awkward to
 work with and is not always intuitive for humans.  To make mathematics
 more practical, we extend the set theory language with a definitional
 notation called the <B>theory of classes</B>.  An expression of the form
-` { x | ph } ` , where ` x ` is any set variable and ` ph ` is any wff, is interchangeably called a
+` { x | ph } ` , where ` x ` is any setvar variable and ` ph ` is any wff,
+is interchangeably called a
 <B>class builder</B>, <B>class abstract[ion]</B>, <B>class term</B>, or
 <B>class comprehension</B> by different authors.  We call an object that
-can be represented in this form a <B>class</B> and read ` { x | ph } ` as "the class of all ` x ` such that ` ph ` holds".  Every class is a (possibly empty)
+can be represented in this form a <B>class</B> and read ` { x | ph } `
+as "the class of all ` x ` such that ` ph ` holds".  Every class is a
+(possibly empty)
 collection of sets, although not every such collection is itself a set
 (see the discussion for theorem ~ ru ).  For example,
 ` { x | ( x e. `
@@ -1628,9 +1643,13 @@ object representing a class, such as other class variables.  (A class
 variable ` A `  itself can be represented with the
  class builder ` { x | x e. A } ` and thus
 qualifies as a class; see theorem ~ abid2 .)  Our
-language will now have three kinds of variables:  ` ph ` , ` ps ` ,... ranging over wffs, ` x ` , ` y ` ,... ranging over sets, and ` A ` , ` B ` ,... ranging over classes.
+language will now have three kinds of variables:
+` ph ` , ` ps ` ,... ranging over wffs,
+` x ` , ` y ` ,... ranging over setvar variables, and
+` A ` , ` B ` ,... ranging over classes.
 
-<P>In the basic language, the ` e. ` and ` = ` connectives must connect two set variables, so all starting
+<P>In the basic language, the ` e. ` and ` = ` connectives must
+connect two setvar variables, so all starting
 wffs (without wff variables) are of the form ` x e. y ` and ` x `
 ` = y ` .  We extend the
 language syntax, i.e. the definition of a wff, by allowing ` e. ` and ` = ` to connect to
@@ -1737,7 +1756,7 @@ membership</A></TD>
 <P>Definition ~ df-clab extends the ` e. ` connective, and
 thus the definition of a wff, to allow a class builder on the right-hand
 side of the ` e. ` ,
-instead of (previously) only set variables on each side.  Note that the
+instead of (previously) only setvar variables on each side.  Note that the
 ` ph ` in ~ df-clab is a wff in the extended language and
 thus may itself contain class builders.  The proper substitution
 denoted by ` [ x / y ] ph ` has been previously defined by ~ df-sb .
@@ -1769,21 +1788,22 @@ allow classes on both sides.  We do not need a hypothesis as we did for
 instances are theorems of predicate calculus (see theorem ~ cleljust ).
 
 
-<P>As an important special case, a set variable ` x ` can be considered a class because
+<P>As an important special case, a setvar variable ` x ` can be
+considered a class because
 it equals the class builder ` { y `
 ` | y e. x } ` (theorem ~ cvjust ).  This is
 the justification for syntax builder ~ cv , which for
-convenience allows us to substitute a set variable directly for a
+convenience allows us to substitute a setvar variable directly for a
 class variable.  (On the other hand, we may not substitute a class
-variable for a set variable in general.)
+variable for a setvar variable directly.)
 
 
 <P> <B><FONT COLOR="#006633">An example</FONT></B>&nbsp;&nbsp;&nbsp; To
 see an example of the algorithm, let us eliminate the class builder from
 the (extended) wff ` { x | x = a } `
 ` = b ` .  For simplicity we
-will assume all set variable pairs are <A HREF="#distinct">distinct</A>.
-Treating the set variable ` b ` as a class and applying ~ dfcleq , we
+will assume all setvar variable pairs are <A HREF="#distinct">distinct</A>.
+Treating the setvar variable ` b ` as a class and applying ~ dfcleq , we
 get ` A. y ( y e. { x | x = a } `
 ` <-> y e. `
 ` b ) ` .  Applying ~ df-clab , we get ` A. y ( [ y / x ] x = a <-> y e. `
@@ -2341,7 +2361,7 @@ descriptions.)<P>
 &lt;- <A HREF="elab2g.html" TITLE="Membership in a class abstraction, using implicit substitution....">elab2g</A>
 &lt;- <A HREF="elabg.html" TITLE="Membership in a class abstraction, using implicit substitution.  Compare...">elabg</A>
 &lt;- <A HREF="elabgf.html" TITLE="Membership in a class abstraction, using implicit substitution.  Compare...">elabgf</A>
-&lt;- <A HREF="vtoclgf.html" TITLE="Implicit substitution of a class for a set variable, with bound-variable...">vtoclgf</A>
+&lt;- <A HREF="vtoclgf.html" TITLE="Implicit substitution of a class for a setvar variable, with bound-variable...">vtoclgf</A>
 &lt;- <A HREF="issetf.html" TITLE="A version of isset that does not require x and A to be distinct....">issetf</A>
 &lt;- <A HREF="nfeq2.html" TITLE="Hypothesis builder for equality, special case.">nfeq2</A>
 &lt;- <A HREF="nfeq.html" TITLE="Hypothesis builder for equality.">nfeq</A>
@@ -2560,10 +2580,10 @@ theorem scheme expressable in the "simple metalogic" of Tarski's system
 by using <I>only</I> Metamath's direct substitution rule applied to the
 axiom system (and no other metalogical or set-theoretical notions
 "outside" of the system).  <B>Simple metalogic</B> consists of schemes
-containing wff metavariables (with no arguments) and/or set (also called
+containing wff metavariables (with no arguments) and/or setvar (also called
 "individual") metavariables, accompanied by optional provisos each
-stating that two specified set metavariables must be distinct or that a
-specified set metavariable may not occur in a specified wff
+stating that two specified setvar metavariables must be distinct or that a
+specified setvar metavariable may not occur in a specified wff
 metavariable.  Metamath's logic and set theory axiom and rule schemes
 are all examples of simple metalogic.  The schemes
 
@@ -2594,7 +2614,7 @@ theorems of first-order logic (i.e. the <A
 HREF="#traditional">traditional predicate calculus</A>
 of textbooks) but instead should be interpreted as <B>schemes</B>, or
 recipes, for generating those axioms and theorems.  In particular, the
-(red) "set variables" in Metamath's axioms are <I>not</I> the individual
+(red) "setvar variables" in Metamath's axioms are <I>not</I> the individual
 variables of the actual axioms; instead, they are metavariables ranging
 over these individual variables (which in turn range over the
 individuals in the logic's universe of discourse&mdash;in our case of
@@ -2774,7 +2794,7 @@ not occur in ` ph ` </TD></TR>
 <P>All of our extensions are provable (outside of Metamath) as
 metatheorems of Tarski's original system, meaning that they are sound
 (and also logically redundant).  Specifically, all instances of our extensions
- not involving wff metavariables (and with all set
+ not involving wff metavariables (and with all setvar
 metavariables mutually distinct) can be proved inside of Metamath from
 Tarski's axiom schemes; see theorem schemes ~ ax10w , ~ ax11w ,
 ~ ax13w , and ~ ax12w .  These
@@ -2801,7 +2821,7 @@ instances of schemes</FONT></B>&nbsp;&nbsp;&nbsp; In Metamath, by
 default (i.e. when no distinct variable provisos are present; see <A
 HREF="#axiomnotedv">below</A>) there are no restrictions on
 substitutions that may be made into a scheme, provided we honor the
-metavariable types (wff variable or set variable).  This is called
+metavariable types (wff variable or setvar variable).  This is called
 <B>direct substitution</B>, in constrast to a more complicated "proper
 substitution" used in textbook predicate calculus.  Consider, for
 example, axiom scheme ~ ax-6 , which can be
@@ -2814,7 +2834,7 @@ argument (i.e. in the quantifier's "scope"), otherwise it is
 of whether the variable is bound or free at a given position.  In the
 Metamath language, ` E. `
 is merely a 2-place prefix connective or "operation" that evaluates to a
-wff, taking a set variable as its first argument and a wff as its
+wff, taking a setvar variable as its first argument and a wff as its
 second, with no built-in concept of bound or free.  In ~ a6e , we place no restriction on what actual
 variables may be substituted for bound metavariable ` x ` and free metavariable ` y ` .  We can even substitute them with the same
 variable, seemingly at odds with the traditional rule that free and
@@ -2917,7 +2937,7 @@ substitution instances are new schemes in their own right, into which we
 can make further substitutions to specialize them further if we wish.
 
 
-<P> The set and wff variables of the Metamath language are one level up,
+<P> The setvar and wff variables of the Metamath language are one level up,
 or "meta," from the point of view of the logic that it describes.
 (Hence the name <I>Metamath</I>, meaning "metavariable math.")  Each
 "theorem" on our proof pages is a theorem scheme (metatheorem) that is a
@@ -3297,12 +3317,13 @@ following accompanying an axiom or theorem (for example, ~ ax-5 and ~ dtru ):
 where ` x `
 and
 ` y `
-may not be substituted with the same set variable,
-</LI><LI> where whatever set variable is substituted for
+may not be
+substituted with the same setvar variable,
+</LI><LI> where whatever setvar variable is substituted for
 ` x `
 may not appear in the wff expression substituted for
 ` ph ` ,
-and </LI><LI> where whatever set variable is substituted for
+and </LI><LI> where whatever setvar variable is substituted for
 ` x `
 may not appear in the class expression substituted for
 ` A ` .
@@ -3327,7 +3348,7 @@ variables in common.  This is why a distinct variable pair is officially
 called a "disjoint variable pair" in the Metamath specification.  We
 present the rule as three separate cases above for clarity.  In the set
 theory database file, set.mm, we adopt the convention that at least one
-set variable always appears in a distinct variable pair, so these are
+setvar variable always appears in a distinct variable pair, so these are
 the only cases you will see.  Under this convention, a distinct variable
 pair such as "` A ` ,` ph `" will never occur, even
 though technically it is not illegal.]</FONT><P>
@@ -3390,9 +3411,9 @@ the wff ` y = z ` , one might think that a direct
 application of ~ ax-5 would give (` y = z -> A. x ` ` y = z `) as a theorem with no distinct
 variable requirements, so that ~ ax-13 easily
 follows by adding an antecedent with ~ a1i .
-However, "distinct" does not <I>merely</I> mean that two set variables
+However, "distinct" does not <I>merely</I> mean that two setvar variables
 have different names; it means that we also must prevent them from being
-substituted with the same set variable in the future.  (To be precise,
+substituted with the same setvar variable in the future.  (To be precise,
 they must represent object language variables with different names; see
 <A HREF="#schemes">Axioms vs. axiom schemes</A> and <A
 HREF="#axiomnotedv">Distinct metavariables</A> above.)  To apply ~ ax-5 , we must explicitly ensure that ` x ` is distinct from both
@@ -3618,26 +3639,27 @@ clutter.
 <P>2. If the theorem has "Distinct variable groups" and a wff or
 class variable is missing from the "Allowed substitution hints", such as
 the ` A ` in ~ copsexg , it means (in this case) that neither of
-the set variables ` x ` or ` y ` may appear in a class expression
+the setvar variables ` x ` or ` y ` may appear in a class expression
 substituted for ` A ` .  It is
 acceptable to substitute any class expression for ` A ` that <I>doesn't</I> contain these two
 variables but possibly contains others such as ` z ` .
 
 <P>3. If the theorem has "Distinct variable groups" but does not
-have an "Allowed substitution hints" list, such as ~ dftr5 , it means that none of the set variables in
+have an "Allowed substitution hints" list, such as ~ dftr5 , it means that none of the setvar variables in
 the theorem or its hypotheses may appear in expressions substituted for
-its wff or class variables; in this case, neither ` x ` nor ` y ` may appear in an expression substituted for ` A ` .  Other set variables such as ` z ` may appear, though.
+its wff or class variables; in this case, neither ` x ` nor ` y ` may appear in an expression substituted for ` A ` .
+Other setvar variables such as ` z ` may appear, though.
 This includes any dummy variables that may be used by the
 proof, since they do not appear in the theorem or its hypotheses.
 
 <P>4. The list of variables in parentheses after a wff or class
-variable shows the permissable set variables that may appear in a
+variable shows the permissable setvar variables that may appear in a
 substitution <I>among those in the theorem</I> (or its hypotheses).
-There is nothing preventing the use of set variables that do not appear
+There is nothing preventing the use of setvar variables that do not appear
 in the theorem.  For example, in ~ axsep , ` x ` and ` w ` may appear in an expression substituted for ` ph ` , but not ` y ` or ` z ` .
 
-<P>5. The set variable list in parentheses says nothing about
-whether those set variables need to be mutually distinct.  Only the
+<P>5. The setvar variable list in parentheses says nothing about
+whether those setvar variables need to be mutually distinct.  Only the
 "Distinct variable groups" list provides this information.  For example,
 ` ph `(` x ` ,` y `) appears in the "Allowed substitution hints" for both ~ ralcom and ~ ralcom2 ;
 ` x ` and ` y ` must be distinct in the former but not the
@@ -3684,7 +3706,7 @@ variables, whether free or bound, are subject to the same direct
 substitution rule.  Metamath's substitution rule does not treat a
 variable after the quantifier symbol "` A. `" any differently from a variable after any other
 constant connective such as "` -. `".  The only thing that matters is that the syntax is legal
-for the variable type (wff, set, or class), and that any distinct
+for the variable type (wff, setvar, or class), and that any distinct
 variable requirements are satisfied.  This different paradigm may take
 some getting used to by someone used to traditional "proper
 substitution" (which involves analyzing the scopes of bound variables
@@ -3763,7 +3785,7 @@ see the discussion about
 
 
 <!-- 4</FONT></B>&nbsp;&nbsp;&nbsp; A distinct variable requirement on
-two set (meta)variables ` x `
+two setvar (meta)variables ` x `
 and ` y ` means that the
 <I>names</I> of the <A HREF="#schemes">actual variables</A> assigned to
 ` x ` and ` y ` must be different.  It does not mean that the
@@ -3786,7 +3808,7 @@ with different distinct variable requirements can express different
 mathematical facts.  Compare, for example, ~ dvdemo1 and ~ dvdemo2 .
 
 
-<!-- <P>It can be proved that distinct variable restrictions on two set
+<!-- <P>It can be proved that distinct variable restrictions on two setvar
 variables can be replaced with logical hypotheses ($e statements) of the
 form "` -. A. x x = y ` ," provided that (unlike regular $e
 hypotheses) we are allowed to drop them whenever one of their variables
@@ -4128,7 +4150,7 @@ number 2 is a real number, and the Axiom of Infinity is needed to prove
 that any real number exists.  (And why is this?  Very informally, we can
 think of an arbitrary real number as having an infinite list of digits
 after the decimal point, and we need an axiom that tells us that such
-infinite lists exist before we can manipulate them with set variables.)
+infinite lists exist before we can manipulate them with setvar variables.)
 But the place where Infinity is used is buried deep inside the proof
 tree&mdash;you have to drill down through  49 layers of proofs to find it.
 
@@ -4364,10 +4386,10 @@ Omit all predicate calculus axioms <I>except</I>
 </TD><TD>This is Tarski's system S2 and is logically (though not
 <I>metalogically</I>) complete.  This means that
 any substitution instance of the omitted axioms that contains
-no wff metavariables and whose set variables are
+no wff metavariables and whose setvar variables are
 mutually distinct can be derived from from the axioms of this
 subsystem.  However, many schemes with wff metavariables or
-bundled set variables cannot be derived.  In particular,
+bundled setvar variables cannot be derived.  In particular,
 ~ ax-10 ,
 ~ ax-11 ,
 ~ ax-12 , and
@@ -5248,7 +5270,7 @@ https://ocw.mit.edu/courses/mathematics/18-125-measure-and-integration-fall-2003
 </A> (retrieved 21-Feb-2018). </LI>
 
 <LI><A NAME="Weierstrass"></A> [Weierstrass] Weierstra&szlig;, Karl, <I>Zur Determinantentheorie,</I>
-1886/87, posthumously published 1903 in &quot;Mathematische Werke&quot;, vol. III, 271-287, J. Knoblauch, 
+1886/87, posthumously published 1903 in &quot;Mathematische Werke&quot;, vol. III, 271-287, J. Knoblauch,
 Ed. Berlin: Mayer &amp; M&uuml;ller; available at <A
 HREF="https://www.yumpu.com/de/document/read/20688945/mathematische-werke-von-karl-weierstrass-herausgegeben-unter-"
 >https://www.yumpu.com/de/document/read/20688945/mathematische-werke-von-karl-weierstrass-herausgegeben-unter-</A>
@@ -5358,7 +5380,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 29-Dec-2018.</FONT></I><BR><FONT
+ page was last updated on 24-Mar-2019.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
