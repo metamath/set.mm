@@ -1880,6 +1880,7 @@ are Greek letters in Quine, and he uses an archaic dot notation instead
 of parentheses, but this is is a relatively minor hurdle especially
 since you can compare the Metamath versions of many of the theorems.
 
+
 <P> <B><FONT COLOR="#006633">History</FONT></B>&nbsp;&nbsp;&nbsp;
 According to [<A HREF="#Levy">Levy</A>] (p. 11), the way we introduce
 classes was first explicitly stated by [<A HREF="#Quine">Quine</A>]
@@ -2797,7 +2798,7 @@ metatheorems of Tarski's original system, meaning that they are sound
  not involving wff metavariables (and with all setvar
 metavariables mutually distinct) can be proved inside of Metamath from
 Tarski's axiom schemes; see theorem schemes ~ ax10w , ~ ax11w ,
-~ ax13w , and ~ ax12w .  These
+~ ax12w , and ~ ax13w .  These
 theorem schemes have hypotheses that can be eliminated for such
 instances.  Theorem ~ ax12wdemo shows an
 example of how we can eliminate the hypotheses of ~ ax12w .  Finally, we combine all such
@@ -2852,8 +2853,9 @@ theorem as a whole without consideration of whether a variable's occurrence
 is free or bound.  This makes makes figuring out what substitutions
 are allowed very simple.)
 
-<P>The expression "` E. x x = y `" is just a recipe for generating
-an infinite number of actual axioms.  In an actual axiom such as "` E. ` <I>v</I><FONT
+<P>The expression "` E. x ` ` x = y `" is just a recipe for generating
+an infinite number of actual axioms.  In an actual axiom
+such as "` E. ` <I>v</I><FONT
 SIZE=-1><SUB>3</SUB></FONT> <I>v</I><FONT SIZE=-1><SUB>3</SUB></FONT> =
 <I>v</I><FONT SIZE=-1><SUB>2</SUB></FONT>," symbols <I>v</I><FONT
 SIZE=-1><SUB>2</SUB></FONT> and <I>v</I><FONT
@@ -4661,6 +4663,12 @@ theorems like "the set of all sets is empty" (Theorem 50, p. 35);
 nonetheless, it provides a gentle introduction that we reference
 surprisingly frequently.
 
+<P>Margaris and Quine give only an informal explanation of their
+dot notation that may not satisfy everyone.  A good
+explanation can be found in Copi's <I>Symbolic Logic</I> (5th edition),
+Section 9.3, with multiple examples. (Thanks to Patrick Clot for
+this suggestion.)
+
 <P> Some closely followed texts in the Metamath Proof Explorer are
 listed below.  I am not specifically endorsing them but just
 indicating which books and papers I consulted frequently while building
@@ -5054,6 +5062,10 @@ and A. Mostowski, <I>Set Theory: with an Introduction to
 Descriptive Set Theory,</I> 2nd ed., North-Holland,
 Amsterdam (1976) [QA248.K7683 1976].</LI>
 
+<LI><A NAME="Lang"></A> [Lang] Serge Lang, <I>Algebra</I>, revised 3rd edition,
+Graduate Texts in Mathematics, Springer-Verlag New York (2002)
+[QA154.3.L3].  </LI>
+
 <LI><A NAME="LarsonHostetlerEdwards"></A> [LarsonHostetlerEdwards]
 Larson, Ron, Robert P. Hostetler, and Bruce H. Edwards, <I>Calculus:
 Early Transcendental Functions,</I> 3rd ed., Houghton Mifflin Company
@@ -5380,7 +5392,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 24-Mar-2019.</FONT></I><BR><FONT
+ page was last updated on 3-Apr-2019.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
@@ -5417,5 +5429,3 @@ urchinTracker();
 
 </BODY>
 </HTML>
-
-
