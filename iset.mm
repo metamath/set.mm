@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Mar-2019
+$( iset.mm - Version of 28-Apr-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -53486,6 +53486,19 @@ $)
   $}
 
   ${
+    $d x y z h w $.  $d g z h w $.  $d x y f $.  $d x y g h w $.  $d f h w F $.
+    $d g F $.  $d x z F $.
+    tfrlem3fg.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    $( Bound variable change lemma for transfinite recursion.  Similar to
+       ~ tfrlem3 except that ` f ` and ` g ` need not be distinct.
+       (Contributed by Jim Kingdon, 28-Apr-2019.) $)
+    tfrlem3fg $p |- A = { g | E. z e. On ( g Fn z /\
+                A. y e. z ( g ` y ) = ( F ` ( g |` y ) ) ) } $=
+      ( vw vh tfrlem3 ) IBCDJFGABIDEJGHKK $.
+  $}
+
+  ${
     $d x y f g $.  $d x y z $.  $d g z $.  $d f g F $.  $d x z F $.
     tfrlem3-2.1 $e |- ( Fun F /\ A. x e. On A. f ( f Fn x -> f e. dom F ) ) $.
     $( Lemma for transfinite recursion which changes a bound variable
@@ -53928,8 +53941,8 @@ $)
       OZVAVFDVHUQVDUTVEUPVCUOSUSBUPVCUCUDUEUPUATVGHUPPVBABHCIKZVCLVIC
       TJKVIVCVIEMUBUFUGOUHIRHUPUIJUJZDIJEFGVJUKULUNUM $.
 
-    $( The domain of ` recs ` is all ordinals (lemma for transfinite recursion).
-       (Contributed by Jim Kingdon, 22-Apr-2019.) $)
+    $( The domain of ` recs ` is all ordinals (lemma for transfinite
+       recursion).  (Contributed by Jim Kingdon, 22-Apr-2019.) $)
     tfrlemi14 $p |- dom recs ( F ) = On $=
       ? $.
   $}
