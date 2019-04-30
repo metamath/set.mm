@@ -53666,9 +53666,9 @@ $)
   ${
     $d x y z u v w f h i j F $.  $d z u v w h i j f A $.
     $d x y z u v w g h i j F $.  $d z u v w g h i j A $.
-    tfrlemisucacc.1 $e |- A = { f | E. x e. On ( f Fn x /\
+    tfrlemisucaccv.1 $e |- A = { f | E. x e. On ( f Fn x /\
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
-    tfrlemisucacc.2 $e |- ( Fun F /\ A. x e. On A. f ( f Fn x -> f e. dom F ) ) $.
+    tfrlemisucaccv.2 $e |- ( Fun F /\ A. x e. On A. f ( f Fn x -> f e. dom F ) ) $.
     $( The recursion rule ` F ` has a value at each acceptable function.  Lemma
        for ~ tfrlemi1 .  (Contributed by Jim Kingdon, 7-Mar-2019.) $)
     tfrlemifvex $p |- ( g e. A -> ( F ` g ) e. _V ) $=
@@ -53695,7 +53695,7 @@ $)
     $( We can extend an acceptable function by one element to produce an
        acceptable function.  Lemma for ~ tfrlemi1 .  (Contributed by Jim
        Kingdon, 4-Mar-2019.) $)
-    tfrlemisucacc $p |- ( z e. On -> (
+    tfrlemisucaccv $p |- ( z e. On -> (
         ( g Fn z /\ g e. A /\ h = ( g u. { <. z , ( F ` g ) >. } ) ) ->
         h e. A ) ) $=
       ( vw cv con0 wcel wfn cfv wceq cres wa wrex cop csn cun wral tfrlemisucfn
@@ -53732,6 +53732,25 @@ $)
       RUUHUUIUYLUUNUUEUUGYJYKWGYCXOYLYPYMYQYNYRUUFUVDUVIAUVFMUUEYOUUPUVFQZUVDUV
       IWCUUFUYMUUQUVGUVCUVHUUPUVFUUJYSUVBBUUPUVFVNYTYIUUAUUBUVEGDABDEGHIUUCVFUU
       D $.
+  $}
+
+  ${
+    $d x y u v w f h i j F $.  $d z u v w h i j f A $.
+    $d x y u v w g h i j F $.  $d z u v w g h i j A $.
+    $d y z u v w f h i j F $.  $d y z u v w g h i j F $.
+    tfrlemisucacc.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    tfrlemisucacc.2 $e |- ( Fun F /\ A. x e. On A. f ( f Fn x -> f e. dom F ) ) $.
+    $( We can extend an acceptable function by one element to produce an
+       acceptable function.  Like ~ tfrlemisucaccv except that ` x ` and ` z `
+       need not be distinct.  (Contributed by Jim Kingdon, 29-Apr-2019.) $)
+    tfrlemisucacc $p |- ( z e. On -> (
+        ( g Fn z /\ g e. A /\ h = ( g u. { <. z , ( F ` g ) >. } ) ) ->
+        h e. A ) ) $=
+      ( vw tfrlem3fg wfun cv wfn wi wal con0 wral wa cdm wcel weq imbi1d albidv
+      fneq2 cbvralv anbi2i mpbi tfrlemisucaccv ) KBCDEFGHABKDEEHILHMZENZANZOZUL
+      HUAUBZPZEQZARSZTUKULKNZOZUOPZEQZKRSZTJURVCUKUQVBAKRAKUCZUPVAEVDUNUTUOUMUS
+      ULUFUDUEUGUHUIUJ $.
   $}
 
   ${
