@@ -54017,6 +54017,65 @@ $)
       XJXKHXTCYFXLUOVFXRYCABCDEFXNXOWQXPXQ $.
   $}
 
+  ${
+    $d G f w x y z $.
+    tfri1.1 $e |- F = recs ( G ) $.
+    tfri1.2 $e |- ( Fun G /\ A. x e. On A. f ( f Fn x -> f e. dom G ) ) $.
+    $( Principle of Transfinite Recursion, part 1 of 3.  Theorem 7.41(1) of
+       [TakeutiZaring] p. 47, with the additional condition that the recursion
+       rule ` F ` is defined for all ordinals.  We start with an arbitrary
+       class ` G ` , normally a function, and define a class ` A ` of all
+       "acceptable" functions.  The final function we're interested in is the
+       union ` F = recs ( G ) ` of them. ` F ` is then said to be defined by
+       transfinite recursion.  The purpose of the 3 parts of this theorem is to
+       demonstrate properties of ` F ` .  In this first part we show that ` F `
+       is a function whose domain is all ordinal numbers.  (Contributed by Jim
+       Kingdon, 4-May-2019.) $)
+    tfri1 $p |- F Fn On $=
+      ( vy vz vw con0 wfn crecs wfun cdm wceq cv cfv cres wral wa cab
+      wrex tfrlem7 tfrlem3fg tfrlemi14 df-fn mpbir2an fneq1i mpbir
+      eqid ) CJKDLZJKZULUKMUKNJOGHIPZGPZKHPZUMQUMUORDQOHUNSTGJUBIUAZI
+      DUPUJZUCAHUPBDGHAUPIBDUQUDFUEUKJUFUGJCUKEUHUI $.
+
+    $( Principle of Transfinite Recursion, part 2 of 3.  Theorem 7.41(2) of
+       [TakeutiZaring] p. 47, with the additional condition that the recursion
+       rule ` F ` is defined for all ordinals.  Here we show that the function
+       ` F ` has the property that for any function ` G ` whatsoever, the
+       "next" value of ` F ` is ` G ` recursively applied to all "previous"
+       values of ` F ` .  (Contributed by Jim Kingdon, 4-May-2019.) $)
+    tfri2 $p |- ( A e. On -> ( F ` A ) = ( G ` ( F |` A ) ) ) $=
+      ( con0 wcel cdm cfv cres wceq wfn tfri1 fndm ax-mp eleq2i tfr2a
+      sylbir ) BHIBDJZIBDKDBLEKMUAHBDHNUAHMACDEFGOHDPQRBDEFST $.
+  $}
+
+  ${
+    $d B x y $.  $d F x y $.  $d G f w x y z $.
+    tfri3.1 $e |- F = recs ( G ) $.
+    tfri3.2 $e |- ( Fun G /\ A. x e. On A. f ( f Fn x -> f e. dom G ) ) $.
+    $( Principle of Transfinite Recursion, part 3 of 3.  Theorem 7.41(3) of
+       [TakeutiZaring] p. 47, with the additional condition that the recursion
+       rule ` F ` is defined for all ordinals.  Finally, we show that ` F ` is
+       unique.  We do this by showing that any class ` B ` with the same
+       properties of ` F ` that we showed in parts 1 and 2 is identical to
+       ` F ` .  (Contributed by Jim Kingdon, 4-May-2019.) $)
+    tfri3 $p |- ( ( B Fn On /\
+             A. x e. On ( B ` x ) = ( G ` ( B |` x ) ) ) -> B = F ) $=
+      ( vy con0 wfn cv cfv cres wceq wral wa nfv wi fveq2 wb nfan rsp
+      nfra1 wcel nfim eqeq12d imbi2d r19.21v wss tfri1 fvreseq mpanl2
+      onss syl6bir sylan2 ancoms adantr tfri2 jctr jcab sylibr eqeq12
+      imp adantl mpbird exp43 com4t exp4a pm2.43d syl com3l imp3a a2d
+      syl6 syl5bi tfis2f com12 ralrimi eqfnfv mpan2 biimpar syldan )
+      BIJZAKZBLZBWDMZELZNZAIOZWEWDDLZNZAIOZBDNZWCWIPZWKAIWCWIAWCAQWHA
+      IUCUAZWDIUDZWNWKWNWKRZWNHKZBLZWRDLZNZRZAHWNXAAWOXAAQUEWDWRNZWKX
+      AWNXCWEWSWJWTWDWRBSWDWRDSUFUGXBHWDOWNXAHWDOZRWPWQWNXAHWDUHWPWNX
+      DWKWPWCWIXDWKRZWIWPWCXEWIWPWHRZWPWCXERZRWHAIUBXFWPXGXFWPWPWCXEW
+      PWCPZXDXFWPWKXHXDXFWPWKXHXDPZXFWPPZPWKWGDWDMZELZNZXIXMXJXHXDXMW
+      CWPXDXMRZWPWCWDIUIZXNWDUMWCXOPXDWFXKNZXMWCDIJZXOXPXDTACDEFGUJZH
+      IWDBDUKULWFXKESUNUOUPVCUQXJWKXMTZXIXFWPXSXFWPWHWJXLNZPZXSXFXFWP
+      XTRZPWPYARXFYBAWDCDEFGURUSWPWHXTUTVAWEWGWJXLVBVNVCVDVEVFVGVHVIV
+      JVKVLVMVOVPVQVRWCWMWLWCXQWMWLTXRAIBDVSVTWAWB $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
