@@ -53751,6 +53751,19 @@ $)
       fneq2 cbvralv anbi2i mpbi tfrlemisucaccv ) KBCDEFGHABKDEEHILHMZENZANZOZUL
       HUAUBZPZEQZARSZTUKULKNZOZUOPZEQZKRSZTJURVCUKUQVBAKRAKUCZUPVAEVDUNUTUOUMUS
       ULUFUDUEUGUHUIUJ $.
+
+    $( We can extend an acceptable function by one element to produce an
+       acceptable function.  (Contributed by Jim Kingdon, 3-May-2019.) $)
+    tfrlemisucaccun $p |- ( z e. On -> (
+        ( g Fn z /\ g e. A ) ->
+        ( g u. { <. z , ( F ` g ) >. } ) e. A ) ) $=
+      ( vh cv con0 wcel wfn wa wtru cvv vex sylancr adantl cfv cop csn cun wceq
+      wex tru tfrlemifvex opexg snexg syl w3a df-3an tfrlemisucacc syl5bir impl
+      unexg wb eleq1 mpbid a1d spcimedv mpi 19.9v sylib ex ) CKZLMZFKZVGNZVIDMZ
+      OZVIVGVIGUAZUBZUCZUDZDMZVHVLOZVQJUFZVQVRPVSUGVRVQPJVPQVLVPQMZVHVKVTVJVKVI
+      QMVOQMZVTFRVKVNQMZWAVKVGQMVMQMWBCRABDEFGHIUHVGVMQQUISVNQUJUKVIVOQQUQSTTVR
+      JKZVPUEZOZVQPWEWCDMZVQVHVLWDWFVLWDOVJVKWDULVHWFVJVKWDUMABCDEFJGHIUNUOUPWD
+      WFVQURVRWCVPDUSTUTVAVBVCVQJVDVEVF $.
   $}
 
   ${
