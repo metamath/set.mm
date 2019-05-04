@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Apr-2019
+$( iset.mm - Version of 4-May-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -53984,11 +53984,37 @@ $)
       ex ) DKZAKZLZBKZUOMUOURNEMOZBUPPZQZDRZUOHKZLZUSBVCPZQZDRZAHUPVC
       OZVAVFDVHUQVDUTVEUPVCUOSUSBUPVCUCUDUEUPUATVGHUPPVBABHCIKZVCLVIC
       TJKVIVCVIEMUBUFUGOUHIRHUPUIJUJZDIJEFGVJUKULUNUM $.
+  $}
 
+  ${
+    $d x y z u v w f g h i j F $.  $d x z u v w g h i j f A $.
+    tfrlemi14.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    tfrlemi14.2 $e |- ( Fun F /\ A. x e. On A. f ( f Fn x -> f e. dom F ) ) $.
     $( The domain of ` recs ` is all ordinals (lemma for transfinite
-       recursion).  (Contributed by Jim Kingdon, 22-Apr-2019.) $)
+       recursion).  (Contributed by Jim Kingdon, 4-May-2019.) $)
     tfrlemi14 $p |- dom recs ( F ) = On $=
-      ? $.
+      ( vg vz cdm con0 cv wcel wrex wa cfv wceq wex cvv sylib word tfrlem8 mpan
+      crecs ordelon cuni wfn cres wral tfrlemi1 ancli pm4.24 anbi1i anass bitri
+      exbii anbi2i eleq1 fneq2 raleq anbi12d anbi2d exbidv spimev df-rex sylibr
+      biimprd syl rexbii rexcom r19.42v tfrlem3fg abeq2i bitr4i tru cop csn cun
+      rexv wtru tfrlemisucaccun imp wi wfun simpri rspec 19.21bi simpli funfvex
+      wal dmsnopg ssnid eleq2 mpbiri elun2 dmun syl6eleqr 3syl adantr wb eleq2d
+      dmeq adantl mpbird adantlrr a1d rspcimedv mpi exlimddv dmuni eleq2i eliun
+      ciun recsfval dmeqi impbii eqriv ) AEUDZJZKALZXSMZXTKMZXSUAYAYBABCDEFUBXS
+      XTUEUCYBXTCUFZJZXSYBXTHLZJZMZHCNZXTYDMZYBDLZXTUGZYJCMZOZYHDYBYKYJILZUGZBL
+      ZYJPYJYPUHEPQZBYNUIZOZOZIKNZDRZYMDRYBUUADSNZUUBYBYTDSNZIKNZUUCYBYTDRZIKNZ
+      UUEYBYNKMZUUFOZIRZUUGYBYBYKYKYQBXTUIZOZOZDRZOZUUJYBYBUULDRZOUUOYBUUPABCDE
+      FGUJUKUUPUUNYBUULUUMDUULYKYKOZUUKOUUMYKUUQUUKYKULUMYKYKUUKUNUOUPUQTUUOUUI
+      IAYNXTQZUUIUUOUURUUHYBUUFUUNYNXTKURUURYTUUMDUURYSUULYKUURYOYKYRUUKYNXTYJU
+      SYQBYNXTUTVAVBVCVAVGVDVHUUFIKVEVFUUDUUFIKYTDVSVIVFYTIDKSVJTUUADVSTUUAYMDU
+      UAYKYSIKNZOYMYKYSIKVKYLUUSYKUUSDCABICDDEFVLVMUQVNUPTYBYMOZVTYHVOUUTYGVTHY
+      JXTYJEPZVPVQZVRZCYBYMUVCCMABACDDEFGWAWBUUTYEUVCQZOYGVTYBYKUVDYGYLYBYKOZUV
+      DOYGXTUVCJZMZUVEUVGUVDUVEUVASMZUVBJZXTVQZQZUVGUVEYJEJMZUVHYBYKUVLYBYKUVLW
+      CZDUVMDWJZAKEWDZUVNAKUIZGWEWFWGWBUVOUVLUVHUVOUVPGWHYJEWIUCVHXTUVASWKUVKXT
+      UVIMZUVGUVKUVQXTUVJMAWLUVIUVJXTWMWNUVQXTYJJZUVIVRUVFXTUVIUVRWOYJUVBWPWQVH
+      WRWSUVDYGUVGWTUVEUVDYFUVFXTYEUVCXBXAXCXDXEXFXGXHXIYIXTHCYFXMZMYHYDUVSXTHC
+      XJXKHXTCYFXLUOVFXRYCABCDEFXNXOWQXPXQ $.
   $}
 
 $(
