@@ -13443,6 +13443,7 @@ New usage of "ajfval" is discouraged (2 uses).
 New usage of "ajmoi" is discouraged (1 uses).
 New usage of "ajval" is discouraged (0 uses).
 New usage of "alephf1ALT" is discouraged (0 uses).
+New usage of "alexeq" is discouraged (0 uses).
 New usage of "alrim3con13v" is discouraged (1 uses).
 New usage of "an43OLD" is discouraged (0 uses).
 New usage of "anabss7p1" is discouraged (0 uses).
@@ -16922,6 +16923,7 @@ New usage of "pl42lem2N" is discouraged (1 uses).
 New usage of "pl42lem3N" is discouraged (1 uses).
 New usage of "pl42lem4N" is discouraged (1 uses).
 New usage of "plpv" is discouraged (1 uses).
+New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
 New usage of "pm110.643ALT" is discouraged (0 uses).
 New usage of "pm2.43bgbi" is discouraged (0 uses).
@@ -17751,13 +17753,19 @@ Proof modification of "binom2aiOLD" is discouraged (171 steps).
 Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "bj-19.21t" is discouraged (39 steps).
+Proof modification of "bj-denotes" is discouraged (69 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
+Proof modification of "bj-elisset" is discouraged (38 steps).
 Proof modification of "bj-equsal" is discouraged (31 steps).
 Proof modification of "bj-godellob" is discouraged (19 steps).
+Proof modification of "bj-inrab2" is discouraged (48 steps).
+Proof modification of "bj-issetW" is discouraged (46 steps).
 Proof modification of "bj-rabtrALT" is discouraged (36 steps).
 Proof modification of "bj-rabtrAUTO" is discouraged (33 steps).
 Proof modification of "bj-sbceqgALT" is discouraged (143 steps).
 Proof modification of "bj-stdpc5" is discouraged (20 steps).
+Proof modification of "bj-vexW" is discouraged (29 steps).
+Proof modification of "bj-vtoclgf" is discouraged (29 steps).
 Proof modification of "bj-xpima1snALT" is discouraged (34 steps).
 Proof modification of "bj-xpima2sn" is discouraged (23 steps).
 Proof modification of "bnj142OLD" is discouraged (51 steps).
