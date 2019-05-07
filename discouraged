@@ -4646,6 +4646,7 @@
 "df-topspOLD" is used by "eltopspOLD".
 "df-topspOLD" is used by "istpsOLD".
 "df-topspOLD" is used by "tpsexOLD".
+"df-tru" is used by "tru".
 "df-unop" is used by "elunop".
 "df-va" is used by "0vfval".
 "df-va" is used by "vafval".
@@ -5719,7 +5720,6 @@
 "elprnq" is used by "reclem3pr".
 "elprnq" is used by "reclem4pr".
 "elpwgded" is used by "sspwimp".
-"elpwgded" is used by "sspwimpALT".
 "elpwgdedVD" is used by "sspwimpVD".
 "elreal" is used by "axaddrcl".
 "elreal" is used by "axmulrcl".
@@ -12807,8 +12807,6 @@
 "unopnorm" is used by "nmopun".
 "uun0.1" is used by "sspwimp".
 "uun0.1" is used by "un0.1".
-"uunT1" is used by "sspwimpALT".
-"uunT1" is used by "uunT21".
 "uzindOLD" is used by "uzind3OLD".
 "vacn" is used by "dipcn".
 "vacn" is used by "hlimadd".
@@ -14686,6 +14684,7 @@ New usage of "df-ssp" is discouraged (1 uses).
 New usage of "df-st" is discouraged (1 uses).
 New usage of "df-subgo" is discouraged (1 uses).
 New usage of "df-topspOLD" is discouraged (3 uses).
+New usage of "df-tru" is discouraged (1 uses).
 New usage of "df-unop" is discouraged (1 uses).
 New usage of "df-va" is discouraged (3 uses).
 New usage of "df-vc" is discouraged (3 uses).
@@ -15120,7 +15119,7 @@ New usage of "elpjidm" is discouraged (2 uses).
 New usage of "elpjrn" is discouraged (0 uses).
 New usage of "elpqn" is discouraged (24 uses).
 New usage of "elprnq" is discouraged (22 uses).
-New usage of "elpwgded" is discouraged (2 uses).
+New usage of "elpwgded" is discouraged (1 uses).
 New usage of "elpwgdedVD" is discouraged (1 uses).
 New usage of "elreal" is discouraged (7 uses).
 New usage of "elreal2" is discouraged (3 uses).
@@ -17350,7 +17349,6 @@ New usage of "ssps" is discouraged (1 uses).
 New usage of "sspsval" is discouraged (4 uses).
 New usage of "sspval" is discouraged (1 uses).
 New usage of "sspwimp" is discouraged (0 uses).
-New usage of "sspwimpALT" is discouraged (0 uses).
 New usage of "sspwimpVD" is discouraged (0 uses).
 New usage of "sspwimpcf" is discouraged (0 uses).
 New usage of "sspwimpcfVD" is discouraged (0 uses).
@@ -17498,7 +17496,6 @@ New usage of "uun2131p1" is discouraged (0 uses).
 New usage of "uun2221" is discouraged (0 uses).
 New usage of "uun2221p1" is discouraged (0 uses).
 New usage of "uun2221p2" is discouraged (0 uses).
-New usage of "uunT1" is discouraged (2 uses).
 New usage of "uunT11" is discouraged (0 uses).
 New usage of "uunT11p1" is discouraged (0 uses).
 New usage of "uunT11p2" is discouraged (0 uses).
@@ -17509,7 +17506,6 @@ New usage of "uunT12p3" is discouraged (0 uses).
 New usage of "uunT12p4" is discouraged (0 uses).
 New usage of "uunT12p5" is discouraged (0 uses).
 New usage of "uunT1p1" is discouraged (0 uses).
-New usage of "uunT21" is discouraged (0 uses).
 New usage of "uunTT1" is discouraged (0 uses).
 New usage of "uunTT1p1" is discouraged (0 uses).
 New usage of "uunTT1p2" is discouraged (0 uses).
@@ -18443,7 +18439,6 @@ Proof modification of "sps-o" is discouraged (10 steps).
 Proof modification of "spsbeOLD" is discouraged (35 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
 Proof modification of "sspwimp" is discouraged (87 steps).
-Proof modification of "sspwimpALT" is discouraged (74 steps).
 Proof modification of "sspwimpVD" is discouraged (87 steps).
 Proof modification of "sspwimpcf" is discouraged (84 steps).
 Proof modification of "sspwimpcfVD" is discouraged (84 steps).
@@ -18527,7 +18522,6 @@ Proof modification of "uun2131p1" is discouraged (21 steps).
 Proof modification of "uun2221" is discouraged (59 steps).
 Proof modification of "uun2221p1" is discouraged (75 steps).
 Proof modification of "uun2221p2" is discouraged (75 steps).
-Proof modification of "uunT1" is discouraged (34 steps).
 Proof modification of "uunT11" is discouraged (25 steps).
 Proof modification of "uunT11p1" is discouraged (36 steps).
 Proof modification of "uunT11p2" is discouraged (36 steps).
@@ -18538,7 +18532,6 @@ Proof modification of "uunT12p3" is discouraged (42 steps).
 Proof modification of "uunT12p4" is discouraged (33 steps).
 Proof modification of "uunT12p5" is discouraged (33 steps).
 Proof modification of "uunT1p1" is discouraged (18 steps).
-Proof modification of "uunT21" is discouraged (6 steps).
 Proof modification of "uunTT1" is discouraged (26 steps).
 Proof modification of "uunTT1p1" is discouraged (37 steps).
 Proof modification of "uunTT1p2" is discouraged (37 steps).
