@@ -4647,6 +4647,7 @@
 "df-topspOLD" is used by "eltopspOLD".
 "df-topspOLD" is used by "istpsOLD".
 "df-topspOLD" is used by "tpsexOLD".
+"df-tru" is used by "tru".
 "df-unop" is used by "elunop".
 "df-va" is used by "0vfval".
 "df-va" is used by "vafval".
@@ -14687,6 +14688,7 @@ New usage of "df-ssp" is discouraged (1 uses).
 New usage of "df-st" is discouraged (1 uses).
 New usage of "df-subgo" is discouraged (1 uses).
 New usage of "df-topspOLD" is discouraged (3 uses).
+New usage of "df-tru" is discouraged (1 uses).
 New usage of "df-unop" is discouraged (1 uses).
 New usage of "df-va" is discouraged (3 uses).
 New usage of "df-vc" is discouraged (3 uses).
@@ -18528,7 +18530,7 @@ Proof modification of "uun2131p1" is discouraged (21 steps).
 Proof modification of "uun2221" is discouraged (59 steps).
 Proof modification of "uun2221p1" is discouraged (75 steps).
 Proof modification of "uun2221p2" is discouraged (75 steps).
-Proof modification of "uunT1" is discouraged (34 steps).
+Proof modification of "uunT1" is discouraged (38 steps).
 Proof modification of "uunT11" is discouraged (25 steps).
 Proof modification of "uunT11p1" is discouraged (36 steps).
 Proof modification of "uunT11p2" is discouraged (36 steps).
