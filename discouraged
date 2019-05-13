@@ -129,9 +129,9 @@
 "0vfval" is used by "nvrinv".
 "0vfval" is used by "nvsz".
 "0vfval" is used by "nvzcl".
-"19.41rg" is used by "a6e2nd".
-"19.41rg" is used by "a6e2ndALT".
-"19.41rg" is used by "a6e2ndVD".
+"19.41rg" is used by "ax6e2nd".
+"19.41rg" is used by "ax6e2ndALT".
+"19.41rg" is used by "ax6e2ndVD".
 "1idpr" is used by "1idsr".
 "1idpr" is used by "m1m1sr".
 "1idsr" is used by "ax1rid".
@@ -441,18 +441,6 @@
 "5oalem5" is used by "5oalem6".
 "5oalem6" is used by "5oalem7".
 "5oalem7" is used by "5oai".
-"a16g-o" is used by "ax12inda2".
-"a6e2eq" is used by "a6e2ndeq".
-"a6e2eq" is used by "a6e2ndeqALT".
-"a6e2eq" is used by "a6e2ndeqVD".
-"a6e2nd" is used by "a6e2ndeq".
-"a6e2nd" is used by "a6e2ndeqALT".
-"a6e2nd" is used by "a6e2ndeqVD".
-"a6e2ndeq" is used by "2sb5nd".
-"a6e2ndeq" is used by "2sb5ndALT".
-"a6e2ndeq" is used by "2sb5ndVD".
-"a6e2ndeq" is used by "2uasbanh".
-"a6e2ndeq" is used by "2uasbanhVD".
 "ablo32" is used by "ablo4".
 "ablo32" is used by "ip0i".
 "ablo32" is used by "nvadd32".
@@ -795,7 +783,7 @@
 "aecoms-o" is used by "dral1-o".
 "aecoms-o" is used by "dvelimf-o".
 "aecoms-o" is used by "hbae-o".
-"aev-o" is used by "a16g-o".
+"aev-o" is used by "ax16g-o".
 "ajfuni" is used by "ajfun".
 "ajfval" is used by "ajfuni".
 "ajfval" is used by "ajval".
@@ -947,7 +935,7 @@
 "ax-c14" is used by "ax12el".
 "ax-c14" is used by "ax5el".
 "ax-c15" is used by "ax12".
-"ax-c16" is used by "a16g-o".
+"ax-c16" is used by "ax16g-o".
 "ax-c16" is used by "ax5el".
 "ax-c16" is used by "ax5eq".
 "ax-c16" is used by "axc11n-16".
@@ -1345,15 +1333,27 @@
 "ax12indalem" is used by "ax12inda2".
 "ax12indn" is used by "ax12indi".
 "ax12v2-o" is used by "ax12a2-o".
+"ax16g-o" is used by "ax12inda2".
 "ax5el" is used by "dveel2ALT".
 "ax5eq" is used by "dveeq1-o16".
+"ax6e2eq" is used by "ax6e2ndeq".
+"ax6e2eq" is used by "ax6e2ndeqALT".
+"ax6e2eq" is used by "ax6e2ndeqVD".
+"ax6e2nd" is used by "ax6e2ndeq".
+"ax6e2nd" is used by "ax6e2ndeqALT".
+"ax6e2nd" is used by "ax6e2ndeqVD".
+"ax6e2ndeq" is used by "2sb5nd".
+"ax6e2ndeq" is used by "2sb5ndALT".
+"ax6e2ndeq" is used by "2sb5ndVD".
+"ax6e2ndeq" is used by "2uasbanh".
+"ax6e2ndeq" is used by "2uasbanhVD".
 "ax6fromc10" is used by "equidqe".
 "axacnd" is used by "axacprim".
 "axacnd" is used by "zfcndac".
 "axacndlem4" is used by "axacndlem5".
 "axacndlem5" is used by "axacnd".
 "axaddf" is used by "axaddcl".
-"axc16ALT2" is used by "a16gALT".
+"axc16ALT2" is used by "ax16gALT".
 "axc4i-o" is used by "aev-o".
 "axc4i-o" is used by "ax12inda2ALT".
 "axc4i-o" is used by "ax12indalem".
@@ -1370,7 +1370,7 @@
 "axc711toc7" is used by "axc711to11".
 "axc9lem1" is used by "axc9lem2".
 "axc9lem1" is used by "nfeqf".
-"axc9lem2" is used by "a6e".
+"axc9lem2" is used by "ax6e".
 "axc9lem2" is used by "axc9lem3".
 "axc9lem2" is used by "dveeq2".
 "axc9lem3" is used by "dveeq2".
@@ -5061,10 +5061,10 @@
 "docavalN" is used by "diaocN".
 "docavalN" is used by "docaclN".
 "dochfN" is used by "dochpolN".
-"dral1-o" is used by "a16g-o".
 "dral1-o" is used by "ax12".
 "dral1-o" is used by "ax12inda2ALT".
 "dral1-o" is used by "ax12indalem".
+"dral1-o" is used by "ax16g-o".
 "dral2-o" is used by "ax12el".
 "dral2-o" is used by "ax12eq".
 "dral2-o" is used by "ax12inda2ALT".
@@ -5089,11 +5089,11 @@
 "e00" is used by "3impexpVD".
 "e00" is used by "3impexpbicomVD".
 "e00" is used by "onfrALTlem5VD".
-"e000" is used by "a6e2ndeqVD".
+"e000" is used by "ax6e2ndeqVD".
 "e01" is used by "2sb5ndVD".
 "e01" is used by "3impexpVD".
-"e01" is used by "a6e2eqVD".
-"e01" is used by "a6e2ndVD".
+"e01" is used by "ax6e2eqVD".
+"e01" is used by "ax6e2ndVD".
 "e01" is used by "e01an".
 "e01" is used by "pwtrVD".
 "e01" is used by "pwtrrVD".
@@ -5114,8 +5114,8 @@
 "e0_" is used by "19.41rgVD".
 "e0_" is used by "2sb5ndVD".
 "e0_" is used by "3impexpbicomiVD".
-"e0_" is used by "a6e2ndVD".
 "e0_" is used by "ancomsimpVD".
+"e0_" is used by "ax6e2ndVD".
 "e0_" is used by "ee33VD".
 "e0_" is used by "equncomiVD".
 "e0_" is used by "idiVD".
@@ -5136,8 +5136,8 @@
 "e10" is used by "3impexpVD".
 "e10" is used by "3impexpbicomVD".
 "e10" is used by "3orbi123VD".
-"e10" is used by "a6e2eqVD".
-"e10" is used by "a6e2ndeqVD".
+"e10" is used by "ax6e2eqVD".
+"e10" is used by "ax6e2ndeqVD".
 "e10" is used by "con5VD".
 "e10" is used by "csbfv12gALTVD".
 "e10" is used by "csbima12gALTVD".
@@ -5166,7 +5166,7 @@
 "e11" is used by "2uasbanhVD".
 "e11" is used by "3orbi123VD".
 "e11" is used by "3ornot23VD".
-"e11" is used by "a6e2eqVD".
+"e11" is used by "ax6e2eqVD".
 "e11" is used by "csbeq2gVD".
 "e11" is used by "csbfv12gALTVD".
 "e11" is used by "csbima12gALTVD".
@@ -5210,8 +5210,8 @@
 "e12" is used by "19.21a3con13vVD".
 "e12" is used by "19.41rgVD".
 "e12" is used by "3ornot23VD".
-"e12" is used by "a6e2eqVD".
-"e12" is used by "a6e2ndeqVD".
+"e12" is used by "ax6e2eqVD".
+"e12" is used by "ax6e2ndeqVD".
 "e12" is used by "con3ALTVD".
 "e12" is used by "e12an".
 "e12" is used by "elex22VD".
@@ -5252,9 +5252,9 @@
 "e1_" is used by "3impexpbicomVD".
 "e1_" is used by "3orbi123VD".
 "e1_" is used by "3ornot23VD".
-"e1_" is used by "a6e2eqVD".
-"e1_" is used by "a6e2ndVD".
-"e1_" is used by "a6e2ndeqVD".
+"e1_" is used by "ax6e2eqVD".
+"e1_" is used by "ax6e2ndVD".
+"e1_" is used by "ax6e2ndeqVD".
 "e1_" is used by "con3ALTVD".
 "e1_" is used by "con5VD".
 "e1_" is used by "csbeq2gVD".
@@ -5311,8 +5311,8 @@
 "e2" is used by "19.21a3con13vVD".
 "e2" is used by "19.41rgVD".
 "e2" is used by "3ornot23VD".
-"e2" is used by "a6e2eqVD".
-"e2" is used by "a6e2ndeqVD".
+"e2" is used by "ax6e2eqVD".
+"e2" is used by "ax6e2ndeqVD".
 "e2" is used by "con3ALTVD".
 "e2" is used by "e2bi".
 "e2" is used by "e2bir".
@@ -5338,7 +5338,7 @@
 "e20" is used by "e20an".
 "e20" is used by "onfrALTlem3VD".
 "e20" is used by "tratrbVD".
-"e21" is used by "a6e2eqVD".
+"e21" is used by "ax6e2eqVD".
 "e21" is used by "e21an".
 "e21" is used by "en3lplem1VD".
 "e21" is used by "exbiriVD".
@@ -5350,8 +5350,8 @@
 "e21" is used by "vk15.4jVD".
 "e211" is used by "e201".
 "e211" is used by "e210".
-"e22" is used by "a6e2eqVD".
-"e22" is used by "a6e2ndeqVD".
+"e22" is used by "ax6e2eqVD".
+"e22" is used by "ax6e2ndeqVD".
 "e22" is used by "e02".
 "e22" is used by "e12".
 "e22" is used by "e20".
@@ -5450,7 +5450,7 @@
 "ee21" is used by "ee21an".
 "ee21" is used by "omeulem2".
 "ee21" is used by "sbcim2g".
-"ee22" is used by "a6e2ndeq".
+"ee22" is used by "ax6e2ndeq".
 "ee22" is used by "ee21".
 "ee22" is used by "ee22an".
 "ee22" is used by "ee33".
@@ -5863,8 +5863,8 @@
 "funadj" is used by "adjeq".
 "funadj" is used by "funcnvadj".
 "funcnvadj" is used by "adj1o".
-"gen11" is used by "a6e2eqVD".
-"gen11" is used by "a6e2ndeqVD".
+"gen11" is used by "ax6e2eqVD".
+"gen11" is used by "ax6e2ndeqVD".
 "gen11" is used by "csbfv12gALTVD".
 "gen11" is used by "csbingVD".
 "gen11" is used by "csbrngVD".
@@ -8011,9 +8011,9 @@
 "idn1" is used by "3impexpbicomVD".
 "idn1" is used by "3orbi123VD".
 "idn1" is used by "3ornot23VD".
-"idn1" is used by "a6e2eqVD".
-"idn1" is used by "a6e2ndVD".
-"idn1" is used by "a6e2ndeqVD".
+"idn1" is used by "ax6e2eqVD".
+"idn1" is used by "ax6e2ndVD".
+"idn1" is used by "ax6e2ndeqVD".
 "idn1" is used by "con3ALTVD".
 "idn1" is used by "con5VD".
 "idn1" is used by "csbeq2gVD".
@@ -8081,8 +8081,8 @@
 "idn2" is used by "19.21a3con13vVD".
 "idn2" is used by "19.41rgVD".
 "idn2" is used by "3ornot23VD".
-"idn2" is used by "a6e2eqVD".
-"idn2" is used by "a6e2ndeqVD".
+"idn2" is used by "ax6e2eqVD".
+"idn2" is used by "ax6e2ndeqVD".
 "idn2" is used by "con3ALTVD".
 "idn2" is used by "elex22VD".
 "idn2" is used by "elex2VD".
@@ -8279,9 +8279,9 @@
 "in1" is used by "3impexpbicomVD".
 "in1" is used by "3orbi123VD".
 "in1" is used by "3ornot23VD".
-"in1" is used by "a6e2eqVD".
-"in1" is used by "a6e2ndVD".
-"in1" is used by "a6e2ndeqVD".
+"in1" is used by "ax6e2eqVD".
+"in1" is used by "ax6e2ndVD".
+"in1" is used by "ax6e2ndeqVD".
 "in1" is used by "con3ALTVD".
 "in1" is used by "con5VD".
 "in1" is used by "csbeq2gVD".
@@ -8361,8 +8361,8 @@
 "in2" is used by "19.21a3con13vVD".
 "in2" is used by "19.41rgVD".
 "in2" is used by "3ornot23VD".
-"in2" is used by "a6e2eqVD".
-"in2" is used by "a6e2ndeqVD".
+"in2" is used by "ax6e2eqVD".
+"in2" is used by "ax6e2ndeqVD".
 "in2" is used by "con3ALTVD".
 "in2" is used by "e223".
 "in2" is used by "elex22VD".
@@ -13352,18 +13352,7 @@ New usage of "5oalem4" is discouraged (1 uses).
 New usage of "5oalem5" is discouraged (1 uses).
 New usage of "5oalem6" is discouraged (1 uses).
 New usage of "5oalem7" is discouraged (1 uses).
-New usage of "a16g-o" is discouraged (1 uses).
-New usage of "a16gALT" is discouraged (0 uses).
-New usage of "a16nfALT" is discouraged (0 uses).
 New usage of "a1iiALT" is discouraged (0 uses).
-New usage of "a6e2eq" is discouraged (3 uses).
-New usage of "a6e2eqVD" is discouraged (0 uses).
-New usage of "a6e2nd" is discouraged (3 uses).
-New usage of "a6e2ndALT" is discouraged (0 uses).
-New usage of "a6e2ndVD" is discouraged (0 uses).
-New usage of "a6e2ndeq" is discouraged (5 uses).
-New usage of "a6e2ndeqALT" is discouraged (0 uses).
-New usage of "a6e2ndeqVD" is discouraged (0 uses).
 New usage of "ablo32" is discouraged (5 uses).
 New usage of "ablo4" is discouraged (5 uses).
 New usage of "ablocom" is discouraged (9 uses).
@@ -13562,6 +13551,9 @@ New usage of "ax12indn" is discouraged (1 uses).
 New usage of "ax12v2-o" is discouraged (1 uses).
 New usage of "ax12vALT" is discouraged (0 uses).
 New usage of "ax13fromc9" is discouraged (0 uses).
+New usage of "ax16g-o" is discouraged (1 uses).
+New usage of "ax16gALT" is discouraged (0 uses).
+New usage of "ax16nfALT" is discouraged (0 uses).
 New usage of "ax1cn" is discouraged (0 uses).
 New usage of "ax1ne0" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
@@ -13572,6 +13564,14 @@ New usage of "ax52" is discouraged (0 uses).
 New usage of "ax5ALT" is discouraged (0 uses).
 New usage of "ax5el" is discouraged (1 uses).
 New usage of "ax5eq" is discouraged (1 uses).
+New usage of "ax6e2eq" is discouraged (3 uses).
+New usage of "ax6e2eqVD" is discouraged (0 uses).
+New usage of "ax6e2nd" is discouraged (3 uses).
+New usage of "ax6e2ndALT" is discouraged (0 uses).
+New usage of "ax6e2ndVD" is discouraged (0 uses).
+New usage of "ax6e2ndeq" is discouraged (5 uses).
+New usage of "ax6e2ndeqALT" is discouraged (0 uses).
+New usage of "ax6e2ndeqVD" is discouraged (0 uses).
 New usage of "ax6fromc10" is discouraged (1 uses).
 New usage of "ax6vsep" is discouraged (0 uses).
 New usage of "axac2" is discouraged (0 uses).
@@ -17671,18 +17671,8 @@ Proof modification of "3orbi123" is discouraged (29 steps).
 Proof modification of "3orbi123VD" is discouraged (134 steps).
 Proof modification of "3ornot23" is discouraged (28 steps).
 Proof modification of "3ornot23VD" is discouraged (74 steps).
-Proof modification of "a16g-o" is discouraged (40 steps).
-Proof modification of "a16gALT" is discouraged (40 steps).
 Proof modification of "a1ii" is discouraged (9 steps).
 Proof modification of "a1iiALT" is discouraged (8 steps).
-Proof modification of "a6e2eq" is discouraged (111 steps).
-Proof modification of "a6e2eqVD" is discouraged (269 steps).
-Proof modification of "a6e2nd" is discouraged (199 steps).
-Proof modification of "a6e2ndALT" is discouraged (205 steps).
-Proof modification of "a6e2ndVD" is discouraged (199 steps).
-Proof modification of "a6e2ndeq" is discouraged (175 steps).
-Proof modification of "a6e2ndeqALT" is discouraged (342 steps).
-Proof modification of "a6e2ndeqVD" is discouraged (340 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
@@ -17712,12 +17702,22 @@ Proof modification of "ax12indn" is discouraged (70 steps).
 Proof modification of "ax12v2-o" is discouraged (107 steps).
 Proof modification of "ax12vALT" is discouraged (81 steps).
 Proof modification of "ax13fromc9" is discouraged (72 steps).
+Proof modification of "ax16g-o" is discouraged (40 steps).
+Proof modification of "ax16gALT" is discouraged (40 steps).
 Proof modification of "ax2" is discouraged (46 steps).
 Proof modification of "ax3" is discouraged (24 steps).
 Proof modification of "ax4" is discouraged (45 steps).
 Proof modification of "ax52" is discouraged (14 steps).
 Proof modification of "ax5el" is discouraged (30 steps).
 Proof modification of "ax5eq" is discouraged (30 steps).
+Proof modification of "ax6e2eq" is discouraged (111 steps).
+Proof modification of "ax6e2eqVD" is discouraged (269 steps).
+Proof modification of "ax6e2nd" is discouraged (199 steps).
+Proof modification of "ax6e2ndALT" is discouraged (205 steps).
+Proof modification of "ax6e2ndVD" is discouraged (199 steps).
+Proof modification of "ax6e2ndeq" is discouraged (175 steps).
+Proof modification of "ax6e2ndeqALT" is discouraged (342 steps).
+Proof modification of "ax6e2ndeqVD" is discouraged (340 steps).
 Proof modification of "ax6fromc10" is discouraged (24 steps).
 Proof modification of "ax6vsep" is discouraged (73 steps).
 Proof modification of "axac" is discouraged (55 steps).
