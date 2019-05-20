@@ -53891,6 +53891,52 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+            Recursive definition generator
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Define a constant for the recursive definition generator. $)
+  $c rec $.
+
+  $( Extend class notation with the recursive definition generator, with
+     characteristic function ` F ` and initial value ` I ` . $)
+  crdg $a class rec ( F , I ) $.
+
+  ${
+    $d x y f g F $.  $d x y f g I $.
+    $( Define a recursive definition generator on ` On ` (the class of ordinal
+       numbers) with characteristic function ` F ` and initial value ` I ` .
+       This rather amazing operation allows us to define, with compact direct
+       definitions, functions that are usually defined in textbooks only with
+       indirect self-referencing recursive definitions.  A recursive definition
+       requires advanced metalogic to justify - in particular, eliminating a
+       recursive definition is very difficult and often not even shown in
+       textbooks.  On the other hand, the elimination of a direct definition is
+       a matter of simple mechanical substitution.  The price paid is the
+       daunting complexity of our ` rec ` operation (especially when ~ df-recs
+       that it is built on is also eliminated).  But once we get past this
+       hurdle, definitions that would otherwise be recursive become relatively
+       simple.  In classical logic it would be easier to divide this definition
+       into cases based on whether the domain of ` g ` is zero, a successor, or
+       a limit ordinal.  Cases do not (in general) work that way in
+       intuitionistic logic, so instead we choose a definition which takes the
+       union of all the results of the characteristic function for ordinals in
+       the domain of ` g ` .  This means that this definition has the expected
+       properties for increasing and continuous ordinal functions, which
+       include ordinal addition and multiplication.
+
+       _Note:  We introduce_ ` rec ` _with the philosophical goal of being_
+       _able to eliminate all definitions with direct mechanical substitution_
+       _and to verify easily the soundness of definitions.  Metamath itself_
+       _has no built-in technical limitation that prevents multiple-part_
+       _recursive definitions in the traditional textbook style_.  (Contributed
+       by Jim Kingdon, 19-May-2019.) $)
+    df-irdg $a |- rec ( F , I ) = recs ( ( g e. _V |-> ( I u.
+      U_ x e. dom g ( F ` ( g ` x ) ) ) ) ) $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -54620,6 +54666,10 @@ htmldef "Smo" as
 htmldef "recs" as "recs";
   althtmldef "recs" as "recs";
   latexdef "recs" as "\mathrm{recs}";
+htmldef "rec" as
+    "<IMG SRC='_rec.gif' WIDTH=21 HEIGHT=19 ALT=' rec' TITLE='rec'>";
+  althtmldef "rec" as 'rec';
+  latexdef "rec" as "{\rm rec}";
 
 htmldef "Fun" as
     "<IMG SRC='_fun.gif' WIDTH=25 HEIGHT=19 ALT=' Fun' TITLE='Fun'> ";
