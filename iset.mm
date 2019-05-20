@@ -53936,6 +53936,17 @@ $)
       U_ x e. dom g ( F ` ( g ` x ) ) ) ) ) $.
   $}
 
+  ${
+    $d x y z f g u v w F $.  $d x y z f g u v w A $.
+    $( The recursive definition generator is a function.  (Contributed by Mario
+       Carneiro, 16-Nov-2014.) $)
+    rdgfun $p |- Fun rec ( F , A ) $=
+      ( vg vx vy vz vf crdg wfun cvv cdm cfv ciun cun cmpt crecs cres
+      cv wfn wceq wral wa con0 wrex eqid tfrlem7 df-irdg funeqi mpbir
+      cab ) BAHZICJADCRZKDRULLBLMNOZPZIEFGRZERZSFRZUOLUOUQQUMLTFUPUAU
+      BEUCUDGUJZGUMURUEUFUKUNDCBAUGUHUI $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
