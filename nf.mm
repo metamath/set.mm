@@ -11485,7 +11485,7 @@ $(
 
   Here we extend the language of wffs with predicate calculus, which allows us
   to talk about individual objects in a domain of discussion (which for us will
-  be the universe of all sets, so we call them "set variables") and make
+  be the universe of all sets, so we call them "setvar variables") and make
   true/false statements about predicates, which are relationships between
   objects, such as whether or not two objects are equal.  In addition, we
   introduce universal quantification ("for all") in order to make statements
@@ -11493,7 +11493,7 @@ $(
   Later we introduce existential quantification ("there exists", ~ df-ex )
   which is defined in terms of universal quantification.
 
-  Our axioms are really axiom _schemes_, and our wff and set variables are
+  Our axioms are really axiom _schemes_, and our wff and setvar variables are
   metavariables ranging over expressions in an underlying "object language."
   This is explained here:  ~ http://us.metamath.org/mpeuni/mmset.html#axiomnote
 
@@ -11505,7 +11505,7 @@ $(
   (Lemma 9, p. 87, which we prove as theorem ~ spw below).
 
   Theorem ~ spw can be used to prove any instance of ~ sp having no wff
-  metavariables and mutually distinct set variables.  However, it seems that
+  metavariables and mutually distinct setvar variables.  However, it seems that
   ~ sp in its general form cannot be derived from only Tarski's schemes.  We
   do not include B5 i.e.  ~ sp as part of what we call "Tarski's system"
   because we want it to be the smallest set of axioms that is logically
@@ -11530,9 +11530,9 @@ $(
   However, in our system that derives schemes (rather than object language
   theorems) from other schemes, Tarski's S2 is not complete.  For example, we
   cannot derive scheme ~ sp , even though (using ~ spw ) we can derive all
-  instances of it that don't involve wff metavariables or bundled set
-  metavariables.  (Two set metavariables are "bundled" if they can be
-  substituted with the same set metavariable i.e. do not have a $d distinct
+  instances of it that don't involve wff metavariables or bundled setvar
+  metavariables.  (Two setvar metavariables are "bundled" if they can be
+  substituted with the same setvar metavariable i.e. do not have a $d distinct
   variable proviso.)  Later we will introduce auxiliary axiom schemes ~ ax-6 ,
   ~ ax-7 , ~ ax-12 , and ~ ax-11 that are metatheorems of Tarski's system (i.e.
   are logically redundant) but which give our system the property of
@@ -11550,11 +11550,11 @@ $)
 
   $( Declare new symbols needed for pure predicate calculus. $)
   $c A. $. $( "inverted A" universal quantifier (read:  "for all") $)
-  $c set $. $( Individual variable type (read:  "the following is an
-             individual (set) variable" $)
+  $c setvar $. $( Individual variable type (read:  "the following is an
+             individual (setvar) variable" $)
 
-  $( Add 'set' as a typecode. $)
-  $( $j syntax 'set'; $)
+  $( Add 'setvar' as a typecode. $)
+  $( $j syntax 'setvar'; $)
 
   $( Declare some names for individual variables. $)
   $v x $.
@@ -11565,19 +11565,19 @@ $)
   $v u $.
   $v t $.
   $( Let ` x ` be an individual variable. $)
-  vx $f set x $.
+  vx $f setvar x $.
   $( Let ` y ` be an individual variable. $)
-  vy $f set y $.
+  vy $f setvar y $.
   $( Let ` z ` be an individual variable. $)
-  vz $f set z $.
+  vz $f setvar z $.
   $( Let ` w ` be an individual variable. $)
-  vw $f set w $.
+  vw $f setvar w $.
   $( Let ` v ` be an individual variable. $)
-  vv $f set v $.
+  vv $f setvar v $.
   $( Let ` u ` be an individual variable. $)
-  vu $f set u $.
+  vu $f setvar u $.
   $( Let ` t ` be an individual variable. $)
-  vt $f set t $.
+  vt $f setvar t $.
 
   $( Extend wff definition to include the universal quantifier ('for all').
      ` A. x ph ` is read " ` ph ` (phi) is true for all ` x ` ."  Typically, in
@@ -12417,7 +12417,7 @@ $)
   $( $j syntax 'class'; $)
 
   $( This syntax construction states that a variable ` x ` , which has been
-     declared to be a set variable by $f statement vx, is also a class
+     declared to be a setvar variable by $f statement vx, is also a class
      expression.  This can be justified informally as follows.  We know that
      the class builder ` { y | y e. x } ` is a class by ~ cab .  Since (when
      ` y ` is distinct from ` x ` ) we have ` x = { y | y e. x } ` by
@@ -12427,7 +12427,7 @@ $)
      be considered to be a class."
 
      While it is tempting and perhaps occasionally useful to view ~ cv as a
-     "type conversion" from a set variable to a class variable, keep in mind
+     "type conversion" from a setvar variable to a class variable, keep in mind
      that ~ cv is intrinsically no different from any other class-building
      syntax such as ~ cab , ~ cun , or ~ c0 .
 
@@ -13005,12 +13005,12 @@ $)
        [KalishMontague] p. 87.  While it appears that ~ sp in its general form
        does not follow from Tarski's FOL axiom schemes, from this theorem we
        can prove any instance of ~ sp having no wff metavariables and mutually
-       distinct set variables (see ~ ax11wdemo for an example of the procedure
-       to eliminate the hypothesis).  Other approximations of ~ sp are ~ spfw
-       (minimal distinct variable requirements), ~ spnfw (when ` x ` is not
-       free in ` -. ph ` ), ~ spvw (when ` x ` does not appear in ` ph ` ),
-       ~ sptruw (when ` ph ` is true), and ~ spfalw (when ` ph ` is false).
-       (Contributed by NM, 9-Apr-2017.) $)
+       distinct setvar variables (see ~ ax11wdemo for an example of the
+       procedure to eliminate the hypothesis).  Other approximations of ~ sp
+       are ~ spfw (minimal distinct variable requirements), ~ spnfw (when ` x `
+       is not free in ` -. ph ` ), ~ spvw (when ` x ` does not appear in
+       ` ph ` ), ~ sptruw (when ` ph ` is true), and ~ spfalw (when ` ph ` is
+       false).  (Contributed by NM, 9-Apr-2017.) $)
     spw $p |- ( A. x ph -> ph ) $=
       ( wal wi ax-17 ax-5 weq biimprd equcoms spimvw syl56 biimpd mpg ) ACFZBGZ
       QAGDQQDFRDFBDFAQDHQBDIBADCBAGCDCDJZABEKLMNABCDSABEOMP $.
@@ -13305,7 +13305,7 @@ $(
   ~ ax-7 , ~ ax-12 , and ~ ax-11 , which are not part of Tarski's axiom
   schemes.  They are used (and we conjecture are required) to make our system
   "metalogically complete" i.e. able to prove directly all possible schemes
-  with wff and set metavariables, bundled or not, whose object-language
+  with wff and setvar metavariables, bundled or not, whose object-language
   instances are valid.  ( ~ ax-11 has been proved to be required; see
   ~ http://us.metamath.org/award2003.html#9a .  Metalogical independence of the
   other three are open problems.)
@@ -13313,12 +13313,12 @@ $(
   (There are additional predicate calculus axiom schemes included in set.mm
   such as ~ ax-4 , but they can all be proved as theorems from the above.)
 
-  Terminology:  Two set (individual) metavariables are "bundled" in an axiom or
-  theorem scheme when there is no distinct variable constraint ($d) imposed on
-  them.  (The term "bundled" is due to Raph Levien.)  For example, the ` x `
+  Terminology:  Two setvar (individual) metavariables are "bundled" in an axiom
+  or theorem scheme when there is no distinct variable constraint ($d) imposed
+  on them.  (The term "bundled" is due to Raph Levien.)  For example, the ` x `
   and ` y ` in ~ ax9 are bundled, but they are not in ~ ax9v . We also say that
-  a scheme is bundled when it has at least one pair of bundled set
-  metavariables.  If distinct variable conditions are added to all set
+  a scheme is bundled when it has at least one pair of bundled setvar
+  metavariables.  If distinct variable conditions are added to all setvar
   metavariable pairs in a bundled scheme, we call that the "principal" instance
   of the bundled scheme.  For example, ~ ax9v is the principal instance of
   ~ ax9 . Whenever a common variable is substituted for two or more bundled
@@ -13336,9 +13336,9 @@ $(
   prove any object-language instance of ~ ax-6 , ~ ax-7 , ~ ax-11 , and ~ ax-12
   . "Translating" this to Metamath, it means that Tarski's axioms can prove any
   substitution instance of ~ ax-6 , ~ ax-7 , ~ ax-11 , or ~ ax-12 in which (1)
-  there are no wff metavariables and (2) all set metavariables are mutually
+  there are no wff metavariables and (2) all setvr metavariables are mutually
   distinct i.e. are not bundled.  In effect this is mimicking the object
-  language by pretending that each set metavariable is an object-language
+  language by pretending that each setvar metavariable is an object-language
   variable.  (There may also be specific instances with wff metavariables
   and/or bundling that are directly provable from Tarski's axiom schemes, but
   it isn't guaranteed.  Whether all of them are possible is part of the still
@@ -13516,13 +13516,13 @@ $(
   (outside of Metamath) as theorem schemes of Tarski's system.  These are
   needed to give our system the property of "metalogical completeness," which
   means that we can prove (with Metamath) all possible schemes expressible in
-  our language of wff metavariables ranging over object-language wffs and set
-  metavariables ranging over object-language individual variables.
+  our language of wff metavariables ranging over object-language wffs and
+  setvar metavariables ranging over object-language individual variables.
 
   To show that these schemes are valid metatheorems of Tarski's system S2,
   above we proved from Tarski's system theorems ~ ax6w , ~ ax7w , ~ ax12w ,
   and ~ ax11w , which show that any object-language instance of these schemes
-  (emulated by having no wff metavariables and requiring all set
+  (emulated by having no wff metavariables and requiring all setvar
   metavariables to be mutually distinct) can be proved using only the schemes
   in Tarski's system S2.
 
@@ -13763,8 +13763,8 @@ $)
   19.8a $p |- ( ph -> E. x ph ) $=
     ( wn wal wex sp con2i df-ex sylibr ) AACZBDZCABEKAJBFGABHI $.
 
-  $( Theorem 19.2 of [Margaris] p. 89, generalized to use two set variables.
-     (Contributed by O'Cat, 31-Mar-2008.) $)
+  $( Theorem 19.2 of [Margaris] p. 89, generalized to use two setvar
+     variables.  (Contributed by O'Cat, 31-Mar-2008.) $)
   19.2g $p |- ( A. x ph -> E. y ph ) $=
     ( wex 19.8a sps ) AACDBACEF $.
 
@@ -15976,8 +15976,8 @@ $)
     $v f $.
     $v g $.
     $( Define temporary individual variables. $)
-    cbvex4v.vf $f set f $.
-    cbvex4v.vg $f set g $.
+    cbvex4v.vf $f setvar f $.
+    cbvex4v.vg $f setvar g $.
     $d w z ch $.  $d u v ph $.  $d x y ps $.  $d f g ps $.  $d f w $.
     $d g z $.  $d u v w x y z $.
     cbvex4v.1 $e |- ( ( x = v /\ y = u ) -> ( ph <-> ps ) ) $.
@@ -16002,13 +16002,14 @@ $)
 
   ${
     $d x z $.  $d y z $.
-    $( When the class variables in definition ~ df-clel are replaced with set
-       variables, this theorem of predicate calculus is the result.  This
-       theorem provides part of the justification for the consistency of that
-       definition, which "overloads" the set variables in ~ wel with the class
-       variables in ~ wcel .  Note:  This proof is referenced on the Metamath
-       Proof Explorer Home Page and shouldn't be changed.  (Contributed by NM,
-       28-Jan-2004.)  (Proof modification is discouraged.) $)
+    $( When the class variables in definition ~ df-clel are replaced with
+       setvar variables, this theorem of predicate calculus is the result.
+       This theorem provides part of the justification for the consistency of
+       that definition, which "overloads" the setvar variables in ~ wel with
+       the class variables in ~ wcel .  Note:  This proof is referenced on the
+       Metamath Proof Explorer Home Page and shouldn't be changed.
+       (Contributed by NM, 28-Jan-2004.)
+       (Proof modification is discouraged.) $)
     cleljust $p |- ( x e. y <-> E. z ( z = x /\ z e. y ) ) $=
       ( weq wel wa wex ax-17 elequ1 equsexh bicomi ) CADCBEZFCGABEZLMCAMCHCABIJ
       K $.
@@ -16016,12 +16017,12 @@ $)
 
   ${
     $d x z $.  $d y z $.
-    $( When the class variables in definition ~ df-clel are replaced with set
-       variables, this theorem of predicate calculus is the result.  This
-       theorem provides part of the justification for the consistency of that
-       definition, which "overloads" the set variables in ~ wel with the class
-       variables in ~ wcel .  (Contributed by NM, 28-Jan-2004.)  (Revised by
-       Mario Carneiro, 21-Dec-2016.) $)
+    $( When the class variables in definition ~ df-clel are replaced with
+       setvar variables, this theorem of predicate calculus is the result.
+       This theorem provides part of the justification for the consistency of
+       that definition, which "overloads" the setvar variables in ~ wel with
+       the class variables in ~ wcel .  (Contributed by NM, 28-Jan-2004.)
+       (Revised by Mario Carneiro, 21-Dec-2016.) $)
     cleljustALT $p |- ( x e. y <-> E. z ( z = x /\ z e. y ) ) $=
       ( weq wel wa wex nfv elequ1 equsex bicomi ) CADCBEZFCGABEZLMCAMCHCABIJK
       $.
@@ -17295,8 +17296,8 @@ $)
        This axiom is redundant if we include ~ ax-17 ; see theorem ~ ax16 .
        Alternately, ~ ax-17 becomes logically redundant in the presence of this
        axiom, but without ~ ax-17 we lose the more powerful metalogic that
-       results from being able to express the concept of a set variable not
-       occurring in a wff (as opposed to just two set variables being
+       results from being able to express the concept of a setvar variable not
+       occurring in a wff (as opposed to just two setvar variables being
        distinct).  We retain ~ ax-16 here to provide logical completeness for
        systems with the simpler metalogic that results from omitting ~ ax-17 ,
        which might be easier to study for some theoretical purposes.
@@ -17462,9 +17463,9 @@ $)
        together ~ hbn , ~ hbal , and ~ hbim .  However, if we omit this axiom,
        our development would be quite inconvenient since we could work only
        with specific instances of wffs containing no wff variables - this axiom
-       introduces the concept of a set variable not occurring in a wff (as
-       opposed to just two set variables being distinct).  (Contributed by NM,
-       19-Aug-2017.)  (New usage is discouraged.)  (Proof modification
+       introduces the concept of a setvar variable not occurring in a wff (as
+       opposed to just two setvar variables being distinct).  (Contributed by
+       NM, 19-Aug-2017.)  (New usage is discouraged.)  (Proof modification
        discouraged.) $)
     ax17o $p |- ( ph -> A. x ph ) $=
       ( ax-17 ) ABC $.
@@ -19701,18 +19702,18 @@ $)
   $( Introduce the class builder or class abstraction notation ("the class of
      sets ` x ` such that ` ph ` is true").  Our class variables ` A ` ,
      ` B ` , etc. range over class builders (implicitly in the case of defined
-     class terms such as ~ df-nul ).  Note that a set variable can be expressed
-     as a class builder per theorem ~ cvjust , justifying the assignment of set
-     variables to class variables via the use of ~ cv . $)
+     class terms such as ~ df-nul ).  Note that a setvar variable can be
+     expressed as a class builder per theorem ~ cvjust , justifying the
+     assignment of setvar variables to class variables via the use of ~ cv . $)
   cab $a class { x | ph } $.
 
   $( --- Start of old code before overloading prevention patch. $)
   $(
-  @( A set variable is a class expression.  The syntax " ` class x ` " can be
-     viewed as an abbreviation for " ` class { y | y e. x } ` " (a special case
-     of ~ cab ), where ` y ` is distinct from ` x ` .  See the discussion under
-     the definition of class in [Jech] p. 4.  Note that ` { y | y e. x } = x `
-     by ~ cvjust . @)
+  @( A setvar variable is a class expression.  The syntax " ` class x ` " can
+     be viewed as an abbreviation for " ` class { y | y e. x } ` " (a special
+     case of ~ cab ), where ` y ` is distinct from ` x ` .  See the discussion
+     under the definition of class in [Jech] p. 4.  Note that
+     ` { y | y e. x } = x ` by ~ cvjust . @)
   cv @a class x @.
   $)
   $( --- End of old code before overloading prevention patch. $)
@@ -19822,25 +19823,25 @@ $)
 
 
   $( Let ` e ` be an individual variable. $)
-  ve $f set e $.
+  ve $f setvar e $.
   $( Let ` f ` be an individual variable. $)
-  vf $f set f $.
+  vf $f setvar f $.
   $( Let ` g ` be an individual variable. $)
-  vg $f set g $.
+  vg $f setvar g $.
   $( Let ` h ` be an individual variable. $)
-  vh $f set h $.
+  vh $f setvar h $.
   $( Let ` i ` be an individual variable. $)
-  vi $f set i $.
+  vi $f setvar i $.
   $( Let ` j ` be an individual variable. $)
-  vj $f set j $.
+  vj $f setvar j $.
   $( Let ` k ` be an individual variable. $)
-  vk $f set k $.
+  vk $f setvar k $.
   $( Let ` m ` be an individual variable. $)
-  vm $f set m $.
+  vm $f setvar m $.
   $( Let ` n ` be an individual variable. $)
-  vn $f set n $.
+  vn $f setvar n $.
   $( Let ` o ` be an individual variable. $)
-  vo $f set o $.
+  vo $f setvar o $.
   $( Let ` E ` be a class variable. $)
   cE $f class E $.
 
@@ -19912,23 +19913,23 @@ $)
   $( Let ` Z ` be a class variable. $)
   cZ $f class Z $.
   $( Let ` s ` be an individual variable. $)
-  vs $f set s $.
+  vs $f setvar s $.
   $( Let ` r ` be an individual variable. $)
-  vr $f set r $.
+  vr $f setvar r $.
   $( Let ` q ` be an individual variable. $)
-  vq $f set q $.
+  vq $f setvar q $.
   $( Let ` p ` be an individual variable. $)
-  vp $f set p $.
+  vp $f setvar p $.
   $( Let ` a ` be an individual variable. $)
-  va $f set a $.
+  va $f setvar a $.
   $( Let ` b ` be an individual variable. $)
-  vb $f set b $.
+  vb $f setvar b $.
   $( Let ` c ` be an individual variable. $)
-  vc $f set c $.
+  vc $f setvar c $.
   $( Let ` d ` be an individual variable. $)
-  vd $f set d $.
+  vd $f setvar d $.
   $( Let ` l ` be an individual variable. $)
-  vl $f set l $.
+  vl $f setvar l $.
 
   $( --- Start of old code before overloading prevention patch. $)
   $(
@@ -19955,21 +19956,21 @@ $)
 
      This is our first use of the ` e. ` symbol to connect classes instead of
      sets.  The syntax definition ~ wcel , which extends or "overloads" the
-     ~ wel definition connecting set variables, requires that both sides of
+     ~ wel definition connecting setvar variables, requires that both sides of
      ` e. ` be a class.  In ~ df-cleq and ~ df-clel , we introduce a new kind
      of variable (class variable) that can substituted with expressions such as
      ` { y | ph } ` .  In the present definition, the ` x ` on the left-hand
-     side is a set variable.  Syntax definition ~ cv allows us to substitute a
-     set variable ` x ` for a class variable: all sets are classes by ~ cvjust
-     (but not necessarily vice-versa).  For a full description of how classes
-     are introduced and how to recover the primitive language, see the
+     side is a setvar variable.  Syntax definition ~ cv allows us to substitute
+     a setvar variable ` x ` for a class variable: all sets are classes by
+     ~ cvjust (but not necessarily vice-versa).  For a full description of how
+     classes are introduced and how to recover the primitive language, see the
      discussion in Quine (and under ~ abeq2 for a quick overview).
 
      Because class variables can be substituted with compound expressions and
-     set variables cannot, it is often useful to convert a theorem containing a
-     free set variable to a more general version with a class variable.  This
-     is done with theorems such as ~ vtoclg which is used, for example, to
-     convert elirrv in set.mm to elirr in set.mm.
+     setvar variables cannot, it is often useful to convert a theorem
+     containing a free setvar variable to a more general version with a class
+     variable.  This is done with theorems such as ~ vtoclg which is used, for
+     example, to convert elirrv in set.mm to elirr in set.mm.
 
      This is called the "axiom of class comprehension" by [Levy] p. 338, who
      treats the theory of classes as an extralogical extension to our logic and
@@ -20071,12 +20072,12 @@ $)
 
   ${
     $d x y z $.
-    $( Every set is a class.  Proposition 4.9 of [TakeutiZaring] p. 13.  This
-       theorem shows that a set variable can be expressed as a class
+    $( Every setvar is a class.  Proposition 4.9 of [TakeutiZaring] p. 13.
+       This theorem shows that a setvar variable can be expressed as a class
        abstraction.  This provides a motivation for the class syntax
-       construction ~ cv , which allows us to substitute a set variable for a
-       class variable.  See also ~ cab and ~ df-clab .  Note that this is not a
-       rigorous justification, because ~ cv is used as part of the proof of
+       construction ~ cv , which allows us to substitute a setvar variable for
+       a class variable.  See also ~ cab and ~ df-clab .  Note that this is not
+       a rigorous justification, because ~ cv is used as part of the proof of
        this theorem, but a careful argument can be made outside of the
        formalism of Metamath, for example as is done in Chapter 4 of Takeuti
        and Zaring.  See also the discussion under the definition of class in
@@ -20095,11 +20096,11 @@ $)
        justification.  Note that like ~ df-cleq it extends or "overloads" the
        use of the existing membership symbol, but unlike ~ df-cleq it does not
        strengthen the set of valid wffs of logic when the class variables are
-       replaced with set variables (see ~ cleljust ), so we don't include any
-       set theory axiom as a hypothesis.  See also comments about the syntax
-       under ~ df-clab .  Alternate definitions of ` A e. B ` (but that require
-       either ` A ` or ` B ` to be a set) are shown by ~ clel2 , ~ clel3 , and
-       ~ clel4 .
+       replaced with setvar variables (see ~ cleljust ), so we don't include
+       any set theory axiom as a hypothesis.  See also comments about the
+       syntax under ~ df-clab .  Alternate definitions of ` A e. B ` (but that
+       require either ` A ` or ` B ` to be a set) are shown by ~ clel2 ,
+       ~ clel3 , and ~ clel4 .
 
        This is called the "axiom of membership" by [Levy] p. 338, who treats
        the theory of classes as an extralogical extension to our logic and set
@@ -21056,7 +21057,7 @@ $)
        instance of zfauscl that occurs in the proof of inex1 ).  Conversely, to
        convert a theorem with a class variable ` A ` to one with ` ph ` , we
        substitute ` { x | ph } ` for ` A ` throughout and simplify, where ` x `
-       and ` ph ` are new set and wff variables not already in the wff.  An
+       and ` ph ` are new setvar and wff variables not already in the wff.  An
        example is cp in set.mm , which derives a formula containing wff
        variables from substitution instances of the class variables in its
        equivalent formulation cplem2 in set.mm.  For more information on class
@@ -24402,8 +24403,8 @@ $)
      Also Definition 2.9 of [Quine] p. 19.  (Contributed by NM, 5-Aug-1993.) $)
   df-v $a |- _V = { x | x = x } $.
 
-  $( All set variables are sets (see ~ isset ).  Theorem 6.8 of [Quine] p. 43.
-     (Contributed by NM, 5-Aug-1993.) $)
+  $( All setvar variables are sets (see ~ isset ).  Theorem 6.8 of [Quine]
+     p. 43.  (Contributed by NM, 5-Aug-1993.) $)
   vex $p |- x e. _V $=
     ( cv cvv wcel wceq eqid df-v abeq2i mpbir ) ABZCDJJEZJFKACAGHI $.
 
@@ -24974,15 +24975,15 @@ $)
       vtocldf.4 $e |- F/ x ph $.
       vtocldf.5 $e |- ( ph -> F/_ x A ) $.
       vtocldf.6 $e |- ( ph -> F/ x ch ) $.
-      $( Implicit substitution of a class for a set variable.  (Contributed by
-         Mario Carneiro, 15-Oct-2016.) $)
+      $( Implicit substitution of a class for a setvar variable.  (Contributed
+         by Mario Carneiro, 15-Oct-2016.) $)
       vtocldf $p |- ( ph -> ch ) $=
         ( wnfc wnf cv wceq wb wi wal alrimi wcel ex vtoclgft syl221anc ) ADEMCD
         NDOEPZBCQZRZDSBDSEFUACKLAUGDJAUEUFHUBTABDJITGBCDEFUCUD $.
     $}
 
     $d x A $.  $d x ph $.  $d x ch $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        Mario Carneiro, 15-Oct-2016.) $)
     vtocld $p |- ( ph -> ch ) $=
       ( nfv nfcvd nfvd vtocldf ) ABCDEFGHIADJADEKACDLM $.
@@ -24994,7 +24995,7 @@ $)
     vtoclf.2 $e |- A e. _V $.
     vtoclf.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtoclf.4 $e |- ph $.
-    $( Implicit substitution of a class for a set variable.  This is a
+    $( Implicit substitution of a class for a setvar variable.  This is a
        generalization of ~ chvar .  (Contributed by NM, 30-Aug-1993.) $)
     vtoclf $p |- ps $=
       ( cv wceq wex wi isseti biimpd eximi ax-mp 19.36i mpg ) ABCABCECIDJZCKABL
@@ -25006,7 +25007,7 @@ $)
     vtocl.1 $e |- A e. _V $.
     vtocl.2 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtocl.3 $e |- ph $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 30-Aug-1993.) $)
     vtocl $p |- ps $=
       ( nfv vtoclf ) ABCDBCHEFGI $.
@@ -25018,8 +25019,8 @@ $)
     vtocl2.2 $e |- B e. _V $.
     vtocl2.3 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
     vtocl2.4 $e |- ph $.
-    $( Implicit substitution of classes for set variables.  (Contributed by NM,
-       26-Jul-1995.)  (Proof shortened by Andrew Salmon, 8-Jun-2011.) $)
+    $( Implicit substitution of classes for setvar variables.  (Contributed by
+       NM, 26-Jul-1995.)  (Proof shortened by Andrew Salmon, 8-Jun-2011.) $)
     vtocl2 $p |- ps $=
       ( wal wi wex cv wceq isseti wa eeanv biimpd 2eximi sylbir 19.36v 19.36aiv
       mp2an exbii mpbi ax-gen mpg ) ADKZBCUIBCABLZDMZCMZUIBLZCMCNEOZCMZDNFOZDMZ
@@ -25034,8 +25035,8 @@ $)
     vtocl3.3 $e |- C e. _V $.
     vtocl3.4 $e |- ( ( x = A /\ y = B /\ z = C ) -> ( ph <-> ps ) ) $.
     vtocl3.5 $e |- ph $.
-    $( Implicit substitution of classes for set variables.  (Contributed by NM,
-       3-Jun-1995.)  (Proof shortened by Andrew Salmon, 8-Jun-2011.) $)
+    $( Implicit substitution of classes for setvar variables.  (Contributed by
+       NM, 3-Jun-1995.)  (Proof shortened by Andrew Salmon, 8-Jun-2011.) $)
     vtocl3 $p |- ps $=
       ( wal wi wex cv wceq isseti w3a eeeanv biimpd 2eximi sylbir 19.36v 2exbii
       eximi mp3an mpbi exbii 19.36aiv gen2 mpg ) AENZDNZBCUOBCUNBOZDPZCPZUOBOZC
@@ -25050,7 +25051,7 @@ $)
     vtoclb.2 $e |- ( x = A -> ( ph <-> ch ) ) $.
     vtoclb.3 $e |- ( x = A -> ( ps <-> th ) ) $.
     vtoclb.4 $e |- ( ph <-> ps ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 23-Dec-1993.) $)
     vtoclb $p |- ( ch <-> th ) $=
       ( wb cv wceq bibi12d vtocl ) ABKCDKEFGELFMACBDHINJO $.
@@ -25061,9 +25062,10 @@ $)
     vtoclgf.2 $e |- F/ x ps $.
     vtoclgf.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtoclgf.4 $e |- ph $.
-    $( Implicit substitution of a class for a set variable, with bound-variable
-       hypotheses in place of distinct variable restrictions.  (Contributed by
-       NM, 21-Sep-2003.)  (Proof shortened by Mario Carneiro, 10-Oct-2016.) $)
+    $( Implicit substitution of a class for a setvar variable, with
+       bound-variable hypotheses in place of distinct variable restrictions.
+       (Contributed by NM, 21-Sep-2003.)  (Proof shortened by Mario Carneiro,
+       10-Oct-2016.) $)
     vtoclgf $p |- ( A e. V -> ps ) $=
       ( wcel cvv elex cv wceq wex issetf mpbii exlimi sylbi syl ) DEJDKJZBDELUA
       CMDNZCOBCDFPUBBCGUBABIHQRST $.
@@ -25073,7 +25075,7 @@ $)
     $d x A $.  $d x ps $.
     vtoclg.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtoclg.2 $e |- ph $.
-    $( Implicit substitution of a class expression for a set variable.
+    $( Implicit substitution of a class expression for a setvar variable.
        (Contributed by NM, 17-Apr-1995.) $)
     vtoclg $p |- ( A e. V -> ps ) $=
       ( nfcv nfv vtoclgf ) ABCDECDHBCIFGJ $.
@@ -25084,7 +25086,7 @@ $)
     vtoclbg.1 $e |- ( x = A -> ( ph <-> ch ) ) $.
     vtoclbg.2 $e |- ( x = A -> ( ps <-> th ) ) $.
     vtoclbg.3 $e |- ( ph <-> ps ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 29-Apr-1994.) $)
     vtoclbg $p |- ( A e. V -> ( ch <-> th ) ) $=
       ( wb cv wceq bibi12d vtoclg ) ABKCDKEFGELFMACBDHINJO $.
@@ -25099,7 +25101,7 @@ $)
     vtocl2gf.6 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtocl2gf.7 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl2gf.8 $e |- ph $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 25-Apr-1995.) $)
     vtocl2gf $p |- ( ( A e. V /\ B e. W ) -> ch ) $=
       ( wcel cvv wi elex nfel1 nfim cv wceq imbi2d vtoclgf mpan9 ) FHRFSRZGIRCF
@@ -25121,7 +25123,7 @@ $)
     vtocl3gf.5 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl3gf.6 $e |- ( z = C -> ( ch <-> th ) ) $.
     vtocl3gf.7 $e |- ph $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 10-Aug-2013.)  (Revised by Mario Carneiro, 10-Oct-2016.) $)
     vtocl3gf $p |- ( ( A e. V /\ B e. W /\ C e. X ) -> th ) $=
       ( wcel cvv wa elex wi nfel1 nfim wceq imbi2d vtoclgf vtocl2gf mpan9 3impb
@@ -25134,8 +25136,8 @@ $)
     vtocl2g.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtocl2g.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl2g.3 $e |- ph $.
-    $( Implicit substitution of 2 classes for 2 set variables.  (Contributed by
-       NM, 25-Apr-1995.) $)
+    $( Implicit substitution of 2 classes for 2 setvar variables.  (Contributed
+       by NM, 25-Apr-1995.) $)
     vtocl2g $p |- ( ( A e. V /\ B e. W ) -> ch ) $=
       ( nfcv nfv vtocl2gf ) ABCDEFGHIDFMEFMEGMBDNCENJKLO $.
   $}
@@ -25146,7 +25148,7 @@ $)
     vtoclgaf.2 $e |- F/ x ps $.
     vtoclgaf.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtoclgaf.4 $e |- ( x e. B -> ph ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 17-Feb-2006.)  (Revised by Mario Carneiro, 10-Oct-2016.) $)
     vtoclgaf $p |- ( A e. B -> ps ) $=
       ( wcel cv wi nfel1 nfim wceq eleq1 imbi12d vtoclgf pm2.43i ) DEJZBCKZEJZA
@@ -25157,7 +25159,7 @@ $)
     $d x y A $.  $d x y B $.  $d x ps $.
     vtoclga.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtoclga.2 $e |- ( x e. B -> ph ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 20-Aug-1995.) $)
     vtoclga $p |- ( A e. B -> ps ) $=
       ( nfcv nfv vtoclgaf ) ABCDECDHBCIFGJ $.
@@ -25173,8 +25175,8 @@ $)
     vtocl2gaf.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtocl2gaf.4 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl2gaf.5 $e |- ( ( x e. C /\ y e. D ) -> ph ) $.
-    $( Implicit substitution of 2 classes for 2 set variables.  (Contributed by
-       NM, 10-Aug-2013.) $)
+    $( Implicit substitution of 2 classes for 2 setvar variables.  (Contributed
+       by NM, 10-Aug-2013.) $)
     vtocl2gaf $p |- ( ( A e. C /\ B e. D ) -> ch ) $=
       ( wcel wa wi cv nfel1 nfan nfim wceq eleq1 anbi1d imbi12d anbi2d vtocl2gf
       nfv pm2.43i ) FHRZGIRZSZCDUAZHRZEUAZIRZSZATUMUSSZBTUOCTDEFGHIJKLVABDUMUSD
@@ -25188,8 +25190,8 @@ $)
     vtocl2ga.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtocl2ga.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl2ga.3 $e |- ( ( x e. C /\ y e. D ) -> ph ) $.
-    $( Implicit substitution of 2 classes for 2 set variables.  (Contributed by
-       NM, 20-Aug-1995.) $)
+    $( Implicit substitution of 2 classes for 2 setvar variables.  (Contributed
+       by NM, 20-Aug-1995.) $)
     vtocl2ga $p |- ( ( A e. C /\ B e. D ) -> ch ) $=
       ( nfcv nfv vtocl2gaf ) ABCDEFGHIDFMEFMEGMBDNCENJKLO $.
   $}
@@ -25210,8 +25212,8 @@ $)
     vtocl3gaf.5 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl3gaf.6 $e |- ( z = C -> ( ch <-> th ) ) $.
     vtocl3gaf.7 $e |- ( ( x e. R /\ y e. S /\ z e. T ) -> ph ) $.
-    $( Implicit substitution of 3 classes for 3 set variables.  (Contributed by
-       NM, 10-Aug-2013.)  (Revised by Mario Carneiro, 11-Oct-2016.) $)
+    $( Implicit substitution of 3 classes for 3 setvar variables.  (Contributed
+       by NM, 10-Aug-2013.)  (Revised by Mario Carneiro, 11-Oct-2016.) $)
     vtocl3gaf $p |- ( ( A e. R /\ B e. S /\ C e. T ) -> th ) $=
       ( wcel w3a cv nfel1 nf3an nfim wceq eleq1 3anbi1d imbi12d 3anbi2d 3anbi3d
       wi nfv vtocl3gf pm2.43i ) HKUGZILUGZJMUGZUHZDEUIZKUGZFUIZLUGZGUIZMUGZUHZA
@@ -25228,8 +25230,8 @@ $)
     vtocl3ga.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl3ga.3 $e |- ( z = C -> ( ch <-> th ) ) $.
     vtocl3ga.4 $e |- ( ( x e. D /\ y e. R /\ z e. S ) -> ph ) $.
-    $( Implicit substitution of 3 classes for 3 set variables.  (Contributed by
-       NM, 20-Aug-1995.) $)
+    $( Implicit substitution of 3 classes for 3 setvar variables.  (Contributed
+       by NM, 20-Aug-1995.) $)
     vtocl3ga $p |- ( ( A e. D /\ B e. R /\ C e. S ) -> th ) $=
       ( nfcv nfv vtocl3gaf ) ABCDEFGHIJKLMEHRFHRGHRFIRGIRGJRBESCFSDGSNOPQT $.
   $}
@@ -25237,7 +25239,7 @@ $)
   ${
     $d x A $.  $d x ph $.
     vtocleg.1 $e |- ( x = A -> ph ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 10-Jan-2004.) $)
     vtocleg $p |- ( A e. V -> ph ) $=
       ( wcel cv wceq wex elisset exlimiv syl ) CDFBGCHZBIABCDJMABEKL $.
@@ -25245,7 +25247,7 @@ $)
 
   ${
     $d x A $.
-    $( Implicit substitution of a class for a set variable.  (Closed theorem
+    $( Implicit substitution of a class for a setvar variable.  (Closed theorem
        version of ~ vtoclef .)  (Contributed by NM, 7-Nov-2005.)  (Revised by
        Mario Carneiro, 11-Oct-2016.) $)
     vtoclegft $p |- ( ( A e. B /\ F/ x ph /\
@@ -25260,7 +25262,7 @@ $)
     vtoclef.1 $e |- F/ x ph $.
     vtoclef.2 $e |- A e. _V $.
     vtoclef.3 $e |- ( x = A -> ph ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 18-Aug-1993.) $)
     vtoclef $p |- ph $=
       ( cv wceq wex isseti exlimi ax-mp ) BGCHZBIABCEJMABDFKL $.
@@ -25270,7 +25272,7 @@ $)
     $d x A $.  $d x ph $.
     vtocle.1 $e |- A e. _V $.
     vtocle.2 $e |- ( x = A -> ph ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 9-Sep-1993.) $)
     vtocle $p |- ph $=
       ( cvv wcel vtocleg ax-mp ) CFGADABCFEHI $.
@@ -25280,7 +25282,7 @@ $)
     $d x A $.  $d x B $.  $d x ps $.
     vtoclri.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtoclri.2 $e |- A. x e. B ph $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 21-Nov-1994.) $)
     vtoclri $p |- ( A e. B -> ps ) $=
       ( rspec vtoclga ) ABCDEFACEGHI $.
@@ -26525,16 +26527,16 @@ $)
        completely revised the foundations of mathematics!
 
        Another mainstream formalization of set theory, devised by von Neumann,
-       Bernays, and Goedel, uses class variables rather than set variables as
-       its primitives.  The axiom system NBG in [Mendelson] p. 225 is suitable
-       for a Metamath encoding.  NBG is a conservative extension of ZF in that
-       it proves exactly the same theorems as ZF that are expressible in the
-       language of ZF. An advantage of NBG is that it is finitely axiomatizable
-       - the Axiom of Replacement can be broken down into a finite set of
-       formulas that eliminate its wff metavariable.  Finite axiomatizability
-       is required by some proof languages (although not by Metamath).  There
-       is a stronger version of NBG called Morse-Kelley (axiom system MK in
-       [Mendelson] p. 287).
+       Bernays, and Goedel, uses class variables rather than setvar variables
+       as its primitives.  The axiom system NBG in [Mendelson] p. 225 is
+       suitable for a Metamath encoding.  NBG is a conservative extension of ZF
+       in that it proves exactly the same theorems as ZF that are expressible
+       in the language of ZF. An advantage of NBG is that it is finitely
+       axiomatizable - the Axiom of Replacement can be broken down into a
+       finite set of formulas that eliminate its wff metavariable.  Finite
+       axiomatizability is required by some proof languages (although not by
+       Metamath).  There is a stronger version of NBG called Morse-Kelley
+       (axiom system MK in [Mendelson] p. 287).
 
        Russell himself continued in a different direction, avoiding the paradox
        with his "theory of types."  Quine extended Russell's ideas to formulate
@@ -26575,7 +26577,7 @@ $)
 
   $( Extend wff notation to include the proper substitution of a class for a
      set.  Read this notation as "the proper substitution of class ` A ` for
-     set variable ` x ` in wff ` ph ` ." $)
+     setvar variable ` x ` in wff ` ph ` ." $)
   wsbc $a wff [. A / x ]. ph $.
 
   $( Define the proper substitution of a class for a set.
@@ -26616,10 +26618,10 @@ $)
   $(
   @( Extend wff notation to include the proper substitution of a class for a
      set.  This definition "overloads" the previously defined variable
-     substitution ~ wsb (where the first argument is a set variable rather
+     substitution ~ wsb (where the first argument is a setvar variable rather
      than a class variable).  We take care to ensure that this new definition
      is a conservative extension.  Read this notation as "the proper
-     substitution of class ` A ` for set variable ` x ` in wff ` ph ` ." @)
+     substitution of class ` A ` for setvar variable ` x ` in wff ` ph ` ." @)
   wsbcSBC @a wff [ A / x ] ph @.
   $)
   $( --- End of old code before overloading prevention patch. $)
@@ -26653,8 +26655,8 @@ $)
     ZHDQHZABCIABDJZPDQKACBLSRABDMNO $.
 
   $( Show that ~ df-sb and ~ df-sbc are equivalent when the class term ` A ` in
-     ~ df-sbc is a set variable.  This theorem lets us reuse theorems based on
-     ~ df-sb for proofs involving ~ df-sbc .  (Contributed by NM,
+     ~ df-sbc is a setvar variable.  This theorem lets us reuse theorems based
+     on ~ df-sb for proofs involving ~ df-sbc .  (Contributed by NM,
      31-Dec-2016.)  (Proof modification is discouraged.) $)
   sbsbc $p |- ( [ y / x ] ph <-> [. y / x ]. ph ) $=
     ( weq wsb cv wsbc wb eqid dfsbcq2 ax-mp ) CCDABCEABCFZGHLIABCLJK $.
@@ -27149,9 +27151,9 @@ $)
 
   ${
     $d x C $.  $d x A $.
-    $( ~ eqsbc3 with set variable on right side of equals sign.  This proof was
-       automatically generated from the virtual deduction proof eqsbc3rVD in
-       set.mm using a translation program.  (Contributed by Alan Sare,
+    $( ~ eqsbc3 with setvar variable on right side of equals sign.  This proof
+       was automatically generated from the virtual deduction proof eqsbc3rVD
+       in set.mm using a translation program.  (Contributed by Alan Sare,
        24-Oct-2011.) $)
     eqsbc3r $p |- ( A e. B -> ( [. A / x ]. C = x <-> C = A ) ) $=
       ( wcel wceq wsbc eqcom sbcbii biimpi eqsbc3 syl5ib syl6ib syl6ibr sylibrd
@@ -27762,8 +27764,8 @@ $)
 
   ${
     $d y z A $.  $d x y z $.
-    $( The proper substitution of a class for set variable results in the class
-       (if the class exists).  (Contributed by NM, 10-Nov-2005.) $)
+    $( The proper substitution of a class for setvar variable results in the
+       class (if the class exists).  (Contributed by NM, 10-Nov-2005.) $)
     csbvarg $p |- ( A e. V -> [_ A / x ]_ x = A ) $=
       ( vz vy wcel cvv cv csb wceq elex wsbc cab df-csb sbcel2gv abbi1dv syl5eq
       vex ax-mp csbeq2i csbco 3eqtr3i syl ) BCFBGFZABAHZIZBJBCKUDUFDHZEHZFEBLZD
@@ -62644,7 +62646,7 @@ htmlbibliography "mmnf.html";
 
 /* Variable color key at the bottom of each proof table */
 htmlvarcolor '<FONT COLOR="#0000FF">wff</FONT> '
-    + '<FONT COLOR="#FF0000">set</FONT> '
+    + '<FONT COLOR="#FF0000">setvar</FONT> '
     + '<FONT COLOR="#CC33CC">class</FONT>';
 
 /* GIF and Unicode HTML directories - these are used for the GIF version to
@@ -62757,10 +62759,10 @@ htmldef "A." as
     "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALIGN=TOP>";
   althtmldef "A." as '<FONT FACE=sans-serif>&forall;</FONT>'; /* &#8704; */
   latexdef "A." as "\forall";
-htmldef "set" as
-    "<IMG SRC='_set.gif' WIDTH=20 HEIGHT=19 TITLE='set' ALIGN=TOP> ";
-  althtmldef "set" as '<FONT COLOR="#808080">set </FONT>';
-  latexdef "set" as "{\rm set}";
+htmldef "setvar" as
+    "<IMG SRC='_setvar.gif' WIDTH=20 HEIGHT=19 TITLE='setvar' ALIGN=TOP> ";
+  althtmldef "setvar" as '<FONT COLOR="#808080">setvar </FONT>';
+  latexdef "setvar" as "{\rm setvar}";
 htmldef "x" as "<IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALIGN=TOP>";
   althtmldef "x" as '<I><FONT COLOR="#FF0000">x</FONT></I>';
   latexdef "x" as "x";

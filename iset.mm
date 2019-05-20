@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Mar-2019
+$( iset.mm - Version of 4-May-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -35635,10 +35635,16 @@ $)
   limelon $p |- ( ( A e. B /\ Lim A ) -> A e. On ) $=
     ( wcel wlim con0 word limord elong syl5ibr imp ) ABCZADZAECZLMKAFAGABHIJ $.
 
-  $( The class of all ordinal numbers in not empty.  (Contributed by NM,
+  $( The class of all ordinal numbers is not empty.  (Contributed by NM,
      17-Sep-1995.) $)
   onn0 $p |- On =/= (/) $=
     ( c0 con0 wcel wne 0elon ne0i ax-mp ) ABCBADEBAFG $.
+
+  $( The class of all ordinal numbers is inhabited.  (Contributed by Jim
+     Kingdon, 6-Mar-2019.) $)
+  onm $p |- E. x x e. On $=
+    ( cv c0 wceq con0 wcel wa wex 0elon 0ex eleq1 ceqsexv mpbir exsimpr ax-mp )
+    ABZCDZPEFZGAHZRAHSCEFZIRTACJPCEKLMQRANO $.
 
   $( Equality of successors.  (Contributed by NM, 30-Aug-1993.)  (Proof
      shortened by Andrew Salmon, 25-Jul-2011.) $)
@@ -42446,6 +42452,26 @@ $)
       moanimv sylibr sylc ) CEZBAFZCGZBHIZUPJZKZALURAMZUPAMZUNUSAUNUPUQUNCNZUPU
       QKUNVBDFZUOCGZAMZDLZDACOZPVBUPUQBUOCQSTRUAUNUQVAKUTUQUNVAUNVEKUNVAKDBHVCB
       UBZVEVAUNVHVDUPAVCBUOCUCUDUEUNVEDUNVBVFVGUFUGUHUIUQUPAUKULUPURAUJUM $.
+  $}
+
+  ${
+    $d x y z w v u $.  $d A w v u $.
+    dffun4f.1 $e |- F/_ x A $.
+    dffun4f.2 $e |- F/_ y A $.
+    dffun4f.3 $e |- F/_ z A $.
+    $( Definition of function like ~ dffun4 but using bound-variable hypotheses
+       instead of distinct variable conditions.  (Contributed by Jim Kingdon,
+       17-Mar-2019.) $)
+    dffun4f $p |- ( Fun A <-> ( Rel A /\
+                 A. x A. y A. z ( ( <. x , y >. e. A /\ <. x , z >. e. A )
+                 -> y = z ) ) ) $=
+      ( vw cv wbr wal wa weq wi cop wcel nfcv nfbr breq2 albii wfun wmo dffun6f
+      wrel mo4f nfv nfan nfim anbi2d equequ2 imbi12d cbval bitr4i df-br anbi12i
+      anbi2i imbi1i 2albii 3bitri ) DUADUDZAIZBIZDJZBUBZAKZLUTVCVACIZDJZLZBCMZN
+      ZCKZBKZAKZLUTVAVBODPZVAVFODPZLZVINZCKBKZAKZLABDEFUCVEVMUTVDVLAVDVCVAHIZDJ
+      ZLZBHMZNZHKZBKVLVCWABHBVAVTDBVAQFBVTQRVBVTVADSUEVKWEBVJWDCHVJHUFWBWCCVCWA
+      CCVAVBDCVAQZGCVBQRCVAVTDWFGCVTQRUGWCCUFUHCHMZVHWBVIWCWGVGWAVCVFVTVADSUICH
+      BUJUKULTUMTUPVMVSUTVLVRAVJVQBCVHVPVIVCVNVGVOVAVBDUNVAVFDUNUOUQURTUPUS $.
   $}
 
   $( A function is a relation.  (Contributed by NM, 1-Aug-1994.) $)
@@ -53460,6 +53486,30 @@ $)
   $}
 
   ${
+    $d x y z h w $.  $d g z h w $.  $d x y f $.  $d x y g h w $.  $d f h w F $.
+    $d g F $.  $d x z F $.
+    tfrlem3fg.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    $( Bound variable change lemma for transfinite recursion.  Similar to
+       ~ tfrlem3 except that ` f ` and ` g ` need not be distinct.
+       (Contributed by Jim Kingdon, 28-Apr-2019.) $)
+    tfrlem3fg $p |- A = { g | E. z e. On ( g Fn z /\
+                A. y e. z ( g ` y ) = ( F ` ( g |` y ) ) ) } $=
+      ( vw vh tfrlem3 ) IBCDJFGABIDEJGHKK $.
+  $}
+
+  ${
+    $d x y f g $.  $d x y z $.  $d g z $.  $d f g F $.  $d x z F $.
+    tfrlem3-2.1 $e |- ( Fun F /\ A. x e. On A. f ( f Fn x -> f e. dom F ) ) $.
+    $( Lemma for transfinite recursion which changes a bound variable
+       (Contributed by Jim Kingdon, 17-Apr-2019.) $)
+    tfrlem3-2 $p |- ( Fun F /\ A. x e. On A. g ( g Fn x -> g e. dom F ) ) $=
+      ( wfun cv wfn cdm wcel wi wal con0 wral wa weq fneq1 eleq1 imbi12d cbvalv
+      ralbii anbi2i mpbi ) DFZBGZAGZHZUEDIZJZKZBLZAMNZOUDCGZUFHZUMUHJZKZCLZAMNZ
+      OEULURUDUKUQAMUJUPBCBCPUGUNUIUOUFUEUMQUEUMUHRSTUAUBUC $.
+  $}
+
+  ${
     $d x y f g $.  $d f g F $.
     tfrlem3a.1 $e |- A = { f | E. x e. On ( f Fn x /\
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
@@ -53507,6 +53557,19 @@ $)
       RIWIWPYBVEVFVGYEUUGYLXEYNXGWPYBWKVDUUGYMXFIWKWPYBVEVFVGVHWAVIVJVKWBVLVMVN
       YCYDYRXRYDYRYCXRYDXPYCYRXQYDXPXNYFNXOYKNOZYCYRXQTTZADCWNXCWIWKVOWOYFYBPYK
       YBPUUIUUJTXDWNXCWIVPXCWNWKVQADCBYBIYFYKVRVSVTWCWDWEVSWFWGWH $.
+
+    $( Lemma for transfinite recursion.  Similar to ~ tfrlem5 but the bound
+       variable ` x ` within the hypothesis is a different variable from the
+       variable ` x ` in the conclusion.  (Contributed by Jim Kingdon,
+       15-Mar-2019.) $)
+    tfrlem5-2 $p |- ( ( g e. A /\ h e. A ) ->
+                  ( ( <. z , u >. e. g /\ <. z , v >. e. h ) -> u = v ) ) $=
+      ( cv wfn cfv wceq wral wa con0 wrex cab cres wcel eleq1 anbi12d
+      fneq2 raleq cbvexv df-rex 3bitr4i abbii eqeq2i mpbir tfrlem5
+      wex ) CBDEFGHIJFGLZCLZMZBLZUONUOURUAJNOZBUPPZQZCRSZGTZOFUOALZMZ
+      USBVDPZQZARSZGTZOKVCVIFVBVHGUPRUBZVAQZCUNVDRUBZVGQZAUNVBVHVKVMC
+      AUPVDOZVJVLVAVGUPVDRUCVNUQVEUTVFUPVDUOUEUSBUPVDUFUDUDUGVACRUHVG
+      ARUHUIUJUKULUM $.
 
     $( Lemma for transfinite recursion.  The definition ` recs ` is the union
        of all acceptable functions.  (Contributed by Mario Carneiro,
@@ -53579,6 +53642,439 @@ $)
       tfrlem9 dmeqi eleq2s fveq1i reseq1i fveq2i 3eqtr4g ) ABHZIACJZKZUJALZCKZA
       BKBALZCKUKUMMAUJHUIEFGNZENZOFNZUOKUOUQLCKMFUPPQERSGTZAGCURUAUBBUJDUCUDABU
       JDUEUNULCBUJADUFUGUH $.
+  $}
+
+  ${
+    $d x y z u v w f h i j F $.  $d z u v w h i j f A $.
+    $d x y z u v w g h i j F $.  $d z u v w g h i j A $.
+    $d x y z u v w f g h i j F $.  $d z u v w g h i j f A $.
+    tfrlemiss.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    tfrlemiss.2 $e |- ( Fun F /\ A. x e. On A. f ( f Fn x -> f e. dom F ) ) $.
+    $( The recursion rule ` F ` is defined for all acceptable functions.  Lemma
+       for ~ tfrlemi1 .  (Contributed by Jim Kingdon, 2-Mar-2019.) $)
+    tfrlemiss $p |- A C_ dom F $=
+      ( vg cdm cv wcel wfn con0 wrex cfv cres wceq wral wa wi abeq2i ax-ia1 wal
+      tfrlem3a reximi sylbi wfun simpri fneq1 eleq1 imbi12d spv ralimi rexlimiv
+      ax-mp rspec syl ssriv ) HCEIZHJZCKZUTAJZLZAMNZUTUSKZVAVCBJZUTOUTVFPEOQBVB
+      RZSZAMNZVDVIHCABCDHEFUDUAVHVCAMVCVGUBUEUFVCVEAMVCVETZAMDJZVBLZVKUSKZTZDUC
+      ZAMRZVJAMREUGVPGUHVOVJAMVNVJDHVKUTQVLVCVMVEVBVKUTUIVKUTUSUJUKULUMUOUPUNUQ
+      UR $.
+
+  $}
+
+  ${
+    $d x y z u v w f h i j F $.  $d z u v w h i j f A $.
+    $d x y z u v w g h i j F $.  $d z u v w g h i j A $.
+    tfrlemisucaccv.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    tfrlemisucaccv.2 $e |- ( Fun F /\ A. x e. On A. f ( f Fn x -> f e. dom F ) ) $.
+    $( The recursion rule ` F ` has a value at each acceptable function.  Lemma
+       for ~ tfrlemi1 .  (Contributed by Jim Kingdon, 7-Mar-2019.) $)
+    tfrlemifvex $p |- ( g e. A -> ( F ` g ) e. _V ) $=
+      ( cv wcel wfun cdm cfv cvv wfn wi wal con0 wral simpli funfvex
+      tfrlemiss sseli sylancr ) EIZCJFKZUEFLZJUEFMNJUFDIZAIOUHUGJPDQA
+      RSHTCUGUEABCDFGHUBUCUEFUAUD $.
+
+    $( We can extend an acceptable function by one element to produce a
+       function.  Lemma for ~ tfrlemi1 .  (Contributed by Jim Kingdon,
+       4-Mar-2019.) $)
+    tfrlemisucfn $p |- (
+        ( g Fn z /\ g e. A /\ h = ( g u. { <. z , ( F ` g ) >. } ) ) ->
+        h Fn suc z ) $=
+      ( cv wfn wcel csn cun wceq wfun cdm c0 cvv cfv cop w3a cin fnfun 3ad2ant1
+      vex tfrlemifvex funsng sylancr 3ad2ant2 dmsnopg syl ineq12d elirrv disjsn
+      csuc fndm wn mpbir syl6eq funun syl21anc wb funeq 3ad2ant3 mpbird uneq12d
+      dmeq dmun df-suc 3eqtr4g eqtrd df-fn sylanbrc ) FKZCKZLZVPDMZGKZVPVQVPHUA
+      ZUBNZOZPZUCZVTQZVTRZVQUQZPVTWHLWEWFWCQZWEVPQZWBQZVPRZWBRZUDZSPWIVRVSWJWDV
+      QVPUEUFVSVRWKWDVSVQTMWATMZWKCUGABDEFHIJUHZVQWATTUIUJUKWEWNVQVQNZUDZSWEWLV
+      QWMWQVRVSWLVQPWDVQVPURUFZVSVRWMWQPZWDVSWOWTWPVQWATULUMUKZUNWRSPVQVQMUSCUO
+      VQVQUPUTVAVPWBVBVCWDVRWFWIVDVSVTWCVEVFVGWEWGWCRZWHWDVRWGXBPVSVTWCVIVFWEWL
+      WMOVQWQOXBWHWEWLVQWMWQWSXAVHVPWBVJVQVKVLVMVTWHVNVO $.
+
+    $( We can extend an acceptable function by one element to produce an
+       acceptable function.  Lemma for ~ tfrlemi1 .  (Contributed by Jim
+       Kingdon, 4-Mar-2019.) $)
+    tfrlemisucaccv $p |- ( z e. On -> (
+        ( g Fn z /\ g e. A /\ h = ( g u. { <. z , ( F ` g ) >. } ) ) ->
+        h e. A ) ) $=
+      ( vw cv con0 wcel wfn cfv wceq cres wa wrex cop csn cun wral tfrlemisucfn
+      w3a csuc nfv cab nfcv nfra1 nfan nfrexxy nfab nfcxfr nfcri wel weq wo vex
+      nf3an elsuc r19.42v rexbii tfrlem3fg abeq2i anbi2i 3bitr4ri anim1i reximi
+      anass fndmu sylbi raleq biimpar syl wex onm r19.9rmv ax-mp sylibr 3adant3
+      wb r19.21bi fveq1 3ad2ant3 adantr cin c0 simpll tfrlemifvex fnsng sylancr
+      cvv ad2antlr wn elirrv disjsn mpbir fvun1 syl3anc 3adantl3 eqtrd resundir
+      a1i reseq1 en2lp imnani ressnop0 uneq2d un0 syl6eq syl5eq sylan9eq fveq2d
+      fveq2 simp1 3ad2ant2 ssnid pm3.2i fvun2 fvsng 3eqtrd elequ2 mtbiri reseq2
+      3eqtr4d sylan9eqr adantl fnresdm 3ad2ant1 eqtr4d sylan2b ralrimi suceloni
+      jaodan ex jca fneq2 anbi12d rspcedv syl5 tfrlem3a syl6ibr ) CLZMNZFLZUUEO
+      ZUUGDNZGLZUUGUUEUUGHPZUAUBZUCZQZUFZUUJALZOZBLZUUJPZUUJUURRZHPZQZBUUPUDZSZ
+      AMTZUUJDNUUOUUJUUEUGZOZUVBBUVFUDZSZUUFUVEUUOUVGUVHABCDEFGHIJUEUUOUVBBUVFU
+      UHUUIUUNBUUHBUHBFDBDELZUUPOZUURUVJPUVJUURRHPQZBUUPUDZSZAMTZEUIIUVOBEUVNBA
+      MBMUJUVKUVMBUVKBUHUVLBUUPUKULUMUNUOUPUUNBUHVAUUOUURUVFNZUVBUVPUUOBCUQZBCU
+      RZUSUVBUURUUEBUTVBUUOUVQUVBUVRUUOUVQSZUURUUGPZUUGUURRZHPZUUSUVAUUOUVTUWBQ
+      ZBUUEUUHUUIUWCBUUEUDZUUNUUHUUISZUWDKMTZUWDUWECKURZUWCBKLZUDZSZKMTZUWFUWEU
+      UHUUGUWHOZSZUWISZKMTZUWKUUHUWLUWISZSZKMTUUHUWPKMTZSUWOUWEUUHUWPKMVCUWNUWQ
+      KMUUHUWLUWIVKVDUUIUWRUUHUWRFDABKDEFHIVEVFVGVHUWNUWJKMUWMUWGUWIUUEUWHUUGVL
+      VIVJVMUWJUWDKMUWGUWDUWIUWCBUUEUWHVNVOVJVPUUPMNAVQUWDUWFWCAVRUWDKAMVSVTWAW
+      BWDUVSUUSUURUUMPZUVTUUOUUSUWSQZUVQUUNUUHUWTUUIUURUUJUUMWEWFWGUUHUUIUVQUWS
+      UVTQZUUNUWEUVQSUUHUULUUEUBZOZUUEUXBWHWIQZUVQSUXAUUHUUIUVQWJUUIUXCUUHUVQUU
+      IUUEWNNZUUKWNNZUXCCUTZABDEFHIJWKZUUEUUKWNWNWLWMZWOUWEUXDUVQUXDUWEUXDCCUQZ
+      WPCWQZUUEUUEWRWSZXEVIUUEUXBUUGUULUURWTXAXBXCUVSUUTUWAHUUOUVQUUTUUMUURRZUW
+      AUUNUUHUUTUXMQUUIUUJUUMUURXFWFZUVQUXMUWAUULUURRZUCZUWAUUGUULUURXDZUVQUXPU
+      WAWIUCZUWAUVQUXOWIUWAUVQCBUQZWPZUXOWIQZUVQUXSUURUUEXGXHUUEUUKUURXIZVPXJUW
+      AXKZXLXMXNXOYGUUOUVRSZUUSUUKUVAUVRUUOUUSUUEUUJPZUUKUURUUEUUJXPUUOUYEUUEUU
+      MPZUUEUULPZUUKUUNUUHUYEUYFQUUIUUEUUJUUMWEWFUUOUUHUXCUXDUUEUXBNZSZUYFUYGQU
+      UHUUIUUNXQUUIUUHUXCUUNUXIXRUYIUUOUXDUYHUXLCXSXTXEUUEUXBUUGUULUUEYAXAUUIUU
+      HUYGUUKQZUUNUUIUXEUXFUYJUXGUXHUUEUUKWNWNYBWMXRYCYHUYDUUTUUGHUYDUUTUWAUUGU
+      UERZUUGUUOUVRUUTUXMUWAUXNUVRUXMUXPUWAUXQUVRUXPUXRUWAUVRUXOWIUWAUVRUXTUYAU
+      VRUXSUXJUXKBCCYDYEUYBVPXJUYCXLXMXNUVRUWAUYKQUUOUURUUEUUGYFYIUUOUYKUUGQZUV
+      RUUHUUIUYLUUNUUEUUGYJYKWGYCXOYLYPYMYQYNYRUUFUVDUVIAUVFMUUEYOUUPUVFQZUVDUV
+      IWCUUFUYMUUQUVGUVCUVHUUPUVFUUJYSUVBBUUPUVFVNYTYIUUAUUBUVEGDABDEGHIUUCVFUU
+      D $.
+  $}
+
+  ${
+    $d x y u v w f h i j F $.  $d z u v w h i j f A $.
+    $d x y u v w g h i j F $.  $d z u v w g h i j A $.
+    $d y z u v w f h i j F $.  $d y z u v w g h i j F $.
+    tfrlemisucacc.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    tfrlemisucacc.2 $e |- ( Fun F /\ A. x e. On A. f ( f Fn x -> f e. dom F ) ) $.
+    $( We can extend an acceptable function by one element to produce an
+       acceptable function.  Like ~ tfrlemisucaccv except that ` x ` and ` z `
+       need not be distinct.  (Contributed by Jim Kingdon, 29-Apr-2019.) $)
+    tfrlemisucacc $p |- ( z e. On -> (
+        ( g Fn z /\ g e. A /\ h = ( g u. { <. z , ( F ` g ) >. } ) ) ->
+        h e. A ) ) $=
+      ( vw tfrlem3fg wfun cv wfn wi wal con0 wral wa cdm wcel weq imbi1d albidv
+      fneq2 cbvralv anbi2i mpbi tfrlemisucaccv ) KBCDEFGHABKDEEHILHMZENZANZOZUL
+      HUAUBZPZEQZARSZTUKULKNZOZUOPZEQZKRSZTJURVCUKUQVBAKRAKUCZUPVAEVDUNUTUOUMUS
+      ULUFUDUEUGUHUIUJ $.
+
+    $( We can extend an acceptable function by one element to produce an
+       acceptable function.  (Contributed by Jim Kingdon, 3-May-2019.) $)
+    tfrlemisucaccun $p |- ( z e. On -> (
+        ( g Fn z /\ g e. A ) ->
+        ( g u. { <. z , ( F ` g ) >. } ) e. A ) ) $=
+      ( vh cv con0 wcel wfn wa wtru cvv vex sylancr adantl cfv cop csn cun wceq
+      wex tru tfrlemifvex opexg snexg syl w3a df-3an tfrlemisucacc syl5bir impl
+      unexg wb eleq1 mpbid a1d spcimedv mpi 19.9v sylib ex ) CKZLMZFKZVGNZVIDMZ
+      OZVIVGVIGUAZUBZUCZUDZDMZVHVLOZVQJUFZVQVRPVSUGVRVQPJVPQVLVPQMZVHVKVTVJVKVI
+      QMVOQMZVTFRVKVNQMZWAVKVGQMVMQMWBCRABDEFGHIUHVGVMQQUISVNQUJUKVIVOQQUQSTTVR
+      JKZVPUEZOZVQPWEWCDMZVQVHVLWDWFVLWDOVJVKWDULVHWFVJVKWDUMABCDEFJGHIUNUOUPWD
+      WFVQURVRWCVPDUSTUTVAVBVCVQJVDVEVF $.
+  $}
+
+  ${
+    $d x y z u v w f g h i j F $.  $d z u v w g h i j f A $.
+    tfrlemi1.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    tfrlemi1.2 $e |- ( Fun F /\ A. x e. On A. f ( f Fn x -> f e. dom F ) ) $.
+
+    ${
+      $d u v w i j f B $.
+      tfrlemi1.3 $e |- B =
+        { h
+                              | E. z
+                                e. x
+                                   E. g
+                                      ( g Fn z
+                                      /\ g e. A
+                                      /\ h
+                                         = ( g
+                                           u. { <. z , ( F ` g ) >. } ) ) } $.
+      $( Each element of ` B ` is an acceptable function.  Lemma for
+         ~ tfrlemi1 .  (Contributed by Jim Kingdon, 14-Mar-2019.) $)
+      tfrlemibacc $p |- ( ( x e. On /\ i e. B ) -> i e. A ) $=
+        ( cv con0 wcel wa wceq w3a wi wfn cfv cop csn cun wrex eleq2i
+        wex cab eqeq1 3anbi3d exbidv rexbidv elab bitri biimpi adantl
+        vex wral wal onelon tfrlemisucacc syl alrimiv sylib ralrimiva
+        19.23v r19.23v adantr mpd ) ANZOPZINZEPZQGNZCNZUAZVODPZVMVOVP
+        VOJUBUCUDUEZRZSZGUHZCVKUFZVMDPZVNWCVLVNWCVNVMVQVRHNZVSRZSZGUH
+        ZCVKUFZHUIZPWCEWJVMMUGWIWCHVMIURWEVMRZWHWBCVKWKWGWAGWKWFVTVQV
+        RWEVMVSUJUKULUMUNUOUPUQVLWCWDTZVNVLWBWDTZCVKUSWLVLWMCVKVLVPVK
+        PQZWAWDTZGUTWMWNWOGWNVPOPWOVKVPVAABCDFGIJKLVBVCVDWAWDGVGVEVFW
+        BWDCVKVHVEVIVJ $.
+
+      $( The union of ` B ` is a relation.  Lemma for ~ tfrlemi1 .
+         (Contributed by Jim Kingdon, 14-Mar-2019.) $)
+      tfrlemibrel $p |- ( x e. On -> Rel U. B ) $=
+        ( vi cv con0 wcel wrel wral cuni wa tfrlemibacc funrel reluni
+        wfun tfrlem4 3syl ralrimiva sylibr ) ANOPZMNZQZMERESQUIUKMEUI
+        UJEPTUJDPUJUDUKABCDEFGHMIJKLUAABDFMIJUEUJUBUFUGMEUCUH $.
+
+      $( The union of ` B ` is a function.  Lemma for ~ tfrlemi1 .
+         (Contributed by Jim Kingdon, 14-Mar-2019.) $)
+      tfrlemibfun $p |- ( x e. On -> Fun U. B ) $=
+        ( vu vv vi vj cv wcel wa wex con0 cuni wrel cop weq wi wfun tfrlemibrel
+        wal eluni tfrlemibacc ex anim2d eximdv syl5bi anim12d eeanv syl6ibr an4
+        ancom bitri tfrlem5-2 imp sylbi exlimivv syl6 alrimiv alrimivv wfn wceq
+        cfv csn cun w3a wrex cab nfre1 nfab nfcxfr nfuni nfcv dffun4f sylanbrc
+        ) AQZUARZEUBZUCCQZMQUDZWFRZWGNQUDZWFRZSZMNUEZUFZNUIZMUICUIWFUGABCDEFGHI
+        JKLUHWEWOCMWEWNNWEWLWHOQZRZWPDRZSZWJPQZRZWTDRZSZSZPTOTZWMWEWLWSOTZXCPTZ
+        SXEWEWIXFWKXGWIWQWPERZSZOTWEXFOWHEUJWEXIWSOWEXHWRWQWEXHWRABCDEFGHOIJKLU
+        KULUMUNUOWKXAWTERZSZPTWEXGPWJEUJWEXKXCPWEXJXBXAWEXJXBABCDEFGHPIJKLUKULU
+        MUNUOUPWSXCOPUQURXDWMOPXDWRXBSZWQXASZSZWMXDXMXLSXNWQWRXAXBUSXMXLUTVAXLX
+        MWMABCNMDFOPIJVBVCVDVEVFVGVHCMNWFCECEGQZWGVIXODRHQXOWGXOIVKUDVLVMVJVNGT
+        ZCWDVOZHVPLXQCHXPCWDVQVRVSVTMWFWANWFWAWBWC $.
+
+      $( The union of ` B ` is defined on all ordinals.  Lemma for
+         ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.) $)
+      tfrlemibxssdm $p |- ( ( x e. On
+                         /\ A. z
+                            e. x
+                               E. f
+                                  ( f Fn z
+                                  /\ A. y
+                                     e. z
+                                        ( f ` y ) = ( F ` ( f |` y ) ) ) )
+          -> x C_ dom U. B ) $=
+        ( vw cv con0 wcel wa wex cdm cvv wfn cfv cres wceq wral cuni nfcv nfcri
+        nfra1 nfan cop csn cun w3a wrex cab nfre1 nfab nfcxfr nfuni nfdm wi rsp
+        pm5.31 ancom syl6ib 19.42v 3anan12 anbi1i anass bitri vex wal weq fneq2
+        onelon imbi1d albidv wfun simpri vtoclri syl 19.21bi 3impia simpli mpan
+        funfvex opexg sylancr snexg unexg 3syl adantr isset sylib simpl3 df-3an
+        simpll2 raleq anbi12d rspcev impl sylanb abeq2i sylibr jca anim1i fneq1
+        ex eleq1 fveq2 opeq2d sneqd uneq12d eqeq2d 3anbi123d spcev rspe syl2anc
+        id eleq2i adantl mpbird adantlr eqeq1 3anbi3d exbidv elabg syl5bb ssnid
+        wb rexbidv dmsnopg syl5eleqr elun2 dmun syl6eleqr dmeq eleq2d sylbir
+        eximdv mpd df-rex expcom anasss exlimiv syli sylan2 dmuni eliun syl6ibr
+        ciun ssrd ) ANZOPZFNZCNZUAZBNZUUPUBUUPUUSUCIUBUDZBUUQUEZQZFRZCUUNUEZQZC
+        UUNEUFZSZUUOUVDCCAOCOUGUHUVCCUUNUIUJCUUNUGCUVFCECEGNZUUQUAZUVHDPZHNZUVH
+        UUQUVHIUBZUKZULZUMZUDZUNZGRZCUUNUOZHUPZLUVSCHUVRCUUNUQURUSUTVAUVEUUQUUN
+        PZUUQMNZSZPZMEUOZUUQUVGPZUVDUUOUWAUVCVBZUWAUWEVBZUVCCUUNVCUWAUUOUWGQZUU
+        OUVCQZUWEUWIUWAUVCUUOQUWJUWAUVCUUOVDUVCUUOVEVFUWJUUOUVBQZFRUWHUUOUVBFVG
+        UWKUWHFUUOUURUVAUWHUWAUUOUURQZUVAQZUWEUWAUWMQZUUOUWAUURUNZUVAQZUWEUWPUW
+        AUWLQZUVAQUWNUWOUWQUVAUUOUWAUURVHVIUWAUWLUVAVJVKUWPUWBEPZUWDQZMRZUWEUWP
+        UWBUUPUUQUUPIUBZUKZULZUMZUDZMRZUWTUWPUXDTPZUXFUWOUXGUVAUWOUXBTPZUXCTPZU
+        XGUWOUUQTPUXATPZUXHCVLUWOUUPISPZUXJUUOUWAUURUXKUUOUWAQZUURUXKVBZFUXLUUQ
+        OPZUXMFVMZUUNUUQVPZUUPUUNUAZUXKVBZFVMZUXOAUUQOACVNZUXRUXMFUXTUXQUURUXKU
+        UNUUQUUPVOZVQVRIVSZUXSAOUEZKVTWAWBWCWDZUYBUXKUXJUYBUYCKWEUUPIWGWFZWBUUQ
+        UXATTWHWIUXBTWJUUPTPUXIUXGFVLZUUPUXCTTWKWFWLZWMMUXDWNWOUWPUXEUWSMUWPUXE
+        UWSUWPUXEQZUWRUWDUYHUWRUVIUVJUWBUVOUDZUNZGRZCUUNUOZUYHUWAUYKUYLUUOUWAUU
+        RUVAUXEWRUYHUURUUPDPZUXEUNZUYKUYHUURUYMQZUXEQUYNUWPUYOUXEUWPUURUYMUUOUW
+        AUURUVAWPUWPUXQUUTBUUNUEZQZAOUOZUYMUWOUXLUURQUVAUYRUUOUWAUURWQUXLUURUVA
+        UYRUXLUXNUVBUYRVBUXPUXNUVBUYRUYQUVBAUUQOUXTUXQUURUYPUVAUYAUUTBUUNUUQWSW
+        TXAXIWBXBXCUYRFDJXDXEXFXGUURUYMUXEWQXEUYJUYNGUUPUYFGFVNZUVIUURUVJUYMUYI
+        UXEUUQUVHUUPXHUVHUUPDXJUYSUVOUXDUWBUYSUVHUUPUVNUXCUYSXTUYSUVMUXBUYSUVLU
+        XAUUQUVHUUPIXKXLXMXNXOXPXQWBUYKCUUNXRXSUWRUWBUVTPZUYHUYLEUVTUWBLYAUYHUW
+        BTPZUYTUYLYKUWOUXEVUAUVAUWOUXEQZVUAUXGUWOUXGUXEUYGWMUXEVUAUXGYKUWOUWBUX
+        DTXJYBYCYDUVSUYLHUWBTHMVNZUVRUYKCUUNVUCUVQUYJGVUCUVPUYIUVIUVJUVKUWBUVOY
+        EYFYGYLYHWBYIYCUWOUXEUWDUVAVUBUWDUUQUXDSZPZUWOVUEUXEUWOUXKUXJVUEUYDUYEU
+        XJUUQUXCSZPZVUEUXJUUQUUQULVUFCYJUUQUXATYMYNVUGUUQUUPSZVUFUMVUDUUQVUFVUH
+        YOUUPUXCYPYQWBWLWMUXEUWDVUEYKUWOUXEUWCVUDUUQUWBUXDYRYSYBYCYDXFXIUUAUUBU
+        WDMEUUCXEYTUUDUUEUUFYTUUGUUHUWFUUQMEUWCUULZPUWEUVGVUIUUQMEUUIYAMUUQEUWC
+        UUJVKUUKUUM $.
+
+      $( The union of ` B ` is defined on all ordinals.  Lemma for
+         ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.) $)
+      tfrlemibdmx $p |- ( ( x e. On
+                         /\ A. z
+                            e. x
+                               E. f
+                                  ( f Fn z
+                                  /\ A. y
+                                     e. z
+                                        ( f ` y ) = ( F ` ( f |` y ) ) ) )
+          -> dom U. B = x ) $=
+        ( vw vv cv wcel cfv wceq wa wex con0 wfn cres wral cuni cdm wss cop vex
+        eldm2 csn cun w3a cab unieqi eleq2i eluniab 19.42v rexbii r19.42v bitri
+        wrex exbii bitr4i df-rex exdistr anbi2i 19.42vvv fnop 3ad2ant1 ad2antll
+        wi ex adantl 3anan32 ontr1 3impib sylbir adantrr syld elsni elequ1 3syl
+        wb opth1 biimprcd adantr wo eleq2 biimpac 3ad2antr3 elun mpjaod exlimiv
+        sylib exlimivv sylbi sylan2b exlimdv syl5bi ssrdv tfrlemibxssdm eqssd )
+        AOZUAPZFOZCOZUBBOZXFQXFXHUCIQRBXGUDSFTCXDUDZSEUEZUFZXDXEXKXDUGXIXEMXKXD
+        MOZXKPXLNOZUHZXJPZNTXEXLXDPZNXLXJMUIZUJXEXOXPNXEXOXPXOXEXNGOZXGUBZXRDPZ
+        HOZXRXGXRIQZUHZUKZULZRZUMZGTZCXDVBZHUNZUEZPZXPXJYKXNEYJLUOUPXEYLSZXEXGX
+        DPZXNYAPZYGSZSZSZGTZCTHTZXPYMXEYQGTCTZHTZSYTYLUUBXEYLYPGTZCXDVBZHTZUUBY
+        LYOYISZHTUUEYIHXNUQUUDUUFHUUDYOYHSZCXDVBUUFUUCUUGCXDYOYGGURUSYOYHCXDUTV
+        AVCVDUUDUUAHUUDYNUUCSCTUUAUUCCXDVEYNYPCGVFVDVCVAVGXEYQHCGVHVDYSXPHCYRXP
+        GYRXNXRPZXPXNYDPZYRUUHXLXGPZXPYPUUHUUJVLZXEYNYGUUKYOXSXTUUKYFXSUUHUUJXG
+        XLXMXRVIVMVJVNVKXEYNUUJXPVLYPXEYNSZUUJXPUULUUJSXEUUJYNUMXPXEUUJYNVOXEUU
+        JYNXPXLXGXDVPVQVRVMVSVTYQUUIXPVLZXEYNUUMYPUUIXPYNUUIXNYCRXLXGRXPYNWDXNY
+        CWAXLXMXGYBXQNUIWEMCAWBWCWFWGVNYRXNYEPZUUHUUIWHYPUUNXEYNYOXSYFUUNXTYFYO
+        UUNYAYEXNWIWJWKVKXNXRYDWLWOWMWNWPWQWRVMWSWTXAWGABCDEFGHIJKLXBXC $.
+
+      $( The set ` B ` exists.  Lemma for ~tfrlemi1 .  (Contributed by Jim
+         Kingdon, 17-Mar-2019.) $)
+      tfrlemibex $p |- ( ( x e. On
+                         /\ A. z
+                            e. x
+                               E. f
+                                  ( f Fn z
+                                  /\ A. y
+                                     e. z
+                                        ( f ` y ) = ( F ` ( f |` y ) ) ) )
+          -> B e. _V ) $=
+        ( cv wcel cfv wceq wral wa cvv syl con0 wfn cres wex cuni cdm
+        wfun tfrlemibfun adantr tfrlemibdmx vex eleq1 mpbii jca funex
+        eqcoms uniexb sylibr ) AMZUANZFMZCMZUBBMZVAOVAVCUCIOPBVBQRFUD
+        CUSQZRZEUEZSNZESNVEVFUGZVFUFZSNZRVGVEVHVJUTVHVDABCDEFGHIJKLUH
+        UIVEVIUSPVJABCDEFGHIJKLUJVJUSVIUSVIPUSSNVJAUKUSVISULUMUPTUNSV
+        FUOTEUQUR $.
+
+      $( The union of ` B ` satisfies the recursion rule (lemma for
+         ~ tfrlemi1 ).  (Contributed by Jim Kingdon, 22-Apr-2019.) $)
+      tfrlemiubacc $p |- ( ( x e. On
+                         /\ A. z
+                            e. x
+                               E. f
+                                  ( f Fn z
+                                  /\ A. y
+                                     e. z
+                                        ( f ` y ) = ( F ` ( f |` y ) ) ) )
+          -> A. y e. x ( U. B ` y ) = ( F ` ( U. B |` y ) ) ) $=
+        ( vw cv con0 wcel cfv cres wceq wa wfn wral wex cuni nfv nfcv nfan nfex
+        nfra1 nfralxy cdm tfrlemibdmx eleq2d pm5.32i wss tfrlemibacc ssrdv dmss
+        ex unissd syl sseld crecs recsfval eqcomi tfr2a syl6 imp adantlr adantr
+        wfun tfrlem7 funeqi mpbi funssfv mp3an1 ax-ia1 eqeltrd onelss fun2ssres
+        sylan wi syl2anc fveq2d 3eqtr3d sylbir ralrimi ) ANZOPZFNZCNZUAZBNZWJQW
+        JWMRIQSZBWKUBZTZFUCZCWHUBZTZWMEUDZQZWTWMRZIQZSZBWHWIWRBWIBUEWQBCWHBWHUF
+        WPBFWLWOBWLBUEWNBWKUIUGUHUJUGWSWMWHPZXDWSXETWSWMWTUKZPZTZXDWSXGXEWSXFWH
+        WMABCDEFGHIJKLULZUMUNXHWMDUDZQZXJWMRZIQZXAXCWIXGXKXMSZWRWIXGXNWIXGWMXJU
+        KZPXNWIXFXOWMWIWTXJUOZXFXOUOWIEDWIMEDWIMNZEPXQDPABCDEFGHMIJKLUPUSUQUTZW
+        TXJURVAVBWMXJIIVCZXJABDFIJVDZVEVFVGVHVIWSXPXGXKXASZWIXPWRXRVJZXJVKZXPXG
+        YAXSVKYCABDFIJVLXSXJXTVMVNZWMXJWTVOVPWAXHXLXBIXHXPWMXFUOZXLXBSZWSXPXGYB
+        VJWSXGYEWSXFOPXGYEWBWSXFWHOXIWIWRVQVRXFWMVSVAVHYCXPYEYFYDWMXJWTVTVPWCWD
+        WEWFUSWG $.
+
+      $( Lemma for ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.) $)
+      tfrlemiex $p |- ( ( x e. On
+                         /\ A. z
+                            e. x
+                               E. f
+                                  ( f Fn z
+                                  /\ A. y
+                                     e. z
+                                        ( f ` y ) = ( F ` ( f |` y ) ) ) )
+          ->
+          E. f
+                               ( f Fn x
+                               /\ A. y
+                                  e. x
+                                     ( f ` y ) = ( F ` ( f |` y ) ) )
+          ) $=
+        ( cv con0 wcel wfn cfv wceq nfcv nfv cres wral wa cuni wfun tfrlemibfun
+        wex adantr tfrlemibdmx df-fn sylanbrc tfrlemiubacc wi tfrlemibex uniexg
+        cdm cvv cop csn cun w3a wrex nfab1 nfcxfr nfcri nf3an nfex nfrexxy nfab
+        nfuni nffn nffv nfres nfeq nfralxy nfan fneq1 nfra1 fveq1 reseq1 fveq2d
+        cab eqeq12d ralbid anbi12d spcegf 3syl mp2and ) AMZNOZFMZCMZPBMZWKQZWKW
+        MUAZIQZRZBWLUBUCFUGCWIUBZUCZEUDZWIPZWMWTQZWTWMUAZIQZRZBWIUBZWKWIPZWQBWI
+        UBZUCZFUGZWSWTUEZWTUPWIRXAWJXKWRABCDEFGHIJKLUFUHABCDEFGHIJKLUIWTWIUJUKA
+        BCDEFGHIJKLULWSEUQOWTUQOXAXFUCZXJUMABCDEFGHIJKLUNEUQUOXIXLFWTUQFEFEGMZW
+        LPZXMDOZHMXMWLXMIQURUSUTRZVAZGUGZCWIVBZHWBZLXSFHXRFCWIFWISZXQFGXNXOXPFX
+        NFTFGDFDXIANVBZFWBZJYBFVCVDVEXPFTVFVGVHVIVDVJZXAXFFFWIWTYDYAVKXEFBWIYAF
+        XBXDFWMWTYDFWMSZVLFXCIFISFWTWMYDYEVMVLVNVOVPWKWTRZXGXAXHXFWIWKWTVQYFWQX
+        EBWIBWKWTBWKSBEBEXTLXSBHXRBCWIBWISXQBGXNXOXPBXNBTBGDBDYCJYBBFXIBANBNSXG
+        XHBXGBTWQBWIVRVPVHVIVDVEXPBTVFVGVHVIVDVJVNYFWNXBWPXDWMWKWTVSYFWOXCIWKWT
+        WMVTWAWCWDWEWFWGWH $.
+    $}
+
+    $( We can define an acceptable function on any ordinal.
+
+       As with many of the transfinite recursion theorems, we have a hypothesis
+       that states that ` F ` is a function and that it is defined for all
+       ordinals.  (Contributed by Jim Kingdon, 4-Mar-2019.) $)
+    tfrlemi1 $p |- ( x e. On -> E. f ( f Fn x /\
+        A. y e. x ( f ` y ) = ( F ` ( f |` y ) )
+        ) ) $=
+      ( vz vw vh cv wfn cfv cres wceq wral wa wex fneq2 wcel con0 cop
+      raleq anbi12d exbidv csn cun w3a wrex cab eqid tfrlemiex tfis2
+      ex ) DKZAKZLZBKZUOMUOURNEMOZBUPPZQZDRZUOHKZLZUSBVCPZQZDRZAHUPVC
+      OZVAVFDVHUQVDUTVEUPVCUOSUSBUPVCUCUDUEUPUATVGHUPPVBABHCIKZVCLVIC
+      TJKVIVCVIEMUBUFUGOUHIRHUPUIJUJZDIJEFGVJUKULUNUM $.
+  $}
+
+  ${
+    $d x y z u v w f g h i j F $.  $d x z u v w g h i j f A $.
+    tfrlemi14.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    tfrlemi14.2 $e |- ( Fun F /\ A. x e. On A. f ( f Fn x -> f e. dom F ) ) $.
+    $( The domain of ` recs ` is all ordinals (lemma for transfinite
+       recursion).  (Contributed by Jim Kingdon, 4-May-2019.) $)
+    tfrlemi14 $p |- dom recs ( F ) = On $=
+      ( vg vz cdm con0 cv wcel wrex wa cfv wceq wex cvv sylib word tfrlem8 mpan
+      crecs ordelon cuni wfn cres wral tfrlemi1 ancli pm4.24 anbi1i anass bitri
+      exbii anbi2i eleq1 fneq2 raleq anbi12d anbi2d exbidv spimev df-rex sylibr
+      biimprd syl rexbii rexcom r19.42v tfrlem3fg abeq2i bitr4i tru cop csn cun
+      rexv wtru tfrlemisucaccun imp wi wfun simpri rspec 19.21bi simpli funfvex
+      wal dmsnopg ssnid eleq2 mpbiri elun2 dmun syl6eleqr 3syl adantr wb eleq2d
+      dmeq adantl mpbird adantlrr a1d rspcimedv mpi exlimddv dmuni eleq2i eliun
+      ciun recsfval dmeqi impbii eqriv ) AEUDZJZKALZXSMZXTKMZXSUAYAYBABCDEFUBXS
+      XTUEUCYBXTCUFZJZXSYBXTHLZJZMZHCNZXTYDMZYBDLZXTUGZYJCMZOZYHDYBYKYJILZUGZBL
+      ZYJPYJYPUHEPQZBYNUIZOZOZIKNZDRZYMDRYBUUADSNZUUBYBYTDSNZIKNZUUCYBYTDRZIKNZ
+      UUEYBYNKMZUUFOZIRZUUGYBYBYKYKYQBXTUIZOZOZDRZOZUUJYBYBUULDRZOUUOYBUUPABCDE
+      FGUJUKUUPUUNYBUULUUMDUULYKYKOZUUKOUUMYKUUQUUKYKULUMYKYKUUKUNUOUPUQTUUOUUI
+      IAYNXTQZUUIUUOUURUUHYBUUFUUNYNXTKURUURYTUUMDUURYSUULYKUURYOYKYRUUKYNXTYJU
+      SYQBYNXTUTVAVBVCVAVGVDVHUUFIKVEVFUUDUUFIKYTDVSVIVFYTIDKSVJTUUADVSTUUAYMDU
+      UAYKYSIKNZOYMYKYSIKVKYLUUSYKUUSDCABICDDEFVLVMUQVNUPTYBYMOZVTYHVOUUTYGVTHY
+      JXTYJEPZVPVQZVRZCYBYMUVCCMABACDDEFGWAWBUUTYEUVCQZOYGVTYBYKUVDYGYLYBYKOZUV
+      DOYGXTUVCJZMZUVEUVGUVDUVEUVASMZUVBJZXTVQZQZUVGUVEYJEJMZUVHYBYKUVLYBYKUVLW
+      CZDUVMDWJZAKEWDZUVNAKUIZGWEWFWGWBUVOUVLUVHUVOUVPGWHYJEWIUCVHXTUVASWKUVKXT
+      UVIMZUVGUVKUVQXTUVJMAWLUVIUVJXTWMWNUVQXTYJJZUVIVRUVFXTUVIUVRWOYJUVBWPWQVH
+      WRWSUVDYGUVGWTUVEUVDYFUVFXTYEUVCXBXAXCXDXEXFXGXHXIYIXTHCYFXMZMYHYDUVSXTHC
+      XJXKHXTCYFXLUOVFXRYCABCDEFXNXOWQXPXQ $.
+  $}
+
+  ${
+    $d G f w x y z $.
+    tfri1.1 $e |- F = recs ( G ) $.
+    tfri1.2 $e |- ( Fun G /\ A. x e. On A. f ( f Fn x -> f e. dom G ) ) $.
+    $( Principle of Transfinite Recursion, part 1 of 3.  Theorem 7.41(1) of
+       [TakeutiZaring] p. 47, with the additional condition that the recursion
+       rule ` G ` is defined for all ordinals.  Given a function ` G `
+       satisfying that condition, we define a class ` A ` of all "acceptable"
+       functions.  The final function we're interested in is the union
+       ` F = recs ( G ) ` of them. ` F ` is then said to be defined by
+       transfinite recursion.  The purpose of the 3 parts of this theorem is to
+       demonstrate properties of ` F ` .  In this first part we show that ` F `
+       is a function whose domain is all ordinal numbers.  (Contributed by Jim
+       Kingdon, 4-May-2019.) $)
+    tfri1 $p |- F Fn On $=
+      ( vy vz vw con0 wfn crecs wfun cdm wceq cv cfv cres wral wa cab
+      wrex tfrlem7 tfrlem3fg tfrlemi14 df-fn mpbir2an fneq1i mpbir
+      eqid ) CJKDLZJKZULUKMUKNJOGHIPZGPZKHPZUMQUMUORDQOHUNSTGJUBIUAZI
+      DUPUJZUCAHUPBDGHAUPIBDUQUDFUEUKJUFUGJCUKEUHUI $.
+
+    $( Principle of Transfinite Recursion, part 2 of 3.  Theorem 7.41(2) of
+       [TakeutiZaring] p. 47, with the additional condition that the recursion
+       rule ` G ` is defined for all ordinals.  Here we show that the function
+       ` F ` has the property that for any function ` G ` satisfying that
+       condition, the "next" value of ` F ` is ` G ` recursively applied to all
+       "previous" values of ` F ` .  (Contributed by Jim Kingdon,
+       4-May-2019.) $)
+    tfri2 $p |- ( A e. On -> ( F ` A ) = ( G ` ( F |` A ) ) ) $=
+      ( con0 wcel cdm cfv cres wceq wfn tfri1 fndm ax-mp eleq2i tfr2a
+      sylbir ) BHIBDJZIBDKDBLEKMUAHBDHNUAHMACDEFGOHDPQRBDEFST $.
+  $}
+
+  ${
+    $d B x y $.  $d F x y $.  $d G f w x y z $.
+    tfri3.1 $e |- F = recs ( G ) $.
+    tfri3.2 $e |- ( Fun G /\ A. x e. On A. f ( f Fn x -> f e. dom G ) ) $.
+    $( Principle of Transfinite Recursion, part 3 of 3.  Theorem 7.41(3) of
+       [TakeutiZaring] p. 47, with the additional condition that the recursion
+       rule ` G ` is defined for all ordinals.  Finally, we show that ` F ` is
+       unique.  We do this by showing that any class ` B ` with the same
+       properties of ` F ` that we showed in parts 1 and 2 is identical to
+       ` F ` .  (Contributed by Jim Kingdon, 4-May-2019.) $)
+    tfri3 $p |- ( ( B Fn On /\
+             A. x e. On ( B ` x ) = ( G ` ( B |` x ) ) ) -> B = F ) $=
+      ( vy con0 wfn cv cfv cres wceq wral wa nfv wi fveq2 wb nfan rsp
+      nfra1 wcel nfim eqeq12d imbi2d r19.21v wss tfri1 fvreseq mpanl2
+      onss syl6bir sylan2 ancoms adantr tfri2 jctr jcab sylibr eqeq12
+      imp adantl mpbird exp43 com4t exp4a pm2.43d syl com3l imp3a a2d
+      syl6 syl5bi tfis2f com12 ralrimi eqfnfv mpan2 biimpar syldan )
+      BIJZAKZBLZBWDMZELZNZAIOZWEWDDLZNZAIOZBDNZWCWIPZWKAIWCWIAWCAQWHA
+      IUCUAZWDIUDZWNWKWNWKRZWNHKZBLZWRDLZNZRZAHWNXAAWOXAAQUEWDWRNZWKX
+      AWNXCWEWSWJWTWDWRBSWDWRDSUFUGXBHWDOWNXAHWDOZRWPWQWNXAHWDUHWPWNX
+      DWKWPWCWIXDWKRZWIWPWCXEWIWPWHRZWPWCXERZRWHAIUBXFWPXGXFWPWPWCXEW
+      PWCPZXDXFWPWKXHXDXFWPWKXHXDPZXFWPPZPWKWGDWDMZELZNZXIXMXJXHXDXMW
+      CWPXDXMRZWPWCWDIUIZXNWDUMWCXOPXDWFXKNZXMWCDIJZXOXPXDTACDEFGUJZH
+      IWDBDUKULWFXKESUNUOUPVCUQXJWKXMTZXIXFWPXSXFWPWHWJXLNZPZXSXFXFWP
+      XTRZPWPYARXFYBAWDCDEFGURUSWPWHXTUTVAWEWGWJXLVBVNVCVDVEVFVGVHVIV
+      JVKVLVMVOVPVQVRWCWMWLWCXQWMWLTXRAIBDVSVTWAWB $.
   $}
 
 $(
