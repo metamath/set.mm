@@ -53963,6 +53963,24 @@ $)
       BEUCUDGUJZGUMURUEUFUKUNDCBAUGUHUI $.
   $}
 
+  ${
+    $d x y z f g u v w F $.  $d x y z f g u v w A $.
+    rdgifnon.1 $e |- A e. _V $.
+    rdgifnon.2 $e |- F Fn _V $.
+    $( The recursive definition generator is a function on ordinal numbers.
+       The ` F Fn _V ` hypothesis states that the characteristic function is
+       defined for all sets (being defined for all ordinals might be enough,
+       but being defined for all sets will generally hold for the
+       characteristic functions we need to use this with).  (Contributed by Jim
+       Kingdon, 27-May-2019.) $)
+    rdgifnon $p |- rec ( F , A ) Fn On $=
+      ( vf vg vx crdg cvv cdm cfv ciun cun cmpt df-irdg wcel vex funfvex mp2an
+      cv wfun funmpt dmex wfn fvex funfni iunex unex eqid dmmpti eleqtrri tfri1
+      pm3.2i ) EBAHFIAGFTZJZGTZUNKZBKZLZMZNZGFBAOVAUAZETZVAKIPZFIUTUBZVBVCVAJZP
+      VDVEVCIVFEQFIUTVAAUSCGUOURUNFQZUCBIUDUQIPURIPZDUPUNIIVGGQUEVHIUQBUQBRUFSU
+      GUHVAUIUJUKVCVARSUMUL $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
