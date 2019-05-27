@@ -52,7 +52,8 @@ CH  Chen-Pang He         MM  Mykola Mostovenko
 Theorems which are the same as in set.mm should be named the same (that is,
 where the statement of the theorem is the same; the proof can differ without
 a new name being called for).  Theorems which are different should be named
-differently.  A biconditional in set.mm which is an implication in iset.mm
+differently (although if additional hypotheses are added in iset.mm the name
+need not be changed).  A biconditional in set.mm which is an implication in iset.mm
 should have a "r" (for the reverse direction), or "i"/"im" (for the forward
 direction) appended.  A theorem in set.mm which has a decidability condition
 added should add "dc" to the theorem name.  A theorem in set.mm where
@@ -62,6 +63,11 @@ to the theorem name.
 As with set.mm, we welcome suggestions for better names (such as names which
 are more consistent with naming conventions).
 
+We do try to keep set.mm and iset.mm similar where we can. For example, if
+a theorem exists both places but the name in set.mm isn't great, we tend to
+keep that name for iset.mm, or change it in both files together. This is
+mainly to make it easier to copy theorems, but also to generally help people
+browse proofs, find theorems, write proofs, etc.
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                            2. Quick "How To"
@@ -33979,9 +33985,8 @@ $)
 
   ${
     snex.1 $e |- A e. _V $.
-    $( A singleton whose element exists is a set.
-       (Contributed by NM, 7-Aug-1994.)
-       (Revised by Mario Carneiro, 24-May-2019.) $)
+    $( A singleton whose element exists is a set.  (Contributed by NM,
+       7-Aug-1994.)  (Revised by Mario Carneiro, 24-May-2019.) $)
     snex $p |- { A } e. _V $=
       ( cvv wcel csn snexg ax-mp ) ACDAECDBACFG $.
   $}
@@ -34237,8 +34242,8 @@ $)
   ${
     opex.1 $e |- A e. _V $.
     opex.2 $e |- B e. _V $.
-    $( An ordered pair of sets is a set.  (Contributed by Jim
-      Kingdon, 24-Sep-2018.) (Revised by Mario Carneiro, 24-May-2019.) $)
+    $( An ordered pair of sets is a set.  (Contributed by Jim Kingdon,
+       24-Sep-2018.)  (Revised by Mario Carneiro, 24-May-2019.) $)
     opex $p |- <. A , B >. e. _V $=
       ( cvv wcel cop opexg mp2an ) AEFBEFABGEFCDABEEHI $.
   $}
@@ -44859,15 +44864,15 @@ $)
   ${
     $d x A $.  $d x B $.  $d x F $.
     $( The value of a function is a subset of ` B ` if every element that could
-       be a candidate for the value is a subset of ` B ` .
-       (Contributed by Mario Carneiro, 24-May-2019.) $)
+       be a candidate for the value is a subset of ` B ` .  (Contributed by
+       Mario Carneiro, 24-May-2019.) $)
     fvss $p |- ( A. x ( A F x -> x C_ B ) -> ( F ` A ) C_ B ) $=
       ( cv wbr wss wi wal cfv cio df-fv iotass syl5eqss ) BAEZDFZOCGHAIBDJPAKCA
       BDLPACMN $.
 
     $( The result of a function value is always a subset of the union of the
-       range, if the input is a set.  (Contributed by Stefan
-       O'Rear, 2-Nov-2014.)  (Revised by Mario Carneiro, 24-May-2019.) $)
+       range, if the input is a set.  (Contributed by Stefan O'Rear,
+       2-Nov-2014.)  (Revised by Mario Carneiro, 24-May-2019.) $)
     fvssunirng $p |- ( A e. _V -> ( F ` A ) C_ U. ran F ) $=
       ( vx cvv wcel cv wbr crn cuni wss wi wal cfv vex brelrng 3exp mpi elssuni
       syl6 alrimiv fvss syl ) ADEZACFZBGZUDBHZIZJZKZCLABMUGJUCUICUCUEUDUFEZUHUC
@@ -44892,15 +44897,14 @@ $)
       $.
 
     $( If a function has a set range, then the function value exists
-       unconditional on the domain.
-       (Contributed by Mario Carneiro, 24-May-2019.) $)
+       unconditional on the domain.  (Contributed by Mario Carneiro,
+       24-May-2019.) $)
     relrnfvex $p |- ( ( Rel F /\ ran F e. _V ) -> ( F ` A ) e. _V ) $=
       ( wrel cfv crn cuni wss cvv wcel relfvssunirn uniexg ssexg syl2an ) BCABD
       ZBEZFZGPHINHIOHIABJOHKNPHLM $.
 
-    $( If a function is set-like, then the function value exists
-       if the input does.
-       (Contributed by Mario Carneiro, 24-May-2019.) $)
+    $( If a function is set-like, then the function value exists if the input
+       does.  (Contributed by Mario Carneiro, 24-May-2019.) $)
     sefvex $p |- ( ( `' F Se _V /\ A e. _V ) -> ( F ` A ) e. _V ) $=
       ( vy vx cvv ccnv wse wcel wa cfv cv wbr crab cuni wss wi wal w3a vex syl
       a1i simp3 simp2 brcnvg sylancr mpbird breq1 elrab sylanbrc elssuni 3expia
@@ -53496,10 +53500,11 @@ $)
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
     ${
       tfrlem3.2 $e |- G e. _V $.
-      $( Lemma for transfinite recursion.  Let ` A ` be the class of "acceptable"
-         functions.  The final thing we're interested in is the union of all
-         these acceptable functions.  This lemma just changes some bound
-         variables in ` A ` for later use.  (Contributed by NM, 9-Apr-1995.) $)
+      $( Lemma for transfinite recursion.  Let ` A ` be the class of
+         "acceptable" functions.  The final thing we're interested in is the
+         union of all these acceptable functions.  This lemma just changes some
+         bound variables in ` A ` for later use.  (Contributed by NM,
+         9-Apr-1995.) $)
       tfrlem3a $p |- ( G e. A <-> E. z e. On ( G Fn z /\
                   A. w e. z ( G ` w ) = ( F ` ( G |` w ) ) ) ) $=
         ( cv wfn cfv cres wceq wral wa con0 wrex simpr fveq12d reseq12d eqeq12d
@@ -53544,7 +53549,7 @@ $)
 
     $( Lemma for transfinite recursion.  The values of two acceptable functions
        are the same within their domains.  (Contributed by NM, 9-Apr-1995.)
-         (Revised by Mario Carneiro, 24-May-2019.) $)
+       (Revised by Mario Carneiro, 24-May-2019.) $)
     tfrlem5 $p |- ( ( g e. A /\ h e. A ) ->
                     ( ( x g u /\ x h v ) -> u = v ) ) $=
       ( vz va vw cv wcel cfv wceq wral wa con0 wfn cres wrex wi tfrlem3a reeanv
@@ -53579,8 +53584,8 @@ $)
       UA $.
 
     $( Lemma for transfinite recursion.  The union of all acceptable functions
-       is a function.  (Contributed by NM, 9-Aug-1994.)
-         (Revised by Mario Carneiro, 24-May-2019.) $)
+       is a function.  (Contributed by NM, 9-Aug-1994.)  (Revised by Mario
+       Carneiro, 24-May-2019.) $)
     tfrlem7 $p |- Fun recs ( F ) $=
       ( vu vv vg vh cv cop wcel wa wal wex eleq2i eluni bitri anbi12i wfun wrel
       crecs wceq wi tfrlem6 cuni recsfval eeanv bitr4i wbr df-br tfrlem5 impcom
@@ -53650,8 +53655,7 @@ $)
       tfrlemisuc.5 $e |- ( ph -> g e. A ) $.
       $( We can extend an acceptable function by one element to produce a
          function.  Lemma for ~ tfrlemi1 .  (Contributed by Jim Kingdon,
-         4-Mar-2019.)
-         (Proof shortened by Mario Carneiro, 24-May-2019.) $)
+         4-Mar-2019.)  (Proof shortened by Mario Carneiro, 24-May-2019.) $)
       tfrlemisucfn $p |- ( ph -> ( g u. { <. z , ( F ` g ) >. } ) Fn suc z ) $=
         ( cv csuc cfv cop cvv wcel a1i csn cun vex wfun tfrlem3-2 simpri df-suc
         eqid wn elirr fnunsn ) ADNZULOGNZUMULUMHPZQUAUBZULUNULRSADUCTUNRSZAHUDU
@@ -53659,8 +53663,8 @@ $)
 
       $( We can extend an acceptable function by one element to produce an
          acceptable function.  Lemma for ~ tfrlemi1 .  (Contributed by Jim
-         Kingdon, 4-Mar-2019.)
-         (Proof shortened by Mario Carneiro, 24-May-2019.) $)
+         Kingdon, 4-Mar-2019.)  (Proof shortened by Mario Carneiro,
+         24-May-2019.) $)
       tfrlemisucaccv $p |- ( ph -> ( g u. { <. z , ( F ` g ) >. } ) e. A ) $=
         ( vw vu cfv wceq wa con0 wcel cv cop csn cun wfn cres wral suceloni syl
         wrex csuc tfrlemisucfn wo vex elsuc tfrlem3a sylib simprrr adantr fndmu
@@ -53692,8 +53696,8 @@ $)
       tfrlemi1.5 $e |- ( ph -> A. z e. x E. g ( g Fn z /\
         A. w e. z ( g ` w ) = ( F ` ( g |` w ) ) ) ) $.
       $( Each element of ` B ` is an acceptable function.  Lemma for
-         ~ tfrlemi1 .  (Contributed by Jim Kingdon, 14-Mar-2019.)
-         (Proof shortened by Mario Carneiro, 24-May-2019.) $)
+         ~ tfrlemi1 .  (Contributed by Jim Kingdon, 14-Mar-2019.)  (Proof
+         shortened by Mario Carneiro, 24-May-2019.) $)
       tfrlemibacc $p |- ( ph -> B C_ A ) $=
          ( cv wcel wa con0 wfn cfv cop csn cun wceq w3a wex wrex simpr3 ad2antrr
         simplr onelon syl2anc simpr1 simpr2 tfrlemisucaccv eqeltrd ex rexlimdva
@@ -53703,8 +53707,8 @@ $)
         UQURUSVBUTVCVD $.
 
       $( The union of ` B ` is defined on all ordinals.  Lemma for
-         ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.)
-         (Proof shortened by Mario Carneiro, 24-May-2019.) $)
+         ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.)  (Proof
+         shortened by Mario Carneiro, 24-May-2019.) $)
       tfrlemibxssdm $p |- ( ph -> x C_ dom U. B ) $=
         ( cv wcel con0 wa cuni cdm wral wss wfn cfv cres wceq wex cop tfrlem3-2
         csn cun wfun simpri opex snid elun2 mp1i simplr simprl wrex onelon rspe
@@ -53719,9 +53723,9 @@ $)
         UIZYCGRZYEIVRXFYFTYFDWQVBZYGYFDWQVDYHJGNVOVIVPVSVTWIWAWBWCWDXJXMGWEWFWM
         XIWNXPXQWGWHVTWBWJWKDWQWOWLVI $.
 
-      $( The union of ` B ` is a function defined on ` x `.  Lemma for
-         ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.)
-         (Proof shortened by Mario Carneiro, 24-May-2019.) $)
+      $( The union of ` B ` is a function defined on ` x ` .  Lemma for
+         ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.)  (Proof
+         shortened by Mario Carneiro, 24-May-2019.) $)
       tfrlemibfn $p |- ( ph -> U. B Fn x ) $=
         ( cv wss cvv wcel cuni wfun cdm wceq crecs tfrlemibacc unissd syl6sseqr
         wfn recsfval tfrlem7 funss ee10 cxp cpw cfv cop csn cun w3a wex wrex wa
@@ -53740,15 +53744,15 @@ $)
         CXDXHXKXEXF $.
 
       $( The set ` B ` exists.  Lemma for ~ tfrlemi1 .  (Contributed by Jim
-         Kingdon, 17-Mar-2019.)
-         (Proof shortened by Mario Carneiro, 24-May-2019.) $)
+         Kingdon, 17-Mar-2019.)  (Proof shortened by Mario Carneiro,
+         24-May-2019.) $)
       tfrlemibex $p |- ( ph -> B e. _V ) $=
         ( cuni cvv wcel cv wfn tfrlemibfn vex a1i fnex syl2anc uniexb sylibr )
         AGQZRSZGRSAUIBTZUAUKRSZUJABCDEFGHIJKLMNOPUBULABUCUDUKRUIUEUFGUGUH $.
 
       $( The union of ` B ` satisfies the recursion rule (lemma for
-         ~ tfrlemi1 ).  (Contributed by Jim Kingdon, 22-Apr-2019.)
-         (Proof shortened by Mario Carneiro, 24-May-2019.) $)
+         ~ tfrlemi1 ).  (Contributed by Jim Kingdon, 22-Apr-2019.)  (Proof
+         shortened by Mario Carneiro, 24-May-2019.) $)
       tfrlemiubacc $p |- ( ph ->
           A. u e. x ( U. B ` u ) = ( F ` ( U. B |` u ) ) ) $=
         ( cfv wceq wcel cv cuni cres wral crecs cdm wfn tfrlemibfn fndm syl wss
@@ -53779,8 +53783,8 @@ $)
 
        As with many of the transfinite recursion theorems, we have a hypothesis
        that states that ` F ` is a function and that it is defined for all
-       ordinals.  (Contributed by Jim Kingdon, 4-Mar-2019.)
-         (Proof shortened by Mario Carneiro, 24-May-2019.) $)
+       ordinals.  (Contributed by Jim Kingdon, 4-Mar-2019.)  (Proof shortened
+       by Mario Carneiro, 24-May-2019.) $)
     tfrlemi1 $p |- ( z e. On -> E. g ( g Fn z /\
         A. u e. z ( g ` u ) = ( F ` ( g |` u ) ) ) ) $=
       ( vk vw vv cv cfv wceq wral wa wex simpr va vt vh wfn cres fneq12d fveq1d
@@ -53806,8 +53810,8 @@ $)
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
     tfrlemi14.2 $e |- ( Fun F /\ ( F ` x ) e. _V ) $.
     $( The domain of ` recs ` is all ordinals (lemma for transfinite
-       recursion).  (Contributed by Jim Kingdon, 4-May-2019.)
-         (Proof shortened by Mario Carneiro, 24-May-2019.) $)
+       recursion).  (Contributed by Jim Kingdon, 4-May-2019.)  (Proof shortened
+       by Mario Carneiro, 24-May-2019.) $)
     tfrlemi14 $p |- dom recs ( F ) = On $=
       ( vh vz vg vu vw cdm con0 cv wcel wrex cfv wceq wa crecs word wss tfrlem8
       ordsson ax-mp ciun wfn cres wral wex fneq2 raleq anbi12d tfrlemi1 vtoclga
@@ -53828,16 +53832,20 @@ $)
     tfri1.1 $e |- F = recs ( G ) $.
     tfri1.2 $e |- ( Fun G /\ ( G ` x ) e. _V ) $.
     $( Principle of Transfinite Recursion, part 1 of 3.  Theorem 7.41(1) of
-       [TakeutiZaring] p. 47, with the additional condition that the recursion
-       rule ` G ` is defined for all ordinals.  Given a function ` G `
-       satisfying that condition, we define a class ` A ` of all "acceptable"
-       functions.  The final function we're interested in is the union
-       ` F = recs ( G ) ` of them. ` F ` is then said to be defined by
-       transfinite recursion.  The purpose of the 3 parts of this theorem is to
-       demonstrate properties of ` F ` .  In this first part we show that ` F `
-       is a function whose domain is all ordinal numbers.  (Contributed by Jim
-       Kingdon, 4-May-2019.)
-         (Revised by Mario Carneiro, 24-May-2019.) $)
+       [TakeutiZaring] p. 47, with an additional condition.
+
+       The condition is that ` G ` is defined "everywhere" and here is stated
+       as ` ( G `` x ) e. _V ` .  Alternatively
+       ` A. x e. On A. f ( f Fn x -> f e. dom F ) ` would suffice.
+
+       Given a function ` G ` satisfying that condition, we define a class
+       ` A ` of all "acceptable" functions.  The final function we're
+       interested in is the union ` F = recs ( G ) ` of them. ` F ` is then
+       said to be defined by transfinite recursion.  The purpose of the 3 parts
+       of this theorem is to demonstrate properties of ` F ` .  In this first
+       part we show that ` F ` is a function whose domain is all ordinal
+       numbers.  (Contributed by Jim Kingdon, 4-May-2019.)  (Revised by Mario
+       Carneiro, 24-May-2019.) $)
     tfri1 $p |- F Fn On $=
       ( vy vz vw vg vu vf con0 wfn wceq cv cfv cres wral wa wrex crecs wfun cdm
       cab eqid tfrlem7 tfrlem3 tfrlemi14 df-fn mpbir2an fneq1i mpbir ) BLMCUAZL
@@ -53845,8 +53853,8 @@ $)
       UTQCPNJUQRSGLTIUDZKCGJAFVAIKCVAUEUGEUHUMLUIUJLBUMDUKUL $.
 
     $( Principle of Transfinite Recursion, part 2 of 3.  Theorem 7.41(2) of
-       [TakeutiZaring] p. 47, with the additional condition that the recursion
-       rule ` G ` is defined for all ordinals.  Here we show that the function
+       [TakeutiZaring] p. 47, with an additional condition on the recursion
+       rule ` G ` ( as described at ~ tfri1 ).  Here we show that the function
        ` F ` has the property that for any function ` G ` satisfying that
        condition, the "next" value of ` F ` is ` G ` recursively applied to all
        "previous" values of ` F ` .  (Contributed by Jim Kingdon,
@@ -53861,8 +53869,8 @@ $)
     tfri3.1 $e |- F = recs ( G ) $.
     tfri3.2 $e |- ( Fun G /\ ( G ` x ) e. _V ) $.
     $( Principle of Transfinite Recursion, part 3 of 3.  Theorem 7.41(3) of
-       [TakeutiZaring] p. 47, with the additional condition that the recursion
-       rule ` G ` is defined for all ordinals.  Finally, we show that ` F ` is
+       [TakeutiZaring] p. 47, with an additional condition on the recursion
+       rule ` G ` ( as described at ~ tfri1 ).  Finally, we show that ` F ` is
        unique.  We do this by showing that any class ` B ` with the same
        properties of ` F ` that we showed in parts 1 and 2 is identical to
        ` F ` .  (Contributed by Jim Kingdon, 4-May-2019.) $)
