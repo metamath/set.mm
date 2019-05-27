@@ -899,6 +899,7 @@
 "atsseq" is used by "atnemeq0".
 "atssma" is used by "atordi".
 "ax-13" is used by "ax13v".
+"ax-4" is used by "alim".
 "ax-6" is used by "ax6v".
 "ax-ac" is used by "ac2".
 "ax-ac" is used by "zfac".
@@ -13483,6 +13484,7 @@ New usage of "atsseq" is discouraged (1 uses).
 New usage of "atssma" is discouraged (1 uses).
 New usage of "avril1" is discouraged (0 uses).
 New usage of "ax-13" is discouraged (1 uses).
+New usage of "ax-4" is discouraged (1 uses).
 New usage of "ax-6" is discouraged (1 uses).
 New usage of "ax-ac" is discouraged (2 uses).
 New usage of "ax-addass" is discouraged (1 uses).
@@ -15180,6 +15182,7 @@ New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "eu1OLD" is discouraged (0 uses).
 New usage of "eu2OLD" is discouraged (0 uses).
 New usage of "eu3OLD" is discouraged (0 uses).
+New usage of "eu5OLD" is discouraged (0 uses).
 New usage of "euanOLD" is discouraged (0 uses).
 New usage of "euexOLD" is discouraged (0 uses).
 New usage of "eufOLD" is discouraged (0 uses).
@@ -15793,6 +15796,7 @@ New usage of "imbi12" is discouraged (3 uses).
 New usage of "imbi12VD" is discouraged (0 uses).
 New usage of "imbi13" is discouraged (2 uses).
 New usage of "imbi13VD" is discouraged (0 uses).
+New usage of "imnotOLD" is discouraged (0 uses).
 New usage of "impexp3a" is discouraged (1 uses).
 New usage of "impexp3acom3r" is discouraged (0 uses).
 New usage of "imsdf" is discouraged (2 uses).
@@ -17756,6 +17760,11 @@ Proof modification of "binom2aiOLD" is discouraged (171 steps).
 Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
 Proof modification of "bj-19.21t" is discouraged (39 steps).
+Proof modification of "bj-ala1" is discouraged (9 steps).
+Proof modification of "bj-ala1BIS" is discouraged (9 steps).
+Proof modification of "bj-axd2d" is discouraged (16 steps).
+Proof modification of "bj-axdd2" is discouraged (28 steps).
+Proof modification of "bj-axtd" is discouraged (26 steps).
 Proof modification of "bj-denotes" is discouraged (69 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
 Proof modification of "bj-elisset" is discouraged (38 steps).
@@ -18049,6 +18058,7 @@ Proof modification of "equncomiVD" is discouraged (19 steps).
 Proof modification of "eu1OLD" is discouraged (92 steps).
 Proof modification of "eu2OLD" is discouraged (118 steps).
 Proof modification of "eu3OLD" is discouraged (45 steps).
+Proof modification of "eu5OLD" is discouraged (38 steps).
 Proof modification of "euanOLD" is discouraged (106 steps).
 Proof modification of "euexOLD" is discouraged (32 steps).
 Proof modification of "eufOLD" is discouraged (73 steps).
@@ -18128,6 +18138,7 @@ Proof modification of "imbi12" is discouraged (30 steps).
 Proof modification of "imbi12VD" is discouraged (121 steps).
 Proof modification of "imbi13" is discouraged (34 steps).
 Proof modification of "imbi13VD" is discouraged (67 steps).
+Proof modification of "imnotOLD" is discouraged (17 steps).
 Proof modification of "impexp3a" is discouraged (16 steps).
 Proof modification of "impexp3acom3r" is discouraged (32 steps).
 Proof modification of "in1" is discouraged (11 steps).

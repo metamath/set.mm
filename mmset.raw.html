@@ -2801,8 +2801,8 @@ Tarski's axiom schemes; see theorem schemes ~ ax10w , ~ ax11w ,
 ~ ax12w , and ~ ax13w .  These
 theorem schemes have hypotheses that can be eliminated for such
 instances.  Theorem ~ ax12wdemo shows an
-example of how we can eliminate the hypotheses of ~ ax12w .  Finally, we combine all such
-instances (outside of Metamath) to result in the metatheorem
+example of how we can eliminate the hypotheses of ~ ax12w .  Finally, we
+combine all such instances (outside of Metamath) to result in the metatheorem
 represented by our extensions.
 
 <P>Except for ~ ax-6 , our system includes all
@@ -2825,8 +2825,8 @@ substitutions that may be made into a scheme, provided we honor the
 metavariable types (wff variable or setvar variable).  This is called
 <B>direct substitution</B>, in constrast to a more complicated "proper
 substitution" used in textbook predicate calculus.  Consider, for
-example, axiom scheme ~ ax-6 , which can be
-abbreviated as "` E. x ` ` x = y `" (theorem scheme ~ a6e ), "there exists (` E. `) an ` x `
+example, axiom scheme ~ ax-6 , which can be abbreviated as "` E. x ` ` x = y `"
+(theorem scheme ~ ax6e ), "there exists (` E. `) an ` x `
 such that ` x ` equals ` y ` ."  In traditional predicate
 calculus, the first argument (a variable) of the quantifier
 ` E. ` is considered "bound" in the wff serving as its second
@@ -2836,8 +2836,9 @@ of whether the variable is bound or free at a given position.  In the
 Metamath language, ` E. `
 is merely a 2-place prefix connective or "operation" that evaluates to a
 wff, taking a setvar variable as its first argument and a wff as its
-second, with no built-in concept of bound or free.  In ~ a6e , we place no restriction on what actual
-variables may be substituted for bound metavariable ` x ` and free metavariable ` y ` .  We can even substitute them with the same
+second, with no built-in concept of bound or free.  In ~ ax6e , we place no
+restriction on what actual variables may be substituted for bound metavariable
+` x ` and free metavariable ` y ` .  We can even substitute them with the same
 variable, seemingly at odds with the traditional rule that free and
 bound variables must not clash.
 <!--
@@ -2907,7 +2908,10 @@ In the actual axioms, there are no primitive concepts of "free",
 metamathematical notions at the scheme level.
 
 
-<P>See also technical notes 2 and 3 below.
+<P>See also the text in the section header
+ for <A HREF="mmtheorems.html#ax6dgen">"Logical
+redundancy of ax-10, ax-11, ax-12, ax-13"</A> and
+technical notes 2 and 3 below.
 
 
 
@@ -3039,8 +3043,7 @@ omitted from S3' because it can be proved from the others using only
 simple metalogic," is proved in theorem ~ axc14 .
 Axiom C16' is also redundant&mdash;see theorem ~ axc16 , whose proof was discovered in 2006 and not
 known at the time of the paper.  The somewhat strange-looking axiom C10'
-( ~ ax-c10 ) was
-found to be equivalent to the simpler ~ ax-6 after
+( ~ ax-c10 ) was found to be equivalent to the simpler ~ ax-6 after
 the paper was submitted; see theorem ~ ax6fromc10 .  In the
 proof of the metalogical completeness theorem, Theorem 9.7, some details
 that are stated without proof as "provable in S3' with simple
@@ -3048,11 +3051,10 @@ metalogic," but which are nonetheless are tricky, are proved by theorems
 ~ sbequ , ~ sbcom2 , and ~ sbid2v .
 
 
-<P><B>2.</B> Some people find it counter-intuitive that ~ ax-6 combines two conceptually different axiom
-schemes, one where ` x ` and
-` y ` are always distinct
-variables (one bound, one free) and another which really means "` E. x ` ` x = x ` ."  Raph Levien calls this "bundling" (see
-<A
+<P><B>2.</B> Some people find it counter-intuitive that ~ ax-6 combines
+two conceptually different axiom schemes, one where ` x ` and ` y ` are
+always distinct variables (one bound, one free) and another which really
+means "` E. x ` ` x = x ` ." Raph Levien calls this "bundling" (see <A
 HREF="https://web.archive.org/web/20130114072059/http://wiki.planetmath.org/cgi-bin/wiki.pl/Principal_instances_of_metatheorems">"Principal
 instances of metatheorems"</A> [retrieved 14-Jul-2015]; related pages
 are <A
@@ -3061,11 +3063,19 @@ Distinctors vs. binder</A> [retrieved 18-Apr-2016] and <A
 HREF="https://groups.google.com/d/msg/metamath/hJupn_hvqu8/KJg69J8BFAEJ">
 Distinct variables</A> [retrieved 18-Apr-2016]).  We chose an
 axiomatization with maximally bundled axiom schemes, making them more
-general, fewer in number, and easier to use.  It also allows us to allow
+general, fewer in number, and easier to use.
+See also the text in the section header
+ for <A HREF="mmtheorems.html#ax6dgen">"Logical
+redundancy of ax-10, ax-11, ax-12, ax-13"</A>.
+
+
+
+<!--  It also allows us to allow
 us to postpone the introduction of <A HREF="#distinct">distinct
 variables</A> and to study <A HREF="#dvfreesystem">subsystems with no
 distinct variable restrictions</A>.  Other (longer) axiomatizations with
 less bundling are possible, of course.
+-->
 
 <!-- An interesting open problem is to devise an alternate
 axiomatization using only non-bundled axiom schemes (more specifically,
@@ -3078,8 +3088,9 @@ makes use of all of the other axioms. -->
 
 
 
-<P><B>3.</B> Tarski used the bundled axiom scheme "` E. x ` ` x = y `" in one of his systems without requiring that ` x ` and ` y ` be distinct variables (see [<A
-HREF="#KalishMontague">KalishMontague</A>], footnote on p. 81).  In
+<P><B>3.</B> Tarski used the bundled axiom scheme "` E. x ` ` x = y `" in one
+of his systems without requiring that ` x ` and ` y ` be distinct variables
+(see [<A HREF="#KalishMontague">KalishMontague</A>], footnote on p. 81).  In
 other words, he bundled it like we do to make it more general and able
 to prove instances of "` E. x ` ` x = x `" without
 requiring a separate axiom scheme.  On the other hand, he required that
@@ -3922,13 +3933,13 @@ database, the Metamath proof verifier is perfectly content to
 use it as a new fact and does not issue an error message.
 
 <P>Thus, the soundness of definitions must be verified independently of
-the Metamath proof verifier, either by hand or with through the use of
+the Metamath proof verifier, either by hand or through the use of
 a separate automated tool customized for the logic used by the database.
 
 <P>For the specific case of the set theory database set.mm, Mario
 Carneiro added an enhancement to the <A
 HREF="../index.html#mmj2">mmj2</A> program that will verify the
-soundness of all but 4 definitions.  This test can be turned on by
+soundness of all but four definitions.  This test can be turned on by
 adding <BLOCKQUOTE><TT>
 SetMMDefinitionsCheckWithExclusions,ax-*,df-bi,df-clab,df-cleq,df-clel
 </TT></BLOCKQUOTE> to the RunParms.txt file.  (The 4 excluded
@@ -4044,7 +4055,7 @@ side, (2) all variables are distinct (all of them appear in a single $d
 statement), and (3) we can prove (with a Metamath theorem,
 e.g. ~ pwjust for ~ df-pw ) that
 the right-hand expression equals itself with all variables renamed, then
-the definition is sound.  This convention allows all but 4 definitions
+the definition is sound.  This convention allows all but four definitions
 to be verified automatically by mmj2 as described above.
 
 <P> A non-mathematical (human) issue with a definition is whether it
@@ -4794,6 +4805,13 @@ Projective Geometry,</I> Academic Press, New York (1952)
 Machover, <I>A Course in Mathematical Logic,</I> North-Holland,
 Amsterdam (1977) [QA9.B3953].</LI>
 
+<LI><A NAME="Beeson2016"></A> [Beeson2016] Beeson, Michael, and
+Larry Wos, "Finding Proofs in Tarskian Geometry",
+2016-06-22, <I>Journal of Automated Reasoning</I>,
+Volume 58, DOI 10.1007/s10817-016-9392-2,
+<A HREF="https://www.researchgate.net/publication/304350412_Finding_Proofs_in_Tarskian_Geometry">ResearchGate</A> or
+<A HREF="http://www.michaelbeeson.com/research/papers/Tarski-JAR.pdf">Prepublication</A>.  </LI>
+
 <LI><A NAME="BeltramettiCassinelli1"></A> [BeltramettiCassinelli1] Enrico
 G. Beltrametti and Gianni Cassinelli, "Logical and Mathematical Structures
 of Quantum Mechanics," <I>La Rivista del Nuovo cimento</I> 6:321-404 (1976)
@@ -4885,7 +4903,7 @@ Trigonometry,</I> Brooks-Cole, Pacific Grove, CA (1988)
 D. Reidel, Dordrecht (1981) [QA251.C55].</LI>
 
 <LI><A NAME="CohnMT"></A> [CohnMT] Cohn, Donald L., <I>Measure Theory,</I>
- Birkhäuser, New York (2013).</LI>
+ Birkh&auml;user, New York (2013).</LI>
 
 <LI><A NAME="CormenLeisersonRivest"></A> [CormenLeisersonRivest] Cormen,
 Thomas, Charles E. Leiserson, and Ronald L. Rivest, <I>Introduction to
@@ -5088,7 +5106,7 @@ Dover Publications, Mineola, N.Y. (2002) [QA248.L398 2002]. </LI>
 
 <LI><A NAME="Lopez-Astorga"></A> [Lopez-Astorga] Lopez-Astorga, Miguel,
 "The First Rule of Stoic Logic and its Relationship with the
-Indemonstrables", <I>Revista de Filosofía Tópicos</I> (2016); available
+Indemonstrables", <I>Revista de Filosof&iacute;a T&oacute;picos</I> (2016); available
 at <A HREF="http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf">
 http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf</A> (retrieved 3 Jul
 2016).</LI>
@@ -5200,6 +5218,10 @@ revised edition (1969) [QA248.Q7 1969].</LI>
 <LI><A NAME="ReedSimon"></A> [ReedSimon] Michael Reed and Barry Simon,
 <I>Methods of Modern Mathematical Physics</I>, Vol.  I:  Functional
 Analysis, Academic Press, New York (1972) [QC20.7.F84.R43].  </LI>
+
+<LI><A NAME="Roman"></A> [Roman] Steven Roman, <I>Advanced Linear Algebra</I>,
+3rd edition, Graduate Texts in Mathematics, Springer Science+Business Media,
+New York (2008) [QA184.R65 1992].  </LI>
 
 <LI><A NAME="Rosenlicht"></a> [Rosenlicht] Maxwell Rosenlicht, <I>Introduction
 to Analysis,</I> Dover Publications, Inc., New York (1986) [QA300.R63]. </LI>
@@ -5396,7 +5418,7 @@ Section 107 of the United States Copyright Act (Title 17 of the
 &nbsp;</FONT></TD>
 
 <TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
- page was last updated on 3-Apr-2019.</FONT></I><BR><FONT
+ page was last updated on 19-May-2019.</FONT></I><BR><FONT
 FACE="ARIAL" SIZE=-2>Your
  comments are welcome:
 Norman Megill <A HREF="../email.html"><IMG BORDER=0
