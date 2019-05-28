@@ -53836,7 +53836,7 @@ $)
 
        The condition is that ` G ` is defined "everywhere" and here is stated
        as ` ( G `` x ) e. _V ` .  Alternatively
-       ` A. x e. On A. f ( f Fn x -> f e. dom F ) ` would suffice.
+       ` A. x e. On A. f ( f Fn x -> f e. dom G ) ` would suffice.
 
        Given a function ` G ` satisfying that condition, we define a class
        ` A ` of all "acceptable" functions.  The final function we're
