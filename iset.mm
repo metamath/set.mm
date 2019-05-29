@@ -44910,6 +44910,15 @@ $)
       elex ssexg ) ADEZABFZBGZHZIZUAJEZSJEBCEZRAJEUBADPABKLUDTJEUCBCM
       TJNLSUAJQO $.
 
+    ${
+      fvex.1 $e |- F e. V $.
+      fvex.2 $e |- A e. W $.
+      $( Evaluating a set function at a set exists.  (Contributed by Mario
+         Carneiro and Jim Kingdon, 28-May-2019.) $)
+      fvex $p |- ( F ` A ) e. _V $=
+        ( wcel cfv cvv fvexg mp2an ) BCGADGABHIGEFABCDJK $.
+    $}
+
     $( If a function is set-like, then the function value exists if the input
        does.  (Contributed by Mario Carneiro, 24-May-2019.) $)
     sefvex $p |- ( ( `' F Se _V /\ A e. _V ) -> ( F ` A ) e. _V ) $=
