@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-May-2019
+$( iset.mm - Version of 28-May-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -44902,6 +44902,13 @@ $)
     relrnfvex $p |- ( ( Rel F /\ ran F e. _V ) -> ( F ` A ) e. _V ) $=
       ( wrel cfv crn cuni wss cvv wcel relfvssunirn uniexg ssexg syl2an ) BCABD
       ZBEZFZGPHINHIOHIABJOHKNPHLM $.
+
+    $( Evaluating a set function at a set exists.  (Contributed by Mario
+       Carneiro and Jim Kingdon, 28-May-2019.) $)
+    fvexg $p |- ( ( F e. V /\ A e. W ) -> ( F ` A ) e. _V ) $=
+      ( wcel cfv crn cuni wss cvv fvssunirng syl rnexg uniexg syl2anr
+      elex ssexg ) ADEZABFZBGZHZIZUAJEZSJEBCEZRAJEUBADPABKLUDTJEUCBCM
+      TJNLSUAJQO $.
 
     $( If a function is set-like, then the function value exists if the input
        does.  (Contributed by Mario Carneiro, 24-May-2019.) $)
