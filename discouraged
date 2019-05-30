@@ -5838,8 +5838,6 @@
 "erngset-rN" is used by "erngbase-rN".
 "erngset-rN" is used by "erngfmul-rN".
 "erngset-rN" is used by "erngfplus-rN".
-"eu3" is used by "eu5OLD".
-"eu3" is used by "mo2OLD".
 "exatleN" is used by "cdlema2N".
 "exidu1" is used by "cmpidelt".
 "exidu1" is used by "exidresid".
@@ -15183,7 +15181,6 @@ New usage of "erngrng-rN" is discouraged (0 uses).
 New usage of "erngset-rN" is discouraged (3 uses).
 New usage of "eu1OLD" is discouraged (0 uses).
 New usage of "eu2OLD" is discouraged (0 uses).
-New usage of "eu3" is discouraged (2 uses).
 New usage of "eu5OLD" is discouraged (0 uses).
 New usage of "euanOLD" is discouraged (0 uses).
 New usage of "euexOLD" is discouraged (0 uses).
