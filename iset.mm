@@ -53970,7 +53970,7 @@ $)
     $( The recursion rule for the recursive definition generator is defined
        everywhere.  Lemma for ~ rdgifnon and ~ rdg0 .  (Contributed by Jim
        Kingdon, 29-May-2019.) $)
-    rdglem1 $p |- (
+    rdgruledef $p |- (
         Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
         /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
           e. _V ) $=
@@ -53987,14 +53987,14 @@ $)
        characteristic functions we need to use this with).  (Contributed by Jim
        Kingdon, 27-May-2019.) $)
     rdgifnon $p |- rec ( F , A ) Fn On $=
-      ( vf vg vx crdg cvv cv cdm cfv ciun cun cmpt df-irdg rdglem1 tfri1 ) EBAH
+      ( vf vg vx crdg cvv cv cdm cfv ciun cun cmpt df-irdg rdgruledef tfri1 ) EBAH
       FIAGFJZKGJSLBLMNOGFBAPGAEFBCDQR $.
 
     $( The initial value of the recursive definition generator.  (Contributed
        by NM, 23-Apr-1995.)  (Revised by Mario Carneiro, 14-Nov-2014.) $)
     rdg0 $p |- ( rec ( F , A ) ` (/) ) = A $=
       ( vx vg vy c0 cfv cdm cv ciun cun cvv wcel wceq ax-mp fveq2i eqtri 0ex
-      crdg cmpt cres con0 0elon df-irdg rdglem1 tfri2 res0 dmeq fveq2d iuneq12d
+      crdg cmpt cres con0 0elon df-irdg rdgruledef tfri2 res0 dmeq fveq2d iuneq12d
       fveq1 uneq2d eqid dmex 0fv wfn funfvex mp2an eqeltri iunex unex fvmpt dm0
       funfni iuneq1 0iun uneq2i un0 ) HBAUAZIZAEHJZEKZHIZBIZLZMZAVLHFNAEFKZJZVN
       VSIZBIZLZMZUBZIZVRVLVKHUCZWEIZWFHUDOVLWHPUEGHVKWEEFBAUFEAGFBCDUGUHQWGHWEV
