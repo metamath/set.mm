@@ -17418,6 +17418,7 @@ New usage of "sucidALT" is discouraged (0 uses).
 New usage of "sucidALTVD" is discouraged (0 uses).
 New usage of "sucidVD" is discouraged (0 uses).
 New usage of "sucprcregOLD" is discouraged (0 uses).
+New usage of "suctrALT" is discouraged (0 uses).
 New usage of "suctrALT2" is discouraged (0 uses).
 New usage of "suctrALT2VD" is discouraged (0 uses).
 New usage of "suctrALT3" is discouraged (0 uses).
@@ -18519,7 +18520,7 @@ Proof modification of "sucidALT" is discouraged (28 steps).
 Proof modification of "sucidALTVD" is discouraged (28 steps).
 Proof modification of "sucidVD" is discouraged (24 steps).
 Proof modification of "sucprcregOLD" is discouraged (116 steps).
-Proof modification of "suctr" is discouraged (153 steps).
+Proof modification of "suctrALT" is discouraged (153 steps).
 Proof modification of "suctrALT2" is discouraged (134 steps).
 Proof modification of "suctrALT2VD" is discouraged (173 steps).
 Proof modification of "suctrALT3" is discouraged (137 steps).
