@@ -8667,6 +8667,7 @@
 "isvci" is used by "hilvc".
 "isvclem" is used by "isvc".
 "isvclem" is used by "vcoprnelem".
+"iunconlem2" is used by "iunconALT".
 "iunonOLD" is used by "alephon".
 "iunonOLD" is used by "cfsmolem".
 "iunonOLD" is used by "hsmexlem5".
@@ -15901,6 +15902,7 @@ New usage of "isnvi" is discouraged (3 uses).
 New usage of "isnvlem" is discouraged (1 uses).
 New usage of "isolatiN" is discouraged (0 uses).
 New usage of "isomliN" is discouraged (0 uses).
+New usage of "isosctrlem1ALT" is discouraged (0 uses).
 New usage of "ispautN" is discouraged (0 uses).
 New usage of "isph" is discouraged (2 uses).
 New usage of "isphg" is discouraged (4 uses).
@@ -15929,6 +15931,8 @@ New usage of "isvc" is discouraged (1 uses).
 New usage of "isvci" is discouraged (3 uses).
 New usage of "isvclem" is discouraged (2 uses).
 New usage of "iswatN" is discouraged (0 uses).
+New usage of "iunconALT" is discouraged (0 uses).
+New usage of "iunconlem2" is discouraged (1 uses).
 New usage of "iunonOLD" is discouraged (4 uses).
 New usage of "jaoded" is discouraged (1 uses).
 New usage of "jaoi2OLD" is discouraged (0 uses).
@@ -16549,6 +16553,7 @@ New usage of "normsub0i" is discouraged (1 uses).
 New usage of "normsubi" is discouraged (2 uses).
 New usage of "normval" is discouraged (7 uses).
 New usage of "notnot2ALT" is discouraged (0 uses).
+New usage of "notnot2ALT2" is discouraged (0 uses).
 New usage of "notnot2ALTVD" is discouraged (0 uses).
 New usage of "npex" is discouraged (2 uses).
 New usage of "npomex" is discouraged (0 uses).
@@ -17273,6 +17278,7 @@ New usage of "siilem2" is discouraged (1 uses).
 New usage of "simplbi2VD" is discouraged (0 uses).
 New usage of "simplbi2comg" is discouraged (1 uses).
 New usage of "simplbi2comgVD" is discouraged (0 uses).
+New usage of "sineq0ALT" is discouraged (0 uses).
 New usage of "smcn" is discouraged (3 uses).
 New usage of "smcnlem" is discouraged (1 uses).
 New usage of "smfval" is discouraged (18 uses).
@@ -17361,6 +17367,7 @@ New usage of "sspsval" is discouraged (4 uses).
 New usage of "sspval" is discouraged (1 uses).
 New usage of "sspwimp" is discouraged (0 uses).
 New usage of "sspwimpALT" is discouraged (0 uses).
+New usage of "sspwimpALT2" is discouraged (0 uses).
 New usage of "sspwimpVD" is discouraged (0 uses).
 New usage of "sspwimpcf" is discouraged (0 uses).
 New usage of "sspwimpcfVD" is discouraged (0 uses).
@@ -17418,6 +17425,7 @@ New usage of "sucidALT" is discouraged (0 uses).
 New usage of "sucidALTVD" is discouraged (0 uses).
 New usage of "sucidVD" is discouraged (0 uses).
 New usage of "sucprcregOLD" is discouraged (0 uses).
+New usage of "suctrALT" is discouraged (0 uses).
 New usage of "suctrALT2" is discouraged (0 uses).
 New usage of "suctrALT2VD" is discouraged (0 uses).
 New usage of "suctrALT3" is discouraged (0 uses).
@@ -18195,12 +18203,15 @@ Proof modification of "indistpsALT" is discouraged (64 steps).
 Proof modification of "infpssALT" is discouraged (52 steps).
 Proof modification of "int2" is discouraged (14 steps).
 Proof modification of "int3" is discouraged (17 steps).
+Proof modification of "isosctrlem1ALT" is discouraged (363 steps).
 Proof modification of "isrnsigaOLD" is discouraged (202 steps).
 Proof modification of "istps2OLD" is discouraged (121 steps).
 Proof modification of "istps3OLD" is discouraged (119 steps).
 Proof modification of "istps4OLD" is discouraged (78 steps).
 Proof modification of "istps5OLD" is discouraged (73 steps).
 Proof modification of "istpsOLD" is discouraged (123 steps).
+Proof modification of "iunconALT" is discouraged (56 steps).
+Proof modification of "iunconlem2" is discouraged (580 steps).
 Proof modification of "iunonOLD" is discouraged (22 steps).
 Proof modification of "jaoded" is discouraged (26 steps).
 Proof modification of "jaoi2OLD" is discouraged (83 steps).
@@ -18334,6 +18345,7 @@ Proof modification of "nmounbseqiOLD" is discouraged (146 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "noinfepOLD" is discouraged (267 steps).
 Proof modification of "notnot2ALT" is discouraged (12 steps).
+Proof modification of "notnot2ALT2" is discouraged (2 steps).
 Proof modification of "notnot2ALTVD" is discouraged (34 steps).
 Proof modification of "omsucdomOLD" is discouraged (76 steps).
 Proof modification of "ondomon" is discouraged (287 steps).
@@ -18487,6 +18499,7 @@ Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "shmulclOLD" is discouraged (101 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
 Proof modification of "simplbi2comgVD" is discouraged (42 steps).
+Proof modification of "sineq0ALT" is discouraged (986 steps).
 Proof modification of "snelpwrVD" is discouraged (37 steps).
 Proof modification of "snex" is discouraged (64 steps).
 Proof modification of "snexALT" is discouraged (48 steps).
@@ -18502,6 +18515,7 @@ Proof modification of "spsbeOLD" is discouraged (35 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
 Proof modification of "sspwimp" is discouraged (87 steps).
 Proof modification of "sspwimpALT" is discouraged (74 steps).
+Proof modification of "sspwimpALT2" is discouraged (50 steps).
 Proof modification of "sspwimpVD" is discouraged (87 steps).
 Proof modification of "sspwimpcf" is discouraged (84 steps).
 Proof modification of "sspwimpcfVD" is discouraged (84 steps).
@@ -18519,7 +18533,7 @@ Proof modification of "sucidALT" is discouraged (28 steps).
 Proof modification of "sucidALTVD" is discouraged (28 steps).
 Proof modification of "sucidVD" is discouraged (24 steps).
 Proof modification of "sucprcregOLD" is discouraged (116 steps).
-Proof modification of "suctr" is discouraged (153 steps).
+Proof modification of "suctrALT" is discouraged (153 steps).
 Proof modification of "suctrALT2" is discouraged (134 steps).
 Proof modification of "suctrALT2VD" is discouraged (173 steps).
 Proof modification of "suctrALT3" is discouraged (137 steps).
