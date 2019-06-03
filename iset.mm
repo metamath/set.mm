@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-May-2019
+$( iset.mm - Version of 9-Jun-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -53964,7 +53964,7 @@ $)
   $}
 
   ${
-    $d x y z f g u v w F $.  $d x y z f g u v w A $.
+    $d x y z f g u v w F $.  $d x y z f g u v w A $.  $d B g x $.
     rdgifnon.1 $e |- A e. _V $.
     rdgifnon.2 $e |- F Fn _V $.
     $( The recursion rule for the recursive definition generator is defined
@@ -54001,6 +54001,37 @@ $)
       KUIRSHNOZWFVRPTFHWDVRNWEVSHPZWCVQAWJEVTVMWBVPVSHUJWJWAVOBVNVSHUMUKULUNWEU
       OAVQCEVMVPHTUPVPHBIZNVOHBVNUQRBNURWIWKNOZDTWLNHBHBUSVFUTVAVBVCVDQSVRAHMAV
       QHAVQEHVPLZHVMHPVQWMPVEEVMHVPVGQEVPVHSVIAVJSS $.
+
+    $( One way of describing the value of the recursive definition generator at
+       a successor.  There is no condition on the characteristic function ` F `
+       other than ` F Fn _V ` .  Given that, the resulting expression
+       encompasses both the expected successor term
+       ` ( F `` ( rec ( F , A ) `` B ) ) ` but also terms that correspond to
+       the initial value ` A ` and to limit ordinals
+       ` U_ x e. B ( F `` ( ( rec ( F , A ) |`` suc B ) `` x ) ) ` .
+
+       If we added a condition that the characteristic function is increasing
+       (for example ` A. x x e. ( F `` x ) ` ) we could likely show
+       ` ( rec ( F , A ) `` suc B ) = ( F `` ( rec ( F , A ) `` B ) ) ` .
+       (Contributed by Jim Kingdon, 9-Jun-2019.) $)
+    rdgisuc1 $p |- ( B e. On -> ( rec ( F , A ) ` suc B ) =
+        ( A u. ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
+          u. ( F ` ( rec ( F , A ) ` B ) ) ) ) ) $=
+      ( vg vf con0 wcel cfv cdm cv ciun cun cvv wceq syl fveq2d uneq2d suceloni
+      csuc crdg cres cmpt df-irdg rdgruledef wfun rdgfun resfunexg sylancr wral
+      tfri2 vex fvexg sylancl ralrimivw wfn funfvex funfni mpan ralimi dmresexg
+      wi iunexg ex sylc unexg dmeq fveq1 iuneq12d eqid fvmptg syl2anc eqtrd wss
+      onss rdgifnon fndm ax-mp syl6sseqr ssdmres sylib csn df-suc iuneq1 iunxun
+      iuneq1d eqtri fveq2 iunxsng sucidg fvres syl5eq 3eqtrd ) CIJZCUBZDBUCZKZB
+      AWRWQUDZLZAMZWTKZDKZNZOZBAWQXDNZOBACXDNZCWRKZDKZOZOWPWSWTGPBAGMZLZXBXLKZD
+      KZNZOZUEZKZXFWPWQIJZWSXSQCUAZHWQWRXRAGDBUFABHGDEFUGUMRWPWTPJZXFPJZXSXFQWP
+      WRUHXTYBBDUIYAWRWQIUJUKZWPBPJXEPJZYCEWPXTXDPJZAXAULZYEYAWPXCPJZAXAULYGWPY
+      HAXAWPYBXBPJYHYDAUNXBWTPPUOUPUQYHYFAXADPURYHYFFYFPXCDXCDUSUTVAVBRXTXAPJZY
+      GYEVDWRWQIVCYIYGYEAXAXDPPVEVFRVGBXEPPVHUKGWTXQXFPPXRXLWTQZXPXEBYJAXMXAXOX
+      DXLWTVIYJXNXCDXBXLWTVJSVKTXRVLVMVNVOWPXEXGBWPAXAWQXDWPWQWRLZVPXAWQQWPWQIY
+      KWPXTWQIVPYAWQVQRWRIURYKIQBDEFVRIWRVSVTWAWQWRWBWCWHTWPXGXKBWPXGXHACWDZXDN
+      ZOZXKXGACYLOZXDNZYNWQYOQXGYPQCWEAWQYOXDWFVTACYLXDWGWIWPYMXJXHWPYMCWTKZDKZ
+      XJACXDYRIXBCQXCYQDXBCWTWJSWKWPYQXIDWPCWQJYQXIQCIWLCWQWRWMRSVOTWNTWO $.
   $}
 
 $(
