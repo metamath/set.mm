@@ -54579,11 +54579,14 @@ htmldef "C_" as
   althtmldef "C_" as ' &#8838; '; /* &subE; */
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "C_" as "\subseteq";
+    /* 7-Jun-2019 changed gif, unicode and latex def of "C." from subset to
+    subsetneq (BJ) */
 htmldef "C." as
-    " <IMG SRC='subset.gif' WIDTH=12 HEIGHT=19 ALT=' C.' TITLE='C.'> ";
-  althtmldef "C." as ' &sub; ';
+    " <IMG SRC='subsetneq.gif' WIDTH=12 HEIGHT=19 ALT=' C.' TITLE='C.'> ";
+    /* subset.gif */
+  althtmldef "C." as ' &#x228a; '; /* &sub; */
     /* 2-Jan-2016 reverted sans-serif */
-  latexdef "C." as "\subset";
+  latexdef "C." as "\subsetneq"; /* \subset */
 htmldef "(/)" as
     "<IMG SRC='varnothing.gif' WIDTH=11 HEIGHT=19 ALT=' (/)' TITLE='(/)'>";
   althtmldef "(/)" as '&empty;';
