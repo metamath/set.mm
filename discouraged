@@ -16330,6 +16330,7 @@ New usage of "mndoisexid" is discouraged (2 uses).
 New usage of "mndoismgm" is discouraged (3 uses).
 New usage of "mndoissmgrp" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
+New usage of "mo2OLD" is discouraged (0 uses).
 New usage of "mo3OLD" is discouraged (0 uses).
 New usage of "moOLD" is discouraged (0 uses).
 New usage of "moaneuOLD" is discouraged (0 uses).
@@ -18118,6 +18119,7 @@ Proof modification of "euanOLD" is discouraged (106 steps).
 Proof modification of "euexOLD" is discouraged (32 steps).
 Proof modification of "eufOLD" is discouraged (73 steps).
 Proof modification of "eujustALT" is discouraged (188 steps).
+Proof modification of "eumo0OLD" is discouraged (36 steps).
 Proof modification of "euor2OLD" is discouraged (39 steps).
 Proof modification of "eupickbOLD" is discouraged (60 steps).
 Proof modification of "eupickbiOLD" is discouraged (60 steps).
@@ -18301,6 +18303,7 @@ Proof modification of "metusttoOLD" is discouraged (341 steps).
 Proof modification of "metutopOLD" is discouraged (627 steps).
 Proof modification of "metuustOLD" is discouraged (78 steps).
 Proof modification of "metuvalOLD" is discouraged (244 steps).
+Proof modification of "mo2OLD" is discouraged (69 steps).
 Proof modification of "mo3OLD" is discouraged (35 steps).
 Proof modification of "moOLD" is discouraged (254 steps).
 Proof modification of "moaneuOLD" is discouraged (37 steps).
