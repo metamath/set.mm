@@ -1397,6 +1397,7 @@
 "axpjpj" is used by "pjpjhth".
 "axpjpj" is used by "pjpo".
 "axpjpj" is used by "pjtoi".
+"axpowndlem2OLD" is used by "axpowndlem3OLD".
 "axresscn" is used by "ax1cn".
 "bafval" is used by "cnnvba".
 "bafval" is used by "hhba".
@@ -13664,6 +13665,8 @@ New usage of "axnul" is discouraged (0 uses).
 New usage of "axnulALT" is discouraged (0 uses).
 New usage of "axpjcl" is discouraged (7 uses).
 New usage of "axpjpj" is discouraged (8 uses).
+New usage of "axpowndlem2OLD" is discouraged (1 uses).
+New usage of "axpowndlem3OLD" is discouraged (0 uses).
 New usage of "axpr" is discouraged (0 uses).
 New usage of "axpre-ltadd" is discouraged (0 uses).
 New usage of "axpre-lttri" is discouraged (0 uses).
@@ -17772,6 +17775,8 @@ Proof modification of "axc711to11" is discouraged (32 steps).
 Proof modification of "axc711toc7" is discouraged (37 steps).
 Proof modification of "axnul" is discouraged (52 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
+Proof modification of "axpowndlem2OLD" is discouraged (440 steps).
+Proof modification of "axpowndlem3OLD" is discouraged (356 steps).
 Proof modification of "binom2aiOLD" is discouraged (171 steps).
 Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
