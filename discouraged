@@ -1374,8 +1374,8 @@
 "axc9lem1" is used by "nfeqf".
 "axc9lem2" is used by "ax6e".
 "axc9lem2" is used by "axc9lem3".
-"axc9lem2" is used by "dveeq2".
-"axc9lem3" is used by "dveeq2".
+"axc9lem2" is used by "nfeqf2".
+"axc9lem3" is used by "nfeqf2".
 "axicn" is used by "sineq0ALT".
 "axinfnd" is used by "axinfprim".
 "axinfnd" is used by "zfcndinf".
@@ -1397,6 +1397,7 @@
 "axpjpj" is used by "pjpjhth".
 "axpjpj" is used by "pjpo".
 "axpjpj" is used by "pjtoi".
+"axpowndlem2OLD" is used by "axpowndlem3OLD".
 "axresscn" is used by "ax1cn".
 "bafval" is used by "cnnvba".
 "bafval" is used by "hhba".
@@ -13664,6 +13665,8 @@ New usage of "axnul" is discouraged (0 uses).
 New usage of "axnulALT" is discouraged (0 uses).
 New usage of "axpjcl" is discouraged (7 uses).
 New usage of "axpjpj" is discouraged (8 uses).
+New usage of "axpowndlem2OLD" is discouraged (1 uses).
+New usage of "axpowndlem3OLD" is discouraged (0 uses).
 New usage of "axpr" is discouraged (0 uses).
 New usage of "axpre-ltadd" is discouraged (0 uses).
 New usage of "axpre-lttri" is discouraged (0 uses).
@@ -14488,6 +14491,7 @@ New usage of "con5" is discouraged (1 uses).
 New usage of "con5VD" is discouraged (0 uses).
 New usage of "con5i" is discouraged (2 uses).
 New usage of "conventions" is discouraged (0 uses).
+New usage of "copsexgOLD" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
 New usage of "csbabgOLD" is discouraged (10 uses).
 New usage of "csbcnvgOLD" is discouraged (0 uses).
@@ -17771,6 +17775,8 @@ Proof modification of "axc711to11" is discouraged (32 steps).
 Proof modification of "axc711toc7" is discouraged (37 steps).
 Proof modification of "axnul" is discouraged (52 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
+Proof modification of "axpowndlem2OLD" is discouraged (440 steps).
+Proof modification of "axpowndlem3OLD" is discouraged (356 steps).
 Proof modification of "binom2aiOLD" is discouraged (171 steps).
 Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
@@ -17865,6 +17871,7 @@ Proof modification of "con5" is discouraged (10 steps).
 Proof modification of "con5VD" is discouraged (47 steps).
 Proof modification of "con5i" is discouraged (13 steps).
 Proof modification of "conventions" is discouraged (1 steps).
+Proof modification of "copsexgOLD" is discouraged (358 steps).
 Proof modification of "csbabgOLD" is discouraged (93 steps).
 Proof modification of "csbcnvgOLD" is discouraged (112 steps).
 Proof modification of "csbcomgOLD" is discouraged (153 steps).
