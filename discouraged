@@ -13238,6 +13238,29 @@
 "zfinf" is used by "axinf2".
 "zfinf" is used by "axinfndlem1".
 "zfpair" is used by "axpr".
+"zlmodzxz0" is used by "zlmodzxzldeplem3".
+"zlmodzxzadd" is used by "zlmodzxzequap".
+"zlmodzxzadd" is used by "zlmodzxzsub".
+"zlmodzxzel" is used by "ldepsnlinc".
+"zlmodzxzel" is used by "ldepsnlinclem1".
+"zlmodzxzel" is used by "ldepsnlinclem2".
+"zlmodzxzel" is used by "zlmodzxzadd".
+"zlmodzxzel" is used by "zlmodzxzldep".
+"zlmodzxzel" is used by "zlmodzxzldeplem3".
+"zlmodzxzel" is used by "zlmodzxzscm".
+"zlmodzxzel" is used by "zlmodzxzsub".
+"zlmodzxzel" is used by "zlmodzxzsubm".
+"zlmodzxzlmod" is used by "ldepsnlinc".
+"zlmodzxzlmod" is used by "ldepsnlinclem1".
+"zlmodzxzlmod" is used by "ldepsnlinclem2".
+"zlmodzxzlmod" is used by "zlmodzxzldep".
+"zlmodzxzlmod" is used by "zlmodzxzldeplem3".
+"zlmodzxzlmod" is used by "zlmodzxzsub".
+"zlmodzxzlmod" is used by "zlmodzxzsubm".
+"zlmodzxzscm" is used by "zlmodzxzequa".
+"zlmodzxzscm" is used by "zlmodzxzequap".
+"zlmodzxzscm" is used by "zlmodzxznm".
+"zlmodzxzsub" is used by "zlmodzxzequa".
 "zlpir" is used by "zlmodzxz0".
 "zlpir" is used by "zrngrng".
 "zlpirlem1" is used by "zlpirlem2".
@@ -17691,6 +17714,13 @@ New usage of "zfcndinf" is discouraged (0 uses).
 New usage of "zfinf" is discouraged (2 uses).
 New usage of "zfpair" is discouraged (1 uses).
 New usage of "zfregs2VD" is discouraged (0 uses).
+New usage of "zlmodzxz0" is discouraged (1 uses).
+New usage of "zlmodzxzadd" is discouraged (2 uses).
+New usage of "zlmodzxzel" is discouraged (9 uses).
+New usage of "zlmodzxzlmod" is discouraged (7 uses).
+New usage of "zlmodzxzscm" is discouraged (3 uses).
+New usage of "zlmodzxzsub" is discouraged (1 uses).
+New usage of "zlmodzxzsubm" is discouraged (0 uses).
 New usage of "zlpir" is discouraged (2 uses).
 New usage of "zlpirlem1" is discouraged (2 uses).
 New usage of "zlpirlem2" is discouraged (2 uses).
