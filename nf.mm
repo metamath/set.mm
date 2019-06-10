@@ -63047,10 +63047,13 @@ htmldef "C_" as
     " <IMG SRC='subseteq.gif' WIDTH=12 HEIGHT=19 TITLE='C_' ALIGN=TOP> ";
   althtmldef "C_" as ' <FONT FACE=sans-serif>&#8838;</FONT> '; /* &subE; */
   latexdef "C_" as "\subseteq";
+    /* 7-Jun-2019 changed gif, unicode and latex def of "C." from subset to
+    subsetneq (BJ) */
 htmldef "C." as
-    " <IMG SRC='subset.gif' WIDTH=12 HEIGHT=19 TITLE='C.' ALIGN=TOP> ";
-  althtmldef "C." as ' <FONT FACE=sans-serif>&sub;</FONT> ';
-  latexdef "C." as "\subset";
+    " <IMG SRC='subsetneq.gif' WIDTH=12 HEIGHT=19 TITLE='C.' ALIGN=TOP> ";
+    /* subset.gif */
+  althtmldef "C." as ' &#x228a; '; /* <FONT FACE=sans-serif>&sub;</FONT> */
+  latexdef "C." as "\subsetneq"; /* \subset */
 htmldef "~" as " &sim; ";
   althtmldef "~" as ' &sim; ';
   latexdef "~" as "\sim";
