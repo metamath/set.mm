@@ -5849,6 +5849,7 @@
 "exinst11" is used by "vk15.4jVD".
 "exlimexi" is used by "exinst".
 "exlimexi" is used by "sb5ALT".
+"expghm" is used by "lgseisenlem4".
 "fh1" is used by "chirredlem3".
 "fh1" is used by "cm2j".
 "fh1" is used by "fh1i".
@@ -11620,6 +11621,8 @@
 "prlem934" is used by "ltexprlem7".
 "prlem934" is used by "prlem936".
 "prlem936" is used by "reclem3pr".
+"prmirredlem" is used by "dfprm2".
+"prmirredlem" is used by "prmirred".
 "prn0" is used by "0npr".
 "prn0" is used by "genpn0".
 "prn0" is used by "ltaddpr".
@@ -14755,6 +14758,7 @@ New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
 New usage of "dfiop2" is discouraged (3 uses).
 New usage of "dfpjop" is discouraged (4 uses).
+New usage of "dfprm2" is discouraged (0 uses).
 New usage of "dfsup2OLD" is discouraged (1 uses).
 New usage of "dfsup3OLD" is discouraged (0 uses).
 New usage of "dfvd1imp" is discouraged (1 uses).
@@ -15251,6 +15255,7 @@ New usage of "exinst11" is discouraged (1 uses).
 New usage of "exlimexi" is discouraged (2 uses).
 New usage of "exmoeuOLD" is discouraged (0 uses).
 New usage of "exp3acom23g" is discouraged (0 uses).
+New usage of "expghm" is discouraged (1 uses).
 New usage of "f1oweALT" is discouraged (0 uses).
 New usage of "fh1" is discouraged (3 uses).
 New usage of "fh1i" is discouraged (2 uses).
@@ -17022,6 +17027,8 @@ New usage of "poml6N" is discouraged (1 uses).
 New usage of "prcdnq" is discouraged (14 uses).
 New usage of "prlem934" is discouraged (3 uses).
 New usage of "prlem936" is discouraged (1 uses).
+New usage of "prmirred" is discouraged (0 uses).
+New usage of "prmirredlem" is discouraged (2 uses).
 New usage of "prn0" is discouraged (8 uses).
 New usage of "prnmadd" is discouraged (2 uses).
 New usage of "prnmax" is discouraged (7 uses).
