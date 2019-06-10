@@ -8707,6 +8707,8 @@
 "latmassOLD" is used by "lhp2at0".
 "latmassOLD" is used by "omlfh1N".
 "latmmdiN" is used by "omlfh1N".
+"ldepsnlinclem1" is used by "ldepsnlinc".
+"ldepsnlinclem2" is used by "ldepsnlinc".
 "lecm" is used by "chirredlem2".
 "lecmi" is used by "lecm".
 "lecmi" is used by "lecmii".
@@ -13250,6 +13252,18 @@
 "zlmodzxzel" is used by "zlmodzxzscm".
 "zlmodzxzel" is used by "zlmodzxzsub".
 "zlmodzxzel" is used by "zlmodzxzsubm".
+"zlmodzxzequap" is used by "zlmodzxzldeplem3".
+"zlmodzxzldep" is used by "ldepsnlinc".
+"zlmodzxzldeplem" is used by "ldepsnlinc".
+"zlmodzxzldeplem" is used by "zlmodzxzldeplem1".
+"zlmodzxzldeplem" is used by "zlmodzxzldeplem3".
+"zlmodzxzldeplem" is used by "zlmodzxzldeplem4".
+"zlmodzxzldeplem1" is used by "zlmodzxzldep".
+"zlmodzxzldeplem1" is used by "zlmodzxzldeplem2".
+"zlmodzxzldeplem1" is used by "zlmodzxzldeplem3".
+"zlmodzxzldeplem2" is used by "zlmodzxzldep".
+"zlmodzxzldeplem3" is used by "zlmodzxzldep".
+"zlmodzxzldeplem4" is used by "zlmodzxzldep".
 "zlmodzxzlmod" is used by "ldepsnlinc".
 "zlmodzxzlmod" is used by "ldepsnlinclem1".
 "zlmodzxzlmod" is used by "ldepsnlinclem2".
@@ -13257,6 +13271,8 @@
 "zlmodzxzlmod" is used by "zlmodzxzldeplem3".
 "zlmodzxzlmod" is used by "zlmodzxzsub".
 "zlmodzxzlmod" is used by "zlmodzxzsubm".
+"zlmodzxznm" is used by "ldepsnlinclem1".
+"zlmodzxznm" is used by "ldepsnlinclem2".
 "zlmodzxzscm" is used by "zlmodzxzequa".
 "zlmodzxzscm" is used by "zlmodzxzequap".
 "zlmodzxzscm" is used by "zlmodzxznm".
@@ -16033,6 +16049,8 @@ New usage of "lcfl7N" is discouraged (0 uses).
 New usage of "lcfls1N" is discouraged (0 uses).
 New usage of "lcfrlem12N" is discouraged (0 uses).
 New usage of "lcfrvalsnN" is discouraged (0 uses).
+New usage of "ldepsnlinclem1" is discouraged (1 uses).
+New usage of "ldepsnlinclem2" is discouraged (1 uses).
 New usage of "ldualsaddN" is discouraged (0 uses).
 New usage of "lecm" is discouraged (1 uses).
 New usage of "lecmi" is discouraged (2 uses).
@@ -17717,7 +17735,16 @@ New usage of "zfregs2VD" is discouraged (0 uses).
 New usage of "zlmodzxz0" is discouraged (1 uses).
 New usage of "zlmodzxzadd" is discouraged (2 uses).
 New usage of "zlmodzxzel" is discouraged (9 uses).
+New usage of "zlmodzxzequa" is discouraged (0 uses).
+New usage of "zlmodzxzequap" is discouraged (1 uses).
+New usage of "zlmodzxzldep" is discouraged (1 uses).
+New usage of "zlmodzxzldeplem" is discouraged (4 uses).
+New usage of "zlmodzxzldeplem1" is discouraged (3 uses).
+New usage of "zlmodzxzldeplem2" is discouraged (1 uses).
+New usage of "zlmodzxzldeplem3" is discouraged (1 uses).
+New usage of "zlmodzxzldeplem4" is discouraged (1 uses).
 New usage of "zlmodzxzlmod" is discouraged (7 uses).
+New usage of "zlmodzxznm" is discouraged (2 uses).
 New usage of "zlmodzxzscm" is discouraged (3 uses).
 New usage of "zlmodzxzsub" is discouraged (1 uses).
 New usage of "zlmodzxzsubm" is discouraged (0 uses).
