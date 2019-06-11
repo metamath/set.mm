@@ -1370,12 +1370,10 @@
 "axc711" is used by "axc711to11".
 "axc711" is used by "axc711toc7".
 "axc711toc7" is used by "axc711to11".
+"axc9lem1" is used by "ax6e".
 "axc9lem1" is used by "axc9lem2".
-"axc9lem1" is used by "nfeqf".
-"axc9lem2" is used by "ax6e".
-"axc9lem2" is used by "axc9lem3".
+"axc9lem1" is used by "nfeqf2".
 "axc9lem2" is used by "nfeqf2".
-"axc9lem3" is used by "nfeqf2".
 "axicn" is used by "sineq0ALT".
 "axinfnd" is used by "axinfprim".
 "axinfnd" is used by "zfcndinf".
@@ -13655,9 +13653,8 @@ New usage of "axc5sp1" is discouraged (0 uses).
 New usage of "axc711" is discouraged (2 uses).
 New usage of "axc711to11" is discouraged (0 uses).
 New usage of "axc711toc7" is discouraged (1 uses).
-New usage of "axc9lem1" is discouraged (2 uses).
-New usage of "axc9lem2" is discouraged (3 uses).
-New usage of "axc9lem3" is discouraged (1 uses).
+New usage of "axc9lem1" is discouraged (3 uses).
+New usage of "axc9lem2" is discouraged (1 uses).
 New usage of "axcc" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (0 uses).
 New usage of "axcnre" is discouraged (0 uses).
@@ -15218,6 +15215,7 @@ New usage of "equidqe" is discouraged (2 uses).
 New usage of "equncomVD" is discouraged (0 uses).
 New usage of "equncomiVD" is discouraged (0 uses).
 New usage of "equsb3ALT" is discouraged (0 uses).
+New usage of "equvinOLD" is discouraged (0 uses).
 New usage of "erngbase-rN" is discouraged (4 uses).
 New usage of "erngdv-rN" is discouraged (0 uses).
 New usage of "erngdvlem1-rN" is discouraged (3 uses).
@@ -18176,6 +18174,7 @@ Proof modification of "equidq" is discouraged (27 steps).
 Proof modification of "equidqe" is discouraged (30 steps).
 Proof modification of "equncomVD" is discouraged (53 steps).
 Proof modification of "equncomiVD" is discouraged (19 steps).
+Proof modification of "equvinOLD" is discouraged (29 steps).
 Proof modification of "eu1OLD" is discouraged (92 steps).
 Proof modification of "eu2OLD" is discouraged (118 steps).
 Proof modification of "eu3OLD" is discouraged (45 steps).
@@ -18382,7 +18381,7 @@ Proof modification of "mp2ALT" is discouraged (10 steps).
 Proof modification of "mulge0OLD" is discouraged (25 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
-Proof modification of "nfeqfOLD" is discouraged (42 steps).
+Proof modification of "nfeqfOLD" is discouraged (101 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfeud2OLD" is discouraged (83 steps).
 Proof modification of "nfsb4tOLD" is discouraged (182 steps).
