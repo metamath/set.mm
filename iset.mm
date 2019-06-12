@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-May-2019
+$( iset.mm - Version of 9-Jun-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -44903,6 +44903,22 @@ $)
       ( wrel cfv crn cuni wss cvv wcel relfvssunirn uniexg ssexg syl2an ) BCABD
       ZBEZFZGPHINHIOHIABJOHKNPHLM $.
 
+    $( Evaluating a set function at a set exists.  (Contributed by Mario
+       Carneiro and Jim Kingdon, 28-May-2019.) $)
+    fvexg $p |- ( ( F e. V /\ A e. W ) -> ( F ` A ) e. _V ) $=
+      ( wcel cfv crn cuni wss cvv fvssunirng syl rnexg uniexg syl2anr
+      elex ssexg ) ADEZABFZBGZHZIZUAJEZSJEBCEZRAJEUBADPABKLUDTJEUCBCM
+      TJNLSUAJQO $.
+
+    ${
+      fvex.1 $e |- F e. V $.
+      fvex.2 $e |- A e. W $.
+      $( Evaluating a set function at a set exists.  (Contributed by Mario
+         Carneiro and Jim Kingdon, 28-May-2019.) $)
+      fvex $p |- ( F ` A ) e. _V $=
+        ( wcel cfv cvv fvexg mp2an ) BCGADGABHIGEFABCDJK $.
+    $}
+
     $( If a function is set-like, then the function value exists if the input
        does.  (Contributed by Mario Carneiro, 24-May-2019.) $)
     sefvex $p |- ( ( `' F Se _V /\ A e. _V ) -> ( F ` A ) e. _V ) $=
@@ -53836,7 +53852,7 @@ $)
 
        The condition is that ` G ` is defined "everywhere" and here is stated
        as ` ( G `` x ) e. _V ` .  Alternatively
-       ` A. x e. On A. f ( f Fn x -> f e. dom F ) ` would suffice.
+       ` A. x e. On A. f ( f Fn x -> f e. dom G ) ` would suffice.
 
        Given a function ` G ` satisfying that condition, we define a class
        ` A ` of all "acceptable" functions.  The final function we're
@@ -53888,6 +53904,134 @@ $)
       XNOXCWEXJMZXLWBCHIZXNXOXCSACDEFUJZGHWCBCUKULWEXJDRUMUNUPTUQXIWJXLSZXHXEWO
       XRXEWOWGWIXKMZOZXRXEXEWOXSQZOWOXTQXEYAAWCCDEFURUSWOWGXSUTVAWDWFWIXKVBVGTV
       CVDVEVFVHVIVJVKVLVMVNVOVPVQWBWLWKWBXPWLWKSXQAHBCVRVSVTWA $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+            Recursive definition generator
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Define a constant for the recursive definition generator. $)
+  $c rec $.
+
+  $( Extend class notation with the recursive definition generator, with
+     characteristic function ` F ` and initial value ` I ` . $)
+  crdg $a class rec ( F , I ) $.
+
+  ${
+    $d x y f g F $.  $d x y f g I $.
+    $( Define a recursive definition generator on ` On ` (the class of ordinal
+       numbers) with characteristic function ` F ` and initial value ` I ` .
+       This rather amazing operation allows us to define, with compact direct
+       definitions, functions that are usually defined in textbooks only with
+       indirect self-referencing recursive definitions.  A recursive definition
+       requires advanced metalogic to justify - in particular, eliminating a
+       recursive definition is very difficult and often not even shown in
+       textbooks.  On the other hand, the elimination of a direct definition is
+       a matter of simple mechanical substitution.  The price paid is the
+       daunting complexity of our ` rec ` operation (especially when ~ df-recs
+       that it is built on is also eliminated).  But once we get past this
+       hurdle, definitions that would otherwise be recursive become relatively
+       simple.  In classical logic it would be easier to divide this definition
+       into cases based on whether the domain of ` g ` is zero, a successor, or
+       a limit ordinal.  Cases do not (in general) work that way in
+       intuitionistic logic, so instead we choose a definition which takes the
+       union of all the results of the characteristic function for ordinals in
+       the domain of ` g ` .  This means that this definition has the expected
+       properties for increasing and continuous ordinal functions, which
+       include ordinal addition and multiplication.
+
+       _Note:  We introduce_ ` rec ` _with the philosophical goal of being_
+       _able to eliminate all definitions with direct mechanical substitution_
+       _and to verify easily the soundness of definitions.  Metamath itself_
+       _has no built-in technical limitation that prevents multiple-part_
+       _recursive definitions in the traditional textbook style_.  (Contributed
+       by Jim Kingdon, 19-May-2019.) $)
+    df-irdg $a |- rec ( F , I ) = recs ( ( g e. _V |-> ( I u.
+      U_ x e. dom g ( F ` ( g ` x ) ) ) ) ) $.
+  $}
+
+  ${
+    $d x y z f g u v w F $.  $d x y z f g u v w A $.
+    $( The recursive definition generator is a function.  (Contributed by Mario
+       Carneiro, 16-Nov-2014.) $)
+    rdgfun $p |- Fun rec ( F , A ) $=
+      ( vg vx vy vz vf crdg wfun cvv cdm cfv ciun cun cmpt crecs cres
+      cv wfn wceq wral wa con0 wrex eqid tfrlem7 df-irdg funeqi mpbir
+      cab ) BAHZICJADCRZKDRULLBLMNOZPZIEFGRZERZSFRZUOLUOUQQUMLTFUPUAU
+      BEUCUDGUJZGUMURUEUFUKUNDCBAUGUHUI $.
+  $}
+
+  ${
+    $d x y z f g u v w F $.  $d x y z f g u v w A $.  $d B g x $.
+    rdgifnon.1 $e |- A e. _V $.
+    rdgifnon.2 $e |- F Fn _V $.
+    $( The recursion rule for the recursive definition generator is defined
+       everywhere.  Lemma for ~ rdgifnon and ~ rdg0 .  (Contributed by Jim
+       Kingdon, 29-May-2019.) $)
+    rdgruledef $p |- (
+        Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
+        /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
+          e. _V ) $=
+      ( cvv cdm cfv ciun cun cmpt wfun wcel funmpt vex funfvex mp2an
+      cv dmex wfn fvex funfni iunex unex eqid dmmpti eleqtrri pm3.2i
+      ) DHBADTZIZATZUKJZEJZKZLZMZNZCTZURJHOZDHUQPZUSUTURIZOVAVBUTHVCC
+      QDHUQURBUPFAULUOUKDQZUAEHUBUNHOUOHOZGUMUKHHVDAQUCVEHUNEUNERUDSU
+      EUFURUGUHUIUTURRSUJ $.
+
+    $( The recursive definition generator is a function on ordinal numbers.
+       The ` F Fn _V ` hypothesis states that the characteristic function is
+       defined for all sets (being defined for all ordinals might be enough,
+       but being defined for all sets will generally hold for the
+       characteristic functions we need to use this with).  (Contributed by Jim
+       Kingdon, 27-May-2019.) $)
+    rdgifnon $p |- rec ( F , A ) Fn On $=
+      ( vf vg vx crdg cvv cv cdm cfv ciun cun cmpt df-irdg rdgruledef tfri1 ) EBAH
+      FIAGFJZKGJSLBLMNOGFBAPGAEFBCDQR $.
+
+    $( The initial value of the recursive definition generator.  (Contributed
+       by NM, 23-Apr-1995.)  (Revised by Mario Carneiro, 14-Nov-2014.) $)
+    rdg0 $p |- ( rec ( F , A ) ` (/) ) = A $=
+      ( vx vg vy c0 cfv cdm cv ciun cun cvv wcel wceq ax-mp fveq2i eqtri 0ex
+      crdg cmpt cres con0 0elon df-irdg rdgruledef tfri2 res0 dmeq fveq2d iuneq12d
+      fveq1 uneq2d eqid dmex 0fv wfn funfvex mp2an eqeltri iunex unex fvmpt dm0
+      funfni iuneq1 0iun uneq2i un0 ) HBAUAZIZAEHJZEKZHIZBIZLZMZAVLHFNAEFKZJZVN
+      VSIZBIZLZMZUBZIZVRVLVKHUCZWEIZWFHUDOVLWHPUEGHVKWEEFBAUFEAGFBCDUGUHQWGHWEV
+      KUIRSHNOZWFVRPTFHWDVRNWEVSHPZWCVQAWJEVTVMWBVPVSHUJWJWAVOBVNVSHUMUKULUNWEU
+      OAVQCEVMVPHTUPVPHBIZNVOHBVNUQRBNURWIWKNOZDTWLNHBHBUSVFUTVAVBVCVDQSVRAHMAV
+      QHAVQEHVPLZHVMHPVQWMPVEEVMHVPVGQEVPVHSVIAVJSS $.
+
+    $( One way of describing the value of the recursive definition generator at
+       a successor.  There is no condition on the characteristic function ` F `
+       other than ` F Fn _V ` .  Given that, the resulting expression
+       encompasses both the expected successor term
+       ` ( F `` ( rec ( F , A ) `` B ) ) ` but also terms that correspond to
+       the initial value ` A ` and to limit ordinals
+       ` U_ x e. B ( F `` ( ( rec ( F , A ) |`` suc B ) `` x ) ) ` .
+
+       If we added a condition that the characteristic function is increasing
+       (for example ` A. x x e. ( F `` x ) ` ) we could likely show
+       ` ( rec ( F , A ) `` suc B ) = ( F `` ( rec ( F , A ) `` B ) ) ` .
+       (Contributed by Jim Kingdon, 9-Jun-2019.) $)
+    rdgisuc1 $p |- ( B e. On -> ( rec ( F , A ) ` suc B ) =
+        ( A u. ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
+          u. ( F ` ( rec ( F , A ) ` B ) ) ) ) ) $=
+      ( vg vf con0 wcel cfv cdm cv ciun cun cvv wceq syl fveq2d uneq2d suceloni
+      csuc crdg cres cmpt df-irdg rdgruledef wfun rdgfun resfunexg sylancr wral
+      tfri2 vex fvexg sylancl ralrimivw wfn funfvex funfni mpan ralimi dmresexg
+      wi iunexg ex sylc unexg dmeq fveq1 iuneq12d eqid fvmptg syl2anc eqtrd wss
+      onss rdgifnon fndm ax-mp syl6sseqr ssdmres sylib csn df-suc iuneq1 iunxun
+      iuneq1d eqtri fveq2 iunxsng sucidg fvres syl5eq 3eqtrd ) CIJZCUBZDBUCZKZB
+      AWRWQUDZLZAMZWTKZDKZNZOZBAWQXDNZOBACXDNZCWRKZDKZOZOWPWSWTGPBAGMZLZXBXLKZD
+      KZNZOZUEZKZXFWPWQIJZWSXSQCUAZHWQWRXRAGDBUFABHGDEFUGUMRWPWTPJZXFPJZXSXFQWP
+      WRUHXTYBBDUIYAWRWQIUJUKZWPBPJXEPJZYCEWPXTXDPJZAXAULZYEYAWPXCPJZAXAULYGWPY
+      HAXAWPYBXBPJYHYDAUNXBWTPPUOUPUQYHYFAXADPURYHYFFYFPXCDXCDUSUTVAVBRXTXAPJZY
+      GYEVDWRWQIVCYIYGYEAXAXDPPVEVFRVGBXEPPVHUKGWTXQXFPPXRXLWTQZXPXEBYJAXMXAXOX
+      DXLWTVIYJXNXCDXBXLWTVJSVKTXRVLVMVNVOWPXEXGBWPAXAWQXDWPWQWRLZVPXAWQQWPWQIY
+      KWPXTWQIVPYAWQVQRWRIURYKIQBDEFVRIWRVSVTWAWQWRWBWCWHTWPXGXKBWPXGXHACWDZXDN
+      ZOZXKXGACYLOZXDNZYNWQYOQXGYPQCWEAWQYOXDWFVTACYLXDWGWIWPYMXJXHWPYMCWTKZDKZ
+      XJACXDYRIXBCQXCYQDXBCWTWJSWKWPYQXIDWPCWQJYQXIQCIWLCWQWRWMRSVOTWNTWO $.
   $}
 
 $(
@@ -54466,11 +54610,14 @@ htmldef "C_" as
   althtmldef "C_" as ' &#8838; '; /* &subE; */
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "C_" as "\subseteq";
+    /* 7-Jun-2019 changed gif, unicode and latex def of "C." from subset to
+    subsetneq (BJ) */
 htmldef "C." as
-    " <IMG SRC='subset.gif' WIDTH=12 HEIGHT=19 ALT=' C.' TITLE='C.'> ";
-  althtmldef "C." as ' &sub; ';
+    " <IMG SRC='subsetneq.gif' WIDTH=12 HEIGHT=19 ALT=' C.' TITLE='C.'> ";
+    /* subset.gif */
+  althtmldef "C." as ' &#x228a; '; /* &sub; */
     /* 2-Jan-2016 reverted sans-serif */
-  latexdef "C." as "\subset";
+  latexdef "C." as "\subsetneq"; /* \subset */
 htmldef "(/)" as
     "<IMG SRC='varnothing.gif' WIDTH=11 HEIGHT=19 ALT=' (/)' TITLE='(/)'>";
   althtmldef "(/)" as '&empty;';
@@ -54620,6 +54767,10 @@ htmldef "Smo" as
 htmldef "recs" as "recs";
   althtmldef "recs" as "recs";
   latexdef "recs" as "\mathrm{recs}";
+htmldef "rec" as
+    "<IMG SRC='_rec.gif' WIDTH=21 HEIGHT=19 ALT=' rec' TITLE='rec'>";
+  althtmldef "rec" as 'rec';
+  latexdef "rec" as "{\rm rec}";
 
 htmldef "Fun" as
     "<IMG SRC='_fun.gif' WIDTH=25 HEIGHT=19 ALT=' Fun' TITLE='Fun'> ";

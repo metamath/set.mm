@@ -968,12 +968,14 @@ set exists or it does not"
 
 <TR>
 <TD>snex</TD>
-<TD>~ snexg </TD>
+<TD>~ snexg , ~ snex </TD>
+<TD>The iset.mm version of ~ snex has an additional hypothesis</TD>
 </TR>
 
 <TR>
 <TD>opex</TD>
-<TD>~ opexg , ~ sopex </TD>
+<TD>~ opexg , ~ opex </TD>
+<TD>The iset.mm version of ~ opex has additional hypotheses</TD>
 </TR>
 
 <TR>
@@ -994,9 +996,22 @@ the biconditional from ordsseleq</TD>
 </TR>
 
 <TR>
-<TD ROWSPAN="2">fvex</TD>
+<TD>iotaex</TD>
+<TD>~ euiotaex </TD>
+</TR>
+
+<TR>
+<TD ROWSPAN="4">fvex</TD>
 <TD>~ funfvex </TD>
 <TD>when evaluating a function within its domain</TD>
+</TR>
+
+<TD>~ fvexg , ~ fvex </TD>
+<TD>when the function is a set and is evaluated at a set</TD>
+</TR>
+
+<TD>~ relrnfvex </TD>
+<TD>when evaluating a relation whose range is a set</TD>
 </TR>
 
 <TR>
@@ -1022,6 +1037,11 @@ the biconditional from ordsseleq</TD>
 <TR>
 <TD>eluniima</TD>
 <TD>~ eluniimadm </TD>
+</TR>
+
+<TR>
+<TD>riotaex</TD>
+<TD>~ reuiotaex </TD>
 </TR>
 
 <TR>
@@ -1067,9 +1087,15 @@ the biconditional from ordsseleq</TD>
 
 <TR>
 <TD>df-rdg</TD>
-<TD><I>none</I></TD>
-<TD>To make this work would require a definition which combines the successor and limit cases. In the words of [Crosilla], p. "Set-theoretic principles incompatible with intuitionistic logic", "we can still define many of the familiar set-theoretic operations by transfinite recursion on ordinals (see Aczel and Rathjen 2001, Section 4.2). This is fine as long as the definitions by transfinite recursion do not make case distinctions such as in the classical ordinal cases of successor and limit."</TD>
+<TD>~ df-irdg</TD>
+<TD>This definition combines the successor and limit cases (rather than specifying them as separate cases in a way which relies on excluded middle). In the words of [Crosilla], p. "Set-theoretic principles incompatible with intuitionistic logic", "we can still define many of the familiar set-theoretic operations by transfinite recursion on ordinals (see Aczel and Rathjen 2001, Section 4.2). This is fine as long as the definitions by transfinite recursion do not make case distinctions such as in the classical ordinal cases of successor and limit."</TD>
 </TR>
+
+<TR>
+<TD>rdgfnon</TD>
+<TD>~ rdgifnon </TD>
+</TR>
+
 </TABLE>
 
 <HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
