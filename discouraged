@@ -1361,6 +1361,7 @@
 "axc4i-o" is used by "ax12indalem".
 "axc4i-o" is used by "axc11n-16".
 "axc4i-o" is used by "hbae-o".
+"axc5c4c711toc7" is used by "axc5c4c711to11".
 "axc5c7" is used by "axc5c7toc5".
 "axc5c7" is used by "axc5c7toc7".
 "axc5c711" is used by "axc5c711to11".
@@ -13619,12 +13620,17 @@ New usage of "axaddf" is discouraged (1 uses).
 New usage of "axaddrcl" is discouraged (0 uses).
 New usage of "axc11-o" is discouraged (0 uses).
 New usage of "axc11n-16" is discouraged (0 uses).
+New usage of "axc11next" is discouraged (0 uses).
 New usage of "axc11nfromc11" is discouraged (0 uses).
 New usage of "axc16ALT" is discouraged (0 uses).
 New usage of "axc16ALT2" is discouraged (1 uses).
 New usage of "axc16b" is discouraged (0 uses).
 New usage of "axc4i-o" is discouraged (5 uses).
 New usage of "axc5" is discouraged (0 uses).
+New usage of "axc5c4c711to11" is discouraged (0 uses).
+New usage of "axc5c4c711toc4" is discouraged (0 uses).
+New usage of "axc5c4c711toc5" is discouraged (0 uses).
+New usage of "axc5c4c711toc7" is discouraged (1 uses).
 New usage of "axc5c7" is discouraged (2 uses).
 New usage of "axc5c711" is discouraged (3 uses).
 New usage of "axc5c711to11" is discouraged (0 uses).
