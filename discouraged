@@ -17867,9 +17867,12 @@ Proof modification of "bj-equsexv" is discouraged (38 steps).
 Proof modification of "bj-godellob" is discouraged (19 steps).
 Proof modification of "bj-inrab2" is discouraged (48 steps).
 Proof modification of "bj-issetW" is discouraged (46 steps).
+Proof modification of "bj-isseti" is discouraged (15 steps).
 Proof modification of "bj-nalset" is discouraged (100 steps).
 Proof modification of "bj-rabtrALT" is discouraged (36 steps).
 Proof modification of "bj-rabtrAUTO" is discouraged (33 steps).
+Proof modification of "bj-ralcom4" is discouraged (63 steps).
+Proof modification of "bj-rexcom4" is discouraged (69 steps).
 Proof modification of "bj-sb2v" is discouraged (29 steps).
 Proof modification of "bj-sbceqgALT" is discouraged (143 steps).
 Proof modification of "bj-sbftv" is discouraged (37 steps).
@@ -17888,6 +17891,7 @@ Proof modification of "bj-vecmod" is discouraged (18 steps).
 Proof modification of "bj-vecmoda" is discouraged (5 steps).
 Proof modification of "bj-vexW" is discouraged (29 steps).
 Proof modification of "bj-vexWv" is discouraged (29 steps).
+Proof modification of "bj-vexWv2" is discouraged (23 steps).
 Proof modification of "bj-vjust" is discouraged (51 steps).
 Proof modification of "bj-vtoclgf" is discouraged (29 steps).
 Proof modification of "bj-xpima1snALT" is discouraged (34 steps).
