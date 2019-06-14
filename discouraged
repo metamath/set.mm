@@ -1329,6 +1329,9 @@
 "ax-pre-lttrn" is used by "axlttrn".
 "ax-pre-mulgt0" is used by "axmulgt0".
 "ax-pre-sup" is used by "axsup".
+"ax-zlmOLD" is used by "zlmvalOLD".
+"ax-znOLD" is used by "znvalOLD".
+"ax-zrhOLD" is used by "zrhvalOLD".
 "ax10" is used by "axc5c711".
 "ax10" is used by "equidq".
 "ax10" is used by "hba1-o".
@@ -4675,9 +4678,6 @@
 "df-wrecs" is used by "wfrlem7".
 "df-wrecs" is used by "wfrlem9".
 "df-wrecs" is used by "wrecseq123".
-"df-zlmOLD" is used by "zlmvalOLD".
-"df-znOLD" is used by "znvalOLD".
-"df-zrhOLD" is used by "zrhvalOLD".
 "df0op2" is used by "hh0oi".
 "df0op2" is used by "ho01i".
 "df0op2" is used by "nmop0h".
@@ -13642,6 +13642,9 @@ New usage of "ax-pre-lttri" is discouraged (1 uses).
 New usage of "ax-pre-lttrn" is discouraged (1 uses).
 New usage of "ax-pre-mulgt0" is discouraged (1 uses).
 New usage of "ax-pre-sup" is discouraged (1 uses).
+New usage of "ax-zlmOLD" is discouraged (1 uses).
+New usage of "ax-znOLD" is discouraged (1 uses).
+New usage of "ax-zrhOLD" is discouraged (1 uses).
 New usage of "ax1" is discouraged (0 uses).
 New usage of "ax10" is discouraged (3 uses).
 New usage of "ax12" is discouraged (1 uses).
@@ -14807,9 +14810,6 @@ New usage of "df-vhc2" is discouraged (1 uses).
 New usage of "df-vhc3" is discouraged (1 uses).
 New usage of "df-vs" is discouraged (1 uses).
 New usage of "df-wrecs" is discouraged (8 uses).
-New usage of "df-zlmOLD" is discouraged (1 uses).
-New usage of "df-znOLD" is discouraged (1 uses).
-New usage of "df-zrhOLD" is discouraged (1 uses).
 New usage of "df0op2" is discouraged (3 uses).
 New usage of "dfadj2" is discouraged (7 uses).
 New usage of "dfbi1gb" is discouraged (0 uses).
