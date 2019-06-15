@@ -1341,6 +1341,7 @@
 "ax12indn" is used by "ax12indi".
 "ax12v2-o" is used by "ax12a2-o".
 "ax16g-o" is used by "ax12inda2".
+"ax1cn" is used by "zrhpsgnodpm".
 "ax5el" is used by "dveel2ALT".
 "ax5eq" is used by "dveeq1-o16".
 "ax6e2eq" is used by "ax6e2ndeq".
@@ -5077,7 +5078,6 @@
 "drngoi" is used by "fldcrng".
 "dvadiaN" is used by "diarnN".
 "dvdsrz" is used by "zlpir".
-"dvdsrz" is used by "zndvds".
 "dveeq1-o" is used by "ax12inda2ALT".
 "dveeq2-o" is used by "ax12el".
 "dveeq2-o" is used by "ax12eq".
@@ -5856,7 +5856,6 @@
 "exinst11" is used by "vk15.4jVD".
 "exlimexi" is used by "exinst".
 "exlimexi" is used by "sb5ALT".
-"expghmOLD" is used by "lgseisenlem4".
 "fh1" is used by "chirredlem3".
 "fh1" is used by "cm2j".
 "fh1" is used by "fh1i".
@@ -13250,9 +13249,7 @@
 "zfinf" is used by "axinf2".
 "zfinf" is used by "axinfndlem1".
 "zfpair" is used by "axpr".
-"zlmvalOLD" is used by "zlmds".
 "zlmvalOLD" is used by "zlmscaOLD".
-"zlmvalOLD" is used by "zlmtset".
 "zlpirlem1" is used by "zlpirlem2".
 "zlpirlem1" is used by "zlpirlem3".
 "zlpirlem2" is used by "zlpir".
@@ -13283,62 +13280,15 @@
 "znzrhOLD" is used by "znle2OLD".
 "znzrhOLD" is used by "znzrh2OLD".
 "zrdivrng" is used by "dvrunz".
-"zrhmulgOLD" is used by "chrcong".
-"zrhmulgOLD" is used by "chrdvds".
-"zrhmulgOLD" is used by "chrid".
-"zrhmulgOLD" is used by "isarchiofld".
-"zrhmulgOLD" is used by "m2detleiblem1".
-"zrhmulgOLD" is used by "rearchi".
-"zrhmulgOLD" is used by "zrhnm".
-"zrhmulgOLD" is used by "zrhpsgnelbas".
-"zrhrhmOLD" is used by "cygznlem3".
-"zrhrhmOLD" is used by "dchrisum0flblem1".
-"zrhrhmOLD" is used by "dchrzrhmul".
-"zrhrhmOLD" is used by "domnchr".
-"zrhrhmOLD" is used by "elzrhunit".
 "zrhrhmOLD" is used by "lgsdchr".
-"zrhrhmOLD" is used by "lgseisenlem3".
-"zrhrhmOLD" is used by "lgseisenlem4".
-"zrhrhmOLD" is used by "lgsqrlem1".
-"zrhrhmOLD" is used by "lgsqrlem2".
-"zrhrhmOLD" is used by "lgsqrlem3".
-"zrhrhmOLD" is used by "qqhf".
-"zrhrhmOLD" is used by "qqhghm".
-"zrhrhmOLD" is used by "qqhnm".
-"zrhrhmOLD" is used by "qqhrhm".
-"zrhrhmOLD" is used by "qqhval2lem".
-"zrhrhmOLD" is used by "zndvds0".
 "zrhrhmOLD" is used by "znf1oOLD".
-"zrhrhmOLD" is used by "znfld".
-"zrhrhmOLD" is used by "znidomb".
-"zrhrhmOLD" is used by "znrrg".
-"zrhrhmOLD" is used by "znunit".
-"zrhrhmOLD" is used by "zrhf1ker".
-"zrhrhmOLD" is used by "zrhpsgnmhm".
-"zrhrhmOLD" is used by "zrhpsgnodpm".
-"zrhrhmOLD" is used by "zrhunitpreima".
 "zrhrhmOLD" is used by "zzngimOLD".
 "zrhrhmbOLD" is used by "znzrh2OLD".
 "zrhrhmbOLD" is used by "zrhrhmOLD".
 "zrhval2OLD" is used by "zrhmulgOLD".
 "zrhval2OLD" is used by "zrhrhmbOLD".
 "zrhvalOLD" is used by "zrhval2OLD".
-"zrng0" is used by "zrhf1ker".
-"zrngbas" is used by "elzrhunit".
-"zrngbas" is used by "qqhf".
-"zrngbas" is used by "qqhghm".
-"zrngbas" is used by "qqhnm".
-"zrngbas" is used by "qqhrhm".
-"zrngbas" is used by "qqhval2lem".
-"zrngbas" is used by "zrhf1ker".
-"zrngbas" is used by "zrhunitpreima".
-"zrngmulr" is used by "qqhghm".
-"zrngmulr" is used by "qqhrhm".
-"zrngmulr" is used by "qqhval2lem".
-"zrngplusg" is used by "qqhghm".
-"zrngplusg" is used by "qqhrhm".
 "zrngunit" is used by "prmirredlemOLD".
-"zrngunit" is used by "qqhval2lem".
 New usage of "00sr" is discouraged (4 uses).
 New usage of "0bdop" is discouraged (2 uses).
 New usage of "0blo" is discouraged (1 uses).
@@ -13664,7 +13614,7 @@ New usage of "ax13fromc9" is discouraged (0 uses).
 New usage of "ax16g-o" is discouraged (1 uses).
 New usage of "ax16gALT" is discouraged (0 uses).
 New usage of "ax16nfALT" is discouraged (0 uses).
-New usage of "ax1cn" is discouraged (0 uses).
+New usage of "ax1cn" is discouraged (1 uses).
 New usage of "ax1ne0" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax2" is discouraged (0 uses).
@@ -15000,7 +14950,7 @@ New usage of "drngoi" is discouraged (2 uses).
 New usage of "dtruALT" is discouraged (0 uses).
 New usage of "dtruALT2" is discouraged (0 uses).
 New usage of "dvadiaN" is discouraged (1 uses).
-New usage of "dvdsrz" is discouraged (2 uses).
+New usage of "dvdsrz" is discouraged (1 uses).
 New usage of "dveel2ALT" is discouraged (0 uses).
 New usage of "dveeq1-o" is discouraged (1 uses).
 New usage of "dveeq1-o16" is discouraged (0 uses).
@@ -15317,7 +15267,7 @@ New usage of "exinst11" is discouraged (1 uses).
 New usage of "exlimexi" is discouraged (2 uses).
 New usage of "exmoeuOLD" is discouraged (0 uses).
 New usage of "exp3acom23g" is discouraged (0 uses).
-New usage of "expghmOLD" is discouraged (1 uses).
+New usage of "expghmOLD" is discouraged (0 uses).
 New usage of "f1oweALT" is discouraged (0 uses).
 New usage of "fh1" is discouraged (3 uses).
 New usage of "fh1i" is discouraged (2 uses).
@@ -17765,7 +17715,7 @@ New usage of "zfinf" is discouraged (2 uses).
 New usage of "zfpair" is discouraged (1 uses).
 New usage of "zfregs2VD" is discouraged (0 uses).
 New usage of "zlmscaOLD" is discouraged (0 uses).
-New usage of "zlmvalOLD" is discouraged (3 uses).
+New usage of "zlmvalOLD" is discouraged (1 uses).
 New usage of "zlpir" is discouraged (0 uses).
 New usage of "zlpirlem1" is discouraged (2 uses).
 New usage of "zlpirlem2" is discouraged (2 uses).
@@ -17789,18 +17739,18 @@ New usage of "znzrh2OLD" is discouraged (1 uses).
 New usage of "znzrhOLD" is discouraged (2 uses).
 New usage of "znzrhvalOLD" is discouraged (0 uses).
 New usage of "zrdivrng" is discouraged (1 uses).
-New usage of "zrhmulgOLD" is discouraged (8 uses).
-New usage of "zrhrhmOLD" is discouraged (27 uses).
+New usage of "zrhmulgOLD" is discouraged (0 uses).
+New usage of "zrhrhmOLD" is discouraged (3 uses).
 New usage of "zrhrhmbOLD" is discouraged (2 uses).
 New usage of "zrhval2OLD" is discouraged (2 uses).
 New usage of "zrhvalOLD" is discouraged (1 uses).
-New usage of "zrng0" is discouraged (1 uses).
+New usage of "zrng0" is discouraged (0 uses).
 New usage of "zrng1" is discouraged (0 uses).
-New usage of "zrngbas" is discouraged (8 uses).
+New usage of "zrngbas" is discouraged (0 uses).
 New usage of "zrngmulg" is discouraged (0 uses).
-New usage of "zrngmulr" is discouraged (3 uses).
-New usage of "zrngplusg" is discouraged (2 uses).
-New usage of "zrngunit" is discouraged (2 uses).
+New usage of "zrngmulr" is discouraged (0 uses).
+New usage of "zrngplusg" is discouraged (0 uses).
+New usage of "zrngunit" is discouraged (1 uses).
 New usage of "zzngimOLD" is discouraged (0 uses).
 New usage of "zzsnmOLD" is discouraged (0 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
