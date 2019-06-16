@@ -1,4 +1,4 @@
-$( iset.mm - Version of 11-Jun-2019
+$( iset.mm - Version of 15-Jun-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54050,6 +54050,25 @@ $)
     rdg0ss $p |- ( B e. On -> A C_ ( rec ( F , A ) ` B ) ) $=
       ( vx con0 wcel crdg cres cdm cv cfv cun ssun1 rdgival syl5sseqr
       ciun ) BGHAFCAIZBJZKFLTMCMRZNABSMAUAOFABCDEPQ $.
+
+    ${
+      $d A x $.  $d B x $.  $d F x $.
+      rdgisuc2.inc $e |- A. x x C_ ( F ` x ) $.
+      $( The value of the recursive definition generator.
+
+         Given the hypothesis that the characteristic function is increasing,
+         we can remove the initial value from ~ rdgisuc1 by using ~ rdg0ss .
+         (Contributed by Jim Kingdon, 15-Jun-2019.) $)
+      rdgisuc2 $p |- ( B e. On -> ( rec ( F , A ) ` suc B ) =
+          ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
+            u. ( F ` ( rec ( F , A ) ` B ) ) ) ) $=
+        ( con0 wcel csuc crdg cfv cv cres ciun cun rdgisuc1 wss wceq cvv rdg0ss
+        un12 wal rdgifnon funfvex funfni mpan id fveq2 sseq12d spcgv ee10 sstrd
+        wfn ssequn1 sylib uneq2d syl5eq eqtrd ) CHIZCJZDBKZLBACAMZVBVANLDLOZCVB
+        LZDLZPZPZVGABCDEFQUTVHVDBVFPZPVGBVDVFUBUTVIVFVDUTBVFRVIVFSUTBVEVFBCDEFU
+        AUTVETIZVCVCDLZRZAUCVEVFRZVBHUNUTVJBDEFUDVJHCVBCVBUEUFUGGVLVMAVETVCVESZ
+        VCVEVKVFVNUHVCVEDUIUJUKULUMBVFUOUPUQURUS $.
+    $}
   $}
 
 $(
