@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-Jun-2019
+$( iset.mm - Version of 15-Jun-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -53990,6 +53990,21 @@ $)
       ( vf vg vx crdg cvv cv cdm cfv ciun cun cmpt df-irdg rdgruledef tfri1 ) EBAH
       FIAGFJZKGJSLBLMNOGFBAPGAEFBCDQR $.
 
+    $( Value of the recursive definition generator.  (Contributed by Jim
+       Kingdon, 11-Jun-2019.) $)
+    rdgival $p |- ( B e. On -> ( rec ( F , A ) ` B ) =
+        ( A u. U_ x e. dom ( rec ( F , A ) |` B )
+          ( F ` ( ( rec ( F , A ) |` B ) ` x ) ) ) ) $=
+      ( vg vy con0 wcel cfv cvv cv cdm ciun cun wceq mpan wral syl2anc dmresexg
+      crdg cres cmpt df-irdg rdgruledef tfri2 wfun rdgfun resfunexg vex sylancl
+      fvexg ralrimivw wfn funfvex funfni ralimi iunexg unexg sylancr dmeq fveq1
+      syl fveq2d iuneq12d uneq2d eqid fvmptg eqtrd ) CIJZCDBUBZKVLCUCZGLBAGMZNZ
+      AMZVNKZDKZOZPZUDZKZBAVMNZVPVMKZDKZOZPZHCVLWAAGDBUEABHGDEFUFUGVKVMLJZWGLJZ
+      WBWGQVLUHVKWHBDUIVLCIUJRZVKBLJWFLJZWIEVKWCLJWELJZAWCSZWKVLCIUAVKWDLJZAWCS
+      WMVKWNAWCVKWHVPLJWNWJAUKVPVMLLUMULUNWNWLAWCDLUOWNWLFWLLWDDWDDUPUQRURVDAWC
+      WELLUSTBWFLLUTVAGVMVTWGLLWAVNVMQZVSWFBWOAVOWCVRWEVNVMVBWOVQWDDVPVNVMVCVEV
+      FVGWAVHVITVJ $.
+
     $( The initial value of the recursive definition generator.  (Contributed
        by NM, 23-Apr-1995.)  (Revised by Mario Carneiro, 14-Nov-2014.) $)
     rdg0 $p |- ( rec ( F , A ) ` (/) ) = A $=
@@ -54017,21 +54032,43 @@ $)
     rdgisuc1 $p |- ( B e. On -> ( rec ( F , A ) ` suc B ) =
         ( A u. ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
           u. ( F ` ( rec ( F , A ) ` B ) ) ) ) ) $=
-      ( vg vf con0 wcel cfv cdm cv ciun cun cvv wceq syl fveq2d uneq2d suceloni
-      csuc crdg cres cmpt df-irdg rdgruledef wfun rdgfun resfunexg sylancr wral
-      tfri2 vex fvexg sylancl ralrimivw wfn funfvex funfni mpan ralimi dmresexg
-      wi iunexg ex sylc unexg dmeq fveq1 iuneq12d eqid fvmptg syl2anc eqtrd wss
-      onss rdgifnon fndm ax-mp syl6sseqr ssdmres sylib csn df-suc iuneq1 iunxun
-      iuneq1d eqtri fveq2 iunxsng sucidg fvres syl5eq 3eqtrd ) CIJZCUBZDBUCZKZB
-      AWRWQUDZLZAMZWTKZDKZNZOZBAWQXDNZOBACXDNZCWRKZDKZOZOWPWSWTGPBAGMZLZXBXLKZD
-      KZNZOZUEZKZXFWPWQIJZWSXSQCUAZHWQWRXRAGDBUFABHGDEFUGUMRWPWTPJZXFPJZXSXFQWP
-      WRUHXTYBBDUIYAWRWQIUJUKZWPBPJXEPJZYCEWPXTXDPJZAXAULZYEYAWPXCPJZAXAULYGWPY
-      HAXAWPYBXBPJYHYDAUNXBWTPPUOUPUQYHYFAXADPURYHYFFYFPXCDXCDUSUTVAVBRXTXAPJZY
-      GYEVDWRWQIVCYIYGYEAXAXDPPVEVFRVGBXEPPVHUKGWTXQXFPPXRXLWTQZXPXEBYJAXMXAXOX
-      DXLWTVIYJXNXCDXBXLWTVJSVKTXRVLVMVNVOWPXEXGBWPAXAWQXDWPWQWRLZVPXAWQQWPWQIY
-      KWPXTWQIVPYAWQVQRWRIURYKIQBDEFVRIWRVSVTWAWQWRWBWCWHTWPXGXKBWPXGXHACWDZXDN
-      ZOZXKXGACYLOZXDNZYNWQYOQXGYPQCWEAWQYOXDWFVTACYLXDWGWIWPYMXJXHWPYMCWTKZDKZ
-      XJACXDYRIXBCQXCYQDXBCWTWJSWKWPYQXIDWPCWQJYQXIQCIWLCWQWRWMRSVOTWNTWO $.
+      ( con0 wcel csuc crdg cfv cdm ciun cun wceq ax-mp uneq2d fveq2d
+      syl wss cres cv suceloni rdgival onss wfn rdgifnon fndm ssdmres
+      syl6sseqr sylib iuneq1d df-suc iuneq1 iunxun eqtri fveq2 sucidg
+      csn iunxsng fvres eqtrd syl5eq 3eqtrd ) CGHZCIZDBJZKZBAVGVFUAZL
+      ZAUBZVIKZDKZMZNZBAVFVMMZNBACVMMZCVGKZDKZNZNVEVFGHZVHVOOCUCZABVF
+      DEFUDSVEVNVPBVEAVJVFVMVEVFVGLZTVJVFOVEVFGWCVEWAVFGTWBVFUESVGGUF
+      WCGOBDEFUGGVGUHPUJVFVGUIUKULQVEVPVTBVEVPVQACUSZVMMZNZVTVPACWDNZ
+      VMMZWFVFWGOVPWHOCUMAVFWGVMUNPACWDVMUOUPVEWEVSVQVEWECVIKZDKZVSAC
+      VMWJGVKCOVLWIDVKCVIUQRUTVEWIVRDVECVFHWIVROCGURCVFVGVASRVBQVCQVD
+      $.
+
+    $( The initial value is a subset of the recursive definition generator
+       evaluated at any ordinal.  This is a consequence of the way that
+       ~ df-irdg handles the initial value.  (Contributed by Jim Kingdon,
+       11-Jun-2019.) $)
+    rdg0ss $p |- ( B e. On -> A C_ ( rec ( F , A ) ` B ) ) $=
+      ( vx con0 wcel crdg cres cdm cv cfv cun ssun1 rdgival syl5sseqr
+      ciun ) BGHAFCAIZBJZKFLTMCMRZNABSMAUAOFABCDEPQ $.
+
+    ${
+      $d A x $.  $d B x $.  $d F x $.
+      rdgisuc2.inc $e |- A. x x C_ ( F ` x ) $.
+      $( The value of the recursive definition generator.
+
+         Given the hypothesis that the characteristic function is increasing,
+         we can remove the initial value from ~ rdgisuc1 by using ~ rdg0ss .
+         (Contributed by Jim Kingdon, 15-Jun-2019.) $)
+      rdgisuc2 $p |- ( B e. On -> ( rec ( F , A ) ` suc B ) =
+          ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
+            u. ( F ` ( rec ( F , A ) ` B ) ) ) ) $=
+        ( con0 wcel csuc crdg cfv cv cres ciun cun rdgisuc1 wss wceq cvv rdg0ss
+        un12 wal rdgifnon funfvex funfni mpan id fveq2 sseq12d spcgv ee10 sstrd
+        wfn ssequn1 sylib uneq2d syl5eq eqtrd ) CHIZCJZDBKZLBACAMZVBVANLDLOZCVB
+        LZDLZPZPZVGABCDEFQUTVHVDBVFPZPVGBVDVFUBUTVIVFVDUTBVFRVIVFSUTBVEVFBCDEFU
+        AUTVETIZVCVCDLZRZAUCVEVFRZVBHUNUTVJBDEFUDVJHCVBCVBUEUFUGGVLVMAVETVCVESZ
+        VCVEVKVFVNUHVCVEDUIUJUKULUMBVFUOUPUQURUS $.
+    $}
   $}
 
 $(
