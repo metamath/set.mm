@@ -14906,7 +14906,6 @@ New usage of "dochspocN" is discouraged (0 uses).
 New usage of "dral1-o" is discouraged (4 uses).
 New usage of "dral1ALT" is discouraged (0 uses).
 New usage of "dral2-o" is discouraged (4 uses).
-New usage of "drnf2OLD" is discouraged (0 uses).
 New usage of "drngoi" is discouraged (2 uses).
 New usage of "dtruALT" is discouraged (0 uses).
 New usage of "dtruALT2" is discouraged (0 uses).
@@ -17766,6 +17765,7 @@ Proof modification of "ax2" is discouraged (46 steps).
 Proof modification of "ax3" is discouraged (24 steps).
 Proof modification of "ax4" is discouraged (45 steps).
 Proof modification of "ax52" is discouraged (14 steps).
+Proof modification of "ax5ALT" is discouraged (3 steps).
 Proof modification of "ax5el" is discouraged (30 steps).
 Proof modification of "ax5eq" is discouraged (30 steps).
 Proof modification of "ax6e2eq" is discouraged (111 steps).
@@ -17866,6 +17866,12 @@ Proof modification of "bj-chvarvv" is discouraged (10 steps).
 Proof modification of "bj-cleqh" is discouraged (108 steps).
 Proof modification of "bj-denotes" is discouraged (76 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
+Proof modification of "bj-dral1v" is discouraged (36 steps).
+Proof modification of "bj-dral2v" is discouraged (14 steps).
+Proof modification of "bj-drex1v" is discouraged (42 steps).
+Proof modification of "bj-drex2v" is discouraged (14 steps).
+Proof modification of "bj-drnf1v" is discouraged (50 steps).
+Proof modification of "bj-drnf2v" is discouraged (14 steps).
 Proof modification of "bj-dtru" is discouraged (146 steps).
 Proof modification of "bj-el" is discouraged (48 steps).
 Proof modification of "bj-elisset" is discouraged (38 steps).
@@ -18010,7 +18016,6 @@ Proof modification of "dih2dimbALTN" is discouraged (450 steps).
 Proof modification of "disjiunOLD" is discouraged (52 steps).
 Proof modification of "disjmoOLD" is discouraged (46 steps).
 Proof modification of "dral2-o" is discouraged (14 steps).
-Proof modification of "drnf2OLD" is discouraged (52 steps).
 Proof modification of "dtruALT" is discouraged (79 steps).
 Proof modification of "dtruALT2" is discouraged (80 steps).
 Proof modification of "dveel2ALT" is discouraged (22 steps).
