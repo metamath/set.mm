@@ -651,8 +651,8 @@ numbers</A> can make a higher-level view of the proof easier to grasp.)
 
 -<P><IMG SRC='_orange1circ.gif' WIDTH=19 HEIGHT=19 ALT='(1)'>&nbsp;&nbsp;
 Look at Step 2 of the proof.
-  In the Ref column,
-we see that it references a previously proved theorem, ~ oveq2i .  The theorem oveq2i requires a
+In the Ref column, we see that it references a previously proved theorem,
+~ oveq2i .  The theorem oveq2i requires a
 hypothesis, and in the Hyp column of Step 2 we indicate that Step 1 will
 satisfy (match) this hypothesis.
 
@@ -789,7 +789,8 @@ only, never into the variables of any proof step referenced
 in the Hyp column (of the theorem being proved).  <I>In other words you
 should pretend that all variables in the theorem being proved are
 constants for the purpose of figuring out the substitutions.</I> You can
-see this by looking at examples such as theorem ~ id1 .  To follow the proof of ~ id1 , you should treat the symbol ` ph ` as if it were a
+see this by looking at examples such as theorem ~ id1 .  To follow the proof
+of ~ id1 , you should treat the symbol ` ph ` as if it were a
 constant symbol, when you are figuring out the substitutions to make
 into the variables of the referenced theorems (or axioms).</LI>
 
@@ -803,15 +804,12 @@ in the referenced axioms are renamed to something else.
 
 Specifically, you can rewrite ~ ax-1 as say
 
-` ( ch -> `
-` ( ps -> `
-` ch ) ) ` .
+` ( ch -> ( ps -> ch ) ) ` .
 
-Then, to obtain step 2 of the proof of id1, substitute "` ph `" for ` ch ` and "` ( ph -> ph ) `"
-for ` ps ` .
+Then, to obtain step 2 of the proof of id1, substitute "` ph `" for ` ch `
+and "` ( ph -> ph ) `" for ` ps ` .
 
-
-  </LI>
+</LI>
 
 </MENU>
 
@@ -976,7 +974,7 @@ which would be nonsense.
 <B>class variable</B>, which is shown in <FONT
 COLOR="#CC33CC">purple</FONT> (usually as uppercase italic letters) and
 is a kind of generalization of the setvar variable that can be
-substituted with expressions such as 2 or ` ( pi + 3 ) `. The <A
+substituted with expressions such as 2 or ` ( _pi + 3 ) `. The <A
 HREF="#class">theory of classes</A> will be discussed in the next
 section.]</FONT><P>
 
@@ -1102,8 +1100,8 @@ are true.  A <B>proof</B> is a sequence of substitution instances of
 axioms and inference rules, where the hypotheses of the inference rules
 match previous steps in the sequence.  The last step in a proof is a
 <B>theorem</B> (example: ~ id1 ).  For brevity, a
-proof may also refer to earlier theorems (example: ~ id ), but in principle it can be expanded into
-references to only the initial axioms and rules.
+proof may also refer to earlier theorems (example: ~ id ), but in principle
+it can be expanded into references to only the initial axioms and rules.
 
 <P>We also use the word "theorem" informally to denote the result of a
 proof that also allows references to local hypotheses and thus has the
@@ -1335,7 +1333,8 @@ occurring in a wff" (or wish to do so to simplify the metalogic), we can
 omit axiom ~ ax-5 and still have a complete
 system of logic.  However, ~ ax-5 provides us
 with more general theorem <I>schemes</I> and can make proofs
-considerably shorter.  Interestingly, if we include ~ ax-5 , then ~ ax-c14 and ~ ax-c16 become redundant (see ~ axc14 and ~ axc16 ).
+considerably shorter.  Interestingly, if we include ~ ax-5 , then ~ ax-c14 and
+~ ax-c16 become redundant (see ~ axc14 and ~ axc16 ).
 
 <P>To simplify the metalogic even further&mdash;with no restrictions on
 substitutions at all&mdash;we can omit both ~ ax-c16
@@ -1348,8 +1347,8 @@ a very practical one since its proofs tend be very long.
 -->
 
 <!--
-<P>In principle it is possible to reformulate the axioms with ` e. ` as the only
-connective, making the ` = `
+<P>In principle it is possible to reformulate the axioms with ` e. ` as
+the only connective, making the ` = `
 connective redundant.  But actually coming up with a nice set
 of Metamath-style axioms for this is an interesting <B>open problem</B>
 (see Problem 13 on the <A HREF="../award2003.html">Workshop
@@ -1363,7 +1362,8 @@ after you!
 <!--
 <P>The quantifier prefix ` A. x ` means
 "for all sets ` x ` ."  For example, a very obvious truth (whose proof is
-~ ax-gen applied to ~ equid ) is ` A. x x = x ` which simply means "any set ` x ` is equal to itself."
+~ ax-gen applied to ~ equid ) is ` A. x x = x ` which simply means "any set
+` x ` is equal to itself."
 On the other hand it states something quite profound:  it literally
 means <I>any</I> set ` x ` whatsover.
 This includes all mathematical objects that have
@@ -1423,8 +1423,8 @@ that</I> df-bi, df-an, <I>and</I> df-ex <I>are additional axioms</I> (which
 they are in some axiomatizations
 of logic) so that you don't have to be concerned with their metalogical
 justification.  Under this assumption, our primitive or basic connectives are
-extended with ` <-> ` , ` /\ ` , and ` E. ` , and our wff construction rules are extended with
-~ wb , ~ wa , and ~ wex .  Alternately, you can rewrite the
+extended with ` <-> ` , ` /\ ` , and ` E. ` , and our wff construction rules
+are extended with ~ wb , ~ wa , and ~ wex .  Alternately, you can rewrite the
 set theory axioms
 below with these three definitions eliminated.
 
@@ -1447,7 +1447,8 @@ the foundations of mathematics and logic.
 (and, in the cases of Replacement and Regularity, provided
 that an antecedent is satisfied), there exists another set ` y ` based on or
 constructed from it, with the stated properties."  (The axiom of
-Extensionality can also be restated this way as shown by ~ axext2 .)  The individual axiom links provide more
+Extensionality can also be restated this way as shown by ~ axext2 .)
+The individual axiom links provide more
 detailed descriptions.  We derive the redundant ZF axioms of
 <A HREF="axsep.html">Separation</A>,
 <A HREF="axnul.html">Null Set</A>, and
@@ -1515,9 +1516,10 @@ profound.
 
 <P>The ZFC axioms have several equivalent formalizations, and we
 generally selected ones that are the shortest to state in terms of set
-theory primitives.  Our ~ ax-inf and ~ ax-ac are slighly unconventional in order to make
-them shorter.  We also provide ~ ax-inf2 and ~ ax-ac2 for people who want to work with
-equivalents to the conventional versions.  Specifically, ~ ax-reg is needed to derive ~ ax-inf2 from ~ ax-inf
+theory primitives.  Our ~ ax-inf and ~ ax-ac are slighly unconventional in
+order to make them shorter.  We also provide ~ ax-inf2 and ~ ax-ac2 for
+people who want to work with equivalents to the conventional versions.
+Specifically, ~ ax-reg is needed to derive ~ ax-inf2 from ~ ax-inf
 and ~ ax-ac from ~ ax-ac2 .  The reverse derivations do not need ~ ax-reg .
 
 <P>There you have it, the axioms for (essentially) all of mathematics!
@@ -1544,13 +1546,13 @@ The Tarski-Grothendieck Axiom postulates the existence of such sets.  We
 have included it in a separate table below for two reasons:  first, it
 is not normally considered to be part of ZFC set theory, and second,
 unlike the ZFC axioms, it is not "elementary," in that the known forms
-of it are very long when expanded to set theory primitives.  Below we
-show it compacted with definitions.  Theorem ~ grothprim shows you what it looks like when
-the definitions are expanded into the primitives used by the other
+of it are very long when expanded to set theory primitives.  Below we show
+it compacted with definitions.  Theorem ~ grothprim shows you what it looks
+like when the definitions are expanded into the primitives used by the other
 axioms.  The Tarski-Grothendieck axiom can be viewed as a very strong
-replacement of the Axiom of Infinity and implies that axiom (theorem ~ grothomex ) as well as the Axiom of Choice
-(theorem ~ grothac ) and the Axiom of Power Sets
-(theorem ~ grothpw ).
+replacement of the Axiom of Infinity and implies that axiom (theorem
+~ grothomex ) as well as the Axiom of Choice (theorem ~ grothac ) and the
+Axiom of Power Sets (theorem ~ grothpw ).
 
 <!--
  and the Axiom of Choice
@@ -1609,8 +1611,8 @@ Theory of Classes</FONT></B>&nbsp;&nbsp;&nbsp;
 <P>
 
 In <A HREF="#figure1">Figure 1</A> above that shows part of the proof of
-2+2=4, there are some purple-colored variables such as ` A ` and ` B ` that do not appear
-in any of the axioms of logic and set theory that we just presented.
+2+2=4, there are some purple-colored variables such as ` A ` and ` B ` that do
+not appear in any of the axioms of logic and set theory that we just presented.
 Even the number 2 is a symbol (a constant) that we cannot manipulate
 with the axioms, because of the rule that only setvar variables (and not
 constants or other expressions) can be substituted for setvar variables.
@@ -1637,9 +1639,9 @@ collection of sets, although not every such collection is itself a set
 ` ZZ /\ 2 < x ) } ` is
 the class (and also set) of all integers greater than 2.
 
-<P>We use upper-case variables ` A ` , ` B ` ,... to range over class builders and call them
-<B>class variables</B>.  More generally, we let them range over any
-object representing a class, such as other class variables.  (A class
+<P>We use upper-case variables ` A ` , ` B ` ,... to range over class builders
+and call them <B>class variables</B>.  More generally, we let them range over
+any object representing a class, such as other class variables.  (A class
 variable ` A `  itself can be represented with the
  class builder ` { x | x e. A } ` and thus
 qualifies as a class; see theorem ~ abid2 .)  Our
@@ -1652,8 +1654,8 @@ language will now have three kinds of variables:
 connect two setvar variables, so all starting
 wffs (without wff variables) are of the form ` x e. y ` and ` x `
 ` = y ` .  We extend the
-language syntax, i.e. the definition of a wff, by allowing ` e. ` and ` = ` to connect to
-expressions representing classes, as exemplified in the three
+language syntax, i.e. the definition of a wff, by allowing ` e. ` and ` = `
+to connect to expressions representing classes, as exemplified in the three
 definitions below.  Theorems involving the extended syntax are
 derived making use of those three definitions.
 
@@ -1672,11 +1674,11 @@ still rather awkward, and in practice we use class variables to
 represent these two class builders, leading to our
 -->
 
-~ df-un :  ` ( A u. `
-` B ) = { x | ( x e. A \/ x e. B ) } ` .  Here the defined expression on the left of the "="
+~ df-un :  ` ( A u. ` ` B ) = { x | ( x e. A \/ x e. B ) } ` .
+Here the defined expression on the left of the "="
 abbreviates the expression on the right.  When eliminating the defined
-expression, we can chose for ` x ` any variable not occurring in ` A ` or ` B ` (theorem
-~ unjust ); it is a bound or dummy variable similar to
+expression, we can chose for ` x ` any variable not occurring in ` A ` or ` B `
+(theorem ~ unjust ); it is a bound or dummy variable similar to
 the <I>x</I> in the integral from 0 to 1 of <I>x</I>&nbsp;d<I>x</I>.
 By introducing this definition, we effectively extend the syntax
 with new class expressions of the form ` ( A u. B ) ` that can be
@@ -1800,22 +1802,23 @@ variable for a setvar variable directly.)
 
 <P> <B><FONT COLOR="#006633">An example</FONT></B>&nbsp;&nbsp;&nbsp; To
 see an example of the algorithm, let us eliminate the class builder from
-the (extended) wff ` { x | x = a } `
-` = b ` .  For simplicity we
+the (extended) wff ` { x | x = a } = b ` .  For simplicity we
 will assume all setvar variable pairs are <A HREF="#distinct">distinct</A>.
 Treating the setvar variable ` b ` as a class and applying ~ dfcleq , we
-get ` A. y ( y e. { x | x = a } `
-` <-> y e. `
-` b ) ` .  Applying ~ df-clab , we get ` A. y ( [ y / x ] x = a <-> y e. `
-` b ) ` .  Applying ~ df-sb , we get ` A. y ( ( x = y -> x = a ) /\ E. x ( x = y /\ x = a ) ) <-> y e. b ) ` , which is our final
-expression in the basic language of predicate calculus (implicitly
-assuming we have expanded the defined connectives ` E. ` , ` /\ ` ,
-` <-> `).  This expression is unique
+get
+` A. y ( y e. { x | x = a } <-> y e. b ) ` .
+Applying ~ df-clab , we get
+` A. y ( [ y / x ] x = a <-> y e.  b ) ` .
+Applying ~ df-sb , we get
+` A. y ( ( x = y -> x = a ) /\ E. x ( x = y /\ x = a ) ) <-> y e. b ) ` ,
+which is our final expression in the basic language of predicate calculus
+(implicitly assuming we have expanded the defined connectives ` E. ` ,
+` /\ ` , ` <-> `).  This expression is unique
 provided we have some canonical convention for traversing the
 extended wff syntax tree and for naming any new variables
 introduced at each step.  By the way, this can be simplified with
-additional applications of predicate calculus to become ` A. y ( y = a <-> y e. `
-` b ) ` .
+additional applications of predicate calculus to become
+` A. y ( y = a <-> y e. b ) ` .
 
 <!--
 , which we can also obtain
@@ -1827,9 +1830,10 @@ immediately from the penultimate step by noticing that the substitution
 no class variables.  If the wff also contains class variables, these can
 be converted to wff variables by substituting ` { x | ph } `
 for ` A ` , ` { y | ps } ` for ` B ` ,
-and so on, where ` ph ` and ` ps ` are new wff variables that don't occur in the original
-extended wff.  The variables ` x ` and ` y ` are arbitrary (and may be the same) as long as they don't
-conflict with any distinct variable requirements imposed on ` A ` and ` B ` .  We then would
+and so on, where ` ph ` and ` ps ` are new wff variables that don't occur in
+the original extended wff.  The variables ` x ` and ` y ` are arbitrary (and
+may be the same) as long as they don't conflict with any distinct variable
+requirements imposed on ` A ` and ` B ` .  We then would
 follow the procedure of the above example.  The description of theorem
 ~ abeq2 goes into more detail and gives some
 actual database examples where this translation takes place.
@@ -1940,7 +1944,8 @@ checker will reject our three definitions for classes is that they
 overload (and thus in a naive sense redefine) existing connectives.
 There is one other definition in the set.mm database that mmj2 is
 unable to check: ~ df-bi ,
-which does not connect definiendum and definiens with ` <-> ` or ` = ` .  For these four cases, it is assumed that we are satisfied
+which does not connect definiendum and definiens with ` <-> ` or ` = ` .
+For these four cases, it is assumed that we are satisfied
 with a soundness justification outside of Metamath or its tools, and we
 specify them as exceptions in mmj2's RunParms.txt file:
 
@@ -2512,7 +2517,8 @@ notation.
 We can also use the simpler natural numbers of ordinal arithmetic, which
 are limited to the integers 0, 1, 2,...  . Although we haven't defined
 the ordinal number 4 (because it hasn't been needed yet) and thus can't
-show 2 + 2 = 4, the theorem 1 + 1 = 2 for ordinals is ~ o1p1e2 .  This theorem requires only 1,518
+show 2 + 2 = 4, the theorem 1 + 1 = 2 for ordinals is ~ o1p1e2 .
+This theorem requires only 1,518
 subtheorems with a total of 11,086 steps for its proof.
 -->
 
@@ -2951,7 +2957,8 @@ recipe for generating an infinite number of actual theorems.  <A
 NAME="mentioned"></A> In fact, the Metamath language cannot even express
 specific, actual theorems such as "` ( ` <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> ` = ` <I>v</I><FONT SIZE=-1><SUB>2</SUB></FONT>
 ` -> ` <I>v</I><FONT
-SIZE=-1><SUB>1</SUB></FONT> ` = ` <I>v</I><FONT SIZE=-1><SUB>2</SUB></FONT>` ) ` ."  We would have to do that outside of the
+SIZE=-1><SUB>1</SUB></FONT> ` = ` <I>v</I><FONT SIZE=-1><SUB>2</SUB></FONT>` ) ` ."
+We would have to do that outside of the
 Metamath system.  Ordinarily this is unnecessary; even logic textbooks
 work informally with theorem schemes after they explain how the formal
 system is constructed.  Metamath formalizes the process for working
@@ -2976,7 +2983,8 @@ proof steps.  See also the remarks for theorem ~ 1kp2ke3k .]</FONT><P>
 metavariables</FONT></B>&nbsp;&nbsp;&nbsp; Sometimes we must place
 restrictions on the formulas generated by a scheme in order to ensure
 their soundness, and we use <A HREF="#distinct">distinct variable</A>
-restrictions for this purpose.  For example, the theorem scheme ~ dtru , ` -. A. x ` ` x = y ` , has the restriction that
+restrictions for this purpose.  For example, the theorem scheme ~ dtru ,
+` -. A. x ` ` x = y ` , has the restriction that
 metavariables ` x ` and ` y ` cannot be substituted with the
 same actual variable, otherwise we could end up with the nonsense
 substitution instance "` -. A. ` <I>v</I><FONT
@@ -2994,7 +3002,8 @@ by theorems whose proofs make use of those schemes.
 <I>schemes.</I> They have no role in the actual logic (object language),
 where two actual variables with different names are distinct by
 definition&mdash;simply because they have different names, which is what
-"distinct" means.  Thus in an actual theorem generated by ~ dtru , such as "` -. A. ` <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> <I>v</I><FONT
+"distinct" means.  Thus in an actual theorem generated by ~ dtru , such as
+"` -. A. ` <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> <I>v</I><FONT
 SIZE=-1><SUB>1</SUB></FONT> = <I>v</I><FONT
 SIZE=-1><SUB>2</SUB></FONT>," it would be redundant (and meaningless) to
 require that <I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> and <I>v</I><FONT
@@ -3041,7 +3050,8 @@ but merely a proof verifier.
 HREF="#bibmegill">Megill</A>] paper.  The claim in Remark 9.6, "C14' is
 omitted from S3' because it can be proved from the others using only
 simple metalogic," is proved in theorem ~ axc14 .
-Axiom C16' is also redundant&mdash;see theorem ~ axc16 , whose proof was discovered in 2006 and not
+Axiom C16' is also redundant&mdash;see theorem ~ axc16 , whose proof was
+discovered in 2006 and not
 known at the time of the paper.  The somewhat strange-looking axiom C10'
 ( ~ ax-c10 ) was found to be equivalent to the simpler ~ ax-6 after
 the paper was submitted; see theorem ~ ax6fromc10 .  In the
@@ -3082,9 +3092,10 @@ axiomatization using only non-bundled axiom schemes (more specifically,
 schemes that don't allow a bound variable to be substituted for a free
 variable in its scope).  If we want the system to be metalogically
 complete, we must be able to derive our bundled axiom schemes as
-theorems.  For example, we can prove our bundled ~ ax-6 from the weaker non-bundled version that
-requires its variables to be distinct, as theorem ~ ax6 shows, but the proof is not trivial and
-makes use of all of the other axioms. -->
+theorems.  For example, we can prove our bundled ~ ax-6 from the weaker
+non-bundled version that requires its variables to be distinct, as theorem
+~ ax6 shows, but the proof is not trivial and makes use of all of the
+other axioms. -->
 
 
 
@@ -3095,9 +3106,9 @@ other words, he bundled it like we do to make it more general and able
 to prove instances of "` E. x ` ` x = x `" without
 requiring a separate axiom scheme.  On the other hand, he required that
 ` x ` and ` y ` be distinct in this scheme of his system S2
-mentioned above, since instances of "` E. x ` ` x = x `" could
-be derived in another way (see the proof of ~ equid1 ).  Tarski considered it better to include
-the distinct variable condition since he wanted to show the weakest
+mentioned above, since instances of "` E. x ` ` x = x `" could be derived
+in another way (see the proof of ~ equid1 ).  Tarski considered it better to
+include the distinct variable condition since he wanted to show the weakest
 possible axiom scheme needed for completeness, even though it made the
 statement of the scheme more complex.
 
@@ -3247,9 +3258,11 @@ as is the case with the traditional axioms).
 
 <P>To say that "` x ` is
 effectively not free in ` ph ` ," we can use the hypothesis ` ph -> `
-` A. x ph ` .  This hypothesis holds in all cases where ` x ` is not free in ` ph ` in the traditional system (and in a few
-other cases as well, which is why we say "effectively"&mdash;for
-example, the wff ` x = x ` will satisfy the hypothesis, as shown by theorem ~ hbequid , even though ` x ` is technically free in it).
+` A. x ph ` .  This hypothesis holds in all cases where ` x ` is not free in
+` ph ` in the traditional system (and in a few other cases as well, which is
+why we say "effectively"&mdash;for example, the wff ` x = x ` will satisfy
+the hypothesis, as shown by theorem ~ hbequid , even though ` x ` is
+technically free in it).
 
 Because the idiom for "effectively not free in" is so frequently used,
 we define a special logical connective,
@@ -3268,8 +3281,10 @@ the approximate equivalent to ~ stdpc4 in the
 table above.
 
 <!-- In all, the traditional schemes requiring the notions of "not free
-in" and "free for" can be emulated with Metamath schemes ~ stdpc4 , ~ stdpc5 , and ~ stdpc7 , assisted by some technical lemmas (needed
-to prove, for example, theorems of the form ` ph -> A. x ph ` in order to satisfy the hypothesis of ~ stdpc5 &mdash;in particular our hb* theorems such
+in" and "free for" can be emulated with Metamath schemes ~ stdpc4 , ~ stdpc5 ,
+and ~ stdpc7 , assisted by some technical lemmas (needed
+to prove, for example, theorems of the form ` ph -> A. x ph ` in order to
+satisfy the hypothesis of ~ stdpc5 &mdash;in particular our hb* theorems such
 as ~ hbim and also ~ ax-5 ).  -->
 
 <P>Both our system and the traditional system are called
@@ -3287,7 +3302,8 @@ of wff metavariables, using the rules described on the
 problem</FONT></B>&nbsp;&nbsp;&nbsp; Several people have asked whether
 Metamath's axioms <A HREF="#pcaxioms">ax-4 through ax-13</A> can be
 replaced with the more traditional-looking (and presumably more
-familiar) theorems ~ stdpc4 , ~ stdpc5 , ~ stdpc6 , and ~ stdpc7 .  This would indeed result in a
+familiar) theorems ~ stdpc4 , ~ stdpc5 , ~ stdpc6 , and ~ stdpc7 .
+This would indeed result in a
 <I>logically</I> complete system, in the sense that we would have
 schemes for all actual axioms of predicate calculus.  However, we would
 still need some of the axioms ax-c5 through ax-5 in order to achieve a
@@ -3397,14 +3413,16 @@ means the same thing as
 <P>The basic rule to remember is that
 <B>distinct variable provisos are inherited by substitutions</B>
 (that take place in a proof step).
- For example, look at step 1 of the proof of ~ cleljust , which has a substitution instance of
-~ ax-5 .  As you can see, ~ ax-5 requires the distinct variable pair ` x ` ,` ph ` .
+For example, look at step 1 of the proof of ~ cleljust , which has a
+substitution instance of ~ ax-5 .  As you can see, ~ ax-5 requires the
+distinct variable pair ` x ` ,` ph ` .
 
- Step 1  substitutes ` z `
+Step 1  substitutes ` z `
 for ` x ` and ` x e. y ` for ` ph ` .
 
 This substitution transforms the original distinct variable requirement
-into the two distinct variable pairs ` z ` ,` x ` and ` z ` ,` y ` , which will implicitly accompany step 1 (although not
+into the two distinct variable pairs ` z ` ,` x ` and ` z ` ,` y ` ,
+which will implicitly accompany step 1 (although not
 shown explicitly in step 1 of the proof listing).  Thus step 1 can be
 read in full, "` ( x e. y -> A. z ` ` x e. y ) ` where ` z ` ,` x ` are
 distinct and ` z ` ,` y ` are distinct."  The proof
@@ -3419,25 +3437,29 @@ how distinct variables requirements are inherited from referenced axioms
 or theorems in order to satisfy their distinct variable requirements.
 Let us consider an example (courtesy of G&eacute;rard Lang).  Naively,
 one might think that ~ ax-13 (which has no
-distinct variable requirements) is derivable from ~ ax-5 , arguing as follows.  Since the letter ` x ` has no occurrence in
+distinct variable requirements) is derivable from ~ ax-5 , arguing as follows.
+Since the letter ` x ` has no occurrence in
 the wff ` y = z ` , one might think that a direct
-application of ~ ax-5 would give (` y = z -> A. x ` ` y = z `) as a theorem with no distinct
-variable requirements, so that ~ ax-13 easily
+application of ~ ax-5 would give (` y = z -> A. x ` ` y = z `) as a theorem
+with no distinct variable requirements, so that ~ ax-13 easily
 follows by adding an antecedent with ~ a1i .
 However, "distinct" does not <I>merely</I> mean that two setvar variables
 have different names; it means that we also must prevent them from being
 substituted with the same setvar variable in the future.  (To be precise,
 they must represent object language variables with different names; see
 <A HREF="#schemes">Axioms vs. axiom schemes</A> and <A
-HREF="#axiomnotedv">Distinct metavariables</A> above.)  To apply ~ ax-5 , we must explicitly ensure that ` x ` is distinct from both
-` y ` and ` z ` in ` y = z ` by adding two distinct variable requirements.  Otherwise, we
-could further substitute ` x ` for ` y ` to
-arrive at (` x = z -> A. x ` ` x = z `); this violates the ~ ax-5 requirement since ` x ` <I>does</I> appear in ` x = z ` .
+HREF="#axiomnotedv">Distinct metavariables</A> above.)  To apply ~ ax-5 ,
+we must explicitly ensure that ` x ` is distinct from both
+` y ` and ` z ` in ` y = z ` by adding two distinct variable requirements.
+Otherwise, we could further substitute ` x ` for ` y ` to
+arrive at (` x = z -> A. x ` ` x = z `); this violates the ~ ax-5 requirement
+since ` x ` <I>does</I> appear in ` x = z ` .
 In fact, from ~ ax-5 we can conclude only the
 very restricted theorem ~ ax13w , which because of
-its distinct variable requirements is much weaker than axiom ~ ax-13 .  (If we omit them, the Metamath proof
-verifier will give an error message.)  We say that the distinct variable
-requirements in ~ ax13w are inherited from ~ ax-5 .
+its distinct variable requirements is much weaker than axiom ~ ax-13 .
+(If we omit them, the Metamath proof verifier will give an error message.)
+We say that the distinct variable requirements in ~ ax13w are inherited
+from ~ ax-5 .
 
 
 
@@ -3532,12 +3554,13 @@ ALIGN=RIGHT STYLE="margin-bottom:0px">
 HREF="#Tarski">Tarski</A>, p. 75]</B></TD></TR>
 </TABLE>
 
-<P>Tarski uses <!-- &wedge; fails w3c validator --> "` /\ `" and "&equiv;" in place of
-our "` A. `" and "=", and the
+<P>Tarski uses <!-- &wedge; fails w3c validator --> "` /\ `" and "&equiv;"
+in place of our "` A. `" and "=", and the
 notation "OC(<I>&phi;</I>)" means "the set of all variables occurring in
-<I>&phi;</I>".  These two schemes are identical to our ~ ax-5 and ~ ax6v , which
-are accompanied by distinct variable conditions that can be read "where
-` x ` doesn't occur in ` ph `" and "where ` x ` and ` y ` are distinct" respectively.  (Our official ~ ax-6 does not have a distinct variable condition
+<I>&phi;</I>".  These two schemes are identical to our ~ ax-5 and ~ ax6v ,
+which are accompanied by distinct variable conditions that can be read "where
+` x ` doesn't occur in ` ph `" and "where ` x ` and ` y ` are distinct"
+respectively.  (Our official ~ ax-6 does not have a distinct variable condition
 in order to make it simpler to state and use.)
 
 <P><A NAME="dv-notes"></A><CENTER><B><FONT COLOR="#006633">Notes
@@ -3607,8 +3630,8 @@ HREF="#dvnote5">Note 5</A> below.
 
 <P><A NAME="dvnote3"></A> <A NAME="allowedsubst"></A><B><FONT
 COLOR="#006633">Note 3</FONT></B>&nbsp;&nbsp;&nbsp; Textbooks often use
-the notation ` ph `(` x `) to denote that variable ` x ` may appear in a wff substituted
-for ` ph ` .  The Metamath
+the notation ` ph `(` x `) to denote that variable ` x ` may appear in a wff
+substituted for ` ph ` .  The Metamath
 language doesn't have a notation like this, but we can achieve the
 logical equivalent simply by <I>omitting</I> the distinct variable group
 ` x ` ,` ph ` , as the example ~ axsep shows.
@@ -3632,8 +3655,8 @@ under the "Distinct variable groups" list and called "Allowed
 substitution hints".  <!-- It is essentially the complement of the
 distinct variable groups involving wff or class variables.  --> The
 notation ` ph `(` x `) there means that ` x ` may appear (free, bound, or
-both) in any expression substituted for wff variable ` ph ` .  Note that this is an
-informal, unofficial notation, not part of the Metamath language.
+both) in any expression substituted for wff variable ` ph ` .  Note that
+this is an informal, unofficial notation, not part of the Metamath language.
 <!-- , and shouldn't be confused with the notation ` [ x / y ] ph `
 which means "the proper substitution of ` x ` for ` y `" ( ~ df-sb ).  -->
 
@@ -3644,7 +3667,8 @@ convenience to help you more easily determine what substitutions are
 allowed, in contrast to the "Distinct variable groups" which tell you
 which ones are forbidden.  There are six things to be aware of.
 
-<P>1. If the theorem has no "Distinct variable groups", such as ~ mpteq2ia , any substitution at all (honoring the
+<P>1. If the theorem has no "Distinct variable groups", such as ~ mpteq2ia ,
+any substitution at all (honoring the
 variable types) is permissable, so an "Allowed substitution hints" list
 would be pointless and is not shown to reduce possibly-confusing
 clutter.
@@ -3654,13 +3678,15 @@ class variable is missing from the "Allowed substitution hints", such as
 the ` A ` in ~ copsexg , it means (in this case) that neither of
 the setvar variables ` x ` or ` y ` may appear in a class expression
 substituted for ` A ` .  It is
-acceptable to substitute any class expression for ` A ` that <I>doesn't</I> contain these two
-variables but possibly contains others such as ` z ` .
+acceptable to substitute any class expression for ` A ` that <I>doesn't</I>
+contain these two variables but possibly contains others such as ` z ` .
 
 <P>3. If the theorem has "Distinct variable groups" but does not
-have an "Allowed substitution hints" list, such as ~ dftr5 , it means that none of the setvar variables in
+have an "Allowed substitution hints" list, such as ~ dftr5 , it means that
+none of the setvar variables in
 the theorem or its hypotheses may appear in expressions substituted for
-its wff or class variables; in this case, neither ` x ` nor ` y ` may appear in an expression substituted for ` A ` .
+its wff or class variables; in this case, neither ` x ` nor ` y ` may appear
+in an expression substituted for ` A ` .
 Other setvar variables such as ` z ` may appear, though.
 This includes any dummy variables that may be used by the
 proof, since they do not appear in the theorem or its hypotheses.
@@ -3669,37 +3695,35 @@ proof, since they do not appear in the theorem or its hypotheses.
 variable shows the permissable setvar variables that may appear in a
 substitution <I>among those in the theorem</I> (or its hypotheses).
 There is nothing preventing the use of setvar variables that do not appear
-in the theorem.  For example, in ~ axsep , ` x ` and ` w ` may appear in an expression substituted for ` ph ` , but not ` y ` or ` z ` .
+in the theorem.  For example, in ~ axsep , ` x ` and ` w ` may appear in an
+expression substituted for ` ph ` , but not ` y ` or ` z ` .
 
 <P>5. The setvar variable list in parentheses says nothing about
 whether those setvar variables need to be mutually distinct.  Only the
 "Distinct variable groups" list provides this information.  For example,
-` ph `(` x ` ,` y `) appears in the "Allowed substitution hints" for both ~ ralcom and ~ ralcom2 ;
-` x ` and ` y ` must be distinct in the former but not the
-latter.
+` ph `(` x ` ,` y `) appears in the "Allowed substitution hints" for both
+~ ralcom and ~ ralcom2 ; ` x ` and ` y ` must be distinct in the former but
+not the latter.
 
 <P>6. The hypotheses of a theorem may impose additional
 conditions on how the variables in parentheses may appear in the wff or
 class variable.  For example, in ~ vtoclef ,
 although ` x ` may appear in the
-expression substituted for ` ph ` , it must appear in a way that allows the first hypothesis
+expression substituted for ` ph ` , it must appear in a way that allows
+the first hypothesis
 
 <!--
 ` ( ph -> `
 ` A. x ph ) `
 -->
 
-` F/ x ph `
-
- to be satisfied.
-Thus ` x `
-usually can't occur as a free variable in  ` ph ` because the first hypothesis won't be
-satisfied.  This is in contrast to informal textbook usage where
-` ph `(` x `) typically means ` x ` occurs as a free variable in
-` ph ` .  The way to tell whether the meaning
+` F/ x ph ` to be satisfied.
+Thus ` x ` usually can't occur as a free variable in  ` ph ` because the
+first hypothesis won't be satisfied.  This is in contrast to informal
+textbook usage where ` ph `(` x `) typically means ` x ` occurs as a free
+variable in ` ph ` .  The way to tell whether the meaning
 is "may occur free or bound" or "may occur
-if bound by a quantifier" is to look
-for a hypothesis of this form.
+if bound by a quantifier" is to look for a hypothesis of this form.
 
 
 
@@ -3714,11 +3738,12 @@ variables belonging to the theorem.
 4</FONT></B>&nbsp;&nbsp;&nbsp; Distinct variable requirements are
 sometimes confusing to Metamath newcomers.  Unlike traditional predicate
 calculus, Metamath does not confer a special status to a bound variable
-(e.g. the quantifier variable ` x ` in ` A. x ph `); there is no built-in concept of its "scope."  All
-variables, whether free or bound, are subject to the same direct
-substitution rule.  Metamath's substitution rule does not treat a
-variable after the quantifier symbol "` A. `" any differently from a variable after any other
-constant connective such as "` -. `".  The only thing that matters is that the syntax is legal
+(e.g. the quantifier variable ` x ` in ` A. x ph `); there is no built-in
+concept of its "scope."  All variables, whether free or bound, are subject
+to the same direct substitution rule.  Metamath's substitution rule does
+not treat a variable after the quantifier symbol "` A. `" any differently
+from a variable after any other constant connective such as "` -. `".
+The only thing that matters is that the syntax is legal
 for the variable type (wff, setvar, or class), and that any distinct
 variable requirements are satisfied.  This different paradigm may take
 some getting used to by someone used to traditional "proper
@@ -3785,8 +3810,8 @@ groups in a theorem is always allowed and doesn't affect its proof in
 any way; all it does is weaken the theorem so that later theorems may
 also have to be weaker in order to make use of it.  We rarely do this,
 but when we do (for the purpose of creating a weaker starting axiom), it
-has confused some people.  I put a comment explaining this in ~ ax6v , which is an example of such a
-weakening.
+has confused some people.  I put a comment explaining this in ~ ax6v ,
+which is an example of such a weakening.
 
 <P><A NAME="dvnote7"></A><B><FONT COLOR="#006633">Note
 7</FONT></B>&nbsp;&nbsp;&nbsp; Is it possible to do mathematics
@@ -3803,8 +3828,9 @@ and ` y ` means that the
 <I>names</I> of the <A HREF="#schemes">actual variables</A> assigned to
 ` x ` and ` y ` must be different.  It does not mean that the
 <I>values</I> or sets assigned to these actual variables must be
-different.  For example, if we instantiate ` x ` with the actual variable <I>v</I><FONT
-SIZE=-1><SUB>1</SUB></FONT> and ` y ` with <I>v</I><FONT SIZE=-1><SUB>2</SUB></FONT>, that would
+different.  For example, if we instantiate ` x ` with the actual variable
+<I>v</I><FONT SIZE=-1><SUB>1</SUB></FONT> and ` y ` with
+<I>v</I><FONT SIZE=-1><SUB>2</SUB></FONT>, that would
 satisfy the distinct variable requirement, because <I>v</I><FONT
 SIZE=-1><SUB>1</SUB></FONT> and <I>v</I><FONT
 SIZE=-1><SUB>2</SUB></FONT> are different names.  On the other hand, in
@@ -4059,12 +4085,11 @@ the definition is sound.  This convention allows all but four definitions
 to be verified automatically by mmj2 as described above.
 
 <P> A non-mathematical (human) issue with a definition is whether it
-matches the generally understood meaning of a concept.  For example, if
-we swapped the symbols 4 ( ~ df-4 ) and 5 ( ~ df-5 ) everywhere, all definitions would remain
-sound, but we could "prove" that ( 2 + 2 ) = 5.  For this reason, all
-definitions still must be carefully scrutinized by a competent
-mathematician, and obviously there is no way to automate this
-inspection.
+matches the generally understood meaning of a concept.  For example, if we
+swapped the symbols 4 ( ~ df-4 ) and 5 ( ~ df-5 ) everywhere, all definitions
+would remain sound, but we could "prove" that ( 2 + 2 ) = 5.  For this reason,
+all definitions still must be carefully scrutinized by a competent
+mathematician, and obviously there is no way to automate this inspection.
 
 <!--
 <P>Nonetheless, the present lack of built-in soundness checking of
@@ -4127,11 +4152,12 @@ prove theorems using as few axioms as possible, which we also usually
 try to do, so this list is often the minimum axiom set needed for the
 proof you are seeing.
 
-<P>For example, we see that the Axiom of Choice ~ ax-ac was not needed to prove ~ tfr2 , but we did need the Axiom of Replacement ~ ax-rep .
+<P>For example, we see that the Axiom of Choice ~ ax-ac was not needed to
+prove ~ tfr2 , but we did need the Axiom of Replacement ~ ax-rep .
 
-<P>In order to find out all theorems in the path(s) from ~ tfr2 back to the Axiom of Replacement, type "show
-trace_back tfr2 /to ax-rep".  The following list results, with the
-theorems in the order that they occur in set.mm:
+<P>In order to find out all theorems in the path(s) from ~ tfr2 back to the
+Axiom of Replacement, type "show trace_back tfr2 /to ax-rep".  The following
+list results, with the theorems in the order that they occur in set.mm:
 
 <BLOCKQUOTE>
 ~ ax-rep
@@ -4153,8 +4179,8 @@ exactly the undesired axiom snuck in, so that the proof can be modified
 to avoid it if possible.
 
 <P>Sometimes a proof becomes much longer if we want to avoid a certain
-axiom.  For example, theorems ~ ondomon and ~ hartogs are the same except for their proofs.
-Compare the relatively short proof of ~ ondomon ,
+axiom.  For example, theorems ~ ondomon and ~ hartogs are the same except
+for their proofs.  Compare the relatively short proof of ~ ondomon ,
 which uses ~ ax-ac2 , with the much longer proof
 of ~ hartogs and its lemmas needed to avoid ~ ax-ac2 .
 
@@ -4167,9 +4193,9 @@ infinite lists exist before we can manipulate them with setvar variables.)
 But the place where Infinity is used is buried deep inside the proof
 tree&mdash;you have to drill down through  49 layers of proofs to find it.
 
-If you want to see its path all the way to 2 + 2 = 4, locate ~ mulpipq in the <A HREF="#trivia">2 + 2 = 4
-Trivia</A> path list above.  Then branch off from that path and
-follow this one back to the Axiom of Infinity:
+If you want to see its path all the way to 2 + 2 = 4, locate ~ mulpipq in the
+<A HREF="#trivia">2 + 2 = 4 Trivia</A> path list above.  Then branch off from
+that path and follow this one back to the Axiom of Infinity:
 ~ mulpipq
 &lt;- ~ enqex
 &lt;- ~ niex
@@ -4191,19 +4217,21 @@ introducing ambiguity or making the collection of notations too bloated.
 Traditional notation includes many prefix and infix operations; parsing
 this in an unambiguous way can be complicated.  Sometimes I favored
 simplicity and consistency over convention.  An important example is the
-notation for a <B>function value</B> ~ cfv ,
-expressed by &quot;` ( F `` A ) `&quot;.  Here &quot;` F `&quot; is a class that normally
-is a function, the argument &quot;` A `&quot; is a class that normally belongs to the domain of the
-function, and &quot;` ( F `` A ) `&quot; is the class that results
-when the function is evaluated at the argument.  (The result, however,
+notation for a <B>function value</B> ~ cfv , expressed by
+&quot;` ( F `` A ) `&quot;.  Here &quot;` F `&quot; is a class that normally
+is a function, the argument &quot;` A `&quot; is a class that normally belongs
+to the domain of the function, and &quot;` ( F `` A ) `&quot; is the class that
+results when the function is evaluated at the argument.  (The result, however,
 is well-defined for any classes whatsoever substituted for the class
 variables, and our definition
 ends up evaluating to the empty set when it is not
 meaningful&mdash;see for example theorem ~ ndmfv .)
 
-<P>Textbooks often use the familiar notation &quot;` F ( A ) `&quot; for the value of a function.  Outside
+<P>Textbooks often use the familiar notation &quot;` F ( A ) `&quot; for the
+value of a function.  Outside
 of context, this notation is ambiguous:  it could also mean the
-expression that results when ` A ` is substituted into the expression that ` F ` represents.  Our left-apostrophe notation,
+expression that results when ` A ` is substituted into the expression that
+` F ` represents.  Our left-apostrophe notation,
 invented by Peano, is often used by set theorists and has the advantage
 for us that it is unambiguous and independent of context.
 
@@ -4214,11 +4242,10 @@ context.  Our versions may seem unfamiliar because we are constrained to
 a linear language and we need context-independent, unambiguous notation.
 We also prefer a single notation for function value to be able to reuse
 our rich collection of theorems about function values.  For example, in
-the square root theorem ~ sqrthi , the square root
-symbol &quot;` sqr `&quot; is a function i.e. a class ( ~ csqr ), and we display the square root of 2 as
-"` ( sqr `` 2 ) `&quot;.
-  Two other examples
-are the real part of an complex number
+the square root theorem ~ sqrthi , the square root symbol &quot;` sqr `&quot;
+is a function i.e. a class ( ~ csqr ), and we display the square root of 2 as
+"` ( sqr `` 2 ) `&quot;.  Two other examples are the real part of a
+complex number
 <I><FONT
 COLOR="#CC33CC">A</FONT></I >,
  where we use
@@ -4423,8 +4450,8 @@ that for it to be considered complete, we must ignore antecedents called
 what would be distinct variable constraints (see the linked discussion).
 
 <P>
-We can optionally include ~ ax-c15 or ~ ax-12 for a somewhat more powerful metalogic,
-since these also involve no distinct variable restrictions (although
+We can optionally include ~ ax-c15 or ~ ax-12 for a somewhat more powerful
+metalogic, since these also involve no distinct variable restrictions (although
 without them we can still derive any instance of them not containing wff
 metavariables).
 
@@ -4440,22 +4467,24 @@ HREF="../award2003.html#9b">Workshop Miscellany</A> page.</TD></TR>
 is known that ~ ax-12 can be derived from the
 axioms of this subsystem (see theorem ~ ax12 ).</TD></TR>
 
-<TR><TD> ~ ax-c11 and ~ ax-12 </TD><TD>It is conjectured that ~ ax-c11 cannot be derived from the axioms of this
-subsystem.</TD></TR>
+<TR><TD> ~ ax-c11 and ~ ax-12 </TD><TD>It is conjectured that ~ ax-c11 cannot
+be derived from the axioms of this subsystem.</TD></TR>
 
 
 
-<TR><TD>Omit all predicate calculus axioms <I>except</I> ~ ax-c5 , ~ ax-4 , ~ ax-10 , ~ ax-11 , and ~ ax-gen </TD><TD>
+<TR><TD>Omit all predicate calculus axioms <I>except</I>
+~ ax-c5 , ~ ax-4 , ~ ax-10 , ~ ax-11 , and ~ ax-gen </TD><TD>
 
 
-<A NAME="pure"></A>The subsystem <A HREF="ax-4.html">ax-1</A> through ~ ax-11 , ~ ax-mp , and ~ ax-gen , i.e. the axioms not involving equality,
+<A NAME="pure"></A>The subsystem <A HREF="ax-4.html">ax-1</A> through
+~ ax-11 , ~ ax-mp , and ~ ax-gen , i.e. the axioms not involving equality,
 is weaker than traditional predicate calculus without equality (i.e.
 that omits the equality axioms labeled stdpc6 and stdpc7 in the table in
 the <A HREF="#traditional">traditional predicate calculus</A> section).
 The reason is that traditional predicate calculus incorporates proper
 substitution as part of its metalogic, whereas in our system proper
-substitution is accomplished directly by the logic itself through our
-more complex axioms ~ ax-7 through ~ ax-5 .  In our system, substitution and equality
+substitution is accomplished directly by the logic itself through our more
+complex axioms ~ ax-7 through ~ ax-5 .  In our system, substitution and equality
 are intimately tied in with each other.  This "pure" subsystem in effect
 represents the fragment of logic that remains when equality, proper
 substitution, and the concept of distinct variables are completely
@@ -4465,9 +4494,10 @@ is exactly the modal logic system known as S5 (thanks to Bob Meyer for
 pointing this out).  See also Item 12 on the <A
 HREF="../award2003.html#12">Workshop Miscellany</A> page.
 
-<P>Optionally, we can replace ~ ax-4 and ~ ax-10 with ~ ax-c4 and ~ ax-c7 (provided we replace them both) to obtain an
-equivalent subsystem.  Theorems ~ ax4 , ~ ax10 , ~ axc4 , and ~ axc7 prove the equivalence.  In this subsystem, ~ axc5c711 can replace ~ ax-c5 ,
-~ ax-c7 , and ~ ax-11 .
+<P>Optionally, we can replace ~ ax-4 and ~ ax-10 with ~ ax-c4 and ~ ax-c7
+(provided we replace them both) to obtain an equivalent subsystem.  Theorems
+~ ax4 , ~ ax10 , ~ axc4 , and ~ axc7 prove the equivalence.  In this subsystem,
+~ axc5c711 can replace ~ ax-c5 , ~ ax-c7 , and ~ ax-11 .
 
 </TD></TR>
 
@@ -4656,7 +4686,8 @@ of them if you consult these.
 <P>For propositional and predicate calculus, Margaris is now available
 in an inexpensive Dover edition and is reasonably readable for
 beginners, once you get used to the archaic dot notation used in place
-of parentheses.  Our 19.x series of theorems, such as ~ 19.35 , corresponds to Margaris' handy predicate
+of parentheses.  Our 19.x series of theorems, such as ~ 19.35 , corresponds
+to Margaris' handy predicate
 calculus table on pp. 89-90.  Hirst and Hirst's on-line <I>A Primer for
 Logic and Proof</I>, mentioned <A HREF="#traditional">above</A>, uses
 modern notation and is also highly recommended.
@@ -5263,7 +5294,10 @@ HREF="http://ocw.mit.edu/resources/res-18-001-calculus-online-textbook-spring-20
 http://ocw.mit.edu/resources/res-18-001-calculus-online-textbook-spring-2005/</A>
 (retrieved 24 Nov 2015).</LI>
 
-<LI><A NAME="Sullivan2004"></A> [Sullivan2004] Sullivan, Peter M, "Frege's Logic", <I>Handbook of the History of Logic, Volume 3: The Rise of Modern Logic from Leibniz to Frege</I>, Edited by Dov M. Gabbay and John WOods, 2004, Elsevier, ISBN 0-444-51611-5.
+<LI><A NAME="Sullivan2004"></A> [Sullivan2004] Sullivan, Peter M,
+"Frege's Logic", <I>Handbook of the History of Logic, Volume 3: The Rise of
+Modern Logic from Leibniz to Frege</I>, Edited by Dov M. Gabbay and John WOods,
+2004, Elsevier, ISBN 0-444-51611-5.
 
 <LI><A NAME="Suppes"></A> [Suppes] Suppes, Patrick, <I>Axiomatic Set Theory,</I>
 Dover Publications, Inc. (1972) [QA248.S959].</LI>
