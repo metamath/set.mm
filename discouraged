@@ -14906,7 +14906,6 @@ New usage of "dochspocN" is discouraged (0 uses).
 New usage of "dral1-o" is discouraged (4 uses).
 New usage of "dral1ALT" is discouraged (0 uses).
 New usage of "dral2-o" is discouraged (4 uses).
-New usage of "drnf2OLD" is discouraged (0 uses).
 New usage of "drngoi" is discouraged (2 uses).
 New usage of "dtruALT" is discouraged (0 uses).
 New usage of "dtruALT2" is discouraged (0 uses).
@@ -17766,6 +17765,7 @@ Proof modification of "ax2" is discouraged (46 steps).
 Proof modification of "ax3" is discouraged (24 steps).
 Proof modification of "ax4" is discouraged (45 steps).
 Proof modification of "ax52" is discouraged (14 steps).
+Proof modification of "ax5ALT" is discouraged (3 steps).
 Proof modification of "ax5el" is discouraged (30 steps).
 Proof modification of "ax5eq" is discouraged (30 steps).
 Proof modification of "ax6e2eq" is discouraged (111 steps).
@@ -17826,7 +17826,7 @@ Proof modification of "bj-ala1BIS" is discouraged (9 steps).
 Proof modification of "bj-ax16gb" is discouraged (18 steps).
 Proof modification of "bj-ax16nf" is discouraged (31 steps).
 Proof modification of "bj-axc10v" is discouraged (37 steps).
-Proof modification of "bj-axc11nlem2v" is discouraged (58 steps).
+Proof modification of "bj-axc11nlemv" is discouraged (58 steps).
 Proof modification of "bj-axc11nv" is discouraged (71 steps).
 Proof modification of "bj-axc11v" is discouraged (14 steps).
 Proof modification of "bj-axc15v" is discouraged (93 steps).
@@ -17866,6 +17866,10 @@ Proof modification of "bj-chvarvv" is discouraged (10 steps).
 Proof modification of "bj-cleqh" is discouraged (108 steps).
 Proof modification of "bj-denotes" is discouraged (76 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
+Proof modification of "bj-dral1v" is discouraged (36 steps).
+Proof modification of "bj-drex1v" is discouraged (42 steps).
+Proof modification of "bj-drnf1v" is discouraged (50 steps).
+Proof modification of "bj-drnf2v" is discouraged (13 steps).
 Proof modification of "bj-dtru" is discouraged (146 steps).
 Proof modification of "bj-el" is discouraged (48 steps).
 Proof modification of "bj-elisset" is discouraged (38 steps).
@@ -17877,16 +17881,11 @@ Proof modification of "bj-equsalv" is discouraged (39 steps).
 Proof modification of "bj-equsexhv" is discouraged (10 steps).
 Proof modification of "bj-equsexv" is discouraged (38 steps).
 Proof modification of "bj-godellob" is discouraged (19 steps).
-Proof modification of "bj-hbaev" is discouraged (73 steps).
-Proof modification of "bj-hbnaesv" is discouraged (16 steps).
-Proof modification of "bj-hbnaev" is discouraged (11 steps).
 Proof modification of "bj-inrab2" is discouraged (48 steps).
 Proof modification of "bj-issetW" is discouraged (53 steps).
 Proof modification of "bj-isseti" is discouraged (15 steps).
 Proof modification of "bj-naecomsv" is discouraged (19 steps).
 Proof modification of "bj-nalset" is discouraged (100 steps).
-Proof modification of "bj-nfaev" is discouraged (11 steps).
-Proof modification of "bj-nfnaev" is discouraged (11 steps).
 Proof modification of "bj-rababWv" is discouraged (34 steps).
 Proof modification of "bj-rabtrALT" is discouraged (36 steps).
 Proof modification of "bj-rabtrAUTO" is discouraged (33 steps).
@@ -18010,7 +18009,6 @@ Proof modification of "dih2dimbALTN" is discouraged (450 steps).
 Proof modification of "disjiunOLD" is discouraged (52 steps).
 Proof modification of "disjmoOLD" is discouraged (46 steps).
 Proof modification of "dral2-o" is discouraged (14 steps).
-Proof modification of "drnf2OLD" is discouraged (52 steps).
 Proof modification of "dtruALT" is discouraged (79 steps).
 Proof modification of "dtruALT2" is discouraged (80 steps).
 Proof modification of "dveel2ALT" is discouraged (22 steps).
