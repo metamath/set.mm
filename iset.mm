@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Jun-2019
+$( iset.mm - Version of 25-Jun-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54069,6 +54069,22 @@ $)
         AUTVETIZVCVCDLZRZAUCVEVFRZVBHUNUTVJBDEFUDVJHCVBCVBUEUFUGGVLVMAVETVCVESZ
         VCVEVKVFVNUHVCVEDUIUJUKULUMBVFUOUPUQURUS $.
     $}
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordinal arithmetic
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d x z $.
+    sucinc.1 $e |- F = ( z e. _V |-> suc z ) $.
+    $( Successor is increasing.  (Contributed by Jim Kingdon, 25-Jun-2019.) $)
+    sucinc $p |- A. x x C_ ( F ` x ) $=
+      ( cv cfv wss csuc sssucid cvv wcel vex sucex suceq fvmptg mp2an
+      wceq sseqtr4i ax-gen ) AEZTCFZGATTHZUATITJKUBJKUAUBQALZTUCMBTBE
+      ZHUBJJCUDTNDOPRS $.
   $}
 
 $(
