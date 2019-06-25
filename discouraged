@@ -1525,6 +1525,7 @@
 "bitr3" is used by "sbc3orgVD".
 "bitr3" is used by "trsbcVD".
 "bj-csbsnlem" is used by "bj-csbsn".
+"bj-df-cleq" is used by "bj-dfcleq".
 "bj-inftyexpidisj" is used by "bj-ccinftydisj".
 "blo3i" is used by "ipblnfi".
 "blocn" is used by "blocn2".
@@ -13839,6 +13840,7 @@ New usage of "binom2aiOLD" is discouraged (0 uses).
 New usage of "bitr3" is discouraged (6 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bj-csbsnlem" is discouraged (1 uses).
+New usage of "bj-df-cleq" is discouraged (1 uses).
 New usage of "bj-godellob" is discouraged (0 uses).
 New usage of "bj-inftyexpidisj" is discouraged (1 uses).
 New usage of "bj-inftyexpiinv" is discouraged (0 uses).
@@ -17969,6 +17971,7 @@ Proof modification of "bj-ala1" is discouraged (9 steps).
 Proof modification of "bj-ala1BIS" is discouraged (9 steps).
 Proof modification of "bj-ax16gb" is discouraged (18 steps).
 Proof modification of "bj-ax16nf" is discouraged (31 steps).
+Proof modification of "bj-ax9" is discouraged (46 steps).
 Proof modification of "bj-axc10v" is discouraged (37 steps).
 Proof modification of "bj-axc11nlemv" is discouraged (58 steps).
 Proof modification of "bj-axc11nv" is discouraged (71 steps).
@@ -18012,6 +18015,7 @@ Proof modification of "bj-chvarvv" is discouraged (10 steps).
 Proof modification of "bj-clabel" is discouraged (43 steps).
 Proof modification of "bj-cleqh" is discouraged (108 steps).
 Proof modification of "bj-denotes" is discouraged (76 steps).
+Proof modification of "bj-df-cleq" is discouraged (4 steps).
 Proof modification of "bj-disjsn01" is discouraged (18 steps).
 Proof modification of "bj-dral1v" is discouraged (36 steps).
 Proof modification of "bj-drex1v" is discouraged (42 steps).
