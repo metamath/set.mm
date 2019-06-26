@@ -18013,6 +18013,7 @@ Proof modification of "bj-ceqsalt" is discouraged (126 steps).
 Proof modification of "bj-chvarv" is discouraged (18 steps).
 Proof modification of "bj-chvarvv" is discouraged (10 steps).
 Proof modification of "bj-clabel" is discouraged (43 steps).
+Proof modification of "bj-clelsb3" is discouraged (63 steps).
 Proof modification of "bj-cleqh" is discouraged (108 steps).
 Proof modification of "bj-denotes" is discouraged (76 steps).
 Proof modification of "bj-df-cleq" is discouraged (4 steps).
@@ -18023,6 +18024,7 @@ Proof modification of "bj-drnf1v" is discouraged (50 steps).
 Proof modification of "bj-drnf2v" is discouraged (13 steps).
 Proof modification of "bj-dtru" is discouraged (146 steps).
 Proof modification of "bj-el" is discouraged (48 steps).
+Proof modification of "bj-eleq1w" is discouraged (51 steps).
 Proof modification of "bj-elisset" is discouraged (38 steps).
 Proof modification of "bj-equs4v" is discouraged (23 steps).
 Proof modification of "bj-equs5v" is discouraged (41 steps).
@@ -18033,6 +18035,7 @@ Proof modification of "bj-equsexhv" is discouraged (10 steps).
 Proof modification of "bj-equsexv" is discouraged (38 steps).
 Proof modification of "bj-godellob" is discouraged (19 steps).
 Proof modification of "bj-hbab1" is discouraged (20 steps).
+Proof modification of "bj-hblem" is discouraged (33 steps).
 Proof modification of "bj-hbs1" is discouraged (22 steps).
 Proof modification of "bj-hbsb2v" is discouraged (31 steps).
 Proof modification of "bj-inrab2" is discouraged (48 steps).
@@ -18040,6 +18043,7 @@ Proof modification of "bj-isseti" is discouraged (15 steps).
 Proof modification of "bj-issetw" is discouraged (53 steps).
 Proof modification of "bj-naecomsv" is discouraged (19 steps).
 Proof modification of "bj-nalset" is discouraged (100 steps).
+Proof modification of "bj-nfcjust" is discouraged (29 steps).
 Proof modification of "bj-nfs1v" is discouraged (10 steps).
 Proof modification of "bj-nfsab1" is discouraged (12 steps).
 Proof modification of "bj-nfsb2v" is discouraged (19 steps).
