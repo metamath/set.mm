@@ -35766,9 +35766,9 @@ $)
   $}
 
   $( No successor is empty.  (Contributed by Jim Kingdon, 14-Oct-2018.) $)
-  nsuceq0g $p |- ( A e. _V -> suc A =/= (/) ) $=
-    ( cvv wcel csuc c0 wceq noel sucidg eleq2 syl5ibcom mtoi neneqad
-    ) ABCZADZEMNEFZAECZAGMANCOPABHNEAIJKL $.
+  nsuceq0g $p |- ( A e. V -> suc A =/= (/) ) $=
+    ( wcel csuc c0 wceq noel sucidg eleq2 syl5ibcom mtoi neneqad ) AB
+    CZADZEMNEFZAECZAGMANCOPABHNEAIJKL $.
 
   ${
     eqelsuc.1 $e |- A e. _V $.
@@ -37103,7 +37103,7 @@ $)
      postulates for arithmetic.  Proposition 7.30(3) of [TakeutiZaring] p. 42.
      (Contributed by NM, 3-Sep-2003.) $)
   peano3 $p |- ( A e. om -> suc A =/= (/) ) $=
-    ( com wcel cvv csuc c0 wne elex nsuceq0g syl ) ABCADCAEFGABHAIJ $.
+    ( com nsuceq0g ) ABC $.
 
   $( Two natural numbers are equal iff their successors are equal, i.e. the
      successor function is one-to-one.  One of Peano's 5 postulates for
