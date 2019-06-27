@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Jun-2019
+$( iset.mm - Version of 26-Jun-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54189,10 +54189,11 @@ $)
     ( word c0 wcel csuc wss c1o con0 0elon ordelsuc mpan df-1o sseq1i syl6bbr
     wb ) ABZCADZCEZAFZGAFCHDPQSOICAHJKGRALMN $.
 
-  $( An ordinal greater than or equal to 1 is nonzero.  (Contributed by NM,
-     21-Dec-2004.) $)
-  ordge1n0 $p |- ( Ord A -> ( 1o C_ A <-> A =/= (/) ) ) $=
-    ( word c0 wcel c1o wss wne ordgt0ge1 ord0eln0 bitr3d ) ABCADEAFACGAHAIJ $.
+  $( An ordinal greater than or equal to 1 is nonzero.  (Contributed by Jim
+     Kingdon, 26-Jun-2019.) $)
+  ordge1n0im $p |- ( Ord A -> ( 1o C_ A -> A =/= (/) ) ) $=
+    ( word c1o wss c0 wcel wne ordgt0ge1 ne0i syl6bir ) ABCADEAFAEGAH
+    AEIJ $.
 
   $( Membership in ordinal one.  (Contributed by NM, 5-Jan-2005.) $)
   el1o $p |- ( A e. 1o <-> A = (/) ) $=
