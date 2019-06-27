@@ -54143,7 +54143,8 @@ $)
 
   $( Ordinal two is not zero.  (Contributed by Scott Fenton, 17-Jun-2011.) $)
   2on0 $p |- 2o =/= (/) $=
-    ( c2o c1o csuc c0 df-2o nsuceq0 eqnetri ) ABCDEBFG $.
+    ( c2o c1o csuc c0 df-2o con0 wcel wne 1on nsuceq0g ax-mp eqnetri
+    ) ABCZDEBFGMDHIBFJKL $.
 
   $( Ordinal 3 is an ordinal number.  (Contributed by Mario Carneiro,
      5-Jan-2016.) $)
