@@ -54206,14 +54206,6 @@ $)
     ( c1o cdif wcel c0 csn wne wa df1o2 difeq2i eleq2i eldifsn bitri ) ABCDZEAB
     FGZDZEABEAFHIOQACPBJKLABFMN $.
 
-  $( Two ways to say that ` A ` is an ordinal greater than one.  (Contributed
-     by Mario Carneiro, 21-May-2015.) $)
-  ondif2 $p |- ( A e. ( On \ 2o ) <-> ( A e. On /\ 1o e. A ) ) $=
-    ( con0 c2o cdif wcel wn wa c1o eldif wb 1on wss ontri1 onsssuc df-2o eleq2i
-    csuc syl6bbr bitr3d mpan2 con1bid pm5.32i bitri ) ABCDEABEZACEZFZGUDHAEZGAB
-    CIUDUFUGUDUGUEUDHBEZUGFZUEJKUDUHGZAHLZUIUEAHMUJUKAHQZEUEAHNCULAOPRSTUAUBUC
-    $.
-
   $( Closure of the pair swapping function on ` 2o ` .  (Contributed by Mario
      Carneiro, 27-Sep-2015.) $)
   2oconcl $p |- ( A e. 2o -> ( 1o \ A ) e. 2o ) $=
@@ -54226,12 +54218,6 @@ $)
      5-Jan-2005.) $)
   0lt1o $p |- (/) e. 1o $=
     ( c0 c1o wcel wceq eqid el1o mpbir ) ABCAADAEAFG $.
-
-  $( An ordinal greater than one is greater than zero.  (Contributed by Mario
-     Carneiro, 25-May-2015.) $)
-  dif20el $p |- ( A e. ( On \ 2o ) -> (/) e. A ) $=
-    ( con0 c2o cdif wcel c1o c0 ondif2 simprbi 0lt1o wa wi eldifi ontr1 syl mpd
-    mpani ) ABCDEZFAEZGAEZRABEZSAHIRGFEZSTJRUAUBSKTLABCMGFANOQP $.
 
   ${
     $d x z $.
