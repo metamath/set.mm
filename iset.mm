@@ -54206,12 +54206,6 @@ $)
     ( c1o cdif wcel c0 csn wne wa df1o2 difeq2i eleq2i eldifsn bitri ) ABCDZEAB
     FGZDZEABEAFHIOQACPBJKLABFMN $.
 
-  $( Two ways to say that ` A ` is a nonzero ordinal number.  (Contributed by
-     Mario Carneiro, 21-May-2015.) $)
-  ondif1 $p |- ( A e. ( On \ 1o ) <-> ( A e. On /\ (/) e. A ) ) $=
-    ( con0 c1o cdif wcel c0 wne wa dif1o on0eln0 pm5.32i bitr4i ) ABCDEABEZAFGZ
-    HMFAEZHABIMONAJKL $.
-
   $( Two ways to say that ` A ` is an ordinal greater than one.  (Contributed
      by Mario Carneiro, 21-May-2015.) $)
   ondif2 $p |- ( A e. ( On \ 2o ) <-> ( A e. On /\ 1o e. A ) ) $=
