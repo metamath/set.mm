@@ -1400,6 +1400,7 @@
 "axpjpj" is used by "pjtoi".
 "axpowndlem2OLD" is used by "axpowndlem3OLD".
 "axresscn" is used by "ax1cn".
+"axresscn" is used by "bj-rrhatsscchat".
 "bafval" is used by "cnnvba".
 "bafval" is used by "hhba".
 "bafval" is used by "hhshsslem1".
@@ -1530,6 +1531,7 @@
 "bj-inftyexpidisj" is used by "bj-ccinftydisj".
 "bj-inftyexpidisj" is used by "bj-minftynrr".
 "bj-inftyexpidisj" is used by "bj-pinftynrr".
+"bj-inftyexpiinv" is used by "bj-inftyexpiinj".
 "blo3i" is used by "ipblnfi".
 "blocn" is used by "blocn2".
 "blocn2" is used by "ubthlem1".
@@ -13844,7 +13846,7 @@ New usage of "axpre-lttri" is discouraged (0 uses).
 New usage of "axpre-lttrn" is discouraged (0 uses).
 New usage of "axpre-mulgt0" is discouraged (0 uses).
 New usage of "axpre-sup" is discouraged (0 uses).
-New usage of "axresscn" is discouraged (1 uses).
+New usage of "axresscn" is discouraged (2 uses).
 New usage of "axrnegex" is discouraged (0 uses).
 New usage of "axrrecex" is discouraged (0 uses).
 New usage of "axsep" is discouraged (0 uses).
@@ -13876,7 +13878,7 @@ New usage of "bj-df-clel" is discouraged (1 uses).
 New usage of "bj-df-cleq" is discouraged (1 uses).
 New usage of "bj-godellob" is discouraged (0 uses).
 New usage of "bj-inftyexpidisj" is discouraged (3 uses).
-New usage of "bj-inftyexpiinv" is discouraged (0 uses).
+New usage of "bj-inftyexpiinv" is discouraged (1 uses).
 New usage of "bj-rabtrALT" is discouraged (0 uses).
 New usage of "bj-rabtrAUTO" is discouraged (0 uses).
 New usage of "bj-sbeqALT" is discouraged (0 uses).
@@ -14749,6 +14751,7 @@ New usage of "df-bdop" is discouraged (2 uses).
 New usage of "df-bj-1upl" is discouraged (6 uses).
 New usage of "df-bj-2upl" is discouraged (6 uses).
 New usage of "df-bj-ccinfty" is discouraged (3 uses).
+New usage of "df-bj-infty" is discouraged (0 uses).
 New usage of "df-bj-inftyexpi" is discouraged (5 uses).
 New usage of "df-bj-pr1" is discouraged (4 uses).
 New usage of "df-bj-pr2" is discouraged (4 uses).
