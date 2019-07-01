@@ -54049,6 +54049,24 @@ $)
   $}
 
   ${
+    $d x y z f g F $.  $d x y z f g G $.  $d x y z f g A $.  $d x y z f g B $.
+    $( Equality theorem for the recursive definition generator.  (Contributed
+       by NM, 9-Apr-1995.)  (Revised by Mario Carneiro, 9-May-2015.) $)
+    rdgeq1 $p |- ( F = G -> rec ( F , A ) = rec ( G , A ) ) $=
+      ( vg vx wceq cvv cdm cfv ciun cun cmpt crecs crdg fveq1 iuneq2d
+      cv uneq2d mpteq2dv df-irdg recseq syl 3eqtr4g ) BCFZDGAEDQZHZEQ
+      UEIZBIZJZKZLZMZDGAEUFUGCIZJZKZLZMZBANCANUDUKUPFULUQFUDDGUJUOUDU
+      IUNAUDEUFUHUMUGBCOPRSUKUPUAUBEDBATEDCATUC $.
+
+    $( Equality theorem for the recursive definition generator.  (Contributed
+       by NM, 9-Apr-1995.)  (Revised by Mario Carneiro, 9-May-2015.) $)
+    rdgeq2 $p |- ( A = B -> rec ( F , A ) = rec ( F , B ) ) $=
+      ( vg vx wceq cvv cv cdm cfv ciun cmpt crecs crdg uneq1 mpteq2dv
+      cun recseq syl df-irdg 3eqtr4g ) ABFZDGAEDHZIEHUCJCJKZQZLZMZDGB
+      UDQZLZMZCANCBNUBUFUIFUGUJFUBDGUEUHABUDOPUFUIRSEDCATEDCBTUA $.
+  $}
+
+  ${
     $d x y z f g u v w F $.  $d x y z f g u v w A $.
     $( The recursive definition generator is a function.  (Contributed by Mario
        Carneiro, 16-Nov-2014.) $)
