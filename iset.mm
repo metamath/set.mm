@@ -54229,6 +54229,18 @@ $)
       ZHUBJJCUDTNDOPRS $.
   $}
 
+  ${
+    $d x y z $.
+    $( Functionality and domain of ordinal addition.  (Contributed by NM,
+       26-Aug-1995.)  (Revised by Mario Carneiro, 8-Sep-2013.) $)
+    fnoa $p |- +o Fn ( On X. On ) $=
+      ( vy vz vx cvv csuc cmpt crdg cfv wcel con0 wral coa cxp wfn cdm wceq vex
+      cv sucex ax-mp eqid fnmpti rdgifnon fndm eleq2i wfun rdgfun funfvex rgenw
+      mpan sylbir rgen df-oadd fnmpt2 ) ARZBDBRZEZFZCRZGZHZDIZAJKZCJKLJJMNVCCJV
+      BAJUOJIUOUTOZIZVBVDJUOUTJNVDJPUSURCQBDUQURUPBQSURUAUBUCJUTUDTUEUTUFVEVBUS
+      URUGUOUTUHUJUKULUICAJJVALDCABUMUNT $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
