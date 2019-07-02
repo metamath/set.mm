@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Jun-2019
+$( iset.mm - Version of 26-Jun-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -35766,9 +35766,9 @@ $)
   $}
 
   $( No successor is empty.  (Contributed by Jim Kingdon, 14-Oct-2018.) $)
-  nsuceq0g $p |- ( A e. _V -> suc A =/= (/) ) $=
-    ( cvv wcel csuc c0 wceq noel sucidg eleq2 syl5ibcom mtoi neneqad
-    ) ABCZADZEMNEFZAECZAGMANCOPABHNEAIJKL $.
+  nsuceq0g $p |- ( A e. V -> suc A =/= (/) ) $=
+    ( wcel csuc c0 wceq noel sucidg eleq2 syl5ibcom mtoi neneqad ) AB
+    CZADZEMNEFZAECZAGMANCOPABHNEAIJKL $.
 
   ${
     eqelsuc.1 $e |- A e. _V $.
@@ -37103,7 +37103,7 @@ $)
      postulates for arithmetic.  Proposition 7.30(3) of [TakeutiZaring] p. 42.
      (Contributed by NM, 3-Sep-2003.) $)
   peano3 $p |- ( A e. om -> suc A =/= (/) ) $=
-    ( com wcel cvv csuc c0 wne elex nsuceq0g syl ) ABCADCAEFGABHAIJ $.
+    ( com nsuceq0g ) ABC $.
 
   $( Two natural numbers are equal iff their successors are equal, i.e. the
      successor function is one-to-one.  One of Peano's 5 postulates for
@@ -54072,6 +54072,176 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordinal arithmetic
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c 1o $. $( The ordinal number 1 $)
+  $c 2o $. $( The ordinal number 2 $)
+  $c 3o $. $( The ordinal number 3 $)
+  $c 4o $. $( The ordinal number 4 $)
+  $c +o $.  $( Ordinal addition operation (plus subscript o) $)
+  $c .o $.  $( Ordinal multiplication operation (center dot subscript o) $)
+
+  $( Extend the definition of a class to include the ordinal number 1. $)
+  c1o $a class 1o $.
+
+  $( Extend the definition of a class to include the ordinal number 2. $)
+  c2o $a class 2o $.
+
+  $( Extend the definition of a class to include the ordinal number 3. $)
+  c3o $a class 3o $.
+
+  $( Extend the definition of a class to include the ordinal number 4. $)
+  c4o $a class 4o $.
+
+  $( Extend the definition of a class to include the ordinal addition
+     operation. $)
+  coa $a class +o $.
+
+  $( Extend the definition of a class to include the ordinal multiplication
+     operation. $)
+  comu $a class .o $.
+
+  $( Define the ordinal number 1.  (Contributed by NM, 29-Oct-1995.) $)
+  df-1o $a |- 1o = suc (/) $.
+
+  $( Define the ordinal number 2.  (Contributed by NM, 18-Feb-2004.) $)
+  df-2o $a |- 2o = suc 1o $.
+
+  $( Define the ordinal number 3.  (Contributed by Mario Carneiro,
+     14-Jul-2013.) $)
+  df-3o $a |- 3o = suc 2o $.
+
+  $( Define the ordinal number 4.  (Contributed by Mario Carneiro,
+     14-Jul-2013.) $)
+  df-4o $a |- 4o = suc 3o $.
+
+  ${
+    $d x y z $.
+    $( Define the ordinal addition operation.  (Contributed by NM,
+       3-May-1995.) $)
+    df-oadd $a |- +o = ( x e. On , y e. On |->
+                ( rec ( ( z e. _V |-> suc z ) , x ) ` y ) ) $.
+
+    $( Define the ordinal multiplication operation.  (Contributed by NM,
+       26-Aug-1995.) $)
+    df-omul $a |- .o = ( x e. On , y e. On |->
+                ( rec ( ( z e. _V |-> ( z +o x ) ) , (/) ) ` y ) ) $.
+  $}
+
+  $( Ordinal 1 is an ordinal number.  (Contributed by NM, 29-Oct-1995.) $)
+  1on $p |- 1o e. On $=
+    ( c1o c0 csuc con0 df-1o 0elon onsuci eqeltri ) ABCDEBFGH $.
+
+  $( Ordinal 2 is an ordinal number.  (Contributed by NM, 18-Feb-2004.)  (Proof
+     shortened by Andrew Salmon, 12-Aug-2011.) $)
+  2on $p |- 2o e. On $=
+    ( c2o c1o csuc con0 df-2o 1on onsuci eqeltri ) ABCDEBFGH $.
+
+  $( Ordinal two is not zero.  (Contributed by Scott Fenton, 17-Jun-2011.) $)
+  2on0 $p |- 2o =/= (/) $=
+    ( c2o c1o csuc c0 df-2o con0 wcel wne 1on nsuceq0g ax-mp eqnetri
+    ) ABCZDEBFGMDHIBFJKL $.
+
+  $( Ordinal 3 is an ordinal number.  (Contributed by Mario Carneiro,
+     5-Jan-2016.) $)
+  3on $p |- 3o e. On $=
+    ( c3o c2o csuc con0 df-3o 2on onsuci eqeltri ) ABCDEBFGH $.
+
+  $( Ordinal 3 is an ordinal number.  (Contributed by Mario Carneiro,
+     5-Jan-2016.) $)
+  4on $p |- 4o e. On $=
+    ( c4o c3o csuc con0 df-4o 3on onsuci eqeltri ) ABCDEBFGH $.
+
+  $( Expanded value of the ordinal number 1.  (Contributed by NM,
+     4-Nov-2002.) $)
+  df1o2 $p |- 1o = { (/) } $=
+    ( c1o c0 csuc csn df-1o suc0 eqtri ) ABCBDEFG $.
+
+  $( Expanded value of the ordinal number 2.  (Contributed by Mario Carneiro,
+     14-Aug-2015.) $)
+  df2o3 $p |- 2o = { (/) , 1o } $=
+    ( c2o c1o csuc csn cun c0 cpr df-2o df-suc df1o2 uneq1i df-pr eqtr4i 3eqtri
+    ) ABCBBDZEZFBGZHBIPFDZOEQBROJKFBLMN $.
+
+  $( Expanded value of the ordinal number 2.  (Contributed by NM,
+     29-Jan-2004.) $)
+  df2o2 $p |- 2o = { (/) , { (/) } } $=
+    ( c2o c0 c1o cpr csn df2o3 df1o2 preq2i eqtri ) ABCDBBEZDFCJBGHI $.
+
+  $( Ordinal one is not equal to ordinal zero.  (Contributed by NM,
+     26-Dec-2004.) $)
+  1n0 $p |- 1o =/= (/) $=
+    ( c1o c0 csn df1o2 0ex snnz eqnetri ) ABCBDBEFG $.
+
+  $( Cartesian products with the singletons of ordinals 0 and 1 are disjoint.
+     (Contributed by NM, 2-Jun-2007.) $)
+  xp01disj $p |- ( ( A X. { (/) } ) i^i ( C X. { 1o } ) ) = (/) $=
+    ( c0 c1o wne csn cxp cin wceq 1n0 necomi xpsndisj ax-mp ) CDEACFGBDFGHCIDCJ
+    KACBDLM $.
+
+  $( Two ways to express that an ordinal class is positive.  (Contributed by
+     NM, 21-Dec-2004.) $)
+  ordgt0ge1 $p |- ( Ord A -> ( (/) e. A <-> 1o C_ A ) ) $=
+    ( word c0 wcel csuc wss c1o con0 0elon ordelsuc mpan df-1o sseq1i syl6bbr
+    wb ) ABZCADZCEZAFZGAFCHDPQSOICAHJKGRALMN $.
+
+  $( An ordinal greater than or equal to 1 is nonzero.  (Contributed by Jim
+     Kingdon, 26-Jun-2019.) $)
+  ordge1n0im $p |- ( Ord A -> ( 1o C_ A -> A =/= (/) ) ) $=
+    ( word c1o wss c0 wcel wne ordgt0ge1 ne0i syl6bir ) ABCADEAFAEGAH
+    AEIJ $.
+
+  $( Membership in ordinal one.  (Contributed by NM, 5-Jan-2005.) $)
+  el1o $p |- ( A e. 1o <-> A = (/) ) $=
+    ( c1o wcel c0 csn wceq df1o2 eleq2i 0ex elsnc2 bitri ) ABCADEZCADFBLAGHADIJ
+    K $.
+
+  $( Two ways to say that ` A ` is a nonzero number of the set ` B ` .
+     (Contributed by Mario Carneiro, 21-May-2015.) $)
+  dif1o $p |- ( A e. ( B \ 1o ) <-> ( A e. B /\ A =/= (/) ) ) $=
+    ( c1o cdif wcel c0 csn wne wa df1o2 difeq2i eleq2i eldifsn bitri ) ABCDZEAB
+    FGZDZEABEAFHIOQACPBJKLABFMN $.
+
+  $( Closure of the pair swapping function on ` 2o ` .  (Contributed by Mario
+     Carneiro, 27-Sep-2015.) $)
+  2oconcl $p |- ( A e. 2o -> ( 1o \ A ) e. 2o ) $=
+    ( c1o cdif c2o wcel c0 cpr wceq wo elpri difeq2 syl6eq difid orim12i orcomd
+    dif0 syl con0 cvv df2o3 1on difexg ax-mp elpr sylibr syl6eleqr eleq2s ) BAC
+    ZDEAFBGZDAUIEZUHUIDUJUHFHZUHBHZIZUHUIEUJAFHZABHZIZUMAFBJUPULUKUNULUOUKUNUHB
+    FCBAFBKBPLUOUHBBCFABBKBMLNOQUHFBBREUHSEUABARUBUCUDUETUFTUG $.
+
+  $( Ordinal zero is less than ordinal one.  (Contributed by NM,
+     5-Jan-2005.) $)
+  0lt1o $p |- (/) e. 1o $=
+    ( c0 c1o wcel wceq eqid el1o mpbir ) ABCAADAEAFG $.
+
+  ${
+    $d x z $.
+    sucinc.1 $e |- F = ( z e. _V |-> suc z ) $.
+    $( Successor is increasing.  (Contributed by Jim Kingdon, 25-Jun-2019.) $)
+    sucinc $p |- A. x x C_ ( F ` x ) $=
+      ( cv cfv wss csuc sssucid cvv wcel vex sucex suceq fvmptg mp2an
+      wceq sseqtr4i ax-gen ) AEZTCFZGATTHZUATITJKUBJKUAUBQALZTUCMBTBE
+      ZHUBJJCUDTNDOPRS $.
+  $}
+
+  ${
+    $d x y z $.
+    $( Functionality and domain of ordinal addition.  (Contributed by NM,
+       26-Aug-1995.)  (Revised by Mario Carneiro, 8-Sep-2013.) $)
+    fnoa $p |- +o Fn ( On X. On ) $=
+      ( vy vz vx cvv csuc cmpt crdg cfv wcel con0 wral coa cxp wfn cdm wceq vex
+      cv sucex ax-mp eqid fnmpti rdgifnon fndm eleq2i wfun rdgfun funfvex rgenw
+      mpan sylbir rgen df-oadd fnmpt2 ) ARZBDBRZEZFZCRZGZHZDIZAJKZCJKLJJMNVCCJV
+      BAJUOJIUOUTOZIZVBVDJUOUTJNVDJPUSURCQBDUQURUPBQSURUAUBUCJUTUDTUEUTUFVEVBUS
+      URUGUOUTUHUJUKULUICAJJVALDCABUMUNT $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -54808,6 +54978,24 @@ htmldef "rec" as
     "<IMG SRC='_rec.gif' WIDTH=21 HEIGHT=19 ALT=' rec' TITLE='rec'>";
   althtmldef "rec" as 'rec';
   latexdef "rec" as "{\rm rec}";
+htmldef "1o" as "<IMG SRC='_1o.gif' WIDTH=13 HEIGHT=19 ALT=' 1o' TITLE='1o'>";
+  althtmldef "1o" as '1<SUB>&#x1D45C;</SUB>';
+  latexdef "1o" as "1_o";
+htmldef "2o" as "<IMG SRC='_2o.gif' WIDTH=14 HEIGHT=19 ALT=' 2o' TITLE='2o'>";
+  althtmldef "2o" as '2<SUB>&#x1D45C;</SUB>';
+  latexdef "2o" as "2_o";
+htmldef "3o" as "<IMG SRC='_3o.gif' WIDTH=14 HEIGHT=19 ALT=' 3o' TITLE='3o'>";
+  althtmldef "3o" as "3<SUB>&#x1D45C;</SUB>"; latexdef "3o" as "3_o";
+htmldef "4o" as "<IMG SRC='_4o.gif' WIDTH=15 HEIGHT=19 ALT=' 4o' TITLE='4o'>";
+  althtmldef "4o" as "4<SUB>&#x1D45C;</SUB>"; latexdef "4o" as "4_o";
+htmldef "+o" as
+    " <IMG SRC='_plo.gif' WIDTH=18 HEIGHT=19 ALT=' +o' TITLE='+o'> ";
+  althtmldef "+o" as ' +<SUB>&#x1D45C;</SUB> ';
+  latexdef "+o" as "+_o";
+htmldef ".o" as
+    " <IMG SRC='_cdo.gif' WIDTH=10 HEIGHT=19 ALT=' .o' TITLE='.o'> ";
+  althtmldef ".o" as ' &middot;<SUB>&#x1D45C;</SUB> ';
+  latexdef ".o" as "\cdot_o";
 
 htmldef "Fun" as
     "<IMG SRC='_fun.gif' WIDTH=25 HEIGHT=19 ALT=' Fun' TITLE='Fun'> ";
