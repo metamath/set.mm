@@ -53887,6 +53887,27 @@ $)
   $}
 
   ${
+    $d a f g h k t u v w x y z A $.  $d a f g h k t u v w x y z F $.
+    $d ph g x $.
+    tfrlemisucfnd.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    tfrlemisucfnd.2 $e |- ( ph -> ( Fun F /\ ( F ` x ) e. _V ) ) $.
+    ${
+      $d u w y ph $.
+      tfrlemisucfnd.3 $e |- ( ph -> z e. On ) $.
+      tfrlemisucfnd.4 $e |- ( ph -> g Fn z ) $.
+      tfrlemisucfnd.5 $e |- ( ph -> g e. A ) $.
+      $( We can extend an acceptable function by one element to produce a
+         function.  Lemma for ~ tfrlemi1 .  (Contributed by Jim Kingdon,
+         2-Jul-2019.) $)
+      tfrlemisucfnd $p |- ( ph -> ( g u. { <. z , ( F ` g ) >. } ) Fn suc z ) $=
+        ( cv csuc cfv cop cvv wcel a1i csn cun wfun tfrlem3-2d simprd df-suc wn
+        vex eqid elirrv fnunsn ) ADNZULOGNZUMULUMHPZQUAUBZULUNULRSADUHTAHUCUNRS
+        ABGHJUDUELUOUIULUFULULSUGADUJTUK $.
+    $}
+  $}
+
+  ${
     $d f g h u v w x y z A $.  $d f g h u v w x y z F $.  $d z C $.
     tfrlemi14.1 $e |- A = { f | E. x e. On ( f Fn x /\
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
