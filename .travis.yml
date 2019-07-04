@@ -53,7 +53,7 @@ script:
   - metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
   - metamath 'read iset.mm' 'markup mmil.raw.html mmil.html /ALT /CSS' quit
   - scripts/verify --top_date_skip --extra 'write bibliography mmbiblio.html' set.mm
-  - scripts/verify iset.mm
+  - scripts/verify --top_date_skip iset.mm
   # Verify and also generate 'discouraged.new', and do extra checking
   # (the 'printf' lets us insert multiple lines):
   - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\nRunMacro,showDiscouraged,discouraged.new')" set.mm
