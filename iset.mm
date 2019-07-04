@@ -53898,7 +53898,7 @@ $)
 
   ${
     $d a f g h k t u v w x y z A $.  $d a f g h k t u v w x y z F $.
-    $d ph g x $.
+    $d ph g u v w x y $.
     tfrlemisucfnd.1 $e |- A = { f | E. x e. On ( f Fn x /\
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
     tfrlemisucfnd.2 $e |- ( ph -> ( Fun F /\ ( F ` x ) e. _V ) ) $.
@@ -53914,6 +53914,33 @@ $)
         ( cv csuc cfv cop cvv wcel a1i csn cun wfun tfrlem3-2d simprd df-suc wn
         vex eqid elirrv fnunsn ) ADNZULOGNZUMULUMHPZQUAUBZULUNULRSADUHTAHUCUNRS
         ABGHJUDUELUOUIULUFULULSUGADUJTUK $.
+
+      $( We can extend an acceptable function by one element to produce an
+         acceptable function.  Lemma for ~ tfrlemi1 .  (Contributed by Jim
+         Kingdon, 4-Mar-2019.)  (Proof shortened by Mario Carneiro,
+         24-May-2019.) $)
+      tfrlemisucaccvd $p |- ( ph -> ( g u. { <. z , ( F ` g ) >. } ) e. A ) $=
+        ( vu cfv wcel wceq wa con0 cvv vw vv cv cop csn cun cres wral wrex csuc
+        wfn suceloni syl tfrlemisucfnd vex elsuc tfrlem3a sylib simprrr simprrl
+        adantr fndmu syl2anc raleqdv mpbid rexlimddv r19.21bi wne elirrv elequ2
+        mtbiri necon2ai adantl fvunsng sylancr word eloni ordelss sylan resabs1
+        wo wss wn fsnunres sylancl reseq1d eqtr3d fveq2d 3eqtr4d cdm tfrlem3-2d
+        wfun simprd fndm eleq2d fsnunfv syl3anc reseq2 sylan9eqr jaodan sylan2b
+        simpr ralrimiva fneq2 raleq rspcev syl12anc opexg snexg unexg tfrlem3ag
+        anbi12d wb mpbird ) AGUCZDUCZXOHOZUDZUEZUFZEPZXTUAUCZUKZNUCZXTOZXTYDUGZ
+        HOZQZNYBUHZRZUASUIZAXPUJZSPZXTYLUKZYHNYLUHZYKAXPSPZYMKXPULUMABCDEFGHIJK
+        LMUNAYHNYLYDYLPAYDXPPZYDXPQZWAYHYDXPNUOZUPAYQYHYRAYQRZYDXOOZXOYDUGZHOZY
+        EYGAUUAUUCQZNXPAXOUBUCZUKZUUDNUUEUHZRZUUDNXPUHZUBSAXOEPUUHUBSUIMBCUBNEF
+        HXOIGUOZUQURAUUESPZUUHRZRZUUGUUIAUUKUUFUUGUSUUMUUDNUUEXPUUMUUFXOXPUKZUU
+        EXPQAUUKUUFUUGUTAUUNUULLVAUUEXPXOVBVCVDVEVFVGYTYDTPXPYDVHZYEUUAQYSYQUUO
+        AYQXPYDXPYDQYQYDYDPNVIDNNVJVKVLVMXOXPXQYDTVNVOYTYFUUBHYTXTXPUGZYDUGZYFU
+        UBYTYDXPWBZUUQYFQAXPVPZYQUURAYPUUSKXPVQUMXPYDVRVSXTYDXPVTUMAUUQUUBQYQAU
+        UPXOYDAUUNXPXPPZWCUUPXOQLDVIZXPXOXPXQWDWEZWFVAWGWHWIAYRRZXPXTOZXQYEYGAU
+        VDXQQZYRAYPXQTPZXPXOWJZPZWCUVEKAHWLUVFABGHJWKWMZAUVHUUTUVAAUVGXPXPAUUNU
+        VGXPQLXPXOWNUMWOVKXOSTXPXQWPWQVAUVCYDXPXTAYRXBWHUVCYFXOHYRAYFUUPXOYDXPX
+        TWRUVBWSWHWIWTXAXCYJYNYORUAYLSYBYLQYCYNYIYOYBYLXTXDYHNYBYLXEXLXFXGAXTTP
+        ZYAYKXMAXOTPXSTPZUVJUUJAXRTPZUVKAXPTPUVFUVLDUOUVIXPXQTTXHVOXRTXIUMXOXST
+        TXJVOBCUANEFHXTIXKUMXN $.
     $}
   $}
 
