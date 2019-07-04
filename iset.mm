@@ -45478,6 +45478,24 @@ $)
   $}
 
   ${
+    $d x y A $.  $d y B $.  $d x y C $.  $d x y D $.  $d y F $.
+    fvmptss2.1 $e |- ( x = D -> B = C ) $.
+    fvmptss2.2 $e |- F = ( x e. A |-> B ) $.
+    $( A mapping always evaluates to a subset of the substituted expression in
+       the mapping, even if this is a proper class, or we are out of the
+       domain.  (Contributed by Mario Carneiro, 13-Feb-2015.)
+       (Revised by Mario Carneiro, 3-Jul-2019.) $)
+    fvmptss2 $p |- ( F ` D ) C_ C $=
+      ( vy cv wbr wss wi cfv fvss cvv wcel nfcv wceq sylbi funmpt2 funrel ax-mp
+      wfun wrel brrelexi cmpt nfmpt1 nfcxfr nfbr nfv breq1 sseq2d imbi12d df-br
+      nfim cop copab opabid eqimss adantl df-mpt eqtri eleq2s vtoclgf mpcom mpg
+      wa ) EIJZFKZVIDLZMZEFNDLIIEDFOEPQVJVKEVIFFUDFUEABCFHUAFUBUCUFAJZVIFKZVICL
+      ZMVLAEPAERZVJVKAAEVIFVPAFABCUGZHABCUHUIAVIRUJVKAUKUPVMESZVNVJVOVKVMEVIFUL
+      VRCDVIGUMUNVNVMVIUQZFQVOVMVIFUOVOVSVMBQZVICSZVHZAIURZFVSWCQWBVOWBAIUSWAVO
+      VTVICUTVATFVQWCHAIBCVBVCVDTVEVFVG $.
+  $}
+
+  ${
     $d x y A $.  $d y B $.  $d x C y $.  $d x D y $.
     fvmptg.1 $e |- ( x = A -> B = C ) $.
     fvmptg.2 $e |- F = ( x e. D |-> B ) $.
@@ -45545,7 +45563,7 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d y z B $.  $d y D $.  $d y z F $.
+    $d x y z A $.  $d y z B $.  $d y D $.  $d y z F $.  $d y V $.
     fvmpt2.1 $e |- F = ( x e. A |-> B ) $.
     $( Value of a function given by the "maps to" notation.  (Contributed by
        FL, 21-Jun-2010.) $)
@@ -45568,6 +45586,16 @@ $)
       GWBOZWHWLWKWEWGWBWAULWMWJWDVPWMWIWCDWGWBFPQRUMWHWGVNIZWKVNWAWGABCFGUNZUPW
       NVPWJWNVPUOWICDWNWICJZVPWNWGBIZVTUOZWPVTAVNBWOUQWRWICOWPABCMFGURWICUSUTVA
       VBWNWQVPVOVNBWGABCFGVCVDVOABVEVHVIVFVGVJVKWOVLVM $.
+
+    $( Sufficient condition for a maps-to notation to be set-like.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    mptfvex $p |- ( ( A. x B e. V /\ C e. W ) -> ( F ` C ) e. _V ) $=
+      ( vy wcel wal wa cfv csb cvv cv cmpt nfel1 wceq eleq1d wss csbeq1 nfcsb1v
+      nfcv cbvmpt eqtri fvmptss2 elex alimi cbval sylib spcgv syl5 impcom ssexg
+      csbeq1a sylancr ) CFJZAKZDGJZLDEMZADCNZUAVBOJZVAOJIBAIPZCNZVBDEAVDDCUBZEA
+      BCQIBVEQHAIBCVEICUDZAVDCUCZAVDCUPZUEUFUGUTUSVCUSVEOJZIKZUTVCUSCOJZAKVKURV
+      LACFUHUIVLVJAIICOVGRAVEOVHRAPVDSCVEOVITUJUKVJVCIDGVDDSVEVBOVFTULUMUNVAVBO
+      UOUQ $.
   $}
 
   ${
@@ -52315,6 +52343,21 @@ $)
       ( wcel wral cvv cxp wfn elex ralimi wf fmpt2 dffn2 bitr4i sylib ) EGIZBDJ
       ZACJEKIZBDJZACJZFCDLZMZUBUDACUAUCBDEGNOOUEUFKFPUGABCDEKFHQUFFRST $.
 
+    $d R z $.  $d S z $.  $d V z $.
+    $( Sufficient condition for an operation maps-to notation to be set-like.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    mpt2fvex $p |- ( ( A. x A. y C e. V /\ R e. W /\ S e. X ) ->
+      ( R F S ) e. _V ) $=
+      ( vz wcel wal cfv cvv cv csb alimi w3a co cop df-ov c1st c2nd elex wi vex
+      2ndexg nfcv nfcsb1v nfel1 wceq csbeq1a eleq1d spcgf mp2b alrimiv 3ad2ant1
+      syl opexg 3adant1 csn cxp ciun cmpt2 cmpt mpt2mptsx eqtri mptfvex syl2anc
+      1stexg syl5eqel ) EINZBOZAOZFJNZGKNZUAZFGHUBFGUCZHPZQFGHUDVTAMRZUEPZBWCUF
+      PZESZSZQNZMOZWAQNZWBQNVQVRWIVSVQWHMVQWFQNZAOZWHVPWKAVPEQNZBOZWKVOWMBEIUGT
+      WCQNZWEQNWNWKUHMUIZWCQUJWMWKBWEQBWEUKBWFQBWEEULUMBRWEUNEWFQBWEEUOUPUQURVA
+      TWOWDQNWLWHUHWPWCQVMWKWHAWDQAWDUKAWGQAWDWFULUMARZWDUNWFWGQAWDWFUOUPUQURVA
+      USUTVRVSWJVQFGJKVBVCMACWQVDDVEVFZWGWAHQQHABCDEVGMWRWGVHLABMCDEVIVJVKVLVN
+      $.
+
     fnmpt2i.2 $e |- C e. _V $.
     $( Functionality and domain of a class given by the "maps to" notation.
        (Contributed by FL, 17-May-2010.) $)
@@ -52326,6 +52369,14 @@ $)
        17-May-2010.) $)
     dmmpt2 $p |- dom F = ( A X. B ) $=
       ( cxp wfn cdm wceq fnmpt2i fndm ax-mp ) FCDIZJFKPLABCDEFGHMPFNO $.
+
+    mpt2fvexi.3 $e |- R e. _V $.
+    mpt2fvexi.4 $e |- S e. _V $.
+    $( Sufficient condition for an operation maps-to notation to be set-like.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    mpt2fvexi $p |- ( R F S ) e. _V $=
+      ( cvv wcel wal co gen2 mpt2fvex mp3an ) EMNZBOAOFMNGMNFGHPMNTABJQKLABCDEF
+      GHMMMIRS $.
   $}
 
   ${
@@ -53795,33 +53846,36 @@ $)
         TVLFVFWCVQVIVSVKVHVOVDUOWCVRVJLVOVDVHUPUQURUSVBUTVC $.
     $}
 
+    $d g u z C $.
     $( We can define an acceptable function on any ordinal.
 
        As with many of the transfinite recursion theorems, we have a hypothesis
        that states that ` F ` is a function and that it is defined for all
        ordinals.  (Contributed by Jim Kingdon, 4-Mar-2019.)  (Proof shortened
        by Mario Carneiro, 24-May-2019.) $)
-    tfrlemi1 $p |- ( z e. On -> E. g ( g Fn z /\
-        A. u e. z ( g ` u ) = ( F ` ( g |` u ) ) ) ) $=
-      ( vk vw vv cv cfv wceq wral wa wex simpr va vt vh wfn cres fneq12d fveq1d
-      simpl reseq1d fveq2d eqeq12d raleqbidv anbi12d cbvexdva con0 wcel cop csn
-      cun w3a wrex tfrlem3 tfrlem3-2 simplr eleq1d simpll opeq12d sneqd uneq12d
-      cab 3anbi123d cbvrexdva cbvabv fveq12d reseq12d adantr cbvraldva2 cbvralv
-      sylib tfrlemiex ex tfis2 ) GNZCNZUDZDNZWCOZWCWFUEZHOZPZDWDQZRZGSZKNZLNZUD
-      ZWFWNOZWNWFUEZHOZPZDWOQZRZKSZCLWDWOPZWLXBGKXDWCWNPZRZWEWPWKXAXFWDWOWCWNXD
-      XETZXDXEUHZUFXFWJWTDWDWOXHXFWGWQWIWSXFWFWCWNXGUGXFWHWRHXFWCWNWFXGUIUJUKUL
-      UMUNWDUOUPZXCLWDQZWMXIXJRZCUAMBDEWPWNEUPZUBNZWNWOWNHOZUQZURZUSZPZUTZKSZLW
-      DVAZUBVJGFUCHABCUAEFGHIVBACHJVCYAFNZMNZUDZYBEUPZUCNZYBYCYBHOZUQZURZUSZPZU
-      TZFSZMWDVAUBUCXMYFPZXTYMLMWDYNWOYCPZRZXSYLKFYPWNYBPZRZWPYDXLYEXRYKYRWOYCW
-      NYBYPYQTZYNYOYQVDZUFYRWNYBEYSVEYRXMYFXQYJYNYOYQVFYRWNYBXPYIYSYRXOYHYRWOYC
-      XNYGYTYRWNYBHYSUJVGVHVIUKVKUNVLVMXIXJUHXKXJYDBNZYBOZYBUUAUEZHOZPZBYCQZRZF
-      SZMWDQXIXJTXCUUHLMWDYOXBUUGKFYOYQRZWPYDXAUUFUUIWOYCWNYBYOYQTYOYQUHZUFUUIW
-      TUUEDBWOYCUUIWFUUAPZRZWQUUBWSUUDUULWFUUAWNYBYOYQUUKVDZUUIUUKTZVNUULWRUUCH
-      UULWNYBWFUUAUUMUUNVOUJUKUUIYOUUKUUJVPVQUMUNVRVSVTWAWB $.
+    tfrlemi1 $p |- ( C e. On -> E. g ( g Fn C /\
+        A. u e. C ( g ` u ) = ( F ` ( g |` u ) ) ) ) $=
+      ( vz vk vw vv cv cfv wceq wral wa wex va vt cres con0 fneq2 raleq anbi12d
+      vh wfn exbidv simpr simpl fneq12d fveq1d reseq1d fveq2d eqeq12d raleqbidv
+      cbvexdva wcel cop csn cun w3a wrex tfrlem3 tfrlem3-2 simplr eleq1d simpll
+      cab opeq12d sneqd uneq12d 3anbi123d cbvrexdva fveq12d reseq12d cbvraldva2
+      cbvabv adantr cbvralv sylib tfrlemiex ex tfis2 vtoclga ) GOZKOZUIZCOZWHPZ
+      WHWKUCZHPZQZCWIRZSZGTZWHEUIZWOCERZSZGTKEUDWIEQZWQXAGXBWJWSWPWTWIEWHUEWOCW
+      IEUFUGUJWRLOZMOZUIZWKXCPZXCWKUCZHPZQZCXDRZSZLTZKMWIXDQZWQXKGLXMWHXCQZSZWJ
+      XEWPXJXOWIXDWHXCXMXNUKZXMXNULZUMXOWOXICWIXDXQXOWLXFWNXHXOWKWHXCXPUNXOWMXG
+      HXOWHXCWKXPUOUPUQURUGUSWIUDUTZXLMWIRZWRXRXSSZKUANBCDXEXCDUTZUBOZXCXDXCHPZ
+      VAZVBZVCZQZVDZLTZMWIVEZUBVKGFUHHABKUADFGHIVFAKHJVGYJFOZNOZUIZYKDUTZUHOZYK
+      YLYKHPZVAZVBZVCZQZVDZFTZNWIVEUBUHYBYOQZYIUUBMNWIUUCXDYLQZSZYHUUALFUUEXCYK
+      QZSZXEYMYAYNYGYTUUGXDYLXCYKUUEUUFUKZUUCUUDUUFVHZUMUUGXCYKDUUHVIUUGYBYOYFY
+      SUUCUUDUUFVJUUGXCYKYEYRUUHUUGYDYQUUGXDYLYCYPUUIUUGXCYKHUUHUPVLVMVNUQVOUSV
+      PVTXRXSULXTXSYMBOZYKPZYKUUJUCZHPZQZBYLRZSZFTZNWIRXRXSUKXLUUQMNWIUUDXKUUPL
+      FUUDUUFSZXEYMXJUUOUURXDYLXCYKUUDUUFUKUUDUUFULZUMUURXIUUNCBXDYLUURWKUUJQZS
+      ZXFUUKXHUUMUVAWKUUJXCYKUUDUUFUUTVHZUURUUTUKZVQUVAXGUULHUVAXCYKWKUUJUVBUVC
+      VRUPUQUURUUDUUTUUSWAVSUGUSWBWCWDWEWFWG $.
   $}
 
   ${
-    $d f g h u w x y z A $.  $d f g h u w x y z F $.
+    $d f g h u v w x y z A $.  $d f g h u v w x y z F $.  $d z C $.
     tfrlemi14.1 $e |- A = { f | E. x e. On ( f Fn x /\
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
     tfrlemi14.2 $e |- ( Fun F /\ ( F ` x ) e. _V ) $.
@@ -53836,11 +53890,41 @@ $)
       syl exlimddv eliun ssriv cuni recsfval dmeqi dmuni eqtri sseqtr4i eqssi )
       EUAZMZNWLUBWLNUCABCDEFUDWLUEUFNHCHOZMZUGZWLINWOIOZNPZWPWNPZHCQZWPWOPWQJOZ
       WPUHZKOZWTRWTXBUIERSZKWPUJZTZWSJWTLOZUHZXCKXFUJZTZJUKXEJUKLWPNXFWPSZXIXEJ
-      XJXGXAXHXDXFWPWTULXCKXFWPUMUNZUQABLKCDJEFGUOUPWQXETZWTWPWTERZURZUSZUTZCPW
-      PXPMZPZWSXLABICDJEFGWQXEVAWQXAXDVBXLXILNQWTCPXIXELWPNXKVCABLKCDEWTFJVDVEV
-      FVGXLXNXPPZXRXNXOPXSXLXNWPXMIVDZEVHXMVIPAJEGVJVKZVLVMXNXOWTVNVOWPXMXPXTYA
-      VPVTWRXRHXPCWMXPSWNXQWPWMXPVQVRVCVSWAHWPCWNWBVFWCWLCWDZMWOWKYBABCDEFWEWFH
-      CWGWHWIWJ $.
+      XJXGXAXHXDXFWPWTULXCKXFWPUMUNZUQABKCXFDJEFGUOUPWQXETZWTWPWTERZURZUSZUTZCP
+      WPXPMZPZWSXLABICDJEFGWQXEVAWQXAXDVBXLXILNQWTCPXIXELWPNXKVCABLKCDEWTFJVDVE
+      VFVGXLXNXPPZXRXNXOPXSXLXNWPXMIVDZEVHXMVIPAJEGVJVKZVLVMXNXOWTVNVOWPXMXPXTY
+      AVPVTWRXRHXPCWMXPSWNXQWPWMXPVQVRVCVSWAHWPCWNWBVFWCWLCWDZMWOWKYBABCDEFWEWF
+      HCWGWHWIWJ $.
+
+    $( The transfinite recursion function is set-like if the input is.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    tfrexlem $p |- ( C e. V -> ( recs ( F ) ` C ) e. _V ) $=
+      ( vz vg vw vu vv cv wcel wceq con0 wa syl crecs cfv cvv fveq2 eleq1d csuc
+      vh cin cuni wfn cres wral wex word inss2 ssorduni ax-mp sucex inex1 uniex
+      wss vex elon2 mpbir2an tfrlem3 tfrlem3-2 tfrlemi1 crn wbr wi wal recsfval
+      cop breqi df-br eluni 3bitri cdm sucid wrex simpr tfrlem3a simprl simprrl
+      sylib simpll fnop syl2anc onelon rexlimddv adantl suceloni onss df-ss wtr
+      unieqd eloni ordtr 3syl eqtrd syl5eleqr fndm ad2antrr eleqtrrd eldm fneq2
+      unisuc raleq anbi12d rspcev mpan simplrr simplrl tfrlem5 syl22anc breqtrd
+      sylibr imp exlimddv brelrn elssuni ex exlimdv syl5bi alrimiv fvss exlimiv
+      rnex ssex mp2b vtoclg ) JOZFUAZUBZUCPZDYMUBZUCPJDGYLDQYNYPUCYLDYMUDUEYLUF
+      ZUFZRUHZUIZRPZKOZYTUJZLOZUUBUBUUBUUDUKFUBQZLYTULZSZKUMYOUUAYTUNZYTUCPYSRV
+      AUUHYRRUOYSUPUQYSYRRYQYLJVBZURZURUSUTYTVCVDZJMLCYTNKFABJMCENFHVEZAJFIVFVG
+      UUGYOKUUGYNUUBVHZUIZVAZYOUUGYLBOZYMVIZUUPUUNVAZVJZBVKUUOUUGUUSBUUQYLUUPVM
+      ZUGOZPZUVACPZSZUGUMZUUGUURUUQYLUUPCUIZVIUUTUVFPUVEYLUUPYMUVFJMCNFUULVLVNY
+      LUUPUVFVOUGUUTCVPVQUUGUVDUURUGUUGUVDUURUUGUVDSZUUPUUMPZUURUVGYLUUPUUBVIZU
+      VHUVGYLAOZUUBVIZUVIAUVGYLUUBVRZPUVKAUMUVGYLYTUVLUVGYLYQYTYLUUIVSUVGYTYRUI
+      ZYQUVGYSYRUVGYRRVAZYSYRQUVGYRRPZUVNUVGYQRPZUVOUVGYLRPZUVPUVDUVQUUGUVDUVAN
+      OZUJZMOZUVAUBUVAUVTUKFUBQMUVRULZSZUVQNRUVDUVCUWBNRVTUVBUVCWAABNMCEFUVAHUG
+      VBWBWEUVDUVRRPZUWBSZSZUWCYLUVRPZUVQUVDUWCUWBWCUWEUVSUVBUWFUVDUWCUVSUWAWDU
+      VBUVCUWDWFUVRYLUUPUVAWGWHUVRYLWIWHWJWKYLWLTZYQWLTYRWMTYRRWNWEWPUVGYQWOZUV
+      MYQQUVGUVPYQUNUWHUWGYQWQYQWRWSYQUUJXGWEWTXAUUCUVLYTQUUFUVDYTUUBXBXCXDAYLU
+      UBUUIXEWEUVGUVKSZYLUVJUUPUUBUVGUVKWAZUWIUUBCPZUVCUVKYLUUPUVAVIZUVJUUPQZUU
+      GUWKUVDUVKUUGUUBUVRUJZUUELUVRULZSZNRVTZUWKUUAUUGUWQUUKUWPUUGNYTRUVRYTQUWN
+      UUCUWOUUFUVRYTUUBXFUUELUVRYTXHXIXJXKABNLCEFUUBHKVBZWBXQXCUUGUVBUVCUVKXLUW
+      JUWIUVBUWLUUGUVBUVCUVKXMYLUUPUVAVOXQUWKUVCSUVKUWLSUWMJMBACNKUGFUULXNXRXOX
+      PXSYLUUPUUBUUIBVBXTTUUPUUMYATYBYCYDYEBYLUUNYMYFTYNUUNUUMUUBUWRYHUTYITYGYJ
+      YK $.
   $}
 
   ${
@@ -53904,6 +53988,18 @@ $)
       XNOXCWEXJMZXLWBCHIZXNXOXCSACDEFUJZGHWCBCUKULWEXJDRUMUNUPTUQXIWJXLSZXHXEWO
       XRXEWOWGWIXKMZOZXRXEXEWOXSQZOWOXTQXEYAAWCCDEFURUSWOWGXSUTVAWDWFWIXKVBVGTV
       CVDVEVFVHVIVJVKVLVMVNVOVPVQWBWLWKWBXPWLWKSXQAHBCVRVSVTWA $.
+  $}
+
+  ${
+    $d f g u w x y z G $.
+    tfrex.1 $e |- F = recs ( G ) $.
+    tfrex.2 $e |- ( Fun G /\ ( G ` x ) e. _V ) $.
+    $( The transfinite recursion function is set-like if the input is.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    tfrex $p |- ( A e. V -> ( F ` A ) e. _V ) $=
+      ( vy vg vz vu vf wcel cfv crecs cvv fveq1i cv wfn cres wceq wral con0 cab
+      wa wrex eqid tfrlem3 tfrexlem syl5eqel ) BEMBCNBDOZNPBCUKFQAHIRZJRZSKRZUL
+      NULUNTDNUAKUMUBUEJUCUFIUDZBLDEJKAHUOILDUOUGUHGUIUJ $.
   $}
 
 $(
@@ -54051,6 +54147,12 @@ $)
       ( vx con0 wcel crdg cres cdm cv cfv cun ssun1 rdgival syl5sseqr
       ciun ) BGHAFCAIZBJZKFLTMCMRZNABSMAUAOFABCDEPQ $.
 
+    $( The recursive definition generator produces a set on a set input.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    rdgexg $p |- ( B e. V -> ( rec ( F , A ) ` B ) e. _V ) $=
+      ( vy vg vx crdg cvv cv cdm cfv ciun cun cmpt df-irdg rdgruledef tfrex ) G
+      BCAJHKAIHLZMILUANCNOPQDIHCARIAGHCEFST $.
+
     ${
       $d A x $.  $d B x $.  $d F x $.
       rdgisuc2.inc $e |- A. x x C_ ( F ` x ) $.
@@ -54084,6 +54186,7 @@ $)
   $c 4o $. $( The ordinal number 4 $)
   $c +o $.  $( Ordinal addition operation (plus subscript o) $)
   $c .o $.  $( Ordinal multiplication operation (center dot subscript o) $)
+  $c ^oi $.  $( Ordinal exponentiation operation (caret subscript oi) $)
 
   $( Extend the definition of a class to include the ordinal number 1. $)
   c1o $a class 1o $.
@@ -54104,6 +54207,10 @@ $)
   $( Extend the definition of a class to include the ordinal multiplication
      operation. $)
   comu $a class .o $.
+
+  $( Extend the definition of a class to include the ordinal exponentiation
+     operation. $)
+  coei $a class ^oi $.
 
   $( Define the ordinal number 1.  (Contributed by NM, 29-Oct-1995.) $)
   df-1o $a |- 1o = suc (/) $.
@@ -54130,6 +54237,11 @@ $)
        26-Aug-1995.) $)
     df-omul $a |- .o = ( x e. On , y e. On |->
                 ( rec ( ( z e. _V |-> ( z +o x ) ) , (/) ) ` y ) ) $.
+
+    $( Define the ordinal exponentiation operation.  (Contributed by NM,
+       30-Dec-2004.) $)
+    df-oexpi $a |- ^oi = ( x e. On , y e. On |->
+                 ( rec ( ( z e. _V |-> ( z .o x ) ) , 1o ) ` y ) ) $.
   $}
 
   $( Ordinal 1 is an ordinal number.  (Contributed by NM, 29-Oct-1995.) $)
@@ -54232,13 +54344,51 @@ $)
   ${
     $d x y z $.
     $( Functionality and domain of ordinal addition.  (Contributed by NM,
-       26-Aug-1995.)  (Revised by Mario Carneiro, 8-Sep-2013.) $)
+       26-Aug-1995.)  (Proof shortened by Mario Carneiro, 3-Jul-2019.) $)
     fnoa $p |- +o Fn ( On X. On ) $=
-      ( vy vz vx cvv csuc cmpt crdg cfv wcel con0 wral coa cxp wfn cdm wceq vex
-      cv sucex ax-mp eqid fnmpti rdgifnon fndm eleq2i wfun rdgfun funfvex rgenw
-      mpan sylbir rgen df-oadd fnmpt2 ) ARZBDBRZEZFZCRZGZHZDIZAJKZCJKLJJMNVCCJV
-      BAJUOJIUOUTOZIZVBVDJUOUTJNVDJPUSURCQBDUQURUPBQSURUAUBUCJUTUDTUEUTUFVEVBUS
-      URUGUOUTUHUJUKULUICAJJVALDCABUMUNT $.
+      ( vy vz vx cv cvv csuc cmpt crdg cfv wcel con0 wral coa cxp wfn vex sucex
+      eqid ax-mp rgenw fnmpti rdgexg df-oadd fnmpt2 ) ADZBEBDZFZGZCDZHIZEJZAKLZ
+      CKLMKKNOULCKUKAKUEEJUKAPUIUEUHECPBEUGUHUFBPQUHRUAUBSTTCAKKUJMECABUCUDS $.
+
+    $( Ordinal addition is a set.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    oaexg $p |- ( ( A e. V /\ B e. W ) -> ( A +o B ) e. _V ) $=
+      ( vy vz vx cv cvv csuc cmpt crdg cfv wcel wal coa co vex sucex con0 ax-mp
+      eqid fnmpti rdgexg gen2 df-oadd mpt2fvex mp3an1 ) EHZFIFHZJZKZGHZLMZINZEO
+      GOACNBDNABPQINUOGEUIINUOERUMUIULIGRFIUKULUJFRSULUBUCUDUAUEGETTUNABPICDGEF
+      UFUGUH $.
+
+    $( Functionality and domain of ordinal multiplication.  (Contributed by NM,
+       26-Aug-1995.)  (Revised by Mario Carneiro, 3-Jul-2019.) $)
+    fnom $p |- .o Fn ( On X. On ) $=
+      ( vx vy vz con0 cv cvv coa co cmpt c0 crdg cfv comu df-omul vex 0ex oaexg
+      wcel mp2an eqid fnmpti rdgexg ax-mp fnmpt2i ) ABDDBEZCFCEZAEZGHZIZJKLZMAB
+      CNUEFRUJFRBOJUEUIFPCFUHUIUFFRUGFRUHFRCOAOUFUGFFQSUITUAUBUCUD $.
+
+    $( Ordinal multiplication is a set.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    omexg $p |- ( ( A e. V /\ B e. W ) -> ( A .o B ) e. _V ) $=
+      ( vy vz vx cv cvv coa co cmpt c0 crdg cfv wcel wal comu vex con0 0ex eqid
+      oaexg mp2an fnmpti rdgexg ax-mp gen2 df-omul mpt2fvex mp3an1 ) EHZFIFHZGH
+      ZJKZLZMNOZIPZEQGQACPBDPABRKIPURGEULIPURESMULUPIUAFIUOUPUMIPUNIPUOIPFSGSUM
+      UNIIUCUDUPUBUEUFUGUHGETTUQABRICDGEFUIUJUK $.
+
+    $( Functionality and domain of ordinal exponentiation.  (Contributed by
+       Mario Carneiro, 29-May-2015.)
+       (Revised by Mario Carneiro, 3-Jul-2019.) $)
+    fnoei $p |- ^oi Fn ( On X. On ) $=
+      ( vx vy vz con0 cv cvv comu co cmpt c1o crdg cfv coei df-oexpi wcel elexi
+      vex 1on omexg mp2an eqid fnmpti rdgexg ax-mp fnmpt2i ) ABDDBEZCFCEZAEZGHZ
+      IZJKLZMABCNUFFOUKFOBQJUFUJFJDRPCFUIUJUGFOUHFOUIFOCQAQUGUHFFSTUJUAUBUCUDUE
+      $.
+
+    $( Ordinal exponentiation is a set.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    oeiexg $p |- ( ( A e. V /\ B e. W ) -> ( A ^oi B ) e. _V ) $=
+      ( vy vz vx cv cvv comu co cmpt c1o crdg cfv wcel wal coei vex con0 fnmpti
+      1on elexi omexg mp2an eqid rdgexg ax-mp gen2 df-oexpi mpt2fvex mp3an1 ) E
+      HZFIFHZGHZJKZLZMNOZIPZEQGQACPBDPABRKIPUSGEUMIPUSESMUMUQIMTUBUCFIUPUQUNIPU
+      OIPUPIPFSGSUNUOIIUDUEUQUFUAUGUHUIGETTURABRICDGEFUJUKUL $.
   $}
 
 $(
@@ -54996,6 +55146,9 @@ htmldef ".o" as
     " <IMG SRC='_cdo.gif' WIDTH=10 HEIGHT=19 ALT=' .o' TITLE='.o'> ";
   althtmldef ".o" as ' &middot;<SUB>&#x1D45C;</SUB> ';
   latexdef ".o" as "\cdot_o";
+htmldef "^oi" as ' &uarr;<SUB>&#x1D45C;</SUB> ';
+  althtmldef "^oi" as ' &uarr;<SUB>&#x1D45C;</SUB> ';
+  latexdef "^oi" as "\uparrow_{oi}";
 
 htmldef "Fun" as
     "<IMG SRC='_fun.gif' WIDTH=25 HEIGHT=19 ALT=' Fun' TITLE='Fun'> ";
