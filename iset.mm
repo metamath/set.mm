@@ -54095,36 +54095,50 @@ $)
       VFVGXLXNXPPZXRXNXOPXSXLXNWPXMIVDZEVHXMVIPAJEGVJVKZVLVMXNXOWTVNVOWPXMXPXTY
       AVPVTWRXRHXPCWMXPSWNXQWPWMXPVQVRVCVSWAHWPCWNWBVFWCWLCWDZMWOWKYBABCDEFWEWF
       HCWGWHWIWJ $.
+  $}
 
+  ${
+    $d e f g h u v t w x y z A $.  $d e f g h u v t w x y z F $.  $d z C $.
+    $d u v z ph $.
+    tfrexlem.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    tfrexlem.2 $e |- ( ph -> A. x ( Fun F /\ ( F ` x ) e. _V ) ) $.
     $( The transfinite recursion function is set-like if the input is.
        (Contributed by Mario Carneiro, 3-Jul-2019.) $)
-    tfrexlem $p |- ( C e. V -> ( recs ( F ) ` C ) e. _V ) $=
-      ( vz vg vw vu vv cv wcel wceq con0 wa syl crecs cfv cvv fveq2 eleq1d csuc
-      vh cin cuni wfn cres wral wex word inss2 ssorduni ax-mp sucex inex1 uniex
-      wss vex elon2 mpbir2an tfrlem3 tfrlem3-2 tfrlemi1 crn wbr wi wal recsfval
-      cop breqi df-br eluni 3bitri cdm sucid wrex simpr tfrlem3a simprl simprrl
-      sylib simpll fnop syl2anc onelon rexlimddv adantl suceloni onss df-ss wtr
-      unieqd eloni ordtr 3syl eqtrd syl5eleqr fndm ad2antrr eleqtrrd eldm fneq2
-      unisuc raleq anbi12d rspcev mpan simplrr simplrl tfrlem5 syl22anc breqtrd
-      sylibr imp exlimddv brelrn elssuni ex exlimdv syl5bi alrimiv fvss exlimiv
-      rnex ssex mp2b vtoclg ) JOZFUAZUBZUCPZDYMUBZUCPJDGYLDQYNYPUCYLDYMUDUEYLUF
-      ZUFZRUHZUIZRPZKOZYTUJZLOZUUBUBUUBUUDUKFUBQZLYTULZSZKUMYOUUAYTUNZYTUCPYSRV
-      AUUHYRRUOYSUPUQYSYRRYQYLJVBZURZURUSUTYTVCVDZJMLCYTNKFABJMCENFHVEZAJFIVFVG
-      UUGYOKUUGYNUUBVHZUIZVAZYOUUGYLBOZYMVIZUUPUUNVAZVJZBVKUUOUUGUUSBUUQYLUUPVM
-      ZUGOZPZUVACPZSZUGUMZUUGUURUUQYLUUPCUIZVIUUTUVFPUVEYLUUPYMUVFJMCNFUULVLVNY
-      LUUPUVFVOUGUUTCVPVQUUGUVDUURUGUUGUVDUURUUGUVDSZUUPUUMPZUURUVGYLUUPUUBVIZU
-      VHUVGYLAOZUUBVIZUVIAUVGYLUUBVRZPUVKAUMUVGYLYTUVLUVGYLYQYTYLUUIVSUVGYTYRUI
-      ZYQUVGYSYRUVGYRRVAZYSYRQUVGYRRPZUVNUVGYQRPZUVOUVGYLRPZUVPUVDUVQUUGUVDUVAN
-      OZUJZMOZUVAUBUVAUVTUKFUBQMUVRULZSZUVQNRUVDUVCUWBNRVTUVBUVCWAABNMCEFUVAHUG
-      VBWBWEUVDUVRRPZUWBSZSZUWCYLUVRPZUVQUVDUWCUWBWCUWEUVSUVBUWFUVDUWCUVSUWAWDU
-      VBUVCUWDWFUVRYLUUPUVAWGWHUVRYLWIWHWJWKYLWLTZYQWLTYRWMTYRRWNWEWPUVGYQWOZUV
-      MYQQUVGUVPYQUNUWHUWGYQWQYQWRWSYQUUJXGWEWTXAUUCUVLYTQUUFUVDYTUUBXBXCXDAYLU
-      UBUUIXEWEUVGUVKSZYLUVJUUPUUBUVGUVKWAZUWIUUBCPZUVCUVKYLUUPUVAVIZUVJUUPQZUU
-      GUWKUVDUVKUUGUUBUVRUJZUUELUVRULZSZNRVTZUWKUUAUUGUWQUUKUWPUUGNYTRUVRYTQUWN
-      UUCUWOUUFUVRYTUUBXFUUELUVRYTXHXIXJXKABNLCEFUUBHKVBZWBXQXCUUGUVBUVCUVKXLUW
-      JUWIUVBUWLUUGUVBUVCUVKXMYLUUPUVAVOXQUWKUVCSUVKUWLSUWMJMBACNKUGFUULXNXRXOX
-      PXSYLUUPUUBUUIBVBXTTUUPUUMYATYBYCYDYEBYLUUNYMYFTYNUUNUUMUUBUWRYHUTYITYGYJ
-      YK $.
+    tfrexlem $p |- ( ( ph /\ C e. V ) -> ( recs ( F ) ` C ) e. _V ) $=
+      ( vz vv wcel cfv cvv cv wceq con0 wa syl vg vw vu eleq1d imbi2d
+      vh vt ve crecs fveq2 csuc cin cuni wfn cres wral wex word inss2
+      wss ssorduni ax-mp vex sucex inex1 uniex elon2 mpbir2an tfrlem3
+      wi wal anbi2d cbvalv sylib tfrlemi1d mpan2 crn wbr cop recsfval
+      wfun breqi df-br eluni 3bitri sucid wrex simpr tfrlem3a simprrl
+      cdm simprl simpll fnop syl2anc onelon rexlimddv adantl suceloni
+      onss df-ss unieqd wtr eloni ordtr 3syl eqtrd syl5eleqr ad2antrr
+      unisuc fndm eldm fneq2 raleq anbi12d rspcev mpan sylibr simplrr
+      eleqtrrd simplrl tfrlem5 imp syl22anc breqtrd brelrn elssuni ex
+      exlimddv exlimdv syl5bi alrimiv fvss rnex exlimiv vtoclg impcom
+      ssex ) EHMAEGUIZNZOMZAKPZYSNZOMZVJAUUAVJKEHUUBEQZUUDUUAAUUEUUCY
+      TOUUBEYSUJUDUEAUAPZUUBUKZUKZRULZUMZUNZUBPZUUFNUUFUULUOGNQZUBUUJ
+      UPZSZUAUQZUUDAUUJRMZUUPUUQUUJURZUUJOMUUIRUTUURUUHRUSUUIVAVBUUIU
+      UHRUUGUUBKVCZVDZVDVEVFUUJVGVHZAKUCUBDUUJLUAGBCKUCDFLGIVIZAGWAZB
+      PZGNZOMZSZBVKUVCUUBGNZOMZSZKVKJUVGUVJBKUVDUUBQZUVFUVIUVCUVKUVEU
+      VHOUVDUUBGUJUDVLVMVNVOVPUUOUUDUAUUOUUCUUFVQZUMZUTZUUDUUOUUBCPZY
+      SVRZUVOUVMUTZVJZCVKUVNUUOUVRCUVPUUBUVOVSZUFPZMZUVTDMZSZUFUQZUUO
+      UVQUVPUUBUVODUMZVRUVSUWEMUWDUUBUVOYSUWEKUCDLGUVBVTWBUUBUVOUWEWC
+      UFUVSDWDWEUUOUWCUVQUFUUOUWCUVQUUOUWCSZUVOUVLMZUVQUWFUUBUVOUUFVR
+      ZUWGUWFUUBUVDUUFVRZUWHBUWFUUBUUFWKZMUWIBUQUWFUUBUUJUWJUWFUUBUUG
+      UUJUUBUUSWFUWFUUJUUHUMZUUGUWFUUIUUHUWFUUHRUTZUUIUUHQUWFUUHRMZUW
+      LUWFUUGRMZUWMUWFUUBRMZUWNUWCUWOUUOUWCUVTUGPZUNZUHPZUVTNUVTUWRUO
+      GNQUHUWPUPZSZUWOUGRUWCUWBUWTUGRWGUWAUWBWHBCUGUHDFGUVTIUFVCWIVNU
+      WCUWPRMZUWTSZSZUXAUUBUWPMZUWOUWCUXAUWTWLUXCUWQUWAUXDUWCUXAUWQUW
+      SWJUWAUWBUXBWMUWPUUBUVOUVTWNWOUWPUUBWPWOWQWRUUBWSTZUUGWSTUUHWTT
+      UUHRXAVNXBUWFUUGXCZUWKUUGQUWFUWNUUGURUXFUXEUUGXDUUGXEXFUUGUUTXJ
+      VNXGXHUUKUWJUUJQUUNUWCUUJUUFXKXIXTBUUBUUFUUSXLVNUWFUWISZUUBUVDU
+      VOUUFUWFUWIWHZUXGUUFDMZUWBUWIUUBUVOUVTVRZUVDUVOQZUUOUXIUWCUWIUU
+      OUUFLPZUNZUUMUBUXLUPZSZLRWGZUXIUUQUUOUXPUVAUXOUUOLUUJRUXLUUJQUX
+      MUUKUXNUUNUXLUUJUUFXMUUMUBUXLUUJXNXOXPXQBCLUBDFGUUFIUAVCZWIXRXI
+      UUOUWAUWBUWIXSUXHUXGUWAUXJUUOUWAUWBUWIYAUUBUVOUVTWCXRUXIUWBSUWI
+      UXJSUXKKUCCBDLUAUFGUVBYBYCYDYEYIUUBUVOUUFUUSCVCYFTUVOUVLYGTYHYJ
+      YKYLCUUBUVMYSYMTUUCUVMUVLUUFUXQYNVFYRTYOTYPYQ $.
   $}
 
   ${
@@ -54193,13 +54207,14 @@ $)
   ${
     $d f g u w x y z G $.
     tfrex.1 $e |- F = recs ( G ) $.
-    tfrex.2 $e |- ( Fun G /\ ( G ` x ) e. _V ) $.
+    tfrex.2 $e |- ( ph -> A. x ( Fun G /\ ( G ` x ) e. _V ) ) $.
     $( The transfinite recursion function is set-like if the input is.
        (Contributed by Mario Carneiro, 3-Jul-2019.) $)
-    tfrex $p |- ( A e. V -> ( F ` A ) e. _V ) $=
-      ( vy vg vz vu vf wcel cfv crecs cvv fveq1i cv wfn cres wceq wral con0 cab
-      wa wrex eqid tfrlem3 tfrexlem syl5eqel ) BEMBCNBDOZNPBCUKFQAHIRZJRZSKRZUL
-      NULUNTDNUAKUMUBUEJUCUFIUDZBLDEJKAHUOILDUOUGUHGUIUJ $.
+    tfrex $p |- ( ( ph /\ A e. V ) -> ( F ` A ) e. _V ) $=
+      ( vy vg vz vu vf wcel wa cfv crecs cvv fveq1i cv cres wceq wral
+      wfn con0 wrex cab eqid tfrlem3 tfrexlem syl5eqel ) ACFNOCDPCEQZ
+      PRCDULGSABIJTZKTZUDLTZUMPUMUOUAEPUBLUNUCOKUEUFJUGZCMEFKLBIUPJME
+      UPUHUIHUJUK $.
   $}
 
 $(
@@ -54294,6 +54309,17 @@ $)
   $}
 
   ${
+    $d A g x y $.  $d F g x y $.  $d V g y $.
+    rdgexgg.1 $e |- F Fn _V $.
+    $( The recursive definition generator produces a set on a set input.
+       (Contributed by Jim Kingdon, 4-Jul-2019.) $)
+    rdgexgg $p |- ( ( A e. V /\ B e. W ) -> ( rec ( F , A ) ` B ) e. _V ) $=
+      ( vy vg vx wcel crdg cvv cv cdm cfv ciun cun cmpt df-irdg wfun wa alrimiv
+      rdgruledefg tfrex ) ADJZGBCAKHLAIHMZNIMUFOCOPQRZEIHCASUEUGTGMUGOLJUAGIAGH
+      CDFUCUBUD $.
+  $}
+
+  ${
     $d x y z f g u v w F $.  $d x y z f g u v w A $.  $d B g x $.
     rdgifnon.1 $e |- A e. _V $.
     rdgifnon.2 $e |- F Fn _V $.
@@ -54384,8 +54410,7 @@ $)
     $( The recursive definition generator produces a set on a set input.
        (Contributed by Mario Carneiro, 3-Jul-2019.) $)
     rdgexg $p |- ( B e. V -> ( rec ( F , A ) ` B ) e. _V ) $=
-      ( vy vg vx crdg cvv cv cdm cfv ciun cun cmpt df-irdg rdgruledef tfrex ) G
-      BCAJHKAIHLZMILUANCNOPQDIHCARIAGHCEFST $.
+      ( cvv wcel crdg cfv rdgexgg mpan ) AGHBDHBCAIJGHEABCGDFKL $.
 
     ${
       $d A x $.  $d B x $.  $d F x $.
