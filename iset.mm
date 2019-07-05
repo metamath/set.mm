@@ -53565,6 +53565,16 @@ $)
     $d g A $.  $d f g w x y z F $.  $d f w x y z G $.
     tfrlem3.1 $e |- A = { f | E. x e. On ( f Fn x /\
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    $( Lemma for transfinite recursion.  This lemma just changes some bound
+       variables in ` A ` for later use.  (Contributed by NM, 9-Apr-1995.) $)
+    tfrlem3ag $p |- ( G e. _V -> ( G e. A <-> E. z e. On ( G Fn z /\
+                A. w e. z ( G ` w ) = ( F ` ( G |` w ) ) ) ) ) $=
+      ( cv wfn cfv cres wceq wral wa con0 wrex cvv fneq12 simpll simpr reseq12d
+      fveq12d fveq2d eqeq12d simplr cbvraldva2 anbi12d cbvrexdva elab2g ) FJZAJ
+      ZKZBJZULLZULUOMZGLZNZBUMOZPZAQRHCJZKZDJZHLZHVDMZGLZNZDVBOZPZCQRFHESULHNZV
+      AVJACQVKUMVBNZPZUNVCUTVIUMVBULHTVMUSVHBDUMVBVMUOVDNZPZUPVEURVGVOUOVDULHVK
+      VLVNUAZVMVNUBZUDVOUQVFGVOULHUOVDVPVQUCUEUFVKVLVNUGUHUIUJIUK $.
+
     ${
       tfrlem3.2 $e |- G e. _V $.
       $( Lemma for transfinite recursion.  Let ` A ` be the class of
