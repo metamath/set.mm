@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-Jun-2019
+$( iset.mm - Version of 4-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -35766,9 +35766,9 @@ $)
   $}
 
   $( No successor is empty.  (Contributed by Jim Kingdon, 14-Oct-2018.) $)
-  nsuceq0g $p |- ( A e. _V -> suc A =/= (/) ) $=
-    ( cvv wcel csuc c0 wceq noel sucidg eleq2 syl5ibcom mtoi neneqad
-    ) ABCZADZEMNEFZAECZAGMANCOPABHNEAIJKL $.
+  nsuceq0g $p |- ( A e. V -> suc A =/= (/) ) $=
+    ( wcel csuc c0 wceq noel sucidg eleq2 syl5ibcom mtoi neneqad ) AB
+    CZADZEMNEFZAECZAGMANCOPABHNEAIJKL $.
 
   ${
     eqelsuc.1 $e |- A e. _V $.
@@ -37103,7 +37103,7 @@ $)
      postulates for arithmetic.  Proposition 7.30(3) of [TakeutiZaring] p. 42.
      (Contributed by NM, 3-Sep-2003.) $)
   peano3 $p |- ( A e. om -> suc A =/= (/) ) $=
-    ( com wcel cvv csuc c0 wne elex nsuceq0g syl ) ABCADCAEFGABHAIJ $.
+    ( com nsuceq0g ) ABC $.
 
   $( Two natural numbers are equal iff their successors are equal, i.e. the
      successor function is one-to-one.  One of Peano's 5 postulates for
@@ -45478,6 +45478,24 @@ $)
   $}
 
   ${
+    $d x y A $.  $d y B $.  $d x y C $.  $d x y D $.  $d y F $.
+    fvmptss2.1 $e |- ( x = D -> B = C ) $.
+    fvmptss2.2 $e |- F = ( x e. A |-> B ) $.
+    $( A mapping always evaluates to a subset of the substituted expression in
+       the mapping, even if this is a proper class, or we are out of the
+       domain.  (Contributed by Mario Carneiro, 13-Feb-2015.)
+       (Revised by Mario Carneiro, 3-Jul-2019.) $)
+    fvmptss2 $p |- ( F ` D ) C_ C $=
+      ( vy cv wbr wss wi cfv fvss cvv wcel nfcv wceq sylbi funmpt2 funrel ax-mp
+      wfun wrel brrelexi cmpt nfmpt1 nfcxfr nfbr nfv breq1 sseq2d imbi12d df-br
+      nfim cop copab opabid eqimss adantl df-mpt eqtri eleq2s vtoclgf mpcom mpg
+      wa ) EIJZFKZVIDLZMZEFNDLIIEDFOEPQVJVKEVIFFUDFUEABCFHUAFUBUCUFAJZVIFKZVICL
+      ZMVLAEPAERZVJVKAAEVIFVPAFABCUGZHABCUHUIAVIRUJVKAUKUPVMESZVNVJVOVKVMEVIFUL
+      VRCDVIGUMUNVNVMVIUQZFQVOVMVIFUOVOVSVMBQZVICSZVHZAIURZFVSWCQWBVOWBAIUSWAVO
+      VTVICUTVATFVQWCHAIBCVBVCVDTVEVFVG $.
+  $}
+
+  ${
     $d x y A $.  $d y B $.  $d x C y $.  $d x D y $.
     fvmptg.1 $e |- ( x = A -> B = C ) $.
     fvmptg.2 $e |- F = ( x e. D |-> B ) $.
@@ -45545,7 +45563,7 @@ $)
   $}
 
   ${
-    $d x y z A $.  $d y z B $.  $d y D $.  $d y z F $.
+    $d x y z A $.  $d y z B $.  $d y D $.  $d y z F $.  $d y V $.
     fvmpt2.1 $e |- F = ( x e. A |-> B ) $.
     $( Value of a function given by the "maps to" notation.  (Contributed by
        FL, 21-Jun-2010.) $)
@@ -45568,6 +45586,16 @@ $)
       GWBOZWHWLWKWEWGWBWAULWMWJWDVPWMWIWCDWGWBFPQRUMWHWGVNIZWKVNWAWGABCFGUNZUPW
       NVPWJWNVPUOWICDWNWICJZVPWNWGBIZVTUOZWPVTAVNBWOUQWRWICOWPABCMFGURWICUSUTVA
       VBWNWQVPVOVNBWGABCFGVCVDVOABVEVHVIVFVGVJVKWOVLVM $.
+
+    $( Sufficient condition for a maps-to notation to be set-like.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    mptfvex $p |- ( ( A. x B e. V /\ C e. W ) -> ( F ` C ) e. _V ) $=
+      ( vy wcel wal wa cfv csb cvv cv cmpt nfel1 wceq eleq1d wss csbeq1 nfcsb1v
+      nfcv cbvmpt eqtri fvmptss2 elex alimi cbval sylib spcgv syl5 impcom ssexg
+      csbeq1a sylancr ) CFJZAKZDGJZLDEMZADCNZUAVBOJZVAOJIBAIPZCNZVBDEAVDDCUBZEA
+      BCQIBVEQHAIBCVEICUDZAVDCUCZAVDCUPZUEUFUGUTUSVCUSVEOJZIKZUTVCUSCOJZAKVKURV
+      LACFUHUIVLVJAIICOVGRAVEOVHRAPVDSCVEOVITUJUKVJVCIDGVDDSVEVBOVFTULUMUNVAVBO
+      UOUQ $.
   $}
 
   ${
@@ -52315,6 +52343,21 @@ $)
       ( wcel wral cvv cxp wfn elex ralimi wf fmpt2 dffn2 bitr4i sylib ) EGIZBDJ
       ZACJEKIZBDJZACJZFCDLZMZUBUDACUAUCBDEGNOOUEUFKFPUGABCDEKFHQUFFRST $.
 
+    $d R z $.  $d S z $.  $d V z $.
+    $( Sufficient condition for an operation maps-to notation to be set-like.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    mpt2fvex $p |- ( ( A. x A. y C e. V /\ R e. W /\ S e. X ) ->
+      ( R F S ) e. _V ) $=
+      ( vz wcel wal cfv cvv cv csb alimi w3a co cop df-ov c1st c2nd elex wi vex
+      2ndexg nfcv nfcsb1v nfel1 wceq csbeq1a eleq1d spcgf mp2b alrimiv 3ad2ant1
+      syl opexg 3adant1 csn cxp ciun cmpt2 cmpt mpt2mptsx eqtri mptfvex syl2anc
+      1stexg syl5eqel ) EINZBOZAOZFJNZGKNZUAZFGHUBFGUCZHPZQFGHUDVTAMRZUEPZBWCUF
+      PZESZSZQNZMOZWAQNZWBQNVQVRWIVSVQWHMVQWFQNZAOZWHVPWKAVPEQNZBOZWKVOWMBEIUGT
+      WCQNZWEQNWNWKUHMUIZWCQUJWMWKBWEQBWEUKBWFQBWEEULUMBRWEUNEWFQBWEEUOUPUQURVA
+      TWOWDQNWLWHUHWPWCQVMWKWHAWDQAWDUKAWGQAWDWFULUMARZWDUNWFWGQAWDWFUOUPUQURVA
+      USUTVRVSWJVQFGJKVBVCMACWQVDDVEVFZWGWAHQQHABCDEVGMWRWGVHLABMCDEVIVJVKVLVN
+      $.
+
     fnmpt2i.2 $e |- C e. _V $.
     $( Functionality and domain of a class given by the "maps to" notation.
        (Contributed by FL, 17-May-2010.) $)
@@ -52326,6 +52369,14 @@ $)
        17-May-2010.) $)
     dmmpt2 $p |- dom F = ( A X. B ) $=
       ( cxp wfn cdm wceq fnmpt2i fndm ax-mp ) FCDIZJFKPLABCDEFGHMPFNO $.
+
+    mpt2fvexi.3 $e |- R e. _V $.
+    mpt2fvexi.4 $e |- S e. _V $.
+    $( Sufficient condition for an operation maps-to notation to be set-like.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    mpt2fvexi $p |- ( R F S ) e. _V $=
+      ( cvv wcel wal co gen2 mpt2fvex mp3an ) EMNZBOAOFMNGMNFGHPMNTABJQKLABCDEF
+      GHMMMIRS $.
   $}
 
   ${
@@ -53795,33 +53846,36 @@ $)
         TVLFVFWCVQVIVSVKVHVOVDUOWCVRVJLVOVDVHUPUQURUSVBUTVC $.
     $}
 
+    $d g u z C $.
     $( We can define an acceptable function on any ordinal.
 
        As with many of the transfinite recursion theorems, we have a hypothesis
        that states that ` F ` is a function and that it is defined for all
        ordinals.  (Contributed by Jim Kingdon, 4-Mar-2019.)  (Proof shortened
        by Mario Carneiro, 24-May-2019.) $)
-    tfrlemi1 $p |- ( z e. On -> E. g ( g Fn z /\
-        A. u e. z ( g ` u ) = ( F ` ( g |` u ) ) ) ) $=
-      ( vk vw vv cv cfv wceq wral wa wex simpr va vt vh wfn cres fneq12d fveq1d
-      simpl reseq1d fveq2d eqeq12d raleqbidv anbi12d cbvexdva con0 wcel cop csn
-      cun w3a wrex tfrlem3 tfrlem3-2 simplr eleq1d simpll opeq12d sneqd uneq12d
-      cab 3anbi123d cbvrexdva cbvabv fveq12d reseq12d adantr cbvraldva2 cbvralv
-      sylib tfrlemiex ex tfis2 ) GNZCNZUDZDNZWCOZWCWFUEZHOZPZDWDQZRZGSZKNZLNZUD
-      ZWFWNOZWNWFUEZHOZPZDWOQZRZKSZCLWDWOPZWLXBGKXDWCWNPZRZWEWPWKXAXFWDWOWCWNXD
-      XETZXDXEUHZUFXFWJWTDWDWOXHXFWGWQWIWSXFWFWCWNXGUGXFWHWRHXFWCWNWFXGUIUJUKUL
-      UMUNWDUOUPZXCLWDQZWMXIXJRZCUAMBDEWPWNEUPZUBNZWNWOWNHOZUQZURZUSZPZUTZKSZLW
-      DVAZUBVJGFUCHABCUAEFGHIVBACHJVCYAFNZMNZUDZYBEUPZUCNZYBYCYBHOZUQZURZUSZPZU
-      TZFSZMWDVAUBUCXMYFPZXTYMLMWDYNWOYCPZRZXSYLKFYPWNYBPZRZWPYDXLYEXRYKYRWOYCW
-      NYBYPYQTZYNYOYQVDZUFYRWNYBEYSVEYRXMYFXQYJYNYOYQVFYRWNYBXPYIYSYRXOYHYRWOYC
-      XNYGYTYRWNYBHYSUJVGVHVIUKVKUNVLVMXIXJUHXKXJYDBNZYBOZYBUUAUEZHOZPZBYCQZRZF
-      SZMWDQXIXJTXCUUHLMWDYOXBUUGKFYOYQRZWPYDXAUUFUUIWOYCWNYBYOYQTYOYQUHZUFUUIW
-      TUUEDBWOYCUUIWFUUAPZRZWQUUBWSUUDUULWFUUAWNYBYOYQUUKVDZUUIUUKTZVNUULWRUUCH
-      UULWNYBWFUUAUUMUUNVOUJUKUUIYOUUKUUJVPVQUMUNVRVSVTWAWB $.
+    tfrlemi1 $p |- ( C e. On -> E. g ( g Fn C /\
+        A. u e. C ( g ` u ) = ( F ` ( g |` u ) ) ) ) $=
+      ( vz vk vw vv cv cfv wceq wral wa wex va vt cres con0 fneq2 raleq anbi12d
+      vh wfn exbidv simpr simpl fneq12d fveq1d reseq1d fveq2d eqeq12d raleqbidv
+      cbvexdva wcel cop csn cun w3a wrex tfrlem3 tfrlem3-2 simplr eleq1d simpll
+      cab opeq12d sneqd uneq12d 3anbi123d cbvrexdva fveq12d reseq12d cbvraldva2
+      cbvabv adantr cbvralv sylib tfrlemiex ex tfis2 vtoclga ) GOZKOZUIZCOZWHPZ
+      WHWKUCZHPZQZCWIRZSZGTZWHEUIZWOCERZSZGTKEUDWIEQZWQXAGXBWJWSWPWTWIEWHUEWOCW
+      IEUFUGUJWRLOZMOZUIZWKXCPZXCWKUCZHPZQZCXDRZSZLTZKMWIXDQZWQXKGLXMWHXCQZSZWJ
+      XEWPXJXOWIXDWHXCXMXNUKZXMXNULZUMXOWOXICWIXDXQXOWLXFWNXHXOWKWHXCXPUNXOWMXG
+      HXOWHXCWKXPUOUPUQURUGUSWIUDUTZXLMWIRZWRXRXSSZKUANBCDXEXCDUTZUBOZXCXDXCHPZ
+      VAZVBZVCZQZVDZLTZMWIVEZUBVKGFUHHABKUADFGHIVFAKHJVGYJFOZNOZUIZYKDUTZUHOZYK
+      YLYKHPZVAZVBZVCZQZVDZFTZNWIVEUBUHYBYOQZYIUUBMNWIUUCXDYLQZSZYHUUALFUUEXCYK
+      QZSZXEYMYAYNYGYTUUGXDYLXCYKUUEUUFUKZUUCUUDUUFVHZUMUUGXCYKDUUHVIUUGYBYOYFY
+      SUUCUUDUUFVJUUGXCYKYEYRUUHUUGYDYQUUGXDYLYCYPUUIUUGXCYKHUUHUPVLVMVNUQVOUSV
+      PVTXRXSULXTXSYMBOZYKPZYKUUJUCZHPZQZBYLRZSZFTZNWIRXRXSUKXLUUQMNWIUUDXKUUPL
+      FUUDUUFSZXEYMXJUUOUURXDYLXCYKUUDUUFUKUUDUUFULZUMUURXIUUNCBXDYLUURWKUUJQZS
+      ZXFUUKXHUUMUVAWKUUJXCYKUUDUUFUUTVHZUURUUTUKZVQUVAXGUULHUVAXCYKWKUUJUVBUVC
+      VRUPUQUURUUDUUTUUSWAVSUGUSWBWCWDWEWFWG $.
   $}
 
   ${
-    $d f g h u w x y z A $.  $d f g h u w x y z F $.
+    $d f g h u v w x y z A $.  $d f g h u v w x y z F $.  $d z C $.
     tfrlemi14.1 $e |- A = { f | E. x e. On ( f Fn x /\
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
     tfrlemi14.2 $e |- ( Fun F /\ ( F ` x ) e. _V ) $.
@@ -53836,11 +53890,41 @@ $)
       syl exlimddv eliun ssriv cuni recsfval dmeqi dmuni eqtri sseqtr4i eqssi )
       EUAZMZNWLUBWLNUCABCDEFUDWLUEUFNHCHOZMZUGZWLINWOIOZNPZWPWNPZHCQZWPWOPWQJOZ
       WPUHZKOZWTRWTXBUIERSZKWPUJZTZWSJWTLOZUHZXCKXFUJZTZJUKXEJUKLWPNXFWPSZXIXEJ
-      XJXGXAXHXDXFWPWTULXCKXFWPUMUNZUQABLKCDJEFGUOUPWQXETZWTWPWTERZURZUSZUTZCPW
-      PXPMZPZWSXLABICDJEFGWQXEVAWQXAXDVBXLXILNQWTCPXIXELWPNXKVCABLKCDEWTFJVDVEV
-      FVGXLXNXPPZXRXNXOPXSXLXNWPXMIVDZEVHXMVIPAJEGVJVKZVLVMXNXOWTVNVOWPXMXPXTYA
-      VPVTWRXRHXPCWMXPSWNXQWPWMXPVQVRVCVSWAHWPCWNWBVFWCWLCWDZMWOWKYBABCDEFWEWFH
-      CWGWHWIWJ $.
+      XJXGXAXHXDXFWPWTULXCKXFWPUMUNZUQABKCXFDJEFGUOUPWQXETZWTWPWTERZURZUSZUTZCP
+      WPXPMZPZWSXLABICDJEFGWQXEVAWQXAXDVBXLXILNQWTCPXIXELWPNXKVCABLKCDEWTFJVDVE
+      VFVGXLXNXPPZXRXNXOPXSXLXNWPXMIVDZEVHXMVIPAJEGVJVKZVLVMXNXOWTVNVOWPXMXPXTY
+      AVPVTWRXRHXPCWMXPSWNXQWPWMXPVQVRVCVSWAHWPCWNWBVFWCWLCWDZMWOWKYBABCDEFWEWF
+      HCWGWHWIWJ $.
+
+    $( The transfinite recursion function is set-like if the input is.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    tfrexlem $p |- ( C e. V -> ( recs ( F ) ` C ) e. _V ) $=
+      ( vz vg vw vu vv cv wcel wceq con0 wa syl crecs cfv cvv fveq2 eleq1d csuc
+      vh cin cuni wfn cres wral wex word inss2 ssorduni ax-mp sucex inex1 uniex
+      wss vex elon2 mpbir2an tfrlem3 tfrlem3-2 tfrlemi1 crn wbr wi wal recsfval
+      cop breqi df-br eluni 3bitri cdm sucid wrex simpr tfrlem3a simprl simprrl
+      sylib simpll fnop syl2anc onelon rexlimddv adantl suceloni onss df-ss wtr
+      unieqd eloni ordtr 3syl eqtrd syl5eleqr fndm ad2antrr eleqtrrd eldm fneq2
+      unisuc raleq anbi12d rspcev mpan simplrr simplrl tfrlem5 syl22anc breqtrd
+      sylibr imp exlimddv brelrn elssuni ex exlimdv syl5bi alrimiv fvss exlimiv
+      rnex ssex mp2b vtoclg ) JOZFUAZUBZUCPZDYMUBZUCPJDGYLDQYNYPUCYLDYMUDUEYLUF
+      ZUFZRUHZUIZRPZKOZYTUJZLOZUUBUBUUBUUDUKFUBQZLYTULZSZKUMYOUUAYTUNZYTUCPYSRV
+      AUUHYRRUOYSUPUQYSYRRYQYLJVBZURZURUSUTYTVCVDZJMLCYTNKFABJMCENFHVEZAJFIVFVG
+      UUGYOKUUGYNUUBVHZUIZVAZYOUUGYLBOZYMVIZUUPUUNVAZVJZBVKUUOUUGUUSBUUQYLUUPVM
+      ZUGOZPZUVACPZSZUGUMZUUGUURUUQYLUUPCUIZVIUUTUVFPUVEYLUUPYMUVFJMCNFUULVLVNY
+      LUUPUVFVOUGUUTCVPVQUUGUVDUURUGUUGUVDUURUUGUVDSZUUPUUMPZUURUVGYLUUPUUBVIZU
+      VHUVGYLAOZUUBVIZUVIAUVGYLUUBVRZPUVKAUMUVGYLYTUVLUVGYLYQYTYLUUIVSUVGYTYRUI
+      ZYQUVGYSYRUVGYRRVAZYSYRQUVGYRRPZUVNUVGYQRPZUVOUVGYLRPZUVPUVDUVQUUGUVDUVAN
+      OZUJZMOZUVAUBUVAUVTUKFUBQMUVRULZSZUVQNRUVDUVCUWBNRVTUVBUVCWAABNMCEFUVAHUG
+      VBWBWEUVDUVRRPZUWBSZSZUWCYLUVRPZUVQUVDUWCUWBWCUWEUVSUVBUWFUVDUWCUVSUWAWDU
+      VBUVCUWDWFUVRYLUUPUVAWGWHUVRYLWIWHWJWKYLWLTZYQWLTYRWMTYRRWNWEWPUVGYQWOZUV
+      MYQQUVGUVPYQUNUWHUWGYQWQYQWRWSYQUUJXGWEWTXAUUCUVLYTQUUFUVDYTUUBXBXCXDAYLU
+      UBUUIXEWEUVGUVKSZYLUVJUUPUUBUVGUVKWAZUWIUUBCPZUVCUVKYLUUPUVAVIZUVJUUPQZUU
+      GUWKUVDUVKUUGUUBUVRUJZUUELUVRULZSZNRVTZUWKUUAUUGUWQUUKUWPUUGNYTRUVRYTQUWN
+      UUCUWOUUFUVRYTUUBXFUUELUVRYTXHXIXJXKABNLCEFUUBHKVBZWBXQXCUUGUVBUVCUVKXLUW
+      JUWIUVBUWLUUGUVBUVCUVKXMYLUUPUVAVOXQUWKUVCSUVKUWLSUWMJMBACNKUGFUULXNXRXOX
+      PXSYLUUPUUBUUIBVBXTTUUPUUMYATYBYCYDYEBYLUUNYMYFTYNUUNUUMUUBUWRYHUTYITYGYJ
+      YK $.
   $}
 
   ${
@@ -53904,6 +53988,18 @@ $)
       XNOXCWEXJMZXLWBCHIZXNXOXCSACDEFUJZGHWCBCUKULWEXJDRUMUNUPTUQXIWJXLSZXHXEWO
       XRXEWOWGWIXKMZOZXRXEXEWOXSQZOWOXTQXEYAAWCCDEFURUSWOWGXSUTVAWDWFWIXKVBVGTV
       CVDVEVFVHVIVJVKVLVMVNVOVPVQWBWLWKWBXPWLWKSXQAHBCVRVSVTWA $.
+  $}
+
+  ${
+    $d f g u w x y z G $.
+    tfrex.1 $e |- F = recs ( G ) $.
+    tfrex.2 $e |- ( Fun G /\ ( G ` x ) e. _V ) $.
+    $( The transfinite recursion function is set-like if the input is.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    tfrex $p |- ( A e. V -> ( F ` A ) e. _V ) $=
+      ( vy vg vz vu vf wcel cfv crecs cvv fveq1i cv wfn cres wceq wral con0 cab
+      wa wrex eqid tfrlem3 tfrexlem syl5eqel ) BEMBCNBDOZNPBCUKFQAHIRZJRZSKRZUL
+      NULUNTDNUAKUMUBUEJUCUFIUDZBLDEJKAHUOILDUOUGUHGUIUJ $.
   $}
 
 $(
@@ -53990,6 +54086,21 @@ $)
       ( vf vg vx crdg cvv cv cdm cfv ciun cun cmpt df-irdg rdgruledef tfri1 ) EBAH
       FIAGFJZKGJSLBLMNOGFBAPGAEFBCDQR $.
 
+    $( Value of the recursive definition generator.  (Contributed by Jim
+       Kingdon, 11-Jun-2019.) $)
+    rdgival $p |- ( B e. On -> ( rec ( F , A ) ` B ) =
+        ( A u. U_ x e. dom ( rec ( F , A ) |` B )
+          ( F ` ( ( rec ( F , A ) |` B ) ` x ) ) ) ) $=
+      ( vg vy con0 wcel cfv cvv cv cdm ciun cun wceq mpan wral syl2anc dmresexg
+      crdg cres cmpt df-irdg rdgruledef tfri2 wfun rdgfun resfunexg vex sylancl
+      fvexg ralrimivw wfn funfvex funfni ralimi iunexg unexg sylancr dmeq fveq1
+      syl fveq2d iuneq12d uneq2d eqid fvmptg eqtrd ) CIJZCDBUBZKVLCUCZGLBAGMZNZ
+      AMZVNKZDKZOZPZUDZKZBAVMNZVPVMKZDKZOZPZHCVLWAAGDBUEABHGDEFUFUGVKVMLJZWGLJZ
+      WBWGQVLUHVKWHBDUIVLCIUJRZVKBLJWFLJZWIEVKWCLJWELJZAWCSZWKVLCIUAVKWDLJZAWCS
+      WMVKWNAWCVKWHVPLJWNWJAUKVPVMLLUMULUNWNWLAWCDLUOWNWLFWLLWDDWDDUPUQRURVDAWC
+      WELLUSTBWFLLUTVAGVMVTWGLLWAVNVMQZVSWFBWOAVOWCVRWEVNVMVBWOVQWDDVPVNVMVCVEV
+      FVGWAVHVITVJ $.
+
     $( The initial value of the recursive definition generator.  (Contributed
        by NM, 23-Apr-1995.)  (Revised by Mario Carneiro, 14-Nov-2014.) $)
     rdg0 $p |- ( rec ( F , A ) ` (/) ) = A $=
@@ -54017,21 +54128,267 @@ $)
     rdgisuc1 $p |- ( B e. On -> ( rec ( F , A ) ` suc B ) =
         ( A u. ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
           u. ( F ` ( rec ( F , A ) ` B ) ) ) ) ) $=
-      ( vg vf con0 wcel cfv cdm cv ciun cun cvv wceq syl fveq2d uneq2d suceloni
-      csuc crdg cres cmpt df-irdg rdgruledef wfun rdgfun resfunexg sylancr wral
-      tfri2 vex fvexg sylancl ralrimivw wfn funfvex funfni mpan ralimi dmresexg
-      wi iunexg ex sylc unexg dmeq fveq1 iuneq12d eqid fvmptg syl2anc eqtrd wss
-      onss rdgifnon fndm ax-mp syl6sseqr ssdmres sylib csn df-suc iuneq1 iunxun
-      iuneq1d eqtri fveq2 iunxsng sucidg fvres syl5eq 3eqtrd ) CIJZCUBZDBUCZKZB
-      AWRWQUDZLZAMZWTKZDKZNZOZBAWQXDNZOBACXDNZCWRKZDKZOZOWPWSWTGPBAGMZLZXBXLKZD
-      KZNZOZUEZKZXFWPWQIJZWSXSQCUAZHWQWRXRAGDBUFABHGDEFUGUMRWPWTPJZXFPJZXSXFQWP
-      WRUHXTYBBDUIYAWRWQIUJUKZWPBPJXEPJZYCEWPXTXDPJZAXAULZYEYAWPXCPJZAXAULYGWPY
-      HAXAWPYBXBPJYHYDAUNXBWTPPUOUPUQYHYFAXADPURYHYFFYFPXCDXCDUSUTVAVBRXTXAPJZY
-      GYEVDWRWQIVCYIYGYEAXAXDPPVEVFRVGBXEPPVHUKGWTXQXFPPXRXLWTQZXPXEBYJAXMXAXOX
-      DXLWTVIYJXNXCDXBXLWTVJSVKTXRVLVMVNVOWPXEXGBWPAXAWQXDWPWQWRLZVPXAWQQWPWQIY
-      KWPXTWQIVPYAWQVQRWRIURYKIQBDEFVRIWRVSVTWAWQWRWBWCWHTWPXGXKBWPXGXHACWDZXDN
-      ZOZXKXGACYLOZXDNZYNWQYOQXGYPQCWEAWQYOXDWFVTACYLXDWGWIWPYMXJXHWPYMCWTKZDKZ
-      XJACXDYRIXBCQXCYQDXBCWTWJSWKWPYQXIDWPCWQJYQXIQCIWLCWQWRWMRSVOTWNTWO $.
+      ( con0 wcel csuc crdg cfv cdm ciun cun wceq ax-mp uneq2d fveq2d
+      syl wss cres cv suceloni rdgival onss wfn rdgifnon fndm ssdmres
+      syl6sseqr sylib iuneq1d df-suc iuneq1 iunxun eqtri fveq2 sucidg
+      csn iunxsng fvres eqtrd syl5eq 3eqtrd ) CGHZCIZDBJZKZBAVGVFUAZL
+      ZAUBZVIKZDKZMZNZBAVFVMMZNBACVMMZCVGKZDKZNZNVEVFGHZVHVOOCUCZABVF
+      DEFUDSVEVNVPBVEAVJVFVMVEVFVGLZTVJVFOVEVFGWCVEWAVFGTWBVFUESVGGUF
+      WCGOBDEFUGGVGUHPUJVFVGUIUKULQVEVPVTBVEVPVQACUSZVMMZNZVTVPACWDNZ
+      VMMZWFVFWGOVPWHOCUMAVFWGVMUNPACWDVMUOUPVEWEVSVQVEWECVIKZDKZVSAC
+      VMWJGVKCOVLWIDVKCVIUQRUTVEWIVRDVECVFHWIVROCGURCVFVGVASRVBQVCQVD
+      $.
+
+    $( The initial value is a subset of the recursive definition generator
+       evaluated at any ordinal.  This is a consequence of the way that
+       ~ df-irdg handles the initial value.  (Contributed by Jim Kingdon,
+       11-Jun-2019.) $)
+    rdg0ss $p |- ( B e. On -> A C_ ( rec ( F , A ) ` B ) ) $=
+      ( vx con0 wcel crdg cres cdm cv cfv cun ssun1 rdgival syl5sseqr
+      ciun ) BGHAFCAIZBJZKFLTMCMRZNABSMAUAOFABCDEPQ $.
+
+    $( The recursive definition generator produces a set on a set input.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    rdgexg $p |- ( B e. V -> ( rec ( F , A ) ` B ) e. _V ) $=
+      ( vy vg vx crdg cvv cv cdm cfv ciun cun cmpt df-irdg rdgruledef tfrex ) G
+      BCAJHKAIHLZMILUANCNOPQDIHCARIAGHCEFST $.
+
+    ${
+      $d A x $.  $d B x $.  $d F x $.
+      rdgisuc2.inc $e |- A. x x C_ ( F ` x ) $.
+      $( The value of the recursive definition generator.
+
+         Given the hypothesis that the characteristic function is increasing,
+         we can remove the initial value from ~ rdgisuc1 by using ~ rdg0ss .
+         (Contributed by Jim Kingdon, 15-Jun-2019.) $)
+      rdgisuc2 $p |- ( B e. On -> ( rec ( F , A ) ` suc B ) =
+          ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
+            u. ( F ` ( rec ( F , A ) ` B ) ) ) ) $=
+        ( con0 wcel csuc crdg cfv cv cres ciun cun rdgisuc1 wss wceq cvv rdg0ss
+        un12 wal rdgifnon funfvex funfni mpan id fveq2 sseq12d spcgv ee10 sstrd
+        wfn ssequn1 sylib uneq2d syl5eq eqtrd ) CHIZCJZDBKZLBACAMZVBVANLDLOZCVB
+        LZDLZPZPZVGABCDEFQUTVHVDBVFPZPVGBVDVFUBUTVIVFVDUTBVFRVIVFSUTBVEVFBCDEFU
+        AUTVETIZVCVCDLZRZAUCVEVFRZVBHUNUTVJBDEFUDVJHCVBCVBUEUFUGGVLVMAVETVCVESZ
+        VCVEVKVFVNUHVCVEDUIUJUKULUMBVFUOUPUQURUS $.
+    $}
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordinal arithmetic
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+  $c 1o $. $( The ordinal number 1 $)
+  $c 2o $. $( The ordinal number 2 $)
+  $c 3o $. $( The ordinal number 3 $)
+  $c 4o $. $( The ordinal number 4 $)
+  $c +o $.  $( Ordinal addition operation (plus subscript o) $)
+  $c .o $.  $( Ordinal multiplication operation (center dot subscript o) $)
+  $c ^oi $.  $( Ordinal exponentiation operation (caret subscript oi) $)
+
+  $( Extend the definition of a class to include the ordinal number 1. $)
+  c1o $a class 1o $.
+
+  $( Extend the definition of a class to include the ordinal number 2. $)
+  c2o $a class 2o $.
+
+  $( Extend the definition of a class to include the ordinal number 3. $)
+  c3o $a class 3o $.
+
+  $( Extend the definition of a class to include the ordinal number 4. $)
+  c4o $a class 4o $.
+
+  $( Extend the definition of a class to include the ordinal addition
+     operation. $)
+  coa $a class +o $.
+
+  $( Extend the definition of a class to include the ordinal multiplication
+     operation. $)
+  comu $a class .o $.
+
+  $( Extend the definition of a class to include the ordinal exponentiation
+     operation. $)
+  coei $a class ^oi $.
+
+  $( Define the ordinal number 1.  (Contributed by NM, 29-Oct-1995.) $)
+  df-1o $a |- 1o = suc (/) $.
+
+  $( Define the ordinal number 2.  (Contributed by NM, 18-Feb-2004.) $)
+  df-2o $a |- 2o = suc 1o $.
+
+  $( Define the ordinal number 3.  (Contributed by Mario Carneiro,
+     14-Jul-2013.) $)
+  df-3o $a |- 3o = suc 2o $.
+
+  $( Define the ordinal number 4.  (Contributed by Mario Carneiro,
+     14-Jul-2013.) $)
+  df-4o $a |- 4o = suc 3o $.
+
+  ${
+    $d x y z $.
+    $( Define the ordinal addition operation.  (Contributed by NM,
+       3-May-1995.) $)
+    df-oadd $a |- +o = ( x e. On , y e. On |->
+                ( rec ( ( z e. _V |-> suc z ) , x ) ` y ) ) $.
+
+    $( Define the ordinal multiplication operation.  (Contributed by NM,
+       26-Aug-1995.) $)
+    df-omul $a |- .o = ( x e. On , y e. On |->
+                ( rec ( ( z e. _V |-> ( z +o x ) ) , (/) ) ` y ) ) $.
+
+    $( Define the ordinal exponentiation operation.  (Contributed by NM,
+       30-Dec-2004.) $)
+    df-oexpi $a |- ^oi = ( x e. On , y e. On |->
+                 ( rec ( ( z e. _V |-> ( z .o x ) ) , 1o ) ` y ) ) $.
+  $}
+
+  $( Ordinal 1 is an ordinal number.  (Contributed by NM, 29-Oct-1995.) $)
+  1on $p |- 1o e. On $=
+    ( c1o c0 csuc con0 df-1o 0elon onsuci eqeltri ) ABCDEBFGH $.
+
+  $( Ordinal 2 is an ordinal number.  (Contributed by NM, 18-Feb-2004.)  (Proof
+     shortened by Andrew Salmon, 12-Aug-2011.) $)
+  2on $p |- 2o e. On $=
+    ( c2o c1o csuc con0 df-2o 1on onsuci eqeltri ) ABCDEBFGH $.
+
+  $( Ordinal two is not zero.  (Contributed by Scott Fenton, 17-Jun-2011.) $)
+  2on0 $p |- 2o =/= (/) $=
+    ( c2o c1o csuc c0 df-2o con0 wcel wne 1on nsuceq0g ax-mp eqnetri
+    ) ABCZDEBFGMDHIBFJKL $.
+
+  $( Ordinal 3 is an ordinal number.  (Contributed by Mario Carneiro,
+     5-Jan-2016.) $)
+  3on $p |- 3o e. On $=
+    ( c3o c2o csuc con0 df-3o 2on onsuci eqeltri ) ABCDEBFGH $.
+
+  $( Ordinal 3 is an ordinal number.  (Contributed by Mario Carneiro,
+     5-Jan-2016.) $)
+  4on $p |- 4o e. On $=
+    ( c4o c3o csuc con0 df-4o 3on onsuci eqeltri ) ABCDEBFGH $.
+
+  $( Expanded value of the ordinal number 1.  (Contributed by NM,
+     4-Nov-2002.) $)
+  df1o2 $p |- 1o = { (/) } $=
+    ( c1o c0 csuc csn df-1o suc0 eqtri ) ABCBDEFG $.
+
+  $( Expanded value of the ordinal number 2.  (Contributed by Mario Carneiro,
+     14-Aug-2015.) $)
+  df2o3 $p |- 2o = { (/) , 1o } $=
+    ( c2o c1o csuc csn cun c0 cpr df-2o df-suc df1o2 uneq1i df-pr eqtr4i 3eqtri
+    ) ABCBBDZEZFBGZHBIPFDZOEQBROJKFBLMN $.
+
+  $( Expanded value of the ordinal number 2.  (Contributed by NM,
+     29-Jan-2004.) $)
+  df2o2 $p |- 2o = { (/) , { (/) } } $=
+    ( c2o c0 c1o cpr csn df2o3 df1o2 preq2i eqtri ) ABCDBBEZDFCJBGHI $.
+
+  $( Ordinal one is not equal to ordinal zero.  (Contributed by NM,
+     26-Dec-2004.) $)
+  1n0 $p |- 1o =/= (/) $=
+    ( c1o c0 csn df1o2 0ex snnz eqnetri ) ABCBDBEFG $.
+
+  $( Cartesian products with the singletons of ordinals 0 and 1 are disjoint.
+     (Contributed by NM, 2-Jun-2007.) $)
+  xp01disj $p |- ( ( A X. { (/) } ) i^i ( C X. { 1o } ) ) = (/) $=
+    ( c0 c1o wne csn cxp cin wceq 1n0 necomi xpsndisj ax-mp ) CDEACFGBDFGHCIDCJ
+    KACBDLM $.
+
+  $( Two ways to express that an ordinal class is positive.  (Contributed by
+     NM, 21-Dec-2004.) $)
+  ordgt0ge1 $p |- ( Ord A -> ( (/) e. A <-> 1o C_ A ) ) $=
+    ( word c0 wcel csuc wss c1o con0 0elon ordelsuc mpan df-1o sseq1i syl6bbr
+    wb ) ABZCADZCEZAFZGAFCHDPQSOICAHJKGRALMN $.
+
+  $( An ordinal greater than or equal to 1 is nonzero.  (Contributed by Jim
+     Kingdon, 26-Jun-2019.) $)
+  ordge1n0im $p |- ( Ord A -> ( 1o C_ A -> A =/= (/) ) ) $=
+    ( word c1o wss c0 wcel wne ordgt0ge1 ne0i syl6bir ) ABCADEAFAEGAH
+    AEIJ $.
+
+  $( Membership in ordinal one.  (Contributed by NM, 5-Jan-2005.) $)
+  el1o $p |- ( A e. 1o <-> A = (/) ) $=
+    ( c1o wcel c0 csn wceq df1o2 eleq2i 0ex elsnc2 bitri ) ABCADEZCADFBLAGHADIJ
+    K $.
+
+  $( Two ways to say that ` A ` is a nonzero number of the set ` B ` .
+     (Contributed by Mario Carneiro, 21-May-2015.) $)
+  dif1o $p |- ( A e. ( B \ 1o ) <-> ( A e. B /\ A =/= (/) ) ) $=
+    ( c1o cdif wcel c0 csn wne wa df1o2 difeq2i eleq2i eldifsn bitri ) ABCDZEAB
+    FGZDZEABEAFHIOQACPBJKLABFMN $.
+
+  $( Closure of the pair swapping function on ` 2o ` .  (Contributed by Mario
+     Carneiro, 27-Sep-2015.) $)
+  2oconcl $p |- ( A e. 2o -> ( 1o \ A ) e. 2o ) $=
+    ( c1o cdif c2o wcel c0 cpr wceq wo elpri difeq2 syl6eq difid orim12i orcomd
+    dif0 syl con0 cvv df2o3 1on difexg ax-mp elpr sylibr syl6eleqr eleq2s ) BAC
+    ZDEAFBGZDAUIEZUHUIDUJUHFHZUHBHZIZUHUIEUJAFHZABHZIZUMAFBJUPULUKUNULUOUKUNUHB
+    FCBAFBKBPLUOUHBBCFABBKBMLNOQUHFBBREUHSEUABARUBUCUDUETUFTUG $.
+
+  $( Ordinal zero is less than ordinal one.  (Contributed by NM,
+     5-Jan-2005.) $)
+  0lt1o $p |- (/) e. 1o $=
+    ( c0 c1o wcel wceq eqid el1o mpbir ) ABCAADAEAFG $.
+
+  ${
+    $d x z $.
+    sucinc.1 $e |- F = ( z e. _V |-> suc z ) $.
+    $( Successor is increasing.  (Contributed by Jim Kingdon, 25-Jun-2019.) $)
+    sucinc $p |- A. x x C_ ( F ` x ) $=
+      ( cv cfv wss csuc sssucid cvv wcel vex sucex suceq fvmptg mp2an
+      wceq sseqtr4i ax-gen ) AEZTCFZGATTHZUATITJKUBJKUAUBQALZTUCMBTBE
+      ZHUBJJCUDTNDOPRS $.
+  $}
+
+  ${
+    $d x y z $.
+    $( Functionality and domain of ordinal addition.  (Contributed by NM,
+       26-Aug-1995.)  (Proof shortened by Mario Carneiro, 3-Jul-2019.) $)
+    fnoa $p |- +o Fn ( On X. On ) $=
+      ( vy vz vx cv cvv csuc cmpt crdg cfv wcel con0 wral coa cxp wfn vex sucex
+      eqid ax-mp rgenw fnmpti rdgexg df-oadd fnmpt2 ) ADZBEBDZFZGZCDZHIZEJZAKLZ
+      CKLMKKNOULCKUKAKUEEJUKAPUIUEUHECPBEUGUHUFBPQUHRUAUBSTTCAKKUJMECABUCUDS $.
+
+    $( Ordinal addition is a set.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    oaexg $p |- ( ( A e. V /\ B e. W ) -> ( A +o B ) e. _V ) $=
+      ( vy vz vx cv cvv csuc cmpt crdg cfv wcel wal coa co vex sucex con0 ax-mp
+      eqid fnmpti rdgexg gen2 df-oadd mpt2fvex mp3an1 ) EHZFIFHZJZKZGHZLMZINZEO
+      GOACNBDNABPQINUOGEUIINUOERUMUIULIGRFIUKULUJFRSULUBUCUDUAUEGETTUNABPICDGEF
+      UFUGUH $.
+
+    $( Functionality and domain of ordinal multiplication.  (Contributed by NM,
+       26-Aug-1995.)  (Revised by Mario Carneiro, 3-Jul-2019.) $)
+    fnom $p |- .o Fn ( On X. On ) $=
+      ( vx vy vz con0 cv cvv coa co cmpt c0 crdg cfv comu df-omul vex 0ex oaexg
+      wcel mp2an eqid fnmpti rdgexg ax-mp fnmpt2i ) ABDDBEZCFCEZAEZGHZIZJKLZMAB
+      CNUEFRUJFRBOJUEUIFPCFUHUIUFFRUGFRUHFRCOAOUFUGFFQSUITUAUBUCUD $.
+
+    $( Ordinal multiplication is a set.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    omexg $p |- ( ( A e. V /\ B e. W ) -> ( A .o B ) e. _V ) $=
+      ( vy vz vx cv cvv coa co cmpt c0 crdg cfv wcel wal comu vex con0 0ex eqid
+      oaexg mp2an fnmpti rdgexg ax-mp gen2 df-omul mpt2fvex mp3an1 ) EHZFIFHZGH
+      ZJKZLZMNOZIPZEQGQACPBDPABRKIPURGEULIPURESMULUPIUAFIUOUPUMIPUNIPUOIPFSGSUM
+      UNIIUCUDUPUBUEUFUGUHGETTUQABRICDGEFUIUJUK $.
+
+    $( Functionality and domain of ordinal exponentiation.  (Contributed by
+       Mario Carneiro, 29-May-2015.)
+       (Revised by Mario Carneiro, 3-Jul-2019.) $)
+    fnoei $p |- ^oi Fn ( On X. On ) $=
+      ( vx vy vz con0 cv cvv comu co cmpt c1o crdg cfv coei df-oexpi wcel elexi
+      vex 1on omexg mp2an eqid fnmpti rdgexg ax-mp fnmpt2i ) ABDDBEZCFCEZAEZGHZ
+      IZJKLZMABCNUFFOUKFOBQJUFUJFJDRPCFUIUJUGFOUHFOUIFOCQAQUGUHFFSTUJUAUBUCUDUE
+      $.
+
+    $( Ordinal exponentiation is a set.
+       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    oeiexg $p |- ( ( A e. V /\ B e. W ) -> ( A ^oi B ) e. _V ) $=
+      ( vy vz vx cv cvv comu co cmpt c1o crdg cfv wcel wal coei vex con0 fnmpti
+      1on elexi omexg mp2an eqid rdgexg ax-mp gen2 df-oexpi mpt2fvex mp3an1 ) E
+      HZFIFHZGHZJKZLZMNOZIPZEQGQACPBDPABRKIPUSGEUMIPUSESMUMUQIMTUBUCFIUPUQUNIPU
+      OIPUPIPFSGSUNUOIIUDUEUQUFUAUGUHUIGETTURABRICDGEFUJUKUL $.
   $}
 
 $(
@@ -54771,6 +55128,27 @@ htmldef "rec" as
     "<IMG SRC='_rec.gif' WIDTH=21 HEIGHT=19 ALT=' rec' TITLE='rec'>";
   althtmldef "rec" as 'rec';
   latexdef "rec" as "{\rm rec}";
+htmldef "1o" as "<IMG SRC='_1o.gif' WIDTH=13 HEIGHT=19 ALT=' 1o' TITLE='1o'>";
+  althtmldef "1o" as '1<SUB>&#x1D45C;</SUB>';
+  latexdef "1o" as "1_o";
+htmldef "2o" as "<IMG SRC='_2o.gif' WIDTH=14 HEIGHT=19 ALT=' 2o' TITLE='2o'>";
+  althtmldef "2o" as '2<SUB>&#x1D45C;</SUB>';
+  latexdef "2o" as "2_o";
+htmldef "3o" as "<IMG SRC='_3o.gif' WIDTH=14 HEIGHT=19 ALT=' 3o' TITLE='3o'>";
+  althtmldef "3o" as "3<SUB>&#x1D45C;</SUB>"; latexdef "3o" as "3_o";
+htmldef "4o" as "<IMG SRC='_4o.gif' WIDTH=15 HEIGHT=19 ALT=' 4o' TITLE='4o'>";
+  althtmldef "4o" as "4<SUB>&#x1D45C;</SUB>"; latexdef "4o" as "4_o";
+htmldef "+o" as
+    " <IMG SRC='_plo.gif' WIDTH=18 HEIGHT=19 ALT=' +o' TITLE='+o'> ";
+  althtmldef "+o" as ' +<SUB>&#x1D45C;</SUB> ';
+  latexdef "+o" as "+_o";
+htmldef ".o" as
+    " <IMG SRC='_cdo.gif' WIDTH=10 HEIGHT=19 ALT=' .o' TITLE='.o'> ";
+  althtmldef ".o" as ' &middot;<SUB>&#x1D45C;</SUB> ';
+  latexdef ".o" as "\cdot_o";
+htmldef "^oi" as ' &uarr;<SUB>&#x1D45C;</SUB> ';
+  althtmldef "^oi" as ' &uarr;<SUB>&#x1D45C;</SUB> ';
+  latexdef "^oi" as "\uparrow_{oi}";
 
 htmldef "Fun" as
     "<IMG SRC='_fun.gif' WIDTH=25 HEIGHT=19 ALT=' Fun' TITLE='Fun'> ";

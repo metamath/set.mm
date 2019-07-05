@@ -868,6 +868,10 @@ only work within the domain. This is rarely a problem but often means that
 logic must be rearranged, for example by changing ~ rexlimivw to ~ rexlimdva .
 (example: ~ ovelrn or indeed most uses of ~ fnovex and ~ funfvex ).</LI>
 
+<LI>With excluded middle, ` (/) e. A ` and ` A =/= (/) ` are equivalent (where
+` A ` is an ordinal). In such theorems, ` (/) e. A ` is generally the more
+interesting condition constructively.</LI>
+
 <LI>If you get stuck, ask! (for example in a github issue or on the mailing list). We have a number of contributors who have experience in constructive mathematics in general, or iset.mm in particular, and one of the best things about doing/learning mathematics in metamath is the collaborative nature of how we develop it.
 </UL>
 
@@ -886,6 +890,13 @@ with the closest replacements.</P>
 <TH>set.mm</TH>
 <TH>iset.mm</TH>
 <TH>notes</TH>
+</TR>
+
+<TR>
+<TD>ax-3 , con4d , con34b , necon4bd</TD>
+<TD>~ con3 </TD>
+<TD>The form of contraposition which removes negation does not hold
+in intutionistic logic.</TD>
 </TR>
 
 <TR>
@@ -983,6 +994,27 @@ set exists or it does not"
 <TD>~ onelss , ~ eqimss </TD>
 <TD>Taken together, ~ onelss and ~ eqimss represent the reverse direction of
 the biconditional from ordsseleq</TD>
+</TR>
+
+<TR>
+<TD>ordtri3or , ordtri1 , ordtri2 , ordtri3 , ordtri4 , ontri1 ,
+ordtri2or , ordtri2or2 , ordtri2or3
+</TD>
+<TD><I>none</I></TD>
+<TD>Ordinal trichotomy implies the law of the excluded middle as shown
+in ~ ordtriexmid . We don't have similar proofs for every variation of
+of trichotomy but most of them are presumably powerful enough to imply
+excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>ord0eln0</TD>
+<TD>~ ne0i </TD>
+</TR>
+
+<TR>
+<TD>nsuceq0</TD>
+<TD>~ nsuceq0g </TD>
 </TR>
 
 <TR>
@@ -1094,6 +1126,29 @@ the biconditional from ordsseleq</TD>
 <TR>
 <TD>rdgfnon</TD>
 <TD>~ rdgifnon </TD>
+</TR>
+
+<TR>
+<TD>ordge1n0</TD>
+<TD>~ ordge1n0im , ~ ordgt0ge1 </TD>
+</TR>
+
+<TR>
+<TD>ondif1</TD>
+<TD>~ dif1o </TD>
+<TD>In set.mm, ondif1 is used for Cantor Normal Form</TD>
+</TR>
+
+<TR>
+<TD>ondif2 , dif20el</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is not intuitionistic</TD>
+</TR>
+
+<TR>
+<TD>brwitnlem</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is not intuitionistic</TD>
 </TR>
 
 </TABLE>
