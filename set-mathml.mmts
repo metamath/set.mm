@@ -245,7 +245,7 @@ $s class |`t $: <msub href="df-rest.html"><mo>&uharr;</mo> <mi>&#x1D461;</mi></m
 $s class Xt_ $: <msub href="df-pt.html"><mo>&prod;</mo> <mi>&#x1D461;</mi></msub> $.
 $s class Xs_ $: <msub href="df-prds.html"><mo>&#x2a09;</mo> <mi>&#x1D460;</mi></msub> $.
 $s class ^s $: <msub href="df-pws.html"><mo>&uarr;</mo> <mi>&#x1D460;</mi></msub> $.
-$s class RR*s $: <msubsup href="df-xrs.html"><mo>&Ropf;</mo> <mi>&#x1D460;</mi> <mo>*</mo></msub> $.
+$s class RR*s $: <msubsup href="df-xrs.html"><mo>&Ropf;</mo> <mi>&#x1D460;</mi> <mo>*</mo></msubsup> $.
 $s class "s $: <msub href="df-imas.html"><mo>&ldquo;</mo> <mi>&#x1D460;</mi></msub> $.
 $s class /s $: <msub href="df-divs.html"><mo>/</mo> <mi>&#x1D460;</mi></msub> $.
 $s class Xs. $: <msub href="df-xps.html"><mo>&times;</mo> <mi>&#x1D460;</mi></msub> $.
@@ -268,15 +268,6 @@ $s class EEhil $: <msub href="df-ehl.html"> <mi>&Eopf;</mi> <mi>hil</mi> </msub>
 $s class RR^ $: <mi href="df-rrx.html">&Ropf;&uarr;</mi>  $.
 $s class ( RR^ ` A ) $: <msup><mi href="df-rrx.html"> #A# </msup>  $.
 
-$s class RRVec $: <mi href="df-bj-rrvec.html">&Ropf;Vec</mi> $.
-$s class CCbar $: <mover href="df-bj-ccbar.html"><mi>&Copf;</mi> <mo>&oline;</mo></mover> $.
-$s class CCinfty $: <msub href="df-bj-ccinfty"><mi>&Copf;</mi> <mi>&infin;</mi></msub> $.
-$s class prcpal $: <mi href="df-bj-prcpal">prcpal</mi> $.
-$s class Arg $: <mi href="df-bj-arg">Arg</mi> $.
-$s class +cc $: <msub href="df-bj-addc.html"><mo>+</mo> <mover><mi>&Copf;</mi> <mo>&oline;</mo></mover></msub> $.
-$s class -cc $: <msub href="df-bj-oppc.html"><mo>-</mo> <mover><mi>&Copf;</mi> <mo>&oline;</mo></mover></msub> $.
-$s class .cc $: <msub href="df-bj-mulc.html"><mo>&sdot;</mo> <mover><mi>&Copf;</mi> <mo>&oline;</mo></mover></msub> $.
-$s class invc $: <msup href="df-bj-invc.html"><mo>&sdot;</mo> <mn>-1</mn></msup> $.
 
 
 $s class invg $: <msub href="df-minusg.html"><mo>inv</mo> <mo>g</mo></msub> $.
@@ -1291,6 +1282,23 @@ $s class pr2 A $: <mrow><mo href="df-bj-pr2.html">pr2</mo> #A#</mrow> $.
 $s class Diag $: <mo href="df-bj-diag.html">Diag</mo> $.
 $s class ( Diag ` A ) $: <msub><mo href="df-bj-diag.html">Diag</mo> #A#</msub> $.
 $s class inftyexpi $: <mo href="df-bj-inftyexpi.html">inftyexpi</mo> $.
+$s class pinfty $: <mo href="df-bj-pinfty.html">+&infin;</mo> $.
+$s class minfty $: <mo href="df-bj-minfty.html">-&infin;</mo> $.
+$s class RRbar $: <mover href="df-bj-rrbar.html"><mi>&Ropf;</mi> <mo>&oline;</mo></mover> $.
+$s class RRhat $: <mover href="df-bj-rrhat.html"><mi>&Ropf;</mi> <mo>^</mo></mover> $.
+$s class CCbar $: <mover href="df-bj-ccbar.html"><mi>&Copf;</mi> <mo>&oline;</mo></mover> $.
+$s class CChat $: <mover href="df-bj-cchat.html"><mi>&Copf;</mi> <mo>^</mo></mover> $.
+$s class CCinfty $: <msub href="df-bj-ccinfty"><mi>&Copf;</mi> <mi>&infin;</mi></msub> $.
+$s class infty $: <mi href="df-bj-infty">&infin;</mi> $.
+$s class prcpal $: <mi href="df-bj-prcpal">prcpal</mi> $.
+$s class Arg $: <mi href="df-bj-arg">Arg</mi> $.
+$s class +cc $: <msub href="df-bj-addc.html"><mo>+</mo> <mover><mi>&Copf;</mi> <mo>&oline;</mo></mover></msub> $.
+$s class -cc $: <msub href="df-bj-oppc.html"><mo>-</mo> <mover><mi>&Copf;</mi> <mo>&oline;</mo></mover></msub> $.
+$s class .cc $: <msub href="df-bj-mulc.html"><mo>&sdot;</mo> <mover><mi>&Copf;</mi> <mo>&oline;</mo></mover></msub> $.
+$s class invc $: <msup href="df-bj-invc.html"><mo>&sdot;</mo> <mn>-1</mn></msup> $.
+$s class RRVec $: <mi href="df-bj-rrvec.html">&Ropf;Vec</mi> $.
+
+
 $s wff Prv ph $: <mrow><mo href="ax-prv1.html">Prv</mo> #ph#</mrow> $.
 $s wff FF/ x ph $: <mrow> <mo href="df-bj-nf.html">&#8498;&#8498;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
 $s wff if- ( ph , ps , ch ) $: <mrow> <mo href="df-bj-if.html">if</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
