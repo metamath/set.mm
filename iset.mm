@@ -45483,8 +45483,8 @@ $)
     fvmptss2.2 $e |- F = ( x e. A |-> B ) $.
     $( A mapping always evaluates to a subset of the substituted expression in
        the mapping, even if this is a proper class, or we are out of the
-       domain.  (Contributed by Mario Carneiro, 13-Feb-2015.)
-       (Revised by Mario Carneiro, 3-Jul-2019.) $)
+       domain.  (Contributed by Mario Carneiro, 13-Feb-2015.)  (Revised by
+       Mario Carneiro, 3-Jul-2019.) $)
     fvmptss2 $p |- ( F ` D ) C_ C $=
       ( vy cv wbr wss wi cfv fvss cvv wcel nfcv wceq sylbi funmpt2 funrel ax-mp
       wfun wrel brrelexi cmpt nfmpt1 nfcxfr nfbr nfv breq1 sseq2d imbi12d df-br
@@ -54078,6 +54078,22 @@ $)
   $}
 
   ${
+    $d A g $.  $d V g $.  $d g x $.
+    rdgruledefg.1 $e |- F Fn _V $.
+    $( The recursion rule for the recursive definition generator is defined
+       everywhere.  (Contributed by Jim Kingdon, 4-Jul-2019.) $)
+    rdgruledefg $p |- ( A e. V -> (
+        Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
+        /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
+          e. _V ) ) $=
+      ( wcel cv cvv cdm cfv ciun cun cmpt wfun funmpt vex wral funfvex wceq wfn
+      dmex fvex funfni mp2an iunex unexg ralrimivw dmmptg syl syl5eleqr sylancr
+      mpan2 jctil ) BFHZCIZDJBADIZKZAIZURLZELZMZNZOZLJHZVEPZUPVGUQVEKZHVFDJVDQZ
+      UPUQJVHCRUPVDJHZDJSVHJUAUPVJDJUPVCJHVJAUSVBURDRZUCEJUBVAJHVBJHZGUTURJJVKA
+      RUDVLJVAEVAETUEUFUGBVCFJUHUNUIDJVDJUJUKULUQVETUMVIUO $.
+  $}
+
+  ${
     $d x y z f g u v w F $.  $d x y z f g u v w A $.  $d B g x $.
     rdgifnon.1 $e |- A e. _V $.
     rdgifnon.2 $e |- F Fn _V $.
@@ -54368,8 +54384,8 @@ $)
       eqid ax-mp rgenw fnmpti rdgexg df-oadd fnmpt2 ) ADZBEBDZFZGZCDZHIZEJZAKLZ
       CKLMKKNOULCKUKAKUEEJUKAPUIUEUHECPBEUGUHUFBPQUHRUAUBSTTCAKKUJMECABUCUDS $.
 
-    $( Ordinal addition is a set.
-       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    $( Ordinal addition is a set.  (Contributed by Mario Carneiro,
+       3-Jul-2019.) $)
     oaexg $p |- ( ( A e. V /\ B e. W ) -> ( A +o B ) e. _V ) $=
       ( vy vz vx cv cvv csuc cmpt crdg cfv wcel wal coa co vex sucex con0 ax-mp
       eqid fnmpti rdgexg gen2 df-oadd mpt2fvex mp3an1 ) EHZFIFHZJZKZGHZLMZINZEO
@@ -54383,8 +54399,8 @@ $)
       wcel mp2an eqid fnmpti rdgexg ax-mp fnmpt2i ) ABDDBEZCFCEZAEZGHZIZJKLZMAB
       CNUEFRUJFRBOJUEUIFPCFUHUIUFFRUGFRUHFRCOAOUFUGFFQSUITUAUBUCUD $.
 
-    $( Ordinal multiplication is a set.
-       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    $( Ordinal multiplication is a set.  (Contributed by Mario Carneiro,
+       3-Jul-2019.) $)
     omexg $p |- ( ( A e. V /\ B e. W ) -> ( A .o B ) e. _V ) $=
       ( vy vz vx cv cvv coa co cmpt c0 crdg cfv wcel wal comu vex con0 0ex eqid
       oaexg mp2an fnmpti rdgexg ax-mp gen2 df-omul mpt2fvex mp3an1 ) EHZFIFHZGH
@@ -54392,16 +54408,16 @@ $)
       UNIIUCUDUPUBUEUFUGUHGETTUQABRICDGEFUIUJUK $.
 
     $( Functionality and domain of ordinal exponentiation.  (Contributed by
-       Mario Carneiro, 29-May-2015.)
-       (Revised by Mario Carneiro, 3-Jul-2019.) $)
+       Mario Carneiro, 29-May-2015.)  (Revised by Mario Carneiro,
+       3-Jul-2019.) $)
     fnoei $p |- ^oi Fn ( On X. On ) $=
       ( vx vy vz con0 cv cvv comu co cmpt c1o crdg cfv coei df-oexpi wcel elexi
       vex 1on omexg mp2an eqid fnmpti rdgexg ax-mp fnmpt2i ) ABDDBEZCFCEZAEZGHZ
       IZJKLZMABCNUFFOUKFOBQJUFUJFJDRPCFUIUJUGFOUHFOUIFOCQAQUGUHFFSTUJUAUBUCUDUE
       $.
 
-    $( Ordinal exponentiation is a set.
-       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    $( Ordinal exponentiation is a set.  (Contributed by Mario Carneiro,
+       3-Jul-2019.) $)
     oeiexg $p |- ( ( A e. V /\ B e. W ) -> ( A ^oi B ) e. _V ) $=
       ( vy vz vx cv cvv comu co cmpt c1o crdg cfv wcel wal coei vex con0 fnmpti
       1on elexi omexg mp2an eqid rdgexg ax-mp gen2 df-oexpi mpt2fvex mp3an1 ) E
