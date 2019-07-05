@@ -53613,14 +53613,13 @@ $)
 
   ${
     $d x y f g $.  $d x y z $.  $d g z $.  $d f g F $.  $d x z F $.
-    $d ph g x $.
-    tfrlem3-2d.1 $e |- ( ph -> ( Fun F /\ ( F ` x ) e. _V ) ) $.
+    tfrlem3-2d.1 $e |- ( ph -> A. x ( Fun F /\ ( F ` x ) e. _V ) ) $.
     $( Lemma for transfinite recursion which changes a bound variable
        (Contributed by Jim Kingdon, 2-Jul-2019.) $)
     tfrlem3-2d $p |- ( ph -> ( Fun F /\ ( F ` g ) e. _V ) ) $=
-      ( wfun cv cfv cvv wcel wa wal alrimiv nfv nfvd weq wb wi fveq2 eleq1d a1i
-      anbi2d cbvald mpbid 19.21bi ) ADFZCGZDHZIJZKZCAUFBGZDHZIJZKZBLUJCLAUNBEMA
-      UNUJBCACNAUNCOBCPZUNUJQRAUOUMUIUFUOULUHIUKUGDSTUBUAUCUDUE $.
+      ( wfun cv cfv cvv wcel wal weq fveq2 eleq1d anbi2d cbvalv sylib 19.21bi
+      wa ) ADFZCGZDHZIJZSZCATBGZDHZIJZSZBKUDCKEUHUDBCBCLZUGUCTUIUFUBIUEUADMNOPQ
+      R $.
   $}
 
   ${
