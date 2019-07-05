@@ -268,6 +268,8 @@
 "4syl" is used by "bnj1098".
 "4syl" is used by "canthp1lem2".
 "4syl" is used by "cantnf".
+"4syl" is used by "cantnfALT".
+"4syl" is used by "cantnfALTlt2".
 "4syl" is used by "cantnfcl".
 "4syl" is used by "cantnflt2".
 "4syl" is used by "cdlemk45".
@@ -354,7 +356,7 @@
 "4syl" is used by "lssat".
 "4syl" is used by "lssatle".
 "4syl" is used by "lukshef-ax2".
-"4syl" is used by "mapfien".
+"4syl" is used by "mapfienOLD".
 "4syl" is used by "mblfinlem2".
 "4syl" is used by "mdeglt".
 "4syl" is used by "meran1".
@@ -370,6 +372,7 @@
 "4syl" is used by "nrginvrcn".
 "4syl" is used by "odcl2".
 "4syl" is used by "oddprm".
+"4syl" is used by "oemapALTso".
 "4syl" is used by "oemapso".
 "4syl" is used by "oismo".
 "4syl" is used by "ordcmp".
@@ -9272,6 +9275,10 @@
 "mapdval2N" is used by "mapdval4N".
 "mapdval4N" is used by "mapd1dim2lem1N".
 "mapdval4N" is used by "mapdval5N".
+"mapfienOLD" is used by "fcobijfs".
+"mapfienOLD" is used by "mapfien2".
+"mapfienOLD" is used by "oef1o".
+"mapfienOLD" is used by "wemapwe".
 "mappsrpr" is used by "map2psrpr".
 "mappsrpr" is used by "supsrlem".
 "mayete3i" is used by "mayetes3i".
@@ -13324,6 +13331,7 @@
 "w-bnj19" is used by "bnj978".
 "watfvalN" is used by "watvalN".
 "watvalN" is used by "iswatN".
+"wemapso2OLD" is used by "oemapso".
 "wl-a1d" is used by "wl-ax2".
 "wl-a1i" is used by "wl-mpi".
 "wl-ax1" is used by "wl-a1d".
@@ -13504,7 +13512,7 @@ New usage of "4atex2-0bOLDN" is discouraged (0 uses).
 New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
 New usage of "4ipval3" is discouraged (0 uses).
-New usage of "4syl" is discouraged (190 uses).
+New usage of "4syl" is discouraged (193 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
 New usage of "5oalem2" is discouraged (2 uses).
@@ -16371,6 +16379,7 @@ New usage of "mapdval2N" is discouraged (2 uses).
 New usage of "mapdval3N" is discouraged (0 uses).
 New usage of "mapdval4N" is discouraged (2 uses).
 New usage of "mapdval5N" is discouraged (0 uses).
+New usage of "mapfienOLD" is discouraged (4 uses).
 New usage of "mappsrpr" is discouraged (2 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "max1ALT" is discouraged (0 uses).
@@ -17769,6 +17778,7 @@ New usage of "w-bnj17" is discouraged (103 uses).
 New usage of "w-bnj19" is discouraged (8 uses).
 New usage of "watfvalN" is discouraged (1 uses).
 New usage of "watvalN" is discouraged (1 uses).
+New usage of "wemapso2OLD" is discouraged (1 uses).
 New usage of "wl-a1d" is discouraged (1 uses).
 New usage of "wl-a1i" is discouraged (1 uses).
 New usage of "wl-ax1" is discouraged (2 uses).
