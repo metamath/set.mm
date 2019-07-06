@@ -54029,6 +54029,17 @@ $)
         SWFSXHWQBCGILMVBVCZAXFWPXGVDZAXIWPAXCWJWDXEVLVEWDWRWEVFVGWQWTWGLWQXHXFW
         DXCULWTWGSXJXKWQWDWJXCAWJVHZWPWDWJULAWJVITXLPWJVJUKWJWDVKVMAXDWPXEVDVNW
         DWRWEVOVGVPVQVRWOWIFEWJWKWDSZWLWFWNWHWKWDWEWAXMWMWGLWKWDWEVSVPVTWBWC $.
+
+      $( Lemma for ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.)
+         (Proof shortened by Mario Carneiro, 24-May-2019.) $)
+      tfrlemiexd $p |- ( ph ->
+          E. f ( f Fn x /\ A. u e. x ( f ` u ) = ( F ` ( f |` u ) ) ) ) $=
+        ( cvv cv cfv cuni wcel wfn cres wceq wral wa wex tfrlemibexd uniexg syl
+        tfrlemibfnd tfrlemiubaccd jca fneq1 fveq1 reseq1 fveq2d eqeq12d ralbidv
+        anbi12d spcegv sylc ) AHUAZRUBZVDBSZUCZFSZVDTZVDVHUDZLTZUEZFVFUFZUGZISZ
+        VFUCZVHVOTZVOVHUDZLTZUEZFVFUFZUGZIUHAHRUBVEABCDEGHIJKLMNOPQUIHRUJUKAVGV
+        MABCDEGHIJKLMNOPQULABCDEFGHIJKLMNOPQUMUNWBVNIVDRVOVDUEZVPVGWAVMVFVOVDUO
+        WCVTVLFVFWCVQVIVSVKVHVOVDUPWCVRVJLVOVDVHUQURUSUTVAVBVC $.
     $}
   $}
 
