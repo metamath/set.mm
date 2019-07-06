@@ -54083,18 +54083,21 @@ $)
        recursion).  (Contributed by Jim Kingdon, 4-May-2019.)  (Proof shortened
        by Mario Carneiro, 24-May-2019.) $)
     tfrlemi14 $p |- dom recs ( F ) = On $=
-      ( vh vz vg vu vw cdm con0 cv wcel wrex cfv wceq wa crecs word wss tfrlem8
-      ordsson ax-mp ciun wfn cres wral wex fneq2 raleq anbi12d tfrlemi1 vtoclga
-      exbidv cop csn cun simpl simprl rspcev vex tfrlem3a sylibr tfrlemisucaccv
-      wfun cvv tfrlem3-2 simpri opex snid elun2 mp1i opeldm dmeq eleq2d syl2anc
-      syl exlimddv eliun ssriv cuni recsfval dmeqi dmuni eqtri sseqtr4i eqssi )
-      EUAZMZNWLUBWLNUCABCDEFUDWLUEUFNHCHOZMZUGZWLINWOIOZNPZWPWNPZHCQZWPWOPWQJOZ
-      WPUHZKOZWTRWTXBUIERSZKWPUJZTZWSJWTLOZUHZXCKXFUJZTZJUKXEJUKLWPNXFWPSZXIXEJ
-      XJXGXAXHXDXFWPWTULXCKXFWPUMUNZUQABKCXFDJEFGUOUPWQXETZWTWPWTERZURZUSZUTZCP
-      WPXPMZPZWSXLABICDJEFGWQXEVAWQXAXDVBXLXILNQWTCPXIXELWPNXKVCABLKCDEWTFJVDVE
-      VFVGXLXNXPPZXRXNXOPXSXLXNWPXMIVDZEVHXMVIPAJEGVJVKZVLVMXNXOWTVNVOWPXMXPXTY
-      AVPVTWRXRHXPCWMXPSWNXQWPWMXPVQVRVCVSWAHWPCWNWBVFWCWLCWDZMWOWKYBABCDEFWEWF
-      HCWGWHWIWJ $.
+      ( vh vz vg vu vw cdm con0 cv wcel cfv wceq wa wtru word tfrlem8
+      crecs wss ordsson ax-mp ciun wrex wfn cres wral wex fneq2 raleq
+      anbi12d exbidv tru cvv wal ax-gen a1i tfrlemi1d vtoclga cop csn
+      wfun mpan cun simprl rspcev vex tfrlem3a sylibr tfrlemisucaccvd
+      simpl tfrlem3-2 simpri opex snid elun2 mp1i opeldm dmeq syl2anc
+      syl eleq2d exlimddv eliun ssriv cuni recsfval dmeqi dmuni eqtri
+      sseqtr4i eqssi ) EUCZMZNWRUAWRNUDABCDEFUBWRUEUFNHCHOZMZUGZWRINX
+      AIOZNPZXBWTPZHCUHZXBXAPXCJOZXBUIZKOZXFQXFXHUJEQRZKXBUKZSZXEJXFL
+      OZUIZXIKXLUKZSZJULZXKJULLXBNXLXBRZXOXKJXQXMXGXNXJXLXBXFUMXIKXLX
+      BUNUOZUPTXLNPXPUQTABKCXLDJEFEVFZAOEQURPSZAUSZTXTAGUTZVAVBVGVCXC
+      XKSZXFXBXFEQZVDZVEZVHZCPXBYGMZPZXEYCABICDJEFYAYCYBVAXCXKVOXCXGX
+      JVIYCXOLNUHXFCPXOXKLXBNXRVJABLKCDEXFFJVKVLVMVNYCYEYGPZYIYEYFPYJ
+      YCYEXBYDIVKZXSYDURPAJEGVPVQZVRVSYEYFXFVTWAXBYDYGYKYLWBWEXDYIHYG
+      CWSYGRWTYHXBWSYGWCWFVJWDWGHXBCWTWHVMWIWRCWJZMXAWQYMABCDEFWKWLHC
+      WMWNWOWP $.
   $}
 
   ${
