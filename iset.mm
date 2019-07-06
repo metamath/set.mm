@@ -54012,6 +54012,23 @@ $)
       tfrlemibexd $p |- ( ph -> B e. _V ) $=
         ( cuni cvv wcel cv wfn tfrlemibfnd vex fnex sylancl uniexb sylibr ) AGQ
         ZRSZGRSAUHBTZUAUJRSUIABCDEFGHIJKLMNOPUBBUCUJRUHUDUEGUFUG $.
+
+      $( The union of ` B ` satisfies the recursion rule (lemma for
+         ~ tfrlemi1 ).  (Contributed by Jim Kingdon, 22-Apr-2019.)  (Proof
+         shortened by Mario Carneiro, 24-May-2019.) $)
+      tfrlemiubaccd $p |- ( ph ->
+          A. u e. x ( U. B ` u ) = ( F ` ( U. B |` u ) ) ) $=
+        ( cfv wceq wcel cv cuni cres wral wa crecs cdm wfn tfrlemibfnd fndm syl
+        wss tfrlemibaccd unissd recsfval syl6sseqr dmss eqsstr3d sselda tfrlem9
+        wfun tfrlem7 a1i adantr biimpar funssfv syl3anc word con0 eloni ordelss
+        eleq2d sylan sseqtr4d fun2ssres fveq2d 3eqtr3d ralrimiva reseq2 eqeq12d
+        fveq2 cbvralv sylibr ) AEUAZHUBZRZWEWDUCZLRZSZEBUAZUDFUAZWERZWEWKUCZLRZ
+        SZFWJUDAWIEWJAWDWJTZUEZWDLUFZRZWRWDUCZLRZWFWHWQWDWRUGZTWSXASAWJXBWDAWJW
+        EUGZXBAWEWJUHXCWJSZABCDEGHIJKLMNOPQUIWJWEUJUKZAWEWRULZXCXBULAWEGUBWRAHG
+        ABCDEGHIJKLMNOPQUMUNBCGILMUOUPZWEWRUQUKURUSBCGWDILMUTUKWQWRVAZXFWDXCTZW
+        SWFSXHWQBCGILMVBVCZAXFWPXGVDZAXIWPAXCWJWDXEVLVEWDWRWEVFVGWQWTWGLWQXHXFW
+        DXCULWTWGSXJXKWQWDWJXCAWJVHZWPWDWJULAWJVITXLPWJVJUKWJWDVKVMAXDWPXEVDVNW
+        DWRWEVOVGVPVQVRWOWIFEWJWKWDSZWLWFWNWHWKWDWEWAXMWMWGLWKWDWEVSVPVTWBWC $.
     $}
   $}
 
