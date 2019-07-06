@@ -53944,6 +53944,26 @@ $)
         HAXTTPZYAYKXKAXOTPXSTPZUVJUUJAXRTPZUVKAXPTPUVFUVLDUSUVIXPXQTT
         XIVNXRTXJUMXOXSTTXLVNBCUANEFHXTIXMUMXN $.
     $}
+
+    ${
+      $d u v w i j f g h z B $.  $d g h y z w ph $.
+      tfrlemi1d.3 $e |- B = { h | E. z e. x E. g ( g Fn z /\ g e. A /\
+         h = ( g u. { <. z , ( F ` g ) >. } ) ) } $.
+      tfrlemi1d.4 $e |- ( ph -> x e. On ) $.
+      tfrlemi1d.5 $e |- ( ph -> A. z e. x E. g ( g Fn z /\
+        A. w e. z ( g ` w ) = ( F ` ( g |` w ) ) ) ) $.
+      $( Each element of ` B ` is an acceptable function.  Lemma for
+         ~ tfrlemi1 .  (Contributed by Jim Kingdon, 14-Mar-2019.)  (Proof
+         shortened by Mario Carneiro, 24-May-2019.) $)
+      tfrlemibaccd $p |- ( ph -> B C_ A ) $=
+        ( cv wcel cfv wa wfn cop csn cun wceq w3a wex wrex cab simpr3
+        cvv wal ad2antrr simplr onelon syl2anc simpr1 tfrlemisucaccvd
+        wfun con0 simpr2 eqeltrd ex exlimdv rexlimdva abssdv syl5eqss
+        ) AGIQZDQZUAZVHFRZJQZVHVIVHKSUBUCUDZUEZUFZIUGZDBQZUHZJUIFNAVR
+        JFAVPVLFRZDVQAVIVQRZTZVOVSIWAVOVSWAVOTZVLVMFWAVJVKVNUJWBBCDFH
+        IKLAKUSVQKSUKRTBULVTVOMUMWBVQUTRZVTVIUTRAWCVTVOOUMAVTVOUNVQVI
+        UOUPWAVJVKVNUQWAVJVKVNVAURVBVCVDVEVFVG $.
+    $}
   $}
 
   ${
