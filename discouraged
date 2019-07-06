@@ -13362,6 +13362,8 @@
 "wl-imim2" is used by "wl-ax2".
 "wl-imim2i" is used by "wl-ja".
 "wl-imim2i" is used by "wl-syl6".
+"wl-impchain-0-syl" is used by "wl-impchain-1-syl".
+"wl-impchain-1-syl" is used by "wl-impchain-2-syl".
 "wl-ja" is used by "wl-ax2".
 "wl-mpi" is used by "wl-imim2i".
 "wl-mps" is used by "wl-syls1".
@@ -17814,6 +17816,9 @@ New usage of "wl-embantd" is discouraged (0 uses).
 New usage of "wl-id" is discouraged (1 uses).
 New usage of "wl-imim2" is discouraged (1 uses).
 New usage of "wl-imim2i" is discouraged (2 uses).
+New usage of "wl-impchain-0-syl" is discouraged (1 uses).
+New usage of "wl-impchain-1-syl" is discouraged (1 uses).
+New usage of "wl-impchain-2-syl" is discouraged (0 uses).
 New usage of "wl-ja" is discouraged (1 uses).
 New usage of "wl-jarli" is discouraged (0 uses).
 New usage of "wl-jarri" is discouraged (0 uses).
@@ -17826,6 +17831,7 @@ New usage of "wl-pm2.24i" is discouraged (1 uses).
 New usage of "wl-pm2.27" is discouraged (1 uses).
 New usage of "wl-sbcom3" is discouraged (0 uses).
 New usage of "wl-section-boot" is discouraged (0 uses).
+New usage of "wl-section-impchain" is discouraged (0 uses).
 New usage of "wl-section-prop" is discouraged (0 uses).
 New usage of "wl-syl" is discouraged (7 uses).
 New usage of "wl-syl5" is discouraged (6 uses).
@@ -18947,6 +18953,9 @@ Proof modification of "wl-embantd" is discouraged (11 steps).
 Proof modification of "wl-id" is discouraged (12 steps).
 Proof modification of "wl-imim2" is discouraged (14 steps).
 Proof modification of "wl-imim2i" is discouraged (15 steps).
+Proof modification of "wl-impchain-0-syl" is discouraged (5 steps).
+Proof modification of "wl-impchain-1-syl" is discouraged (13 steps).
+Proof modification of "wl-impchain-2-syl" is discouraged (14 steps).
 Proof modification of "wl-ja" is discouraged (20 steps).
 Proof modification of "wl-jarli" is discouraged (11 steps).
 Proof modification of "wl-jarri" is discouraged (10 steps).
@@ -18959,6 +18968,7 @@ Proof modification of "wl-pm2.24i" is discouraged (10 steps).
 Proof modification of "wl-pm2.27" is discouraged (27 steps).
 Proof modification of "wl-sbcom3" is discouraged (93 steps).
 Proof modification of "wl-section-boot" is discouraged (1 steps).
+Proof modification of "wl-section-impchain" is discouraged (1 steps).
 Proof modification of "wl-section-prop" is discouraged (1 steps).
 Proof modification of "wl-syl" is discouraged (13 steps).
 Proof modification of "wl-syl5" is discouraged (14 steps).
