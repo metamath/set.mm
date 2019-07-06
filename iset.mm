@@ -54005,6 +54005,13 @@ $)
         GUUDXNWATUUEYAXNWBWCYSXNRWDTWEAYQYRWQZYNYJAYHRSZUUHAXTRSYGRSZUUIIWGAYFR
         SZUUJAYARSYERSZUUKDWGAUUBUULABIKMWHWIYAYERRWJWKYFRWLTXTYGRRWMWKYHXPRWNT
         VHWOWPXFWRWSWTXAGXPXBVRXKXPXCTXNRXDXGABCDEFGHIJKLMNOPXEXHXKXNXIXJ $.
+
+      $( The set ` B ` exists.  Lemma for ~ tfrlemi1 .  (Contributed by Jim
+         Kingdon, 17-Mar-2019.)  (Proof shortened by Mario Carneiro,
+         24-May-2019.) $)
+      tfrlemibexd $p |- ( ph -> B e. _V ) $=
+        ( cuni cvv wcel cv wfn tfrlemibfnd vex fnex sylancl uniexb sylibr ) AGQ
+        ZRSZGRSAUHBTZUAUJRSUIABCDEFGHIJKLMNOPUBBUCUJRUHUDUEGUFUG $.
     $}
   $}
 
