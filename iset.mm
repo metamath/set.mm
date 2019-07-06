@@ -53896,8 +53896,8 @@ $)
   $}
 
   ${
-    $d a f g h k t u v w x y z A $.  $d a f g h k t u v w x y z F $.
-    $d ph u v w y $.
+    $d a e f g h k t u v w x y z A $.  $d a e f g h k t u v w x y z F $.
+    $d ph v w y $.
     tfrlemisucfnd.1 $e |- A = { f | E. x e. On ( f Fn x /\
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
     tfrlemisucfnd.2 $e |- ( ph -> A. x ( Fun F /\ ( F ` x ) e. _V ) ) $.
@@ -54041,6 +54041,37 @@ $)
         MABCDEGHIJKLMNOPQULABCDEFGHIJKLMNOPQUMUNWBVNIVDRVOVDUEZVPVGWAVMVFVOVDUO
         WCVTVLFVFWCVQVIVSVKVHVOVDUPWCVRVJLVOVDVHUQURUSUTVAVBVC $.
     $}
+
+    $d g u z C $.  $d ph e f h z $.
+    $( We can define an acceptable function on any ordinal.
+
+       As with many of the transfinite recursion theorems, we have a hypothesis
+       that states that ` F ` is a function and that it is defined for all
+       ordinals.  (Contributed by Jim Kingdon, 4-Mar-2019.)  (Proof shortened
+       by Mario Carneiro, 24-May-2019.) $)
+    tfrlemi1d $p |- ( ( ph /\ C e. On ) -> E. g ( g Fn C /\
+        A. u e. C ( g ` u ) = ( F ` ( g |` u ) ) ) ) $=
+      ( vz vk vw vv cv cfv wral wa weq ve vt vh con0 wcel wfn cres wex wi simpr
+      wceq simpl fneq12d fveq1d reseq1d fveq2d eqeq12d raleqbidv anbi12d imbi2d
+      cbvexdva fneq2 raleq exbidv r19.21v cop csn cun w3a wrex cab tfrlem3 wfun
+      cvv fveq2 eleq1d anbi2d cbvalv sylib adantr simplr simpll opeq12d uneq12d
+      wal 3anbi123d cbvrexdva cbvabv adantl fveq12d reseq12d cbvraldva2 cbvralv
+      sneqd tfrlemiexd expr expcom a2d syl5bi tfis3 impcom ) FUDUEAHPZFUFZDPZXB
+      QZXBXDUGZIQZUKZDFRZSZHUHZAXBLPZUFZXHDXLRZSZHUHZUIZAMPZNPZUFZXDXRQZXRXDUGZ
+      IQZUKZDXSRZSZMUHZUIZAXKUILNFLNTZXPYGAYIXOYFHMYIHMTZSZXMXTXNYEYKXLXSXBXRYI
+      YJUJZYIYJULZUMYKXHYDDXLXSYMYKXEYAXGYCYKXDXBXRYLUNYKXFYBIYKXBXRXDYLUOUPUQU
+      RUSVAUTXLFUKZXPXKAYNXOXJHYNXMXCXNXIXLFXBVBXHDXLFVCUSVDUTYHNXLRAYGNXLRZUIX
+      LUDUEZXQAYGNXLVEYPAYOXPAYPYOXPUIAYPYOXPAYPYOSZSLUAOCDEXTXREUEZUBPZXRXSXRI
+      QZVFZVGZVHZUKZVIZMUHZNXLVJZUBVKHGUCIBCLUAEGHIJVLAIVMZXLIQZVNUEZSZLWEZYQAU
+      UHBPZIQZVNUEZSZBWEUULKUUPUUKBLBLTZUUOUUJUUHUUQUUNUUIVNUUMXLIVOVPVQVRVSVTU
+      UGGPZOPZUFZUUREUEZUCPZUURUUSUURIQZVFZVGZVHZUKZVIZGUHZOXLVJUBUCUBUCTZUUFUV
+      INOXLUVJNOTZSZUUEUVHMGUVLMGTZSZXTUUTYRUVAUUDUVGUVNXSUUSXRUURUVLUVMUJZUVJU
+      VKUVMWAZUMUVNXRUUREUVOVPUVNYSUVBUUCUVFUVJUVKUVMWBUVNXRUURUUBUVEUVOUVNUUAU
+      VDUVNXSUUSYTUVCUVPUVNXRUURIUVOUPWCWNWDUQWFVAWGWHYQYPAYPYOULWIYQUUTCPZUURQ
+      ZUURUVQUGZIQZUKZCUUSRZSZGUHZOXLRZAYQYOUWEYPYOUJYGUWDNOXLUVKYFUWCMGUVKUVMS
+      ZXTUUTYEUWBUWFXSUUSXRUURUVKUVMUJUVKUVMULUMUWFYDUWADCXSUUSUWFDCTZSZYAUVRYC
+      UVTUWHXDUVQXRUURUVKUVMUWGWAZUWFUWGUJZWJUWHYBUVSIUWHXRUURXDUVQUWIUWJWKUPUQ
+      UVKUVMUWGWBWLUSVAWMVSWIWOWPWQWRWSWTXA $.
   $}
 
   ${
