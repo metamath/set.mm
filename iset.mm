@@ -53963,6 +53963,48 @@ $)
         JFAVPVLFRZDVQAVIVQRZTZVOVSIWAVOVSWAVOTZVLVMFWAVJVKVNUJWBBCDFH
         IKLAKUSVQKSUKRTBULVTVOMUMWBVQUTRZVTVIUTRAWCVTVOOUMAVTVOUNVQVI
         UOUPWAVJVKVNUQWAVJVKVNVAURVBVCVDVEVFVG $.
+
+      $( The union of ` B ` is defined on all ordinals.  Lemma for
+         ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.)  (Proof
+         shortened by Mario Carneiro, 24-May-2019.) $)
+      tfrlemibxssdmd $p |- ( ph -> x C_ dom U. B ) $=
+        ( cv wcel wa cvv cuni cdm wral wss wfn cfv cres wceq con0 wi tfrlem3-2d
+        wex w3a cop wfun simprd 3ad2ant1 csn cun opexg sylancr snidg elun2 3syl
+        simp2r simp3l wrex onelon rspe sylan tfrlem3a sylibr 3adant1 3jca snexg
+        vex unexg isset sylib simpr3 19.8a abeq2i sylan2 eqeltrrd 3exp2 exlimdv
+        mpan 3imp sylc elunii syl2anc opeq2 eleq1d spcegv eldm2 syl6ibr anassrs
+        3expia ralimdva mpdan mpd dfss3 ) ADQZGUAZUBZRZDBQZUCZXGXEUDAIQZXCUEZEQ
+        ZXIUFXIXKUGKUFUHEXCUCZSZIULZDXGUCZXHPAXGUIRZXOXHUJOAXPSXNXFDXGAXPXCXGRZ
+        XNXFUJAXPXQSZSXMXFIAXRXMXFAXRXMUMZXIKUFZTRZXCXTUNZXDRZXFAXRYAXMAKUOYAAB
+        IKMUKUPZUQXSYBXIYBURZUSZRZYFGRZYCAXRYGXMAYBTRZYBYERYGAXCTRYAYIDVPZYDXCX
+        TTTUTVAZYBTVBYBYEXIVCVDUQXSXQXJXIFRZUMZJQZYFUHZJULZYHXSXQXJYLAXPXQXMVEA
+        XRXJXLVFXRXMYLAXRXMSXMDUIVGZYLXRXCUIRXMYQXGXCVHXMDUIVIVJBCDEFHKXILIVPZV
+        KVLVMVNAXRYPXMAYFTRZYPAYIYETRZYSYKYBTVOXITRYTYSYRXIYETTVQWGVDJYFVRVSUQY
+        MYOYHJXQXJYLYOYHUJXQXJYLYOYHXQXJYLYOUMZSYNYFGXQXJYLYOVTUUAXQUUAIULZYNGR
+        ZUUAIWAXQUUBSUUBDXGVGZUUCUUBDXGVIUUDJGNWBVLWCWDWEWHWFWIYBYFGWJWKYAYCXCX
+        KUNZXDRZEULXFUUFYCEXTTXKXTUHUUEYBXDXKXTXCWLWMWNEXCXDYJWOWPWIWRWFWQWSWTX
+        ADXGXEXBVL $.
+
+      $( The union of ` B ` is a function defined on ` x ` .  Lemma for
+         ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.)  (Proof
+         shortened by Mario Carneiro, 24-May-2019.) $)
+      tfrlemibfnd $p |- ( ph -> U. B Fn x ) $=
+        ( wss cvv wcel syl cuni wfun cv wceq crecs tfrlemibaccd unissd recsfval
+        cdm wfn syl6sseqr tfrlem7 ee10 cxp cpw cfv cop csn cun w3a wex wrex cab
+        funss simpr3 csuc wal ad2antrr con0 simplr onelon syl2anc simpr1 simpr2
+        wa tfrlemisucfnd dffn2 sylib fssxp word eloni ordsucss sylc xpss1 sstrd
+        wf vex tfrlem3-2d simprd opexg sylancr snexg unexg elpwg mpbird eqeltrd
+        wb exlimdv rexlimdva abssdv syl5eqss sspwuni dmss dmxpss tfrlemibxssdmd
+        ex syl6ss eqssd df-fn sylanbrc ) AGUAZUBZXKUIZBUCZUDXKXNUJAXKKUEZQXOUBX
+        LAXKFUAXOAGFABCDEFGHIJKLMNOPUFUGBCFHKLUHUKBCFHKLULXKXOVDUMAXMXNAXMXNRUN
+        ZUIZXNAXKXPQZXMXQQAGXPUOZQXRAGIUCZDUCZUJZXTFSZJUCZXTYAXTKUPZUQZURZUSZUD
+        ZUTZIVAZDXNVBZJVCXSNAYLJXSAYKYDXSSZDXNAYAXNSZVOZYJYMIYOYJYMYOYJVOZYDYHX
+        SYOYBYCYIVEYPYHXSSZYHXPQZYPYHYAVFZRUNZXPYPYSRYHWFZYHYTQYPYHYSUJUUAYPBCD
+        FHIKLAKUBZXNKUPRSVOBVGYNYJMVHYPXNVISZYNYAVISAUUCYNYJOVHZAYNYJVJZXNYAVKV
+        LYOYBYCYIVMYOYBYCYIVNVPYSYHVQVRYSRYHVSTYPYSXNQZYTXPQYPXNVTZYNUUFYPUUCUU
+        GUUDXNWATUUEYAXNWBWCYSXNRWDTWEAYQYRWQZYNYJAYHRSZUUHAXTRSYGRSZUUIIWGAYFR
+        SZUUJAYARSYERSZUUKDWGAUUBUULABIKMWHWIYAYERRWJWKYFRWLTXTYGRRWMWKYHXPRWNT
+        VHWOWPXFWRWSWTXAGXPXBVRXKXPXCTXNRXDXGABCDEFGHIJKLMNOPXEXHXKXNXIXJ $.
     $}
   $}
 
