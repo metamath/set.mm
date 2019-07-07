@@ -13351,7 +13351,9 @@
 "wl-a1d" is used by "wl-ax2".
 "wl-a1i" is used by "wl-mpi".
 "wl-ax1" is used by "wl-a1d".
+"wl-ax1" is used by "wl-pm2.04".
 "wl-ax1" is used by "wl-pm2.27".
+"wl-ax2" is used by "wl-pm2.04".
 "wl-ax3" is used by "wl-ax1".
 "wl-com12" is used by "wl-imim2".
 "wl-com12" is used by "wl-pm2.21".
@@ -13363,10 +13365,19 @@
 "wl-imim2i" is used by "wl-ja".
 "wl-imim2i" is used by "wl-syl6".
 "wl-impchain-0-syl" is used by "wl-impchain-1-syl".
+"wl-impchain-0-syl" is used by "wl-impchain-2-com1x".
+"wl-impchain-1-com1x" is used by "wl-impchain-2-com1x".
 "wl-impchain-1-syl" is used by "wl-impchain-2-syl".
+"wl-impchain-1-syl" is used by "wl-impchain-3-com1x".
+"wl-impchain-2-com1x" is used by "wl-impchain-3-com1x".
+"wl-impchain-2-syl" is used by "wl-impchain-4-com1x".
+"wl-impchain-3-com1x" is used by "wl-impchain-4-com1x".
 "wl-ja" is used by "wl-ax2".
 "wl-mpi" is used by "wl-imim2i".
 "wl-mps" is used by "wl-syls1".
+"wl-pm2.04" is used by "wl-impchain-2-com1x".
+"wl-pm2.04" is used by "wl-impchain-3-com1x".
+"wl-pm2.04" is used by "wl-impchain-4-com1x".
 "wl-pm2.18d" is used by "wl-con1i".
 "wl-pm2.18d" is used by "wl-con4i".
 "wl-pm2.18d" is used by "wl-ja".
@@ -13388,6 +13399,7 @@
 "wl-syl5" is used by "wl-con4i".
 "wl-syl5" is used by "wl-ja".
 "wl-syl5" is used by "wl-mpi".
+"wl-syl5" is used by "wl-pm2.04".
 "wl-syl6" is used by "wl-ax3".
 "wl-syl6" is used by "wl-pm2.27".
 "wvd2" is used by "dfvd2".
@@ -17804,8 +17816,8 @@ New usage of "watvalN" is discouraged (1 uses).
 New usage of "wemapso2OLD" is discouraged (1 uses).
 New usage of "wl-a1d" is discouraged (1 uses).
 New usage of "wl-a1i" is discouraged (1 uses).
-New usage of "wl-ax1" is discouraged (2 uses).
-New usage of "wl-ax2" is discouraged (0 uses).
+New usage of "wl-ax1" is discouraged (3 uses).
+New usage of "wl-ax2" is discouraged (1 uses).
 New usage of "wl-ax3" is discouraged (1 uses).
 New usage of "wl-com12" is discouraged (2 uses).
 New usage of "wl-con1i" is discouraged (2 uses).
@@ -17817,12 +17829,12 @@ New usage of "wl-id" is discouraged (1 uses).
 New usage of "wl-imim2" is discouraged (1 uses).
 New usage of "wl-imim2i" is discouraged (2 uses).
 New usage of "wl-impchain-0-com1x" is discouraged (0 uses).
-New usage of "wl-impchain-0-syl" is discouraged (1 uses).
-New usage of "wl-impchain-1-com1x" is discouraged (0 uses).
-New usage of "wl-impchain-1-syl" is discouraged (1 uses).
-New usage of "wl-impchain-2-com1x" is discouraged (0 uses).
-New usage of "wl-impchain-2-syl" is discouraged (0 uses).
-New usage of "wl-impchain-3-com1x" is discouraged (0 uses).
+New usage of "wl-impchain-0-syl" is discouraged (2 uses).
+New usage of "wl-impchain-1-com1x" is discouraged (1 uses).
+New usage of "wl-impchain-1-syl" is discouraged (2 uses).
+New usage of "wl-impchain-2-com1x" is discouraged (1 uses).
+New usage of "wl-impchain-2-syl" is discouraged (1 uses).
+New usage of "wl-impchain-3-com1x" is discouraged (1 uses).
 New usage of "wl-impchain-4-com1x" is discouraged (0 uses).
 New usage of "wl-ja" is discouraged (1 uses).
 New usage of "wl-jarli" is discouraged (0 uses).
@@ -17830,6 +17842,7 @@ New usage of "wl-jarri" is discouraged (0 uses).
 New usage of "wl-mpi" is discouraged (1 uses).
 New usage of "wl-mps" is discouraged (1 uses).
 New usage of "wl-notnot2" is discouraged (0 uses).
+New usage of "wl-pm2.04" is discouraged (3 uses).
 New usage of "wl-pm2.18d" is discouraged (4 uses).
 New usage of "wl-pm2.21" is discouraged (2 uses).
 New usage of "wl-pm2.24i" is discouraged (1 uses).
@@ -17839,7 +17852,7 @@ New usage of "wl-section-boot" is discouraged (0 uses).
 New usage of "wl-section-impchain" is discouraged (0 uses).
 New usage of "wl-section-prop" is discouraged (0 uses).
 New usage of "wl-syl" is discouraged (7 uses).
-New usage of "wl-syl5" is discouraged (6 uses).
+New usage of "wl-syl5" is discouraged (7 uses).
 New usage of "wl-syl6" is discouraged (2 uses).
 New usage of "wl-syls1" is discouraged (0 uses).
 New usage of "wl-syls2" is discouraged (0 uses).
@@ -18972,6 +18985,7 @@ Proof modification of "wl-jarri" is discouraged (10 steps).
 Proof modification of "wl-mpi" is discouraged (14 steps).
 Proof modification of "wl-mps" is discouraged (14 steps).
 Proof modification of "wl-notnot2" is discouraged (6 steps).
+Proof modification of "wl-pm2.04" is discouraged (20 steps).
 Proof modification of "wl-pm2.18d" is discouraged (10 steps).
 Proof modification of "wl-pm2.21" is discouraged (8 steps).
 Proof modification of "wl-pm2.24i" is discouraged (10 steps).
