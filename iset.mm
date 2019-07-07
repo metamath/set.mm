@@ -53734,18 +53734,18 @@ $)
   ${
     $d a e f g h k t u v w x y z A $.  $d a e f g h k t u v w x y z F $.
     $d ph v w y $.
-    tfrlemisucfnd.1 $e |- A = { f | E. x e. On ( f Fn x /\
+    tfrlemisucfn.1 $e |- A = { f | E. x e. On ( f Fn x /\
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
-    tfrlemisucfnd.2 $e |- ( ph -> A. x ( Fun F /\ ( F ` x ) e. _V ) ) $.
+    tfrlemisucfn.2 $e |- ( ph -> A. x ( Fun F /\ ( F ` x ) e. _V ) ) $.
     ${
       $d u w y ph $.
-      tfrlemisucfnd.3 $e |- ( ph -> z e. On ) $.
-      tfrlemisucfnd.4 $e |- ( ph -> g Fn z ) $.
-      tfrlemisucfnd.5 $e |- ( ph -> g e. A ) $.
+      tfrlemisucfn.3 $e |- ( ph -> z e. On ) $.
+      tfrlemisucfn.4 $e |- ( ph -> g Fn z ) $.
+      tfrlemisucfn.5 $e |- ( ph -> g e. A ) $.
       $( We can extend an acceptable function by one element to produce a
          function.  Lemma for ~ tfrlemi1 .  (Contributed by Jim Kingdon,
          2-Jul-2019.) $)
-      tfrlemisucfnd $p |- ( ph -> ( g u. { <. z , ( F ` g ) >. } ) Fn suc z ) $=
+      tfrlemisucfn $p |- ( ph -> ( g u. { <. z , ( F ` g ) >. } ) Fn suc z ) $=
         ( cv csuc cfv cop cvv wcel a1i csn cun wfun tfrlem3-2d simprd
         vex eqid df-suc wn elirrv fnunsn ) ADNZULOGNZUMULUMHPZQUAUBZU
         LUNULRSADUFTAHUCUNRSABGHJUDUELUOUGULUHULULSUIADUJTUK $.
@@ -53754,9 +53754,9 @@ $)
          acceptable function.  Lemma for ~ tfrlemi1 .  (Contributed by Jim
          Kingdon, 4-Mar-2019.)  (Proof shortened by Mario Carneiro,
          24-May-2019.) $)
-      tfrlemisucaccvd $p |- ( ph -> ( g u. { <. z , ( F ` g ) >. } ) e. A ) $=
+      tfrlemisucaccv $p |- ( ph -> ( g u. { <. z , ( F ` g ) >. } ) e. A ) $=
         ( vu cfv wcel wceq wa con0 cvv vw vv cv cop csn cun cres wral
-        wfn wrex csuc suceloni syl tfrlemisucfnd elsuc tfrlem3a sylib
+        wfn wrex csuc suceloni syl tfrlemisucfn elsuc tfrlem3a sylib
         wo vex simprrr simprrl adantr fndmu syl2anc raleqdv rexlimddv
         r19.21bi elirrv elequ2 mtbiri necon2ai adantl fvunsng sylancr
         mpbid wne wss eloni ordelss sylan resabs1 wn fsnunres sylancl
@@ -53783,17 +53783,17 @@ $)
 
     ${
       $d u v w i j f g h z B $.  $d g h y z w ph $.
-      tfrlemi1d.3 $e |- B = { h | E. z e. x E. g ( g Fn z /\ g e. A /\
+      tfrlemi1.3 $e |- B = { h | E. z e. x E. g ( g Fn z /\ g e. A /\
          h = ( g u. { <. z , ( F ` g ) >. } ) ) } $.
-      tfrlemi1d.4 $e |- ( ph -> x e. On ) $.
-      tfrlemi1d.5 $e |- ( ph -> A. z e. x E. g ( g Fn z /\
+      tfrlemi1.4 $e |- ( ph -> x e. On ) $.
+      tfrlemi1.5 $e |- ( ph -> A. z e. x E. g ( g Fn z /\
         A. w e. z ( g ` w ) = ( F ` ( g |` w ) ) ) ) $.
       $( Each element of ` B ` is an acceptable function.  Lemma for
          ~ tfrlemi1 .  (Contributed by Jim Kingdon, 14-Mar-2019.)  (Proof
          shortened by Mario Carneiro, 24-May-2019.) $)
-      tfrlemibaccd $p |- ( ph -> B C_ A ) $=
+      tfrlemibacc $p |- ( ph -> B C_ A ) $=
         ( cv wcel cfv wa wfn cop csn cun wceq w3a wex wrex cab simpr3
-        cvv wal ad2antrr simplr onelon syl2anc simpr1 tfrlemisucaccvd
+        cvv wal ad2antrr simplr onelon syl2anc simpr1 tfrlemisucaccv
         wfun con0 simpr2 eqeltrd ex exlimdv rexlimdva abssdv syl5eqss
         ) AGIQZDQZUAZVHFRZJQZVHVIVHKSUBUCUDZUEZUFZIUGZDBQZUHZJUIFNAVR
         JFAVPVLFRZDVQAVIVQRZTZVOVSIWAVOVSWAVOTZVLVMFWAVJVKVNUJWBBCDFH
@@ -53803,7 +53803,7 @@ $)
       $( The union of ` B ` is defined on all ordinals.  Lemma for
          ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.)  (Proof
          shortened by Mario Carneiro, 24-May-2019.) $)
-      tfrlemibxssdmd $p |- ( ph -> x C_ dom U. B ) $=
+      tfrlemibxssdm $p |- ( ph -> x C_ dom U. B ) $=
         ( cv wcel wa cvv cuni cdm wral wss wfn cfv cres wceq con0 wi tfrlem3-2d
         wex w3a cop wfun simprd 3ad2ant1 csn cun opexg sylancr snidg elun2 3syl
         simp2r simp3l wrex onelon rspe sylan tfrlem3a sylibr 3adant1 3jca snexg
@@ -53824,13 +53824,13 @@ $)
       $( The union of ` B ` is a function defined on ` x ` .  Lemma for
          ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.)  (Proof
          shortened by Mario Carneiro, 24-May-2019.) $)
-      tfrlemibfnd $p |- ( ph -> U. B Fn x ) $=
-        ( wss cvv wcel syl cuni wfun cv wceq crecs tfrlemibaccd unissd recsfval
+      tfrlemibfn $p |- ( ph -> U. B Fn x ) $=
+        ( wss cvv wcel syl cuni wfun cv wceq crecs tfrlemibacc unissd recsfval
         cdm wfn syl6sseqr tfrlem7 ee10 cxp cpw cfv cop csn cun w3a wex wrex cab
         funss simpr3 csuc wal ad2antrr con0 simplr onelon syl2anc simpr1 simpr2
-        wa tfrlemisucfnd dffn2 sylib fssxp word eloni ordsucss sylc xpss1 sstrd
+        wa tfrlemisucfn dffn2 sylib fssxp word eloni ordsucss sylc xpss1 sstrd
         wf vex tfrlem3-2d simprd opexg sylancr snexg unexg elpwg mpbird eqeltrd
-        wb exlimdv rexlimdva abssdv syl5eqss sspwuni dmss dmxpss tfrlemibxssdmd
+        wb exlimdv rexlimdva abssdv syl5eqss sspwuni dmss dmxpss tfrlemibxssdm
         ex syl6ss eqssd df-fn sylanbrc ) AGUAZUBZXKUIZBUCZUDXKXNUJAXKKUEZQXOUBX
         LAXKFUAXOAGFABCDEFGHIJKLMNOPUFUGBCFHKLUHUKBCFHKLULXKXOVDUMAXMXNAXMXNRUN
         ZUIZXNAXKXPQZXMXQQAGXPUOZQXRAGIUCZDUCZUJZXTFSZJUCZXTYAXTKUPZUQZURZUSZUD
@@ -53845,17 +53845,17 @@ $)
       $( The set ` B ` exists.  Lemma for ~ tfrlemi1 .  (Contributed by Jim
          Kingdon, 17-Mar-2019.)  (Proof shortened by Mario Carneiro,
          24-May-2019.) $)
-      tfrlemibexd $p |- ( ph -> B e. _V ) $=
-        ( cuni cvv wcel cv wfn tfrlemibfnd vex fnex sylancl uniexb sylibr ) AGQ
+      tfrlemibex $p |- ( ph -> B e. _V ) $=
+        ( cuni cvv wcel cv wfn tfrlemibfn vex fnex sylancl uniexb sylibr ) AGQ
         ZRSZGRSAUHBTZUAUJRSUIABCDEFGHIJKLMNOPUBBUCUJRUHUDUEGUFUG $.
 
       $( The union of ` B ` satisfies the recursion rule (lemma for
          ~ tfrlemi1 ).  (Contributed by Jim Kingdon, 22-Apr-2019.)  (Proof
          shortened by Mario Carneiro, 24-May-2019.) $)
-      tfrlemiubaccd $p |- ( ph ->
+      tfrlemiubacc $p |- ( ph ->
           A. u e. x ( U. B ` u ) = ( F ` ( U. B |` u ) ) ) $=
-        ( cfv wceq wcel cv cuni cres wral wa crecs cdm wfn tfrlemibfnd fndm syl
-        wss tfrlemibaccd unissd recsfval syl6sseqr dmss eqsstr3d sselda tfrlem9
+        ( cfv wceq wcel cv cuni cres wral wa crecs cdm wfn tfrlemibfn fndm syl
+        wss tfrlemibacc unissd recsfval syl6sseqr dmss eqsstr3d sselda tfrlem9
         wfun tfrlem7 a1i adantr biimpar funssfv syl3anc word con0 eloni ordelss
         eleq2d sylan sseqtr4d fun2ssres fveq2d 3eqtr3d ralrimiva reseq2 eqeq12d
         fveq2 cbvralv sylibr ) AEUAZHUBZRZWEWDUCZLRZSZEBUAZUDFUAZWERZWEWKUCZLRZ
@@ -53868,10 +53868,10 @@ $)
 
       $( Lemma for ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.)
          (Proof shortened by Mario Carneiro, 24-May-2019.) $)
-      tfrlemiexd $p |- ( ph ->
+      tfrlemiex $p |- ( ph ->
           E. f ( f Fn x /\ A. u e. x ( f ` u ) = ( F ` ( f |` u ) ) ) ) $=
-        ( cvv cv cfv cuni wcel wfn cres wceq wral wa wex tfrlemibexd uniexg syl
-        tfrlemibfnd tfrlemiubaccd jca fneq1 fveq1 reseq1 fveq2d eqeq12d ralbidv
+        ( cvv cv cfv cuni wcel wfn cres wceq wral wa wex tfrlemibex uniexg syl
+        tfrlemibfn tfrlemiubacc jca fneq1 fveq1 reseq1 fveq2d eqeq12d ralbidv
         anbi12d spcegv sylc ) AHUAZRUBZVDBSZUCZFSZVDTZVDVHUDZLTZUEZFVFUFZUGZISZ
         VFUCZVHVOTZVOVHUDZLTZUEZFVFUFZUGZIUHAHRUBVEABCDEGHIJKLMNOPQUIHRUJUKAVGV
         MABCDEGHIJKLMNOPQULABCDEFGHIJKLMNOPQUMUNWBVNIVDRVOVDUEZVPVGWAVMVFVOVDUO
@@ -53885,14 +53885,14 @@ $)
        that states that ` F ` is a function and that it is defined for all
        ordinals.  (Contributed by Jim Kingdon, 4-Mar-2019.)  (Proof shortened
        by Mario Carneiro, 24-May-2019.) $)
-    tfrlemi1d $p |- ( ( ph /\ C e. On ) -> E. g ( g Fn C /\
+    tfrlemi1 $p |- ( ( ph /\ C e. On ) -> E. g ( g Fn C /\
         A. u e. C ( g ` u ) = ( F ` ( g |` u ) ) ) ) $=
       ( vz vk vw vv cv cfv wral wa weq ve vt vh con0 wcel wfn cres wex wi simpr
       wceq simpl fneq12d fveq1d reseq1d fveq2d eqeq12d raleqbidv anbi12d imbi2d
       cbvexdva fneq2 raleq exbidv r19.21v cop csn cun w3a wrex cab tfrlem3 wfun
       cvv fveq2 eleq1d anbi2d cbvalv sylib adantr simplr simpll opeq12d uneq12d
       wal 3anbi123d cbvrexdva cbvabv adantl fveq12d reseq12d cbvraldva2 cbvralv
-      sneqd tfrlemiexd expr expcom a2d syl5bi tfis3 impcom ) FUDUEAHPZFUFZDPZXB
+      sneqd tfrlemiex expr expcom a2d syl5bi tfis3 impcom ) FUDUEAHPZFUFZDPZXB
       QZXBXDUGZIQZUKZDFRZSZHUHZAXBLPZUFZXHDXLRZSZHUHZUIZAMPZNPZUFZXDXRQZXRXDUGZ
       IQZUKZDXSRZSZMUHZUIZAXKUILNFLNTZXPYGAYIXOYFHMYIHMTZSZXMXTXNYEYKXLXSXBXRYI
       YJUJZYIYJULZUMYKXHYDDXLXSYMYKXEYAXGYCYKXDXBXRYLUNYKXFYBIYKXBXRXDYLUOUPUQU
@@ -53921,8 +53921,8 @@ $)
     tfrlemi14 $p |- dom recs ( F ) = On $=
       ( vh vz vg vu vw cdm con0 cv wcel cfv wceq wa wtru word tfrlem8
       crecs wss ordsson ax-mp ciun wrex wfn cres wral wex fneq2 raleq
-      anbi12d exbidv tru cvv wal ax-gen a1i tfrlemi1d vtoclga cop csn
-      wfun mpan cun simprl rspcev vex tfrlem3a sylibr tfrlemisucaccvd
+      anbi12d exbidv tru cvv wal ax-gen a1i tfrlemi1 vtoclga cop csn
+      wfun mpan cun simprl rspcev vex tfrlem3a sylibr tfrlemisucaccv
       simpl tfrlem3-2 simpri opex snid elun2 mp1i opeldm dmeq syl2anc
       syl eleq2d exlimddv eliun ssriv cuni recsfval dmeqi dmuni eqtri
       sseqtr4i eqssi ) EUCZMZNWRUAWRNUDABCDEFUBWRUEUFNHCHOZMZUGZWRINX
@@ -53948,7 +53948,7 @@ $)
       ( vz vv wcel cfv cvv cv wceq con0 wa syl vg vw vu eleq1d imbi2d
       vh vt ve crecs fveq2 csuc cin cuni wfn cres wral wex word inss2
       wss ssorduni ax-mp vex sucex inex1 uniex elon2 mpbir2an tfrlem3
-      wi wal anbi2d cbvalv sylib tfrlemi1d mpan2 crn wbr cop recsfval
+      wi wal anbi2d cbvalv sylib tfrlemi1 mpan2 crn wbr cop recsfval
       wfun breqi df-br eluni 3bitri sucid wrex simpr tfrlem3a simprrl
       cdm simprl simpll fnop syl2anc onelon rexlimddv adantl suceloni
       onss df-ss unieqd wtr eloni ordtr 3syl eqtrd syl5eleqr ad2antrr
