@@ -54489,6 +54489,18 @@ $)
       OIPUPIPFSGSUNUOIIUDUEUQUFUAUGUHUIGETTURABRICDGEFUJUKUL $.
   $}
 
+  ${
+    $d x y z A $.  $d y z B $.
+    $( Value of ordinal addition.  (Contributed by NM, 3-May-1995.)  (Revised
+       by Mario Carneiro, 8-Sep-2013.) $)
+    oav $p |- ( ( A e. On /\ B e. On ) ->
+             ( A +o B ) = ( rec ( ( x e. _V |-> suc x ) , A ) ` B ) ) $=
+      ( vy vz con0 wcel cvv cv csuc cmpt crdg cfv coa wceq sucex eqid
+      co vex fnmpti rdgexgg rdgeq2 fveq1d df-oadd ovmpt2g mpd3an3
+      fveq2 ) BFGCFGCAHAIZJZKZBLZMZHGBCNRULOBCUJFFAHUIUJUHASPUJQTUADE
+      BCFFEIZUJDIZLZMULNUMUKMHUNBOUMUOUKUNBUJUBUCUMCUKUGDEAUDUEUF $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
