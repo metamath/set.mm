@@ -45483,8 +45483,8 @@ $)
     fvmptss2.2 $e |- F = ( x e. A |-> B ) $.
     $( A mapping always evaluates to a subset of the substituted expression in
        the mapping, even if this is a proper class, or we are out of the
-       domain.  (Contributed by Mario Carneiro, 13-Feb-2015.)
-       (Revised by Mario Carneiro, 3-Jul-2019.) $)
+       domain.  (Contributed by Mario Carneiro, 13-Feb-2015.)  (Revised by
+       Mario Carneiro, 3-Jul-2019.) $)
     fvmptss2 $p |- ( F ` D ) C_ C $=
       ( vy cv wbr wss wi cfv fvss cvv wcel nfcv wceq sylbi funmpt2 funrel ax-mp
       wfun wrel brrelexi cmpt nfmpt1 nfcxfr nfbr nfv breq1 sseq2d imbi12d df-br
@@ -53565,6 +53565,16 @@ $)
     $d g A $.  $d f g w x y z F $.  $d f w x y z G $.
     tfrlem3.1 $e |- A = { f | E. x e. On ( f Fn x /\
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    $( Lemma for transfinite recursion.  This lemma just changes some bound
+       variables in ` A ` for later use.  (Contributed by NM, 9-Apr-1995.) $)
+    tfrlem3ag $p |- ( G e. _V -> ( G e. A <-> E. z e. On ( G Fn z /\
+                A. w e. z ( G ` w ) = ( F ` ( G |` w ) ) ) ) ) $=
+      ( cv wfn cfv cres wceq wral wa con0 wrex cvv fneq12 simpll simpr reseq12d
+      fveq12d fveq2d eqeq12d simplr cbvraldva2 anbi12d cbvrexdva elab2g ) FJZAJ
+      ZKZBJZULLZULUOMZGLZNZBUMOZPZAQRHCJZKZDJZHLZHVDMZGLZNZDVBOZPZCQRFHESULHNZV
+      AVJACQVKUMVBNZPZUNVCUTVIUMVBULHTVMUSVHBDUMVBVMUOVDNZPZUPVEURVGVOUOVDULHVK
+      VLVNUAZVMVNUBZUDVOUQVFGVOULHUOVDVPVQUCUEUFVKVLVNUGUHUIUJIUK $.
+
     ${
       tfrlem3.2 $e |- G e. _V $.
       $( Lemma for transfinite recursion.  Let ` A ` be the class of
@@ -53599,6 +53609,17 @@ $)
     tfrlem3-2 $p |- ( Fun F /\ ( F ` g ) e. _V ) $=
       ( wfun cv cfv cvv wcel wa wceq fveq2 eleq1d anbi2d chvarv ) CEZAFZCGZHIZJ
       PBFZCGZHIZJABQTKZSUBPUCRUAHQTCLMNDO $.
+  $}
+
+  ${
+    $d x y f g $.  $d x y z $.  $d g z $.  $d f g F $.  $d x z F $.
+    tfrlem3-2d.1 $e |- ( ph -> A. x ( Fun F /\ ( F ` x ) e. _V ) ) $.
+    $( Lemma for transfinite recursion which changes a bound variable
+       (Contributed by Jim Kingdon, 2-Jul-2019.) $)
+    tfrlem3-2d $p |- ( ph -> ( Fun F /\ ( F ` g ) e. _V ) ) $=
+      ( wfun cv cfv cvv wcel wal weq fveq2 eleq1d anbi2d cbvalv sylib 19.21bi
+      wa ) ADFZCGZDHZIJZSZCATBGZDHZIJZSZBKUDCKEUHUDBCBCLZUGUCTUIUFUBIUEUADMNOPQ
+      R $.
   $}
 
   ${
@@ -53711,48 +53732,53 @@ $)
   $}
 
   ${
-    $d a f g h k t u v w x y z A $.  $d a f g h k t u v w x y z F $.
-    tfrlemi1.1 $e |- A = { f | E. x e. On ( f Fn x /\
+    $d a e f g h k t u v w x y z A $.  $d a e f g h k t u v w x y z F $.
+    $d ph v w y $.
+    tfrlemisucfn.1 $e |- A = { f | E. x e. On ( f Fn x /\
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
-    tfrlemi1.2 $e |- ( Fun F /\ ( F ` x ) e. _V ) $.
+    tfrlemisucfn.2 $e |- ( ph -> A. x ( Fun F /\ ( F ` x ) e. _V ) ) $.
     ${
       $d u w y ph $.
-      tfrlemisuc.3 $e |- ( ph -> z e. On ) $.
-      tfrlemisuc.4 $e |- ( ph -> g Fn z ) $.
-      tfrlemisuc.5 $e |- ( ph -> g e. A ) $.
+      tfrlemisucfn.3 $e |- ( ph -> z e. On ) $.
+      tfrlemisucfn.4 $e |- ( ph -> g Fn z ) $.
+      tfrlemisucfn.5 $e |- ( ph -> g e. A ) $.
       $( We can extend an acceptable function by one element to produce a
          function.  Lemma for ~ tfrlemi1 .  (Contributed by Jim Kingdon,
-         4-Mar-2019.)  (Proof shortened by Mario Carneiro, 24-May-2019.) $)
+         2-Jul-2019.) $)
       tfrlemisucfn $p |- ( ph -> ( g u. { <. z , ( F ` g ) >. } ) Fn suc z ) $=
-        ( cv csuc cfv cop cvv wcel a1i csn cun vex wfun tfrlem3-2 simpri df-suc
-        eqid wn elirr fnunsn ) ADNZULOGNZUMULUMHPZQUAUBZULUNULRSADUCTUNRSZAHUDU
-        PBGHJUEUFTLUOUHULUGULULSUIAULUJTUK $.
+        ( cv csuc cfv cop cvv wcel a1i csn cun wfun tfrlem3-2d simprd
+        vex eqid df-suc wn elirrv fnunsn ) ADNZULOGNZUMULUMHPZQUAUBZU
+        LUNULRSADUFTAHUCUNRSABGHJUDUELUOUGULUHULULSUIADUJTUK $.
 
       $( We can extend an acceptable function by one element to produce an
          acceptable function.  Lemma for ~ tfrlemi1 .  (Contributed by Jim
          Kingdon, 4-Mar-2019.)  (Proof shortened by Mario Carneiro,
          24-May-2019.) $)
       tfrlemisucaccv $p |- ( ph -> ( g u. { <. z , ( F ` g ) >. } ) e. A ) $=
-        ( vw vu cfv wceq wa con0 wcel cv cop csn cun wfn cres wral suceloni syl
-        wrex csuc tfrlemisucfn wo vex elsuc tfrlem3a sylib simprrr adantr fndmu
-        simprrl syl2anc raleqdv mpbid rexlimddv eqidd r19.21bi cvv elirr mtbiri
-        wne eleq2 necon2ai fvunsng sylancr wss word eloni ordelss sylan resabs1
-        adantl wn fsnunres sylancl reseq1d eqtr3d fveq2d ralrimiva 3eqtr4d wfun
-        cdm tfrlem3-2 simpri fndm eleq2d fsnunfv syl3anc simpr reseq2 sylan9eqr
-        a1i jaodan sylan2b fneq2 raleq anbi12d rspcev syl12anc opex snex sylibr
-        unex ) AGUAZDUAZXNHPZUBZUCZUDZNUAZUEZOUAZXSPZXSYBUFZHPZQZOXTUGZRZNSUJZX
-        SETAXOUKZSTZXSYJUEZYFOYJUGZYIAXOSTZYKKXOUHUIABCDEFGHIJKLMULAYFOYJYBYJTA
-        YBXOTZYBXOQZUMYFYBXOOUNZUOAYOYFYPAYORZYBXNPZXNYBUFZHPZYCYEAYSUUAQZOXOAU
-        UBOXOUGZUUCAXNXTUEZUUBOXTUGZRZUUCNSAXNETUUFNSUJMBCNOEFHXNIGUNZUPUQAXTST
-        ZUUFRZRZUUEUUCAUUHUUDUUEURUUJUUBOXTXOUUJUUDXNXOUEZXTXOQAUUHUUDUUEVAAUUK
-        UUILUSXTXOXNUTVBVCVDVEAUUBOXOXOAXOVFVCVDVGYRYBVHTXOYBVKZYCYSQYQYOUULAYO
-        XOYBXOYBQYOYBYBTYBVIXOYBYBVLVJVMWBXNXOXPYBVHVNVOAYEUUAQZOXOAUUMOXOYRYDY
-        THYRXSXOUFZYBUFZYDYTYRYBXOVPZUUOYDQAXOVQZYOUUPAYNUUQKXOVRUIXOYBVSVTXSYB
-        XOWAUIAUUOYTQYOAUUNXNYBAUUKXOXOTZWCUUNXNQLXOVIZXOXNXOXPWDWEZWFUSWGWHWIV
-        GWJAYPRZXOXSPZXPYCYEAUVBXPQZYPAYNXPVHTZXOXNWLZTZWCUVCKUVDAHWKUVDBGHJWMW
-        NZXBAUVFUURUUSAUVEXOXOAUUKUVEXOQLXOXNWOUIWPVJXNSVHXOXPWQWRUSUVAYBXOXSAY
-        PWSWHUVAYDXNHYPAYDUUNXNYBXOXSWTUUTXAWHWJXCXDWIYHYLYMRNYJSXTYJQYAYLYGYMX
-        TYJXSXEYFOXTYJXFXGXHXIBCNOEFHXSIXNXRUUGXQXOXPDUNUVGXJXKXMUPXL $.
+        ( vu cfv wcel wceq wa con0 cvv vw vv cv cop csn cun cres wral
+        wfn wrex csuc suceloni syl tfrlemisucfn elsuc tfrlem3a sylib
+        wo vex simprrr simprrl adantr fndmu syl2anc raleqdv rexlimddv
+        r19.21bi elirrv elequ2 mtbiri necon2ai adantl fvunsng sylancr
+        mpbid wne wss eloni ordelss sylan resabs1 wn fsnunres sylancl
+        word reseq1d eqtr3d fveq2d 3eqtr4d cdm wfun tfrlem3-2d simprd
+        fndm eleq2d fsnunfv syl3anc reseq2 sylan9eqr jaodan ralrimiva
+        simpr sylan2b fneq2 raleq anbi12d rspcev syl12anc opexg snexg
+        wb unexg tfrlem3ag mpbird ) AGUCZDUCZXOHOZUDZUEZUFZEPZXTUAUCZ
+        UIZNUCZXTOZXTYDUGZHOZQZNYBUHZRZUASUJZAXPUKZSPZXTYLUIZYHNYLUHZ
+        YKAXPSPZYMKXPULUMABCDEFGHIJKLMUNAYHNYLYDYLPAYDXPPZYDXPQZURYHY
+        DXPNUSZUOAYQYHYRAYQRZYDXOOZXOYDUGZHOZYEYGAUUAUUCQZNXPAXOUBUCZ
+        UIZUUDNUUEUHZRZUUDNXPUHZUBSAXOEPUUHUBSUJMBCUBNEFHXOIGUSZUPUQA
+        UUESPZUUHRZRZUUGUUIAUUKUUFUUGUTUUMUUDNUUEXPUUMUUFXOXPUIZUUEXP
+        QAUUKUUFUUGVAAUUNUULLVBUUEXPXOVCVDVEVOVFVGYTYDTPXPYDVPZYEUUAQ
+        YSYQUUOAYQXPYDXPYDQYQYDYDPNVHDNNVIVJVKVLXOXPXQYDTVMVNYTYFUUBH
+        YTXTXPUGZYDUGZYFUUBYTYDXPVQZUUQYFQAXPWEZYQUURAYPUUSKXPVRUMXPY
+        DVSVTXTYDXPWAUMAUUQUUBQYQAUUPXOYDAUUNXPXPPZWBUUPXOQLDVHZXPXOX
+        PXQWCWDZWFVBWGWHWIAYRRZXPXTOZXQYEYGAUVDXQQZYRAYPXQTPZXPXOWJZP
+        ZWBUVEKAHWKUVFABGHJWLWMZAUVHUUTUVAAUVGXPXPAUUNUVGXPQLXPXOWNUM
+        WOVJXOSTXPXQWPWQVBUVCYDXPXTAYRXBWHUVCYFXOHYRAYFUUPXOYDXPXTWRU
+        VBWSWHWIWTXCXAYJYNYORUAYLSYBYLQYCYNYIYOYBYLXTXDYHNYBYLXEXFXGX
+        HAXTTPZYAYKXKAXOTPXSTPZUVJUUJAXRTPZUVKAXPTPUVFUVLDUSUVIXPXQTT
+        XIVNXRTXJUMXOXSTTXLVNBCUANEFHXTIXMUMXN $.
     $}
 
     ${
@@ -53766,112 +53792,122 @@ $)
          ~ tfrlemi1 .  (Contributed by Jim Kingdon, 14-Mar-2019.)  (Proof
          shortened by Mario Carneiro, 24-May-2019.) $)
       tfrlemibacc $p |- ( ph -> B C_ A ) $=
-         ( cv wcel wa con0 wfn cfv cop csn cun wceq w3a wex wrex simpr3 ad2antrr
-        simplr onelon syl2anc simpr1 simpr2 tfrlemisucaccv eqeltrd ex rexlimdva
-        cab exlimdv abssdv syl5eqss ) AGIQZDQZUAZVEFRZJQZVEVFVEKUBUCUDUEZUFZUGZ
-        IUHZDBQZUIZJVAFNAVOJFAVMVIFRZDVNAVFVNRZSZVLVPIVRVLVPVRVLSZVIVJFVRVGVHVK
-        UJVSBCDFHIKLMVSVNTRZVQVFTRAVTVQVLOUKAVQVLULVNVFUMUNVRVGVHVKUOVRVGVHVKUP
-        UQURUSVBUTVCVD $.
+        ( cv wcel cfv wa wfn cop csn cun wceq w3a wex wrex cab simpr3
+        cvv wal ad2antrr simplr onelon syl2anc simpr1 tfrlemisucaccv
+        wfun con0 simpr2 eqeltrd ex exlimdv rexlimdva abssdv syl5eqss
+        ) AGIQZDQZUAZVHFRZJQZVHVIVHKSUBUCUDZUEZUFZIUGZDBQZUHZJUIFNAVR
+        JFAVPVLFRZDVQAVIVQRZTZVOVSIWAVOVSWAVOTZVLVMFWAVJVKVNUJWBBCDFH
+        IKLAKUSVQKSUKRTBULVTVOMUMWBVQUTRZVTVIUTRAWCVTVOOUMAVTVOUNVQVI
+        UOUPWAVJVKVNUQWAVJVKVNVAURVBVCVDVEVFVG $.
 
       $( The union of ` B ` is defined on all ordinals.  Lemma for
          ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.)  (Proof
          shortened by Mario Carneiro, 24-May-2019.) $)
       tfrlemibxssdm $p |- ( ph -> x C_ dom U. B ) $=
-        ( cv wcel con0 wa cuni cdm wral wss wfn cfv cres wceq wex cop tfrlem3-2
-        csn cun wfun simpri opex snid elun2 mp1i simplr simprl wrex onelon rspe
-        vex cvv sylan tfrlem3a sylibr w3a snex unex isseti simpr3 abeq2i sylan2
-        wi 19.8a eqeltrrd ex 3imp exlimdv mpi syl3anc elunii syl2anc opeldm syl
-        3expd ralimdva sylc dfss3 ) ADQZGUAZUBZRZDBQZUCZWQWOUDAWQSRZIQZWMUEZEQZ
-        WTUFWTXBUGKUFUHEWMUCZTZIUIZDWQUCWROPWSXEWPDWQWSWMWQRZTZXDWPIXGXDWPXGXDT
-        ZWMWTKUFZUJZWNRZWPXHXJWTXJULZUMZRZXMGRZXKXJXLRXNXHXJWMXIDVEZKUNXIVFRBIK
-        MUKUOZUPZUQXJXLWTURUSXHXFXAWTFRZXOWSXFXDUTXGXAXCVAXHXDDSVBZXSXGWMSRXDXT
-        WQWMVCXDDSVDVGBCDEFHKWTLIVEZVHVIXFXAXSVJZJQZXMUHZJUIXOJXMWTXLYAXJXRVKVL
-        VMYBYDXOJXFXAXSYDXOVQXFXAXSYDXOXFXAXSYDVJZXOXFYETYCXMGXFXAXSYDVNYEXFYEI
-        UIZYCGRZYEIVRXFYFTYFDWQVBZYGYFDWQVDYHJGNVOVIVPVSVTWIWAWBWCWDXJXMGWEWFWM
-        XIWNXPXQWGWHVTWBWJWKDWQWOWLVI $.
+        ( cv wcel wa cvv cuni cdm wral wss wfn cfv cres wceq con0 wi tfrlem3-2d
+        wex w3a cop wfun simprd 3ad2ant1 csn cun opexg sylancr snidg elun2 3syl
+        simp2r simp3l wrex onelon rspe sylan tfrlem3a sylibr 3adant1 3jca snexg
+        vex unexg isset sylib simpr3 19.8a abeq2i sylan2 eqeltrrd 3exp2 exlimdv
+        mpan 3imp sylc elunii syl2anc opeq2 eleq1d spcegv eldm2 syl6ibr anassrs
+        3expia ralimdva mpdan mpd dfss3 ) ADQZGUAZUBZRZDBQZUCZXGXEUDAIQZXCUEZEQ
+        ZXIUFXIXKUGKUFUHEXCUCZSZIULZDXGUCZXHPAXGUIRZXOXHUJOAXPSXNXFDXGAXPXCXGRZ
+        XNXFUJAXPXQSZSXMXFIAXRXMXFAXRXMUMZXIKUFZTRZXCXTUNZXDRZXFAXRYAXMAKUOYAAB
+        IKMUKUPZUQXSYBXIYBURZUSZRZYFGRZYCAXRYGXMAYBTRZYBYERYGAXCTRYAYIDVPZYDXCX
+        TTTUTVAZYBTVBYBYEXIVCVDUQXSXQXJXIFRZUMZJQZYFUHZJULZYHXSXQXJYLAXPXQXMVEA
+        XRXJXLVFXRXMYLAXRXMSXMDUIVGZYLXRXCUIRXMYQXGXCVHXMDUIVIVJBCDEFHKXILIVPZV
+        KVLVMVNAXRYPXMAYFTRZYPAYIYETRZYSYKYBTVOXITRYTYSYRXIYETTVQWGVDJYFVRVSUQY
+        MYOYHJXQXJYLYOYHUJXQXJYLYOYHXQXJYLYOUMZSYNYFGXQXJYLYOVTUUAXQUUAIULZYNGR
+        ZUUAIWAXQUUBSUUBDXGVGZUUCUUBDXGVIUUDJGNWBVLWCWDWEWHWFWIYBYFGWJWKYAYCXCX
+        KUNZXDRZEULXFUUFYCEXTTXKXTUHUUEYBXDXKXTXCWLWMWNEXCXDYJWOWPWIWRWFWQWSWTX
+        ADXGXEXBVL $.
 
       $( The union of ` B ` is a function defined on ` x ` .  Lemma for
          ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.)  (Proof
          shortened by Mario Carneiro, 24-May-2019.) $)
       tfrlemibfn $p |- ( ph -> U. B Fn x ) $=
-        ( cv wss cvv wcel cuni wfun cdm wceq crecs tfrlemibacc unissd syl6sseqr
-        wfn recsfval tfrlem7 funss ee10 cxp cpw cfv cop csn cun w3a wex wrex wa
-        cab simpr3 csuc con0 ad2antrr simplr onelon syl2anc simpr1 tfrlemisucfn
-        simpr2 dffn2 sylib fssxp word eloni ordsucss sylc xpss1 sstrd tfrlem3-2
-        wf syl simpri opex snex unex sylibr eqeltrd ex exlimdv rexlimdva abssdv
-        vex elpw syl5eqss dmss dmxpss syl6ss tfrlemibxssdm eqssd df-fn sylanbrc
-        sspwuni ) AGUAZUBZXHUCZBQZUDXHXKUIAXHKUEZRXLUBXIAXHFUAXLAGFABCDEFGHIJKL
-        MNOPUFUGBCFHKLUJUHBCFHKLUKXHXLULUMAXJXKAXJXKSUNZUCZXKAXHXMRZXJXNRAGXMUO
-        ZRXOAGIQZDQZUIZXQFTZJQZXQXRXQKUPZUQZURZUSZUDZUTZIVAZDXKVBZJVDXPNAYIJXPA
-        YHYAXPTZDXKAXRXKTZVCZYGYJIYLYGYJYLYGVCZYAYEXPYLXSXTYFVEYMYEXMRYEXPTYMYE
-        XRVFZSUNZXMYMYNSYEWEZYEYORYMYEYNUIYPYMBCDFHIKLMYMXKVGTZYKXRVGTAYQYKYGOV
-        HZAYKYGVIZXKXRVJVKYLXSXTYFVLYLXSXTYFVNVMYNYEVOVPYNSYEVQWFYMYNXKRZYOXMRY
-        MXKVRZYKYTYMYQUUAYRXKVSWFYSXRXKVTWAYNXKSWBWFWCYEXMXQYDIWQYCXRYBDWQKUBYB
-        STBIKMWDWGWHWIWJWRWKWLWMWNWOWPWSGXMXGVPXHXMWTWFXKSXAXBABCDEFGHIJKLMNOPX
-        CXDXHXKXEXF $.
+        ( wss cvv wcel syl cuni wfun cv wceq crecs tfrlemibacc unissd recsfval
+        cdm wfn syl6sseqr tfrlem7 ee10 cxp cpw cfv cop csn cun w3a wex wrex cab
+        funss simpr3 csuc wal ad2antrr con0 simplr onelon syl2anc simpr1 simpr2
+        wa tfrlemisucfn dffn2 sylib fssxp word eloni ordsucss sylc xpss1 sstrd
+        wf vex tfrlem3-2d simprd opexg sylancr snexg unexg elpwg mpbird eqeltrd
+        wb exlimdv rexlimdva abssdv syl5eqss sspwuni dmss dmxpss tfrlemibxssdm
+        ex syl6ss eqssd df-fn sylanbrc ) AGUAZUBZXKUIZBUCZUDXKXNUJAXKKUEZQXOUBX
+        LAXKFUAXOAGFABCDEFGHIJKLMNOPUFUGBCFHKLUHUKBCFHKLULXKXOVDUMAXMXNAXMXNRUN
+        ZUIZXNAXKXPQZXMXQQAGXPUOZQXRAGIUCZDUCZUJZXTFSZJUCZXTYAXTKUPZUQZURZUSZUD
+        ZUTZIVAZDXNVBZJVCXSNAYLJXSAYKYDXSSZDXNAYAXNSZVOZYJYMIYOYJYMYOYJVOZYDYHX
+        SYOYBYCYIVEYPYHXSSZYHXPQZYPYHYAVFZRUNZXPYPYSRYHWFZYHYTQYPYHYSUJUUAYPBCD
+        FHIKLAKUBZXNKUPRSVOBVGYNYJMVHYPXNVISZYNYAVISAUUCYNYJOVHZAYNYJVJZXNYAVKV
+        LYOYBYCYIVMYOYBYCYIVNVPYSYHVQVRYSRYHVSTYPYSXNQZYTXPQYPXNVTZYNUUFYPUUCUU
+        GUUDXNWATUUEYAXNWBWCYSXNRWDTWEAYQYRWQZYNYJAYHRSZUUHAXTRSYGRSZUUIIWGAYFR
+        SZUUJAYARSYERSZUUKDWGAUUBUULABIKMWHWIYAYERRWJWKYFRWLTXTYGRRWMWKYHXPRWNT
+        VHWOWPXFWRWSWTXAGXPXBVRXKXPXCTXNRXDXGABCDEFGHIJKLMNOPXEXHXKXNXIXJ $.
 
       $( The set ` B ` exists.  Lemma for ~ tfrlemi1 .  (Contributed by Jim
          Kingdon, 17-Mar-2019.)  (Proof shortened by Mario Carneiro,
          24-May-2019.) $)
       tfrlemibex $p |- ( ph -> B e. _V ) $=
-        ( cuni cvv wcel cv wfn tfrlemibfn vex a1i fnex syl2anc uniexb sylibr )
-        AGQZRSZGRSAUIBTZUAUKRSZUJABCDEFGHIJKLMNOPUBULABUCUDUKRUIUEUFGUGUH $.
+        ( cuni cvv wcel cv wfn tfrlemibfn vex fnex sylancl uniexb sylibr ) AGQ
+        ZRSZGRSAUHBTZUAUJRSUIABCDEFGHIJKLMNOPUBBUCUJRUHUDUEGUFUG $.
 
       $( The union of ` B ` satisfies the recursion rule (lemma for
          ~ tfrlemi1 ).  (Contributed by Jim Kingdon, 22-Apr-2019.)  (Proof
          shortened by Mario Carneiro, 24-May-2019.) $)
       tfrlemiubacc $p |- ( ph ->
           A. u e. x ( U. B ` u ) = ( F ` ( U. B |` u ) ) ) $=
-        ( cfv wceq wcel cv cuni cres wral crecs cdm wfn tfrlemibfn fndm syl wss
-        tfrlemibacc unissd recsfval syl6sseqr dmss eqsstr3d sselda tfrlem9 wfun
-        wa tfrlem7 a1i adantr eleq2d biimpar funssfv syl3anc word eloni ordelss
-        sylan sseqtr4d fun2ssres fveq2d 3eqtr3d ralrimiva fveq2 eqeq12d cbvralv
-        con0 reseq2 sylibr ) AEUAZHUBZRZWEWDUCZLRZSZEBUAZUDFUAZWERZWEWKUCZLRZSZ
-        FWJUDAWIEWJAWDWJTZVAZWDLUEZRZWRWDUCZLRZWFWHWQWDWRUFZTWSXASAWJXBWDAWJWEU
-        FZXBAWEWJUGXCWJSZABCDEGHIJKLMNOPQUHWJWEUIUJZAWEWRUKZXCXBUKAWEGUBWRAHGAB
-        CDEGHIJKLMNOPQULUMBCGILMUNUOZWEWRUPUJUQURBCGWDILMUSUJWQWRUTZXFWDXCTZWSW
-        FSXHWQBCGILMVBVCZAXFWPXGVDZAXIWPAXCWJWDXEVEVFWDWRWEVGVHWQWTWGLWQXHXFWDX
-        CUKWTWGSXJXKWQWDWJXCAWJVIZWPWDWJUKAWJWATXLPWJVJUJWJWDVKVLAXDWPXEVDVMWDW
-        RWEVNVHVOVPVQWOWIFEWJWKWDSZWLWFWNWHWKWDWEVRXMWMWGLWKWDWEWBVOVSVTWC $.
+        ( cfv wceq wcel cv cuni cres wral wa crecs cdm wfn tfrlemibfn fndm syl
+        wss tfrlemibacc unissd recsfval syl6sseqr dmss eqsstr3d sselda tfrlem9
+        wfun tfrlem7 a1i adantr biimpar funssfv syl3anc word con0 eloni ordelss
+        eleq2d sylan sseqtr4d fun2ssres fveq2d 3eqtr3d ralrimiva reseq2 eqeq12d
+        fveq2 cbvralv sylibr ) AEUAZHUBZRZWEWDUCZLRZSZEBUAZUDFUAZWERZWEWKUCZLRZ
+        SZFWJUDAWIEWJAWDWJTZUEZWDLUFZRZWRWDUCZLRZWFWHWQWDWRUGZTWSXASAWJXBWDAWJW
+        EUGZXBAWEWJUHXCWJSZABCDEGHIJKLMNOPQUIWJWEUJUKZAWEWRULZXCXBULAWEGUBWRAHG
+        ABCDEGHIJKLMNOPQUMUNBCGILMUOUPZWEWRUQUKURUSBCGWDILMUTUKWQWRVAZXFWDXCTZW
+        SWFSXHWQBCGILMVBVCZAXFWPXGVDZAXIWPAXCWJWDXEVLVEWDWRWEVFVGWQWTWGLWQXHXFW
+        DXCULWTWGSXJXKWQWDWJXCAWJVHZWPWDWJULAWJVITXLPWJVJUKWJWDVKVMAXDWPXEVDVNW
+        DWRWEVOVGVPVQVRWOWIFEWJWKWDSZWLWFWNWHWKWDWEWAXMWMWGLWKWDWEVSVPVTWBWC $.
 
       $( Lemma for ~ tfrlemi1 .  (Contributed by Jim Kingdon, 18-Mar-2019.)
          (Proof shortened by Mario Carneiro, 24-May-2019.) $)
       tfrlemiex $p |- ( ph ->
           E. f ( f Fn x /\ A. u e. x ( f ` u ) = ( F ` ( f |` u ) ) ) ) $=
-        ( cvv cv cfv cuni wcel wfn cres wceq wral wex tfrlemibex syl tfrlemibfn
-        wa uniexg tfrlemiubacc fneq1 fveq1 reseq1 fveq2d eqeq12d ralbidv spcegv
-        jca anbi12d sylc ) AHUAZRUBZVDBSZUCZFSZVDTZVDVHUDZLTZUEZFVFUFZUKZISZVFU
-        CZVHVOTZVOVHUDZLTZUEZFVFUFZUKZIUGAHRUBVEABCDEGHIJKLMNOPQUHHRULUIAVGVMAB
-        CDEGHIJKLMNOPQUJABCDEFGHIJKLMNOPQUMVAWBVNIVDRVOVDUEZVPVGWAVMVFVOVDUNWCV
-        TVLFVFWCVQVIVSVKVHVOVDUOWCVRVJLVOVDVHUPUQURUSVBUTVC $.
+        ( cvv cv cfv cuni wcel wfn cres wceq wral wa wex tfrlemibex uniexg syl
+        tfrlemibfn tfrlemiubacc jca fneq1 fveq1 reseq1 fveq2d eqeq12d ralbidv
+        anbi12d spcegv sylc ) AHUAZRUBZVDBSZUCZFSZVDTZVDVHUDZLTZUEZFVFUFZUGZISZ
+        VFUCZVHVOTZVOVHUDZLTZUEZFVFUFZUGZIUHAHRUBVEABCDEGHIJKLMNOPQUIHRUJUKAVGV
+        MABCDEGHIJKLMNOPQULABCDEFGHIJKLMNOPQUMUNWBVNIVDRVOVDUEZVPVGWAVMVFVOVDUO
+        WCVTVLFVFWCVQVIVSVKVHVOVDUPWCVRVJLVOVDVHUQURUSUTVAVBVC $.
     $}
 
-    $d g u z C $.
+    $d g u z C $.  $d ph e f h z $.
     $( We can define an acceptable function on any ordinal.
 
        As with many of the transfinite recursion theorems, we have a hypothesis
        that states that ` F ` is a function and that it is defined for all
        ordinals.  (Contributed by Jim Kingdon, 4-Mar-2019.)  (Proof shortened
        by Mario Carneiro, 24-May-2019.) $)
-    tfrlemi1 $p |- ( C e. On -> E. g ( g Fn C /\
+    tfrlemi1 $p |- ( ( ph /\ C e. On ) -> E. g ( g Fn C /\
         A. u e. C ( g ` u ) = ( F ` ( g |` u ) ) ) ) $=
-      ( vz vk vw vv cv cfv wceq wral wa wex va vt cres con0 fneq2 raleq anbi12d
-      vh wfn exbidv simpr simpl fneq12d fveq1d reseq1d fveq2d eqeq12d raleqbidv
-      cbvexdva wcel cop csn cun w3a wrex tfrlem3 tfrlem3-2 simplr eleq1d simpll
-      cab opeq12d sneqd uneq12d 3anbi123d cbvrexdva fveq12d reseq12d cbvraldva2
-      cbvabv adantr cbvralv sylib tfrlemiex ex tfis2 vtoclga ) GOZKOZUIZCOZWHPZ
-      WHWKUCZHPZQZCWIRZSZGTZWHEUIZWOCERZSZGTKEUDWIEQZWQXAGXBWJWSWPWTWIEWHUEWOCW
-      IEUFUGUJWRLOZMOZUIZWKXCPZXCWKUCZHPZQZCXDRZSZLTZKMWIXDQZWQXKGLXMWHXCQZSZWJ
-      XEWPXJXOWIXDWHXCXMXNUKZXMXNULZUMXOWOXICWIXDXQXOWLXFWNXHXOWKWHXCXPUNXOWMXG
-      HXOWHXCWKXPUOUPUQURUGUSWIUDUTZXLMWIRZWRXRXSSZKUANBCDXEXCDUTZUBOZXCXDXCHPZ
-      VAZVBZVCZQZVDZLTZMWIVEZUBVKGFUHHABKUADFGHIVFAKHJVGYJFOZNOZUIZYKDUTZUHOZYK
-      YLYKHPZVAZVBZVCZQZVDZFTZNWIVEUBUHYBYOQZYIUUBMNWIUUCXDYLQZSZYHUUALFUUEXCYK
-      QZSZXEYMYAYNYGYTUUGXDYLXCYKUUEUUFUKZUUCUUDUUFVHZUMUUGXCYKDUUHVIUUGYBYOYFY
-      SUUCUUDUUFVJUUGXCYKYEYRUUHUUGYDYQUUGXDYLYCYPUUIUUGXCYKHUUHUPVLVMVNUQVOUSV
-      PVTXRXSULXTXSYMBOZYKPZYKUUJUCZHPZQZBYLRZSZFTZNWIRXRXSUKXLUUQMNWIUUDXKUUPL
-      FUUDUUFSZXEYMXJUUOUURXDYLXCYKUUDUUFUKUUDUUFULZUMUURXIUUNCBXDYLUURWKUUJQZS
-      ZXFUUKXHUUMUVAWKUUJXCYKUUDUUFUUTVHZUURUUTUKZVQUVAXGUULHUVAXCYKWKUUJUVBUVC
-      VRUPUQUURUUDUUTUUSWAVSUGUSWBWCWDWEWFWG $.
+      ( vz vk vw vv cv cfv wral wa weq ve vt vh con0 wcel wfn cres wex wi simpr
+      wceq simpl fneq12d fveq1d reseq1d fveq2d eqeq12d raleqbidv anbi12d imbi2d
+      cbvexdva fneq2 raleq exbidv r19.21v cop csn cun w3a wrex cab tfrlem3 wfun
+      cvv fveq2 eleq1d anbi2d cbvalv sylib adantr simplr simpll opeq12d uneq12d
+      wal 3anbi123d cbvrexdva cbvabv adantl fveq12d reseq12d cbvraldva2 cbvralv
+      sneqd tfrlemiex expr expcom a2d syl5bi tfis3 impcom ) FUDUEAHPZFUFZDPZXB
+      QZXBXDUGZIQZUKZDFRZSZHUHZAXBLPZUFZXHDXLRZSZHUHZUIZAMPZNPZUFZXDXRQZXRXDUGZ
+      IQZUKZDXSRZSZMUHZUIZAXKUILNFLNTZXPYGAYIXOYFHMYIHMTZSZXMXTXNYEYKXLXSXBXRYI
+      YJUJZYIYJULZUMYKXHYDDXLXSYMYKXEYAXGYCYKXDXBXRYLUNYKXFYBIYKXBXRXDYLUOUPUQU
+      RUSVAUTXLFUKZXPXKAYNXOXJHYNXMXCXNXIXLFXBVBXHDXLFVCUSVDUTYHNXLRAYGNXLRZUIX
+      LUDUEZXQAYGNXLVEYPAYOXPAYPYOXPUIAYPYOXPAYPYOSZSLUAOCDEXTXREUEZUBPZXRXSXRI
+      QZVFZVGZVHZUKZVIZMUHZNXLVJZUBVKHGUCIBCLUAEGHIJVLAIVMZXLIQZVNUEZSZLWEZYQAU
+      UHBPZIQZVNUEZSZBWEUULKUUPUUKBLBLTZUUOUUJUUHUUQUUNUUIVNUUMXLIVOVPVQVRVSVTU
+      UGGPZOPZUFZUUREUEZUCPZUURUUSUURIQZVFZVGZVHZUKZVIZGUHZOXLVJUBUCUBUCTZUUFUV
+      INOXLUVJNOTZSZUUEUVHMGUVLMGTZSZXTUUTYRUVAUUDUVGUVNXSUUSXRUURUVLUVMUJZUVJU
+      VKUVMWAZUMUVNXRUUREUVOVPUVNYSUVBUUCUVFUVJUVKUVMWBUVNXRUURUUBUVEUVOUVNUUAU
+      VDUVNXSUUSYTUVCUVPUVNXRUURIUVOUPWCWNWDUQWFVAWGWHYQYPAYPYOULWIYQUUTCPZUURQ
+      ZUURUVQUGZIQZUKZCUUSRZSZGUHZOXLRZAYQYOUWEYPYOUJYGUWDNOXLUVKYFUWCMGUVKUVMS
+      ZXTUUTYEUWBUWFXSUUSXRUURUVKUVMUJUVKUVMULUMUWFYDUWADCXSUUSUWFDCTZSZYAUVRYC
+      UVTUWHXDUVQXRUURUVKUVMUWGWAZUWFUWGUJZWJUWHYBUVSIUWHXRUURXDUVQUWIUWJWKUPUQ
+      UVKUVMUWGWBWLUSVAWMVSWIWOWPWQWRWSWTXA $.
   $}
 
   ${
@@ -53883,48 +53919,65 @@ $)
        recursion).  (Contributed by Jim Kingdon, 4-May-2019.)  (Proof shortened
        by Mario Carneiro, 24-May-2019.) $)
     tfrlemi14 $p |- dom recs ( F ) = On $=
-      ( vh vz vg vu vw cdm con0 cv wcel wrex cfv wceq wa crecs word wss tfrlem8
-      ordsson ax-mp ciun wfn cres wral wex fneq2 raleq anbi12d tfrlemi1 vtoclga
-      exbidv cop csn cun simpl simprl rspcev vex tfrlem3a sylibr tfrlemisucaccv
-      wfun cvv tfrlem3-2 simpri opex snid elun2 mp1i opeldm dmeq eleq2d syl2anc
-      syl exlimddv eliun ssriv cuni recsfval dmeqi dmuni eqtri sseqtr4i eqssi )
-      EUAZMZNWLUBWLNUCABCDEFUDWLUEUFNHCHOZMZUGZWLINWOIOZNPZWPWNPZHCQZWPWOPWQJOZ
-      WPUHZKOZWTRWTXBUIERSZKWPUJZTZWSJWTLOZUHZXCKXFUJZTZJUKXEJUKLWPNXFWPSZXIXEJ
-      XJXGXAXHXDXFWPWTULXCKXFWPUMUNZUQABKCXFDJEFGUOUPWQXETZWTWPWTERZURZUSZUTZCP
-      WPXPMZPZWSXLABICDJEFGWQXEVAWQXAXDVBXLXILNQWTCPXIXELWPNXKVCABLKCDEWTFJVDVE
-      VFVGXLXNXPPZXRXNXOPXSXLXNWPXMIVDZEVHXMVIPAJEGVJVKZVLVMXNXOWTVNVOWPXMXPXTY
-      AVPVTWRXRHXPCWMXPSWNXQWPWMXPVQVRVCVSWAHWPCWNWBVFWCWLCWDZMWOWKYBABCDEFWEWF
-      HCWGWHWIWJ $.
+      ( vh vz vg vu vw cdm con0 cv wcel cfv wceq wa wtru word tfrlem8
+      crecs wss ordsson ax-mp ciun wrex wfn cres wral wex fneq2 raleq
+      anbi12d exbidv tru cvv wal ax-gen a1i tfrlemi1 vtoclga cop csn
+      wfun mpan cun simprl rspcev vex tfrlem3a sylibr tfrlemisucaccv
+      simpl tfrlem3-2 simpri opex snid elun2 mp1i opeldm dmeq syl2anc
+      syl eleq2d exlimddv eliun ssriv cuni recsfval dmeqi dmuni eqtri
+      sseqtr4i eqssi ) EUCZMZNWRUAWRNUDABCDEFUBWRUEUFNHCHOZMZUGZWRINX
+      AIOZNPZXBWTPZHCUHZXBXAPXCJOZXBUIZKOZXFQXFXHUJEQRZKXBUKZSZXEJXFL
+      OZUIZXIKXLUKZSZJULZXKJULLXBNXLXBRZXOXKJXQXMXGXNXJXLXBXFUMXIKXLX
+      BUNUOZUPTXLNPXPUQTABKCXLDJEFEVFZAOEQURPSZAUSZTXTAGUTZVAVBVGVCXC
+      XKSZXFXBXFEQZVDZVEZVHZCPXBYGMZPZXEYCABICDJEFYAYCYBVAXCXKVOXCXGX
+      JVIYCXOLNUHXFCPXOXKLXBNXRVJABLKCDEXFFJVKVLVMVNYCYEYGPZYIYEYFPYJ
+      YCYEXBYDIVKZXSYDURPAJEGVPVQZVRVSYEYFXFVTWAXBYDYGYKYLWBWEXDYIHYG
+      CWSYGRWTYHXBWSYGWCWFVJWDWGHXBCWTWHVMWIWRCWJZMXAWQYMABCDEFWKWLHC
+      WMWNWOWP $.
+  $}
 
+  ${
+    $d e f g h u v t w x y z A $.  $d e f g h u v t w x y z F $.  $d z C $.
+    $d u v z ph $.
+    tfrexlem.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    tfrexlem.2 $e |- ( ph -> A. x ( Fun F /\ ( F ` x ) e. _V ) ) $.
     $( The transfinite recursion function is set-like if the input is.
        (Contributed by Mario Carneiro, 3-Jul-2019.) $)
-    tfrexlem $p |- ( C e. V -> ( recs ( F ) ` C ) e. _V ) $=
-      ( vz vg vw vu vv cv wcel wceq con0 wa syl crecs cfv cvv fveq2 eleq1d csuc
-      vh cin cuni wfn cres wral wex word inss2 ssorduni ax-mp sucex inex1 uniex
-      wss vex elon2 mpbir2an tfrlem3 tfrlem3-2 tfrlemi1 crn wbr wi wal recsfval
-      cop breqi df-br eluni 3bitri cdm sucid wrex simpr tfrlem3a simprl simprrl
-      sylib simpll fnop syl2anc onelon rexlimddv adantl suceloni onss df-ss wtr
-      unieqd eloni ordtr 3syl eqtrd syl5eleqr fndm ad2antrr eleqtrrd eldm fneq2
-      unisuc raleq anbi12d rspcev mpan simplrr simplrl tfrlem5 syl22anc breqtrd
-      sylibr imp exlimddv brelrn elssuni ex exlimdv syl5bi alrimiv fvss exlimiv
-      rnex ssex mp2b vtoclg ) JOZFUAZUBZUCPZDYMUBZUCPJDGYLDQYNYPUCYLDYMUDUEYLUF
-      ZUFZRUHZUIZRPZKOZYTUJZLOZUUBUBUUBUUDUKFUBQZLYTULZSZKUMYOUUAYTUNZYTUCPYSRV
-      AUUHYRRUOYSUPUQYSYRRYQYLJVBZURZURUSUTYTVCVDZJMLCYTNKFABJMCENFHVEZAJFIVFVG
-      UUGYOKUUGYNUUBVHZUIZVAZYOUUGYLBOZYMVIZUUPUUNVAZVJZBVKUUOUUGUUSBUUQYLUUPVM
-      ZUGOZPZUVACPZSZUGUMZUUGUURUUQYLUUPCUIZVIUUTUVFPUVEYLUUPYMUVFJMCNFUULVLVNY
-      LUUPUVFVOUGUUTCVPVQUUGUVDUURUGUUGUVDUURUUGUVDSZUUPUUMPZUURUVGYLUUPUUBVIZU
-      VHUVGYLAOZUUBVIZUVIAUVGYLUUBVRZPUVKAUMUVGYLYTUVLUVGYLYQYTYLUUIVSUVGYTYRUI
-      ZYQUVGYSYRUVGYRRVAZYSYRQUVGYRRPZUVNUVGYQRPZUVOUVGYLRPZUVPUVDUVQUUGUVDUVAN
-      OZUJZMOZUVAUBUVAUVTUKFUBQMUVRULZSZUVQNRUVDUVCUWBNRVTUVBUVCWAABNMCEFUVAHUG
-      VBWBWEUVDUVRRPZUWBSZSZUWCYLUVRPZUVQUVDUWCUWBWCUWEUVSUVBUWFUVDUWCUVSUWAWDU
-      VBUVCUWDWFUVRYLUUPUVAWGWHUVRYLWIWHWJWKYLWLTZYQWLTYRWMTYRRWNWEWPUVGYQWOZUV
-      MYQQUVGUVPYQUNUWHUWGYQWQYQWRWSYQUUJXGWEWTXAUUCUVLYTQUUFUVDYTUUBXBXCXDAYLU
-      UBUUIXEWEUVGUVKSZYLUVJUUPUUBUVGUVKWAZUWIUUBCPZUVCUVKYLUUPUVAVIZUVJUUPQZUU
-      GUWKUVDUVKUUGUUBUVRUJZUUELUVRULZSZNRVTZUWKUUAUUGUWQUUKUWPUUGNYTRUVRYTQUWN
-      UUCUWOUUFUVRYTUUBXFUUELUVRYTXHXIXJXKABNLCEFUUBHKVBZWBXQXCUUGUVBUVCUVKXLUW
-      JUWIUVBUWLUUGUVBUVCUVKXMYLUUPUVAVOXQUWKUVCSUVKUWLSUWMJMBACNKUGFUULXNXRXOX
-      PXSYLUUPUUBUUIBVBXTTUUPUUMYATYBYCYDYEBYLUUNYMYFTYNUUNUUMUUBUWRYHUTYITYGYJ
-      YK $.
+    tfrexlem $p |- ( ( ph /\ C e. V ) -> ( recs ( F ) ` C ) e. _V ) $=
+      ( vz vv wcel cfv cvv cv wceq con0 wa syl vg vw vu eleq1d imbi2d
+      vh vt ve crecs fveq2 csuc cin cuni wfn cres wral wex word inss2
+      wss ssorduni ax-mp vex sucex inex1 uniex elon2 mpbir2an tfrlem3
+      wi wal anbi2d cbvalv sylib tfrlemi1 mpan2 crn wbr cop recsfval
+      wfun breqi df-br eluni 3bitri sucid wrex simpr tfrlem3a simprrl
+      cdm simprl simpll fnop syl2anc onelon rexlimddv adantl suceloni
+      onss df-ss unieqd wtr eloni ordtr 3syl eqtrd syl5eleqr ad2antrr
+      unisuc fndm eldm fneq2 raleq anbi12d rspcev mpan sylibr simplrr
+      eleqtrrd simplrl tfrlem5 imp syl22anc breqtrd brelrn elssuni ex
+      exlimddv exlimdv syl5bi alrimiv fvss rnex exlimiv vtoclg impcom
+      ssex ) EHMAEGUIZNZOMZAKPZYSNZOMZVJAUUAVJKEHUUBEQZUUDUUAAUUEUUCY
+      TOUUBEYSUJUDUEAUAPZUUBUKZUKZRULZUMZUNZUBPZUUFNUUFUULUOGNQZUBUUJ
+      UPZSZUAUQZUUDAUUJRMZUUPUUQUUJURZUUJOMUUIRUTUURUUHRUSUUIVAVBUUIU
+      UHRUUGUUBKVCZVDZVDVEVFUUJVGVHZAKUCUBDUUJLUAGBCKUCDFLGIVIZAGWAZB
+      PZGNZOMZSZBVKUVCUUBGNZOMZSZKVKJUVGUVJBKUVDUUBQZUVFUVIUVCUVKUVEU
+      VHOUVDUUBGUJUDVLVMVNVOVPUUOUUDUAUUOUUCUUFVQZUMZUTZUUDUUOUUBCPZY
+      SVRZUVOUVMUTZVJZCVKUVNUUOUVRCUVPUUBUVOVSZUFPZMZUVTDMZSZUFUQZUUO
+      UVQUVPUUBUVODUMZVRUVSUWEMUWDUUBUVOYSUWEKUCDLGUVBVTWBUUBUVOUWEWC
+      UFUVSDWDWEUUOUWCUVQUFUUOUWCUVQUUOUWCSZUVOUVLMZUVQUWFUUBUVOUUFVR
+      ZUWGUWFUUBUVDUUFVRZUWHBUWFUUBUUFWKZMUWIBUQUWFUUBUUJUWJUWFUUBUUG
+      UUJUUBUUSWFUWFUUJUUHUMZUUGUWFUUIUUHUWFUUHRUTZUUIUUHQUWFUUHRMZUW
+      LUWFUUGRMZUWMUWFUUBRMZUWNUWCUWOUUOUWCUVTUGPZUNZUHPZUVTNUVTUWRUO
+      GNQUHUWPUPZSZUWOUGRUWCUWBUWTUGRWGUWAUWBWHBCUGUHDFGUVTIUFVCWIVNU
+      WCUWPRMZUWTSZSZUXAUUBUWPMZUWOUWCUXAUWTWLUXCUWQUWAUXDUWCUXAUWQUW
+      SWJUWAUWBUXBWMUWPUUBUVOUVTWNWOUWPUUBWPWOWQWRUUBWSTZUUGWSTUUHWTT
+      UUHRXAVNXBUWFUUGXCZUWKUUGQUWFUWNUUGURUXFUXEUUGXDUUGXEXFUUGUUTXJ
+      VNXGXHUUKUWJUUJQUUNUWCUUJUUFXKXIXTBUUBUUFUUSXLVNUWFUWISZUUBUVDU
+      VOUUFUWFUWIWHZUXGUUFDMZUWBUWIUUBUVOUVTVRZUVDUVOQZUUOUXIUWCUWIUU
+      OUUFLPZUNZUUMUBUXLUPZSZLRWGZUXIUUQUUOUXPUVAUXOUUOLUUJRUXLUUJQUX
+      MUUKUXNUUNUXLUUJUUFXMUUMUBUXLUUJXNXOXPXQBCLUBDFGUUFIUAVCZWIXRXI
+      UUOUWAUWBUWIXSUXHUXGUWAUXJUUOUWAUWBUWIYAUUBUVOUVTWCXRUXIUWBSUWI
+      UXJSUXKKUCCBDLUAUFGUVBYBYCYDYEYIUUBUVOUUFUUSCVCYFTUVOUVLYGTYHYJ
+      YKYLCUUBUVMYSYMTUUCUVMUVLUUFUXQYNVFYRTYOTYPYQ $.
   $}
 
   ${
@@ -53993,13 +54046,14 @@ $)
   ${
     $d f g u w x y z G $.
     tfrex.1 $e |- F = recs ( G ) $.
-    tfrex.2 $e |- ( Fun G /\ ( G ` x ) e. _V ) $.
+    tfrex.2 $e |- ( ph -> A. x ( Fun G /\ ( G ` x ) e. _V ) ) $.
     $( The transfinite recursion function is set-like if the input is.
        (Contributed by Mario Carneiro, 3-Jul-2019.) $)
-    tfrex $p |- ( A e. V -> ( F ` A ) e. _V ) $=
-      ( vy vg vz vu vf wcel cfv crecs cvv fveq1i cv wfn cres wceq wral con0 cab
-      wa wrex eqid tfrlem3 tfrexlem syl5eqel ) BEMBCNBDOZNPBCUKFQAHIRZJRZSKRZUL
-      NULUNTDNUAKUMUBUEJUCUFIUDZBLDEJKAHUOILDUOUGUHGUIUJ $.
+    tfrex $p |- ( ( ph /\ A e. V ) -> ( F ` A ) e. _V ) $=
+      ( vy vg vz vu vf wcel wa cfv crecs cvv fveq1i cv cres wceq wral
+      wfn con0 wrex cab eqid tfrlem3 tfrexlem syl5eqel ) ACFNOCDPCEQZ
+      PRCDULGSABIJTZKTZUDLTZUMPUMUOUAEPUBLUNUCOKUEUFJUGZCMEFKLBIUPJME
+      UPUHUIHUJUK $.
   $}
 
 $(
@@ -54049,6 +54103,24 @@ $)
   $}
 
   ${
+    $d x y z f g F $.  $d x y z f g G $.  $d x y z f g A $.  $d x y z f g B $.
+    $( Equality theorem for the recursive definition generator.  (Contributed
+       by NM, 9-Apr-1995.)  (Revised by Mario Carneiro, 9-May-2015.) $)
+    rdgeq1 $p |- ( F = G -> rec ( F , A ) = rec ( G , A ) ) $=
+      ( vg vx wceq cvv cdm cfv ciun cun cmpt crecs crdg fveq1 iuneq2d
+      cv uneq2d mpteq2dv df-irdg recseq syl 3eqtr4g ) BCFZDGAEDQZHZEQ
+      UEIZBIZJZKZLZMZDGAEUFUGCIZJZKZLZMZBANCANUDUKUPFULUQFUDDGUJUOUDU
+      IUNAUDEUFUHUMUGBCOPRSUKUPUAUBEDBATEDCATUC $.
+
+    $( Equality theorem for the recursive definition generator.  (Contributed
+       by NM, 9-Apr-1995.)  (Revised by Mario Carneiro, 9-May-2015.) $)
+    rdgeq2 $p |- ( A = B -> rec ( F , A ) = rec ( F , B ) ) $=
+      ( vg vx wceq cvv cv cdm cfv ciun cmpt crecs crdg uneq1 mpteq2dv
+      cun recseq syl df-irdg 3eqtr4g ) ABFZDGAEDHZIEHUCJCJKZQZLZMZDGB
+      UDQZLZMZCANCBNUBUFUIFUGUJFUBDGUEUHABUDOPUFUIRSEDCATEDCBTUA $.
+  $}
+
+  ${
     $d x y z f g u v w F $.  $d x y z f g u v w A $.
     $( The recursive definition generator is a function.  (Contributed by Mario
        Carneiro, 16-Nov-2014.) $)
@@ -54057,6 +54129,33 @@ $)
       cv wfn wceq wral wa con0 wrex eqid tfrlem7 df-irdg funeqi mpbir
       cab ) BAHZICJADCRZKDRULLBLMNOZPZIEFGRZERZSFRZUOLUOUQQUMLTFUPUAU
       BEUCUDGUJZGUMURUEUFUKUNDCBAUGUHUI $.
+  $}
+
+  ${
+    $d A g $.  $d V g $.  $d g x $.
+    rdgruledefg.1 $e |- F Fn _V $.
+    $( The recursion rule for the recursive definition generator is defined
+       everywhere.  (Contributed by Jim Kingdon, 4-Jul-2019.) $)
+    rdgruledefg $p |- ( A e. V -> (
+        Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
+        /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
+          e. _V ) ) $=
+      ( wcel cv cvv cdm cfv ciun cun cmpt wfun funmpt vex wral funfvex wceq wfn
+      dmex fvex funfni mp2an iunex unexg ralrimivw dmmptg syl syl5eleqr sylancr
+      mpan2 jctil ) BFHZCIZDJBADIZKZAIZURLZELZMZNZOZLJHZVEPZUPVGUQVEKZHVFDJVDQZ
+      UPUQJVHCRUPVDJHZDJSVHJUAUPVJDJUPVCJHVJAUSVBURDRZUCEJUBVAJHVBJHZGUTURJJVKA
+      RUDVLJVAEVAETUEUFUGBVCFJUHUNUIDJVDJUJUKULUQVETUMVIUO $.
+  $}
+
+  ${
+    $d A g x y $.  $d F g x y $.  $d V g y $.
+    rdgexgg.1 $e |- F Fn _V $.
+    $( The recursive definition generator produces a set on a set input.
+       (Contributed by Jim Kingdon, 4-Jul-2019.) $)
+    rdgexgg $p |- ( ( A e. V /\ B e. W ) -> ( rec ( F , A ) ` B ) e. _V ) $=
+      ( vy vg vx wcel crdg cvv cv cdm cfv ciun cun cmpt df-irdg wfun wa alrimiv
+      rdgruledefg tfrex ) ADJZGBCAKHLAIHMZNIMUFOCOPQRZEIHCASUEUGTGMUGOLJUAGIAGH
+      CDFUCUBUD $.
   $}
 
   ${
@@ -54150,8 +54249,7 @@ $)
     $( The recursive definition generator produces a set on a set input.
        (Contributed by Mario Carneiro, 3-Jul-2019.) $)
     rdgexg $p |- ( B e. V -> ( rec ( F , A ) ` B ) e. _V ) $=
-      ( vy vg vx crdg cvv cv cdm cfv ciun cun cmpt df-irdg rdgruledef tfrex ) G
-      BCAJHKAIHLZMILUANCNOPQDIHCARIAGHCEFST $.
+      ( cvv wcel crdg cfv rdgexgg mpan ) AGHBDHBCAIJGHEABCGDFKL $.
 
     ${
       $d A x $.  $d B x $.  $d F x $.
@@ -54350,8 +54448,8 @@ $)
       eqid ax-mp rgenw fnmpti rdgexg df-oadd fnmpt2 ) ADZBEBDZFZGZCDZHIZEJZAKLZ
       CKLMKKNOULCKUKAKUEEJUKAPUIUEUHECPBEUGUHUFBPQUHRUAUBSTTCAKKUJMECABUCUDS $.
 
-    $( Ordinal addition is a set.
-       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    $( Ordinal addition is a set.  (Contributed by Mario Carneiro,
+       3-Jul-2019.) $)
     oaexg $p |- ( ( A e. V /\ B e. W ) -> ( A +o B ) e. _V ) $=
       ( vy vz vx cv cvv csuc cmpt crdg cfv wcel wal coa co vex sucex con0 ax-mp
       eqid fnmpti rdgexg gen2 df-oadd mpt2fvex mp3an1 ) EHZFIFHZJZKZGHZLMZINZEO
@@ -54365,8 +54463,8 @@ $)
       wcel mp2an eqid fnmpti rdgexg ax-mp fnmpt2i ) ABDDBEZCFCEZAEZGHZIZJKLZMAB
       CNUEFRUJFRBOJUEUIFPCFUHUIUFFRUGFRUHFRCOAOUFUGFFQSUITUAUBUCUD $.
 
-    $( Ordinal multiplication is a set.
-       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    $( Ordinal multiplication is a set.  (Contributed by Mario Carneiro,
+       3-Jul-2019.) $)
     omexg $p |- ( ( A e. V /\ B e. W ) -> ( A .o B ) e. _V ) $=
       ( vy vz vx cv cvv coa co cmpt c0 crdg cfv wcel wal comu vex con0 0ex eqid
       oaexg mp2an fnmpti rdgexg ax-mp gen2 df-omul mpt2fvex mp3an1 ) EHZFIFHZGH
@@ -54374,16 +54472,16 @@ $)
       UNIIUCUDUPUBUEUFUGUHGETTUQABRICDGEFUIUJUK $.
 
     $( Functionality and domain of ordinal exponentiation.  (Contributed by
-       Mario Carneiro, 29-May-2015.)
-       (Revised by Mario Carneiro, 3-Jul-2019.) $)
+       Mario Carneiro, 29-May-2015.)  (Revised by Mario Carneiro,
+       3-Jul-2019.) $)
     fnoei $p |- ^oi Fn ( On X. On ) $=
       ( vx vy vz con0 cv cvv comu co cmpt c1o crdg cfv coei df-oexpi wcel elexi
       vex 1on omexg mp2an eqid fnmpti rdgexg ax-mp fnmpt2i ) ABDDBEZCFCEZAEZGHZ
       IZJKLZMABCNUFFOUKFOBQJUFUJFJDRPCFUIUJUGFOUHFOUIFOCQAQUGUHFFSTUJUAUBUCUDUE
       $.
 
-    $( Ordinal exponentiation is a set.
-       (Contributed by Mario Carneiro, 3-Jul-2019.) $)
+    $( Ordinal exponentiation is a set.  (Contributed by Mario Carneiro,
+       3-Jul-2019.) $)
     oeiexg $p |- ( ( A e. V /\ B e. W ) -> ( A ^oi B ) e. _V ) $=
       ( vy vz vx cv cvv comu co cmpt c1o crdg cfv wcel wal coei vex con0 fnmpti
       1on elexi omexg mp2an eqid rdgexg ax-mp gen2 df-oexpi mpt2fvex mp3an1 ) E
