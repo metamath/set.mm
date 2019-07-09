@@ -54358,8 +54358,12 @@ $)
     df-omul $a |- .o = ( x e. On , y e. On |->
                 ( rec ( ( z e. _V |-> ( z +o x ) ) , (/) ) ` y ) ) $.
 
-    $( Define the ordinal exponentiation operation.  (Contributed by NM,
-       30-Dec-2004.) $)
+    $( Define the ordinal exponentiation operation.
+
+       This definition is similar to a conventional definition of
+       exponentiation except that it defines ` (/) ^oi A ` to be ` 1o ` for all
+       ` A e. On ` , in order to avoid having different cases for whether the
+       base is ` (/) ` or not.  (Contributed by Mario Carneiro, 4-Jul-2019.) $)
     df-oexpi $a |- ^oi = ( x e. On , y e. On |->
                  ( rec ( ( z e. _V |-> ( z .o x ) ) , 1o ) ` y ) ) $.
   $}
