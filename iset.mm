@@ -54179,9 +54179,8 @@ $)
     $( The recursive definition generator produces a set on a set input.
        (Contributed by Jim Kingdon, 4-Jul-2019.) $)
     rdgexgg $p |- ( ( A e. V /\ B e. W ) -> ( rec ( F , A ) ` B ) e. _V ) $=
-      ( vy vg vx wcel crdg cvv cv cdm cfv ciun cun cmpt df-irdg wfun wa alrimiv
-      rdgruledefg tfrex ) ADJZGBCAKHLAIHMZNIMUFOCOPQRZEIHCASUEUGTGMUGOLJUAGIAGH
-      CDFUCUBUD $.
+      ( cvv wfn wcel crdg cfv rdgexggg mp3an1 ) CGHADIBEIBCAJKGIFABCD
+      ELM $.
   $}
 
   ${
