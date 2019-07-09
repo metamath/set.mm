@@ -54149,7 +54149,7 @@ $)
   $}
 
   ${
-    $d A g $.  $d V g $.  $d g x $.
+    $d A g $.  $d V g $.  $d g x F $.
     rdgruledefg.1 $e |- F Fn _V $.
     $( The recursion rule for the recursive definition generator is defined
        everywhere.  (Contributed by Jim Kingdon, 4-Jul-2019.) $)
@@ -54157,11 +54157,8 @@ $)
         Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
         /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
           e. _V ) ) $=
-      ( wcel cv cvv cdm cfv ciun cun cmpt wfun funmpt vex wral funfvex wceq wfn
-      dmex fvex funfni mp2an iunex unexg ralrimivw dmmptg syl syl5eleqr sylancr
-      mpan2 jctil ) BFHZCIZDJBADIZKZAIZURLZELZMZNZOZLJHZVEPZUPVGUQVEKZHVFDJVDQZ
-      UPUQJVHCRUPVDJHZDJSVHJUAUPVJDJUPVCJHVJAUSVBURDRZUCEJUBVAJHVBJHZGUTURJJVKA
-      RUDVLJVAEVAETUEUFUGBVCFJUHUNUIDJVDJUJUKULUQVETUMVIUO $.
+      ( cvv wfn wcel cv cdm cfv ciun cun cmpt wfun rdgruledefgg mpan
+      wa ) EHIBFJDHBADKZLAKUAMEMNOPZQCKUBMHJTGABCDEFRS $.
   $}
 
   ${
