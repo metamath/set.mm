@@ -54132,6 +54132,23 @@ $)
   $}
 
   ${
+    $d A g $.  $d g x F $.
+    $( The recursion rule for the recursive definition generator is defined
+       everywhere.  (Contributed by Jim Kingdon, 4-Jul-2019.) $)
+    rdgruledefgg $p |- ( ( F Fn _V /\ A e. V ) -> (
+        Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
+        /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
+          e. _V ) ) $=
+      ( wcel cvv wfn cv cdm cfv ciun wa wral funfvex ralrimivw sylan2
+      vex syl cun cmpt wfun elex funmpt wceq fvex funfni mpan2 iunexg
+      dmex mpan unexg ancoms dmmptg syl5eleqr sylancr jctil ) BFGEHIZ
+      BHGZDHBADJZKZAJZVALZELZMZUAZUBZUCZCJZVHLHGZNBFUDUSUTNZVKVIVLVIV
+      JVHKZGVKDHVGUEZVLVJHVMCSVLVGHGZDHOVMHUFVLVODHUTUSVOUSUTVFHGZVOU
+      SVEHGZAVBOZVPUSVQAVBUSVDHGVQVCVAHHDSZASUGVQHVDEVDEPUHUIQVBHGVRV
+      PVAVSUKAVBVEHHUJULTBVFHHUMRUNQDHVGHUOTUPVJVHPUQVNURR $.
+  $}
+
+  ${
     $d A g $.  $d V g $.  $d g x $.
     rdgruledefg.1 $e |- F Fn _V $.
     $( The recursion rule for the recursive definition generator is defined
