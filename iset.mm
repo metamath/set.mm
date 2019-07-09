@@ -54132,7 +54132,24 @@ $)
   $}
 
   ${
-    $d A g $.  $d V g $.  $d g x $.
+    $d A g $.  $d g x F $.
+    $( The recursion rule for the recursive definition generator is defined
+       everywhere.  (Contributed by Jim Kingdon, 4-Jul-2019.) $)
+    rdgruledefgg $p |- ( ( F Fn _V /\ A e. V ) -> (
+        Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
+        /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
+          e. _V ) ) $=
+      ( wcel cvv wfn cv cdm cfv ciun wa wral funfvex ralrimivw sylan2
+      vex syl cun cmpt wfun elex funmpt wceq fvex funfni mpan2 iunexg
+      dmex mpan unexg ancoms dmmptg syl5eleqr sylancr jctil ) BFGEHIZ
+      BHGZDHBADJZKZAJZVALZELZMZUAZUBZUCZCJZVHLHGZNBFUDUSUTNZVKVIVLVIV
+      JVHKZGVKDHVGUEZVLVJHVMCSVLVGHGZDHOVMHUFVLVODHUTUSVOUSUTVFHGZVOU
+      SVEHGZAVBOZVPUSVQAVBUSVDHGVQVCVAHHDSZASUGVQHVDEVDEPUHUIQVBHGVRV
+      PVAVSUKAVBVEHHUJULTBVFHHUMRUNQDHVGHUOTUPVJVHPUQVNURR $.
+  $}
+
+  ${
+    $d A g $.  $d V g $.  $d g x F $.
     rdgruledefg.1 $e |- F Fn _V $.
     $( The recursion rule for the recursive definition generator is defined
        everywhere.  (Contributed by Jim Kingdon, 4-Jul-2019.) $)
@@ -54140,11 +54157,20 @@ $)
         Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
         /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
           e. _V ) ) $=
-      ( wcel cv cvv cdm cfv ciun cun cmpt wfun funmpt vex wral funfvex wceq wfn
-      dmex fvex funfni mp2an iunex unexg ralrimivw dmmptg syl syl5eleqr sylancr
-      mpan2 jctil ) BFHZCIZDJBADIZKZAIZURLZELZMZNZOZLJHZVEPZUPVGUQVEKZHVFDJVDQZ
-      UPUQJVHCRUPVDJHZDJSVHJUAUPVJDJUPVCJHVJAUSVBURDRZUCEJUBVAJHVBJHZGUTURJJVKA
-      RUDVLJVAEVAETUEUFUGBVCFJUHUNUIDJVDJUJUKULUQVETUMVIUO $.
+      ( cvv wfn wcel cv cdm cfv ciun cun cmpt wfun rdgruledefgg mpan
+      wa ) EHIBFJDHBADKZLAKUAMEMNOPZQCKUBMHJTGABCDEFRS $.
+  $}
+
+  ${
+    $d A g x y $.  $d F g x y $.  $d V g y $.
+    $( The recursive definition generator produces a set on a set input.
+       (Contributed by Jim Kingdon, 4-Jul-2019.) $)
+    rdgexggg $p |- ( ( F Fn _V /\ A e. V /\ B e. W ) ->
+        ( rec ( F , A ) ` B ) e. _V ) $=
+      ( vy vg vx cvv wfn wcel crdg cfv wa cdm ciun cun cmpt df-irdg
+      cv wfun rdgruledefgg alrimiv tfrex 3impa ) CIJZADKZBEKBCALZMIKU
+      FUGNZFBUHGIAHGTZOHTUJMCMPQRZEHGCASUIUKUAFTUKMIKNFHAFGCDUBUCUDUE
+      $.
   $}
 
   ${
@@ -54153,9 +54179,8 @@ $)
     $( The recursive definition generator produces a set on a set input.
        (Contributed by Jim Kingdon, 4-Jul-2019.) $)
     rdgexgg $p |- ( ( A e. V /\ B e. W ) -> ( rec ( F , A ) ` B ) e. _V ) $=
-      ( vy vg vx wcel crdg cvv cv cdm cfv ciun cun cmpt df-irdg wfun wa alrimiv
-      rdgruledefg tfrex ) ADJZGBCAKHLAIHMZNIMUFOCOPQRZEIHCASUEUGTGMUGOLJUAGIAGH
-      CDFUCUBUD $.
+      ( cvv wfn wcel crdg cfv rdgexggg mp3an1 ) CGHADIBEIBCAJKGIFABCD
+      ELM $.
   $}
 
   ${
@@ -54169,11 +54194,8 @@ $)
         Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
         /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
           e. _V ) $=
-      ( cvv cdm cfv ciun cun cmpt wfun wcel funmpt vex funfvex mp2an
-      cv dmex wfn fvex funfni iunex unex eqid dmmpti eleqtrri pm3.2i
-      ) DHBADTZIZATZUKJZEJZKZLZMZNZCTZURJHOZDHUQPZUSUTURIZOVAVBUTHVCC
-      QDHUQURBUPFAULUOUKDQZUAEHUBUNHOUOHOZGUMUKHHVDAQUCVEHUNEUNERUDSU
-      EUFURUGUHUIUTURRSUJ $.
+      ( cvv wfn wcel cv cdm cfv ciun cun cmpt wfun rdgruledefgg mp2an
+      wa ) EHIBHJDHBADKZLAKUAMEMNOPZQCKUBMHJTGFABCDEHRS $.
 
     $( The recursive definition generator is a function on ordinal numbers.
        The ` F Fn _V ` hypothesis states that the characteristic function is
@@ -54499,6 +54521,18 @@ $)
       co vex fnmpti rdgexgg rdgeq2 fveq1d df-oadd ovmpt2g mpd3an3
       fveq2 ) BFGCFGCAHAIZJZKZBLZMZHGBCNRULOBCUJFFAHUIUJUHASPUJQTUADE
       BCFFEIZUJDIZLZMULNUMUKMHUNBOUMUOUKUNBUJUBUCUMCUKUGDEAUDUEUF $.
+
+    $( Value of ordinal multiplication.  (Contributed by NM, 17-Sep-1995.)
+       (Revised by Mario Carneiro, 23-Aug-2014.) $)
+    omv $p |- ( ( A e. On /\ B e. On ) ->
+     ( A .o B ) = ( rec ( ( x e. _V |-> ( x +o A ) ) , (/) ) ` B ) ) $=
+      ( vy vz con0 wcel cvv cv coa co cmpt c0 crdg cfv comu 0elon wfn
+      wceq syl wral oaexg mpan ralrimivw eqid rdgexggg syl3an1 mp3an2
+      vex fnmpt oveq2 mpteq2dv rdgeq1 fveq1d df-omul ovmpt2g mpd3an3
+      fveq2 ) BFGZCFGZCAHAIZBJKZLZMNZOZHGZBCPKVESUSMFGZUTVFQUSVCHRZVG
+      UTVFUSVBHGZAHUAVHUSVIAHVAHGUSVIAUIVABHFUBUCUDAHVBVCHVCUEUJTMCVC
+      FFUFUGUHDEBCFFEIZAHVADIZJKZLZMNZOVEPVJVDOHVKBSZVJVNVDVOVMVCSVNV
+      DSVOAHVLVBVKBVAJUKULMVMVCUMTUNVJCVDURDEAUOUPUQ $.
   $}
 
 $(
