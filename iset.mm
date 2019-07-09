@@ -54163,6 +54163,18 @@ $)
 
   ${
     $d A g x y $.  $d F g x y $.  $d V g y $.
+    $( The recursive definition generator produces a set on a set input.
+       (Contributed by Jim Kingdon, 4-Jul-2019.) $)
+    rdgexggg $p |- ( ( F Fn _V /\ A e. V /\ B e. W ) ->
+        ( rec ( F , A ) ` B ) e. _V ) $=
+      ( vy vg vx cvv wfn wcel crdg cfv wa cdm ciun cun cmpt df-irdg
+      cv wfun rdgruledefgg alrimiv tfrex 3impa ) CIJZADKZBEKBCALZMIKU
+      FUGNZFBUHGIAHGTZOHTUJMCMPQRZEHGCASUIUKUAFTUKMIKNFHAFGCDUBUCUDUE
+      $.
+  $}
+
+  ${
+    $d A g x y $.  $d F g x y $.  $d V g y $.
     rdgexgg.1 $e |- F Fn _V $.
     $( The recursive definition generator produces a set on a set input.
        (Contributed by Jim Kingdon, 4-Jul-2019.) $)
