@@ -54194,11 +54194,8 @@ $)
         Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
         /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
           e. _V ) $=
-      ( cvv cdm cfv ciun cun cmpt wfun wcel funmpt vex funfvex mp2an
-      cv dmex wfn fvex funfni iunex unex eqid dmmpti eleqtrri pm3.2i
-      ) DHBADTZIZATZUKJZEJZKZLZMZNZCTZURJHOZDHUQPZUSUTURIZOVAVBUTHVCC
-      QDHUQURBUPFAULUOUKDQZUAEHUBUNHOUOHOZGUMUKHHVDAQUCVEHUNEUNERUDSU
-      EUFURUGUHUIUTURRSUJ $.
+      ( cvv wfn wcel cv cdm cfv ciun cun cmpt wfun rdgruledefgg mp2an
+      wa ) EHIBHJDHBADKZLAKUAMEMNOPZQCKUBMHJTGFABCDEHRS $.
 
     $( The recursive definition generator is a function on ordinal numbers.
        The ` F Fn _V ` hypothesis states that the characteristic function is
