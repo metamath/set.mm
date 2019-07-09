@@ -269,10 +269,10 @@
 "4syl" is used by "bnj1098".
 "4syl" is used by "canthp1lem2".
 "4syl" is used by "cantnf".
-"4syl" is used by "cantnfALT".
-"4syl" is used by "cantnfALTlt2".
-"4syl" is used by "cantnfcl".
+"4syl" is used by "cantnfOLD".
+"4syl" is used by "cantnfclOLD".
 "4syl" is used by "cantnflt2".
+"4syl" is used by "cantnflt2OLD".
 "4syl" is used by "cdlemk45".
 "4syl" is used by "chtnprm".
 "4syl" is used by "climcndslem1".
@@ -373,7 +373,6 @@
 "4syl" is used by "nrginvrcn".
 "4syl" is used by "odcl2".
 "4syl" is used by "oddprm".
-"4syl" is used by "oemapALTso".
 "4syl" is used by "oemapso".
 "4syl" is used by "oismo".
 "4syl" is used by "ordcmp".
@@ -2860,6 +2859,81 @@
 "c-bnj18" is used by "bnj983".
 "c-bnj18" is used by "bnj996".
 "c-bnj18" is used by "bnj998".
+"cantnfOLD" is used by "cantnffval2OLD".
+"cantnfOLD" is used by "oemapweOLD".
+"cantnfclOLD" is used by "cantnfleOLD".
+"cantnfclOLD" is used by "cantnflem1OLD".
+"cantnfclOLD" is used by "cantnflem1bOLD".
+"cantnfclOLD" is used by "cantnflem1dOLD".
+"cantnfclOLD" is used by "cantnflt2OLD".
+"cantnfclOLD" is used by "cantnfltOLD".
+"cantnfclOLD" is used by "cantnfp1lem2OLD".
+"cantnfclOLD" is used by "cantnfp1lem3OLD".
+"cantnfclOLD" is used by "cantnfval2OLD".
+"cantnfclOLD" is used by "cnfcom2lemOLD".
+"cantnfclOLD" is used by "cnfcom3lemOLD".
+"cantnfclOLD" is used by "cnfcomOLD".
+"cantnfclOLD" is used by "cnfcomlemOLD".
+"cantnfdmOLD" is used by "cantnfsOLD".
+"cantnfdmOLD" is used by "cantnfvalOLD".
+"cantnfdmOLD" is used by "oef1oOLD".
+"cantnfdmOLD" is used by "wemapweOLD".
+"cantnffvalOLD" is used by "cantnfdmOLD".
+"cantnffvalOLD" is used by "cantnfvalOLD".
+"cantnfleOLD" is used by "cantnflem3OLD".
+"cantnflem1OLD" is used by "cantnfOLD".
+"cantnflem1aOLD" is used by "cantnflem1OLD".
+"cantnflem1aOLD" is used by "cantnflem1bOLD".
+"cantnflem1aOLD" is used by "cantnflem1dOLD".
+"cantnflem1bOLD" is used by "cantnflem1cOLD".
+"cantnflem1cOLD" is used by "cantnflem1OLD".
+"cantnflem1dOLD" is used by "cantnflem1OLD".
+"cantnflem3OLD" is used by "cantnflem4OLD".
+"cantnflem4OLD" is used by "cantnfOLD".
+"cantnflt2OLD" is used by "cantnflem1dOLD".
+"cantnflt2OLD" is used by "cnfcom3lemOLD".
+"cantnfltOLD" is used by "cantnflt2OLD".
+"cantnfltOLD" is used by "cnfcomlemOLD".
+"cantnfp1OLD" is used by "cantnflem1OLD".
+"cantnfp1OLD" is used by "cantnflem1dOLD".
+"cantnfp1OLD" is used by "cantnflem3OLD".
+"cantnfp1lem1OLD" is used by "cantnfp1OLD".
+"cantnfp1lem1OLD" is used by "cantnfp1lem2OLD".
+"cantnfp1lem1OLD" is used by "cantnfp1lem3OLD".
+"cantnfp1lem2OLD" is used by "cantnfp1lem3OLD".
+"cantnfp1lem3OLD" is used by "cantnfp1OLD".
+"cantnfsOLD" is used by "cantnfOLD".
+"cantnfsOLD" is used by "cantnfclOLD".
+"cantnfsOLD" is used by "cantnfleOLD".
+"cantnfsOLD" is used by "cantnflem1OLD".
+"cantnfsOLD" is used by "cantnflem1aOLD".
+"cantnfsOLD" is used by "cantnflem1bOLD".
+"cantnfsOLD" is used by "cantnflem1cOLD".
+"cantnfsOLD" is used by "cantnflem1dOLD".
+"cantnfsOLD" is used by "cantnflem3OLD".
+"cantnfsOLD" is used by "cantnfltOLD".
+"cantnfsOLD" is used by "cantnfp1OLD".
+"cantnfsOLD" is used by "cantnfp1lem1OLD".
+"cantnfsOLD" is used by "cantnfp1lem2OLD".
+"cantnfsOLD" is used by "cantnfp1lem3OLD".
+"cantnfsOLD" is used by "cnfcom2lemOLD".
+"cantnfsOLD" is used by "cnfcom3OLD".
+"cantnfsOLD" is used by "cnfcom3lemOLD".
+"cantnfsOLD" is used by "cnfcomOLD".
+"cantnfsOLD" is used by "cnfcomlemOLD".
+"cantnfsucOLD" is used by "cantnfleOLD".
+"cantnfsucOLD" is used by "cantnflem1OLD".
+"cantnfsucOLD" is used by "cantnflem1dOLD".
+"cantnfsucOLD" is used by "cantnfltOLD".
+"cantnfsucOLD" is used by "cantnfp1lem3OLD".
+"cantnfsucOLD" is used by "cnfcomlemOLD".
+"cantnfvalOLD" is used by "cantnfOLD".
+"cantnfvalOLD" is used by "cantnfleOLD".
+"cantnfvalOLD" is used by "cantnflem1OLD".
+"cantnfvalOLD" is used by "cantnflt2OLD".
+"cantnfvalOLD" is used by "cantnfp1lem3OLD".
+"cantnfvalOLD" is used by "cantnfval2OLD".
+"cantnfvalOLD" is used by "cnfcom2OLD".
 "cba" is used by "0lno".
 "cba" is used by "0ofval".
 "cba" is used by "ajfuni".
@@ -4074,6 +4148,17 @@
 "cncph" is used by "cnchl".
 "cncph" is used by "elimphu".
 "cncvc" is used by "cnnv".
+"cnfcom2OLD" is used by "cnfcom3OLD".
+"cnfcom2lemOLD" is used by "cnfcom2OLD".
+"cnfcom2lemOLD" is used by "cnfcom3OLD".
+"cnfcom2lemOLD" is used by "cnfcom3lemOLD".
+"cnfcom3OLD" is used by "cnfcom3clemOLD".
+"cnfcom3cOLD" is used by "infxpenc2OLD".
+"cnfcom3clemOLD" is used by "cnfcom3cOLD".
+"cnfcom3lemOLD" is used by "cnfcom3OLD".
+"cnfcom3lemOLD" is used by "cnfcom3clemOLD".
+"cnfcomOLD" is used by "cnfcom2OLD".
+"cnfcomlemOLD" is used by "cnfcomOLD".
 "cnfnc" is used by "nmcfnexi".
 "cnid" is used by "addinv".
 "cnid" is used by "cnnv".
@@ -5890,6 +5975,7 @@
 "fnsuppresOLD" is used by "fnsuppeq0OLD".
 "fnsuppresOLD" is used by "frlmsslss2".
 "fnsuppresOLD" is used by "resf1o".
+"fsuppeq" is used by "pwfi2f1o".
 "funadj" is used by "adj1".
 "funadj" is used by "adj1o".
 "funadj" is used by "adjeq".
@@ -8442,6 +8528,9 @@
 "in3" is used by "truniALTVD".
 "in3an" is used by "onfrALTlem2VD".
 "indpi" is used by "prlem934".
+"infxpenc2lem2OLD" is used by "infxpenc2lem3OLD".
+"infxpenc2lem3OLD" is used by "infxpenc2OLD".
+"infxpencOLD" is used by "infxpenc2lem2OLD".
 "int2" is used by "sspwimpVD".
 "int2" is used by "sspwimpcfVD".
 "int2" is used by "suctrALTcfVD".
@@ -9291,10 +9380,11 @@
 "mapdval2N" is used by "mapdval4N".
 "mapdval4N" is used by "mapd1dim2lem1N".
 "mapdval4N" is used by "mapdval5N".
+"mapfien2OLD" is used by "frlmpwfi".
 "mapfienOLD" is used by "fcobijfs".
-"mapfienOLD" is used by "mapfien2".
-"mapfienOLD" is used by "oef1o".
-"mapfienOLD" is used by "wemapwe".
+"mapfienOLD" is used by "mapfien2OLD".
+"mapfienOLD" is used by "oef1oOLD".
+"mapfienOLD" is used by "wemapweOLD".
 "mappsrpr" is used by "map2psrpr".
 "mappsrpr" is used by "supsrlem".
 "mayete3i" is used by "mayetes3i".
@@ -10102,6 +10192,21 @@
 "nmoxr" is used by "nmooge0".
 "nmoxr" is used by "nmoreltpnf".
 "nmoxr" is used by "ubthlem3".
+"nn0supp" is used by "eulerpartgbij".
+"nn0supp" is used by "eulerpartlemb".
+"nn0supp" is used by "eulerpartlemmf".
+"nn0supp" is used by "eulerpartlems".
+"nn0supp" is used by "mplbas2".
+"nn0supp" is used by "mplcoe2".
+"nn0supp" is used by "mplcoe3".
+"nn0supp" is used by "mvridlem".
+"nn0supp" is used by "psrbagaddcl".
+"nn0supp" is used by "psrbaglefi".
+"nn0supp" is used by "psrbaglesupp".
+"nn0supp" is used by "psrbagsuppfi".
+"nn0supp" is used by "psrbas".
+"nn0supp" is used by "psrlidm".
+"nn0supp" is used by "psrridm".
 "nnexALT" is used by "qexALT".
 "nnexALT" is used by "rpnnen1lem1".
 "nnexALT" is used by "rpnnen1lem3".
@@ -10972,6 +11077,7 @@
 "ocval" is used by "occon".
 "ocval" is used by "ocel".
 "ocval" is used by "ocsh".
+"oef1oOLD" is used by "infxpencOLD".
 "oldmm3N" is used by "cmtbr3N".
 "oldmm3N" is used by "lhprelat3N".
 "omlfh1N" is used by "omlfh3N".
@@ -12790,8 +12896,8 @@
 "supexpr" is used by "supsrlem".
 "suplem1pr" is used by "supexpr".
 "suplem2pr" is used by "supexpr".
-"suppss2OLD" is used by "cantnflem1".
-"suppss2OLD" is used by "cantnflem1d".
+"suppss2OLD" is used by "cantnflem1OLD".
+"suppss2OLD" is used by "cantnflem1dOLD".
 "suppss2OLD" is used by "coe1mul3".
 "suppss2OLD" is used by "coe1tmmul".
 "suppss2OLD" is used by "coe1tmmul2".
@@ -12830,8 +12936,8 @@
 "suppss2OLD" is used by "tsms0".
 "suppss2OLD" is used by "tsmssplit".
 "suppss2OLD" is used by "uvcresum".
-"suppssOLD" is used by "cantnfp1lem1".
-"suppssOLD" is used by "cantnfp1lem3".
+"suppssOLD" is used by "cantnfp1lem1OLD".
+"suppssOLD" is used by "cantnfp1lem3OLD".
 "suppssOLD" is used by "deg1mul3le".
 "suppssOLD" is used by "dprdsubg".
 "suppssOLD" is used by "evlslem3".
@@ -12861,11 +12967,11 @@
 "suppssov1OLD" is used by "ply1coe".
 "suppssov1OLD" is used by "plypf1".
 "suppssov1OLD" is used by "suppssof1OLD".
-"suppssrOLD" is used by "cantnflem1".
-"suppssrOLD" is used by "cantnflem1d".
-"suppssrOLD" is used by "cantnfp1lem1".
-"suppssrOLD" is used by "cantnfp1lem3".
-"suppssrOLD" is used by "cnfcom2lem".
+"suppssrOLD" is used by "cantnflem1OLD".
+"suppssrOLD" is used by "cantnflem1dOLD".
+"suppssrOLD" is used by "cantnfp1lem1OLD".
+"suppssrOLD" is used by "cantnfp1lem3OLD".
+"suppssrOLD" is used by "cnfcom2lemOLD".
 "suppssrOLD" is used by "deg1mul3le".
 "suppssrOLD" is used by "dmdprdsplitlem".
 "suppssrOLD" is used by "dpjidcl".
@@ -13347,7 +13453,6 @@
 "w-bnj19" is used by "bnj978".
 "watfvalN" is used by "watvalN".
 "watvalN" is used by "iswatN".
-"wemapso2OLD" is used by "oemapso".
 "wl-a1d" is used by "wl-ax2".
 "wl-a1i" is used by "wl-mpi".
 "wl-ax1" is used by "wl-a1d".
@@ -13542,7 +13647,7 @@ New usage of "4atex2-0bOLDN" is discouraged (0 uses).
 New usage of "4atex2-0cOLDN" is discouraged (0 uses).
 New usage of "4ipval2" is discouraged (2 uses).
 New usage of "4ipval3" is discouraged (0 uses).
-New usage of "4syl" is discouraged (193 uses).
+New usage of "4syl" is discouraged (192 uses).
 New usage of "5oai" is discouraged (0 uses).
 New usage of "5oalem1" is discouraged (1 uses).
 New usage of "5oalem2" is discouraged (2 uses).
@@ -14316,6 +14421,29 @@ New usage of "bwthOLD" is discouraged (0 uses).
 New usage of "c-bnj14" is discouraged (131 uses).
 New usage of "c-bnj18" is discouraged (58 uses).
 New usage of "cadanOLD" is discouraged (0 uses).
+New usage of "cantnfOLD" is discouraged (2 uses).
+New usage of "cantnfclOLD" is discouraged (13 uses).
+New usage of "cantnfdmOLD" is discouraged (4 uses).
+New usage of "cantnffval2OLD" is discouraged (0 uses).
+New usage of "cantnffvalOLD" is discouraged (2 uses).
+New usage of "cantnfleOLD" is discouraged (1 uses).
+New usage of "cantnflem1OLD" is discouraged (1 uses).
+New usage of "cantnflem1aOLD" is discouraged (3 uses).
+New usage of "cantnflem1bOLD" is discouraged (1 uses).
+New usage of "cantnflem1cOLD" is discouraged (1 uses).
+New usage of "cantnflem1dOLD" is discouraged (1 uses).
+New usage of "cantnflem3OLD" is discouraged (1 uses).
+New usage of "cantnflem4OLD" is discouraged (1 uses).
+New usage of "cantnflt2OLD" is discouraged (2 uses).
+New usage of "cantnfltOLD" is discouraged (2 uses).
+New usage of "cantnfp1OLD" is discouraged (3 uses).
+New usage of "cantnfp1lem1OLD" is discouraged (3 uses).
+New usage of "cantnfp1lem2OLD" is discouraged (1 uses).
+New usage of "cantnfp1lem3OLD" is discouraged (1 uses).
+New usage of "cantnfsOLD" is discouraged (19 uses).
+New usage of "cantnfsucOLD" is discouraged (6 uses).
+New usage of "cantnfval2OLD" is discouraged (0 uses).
+New usage of "cantnfvalOLD" is discouraged (7 uses).
 New usage of "cba" is discouraged (88 uses).
 New usage of "cbncms" is discouraged (5 uses).
 New usage of "cbv1OLD" is discouraged (0 uses).
@@ -14650,6 +14778,14 @@ New usage of "cnchl" is discouraged (1 uses).
 New usage of "cncph" is discouraged (2 uses).
 New usage of "cncvc" is discouraged (1 uses).
 New usage of "cnexALT" is discouraged (0 uses).
+New usage of "cnfcom2OLD" is discouraged (1 uses).
+New usage of "cnfcom2lemOLD" is discouraged (3 uses).
+New usage of "cnfcom3OLD" is discouraged (1 uses).
+New usage of "cnfcom3cOLD" is discouraged (1 uses).
+New usage of "cnfcom3clemOLD" is discouraged (1 uses).
+New usage of "cnfcom3lemOLD" is discouraged (2 uses).
+New usage of "cnfcomOLD" is discouraged (1 uses).
+New usage of "cnfcomlemOLD" is discouraged (1 uses).
 New usage of "cnfnc" is discouraged (1 uses).
 New usage of "cnid" is discouraged (4 uses).
 New usage of "cnims" is discouraged (1 uses).
@@ -15433,6 +15569,7 @@ New usage of "fnniniseg2OLD" is discouraged (5 uses).
 New usage of "fnsuppeq0OLD" is discouraged (0 uses).
 New usage of "fnsuppresOLD" is discouraged (3 uses).
 New usage of "fsumiunOLD" is discouraged (0 uses).
+New usage of "fsuppeq" is discouraged (1 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
 New usage of "funcnvmptOLD" is discouraged (0 uses).
@@ -16029,6 +16166,10 @@ New usage of "in3an" is discouraged (1 uses).
 New usage of "indistpsx" is discouraged (0 uses).
 New usage of "indpi" is discouraged (1 uses).
 New usage of "infpssALT" is discouraged (0 uses).
+New usage of "infxpenc2OLD" is discouraged (0 uses).
+New usage of "infxpenc2lem2OLD" is discouraged (1 uses).
+New usage of "infxpenc2lem3OLD" is discouraged (1 uses).
+New usage of "infxpencOLD" is discouraged (1 uses).
 New usage of "int2" is discouraged (3 uses).
 New usage of "int3" is discouraged (1 uses).
 New usage of "intnatN" is discouraged (0 uses).
@@ -16417,6 +16558,7 @@ New usage of "mapdval2N" is discouraged (2 uses).
 New usage of "mapdval3N" is discouraged (0 uses).
 New usage of "mapdval4N" is discouraged (2 uses).
 New usage of "mapdval5N" is discouraged (0 uses).
+New usage of "mapfien2OLD" is discouraged (1 uses).
 New usage of "mapfienOLD" is discouraged (4 uses).
 New usage of "mappsrpr" is discouraged (2 uses).
 New usage of "mathbox" is discouraged (0 uses).
@@ -16720,6 +16862,7 @@ New usage of "nmounbi" is discouraged (2 uses).
 New usage of "nmounbseqi" is discouraged (0 uses).
 New usage of "nmounbseqiOLD" is discouraged (0 uses).
 New usage of "nmoxr" is discouraged (7 uses).
+New usage of "nn0supp" is discouraged (15 uses).
 New usage of "nnexALT" is discouraged (6 uses).
 New usage of "noinfepOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
@@ -16891,6 +17034,8 @@ New usage of "ocorth" is discouraged (3 uses).
 New usage of "ocsh" is discouraged (6 uses).
 New usage of "ocss" is discouraged (11 uses).
 New usage of "ocval" is discouraged (4 uses).
+New usage of "oef1oOLD" is discouraged (1 uses).
+New usage of "oemapweOLD" is discouraged (0 uses).
 New usage of "oldmm3N" is discouraged (2 uses).
 New usage of "olposN" is discouraged (0 uses).
 New usage of "omlfh1N" is discouraged (2 uses).
@@ -17813,7 +17958,8 @@ New usage of "w-bnj17" is discouraged (103 uses).
 New usage of "w-bnj19" is discouraged (8 uses).
 New usage of "watfvalN" is discouraged (1 uses).
 New usage of "watvalN" is discouraged (1 uses).
-New usage of "wemapso2OLD" is discouraged (1 uses).
+New usage of "wemapso2OLD" is discouraged (0 uses).
+New usage of "wemapweOLD" is discouraged (0 uses).
 New usage of "wl-a1d" is discouraged (1 uses).
 New usage of "wl-a1i" is discouraged (1 uses).
 New usage of "wl-ax1" is discouraged (3 uses).
@@ -17975,6 +18121,7 @@ Proof modification of "ax16g-o" is discouraged (40 steps).
 Proof modification of "ax16gALT" is discouraged (40 steps).
 Proof modification of "ax2" is discouraged (46 steps).
 Proof modification of "ax3" is discouraged (24 steps).
+Proof modification of "ax3h" is discouraged (21 steps).
 Proof modification of "ax4" is discouraged (45 steps).
 Proof modification of "ax52" is discouraged (14 steps).
 Proof modification of "ax5ALT" is discouraged (3 steps).
