@@ -53923,6 +53923,30 @@ $)
 
   ${
     $d f g h u v w x y z A $.  $d f g h u v w x y z F $.  $d z C $.
+    $d f g ph w y z $.
+    tfrlemi14d.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    tfrlemi14d.2 $e |- ( ph -> A. x ( Fun F /\ ( F ` x ) e. _V ) ) $.
+    $( The domain of ` recs ` is all ordinals (lemma for transfinite
+       recursion).  (Contributed by Jim Kingdon, 9-Jul-2019.) $)
+    tfrlemi14d $p |- ( ph -> dom recs ( F ) = On ) $=
+      ( vh vz vg vu vw cdm con0 cv wcel wa cfv cvv crecs word tfrlem8 mp1i ciun
+      wss ordsson wrex wfn cres wceq wral tfrlemi1 cop csn wfun ad2antrr simplr
+      cun wal simprl fneq2 raleq anbi12d rspcev adantll tfrlem3a tfrlemisucaccv
+      vex sylibr tfrlem3-2d simprd opexg sylancr snidg 3syl wi opeldmg mpd dmeq
+      elun2 eleq2d syl2anc exlimddv eliun ssrdv cuni recsfval dmeqi dmuni eqtri
+      ex syl6sseqr eqssd ) AFUAZNZOWPUBWPOUFABCDEFGUCWPUGUDAOIDIPZNZUEZWPAJOWSA
+      JPZOQZWTWSQZAXARZWTWRQZIDUHZXBXCKPZWTUIZLPZXFSXFXHUJFSUKZLWTULZRZXEKABCLD
+      WTEKFGHUMXCXKRZXFWTXFFSZUNZUOZUSZDQWTXPNZQZXEXLBCJDEKFGAFUPZBPFSTQRBUTXAX
+      KHUQAXAXKURXCXGXJVAXLXFMPZUIZXILXTULZRZMOUHZXFDQXAXKYDAYCXKMWTOXTWTUKYAXG
+      YBXJXTWTXFVBXILXTWTVCVDVEVFBCMLDEFXFGKVIVGVJVHXLXNXPQZXRAYEXAXKAXNTQZXNXO
+      QYEAWTTQZXMTQZYFJVIZAXSYHABKFHVKVLZWTXMTTVMVNXNTVOXNXOXFWAVPUQAYEXRVQZXAX
+      KAYGYHYKYIYJWTXMXPTTVRVNUQVSXDXRIXPDWQXPUKWRXQWTWQXPVTWBVEWCWDIWTDWRWEVJW
+      LWFWPDWGZNWSWOYLBCDEFGWHWIIDWJWKWMWN $.
+  $}
+
+  ${
+    $d f g h u v w x y z A $.  $d f g h u v w x y z F $.  $d z C $.
     tfrlemi14.1 $e |- A = { f | E. x e. On ( f Fn x /\
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
     tfrlemi14.2 $e |- ( Fun F /\ ( F ` x ) e. _V ) $.
