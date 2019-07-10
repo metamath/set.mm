@@ -1,4 +1,4 @@
-$( iset.mm - Version of 4-Jul-2019
+$( iset.mm - Version of 9-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54358,8 +54358,12 @@ $)
     df-omul $a |- .o = ( x e. On , y e. On |->
                 ( rec ( ( z e. _V |-> ( z +o x ) ) , (/) ) ` y ) ) $.
 
-    $( Define the ordinal exponentiation operation.  (Contributed by NM,
-       30-Dec-2004.) $)
+    $( Define the ordinal exponentiation operation.
+
+       This definition is similar to a conventional definition of
+       exponentiation except that it defines ` (/) ^oi A ` to be ` 1o ` for all
+       ` A e. On ` , in order to avoid having different cases for whether the
+       base is ` (/) ` or not.  (Contributed by Mario Carneiro, 4-Jul-2019.) $)
     df-oexpi $a |- ^oi = ( x e. On , y e. On |->
                  ( rec ( ( z e. _V |-> ( z .o x ) ) , 1o ) ` y ) ) $.
   $}
@@ -54529,6 +54533,21 @@ $)
       ( vy vz con0 wcel cvv cv coa co cmpt c0 crdg cfv comu 0elon wfn
       wceq syl wral oaexg mpan ralrimivw eqid rdgexggg syl3an1 mp3an2
       vex fnmpt oveq2 mpteq2dv rdgeq1 fveq1d df-omul ovmpt2g mpd3an3
+      fveq2 ) BFGZCFGZCAHAIZBJKZLZMNZOZHGZBCPKVESUSMFGZUTVFQUSVCHRZVG
+      UTVFUSVBHGZAHUAVHUSVIAHVAHGUSVIAUIVABHFUBUCUDAHVBVCHVCUEUJTMCVC
+      FFUFUGUHDEBCFFEIZAHVADIZJKZLZMNZOVEPVJVDOHVKBSZVJVNVDVOVMVCSVNV
+      DSVOAHVLVBVKBVAJUKULMVMVCUMTUNVJCVDURDEAUOUPUQ $.
+  $}
+
+  ${
+    $d x y z A $.  $d y z B $.
+    $( Value of ordinal exponentiation.  (Contributed by Jim Kingdon,
+       9-Jul-2019.) $)
+    oeiv $p |- ( ( A e. On /\ B e. On ) -> ( A ^oi B ) =
+        ( rec ( ( x e. _V |-> ( x .o A ) ) , 1o ) ` B ) ) $=
+      ( vy vz con0 wcel cvv cv comu co cmpt c1o crdg cfv coei 1on wfn
+      wceq syl wral omexg mpan ralrimivw eqid rdgexggg syl3an1 mp3an2
+      vex fnmpt oveq2 mpteq2dv rdgeq1 fveq1d df-oexpi ovmpt2g mpd3an3
       fveq2 ) BFGZCFGZCAHAIZBJKZLZMNZOZHGZBCPKVESUSMFGZUTVFQUSVCHRZVG
       UTVFUSVBHGZAHUAVHUSVIAHVAHGUSVIAUIVABHFUBUCUDAHVBVCHVCUEUJTMCVC
       FFUFUGUHDEBCFFEIZAHVADIZJKZLZMNZOVEPVJVDOHVKBSZVJVNVDVOVMVCSVNV

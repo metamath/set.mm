@@ -329,9 +329,9 @@
 "4syl" is used by "fzssp1".
 "4syl" is used by "gchhar".
 "4syl" is used by "ghomfo".
-"4syl" is used by "gsumXzinv".
-"4syl" is used by "gsumval3".
+"4syl" is used by "gsumval3OLD".
 "4syl" is used by "gsumzinv".
+"4syl" is used by "gsumzinvOLD".
 "4syl" is used by "hashiun".
 "4syl" is used by "hdmap14lem4a".
 "4syl" is used by "heiborlem10".
@@ -6426,6 +6426,201 @@
 "grpplusgx" is used by "cnaddablx".
 "grpplusgx" is used by "isgrpix".
 "grpplusgx" is used by "zaddablx".
+"gsum2dOLD" is used by "gsumxpOLD".
+"gsumaddOLD" is used by "evlslem1".
+"gsumaddOLD" is used by "frlmup1".
+"gsumaddOLD" is used by "gsummptfsaddOLD".
+"gsumaddOLD" is used by "gsumsubOLD".
+"gsumaddOLD" is used by "lgseisenlem3".
+"gsumaddOLD" is used by "lgseisenlem4".
+"gsumaddOLD" is used by "mamudi".
+"gsumaddOLD" is used by "mamudir".
+"gsumaddOLD" is used by "mdetrlin".
+"gsumaddOLD" is used by "psrdi".
+"gsumaddOLD" is used by "psrdir".
+"gsumaddOLD" is used by "tdeglem3".
+"gsumaddOLD" is used by "tsmsadd".
+"gsumclOLD" is used by "amgm".
+"gsumclOLD" is used by "esumlub".
+"gsumclOLD" is used by "evlslem1".
+"gsumclOLD" is used by "evlslem3".
+"gsumclOLD" is used by "frlmphl".
+"gsumclOLD" is used by "frlmup1".
+"gsumclOLD" is used by "gsum2dOLD".
+"gsumclOLD" is used by "gsumdixp".
+"gsumclOLD" is used by "gsumesum".
+"gsumclOLD" is used by "gsumfscl".
+"gsumclOLD" is used by "gsumle".
+"gsumclOLD" is used by "gsummhm2OLD".
+"gsumclOLD" is used by "gsumsubOLD".
+"gsumclOLD" is used by "gsumvsca1".
+"gsumclOLD" is used by "gsumvsca2".
+"gsumclOLD" is used by "imasdsf1olem".
+"gsumclOLD" is used by "islindf4".
+"gsumclOLD" is used by "lgseisenlem3".
+"gsumclOLD" is used by "lgseisenlem4".
+"gsumclOLD" is used by "linccl".
+"gsumclOLD" is used by "lincfsuppcl".
+"gsumclOLD" is used by "mamucl".
+"gsumclOLD" is used by "matgsumcl".
+"gsumclOLD" is used by "mavmulcl".
+"gsumclOLD" is used by "mdet1".
+"gsumclOLD" is used by "mdetf".
+"gsumclOLD" is used by "mdetleib2".
+"gsumclOLD" is used by "mdetralt".
+"gsumclOLD" is used by "mdetrlin".
+"gsumclOLD" is used by "mdetrsca".
+"gsumclOLD" is used by "prdsgsumOLD".
+"gsumclOLD" is used by "psrass1lem".
+"gsumclOLD" is used by "psrbagev2".
+"gsumclOLD" is used by "psrmulcllem".
+"gsumclOLD" is used by "sitgclg".
+"gsumclOLD" is used by "tsmsgsum".
+"gsumclOLD" is used by "tsmsid".
+"gsumclOLD" is used by "tsmslem1".
+"gsumclOLD" is used by "tsmssubm".
+"gsumclOLD" is used by "tsmsxplem1".
+"gsumclOLD" is used by "tsmsxplem2".
+"gsumclOLD" is used by "xrge0gsumle".
+"gsumclOLD" is used by "xrge0tsms".
+"gsumclOLD" is used by "xrge0tsmsd".
+"gsumcllemOLD" is used by "gsumzaddlemOLD".
+"gsumcllemOLD" is used by "gsumzclOLD".
+"gsumcllemOLD" is used by "gsumzf1oOLD".
+"gsumcllemOLD" is used by "gsumzmhmOLD".
+"gsumcllemOLD" is used by "gsumzoppgOLD".
+"gsumcllemOLD" is used by "gsumzresOLD".
+"gsumf1oOLD" is used by "coe1mul2".
+"gsumf1oOLD" is used by "gsum2dOLD".
+"gsumf1oOLD" is used by "gsumfsf1o".
+"gsumf1oOLD" is used by "gsummptf1o".
+"gsumf1oOLD" is used by "lgseisenlem3".
+"gsumf1oOLD" is used by "mdetleib2".
+"gsumf1oOLD" is used by "mdetralt".
+"gsumf1oOLD" is used by "ply1coe".
+"gsumf1oOLD" is used by "psrass1lem".
+"gsumf1oOLD" is used by "psrcom".
+"gsumf1oOLD" is used by "psropprmul".
+"gsumf1oOLD" is used by "tsmsf1o".
+"gsuminvOLD" is used by "gsumsubOLD".
+"gsuminvOLD" is used by "mdetralt".
+"gsummhm2OLD" is used by "gsummulc1".
+"gsummhm2OLD" is used by "gsummulc2".
+"gsummhm2OLD" is used by "gsumvsmul".
+"gsummhm2OLD" is used by "lgseisenlem4".
+"gsummhm2OLD" is used by "prdsgsumOLD".
+"gsummhmOLD" is used by "amgmlem".
+"gsummhmOLD" is used by "evlslem2".
+"gsummhmOLD" is used by "gsuminvOLD".
+"gsummhmOLD" is used by "gsummhm2OLD".
+"gsummhmOLD" is used by "gsummptmhm".
+"gsummhmOLD" is used by "plypf1".
+"gsummhmOLD" is used by "tsmsmhm".
+"gsummptfsaddOLD" is used by "frlmphl".
+"gsummptfsaddOLD" is used by "lincsum".
+"gsumptOLD" is used by "coe1mul3".
+"gsumptOLD" is used by "coe1tmmul".
+"gsumptOLD" is used by "coe1tmmul2".
+"gsumptOLD" is used by "dprdfid".
+"gsumptOLD" is used by "evlslem1".
+"gsumptOLD" is used by "evlslem3".
+"gsumptOLD" is used by "frlmup2".
+"gsumptOLD" is used by "jensen".
+"gsumptOLD" is used by "linc1".
+"gsumptOLD" is used by "mamulid".
+"gsumptOLD" is used by "mamurid".
+"gsumptOLD" is used by "tayl0".
+"gsumptOLD" is used by "uvcresum".
+"gsumresOLD" is used by "gsum2dOLD".
+"gsumresOLD" is used by "gsumfsres".
+"gsumresOLD" is used by "mplcoe1".
+"gsumresOLD" is used by "mplcoe2".
+"gsumresOLD" is used by "mplcoe2OLD".
+"gsumresOLD" is used by "mplmonmul".
+"gsumresOLD" is used by "plypf1".
+"gsumresOLD" is used by "psrlidm".
+"gsumresOLD" is used by "psrlidmOLD".
+"gsumresOLD" is used by "psrridm".
+"gsumresOLD" is used by "psrridmOLD".
+"gsumresOLD" is used by "regsumsupp".
+"gsumresOLD" is used by "tsmsgsum".
+"gsumresOLD" is used by "tsmsres".
+"gsumsplit2OLD" is used by "gsumdifsnd".
+"gsumsplit2OLD" is used by "gsumunsnf".
+"gsumsplit2OLD" is used by "m2detleib".
+"gsumsplit2OLD" is used by "mdet1".
+"gsumsplit2OLD" is used by "mdetrlin".
+"gsumsplit2OLD" is used by "mdetrsca".
+"gsumsplit2OLD" is used by "smadiadet".
+"gsumsplit2OLD" is used by "tdeglem4".
+"gsumsplitOLD" is used by "amgm".
+"gsumsplitOLD" is used by "gsum2dOLD".
+"gsumsplitOLD" is used by "gsumesum".
+"gsumsplitOLD" is used by "gsumle".
+"gsumsplitOLD" is used by "gsummptun".
+"gsumsplitOLD" is used by "gsumpr".
+"gsumsplitOLD" is used by "gsumsplit2OLD".
+"gsumsplitOLD" is used by "islindf4".
+"gsumsplitOLD" is used by "mdetralt".
+"gsumsplitOLD" is used by "tmdgsum".
+"gsumsplitOLD" is used by "wilthlem2".
+"gsumsplitOLD" is used by "xrge0gsumle".
+"gsumsubOLD" is used by "tsmsxplem2".
+"gsumsubgclOLD" is used by "amgmlem".
+"gsumsubgclOLD" is used by "frlmsslsp".
+"gsumsubgclOLD" is used by "gsumlsscl".
+"gsumsubgclOLD" is used by "jensenlem2".
+"gsumsubgclOLD" is used by "mplbas2".
+"gsumsubgclOLD" is used by "mplbas2OLD".
+"gsumsubmclOLD" is used by "amgm".
+"gsumsubmclOLD" is used by "amgmlem".
+"gsumsubmclOLD" is used by "gsumsubgclOLD".
+"gsumsubmclOLD" is used by "jensen".
+"gsumsubmclOLD" is used by "lgseisenlem3".
+"gsumsubmclOLD" is used by "mplbas2".
+"gsumsubmclOLD" is used by "mplbas2OLD".
+"gsumsubmclOLD" is used by "plypf1".
+"gsumsubmclOLD" is used by "tdeglem1".
+"gsumsubmclOLD" is used by "tdeglem4".
+"gsumsubmclOLD" is used by "wilthlem2".
+"gsumsubmclOLD" is used by "wilthlem3".
+"gsumval3OLD" is used by "gsumfsum".
+"gsumval3OLD" is used by "gsumzaddlemOLD".
+"gsumval3OLD" is used by "gsumzclOLD".
+"gsumval3OLD" is used by "gsumzf1oOLD".
+"gsumval3OLD" is used by "gsumzmhmOLD".
+"gsumval3OLD" is used by "gsumzoppgOLD".
+"gsumval3OLD" is used by "gsumzresOLD".
+"gsumval3OLD" is used by "wilthlem3".
+"gsumval3aOLD" is used by "gsumval3OLD".
+"gsumxpOLD" is used by "tsmsxplem1".
+"gsumxpOLD" is used by "tsmsxplem2".
+"gsumzaddOLD" is used by "gsumaddOLD".
+"gsumzaddOLD" is used by "gsumzsplitOLD".
+"gsumzaddlemOLD" is used by "dprdfadd".
+"gsumzaddlemOLD" is used by "gsumzaddOLD".
+"gsumzclOLD" is used by "dprdfadd".
+"gsumzclOLD" is used by "dprdssv".
+"gsumzclOLD" is used by "gsumclOLD".
+"gsumzclOLD" is used by "gsumzsubmclOLD".
+"gsumzf1oOLD" is used by "gsumf1oOLD".
+"gsumzf1oOLD" is used by "smadiadetlem3".
+"gsumzinvOLD" is used by "dprdfinv".
+"gsumzmhmOLD" is used by "gsummhmOLD".
+"gsumzmhmOLD" is used by "gsumzinvOLD".
+"gsumzoppgOLD" is used by "gsumzinvOLD".
+"gsumzresOLD" is used by "dmdprdsplitlem".
+"gsumzresOLD" is used by "dpjidcl".
+"gsumzresOLD" is used by "gsumptOLD".
+"gsumzresOLD" is used by "gsumresOLD".
+"gsumzresOLD" is used by "gsumzsplitOLD".
+"gsumzsplitOLD" is used by "dpjidcl".
+"gsumzsplitOLD" is used by "gsumsplitOLD".
+"gsumzsubmclOLD" is used by "dprdfadd".
+"gsumzsubmclOLD" is used by "dprdfeq0".
+"gsumzsubmclOLD" is used by "dprdlub".
+"gsumzsubmclOLD" is used by "gsumsubmclOLD".
+"gsumzsubmclOLD" is used by "gsumzaddOLD".
 "gt-lth" is used by "ex-gt".
 "gt0srpr" is used by "mulgt0sr".
 "gt0srpr" is used by "recexsrlem".
@@ -11789,6 +11984,7 @@
 "prcdnq" is used by "psslinpr".
 "prcdnq" is used by "reclem2pr".
 "prcdnq" is used by "suplem1pr".
+"prdsgsumOLD" is used by "pwsgsumOLD".
 "prlem934" is used by "ltaddpr".
 "prlem934" is used by "ltexprlem7".
 "prlem934" is used by "prlem936".
@@ -11852,6 +12048,8 @@
 "psubspi2N" is used by "pclclN".
 "psubspi2N" is used by "pclfinN".
 "psubspi2N" is used by "pclfinclN".
+"pwsgsumOLD" is used by "frlmgsum".
+"pwsgsumOLD" is used by "plypf1".
 "qexALT" is used by "rpnnen1lem1".
 "qexALT" is used by "rpnnen1lem3".
 "qexALT" is used by "rpnnen1lem4".
@@ -12914,10 +13112,9 @@
 "suppss2OLD" is used by "evlslem2".
 "suppss2OLD" is used by "evlslem3".
 "suppss2OLD" is used by "evlslem4".
-"suppss2OLD" is used by "gsum2d".
-"suppss2OLD" is used by "gsummptif1n0".
+"suppss2OLD" is used by "gsum2dOLD".
 "suppss2OLD" is used by "gsumpr".
-"suppss2OLD" is used by "gsumzsplit".
+"suppss2OLD" is used by "gsumzsplitOLD".
 "suppss2OLD" is used by "mamulid".
 "suppss2OLD" is used by "mamurid".
 "suppss2OLD" is used by "mplbas2".
@@ -12952,11 +13149,10 @@
 "suppssOLD" is used by "frlmssuvc1".
 "suppssOLD" is used by "frlmup1".
 "suppssOLD" is used by "frlmup2".
-"suppssOLD" is used by "gsum2d2lem".
-"suppssOLD" is used by "gsumsub".
-"suppssOLD" is used by "gsumzaddlem".
-"suppssOLD" is used by "gsumzinv".
-"suppssOLD" is used by "gsumzmhm".
+"suppssOLD" is used by "gsumsubOLD".
+"suppssOLD" is used by "gsumzaddlemOLD".
+"suppssOLD" is used by "gsumzinvOLD".
+"suppssOLD" is used by "gsumzmhmOLD".
 "suppssOLD" is used by "jensen".
 "suppssOLD" is used by "lcomfsup".
 "suppssOLD" is used by "mdeg0".
@@ -12991,16 +13187,16 @@
 "suppssrOLD" is used by "evlslem4".
 "suppssrOLD" is used by "frlmsslsp".
 "suppssrOLD" is used by "frlmup1".
-"suppssrOLD" is used by "gsum2d".
-"suppssrOLD" is used by "gsumcllem".
+"suppssrOLD" is used by "gsum2dOLD".
+"suppssrOLD" is used by "gsumcllemOLD".
 "suppssrOLD" is used by "gsumdixp".
-"suppssrOLD" is used by "gsumpt".
-"suppssrOLD" is used by "gsumsub".
-"suppssrOLD" is used by "gsumval3".
-"suppssrOLD" is used by "gsumzaddlem".
-"suppssrOLD" is used by "gsumzinv".
-"suppssrOLD" is used by "gsumzmhm".
-"suppssrOLD" is used by "gsumzsplit".
+"suppssrOLD" is used by "gsumptOLD".
+"suppssrOLD" is used by "gsumsubOLD".
+"suppssrOLD" is used by "gsumval3OLD".
+"suppssrOLD" is used by "gsumzaddlemOLD".
+"suppssrOLD" is used by "gsumzinvOLD".
+"suppssrOLD" is used by "gsumzmhmOLD".
+"suppssrOLD" is used by "gsumzsplitOLD".
 "suppssrOLD" is used by "lcomfsup".
 "suppssrOLD" is used by "mplbas2".
 "suppssrOLD" is used by "mplbas2OLD".
@@ -15682,6 +15878,35 @@ New usage of "grporn" is discouraged (17 uses).
 New usage of "grporndm" is discouraged (6 uses).
 New usage of "grposn" is discouraged (5 uses).
 New usage of "grpplusgx" is discouraged (3 uses).
+New usage of "gsum2dOLD" is discouraged (1 uses).
+New usage of "gsumaddOLD" is discouraged (13 uses).
+New usage of "gsumclOLD" is discouraged (44 uses).
+New usage of "gsumcllemOLD" is discouraged (6 uses).
+New usage of "gsumf1oOLD" is discouraged (12 uses).
+New usage of "gsuminvOLD" is discouraged (2 uses).
+New usage of "gsummhm2OLD" is discouraged (5 uses).
+New usage of "gsummhmOLD" is discouraged (7 uses).
+New usage of "gsummptfsaddOLD" is discouraged (2 uses).
+New usage of "gsumptOLD" is discouraged (13 uses).
+New usage of "gsumresOLD" is discouraged (14 uses).
+New usage of "gsumsplit2OLD" is discouraged (8 uses).
+New usage of "gsumsplitOLD" is discouraged (12 uses).
+New usage of "gsumsubOLD" is discouraged (1 uses).
+New usage of "gsumsubgclOLD" is discouraged (6 uses).
+New usage of "gsumsubmclOLD" is discouraged (12 uses).
+New usage of "gsumval3OLD" is discouraged (8 uses).
+New usage of "gsumval3aOLD" is discouraged (1 uses).
+New usage of "gsumxpOLD" is discouraged (2 uses).
+New usage of "gsumzaddOLD" is discouraged (2 uses).
+New usage of "gsumzaddlemOLD" is discouraged (2 uses).
+New usage of "gsumzclOLD" is discouraged (4 uses).
+New usage of "gsumzf1oOLD" is discouraged (2 uses).
+New usage of "gsumzinvOLD" is discouraged (1 uses).
+New usage of "gsumzmhmOLD" is discouraged (2 uses).
+New usage of "gsumzoppgOLD" is discouraged (1 uses).
+New usage of "gsumzresOLD" is discouraged (5 uses).
+New usage of "gsumzsplitOLD" is discouraged (2 uses).
+New usage of "gsumzsubmclOLD" is discouraged (5 uses).
 New usage of "gt-lt" is discouraged (0 uses).
 New usage of "gt-lth" is discouraged (1 uses).
 New usage of "gt0srpr" is discouraged (2 uses).
@@ -17361,6 +17586,7 @@ New usage of "poml4N" is discouraged (3 uses).
 New usage of "poml5N" is discouraged (1 uses).
 New usage of "poml6N" is discouraged (1 uses).
 New usage of "prcdnq" is discouraged (14 uses).
+New usage of "prdsgsumOLD" is discouraged (1 uses).
 New usage of "prlem934" is discouraged (3 uses).
 New usage of "prlem936" is discouraged (1 uses).
 New usage of "prmirredOLD" is discouraged (0 uses).
@@ -17386,6 +17612,7 @@ New usage of "psubclsetN" is discouraged (1 uses).
 New usage of "psubclssatN" is discouraged (9 uses).
 New usage of "psubclsubN" is discouraged (1 uses).
 New usage of "psubspi2N" is discouraged (3 uses).
+New usage of "pwsgsumOLD" is discouraged (2 uses).
 New usage of "pwsnALT" is discouraged (0 uses).
 New usage of "pwtrVD" is discouraged (0 uses).
 New usage of "pwtrrVD" is discouraged (0 uses).
@@ -17828,8 +18055,8 @@ New usage of "superpos" is discouraged (1 uses).
 New usage of "supexpr" is discouraged (1 uses).
 New usage of "suplem1pr" is discouraged (1 uses).
 New usage of "suplem2pr" is discouraged (1 uses).
-New usage of "suppss2OLD" is discouraged (44 uses).
-New usage of "suppssOLD" is discouraged (25 uses).
+New usage of "suppss2OLD" is discouraged (43 uses).
+New usage of "suppssOLD" is discouraged (24 uses).
 New usage of "suppssfvOLD" is discouraged (2 uses).
 New usage of "suppssof1OLD" is discouraged (2 uses).
 New usage of "suppssov1OLD" is discouraged (4 uses).
@@ -18216,7 +18443,7 @@ Proof modification of "bj-ala1BIS" is discouraged (9 steps).
 Proof modification of "bj-ax16gb" is discouraged (18 steps).
 Proof modification of "bj-ax16nf" is discouraged (31 steps).
 Proof modification of "bj-ax8" is discouraged (17 steps).
-Proof modification of "bj-ax9" is discouraged (46 steps).
+Proof modification of "bj-ax9" is discouraged (35 steps).
 Proof modification of "bj-axc10v" is discouraged (37 steps).
 Proof modification of "bj-axc11nlemv" is discouraged (58 steps).
 Proof modification of "bj-axc11nv" is discouraged (71 steps).
@@ -18662,6 +18889,34 @@ Proof modification of "gen22" is discouraged (23 steps).
 Proof modification of "gen31" is discouraged (19 steps).
 Proof modification of "ggen22" is discouraged (13 steps).
 Proof modification of "ggen31" is discouraged (22 steps).
+Proof modification of "gsum2dOLD" is discouraged (1526 steps).
+Proof modification of "gsumaddOLD" is discouraged (75 steps).
+Proof modification of "gsumclOLD" is discouraged (40 steps).
+Proof modification of "gsumcllemOLD" is discouraged (89 steps).
+Proof modification of "gsumf1oOLD" is discouraged (43 steps).
+Proof modification of "gsuminvOLD" is discouraged (64 steps).
+Proof modification of "gsummhm2OLD" is discouraged (177 steps).
+Proof modification of "gsummhmOLD" is discouraged (44 steps).
+Proof modification of "gsummptfsaddOLD" is discouraged (238 steps).
+Proof modification of "gsumptOLD" is discouraged (436 steps).
+Proof modification of "gsumresOLD" is discouraged (42 steps).
+Proof modification of "gsumsplit2OLD" is discouraged (133 steps).
+Proof modification of "gsumsplitOLD" is discouraged (46 steps).
+Proof modification of "gsumsubOLD" is discouraged (468 steps).
+Proof modification of "gsumsubgclOLD" is discouraged (39 steps).
+Proof modification of "gsumsubmclOLD" is discouraged (75 steps).
+Proof modification of "gsumval3OLD" is discouraged (2476 steps).
+Proof modification of "gsumval3aOLD" is discouraged (278 steps).
+Proof modification of "gsumxpOLD" is discouraged (217 steps).
+Proof modification of "gsumzaddOLD" is discouraged (436 steps).
+Proof modification of "gsumzaddlemOLD" is discouraged (1746 steps).
+Proof modification of "gsumzf1oOLD" is discouraged (660 steps).
+Proof modification of "gsumzinvOLD" is discouraged (319 steps).
+Proof modification of "gsumzmhmOLD" is discouraged (812 steps).
+Proof modification of "gsumzoppgOLD" is discouraged (684 steps).
+Proof modification of "gsumzresOLD" is discouraged (600 steps).
+Proof modification of "gsumzsplitOLD" is discouraged (1051 steps).
+Proof modification of "gsumzsubmclOLD" is discouraged (195 steps).
 Proof modification of "hashge3el3dif" is discouraged (226 steps).
 Proof modification of "hashiunOLD" is discouraged (36 steps).
 Proof modification of "hashuniOLD" is discouraged (40 steps).
@@ -18879,6 +19134,7 @@ Proof modification of "pm110.643" is discouraged (72 steps).
 Proof modification of "pm110.643ALT" is discouraged (35 steps).
 Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
+Proof modification of "prdsgsumOLD" is discouraged (415 steps).
 Proof modification of "probfinmeasbOLD" is discouraged (225 steps).
 Proof modification of "problem1" is discouraged (20 steps).
 Proof modification of "problem2" is discouraged (102 steps).
@@ -18891,6 +19147,7 @@ Proof modification of "psrbaglesuppOLD" is discouraged (246 steps).
 Proof modification of "psrbasOLD" is discouraged (439 steps).
 Proof modification of "psrlidmOLD" is discouraged (1044 steps).
 Proof modification of "psrridmOLD" is discouraged (1048 steps).
+Proof modification of "pwsgsumOLD" is discouraged (159 steps).
 Proof modification of "pwsnALT" is discouraged (164 steps).
 Proof modification of "pwtrVD" is discouraged (110 steps).
 Proof modification of "pwtrrVD" is discouraged (110 steps).
