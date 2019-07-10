@@ -54016,6 +54016,45 @@ $)
   $}
 
   ${
+    $d G f g u w x y z $.  $d ph f y $.
+    tfri1d.1 $e |- F = recs ( G ) $.
+    tfri1d.2 $e |- ( ph -> A. x ( Fun G /\ ( G ` x ) e. _V ) ) $.
+    $( Principle of Transfinite Recursion, part 1 of 3.  Theorem 7.41(1) of
+       [TakeutiZaring] p. 47, with an additional condition.
+
+       The condition is that ` G ` is defined "everywhere" and here is stated
+       as ` ( G `` x ) e. _V ` .  Alternatively
+       ` A. x e. On A. f ( f Fn x -> f e. dom G ) ` would suffice.
+
+       Given a function ` G ` satisfying that condition, we define a class
+       ` A ` of all "acceptable" functions.  The final function we're
+       interested in is the union ` F = recs ( G ) ` of them. ` F ` is then
+       said to be defined by transfinite recursion.  The purpose of the 3 parts
+       of this theorem is to demonstrate properties of ` F ` .  In this first
+       part we show that ` F ` is a function whose domain is all ordinal
+       numbers.  (Contributed by Jim Kingdon, 4-May-2019.)  (Revised by Mario
+       Carneiro, 24-May-2019.) $)
+    tfri1d $p |- ( ph -> F Fn On ) $=
+      ( vy vg vz vu vf vw con0 wfn wceq wa cv cfv cres wral crecs cdm
+      wfun wrex cab eqid tfrlem3 tfrlemi14d jctil df-fn sylibr fneq1i
+      tfrlem7 ) ADUAZMNZCMNAUNUCZUNUBMOZPUOAUQUPABGHQZIQZNJQZURRURUTS
+      DROJUSTPIMUDHUEZKDIJBGVAHKDVAUFUGFUHGILQZGQZNUSVBRVBUSSDROIVCTP
+      GMUDLUEZLDVDUFUMUIUNMUJUKMCUNEULUK $.
+
+    $( Principle of Transfinite Recursion, part 2 of 3.  Theorem 7.41(2) of
+       [TakeutiZaring] p. 47, with an additional condition on the recursion
+       rule ` G ` ( as described at ~ tfri1 ).  Here we show that the function
+       ` F ` has the property that for any function ` G ` satisfying that
+       condition, the "next" value of ` F ` is ` G ` recursively applied to all
+       "previous" values of ` F ` .  (Contributed by Jim Kingdon,
+       4-May-2019.) $)
+    tfri2d $p |- ( ( ph /\ A e. On ) -> ( F ` A ) = ( G ` ( F |` A ) ) ) $=
+      ( con0 wcel wa cdm cfv cres wceq wfn tfri1d fndm eleq2d biimpar
+      syl tfr2a ) ACHIZJCDKZIZCDLDCMELNAUDUBAUCHCADHOUCHNABDEFGPHDQTR
+      SCDEFUAT $.
+  $}
+
+  ${
     $d G f g u w x y z $.
     tfri1.1 $e |- F = recs ( G ) $.
     tfri1.2 $e |- ( Fun G /\ ( G ` x ) e. _V ) $.
