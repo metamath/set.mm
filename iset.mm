@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-Jul-2019
+$( iset.mm - Version of 10-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54255,6 +54255,23 @@ $)
     rdgexgg $p |- ( ( A e. V /\ B e. W ) -> ( rec ( F , A ) ` B ) e. _V ) $=
       ( cvv wfn wcel crdg cfv rdgexggg mp3an1 ) CGHADIBEIBCAJKGIFABCD
       ELM $.
+  $}
+
+  ${
+    $d A g x y $.  $d F g x y $.  $d V y $.
+    $( The initial value of the recursive definition generator.  (Contributed
+       by Jim Kingdon, 10-Jul-2019.) $)
+    rdgi0g $p |- ( ( F Fn _V /\ A e. V ) -> ( rec ( F , A ) ` (/) ) = A ) $=
+      ( vx vg vy cvv wcel wa c0 cfv cdm ciun cun wceq mpan2 fveq2i syl6eq 0ex
+      cv wfn crdg cmpt cres con0 0elon df-irdg wfun rdgruledefgg alrimiv tfri2d
+      res0 wral dmex 0fv funfvex funfni syl5eqel ralrimivw iunexg sylancr unexg
+      ex mpan9 dmeq fveq1 fveq2d iuneq12d uneq2d eqid fvmptg eqtrd iuneq1 ax-mp
+      dm0 0iun eqtri uneq2i un0 ) BGUAZACHZIZJBAUBZKZADJLZDTZJKZBKZMZNZAWBWDJEG
+      ADETZLZWFWKKZBKZMZNZUCZKZWJWBWDWCJUDZWQKZWRWBJUEHWDWTOUFWBFJWCWQDEBAUGWBW
+      QUHFTWQKGHIFDAFEBCUIUJUKPWSJWQWCULQRWBJGHZWJGHZWRWJOSVTWIGHZWAXBVTWEGHWHG
+      HZDWEUMXCJSUNVTXDDWEVTWHJBKZGWGJBWFUOQVTXAXEGHZSXFGJBJBUPUQPURUSDWEWHGGUT
+      VAWAXCXBAWICGVBVCVDEJWPWJGGWQWKJOZWOWIAXGDWLWEWNWHWKJVEXGWMWGBWFWKJVFVGVH
+      VIWQVJVKVAVLWJAJNAWIJAWIDJWHMZJWEJOWIXHOVODWEJWHVMVNDWHVPVQVRAVSVQR $.
   $}
 
   ${
