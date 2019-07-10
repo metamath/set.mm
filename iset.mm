@@ -39194,6 +39194,17 @@ $)
   $}
 
   ${
+    $d y A $.  $d y B $.  $d y C $.
+    $( Membership of first of an ordered pair in a domain.  (Contributed by Jim
+       Kingdon, 9-Jul-2019.) $)
+    opeldmg $p |- ( ( A e. V /\ B e. W ) ->
+        ( <. A , B >. e. C -> A e. dom C ) ) $=
+      ( vy wcel wa cop cv wex cdm wi wceq eleq1d spcegv adantl eldm2g
+      opeq2 wb adantr sylibrd ) ADGZBEGZHABIZCGZAFJZIZCGZFKZACLGZUDUF
+      UJMUCUIUFFBEUGBNUHUECUGBASOPQUCUKUJTUDFACDRUAUB $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d x R $.
     $( Membership of first of a binary relation in a domain.  (Contributed by
        NM, 21-Mar-2007.) $)
