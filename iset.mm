@@ -54665,6 +54665,16 @@ $)
       3syl eqtrd ) ACDZAEFGZEBHBIZAJGZKZELPZEUJECDUKUOMNBAEQOUJUMHDZB
       HRUNHSZUOEMZUJUPBHULHDUJUPBTULAHCUAUBUCBHUMUNHUNUDUEUQEHDURUFEU
       NHUGOUHUI $.
+
+    $( Ordinal exponentiation with zero exponent.  Definition 8.30 of
+       [TakeutiZaring] p. 67.  (Contributed by NM, 31-Dec-2004.)  (Revised by
+       Mario Carneiro, 8-Sep-2013.) $)
+    oei0 $p |- ( A e. On -> ( A ^oi (/) ) = 1o ) $=
+      ( vx con0 wcel c0 coei co cvv comu cmpt c1o crdg cfv wceq 0elon
+      cv oeiv mpan2 wral wfn vex omexg mpan ralrimivw eqid 1on rdgi0g
+      fnmpt 3syl eqtrd ) ACDZAEFGZEBHBPZAIGZJZKLMZKUKECDULUPNOBAEQRUK
+      UNHDZBHSUOHTZUPKNZUKUQBHUMHDUKUQBUAUMAHCUBUCUDBHUNUOHUOUEUHURKC
+      DUSUFKUOCUGRUIUJ $.
   $}
 
 $(
