@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-Jul-2019
+$( iset.mm - Version of 10-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -39194,6 +39194,17 @@ $)
   $}
 
   ${
+    $d y A $.  $d y B $.  $d y C $.
+    $( Membership of first of an ordered pair in a domain.  (Contributed by Jim
+       Kingdon, 9-Jul-2019.) $)
+    opeldmg $p |- ( ( A e. V /\ B e. W ) ->
+        ( <. A , B >. e. C -> A e. dom C ) ) $=
+      ( vy wcel wa cop cv wex cdm wi wceq eleq1d spcegv adantl eldm2g
+      opeq2 wb adantr sylibrd ) ADGZBEGZHABIZCGZAFJZIZCGZFKZACLGZUDUF
+      UJMUCUIUFFBEUGBNUHUECUGBASOPQUCUKUJTUDFACDRUAUB $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d x R $.
     $( Membership of first of a binary relation in a domain.  (Contributed by
        NM, 21-Mar-2007.) $)
@@ -53912,6 +53923,30 @@ $)
 
   ${
     $d f g h u v w x y z A $.  $d f g h u v w x y z F $.  $d z C $.
+    $d f g ph w y z $.
+    tfrlemi14d.1 $e |- A = { f | E. x e. On ( f Fn x /\
+                A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
+    tfrlemi14d.2 $e |- ( ph -> A. x ( Fun F /\ ( F ` x ) e. _V ) ) $.
+    $( The domain of ` recs ` is all ordinals (lemma for transfinite
+       recursion).  (Contributed by Jim Kingdon, 9-Jul-2019.) $)
+    tfrlemi14d $p |- ( ph -> dom recs ( F ) = On ) $=
+      ( vh vz vg vu vw cdm con0 cv wcel wa cfv cvv crecs word tfrlem8 mp1i ciun
+      wss ordsson wrex wfn cres wceq wral tfrlemi1 cop csn wfun ad2antrr simplr
+      cun wal simprl fneq2 raleq anbi12d rspcev adantll tfrlem3a tfrlemisucaccv
+      vex sylibr tfrlem3-2d simprd opexg sylancr snidg 3syl wi opeldmg mpd dmeq
+      elun2 eleq2d syl2anc exlimddv eliun ssrdv cuni recsfval dmeqi dmuni eqtri
+      ex syl6sseqr eqssd ) AFUAZNZOWPUBWPOUFABCDEFGUCWPUGUDAOIDIPZNZUEZWPAJOWSA
+      JPZOQZWTWSQZAXARZWTWRQZIDUHZXBXCKPZWTUIZLPZXFSXFXHUJFSUKZLWTULZRZXEKABCLD
+      WTEKFGHUMXCXKRZXFWTXFFSZUNZUOZUSZDQWTXPNZQZXEXLBCJDEKFGAFUPZBPFSTQRBUTXAX
+      KHUQAXAXKURXCXGXJVAXLXFMPZUIZXILXTULZRZMOUHZXFDQXAXKYDAYCXKMWTOXTWTUKYAXG
+      YBXJXTWTXFVBXILXTWTVCVDVEVFBCMLDEFXFGKVIVGVJVHXLXNXPQZXRAYEXAXKAXNTQZXNXO
+      QYEAWTTQZXMTQZYFJVIZAXSYHABKFHVKVLZWTXMTTVMVNXNTVOXNXOXFWAVPUQAYEXRVQZXAX
+      KAYGYHYKYIYJWTXMXPTTVRVNUQVSXDXRIXPDWQXPUKWRXQWTWQXPVTWBVEWCWDIWTDWRWEVJW
+      LWFWPDWGZNWSWOYLBCDEFGWHWIIDWJWKWMWN $.
+  $}
+
+  ${
+    $d f g h u v w x y z A $.  $d f g h u v w x y z F $.  $d z C $.
     tfrlemi14.1 $e |- A = { f | E. x e. On ( f Fn x /\
                 A. y e. x ( f ` y ) = ( F ` ( f |` y ) ) ) } $.
     tfrlemi14.2 $e |- ( Fun F /\ ( F ` x ) e. _V ) $.
@@ -53978,6 +54013,45 @@ $)
       UUOUWAUWBUWIXSUXHUXGUWAUXJUUOUWAUWBUWIYAUUBUVOUVTWCXRUXIUWBSUWI
       UXJSUXKKUCCBDLUAUFGUVBYBYCYDYEYIUUBUVOUUFUUSCVCYFTUVOUVLYGTYHYJ
       YKYLCUUBUVMYSYMTUUCUVMUVLUUFUXQYNVFYRTYOTYPYQ $.
+  $}
+
+  ${
+    $d G f g u w x y z $.  $d ph f y $.
+    tfri1d.1 $e |- F = recs ( G ) $.
+    tfri1d.2 $e |- ( ph -> A. x ( Fun G /\ ( G ` x ) e. _V ) ) $.
+    $( Principle of Transfinite Recursion, part 1 of 3.  Theorem 7.41(1) of
+       [TakeutiZaring] p. 47, with an additional condition.
+
+       The condition is that ` G ` is defined "everywhere" and here is stated
+       as ` ( G `` x ) e. _V ` .  Alternatively
+       ` A. x e. On A. f ( f Fn x -> f e. dom G ) ` would suffice.
+
+       Given a function ` G ` satisfying that condition, we define a class
+       ` A ` of all "acceptable" functions.  The final function we're
+       interested in is the union ` F = recs ( G ) ` of them. ` F ` is then
+       said to be defined by transfinite recursion.  The purpose of the 3 parts
+       of this theorem is to demonstrate properties of ` F ` .  In this first
+       part we show that ` F ` is a function whose domain is all ordinal
+       numbers.  (Contributed by Jim Kingdon, 4-May-2019.)  (Revised by Mario
+       Carneiro, 24-May-2019.) $)
+    tfri1d $p |- ( ph -> F Fn On ) $=
+      ( vy vg vz vu vf vw con0 wfn wceq wa cv cfv cres wral crecs cdm
+      wfun wrex cab eqid tfrlem3 tfrlemi14d jctil df-fn sylibr fneq1i
+      tfrlem7 ) ADUAZMNZCMNAUNUCZUNUBMOZPUOAUQUPABGHQZIQZNJQZURRURUTS
+      DROJUSTPIMUDHUEZKDIJBGVAHKDVAUFUGFUHGILQZGQZNUSVBRVBUSSDROIVCTP
+      GMUDLUEZLDVDUFUMUIUNMUJUKMCUNEULUK $.
+
+    $( Principle of Transfinite Recursion, part 2 of 3.  Theorem 7.41(2) of
+       [TakeutiZaring] p. 47, with an additional condition on the recursion
+       rule ` G ` ( as described at ~ tfri1 ).  Here we show that the function
+       ` F ` has the property that for any function ` G ` satisfying that
+       condition, the "next" value of ` F ` is ` G ` recursively applied to all
+       "previous" values of ` F ` .  (Contributed by Jim Kingdon,
+       4-May-2019.) $)
+    tfri2d $p |- ( ( ph /\ A e. On ) -> ( F ` A ) = ( G ` ( F |` A ) ) ) $=
+      ( con0 wcel wa cdm cfv cres wceq wfn tfri1d fndm eleq2d biimpar
+      syl tfr2a ) ACHIZJCDKZIZCDLDCMELNAUDUBAUCHCADHOUCHNABDEFGPHDQTR
+      SCDEFUAT $.
   $}
 
   ${
@@ -54181,6 +54255,23 @@ $)
     rdgexgg $p |- ( ( A e. V /\ B e. W ) -> ( rec ( F , A ) ` B ) e. _V ) $=
       ( cvv wfn wcel crdg cfv rdgexggg mp3an1 ) CGHADIBEIBCAJKGIFABCD
       ELM $.
+  $}
+
+  ${
+    $d A g x y $.  $d F g x y $.  $d V y $.
+    $( The initial value of the recursive definition generator.  (Contributed
+       by Jim Kingdon, 10-Jul-2019.) $)
+    rdgi0g $p |- ( ( F Fn _V /\ A e. V ) -> ( rec ( F , A ) ` (/) ) = A ) $=
+      ( vx vg vy cvv wcel wa c0 cfv cdm ciun cun wceq mpan2 fveq2i syl6eq 0ex
+      cv wfn crdg cmpt cres con0 0elon df-irdg wfun rdgruledefgg alrimiv tfri2d
+      res0 wral dmex 0fv funfvex funfni syl5eqel ralrimivw iunexg sylancr unexg
+      ex mpan9 dmeq fveq1 fveq2d iuneq12d uneq2d eqid fvmptg eqtrd iuneq1 ax-mp
+      dm0 0iun eqtri uneq2i un0 ) BGUAZACHZIZJBAUBZKZADJLZDTZJKZBKZMZNZAWBWDJEG
+      ADETZLZWFWKKZBKZMZNZUCZKZWJWBWDWCJUDZWQKZWRWBJUEHWDWTOUFWBFJWCWQDEBAUGWBW
+      QUHFTWQKGHIFDAFEBCUIUJUKPWSJWQWCULQRWBJGHZWJGHZWRWJOSVTWIGHZWAXBVTWEGHWHG
+      HZDWEUMXCJSUNVTXDDWEVTWHJBKZGWGJBWFUOQVTXAXEGHZSXFGJBJBUPUQPURUSDWEWHGGUT
+      VAWAXCXBAWICGVBVCVDEJWPWJGGWQWKJOZWOWIAXGDWLWEWNWHWKJVEXGWMWGBWFWKJVFVGVH
+      VIWQVJVKVAVLWJAJNAWIJAWIDJWHMZJWEJOWIXHOVODWEJWHVMVNDWHVPVQVRAVSVQR $.
   $}
 
   ${
@@ -54552,6 +54643,38 @@ $)
       UTVFUSVBHGZAHUAVHUSVIAHVAHGUSVIAUIVABHFUBUCUDAHVBVCHVCUEUJTMCVC
       FFUFUGUHDEBCFFEIZAHVADIZJKZLZMNZOVEPVJVDOHVKBSZVJVNVDVOVMVCSVNV
       DSVOAHVLVBVKBVAJUKULMVMVCUMTUNVJCVDURDEAUOUPUQ $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Addition with zero.  Proposition 8.3 of [TakeutiZaring] p. 57.
+       (Contributed by NM, 3-May-1995.)  (Revised by Mario Carneiro,
+       8-Sep-2013.) $)
+    oa0 $p |- ( A e. On -> ( A +o (/) ) = A ) $=
+      ( vx con0 wcel c0 coa co cvv cv csuc cmpt crdg wceq 0elon mpan2
+      cfv oav wfn vex sucex eqid fnmpti rdgi0g mpan eqtrd ) ACDZAEFGZ
+      EBHBIZJZKZALPZAUFECDUGUKMNBAEQOUJHRUFUKAMBHUIUJUHBSTUJUAUBAUJCU
+      CUDUE $.
+
+    $( Ordinal multiplication with zero.  Definition 8.15 of [TakeutiZaring]
+       p. 62.  (Contributed by NM, 17-Sep-1995.)  (Revised by Mario Carneiro,
+       8-Sep-2013.) $)
+    om0 $p |- ( A e. On -> ( A .o (/) ) = (/) ) $=
+      ( vx con0 wcel c0 comu co cvv cv coa cmpt crdg wceq 0elon mpan2
+      cfv omv wral wfn vex oaexg mpan ralrimivw eqid fnmpt 0ex rdgi0g
+      3syl eqtrd ) ACDZAEFGZEBHBIZAJGZKZELPZEUJECDUKUOMNBAEQOUJUMHDZB
+      HRUNHSZUOEMZUJUPBHULHDUJUPBTULAHCUAUBUCBHUMUNHUNUDUEUQEHDURUFEU
+      NHUGOUHUI $.
+
+    $( Ordinal exponentiation with zero exponent.  Definition 8.30 of
+       [TakeutiZaring] p. 67.  (Contributed by NM, 31-Dec-2004.)  (Revised by
+       Mario Carneiro, 8-Sep-2013.) $)
+    oei0 $p |- ( A e. On -> ( A ^oi (/) ) = 1o ) $=
+      ( vx con0 wcel c0 coei co cvv comu cmpt c1o crdg cfv wceq 0elon
+      cv oeiv mpan2 wral wfn vex omexg mpan ralrimivw eqid 1on rdgi0g
+      fnmpt 3syl eqtrd ) ACDZAEFGZEBHBPZAIGZJZKLMZKUKECDULUPNOBAEQRUK
+      UNHDZBHSUOHTZUPKNZUKUQBHUMHDUKUQBUAUMAHCUBUCUDBHUNUOHUOUEUHURKC
+      DUSUFKUOCUGRUIUJ $.
   $}
 
 $(
