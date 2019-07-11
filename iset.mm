@@ -54645,6 +54645,28 @@ $)
       DSVOAHVLVBVKBVAJUKULMVMVCUMTUNVJCVDURDEAUOUPUQ $.
   $}
 
+  ${
+    $d x y A $.
+    $( Addition with zero.  Proposition 8.3 of [TakeutiZaring] p. 57.
+       (Contributed by NM, 3-May-1995.)  (Revised by Mario Carneiro,
+       8-Sep-2013.) $)
+    oa0 $p |- ( A e. On -> ( A +o (/) ) = A ) $=
+      ( vx con0 wcel c0 coa co cvv cv csuc cmpt crdg wceq 0elon mpan2
+      cfv oav wfn vex sucex eqid fnmpti rdgi0g mpan eqtrd ) ACDZAEFGZ
+      EBHBIZJZKZALPZAUFECDUGUKMNBAEQOUJHRUFUKAMBHUIUJUHBSTUJUAUBAUJCU
+      CUDUE $.
+
+    $( Ordinal multiplication with zero.  Definition 8.15 of [TakeutiZaring]
+       p. 62.  (Contributed by NM, 17-Sep-1995.)  (Revised by Mario Carneiro,
+       8-Sep-2013.) $)
+    om0 $p |- ( A e. On -> ( A .o (/) ) = (/) ) $=
+      ( vx con0 wcel c0 comu co cvv cv coa cmpt crdg wceq 0elon mpan2
+      cfv omv wral wfn vex oaexg mpan ralrimivw eqid fnmpt 0ex rdgi0g
+      3syl eqtrd ) ACDZAEFGZEBHBIZAJGZKZELPZEUJECDUKUOMNBAEQOUJUMHDZB
+      HRUNHSZUOEMZUJUPBHULHDUJUPBTULAHCUAUBUCBHUMUNHUNUDUEUQEHDURUFEU
+      NHUGOUHUI $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
