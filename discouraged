@@ -1534,6 +1534,7 @@
 "bj-inftyexpidisj" is used by "bj-minftynrr".
 "bj-inftyexpidisj" is used by "bj-pinftynrr".
 "bj-inftyexpiinv" is used by "bj-inftyexpiinj".
+"bj-vexw" is used by "bj-ralvw".
 "blo3i" is used by "ipblnfi".
 "blocn" is used by "blocn2".
 "blocn2" is used by "ubthlem1".
@@ -14215,6 +14216,7 @@ New usage of "bj-inftyexpiinv" is discouraged (1 uses).
 New usage of "bj-rabtrALT" is discouraged (0 uses).
 New usage of "bj-rabtrAUTO" is discouraged (0 uses).
 New usage of "bj-sbeqALT" is discouraged (0 uses).
+New usage of "bj-vexw" is discouraged (1 uses).
 New usage of "bj-xpima1snALT" is discouraged (0 uses).
 New usage of "blo3i" is discouraged (1 uses).
 New usage of "blocn" is discouraged (1 uses).
@@ -18454,6 +18456,7 @@ Proof modification of "bj-axc16" is discouraged (5 steps).
 Proof modification of "bj-axc16g" is discouraged (30 steps).
 Proof modification of "bj-axd2d" is discouraged (16 steps).
 Proof modification of "bj-axdd2" is discouraged (28 steps).
+Proof modification of "bj-axext3" is discouraged (57 steps).
 Proof modification of "bj-axrep1" is discouraged (190 steps).
 Proof modification of "bj-axrep2" is discouraged (181 steps).
 Proof modification of "bj-axrep3" is discouraged (122 steps).
