@@ -4752,7 +4752,7 @@
 "df-topspOLD" is used by "eltopspOLD".
 "df-topspOLD" is used by "istpsOLD".
 "df-topspOLD" is used by "tpsexOLD".
-"df-tru" is used by "tru".
+"df-tru" is used by "dftru2".
 "df-unop" is used by "elunop".
 "df-va" is used by "0vfval".
 "df-va" is used by "vafval".
@@ -4804,6 +4804,7 @@
 "dfpjop" is used by "elpjidm".
 "dfpjop" is used by "pjhmopidm".
 "dfsup2OLD" is used by "dfsup3OLD".
+"dftru2" is used by "tru".
 "dfvd1imp" is used by "gen11".
 "dfvd1impr" is used by "gen11".
 "dfvd1ir" is used by "2uasbanhVD".
@@ -15267,6 +15268,7 @@ New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfprm2OLD" is discouraged (0 uses).
 New usage of "dfsup2OLD" is discouraged (1 uses).
 New usage of "dfsup3OLD" is discouraged (0 uses).
+New usage of "dftru2" is discouraged (1 uses).
 New usage of "dfvd1imp" is discouraged (1 uses).
 New usage of "dfvd1impr" is discouraged (1 uses).
 New usage of "dfvd1ir" is discouraged (16 uses).
