@@ -17802,6 +17802,7 @@ New usage of "sbequ12aOLD" is discouraged (0 uses).
 New usage of "sbequ8ALT" is discouraged (0 uses).
 New usage of "sbieOLD" is discouraged (0 uses).
 New usage of "sbiedOLD" is discouraged (0 uses).
+New usage of "sbnOLD" is discouraged (0 uses).
 New usage of "sbnf2OLD" is discouraged (0 uses).
 New usage of "sbtOLD" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
@@ -19266,6 +19267,7 @@ Proof modification of "sbel2xOLD" is discouraged (75 steps).
 Proof modification of "sbequ12aOLD" is discouraged (27 steps).
 Proof modification of "sbieOLD" is discouraged (47 steps).
 Proof modification of "sbiedOLD" is discouraged (105 steps).
+Proof modification of "sbnOLD" is discouraged (127 steps).
 Proof modification of "sbnf2OLD" is discouraged (194 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "sbtOLD" is discouraged (15 steps).
