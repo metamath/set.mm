@@ -1,4 +1,4 @@
-$( iset.mm - Version of 10-Jul-2019
+$( iset.mm - Version of 13-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54272,6 +54272,28 @@ $)
       HZDWEUMXCJSUNVTXDDWEVTWHJBKZGWGJBWFUOQVTXAXEGHZSXFGJBJBUPUQPURUSDWEWHGGUT
       VAWAXCXBAWICGVBVCVDEJWPWJGGWQWKJOZWOWIAXGDWLWEWNWHWKJVEXGWMWGBWFWKJVFVGVH
       VIWQVJVKVAVLWJAJNAWIJAWIDJWHMZJWEJOWIXHOVODWEJWHVMVNDWHVPVQVRAVSVQR $.
+  $}
+
+  ${
+    $d A g x y $.  $d B g x $.  $d F g x y $.  $d V y $.
+    $( Value of the recursive definition generator.  (Contributed by Jim
+       Kingdon, 13-Jul-2019.) $)
+    rdgivalg $p |- ( ( F Fn _V /\ A e. V /\ B e. On ) -> ( rec ( F , A ) ` B ) =
+        ( A u. U_ x e. dom ( rec ( F , A ) |` B )
+          ( F ` ( ( rec ( F , A ) |` B ) ` x ) ) ) ) $=
+      ( vg vy cvv wcel con0 cfv cv cdm ciun cun wceq wfun wral adantl
+      wa wfn crdg cres df-irdg rdgruledefgg alrimiv tfri2d 3impa rdgfun
+      w3a cmpt resfunexg mpan 3ad2ant3 dmresexg fvexg sylancl ralrimivw
+      vex wi funfvex funfni ex ralimdv adantr mpd syl2anc 3adant2 unexg
+      iunexg 3ad2ant2 dmeq fveq1 fveq2d iuneq12d uneq2d fvmptg eqtrd
+      eqid ) DHUAZBEIZCJIZUJZCDBUBZKZWDCUCZFHBAFLZMZALZWGKZDKZNZOZUKZKZ
+      BAWFMZWIWFKZDKZNZOZVTWAWBWEWOPVTWATZGCWDWNAFDBUDXAWNQGLWNKHITGABG
+      FDEUEUFUGUHWCWFHIZWTHIZWOWTPWBVTXBWAWDQWBXBBDUIWDCJULUMZUNWCWSHIZ
+      XCVTWBXEWAVTWBTZWPHIZWRHIZAWPRZXEWBXGVTWDCJUOSXFWQHIZAWPRZXIWBXKV
+      TWBXJAWPWBXBWIHIXJXDAUSWIWFHHUPUQURSVTXKXIUTWBVTXJXHAWPVTXJXHXHHW
+      QDWQDVAVBVCVDVEVFAWPWRHHVJVGVHWAVTXEXCUTWBWAXEXCBWSEHVIVCVKVFFWFW
+      MWTHHWNWGWFPZWLWSBXLAWHWPWKWRWGWFVLXLWJWQDWIWGWFVMVNVOVPWNVSVQVGV
+      R $.
   $}
 
   ${
