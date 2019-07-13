@@ -125,14 +125,14 @@ This typing system was
 eventually refined by Russell down to Typed Set Theory (TST).
 In TST, unlimited comprehension is allowed
 (approximately,
-A&nbsp;<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>&nbsp;<IMG SRC='rmcv.gif' WIDTH=10 HEIGHT=19 TITLE='_V' ALT='_V'> is a theorem).
+A&nbsp;` e. `&nbsp;` _V ` is a theorem).
 TST avoids the standard paradoxes by being a multi-sorted system.
 That is, there are variables of type 0, 1, 2,... The WFFs are
 restricted so that you must say
-x[n] = y[n] and x[n] <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> y[n+1], where n
+x[n] = y[n] and x[n] ` e. ` y[n+1], where n
 is a variable type.
 This means, among other things, that
-x&nbsp;<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>&nbsp;x is not a well-formed formula,
+x&nbsp;` e. `&nbsp;x is not a well-formed formula,
 so we can't even sensibly speak of the Russell class.
 Thus TST counters <A HREF="ru.html">Russell's Paradox</A>.
 <p>
@@ -162,7 +162,7 @@ The axioms</FONT></B>
 The axioms begin with traditional axioms for
 classical first order logic with equality.
 See the regular
-<a href="/mpegif/mmset.html">Metamath Proof Explorer</a>
+<a href="/mpeuni/mmset.html">Metamath Proof Explorer</a>
 for discussions about these
 axioms and some of their implications.
 
@@ -179,22 +179,8 @@ SUMMARY="Extensionality">
 <TR><TH>Name</TH><TH>Ref</TH><TH>Expression</TH></TR>
 <TR ALIGN=LEFT>
 <TD><A HREF="ax-ext.html">Axiom of Extensionality</A></TD>
-<TD><FONT COLOR="#006633"><A HREF="ax-ext.html">ax-ext</A></FONT></TD>
-<TD><IMG SRC='_vdash.gif' WIDTH=10 HEIGHT=19 TITLE='|-' ALT='|-' > <IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 TITLE='(' ALT='('><IMG SRC='forall.gif'
-WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19
-TITLE='z' ALT='z'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 TITLE='(' ALT='('
-ALIGN=TOP><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'> <IMG
-SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'> <IMG SRC='_x.gif'
-WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'> <IMG SRC='leftrightarrow.gif' WIDTH=15
-HEIGHT=19 TITLE='&lt;-&gt;' ALT='&lt;-&gt;'> <IMG SRC='_z.gif' WIDTH=9 HEIGHT=19
-TITLE='z' ALT='z'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'>
-<IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'><IMG SRC='rp.gif'
-WIDTH=5 HEIGHT=19 TITLE=')' ALT=')'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
-TITLE='-&gt;' ALT='-&gt;'> <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'
-ALIGN=TOP> <IMG SRC='eq.gif' WIDTH=12 HEIGHT=19 TITLE='=' ALT='='> <IMG
-SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 TITLE=')' ALT=')'></TD></TR>
+<TD><FONT COLOR="#006633"> ~ ax-ext </FONT></TD>
+<TD>` |- ( A. z ( z e. x <-> z e. y ) -> x = y ) ` </TD></TR>
 </TABLE>
 </CENTER>
 
@@ -203,11 +189,11 @@ The comprehension schema is stated using the concept of stratified formula;
 the approach is the Stratification Axiom from [Quine2].
 In short,
 a well-formed formula using only propositional symbols, predicate
-symbols, and <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> is "stratified" iff you can make a (metalogical)
+symbols, and ` e. ` is "stratified" iff you can make a (metalogical)
 mapping from the variables to the natural numbers such that any formulas
 of the form x&nbsp;=&nbsp;y have the same number,
 and any formulas of the form
-x&nbsp;<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'>&nbsp;y have
+x&nbsp;` e. `&nbsp;y have
 x as one less than y.
 Quine's stratification axiom states that there is a
 set corresponding to any stratified formula.
@@ -227,261 +213,54 @@ Ref</B></TD><TD><B>Expression (see link for any distinct variable requirements)
 
 <TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
 <TD><A HREF="ax-nin.html">Axiom of Anti-Intersection (P1)</A></TD>
-<TD><A HREF="ax-nin.html">ax-nin</A></TD>
-<TD><IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 TITLE='|-' ALT='|-' > <IMG SRC='exists.gif' WIDTH=9 HEIGHT=19
-TITLE='E.' ALT='E.'><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'
-ALIGN=TOP><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG
-SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 TITLE='(' ALT='('><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'
-ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'> <IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 TITLE='&lt;-&gt;' ALT='&lt;-&gt;'> <IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 TITLE='(' ALT='('><IMG SRC='_w.gif' WIDTH=12
-HEIGHT=19 TITLE='w' ALT='w'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'
-ALIGN=TOP> <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'> <IMG
-SRC='barwedge.gif' WIDTH=9 HEIGHT=19 TITLE='-/\' ALT='-/\'> <IMG SRC='_w.gif'
-WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19
-TITLE='e.' ALT='e.'> <IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 TITLE=')' ALT=')'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 TITLE=')' ALT=')'></TD></TR>
+<TD> ~ ax-nin </TD>
+<TD>` |- E. z A. w ( w e. z <-> ( w e. x -/\ w e. y ) ) ` </TD></TR>
 
 <TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
 <TD><A HREF="ax-si.html">Axiom of Singleton Image (P2)</A></TD>
-<TD><A HREF="ax-si.html">ax-si</A></TD>
-<TD><IMG SRC='_vdash.gif'
-WIDTH=10 HEIGHT=19 TITLE='|-' ALT='|-' > <IMG SRC='exists.gif' WIDTH=9
-HEIGHT=19 TITLE='E.' ALT='E.'><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'
-ALIGN=TOP><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='forall.gif'
-WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19
-TITLE='w' ALT='w'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 TITLE='(' ALT='('
-ALIGN=TOP><IMG SRC='llangle.gif' WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALT='&lt;&lt;'
-ALIGN=TOP><IMG SRC='lbrace.gif' WIDTH=6 HEIGHT=19 TITLE='{' ALT='{'><IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='rbrace.gif'
-WIDTH=6 HEIGHT=19 TITLE='}' ALT='}'><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19
-TITLE=',' ALT=','> <IMG SRC='lbrace.gif' WIDTH=6 HEIGHT=19 TITLE='{' ALT='{'
-ALIGN=TOP><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'><IMG
-SRC='rbrace.gif' WIDTH=6 HEIGHT=19 TITLE='}' ALT='}'><IMG SRC='rrangle.gif'
-WIDTH=6 HEIGHT=19 TITLE='&gt;&gt;' ALT='&gt;&gt;'> <IMG SRC='in.gif' WIDTH=10
-HEIGHT=19 TITLE='e.' ALT='e.'> <IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'
-ALIGN=TOP> <IMG SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 TITLE='&lt;-&gt;' ALT='&lt;-&gt;'
-ALIGN=TOP> <IMG SRC='llangle.gif' WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALT='&lt;&lt;'
-ALIGN=TOP><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG
-SRC='comma.gif' WIDTH=4 HEIGHT=19 TITLE=',' ALT=','> <IMG SRC='_w.gif'
-WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'><IMG SRC='rrangle.gif' WIDTH=6 HEIGHT=19
-TITLE='&gt;&gt;' ALT='&gt;&gt;'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'
-ALIGN=TOP> <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'><IMG
-SRC='rp.gif' WIDTH=5 HEIGHT=19 TITLE=')' ALT=')'></TD></TR>
+<TD> ~ ax-si </TD>
+<TD>` |- E. y A. z A. w ( << { z } , { w } >> e. y <-> << z , w >> e. x ) ` </TD></TR>
 
 <TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
 <TD><A HREF="ax-sn.html">Axiom of Singleton (not directly stated in Hailperin)</A></TD>
-<TD><A HREF="ax-sn.html">ax-sn</A></TD>
-<TD><IMG SRC='_vdash.gif'
-WIDTH=10 HEIGHT=19 TITLE='|-' ALT='|-' > <IMG SRC='exists.gif' WIDTH=9
-HEIGHT=19 TITLE='E.' ALT='E.'><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'
-ALIGN=TOP><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 TITLE='(' ALT='('><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'
-ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'> <IMG
-SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 TITLE='&lt;-&gt;' ALT='&lt;-&gt;'> <IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'> <IMG SRC='eq.gif' WIDTH=12
-HEIGHT=19 TITLE='=' ALT='='> <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 TITLE=')' ALT=')'></TD></TR>
+<TD> ~ ax-sn </TD>
+<TD>` |- E. y A. z ( z e. y <-> z = x ) ` </TD></TR>
 
 <TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
 <TD><A HREF="ax-ins2.html">Axiom of Insertion Two (P3)</A></TD>
-<TD><A HREF="ax-ins2.html">ax-ins2</A></TD>
-<TD><IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 TITLE='|-' ALT='|-' > <IMG SRC='exists.gif' WIDTH=9 HEIGHT=19
-TITLE='E.' ALT='E.'><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'
-ALIGN=TOP><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='forall.gif'
-WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19
-TITLE='w' ALT='w'><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'
-ALIGN=TOP><IMG SRC='_t.gif' WIDTH=7 HEIGHT=19 TITLE='t' ALT='t'><IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 TITLE='(' ALT='('><IMG SRC='llangle.gif'
-WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALT='&lt;&lt;'><IMG SRC='lbrace.gif' WIDTH=6
-HEIGHT=19 TITLE='{' ALT='{'><IMG SRC='lbrace.gif' WIDTH=6 HEIGHT=19 TITLE='{' ALT='{'
-ALIGN=TOP><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG
-SRC='rbrace.gif' WIDTH=6 HEIGHT=19 TITLE='}' ALT='}'><IMG SRC='rbrace.gif'
-WIDTH=6 HEIGHT=19 TITLE='}' ALT='}'><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19
-TITLE=',' ALT=','> <IMG SRC='llangle.gif' WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALT='&lt;&lt;'
-ALIGN=TOP><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'><IMG
-SRC='comma.gif' WIDTH=4 HEIGHT=19 TITLE=',' ALT=','> <IMG SRC='_t.gif'
-WIDTH=7 HEIGHT=19 TITLE='t' ALT='t'><IMG SRC='rrangle.gif' WIDTH=6 HEIGHT=19
-TITLE='&gt;&gt;' ALT='&gt;&gt;'><IMG SRC='rrangle.gif' WIDTH=6 HEIGHT=19
-TITLE='&gt;&gt;' ALT='&gt;&gt;'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'
-ALIGN=TOP> <IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 TITLE='&lt;-&gt;' ALT='&lt;-&gt;'> <IMG
-SRC='llangle.gif' WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALT='&lt;&lt;'><IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='comma.gif' WIDTH=4
-HEIGHT=19 TITLE=',' ALT=','> <IMG SRC='_t.gif' WIDTH=7 HEIGHT=19 TITLE='t' ALT='t'
-ALIGN=TOP><IMG SRC='rrangle.gif' WIDTH=6 HEIGHT=19 TITLE='&gt;&gt;' ALT='&gt;&gt;'>
-<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'> <IMG SRC='_x.gif'
-WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-TITLE=')' ALT=')'></TD></TR>
+<TD> ~ ax-ins2 </TD>
+<TD>` |- E. y A. z A. w A. t ( << { { z } } , << w , t >> >> e. y <-> << z , t >> `
+` e. x ) ` </TD></TR>
 
 <TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
 <TD><A HREF="ax-ins3.html">Axiom of Insertion Three (P4)</A></TD>
-<TD><A HREF="ax-ins3.html">ax-ins3</A></TD>
-<TD><IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 TITLE='|-' ALT='|-' > <IMG SRC='exists.gif' WIDTH=9 HEIGHT=19
-TITLE='E.' ALT='E.'><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'
-ALIGN=TOP><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='forall.gif'
-WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19
-TITLE='w' ALT='w'><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'
-ALIGN=TOP><IMG SRC='_t.gif' WIDTH=7 HEIGHT=19 TITLE='t' ALT='t'><IMG
-SRC='lp.gif' WIDTH=5 HEIGHT=19 TITLE='(' ALT='('><IMG SRC='llangle.gif'
-WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALT='&lt;&lt;'><IMG SRC='lbrace.gif' WIDTH=6
-HEIGHT=19 TITLE='{' ALT='{'><IMG SRC='lbrace.gif' WIDTH=6 HEIGHT=19 TITLE='{' ALT='{'
-ALIGN=TOP><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG
-SRC='rbrace.gif' WIDTH=6 HEIGHT=19 TITLE='}' ALT='}'><IMG SRC='rbrace.gif'
-WIDTH=6 HEIGHT=19 TITLE='}' ALT='}'><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19
-TITLE=',' ALT=','> <IMG SRC='llangle.gif' WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALT='&lt;&lt;'
-ALIGN=TOP><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'><IMG
-SRC='comma.gif' WIDTH=4 HEIGHT=19 TITLE=',' ALT=','> <IMG SRC='_t.gif'
-WIDTH=7 HEIGHT=19 TITLE='t' ALT='t'><IMG SRC='rrangle.gif' WIDTH=6 HEIGHT=19
-TITLE='&gt;&gt;' ALT='&gt;&gt;'><IMG SRC='rrangle.gif' WIDTH=6 HEIGHT=19
-TITLE='&gt;&gt;' ALT='&gt;&gt;'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'
-ALIGN=TOP> <IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 TITLE='&lt;-&gt;' ALT='&lt;-&gt;'> <IMG
-SRC='llangle.gif' WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALT='&lt;&lt;'><IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='comma.gif' WIDTH=4
-HEIGHT=19 TITLE=',' ALT=','> <IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'
-ALIGN=TOP><IMG SRC='rrangle.gif' WIDTH=6 HEIGHT=19 TITLE='&gt;&gt;' ALT='&gt;&gt;'>
-<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'> <IMG SRC='_x.gif'
-WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19
-TITLE=')' ALT=')'></TD></TR>
+<TD> ~ ax-ins3 </TD>
+<TD>` |- E. y A. z A. w A. t ( << { { z } } , << w , t >> >> e. y <-> << z , w >> `
+` e. x ) ` </TD></TR>
 
 <TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
 <TD><A HREF="ax-xp.html">Axiom of Cross Product (P5)</A></TD>
-<TD><A HREF="ax-xp.html">ax-xp</A></TD><TD><IMG SRC='_vdash.gif'
-WIDTH=10 HEIGHT=19 TITLE='|-' ALT='|-' > <IMG SRC='exists.gif' WIDTH=9
-HEIGHT=19 TITLE='E.' ALT='E.'><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'
-ALIGN=TOP><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 TITLE='(' ALT='('><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'
-ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'> <IMG
-SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 TITLE='&lt;-&gt;' ALT='&lt;-&gt;'> <IMG
-SRC='exists.gif' WIDTH=9 HEIGHT=19 TITLE='E.' ALT='E.'><IMG SRC='_w.gif'
-WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'><IMG SRC='exists.gif' WIDTH=9 HEIGHT=19
-TITLE='E.' ALT='E.'><IMG SRC='_t.gif' WIDTH=7 HEIGHT=19 TITLE='t' ALT='t'
-ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 TITLE='(' ALT='('><IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'> <IMG SRC='eq.gif' WIDTH=12
-HEIGHT=19 TITLE='=' ALT='='> <IMG SRC='llangle.gif' WIDTH=6 HEIGHT=19
-TITLE='&lt;&lt;' ALT='&lt;&lt;'><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'
-ALIGN=TOP><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 TITLE=',' ALT=','> <IMG
-SRC='_t.gif' WIDTH=7 HEIGHT=19 TITLE='t' ALT='t'><IMG SRC='rrangle.gif'
-WIDTH=6 HEIGHT=19 TITLE='&gt;&gt;' ALT='&gt;&gt;'> <IMG SRC='wedge.gif' WIDTH=11
-HEIGHT=19 TITLE='/\' ALT='/\'> <IMG SRC='_t.gif' WIDTH=7 HEIGHT=19 TITLE='t' ALT='t'
-ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'> <IMG
-SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 TITLE=')' ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 TITLE=')' ALT=')'
-ALIGN=TOP></TD></TR>
+<TD> ~ ax-xp </TD><TD>` |- E. y A. z ( z e. y <-> E. w E. t ( z = << w , t >> /\ t e. x ) ) ` </TD></TR>
 
 <TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
 <TD><A HREF="ax-typlower.html">Axiom of Type Lowering (P6)</A></TD>
-<TD><A HREF="ax-typlower.html">ax-typlower</A></TD>
-<TD><IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 TITLE='|-' ALT='|-' > <IMG SRC='exists.gif' WIDTH=9 HEIGHT=19
-TITLE='E.' ALT='E.'><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'
-ALIGN=TOP><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 TITLE='(' ALT='('><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'
-ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'> <IMG
-SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 TITLE='&lt;-&gt;' ALT='&lt;-&gt;'> <IMG
-SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG SRC='_w.gif'
-WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'><IMG SRC='llangle.gif' WIDTH=6 HEIGHT=19
-TITLE='&lt;&lt;' ALT='&lt;&lt;'><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'
-ALIGN=TOP><IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 TITLE=',' ALT=','> <IMG
-SRC='lbrace.gif' WIDTH=6 HEIGHT=19 TITLE='{' ALT='{'><IMG SRC='_z.gif'
-WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='rbrace.gif' WIDTH=6 HEIGHT=19
-TITLE='}' ALT='}'><IMG SRC='rrangle.gif' WIDTH=6 HEIGHT=19 TITLE='&gt;&gt;' ALT='&gt;&gt;'
-ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'> <IMG
-SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 TITLE=')' ALT=')'></TD></TR>
+<TD> ~ ax-typlower </TD>
+<TD>` |- E. y A. z ( z e. y <-> A. w << w , { z } >> e. x ) ` </TD></TR>
 
 <TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
 <TD><A HREF="ax-cnv.html">Axiom of Converse (P7)</A></TD>
-<TD><A HREF="ax-cnv.html">ax-cnv</A></TD>
-<TD><IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 TITLE='|-' ALT='|-' > <IMG SRC='exists.gif' WIDTH=9 HEIGHT=19
-TITLE='E.' ALT='E.'><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'
-ALIGN=TOP><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='forall.gif'
-WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19
-TITLE='w' ALT='w'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 TITLE='(' ALT='('
-ALIGN=TOP><IMG SRC='llangle.gif' WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALT='&lt;&lt;'
-ALIGN=TOP><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG
-SRC='comma.gif' WIDTH=4 HEIGHT=19 TITLE=',' ALT=','> <IMG SRC='_w.gif'
-WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'><IMG SRC='rrangle.gif' WIDTH=6 HEIGHT=19
-TITLE='&gt;&gt;' ALT='&gt;&gt;'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'
-ALIGN=TOP> <IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 TITLE='&lt;-&gt;' ALT='&lt;-&gt;'> <IMG
-SRC='llangle.gif' WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALT='&lt;&lt;'><IMG
-SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'><IMG SRC='comma.gif'
-WIDTH=4 HEIGHT=19 TITLE=',' ALT=','> <IMG SRC='_z.gif' WIDTH=9 HEIGHT=19
-TITLE='z' ALT='z'><IMG SRC='rrangle.gif' WIDTH=6 HEIGHT=19 TITLE='&gt;&gt;' ALT='&gt;&gt;'
-ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'> <IMG
-SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 TITLE=')' ALT=')'></TD></TR>
+<TD> ~ ax-cnv </TD>
+<TD>` |- E. y A. z A. w ( << z , w >> e. y <-> << w , z >> e. x ) ` </TD></TR>
 
 <TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
 <TD><A HREF="ax-1c.html">Axiom of Cardinal One (P8)</A></TD>
-<TD><A HREF="ax-1c.html">ax-1c</A></TD>
-<TD><IMG SRC='_vdash.gif'
-WIDTH=10 HEIGHT=19 TITLE='|-' ALT='|-' > <IMG SRC='exists.gif' WIDTH=9
-HEIGHT=19 TITLE='E.' ALT='E.'><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'
-ALIGN=TOP><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG
-SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'><IMG SRC='lp.gif' WIDTH=5
-HEIGHT=19 TITLE='(' ALT='('><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'
-ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'> <IMG
-SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 TITLE='&lt;-&gt;' ALT='&lt;-&gt;'> <IMG
-SRC='exists.gif' WIDTH=9 HEIGHT=19 TITLE='E.' ALT='E.'><IMG SRC='_z.gif'
-WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19
-TITLE='A.' ALT='A.'><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'
-ALIGN=TOP><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 TITLE='(' ALT='('><IMG
-SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'> <IMG SRC='in.gif' WIDTH=10
-HEIGHT=19 TITLE='e.' ALT='e.'> <IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'
-ALIGN=TOP> <IMG SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 TITLE='&lt;-&gt;' ALT='&lt;-&gt;'
-ALIGN=TOP> <IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'> <IMG
-SRC='eq.gif' WIDTH=12 HEIGHT=19 TITLE='=' ALT='='> <IMG SRC='_z.gif' WIDTH=9
-HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 TITLE=')' ALT=')'
-ALIGN=TOP><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 TITLE=')' ALT=')'></TD></TR>
+<TD> ~ ax-1c </TD>
+<TD>` |- E. x A. y ( y e. x <-> E. z A. w ( w e. y <-> w = z ) ) ` </TD></TR>
 
 <TR BGCOLOR="#EEFFFA" ALIGN=LEFT>
 <TD><A HREF="ax-sset.html">Axiom of Subset Relationship (P9)</A></TD>
-<TD><A HREF="ax-sset.html">ax-sset</A></TD>
-<TD><IMG SRC='_vdash.gif' WIDTH=10
-HEIGHT=19 TITLE='|-' ALT='|-' > <IMG SRC='exists.gif' WIDTH=9 HEIGHT=19
-TITLE='E.' ALT='E.'><IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'
-ALIGN=TOP><IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG
-SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'><IMG SRC='forall.gif'
-WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG SRC='_z.gif' WIDTH=9 HEIGHT=19
-TITLE='z' ALT='z'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19 TITLE='(' ALT='('
-ALIGN=TOP><IMG SRC='llangle.gif' WIDTH=6 HEIGHT=19 TITLE='&lt;&lt;' ALT='&lt;&lt;'
-ALIGN=TOP><IMG SRC='_y.gif' WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'><IMG
-SRC='comma.gif' WIDTH=4 HEIGHT=19 TITLE=',' ALT=','> <IMG SRC='_z.gif'
-WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='rrangle.gif' WIDTH=6 HEIGHT=19
-TITLE='&gt;&gt;' ALT='&gt;&gt;'> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'
-ALIGN=TOP> <IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALT='x'> <IMG
-SRC='leftrightarrow.gif' WIDTH=15 HEIGHT=19 TITLE='&lt;-&gt;' ALT='&lt;-&gt;'> <IMG
-SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALT='A.'><IMG SRC='_w.gif'
-WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'><IMG SRC='lp.gif' WIDTH=5 HEIGHT=19
-TITLE='(' ALT='('><IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'>
-<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'> <IMG SRC='_y.gif'
-WIDTH=9 HEIGHT=19 TITLE='y' ALT='y'> <IMG SRC='to.gif' WIDTH=15 HEIGHT=19
-TITLE='-&gt;' ALT='-&gt;'> <IMG SRC='_w.gif' WIDTH=12 HEIGHT=19 TITLE='w' ALT='w'
-ALIGN=TOP> <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 TITLE='e.' ALT='e.'> <IMG
-SRC='_z.gif' WIDTH=9 HEIGHT=19 TITLE='z' ALT='z'><IMG SRC='rp.gif' WIDTH=5
-HEIGHT=19 TITLE=')' ALT=')'><IMG SRC='rp.gif' WIDTH=5 HEIGHT=19 TITLE=')' ALT=')'
-ALIGN=TOP></TD></TR>
+<TD> ~ ax-sset </TD>
+<TD>` |- E. x A. y A. z ( << y , z >> e. x <-> A. w ( w e. y -> w e. z ) ) ` </TD></TR>
 </TABLE>
 </CENTER>
 

@@ -68,9 +68,9 @@ script:
   - ./checkmm set.mm
   - ./checkmm iset.mm
   # Generate HTML from raw files into mpegif-html/ and mpeuni-html/
-  - scripts/regen-from-raw '/HTML'
+  - scripts/regen-from-raw --force '/HTML' .regened.html
   - mkdir -p mpegif-html/
-  - for f in *.demo.html; do mv $f mpegif-html/${f%.demo.html}.html ; done
-  - scripts/regen-from-raw '/ALT_HTML'
+  - for f in *.regened.html; do mv $f mpegif-html/${f%.regened.html}.html ; done
+  - scripts/regen-from-raw --force '/ALT_HTML' .regened.html
   - mkdir -p mpeuni-html/
-  - for f in *.demo.html; do mv $f mpeuni-html/${f%.demo.html}.html ; done
+  - for f in *.regened.html; do mv $f mpeuni-html/${f%.regened.html}.html ; done
