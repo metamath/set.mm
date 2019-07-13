@@ -5,6 +5,13 @@
 
 # Just run this program without arguments to regen the HTML from raw files
 
+if [ "$1" == '--force' ]; then
+  force=true
+  shift
+else
+  force=false
+fi
+
 markup_options="${1:-"/ALT_HTML"} /SYMBOLS"
 suffix="${2:-".html"}"
 
@@ -24,7 +31,8 @@ generate_files_using_convention() {
     raw_file="${file}.raw.html"
     generated_file="${file}${suffix}"
     # Regenerate file only if it's outdated
-    if [ "$generated_file" -ot "$raw_file" ] || \
+    if [ "$force" = 'true' ] || \
+       [ "$generated_file" -ot "$raw_file" ] || \
        [ "$generated_file" -ot "$convention_database" ] ; then
       echo "markup \"${raw_file}\" \"${generated_file}\" ${markup_options}"
     fi
