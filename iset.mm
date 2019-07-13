@@ -54325,15 +54325,8 @@ $)
     rdgival $p |- ( B e. On -> ( rec ( F , A ) ` B ) =
         ( A u. U_ x e. dom ( rec ( F , A ) |` B )
           ( F ` ( ( rec ( F , A ) |` B ) ` x ) ) ) ) $=
-      ( vg vy con0 wcel cfv cvv cv cdm ciun cun wceq mpan wral syl2anc dmresexg
-      crdg cres cmpt df-irdg rdgruledef tfri2 wfun rdgfun resfunexg vex sylancl
-      fvexg ralrimivw wfn funfvex funfni ralimi iunexg unexg sylancr dmeq fveq1
-      syl fveq2d iuneq12d uneq2d eqid fvmptg eqtrd ) CIJZCDBUBZKVLCUCZGLBAGMZNZ
-      AMZVNKZDKZOZPZUDZKZBAVMNZVPVMKZDKZOZPZHCVLWAAGDBUEABHGDEFUFUGVKVMLJZWGLJZ
-      WBWGQVLUHVKWHBDUIVLCIUJRZVKBLJWFLJZWIEVKWCLJWELJZAWCSZWKVLCIUAVKWDLJZAWCS
-      WMVKWNAWCVKWHVPLJWNWJAUKVPVMLLUMULUNWNWLAWCDLUOWNWLFWLLWDDWDDUPUQRURVDAWC
-      WELLUSTBWFLLUTVAGVMVTWGLLWAVNVMQZVSWFBWOAVOWCVRWEVNVMVBWOVQWDDVPVNVMVCVEV
-      FVGWAVHVITVJ $.
+      ( cvv wfn wcel con0 crdg cfv cres cdm cv ciun cun wceq rdgivalg
+      mp3an12 ) DGHBGICJICDBKZLBAUACMZNAOUBLDLPQRFEABCDGST $.
 
     $( The initial value of the recursive definition generator.  (Contributed
        by NM, 23-Apr-1995.)  (Revised by Mario Carneiro, 14-Nov-2014.) $)
