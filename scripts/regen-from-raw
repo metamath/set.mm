@@ -5,7 +5,7 @@
 
 # Just run this program without arguments to regen the HTML from raw files
 
-if [ "$1" == '--force' ]; then
+if [ "$1" = '--force' ]; then
   force=true
   shift
 else
