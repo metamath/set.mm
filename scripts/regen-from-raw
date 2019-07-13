@@ -30,8 +30,10 @@ generate_files_using_convention() {
   for file in $files_to_regen; do
     raw_file="${file}.raw.html"
     generated_file="${file}${suffix}"
-    # Regenerate file only if it's outdated
-    if [ "$force" = 'true' ] || \
+    # Regenerate file only if it's forced or outdated.
+    # The "-f" is because dash and bash's "-ot" behavior differs
+    # if the first file does not exist.
+    if [ "$force" = 'true' ] || ! [ -f "$generated_file" ] || \
        [ "$generated_file" -ot "$raw_file" ] || \
        [ "$generated_file" -ot "$convention_database" ] ; then
       echo "markup \"${raw_file}\" \"${generated_file}\" ${markup_options}"
