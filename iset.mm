@@ -1,4 +1,4 @@
-$( iset.mm - Version of 13-Jul-2019
+$( iset.mm - Version of 14-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54569,6 +54569,16 @@ $)
       ( cv cfv wss csuc sssucid cvv wcel vex sucex suceq fvmptg mp2an
       wceq sseqtr4i ax-gen ) AEZTCFZGATTHZUATITJKUBJKUAUBQALZTUCMBTBE
       ZHUBJJCUDTNDOPRS $.
+
+    $d A z $.  $d B z $.
+    $( Successor is increasing.  (Contributed by Jim Kingdon, 14-Jul-2019.) $)
+    sucinc2 $p |- ( ( B e. On /\ A e. B ) ->
+        ( F ` A ) C_ ( F ` B ) ) $=
+      ( con0 wcel wa csuc cfv wss word syl wceq cvv elex sucexg suceq
+      fvmptg syl2anc eloni ordsucss imp sssucid syl6ss onelon 3sstr4d
+      wi cv adantr ) CFGZBCGZHZBIZCIZBDJZCDJZUMUNCUOUKULUNCKZUKCLULUR
+      UHCUABCUBMUCCUDUEUMBFGZUPUNNZCBUFUSBOGUNOGUTBFPBFQABAUIZIZUNOOD
+      VABRESTMUKUQUONZULUKCOGUOOGVCCFPCFQACVBUOOODVACRESTUJUG $.
   $}
 
   ${
