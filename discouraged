@@ -8589,9 +8589,6 @@
 "iin1" is used by "sspwimpcf".
 "iin1" is used by "suctrALTcf".
 "imaelshi" is used by "rnelshi".
-"imbi12" is used by "imbi13".
-"imbi12" is used by "imbi13VD".
-"imbi12" is used by "sbcssgVD".
 "imbi13" is used by "trsbc".
 "imbi13" is used by "trsbcVD".
 "impexp3a" is used by "impexp3acom3r".
@@ -16472,7 +16469,6 @@ New usage of "iin1" is discouraged (3 uses).
 New usage of "iin2" is discouraged (0 uses).
 New usage of "iin3" is discouraged (0 uses).
 New usage of "imaelshi" is discouraged (1 uses).
-New usage of "imbi12" is discouraged (3 uses).
 New usage of "imbi12VD" is discouraged (0 uses).
 New usage of "imbi13" is discouraged (2 uses).
 New usage of "imbi13VD" is discouraged (0 uses).
@@ -18615,6 +18611,7 @@ Proof modification of "bj-hbab1" is discouraged (20 steps).
 Proof modification of "bj-hblem" is discouraged (33 steps).
 Proof modification of "bj-hbs1" is discouraged (22 steps).
 Proof modification of "bj-hbsb2v" is discouraged (31 steps).
+Proof modification of "bj-imim2ALT" is discouraged (10 steps).
 Proof modification of "bj-inrab2" is discouraged (48 steps).
 Proof modification of "bj-isseti" is discouraged (15 steps).
 Proof modification of "bj-issetw" is discouraged (53 steps).
@@ -19069,7 +19066,6 @@ Proof modification of "iidn3" is discouraged (8 steps).
 Proof modification of "iin1" is discouraged (1 steps).
 Proof modification of "iin2" is discouraged (1 steps).
 Proof modification of "iin3" is discouraged (1 steps).
-Proof modification of "imbi12" is discouraged (30 steps).
 Proof modification of "imbi12VD" is discouraged (121 steps).
 Proof modification of "imbi13" is discouraged (34 steps).
 Proof modification of "imbi13VD" is discouraged (67 steps).
