@@ -18545,6 +18545,7 @@ Proof modification of "bj-axc11nv" is discouraged (71 steps).
 Proof modification of "bj-axc11v" is discouraged (14 steps).
 Proof modification of "bj-axc15v" is discouraged (103 steps).
 Proof modification of "bj-axc16" is discouraged (5 steps).
+Proof modification of "bj-axc16b" is discouraged (14 steps).
 Proof modification of "bj-axc16g" is discouraged (30 steps).
 Proof modification of "bj-axd2d" is discouraged (16 steps).
 Proof modification of "bj-axdd2" is discouraged (28 steps).
@@ -18594,6 +18595,10 @@ Proof modification of "bj-drex1v" is discouraged (42 steps).
 Proof modification of "bj-drnf1v" is discouraged (50 steps).
 Proof modification of "bj-drnf2v" is discouraged (13 steps).
 Proof modification of "bj-dtru" is discouraged (146 steps).
+Proof modification of "bj-dtrucor" is discouraged (19 steps).
+Proof modification of "bj-dtrucor2v" is discouraged (44 steps).
+Proof modification of "bj-dvdemo1" is discouraged (28 steps).
+Proof modification of "bj-dvdemo2" is discouraged (16 steps).
 Proof modification of "bj-el" is discouraged (48 steps).
 Proof modification of "bj-eleq1w" is discouraged (51 steps).
 Proof modification of "bj-elisset" is discouraged (38 steps).
@@ -18604,6 +18609,7 @@ Proof modification of "bj-equsalhv" is discouraged (10 steps).
 Proof modification of "bj-equsalv" is discouraged (39 steps).
 Proof modification of "bj-equsexhv" is discouraged (10 steps).
 Proof modification of "bj-equsexv" is discouraged (38 steps).
+Proof modification of "bj-eunex" is discouraged (53 steps).
 Proof modification of "bj-godellob" is discouraged (21 steps).
 Proof modification of "bj-hbab1" is discouraged (20 steps).
 Proof modification of "bj-hblem" is discouraged (33 steps).
