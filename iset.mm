@@ -54339,10 +54339,71 @@ $)
 
   ${
     $d x y z f g u v w F $.  $d x y z f g u v w A $.  $d B g x $.
-    rdgifnon.1 $e |- A e. _V $.
-    rdgifnon.2 $e |- F Fn _V $.
+    rdgisuc1.1 $e |- ( ph -> F Fn _V ) $.
+    rdgisuc1.2 $e |- ( ph -> A e. V ) $.
+    rdgisuc1.3 $e |- ( ph -> B e. On ) $.
+    $( One way of describing the value of the recursive definition generator at
+       a successor.  There is no condition on the characteristic function ` F `
+       other than ` F Fn _V ` .  Given that, the resulting expression
+       encompasses both the expected successor term
+       ` ( F `` ( rec ( F , A ) `` B ) ) ` but also terms that correspond to
+       the initial value ` A ` and to limit ordinals
+       ` U_ x e. B ( F `` ( ( rec ( F , A ) |`` suc B ) `` x ) ) ` .
+
+       If we added a condition that the characteristic function is increasing
+       (for example ` A. x x e. ( F `` x ) ` ) we could likely show
+       ` ( rec ( F , A ) `` suc B ) = ( F `` ( rec ( F , A ) `` B ) ) ` .
+       (Contributed by Jim Kingdon, 9-Jun-2019.) $)
+    rdgisuc1 $p |- ( ph -> ( rec ( F , A ) ` suc B ) =
+        ( A u. ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
+          u. ( F ` ( rec ( F , A ) ` B ) ) ) ) ) $=
+      ( cfv cdm ciun cun wfn wcel con0 wceq syl wss uneq2d cv syl3anc
+      csuc crdg cres cvv suceloni rdgivalg rdgifnong syl2anc sseqtr4d
+      onss ssdmres sylib iuneq1d csn df-suc iuneq1 ax-mp iunxun eqtri
+      fndm fveq2 fveq2d iunxsng sucidg fvres eqtrd syl5eq 3eqtrd ) AD
+      UCZECUDZJZCBVLVKUEZKZBUAZVNJZEJZLZMZCBVKVRLZMZCBDVRLZDVLJZEJZMZ
+      MZAEUFNZCFOZVKPOZVMVTQGHADPOZWJIDUGRZBCVKEFUHUBAVSWACABVOVKVRAV
+      KVLKZSVOVKQAVKPWMAWJVKPSWLVKULRAVLPNZWMPQAWHWIWNGHCEFUIUJPVLVBR
+      UKVKVLUMUNUOTAWKWBWGQIWKWAWFCWKWAWCBDUPZVRLZMZWFWABDWOMZVRLZWQV
+      KWRQWAWSQDUQBVKWRVRURUSBDWOVRUTVAWKWPWEWCWKWPDVNJZEJZWEBDVRXAPV
+      PDQVQWTEVPDVNVCVDVEWKWTWDEWKDVKOWTWDQDPVFDVKVLVGRVDVHTVITRVJ $.
+
+    $( The initial value is a subset of the recursive definition generator
+       evaluated at any ordinal.  This is a consequence of the way that
+       ~ df-irdg handles the initial value.  (Contributed by Jim Kingdon,
+       11-Jun-2019.) $)
+    rdg0ss $p |- ( ph -> A C_ ( rec ( F , A ) ` B ) ) $=
+      ( vx crdg cres cdm cv cfv ciun cun ssun1 cvv wfn wcel con0 wceq
+      rdgivalg syl3anc syl5sseqr ) ABIDBJZCKZLIMUGNDNOZPZBCUFNZBUHQAD
+      RSBETCUATUJUIUBFGHIBCDEUCUDUE $.
+
+    ${
+      $d A x $.  $d B x $.  $d F x $.
+      rdgisuc2.inc $e |- ( ph -> A. x x C_ ( F ` x ) ) $.
+      $( The value of the recursive definition generator.
+
+         Given the hypothesis that the characteristic function is increasing,
+         we can remove the initial value from ~ rdgisuc1 by using ~ rdg0ss .
+         (Contributed by Jim Kingdon, 15-Jun-2019.) $)
+      rdgisuc2 $p |- ( ph -> ( rec ( F , A ) ` suc B ) =
+          ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
+            u. ( F ` ( rec ( F , A ) ` B ) ) ) ) $=
+        ( csuc cfv cun wss wceq cvv wcel con0 wfn syl2anc crdg cv wal
+        cres ciun rdgisuc1 rdg0ss rdgifnong funfvex funfni id fveq2
+        un12 sseq12d spcgv sstrd ssequn1 sylib uneq2d syl5eq eqtrd
+        sylc ) ADKZECUAZLCBDBUBZVDVCUDLELUEZDVDLZELZMZMZVIABCDEFGHIUF
+        AVJVFCVHMZMVICVFVHUMAVKVHVFACVHNVKVHOACVGVHACDEFGHIUGAVGPQZVE
+        VEELZNZBUCVGVHNZAVDRSZDRQVLAEPSCFQVPGHCEFUHTIVLRDVDDVDUIUJTJV
+        NVOBVGPVEVGOZVEVGVMVHVQUKVEVGEULUNUOVBUPCVHUQURUSUTVA $.
+    $}
+  $}
+
+  ${
+    $d x y z f g u v w F $.  $d x y z f g u v w A $.  $d B g x $.
+    rdg0.1 $e |- A e. _V $.
+    rdg0.2 $e |- F Fn _V $.
     $( The recursion rule for the recursive definition generator is defined
-       everywhere.  Lemma for ~ rdgifnon and ~ rdg0 .  (Contributed by Jim
+       everywhere.  Lemma for ~ rdg0 .  (Contributed by Jim
        Kingdon, 29-May-2019.) $)
     rdgruledef $p |- (
         Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
@@ -54350,24 +54411,6 @@ $)
           e. _V ) $=
       ( cvv wfn wcel cv cdm cfv ciun cun cmpt wfun rdgruledefgg mp2an
       wa ) EHIBHJDHBADKZLAKUAMEMNOPZQCKUBMHJTGFABCDEHRS $.
-
-    $( The recursive definition generator is a function on ordinal numbers.
-       The ` F Fn _V ` hypothesis states that the characteristic function is
-       defined for all sets (being defined for all ordinals might be enough,
-       but being defined for all sets will generally hold for the
-       characteristic functions we need to use this with).  (Contributed by Jim
-       Kingdon, 27-May-2019.) $)
-    rdgifnon $p |- rec ( F , A ) Fn On $=
-      ( vf vg vx crdg cvv cv cdm cfv ciun cun cmpt df-irdg rdgruledef tfri1 ) EBAH
-      FIAGFJZKGJSLBLMNOGFBAPGAEFBCDQR $.
-
-    $( Value of the recursive definition generator.  (Contributed by Jim
-       Kingdon, 11-Jun-2019.) $)
-    rdgival $p |- ( B e. On -> ( rec ( F , A ) ` B ) =
-        ( A u. U_ x e. dom ( rec ( F , A ) |` B )
-          ( F ` ( ( rec ( F , A ) |` B ) ` x ) ) ) ) $=
-      ( cvv wfn wcel con0 crdg cfv cres cdm cv ciun cun wceq rdgivalg
-      mp3an12 ) DGHBGICJICDBKZLBAUACMZNAOUBLDLPQRFEABCDGST $.
 
     $( The initial value of the recursive definition generator.  (Contributed
        by NM, 23-Apr-1995.)  (Revised by Mario Carneiro, 14-Nov-2014.) $)
@@ -54381,63 +54424,10 @@ $)
       OAVQCEVMVPHTUPVPHBIZNVOHBVNUQRBNURWIWKNOZDTWLNHBHBUSVFUTVAVBVCVDQSVRAHMAV
       QHAVQEHVPLZHVMHPVQWMPVEEVMHVPVGQEVPVHSVIAVJSS $.
 
-    $( One way of describing the value of the recursive definition generator at
-       a successor.  There is no condition on the characteristic function ` F `
-       other than ` F Fn _V ` .  Given that, the resulting expression
-       encompasses both the expected successor term
-       ` ( F `` ( rec ( F , A ) `` B ) ) ` but also terms that correspond to
-       the initial value ` A ` and to limit ordinals
-       ` U_ x e. B ( F `` ( ( rec ( F , A ) |`` suc B ) `` x ) ) ` .
-
-       If we added a condition that the characteristic function is increasing
-       (for example ` A. x x e. ( F `` x ) ` ) we could likely show
-       ` ( rec ( F , A ) `` suc B ) = ( F `` ( rec ( F , A ) `` B ) ) ` .
-       (Contributed by Jim Kingdon, 9-Jun-2019.) $)
-    rdgisuc1 $p |- ( B e. On -> ( rec ( F , A ) ` suc B ) =
-        ( A u. ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
-          u. ( F ` ( rec ( F , A ) ` B ) ) ) ) ) $=
-      ( con0 wcel csuc crdg cfv cdm ciun cun wceq ax-mp uneq2d fveq2d
-      syl wss cres cv suceloni rdgival onss wfn rdgifnon fndm ssdmres
-      syl6sseqr sylib iuneq1d df-suc iuneq1 iunxun eqtri fveq2 sucidg
-      csn iunxsng fvres eqtrd syl5eq 3eqtrd ) CGHZCIZDBJZKZBAVGVFUAZL
-      ZAUBZVIKZDKZMZNZBAVFVMMZNBACVMMZCVGKZDKZNZNVEVFGHZVHVOOCUCZABVF
-      DEFUDSVEVNVPBVEAVJVFVMVEVFVGLZTVJVFOVEVFGWCVEWAVFGTWBVFUESVGGUF
-      WCGOBDEFUGGVGUHPUJVFVGUIUKULQVEVPVTBVEVPVQACUSZVMMZNZVTVPACWDNZ
-      VMMZWFVFWGOVPWHOCUMAVFWGVMUNPACWDVMUOUPVEWEVSVQVEWECVIKZDKZVSAC
-      VMWJGVKCOVLWIDVKCVIUQRUTVEWIVRDVECVFHWIVROCGURCVFVGVASRVBQVCQVD
-      $.
-
-    $( The initial value is a subset of the recursive definition generator
-       evaluated at any ordinal.  This is a consequence of the way that
-       ~ df-irdg handles the initial value.  (Contributed by Jim Kingdon,
-       11-Jun-2019.) $)
-    rdg0ss $p |- ( B e. On -> A C_ ( rec ( F , A ) ` B ) ) $=
-      ( vx con0 wcel crdg cres cdm cv cfv cun ssun1 rdgival syl5sseqr
-      ciun ) BGHAFCAIZBJZKFLTMCMRZNABSMAUAOFABCDEPQ $.
-
     $( The recursive definition generator produces a set on a set input.
        (Contributed by Mario Carneiro, 3-Jul-2019.) $)
     rdgexg $p |- ( B e. V -> ( rec ( F , A ) ` B ) e. _V ) $=
       ( cvv wcel crdg cfv rdgexgg mpan ) AGHBDHBCAIJGHEABCGDFKL $.
-
-    ${
-      $d A x $.  $d B x $.  $d F x $.
-      rdgisuc2.inc $e |- A. x x C_ ( F ` x ) $.
-      $( The value of the recursive definition generator.
-
-         Given the hypothesis that the characteristic function is increasing,
-         we can remove the initial value from ~ rdgisuc1 by using ~ rdg0ss .
-         (Contributed by Jim Kingdon, 15-Jun-2019.) $)
-      rdgisuc2 $p |- ( B e. On -> ( rec ( F , A ) ` suc B ) =
-          ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
-            u. ( F ` ( rec ( F , A ) ` B ) ) ) ) $=
-        ( con0 wcel csuc crdg cfv cv cres ciun cun rdgisuc1 wss wceq cvv rdg0ss
-        un12 wal rdgifnon funfvex funfni mpan id fveq2 sseq12d spcgv ee10 sstrd
-        wfn ssequn1 sylib uneq2d syl5eq eqtrd ) CHIZCJZDBKZLBACAMZVBVANLDLOZCVB
-        LZDLZPZPZVGABCDEFQUTVHVDBVFPZPVGBVDVFUBUTVIVFVDUTBVFRVIVFSUTBVEVFBCDEFU
-        AUTVETIZVCVCDLZRZAUCVEVFRZVBHUNUTVJBDEFUDVJHCVBCVBUEUFUGGVLVMAVETVCVESZ
-        VCVEVKVFVNUHVCVEDUIUJUKULUMBVFUOUPUQURUS $.
-    $}
   $}
 
 $(
