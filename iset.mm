@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Jul-2019
+$( iset.mm - Version of 17-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36543,6 +36543,15 @@ $)
       UEUHUBUDUGACUCCDUBUCJUDUGKUCPBUCCLMNOUBUFCDUIUFQBRAUFCSTUA $.
   $}
 
+  $( Membership is inherited by predecessors.  (Contributed by Jim Kingdon,
+     17-Jul-2019.) $)
+  onsucelsucr $p |- ( B e. On -> ( suc A e. suc B -> A e. B ) ) $=
+    ( csuc wcel con0 cvv wi elex sucexb sylibr wa wceq wo wss onelss eqimss a1i
+    jaod adantl wb elsucg sylbi adantr ordelsuc sylan2 3imtr4d impancom mpancom
+    word eloni com12 ) ACZBCZDZBEDZABDZAFDZUNUOUPGUNULFDZUQULUMHAIZJUQUOUNUPUQU
+    OKULBDZULBLZMZULBNZUNUPUOVBVCGUQUOUTVCVABULOVAVCGUOULBPQRSUQUNVBTZUOUQURVDU
+    SULBFUAUBUCUOUQBUIUPVCTBUJABFUDUEUFUGUHUK $.
+
   ${
     $d x y A $.
     $( The class of all ordinal numbers is its own union.  Exercise 11 of
@@ -54403,8 +54412,8 @@ $)
     rdg0.1 $e |- A e. _V $.
     rdg0.2 $e |- F Fn _V $.
     $( The recursion rule for the recursive definition generator is defined
-       everywhere.  Lemma for ~ rdg0 .  (Contributed by Jim
-       Kingdon, 29-May-2019.) $)
+       everywhere.  Lemma for ~ rdg0 .  (Contributed by Jim Kingdon,
+       29-May-2019.) $)
     rdgruledef $p |- (
         Fun ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) )
         /\ ( ( g e. _V |-> ( A u. U_ x e. dom g ( F ` ( g ` x ) ) ) ) ` f )
