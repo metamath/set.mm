@@ -54308,12 +54308,12 @@ $)
   ${
     $d A f g x $.  $d F f g x $.  $d V f $.
     $( The recursive definition generator is a function on ordinal numbers.
-       The ` F Fn _V ` hypothesis states that the characteristic function is
+       The ` F Fn _V ` condition states that the characteristic function is
        defined for all sets (being defined for all ordinals might be enough,
        but being defined for all sets will generally hold for the
        characteristic functions we need to use this with).  (Contributed by Jim
        Kingdon, 13-Jul-2019.) $)
-    rdgifnong $p |- ( ( F Fn _V /\ A e. V ) ->
+    rdgifnon $p |- ( ( F Fn _V /\ A e. V ) ->
       rec ( F , A ) Fn On ) $=
     ( vf vg vx cvv wfn wcel wa crdg cv cdm cfv ciun cmpt df-irdg wfun
     cun rdgruledefgg alrimiv tfri1d ) BGHACIJZDBAKEGAFELZMFLUDNBNOSPZ
@@ -54332,7 +54332,7 @@ $)
     rdgss $p |- ( ph -> ( rec ( F , I ) ` A ) C_ ( rec ( F , I ) ` B ) ) $=
       ( vx vy cdm cfv wss wcel wceq syl con0 crdg cres ciun wrex wral
       cv cun ssel ssid fveq2 fveq2d sseq2d rspcev mpan2 syl6 ralrimiv
-      onss wfn cvv rdgifnong syl2anc sseqtr4d ssdmres sylib raleqbidv
+      onss wfn cvv rdgifnon syl2anc sseqtr4d ssdmres sylib raleqbidv
       fndm rexeqdv fvres adantr adantl sseq12d rexbidva syl6bb mpbird
       wa ralbiia iunss2 unss2 3syl rdgivalg syl3anc 3sstr4d ) AELDEUA
       ZBUBZNZLUFZWDOZDOZUCZUGZEMWCCUBZNZMUFZWKOZDOZUCZUGZBWCOZCWCOZAW
@@ -54367,7 +54367,7 @@ $)
         ( A u. ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
           u. ( F ` ( rec ( F , A ) ` B ) ) ) ) ) $=
       ( cfv cdm ciun cun wfn wcel con0 wceq syl wss uneq2d cv syl3anc
-      csuc crdg cres cvv suceloni rdgivalg rdgifnong syl2anc sseqtr4d
+      csuc crdg cres cvv suceloni rdgivalg rdgifnon syl2anc sseqtr4d
       onss ssdmres sylib iuneq1d csn df-suc iuneq1 ax-mp iunxun eqtri
       fndm fveq2 fveq2d iunxsng sucidg fvres eqtrd syl5eq 3eqtrd ) AD
       UCZECUDZJZCBVLVKUEZKZBUAZVNJZEJZLZMZCBVKVRLZMZCBDVRLZDVLJZEJZMZ
@@ -54398,7 +54398,7 @@ $)
           ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
             u. ( F ` ( rec ( F , A ) ` B ) ) ) ) $=
         ( csuc cfv cun wss wceq cvv wcel con0 wfn syl2anc crdg cv wal
-        cres ciun rdgisuc1 rdg0ss rdgifnong funfvex funfni id fveq2
+        cres ciun rdgisuc1 rdg0ss rdgifnon funfvex funfni id fveq2
         un12 sseq12d spcgv sstrd ssequn1 sylib uneq2d syl5eq eqtrd
         sylc ) ADKZECUAZLCBDBUBZVDVCUDLELUEZDVDLZELZMZMZVIABCDEFGHIUF
         AVJVFCVHMZMVICVFVHUMAVKVHVFACVHNVKVHOACVGVHACDEFGHIUGAVGPQZVE
