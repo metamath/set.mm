@@ -3,10 +3,12 @@
 # Verify mmfile $1 (default "set.mm") using mmj2
 
 extra=''
+setparser='' # Set to mmj.verify.LRParser for rigorous parse check
 
 while [ $# -gt 0 ] ; do
   case "$1" in
     --extra) shift ; extra="$1"; shift ;; # Extra command
+    --setparser) shift ; setparser="$1"; shift ;;
     --*) echo "Error, unknown option $1" ; exit 1 ;;
     *) break ;;
   esac
@@ -16,18 +18,21 @@ done
 # RunMacro,showDiscouraged,discouraged.new
 
 mmfile="${1:-'set.mm'}"
+runparamsfile="runparams$$.txt"
 
 # Generate commands to run.
-cat > runparams$$.txt << RUNPARAMS
-LoadFile,set.mm
+echo "LoadFile,$mmfile" > "$runparamsfile"
+if [ -n "$setparser" ] ; then
+  echo "SetParser,$setparser" >> "$runparamsfile"
+fi
+cat >> "$runparamsfile" << RUNPARAMS
 VerifyProof,*
 Parse,*
-RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc
 RUNPARAMS
 
 # Append $extra to the run parameters if we have it.
 if [ -n "$extra" ] ; then
-  printf '%s\n' ${extra} >> runparams$$.txt
+  printf '%s\n' "${extra}" >> runparams$$.txt
 fi
 
 # Run verify command, tee results to a separate file so we can examine it.

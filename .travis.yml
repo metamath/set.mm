@@ -17,7 +17,11 @@
 #
 # We typically rewrap the file using scripts/rewrap.
 #
+dist: trusty
+
 language: rust
+jdk:
+  - oraclejdk8
 git:
   depth: 3
 sudo: false
@@ -27,6 +31,8 @@ cache:
 before_install:
   - gcc --version
   - g++ --version
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then jdk_switcher use "$CUSTOM_JDK"; fi
 install:
   # Download, build, and install what we need.
   # NOTE: We install programs in $HOME/bin, so ensure that's on the PATH
@@ -39,6 +45,9 @@ install:
   - wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
   - unzip -q mmj2jar.zip
   - jdk_switcher use oraclejdk8
+  ##### 27-Mar-2019 daw TEMPORARY WORKAROUND - modify mmj2 definitionCheck.js
+  ##### so that it looks for "setvar" instead of "set":
+  - sed -i -e 's/"set"/"setvar"/g' macros/definitionCheck.js
   # Install smetamath-rs (smm3), a Rust verifier by Stefan O'Rear
   # See: https://github.com/sorear/smetamath-rs
   - "[ -x  ~/.cargo/bin/smetamath ] || cargo install smetamath --vers 3.0.0"
@@ -48,12 +57,15 @@ install:
 script:
   # Create mmset.html so we can verify against it.
   - metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
-  - scripts/verify --date_skip --extra 'write bibliography mmbiblio.html' set.mm
+  - metamath 'read iset.mm' 'markup mmil.raw.html mmil.html /ALT /CSS' quit
+  - scripts/verify --top_date_skip --extra 'write bibliography mmbiblio.html' set.mm
   - scripts/verify iset.mm
-  # Verify and also generate 'discouraged.new':
-  - scripts/verify-mmj2 --extra 'RunMacro,showDiscouraged,discouraged.new' set.mm
+  # Verify and also generate 'discouraged.new', and do extra checking
+  # (the 'printf' lets us insert multiple lines):
+  - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\nRunMacro,showDiscouraged,discouraged.new')" set.mm
   - echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
-  - scripts/verify-mmj2 iset.mm
+  # Use setparser to check that definitions don't create syntax ambiguities
+  - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' iset.mm
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
   - scripts/check-raw-html set.mm *.raw.html
@@ -62,9 +74,9 @@ script:
   - ./checkmm set.mm
   - ./checkmm iset.mm
   # Generate HTML from raw files into mpegif-html/ and mpeuni-html/
-  - scripts/regen-from-raw '/HTML'
+  - scripts/regen-from-raw --force '/HTML' .regened.html
   - mkdir -p mpegif-html/
-  - for f in *.demo.html; do mv $f mpegif-html/${f%.demo.html}.html ; done
-  - scripts/regen-from-raw '/ALT_HTML'
+  - for f in *.regened.html; do mv $f mpegif-html/${f%.regened.html}.html ; done
+  - scripts/regen-from-raw --force '/ALT_HTML' .regened.html
   - mkdir -p mpeuni-html/
-  - for f in *.demo.html; do mv $f mpeuni-html/${f%.demo.html}.html ; done
+  - for f in *.regened.html; do mv $f mpeuni-html/${f%.regened.html}.html ; done

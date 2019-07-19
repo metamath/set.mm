@@ -1,0 +1,1341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<HTML LANG="EN-US">
+<HEAD>
+
+<!-- improve mobile display -->
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>Home - Intuitionistic Logic Explorer</TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
+
+<STYLE TYPE="text/css">
+<!--
+/* Math symbol image will be shifted down 4 pixels to align with normal
+  text for compatibility with various browsers.  The old ALIGN=TOP for
+  math symbol images did not align in all browsers and should be deleted.
+  All other images must override this shift with STYLE="margin-bottom:0px".
+  (2-Oct-2015 nm) */
+img { margin-bottom: -4px }
+-->
+</STYLE>
+
+</HEAD>
+
+
+<!-- <BODY BGCOLOR="#EEFFFA"> -->
+<BODY BGCOLOR="#FFFFFF" STYLE="padding: 0px 8px">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%">
+
+  <TR>
+    <TD ALIGN=LEFT VALIGN=TOP><A HREF="../index.html"><IMG SRC="_icon-il.gif"
+      BORDER=0
+      ALT="Metamath Home"
+      TITLE="Metamath Home"
+      HEIGHT=32 WIDTH=32 ALIGN=TOP STYLE="margin-bottom:0px"></A>
+    </TD>
+    <TD ALIGN=CENTER VALIGN=TOP><FONT SIZE="+3"
+      COLOR="#006633"><B>Intuitionistic Logic Explorer Home Page</B></FONT>
+    </TD>
+
+    <TD NOWRAP ALIGN=RIGHT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif> <A HREF="wn.html">First &gt;</A><BR><A
+      HREF="ax1hfs.html">Last &gt;</A></FONT>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD COLSPAN=3 ALIGN=LEFT VALIGN=TOP><FONT SIZE=-2
+      FACE=sans-serif>
+      <A HREF="../mm.html">Mirrors</A>&nbsp; &gt;
+        &nbsp;<A HREF="../index.html">Home</A>&nbsp; &gt;
+      &nbsp;ILE Home&nbsp; &gt;
+      &nbsp;<A HREF="mmtheorems.html">Th. List</A>&nbsp; &gt;
+      &nbsp;<A HREF="mmrecent.html">Recent</A>
+      </FONT>
+    </TD>
+  </TR>
+</TABLE>
+
+<HR NOSHADE SIZE=1>
+
+<CENTER>
+<B><FONT COLOR="#006633">Created by Mario Carneiro</FONT></B>
+</CENTER>
+
+<HR NOSHADE SIZE=1>
+<B><FONT COLOR="#006633">Intuitionistic Logic Proof Explorer</FONT></B>
+
+
+<!--
+<P><I>Intuitionistic Logic</I> (<A
+HREF="https://en.wikipedia.org/wiki/Intuitionistic_logic">Wikipedia</A>
+[accessed 19-Jul-2015], <A
+HREF="http://plato.stanford.edu/entries/logic-intuitionistic/"> Stanford
+Encyclopedia of Philosophy</A> [accessed 19-Jul-2015]) is a logic weaker
+than classical logic that can be thought of as a weakening of classical
+logic such that the law of excluded middle, (<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> <FONT FACE=sans-serif> &or;</FONT>
+&not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>), doesn't always hold.
+Specifically, it holds if we have a proof for <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> or we have a proof for &not; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>, but it doesn't necessarily hold if
+we don't have a proof of either one.  Intuitionistic logic can be
+thought of as a constructive logic in which we must build and exhibit
+concrete examples of objects before we can accept their existence.  A
+proof by contradiction, where denial of an assertion to be proved leads
+to asserting a falsehood, will generally not be valid in intuitionistic
+logic.
+-->
+
+<!-- the above was replaced by David A. Wheeler: -->
+
+<P><I>Intuitionistic Logic</I> (<A
+HREF="https://en.wikipedia.org/wiki/Intuitionistic_logic">Wikipedia</A>
+[accessed 19-Jul-2015], <A
+HREF="http://plato.stanford.edu/entries/logic-intuitionistic/"> Stanford
+Encyclopedia of Philosophy</A> [accessed 19-Jul-2015]) can be
+thought of as a constructive logic in which we must build and exhibit
+concrete examples of objects before we can accept their existence.
+Unproved statements in intuitionistic logic are not given an intermediate truth value,
+instead, they remain of unknown truth value until they are either proved or disproved.
+Intuitionist logic can also be thought of as a weakening of classical
+logic such that the law of excluded middle (LEM), (<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> <FONT FACE=sans-serif> &or;</FONT>
+&not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>), doesn't always hold.
+Specifically, it holds if we have a proof for <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> or we have a proof for &not; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>, but it doesn't necessarily hold if
+we don't have a proof of either one.
+There is also no rule for double negation elimination.
+Brouwer observed in 1908 that LEM was abstracted from finite situations,
+then extended without justification to statements about infinite collections.
+
+<HR NOSHADE SIZE=1>
+
+
+
+<TABLE  WIDTH="100%"><TR>
+
+<TD VALIGN=top>
+<B><FONT COLOR="#006633">Contents of this page</FONT></B>
+<MENU>
+  <LI> <A HREF="#overview">Overview of intuitionistic logic</A></LI>
+  <LI> <A HREF="#overview2">Overview of this work</A></LI>
+  <LI> <A HREF="#axioms">The axioms</A></LI>
+  <LI> <A HREF="#theorems">Some theorems</A></LI>
+  <LI> <A HREF="#intuitionize">How to intuitionize classical proofs</A></LI>
+  <LI> <A HREF="#setmm">Metamath Proof Explorer cross reference</A></LI>
+  <LI> <A HREF="#bib">Bibliography</A></LI>
+</MENU></TD>
+
+<TD VALIGN=top>
+<B><FONT COLOR="#006633">Related pages</FONT></B>
+
+<MENU>
+<LI> <A HREF="mmtheorems.html">Table of Contents and Theorem List</A></LI>
+
+<LI>
+ <A HREF="mmrecent.html">Most Recent Proofs
+ (this mirror)</A>
+  (<A HREF="http://us2.metamath.org:88/ileuni/mmrecent.html">latest</A>)
+    </LI>
+
+<LI> <A HREF="mmbiblio.html">Bibliographic Cross-Reference</A></LI>
+<LI> <A HREF="mmdefinitions.html">Definition List</A></LI>
+<LI> <A HREF="mmascii.html">ASCII Equivalents for Text-Only Browsers</A></LI>
+<LI> <A HREF="../metamath/iset.mm">Metamath database iset.mm (ASCII file)</A></LI>
+</MENU>
+
+<B><FONT COLOR="#006633">External links</FONT></B>
+<MENU>
+<LI> <A HREF=" https://github.com/metamath/set.mm">Github repository</A>
+          [accessed 06-Jan-2018]</LI>
+</MENU>
+
+</TD>
+</TR></TABLE>
+
+<HR NOSHADE SIZE=1><A NAME="overview"></A><B><FONT COLOR="#006633">
+Overview of intuitionistic logic</FONT></B>
+
+<P>(Placeholder for future use)
+
+
+<HR NOSHADE SIZE=1><A NAME="overview2"></A><B><FONT COLOR="#006633">
+Overview of this work</FONT></B>
+
+<P>(By G&eacute;rard Lang, 7-May-2018)
+
+<P>Mario Carneiro's work (Metamath database)
+ "iset.mm" provides in Metamath a development of
+"set.mm" whose eventual
+aim is to show how many of the theorems of set theory and
+mathematics that can be derived from classical first order logic can
+also be derived from a weaker system called "intuitionistic logic."  To
+achieve this task, iset.mm adds (or substitutes) intuitionistic
+axioms for a number of the classical logical axioms of set.mm.
+
+<P>Among these new axioms, the 6 first
+( ~ ax-ia1 ,
+~ ax-ia2 ,
+~ ax-ia3 ,
+~ ax-io ,
+~ ax-in1
+and
+~ ax-in2 ), when added to
+~ ax-1 ,
+~ ax-2
+and
+~ ax-mp ,
+ allow for the development of intuitionistic
+propositional logic.  We omit the classical axiom
+<SPAN CLASS=math>((&not;
+<SPAN CLASS=wff STYLE="color:blue">&#x1D711;</SPAN> &rarr; &not; <SPAN
+CLASS=wff STYLE="color:blue">&#x1D713;</SPAN>) &rarr; (<SPAN CLASS=wff
+STYLE="color:blue">&#x1D713;</SPAN> &rarr; <SPAN CLASS=wff
+STYLE="color:blue">&#x1D711;</SPAN>))</SPAN> (which is ax-3 in
+set.mm).  Each of our new axioms is a theorem of classical
+propositional logic, but ax-3 cannot be derived from them.  Similarly,
+other basic classical theorems, like the third middle excluded or the
+equivalence of a proposition with its double negation, cannot be derived
+in intuitionistic propositional calculus.  Glivenko showed that a
+proposition <FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+ is a theorem of classical propositional calculus if and only
+if &not;&not;<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+ is a theorem of intuitionistic propositional calculus.
+
+<P>The next 4 new axioms
+( ~ ax-ial ,
+~ ax-i5r ,
+~ ax-ie1
+and
+~ ax-ie2 )
+together with the set.mm axioms
+~ ax-4 ,
+~ ax-5 ,
+~ ax-7
+and
+~ ax-gen
+do not mention equality or distinct variables.
+
+<P>The ~ ax-i9 axiom is
+just a slight variation of the classical ~ ax-9 .
+The classical axiom ~ ax-12 is strengthened
+into first ~ ax-i12 and then
+~ ax-bnd (two results which would be
+fairly readily equivalent to ax-12 classically but which do not
+follow from ax-12, at least not in an obvious way, in intuitionistic
+logic).
+
+The substitution of ax-i9,
+ax-i12, and ax-bnd for ax-9 and ax-12 and the inclusion of
+~ ax-8 ,
+~ ax-10 ,
+~ ax-11 ,
+~ ax-13 ,
+~ ax-14
+and
+~ ax-17
+allow for the development of the
+intuitionistic predicate calculus.
+
+<P>Each of the new axioms is a theorem of classical first order
+logic with equality.  But some axioms of classical first order logic
+with equality, like ax-3, cannot be derived in the intuitionistic
+predicate calculus.</P>
+
+<P>One of the major interests of the intuitionistic predicate calculus
+is that its use can be considered as a realization of the program of the
+constructivist philosophical view of mathematics.
+
+
+<HR NOSHADE SIZE=1><A NAME="axioms"></A><B><FONT COLOR="#006633">
+The axioms</FONT></B>
+
+<P>As with the <A HREF="mmset.html#axioms">classical axioms</A>
+we have propositional logic and predicate logic.
+
+<P>The axioms of intuitionistic propositional logic consist of some of the axioms from
+classical propositional logic, plus additional axioms for the operation of the 'and',
+'or' and 'not' connectives.
+
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Axioms of intuitionistic propositional calculus">
+<CAPTION><B>Axioms of intuitionistic propositional calculus</B></CAPTION>
+
+<TR ALIGN=LEFT><TD> <A HREF="ax-1.html"> Axiom <I>Simp</I></A></TD>
+<TD><FONT COLOR="#006633"><B>ax-1</B></FONT></TD>
+<TD><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; (<FONT
+COLOR="#0000FF"><I>&psi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>))</TD>
+</TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-2.html">Axiom <I>Frege</I></A></TD> <TD
+NOWRAP><FONT COLOR="#006633"><B>ax-2</B></FONT></TD>
+<TD>
+<FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>((<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; (<FONT
+COLOR="#0000FF"><I>&psi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&chi;</I></FONT>)) &rarr; ((<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr; (<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&chi;</I></FONT>)))</TD>
+</TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="ax-mp.html">Rule of Modus Ponens</A></TD> <TD NOWRAP><FONT
+COLOR="#006633"><B>ax-mp</B></FONT></TD>
+<TD><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &nbsp;&nbsp;&amp; &nbsp;&nbsp;<FONT
+COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT> &nbsp;&nbsp;=&gt; &nbsp;&nbsp;<FONT
+COLOR="#808080" FACE=sans-serif>&#8866;<FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>
+</TD>
+</TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="ax-ia1.html">Left 'and' elimination</A></TD><TD><FONT
+COLOR="#006633"><B>ax-ia1</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>((<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+<FONT FACE="sans-serif">&and;</FONT> <FONT COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr;
+<FONT COLOR="#0000FF"><I>&phi;</I></FONT>)</TD></TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="ax-ia2.html">Right 'and' elimination</A></TD><TD><FONT
+COLOR="#006633"><B>ax-ia2</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>((<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+<FONT FACE="sans-serif">&and;</FONT> <FONT COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>)</TD></TR>
+
+<TR ALIGN=LEFT><TD><A
+HREF="ax-ia3.html">'And' introduction</A></TD><TD><FONT
+COLOR="#006633"><B>ax-ia3</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>(<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+&rarr; (<FONT COLOR="#0000FF"><I>&psi;</I></FONT> &rarr; (<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+<FONT FACE="sans-serif">&and;</FONT> <FONT COLOR="#0000FF"><I>&psi;</I></FONT>)))</TD></TR>
+
+<TR ALIGN="LEFT"><TD><A
+HREF="ax-io.html">Definition of 'or'</A></TD><TD><FONT COLOR="#006633"><B>ax-io</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>(((<FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+<FONT FACE="sans-serif"> &or;</FONT> <FONT COLOR="#0000FF"><I>&chi;</I></FONT>)
+&rarr; <FONT COLOR="#0000FF"><I>&psi;</I></FONT>)
+&#x2194; ((<FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>) <FONT FACE="sans-serif">&and;</FONT>
+(<FONT COLOR="#0000FF"><I>&chi;</I></FONT> &rarr; <FONT COLOR="#0000FF"><I>&psi;</I></FONT>)))
+
+<TR ALIGN="LEFT"><TD><A
+HREF="ax-in1.html">'Not' introduction</A></TD><TD><FONT COLOR="#006633"><b>ax-in1</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866;
+</FONT>((<FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>)
+&rarr; &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>)</TD></TR>
+
+<TR ALIGN="LEFT"><TD><A
+HREF="ax-in2.html">'Not' elimination</A></TD><TD><FONT COLOR="#006633"><B>ax-in2</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE="sans-serif">&#8866; </FONT>(&not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+&rarr; (<FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT COLOR="#0000FF"><I>&psi;</I></FONT>))</TD></TR>
+
+</TABLE>
+
+</CENTER>
+
+<P>Unlike in classical propositional logic, 'and' and 'or' are not readily defined in terms of
+implication and 'not'. In particular, <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &or;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT> is not equivalent to &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>,
+nor is <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT> equivalent to &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &or;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>, nor is <FONT COLOR="#0000FF"><I>&phi;</I></FONT> &and;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT> equivalent to &not; (<FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; &not;
+<FONT COLOR="#0000FF"><I>&psi;</I></FONT>).</P>
+
+<P>The ax-in1 axiom is a form of proof by contradiction which does hold intuitionistically. That is, if
+<FONT COLOR="#0000FF"><I>&phi;</I></FONT> implies a contradiction (such as its own negation),
+then one can conclude &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>. By contrast, assuming
+&not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>
+and then deriving a contradiction only serves to prove &not; &not; <FONT COLOR="#0000FF"><I>&phi;</I></FONT>,
+which in intuitionistic logic is not the same as <FONT COLOR="#0000FF"><I>&phi;</I></FONT>.</P>
+
+<P>The biconditional can be defined as the conjunction of two implications, as in
+<A HREF="dfbi2.html">dfbi2</a> and <A HREF="df-bi.html">df-bi</a>.</P>
+
+<P><A NAME="pcaxioms"></A><B><FONT COLOR="#006633">Predicate
+logic</FONT></B> adds set variables (individual variables) and the ability to quantify
+them with &#x2200; (for-all) and &#x2203; (there-exists). Unlike in classical logic, &#x2203;
+cannot be defined in terms of &#x2200;. As in classical logic, we also add = for equality
+(which is key to how we handle substitution in metamath) and &#x2208; (which for current
+purposes can just be thought of as an arbitrary predicate, but which will later come to
+mean set membership).</P>
+
+<p>Our axioms are based on the classical set.mm predicate logic axioms, but adapted for
+intuitionistic logic, chiefly by adding additional axioms for &#x2203; and also changing
+some aspects of how we handle negations.</p>
+
+<CENTER>
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Axioms of intuitionistic predicate logic">
+<CAPTION><B>Axioms of intuitionistic predicate logic</B></CAPTION>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-4.html">Axiom of Specialization</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-4</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD> <A HREF="ax-5.html">Axiom of Quantified Implication</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-5</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr; (<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-i5r.html">The converse of ax-5o</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-i5r</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>((<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-7.html">Axiom of Quantifier Commutation</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-7</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-gen.html">Rule of Generalization</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-gen</B></FONT></TD><TD>
+<FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &nbsp;&nbsp;=&gt; &nbsp;&nbsp;<SPAN >
+<FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT></SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-ial.html"><SPAN ><I><FONT
+COLOR="#FF0000">x</FONT></I></SPAN> is bound in <SPAN ><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT></SPAN></A></TD>
+<TD><FONT COLOR="#006633"><B>ax-ial</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-ie1.html"><SPAN ><I><FONT
+COLOR="#FF0000">x</FONT></I></SPAN> is bound in <SPAN ><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT></SPAN></A></TD>
+<TD><FONT COLOR="#006633"><B>ax-ie1</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-ie2.html">Define existential
+quantification</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-ie2</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<FONT
+COLOR="#0000FF"><I>&psi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &rarr; (<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>) &harr; (<FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&psi;</I></FONT>)))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-8.html">Axiom of Equality</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-8</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+(<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">z</FONT></I>
+&rarr; <I><FONT COLOR="#FF0000">y</FONT></I> = <I><FONT
+COLOR="#FF0000">z</FONT></I>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-i9.html">Axiom of Existence</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-i9</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I> <I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I></SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-10.html">Axiom of Quantifier
+Substitution</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-10</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I> <I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+<FONT FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">y</FONT></I>
+<I><FONT COLOR="#FF0000">y</FONT></I> = <I><FONT
+COLOR="#FF0000">x</FONT></I>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-11.html">Axiom of Variable
+Substitution</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-11</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+(<FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">y</FONT></I><FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">x</FONT></I>(<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I> &rarr; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-i12.html">Axiom of Quantifier
+Introduction</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-i12</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I> <I><FONT
+COLOR="#FF0000">z</FONT></I> = <I><FONT COLOR="#FF0000">x</FONT></I> <FONT
+FACE=sans-serif> &or;</FONT> (<FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">z</FONT></I> <I><FONT COLOR="#FF0000">z</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif> &or;</FONT> <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+<FONT FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>
+<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I>)))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-bnd.html">Axiom of Bundling</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-bnd</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I> <I><FONT
+COLOR="#FF0000">z</FONT></I> = <I><FONT COLOR="#FF0000">x</FONT></I> <FONT
+FACE=sans-serif> &or;</FONT> (<FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">z</FONT></I> <I><FONT COLOR="#FF0000">z</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif> &or;</FONT> <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+<FONT FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>
+<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I>)))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-13.html">Left Membership Equality</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-13</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+(<I><FONT COLOR="#FF0000">x</FONT></I> <FONT FACE=sans-serif>&isin;</FONT>
+<I><FONT COLOR="#FF0000">z</FONT></I> &rarr; <I><FONT
+COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">z</FONT></I>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-14.html">Right Membership Equality</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-14</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<I><FONT
+COLOR="#FF0000">x</FONT></I> = <I><FONT COLOR="#FF0000">y</FONT></I> &rarr;
+(<I><FONT COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT>
+<I><FONT COLOR="#FF0000">x</FONT></I> &rarr; <I><FONT
+COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">y</FONT></I>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-17.html">Distinctness</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-17</B></FONT></TD><TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN>,
+where <FONT COLOR="#FF0000">x</FONT> does not occur in <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT></TD></TR>
+
+</TABLE>
+</CENTER>
+
+<P><A NAME="staxioms"></A><B><FONT COLOR="#006633">Set theory</FONT></B>
+uses the formalism of propositional and predicate calculus to assert
+properties of arbitrary mathematical objects called "sets."  A set can
+be contained in another set, and this relationship is indicated by the
+<IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> symbol.
+Starting with the simplest mathematical object, called the empty set,
+set theory builds up more and more complex structures whose existence
+follows from the axioms, eventually resulting in extremely complicated
+sets that we identify with the real numbers and other familiar
+mathematical objects.  These axioms were developed in response to <A
+HREF="ru.html">Russell's Paradox</A>, a discovery that revolutionized
+the foundations of mathematics and logic.</P>
+
+<P><A NAME="izfaxioms"></A> In the IZF axioms that follow, <I>all set
+variables are assumed to be</I> <A HREF="#distinct">distinct</A>.  If
+you click on their links you will see the explicit distinct variable
+conditions.</P>
+
+<CENTER><TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA"
+SUMMARY="Intuitionistic Zermelo-Fraenkel Set Theory (IZF)">
+<CAPTION><B>Intuitionistic Zermelo-Fraenkel Set Theory (IZF)</B></CAPTION>
+
+<TR ALIGN=LEFT><TD><A HREF="ax-ext.html">Axiom of Extensionality</A></TD>
+<TD NOWRAP><FONT COLOR="#006633"><B>ax-ext</B></FONT></TD>
+<TD>
+<SPAN ><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<I><FONT
+COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">x</FONT></I> &harr; <I><FONT COLOR="#FF0000">z</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">y</FONT></I>) &rarr;
+<I><FONT COLOR="#FF0000">x</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-coll.html">Axiom of Collection</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-coll</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <SPAN CLASS=set
+STYLE="color:red">&#x1D44E;</SPAN> <FONT FACE=sans-serif>&exist;</FONT><I><FONT
+COLOR="#FF0000">y</FONT></I><FONT COLOR="#0000FF"><I>&phi;</I></FONT> &rarr;
+<FONT FACE=sans-serif>&exist;</FONT><SPAN CLASS=set
+STYLE="color:red">&#x1D44F;</SPAN><FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">x</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <SPAN
+CLASS=set STYLE="color:red">&#x1D44E;</SPAN> <FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">y</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <SPAN CLASS=set
+STYLE="color:red">&#x1D44F;</SPAN> <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-sep.html">Axiom of Separation</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-sep</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(<I><FONT
+COLOR="#FF0000">x</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">y</FONT></I> &harr; (<I><FONT COLOR="#FF0000">x</FONT></I>
+<FONT FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">z</FONT></I> <FONT
+FACE=sans-serif>&and;</FONT> <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>))</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-pow.html">Axiom of Power Sets</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-pow</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">w</FONT></I>(<I><FONT
+COLOR="#FF0000">w</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">z</FONT></I> &rarr; <I><FONT COLOR="#FF0000">w</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">x</FONT></I>) &rarr;
+<I><FONT COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT>
+<I><FONT COLOR="#FF0000">y</FONT></I>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-pr.html">Axiom of Pairing</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-pr</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">z</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">w</FONT></I>((<I><FONT
+COLOR="#FF0000">w</FONT></I> = <I><FONT COLOR="#FF0000">x</FONT></I> <FONT
+FACE=sans-serif> &or;</FONT> <I><FONT COLOR="#FF0000">w</FONT></I> = <I><FONT
+COLOR="#FF0000">y</FONT></I>) &rarr; <I><FONT COLOR="#FF0000">w</FONT></I>
+<FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">z</FONT></I>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-un.html">Axiom of Union</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-un</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">y</FONT></I><FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">z</FONT></I>(<FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">w</FONT></I>(<I><FONT
+COLOR="#FF0000">z</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">w</FONT></I> <FONT FACE=sans-serif>&and;</FONT> <I><FONT
+COLOR="#FF0000">w</FONT></I> <FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">x</FONT></I>) &rarr; <I><FONT COLOR="#FF0000">z</FONT></I>
+<FONT FACE=sans-serif>&isin;</FONT> <I><FONT
+COLOR="#FF0000">y</FONT></I>)</SPAN></TD></TR>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-setind.html">Axiom of Set Induction</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-setind</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>(<FONT
+FACE=sans-serif>&forall;</FONT><SPAN CLASS=set
+STYLE="color:red">&#x1D44E;</SPAN>(<FONT
+FACE=sans-serif>&forall;</FONT><I><FONT COLOR="#FF0000">y</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <SPAN CLASS=set
+STYLE="color:red">&#x1D44E;</SPAN> [<I><FONT COLOR="#FF0000">y</FONT></I> /
+<SPAN CLASS=set STYLE="color:red">&#x1D44E;</SPAN>]<FONT
+COLOR="#0000FF"><I>&phi;</I></FONT> &rarr; <FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>) &rarr; <FONT
+FACE=sans-serif>&forall;</FONT><SPAN CLASS=set
+STYLE="color:red">&#x1D44E;</SPAN><FONT
+COLOR="#0000FF"><I>&phi;</I></FONT>)</SPAN></TD>
+
+<TR ALIGN=LEFT>
+<TD><A HREF="ax-iinf.html">Axiom of Infinity</A></TD>
+<TD><FONT COLOR="#006633"><B>ax-iinf</B></FONT></TD><TD>
+<SPAN CLASS=math><FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT><FONT
+FACE=sans-serif>&exist;</FONT><I><FONT COLOR="#FF0000">x</FONT></I>(&empty;
+<FONT FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">x</FONT></I> <FONT
+FACE=sans-serif>&and;</FONT> <FONT FACE=sans-serif>&forall;</FONT><I><FONT
+COLOR="#FF0000">y</FONT></I>(<I><FONT COLOR="#FF0000">y</FONT></I> <FONT
+FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">x</FONT></I> &rarr; suc
+<I><FONT COLOR="#FF0000">y</FONT></I> <FONT FACE=sans-serif>&isin;</FONT>
+<I><FONT COLOR="#FF0000">x</FONT></I>))</SPAN>
+</TD></TR>
+</TR>
+
+</TABLE></CENTER>
+
+<P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
+Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P><CENTER><FONT COLOR="#006633"><I>From a psychological point of view,
+learning constructive mathematics is agonizing, for it requires one to
+first unlearn certain deeply ingrained intuitions and
+habits acquired during classical mathematical training.</I>
+<BR /> &mdash;Andrej Bauer</FONT></CENTER>
+
+<P>Listed here are some examples of starting points for your journey
+through the maze.  Some are stated just as they would be in a
+non-constructive context; others are here to highlight areas which
+look different constructively.
+You should study some simple proofs from
+propositional calculus until you get the hang of it.  Then try some
+predicate calculus and finally set theory.
+
+The <A HREF="mmtheorems.html">Theorem List</A> shows the complete set of
+theorems in the database.  You may also find the <A
+HREF="mmbiblio.html">Bibliographic Cross-Reference</A> useful.
+
+
+<P><TABLE BORDER=0><TR><TD VALIGN=TOP WIDTH="50%">
+<B>Propositional calculus</B>
+<MENU>
+<LI>
+<A HREF="id1.html">Law of identity</A></LI>
+
+<LI>
+<A HREF="prth.html">Praeclarum theorema</A></LI>
+
+<LI>
+<A HREF="con3.html">Contraposition introduction</A></LI>
+
+<LI>
+<A HREF="notnot1.html">Double negation introduction</A></LI>
+
+<LI>
+<A HREF="notnotnot.html">Triple negation</A></LI>
+
+<LI>
+<A HREF="df-xor.html">Definition of exclusive or</A></LI>
+
+<LI>
+<A HREF="dfnot.html">Negation and the false constant</A></LI>
+</MENU>
+<B>Predicate calculus</B>
+<MENU>
+<LI>
+<A HREF="19.12.html">Existential and universal quantifier swap</A></LI>
+
+<LI>
+<A HREF="19.35-1.html">Existentially quantified implication</A></LI>
+
+<LI>
+<A HREF="equid.html"><I>x</I> = <I>x</I></A></LI>
+
+<LI>
+<A HREF="df-sb.html">Definition of proper substitution</A></LI>
+
+<LI>
+<A HREF="2eu7.html">Double existential uniqueness</A></LI>
+
+</MENU>
+<B>Set theory</B>
+<MENU>
+<LI>
+<A HREF="uncom.html">Commutative law for union</A></LI>
+
+<LI>
+<A HREF="abeq2.html">A basic relationship between class and wff
+variables</A></LI>
+
+<LI>
+<A HREF="isset.html">Two ways of saying &quot;is a set&quot;</A></LI>
+
+<LI>
+<A HREF="ru.html">Russell's paradox</A></LI>
+
+<LI>
+<A HREF="ordtriexmid.html">Ordinal trichotomy implies excluded middle</A></LI>
+
+<LI>
+<A HREF="findes.html">Mathematical (finite) induction</A></LI>
+
+<LI>Peano's postulates for arithmetic:
+<A HREF="peano1.html">1</A>
+<A HREF="peano2.html">2</A>
+<A HREF="peano3.html">3</A>
+<A HREF="peano4.html">4</A>
+<A HREF="peano5.html">5</A></LI>
+
+<LI><A HREF="nndc.html">A natural number is either zero or nonzero</A> (a special case of the law of the excluded middle which we can prove).
+
+<LI>...<I>watch this space as we build out more of set theory</I></LI>
+
+</MENU>
+</TD></TR></TABLE>
+
+<HR NOSHADE SIZE=1><A NAME="intuitionize"></A><B><FONT
+COLOR="#006633">How to intuitionize classical proofs</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P>For the student or master of classical mathematics, constructive mathematics
+can be baffling. One can get over some of the intial hurdles of understanding
+how constructive mathematics works and why it might be interesting by reading
+<A HREF="#Bauer">[Bauer]</A> but that work does little to explain in concrete terms how to write
+proofs in intuitionistic logic. Fortunately, metamath helps with one of the
+biggest hurdles: noticing when one is even using the law of the excluded
+middle or the axiom of choice. But suppose you have a classical proof from
+the Metamath Proof Explorer and it fails to verify when you copy it over to
+the Intuitionistic Logic Explorer. What then? Here are some rules of thumb
+in converting classical proofs to intuitionistic ones.</P>
+
+<UL>
+
+<LI>If you see case elimination ( pm2.61 or its variants) you'll probably end up with two theorems for the two cases. In particular, if the cases were ` A e. _V ` and ` -. A e. _V ` you probably just care about the ` A e. _V ` case.</LI>
+
+<LI>Non-empty almost always needs to be changed to inhabited (those terms are defined at ~ n0rf ).</LI>
+
+<LI>If the original proof relied on propositional/predicate logic which isn't a theorem of intuitionistic logic, maybe there is a way of expressing the logic more directly. This is perhaps the hardest one to put in cookbook form: you might need to try some things and see if anything works.</LI>
+
+<LI>If the original proof relied on df-ex so that it could prove a theorem for ` A. ` and then get ` E. ` for free (or vice versa), instead go look at the original proof and try to come up the analogues to each step for the other quantifier (for example, ~ cbvrexcsf , ~ sbcrext , ~ rexxpf ).</LI>
+
+<LI>If you are dealing with a definition, try to find the best constructive definition from the literature ([HoTT] book, Stanford Encyclopedia of Philosophy, [Bauer], etc). Once you pick a definition, that'll affect the proofs which rely on that definition.</LI>
+
+<LI>If there is case elimination on whether variables are distinct, most of the time you just need the variant with distinct variables. Sometimes you can then remove the constraint with a temporary variable (e.g. the various sbco2* variants, ~ nfralya , ~ r19.3rm ).</LI>
+
+<LI>Sometimes one direction of a biconditional holds, or subset holds instead of equality. You might be able to keep the easy direction and worry about the other one later.</LI>
+
+<LI>If there is case elimination sometimes only one of the two cases is possible. For
+example, in ~ mosubopt the rest of the formula being proved constrains which case
+matters.</LI>
+
+<LI>If you need an additional condition (for example, because the original
+proof used case elimination) and you are proving a biconditional, consider whether
+both sides of the biconditional imply the condition. If so, you'll be able to
+prove the biconditional with that condition as an antecedent, and then use ~ pm5.21nii
+or one of its variants to remove the antecedent (example: ~ elxp4 ).</LI>
+
+<LI>If your proof relies on dveeq2 try ~ dveeq2or and likewise for the other things downstream of ~ ax-i12 or ~ ax-bnd .</LI>
+
+<LI>If you have a disjunction, be reluctant to turn it into an implication using ~ ord and the like. Instead, show that each disjunct implies what you are trying to prove and use ~ jaoi to join those two implications into something which can hook up to the disjunction.</LI>
+
+<LI>Disjunctive syllogism holds in intuitionistic logic and we state it a few ways (for example ~ orel1 and ~ ecased ) but we don't have a wide variety of convenience theorems. Unless we add those, you'll use ~ ord or something similar followed by ~ mpd or something similar. This may add a few steps but they are straightforward ones.</LI>
+
+<LI>If your proof is doing tricky things perhaps in the interest of shortness, try just expanding the definitions and applying logic in a straightforward way. See if this gets you a working (although perhaps longer) proof.</LI>
+
+<LI>If your proof relies on a biconditional in set.mm which isn't in iset.mm, see if one direction is in iset.mm and see which direction your proof is using. For example ~ 19.35-1 or ~ exnalim .</LI>
+
+<LI>If you are doing things with inhabited classes (beyond just applying existing inhabited class theorems), you may be able to dig up some predicate logic you haven't used in a while (e.g. ~ raaan ).</LI>
+
+<LI>Consider the possibility of giving up. Some things just won't have intuitionistic proofs. The more it looks like excluded middle or other non-intuitionistic statements, the more likely you are dealing with one of these. But it can be hard to have good intuition about this. In some cases it may be possible to ask "can I use this statement to prove 'ph or not ph' for an arbitrary proposition" (see ~ ordtriexmid for example ), but this is not always an easy technique to apply.</LI>
+
+<LI>Switching between ~ 2th and ~ 2false might help (e.g. ~ dfnul2 , ~ dfnul3 , ~ rab0 ).</LI>
+
+<LI>In many cases statements which are equivalent in classical logic become several non-equivalent statements (e.g. exclusive or, ordinals, non-empty versus inhabited, apartness versus negated equality). This is usually a good place to look for a literature reference, but don't be afraid to change the statement being proved to "what you really meant is X" as appropriate.</LI>
+
+<LI>If a statement has multiple equivalences in set.mm (e.g. mo2 and mo3 , or dffun2 and dffun3 ) and only some of them in iset.mm, sometimes a pretty similar proof will work (that is, which one to use in the original proof may have been a fairly arbitrary choice).</LI>
+
+<LI>A number of theorems related to functions (especially ovex and fvex ) in
+set.mm perform case elimination based on whether we are evaluating the function
+within its domain or outside it. The iset.mm replacements ( ~ fnovex and ~ funfvex )
+only work within the domain. This is rarely a problem but often means that
+logic must be rearranged, for example by changing ~ rexlimivw to ~ rexlimdva .
+(example: ~ ovelrn or indeed most uses of ~ fnovex and ~ funfvex ).</LI>
+
+<LI>With excluded middle, ` (/) e. A ` and ` A =/= (/) ` are equivalent (where
+` A ` is an ordinal). In such theorems, ` (/) e. A ` is generally the more
+interesting condition constructively.</LI>
+
+<LI>If you get stuck, ask! (for example in a github issue or on the mailing list). We have a number of contributors who have experience in constructive mathematics in general, or iset.mm in particular, and one of the best things about doing/learning mathematics in metamath is the collaborative nature of how we develop it.
+</UL>
+
+<HR NOSHADE SIZE=1><A NAME="setmm"></A><B><FONT
+COLOR="#006633">Metamath Proof Explorer cross reference</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<P>This is a list of theorems from the Metamath Proof Explorer (which
+assumes the law of the excluded middle throughout) which we do not
+have in the Intuitionistic Logic Explorer (generally because they
+are not provable without the law of the excluded middle, perhaps a
+few which could be proved but aren't yet), together
+with the closest replacements.</P>
+
+<TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
+<TR>
+<TH>set.mm</TH>
+<TH>iset.mm</TH>
+<TH>notes</TH>
+</TR>
+
+<TR>
+<TD>ax-3 , con4d , con34b , necon4bd</TD>
+<TD>~ con3 </TD>
+<TD>The form of contraposition which removes negation does not hold
+in intutionistic logic.</TD>
+</TR>
+
+<TR>
+<TD>iman</TD>
+<TD>~ imanim </TD>
+</TR>
+
+<TR>
+<TD>annim</TD>
+<TD>~ annimim </TD>
+</TR>
+
+<TR>
+<TD>oran</TD>
+<TD>~ oranim </TD>
+</TR>
+
+<TR>
+<TD>df-ex</TD>
+<TD>~ exalim </TD>
+</TR>
+
+<TR>
+<TD>alex</TD>
+<TD>~ alexim </TD>
+</TR>
+
+<TR>
+<TD>exnal</TD>
+<TD>~ exnalim </TD>
+</TR>
+
+<TR>
+<TD>alexn</TD>
+<TD>~ alexnim </TD>
+</TR>
+
+<TR>
+<TD>exanali</TD>
+<TD>~ exanaliim </TD>
+</TR>
+
+<TR>
+<TD>19.35</TD>
+<TD>~ 19.35-1 </TD>
+</TR>
+
+<TR>
+<TD>19.36</TD>
+<TD>~ 19.36-1 </TD>
+</TR>
+
+<TR>
+<TD>19.37</TD>
+<TD>~ 19.37-1 </TD>
+</TR>
+
+<TR>
+<TD>exmo</TD>
+<TD>~ exmonim </TD>
+</TR>
+
+<TR>
+<TD>mo2</TD>
+<TD>~ mo2r , ~ mo3 </TD>
+</TR>
+
+<TR>
+<TD>dfrex2</TD>
+<TD>~ rexalim </TD>
+</TR>
+
+<TR>
+<TD>moabex</TD>
+<TD>~ euabex </TD>
+<TD>In general, most of the set.mm ` E! ` theorems still hold, but a
+decent number of the ` E* ` ones get caught up on "there are two cases: the
+set exists or it does not"
+</TR>
+
+<TR>
+<TD>snex</TD>
+<TD>~ snexg , ~ snex </TD>
+<TD>The iset.mm version of ~ snex has an additional hypothesis</TD>
+</TR>
+
+<TR>
+<TD>opex</TD>
+<TD>~ opexg , ~ opex </TD>
+<TD>The iset.mm version of ~ opex has additional hypotheses</TD>
+</TR>
+
+<TR>
+<TD>ordsseleq</TD>
+<TD>~ onelss , ~ eqimss </TD>
+<TD>Taken together, ~ onelss and ~ eqimss represent the reverse direction of
+the biconditional from ordsseleq</TD>
+</TR>
+
+<TR>
+<TD>ordtri3or , ordtri1 , ordtri2 , ordtri3 , ordtri4 , ontri1 ,
+ordtri2or , ordtri2or2 , ordtri2or3
+</TD>
+<TD><I>none</I></TD>
+<TD>Ordinal trichotomy implies the law of the excluded middle as shown
+in ~ ordtriexmid . We don't have similar proofs for every variation of
+of trichotomy but most of them are presumably powerful enough to imply
+excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>ord0eln0</TD>
+<TD>~ ne0i </TD>
+</TR>
+
+<TR>
+<TD>nsuceq0</TD>
+<TD>~ nsuceq0g </TD>
+</TR>
+
+<TR>
+<TD>relimasn</TD>
+<TD>~ imasng </TD>
+</TR>
+
+<TR>
+<TD>opswap</TD>
+<TD>~ opswapg </TD>
+</TR>
+
+<TR>
+<TD>iotaex</TD>
+<TD>~ euiotaex </TD>
+</TR>
+
+<TR>
+<TD ROWSPAN="4">fvex</TD>
+<TD>~ funfvex </TD>
+<TD>when evaluating a function within its domain</TD>
+</TR>
+
+<TD>~ fvexg , ~ fvex </TD>
+<TD>when the function is a set and is evaluated at a set</TD>
+</TR>
+
+<TD>~ relrnfvex </TD>
+<TD>when evaluating a relation whose range is a set</TD>
+</TR>
+
+<TR>
+<TD>~ 1stexg , ~ 2ndexg </TD>
+<TD>for the functions ` 1st ` and ` 2nd `</TD>
+</TR>
+
+<TR>
+<TD>elfvdm</TD>
+<TD>~ relelfvdm </TD>
+</TR>
+
+<TR>
+<TD>funiunfv</TD>
+<TD>~ fniunfv , ~ funiunfvdm </TD>
+</TR>
+
+<TR>
+<TD>funiunfvf</TD>
+<TD>~ funiunfvdmf </TD>
+</TR>
+
+<TR>
+<TD>eluniima</TD>
+<TD>~ eluniimadm </TD>
+</TR>
+
+<TR>
+<TD>riotaex</TD>
+<TD>~ reuiotaex </TD>
+</TR>
+
+<TR>
+<TD>brtpos</TD>
+<TD>~ brtposg </TD>
+</TR>
+
+<TR>
+<TD>ottpos</TD>
+<TD>~ ottposg </TD>
+</TR>
+
+<TR>
+<TD>ovtpos</TD>
+<TD>~ ovtposg </TD>
+</TR>
+
+<TR>
+<TD>smofvon2</TD>
+<TD>~ smofvon2dm </TD>
+</TR>
+
+<TR>
+<TD>tfr1</TD>
+<TD>~ tfri1 </TD>
+</TR>
+
+<TR>
+<TD>tfr2</TD>
+<TD>~ tfri2 </TD>
+</TR>
+
+<TR>
+<TD>tfr3</TD>
+<TD>~ tfri3 </TD>
+</TR>
+
+<TR>
+<TD>tfr2b , recsfnon , recsval</TD>
+<TD><I>none</I></TD>
+<TD>These transfinite recursion theorems are lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>df-rdg</TD>
+<TD>~ df-irdg</TD>
+<TD>This definition combines the successor and limit cases (rather than specifying them as separate cases in a way which relies on excluded middle). In the words of [Crosilla], p. "Set-theoretic principles incompatible with intuitionistic logic", "we can still define many of the familiar set-theoretic operations by transfinite recursion on ordinals (see Aczel and Rathjen 2001, Section 4.2). This is fine as long as the definitions by transfinite recursion do not make case distinctions such as in the classical ordinal cases of successor and limit."</TD>
+</TR>
+
+<TR>
+<TD>rdgfnon</TD>
+<TD>~ rdgifnon </TD>
+</TR>
+
+<TR>
+<TD>ordge1n0</TD>
+<TD>~ ordge1n0im , ~ ordgt0ge1 </TD>
+</TR>
+
+<TR>
+<TD>ondif1</TD>
+<TD>~ dif1o </TD>
+<TD>In set.mm, ondif1 is used for Cantor Normal Form</TD>
+</TR>
+
+<TR>
+<TD>ondif2 , dif20el</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is not intuitionistic</TD>
+</TR>
+
+<TR>
+<TD>brwitnlem</TD>
+<TD><I>none</I></TD>
+<TD>The set.mm proof is not intuitionistic</TD>
+</TR>
+
+</TABLE>
+
+<HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
+COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
+
+<OL>
+
+<LI><A NAME="Bauer"></A> [Bauer] Bauer, Andrej, &quot;Five stages of
+accepting constructive mathematics,&quot; <I>Bulletin (New Series) of
+the American Mathematical Society</I>, 54:481-498 (2017),
+DOI: <A HREF="http://dx.doi.org/10.1090/bull/1556">10.1090/bull/1556</A> .</LI>
+
+<LI><A NAME="BellMachover"></A> [BellMachover] Bell, J. L., and M.
+Machover, <I>A Course in Mathematical Logic,</I> North-Holland,
+Amsterdam (1977) [QA9.B3953].</LI>
+
+<LI><A NAME="BourbakiEns"></A> [BourbakiEns] Bourbaki, Nicolas,
+<I>Th&eacute;orie des ensembles,</I> Springer-Verlag,
+Berlin Heidelberg (2007); available in English (for purchase) at
+<A HREF="http://www.springer.com/us/book/9783540225256">
+http://www.springer.com/us/book/9783540225256</A> (retrieved
+15-Aug-2016). Page references in iset.mm are for the French edition.</LI>
+
+<LI><A NAME="ChoquetDD"></A> [ChoquetDD] Choquet-Bruhat, Yvonne and Cecile
+DeWitt-Morette, with Margaret Dillard-Bleick, <I>Analysis, Manifolds and
+Physics,</I> Elsevier Science B.V., Amsterdam (1982) [QC20.7.A5C48
+1981].</LI>
+
+<LI><A NAME="Crosilla"></A> [Crosilla] Crosilla, Laura,
+&quot;Set Theory: Constructive and Intuitionistic ZF&quot;, <I>The
+Stanford Encyclopedia of Philosophy</I> (Summer 2015 Edition),
+Edward N. Zalta (ed.), <A
+HREF="https://plato.stanford.edu/archives/sum2015/entries/set-theory-constructive/">
+https://plato.stanford.edu/archives/sum2015/entries/set-theory-constructive/</A>.
+</LI>
+
+<LI><A NAME="Moschovakis"></A> [Moschovakis] Moschovakis, Joan, &quot;Intuitionistic Logic&quot;, <I>The Stanford Encyclopedia of Philosophy (Spring 2015 Edition)</I>, Edward N. Zalta (ed.), <A HREF="https://plato.stanford.edu/archives/spr2015/entries/logic-intuitionistic/">https://plato.stanford.edu/archives/spr2015/entries/logic-intuitionistic/</A>.
+</LI>
+
+<LI><A NAME="Eisenberg"></A> [Eisenberg] Eisenberg, Murray, <I>Axiomatic Theory of
+Sets and Classes,</I> Holt, Rinehart and Winston, Inc., New York (1971)
+[QA248.E36].</LI>
+
+<LI><A NAME="Enderton"></A> [Enderton] Enderton, Herbert B., <I>Elements of Set
+Theory,</I> Academic Press, Inc., San Diego, California (1977)
+[QA248.E5].</LI>
+
+<LI><A NAME="Hamilton"></A> [Hamilton] Hamilton, A. G., <I>Logic for
+Mathematicians,</I> Cambridge University Press, Cambridge, revised
+edition (1988) [QA9.H298 1988].</LI>
+
+<LI><A NAME="Heyting"></A> [Heyting] Heyting, A., <I>Intuitionism: An
+introduction</I>, North-Holland publishing company, Amsterdam, second
+edition (1966).</LI>
+
+<LI><A NAME="Hitchcock"></A> [Hitchcock] Hitchcock, David, <I>The
+peculiarities of Stoic propositional logic</I>, McMaster University;
+available at <A
+HREF="http://www.humanities.mcmaster.ca/~~hitchckd/peculiarities.pdf">
+http://www.humanities.mcmaster.ca/~~hitchckd/peculiarities.pdf</A>
+(retrieved 3 Jul 2016).</LI>
+
+<LI><A NAME="HoTT"></A> [HoTT] The {Univalent Foundations Program,
+<I>Homotopy Type Theory: Univalent Foundations of Mathematics</I>,
+<A HREF="https://homotopytypetheory.org/book"
+>https://homotopytypetheory.org/book</A>, first edition.</LI>
+
+<LI><A NAME="Jech"></A> [Jech] Jech, Thomas, <I>Set Theory,</I>
+Academic Press, San Diego (1978) [QA248.J42].</LI>
+
+<LI><A NAME="KalishMontague"></A> [KalishMontague] Kalish, D. and R.
+Montague, &quot;On Tarski's formalization of predicate logic with
+identity,&quot; <I>Archiv f&uuml;r Mathematische Logik und
+Grundlagenforschung,</I> 7:81-101 (1965) [QA.A673].</LI>
+
+<LI><A NAME="Kunen"></A> [Kunen] Kunen, Kenneth, <I>Set Theory:  An
+Introduction to Independence Proofs,</I> Elsevier Science B.V.,
+Amsterdam (1980) [QA248.K75].</LI>
+
+<LI><A NAME="KuratowskiMostowski"></A> [KuratowskiMostowski] Kuratowski, K.
+and A. Mostowski, <I>Set Theory: with an Introduction to
+Descriptive Set Theory,</I> 2nd ed., North-Holland,
+Amsterdam (1976) [QA248.K7683 1976].</LI>
+
+<LI><A NAME="Levy"></A> [Levy] Levy, Azriel, <I>Basic Set Theory</I>,
+Dover Publications, Mineola, N.Y. (2002) [QA248.L398 2002]. </LI>
+
+<LI><A NAME="Lopez-Astorga"></A> [Lopez-Astorga] Lopez-Astorga, Miguel,
+"The First Rule of Stoic Logic and its Relationship with the
+Indemonstrables", <I>Revista de Filosof&#xED;a T&#xF3;picos</I>
+(2016); available
+at <A HREF="http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf">
+http://www.scielo.org.mx/pdf/trf/n50/n50a1.pdf</A> (retrieved 3 Jul
+2016).</LI>
+
+<LI><A NAME="Margaris"></A> [Margaris] Margaris, Angelo, <I>First Order
+Mathematical Logic,</I> Blaisdell Publishing Company, Waltham,
+Massachusetts (1967) [QA9.M327].</LI>
+
+<LI><A NAME="Megill"></A><A NAME="bibmegill"></A> [Megill] Megill, N.,
+&quot;A Finitely Axiomatized Formalization of Predicate Calculus with
+Equality,&quot; <I>Notre Dame Journal of Formal Logic,</I> 36:435-453
+(1995) [QA.N914]; available at  <A
+HREF="http://projecteuclid.org/euclid.ndjfl/1040149359"
+>http://projecteuclid.org/euclid.ndjfl/1040149359</A> (accessed
+11 Nov 2014); the <A HREF="../downloads/finiteaxiom.pdf">PDF
+preprint</A> has the same content (with corrections) but pages are
+numbered 1-22, and the database references use the numbers printed on the
+page itself, not the PDF page numbers.</LI>
+
+<LI><A NAME="Mendelson"></A> [Mendelson] Mendelson, Elliott, <I>Introduction to
+Mathematical Logic,</I> 2nd ed., D. Van Nostrand (1979) [QA9.M537].</LI>
+
+<LI><A NAME="Monk1"></A> [Monk1] Monk, J. Donald, <I>Introduction to Set
+Theory,</I> McGraw-Hill, Inc. (1969) [QA248.M745].</LI>
+
+<LI><A NAME="Monk2"></A> [Monk2] Monk, J. Donald, &quot;Substitutionless
+Predicate Logic with Identity,&quot; <I>Archiv f&uuml;r Mathematische Logik
+und Grundlagenforschung,</I> 7:103-121 (1965) [QA.A673].</LI>
+
+<LI><A NAME="Quine"></A> [Quine] Quine, Willard van Orman, <I>Set Theory
+and Its Logic,</I> Harvard University Press, Cambridge, Massachusetts,
+revised edition (1969) [QA248.Q7 1969].</LI>
+
+<LI><A NAME="Sanford"></A> [Sanford] Sanford, David H., <I>If P, then Q:
+Conditionals and the Foundations of Reasoning</I>, 2nd ed., Routledge
+Taylor &amp; Francis Group (2003); ISBN 0-415-28369-8; available at <A
+HREF="https://books.google.com/books?id=h_AUynB6PA8C&amp;pg=PA39#v=onepage&amp;q&amp;f=false">https://books.google.com/books?id=h_AUynB6PA8C&amp;pg=PA39#v=onepage&amp;q&amp;f=false</A>
+(retrieved 3 Jul 2016).</LI>
+
+<LI><A NAME="Schechter"></A> [Schechter] Schechter, Eric, <I>Handbook of
+Analysis and Its Foundations</I>, Academic Press, San Diego (1997)
+[QA300.S339].</LI>
+
+<LI><A NAME="Stoll"></A> [Stoll] Stoll, Robert R., <I>Set Theory and Logic,</I>
+Dover Publications, Inc. (1979) [QA248.S7985 1979].</LI>
+
+<LI><A NAME="Suppes"></A> [Suppes] Suppes, Patrick, <I>Axiomatic Set Theory,</I>
+Dover Publications, Inc. (1972) [QA248.S959].</LI>
+
+<LI><A NAME="TakeutiZaring"></A> [TakeutiZaring] Takeuti, Gaisi, and
+Wilson M. Zaring, <I>Introduction to Axiomatic Set Theory,</I>
+Springer-Verlag, New York, second edition (1982) [QA248.T136 1982].</LI>
+
+<LI><A NAME="Tarski"></A> [Tarski] Tarski, Alfred, &quot;A Simplified
+Formalization of Predicate Logic with Identity,&quot; <I>Archiv f&uuml;r
+Mathematische Logik und Grundlagenforschung,</I> 7:61-79 (1965)
+[QA.A673].</LI>
+
+<LI><A NAME="WhiteheadRussell"></A> [WhiteheadRussell] Whitehead, Alfred
+North, and Bertrand Russell, <I>Principia Mathematica to *56,</I>
+Cambridge University Press, Cambridge, 1962 [QA9.W592 1962].</LI>
+
+</OL>
+
+
+<HR NOSHADE SIZE=1>
+
+<TABLE BORDER=0 WIDTH="100%"><TR>
+
+<TD ALIGN=LEFT VALIGN=TOP WIDTH="25%"><FONT SIZE=-2 FACE=sans-serif>
+&nbsp;</FONT></TD>
+
+<TD NOWRAP ALIGN=CENTER><I><FONT SIZE=-1>This
+ page was last updated on 15-Aug-2015.</FONT></I><BR><FONT
+FACE="ARIAL" SIZE=-2>Your
+ comments are welcome:
+Norman Megill <A HREF="../email.html"><IMG BORDER=0
+SRC="_nmemail.gif"
+ALT="nm at alum dot mit dot edu"
+TITLE="nm at alum dot mit dot edu"
+ WIDTH=90 HEIGHT=13 STYLE="margin-bottom:-3px"></A><BR>
+Copyright terms:
+<A HREF="../copyright.html#pd">Public domain</A></FONT></TD>
+
+<TD ALIGN=RIGHT VALIGN=BOTTOM WIDTH="25%">
+<FONT FACE="ARIAL" SIZE=-2>
+<A
+HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
+[external]
+</FONT>
+</TD>
+
+</TR></TABLE>
+
+</BODY>
+</HTML>
+
