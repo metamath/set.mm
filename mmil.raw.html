@@ -970,11 +970,20 @@ in intutionistic logic.</TD>
 </TR>
 
 <TR>
+<TD>df-if and all theorems using <TT>if</TT></TD>
+<TD><I>none</I></TD>
+<TD>This could be made to work in constructive logic if the
+condition is a decidable proposition. The development in set.mm,
+however, would require extensive changes as would most theroems
+which use <TT>if</TT>.</TD>
+</TR>
+
+<TR>
 <TD>moabex</TD>
 <TD>~ euabex </TD>
 <TD>In general, most of the set.mm ` E! ` theorems still hold, but a
 decent number of the ` E* ` ones get caught up on "there are two cases: the
-set exists or it does not"
+set exists or it does not"</TD>
 </TR>
 
 <TR>
@@ -987,6 +996,24 @@ set exists or it does not"
 <TD>opex</TD>
 <TD>~ opexg , ~ opex </TD>
 <TD>The iset.mm version of ~ opex has additional hypotheses</TD>
+</TR>
+
+<TR>
+<TD>df-fr and all theorems using <TT>Fr</TT></TD>
+<TD><I>none</I></TD>
+<TD>Because iset.mm assumes ~ ax-setind without reluctance, all sets are
+well-founded. We could adopt a treatment more like set.mm if
+people want to investigate set theories which are constructive
+but which do not assume ~ ax-setind .</TD>
+</TD>
+</TR>
+
+<TR>
+<TD>df-we (and all theorems using <TT>We</TT>)</TD>
+<TD><I>none</I></TD>
+<TD>Ordering is moderately different in constructive logic,
+so if there is anything along these lines worth doing it
+will be different from set.mm.</TD>
 </TR>
 
 <TR>
@@ -1082,6 +1109,99 @@ excluded middle.</TD>
 </TR>
 
 <TR>
+<TD>ordeleqon</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ssonprc</TD>
+<TD><I>none</I></TD>
+<TD>not provable (we conjecture), but interesting enough to intuitionize anyway. ` U. A = On -> A e/ V ` is provable, and ` ( B e. On /\ U. A C_ B ) -> A e. V ` is provable. (Why isn't ~ df-pss stated so that the set difference is inhabited? If so, you could prove ` U. A C. On -> A e. V `.)</TD>
+</TR>
+
+<TR>
+<TD>onint</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable without excluded middle. If you apply onint to a pair you can derive totality of the order.</TD>
+</TR>
+
+<TR>
+<TD>onint0</TD>
+<TD><I>none</I></TD>
+<TD>Thought to be "trivially not intuitionistic", and it is not clear if there is an alternate way to state it that is true. If the empty set is in A then of course |^| A = (/), but the converse seems difficult. I don't know so much about the structure of the ordinals without linearity,</TD>
+</TR>
+
+<TR>
+<TD>onssmin, onminesb, onminsb</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable without excluded middle, for the same reason as onint.</TD>
+</TR>
+
+<TR>
+<TD>oninton</TD>
+<TD><I>none yet</I></TD>
+<TD>This one (with non-empty changed to inhabited) I think can still be salvaged though. From the fact that it is inhabited you get that it exists, and is a subset of an ordinal x. It is an intersection of transitive sets so it is transitive, and of course all its members are members of x so they are transitive too. And E. Fr A falls to subsets.</TD>
+</TR>
+
+<TR>
+<TD>onintrab, onintrab2</TD>
+<TD><I>none yet</I></TD>
+<TD>The set.mm proof uses oninton.</TD>
+</TR>
+
+<TR>
+<TD>onnmin</TD>
+<TD><I>none yet</I></TD>
+<TD>May be able to replace trichotomy with irreflexibility. If B e. A and B e. |^| A, then |^| A C_ B so B e. B, violating ordirr.</TD>
+</TR>
+
+<TR>
+<TD>oneqmin</TD>
+<TD><I>none</I></TD>
+<TD>Falls as written because it implies onint, but it might be useful to keep the reverse direction for subsets that do have a minimum.</TD>
+</TR>
+
+<TR>
+<TD>onminex</TD>
+<TD><I>none yet</I></TD>
+<TD>falls as written because it implies onint, but it might be useful to keep the reverse direction for subsets that do have a minimum.</TD>
+</TR>
+
+<TR>
+<TD>ordsuc</TD>
+<TD>~ ordsucim , ~ ordsucg </TD>
+<TD>The forward direction is ~ ordsucim . For the reverse direction, we can apply ~ trssord again, since ` A C_ suc A ` and ` Ord suc A `; we have to show ` Tr A `. Suppose ` x e. A ` and ` y e. x `. Then ` x e. suc A ` so ` x C_ suc A ` so ` y e. suc A `. If ` y e. A ` we are done, otherwise ` y = A `, meaning ` A e. x ` and ` x e. A `. This is a contradiction to ~ en2lp .</TD>
+</TR>
+
+<TR>
+<TD>onmindif2</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable without excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>onmindif2</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable without excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>ordpwsuc</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable without excluded middle, but
+interesting. We might consider ` ( ~P A i^i On ) ` as an alternative form
+of successor which is equal to the current definition assuming excluded
+middle. We could show ` suc A C_ ( ~P A i^i On ) ` (a weakened form of
+ordpwsuc), and both are ordinals.</TD>
+</TR>
+
+<TR>
+<TD>onpsssuc</TD>
+<TD><I>none yet</I></TD>
+<TD>Conjectured to be provable, maybe via irreflexivity.</TD>
+</TR>
+
+<TR>
 <TD>ordsucelsuc</TD>
 <TD>~ onsucelsucr </TD>
 </TR>
@@ -1089,7 +1209,132 @@ excluded middle.</TD>
 <TR>
 <TD>ordsucsssuc</TD>
 <TD><I>none</I></TD>
-<TD>The set.mm proof is not intuitionistic</TD>
+<TD>Conjectured to be provable, but the proof is a bit complicated and uses injectivity of ` suc `.</TD>
+</TR>
+
+<TR>
+<TD>ordsucuniel</TD>
+<TD><I>none yet</I></TD>
+<TD>Conjectured to be provable.</TD>
+</TR>
+
+<TR>
+<TD>ordsucun</TD>
+<TD><I>none yet</I></TD>
+<TD>Conjectured to be provable in the reverse direction, but not the forward direction (implies some order totality).</TD>
+</TR>
+
+<TR>
+<TD>ordunpr</TD>
+<TD><I>none</I></TD>
+<TD>Presumably not provable without excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>ordunel</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable (ordunel implies ordsucun).</TD>
+</TR>
+
+<TR>
+<TD>onsucuni, ordsucuni</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable without excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>orduniorsuc</TD>
+<TD><I>none</I></TD>
+<TD>Presumably not provable.</TD>
+</TR>
+
+<TR>
+<TD>ordunisuc</TD>
+<TD><I>none yet</I></TD>
+<TD>Conjectured to be provable.</TD>
+</TR>
+
+<TR>
+<TD>orduniss2</TD>
+<TD><I>none yet</I></TD>
+<TD>Conjectured to be provable.</TD>
+</TR>
+
+<TR>
+<TD>onsucuni2</TD>
+<TD><I>none yet</I></TD>
+<TD>Conjectured to be provable.</TD>
+</TR>
+
+<TR>
+<TD>0elsuc</TD>
+<TD><I>none yet</I></TD>
+<TD>Conjectured to be provable.</TD>
+</TR>
+
+<TR>
+<TD>onuniorsuci</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to not be provable without excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>onuninsuci, ordununsuc</TD>
+<TD><I>none</I></TD>
+<TD>Conjectured to be provable in the forward direction but not the reverse one.</TD>
+</TR>
+
+<TR>
+<TD></TD>
+<TD><I>none yet</I></TD>
+<TD>Conjectured to be provable.</TD>
+</TR>
+
+<TR>
+<TD>onsucssi</TD>
+<TD><I>none yet</I></TD>
+<TD>Conjectured to be provable.</TD>
+</TR>
+
+<TR>
+<TD>nlimsucg</TD>
+<TD><I>none yet</I></TD>
+<TD>Conjectured to be provable.</TD>
+</TR>
+
+<TR>
+<TD>ordunisuc2</TD>
+<TD><I>none</I></TD>
+<TD><P>Conjectured to imply excluded middle.</P>
+<P>Let om' be the set of all finite iterations of suc' A = ` ( ~P A i^i On ) ` on ` (/) `. (We can formalize this proof but not until we have om and at least finite induction.) Then om' = U. om' because if x e. om' then x = suc'^n (/) for some n, and then x C_ suc'^n (/) implies x e. suc'^(n+1) (/) e. om' so x e. U. om'.<p>
+
+<P>Now supposing the theorem, we know that A. x e. om' suc x e. om', so in particular 2o e. om', that is, 2o = suc'^n (/) for some n. (Note that 1o = suc' (/).) For n = 0 and n = 1 this is clearly false, and for n = m+3 we have 1o e. suc' suc' (/) , so 2o C_ suc' suc' (/), so 2o e. suc' suc' suc' (/) C_ suc' suc' suc' suc'^m (/) = 2o, contradicting ordirr.</P>
+
+<P>Thus 2o = suc' suc' (/) = suc' 1o. Applying this to X we have X C_ 1o implies X e. suc' 1o = 2o and hence X = (/) \/ X = 1o, and LEM follows.</P>
+</TD>
+</TR>
+
+<TR>
+<TD>ordzsl, onzsl, dflim3, nlimon</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>dflim4</TD>
+<TD>~ df-ilim </TD>
+<TD>We conjecture that dflim4 is not equivalent to ~ df-ilim .</TD>
+</TR>
+
+<TR>
+<TD>limsuc</TD>
+<TD><I>none yet</I></TD>
+<TD>Conjectured to be provable.</TD>
+</TR>
+
+<TR>
+<TD>limsssuc</TD>
+<TD><I>none yet</I></TD>
+<TD>Conjectured to be provable.</TD>
 </TR>
 
 <TR>

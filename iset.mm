@@ -1,4 +1,4 @@
-$( iset.mm - Version of 17-Jul-2019
+$( iset.mm - Version of 19-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36750,6 +36750,11 @@ $)
   onprc $p |- -. On e. _V $=
     ( con0 cvv wcel word wn ordon ordirr ax-mp elong mpbiri mto ) ABCZAACZADZME
     FAGHLMNFABIJK $.
+
+  $( The class of all ordinal numbers is its own successor.  (Contributed by
+     NM, 12-Sep-2003.) $)
+  sucon $p |- suc On = On $=
+    ( con0 cvv wcel wn csuc wceq onprc sucprc ax-mp ) ABCDAEAFGAHI $.
 
   ${
     $d A x y $.  $d B x y $.
