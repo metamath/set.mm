@@ -10428,17 +10428,17 @@
 "nn0supp" is used by "eulerpartlemb".
 "nn0supp" is used by "eulerpartlemmf".
 "nn0supp" is used by "eulerpartlems".
-"nn0supp" is used by "mplbas2OLD".
-"nn0supp" is used by "mplcoe2OLD".
-"nn0supp" is used by "mplcoe3OLD".
-"nn0supp" is used by "mvridlemOLD".
-"nn0supp" is used by "psrbagaddclOLD".
-"nn0supp" is used by "psrbaglefiOLD".
-"nn0supp" is used by "psrbaglesuppOLD".
-"nn0supp" is used by "psrbagsuppfiOLD".
-"nn0supp" is used by "psrbasOLD".
-"nn0supp" is used by "psrlidmOLD".
-"nn0supp" is used by "psrridmOLD".
+"nn0suppOLD" is used by "mplbas2OLD".
+"nn0suppOLD" is used by "mplcoe2OLD".
+"nn0suppOLD" is used by "mplcoe3OLD".
+"nn0suppOLD" is used by "mvridlemOLD".
+"nn0suppOLD" is used by "psrbagaddclOLD".
+"nn0suppOLD" is used by "psrbaglefiOLD".
+"nn0suppOLD" is used by "psrbaglesuppOLD".
+"nn0suppOLD" is used by "psrbagsuppfiOLD".
+"nn0suppOLD" is used by "psrbasOLD".
+"nn0suppOLD" is used by "psrlidmOLD".
+"nn0suppOLD" is used by "psrridmOLD".
 "nnexALT" is used by "qexALT".
 "nnexALT" is used by "rpnnen1lem1".
 "nnexALT" is used by "rpnnen1lem3".
@@ -12374,6 +12374,8 @@
 "rngosn6" is used by "dvrunz".
 "rngoueqz" is used by "dvrunz".
 "rngoueqz" is used by "isdmn3".
+"rrgsuppOLD" is used by "deg1mul3".
+"rrgsuppOLD" is used by "mdegvsca".
 "rspsbc2" is used by "tratrb".
 "rspsbc2" is used by "tratrbVD".
 "sbc2rexgOLD" is used by "sbc4rexgOLD".
@@ -17152,7 +17154,8 @@ New usage of "nmounbi" is discouraged (2 uses).
 New usage of "nmounbseqi" is discouraged (0 uses).
 New usage of "nmounbseqiOLD" is discouraged (0 uses).
 New usage of "nmoxr" is discouraged (7 uses).
-New usage of "nn0supp" is discouraged (15 uses).
+New usage of "nn0supp" is discouraged (4 uses).
+New usage of "nn0suppOLD" is discouraged (11 uses).
 New usage of "nnexALT" is discouraged (6 uses).
 New usage of "noinfepOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
@@ -17794,6 +17797,7 @@ New usage of "rngosn3" is discouraged (1 uses).
 New usage of "rngosn4" is discouraged (1 uses).
 New usage of "rngosn6" is discouraged (1 uses).
 New usage of "rngoueqz" is discouraged (2 uses).
+New usage of "rrgsuppOLD" is discouraged (2 uses).
 New usage of "rspsbc2" is discouraged (2 uses).
 New usage of "rspsbc2VD" is discouraged (0 uses).
 New usage of "ruALT" is discouraged (0 uses).
@@ -19196,6 +19200,7 @@ Proof modification of "nic-stdmp" is discouraged (22 steps).
 Proof modification of "nic-swap" is discouraged (28 steps).
 Proof modification of "nmobndseqiOLD" is discouraged (189 steps).
 Proof modification of "nmounbseqiOLD" is discouraged (146 steps).
+Proof modification of "nn0suppOLD" is discouraged (91 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "noinfepOLD" is discouraged (267 steps).
 Proof modification of "notnot2ALT" is discouraged (12 steps).
@@ -19297,6 +19302,7 @@ Proof modification of "reusv7OLD" is discouraged (297 steps).
 Proof modification of "rexsnsOLD" is discouraged (55 steps).
 Proof modification of "rmo4fOLD" is discouraged (198 steps).
 Proof modification of "rmoxfrdOLD" is discouraged (126 steps).
+Proof modification of "rrgsuppOLD" is discouraged (228 steps).
 Proof modification of "rspsbc2" is discouraged (65 steps).
 Proof modification of "rspsbc2VD" is discouraged (90 steps).
 Proof modification of "ruALT" is discouraged (29 steps).
