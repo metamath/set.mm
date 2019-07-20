@@ -17,7 +17,11 @@
 #
 # We typically rewrap the file using scripts/rewrap.
 #
+dist: trusty
+
 language: rust
+jdk:
+  - oraclejdk8
 git:
   depth: 3
 sudo: false
@@ -27,6 +31,8 @@ cache:
 before_install:
   - gcc --version
   - g++ --version
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then jdk_switcher use "$CUSTOM_JDK"; fi
 install:
   # Download, build, and install what we need.
   # NOTE: We install programs in $HOME/bin, so ensure that's on the PATH
