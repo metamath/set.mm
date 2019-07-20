@@ -17,7 +17,11 @@
 #
 # We typically rewrap the file using scripts/rewrap.
 #
+dist: trusty
+
 language: rust
+jdk:
+  - oraclejdk8
 git:
   depth: 3
 sudo: false
@@ -27,6 +31,8 @@ cache:
 before_install:
   - gcc --version
   - g++ --version
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then jdk_switcher use "$CUSTOM_JDK"; fi
 install:
   # Download, build, and install what we need.
   # NOTE: We install programs in $HOME/bin, so ensure that's on the PATH
@@ -68,9 +74,9 @@ script:
   - ./checkmm set.mm
   - ./checkmm iset.mm
   # Generate HTML from raw files into mpegif-html/ and mpeuni-html/
-  - scripts/regen-from-raw '/HTML'
+  - scripts/regen-from-raw --force '/HTML' .regened.html
   - mkdir -p mpegif-html/
-  - for f in *.demo.html; do mv $f mpegif-html/${f%.demo.html}.html ; done
-  - scripts/regen-from-raw '/ALT_HTML'
+  - for f in *.regened.html; do mv $f mpegif-html/${f%.regened.html}.html ; done
+  - scripts/regen-from-raw --force '/ALT_HTML' .regened.html
   - mkdir -p mpeuni-html/
-  - for f in *.demo.html; do mv $f mpeuni-html/${f%.demo.html}.html ; done
+  - for f in *.regened.html; do mv $f mpeuni-html/${f%.regened.html}.html ; done
