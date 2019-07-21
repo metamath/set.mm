@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Jul-2019
+$( iset.mm - Version of 21-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36900,6 +36900,25 @@ $)
       JVRVKVQVJVRVHAVIOPRSUAUBVPVHVEIZVMVQUIVFVKVJVTVFVKJVJVTVFVKVJVJVTKVPVIVEV
       HVOVFVIVEIZVIVETVKWAVJVIAUCUDVEVIUEUFUJSUGUHVHAUKULUMUNUTUOBCAVAUPVGAVETV
       FVDAUQAVEURUSVBVC $.
+  $}
+
+  ${
+    $d x A $.
+    $( The collection of ordinals in the power class of an ordinal is a
+       superset of its successor.
+
+       We can think of ` ( ~P A i^i On ) ` as another possible definition of
+       successor, which would be equivalent to ~ df-suc given excluded middle.
+       It is an ordinal, and has some successor-like properties (for example,
+       we conjecture that we could prove that if ` A ` is an ordinal, then both
+       ` U. suc A = A ` and ` U. { x e. On | x C_ A } = A ` ).  (Contributed by
+       Jim Kingdon, 21-Jul-2019.) $)
+    ordpwsucss $p |- ( Ord A -> suc A C_ ( ~P A i^i On ) ) $=
+      ( vx word csuc cpw con0 cin cv wcel wa wi ordsuc ordelon ex sylbi
+      wss wtr ordtr trsucss syl jcad selpw anbi2ci bitri syl6ibr ssrdv
+      elin ) ACZBADZAEZFGZUHBHZUIIZULFIZULAPZJZULUKIZUHUMUNUOUHUICZUMUN
+      KALURUMUNUIULMNOUHAQUMUOKARAULSTUAUQULUJIZUNJUPULUJFUGUSUOUNBAUBU
+      CUDUEUF $.
   $}
 
 $(
