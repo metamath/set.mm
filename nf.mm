@@ -59453,8 +59453,8 @@ $)
     $d A b x $.
     $( Define the type-raising operation on a cardinal number.  This is the
        unique cardinal containing the unit power classes of the elements of the
-       given cardinal.  Definition from [Rosser] p.  XXX. (Contributed by Scott
-       Fenton, 24-Feb-2015.) $)
+       given cardinal.  Definition adapted from [Rosser] p.  528. (Contributed
+       by Scott Fenton, 24-Feb-2015.) $)
     df-tc $a |- T_c A = ( iota b ( b e. NC /\ E. x e. A b = Nc ~P1 x ) ) $.
   $}
 
