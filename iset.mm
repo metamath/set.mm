@@ -36921,6 +36921,13 @@ $)
       CUDUEUF $.
   $}
 
+  $( No member of a set of ordinal numbers belongs to its minimum.
+     (Contributed by NM, 2-Feb-1997.)  (Constructive proof by Mario Carneiro
+     and Jim Kingdon, 21-Jul-2019.) $)
+  onnmin $p |- ( ( A C_ On /\ B e. A ) -> -. B e. |^| A ) $=
+    ( wcel cint wn con0 wss intss1 elirr ssel mtoi syl adantl ) BACZBADZCZEZAFG
+    NOBGZQBAHRPBBCBIOBBJKLM $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Transfinite induction
