@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Jul-2019
+$( iset.mm - Version of 20-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36884,6 +36884,22 @@ $)
       TWPWSHNWPCWRSZWTWPACWRVMWSHXFVPCLZWRICVQWPUUHVRCHVSVTWPCCWRWAVOWBWCXBWRWS
       NZAXBWRWSIZUAUUJUUKWRWRIWRWDACWRWRWEWGXBUUKUUJWRWSWFWHWIAWSWRAACWRHVSUUIH
       NAWJWKWLWMWNVOWPAWOVC $.
+  $}
+
+  ${
+    $d A x y $.
+    $( The successor of an ordinal class is ordinal.  (Contributed by NM,
+       3-Apr-1995.)  (Constructive proof by Mario Carneiro and Jim Kingdon,
+       20-Jul-2019.) $)
+    ordsuc $p |- ( Ord A <-> Ord suc A ) $=
+      ( vy vx word csuc ordsucim wtr cv wcel wa wi wal wceq en2lp eleq1 biimpac
+      wn anim2i expr wss mtoi adantl elelsuc adantr ordelss sylan2 pm2.43d impr
+      wo sseld elsuci syl ecased ancom2s alrimivv sylibr sssucid trssord mp3an2
+      ex dftr2 mpancom impbii ) ADZAEZDZAFAGZVFVDVFBHZCHZIZVIAIZJZVHAIZKZCLBLVG
+      VFVNBCVFVLVMVFVKVJVMVFVKVJJZJZVMVHAMZVOVQQVFVOVQVKAVIIZJZVIANVKVJVQVSVJVQ
+      JVRVKVQVJVRVHAVIOPRSUAUBVPVHVEIZVMVQUIVFVKVJVTVFVKJVJVTVFVKVJVJVTKVPVIVEV
+      HVOVFVIVEIZVIVETVKWAVJVIAUCUDVEVIUEUFUJSUGUHVHAUKULUMUNUTUOBCAVAUPVGAVETV
+      FVDAUQAVEURUSVBVC $.
   $}
 
 $(
