@@ -5603,16 +5603,6 @@
 "ee21" is used by "ee21an".
 "ee21" is used by "omeulem2".
 "ee21" is used by "sbcim2g".
-"ee22" is used by "ax6e2ndeq".
-"ee22" is used by "ee21".
-"ee22" is used by "ee22an".
-"ee22" is used by "ee33".
-"ee22" is used by "onfrALT".
-"ee22" is used by "sb5ALT".
-"ee22" is used by "sspwtrALT".
-"ee22" is used by "sspwtrALT2".
-"ee22" is used by "tratrb".
-"ee22" is used by "trintALT".
 "ee222" is used by "ee002".
 "ee222" is used by "ee012".
 "ee222" is used by "ee020".
@@ -15618,7 +15608,6 @@ New usage of "ee210" is discouraged (0 uses).
 New usage of "ee211" is discouraged (0 uses).
 New usage of "ee212" is discouraged (0 uses).
 New usage of "ee21an" is discouraged (0 uses).
-New usage of "ee22" is discouraged (10 uses).
 New usage of "ee220" is discouraged (0 uses).
 New usage of "ee221" is discouraged (0 uses).
 New usage of "ee222" is discouraged (20 uses).
@@ -19235,7 +19224,7 @@ Proof modification of "pm110.643" is discouraged (72 steps).
 Proof modification of "pm110.643ALT" is discouraged (35 steps).
 Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
-Proof modification of "pm2.86iALT" is discouraged (16 steps).
+Proof modification of "pm2.86iALT" is discouraged (18 steps).
 Proof modification of "prdsgsumOLD" is discouraged (415 steps).
 Proof modification of "probfinmeasbOLD" is discouraged (225 steps).
 Proof modification of "problem1" is discouraged (20 steps).
@@ -19394,7 +19383,7 @@ Proof modification of "sspwimpVD" is discouraged (87 steps).
 Proof modification of "sspwimpcf" is discouraged (84 steps).
 Proof modification of "sspwimpcfVD" is discouraged (84 steps).
 Proof modification of "sspwtr" is discouraged (100 steps).
-Proof modification of "sspwtrALT" is discouraged (88 steps).
+Proof modification of "sspwtrALT" is discouraged (84 steps).
 Proof modification of "sspwtrALT2" is discouraged (72 steps).
 Proof modification of "ssralv2" is discouraged (83 steps).
 Proof modification of "ssralv2VD" is discouraged (147 steps).
