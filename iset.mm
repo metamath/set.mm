@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Jul-2019
+$( iset.mm - Version of 22-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36927,6 +36927,12 @@ $)
   onnmin $p |- ( ( A C_ On /\ B e. A ) -> -. B e. |^| A ) $=
     ( wcel cint wn con0 wss intss1 elirr ssel mtoi syl adantl ) BACZBADZCZEZAFG
     NOBGZQBAHRPBBCBIOBBJKLM $.
+
+  $( Relationship between subset and elementhood.  In the context of ordinals
+     this can be seen as an ordering law.  (Contributed by Jim Kingdon,
+     22-Jul-2019.) $)
+  ssnel $p |- ( A C_ B -> -. B e. A ) $=
+    ( wss wcel elirr ssel mtoi ) ABCBADBBDBEABBFG $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
