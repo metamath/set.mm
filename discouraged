@@ -5599,10 +5599,6 @@
 "ee122" is used by "tratrb".
 "ee13" is used by "ee13an".
 "ee13" is used by "sbcim2g".
-"ee21" is used by "btwnconn1lem12".
-"ee21" is used by "ee21an".
-"ee21" is used by "omeulem2".
-"ee21" is used by "sbcim2g".
 "ee222" is used by "ee002".
 "ee222" is used by "ee012".
 "ee222" is used by "ee020".
@@ -5624,9 +5620,6 @@
 "ee222" is used by "suctrALT2".
 "ee222" is used by "tratrb".
 "ee223" is used by "e223".
-"ee23" is used by "rspsbc2".
-"ee23" is used by "tratrb".
-"ee23" is used by "tz7.49".
 "ee233" is used by "e233".
 "ee233" is used by "onfrALTlem2".
 "ee233" is used by "truniALT".
@@ -15579,7 +15572,6 @@ New usage of "ee200" is discouraged (0 uses).
 New usage of "ee201" is discouraged (0 uses).
 New usage of "ee202" is discouraged (0 uses).
 New usage of "ee20an" is discouraged (0 uses).
-New usage of "ee21" is discouraged (4 uses).
 New usage of "ee210" is discouraged (0 uses).
 New usage of "ee211" is discouraged (0 uses).
 New usage of "ee212" is discouraged (0 uses).
@@ -15589,7 +15581,6 @@ New usage of "ee221" is discouraged (0 uses).
 New usage of "ee222" is discouraged (20 uses).
 New usage of "ee223" is discouraged (1 uses).
 New usage of "ee22an" is discouraged (0 uses).
-New usage of "ee23" is discouraged (3 uses).
 New usage of "ee233" is discouraged (3 uses).
 New usage of "ee23an" is discouraged (0 uses).
 New usage of "ee30" is discouraged (1 uses).
