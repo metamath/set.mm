@@ -54338,8 +54338,10 @@ $)
 
   ${
     $d A g x y $.  $d B g x $.  $d F g x y $.  $d V y $.
-    $( Value of the recursive definition generator.  (Contributed by Jim
-       Kingdon, 13-Jul-2019.) $)
+    $( Value of the recursive definition generator (obsolete).  This is
+       replaced by ~ rdgival which indexes the union over ` B ` rather than
+       ` dom ( rec ( F , A ) |`` B ) ` (Contributed by Jim Kingdon,
+       13-Jul-2019.)  (New usage is discouraged.) $)
     rdgivalg $p |- ( ( F Fn _V /\ A e. V /\ B e. On ) -> ( rec ( F , A ) ` B ) =
         ( A u. U_ x e. dom ( rec ( F , A ) |` B )
           ( F ` ( ( rec ( F , A ) |` B ) ` x ) ) ) ) $=
@@ -54371,6 +54373,29 @@ $)
     ( vf vg vx cvv wfn wcel wa crdg cv cdm cfv ciun cmpt df-irdg wfun
     cun rdgruledefgg alrimiv tfri1d ) BGHACIJZDBAKEGAFELZMFLUDNBNOSPZ
     FEBAQUCUERDLUENGIJDFADEBCTUAUB $.
+  $}
+
+  ${
+    $d A g x y $.  $d B g x $.  $d F g x y $.  $d V g x y $.
+    $( Value of the recursive definition generator.  (Contributed by Jim
+       Kingdon, 13-Jul-2019.) $)
+    rdgival $p |- ( ( F Fn _V /\ A e. V /\ B e. On ) -> ( rec ( F , A ) ` B ) =
+        ( A u. U_ x e. B ( F ` ( ( rec ( F , A ) |` B ) ` x ) ) ) ) $=
+      ( vg vy cvv wfn wcel con0 cfv cv cdm ciun cun wceq wa wfun wss
+      w3a crdg cres cmpt df-irdg rdgruledefgg tfri2d 3impa eqidd dmeq
+      alrimiv onss 3ad2ant3 rdgifnon fndm syl 3adant3 sylib sylan9eqr
+      sseqtr4d ssdmres fveq2d adantl iuneq12d uneq2d rdgfun resfunexg
+      fveq1 mpan ax-ia2 vex fvexg sylancl ralrimivw wi funfvex funfni
+      wral ex ralimdv adantr mpd iunexg syl2anc unexg 3ad2ant2 fvmptd
+      3adant2 eqtrd ) DHIZBEJZCKJZUAZCDBUBZLZWNCUCZFHBAFMZNZAMZWQLZDL
+      ZOZPZUDZLZBACWSWPLZDLZOZPZWJWKWLWOXEQWJWKRZGCWNXDAFDBUEXJXDSGMX
+      DLHJRGABGFDEUFUKUGUHWMFWPXCXIHXDHWMXDUIWMWQWPQZRZXBXHBXLAWRCXAX
+      GXKWMWRWPNZCWQWPUJWMCWNNZTXMCQWMCKXNWLWJCKTWKCULUMWJWKXNKQZWLXJ
+      WNKIXOBDEUNKWNUOUPUQUTCWNVAURUSXKXAXGQWMXKWTXFDWSWQWPVHVBVCVDVE
+      WLWJWPHJZWKWNSWLXPBDVFWNCKVGVIZUMWMXHHJZXIHJZWJWLXRWKWJWLRZWLXG
+      HJZACVRZXRWJWLVJXTXFHJZACVRZYBWLYDWJWLYCACWLXPWSHJYCXQAVKWSWPHH
+      VLVMVNVCWJYDYBVOWLWJYCYAACWJYCYAYAHXFDXFDVPVQVSVTWAWBACXGKHWCWD
+      WHWKWJXRXSVOWLWKXRXSBXHEHWEVSWFWBWGWI $.
   $}
 
   ${
