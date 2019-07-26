@@ -36443,6 +36443,22 @@ $)
       ( cvv wcel con0 wss cuni wi ssonuni ax-mp ) ACDAEFAGEDHBACIJ $.
   $}
 
+  $( The union of two ordinal numbers is an ordinal number.  (Contributed by
+     Jim Kingdon, 25-Jul-2019.) $)
+  onun2 $p |- ( ( A e. On /\ B e. On ) -> ( A u. B ) e. On ) $=
+    ( con0 wcel wa cpr wss cun prssi cuni cvv wi prexg ssonuni uniprg
+    syl eleq1d sylibd mpd ) ACDBCDEZABFZCGZABHZCDZABCITUBUAJZCDZUDTUA
+    KDUBUFLABCCMUAKNPTUEUCCABCCOQRS $.
+
+  ${
+    onun2i.1 $e |- A e. On $.
+    onun2i.2 $e |- B e. On $.
+    $( The union of two ordinal numbers is an ordinal number.  (Contributed by
+       NM, 13-Jun-1994.)  (Constructive proof by Jim Kingdon, 25-Jul-2019.) $)
+    onun2i $p |- ( A u. B ) e. On $=
+      ( con0 wcel cun onun2 mp2an ) AEFBEFABGEFCDABHI $.
+  $}
+
   ${
     $d x A $.
     $( Any ordinal class is a subclass of the class of ordinal numbers.
