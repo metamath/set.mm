@@ -5598,10 +5598,6 @@
 "ee122" is used by "tratrb".
 "ee13" is used by "ee13an".
 "ee13" is used by "sbcim2g".
-"ee21" is used by "btwnconn1lem12".
-"ee21" is used by "ee21an".
-"ee21" is used by "omeulem2".
-"ee21" is used by "sbcim2g".
 "ee222" is used by "ee002".
 "ee222" is used by "ee012".
 "ee222" is used by "ee020".
@@ -5623,9 +5619,6 @@
 "ee222" is used by "suctrALT2".
 "ee222" is used by "tratrb".
 "ee223" is used by "e223".
-"ee23" is used by "rspsbc2".
-"ee23" is used by "tratrb".
-"ee23" is used by "tz7.49".
 "ee233" is used by "e233".
 "ee233" is used by "onfrALTlem2".
 "ee233" is used by "truniALT".
@@ -15541,7 +15534,6 @@ New usage of "ee200" is discouraged (0 uses).
 New usage of "ee201" is discouraged (0 uses).
 New usage of "ee202" is discouraged (0 uses).
 New usage of "ee20an" is discouraged (0 uses).
-New usage of "ee21" is discouraged (4 uses).
 New usage of "ee210" is discouraged (0 uses).
 New usage of "ee211" is discouraged (0 uses).
 New usage of "ee212" is discouraged (0 uses).
@@ -15551,7 +15543,6 @@ New usage of "ee221" is discouraged (0 uses).
 New usage of "ee222" is discouraged (20 uses).
 New usage of "ee223" is discouraged (1 uses).
 New usage of "ee22an" is discouraged (0 uses).
-New usage of "ee23" is discouraged (3 uses).
 New usage of "ee233" is discouraged (3 uses).
 New usage of "ee23an" is discouraged (0 uses).
 New usage of "ee30" is discouraged (1 uses).
@@ -17536,6 +17527,7 @@ New usage of "plpv" is discouraged (1 uses).
 New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
 New usage of "pm110.643ALT" is discouraged (0 uses).
+New usage of "pm2.21ddOLD" is discouraged (0 uses).
 New usage of "pm2.43bgbi" is discouraged (0 uses).
 New usage of "pm2.43cbi" is discouraged (2 uses).
 New usage of "pm2.86iALT" is discouraged (0 uses).
@@ -18241,6 +18233,8 @@ New usage of "wl-pm2.18d" is discouraged (4 uses).
 New usage of "wl-pm2.21" is discouraged (2 uses).
 New usage of "wl-pm2.24i" is discouraged (1 uses).
 New usage of "wl-pm2.27" is discouraged (1 uses).
+New usage of "wl-sbal1" is discouraged (0 uses).
+New usage of "wl-sbal2" is discouraged (0 uses).
 New usage of "wl-sbcom3" is discouraged (0 uses).
 New usage of "wl-section-boot" is discouraged (0 uses).
 New usage of "wl-section-impchain" is discouraged (0 uses).
@@ -19183,6 +19177,7 @@ Proof modification of "ordelordALTVD" is discouraged (202 steps).
 Proof modification of "p0exALT" is discouraged (2 steps).
 Proof modification of "pm110.643" is discouraged (72 steps).
 Proof modification of "pm110.643ALT" is discouraged (35 steps).
+Proof modification of "pm2.21ddOLD" is discouraged (10 steps).
 Proof modification of "pm2.43bgbi" is discouraged (16 steps).
 Proof modification of "pm2.43cbi" is discouraged (34 steps).
 Proof modification of "pm2.86iALT" is discouraged (18 steps).
