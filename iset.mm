@@ -54872,6 +54872,20 @@ $)
       DUSUFKUOCUGRUIUJ $.
   $}
 
+  ${
+    $d x y z w A $.  $d x y B $.
+    $( Closure law for ordinal addition.  Proposition 8.2 of [TakeutiZaring]
+       p. 57.  (Contributed by NM, 5-May-1995.)  (Constructive proof by Jim
+       Kingdon, 26-Jul-2019.) $)
+    oacl $p |- ( ( A e. On /\ B e. On ) -> ( A +o B ) e. On ) $=
+      ( vz vw con0 wcel wa coa co cvv cv csuc cmpt crdg cfv oav sucex
+      wfn vex a1i eqid fnmpti id wral suceq fvmpt ax-mp eleq1i ralbii
+      wceq suceloni mprgbir rdgon eqeltrd ) AEFZBEFGABHIBCJCKZLZMZANO
+      ECABPUODABURURJRUOCJUQURUPCSQURUAZUBTUOUCDKZUROZEFZDEUDZUOVCUTL
+      ZEFZDEVBVEDEVAVDEUTJFVAVDUJDSZCUTUQVDJURUPUTUEUSUTVFQUFUGUHUIUT
+      UKULTUMUN $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
