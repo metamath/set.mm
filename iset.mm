@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Jul-2019
+$( iset.mm - Version of 26-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54512,6 +54512,29 @@ $)
         VEELZNZBUCVGVHNZAVDRSZDRQVLAEPSCFQVPGHCEFUHTIVLRDVDDVDUIUJTJV
         NVOBVGPVEVGOZVEVGVMVHVQUKVEVGEULUNUOVBUPCVHUQURUSUTVA $.
     $}
+  $}
+
+  ${
+    $d A w x z $.  $d B z $.  $d F w x z $.  $d ph x y z $.
+    rdgon.1 $e |- ( ph -> F Fn _V ) $.
+    rdgon.2 $e |- ( ph -> A e. On ) $.
+    rdgon.3 $e |- ( ph -> A. x e. On ( F ` x ) e. On ) $.
+    $( Evaluating the recursive definition generator produces an ordinal.
+       There is a hypothesis that the characteristic function produces ordinals
+       on ordinal arguments.  (Contributed by Jim Kingdon, 26-Jul-2019.) $)
+    rdgon $p |- ( ( ph /\ B e. On ) -> ( rec ( F , A ) ` B ) e. On ) $=
+      ( vz vw con0 wcel cfv cv wi wceq fveq2 eleq1d wral wa crdg cres
+      imbi2d r19.21v ciun wb fvres adantl cbvralv sylib rspcv syl5com
+      cun adantr sylbird ralimdva cvv vex iunon mpan onun2 ee12an wfn
+      syl6 jca rdgival 3expa sylan sylibrd expcom syl5bi tfis3 impcom
+      a2d ) DKLADECUAZMZKLZAINZVOMZKLZOZABNZVOMZKLZOZAVQOIBDVRWBPZVTW
+      DAWFVSWCKVRWBVOQRUCVRDPZVTVQAWGVSVPKVRDVOQRUCWEBVRSAWDBVRSZOVRK
+      LZWAAWDBVRUDWIAWHVTAWIWHVTOAWITZWHCBVRWBVOVRUBMZEMZUEZUMZKLZVTA
+      WHWOOWIACKLZWHWMKLZWOGAWHWLKLZBVRSZWQAWDWRBVRAWBVRLZTWDWKKLZWRW
+      TXAWDUFAWTWKWCKWBVRVOUGRUHAXAWROWTAJNZEMZKLZJKSZXAWRAWBEMZKLZBK
+      SXEHXGXDBJKWBXBPXFXCKWBXBEQRUIUJXDWRJWKKXBWKPXCWLKXBWKEQRUKULUN
+      UOUPVRUQLWSWQIURBVRWLUQUSUTVDCWMVAVBUNWJVSWNKAEUQVCZWPTWIVSWNPZ
+      AXHWPFGVEXHWPWIXIBCVREKVFVGVHRVIVJVNVKVLVM $.
   $}
 
   ${
