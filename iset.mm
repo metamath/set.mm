@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Jul-2019
+$( iset.mm - Version of 25-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -34066,12 +34066,25 @@ $)
     $d x y A $.  $d x y B $.
     $( The Axiom of Pairing using class variables.  Theorem 7.13 of [Quine]
        p. 51, but restricted to classes which exist.  For proper classes, see
-       ~ prprc , ~ prprc1 , and ~ prprc2 .  (Contributed by Jim Kingdon,
-       16-Sep-2018.) $)
-    prexg $p |- ( ( A e. _V /\ B e. _V ) -> { A , B } e. _V ) $=
+       ~ prprc , ~ prprc1 , and ~ prprc2 .  This is a special case of ~ prexg
+       and new proofs should use ~ prexg instead.  (Contributed by Jim Kingdon,
+       25-Jul-2019.)  (New usage is discouraged.) $)
+    prexgOLD $p |- ( ( A e. _V /\ B e. _V ) -> { A , B } e. _V ) $=
       ( vx vy cvv wcel cpr wi wceq preq2 eleq1d zfpair2 vtoclg syl5ib
       cv preq1 vtocleg imp ) AEFBEFZABGZEFZSUAHCAESCOZBGZEFZUBAIZUAUB
       DOZGZEFUDDBEUFBIUGUCEUFBUBJKCDLMUEUCTEUBABPKNQR $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x W $.
+    $( The Axiom of Pairing using class variables.  Theorem 7.13 of [Quine]
+       p. 51, but restricted to classes which exist.  For proper classes, see
+       ~ prprc , ~ prprc1 , and ~ prprc2 .  (Contributed by Jim Kingdon,
+       16-Sep-2018.) $)
+    prexg $p |- ( ( A e. V /\ B e. W ) -> { A , B } e. _V ) $=
+      ( vx vy wcel cpr cvv wi wceq preq2 eleq1d zfpair2 vtoclg syl5ib
+      cv preq1 vtocleg imp ) ACGBDGZABHZIGZUAUCJEACUAEQZBHZIGZUDAKZUC
+      UDFQZHZIGUFFBDUHBKUIUEIUHBUDLMEFNOUGUEUBIUDABRMPST $.
   $}
 
   ${
@@ -34094,7 +34107,7 @@ $)
   $( A pair of two sets belongs to the power class of a class containing those
      two sets.  (Contributed by Thierry Arnoux, 10-Mar-2017.) $)
   prelpwi $p |- ( ( A e. C /\ B e. C ) -> { A , B } e. ~P C ) $=
-    ( wcel wa cpr cpw wss prssi cvv wb elex prexg syl2an elpwg syl mpbird ) ACD
+    ( wcel wa cpr cpw wss prssi cvv wb elex prexgOLD syl2an elpwg syl mpbird ) ACD
     ZBCDZEZABFZCGDZUACHZABCITUAJDZUBUCKRAJDBJDUDSACLBCLABMNUACJOPQ $.
 
   ${
@@ -34227,7 +34240,7 @@ $)
   $( An ordered pair of sets is a set.  (Contributed by Jim Kingdon,
      11-Jan-2019.) $)
   opexg $p |- ( ( A e. V /\ B e. W ) -> <. A , B >. e. _V ) $=
-    ( wcel wa cop csn cpr cvv dfopg elex snexgOLD syl adantr prexg syl2anc eqeltrd
+    ( wcel wa cop csn cpr cvv dfopg elex snexgOLD syl adantr prexgOLD syl2anc eqeltrd
     syl2an ) ACEZBDEZFZABGAHZABIZIZJABCDKUBUCJEZUDJEZUEJETUFUATAJEZUFACLZAMNOTU
     HBJEUGUAUIBDLABPSUCUDPQR $.
 
@@ -34235,7 +34248,7 @@ $)
      new proofs should use ~ opexg instead.  (Contributed by Jim Kingdon,
      19-Sep-2018.)  (New usage is discouraged.) $)
   opexgOLD $p |- ( ( A e. _V /\ B e. _V ) -> <. A , B >. e. _V ) $=
-    ( cvv wcel cop csn cpr dfopg snexgOLD adantr prexg jca syl eqeltrd
+    ( cvv wcel cop csn cpr dfopg snexgOLD adantr prexgOLD jca syl eqeltrd
     wa ) ACDZBCDZOZABEAFZABGZGZCABCCHRSCDZTCDZOUACDRUBUCPUBQAIJABKLST
     KMN $.
 
@@ -34278,7 +34291,7 @@ $)
     $( One of the two elements of an ordered pair.  (Contributed by NM,
        5-Aug-1993.)  (Revised by Mario Carneiro, 26-Apr-2015.) $)
     opi2 $p |- { A , B } e. <. A , B >. $=
-      ( cpr csn cop cvv wcel prexg mp2an prid2 dfop eleqtrri ) ABEZAF
+      ( cpr csn cop cvv wcel prexgOLD mp2an prid2 dfop eleqtrri ) ABEZAF
       ZOEABGPOAHIBHIOHICDABJKLABCDMN $.
   $}
 
@@ -34328,7 +34341,7 @@ $)
        sets due our specific ordered pair definition.  (Contributed by NM,
        28-May-1995.) $)
     opth $p |- ( <. A , B >. = <. C , D >. <-> ( A = C /\ B = D ) ) $=
-      ( vx cop wceq wa cvv wcel cpr csn syl eqtr3d dfopg sylancl wi prexg opth1
+      ( vx cop wceq wa cvv wcel cpr csn syl eqtr3d dfopg sylancl wi prexgOLD opth1
       opi1 id syl5eleq oprcl simprd opeq1d simpld preqr2g syl2anc mpd cv eqeq2d
       preq2 eqeq2 imbi12d vex preqr2 vtoclg sylc jca opeq12 impbii ) ABHZCDHZIZ
       ACIZBDIZJVFVGVHABCDEFUAZVFDKLZCBMZCDMZIZVHVFCKLZVJVFANZVELVNVJJZVFVOVDVEA
@@ -34524,7 +34537,7 @@ $)
        NM, 3-Jun-2008.) $)
     opeqsn $p |- ( <. A , B >. = { C } <-> ( A = B /\ C = { A } ) ) $=
       ( cop csn wceq cpr wa dfop eqeq1i wcel snexgOLD preqsn eqcom bitri
-      cvv 3bitri ax-mp prexg mp2an anbi2i anidm anbi1i syl5req eqeq1d
+      cvv 3bitri ax-mp prexgOLD mp2an anbi2i anidm anbi1i syl5req eqeq1d
       dfsn2 preq2 syl6bb pm5.32i ) ABGZCHZIAHZABJZJZUNIUOUPIZUPCIZKZA
       BIZCUOIZKZUMUQUNABDELMUOUPCASNZUOSNDAOUAVDBSNUPSNDEABUBUCFPUTVA
       USKVCURVAUSURUPUOIVABAIZKZVAUOUPQABADEDPVFVAVAKVAVEVAVABAQUDVAU
@@ -34541,7 +34554,7 @@ $)
     opeqpr $p |- ( <. A , B >. = { C , D }
   <-> ( ( C = { A } /\ D = { A , B } ) \/ ( C = { A , B } /\ D = { A } ) ) ) $=
       ( cop cpr wceq csn wa wo eqcom dfop eqeq2i cvv wcel snexgOLD ax-mp
-      prexg mp2an preq12b 3bitri ) ABIZCDJZKUGUFKUGALZABJZJZKCUHKDUIK
+      prexgOLD mp2an preq12b 3bitri ) ABIZCDJZKUGUFKUGALZABJZJZKCUHKDUIK
       MCUIKDUHKMNUFUGOUFUJUGABEFPQCDUHUIGHARSZUHRSEATUAUKBRSUIRSEFABU
       BUCUDUE $.
   $}
@@ -34579,7 +34592,7 @@ $)
        (Contributed by NM, 17-Aug-2004.)  (Revised by Mario Carneiro,
        26-Apr-2015.) $)
     uniop $p |- U. <. A , B >. = { A , B } $=
-      ( cop cuni csn cpr cun dfop unieqi wcel snexgOLD ax-mp prexg mp2an
+      ( cop cuni csn cpr cun dfop unieqi wcel snexgOLD ax-mp prexgOLD mp2an
       cvv unipr wss wceq snsspr1 ssequn1 mpbi 3eqtri ) ABEZFAGZABHZHZ
       FUFUGIZUGUEUHABCDJKUFUGAQLZUFQLCAMNUJBQLUGQLCDABOPRUFUGSUIUGTAB
       UAUFUGUBUCUD $.
@@ -35972,7 +35985,7 @@ $)
     $( The union of two sets is a set.  Corollary 5.8 of [TakeutiZaring]
        p. 16.  (Contributed by NM, 1-Jul-1994.) $)
     unex $p |- ( A u. B ) e. _V $=
-      ( cpr cuni cun cvv unipr wcel prexg mp2an uniex eqeltrri ) ABEZ
+      ( cpr cuni cun cvv unipr wcel prexgOLD mp2an uniex eqeltrri ) ABEZ
       FABGHABCDIOAHJBHJOHJCDABKLMN $.
   $}
 
@@ -35995,7 +36008,7 @@ $)
 
   $( A triple of classes exists.  (Contributed by NM, 10-Apr-1994.) $)
   tpexg $p |- ( ( A e. _V /\ B e. _V /\ C e. _V ) -> { A , B , C } e. _V ) $=
-    ( cvv wcel w3a ctp cpr csn cun df-tp wa prexg snexgOLD anim12i 3impa
+    ( cvv wcel w3a ctp cpr csn cun df-tp wa prexgOLD snexgOLD anim12i 3impa
     unexg syl syl5eqel ) ADEZBDEZCDEZFZABCGABHZCIZJZDABCKUCUDDEZUEDEZ
     LZUFDETUAUBUITUALUGUBUHABMCNOPUDUEDDQRS $.
 
@@ -36350,7 +36363,7 @@ $)
     $( Extract the first member of an ordered pair.  Theorem 73 of [Suppes]
        p. 42.  (Contributed by NM, 25-Nov-2003.) $)
     op1stb $p |- |^| |^| <. A , B >. = A $=
-      ( cop cint csn cpr dfop inteqi cin wcel snexgOLD ax-mp prexg mp2an
+      ( cop cint csn cpr dfop inteqi cin wcel snexgOLD ax-mp prexgOLD mp2an
       cvv intpr wss eqtri wceq snsspr1 df-ss mpbi intsn ) ABEZFZFAGZF
       AUGUHUGUHABHZHZFZUHUFUJABCDIJUKUHUIKZUHUHUIAQLZUHQLCAMNUMBQLUIQ
       LCDABOPRUHUISULUHUAABUBUHUIUCUDTTJACUET $.
@@ -36361,7 +36374,7 @@ $)
        p. 42.  (Contributed by Jim Kingdon, 17-Dec-2018.) $)
     op1stbg $p |- ( ( A e. V /\ B e. W ) -> |^| |^| <. A , B >. = A ) $=
       ( wcel wa cop cint csn cpr dfopg inteqd cin cvv wceq elex snexgOLD syl eqtrd
-      adantr prexg syl2an intprg syl2anc wss snsspr1 df-ss mpbi syl6eq intsng )
+      adantr prexgOLD syl2an intprg syl2anc wss snsspr1 df-ss mpbi syl6eq intsng )
       ACEZBDEZFZABGZHZHAIZHZAUMUOUPUMUOUPABJZJZHZUPUMUNUSABCDKLUMUTUPURMZUPUMUP
       NEZURNEZUTVAOUKVBULUKANEZVBACPZAQRTUKVDBNEVCULVEBDPABUAUBUPURNNUCUDUPURUE
       VAUPOABUFUPURUGUHUISLUKUQAOULACUJTS $.
@@ -36798,7 +36811,7 @@ $)
        [Enderton] p. 207.  (Contributed by NM, 16-Oct-1996.) $)
     opthreg $p |- ( { A , { A , B } } = { C , { C , D } } <->
                    ( A = C /\ B = D ) ) $=
-      ( cpr wceq wa prid1 cvv prexg mp2an preleq mpanl12 preq1 eqeq1d
+      ( cpr wceq wa prid1 cvv prexgOLD mp2an preleq mpanl12 preq1 eqeq1d
       wcel preqr2 syl6bi imdistani adantr preq12 preq2d eqtrd impbii
       syl ) AABIZIZCCDIZIZJZACJZBDJZKZUNUOUJULJZKZUQAUJTCULTUNUSABELC
       DGLAUJCULEAMTBMTUJMTEFABNOGCMTDMTULMTGHCDNOPQUOURUPUOURCBIZULJU
@@ -38790,7 +38803,7 @@ $)
       ( vz vw vv cop cvv cv wceq wa wex wi wcel bitri weq eqeq2d cxp wss df-rel
       wrel csn cpr wal dfss2 vex elop elvv imbi12i jaob albii 19.26 snexgOLD ax-mp
       wo eqeq1 eqcom opeqsn syl6bb 2exbidv imbi12d spcv sneq cbvexv a9ev equcom
-      exbii mpbi 19.41v mpbiran eqid a1bi 3bitr2ri sylib prexg mp2an mpi opeqpr
+      exbii mpbi 19.41v mpbiran eqid a1bi 3bitr2ri sylib prexgOLD mp2an mpi opeqpr
       idd eqtr2 preqsn simplbi dfsn2 preq2 syl5req syl5eq anbi12d biimpd adantr
       syl exp3a com12 mpd expcom imp3a jaod syl5bi 2eximdv exlimiv syl2an sylbi
       imp simpr equid sylibr eqtr4d opeq12 spc2ev adantlr preq12 biimpa syl6eqr
