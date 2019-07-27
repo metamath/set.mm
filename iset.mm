@@ -54486,9 +54486,9 @@ $)
        ~ df-irdg handles the initial value.  (Contributed by Jim Kingdon,
        11-Jun-2019.) $)
     rdg0ss $p |- ( ph -> A C_ ( rec ( F , A ) ` B ) ) $=
-      ( vx crdg cres cdm cv cfv ciun cun ssun1 cvv wfn wcel con0 wceq
-      rdgivalg syl3anc syl5sseqr ) ABIDBJZCKZLIMUGNDNOZPZBCUFNZBUHQAD
-      RSBETCUATUJUIUBFGHIBCDEUCUDUE $.
+      ( vx cv crdg cfv ciun cun ssun1 cvv wfn wcel con0 wceq rdgival
+      syl3anc syl5sseqr ) ABICIJDBKZLDLMZNZBCUDLZBUEOADPQBERCSRUGUFTF
+      GHIBCDEUAUBUC $.
 
     ${
       $d A x $.  $d B x $.  $d F x $.
