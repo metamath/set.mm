@@ -54884,6 +54884,18 @@ $)
       ECABPUODABURURJRUOCJUQURUPCSQURUAZUBTUOUCDKZUROZEFZDEUDZUOVCUTL
       ZEFZDEVBVEDEVAVDEUTJFVAVDUJDSZCUTUQVDJURUPUTUEUSUTVFQUFUGUHUIUT
       UKULTUMUN $.
+
+    $( Closure law for ordinal multiplication.  Proposition 8.16 of
+       [TakeutiZaring] p. 57.  (Contributed by NM, 3-Aug-2004.)  (Constructive
+       proof by Jim Kingdon, 26-Jul-2019.) $)
+    omcl $p |- ( ( A e. On /\ B e. On ) -> ( A .o B ) e. On ) $=
+      ( vx vy con0 wcel wa comu co cvv coa cmpt crdg cfv vex mpan syl
+      cv c0 eqeltrd omv wral wfn oaexg ralrimivw eqid fnmpt 0elon a1i
+      wceq oacl oveq1 fvmptg ancoms ralrimiva rdgon ) AEFZBEFGABHIBCJ
+      CRZAKIZLZSMNECABUAUQDSBUTUQUSJFZCJUBUTJUCUQVACJURJFUQVACOURAJEU
+      DPUECJUSUTJUTUFZUGQSEFUQUHUIUQDRZUTNZEFZDEVCEFZUQVEVFUQGZVDVCAK
+      IZEVGVHEFZVDVHUJZVCAUKZVCJFVIVJDOCVCUSVHJEUTURVCAKULVBUMPQVKTUN
+      UOUPT $.
   $}
 
 $(
