@@ -54406,9 +54406,10 @@ $)
 
   ${
     $d A g x y $.  $d B g x $.  $d F g x y $.  $d V g x y $.
-    $( Value of the recursive definition generator.  (Contributed by Jim
-       Kingdon, 13-Jul-2019.) $)
-    rdgival $p |- ( ( F Fn _V /\ A e. V /\ B e. On ) -> ( rec ( F , A ) ` B ) =
+    $( Value of the recursive definition generator.  Lemma for ~ rdgival which
+       simplifies the value further.  (Contributed by Jim Kingdon,
+       13-Jul-2019.)  (New usage is discouraged.) $)
+    rdgivallem $p |- ( ( F Fn _V /\ A e. V /\ B e. On ) -> ( rec ( F , A ) ` B ) =
         ( A u. U_ x e. B ( F ` ( ( rec ( F , A ) |` B ) ` x ) ) ) ) $=
       ( vg vy cvv wfn wcel con0 cfv cv cdm ciun cun wceq wa wfun wss
       w3a crdg cres cmpt df-irdg rdgruledefgg tfri2d 3impa eqidd dmeq
@@ -54425,6 +54426,14 @@ $)
       HJZACVRZXRWJWLVJXTXFHJZACVRZYBWLYDWJWLYCACWLXPWSHJYCXQAVKWSWPHH
       VLVMVNVCWJYDYBVOWLWJYCYAACWJYCYAYAHXFDXFDVPVQVSVTWAWBACXGKHWCWD
       WHWKWJXRXSVOWLWKXRXSBXHEHWEVSWFWBWGWI $.
+
+    $( Value of the recursive definition generator.  (Contributed by Jim
+       Kingdon, 26-Jul-2019.) $)
+    rdgival $p |- ( ( F Fn _V /\ A e. V /\ B e. On ) -> ( rec ( F , A ) ` B ) =
+        ( A u. U_ x e. B ( F ` ( rec ( F , A ) ` x ) ) ) ) $=
+      ( cvv wfn wcel con0 w3a crdg cfv cres ciun cun rdgivallem fvres
+      cv fveq2d iuneq2i uneq2i syl6eq ) DFGBEHCIHJCDBKZLBACARZUCCMLZD
+      LZNZOBACUDUCLZDLZNZOABCDEPUGUJBACUFUIUDCHUEUHDUDCUCQSTUAUB $.
   $}
 
   ${
@@ -54526,7 +54535,7 @@ $)
       ( vz vw con0 wcel cfv cv wi wceq fveq2 eleq1d wral wa crdg cres
       imbi2d r19.21v ciun wb fvres adantl cbvralv sylib rspcv syl5com
       cun adantr sylbird ralimdva cvv vex iunon mpan onun2 ee12an wfn
-      syl6 jca rdgival 3expa sylan sylibrd expcom syl5bi tfis3 impcom
+      syl6 jca rdgivallem 3expa sylan sylibrd expcom syl5bi tfis3 impcom
       a2d ) DKLADECUAZMZKLZAINZVOMZKLZOZABNZVOMZKLZOZAVQOIBDVRWBPZVTW
       DAWFVSWCKVRWBVOQRUCVRDPZVTVQAWGVSVPKVRDVOQRUCWEBVRSAWDBVRSZOVRK
       LZWAAWDBVRUDWIAWHVTAWIWHVTOAWITZWHCBVRWBVOVRUBMZEMZUEZUMZKLZVTA
