@@ -54437,7 +54437,7 @@ $)
   $}
 
   ${
-    $d A x y $.  $d B x y $.  $d F x y $.  $d I x y $.  $d V x $.  $d ph x $.
+    $d A x y $.  $d B x y $.  $d F x y $.  $d I x y $.  $d V x y $.  $d ph x $.
     rdgss.1 $e |- ( ph -> F Fn _V ) $.
     rdgss.2 $e |- ( ph -> I e. V ) $.
     rdgss.3 $e |- ( ph -> A e. On ) $.
@@ -54446,20 +54446,12 @@ $)
     $( Subset and recursive definition generator.  (Contributed by Jim Kingdon,
        15-Jul-2019.) $)
     rdgss $p |- ( ph -> ( rec ( F , I ) ` A ) C_ ( rec ( F , I ) ` B ) ) $=
-      ( vx vy cdm cfv wss wcel wceq syl con0 crdg cres ciun wrex wral
-      cv cun ssel ssid fveq2 fveq2d sseq2d rspcev mpan2 syl6 ralrimiv
-      onss wfn cvv rdgifnon syl2anc sseqtr4d ssdmres sylib raleqbidv
-      fndm rexeqdv fvres adantr adantl sseq12d rexbidva syl6bb mpbird
-      wa ralbiia iunss2 unss2 3syl rdgivalg syl3anc 3sstr4d ) AELDEUA
-      ZBUBZNZLUFZWDOZDOZUCZUGZEMWCCUBZNZMUFZWKOZDOZUCZUGZBWCOZCWCOZAW
-      HWOPZMWLUDZLWEUEZWIWPPWJWQPAXBWFWCOZDOZWMWCOZDOZPZMCUDZLBUEZABC
-      PZXIKXJXHLBXJWFBQZWFCQZXHBCWFUHXLXDXDPZXHXDUIXGXMMWFCWMWFRZXFXD
-      XDXNXEXCDWMWFWCUJUKULUMUNUOUPSAXBWTMCUDZLBUEXIAXAXOLWEBABWCNZPW
-      EBRABTXPABTQZBTPIBUQSAWCTURZXPTRADUSURZEFQZXRGHEDFUTVATWCVFSZVB
-      BWCVCVDAWTMWLCACXPPWLCRACTXPACTQZCTPJCUQSYAVBCWCVCVDVGVEXOXHLBX
-      KWTXGMCXKWMCQZVOZWHXDWOXFYDWGXCDXKWGXCRYCWFBWCVHVIUKYDWNXEDYCWN
-      XERXKWMCWCVHVJUKVKVLVPVMVNLMWEWLWHWOVQWIWPEVRVSAXSXTXQWRWJRGHIL
-      EBDFVTWAAXSXTYBWSWQRGHJMECDFVTWAWB $.
+      ( vx vy cv cfv ciun cun wss wcel wceq crdg wrex wral fveq2d sseq2d rspcev
+      ssel ssid fveq2 mpan2 syl6 ralrimiv syl iunss2 unss2 3syl cvv wfn rdgival
+      con0 syl3anc 3sstr4d ) AELBLNZDEUAZOZDOZPZQZEMCMNZVDOZDOZPZQZBVDOZCVDOZAV
+      FVKRZMCUBZLBUCZVGVLRVHVMRABCRZVRKVSVQLBVSVCBSVCCSZVQBCVCUGVTVFVFRZVQVFUHV
+      PWAMVCCVIVCTZVKVFVFWBVJVEDVIVCVDUIUDUEUFUJUKULUMLMBCVFVKUNVGVLEUOUPADUQUR
+      ZEFSZBUTSVNVHTGHILEBDFUSVAAWCWDCUTSVOVMTGHJMECDFUSVAVB $.
   $}
 
   ${
