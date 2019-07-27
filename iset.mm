@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Jul-2019
+$( iset.mm - Version of 27-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54740,6 +54740,11 @@ $)
   0lt1o $p |- (/) e. 1o $=
     ( c0 c1o wcel wceq eqid el1o mpbir ) ABCAADAEAFG $.
 
+  $( The characteristic function for ordinal addition is defined everywhere.
+     (Contributed by Jim Kingdon, 27-Jul-2019.) $)
+  oafnex $p |- ( x e. _V |-> suc x ) Fn _V $=
+    ( cvv cv csuc cmpt vex sucex eqid fnmpti ) ABACZDZABKEZJAFGLHI $.
+
   ${
     $d x z $.
     sucinc.1 $e |- F = ( z e. _V |-> suc z ) $.
@@ -54765,17 +54770,15 @@ $)
     $( Functionality and domain of ordinal addition.  (Contributed by NM,
        26-Aug-1995.)  (Proof shortened by Mario Carneiro, 3-Jul-2019.) $)
     fnoa $p |- +o Fn ( On X. On ) $=
-      ( vy vz vx cv cvv csuc cmpt crdg cfv wcel con0 wral coa cxp wfn vex sucex
-      eqid ax-mp rgenw fnmpti rdgexg df-oadd fnmpt2 ) ADZBEBDZFZGZCDZHIZEJZAKLZ
-      CKLMKKNOULCKUKAKUEEJUKAPUIUEUHECPBEUGUHUFBPQUHRUAUBSTTCAKKUJMECABUCUDS $.
+      ( vx vy vz con0 cv cvv csuc cmpt crdg cfv df-oadd wcel oafnex rdgexg ax-mp
+      coa vex fnmpt2i ) ABDDBEZCFCEGHZAEZIJZPABCKSFLUBFLBQUASTFAQCMNOR $.
 
     $( Ordinal addition is a set.  (Contributed by Mario Carneiro,
        3-Jul-2019.) $)
     oaexg $p |- ( ( A e. V /\ B e. W ) -> ( A +o B ) e. _V ) $=
-      ( vy vz vx cv cvv csuc cmpt crdg cfv wcel wal coa co vex sucex con0 ax-mp
-      eqid fnmpti rdgexg gen2 df-oadd mpt2fvex mp3an1 ) EHZFIFHZJZKZGHZLMZINZEO
-      GOACNBDNABPQINUOGEUIINUOERUMUIULIGRFIUKULUJFRSULUBUCUDUAUEGETTUNABPICDGEF
-      UFUGUH $.
+      ( vy vz vx cv cvv csuc cmpt crdg cfv wcel wal coa co vex oafnex con0 ax-mp
+      rdgexg gen2 df-oadd mpt2fvex mp3an1 ) EHZFIFHJKZGHZLMZINZEOGOACNBDNABPQIN
+      UKGEUGINUKERUIUGUHIGRFSUBUAUCGETTUJABPICDGEFUDUEUF $.
 
     $( Functionality and domain of ordinal multiplication.  (Contributed by NM,
        26-Aug-1995.)  (Revised by Mario Carneiro, 3-Jul-2019.) $)
@@ -54816,10 +54819,9 @@ $)
        by Mario Carneiro, 8-Sep-2013.) $)
     oav $p |- ( ( A e. On /\ B e. On ) ->
              ( A +o B ) = ( rec ( ( x e. _V |-> suc x ) , A ) ` B ) ) $=
-      ( vy vz con0 wcel cvv cv csuc cmpt crdg cfv coa wceq sucex eqid
-      co vex fnmpti rdgexgg rdgeq2 fveq1d df-oadd ovmpt2g mpd3an3
-      fveq2 ) BFGCFGCAHAIZJZKZBLZMZHGBCNRULOBCUJFFAHUIUJUHASPUJQTUADE
-      BCFFEIZUJDIZLZMULNUMUKMHUNBOUMUOUKUNBUJUBUCUMCUKUGDEAUDUEUF $.
+      ( vy vz con0 wcel cvv cv csuc cmpt crdg cfv coa wceq oafnex rdgexgg rdgeq2
+      co fveq1d fveq2 df-oadd ovmpt2g mpd3an3 ) BFGCFGCAHAIJKZBLZMZHGBCNSUGOBCU
+      EFFAPQDEBCFFEIZUEDIZLZMUGNUHUFMHUIBOUHUJUFUIBUERTUHCUFUADEAUBUCUD $.
 
     $( Value of ordinal multiplication.  (Contributed by NM, 17-Sep-1995.)
        (Revised by Mario Carneiro, 23-Aug-2014.) $)
@@ -54887,12 +54889,11 @@ $)
        p. 57.  (Contributed by NM, 5-May-1995.)  (Constructive proof by Jim
        Kingdon, 26-Jul-2019.) $)
     oacl $p |- ( ( A e. On /\ B e. On ) -> ( A +o B ) e. On ) $=
-      ( vz vw con0 wcel wa coa co cvv cv csuc cmpt crdg cfv oav sucex
-      wfn vex a1i eqid fnmpti id wral suceq fvmpt ax-mp eleq1i ralbii
-      wceq suceloni mprgbir rdgon eqeltrd ) AEFZBEFGABHIBCJCKZLZMZANO
-      ECABPUODABURURJRUOCJUQURUPCSQURUAZUBTUOUCDKZUROZEFZDEUDZUOVCUTL
-      ZEFZDEVBVEDEVAVDEUTJFVAVDUJDSZCUTUQVDJURUPUTUEUSUTVFQUFUGUHUIUT
-      UKULTUMUN $.
+      ( vz vw con0 wcel wa coa co cvv cv csuc cmpt crdg cfv oav wfn oafnex a1i
+      id wral wceq vex suceq eqid sucex fvmpt ax-mp eleq1i ralbii mprgbir rdgon
+      suceloni eqeltrd ) AEFZBEFGABHIBCJCKZLZMZANOECABPUODABURURJQUOCRSUOTDKZUR
+      OZEFZDEUAZUOVBUSLZEFZDEVAVDDEUTVCEUSJFUTVCUBDUCZCUSUQVCJURUPUSUDURUEUSVEU
+      FUGUHUIUJUSUMUKSULUN $.
 
     $( Closure law for ordinal multiplication.  Proposition 8.16 of
        [TakeutiZaring] p. 57.  (Contributed by NM, 3-Aug-2004.)  (Constructive
