@@ -54896,6 +54896,17 @@ $)
       DPUECJUSUTJUTUFZUGQSEFUQUHUIUQDRZUTNZEFZDEVCEFZUQVEVFUQGZVDVCAK
       IZEVGVHEFZVDVHUJZVCAUKZVCJFVIVJDOCVCUSVHJEUTURVCAKULVBUMPQVKTUN
       UOUPT $.
+
+    $( Closure law for ordinal exponentiation.  (Contributed by Jim Kingdon,
+       26-Jul-2019.) $)
+    oeicl $p |- ( ( A e. On /\ B e. On ) -> ( A ^oi B ) e. On ) $=
+      ( vx vy con0 wcel wa coei co cvv cv comu cmpt c1o crdg cfv mpan
+      vex syl eqeltrd oeiv wral wfn omexg ralrimivw eqid 1on a1i wceq
+      fnmpt omcl oveq1 fvmptg ancoms ralrimiva rdgon ) AEFZBEFGABHIBC
+      JCKZALIZMZNOPECABUAUQDNBUTUQUSJFZCJUBUTJUCUQVACJURJFUQVACRURAJE
+      UDQUECJUSUTJUTUFZUJSNEFUQUGUHUQDKZUTPZEFZDEVCEFZUQVEVFUQGZVDVCA
+      LIZEVGVHEFZVDVHUIZVCAUKZVCJFVIVJDRCVCUSVHJEUTURVCALULVBUMQSVKTU
+      NUOUPT $.
   $}
 
 $(
