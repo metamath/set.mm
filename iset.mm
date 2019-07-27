@@ -54455,7 +54455,7 @@ $)
   $}
 
   ${
-    $d x y z f g u v w F $.  $d x y z f g u v w A $.  $d B g x $.
+    $d x y z f g u v w F $.  $d x y z f g u v w A $.  $d B g x $.  $d V x $.
     rdgisuc1.1 $e |- ( ph -> F Fn _V ) $.
     rdgisuc1.2 $e |- ( ph -> A e. V ) $.
     rdgisuc1.3 $e |- ( ph -> B e. On ) $.
@@ -54465,25 +54465,21 @@ $)
        encompasses both the expected successor term
        ` ( F `` ( rec ( F , A ) `` B ) ) ` but also terms that correspond to
        the initial value ` A ` and to limit ordinals
-       ` U_ x e. B ( F `` ( ( rec ( F , A ) |`` suc B ) `` x ) ) ` .
+       ` U_ x e. B ( F `` ( rec ( F , A ) `` x ) ) ` .
 
-       If we added a condition that the characteristic function is increasing
-       (for example ` A. x x e. ( F `` x ) ` ) we could likely show
+       If we add conditions on the characteristic function, we can show tighter
+       results such as ~ rdgisuc2 .  The eventual goal is
        ` ( rec ( F , A ) `` suc B ) = ( F `` ( rec ( F , A ) `` B ) ) ` .
        (Contributed by Jim Kingdon, 9-Jun-2019.) $)
     rdgisuc1 $p |- ( ph -> ( rec ( F , A ) ` suc B ) =
-        ( A u. ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
+        ( A u. ( U_ x e. B ( F ` ( rec ( F , A ) ` x ) )
           u. ( F ` ( rec ( F , A ) ` B ) ) ) ) ) $=
-      ( cfv cdm ciun cun wfn wcel con0 wceq syl wss uneq2d cv syl3anc
-      csuc crdg cres cvv suceloni rdgivalg rdgifnon syl2anc sseqtr4d
-      onss ssdmres sylib iuneq1d csn df-suc iuneq1 ax-mp iunxun eqtri
-      fndm fveq2 fveq2d iunxsng sucidg fvres eqtrd syl5eq 3eqtrd ) AD
-      UCZECUDZJZCBVLVKUEZKZBUAZVNJZEJZLZMZCBVKVRLZMZCBDVRLZDVLJZEJZMZ
-      MZAEUFNZCFOZVKPOZVMVTQGHADPOZWJIDUGRZBCVKEFUHUBAVSWACABVOVKVRAV
-      KVLKZSVOVKQAVKPWMAWJVKPSWLVKULRAVLPNZWMPQAWHWIWNGHCEFUIUJPVLVBR
-      UKVKVLUMUNUOTAWKWBWGQIWKWAWFCWKWAWCBDUPZVRLZMZWFWABDWOMZVRLZWQV
-      KWRQWAWSQDUQBVKWRVRURUSBDWOVRUTVAWKWPWEWCWKWPDVNJZEJZWEBDVRXAPV
-      PDQVQWTEVPDVNVCVDVEWKWTWDEWKDVKOWTWDQDPVFDVKVLVGRVDVHTVITRVJ $.
+      ( csuc crdg cfv cv ciun cun wcel con0 wceq syl uneq2d cvv rdgival
+      wfn suceloni syl3anc csn df-suc iuneq1 ax-mp iunxun eqtri iunxsng
+      fveq2 fveq2d syl5eq eqtrd ) ADJZECKZLZCBUQBMZURLZELZNZOZCBDVBNZDU
+      RLZELZOZOZAEUAUCCFPUQQPZUSVDRGHADQPZVJIDUDSBCUQEFUBUEAVKVDVIRIVKV
+      CVHCVKVCVEBDUFZVBNZOZVHVCBDVLOZVBNZVNUQVORVCVPRDUGBUQVOVBUHUIBDVL
+      VBUJUKVKVMVGVEBDVBVGQUTDRVAVFEUTDURUMUNULTUOTSUP $.
 
     $( The initial value is a subset of the recursive definition generator
        evaluated at any ordinal.  This is a consequence of the way that
@@ -54503,15 +54499,15 @@ $)
          we can remove the initial value from ~ rdgisuc1 by using ~ rdg0ss .
          (Contributed by Jim Kingdon, 15-Jun-2019.) $)
       rdgisuc2 $p |- ( ph -> ( rec ( F , A ) ` suc B ) =
-          ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
+          ( U_ x e. B ( F ` ( rec ( F , A ) ` x ) )
             u. ( F ` ( rec ( F , A ) ` B ) ) ) ) $=
-        ( csuc cfv cun wss wceq cvv wcel con0 wfn syl2anc crdg cv wal
-        cres ciun rdgisuc1 rdg0ss rdgifnon funfvex funfni id fveq2
-        un12 sseq12d spcgv sstrd ssequn1 sylib uneq2d syl5eq eqtrd
-        sylc ) ADKZECUAZLCBDBUBZVDVCUDLELUEZDVDLZELZMZMZVIABCDEFGHIUF
-        AVJVFCVHMZMVICVFVHUMAVKVHVFACVHNVKVHOACVGVHACDEFGHIUGAVGPQZVE
-        VEELZNZBUCVGVHNZAVDRSZDRQVLAEPSCFQVPGHCEFUHTIVLRDVDDVDUIUJTJV
-        NVOBVGPVEVGOZVEVGVMVHVQUKVEVGEULUNUOVBUPCVHUQURUSUTVA $.
+        ( csuc cfv cun wss wceq cvv wcel con0 wfn syl2anc rdgisuc1 wal
+        crdg cv ciun un12 rdg0ss rdgifnon funfvex funfni id fveq2 sseq12d
+        spcgv sylc sstrd ssequn1 sylib uneq2d syl5eq eqtrd ) ADKECUCZLCBD
+        BUDZVBLELUEZDVBLZELZMZMZVGABCDEFGHIUAAVHVDCVFMZMVGCVDVFUFAVIVFVDA
+        CVFNVIVFOACVEVFACDEFGHIUGAVEPQZVCVCELZNZBUBVEVFNZAVBRSZDRQVJAEPSC
+        FQVNGHCEFUHTIVJRDVBDVBUIUJTJVLVMBVEPVCVEOZVCVEVKVFVOUKVCVEEULUMUN
+        UOUPCVFUQURUSUTVA $.
     $}
   $}
 
