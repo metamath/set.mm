@@ -970,6 +970,26 @@ in intutionistic logic.</TD>
 </TR>
 
 <TR>
+<TD>n0f</TD>
+<TD>~ n0rf </TD>
+</TR>
+
+<TR>
+<TD>n0</TD>
+<TD>~ n0r </TD>
+</TR>
+
+<TR>
+<TD>neq0</TD>
+<TD>~ neq0r </TD>
+</TR>
+
+<TR>
+<TD>reximdva0</TD>
+<TD>~ reximdva0m </TD>
+</TR>
+
+<TR>
 <TD>df-if and all theorems using <TT>if</TT></TD>
 <TD><I>none</I></TD>
 <TD>This could be made to work in constructive logic if the
@@ -1024,14 +1044,21 @@ the biconditional from ordsseleq</TD>
 </TR>
 
 <TR>
-<TD>ordtri3or , ordtri1 , ordtri2 , ordtri3 , ordtri4 , ontri1 ,
-ordtri2or , ordtri2or2 , ordtri2or3
+<TD>ordtri3or , ordtri2 , ordtri3 , ordtri4 ,
+ordtri2or , ordtri2or2 , ordtri2or3 , dford2
 </TD>
 <TD><I>none</I></TD>
 <TD>Ordinal trichotomy implies the law of the excluded middle as shown
 in ~ ordtriexmid . We don't have similar proofs for every variation of
 of trichotomy but most of them are presumably powerful enough to imply
 excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>ordtri1 , ontri1 , onssneli , onssnel2i</TD>
+<TD>~ ssnel </TD>
+<TD>~ ssnel is a trichotomy-like theorem which does hold, although
+it is an implication whereas ordtri1 is a biconditional</TD>
 </TR>
 
 <TR>
@@ -1047,6 +1074,18 @@ excluded middle.</TD>
 <TR>
 <TD>ordsssuc</TD>
 <TD>~ trsucss </TD>
+</TR>
+
+<TR>
+<TD>ordequn</TD>
+<TD><I>none</I></TD>
+<TD>If you know which ordinal is larger, you can achieve
+a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
+</TR>
+
+<TR>
+<TD>ordun</TD>
+<TD>~ onun2 </TD>
 </TR>
 
 <TR>
@@ -1150,12 +1189,6 @@ excluded middle.</TD>
 </TR>
 
 <TR>
-<TD>onnmin</TD>
-<TD><I>none yet</I></TD>
-<TD>May be able to replace trichotomy with irreflexibility. If B e. A and B e. |^| A, then |^| A C_ B so B e. B, violating ordirr.</TD>
-</TR>
-
-<TR>
 <TD>oneqmin</TD>
 <TD><I>none</I></TD>
 <TD>Falls as written because it implies onint, but it might be useful to keep the reverse direction for subsets that do have a minimum.</TD>
@@ -1181,12 +1214,9 @@ excluded middle.</TD>
 
 <TR>
 <TD>ordpwsuc</TD>
-<TD><I>none</I></TD>
-<TD>Conjectured to not be provable without excluded middle, but
-interesting. We might consider ` ( ~P A i^i On ) ` as an alternative form
-of successor which is equal to the current definition assuming excluded
-middle. We could show ` suc A C_ ( ~P A i^i On ) ` (a weakened form of
-ordpwsuc), and both are ordinals.</TD>
+<TD>~ ordpwsucss </TD>
+<TD>See the ~ ordpwsucss comment for discussion of the succcessor-like
+properites of ` ( ~P A i^i On ) ` .</TD>
 </TR>
 
 <TR>
@@ -1404,6 +1434,11 @@ ordpwsuc), and both are ordinals.</TD>
 <TD>brwitnlem</TD>
 <TD><I>none</I></TD>
 <TD>The set.mm proof is not intuitionistic</TD>
+</TR>
+
+<TR>
+<TD>suc11reg</TD>
+<TD>~ suc11g </TD>
 </TR>
 
 </TABLE>
