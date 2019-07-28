@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Jul-2019
+$( iset.mm - Version of 27-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54366,30 +54366,6 @@ $)
   $}
 
   ${
-    $d A g x y $.  $d B g x $.  $d F g x y $.  $d V y $.
-    $( Value of the recursive definition generator (obsolete).  This is
-       replaced by ~ rdgival which indexes the union over ` B ` rather than
-       ` dom ( rec ( F , A ) |`` B ) ` (Contributed by Jim Kingdon,
-       13-Jul-2019.)  (New usage is discouraged.) $)
-    rdgivalg $p |- ( ( F Fn _V /\ A e. V /\ B e. On ) -> ( rec ( F , A ) ` B ) =
-        ( A u. U_ x e. dom ( rec ( F , A ) |` B )
-          ( F ` ( ( rec ( F , A ) |` B ) ` x ) ) ) ) $=
-      ( vg vy cvv wcel con0 cfv cv cdm ciun cun wceq wfun wral adantl
-      wa wfn crdg cres df-irdg rdgruledefgg alrimiv tfri2d 3impa rdgfun
-      w3a cmpt resfunexg mpan 3ad2ant3 dmresexg fvexg sylancl ralrimivw
-      vex wi funfvex funfni ex ralimdv adantr mpd syl2anc 3adant2 unexg
-      iunexg 3ad2ant2 dmeq fveq1 fveq2d iuneq12d uneq2d fvmptg eqtrd
-      eqid ) DHUAZBEIZCJIZUJZCDBUBZKZWDCUCZFHBAFLZMZALZWGKZDKZNZOZUKZKZ
-      BAWFMZWIWFKZDKZNZOZVTWAWBWEWOPVTWATZGCWDWNAFDBUDXAWNQGLWNKHITGABG
-      FDEUEUFUGUHWCWFHIZWTHIZWOWTPWBVTXBWAWDQWBXBBDUIWDCJULUMZUNWCWSHIZ
-      XCVTWBXEWAVTWBTZWPHIZWRHIZAWPRZXEWBXGVTWDCJUOSXFWQHIZAWPRZXIWBXKV
-      TWBXJAWPWBXBWIHIXJXDAUSWIWFHHUPUQURSVTXKXIUTWBVTXJXHAWPVTXJXHXHHW
-      QDWQDVAVBVCVDVEVFAWPWRHHVJVGVHWAVTXEXCUTWBWAXEXCBWSEHVIVCVKVFFWFW
-      MWTHHWNWGWFPZWLWSBXLAWHWPWKWRWGWFVLXLWJWQDWIWGWFVMVNVOVPWNVSVQVGV
-      R $.
-  $}
-
-  ${
     $d A f g x $.  $d F f g x $.  $d V f $.
     $( The recursive definition generator is a function on ordinal numbers.
        The ` F Fn _V ` condition states that the characteristic function is
@@ -54406,9 +54382,10 @@ $)
 
   ${
     $d A g x y $.  $d B g x $.  $d F g x y $.  $d V g x y $.
-    $( Value of the recursive definition generator.  (Contributed by Jim
-       Kingdon, 13-Jul-2019.) $)
-    rdgival $p |- ( ( F Fn _V /\ A e. V /\ B e. On ) -> ( rec ( F , A ) ` B ) =
+    $( Value of the recursive definition generator.  Lemma for ~ rdgival which
+       simplifies the value further.  (Contributed by Jim Kingdon,
+       13-Jul-2019.)  (New usage is discouraged.) $)
+    rdgivallem $p |- ( ( F Fn _V /\ A e. V /\ B e. On ) -> ( rec ( F , A ) ` B ) =
         ( A u. U_ x e. B ( F ` ( ( rec ( F , A ) |` B ) ` x ) ) ) ) $=
       ( vg vy cvv wfn wcel con0 cfv cv cdm ciun cun wceq wa wfun wss
       w3a crdg cres cmpt df-irdg rdgruledefgg tfri2d 3impa eqidd dmeq
@@ -54425,10 +54402,18 @@ $)
       HJZACVRZXRWJWLVJXTXFHJZACVRZYBWLYDWJWLYCACWLXPWSHJYCXQAVKWSWPHH
       VLVMVNVCWJYDYBVOWLWJYCYAACWJYCYAYAHXFDXFDVPVQVSVTWAWBACXGKHWCWD
       WHWKWJXRXSVOWLWKXRXSBXHEHWEVSWFWBWGWI $.
+
+    $( Value of the recursive definition generator.  (Contributed by Jim
+       Kingdon, 26-Jul-2019.) $)
+    rdgival $p |- ( ( F Fn _V /\ A e. V /\ B e. On ) -> ( rec ( F , A ) ` B ) =
+        ( A u. U_ x e. B ( F ` ( rec ( F , A ) ` x ) ) ) ) $=
+      ( cvv wfn wcel con0 w3a crdg cfv cres ciun cun rdgivallem fvres
+      cv fveq2d iuneq2i uneq2i syl6eq ) DFGBEHCIHJCDBKZLBACARZUCCMLZD
+      LZNZOBACUDUCLZDLZNZOABCDEPUGUJBACUFUIUDCHUEUHDUDCUCQSTUAUB $.
   $}
 
   ${
-    $d A x y $.  $d B x y $.  $d F x y $.  $d I x y $.  $d V x $.  $d ph x $.
+    $d A x y $.  $d B x y $.  $d F x y $.  $d I x y $.  $d V x y $.  $d ph x $.
     rdgss.1 $e |- ( ph -> F Fn _V ) $.
     rdgss.2 $e |- ( ph -> I e. V ) $.
     rdgss.3 $e |- ( ph -> A e. On ) $.
@@ -54437,24 +54422,16 @@ $)
     $( Subset and recursive definition generator.  (Contributed by Jim Kingdon,
        15-Jul-2019.) $)
     rdgss $p |- ( ph -> ( rec ( F , I ) ` A ) C_ ( rec ( F , I ) ` B ) ) $=
-      ( vx vy cdm cfv wss wcel wceq syl con0 crdg cres ciun wrex wral
-      cv cun ssel ssid fveq2 fveq2d sseq2d rspcev mpan2 syl6 ralrimiv
-      onss wfn cvv rdgifnon syl2anc sseqtr4d ssdmres sylib raleqbidv
-      fndm rexeqdv fvres adantr adantl sseq12d rexbidva syl6bb mpbird
-      wa ralbiia iunss2 unss2 3syl rdgivalg syl3anc 3sstr4d ) AELDEUA
-      ZBUBZNZLUFZWDOZDOZUCZUGZEMWCCUBZNZMUFZWKOZDOZUCZUGZBWCOZCWCOZAW
-      HWOPZMWLUDZLWEUEZWIWPPWJWQPAXBWFWCOZDOZWMWCOZDOZPZMCUDZLBUEZABC
-      PZXIKXJXHLBXJWFBQZWFCQZXHBCWFUHXLXDXDPZXHXDUIXGXMMWFCWMWFRZXFXD
-      XDXNXEXCDWMWFWCUJUKULUMUNUOUPSAXBWTMCUDZLBUEXIAXAXOLWEBABWCNZPW
-      EBRABTXPABTQZBTPIBUQSAWCTURZXPTRADUSURZEFQZXRGHEDFUTVATWCVFSZVB
-      BWCVCVDAWTMWLCACXPPWLCRACTXPACTQZCTPJCUQSYAVBCWCVCVDVGVEXOXHLBX
-      KWTXGMCXKWMCQZVOZWHXDWOXFYDWGXCDXKWGXCRYCWFBWCVHVIUKYDWNXEDYCWN
-      XERXKWMCWCVHVJUKVKVLVPVMVNLMWEWLWHWOVQWIWPEVRVSAXSXTXQWRWJRGHIL
-      EBDFVTWAAXSXTYBWSWQRGHJMECDFVTWAWB $.
+      ( vx vy cv cfv ciun cun wss wcel wceq crdg wrex wral fveq2d sseq2d rspcev
+      ssel ssid fveq2 mpan2 syl6 ralrimiv syl iunss2 unss2 3syl cvv wfn rdgival
+      con0 syl3anc 3sstr4d ) AELBLNZDEUAZOZDOZPZQZEMCMNZVDOZDOZPZQZBVDOZCVDOZAV
+      FVKRZMCUBZLBUCZVGVLRVHVMRABCRZVRKVSVQLBVSVCBSVCCSZVQBCVCUGVTVFVFRZVQVFUHV
+      PWAMVCCVIVCTZVKVFVFWBVJVEDVIVCVDUIUDUEUFUJUKULUMLMBCVFVKUNVGVLEUOUPADUQUR
+      ZEFSZBUTSVNVHTGHILEBDFUSVAAWCWDCUTSVOVMTGHJMECDFUSVAVB $.
   $}
 
   ${
-    $d x y z f g u v w F $.  $d x y z f g u v w A $.  $d B g x $.
+    $d x y z f g u v w F $.  $d x y z f g u v w A $.  $d B g x $.  $d V x $.
     rdgisuc1.1 $e |- ( ph -> F Fn _V ) $.
     rdgisuc1.2 $e |- ( ph -> A e. V ) $.
     rdgisuc1.3 $e |- ( ph -> B e. On ) $.
@@ -54464,34 +54441,30 @@ $)
        encompasses both the expected successor term
        ` ( F `` ( rec ( F , A ) `` B ) ) ` but also terms that correspond to
        the initial value ` A ` and to limit ordinals
-       ` U_ x e. B ( F `` ( ( rec ( F , A ) |`` suc B ) `` x ) ) ` .
+       ` U_ x e. B ( F `` ( rec ( F , A ) `` x ) ) ` .
 
-       If we added a condition that the characteristic function is increasing
-       (for example ` A. x x e. ( F `` x ) ` ) we could likely show
+       If we add conditions on the characteristic function, we can show tighter
+       results such as ~ rdgisuc2 .  The eventual goal is
        ` ( rec ( F , A ) `` suc B ) = ( F `` ( rec ( F , A ) `` B ) ) ` .
        (Contributed by Jim Kingdon, 9-Jun-2019.) $)
     rdgisuc1 $p |- ( ph -> ( rec ( F , A ) ` suc B ) =
-        ( A u. ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
+        ( A u. ( U_ x e. B ( F ` ( rec ( F , A ) ` x ) )
           u. ( F ` ( rec ( F , A ) ` B ) ) ) ) ) $=
-      ( cfv cdm ciun cun wfn wcel con0 wceq syl wss uneq2d cv syl3anc
-      csuc crdg cres cvv suceloni rdgivalg rdgifnon syl2anc sseqtr4d
-      onss ssdmres sylib iuneq1d csn df-suc iuneq1 ax-mp iunxun eqtri
-      fndm fveq2 fveq2d iunxsng sucidg fvres eqtrd syl5eq 3eqtrd ) AD
-      UCZECUDZJZCBVLVKUEZKZBUAZVNJZEJZLZMZCBVKVRLZMZCBDVRLZDVLJZEJZMZ
-      MZAEUFNZCFOZVKPOZVMVTQGHADPOZWJIDUGRZBCVKEFUHUBAVSWACABVOVKVRAV
-      KVLKZSVOVKQAVKPWMAWJVKPSWLVKULRAVLPNZWMPQAWHWIWNGHCEFUIUJPVLVBR
-      UKVKVLUMUNUOTAWKWBWGQIWKWAWFCWKWAWCBDUPZVRLZMZWFWABDWOMZVRLZWQV
-      KWRQWAWSQDUQBVKWRVRURUSBDWOVRUTVAWKWPWEWCWKWPDVNJZEJZWEBDVRXAPV
-      PDQVQWTEVPDVNVCVDVEWKWTWDEWKDVKOWTWDQDPVFDVKVLVGRVDVHTVITRVJ $.
+      ( csuc crdg cfv cv ciun cun wcel con0 wceq syl uneq2d cvv rdgival
+      wfn suceloni syl3anc csn df-suc iuneq1 ax-mp iunxun eqtri iunxsng
+      fveq2 fveq2d syl5eq eqtrd ) ADJZECKZLZCBUQBMZURLZELZNZOZCBDVBNZDU
+      RLZELZOZOZAEUAUCCFPUQQPZUSVDRGHADQPZVJIDUDSBCUQEFUBUEAVKVDVIRIVKV
+      CVHCVKVCVEBDUFZVBNZOZVHVCBDVLOZVBNZVNUQVORVCVPRDUGBUQVOVBUHUIBDVL
+      VBUJUKVKVMVGVEBDVBVGQUTDRVAVFEUTDURUMUNULTUOTSUP $.
 
     $( The initial value is a subset of the recursive definition generator
        evaluated at any ordinal.  This is a consequence of the way that
        ~ df-irdg handles the initial value.  (Contributed by Jim Kingdon,
        11-Jun-2019.) $)
     rdg0ss $p |- ( ph -> A C_ ( rec ( F , A ) ` B ) ) $=
-      ( vx crdg cres cdm cv cfv ciun cun ssun1 cvv wfn wcel con0 wceq
-      rdgivalg syl3anc syl5sseqr ) ABIDBJZCKZLIMUGNDNOZPZBCUFNZBUHQAD
-      RSBETCUATUJUIUBFGHIBCDEUCUDUE $.
+      ( vx cv crdg cfv ciun cun ssun1 cvv wfn wcel con0 wceq rdgival
+      syl3anc syl5sseqr ) ABICIJDBKZLDLMZNZBCUDLZBUEOADPQBERCSRUGUFTF
+      GHIBCDEUAUBUC $.
 
     ${
       $d A x $.  $d B x $.  $d F x $.
@@ -54502,15 +54475,15 @@ $)
          we can remove the initial value from ~ rdgisuc1 by using ~ rdg0ss .
          (Contributed by Jim Kingdon, 15-Jun-2019.) $)
       rdgisuc2 $p |- ( ph -> ( rec ( F , A ) ` suc B ) =
-          ( U_ x e. B ( F ` ( ( rec ( F , A ) |` suc B ) ` x ) )
+          ( U_ x e. B ( F ` ( rec ( F , A ) ` x ) )
             u. ( F ` ( rec ( F , A ) ` B ) ) ) ) $=
-        ( csuc cfv cun wss wceq cvv wcel con0 wfn syl2anc crdg cv wal
-        cres ciun rdgisuc1 rdg0ss rdgifnon funfvex funfni id fveq2
-        un12 sseq12d spcgv sstrd ssequn1 sylib uneq2d syl5eq eqtrd
-        sylc ) ADKZECUAZLCBDBUBZVDVCUDLELUEZDVDLZELZMZMZVIABCDEFGHIUF
-        AVJVFCVHMZMVICVFVHUMAVKVHVFACVHNVKVHOACVGVHACDEFGHIUGAVGPQZVE
-        VEELZNZBUCVGVHNZAVDRSZDRQVLAEPSCFQVPGHCEFUHTIVLRDVDDVDUIUJTJV
-        NVOBVGPVEVGOZVEVGVMVHVQUKVEVGEULUNUOVBUPCVHUQURUSUTVA $.
+        ( csuc cfv cun wss wceq cvv wcel con0 wfn syl2anc rdgisuc1 wal
+        crdg cv ciun un12 rdg0ss rdgifnon funfvex funfni id fveq2 sseq12d
+        spcgv sylc sstrd ssequn1 sylib uneq2d syl5eq eqtrd ) ADKECUCZLCBD
+        BUDZVBLELUEZDVBLZELZMZMZVGABCDEFGHIUAAVHVDCVFMZMVGCVDVFUFAVIVFVDA
+        CVFNVIVFOACVEVFACDEFGHIUGAVEPQZVCVCELZNZBUBVEVFNZAVBRSZDRQVJAEPSC
+        FQVNGHCEFUHTIVJRDVBDVBUIUJTJVLVMBVEPVCVEOZVCVEVKVFVOUKVCVEEULUMUN
+        UOUPCVFUQURUSUTVA $.
     $}
   $}
 
@@ -54526,7 +54499,7 @@ $)
       ( vz vw con0 wcel cfv cv wi wceq fveq2 eleq1d wral wa crdg cres
       imbi2d r19.21v ciun wb fvres adantl cbvralv sylib rspcv syl5com
       cun adantr sylbird ralimdva cvv vex iunon mpan onun2 ee12an wfn
-      syl6 jca rdgival 3expa sylan sylibrd expcom syl5bi tfis3 impcom
+      syl6 jca rdgivallem 3expa sylan sylibrd expcom syl5bi tfis3 impcom
       a2d ) DKLADECUAZMZKLZAINZVOMZKLZOZABNZVOMZKLZOZAVQOIBDVRWBPZVTW
       DAWFVSWCKVRWBVOQRUCVRDPZVTVQAWGVSVPKVRDVOQRUCWEBVRSAWDBVRSZOVRK
       LZWAAWDBVRUDWIAWHVTAWIWHVTOAWITZWHCBVRWBVOVRUBMZEMZUEZUMZKLZVTA
@@ -54731,6 +54704,11 @@ $)
   0lt1o $p |- (/) e. 1o $=
     ( c0 c1o wcel wceq eqid el1o mpbir ) ABCAADAEAFG $.
 
+  $( The characteristic function for ordinal addition is defined everywhere.
+     (Contributed by Jim Kingdon, 27-Jul-2019.) $)
+  oafnex $p |- ( x e. _V |-> suc x ) Fn _V $=
+    ( cvv cv csuc cmpt vex sucex eqid fnmpti ) ABACZDZABKEZJAFGLHI $.
+
   ${
     $d x z $.
     sucinc.1 $e |- F = ( z e. _V |-> suc z ) $.
@@ -54756,17 +54734,15 @@ $)
     $( Functionality and domain of ordinal addition.  (Contributed by NM,
        26-Aug-1995.)  (Proof shortened by Mario Carneiro, 3-Jul-2019.) $)
     fnoa $p |- +o Fn ( On X. On ) $=
-      ( vy vz vx cv cvv csuc cmpt crdg cfv wcel con0 wral coa cxp wfn vex sucex
-      eqid ax-mp rgenw fnmpti rdgexg df-oadd fnmpt2 ) ADZBEBDZFZGZCDZHIZEJZAKLZ
-      CKLMKKNOULCKUKAKUEEJUKAPUIUEUHECPBEUGUHUFBPQUHRUAUBSTTCAKKUJMECABUCUDS $.
+      ( vx vy vz con0 cv cvv csuc cmpt crdg cfv df-oadd wcel oafnex rdgexg ax-mp
+      coa vex fnmpt2i ) ABDDBEZCFCEGHZAEZIJZPABCKSFLUBFLBQUASTFAQCMNOR $.
 
     $( Ordinal addition is a set.  (Contributed by Mario Carneiro,
        3-Jul-2019.) $)
     oaexg $p |- ( ( A e. V /\ B e. W ) -> ( A +o B ) e. _V ) $=
-      ( vy vz vx cv cvv csuc cmpt crdg cfv wcel wal coa co vex sucex con0 ax-mp
-      eqid fnmpti rdgexg gen2 df-oadd mpt2fvex mp3an1 ) EHZFIFHZJZKZGHZLMZINZEO
-      GOACNBDNABPQINUOGEUIINUOERUMUIULIGRFIUKULUJFRSULUBUCUDUAUEGETTUNABPICDGEF
-      UFUGUH $.
+      ( vy vz vx cv cvv csuc cmpt crdg cfv wcel wal coa co vex oafnex con0 ax-mp
+      rdgexg gen2 df-oadd mpt2fvex mp3an1 ) EHZFIFHJKZGHZLMZINZEOGOACNBDNABPQIN
+      UKGEUGINUKERUIUGUHIGRFSUBUAUCGETTUJABPICDGEFUDUEUF $.
 
     $( Functionality and domain of ordinal multiplication.  (Contributed by NM,
        26-Aug-1995.)  (Revised by Mario Carneiro, 3-Jul-2019.) $)
@@ -54807,10 +54783,9 @@ $)
        by Mario Carneiro, 8-Sep-2013.) $)
     oav $p |- ( ( A e. On /\ B e. On ) ->
              ( A +o B ) = ( rec ( ( x e. _V |-> suc x ) , A ) ` B ) ) $=
-      ( vy vz con0 wcel cvv cv csuc cmpt crdg cfv coa wceq sucex eqid
-      co vex fnmpti rdgexgg rdgeq2 fveq1d df-oadd ovmpt2g mpd3an3
-      fveq2 ) BFGCFGCAHAIZJZKZBLZMZHGBCNRULOBCUJFFAHUIUJUHASPUJQTUADE
-      BCFFEIZUJDIZLZMULNUMUKMHUNBOUMUOUKUNBUJUBUCUMCUKUGDEAUDUEUF $.
+      ( vy vz con0 wcel cvv cv csuc cmpt crdg cfv coa wceq oafnex rdgexgg rdgeq2
+      co fveq1d fveq2 df-oadd ovmpt2g mpd3an3 ) BFGCFGCAHAIJKZBLZMZHGBCNSUGOBCU
+      EFFAPQDEBCFFEIZUEDIZLZMUGNUHUFMHUIBOUHUJUFUIBUERTUHCUFUADEAUBUCUD $.
 
     $( Value of ordinal multiplication.  (Contributed by NM, 17-Sep-1995.)
        (Revised by Mario Carneiro, 23-Aug-2014.) $)
@@ -54878,12 +54853,34 @@ $)
        p. 57.  (Contributed by NM, 5-May-1995.)  (Constructive proof by Jim
        Kingdon, 26-Jul-2019.) $)
     oacl $p |- ( ( A e. On /\ B e. On ) -> ( A +o B ) e. On ) $=
-      ( vz vw con0 wcel wa coa co cvv cv csuc cmpt crdg cfv oav sucex
-      wfn vex a1i eqid fnmpti id wral suceq fvmpt ax-mp eleq1i ralbii
-      wceq suceloni mprgbir rdgon eqeltrd ) AEFZBEFGABHIBCJCKZLZMZANO
-      ECABPUODABURURJRUOCJUQURUPCSQURUAZUBTUOUCDKZUROZEFZDEUDZUOVCUTL
-      ZEFZDEVBVEDEVAVDEUTJFVAVDUJDSZCUTUQVDJURUPUTUEUSUTVFQUFUGUHUIUT
-      UKULTUMUN $.
+      ( vz vw con0 wcel wa coa co cvv cv csuc cmpt crdg cfv oav wfn oafnex a1i
+      id wral wceq vex suceq eqid sucex fvmpt ax-mp eleq1i ralbii mprgbir rdgon
+      suceloni eqeltrd ) AEFZBEFGABHIBCJCKZLZMZANOECABPUODABURURJQUOCRSUOTDKZUR
+      OZEFZDEUAZUOVBUSLZEFZDEVAVDDEUTVCEUSJFUTVCUBDUCZCUSUQVCJURUPUSUDURUEUSVEU
+      FUGUHUIUJUSUMUKSULUN $.
+
+    $( Closure law for ordinal multiplication.  Proposition 8.16 of
+       [TakeutiZaring] p. 57.  (Contributed by NM, 3-Aug-2004.)  (Constructive
+       proof by Jim Kingdon, 26-Jul-2019.) $)
+    omcl $p |- ( ( A e. On /\ B e. On ) -> ( A .o B ) e. On ) $=
+      ( vx vy con0 wcel wa comu co cvv coa cmpt crdg cfv vex mpan syl
+      cv c0 eqeltrd omv wral wfn oaexg ralrimivw eqid fnmpt 0elon a1i
+      wceq oacl oveq1 fvmptg ancoms ralrimiva rdgon ) AEFZBEFGABHIBCJ
+      CRZAKIZLZSMNECABUAUQDSBUTUQUSJFZCJUBUTJUCUQVACJURJFUQVACOURAJEU
+      DPUECJUSUTJUTUFZUGQSEFUQUHUIUQDRZUTNZEFZDEVCEFZUQVEVFUQGZVDVCAK
+      IZEVGVHEFZVDVHUJZVCAUKZVCJFVIVJDOCVCUSVHJEUTURVCAKULVBUMPQVKTUN
+      UOUPT $.
+
+    $( Closure law for ordinal exponentiation.  (Contributed by Jim Kingdon,
+       26-Jul-2019.) $)
+    oeicl $p |- ( ( A e. On /\ B e. On ) -> ( A ^oi B ) e. On ) $=
+      ( vx vy con0 wcel wa coei co cvv cv comu cmpt c1o crdg cfv mpan
+      vex syl eqeltrd oeiv wral wfn omexg ralrimivw eqid 1on a1i wceq
+      fnmpt omcl oveq1 fvmptg ancoms ralrimiva rdgon ) AEFZBEFGABHIBC
+      JCKZALIZMZNOPECABUAUQDNBUTUQUSJFZCJUBUTJUCUQVACJURJFUQVACRURAJE
+      UDQUECJUSUTJUTUFZUJSNEFUQUGUHUQDKZUTPZEFZDEVCEFZUQVEVFUQGZVDVCA
+      LIZEVGVHEFZVDVHUIZVCAUKZVCJFVIVJDRCVCUSVHJEUTURVCALULVBUMQSVKTU
+      NUOUPT $.
   $}
 
 $(
