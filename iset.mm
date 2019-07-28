@@ -54883,6 +54883,20 @@ $)
       NUOUPT $.
   $}
 
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( Weak ordering property of ordinal addition.  (Contributed by Jim
+       Kingdon, 27-Jul-2019.) $)
+    oawordi $p |- ( ( A e. On /\ B e. On /\ C e. On ) ->
+                 ( A C_ B -> ( C +o A ) C_ ( C +o B ) ) ) $=
+      ( vx con0 wcel w3a wss coa co wa cvv csuc cmpt cfv wceq jca oav
+      cv syl wfn oafnex a1i simpl3 simpl1 simpl2 ax-ia2 rdgss 3sstr4d
+      crdg ex ) AEFZBEFZCEFZGZABHZCAIJZCBIJZHUOUPKZADLDSMNZCUJZOZBVAO
+      ZUQURUSABUTCEUTLUAUSDUBUCULUMUNUPUDZULUMUNUPUEZULUMUNUPUFZUOUPU
+      GUHUSUNULKUQVBPUSUNULVDVEQDCARTUSUNUMKURVCPUSUNUMVDVFQDCBRTUIUK
+      $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
