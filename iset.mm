@@ -36677,6 +36677,25 @@ $)
       VKUNUOUPVJVFVKAAEUQVKAHVHJVKAURHSVBAAEHVHEMHIAUSUTTVCVATAVFVDVE $.
   $}
 
+  ${
+    $d ph x z $.  $d x y $.
+    onsucsssucexmid.1 $e |- A. x e. On A. y e. On
+      ( x C_ y -> suc x C_ suc y ) $.
+    $( The converse of ~ onsucsssucr implies excluded middle.  (Contributed by
+       Mario Carneiro and Jim Kingdon, 29-Jul-2019.) $)
+    onsucsssucexmid $p |- ( ph \/ -. ph ) $=
+      ( vz wo c0 wcel wceq csuc wss con0 wi cv suceq imbi12d onsuci wa ax-mp wb
+      wn crab ssrab2 ordtriexmidlem sseq1 sseq1d suc0 0elon eqeltrri p0ex eleq1
+      anbi2d sseq2 sseq2d rspec2 vtocl mpan2 vtoclga word onordi ordelsuc mp2an
+      csn mpbir elsucg elsni ordtriexmidlem2 syl 0ex biidd rabsnt orim12i orcom
+      mpbi ) AUAZAFZAVOFAEGVCZUBZVQHZVRVQIZFZVPVRVQJZHZWAWCVRJZWBKZVRVQKZWEAEVQ
+      UCVRLHZWFWEMZAEUDZBNZVQKZWJJZWBKZMZWHBVRLWJVRIZWKWFWMWEWJVRVQUEWOWLWDWBWJ
+      VROUFPWJLHZVQLHZWNGJVQLUGGUHQUIZWPCNZLHZRZWJWSKZWLWSJZKZMZMWPWQRZWNMCVQUJ
+      WSVQIZXAXFXEWNXGWTWQWPWSVQLUKULXGXBWKXDWMWSVQWJUMXGXCWBWLWSVQOUNPPXEBCLLD
+      UOUPUQURSSWGWBUSWCWETWIWBVQWRQUTVRWBLVAVBVDWGWCWATWIVRVQLVESVNVSVOVTAVSVR
+      GIVOVRGVFAEVGVHAAEVQGVIENGIAVJVKVLSVOAVMVN $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
           IZF Set Theory - add the Axiom of Set Induction
