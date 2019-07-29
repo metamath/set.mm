@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Jul-2019
+$( iset.mm - Version of 29-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36580,6 +36580,14 @@ $)
     word eloni com12 ) ACZBCZDZBEDZABDZAFDZUNUOUPGUNULFDZUQULUMHAIZJUQUOUNUPUQU
     OKULBDZULBLZMZULBNZUNUPUOVBVCGUQUOUTVCVABULOVAVCGUOULBPQRSUQUNVBTZUOUQURVDU
     SULBFUAUBUCUOUQBUIUPVCTBUJABFUDUEUFUGUHUK $.
+
+  $( The subclass relationship between two ordinals is inherited by their
+     predecessors.  (Contributed by Mario Carneiro and Jim Kingdon,
+     29-Jul-2019.) $)
+  onsucsssucr $p |- ( ( A e. On /\ Ord B ) -> ( suc A C_ suc B -> A C_ B ) ) $=
+    ( con0 wcel word wa csuc wss wb ordsucim ordelsuc sylan2 wi ordtr
+    wtr trsucss syl adantl sylbird ) ACDZBEZFAGBGZHZAUBDZABHZUATUBEUD
+    UCIBJAUBCKLUAUDUEMZTUABOUFBNBAPQRS $.
 
   ${
     $d x y A $.
