@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Jul-2019
+$( iset.mm - Version of 29-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36581,6 +36581,14 @@ $)
     OKULBDZULBLZMZULBNZUNUPUOVBVCGUQUOUTVCVABULOVAVCGUOULBPQRSUQUNVBTZUOUQURVDU
     SULBFUAUBUCUOUQBUIUPVCTBUJABFUDUEUFUGUHUK $.
 
+  $( The subclass relationship between two ordinals is inherited by their
+     predecessors.  (Contributed by Mario Carneiro and Jim Kingdon,
+     29-Jul-2019.) $)
+  onsucsssucr $p |- ( ( A e. On /\ Ord B ) -> ( suc A C_ suc B -> A C_ B ) ) $=
+    ( con0 wcel word wa csuc wss wb ordsucim ordelsuc sylan2 wi ordtr
+    wtr trsucss syl adantl sylbird ) ACDZBEZFAGBGZHZAUBDZABHZUATUBEUD
+    UCIBJAUBCKLUAUDUEMZTUABOUFBNBAPQRS $.
+
   ${
     $d x y A $.
     $( The class of all ordinal numbers is its own union.  Exercise 11 of
@@ -36640,21 +36648,52 @@ $)
   $}
 
   ${
+    $d ph x y z $.
+    $( Lemma for decidability and ordinals.  The set ` { x e. { (/) } | ph } `
+       is a way of connecting statements about ordinals (such as trichotomy in
+       ~ ordtriexmid or weak linearity in ~ ordsoexmid ) with a proposition
+       ` ph ` .  Our lemma helps connect that set to excluded middle.
+       (Contributed by Jim Kingdon, 28-Jan-2019.) $)
+    ordtriexmidlem2 $p |- ( { x e. { (/) } | ph } = (/) -> -. ph ) $=
+      ( c0 csn crab wceq wcel noel eleq2 mtbiri wb 0ex snid cv elrab3
+      biidd ax-mp sylnib ) ABCDZEZCFZCTGZAUAUBCCGCHTCCIJCSGUBAKCLMAAB
+      CSBNCFAPOQR $.
+  $}
+
+  ${
     $d x y z w s $.  $d z w s ph $.  $d x ph $.
     ordtriexmid.1 $e |- A. x e. On A. y e. On ( x e. y \/ x = y \/ y e. x ) $.
     $( Ordinal trichotomy implies the law of the excluded middle (that is,
        decidability of an arbitrary proposition).  (Contributed by Mario
        Carneiro and Jim Kingdon, 14-Nov-2018.) $)
     ordtriexmid $p |- ( ph \/ -. ph ) $=
-      ( vz wo c0 wceq wcel noel w3o con0 cv eleq1 eleq2 3orbi123d wa 0ex ax-mp
-      wi wn csn crab ordtriexmidlem eqeq1 0elon anbi2d eqeq2 rspec2 vtocl mpan2
-      imbi12d vtoclga 3orass mpbi mtp-or mtbiri snid biidd elrab3 sylnib biimpi
-      wb orim12i orcom mpbir ) AAUAZFVGAFZAEGUBZUCZGHZGVJIZFZVHVJGIZVMVJJVNVKVL
-      KZVNVMFVJLIVOAEUDBMZGIZVPGHZGVPIZKZVOBVJLVPVJHVQVNVRVKVSVLVPVJGNVPVJGUEVP
-      VJGOPVPLIZGLIZVTUFWACMZLIZQZVPWCIZVPWCHZWCVPIZKZTWAWBQZVTTCGRWCGHZWEWJWIV
-      TWKWDWBWAWCGLNUGWKWFVQWGVRWHVSWCGVPOWCGVPUHWCGVPNPULWIBCLLDUIUJUKUMSVNVKV
-      LUNUOUPVKVGVLAVKVLAVKVLGGIGJVJGGOUQGVIIVLAVCGRURAAEGVIEMGHAUSUTSZVAVLAWLV
-      BVDSAVGVEVF $.
+      ( vz wn wo c0 wceq wcel w3o con0 cv eleq1 eleq2 3orbi123d wa wi 0ex ax-mp
+      csn crab noel ordtriexmidlem eqeq1 0elon anbi2d eqeq2 imbi12d vtocl mpan2
+      rspec2 vtoclga 3orass mpbi mtp-or ordtriexmidlem2 wb biidd elrab3 orim12i
+      snid biimpi orcom mpbir ) AAFZGVFAGZAEHUAZUBZHIZHVIJZGZVGVIHJZVLVIUCVMVJV
+      KKZVMVLGVILJVNAEUDBMZHJZVOHIZHVOJZKZVNBVILVOVIIVPVMVQVJVRVKVOVIHNVOVIHUEV
+      OVIHOPVOLJZHLJZVSUFVTCMZLJZQZVOWBJZVOWBIZWBVOJZKZRVTWAQZVSRCHSWBHIZWDWIWH
+      VSWJWCWAVTWBHLNUGWJWEVPWFVQWGVRWBHVOOWBHVOUHWBHVONPUIWHBCLLDULUJUKUMTVMVJ
+      VKUNUOUPVJVFVKAAEUQVKAHVHJVKAURHSVBAAEHVHEMHIAUSUTTVCVATAVFVDVE $.
+  $}
+
+  ${
+    $d ph x z $.  $d x y $.
+    onsucsssucexmid.1 $e |- A. x e. On A. y e. On
+      ( x C_ y -> suc x C_ suc y ) $.
+    $( The converse of ~ onsucsssucr implies excluded middle.  (Contributed by
+       Mario Carneiro and Jim Kingdon, 29-Jul-2019.) $)
+    onsucsssucexmid $p |- ( ph \/ -. ph ) $=
+      ( vz wo c0 wcel wceq csuc wss con0 wi cv suceq imbi12d onsuci wa ax-mp wb
+      wn crab ssrab2 ordtriexmidlem sseq1 sseq1d suc0 0elon eqeltrri p0ex eleq1
+      anbi2d sseq2 sseq2d rspec2 vtocl mpan2 vtoclga word onordi ordelsuc mp2an
+      csn mpbir elsucg elsni ordtriexmidlem2 syl 0ex biidd rabsnt orim12i orcom
+      mpbi ) AUAZAFZAVOFAEGVCZUBZVQHZVRVQIZFZVPVRVQJZHZWAWCVRJZWBKZVRVQKZWEAEVQ
+      UCVRLHZWFWEMZAEUDZBNZVQKZWJJZWBKZMZWHBVRLWJVRIZWKWFWMWEWJVRVQUEWOWLWDWBWJ
+      VROUFPWJLHZVQLHZWNGJVQLUGGUHQUIZWPCNZLHZRZWJWSKZWLWSJZKZMZMWPWQRZWNMCVQUJ
+      WSVQIZXAXFXEWNXGWTWQWPWSVQLUKULXGXBWKXDWMWSVQWJUMXGXCWBWLWSVQOUNPPXEBCLLD
+      UOUPUQURSSWGWBUSWCWETWIWBVQWRQUTVRWBLVAVBVDWGWCWATWIVRVQLVESVNVSVOVTAVSVR
+      GIVOVRGVFAEVGVHAAEVQGVIENGIAVJVKVLSVOAVMVN $.
   $}
 
 $(
@@ -36899,20 +36938,19 @@ $)
       ( vw vx vy vz wo c0 wcel con0 wi cv w3a wceq eleq1 imbi12d eleq2 cep wral
       wbr wn csn crab csuc ordtriexmidlem elexi sucid onsuci suc0 0elon 3anbi1d
       eqeltrri orbi1d 3anbi2d orbi2d p0ex 3anbi3d orbi12d imbi2d wpo wor df-iso
-      mpbi simpri epel orbi12i imbi12i 2ralbii ralbii rspec3 vtocl mp3an rabeq0
-      wa ax-mp elsnc wex wb 0ex snm r19.3rmv 3bitr4i biimpi elirr elrabi elsuci
-      mto ord mpi biidd rabsnt eqcoms syl orim12i orcom ) AUAZAGZAWPGACHUBZUCZW
-      RIZWRWSUDZIZGZWQWSXAIZXCWSWSJACUEZUFZUGWSJIZXAJIZWRJIZXDXCKZXEWSXEUHZHUDW
-      RJUIHUJUHULDLZJIZXHXIMZXLXAIZXLWRIZXBGZKZKZXGXHXIMZXJKDWSXFXLWSNZXNXTXRXJ
-      YAXMXGXHXIXLWSJOUKYAXOXDXQXCXLWSXAOYAXPWTXBXLWSWROUMPPXMELZJIZXIMZXLYBIZX
-      PWRYBIZGZKZKZXSEXAXAJXKUFYBXANZYDXNYHXRYJYCXHXMXIYBXAJOUNYJYEXOYGXQYBXAXL
-      QYJYFXBXPYBXAWRQUOPPXMYCFLZJIZMZYEXLYKIZYKYBIZGZKZKYIFWRUPYKWRNZYMYDYQYHY
-      RYLXIXMYCYKWRJOUQYRYPYGYEYRYNXPYOYFYKWRXLQYKWRYBOURUSPYQDEFJJJXLYBRTZXLYK
-      RTZYKYBRTZGZKZFJSEJSZDJSZYQFJSEJSZDJSJRUTZUUEJRVAUUGUUEVNBDEFJRVBVCVDUUDU
-      UFDJUUCYQEFJJYSYEUUBYPDEVEYTYNUUAYODFVEFEVEVFVGVHVIVCVJVKVKVKVLVOWTWPXBAW
-      TWPWSHNWPCWRSZWTWPACWRVMWSHXFVPCLZWRICVQWPUUHVRCHVSVTWPCCWRWAVOWBWCXBWRWS
-      NZAXBWRWSIZUAUUJUUKWRWRIWRWDACWRWRWEWGXBUUKUUJWRWSWFWHWIAWSWRAACWRHVSUUIH
-      NAWJWKWLWMWNVOWPAWOVC $.
+      wa mpbi simpri epel orbi12i imbi12i 2ralbii ralbii rspec3 ordtriexmidlem2
+      vtocl mp3an elsnc sylbi elirr elrabi mto elsuci ord mpi 0ex rabsnt eqcoms
+      biidd syl orim12i mp2b orcom ) AUAZAGZAWKGACHUBZUCZWNUDZIZWNWMIZWMWOIZGZW
+      LWNWNJACUEZUFZUGWNJIZWOJIZWMJIZWPWSKZWTWNWTUHZHUDWMJUIHUJUHULDLZJIZXCXDMZ
+      XGWOIZXGWMIZWRGZKZKZXBXCXDMZXEKDWNXAXGWNNZXIXOXMXEXPXHXBXCXDXGWNJOUKXPXJW
+      PXLWSXGWNWOOXPXKWQWRXGWNWMOUMPPXHELZJIZXDMZXGXQIZXKWMXQIZGZKZKZXNEWOWOJXF
+      UFXQWONZXSXIYCXMYEXRXCXHXDXQWOJOUNYEXTXJYBXLXQWOXGQYEYAWRXKXQWOWMQUOPPXHX
+      RFLZJIZMZXTXGYFIZYFXQIZGZKZKYDFWMUPYFWMNZYHXSYLYCYMYGXDXHXRYFWMJOUQYMYKYB
+      XTYMYIXKYJYAYFWMXGQYFWMXQOURUSPYLDEFJJJXGXQRTZXGYFRTZYFXQRTZGZKZFJSEJSZDJ
+      SZYLFJSEJSZDJSJRUTZYTJRVAUUBYTVCBDEFJRVBVDVEYSUUADJYRYLEFJJYNXTYQYKDEVFYO
+      YIYPYJDFVFFEVFVGVHVIVJVDVKVMVMVMVNWQWKWRAWQWNHNWKWNHXAVOACVLVPWRWMWNNZAWR
+      WMWNIZUAUUCUUDWMWMIWMVQACWMWMVRVSWRUUDUUCWMWNVTWAWBAWNWMAACWMHWCCLHNAWFWD
+      WEWGWHWIWKAWJVD $.
   $}
 
   ${
@@ -54881,6 +54919,20 @@ $)
       UDQUECJUSUTJUTUFZUJSNEFUQUGUHUQDKZUTPZEFZDEVCEFZUQVEVFUQGZVDVCA
       LIZEVGVHEFZVDVHUIZVCAUKZVCJFVIVJDRCVCUSVHJEUTURVCALULVBUMQSVKTU
       NUOUPT $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( Weak ordering property of ordinal addition.  (Contributed by Jim
+       Kingdon, 27-Jul-2019.) $)
+    oawordi $p |- ( ( A e. On /\ B e. On /\ C e. On ) ->
+                 ( A C_ B -> ( C +o A ) C_ ( C +o B ) ) ) $=
+      ( vx con0 wcel w3a wss coa co wa cvv csuc cmpt cfv wceq jca oav
+      cv syl wfn oafnex a1i simpl3 simpl1 simpl2 ax-ia2 rdgss 3sstr4d
+      crdg ex ) AEFZBEFZCEFZGZABHZCAIJZCBIJZHUOUPKZADLDSMNZCUJZOZBVAO
+      ZUQURUSABUTCEUTLUAUSDUBUCULUMUNUPUDZULUMUNUPUEZULUMUNUPUFZUOUPU
+      GUHUSUNULKUQVBPUSUNULVDVEQDCARTUSUNUMKURVCPUSUNUMVDVFQDCBRTUIUK
+      $.
   $}
 
 $(
