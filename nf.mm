@@ -36417,7 +36417,7 @@ $)
   $c Ins3_k $. $( Insert three operator. $)
   $c P6 $. $( P6 operator $)
   $c SI_k $. $( Singleton image functor $)
-  $c SSet_k $. $( Subset relationship $)
+  $c _S_k $. $( Subset relationship $)
   $c Image_k $. $( Image functor $)
   $c _I_k $. $( Identity relationship $)
 
@@ -36459,7 +36459,7 @@ $)
 
   $( Extend the definition of a class to include the Kuratowski subset
      relationship. $)
-  cssetk $a class SSet_k $.
+  cssetk $a class _S_k $.
 
   $( Extend the definition of a class to include the Kuratowski identity
      relationship. $)
@@ -36513,13 +36513,13 @@ $)
 
     $( Define the Kuratowski subset relationship.  (Contributed by SF,
        12-Jan-2015.) $)
-    df-ssetk $a |- SSet_k = { x | E. y E. z ( x = << y , z >> /\ y C_ z ) } $.
+    df-ssetk $a |- _S_k = { x | E. y E. z ( x = << y , z >> /\ y C_ z ) } $.
 
     $( Define the Kuratowski image function.  See ~ opkelimagek for
        membership.  (Contributed by SF, 12-Jan-2015.) $)
     df-imagek $a |- Image_k A =
        ( ( _V X._k _V ) \
-         ( ( Ins2_k SSet_k (+) Ins3_k ( SSet_k o._k `'_k SI_k A ) ) "_k
+         ( ( Ins2_k _S_k (+) Ins3_k ( _S_k o._k `'_k SI_k A ) ) "_k
            ~P1 ~P1 1c ) ) $.
 
     $( Define the Kuratowski identity relationship.  (Contributed by SF,
@@ -37231,7 +37231,7 @@ $)
     $( Membership in the Kuratowski subset relationship.  (Contributed by SF,
        13-Jan-2015.) $)
     opkelssetkg $p |- ( ( A e. V /\ B e. W ) ->
-      ( << A , B >> e. SSet_k <-> A C_ B ) ) $=
+      ( << A , B >> e. _S_k <-> A C_ B ) ) $=
       ( vy vz vx cv wss cssetk df-ssetk sseq1 sseq2 opkelopkabg ) EHZFHZIAPIABI
       GEFJABCDGEFKOAPLPBAMN $.
   $}
@@ -37239,7 +37239,7 @@ $)
   $( Membership via the Kuratowski subset relationship.  (Contributed by SF,
      13-Jan-2015.) $)
   elssetkg $p |- ( ( A e. V /\ B e. W ) ->
-       ( << { A } , B >> e. SSet_k <-> A e. B ) ) $=
+       ( << { A } , B >> e. _S_k <-> A e. B ) ) $=
     ( wcel csn copk cssetk wss cvv snex opkelssetkg mpan snssg bicomd sylan9bbr
     wb ) BDEZAFZBGHEZSBIZACEZABEZSJERTUAQAKSBJDLMUBUCUAABCNOP $.
 
@@ -37248,7 +37248,7 @@ $)
     elssetk.2 $e |- B e. _V $.
     $( Membership via the Kuratowski subset relationship.  (Contributed by SF,
        13-Jan-2015.) $)
-    elssetk $p |- ( << { A } , B >> e. SSet_k <-> A e. B ) $=
+    elssetk $p |- ( << { A } , B >> e. _S_k <-> A e. B ) $=
       ( cvv wcel csn copk cssetk wb elssetkg mp2an ) AEFBEFAGBHIFABFJCDABEEKL
       $.
   $}
@@ -37349,7 +37349,7 @@ $)
     $d x y z w $.
     $( The Kuratowski subset relationship is a Kuratowski relationship.
        (Contributed by SF, 13-Jan-2015.) $)
-    ssetkssvvk $p |- SSet_k C_ ( _V X._k _V ) $=
+    ssetkssvvk $p |- _S_k C_ ( _V X._k _V ) $=
       ( vy vz vx cv wss cssetk df-ssetk opkabssvvki ) ADBDECABFCABGH $.
   $}
 
@@ -37524,7 +37524,7 @@ $)
     $d x y z w $.
     $( The Kuratowski subset relationship is a set.  (Contributed by SF,
        13-Jan-2015.) $)
-    ssetkex $p |- SSet_k e. _V $=
+    ssetkex $p |- _S_k e. _V $=
       ( vy vz vx vw cv copk wcel wel wi wal wb wex cssetk cvv ax-sset wss mp2an
       vex bitri ax-mp cxpk cin wceq ssetkssvvk eqrelk opkelxpk mpbir2an mpbiran
       inss1 elin opkelssetkg bibi12i 2albii biimpri vvex xpkvexg inex syl6eqelr
@@ -37757,9 +37757,9 @@ $)
 
   ${
     $d x y $.
-    $( Definition of ` _I_k ` in terms of ` SSet_k ` .  (Contributed by SF,
+    $( Definition of ` _I_k ` in terms of ` _S_k ` .  (Contributed by SF,
        14-Jan-2015.) $)
-    dfidk2 $p |- _I_k = ( SSet_k i^i `'_k SSet_k ) $=
+    dfidk2 $p |- _I_k = ( _S_k i^i `'_k _S_k ) $=
       ( vx vy cidk cssetk ccnvk cin idkssvvk cvv cxpk inss1 cv wss wa copk wcel
       wb vex mp2an opkelssetkg bitri ssetkssvvk weq eqss opkelidkg elin anbi12i
       sstri opkelcnvk 3bitr4i eqrelkriiv ) ABCDDEZFZGULDHHIDUKJUAUGABUBZAKZBKZL
@@ -37778,7 +37778,7 @@ $)
     $d A x y $.
     $( Alternate definition of class union for existence proof.  (Contributed
        by SF, 14-Jan-2015.) $)
-    dfuni3 $p |- U. A = U.1 ( `'_k SSet_k "_k A ) $=
+    dfuni3 $p |- U. A = U.1 ( `'_k _S_k "_k A ) $=
       ( vx vy cuni cssetk ccnvk cimak cuni1 cv csn copk wcel wrex wel opkelcnvk
       vex snex elssetk bitri rexbii eluni1 elimak eluni2 3bitr4ri eqriv ) BADZE
       FZAGZHZCIZBIZJZKUGLZCAMZBCNZCAMUKUILZUKUFLUMUOCAUMULUJKELUOUJULECPZUKQZOU
@@ -37801,7 +37801,7 @@ $)
     $d A x y z $.
     $( Alternate definition of class intersection for the existence proof.
        (Contributed by SF, 14-Jan-2015.) $)
-    dfint3 $p |- |^| A = ~ U.1 ( `'_k ~ SSet_k "_k A ) $=
+    dfint3 $p |- |^| A = ~ U.1 ( `'_k ~ _S_k "_k A ) $=
       ( vx vy cint cssetk ccompl ccnvk cimak cuni1 wel wral cv wcel wn csn copk
       wrex vex elcompl 3bitri eluni1 snex elimak bitri opkelcnvk elssetk notbii
       opkex rexbii rexnal con2bii elint2 3bitr4i eqriv ) BADZEFZGZAHZIZFZBCJZCA
@@ -37829,7 +37829,7 @@ $)
     $( Two ways to express the class of all sets that contain ` A ` .
        (Contributed by SF, 14-Jan-2015.) $)
     setswith $p |- { x | A e. x } =
-                if ( A e. _V , ( SSet_k "_k { { A } } ) , (/) ) $=
+                if ( A e. _V , ( _S_k "_k { { A } } ) , (/) ) $=
       ( vy cvv wcel cv cab cssetk csn cimak c0 cif wceq copk wrex opkeq1 eleq1d
       snex eqtr4d wn rexsn wb vex elssetkg mpan2 syl5rbb abbidv df-imak syl6eqr
       iftrue wal elex con3i alrimiv ab0 sylibr iffalse pm2.61i ) BDEZBAFZEZAGZU
@@ -37851,7 +37851,7 @@ $)
     $( Membership in a particular Kuratowski relationship is equivalent to
        non-disjointedness.  (Contributed by SF, 15-Jan-2015.) $)
     ndisjrelk $p |- (
-      << A , B >> e. ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
+      << A , B >> e. ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c )
       <-> ( A i^i B ) =/= (/) ) $=
       ( vt vx cv csn copk cssetk cin wcel wa cpw1 snex elin elssetk bitri exbii
       wex wceq cins3k cins2k c1c cimak wne opkeq1 eleq1d ceqsexv otkelins3k vex
@@ -37896,7 +37896,7 @@ $)
     $d A x y t $.
     $( Definition of power set for existence proof.  (Contributed by SF,
        21-Jan-2015.) $)
-    dfpw2 $p |- ~P A = ~ ( ( SSet_k \ ( ~P1 A X._k _V ) ) "_k 1c ) $=
+    dfpw2 $p |- ~P A = ~ ( ( _S_k \ ( ~P1 A X._k _V ) ) "_k 1c ) $=
       ( vx vy vt cpw cssetk cpw1 cvv c1c cv wcel wn copk wa wex vex exbii bitri
       3bitr4i 3bitri cxpk cdif cimak ccompl wel wal csn wceq wrex elimak anbi1i
       el1c 19.41v bitr4i df-rex excom snex opkeq1 eleq1d ceqsexv eldif opkelxpk
@@ -38436,11 +38436,11 @@ $)
     $( Alternate definition of cardinal addition to establish stratification.
        (Contributed by SF, 15-Jan-2015.) $)
     dfaddc2 $p |- ( A +c B ) =
-( ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+( ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 B ) "_k A ) $=
       ( vy vz vx vt vw cv wceq wa wrex cssetk cpw1 wcel copk csn wn snex 3bitri
@@ -38471,11 +38471,11 @@ $)
   $( The expression at the heart of ~ dfaddc2 is a set.  (Contributed by SF,
      17-Jan-2015.) $)
   addcexlem $p |- ( Ins3_k
-            ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) ) e. _V $=
     ( cssetk cins3k cins2k cin c1c cpw1 ccompl csik cun csymdif ssetkex ins3kex
     cimak ins2kex inex 1cex pw1ex imakex complex sikex unex symdifex difex ) AB
@@ -38564,13 +38564,13 @@ $)
        by SF, 14-Jan-2015.) $)
     dfnnc2 $p |- Nn =
      |^| ( { x | 0c e. x } \
-           ( ( SSet_k \ ( SSet_k o._k SI_k
-Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
+           ( ( _S_k \ ( _S_k o._k SI_k
+Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
             ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) ) ) "_k 1c ) ) $=
       ( vy vz vt vw cv wcel c1c wa cssetk cpw1 cimak wn vex wceq copk wex bitri
@@ -39889,7 +39889,7 @@ $)
     $( Represent equality to power class via a Kuratowski relationship.
        (Contributed by SF, 26-Jan-2015.) $)
     eqpwrelk $p |- ( << { A } , B >> e.
-              ~ ( ( Ins2_k SSet_k (+) Ins3_k SI_k SSet_k ) "_k
+              ~ ( ( Ins2_k _S_k (+) Ins3_k SI_k _S_k ) "_k
                   ~P1 ~P1 1c ) <-> B = ~P A ) $=
       ( vx vt csn copk cssetk cpw1 wcel wn cv wb wex wceq wa snex cvv 3bitri
       cins2k csik cins3k csymdif c1c cimak wss ccompl cpw opkex elimak elpw121c
@@ -39912,7 +39912,7 @@ $)
     $( Represent equality to unit power class via a Kuratowski relationship.
        (Contributed by SF, 21-Jan-2015.) $)
     eqpw1relk $p |- ( << A , { B } >> e. ( ( ~P 1c X._k _V ) \
-  ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k )
+  ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k )
     "_k ~P1 ~P1 ~P1 1c ) ) <-> A = ~P1 B ) $=
       ( vx vt csn copk c1c cvv wcel cssetk cpw1 wn wa cv wb snex bitri wex cxpk
       cpw cins3k csik cins2k csymdif cimak wss cdif wceq opkelxpk mpbiran2 elpw
@@ -40199,16 +40199,16 @@ $)
     $( Equality to a T raising expressed via a Kuratowski relationship.
        (Contributed by SF, 29-Jan-2015.) $)
     eqtfinrelk $p |- ( << { M } , X >> e. ( ( { { (/) } } X._k { (/) } ) u.
-  ( ~ ( ( Ins2_k SSet_k (+)
+  ( ~ ( ( Ins2_k _S_k (+)
       Ins3_k
-( ( Ins3_k `'_k SSet_k \
+( ( Ins3_k `'_k _S_k \
     Ins2_k
 ( ( Ins2_k ( ( Nn X._k _V ) i^i
-     ( ( Ins2_k SI_k SSet_k i^i
+     ( ( Ins2_k SI_k _S_k i^i
          Ins3_k
            ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \
-  ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k )
-    "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) )
+  ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k )
+    "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) )
        "_k ~P1 ~P1 ~P1 1c ) ) (+)
     Ins3_k _I_k ) "_k ~P1 1c ) ) "_k ~P1 1c ) )
       "_k ~P1 ~P1 1c )
@@ -40274,16 +40274,16 @@ $)
   $( The expression at the core of ~ eqtfinrelk exists.  (Contributed by SF,
      30-Jan-2015.) $)
   tfinrelkex $p |- ( ( { { (/) } } X._k { (/) } ) u.
-  ( ~ ( ( Ins2_k SSet_k (+)
+  ( ~ ( ( Ins2_k _S_k (+)
       Ins3_k
-( ( Ins3_k `'_k SSet_k \
+( ( Ins3_k `'_k _S_k \
     Ins2_k
 ( ( Ins2_k ( ( Nn X._k _V ) i^i
-     ( ( Ins2_k SI_k SSet_k i^i
+     ( ( Ins2_k SI_k _S_k i^i
          Ins3_k
            ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \
-  ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k )
-    "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) )
+  ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k )
+    "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) )
        "_k ~P1 ~P1 ~P1 1c ) ) (+)
     Ins3_k _I_k ) "_k ~P1 1c ) ) "_k ~P1 1c ) )
       "_k ~P1 ~P1 1c )
@@ -41279,10 +41279,10 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $( Binary relationship form of the ` _S[fin] ` relationship.  (Contributed
        by SF, 23-Jan-2015.) $)
     srelk $p |- ( << A , B >> e. ( ( Nn X._k Nn ) i^i ( (
- Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k SSet_k (+) Ins2_k SI_k
- SSet_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
-    i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k ) "_k
-    ~P1 ~P1 1c ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1
+ Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k _S_k (+) Ins2_k SI_k
+ _S_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c )
+    i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k
+    ~P1 ~P1 1c ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1
                                                              ~P1 1c ) ) <->
         _S[fin] ( A , B ) ) $=
       ( vx vt vy vz copk cnnc wcel cssetk wa wex wceq exbii 3bitr4i snex 3bitri
@@ -41322,10 +41322,10 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   $( The expression at the core of ~ srelk exists.  (Contributed by SF,
      30-Jan-2015.) $)
   srelkex $p |- ( ( Nn X._k Nn ) i^i ( (
- Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k SSet_k (+) Ins2_k SI_k
- SSet_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
-    i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k ) "_k
-    ~P1 ~P1 1c ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1
+ Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k _S_k (+) Ins2_k SI_k
+ _S_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c )
+    i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k
+    ~P1 ~P1 1c ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1
                                                        ~P1 1c ) ) e. _V $=
     ( cnnc cxpk c1c cvv cssetk cins3k csik cins2k cimak cin nncex xpkex ssetkex
     cpw1 ins3kex sikex ins2kex pw1ex imakex inex cpw cdif ccompl 1cex pwex vvex
@@ -42231,11 +42231,11 @@ $)
        functions.  (Contributed by SF, 3-Feb-2015.) $)
     dfphi2 $p |- Phi A = ( ( (
        Image_k
-      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-        ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
             "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
        ( _I_k i^i ( ~ Nn X._k _V ) ) ) "_k A ) $=
@@ -42281,16 +42281,16 @@ $)
   ${
     $d x y z w t A $.  $d x y z w t B $.
     $( Lemma for ~ dfop2 and ~ dfproj22 .  (Contributed by SF, 2-Jan-2015.) $)
-    dfop2lem1 $p |- ( << x , y >> e. ~ ( ( Ins2_k SSet_k (+) Ins3_k ( ( `'_k
-        Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k )
+    dfop2lem1 $p |- ( << x , y >> e. ~ ( ( Ins2_k _S_k (+) Ins3_k ( ( `'_k
+        Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k )
         "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-     ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) )
+     ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) )
         ) "_k
      ~P1 ~P1 1c ) <-> y = ( Phi x u. { 0c } ) ) $=
       ( vz vt cv copk cssetk cins3k cpw1 cimak cun cvv c0c csn wcel wn wex wceq
@@ -42314,17 +42314,17 @@ $)
       YDCWRYGCXBYBWSYDCWTVNT $.
 
     $( Lemma for ~ dfop2 (Contributed by SF, 2-Jan-2015.) $)
-    dfop2lem2 $p |- ( ~ ( ( Ins2_k SSet_k (+)
+    dfop2lem2 $p |- ( ~ ( ( Ins2_k _S_k (+)
      Ins3_k ( ( `'_k Image_k ( ( Image_k
-      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-        ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
             "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V
         ) ) ) o._k
-              SSet_k ) u. ( { { 0c } } X._k _V ) ) ) "_k ~P1 ~P1 1c ) "_k B
+              _S_k ) u. ( { { 0c } } X._k _V ) ) ) "_k ~P1 ~P1 1c ) "_k B
         )
      = { x | E. y e. B x = ( Phi y u. { 0c } ) } $=
       ( cv csn cun wrex cssetk cins2k cins3k cin cpw1 cimak ccompl csik csymdif
@@ -42337,23 +42337,23 @@ $)
        (Contributed by SF, 2-Jan-2015.) $)
     dfop2 $p |- <. A , B >. =
        ( ( Image_k ( ( Image_k
-      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-        ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
             "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V
         ) ) ) "_k A ) u.
-         ( ~ ( ( Ins2_k SSet_k (+) Ins3_k ( ( `'_k Image_k ( ( Image_k
-      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-        ( ( Ins2_k Ins2_k SSet_k
+         ( ~ ( ( Ins2_k _S_k (+) Ins3_k ( ( `'_k Image_k ( ( Image_k
+      ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
             "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-               ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u.
+               ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u.
                ( { { 0c } } X._k _V ) ) ) "_k ~P1 ~P1 1c ) "_k B ) ) $=
       ( vx vy cv wceq wrex cab csn cun cssetk cins3k cins2k cin cpw1 cimak csik
       ccompl cvv cxpk cop cphi c0c c1c csymdif cdif cnnc cidk ccnvk ccomk df-op
@@ -42370,11 +42370,11 @@ $)
        functors.  (Contributed by SF, 2-Jan-2015.) $)
     dfproj12 $p |- Proj1 A =
      ( `'_k Image_k ( ( Image_k
-      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-        ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
             "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V
         ) ) ) "_k A ) $=
@@ -42388,17 +42388,17 @@ $)
 
     $( Express the second projection operator via the set construction
        functors.  (Contributed by SF, 2-Jan-2015.) $)
-    dfproj22 $p |- Proj2 A = ( `'_k ~ ( ( Ins2_k SSet_k (+)
+    dfproj22 $p |- Proj2 A = ( `'_k ~ ( ( Ins2_k _S_k (+)
     Ins3_k ( ( `'_k Image_k ( ( Image_k
-      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-        ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
             "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
             ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k
-    SSet_k ) u. ( { { 0c } } X._k _V ) ) ) "_k ~P1 ~P1 1c ) "_k A ) $=
+    _S_k ) u. ( { { 0c } } X._k _V ) ) ) "_k ~P1 ~P1 1c ) "_k A ) $=
       ( vx vy cv csn cun wcel cssetk cins2k cins3k cin cpw1 ccompl csik csymdif
       cimak cimagek cnnc cvv cxpk cproj2 cphi c0c cab c1c cdif cidk ccnvk ccomk
       df-proj2 copk wrex opkelcnvk dfop2lem1 bitri rexbii elimak risset 3bitr4i
@@ -43749,7 +43749,7 @@ $)
 
   $c 1st $. $( First member of an ordered pair $)
   $c Swap $.
-  $c SSet $.
+  $c _S $.
   $c o. $.
   $c " $.
   $c SI $.
@@ -43762,7 +43762,7 @@ $)
   cswap $a class Swap $.
 
   $( Extend the definition of a class to include the subset relationship. $)
-  csset $a class SSet $.
+  csset $a class _S $.
 
   $( Extend the definition of a class to include the singleton image. $)
   csi $a class SI A $.
@@ -43794,7 +43794,7 @@ $)
     $d x y $.
     $( Define a relationship that holds between subsets.  (Contributed by SF,
        5-Jan-2015.) $)
-    df-sset $a |- SSet = { <. x , y >. | x C_ y } $.
+    df-sset $a |- _S = { <. x , y >. | x C_ y } $.
   $}
 
   ${
@@ -43852,12 +43852,12 @@ $)
     $( Lemma for the set construction theorems.  (Contributed by SF,
        6-Jan-2015.) $)
     setconslem1 $p |- ( << { A } , B >> e.
-                 ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( (
-        Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+                 ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( (
+        Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) <->
@@ -43879,17 +43879,17 @@ $)
 
     $( Lemma for the set construction theorems.  (Contributed by SF,
        6-Jan-2015.) $)
-    setconslem2 $p |- ( << { A } , B >> e. ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+    setconslem2 $p |- ( << { A } , B >> e. ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) <->
@@ -43930,28 +43930,28 @@ $)
     $( Lemma for set construction functions.  Set up a mapping between
        Kuratowski and Quine ordered pairs.  (Contributed by SF, 7-Jan-2015.) $)
     setconslem3 $p |- ( << { { A } } , << B , C >> >> e.
-        ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+        ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -43979,28 +43979,28 @@ $)
     $( Lemma for set construction functions.  Create a mapping between the two
        types of ordered pair abstractions.  (Contributed by SF, 7-Jan-2015.) $)
     setconslem4 $p |- U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
-     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     `'_k ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -44025,28 +44025,28 @@ $)
 
   $( Lemma for set construction theorems.  The big expression in the middle of
      ~ setconslem4 forms a set.  (Contributed by SF, 7-Jan-2015.) $)
-  setconslem5 $p |- ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+  setconslem5 $p |- ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-      ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+      ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-      Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+      Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
       "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -44065,28 +44065,28 @@ $)
     $( Lemma for the set construction functions.  Invert the expression from
        ~ setconslem4 .  (Contributed by SF, 7-Jan-2015.) $)
     setconslem6 $p |- ( ( ( _V X._k ( _V X._k _V ) ) i^i
-     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -44119,27 +44119,27 @@ $)
     $( Lemma for the set construction theorems.  Reorganized version of
        ~ setconslem3 .  (Contributed by SF, 4-Feb-2015.) $)
     setconslem7 $p |- ( << { { C } } , << A , B >> >> e. ~ ( ( Ins2_k Ins3_k
-        SSet_k (+)
-        ( Ins2_k Ins2_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k
-        ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+        _S_k (+)
+        ( Ins2_k Ins2_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k
+        ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-          Ins3_k SI_k SI_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+          Ins3_k SI_k SI_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) )
@@ -44169,53 +44169,53 @@ $)
     $( Express the ` 1st ` function via the set construction functions.
        (Contributed by SF, 4-Feb-2015.) $)
     df1st2 $p |- 1st = U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
-     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     `'_k ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
           ~P1 ~P1 ~P1 ~P1 1c ) ) "_k (
-~ ( ( Ins2_k Ins3_k SSet_k (+)
-        ( Ins2_k Ins2_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k
-        ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+~ ( ( Ins2_k Ins3_k _S_k (+)
+        ( Ins2_k Ins2_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k
+        ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-          Ins3_k SI_k SI_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+          Ins3_k SI_k SI_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) )
@@ -44265,80 +44265,80 @@ $)
     $d x y z w t u v $.
     $( Express the ` Swap ` function via set construction operators.
        (Contributed by SF, 6-Jan-2015.) $)
-    dfswap2 $p |- Swap = ( ( ~ ( ( Ins2_k Ins2_k SSet_k (+)
+    dfswap2 $p |- Swap = ( ( ~ ( ( Ins2_k Ins2_k _S_k (+)
        ( ( ( Ins2_k
-( Ins2_k Ins3_k ( SSet_k o._k
+( Ins2_k Ins3_k ( _S_k o._k
               SI_k
-               `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+               `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-  Ins3_k SI_k SI_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+  Ins3_k SI_k SI_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) i^i
           Ins3_k SI_k SI_k SI_k SI_k SI_k
-          Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k
+          Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k
         ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V ) ) ) )
         "_k
            ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ) u.
          ( ( Ins2_k
 ( Ins3_k SI_k SI_k
-  ( SSet_k o._k
-    SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k
-        SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+  ( _S_k o._k
+    SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k
+        _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-  Ins2_k Ins3_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+  Ins2_k Ins3_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) i^i
             Ins3_k SI_k SI_k SI_k SI_k SI_k
-                 ~ ( ( Ins2_k SSet_k (+)
+                 ~ ( ( Ins2_k _S_k (+)
                        Ins3_k
-( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k )
+( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k )
         "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k
-        SSet_k ) u.
+        _S_k ) u.
                               ( { { 0c } } X._k _V ) ) ) "_k
                    ~P1 ~P1 1c ) ) "_k
            ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ) ) )
@@ -44413,35 +44413,35 @@ $)
 
   ${
     $d x y $.
-    $( Express the ` SSet ` relationship via the set construction functors.
+    $( Express the ` _S ` relationship via the set construction functors.
        (Contributed by SF, 7-Jan-2015.) $)
-    dfsset2 $p |- SSet = U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
-     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+    dfsset2 $p |- _S = U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
+     `'_k ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
-          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k SSet_k ) $=
+          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k _S_k ) $=
       ( vx vy cv cssetk wcel copab cvv cxpk csik cins3k cins2k cin cimak ccompl
       cpw1 cun csymdif cimagek cnnc ccnvk copk wss c1c cdif ccomk c0c csn cuni1
       cidk csset wb vex opkelssetkg mp2an opabbii setconslem4 df-sset 3eqtr4ri
@@ -44451,7 +44451,7 @@ $)
   $}
 
   $( The subset relationship is a set.  (Contributed by SF, 6-Jan-2015.) $)
-  ssetex $p |- SSet e. _V $=
+  ssetex $p |- _S e. _V $=
     ( cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun csymdif cnnc
     cimagek ccnvk ccomk csn cuni1 vvex xpkex csset c1c cdif dfsset2 setconslem5
     cidk c0c cnvkex inex ssetkex imakex uni1ex eqeltri ) UAAABZABZCDDEZCCEZCFZG
@@ -44464,28 +44464,28 @@ $)
        (Contributed by SF, 7-Jan-2015.) $)
     dfima2 $p |- ( A " B ) =
       ( ( ( ( _V X._k ( _V X._k _V ) ) i^i
-     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -44525,83 +44525,83 @@ $)
        SF, 7-Jan-2015.) $)
     dfco1 $p |- ( A o. B ) =
 U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
-     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     `'_k ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
           ~P1 ~P1 ~P1 ~P1 1c ) ) "_k
 ( ( ( ( _V X._k ( _V X._k _V ) ) i^i
-     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
           ~P1 ~P1 ~P1 ~P1 1c ) ) "_k ~P1 ~P1 A )
 o._k
 ( ( ( _V X._k ( _V X._k _V ) ) i^i
-     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -44646,55 +44646,55 @@ o._k
        (Contributed by SF, 7-Jan-2015.) $)
     dfsi2 $p |- SI A =
 U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
-     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     `'_k ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
           ~P1 ~P1 ~P1 ~P1 1c ) ) "_k
 SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
-     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -44757,7 +44757,7 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
     $d A x y $.  $d B x y $.
     $( Binary relationship form of the subset relationship.  (Contributed by
        SF, 11-Feb-2015.) $)
-    brssetg $p |- ( ( A e. V /\ B e. W ) -> ( A SSet B <-> A C_ B ) ) $=
+    brssetg $p |- ( ( A e. V /\ B e. W ) -> ( A _S B <-> A C_ B ) ) $=
       ( vx vy cv wss csset sseq1 sseq2 df-sset brabg ) EGZFGZHAOHABHEFABCDINAOJ
       OBAKEFLM $.
   $}
@@ -44767,7 +44767,7 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
     brsset.2 $e |- B e. _V $.
     $( Binary relationship form of the subset relationship.  (Contributed by
        SF, 11-Feb-2015.) $)
-    brsset $p |- ( A SSet B <-> A C_ B ) $=
+    brsset $p |- ( A _S B <-> A C_ B ) $=
       ( cvv wcel csset wbr wss wb brssetg mp2an ) AEFBEFABGHABIJCDABEEKL $.
   $}
 
@@ -44776,13 +44776,13 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
     brssetsn.2 $e |- B e. _V $.
     $( Set membership in terms of the subset relationship.  (Contributed by SF,
        11-Feb-2015.) $)
-    brssetsn $p |- ( { A } SSet B <-> A e. B ) $=
+    brssetsn $p |- ( { A } _S B <-> A e. B ) $=
       ( csn csset wbr wss wcel snex brsset snss bitr4i ) AEZBFGNBHABINBAJDKABCL
       M $.
 
     $( Set membership in terms of the subset relationship.  (Contributed by SF,
        11-Feb-2015.) $)
-    opelssetsn $p |- ( <. { A } , B >. e. SSet <-> A e. B ) $=
+    opelssetsn $p |- ( <. { A } , B >. e. _S <-> A e. B ) $=
       ( csn cop csset wcel wbr df-br brssetsn bitr3i ) AEZBFGHMBGIABHMBGJABCDKL
       $.
   $}
@@ -52192,7 +52192,7 @@ $)
     $d x y $.
     $( The subset relationship is a relationship.  (Contributed by SF,
        11-Feb-2015.) $)
-    relsset $p |- Rel SSet $=
+    relsset $p |- Rel _S $=
       ( vx vy cv wss csset df-sset relopabi ) ACBCDABEABFG $.
   $}
 
@@ -52200,7 +52200,7 @@ $)
     $d x y $.
     $( Alternate definition of the identity relationship.  (Contributed by SF,
        11-Feb-2015.) $)
-    dfid4 $p |- _I = ( SSet i^i `' SSet ) $=
+    dfid4 $p |- _I = ( _S i^i `' _S ) $=
       ( vx vy cid csset ccnv cin reli wss inss1 relsset relss mp2 weq cv wa wbr
       wrel vex brsset bitri eqss ideq brin brcnv anbi12i 3bitr4i eqbrriv ) ABCD
       DEZFZGUIDHDQUIQDUHIJUIDKLABMANZBNZHZUKUJHZOZUJUKCPUJUKUIPZUJUKUAUJUKBRZUB
@@ -54986,7 +54986,7 @@ $)
 
   $( Define the image function of a class.  (Contributed by SF, 9-Feb-2015.) $)
   df-image $a |- Image A =
-     ( ( _V X. _V ) \ ( ( Ins2 SSet (+) Ins3 ( SSet o. `' SI A ) ) " 1c ) ) $.
+     ( ( _V X. _V ) \ ( ( Ins2 _S (+) Ins3 ( _S o. `' SI A ) ) " 1c ) ) $.
 
   $( Define the fourth insertion operation.  (Contributed by SF,
      9-Feb-2015.) $)
@@ -55485,7 +55485,7 @@ $)
     releqel.2 $e |- ( <. { y } , T >. e. R <-> y e. A ) $.
     $( Lemma to turn a membership condition into an equality condition.
        (Contributed by SF, 9-Mar-2015.) $)
-    releqel $p |- ( <. x , T >. e. ~ ( ( Ins3 SSet (+) Ins2 R ) " 1c ) <->
+    releqel $p |- ( <. x , T >. e. ~ ( ( Ins3 _S (+) Ins2 R ) " 1c ) <->
      x = A ) $=
       ( cv cop csset cins3 cins2 csymdif c1c wcel wn wb wex vex bitri cima wceq
       wel wal csn elima1c elsymdif otelins3 opelssetsn otelins2 bibi12i xchbinx
@@ -55514,7 +55514,7 @@ $)
     releqmpt.1 $e |- ( <. { y } , x >. e. R <-> y e. V ) $.
     $( Equality condition for a mapping.  (Contributed by SF, 9-Mar-2015.) $)
     releqmpt $p |- ( ( A X. _V ) i^i
-      `' ~ ( ( Ins3 SSet (+) Ins2 R ) " 1c ) ) = ( x e. A |-> V ) $=
+      `' ~ ( ( Ins3 _S (+) Ins2 R ) " 1c ) ) = ( x e. A |-> V ) $=
       ( vz cvv cxp csset cins3 cins2 cin cv wcel wceq wa cop vex bitri c1c cima
       csymdif ccompl ccnv copab cmpt inass xpss sseqin2 mpbi ineq1i elin opelxp
       wss mpbiran2 opelcnv releqel anbi12i releqopab 3eqtr3i df-mpt eqtr4i ) CH
@@ -55546,7 +55546,7 @@ $)
     $( Equality condition for a mapping operation.  (Contributed by SF,
        13-Feb-2015.) $)
     releqmpt2 $p |- ( ( ( A X. B ) X. _V ) \
-     ( ( Ins2 SSet (+) Ins3 R ) " 1c ) ) = ( x e. A , y e. B |-> V ) $=
+     ( ( Ins2 _S (+) Ins3 R ) " 1c ) ) = ( x e. A , y e. B |-> V ) $=
       ( vw cxp cvv csset cin cv wcel wa cop vex bitri wn cins2 csymdif c1c cima
       cins3 ccompl wceq coprab cdif cmpt2 inass xpss xpss1 ax-mp sseqin2 ineq1i
       wss mpbi elin opelxp mpbiran2 wel wal csn wex elima1c elsymdif opelssetsn
@@ -55567,7 +55567,7 @@ $)
     $( Lemma for the existence of a mapping.  (Contributed by SF,
        9-Mar-2015.) $)
     mptexlem $p |- ( ( A X. _V ) i^i
-      `' ~ ( ( Ins3 SSet (+) Ins2 R ) " 1c ) ) e. _V $=
+      `' ~ ( ( Ins3 _S (+) Ins2 R ) " 1c ) ) e. _V $=
       ( cvv cxp csset cins3 cins2 csymdif c1c cima ccompl ccnv vvex xpex ssetex
       ins3ex ins2ex symdifex 1cex imaex complex cnvex inex ) AEFGHZBIZJZKLZMZNA
       ECOPUJUIUHKUFUGGQRBDSTUAUBUCUDUE $.
@@ -55580,7 +55580,7 @@ $)
     $( Lemma for the existence of a double mapping.  (Contributed by SF,
        13-Feb-2015.) $)
     mpt2exlem $p |- ( ( ( A X. B ) X. _V ) \
-     ( ( Ins2 SSet (+) Ins3 R ) " 1c ) ) e. _V $=
+     ( ( Ins2 _S (+) Ins3 R ) " 1c ) ) e. _V $=
       ( cxp cvv csset cins2 cins3 csymdif cima xpex vvex ssetex ins2ex symdifex
       c1c ins3ex 1cex imaex difex ) ABGZHGIJZCKZLZSMUDHABDENONUGSUEUFIPQCFTRUAU
       BUC $.
@@ -57364,7 +57364,7 @@ $)
     $d x y z $.
     $( The subset relationship partially orders the universe.  (Contributed by
        SF, 12-Mar-2015.) $)
-    ssetpov $p |- SSet Po _V $=
+    ssetpov $p |- _S Po _V $=
       ( vx vy vz csset cvv cpartial wbr wtru wcel ssetex a1i vvex cv wa wss vex
       ssid brsset anbi12i 3ad2ant3 w3a sstr 3imtr4i weq eqss bitr4i biimpri pod
       mpbir trud ) DEFGHABCEDEEDEIHJKEEIHLKAMZUKDGZHUKEIZNULUKUKOUKQUKUKAPZUNRU
@@ -60260,7 +60260,7 @@ $)
     $d t x $.  $d u x $.
     $( Lemma for ~ ceex .  Set up part of the stratification.  (Contributed by
        SF, 6-Mar-2015.) $)
-    ceexlem1 $p |- ( <. { { a } } , n >. e. ( SSet o. SI Pw1Fn ) <->
+    ceexlem1 $p |- ( <. { { a } } , n >. e. ( _S o. SI Pw1Fn ) <->
        ~P1 a e. n ) $=
       ( vu vt cv csn cpw1fn csi wbr csset wa wex cpw1 wceq wel wcel exbii bitri
       snex vex cop ccom brsnsi1 anbi1i 19.41v anass 3bitr2i excom breq1 ceqsexv
@@ -62187,8 +62187,8 @@ $)
     nchoicelem10.2 $e |- X e. _V $.
     $( Lemma for ~ nchoice .  Stratification helper lemma.  (Contributed by SF,
        18-Mar-2015.) $)
-    nchoicelem10 $p |- ( <. c , X >. e. ~ ( ( Ins3 SSet (+) Ins2 ~ ran ( `' ~
-                     SSet (x) ( `' SSet |` Fix ( SSet o. Image S ) ) ) ) " 1c )
+    nchoicelem10 $p |- ( <. c , X >. e. ~ ( ( Ins3 _S (+) Ins2 ~ ran ( `' ~
+                     _S (x) ( `' _S |` Fix ( _S o. Image S ) ) ) ) " 1c )
         <-> c = Clos1 ( X , S ) ) $=
       ( vy vz vt csset cv wcel wn wss wa wbr wex vex 3bitri bitri anbi12i trtxp
       cclos1 ccompl ccnv cimage ccom cfix cres ctxp crn csn cop cima wel wi wal
@@ -63441,10 +63441,10 @@ htmldef "Proj2" as
     "<FONT FACE=sans-serif> Proj2 </FONT>";
   althtmldef "Proj2" as '<FONT FACE=sans-serif> Proj2 </FONT>';
   latexdef "Proj2" as "{\rm Proj2}";
-htmldef "SSet" as
-    "<FONT FACE=sans-serif> SSet </FONT>";
-  althtmldef "SSet" as '<FONT FACE=sans-serif> SSet </FONT>';
-  latexdef "SSet" as "{\rm SSet}";
+htmldef "_S" as
+    "<FONT FACE=sans-serif> S </FONT>";
+  althtmldef "_S" as '<FONT FACE=sans-serif> S </FONT>';
+  latexdef "_S" as "{\rm S}";
 htmldef "U.1" as '&xcup;<SUB>1</SUB>';
   althtmldef "U.1" as '&xcup;<SUB>1</SUB>';
   latexdef "U.1" as "\bigcup_1";
@@ -63453,11 +63453,11 @@ htmldef "_I_k" as
     "<SUB><I>k</I></SUB> ";
   althtmldef "_I_k" as ' I<SUB><I>k</I></SUB> ';
   latexdef "_I_k" as "{\rm I}_k";
-htmldef "SSet_k" as
-    " <FONT FACE=sans-serif>SSet</FONT><SUB><I>k</I></SUB> ";
-  althtmldef "SSet_k" as
-    ' <FONT FACE=sans-serif>SSet</FONT><SUB><I>k</I></SUB> ';
-  latexdef "SSet_k" as "{\rm SSet}_k";
+htmldef "_S_k" as
+    " <FONT FACE=sans-serif>S</FONT><SUB><I>k</I></SUB> ";
+  althtmldef "_S_k" as
+    ' <FONT FACE=sans-serif>S</FONT><SUB><I>k</I></SUB> ';
+  latexdef "_S_k" as "{\rm S}_k";
 htmldef "Ins2_k" as
     " <FONT FACE=sans-serif>Ins2</FONT><SUB><I>k</I></SUB> ";
   althtmldef "Ins2_k" as
