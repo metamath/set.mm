@@ -36582,7 +36582,8 @@ $)
     SULBFUAUBUCUOUQBUIUPVCTBUJABFUDUEUFUGUHUK $.
 
   $( The subclass relationship between two ordinals is inherited by their
-     predecessors.  (Contributed by Mario Carneiro and Jim Kingdon,
+     predecessors.  The converse implies excluded middle, as shown at
+     ~ onsucsssucexmid .  (Contributed by Mario Carneiro and Jim Kingdon,
      29-Jul-2019.) $)
   onsucsssucr $p |- ( ( A e. On /\ Ord B ) -> ( suc A C_ suc B -> A C_ B ) ) $=
     ( con0 wcel word wa csuc wss wb ordsucim ordelsuc sylan2 wi ordtr
