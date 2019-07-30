@@ -62604,6 +62604,96 @@ m ) e. Fin /\ ( Nc ( Sp[ac] ` T_c m ) = ( T_c Nc ( Sp[ac] ` m ) +c 1c ) \/ Nc (
       $.
   $}
 
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Finite recursion
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new constants $)
+  $c FRec $. $( Finite recursion generator $)
+
+  $( Extend the definition of a class to include the finite recursive function
+     generator. $)
+  cfrec $a class FRec ( F , I ) $.
+
+  ${ $d F x $. $d I x $.
+  $( Define the finite recursive function generator.  This is a function over
+     ` Nn ` that obeys the standard recursion relationship.  Definition
+     adapted from theorem XI.3.24 of [Rosser] p. 412.  (Contributed
+     by Scott Fenton, 30-Jul-2019.) $)
+  df-frec $a |- FRec ( F , I ) = 
+    Clos1 ( { <. 0c , I >. } , PProd ( ( x e. _V |-> ( x +c 1c ) ) , F ) ) $.
+  $}
+
+  ${
+     $d x y z w $.
+     $( The function mapping ` x ` to its cardinal successor exists. 
+     	(Contributed by Scott Fenton, 30-Jul-2019.) $)
+     csuccex $p |- ( x e. _V |-> ( x +c 1c ) ) e. _V $=
+       ( vy vz vw cvv cv c1c cplc caddcfn c1st wbr wa wex wceq wcel bitri exbii
+       cop vex syl6bb cmpt csn cxp cres ccnv ccom wfun wrel funmpt funrel ax-mp
+       relco brcnv br1st anbi1i 19.41v bitr4i excom breq1 brres braddcfn opelxp
+       opex mpbiran elsn anbi12ci ceqsexv 1cex addceq2 eqeq1d opelco copab mptv
+       eleq2i weq addceq1 eqeq1 eqcom opelopab 3bitr4ri eqrelriiv addcfnex vvex
+       eqeq2d snex xpex resex 1stex cnvex coex eqeltri ) AEAFZGHZUAZIEGUBZUCZUD
+       ZJUEZUFZEBCWNWSWNUGWNUHAEWMUIWNUJUKWQWRULBFZDFZWRKZXACFZWQKZLZDMZWTGHZXC
+       NZWTXCRZWSOXIWNOZXFWLGNZWTWLHZXCNZLZAMZXHXFXAWTWLRZNZXDLZAMZDMZXOXEXSDXE
+       XQAMZXDLXSXBYAXDXBXAWTJKYAWTXAJUMAXAWTBSZUNPUOXQXDAUPUQQXTXRDMZAMXOXRDAU
+       RYCXNAXDXNDXPWTWLYBASZVCXQXDXPXCWQKZXNXAXPXCWQUSYEXPXCIKZXPWPOZLXNXPXCIW
+       PUTYFXMYGXKWTWLXCYBYDVAYGWLWOOZXKYGWTEOYHYBWTWLEWOVBVDAGVEPVFPTVGQPPXMXH
+       AGVHXKXLXGXCWLGWTVIVJVGPDWTXCWQWRVKXJXIXAWMNZADVLZOXHWNYJXIADWMVMVNYIXAX
+       GNZXHADWTXCYBCSABVOWMXGXAWLWTGVPWDDCVOYKXCXGNXHXAXCXGVQXCXGVRTVSPVTWAWQW
+       RIWPWBEWOWCGWEWFWGJWHWIWJWK $.
+  $}
+
+  ${ $d G x y z w $. $d I x y z w $.
+    frecex.1 $e |- F = FRec ( G , I ) $.
+    $( The finite recursive function generator preserves sethood.  (Contributed
+       by Scott Fenton, 30-Jul-2019.) $)
+    frecexg $p |- ( G e. V -> F e. _V ) $=
+      ( vx wcel c0c cop csn cvv c1c cplc cmpt cpprod cclos1 cfrec df-frec eqtri
+      cv snex csuccex pprodexg mpan clos1exg sylancr syl5eqel ) BDGZAHCIZJZFKFT
+      LMNZBOZPZKABCQUMEFBCRSUHUJKGULKGZUMKGUIUAUKKGUHUNFUBUKBKDUCUDULUJKKUEUFUG
+      $.
+
+    frecex.2 $e |- G e. _V $.
+    $( The finite recursive function generator preserves sethood.  (Contributed
+       by Scott Fenton, 30-Jul-2019.) $)
+    frecex $p |- F e. _V $=
+      ( cvv wcel frecexg ax-mp ) BFGAFGEABCFDHI $.
+  $}
+
+  ${ $d F x y z a b c d $. $d G x y z a b c d $. $d I x y z a b c d $.
+     frecxp.1 $e |- F = FRec ( G , I ) $.
+     frecxp.2 $e |- G e. _V $.
+     frecxp.3 $e |- I e. _V $.
+     $( Subset relationship for the finite recursive function generator.
+     	(Contributed by Scott Fenton, 30-Jul-2019.) $)
+     frecxp $p |- F C_ ( Nn X. ( ran G u. { I } ) ) $=
+       ( vy vz vx va vb vc vd cnnc wcel cv wa wi wceq wex crn csn cun cplc cmpt
+       cxp cvv c0c cop wss c1c cpprod wbr wral nncex rnex snex unex xpex peano1
+       wal elun2 ax-mp opelxp mpbir2an snssi w3a brpprod vex weq addceq1 eqeq2d
+       snid eqeq1 mptv brab peano2 eleq1 syl5ibr sylbi adantr brelrn syl adantl
+       elun1 jctird adantrd syl6bb imbi12d 3impia exlimivv impcom rgenw csuccex
+       wb ax-gen pprodex cfrec cclos1 df-frec eqtri clos1induct mp3an ) NBUAZCU
+       BZUCZUFZUGOUHCUIZUBZXGUJZGPZXGOZXKHPZIUGIPZUKUDZUEZBULZUMZQXMXGOZRZHVAZG
+       AUNAXGUJNXFUOXDXEBEUPCUQURUSXHXGOZXJYBUHNOCXFOZUTCXEOYCCFVMCXEXDVBVCUHCN
+       XFVDVEXHXGVFVCYAGAXTHXRXLXSXRXKJPZKPZUIZSZXMLPZMPZUIZSZYDYHXPUMZYEYIBUMZ
+       QZVGZMTLTZKTJTXLXSRZJKLMXKXMXPBVHYPYQJKYOYQLMYGYKYNYQYNYQYGYKQZYDNOZYEXF
+       OZQZYHNOZYIXFOZQZRYNYSUUDYTYNYSUUBUUCYLYSUUBRZYMYLYHYDUKUDZSZUUEXKXOSXKU
+       UFSUUGIGYDYHXPJVILVIIJVJXOUUFXKXNYDUKVKVLXKYHUUFVNIGXOVOVPYSUUBUUGUUFNOY
+       DVQYHUUFNVRVSVTWAYMUUCYLYMYIXDOUUCYEYIBWBYIXDXEWEWCWDWFWGYRXLUUAXSUUDYGX
+       LUUAWOYKYGXLYFXGOUUAXKYFXGVRYDYENXFVDWHWAYKXSUUDWOYGYKXSYJXGOUUDXMYJXGVR
+       YHYINXFVDWHWDWIVSWJWKWKVTWLWPWMGHAXQXIUGXGXHUQXPBIWNEWQABCWRXIXQWSDIBCWT
+       XAXBXC $.
+
+    $( The finite recursive function generator gives a relationship. 
+       (Contributed by Scott Fenton, 30-Jul-2019.) $)
+    relfrec $p |- Rel F $=
+      ( wrel cvv cxp wss cnnc crn csn cun frecxp xpss sstri df-rel mpbir ) AGAH
+      HIZJAKBLCMNZITABCDEFOKUAPQARS $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
