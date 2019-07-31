@@ -62981,6 +62981,23 @@ $)
       BXRUAIJBXSXTYQBUFYAXT $.
   $}
 
+  ${
+    $d F x y $. $d G x y $. $d I x y $.
+    frec0.1 $e |- F = FRec ( G , I ) $.
+    frec0.2 $e |- ( ph -> G e. Funs ) $.
+    frec0.3 $e |- ( ph -> I e. dom G ) $.
+    frec0.4 $e |- ( ph -> ran G C_ dom G ) $.
+    $( Calculate the value of the finite recursive function generator at zero.
+       (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    frec0 $p |- ( ph -> ( F ` 0c ) = I ) $=
+      ( vy vx c0c wcel cv cvv cnnc peano1 sylancr wb cfuns mpbird cfv wceq cplc
+      cop csn c1c cmpt cpprod wbr wrex wo cdm opexg snidg syl orcd snex csuccex
+      pprodexg cfrec cclos1 df-frec eqtri clos1basesucg fnfrec fnopfvb sylancl
+      wfn ) AKBUADUBZKDUDZBLZAVKVJVJUEZLZIMVJJNJMUFUCUGZCUHZUIIBUJZUKZAVMVPAVJN
+      LZVMAKOLZDCULZLVRPGKDOVTUMQVJNUNUOUPAVLNLVONLZVKVQRVJUQAVNNLCSLWAJURFVNCN
+      SUSQIVJBVOVLNNBCDUTVLVOVAEJCDVBVCVDQTABOVHVSVIVKRABCDEFGHVEPOKDBVFVGT $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
