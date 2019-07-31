@@ -64106,4 +64106,8 @@ htmldef "Sp[ac]" as
 htmldef "TcFn" as "TcFn";
   althtmldef "TcFn" as "TcFn";
   latexdef "TcFn" as "{\rm TcFn}";
+
+htmldef "FRec" as " <FONT FACE=sans-serif>FRec</FONT> ";
+  althtmldef "FRec" as " <FONT FACE=sans-serif>FRec</FONT> ";
+  latexdef "FRec" as "{\rm FRec}";
 $)
