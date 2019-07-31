@@ -61719,6 +61719,42 @@ $)
   $}
 
 
+  ${
+     $d A x y z $. $d B x y z $. $d C x y z $.
+     $( Distributivity law for cardinal addition and multiplication.
+     	Theorem XI.2.31 of [Rosser] p. 379.  (Contributed by Scott Fenton,
+	31-Jul-2019.) $)
+     addcdi $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
+       ( A .c ( B +c C ) ) = ( ( A .c B ) +c ( A .c C ) ) ) $=
+       ( vx vy vz cncs wcel cplc cmuc co wceq cv cnc vex wa wi cxp mucnc oveq1
+       w3a ncaddccl 3adant1 wex elncs ncid eleq2 mpbiri cin c0 cun wrex ncseqnc
+       eladdc bi2anan9 ncdisjun oveq2d xpdisj2 xpex syl unex xpundi nceqi eqtri
+       addceq12i 3eqtr4g eqtr3d addceq12d eqeq12d syl5ibr exlimiv sylbi adantrd
+       addceq12 oveq2 adantr adantl imbi2d syl5ibrcom 3ad2ant1 rexlimdvv syl5bi
+       wb sylbird syl5 exlimdv mpd ) AGHZBGHZCGHZUAZBCIZGHZAWLJKZABJKZACJKZIZLZ
+       WIWJWMWHBCUBUCWMWLDMZNZLZDUDWKWRDWLUEWKXAWRDXAWSWLHZWKWRXAXBWSWTHWSDOZUF
+       WLWTWSUGUHXBEMZFMZUIUJLZWSXDXEUKZLZPZFCULEBULWKWRWSBCEFUNWKXIWREFBCWKXDB
+       HZXECHZPZBXDNZLZCXENZLZPZXIWRQZWIWJXQXLWCWHWIXNXJWJXPXKBXDUMCXEUMUOUCWHW
+       IXQXRQWJWHXRXQXIAXMXOIZJKZAXMJKZAXOJKZIZLZQWHXFYDXHWHAWTLZDUDXFYDQZDAUEY
+       EYFDXFYDYEWTXSJKZWTXMJKZWTXOJKZIZLXFWTXGNZJKZYGYJXFYKXSWTJXDXEEOZFOZUPUQ
+       XFWSXDRZWSXERZUKZNZYONZYPNZIZYLYJXFYOYPUIUJLYRUUALXDXEWSWSURYOYPWSXDXCYM
+       USWSXEXCYNUSUPUTYLWSXGRZNYRWSXGXCXDXEYMYNVASUUBYQWSXDXEVBVCVDYHYSYIYTWSX
+       DXCYMSWSXEXCYNSVEVFVGYEXTYGYCYJAWTXSJTYEYAYHYBYIAWTXMJTAWTXOJTVHVIVJVKVL
+       VMXQWRYDXIXQWNXTWQYCXQWLXSAJBCXMXOVNUQXQWOYAWPYBXNWOYALXPBXMAJVOVPXPWPYB
+       LXNCXOAJVOVQVHVIVRVSVTWDWAWBWEWFWBWG $.
+  $}
+
+  $( Distributivity law for cardinal addition and multiplication.
+     Theorem XI.2.30 of [Rosser] p. 379.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+  addcdir $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
+       ( ( A +c B ) .c C ) = ( ( A .c C ) +c ( B .c C ) ) ) $=
+    ( cncs wcel w3a cplc cmuc wceq addcdi 3coml ncaddccl 3adant3 muccom syl2anc
+    co simp3 3adant2 3adant1 addceq12d 3eqtr4d ) ADEZBDEZCDEZFZCABGZHPZCAHPZCBH
+    PZGZUFCHPZACHPZBCHPZGUDUBUCUGUJICABJKUEUFDEZUDUKUGIUBUCUNUDABLMUBUCUDQUFCNO
+    UEULUHUMUIUBUDULUHIUCACNRUCUDUMUIIUBBCNSTUA $.
+
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Specker's disproof of the axiom of choice
