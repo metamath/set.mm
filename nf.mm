@@ -56551,6 +56551,16 @@ $)
       TMCCSVHVIDCUOGHABCTCDEFULUPUMCASUTABCFUNUQUR $.
   $}
 
+  ${ $d R x y $. $d C x y $.
+     clos10.1 $e |- R e. _V $.
+     clos10.2 $e |- C = Clos1 ( (/) , R ) $.
+     $( The value of a closure over an empty base set.  (Contributed by 
+     	Scott Fenton, 31-Jul-2019.)  $)
+     clos10 $p |- C = (/) $=
+       ( vx vy c0 cvv wcel wss cv wbr wa wi wal wral 0ex 0ss noel pm2.21i rgenw
+       adantr ax-gen clos1induct mp3an eqssi ) AGGHIGGJEKZGIZUGFKZBLZMUIGIZNZFO
+       ZEAPAGJQGRUMEAULFUHUKUJUHUKUGSTUBUCUAEFABGHGQCDUDUEARUF $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -62699,35 +62709,53 @@ $)
       ( cvv wcel frecexg ax-mp ) BFGAFGEABCFDHI $.
   $}
 
-  ${ $d F x y z a b c d $. $d G x y z a b c d $. $d I x y z a b c d $.
+  ${ $d F x y z w a b c d i $. $d G x y z w a b c d i $. $d I i x $.
      frecxp.1 $e |- F = FRec ( G , I ) $.
      frecxp.2 $e |- G e. _V $.
-     frecxp.3 $e |- I e. _V $.
      $( Subset relationship for the finite recursive function generator.
      	(Contributed by Scott Fenton, 30-Jul-2019.) $)
      frecxp $p |- F C_ ( Nn X. ( ran G u. { I } ) ) $=
-       ( vy vz vx va vb vc vd cnnc wcel cv wa wi wceq wex crn csn cun cplc cmpt
-       cxp cvv c0c cop wss c1c cpprod wbr wral nncex rnex snex unex xpex peano1
-       wal elun2 ax-mp opelxp mpbir2an snssi w3a brpprod vex weq addceq1 eqeq2d
-       snid eqeq1 mptv brab peano2 eleq1 syl5ibr sylbi adantr brelrn syl adantl
-       elun1 jctird adantrd syl6bb imbi12d 3impia exlimivv impcom rgenw csuccex
-       wb ax-gen pprodex cfrec cclos1 df-frec eqtri clos1induct mp3an ) NBUAZCU
-       BZUCZUFZUGOUHCUIZUBZXGUJZGPZXGOZXKHPZIUGIPZUKUDZUEZBULZUMZQXMXGOZRZHVAZG
-       AUNAXGUJNXFUOXDXEBEUPCUQURUSXHXGOZXJYBUHNOCXFOZUTCXEOYCCFVMCXEXDVBVCUHCN
-       XFVDVEXHXGVFVCYAGAXTHXRXLXSXRXKJPZKPZUIZSZXMLPZMPZUIZSZYDYHXPUMZYEYIBUMZ
-       QZVGZMTLTZKTJTXLXSRZJKLMXKXMXPBVHYPYQJKYOYQLMYGYKYNYQYNYQYGYKQZYDNOZYEXF
-       OZQZYHNOZYIXFOZQZRYNYSUUDYTYNYSUUBUUCYLYSUUBRZYMYLYHYDUKUDZSZUUEXKXOSXKU
-       UFSUUGIGYDYHXPJVILVIIJVJXOUUFXKXNYDUKVKVLXKYHUUFVNIGXOVOVPYSUUBUUGUUFNOY
-       DVQYHUUFNVRVSVTWAYMUUCYLYMYIXDOUUCYEYIBWBYIXDXEWEWCWDWFWGYRXLUUAXSUUDYGX
-       LUUAWOYKYGXLYFXGOUUAXKYFXGVRYDYENXFVDWHWAYKXSUUDWOYGYKXSYJXGOUUDXMYJXGVR
-       YHYINXFVDWHWDWIVSWJWKWKVTWLWPWMGHAXQXIUGXGXHUQXPBIWNEWQABCWRXIXQWSDIBCWT
-       XAXBXC $.
+       ( vy vz vx va vb vc vd cnnc cvv wcel cv wceq c0c wa c0 vi vw crn csn cun
+       cfrec cxp wss eqid freceq12 mpan sneq uneq2d xpeq2d sseq12d cop c1c cplc
+       cmpt cpprod wbr wal wral nncex rnex snex unex xpex peano1 vex snid elun2
+       wi ax-mp 0cex opex opelxp bitr3i mpbir2an w3a wex brpprod addceq1 eqeq2d
+       snss weq eqeq1 mptv brab brelrn elun1 syl peano2 anim12ci adantrr anbi1d
+       eleq1 syl5ibr exp3a sylbi imp syl6bb adantr adantl imbi12d 3impia impcom
+       wb exlimivv ax-gen rgenw csuccex pprodex clos1induct mp3an vtoclg cclos1
+       df-frec wn opexb simprbi con3i snprc clos1eq1 clos10 syl6eq 0ss syl6eqss
+       sylib syl5eqss pm2.61i eqsstri ) ABCUFZMBUCZCUDZUEZUGZDCNOZYMYQUHZBUAPZU
+       FZMYNYTUDZUEZUGZUHZYSUACNYTCQZUUAYMUUDYQBBQUUFUUAYMQBUIBBYTCUJUKUUFUUCYP
+       MUUFUUBYOYNYTCULUMUNUOUUDNORYTUPZUDZUUDUHZFPZUUDOZUUJGPZHNHPZUQURZUSZBUT
+       ZVAZSUULUUDOZVMZGVBZFUUAVCUUEMUUCVDYNUUBBEVEYTVFVGVHUUIRMOZYTUUCOZVIYTUU
+       BOUVBYTUAVJZVKYTUUBYNVLVNUUIUUGUUDOUVAUVBSUUGUUDRYTVOUVCVPWERYTMUUCVQVRV
+       SUUTFUUAUUSGUUQUUKUURUUQUUJIPZJPZUPZQZUULKPZLPZUPZQZUVDUVHUUOVAZUVEUVIBV
+       AZSZVTZLWAKWAZJWAIWAUUKUURVMZIJKLUUJUULUUOBWBUVPUVQIJUVOUVQKLUVGUVKUVNUV
+       QUVNUVQUVGUVKSZUVDMOZUVEUUCOZSZUVHMOZUVIUUCOZSZVMZUVLUVMUWEUVLUVHUVDUQUR
+       ZQZUVMUWEVMUBPZUUNQUWHUWFQUWGHUBUVDUVHUUOIVJKVJHIWFUUNUWFUWHUUMUVDUQWCWD
+       UWHUVHUWFWGHUBUUNWHWIUWGUVMUWAUWDUVMUWASUWDUWGUWFMOZUWCSZUVMUVSUWJUVTUVM
+       UWCUVSUWIUVMUVIYNOUWCUVEUVIBWJUVIYNUUBWKWLUVDWMWNWOUWGUWBUWIUWCUVHUWFMWQ
+       WPWRWSWTXAUVRUUKUWAUURUWDUVGUUKUWAXHUVKUVGUUKUVFUUDOUWAUUJUVFUUDWQUVDUVE
+       MUUCVQXBXCUVKUURUWDXHUVGUVKUURUVJUUDOUWDUULUVJUUDWQUVHUVIMUUCVQXBXDXEWRX
+       FXIXIWTXGXJXKFGUUAUUPUUHNUUDUUGVFUUOBHXLEXMZHBYTXRXNXOXPYRXSZYMRCUPZUDZU
+       UPXQZYQHBCXRUWLUWOTYQUWLUWOTUUPXQZTUWLUWNTQZUWOUWPQUWLUWMNOZXSUWQUWRYRUW
+       RRNOYRRCXTYAYBUWMYCYIUUPUWNTYDWLUWPUUPUWKUWPUIYEYFYQYGYHYJYKYL $.
 
     $( The finite recursive function generator gives a relationship. 
        (Contributed by Scott Fenton, 30-Jul-2019.) $)
     relfrec $p |- Rel F $=
-      ( wrel cvv cxp wss cnnc crn csn cun frecxp xpss sstri df-rel mpbir ) AGAH
-      HIZJAKBLCMNZITABCDEFOKUAPQARS $.
+      ( cnnc crn csn cun cxp wss wrel frecxp relxp relss mp2 ) AFBGCHIZJZKRLALA
+      BCDEMFQNAROP $.
+  $}
+
+  ${
+    frecxpg.1 $e |- F = FRec ( G , I ) $.
+    $( Subset relationship for the finite recursive function generator.
+       (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    frecxpg $p |- ( G e. V -> F C_ ( Nn X. ( ran G u. { I } ) ) ) $= ? $.
+
+    $( The finite recursive function generator gives a relationship.
+       (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    relfrecg $p |- ( G e. V -> Rel F ) $= ? $.
   $}
 
 $(
