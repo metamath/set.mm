@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Jul-2019
+$( iset.mm - Version of 31-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36676,6 +36676,22 @@ $)
       OVIHOPVOLJZHLJZVSUFVTCMZLJZQZVOWBJZVOWBIZWBVOJZKZRVTWAQZVSRCHSWBHIZWDWIWH
       VSWJWCWAVTWBHLNUGWJWEVPWFVQWGVRWBHVOOWBHVOUHWBHVONPUIWHBCLLDULUJUKUMTVMVJ
       VKUNUOUPVJVFVKAAEUQVKAHVHJVKAURHSVBAAEHVHEMHIAUSUTTVCVATAVFVDVE $.
+  $}
+
+  ${
+    $d ph x y z $.
+    ordtri2orexmid.1 $e |- A. x e. On A. y e. On ( x e. y \/ y C_ x ) $.
+    $( Ordinal trichotomy implies excluded middle.  (Contributed by Jim
+       Kingdon, 31-Jul-2019.) $)
+    ordtri2orexmid $p |- ( ph \/ -. ph ) $=
+      ( vz wn wo c0 csn crab wcel wss cv con0 wral 0elon wceq orbi12d ax-mp wb
+      ordtriexmidlem csuc suc0 eqeltrri eleq1 sseq2 eleq2 sseq1 rspc2va mpanl12
+      onsuci elsni ordtriexmidlem2 syl snssg biidd elrab3 biimpi sylbir orim12i
+      0ex snid orcom mpbi ) AFZAGZAVEGAEHIZJZVGKZVGVHLZGZVFBMZCMZKZVMVLLZGZCNOB
+      NOZVKDVHNKVGNKVQVKAEUAHUBVGNUCHPUKUDVPVKVHVMKZVMVHLZGBCVHVGNNVLVHQVNVRVOV
+      SVLVHVMUEVLVHVMUFRVMVGQVRVIVSVJVMVGVHUGVMVGVHUHRUIUJSVIVEVJAVIVHHQVEVHHUL
+      AEUMUNVJHVHKZAHNKVTVJTPHVHNUOSVTAHVGKVTATHVAVBAAEHVGEMHQAUPUQSURUSUTSVEAV
+      CVD $.
   $}
 
   ${
