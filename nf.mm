@@ -61675,6 +61675,25 @@ $)
     ex ) ACDZBCDZBEFZGHBIJZAABKLZIJZUMUNUOULUMUNUOUNBESZMUMUOBENUMURUOBOPQRUAUL
     UMUOUQUBUNULUMTZUOUQUSUOTAHKLZAUPIULUTASUMUOAUCUDULHCDUMUOUTUPIJUEAHBUFUGUH
     UKUIUJ $.
+
+  $( The product of the cardinality of ` _V ` squared is just the cardinality
+     of ` _V ` .  Theorem XI.2.37 of [Rosser] p. 381.  (Contributed by
+     Scott Fenton, 31-Jul-2019.) $)
+  ncvsq $p |- ( Nc _V .c Nc _V ) = Nc _V $=
+    ( cvv cnc cmuc co clec wbr wceq wcel c0 ovex wn cncs vvex mp2an mpbii df-ne
+    wne mto mpbir c0c nulnnc ncelncsi muccl eleq1 lecncvg vn0 el0c nemtbir ncid
+    eleq2 ncslemuc mp3an wa wi sbth ) ABZUPCDZUPEFZUPUQEFZUQUPGZUQAHUQIQZURUPUP
+    CJVAUQIGZKVBILHZUAVBUQLHZVCUPLHZVEVDAMUBZVFUPUPUCNZUQILUDORUQIPSUQAUENVEVEU
+    PTQZUSVFVFVHUPTGZKVIATHZVJAIUFAUGUHVIAUPHVJAMUIUPTAUJORUPTPSUPUPUKULVDVEURU
+    SUMUTUNVGVFUQUPUONN $.
+
+  $( There are exactly as many ordered pairs as there are sets.  Corollary to
+     theorem XI.2.37 of [Rosser] p. 381.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+  vvsqenvv $p |- ( _V X. _V ) ~~ _V $=
+    ( cvv cxp cnc wceq cen wbr cmuc co vvex mucnc ncvsq eqtr3i xpex eqnc mpbi )
+    AABZCZACZDPAEFRRGHQRAAIIJKLPAAAIIMNO $.
+
   
   ${
     $d t u $.  $d t x $.  $d u x $.
