@@ -56518,6 +56518,23 @@ $)
       QHUDABCDEFRSUA $.
   $}
 
+  ${ 
+     $d A x s r $. $d S x s r $. $d R x s r $. $d C x s r $.
+     clos1basesucg.1 $e |- C = Clos1 ( S , R ) $.
+     $( A member of a closure is either in the base set or connected to another
+       member by ` R ` .  Theorem IX.5.16 of [Rosser] p. 248.  (Contributed by
+       Scott Fenton, 31-Jul-2019.) $)
+     clos1basesucg $p |- ( ( S e. V /\ R e. W ) ->
+       ( A e. C <-> ( A e. S \/ E. x e. C x R A ) ) ) $=
+       ( vs vr wcel cclos1 cv wbr wrex wo wb wceq eleq2d bibi12d clos1eq1 eleq2
+       rexeqdv orbi12d clos1eq2 breq rexeqbidv orbi2d eqid clos1basesuc vtocl2g
+       wa vex eleq2i rexeqi orbi2i 3bitr4g ) EFKDGKULBEDLZKZBEKZAMZBDNZAUROZPZB
+       CKUTVBACOZPBIMZJMZLZKZBVFKZVABVGNZAVHOZPZQBEVGLZKZUTVKAVNOZPZQUSVDQIJEDF
+       GVFERZVIVOVMVQVRVHVNBVGVFEUAZSVRVJUTVLVPVFEBUBVRVKAVHVNVSUCUDTVGDRZVOUSV
+       QVDVTVNURBVGEDUEZSVTVPVCUTVTVKVBAVNURWAVABVGDUFUGUHTABVHVGVFIUMJUMVHUIUJ
+       UKCURBHUNVEVCUTVBACURHUOUPUQ $.
+  $}
+
   ${
     $d a x y z $.
     $( The finite cardinals as expressed via the closure operation.  Theorem
@@ -62763,6 +62780,44 @@ $)
       ( vg wcel cfrec wrel cv wceq eqid freceq12 mpan2 releqd vex vtoclg releqi
       relfrec sylibr ) BDGBCHZIZAIFJZCHZIUBFBDUCBKZUDUAUECCKUDUAKCLUCBCCMNOUDUC
       CUDLFPSQAUAERT $.
+  $}
+
+  ${
+    $d F w x y z a b t $. $d G w x y z a b t $. $d I w x y z a b t $. 
+    $d ph w x y z a b t $.
+    dmfrec.1 $e |- F = FRec ( G , I ) $.
+    dmfrec.2 $e |- ( ph -> G e. V ) $.
+    dmfrec.3 $e |- ( ph -> I e. dom G ) $.
+    dmfrec.4 $e |- ( ph -> ran G C_ dom G ) $.
+    $( The domain of the finite recursive function generator is the 
+       naturals.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    dmfrec $p |- ( ph -> dom F = Nn ) $=
+      ( vw vy vz cnnc wcel cvv c0c cv wbr wex wceq vx vt va cdm crn csn cun cxp
+      vb wss frecxpg dmss 3syl dmxpss syl6ss c1c cplc wi wral frecexg dmexg cop
+      cmpt cpprod wrex wo 0cex opexg sylancr snidg syl orcd wb csuccex pprodexg
+      cfrec cclos1 df-frec eqtri clos1basesucg mpbird df-br sylibr breldm eldm2
+      snex vex opex elsnc opth bitri eleq1a adantld syl5bi relfrecg elrel sylan
+      wa wrel brelrn adantl a1i breq1 qrpprod syl6bb imbi1d syl5ibrcom exlimdvv
+      ex syld rexlimdv sseld jaod sylbid ancld clos1conn eximi eldm eqid addcex
+      1cex weq addceq1 eqeq2d eqeq1 mptv brab mpbir mpbiran exbii bitr4i anbi2i
+      19.42v 3imtr4i syl6 exlimdv ralrimivw peano5 syl3anc eqssd ) ABUDZMAUUAMC
+      UEZDUFUGZUHZUDZMACENZBUUDUJUUAUUEUJGBCDEFUKBUUDULUMMUUCUNUOAUUAONZPUUANZU
+      AQZUUANZUUIUPUQZUUANZURZUAMUSMUUAUJAUUFBONUUGGBCDEFUTBOVAUMAPDBRZUUHAPDVB
+      ZBNZUUNAUUPUUOUUOUFZNZUBQZUUOJOJQZUPUQZVCZCVDZRUBBVEZVFZAUURUVDAUUOONZUUR
+      APONDCUDZNZUVFVGHPDOUVGVHVIUUOOVJVKVLAUUQONZUVCONZUUPUVEVMUUOWFZAUVBONUUF
+      UVJJVNGUVBCOEVOVIZUBUUOBUVCUUQOOBCDVPUUQUVCVQFJCDVRVSZVTVIWAPDBWBWCPDBWDV
+      KAUUMUAMUUJUUIKQZVBZBNZKSAUULKUUIBWEAUVPUULKAUVPUVPUVNUVGNZWRZUULAUVPUVQA
+      UVPUVOUUQNZUUSUVOUVCRZUBBVEZVFZUVQAUVIUVJUVPUWBVMUVKUVLUBUVOBUVCUUQOOUVMV
+      TVIAUVSUVQUWAUVSUUIPTZUVNDTZWRZAUVQUVSUVOUUOTUWEUVOUUOUUIUVNUAWGZKWGWHWIU
+      UIUVNPDWJWKAUWDUVQUWCAUVHUWDUVQURHDUVGUVNWLVKWMWNAUWAUVNUUBNZUVQAUVTUWGUB
+      BAUUSBNZUUSUCQZUIQZVBZTZUISUCSZUVTUWGURZAUWHUWMABWSZUWHUWMAUUFUWOGBCDEFWO
+      VKUCUIUUSBWPWQXIAUWLUWNUCUIAUWNUWLUWIUUIUVBRZUWJUVNCRZWRZUWGURZUWSAUWQUWG
+      UWPUWJUVNCWTXAXBUWLUVTUWRUWGUWLUVTUWKUVOUVCRUWRUUSUWKUVOUVCXCUWIUWJUUIUVN
+      UVBCXDXEXFXGXHXJXKAUUBUVGUVNIXLXJXMXNXOUVPUVOUUKLQZVBZUVCRZWRZLSZUXABNZLS
+      UVRUULUXCUXELUVOUXABUVCUUQUVMXPXQUVRUVPUXBLSZWRUXDUVQUXFUVPUVQUVNUWTCRZLS
+      UXFLUVNCXRUXBUXGLUXBUUIUUKUVBRZUXGUXHUUKUUKTZUUKXSUVNUVATUVNUUKTUXIJKUUIU
+      UKUVBUWFUUIUPUWFYAXTJUAYBUVAUUKUVNUUTUUIUPYCYDUVNUUKUUKYEJKUVAYFYGYHUUIUV
+      NUUKUWTUVBCXDYIYJYKYLUVPUXBLYMYKLUUKBWEYNYOYPWNYQUAUUAOYRYSYT $.
   $}
 
 $(
