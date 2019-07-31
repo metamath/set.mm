@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Jul-2019
+$( iset.mm - Version of 31-Jul-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36582,7 +36582,8 @@ $)
     SULBFUAUBUCUOUQBUIUPVCTBUJABFUDUEUFUGUHUK $.
 
   $( The subclass relationship between two ordinals is inherited by their
-     predecessors.  (Contributed by Mario Carneiro and Jim Kingdon,
+     predecessors.  The converse implies excluded middle, as shown at
+     ~ onsucsssucexmid .  (Contributed by Mario Carneiro and Jim Kingdon,
      29-Jul-2019.) $)
   onsucsssucr $p |- ( ( A e. On /\ Ord B ) -> ( suc A C_ suc B -> A C_ B ) ) $=
     ( con0 wcel word wa csuc wss wb ordsucim ordelsuc sylan2 wi ordtr
@@ -36675,6 +36676,22 @@ $)
       OVIHOPVOLJZHLJZVSUFVTCMZLJZQZVOWBJZVOWBIZWBVOJZKZRVTWAQZVSRCHSWBHIZWDWIWH
       VSWJWCWAVTWBHLNUGWJWEVPWFVQWGVRWBHVOOWBHVOUHWBHVONPUIWHBCLLDULUJUKUMTVMVJ
       VKUNUOUPVJVFVKAAEUQVKAHVHJVKAURHSVBAAEHVHEMHIAUSUTTVCVATAVFVDVE $.
+  $}
+
+  ${
+    $d ph x y z $.
+    ordtri2orexmid.1 $e |- A. x e. On A. y e. On ( x e. y \/ y C_ x ) $.
+    $( Ordinal trichotomy implies excluded middle.  (Contributed by Jim
+       Kingdon, 31-Jul-2019.) $)
+    ordtri2orexmid $p |- ( ph \/ -. ph ) $=
+      ( vz wn wo c0 csn crab wcel wss cv con0 wral 0elon wceq orbi12d ax-mp wb
+      ordtriexmidlem csuc suc0 eqeltrri eleq1 sseq2 eleq2 sseq1 rspc2va mpanl12
+      onsuci elsni ordtriexmidlem2 syl snssg biidd elrab3 biimpi sylbir orim12i
+      0ex snid orcom mpbi ) AFZAGZAVEGAEHIZJZVGKZVGVHLZGZVFBMZCMZKZVMVLLZGZCNOB
+      NOZVKDVHNKVGNKVQVKAEUAHUBVGNUCHPUKUDVPVKVHVMKZVMVHLZGBCVHVGNNVLVHQVNVRVOV
+      SVLVHVMUEVLVHVMUFRVMVGQVRVIVSVJVMVGVHUGVMVGVHUHRUIUJSVIVEVJAVIVHHQVEVHHUL
+      AEUMUNVJHVHKZAHNKVTVJTPHVHNUOSVTAHVGKVTATHVAVBAAEHVGEMHQAUPUQSURUSUTSVEAV
+      CVD $.
   $}
 
   ${
@@ -36978,8 +36995,11 @@ $)
        successor, which would be equivalent to ~ df-suc given excluded middle.
        It is an ordinal, and has some successor-like properties (for example,
        we conjecture that we could prove that if ` A ` is an ordinal, then both
-       ` U. suc A = A ` and ` U. { x e. On | x C_ A } = A ` ).  (Contributed by
-       Jim Kingdon, 21-Jul-2019.) $)
+       ` U. suc A = A ` and ` U. { x e. On | x C_ A } = A ` ).
+
+       Constructively ` ( ~P A i^i On ) ` and ` suc A ` cannot be shown to be
+       equivalent (as proved at ~ ordpwsucexmid ).  (Contributed by Jim
+       Kingdon, 21-Jul-2019.) $)
     ordpwsucss $p |- ( Ord A -> suc A C_ ( ~P A i^i On ) ) $=
       ( vx word csuc cpw con0 cin cv wcel wa wi ordsuc ordelon ex sylbi
       wss wtr ordtr trsucss syl jcad selpw anbi2ci bitri syl6ibr ssrdv
@@ -37000,6 +37020,21 @@ $)
      22-Jul-2019.) $)
   ssnel $p |- ( A C_ B -> -. B e. A ) $=
     ( wss wcel elirr ssel mtoi ) ABCBADBBDBEABBFG $.
+
+  ${
+    $d ph x z $.
+    ordpwsucexmid.1 $e |- A. x e. On suc x = ( ~P x i^i On ) $.
+    $( The subset in ~ ordpwsucss cannot be equality.  That is, strengthening
+       it to equality implies excluded middle.  (Contributed by Jim Kingdon,
+       30-Jul-2019.) $)
+    ordpwsucexmid $p |- ( ph \/ -. ph ) $=
+      ( vz c0 csn crab wcel wceq wo wn csuc cpw con0 cin 0elpw 0elon elin ax-mp
+      cv mpbir2an ordtriexmidlem pweq ineq1d eqeq12d vtoclri eleqtrri elsuci wb
+      suceq 0ex snid biidd elrab3 biimpi ordtriexmidlem2 eqcoms orim12i ) EADEF
+      ZGZHZEUTIZJZAAKZJEUTLZHVCEUTMZNOZVEEVGHEVFHENHUTPQEVFNRUAUTNHVEVGIZADUBBT
+      ZLZVIMZNOZIVHBUTNVIUTIZVJVEVLVGVIUTUJVMVKVFNVIUTUCUDUECUFSUGEUTUHSVAAVBVD
+      VAAEUSHVAAUIEUKULAADEUSDTEIAUMUNSUOVDUTEADUPUQURS $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
