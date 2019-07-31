@@ -62998,6 +62998,33 @@ $)
       SUSQIVJBVOVLNNBCDUTVLVOVAEJCDVBVCVDQTABOVHVSVIVKRABCDEFGHVEPOKDBVFVGT $.
   $}
 
+  ${
+     $d F w y $. $d G w y $. $d I w y $. $d X w y $.
+     frecsuc.1 $e |- F = FRec ( G , I ) $.
+     frecsuc.2 $e |- ( ph -> G e. Funs ) $.
+     frecsuc.3 $e |- ( ph -> I e. dom G ) $.
+     frecsuc.4 $e |- ( ph -> ran G C_ dom G ) $.
+     frecsuc.5 $e |- ( ph -> X e. Nn ) $.
+     $( Calculate the value of the finite recursive function generator
+     	at a successor.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+     frecsuc $p |- ( ph -> ( F ` ( X +c 1c ) ) = ( G ` ( F ` X ) ) ) $=
+       ( vy vw wceq cop wcel cvv wbr cnnc syl syl2anc c1c cplc cfv c0c csn cmpt
+       cv cpprod wrex wo wfun cdm wfn fnfrec fnfun dmfrec eleqtrrd funfvop eqid
+       cfuns wb peano2 addceq1 eqeq2d eqeq1 mptv brabg mpbiri elfunsi crn snssd
+       cun unssd cxp wss frecxpg rnxpss syl6ss fvelrn sseldd df-br sylibr breq1
+       rnss wa qrpprod syl6bb syl12anc olcd snex csuccex pprodexg sylancr cfrec
+       rspcev cclos1 df-frec eqtri clos1basesucg mpbird fnopfvb ) AEUAUBZBUCEBU
+       CZCUCZMZXBXDNZBOZAXGXFUDDNZUEZOZKUGZXFLPLUGZUAUBZUFZCUHZQZKBUIZUJZAXQXJA
+       EXCNZBOZEXBXNQZXCXDCQZXQABUKZEBULZOZXTABRUMZYCABCDFGHIUNZRBUOSZAERYDJABC
+       DUTFGHIUPUQZEBURTAYAXBXBMZXBUSAEROZXBROZYAYJVAJAYKYLJEVBSZXKXMMXKXBMYJLK
+       EXBRRXNXLEMXMXBXKXLEUAVCVDXKXBXBVELKXMVFVGTVHAXCXDNCOZYBACUKZXCCULZOYNAC
+       UTOZYOGCVISACVJZDUEZVLZYPXCAYRYSYPIADYPHVKVMABVJZYTXCAUUARYTVNZVJZYTABUU
+       BVOZUUAUUCVOAYQUUDGBCDUTFVPSBUUBWDSRYTVQVRAYCYEXCUUAOYHYIEBVSTVTVTXCCURT
+       XCXDCWAWBXPYAYBWEZKXSBXKXSMXPXSXFXOQUUEXKXSXFXOWCEXCXBXDXNCWFWGWOWHWIAXI
+       POXOPOZXGXRVAXHWJAXNPOYQUUFLWKGXNCPUTWLWMKXFBXOXIPPBCDWNXIXOWPFLCDWQWRWS
+       WMWTAYFYLXEXGVAYGYMRXBXDBXATWT $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
