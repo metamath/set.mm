@@ -55089,6 +55089,19 @@ $)
       UECDIPUIUKGUGUJUHUGBUFOUJABUFEFQBUFRSTUAUHULGBFUFBCDUBUCUD $.
   $}
 
+
+  $( Equality theorem for tail cross product.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+  txpeq1 $p |- ( A = B -> ( A (x) C ) = ( B (x) C ) ) $=
+    ( wceq c1st ccnv ccom c2nd cin ctxp coeq2 ineq1d df-txp 3eqtr4g ) ABDZEFZAG
+    ZHFCGZIPBGZRIACJBCJOQSRABPKLACMBCMN $.
+
+  $( Equality theorem for tail cross product.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+  txpeq2 $p |- ( A = B -> ( C (x) A ) = ( C (x) B ) ) $=
+    ( wceq c1st ccnv ccom c2nd cin ctxp coeq2 ineq2d df-txp 3eqtr4g ) ABDZEFCGZ
+    HFZAGZIPQBGZICAJCBJORSPABQKLCAMCBMN $.
+
   ${
     $d A x $.  $d B x $.  $d B y $.  $d B z $.  $d C x $.  $d C z $.  $d R t $.
     $d R x $.  $d R y $.  $d R z $.  $d S t $.  $d S x $.  $d S y $.  $d S z $.
@@ -55834,6 +55847,18 @@ $)
       ZBAKZUIBIJZUJBAGLMUKABNZIUKUMAABSOULUMIJCBIPQUABDTZGHBUNKZUIUKDAIUNABGUBU
       NABRETZFTZKBUQKUOEFBUNGCDUCUQUPBUDUQUNBREFUEUFUGUH $.
   $}
+
+  $( Equality theorem for parallel product.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+   pprodeq1 $p |- ( A = B -> PProd ( A , C ) = PProd ( B , C ) ) $=
+     ( wceq c1st ccom c2nd ctxp cpprod coeq1 txpeq1 syl df-pprod 3eqtr4g ) ABDZ
+     AEFZCGFZHZBEFZQHZACIBCIOPSDRTDABEJPSQKLACMBCMN $.
+
+  $( Equality theorem for parallel product.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+   pprodeq2 $p |- ( A = B -> PProd ( C , A ) = PProd ( C , B ) ) $=
+     ( wceq c1st ccom c2nd ctxp cpprod coeq1 txpeq2 syl df-pprod 3eqtr4g ) ABDZ
+     CEFZAGFZHZPBGFZHZCAICBIOQSDRTDABGJQSPKLCAMCBMN $.
 
   ${
     $d a w $.  $d a x $.  $d A x $.  $d a y $.  $d A y $.  $d a z $.  $d B y $.
@@ -62624,6 +62649,16 @@ $)
      by Scott Fenton, 30-Jul-2019.) $)
   df-frec $a |- FRec ( F , I ) = 
     Clos1 ( { <. 0c , I >. } , PProd ( ( x e. _V |-> ( x +c 1c ) ) , F ) ) $.
+  $}
+
+  ${ $d F x $. $d G x $. $d I x $. $d J x $.
+     $( Equality theorem for finite recursive function generator.  (Contributed
+     	by Scott Fenton, 31-Jul-2019.) $)
+     freceq12 $p |- ( ( F = G /\ I = J ) -> FRec ( F , I ) = FRec ( G , J ) ) $=
+       ( vx wceq wa c0c cop csn cvv cv c1c cplc cpprod cclos1 cfrec syl df-frec
+       cmpt opeq2 sneqd clos1eq1 pprodeq2 clos1eq2 sylan9eqr 3eqtr4g ) ABFZCDFZ
+       GHCIZJZEKELMNTZAOZPZHDIZJZULBOZPZACQBDQUIUHUNUPUMPZURUIUKUPFUNUSFUIUJUOC
+       DHUAUBUMUKUPUCRUHUMUQFUSURFABULUDUMUPUQUERUFEACSEBDSUG $.
   $}
 
   ${
