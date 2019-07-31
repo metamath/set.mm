@@ -38771,6 +38771,30 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
   $}
 
   ${
+    $d A x $.  $d ch x $.  $d ph y $.  $d ps x $.  $d ta x $.  $d th x $.
+    $d x y $. $d et y $.
+    findsd.1 $e |- ( et -> { x | ph } e. V ) $.
+    findsd.2 $e |- ( x = 0c -> ( ph <-> ps ) ) $.
+    findsd.3 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    findsd.4 $e |- ( x = ( y +c 1c ) -> ( ph <-> th ) ) $.
+    findsd.5 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    findsd.6 $e |- ( et -> ps ) $.
+    findsd.7 $e |- ( ( y e. Nn /\ et ) -> ( ch -> th ) ) $.
+    $( Principle of finite induction over the finite cardinals, using implicit
+       substitutions.  The first hypothesis ensures stratification of ` ph ` ,
+       the next four set up the substitutions, and the last two set up the base
+       case and induction hypothesis.  This version allows for an extra 
+       deduction clause that may make proving stratification simpler. Compare 
+       Theorem X.1.13 of [Rosser] p. 277.  (Contributed by SF, 31-Jul-2019.) $)
+    findsd $p |- ( ( A e. Nn /\ et ) -> ta ) $=
+      ( cnnc wcel elab wa cab c0c c1c cplc wral wss 0cex sylibr vex 1cex addcex
+      cv wi 3imtr4g ancoms ralrimiva peano5 syl3anc sseld impcom wb elabg mpbid
+      adantr ) IRSZFUAIAGUBZSZEFVFVHFRVGIFVGJSUCVGSZHUMZVGSZVJUDUEZVGSZUNZHRUFR
+      VGUGKFBVIPABGUCUHLTUIFVNHRVJRSZFVNVOFUACDVKVMQACGVJHUJZMTADGVLVJUDVPUKULN
+      TUOUPUQHVGJURUSUTVAVFVHEVBFAEGIROVCVEVD $.
+  $}
+
+  ${
     $d A x n m $.
     $( All naturals are either zero or a successor.  Theorem X.1.7 of [Rosser]
        p. 276.  (Contributed by SF, 14-Jan-2015.) $)
@@ -55822,6 +55846,20 @@ $)
   $}
 
   ${
+     $d F f $.
+     $( Membership in the set of all functions.  (Contributed by Scott Fenton,
+     	31-Jul-2019.) $)
+     elfunsg $p |- ( F e. V -> ( F e. Funs <-> Fun F ) ) $=
+       ( vf cv cfuns wcel wfun eleq1 funeq vex elfuns vtoclbg ) CDZEFMGAEFAGCAB
+       MAEHMAIMCJKL $.
+  $}
+
+  $( Membership in the set of all functions implies functionhood.
+     (Contributed by Scott Fenton, 31-Jul-2019.) $)
+  elfunsi $p |- ( F e. Funs -> Fun F ) $=
+    ( cfuns wcel wfun elfunsg ibi ) ABCADABEF $.
+
+  ${
     $d f a $.
     $( The function with domain relationship exists.  (Contributed by SF,
        23-Feb-2015.) $)
@@ -62901,6 +62939,47 @@ $)
        SCDEXRYJUUAXSIODEXTYCYAWLYDYEYF $.
   $}
 
+  ${ $d ph x y z w t a b $. $d F x y z w t a b  $. $d G x y z w t a b $.
+     $d I x y z w t a b $.
+    fnfrec.1 $e |- F = FRec ( G , I ) $.
+    fnfrec.2 $e |- ( ph -> G e. Funs ) $.
+    fnfrec.3 $e |- ( ph -> I e. dom G ) $.
+    fnfrec.4 $e |- ( ph -> ran G C_ dom G ) $.
+    $( The recursive function generator is a function over the finite 
+       cardinals.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    fnfrec $p |- ( ph -> F Fn Nn ) $=
+      ( vy vz wceq cv wbr wa wi wal cfuns wcel breq1 wex vx vw vt wfun cdm cnnc
+      wfn wrel weq relfrecg syl breldm adantl dmfrec adantr eleqtrd adantrr c0c
+      va vb c1c cplc cvv cab frecexg fnfreclem1 anbi12d imbi1d 2albidv bi2anan9
+      3syl breq2 eqeq12 imbi12d cbval2v syl6bb fnfreclem2 imp adantrl eqtr4d ex
+      alrimivv ad2antrr crn wss simpr fnfreclem3 adantlrr anim12d eeanv syl6ibr
+      simplr 19.29 eximi pm3.35 anbi1d biimpa elfunsi funbrfv eqtr2 syl56 exp3a
+      syl5 com34 imp3a com12 an4s com3l exlimdvv impr syld expr ancoms 19.21bbi
+      cfv findsd mpcom alrimiv dffun2 sylanbrc df-fn ) ABUDZBUEZUFKZBUFUGABUHZU
+      ALZILZBMZYFJLZBMZNZIJUIZOZJPIPZUAPYBACQRZYEFBCDQEUJUKAYNUAAYMIJAYKYLYFUFR
+      ZAYKNYLAYHYPYJAYHNYFYCUFYHYFYCRAYFYGBULUMAYDYHABCDQEFGHUNZUOUPUQYPAYKYLYP
+      AYMYPANYMIJUBLZYGBMZYRYIBMZNZYLOZJPIPZURYGBMZURYIBMZNZYLOZJPIPUCLZYGBMZUU
+      HYIBMZNZYLOZJPZIPZUUHVAVBZUSLZBMZUUOUTLZBMZNZUSUTUIZOZUTPUSPZYNAUBUCYFVCA
+      YOBVCRUUCUBVDVCRFBCDQEVEIJUBBVCVFVKYRURKZUUBUUGIJUVDUUAUUFYLUVDYSUUDYTUUE
+      YRURYGBSYRURYIBSVGVHVIUBUCUIZUUBUULIJUVEUUAUUKYLUVEYSUUIYTUUJYRUUHYGBSYRU
+      UHYIBSVGVHVIYRUUOKZUUCUUOYGBMZUUOYIBMZNZYLOZJPIPUVCUVFUUBUVJIJUVFUUAUVIYL
+      UVFYSUVGYTUVHYRUUOYGBSYRUUOYIBSVGVHVIUVJUVBIJUSUTIUSUIZJUTUIZNUVIUUTYLUVA
+      UVKUVGUUQUVLUVHUUSYGUUPUUOBVLYIUURUUOBVLVJYGUUPYIUURVMVNVOVPUBUAUIZUUBYMI
+      JUVMUUAYKYLUVMYSYHYTYJYRYFYGBSYRYFYIBSVGVHVIAUUGIJAUUFYLAUUFNYGDYIAUUDYGD
+      KZUUEAUUDUVNABCDQYGEFGHVQVRUQAUUEYIDKZUUDAUUEUVOABCDQYIEFGHVQVRVSVTWAWBAU
+      UHUFRZUUNUVCOAUVPUUNUVCAUVPUUNNNZUVBUSUTUVQUUTUUIYGUUPCMZNZUUJYIUURCMZNZN
+      ZJTZITZUVAUVQUUTUVSITZUWAJTZNUWDUVQUUQUWEUUSUWFUVQUUQUWEAUVPUUQUWEUUNAUVP
+      NZUUQNIBCDQUUHUUPEAYOUVPUUQFWCADCUEZRZUVPUUQGWCACWDUWHWEZUVPUUQHWCAUVPUUQ
+      WLUWGUUQWFWGWHWAUVQUUSUWFAUVPUUSUWFUUNUWGUUSNJBCDQUUHUUREAYOUVPUUSFWCAUWI
+      UVPUUSGWCAUWJUVPUUSHWCAUVPUUSWLUWGUUSWFWGWHWAWIUVSUWAIJWJWKAUVPUUNUWDUVAO
+      UWGUUNUWDUVAUUNUWDNZUULUWBNZJTZITZUWGUVAUWKUUMUWCNZITUWNUUMUWCIWMUWOUWMIU
+      ULUWBJWMWNUKAUWNUVAOUVPAUWLUVAIJAUULUWBUVAUWBAUULUVAUUIUUJUVRUVTAUULUVAOZ
+      OAUUKUVRUVTNZNUWPAUUKUWQUWPAUUKUULUWQUVAAUUKUULUWQUVAOZUUKUULNYLAUWRUUKYL
+      WOAYLUWQUVAYLUWQNYIUUPCMZUVTNZAYICXOZUUPKZUXAUURKZNUVAYLUWQUWTYLUVRUWSUVT
+      YGYIUUPCSWPWQAUWSUXBUVTUXCAYOCUDZUWSUXBOFCWRZYIUUPCWSVKAYOUXDUVTUXCOFUXEY
+      IUURCWSVKWIUXAUUPUURWTXAXBXCXBXDXEXFXGXHXEXIUOXCXBXJXKWBXLXMXPXNWAXEXQWAW
+      BXRUAIJBXSXTYQBUFYAXT $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
