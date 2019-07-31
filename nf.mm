@@ -62870,7 +62870,37 @@ $)
        NXRXTMNXRXHXOOXFPZXPFCPZVBZYBYCYBOXOUHUEZYEOXOVOVPUASZXERYFYEROYERLUAXOO
        XFMVQVRLMWOXEYEYFXDXOUHVSVTYFOYEWALUAXEWBWCWDWEXRXHXQWQXGPYDXCXQWQXGWPXO
        XPOFXFCWFWGWHWIVKWJWKWLWMWN $.
+
+     $d ph a t $. $d F a t $. $d X t $. $d G t $. $d Y z t a $. $d a t y z w $.
+     fnfreclem3.5 $e |- ( ph -> X e. Nn ) $.
+     fnfreclem3.6 $e |- ( ph -> ( X +c 1c ) F Y ) $.
+     $( Lemma for ~ fnfrec .  The value of ` F ` at a successor is ` G `
+     	related to a previous element.  (Contributed by Scott Fenton,
+	31-Jul-2019.) $)
+     fnfreclem3 $p |- ( ph -> E. z ( X F z /\ z G Y ) ) $=
+       ( vw vt wcel wa cvv wceq va vy c1c cplc cop c0c csn cv wbr wex cmpt wrex
+       cpprod wi wne 0cnsuc df-ne mpbi elsni opth sylib simpld mto pm2.21i wrel
+       wn a1i relfrecg syl elrel excom sylan eleq1 anbi2d breq1 qrpprod anbi12d
+       syl6bb wb vex cnnc 1cex addcexg sylancl adantr addceq1 eqeq2d eqeq1 mptv
+       weq brabg sylancr cdm opeldm adantl dmfrec eleqtrd peano4 3expia syl2anc
+       df-br biimprcd sylbir syld sylbid anim1d imp syl6bi com12 exlimdv eximdv
+       ex mpid rexlimdva wo csuccex pprodexg cfrec cclos1 df-frec clos1basesucg
+       snex eqtri syl5bb mpbid mpjaod ) AGUCUDZHUEZUFEUEZUGZQZGBUHZCUIZYLHDUIZR
+       ZBUJZUAUHZYHOSOUHZUCUDZUKZDUMZUIZUACULZYKYPUNAYKYPYKYGUFTZYGUFUOUUDVFGUP
+       YGUFUQURYKUUDHETZYKYHYITUUDUUERYHYIUSYGHUFEUTVAVBVCVDVGAUUBYPUACAYQCQZRZ
+       UUBYQPUHZYLUEZTZPUJZBUJZYPACVEZUUFUULADFQZUUMJCDEFIVHVIUUMUUFRUUJBUJPUJU
+       ULPBYQCVJUUJPBVKVAVLUUGUUBUULYPUNUUGUUBRZUUKYOBUUOUUJYOPUUJUUOYOUUJUUOAU
+       UICQZRZUUHYGYTUIZYNRZRYOUUJUUGUUQUUBUUSUUJUUFUUPAYQUUICVMVNUUJUUBUUIYHUU
+       AUIUUSYQUUIYHUUAVOUUHYLYGHYTDVPVRVQUUQUUSYOUUQUURYMYNUUQUURYGUUHUCUDZTZY
+       MUUQUUHSQYGSQZUURUVAVSPVTAUVBUUPAGWAQZUCSQUVBMWBGUCWASWCWDWEUBUHZYSTUVDU
+       UTTUVAOUBUUHYGSSYTOPWJYSUUTUVDYRUUHUCWFWGUVDYGUUTWHOUBYSWIWKWLUUQUVAGUUH
+       TZYMUUQUVCUUHWAQZUVAUVEUNAUVCUUPMWEUUQUUHCWMZWAUUPUUHUVGQAUUHYLCWNWOAUVG
+       WATUUPACDEFIJKLWPWEWQUVCUVFUVAUVEGUUHWRWSWTUUPUVEYMUNZAUUPUUHYLCUIZUVHUU
+       HYLCXAUVEYMUVIGUUHYLCVOXBXCWOXDXEXFXGXHXIXJXKXLXMXNAYGHCUIZYKUUCXOZNUVJY
+       HCQZAUVKYGHCXAAYJSQUUASQZUVLUVKVSYIYBAYTSQUUNUVMOXPJYTDSFXQWLUAYHCUUAYJS
+       SCDEXRYJUUAXSIODEXTYCYAWLYDYEYF $.
   $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
