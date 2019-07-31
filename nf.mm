@@ -61656,7 +61656,26 @@ $)
        GVLVMUJUTVBVMUHAVHCUIUKULVJVFVOVEHBVICJUMUNUOUPUQURUS $.
   $}
 
+  $( Multiplication law for cardinal less than.  (Contributed by Scott
+     Fenton, 31-Jul-2019.) $)
+  lemuc2 $p |- ( ( ( A e. NC /\ B e. NC /\ C e. NC ) /\ B <_c C ) ->
+    ( A .c B ) <_c ( A .c C ) ) $=
+    ( cncs wcel w3a clec wbr wa cmuc co 3anrot lemuc1 sylanb wceq simpl1 simpl2
+    muccom syl2anc simpl3 3brtr4d ) ADEZBDEZCDEZFZBCGHZIZBAJKZCAJKZABJKZACJKZGU
+    EUCUDUBFUFUHUIGHUBUCUDLBCAMNUGUBUCUJUHOUBUCUDUFPZUBUCUDUFQABRSUGUBUDUKUIOUL
+    UBUCUDUFTACRSUA $.
 
+  $( A cardinal is less than or equal to its product with another.
+     Theorem XI.2.36 of [Rosser] p. 381.  (Contributed by Scott
+     Fenton, 31-Jul-2019.) $)
+  ncslemuc $p |- ( ( M e. NC /\ N e. NC /\ N =/= 0c ) ->
+       M <_c ( M .c N ) ) $=
+    ( cncs wcel c0c wne w3a c1c clec wbr cmuc co wn df-ne nc0le1 ord syl5bi imp
+    wceq wa 3adant1 wi mucid1 ad2antrr 1cnc lemuc2 mp3anl2 eqbrtrrd 3adant3 mpd
+    ex ) ACDZBCDZBEFZGHBIJZAABKLZIJZUMUNUOULUMUNUOUNBESZMUMUOBENUMURUOBOPQRUAUL
+    UMUOUQUBUNULUMTZUOUQUSUOTAHKLZAUPIULUTASUMUOAUCUDULHCDUMUOUTUPIJUEAHBUFUGUH
+    UKUIUJ $.
+  
   ${
     $d t u $.  $d t x $.  $d u x $.
     $( Lemma for ~ nnltp1c .  Set up stratification.  (Contributed by SF,
