@@ -62747,15 +62747,22 @@ $)
       BCDEMFQNAROP $.
   $}
 
-  ${
+  ${ $d G g $. $d I g $.
     frecxpg.1 $e |- F = FRec ( G , I ) $.
     $( Subset relationship for the finite recursive function generator.
        (Contributed by Scott Fenton, 31-Jul-2019.) $)
-    frecxpg $p |- ( G e. V -> F C_ ( Nn X. ( ran G u. { I } ) ) ) $= ? $.
+    frecxpg $p |- ( G e. V -> F C_ ( Nn X. ( ran G u. { I } ) ) ) $=
+      ( vg wcel cfrec cnnc crn csn cun cxp cv wss wceq eqid freceq12 mpan2 rneq
+      uneq1d xpeq2d sseq12d vex frecxp vtoclg syl5eqss ) BDGABCHZIBJZCKZLZMZEFN
+      ZCHZIUMJZUJLZMZOUHULOFBDUMBPZUNUHUQULURCCPUNUHPCQUMBCCRSURUPUKIURUOUIUJUM
+      BTUAUBUCUNUMCUNQFUDUEUFUG $.
 
     $( The finite recursive function generator gives a relationship.
        (Contributed by Scott Fenton, 31-Jul-2019.) $)
-    relfrecg $p |- ( G e. V -> Rel F ) $= ? $.
+    relfrecg $p |- ( G e. V -> Rel F ) $=
+      ( vg wcel cfrec wrel cv wceq eqid freceq12 mpan2 releqd vex vtoclg releqi
+      relfrec sylibr ) BDGBCHZIZAIFJZCHZIUBFBDUCBKZUDUAUECCKUDUAKCLUCBCCMNOUDUC
+      CUDLFPSQAUAERT $.
   $}
 
 $(
