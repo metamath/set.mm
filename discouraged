@@ -6476,14 +6476,11 @@
 "gsumclOLD" is used by "gsum2dOLD".
 "gsumclOLD" is used by "gsumdixpOLD".
 "gsumclOLD" is used by "gsumesum".
-"gsumclOLD" is used by "gsumfscl".
 "gsumclOLD" is used by "gsumle".
 "gsumclOLD" is used by "gsummhm2OLD".
 "gsumclOLD" is used by "gsumsubOLD".
 "gsumclOLD" is used by "gsumvsca1".
 "gsumclOLD" is used by "gsumvsca2".
-"gsumclOLD" is used by "linccl".
-"gsumclOLD" is used by "lincfsuppcl".
 "gsumclOLD" is used by "prdsgsumOLD".
 "gsumclOLD" is used by "sitgclg".
 "gsumclOLD" is used by "tsmsgsumOLD".
@@ -6496,7 +6493,6 @@
 "gsumcllemOLD" is used by "gsumzoppgOLD".
 "gsumcllemOLD" is used by "gsumzresOLD".
 "gsumf1oOLD" is used by "gsum2dOLD".
-"gsumf1oOLD" is used by "gsumfsf1o".
 "gsumf1oOLD" is used by "gsummptf1o".
 "gsuminvOLD" is used by "gsumsubOLD".
 "gsummhm2OLD" is used by "gsummulc1OLD".
@@ -6506,18 +6502,15 @@
 "gsummhmOLD" is used by "gsuminvOLD".
 "gsummhmOLD" is used by "gsummhm2OLD".
 "gsummhmOLD" is used by "gsummptmhm".
-"gsummptfsaddOLD" is used by "lincsum".
 "gsummulc1OLD" is used by "gsumdixpOLD".
 "gsummulc2OLD" is used by "gsumdixpOLD".
 "gsumptOLD" is used by "dprdfidOLD".
-"gsumptOLD" is used by "linc1".
 "gsumresOLD" is used by "gsum2dOLD".
 "gsumresOLD" is used by "mplcoe2OLD".
 "gsumresOLD" is used by "psrlidmOLD".
 "gsumresOLD" is used by "psrridmOLD".
 "gsumresOLD" is used by "tsmsgsumOLD".
 "gsumresOLD" is used by "tsmsresOLD".
-"gsumsplit2OLD" is used by "gsumdifsnd".
 "gsumsplit2OLD" is used by "gsumunsnf".
 "gsumsplitOLD" is used by "gsum2dOLD".
 "gsumsplitOLD" is used by "gsumesum".
@@ -6525,7 +6518,6 @@
 "gsumsplitOLD" is used by "gsummptun".
 "gsumsplitOLD" is used by "gsumsplit2OLD".
 "gsumsubgclOLD" is used by "frlmsslspOLD".
-"gsumsubgclOLD" is used by "gsumlsscl".
 "gsumsubgclOLD" is used by "mplbas2OLD".
 "gsumsubmclOLD" is used by "gsumsubgclOLD".
 "gsumsubmclOLD" is used by "mplbas2OLD".
@@ -6536,8 +6528,6 @@
 "gsumval3OLD" is used by "gsumzoppgOLD".
 "gsumval3OLD" is used by "gsumzresOLD".
 "gsumval3aOLD" is used by "gsumval3OLD".
-"gsumvsmulOLD" is used by "lincresunit3lem2".
-"gsumvsmulOLD" is used by "lincscm".
 "gsumzaddOLD" is used by "gsumaddOLD".
 "gsumzaddOLD" is used by "gsumzsplitOLD".
 "gsumzaddlemOLD" is used by "dprdfaddOLD".
@@ -15788,26 +15778,26 @@ New usage of "grposn" is discouraged (5 uses).
 New usage of "grpplusgx" is discouraged (3 uses).
 New usage of "gsum2dOLD" is discouraged (1 uses).
 New usage of "gsumaddOLD" is discouraged (2 uses).
-New usage of "gsumclOLD" is discouraged (17 uses).
+New usage of "gsumclOLD" is discouraged (14 uses).
 New usage of "gsumcllemOLD" is discouraged (6 uses).
 New usage of "gsumdixpOLD" is discouraged (0 uses).
-New usage of "gsumf1oOLD" is discouraged (3 uses).
+New usage of "gsumf1oOLD" is discouraged (2 uses).
 New usage of "gsuminvOLD" is discouraged (1 uses).
 New usage of "gsummhm2OLD" is discouraged (4 uses).
 New usage of "gsummhmOLD" is discouraged (3 uses).
-New usage of "gsummptfsaddOLD" is discouraged (1 uses).
+New usage of "gsummptfsaddOLD" is discouraged (0 uses).
 New usage of "gsummulc1OLD" is discouraged (1 uses).
 New usage of "gsummulc2OLD" is discouraged (1 uses).
-New usage of "gsumptOLD" is discouraged (2 uses).
+New usage of "gsumptOLD" is discouraged (1 uses).
 New usage of "gsumresOLD" is discouraged (6 uses).
-New usage of "gsumsplit2OLD" is discouraged (2 uses).
+New usage of "gsumsplit2OLD" is discouraged (1 uses).
 New usage of "gsumsplitOLD" is discouraged (5 uses).
 New usage of "gsumsubOLD" is discouraged (0 uses).
-New usage of "gsumsubgclOLD" is discouraged (3 uses).
+New usage of "gsumsubgclOLD" is discouraged (2 uses).
 New usage of "gsumsubmclOLD" is discouraged (2 uses).
 New usage of "gsumval3OLD" is discouraged (6 uses).
 New usage of "gsumval3aOLD" is discouraged (1 uses).
-New usage of "gsumvsmulOLD" is discouraged (2 uses).
+New usage of "gsumvsmulOLD" is discouraged (0 uses).
 New usage of "gsumxpOLD" is discouraged (0 uses).
 New usage of "gsumzaddOLD" is discouraged (2 uses).
 New usage of "gsumzaddlemOLD" is discouraged (2 uses).
