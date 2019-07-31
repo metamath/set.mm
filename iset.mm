@@ -36979,8 +36979,11 @@ $)
        successor, which would be equivalent to ~ df-suc given excluded middle.
        It is an ordinal, and has some successor-like properties (for example,
        we conjecture that we could prove that if ` A ` is an ordinal, then both
-       ` U. suc A = A ` and ` U. { x e. On | x C_ A } = A ` ).  (Contributed by
-       Jim Kingdon, 21-Jul-2019.) $)
+       ` U. suc A = A ` and ` U. { x e. On | x C_ A } = A ` ).
+
+       Constructively ` ( ~P A i^i On ) ` and ` suc A ` cannot be shown to be
+       equivalent (as proved at ~ ordpwsucexmid ).  (Contributed by Jim
+       Kingdon, 21-Jul-2019.) $)
     ordpwsucss $p |- ( Ord A -> suc A C_ ( ~P A i^i On ) ) $=
       ( vx word csuc cpw con0 cin cv wcel wa wi ordsuc ordelon ex sylbi
       wss wtr ordtr trsucss syl jcad selpw anbi2ci bitri syl6ibr ssrdv
@@ -37001,6 +37004,21 @@ $)
      22-Jul-2019.) $)
   ssnel $p |- ( A C_ B -> -. B e. A ) $=
     ( wss wcel elirr ssel mtoi ) ABCBADBBDBEABBFG $.
+
+  ${
+    $d ph x z $.
+    ordpwsucexmid.1 $e |- A. x e. On suc x = ( ~P x i^i On ) $.
+    $( The subset in ~ ordpwsucss cannot be equality.  That is, strengthening
+       it to equality implies excluded middle.  (Contributed by Jim Kingdon,
+       30-Jul-2019.) $)
+    ordpwsucexmid $p |- ( ph \/ -. ph ) $=
+      ( vz c0 csn crab wcel wceq wo wn csuc cpw con0 cin 0elpw 0elon elin ax-mp
+      cv mpbir2an ordtriexmidlem pweq ineq1d eqeq12d vtoclri eleqtrri elsuci wb
+      suceq 0ex snid biidd elrab3 biimpi ordtriexmidlem2 eqcoms orim12i ) EADEF
+      ZGZHZEUTIZJZAAKZJEUTLZHVCEUTMZNOZVEEVGHEVFHENHUTPQEVFNRUAUTNHVEVGIZADUBBT
+      ZLZVIMZNOZIVHBUTNVIUTIZVJVEVLVGVIUTUJVMVKVFNVIUTUCUDUECUFSUGEUTUHSVAAVBVD
+      VAAEUSHVAAUIEUKULAADEUSDTEIAUMUNSUOVDUTEADUPUQURS $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
