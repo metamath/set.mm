@@ -55850,13 +55850,13 @@ $)
 
   $( Equality theorem for parallel product.  (Contributed by Scott Fenton,
      31-Jul-2019.) $)
-   pprodeq1 $p |- ( A = B -> PProd ( A , C ) = PProd ( B , C ) ) $=
+  pprodeq1 $p |- ( A = B -> PProd ( A , C ) = PProd ( B , C ) ) $=
      ( wceq c1st ccom c2nd ctxp cpprod coeq1 txpeq1 syl df-pprod 3eqtr4g ) ABDZ
      AEFZCGFZHZBEFZQHZACIBCIOPSDRTDABEJPSQKLACMBCMN $.
 
   $( Equality theorem for parallel product.  (Contributed by Scott Fenton,
      31-Jul-2019.) $)
-   pprodeq2 $p |- ( A = B -> PProd ( C , A ) = PProd ( C , B ) ) $=
+  pprodeq2 $p |- ( A = B -> PProd ( C , A ) = PProd ( C , B ) ) $=
      ( wceq c1st ccom c2nd ctxp cpprod coeq1 txpeq2 syl df-pprod 3eqtr4g ) ABDZ
      CEFZAGFZHZPBGFZHZCAICBIOQSDRTDABGJQSPKLCAMCBMN $.
 
@@ -56518,13 +56518,13 @@ $)
       QHUDABCDEFRSUA $.
   $}
 
-  ${ 
-     $d A x s r $. $d S x s r $. $d R x s r $. $d C x s r $.
-     clos1basesucg.1 $e |- C = Clos1 ( S , R ) $.
-     $( A member of a closure is either in the base set or connected to another
+  ${
+    $d A x s r $.  $d S x s r $.  $d R x s r $.  $d C x s r $.
+    clos1basesucg.1 $e |- C = Clos1 ( S , R ) $.
+    $( A member of a closure is either in the base set or connected to another
        member by ` R ` .  Theorem IX.5.16 of [Rosser] p. 248.  (Contributed by
        Scott Fenton, 31-Jul-2019.) $)
-     clos1basesucg $p |- ( ( S e. V /\ R e. W ) ->
+    clos1basesucg $p |- ( ( S e. V /\ R e. W ) ->
        ( A e. C <-> ( A e. S \/ E. x e. C x R A ) ) ) $=
        ( vs vr wcel cclos1 cv wbr wrex wo wb wceq eleq2d bibi12d clos1eq1 eleq2
        rexeqdv orbi12d clos1eq2 breq rexeqbidv orbi2d eqid clos1basesuc vtocl2g
@@ -56568,12 +56568,13 @@ $)
       TMCCSVHVIDCUOGHABCTCDEFULUPUMCASUTABCFUNUQUR $.
   $}
 
-  ${ $d R x y $. $d C x y $.
-     clos10.1 $e |- R e. _V $.
-     clos10.2 $e |- C = Clos1 ( (/) , R ) $.
-     $( The value of a closure over an empty base set.  (Contributed by 
-     	Scott Fenton, 31-Jul-2019.)  $)
-     clos10 $p |- C = (/) $=
+  ${
+    $d R x y $.  $d C x y $.
+    clos10.1 $e |- R e. _V $.
+    clos10.2 $e |- C = Clos1 ( (/) , R ) $.
+    $( The value of a closure over an empty base set.  (Contributed by Scott
+       Fenton, 31-Jul-2019.) $)
+    clos10 $p |- C = (/) $=
        ( vx vy c0 cvv wcel wss cv wbr wa wi wal wral 0ex 0ss noel pm2.21i rgenw
        adantr ax-gen clos1induct mp3an eqssi ) AGGHIGGJEKZGIZUGFKZBLZMUIGIZNZFO
        ZEAPAGJQGRUMEAULFUHUKUJUHUKUGSTUBUCUAEFABGHGQCDUDUEARUF $.
@@ -59505,7 +59506,7 @@ $)
     $d A b x $.
     $( Define the type-raising operation on a cardinal number.  This is the
        unique cardinal containing the unit power classes of the elements of the
-       given cardinal.  Definition adapted from [Rosser] p.  528. (Contributed
+       given cardinal.  Definition adapted from [Rosser] p. 528.  (Contributed
        by Scott Fenton, 24-Feb-2015.) $)
     df-tc $a |- T_c A = ( iota b ( b e. NC /\ E. x e. A b = Nc ~P1 x ) ) $.
   $}
@@ -60666,8 +60667,8 @@ $)
       VQVTZXNWHWHHXRVFWHURLMAWHUOUICVRVSWIWFWHAUCWAWBTRWC $.
   $}
 
-  $( Compute an exponent of the cardinality of one.  Theorem 4.3 of
-     [Specker].  (Contributed by SF, 4-Mar-2015.) $)
+  $( Compute an exponent of the cardinality of one.  Theorem 4.3 of [Specker].
+     (Contributed by SF, 4-Mar-2015.) $)
   ce2nc1 $p |- ( 2c ^c Nc 1c ) = Nc _V $=
     ( c2c c1c cnc cce co cvv cpw cpw1 wceq df1c2 nceqi vvex ce2 ax-mp pwv eqtri
     ) ABCZDEZFGZCZFCQFHZCIRTIBUAJKFQLMNSFOKP $.
@@ -62669,19 +62670,21 @@ $)
      generator. $)
   cfrec $a class FRec ( F , I ) $.
 
-  ${ $d F x $. $d I x $.
-  $( Define the finite recursive function generator.  This is a function over
-     ` Nn ` that obeys the standard recursion relationship.  Definition
-     adapted from theorem XI.3.24 of [Rosser] p. 412.  (Contributed
-     by Scott Fenton, 30-Jul-2019.) $)
-  df-frec $a |- FRec ( F , I ) = 
+  ${
+    $d F x $.  $d I x $.
+    $( Define the finite recursive function generator.  This is a function over
+       ` Nn ` that obeys the standard recursion relationship.  Definition
+       adapted from theorem XI.3.24 of [Rosser] p. 412.  (Contributed by Scott
+       Fenton, 30-Jul-2019.) $)
+    df-frec $a |- FRec ( F , I ) = 
     Clos1 ( { <. 0c , I >. } , PProd ( ( x e. _V |-> ( x +c 1c ) ) , F ) ) $.
   $}
 
-  ${ $d F x $. $d G x $. $d I x $. $d J x $.
-     $( Equality theorem for finite recursive function generator.  (Contributed
-     	by Scott Fenton, 31-Jul-2019.) $)
-     freceq12 $p |- ( ( F = G /\ I = J ) -> FRec ( F , I ) = FRec ( G , J ) ) $=
+  ${
+    $d F x $.  $d G x $.  $d I x $.  $d J x $.
+    $( Equality theorem for finite recursive function generator.  (Contributed
+       by Scott Fenton, 31-Jul-2019.) $)
+    freceq12 $p |- ( ( F = G /\ I = J ) -> FRec ( F , I ) = FRec ( G , J ) ) $=
        ( vx wceq wa c0c cop csn cvv cv c1c cplc cpprod cclos1 cfrec syl df-frec
        cmpt opeq2 sneqd clos1eq1 pprodeq2 clos1eq2 sylan9eqr 3eqtr4g ) ABFZCDFZ
        GHCIZJZEKELMNTZAOZPZHDIZJZULBOZPZACQBDQUIUHUNUPUMPZURUIUKUPFUNUSFUIUJUOC
@@ -62689,10 +62692,10 @@ $)
   $}
 
   ${
-     $d x y z w $.
-     $( The function mapping ` x ` to its cardinal successor exists. 
-     	(Contributed by Scott Fenton, 30-Jul-2019.) $)
-     csuccex $p |- ( x e. _V |-> ( x +c 1c ) ) e. _V $=
+    $d x y z w $.
+    $( The function mapping ` x ` to its cardinal successor exists.
+       (Contributed by Scott Fenton, 30-Jul-2019.) $)
+    csuccex $p |- ( x e. _V |-> ( x +c 1c ) ) e. _V $=
        ( vy vz vw cvv cv c1c cplc caddcfn c1st wbr wa wex wceq wcel bitri exbii
        cop vex syl6bb cmpt csn cxp cres ccnv ccom wfun wrel funmpt funrel ax-mp
        relco brcnv br1st anbi1i 19.41v bitr4i excom breq1 brres braddcfn opelxp
@@ -62709,7 +62712,8 @@ $)
        RIWPWBEWOWCGWEWFWGJWHWIWJWK $.
   $}
 
-  ${ $d G x y z w $. $d I x y z w $.
+  ${
+    $d G x y z w $.  $d I x y z w $.
     frecex.1 $e |- F = FRec ( G , I ) $.
     $( The finite recursive function generator preserves sethood.  (Contributed
        by Scott Fenton, 30-Jul-2019.) $)
@@ -62726,12 +62730,13 @@ $)
       ( cvv wcel frecexg ax-mp ) BFGAFGEABCFDHI $.
   $}
 
-  ${ $d F x y z w a b c d i $. $d G x y z w a b c d i $. $d I i x $.
-     frecxp.1 $e |- F = FRec ( G , I ) $.
-     frecxp.2 $e |- G e. _V $.
-     $( Subset relationship for the finite recursive function generator.
-     	(Contributed by Scott Fenton, 30-Jul-2019.) $)
-     frecxp $p |- F C_ ( Nn X. ( ran G u. { I } ) ) $=
+  ${
+    $d F x y z w a b c d i $.  $d G x y z w a b c d i $.  $d I i x $.
+    frecxp.1 $e |- F = FRec ( G , I ) $.
+    frecxp.2 $e |- G e. _V $.
+    $( Subset relationship for the finite recursive function generator.
+       (Contributed by Scott Fenton, 30-Jul-2019.) $)
+    frecxp $p |- F C_ ( Nn X. ( ran G u. { I } ) ) $=
        ( vy vz vx va vb vc vd cnnc cvv wcel cv wceq c0c wa c0 vi vw crn csn cun
        cfrec cxp wss eqid freceq12 mpan sneq uneq2d xpeq2d sseq12d cop c1c cplc
        cmpt cpprod wbr wal wral nncex rnex snex unex xpex peano1 vex snid elun2
@@ -62757,14 +62762,15 @@ $)
        UPXQZYQHBCXRUWLUWOTYQUWLUWOTUUPXQZTUWLUWNTQZUWOUWPQUWLUWMNOZXSUWQUWRYRUW
        RRNOYRRCXTYAYBUWMYCYIUUPUWNTYDWLUWPUUPUWKUWPUIYEYFYQYGYHYJYKYL $.
 
-    $( The finite recursive function generator gives a relationship. 
+    $( The finite recursive function generator gives a relationship.
        (Contributed by Scott Fenton, 30-Jul-2019.) $)
     relfrec $p |- Rel F $=
       ( cnnc crn csn cun cxp wss wrel frecxp relxp relss mp2 ) AFBGCHIZJZKRLALA
       BCDEMFQNAROP $.
   $}
 
-  ${ $d G g $. $d I g $.
+  ${
+    $d G g $.  $d I g $.
     frecxpg.1 $e |- F = FRec ( G , I ) $.
     $( Subset relationship for the finite recursive function generator.
        (Contributed by Scott Fenton, 31-Jul-2019.) $)
@@ -62783,14 +62789,14 @@ $)
   $}
 
   ${
-    $d F w x y z a b t $. $d G w x y z a b t $. $d I w x y z a b t $. 
+    $d F w x y z a b t $.  $d G w x y z a b t $.  $d I w x y z a b t $.
     $d ph w x y z a b t $.
     dmfrec.1 $e |- F = FRec ( G , I ) $.
     dmfrec.2 $e |- ( ph -> G e. V ) $.
     dmfrec.3 $e |- ( ph -> I e. dom G ) $.
     dmfrec.4 $e |- ( ph -> ran G C_ dom G ) $.
-    $( The domain of the finite recursive function generator is the 
-       naturals.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    $( The domain of the finite recursive function generator is the naturals.
+       (Contributed by Scott Fenton, 31-Jul-2019.) $)
     dmfrec $p |- ( ph -> dom F = Nn ) $=
       ( vw vy vz cnnc wcel cvv c0c cv wbr wex wceq vx vt va cdm crn csn cun cxp
       vb wss frecxpg dmss 3syl dmxpss syl6ss c1c cplc wi wral frecexg dmexg cop
@@ -62818,6 +62824,52 @@ $)
       UXFLUVNCXRUXBUXGLUXBUUIUUKUVBRZUXGUXHUUKUUKTZUUKXSUVNUVATUVNUUKTUXIJKUUIU
       UKUVBUWFUUIUPUWFYAXTJUAYBUVAUUKUVNUUTUUIUPYCYDUVNUUKUUKYEJKUVAYFYGYHUUIUV
       NUUKUWTUVBCXDYIYJYKYLUVPUXBLYMYKLUUKBWEYNYOYPWNYQUAUUAOYRYSYT $.
+  $}
+
+  ${
+    $d F w y z $.
+    $( Lemma for ~ fnfrec .  Establish stratification for induction.
+       (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    fnfreclem1 $p |- ( F e. V -> 
+                { w | A. y A. z ( ( w F y /\ w F z ) -> y = z ) } e. _V ) $=
+       ( wcel cv wbr wa weq wal cvv cid wn vex cop wex df-br bitri exbii wi cab
+       ccnv cxp cins2 cin cins3 cdif crn ccompl elcompl elrn2 eldif elin opelxp
+       opelcnv mpbiran 3bitr4i otelins2 anbi12i otelins3 equcom 3bitr2i exanali
+       ideq notbii exnal 3bitrri con1bii abbi2i vvex cnvexg sylancr ins2exg syl
+       xpexg inexg syl2anc idex ins3ex difexg mpan2 rnexg complexg syl5eqelr
+       3syl ) DEFZCGZAGZDHZWHBGZDHZIZABJZUABKZAKZCUBLDUCZUDZWQUEZUFZMUGZUHZUIZU
+       IZUJZLWPCXEWHXEFWHXDFZNWPWHXDCOZUKWPXFXFWIWHPZXCFZAQWMWNNZIZBQZAQZWPNZAW
+       HXCULXIXLAXIWKXHPZXBFZBQXLBXHXBULXPXKBXPXOWTFZXOXAFZNZIXKXOWTXAUMXQWMXSX
+       JXQXOWRFZXOWSFZIWMXOWRWSUNXTWJYAWLXHWQFZWHWIPDFXTWJWIWHDUPXTWKLFYBBOWKXH
+       LWQUOUQWHWIDRURWKWHPWQFWHWKPDFYAWLWKWHDUPWKWIWHWQAOZUSWHWKDRURUTSXRWNXRW
+       KWIPMFWKWIMHZWNWKWIWHMXGVAWKWIMRYDBAJWNWKWIYCVEBAVBSVCVFUTSTSTXMWONZAQXN
+       XLYEAWMWNBVDTWOAVGSVHVISVJWGXCLFZXDLFXELFWGWTLFZXBLFZYFWGWRLFZWSLFZYGWGL
+       LFWQLFZYIVKDEVLZLWQLLVPVMWGYKYJYLWQLVNVOWRWSLLVQVRYGXALFYHMVSVTWTXALLWAW
+       BXBLWCWFXCLWCXDLWDWFWE $.
+  $}
+
+  ${
+    $d G y w z a b $.  $d I y w z a b $.  $d X y w z a b $.  $d ph z $.
+    $d F z $.
+    fnfreclem2.1 $e |- F = FRec ( G , I ) $.
+    fnfreclem2.2 $e |- ( ph -> G e. V ) $.
+    fnfreclem2.3 $e |- ( ph -> I e. dom G ) $.
+    fnfreclem2.4 $e |- ( ph -> ran G C_ dom G ) $.
+    $( Lemma for ~ fnfrec .  Calculate the unique value of ` F ` at zero.
+       (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    fnfreclem2 $p |- ( ph -> ( 0c F X -> X = I ) ) $=
+       ( vz vw va vb c0c wbr wcel wceq cv cvv vy cop df-br csn cplc cmpt cpprod
+       c1c wrex wo wb snex csuccex pprodexg sylancr cfrec df-frec clos1basesucg
+       cclos1 eqtri wi wa elsni opth sylib simprd a1i wex wn relfrecg syl elrel
+       wrel sylan 0cnsuc necomi vex 0cex addceq1 eqeq2d eqeq1 mptv brab nemtbir
+       intnanr qrpprod syl6bb mtbiri exlimivv nrexdv pm2.21d jaod sylbid syl5bi
+       weq breq1 ) OFBPOFUBZBQZAFDRZOFBUCAWRWQODUBZUDZQZKSZWQLTLSZUHUEZUFZCUGZP
+       ZKBUIZUJZWSAXATQXGTQZWRXJUKWTULAXFTQCEQZXKLUMHXFCTEUNUOKWQBXGXATTBCDUPXA
+       XGUSGLCDUQUTURUOAXBWSXIXBWSVAAXBOORZWSXBWQWTRXMWSVBWQWTVCOFODVDVEVFVGAXI
+       WSAXHKBAXCBQZVBXCMSZNSZUBZRZNVHMVHZXHVIZABVMZXNXSAXLYAHBCDEGVJVKMNXCBVLV
+       NXRXTMNXRXHXOOXFPZXPFCPZVBZYBYCYBOXOUHUEZYEOXOVOVPUASZXERYFYEROYERLUAXOO
+       XFMVQVRLMWOXEYEYFXDXOUHVSVTYFOYEWALUAXEWBWCWDWEXRXHXQWQXGPYDXCXQWQXGWPXO
+       XPOFXFCWFWGWHWIVKWJWKWLWMWN $.
   $}
 
 $(
