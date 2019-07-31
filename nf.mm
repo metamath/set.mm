@@ -38748,27 +38748,6 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
       VLHWLVLVDWMVOWOWBWLVLISWNWAAWLVLWLVLVRSUTVAVBVCVEVLWQVFRVGFBVHVIVJ $.
   $}
 
-  ${
-    $d A x $.  $d ch x $.  $d ph y $.  $d ps x $.  $d ta x $.  $d th x $.
-    $d x y $.
-    finds.1 $e |- { x | ph } e. _V $.
-    finds.2 $e |- ( x = 0c -> ( ph <-> ps ) ) $.
-    finds.3 $e |- ( x = y -> ( ph <-> ch ) ) $.
-    finds.4 $e |- ( x = ( y +c 1c ) -> ( ph <-> th ) ) $.
-    finds.5 $e |- ( x = A -> ( ph <-> ta ) ) $.
-    finds.6 $e |- ps $.
-    finds.7 $e |- ( y e. Nn -> ( ch -> th ) ) $.
-    $( Principle of finite induction over the finite cardinals, using implicit
-       substitutions.  The first hypothesis ensures stratification of ` ph ` ,
-       the next four set up the substitutions, and the last two set up the base
-       case and induction hypothesis.  Compare Theorem X.1.13 of [Rosser]
-       p. 277.  (Contributed by SF, 14-Jan-2015.) $)
-    finds $p |- ( A e. Nn -> ta ) $=
-      ( cnnc wcel cvv c0c elab cab cv c1c cplc wi wral wss 0cex vex 1cex addcex
-      mpbir 3imtr4g rgen peano5 mp3an sseli elabg mpbid ) HPQHAFUAZQEPUTHUTRQSU
-      TQZGUBZUTQZVBUCUDZUTQZUEZGPUFPUTUGIVABNABFSUHJTULVFGPVBPQCDVCVEOACFVBGUIZ
-      KTADFVDVBUCVGUJUKLTUMUNGUTRUOUPUQAEFHPMURUS $.
-  $}
 
   ${
     $d A x $.  $d ch x $.  $d ph y $.  $d ps x $.  $d ta x $.  $d th x $.
@@ -38792,6 +38771,26 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
       adantr ) IRSZFUAIAGUBZSZEFVFVHFRVGIFVGJSUCVGSZHUMZVGSZVJUDUEZVGSZUNZHRUFR
       VGUGKFBVIPABGUCUHLTUIFVNHRVJRSZFVNVOFUACDVKVMQACGVJHUJZMTADGVLVJUDVPUKULN
       TUOUPUQHVGJURUSUTVAVFVHEVBFAEGIROVCVEVD $.
+  $}
+
+  ${
+    $d A x $.  $d ch x $.  $d ph y $.  $d ps x $.  $d ta x $.  $d th x $.
+    $d x y $.
+    finds.1 $e |- { x | ph } e. _V $.
+    finds.2 $e |- ( x = 0c -> ( ph <-> ps ) ) $.
+    finds.3 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    finds.4 $e |- ( x = ( y +c 1c ) -> ( ph <-> th ) ) $.
+    finds.5 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    finds.6 $e |- ps $.
+    finds.7 $e |- ( y e. Nn -> ( ch -> th ) ) $.
+    $( Principle of finite induction over the finite cardinals, using implicit
+       substitutions.  The first hypothesis ensures stratification of ` ph ` ,
+       the next four set up the substitutions, and the last two set up the base
+       case and induction hypothesis.  Compare Theorem X.1.13 of [Rosser]
+       p. 277.  (Contributed by SF, 14-Jan-2015.) $)
+    finds $p |- ( A e. Nn -> ta ) $=
+      ( cnnc wcel wtru cvv a1i tru cab cv wi adantr findsd mpan2 ) HPQREUAABCDE
+      RFGHSAFUBSQRITJKLMBRNTGUCPQCDUDROUEUFUG $.
   $}
 
   ${
