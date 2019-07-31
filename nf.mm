@@ -59914,20 +59914,22 @@ $)
       UUHBOWNUUPUUIWPXIUUOUUIWQUUGAUUHBWRWSXOUUJXJMXCWTXAXDWIXEXFXG $.
   $}
 
-  $( Cardinal zero is the cardinality of the empty set.  (Contributed by SF,
-     24-Feb-2015.) $)
+  $( Cardinal zero is the cardinality of the empty set.  Theorem XI.2.7 of
+     [Rosser] p. 372.  (Contributed by SF, 24-Feb-2015.) $)
   df0c2 $p |- 0c = Nc (/) $=
     ( vx c0 cen cec cv wbr cab cnc c0c dfec2 df-nc wceq wcel en0 ensym 3bitr4ri
     el0c abbi2i 3eqtr4ri ) BCDBAEZCFZAGBHIABCJBKUAAITBCFTBLUATIMTNBTOTQPRS $.
 
-  $( Cardinal zero is a cardinal number.  (Contributed by SF, 24-Feb-2015.) $)
+  $( Cardinal zero is a cardinal number.  Corollary 1 to theorem XI.2.7 of
+     [Rosser] p. 373.  (Contributed by SF, 24-Feb-2015.) $)
   0cnc $p |- 0c e. NC $=
     ( c0c c0 cnc cncs df0c2 0ex ncelncsi eqeltri ) ABCDEBFGH $.
 
 
   ${
     $d f x $.  $d f y $.  $d f z $.  $d x y $.  $d x z $.  $d y z $.
-    $( Cardinal one is a cardinal number.  (Contributed by SF, 24-Feb-2015.) $)
+    $( Cardinal one is a cardinal number.  Corollary 2 to theorem XI.2.8 of
+       [Rosser] p. 373. (Contributed by SF, 24-Feb-2015.) $)
     1cnc $p |- 1c e. NC $=
       ( vx vy vz vf c1c wcel cv cnc wceq wex csn cen wbr cvv vex exlimiv eqeq2d
       crn spcev sylbi cncs cec cab dfec2 df-nc el1c en2sn mp2an breq2 wf1o bren
@@ -59945,8 +59947,8 @@ $)
 
   ${
     df1c3.1 $e |- A e. _V $.
-    $( Cardinal one is the cardinality of a singleton.  (Contributed by SF,
-       2-Mar-2015.) $)
+    $( Cardinal one is the cardinality of a singleton.  Theorem XI.2.8 of
+       [Rosser] p. 373.  (Contributed by SF, 2-Mar-2015.) $)
     df1c3 $p |- 1c = Nc { A } $=
       ( c1c csn cnc wceq wcel snel1c cncs wb 1cnc ncseqnc ax-mp mpbir ) CADZEFZ
       OCGZABHCIGPQJKCOLMN $.
@@ -59954,8 +59956,8 @@ $)
 
   ${
     $d A x $.
-    $( Cardinal one is the cardinality of a singleton.  (Contributed by SF,
-       13-Mar-2015.) $)
+    $( Cardinal one is the cardinality of a singleton.  Theorem XI.2.8 of
+       [Rosser] p. 373. (Contributed by SF, 13-Mar-2015.) $)
     df1c3g $p |- ( A e. V -> 1c = Nc { A } ) $=
       ( vx c1c cv csn cnc wceq sneq nceqd eqeq2d vex df1c3 vtoclg ) DCEZFZGZHDA
       FZGZHCABOAHZQSDTPROAIJKOCLMN $.
@@ -59985,8 +59987,8 @@ $)
 
   ${
     $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d x y $.  $d x z $.  $d y z $.
-    $( The cardinals are closed under cardinal addition.  (Contributed by SF,
-       24-Feb-2015.) $)
+    $( The cardinals are closed under cardinal addition.  Theorem XI.2.10
+       of [Rosser] p. 374.  (Contributed by SF, 24-Feb-2015.) $)
     ncaddccl $p |- ( ( A e. NC /\ B e. NC ) -> ( A +c B ) e. NC ) $=
       ( vx vy vz cncs wcel cv cnc wceq wex elncs wa c0 csn cxp cen mpbir eqcomi
       cplc eeanv ccompl wbr vex 0ex complex xpsnen snex xpex eqnc eqtr addceq12
@@ -60014,8 +60016,8 @@ $)
       UBUDENUBUFENUBAENOUEUGRUDPFUDSTUA $.
   $}
 
-  $( The finite cardinals are a subset of the cardinals.  (Contributed by SF,
-     24-Feb-2015.) $)
+  $( The finite cardinals are a subset of the cardinals.  Theorem XI.2.11 of
+     [Rosser] p. 374. (Contributed by SF, 24-Feb-2015.) $)
   nnssnc $p |- Nn C_ NC $=
     ( vx cnnc cncs cv nnnc ssriv ) ABCADEF $.
 
@@ -63023,6 +63025,16 @@ $)
        POXOPOZXGXRVAXHWJAXNPOYQUUFLWKGXNCPUTWLWMKXFBXOXIPPBCDWNXIXOWPFLCDWQWRWS
        WMWTAYFYLXEXGVAYGYMRXBXDBXATWT $.
   $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordinal numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Define new constants. $)
+  $c ~ord $. $( Ordinal similarity. $)
+  
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
