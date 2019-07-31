@@ -61586,6 +61586,78 @@ $)
   $}
 
   ${
+     $d A x y z $. $d B x y z $. $d C x y z $.
+     $( Distributivity law for cardinal addition and multiplication.
+     	Theorem XI.2.31 of [Rosser] p. 379.  (Contributed by Scott Fenton,
+	31-Jul-2019.) $)
+     addcdi $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
+       ( A .c ( B +c C ) ) = ( ( A .c B ) +c ( A .c C ) ) ) $=
+       ( vx vy vz cncs wcel cplc cmuc co wceq cv cnc vex wa wi cxp mucnc oveq1
+       w3a ncaddccl 3adant1 wex elncs ncid eleq2 mpbiri cin c0 cun wrex ncseqnc
+       eladdc bi2anan9 ncdisjun oveq2d xpdisj2 xpex syl unex xpundi nceqi eqtri
+       addceq12i 3eqtr4g eqtr3d addceq12d eqeq12d syl5ibr exlimiv sylbi adantrd
+       addceq12 oveq2 adantr adantl imbi2d syl5ibrcom 3ad2ant1 rexlimdvv syl5bi
+       wb sylbird syl5 exlimdv mpd ) AGHZBGHZCGHZUAZBCIZGHZAWLJKZABJKZACJKZIZLZ
+       WIWJWMWHBCUBUCWMWLDMZNZLZDUDWKWRDWLUEWKXAWRDXAWSWLHZWKWRXAXBWSWTHWSDOZUF
+       WLWTWSUGUHXBEMZFMZUIUJLZWSXDXEUKZLZPZFCULEBULWKWRWSBCEFUNWKXIWREFBCWKXDB
+       HZXECHZPZBXDNZLZCXENZLZPZXIWRQZWIWJXQXLWCWHWIXNXJWJXPXKBXDUMCXEUMUOUCWHW
+       IXQXRQWJWHXRXQXIAXMXOIZJKZAXMJKZAXOJKZIZLZQWHXFYDXHWHAWTLZDUDXFYDQZDAUEY
+       EYFDXFYDYEWTXSJKZWTXMJKZWTXOJKZIZLXFWTXGNZJKZYGYJXFYKXSWTJXDXEEOZFOZUPUQ
+       XFWSXDRZWSXERZUKZNZYONZYPNZIZYLYJXFYOYPUIUJLYRUUALXDXEWSWSURYOYPWSXDXCYM
+       USWSXEXCYNUSUPUTYLWSXGRZNYRWSXGXCXDXEYMYNVASUUBYQWSXDXEVBVCVDYHYSYIYTWSX
+       DXCYMSWSXEXCYNSVEVFVGYEXTYGYCYJAWTXSJTYEYAYHYBYIAWTXMJTAWTXOJTVHVIVJVKVL
+       VMXQWRYDXIXQWNXTWQYCXQWLXSAJBCXMXOVNUQXQWOYAWPYBXNWOYALXPBXMAJVOVPXPWPYB
+       LXNCXOAJVOVQVHVIVRVSVTWDWAWBWEWFWBWG $.
+  $}
+
+  $( Distributivity law for cardinal addition and multiplication.
+     Theorem XI.2.30 of [Rosser] p. 379.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+  addcdir $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
+       ( ( A +c B ) .c C ) = ( ( A .c C ) +c ( B .c C ) ) ) $=
+    ( cncs wcel w3a cplc cmuc wceq addcdi 3coml ncaddccl 3adant3 muccom syl2anc
+    co simp3 3adant2 3adant1 addceq12d 3eqtr4d ) ADEZBDEZCDEZFZCABGZHPZCAHPZCBH
+    PZGZUFCHPZACHPZBCHPZGUDUBUCUGUJICABJKUEUFDEZUDUKUGIUBUCUNUDABLMUBUCUDQUFCNO
+    UEULUHUMUIUBUDULUHIUCACNRUCUDUMUIIUBBCNSTUA $.
+
+  ${
+     $d A x y $. $d B x y $.
+     $( The cardinal product of two cardinal numbers is zero iff one
+     	of the numbers is zero.  Biconditional form of theorem XI.2.34 of
+     	[Rosser] p. 380.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+     muc0or $p |- ( ( A e. NC /\ B e. NC ) -> ( ( A .c B ) = 0c <->
+     	    ( A = 0c \/ B = 0c ) ) ) $=
+       ( vx vy cncs wcel wa cmuc co c0c wceq wo cv cnc wi c0 df0c2 sylbi eqeq1d
+       wex elncs anbi12i eeanv bitr4i cxp vex mucnc eqeq12i cen xpex eqnc bitri
+       wbr en0 xpeq0 nceq orim12i oveq12 wb adantr eqeq2i syl6bb adantl orbi12d
+       eqeq1 mpbiri exlimivv 0cnc muccom mpan muc0 eqtrd oveq1 syl5ibrcom oveq2
+       imbi12d jaod impbid ) AEFZBEFZGZABHIZJKZAJKZBJKZLZWAACMZNZKZBDMZNZKZGZDT
+       CTZWCWFOZWAWICTZWLDTZGWNVSWPVTWQCAUADBUAUBWIWLCDUCUDWMWOCDWMWOWHWKHIZJKZ
+       WHPNZKZWKWTKZLZOWSWGWJUEZNZWTKZXCWRXEJWTWGWJCUFZDUFZUGQUHXFXDPKZXCXFXDPU
+       IUMXIXDPWGWJXGXHUJUKXDUNULXIWGPKZWJPKZLXCWGWJUOXJXAXKXBWGPUPWJPUPUQRRRWM
+       WCWSWFXCWMWBWRJAWHBWKHURSWMWDXAWEXBWMWDWHJKZXAWIWDXLUSWLAWHJVEUTJWTWHQVA
+       VBWLWEXBUSWIWLWEWKJKXBBWKJVEJWTWKQVAVBVCVDVPVFVGRWAWDWCWEVTWDWCOVSVTWCWD
+       JBHIZJKVTXMBJHIZJJEFVTXMXNKVHJBVIVJBVKVLWDWBXMJAJBHVMSVNVCVSWEWCOVTVSWCW
+       EAJHIZJKAVKWEWBXOJBJAHVOSVNUTVQVR $.
+  $}
+
+  ${
+     $d A q $. $d B q $. $d C q $.
+     $( Multiplication law for cardinal less than.  Theorem XI.2.35 of 
+     	[Rosser] p. 380.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+     lemuc1 $p |- ( ( ( A e. NC /\ B e. NC /\ C e. NC ) /\ A <_c B ) ->
+       ( A .c C ) <_c ( B .c C ) ) $=
+       ( vq cncs wcel w3a clec wbr cmuc co cv cplc wceq wb dflec2 3adant3 muccl
+       wrex wa wi adantr ancoms adantll addlecncs syl2anc simpll simplr addcdir
+       simpr syl3anc breqtrrd oveq1 breq2d syl5ibrcom rexlimdva 3adant2 sylbid
+       imp ) AEFZBEFZCEFZGZABHIZACJKZBCJKZHIZVCVDBADLZMZNZDESZVGUTVAVDVKOVBABDP
+       QUTVBVKVGUAVAUTVBTZVJVGDEVLVHEFZTZVGVJVEVICJKZHIVNVEVEVHCJKZMZVOHVNVEEFZ
+       VPEFZVEVQHIVLVRVMACRUBVBVMVSUTVMVBVSVHCRUCUDVEVPUEUFVNUTVMVBVOVQNUTVBVMU
+       GVLVMUJUTVBVMUHAVHCUIUKULVJVFVOVEHBVICJUMUNUOUPUQURUS $.
+  $}
+
+
+  ${
     $d t u $.  $d t x $.  $d u x $.
     $( Lemma for ~ nnltp1c .  Set up stratification.  (Contributed by SF,
        25-Mar-2015.) $)
@@ -61717,42 +61789,6 @@ $(
        YSDUURYNYOUJYQYRWPYSYBYT $.
 $)
   $}
-
-
-  ${
-     $d A x y z $. $d B x y z $. $d C x y z $.
-     $( Distributivity law for cardinal addition and multiplication.
-     	Theorem XI.2.31 of [Rosser] p. 379.  (Contributed by Scott Fenton,
-	31-Jul-2019.) $)
-     addcdi $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
-       ( A .c ( B +c C ) ) = ( ( A .c B ) +c ( A .c C ) ) ) $=
-       ( vx vy vz cncs wcel cplc cmuc co wceq cv cnc vex wa wi cxp mucnc oveq1
-       w3a ncaddccl 3adant1 wex elncs ncid eleq2 mpbiri cin c0 cun wrex ncseqnc
-       eladdc bi2anan9 ncdisjun oveq2d xpdisj2 xpex syl unex xpundi nceqi eqtri
-       addceq12i 3eqtr4g eqtr3d addceq12d eqeq12d syl5ibr exlimiv sylbi adantrd
-       addceq12 oveq2 adantr adantl imbi2d syl5ibrcom 3ad2ant1 rexlimdvv syl5bi
-       wb sylbird syl5 exlimdv mpd ) AGHZBGHZCGHZUAZBCIZGHZAWLJKZABJKZACJKZIZLZ
-       WIWJWMWHBCUBUCWMWLDMZNZLZDUDWKWRDWLUEWKXAWRDXAWSWLHZWKWRXAXBWSWTHWSDOZUF
-       WLWTWSUGUHXBEMZFMZUIUJLZWSXDXEUKZLZPZFCULEBULWKWRWSBCEFUNWKXIWREFBCWKXDB
-       HZXECHZPZBXDNZLZCXENZLZPZXIWRQZWIWJXQXLWCWHWIXNXJWJXPXKBXDUMCXEUMUOUCWHW
-       IXQXRQWJWHXRXQXIAXMXOIZJKZAXMJKZAXOJKZIZLZQWHXFYDXHWHAWTLZDUDXFYDQZDAUEY
-       EYFDXFYDYEWTXSJKZWTXMJKZWTXOJKZIZLXFWTXGNZJKZYGYJXFYKXSWTJXDXEEOZFOZUPUQ
-       XFWSXDRZWSXERZUKZNZYONZYPNZIZYLYJXFYOYPUIUJLYRUUALXDXEWSWSURYOYPWSXDXCYM
-       USWSXEXCYNUSUPUTYLWSXGRZNYRWSXGXCXDXEYMYNVASUUBYQWSXDXEVBVCVDYHYSYIYTWSX
-       DXCYMSWSXEXCYNSVEVFVGYEXTYGYCYJAWTXSJTYEYAYHYBYIAWTXMJTAWTXOJTVHVIVJVKVL
-       VMXQWRYDXIXQWNXTWQYCXQWLXSAJBCXMXOVNUQXQWOYAWPYBXNWOYALXPBXMAJVOVPXPWPYB
-       LXNCXOAJVOVQVHVIVRVSVTWDWAWBWEWFWBWG $.
-  $}
-
-  $( Distributivity law for cardinal addition and multiplication.
-     Theorem XI.2.30 of [Rosser] p. 379.  (Contributed by Scott Fenton,
-     31-Jul-2019.) $)
-  addcdir $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
-       ( ( A +c B ) .c C ) = ( ( A .c C ) +c ( B .c C ) ) ) $=
-    ( cncs wcel w3a cplc cmuc wceq addcdi 3coml ncaddccl 3adant3 muccom syl2anc
-    co simp3 3adant2 3adant1 addceq12d 3eqtr4d ) ADEZBDEZCDEZFZCABGZHPZCAHPZCBH
-    PZGZUFCHPZACHPZBCHPZGUDUBUCUGUJICABJKUEUFDEZUDUKUGIUBUCUNUDABLMUBUCUDQUFCNO
-    UEULUHUMUIUBUDULUHIUCACNRUCUDUMUIIUBBCNSTUA $.
 
 
 $(
