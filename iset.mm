@@ -37036,6 +37036,13 @@ $)
       VAAEUSHVAAUIEUKULAADEUSDTEIAUMUNSUOVDUTEADUPUQURS $.
   $}
 
+  $( An ordinal number is a proper subset of its successor.  (Contributed by
+     Stefan O'Rear, 18-Nov-2014.) $)
+  onpsssuc $p |- ( A e. On -> A C. suc A ) $=
+    ( con0 wcel csuc wss wceq wn wa wpss elirr sucidg syl5ibrcom mtoi
+    eleq2 sssucid jctil dfpss2 sylibr ) ABCZAADZEZATFZGZHATISUCUASUBA
+    ACZAJSUDUBATCABKATANLMAOPATQR $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Transfinite induction
