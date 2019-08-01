@@ -61694,6 +61694,16 @@ $)
     ( cvv cxp cnc wceq cen wbr cmuc co vvex mucnc ncvsq eqtr3i xpex eqnc mpbi )
     AABZCZACZDPAEFRRGHQRAAIIJKLPAAAIIMNO $.
 
+  ${
+     $( Cardinal one is strictly greater than cardinal zero.  (Contributed
+     	by Scott Fenton, 01-Aug-2019.) $)
+     0lt1c $p |- 0c <c 1c $=
+       ( vx c0c cv csn cnc c1c cltc wbr clec wne c0 df0c2 wss 0ss 0ex snex wceq
+       wn df-ne wcel nclec ax-mp eqbrtri snnz mpbi ncid eleq2 mpbiri el0c sylib
+       vex mto mpbir brltc mpbir2an df1c3 breqtrri ) BACZDZEZFGBUTGHBUTIHBUTJZB
+       KEZUTILKUSMVBUTIHUSNKUSOURPZUAUBUCVABUTQZRVDUSKQZUSKJVERURAUKZUDUSKSUEVD
+       USBTZVEVDVGUSUTTUSVCUFBUTUSUGUHUSUIUJULBUTSUMBUTUNUOURVFUPUQ $.
+  $}
   
   ${
     $d t u $.  $d t x $.  $d u x $.
@@ -61730,12 +61740,21 @@ $)
   $}
 
   ${
+     $( Relationship between successor and cardinal less than or equal.  
+     	(Contributed by Scott Fenton, 01-Aug-2019.) $)
+     ncslesuc $p |- ( ( M e. NC /\ N e. NC ) -> ( M <_c ( N +c 1c ) <->
+       ( M <_c N \/ M = ( N +c 1c ) ) ) ) $=
+       ( cncs wcel wa c1c cplc clec wbr wceq wo addlecncs mpan2 adantl wi simpl
+       1cnc simpr peano2nc syl lectr syl3anc mpan2d nclecid breq1 biimprd com12
+       jaod impbid ) ACDZBCDZEZABFGZHIZABHIZAUMJZK?ULUOUNUPULUOBUMHIZUNUKUQUJUK
+       FCDUQQBFLMNULUJUKUMCDZUOUQEUNOUJUKPUJUKRUKURUJBSZNABUMUAUBUCULUMUMHIZUPU
+       NOUKUTUJUKURUTUSUMUDTNUPUTUNUPUNUTAUMUMHUEUFUGTUHUI $.
+  $}
+
+  ${
     $d m p $.  $d m q $.  $d m x $.  $d m y $.  $d p q $.  $d p t $.  $d p x $.
     $d p y $.  $d q t $.  $d q x $.  $d t x $.  $d x y $.
-    $( 16-Apr-2015 NM I changed "~" to "~~?" to prevent erroneous
-       link to commented out theorem nmembers1.  Change it back when
-       nmembers1 is completed. $)
-    $( Lemma for ~~? nmembers1 .  Set up stratification.  (Contributed by SF,
+    $( Lemma for ~ nmembers1 .  Set up stratification.  (Contributed by SF,
        25-Mar-2015.) $)
     nmembers1lem1 $p |- { x | { m e. Nn | ( 1c <_c m /\ m <_c x ) } e. T_c
                                                   T_c x } e. _V $=
@@ -61774,58 +61793,72 @@ $)
       JYIUUIUUHUUHJYJXMZYEUYOYKYLXNUYNXNYHXLYMYOYOXP $.
   $}
 
+  $( Lemma for ~ nmembers1 .  The set of all elements between
+     one and zero is empty.  (Contributed by Scott Fenton, 01-Aug-2019.) $)
+  nmembers1lem2 $p |- { m e. Nn | ( 1c <_c m /\ m <_c 0c ) } e. 0c $=
+       ( c1c cv clec wbr wa cnnc crab wcel wn wral wi cltc 0lt1c cncs 0cnc 1cnc
+       c0c wb ltlenlec mp2an mpbi simpri nnnc lectr mp3an13 syl exp3a imp imnan
+       mtoi ex sylib rgen c0 wceq el0c rabeq0 bitri mpbir ) BACZDEZVARDEZFZAGHZ
+       RIZVDJZAGKZVGAGVAGIZVBVCJZLVGVIVBVJVIVBFVCBRDEZRBDEZVKJZRBMEZVLVMFZNROIZ
+       BOIZVNVOSPQRBTUAUBUCVIVBVCVKLVIVBVCVKVIVAOIZVDVKLZVAUDVQVRVPVSQPBVARUEUF
+       UGUHUIUKULVBVCUJUMUNVFVEUOUPVHVEUQVDAGURUSUT $.
+
   ${
-    $d m x $.  $d N m $.  $d m n $.  $d n x $.  $d N x $.  $d k m $.  $d k n $.
-     $( Count the number of elements in a natural interval.  This
-        theorem will take on a different form after we introduce the
-        Axiom of Counting. $)
-$( 16-Apr-2015 NM Commented out since incomplete proofs can't be used
-   for web pages. $)
-$(
+     $d A m x y $. $d B m x y $.
+     $( Lemma for ~ nmembers1 .  If the interval from one to a natural is
+     	in a given natural, extending it by one puts it in the next natural.
+	(Contributed by Scott Fenton, 01-Aug-2019.) $)
+     nmembers1lem3 $p |- ( ( A e. Nn /\ B e. Nn ) -> 
+     ( { m e. Nn | ( 1c <_c m /\ m <_c A ) } e. B ->
+       { m e. Nn | ( 1c <_c m /\ m <_c ( A +c 1c ) ) } e. ( B +c 1c ) ) ) $=
+       ( vx vy c1c cv clec wbr wa cnnc wcel cplc cun wceq wn syl adantr anbi12d
+       wo crab ccompl wrex wi cltc nnltp1c cncs wb nnnc peano2 ltlenlec syl2anc
+       csn mpbid simprd simpr nsyl breq2 breq1 elrab notbii imnan bitr4i sylibr
+       a1d elcomplg mpbird adantrd pm5.32d anass andi orbi1i bitri 3bitr3g 1cnc
+       ex addlecncs mpan addccom a1i breqtrrd jca eleq1 biimprd pm4.71rd bicomd
+       com12 orbi2d bitrd weq elun elsn orbi12i eqrdv sneq uneq2d eqeq2d rspcev
+       3bitr4g compleq uneq1 rexeqbidv sylan2 elsuc expcom ) FCGZHIZXFAHIZJZCKU
+       AZBLZAKLZBKLZJZXGXFAFMZHIZJZCKUAZBFMLZXKXNJXRDGZEGZUMZNZOZEXTUBZUCZDBUCZ
+       XSXNXKXRXJYBNZOZEXJUBZUCZYGXNXOYJLZXRXJXOUMZNZOZYKXNYLXOXJLZPZXNXOKLZFXO
+       HIZXOAHIZJZPZUDZYQXNUUBYRXNYTUUAXLYTPZXMXLAXOHIZUUDXLAXOUEIZUUEUUDJZAUFX
+       LAUGLZXOUGLZUUFUUGUHAUIZXLYRUUIAUJZXOUIQAXOUKULUNUORYSYTUPUQVEYQYRUUAJZP
+       UUCYPUULXIUUACXOKXFXOOXGYSXHYTXFXOFHURXFXOAHUSSUTVAYRUUAVBVCVDXNYRYLYQUH
+       XLYRXMUUKRXOXJKVFQVGXNDXRYNXNXTKLZFXTHIZXTXOHIZJZJZUUMUUNXTAHIZJZJZXTXOO
+       ZTZXTXRLXTYNLZXNUUQUUTUUMUUNJZUVAJZTZUVBXNUVDUUOJUVDUURUVATZJZUUQUVFXNUV
+       DUUOUVGXLUVDUUOUVGUHZUDXMXLUUMUVIUUNXLUUMUVI?VPVHRVIUUMUUNUUOVJUVHUVDUUR
+       JZUVETUVFUVDUURUVAVKUVJUUTUVEUUMUUNUURVJVLVMVNXNUVEUVAUUTXNUVAUVEXNUVAUV
+       DXLUVAUVDUDZXMXLYRYSJZUVKXLYRYSUUKXLFFAMZXOHXLUUHFUVMHIZUUJFUGLUUHUVNVOF
+       AVQVRQXOUVMOXLAFVSVTWAWBUVAUVLUVDUVAUVDUVLUVAUUMYRUUNYSXTXOKWCXTXOFHURSW
+       DWGQRWEWFWHWIXQUUPCXTKCDWJZXGUUNXPUUOXFXTFHURZXFXTXOHUSSUTUVCXTXJLZXTYML
+       ZTUVBXTXJYMWKUVQUUTUVRUVAXIUUSCXTKUVOXGUUNXHUURUVPXFXTAHUSSUTDXOWLWMVMWS
+       WNYIYOEXOYJYAXOOZYHYNXRUVSYBYMXJYAXOWOWPWQWRULYFYKDXJBXTXJOZYDYIEYEYJXTX
+       JWTUVTYCYHXRXTXJYBXAWQXBWRXCEXRBDXDVDXE $.
+  $}
+
+  ${
+     $d N m n a $.  
+     $( Count the number of elements in a natural interval.  From 
+     	~ nmembers1lem2 and ~ nmembers1lem3 , we would expect to arrive
+	at ` { m e. Nn | ( 1c <_c m /\ m <_c N ) } e. N ` , but this
+	proposition is not stratifiable.  Instead, we arrive at the weaker
+	conclusion below.  We can arrive at the earlier proposition once
+	we add the Axiom of Counting, which we will do later.  (Contributed
+	by Scott Fenton, 01-Aug-2019.) $)
      nmembers1 $p |- ( N e. Nn ->
       { m e. Nn | ( 1c <_c m /\ m <_c N ) } e. T_c T_c N ) $=
-       ( vx c1c clec wbr wa cnnc crab ctc wcel c0c cplc wceq breq2 tceq wn cncs
-       syl wi vn vk cv nmembers1lem1 anbi2d rabbidv tc0c ax-mp eqtri syl6eq weq
-       eleq12d eqid c0 rabeq0 nnnc le0nc 0cnc sbth mpan2 mpan2d wrex wne 0cnsuc
-       addccom eqnetri necomi df-ne mpbi nrex wb 1cnc dflec2 mp2an mtbir mtbiri
-       a1i syl6 con2d imnan sylib mprgbir el0c mpbir csn wo simpl peano2 eleq1a
-       jaod addlecncs mpan syl6breq biimprd com12 adantr simp3 biantrurd orbi1d
-       cun w3a 3bitr3d 3expia pm5.21ndd simpr breq1 anbi12d elrab elun vex elsn
-       orbi12i bitri 3bitr4g eqrdv cltc nnltp1c ltlenlec syl2anc simprd intnand
-       ex mpbid a1d df-an con2bii 1cex addcex elsuci sylan2 ancoms eqeltrd tcdi
-       tc1c addceq2i tccl syl5eq eqtrd eleqtrrd finds ) DAUCZEFZUUACUCZEFZGZAHI
-       ZUUCJZJZKUUBUUALEFZGZAHIZLKZUUBUUAUAUCZEFZGZAHIZUUMJZJZKZUUBUUAUUMDMZEFZ
-       GZAHIZUUTJZJZKZUUBUUABEFZGZAHIZBJZJZKCUABCAUDUUCLNZUUFUUKUUHLUVLUUEUUJAH
-       UVLUUDUUIUUBUUCLUUAEOUEUFUVLUUHLJZJZLUVLUUGUVMNUUHUVNNUUCLPUUGUVMPSUVNUV
-       MLUVMLNUVNUVMNUGUVMLPUHUGUIUJULCUAUKZUUFUUPUUHUURUVOUUEUUOAHUVOUUDUUNUUB
-       UUCUUMUUAEOUEUFUVOUUGUUQNUUHUURNUUCUUMPUUGUUQPSULUUCUUTNZUUFUVCUUHUVEUVP
-       UUEUVBAHUVPUUDUVAUUBUUCUUTUUAEOUEUFUVPUUHUVEUVEUVPUUGUVDNUUHUVENUUCUUTPU
-       UGUVDPSUVEUMUJULUUCBNZUUFUVIUUHUVKUVQUUEUVHAHUVQUUDUVGUUBUUCBUUAEOUEUFUV
-       QUUGUVJNUUHUVKNUUCBPUUGUVJPSULUULUUKUNNZUVRUUJQZAHUUJAHUOUUAHKZUUBUUIQTU
-       VSUVTUUIUUBUVTUUIUUALNZUUBQUVTUUILUUAEFZUWAUVTUUARKZUWBUUAUPZUUAUQSUVTUW
-       CUUIUWBGUWATZUWDUWCLRKZUWEURUUALUSUTSVAUWAUUBDLEFZUWGLDUUCMZNZCRVBZUWICR
-       UWIQZUUCRKLUWHVCUWKUWHLUWHUUCDMLDUUCVEUUCVDVFVGLUWHVHVIVQVJDRKZUWFUWGUWJ
-       VKVLURDLCVMVNVOUUALDEOVPVRVSUUBUUIVTWAWBUUKWCWDUUMHKZUUSUVFUWMUUSGZUVCUU
-       RDMZUVEUWNUVCUUPUUTWEZWTZUWOUWMUVCUWQNUUSUWMUBUVCUWQUWMUBUCZHKZDUWREFZUW
-       RUUTEFZGZGZUWSUWTUWRUUMEFZGZGZUWRUUTNZWFZUWRUVCKUWRUWQKZUWMUWSUXCUXHUXCU
-       WSTUWMUWSUXBWGVQUWMUXFUWSUXGUXFUWSTUWMUWSUXEWGVQUWMUUTHKZUXGUWSTUUMWHZUU
-       THUWRWISWJUWMUWSUXCUXHVKUWMUWSGZUXBUXEUXGWFZUXCUXHUXLUWTUXBUXMUXBUWTTUXL
-       UWTUXAWGVQUXLUXEUWTUXGUXEUWTTUXLUWTUXDWGVQUWMUXGUWTTZUWSUWMDUUTEFZUXNUWM
-       DDUUMMZUUTEUWMUUMRKZDUXPEFZUUMUPZUWLUXQUXRVLDUUMWKWLSDUUMVEWMUXGUXOUWTUX
-       GUWTUXOUWRUUTDEOWNWOSWPWJUWMUWSUWTUXBUXMVKUWMUWSUWTXAZUXAUXDUXGWFUXBUXM?
-       UXTUWTUXAUWMUWSUWTWQZWRUXTUXDUXEUXGUXTUWTUXDUYAWRWSXBXCXDUXLUWSUXBUWMUWS
-       XEZWRUXLUXEUXFUXGUXLUWSUXEUYBWRWSXBYBXDUVBUXBAUWRHAUBUKZUUBUWTUVAUXAUUAU
-       WRDEOZUUAUWRUUTEXFXGXHUXIUWRUUPKZUWRUWPKZWFUXHUWRUUPUWPXIUYEUXFUYFUXGUUO
-       UXEAUWRHUYCUUBUWTUUNUXDUYDUUAUWRUUMEXFXGXHUWRUUTUBXJXKXLXMXNXOWPUUSUWMUW
-       QUWOKZUWMUUSUUTUUPKZQZUYGUWMUXJUXOUUTUUMEFZGZQZTZUYIUWMUYLUXJUWMUYJUXOUW
-       MUUMUUTEFZUYJQZUWMUUMUUTXPFZUYNUYOGZUUMXQUWMUXQUUTRKZUYPUYQVKUXSUWMUXJUY
-       RUXKUUTUPSUUMUUTXRXSYCXTYAYDUYHUYMUYHUXJUYKGUYMQUUOUYKAUUTHUUAUUTNUUBUXO
-       UUNUYJUUAUUTDEOUUAUUTUUMEXFXGXHUXJUYKYEXMYFWAUUPUURUUTUUMDUAXJYGYHYIYJYK
-       YLUWMUVEUWONUUSUWMUVEUUQDJZMZJZUWOUWMUVDUYTNZUVEVUANUWMUXQVUBUXSUXQUWLVU
-       BVLUUMDYMUTSUVDUYTPSUWMVUAUUQDMZJZUWOUYTVUCNVUAVUDNUYSDUUQYNYOUYTVUCPUHU
-       WMVUDUURUYSMZUWOUWMUUQRKZVUDVUENZUWMUXQVUFUXSUUMYPSVUFUWLVUGVLUUQDYMUTSU
-       YSDUURYNYOUJYQYRWPYSYBYT $.
-$)
+       ( vn c1c clec wbr wa cnnc crab ctc wcel c0c cplc wceq breq2 rabbidv tceq
+       anbi2d syl eleq12d va cv nmembers1lem1 nmembers1lem2 tc0c ax-mp eleqtrri
+       eqtri wi nntccl nmembers1lem3 wb cncs nnnc 1cnc tcdi mpan2 tc1c addceq2i
+       weq syl6eq tccl eqtrd eleq2d adantr sylibrd mpdan finds ) DAUBZEFZVICUBZ
+       EFZGZAHIZVKJZJZKVJVILEFZGZAHIZLJZJZKVJVIUAUBZEFZGZAHIZWBJZJZKZVJVIWBDMZE
+       FZGZAHIZWIJZJZKZVJVIBEFZGZAHIZBJZJZKCUABCAUCVKLNZVNVSVPWAXAVMVRAHXAVLVQV
+       JVKLVIEORPXAVOVTNVPWANVKLQVOVTQSTCUAUTZVNWEVPWGXBVMWDAHXBVLWCVJVKWBVIEOR
+       PXBVOWFNVPWGNVKWBQVOWFQSTVKWINZVNWLVPWNXCVMWKAHXCVLWJVJVKWIVIEORPXCVOWMN
+       VPWNNVKWIQVOWMQSTVKBNZVNWRVPWTXDVMWQAHXDVLWPVJVKBVIEORPXDVOWSNVPWTNVKBQV
+       OWSQSTVSLWAAUDWAVTLVTLNWAVTNUEVTLQUFUEUHUGWBHKZWGHKZWHWOUIXEWFHKXFWBUJWF
+       UJSXEXFGWHWLWGDMZKZWOWBWGAUKXEWOXHULXFXEWNXGWLXEWBUMKZWNXGNWBUNXIWNWFDMZ
+       JZXGXIWMXJNWNXKNXIWMWFDJZMZXJXIDUMKZWMXMNUOWBDUPUQXLDWFURUSVAWMXJQSXIXKW
+       GXLMZXGXIWFUMKZXKXONZWBVBXPXNXQUOWFDUPUQSXLDWGURUSVAVCSVDVEVFVGVH $.
   $}
 
 
