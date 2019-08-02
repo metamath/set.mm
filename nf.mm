@@ -58796,7 +58796,7 @@ $)
   ${
     ensn.1 $e |- A e. _V $.
     ensn.2 $e |- B e. _V $.
-    $( Two singletons are equinumerous.  Theorem XI.1.10 of {{Rosser}}.
+    $( Two singletons are equinumerous.  Theorem XI.1.10 of [Rosser] p. 348.
        (Contributed by SF, 25-Feb-2015.) $)
     ensn $p |- { A } ~~ { B } $=
       ( cvv wcel csn cen wbr en2sn mp2an ) AEFBEFAGBGHICDABEEJK $.
@@ -58827,7 +58827,7 @@ $)
     enadj.2 $e |- B e. _V $.
     enadj.3 $e |- X e. _V $.
     enadj.4 $e |- Y e. _V $.
-    $( Equivalence law for adjunction.  Theorem XI.1.13 of {{Rosser}}.
+    $( Equivalence law for adjunction.  Theorem XI.1.13 of [Rosser] p. 348.
        (Contributed by SF, 25-Feb-2015.) $)
     enadj $p |- ( ( ( A u. { X } ) = ( B u. { Y } ) /\
         -. X e. A /\ -. Y e. B ) -> A ~~ B ) $=
@@ -59366,8 +59366,8 @@ $)
     $d A r $.  $d B r $.  $d r x $.  $d r y $.
     enprmap.1 $e |- B e. _V $.
     $( A mapping from a two element pair onto a set is equinumerous with the
-       power class of the set.  Theorem XI.1.28 of {{Rosser}}.  (Contributed by
-       SF, 3-Mar-2015.) $)
+       power class of the set.  Theorem XI.1.28 of [Rosser] p. 360.
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmap $p |- ( ( x =/= y /\ A = { x , y } ) -> ( A ^m B ) ~~ ~P B ) $=
       ( vr cv wne cpr wceq wa cmap co cpw ccnv csn cima cmpt wf1o cen wfun eqid
       wbr wfn crn enprmaplem2 a1i enprmaplem3 enprmaplem6 syl3anbrc enprmaplem1
@@ -59383,8 +59383,8 @@ $)
     enprmapc.2 $e |- B e. _V $.
     enprmapc.3 $e |- C e. _V $.
     $( A mapping from a two element pair onto a set is equinumerous with the
-       power class of the set.  Theorem XI.1.28 of {{Rosser}}.  (Contributed by
-       SF, 3-Mar-2015.) $)
+       power class of the set.  Theorem XI.1.28 of [Rosser] p. 360.
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmapc $p |- ( ( A =/= B /\ P = { A , B } ) -> ( P ^m C ) ~~ ~P C ) $=
       ( vx vy cv wne cpr wceq wa cmap wi eqeq2d anbi12d imbi1d vtocl co cpw cen
       wbr neeq1 preq1 neeq2 preq2 enprmap ) HJZBKZDUJBLZMZNZDCOUACUBUCUDZPZABKZ
@@ -60111,8 +60111,8 @@ $)
     ax-mp 3eqtr4i ) ABZCZDACZBZDECZDEDAFGUAREQHIJETEQTHSAKTQKLSAMONJP $.
 
   ${
-    $( One plus one equals two.  Theorem *110.64 of {{WhiteheadRussell}}.  This
-       theorem is occasionally useful.  (Contributed by SF, 2-Mar-2015.) $)
+    $( One plus one equals two.  Theorem *110.64 of [WhiteheadRussell] p. 86.
+       This theorem is occasionally useful.  (Contributed by SF, 2-Mar-2015.) $)
     1p1e2c $p |- ( 1c +c 1c ) = 2c $=
       ( c0 csn cvv cun cnc cplc c2c c1c cin wceq wcel 0ex n0i ax-mp elsnc mtbir
       wn vvex snex df1c3 disjsn mpbir ncdisjun df-2c df-pr nceqi eqtri 3eqtr4ri
@@ -60691,7 +60691,7 @@ $)
     $d A p $.  $d A x $.  $d A y $.  $d p x $.  $d p y $.  $d x y $.
     ce2.1 $e |- A e. _V $.
     $( The value of base two cardinal exponentiation.  Theorem XI.2.70 of
-       {{Rosser}}.  (Contributed by SF, 3-Mar-2015.) $)
+       [Rosser] p. 389.  (Contributed by SF, 3-Mar-2015.) $)
     ce2 $p |- ( M = Nc ~P1 A -> ( 2c ^c M ) = Nc ~P A ) $=
       ( vx vy cpw1 cnc wceq c2c cce co cvv c0 cpr wcel csn cun eqtri wne mpbir
       cpw oveq2 cmap df-pr pw1eq ax-mp pw1un pw1sn 0ex uneq12i eqtr4i cv wa wex
