@@ -61768,6 +61768,88 @@ $)
   $}
 
   ${
+     $d n p q x y z $.
+     $( Lemma for ~ addccan2nc .  Stratification helper theorem.  (Contributed
+     	by Scott Fenton, 02-Aug-2019.) $)
+     addccan2nclem1 $p |- ( x ( AddC o. `' ( 1st |` ( _V X. { n } ) ) ) y
+     		    <-> y = ( x +c n ) ) $=
+       ( vz vp vq cv caddcfn c1st cvv wbr cop wceq wex weq eqeq2d 3bitri anbi1i
+       wa opeq2 csn cxp cres ccnv ccom cplc brco wcel brcnv brres w3a wrex rexv
+       ancom elxp2 vex rexsn exbii bitri exancom 19.41v bitr4i br1st eqeq1 opth
+       syl6bb pm5.32ri equcom anbi2i equcoms adantl pm5.32i df-3an 2exbii opeq1
+       ceqsex2v opex breq1 ceqsexv braddcfn eqcom ) AGZBGZHIJCGZUAZUBZUCZUDZUEK
+       ZWBWDLZWCHKZWBWDUFZWCMWCWLMWIWBDGZWHKZWMWCHKZSZDNWMWJMZWOSZDNWKDWBWCHWHU
+       GWPWRDWNWQWOWNWMWBWGKWMWBIKZWMWFUHZSZWQWBWMWGUIWMWBIWFUJXAWSWMEGZWDLZMZS
+       ZENZEAOZFCOZWMXBFGZLZMZUKZFNENZWQXAXDENZWSSZXFXAWTWSSXOWSWTUNWTXNWSWTXKF
+       WEULZEJULXPENXNEFWMJWEUOXPEUMXPXDEXKXDFWDCUPZXHXJXCWMXIWDXBTPUQURQRUSXFX
+       DWSSENXOWSXDEUTXDWSEVAUSVBXFWMWBXILZMZXDSZFNZENXMXEYAEXEXSFNZXDSYAWSYBXD
+       FWMWBAUPZVCRXSXDFVAVBURXTXLEFXTXGXHSZXKSZXLXTXGCFOZSZXDSYDXDSYEXDXSYGXDX
+       SXCXRMYGWMXCXRVDXBWDWBXIVEVFVGYGYDXDYFXHXGCFVHVIRYDXDXKYDXCXJWMXHXCXJMZX
+       GYHCFWDXIXBTVJVKPVLQXGXHXKVMVBVNUSXKXSWQEFWBWDYCXQXGXJXRWMXBWBXIVOPXHXRW
+       JWMXIWDWBTPVPQQRURWOWKDWJWBWDYCXQVQWMWJWCHVRVSQWBWDWCYCXQVTWLWCWAQ $.
+  $}
+
+
+  ${
+     $d N n p x y $. $d P p x y $.
+     $( Lemma for ~ addccan2nc .  Establish stratification for induction.
+     	(Contributed by Scott Fenton, 02-Aug-2019.) $)
+     addccan2nclem2 $p |- ( ( N e. V /\ P e. W ) ->
+     		{ x | ( ( x +c N ) = ( x +c P ) -> N = P ) } e. _V ) $=
+       ( vn vp vy wcel wa cv cplc wceq cab cvv caddcfn c1st ccnv ccom wbr wi wn
+       ccompl cun unab complab uneq1i imor 3eqtr4i addceq2 eqeq1d abbidv eleq1d
+       abbii eqeq2d csn cxp cres cfix wex elfix brco addccan2nclem1 brcnv bitri
+       anbi12i exbii vex addcex eqeq1 ceqsexv 3bitri abbi2i addcfnex 1stex vvex
+       wo snex xpex resex cnvex fixex eqeltrri vtocl2g complexg syl abexv unexg
+       coex sylancl syl5eqelr ) CDIBEIJZAKZCLZWMBLZMZCBMZUAZANZWPANZUCZWQANZUDZ
+       OWPUBZANZXBUDXDWQVQZANXCWSXDWQAUEXAXEXBWPAUFUGWRXFAWPWQUHUNUIWLXAOIZXBOI
+       XCOIWLWTOIZXGWMFKZLZWMGKZLZMZANZOIWNXLMZANZOIXHFGCBDEXICMZXNXPOXQXMXOAXQ
+       XJWNXLXICWMUJUKULUMXKBMZXPWTOXRXOWPAXRXLWOWNXKBWMUJUOULUMPQOXKUPZUQZURZR
+       ZSZRZPQOXIUPZUQZURZRZSZSZUSZXNOXMAYKWMYKIWMWMYJTZHKZXJMZYMXLMZJZHUTZXMWM
+       YJVAYLWMYMYITZYMWMYDTZJZHUTYQHWMWMYDYIVBYTYPHYRYNYSYOAHFVCYSWMYMYCTYOYMW
+       MYCVDAHGVCVEVFVGVEYOXMHXJWMXIAVHFVHVIYMXJXLVJVKVLVMYJYDYIYCPYBVNYAQXTVOO
+       XSVPXKVRVSVTWAWIWAPYHVNYGQYFVOOYEVPXIVRVSVTWAWIWIWBWCWDWTOWEWFWQAWGXAXBO
+       OWHWJWK $.
+  $}
+
+  ${
+     $d M x m $. $d N x m $. $d P x m $.
+     $( Cancellation law for addition over the cardinal numbers.  Biconditional
+     	form of theorem XI.3.2 of [Rosser] p. 391.  (Contributed by Scott Fenton,
+	02-Aug-2019.) $)
+     addccan2nc $p |- ( ( M e. Nn /\ N e. NC /\ P e. NC ) ->
+     	( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
+       ( vx vm cnnc wcel cncs cplc wceq wi cv c0c c1c wa addceq1 eqeq12d imbi1d
+       addcid2 eqeq12i w3a cvv addccan2nclem2 biimpi addc32 nnnc ncaddccl sylan
+       weq a1i adantrr adantr adantrl peano4nc biimpd syl2anc simpr syld syl5bi
+       ex findsd 3impb addceq2 impbid1 ) BFGZCHGZAHGZUABCIZBAIZJZCAJZVEVFVGVJVK
+       KZDLZCIZVMAIZJZVKKMCIZMAIZJZVKKZELZCIZWAAIZJZVKKZWANIZCIZWFAIZJZVKKZVLVF
+       VGOZDEBUBDACHHUCVMMJZVPVSVKWLVNVQVOVRVMMCPVMMAPQRDEUIZVPWDVKWMVNWBVOWCVM
+       WACPVMWAAPQRVMWFJZVPWIVKWNVNWGVOWHVMWFCPVMWFAPQRVMBJZVPVJVKWOVNVHVOVIVMB
+       CPVMBAPQRVTWKVSVKVQCVRACSASTUDUJWAFGZWKOZWEWJWIWBNIZWCNIZJZWQWEOZVKWGWRW
+       HWSWANCUEWANAUETXAWTWDVKXAWBHGZWCHGZWTWDKWQXBWEWPVFXBVGWPWAHGZVFXBWAUFZW
+       ACUGUHUKULWQXCWEWPVGXCVFWPXDVGXCXEWAAUGUHUMULXBXCOWTWDWBWCUNUOUPWQWEUQUR
+       USUTVAVBCABVCVD $.
+  $}
+
+  ${
+     $d M q $. $d N q $. $d P q $.
+     $( Cardinal addition preserves cardinal less than.  Biconditional form of
+     	corollary 4 of theorem XI.3.2 of [Rosser] p 391.  (Contributed by
+	Scott Fenton, 02-Aug-2019.) $)
+     lecadd2 $p |- ( ( M e. Nn /\ N e. NC /\ P e. NC ) ->
+       ( ( M +c N ) <_c ( M +c P ) <-> N <_c P ) ) $=
+       ( vq cnnc wcel cncs w3a cplc clec wbr cv wceq wrex wb ncaddccl 3ad2antl2
+       nnnc sylan sylbid 3adant3 3adant2 dflec2 syl2anc wa eqeq2i simpl1 simpl3
+       addcass addccan2nc syl3anc addlecncs syl5ibrcom syl5bi rexlimdva leaddc2
+       breq2 wi ex syl3an1 impbid ) BEFZCGFZAGFZHZBCIZBAIZJKZCAJKZVEVHVGVFDLZIZ
+       MZDGNZVIVEVFGFZVGGFZVHVMOVBVCVNVDVBBGFZVCVNBRZBCPSUAVBVDVOVCVBVPVDVOVQBA
+       PSUBVFVGDUCUDVEVLVIDGVLVGBCVJIZIZMZVEVJGFZUEZVIVKVSVGBCVJUIUFWBVTAVRMZVI
+       WBVBVDVRGFZVTWCOVBVCVDWAUGVBVCVDWAUHVCVBWAWDVDCVJPQVRBAUJUKWBVIWCCVRJKZV
+       CVBWAWEVDCVJULQAVRCJUQUMTUNUOTVBVPVCVDVIVHURVQVPVCVDHVIVHABCUPUSUTVA $.
+  $}
+
+  ${
      $d M x y z w $. $d N x y z w $.
      $( Relationship between successor and cardinal less than or equal.  
      	(Contributed by Scott Fenton, 01-Aug-2019.) $)
