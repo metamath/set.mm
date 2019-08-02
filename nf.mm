@@ -61705,22 +61705,40 @@ $)
        USBTZVEVDVGUSUTTUSVCUFBUTUSUGUHUSUIUJULBUTSUMBUTUNUOURVFUPUQ $.
   $}
   
+
+  ${
+    $d x y z w $.
+    $( The function mapping ` x ` to its cardinal successor exists.
+       (Contributed by Scott Fenton, 30-Jul-2019.) $)
+    csucex $p |- ( x e. _V |-> ( x +c 1c ) ) e. _V $=
+       ( vy vz vw cvv cv c1c cplc caddcfn c1st wbr wa wex wceq wcel bitri exbii
+       cop vex syl6bb cmpt csn cxp cres ccnv ccom wfun wrel funmpt funrel ax-mp
+       relco brcnv br1st anbi1i 19.41v bitr4i excom breq1 brres braddcfn opelxp
+       opex mpbiran elsn anbi12ci ceqsexv 1cex addceq2 eqeq1d opelco copab mptv
+       eleq2i weq addceq1 eqeq1 eqcom opelopab 3bitr4ri eqrelriiv addcfnex vvex
+       eqeq2d snex xpex resex 1stex cnvex coex eqeltri ) AEAFZGHZUAZIEGUBZUCZUD
+       ZJUEZUFZEBCWNWSWNUGWNUHAEWMUIWNUJUKWQWRULBFZDFZWRKZXACFZWQKZLZDMZWTGHZXC
+       NZWTXCRZWSOXIWNOZXFWLGNZWTWLHZXCNZLZAMZXHXFXAWTWLRZNZXDLZAMZDMZXOXEXSDXE
+       XQAMZXDLXSXBYAXDXBXAWTJKYAWTXAJUMAXAWTBSZUNPUOXQXDAUPUQQXTXRDMZAMXOXRDAU
+       RYCXNAXDXNDXPWTWLYBASZVCXQXDXPXCWQKZXNXAXPXCWQUSYEXPXCIKZXPWPOZLXNXPXCIW
+       PUTYFXMYGXKWTWLXCYBYDVAYGWLWOOZXKYGWTEOYHYBWTWLEWOVBVDAGVEPVFPTVGQPPXMXH
+       AGVHXKXLXGXCWLGWTVIVJVGPDWTXCWQWRVKXJXIXAWMNZADVLZOXHWNYJXIADWMVMVNYIXAX
+       GNZXHADWTXCYBCSABVOWMXGXAWLWTGVPWDDCVOYKXCXGNXHXAXCXGVQXCXGVRTVSPVTWAWQW
+       RIWPWBEWOWCGWEWFWGJWHWIWJWK $.
+  $}
+
   ${
     $d t u $.  $d t x $.  $d u x $.
     $( Lemma for ~ nnltp1c .  Set up stratification.  (Contributed by SF,
        25-Mar-2015.) $)
     nnltp1clem1 $p |- { x | x <c ( x +c 1c ) } e. _V $=
-      ( vt vu caddcfn c1st c2nd ccnv c1c ccom cltc cv wbr wcel wa wex brco wceq
-      1cex 3bitri cnvex csn cima cres cfix cplc cab cvv elfix exancom cop brcnv
-      brres eliniseg anbi2i bitri vex op1st2nd anbi1i exbii opex breq1 braddcfn
-      ceqsexv eqcom addcex breq2 abbi2i 1stex 2ndex snex imaex resex coex ltcex
-      addcfnex fixex eqeltrri ) DEFGZHUAZUBZUCZGZIZGZJIZUDZAKZWGHUEZJLZAUFUGWIA
-      WFWGWFMWGWGWELWGBKZJLZWJWGWDLZNBOZWIWGWEUHBWGWGWDJPWMWLWKNZBOWJWHQZWKNZBO
-      WIWKWLBUIWNWPBWLWOWKWLWGWJWCLZWGHUJZWJDLZWOWJWGWCUKWQWGCKZWBLZWTWJDLZNZCO
-      WTWRQZXBNZCOWSCWGWJDWBPXCXECXAXDXBXAWTWGWALZWTWGELZWTHFLZNZXDWGWTWAUKXFXG
-      WTVTMZNXIWTWGEVTULXJXHXGFHWTUMUNUOWGHWTAUPZRUQSURUSXBWSCWRWGHXKRUTWTWRWJD
-      VAVCSWSWHWJQWOWGHWJXKRVBWHWJVDUOSURUSWKWIBWHWGHXKRVEWJWHWGJVFVCSSVGWEWDJW
-      CDWBVOWAEVTVHVRVSFVITHVJVKVLTVMTVNVMVPVQ $.
+      ( vw vy vt cltc ccnv cvv cv c1c cplc cmpt ccom cfix wbr cab wa wceq bitri
+      wex vex wcel elfix brco weq addceq1 eqeq2d eqeq1 mptv brcnv anbi12i exbii
+      brab 1cex addcex breq2 ceqsexv abbi2i ltcex cnvex csucex fixex eqeltrri
+      coex ) EFZBGBHZIJZKZLZMZAHZVJIJZENZAOGVLAVIVJVIUAVJVJVHNZVLVJVHUBVMVJCHZV
+      GNZVNVJVDNZPZCSZVLCVJVJVDVGUCVRVNVKQZVJVNENZPZCSVLVQWACVOVSVPVTDHZVFQWBVK
+      QVSBDVJVNVGATZCTBAUDVFVKWBVEVJIUEUFWBVNVKUGBDVFUHULVNVJEUIUJUKVTVLCVKVJIW
+      CUMUNVNVKVJEUOUPRRRUQVHVDVGEURUSBUTVCVAVB $.
   $}
 
   ${
@@ -62874,34 +62892,13 @@ $)
   $}
 
   ${
-    $d x y z w $.
-    $( The function mapping ` x ` to its cardinal successor exists.
-       (Contributed by Scott Fenton, 30-Jul-2019.) $)
-    csuccex $p |- ( x e. _V |-> ( x +c 1c ) ) e. _V $=
-       ( vy vz vw cvv cv c1c cplc caddcfn c1st wbr wa wex wceq wcel bitri exbii
-       cop vex syl6bb cmpt csn cxp cres ccnv ccom wfun wrel funmpt funrel ax-mp
-       relco brcnv br1st anbi1i 19.41v bitr4i excom breq1 brres braddcfn opelxp
-       opex mpbiran elsn anbi12ci ceqsexv 1cex addceq2 eqeq1d opelco copab mptv
-       eleq2i weq addceq1 eqeq1 eqcom opelopab 3bitr4ri eqrelriiv addcfnex vvex
-       eqeq2d snex xpex resex 1stex cnvex coex eqeltri ) AEAFZGHZUAZIEGUBZUCZUD
-       ZJUEZUFZEBCWNWSWNUGWNUHAEWMUIWNUJUKWQWRULBFZDFZWRKZXACFZWQKZLZDMZWTGHZXC
-       NZWTXCRZWSOXIWNOZXFWLGNZWTWLHZXCNZLZAMZXHXFXAWTWLRZNZXDLZAMZDMZXOXEXSDXE
-       XQAMZXDLXSXBYAXDXBXAWTJKYAWTXAJUMAXAWTBSZUNPUOXQXDAUPUQQXTXRDMZAMXOXRDAU
-       RYCXNAXDXNDXPWTWLYBASZVCXQXDXPXCWQKZXNXAXPXCWQUSYEXPXCIKZXPWPOZLXNXPXCIW
-       PUTYFXMYGXKWTWLXCYBYDVAYGWLWOOZXKYGWTEOYHYBWTWLEWOVBVDAGVEPVFPTVGQPPXMXH
-       AGVHXKXLXGXCWLGWTVIVJVGPDWTXCWQWRVKXJXIXAWMNZADVLZOXHWNYJXIADWMVMVNYIXAX
-       GNZXHADWTXCYBCSABVOWMXGXAWLWTGVPWDDCVOYKXCXGNXHXAXCXGVQXCXGVRTVSPVTWAWQW
-       RIWPWBEWOWCGWEWFWGJWHWIWJWK $.
-  $}
-
-  ${
     $d G x y z w $.  $d I x y z w $.
     frecex.1 $e |- F = FRec ( G , I ) $.
     $( The finite recursive function generator preserves sethood.  (Contributed
        by Scott Fenton, 30-Jul-2019.) $)
     frecexg $p |- ( G e. V -> F e. _V ) $=
       ( vx wcel c0c cop csn cvv c1c cplc cmpt cpprod cclos1 cfrec df-frec eqtri
-      cv snex csuccex pprodexg mpan clos1exg sylancr syl5eqel ) BDGZAHCIZJZFKFT
+      cv snex csucex pprodexg mpan clos1exg sylancr syl5eqel ) BDGZAHCIZJZFKFT
       LMNZBOZPZKABCQUMEFBCRSUHUJKGULKGZUMKGUIUAUKKGUHUNFUBUKBKDUCUDULUJKKUEUFUG
       $.
 
@@ -62925,7 +62922,7 @@ $)
        wi ax-mp 0cex opex opelxp bitr3i mpbir2an w3a wex brpprod addceq1 eqeq2d
        snss weq eqeq1 mptv brab brelrn elun1 syl peano2 anim12ci adantrr anbi1d
        eleq1 syl5ibr exp3a sylbi imp syl6bb adantr adantl imbi12d 3impia impcom
-       wb exlimivv ax-gen rgenw csuccex pprodex clos1induct mp3an vtoclg cclos1
+       wb exlimivv ax-gen rgenw csucex pprodex clos1induct mp3an vtoclg cclos1
        df-frec wn opexb simprbi con3i snprc clos1eq1 clos10 syl6eq 0ss syl6eqss
        sylib syl5eqss pm2.61i eqsstri ) ABCUFZMBUCZCUDZUEZUGZDCNOZYMYQUHZBUAPZU
        FZMYNYTUDZUEZUGZUHZYSUACNYTCQZUUAYMUUDYQBBQUUFUUAYMQBUIBBYTCUJUKUUFUUCYP
@@ -62982,7 +62979,7 @@ $)
     dmfrec $p |- ( ph -> dom F = Nn ) $=
       ( vw vy vz cnnc wcel cvv c0c cv wbr wex wceq vx vt va cdm crn csn cun cxp
       vb wss frecxpg dmss 3syl dmxpss syl6ss c1c cplc wi wral frecexg dmexg cop
-      cmpt cpprod wrex wo 0cex opexg sylancr snidg syl orcd wb csuccex pprodexg
+      cmpt cpprod wrex wo 0cex opexg sylancr snidg syl orcd wb csucex pprodexg
       cfrec cclos1 df-frec eqtri clos1basesucg mpbird df-br sylibr breldm eldm2
       snex vex opex elsnc opth bitri eleq1a adantld syl5bi relfrecg elrel sylan
       wa wrel brelrn adantl a1i breq1 qrpprod syl6bb imbi1d syl5ibrcom exlimdvv
@@ -63041,7 +63038,7 @@ $)
        (Contributed by Scott Fenton, 31-Jul-2019.) $)
     fnfreclem2 $p |- ( ph -> ( 0c F X -> X = I ) ) $=
        ( vz vw va vb c0c wbr wcel wceq cv cvv vy cop df-br csn cplc cmpt cpprod
-       c1c wrex wo wb snex csuccex pprodexg sylancr cfrec df-frec clos1basesucg
+       c1c wrex wo wb snex csucex pprodexg sylancr cfrec df-frec clos1basesucg
        cclos1 eqtri wi wa elsni opth sylib simprd a1i wex wn relfrecg syl elrel
        wrel sylan 0cnsuc necomi vex 0cex addceq1 eqeq2d eqeq1 mptv brab nemtbir
        intnanr qrpprod syl6bb mtbiri exlimivv nrexdv pm2.21d jaod sylbid syl5bi
@@ -63066,7 +63063,7 @@ $)
        syl6bb wb vex cnnc 1cex addcexg sylancl adantr addceq1 eqeq2d eqeq1 mptv
        weq brabg sylancr cdm opeldm adantl dmfrec eleqtrd peano4 3expia syl2anc
        df-br biimprcd sylbir syld sylbid anim1d imp syl6bi com12 exlimdv eximdv
-       ex mpid rexlimdva wo csuccex pprodexg cfrec cclos1 df-frec clos1basesucg
+       ex mpid rexlimdva wo csucex pprodexg cfrec cclos1 df-frec clos1basesucg
        snex eqtri syl5bb mpbid mpjaod ) AGUCUDZHUEZUFEUEZUGZQZGBUHZCUIZYLHDUIZR
        ZBUJZUAUHZYHOSOUHZUCUDZUKZDUMZUIZUACULZYKYPUNAYKYPYKYGUFTZYGUFUOUUDVFGUP
        YGUFUQURYKUUDHETZYKYHYITUUDUUERYHYIUSYGHUFEUTVAVBVCVDVGAUUBYPUACAYQCQZRZ
@@ -63135,7 +63132,7 @@ $)
        (Contributed by Scott Fenton, 31-Jul-2019.) $)
     frec0 $p |- ( ph -> ( F ` 0c ) = I ) $=
       ( vy vx c0c wcel cv cvv cnnc peano1 sylancr wb cfuns mpbird cfv wceq cplc
-      cop csn c1c cmpt cpprod wbr wrex wo cdm opexg snidg syl orcd snex csuccex
+      cop csn c1c cmpt cpprod wbr wrex wo cdm opexg snidg syl orcd snex csucex
       pprodexg cfrec cclos1 df-frec eqtri clos1basesucg fnfrec fnopfvb sylancl
       wfn ) AKBUADUBZKDUDZBLZAVKVJVJUEZLZIMVJJNJMUFUCUGZCUHZUIIBUJZUKZAVMVPAVJN
       LZVMAKOLZDCULZLVRPGKDOVTUMQVJNUNUOUPAVLNLVONLZVKVQRVJUQAVNNLCSLWAJURFVNCN
@@ -63156,7 +63153,7 @@ $)
        cv cpprod wrex wo wfun cdm wfn fnfrec fnfun dmfrec eleqtrrd funfvop eqid
        cfuns wb peano2 addceq1 eqeq2d eqeq1 mptv brabg mpbiri elfunsi crn snssd
        cun unssd cxp wss frecxpg rnxpss syl6ss fvelrn sseldd df-br sylibr breq1
-       rnss wa qrpprod syl6bb syl12anc olcd snex csuccex pprodexg sylancr cfrec
+       rnss wa qrpprod syl6bb syl12anc olcd snex csucex pprodexg sylancr cfrec
        rspcev cclos1 df-frec eqtri clos1basesucg mpbird fnopfvb ) AEUAUBZBUCEBU
        CZCUCZMZXBXDNZBOZAXGXFUDDNZUEZOZKUGZXFLPLUGZUAUBZUFZCUHZQZKBUIZUJZAXQXJA
        EXCNZBOZEXBXNQZXCXDCQZXQABUKZEBULZOZXTABRUMZYCABCDFGHIUNZRBUOSZAERYDJABC
