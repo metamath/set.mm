@@ -61728,7 +61728,7 @@ $)
   $}
 
   ${
-    $d t u $.  $d t x $.  $d u x $.
+    $d x y t w $.
     $( Lemma for ~ nnltp1c .  Set up stratification.  (Contributed by SF,
        25-Mar-2015.) $)
     nnltp1clem1 $p |- { x | x <c ( x +c 1c ) } e. _V $=
