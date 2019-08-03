@@ -36606,6 +36606,11 @@ $)
       ( vx vy con0 cuni cv wcel wrex eluni2 onelon rexlimiva sylbi vex suceloni
       csuc sucid elunii sylancr impbii eqriv ) ACDZCAEZTFZUACFZUBUABEZFZBCGUCBU
       ACHUEUCBCUDUAIJKUCUAUANZFUFCFUBUAALOUAMUAUFCPQRS $.
+
+    $( The union of the ordinal subsets of an ordinal number is that number.
+       (Contributed by Jim Kingdon, 2-Aug-2019.) $)
+    onuniss2 $p |- ( A e. On -> U. { x e. On | x C_ A } = A ) $=
+      ( con0 unimax ) ABCD $.
   $}
 
   $( The class of ordinal numbers is a limit ordinal.  (Contributed by NM,
@@ -37069,9 +37074,9 @@ $)
 
        We can think of ` ( ~P A i^i On ) ` as another possible definition of
        successor, which would be equivalent to ~ df-suc given excluded middle.
-       It is an ordinal, and has some successor-like properties (for example,
-       we conjecture that we could prove that if ` A ` is an ordinal, then both
-       ` U. suc A = A ` and ` U. { x e. On | x C_ A } = A ` ).
+       It is an ordinal, and has some successor-like properties.  For example,
+       if ` A e. On ` then both ` U. suc A = A ` ( ~ onunisuci ) and
+       ` U. { x e. On | x C_ A } = A ` ( ~ onuniss2 ).
 
        Constructively ` ( ~P A i^i On ) ` and ` suc A ` cannot be shown to be
        equivalent (as proved at ~ ordpwsucexmid ).  (Contributed by Jim
