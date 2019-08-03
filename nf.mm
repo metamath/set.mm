@@ -61853,7 +61853,7 @@ $)
   ${
      $d M p q $. $d N p q $.
      $( Relationship between successor and cardinal less than or equal.  
-     	(Contributed by Scott Fenton, 01-Aug-2019.) $)
+     	(Contributed by Scott Fenton, 03-Aug-2019.) $)
      ncslesuc $p |- ( ( M e. NC /\ N e. NC ) -> ( M <_c ( N +c 1c ) <->
        ( M <_c N \/ M = ( N +c 1c ) ) ) ) $=
        ( vp vq cncs wcel wa c1c cplc clec wbr wceq wo cv wrex wb c0c wi addceq2
@@ -61927,7 +61927,7 @@ $)
      $d A m x y $. $d B m x y $.
      $( Lemma for ~ nmembers1 .  If the interval from one to a natural is
      	in a given natural, extending it by one puts it in the next natural.
-	(Contributed by Scott Fenton, 01-Aug-2019.) $)
+	(Contributed by Scott Fenton, 03-Aug-2019.) $)
      nmembers1lem3 $p |- ( ( A e. Nn /\ B e. Nn ) -> 
      ( { m e. Nn | ( 1c <_c m /\ m <_c A ) } e. B ->
        { m e. Nn | ( 1c <_c m /\ m <_c ( A +c 1c ) ) } e. ( B +c 1c ) ) ) $=
@@ -61963,7 +61963,7 @@ $)
 	proposition is not stratifiable.  Instead, we arrive at the weaker
 	conclusion below.  We can arrive at the earlier proposition once
 	we add the Axiom of Counting, which we will do later.  (Contributed
-	by Scott Fenton, 01-Aug-2019.) $)
+	by Scott Fenton, 03-Aug-2019.) $)
      nmembers1 $p |- ( N e. Nn ->
       { m e. Nn | ( 1c <_c m /\ m <_c N ) } e. T_c T_c N ) $=
        ( vn c1c clec wbr wa cnnc crab ctc wcel c0c cplc wceq breq2 rabbidv tceq
