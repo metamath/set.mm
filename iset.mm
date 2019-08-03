@@ -1,4 +1,4 @@
-$( iset.mm - Version of 31-Jul-2019
+$( iset.mm - Version of 2-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36572,7 +36572,8 @@ $)
       UEUHUBUDUGACUCCDUBUCJUDUGKUCPBUCCLMNOUBUFCDUIUFQBRAUFCSTUA $.
   $}
 
-  $( Membership is inherited by predecessors.  (Contributed by Jim Kingdon,
+  $( Membership is inherited by predecessors.  The converse implies excluded
+     middle, as shown at ~ onsucelsucexmid .  (Contributed by Jim Kingdon,
      17-Jul-2019.) $)
   onsucelsucr $p |- ( B e. On -> ( suc A e. suc B -> A e. B ) ) $=
     ( csuc wcel con0 cvv wi elex sucexb sylibr wa wceq wo wss onelss eqimss a1i
@@ -36711,6 +36712,57 @@ $)
       WSVQIZXAXFXEWNXGWTWQWPWSVQLUKULXGXBWKXDWMWSVQWJUMXGXCWBWLWSVQOUNPPXEBCLLD
       UOUPUQURSSWGWBUSWCWETWIWBVQWRQUTVRWBLVAVBVDWGWCWATWIVRVQLVESVNVSVOVTAVSVR
       GIVOVRGVFAEVGVHAAEVQGVIENGIAVJVKVLSVOAVMVN $.
+  $}
+
+  ${
+    $d ph x y z $.
+    $( Lemma for ~ onsucelsucexmid .  (Contributed by Jim Kingdon,
+       2-Aug-2019.) $)
+    onsucelsucexmidlem1 $p |- (/) e.
+        { x e. { (/) , { (/) } } | ( x = (/) \/ ph ) } $=
+      ( c0 cv wceq csn cpr crab wcel 0ex prid1 eqid orci eqeq1 orbi1d
+      wo elrab mpbir2an ) CBDZCEZAPZBCCFZGZHICUCICCEZAPZCUBJKUDACLMUA
+      UEBCUCTTUDASCCNOQR $.
+
+    $( Lemma for ~ onsucelsucexmid .  The set
+       ` { x e. { (/) , { (/) } } | ( x = (/) \/ ph ) } ` appears as ` A ` in
+       the proof of Theorem 1.3 in [Bauer] p. 483, and similar sets also appear
+       in other proofs that various propositions imply excluded middle, for
+       example in ~ ordtriexmidlem .  (Contributed by Jim Kingdon,
+       2-Aug-2019.) $)
+    onsucelsucexmidlem $p |- { x e. { (/) , { (/) } } | ( x = (/) \/ ph ) }
+        e. On $=
+      ( vy vz cv c0 wceq wo csn wcel word wa wi wal eleq2 adantl ex sylib mpbir
+      csuc cpr crab con0 wtr simpll wn noel mtbiri pm2.21dd onsucelsucexmidlem1
+      wss biimpac elsn syl6eqel adantr elrabi vex elpr mpjaod gen2 dftr2 ssrab2
+      ord0 ordsucim mp2b wb df-suc suc0 suceq ax-mp df-pr 3eqtr4i ordeq trssord
+      cun mpbi mp3an pp0ex rabex elon ) BEFGAHZBFFIZUAZUBZUCJWDKZWDUDZWDWCUKWCK
+      ZWEWFCEZDEZJZWIWDJZLZWHWDJZMZDNCNWNCDWLWIFGZWMWIWBGZWLWOWMWLWOLWJWMWJWKWO
+      UEWOWJUFWLWOWJWHFJWHUGWIFWHOUHPUIQWJWPWMMWKWJWPWMWJWPLZWHFWDWQWHWBJZWHFGW
+      PWJWRWIWBWHOULCFUMRABUJUNQUOWKWOWPHZWJWKWIWCJWSWABWIWCUPWIFWBDUQURRPUSUTC
+      DWDVASWABWCVBFTZTZKZWGFKWTKXBVCFVDWTVDVEXAWCGXBWGVFWBTZWBWBIVOXAWCWBVGWTW
+      BGXAXCGVHWTWBVIVJFWBVKVLXAWCVMVJVPWDWCVNVQWDWABWCVRVSVTS $.
+  $}
+
+  ${
+    $d ph x y z $.
+    onsucelsucexmid.1 $e |- A. x e. On A. y e. On
+      ( x e. y -> suc x e. suc y ) $.
+    $( The converse of ~ onsucelsucr implies excluded middle.  (Contributed by
+       Jim Kingdon, 2-Aug-2019.) $)
+    onsucelsucexmid $p |- ( ph \/ -. ph ) $=
+      ( vz c0 csuc cv wceq wo wcel wn con0 wral suceq imbi12d eleq2 ax-mp suc0
+      wi csn cpr crab onsucelsucexmidlem1 0elon onsucelsucexmidlem pm3.2i eleq1
+      wa eleq1d eleq2d rspc2va mp2an elsuci wb p0ex prid2 eqeltri orbi1d elrab3
+      eqeq1 wne cvv 0ex nsuceq0g df-ne mpbi pm2.53 mpi sylbi eqeq1i elsnc mtbir
+      mtbi mtbii olc sylibr nsyl orim12i ) FGZEHZFIZAJZEFFUAZUBZUCZKZVTWFIZJZAA
+      LZJVTWFGZKZWIFWFKZWLAEUDFMKZWFMKZUIBHZCHZKZWPGZWQGZKZTZCMNBMNWMWLTZWNWOUE
+      AEUFUGDXBXCFWQKZVTWTKZTBCFWFMMWPFIZWRXDXAXEWPFWQUHXFWSVTWTWPFOUJPWQWFIZXD
+      WMXEWLWQWFFQXGWTWKVTWQWFOUKPULUMRVTWFUNRWGAWHWJWGVTFIZAJZAVTWEKWGXIUOVTWD
+      WESFWDUPUQZURWCXIEVTWEWAVTIWBXHAWAVTFVAUSUTRXIXHLZAVTFVBZXKFVCKXLVDFVCVER
+      VTFVFVGZXHAVHVIVJWHWDWFKZAWHWDWFIZXNLVTWDWFSVKXOWDWDKZXNXPWDFIZXHXQXMVTWD
+      FSVKVNWDFUPVLVMWDWFWDQVOVJAXQAJZXNAXQVPWDWEKXNXRUOXJWCXREWDWEWAWDIWBXQAWA
+      WDFVAUSUTRVQVRVSR $.
   $}
 
 $(
