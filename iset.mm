@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Jul-2019
+$( iset.mm - Version of 2-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36572,7 +36572,8 @@ $)
       UEUHUBUDUGACUCCDUBUCJUDUGKUCPBUCCLMNOUBUFCDUIUFQBRAUFCSTUA $.
   $}
 
-  $( Membership is inherited by predecessors.  (Contributed by Jim Kingdon,
+  $( Membership is inherited by predecessors.  The converse implies excluded
+     middle, as shown at ~ onsucelsucexmid .  (Contributed by Jim Kingdon,
      17-Jul-2019.) $)
   onsucelsucr $p |- ( B e. On -> ( suc A e. suc B -> A e. B ) ) $=
     ( csuc wcel con0 cvv wi elex sucexb sylibr wa wceq wo wss onelss eqimss a1i
@@ -36582,12 +36583,20 @@ $)
     SULBFUAUBUCUOUQBUIUPVCTBUJABFUDUEUFUGUHUK $.
 
   $( The subclass relationship between two ordinals is inherited by their
-     predecessors.  (Contributed by Mario Carneiro and Jim Kingdon,
+     predecessors.  The converse implies excluded middle, as shown at
+     ~ onsucsssucexmid .  (Contributed by Mario Carneiro and Jim Kingdon,
      29-Jul-2019.) $)
   onsucsssucr $p |- ( ( A e. On /\ Ord B ) -> ( suc A C_ suc B -> A C_ B ) ) $=
     ( con0 wcel word wa csuc wss wb ordsucim ordelsuc sylan2 wi ordtr
     wtr trsucss syl adantl sylbird ) ACDZBEZFAGBGZHZAUBDZABHZUATUBEUD
     UCIBJAUBCKLUAUDUEMZTUABOUFBNBAPQRS $.
+
+  $( Successor and union.  The converse (where ` B ` is an ordinal) implies
+     excluded middle, as seen at ~ ordsucunielexmid .  (Contributed by Jim
+     Kingdon, 2-Aug-2019.) $)
+  sucunielr $p |- ( suc A e. B -> A e. U. B ) $=
+    ( csuc wcel cuni cvv elex sucexb sylibr sucidg syl elunii mpancom
+    ) AACZDZNBDZABEDPAFDZOPNFDQNBGAHIAFJKANBLM $.
 
   ${
     $d x y A $.
@@ -36597,6 +36606,11 @@ $)
       ( vx vy con0 cuni cv wcel wrex eluni2 onelon rexlimiva sylbi vex suceloni
       csuc sucid elunii sylancr impbii eqriv ) ACDZCAEZTFZUACFZUBUABEZFZBCGUCBU
       ACHUEUCBCUDUAIJKUCUAUANZFUFCFUBUAALOUAMUAUFCPQRS $.
+
+    $( The union of the ordinal subsets of an ordinal number is that number.
+       (Contributed by Jim Kingdon, 2-Aug-2019.) $)
+    onuniss2 $p |- ( A e. On -> U. { x e. On | x C_ A } = A ) $=
+      ( con0 unimax ) ABCD $.
   $}
 
   $( The class of ordinal numbers is a limit ordinal.  (Contributed by NM,
@@ -36678,6 +36692,22 @@ $)
   $}
 
   ${
+    $d ph x y z $.
+    ordtri2orexmid.1 $e |- A. x e. On A. y e. On ( x e. y \/ y C_ x ) $.
+    $( Ordinal trichotomy implies excluded middle.  (Contributed by Jim
+       Kingdon, 31-Jul-2019.) $)
+    ordtri2orexmid $p |- ( ph \/ -. ph ) $=
+      ( vz wn wo c0 csn crab wcel wss cv con0 wral 0elon wceq orbi12d ax-mp wb
+      ordtriexmidlem csuc suc0 eqeltrri eleq1 sseq2 eleq2 sseq1 rspc2va mpanl12
+      onsuci elsni ordtriexmidlem2 syl snssg biidd elrab3 biimpi sylbir orim12i
+      0ex snid orcom mpbi ) AFZAGZAVEGAEHIZJZVGKZVGVHLZGZVFBMZCMZKZVMVLLZGZCNOB
+      NOZVKDVHNKVGNKVQVKAEUAHUBVGNUCHPUKUDVPVKVHVMKZVMVHLZGBCVHVGNNVLVHQVNVRVOV
+      SVLVHVMUEVLVHVMUFRVMVGQVRVIVSVJVMVGVHUGVMVGVHUHRUIUJSVIVEVJAVIVHHQVEVHHUL
+      AEUMUNVJHVHKZAHNKVTVJTPHVHNUOSVTAHVGKVTATHVAVBAAEHVGEMHQAUPUQSURUSUTSVEAV
+      CVD $.
+  $}
+
+  ${
     $d ph x z $.  $d x y $.
     onsucsssucexmid.1 $e |- A. x e. On A. y e. On
       ( x C_ y -> suc x C_ suc y ) $.
@@ -36694,6 +36724,74 @@ $)
       WSVQIZXAXFXEWNXGWTWQWPWSVQLUKULXGXBWKXDWMWSVQWJUMXGXCWBWLWSVQOUNPPXEBCLLD
       UOUPUQURSSWGWBUSWCWETWIWBVQWRQUTVRWBLVAVBVDWGWCWATWIVRVQLVESVNVSVOVTAVSVR
       GIVOVRGVFAEVGVHAAEVQGVIENGIAVJVKVLSVOAVMVN $.
+  $}
+
+  ${
+    $d ph x y z $.
+    $( Lemma for ~ onsucelsucexmid .  (Contributed by Jim Kingdon,
+       2-Aug-2019.) $)
+    onsucelsucexmidlem1 $p |- (/) e.
+        { x e. { (/) , { (/) } } | ( x = (/) \/ ph ) } $=
+      ( c0 cv wceq csn cpr crab wcel 0ex prid1 eqid orci eqeq1 orbi1d
+      wo elrab mpbir2an ) CBDZCEZAPZBCCFZGZHICUCICCEZAPZCUBJKUDACLMUA
+      UEBCUCTTUDASCCNOQR $.
+
+    $( Lemma for ~ onsucelsucexmid .  The set
+       ` { x e. { (/) , { (/) } } | ( x = (/) \/ ph ) } ` appears as ` A ` in
+       the proof of Theorem 1.3 in [Bauer] p. 483, and similar sets also appear
+       in other proofs that various propositions imply excluded middle, for
+       example in ~ ordtriexmidlem .  (Contributed by Jim Kingdon,
+       2-Aug-2019.) $)
+    onsucelsucexmidlem $p |- { x e. { (/) , { (/) } } | ( x = (/) \/ ph ) }
+        e. On $=
+      ( vy vz cv c0 wceq wo csn wcel word wa wi wal eleq2 adantl ex sylib mpbir
+      csuc cpr crab con0 wtr simpll wn noel mtbiri pm2.21dd onsucelsucexmidlem1
+      wss biimpac elsn syl6eqel adantr elrabi vex elpr mpjaod gen2 dftr2 ssrab2
+      ord0 ordsucim mp2b wb df-suc suc0 suceq ax-mp df-pr 3eqtr4i ordeq trssord
+      cun mpbi mp3an pp0ex rabex elon ) BEFGAHZBFFIZUAZUBZUCJWDKZWDUDZWDWCUKWCK
+      ZWEWFCEZDEZJZWIWDJZLZWHWDJZMZDNCNWNCDWLWIFGZWMWIWBGZWLWOWMWLWOLWJWMWJWKWO
+      UEWOWJUFWLWOWJWHFJWHUGWIFWHOUHPUIQWJWPWMMWKWJWPWMWJWPLZWHFWDWQWHWBJZWHFGW
+      PWJWRWIWBWHOULCFUMRABUJUNQUOWKWOWPHZWJWKWIWCJWSWABWIWCUPWIFWBDUQURRPUSUTC
+      DWDVASWABWCVBFTZTZKZWGFKWTKXBVCFVDWTVDVEXAWCGXBWGVFWBTZWBWBIVOXAWCWBVGWTW
+      BGXAXCGVHWTWBVIVJFWBVKVLXAWCVMVJVPWDWCVNVQWDWABWCVRVSVTS $.
+  $}
+
+  ${
+    $d ph x y z $.
+    onsucelsucexmid.1 $e |- A. x e. On A. y e. On
+      ( x e. y -> suc x e. suc y ) $.
+    $( The converse of ~ onsucelsucr implies excluded middle.  (Contributed by
+       Jim Kingdon, 2-Aug-2019.) $)
+    onsucelsucexmid $p |- ( ph \/ -. ph ) $=
+      ( vz c0 csuc cv wceq wo wcel wn con0 wral suceq imbi12d eleq2 ax-mp suc0
+      wi csn cpr crab onsucelsucexmidlem1 0elon onsucelsucexmidlem pm3.2i eleq1
+      wa eleq1d eleq2d rspc2va mp2an elsuci wb p0ex prid2 eqeltri orbi1d elrab3
+      eqeq1 wne cvv 0ex nsuceq0g df-ne mpbi pm2.53 mpi sylbi eqeq1i elsnc mtbir
+      mtbi mtbii olc sylibr nsyl orim12i ) FGZEHZFIZAJZEFFUAZUBZUCZKZVTWFIZJZAA
+      LZJVTWFGZKZWIFWFKZWLAEUDFMKZWFMKZUIBHZCHZKZWPGZWQGZKZTZCMNBMNWMWLTZWNWOUE
+      AEUFUGDXBXCFWQKZVTWTKZTBCFWFMMWPFIZWRXDXAXEWPFWQUHXFWSVTWTWPFOUJPWQWFIZXD
+      WMXEWLWQWFFQXGWTWKVTWQWFOUKPULUMRVTWFUNRWGAWHWJWGVTFIZAJZAVTWEKWGXIUOVTWD
+      WESFWDUPUQZURWCXIEVTWEWAVTIWBXHAWAVTFVAUSUTRXIXHLZAVTFVBZXKFVCKXLVDFVCVER
+      VTFVFVGZXHAVHVIVJWHWDWFKZAWHWDWFIZXNLVTWDWFSVKXOWDWDKZXNXPWDFIZXHXQXMVTWD
+      FSVKVNWDFUPVLVMWDWFWDQVOVJAXQAJZXNAXQVPWDWEKXNXRUOXJWCXREWDWEWAWDIWBXQAWA
+      WDFVAUSUTRVQVRVSR $.
+  $}
+
+  ${
+    $d ph x y a b $.
+    ordsucunielexmid.1 $e |- A. x e. On A. y e. On
+      ( x e. U. y -> suc x e. y ) $.
+    $( The converse of ~ sucunielr (where ` B ` is an ordinal) implies excluded
+       middle.  (Contributed by Jim Kingdon, 2-Aug-2019.) $)
+    ordsucunielexmid $p |- ( ph \/ -. ph ) $=
+      ( va vb cv wcel csuc wi con0 wa cuni wb wtr wceq eleq2d imbi12d
+      word wral eloni ordtr syl vex unisuc sylib suceloni eleq1 suceq
+      adantl eleq1d unieq eleq2 rspc2va mpan2 sylbird onsucelsucexmid
+      sylan2 rgen2a ) AEFEGZFGZHZUTIZVAIZHZJEFKUTKHZVAKHZLVBUTVDMZHZV
+      EVGVIVBNVFVGVHVAUTVGVAOZVHVAPVGVASVJVAUAVAUBUCVAFUDUEUFQUJVGVFV
+      DKHZVIVEJZVAUGVFVKLBGZCGZMZHZVMIZVNHZJZCKTBKTVLDVSVLUTVOHZVCVNH
+      ZJBCUTVDKKVMUTPZVPVTVRWAVMUTVOUHWBVQVCVNVMUTUIUKRVNVDPZVTVIWAVE
+      WCVOVHUTVNVDULQVNVDVCUMRUNUOURUPUSUQ $.
   $}
 
 $(
@@ -36976,10 +37074,13 @@ $)
 
        We can think of ` ( ~P A i^i On ) ` as another possible definition of
        successor, which would be equivalent to ~ df-suc given excluded middle.
-       It is an ordinal, and has some successor-like properties (for example,
-       we conjecture that we could prove that if ` A ` is an ordinal, then both
-       ` U. suc A = A ` and ` U. { x e. On | x C_ A } = A ` ).  (Contributed by
-       Jim Kingdon, 21-Jul-2019.) $)
+       It is an ordinal, and has some successor-like properties.  For example,
+       if ` A e. On ` then both ` U. suc A = A ` ( ~ onunisuci ) and
+       ` U. { x e. On | x C_ A } = A ` ( ~ onuniss2 ).
+
+       Constructively ` ( ~P A i^i On ) ` and ` suc A ` cannot be shown to be
+       equivalent (as proved at ~ ordpwsucexmid ).  (Contributed by Jim
+       Kingdon, 21-Jul-2019.) $)
     ordpwsucss $p |- ( Ord A -> suc A C_ ( ~P A i^i On ) ) $=
       ( vx word csuc cpw con0 cin cv wcel wa wi ordsuc ordelon ex sylbi
       wss wtr ordtr trsucss syl jcad selpw anbi2ci bitri syl6ibr ssrdv
@@ -37000,6 +37101,28 @@ $)
      22-Jul-2019.) $)
   ssnel $p |- ( A C_ B -> -. B e. A ) $=
     ( wss wcel elirr ssel mtoi ) ABCBADBBDBEABBFG $.
+
+  ${
+    $d ph x z $.
+    ordpwsucexmid.1 $e |- A. x e. On suc x = ( ~P x i^i On ) $.
+    $( The subset in ~ ordpwsucss cannot be equality.  That is, strengthening
+       it to equality implies excluded middle.  (Contributed by Jim Kingdon,
+       30-Jul-2019.) $)
+    ordpwsucexmid $p |- ( ph \/ -. ph ) $=
+      ( vz c0 csn crab wcel wceq wo wn csuc cpw con0 cin 0elpw 0elon elin ax-mp
+      cv mpbir2an ordtriexmidlem pweq ineq1d eqeq12d vtoclri eleqtrri elsuci wb
+      suceq 0ex snid biidd elrab3 biimpi ordtriexmidlem2 eqcoms orim12i ) EADEF
+      ZGZHZEUTIZJZAAKZJEUTLZHVCEUTMZNOZVEEVGHEVFHENHUTPQEVFNRUAUTNHVEVGIZADUBBT
+      ZLZVIMZNOZIVHBUTNVIUTIZVJVEVLVGVIUTUJVMVKVFNVIUTUCUDUECUFSUGEUTUHSVAAVBVD
+      VAAEUSHVAAUIEUKULAADEUSDTEIAUMUNSUOVDUTEADUPUQURS $.
+  $}
+
+  $( An ordinal number is a proper subset of its successor.  (Contributed by
+     Stefan O'Rear, 18-Nov-2014.) $)
+  onpsssuc $p |- ( A e. On -> A C. suc A ) $=
+    ( con0 wcel csuc wss wceq wn wa wpss elirr sucidg syl5ibrcom mtoi
+    eleq2 sssucid jctil dfpss2 sylibr ) ABCZAADZEZATFZGZHATISUCUASUBA
+    ACZAJSUDUBATCABKATANLMAOPATQR $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
