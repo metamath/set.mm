@@ -36591,6 +36591,13 @@ $)
     wtr trsucss syl adantl sylbird ) ACDZBEZFAGBGZHZAUBDZABHZUATUBEUD
     UCIBJAUBCKLUAUDUEMZTUABOUFBNBAPQRS $.
 
+  $( Successor and union.  The converse (where ` B ` is an ordinal) implies
+     excluded middle, as seen at ~ ordsucunielexmid .  (Contributed by Jim
+     Kingdon, 2-Aug-2019.) $)
+  sucunielr $p |- ( suc A e. B -> A e. U. B ) $=
+    ( csuc wcel cuni cvv elex sucexb sylibr sucidg syl elunii mpancom
+    ) AACZDZNBDZABEDPAFDZOPNFDQNBGAHIAFJKANBLM $.
+
   ${
     $d x y A $.
     $( The class of all ordinal numbers is its own union.  Exercise 11 of
@@ -36763,6 +36770,23 @@ $)
       VTFVFVGZXHAVHVIVJWHWDWFKZAWHWDWFIZXNLVTWDWFSVKXOWDWDKZXNXPWDFIZXHXQXMVTWD
       FSVKVNWDFUPVLVMWDWFWDQVOVJAXQAJZXNAXQVPWDWEKXNXRUOXJWCXREWDWEWAWDIWBXQAWA
       WDFVAUSUTRVQVRVSR $.
+  $}
+
+  ${
+    $d ph x y a b $.
+    ordsucunielexmid.1 $e |- A. x e. On A. y e. On
+      ( x e. U. y -> suc x e. y ) $.
+    $( The converse of ~ sucunielr (where ` B ` is an ordinal) implies excluded
+       middle.  (Contributed by Jim Kingdon, 2-Aug-2019.) $)
+    ordsucunielexmid $p |- ( ph \/ -. ph ) $=
+      ( va vb cv wcel csuc wi con0 wa cuni wb wtr wceq eleq2d imbi12d
+      word wral eloni ordtr syl vex unisuc sylib suceloni eleq1 suceq
+      adantl eleq1d unieq eleq2 rspc2va mpan2 sylbird onsucelsucexmid
+      sylan2 rgen2a ) AEFEGZFGZHZUTIZVAIZHZJEFKUTKHZVAKHZLVBUTVDMZHZV
+      EVGVIVBNVFVGVHVAUTVGVAOZVHVAPVGVASVJVAUAVAUBUCVAFUDUEUFQUJVGVFV
+      DKHZVIVEJZVAUGVFVKLBGZCGZMZHZVMIZVNHZJZCKTBKTVLDVSVLUTVOHZVCVNH
+      ZJBCUTVDKKVMUTPZVPVTVRWAVMUTVOUHWBVQVCVNVMUTUIUKRVNVDPZVTVIWAVE
+      WCVOVHUTVNVDULQVNVDVCUMRUNUOURUPUSUQ $.
   $}
 
 $(
