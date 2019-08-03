@@ -1,4 +1,4 @@
-$( nf.mm - Version of 28-May-2018. $)
+$( nf.mm - Version of 03-Aug-2019. $)
 
 $( Begin $[ set-pred.mm $] $)
 
@@ -58796,7 +58796,7 @@ $)
   ${
     ensn.1 $e |- A e. _V $.
     ensn.2 $e |- B e. _V $.
-    $( Two singletons are equinumerous.  Theorem XI.1.10 of {{Rosser}}.
+    $( Two singletons are equinumerous.  Theorem XI.1.10 of [Rosser] p. 348.
        (Contributed by SF, 25-Feb-2015.) $)
     ensn $p |- { A } ~~ { B } $=
       ( cvv wcel csn cen wbr en2sn mp2an ) AEFBEFAGBGHICDABEEJK $.
@@ -58827,7 +58827,7 @@ $)
     enadj.2 $e |- B e. _V $.
     enadj.3 $e |- X e. _V $.
     enadj.4 $e |- Y e. _V $.
-    $( Equivalence law for adjunction.  Theorem XI.1.13 of {{Rosser}}.
+    $( Equivalence law for adjunction.  Theorem XI.1.13 of [Rosser] p. 348.
        (Contributed by SF, 25-Feb-2015.) $)
     enadj $p |- ( ( ( A u. { X } ) = ( B u. { Y } ) /\
         -. X e. A /\ -. Y e. B ) -> A ~~ B ) $=
@@ -59366,8 +59366,8 @@ $)
     $d A r $.  $d B r $.  $d r x $.  $d r y $.
     enprmap.1 $e |- B e. _V $.
     $( A mapping from a two element pair onto a set is equinumerous with the
-       power class of the set.  Theorem XI.1.28 of {{Rosser}}.  (Contributed by
-       SF, 3-Mar-2015.) $)
+       power class of the set.  Theorem XI.1.28 of [Rosser] p. 360.
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmap $p |- ( ( x =/= y /\ A = { x , y } ) -> ( A ^m B ) ~~ ~P B ) $=
       ( vr cv wne cpr wceq wa cmap co cpw ccnv csn cima cmpt wf1o cen wfun eqid
       wbr wfn crn enprmaplem2 a1i enprmaplem3 enprmaplem6 syl3anbrc enprmaplem1
@@ -59383,8 +59383,8 @@ $)
     enprmapc.2 $e |- B e. _V $.
     enprmapc.3 $e |- C e. _V $.
     $( A mapping from a two element pair onto a set is equinumerous with the
-       power class of the set.  Theorem XI.1.28 of {{Rosser}}.  (Contributed by
-       SF, 3-Mar-2015.) $)
+       power class of the set.  Theorem XI.1.28 of [Rosser] p. 360.
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmapc $p |- ( ( A =/= B /\ P = { A , B } ) -> ( P ^m C ) ~~ ~P C ) $=
       ( vx vy cv wne cpr wceq wa cmap wi eqeq2d anbi12d imbi1d vtocl co cpw cen
       wbr neeq1 preq1 neeq2 preq2 enprmap ) HJZBKZDUJBLZMZNZDCOUACUBUCUDZPZABKZ
@@ -59914,20 +59914,22 @@ $)
       UUHBOWNUUPUUIWPXIUUOUUIWQUUGAUUHBWRWSXOUUJXJMXCWTXAXDWIXEXFXG $.
   $}
 
-  $( Cardinal zero is the cardinality of the empty set.  (Contributed by SF,
-     24-Feb-2015.) $)
+  $( Cardinal zero is the cardinality of the empty set.  Theorem XI.2.7 of
+     [Rosser] p. 372.  (Contributed by SF, 24-Feb-2015.) $)
   df0c2 $p |- 0c = Nc (/) $=
     ( vx c0 cen cec cv wbr cab cnc c0c dfec2 df-nc wceq wcel en0 ensym 3bitr4ri
     el0c abbi2i 3eqtr4ri ) BCDBAEZCFZAGBHIABCJBKUAAITBCFTBLUATIMTNBTOTQPRS $.
 
-  $( Cardinal zero is a cardinal number.  (Contributed by SF, 24-Feb-2015.) $)
+  $( Cardinal zero is a cardinal number.  Corollary 1 to theorem XI.2.7 of
+     [Rosser] p. 373.  (Contributed by SF, 24-Feb-2015.) $)
   0cnc $p |- 0c e. NC $=
     ( c0c c0 cnc cncs df0c2 0ex ncelncsi eqeltri ) ABCDEBFGH $.
 
 
   ${
     $d f x $.  $d f y $.  $d f z $.  $d x y $.  $d x z $.  $d y z $.
-    $( Cardinal one is a cardinal number.  (Contributed by SF, 24-Feb-2015.) $)
+    $( Cardinal one is a cardinal number.  Corollary 2 to theorem XI.2.8 of
+       [Rosser] p. 373. (Contributed by SF, 24-Feb-2015.) $)
     1cnc $p |- 1c e. NC $=
       ( vx vy vz vf c1c wcel cv cnc wceq wex csn cen wbr cvv vex exlimiv eqeq2d
       crn spcev sylbi cncs cec cab dfec2 df-nc el1c en2sn mp2an breq2 wf1o bren
@@ -59945,8 +59947,8 @@ $)
 
   ${
     df1c3.1 $e |- A e. _V $.
-    $( Cardinal one is the cardinality of a singleton.  (Contributed by SF,
-       2-Mar-2015.) $)
+    $( Cardinal one is the cardinality of a singleton.  Theorem XI.2.8 of
+       [Rosser] p. 373.  (Contributed by SF, 2-Mar-2015.) $)
     df1c3 $p |- 1c = Nc { A } $=
       ( c1c csn cnc wceq wcel snel1c cncs wb 1cnc ncseqnc ax-mp mpbir ) CADZEFZ
       OCGZABHCIGPQJKCOLMN $.
@@ -59954,8 +59956,8 @@ $)
 
   ${
     $d A x $.
-    $( Cardinal one is the cardinality of a singleton.  (Contributed by SF,
-       13-Mar-2015.) $)
+    $( Cardinal one is the cardinality of a singleton.  Theorem XI.2.8 of
+       [Rosser] p. 373. (Contributed by SF, 13-Mar-2015.) $)
     df1c3g $p |- ( A e. V -> 1c = Nc { A } ) $=
       ( vx c1c cv csn cnc wceq sneq nceqd eqeq2d vex df1c3 vtoclg ) DCEZFZGZHDA
       FZGZHCABOAHZQSDTPROAIJKOCLMN $.
@@ -59985,8 +59987,8 @@ $)
 
   ${
     $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d x y $.  $d x z $.  $d y z $.
-    $( The cardinals are closed under cardinal addition.  (Contributed by SF,
-       24-Feb-2015.) $)
+    $( The cardinals are closed under cardinal addition.  Theorem XI.2.10
+       of [Rosser] p. 374.  (Contributed by SF, 24-Feb-2015.) $)
     ncaddccl $p |- ( ( A e. NC /\ B e. NC ) -> ( A +c B ) e. NC ) $=
       ( vx vy vz cncs wcel cv cnc wceq wex elncs wa c0 csn cxp cen mpbir eqcomi
       cplc eeanv ccompl wbr vex 0ex complex xpsnen snex xpex eqnc eqtr addceq12
@@ -60014,8 +60016,8 @@ $)
       UBUDENUBUFENUBAENOUEUGRUDPFUDSTUA $.
   $}
 
-  $( The finite cardinals are a subset of the cardinals.  (Contributed by SF,
-     24-Feb-2015.) $)
+  $( The finite cardinals are a subset of the cardinals.  Theorem XI.2.11 of
+     [Rosser] p. 374. (Contributed by SF, 24-Feb-2015.) $)
   nnssnc $p |- Nn C_ NC $=
     ( vx cnnc cncs cv nnnc ssriv ) ABCADEF $.
 
@@ -60109,8 +60111,8 @@ $)
     ax-mp 3eqtr4i ) ABZCZDACZBZDECZDEDAFGUAREQHIJETEQTHSAKTQKLSAMONJP $.
 
   ${
-    $( One plus one equals two.  Theorem *110.64 of {{WhiteheadRussell}}.  This
-       theorem is occasionally useful.  (Contributed by SF, 2-Mar-2015.) $)
+    $( One plus one equals two.  Theorem *110.64 of [WhiteheadRussell] p. 86.
+       This theorem is occasionally useful.  (Contributed by SF, 2-Mar-2015.) $)
     1p1e2c $p |- ( 1c +c 1c ) = 2c $=
       ( c0 csn cvv cun cnc cplc c2c c1c cin wceq wcel 0ex n0i ax-mp elsnc mtbir
       wn vvex snex df1c3 disjsn mpbir ncdisjun df-2c df-pr nceqi eqtri 3eqtr4ri
@@ -60689,7 +60691,7 @@ $)
     $d A p $.  $d A x $.  $d A y $.  $d p x $.  $d p y $.  $d x y $.
     ce2.1 $e |- A e. _V $.
     $( The value of base two cardinal exponentiation.  Theorem XI.2.70 of
-       {{Rosser}}.  (Contributed by SF, 3-Mar-2015.) $)
+       [Rosser] p. 389.  (Contributed by SF, 3-Mar-2015.) $)
     ce2 $p |- ( M = Nc ~P1 A -> ( 2c ^c M ) = Nc ~P A ) $=
       ( vx vy cpw1 cnc wceq c2c cce co cvv c0 cpr wcel csn cun eqtri wne mpbir
       cpw oveq2 cmap df-pr pw1eq ax-mp pw1un pw1sn 0ex uneq12i eqtr4i cv wa wex
@@ -61584,21 +61586,169 @@ $)
   $}
 
   ${
-    $d t u $.  $d t x $.  $d u x $.
+     $d A x y z $. $d B x y z $. $d C x y z $.
+     $( Distributivity law for cardinal addition and multiplication.
+     	Theorem XI.2.31 of [Rosser] p. 379.  (Contributed by Scott Fenton,
+	31-Jul-2019.) $)
+     addcdi $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
+       ( A .c ( B +c C ) ) = ( ( A .c B ) +c ( A .c C ) ) ) $=
+       ( vx vy vz cncs wcel cplc cmuc co wceq cv cnc vex wa wi cxp mucnc oveq1
+       w3a ncaddccl 3adant1 wex elncs ncid eleq2 mpbiri cin c0 cun wrex ncseqnc
+       eladdc bi2anan9 ncdisjun oveq2d xpdisj2 xpex syl unex xpundi nceqi eqtri
+       addceq12i 3eqtr4g eqtr3d addceq12d eqeq12d syl5ibr exlimiv sylbi adantrd
+       addceq12 oveq2 adantr adantl imbi2d syl5ibrcom 3ad2ant1 rexlimdvv syl5bi
+       wb sylbird syl5 exlimdv mpd ) AGHZBGHZCGHZUAZBCIZGHZAWLJKZABJKZACJKZIZLZ
+       WIWJWMWHBCUBUCWMWLDMZNZLZDUDWKWRDWLUEWKXAWRDXAWSWLHZWKWRXAXBWSWTHWSDOZUF
+       WLWTWSUGUHXBEMZFMZUIUJLZWSXDXEUKZLZPZFCULEBULWKWRWSBCEFUNWKXIWREFBCWKXDB
+       HZXECHZPZBXDNZLZCXENZLZPZXIWRQZWIWJXQXLWCWHWIXNXJWJXPXKBXDUMCXEUMUOUCWHW
+       IXQXRQWJWHXRXQXIAXMXOIZJKZAXMJKZAXOJKZIZLZQWHXFYDXHWHAWTLZDUDXFYDQZDAUEY
+       EYFDXFYDYEWTXSJKZWTXMJKZWTXOJKZIZLXFWTXGNZJKZYGYJXFYKXSWTJXDXEEOZFOZUPUQ
+       XFWSXDRZWSXERZUKZNZYONZYPNZIZYLYJXFYOYPUIUJLYRUUALXDXEWSWSURYOYPWSXDXCYM
+       USWSXEXCYNUSUPUTYLWSXGRZNYRWSXGXCXDXEYMYNVASUUBYQWSXDXEVBVCVDYHYSYIYTWSX
+       DXCYMSWSXEXCYNSVEVFVGYEXTYGYCYJAWTXSJTYEYAYHYBYIAWTXMJTAWTXOJTVHVIVJVKVL
+       VMXQWRYDXIXQWNXTWQYCXQWLXSAJBCXMXOVNUQXQWOYAWPYBXNWOYALXPBXMAJVOVPXPWPYB
+       LXNCXOAJVOVQVHVIVRVSVTWDWAWBWEWFWBWG $.
+  $}
+
+  $( Distributivity law for cardinal addition and multiplication.
+     Theorem XI.2.30 of [Rosser] p. 379.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+  addcdir $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
+       ( ( A +c B ) .c C ) = ( ( A .c C ) +c ( B .c C ) ) ) $=
+    ( cncs wcel w3a cplc cmuc wceq addcdi 3coml ncaddccl 3adant3 muccom syl2anc
+    co simp3 3adant2 3adant1 addceq12d 3eqtr4d ) ADEZBDEZCDEZFZCABGZHPZCAHPZCBH
+    PZGZUFCHPZACHPZBCHPZGUDUBUCUGUJICABJKUEUFDEZUDUKUGIUBUCUNUDABLMUBUCUDQUFCNO
+    UEULUHUMUIUBUDULUHIUCACNRUCUDUMUIIUBBCNSTUA $.
+
+  ${
+     $d A x y $. $d B x y $.
+     $( The cardinal product of two cardinal numbers is zero iff one
+     	of the numbers is zero.  Biconditional form of theorem XI.2.34 of
+     	[Rosser] p. 380.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+     muc0or $p |- ( ( A e. NC /\ B e. NC ) -> ( ( A .c B ) = 0c <->
+     	    ( A = 0c \/ B = 0c ) ) ) $=
+       ( vx vy cncs wcel wa cmuc co c0c wceq wo cv cnc wi c0 df0c2 sylbi eqeq1d
+       wex elncs anbi12i eeanv bitr4i cxp vex mucnc eqeq12i cen xpex eqnc bitri
+       wbr en0 xpeq0 nceq orim12i oveq12 wb adantr eqeq2i syl6bb adantl orbi12d
+       eqeq1 mpbiri exlimivv 0cnc muccom mpan muc0 eqtrd oveq1 syl5ibrcom oveq2
+       imbi12d jaod impbid ) AEFZBEFZGZABHIZJKZAJKZBJKZLZWAACMZNZKZBDMZNZKZGZDT
+       CTZWCWFOZWAWICTZWLDTZGWNVSWPVTWQCAUADBUAUBWIWLCDUCUDWMWOCDWMWOWHWKHIZJKZ
+       WHPNZKZWKWTKZLZOWSWGWJUEZNZWTKZXCWRXEJWTWGWJCUFZDUFZUGQUHXFXDPKZXCXFXDPU
+       IUMXIXDPWGWJXGXHUJUKXDUNULXIWGPKZWJPKZLXCWGWJUOXJXAXKXBWGPUPWJPUPUQRRRWM
+       WCWSWFXCWMWBWRJAWHBWKHURSWMWDXAWEXBWMWDWHJKZXAWIWDXLUSWLAWHJVEUTJWTWHQVA
+       VBWLWEXBUSWIWLWEWKJKXBBWKJVEJWTWKQVAVBVCVDVPVFVGRWAWDWCWEVTWDWCOVSVTWCWD
+       JBHIZJKVTXMBJHIZJJEFVTXMXNKVHJBVIVJBVKVLWDWBXMJAJBHVMSVNVCVSWEWCOVTVSWCW
+       EAJHIZJKAVKWEWBXOJBJAHVOSVNUTVQVR $.
+  $}
+
+  ${
+     $d A q $. $d B q $. $d C q $.
+     $( Multiplication law for cardinal less than.  Theorem XI.2.35 of 
+     	[Rosser] p. 380.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+     lemuc1 $p |- ( ( ( A e. NC /\ B e. NC /\ C e. NC ) /\ A <_c B ) ->
+       ( A .c C ) <_c ( B .c C ) ) $=
+       ( vq cncs wcel w3a clec wbr cmuc co cv cplc wceq wb dflec2 3adant3 muccl
+       wrex wa wi adantr ancoms adantll addlecncs syl2anc simpll simplr addcdir
+       simpr syl3anc breqtrrd oveq1 breq2d syl5ibrcom rexlimdva 3adant2 sylbid
+       imp ) AEFZBEFZCEFZGZABHIZACJKZBCJKZHIZVCVDBADLZMZNZDESZVGUTVAVDVKOVBABDP
+       QUTVBVKVGUAVAUTVBTZVJVGDEVLVHEFZTZVGVJVEVICJKZHIVNVEVEVHCJKZMZVOHVNVEEFZ
+       VPEFZVEVQHIVLVRVMACRUBVBVMVSUTVMVBVSVHCRUCUDVEVPUEUFVNUTVMVBVOVQNUTVBVMU
+       GVLVMUJUTVBVMUHAVHCUIUKULVJVFVOVEHBVICJUMUNUOUPUQURUS $.
+  $}
+
+  $( Multiplication law for cardinal less than.  (Contributed by Scott
+     Fenton, 31-Jul-2019.) $)
+  lemuc2 $p |- ( ( ( A e. NC /\ B e. NC /\ C e. NC ) /\ B <_c C ) ->
+    ( A .c B ) <_c ( A .c C ) ) $=
+    ( cncs wcel w3a clec wbr wa cmuc co 3anrot lemuc1 sylanb wceq simpl1 simpl2
+    muccom syl2anc simpl3 3brtr4d ) ADEZBDEZCDEZFZBCGHZIZBAJKZCAJKZABJKZACJKZGU
+    EUCUDUBFUFUHUIGHUBUCUDLBCAMNUGUBUCUJUHOUBUCUDUFPZUBUCUDUFQABRSUGUBUDUKUIOUL
+    UBUCUDUFTACRSUA $.
+
+  $( A cardinal is less than or equal to its product with another.
+     Theorem XI.2.36 of [Rosser] p. 381.  (Contributed by Scott
+     Fenton, 31-Jul-2019.) $)
+  ncslemuc $p |- ( ( M e. NC /\ N e. NC /\ N =/= 0c ) ->
+       M <_c ( M .c N ) ) $=
+    ( cncs wcel c0c wne w3a c1c clec wbr cmuc co wn df-ne nc0le1 ord syl5bi imp
+    wceq wa 3adant1 wi mucid1 ad2antrr 1cnc lemuc2 mp3anl2 eqbrtrrd 3adant3 mpd
+    ex ) ACDZBCDZBEFZGHBIJZAABKLZIJZUMUNUOULUMUNUOUNBESZMUMUOBENUMURUOBOPQRUAUL
+    UMUOUQUBUNULUMTZUOUQUSUOTAHKLZAUPIULUTASUMUOAUCUDULHCDUMUOUTUPIJUEAHBUFUGUH
+    UKUIUJ $.
+
+  $( The product of the cardinality of ` _V ` squared is just the cardinality
+     of ` _V ` .  Theorem XI.2.37 of [Rosser] p. 381.  (Contributed by
+     Scott Fenton, 31-Jul-2019.) $)
+  ncvsq $p |- ( Nc _V .c Nc _V ) = Nc _V $=
+    ( cvv cnc cmuc co clec wbr wceq wcel c0 ovex wn cncs vvex mp2an mpbii df-ne
+    wne mto mpbir c0c nulnnc ncelncsi muccl eleq1 lecncvg vn0 el0c nemtbir ncid
+    eleq2 ncslemuc mp3an wa wi sbth ) ABZUPCDZUPEFZUPUQEFZUQUPGZUQAHUQIQZURUPUP
+    CJVAUQIGZKVBILHZUAVBUQLHZVCUPLHZVEVDAMUBZVFUPUPUCNZUQILUDORUQIPSUQAUENVEVEU
+    PTQZUSVFVFVHUPTGZKVIATHZVJAIUFAUGUHVIAUPHVJAMUIUPTAUJORUPTPSUPUPUKULVDVEURU
+    SUMUTUNVGVFUQUPUONN $.
+
+  $( There are exactly as many ordered pairs as there are sets.  Corollary to
+     theorem XI.2.37 of [Rosser] p. 381.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+  vvsqenvv $p |- ( _V X. _V ) ~~ _V $=
+    ( cvv cxp cnc wceq cen wbr cmuc co vvex mucnc ncvsq eqtr3i xpex eqnc mpbi )
+    AABZCZACZDPAEFRRGHQRAAIIJKLPAAAIIMNO $.
+
+  ${
+     $( Cardinal one is strictly greater than cardinal zero.  (Contributed
+     	by Scott Fenton, 01-Aug-2019.) $)
+     0lt1c $p |- 0c <c 1c $=
+       ( vx c0c cv csn cnc c1c cltc wbr clec wne c0 df0c2 wss 0ss 0ex snex wceq
+       wn df-ne wcel nclec ax-mp eqbrtri snnz mpbi ncid eleq2 mpbiri el0c sylib
+       vex mto mpbir brltc mpbir2an df1c3 breqtrri ) BACZDZEZFGBUTGHBUTIHBUTJZB
+       KEZUTILKUSMVBUTIHUSNKUSOURPZUAUBUCVABUTQZRVDUSKQZUSKJVERURAUKZUDUSKSUEVD
+       USBTZVEVDVGUSUTTUSVCUFBUTUSUGUHUSUIUJULBUTSUMBUTUNUOURVFUPUQ $.
+  $}
+  
+
+  ${
+    $d x y z w $.
+    $( The function mapping ` x ` to its cardinal successor exists.
+       (Contributed by Scott Fenton, 30-Jul-2019.) $)
+    csucex $p |- ( x e. _V |-> ( x +c 1c ) ) e. _V $=
+       ( vy vz vw cvv cv c1c cplc caddcfn c1st wbr wa wex wceq wcel bitri exbii
+       cop vex syl6bb cmpt csn cxp cres ccnv ccom wfun wrel funmpt funrel ax-mp
+       relco brcnv br1st anbi1i 19.41v bitr4i excom breq1 brres braddcfn opelxp
+       opex mpbiran elsn anbi12ci ceqsexv 1cex addceq2 eqeq1d opelco copab mptv
+       eleq2i weq addceq1 eqeq1 eqcom opelopab 3bitr4ri eqrelriiv addcfnex vvex
+       eqeq2d snex xpex resex 1stex cnvex coex eqeltri ) AEAFZGHZUAZIEGUBZUCZUD
+       ZJUEZUFZEBCWNWSWNUGWNUHAEWMUIWNUJUKWQWRULBFZDFZWRKZXACFZWQKZLZDMZWTGHZXC
+       NZWTXCRZWSOXIWNOZXFWLGNZWTWLHZXCNZLZAMZXHXFXAWTWLRZNZXDLZAMZDMZXOXEXSDXE
+       XQAMZXDLXSXBYAXDXBXAWTJKYAWTXAJUMAXAWTBSZUNPUOXQXDAUPUQQXTXRDMZAMXOXRDAU
+       RYCXNAXDXNDXPWTWLYBASZVCXQXDXPXCWQKZXNXAXPXCWQUSYEXPXCIKZXPWPOZLXNXPXCIW
+       PUTYFXMYGXKWTWLXCYBYDVAYGWLWOOZXKYGWTEOYHYBWTWLEWOVBVDAGVEPVFPTVGQPPXMXH
+       AGVHXKXLXGXCWLGWTVIVJVGPDWTXCWQWRVKXJXIXAWMNZADVLZOXHWNYJXIADWMVMVNYIXAX
+       GNZXHADWTXCYBCSABVOWMXGXAWLWTGVPWDDCVOYKXCXGNXHXAXCXGVQXCXGVRTVSPVTWAWQW
+       RIWPWBEWOWCGWEWFWGJWHWIWJWK $.
+  $}
+
+  ${
+     $d A x y $. $d B x y $.
+     brcsuc.1 $e |- A e. _V $.
+     brcsuc.2 $e |- B e. _V $.
+     $( Binary relationship form of the successor mapping function. 
+     	(Contributed by Scott Fenton, 02-Aug-2019.) $)
+     brcsuc $p |- ( A ( x e. _V |-> ( x +c 1c ) ) B <-> B = ( A +c 1c ) ) $=
+       ( vy cv c1c cplc wceq cvv cmpt addceq1 eqeq2d eqeq1 mptv brab ) FGZAGZHI
+       ZJRBHIZJCUAJAFBCAKTLDESBJTUARSBHMNRCUAOAFTPQ $.
+  $}
+
+  ${
+    $d x y t w $.
     $( Lemma for ~ nnltp1c .  Set up stratification.  (Contributed by SF,
        25-Mar-2015.) $)
     nnltp1clem1 $p |- { x | x <c ( x +c 1c ) } e. _V $=
-      ( vt vu caddcfn c1st c2nd ccnv c1c ccom cltc cv wbr wcel wa wex brco wceq
-      1cex 3bitri cnvex csn cima cres cfix cplc cab cvv elfix exancom cop brcnv
-      brres eliniseg anbi2i bitri vex op1st2nd anbi1i exbii opex breq1 braddcfn
-      ceqsexv eqcom addcex breq2 abbi2i 1stex 2ndex snex imaex resex coex ltcex
-      addcfnex fixex eqeltrri ) DEFGZHUAZUBZUCZGZIZGZJIZUDZAKZWGHUEZJLZAUFUGWIA
-      WFWGWFMWGWGWELWGBKZJLZWJWGWDLZNBOZWIWGWEUHBWGWGWDJPWMWLWKNZBOWJWHQZWKNZBO
-      WIWKWLBUIWNWPBWLWOWKWLWGWJWCLZWGHUJZWJDLZWOWJWGWCUKWQWGCKZWBLZWTWJDLZNZCO
-      WTWRQZXBNZCOWSCWGWJDWBPXCXECXAXDXBXAWTWGWALZWTWGELZWTHFLZNZXDWGWTWAUKXFXG
-      WTVTMZNXIWTWGEVTULXJXHXGFHWTUMUNUOWGHWTAUPZRUQSURUSXBWSCWRWGHXKRUTWTWRWJD
-      VAVCSWSWHWJQWOWGHWJXKRVBWHWJVDUOSURUSWKWIBWHWGHXKRVEWJWHWGJVFVCSSVGWEWDJW
-      CDWBVOWAEVTVHVRVSFVITHVJVKVLTVMTVNVMVPVQ $.
+      ( vw vy cltc ccnv cvv cv c1c cplc cmpt ccom cfix wbr cab elfix wa wex vex
+      wcel bitri brco wceq brcsuc brcnv anbi12i exbii 1cex addcex breq2 ceqsexv
+      abbi2i ltcex cnvex csucex coex fixex eqeltrri ) DEZBFBGHIJZKZLZAGZVBHIZDM
+      ZANFVDAVAVBVASVBVBUTMZVDVBUTOVEVBCGZUSMZVFVBURMZPZCQZVDCVBVBURUSUAVJVFVCU
+      BZVBVFDMZPZCQVDVIVMCVGVKVHVLBVBVFARZCRUCVFVBDUDUEUFVLVDCVCVBHVNUGUHVFVCVB
+      DUIUJTTTUKUTURUSDULUMBUNUOUPUQ $.
   $}
 
   ${
@@ -61618,12 +61768,113 @@ $)
   $}
 
   ${
+     $d n p q x y z $.
+     $( Lemma for ~ addccan2nc .  Stratification helper theorem.  (Contributed
+     	by Scott Fenton, 02-Aug-2019.) $)
+     addccan2nclem1 $p |- ( x ( AddC o. `' ( 1st |` ( _V X. { n } ) ) ) y
+     		    <-> y = ( x +c n ) ) $=
+       ( vz vp vq cv caddcfn c1st cvv wbr cop wceq wex weq eqeq2d 3bitri anbi1i
+       wa opeq2 csn cxp cres ccnv ccom cplc brco wcel brcnv brres w3a wrex rexv
+       ancom elxp2 vex rexsn exbii bitri exancom 19.41v bitr4i br1st eqeq1 opth
+       syl6bb pm5.32ri equcom anbi2i equcoms adantl pm5.32i df-3an 2exbii opeq1
+       ceqsex2v opex breq1 ceqsexv braddcfn eqcom ) AGZBGZHIJCGZUAZUBZUCZUDZUEK
+       ZWBWDLZWCHKZWBWDUFZWCMWCWLMWIWBDGZWHKZWMWCHKZSZDNWMWJMZWOSZDNWKDWBWCHWHU
+       GWPWRDWNWQWOWNWMWBWGKWMWBIKZWMWFUHZSZWQWBWMWGUIWMWBIWFUJXAWSWMEGZWDLZMZS
+       ZENZEAOZFCOZWMXBFGZLZMZUKZFNENZWQXAXDENZWSSZXFXAWTWSSXOWSWTUNWTXNWSWTXKF
+       WEULZEJULXPENXNEFWMJWEUOXPEUMXPXDEXKXDFWDCUPZXHXJXCWMXIWDXBTPUQURQRUSXFX
+       DWSSENXOWSXDEUTXDWSEVAUSVBXFWMWBXILZMZXDSZFNZENXMXEYAEXEXSFNZXDSYAWSYBXD
+       FWMWBAUPZVCRXSXDFVAVBURXTXLEFXTXGXHSZXKSZXLXTXGCFOZSZXDSYDXDSYEXDXSYGXDX
+       SXCXRMYGWMXCXRVDXBWDWBXIVEVFVGYGYDXDYFXHXGCFVHVIRYDXDXKYDXCXJWMXHXCXJMZX
+       GYHCFWDXIXBTVJVKPVLQXGXHXKVMVBVNUSXKXSWQEFWBWDYCXQXGXJXRWMXBWBXIVOPXHXRW
+       JWMXIWDWBTPVPQQRURWOWKDWJWBWDYCXQVQWMWJWCHVRVSQWBWDWCYCXQVTWLWCWAQ $.
+  $}
+
+
+  ${
+     $d N n p x y $. $d P p x y $.
+     $( Lemma for ~ addccan2nc .  Establish stratification for induction.
+     	(Contributed by Scott Fenton, 02-Aug-2019.) $)
+     addccan2nclem2 $p |- ( ( N e. V /\ P e. W ) ->
+     		{ x | ( ( x +c N ) = ( x +c P ) -> N = P ) } e. _V ) $=
+       ( vn vp vy wcel wa cv cplc wceq cab cvv caddcfn c1st ccnv ccom wbr wi wn
+       ccompl cun unab complab uneq1i imor 3eqtr4i addceq2 eqeq1d abbidv eleq1d
+       abbii eqeq2d csn cxp cres cfix wex elfix brco addccan2nclem1 brcnv bitri
+       anbi12i exbii vex addcex eqeq1 ceqsexv 3bitri abbi2i addcfnex 1stex vvex
+       wo snex xpex resex cnvex fixex eqeltrri vtocl2g complexg syl abexv unexg
+       coex sylancl syl5eqelr ) CDIBEIJZAKZCLZWMBLZMZCBMZUAZANZWPANZUCZWQANZUDZ
+       OWPUBZANZXBUDXDWQVQZANXCWSXDWQAUEXAXEXBWPAUFUGWRXFAWPWQUHUNUIWLXAOIZXBOI
+       XCOIWLWTOIZXGWMFKZLZWMGKZLZMZANZOIWNXLMZANZOIXHFGCBDEXICMZXNXPOXQXMXOAXQ
+       XJWNXLXICWMUJUKULUMXKBMZXPWTOXRXOWPAXRXLWOWNXKBWMUJUOULUMPQOXKUPZUQZURZR
+       ZSZRZPQOXIUPZUQZURZRZSZSZUSZXNOXMAYKWMYKIWMWMYJTZHKZXJMZYMXLMZJZHUTZXMWM
+       YJVAYLWMYMYITZYMWMYDTZJZHUTYQHWMWMYDYIVBYTYPHYRYNYSYOAHFVCYSWMYMYCTYOYMW
+       MYCVDAHGVCVEVFVGVEYOXMHXJWMXIAVHFVHVIYMXJXLVJVKVLVMYJYDYIYCPYBVNYAQXTVOO
+       XSVPXKVRVSVTWAWIWAPYHVNYGQYFVOOYEVPXIVRVSVTWAWIWIWBWCWDWTOWEWFWQAWGXAXBO
+       OWHWJWK $.
+  $}
+
+  ${
+     $d M x m $. $d N x m $. $d P x m $.
+     $( Cancellation law for addition over the cardinal numbers.  Biconditional
+     	form of theorem XI.3.2 of [Rosser] p. 391.  (Contributed by Scott Fenton,
+	02-Aug-2019.) $)
+     addccan2nc $p |- ( ( M e. Nn /\ N e. NC /\ P e. NC ) ->
+     	( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
+       ( vx vm cnnc wcel cncs cplc wceq wi cv c0c c1c wa addceq1 eqeq12d imbi1d
+       addcid2 eqeq12i w3a cvv addccan2nclem2 biimpi addc32 nnnc ncaddccl sylan
+       weq a1i adantrr adantr adantrl peano4nc biimpd syl2anc simpr syld syl5bi
+       ex findsd 3impb addceq2 impbid1 ) BFGZCHGZAHGZUABCIZBAIZJZCAJZVEVFVGVJVK
+       KZDLZCIZVMAIZJZVKKMCIZMAIZJZVKKZELZCIZWAAIZJZVKKZWANIZCIZWFAIZJZVKKZVLVF
+       VGOZDEBUBDACHHUCVMMJZVPVSVKWLVNVQVOVRVMMCPVMMAPQRDEUIZVPWDVKWMVNWBVOWCVM
+       WACPVMWAAPQRVMWFJZVPWIVKWNVNWGVOWHVMWFCPVMWFAPQRVMBJZVPVJVKWOVNVHVOVIVMB
+       CPVMBAPQRVTWKVSVKVQCVRACSASTUDUJWAFGZWKOZWEWJWIWBNIZWCNIZJZWQWEOZVKWGWRW
+       HWSWANCUEWANAUETXAWTWDVKXAWBHGZWCHGZWTWDKWQXBWEWPVFXBVGWPWAHGZVFXBWAUFZW
+       ACUGUHUKULWQXCWEWPVGXCVFWPXDVGXCXEWAAUGUHUMULXBXCOWTWDWBWCUNUOUPWQWEUQUR
+       USUTVAVBCABVCVD $.
+  $}
+
+  ${
+     $d M q $. $d N q $. $d P q $.
+     $( Cardinal addition preserves cardinal less than.  Biconditional form of
+     	corollary 4 of theorem XI.3.2 of [Rosser] p 391.  (Contributed by
+	Scott Fenton, 02-Aug-2019.) $)
+     lecadd2 $p |- ( ( M e. Nn /\ N e. NC /\ P e. NC ) ->
+       ( ( M +c N ) <_c ( M +c P ) <-> N <_c P ) ) $=
+       ( vq cnnc wcel cncs w3a cplc clec wbr cv wceq wrex wb ncaddccl 3ad2antl2
+       nnnc sylan sylbid 3adant3 3adant2 dflec2 syl2anc wa eqeq2i simpl1 simpl3
+       addcass addccan2nc syl3anc addlecncs syl5ibrcom syl5bi rexlimdva leaddc2
+       breq2 wi ex syl3an1 impbid ) BEFZCGFZAGFZHZBCIZBAIZJKZCAJKZVEVHVGVFDLZIZ
+       MZDGNZVIVEVFGFZVGGFZVHVMOVBVCVNVDVBBGFZVCVNBRZBCPSUAVBVDVOVCVBVPVDVOVQBA
+       PSUBVFVGDUCUDVEVLVIDGVLVGBCVJIZIZMZVEVJGFZUEZVIVKVSVGBCVJUIUFWBVTAVRMZVI
+       WBVBVDVRGFZVTWCOVBVCVDWAUGVBVCVDWAUHVCVBWAWDVDCVJPQVRBAUJUKWBVIWCCVRJKZV
+       CVBWAWEVDCVJULQAVRCJUQUMTUNUOTVBVPVCVDVIVHURVQVPVCVDHVIVHABCUPUSUTVA $.
+  $}
+
+
+  ${
+     $d M p q $. $d N p q $.
+     $( Relationship between successor and cardinal less than or equal.  
+     	(Contributed by Scott Fenton, 03-Aug-2019.) $)
+     ncslesuc $p |- ( ( M e. NC /\ N e. NC ) -> ( M <_c ( N +c 1c ) <->
+       ( M <_c N \/ M = ( N +c 1c ) ) ) ) $=
+       ( vp vq cncs wcel wa c1c cplc clec wbr wceq wo cv wrex wb c0c wi addceq2
+       adantl peano2nc dflec2 sylan2 nc0suc addcid1 syl6eq eqeq2d eqcoms syl6bi
+       olc a1i addcass syl6eqr biimpa simplr ncaddccl adantlr syl2anc addlecncs
+       peano4nc breq2 syl5ibrcom syl6 sylbid syl5 exp3a rexlimdva jaod rexlimdv
+       orc 1cnc mpan2 lectr mpd3an3 mpan2d nclecid syl breq1 impbid ) AEFZBEFZG
+       ZABHIZJKZABJKZAWCLZMZWBWDWCACNZIZLZCEOZWGWAVTWCEFZWDWKPBUAZAWCCUBUCWBWJW
+       GCEWHEFWHQLZWHDNZHIZLZDEOZMWBWJWGRZDWHUDWBWNWSWRWNWSRWBWNWJWCALWGWNWIAWC
+       WNWIAQIAWHQASAUEUFUGWGAWCWFWEUJUHUIUKWBWQWSDEWBWOEFZGZWQWJWGWQWJGWCAWOIZ
+       HIZLZXAWGWQWJXDWQWIXCWCWQWIAWPIXCWHWPASAWOHULUMUGUNXAXDBXBLZWGXAWAXBEFZX
+       DXEPVTWAWTUOVTWTXFWAAWOUPUQBXBUTURXAXEWEWGXAWEXEAXBJKZVTWTXGWAAWOUSUQBXB
+       AJVAVBWEWFVJVCVDVEVFVGVHVEVIVDWBWEWDWFWBWEBWCJKZWDWAXHVTWAHEFXHVKBHUSVLT
+       VTWAWLWEXHGWDRWAWLVTWMTABWCVMVNVOWBWDWFWCWCJKZWAXIVTWAWLXIWMWCVPVQTAWCWC
+       JVRVBVHVS $.
+  $}
+
+  ${
     $d m p $.  $d m q $.  $d m x $.  $d m y $.  $d p q $.  $d p t $.  $d p x $.
     $d p y $.  $d q t $.  $d q x $.  $d t x $.  $d x y $.
-    $( 16-Apr-2015 NM I changed "~" to "~~?" to prevent erroneous
-       link to commented out theorem nmembers1.  Change it back when
-       nmembers1 is completed. $)
-    $( Lemma for ~~? nmembers1 .  Set up stratification.  (Contributed by SF,
+    $( Lemma for ~ nmembers1 .  Set up stratification.  (Contributed by SF,
        25-Mar-2015.) $)
     nmembers1lem1 $p |- { x | { m e. Nn | ( 1c <_c m /\ m <_c x ) } e. T_c
                                                   T_c x } e. _V $=
@@ -61662,58 +61913,72 @@ $)
       JYIUUIUUHUUHJYJXMZYEUYOYKYLXNUYNXNYHXLYMYOYOXP $.
   $}
 
+  $( Lemma for ~ nmembers1 .  The set of all elements between
+     one and zero is empty.  (Contributed by Scott Fenton, 01-Aug-2019.) $)
+  nmembers1lem2 $p |- { m e. Nn | ( 1c <_c m /\ m <_c 0c ) } e. 0c $=
+       ( c1c cv clec wbr wa cnnc crab wcel wn wral wi cltc 0lt1c cncs 0cnc 1cnc
+       c0c wb ltlenlec mp2an mpbi simpri nnnc lectr mp3an13 syl exp3a imp imnan
+       mtoi ex sylib rgen c0 wceq el0c rabeq0 bitri mpbir ) BACZDEZVARDEZFZAGHZ
+       RIZVDJZAGKZVGAGVAGIZVBVCJZLVGVIVBVJVIVBFVCBRDEZRBDEZVKJZRBMEZVLVMFZNROIZ
+       BOIZVNVOSPQRBTUAUBUCVIVBVCVKLVIVBVCVKVIVAOIZVDVKLZVAUDVQVRVPVSQPBVARUEUF
+       UGUHUIUKULVBVCUJUMUNVFVEUOUPVHVEUQVDAGURUSUT $.
+
   ${
-    $d m x $.  $d N m $.  $d m n $.  $d n x $.  $d N x $.  $d k m $.  $d k n $.
-     $( Count the number of elements in a natural interval.  This
-        theorem will take on a different form after we introduce the
-        Axiom of Counting. $)
-$( 16-Apr-2015 NM Commented out since incomplete proofs can't be used
-   for web pages. $)
-$(
+     $d A m x y $. $d B m x y $.
+     $( Lemma for ~ nmembers1 .  If the interval from one to a natural is
+     	in a given natural, extending it by one puts it in the next natural.
+	(Contributed by Scott Fenton, 03-Aug-2019.) $)
+     nmembers1lem3 $p |- ( ( A e. Nn /\ B e. Nn ) -> 
+     ( { m e. Nn | ( 1c <_c m /\ m <_c A ) } e. B ->
+       { m e. Nn | ( 1c <_c m /\ m <_c ( A +c 1c ) ) } e. ( B +c 1c ) ) ) $=
+       ( vx vy c1c cv clec wbr wa cnnc wcel cplc wceq wn cncs adantr anbi12d wo
+       cun crab csn ccompl wrex wi cltc nnltp1c wb nnnc peano2 ltlenlec syl2anc
+       syl mpbid simprd intnand breq2 breq1 elrab notbii bitr4i sylibr elcomplg
+       a1d imnan mpbird ncslesuc syl2an expcom adantrd pm5.32d anass andi bitri
+       orbi1i 3bitr3g 1cnc addlecncs sylancr addccom syl6breqr eleq1 syl5ibrcom
+       jca pm4.71rd bicomd orbi2d bitrd weq elun elsn orbi12i eqrdv sneq uneq2d
+       3bitr4g eqeq2d rspcev compleq uneq1 rexeqbidv sylan2 elsuc ) FCGZHIZXDAH
+       IZJZCKUAZBLZAKLZBKLZJZXEXDAFMZHIZJZCKUAZBFMLZXIXLJXPDGZEGZUBZTZNZEXRUCZU
+       DZDBUDZXQXLXIXPXHXTTZNZEXHUCZUDZYEXLXMYHLZXPXHXMUBZTZNZYIXLYJXMXHLZOZXLX
+       MKLZFXMHIZXMAHIZJZOZUEZYOXLYTYPXLYRYQXJYROZXKXJAXMHIZUUBXJAXMUFIZUUCUUBJ
+       ZAUGXJAPLZXMPLZUUDUUEUHAUIZXJYPUUGAUJZXMUIUMAXMUKULUNUOQUPVDYOYPYSJZOUUA
+       YNUUJXGYSCXMKXDXMNXEYQXFYRXDXMFHUQXDXMAHURRUSUTYPYSVEVAVBXLYPYJYOUHXJYPX
+       KUUIQXMXHKVCUMVFXLDXPYLXLXRKLZFXRHIZXRXMHIZJZJZUUKUULXRAHIZJZJZXRXMNZSZX
+       RXPLXRYLLZXLUUOUURUUKUULJZUUSJZSZUUTXLUVBUUMJUVBUUPUUSSZJZUUOUVDXLUVBUUM
+       UVEXJUVBUUMUVEUHZUEXKXJUUKUVGUULUUKXJUVGUUKXRPLUUFUVGXJXRUIUUHXRAVGVHVIV
+       JQVKUUKUULUUMVLUVFUVBUUPJZUVCSUVDUVBUUPUUSVMUVHUURUVCUUKUULUUPVLVOVNVPXL
+       UVCUUSUURXLUUSUVCXLUUSUVBXJUUSUVBUEXKXJUVBUUSYPYQJXJYPYQUUIXJFFAMZXMHXJF
+       PLUUFFUVIHIVQUUHFAVRVSAFVTWAWDUUSUUKYPUULYQXRXMKWBXRXMFHUQRWCQWEWFWGWHXO
+       UUNCXRKCDWIZXEUULXNUUMXDXRFHUQZXDXRXMHURRUSUVAXRXHLZXRYKLZSUUTXRXHYKWJUV
+       LUURUVMUUSXGUUQCXRKUVJXEUULXFUUPUVKXDXRAHURRUSDXMWKWLVNWPWMYGYMEXMYHXSXM
+       NZYFYLXPUVNXTYKXHXSXMWNWOWQWRULYDYIDXHBXRXHNZYBYGEYCYHXRXHWSUVOYAYFXPXRX
+       HXTWTWQXAWRXBEXPBDXCVBVI $.
+  $}
+
+  ${
+     $d N m n a $.  
+     $( Count the number of elements in a natural interval.  From 
+     	~ nmembers1lem2 and ~ nmembers1lem3 , we would expect to arrive
+	at ` { m e. Nn | ( 1c <_c m /\ m <_c N ) } e. N ` , but this
+	proposition is not stratifiable.  Instead, we arrive at the weaker
+	conclusion below.  We can arrive at the earlier proposition once
+	we add the Axiom of Counting, which we will do later.  (Contributed
+	by Scott Fenton, 03-Aug-2019.) $)
      nmembers1 $p |- ( N e. Nn ->
       { m e. Nn | ( 1c <_c m /\ m <_c N ) } e. T_c T_c N ) $=
-       ( vx c1c clec wbr wa cnnc crab ctc wcel c0c cplc wceq breq2 tceq wn cncs
-       syl wi vn vk cv nmembers1lem1 anbi2d rabbidv tc0c ax-mp eqtri syl6eq weq
-       eleq12d eqid c0 rabeq0 nnnc le0nc 0cnc sbth mpan2 mpan2d wrex wne 0cnsuc
-       addccom eqnetri necomi df-ne mpbi nrex wb 1cnc dflec2 mp2an mtbir mtbiri
-       a1i syl6 con2d imnan sylib mprgbir el0c mpbir csn wo simpl peano2 eleq1a
-       jaod addlecncs mpan syl6breq biimprd com12 adantr simp3 biantrurd orbi1d
-       cun w3a 3bitr3d 3expia pm5.21ndd simpr breq1 anbi12d elrab elun vex elsn
-       orbi12i bitri 3bitr4g eqrdv cltc nnltp1c ltlenlec syl2anc simprd intnand
-       ex mpbid a1d df-an con2bii 1cex addcex elsuci sylan2 ancoms eqeltrd tcdi
-       tc1c addceq2i tccl syl5eq eqtrd eleqtrrd finds ) DAUCZEFZUUACUCZEFZGZAHI
-       ZUUCJZJZKUUBUUALEFZGZAHIZLKZUUBUUAUAUCZEFZGZAHIZUUMJZJZKZUUBUUAUUMDMZEFZ
-       GZAHIZUUTJZJZKZUUBUUABEFZGZAHIZBJZJZKCUABCAUDUUCLNZUUFUUKUUHLUVLUUEUUJAH
-       UVLUUDUUIUUBUUCLUUAEOUEUFUVLUUHLJZJZLUVLUUGUVMNUUHUVNNUUCLPUUGUVMPSUVNUV
-       MLUVMLNUVNUVMNUGUVMLPUHUGUIUJULCUAUKZUUFUUPUUHUURUVOUUEUUOAHUVOUUDUUNUUB
-       UUCUUMUUAEOUEUFUVOUUGUUQNUUHUURNUUCUUMPUUGUUQPSULUUCUUTNZUUFUVCUUHUVEUVP
-       UUEUVBAHUVPUUDUVAUUBUUCUUTUUAEOUEUFUVPUUHUVEUVEUVPUUGUVDNUUHUVENUUCUUTPU
-       UGUVDPSUVEUMUJULUUCBNZUUFUVIUUHUVKUVQUUEUVHAHUVQUUDUVGUUBUUCBUUAEOUEUFUV
-       QUUGUVJNUUHUVKNUUCBPUUGUVJPSULUULUUKUNNZUVRUUJQZAHUUJAHUOUUAHKZUUBUUIQTU
-       VSUVTUUIUUBUVTUUIUUALNZUUBQUVTUUILUUAEFZUWAUVTUUARKZUWBUUAUPZUUAUQSUVTUW
-       CUUIUWBGUWATZUWDUWCLRKZUWEURUUALUSUTSVAUWAUUBDLEFZUWGLDUUCMZNZCRVBZUWICR
-       UWIQZUUCRKLUWHVCUWKUWHLUWHUUCDMLDUUCVEUUCVDVFVGLUWHVHVIVQVJDRKZUWFUWGUWJ
-       VKVLURDLCVMVNVOUUALDEOVPVRVSUUBUUIVTWAWBUUKWCWDUUMHKZUUSUVFUWMUUSGZUVCUU
-       RDMZUVEUWNUVCUUPUUTWEZWTZUWOUWMUVCUWQNUUSUWMUBUVCUWQUWMUBUCZHKZDUWREFZUW
-       RUUTEFZGZGZUWSUWTUWRUUMEFZGZGZUWRUUTNZWFZUWRUVCKUWRUWQKZUWMUWSUXCUXHUXCU
-       WSTUWMUWSUXBWGVQUWMUXFUWSUXGUXFUWSTUWMUWSUXEWGVQUWMUUTHKZUXGUWSTUUMWHZUU
-       THUWRWISWJUWMUWSUXCUXHVKUWMUWSGZUXBUXEUXGWFZUXCUXHUXLUWTUXBUXMUXBUWTTUXL
-       UWTUXAWGVQUXLUXEUWTUXGUXEUWTTUXLUWTUXDWGVQUWMUXGUWTTZUWSUWMDUUTEFZUXNUWM
-       DDUUMMZUUTEUWMUUMRKZDUXPEFZUUMUPZUWLUXQUXRVLDUUMWKWLSDUUMVEWMUXGUXOUWTUX
-       GUWTUXOUWRUUTDEOWNWOSWPWJUWMUWSUWTUXBUXMVKUWMUWSUWTXAZUXAUXDUXGWFUXBUXM?
-       UXTUWTUXAUWMUWSUWTWQZWRUXTUXDUXEUXGUXTUWTUXDUYAWRWSXBXCXDUXLUWSUXBUWMUWS
-       XEZWRUXLUXEUXFUXGUXLUWSUXEUYBWRWSXBYBXDUVBUXBAUWRHAUBUKZUUBUWTUVAUXAUUAU
-       WRDEOZUUAUWRUUTEXFXGXHUXIUWRUUPKZUWRUWPKZWFUXHUWRUUPUWPXIUYEUXFUYFUXGUUO
-       UXEAUWRHUYCUUBUWTUUNUXDUYDUUAUWRUUMEXFXGXHUWRUUTUBXJXKXLXMXNXOWPUUSUWMUW
-       QUWOKZUWMUUSUUTUUPKZQZUYGUWMUXJUXOUUTUUMEFZGZQZTZUYIUWMUYLUXJUWMUYJUXOUW
-       MUUMUUTEFZUYJQZUWMUUMUUTXPFZUYNUYOGZUUMXQUWMUXQUUTRKZUYPUYQVKUXSUWMUXJUY
-       RUXKUUTUPSUUMUUTXRXSYCXTYAYDUYHUYMUYHUXJUYKGUYMQUUOUYKAUUTHUUAUUTNUUBUXO
-       UUNUYJUUAUUTDEOUUAUUTUUMEXFXGXHUXJUYKYEXMYFWAUUPUURUUTUUMDUAXJYGYHYIYJYK
-       YLUWMUVEUWONUUSUWMUVEUUQDJZMZJZUWOUWMUVDUYTNZUVEVUANUWMUXQVUBUXSUXQUWLVU
-       BVLUUMDYMUTSUVDUYTPSUWMVUAUUQDMZJZUWOUYTVUCNVUAVUDNUYSDUUQYNYOUYTVUCPUHU
-       WMVUDUURUYSMZUWOUWMUUQRKZVUDVUENZUWMUXQVUFUXSUUMYPSVUFUWLVUGVLUUQDYMUTSU
-       YSDUURYNYOUJYQYRWPYSYBYT $.
-$)
+       ( vn c1c clec wbr wa cnnc crab ctc wcel c0c cplc wceq breq2 rabbidv tceq
+       anbi2d syl eleq12d va cv nmembers1lem1 nmembers1lem2 tc0c ax-mp eleqtrri
+       eqtri wi nntccl nmembers1lem3 wb cncs nnnc 1cnc tcdi mpan2 tc1c addceq2i
+       weq syl6eq tccl eqtrd eleq2d adantr sylibrd mpdan finds ) DAUBZEFZVICUBZ
+       EFZGZAHIZVKJZJZKVJVILEFZGZAHIZLJZJZKVJVIUAUBZEFZGZAHIZWBJZJZKZVJVIWBDMZE
+       FZGZAHIZWIJZJZKZVJVIBEFZGZAHIZBJZJZKCUABCAUCVKLNZVNVSVPWAXAVMVRAHXAVLVQV
+       JVKLVIEORPXAVOVTNVPWANVKLQVOVTQSTCUAUTZVNWEVPWGXBVMWDAHXBVLWCVJVKWBVIEOR
+       PXBVOWFNVPWGNVKWBQVOWFQSTVKWINZVNWLVPWNXCVMWKAHXCVLWJVJVKWIVIEORPXCVOWMN
+       VPWNNVKWIQVOWMQSTVKBNZVNWRVPWTXDVMWQAHXDVLWPVJVKBVIEORPXDVOWSNVPWTNVKBQV
+       OWSQSTVSLWAAUDWAVTLVTLNWAVTNUEVTLQUFUEUHUGWBHKZWGHKZWHWOUIXEWFHKXFWBUJWF
+       UJSXEXFGWHWLWGDMZKZWOWBWGAUKXEWOXHULXFXEWNXGWLXEWBUMKZWNXGNWBUNXIWNWFDMZ
+       JZXGXIWMXJNWNXKNXIWMWFDJZMZXJXIDUMKZWMXMNUOWBDUPUQXLDWFURUSVAWMXJQSXIXKW
+       GXLMZXGXIWFUMKZXKXONZWBVBXPXNXQUOWFDUPUQSXLDWGURUSVAVCSVDVEVFVGVH $.
   $}
 
 
@@ -62729,34 +62994,13 @@ $)
   $}
 
   ${
-    $d x y z w $.
-    $( The function mapping ` x ` to its cardinal successor exists.
-       (Contributed by Scott Fenton, 30-Jul-2019.) $)
-    csuccex $p |- ( x e. _V |-> ( x +c 1c ) ) e. _V $=
-       ( vy vz vw cvv cv c1c cplc caddcfn c1st wbr wa wex wceq wcel bitri exbii
-       cop vex syl6bb cmpt csn cxp cres ccnv ccom wfun wrel funmpt funrel ax-mp
-       relco brcnv br1st anbi1i 19.41v bitr4i excom breq1 brres braddcfn opelxp
-       opex mpbiran elsn anbi12ci ceqsexv 1cex addceq2 eqeq1d opelco copab mptv
-       eleq2i weq addceq1 eqeq1 eqcom opelopab 3bitr4ri eqrelriiv addcfnex vvex
-       eqeq2d snex xpex resex 1stex cnvex coex eqeltri ) AEAFZGHZUAZIEGUBZUCZUD
-       ZJUEZUFZEBCWNWSWNUGWNUHAEWMUIWNUJUKWQWRULBFZDFZWRKZXACFZWQKZLZDMZWTGHZXC
-       NZWTXCRZWSOXIWNOZXFWLGNZWTWLHZXCNZLZAMZXHXFXAWTWLRZNZXDLZAMZDMZXOXEXSDXE
-       XQAMZXDLXSXBYAXDXBXAWTJKYAWTXAJUMAXAWTBSZUNPUOXQXDAUPUQQXTXRDMZAMXOXRDAU
-       RYCXNAXDXNDXPWTWLYBASZVCXQXDXPXCWQKZXNXAXPXCWQUSYEXPXCIKZXPWPOZLXNXPXCIW
-       PUTYFXMYGXKWTWLXCYBYDVAYGWLWOOZXKYGWTEOYHYBWTWLEWOVBVDAGVEPVFPTVGQPPXMXH
-       AGVHXKXLXGXCWLGWTVIVJVGPDWTXCWQWRVKXJXIXAWMNZADVLZOXHWNYJXIADWMVMVNYIXAX
-       GNZXHADWTXCYBCSABVOWMXGXAWLWTGVPWDDCVOYKXCXGNXHXAXCXGVQXCXGVRTVSPVTWAWQW
-       RIWPWBEWOWCGWEWFWGJWHWIWJWK $.
-  $}
-
-  ${
     $d G x y z w $.  $d I x y z w $.
     frecex.1 $e |- F = FRec ( G , I ) $.
     $( The finite recursive function generator preserves sethood.  (Contributed
        by Scott Fenton, 30-Jul-2019.) $)
     frecexg $p |- ( G e. V -> F e. _V ) $=
       ( vx wcel c0c cop csn cvv c1c cplc cmpt cpprod cclos1 cfrec df-frec eqtri
-      cv snex csuccex pprodexg mpan clos1exg sylancr syl5eqel ) BDGZAHCIZJZFKFT
+      cv snex csucex pprodexg mpan clos1exg sylancr syl5eqel ) BDGZAHCIZJZFKFT
       LMNZBOZPZKABCQUMEFBCRSUHUJKGULKGZUMKGUIUAUKKGUHUNFUBUKBKDUCUDULUJKKUEUFUG
       $.
 
@@ -62774,30 +63018,28 @@ $)
     $( Subset relationship for the finite recursive function generator.
        (Contributed by Scott Fenton, 30-Jul-2019.) $)
     frecxp $p |- F C_ ( Nn X. ( ran G u. { I } ) ) $=
-       ( vy vz vx va vb vc vd cnnc cvv wcel cv wceq c0c wa c0 vi vw crn csn cun
-       cfrec cxp wss eqid freceq12 mpan sneq uneq2d xpeq2d sseq12d cop c1c cplc
-       cmpt cpprod wbr wal wral nncex rnex snex unex xpex peano1 vex snid elun2
-       wi ax-mp 0cex opex opelxp bitr3i mpbir2an w3a wex brpprod addceq1 eqeq2d
-       snss weq eqeq1 mptv brab brelrn elun1 syl peano2 anim12ci adantrr anbi1d
-       eleq1 syl5ibr exp3a sylbi imp syl6bb adantr adantl imbi12d 3impia impcom
-       wb exlimivv ax-gen rgenw csuccex pprodex clos1induct mp3an vtoclg cclos1
-       df-frec wn opexb simprbi con3i snprc clos1eq1 clos10 syl6eq 0ss syl6eqss
-       sylib syl5eqss pm2.61i eqsstri ) ABCUFZMBUCZCUDZUEZUGZDCNOZYMYQUHZBUAPZU
-       FZMYNYTUDZUEZUGZUHZYSUACNYTCQZUUAYMUUDYQBBQUUFUUAYMQBUIBBYTCUJUKUUFUUCYP
-       MUUFUUBYOYNYTCULUMUNUOUUDNORYTUPZUDZUUDUHZFPZUUDOZUUJGPZHNHPZUQURZUSZBUT
-       ZVAZSUULUUDOZVMZGVBZFUUAVCUUEMUUCVDYNUUBBEVEYTVFVGVHUUIRMOZYTUUCOZVIYTUU
-       BOUVBYTUAVJZVKYTUUBYNVLVNUUIUUGUUDOUVAUVBSUUGUUDRYTVOUVCVPWERYTMUUCVQVRV
-       SUUTFUUAUUSGUUQUUKUURUUQUUJIPZJPZUPZQZUULKPZLPZUPZQZUVDUVHUUOVAZUVEUVIBV
-       AZSZVTZLWAKWAZJWAIWAUUKUURVMZIJKLUUJUULUUOBWBUVPUVQIJUVOUVQKLUVGUVKUVNUV
-       QUVNUVQUVGUVKSZUVDMOZUVEUUCOZSZUVHMOZUVIUUCOZSZVMZUVLUVMUWEUVLUVHUVDUQUR
-       ZQZUVMUWEVMUBPZUUNQUWHUWFQUWGHUBUVDUVHUUOIVJKVJHIWFUUNUWFUWHUUMUVDUQWCWD
-       UWHUVHUWFWGHUBUUNWHWIUWGUVMUWAUWDUVMUWASUWDUWGUWFMOZUWCSZUVMUVSUWJUVTUVM
-       UWCUVSUWIUVMUVIYNOUWCUVEUVIBWJUVIYNUUBWKWLUVDWMWNWOUWGUWBUWIUWCUVHUWFMWQ
-       WPWRWSWTXAUVRUUKUWAUURUWDUVGUUKUWAXHUVKUVGUUKUVFUUDOUWAUUJUVFUUDWQUVDUVE
-       MUUCVQXBXCUVKUURUWDXHUVGUVKUURUVJUUDOUWDUULUVJUUDWQUVHUVIMUUCVQXBXDXEWRX
-       FXIXIWTXGXJXKFGUUAUUPUUHNUUDUUGVFUUOBHXLEXMZHBYTXRXNXOXPYRXSZYMRCUPZUDZU
-       UPXQZYQHBCXRUWLUWOTYQUWLUWOTUUPXQZTUWLUWNTQZUWOUWPQUWLUWMNOZXSUWQUWRYRUW
-       RRNOYRRCXTYAYBUWMYCYIUUPUWNTYDWLUWPUUPUWKUWPUIYEYFYQYGYHYJYKYL $.
+      ( vy vz vx va vb vc vd cnnc cvv wcel cv wceq c0c wa c0 vi crn csn cun cxp
+      cfrec wss eqid freceq12 mpan sneq uneq2d xpeq2d sseq12d cop c1c cplc cmpt
+      cpprod wbr wal wral nncex rnex snex unex xpex peano1 vex snid elun2 ax-mp
+      0cex opex snss opelxp bitr3i mpbir2an w3a wex brpprod brcsuc brelrn elun1
+      wi syl peano2 anim12ci adantrr eleq1 anbi1d syl5ibr exp3a sylbi wb syl6bb
+      adantr adantl imbi12d 3impia exlimivv impcom ax-gen rgenw pprodex df-frec
+      csucex clos1induct mp3an vtoclg wn cclos1 opexb simprbi con3i snprc sylib
+      imp clos1eq1 clos10 syl6eq 0ss syl6eqss syl5eqss pm2.61i eqsstri ) ABCUFZ
+      MBUBZCUCZUDZUEZDCNOZYGYKUGZBUAPZUFZMYHYNUCZUDZUEZUGZYMUACNYNCQZYOYGYRYKBB
+      QYTYOYGQBUHBBYNCUIUJYTYQYJMYTYPYIYHYNCUKULUMUNYRNORYNUOZUCZYRUGZFPZYROZUU
+      DGPZHNHPUPUQURZBUSZUTZSUUFYROZWEZGVAZFYOVBYSMYQVCYHYPBEVDYNVEVFVGUUCRMOZY
+      NYQOZVHYNYPOUUNYNUAVIZVJYNYPYHVKVLUUCUUAYROUUMUUNSUUAYRRYNVMUUOVNVORYNMYQ
+      VPVQVRUULFYOUUKGUUIUUEUUJUUIUUDIPZJPZUOZQZUUFKPZLPZUOZQZUUPUUTUUGUTZUUQUV
+      ABUTZSZVSZLVTKVTZJVTIVTUUEUUJWEZIJKLUUDUUFUUGBWAUVHUVIIJUVGUVIKLUUSUVCUVF
+      UVIUVFUVIUUSUVCSZUUPMOZUUQYQOZSZUUTMOZUVAYQOZSZWEZUVDUVEUVQUVDUUTUUPUPUQZ
+      QZUVEUVQWEHUUPUUTIVIKVIWBUVSUVEUVMUVPUVEUVMSUVPUVSUVRMOZUVOSZUVEUVKUWAUVL
+      UVEUVOUVKUVTUVEUVAYHOUVOUUQUVABWCUVAYHYPWDWFUUPWGWHWIUVSUVNUVTUVOUUTUVRMW
+      JWKWLWMWNXRUVJUUEUVMUUJUVPUUSUUEUVMWOUVCUUSUUEUURYROUVMUUDUURYRWJUUPUUQMY
+      QVPWPWQUVCUUJUVPWOUUSUVCUUJUVBYROUVPUUFUVBYRWJUUTUVAMYQVPWPWRWSWLWTXAXAWN
+      XBXCXDFGYOUUHUUBNYRUUAVEUUGBHXGEXEZHBYNXFXHXIXJYLXKZYGRCUOZUCZUUHXLZYKHBC
+      XFUWCUWFTYKUWCUWFTUUHXLZTUWCUWETQZUWFUWGQUWCUWDNOZXKUWHUWIYLUWIRNOYLRCXMX
+      NXOUWDXPXQUUHUWETXSWFUWGUUHUWBUWGUHXTYAYKYBYCYDYEYF $.
 
     $( The finite recursive function generator gives a relationship.
        (Contributed by Scott Fenton, 30-Jul-2019.) $)
@@ -62835,32 +63077,31 @@ $)
     $( The domain of the finite recursive function generator is the naturals.
        (Contributed by Scott Fenton, 31-Jul-2019.) $)
     dmfrec $p |- ( ph -> dom F = Nn ) $=
-      ( vw vy vz cnnc wcel cvv c0c cv wbr wex wceq vx vt va cdm crn csn cun cxp
-      vb wss frecxpg dmss 3syl dmxpss syl6ss c1c cplc wi wral frecexg dmexg cop
-      cmpt cpprod wrex wo 0cex opexg sylancr snidg syl orcd wb csuccex pprodexg
-      cfrec cclos1 df-frec eqtri clos1basesucg mpbird df-br sylibr breldm eldm2
-      snex vex opex elsnc opth bitri eleq1a adantld syl5bi relfrecg elrel sylan
-      wa wrel brelrn adantl a1i breq1 qrpprod syl6bb imbi1d syl5ibrcom exlimdvv
-      ex syld rexlimdv sseld jaod sylbid ancld clos1conn eximi eldm eqid addcex
-      1cex weq addceq1 eqeq2d eqeq1 mptv brab mpbir mpbiran exbii bitr4i anbi2i
-      19.42v 3imtr4i syl6 exlimdv ralrimivw peano5 syl3anc eqssd ) ABUDZMAUUAMC
-      UEZDUFUGZUHZUDZMACENZBUUDUJUUAUUEUJGBCDEFUKBUUDULUMMUUCUNUOAUUAONZPUUANZU
-      AQZUUANZUUIUPUQZUUANZURZUAMUSMUUAUJAUUFBONUUGGBCDEFUTBOVAUMAPDBRZUUHAPDVB
-      ZBNZUUNAUUPUUOUUOUFZNZUBQZUUOJOJQZUPUQZVCZCVDZRUBBVEZVFZAUURUVDAUUOONZUUR
-      APONDCUDZNZUVFVGHPDOUVGVHVIUUOOVJVKVLAUUQONZUVCONZUUPUVEVMUUOWFZAUVBONUUF
-      UVJJVNGUVBCOEVOVIZUBUUOBUVCUUQOOBCDVPUUQUVCVQFJCDVRVSZVTVIWAPDBWBWCPDBWDV
-      KAUUMUAMUUJUUIKQZVBZBNZKSAUULKUUIBWEAUVPUULKAUVPUVPUVNUVGNZWRZUULAUVPUVQA
-      UVPUVOUUQNZUUSUVOUVCRZUBBVEZVFZUVQAUVIUVJUVPUWBVMUVKUVLUBUVOBUVCUUQOOUVMV
-      TVIAUVSUVQUWAUVSUUIPTZUVNDTZWRZAUVQUVSUVOUUOTUWEUVOUUOUUIUVNUAWGZKWGWHWIU
-      UIUVNPDWJWKAUWDUVQUWCAUVHUWDUVQURHDUVGUVNWLVKWMWNAUWAUVNUUBNZUVQAUVTUWGUB
-      BAUUSBNZUUSUCQZUIQZVBZTZUISUCSZUVTUWGURZAUWHUWMABWSZUWHUWMAUUFUWOGBCDEFWO
-      VKUCUIUUSBWPWQXIAUWLUWNUCUIAUWNUWLUWIUUIUVBRZUWJUVNCRZWRZUWGURZUWSAUWQUWG
-      UWPUWJUVNCWTXAXBUWLUVTUWRUWGUWLUVTUWKUVOUVCRUWRUUSUWKUVOUVCXCUWIUWJUUIUVN
-      UVBCXDXEXFXGXHXJXKAUUBUVGUVNIXLXJXMXNXOUVPUVOUUKLQZVBZUVCRZWRZLSZUXABNZLS
-      UVRUULUXCUXELUVOUXABUVCUUQUVMXPXQUVRUVPUXBLSZWRUXDUVQUXFUVPUVQUVNUWTCRZLS
-      UXFLUVNCXRUXBUXGLUXBUUIUUKUVBRZUXGUXHUUKUUKTZUUKXSUVNUVATUVNUUKTUXIJKUUIU
-      UKUVBUWFUUIUPUWFYAXTJUAYBUVAUUKUVNUUTUUIUPYCYDUVNUUKUUKYEJKUVAYFYGYHUUIUV
-      NUUKUWTUVBCXDYIYJYKYLUVPUXBLYMYKLUUKBWEYNYOYPWNYQUAUUAOYRYSYT $.
+      ( vx vt vw vz cnnc wcel cvv c0c cv wbr wex vy cdm crn csn cun cxp frecxpg
+      va vb wss dmss 3syl dmxpss syl6ss c1c cplc wi wral frecexg dmexg cop cmpt
+      cpprod wrex wo 0cex opexg sylancr snidg syl orcd wb csucex pprodexg cfrec
+      snex cclos1 df-frec eqtri clos1basesucg mpbird df-br sylibr eldm2 wa wceq
+      breldm vex opex elsnc opth bitri eleq1a adantld wrel relfrecg elrel sylan
+      syl5bi ex brelrn adantl a1i breq1 qrpprod syl6bb syl5ibrcom exlimdvv syld
+      imbi1d rexlimdv sseld jaod sylbid ancld clos1conn eldm eqid addcex brcsuc
+      eximi 1cex mpbir mpbiran bitr4i anbi2i 19.42v 3imtr4i syl6 exlimdv peano5
+      exbii ralrimivw syl3anc eqssd ) ABUBZNAYPNCUCZDUDUEZUFZUBZNACEOZBYSUJYPYT
+      UJGBCDEFUGBYSUKULNYRUMUNAYPPOZQYPOZJRZYPOZUUDUOUPZYPOZUQZJNURNYPUJAUUABPO
+      UUBGBCDEFUSBPUTULAQDBSZUUCAQDVAZBOZUUIAUUKUUJUUJUDZOZKRZUUJLPLRUOUPVBZCVC
+      ZSKBVDZVEZAUUMUUQAUUJPOZUUMAQPODCUBZOZUUSVFHQDPUUTVGVHUUJPVIVJVKAUULPOZUU
+      PPOZUUKUURVLUUJVPZAUUOPOUUAUVCLVMGUUOCPEVNVHZKUUJBUUPUULPPBCDVOUULUUPVQFL
+      CDVRVSZVTVHWAQDBWBWCQDBWGVJAUUHJNUUEUUDUARZVAZBOZUATAUUGUAUUDBWDAUVIUUGUA
+      AUVIUVIUVGUUTOZWEZUUGAUVIUVJAUVIUVHUULOZUUNUVHUUPSZKBVDZVEZUVJAUVBUVCUVIU
+      VOVLUVDUVEKUVHBUUPUULPPUVFVTVHAUVLUVJUVNUVLUUDQWFZUVGDWFZWEZAUVJUVLUVHUUJ
+      WFUVRUVHUUJUUDUVGJWHZUAWHWIWJUUDUVGQDWKWLAUVQUVJUVPAUVAUVQUVJUQHDUUTUVGWM
+      VJWNWSAUVNUVGYQOZUVJAUVMUVTKBAUUNBOZUUNUHRZUIRZVAZWFZUITUHTZUVMUVTUQZAUWA
+      UWFABWOZUWAUWFAUUAUWHGBCDEFWPVJUHUIUUNBWQWRWTAUWEUWGUHUIAUWGUWEUWBUUDUUOS
+      ZUWCUVGCSZWEZUVTUQZUWLAUWJUVTUWIUWCUVGCXAXBXCUWEUVMUWKUVTUWEUVMUWDUVHUUPS
+      UWKUUNUWDUVHUUPXDUWBUWCUUDUVGUUOCXEXFXJXGXHXIXKAYQUUTUVGIXLXIXMXNXOUVIUVH
+      UUFMRZVAZUUPSZWEZMTZUWNBOZMTUVKUUGUWPUWRMUVHUWNBUUPUULUVFXPYAUVKUVIUWOMTZ
+      WEUWQUVJUWSUVIUVJUVGUWMCSZMTUWSMUVGCXQUWOUWTMUWOUUDUUFUUOSZUWTUXAUUFUUFWF
+      UUFXRLUUDUUFUVSUUDUOUVSYBXSXTYCUUDUVGUUFUWMUUOCXEYDYLYEYFUVIUWOMYGYEMUUFB
+      WDYHYIYJWSYMJYPPYKYNYO $.
   $}
 
   ${
@@ -62895,18 +63136,17 @@ $)
     $( Lemma for ~ fnfrec .  Calculate the unique value of ` F ` at zero.
        (Contributed by Scott Fenton, 31-Jul-2019.) $)
     fnfreclem2 $p |- ( ph -> ( 0c F X -> X = I ) ) $=
-       ( vz vw va vb c0c wbr wcel wceq cv cvv vy cop df-br csn cplc cmpt cpprod
-       c1c wrex wo wb snex csuccex pprodexg sylancr cfrec df-frec clos1basesucg
-       cclos1 eqtri wi wa elsni opth sylib simprd a1i wex wn relfrecg syl elrel
-       wrel sylan 0cnsuc necomi vex 0cex addceq1 eqeq2d eqeq1 mptv brab nemtbir
-       intnanr qrpprod syl6bb mtbiri exlimivv nrexdv pm2.21d jaod sylbid syl5bi
-       weq breq1 ) OFBPOFUBZBQZAFDRZOFBUCAWRWQODUBZUDZQZKSZWQLTLSZUHUEZUFZCUGZP
-       ZKBUIZUJZWSAXATQXGTQZWRXJUKWTULAXFTQCEQZXKLUMHXFCTEUNUOKWQBXGXATTBCDUPXA
-       XGUSGLCDUQUTURUOAXBWSXIXBWSVAAXBOORZWSXBWQWTRXMWSVBWQWTVCOFODVDVEVFVGAXI
-       WSAXHKBAXCBQZVBXCMSZNSZUBZRZNVHMVHZXHVIZABVMZXNXSAXLYAHBCDEGVJVKMNXCBVLV
-       NXRXTMNXRXHXOOXFPZXPFCPZVBZYBYCYBOXOUHUEZYEOXOVOVPUASZXERYFYEROYERLUAXOO
-       XFMVQVRLMWOXEYEYFXDXOUHVSVTYFOYEWALUAXEWBWCWDWEXRXHXQWQXGPYDXCXQWQXGWPXO
-       XPOFXFCWFWGWHWIVKWJWKWLWMWN $.
+      ( vz vw va vb c0c wbr wcel wceq cv cvv cop df-br csn c1c cplc cmpt cpprod
+      wrex wo wb snex csucex pprodexg sylancr cfrec df-frec eqtri clos1basesucg
+      cclos1 wi wa elsni opth sylib simprd a1i wex wn wrel relfrecg elrel sylan
+      syl 0cnsuc necomi 0cex brcsuc nemtbir intnanr breq1 qrpprod syl6bb mtbiri
+      vex exlimivv nrexdv pm2.21d jaod sylbid syl5bi ) OFBPOFUAZBQZAFDRZOFBUBAW
+      LWKODUAZUCZQZKSZWKLTLSUDUEUFZCUGZPZKBUHZUIZWMAWOTQWSTQZWLXBUJWNUKAWRTQCEQ
+      ZXCLULHWRCTEUMUNKWKBWSWOTTBCDUOWOWSUSGLCDUPUQURUNAWPWMXAWPWMUTAWPOORZWMWP
+      WKWNRXEWMVAWKWNVBOFODVCVDVEVFAXAWMAWTKBAWQBQZVAWQMSZNSZUAZRZNVGMVGZWTVHZA
+      BVIZXFXKAXDXMHBCDEGVJVMMNWQBVKVLXJXLMNXJWTXGOWRPZXHFCPZVAZXNXOXNOXGUDUEZX
+      QOXGVNVOLXGOMWDVPVQVRVSXJWTXIWKWSPXPWQXIWKWSVTXGXHOFWRCWAWBWCWEVMWFWGWHWI
+      WJ $.
 
      $d ph a t $. $d F a t $. $d X t $. $d G t $. $d Y z t a $. $d a t y z w $.
      fnfreclem3.5 $e |- ( ph -> X e. Nn ) $.
@@ -62921,7 +63161,7 @@ $)
        syl6bb wb vex cnnc 1cex addcexg sylancl adantr addceq1 eqeq2d eqeq1 mptv
        weq brabg sylancr cdm opeldm adantl dmfrec eleqtrd peano4 3expia syl2anc
        df-br biimprcd sylbir syld sylbid anim1d imp syl6bi com12 exlimdv eximdv
-       ex mpid rexlimdva wo csuccex pprodexg cfrec cclos1 df-frec clos1basesucg
+       ex mpid rexlimdva wo csucex pprodexg cfrec cclos1 df-frec clos1basesucg
        snex eqtri syl5bb mpbid mpjaod ) AGUCUDZHUEZUFEUEZUGZQZGBUHZCUIZYLHDUIZR
        ZBUJZUAUHZYHOSOUHZUCUDZUKZDUMZUIZUACULZYKYPUNAYKYPYKYGUFTZYGUFUOUUDVFGUP
        YGUFUQURYKUUDHETZYKYHYITUUDUUERYHYIUSYGHUFEUTVAVBVCVDVGAUUBYPUACAYQCQZRZ
@@ -62990,7 +63230,7 @@ $)
        (Contributed by Scott Fenton, 31-Jul-2019.) $)
     frec0 $p |- ( ph -> ( F ` 0c ) = I ) $=
       ( vy vx c0c wcel cv cvv cnnc peano1 sylancr wb cfuns mpbird cfv wceq cplc
-      cop csn c1c cmpt cpprod wbr wrex wo cdm opexg snidg syl orcd snex csuccex
+      cop csn c1c cmpt cpprod wbr wrex wo cdm opexg snidg syl orcd snex csucex
       pprodexg cfrec cclos1 df-frec eqtri clos1basesucg fnfrec fnopfvb sylancl
       wfn ) AKBUADUBZKDUDZBLZAVKVJVJUEZLZIMVJJNJMUFUCUGZCUHZUIIBUJZUKZAVMVPAVJN
       LZVMAKOLZDCULZLVRPGKDOVTUMQVJNUNUOUPAVLNLVONLZVKVQRVJUQAVNNLCSLWAJURFVNCN
@@ -63011,7 +63251,7 @@ $)
        cv cpprod wrex wo wfun cdm wfn fnfrec fnfun dmfrec eleqtrrd funfvop eqid
        cfuns wb peano2 addceq1 eqeq2d eqeq1 mptv brabg mpbiri elfunsi crn snssd
        cun unssd cxp wss frecxpg rnxpss syl6ss fvelrn sseldd df-br sylibr breq1
-       rnss wa qrpprod syl6bb syl12anc olcd snex csuccex pprodexg sylancr cfrec
+       rnss wa qrpprod syl6bb syl12anc olcd snex csucex pprodexg sylancr cfrec
        rspcev cclos1 df-frec eqtri clos1basesucg mpbird fnopfvb ) AEUAUBZBUCEBU
        CZCUCZMZXBXDNZBOZAXGXFUDDNZUEZOZKUGZXFLPLUGZUAUBZUFZCUHZQZKBUIZUJZAXQXJA
        EXCNZBOZEXBXNQZXCXDCQZXQABUKZEBULZOZXTABRUMZYCABCDFGHIUNZRBUOSZAERYDJABC
@@ -63023,6 +63263,7 @@ $)
        POXOPOZXGXRVAXHWJAXNPOYQUUFLWKGXNCPUTWLWMKXFBXOXIPPBCDWNXIXOWPFLCDWQWRWS
        WMWTAYFYLXEXGVAYGYMRXBXDBXATWT $.
   $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
