@@ -52472,10 +52472,6 @@ $)
      in a row surrounded by parentheses, the syntax is unambiguous. $)
   co $a class ( A F B ) $.
 
-  $( Extend class notation to include class abstraction (class builder) of
-     nested ordered pairs. $)
-  coprab $a class { <. <. x , y >. , z >. | ph } $.
-
   $( Define the value of an operation.  Definition of operation value in
      [Enderton] p. 79.  Note that the syntax is simply three class expressions
      in a row bracketed by parentheses.  There are no restrictions of any kind
@@ -52488,6 +52484,10 @@ $)
      normally equal to a class of nested ordered pairs of the form defined by
      ~ df-oprab .  (Contributed by SF, 5-Jan-2015.) $)
   df-ov $a |- ( A F B ) = ( F ` <. A , B >. ) $.
+
+  $( Extend class notation to include class abstraction (class builder) of
+     nested ordered pairs. $)
+  coprab $a class { <. <. x , y >. , z >. | ph } $.
 
   ${
     $d x w $.  $d y w $.  $d z w $.  $d w ph $.
@@ -53994,10 +53994,6 @@ $)
      a function via a rule. $)
   cmpt $a class ( x e. A |-> B ) $.
 
-  $( Extend the definition of a class to include maps-to notation for defining
-     an operation via a rule. $)
-  cmpt2 $a class ( x e. A , y e. B |-> C ) $.
-
   ${
     $d x y $.  $d y A $.  $d y B $.
     $( Define maps-to notation for defining a function via a rule.  Read as
@@ -54010,7 +54006,11 @@ $)
                     { <. x , y >. | ( x e. A /\ y = B ) } $.
   $}
 
-  ${
+  $( Extend the definition of a class to include maps-to notation for defining
+     an operation via a rule. $)
+  cmpt2 $a class ( x e. A , y e. B |-> C ) $.
+
+${
     $d x z $.  $d y z $.  $d z A $.  $d z B $.  $d z C $.
     $( Define maps-to notation for defining an operation via a rule.  Read as
        "the operation defined by the map from ` x , y ` (in ` A X. B ` ) to
@@ -54914,77 +54914,38 @@ $)
 
   $( Extend the definition of a class to include the tail cross product. $)
   ctxp $a class ( A (x) B ) $.
+ 
+  $( Define the tail cross product of two classes.  Definition from [Holmes]
+     p. 40.  See ~ brtxp for membership.  (Contributed by SF, 9-Feb-2015.) $)
+  df-txp $a |- ( A (x) B ) = ( ( `' 1st o. A ) i^i ( `' 2nd o. B ) ) $.
 
   $( Extend the definition of a class to include the parallel product
      operation. $)
   cpprod $a class PProd ( A , B ) $.
 
-  $( Extend the definition of a class to include the fixed points of a
-     relationship. $)
-  cfix $a class Fix A $.
-
-  $( Extend the definition of a class to include the image function. $)
-  cimage $a class Image A $.
-
-  $( Extend the definition of a class to include the cup function. $)
-  ccup $a class Cup $.
-
-  $( Extend the definition of a class to include the disjoint relationship. $)
-  cdisj $a class Disj $.
-
-  $( Extend the definition of a class to include the cardinal sum function. $)
-  caddcfn $a class AddC $.
-
-  $( Extend the definition of a class to include the second insertion
-     operation. $)
-  cins2 $a class Ins2 A $.
-
-  $( Extend the definition of a class to include the third insertion
-     operation. $)
-  cins3 $a class Ins3 A $.
-
-  $( Extend the definition of a class to include the fourth insertion
-     operation. $)
-  cins4 $a class Ins4 A $.
-
-  $( Extend the definition of a class to include the triple singleton image. $)
-  csi3 $a class SI_3 A $.
-
-  $( Extend the definition of a class to include the set of all functions. $)
-  cfuns $a class Funs $.
-
-  $( Extend the definition of a class to include the function with domain
-     relationship. $)
-  cfns $a class Fns $.
-
-  $( Extend the definition of a class to include the cross product function. $)
-  ccross $a class Cross $.
-
-  $( Extend the definition of a class to include the unit power class
-     function. $)
-  cpw1fn $a class Pw1Fn $.
-
-  $( Extend the definition of a class to include the full function
-     operation. $)
-  cfullfun $a class FullFun F $.
-
-  $( Define the tail cross product of two classes.  Definition from [Holmes]
-     p. 40.  See ~ brtxp for membership.  (Contributed by SF, 9-Feb-2015.) $)
-  df-txp $a |- ( A (x) B ) = ( ( `' 1st o. A ) i^i ( `' 2nd o. B ) ) $.
-
   $( Define the parallel product operation.  (Contributed by SF,
      9-Feb-2015.) $)
   df-pprod $a |- PProd ( A , B ) = ( ( A o. 1st ) (x) ( B o. 2nd ) ) $.
 
+  $( Extend the definition of a class to include the fixed points of a
+     relationship. $)
+  cfix $a class Fix A $.
+
   $( Define the fixed points of a relationship.  (Contributed by SF,
      9-Feb-2015.) $)
   df-fix $a |- Fix A = ran ( A i^i _I ) $.
+
+  $( Extend the definition of a class to include the cup function. $)
+  ccup $a class Cup $.
 
   ${
     $d x y $.
     $( Define the cup function.  (Contributed by SF, 9-Feb-2015.) $)
     df-cup $a |- Cup = ( x e. _V , y e. _V |-> ( x u. y ) ) $.
   $}
+
+  $( Extend the definition of a class to include the disjoint relationship. $)
+  cdisj $a class Disj $.
 
   ${
     $d x y $.
@@ -54993,6 +54954,9 @@ $)
     df-disj $a |- Disj = { <. x , y >. | ( x i^i y ) = (/) } $.
   $}
 
+  $( Extend the definition of a class to include the cardinal sum function. $)
+  caddcfn $a class AddC $.
+
   ${
     $d x y $.
     $( Define the function representing cardinal sum.  (Contributed by SF,
@@ -55000,28 +54964,53 @@ $)
     df-addcfn $a |- AddC = ( x e. _V , y e. _V |-> ( x +c y ) ) $.
   $}
 
+  $( Extend the definition of a class to include the second insertion
+     operation. $)
+  cins2 $a class Ins2 A $.
+
   $( Define the second insertion operation.  (Contributed by SF,
      9-Feb-2015.) $)
   df-ins2 $a |- Ins2 A = ( _V (x) A ) $.
 
+  $( Extend the definition of a class to include the third insertion
+     operation. $)
+  cins3 $a class Ins3 A $.
+
   $( Define the third insertion operation.  (Contributed by SF, 9-Feb-2015.) $)
   df-ins3 $a |- Ins3 A = ( A (x) _V ) $.
+
+  $( Extend the definition of a class to include the image function. $)
+  cimage $a class Image A $.
 
   $( Define the image function of a class.  (Contributed by SF, 9-Feb-2015.) $)
   df-image $a |- Image A =
      ( ( _V X. _V ) \ ( ( Ins2 _S (+) Ins3 ( _S o. `' SI A ) ) " 1c ) ) $.
+
+  $( Extend the definition of a class to include the fourth insertion
+     operation. $)
+  cins4 $a class Ins4 A $.
 
   $( Define the fourth insertion operation.  (Contributed by SF,
      9-Feb-2015.) $)
   df-ins4 $a |- Ins4 A =
    ( `' ( 1st (x) ( ( 1st o. 2nd ) (x) ( ( 1st o. 2nd ) o. 2nd ) ) ) " A ) $.
 
+  $( Extend the definition of a class to include the triple singleton image. $)
+  csi3 $a class SI_3 A $.
+
   $( Define the triple singleton image.  (Contributed by SF, 9-Feb-2015.) $)
   df-si3 $a |- SI_3 A =
   ( ( SI 1st (x) ( SI ( 1st o. 2nd ) (x) SI ( 2nd o. 2nd ) ) ) " ~P1 A ) $.
 
+  $( Extend the definition of a class to include the set of all functions. $)
+  cfuns $a class Funs $.
+
   $( Define the class of all functions.  (Contributed by SF, 9-Feb-2015.) $)
   df-funs $a |- Funs = { f | Fun f } $.
+
+  $( Extend the definition of a class to include the function with domain
+     relationship. $)
+  cfns $a class Fns $.
 
   ${
     $d f a $.
@@ -55030,16 +55019,27 @@ $)
     df-fns $a |- Fns = { <. f , a >. | f Fn a } $.
   $}
 
+  $( Extend the definition of a class to include the cross product function. $)
+  ccross $a class Cross $.
+  
   ${
     $d x y $.
     $( Define the cross product function.  (Contributed by SF, 9-Feb-2015.) $)
     df-cross $a |- Cross = ( x e. _V , y e. _V |-> ( x X. y ) ) $.
   $}
 
+  $( Extend the definition of a class to include the unit power class
+     function. $)
+  cpw1fn $a class Pw1Fn $.
+
   $( Define the function that takes a singleton to the unit power class of its
      member.  This function is defined in such a way as to ensure
      stratification.  (Contributed by SF, 9-Feb-2015.) $)
   df-pw1fn $a |- Pw1Fn = ( x e. 1c |-> ~P1 U. x ) $.
+
+  $( Extend the definition of a class to include the full function
+     operation. $)
+  cfullfun $a class FullFun F $.
 
   $( Define the full function operator.  This is a function over ` _V ` that
      agrees with the function value of ` F ` at every point.  (Contributed by
@@ -62965,7 +62965,7 @@ $(
         Finite recursion
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
-
+ 
   $( Declare new constants $)
   $c FRec $. $( Finite recursion generator $)
 
@@ -63266,6 +63266,15 @@ $)
        WMWTAYFYLXEXGVAYGYMRXBXDBXATWT $.
   $}
 
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordinal numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new constants. $)
+  $c ~ord $. $( Ordinal similarity.$)
+  
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
