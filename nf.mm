@@ -38751,7 +38751,7 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
 
   ${
     $d A x $.  $d ch x $.  $d ph y $.  $d ps x $.  $d ta x $.  $d th x $.
-    $d x y $. $d et y $.
+    $d x y $.  $d et y $.
     findsd.1 $e |- ( et -> { x | ph } e. V ) $.
     findsd.2 $e |- ( x = 0c -> ( ph <-> ps ) ) $.
     findsd.3 $e |- ( x = y -> ( ph <-> ch ) ) $.
@@ -38762,8 +38762,8 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
     $( Principle of finite induction over the finite cardinals, using implicit
        substitutions.  The first hypothesis ensures stratification of ` ph ` ,
        the next four set up the substitutions, and the last two set up the base
-       case and induction hypothesis.  This version allows for an extra 
-       deduction clause that may make proving stratification simpler. Compare 
+       case and induction hypothesis.  This version allows for an extra
+       deduction clause that may make proving stratification simpler.  Compare
        Theorem X.1.13 of [Rosser] p. 277.  (Contributed by SF, 31-Jul-2019.) $)
     findsd $p |- ( ( A e. Nn /\ et ) -> ta ) $=
       ( cnnc wcel elab wa cab c0c c1c cplc wral wss 0cex sylibr vex 1cex addcex
@@ -55845,16 +55845,16 @@ $)
   $}
 
   ${
-     $d F f $.
-     $( Membership in the set of all functions.  (Contributed by Scott Fenton,
-     	31-Jul-2019.) $)
-     elfunsg $p |- ( F e. V -> ( F e. Funs <-> Fun F ) ) $=
+    $d F f $.
+    $( Membership in the set of all functions.  (Contributed by Scott Fenton,
+       31-Jul-2019.) $)
+    elfunsg $p |- ( F e. V -> ( F e. Funs <-> Fun F ) ) $=
        ( vf cv cfuns wcel wfun eleq1 funeq vex elfuns vtoclbg ) CDZEFMGAEFAGCAB
        MAEHMAIMCJKL $.
   $}
 
-  $( Membership in the set of all functions implies functionhood.
-     (Contributed by Scott Fenton, 31-Jul-2019.) $)
+  $( Membership in the set of all functions implies functionhood.  (Contributed
+     by Scott Fenton, 31-Jul-2019.) $)
   elfunsi $p |- ( F e. Funs -> Fun F ) $=
     ( cfuns wcel wfun elfunsg ibi ) ABCADABEF $.
 
@@ -59929,7 +59929,7 @@ $)
   ${
     $d f x $.  $d f y $.  $d f z $.  $d x y $.  $d x z $.  $d y z $.
     $( Cardinal one is a cardinal number.  Corollary 2 to theorem XI.2.8 of
-       [Rosser] p. 373. (Contributed by SF, 24-Feb-2015.) $)
+       [Rosser] p. 373.  (Contributed by SF, 24-Feb-2015.) $)
     1cnc $p |- 1c e. NC $=
       ( vx vy vz vf c1c wcel cv cnc wceq wex csn cen wbr cvv vex exlimiv eqeq2d
       crn spcev sylbi cncs cec cab dfec2 df-nc el1c en2sn mp2an breq2 wf1o bren
@@ -59957,7 +59957,7 @@ $)
   ${
     $d A x $.
     $( Cardinal one is the cardinality of a singleton.  Theorem XI.2.8 of
-       [Rosser] p. 373. (Contributed by SF, 13-Mar-2015.) $)
+       [Rosser] p. 373.  (Contributed by SF, 13-Mar-2015.) $)
     df1c3g $p |- ( A e. V -> 1c = Nc { A } ) $=
       ( vx c1c cv csn cnc wceq sneq nceqd eqeq2d vex df1c3 vtoclg ) DCEZFZGZHDA
       FZGZHCABOAHZQSDTPROAIJKOCLMN $.
@@ -59987,8 +59987,8 @@ $)
 
   ${
     $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d x y $.  $d x z $.  $d y z $.
-    $( The cardinals are closed under cardinal addition.  Theorem XI.2.10
-       of [Rosser] p. 374.  (Contributed by SF, 24-Feb-2015.) $)
+    $( The cardinals are closed under cardinal addition.  Theorem XI.2.10 of
+       [Rosser] p. 374.  (Contributed by SF, 24-Feb-2015.) $)
     ncaddccl $p |- ( ( A e. NC /\ B e. NC ) -> ( A +c B ) e. NC ) $=
       ( vx vy vz cncs wcel cv cnc wceq wex elncs wa c0 csn cxp cen mpbir eqcomi
       cplc eeanv ccompl wbr vex 0ex complex xpsnen snex xpex eqnc eqtr addceq12
@@ -60017,7 +60017,7 @@ $)
   $}
 
   $( The finite cardinals are a subset of the cardinals.  Theorem XI.2.11 of
-     [Rosser] p. 374. (Contributed by SF, 24-Feb-2015.) $)
+     [Rosser] p. 374.  (Contributed by SF, 24-Feb-2015.) $)
   nnssnc $p |- Nn C_ NC $=
     ( vx cnnc cncs cv nnnc ssriv ) ABCADEF $.
 
@@ -60112,7 +60112,8 @@ $)
 
   ${
     $( One plus one equals two.  Theorem *110.64 of [WhiteheadRussell] p. 86.
-       This theorem is occasionally useful.  (Contributed by SF, 2-Mar-2015.) $)
+       This theorem is occasionally useful.  (Contributed by SF,
+       2-Mar-2015.) $)
     1p1e2c $p |- ( 1c +c 1c ) = 2c $=
       ( c0 csn cvv cun cnc cplc c2c c1c cin wceq wcel 0ex n0i ax-mp elsnc mtbir
       wn vvex snex df1c3 disjsn mpbir ncdisjun df-2c df-pr nceqi eqtri 3eqtr4ri
@@ -61586,11 +61587,11 @@ $)
   $}
 
   ${
-     $d A x y z $. $d B x y z $. $d C x y z $.
-     $( Distributivity law for cardinal addition and multiplication.
-     	Theorem XI.2.31 of [Rosser] p. 379.  (Contributed by Scott Fenton,
-	31-Jul-2019.) $)
-     addcdi $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
+    $d A x y z $.  $d B x y z $.  $d C x y z $.
+    $( Distributivity law for cardinal addition and multiplication.  Theorem
+       XI.2.31 of [Rosser] p. 379.  (Contributed by Scott Fenton,
+       31-Jul-2019.) $)
+    addcdi $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
        ( A .c ( B +c C ) ) = ( ( A .c B ) +c ( A .c C ) ) ) $=
        ( vx vy vz cncs wcel cplc cmuc co wceq cv cnc vex wa wi cxp mucnc oveq1
        w3a ncaddccl 3adant1 wex elncs ncid eleq2 mpbiri cin c0 cun wrex ncseqnc
@@ -61610,8 +61611,8 @@ $)
        LXNCXOAJVOVQVHVIVRVSVTWDWAWBWEWFWBWG $.
   $}
 
-  $( Distributivity law for cardinal addition and multiplication.
-     Theorem XI.2.30 of [Rosser] p. 379.  (Contributed by Scott Fenton,
+  $( Distributivity law for cardinal addition and multiplication.  Theorem
+     XI.2.30 of [Rosser] p. 379.  (Contributed by Scott Fenton,
      31-Jul-2019.) $)
   addcdir $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
        ( ( A +c B ) .c C ) = ( ( A .c C ) +c ( B .c C ) ) ) $=
@@ -61621,12 +61622,12 @@ $)
     UEULUHUMUIUBUDULUHIUCACNRUCUDUMUIIUBBCNSTUA $.
 
   ${
-     $d A x y $. $d B x y $.
-     $( The cardinal product of two cardinal numbers is zero iff one
-     	of the numbers is zero.  Biconditional form of theorem XI.2.34 of
-     	[Rosser] p. 380.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
-     muc0or $p |- ( ( A e. NC /\ B e. NC ) -> ( ( A .c B ) = 0c <->
-     	    ( A = 0c \/ B = 0c ) ) ) $=
+    $d A x y $.  $d B x y $.
+    $( The cardinal product of two cardinal numbers is zero iff one of the
+       numbers is zero.  Biconditional form of theorem XI.2.34 of [Rosser]
+       p. 380.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    muc0or $p |- ( ( A e. NC /\ B e. NC ) -> ( ( A .c B ) = 0c <->
+            ( A = 0c \/ B = 0c ) ) ) $=
        ( vx vy cncs wcel wa cmuc co c0c wceq wo cv cnc wi c0 df0c2 sylbi eqeq1d
        wex elncs anbi12i eeanv bitr4i cxp vex mucnc eqeq12i cen xpex eqnc bitri
        wbr en0 xpeq0 nceq orim12i oveq12 wb adantr eqeq2i syl6bb adantl orbi12d
@@ -61642,10 +61643,10 @@ $)
   $}
 
   ${
-     $d A q $. $d B q $. $d C q $.
-     $( Multiplication law for cardinal less than.  Theorem XI.2.35 of 
-     	[Rosser] p. 380.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
-     lemuc1 $p |- ( ( ( A e. NC /\ B e. NC /\ C e. NC ) /\ A <_c B ) ->
+    $d A q $.  $d B q $.  $d C q $.
+    $( Multiplication law for cardinal less than.  Theorem XI.2.35 of [Rosser]
+       p. 380.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    lemuc1 $p |- ( ( ( A e. NC /\ B e. NC /\ C e. NC ) /\ A <_c B ) ->
        ( A .c C ) <_c ( B .c C ) ) $=
        ( vq cncs wcel w3a clec wbr cmuc co cv cplc wceq wb dflec2 3adant3 muccl
        wrex wa wi adantr ancoms adantll addlecncs syl2anc simpll simplr addcdir
@@ -61656,8 +61657,8 @@ $)
        GVLVMUJUTVBVMUHAVHCUIUKULVJVFVOVEHBVICJUMUNUOUPUQURUS $.
   $}
 
-  $( Multiplication law for cardinal less than.  (Contributed by Scott
-     Fenton, 31-Jul-2019.) $)
+  $( Multiplication law for cardinal less than.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
   lemuc2 $p |- ( ( ( A e. NC /\ B e. NC /\ C e. NC ) /\ B <_c C ) ->
     ( A .c B ) <_c ( A .c C ) ) $=
     ( cncs wcel w3a clec wbr wa cmuc co 3anrot lemuc1 sylanb wceq simpl1 simpl2
@@ -61665,9 +61666,9 @@ $)
     EUCUDUBFUFUHUIGHUBUCUDLBCAMNUGUBUCUJUHOUBUCUDUFPZUBUCUDUFQABRSUGUBUDUKUIOUL
     UBUCUDUFTACRSUA $.
 
-  $( A cardinal is less than or equal to its product with another.
-     Theorem XI.2.36 of [Rosser] p. 381.  (Contributed by Scott
-     Fenton, 31-Jul-2019.) $)
+  $( A cardinal is less than or equal to its product with another.  Theorem
+     XI.2.36 of [Rosser] p. 381.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
   ncslemuc $p |- ( ( M e. NC /\ N e. NC /\ N =/= 0c ) ->
        M <_c ( M .c N ) ) $=
     ( cncs wcel c0c wne w3a c1c clec wbr cmuc co wn df-ne nc0le1 ord syl5bi imp
@@ -61677,8 +61678,8 @@ $)
     UKUIUJ $.
 
   $( The product of the cardinality of ` _V ` squared is just the cardinality
-     of ` _V ` .  Theorem XI.2.37 of [Rosser] p. 381.  (Contributed by
-     Scott Fenton, 31-Jul-2019.) $)
+     of ` _V ` .  Theorem XI.2.37 of [Rosser] p. 381.  (Contributed by Scott
+     Fenton, 31-Jul-2019.) $)
   ncvsq $p |- ( Nc _V .c Nc _V ) = Nc _V $=
     ( cvv cnc cmuc co clec wbr wceq wcel c0 ovex wn cncs vvex mp2an mpbii df-ne
     wne mto mpbir c0c nulnnc ncelncsi muccl eleq1 lecncvg vn0 el0c nemtbir ncid
@@ -61695,16 +61696,16 @@ $)
     AABZCZACZDPAEFRRGHQRAAIIJKLPAAAIIMNO $.
 
   ${
-     $( Cardinal one is strictly greater than cardinal zero.  (Contributed
-     	by Scott Fenton, 01-Aug-2019.) $)
-     0lt1c $p |- 0c <c 1c $=
+    $( Cardinal one is strictly greater than cardinal zero.  (Contributed by
+       Scott Fenton, 01-Aug-2019.) $)
+    0lt1c $p |- 0c <c 1c $=
        ( vx c0c cv csn cnc c1c cltc wbr clec wne c0 df0c2 wss 0ss 0ex snex wceq
        wn df-ne wcel nclec ax-mp eqbrtri snnz mpbi ncid eleq2 mpbiri el0c sylib
        vex mto mpbir brltc mpbir2an df1c3 breqtrri ) BACZDZEZFGBUTGHBUTIHBUTJZB
        KEZUTILKUSMVBUTIHUSNKUSOURPZUAUBUCVABUTQZRVDUSKQZUSKJVERURAUKZUDUSKSUEVD
        USBTZVEVDVGUSUTTUSVCUFBUTUSUGUHUSUIUJULBUTSUMBUTUNUOURVFUPUQ $.
   $}
-  
+
 
   ${
     $d x y z w $.
@@ -61728,12 +61729,12 @@ $)
   $}
 
   ${
-     $d A x y $. $d B x y $.
-     brcsuc.1 $e |- A e. _V $.
-     brcsuc.2 $e |- B e. _V $.
-     $( Binary relationship form of the successor mapping function. 
-     	(Contributed by Scott Fenton, 02-Aug-2019.) $)
-     brcsuc $p |- ( A ( x e. _V |-> ( x +c 1c ) ) B <-> B = ( A +c 1c ) ) $=
+    $d A x y $.  $d B x y $.
+    brcsuc.1 $e |- A e. _V $.
+    brcsuc.2 $e |- B e. _V $.
+    $( Binary relationship form of the successor mapping function.
+       (Contributed by Scott Fenton, 02-Aug-2019.) $)
+    brcsuc $p |- ( A ( x e. _V |-> ( x +c 1c ) ) B <-> B = ( A +c 1c ) ) $=
        ( vy cv c1c cplc wceq cvv cmpt addceq1 eqeq2d eqeq1 mptv brab ) FGZAGZHI
        ZJRBHIZJCUAJAFBCAKTLDESBJTUARSBHMNRCUAOAFTPQ $.
   $}
@@ -61768,11 +61769,11 @@ $)
   $}
 
   ${
-     $d n p q x y z $.
-     $( Lemma for ~ addccan2nc .  Stratification helper theorem.  (Contributed
-     	by Scott Fenton, 02-Aug-2019.) $)
-     addccan2nclem1 $p |- ( x ( AddC o. `' ( 1st |` ( _V X. { n } ) ) ) y
-     		    <-> y = ( x +c n ) ) $=
+    $d n p q x y z $.
+    $( Lemma for ~ addccan2nc .  Stratification helper theorem.  (Contributed
+       by Scott Fenton, 02-Aug-2019.) $)
+    addccan2nclem1 $p |- ( x ( AddC o. `' ( 1st |` ( _V X. { n } ) ) ) y
+                    <-> y = ( x +c n ) ) $=
        ( vz vp vq cv caddcfn c1st cvv wbr cop wceq wex weq eqeq2d 3bitri anbi1i
        wa opeq2 csn cxp cres ccnv ccom cplc brco wcel brcnv brres w3a wrex rexv
        ancom elxp2 vex rexsn exbii bitri exancom 19.41v bitr4i br1st eqeq1 opth
@@ -61791,11 +61792,11 @@ $)
 
 
   ${
-     $d N n p x y $. $d P p x y $.
-     $( Lemma for ~ addccan2nc .  Establish stratification for induction.
-     	(Contributed by Scott Fenton, 02-Aug-2019.) $)
-     addccan2nclem2 $p |- ( ( N e. V /\ P e. W ) ->
-     		{ x | ( ( x +c N ) = ( x +c P ) -> N = P ) } e. _V ) $=
+    $d N n p x y $.  $d P p x y $.
+    $( Lemma for ~ addccan2nc .  Establish stratification for induction.
+       (Contributed by Scott Fenton, 02-Aug-2019.) $)
+    addccan2nclem2 $p |- ( ( N e. V /\ P e. W ) ->
+                { x | ( ( x +c N ) = ( x +c P ) -> N = P ) } e. _V ) $=
        ( vn vp vy wcel wa cv cplc wceq cab cvv caddcfn c1st ccnv ccom wbr wi wn
        ccompl cun unab complab uneq1i imor 3eqtr4i addceq2 eqeq1d abbidv eleq1d
        abbii eqeq2d csn cxp cres cfix wex elfix brco addccan2nclem1 brcnv bitri
@@ -61813,12 +61814,12 @@ $)
   $}
 
   ${
-     $d M x m $. $d N x m $. $d P x m $.
-     $( Cancellation law for addition over the cardinal numbers.  Biconditional
-     	form of theorem XI.3.2 of [Rosser] p. 391.  (Contributed by Scott Fenton,
-	02-Aug-2019.) $)
-     addccan2nc $p |- ( ( M e. Nn /\ N e. NC /\ P e. NC ) ->
-     	( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
+    $d M x m $.  $d N x m $.  $d P x m $.
+    $( Cancellation law for addition over the cardinal numbers.  Biconditional
+       form of theorem XI.3.2 of [Rosser] p. 391.  (Contributed by Scott
+       Fenton, 02-Aug-2019.) $)
+    addccan2nc $p |- ( ( M e. Nn /\ N e. NC /\ P e. NC ) ->
+        ( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
        ( vx vm cnnc wcel cncs cplc wceq wi cv c0c c1c wa addceq1 eqeq12d imbi1d
        addcid2 eqeq12i w3a cvv addccan2nclem2 biimpi addc32 nnnc ncaddccl sylan
        weq a1i adantrr adantr adantrl peano4nc biimpd syl2anc simpr syld syl5bi
@@ -61833,11 +61834,11 @@ $)
   $}
 
   ${
-     $d M q $. $d N q $. $d P q $.
-     $( Cardinal addition preserves cardinal less than.  Biconditional form of
-     	corollary 4 of theorem XI.3.2 of [Rosser] p 391.  (Contributed by
-	Scott Fenton, 02-Aug-2019.) $)
-     lecadd2 $p |- ( ( M e. Nn /\ N e. NC /\ P e. NC ) ->
+    $d M q $.  $d N q $.  $d P q $.
+    $( Cardinal addition preserves cardinal less than.  Biconditional form of
+       corollary 4 of theorem XI.3.2 of [Rosser] p 391.  (Contributed by Scott
+       Fenton, 02-Aug-2019.) $)
+    lecadd2 $p |- ( ( M e. Nn /\ N e. NC /\ P e. NC ) ->
        ( ( M +c N ) <_c ( M +c P ) <-> N <_c P ) ) $=
        ( vq cnnc wcel cncs w3a cplc clec wbr cv wceq wrex wb ncaddccl 3ad2antl2
        nnnc sylan sylbid 3adant3 3adant2 dflec2 syl2anc wa eqeq2i simpl1 simpl3
@@ -61851,10 +61852,10 @@ $)
 
 
   ${
-     $d M p q $. $d N p q $.
-     $( Relationship between successor and cardinal less than or equal.  
-     	(Contributed by Scott Fenton, 03-Aug-2019.) $)
-     ncslesuc $p |- ( ( M e. NC /\ N e. NC ) -> ( M <_c ( N +c 1c ) <->
+    $d M p q $.  $d N p q $.
+    $( Relationship between successor and cardinal less than or equal.
+       (Contributed by Scott Fenton, 03-Aug-2019.) $)
+    ncslesuc $p |- ( ( M e. NC /\ N e. NC ) -> ( M <_c ( N +c 1c ) <->
        ( M <_c N \/ M = ( N +c 1c ) ) ) ) $=
        ( vp vq cncs wcel wa c1c cplc clec wbr wceq wo cv wrex wb c0c wi addceq2
        adantl peano2nc dflec2 sylan2 nc0suc addcid1 syl6eq eqeq2d eqcoms syl6bi
@@ -61913,8 +61914,8 @@ $)
       JYIUUIUUHUUHJYJXMZYEUYOYKYLXNUYNXNYHXLYMYOYOXP $.
   $}
 
-  $( Lemma for ~ nmembers1 .  The set of all elements between
-     one and zero is empty.  (Contributed by Scott Fenton, 01-Aug-2019.) $)
+  $( Lemma for ~ nmembers1 .  The set of all elements between one and zero is
+     empty.  (Contributed by Scott Fenton, 01-Aug-2019.) $)
   nmembers1lem2 $p |- { m e. Nn | ( 1c <_c m /\ m <_c 0c ) } e. 0c $=
        ( c1c cv clec wbr wa cnnc crab wcel wn wral wi cltc 0lt1c cncs 0cnc 1cnc
        c0c wb ltlenlec mp2an mpbi simpri nnnc lectr mp3an13 syl exp3a imp imnan
@@ -61924,11 +61925,11 @@ $)
        UGUHUIUKULVBVCUJUMUNVFVEUOUPVHVEUQVDAGURUSUT $.
 
   ${
-     $d A m x y $. $d B m x y $.
-     $( Lemma for ~ nmembers1 .  If the interval from one to a natural is
-     	in a given natural, extending it by one puts it in the next natural.
-	(Contributed by Scott Fenton, 03-Aug-2019.) $)
-     nmembers1lem3 $p |- ( ( A e. Nn /\ B e. Nn ) -> 
+    $d A m x y $.  $d B m x y $.
+    $( Lemma for ~ nmembers1 .  If the interval from one to a natural is in a
+       given natural, extending it by one puts it in the next natural.
+       (Contributed by Scott Fenton, 03-Aug-2019.) $)
+    nmembers1lem3 $p |- ( ( A e. Nn /\ B e. Nn ) -> 
      ( { m e. Nn | ( 1c <_c m /\ m <_c A ) } e. B ->
        { m e. Nn | ( 1c <_c m /\ m <_c ( A +c 1c ) ) } e. ( B +c 1c ) ) ) $=
        ( vx vy c1c cv clec wbr wa cnnc wcel cplc wceq wn cncs adantr anbi12d wo
@@ -61956,15 +61957,15 @@ $)
   $}
 
   ${
-     $d N m n a $.  
-     $( Count the number of elements in a natural interval.  From 
-     	~ nmembers1lem2 and ~ nmembers1lem3 , we would expect to arrive
-	at ` { m e. Nn | ( 1c <_c m /\ m <_c N ) } e. N ` , but this
-	proposition is not stratifiable.  Instead, we arrive at the weaker
-	conclusion below.  We can arrive at the earlier proposition once
-	we add the Axiom of Counting, which we will do later.  (Contributed
-	by Scott Fenton, 03-Aug-2019.) $)
-     nmembers1 $p |- ( N e. Nn ->
+    $d N m n a $.
+    $( Count the number of elements in a natural interval.  From
+       ~ nmembers1lem2 and ~ nmembers1lem3 , we would expect to arrive at
+       ` { m e. Nn | ( 1c <_c m /\ m <_c N ) } e. N ` , but this proposition is
+       not stratifiable.  Instead, we arrive at the weaker conclusion below.
+       We can arrive at the earlier proposition once we add the Axiom of
+       Counting, which we will do later.  (Contributed by Scott Fenton,
+       03-Aug-2019.) $)
+    nmembers1 $p |- ( N e. Nn ->
       { m e. Nn | ( 1c <_c m /\ m <_c N ) } e. T_c T_c N ) $=
        ( vn c1c clec wbr wa cnnc crab ctc wcel c0c cplc wceq breq2 rabbidv tceq
        anbi2d syl eleq12d va cv nmembers1lem1 nmembers1lem2 tc0c ax-mp eleqtrri
@@ -63148,13 +63149,13 @@ $)
       QOXGVNVOLXGOMWDVPVQVRVSXJWTXIWKWSPXPWQXIWKWSVTXGXHOFWRCWAWBWCWEVMWFWGWHWI
       WJ $.
 
-     $d ph a t $. $d F a t $. $d X t $. $d G t $. $d Y z t a $. $d a t y z w $.
-     fnfreclem3.5 $e |- ( ph -> X e. Nn ) $.
-     fnfreclem3.6 $e |- ( ph -> ( X +c 1c ) F Y ) $.
-     $( Lemma for ~ fnfrec .  The value of ` F ` at a successor is ` G `
-     	related to a previous element.  (Contributed by Scott Fenton,
-	31-Jul-2019.) $)
-     fnfreclem3 $p |- ( ph -> E. z ( X F z /\ z G Y ) ) $=
+    $d ph a t $.  $d F a t $.  $d X t $.  $d G t $.  $d Y z t a $.
+    $d a t y z w $.
+    fnfreclem3.5 $e |- ( ph -> X e. Nn ) $.
+    fnfreclem3.6 $e |- ( ph -> ( X +c 1c ) F Y ) $.
+    $( Lemma for ~ fnfrec .  The value of ` F ` at a successor is ` G ` related
+       to a previous element.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    fnfreclem3 $p |- ( ph -> E. z ( X F z /\ z G Y ) ) $=
        ( vw vt wcel wa cvv wceq va vy c1c cplc cop c0c csn cv wbr wex cmpt wrex
        cpprod wi wne 0cnsuc df-ne mpbi elsni opth sylib simpld mto pm2.21i wrel
        wn a1i relfrecg syl elrel excom sylan eleq1 anbi2d breq1 qrpprod anbi12d
@@ -63178,13 +63179,14 @@ $)
        SCDEXRYJUUAXSIODEXTYCYAWLYDYEYF $.
   $}
 
-  ${ $d ph x y z w t a b $. $d F x y z w t a b  $. $d G x y z w t a b $.
-     $d I x y z w t a b $.
+  ${
+    $d ph x y z w t a b $.  $d F x y z w t a b $.  $d G x y z w t a b $.
+    $d I x y z w t a b $.
     fnfrec.1 $e |- F = FRec ( G , I ) $.
     fnfrec.2 $e |- ( ph -> G e. Funs ) $.
     fnfrec.3 $e |- ( ph -> I e. dom G ) $.
     fnfrec.4 $e |- ( ph -> ran G C_ dom G ) $.
-    $( The recursive function generator is a function over the finite 
+    $( The recursive function generator is a function over the finite
        cardinals.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
     fnfrec $p |- ( ph -> F Fn Nn ) $=
       ( vy vz wceq cv wbr wa wi wal cfuns wcel breq1 wex vx vw vt wfun cdm cnnc
@@ -63221,7 +63223,7 @@ $)
   $}
 
   ${
-    $d F x y $. $d G x y $. $d I x y $.
+    $d F x y $.  $d G x y $.  $d I x y $.
     frec0.1 $e |- F = FRec ( G , I ) $.
     frec0.2 $e |- ( ph -> G e. Funs ) $.
     frec0.3 $e |- ( ph -> I e. dom G ) $.
@@ -63238,15 +63240,15 @@ $)
   $}
 
   ${
-     $d F w y $. $d G w y $. $d I w y $. $d X w y $.
-     frecsuc.1 $e |- F = FRec ( G , I ) $.
-     frecsuc.2 $e |- ( ph -> G e. Funs ) $.
-     frecsuc.3 $e |- ( ph -> I e. dom G ) $.
-     frecsuc.4 $e |- ( ph -> ran G C_ dom G ) $.
-     frecsuc.5 $e |- ( ph -> X e. Nn ) $.
-     $( Calculate the value of the finite recursive function generator
-     	at a successor.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
-     frecsuc $p |- ( ph -> ( F ` ( X +c 1c ) ) = ( G ` ( F ` X ) ) ) $=
+    $d F w y $.  $d G w y $.  $d I w y $.  $d X w y $.
+    frecsuc.1 $e |- F = FRec ( G , I ) $.
+    frecsuc.2 $e |- ( ph -> G e. Funs ) $.
+    frecsuc.3 $e |- ( ph -> I e. dom G ) $.
+    frecsuc.4 $e |- ( ph -> ran G C_ dom G ) $.
+    frecsuc.5 $e |- ( ph -> X e. Nn ) $.
+    $( Calculate the value of the finite recursive function generator at a
+       successor.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    frecsuc $p |- ( ph -> ( F ` ( X +c 1c ) ) = ( G ` ( F ` X ) ) ) $=
        ( vy vw wceq cop wcel cvv wbr cnnc syl syl2anc c1c cplc cfv c0c csn cmpt
        cv cpprod wrex wo wfun cdm wfn fnfrec fnfun dmfrec eleqtrrd funfvop eqid
        cfuns wb peano2 addceq1 eqeq2d eqeq1 mptv brabg mpbiri elfunsi crn snssd
