@@ -12860,8 +12860,9 @@ $)
     sbiedh.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
     sbiedh.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
     $( Conversion of implicit substitution to explicit substitution (deduction
-       version of ~ sbieh ).  (Contributed by NM, 30-Jun-1994.)  (Proof
-       shortened by Andrew Salmon, 25-May-2011.) $)
+       version of ~ sbieh ).  New proofs should use ~ sbied instead.
+       (Contributed by NM, 30-Jun-1994.)  (Proof shortened by Andrew Salmon,
+       25-May-2011.)  (New usage is discouraged.) $)
     sbiedh $p |- ( ph -> ( [ y / x ] ps <-> ch ) ) $=
       ( wsb wex weq wa sb1 wb wi bi1 syl6 imp3a syld wal eximdh syl5 19.9hd bi2
       com23 alimdh sb2 impbid ) ABDEIZCAUICDJZCUIDEKZBLZDJAUJBDEMAULCDFAUKBCAUK
@@ -12881,10 +12882,20 @@ $)
   $}
 
   ${
+    $d x ph $.  $d x ch $.
+    sbiedv.1 $e |- ( ( ph /\ x = y ) -> ( ps <-> ch ) ) $.
+    $( Conversion of implicit substitution to explicit substitution (deduction
+       version of ~ sbie ).  (Contributed by NM, 7-Jan-2017.) $)
+    sbiedv $p |- ( ph -> ( [ y / x ] ps <-> ch ) ) $=
+      ( nfv nfvd weq wb ex sbied ) ABCDEADGACDHADEIBCJFKL $.
+  $}
+
+  ${
     sbieh.1 $e |- ( ps -> A. x ps ) $.
     sbieh.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    $( Conversion of implicit substitution to explicit substitution.
-       (Contributed by NM, 30-Jun-1994.) $)
+    $( Conversion of implicit substitution to explicit substitution.  New
+       proofs should use ~ sbie instead.  (Contributed by NM, 30-Jun-1994.)
+       (New usage is discouraged.) $)
     sbieh $p |- ( [ y / x ] ph <-> ps ) $=
       ( wi wsb wb id hbth wal a1i weq sbiedh ax-mp ) AAGZACDHBIAJZQABCDQCRKBBCL
       GQEMCDNABIGQFMOP $.
