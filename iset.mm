@@ -53,12 +53,12 @@ Theorems which are the same as in set.mm should be named the same (that is,
 where the statement of the theorem is the same; the proof can differ without
 a new name being called for).  Theorems which are different should be named
 differently (although if additional hypotheses are added in iset.mm the name
-need not be changed).  A biconditional in set.mm which is an implication in iset.mm
-should have a "r" (for the reverse direction), or "i"/"im" (for the forward
-direction) appended.  A theorem in set.mm which has a decidability condition
-added should add "dc" to the theorem name.  A theorem in set.mm where
-"nonempty class" is changed to "inhabited class" should add "m" (for member)
-to the theorem name.
+need not be changed).  A biconditional in set.mm which is an implication in
+iset.mm should have a "r" (for the reverse direction), or "i"/"im" (for the
+forward direction) appended.  A theorem in set.mm which has a decidability
+condition added should add "dc" to the theorem name.  A theorem in set.mm
+where "nonempty class" is changed to "inhabited class" should add "m" (for
+member) to the theorem name.
 
 As with set.mm, we welcome suggestions for better names (such as names which
 are more consistent with naming conventions).
@@ -6075,7 +6075,8 @@ $)
 
   $( Case elimination for a decidable proposition.  Based on theorem *2.6 of
      [WhiteheadRussell] p. 107.  (Contributed by Jim Kingdon, 25-Mar-2018.) $)
-  pm2.6dc $p |- ( DECID ph -> ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) ) $=
+  pm2.6dc $p |- ( DECID ph ->
+      ( ( -. ph -> ps ) -> ( ( ph -> ps ) -> ps ) ) ) $=
     ( wdc wn wi wo wa pm2.1dc pm3.44 syl5com exp3a ) ACZADZBEZABEZBLMAFNOGBAHBM
     AIJK $.
 
@@ -16774,7 +16775,8 @@ $)
 
   $( --- Start of old code before overloading prevention patch. $)
   $(
-  @( A setvar variable is a class expression.  The syntax " ` class x ` " can be
+  @( A setvar variable is a class expression.  The syntax " ` class x ` " can
+     be
      viewed as an abbreviation for " ` class { y | y e. x } ` " (a special case
      of ~ cab ), where ` y ` is distinct from ` x ` .  See the discussion under
      the definition of class in [Jech] p. 4.  Note that ` { y | y e. x } = x `
@@ -27842,7 +27844,6 @@ $)
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
     Restricted uniqueness with difference, union, and intersection
-    of two classes
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 $)
 
@@ -30536,7 +30537,8 @@ $)
 
     $( The power set of an unordered pair.  (Contributed by Jim Kingdon,
        13-Aug-2018.) $)
-    pwprss $p |- ( { (/) , { A } } u. { { B } , { A , B } } ) C_ ~P { A , B } $=
+    pwprss $p |- ( { (/) , { A } } u. { { B } , { A , B } } ) C_
+        ~P { A , B } $=
       ( vx c0 csn cpr cun cpw cv wcel wss wceq vex elpr orbi12i ssprr
       wo sylbi elun elpw 3imtr4i ssriv ) CDAEZFZBEZABFZFZGZUFHZCIZUDJ
       ZUJUGJZQZUJUFKZUJUHJUJUIJUMUJDLUJUCLQZUJUELUJUFLQZQUNUKUOULUPUJ
@@ -36820,7 +36822,8 @@ $)
     $d x y S $.
     $( ` e. `-Induction in terms of membership in a class.  (Contributed by
        Mario Carneiro and Jim Kingdon, 22-Oct-2018.) $)
-    setindel $p |- ( A. x ( A. y ( y e. x -> y e. S ) -> x e. S ) -> S = _V ) $=
+    setindel $p |- ( A. x ( A. y ( y e. x -> y e. S ) -> x e. S ) ->
+        S = _V ) $=
       ( cv wcel wi wal cvv wceq wral clelsb3 ralbii df-ral bitri imbi1i
       wsb albii ax-setind sylbir eqv sylibr ) BDZADZEUBCEZFBGZUCCEZFZAGZ
       UFAGZCHIUHUFABPZBUCJZUFFZAGUIULUGAUKUEUFUKUDBUCJUEUJUDBUCBACKLUDB
@@ -40630,7 +40633,8 @@ $)
 
     $( Elementhood in the image of a singleton.  (Contributed by Jim Kingdon,
        10-Dec-2018.) $)
-    elreimasng $p |- ( ( Rel R /\ A e. V ) -> ( B e. ( R " { A } ) <-> A R B ) ) $=
+    elreimasng $p |- ( ( Rel R /\ A e. V ) -> ( B e. ( R " { A } ) <->
+        A R B ) ) $=
       ( vx wcel csn cima cv wbr cab wrel imasng eleq2d wi wb brrelex2
       cvv ex breq2 elab3g syl sylan9bbr ) ADFZBCAGHZFBAEIZCJZEKZFZCLZ
       ABCJZUDUEUHBEADCMNUJUKBRFZOUIUKPUJUKULABCQSUGUKEBRUFBACTUAUBUC
@@ -43443,7 +43447,8 @@ $)
     $( Lemma for ~ funimaexg .  It constitutes the interesting part of
        ~ funimaexg , in which ` B C_ dom A ` .  (Contributed by Jim Kingdon,
        27-Dec-2018.) $)
-    funimaexglem $p |- ( ( Fun A /\ B e. C /\ B C_ dom A ) -> ( A " B ) e. _V ) $=
+    funimaexglem $p |- ( ( Fun A /\ B e. C /\ B C_ dom A ) ->
+        ( A " B ) e. _V ) $=
       ( vz vx vy vb wcel wss w3a cv wex wrex wel wi wal wral wa simprbi exbii
       wfun cdm cima cvv wbr cab wmo dffun7 3ad2ant1 ssralv 3ad2ant3 mpd alrimiv
       wrel wceq weu sseq1 biimpar 3adant1 jca dffun8 adantl ssel adantr sylsyld
@@ -44131,7 +44136,8 @@ $)
      subset.  (Contributed by Jim Kingdon, 28-Dec-2018.) $)
   resasplitss $p |- ( ( F Fn A /\ G Fn B /\
       ( F |` ( A i^i B ) ) = ( G |` ( A i^i B ) ) ) ->
-        ( ( F |` ( A i^i B ) ) u. ( ( F |` ( A \ B ) ) u. ( G |` ( B \ A ) ) ) )
+        ( ( F |` ( A i^i B ) ) u.
+          ( ( F |` ( A \ B ) ) u. ( G |` ( B \ A ) ) ) )
         C_ ( F u. G )
       ) $=
     ( wfn cin cres wceq w3a cun uneq1i resundi inundifss ssres2 ax-mp
@@ -54541,7 +54547,8 @@ $)
     $( Value of the recursive definition generator.  Lemma for ~ rdgival which
        simplifies the value further.  (Contributed by Jim Kingdon,
        13-Jul-2019.)  (New usage is discouraged.) $)
-    rdgivallem $p |- ( ( F Fn _V /\ A e. V /\ B e. On ) -> ( rec ( F , A ) ` B ) =
+    rdgivallem $p |- ( ( F Fn _V /\ A e. V /\ B e. On ) ->
+        ( rec ( F , A ) ` B ) =
         ( A u. U_ x e. B ( F ` ( ( rec ( F , A ) |` B ) ` x ) ) ) ) $=
       ( vg vy cvv wfn wcel con0 cfv cv cdm ciun cun wceq wa wfun wss
       w3a crdg cres cmpt df-irdg rdgruledefgg tfri2d 3impa eqidd dmeq
