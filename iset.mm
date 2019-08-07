@@ -48494,11 +48494,6 @@ $)
       ( crio riotabidv riotaeqdv eqtrd ) ABDEICDEICDFIABCDEHJACDEFGKL $.
   $}
 
-  $( Restricted iota is a set.  (Contributed by Jim Kingdon, 12-Jan-2019.) $)
-  reuiotaex $p |- ( E! x e. A ps -> ( iota_ x e. A ps ) e. _V ) $=
-    ( wreu crio cv wcel wa cio cvv df-riota weu df-reu euiotaex sylbi
-    syl5eqel ) ABCDZABCEBFCGAHZBIZJABCKQRBLSJGABCMRBNOP $.
-
   $( An iota restricted to the universe is unrestricted.  (Contributed by NM,
      18-Sep-2011.) $)
   riotav $p |- ( iota_ x e. _V ph ) = ( iota x ph ) $=
