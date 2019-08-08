@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Aug-2019
+$( iset.mm - Version of 7-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -12860,8 +12860,9 @@ $)
     sbiedh.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
     sbiedh.3 $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
     $( Conversion of implicit substitution to explicit substitution (deduction
-       version of ~ sbieh ).  (Contributed by NM, 30-Jun-1994.)  (Proof
-       shortened by Andrew Salmon, 25-May-2011.) $)
+       version of ~ sbieh ).  New proofs should use ~ sbied instead.
+       (Contributed by NM, 30-Jun-1994.)  (Proof shortened by Andrew Salmon,
+       25-May-2011.)  (New usage is discouraged.) $)
     sbiedh $p |- ( ph -> ( [ y / x ] ps <-> ch ) ) $=
       ( wsb wex weq wa sb1 wb wi bi1 syl6 imp3a syld wal eximdh syl5 19.9hd bi2
       com23 alimdh sb2 impbid ) ABDEIZCAUICDJZCUIDEKZBLZDJAUJBDEMAULCDFAUKBCAUK
@@ -12881,10 +12882,20 @@ $)
   $}
 
   ${
+    $d x ph $.  $d x ch $.
+    sbiedv.1 $e |- ( ( ph /\ x = y ) -> ( ps <-> ch ) ) $.
+    $( Conversion of implicit substitution to explicit substitution (deduction
+       version of ~ sbie ).  (Contributed by NM, 7-Jan-2017.) $)
+    sbiedv $p |- ( ph -> ( [ y / x ] ps <-> ch ) ) $=
+      ( nfv nfvd weq wb ex sbied ) ABCDEADGACDHADEIBCJFKL $.
+  $}
+
+  ${
     sbieh.1 $e |- ( ps -> A. x ps ) $.
     sbieh.2 $e |- ( x = y -> ( ph <-> ps ) ) $.
-    $( Conversion of implicit substitution to explicit substitution.
-       (Contributed by NM, 30-Jun-1994.) $)
+    $( Conversion of implicit substitution to explicit substitution.  New
+       proofs should use ~ sbie instead.  (Contributed by NM, 30-Jun-1994.)
+       (New usage is discouraged.) $)
     sbieh $p |- ( [ y / x ] ph <-> ps ) $=
       ( wi wsb wb id hbth wal a1i weq sbiedh ax-mp ) AAGZACDHBIAJZQABCDQCRKBBCL
       GQEMCDNABIGQFMOP $.
@@ -36591,8 +36602,12 @@ $)
     $d x y z w s $.  $d z w s ph $.  $d x ph $.
     ordtriexmid.1 $e |- A. x e. On A. y e. On ( x e. y \/ x = y \/ y e. x ) $.
     $( Ordinal trichotomy implies the law of the excluded middle (that is,
-       decidability of an arbitrary proposition).  (Contributed by Mario
-       Carneiro and Jim Kingdon, 14-Nov-2018.) $)
+       decidability of an arbitrary proposition).
+
+       This theorem is stated in "Constructive ordinals", [Crosilla], p.
+       "Set-theoretic principles incompatible with intuitionistic logic".
+
+       (Contributed by Mario Carneiro and Jim Kingdon, 14-Nov-2018.) $)
     ordtriexmid $p |- ( ph \/ -. ph ) $=
       ( vz wn wo c0 wceq wcel w3o con0 cv eleq1 eleq2 3orbi123d wa wi 0ex ax-mp
       csn crab noel ordtriexmidlem eqeq1 0elon anbi2d eqeq2 imbi12d vtocl mpan2
@@ -36651,10 +36666,10 @@ $)
 
     $( Lemma for ~ onsucelsucexmid .  The set
        ` { x e. { (/) , { (/) } } | ( x = (/) \/ ph ) } ` appears as ` A ` in
-       the proof of Theorem 1.3 in [Bauer] p. 483, and similar sets also appear
-       in other proofs that various propositions imply excluded middle, for
-       example in ~ ordtriexmidlem .  (Contributed by Jim Kingdon,
-       2-Aug-2019.) $)
+       the proof of Theorem 1.3 in [Bauer] p. 483 (see ~ acexmidlema ), and
+       similar sets also appear in other proofs that various propositions imply
+       excluded middle, for example in ~ ordtriexmidlem .  (Contributed by Jim
+       Kingdon, 2-Aug-2019.) $)
     onsucelsucexmidlem $p |- { x e. { (/) , { (/) } } | ( x = (/) \/ ph ) }
         e. On $=
       ( vy vz cv c0 wceq wo csn wcel word wa wi wal eleq2 adantl ex sylib mpbir
@@ -48691,6 +48706,175 @@ $)
       $.
   $}
 
+  ${
+    $d x y z w v u s A $.  $d x y z w v u s B $.  $d x y z w v u s C $.
+    $d x y z w v u s ph $.
+    acexmidlem.a $e |- A = { x e. { (/) , { (/) } } | ( x = (/) \/ ph ) } $.
+    acexmidlem.b $e |- B = { x e. { (/) , { (/) } } | ( x = { (/) } \/ ph ) } $.
+    acexmidlem.c $e |- C = { A , B } $.
+    $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
+    acexmidlema $p |- ( { (/) } e. A -> ph ) $=
+      ( c0 csn wcel wceq wo cv cpr crab eleq2i wb p0ex ax-mp prid2 wn
+      eqeq1 orbi1d elrab3 bitri noel 0ex snid eleq2 mpbii orel1 sylbi
+      wi mto ) IJZCKZUPILZAMZAUQUPBNZILZAMZBIUPOZPZKZUSCVDUPFQUPVCKVE
+      USRIUPSUAVBUSBUPVCUTUPLVAURAUTUPIUCUDUETUFURUBUSAUNURIIKZIUGURI
+      UPKVFIUHUIUPIIUJUKUOURAULTUM $.
+
+    $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
+    acexmidlemb $p |- ( (/) e. B -> ph ) $=
+      ( c0 wcel csn wceq wo cv cpr crab eleq2i wb 0ex ax-mp orbi1d wn
+      prid1 eqeq1 elrab3 bitri noel snid eleq2 mpbiri mto orel1 sylbi
+      wi ) IDJZIIKZLZAMZAUOIBNZUPLZAMZBIUPOZPZJZURDVCIGQIVBJVDURRIUPS
+      UCVAURBIVBUSILUTUQAUSIUPUDUAUETUFUQUBURAUNUQIIJZIUGUQVEIUPJISUH
+      IUPIUIUJUKUQAULTUM $.
+
+    $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
+    acexmidlemph $p |- ( ph -> A = B ) $=
+      ( c0 csn wceq wo wral ralrimivw crab eqeq2i rabid2 bitri sylibr
+      olc cpr cv eqtr3d ) AIIJZUAZCDABUBZIKZALZBUEMZUECKZAUHBUEAUGTNU
+      JUEUHBUEOZKUICUKUEFPUHBUEQRSAUFUDKZALZBUEMZUEDKZAUMBUEAULTNUOUE
+      UMBUEOZKUNDUPUEGPUMBUEQRSUC $.
+
+    $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
+    acexmidlemab $p |- (
+        ( ( iota_ v e. A E. u e. y ( A e. u /\ v e. u ) ) = (/) /\
+        ( iota_ v e. B E. u e. y ( B e. u /\ v e. u ) ) = { (/) } ) ->
+        -. ph ) $=
+      ( cv wcel wa wrex crio c0 wceq csn noel 0ex eleq2 mpbiri mto acexmidlemph
+      snid id eleq1 anbi1d rexbidv riotaeqbidv syl eqeq1d biimpa adantrr simprr
+      eqtr3d ex mtoi con2i ) AFELZMZDLVAMZNZECLZOZDFPZQRZGVAMZVCNZEVEOZDGPZQSZR
+      ZNZAVOQVMRZVPQQMZQTVPVQQVMMQUAUFQVMQUBUCUDAVOVPAVONVLQVMAVHVLQRZVNAVHVRAV
+      GVLQAFGRZVGVLRABFGHIJKUEVSVFVKDFGVSUGVSVDVJEVEVSVBVIVCFGVAUHUIUJUKULUMUNU
+      OAVHVNUPUQURUSUT $.
+
+    $( Lemma for ~ acexmid .  Here we divide the proof into cases (based on the
+       disjunction implicit in an unordered pair, not the sort of case
+       elimination which relies on excluded middle).
+
+       The cases are (1) the choice function evaluated at ` A ` equals
+       ` { (/) } ` , (2) the choice function evaluated at ` B ` equals
+       ` (/) ` , and (3) the choice function evaluated at ` A ` equals ` (/) `
+       and the choice function evaluated at ` B ` equals ` { (/) } ` .
+
+       Because of the way we represent the choice function ` y ` , the choice
+       function evaluated at ` A ` is
+       ` ( iota_ v e. A E. u e. y ( A e. u /\ v e. u ) ) ` and the choice
+       function evaluated at ` B ` is
+       ` ( iota_ v e. B E. u e. y ( B e. u /\ v e. u ) ) ` .  Other than the
+       difference in notation these work just as ` ( y `` A ) ` and
+       ` ( y `` B ) ` would if ` y ` were a function as defined by ~ df-fun .
+
+       Although it isn't exactly about the division into cases, it is also
+       convenient for this lemma to also include the step that if the choice
+       function evaluated at ` A ` equals ` { (/) } ` , then ` { (/) } e. A `
+       and likewise for ` B ` .
+
+       (Contributed by Jim Kingdon, 7-Aug-2019.) $)
+    acexmidlemcase $p |- ( A. z e. C E! v e. z E. u e. y
+      ( z e. u /\ v e. u ) ->
+      ( { (/) } e. A \/
+        (/) e. B \/
+        ( ( iota_ v e. A E. u e. y ( A e. u /\ v e. u ) ) = (/) /\
+        ( iota_ v e. B E. u e. y ( B e. u /\ v e. u ) ) = { (/) } ) ) ) $=
+      ( cv wcel wa c0 wceq wo eleq1 syl wrex wreu wral csn crio w3o cpr wi con0
+      crab onsucelsucexmidlem eqeltri prid1g ax-mp eleqtrri anbi1d reueqd rspcv
+      rexbidv riotacl elrabi eleq2s elpri 3syl syl5ibcom orim2d mpd pp0ex rabex
+      cvv prid2 orim1d jca anddi ax-ia1 jaoi orim2i orcomd ax-ia2 orim1i 3orass
+      sylib sylibr ) DMZFMZNZEMWENZOZFCMZUAZEWDUBZDIUCZPUDZGNZPHNZGWENZWGOZFWIU
+      AZEGUEZPQZHWENZWGOZFWIUAZEHUEZWMQZOZRZRZWNWOXFUFWLWNWTWOOZXFRZRXHWLXJWNWL
+      XJWNWOOZWNXEOZRZRZXJWNRWLWTWNRZWOXERZOXNWLXOXPWLWTWSWMQZRZXOWLWSGNZWSPWMU
+      GZNZXRWLWREGUBZXSGINWLYBUHGGHUGZIGUINGYCNGBMZPQARZBXTUJZUIJABUKULGHUIUMUN
+      LUOWKYBDGIWJWREWDGWDGQZWHWQFWIYGWFWPWGWDGWESUPUSUQURUNWREGUTTZYAWSYFGYEBW
+      SXTVAJVBWSPWMVCVDWLXQWNWTWLXSXQWNYHWSWMGSVEVFVGWLXDPQZXERZXPWLXDHNZXDXTNZ
+      YJWLXCEHUBZYKHINWLYMUHHYCIGHHYDWMQARZBXTUJZVJKYNBXTVHVIULVKLUOWKYMDHIWJXC
+      EWDHWDHQZWHXBFWIYPWFXAWGWDHWESUPUSUQURUNXCEHUTTZYLXDYOHYNBXDXTVAKVBXDPWMV
+      CVDWLYIWOXEWLYKYIWOYQXDPHSVEVLVGVMWTWNWOXEVNWBXMWNXJXKWNXLWNWOVOWNXEVOVPV
+      QTVRXJXGWNXIWOXFWTWOVSVTVQTWNWOXFWAWC $.
+
+    $( Lemma for ~ acexmid .  List the cases identified in ~ acexmidlemcase and
+       hook them up to the lemmas which handle each case.  (Contributed by Jim
+       Kingdon, 7-Aug-2019.) $)
+    acexmidlem1 $p |- ( A. z e. C E! v e. z E. u e. y
+        ( z e. u /\ v e. u ) -> ( ph \/ -. ph ) ) $=
+      ( cv wcel wa wrex c0 crio wceq orcd csn w3o wn acexmidlemcase acexmidlema
+      wreu wral wo acexmidlemb acexmidlemab olcd 3jaoi syl ) DMZFMZNEMUONZOFCMZ
+      PEUNUFDIUGQUAZGNZQHNZGUONUPOFUQPEGRQSHUONUPOFUQPEHRURSOZUBAAUCZUHZABCDEFG
+      HIJKLUDUSVCUTVAUSAVBABGHIJKLUETUTAVBABGHIJKLUITVAVBAABCEFGHIJKLUJUKULUM
+      $.
+
+    $( Lemma for ~ acexmid .  This builds on ~ acexmidlem1 by noting that every
+       element of ` C ` is inhabited.
+
+       (Note that ` y ` is not quite a function in the ~ df-fun sense because
+       it uses ordered pairs as described in ~ opthreg rather than ~ df-op ).
+
+       The set ` A ` is also found in ~ onsucelsucexmidlem .
+
+       (Contributed by Jim Kingdon, 5-Aug-2019.) $)
+    acexmidlem2 $p |- ( A. z e. C A. w e. z E! v e. z E. u e. y
+      ( z e. u /\ v e. u ) -> ( ph \/ -. ph ) ) $=
+      ( wel cv wral wo wcel wceq c0 wa wrex wreu wn wex wi df-ral 19.23v bitr2i
+      wal cpr eleq2i vex elpr bitri csn crab onsucelsucexmidlem1 eleqtrri elex2
+      ax-mp eleq2 exbidv mpbiri p0ex prid2 eqid orci eqeq1 orbi1d mpbir2an jaoi
+      elrab sylbi pm2.27 syl imp sylan2br ralimiaa acexmidlem1 ) DGNFGNUAGCOUBF
+      DOZUCZEWAPZDJPWBDJPAAUDQWCWBDJWCWAJRZEDNZEUEZWBUFZWBWCWEWBUFEUJWGWBEWAUGW
+      EWBEUHUIWDWGWBWDWFWGWBUFWDWAHSZWAISZQZWFWDWAHIUKZRWJJWKWAMULWAHIDUMUNUOWH
+      WFWIWHWFEOZHRZEUEZTHRWNTBOZTSAQBTTUPZUKZUQHABURKUSETHUTVAWHWEWMEWAHWLVBVC
+      VDWIWFWLIRZEUEZWPIRWSWPWOWPSZAQZBWQUQZIWPXBRWPWQRWPWPSZAQZTWPVEVFXCAWPVGV
+      HXAXDBWPWQWTWTXCAWOWPWPVIVJVMVKLUSEWPIUTVAWIWEWREWAIWLVBVCVDVLVNWFWBVOVPV
+      QVRVSABCDFGHIJKLMVTVP $.
+  $}
+
+  ${
+    $d ph x y z w v u s t $.
+    acexmidlemv.choice $e |- E. y A. z e. x A. w e. z E! v e. z E. u e. y
+      ( z e. u /\ v e. u ) $.
+    $( Lemma for ~ acexmid .
+
+       This is ~ acexmid with additional distinct variable constraints, most
+       notably between ` ph ` and ` x ` .
+
+       (Contributed by Jim Kingdon, 6-Aug-2019.) $)
+    acexmidlemv $p |- ( ph \/ -. ph ) $=
+      ( vs vt cv wcel wral c0 wceq wo cpr crab wex cvv wa wrex wreu csn wn con0
+      onsucelsucexmidlem pp0ex rabex prexg mp2an raleq exbidv vtocl orbi1d eqid
+      eqeq1 cbvrabv acexmidlem2 exlimiv ax-mp ) DKZGKZLFKVCLUAGCKUBFVBUCEVBMZDI
+      KZNOZAPZINNUDZQZRZVEVHOZAPZIVIRZQZMZCSZAAUEPZVDDBKZMZCSVPBVNVJUFLVMTLVNTL
+      AIUGVLIVIUHUIVJVMUFTUJUKVRVNOVSVOCVDDVRVNULUMHUNVOVQCAJCDEFGVJVMVNVGJKZNO
+      ZAPIJVIVEVTOZVFWAAVEVTNUQUOURVLVTVHOZAPIJVIWBVKWCAVEVTVHUQUOURVNUPUSUTVA
+      $.
+  $}
+
+  ${
+    $d x y z w v u $.  $d a b c d e f ph $.  $d a b c d e f u v w x y z $.
+    acexmid.choice $e |- E. y A. z e. x A. w e. z E! v e. z E. u e. y
+      ( z e. u /\ v e. u ) $.
+    $( The axiom of choice implies excluded middle.  Theorem 1.3 in [Bauer]
+       p. 483.
+
+       The statement of the axiom of choice given here is ac2 in the Metamath
+       Proof Explorer (version of 3-Aug-2019).  In particular, note that the
+       choice function ` y ` provides a value when ` z ` is inhabited (as
+       opposed to non-empty as in some statements of the axiom of choice).
+
+       Essentially the same proof can also be found at "The axiom of choice
+       implies instances of EM", [Crosilla], p.  "Set-theoretic principles
+       incompatible with intuitionistic logic".
+
+       (Contributed by Jim Kingdon, 4-Aug-2019.) $)
+    acexmid $p |- ( ph \/ -. ph ) $=
+      ( va vb vc vd vf ve wel wa cv wral weq wb wrex wreu wex wal weu wsb sb8eu
+      nfv w3a eleq12 ancoms 3adant3 3ad2antl1 3ad2antl2 simpl3 cbvrexdva2 3expa
+      anbi12d 3com23 sbiedv eubidv syl5bb df-reu 3bitr4g adantr simpll cbvexdva
+      cbvraldva2 adantll cbvalv mpgbir spi acexmidlemv ) AIJKLMNKNOZMNOZPZNJQZU
+      AZMKQZUBZLVSRZKIQZRZJUCZIWDIUDDGOZFGOZPZGCQZUAZFDQZUBZEWJRZDBQZRZCUCZBWDW
+      OIBIBSZWCWNJCWPJCSZPWAWLKDWBWMWQKDSZWAWLTZWPWRWQWSWRWQPZVTWKLEVSWJWTVTWKT
+      LESZWTMKOZVRPZMUEZFDOZWIPZFUEZVTWKXDXCMFUFZFUEWTXGXCMFXCFUHUGWTXHXFFWTXCX
+      FMFWRWQMFSZXCXFTZWRXIWQXJWRXIWQUIZXBXEVRWIWRXIXBXETZWQXIWRXLMQZFQZVSWJUJU
+      KULXKVPWGNGVQWHXKNGSZPVNWEVOWFWRXIXOVNWETWQVSWJNQZGQZUJUMXIWRXOVOWFTWQXMX
+      NXPXQUJUNURWRXIWQXOUOUPURUSUQUTVAVBVRMVSVCWIFWJVCVDVEWRWQXAVFVHUKVIWPWQWR
+      VFVHVGVJHVKVLVM $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
