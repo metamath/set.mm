@@ -36602,8 +36602,12 @@ $)
     $d x y z w s $.  $d z w s ph $.  $d x ph $.
     ordtriexmid.1 $e |- A. x e. On A. y e. On ( x e. y \/ x = y \/ y e. x ) $.
     $( Ordinal trichotomy implies the law of the excluded middle (that is,
-       decidability of an arbitrary proposition).  (Contributed by Mario
-       Carneiro and Jim Kingdon, 14-Nov-2018.) $)
+       decidability of an arbitrary proposition).
+
+       This theorem is stated in "Constructive ordinals", [Crosilla], p.
+       "Set-theoretic principles incompatible with intuitionistic logic".
+
+       (Contributed by Mario Carneiro and Jim Kingdon, 14-Nov-2018.) $)
     ordtriexmid $p |- ( ph \/ -. ph ) $=
       ( vz wn wo c0 wceq wcel w3o con0 cv eleq1 eleq2 3orbi123d wa wi 0ex ax-mp
       csn crab noel ordtriexmidlem eqeq1 0elon anbi2d eqeq2 imbi12d vtocl mpan2
