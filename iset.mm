@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Aug-2019
+$( iset.mm - Version of 10-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54675,6 +54675,53 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+              Finite recursion
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Define a constant for the finite recursive definition generator. $)
+  $c frec $.
+
+  $( Extend class notation with the fnite recursive definition generator, with
+     characteristic function ` F ` and initial value ` I ` . $)
+  cfrec $a class frec ( F , I ) $.
+
+  ${
+    $d x y f g F $.  $d x y f g I $.
+    $( Define a recursive definition generator on ` om ` (the class of finite
+       ordinals) with characteristic function ` F ` and initial value ` I ` .
+       This rather amazing operation allows us to define, with compact direct
+       definitions, functions that are usually defined in textbooks only with
+       indirect self-referencing recursive definitions.  A recursive definition
+       requires advanced metalogic to justify - in particular, eliminating a
+       recursive definition is very difficult and often not even shown in
+       textbooks.  On the other hand, the elimination of a direct definition is
+       a matter of simple mechanical substitution.  The price paid is the
+       daunting complexity of our ` frec ` operation (especially when ~ df-recs
+       that it is built on is also eliminated).  But once we get past this
+       hurdle, definitions that would otherwise be recursive become relatively
+       simple; see ~ fr0g and ~ frsuc .
+
+       Unlike with transfinite recursion, finite recurson can readily divide
+       definitions and proofs into zero and successor cases, because even
+       without excluded middle we have theorems such as ~ nn0suc .  The
+       analogous situation with transfinite recursion - being able to say that
+       an ordinal is zero, successor, or limit - is enabled by excluded middle
+       and thus is not available to us.
+
+       _Note:  We introduce_ ` frec ` _with the philosophical goal of being_
+       _able to eliminate all definitions with direct mechanical substitution_
+       _and to verify easily the soundness of definitions.  Metamath itself_
+       _has no built-in technical limitation that prevents multiple-part_
+       _recursive definitions in the traditional textbook style_.  (Contributed
+       by Mario Carneiro and Jim Kingdon, 10-Aug-2019.) $)
+    df-frec $a |- frec ( F , I ) = ( recs ( ( g e. _V |-> { x |
+      ( E. m ( dom g = suc m /\ x e. ( F ` ( g ` m ) ) ) \/
+      ( dom g = (/) /\ x e. I ) ) } ) ) |` om ) $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Ordinal arithmetic
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -55755,6 +55802,9 @@ htmldef "rec" as
     "<IMG SRC='_rec.gif' WIDTH=21 HEIGHT=19 ALT=' rec' TITLE='rec'>";
   althtmldef "rec" as 'rec';
   latexdef "rec" as "{\rm rec}";
+htmldef "frec" as "frec";
+  althtmldef "frec" as "frec";
+  latexdef "frec" as "{\rm frec}";
 htmldef "1o" as "<IMG SRC='_1o.gif' WIDTH=13 HEIGHT=19 ALT=' 1o' TITLE='1o'>";
   althtmldef "1o" as '1<SUB>&#x1D45C;</SUB>';
   latexdef "1o" as "1_o";
