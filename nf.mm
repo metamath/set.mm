@@ -54911,6 +54911,8 @@ $)
   $c Cross $. $( Cross product function. $)
   $c Pw1Fn $. $( The unit power class function. $)
   $c FullFun $. $( The full function operation. $)
+  $c Dom $. $( The domain function. $)
+  $c Ran $.
 
   $( Extend the definition of a class to include the tail cross product. $)
   ctxp $a class ( A (x) B ) $.
@@ -55047,6 +55049,20 @@ $)
   df-fullfun $a |- FullFun F =
    ( ( ( _I o. F ) \ ( ~ _I o. F ) ) u.
      ( ~ dom ( ( _I o. F ) \ ( ~ _I o. F ) ) X. { (/) } ) ) $.
+
+  $( Extend the definition of a class to include the domain function. $)
+  cdomfn $a class Dom $.
+
+  $( Define the domain function.  This is a function wrapper for the domain
+     operator.  (Contributed by Scott Fenton, 9-Aug-2019.) $)
+  df-domfn $a |- Dom = ( x e. _V |-> dom x ) $.
+
+  $( Extend the definition of a class to include the range function. $)
+  cranfn $a class Ran $.
+
+  $( Define the range function.  This is a function wrapper for the range
+     operator.  (Contributed by Scott Fenton, 9-Aug-2019.) $)
+  df-ranfn $a |- Ran = ( x e. _V |-> ran x ) $.
 
   ${
     $d A x y z w $.  $d B x y z w $.  $d R x y z w $.
@@ -56370,6 +56386,53 @@ $)
       DHIRDJZCKABDLZCKRCDABEFMNTSCABDOPQ $.
   $}
 
+  ${ $d A x $.
+     $( Calculate the value of the domain function.  (Contributed by Scott
+     	Fenton, 9-Aug-2019.) $)
+     fvdomfn $p |- ( A e. V -> ( Dom ` A ) = dom A ) $=
+       ( vx wcel cvv cdomfn cfv cdm wceq elex dmexg cv dmeq df-domfn fvmptg syl
+       mpdan ) ABDAEDZAFGAHZIZABJRSEDTAEKCACLZHSEEFUAAMCNOQP $.
+ 
+     $( Calculate the value of the range function.  (Contributed by Scott
+     	Fenton, 9-Aug-2019.) $)
+     fvranfn $p |- ( A e. V -> ( Ran ` A ) = ran A ) $=
+       ( vx wcel cvv cranfn cfv crn wceq elex rnexg cv rneq df-ranfn fvmptg syl
+       mpdan ) ABDAEDZAFGAHZIZABJRSEDTAEKCACLZHSEEFUAAMCNOQP $.
+  $}
+
+  ${ $d x y z w $.
+     $( The domain function is stratified.  (Contributed by Scott Fenton,
+     	9-Aug-2019.) $)
+     domfnex $p |- Dom e. _V $=
+       ( vx vy vz vw cdomfn cvv csset cswap cins2 cin c1c cima csn cop wcel wex
+       cv wa vex 3bitri cins3 csi3 cins4 csymdif ccompl ccnv cmpt df-domfn wceq
+       cxp cdm wel elima1c oqelins4 otsnelsi3 wbr df-br brswap2 bitr3i otelins2
+       elin opelssetsn anbi12i bitri exbii eleq1 ceqsexv eldm2 3bitr4i releqmpt
+       snex opex eqtr4i vvex swapex si3ex ins4ex ssetex inex 1cex imaex eqeltri
+       ins2ex mptexlem ) EFFUJGUAHUBZUCZGIZIZJZKLZKLZIUDKLUEUFJZFEAFAQZUKZUGWLA
+       UHABFWKWNCQZMZBQZMZWMNZNZWJOZCPWQWONZWMOZCPWSWKOWQWNOXAXCCXADQZMZWTNZWIO
+       ZDPXDXBUIZDAULZRZDPXCDWTWIUMXGXJDXGXFWFOZXFWHOZRXJXFWFWHVAXKXHXLXIXKXEWP
+       WRNNWEOXDWOWQNZNHOZXHXEWPWRWMWEASZUNXDWOWQHDSZCSZBSZUOXNXDXMHUPXHXDXMHUQ
+       XDWOWQXQXRURUSTXLXEWSNWGOXEWMNGOXIXEWPWSWGWOVKUTXEWRWMGWQVKUTXDWMXPXOVBT
+       VCVDVEXIXCDXBWQWOXRXQVLXDXBWMVFVGTVECWSWJUMCWQWMVHVIVJVMFWKVNWJKWIKWFWHW
+       EHVOVPVQWGGVRWCWCVSVTWAVTWAWDWB $.
+
+     $( The range function is stratified.  (Contributed by Scott Fenton,
+     	9-Aug-2019.) $)
+     ranfnex $p |- Ran e. _V $=
+       ( vx vy vz vw cranfn cvv csset cid cins2 cin c1c cima cv csn cop wcel wa
+       wex vex bitri cxp cins3 csi3 cins4 csymdif ccompl ccnv crn cmpt df-ranfn
+       wceq wel elin oqelins4 otsnelsi3 df-br opex ideq 3bitr2i snex opelssetsn
+       wbr otelins2 anbi12i exbii elima1c df-clel 3bitr4i elrn2 releqmpt eqtr4i
+       vvex idex si3ex ins4ex ssetex ins2ex inex 1cex imaex mptexlem eqeltri )
+       EFFUAGUBHUCZUDZGIZIZJZKLZKLZIUEKLUFUGJZFEAFAMZUHZUIWJAUJABFWIWLCMZNZBMZN
+       ZWKOZOZWHPZCRWMWOOZWKPZCRWQWIPWOWLPWSXACDMZNZWROZWGPZDRXBWTUKZDAULZQZDRW
+       SXAXEXHDXEXDWDPZXDWFPZQXHXDWDWFUMXIXFXJXGXIXCWNWPOOWCPZXFXCWNWPWKWCASZUN
+       XKXBWTOHPXBWTHVBXFXBWMWOHDSZCSZBSZUOXBWTHUPXBWTWMWOXNXOUQURUSTXJXCWQOWEP
+       ZXGXCWNWQWEWMUTVCXPXCWKOGPXGXCWPWKGWOUTVCXBWKXMXLVATTVDTVEDWRWGVFDWTWKVG
+       VHVECWQWHVFCWOWKVIVHVJVKFWIVLWHKWGKWDWFWCHVMVNVOWEGVPVQVQVRVSVTVSVTWAWB
+       $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -63273,7 +63336,7 @@ $(
 $)
 
   $( Declare new constants. $)
-  $c ~ord $. $( Ordinal similarity.$)
+  $c ~ord $. $( Ordinal similarity. $)
   
 
 $(
@@ -64251,6 +64314,15 @@ htmldef "FullFun" as
     " <FONT FACE=sans-serif>FullFun</FONT> ";
   althtmldef "FullFun" as ' <FONT FACE=sans-serif>FullFun</FONT> ';
   latexdef "FullFun" as "{\rm FullFun}";
+htmldef "Dom" as
+    " <FONT FACE=sans-serif>Dom</FONT> ";
+  althtmldef "Dom" as ' <FONT FACE=sans-serif>Dom</FONT> ';
+  latexdef "Dom" as "{\rm Dom}";
+htmldef "Ran" as
+    " <FONT FACE=sans-serif>Ran</FONT> ";
+  althtmldef "Ran" as ' <FONT FACE=sans-serif>Ran</FONT> ';
+  latexdef "Ran" as "{\rm Ran}";
+
 
 htmldef "Trans" as
     " <FONT FACE=sans-serif>Trans</FONT> ";
