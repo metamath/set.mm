@@ -794,7 +794,12 @@ variables</A></LI>
 <A HREF="peano4.html">4</A>
 <A HREF="peano5.html">5</A></LI>
 
-<LI><A HREF="nndc.html">A natural number is either zero or nonzero</A> (a special case of the law of the excluded middle which we can prove).
+<LI><A HREF="nndc.html">A natural number is either zero or nonzero</A> (a special case of the law of the excluded middle which we can prove).</LI>
+
+<LI><A HREF="nn0suc.html">A natural number is either zero or a successor</A></LI>
+
+<LI>
+<A HREF="acexmid.html">The axiom of choice implies excluded middle</A></LI>
 
 <LI>...<I>watch this space as we build out more of set theory</I></LI>
 
@@ -900,6 +905,13 @@ in intutionistic logic.</TD>
 </TR>
 
 <TR>
+<TD>pm2.18</TD>
+<TD>~ pm2.01 </TD>
+<TD>See for example [Bauer] who uses the terminology "proof of negation"
+versus "proof by contradiction" to distinguish these.</TD>
+<TR>
+
+<TR>
 <TD>iman</TD>
 <TD>~ imanim </TD>
 </TR>
@@ -952,6 +964,11 @@ in intutionistic logic.</TD>
 <TR>
 <TD>19.37</TD>
 <TD>~ 19.37-1 </TD>
+</TR>
+
+<TR>
+<TD>exdistrf</TD>
+<TD>~ exdistrfor </TD>
 </TR>
 
 <TR>
@@ -1037,6 +1054,21 @@ will be different from set.mm.</TD>
 </TR>
 
 <TR>
+<TD>tz7.7</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ordelssne</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ordelpss</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
 <TD>ordsseleq</TD>
 <TD>~ onelss , ~ eqimss </TD>
 <TD>Taken together, ~ onelss and ~ eqimss represent the reverse direction of
@@ -1045,7 +1077,7 @@ the biconditional from ordsseleq</TD>
 
 <TR>
 <TD>ordtri3or , ordtri2 , ordtri3 , ordtri4 ,
-ordtri2or , ordtri2or2 , ordtri2or3 , dford2
+ordtri2or2 , ordtri2or3 , dford2
 </TD>
 <TD><I>none</I></TD>
 <TD>Ordinal trichotomy implies the law of the excluded middle as shown
@@ -1059,6 +1091,12 @@ excluded middle.</TD>
 <TD>~ ssnel </TD>
 <TD>~ ssnel is a trichotomy-like theorem which does hold, although
 it is an implication whereas ordtri1 is a biconditional</TD>
+</TR>
+
+<TR>
+<TD>ordtri2or</TD>
+<TD><I>none</I></TD>
+<TD>Implies excluded middle as shown at ~ ordtri2orexmid .</TD>
 </TR>
 
 <TR>
@@ -1144,7 +1182,36 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 
 <TR>
 <TD>riotaex</TD>
-<TD>~ reuiotaex </TD>
+<TD>~ riotacl </TD>
+</TR>
+
+<TR>
+<TD>nfriotad</TD>
+<TD>~ nfriotadxy </TD>
+</TR>
+
+<TR>
+<TD>csbriota , csbriotagOLD</TD>
+<TD>~ csbriotag </TD>
+</TR>
+
+<TR>
+<TD>riotaxfrd</TD>
+<TD><I>none</I></TD>
+<TD>Although it may be intuitionizable, it is lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>ndmovg , ndmov , ndmovcl ,
+    ndmovrcl , ndmovcom , ndmovass , ndmovdistr , ndmovord ,
+    and ndmovordi</TD>
+<TD><I>none</I></TD>
+<TD>Although these theorems are moderately widely used in set.mm,
+    in many cases they are being used for case elimination and
+    the set.mm proofs are not intuitionistic. We might bring
+    back some of them later (which may have conditions that the
+    sets exist, but aren't in the domain), but maybe we'll find
+    a way to avoid them.
 </TR>
 
 <TR>
@@ -1216,30 +1283,26 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 <TD>ordpwsuc</TD>
 <TD>~ ordpwsucss </TD>
 <TD>See the ~ ordpwsucss comment for discussion of the succcessor-like
-properites of ` ( ~P A i^i On ) ` .</TD>
-</TR>
-
-<TR>
-<TD>onpsssuc</TD>
-<TD><I>none yet</I></TD>
-<TD>Conjectured to be provable, maybe via irreflexivity.</TD>
+properites of ` ( ~P A i^i On ) ` .  Full ordpwsuc implies excluded
+middle as seen at ~ ordpwsucexmid .</TD>
 </TR>
 
 <TR>
 <TD>ordsucelsuc</TD>
 <TD>~ onsucelsucr </TD>
+<TD>The converse implies excluded middle, as shown at ~ onsucelsucexmid .</TD>
 </TR>
 
 <TR>
 <TD>ordsucsssuc</TD>
-<TD><I>none</I></TD>
-<TD>Conjectured to be provable, but the proof is a bit complicated and uses injectivity of ` suc `.</TD>
+<TD>~ onsucsssucr </TD>
+<TD>The converse implies excluded middle, as shown at ~ onsucsssucexmid .</TD>
 </TR>
 
 <TR>
 <TD>ordsucuniel</TD>
-<TD><I>none yet</I></TD>
-<TD>Conjectured to be provable.</TD>
+<TD>~ sucunielr</TD>
+<TD>Full ordsucuniel implies excluded middle, as shown at ~ ordsucunielexmid .</TD>
 </TR>
 
 <TR>
@@ -1274,14 +1337,12 @@ properites of ` ( ~P A i^i On ) ` .</TD>
 
 <TR>
 <TD>ordunisuc</TD>
-<TD><I>none yet</I></TD>
-<TD>Conjectured to be provable.</TD>
+<TD>~ onunisuci , ~ unisuc </TD>
 </TR>
 
 <TR>
 <TD>orduniss2</TD>
-<TD><I>none yet</I></TD>
-<TD>Conjectured to be provable.</TD>
+<TD>~ onuniss2 </TD>
 </TR>
 
 <TR>
@@ -1306,12 +1367,6 @@ properites of ` ( ~P A i^i On ) ` .</TD>
 <TD>onuninsuci, ordununsuc</TD>
 <TD><I>none</I></TD>
 <TD>Conjectured to be provable in the forward direction but not the reverse one.</TD>
-</TR>
-
-<TR>
-<TD></TD>
-<TD><I>none yet</I></TD>
-<TD>Conjectured to be provable.</TD>
 </TR>
 
 <TR>
@@ -1439,6 +1494,12 @@ properites of ` ( ~P A i^i On ) ` .</TD>
 <TR>
 <TD>suc11reg</TD>
 <TD>~ suc11g </TD>
+</TR>
+
+<TR>
+<TD>oaword</TD>
+<TD>~ oawordi </TD>
+<TD>The other direction presumably could be proven but isn't yet.</TD>
 </TR>
 
 </TABLE>
