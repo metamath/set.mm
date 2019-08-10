@@ -13565,6 +13565,8 @@
 "wl-pm2.21" is used by "wl-con1i".
 "wl-pm2.24i" is used by "wl-a1i".
 "wl-pm2.27" is used by "wl-com12".
+"wl-sbcom2d-lem1" is used by "wl-sbcom2d".
+"wl-sbcom2d-lem2" is used by "wl-sbcom2d".
 "wl-syl" is used by "wl-a1d".
 "wl-syl" is used by "wl-ax1".
 "wl-syl" is used by "wl-id".
@@ -18162,6 +18164,8 @@ New usage of "wl-pm2.24i" is discouraged (1 uses).
 New usage of "wl-pm2.27" is discouraged (1 uses).
 New usage of "wl-sbal1" is discouraged (0 uses).
 New usage of "wl-sbal2" is discouraged (0 uses).
+New usage of "wl-sbcom2d-lem1" is discouraged (1 uses).
+New usage of "wl-sbcom2d-lem2" is discouraged (1 uses).
 New usage of "wl-sbcom3" is discouraged (0 uses).
 New usage of "wl-section-boot" is discouraged (0 uses).
 New usage of "wl-section-impchain" is discouraged (0 uses).
