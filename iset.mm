@@ -54700,7 +54700,7 @@ $)
        daunting complexity of our ` frec ` operation (especially when ~ df-recs
        that it is built on is also eliminated).  But once we get past this
        hurdle, definitions that would otherwise be recursive become relatively
-       simple; see ~ fr0g and ~ frsuc .
+       simple; see ~ frec0g and ~ frsuc .
 
        Unlike with transfinite recursion, finite recurson can readily divide
        definitions and proofs into zero and successor cases, because even
@@ -54731,6 +54731,24 @@ $)
       mp2an ) CGCHZIZDHZJKEHZVJVHLBLMNDOVIUAKVKAMNUBEUCZUDZUEZPGUFZQZVORZBAUGZG
       RZVNPRVQFVNVMVNUHVMUIFHZVMLSMCGVLUJVTVMSSCGVLUKULFUMUNUPUOPGVNUQURVPVRKVO
       GKZVQVSUSVPVNGQVRVOGVNGPUTWAVAGPVBTZVCECDBAVDVEWBVOGVPVRVFVGT $.
+
+    $( The initial value resulting from finite recursive definition
+       generation.  (Contributed by Jim Kingdon, 11-Aug-2019.) $)
+    frec0g $p |- ( A e. V -> ( frec ( F , A ) ` (/) ) = A ) $=
+      ( vm vx vg vy wcel c0 cdm cv wceq cfv wa wo cab cvv ax-mp com eqtri cfrec
+      wex dm0 biantrur wne vex nsuceq0g eqcom eqeq2i bitr3i nemtbir intnanr nex
+      csuc biorfi orcom 3bitri abbii abid2 eqtr3i eleq1i cmpt crecs cres fveq1i
+      df-frec peano1 fvres con0 0elon eqid wfun funmpt omex mptex pm3.2i fveq2i
+      fvex tfri2 res0 eqeq1d fveq2d eleq2d anbi12d exbidv anbi1d orbi12d abbidv
+      dmeq fveq1 fvmptg mpan syl5eq syl6eq sylbir ) ACHIJZDKZUNZLZEKZWQIMZBMZHZ
+      NZDUBZWPILZWTAHZNZOZEPZCHZIBAUAZMZALXJACXGEPXJAXGXIEXGXHXHXEOXIXFXGUCUDXE
+      XHXDDWSXCWSWRIWQQHWRIUEDUFWQQUGRWSWRWPLWRILWRWPUHWPIWRUCUIUJUKULUMUOXHXEU
+      PUQUREAUSUTZVAXKXMXJAXKXMIFSFKZJZWRLZWTWQXOMZBMZHZNZDUBZXPILZXGNZOZEPZVBZ
+      MZXJXMYGVCZIVDZYGMZYHXMIYIMZYKXMIYISVDZMZYLIXLYMEFDBAVFVEISHZYNYLLVGISYIV
+      HRTIVIHYLYKLVJGIYIYGYIVKYGVLGKZYGMQHFSYFVMYPYGQQFSYFVNVOGUFVRVPVSRTYJIYGY
+      IVTVQTYOXKYHXJLVGFIYFXJSCYGXOILZYEXIEYQYBXEYDXHYQYAXDDYQXQWSXTXCYQXPWPWRX
+      OIWIZWAYQXSXBWTYQXRXABWQXOIWJWBWCWDWEYQYCXFXGYQXPWPIYRWAWFWGWHYGVKWKWLWMX
+      NWNWO $.
   $}
 
 $(
