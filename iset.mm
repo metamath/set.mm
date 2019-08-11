@@ -54700,7 +54700,8 @@ $)
        daunting complexity of our ` frec ` operation (especially when ~ df-recs
        that it is built on is also eliminated).  But once we get past this
        hurdle, definitions that would otherwise be recursive become relatively
-       simple; see ~ frec0g and ~ frsuc .
+       simple; see ~ frec0g and (we'll have a similar theorem for successor
+       too, but we're not past that hurdle yet).
 
        Unlike with transfinite recursion, finite recurson can readily divide
        definitions and proofs into zero and successor cases, because even
