@@ -48710,7 +48710,8 @@ $)
     $d x y z w v u s A $.  $d x y z w v u s B $.  $d x y z w v u s C $.
     $d x y z w v u s ph $.
     acexmidlem.a $e |- A = { x e. { (/) , { (/) } } | ( x = (/) \/ ph ) } $.
-    acexmidlem.b $e |- B = { x e. { (/) , { (/) } } | ( x = { (/) } \/ ph ) } $.
+    acexmidlem.b $e |- B = { x e. { (/) , { (/) } } 
+                                                | ( x = { (/) } \/ ph ) } $.
     acexmidlem.c $e |- C = { A , B } $.
     $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
     acexmidlema $p |- ( { (/) } e. A -> ph ) $=
