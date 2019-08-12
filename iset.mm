@@ -1,4 +1,4 @@
-$( iset.mm - Version of 11-Aug-2019
+$( iset.mm - Version of 12-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -55082,6 +55082,34 @@ $)
       IFZCIUBUTIUCUQVACIURIFUQVACOURAIEUDPUECIUSUTIUTUFZUGQLEFUQUHUMUQDTZUTNZEF
       ZDEVCEFZUQVEVFUQGZVDVCAJSZEVGVHEFZVDVHUIZVCAUJZVCIFVIVJDOCVCUSVHIEUTURVCA
       JUKVBULPQVKRUNUOUPR $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Value of ordinal addition.  (Contributed by Mario Carneiro and Jim
+       Kingdon, 12-Aug-2019.) $)
+    oav2 $p |- ( ( A e. On /\ B e. On ) ->
+        ( A +o B ) = ( A u. U_ x e. B suc ( A +o x ) ) ) $=
+      ( vy con0 wcel wa cvv cv csuc cmpt crdg cfv ciun cun coa co wfn wceq oav
+      oafnex rdgival mp3an1 onelon vex oaexg mpan2 sucexg syl suceq eqid fvmptg
+      syl2anc adantr fveq2d eqtr3d sylan2 anassrs iuneq2dv uneq2d 3eqtr4d ) BEF
+      ZCEFZGZCDHDIZJZKZBLZMZBACAIZVHMZVGMZNZOZBCPQBACBVJPQZJZNZOVGHRVBVCVIVNSDU
+      AABCVGEUBUCDBCTVDVQVMBVDACVPVLVBVCVJCFZVPVLSZVCVRGVBVJEFZVSCVJUDVBVTGZVOV
+      GMZVPVLVBWBVPSZVTVBVOHFZVPHFZWCVBVJHFWDAUEBVJEHUFUGZVBWDWEWFVOHUHUIDVOVFV
+      PHHVGVEVOUJVGUKULUMUNWAVOVKVGDBVJTUOUPUQURUSUTVA $.
+
+    $( Addition with successor.  Definition 8.1 of [TakeutiZaring] p. 56.
+       (Contributed by NM, 3-May-1995.)  (Revised by Mario Carneiro,
+       8-Sep-2013.) $)
+    oasuc $p |- ( ( A e. On /\ B e. On ) ->
+                ( A +o suc B ) = suc ( A +o B ) ) $=
+      ( vx con0 wcel wa csuc coa co cun cv ciun wceq suceloni sylan2 csn df-suc
+      oav2 iuneq1 uneq2d ax-mp iunxun eqtri oveq2 suceq syl syl5eq adantl eqtrd
+      iunxsng unass syl6eqr uneq1d eqtr4d wss sssucid ssequn1 mpbi syl6eq ) ADE
+      ZBDEZFZABGZHIZABHIZVEGZJZVFVBVDACBACKZHIZGZLZJZVFJZVGVBVDAVKVFJZJZVMVBVDA
+      CVCVJLZJZVOVAUTVCDEVDVQMBNCAVCROVAVQVOMUTVAVPVNAVAVPVKCBPZVJLZJZVNVPCBVRJ
+      ZVJLZVTVCWAMVPWBMBQCVCWAVJSUACBVRVJUBUCVAVSVFVKCBVJVFDVHBMVIVEMVJVFMVHBAH
+      UDVIVEUEUFUJTUGTUHUIAVKVFUKULVBVEVLVFCABRUMUNVEVFUOVGVFMVEUPVEVFUQURUS $.
   $}
 
   ${
