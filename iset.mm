@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Aug-2019
+$( iset.mm - Version of 11-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -37201,10 +37201,10 @@ $(
 $)
 
   $( Declare new symbol. $)
-  $c om $. $( Greek letter omega $)
+  $c _om $. $( Greek letter omega $)
 
   $( Extend class notation to include the class of natural numbers. $)
-  com $a class om $.
+  com $a class _om $.
 
   ${
     $d x y z $.
@@ -37212,18 +37212,18 @@ $)
        is valid provided we assume the Axiom of Infinity.  Definition 6.3 of
        [Eisenberg] p. 82.
 
-       _Note_: the natural numbers ` om ` are a subset of the ordinal numbers
+       _Note_: the natural numbers ` _om ` are a subset of the ordinal numbers
        ~ df-on .  Later, when we define complex numbers, we will be able to
        also define a subset of the complex numbers with analogous properties
        and operations, but they will be different sets.  (Contributed by NM,
        6-Aug-1994.) $)
-    df-iom $a |- om = |^| { x | ( (/) e. x /\ A. y e. x suc y e. x ) } $.
+    df-iom $a |- _om = |^| { x | ( (/) e. x /\ A. y e. x suc y e. x ) } $.
   $}
 
   ${
     $d x y z $.
     $( Another name for ~ df-iom .  (Contributed by NM, 6-Aug-1994.) $)
-    dfom3 $p |- om = |^| { x | ( (/) e. x /\ A. y e. x suc y e. x ) } $=
+    dfom3 $p |- _om = |^| { x | ( (/) e. x /\ A. y e. x suc y e. x ) } $=
       ( df-iom ) ABC $.
   $}
 
@@ -37231,7 +37231,7 @@ $)
     $d x y $.
     $( The existence of omega (the class of natural numbers).  Axiom 7 of
        [TakeutiZaring] p. 43.  (Contributed by NM, 6-Aug-1994.) $)
-    omex $p |- om e. _V $=
+    omex $p |- _om e. _V $=
       ( vy vx com cvv wcel c0 cv csuc wral wa cint zfinf2 intexabim ax-mp dfom3
       cab wex eleq1i mpbir ) CDEFAGZEBGHTEBTIJZAPKZDEZUAAQUCABLUAAMNCUBDABORS
       $.
@@ -37248,7 +37248,7 @@ $)
     $( Zero is a natural number.  One of Peano's 5 postulates for arithmetic.
        Proposition 7.30(1) of [TakeutiZaring] p. 42.  (Contributed by NM,
        15-May-1994.) $)
-    peano1 $p |- (/) e. om $=
+    peano1 $p |- (/) e. _om $=
       ( vy vx vz c0 cv wcel csuc wral wa cab cint com wi 0ex wsb df-clab ax-ia1
       elint sbimi clelsb4 sylib sylbi mpgbir dfom3 eleqtrri ) DDAEZFZBEGUFFBUFH
       ZIZAJZKZLDUKFCEZUJFZDULFZMCCDUJNRUMUIACOZUNUICAPUOUGACOUNUIUGACUGUHQSCADT
@@ -37260,7 +37260,7 @@ $)
     $( The successor of any natural number is a natural number.  One of Peano's
        5 postulates for arithmetic.  Proposition 7.30(2) of [TakeutiZaring]
        p. 42.  (Contributed by NM, 3-Sep-2003.) $)
-    peano2 $p |- ( A e. om -> suc A e. om ) $=
+    peano2 $p |- ( A e. _om -> suc A e. _om ) $=
       ( vy vx vz cvv wcel com csuc cv wa wi wb imbi12d adantl wsb wal sylib nfv
       wral nfan elex c0 cab cint ax-ia1 wceq eleq1 eleq1d df-clab ax-ia2 df-ral
       suceq sbimi sbim elsb4 clelsb4 imbi12i bitri sbalv sylbi nfra1 nfsab nfvd
@@ -37277,14 +37277,14 @@ $)
   $( The successor of any natural number is not zero.  One of Peano's 5
      postulates for arithmetic.  Proposition 7.30(3) of [TakeutiZaring] p. 42.
      (Contributed by NM, 3-Sep-2003.) $)
-  peano3 $p |- ( A e. om -> suc A =/= (/) ) $=
+  peano3 $p |- ( A e. _om -> suc A =/= (/) ) $=
     ( com nsuceq0g ) ABC $.
 
   $( Two natural numbers are equal iff their successors are equal, i.e. the
      successor function is one-to-one.  One of Peano's 5 postulates for
      arithmetic.  Proposition 7.30(4) of [TakeutiZaring] p. 43.  (Contributed
      by NM, 3-Sep-2003.) $)
-  peano4 $p |- ( ( A e. om /\ B e. om ) -> ( suc A = suc B <-> A = B ) ) $=
+  peano4 $p |- ( ( A e. _om /\ B e. _om ) -> ( suc A = suc B <-> A = B ) ) $=
     ( com suc11g ) ABCCD $.
 
   ${
@@ -37297,7 +37297,7 @@ $)
        from this theorem as theorem ~ findes .  (Contributed by NM,
        18-Feb-2004.) $)
     peano5 $p |- ( ( (/) e. A /\
-                 A. x e. om ( x e. A -> suc x e. A ) ) -> om C_ A ) $=
+                 A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) $=
       ( vy c0 wcel cv csuc wi com wral wa cin wss cint elin df-ral sylibr eleq2
       cab wal dfom3 peano1 mpbiran biimpri peano2 adantr a1i jcad alimi imbi12i
       pm3.31 albii 3imtr4i anim12i omex wceq raleqbi1dv anbi12d elab intss1 syl
@@ -37317,7 +37317,7 @@ $)
 
   ${
     $d x A $.
-    find.1 $e |- ( A C_ om /\ (/) e. A /\ A. x e. A suc x e. A ) $.
+    find.1 $e |- ( A C_ _om /\ (/) e. A /\ A. x e. A suc x e. A ) $.
     $( The Principle of Finite Induction (mathematical induction).  Corollary
        7.31 of [TakeutiZaring] p. 43.  The simpler hypothesis shown here was
        suggested in an email from "Colin" on 1-Oct-2001.  The hypothesis states
@@ -37326,7 +37326,7 @@ $)
        ` A ` .  The conclusion is that every natural number is in ` A ` .
        (Contributed by NM, 22-Feb-2004.)  (Proof shortened by Andrew Salmon,
        27-Aug-2011.) $)
-    find $p |- A = om $=
+    find $p |- A = _om $=
       ( com wss c0 wcel cv csuc wral simp1i wi wa w3a 3simpc ax-mp df-ral alral
       wal sylbi anim2i peano5 eqssi ) BDBDEZFBGZAHZIBGZABJZCKUEUFBGUGLZADJZMZDB
       EUEUHMZUKUDUEUHNULCUDUEUHOPUHUJUEUHUIASUJUGABQUIADRTUAPABUBPUC $.
@@ -37343,12 +37343,12 @@ $)
     $( Basis. $)
     finds.5 $e |- ps $.
     $( Induction hypothesis. $)
-    finds.6 $e |- ( y e. om -> ( ch -> th ) ) $.
+    finds.6 $e |- ( y e. _om -> ( ch -> th ) ) $.
     $( Principle of Finite Induction (inference schema), using implicit
        substitutions.  The first four hypotheses establish the substitutions we
        need.  The last two are the basis and the induction hypothesis.  Theorem
        Schema 22 of [Suppes] p. 136.  (Contributed by NM, 14-Apr-1995.) $)
-    finds $p |- ( A e. om -> ta ) $=
+    finds $p |- ( A e. _om -> ta ) $=
       ( com wcel cab c0 cv elab csuc wi wral wss 0ex mpbir sucex 3imtr4g peano5
       vex rgen mp2an sseli elabg mpbid ) HOPHAFQZPEOUPHRUPPZGSZUPPZURUAZUPPZUBZ
       GOUCOUPUDUQBMABFRUEITUFVBGOUROPCDUSVANACFURGUJZJTADFUTURVCUGKTUHUKGUPUIUL
@@ -37364,13 +37364,13 @@ $)
     $( Basis. $)
     finds2.4 $e |- ( ta -> ps ) $.
     $( Induction hypothesis. $)
-    finds2.5 $e |- ( y e. om -> ( ta -> ( ch -> th ) ) ) $.
+    finds2.5 $e |- ( y e. _om -> ( ta -> ( ch -> th ) ) ) $.
     $( Principle of Finite Induction (inference schema), using implicit
        substitutions.  The first three hypotheses establish the substitutions
        we need.  The last two are the basis and the induction hypothesis.
        Theorem Schema 22 of [Suppes] p. 136.  (Contributed by NM,
        29-Nov-2002.) $)
-    finds2 $p |- ( x e. om -> ( ta -> ph ) ) $=
+    finds2 $p |- ( x e. _om -> ( ta -> ph ) ) $=
       ( cv com wcel wi c0 wceq imbi2d elab cab csuc wss 0ex mpbir a2d vex sucex
       wral 3imtr4g rgen peano5 mp2an sseli abid sylib ) FMZNOUQEAPZFUAZOURNUSUQ
       QUSOZGMZUSOZVAUBZUSOZPZGNUINUSUCUTEBPZKURVFFQUDUQQRABEHSTUEVEGNVANOZECPZE
@@ -37387,13 +37387,13 @@ $)
     $( Basis. $)
     finds1.4 $e |- ps $.
     $( Induction hypothesis. $)
-    finds1.5 $e |- ( y e. om -> ( ch -> th ) ) $.
+    finds1.5 $e |- ( y e. _om -> ( ch -> th ) ) $.
     $( Principle of Finite Induction (inference schema), using implicit
        substitutions.  The first three hypotheses establish the substitutions
        we need.  The last two are the basis and the induction hypothesis.
        Theorem Schema 22 of [Suppes] p. 136.  (Contributed by NM,
        22-Mar-2006.) $)
-    finds1 $p |- ( x e. om -> ph ) $=
+    finds1 $p |- ( x e. _om -> ph ) $=
       ( cv com wcel c0 wceq eqid a1i wi a1d finds2 mpi ) ELMNOOPZAOQABCDUCEFGHI
       BUCJRFLMNCDSUCKTUAUB $.
   $}
@@ -37401,11 +37401,11 @@ $)
   ${
     $d x y z $.  $d y z ph $.
     findes.1 $e |- [. (/) / x ]. ph $.
-    findes.2 $e |- ( x e. om -> ( ph -> [. suc x / x ]. ph ) ) $.
+    findes.2 $e |- ( x e. _om -> ( ph -> [. suc x / x ]. ph ) ) $.
     $( Finite induction with explicit substitution.  The first hypothesis is
        the basis and the second is the induction hypothesis.  Theorem Schema 22
        of [Suppes] p. 136.  (Contributed by Raph Levien, 9-Jul-2003.) $)
-    findes $p |- ( x e. om -> ph ) $=
+    findes $p |- ( x e. _om -> ph ) $=
       ( vz vy wsb c0 wsbc csuc dfsbcq2 sbequ sbequ12r com wcel nfv nfim imbi12d
       cv wi nfs1v nfsbc1v weq eleq1 sbequ12 wceq suceq dfsbcq syl chvar finds
       wb ) ABEGABHIABFGZABFSZJZIZAEFBSZABEHKAEFBLABEUOKAEBMCUQNOZAABUQJZIZTZTUN
@@ -37426,7 +37426,7 @@ $)
        arbitrary sets or real numbers will not be provable (without the law of
        the excluded middle), but equality of natural numbers is decidable.
        (Contributed by NM, 27-May-1998.) $)
-    nn0suc $p |- ( A e. om -> ( A = (/) \/ E. x e. om A = suc x ) ) $=
+    nn0suc $p |- ( A e. _om -> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
       ( vy vz cv c0 wceq csuc com wrex wo eqeq1 rexbidv orbi12d eqid orci suceq
       wcel eqeq2d rspcev mpan2 olcd a1d finds ) CEZFGZUEAEZHZGZAIJZKFFGZFUHGZAI
       JZKDEZFGZUNUHGZAIJZKZUNHZFGZUSUHGZAIJZKZBFGZBUHGZAIJZKCDBUFUFUKUJUMUEFFLU
@@ -37440,7 +37440,7 @@ $)
 
     $( A member of a natural number is a natural number.  (Contributed by NM,
        21-Jun-1998.) $)
-    elnn $p |- ( ( A e. B /\ B e. om ) -> A e. om ) $=
+    elnn $p |- ( ( A e. B /\ B e. _om ) -> A e. _om ) $=
       ( vy vx com wcel wss cv c0 csuc sseq1 0ss wa csn cun unss vex snss anbi2i
       df-suc sseq1i 3bitr4i biimpi expcom finds ssel2 ancoms sylan2 ) BEFABFZBE
       GZAEFZCHZEGIEGDHZEGZUMJZEGZUJCDBULIEKULUMEKULUOEKULBEKELUNUMEFZUPUNUQMZUP
@@ -37452,7 +37452,7 @@ $)
     $d x y $.
     $( Omega is ordinal.  Theorem 7.32 of [TakeutiZaring] p. 43.  (Contributed
        by NM, 18-Oct-1995.) $)
-    ordom $p |- Ord om $=
+    ordom $p |- Ord _om $=
       ( vx vy com word wtr cv wral wcel wa wi wal elnn gen2 dftr2 mpbir c0 csuc
       treq tr0 suctr a1i finds rgen df-iord mpbir2an ) CDCEZAFZEZACGUFUGBFZHUIC
       HIUGCHZJZBKAKUKABUGUILMABCNOUHACUIEPEUHUGQZEZUHBAUGUIPRUIUGRZUIULRUNSUHUM
@@ -37462,22 +37462,22 @@ $)
   ${
     $( Omega is an ordinal number.  (Contributed by Mario Carneiro,
        30-Jan-2013.) $)
-    omelon2 $p |- ( om e. _V -> om e. On ) $=
+    omelon2 $p |- ( _om e. _V -> _om e. On ) $=
       ( com cvv wcel con0 word ordom elong mpbiri ) ABCADCAEFABGH $.
   $}
 
   $( Omega is an ordinal number.  (Contributed by NM, 10-May-1998.)  (Revised
      by Mario Carneiro, 30-Jan-2013.) $)
-  omelon $p |- om e. On $=
+  omelon $p |- _om e. On $=
     ( com cvv wcel con0 omex omelon2 ax-mp ) ABCADCEFG $.
 
   $( A natural number is an ordinal number.  (Contributed by NM,
      27-Jun-1994.) $)
-  nnon $p |- ( A e. om -> A e. On ) $=
+  nnon $p |- ( A e. _om -> A e. On ) $=
     ( com omelon oneli ) BACD $.
 
   ${
-    nnoni.1 $e |- A e. om $.
+    nnoni.1 $e |- A e. _om $.
     $( A natural number is an ordinal number.  (Contributed by NM,
        27-Jun-1994.) $)
     nnoni $p |- A e. On $=
@@ -37485,13 +37485,13 @@ $)
   $}
 
   $( A natural number is ordinal.  (Contributed by NM, 17-Oct-1995.) $)
-  nnord $p |- ( A e. om -> Ord A ) $=
+  nnord $p |- ( A e. _om -> Ord A ) $=
     ( com wcel con0 word nnon eloni syl ) ABCADCAEAFAGH $.
 
   ${
     $d x y $.
     $( Omega is a subset of ` On ` .  (Contributed by NM, 13-Jun-1994.) $)
-    omsson $p |- om C_ On $=
+    omsson $p |- _om C_ On $=
       ( vx com con0 cv nnon ssriv ) ABCADEF $.
   $}
 
@@ -37500,7 +37500,7 @@ $)
     $( Omega is a limit ordinal.  Theorem 2.8 of [BellMachover] p. 473.
        (Contributed by NM, 26-Mar-1995.)  (Proof rewritten by Jim Kingdon,
        5-Jan-2019.) $)
-    limom $p |- Lim om $=
+    limom $p |- Lim _om $=
       ( vx vz com wlim word c0 wcel cuni wceq ordom peano1 cv wa wex csuc sucex
       wi vex isseti peano2 sucid jctil eleq2 eleq1 anbi12d syl5ibr eximii eluni
       19.37aiv sylibr ssriv wss orduniss ax-mp eqssi df-ilim mpbir3an ) CDCEZFC
@@ -37511,7 +37511,7 @@ $)
 
   $( A class belongs to omega iff its successor does.  (Contributed by NM,
      3-Dec-1995.) $)
-  peano2b $p |- ( A e. om <-> suc A e. om ) $=
+  peano2b $p |- ( A e. _om <-> suc A e. _om ) $=
     ( com wcel csuc peano2 cvv elex sucexb sylibr sucidg elnn mpancom impbii
     syl ) ABCZADZBCZAEAPCZQOQAFCZRQPFCSPBGAHIAFJNAPKLM $.
 
@@ -37519,7 +37519,7 @@ $)
     $d x A $.
     $( A nonzero natural number is a successor.  (Contributed by NM,
        18-Feb-2004.) $)
-    nnsuc $p |- ( ( A e. om /\ A =/= (/) ) -> E. x e. om A = suc x ) $=
+    nnsuc $p |- ( ( A e. _om /\ A =/= (/) ) -> E. x e. _om A = suc x ) $=
       ( c0 wne com wcel wceq wn cv csuc wrex df-ne nn0suc ord imp sylan2b ) BCD
       BEFZBCGZHZBAIJGAEKZBCLQSTQRTABMNOP $.
   $}
@@ -37530,7 +37530,7 @@ $)
        natural numbers is a special case of the law of the excluded middle
        which holds in most constructive set theories including ours.
        (Contributed by Jim Kingdon, 5-Jan-2019.) $)
-    nndc $p |- ( A e. om -> DECID A = (/) ) $=
+    nndc $p |- ( A e. _om -> DECID A = (/) ) $=
       ( vx vy com wcel c0 wceq wn wo wdc cv csuc eqeq1 notbid orbi12d eqid orci
       peano3 neneqd olcd a1d finds df-dc sylibr ) ADEAFGZUEHZIZUEJBKZFGZUIHZIFF
       GZUKHZICKZFGZUNHZIZUMLZFGZURHZIZUGBCAUIUIUKUJULUHFFMZUIUIUKVANOUHUMGZUIUN
@@ -54675,6 +54675,85 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+              Finite recursion
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Define a constant for the finite recursive definition generator. $)
+  $c frec $.
+
+  $( Extend class notation with the fnite recursive definition generator, with
+     characteristic function ` F ` and initial value ` I ` . $)
+  cfrec $a class frec ( F , I ) $.
+
+  ${
+    $d x y f g F $.  $d x y f g I $.
+    $( Define a recursive definition generator on ` _om ` (the class of finite
+       ordinals) with characteristic function ` F ` and initial value ` I ` .
+       This rather amazing operation allows us to define, with compact direct
+       definitions, functions that are usually defined in textbooks only with
+       indirect self-referencing recursive definitions.  A recursive definition
+       requires advanced metalogic to justify - in particular, eliminating a
+       recursive definition is very difficult and often not even shown in
+       textbooks.  On the other hand, the elimination of a direct definition is
+       a matter of simple mechanical substitution.  The price paid is the
+       daunting complexity of our ` frec ` operation (especially when ~ df-recs
+       that it is built on is also eliminated).  But once we get past this
+       hurdle, definitions that would otherwise be recursive become relatively
+       simple; see ~ frec0g and (we'll have a similar theorem for successor
+       too, but we're not past that hurdle yet).
+
+       Unlike with transfinite recursion, finite recurson can readily divide
+       definitions and proofs into zero and successor cases, because even
+       without excluded middle we have theorems such as ~ nn0suc .  The
+       analogous situation with transfinite recursion - being able to say that
+       an ordinal is zero, successor, or limit - is enabled by excluded middle
+       and thus is not available to us.
+
+       _Note:  We introduce_ ` frec ` _with the philosophical goal of being_
+       _able to eliminate all definitions with direct mechanical substitution_
+       _and to verify easily the soundness of definitions.  Metamath itself_
+       _has no built-in technical limitation that prevents multiple-part_
+       _recursive definitions in the traditional textbook style_.  (Contributed
+       by Mario Carneiro and Jim Kingdon, 10-Aug-2019.) $)
+    df-frec $a |- frec ( F , I ) = ( recs ( ( g e. _om |-> { x |
+      ( E. m ( dom g = suc m /\ x e. ( F ` ( g ` m ) ) ) \/
+      ( dom g = (/) /\ x e. I ) ) } ) ) |` _om ) $.
+  $}
+
+  ${
+    $d f g u v x y z A $.  $d f g u v x y z m F $.  $d u x B $.
+    $( The function generated by finite recursive definition generation is a
+       function on omega.  (Contributed by Jim Kingdon, 11-Aug-2019.) $)
+    frecfnom $p |- frec ( F , A ) Fn _om $=
+      ( vg vm vx vy com cv cdm csuc wceq cfv wcel wa wex con0 cres wfn cvv mpbi
+      c0 wo cab cmpt crecs cin cfrec eqid wfun funmpt omex mptex vex fvex tfri1
+      pm3.2i fnresin1 ax-mp wb wss omsson sseqin2 reseq2i df-frec eqtr4i fneq12
+      mp2an ) CGCHZIZDHZJKEHZVJVHLBLMNDOVIUAKVKAMNUBEUCZUDZUEZPGUFZQZVORZBAUGZG
+      RZVNPRVQFVNVMVNUHVMUIFHZVMLSMCGVLUJVTVMSSCGVLUKULFUMUNUPUOPGVNUQURVPVRKVO
+      GKZVQVSUSVPVNGQVRVOGVNGPUTWAVAGPVBTZVCECDBAVDVEWBVOGVPVRVFVGT $.
+
+    $( The initial value resulting from finite recursive definition
+       generation.  (Contributed by Jim Kingdon, 11-Aug-2019.) $)
+    frec0g $p |- ( A e. V -> ( frec ( F , A ) ` (/) ) = A ) $=
+      ( vm vx vg vy wcel c0 cdm cv wceq cfv wa wo cab cvv ax-mp com eqtri cfrec
+      wex dm0 biantrur wne vex nsuceq0g eqcom eqeq2i bitr3i nemtbir intnanr nex
+      csuc biorfi orcom 3bitri abbii abid2 eqtr3i eleq1i cmpt crecs cres fveq1i
+      df-frec peano1 fvres con0 0elon eqid wfun funmpt omex mptex pm3.2i fveq2i
+      fvex tfri2 res0 eqeq1d fveq2d eleq2d anbi12d exbidv anbi1d orbi12d abbidv
+      dmeq fveq1 fvmptg mpan syl5eq syl6eq sylbir ) ACHIJZDKZUNZLZEKZWQIMZBMZHZ
+      NZDUBZWPILZWTAHZNZOZEPZCHZIBAUAZMZALXJACXGEPXJAXGXIEXGXHXHXEOXIXFXGUCUDXE
+      XHXDDWSXCWSWRIWQQHWRIUEDUFWQQUGRWSWRWPLWRILWRWPUHWPIWRUCUIUJUKULUMUOXHXEU
+      PUQUREAUSUTZVAXKXMXJAXKXMIFSFKZJZWRLZWTWQXOMZBMZHZNZDUBZXPILZXGNZOZEPZVBZ
+      MZXJXMYGVCZIVDZYGMZYHXMIYIMZYKXMIYISVDZMZYLIXLYMEFDBAVFVEISHZYNYLLVGISYIV
+      HRTIVIHYLYKLVJGIYIYGYIVKYGVLGKZYGMQHFSYFVMYPYGQQFSYFVNVOGUFVRVPVSRTYJIYGY
+      IVTVQTYOXKYHXJLVGFIYFXJSCYGXOILZYEXIEYQYBXEYDXHYQYAXDDYQXQWSXTXCYQXPWPWRX
+      OIWIZWAYQXSXBWTYQXRXABWQXOIWJWBWCWDWEYQYCXFXGYQXPWPIYRWAWFWGWHYGVKWKWLWMX
+      NWNWO $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Ordinal arithmetic
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -55701,11 +55780,11 @@ htmldef "suc" as
     "<IMG SRC='_suc.gif' WIDTH=22 HEIGHT=19 ALT=' suc' TITLE='suc'> ";
   althtmldef "suc" as 'suc ';
   latexdef "suc" as "{\rm suc}";
-htmldef "om" as
+htmldef "_om" as
     "<IMG SRC='omega.gif' WIDTH=11 HEIGHT=19 ALT=' om' TITLE='om'>";
-  /*althtmldef "om" as '&omega;';*/
-  althtmldef "om" as '&#x1D714;'; /* math italic omega */
-  latexdef "om" as "\omega";
+  /*althtmldef "_om" as '&omega;';*/
+  althtmldef "_om" as '&#x1D714;'; /* math italic omega */
+  latexdef "_om" as "\omega";
 htmldef "X." as
     " <IMG SRC='times.gif' WIDTH=9 HEIGHT=19 ALT=' X.' TITLE='X.'> ";
   althtmldef "X." as ' &times; ';
@@ -55755,6 +55834,9 @@ htmldef "rec" as
     "<IMG SRC='_rec.gif' WIDTH=21 HEIGHT=19 ALT=' rec' TITLE='rec'>";
   althtmldef "rec" as 'rec';
   latexdef "rec" as "{\rm rec}";
+htmldef "frec" as "frec";
+  althtmldef "frec" as "frec";
+  latexdef "frec" as "{\rm frec}";
 htmldef "1o" as "<IMG SRC='_1o.gif' WIDTH=13 HEIGHT=19 ALT=' 1o' TITLE='1o'>";
   althtmldef "1o" as '1<SUB>&#x1D45C;</SUB>';
   latexdef "1o" as "1_o";
