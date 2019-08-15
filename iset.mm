@@ -16596,13 +16596,13 @@ $(
   that we identify with the real numbers and other familiar mathematical
   objects.
 
-  Here we develop set theory based on the Intuitionistic
-  Zermelo-Fraenkel (IZF) system of [Crosilla] (Crosilla's Constructive
-  Zermelo-Fraenkel (CZF) is not as easy to formalize in metamath
-  because the Axiom of Restricted Separation would require us to
-  develop the ability to classify formulas as bounded formulas, similar
-  to the machinery we have built up for asserting on whether variables
-  are free in formulas).
+  Here we develop set theory based on the Intuitionistic Zermelo-Fraenkel
+  (IZF) system, mostly following the IZF axioms as laid out in [Crosilla].
+  Constructive Zermelo-Fraenkel (CZF), also described in Crosilla, is not
+  as easy to formalize in metamath because the Axiom of Restricted Separation
+  would require us to develop the ability to classify formulas as bounded
+  formulas, similar to the machinery we have built up for asserting on
+  whether variables are free in formulas.
 
 $)
 
