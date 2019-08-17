@@ -37003,6 +37003,16 @@ $)
       FVDAUQAVEURUSVBVC $.
   $}
 
+  $( A successor is not a limit ordinal.  (Contributed by NM, 25-Mar-1995.)
+     (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
+  nlimsucg $p |- ( A e. V -> -. Lim suc A ) $=
+    ( wcel csuc wlim wn word cuni wceq wa limord ordsuc sylibr limuni jca ordtr
+    wtr unisucg biimpa sylan2 eqeq2d ordirr eleq2 notbid syl5ibrcom sucidg syl6
+    wi con3i adantl sylbid expimpd syl5 con2d pm2.43i ) ABCZADZEZFUPURUPURAGZUQ
+    UQHZIZJUPUPFZURUSVAURUQGUSUQKALMUQNOUPUSVAVBUPUSJZVAUQAIZVBVCUTAUQUSUPAQZUT
+    AIZAPUPVEVFABRSTUAUSVDVBUHUPUSVDAUQCZFZVBUSVHVDAACZFAUBVDVGVIUQAAUCUDUEUPVG
+    ABUFUIUGUJUKULUMUNUO $.
+
   ${
     $d x A $.
     $( The collection of ordinals in the power class of an ordinal is a
