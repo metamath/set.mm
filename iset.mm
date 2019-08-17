@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Aug-2019
+$( iset.mm - Version of 18-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -35682,6 +35682,17 @@ $)
       ( cuni wss cun wceq wtr csuc ssequn1 df-tr csn df-suc unieqi uniun uneq2i
       unisn 3eqtri eqeq1i 3bitr4i ) ACZADTAEZAFAGAHZCZAFTAIAJUCUAAUCAAKZEZCTUDC
       ZEUAUBUEALMAUDNUFATABPOQRS $.
+  $}
+
+  ${
+    $( A transitive class is equal to the union of its successor.  Combines
+       Theorem 4E of [Enderton] p. 72 and Exercise 6 of [Enderton] p. 73.
+       (Contributed by Jim Kingdon, 18-Aug-2019.) $)
+    unisucg $p |- ( A e. V -> ( Tr A <-> U. suc A = A ) ) $=
+      ( wcel csuc cuni wceq cun wtr csn df-suc unieqi uniun eqtri unisng uneq2d
+      syl5eq eqeq1d wss df-tr ssequn1 bitri syl6rbbr ) ABCZADZEZAFAEZAGZAFZAHZU
+      CUEUGAUCUEUFAIZEZGZUGUEAUJGZEULUDUMAJKAUJLMUCUKAUFABNOPQUIUFARUHASUFATUAU
+      B $.
   $}
 
   $( A class is included in its own successor.  Part of Proposition 7.23 of
