@@ -55239,6 +55239,14 @@ $)
       BJABKL $.
   $}
 
+  $( Addition with 1 is same as successor.  Proposition 4.34(a) of [Mendelson]
+     p. 266.  (Contributed by NM, 29-Oct-1995.)  (Revised by Mario Carneiro,
+     16-Nov-2014.) $)
+  oa1suc $p |- ( A e. On -> ( A +o 1o ) = suc A ) $=
+    ( con0 wcel c1o coa co c0 csuc df-1o oveq2i wceq peano1 onasuc mpan2 syl5eq
+    com oa0 suceq syl eqtrd ) ABCZADEFZAGEFZHZAHZUAUBAGHZEFZUDDUFAEIJUAGPCUGUDK
+    LAGMNOUAUCAKUDUEKAQUCARST $.
+
   ${
     $d x y A $.  $d x y B $.  $d x y C $.
     $( Weak ordering property of ordinal addition.  (Contributed by Jim
