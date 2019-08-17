@@ -1384,12 +1384,13 @@ middle as seen at ~ ordpwsucexmid .</TD>
 <TR>
 <TD>ordunisuc2</TD>
 <TD>~ ordunisuc2r </TD>
-<TD><P>The forward direction is conjectured to imply excluded middle.</P>
+<TD><P>The forward direction is conjectured to imply excluded middle. Here is a sketch of the proposed proof.</P>
+
 <P>Let om' be the set of all finite iterations of suc' A = ` ( ~P A i^i On ) ` on ` (/) `. (We can formalize this proof but not until we have om and at least finite induction.) Then om' = U. om' because if x e. om' then x = suc'^n (/) for some n, and then x C_ suc'^n (/) implies x e. suc'^(n+1) (/) e. om' so x e. U. om'.<p>
 
-<P>Now supposing the theorem, we know that A. x e. om' suc x e. om', so in particular 2o e. om', that is, 2o = suc'^n (/) for some n. (Note that 1o = suc' (/).) For n = 0 and n = 1 this is clearly false, and for n = m+3 we have 1o e. suc' suc' (/) , so 2o C_ suc' suc' (/), so 2o e. suc' suc' suc' (/) C_ suc' suc' suc' suc'^m (/) = 2o, contradicting ordirr.</P>
+<P>Now supposing the theorem, we know that A. x e. om' suc x e. om', so in particular 2o e. om', that is, 2o = suc'^n (/) for some n. (Note that 1o = suc' (/) - see ~ pw0 .) For n = 0 and n = 1 this is clearly false, and for n = m+3 we have 1o e. suc' suc' (/) , so 2o C_ suc' suc' (/), so 2o e. suc' suc' suc' (/) C_ suc' suc' suc' suc'^m (/) = 2o, contradicting ordirr.</P>
 
-<P>Thus 2o = suc' suc' (/) = suc' 1o. Applying this to X we have X C_ 1o implies X e. suc' 1o = 2o and hence X = (/) \/ X = 1o, and LEM follows.</P>
+<P>Thus 2o = suc' suc' (/) = suc' 1o. Applying this to X = ` { x e. { (/) } | ph } ` we have X C_ 1o implies X e. suc' 1o = 2o and hence X = (/) \/ X = 1o, and LEM follows (by ~ ordtriexmidlem2 for ` X = (/) ` and ~ rabsnt as seen in the ~ onsucsssucexmid proof for ` X = 1o ` ).</P>
 </TD>
 </TR>
 
