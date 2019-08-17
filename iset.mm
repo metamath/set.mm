@@ -55230,6 +55230,16 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x B $.
+    $( Addition with successor.  Theorem 4I(A2) of [Enderton] p. 79.
+       (Contributed by Mario Carneiro, 16-Nov-2014.) $)
+    onasuc $p |- ( ( A e. On /\ B e. _om ) ->
+                  ( A +o suc B ) = suc ( A +o B ) ) $=
+      ( com wcel con0 csuc coa co wceq nnon oasuc sylan2 ) BCDAEDBEDABFGHABGHFI
+      BJABKL $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d x y C $.
     $( Weak ordering property of ordinal addition.  (Contributed by Jim
        Kingdon, 27-Jul-2019.) $)
