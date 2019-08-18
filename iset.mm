@@ -55287,6 +55287,30 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                      Natural number arithmetic
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Addition with zero.  Theorem 4I(A1) of [Enderton] p. 79.  (Contributed by
+     NM, 20-Sep-1995.) $)
+  nna0 $p |- ( A e. _om -> ( A +o (/) ) = A ) $=
+    ( com wcel con0 c0 coa co wceq nnon oa0 syl ) ABCADCAEFGAHAIAJK $.
+
+  $( Multiplication with zero.  Theorem 4J(A1) of [Enderton] p. 80.
+     (Contributed by NM, 20-Sep-1995.) $)
+  nnm0 $p |- ( A e. _om -> ( A .o (/) ) = (/) ) $=
+    ( com wcel con0 c0 comu co wceq nnon om0 syl ) ABCADCAEFGEHAIAJK $.
+
+  $( Addition with successor.  Theorem 4I(A2) of [Enderton] p. 79.
+     (Contributed by NM, 20-Sep-1995.)  (Revised by Mario Carneiro,
+     14-Nov-2014.) $)
+  nnasuc $p |- ( ( A e. _om /\ B e. _om ) ->
+                ( A +o suc B ) = suc ( A +o B ) ) $=
+    ( com wcel con0 csuc coa co wceq nnon onasuc sylan ) ACDAEDBCDABFGHABGHFIAJ
+    ABKL $.
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
