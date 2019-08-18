@@ -55383,6 +55383,28 @@ $)
       UCWNUQVQFGWPWMJBVOTAVQSUGULUHPUIUJUMUNUOUP $.
   $}
 
+  $( One is a natural number.  (Contributed by NM, 29-Oct-1995.) $)
+  1onn $p |- 1o e. _om $=
+    ( c1o c0 csuc com df-1o wcel peano1 peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHI
+    J $.
+
+  $( The ordinal 2 is a natural number.  (Contributed by NM, 28-Sep-2004.) $)
+  2onn $p |- 2o e. _om $=
+    ( c2o c1o csuc com df-2o wcel 1onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
+    $.
+
+  $( The ordinal 3 is a natural number.  (Contributed by Mario Carneiro,
+     5-Jan-2016.) $)
+  3onn $p |- 3o e. _om $=
+    ( c3o c2o csuc com df-3o wcel 2onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
+    $.
+
+  $( The ordinal 4 is a natural number.  (Contributed by Mario Carneiro,
+     5-Jan-2016.) $)
+  4onn $p |- 4o e. _om $=
+    ( c4o c3o csuc com df-4o wcel 3onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
+    $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
