@@ -55321,7 +55321,18 @@ $)
       CEZFGZUJHZDUJIZFGZUMHZDAFGZAHBCAUFDHZUGUHUFDUFDDFJUQKLUFUJHZUGUKUFUJUFUJD
       FJURKLUFUMHZUGUNUFUMUFUMDFJUSKLUFAHZUGUPUFAUFADFJUTKLDMNUIODPQUJRNZUNUKIZ
       HZULUODRNVAVCSDUJTUAULVBUMUNUKUJUBUCUDUE $.
+
+    $( Closure of addition of natural numbers.  Proposition 8.9 of
+       [TakeutiZaring] p. 59.  (Contributed by NM, 20-Sep-1995.)  (Proof
+       shortened by Andrew Salmon, 22-Oct-2011.) $)
+    nnacl $p |- ( ( A e. _om /\ B e. _om ) -> ( A +o B ) e. _om ) $=
+      ( vx vy com wcel coa co cv wceq oveq2 eleq1d imbi2d csuc nna0 ibir peano2
+      wi c0 wa nnasuc syl5ibr expcom finds2 vtoclga impcom ) BEFAEFZABGHZEFZUGA
+      CIZGHZEFZRUGUIRCBEUJBJZULUIUGUMUKUHEUJBAGKLMULASGHZEFZADIZGHZEFZAUPNZGHZE
+      FZUGCDUJSJUKUNEUJSAGKLUJUPJUKUQEUJUPAGKLUJUSJUKUTEUJUSAGKLUGUOUGUNAEAOLPU
+      GUPEFZURVARURVAUGVBTZUQNZEFUQQVCUTVDEAUPUALUBUCUDUEUF $.
   $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
