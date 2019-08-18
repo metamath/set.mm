@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Aug-2019
+$( iset.mm - Version of 18-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -35684,6 +35684,17 @@ $)
       ZEUAUBUEALMAUDNUFATABPOQRS $.
   $}
 
+  ${
+    $( A transitive class is equal to the union of its successor.  Combines
+       Theorem 4E of [Enderton] p. 72 and Exercise 6 of [Enderton] p. 73.
+       (Contributed by Jim Kingdon, 18-Aug-2019.) $)
+    unisucg $p |- ( A e. V -> ( Tr A <-> U. suc A = A ) ) $=
+      ( wcel csuc cuni wceq cun wtr csn df-suc unieqi uniun eqtri unisng uneq2d
+      syl5eq eqeq1d wss df-tr ssequn1 bitri syl6rbbr ) ABCZADZEZAFAEZAGZAFZAHZU
+      CUEUGAUCUEUFAIZEZGZUGUEAUJGZEULUDUMAJKAUJLMUCUKAUFABNOPQUIUFARUHASUFATUAU
+      B $.
+  $}
+
   $( A class is included in its own successor.  Part of Proposition 7.23 of
      [TakeutiZaring] p. 41 (generalized to arbitrary classes).  (Contributed by
      NM, 31-May-1994.) $)
@@ -36991,6 +37002,16 @@ $)
       HVOVFVIVEIZVIVETVKWAVJVIAUCUDVEVIUEUFUJSUGUHVHAUKULUMUNUTUOBCAVAUPVGAVETV
       FVDAUQAVEURUSVBVC $.
   $}
+
+  $( A successor is not a limit ordinal.  (Contributed by NM, 25-Mar-1995.)
+     (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
+  nlimsucg $p |- ( A e. V -> -. Lim suc A ) $=
+    ( wcel csuc wlim wn word cuni wceq wa limord ordsuc sylibr limuni jca ordtr
+    wtr unisucg biimpa sylan2 eqeq2d ordirr eleq2 notbid syl5ibrcom sucidg syl6
+    wi con3i adantl sylbid expimpd syl5 con2d pm2.43i ) ABCZADZEZFUPURUPURAGZUQ
+    UQHZIZJUPUPFZURUSVAURUQGUSUQKALMUQNOUPUSVAVBUPUSJZVAUQAIZVBVCUTAUQUSUPAQZUT
+    AIZAPUPVEVFABRSTUAUSVDVBUHUPUSVDAUQCZFZVBUSVHVDAACZFAUBVDVGVIUQAAUCUDUEUPVG
+    ABUFUIUGUJUKULUMUNUO $.
 
   ${
     $d x A $.
@@ -55228,6 +55249,24 @@ $)
       ZVJLZVTVCWAMVPWBMBQCVCWAVJSUACBVRVJUBUCVAVSVFVKCBVJVFDVHBMVIVEMVJVFMVHBAH
       UDVIVEUEUFUJTUGTUHUIAVKVFUKULVBVEVLVFCABRUMUNVEVFUOVGVFMVEUPVEVFUQURUS $.
   $}
+
+  ${
+    $d x y A $.  $d x B $.
+    $( Addition with successor.  Theorem 4I(A2) of [Enderton] p. 79.
+       (Contributed by Mario Carneiro, 16-Nov-2014.) $)
+    onasuc $p |- ( ( A e. On /\ B e. _om ) ->
+                  ( A +o suc B ) = suc ( A +o B ) ) $=
+      ( com wcel con0 csuc coa co wceq nnon oasuc sylan2 ) BCDAEDBEDABFGHABGHFI
+      BJABKL $.
+  $}
+
+  $( Addition with 1 is same as successor.  Proposition 4.34(a) of [Mendelson]
+     p. 266.  (Contributed by NM, 29-Oct-1995.)  (Revised by Mario Carneiro,
+     16-Nov-2014.) $)
+  oa1suc $p |- ( A e. On -> ( A +o 1o ) = suc A ) $=
+    ( con0 wcel c1o coa co c0 csuc df-1o oveq2i wceq peano1 onasuc mpan2 syl5eq
+    com oa0 suceq syl eqtrd ) ABCZADEFZAGEFZHZAHZUAUBAGHZEFZUDDUFAEIJUAGPCUGUDK
+    LAGMNOUAUCAKUDUEKAQUCARST $.
 
   ${
     $d x y A $.  $d x y B $.  $d x y C $.
