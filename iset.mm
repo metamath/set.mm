@@ -55364,6 +55364,25 @@ $)
       IUJULBVDTNUGUHUIUJUL $.
   $}
 
+  ${
+    $d x y A $.  $d x y B $.  $d x C $.
+    $( Addition of natural numbers is associative.  Theorem 4K(1) of [Enderton]
+       p. 81.  (Contributed by NM, 20-Sep-1995.)  (Revised by Mario Carneiro,
+       15-Nov-2014.) $)
+    nnaass $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                 ( ( A +o B ) +o C ) = ( A +o ( B +o C ) ) ) $=
+      ( vx vy com wcel coa co wceq wa cv wi oveq2 oveq2d eqeq12d c0 csuc nnasuc
+      nnacl imbi2d nna0 adantl eqtr4d suceq sylan sylan2 anassrs syl5ibr expcom
+      syl eqtrd finds2 vtoclga com12 3impia ) AFGZBFGZCFGZABHIZCHIZABCHIZHIZJZU
+      SUQURKZVDVEUTDLZHIZABVFHIZHIZJZMVEVDMDCFVFCJZVJVDVEVKVGVAVIVCVFCUTHNVKVHV
+      BAHVFCBHNOPUAVJUTQHIZABQHIZHIZJUTELZHIZABVOHIZHIZJZUTVORZHIZABVTHIZHIZJZV
+      EDEVFQJZVGVLVIVNVFQUTHNWEVHVMAHVFQBHNOPVFVOJZVGVPVIVRVFVOUTHNWFVHVQAHVFVO
+      BHNOPVFVTJZVGWAVIWCVFVTUTHNWGVHWBAHVFVTBHNOPVEVLUTVNVEUTFGZVLUTJABTZUTUBU
+      KURVNUTJUQURVMBAHBUBOUCUDVEVOFGZVSWDMVSWDVEWJKZVPRZVRRZJVPVRUEWKWAWLWCWMV
+      EWHWJWAWLJWIUTVOSUFUQURWJWCWMJUQURWJKZKWCAVQRZHIZWMWNWCWPJUQWNWBWOAHBVOSO
+      UCWNUQVQFGWPWMJBVOTAVQSUGULUHPUIUJUMUNUOUP $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
