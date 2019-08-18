@@ -55310,6 +55310,18 @@ $)
     ( com wcel con0 csuc coa co wceq nnon onasuc sylan ) ACDAEDBCDABFGHABGHFIAJ
     ABKL $.
 
+  ${
+    $d x y A $.  $d x B $.
+    $( Addition to zero.  Remark in proof of Theorem 4K(2) of [Enderton]
+       p. 81.  (Contributed by NM, 20-Sep-1995.)  (Revised by Mario
+       Carneiro, 14-Nov-2014.) $)
+    nna0r $p |- ( A e. _om -> ( (/) +o A ) = A ) $=
+      ( vx vy c0 cv coa co wceq csuc oveq2 id eqeq12d con0 wcel 0elon oa0 ax-mp
+      com peano1 nnasuc mpan suceq eqeq2d syl5ibcom finds ) DBEZFGZUFHDDFGZDHZD
+      CEZFGZUJHZDUJIZFGZUMHZDAFGZAHBCAUFDHZUGUHUFDUFDDFJUQKLUFUJHZUGUKUFUJUFUJD
+      FJURKLUFUMHZUGUNUFUMUFUMDFJUSKLUFAHZUGUPUFAUFADFJUTKLDMNUIODPQUJRNZUNUKIZ
+      HZULUODRNVAVCSDUJTUAULVBUMUNUKUJUBUCUDUE $.
+  $}
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
