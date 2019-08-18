@@ -14049,6 +14049,7 @@ New usage of "axpre-lttri" is discouraged (0 uses).
 New usage of "axpre-lttrn" is discouraged (0 uses).
 New usage of "axpre-mulgt0" is discouraged (0 uses).
 New usage of "axpre-sup" is discouraged (0 uses).
+New usage of "axregndOLD" is discouraged (0 uses).
 New usage of "axresscn" is discouraged (2 uses).
 New usage of "axrnegex" is discouraged (0 uses).
 New usage of "axrrecex" is discouraged (0 uses).
@@ -18344,6 +18345,7 @@ Proof modification of "axnul" is discouraged (52 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
 Proof modification of "axpowndlem2OLD" is discouraged (440 steps).
 Proof modification of "axpowndlem3OLD" is discouraged (356 steps).
+Proof modification of "axregndOLD" is discouraged (224 steps).
 Proof modification of "binom2aiOLD" is discouraged (171 steps).
 Proof modification of "bitr3" is discouraged (14 steps).
 Proof modification of "bitr3VD" is discouraged (36 steps).
