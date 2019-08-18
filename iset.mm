@@ -55333,6 +55333,16 @@ $)
       GUPEFZURVARURVAUGVBTZUQNZEFUQQVCUTVDEAUPUALUBUCUDUEUF $.
   $}
 
+  ${
+    nncli.1 $e |- A e. _om $.
+    nncli.2 $e |- B e. _om $.
+    $( ` _om ` is closed under addition.  Inference form of ~ nnacl .
+       (Contributed by Scott Fenton, 20-Apr-2012.)  (Revised by Mario Carneiro,
+       12-May-2012.) $)
+    nnacli $p |- ( A +o B ) e. _om $=
+      ( com wcel coa co nnacl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
