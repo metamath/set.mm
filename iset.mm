@@ -55268,6 +55268,11 @@ $)
     com oa0 suceq syl eqtrd ) ABCZADEFZAGEFZHZAHZUAUBAGHZEFZUDDUFAEIJUAGPCUGUDK
     LAGMNOUAUCAKUDUEKAQUCARST $.
 
+  $( 1 + 1 = 2 for ordinal numbers.  (Contributed by NM, 18-Feb-2004.) $)
+  o1p1e2 $p |- ( 1o +o 1o ) = 2o $=
+    ( c1o coa co csuc c2o con0 wcel wceq 1on oa1suc ax-mp df-2o eqtr4i ) AABCZA
+    DZEAFGNOHIAJKLM $.
+
   ${
     $d x y A $.  $d x y B $.  $d x y C $.
     $( Weak ordering property of ordinal addition.  (Contributed by Jim
