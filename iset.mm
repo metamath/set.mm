@@ -1,4 +1,4 @@
-$( iset.mm - Version of 12-Aug-2019
+$( iset.mm - Version of 18-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -16596,13 +16596,13 @@ $(
   that we identify with the real numbers and other familiar mathematical
   objects.
 
-  Here we develop set theory based on the Intuitionistic
-  Zermelo-Fraenkel (IZF) system of [Crosilla] (Crosilla's Constructive
-  Zermelo-Fraenkel (CZF) is not as easy to formalize in metamath
-  because the Axiom of Restricted Separation would require us to
-  develop the ability to classify formulas as bounded formulas, similar
-  to the machinery we have built up for asserting on whether variables
-  are free in formulas).
+  Here we develop set theory based on the Intuitionistic Zermelo-Fraenkel
+  (IZF) system, mostly following the IZF axioms as laid out in [Crosilla].
+  Constructive Zermelo-Fraenkel (CZF), also described in Crosilla, is not
+  as easy to formalize in metamath because the Axiom of Restricted Separation
+  would require us to develop the ability to classify formulas as bounded
+  formulas, similar to the machinery we have built up for asserting on
+  whether variables are free in formulas.
 
 $)
 
@@ -35684,6 +35684,17 @@ $)
       ZEUAUBUEALMAUDNUFATABPOQRS $.
   $}
 
+  ${
+    $( A transitive class is equal to the union of its successor.  Combines
+       Theorem 4E of [Enderton] p. 72 and Exercise 6 of [Enderton] p. 73.
+       (Contributed by Jim Kingdon, 18-Aug-2019.) $)
+    unisucg $p |- ( A e. V -> ( Tr A <-> U. suc A = A ) ) $=
+      ( wcel csuc cuni wceq cun wtr csn df-suc unieqi uniun eqtri unisng uneq2d
+      syl5eq eqeq1d wss df-tr ssequn1 bitri syl6rbbr ) ABCZADZEZAFAEZAGZAFZAHZU
+      CUEUGAUCUEUFAIZEZGZUGUEAUJGZEULUDUMAJKAUJLMUCUKAUFABNOPQUIUFARUHASUFATUAU
+      B $.
+  $}
+
   $( A class is included in its own successor.  Part of Proposition 7.23 of
      [TakeutiZaring] p. 41 (generalized to arbitrary classes).  (Contributed by
      NM, 31-May-1994.) $)
@@ -36991,6 +37002,16 @@ $)
       HVOVFVIVEIZVIVETVKWAVJVIAUCUDVEVIUEUFUJSUGUHVHAUKULUMUNUTUOBCAVAUPVGAVETV
       FVDAUQAVEURUSVBVC $.
   $}
+
+  $( A successor is not a limit ordinal.  (Contributed by NM, 25-Mar-1995.)
+     (Proof shortened by Andrew Salmon, 27-Aug-2011.) $)
+  nlimsucg $p |- ( A e. V -> -. Lim suc A ) $=
+    ( wcel csuc wlim wn word cuni wceq wa limord ordsuc sylibr limuni jca ordtr
+    wtr unisucg biimpa sylan2 eqeq2d ordirr eleq2 notbid syl5ibrcom sucidg syl6
+    wi con3i adantl sylbid expimpd syl5 con2d pm2.43i ) ABCZADZEZFUPURUPURAGZUQ
+    UQHZIZJUPUPFZURUSVAURUQGUSUQKALMUQNOUPUSVAVBUPUSJZVAUQAIZVBVCUTAUQUSUPAQZUT
+    AIZAPUPVEVFABRSTUAUSVDVBUHUPUSVDAUQCZFZVBUSVHVDAACZFAUBVDVGVIUQAAUCUDUEUPVG
+    ABUFUIUGUJUKULUMUNUO $.
 
   ${
     $d x A $.
@@ -54700,8 +54721,7 @@ $)
        daunting complexity of our ` frec ` operation (especially when ~ df-recs
        that it is built on is also eliminated).  But once we get past this
        hurdle, definitions that would otherwise be recursive become relatively
-       simple; see ~ frec0g and (we'll have a similar theorem for successor
-       too, but we're not past that hurdle yet).
+       simple; see ~ frec0g and ~ frecsuc .
 
        Unlike with transfinite recursion, finite recurson can readily divide
        definitions and proofs into zero and successor cases, because even
@@ -54716,40 +54736,158 @@ $)
        _has no built-in technical limitation that prevents multiple-part_
        _recursive definitions in the traditional textbook style_.  (Contributed
        by Mario Carneiro and Jim Kingdon, 10-Aug-2019.) $)
-    df-frec $a |- frec ( F , I ) = ( recs ( ( g e. _om |-> { x |
-      ( E. m ( dom g = suc m /\ x e. ( F ` ( g ` m ) ) ) \/
+    df-frec $a |- frec ( F , I ) = ( recs ( ( g e. _V |-> { x |
+      ( E. m e. _om ( dom g = suc m /\ x e. ( F ` ( g ` m ) ) ) \/
       ( dom g = (/) /\ x e. I ) ) } ) ) |` _om ) $.
   $}
 
   ${
-    $d f g u v x y z A $.  $d f g u v x y z m F $.  $d u x B $.
+    $d A x $.  $d F x $.  $d S x $.  $d m ph $.  $d m x $.
+    frecabex.1 $e |- ( ph -> S e. V ) $.
+    frecabex.2 $e |- ( ph -> F Fn _V ) $.
+    frecabex.3 $e |- ( ph -> A e. W ) $.
+    $( The class abstraction from ~ df-frec exists.  This is a lemma for
+       several other finite recursion proofs.  (Contributed by Jim Kingdon,
+       16-Aug-2019.) $)
+    frecabex $p |- ( ph -> { x |
+        ( E. m e. _om ( dom S = suc m /\ x e. ( F ` ( S ` m ) ) ) \/
+        ( dom S = (/) /\ x e. A ) ) } e. _V ) $=
+      ( cv wceq cfv wcel wa com cab cvv sylancr cdm csuc wrex c0 wo wral ax-ia2
+      omex wss abssi wfn vex sylancl funfvex funfni syl2anc ralrimivw abrexex2g
+      fvexg ssexg jca cun unexb unab eleq1i bitri sylib ) ADUAZELZUBMZBLZVIDNZF
+      NZOZPZEQUCZBRZSOZVHUDMZVKCOZPZBRZSOZPZVPWAUEBRZSOZAVRWCAQSOVOBRZSOZEQUFVR
+      UHAWHEQAWGVMUIVMSOZWHVOBVMVJVNUGUJAFSUKVLSOZWIJADGOVISOWJIEULVIDGSUSUMWIS
+      VLFVLFUNUOUPWGVMSUTTUQVOEBQSSURTAWBCUICHOWCWABCVSVTUGUJKWBCHUTTVAWDVQWBVB
+      ZSOWFVQWBVCWKWESVPWABVDVEVFVG $.
+  $}
+
+  ${
+    $d g m x y A $.  $d g m x y F $.  $d x B $.  $d g m y V $.
+    frectfr.1 $e |- G = ( g e. _V |-> { x | ( E. m e. _om ( dom g = suc m /\
+          x e. ( F ` ( g ` m ) ) ) \/ ( dom g = (/) /\ x e. A ) ) } ) $.
+    $( Lemma to connect transfinite recursion theorems with finite recursion.
+       That is, given the conditions ` F Fn _V ` and ` A e. V ` on
+       ` frec ( F , A ) ` , we want to be able to apply ~ tfri1d or ~ tfri2d ,
+       and this lemma lets us satisfy hypotheses of those theorems.
+
+       (Contributed by Jim Kingdon, 15-Aug-2019.) $)
+    frectfr $p |- ( ( F Fn _V /\ A e. V ) ->
+        A. y ( Fun G /\ ( G ` y ) e. _V ) ) $=
+      ( cvv wfn wcel wa wfun cv cfv cdm csuc wceq vex com wrex c0 wo cab ax-ia1
+      wral a1i ax-ia2 frecabex ralrimivw fnmpt syl funfvex funfni sylancl jctil
+      funmpt2 alrimiv ) FJKZCHLZMZGNZBOZGPJLZMBVBVEVCVBGJKZVDJLVEVBDOZQZEOZRSAO
+      ZVIVGPFPLMEUAUBVHUCSVJCLMUDAUEZJLZDJUGVFVBVLDJVBACVGEFJHVGJLVBDTUHUTVAUFU
+      TVAUIUJUKDJVKGJIULUMBTVEJVDGVDGUNUOUPDJVKGIURUQUS $.
+  $}
+
+  ${
+    $d f g m u v x y z A $.  $d f g u v x y z m F $.  $d u x B $.
+    $d g m y V $.
+
     $( The function generated by finite recursive definition generation is a
        function on omega.  (Contributed by Jim Kingdon, 11-Aug-2019.) $)
-    frecfnom $p |- frec ( F , A ) Fn _om $=
-      ( vg vm vx vy com cv cdm csuc wceq cfv wcel wa wex con0 cres wfn cvv mpbi
-      c0 wo cab cmpt crecs cin cfrec eqid wfun funmpt omex mptex vex fvex tfri1
-      pm3.2i fnresin1 ax-mp wb wss omsson sseqin2 reseq2i df-frec eqtr4i fneq12
-      mp2an ) CGCHZIZDHZJKEHZVJVHLBLMNDOVIUAKVKAMNUBEUCZUDZUEZPGUFZQZVORZBAUGZG
-      RZVNPRVQFVNVMVNUHVMUIFHZVMLSMCGVLUJVTVMSSCGVLUKULFUMUNUPUOPGVNUQURVPVRKVO
-      GKZVQVSUSVPVNGQVRVOGVNGPUTWAVAGPVBTZVCECDBAVDVEWBVOGVPVRVFVGT $.
+    frecfnom $p |- ( ( F Fn _V /\ A e. V ) -> frec ( F , A ) Fn _om ) $=
+      ( vg vm vx vy cvv wfn wcel wa cv cdm csuc wceq cfv com con0 cres eqid cab
+      wrex c0 wo cmpt crecs cin cfrec frectfr tfri1d fnresin1 syl wb wss omsson
+      sseqin2 mpbi reseq2i df-frec eqtr4i fneq12 mp2an sylib ) BHIACJKZDHDLZMZE
+      LZNOFLZVGVEPBPJKEQUBVFUCOVHAJKUDFUAUEZUFZRQUGZSZVKIZBAUHZQIZVDVJRIVMVDGVJ
+      VIVJTFGADEBVICVITUIUJRQVJUKULVLVNOVKQOZVMVOUMVLVJQSVNVKQVJQRUNVPUOQRUPUQZ
+      URFDEBAUSUTVQVKQVLVNVAVBVC $.
 
     $( The initial value resulting from finite recursive definition
        generation.  (Contributed by Jim Kingdon, 11-Aug-2019.) $)
-    frec0g $p |- ( A e. V -> ( frec ( F , A ) ` (/) ) = A ) $=
-      ( vm vx vg vy wcel c0 cdm cv wceq cfv wa wo cab cvv ax-mp com eqtri cfrec
-      wex dm0 biantrur wne vex nsuceq0g eqcom eqeq2i bitr3i nemtbir intnanr nex
-      csuc biorfi orcom 3bitri abbii abid2 eqtr3i eleq1i cmpt crecs cres fveq1i
-      df-frec peano1 fvres con0 0elon eqid wfun funmpt omex mptex pm3.2i fveq2i
-      fvex tfri2 res0 eqeq1d fveq2d eleq2d anbi12d exbidv anbi1d orbi12d abbidv
-      dmeq fveq1 fvmptg mpan syl5eq syl6eq sylbir ) ACHIJZDKZUNZLZEKZWQIMZBMZHZ
-      NZDUBZWPILZWTAHZNZOZEPZCHZIBAUAZMZALXJACXGEPXJAXGXIEXGXHXHXEOXIXFXGUCUDXE
-      XHXDDWSXCWSWRIWQQHWRIUEDUFWQQUGRWSWRWPLWRILWRWPUHWPIWRUCUIUJUKULUMUOXHXEU
-      PUQUREAUSUTZVAXKXMXJAXKXMIFSFKZJZWRLZWTWQXOMZBMZHZNZDUBZXPILZXGNZOZEPZVBZ
-      MZXJXMYGVCZIVDZYGMZYHXMIYIMZYKXMIYISVDZMZYLIXLYMEFDBAVFVEISHZYNYLLVGISYIV
-      HRTIVIHYLYKLVJGIYIYGYIVKYGVLGKZYGMQHFSYFVMYPYGQQFSYFVNVOGUFVRVPVSRTYJIYGY
-      IVTVQTYOXKYHXJLVGFIYFXJSCYGXOILZYEXIEYQYBXEYDXHYQYAXDDYQXQWSXTXCYQXPWPWRX
-      OIWIZWAYQXSXBWTYQXRXABWQXOIWJWBWCWDWEYQYCXFXGYQXPWPIYRWAWFWGWHYGVKWKWLWMX
-      NWNWO $.
+    frec0g $p |- ( ( F Fn _V /\ A e. V ) -> ( frec ( F , A ) ` (/) ) = A ) $=
+      ( vm vx vg vy cvv wcel wa c0 cdm cv wceq cfv com wrex wo cab eqeq1d cfrec
+      wfn csuc dm0 biantrur wne vex nsuceq0g ax-mp eqcom eqeq2i nemtbir intnanr
+      wn bitr3i a1i nrex biorfi orcom 3bitri abbii eqtr3i eleq1i biimpri adantl
+      abid2 cmpt dmeq fveq1 fveq2d eleq2d anbi12d rexbidv anbi1d orbi12d abbidv
+      0ex eqid fvmptg mpan crecs cres df-frec fveq1i peano1 fvres eqtri frectfr
+      con0 0elon tfri2d mpan2 syl5eq res0 fveq2i syl6eq syl5ibr syl6ib mpd ) BH
+      UBZACIZJZKLZDMZUCZNZEMZXDKOZBOZIZJZDPQZXCKNZXGAIZJZRZESZCIZKBAUAZOZANZXAX
+      RWTXRXAXQACXNESXQAXNXPEXNXOXOXLRXPXMXNUDUEXLXOXKDPXKUNXDPIXFXJXFXEKXDHIXE
+      KUFDUGXDHUHUIXFXEXCNXEKNXEXCUJXCKXEUDUKUOULUMUPUQURXOXLUSUTVAEAVFVBZVCVDV
+      EXBXRXTXQNZYAXRYCXBKFHFMZLZXENZXGXDYDOZBOZIZJZDPQZYEKNZXNJZRZESZVGZOZXQNZ
+      KHIXRYRVQFKYOXQHCYPYDKNZYNXPEYSYKXLYMXOYSYJXKDPYSYFXFYIXJYSYEXCXEYDKVHZTY
+      SYHXIXGYSYGXHBXDYDKVIVJVKVLVMYSYLXMXNYSYEXCKYTTVNVOVPYPVRZVSVTXBXTYQXQXBX
+      TYPWAZKWBZYPOZYQXBXTKUUBOZUUDXTKUUBPWBZOZUUEKXSUUFEFDBAWCWDKPIUUGUUENWEKP
+      UUBWFUIWGXBKWIIUUEUUDNWJXBGKUUBYPUUBVREGAFDBYPCUUAWHWKWLWMUUCKYPUUBWNWOWP
+      TWQXQAXTYBUKWRWS $.
+
+    ${
+      $d A f g m u v x y z $.  $d B g m u x $.  $d F f g m u v x y z $.
+      $d G g m x y $.  $d V g m x y $.
+      frecsuclem1.h $e |- G = ( g e. _V |-> { x | (
+        E. m e. _om ( dom g = suc m /\ x e. ( F ` ( g ` m ) ) )
+        \/ ( dom g = (/) /\ x e. A ) ) } ) $.
+      $( Lemma for ~ frecsuc .  (Contributed by Jim Kingdon, 13-Aug-2019.) $)
+      frecsuclem1 $p |- ( ( F Fn _V /\ A e. V /\ B e. _om ) ->
+          ( frec ( F , A ) ` suc B ) = ( G ` ( recs ( G ) |` suc B ) ) ) $=
+        ( vy cvv wcel com csuc cfv crecs cres wceq cv wa wfn w3a cfrec cdm wrex
+        c0 cab cmpt df-frec recseq ax-mp reseq1i eqtr4i fveq1i peano2 fvres syl
+        wo syl5eq 3ad2ant3 con0 nnon eqid frectfr tfri2d sylan2 3impa eqtrd ) F
+        KUAZBHLZCMLZUBCNZFBUCZOZVLGPZOZVOVLQGOZVKVIVNVPRVJVKVNVLVOMQZOZVPVLVMVR
+        VMDKDSZUDZESZNRASZWBVTOFOLTEMUEWAUFRWCBLTURAUGUHZPZMQVRADEFBUIVOWEMGWDR
+        VOWERIGWDUJUKULUMUNVKVLMLZVSVPRCUOZVLMVOUPUQUSUTVIVJVKVPVQRZVKVIVJTZVLV
+        ALZWHVKWFWJWGVLVBUQWIJVLVOGVOVCAJBDEFGHIVDVEVFVGVH $.
+
+      $( Lemma for ~ frecsuc .  (Contributed by Jim Kingdon, 15-Aug-2019.) $)
+      frecsuclemdm $p |- ( ( F Fn _V /\ A e. V /\ B e. _om ) ->
+          dom ( recs ( G ) |` suc B ) = suc B ) $=
+        ( vy cvv wfn wcel com w3a csuc cdm wss wceq con0 cres suceloni 3ad2ant3
+        crecs nnon onss 3syl eqid frectfr tfri1d fndm syl sseq2d 3adant3 mpbird
+        wb wa ssdmres sylib ) FKLZBHMZCNMZOZCPZGUDZQZRZVEVDUAQVDSVCVGVDTRZVBUTV
+        HVAVBCTMVDTMVHCUECUBVDUFUGUCUTVAVGVHUPVBUTVAUQZVFTVDVIVETLVFTSVIJVEGVEU
+        HAJBDEFGHIUIUJTVEUKULUMUNUOVDVEURUS $.
+
+      $( Lemma for ~ frecsuc .  (Contributed by Jim Kingdon, 15-Aug-2019.) $)
+      frecsuclem2 $p |- ( ( F Fn _V /\ A e. V /\ B e. _om ) ->
+          ( ( recs ( G ) |` suc B ) ` B ) = ( frec ( F , A ) ` B ) ) $=
+        ( com wcel cvv crecs csuc cres cfv wceq fvres cv wa wfn sucidg syl wrex
+        cfrec cdm c0 cab cmpt df-frec recseq ax-mp reseq1i eqtr4i fveq1i syl5eq
+        wo eqtr4d 3ad2ant3 ) CJKZFLUACGMZCNZOPZCFBUEZPZQBHKUTVCCVAPZVEUTCVBKVCV
+        FQCJUBCVBVARUCUTVECVAJOZPVFCVDVGVDDLDSZUFZESZNQASZVJVHPFPKTEJUDVIUGQVKB
+        KTUQAUHUIZMZJOVGADEFBUJVAVMJGVLQVAVMQIGVLUKULUMUNUOCJVARUPURUS $.
+
+      $( Lemma for ~ frecsuc .  (Contributed by Jim Kingdon, 15-Aug-2019.) $)
+      frecsuclem3 $p |- ( ( F Fn _V /\ A e. V /\ B e. _om ) ->
+          ( frec ( F , A ) ` suc B ) = ( F ` ( frec ( F , A ) ` B ) ) ) $=
+        ( cvv wcel com cfv cv wceq wa wrex c0 wo eqeq1d vy wfn csuc cfrec crecs
+        w3a cres cdm cab wfun con0 eqid frectfr tfri1d fnfun syl 3adant3 peano2
+        3ad2ant3 resfunexg syl2anc simp1 simp2 frecabex wi fveq1 fveq2d anbi12d
+        dmeq eleq2d rexbidv anbi1d orbi12d abbidv fvmptg ex frecsuclem1 sylibrd
+        mpd abeq2d wn wb frecsuclemdm wne peano3 eqnetrd neneqd intnanrd syl6bb
+        biorf orcom vex mpan2 bitrd eqcom 3bitr2d fveq2 ceqsrexbv 3anibar eqrdv
+        suc11g frecsuclem2 eqtrd ) FJUBZBHKZCLKZUFZCUCZFBUDZMZCGUEZXHUGZMZFMZCX
+        IMZFMXGAXJXNXDXEXFANZXJKZXPXNKZXGXQENZCOZXPXSXLMZFMZKZPZELQZXFXRPXGXQXL
+        UHZXSUCZOZYCPZELQZYFROZXPBKZPZSZYJYEXGYNAXJXGYNAUIZJKZXJYOOZXGABXLEFJHX
+        GXKUJZXHLKZXLJKZXDXEYRXFXDXEPZXKUKUBYRUUAUAXKGXKULAUABDEFGHIUMUNUKXKUOU
+        PUQXFXDYSXECURUSXKXHLUTVAZXDXEXFVBXDXEXFVCVDXGYPXLGMZYOOZYQXGYTYPUUDVEU
+        UBYTYPUUDDXLDNZUHZYGOZXPXSUUEMZFMZKZPZELQZUUFROZYLPZSZAUIYOJJGUUEXLOZUU
+        OYNAUUPUULYJUUNYMUUPUUKYIELUUPUUGYHUUJYCUUPUUFYFYGUUEXLVIZTUUPUUIYBXPUU
+        PUUHYAFXSUUEXLVFVGVJVHVKUUPUUMYKYLUUPUUFYFRUUQTVLVMVNIVOVPUPXGXJUUCYOAB
+        CDEFGHIVQTVRVSVTXGYJYMYJSZYNXGYMWAYJUURWBXGYKYLXGYFRXGYFXHRABCDEFGHIWCZ
+        XFXDXHRWDXECWEUSWFWGWHYMYJWJUPYMYJWKWIXGYIYDELXGYHXTYCXGYHCXSOZXTXGYHXH
+        YGOZUUTXGYFXHYGUUSTXFXDUVAUUTWBZXEXFXSJKUVBEWLCXSLJXAWMUSWNCXSWOWIVLVKW
+        PYCXRECLXTYBXNXPXTYAXMFXSCXLWQVGVJWRWIWSWTXGXMXOFABCDEFGHIXBVGXC $.
+    $}
+  $}
+
+  ${
+    $d A f g m x y $.  $d B g m y $.  $d F f g m n x y $.  $d V g m y $.
+    $( The successor value resulting from finite recursive definition
+       generation.  (Contributed by Jim Kingdon, 15-Aug-2019.) $)
+    frecsuc $p |- ( ( F Fn _V /\ A e. V /\ B e. _om ) ->
+        ( frec ( F , A ) ` suc B ) = ( F ` ( frec ( F , A ) ` B ) ) ) $=
+      ( vy vg vm vf vn vx cvv cv wceq cfv wcel wa com wrex wo cab cdm csuc cmpt
+      c0 suceq eqeq2d fveq2 fveq2d eleq2d anbi12d cbvrexv orbi1i anbi2d rexbidv
+      abbii eleq1 orbi12d cbvabv eqtri mpteq2i dmeq eqeq1d fveq1 anbi1d cbvmptv
+      abbidv frecsuclem3 ) EABFGCHKHLZUAZILZUBZMZJLZVJVHNZCNZOZPZIQRZVIUDMZVMAO
+      ZPZSZJTZUCZDWDHKVIGLZUBZMZELZWEVHNZCNZOZPZGQRZVSWHAOZPZSZETZUCFKFLZUAZWFM
+      ZWHWEWRNZCNZOZPZGQRZWSUDMZWNPZSZETZUCHKWCWQWCWGVMWJOZPZGQRZWASZJTWQWBXMJV
+      RXLWAVQXKIGQVJWEMZVLWGVPXJXNVKWFVIVJWEUEUFXNVOWJVMXNVNWICVJWEVHUGUHUIUJUK
+      ULUOXMWPJEVMWHMZXLWMWAWOXOXKWLGQXOXJWKWGVMWHWJUPUMUNXOVTWNVSVMWHAUPUMUQUR
+      USUTHFKWQXIVHWRMZWPXHEXPWMXEWOXGXPWLXDGQXPWGWTWKXCXPVIWSWFVHWRVAZVBXPWJXB
+      WHXPWIXACWEVHWRVCUHUIUJUNXPVSXFWNXPVIWSUDXQVBVDUQVFVEUSVG $.
   $}
 
 $(
@@ -55113,6 +55251,29 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x B $.
+    $( Addition with successor.  Theorem 4I(A2) of [Enderton] p. 79.
+       (Contributed by Mario Carneiro, 16-Nov-2014.) $)
+    onasuc $p |- ( ( A e. On /\ B e. _om ) ->
+                  ( A +o suc B ) = suc ( A +o B ) ) $=
+      ( com wcel con0 csuc coa co wceq nnon oasuc sylan2 ) BCDAEDBEDABFGHABGHFI
+      BJABKL $.
+  $}
+
+  $( Addition with 1 is same as successor.  Proposition 4.34(a) of [Mendelson]
+     p. 266.  (Contributed by NM, 29-Oct-1995.)  (Revised by Mario Carneiro,
+     16-Nov-2014.) $)
+  oa1suc $p |- ( A e. On -> ( A +o 1o ) = suc A ) $=
+    ( con0 wcel c1o coa co c0 csuc df-1o oveq2i wceq peano1 onasuc mpan2 syl5eq
+    com oa0 suceq syl eqtrd ) ABCZADEFZAGEFZHZAHZUAUBAGHZEFZUDDUFAEIJUAGPCUGUDK
+    LAGMNOUAUCAKUDUEKAQUCARST $.
+
+  $( 1 + 1 = 2 for ordinal numbers.  (Contributed by NM, 18-Feb-2004.) $)
+  o1p1e2 $p |- ( 1o +o 1o ) = 2o $=
+    ( c1o coa co csuc c2o con0 wcel wceq 1on oa1suc ax-mp df-2o eqtr4i ) AABCZA
+    DZEAFGNOHIAJKLM $.
+
+  ${
     $d x y A $.  $d x y B $.  $d x y C $.
     $( Weak ordering property of ordinal addition.  (Contributed by Jim
        Kingdon, 27-Jul-2019.) $)
@@ -55124,6 +55285,125 @@ $)
       UNUPUFZULUMUNUPUGZULUMUNUPUHZUOUPUIUJUSUNULKUQVBQUSUNULVDVERDCASTUSUNUMKU
       RVCQUSUNUMVDVFRDCBSTUKUA $.
   $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                      Natural number arithmetic
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Addition with zero.  Theorem 4I(A1) of [Enderton] p. 79.  (Contributed by
+     NM, 20-Sep-1995.) $)
+  nna0 $p |- ( A e. _om -> ( A +o (/) ) = A ) $=
+    ( com wcel con0 c0 coa co wceq nnon oa0 syl ) ABCADCAEFGAHAIAJK $.
+
+  $( Multiplication with zero.  Theorem 4J(A1) of [Enderton] p. 80.
+     (Contributed by NM, 20-Sep-1995.) $)
+  nnm0 $p |- ( A e. _om -> ( A .o (/) ) = (/) ) $=
+    ( com wcel con0 c0 comu co wceq nnon om0 syl ) ABCADCAEFGEHAIAJK $.
+
+  $( Addition with successor.  Theorem 4I(A2) of [Enderton] p. 79.
+     (Contributed by NM, 20-Sep-1995.)  (Revised by Mario Carneiro,
+     14-Nov-2014.) $)
+  nnasuc $p |- ( ( A e. _om /\ B e. _om ) ->
+                ( A +o suc B ) = suc ( A +o B ) ) $=
+    ( com wcel con0 csuc coa co wceq nnon onasuc sylan ) ACDAEDBCDABFGHABGHFIAJ
+    ABKL $.
+
+  ${
+    $d x y A $.  $d x B $.
+    $( Addition to zero.  Remark in proof of Theorem 4K(2) of [Enderton]
+       p. 81.  (Contributed by NM, 20-Sep-1995.)  (Revised by Mario
+       Carneiro, 14-Nov-2014.) $)
+    nna0r $p |- ( A e. _om -> ( (/) +o A ) = A ) $=
+      ( vx vy c0 cv coa co wceq csuc oveq2 id eqeq12d con0 wcel 0elon oa0 ax-mp
+      com peano1 nnasuc mpan suceq eqeq2d syl5ibcom finds ) DBEZFGZUFHDDFGZDHZD
+      CEZFGZUJHZDUJIZFGZUMHZDAFGZAHBCAUFDHZUGUHUFDUFDDFJUQKLUFUJHZUGUKUFUJUFUJD
+      FJURKLUFUMHZUGUNUFUMUFUMDFJUSKLUFAHZUGUPUFAUFADFJUTKLDMNUIODPQUJRNZUNUKIZ
+      HZULUODRNVAVCSDUJTUAULVBUMUNUKUJUBUCUDUE $.
+
+    $( Closure of addition of natural numbers.  Proposition 8.9 of
+       [TakeutiZaring] p. 59.  (Contributed by NM, 20-Sep-1995.)  (Proof
+       shortened by Andrew Salmon, 22-Oct-2011.) $)
+    nnacl $p |- ( ( A e. _om /\ B e. _om ) -> ( A +o B ) e. _om ) $=
+      ( vx vy com wcel coa co cv wceq oveq2 eleq1d imbi2d csuc nna0 ibir peano2
+      wi c0 wa nnasuc syl5ibr expcom finds2 vtoclga impcom ) BEFAEFZABGHZEFZUGA
+      CIZGHZEFZRUGUIRCBEUJBJZULUIUGUMUKUHEUJBAGKLMULASGHZEFZADIZGHZEFZAUPNZGHZE
+      FZUGCDUJSJUKUNEUJSAGKLUJUPJUKUQEUJUPAGKLUJUSJUKUTEUJUSAGKLUGUOUGUNAEAOLPU
+      GUPEFZURVARURVAUGVBTZUQNZEFUQQVCUTVDEAUPUALUBUCUDUEUF $.
+  $}
+
+  ${
+    nncli.1 $e |- A e. _om $.
+    nncli.2 $e |- B e. _om $.
+    $( ` _om ` is closed under addition.  Inference form of ~ nnacl .
+       (Contributed by Scott Fenton, 20-Apr-2012.)  (Revised by Mario Carneiro,
+       12-May-2012.) $)
+    nnacli $p |- ( A +o B ) e. _om $=
+      ( com wcel coa co nnacl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
+
+  ${
+    $d x y A $.  $d x y z B $.  $d x y z C $.
+    $( Addition of natural numbers is commutative.  Theorem 4K(2) of [Enderton]
+       p. 81.  (Contributed by NM, 6-May-1995.)  (Revised by Mario Carneiro,
+       15-Nov-2014.) $)
+    nnacom $p |- ( ( A e. _om /\ B e. _om ) -> ( A +o B ) = ( B +o A ) ) $=
+      ( vx vy com wcel coa co wceq cv wi oveq1 oveq2 eqeq12d c0 csuc nna0 suceq
+      syl nnasuc vz imbi2d nna0r eqtr4d wa peano2 syl5ibr expcom finds2 vtoclga
+      sylan imp ) AEFBEFZABGHZBAGHZIZUMCJZBGHZBUQGHZIZKUMUPKCAEUQAIZUTUPUMVAURU
+      NUSUOUQABGLUQABGMNUBUTOBGHZBOGHZIDJZBGHZBVDGHZIZVDPZBGHZBVHGHZIZUMCDUQOIZ
+      URVBUSVCUQOBGLUQOBGMNUQVDIURVEUSVFUQVDBGLUQVDBGMNUQVHIURVIUSVJUQVHBGLUQVH
+      BGMNUMVBBVCBUCBQUDUMVDEFZVGVKKVGVKUMVMUEZVEPZVFPZIVEVFRVNVIVOVJVPUMVMVIVO
+      IZVMVHUQGHZVDUQGHZPZIZKVMVQKCBEUQBIZWAVQVMWBVRVIVTVOUQBVHGMWBVSVEIVTVOIUQ
+      BVDGMVSVERSNUBWAVHOGHZVDOGHZPZIVHUAJZGHZVDWFGHZPZIZVHWFPZGHZVDWKGHZPZIZVM
+      CUAVLVRWCVTWEUQOVHGMVLVSWDIVTWEIUQOVDGMVSWDRSNUQWFIZVRWGVTWIUQWFVHGMWPVSW
+      HIVTWIIUQWFVDGMVSWHRSNUQWKIZVRWLVTWNUQWKVHGMWQVSWMIVTWNIUQWKVDGMVSWMRSNVM
+      WCVHWEVMVHEFZWCVHIVDUFZVHQSVMWDVDIWEVHIVDQWDVDRSUDVMWFEFZWJWOKWJWOVMWTUEZ
+      WGPZWIPZIWGWIRXAWLXBWNXCVMWRWTWLXBIWSVHWFTUKXAWMWIIWNXCIVDWFTWMWIRSNUGUHU
+      IUJULBVDTNUGUHUIUJUL $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x C $.
+    $( Addition of natural numbers is associative.  Theorem 4K(1) of [Enderton]
+       p. 81.  (Contributed by NM, 20-Sep-1995.)  (Revised by Mario Carneiro,
+       15-Nov-2014.) $)
+    nnaass $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                 ( ( A +o B ) +o C ) = ( A +o ( B +o C ) ) ) $=
+      ( vx vy com wcel coa co wceq wa cv wi oveq2 oveq2d eqeq12d c0 csuc nnasuc
+      nnacl imbi2d nna0 adantl eqtr4d suceq sylan sylan2 anassrs syl5ibr expcom
+      syl eqtrd finds2 vtoclga com12 3impia ) AFGZBFGZCFGZABHIZCHIZABCHIZHIZJZU
+      SUQURKZVDVEUTDLZHIZABVFHIZHIZJZMVEVDMDCFVFCJZVJVDVEVKVGVAVIVCVFCUTHNVKVHV
+      BAHVFCBHNOPUAVJUTQHIZABQHIZHIZJUTELZHIZABVOHIZHIZJZUTVORZHIZABVTHIZHIZJZV
+      EDEVFQJZVGVLVIVNVFQUTHNWEVHVMAHVFQBHNOPVFVOJZVGVPVIVRVFVOUTHNWFVHVQAHVFVO
+      BHNOPVFVTJZVGWAVIWCVFVTUTHNWGVHWBAHVFVTBHNOPVEVLUTVNVEUTFGZVLUTJABTZUTUBU
+      KURVNUTJUQURVMBAHBUBOUCUDVEVOFGZVSWDMVSWDVEWJKZVPRZVRRZJVPVRUEWKWAWLWCWMV
+      EWHWJWAWLJWIUTVOSUFUQURWJWCWMJUQURWJKZKWCAVQRZHIZWMWNWCWPJUQWNWBWOAHBVOSO
+      UCWNUQVQFGWPWMJBVOTAVQSUGULUHPUIUJUMUNUOUP $.
+  $}
+
+  $( One is a natural number.  (Contributed by NM, 29-Oct-1995.) $)
+  1onn $p |- 1o e. _om $=
+    ( c1o c0 csuc com df-1o wcel peano1 peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHI
+    J $.
+
+  $( The ordinal 2 is a natural number.  (Contributed by NM, 28-Sep-2004.) $)
+  2onn $p |- 2o e. _om $=
+    ( c2o c1o csuc com df-2o wcel 1onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
+    $.
+
+  $( The ordinal 3 is a natural number.  (Contributed by Mario Carneiro,
+     5-Jan-2016.) $)
+  3onn $p |- 3o e. _om $=
+    ( c3o c2o csuc com df-3o wcel 2onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
+    $.
+
+  $( The ordinal 4 is a natural number.  (Contributed by Mario Carneiro,
+     5-Jan-2016.) $)
+  4onn $p |- 4o e. _om $=
+    ( c4o c3o csuc com df-4o wcel 3onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
+    $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
