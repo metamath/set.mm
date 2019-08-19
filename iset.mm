@@ -55268,6 +55268,11 @@ $)
     com oa0 suceq syl eqtrd ) ABCZADEFZAGEFZHZAHZUAUBAGHZEFZUDDUFAEIJUAGPCUGUDK
     LAGMNOUAUCAKUDUEKAQUCARST $.
 
+  $( 1 + 1 = 2 for ordinal numbers.  (Contributed by NM, 18-Feb-2004.) $)
+  o1p1e2 $p |- ( 1o +o 1o ) = 2o $=
+    ( c1o coa co csuc c2o con0 wcel wceq 1on oa1suc ax-mp df-2o eqtr4i ) AABCZA
+    DZEAFGNOHIAJKLM $.
+
   ${
     $d x y A $.  $d x y B $.  $d x y C $.
     $( Weak ordering property of ordinal addition.  (Contributed by Jim
@@ -55280,6 +55285,125 @@ $)
       UNUPUFZULUMUNUPUGZULUMUNUPUHZUOUPUIUJUSUNULKUQVBQUSUNULVDVERDCASTUSUNUMKU
       RVCQUSUNUMVDVFRDCBSTUKUA $.
   $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                      Natural number arithmetic
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Addition with zero.  Theorem 4I(A1) of [Enderton] p. 79.  (Contributed by
+     NM, 20-Sep-1995.) $)
+  nna0 $p |- ( A e. _om -> ( A +o (/) ) = A ) $=
+    ( com wcel con0 c0 coa co wceq nnon oa0 syl ) ABCADCAEFGAHAIAJK $.
+
+  $( Multiplication with zero.  Theorem 4J(A1) of [Enderton] p. 80.
+     (Contributed by NM, 20-Sep-1995.) $)
+  nnm0 $p |- ( A e. _om -> ( A .o (/) ) = (/) ) $=
+    ( com wcel con0 c0 comu co wceq nnon om0 syl ) ABCADCAEFGEHAIAJK $.
+
+  $( Addition with successor.  Theorem 4I(A2) of [Enderton] p. 79.
+     (Contributed by NM, 20-Sep-1995.)  (Revised by Mario Carneiro,
+     14-Nov-2014.) $)
+  nnasuc $p |- ( ( A e. _om /\ B e. _om ) ->
+                ( A +o suc B ) = suc ( A +o B ) ) $=
+    ( com wcel con0 csuc coa co wceq nnon onasuc sylan ) ACDAEDBCDABFGHABGHFIAJ
+    ABKL $.
+
+  ${
+    $d x y A $.  $d x B $.
+    $( Addition to zero.  Remark in proof of Theorem 4K(2) of [Enderton]
+       p. 81.  (Contributed by NM, 20-Sep-1995.)  (Revised by Mario
+       Carneiro, 14-Nov-2014.) $)
+    nna0r $p |- ( A e. _om -> ( (/) +o A ) = A ) $=
+      ( vx vy c0 cv coa co wceq csuc oveq2 id eqeq12d con0 wcel 0elon oa0 ax-mp
+      com peano1 nnasuc mpan suceq eqeq2d syl5ibcom finds ) DBEZFGZUFHDDFGZDHZD
+      CEZFGZUJHZDUJIZFGZUMHZDAFGZAHBCAUFDHZUGUHUFDUFDDFJUQKLUFUJHZUGUKUFUJUFUJD
+      FJURKLUFUMHZUGUNUFUMUFUMDFJUSKLUFAHZUGUPUFAUFADFJUTKLDMNUIODPQUJRNZUNUKIZ
+      HZULUODRNVAVCSDUJTUAULVBUMUNUKUJUBUCUDUE $.
+
+    $( Closure of addition of natural numbers.  Proposition 8.9 of
+       [TakeutiZaring] p. 59.  (Contributed by NM, 20-Sep-1995.)  (Proof
+       shortened by Andrew Salmon, 22-Oct-2011.) $)
+    nnacl $p |- ( ( A e. _om /\ B e. _om ) -> ( A +o B ) e. _om ) $=
+      ( vx vy com wcel coa co cv wceq oveq2 eleq1d imbi2d csuc nna0 ibir peano2
+      wi c0 wa nnasuc syl5ibr expcom finds2 vtoclga impcom ) BEFAEFZABGHZEFZUGA
+      CIZGHZEFZRUGUIRCBEUJBJZULUIUGUMUKUHEUJBAGKLMULASGHZEFZADIZGHZEFZAUPNZGHZE
+      FZUGCDUJSJUKUNEUJSAGKLUJUPJUKUQEUJUPAGKLUJUSJUKUTEUJUSAGKLUGUOUGUNAEAOLPU
+      GUPEFZURVARURVAUGVBTZUQNZEFUQQVCUTVDEAUPUALUBUCUDUEUF $.
+  $}
+
+  ${
+    nncli.1 $e |- A e. _om $.
+    nncli.2 $e |- B e. _om $.
+    $( ` _om ` is closed under addition.  Inference form of ~ nnacl .
+       (Contributed by Scott Fenton, 20-Apr-2012.)  (Revised by Mario Carneiro,
+       12-May-2012.) $)
+    nnacli $p |- ( A +o B ) e. _om $=
+      ( com wcel coa co nnacl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
+
+  ${
+    $d x y A $.  $d x y z B $.  $d x y z C $.
+    $( Addition of natural numbers is commutative.  Theorem 4K(2) of [Enderton]
+       p. 81.  (Contributed by NM, 6-May-1995.)  (Revised by Mario Carneiro,
+       15-Nov-2014.) $)
+    nnacom $p |- ( ( A e. _om /\ B e. _om ) -> ( A +o B ) = ( B +o A ) ) $=
+      ( vx vy com wcel coa co wceq cv wi oveq1 oveq2 eqeq12d c0 csuc nna0 suceq
+      syl nnasuc vz imbi2d nna0r eqtr4d wa peano2 syl5ibr expcom finds2 vtoclga
+      sylan imp ) AEFBEFZABGHZBAGHZIZUMCJZBGHZBUQGHZIZKUMUPKCAEUQAIZUTUPUMVAURU
+      NUSUOUQABGLUQABGMNUBUTOBGHZBOGHZIDJZBGHZBVDGHZIZVDPZBGHZBVHGHZIZUMCDUQOIZ
+      URVBUSVCUQOBGLUQOBGMNUQVDIURVEUSVFUQVDBGLUQVDBGMNUQVHIURVIUSVJUQVHBGLUQVH
+      BGMNUMVBBVCBUCBQUDUMVDEFZVGVKKVGVKUMVMUEZVEPZVFPZIVEVFRVNVIVOVJVPUMVMVIVO
+      IZVMVHUQGHZVDUQGHZPZIZKVMVQKCBEUQBIZWAVQVMWBVRVIVTVOUQBVHGMWBVSVEIVTVOIUQ
+      BVDGMVSVERSNUBWAVHOGHZVDOGHZPZIVHUAJZGHZVDWFGHZPZIZVHWFPZGHZVDWKGHZPZIZVM
+      CUAVLVRWCVTWEUQOVHGMVLVSWDIVTWEIUQOVDGMVSWDRSNUQWFIZVRWGVTWIUQWFVHGMWPVSW
+      HIVTWIIUQWFVDGMVSWHRSNUQWKIZVRWLVTWNUQWKVHGMWQVSWMIVTWNIUQWKVDGMVSWMRSNVM
+      WCVHWEVMVHEFZWCVHIVDUFZVHQSVMWDVDIWEVHIVDQWDVDRSUDVMWFEFZWJWOKWJWOVMWTUEZ
+      WGPZWIPZIWGWIRXAWLXBWNXCVMWRWTWLXBIWSVHWFTUKXAWMWIIWNXCIVDWFTWMWIRSNUGUHU
+      IUJULBVDTNUGUHUIUJUL $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x C $.
+    $( Addition of natural numbers is associative.  Theorem 4K(1) of [Enderton]
+       p. 81.  (Contributed by NM, 20-Sep-1995.)  (Revised by Mario Carneiro,
+       15-Nov-2014.) $)
+    nnaass $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                 ( ( A +o B ) +o C ) = ( A +o ( B +o C ) ) ) $=
+      ( vx vy com wcel coa co wceq wa cv wi oveq2 oveq2d eqeq12d c0 csuc nnasuc
+      nnacl imbi2d nna0 adantl eqtr4d suceq sylan sylan2 anassrs syl5ibr expcom
+      syl eqtrd finds2 vtoclga com12 3impia ) AFGZBFGZCFGZABHIZCHIZABCHIZHIZJZU
+      SUQURKZVDVEUTDLZHIZABVFHIZHIZJZMVEVDMDCFVFCJZVJVDVEVKVGVAVIVCVFCUTHNVKVHV
+      BAHVFCBHNOPUAVJUTQHIZABQHIZHIZJUTELZHIZABVOHIZHIZJZUTVORZHIZABVTHIZHIZJZV
+      EDEVFQJZVGVLVIVNVFQUTHNWEVHVMAHVFQBHNOPVFVOJZVGVPVIVRVFVOUTHNWFVHVQAHVFVO
+      BHNOPVFVTJZVGWAVIWCVFVTUTHNWGVHWBAHVFVTBHNOPVEVLUTVNVEUTFGZVLUTJABTZUTUBU
+      KURVNUTJUQURVMBAHBUBOUCUDVEVOFGZVSWDMVSWDVEWJKZVPRZVRRZJVPVRUEWKWAWLWCWMV
+      EWHWJWAWLJWIUTVOSUFUQURWJWCWMJUQURWJKZKWCAVQRZHIZWMWNWCWPJUQWNWBWOAHBVOSO
+      UCWNUQVQFGWPWMJBVOTAVQSUGULUHPUIUJUMUNUOUP $.
+  $}
+
+  $( One is a natural number.  (Contributed by NM, 29-Oct-1995.) $)
+  1onn $p |- 1o e. _om $=
+    ( c1o c0 csuc com df-1o wcel peano1 peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHI
+    J $.
+
+  $( The ordinal 2 is a natural number.  (Contributed by NM, 28-Sep-2004.) $)
+  2onn $p |- 2o e. _om $=
+    ( c2o c1o csuc com df-2o wcel 1onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
+    $.
+
+  $( The ordinal 3 is a natural number.  (Contributed by Mario Carneiro,
+     5-Jan-2016.) $)
+  3onn $p |- 3o e. _om $=
+    ( c3o c2o csuc com df-3o wcel 2onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
+    $.
+
+  $( The ordinal 4 is a natural number.  (Contributed by Mario Carneiro,
+     5-Jan-2016.) $)
+  4onn $p |- 4o e. _om $=
+    ( c4o c3o csuc com df-4o wcel 3onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
+    $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
