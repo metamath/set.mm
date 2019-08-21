@@ -55726,19 +55726,6 @@ $)
         NVOVQWDUQWANEFHIJKURUSUTZVKWBVAVDVBVEVFAVJVIWBRZVIAAVMVOVNVJWFTVPONWAAB
         CDJIGFEMUMUNAVIVIWBAVIUOAWBVIAWCWBWEWBVKVGVDVBVEVFVH $.
     $}
-
-    swoso.4 $e |- ( ph -> Y C_ X ) $.
-    swoso.5 $e |- ( ( ph /\ ( x e. Y /\ y e. Y /\ x R y ) ) -> x = y ) $.
-    $( If the incomparability relation is equivalent to equality in a subset,
-       then the partial order strictly orders the subset.  (Contributed by
-       Mario Carneiro, 30-Dec-2014.) $)
-    swoso $p |- ( ph -> .< Or Y ) $=
-      ( wpo cv wcel wa wbr wo w3o wss poss sylc weq wn sselda anim12dan brdifun
-      swopo wb syl w3a df-3an sylan2br expr sylbird 3orcomb df-3or bitri sylibr
-      orrd issod ) ABCHFAHGUAGFNHFNLABCDGFJKUIHGFUBUCABOZHPZCOZHPZQZQZVCVEFRZVE
-      VCFRZSZBCUDZSZVIVLVJTZVHVKVLVHVKUEZVCVEERZVLVHVCGPZVEGPZQVPVOUJAVDVQVFVRA
-      HGVCLUFAHGVELUFUGVCVEEFGIUHUKAVGVPVLVGVPQAVDVFVPULVLVDVFVPUMMUNUOUPVAVNVI
-      VJVLTVMVIVLVJUQVIVJVLURUSUTVB $.
   $}
 
   ${
