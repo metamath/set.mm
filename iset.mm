@@ -55475,12 +55475,16 @@ $)
   ecexg $p |- ( R e. B -> [ A ] R e. _V ) $=
     ( wcel cec csn cima cvv df-ec imaexg syl5eqel ) CBDACECAFZGHACICLBJK $.
 
-  $( A nonempty equivalence class implies the representative is a set.
-     (Contributed by Mario Carneiro, 9-Jul-2014.) $)
-  ecexr $p |- ( A e. [ B ] R -> B e. _V ) $=
-    ( cvv wcel csn cima cec c0 wceq n0i wn snprc imaeq2 sylbi ima0 syl6eq nsyl2
-    df-ec eleq2s ) BDEZACBFZGZBCHAUCEUCIJUAUCAKUALZUCCIGZIUDUBIJUCUEJBMUBICNOCP
-    QRBCST $.
+  ${
+    $d A x $.  $d B x $.  $d R x $.
+    $( An inhabited equivalence class implies the representative is a set.
+       (Contributed by Mario Carneiro, 9-Jul-2014.) $)
+    ecexr $p |- ( A e. [ B ] R -> B e. _V ) $=
+    ( vx cec wcel wceq wex cvv wbr csn wrex cima elimag ibi df-ec eleq2s df-rex
+    cv wa ax-ia1 elsn sylib eximi sylbi syl isset sylibr ) ABCEZFZDSZBGZDHZBIFU
+    JUKACJZDBKZLZUMUPACUOMZUIAUQFUPDACUOUQNOBCPQUPUKUOFZUNTZDHUMUNDUORUSULDUSUR
+    ULURUNUADBUBUCUDUEUFDBUGUH $.
+  $}
 
   ${
     $d x y A $.  $d x y R $.
