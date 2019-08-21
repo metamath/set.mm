@@ -1,4 +1,4 @@
-$( iset.mm - Version of 18-Aug-2019
+$( iset.mm - Version of 20-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -55570,6 +55570,22 @@ $)
      only by the construction.  (Contributed by NM, 26-Aug-1995.)
      (New usage is discouraged.) $)
   df-mi $a |- .N = ( .o |` ( N. X. N. ) ) $.
+
+  $( Define 'less than' on positive integers.  This is a "temporary" set used
+     in the construction of complex numbers, and is intended to be used only by
+     the construction.
+
+     If we were assuming the law of the excluded middle, ` e. ` would serve as
+     a suitable definition of less-than.  If we wanted to make that work, we'd
+     need to prove statements such as the converse of ~ onsucelsucr restricted
+     to natural numbers (proving the converse for all ordinals is not possible
+     as seen at ~ onsucelsucexmid ).  Instead, we choose a definition which
+     just relies on Peano axioms, not on the details of the construction of
+     positive integers.
+
+     (Contributed by Jim Kingdon, 20-Aug-2019.)  (New usage is discouraged.) $)
+  df-ilti $a |- <N = { <. n , m >. | ( n e. N. /\ m e. N. /\
+      E. k e. N. ( n +N k ) = m ) } $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
