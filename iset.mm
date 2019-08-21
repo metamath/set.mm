@@ -55406,6 +55406,179 @@ $)
     $.
 
 $(
+###############################################################################
+                     REAL AND COMPLEX NUMBERS
+###############################################################################
+
+This section derives the basics of real and complex numbers.
+We first construct and axiomatize real and complex numbers
+(e.g., ~ ax-resscn ).
+After that
+we derive their basic properties,
+various operations like addition ( ~ df-add ) and sine ( ~ df-sin ),
+and subsets such as the integers ( ~ df-z ) and natural numbers ( ~ df-nn ).
+$)
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+       Construction and axiomatization of real and complex numbers
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+         Dedekind-cut construction of real and complex numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Introduce new constant symbols. $)
+
+  $c N. $. $( Set of positive integers $)
+
+  $c +N $. $( Positive integer addition $)
+  $c .N $. $( Positive integer multiplication $)
+  $c <N $. $( Positive integer ordering relation $)
+
+  $c +pQ $. $( Positive pre-fraction addition $)
+  $c .pQ $. $( Positive pre-fraction multiplication $)
+  $c <pQ $. $( Positive pre-fraction ordering relation $)
+
+  $c ~Q $. $( Equivalence relation to construct positive fractions $)
+  $c Q. $. $( Set of positive fractions $)
+  $c 1Q $. $( Positive fraction constant 1 $)
+  $c /Q $. $( Positive fraction equivalence class $)
+  $c +Q $. $( Positive fraction addition $)
+  $c .Q $. $( Positive fraction multiplication $)
+  $c *Q $. $( Positive fraction reciprocal $)
+  $c <Q $. $( Positive fraction ordering relation $)
+
+  $c P. $. $( Set of positive reals $)
+  $c 1P $. $( Positive real constant 1 $)
+  $c +P. $. $( Positive real addition $)
+  $c .P. $. $( Positive real multiplication $)
+  $c <P $. $( Positive real ordering relation $)
+
+  $c +pR $. $( Signed real pre-addition $)
+  $c .pR $. $( Signed real pre-multiplication $)
+
+  $c ~R $. $( Equivalence relation to construct signed reals $)
+  $c R. $. $( Set of signed reals $)
+  $c 0R $. $( Signed real constant 0 $)
+  $c 1R $. $( Signed real constant 1 $)
+  $c -1R $. $( Signed real constant minus 1 $)
+  $c +R $. $( Signed real addition $)
+  $c .R $. $( Signed real multiplication $)
+  $c <R $. $( Signed real ordering relation $)
+  $c <RR $. $( 'Less than' relation (restricted to non-extended reals) $)
+
+  $c CC $. $( The set of complex numbers (blackboard bold C) $)
+  $c RR $. $( The set of real numbers (blackboard bold R) $)
+  $c 0 $. $( The real number 0. $)
+  $c 1 $. $( The real number 1. $)
+  $c _i $. $( Letter i (the imaginary unit = square root of -1) $)
+  $c + $. $( Plus (addition) symbol $)
+  $c x. $. $( Multiplication symbol (center dot) $)
+
+  $( Extend class notation with new sets (constants) used for positive
+     integers: $)
+
+  $( The set of positive integers, which is the set of natural numbers ` _om `
+     with 0 removed.
+
+     _Note:  This is the start of the Dedekind-cut construction of real and_
+     _complex numbers.  The last lemma of the construction is_ ~ mulcnsrec .
+     _The actual set of Dedekind cuts is defined by_ ~ df-np . $)
+  cnpi $a class N. $.
+  $( Positive integer addition. $)
+  cpli $a class +N $.
+  $( Positive integer multiplication. $)
+  cmi $a class .N $.
+  $( Positive integer ordering relation. $)
+  clti $a class <N $.
+
+  $( Extend class notation with new sets (constants) used in construction of
+    positive fractions: $)
+
+  $( Positive pre-fraction addition. $)
+  cplpq $a class +pQ $.
+  $( Positive pre-fraction multiplication. $)
+  cmpq $a class .pQ $.
+  $( Positive pre-fraction ordering relation. $)
+  cltpq $a class <pQ $.
+  $( Equivalence class used to construct positive fractions. $)
+  ceq $a class ~Q $.
+  $( Set of positive fractions. $)
+  cnq $a class Q. $.
+  $( The positive fraction constant 1. $)
+  c1q $a class 1Q $.
+  $( Positive fraction equivalence class. $)
+  cerq $a class /Q $.
+  $( Positive fraction addition. $)
+  cplq $a class +Q $.
+  $( Positive fraction multiplication. $)
+  cmq $a class .Q $.
+  $( Positive fraction reciprocal operation. $)
+  crq $a class *Q $.
+  $( Positive fraction ordering relation. $)
+  cltq $a class <Q $.
+
+  $( Extend class notation with new sets (constants) used in construction of
+    positive real numbers: $)
+
+  $( Set of positive reals. $)
+  cnp $a class P. $.
+  $( Positive real constant 1. $)
+  c1p $a class 1P $.
+  $( Positive real addition. $)
+  cpp $a class +P. $.
+  $( Positive real multiplication. $)
+  cmp $a class .P. $.
+  $( Positive real ordering relation. $)
+  cltp $a class <P $.
+
+  $( Extend class notation with new sets (constants) used in construction of
+    signed real numbers: $)
+
+  $( Signed real pre-addition. $)
+  cplpr $a class +pR $.
+  $( Signed real pre-multiplication. $)
+  cmpr $a class .pR $.
+  $( Equivalence class used to construct signed reals. $)
+  cer $a class ~R $.
+  $( Set of signed reals. $)
+  cnr $a class R. $.
+  $( The signed real constant 0. $)
+  c0r $a class 0R $.
+  $( The signed real constant 1. $)
+  c1r $a class 1R $.
+  $( The signed real constant -1. $)
+  cm1r $a class -1R $.
+  $( Signed real addition. $)
+  cplr $a class +R $.
+  $( Signed real multiplication. $)
+  cmr $a class .R $.
+  $( Signed real ordering relation. $)
+  cltr $a class <R $.
+
+  $( Define the class of positive integers.  This is a "temporary" set used in
+     the construction of complex numbers ~ df-c , and is intended to be used
+     only by the construction.  (Contributed by NM, 15-Aug-1995.)
+     (New usage is discouraged.) $)
+  df-ni $a |- N. = ( _om \ { (/) } ) $.
+
+  $( Define addition on positive integers.  This is a "temporary" set used in
+     the construction of complex numbers ~ df-c , and is intended to be used
+     only by the construction.  (Contributed by NM, 26-Aug-1995.)
+     (New usage is discouraged.) $)
+  df-pli $a |- +N = ( +o |` ( N. X. N. ) ) $.
+
+  $( Define multiplication on positive integers.  This is a "temporary" set
+     used in the construction of complex numbers ~ df-c , and is intended to be
+     used only by the construction.  (Contributed by NM, 26-Aug-1995.)
+     (New usage is discouraged.) $)
+  df-mi $a |- .N = ( .o |` ( N. X. N. ) ) $.
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -56253,6 +56426,149 @@ htmldef "2nd" as
 htmldef "tpos" as "tpos ";
   althtmldef "tpos" as 'tpos ';
   latexdef "tpos" as "{\rm tpos}";
+htmldef "N." as "<IMG SRC='caln.gif' WIDTH=17 HEIGHT=19 ALT=' N.' TITLE='N.'>";
+  althtmldef "N." as '<I><B>N</B></I>';
+  latexdef "N." as "{\cal N}";
+htmldef "+N" as
+    " <IMG SRC='_pln.gif' WIDTH=22 HEIGHT=19 ALT=' +N' TITLE='+N'> ";
+  althtmldef "+N" as ' +<I><SUB><B>N</B></SUB></I> ';
+  latexdef "+N" as "+_{\cal N}";
+htmldef ".N" as
+    " <IMG SRC='_cdn.gif' WIDTH=14 HEIGHT=19 ALT=' .N' TITLE='.N'> ";
+  althtmldef ".N" as ' &middot;<I><SUB><B>N</B></SUB></I> ';
+  latexdef ".N" as "\cdot_{\cal N}";
+htmldef "<N" as
+    " <IMG SRC='_ltn.gif' WIDTH=21 HEIGHT=19 ALT=' &lt;N' TITLE='&lt;N'> ";
+  althtmldef "<N" as ' &lt;<I><SUB><B>N</B></SUB></I> ';
+  latexdef "<N" as "<_{\cal N}";
+htmldef "+pQ" as
+    " <IMG SRC='_plpq.gif' WIDTH=28 HEIGHT=19 ALT=' +pQ' TITLE='+pQ'> ";
+  althtmldef "+pQ" as ' +<I><SUB>p<B>Q</B></SUB></I> ';
+  latexdef "+pQ" as "+_{p{\cal Q}}";
+htmldef ".pQ" as
+    " <IMG SRC='_cdpq.gif' WIDTH=19 HEIGHT=19 ALT=' .pQ' TITLE='.pQ'> ";
+  althtmldef ".pQ" as ' &middot;<I><SUB>p<B>Q</B></SUB></I> ';
+  latexdef ".pQ" as "\cdot_{p{\cal Q}}";
+htmldef "<pQ" as
+    " <IMG SRC='_ltpq.gif' WIDTH=27 HEIGHT=19 ALT=' &lt;pQ' TITLE='&lt;pQ'> ";
+  althtmldef "<pQ" as ' &lt;<I><SUB>p<B>Q</B></SUB></I> ';
+  latexdef "<pQ" as "<_{p{\cal Q}}";
+htmldef "~Q" as
+    " <IMG SRC='_simq.gif' WIDTH=21 HEIGHT=19 ALT=' ~Q' TITLE='~Q'> ";
+  althtmldef "~Q" as ' ~<I><SUB><B>Q</B></SUB></I> ';
+  latexdef "~Q" as "\sim_{\cal Q}";
+htmldef "Q." as "<IMG SRC='calq.gif' WIDTH=12 HEIGHT=19 ALT=' Q.' TITLE='Q.'>";
+  althtmldef "Q." as '<I><B>Q</B></I>';
+  latexdef "Q." as "{\cal Q}";
+htmldef "1Q" as "<IMG SRC='_1q.gif' WIDTH=16 HEIGHT=19 ALT=' 1Q' TITLE='1Q'>";
+  althtmldef "1Q" as '1<I><SUB><B>Q</B></SUB></I>';
+  latexdef "1Q" as "1_{\cal Q}";
+htmldef "/Q" as "<IMG SRC='_erq.gif' WIDTH=17 HEIGHT=19 ALT=' /Q' TITLE='/Q'>";
+  althtmldef "/Q" as '[<I><B>Q</B></I>]';
+  latexdef "/Q" as "[{\cal Q}]";
+htmldef "+Q" as
+    " <IMG SRC='_plq.gif' WIDTH=21 HEIGHT=19 ALT=' +Q' TITLE='+Q'> ";
+  althtmldef "+Q" as ' +<I><SUB><B>Q</B></SUB></I> ';
+  latexdef "+Q" as "+_{\cal Q}";
+htmldef ".Q" as
+    " <IMG SRC='_cdq.gif' WIDTH=13 HEIGHT=19 ALT=' .Q' TITLE='.Q'> ";
+  althtmldef ".Q" as ' &middot;<I><SUB><B>Q</B></SUB></I> ';
+  latexdef ".Q" as "\cdot_{\cal Q}";
+htmldef "*Q" as
+    "<IMG SRC='_astq.gif' WIDTH=16 HEIGHT=19 ALT=' *Q' TITLE='*Q'>";
+  althtmldef "*Q" as '*<I><SUB><B>Q</B></SUB></I>';
+  latexdef "*Q" as "\ast_{\cal Q}";
+htmldef "<Q" as
+    " <IMG SRC='_ltq.gif' WIDTH=20 HEIGHT=19 ALT=' &lt;Q' TITLE='&lt;Q'> ";
+  althtmldef "<Q" as ' &lt;<I><SUB><B>Q</B></SUB></I> ';
+  latexdef "<Q" as "<_{\cal Q}";
+htmldef "P." as "<IMG SRC='calp.gif' WIDTH=13 HEIGHT=19 ALT=' P.' TITLE='P.'>";
+  althtmldef "P." as '<I><B>P</B></I>';
+  latexdef "P." as "{\cal P}";
+htmldef "1P" as "<IMG SRC='_1p.gif' WIDTH=15 HEIGHT=19 ALT=' 1P' TITLE='1P'>";
+  althtmldef "1P" as '1<I><SUB><B>P</B></SUB></I>';
+  latexdef "1P" as "1_{\cal P}";
+htmldef "+P." as
+    " <IMG SRC='_plp.gif' WIDTH=22 HEIGHT=19 ALT=' +P.' TITLE='+P.'> ";
+  althtmldef "+P." as ' +<I><SUB><B>P</B></SUB></I> ';
+  latexdef "+P." as "+_{\cal P}";
+htmldef ".P." as
+    " <IMG SRC='_cdp.gif' WIDTH=13 HEIGHT=19 ALT=' .P.' TITLE='.P.'> ";
+  althtmldef ".P." as ' &middot;<I><SUB><B>P</B></SUB></I> ';
+  latexdef ".P." as "\cdot_{\cal P}";
+htmldef "<P" as
+    " <IMG SRC='_ltp.gif' WIDTH=19 HEIGHT=19 ALT=' &lt;P' TITLE='&lt;P'> ";
+  althtmldef "<P" as '&lt;<I><SUB><B>P</B></SUB></I> ';
+  latexdef "<P" as "<_{\cal P}";
+htmldef "+pR" as
+    " <IMG SRC='_plpr.gif' WIDTH=28 HEIGHT=19 ALT=' +pR' TITLE='+pR'> ";
+  althtmldef "+pR" as ' +<I><SUB>p<B>R</B></SUB></I> ';
+  latexdef "+pR" as "+_{p{\cal R}}";
+htmldef ".pR" as
+    " <IMG SRC='_cdpr.gif' WIDTH=19 HEIGHT=19 ALT=' .pR' TITLE='.pR'> ";
+  althtmldef ".pR" as ' &middot;<I><SUB>p<B>R</B></SUB></I> ';
+  latexdef ".pR" as "._{p{\cal R}}";
+htmldef "~R" as
+    " <IMG SRC='_simr.gif' WIDTH=23 HEIGHT=19 ALT=' ~R' TITLE='~R'> ";
+  althtmldef "~R" as ' ~<I><SUB><B>R</B></SUB></I> ';
+  latexdef "~R" as "\sim_{\cal R}";
+htmldef "R." as "<IMG SRC='calr.gif' WIDTH=15 HEIGHT=19 ALT=' R.' TITLE='R.'>";
+  althtmldef "R." as '<I><B>R</B></I>';
+  latexdef "R." as "{\cal R}";
+htmldef "0R" as "<IMG SRC='_0r.gif' WIDTH=18 HEIGHT=19 ALT=' 0R' TITLE='0R'>";
+  althtmldef "0R" as '0<I><SUB><B>R</B></SUB></I>';
+  latexdef "0R" as "0_{\cal R}";
+htmldef "1R" as "<IMG SRC='_1cr.gif' WIDTH=16 HEIGHT=19 ALT=' 1R' TITLE='1R'>";
+  althtmldef "1R" as '1<I><SUB><B>R</B></SUB></I>';
+  latexdef "1R" as "1_{\cal R}";
+htmldef "-1R" as
+    "<IMG SRC='_m1r.gif' WIDTH=22 HEIGHT=19 ALT=' -1R' TITLE='-1R'>";
+  althtmldef "-1R" as '-1<I><SUB><B>R</B></SUB></I>';
+  latexdef "-1R" as "-1_{\cal R}";
+htmldef "+R" as
+    " <IMG SRC='_plr.gif' WIDTH=23 HEIGHT=19 ALT=' +R' TITLE='+R'> ";
+  althtmldef "+R" as ' +<I><SUB><B>R</B></SUB></I> ';
+  latexdef "+R" as "+_{\cal R}";
+htmldef ".R" as
+    " <IMG SRC='_cdcr.gif' WIDTH=14 HEIGHT=19 ALT=' .R' TITLE='.R'> ";
+  althtmldef ".R" as ' &middot;<I><SUB><B>R</B></SUB></I> ';
+  latexdef ".R" as "\cdot_{\cal R}";
+htmldef "<R" as
+    " <IMG SRC='_ltr.gif' WIDTH=20 HEIGHT=19 ALT=' &lt;R' TITLE='&lt;R'> ";
+  althtmldef "<R" as ' &lt;<I><SUB><B>R</B></SUB></I> ';
+  latexdef "<R" as "<_{\cal R}";
+htmldef "<RR" as
+    " <IMG SRC='_ltbbr.gif' WIDTH=20 HEIGHT=19 ALT=' &lt;RR' TITLE='&lt;RR'> ";
+  althtmldef "<RR" as ' &lt;<SUB>&#8477;</SUB> ';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "<RR" as "<_\mathbb{R}";
+htmldef "CC" as "<IMG SRC='bbc.gif' WIDTH=12 HEIGHT=19 ALT=' CC' TITLE='CC'>";
+  althtmldef "CC" as '&#8450;';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "CC" as "\mathbb{C}";
+htmldef "RR" as "<IMG SRC='bbr.gif' WIDTH=13 HEIGHT=19 ALT=' RR' TITLE='RR'>";
+  althtmldef "RR" as '&#8477;';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "RR" as "\mathbb{R}";
+    /*latexdef "" as "_{10}";*/
+    /*latexdef "" as "";*/
+    /* suppress base 10 suffix */
+htmldef "0" as "<IMG SRC='0.gif' WIDTH=8 HEIGHT=19 ALT=' 0' TITLE='0'>";
+  althtmldef "0" as '0';
+  latexdef "0" as "0";
+htmldef "1" as "<IMG SRC='1.gif' WIDTH=7 HEIGHT=19 ALT=' 1' TITLE='1'>";
+  althtmldef "1" as '1';
+  latexdef "1" as "1";
+htmldef "_i" as "<IMG SRC='rmi.gif' WIDTH=4 HEIGHT=19 ALT=' _i' TITLE='_i'>";
+  althtmldef "_i" as 'i';
+  latexdef "_i" as "{\rm i}";
+htmldef "+" as " <IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'> ";
+  althtmldef "+" as ' + ';
+  latexdef "+" as "+";
+htmldef "x." as
+    " <IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT=' x.' TITLE='x.'> ";
+  althtmldef "x." as ' &middot; '; /* what is &#xb7; ? */
+  latexdef "x." as "\cdot";
 
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
