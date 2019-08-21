@@ -55313,8 +55313,8 @@ $)
   ${
     $d x y A $.  $d x B $.
     $( Addition to zero.  Remark in proof of Theorem 4K(2) of [Enderton]
-       p. 81.  (Contributed by NM, 20-Sep-1995.)  (Revised by Mario
-       Carneiro, 14-Nov-2014.) $)
+       p. 81.  (Contributed by NM, 20-Sep-1995.)  (Revised by Mario Carneiro,
+       14-Nov-2014.) $)
     nna0r $p |- ( A e. _om -> ( (/) +o A ) = A ) $=
       ( vx vy c0 cv coa co wceq csuc oveq2 id eqeq12d con0 wcel 0elon oa0 ax-mp
       com peano1 nnasuc mpan suceq eqeq2d syl5ibcom finds ) DBEZFGZUFHDDFGZDHZD
@@ -55411,12 +55411,6 @@ $(
 ###############################################################################
 
 This section derives the basics of real and complex numbers.
-We first construct and axiomatize real and complex numbers
-(e.g., ~ ax-resscn ).
-After that
-we derive their basic properties,
-various operations like addition ( ~ df-add ) and sine ( ~ df-sin ),
-and subsets such as the integers ( ~ df-z ) and natural numbers ( ~ df-nn ).
 $)
 
 $(
@@ -55486,8 +55480,7 @@ $)
      with 0 removed.
 
      _Note:  This is the start of the Dedekind-cut construction of real and_
-     _complex numbers.  The last lemma of the construction is_ ~ mulcnsrec .
-     _The actual set of Dedekind cuts is defined by_ ~ df-np . $)
+     _complex numbers. $)
   cnpi $a class N. $.
   $( Positive integer addition. $)
   cpli $a class +N $.
@@ -55561,20 +55554,20 @@ $)
   cltr $a class <R $.
 
   $( Define the class of positive integers.  This is a "temporary" set used in
-     the construction of complex numbers ~ df-c , and is intended to be used
-     only by the construction.  (Contributed by NM, 15-Aug-1995.)
+     the construction of complex numbers, and is intended to be used only by
+     the construction.  (Contributed by NM, 15-Aug-1995.)
      (New usage is discouraged.) $)
   df-ni $a |- N. = ( _om \ { (/) } ) $.
 
   $( Define addition on positive integers.  This is a "temporary" set used in
-     the construction of complex numbers ~ df-c , and is intended to be used
-     only by the construction.  (Contributed by NM, 26-Aug-1995.)
+     the construction of complex numbers, and is intended to be used only by
+     the construction.  (Contributed by NM, 26-Aug-1995.)
      (New usage is discouraged.) $)
   df-pli $a |- +N = ( +o |` ( N. X. N. ) ) $.
 
   $( Define multiplication on positive integers.  This is a "temporary" set
-     used in the construction of complex numbers ~ df-c , and is intended to be
-     used only by the construction.  (Contributed by NM, 26-Aug-1995.)
+     used in the construction of complex numbers and is intended to be used
+     only by the construction.  (Contributed by NM, 26-Aug-1995.)
      (New usage is discouraged.) $)
   df-mi $a |- .N = ( .o |` ( N. X. N. ) ) $.
 
