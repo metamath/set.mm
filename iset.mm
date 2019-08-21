@@ -55760,7 +55760,7 @@ $)
        10-May-1998.)  (Proof shortened by Andrew Salmon, 22-Oct-2011.)  (Proof
        shortened by Mario Carneiro, 9-Jul-2014.) $)
     ider $p |- _I Er _V $=
-      ( vx vy cv cid weq id dfid3 eqer ) ABACBCDABEFABGH $.
+      ( vx vy cv cid wceq id df-id eqer ) ABACZBCZDIJEFABGH $.
 
     $( The empty set is an equivalence relation on the empty set.  (Contributed
        by Mario Carneiro, 5-Sep-2015.) $)
