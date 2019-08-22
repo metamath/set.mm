@@ -56073,13 +56073,19 @@ $)
   $}
 
   ${
-    $d x R $.  $d x A $.  $d x B $.
+    $d x y R $.  $d x y A $.  $d x y B $.
+    $( An element of a quotient set is inhabited.  (Contributed by Jim Kingdon,
+       21-Aug-2019.) $)
+    elqsn0m $p |- ( ( dom R = A /\ B e. ( A /. R ) ) -> E. x x e. B ) $=
+      ( vy cv cec wcel wex cdm wceq cqs eqid eleq2 exbidv biimpar ecdmn0m sylib
+      wa ectocld ) AFZEFZDGZHZAIZUACHZAIDJZBKZECBDBDLZUIMUCCKUDUFAUCCUANOUHUBBH
+      ZSUBUGHZUEUHUKUJUGBUBNPAUBDQRT $.
+
     $( A quotient set doesn't contain the empty set.  (Contributed by NM,
        24-Aug-1995.) $)
     elqsn0 $p |- ( ( dom R = A /\ B e. ( A /. R ) ) -> B =/= (/) ) $=
-      ( vx cv cec c0 wne cdm wceq eqid neeq1 wcel wa eleq2 biimpar ecdmn0 sylib
-      cqs ectocld ) DEZCFZGHZBGHCIZAJZDBACACSZUFKUBBGLUEUAAMZNUAUDMZUCUEUHUGUDA
-      UAOPUACQRT $.
+      ( vx cdm wceq cqs wcel wa cv wex c0 wne elqsn0m n0r syl ) CEAFBACGHIDJBHD
+      KBLMDABCNDBOP $.
   $}
 
   ${
