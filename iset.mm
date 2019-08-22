@@ -56089,11 +56089,12 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d R x $.
     $( Membership of an equivalence class in a quotient set.  (Contributed by
        NM, 30-Jul-1995.) $)
     ecelqsdm $p |- ( ( dom R = A /\ [ B ] R e. ( A /. R ) ) -> B e. A ) $=
-      ( cdm wceq cec cqs wcel wa c0 wne elqsn0 ecdmn0 sylibr simpl eleqtrd ) CD
-      ZAEZBCFZACGHZIZBQAUASJKBQHASCLBCMNRTOP $.
+      ( vx cdm wceq cec cqs wcel wa cv wex elqsn0m ecdmn0m sylibr simpl eleqtrd
+      ) CEZAFZBCGZACHIZJZBRAUBDKTIDLBRIDATCMDBCNOSUAPQ $.
   $}
 
   $( A square Cartesian product is an equivalence relation (in general it's not
