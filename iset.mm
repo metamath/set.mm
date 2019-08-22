@@ -56138,13 +56138,13 @@ $)
 
     $( The relative intersection of a family of equivalence relations is an
        equivalence relation.  (Contributed by Mario Carneiro, 27-Sep-2015.) $)
-    riiner $p |- ( A. x e. A R Er B ->
+    riinerm $p |- ( ( E. y y e. A /\ A. x e. A R Er B ) ->
       ( ( B X. B ) i^i |^|_ x e. A R ) Er B ) $=
-      ( wer wral cxp ciin cin c0 wa xpider wb riin0 adantl ereq1 syl mpbiri wne
-      wceq iiner ancoms wss erssxp ralimi riinn0 sylan mpbird pm2.61dane ) CDEZ
-      ABFZCCCGZABDHZIZEZBJUKBJTZKZUOCULEZCLUQUNULTZUOURMUPUSUKAULDBNOCUNULPQRUK
-      BJSZKZUOCUMEZUTUKVBABCDUAUBVAUNUMTZUOVBMUKDULUCZABFUTVCUJVDABCDUDUEAULDBU
-      FUGCUNUMPQUHUI $.
+      ( va cv wcel wex wer wral wa cxp ciin cin iinerm wb eleq1 cbvexv bitri
+      wceq wss erssxp ralimi riinm sylan ereq1 syl sylan2br ancoms mpbird ) BGZ
+      CHZBIZDEJZACKZLDDDMZACENZOZJZDURJZABCDEPUPUNUTVAQZUNUPAGZCHZAIZVBVEFGZCHZ
+      FIUNVDVGAFVCVFCRSVGUMFBVFULCRSTUPVELUSURUAZVBUPEUQUBZACKVEVHUOVIACDEUCUDA
+      UQECUEUFDUSURUGUHUIUJUK $.
   $}
 
   ${
