@@ -55887,22 +55887,6 @@ $)
       ( wbr cec wceq ercl erth mpbid ) ABCDHBDICDIJGABCDEFABCDEFGKLM $.
   $}
 
-  ${
-    $d x A $.  $d x B $.  $d x R $.  $d x X $.
-    $( Equivalence classes do not overlap.  In other words, two equivalence
-       classes are either equal or disjoint.  Theorem 74 of [Suppes] p. 83.
-       (Contributed by NM, 15-Jun-2004.)  (Revised by Mario Carneiro,
-       9-Jul-2014.) $)
-    erdisj $p |- ( R Er X ->
-                ( [ A ] R = [ B ] R \/ ( [ A ] R i^i [ B ] R ) = (/) ) ) $=
-      ( vx wer cec cin c0 wceq wcel wbr adantl cvv wb ecexr elecg sylancr mpbid
-      syl wn cv wex neq0 wa simpl elin simplbi vex simprbi ertr4d erthi exlimdv
-      ex syl5bi orrd orcomd ) DCFZACGZBCGZHZIJZUSUTJZURVBVCVBUAEUBZVAKZEUCURVCE
-      VAUDURVEVCEURVEVCURVEUEZABCDURVEUFZVFAVDBCDVGVFVDUSKZAVDCLZVEVHURVEVHVDUT
-      KZVDUSUTUGZUHMZVFVDNKZANKZVHVIOEUIZVFVHVNVLVDACPTVDACNNQRSVFVJBVDCLZVEVJU
-      RVEVHVJVKUJMZVFVMBNKZVJVPOVOVFVJVRVQVDBCPTVDBCNNQRSUKULUNUMUOUPUQ $.
-  $}
-
   $( An equivalence class modulo the identity relation is a singleton.
      (Contributed by NM, 24-Oct-2004.) $)
   ecidsn $p |- [ A ] _I = { A } $=
@@ -56191,28 +56175,6 @@ $)
       ( vy vx cima wss cv cec wceq wrex cab cxp cin cqs wcel wa ecinxp rexbidva
       eqeq2d df-qs abbidv 3eqtr4g ) BAEAFZCGZDGZBHZIZDAJZCKUDUEBAALMZHZIZDAJZCK
       ABNAUINUCUHULCUCUGUKDAUCUEAOPUFUJUDAUEBQSRUADCABTDCAUITUB $.
-
-    qsdisj.1 $e |- ( ph -> R Er X ) $.
-    qsdisj.2 $e |- ( ph -> B e. ( A /. R ) ) $.
-    qsdisj.3 $e |- ( ph -> C e. ( A /. R ) ) $.
-    $( Members of a quotient set do not overlap.  (Contributed by Rodolfo
-       Medina, 12-Oct-2010.)  (Revised by Mario Carneiro, 11-Jul-2014.) $)
-    qsdisj $p |- ( ph -> ( B = C \/ ( B i^i C ) = (/) ) ) $=
-      ( vx vy wcel wceq cin c0 wo cv cec eqeq1d orbi12d cqs eqid eqeq1 ineq1 wa
-      adantr eqeq2 ineq2 wer ad2antrr erdisj syl ectocld mpdan ) ACBEUAZLCDMZCD
-      NZOMZPZHJQZERZDMZVADNZOMZPZUSAJCBEUOUOUBZVACMZVBUPVDURVACDUCVGVCUQOVACDUD
-      STAUTBLZUEZDUOLZVEAVJVHIUFVAKQZERZMZVAVLNZOMZPZVEVIKDBEUOVFVLDMZVMVBVOVDV
-      LDVAUGVQVNVCOVLDVAUHSTVIVKBLZUEFEUIZVPAVSVHVRGUJUTVKEFUKULUMUNUMUN $.
-  $}
-
-  ${
-    $d x y A $.  $d x y X $.  $d x y R $.
-    $( A quotient set is a disjoint set.  (Contributed by Mario Carneiro,
-       10-Dec-2016.) $)
-    qsdisj2 $p |- ( R Er X -> Disj_ x e. ( A /. R ) x ) $=
-      ( vy wer cv wceq cin c0 wo cqs wral wdisj wcel simpl simprl simprr qsdisj
-      wa ralrimivva id disjor sylibr ) DCFZAGZEGZHZUFUGIJHKZEBCLZMAUJMAUJUFNUEU
-      IAEUJUJUEUFUJOZUGUJOZTZTBUFUGCDUEUMPUEUKULQUEUKULRSUAUJUFUGAEUHUBUCUD $.
   $}
 
   ${
@@ -56226,25 +56188,6 @@ $)
       BIZBCDJZKZCFLZDJZIZUSUPKZMUOUQMUMFBADUNUNNUSBKUTUOVAUQUSBCOUSBUPPQUTURCDR
       ZUMURAIZSZVAUTVBUTURTIUTVBUBFUCCURDUSTUDUEUFVDVBVAVDVBSURCDEUMVCVBUGVDVBU
       HUIUJUAUKUL $.
-  $}
-
-  ${
-    $d b c x A $.  $d b c x B $.  $d b c x C $.  $d b c x R $.
-    uniinqs.1 $e |- R Er X $.
-    $( Class union distributes over the intersection of two subclasses of a
-       quotient space.  Compare ~ uniin .  (Contributed by FL, 25-May-2007.)
-       (Proof shortened by Mario Carneiro, 11-Jul-2014.) $)
-    uniinqs $p |- ( ( B C_ ( A /. R ) /\ C C_ ( A /. R ) ) ->
-      U. ( B i^i C ) = ( U. B i^i U. C ) ) $=
-      ( vx vb vc wss wa cin cuni a1i cv wcel wrex eluni2 c0 wceq cqs uniin elin
-      anbi12i reeanv 3bitr4i simp3l simp2l inelcm 3ad2ant3 simp1l sseldd simp1r
-      w3a wne wer simp2r qsdisj ord mpd eqeltrd elind elunii syl2anc rexlimdvva
-      necon1ad 3expia syl5bi ssrdv eqssd ) BADUAZJZCVKJZKZBCLZMZBMZCMZLZVPVSJVN
-      BCUBNVNGVSVPGOZVSPZVTHOZPZVTIOZPZKZICQHBQZVNVTVPPZVTVQPZVTVRPZKWCHBQZWEIC
-      QZKWAWGWIWKWJWLHVTBRIVTCRUDVTVQVRUCWCWEHIBCUEUFVNWFWHHIBCVNWBBPZWDCPZKZWF
-      WHVNWOWFUNZWCWBVOPWHVNWOWCWEUGWPBCWBVNWMWNWFUHZWPWBWDCWPWBWDLZSUOZWBWDTZW
-      FVNWSWOVTWBWDUIUJWPWTWRSWPWTWRSTWPAWBWDDEEDUPWPFNWPBVKWBVLVMWOWFUKWQULWPC
-      VKWDVLVMWOWFUMVNWMWNWFUQZULURUSVFUTXAVAVBVTWBVOVCVDVGVEVHVIVJ $.
   $}
 
   ${
