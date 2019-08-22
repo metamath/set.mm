@@ -55823,14 +55823,13 @@ $)
 
   ${
     $d x R $.  $d x A $.
-    $( A representative of a nonempty equivalence class belongs to the domain
-       of the equivalence relation.  (Contributed by NM, 15-Feb-1996.)
-       (Revised by Mario Carneiro, 9-Jul-2014.) $)
-    ecdmn0 $p |- ( A e. dom R <-> [ A ] R =/= (/) ) $=
-      ( vx cdm wcel cvv cec c0 wne elex cv wex n0 ecexr exlimiv sylbi wbr elecg
-      wb vex mpan exbidv a1i eldmg 3bitr4rd pm5.21nii ) ABDZEZAFEZABGZHIZAUGJUK
-      CKZUJEZCLZUICUJMZUMUICULABNOPUIUNAULBQZCLUKUHUIUMUPCULFEUIUMUPSCTULABFFRU
-      AUBUKUNSUIUOUCCABFUDUEUF $.
+    $( A representative of an inhabited equivalence class belongs to the domain
+       of the equivalence relation.  (Contributed by Jim Kingdon,
+       21-Aug-2019.) $)
+    ecdmn0m $p |- ( A e. dom R <-> E. x x e. [ A ] R ) $=
+      ( cdm wcel cvv cv cec wex elex ecexr exlimiv wbr eldmg wb vex mpan exbidv
+      elecg bitr4d pm5.21nii ) BCDZEZBFEZAGZBCHEZAIZBUBJUFUDAUEBCKLUDUCBUECMZAI
+      UGABCFNUDUFUHAUEFEUDUFUHOAPUEBCFFSQRTUA $.
   $}
 
   ${
