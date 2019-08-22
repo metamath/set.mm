@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Aug-2019
+$( iset.mm - Version of 22-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -56097,15 +56097,17 @@ $)
       ) CEZAFZBCGZACHIZJZBRAUBDKTIDLBRIDATCMDBCNOSUAPQ $.
   $}
 
-  $( A square Cartesian product is an equivalence relation (in general it's not
-     a poset).  (Contributed by FL, 31-Jul-2009.)  (Revised by Mario Carneiro,
-     12-Aug-2015.) $)
-  xpider $p |- ( A X. A ) Er A $=
-    ( cxp wer wrel cdm wceq ccnv ccom cun relxp dmxpid cnvxp xpidtr uneq1 unss2
-    wss wi unidm wa eqtr sseq2 biimpd syl mpan2 syl2im mp2 df-er mpbir3an ) AAA
-    BZCUIDUIEAFUIGZUIUIHZIZUIPZAAJAKUJUIFZUKUIPZUMAALAMUNUJUIIZUIUIIZFZUOULUPPZ
-    UMUJUIUINUKUIUJOURUQUIFZUSUMQZUIRURUTSUPUIFZVAUPUQUITVBUSUMUPUIULUAUBUCUDUE
-    UFAUIUGUH $.
+  ${
+    $d x A $.
+    $( A square Cartesian product is an equivalence relation (in general it's
+       not a poset).  (Contributed by Jim Kingdon, 22-Aug-2019.) $)
+    xpiderm $p |- ( E. x x e. A -> ( A X. A ) Er A ) $=
+      ( wcel wex cxp wrel cdm wceq ccnv ccom cun wss wer relxp a1i dmxpm xpidtr
+      cv cnvxp uneq1 unss2 wi unidm wa eqtr sseq2 biimpd syl mpan2 syl2im df-er
+      mp2 syl3anbrc ) ARBCADZBBEZFZUOGBHUOIZUOUOJZKZUOLZBUOMUPUNBBNOABBPUTUNUQU
+      OHZURUOLZUTBBSBQVAUQUOKZUOUOKZHZVBUSVCLZUTUQUOUOTURUOUQUAVEVDUOHZVFUTUBZU
+      OUCVEVGUDVCUOHZVHVCVDUOUEVIVFUTVCUOUSUFUGUHUIUJULOBUOUKUM $.
+  $}
 
   ${
     $d u v w x A $.  $d u v w x B $.  $d u v w R $.
