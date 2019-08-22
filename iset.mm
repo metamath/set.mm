@@ -55833,15 +55833,16 @@ $)
   $}
 
   ${
+    $d A x $.  $d B x $.  $d R x $.  $d ph x $.
     ereldm.1 $e |- ( ph -> R Er X ) $.
     ereldm.2 $e |- ( ph -> [ A ] R = [ B ] R ) $.
     $( Equality of equivalence classes implies equivalence of domain
        membership.  (Contributed by NM, 28-Jan-1996.)  (Revised by Mario
        Carneiro, 12-Aug-2015.) $)
     ereldm $p |- ( ph -> ( A e. X <-> B e. X ) ) $=
-      ( cdm wcel cec c0 wne neeq1d ecdmn0 3bitr4g wer wceq erdm syl eleq2d
-      3bitr3d ) ABDHZIZCUBIZBEICEIABDJZKLCDJZKLUCUDAUEUFKGMBDNCDNOAUBEBAEDPUBEQ
-      FEDRSZTAUBECUGTUA $.
+      ( vx cdm wcel cv cec wex eleq2d exbidv ecdmn0m 3bitr4g wer wceq erdm syl
+      3bitr3d ) ABDIZJZCUCJZBEJCEJAHKZBDLZJZHMUFCDLZJZHMUDUEAUHUJHAUGUIUFGNOHBD
+      PHCDPQAUCEBAEDRUCESFEDTUAZNAUCECUKNUB $.
   $}
 
   ${
