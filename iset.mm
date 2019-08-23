@@ -56387,8 +56387,8 @@ $)
     eropr.10 $e |- ( ph -> .+ : ( A X. B ) --> C ) $.
     eropr.11 $e |- ( ( ph /\ ( ( r e. A /\ s e. A ) /\ ( t e. B /\ u e. B ) ) )
                       -> ( ( r R s /\ t S u ) -> ( r .+ t ) T ( s .+ u ) ) ) $.
-    $( Lemma for ~ erov and ~ eroprf .  (Contributed by Jeff Madsen,
-       10-Jun-2010.)  (Revised by Mario Carneiro, 9-Jul-2014.) $)
+    $( Lemma for ~ eroprf .  (Contributed by Jeff Madsen, 10-Jun-2010.)
+       (Revised by Mario Carneiro, 9-Jul-2014.) $)
     eroveu $p |- ( ( ph /\ ( X e. J /\ Y e. K ) ) -> E! z E. p e. A E. q e. B
                 ( ( X = [ p ] R /\ Y = [ q ] S ) /\ z = [ ( p .+ q ) ] T ) ) $=
       ( vw wcel wa cv cec wceq co wrex wex weq wal weu cqs elqsi eleq2s anim12i
@@ -56426,8 +56426,8 @@ $)
 
     eropr.12 $e |- .+^ = { <. <. x , y >. , z >. | E. p e. A E. q e. B
                 ( ( x = [ p ] R /\ y = [ q ] S ) /\ z = [ ( p .+ q ) ] T ) } $.
-    $( Lemma for ~ erov and ~ eroprf .  (Contributed by Jeff Madsen,
-       10-Jun-2010.)  (Revised by Mario Carneiro, 30-Dec-2014.) $)
+    $( Lemma for ~ eroprf .  (Contributed by Jeff Madsen, 10-Jun-2010.)
+       (Revised by Mario Carneiro, 30-Dec-2014.) $)
     erovlem $p |- ( ph -> .+^ = ( x e. J , y e. K |->
       ( iota z E. p e. A E. q e. B
         ( ( x = [ p ] R /\ y = [ q ] S ) /\ z = [ ( p .+ q ) ] T ) ) ) ) $=
@@ -56445,30 +56445,6 @@ $)
 
     eropr.13 $e |- ( ph -> R e. X ) $.
     eropr.14 $e |- ( ph -> S e. Y ) $.
-    $( The value of an operation defined on equivalence classes.  (Contributed
-       by Jeff Madsen, 10-Jun-2010.)  (Revised by Mario Carneiro,
-       30-Dec-2014.) $)
-    erov $p |- ( ( ph /\ P e. A /\ Q e. B )
-                             -> ( [ P ] R .+^ [ Q ] S ) = [ ( P .+ Q ) ] T ) $=
-      ( wcel w3a cec co cv wceq wa cio cvv cmpt2 erovlem 3ad2ant1 simprl eqeq1d
-      wrex simprr anbi12d 2rexbidv iotabidv cqs ecelqsg syl6eleqr sylan 3adant3
-      anbi1d 3adant2 iotaex ovmpt2d eqid pm3.2i eceq1 eqeq2d oveq1 anbi2d oveq2
-      a1i rspc2ev mp3an3 3adant1 ecexg simp1 eroveu syl12anc simpr iota2d mpbid
-      syl weu eqtrd ) AJGVCZMHVCZVDZJNVEZMOVEZLVFXOUHVGZNVEZVHZXPUGVGZOVEZVHZVI
-      ZDVGZXQXTKVFZPVEZVHZVIZUGHVQUHGVQZDVJZJMKVFZPVEZXNBCXOXPRSBVGZXRVHZCVGZYA
-      VHZVIZYGVIZUGHVQUHGVQZDVJZYJLVKAXLLBCRSYTVLVHXMABCDEFGHIKLNOPQRSTUAUDUEUF
-      UGUHUIUJUKULUMUNUOUPUQURUSUTVMVNXNYMXOVHZYOXPVHZVIVIZYSYIDUUCYRYHUHUGGHUU
-      CYQYCYGUUCYNXSYPYBUUCYMXOXRXNUUAUUBVOVPUUCYOXPYAXNUUAUUBVRVPVSWGVTWAAXLXO
-      RVCZXMANUBVCZXLUUDVAUUEXLVIXOGNWBRGJNUBWCUIWDWEWFZAXMXPSVCZXLAOUCVCZXMUUG
-      VBUUHXMVIXPHOWBSHMOUCWCUJWDWEWHZYJVKVCXNYIDWIWRWJXNYCYLYFVHZVIZUGHVQUHGVQ
-      ZYJYLVHXLXMUULAXLXMXOXOVHZXPXPVHZVIZYLYLVHZVIZUULUUOUUPUUMUUNXOWKXPWKWLYL
-      WKWLUUKUUQUUMYBVIZYLJXTKVFZPVEZVHZVIUHUGJMGHXQJVHZYCUURUUJUVAUVBXSUUMYBUV
-      BXRXOXOXQJNWMWNWGUVBYFUUTYLUVBYEUUSVHYFUUTVHXQJXTKWOYEUUSPWMXIWNVSXTMVHZU
-      URUUOUVAUUPUVCYBUUNUUMUVCYAXPXPXTMOWMWNWPUVCUUTYLYLUVCUUSYKVHUUTYLVHXTMJK
-      WQUUSYKPWMXIWNVSWSWTXAXNYIUULDYLVKAXLYLVKVCZXMAPUDVCUVDUKYKUDPXBXIVNXNAUU
-      DUUGYIDXJAXLXMXCUUFUUIADEFGHIKNOPQRSTUAXOXPUDUEUFUGUHUIUJUKULUMUNUOUPUQUR
-      USXDXEXNYDYLVHZVIZYHUUKUHUGGHUVFYGUUJYCUVFYDYLYFXNUVEXFVPWPVTXGXHXK $.
-
     eropr.15 $e |- L = ( C /. T ) $.
     $( Functionality of an operation defined on equivalence classes.
        (Contributed by Jeff Madsen, 10-Jun-2010.)  (Revised by Mario Carneiro,
@@ -56499,12 +56475,6 @@ $)
     eropr2.6 $e |- ( ph -> .+ : ( A X. A ) --> A ) $.
     eropr2.7 $e |- ( ( ph /\ ( ( r e. A /\ s e. A ) /\ ( t e. A /\ u e. A ) ) )
       -> ( ( r .~ s /\ t .~ u ) -> ( r .+ t ) .~ ( s .+ u ) ) ) $.
-    $( The value of an operation defined on equivalence classes.  (Contributed
-       by Jeff Madsen, 10-Jun-2010.) $)
-    erov2 $p |- ( ( ph /\ P e. A /\ Q e. A )
-                          -> ( [ P ] .~ .+^ [ Q ] .~ ) = [ ( P .+ Q ) ] .~ ) $=
-      ( erov ) ABCDEFGGGHIJKLLLMNNMMOOOPQRSTTUBUCUCUCUDUDUDUEUFUAUBUBUG $.
-
     $( Functionality of an operation defined on equivalence classes.
        (Contributed by Jeff Madsen, 10-Jun-2010.) $)
     eroprf2 $p |- ( ph -> .+^ : ( J X. J ) --> J ) $=
