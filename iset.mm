@@ -57042,6 +57042,127 @@ $)
   df-ilti $a |- <N = { <. n , m >. | ( n e. N. /\ m e. N. /\
       E. k e. N. ( n +N k ) = m ) } $.
 
+  $( Membership in the class of positive integers.  (Contributed by NM,
+     15-Aug-1995.)  (New usage is discouraged.) $)
+  elni $p |- ( A e. N. <-> ( A e. _om /\ A =/= (/) ) ) $=
+    ( cnpi wcel com c0 csn cdif wne wa df-ni eleq2i eldifsn bitri ) ABCADEFGZCA
+    DCAEHIBNAJKADELM $.
+
+  $( Membership in the class of positive integers.  (Contributed by NM,
+     27-Nov-1995.)  (New usage is discouraged.) $)
+  elni2 $p |- ( A e. N. <-> ( A e. _om /\ (/) e. A ) ) $=
+    ( cnpi wcel com c0 wne wa elni word wb nnord ord0eln0 syl pm5.32i bitr4i )
+    ABCADCZAEFZGPEACZGAHPRQPAIRQJAKALMNO $.
+
+  $( A positive integer is a natural number.  (Contributed by NM,
+     15-Aug-1995.)  (New usage is discouraged.) $)
+  pinn $p |- ( A e. N. -> A e. _om ) $=
+    ( cnpi com c0 csn cdif df-ni difss eqsstri sseli ) BCABCDEZFCGCKHIJ $.
+
+  $( A positive integer is an ordinal number.  (Contributed by NM,
+     23-Mar-1996.)  (New usage is discouraged.) $)
+  pion $p |- ( A e. N. -> A e. On ) $=
+    ( cnpi wcel com con0 pinn nnon syl ) ABCADCAECAFAGH $.
+
+  $( A positive integer is ordinal.  (Contributed by NM, 29-Jan-1996.)
+     (New usage is discouraged.) $)
+  piord $p |- ( A e. N. -> Ord A ) $=
+    ( cnpi wcel com word pinn nnord syl ) ABCADCAEAFAGH $.
+
+  $( The class of positive integers is a set.  (Contributed by NM,
+     15-Aug-1995.)  (New usage is discouraged.) $)
+  niex $p |- N. e. _V $=
+    ( cnpi com omex c0 csn cdif df-ni difss eqsstri ssexi ) ABCABDEZFBGBKHIJ $.
+
+  $( The empty set is not a positive integer.  (Contributed by NM,
+     26-Aug-1995.)  (New usage is discouraged.) $)
+  0npi $p |- -. (/) e. N. $=
+    ( c0 wceq cnpi wcel wn eqid com wne elni simprbi necon2bi ax-mp ) AABACDZEA
+    FMAAMAGDAAHAIJKL $.
+
+  $( Ordinal 'one' is a positive integer.  (Contributed by NM, 29-Oct-1995.)
+     (New usage is discouraged.) $)
+  1pi $p |- 1o e. N. $=
+    ( c1o cnpi wcel com c0 wne 1onn 1n0 elni mpbir2an ) ABCADCAEFGHAIJ $.
+
+  $( Positive integer addition in terms of ordinal addition.  (Contributed by
+     NM, 27-Aug-1995.)  (New usage is discouraged.) $)
+  addpiord $p |- ( ( A e. N. /\ B e. N. ) -> ( A +N B ) = ( A +o B ) ) $=
+    ( cnpi wcel wa cop cxp cpli co coa wceq opelxpi cres cfv fvres df-ov df-pli
+    fveq1i eqtri 3eqtr4g syl ) ACDBCDEABFZCCGZDZABHIZABJIZKABCCLUDUBJUCMZNZUBJN
+    UEUFUBUCJOUEUBHNUHABHPUBHUGQRSABJPTUA $.
+
+  $( Positive integer multiplication in terms of ordinal multiplication.
+     (Contributed by NM, 27-Aug-1995.)  (New usage is discouraged.) $)
+  mulpiord $p |- ( ( A e. N. /\ B e. N. ) -> ( A .N B ) = ( A .o B ) ) $=
+    ( cnpi wcel wa cop cxp cmi co comu wceq opelxpi cres cfv fvres df-ov fveq1i
+    df-mi eqtri 3eqtr4g syl ) ACDBCDEABFZCCGZDZABHIZABJIZKABCCLUDUBJUCMZNZUBJNU
+    EUFUBUCJOUEUBHNUHABHPUBHUGRQSABJPTUA $.
+
+  $( 1 is an identity element for multiplication on positive integers.
+     (Contributed by NM, 4-Mar-1996.)  (Revised by Mario Carneiro,
+     17-Nov-2014.)  (New usage is discouraged.) $)
+  mulidpi $p |- ( A e. N. -> ( A .N 1o ) = A ) $=
+    ( cnpi wcel c1o cmi co comu wceq 1pi mulpiord mpan2 com pinn nnm1 syl eqtrd
+    ) ABCZADEFZADGFZAQDBCRSHIADJKQALCSAHAMANOP $.
+
+  $( Positive integer 'less than' in terms of ordinal membership.  (Contributed
+     by NM, 6-Feb-1996.)  (Revised by Mario Carneiro, 28-Apr-2015.)
+     (New usage is discouraged.) $)
+  ltpiord $p |- ( ( A e. N. /\ B e. N. ) -> ( A <N B <-> A e. B ) ) $=
+    ( clti wbr cep cnpi cxp cin wcel wa df-lti breqi brinxp epelg adantl bitr3d
+    wb syl5bb ) ABCDABEFFGHZDZAFIZBFIZJZABIZABCSKLUCABEDZTUDABFFEMUBUEUDQUAABFN
+    OPR $.
+
+  $( Positive integer 'less than' is a strict ordering.  (Contributed by NM,
+     8-Feb-1996.)  (Proof shortened by Mario Carneiro, 10-Jul-2014.)
+     (New usage is discouraged.) $)
+  ltsopi $p |- <N Or N. $=
+    ( cnpi clti wor cep con0 wss com c0 csn cdif df-ni difss omsson eqsstri wwe
+    sstri epweon weso ax-mp soss mp2 cxp cin wceq wb df-lti soeq1 soinxp bitr4i
+    mpbir ) ABCZADCZAEFEDCZULAGHIZJZEKUOGEGUNLMPNEDOUMQEDRSAEDTUAUKADAAUBUCZCZU
+    LBUPUDUKUQUEUFABUPUGSADUHUIUJ $.
+
+  $( Positive integer 'less than' is a relation on positive integers.
+     (Contributed by NM, 8-Feb-1996.)  (New usage is discouraged.) $)
+  ltrelpi $p |- <N C_ ( N. X. N. ) $=
+    ( clti cep cnpi cxp cin df-lti inss2 eqsstri ) ABCCDZEIFBIGH $.
+
+  $( Domain of addition on positive integers.  (Contributed by NM,
+     26-Aug-1995.)  (New usage is discouraged.) $)
+  dmaddpi $p |- dom +N = ( N. X. N. ) $=
+    ( coa cnpi cxp cres cdm con0 cin cpli dmres wfn wceq fnoa fndm ax-mp ineq2i
+    eqtri df-pli dmeqi wss com wa c0 csn df-ni difss eqsstri omsson sstri anidm
+    cdif mpbir xpss12 dfss mpbi 3eqtr4i ) ABBCZDZEZUPFFCZGZHEUPURUPAEZGUTAUPIVA
+    USUPAUSJVAUSKLUSAMNOPHUQQRUPUSSZUPUTKBFSZVCUAZVBVDVCBTFBTUBUCZUJTUDTVEUEUFU
+    GUHVCUIUKBFBFULNUPUSUMUNUO $.
+
+  $( Domain of multiplication on positive integers.  (Contributed by NM,
+     26-Aug-1995.)  (New usage is discouraged.) $)
+  dmmulpi $p |- dom .N = ( N. X. N. ) $=
+    ( comu cnpi cxp cres cdm con0 cin cmi dmres wfn wceq fnom fndm ax-mp ineq2i
+    eqtri df-mi dmeqi wss com wa c0 cdif df-ni difss eqsstri omsson sstri anidm
+    csn mpbir xpss12 dfss mpbi 3eqtr4i ) ABBCZDZEZUPFFCZGZHEUPURUPAEZGUTAUPIVAU
+    SUPAUSJVAUSKLUSAMNOPHUQQRUPUSSZUPUTKBFSZVCUAZVBVDVCBTFBTUBUJZUCTUDTVEUEUFUG
+    UHVCUIUKBFBFULNUPUSUMUNUO $.
+
+  $( Closure of addition of positive integers.  (Contributed by NM,
+     18-Oct-1995.)  (New usage is discouraged.) $)
+  addclpi $p |- ( ( A e. N. /\ B e. N. ) -> ( A +N B ) e. N. ) $=
+    ( cnpi wcel wa cpli co coa addpiord com pinn wne nnacl sylan2 elni2 nnaordi
+    c0 wi ne0i syl6 expcom imp32 sylan2b elni sylanbrc sylan eqeltrd ) ACDZBCDZ
+    EABFGABHGZCABIUHAJDZUIUJCDZAKUKUIEUJJDZUJQLZULUIUKBJDZUMBKABMNUIUKUOQBDZEUN
+    BOUKUOUPUNUOUKUPUNRUOUKEUPAQHGZUJDUNQBAPUJUQSTUAUBUCUJUDUEUFUG $.
+
+  $( Closure of multiplication of positive integers.  (Contributed by NM,
+     18-Oct-1995.)  (New usage is discouraged.) $)
+  mulclpi $p |- ( ( A e. N. /\ B e. N. ) -> ( A .N B ) e. N. ) $=
+    ( cnpi wcel wa cmi co comu mulpiord com wne pinn nnmcl syl2an elni2 simprbi
+    c0 adantl wi adantr nnmordi syl21anc mpd ne0i syl elni sylanbrc eqeltrd ) A
+    CDZBCDZEZABFGABHGZCABIUKULJDZULQKZULCDUIAJDZBJDZUMUJALZBLZABMNUKAQHGZULDZUN
+    UKQBDZUTUJVAUIUJUPVABOPRUKUPUOQADZVAUTSUJUPUIURRUIUOUJUQTUIVBUJUIUOVBAOPTQB
+    AUAUBUCULUSUDUEULUFUGUH $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
