@@ -56369,30 +56369,6 @@ $)
   $}
 
   ${
-    brecop2.1 $e |- .~ e. _V $.
-    brecop2.5 $e |- dom .~ = ( G X. G ) $.
-    brecop2.6 $e |- H = ( ( G X. G ) /. .~ ) $.
-    brecop2.7 $e |- R C_ ( H X. H ) $.
-    brecop2.8 $e |- .<_ C_ ( G X. G ) $.
-    brecop2.9 $e |- -. (/) e. G $.
-    brecop2.10 $e |- dom .+ = ( G X. G ) $.
-    brecop2.11 $e |- ( ( ( A e. G /\ B e. G ) /\ ( C e. G /\ D e. G ) ) ->
-                    ( [ <. A , B >. ] .~ R [ <. C , D >. ] .~ <->
-                    ( A .+ D ) .<_ ( B .+ C ) ) ) $.
-    $( Binary relation on a quotient set.  Lemma for real number construction.
-       Eliminates antecedent from last hypothesis.  (Contributed by NM,
-       13-Feb-1996.) $)
-    brecop2 $p |- ( [ <. A , B >. ] .~ R [ <. C , D >. ] .~ <->
-                    ( A .+ D ) .<_ ( B .+ C ) ) $=
-      ( wcel wa cop cec wbr co brel cxp cqs cdm wceq ecelqsdm mpan eleq2s sylib
-      opelxp anim12i syl ndmovrcl an42 pm5.21nii ) ABUAZFUBZCDUAZFUBZGUCZAHSZBH
-      SZTZCHSZDHSZTZTZADEUDZBCEUDZJUCZVDVAISZVCISZTVKVAVCIIGNUEVOVGVPVJVOUTHHUF
-      ZSZVGVRVAVQFUGZIFUHVQUIZVAVSSVRLVQUTFUJUKMULABHHUNUMVPVBVQSZVJWAVCVSIVTVC
-      VSSWALVQVBFUJUKMULCDHHUNUMUOUPVNVEVITZVFVHTZTZVKVNVLHSZVMHSZTWDVLVMHHJOUE
-      WEWBWFWCADHEQPUQBCHEQPUQUOUPVEVIVFVHURUMRUS $.
-  $}
-
-  ${
     $d p q r s t u w x y z A $.  $d p q r s t u w x y z B $.  $d p q x y z L $.
     $d p q w x y z J $.  $d p q r s t u x y z P $.  $d p q r s t u w x y z R $.
     $d p q w x y z K $.  $d p q r s t u x y z Q $.  $d p q r s t u w x y z S $.
