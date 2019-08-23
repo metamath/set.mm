@@ -56584,39 +56584,6 @@ $)
   $}
 
   ${
-    $d x y .+ $.  $d x y S $.  $d x y A $.  $d x y B $.  $d x y C $.
-    $d x y D $.
-    eceqoveq.5 $e |- .~ Er ( S X. S ) $.
-    eceqoveq.7 $e |- dom .+ = ( S X. S ) $.
-    eceqoveq.8 $e |- -. (/) e. S $.
-    eceqoveq.9 $e |- ( ( x e. S /\ y e. S ) -> ( x .+ y ) e. S ) $.
-    eceqoveq.10 $e |- ( ( ( A e. S /\ B e. S ) /\
-                     ( C e. S /\ D e. S ) ) ->
-          ( <. A , B >. .~ <. C , D >. <-> ( A .+ D ) = ( B .+ C ) ) ) $.
-    $( Equality of equivalence relation in terms of an operation.  (Contributed
-       by NM, 15-Feb-1996.)  (Proof shortened by Mario Carneiro,
-       12-Aug-2015.) $)
-    eceqoveq $p |- ( ( A e. S /\ C e. S ) ->
-                      ( [ <. A , B >. ] .~ = [ <. C , D >. ] .~ <->
-                      ( A .+ D ) = ( B .+ C ) ) ) $=
-      ( wcel wa wceq syl wn c0 cop cec co wb cxp opelxpi ad2antrr wer a1i simpr
-      ereldm mpbid opelxp2 ex wi caovcl syl5ibr ndmovrcl simprd syl6com adantll
-      eleq1 wbr adantr erth bitr3d expr pm5.21ndd an32s eqcom erdm ax-mp eleq2i
-      wne cdm ecdmn0 opelxp 3bitr3i simplbi2 ad2antlr necon2bd con3i ndmov syl6
-      mtbiri simprbi necon1bd impbid syl5bb necon1bi adantl eqeq1d simpl eqeq2d
-      syl5 3bitr4d pm2.61dan ) CIOZEIOZPZDIOZCDUAZHUBZEFUAZHUBZQZCFGUCZDEGUCZQZ
-      UDZWRXAWSXJWRXAPZWSPZFIOZXFXIXLXFXMXLXFPZXDIIUEZOZXMXNXBXOOZXPXKXQWSXFCDI
-      IUFZUGXNXBXDHXOXOHUHZXNJUIXLXFUJUKULEFIIUMRUNXAWSXIXMUOWRXIXAWSPZXGIOZXMX
-      TYAXIXHIOABDEIGMUPXGXHIVBUQYAWRXMCFIGKLURUSUTVAXKWSXMXJXKWSXMPZPZXBXDHVCX
-      FXIYCXBXDHXOXSYCJUIXKXQYBXRVDVENVFVGVHVIWTXASZPZTXEQZXGTQZXFXIYFXETQZYEYG
-      TXEVJYEYHYGYEYHXMSZYGYEXMXETWSXMXETVNZUOWRYDYJWSXMXDHVOZOXPYJYBYKXOXDXSYK
-      XOQJXOHVKVLZVMXDHVPEFIIVQVRZVSVTWAYIWRXMPZSYGYNXMWRXMUJWBCFIGKWCRWDYGYASY
-      EYHYGYATIOLXGTIVBWEYEYAXETYJXMYEYAYJWSXMYMWFWRXMYAUOWSYDWRXMYAABCFIGMUPUN
-      UGWOWGWOWHWIYEXCTXEYDXCTQWTXAXCTXCTVNZWRXAXBYKOXQYOXKYKXOXBYLVMXBHVPCDIIV
-      QVRWFWJWKWLYEXHTXGYDXHTQZWTYDXTSYPXTXAXAWSWMWBDEIGKWCRWKWNWPWQ $.
-  $}
-
-  ${
     $d x y z w v u .+ $.  $d x y z w v u .~ $.  $d x y z w v u S $.
     $d x y z w v u A $.  $d x y z w v u B $.
     th3qlem1.1 $e |- .~ Er S $.
