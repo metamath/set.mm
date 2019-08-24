@@ -55099,21 +55099,33 @@ $)
       ( vy vz vx cv cvv csuc cmpt crdg cfv wcel wal coa co vex oafnex con0 gen2
       rdgexg ax-mp df-oadd mpt2fvex mp3an1 ) EHZFIFHJKZGHZLMZINZEOGOACNBDNABPQI
       NUKGEUGINUKERUIUGUHIGRFSUBUCUAGETTUJABPICDGEFUDUEUF $.
+  $}
 
+  ${
+    $d x A $.  $d x V $.
+    $( The characteristic function for ordinal multiplication is defined
+       everywhere.  (Contributed by Jim Kingdon, 23-Aug-2019.) $)
+    omfnex $p |- ( A e. V -> ( x e. _V |-> ( x +o A ) ) Fn _V ) $=
+      ( wcel cv coa cvv wral cmpt wfn vex oaexg mpan ralrimivw eqid fnmpt syl
+      co ) BCDZAEZBFRZGDZAGHAGUAIZGJSUBAGTGDSUBAKTBGCLMNAGUAUCGUCOPQ $.
+  $}
+
+  ${
+    $d x y z $.
     $( Functionality and domain of ordinal multiplication.  (Contributed by NM,
        26-Aug-1995.)  (Revised by Mario Carneiro, 3-Jul-2019.) $)
     fnom $p |- .o Fn ( On X. On ) $=
-      ( vx vy vz con0 cv cvv coa co cmpt c0 crdg cfv comu df-omul vex 0ex oaexg
-      wcel mp2an eqid fnmpti rdgexg ax-mp fnmpt2i ) ABDDBEZCFCEZAEZGHZIZJKLZMAB
-      CNUEFRUJFRBOJUEUIFPCFUHUIUFFRUGFRUHFRCOAOUFUGFFQSUITUAUBUCUD $.
+      ( vx vy vz con0 cv cvv coa co cmpt crdg cfv comu df-omul wcel vex 0ex wfn
+      c0 omfnex ax-mp rdgexg fnmpt2i ) ABDDBEZCFCEAEZGHIZRJKZLABCMUCFNUFFNBORUC
+      UEFPUDFNUEFQAOCUDFSTUATUB $.
 
     $( Ordinal multiplication is a set.  (Contributed by Mario Carneiro,
        3-Jul-2019.) $)
     omexg $p |- ( ( A e. V /\ B e. W ) -> ( A .o B ) e. _V ) $=
-      ( vy vz vx cv cvv coa co cmpt c0 crdg cfv wcel wal comu vex con0 0ex eqid
-      oaexg mp2an fnmpti rdgexg ax-mp gen2 df-omul mpt2fvex mp3an1 ) EHZFIFHZGH
-      ZJKZLZMNOZIPZEQGQACPBDPABRKIPURGEULIPURESMULUPIUAFIUOUPUMIPUNIPUOIPFSGSUM
-      UNIIUCUDUPUBUEUFUGUHGETTUQABRICDGEFUIUJUK $.
+      ( vy vz vx cv cvv coa co cmpt c0 crdg wcel wal comu vex ax-mp con0 omfnex
+      cfv 0ex wfn rdgexg gen2 df-omul mpt2fvex mp3an1 ) EHZFIFHGHZJKLZMNUBZIOZE
+      PGPACOBDOABQKIOUNGEUJIOUNERMUJULIUCUKIOULIUDGRFUKIUASUESUFGETTUMABQICDGEF
+      UGUHUI $.
 
     $( Functionality and domain of ordinal exponentiation.  (Contributed by
        Mario Carneiro, 29-May-2015.)  (Revised by Mario Carneiro,
@@ -55147,12 +55159,11 @@ $)
        (Revised by Mario Carneiro, 23-Aug-2014.) $)
     omv $p |- ( ( A e. On /\ B e. On ) ->
      ( A .o B ) = ( rec ( ( x e. _V |-> ( x +o A ) ) , (/) ) ` B ) ) $=
-      ( vy vz con0 wcel cvv cv coa co cmpt c0 crdg cfv comu wceq 0elon wfn syl
-      wral vex oaexg mpan ralrimivw eqid fnmpt rdgexggg syl3an1 mp3an2 mpteq2dv
-      oveq2 rdgeq1 fveq1d fveq2 df-omul ovmpt2g mpd3an3 ) BFGZCFGZCAHAIZBJKZLZM
-      NZOZHGZBCPKVEQUSMFGZUTVFRUSVCHSZVGUTVFUSVBHGZAHUAVHUSVIAHVAHGUSVIAUBVABHF
-      UCUDUEAHVBVCHVCUFUGTMCVCFFUHUIUJDEBCFFEIZAHVADIZJKZLZMNZOVEPVJVDOHVKBQZVJ
-      VNVDVOVMVCQVNVDQVOAHVLVBVKBVAJULUKMVMVCUMTUNVJCVDUODEAUPUQUR $.
+      ( vy vz con0 wcel cvv cv coa co cmpt crdg cfv comu wceq 0elon wfn omfnex
+      c0 rdgexggg syl3an1 mp3an2 oveq2 mpteq2dv rdgeq1 syl fveq1d fveq2 df-omul
+      ovmpt2g mpd3an3 ) BFGZCFGZCAHAIZBJKZLZTMZNZHGZBCOKUSPUMTFGZUNUTQUMUQHRVAU
+      NUTABFSTCUQFFUAUBUCDEBCFFEIZAHUODIZJKZLZTMZNUSOVBURNHVCBPZVBVFURVGVEUQPVF
+      URPVGAHVDUPVCBUOJUDUETVEUQUFUGUHVBCURUIDEAUJUKUL $.
   $}
 
   ${
@@ -55183,10 +55194,9 @@ $)
        p. 62.  (Contributed by NM, 17-Sep-1995.)  (Revised by Mario Carneiro,
        8-Sep-2013.) $)
     om0 $p |- ( A e. On -> ( A .o (/) ) = (/) ) $=
-      ( vx con0 wcel c0 comu co cvv coa cmpt crdg cfv wceq 0elon omv mpan2 wral
-      cv wfn vex oaexg mpan ralrimivw eqid fnmpt 0ex rdgi0g 3syl eqtrd ) ACDZAE
-      FGZEBHBRZAIGZJZEKLZEUJECDUKUOMNBAEOPUJUMHDZBHQUNHSZUOEMZUJUPBHULHDUJUPBTU
-      LAHCUAUBUCBHUMUNHUNUDUEUQEHDURUFEUNHUGPUHUI $.
+      ( vx con0 wcel c0 comu co cvv cv coa cmpt crdg cfv 0elon omv mpan2 omfnex
+      wceq wfn 0ex rdgi0g sylancl eqtrd ) ACDZAEFGZEBHBIAJGKZELMZEUDECDUEUGRNBA
+      EOPUDUFHSEHDUGERBACQTEUFHUAUBUC $.
 
     $( Ordinal exponentiation with zero exponent.  Definition 8.30 of
        [TakeutiZaring] p. 67.  (Contributed by NM, 31-Dec-2004.)  (Revised by
@@ -55214,12 +55224,11 @@ $)
        [TakeutiZaring] p. 57.  (Contributed by NM, 3-Aug-2004.)  (Constructive
        proof by Jim Kingdon, 26-Jul-2019.) $)
     omcl $p |- ( ( A e. On /\ B e. On ) -> ( A .o B ) e. On ) $=
-      ( vx vy con0 wcel wa comu co cvv cv coa cmpt c0 crdg cfv vex mpan eqeltrd
-      syl omv wral wfn oaexg ralrimivw eqid fnmpt 0elon wceq oacl fvmptg ancoms
-      a1i oveq1 ralrimiva rdgon ) AEFZBEFGABHIBCJCKZALIZMZNOPECABUAUQDNBUTUQUSJ
-      FZCJUBUTJUCUQVACJURJFUQVACQURAJEUDRUECJUSUTJUTUFZUGTNEFUQUHUMUQDKZUTPZEFZ
-      DEVCEFZUQVEVFUQGZVDVCALIZEVGVHEFZVDVHUIZVCAUJZVCJFVIVJDQCVCUSVHJEUTURVCAL
-      UNVBUKRTVKSULUOUPS $.
+      ( vx vy con0 wcel wa comu co cvv cv coa cmpt c0 crdg cfv omv omfnex 0elon
+      eqeltrd a1i wceq oacl oveq1 eqid fvmptg sylancr ancoms ralrimiva rdgon
+      vex ) AEFZBEFGABHIBCJCKZALIZMZNOPECABQULDNBUOCAERNEFULSUAULDKZUOPZEFZDEUP
+      EFZULURUSULGZUQUPALIZEUTUPJFVAEFUQVAUBDUKUPAUCZCUPUNVAJEUOUMUPALUDUOUEUFU
+      GVBTUHUIUJT $.
 
     $( Closure law for ordinal exponentiation.  (Contributed by Jim Kingdon,
        26-Jul-2019.) $)
