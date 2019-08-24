@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Aug-2019
+$( iset.mm - Version of 23-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -37557,6 +37557,16 @@ $)
       GZUKHZICKZFGZUNHZIZUMLZFGZURHZIZUGBCAUIUIUKUJULUHFFMZUIUIUKVANOUHUMGZUIUN
       UJUOUHUMFMZVBUIUNVCNOUHUQGZUIURUJUSUHUQFMZVDUIURVENOUHAGZUIUEUJUFUHAFMZVF
       UIUEVGNOUKULFPQUMDEZUTUPVHUSURVHUQFUMRSTUAUBUEUCUD $.
+
+    $( A natural number is either the empty set or has the empty set as an
+       element.  (Contributed by Jim Kingdon, 23-Aug-2019.) $)
+    0elnn $p |- ( A e. _om -> ( A = (/) \/ (/) e. A ) ) $=
+      ( vx vy cv c0 wceq wcel wo csuc eqeq1 eleq2 orbi12d eqid com wi 0ex sucid
+      orci suceq a1i syl5eleqr wss sssucid sseld jaod olc syl6 finds ) BDZEFZEU
+      IGZHEEFZEEGZHCDZEFZEUNGZHZUNIZEFZEURGZHZAEFZEAGZHBCAUJUJULUKUMUIEEJUIEEKL
+      UIUNFUJUOUKUPUIUNEJUIUNEKLUIURFUJUSUKUTUIUREJUIUREKLUIAFUJVBUKVCUIAEJUIAE
+      KLULUMEMRUNNGZUQUTVAVDUOUTUPUOUTOVDUOEEIUREPQUNESUATVDUNUREUNURUBVDUNUCTU
+      DUEUTUSUFUGUH $.
   $}
 
 $(
