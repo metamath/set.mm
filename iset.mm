@@ -55321,6 +55321,29 @@ $)
       RVCQUSUNUMVDVFRDCBSTUKUA $.
   $}
 
+  $( An ordinal is less than or equal to its sum with another.  Part of
+     Exercise 5 of [TakeutiZaring] p. 62.  (Contributed by NM, 6-Dec-2004.) $)
+  oaword1 $p |- ( ( A e. On /\ B e. On ) -> A C_ ( A +o B ) ) $=
+    ( con0 wcel wa c0 coa co wceq oa0 adantr wss wi 0elon oawordi 3com13 mp3an3
+    0ss mpi eqsstr3d ) ACDZBCDZEZAAFGHZABGHZUAUDAIUBAJKUCFBLZUDUELZBRUAUBFCDZUF
+    UGMZNUHUBUAUIFBAOPQST $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Multiplication with successor.  Definition 8.15 of [TakeutiZaring]
+       p. 62.  (Contributed by NM, 17-Sep-1995.)  (Revised by Mario Carneiro,
+       8-Sep-2013.) $)
+    omsuc $p |- ( ( A e. On /\ B e. On ) ->
+                ( A .o suc B ) = ( ( A .o B ) +o A ) ) $=
+      ( vx con0 wcel wa csuc comu co coa cun ciun wceq csn df-suc iuneq1 iunxun
+      cv ax-mp omv2 oveq1d iunxsng uneq2d syl5eq adantl suceloni sylan2 3eqtr4d
+      eqtri oveq2 uneq1d omcl ax-ia1 wss oaword1 ssequn1 sylib syl2anc eqtrd )
+      ADEZBDEZFZABGZHIZABHIZVEAJIZKZVFVBCVCACRZHIZAJIZLZCBVJLZVFKZVDVGVAVKVMMUT
+      VAVKVLCBNZVJLZKZVMVKCBVNKZVJLZVPVCVQMVKVRMBOCVCVQVJPSCBVNVJQUIVAVOVFVLCBV
+      JVFDVHBMVIVEAJVHBAHUJUAUBUCUDUEVAUTVCDEVDVKMBUFCAVCTUGVBVEVLVFCABTUKUHVBV
+      EDEZUTVGVFMZABULUTVAUMVSUTFVEVFUNVTVEAUOVEVFUPUQURUS $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                       Natural number arithmetic
