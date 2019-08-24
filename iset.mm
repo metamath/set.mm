@@ -55285,15 +55285,12 @@ $)
       LWAVRDBVKRUOUPUQURUSUTVAVOVNJMVNJVNVBVNVDVEVF $.
   $}
 
-  ${
-    $d x y A $.  $d x B $.
-    $( Addition with successor.  Theorem 4I(A2) of [Enderton] p. 79.
-       (Contributed by Mario Carneiro, 16-Nov-2014.) $)
-    onasuc $p |- ( ( A e. On /\ B e. _om ) ->
-                  ( A +o suc B ) = suc ( A +o B ) ) $=
-      ( com wcel con0 csuc coa co wceq nnon oasuc sylan2 ) BCDAEDBEDABFGHABGHFI
-      BJABKL $.
-  $}
+  $( Addition with successor.  Theorem 4I(A2) of [Enderton] p. 79.
+     (Contributed by Mario Carneiro, 16-Nov-2014.) $)
+  onasuc $p |- ( ( A e. On /\ B e. _om ) ->
+                ( A +o suc B ) = suc ( A +o B ) ) $=
+    ( com wcel con0 csuc coa co wceq nnon oasuc sylan2 ) BCDAEDBEDABFGHABGHFI
+    BJABKL $.
 
   $( Addition with 1 is same as successor.  Proposition 4.34(a) of [Mendelson]
      p. 266.  (Contributed by NM, 29-Oct-1995.)  (Revised by Mario Carneiro,
@@ -55344,6 +55341,14 @@ $)
       EDEZUTVGVFMZABULUTVAUMVSUTFVEVFUNVTVEAUOVEVFUPUQURUS $.
   $}
 
+  $( Multiplication with successor.  Theorem 4J(A2) of [Enderton] p. 80.
+     (Contributed by NM, 20-Sep-1995.)  (Revised by Mario Carneiro,
+     14-Nov-2014.) $)
+  onmsuc $p |- ( ( A e. On /\ B e. _om ) ->
+                ( A .o suc B ) = ( ( A .o B ) +o A ) ) $=
+    ( com wcel con0 csuc comu co coa wceq nnon omsuc sylan2 ) BCDAEDBEDABFGHABG
+    HAIHJBKABLM $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                       Natural number arithmetic
@@ -55367,6 +55372,14 @@ $)
                 ( A +o suc B ) = suc ( A +o B ) ) $=
     ( com wcel con0 csuc coa co wceq nnon onasuc sylan ) ACDAEDBCDABFGHABGHFIAJ
     ABKL $.
+
+  $( Multiplication with successor.  Theorem 4J(A2) of [Enderton] p. 80.
+     (Contributed by NM, 20-Sep-1995.)  (Revised by Mario Carneiro,
+     14-Nov-2014.) $)
+  nnmsuc $p |- ( ( A e. _om /\ B e. _om ) ->
+                ( A .o suc B ) = ( ( A .o B ) +o A ) ) $=
+    ( com wcel con0 csuc comu co coa wceq nnon onmsuc sylan ) ACDAEDBCDABFGHABG
+    HAIHJAKABLM $.
 
   ${
     $d x y A $.  $d x B $.
