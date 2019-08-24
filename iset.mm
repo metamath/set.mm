@@ -55270,6 +55270,22 @@ $)
   $}
 
   ${
+    $d x y A $.  $d x y B $.
+    $( Value of ordinal multiplication.  (Contributed by Jim Kingdon,
+       23-Aug-2019.) $)
+    omv2 $p |- ( ( A e. On /\ B e. On ) ->
+        ( A .o B ) = U_ x e. B ( ( A .o x ) +o A ) ) $=
+      ( vy con0 wcel wa comu co c0 coa ciun cun cvv cmpt cfv wceq omv syl2anc
+      cv crdg wfn omfnex 0elon mp3an2 sylan onelon omexg omcl ax-ia1 oacl oveq1
+      rdgival fvmptg fveq2d eqtr3d sylan2 anassrs iuneq2dv uneq2d 3eqtr4d uncom
+      eqid un0 eqtri syl6eq ) BEFZCEFZGZBCHIZJACBATZHIZBKIZLZMZVNVICDNDTZBKIZOZ
+      JUAZPZJACVKVSPZVRPZLZMZVJVOVGVRNUBZVHVTWDQZDBEUCWEJEFVHWFUDAJCVREUMUEUFDB
+      CRVIVNWCJVIACVMWBVGVHVKCFZVMWBQZVHWGGVGVKEFZWHCVKUGVGWIGZVLVRPZVMWBWJVLNF
+      VMEFZWKVMQBVKEEUHWJVLEFVGWLBVKUIVGWIUJVLBUKSDVLVQVMNEVRVPVLBKULVRVCUNSWJV
+      LWAVRDBVKRUOUPUQURUSUTVAVOVNJMVNJVNVBVNVDVEVF $.
+  $}
+
+  ${
     $d x y A $.  $d x B $.
     $( Addition with successor.  Theorem 4I(A2) of [Enderton] p. 79.
        (Contributed by Mario Carneiro, 16-Nov-2014.) $)
