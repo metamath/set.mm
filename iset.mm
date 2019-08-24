@@ -57058,12 +57058,6 @@ $)
     ( cnpi wcel com c0 csn cdif wne wa df-ni eleq2i eldifsn bitri ) ABCADEFGZCA
     DCAEHIBNAJKADELM $.
 
-  $( Membership in the class of positive integers.  (Contributed by NM,
-     27-Nov-1995.)  (New usage is discouraged.) $)
-  elni2 $p |- ( A e. N. <-> ( A e. _om /\ (/) e. A ) ) $=
-    ( cnpi wcel com c0 wne wa elni word wb nnord ord0eln0 syl pm5.32i bitr4i )
-    ABCADCZAEFZGPEACZGAHPRQPAIRQJAKALMNO $.
-
   $( A positive integer is a natural number.  (Contributed by NM,
      15-Aug-1995.)  (New usage is discouraged.) $)
   pinn $p |- ( A e. N. -> A e. _om ) $=
@@ -57089,6 +57083,20 @@ $)
   0npi $p |- -. (/) e. N. $=
     ( c0 wceq cnpi wcel wn eqid com wne elni simprbi necon2bi ax-mp ) AABACDZEA
     FMAAMAGDAAHAIJKL $.
+
+  ${
+    $d x y A $.
+    $( Membership in the class of positive integers.  (Contributed by NM,
+       27-Nov-1995.)  (New usage is discouraged.) $)
+    elni2 $p |- ( A e. N. <-> ( A e. _om /\ (/) e. A ) ) $=
+      ( cnpi wcel com c0 wa pinn wceq wn 0npi eleq1 mtbiri con2i wo syl ord mpd
+      0elnn sylib wi jca nndc df-dc anim1i ancom andi bitr3i noel eleq2 pm2.21d
+      wdc impcom a1i wne df-ne elni simplbi2 syl5bir adantld jaod adantr impbii
+      ) ABCZADCZEACZFZVCVDVEAGZVCAEHZIZVEVHVCVHVCEBCJAEBKLMVCVHVEVCVDVHVENVGARO
+      PQUAVFVEVHFZVEVIFZNZVCVFVHVINZVEFZVLVDVMVEVDVHUKVMAUBVHUCSUDVNVEVMFVLVEVM
+      UEVEVHVIUFUGSVDVLVCTVEVDVJVCVKVJVCTVDVHVEVCVHVEVCVHVEEECEUHAEEUILUJULUMVD
+      VIVCVEVIAEUNZVDVCAEUOVCVDVOAUPUQURUSUTVAQVB $.
+  $}
 
   $( Ordinal 'one' is a positive integer.  (Contributed by NM, 29-Oct-1995.)
      (New usage is discouraged.) $)
