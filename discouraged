@@ -16843,6 +16843,7 @@ New usage of "mndoismgm" is discouraged (3 uses).
 New usage of "mndoissmgrp" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
 New usage of "mo2OLD" is discouraged (0 uses).
+New usage of "mo2vOLD" is discouraged (0 uses).
 New usage of "mo3OLD" is discouraged (0 uses).
 New usage of "mo3OLDOLD" is discouraged (0 uses).
 New usage of "moOLD" is discouraged (0 uses).
@@ -17685,7 +17686,7 @@ New usage of "sb5rfOLD" is discouraged (0 uses).
 New usage of "sb6OLD" is discouraged (0 uses).
 New usage of "sb6aOLD" is discouraged (0 uses).
 New usage of "sb6rfOLD" is discouraged (0 uses).
-New usage of "sb8euOLD" is discouraged (0 uses).
+New usage of "sb8euOLDOLD" is discouraged (0 uses).
 New usage of "sb9OLD" is discouraged (0 uses).
 New usage of "sb9iOLD" is discouraged (0 uses).
 New usage of "sbal1OLD" is discouraged (0 uses).
@@ -19049,6 +19050,7 @@ Proof modification of "metutopOLD" is discouraged (627 steps).
 Proof modification of "metuustOLD" is discouraged (78 steps).
 Proof modification of "metuvalOLD" is discouraged (244 steps).
 Proof modification of "mo2OLD" is discouraged (69 steps).
+Proof modification of "mo2vOLD" is discouraged (147 steps).
 Proof modification of "mo3OLD" is discouraged (206 steps).
 Proof modification of "mo3OLDOLD" is discouraged (35 steps).
 Proof modification of "moOLD" is discouraged (254 steps).
@@ -19215,7 +19217,7 @@ Proof modification of "sb5rfOLD" is discouraged (41 steps).
 Proof modification of "sb6OLD" is discouraged (40 steps).
 Proof modification of "sb6aOLD" is discouraged (42 steps).
 Proof modification of "sb6rfOLD" is discouraged (47 steps).
-Proof modification of "sb8euOLD" is discouraged (129 steps).
+Proof modification of "sb8euOLDOLD" is discouraged (129 steps).
 Proof modification of "sb9OLD" is discouraged (21 steps).
 Proof modification of "sb9iOLD" is discouraged (93 steps).
 Proof modification of "sbal1OLD" is discouraged (193 steps).
