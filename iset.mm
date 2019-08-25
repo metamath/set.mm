@@ -55574,6 +55574,28 @@ $)
       GUHUITUJUQBULFVAURIBUMABUNUOUP $.
   $}
 
+  ${
+    $d A x y $.  $d B x y $.  $d C x $.
+
+    $( Ordering property of addition.  Proposition 8.4 of [TakeutiZaring]
+       p. 58, limited to natural numbers.  (Contributed by NM, 3-Feb-1996.)
+       (Revised by Mario Carneiro, 15-Nov-2014.) $)
+    nnaordi $p |- ( ( B e. _om /\ C e. _om ) ->
+                 ( A e. B -> ( C +o A ) e. ( C +o B ) ) ) $=
+      ( vx vy com wcel coa co wa wi wceq oveq2 eleq12d c0 csuc syl syl2anc con0
+      nnon cv imbi2d ax-ia2 elnn ancoms nna0 adantr 3eltr4d simprl ax-ia1 nnacl
+      nnsucelsuc adantl oasuc ad2antrl bitr4d biimpd finds2 vtoclga imp adantrr
+      wb ex nnacom 3eltr3d 3impb 3com12 3expia ) BFGZCFGZABGZCAHIZCBHIZGZVJVIVK
+      VNVJVIVKVNVJVIVKJZJZACHIZBCHIZVLVMVJVOVQVRGZVOADUAZHIZBVTHIZGZKVOVSKDCFVT
+      CLZWCVSVOWDWAVQWBVRVTCAHMVTCBHMNUBWCAOHIZBOHIZGAEUAZHIZBWGHIZGZAWGPZHIZBW
+      KHIZGZVODEVTOLWAWEWBWFVTOAHMVTOBHMNVTWGLWAWHWBWIVTWGAHMVTWGBHMNVTWKLWAWLW
+      BWMVTWKAHMVTWKBHMNVOABWEWFVIVKUCVOAFGZWEALVKVIWOABUDUEZAUFQVIWFBLVKBUFUGU
+      HWGFGZVOWJWNKWQVOJZWJWNWRWJWHPZWIPZGZWNWRWIFGZWJXAVBWRVIWQXBWQVIVKUIWQVOU
+      JBWGUKRWHWIULQWRWLWSWMWTWRASGZWGSGZWLWSLWRWOXCVOWOWQWPUMATQWQXDVOWGTUGZAW
+      GUNRWRBSGZXDWMWTLVIXFWQVKBTUOXEBWGUNRNUPUQVCURUSUTVPWOVJVQVLLVOWOVJWPUMVJ
+      VOUJACVDRVJVIVRVMLZVKVIVJXGBCVDUEVAVEVFVGVH $.
+  $}
+
   $( Weak ordering property of addition.  (Contributed by NM, 9-Nov-2002.)
      (Revised by Mario Carneiro, 15-Nov-2014.) $)
   nnaword1 $p |- ( ( A e. _om /\ B e. _om ) -> A C_ ( A +o B ) ) $=
@@ -57249,19 +57271,9 @@ $)
 
   $( Define 'less than' on positive integers.  This is a "temporary" set used
      in the construction of complex numbers, and is intended to be used only by
-     the construction.
-
-     If we were assuming the law of the excluded middle, ` e. ` would serve as
-     a suitable definition of less-than.  If we wanted to make that work, we'd
-     need to prove statements such as the converse of ~ onsucelsucr restricted
-     to natural numbers (proving the converse for all ordinals is not possible
-     as seen at ~ onsucelsucexmid ).  Instead, we choose a definition which
-     just relies on Peano axioms, not on the details of the construction of
-     positive integers.
-
-     (Contributed by Jim Kingdon, 20-Aug-2019.)  (New usage is discouraged.) $)
-  df-ilti $a |- <N = { <. n , m >. | ( n e. N. /\ m e. N. /\
-      E. k e. N. ( n +N k ) = m ) } $.
+     the construction.  (Contributed by NM, 6-Feb-1996.)
+     (New usage is discouraged.) $)
+  df-lti $a |- <N = ( _E i^i ( N. X. N. ) ) $.
 
   $( Membership in the class of positive integers.  (Contributed by NM,
      15-Aug-1995.)  (New usage is discouraged.) $)
