@@ -55412,6 +55412,17 @@ $)
       CIZGHZEFZRUGUIRCBEUJBJZULUIUGUMUKUHEUJBAGKLMULASGHZEFZADIZGHZEFZAUPNZGHZE
       FZUGCDUJSJUKUNEUJSAGKLUJUPJUKUQEUJUPAGKLUJUSJUKUTEUJUSAGKLUGUOUGUNAEAOLPU
       GUPEFZURVARURVAUGVBTZUQNZEFUQQVCUTVDEAUPUALUBUCUDUEUF $.
+
+    $( Closure of multiplication of natural numbers.  Proposition 8.17 of
+       [TakeutiZaring] p. 63.  (Contributed by NM, 20-Sep-1995.)  (Proof
+       shortened by Andrew Salmon, 22-Oct-2011.) $)
+    nnmcl $p |- ( ( A e. _om /\ B e. _om ) -> ( A .o B ) e. _om ) $=
+      ( vx vy wcel comu co cv wi wceq oveq2 eleq1d imbi2d c0 csuc nnm0 syl6eqel
+      com peano1 expcom coa nnacl adantr nnmsuc sylibrd finds2 vtoclga impcom
+      wa ) BREAREZABFGZREZUJACHZFGZREZIUJULICBRUMBJZUOULUJUPUNUKRUMBAFKLMUOANFG
+      ZREADHZFGZREZAUROZFGZREZUJCDUMNJUNUQRUMNAFKLUMURJUNUSRUMURAFKLUMVAJUNVBRU
+      MVAAFKLUJUQNRAPSQUJURREZUTVCIUJVDUIZUTUSAUAGZREZVCUJUTVGIVDUTUJVGUSAUBTUC
+      VEVBVFRAURUDLUETUFUGUH $.
   $}
 
   ${
@@ -55422,6 +55433,13 @@ $)
        12-May-2012.) $)
     nnacli $p |- ( A +o B ) e. _om $=
       ( com wcel coa co nnacl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( ` _om ` is closed under multiplication.  Inference form of ~ nnmcl .
+       (Contributed by Scott Fenton, 20-Apr-2012.)  (Revised by Mario Carneiro,
+       12-May-2012.) $)
+    nnmcli $p |- ( A .o B ) e. _om $=
+      ( com wcel comu co nnmcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
   $}
 
   ${
