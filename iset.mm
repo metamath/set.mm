@@ -55586,6 +55586,26 @@ $)
     ( c4o c3o csuc com df-4o wcel 3onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
     $.
 
+  $( Multiply an element of ` _om ` by ` 1o ` .  (Contributed by Mario
+     Carneiro, 17-Nov-2014.) $)
+  nnm1 $p |- ( A e. _om -> ( A .o 1o ) = A ) $=
+    ( com wcel c1o comu co c0 csuc df-1o oveq2i wceq peano1 nnmsuc mpan2 oveq1d
+    coa nnm0 nna0r 3eqtrd syl5eq ) ABCZADEFAGHZEFZADUBAEIJUAUCAGEFZAPFZGAPFAUAG
+    BCUCUEKLAGMNUAUDGAPAQOARST $.
+
+  $( Multiply an element of ` _om ` by ` 2o ` (Contributed by Scott Fenton,
+     18-Apr-2012.)  (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  nnm2 $p |- ( A e. _om -> ( A .o 2o ) = ( A +o A ) ) $=
+    ( com wcel c2o comu c1o csuc coa df-2o oveq2i wceq 1onn nnmsuc mpan2 oveq1d
+    co nnm1 eqtrd syl5eq ) ABCZADEPAFGZEPZAAHPZDUAAEIJTUBAFEPZAHPZUCTFBCUBUEKLA
+    FMNTUDAAHAQORS $.
+
+  $( Multiply an element of ` _om ` by ` 2o ` (Contributed by Scott Fenton,
+     16-Apr-2012.)  (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  nn2m $p |- ( A e. _om -> ( 2o .o A ) = ( A +o A ) ) $=
+    ( com wcel c2o comu co coa wceq 2onn nnmcom mpan nnm2 eqtrd ) ABCZDAEFZADEF
+    ZAAGFDBCNOPHIDAJKALM $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Equivalence relations and classes
