@@ -55393,6 +55393,16 @@ $)
       FJURKLUFUMHZUGUNUFUMUFUMDFJUSKLUFAHZUGUPUFAUFADFJUTKLDMNUIODPQUJRNZUNUKIZ
       HZULUODRNVAVCSDUJTUAULVBUMUNUKUJUBUCUDUE $.
 
+    $( Multiplication with zero.  Exercise 16 of [Enderton] p. 82.
+       (Contributed by NM, 20-Sep-1995.)  (Revised by Mario Carneiro,
+       15-Nov-2014.) $)
+    nnm0r $p |- ( A e. _om -> ( (/) .o A ) = (/) ) $=
+      ( vx vy c0 cv comu co wceq csuc oveq2 eqeq1d con0 0elon om0 ax-mp com coa
+      wcel oveq1 oa0 syl6eq peano1 nnmsuc mpan syl5ibr finds ) DBEZFGZDHDDFGZDH
+      ZDCEZFGZDHZDUKIZFGZDHZDAFGZDHBCAUGDHUHUIDUGDDFJKUGUKHUHULDUGUKDFJKUGUNHUH
+      UODUGUNDFJKUGAHUHUQDUGADFJKDLRZUJMDNOUMUPUKPRZULDQGZDHUMUTDDQGZDULDDQSURV
+      ADHMDTOUAUSUOUTDDPRUSUOUTHUBDUKUCUDKUEUF $.
+
     $( Closure of addition of natural numbers.  Proposition 8.9 of
        [TakeutiZaring] p. 59.  (Contributed by NM, 20-Sep-1995.)  (Proof
        shortened by Andrew Salmon, 22-Oct-2011.) $)
