@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-Aug-2019
+$( iset.mm - Version of 25-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36508,9 +36508,10 @@ $)
       UEUHUBUDUGACUCCDUBUCJUDUGKUCPBUCCLMNOUBUFCDUIUFQBRAUFCSTUA $.
   $}
 
-  $( Membership is inherited by predecessors.  The converse implies excluded
-     middle, as shown at ~ onsucelsucexmid .  (Contributed by Jim Kingdon,
-     17-Jul-2019.) $)
+  $( Membership is inherited by predecessors.  The converse, for all ordinals,
+     implies excluded middle, as shown at ~ onsucelsucexmid .  However, the
+     converse does hold where ` B ` is a natural number, as seen at
+     ~ nnsucelsuc .  (Contributed by Jim Kingdon, 17-Jul-2019.) $)
   onsucelsucr $p |- ( B e. On -> ( suc A e. suc B -> A e. B ) ) $=
     ( csuc wcel con0 cvv wi elex sucexb sylibr wa wceq wo wss onelss eqimss a1i
     jaod adantl wb elsucg sylbi adantr ordelsuc sylan2 3imtr4d impancom mpancom
@@ -36699,8 +36700,10 @@ $)
     $d ph x y z $.
     onsucelsucexmid.1 $e |- A. x e. On A. y e. On
       ( x e. y -> suc x e. suc y ) $.
-    $( The converse of ~ onsucelsucr implies excluded middle.  (Contributed by
-       Jim Kingdon, 2-Aug-2019.) $)
+    $( The converse of ~ onsucelsucr implies excluded middle.  On the other
+       hand, if ` y ` is constrained to be a natural number, instead of an
+       arbitrary ordinal, then the converse of ~ onsucelsucr does hold, as seen
+       at ~ nnsucelsuc .  (Contributed by Jim Kingdon, 2-Aug-2019.) $)
     onsucelsucexmid $p |- ( ph \/ -. ph ) $=
       ( vz c0 csuc cv wceq wo wcel wn con0 wral suceq imbi12d eleq2 ax-mp suc0
       wi csn cpr crab onsucelsucexmidlem1 0elon onsucelsucexmidlem pm3.2i eleq1
@@ -55552,6 +55555,23 @@ $)
       GLUORBGMNUOVBIUPVCUQVDUOVBBGLUOVBBGMNUOVFIUPVGUQVHUOVFBGLUOVFBGMNUKUTRVAB
       QBSUAVBEFZUKVEVIKVEVIVJUKUBZVCBTHZVDBTHZIVCVDBTLVKVGVLVHVMVBBUCUKVJVHVMIB
       VBUDUENUFUGUHUIUJ $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Membership is inherited by successors.  The reverse direction holds for
+       all ordinals, as seen at ~ onsucelsucr but the forward direction, for
+       all ordinals, implies excluded middle as seen as ~ onsucelsucexmid .
+       (Contributed by Jim Kingdon, 25-Aug-2019.) $)
+    nnsucelsuc $p |- ( B e. _om -> ( A e. B <-> suc A e. suc B ) ) $=
+      ( vx vy com wcel csuc cv wi c0 wceq eleq2 suceq eleq2d imbi12d pm2.21i wa
+      noel wo a1i elsuci adantl ax-ia1 orim12d mpd sucex elsuc2 sylibr ex finds
+      vex con0 nnon onsucelsucr syl impbid ) BEFZABFZAGZBGZFZACHZFZUSVBGZFZIAJF
+      ZUSJGZFZIADHZFZUSVIGZFZIZAVKFZUSVKGZFZIZURVAICDBVBJKZVCVFVEVHVBJALVRVDVGU
+      SVBJMNOVBVIKZVCVJVEVLVBVIALVSVDVKUSVBVIMNOVBVKKZVCVNVEVPVBVKALVTVDVOUSVBV
+      KMNOVBBKZVCURVEVAVBBALWAVDUTUSVBBMNOVFVHARPVMVQIVIEFVMVNVPVMVNQZVLUSVKKZS
+      ZVPWBVJAVIKZSZWDVNWFVMAVIUAUBWBVJVLWEWCVMVNUCWEWCIWBAVIMTUDUEVKUSVIDUKUFU
+      GUHUITUJUQBULFVAURIBUMABUNUOUP $.
   $}
 
   $( Weak ordering property of addition.  (Contributed by NM, 9-Nov-2002.)
