@@ -55554,6 +55554,16 @@ $)
       VBUDUENUFUGUHUIUJ $.
   $}
 
+  $( Weak ordering property of addition.  (Contributed by NM, 9-Nov-2002.)
+     (Revised by Mario Carneiro, 15-Nov-2014.) $)
+  nnaword1 $p |- ( ( A e. _om /\ B e. _om ) -> A C_ ( A +o B ) ) $=
+    ( com wcel con0 coa co wss nnon oaword1 syl2an ) ACDAEDBEDAABFGHB
+    CDAIBIABJK $.
+
+  $( Weak ordering property of addition.  (Contributed by NM, 9-Nov-2002.) $)
+  nnaword2 $p |- ( ( A e. _om /\ B e. _om ) -> A C_ ( B +o A ) ) $=
+    ( com wcel wa coa co nnaword1 nnacom sseqtrd ) ACDBCDEAABFGBAFGABHABIJ $.
+
   $( One is a natural number.  (Contributed by NM, 29-Oct-1995.) $)
   1onn $p |- 1o e. _om $=
     ( c1o c0 csuc com df-1o wcel peano1 peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHI
