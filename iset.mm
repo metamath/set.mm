@@ -57391,14 +57391,22 @@ $)
     wb syl5bb ) ABCDABEFFGHZDZAFIZBFIZJZABIZABCSKLUCABEDZTUDABFFEMUBUEUDQUAABFN
     OPR $.
 
-  $( Positive integer 'less than' is a strict ordering.  (Contributed by NM,
-     8-Feb-1996.)  (Proof shortened by Mario Carneiro, 10-Jul-2014.)
-     (New usage is discouraged.) $)
-  ltsopi $p |- <N Or N. $=
-    ( cnpi clti wor cep con0 wss com c0 csn cdif df-ni difss omsson eqsstri wwe
-    sstri epweon weso ax-mp soss mp2 cxp cin wceq wb df-lti soeq1 soinxp bitr4i
-    mpbir ) ABCZADCZAEFEDCZULAGHIZJZEKUOGEGUNLMPNEDOUMQEDRSAEDTUAUKADAAUBUCZCZU
-    LBUPUDUKUQUEUFABUPUGSADUHUIUJ $.
+  ${
+    $d x y z $.
+    $( Positive integer 'less than' is a strict ordering.  (Contributed by NM,
+       8-Feb-1996.)  (Proof shortened by Mario Carneiro, 10-Jul-2014.)
+       (New usage is discouraged.) $)
+    ltsopi $p |- <N Or N. $=
+      ( vx vy vz cnpi clti wor wtru cv wcel wbr wn wel wb ltpiord adantl wa w3o
+      wi com pinn elirrv anidms mtbiri w3a con0 pion ontr1 syl 3ad2ant3 3adant3
+      3adant1 anbi12d 3adant2 3imtr4d ispod weq nntri3or syl2an biidd 3orbi123d
+      ancoms mpbird issod trud ) DEFGABDEGABCDEAHZDIZVEVEEJZKGVFVGAALZAUAVFVGVH
+      MVEVENUBUCOVFBHZDIZCHZDIZUDZVEVIEJZVIVKEJZPZVEVKEJZRGVMABLZBCLZPZACLZVPVQ
+      VLVFVTWARZVJVLVKUEIWBVKUFVEVIVKUGUHUIVMVNVRVOVSVFVJVNVRMVLVEVINZUJVJVLVOV
+      SMVFVIVKNUKULVFVLVQWAMVJVEVKNUMUNOUOVFVJPZVNABUPZVIVEEJZQZGWDWGVRWEBALZQZ
+      VFVESIVISIWIVJVETVITVEVIUQURWDVNVRWEWEWFWHWCWDWEUSVJVFWFWHMVIVENVAUTVBOVC
+      VD $.
+  $}
 
   $( Positive integer 'less than' is a relation on positive integers.
      (Contributed by NM, 8-Feb-1996.)  (New usage is discouraged.) $)
