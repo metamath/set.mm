@@ -57478,15 +57478,16 @@ $)
     ( cnpi wcel wa coa cpli com wceq pinn nnacom syl2an addpiord ancoms 3eqtr4d
     co ) ACDZBCDZEABFPZBAFPZABGPBAGPZQAHDBHDSTIRAJBJABKLABMRQUATIBAMNO $.
 
-  $( Addition of positive integers is associative.  (Contributed by NM,
-     27-Aug-1995.)  (New usage is discouraged.) $)
-  addasspi $p |- ( ( A +N B ) +N C ) = ( A +N ( B +N C ) ) $=
-    ( cnpi wcel w3a cpli co wceq coa com pinn nnaass syl3an wa addclpi addpiord
-    sylan oveq1d eqtrd adantr 3impa sylan2 oveq2d adantl 3impb 3eqtr4d ndmovass
-    dmaddpi 0npi pm2.61i ) ADEZBDEZCDEZFZABGHZCGHZABCGHZGHZIUOABJHZCJHZABCJHZJH
-    ZUQUSULAKEUMBKEUNCKEVAVCIALBLCLABCMNULUMUNUQVAIULUMOZUNOUQUPCJHZVAVDUPDEUNU
-    QVEIABPUPCQRVDVEVAIUNVDUPUTCJABQSUATUBULUMUNUSVCIULUMUNOZOUSAURJHZVCVFULURD
-    EUSVGIBCPAURQUCVFVGVCIULVFURVBAJBCQUDUETUFUGABCDGUIUJUHUK $.
+  $( Addition of positive integers is associative.  (Contributed by Jim
+     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+  addasspig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
+      ( ( A +N B ) +N C ) = ( A +N ( B +N C ) ) ) $=
+    ( cnpi wcel w3a coa co cpli com wceq pinn nnaass syl3an wa addclpi addpiord
+    sylan oveq1d eqtrd adantr 3impa sylan2 oveq2d adantl 3impb 3eqtr4d ) ADEZBD
+    EZCDEZFABGHZCGHZABCGHZGHZABIHZCIHZABCIHZIHZUHAJEUIBJEUJCJEULUNKALBLCLABCMNU
+    HUIUJUPULKUHUIOZUJOUPUOCGHZULUSUODEUJUPUTKABPUOCQRUSUTULKUJUSUOUKCGABQSUATU
+    BUHUIUJURUNKUHUIUJOZOURAUQGHZUNVAUHUQDEURVBKBCPAUQQUCVAVBUNKUHVAUQUMAGBCQUD
+    UETUFUG $.
 
   $( Multiplication of positive integers is commutative.  (Contributed by NM,
      21-Sep-1995.)  (New usage is discouraged.) $)
