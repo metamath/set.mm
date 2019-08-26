@@ -35220,6 +35220,26 @@ $)
     JLAEMABCDENO $.
 
   ${
+    $d x y z R $.  $d x y z A $.  $d x y z ph $.
+    issod.1 $e |- ( ph -> R Po A ) $.
+    issod.2 $e |- ( ( ph /\ ( x e. A /\ y e. A ) ) ->
+                    ( x R y \/ x = y \/ y R x ) ) $.
+    $( An irreflexive, transitive, trichotomous relation is a linear ordering
+       (in the sense of ~ df-iso ).  (Contributed by NM, 21-Jan-1996.)
+       (Revised by Mario Carneiro, 9-Jul-2014.) $)
+    issod $p |- ( ph -> R Or A ) $=
+      ( vz wpo cv wbr wo wi wral wor wcel wa w3a syl6 ralrimiva weq w3o 3adant3
+      orc a1i simp3r breq1 syl5ibcom simp1 simp2r simp2l simp3l 3jca potr sylan
+      olc exp3acom23 imp syl21anc 3jaod mpd 3expa anassrs ralcom sylib sylanbrc
+      expr df-iso ) ADEIZBJZHJZEKZVJCJZEKZVMVKEKZLZMZCDNHDNZBDNDEOFAVRBDAVJDPZQ
+      ZVQHDNZCDNVRVTWACDAVSVMDPZWAAVSWBQZQZVQHDWDVKDPZVLVPAWCWEVLQZVPAWCWFRZVNB
+      CUAZVMVJEKZUBZVPAWCWJWFGUCWGVNVPWHWIVNVPMWGVNVOUDUEWGWHVOVPWGVLWHVOAWCWEV
+      LUFZVJVMVKEUGUHVOVNUPZSWGWIVOVPWGAWBVSWERZVLWIVOMZAWCWFUIWGWBVSWEAVSWBWFU
+      JAVSWBWFUKAWCWEVLULUMWKAWMQZVLWNWOWIVLVOAVIWMWIVLQVOMFDVMVJVKEUNUOUQURUSW
+      LSUTVAVBVGTVCTVQCHDDVDVETBHCDEVHVF $.
+  $}
+
+  ${
     $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.  $d x y z R $.
     $( A strict order relation satisfies weak linearity.  (Contributed by Jim
        Kingdon, 6-Oct-2018.) $)
