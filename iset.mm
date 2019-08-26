@@ -57489,12 +57489,11 @@ $)
     BUHUIUJURUNKUHUIUJOZOURAUQGHZUNVAUHUQDEURVBKBCPAUQQUCVAVBUNKUHVAUQUMAGBCQUD
     UETUFUG $.
 
-  $( Multiplication of positive integers is commutative.  (Contributed by NM,
-     21-Sep-1995.)  (New usage is discouraged.) $)
-  mulcompi $p |- ( A .N B ) = ( B .N A ) $=
-    ( cnpi wcel wa cmi wceq comu com pinn nnmcom syl2an mulpiord ancoms 3eqtr4d
-    co dmmulpi ndmovcom pm2.61i ) ACDZBCDZEZABFPZBAFPZGUBABHPZBAHPZUCUDTAIDBIDU
-    EUFGUAAJBJABKLABMUATUDUFGBAMNOABCFQRS $.
+  $( Multiplication of positive integers is commutative.  (Contributed by Jim
+     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+  mulcompig $p |- ( ( A e. N. /\ B e. N. ) -> ( A .N B ) = ( B .N A ) ) $=
+    ( cnpi wcel wa comu cmi com wceq pinn nnmcom syl2an mulpiord ancoms 3eqtr4d
+    co ) ACDZBCDZEABFPZBAFPZABGPBAGPZQAHDBHDSTIRAJBJABKLABMRQUATIBAMNO $.
 
   $( Multiplication of positive integers is associative.  (Contributed by NM,
      21-Sep-1995.)  (New usage is discouraged.) $)
