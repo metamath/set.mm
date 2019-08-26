@@ -55642,6 +55642,30 @@ $)
   nnaword2 $p |- ( ( A e. _om /\ B e. _om ) -> A C_ ( B +o A ) ) $=
     ( com wcel wa coa co nnaword1 nnacom sseqtrd ) ACDBCDEAABFGBAFGABHABIJ $.
 
+  ${
+    $d x y A $.  $d x B $.  $d x y C $.
+    $( Ordering property of multiplication.  Half of Proposition 8.19 of
+       [TakeutiZaring] p. 63, limited to natural numbers.  (Contributed by NM,
+       18-Sep-1995.)  (Revised by Mario Carneiro, 15-Nov-2014.) $)
+    nnmordi $p |- ( ( ( B e. _om /\ C e. _om ) /\ (/) e. C ) ->
+                    ( A e. B -> ( C .o A ) e. ( C .o B ) ) ) $=
+      ( vx vy com wcel c0 comu co wi wa wceq eleq2 oveq2 eleq2d imbi12d coa imp
+      cv elnn expcom imbi2d csuc pm2.21i a1i wo elsuci nnmcl simpl jca nnaword1
+      noel sseld imim2d adantrl nna0 ad2antrr ancoms eqeltrrd eleq1d syl5ibrcom
+      nnaordi adantrr jaod sylan syl5 nnmsuc adantr sylibrd exp43 com12 adantld
+      wb imp3a finds2 vtoclga com23 exp4a mpdd com34 com24 imp31 ) BFGZCFGZHCGZ
+      ABGZCAIJZCBIJZGZKZWDWGWFWEWJWDWGWEWFWJWDWGAFGZWEWFWJKZKWGWDWLABUAUBWDWGWL
+      WEWMWDWGWLWELZWFWJWDWNWFLZWGWJWOADTZGZWHCWPIJZGZKZKWOWKKDBFWPBMZWTWKWOXAW
+      QWGWSWJWPBANXAWRWIWHWPBCIOPQUCWTAHGZWHCHIJZGZKZAETZGZWHCXFIJZGZKZAXFUDZGZ
+      WHCXKIJZGZKZWODEWPHMZWQXBWSXDWPHANXPWRXCWHWPHCIOPQWPXFMZWQXGWSXIWPXFANXQW
+      RXHWHWPXFCIOPQWPXKMZWQXLWSXNWPXKANXRWRXMWHWPXKCIOPQXEWOXBXDAUMUEUFXFFGZWN
+      WFXJXOKZXSWEWFXTKZWLWEXSYAWEXSWFXJXOWEXSLZWFXJLZLZXLWHXHCRJZGZXNXLXGAXFMZ
+      UGZYDYFAXFUHYBXHFGZWELZYCYHYFKYBYIWECXFUIWEXSUJUKYJYCLXGYFYGYJXJXGYFKZWFY
+      JXJYKYJXIYFXGYJXHYEWHXHCULUNUOSUPYJWFYGYFKXJYJWFLZYFYGXHYEGYLXHHRJZXHYEYI
+      YMXHMWEWFXHUQURYJWFYMYEGZWEYIWFYNKHCXHVCUSSUTYGWHXHYEAXFCIOVAVBVDVEVFVGYB
+      XNYFVNYCYBXMYEWHCXFVHPVIVJVKVLVMVOVPVQVRVSVSVTWAWBWC $.
+  $}
+
   $( One is a natural number.  (Contributed by NM, 29-Oct-1995.) $)
   1onn $p |- 1o e. _om $=
     ( c1o c0 csuc com df-1o wcel peano1 peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHI
