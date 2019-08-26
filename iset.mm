@@ -57472,6 +57472,89 @@ $)
     UKQBDZUTUJVAUIUJUPVABOPRUKUPUOQADZVAUTSUJUPUIURRUIUOUJUQTUIVBUJUIUOVBAOPTQB
     AUAUBUCULUSUDUEULUFUGUH $.
 
+  $( Addition of positive integers is commutative.  (Contributed by NM,
+     27-Aug-1995.)  (New usage is discouraged.) $)
+  addcompi $p |- ( A +N B ) = ( B +N A ) $=
+    ( cnpi wcel wa cpli wceq coa com pinn nnacom syl2an addpiord ancoms 3eqtr4d
+    co dmaddpi ndmovcom pm2.61i ) ACDZBCDZEZABFPZBAFPZGUBABHPZBAHPZUCUDTAIDBIDU
+    EUFGUAAJBJABKLABMUATUDUFGBAMNOABCFQRS $.
+
+  $( Addition of positive integers is associative.  (Contributed by NM,
+     27-Aug-1995.)  (New usage is discouraged.) $)
+  addasspi $p |- ( ( A +N B ) +N C ) = ( A +N ( B +N C ) ) $=
+    ( cnpi wcel w3a cpli co wceq coa com pinn nnaass syl3an wa addclpi addpiord
+    sylan oveq1d eqtrd adantr 3impa sylan2 oveq2d adantl 3impb 3eqtr4d ndmovass
+    dmaddpi 0npi pm2.61i ) ADEZBDEZCDEZFZABGHZCGHZABCGHZGHZIUOABJHZCJHZABCJHZJH
+    ZUQUSULAKEUMBKEUNCKEVAVCIALBLCLABCMNULUMUNUQVAIULUMOZUNOUQUPCJHZVAVDUPDEUNU
+    QVEIABPUPCQRVDVEVAIUNVDUPUTCJABQSUATUBULUMUNUSVCIULUMUNOZOUSAURJHZVCVFULURD
+    EUSVGIBCPAURQUCVFVGVCIULVFURVBAJBCQUDUETUFUGABCDGUIUJUHUK $.
+
+  $( Multiplication of positive integers is commutative.  (Contributed by NM,
+     21-Sep-1995.)  (New usage is discouraged.) $)
+  mulcompi $p |- ( A .N B ) = ( B .N A ) $=
+    ( cnpi wcel wa cmi wceq comu com pinn nnmcom syl2an mulpiord ancoms 3eqtr4d
+    co dmmulpi ndmovcom pm2.61i ) ACDZBCDZEZABFPZBAFPZGUBABHPZBAHPZUCUDTAIDBIDU
+    EUFGUAAJBJABKLABMUATUDUFGBAMNOABCFQRS $.
+
+  $( Multiplication of positive integers is associative.  (Contributed by NM,
+     21-Sep-1995.)  (New usage is discouraged.) $)
+  mulasspi $p |- ( ( A .N B ) .N C ) = ( A .N ( B .N C ) ) $=
+    ( cnpi wcel w3a cmi co wceq comu com pinn nnmass syl3an wa mulclpi mulpiord
+    sylan oveq1d eqtrd adantr 3impa sylan2 oveq2d adantl 3impb 3eqtr4d ndmovass
+    dmmulpi 0npi pm2.61i ) ADEZBDEZCDEZFZABGHZCGHZABCGHZGHZIUOABJHZCJHZABCJHZJH
+    ZUQUSULAKEUMBKEUNCKEVAVCIALBLCLABCMNULUMUNUQVAIULUMOZUNOUQUPCJHZVAVDUPDEUNU
+    QVEIABPUPCQRVDVEVAIUNVDUPUTCJABQSUATUBULUMUNUSVCIULUMUNOZOUSAURJHZVCVFULURD
+    EUSVGIBCPAURQUCVFVGVCIULVFURVBAJBCQUDUETUFUGABCDGUIUJUHUK $.
+
+  $( Multiplication of positive integers is distributive.  (Contributed by NM,
+     21-Sep-1995.)  (New usage is discouraged.) $)
+  distrpi $p |- ( A .N ( B +N C ) ) = ( ( A .N B ) +N ( A .N C ) ) $=
+    ( cnpi wcel w3a cpli co cmi wceq coa comu pinn nndi mulpiord addpiord eqtrd
+    com wa mulclpi syl3an addclpi sylan2 oveq2d adantl syl2an oveqan12d 3eqtr4d
+    3impb 3impdi dmaddpi 0npi dmmulpi ndmovdistr pm2.61i ) ADEZBDEZCDEZFZABCGHZ
+    IHZABIHZACIHZGHZJUSABCKHZLHZABLHZACLHZKHZVAVDUPAREUQBREURCREVFVIJAMBMCMABCN
+    UAUPUQURVAVFJUPUQURSZSVAAUTLHZVFVJUPUTDEVAVKJBCUBAUTOUCVJVKVFJUPVJUTVEALBCP
+    UDUEQUIUPUQURVDVIJUPUQSZUPURSZSVDVBVCKHZVIVLVBDEVCDEVDVNJVMABTACTVBVCPUFVLV
+    MVBVGVCVHKABOACOUGQUJUHABCDGIUKULUMUNUO $.
+
+  $( Addition cancellation law for positive integers.  (Contributed by Mario
+     Carneiro, 8-May-2013.)  (New usage is discouraged.) $)
+  addcanpi $p |- ( ( A e. N. /\ B e. N. ) ->
+                 ( ( A +N B ) = ( A +N C ) <-> B = C ) ) $=
+    ( cnpi wcel wa cpli co wceq wi addclpi syl5ib imp dmaddpi 0npi coa addpiord
+    eleq1 com pinn ndmovrcl simpr 3syl adantr adantlr eqeq12d w3a nnacan biimpd
+    syl3an 3expa sylbid sylan2 exp32 imp4b pm2.43i ex oveq2 impbid1 ) ADEZBDEZF
+    ZABGHZACGHZIZBCIZVBVEVFVBVEFVFVBVEVBVEVFVBVEVBVEVFJZVEVBFZVBCDEZVGVHVDDEZUT
+    VIFVIVEVBVJVBVCDEVEVJABKVCVDDRLMACDGNOUAUTVIUBUCVBVIFZVEABPHZACPHZIZVFVKVCV
+    LVDVMVBVCVLIVIABQUDUTVIVDVMIVAACQUEUFUTVAVIVNVFJZUTASEZVABSEZVICSEZVOATBTCT
+    VPVQVRUGVNVFABCUHUIUJUKULUMUNUOUPUQBCAGURUS $.
+
+  $( Multiplication cancellation law for positive integers.  (Contributed by
+     NM, 4-Feb-1996.)  (Revised by Mario Carneiro, 10-May-2013.)
+     (New usage is discouraged.) $)
+  mulcanpi $p |- ( ( A e. N. /\ B e. N. ) ->
+                 ( ( A .N B ) = ( A .N C ) <-> B = C ) ) $=
+    ( cnpi wcel wa cmi co wceq wi mulclpi eleq1 syl5ib comu mulpiord com sylan2
+    pinn ex pm2.43i imp dmmulpi 0npi ndmovrcl simpr 3syl adantr adantlr eqeq12d
+    w3a elni2 simprbi nnmcan biimpd syl3an com4r imp31 sylbid exp32 imp4b oveq2
+    c0 3exp impbid1 ) ADEZBDEZFZABGHZACGHZIZBCIZVGVJVKVGVJFVKVGVJVGVJVKVGVJVGVJ
+    VKJZVJVGFZVGCDEZVLVMVIDEZVEVNFVNVJVGVOVGVHDEVJVOABKVHVIDLMUAACDGUBUCUDVEVNU
+    EUFVGVNFZVJABNHZACNHZIZVKVPVHVQVIVRVGVHVQIVNABOUGVEVNVIVRIVFACOUHUIVEVFVNVS
+    VKJZVEVFVNVTJJVEVFVNVEVTVEVFVNVEVTJZVEAPEZVFBPEZVNCPEZWAARBRCRWBWCWDUJZVEVT
+    VEWEVBAEZVTVEWBWFAUKULWEWFFVSVKABCUMUNQSUOVCUPTUQURQUSUTTSBCAGVAVD $.
+
+  $( There is no identity element for addition on positive integers.
+     (Contributed by NM, 28-Nov-1995.)  (New usage is discouraged.) $)
+  addnidpi $p |- ( A e. N. -> -. ( A +N B ) = A ) $=
+    ( cnpi wcel wa cpli co wceq wn wi coa com pinn c0 elni2 nnaordi nna0 eleq1d
+    con2d eqeq1d word nnord ordirr eleq2 notbid syl5ibrcom sylbid adantl expcom
+    syl syld imp32 sylan2b sylan addpiord mtbird dmaddpi ndmov 0npi eleq1 mtbii
+    a1d syl6bi pm2.61i ) ACDZBCDZEZVEABFGZAHZIZJVGVJVEVGVIABKGZAHZVEALDZVFVLIZA
+    MVFVMBLDZNBDZEVNBOVMVOVPVNVOVMVPVNJVOVMEVPANKGZVKDZVNNBAPVMVRVNJVOVMVRAVKDZ
+    VNVMVQAVKAQRVMVLVSVMVSIVLAADZIZVMAUAWAAUBAUCUJVLVSVTVKAAUDUEUFSUGUHUKUIULUM
+    UNVGVHVKAABUOTUPVBVGIZVIVEWBVINAHZVEIWBVHNAABCFUQURTWCNCDVEUSNACUTVAVCSVD
+    $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
