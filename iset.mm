@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Aug-2019
+$( iset.mm - Version of 26-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -57472,12 +57472,11 @@ $)
     UKQBDZUTUJVAUIUJUPVABOPRUKUPUOQADZVAUTSUJUPUIURRUIUOUJUQTUIVBUJUIUOVBAOPTQB
     AUAUBUCULUSUDUEULUFUGUH $.
 
-  $( Addition of positive integers is commutative.  (Contributed by NM,
-     27-Aug-1995.)  (New usage is discouraged.) $)
-  addcompi $p |- ( A +N B ) = ( B +N A ) $=
-    ( cnpi wcel wa cpli wceq coa com pinn nnacom syl2an addpiord ancoms 3eqtr4d
-    co dmaddpi ndmovcom pm2.61i ) ACDZBCDZEZABFPZBAFPZGUBABHPZBAHPZUCUDTAIDBIDU
-    EUFGUAAJBJABKLABMUATUDUFGBAMNOABCFQRS $.
+  $( Addition of positive integers is commutative.  (Contributed by Jim
+     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+  addcompig $p |- ( ( A e. N. /\ B e. N. ) -> ( A +N B ) = ( B +N A ) ) $=
+    ( cnpi wcel wa coa cpli com wceq pinn nnacom syl2an addpiord ancoms 3eqtr4d
+    co ) ACDZBCDZEABFPZBAFPZABGPBAGPZQAHDBHDSTIRAJBJABKLABMRQUATIBAMNO $.
 
   $( Addition of positive integers is associative.  (Contributed by NM,
      27-Aug-1995.)  (New usage is discouraged.) $)
