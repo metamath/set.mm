@@ -57506,16 +57506,16 @@ $)
     BUHUIUJURUNKUHUIUJOZOURAUQGHZUNVAUHUQDEURVBKBCPAUQQUCVAVBUNKUHVAUQUMAGBCQUD
     UETUFUG $.
 
-  $( Multiplication of positive integers is distributive.  (Contributed by NM,
-     21-Sep-1995.)  (New usage is discouraged.) $)
-  distrpi $p |- ( A .N ( B +N C ) ) = ( ( A .N B ) +N ( A .N C ) ) $=
-    ( cnpi wcel w3a cpli co cmi wceq coa comu pinn nndi mulpiord addpiord eqtrd
+  $( Multiplication of positive integers is distributive.  (Contributed by Jim
+     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+  distrpig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. )
+      -> ( A .N ( B +N C ) ) = ( ( A .N B ) +N ( A .N C ) ) ) $=
+    ( cnpi wcel w3a coa co comu cpli cmi wceq pinn nndi mulpiord addpiord eqtrd
     com wa mulclpi syl3an addclpi sylan2 oveq2d adantl syl2an oveqan12d 3eqtr4d
-    3impb 3impdi dmaddpi 0npi dmmulpi ndmovdistr pm2.61i ) ADEZBDEZCDEZFZABCGHZ
-    IHZABIHZACIHZGHZJUSABCKHZLHZABLHZACLHZKHZVAVDUPAREUQBREURCREVFVIJAMBMCMABCN
-    UAUPUQURVAVFJUPUQURSZSVAAUTLHZVFVJUPUTDEVAVKJBCUBAUTOUCVJVKVFJUPVJUTVEALBCP
-    UDUEQUIUPUQURVDVIJUPUQSZUPURSZSVDVBVCKHZVIVLVBDEVCDEVDVNJVMABTACTVBVCPUFVLV
-    MVBVGVCVHKABOACOUGQUJUHABCDGIUKULUMUNUO $.
+    3impb 3impdi ) ADEZBDEZCDEZFABCGHZIHZABIHZACIHZGHZABCJHZKHZABKHZACKHZJHZUKA
+    REULBREUMCREUOURLAMBMCMABCNUAUKULUMUTUOLUKULUMSZSUTAUSIHZUOVDUKUSDEUTVELBCU
+    BAUSOUCVDVEUOLUKVDUSUNAIBCPUDUEQUIUKULUMVCURLUKULSZUKUMSZSVCVAVBGHZURVFVADE
+    VBDEVCVHLVGABTACTVAVBPUFVFVGVAUPVBUQGABOACOUGQUJUH $.
 
   $( Addition cancellation law for positive integers.  (Contributed by Mario
      Carneiro, 8-May-2013.)  (New usage is discouraged.) $)
