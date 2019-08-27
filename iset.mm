@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Aug-2019
+$( iset.mm - Version of 27-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -57567,17 +57567,14 @@ $)
     BAUSOUCVDVEUOLUKVDUSUNAIBCPUDUEQUIUKULUMVCURLUKULSZUKUMSZSVCVAVBGHZURVFVADE
     VBDEVCVHLVGABTACTVAVBPUFVFVGVAUPVBUQGABOACOUGQUJUH $.
 
-  $( Addition cancellation law for positive integers.  (Contributed by Mario
-     Carneiro, 8-May-2013.)  (New usage is discouraged.) $)
-  addcanpi $p |- ( ( A e. N. /\ B e. N. ) ->
+  $( Addition cancellation law for positive integers.  (Contributed by Jim
+     Kingdon, 27-Aug-2019.)  (New usage is discouraged.) $)
+  addcanpig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
                  ( ( A +N B ) = ( A +N C ) <-> B = C ) ) $=
-    ( cnpi wcel wa cpli co wceq wi addclpi syl5ib imp dmaddpi 0npi coa addpiord
-    eleq1 com pinn ndmovrcl simpr 3syl adantr adantlr eqeq12d w3a nnacan biimpd
-    syl3an 3expa sylbid sylan2 exp32 imp4b pm2.43i ex oveq2 impbid1 ) ADEZBDEZF
-    ZABGHZACGHZIZBCIZVBVEVFVBVEFVFVBVEVBVEVFVBVEVBVEVFJZVEVBFZVBCDEZVGVHVDDEZUT
-    VIFVIVEVBVJVBVCDEVEVJABKVCVDDRLMACDGNOUAUTVIUBUCVBVIFZVEABPHZACPHZIZVFVKVCV
-    LVDVMVBVCVLIVIABQUDUTVIVDVMIVAACQUEUFUTVAVIVNVFJZUTASEZVABSEZVICSEZVOATBTCT
-    VPVQVRUGVNVFABCUHUIUJUKULUMUNUOUPUQBCAGURUS $.
+    ( cnpi wcel w3a cpli co wceq coa addpiord 3adant3 3adant2 eqeq12d wi nnacan
+    com pinn biimpd syl3an sylbid oveq2 impbid1 ) ADEZBDEZCDEZFZABGHZACGHZIZBCI
+    ZUGUJABJHZACJHZIZUKUGUHULUIUMUDUEUHULIUFABKLUDUFUIUMIUEACKMNUDAQEZUEBQEZUFC
+    QEZUNUKOARBRCRUOUPUQFUNUKABCPSTUABCAGUBUC $.
 
   $( Multiplication cancellation law for positive integers.  (Contributed by
      NM, 4-Feb-1996.)  (Revised by Mario Carneiro, 10-May-2013.)
