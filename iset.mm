@@ -57495,15 +57495,16 @@ $)
     ( cnpi wcel wa comu cmi com wceq pinn nnmcom syl2an mulpiord ancoms 3eqtr4d
     co ) ACDZBCDZEABFPZBAFPZABGPBAGPZQAHDBHDSTIRAJBJABKLABMRQUATIBAMNO $.
 
-  $( Multiplication of positive integers is associative.  (Contributed by NM,
-     21-Sep-1995.)  (New usage is discouraged.) $)
-  mulasspi $p |- ( ( A .N B ) .N C ) = ( A .N ( B .N C ) ) $=
-    ( cnpi wcel w3a cmi co wceq comu com pinn nnmass syl3an wa mulclpi mulpiord
-    sylan oveq1d eqtrd adantr 3impa sylan2 oveq2d adantl 3impb 3eqtr4d ndmovass
-    dmmulpi 0npi pm2.61i ) ADEZBDEZCDEZFZABGHZCGHZABCGHZGHZIUOABJHZCJHZABCJHZJH
-    ZUQUSULAKEUMBKEUNCKEVAVCIALBLCLABCMNULUMUNUQVAIULUMOZUNOUQUPCJHZVAVDUPDEUNU
-    QVEIABPUPCQRVDVEVAIUNVDUPUTCJABQSUATUBULUMUNUSVCIULUMUNOZOUSAURJHZVCVFULURD
-    EUSVGIBCPAURQUCVFVGVCIULVFURVBAJBCQUDUETUFUGABCDGUIUJUHUK $.
+  $( Multiplication of positive integers is associative.  (Contributed by Jim
+     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+  mulasspig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. )
+      -> ( ( A .N B ) .N C ) = ( A .N ( B .N C ) ) ) $=
+    ( cnpi wcel w3a comu co cmi com wceq pinn nnmass syl3an wa mulclpi mulpiord
+    sylan oveq1d eqtrd adantr 3impa sylan2 oveq2d adantl 3impb 3eqtr4d ) ADEZBD
+    EZCDEZFABGHZCGHZABCGHZGHZABIHZCIHZABCIHZIHZUHAJEUIBJEUJCJEULUNKALBLCLABCMNU
+    HUIUJUPULKUHUIOZUJOUPUOCGHZULUSUODEUJUPUTKABPUOCQRUSUTULKUJUSUOUKCGABQSUATU
+    BUHUIUJURUNKUHUIUJOZOURAUQGHZUNVAUHUQDEURVBKBCPAUQQUCVAVBUNKUHVAUQUMAGBCQUD
+    UETUFUG $.
 
   $( Multiplication of positive integers is distributive.  (Contributed by NM,
      21-Sep-1995.)  (New usage is discouraged.) $)
