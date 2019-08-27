@@ -55580,7 +55580,7 @@ $)
   ${
     $d x y A $.  $d x y B $.
     $( Membership is inherited by successors.  The reverse direction holds for
-       all ordinals, as seen at ~ onsucelsucr but the forward direction, for
+       all ordinals, as seen at ~ onsucelsucr , but the forward direction, for
        all ordinals, implies excluded middle as seen as ~ onsucelsucexmid .
        (Contributed by Jim Kingdon, 25-Aug-2019.) $)
     nnsucelsuc $p |- ( B e. _om -> ( A e. B <-> suc A e. suc B ) ) $=
@@ -55592,6 +55592,26 @@ $)
       KMNOVBBKZVCURVEVAVBBALWAVDUTUSVBBMNOVFVHARPVMVQIVIEFVMVNVPVMVNQZVLUSVKKZS
       ZVPWBVJAVIKZSZWDVNWFVMAVIUAUBWBVJVLWEWCVMVNUCWEWCIWBAVIMTUDUEVKUSVIDUKUFU
       GUHUITUJUQBULFVAURIBUMABUNUOUP $.
+
+    $( Membership is inherited by successors.  The reverse direction holds for
+       all ordinals, as seen at ~ onsucsssucr , but the forward direction, for
+       all ordinals, implies excluded middle as seen as ~ onsucsssucexmid .
+       (Contributed by Jim Kingdon, 25-Aug-2019.) $)
+    nnsucsssuc $p |- ( ( A e. _om /\ B e. _om ) ->
+        ( A C_ B <-> suc A C_ suc B ) ) $=
+      ( vx vy com wcel wa wss csuc wi wceq sseq1 suceq sseq1d imbi12d c0 syl wb
+      ordelsuc mpbid cv imbi2d wn peano3 neneqd peano2 0elnn ord mpd word nnord
+      ordsucim cvv 0ex mpan 3syl a1d w3a simp3 simp1l simp1r syl2anc nnsucelsuc
+      wo mpbird 3expia exp31 finds2 vtoclga con0 nnon onsucsssucr syl2an impbid
+      imp ) AEFZBEFZGABHZAIZBIZHZVPVQVRWAJZVQCUAZBHZWCIZVTHZJZJVQWBJCAEWCAKZWGW
+      BVQWHWDVRWFWAWCABLWHWEVSVTWCAMNOUBWGPBHZPIZVTHZJDUAZBHZWLIZVTHZJZWNBHZWNI
+      ZVTHZJZVQCDWCPKZWDWIWFWKWCPBLXAWEWJVTWCPMNOWCWLKZWDWMWFWOWCWLBLXBWEWNVTWC
+      WLMNOWCWNKZWDWQWFWSWCWNBLXCWEWRVTWCWNMNOVQWKWIVQPVTFZWKVQVTPKZUCXDVQVTPBU
+      DUEVQXEXDVQVTEFXEXDVDBUFVTUGQUHUIVQBUJZVTUJZXDWKRZBUKZBULZPUMFXGXHUNPVTUM
+      SUOUPTUQWLEFZVQWPWTXKVQGZWPWQWSXLWPWQURZWNVTFZWSXMWLBFZXNXMXOWQXLWPWQUSXM
+      XKXFXOWQRXKVQWPWQUTZXMVQXFXKVQWPWQVAZXIQZWLBESVBVEXMVQXOXNRXQWLBVCQTXMWNE
+      FZXGXNWSRXMXKXSXPWLUFQXMXFXGXRXJQWNVTESVBTVFVGVHVIVOVPAVJFXFWAVRJVQAVKXIA
+      BVLVMVN $.
 
     $( Trichotomy for natural numbers.  (Contributed by Jim Kingdon,
        25-Aug-2019.) $)
