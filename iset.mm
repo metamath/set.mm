@@ -55674,6 +55674,14 @@ $)
       MXOWGMXPXAMBWESXOWGVBUPUQURUIOVCPUSUTVAVDVEVF $.
   $}
 
+  $( Cancellation law for addition of natural numbers.  (Contributed by NM,
+     27-Oct-1995.)  (Revised by Mario Carneiro, 15-Nov-2014.) $)
+  nnacan $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                   ( ( A +o B ) = ( A +o C ) <-> B = C ) ) $=
+    ( com wcel w3a coa co wss wa wb nnaword 3comr 3com13 anbi12d bicomd 3bitr4g
+    wceq eqss ) ADEZBDEZCDEZFZABGHZACGHZIZUEUDIZJZBCIZCBIZJZUDUERBCRUCUKUHUCUIU
+    FUJUGUAUBTUIUFKBCALMUBUATUJUGKCBALNOPUDUESBCSQ $.
+
   $( Weak ordering property of addition.  (Contributed by NM, 9-Nov-2002.)
      (Revised by Mario Carneiro, 15-Nov-2014.) $)
   nnaword1 $p |- ( ( A e. _om /\ B e. _om ) -> A C_ ( A +o B ) ) $=
