@@ -55652,6 +55652,28 @@ $)
       VOUJACVDRVJVIVRVMLZVKVIVJXGBCVDUEVAVEVFVGVH $.
   $}
 
+  ${
+    $d A x y $.  $d B x y $.  $d C x $.
+
+    $( Weak ordering property of addition.  (Contributed by NM, 17-Sep-1995.)
+       (Revised by Mario Carneiro, 15-Nov-2014.) $)
+    nnaword $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                  ( A C_ B <-> ( C +o A ) C_ ( C +o B ) ) ) $=
+      ( vx vy com wcel wss co wb wa wi wceq oveq1 sseq12d bibi2d c0 csuc nnacom
+      coa cv imbi2d nna0r eqcomd adantr adantl nnacl 3adant3 3adant2 nnsucsssuc
+      w3a syl2anc nnasuc peano2 sylan2 syl 3eqtr3rd ancoms biimpd 3expib finds2
+      suceq bitrd vtoclga impcom 3impa ) AFGZBFGZCFGZABHZCATIZCBTIZHZJZVIVGVHKZ
+      VNVOVJDUAZATIZVPBTIZHZJZLVOVNLDCFVPCMZVTVNVOWAVSVMVJWAVQVKVRVLVPCATNVPCBT
+      NOPUBVTVJQATIZQBTIZHZJVJEUAZATIZWEBTIZHZJZVJWERZATIZWJBTIZHZJZVODEVPQMZVS
+      WDVJWOVQWBVRWCVPQATNVPQBTNOPVPWEMZVSWHVJWPVQWFVRWGVPWEATNVPWEBTNOPVPWJMZV
+      SWMVJWQVQWKVRWLVPWJATNVPWJBTNOPVOAWBBWCVGAWBMVHVGWBAAUCUDUEVHBWCMVGVHWCBB
+      UCUDUFOWEFGZVGVHWIWNLWRVGVHUKZWIWNWSWHWMVJWSWHWFRZWGRZHZWMWSWFFGZWGFGZWHX
+      BJWRVGXCVHWEAUGUHWRVHXDVGWEBUGUIWFWGUJULWSWTWKXAWLWRVGWTWKMZVHVGWRXEVGWRK
+      ZAWJTIZAWETIZRZWKWTAWEUMWRVGWJFGZXGWKMWEUNZAWJSUOXFXHWFMXIWTMAWESXHWFVBUP
+      UQURUHWRVHXAWLMZVGVHWRXLVHWRKZBWJTIZBWETIZRZWLXABWEUMWRVHXJXNWLMXKBWJSUOX
+      MXOWGMXPXAMBWESXOWGVBUPUQURUIOVCPUSUTVAVDVEVF $.
+  $}
+
   $( Weak ordering property of addition.  (Contributed by NM, 9-Nov-2002.)
      (Revised by Mario Carneiro, 15-Nov-2014.) $)
   nnaword1 $p |- ( ( A e. _om /\ B e. _om ) -> A C_ ( A +o B ) ) $=
