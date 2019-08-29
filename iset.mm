@@ -55736,6 +55736,32 @@ $)
       XNYFVNYCYBXMYEWHCXFVHPVIVJVKVLVMVOVPVQVRVSVSVTWAWBWC $.
   $}
 
+  $( Ordering property of multiplication.  Proposition 8.19 of [TakeutiZaring]
+     p. 63, limited to natural numbers.  (Contributed by NM, 22-Jan-1996.)
+     (Revised by Mario Carneiro, 15-Nov-2014.) $)
+  nnmord $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+               ( ( A e. B /\ (/) e. C ) <-> ( C .o A ) e. ( C .o B ) ) ) $=
+    ( com wcel c0 wa comu co wi nnmordi ex com23 3adant1 wne wceq wb wo syl2anc
+    wn w3a imp3a ne0i nnm0r oveq1 eqeq1d syl5ibrcom necon3d syl5 adantr nn0eln0
+    adantl sylibrd oveq2 a1i 3adantl2 orim12d con3d simpl3 simpl1 simpl2 nntri2
+    nnmcl 3imtr4d mpdd jcad impbid ) ADEZBDEZCDEZUAZABEZFCEZGZCAHIZCBHIZEZVIVJV
+    NVQJVHVIVJGZVLVMVQVRVMVLVQVRVMVLVQJABCKLMUBNVKVQVLVMVKVQVMVLVIVJVQVMJVHVRVQ
+    CFOZVMVIVQVSJVJVQVPFOVIVSVPVOUCVICFVPFVIVPFPCFPZFBHIZFPBUDVTVPWAFCFBHUEUFUG
+    UHUIUJVJVMVSQVICUKULUMNZVKVMVQVLVKVMVQVLJVKVMGZVOVPPZVPVOEZRZTZABPZBAEZRZTZ
+    VQVLWCWJWFWCWHWDWIWEWHWDJWCABCHUNUOVHVJVMWIWEJVIBACKUPUQURWCVODEZVPDEZVQWGQ
+    WCVJVHWLVHVIVJVMUSZVHVIVJVMUTZCAVCSWCVJVIWMWNVHVIVJVMVAZCBVCSVOVPVBSWCVHVIV
+    LWKQWOWPABVBSVDLMVEWBVFVG $.
+
+  $( Weak ordering property of ordinal multiplication.  (Contributed by Mario
+     Carneiro, 17-Nov-2014.) $)
+  nnmword $p |- ( ( ( A e. _om /\ B e. _om /\ C e. _om ) /\ (/) e. C ) ->
+                  ( A C_ B <-> ( C .o A ) C_ ( C .o B ) ) ) $=
+    ( com wcel w3a c0 wa wn comu wss iba nnmord 3com12 sylan9bbr nntri1 syl2anc
+    co wb nnmcl notbid simpl1 simpl2 simpl3 3bitr4d ) ADEZBDEZCDEZFZGCEZHZBAEZI
+    ZCBJRZCAJRZEZIZABKZUOUNKZUKULUPUJULULUJHZUIUPUJULLUGUFUHUTUPSBACMNOUAUKUFUG
+    URUMSUFUGUHUJUBZUFUGUHUJUCZABPQUKUODEZUNDEZUSUQSUKUHUFVCUFUGUHUJUDZVACATQUK
+    UHUGVDVEVBCBTQUOUNPQUE $.
+
   $( One is a natural number.  (Contributed by NM, 29-Oct-1995.) $)
   1onn $p |- 1o e. _om $=
     ( c1o c0 csuc com df-1o wcel peano1 peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHI
