@@ -37592,6 +37592,17 @@ $)
       DUEUTUSUFUGUH $.
   $}
 
+  $( A natural number is nonempty iff it contains the empty set.  Although in
+     constructive mathematics it is generally more natural to work with
+     inhabited sets and ignore the whole concept of nonempty sets, in the
+     specific case of natural numbers this theorem may be helpful in converting
+     proofs which were written assuming excluded middle.  (Contributed by Jim
+     Kingdon, 28-Aug-2019.) $)
+  nn0eln0 $p |- ( A e. _om -> ( (/) e. A <-> A =/= (/) ) ) $=
+    ( com wcel c0 wceq wo wne wb 0elnn noel eleq2 mtbiri nner 2falsed ne0i 2thd
+    id jaoi syl ) ABCADEZDACZFUAADGZHZAITUCUATUAUBTUADDCDJADDKLADMNUAUAUBUAQADO
+    PRS $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                               Relations
