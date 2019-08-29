@@ -57652,15 +57652,13 @@ $)
 
   $( There is no identity element for addition on positive integers.
      (Contributed by NM, 28-Nov-1995.)  (New usage is discouraged.) $)
-  addnidpi $p |- ( A e. N. -> -. ( A +N B ) = A ) $=
-    ( cnpi wcel wa cpli co wceq wn wi coa com pinn c0 elni2 nnaordi nna0 eleq1d
-    con2d eqeq1d word nnord ordirr eleq2 notbid syl5ibrcom sylbid adantl expcom
-    syl syld imp32 sylan2b sylan addpiord mtbird dmaddpi ndmov 0npi eleq1 mtbii
-    a1d syl6bi pm2.61i ) ACDZBCDZEZVEABFGZAHZIZJVGVJVEVGVIABKGZAHZVEALDZVFVLIZA
-    MVFVMBLDZNBDZEVNBOVMVOVPVNVOVMVPVNJVOVMEVPANKGZVKDZVNNBAPVMVRVNJVOVMVRAVKDZ
-    VNVMVQAVKAQRVMVLVSVMVSIVLAADZIZVMAUAWAAUBAUCUJVLVSVTVKAAUDUEUFSUGUHUKUIULUM
-    UNVGVHVKAABUOTUPVBVGIZVIVEWBVINAHZVEIWBVHNAABCFUQURTWCNCDVEUSNACUTVAVCSVD
-    $.
+  addnidpig $p |- ( ( A e. N. /\ B e. N. ) -> -. ( A +N B ) = A ) $=
+    ( cnpi wcel wa cpli co wceq coa com wn pinn c0 elni2 wi nnaordi nna0 eleq1d
+    word nnord ordirr eleq2 notbid syl5ibrcom sylbid adantl syld expcom sylan2b
+    syl con2d imp32 sylan addpiord eqeq1d mtbird ) ACDZBCDZEZABFGZAHABIGZAHZUQA
+    JDZURVBKZALURVCBJDZMBDZEVDBNVCVEVFVDVEVCVFVDOVEVCEVFAMIGZVADZVDMBAPVCVHVDOV
+    EVCVHAVADZVDVCVGAVAAQRVCVBVIVCVIKVBAADZKZVCASVKATAUAUJVBVIVJVAAAUBUCUDUKUEU
+    FUGUHULUIUMUSUTVAAABUNUOUP $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
