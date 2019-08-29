@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Aug-2019
+$( iset.mm - Version of 29-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -57640,18 +57640,15 @@ $)
     QEZUNUKOARBRCRUOUPUQFUNUKABCPSTUABCAGUBUC $.
 
   $( Multiplication cancellation law for positive integers.  (Contributed by
-     NM, 4-Feb-1996.)  (Revised by Mario Carneiro, 10-May-2013.)
-     (New usage is discouraged.) $)
-  mulcanpi $p |- ( ( A e. N. /\ B e. N. ) ->
+     Jim Kingdon, 29-Aug-2019.)  (New usage is discouraged.) $)
+  mulcanpig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
                  ( ( A .N B ) = ( A .N C ) <-> B = C ) ) $=
-    ( cnpi wcel wa cmi co wceq wi mulclpi eleq1 syl5ib comu mulpiord com sylan2
-    pinn ex pm2.43i imp dmmulpi 0npi ndmovrcl simpr 3syl adantr adantlr eqeq12d
-    w3a elni2 simprbi nnmcan biimpd syl3an com4r imp31 sylbid exp32 imp4b oveq2
-    c0 3exp impbid1 ) ADEZBDEZFZABGHZACGHZIZBCIZVGVJVKVGVJFVKVGVJVGVJVKVGVJVGVJ
-    VKJZVJVGFZVGCDEZVLVMVIDEZVEVNFVNVJVGVOVGVHDEVJVOABKVHVIDLMUAACDGUBUCUDVEVNU
-    EUFVGVNFZVJABNHZACNHZIZVKVPVHVQVIVRVGVHVQIVNABOUGVEVNVIVRIVFACOUHUIVEVFVNVS
-    VKJZVEVFVNVTJJVEVFVNVEVTVEVFVNVEVTJZVEAPEZVFBPEZVNCPEZWAARBRCRWBWCWDUJZVEVT
-    VEWEVBAEZVTVEWBWFAUKULWEWFFVSVKABCUMUNQSUOVCUPTUQURQUSUTTSBCAGVAVD $.
+    ( cnpi wcel w3a cmi co wceq wi wa comu mulpiord adantr adantlr eqeq12d pinn
+    com c0 elni2 simprbi nnmcan biimpd sylan2 ex syl3an 3exp com4r imp31 sylbid
+    pm2.43i 3impa oveq2 impbid1 ) ADEZBDEZCDEZFABGHZACGHZIZBCIZUOUPUQUTVAJUOUPK
+    ZUQKZUTABLHZACLHZIZVAVCURVDUSVEVBURVDIUQABMNUOUQUSVEIUPACMOPUOUPUQVFVAJZUOU
+    PUQVGJJUOUPUQUOVGUOUPUQUOVGJZUOAREZUPBREZUQCREZVHAQBQCQVIVJVKFZUOVGUOVLSAEZ
+    VGUOVIVMATUAVLVMKVFVAABCUBUCUDUEUFUGUHUKUIUJULBCAGUMUN $.
 
   $( There is no identity element for addition on positive integers.
      (Contributed by NM, 28-Nov-1995.)  (New usage is discouraged.) $)
