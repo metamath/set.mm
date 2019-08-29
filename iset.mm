@@ -55650,6 +55650,14 @@ $)
       UEUFUGSTUAUBUC $.
   $}
 
+  $( A trichotomy law for natural numbers.  (Contributed by Jim Kingdon,
+     28-Aug-2019.) $)
+  nntri1 $p |- ( ( A e. _om /\ B e. _om ) -> ( A C_ B <-> -. B e. A ) ) $=
+    ( com wcel wa wss wn ssnel wceq wo w3o wi nntri3or df-3or biimpi orcomd ord
+    syl word nnord ordelss sylan ex adantl eqimss a1i jaod syld impbid2 ) ACDZB
+    CDZEZABFZBADZGZABHULUOABDZABIZJZUMULUPUQUNKZUOURLABMUSUNURUSURUNUSURUNJUPUQ
+    UNNOPQRULUPUMUQUKUPUMLUJUKUPUMUKBSUPUMBTBAUAUBUCUDUQUMLULABUEUFUGUHUI $.
+
   ${
     $d A x y $.  $d B x y $.  $d C x $.
 
