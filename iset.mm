@@ -55770,6 +55770,15 @@ $)
     URUMSUFUGUHUJUBZUFUGUHUJUCZABPQUKUODEZUNDEZUSUQSUKUHUFVCUFUGUHUJUDZVACATQUK
     UHUGVDVEVBCBTQUOUNPQUE $.
 
+  $( Cancellation law for multiplication of natural numbers.  (Contributed by
+     NM, 26-Oct-1995.)  (Revised by Mario Carneiro, 15-Nov-2014.) $)
+  nnmcan $p |- ( ( ( A e. _om /\ B e. _om /\ C e. _om ) /\ (/) e. A ) ->
+                   ( ( A .o B ) = ( A .o C ) <-> B = C ) ) $=
+    ( com wcel w3a c0 comu wss wceq 3anrot nnmword sylanb 3anrev anbi12d bicomd
+    wa co wb eqss 3bitr4g ) ADEZBDEZCDEZFZGAEZQZABHRZACHRZIZUIUHIZQZBCIZCBIZQZU
+    HUIJBCJUGUOULUGUMUJUNUKUEUCUDUBFUFUMUJSUBUCUDKBCALMUEUDUCUBFUFUNUKSUBUCUDNC
+    BALMOPUHUITBCTUA $.
+
   $( One is a natural number.  (Contributed by NM, 29-Oct-1995.) $)
   1onn $p |- 1o e. _om $=
     ( c1o c0 csuc com df-1o wcel peano1 peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHI
