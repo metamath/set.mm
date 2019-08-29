@@ -54643,9 +54643,8 @@ $)
        ` U_ x e. B ( F `` ( rec ( F , A ) `` x ) ) ` .
 
        If we add conditions on the characteristic function, we can show tighter
-       results such as ~ rdgisuc2 .  The eventual goal is
-       ` ( rec ( F , A ) `` suc B ) = ( F `` ( rec ( F , A ) `` B ) ) ` .
-       (Contributed by Jim Kingdon, 9-Jun-2019.) $)
+       results such as ~ rdgisucinc .  (Contributed by Jim Kingdon,
+       9-Jun-2019.) $)
     rdgisuc1 $p |- ( ph -> ( rec ( F , A ) ` suc B ) =
         ( A u. ( U_ x e. B ( F ` ( rec ( F , A ) ` x ) )
           u. ( F ` ( rec ( F , A ) ` B ) ) ) ) ) $=
@@ -54656,31 +54655,21 @@ $)
       BNZVNUQVORVCVPRDUFBUQVOVBUGUHBDVLVBUIUJVKVMVGVEBDVBVGQUTDRVAVFEUTDURUKULU
       MTUNTSUP $.
 
-    $( The initial value is a subset of the recursive definition generator
-       evaluated at any ordinal.  This is a consequence of the way that
-       ~ df-irdg handles the initial value.  (Contributed by Jim Kingdon,
-       11-Jun-2019.) $)
-    rdg0ss $p |- ( ph -> A C_ ( rec ( F , A ) ` B ) ) $=
-      ( vx cv crdg cfv ciun cun ssun1 cvv wfn wcel con0 wceq rdgival syl5sseqr
-      syl3anc ) ABICIJDBKZLDLMZNZBCUDLZBUEOADPQBERCSRUGUFTFGHIBCDEUAUCUB $.
-
     ${
       $d A x $.  $d B x $.  $d F x $.
       rdgisuc2.inc $e |- ( ph -> A. x x C_ ( F ` x ) ) $.
-      $( The value of the recursive definition generator.
+      $( Value of the recursive definition generator at a successor.
 
-         Given the hypothesis that the characteristic function is increasing,
-         we can remove the initial value from ~ rdgisuc1 by using ~ rdg0ss .
-         (Contributed by Jim Kingdon, 15-Jun-2019.) $)
-      rdgisuc2 $p |- ( ph -> ( rec ( F , A ) ` suc B ) =
-          ( U_ x e. B ( F ` ( rec ( F , A ) ` x ) )
-            u. ( F ` ( rec ( F , A ) ` B ) ) ) ) $=
-        ( csuc cfv cun wss wceq cvv wcel con0 wfn syl2anc crdg cv ciun rdgisuc1
-        un12 rdg0ss rdgifnon funfvex funfni id fveq2 sseq12d spcgv sylc ssequn1
-        wal sstrd sylib uneq2d syl5eq eqtrd ) ADKECUAZLCBDBUBZVBLELUCZDVBLZELZM
-        ZMZVGABCDEFGHIUDAVHVDCVFMZMVGCVDVFUEAVIVFVDACVFNVIVFOACVEVFACDEFGHIUFAV
-        EPQZVCVCELZNZBUPVEVFNZAVBRSZDRQVJAEPSCFQVNGHCEFUGTIVJRDVBDVBUHUITJVLVMB
-        VEPVCVEOZVCVEVKVFVOUJVCVEEUKULUMUNUQCVFUOURUSUTVA $.
+         This can be thought of as a generalization of ~ oasuc and ~ omsuc .
+         (Contributed by Jim Kingdon, 29-Aug-2019.) $)
+      rdgisucinc $p |- ( ph -> ( rec ( F , A ) ` suc B ) =
+          ( F ` ( rec ( F , A ) ` B ) ) ) $=
+        ( csuc crdg cfv cun cvv wcel con0 wceq syl3anc wss cv ciun rdgisuc1 wfn
+        unass syl6eqr rdgival uneq1d wal rdgexggg id fveq2 sseq12d sylc ssequn1
+        spcgv sylib 3eqtr2d ) ADKECLZMZCBDBUAZUSMEMUBZNZDUSMZEMZNZVDVENZVEAUTCV
+        BVENNVFABCDEFGHIUCCVBVEUEUFAVDVCVEAEOUDZCFPZDQPZVDVCRGHIBCDEFUGSUHAVDVE
+        TZVGVERAVDOPZVAVAEMZTZBUIVKAVHVIVJVLGHICDEFQUJSJVNVKBVDOVAVDRZVAVDVMVEV
+        OUKVAVDEULUMUPUNVDVEUOUQUR $.
     $}
   $}
 
