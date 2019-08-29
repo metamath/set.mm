@@ -54657,7 +54657,7 @@ $)
 
     ${
       $d A x $.  $d B x $.  $d F x $.
-      rdgisuc2.inc $e |- ( ph -> A. x x C_ ( F ` x ) ) $.
+      rdgisucinc.inc $e |- ( ph -> A. x x C_ ( F ` x ) ) $.
       $( Value of the recursive definition generator at a successor.
 
          This can be thought of as a generalization of ~ oasuc and ~ omsuc .
