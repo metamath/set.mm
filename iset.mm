@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Aug-2019
+$( iset.mm - Version of 28-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -55628,6 +55628,15 @@ $)
       DWLWAUJFZWMWJIWAEUFWNWMWGWJAWAUJUGWGWHWIUKUHTVFWDWIWFAGZPZWJVFWDWFAOFWPWA
       AUIWFAULUMWPWGWHWIPZPWJWPWQWGWPWIWHWPWIWHPWOWHWIWFAVBUNUOUPUQWGWHWIQSURUS
       UTVCVAVDVE $.
+
+    $( A trichotomy law for natural numbers.  (Contributed by Jim Kingdon,
+       28-Aug-2019.) $)
+    nntri2 $p |- ( ( A e. _om /\ B e. _om ) ->
+        ( A e. B <-> -. ( A = B \/ B e. A ) ) ) $=
+      ( com wcel wa wceq wo elirr eleq2 mtbii con2i en2lp imnani ioran sylanbrc
+      wn w3o nntri3or 3orass sylib orcomd ord impbid2 ) ACDBCDEZABDZABFZBADZGZP
+      ZUEUFPUGPUIUFUEUFAADUEAHABAIJKUEUGABLMUFUGNOUDUHUEUDUEUHUDUEUFUGQUEUHGABR
+      UEUFUGSTUAUBUC $.
   $}
 
   ${
