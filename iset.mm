@@ -55761,6 +55761,17 @@ $)
     ( com wcel wa coa co nnaword1 nnacom sseqtrd ) ACDBCDEAABFGBAFGABHABIJ $.
 
   ${
+    $d A x y $.  $d B x y $.  $d C x y $.
+    $( Adding to both sides of an inequality in ` _om ` (Contributed by Scott
+       Fenton, 16-Apr-2012.)  (Revised by Mario Carneiro, 12-May-2012.) $)
+    nnawordi $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+             ( A C_ B -> ( A +o C ) C_ ( B +o C ) ) ) $=
+      ( com wcel w3a wss coa nnaword biimpd wceq nnacom 3adant2 3adant1 sseq12d
+      co sylibrd ) ADEZBDEZCDEZFZABGZCAHPZCBHPZGZACHPZBCHPZGUAUBUEABCIJUAUFUCUG
+      UDRTUFUCKSACLMSTUGUDKRBCLNOQ $.
+  $}
+
+  ${
     $d x y A $.  $d x B $.  $d x y C $.
     $( Ordering property of multiplication.  Half of Proposition 8.19 of
        [TakeutiZaring] p. 63, limited to natural numbers.  (Contributed by NM,
