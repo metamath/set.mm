@@ -54460,6 +54460,10 @@ $)
        properties for increasing and continuous ordinal functions, which
        include ordinal addition and multiplication.
 
+       For finite recursion we also define ~ df-frec and for suitable
+       characteristic functions ~ df-frec yields the same result as ` rec `
+       restricted to ` _om ` , as seen at ~ frecrdg .
+
        _Note:  We introduce_ ` rec ` _with the philosophical goal of being_
        _able to eliminate all definitions with direct mechanical substitution_
        _and to verify easily the soundness of definitions.  Metamath itself_
@@ -54761,7 +54765,9 @@ $)
        without excluded middle we have theorems such as ~ nn0suc .  The
        analogous situation with transfinite recursion - being able to say that
        an ordinal is zero, successor, or limit - is enabled by excluded middle
-       and thus is not available to us.
+       and thus is not available to us.  For the characteristic functions which
+       satisfy the conditions given at ~ frecrdg , this definition and
+       ~ df-irdg restricted to ` _om ` produce the same result.
 
        _Note:  We introduce_ ` frec ` _with the philosophical goal of being_
        _able to eliminate all definitions with direct mechanical substitution_
