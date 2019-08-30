@@ -55712,6 +55712,14 @@ $)
     CUQUSDEZUTDEZPZVAVEQUQUPUNPZUPUOPZPZVLUQUNUOPZUPPUPVPPVOUNUOUPUDVPUPUEUPUNU
     OUFUGVMVJVNVKCARCBRUHUIUSUTSUKUNUOURVIQUPABSUJULUM $.
 
+  $( Ordering property of addition of natural numbers.  (Contributed by NM,
+     9-Nov-2002.) $)
+  nnaordr $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                 ( A e. B <-> ( A +o C ) e. ( B +o C ) ) ) $=
+    ( com wcel w3a coa nnaord wceq nnacom ancoms 3adant2 3adant1 eleq12d bitrd
+    co ) ADEZBDEZCDEZFZABECAGPZCBGPZEACGPZBCGPZEABCHTUAUCUBUDQSUAUCIZRSQUECAJKL
+    RSUBUDIZQSRUFCBJKMNO $.
+
   ${
     $d A x y $.  $d B x y $.  $d C x $.
 
