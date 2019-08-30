@@ -54923,6 +54923,31 @@ $)
       WHXPWIXACWEVHWRVCUHUIUJUNXPVSXFWNXPVIWSUDXQVBVDUQVFVEUSVG $.
   $}
 
+  ${
+    frecrdg.1 $e |- ( ph -> F Fn _V ) $.
+    frecrdg.2 $e |- ( ph -> A e. V ) $.
+    frecrdg.inc $e |- ( ph -> A. x x C_ ( F ` x ) ) $.
+    $d A x y $.  $d F x y $.  $d V x $.  $d ph x y $.
+    $( Transfinite recursion restricted to omega.
+
+       Given a suitable characteristic function, ~ df-frec produces the same
+       results as ~ df-irdg restricted to ` _om ` .  (Contributed by Jim
+       Kingdon, 29-Aug-2019.) $)
+    frecrdg $p |- ( ph -> frec ( F , A ) = ( rec ( F , A ) |` _om ) ) $=
+      ( com wfn wcel syl2anc con0 cfv wceq c0 fveq2 eqeq12d fvres adantr vy cvv
+      cfrec crdg cres frecfnom rdgifnon omsson fnssres sylancl cv frec0g peano1
+      wss ax-mp rdgi0g syl5eq eqtr4d wi wa ax-ia2 ad2antlr eqtrd fveq2d frecsuc
+      csuc jca 3expa sylan nnon syl wal rdgisucinc 3eqtr4d peano2 expcom finds2
+      ex impcom eqfnfvd ) ABIDCUCZDCUDZIUEZADUBJZCEKZWAIJFGCDEUFLAWBMJZIMUNWCIJ
+      AWDWEWFFGCDEUGLUHMIWBUIUJBUKZIKAWGWANZWGWCNZOZWJPWANZPWCNZOUAUKZWANZWMWCN
+      ZOZWMVFZWANZWQWCNZOZABUAWGPOWHWKWIWLWGPWAQWGPWCQRWGWMOWHWNWIWOWGWMWAQWGWM
+      WCQRWGWQOWHWRWIWSWGWQWAQWGWQWCQRAWKCWLAWDWEWKCOFGCDEULLAWLPWBNZCPIKWLXAOU
+      MPIWBSUOAWDWEXACOFGCDEUPLUQURAWMIKZWPWTUSAXBUTZWPWTXCWPUTZWRWQWBNZWSXDWND
+      NZWMWBNZDNZWRXEXDWNXGDXDWNWOXGXCWPVAXBWOXGOAWPWMIWBSVBVCVDXCWRXFOZWPAWDWE
+      UTXBXIAWDWEFGVGWDWEXBXICWMDEVEVHVITXCXEXHOWPXCBCWMDEAWDXBFTAWEXBGTXCXBWMM
+      KAXBVAWMVJVKAWGWGDNUNBVLXBHTVMTVNXBWSXEOZAWPXBWQIKXJWMVOWQIWBSVKVBURVRVPV
+      QVSVT $.
+  $}
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Ordinal arithmetic
