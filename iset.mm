@@ -55700,6 +55700,18 @@ $)
       VOUJACVDRVJVIVRVMLZVKVIVJXGBCVDUEVAVEVFVGVH $.
   $}
 
+  $( Ordering property of addition.  Proposition 8.4 of [TakeutiZaring] p. 58,
+     limited to natural numbers, and its converse.  (Contributed by NM,
+     7-Mar-1996.)  (Revised by Mario Carneiro, 15-Nov-2014.) $)
+  nnaord $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                 ( A e. B <-> ( C +o A ) e. ( C +o B ) ) ) $=
+    ( com wcel w3a coa co wi nnaordi 3adant1 wo wn oveq2 a1i wa wb nnacl nntri2
+    wceq 3adant2 orim12d con3d df-3an ancom anandi 3bitri anim12i sylbi 3adant3
+    syl 3imtr4d impbid ) ADEZBDEZCDEZFZABEZCAGHZCBGHZEZUOUPURVAIUNABCJKUQUSUTTZ
+    UTUSEZLZMZABTZBAEZLZMZVAURUQVHVDUQVFVBVGVCVFVBIUQABCGNOUNUPVGVCIUOBACJUAUBU
+    CUQUSDEZUTDEZPZVAVEQUQUPUNPZUPUOPZPZVLUQUNUOPZUPPUPVPPVOUNUOUPUDVPUPUEUPUNU
+    OUFUGVMVJVNVKCARCBRUHUIUSUTSUKUNUOURVIQUPABSUJULUM $.
+
   ${
     $d A x y $.  $d B x y $.  $d C x $.
 
