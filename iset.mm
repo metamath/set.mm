@@ -57741,6 +57741,20 @@ $)
     EVCVHAVADZVDVCVGAVAAQRVCVBVIVCVIKVBAADZKZVCASVKATAUAUJVBVIVJVAAAUBUCUDUKUEU
     FUGUHULUIUMUSUTVAAABUNUOUP $.
 
+  ${
+    $d x A $.  $d x B $.
+    $( Ordering on positive integers in terms of existence of sum.
+       (Contributed by NM, 15-Mar-1996.)  (Revised by Mario Carneiro,
+       14-Jun-2013.)  (New usage is discouraged.) $)
+    ltexpi $p |- ( ( A e. N. /\ B e. N. ) ->
+               ( A <N B <-> E. x e. N. ( A +N x ) = B ) ) $=
+      ( cnpi wcel wa c0 cv coa wceq com wrex clti wbr cpli pinn nnaordex syl2an
+      co wb ltpiord addpiord eqeq1d pm5.32da elni2 anbi1i anass syl6bb rexbidv2
+      bitri adantr 3bitr4d ) BDEZCDEZFBCEZGAHZEZBUPISZCJZFZAKLZBCMNBUPOSZCJZADL
+      ZUMBKECKEUOVATUNBPCPABCQRBCUAUMVDVATUNUMVCUTADKUMUPDEZVCFVEUSFZUPKEZUTFZU
+      MVEVCUSUMVEFVBURCBUPUBUCUDVFVGUQFZUSFVHVEVIUSUPUEUFVGUQUSUGUJUHUIUKUL $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
