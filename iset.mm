@@ -54460,6 +54460,10 @@ $)
        properties for increasing and continuous ordinal functions, which
        include ordinal addition and multiplication.
 
+       For finite recursion we also define ~ df-frec and for suitable
+       characteristic functions ~ df-frec yields the same result as ` rec `
+       restricted to ` _om ` , as seen at ~ frecrdg .
+
        _Note:  We introduce_ ` rec ` _with the philosophical goal of being_
        _able to eliminate all definitions with direct mechanical substitution_
        _and to verify easily the soundness of definitions.  Metamath itself_
@@ -54657,7 +54661,7 @@ $)
 
     ${
       $d A x $.  $d B x $.  $d F x $.
-      rdgisuc2.inc $e |- ( ph -> A. x x C_ ( F ` x ) ) $.
+      rdgisucinc.inc $e |- ( ph -> A. x x C_ ( F ` x ) ) $.
       $( Value of the recursive definition generator at a successor.
 
          This can be thought of as a generalization of ~ oasuc and ~ omsuc .
@@ -54761,7 +54765,9 @@ $)
        without excluded middle we have theorems such as ~ nn0suc .  The
        analogous situation with transfinite recursion - being able to say that
        an ordinal is zero, successor, or limit - is enabled by excluded middle
-       and thus is not available to us.
+       and thus is not available to us.  For the characteristic functions which
+       satisfy the conditions given at ~ frecrdg , this definition and
+       ~ df-irdg restricted to ` _om ` produce the same result.
 
        _Note:  We introduce_ ` frec ` _with the philosophical goal of being_
        _able to eliminate all definitions with direct mechanical substitution_
@@ -54923,6 +54929,31 @@ $)
       WHXPWIXACWEVHWRVCUHUIUJUNXPVSXFWNXPVIWSUDXQVBVDUQVFVEUSVG $.
   $}
 
+  ${
+    frecrdg.1 $e |- ( ph -> F Fn _V ) $.
+    frecrdg.2 $e |- ( ph -> A e. V ) $.
+    frecrdg.inc $e |- ( ph -> A. x x C_ ( F ` x ) ) $.
+    $d A x y $.  $d F x y $.  $d V x $.  $d ph x y $.
+    $( Transfinite recursion restricted to omega.
+
+       Given a suitable characteristic function, ~ df-frec produces the same
+       results as ~ df-irdg restricted to ` _om ` .  (Contributed by Jim
+       Kingdon, 29-Aug-2019.) $)
+    frecrdg $p |- ( ph -> frec ( F , A ) = ( rec ( F , A ) |` _om ) ) $=
+      ( com wfn wcel syl2anc con0 cfv wceq c0 fveq2 eqeq12d fvres adantr vy cvv
+      cfrec crdg cres frecfnom rdgifnon omsson fnssres sylancl cv frec0g peano1
+      wss ax-mp rdgi0g syl5eq eqtr4d wi wa ax-ia2 ad2antlr eqtrd fveq2d frecsuc
+      csuc jca 3expa sylan nnon syl wal rdgisucinc 3eqtr4d peano2 expcom finds2
+      ex impcom eqfnfvd ) ABIDCUCZDCUDZIUEZADUBJZCEKZWAIJFGCDEUFLAWBMJZIMUNWCIJ
+      AWDWEWFFGCDEUGLUHMIWBUIUJBUKZIKAWGWANZWGWCNZOZWJPWANZPWCNZOUAUKZWANZWMWCN
+      ZOZWMVFZWANZWQWCNZOZABUAWGPOWHWKWIWLWGPWAQWGPWCQRWGWMOWHWNWIWOWGWMWAQWGWM
+      WCQRWGWQOWHWRWIWSWGWQWAQWGWQWCQRAWKCWLAWDWEWKCOFGCDEULLAWLPWBNZCPIKWLXAOU
+      MPIWBSUOAWDWEXACOFGCDEUPLUQURAWMIKZWPWTUSAXBUTZWPWTXCWPUTZWRWQWBNZWSXDWND
+      NZWMWBNZDNZWRXEXDWNXGDXDWNWOXGXCWPVAXBWOXGOAWPWMIWBSVBVCVDXCWRXFOZWPAWDWE
+      UTXBXIAWDWEFGVGWDWEXBXICWMDEVEVHVITXCXEXHOWPXCBCWMDEAWDXBFTAWEXBGTXCXBWMM
+      KAXBVAWMVJVKAWGWGDNUNBVLXBHTVMTVNXBWSXEOZAWPXBWQIKXJWMVOWQIWBSVKVBURVRVPV
+      QVSVT $.
+  $}
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Ordinal arithmetic
