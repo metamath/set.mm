@@ -37574,7 +37574,7 @@ $)
        natural numbers is a special case of the law of the excluded middle
        which holds in most constructive set theories including ours.
        (Contributed by Jim Kingdon, 5-Jan-2019.) $)
-    nndc $p |- ( A e. _om -> DECID A = (/) ) $=
+    nndceq0 $p |- ( A e. _om -> DECID A = (/) ) $=
       ( vx vy com wcel c0 wceq wn wo wdc cv csuc eqeq1 notbid orbi12d eqid orci
       peano3 neneqd olcd a1d finds df-dc sylibr ) ADEAFGZUEHZIZUEJBKZFGZUIHZIFF
       GZUKHZICKZFGZUNHZIZUMLZFGZURHZIZUGBCAUIUIUKUJULUHFFMZUIUIUKVANOUHUMGZUIUN
@@ -48780,26 +48780,24 @@ $)
     acexmidlem.c $e |- C = { A , B } $.
     $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
     acexmidlema $p |- ( { (/) } e. A -> ph ) $=
-      ( c0 csn wcel wceq wo cv cpr crab eleq2i wb p0ex ax-mp prid2 wn
-      eqeq1 orbi1d elrab3 bitri noel 0ex snid eleq2 mpbii orel1 sylbi
-      wi mto ) IJZCKZUPILZAMZAUQUPBNZILZAMZBIUPOZPZKZUSCVDUPFQUPVCKVE
-      USRIUPSUAVBUSBUPVCUTUPLVAURAUTUPIUCUDUETUFURUBUSAUNURIIKZIUGURI
-      UPKVFIUHUIUPIIUJUKUOURAULTUM $.
+      ( c0 csn wcel wceq wo cv cpr crab eleq2i wb p0ex ax-mp prid2 eqeq1 orbi1d
+      elrab3 bitri wn wi noel 0ex snid eleq2 mpbii mto orel1 sylbi ) IJZCKZUPIL
+      ZAMZAUQUPBNZILZAMZBIUPOZPZKZUSCVDUPFQUPVCKVEUSRIUPSUAVBUSBUPVCUTUPLVAURAU
+      TUPIUBUCUDTUEURUFUSAUGURIIKZIUHURIUPKVFIUIUJUPIIUKULUMURAUNTUO $.
 
     $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
     acexmidlemb $p |- ( (/) e. B -> ph ) $=
-      ( c0 wcel csn wceq wo cv cpr crab eleq2i wb 0ex ax-mp orbi1d wn
-      prid1 eqeq1 elrab3 bitri noel snid eleq2 mpbiri mto orel1 sylbi
-      wi ) IDJZIIKZLZAMZAUOIBNZUPLZAMZBIUPOZPZJZURDVCIGQIVBJVDURRIUPS
-      UCVAURBIVBUSILUTUQAUSIUPUDUAUETUFUQUBURAUNUQIIJZIUGUQVEIUPJISUH
-      IUPIUIUJUKUQAULTUM $.
+      ( c0 wcel csn wceq wo cv cpr crab eleq2i wb 0ex ax-mp prid1 orbi1d elrab3
+      eqeq1 bitri wn wi noel snid eleq2 mpbiri mto orel1 sylbi ) IDJZIIKZLZAMZA
+      UOIBNZUPLZAMZBIUPOZPZJZURDVCIGQIVBJVDURRIUPSUAVAURBIVBUSILUTUQAUSIUPUDUBU
+      CTUEUQUFURAUGUQIIJZIUHUQVEIUPJISUIIUPIUJUKULUQAUMTUN $.
 
     $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
     acexmidlemph $p |- ( ph -> A = B ) $=
-      ( c0 csn wceq wo wral ralrimivw crab eqeq2i rabid2 bitri sylibr
-      olc cpr cv eqtr3d ) AIIJZUAZCDABUBZIKZALZBUEMZUECKZAUHBUEAUGTNU
-      JUEUHBUEOZKUICUKUEFPUHBUEQRSAUFUDKZALZBUEMZUEDKZAUMBUEAULTNUOUE
-      UMBUEOZKUNDUPUEGPUMBUEQRSUC $.
+      ( c0 csn wceq wo wral olc ralrimivw crab eqeq2i rabid2 bitri sylibr cpr
+      cv eqtr3d ) AIIJZUAZCDABUBZIKZALZBUEMZUECKZAUHBUEAUGNOUJUEUHBUEPZKUICUKUE
+      FQUHBUERSTAUFUDKZALZBUEMZUEDKZAUMBUEAULNOUOUEUMBUEPZKUNDUPUEGQUMBUERSTUC
+      $.
 
     $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
     acexmidlemab $p |- (
@@ -55343,8 +55341,8 @@ $)
      (Contributed by Mario Carneiro, 16-Nov-2014.) $)
   onasuc $p |- ( ( A e. On /\ B e. _om ) ->
                 ( A +o suc B ) = suc ( A +o B ) ) $=
-    ( com wcel con0 csuc coa co wceq nnon oasuc sylan2 ) BCDAEDBEDABFGHABGHFI
-    BJABKL $.
+    ( com wcel con0 csuc coa co wceq nnon oasuc sylan2 ) BCDAEDBEDABFGHABGHFIBJ
+    ABKL $.
 
   $( Addition with 1 is same as successor.  Proposition 4.34(a) of [Mendelson]
      p. 266.  (Contributed by NM, 29-Oct-1995.)  (Revised by Mario Carneiro,
@@ -55733,8 +55731,8 @@ $)
   $( Weak ordering property of addition.  (Contributed by NM, 9-Nov-2002.)
      (Revised by Mario Carneiro, 15-Nov-2014.) $)
   nnaword1 $p |- ( ( A e. _om /\ B e. _om ) -> A C_ ( A +o B ) ) $=
-    ( com wcel con0 coa co wss nnon oaword1 syl2an ) ACDAEDBEDAABFGHB
-    CDAIBIABJK $.
+    ( com wcel con0 coa co wss nnon oaword1 syl2an ) ACDAEDBEDAABFGHBCDAIBIABJK
+    $.
 
   $( Weak ordering property of addition.  (Contributed by NM, 9-Nov-2002.) $)
   nnaword2 $p |- ( ( A e. _om /\ B e. _om ) -> A C_ ( B +o A ) ) $=
@@ -55916,10 +55914,10 @@ $)
     $( An inhabited equivalence class implies the representative is a set.
        (Contributed by Mario Carneiro, 9-Jul-2014.) $)
     ecexr $p |- ( A e. [ B ] R -> B e. _V ) $=
-    ( vx cec wcel wceq wex cvv wbr csn wrex cima elimag ibi df-ec eleq2s df-rex
-    cv wa ax-ia1 elsn sylib eximi sylbi syl isset sylibr ) ABCEZFZDSZBGZDHZBIFU
-    JUKACJZDBKZLZUMUPACUOMZUIAUQFUPDACUOUQNOBCPQUPUKUOFZUNTZDHUMUNDUORUSULDUSUR
-    ULURUNUADBUBUCUDUEUFDBUGUH $.
+      ( vx cec wcel cv wceq wex cvv wbr csn wrex elimag ibi df-ec eleq2s df-rex
+      cima wa ax-ia1 elsn sylib eximi sylbi syl isset sylibr ) ABCEZFZDGZBHZDIZ
+      BJFUJUKACKZDBLZMZUMUPACUOSZUIAUQFUPDACUOUQNOBCPQUPUKUOFZUNTZDIUMUNDUORUSU
+      LDUSURULURUNUADBUBUCUDUEUFDBUGUH $.
   $}
 
   ${
@@ -57506,12 +57504,12 @@ $)
        27-Nov-1995.)  (New usage is discouraged.) $)
     elni2 $p |- ( A e. N. <-> ( A e. _om /\ (/) e. A ) ) $=
       ( cnpi wcel com c0 wa pinn wceq wn 0npi eleq1 mtbiri con2i wo syl ord mpd
-      0elnn sylib wi jca nndc df-dc anim1i ancom andi bitr3i noel eleq2 pm2.21d
-      wdc impcom a1i wne df-ne elni simplbi2 syl5bir adantld jaod adantr impbii
-      ) ABCZADCZEACZFZVCVDVEAGZVCAEHZIZVEVHVCVHVCEBCJAEBKLMVCVHVEVCVDVHVENVGARO
-      PQUAVFVEVHFZVEVIFZNZVCVFVHVINZVEFZVLVDVMVEVDVHUKVMAUBVHUCSUDVNVEVMFVLVEVM
-      UEVEVHVIUFUGSVDVLVCTVEVDVJVCVKVJVCTVDVHVEVCVHVEVCVHVEEECEUHAEEUILUJULUMVD
-      VIVCVEVIAEUNZVDVCAEUOVCVDVOAUPUQURUSUTVAQVB $.
+      0elnn sylib wi jca wdc nndceq0 df-dc anim1i ancom andi noel eleq2 pm2.21d
+      bitr3i impcom a1i df-ne elni simplbi2 syl5bir adantld jaod adantr impbii
+      wne ) ABCZADCZEACZFZVCVDVEAGZVCAEHZIZVEVHVCVHVCEBCJAEBKLMVCVHVEVCVDVHVENV
+      GAROPQUAVFVEVHFZVEVIFZNZVCVFVHVINZVEFZVLVDVMVEVDVHUBVMAUCVHUDSUEVNVEVMFVL
+      VEVMUFVEVHVIUGUKSVDVLVCTVEVDVJVCVKVJVCTVDVHVEVCVHVEVCVHVEEECEUHAEEUILUJUL
+      UMVDVIVCVEVIAEVBZVDVCAEUNVCVDVOAUOUPUQURUSUTQVA $.
   $}
 
   $( Ordinal 'one' is a positive integer.  (Contributed by NM, 29-Oct-1995.)
