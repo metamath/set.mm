@@ -1,4 +1,4 @@
-$( iset.mm - Version of 29-Aug-2019
+$( iset.mm - Version of 31-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -55675,6 +55675,14 @@ $)
     syl word nnord ordelss sylan ex adantl eqimss a1i jaod syld impbid2 ) ACDZB
     CDZEZABFZBADZGZABHULUOABDZABIZJZUMULUPUQUNKZUOURLABMUSUNURUSURUNUSURUNJUPUQ
     UNNOPQRULUPUMUQUKUPUMLUJUKUPUMUKBSUPUMBTBAUAUBUCUDUQUMLULABUEUFUGUHUI $.
+
+  $( Equality of natural numbers is decidable.  Theorem 7.2.6 of [HoTT], p.
+     (varies).  For the specific case where ` B ` is zero, see ~ nndceq0 .
+     (Contributed by Jim Kingdon, 31-Aug-2019.) $)
+  nndceq $p |- ( ( A e. _om /\ B e. _om ) -> DECID A = B ) $=
+    ( com wcel wa wceq wn wo wdc w3o nntri3or elirr eleq2 mtbii olcd orc mtbiri
+    con2i 3jaoi syl df-dc sylibr ) ACDBCDEZABFZUDGZHZUDIUCABDZUDBADZJUFABKUGUFU
+    DUHUGUEUDUDUGUDAADUGALABAMNROUDUEPUHUEUDUDUHUDUHBBDBLABBMQROSTUDUAUB $.
 
   ${
     $d A x y $.  $d B x y $.  $d C x $.
