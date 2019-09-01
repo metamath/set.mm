@@ -57761,6 +57761,17 @@ $)
       MVEVCUSUMVEFVBURCBUPUBUCUDVFVGUQFZUSFVHVEVIUSUPUEUFVGUQUSUGUJUHUIUKUL $.
   $}
 
+  $( Ordering property of addition for positive integers.  (Contributed by Jim
+     Kingdon, 31-Aug-2019.)  (New usage is discouraged.) $)
+  ltapig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
+      ( A <N B <-> ( C +N A ) <N ( C +N B ) ) ) $=
+    ( cnpi wcel clti wbr cpli co wb wa coa com pinn nnaord ltpiord addclpi wceq
+    adantr addpiord syl3an 3expa syl2an adantl eleq12d anandis ancoms 3bitr4d
+    bitrd 3impa ) ADEZBDEZCDEZABFGZCAHIZCBHIZFGZJUKULKZUMKABEZCALIZCBLIZEZUNUQU
+    KULUMUSVBJZUKAMEULBMEUMCMEVCANBNCNABCOUAUBURUNUSJUMABPSUMURUQVBJZUMUKULVDUM
+    UKKZUMULKZKZUQUOUPEZVBVEUODEUPDEUQVHJVFCAQCBQUOUPPUCVGUOUTUPVAVEUOUTRVFCATS
+    VFUPVARVECBTUDUEUIUFUGUHUJ $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
