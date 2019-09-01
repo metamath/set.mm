@@ -57772,6 +57772,18 @@ $)
     UKKZUMULKZKZUQUOUPEZVBVEUODEUPDEUQVHJVFCAQCBQUOUPPUCVGUOUTUPVAVEUOUTRVFCATS
     VFUPVARVECBTUDUEUIUFUGUHUJ $.
 
+  $( Ordering property of multiplication for positive integers.  (Contributed
+     by Jim Kingdon, 31-Aug-2019.)  (New usage is discouraged.) $)
+  ltmpig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
+      ( A <N B <-> ( C .N A ) <N ( C .N B ) ) ) $=
+    ( cnpi wcel clti wbr cmi co wb wa comu com pinn syl2an ltpiord mulclpi wceq
+    adantr mulpiord wi c0 elni2 w3a iba nnmord sylan9bbr 3exp1 imp4b syl5bi imp
+    adantl eleq12d bitrd anandis ancoms 3bitr4d 3impa ) ADEZBDEZCDEZABFGZCAHIZC
+    BHIZFGZJUSUTKZVAKABEZCALIZCBLIZEZVBVEVFVAVGVJJZUSAMEZBMEZVAVKUAUTANBNVACMEZ
+    UBCEZKVLVMKVKCUCVLVMVNVOVKVLVMVNVOVKVOVGVGVOKVLVMVNUDVJVOVGUEABCUFUGUHUIUJO
+    UKVFVBVGJVAABPSVAVFVEVJJZVAUSUTVPVAUSKZVAUTKZKZVEVCVDEZVJVQVCDEVDDEVEVTJVRC
+    AQCBQVCVDPOVSVCVHVDVIVQVCVHRVRCATSVRVDVIRVQCBTULUMUNUOUPUQUR $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
