@@ -57912,6 +57912,18 @@ $)
 
   $}
 
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $d x y z w v u D $.
+    $( Equivalence relation for positive fractions in terms of positive
+       integers.  (Contributed by NM, 27-Aug-1995.)
+       (New usage is discouraged.) $)
+    enqbreq $p |- ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. ) ) ->
+          ( <. A , B >. ~Q <. C , D >. <-> ( A .N D ) = ( B .N C ) ) ) $=
+      ( vx vy vz vw vv vu cmi ceq cnpi df-enq ecopoveq ) EFGHIJABCDKLMEFGHIJNO
+      $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
