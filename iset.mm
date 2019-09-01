@@ -57369,6 +57369,23 @@ $(
 ###############################################################################
 
 This section derives the basics of real and complex numbers.
+
+To construct the real numbers constructively, we follow two main sources.
+The first is Metamath Proof Explorer, which has the advantage of being
+already formalized in metamath. Its disadvantage, for our purposes, is that
+it assumes the law of the excluded middle throughout. Since we have already
+developed natural numbers ( for example, ~ nna0 and similar theorems ), going
+from there to positive integers ( ~ df-ni ) and then positive rational numbers
+( ~ df-nq ) does not involve any major change in approach compared with
+the Metamath Proof Explorer.
+
+It is when we proceed to Dedekind cuts that we bring in more material from
+Section 11.2 of [HoTT], which focuses on the aspects of Dedekind cuts which
+are different without excluded middle. With excluded middle, it is natural
+to define the cut as the lower set only (as Metamath Proof Explorer does),
+but we define the cut as a pair of both the lower and upper sets, as [HoTT]
+does. There are also differences in how we handle order and replacing
+"not equal to zero" with "apart from zero".
 $)
 
 $(
