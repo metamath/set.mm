@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Create a first-cut list of rename proposals
+# (the result can then be edited, including deleting irrelevant lines)
+# We create a list of labels to rename, but *ONLY* if there's a relevant
+# symbol on the same line (a reasonable heuristic)
+
+# Use like this:
+# ./rename-proposals 'cn' 'cc' 'CC'
+
+old_label_fragment="$1"
+new_label_fragment="$2"
+symbol="$3"
+
+# Use "read -r" to disable backslash interpretation.
+
+grep "${old_label_fragment}.* \$[ap] .* ${symbol} " set.mm |
+while read -r oldlabel info
+do
+  newlabel=`printf %s "$oldlabel" |
+            sed -e "s/${old_label_fragment}/${new_label_fragment}/g" -`
+  printf '%s\n' "$oldlabel $newlabel $info"
+done

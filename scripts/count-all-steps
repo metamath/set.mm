@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# List proven statements and how long they are within set.mm.
+# This is really slow - it reloads set.mm for each proof.
+# But this is easy and less likely to accidentally merge proofs.
+#
+# This requires a file named "beginning" containing "Beginning" as a line.
+# This is a workaround to make sure we only count real steps
+
+# Make list of statements
+metamath 'read set.mm' 'show statement *' quit quit | \
+  awk '/ \$p / {print $2;}' > statement-list
+
+# Stop at this label, which should be the first deprecated proof.
+stopat='isgrpo'
+
+while read statement
+do
+  if [ "$statement" == "$stopat" ] ; then
+    break
+  fi
+  mylength=$(scripts/count-steps "$statement")
+  echo "$mylength $statement"
+done < statement-list > statement-lengths
+

@@ -9,20 +9,19 @@
 # Some of these verifiers also check for style,
 # so using multiple verifiers can also detect many different style problems.
 #
-# Note that one of the checks is:
-#   metamath 'read set.mm' 'verify proof *' 'verify markup *' exit
+# Note that one of the checks is scripts/verify.
 #
 # We report an error if the list of "discouraged" results is unexpected;
 # this makes it easy to detect changes (which can then be specially reviewed).
-# To regenerate the "discouraged" file, you can do:
-#   metamath 'read set.mm' 'set width 9999' 'show discouraged' quit |
-#   grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' |
-#   LC_ALL=C sort > discouraged.
+# To regenerate the "discouraged" file, you can run scripts/gen-discouraged
 #
-# We typically rewrap the file using:
-#   metamath 'read set.mm' 'write source set.mm /rewrap' quit
+# We typically rewrap the file using scripts/rewrap.
 #
+dist: trusty
+
 language: rust
+jdk:
+  - oraclejdk8
 git:
   depth: 3
 sudo: false
@@ -32,35 +31,23 @@ cache:
 before_install:
   - gcc --version
   - g++ --version
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
+  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then jdk_switcher use "$CUSTOM_JDK"; fi
 install:
+  # Download, build, and install what we need.
+  # NOTE: We install programs in $HOME/bin, so ensure that's on the PATH
+  # (usually it is on any non-Windows system).
   # Get metamath C program and supporting files (to validate against them)
-  # 8/29/18 NM Some mirrors don't allow directory listing
-  # - wget -q -r -np -nd -A .c,.h http://us.metamath.org/metamath/
-  - wget -N -q http://us.metamath.org/downloads/metamath.tar.bz2
-  - wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2
-  # These are now in the repo:
-  # - wget -N -q http://us.metamath.org/mpegif/mmset.html
-  # - wget -N -q http://us.metamath.org/mpegif/mmhil.html
-  # This will be updated, but we need a starting point:
-  - wget -N -q http://us.metamath.org/mpegif/mmbiblio.html
-  ### # 8/29/18 NM bad - overwrites set.mm etc.
-  ### - tar --strip-components=1 -jxf metamath.tar.bz2
-  # 9/2/18 NM extract in a temporary directory to prevent overwriting .mm's
-  - mkdir mmtemp/
-  - cd mmtemp/
-  - tar --strip-components=1 -jxf ../metamath.tar.bz2
-  - mv *.c *.h ..
-  - cd ..
-  # 9/2/18 end
-  - tar --strip-components=1 -jxf symbols.tar.bz2
-  # Compile metamath, a C verifier (and more) by Norm Megill.
-  - gcc *.c -O2 -o metamath
+  - scripts/download-metamath
+  # Build/install metamath, a C verifier (and more) by Norm Megill.
+  - scripts/build-metamath
   # Get mmj2, a Java verifier (and more) by Mel O'Cat and Mario Carneiro
   - wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
   - unzip -q mmj2jar.zip
-  - printf "LoadFile,set.mm\nVerifyProof,*\nParse,*\nRunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\nRunMacro,showDiscouraged,discouraged.new\n" > RunParms.txt
-  - printf "LoadFile,iset.mm\nVerifyProof,*\nParse,*\nRunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\n" > IRunParms.txt
   - jdk_switcher use oraclejdk8
+  ##### 27-Mar-2019 daw TEMPORARY WORKAROUND - modify mmj2 definitionCheck.js
+  ##### so that it looks for "setvar" instead of "set":
+  - sed -i -e 's/"set"/"setvar"/g' macros/definitionCheck.js
   # Install smetamath-rs (smm3), a Rust verifier by Stefan O'Rear
   # See: https://github.com/sorear/smetamath-rs
   - "[ -x  ~/.cargo/bin/smetamath ] || cargo install smetamath --vers 3.0.0"
@@ -68,17 +55,29 @@ install:
   - wget -N -q http://us.metamath.org/downloads/checkmm.cpp
   - g++ -O2 -o checkmm checkmm.cpp
 script:
-  - ./metamath 'read set.mm' 'verify proof *' 'write bibliography mmbiblio.html' 'verify markup */date_skip' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
-  - ./metamath 'read iset.mm' 'verify proof *' 'verify markup *' exit | tee mm.log && [ `egrep -q '?Error|?Warning' < mm.log; echo $?` -eq 1 ]
-  # Sort "show discouraged" results to ignore benign reordering
-  # Regenerate "discouraged" in the same way if you *intend* for this to change
-  # - echo 'Checking if "show discouraged" results are as expected...' && ./metamath 'read set.mm' 'set width 9999' 'show discouraged' quit | grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' | LC_ALL=C sort > discouraged.new && diff -u discouraged discouraged.new
-  - java -Xms512M -Xmx1024M -jar mmj2.jar RunParms.txt | tee mmj2.log && [ `egrep 'Exception|.-..-[0-9]{4}' < mmj2.log | egrep -qv 'I-UT-0015|I-MA-0001'; echo $?` -eq 1 ]
-  - java -Xms512M -Xmx1024M -jar mmj2.jar IRunParms.txt | tee mmj2.log && [ `egrep 'Exception|.-..-[0-9]{4}' < mmj2.log | egrep -qv 'I-UT-0015|I-MA-0001'; echo $?` -eq 1 ]
-  - echo 'Checking if "show discouraged" results are as expected...' && diff -U 0 discouraged discouraged.new
+  # Create mmset.html so we can verify against it.
+  - metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
+  - metamath 'read iset.mm' 'markup mmil.raw.html mmil.html /ALT /CSS' quit
+  - scripts/verify --top_date_skip --extra 'write bibliography mmbiblio.html' set.mm
+  - scripts/verify iset.mm
+  # Verify and also generate 'discouraged.new', and do extra checking
+  # (the 'printf' lets us insert multiple lines):
+  - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel,df-sbc\nRunMacro,showDiscouraged,discouraged.new')" set.mm
+  - echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
+  # Use setparser to check that definitions don't create syntax ambiguities
+  - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' iset.mm
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
+  - scripts/check-raw-html set.mm mmcomplex.raw.html mmdeduction.raw.html mmnatded.raw.html mmnf.raw.html mmset.raw.html mmzfcnd.raw.html
+  - scripts/check-raw-html iset.mm mmil.raw.html
   - echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
   - echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
   - ./checkmm set.mm
   - ./checkmm iset.mm
+  # Generate HTML from raw files into mpegif-html/ and mpeuni-html/
+  - scripts/regen-from-raw --force '/HTML' .regened.html
+  - mkdir -p mpegif-html/
+  - for f in *.regened.html; do mv $f mpegif-html/${f%.regened.html}.html ; done
+  - scripts/regen-from-raw --force '/ALT_HTML' .regened.html
+  - mkdir -p mpeuni-html/
+  - for f in *.regened.html; do mv $f mpeuni-html/${f%.regened.html}.html ; done

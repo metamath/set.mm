@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# Mass rename of set.mm file.  Standard input has form:
+# old-name new-name other-info
+
+# Beware if "old-name" is an ordinary English word!
+
+if [ "$#" -ne 0 ] ; then
+  echo 'Requires 0 arguments (stdin must be the list of renames)' >&2
+  exit 1
+fi
+
+mmfile='set.mm'
+today=$(date '+%d-%b-%y')
+
+# Skip the list of "past renames" so we don't accidentally
+# change any historical info.
+range='/^ *[a-zA-Z0-9._-]+ \$[apef] /,$'
+
+while read old new rest
+do
+  echo "$today $old $new"
+  sed -E -e "${range}s/ $old( |$)/ $new /g" -e 's/ $//' < "$mmfile" \
+    > "$mmfile.tmp"
+  mv "$mmfile.tmp" "$mmfile"
+  for f in $(git ls-files | grep '^mm.*\.html')
+  do
+    sed -E -e "s/ $old( |$)/ $new /g" -e 's/ $//' \
+        -e "s/<A HREF=\"${old}.html\">${old}<\/A>/<A HREF=\"${new}.html\">${new}<\/A>/ig" \
+        < "$f" > "$f.tmp"
+    mv "$f.tmp" "$f"
+  done
+done
+
+echo
+metamath "read $mmfile" 'verify proof *' 'verify markup *' quit

@@ -1,0 +1,19 @@
+#!/bin/sh
+# Report dates and cumulative contributions by those dates in CSV format,
+# with and without the "main" section, for set.mm.
+# Used to generate "Metamath contributions over time" graph.
+# (C) 2018 David A. Wheeler
+# This script is released as open source software under the MIT license.
+# SPDX-License-Identifier: MIT
+
+# Compute dates of .mm file specified in $1 (default set.mm)
+mmfile="${1:-set.mm}"
+
+scripts/calculate-dates set.mm > ,set.csv
+
+sed -E -e '/End .* set-main.mm/,$d' < "$mmfile" > ,set-main.mm
+scripts/calculate-dates ,set-main.mm | sed -e 's/,/,XX/' > ,set-main-xx.csv
+
+join -t , -a 1 -a 2 ,set.csv ,set-main-xx.csv | \
+  sed -E -e '1cDate,Cumulative Total (All),Cumulative Total (Main)' \
+         -e 's/([0-9]),XX/\1,/' -e 's/,XX/,/' > ,combo.csv

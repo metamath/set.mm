@@ -1,4 +1,4 @@
-$( nf.mm - Version of 28-May-2018. $)
+$( nf.mm - Version of 03-Aug-2019. $)
 
 $( Begin $[ set-pred.mm $] $)
 
@@ -11485,7 +11485,7 @@ $(
 
   Here we extend the language of wffs with predicate calculus, which allows us
   to talk about individual objects in a domain of discussion (which for us will
-  be the universe of all sets, so we call them "set variables") and make
+  be the universe of all sets, so we call them "setvar variables") and make
   true/false statements about predicates, which are relationships between
   objects, such as whether or not two objects are equal.  In addition, we
   introduce universal quantification ("for all") in order to make statements
@@ -11493,7 +11493,7 @@ $(
   Later we introduce existential quantification ("there exists", ~ df-ex )
   which is defined in terms of universal quantification.
 
-  Our axioms are really axiom _schemes_, and our wff and set variables are
+  Our axioms are really axiom _schemes_, and our wff and setvar variables are
   metavariables ranging over expressions in an underlying "object language."
   This is explained here:  ~ http://us.metamath.org/mpeuni/mmset.html#axiomnote
 
@@ -11505,7 +11505,7 @@ $(
   (Lemma 9, p. 87, which we prove as theorem ~ spw below).
 
   Theorem ~ spw can be used to prove any instance of ~ sp having no wff
-  metavariables and mutually distinct set variables.  However, it seems that
+  metavariables and mutually distinct setvar variables.  However, it seems that
   ~ sp in its general form cannot be derived from only Tarski's schemes.  We
   do not include B5 i.e.  ~ sp as part of what we call "Tarski's system"
   because we want it to be the smallest set of axioms that is logically
@@ -11530,9 +11530,9 @@ $(
   However, in our system that derives schemes (rather than object language
   theorems) from other schemes, Tarski's S2 is not complete.  For example, we
   cannot derive scheme ~ sp , even though (using ~ spw ) we can derive all
-  instances of it that don't involve wff metavariables or bundled set
-  metavariables.  (Two set metavariables are "bundled" if they can be
-  substituted with the same set metavariable i.e. do not have a $d distinct
+  instances of it that don't involve wff metavariables or bundled setvar
+  metavariables.  (Two setvar metavariables are "bundled" if they can be
+  substituted with the same setvar metavariable i.e. do not have a $d distinct
   variable proviso.)  Later we will introduce auxiliary axiom schemes ~ ax-6 ,
   ~ ax-7 , ~ ax-12 , and ~ ax-11 that are metatheorems of Tarski's system (i.e.
   are logically redundant) but which give our system the property of
@@ -11550,11 +11550,11 @@ $)
 
   $( Declare new symbols needed for pure predicate calculus. $)
   $c A. $. $( "inverted A" universal quantifier (read:  "for all") $)
-  $c set $. $( Individual variable type (read:  "the following is an
-             individual (set) variable" $)
+  $c setvar $. $( Individual variable type (read:  "the following is an
+             individual (setvar) variable" $)
 
-  $( Add 'set' as a typecode. $)
-  $( $j syntax 'set'; $)
+  $( Add 'setvar' as a typecode. $)
+  $( $j syntax 'setvar'; $)
 
   $( Declare some names for individual variables. $)
   $v x $.
@@ -11565,19 +11565,19 @@ $)
   $v u $.
   $v t $.
   $( Let ` x ` be an individual variable. $)
-  vx $f set x $.
+  vx $f setvar x $.
   $( Let ` y ` be an individual variable. $)
-  vy $f set y $.
+  vy $f setvar y $.
   $( Let ` z ` be an individual variable. $)
-  vz $f set z $.
+  vz $f setvar z $.
   $( Let ` w ` be an individual variable. $)
-  vw $f set w $.
+  vw $f setvar w $.
   $( Let ` v ` be an individual variable. $)
-  vv $f set v $.
+  vv $f setvar v $.
   $( Let ` u ` be an individual variable. $)
-  vu $f set u $.
+  vu $f setvar u $.
   $( Let ` t ` be an individual variable. $)
-  vt $f set t $.
+  vt $f setvar t $.
 
   $( Extend wff definition to include the universal quantifier ('for all').
      ` A. x ph ` is read " ` ph ` (phi) is true for all ` x ` ."  Typically, in
@@ -12417,7 +12417,7 @@ $)
   $( $j syntax 'class'; $)
 
   $( This syntax construction states that a variable ` x ` , which has been
-     declared to be a set variable by $f statement vx, is also a class
+     declared to be a setvar variable by $f statement vx, is also a class
      expression.  This can be justified informally as follows.  We know that
      the class builder ` { y | y e. x } ` is a class by ~ cab .  Since (when
      ` y ` is distinct from ` x ` ) we have ` x = { y | y e. x } ` by
@@ -12427,7 +12427,7 @@ $)
      be considered to be a class."
 
      While it is tempting and perhaps occasionally useful to view ~ cv as a
-     "type conversion" from a set variable to a class variable, keep in mind
+     "type conversion" from a setvar variable to a class variable, keep in mind
      that ~ cv is intrinsically no different from any other class-building
      syntax such as ~ cab , ~ cun , or ~ c0 .
 
@@ -13005,12 +13005,12 @@ $)
        [KalishMontague] p. 87.  While it appears that ~ sp in its general form
        does not follow from Tarski's FOL axiom schemes, from this theorem we
        can prove any instance of ~ sp having no wff metavariables and mutually
-       distinct set variables (see ~ ax11wdemo for an example of the procedure
-       to eliminate the hypothesis).  Other approximations of ~ sp are ~ spfw
-       (minimal distinct variable requirements), ~ spnfw (when ` x ` is not
-       free in ` -. ph ` ), ~ spvw (when ` x ` does not appear in ` ph ` ),
-       ~ sptruw (when ` ph ` is true), and ~ spfalw (when ` ph ` is false).
-       (Contributed by NM, 9-Apr-2017.) $)
+       distinct setvar variables (see ~ ax11wdemo for an example of the
+       procedure to eliminate the hypothesis).  Other approximations of ~ sp
+       are ~ spfw (minimal distinct variable requirements), ~ spnfw (when ` x `
+       is not free in ` -. ph ` ), ~ spvw (when ` x ` does not appear in
+       ` ph ` ), ~ sptruw (when ` ph ` is true), and ~ spfalw (when ` ph ` is
+       false).  (Contributed by NM, 9-Apr-2017.) $)
     spw $p |- ( A. x ph -> ph ) $=
       ( wal wi ax-17 ax-5 weq biimprd equcoms spimvw syl56 biimpd mpg ) ACFZBGZ
       QAGDQQDFRDFBDFAQDHQBDIBADCBAGCDCDJZABEKLMNABCDSABEOMP $.
@@ -13305,7 +13305,7 @@ $(
   ~ ax-7 , ~ ax-12 , and ~ ax-11 , which are not part of Tarski's axiom
   schemes.  They are used (and we conjecture are required) to make our system
   "metalogically complete" i.e. able to prove directly all possible schemes
-  with wff and set metavariables, bundled or not, whose object-language
+  with wff and setvar metavariables, bundled or not, whose object-language
   instances are valid.  ( ~ ax-11 has been proved to be required; see
   ~ http://us.metamath.org/award2003.html#9a .  Metalogical independence of the
   other three are open problems.)
@@ -13313,12 +13313,12 @@ $(
   (There are additional predicate calculus axiom schemes included in set.mm
   such as ~ ax-4 , but they can all be proved as theorems from the above.)
 
-  Terminology:  Two set (individual) metavariables are "bundled" in an axiom or
-  theorem scheme when there is no distinct variable constraint ($d) imposed on
-  them.  (The term "bundled" is due to Raph Levien.)  For example, the ` x `
+  Terminology:  Two setvar (individual) metavariables are "bundled" in an axiom
+  or theorem scheme when there is no distinct variable constraint ($d) imposed
+  on them.  (The term "bundled" is due to Raph Levien.)  For example, the ` x `
   and ` y ` in ~ ax9 are bundled, but they are not in ~ ax9v . We also say that
-  a scheme is bundled when it has at least one pair of bundled set
-  metavariables.  If distinct variable conditions are added to all set
+  a scheme is bundled when it has at least one pair of bundled setvar
+  metavariables.  If distinct variable conditions are added to all setvar
   metavariable pairs in a bundled scheme, we call that the "principal" instance
   of the bundled scheme.  For example, ~ ax9v is the principal instance of
   ~ ax9 . Whenever a common variable is substituted for two or more bundled
@@ -13336,9 +13336,9 @@ $(
   prove any object-language instance of ~ ax-6 , ~ ax-7 , ~ ax-11 , and ~ ax-12
   . "Translating" this to Metamath, it means that Tarski's axioms can prove any
   substitution instance of ~ ax-6 , ~ ax-7 , ~ ax-11 , or ~ ax-12 in which (1)
-  there are no wff metavariables and (2) all set metavariables are mutually
+  there are no wff metavariables and (2) all setvr metavariables are mutually
   distinct i.e. are not bundled.  In effect this is mimicking the object
-  language by pretending that each set metavariable is an object-language
+  language by pretending that each setvar metavariable is an object-language
   variable.  (There may also be specific instances with wff metavariables
   and/or bundling that are directly provable from Tarski's axiom schemes, but
   it isn't guaranteed.  Whether all of them are possible is part of the still
@@ -13516,13 +13516,13 @@ $(
   (outside of Metamath) as theorem schemes of Tarski's system.  These are
   needed to give our system the property of "metalogical completeness," which
   means that we can prove (with Metamath) all possible schemes expressible in
-  our language of wff metavariables ranging over object-language wffs and set
-  metavariables ranging over object-language individual variables.
+  our language of wff metavariables ranging over object-language wffs and
+  setvar metavariables ranging over object-language individual variables.
 
   To show that these schemes are valid metatheorems of Tarski's system S2,
   above we proved from Tarski's system theorems ~ ax6w , ~ ax7w , ~ ax12w ,
   and ~ ax11w , which show that any object-language instance of these schemes
-  (emulated by having no wff metavariables and requiring all set
+  (emulated by having no wff metavariables and requiring all setvar
   metavariables to be mutually distinct) can be proved using only the schemes
   in Tarski's system S2.
 
@@ -13763,8 +13763,8 @@ $)
   19.8a $p |- ( ph -> E. x ph ) $=
     ( wn wal wex sp con2i df-ex sylibr ) AACZBDZCABEKAJBFGABHI $.
 
-  $( Theorem 19.2 of [Margaris] p. 89, generalized to use two set variables.
-     (Contributed by O'Cat, 31-Mar-2008.) $)
+  $( Theorem 19.2 of [Margaris] p. 89, generalized to use two setvar
+     variables.  (Contributed by O'Cat, 31-Mar-2008.) $)
   19.2g $p |- ( A. x ph -> E. y ph ) $=
     ( wex 19.8a sps ) AACDBACEF $.
 
@@ -15976,8 +15976,8 @@ $)
     $v f $.
     $v g $.
     $( Define temporary individual variables. $)
-    cbvex4v.vf $f set f $.
-    cbvex4v.vg $f set g $.
+    cbvex4v.vf $f setvar f $.
+    cbvex4v.vg $f setvar g $.
     $d w z ch $.  $d u v ph $.  $d x y ps $.  $d f g ps $.  $d f w $.
     $d g z $.  $d u v w x y z $.
     cbvex4v.1 $e |- ( ( x = v /\ y = u ) -> ( ph <-> ps ) ) $.
@@ -16002,13 +16002,14 @@ $)
 
   ${
     $d x z $.  $d y z $.
-    $( When the class variables in definition ~ df-clel are replaced with set
-       variables, this theorem of predicate calculus is the result.  This
-       theorem provides part of the justification for the consistency of that
-       definition, which "overloads" the set variables in ~ wel with the class
-       variables in ~ wcel .  Note:  This proof is referenced on the Metamath
-       Proof Explorer Home Page and shouldn't be changed.  (Contributed by NM,
-       28-Jan-2004.)  (Proof modification is discouraged.) $)
+    $( When the class variables in definition ~ df-clel are replaced with
+       setvar variables, this theorem of predicate calculus is the result.
+       This theorem provides part of the justification for the consistency of
+       that definition, which "overloads" the setvar variables in ~ wel with
+       the class variables in ~ wcel .  Note:  This proof is referenced on the
+       Metamath Proof Explorer Home Page and shouldn't be changed.
+       (Contributed by NM, 28-Jan-2004.)
+       (Proof modification is discouraged.) $)
     cleljust $p |- ( x e. y <-> E. z ( z = x /\ z e. y ) ) $=
       ( weq wel wa wex ax-17 elequ1 equsexh bicomi ) CADCBEZFCGABEZLMCAMCHCABIJ
       K $.
@@ -16016,12 +16017,12 @@ $)
 
   ${
     $d x z $.  $d y z $.
-    $( When the class variables in definition ~ df-clel are replaced with set
-       variables, this theorem of predicate calculus is the result.  This
-       theorem provides part of the justification for the consistency of that
-       definition, which "overloads" the set variables in ~ wel with the class
-       variables in ~ wcel .  (Contributed by NM, 28-Jan-2004.)  (Revised by
-       Mario Carneiro, 21-Dec-2016.) $)
+    $( When the class variables in definition ~ df-clel are replaced with
+       setvar variables, this theorem of predicate calculus is the result.
+       This theorem provides part of the justification for the consistency of
+       that definition, which "overloads" the setvar variables in ~ wel with
+       the class variables in ~ wcel .  (Contributed by NM, 28-Jan-2004.)
+       (Revised by Mario Carneiro, 21-Dec-2016.) $)
     cleljustALT $p |- ( x e. y <-> E. z ( z = x /\ z e. y ) ) $=
       ( weq wel wa wex nfv elequ1 equsex bicomi ) CADCBEZFCGABEZLMCAMCHCABIJK
       $.
@@ -17295,8 +17296,8 @@ $)
        This axiom is redundant if we include ~ ax-17 ; see theorem ~ ax16 .
        Alternately, ~ ax-17 becomes logically redundant in the presence of this
        axiom, but without ~ ax-17 we lose the more powerful metalogic that
-       results from being able to express the concept of a set variable not
-       occurring in a wff (as opposed to just two set variables being
+       results from being able to express the concept of a setvar variable not
+       occurring in a wff (as opposed to just two setvar variables being
        distinct).  We retain ~ ax-16 here to provide logical completeness for
        systems with the simpler metalogic that results from omitting ~ ax-17 ,
        which might be easier to study for some theoretical purposes.
@@ -17462,9 +17463,9 @@ $)
        together ~ hbn , ~ hbal , and ~ hbim .  However, if we omit this axiom,
        our development would be quite inconvenient since we could work only
        with specific instances of wffs containing no wff variables - this axiom
-       introduces the concept of a set variable not occurring in a wff (as
-       opposed to just two set variables being distinct).  (Contributed by NM,
-       19-Aug-2017.)  (New usage is discouraged.)  (Proof modification
+       introduces the concept of a setvar variable not occurring in a wff (as
+       opposed to just two setvar variables being distinct).  (Contributed by
+       NM, 19-Aug-2017.)  (New usage is discouraged.)  (Proof modification
        discouraged.) $)
     ax17o $p |- ( ph -> A. x ph ) $=
       ( ax-17 ) ABC $.
@@ -19701,18 +19702,18 @@ $)
   $( Introduce the class builder or class abstraction notation ("the class of
      sets ` x ` such that ` ph ` is true").  Our class variables ` A ` ,
      ` B ` , etc. range over class builders (implicitly in the case of defined
-     class terms such as ~ df-nul ).  Note that a set variable can be expressed
-     as a class builder per theorem ~ cvjust , justifying the assignment of set
-     variables to class variables via the use of ~ cv . $)
+     class terms such as ~ df-nul ).  Note that a setvar variable can be
+     expressed as a class builder per theorem ~ cvjust , justifying the
+     assignment of setvar variables to class variables via the use of ~ cv . $)
   cab $a class { x | ph } $.
 
   $( --- Start of old code before overloading prevention patch. $)
   $(
-  @( A set variable is a class expression.  The syntax " ` class x ` " can be
-     viewed as an abbreviation for " ` class { y | y e. x } ` " (a special case
-     of ~ cab ), where ` y ` is distinct from ` x ` .  See the discussion under
-     the definition of class in [Jech] p. 4.  Note that ` { y | y e. x } = x `
-     by ~ cvjust . @)
+  @( A setvar variable is a class expression.  The syntax " ` class x ` " can
+     be viewed as an abbreviation for " ` class { y | y e. x } ` " (a special
+     case of ~ cab ), where ` y ` is distinct from ` x ` .  See the discussion
+     under the definition of class in [Jech] p. 4.  Note that
+     ` { y | y e. x } = x ` by ~ cvjust . @)
   cv @a class x @.
   $)
   $( --- End of old code before overloading prevention patch. $)
@@ -19822,25 +19823,25 @@ $)
 
 
   $( Let ` e ` be an individual variable. $)
-  ve $f set e $.
+  ve $f setvar e $.
   $( Let ` f ` be an individual variable. $)
-  vf $f set f $.
+  vf $f setvar f $.
   $( Let ` g ` be an individual variable. $)
-  vg $f set g $.
+  vg $f setvar g $.
   $( Let ` h ` be an individual variable. $)
-  vh $f set h $.
+  vh $f setvar h $.
   $( Let ` i ` be an individual variable. $)
-  vi $f set i $.
+  vi $f setvar i $.
   $( Let ` j ` be an individual variable. $)
-  vj $f set j $.
+  vj $f setvar j $.
   $( Let ` k ` be an individual variable. $)
-  vk $f set k $.
+  vk $f setvar k $.
   $( Let ` m ` be an individual variable. $)
-  vm $f set m $.
+  vm $f setvar m $.
   $( Let ` n ` be an individual variable. $)
-  vn $f set n $.
+  vn $f setvar n $.
   $( Let ` o ` be an individual variable. $)
-  vo $f set o $.
+  vo $f setvar o $.
   $( Let ` E ` be a class variable. $)
   cE $f class E $.
 
@@ -19912,23 +19913,23 @@ $)
   $( Let ` Z ` be a class variable. $)
   cZ $f class Z $.
   $( Let ` s ` be an individual variable. $)
-  vs $f set s $.
+  vs $f setvar s $.
   $( Let ` r ` be an individual variable. $)
-  vr $f set r $.
+  vr $f setvar r $.
   $( Let ` q ` be an individual variable. $)
-  vq $f set q $.
+  vq $f setvar q $.
   $( Let ` p ` be an individual variable. $)
-  vp $f set p $.
+  vp $f setvar p $.
   $( Let ` a ` be an individual variable. $)
-  va $f set a $.
+  va $f setvar a $.
   $( Let ` b ` be an individual variable. $)
-  vb $f set b $.
+  vb $f setvar b $.
   $( Let ` c ` be an individual variable. $)
-  vc $f set c $.
+  vc $f setvar c $.
   $( Let ` d ` be an individual variable. $)
-  vd $f set d $.
+  vd $f setvar d $.
   $( Let ` l ` be an individual variable. $)
-  vl $f set l $.
+  vl $f setvar l $.
 
   $( --- Start of old code before overloading prevention patch. $)
   $(
@@ -19955,21 +19956,21 @@ $)
 
      This is our first use of the ` e. ` symbol to connect classes instead of
      sets.  The syntax definition ~ wcel , which extends or "overloads" the
-     ~ wel definition connecting set variables, requires that both sides of
+     ~ wel definition connecting setvar variables, requires that both sides of
      ` e. ` be a class.  In ~ df-cleq and ~ df-clel , we introduce a new kind
      of variable (class variable) that can substituted with expressions such as
      ` { y | ph } ` .  In the present definition, the ` x ` on the left-hand
-     side is a set variable.  Syntax definition ~ cv allows us to substitute a
-     set variable ` x ` for a class variable: all sets are classes by ~ cvjust
-     (but not necessarily vice-versa).  For a full description of how classes
-     are introduced and how to recover the primitive language, see the
+     side is a setvar variable.  Syntax definition ~ cv allows us to substitute
+     a setvar variable ` x ` for a class variable: all sets are classes by
+     ~ cvjust (but not necessarily vice-versa).  For a full description of how
+     classes are introduced and how to recover the primitive language, see the
      discussion in Quine (and under ~ abeq2 for a quick overview).
 
      Because class variables can be substituted with compound expressions and
-     set variables cannot, it is often useful to convert a theorem containing a
-     free set variable to a more general version with a class variable.  This
-     is done with theorems such as ~ vtoclg which is used, for example, to
-     convert elirrv in set.mm to elirr in set.mm.
+     setvar variables cannot, it is often useful to convert a theorem
+     containing a free setvar variable to a more general version with a class
+     variable.  This is done with theorems such as ~ vtoclg which is used, for
+     example, to convert elirrv in set.mm to elirr in set.mm.
 
      This is called the "axiom of class comprehension" by [Levy] p. 338, who
      treats the theory of classes as an extralogical extension to our logic and
@@ -20071,12 +20072,12 @@ $)
 
   ${
     $d x y z $.
-    $( Every set is a class.  Proposition 4.9 of [TakeutiZaring] p. 13.  This
-       theorem shows that a set variable can be expressed as a class
+    $( Every setvar is a class.  Proposition 4.9 of [TakeutiZaring] p. 13.
+       This theorem shows that a setvar variable can be expressed as a class
        abstraction.  This provides a motivation for the class syntax
-       construction ~ cv , which allows us to substitute a set variable for a
-       class variable.  See also ~ cab and ~ df-clab .  Note that this is not a
-       rigorous justification, because ~ cv is used as part of the proof of
+       construction ~ cv , which allows us to substitute a setvar variable for
+       a class variable.  See also ~ cab and ~ df-clab .  Note that this is not
+       a rigorous justification, because ~ cv is used as part of the proof of
        this theorem, but a careful argument can be made outside of the
        formalism of Metamath, for example as is done in Chapter 4 of Takeuti
        and Zaring.  See also the discussion under the definition of class in
@@ -20095,11 +20096,11 @@ $)
        justification.  Note that like ~ df-cleq it extends or "overloads" the
        use of the existing membership symbol, but unlike ~ df-cleq it does not
        strengthen the set of valid wffs of logic when the class variables are
-       replaced with set variables (see ~ cleljust ), so we don't include any
-       set theory axiom as a hypothesis.  See also comments about the syntax
-       under ~ df-clab .  Alternate definitions of ` A e. B ` (but that require
-       either ` A ` or ` B ` to be a set) are shown by ~ clel2 , ~ clel3 , and
-       ~ clel4 .
+       replaced with setvar variables (see ~ cleljust ), so we don't include
+       any set theory axiom as a hypothesis.  See also comments about the
+       syntax under ~ df-clab .  Alternate definitions of ` A e. B ` (but that
+       require either ` A ` or ` B ` to be a set) are shown by ~ clel2 ,
+       ~ clel3 , and ~ clel4 .
 
        This is called the "axiom of membership" by [Levy] p. 338, who treats
        the theory of classes as an extralogical extension to our logic and set
@@ -21056,7 +21057,7 @@ $)
        instance of zfauscl that occurs in the proof of inex1 ).  Conversely, to
        convert a theorem with a class variable ` A ` to one with ` ph ` , we
        substitute ` { x | ph } ` for ` A ` throughout and simplify, where ` x `
-       and ` ph ` are new set and wff variables not already in the wff.  An
+       and ` ph ` are new setvar and wff variables not already in the wff.  An
        example is cp in set.mm , which derives a formula containing wff
        variables from substitution instances of the class variables in its
        equivalent formulation cplem2 in set.mm.  For more information on class
@@ -24402,8 +24403,8 @@ $)
      Also Definition 2.9 of [Quine] p. 19.  (Contributed by NM, 5-Aug-1993.) $)
   df-v $a |- _V = { x | x = x } $.
 
-  $( All set variables are sets (see ~ isset ).  Theorem 6.8 of [Quine] p. 43.
-     (Contributed by NM, 5-Aug-1993.) $)
+  $( All setvar variables are sets (see ~ isset ).  Theorem 6.8 of [Quine]
+     p. 43.  (Contributed by NM, 5-Aug-1993.) $)
   vex $p |- x e. _V $=
     ( cv cvv wcel wceq eqid df-v abeq2i mpbir ) ABZCDJJEZJFKACAGHI $.
 
@@ -24974,15 +24975,15 @@ $)
       vtocldf.4 $e |- F/ x ph $.
       vtocldf.5 $e |- ( ph -> F/_ x A ) $.
       vtocldf.6 $e |- ( ph -> F/ x ch ) $.
-      $( Implicit substitution of a class for a set variable.  (Contributed by
-         Mario Carneiro, 15-Oct-2016.) $)
+      $( Implicit substitution of a class for a setvar variable.  (Contributed
+         by Mario Carneiro, 15-Oct-2016.) $)
       vtocldf $p |- ( ph -> ch ) $=
         ( wnfc wnf cv wceq wb wi wal alrimi wcel ex vtoclgft syl221anc ) ADEMCD
         NDOEPZBCQZRZDSBDSEFUACKLAUGDJAUEUFHUBTABDJITGBCDEFUCUD $.
     $}
 
     $d x A $.  $d x ph $.  $d x ch $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        Mario Carneiro, 15-Oct-2016.) $)
     vtocld $p |- ( ph -> ch ) $=
       ( nfv nfcvd nfvd vtocldf ) ABCDEFGHIADJADEKACDLM $.
@@ -24994,7 +24995,7 @@ $)
     vtoclf.2 $e |- A e. _V $.
     vtoclf.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtoclf.4 $e |- ph $.
-    $( Implicit substitution of a class for a set variable.  This is a
+    $( Implicit substitution of a class for a setvar variable.  This is a
        generalization of ~ chvar .  (Contributed by NM, 30-Aug-1993.) $)
     vtoclf $p |- ps $=
       ( cv wceq wex wi isseti biimpd eximi ax-mp 19.36i mpg ) ABCABCECIDJZCKABL
@@ -25006,7 +25007,7 @@ $)
     vtocl.1 $e |- A e. _V $.
     vtocl.2 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtocl.3 $e |- ph $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 30-Aug-1993.) $)
     vtocl $p |- ps $=
       ( nfv vtoclf ) ABCDBCHEFGI $.
@@ -25018,8 +25019,8 @@ $)
     vtocl2.2 $e |- B e. _V $.
     vtocl2.3 $e |- ( ( x = A /\ y = B ) -> ( ph <-> ps ) ) $.
     vtocl2.4 $e |- ph $.
-    $( Implicit substitution of classes for set variables.  (Contributed by NM,
-       26-Jul-1995.)  (Proof shortened by Andrew Salmon, 8-Jun-2011.) $)
+    $( Implicit substitution of classes for setvar variables.  (Contributed by
+       NM, 26-Jul-1995.)  (Proof shortened by Andrew Salmon, 8-Jun-2011.) $)
     vtocl2 $p |- ps $=
       ( wal wi wex cv wceq isseti wa eeanv biimpd 2eximi sylbir 19.36v 19.36aiv
       mp2an exbii mpbi ax-gen mpg ) ADKZBCUIBCABLZDMZCMZUIBLZCMCNEOZCMZDNFOZDMZ
@@ -25034,8 +25035,8 @@ $)
     vtocl3.3 $e |- C e. _V $.
     vtocl3.4 $e |- ( ( x = A /\ y = B /\ z = C ) -> ( ph <-> ps ) ) $.
     vtocl3.5 $e |- ph $.
-    $( Implicit substitution of classes for set variables.  (Contributed by NM,
-       3-Jun-1995.)  (Proof shortened by Andrew Salmon, 8-Jun-2011.) $)
+    $( Implicit substitution of classes for setvar variables.  (Contributed by
+       NM, 3-Jun-1995.)  (Proof shortened by Andrew Salmon, 8-Jun-2011.) $)
     vtocl3 $p |- ps $=
       ( wal wi wex cv wceq isseti w3a eeeanv biimpd 2eximi sylbir 19.36v 2exbii
       eximi mp3an mpbi exbii 19.36aiv gen2 mpg ) AENZDNZBCUOBCUNBOZDPZCPZUOBOZC
@@ -25050,7 +25051,7 @@ $)
     vtoclb.2 $e |- ( x = A -> ( ph <-> ch ) ) $.
     vtoclb.3 $e |- ( x = A -> ( ps <-> th ) ) $.
     vtoclb.4 $e |- ( ph <-> ps ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 23-Dec-1993.) $)
     vtoclb $p |- ( ch <-> th ) $=
       ( wb cv wceq bibi12d vtocl ) ABKCDKEFGELFMACBDHINJO $.
@@ -25061,9 +25062,10 @@ $)
     vtoclgf.2 $e |- F/ x ps $.
     vtoclgf.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtoclgf.4 $e |- ph $.
-    $( Implicit substitution of a class for a set variable, with bound-variable
-       hypotheses in place of distinct variable restrictions.  (Contributed by
-       NM, 21-Sep-2003.)  (Proof shortened by Mario Carneiro, 10-Oct-2016.) $)
+    $( Implicit substitution of a class for a setvar variable, with
+       bound-variable hypotheses in place of distinct variable restrictions.
+       (Contributed by NM, 21-Sep-2003.)  (Proof shortened by Mario Carneiro,
+       10-Oct-2016.) $)
     vtoclgf $p |- ( A e. V -> ps ) $=
       ( wcel cvv elex cv wceq wex issetf mpbii exlimi sylbi syl ) DEJDKJZBDELUA
       CMDNZCOBCDFPUBBCGUBABIHQRST $.
@@ -25073,7 +25075,7 @@ $)
     $d x A $.  $d x ps $.
     vtoclg.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtoclg.2 $e |- ph $.
-    $( Implicit substitution of a class expression for a set variable.
+    $( Implicit substitution of a class expression for a setvar variable.
        (Contributed by NM, 17-Apr-1995.) $)
     vtoclg $p |- ( A e. V -> ps ) $=
       ( nfcv nfv vtoclgf ) ABCDECDHBCIFGJ $.
@@ -25084,7 +25086,7 @@ $)
     vtoclbg.1 $e |- ( x = A -> ( ph <-> ch ) ) $.
     vtoclbg.2 $e |- ( x = A -> ( ps <-> th ) ) $.
     vtoclbg.3 $e |- ( ph <-> ps ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 29-Apr-1994.) $)
     vtoclbg $p |- ( A e. V -> ( ch <-> th ) ) $=
       ( wb cv wceq bibi12d vtoclg ) ABKCDKEFGELFMACBDHINJO $.
@@ -25099,7 +25101,7 @@ $)
     vtocl2gf.6 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtocl2gf.7 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl2gf.8 $e |- ph $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 25-Apr-1995.) $)
     vtocl2gf $p |- ( ( A e. V /\ B e. W ) -> ch ) $=
       ( wcel cvv wi elex nfel1 nfim cv wceq imbi2d vtoclgf mpan9 ) FHRFSRZGIRCF
@@ -25121,7 +25123,7 @@ $)
     vtocl3gf.5 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl3gf.6 $e |- ( z = C -> ( ch <-> th ) ) $.
     vtocl3gf.7 $e |- ph $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 10-Aug-2013.)  (Revised by Mario Carneiro, 10-Oct-2016.) $)
     vtocl3gf $p |- ( ( A e. V /\ B e. W /\ C e. X ) -> th ) $=
       ( wcel cvv wa elex wi nfel1 nfim wceq imbi2d vtoclgf vtocl2gf mpan9 3impb
@@ -25134,8 +25136,8 @@ $)
     vtocl2g.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtocl2g.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl2g.3 $e |- ph $.
-    $( Implicit substitution of 2 classes for 2 set variables.  (Contributed by
-       NM, 25-Apr-1995.) $)
+    $( Implicit substitution of 2 classes for 2 setvar variables.  (Contributed
+       by NM, 25-Apr-1995.) $)
     vtocl2g $p |- ( ( A e. V /\ B e. W ) -> ch ) $=
       ( nfcv nfv vtocl2gf ) ABCDEFGHIDFMEFMEGMBDNCENJKLO $.
   $}
@@ -25146,7 +25148,7 @@ $)
     vtoclgaf.2 $e |- F/ x ps $.
     vtoclgaf.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtoclgaf.4 $e |- ( x e. B -> ph ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 17-Feb-2006.)  (Revised by Mario Carneiro, 10-Oct-2016.) $)
     vtoclgaf $p |- ( A e. B -> ps ) $=
       ( wcel cv wi nfel1 nfim wceq eleq1 imbi12d vtoclgf pm2.43i ) DEJZBCKZEJZA
@@ -25157,7 +25159,7 @@ $)
     $d x y A $.  $d x y B $.  $d x ps $.
     vtoclga.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtoclga.2 $e |- ( x e. B -> ph ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 20-Aug-1995.) $)
     vtoclga $p |- ( A e. B -> ps ) $=
       ( nfcv nfv vtoclgaf ) ABCDECDHBCIFGJ $.
@@ -25173,8 +25175,8 @@ $)
     vtocl2gaf.3 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtocl2gaf.4 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl2gaf.5 $e |- ( ( x e. C /\ y e. D ) -> ph ) $.
-    $( Implicit substitution of 2 classes for 2 set variables.  (Contributed by
-       NM, 10-Aug-2013.) $)
+    $( Implicit substitution of 2 classes for 2 setvar variables.  (Contributed
+       by NM, 10-Aug-2013.) $)
     vtocl2gaf $p |- ( ( A e. C /\ B e. D ) -> ch ) $=
       ( wcel wa wi cv nfel1 nfan nfim wceq eleq1 anbi1d imbi12d anbi2d vtocl2gf
       nfv pm2.43i ) FHRZGIRZSZCDUAZHRZEUAZIRZSZATUMUSSZBTUOCTDEFGHIJKLVABDUMUSD
@@ -25188,8 +25190,8 @@ $)
     vtocl2ga.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtocl2ga.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl2ga.3 $e |- ( ( x e. C /\ y e. D ) -> ph ) $.
-    $( Implicit substitution of 2 classes for 2 set variables.  (Contributed by
-       NM, 20-Aug-1995.) $)
+    $( Implicit substitution of 2 classes for 2 setvar variables.  (Contributed
+       by NM, 20-Aug-1995.) $)
     vtocl2ga $p |- ( ( A e. C /\ B e. D ) -> ch ) $=
       ( nfcv nfv vtocl2gaf ) ABCDEFGHIDFMEFMEGMBDNCENJKLO $.
   $}
@@ -25210,8 +25212,8 @@ $)
     vtocl3gaf.5 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl3gaf.6 $e |- ( z = C -> ( ch <-> th ) ) $.
     vtocl3gaf.7 $e |- ( ( x e. R /\ y e. S /\ z e. T ) -> ph ) $.
-    $( Implicit substitution of 3 classes for 3 set variables.  (Contributed by
-       NM, 10-Aug-2013.)  (Revised by Mario Carneiro, 11-Oct-2016.) $)
+    $( Implicit substitution of 3 classes for 3 setvar variables.  (Contributed
+       by NM, 10-Aug-2013.)  (Revised by Mario Carneiro, 11-Oct-2016.) $)
     vtocl3gaf $p |- ( ( A e. R /\ B e. S /\ C e. T ) -> th ) $=
       ( wcel w3a cv nfel1 nf3an nfim wceq eleq1 3anbi1d imbi12d 3anbi2d 3anbi3d
       wi nfv vtocl3gf pm2.43i ) HKUGZILUGZJMUGZUHZDEUIZKUGZFUIZLUGZGUIZMUGZUHZA
@@ -25228,8 +25230,8 @@ $)
     vtocl3ga.2 $e |- ( y = B -> ( ps <-> ch ) ) $.
     vtocl3ga.3 $e |- ( z = C -> ( ch <-> th ) ) $.
     vtocl3ga.4 $e |- ( ( x e. D /\ y e. R /\ z e. S ) -> ph ) $.
-    $( Implicit substitution of 3 classes for 3 set variables.  (Contributed by
-       NM, 20-Aug-1995.) $)
+    $( Implicit substitution of 3 classes for 3 setvar variables.  (Contributed
+       by NM, 20-Aug-1995.) $)
     vtocl3ga $p |- ( ( A e. D /\ B e. R /\ C e. S ) -> th ) $=
       ( nfcv nfv vtocl3gaf ) ABCDEFGHIJKLMEHRFHRGHRFIRGIRGJRBESCFSDGSNOPQT $.
   $}
@@ -25237,7 +25239,7 @@ $)
   ${
     $d x A $.  $d x ph $.
     vtocleg.1 $e |- ( x = A -> ph ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 10-Jan-2004.) $)
     vtocleg $p |- ( A e. V -> ph ) $=
       ( wcel cv wceq wex elisset exlimiv syl ) CDFBGCHZBIABCDJMABEKL $.
@@ -25245,7 +25247,7 @@ $)
 
   ${
     $d x A $.
-    $( Implicit substitution of a class for a set variable.  (Closed theorem
+    $( Implicit substitution of a class for a setvar variable.  (Closed theorem
        version of ~ vtoclef .)  (Contributed by NM, 7-Nov-2005.)  (Revised by
        Mario Carneiro, 11-Oct-2016.) $)
     vtoclegft $p |- ( ( A e. B /\ F/ x ph /\
@@ -25260,7 +25262,7 @@ $)
     vtoclef.1 $e |- F/ x ph $.
     vtoclef.2 $e |- A e. _V $.
     vtoclef.3 $e |- ( x = A -> ph ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 18-Aug-1993.) $)
     vtoclef $p |- ph $=
       ( cv wceq wex isseti exlimi ax-mp ) BGCHZBIABCEJMABDFKL $.
@@ -25270,7 +25272,7 @@ $)
     $d x A $.  $d x ph $.
     vtocle.1 $e |- A e. _V $.
     vtocle.2 $e |- ( x = A -> ph ) $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 9-Sep-1993.) $)
     vtocle $p |- ph $=
       ( cvv wcel vtocleg ax-mp ) CFGADABCFEHI $.
@@ -25280,7 +25282,7 @@ $)
     $d x A $.  $d x B $.  $d x ps $.
     vtoclri.1 $e |- ( x = A -> ( ph <-> ps ) ) $.
     vtoclri.2 $e |- A. x e. B ph $.
-    $( Implicit substitution of a class for a set variable.  (Contributed by
+    $( Implicit substitution of a class for a setvar variable.  (Contributed by
        NM, 21-Nov-1994.) $)
     vtoclri $p |- ( A e. B -> ps ) $=
       ( rspec vtoclga ) ABCDEFACEGHI $.
@@ -26525,16 +26527,16 @@ $)
        completely revised the foundations of mathematics!
 
        Another mainstream formalization of set theory, devised by von Neumann,
-       Bernays, and Goedel, uses class variables rather than set variables as
-       its primitives.  The axiom system NBG in [Mendelson] p. 225 is suitable
-       for a Metamath encoding.  NBG is a conservative extension of ZF in that
-       it proves exactly the same theorems as ZF that are expressible in the
-       language of ZF. An advantage of NBG is that it is finitely axiomatizable
-       - the Axiom of Replacement can be broken down into a finite set of
-       formulas that eliminate its wff metavariable.  Finite axiomatizability
-       is required by some proof languages (although not by Metamath).  There
-       is a stronger version of NBG called Morse-Kelley (axiom system MK in
-       [Mendelson] p. 287).
+       Bernays, and Goedel, uses class variables rather than setvar variables
+       as its primitives.  The axiom system NBG in [Mendelson] p. 225 is
+       suitable for a Metamath encoding.  NBG is a conservative extension of ZF
+       in that it proves exactly the same theorems as ZF that are expressible
+       in the language of ZF. An advantage of NBG is that it is finitely
+       axiomatizable - the Axiom of Replacement can be broken down into a
+       finite set of formulas that eliminate its wff metavariable.  Finite
+       axiomatizability is required by some proof languages (although not by
+       Metamath).  There is a stronger version of NBG called Morse-Kelley
+       (axiom system MK in [Mendelson] p. 287).
 
        Russell himself continued in a different direction, avoiding the paradox
        with his "theory of types."  Quine extended Russell's ideas to formulate
@@ -26575,7 +26577,7 @@ $)
 
   $( Extend wff notation to include the proper substitution of a class for a
      set.  Read this notation as "the proper substitution of class ` A ` for
-     set variable ` x ` in wff ` ph ` ." $)
+     setvar variable ` x ` in wff ` ph ` ." $)
   wsbc $a wff [. A / x ]. ph $.
 
   $( Define the proper substitution of a class for a set.
@@ -26616,10 +26618,10 @@ $)
   $(
   @( Extend wff notation to include the proper substitution of a class for a
      set.  This definition "overloads" the previously defined variable
-     substitution ~ wsb (where the first argument is a set variable rather
+     substitution ~ wsb (where the first argument is a setvar variable rather
      than a class variable).  We take care to ensure that this new definition
      is a conservative extension.  Read this notation as "the proper
-     substitution of class ` A ` for set variable ` x ` in wff ` ph ` ." @)
+     substitution of class ` A ` for setvar variable ` x ` in wff ` ph ` ." @)
   wsbcSBC @a wff [ A / x ] ph @.
   $)
   $( --- End of old code before overloading prevention patch. $)
@@ -26653,8 +26655,8 @@ $)
     ZHDQHZABCIABDJZPDQKACBLSRABDMNO $.
 
   $( Show that ~ df-sb and ~ df-sbc are equivalent when the class term ` A ` in
-     ~ df-sbc is a set variable.  This theorem lets us reuse theorems based on
-     ~ df-sb for proofs involving ~ df-sbc .  (Contributed by NM,
+     ~ df-sbc is a setvar variable.  This theorem lets us reuse theorems based
+     on ~ df-sb for proofs involving ~ df-sbc .  (Contributed by NM,
      31-Dec-2016.)  (Proof modification is discouraged.) $)
   sbsbc $p |- ( [ y / x ] ph <-> [. y / x ]. ph ) $=
     ( weq wsb cv wsbc wb eqid dfsbcq2 ax-mp ) CCDABCEABCFZGHLIABCLJK $.
@@ -27149,9 +27151,9 @@ $)
 
   ${
     $d x C $.  $d x A $.
-    $( ~ eqsbc3 with set variable on right side of equals sign.  This proof was
-       automatically generated from the virtual deduction proof eqsbc3rVD in
-       set.mm using a translation program.  (Contributed by Alan Sare,
+    $( ~ eqsbc3 with setvar variable on right side of equals sign.  This proof
+       was automatically generated from the virtual deduction proof eqsbc3rVD
+       in set.mm using a translation program.  (Contributed by Alan Sare,
        24-Oct-2011.) $)
     eqsbc3r $p |- ( A e. B -> ( [. A / x ]. C = x <-> C = A ) ) $=
       ( wcel wceq wsbc eqcom sbcbii biimpi eqsbc3 syl5ib syl6ib syl6ibr sylibrd
@@ -27762,8 +27764,8 @@ $)
 
   ${
     $d y z A $.  $d x y z $.
-    $( The proper substitution of a class for set variable results in the class
-       (if the class exists).  (Contributed by NM, 10-Nov-2005.) $)
+    $( The proper substitution of a class for setvar variable results in the
+       class (if the class exists).  (Contributed by NM, 10-Nov-2005.) $)
     csbvarg $p |- ( A e. V -> [_ A / x ]_ x = A ) $=
       ( vz vy wcel cvv cv csb wceq elex wsbc cab df-csb sbcel2gv abbi1dv syl5eq
       vex ax-mp csbeq2i csbco 3eqtr3i syl ) BCFBGFZABAHZIZBJBCKUDUFDHZEHZFEBLZD
@@ -36415,7 +36417,7 @@ $)
   $c Ins3_k $. $( Insert three operator. $)
   $c P6 $. $( P6 operator $)
   $c SI_k $. $( Singleton image functor $)
-  $c SSet_k $. $( Subset relationship $)
+  $c _S_k $. $( Subset relationship $)
   $c Image_k $. $( Image functor $)
   $c _I_k $. $( Identity relationship $)
 
@@ -36457,7 +36459,7 @@ $)
 
   $( Extend the definition of a class to include the Kuratowski subset
      relationship. $)
-  cssetk $a class SSet_k $.
+  cssetk $a class _S_k $.
 
   $( Extend the definition of a class to include the Kuratowski identity
      relationship. $)
@@ -36511,13 +36513,13 @@ $)
 
     $( Define the Kuratowski subset relationship.  (Contributed by SF,
        12-Jan-2015.) $)
-    df-ssetk $a |- SSet_k = { x | E. y E. z ( x = << y , z >> /\ y C_ z ) } $.
+    df-ssetk $a |- _S_k = { x | E. y E. z ( x = << y , z >> /\ y C_ z ) } $.
 
     $( Define the Kuratowski image function.  See ~ opkelimagek for
        membership.  (Contributed by SF, 12-Jan-2015.) $)
     df-imagek $a |- Image_k A =
        ( ( _V X._k _V ) \
-         ( ( Ins2_k SSet_k (+) Ins3_k ( SSet_k o._k `'_k SI_k A ) ) "_k
+         ( ( Ins2_k _S_k (+) Ins3_k ( _S_k o._k `'_k SI_k A ) ) "_k
            ~P1 ~P1 1c ) ) $.
 
     $( Define the Kuratowski identity relationship.  (Contributed by SF,
@@ -37229,7 +37231,7 @@ $)
     $( Membership in the Kuratowski subset relationship.  (Contributed by SF,
        13-Jan-2015.) $)
     opkelssetkg $p |- ( ( A e. V /\ B e. W ) ->
-      ( << A , B >> e. SSet_k <-> A C_ B ) ) $=
+      ( << A , B >> e. _S_k <-> A C_ B ) ) $=
       ( vy vz vx cv wss cssetk df-ssetk sseq1 sseq2 opkelopkabg ) EHZFHZIAPIABI
       GEFJABCDGEFKOAPLPBAMN $.
   $}
@@ -37237,7 +37239,7 @@ $)
   $( Membership via the Kuratowski subset relationship.  (Contributed by SF,
      13-Jan-2015.) $)
   elssetkg $p |- ( ( A e. V /\ B e. W ) ->
-       ( << { A } , B >> e. SSet_k <-> A e. B ) ) $=
+       ( << { A } , B >> e. _S_k <-> A e. B ) ) $=
     ( wcel csn copk cssetk wss cvv snex opkelssetkg mpan snssg bicomd sylan9bbr
     wb ) BDEZAFZBGHEZSBIZACEZABEZSJERTUAQAKSBJDLMUBUCUAABCNOP $.
 
@@ -37246,7 +37248,7 @@ $)
     elssetk.2 $e |- B e. _V $.
     $( Membership via the Kuratowski subset relationship.  (Contributed by SF,
        13-Jan-2015.) $)
-    elssetk $p |- ( << { A } , B >> e. SSet_k <-> A e. B ) $=
+    elssetk $p |- ( << { A } , B >> e. _S_k <-> A e. B ) $=
       ( cvv wcel csn copk cssetk wb elssetkg mp2an ) AEFBEFAGBHIFABFJCDABEEKL
       $.
   $}
@@ -37347,7 +37349,7 @@ $)
     $d x y z w $.
     $( The Kuratowski subset relationship is a Kuratowski relationship.
        (Contributed by SF, 13-Jan-2015.) $)
-    ssetkssvvk $p |- SSet_k C_ ( _V X._k _V ) $=
+    ssetkssvvk $p |- _S_k C_ ( _V X._k _V ) $=
       ( vy vz vx cv wss cssetk df-ssetk opkabssvvki ) ADBDECABFCABGH $.
   $}
 
@@ -37522,7 +37524,7 @@ $)
     $d x y z w $.
     $( The Kuratowski subset relationship is a set.  (Contributed by SF,
        13-Jan-2015.) $)
-    ssetkex $p |- SSet_k e. _V $=
+    ssetkex $p |- _S_k e. _V $=
       ( vy vz vx vw cv copk wcel wel wi wal wb wex cssetk cvv ax-sset wss mp2an
       vex bitri ax-mp cxpk cin wceq ssetkssvvk eqrelk opkelxpk mpbir2an mpbiran
       inss1 elin opkelssetkg bibi12i 2albii biimpri vvex xpkvexg inex syl6eqelr
@@ -37755,9 +37757,9 @@ $)
 
   ${
     $d x y $.
-    $( Definition of ` _I_k ` in terms of ` SSet_k ` .  (Contributed by SF,
+    $( Definition of ` _I_k ` in terms of ` _S_k ` .  (Contributed by SF,
        14-Jan-2015.) $)
-    dfidk2 $p |- _I_k = ( SSet_k i^i `'_k SSet_k ) $=
+    dfidk2 $p |- _I_k = ( _S_k i^i `'_k _S_k ) $=
       ( vx vy cidk cssetk ccnvk cin idkssvvk cvv cxpk inss1 cv wss wa copk wcel
       wb vex mp2an opkelssetkg bitri ssetkssvvk weq eqss opkelidkg elin anbi12i
       sstri opkelcnvk 3bitr4i eqrelkriiv ) ABCDDEZFZGULDHHIDUKJUAUGABUBZAKZBKZL
@@ -37776,7 +37778,7 @@ $)
     $d A x y $.
     $( Alternate definition of class union for existence proof.  (Contributed
        by SF, 14-Jan-2015.) $)
-    dfuni3 $p |- U. A = U.1 ( `'_k SSet_k "_k A ) $=
+    dfuni3 $p |- U. A = U.1 ( `'_k _S_k "_k A ) $=
       ( vx vy cuni cssetk ccnvk cimak cuni1 cv csn copk wcel wrex wel opkelcnvk
       vex snex elssetk bitri rexbii eluni1 elimak eluni2 3bitr4ri eqriv ) BADZE
       FZAGZHZCIZBIZJZKUGLZCAMZBCNZCAMUKUILZUKUFLUMUOCAUMULUJKELUOUJULECPZUKQZOU
@@ -37799,7 +37801,7 @@ $)
     $d A x y z $.
     $( Alternate definition of class intersection for the existence proof.
        (Contributed by SF, 14-Jan-2015.) $)
-    dfint3 $p |- |^| A = ~ U.1 ( `'_k ~ SSet_k "_k A ) $=
+    dfint3 $p |- |^| A = ~ U.1 ( `'_k ~ _S_k "_k A ) $=
       ( vx vy cint cssetk ccompl ccnvk cimak cuni1 wel wral cv wcel wn csn copk
       wrex vex elcompl 3bitri eluni1 snex elimak bitri opkelcnvk elssetk notbii
       opkex rexbii rexnal con2bii elint2 3bitr4i eqriv ) BADZEFZGZAHZIZFZBCJZCA
@@ -37827,7 +37829,7 @@ $)
     $( Two ways to express the class of all sets that contain ` A ` .
        (Contributed by SF, 14-Jan-2015.) $)
     setswith $p |- { x | A e. x } =
-                if ( A e. _V , ( SSet_k "_k { { A } } ) , (/) ) $=
+                if ( A e. _V , ( _S_k "_k { { A } } ) , (/) ) $=
       ( vy cvv wcel cv cab cssetk csn cimak c0 cif wceq copk wrex opkeq1 eleq1d
       snex eqtr4d wn rexsn wb vex elssetkg mpan2 syl5rbb abbidv df-imak syl6eqr
       iftrue wal elex con3i alrimiv ab0 sylibr iffalse pm2.61i ) BDEZBAFZEZAGZU
@@ -37849,7 +37851,7 @@ $)
     $( Membership in a particular Kuratowski relationship is equivalent to
        non-disjointedness.  (Contributed by SF, 15-Jan-2015.) $)
     ndisjrelk $p |- (
-      << A , B >> e. ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
+      << A , B >> e. ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c )
       <-> ( A i^i B ) =/= (/) ) $=
       ( vt vx cv csn copk cssetk cin wcel wa cpw1 snex elin elssetk bitri exbii
       wex wceq cins3k cins2k c1c cimak wne opkeq1 eleq1d ceqsexv otkelins3k vex
@@ -37894,7 +37896,7 @@ $)
     $d A x y t $.
     $( Definition of power set for existence proof.  (Contributed by SF,
        21-Jan-2015.) $)
-    dfpw2 $p |- ~P A = ~ ( ( SSet_k \ ( ~P1 A X._k _V ) ) "_k 1c ) $=
+    dfpw2 $p |- ~P A = ~ ( ( _S_k \ ( ~P1 A X._k _V ) ) "_k 1c ) $=
       ( vx vy vt cpw cssetk cpw1 cvv c1c cv wcel wn copk wa wex vex exbii bitri
       3bitr4i 3bitri cxpk cdif cimak ccompl wel wal csn wceq wrex elimak anbi1i
       el1c 19.41v bitr4i df-rex excom snex opkeq1 eleq1d ceqsexv eldif opkelxpk
@@ -38434,11 +38436,11 @@ $)
     $( Alternate definition of cardinal addition to establish stratification.
        (Contributed by SF, 15-Jan-2015.) $)
     dfaddc2 $p |- ( A +c B ) =
-( ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+( ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 B ) "_k A ) $=
       ( vy vz vx vt vw cv wceq wa wrex cssetk cpw1 wcel copk csn wn snex 3bitri
@@ -38469,11 +38471,11 @@ $)
   $( The expression at the heart of ~ dfaddc2 is a set.  (Contributed by SF,
      17-Jan-2015.) $)
   addcexlem $p |- ( Ins3_k
-            ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) ) e. _V $=
     ( cssetk cins3k cins2k cin c1c cpw1 ccompl csik cun csymdif ssetkex ins3kex
     cimak ins2kex inex 1cex pw1ex imakex complex sikex unex symdifex difex ) AB
@@ -38562,13 +38564,13 @@ $)
        by SF, 14-Jan-2015.) $)
     dfnnc2 $p |- Nn =
      |^| ( { x | 0c e. x } \
-           ( ( SSet_k \ ( SSet_k o._k SI_k
-Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
+           ( ( _S_k \ ( _S_k o._k SI_k
+Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k
             ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) ) ) "_k 1c ) ) $=
       ( vy vz vt vw cv wcel c1c wa cssetk cpw1 cimak wn vex wceq copk wex bitri
@@ -38746,6 +38748,31 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
       VLHWLVLVDWMVOWOWBWLVLISWNWAAWLVLWLVLVRSUTVAVBVCVEVLWQVFRVGFBVHVIVJ $.
   $}
 
+
+  ${
+    $d A x $.  $d ch x $.  $d ph y $.  $d ps x $.  $d ta x $.  $d th x $.
+    $d x y $. $d et y $.
+    findsd.1 $e |- ( et -> { x | ph } e. V ) $.
+    findsd.2 $e |- ( x = 0c -> ( ph <-> ps ) ) $.
+    findsd.3 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    findsd.4 $e |- ( x = ( y +c 1c ) -> ( ph <-> th ) ) $.
+    findsd.5 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    findsd.6 $e |- ( et -> ps ) $.
+    findsd.7 $e |- ( ( y e. Nn /\ et ) -> ( ch -> th ) ) $.
+    $( Principle of finite induction over the finite cardinals, using implicit
+       substitutions.  The first hypothesis ensures stratification of ` ph ` ,
+       the next four set up the substitutions, and the last two set up the base
+       case and induction hypothesis.  This version allows for an extra 
+       deduction clause that may make proving stratification simpler. Compare 
+       Theorem X.1.13 of [Rosser] p. 277.  (Contributed by SF, 31-Jul-2019.) $)
+    findsd $p |- ( ( A e. Nn /\ et ) -> ta ) $=
+      ( cnnc wcel elab wa cab c0c c1c cplc wral wss 0cex sylibr vex 1cex addcex
+      cv wi 3imtr4g ancoms ralrimiva peano5 syl3anc sseld impcom wb elabg mpbid
+      adantr ) IRSZFUAIAGUBZSZEFVFVHFRVGIFVGJSUCVGSZHUMZVGSZVJUDUEZVGSZUNZHRUFR
+      VGUGKFBVIPABGUCUHLTUIFVNHRVJRSZFVNVOFUACDVKVMQACGVJHUJZMTADGVLVJUDVPUKULN
+      TUOUPUQHVGJURUSUTVAVFVHEVBFAEGIROVCVEVD $.
+  $}
+
   ${
     $d A x $.  $d ch x $.  $d ph y $.  $d ps x $.  $d ta x $.  $d th x $.
     $d x y $.
@@ -38762,10 +38789,8 @@ Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k
        case and induction hypothesis.  Compare Theorem X.1.13 of [Rosser]
        p. 277.  (Contributed by SF, 14-Jan-2015.) $)
     finds $p |- ( A e. Nn -> ta ) $=
-      ( cnnc wcel cvv c0c elab cab cv c1c cplc wi wral wss 0cex vex 1cex addcex
-      mpbir 3imtr4g rgen peano5 mp3an sseli elabg mpbid ) HPQHAFUAZQEPUTHUTRQSU
-      TQZGUBZUTQZVBUCUDZUTQZUEZGPUFPUTUGIVABNABFSUHJTULVFGPVBPQCDVCVEOACFVBGUIZ
-      KTADFVDVBUCVGUJUKLTUMUNGUTRUOUPUQAEFHPMURUS $.
+      ( cnnc wcel wtru cvv a1i tru cab cv wi adantr findsd mpan2 ) HPQREUAABCDE
+      RFGHSAFUBSQRITJKLMBRNTGUCPQCDUDROUEUFUG $.
   $}
 
   ${
@@ -39887,7 +39912,7 @@ $)
     $( Represent equality to power class via a Kuratowski relationship.
        (Contributed by SF, 26-Jan-2015.) $)
     eqpwrelk $p |- ( << { A } , B >> e.
-              ~ ( ( Ins2_k SSet_k (+) Ins3_k SI_k SSet_k ) "_k
+              ~ ( ( Ins2_k _S_k (+) Ins3_k SI_k _S_k ) "_k
                   ~P1 ~P1 1c ) <-> B = ~P A ) $=
       ( vx vt csn copk cssetk cpw1 wcel wn cv wb wex wceq wa snex cvv 3bitri
       cins2k csik cins3k csymdif c1c cimak wss ccompl cpw opkex elimak elpw121c
@@ -39910,7 +39935,7 @@ $)
     $( Represent equality to unit power class via a Kuratowski relationship.
        (Contributed by SF, 21-Jan-2015.) $)
     eqpw1relk $p |- ( << A , { B } >> e. ( ( ~P 1c X._k _V ) \
-  ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k )
+  ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k )
     "_k ~P1 ~P1 ~P1 1c ) ) <-> A = ~P1 B ) $=
       ( vx vt csn copk c1c cvv wcel cssetk cpw1 wn wa cv wb snex bitri wex cxpk
       cpw cins3k csik cins2k csymdif cimak wss cdif wceq opkelxpk mpbiran2 elpw
@@ -40197,16 +40222,16 @@ $)
     $( Equality to a T raising expressed via a Kuratowski relationship.
        (Contributed by SF, 29-Jan-2015.) $)
     eqtfinrelk $p |- ( << { M } , X >> e. ( ( { { (/) } } X._k { (/) } ) u.
-  ( ~ ( ( Ins2_k SSet_k (+)
+  ( ~ ( ( Ins2_k _S_k (+)
       Ins3_k
-( ( Ins3_k `'_k SSet_k \
+( ( Ins3_k `'_k _S_k \
     Ins2_k
 ( ( Ins2_k ( ( Nn X._k _V ) i^i
-     ( ( Ins2_k SI_k SSet_k i^i
+     ( ( Ins2_k SI_k _S_k i^i
          Ins3_k
            ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \
-  ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k )
-    "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) )
+  ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k )
+    "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) )
        "_k ~P1 ~P1 ~P1 1c ) ) (+)
     Ins3_k _I_k ) "_k ~P1 1c ) ) "_k ~P1 1c ) )
       "_k ~P1 ~P1 1c )
@@ -40272,16 +40297,16 @@ $)
   $( The expression at the core of ~ eqtfinrelk exists.  (Contributed by SF,
      30-Jan-2015.) $)
   tfinrelkex $p |- ( ( { { (/) } } X._k { (/) } ) u.
-  ( ~ ( ( Ins2_k SSet_k (+)
+  ( ~ ( ( Ins2_k _S_k (+)
       Ins3_k
-( ( Ins3_k `'_k SSet_k \
+( ( Ins3_k `'_k _S_k \
     Ins2_k
 ( ( Ins2_k ( ( Nn X._k _V ) i^i
-     ( ( Ins2_k SI_k SSet_k i^i
+     ( ( Ins2_k SI_k _S_k i^i
          Ins3_k
            ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \
-  ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k )
-    "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) )
+  ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k )
+    "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) )
        "_k ~P1 ~P1 ~P1 1c ) ) (+)
     Ins3_k _I_k ) "_k ~P1 1c ) ) "_k ~P1 1c ) )
       "_k ~P1 ~P1 1c )
@@ -41277,10 +41302,10 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
     $( Binary relationship form of the ` _S[fin] ` relationship.  (Contributed
        by SF, 23-Jan-2015.) $)
     srelk $p |- ( << A , B >> e. ( ( Nn X._k Nn ) i^i ( (
- Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k SSet_k (+) Ins2_k SI_k
- SSet_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
-    i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k ) "_k
-    ~P1 ~P1 1c ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1
+ Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k _S_k (+) Ins2_k SI_k
+ _S_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c )
+    i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k
+    ~P1 ~P1 1c ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1
                                                              ~P1 1c ) ) <->
         _S[fin] ( A , B ) ) $=
       ( vx vt vy vz copk cnnc wcel cssetk wa wex wceq exbii 3bitr4i snex 3bitri
@@ -41320,10 +41345,10 @@ n e. Nn ( ( ( n +c n ) +c 1c ) =/= (/) -> ( j +c j ) =/= ( ( n +c n ) +c 1c ) )
   $( The expression at the core of ~ srelk exists.  (Contributed by SF,
      30-Jan-2015.) $)
   srelkex $p |- ( ( Nn X._k Nn ) i^i ( (
- Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k SSet_k (+) Ins2_k SI_k
- SSet_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c )
-    i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k SSet_k (+) Ins2_k SI_k SSet_k ) "_k
-    ~P1 ~P1 1c ) i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1
+ Ins3_k ( ( Ins3_k SI_k ( ( ~P 1c X._k _V ) \ ( ( Ins3_k _S_k (+) Ins2_k SI_k
+ _S_k ) "_k ~P1 ~P1 ~P1 1c ) ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c )
+    i^i Ins2_k ( ( Ins3_k SI_k ~ ( ( Ins3_k _S_k (+) Ins2_k SI_k _S_k ) "_k
+    ~P1 ~P1 1c ) i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) ) "_k ~P1 ~P1
                                                        ~P1 1c ) ) e. _V $=
     ( cnnc cxpk c1c cvv cssetk cins3k csik cins2k cimak cin nncex xpkex ssetkex
     cpw1 ins3kex sikex ins2kex pw1ex imakex inex cpw cdif ccompl 1cex pwex vvex
@@ -42229,11 +42254,11 @@ $)
        functions.  (Contributed by SF, 3-Feb-2015.) $)
     dfphi2 $p |- Phi A = ( ( (
        Image_k
-      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-        ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
             "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
        ( _I_k i^i ( ~ Nn X._k _V ) ) ) "_k A ) $=
@@ -42279,16 +42304,16 @@ $)
   ${
     $d x y z w t A $.  $d x y z w t B $.
     $( Lemma for ~ dfop2 and ~ dfproj22 .  (Contributed by SF, 2-Jan-2015.) $)
-    dfop2lem1 $p |- ( << x , y >> e. ~ ( ( Ins2_k SSet_k (+) Ins3_k ( ( `'_k
-        Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k )
+    dfop2lem1 $p |- ( << x , y >> e. ~ ( ( Ins2_k _S_k (+) Ins3_k ( ( `'_k
+        Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k )
         "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-     ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) )
+     ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) )
         ) "_k
      ~P1 ~P1 1c ) <-> y = ( Phi x u. { 0c } ) ) $=
       ( vz vt cv copk cssetk cins3k cpw1 cimak cun cvv c0c csn wcel wn wex wceq
@@ -42312,17 +42337,17 @@ $)
       YDCWRYGCXBYBWSYDCWTVNT $.
 
     $( Lemma for ~ dfop2 (Contributed by SF, 2-Jan-2015.) $)
-    dfop2lem2 $p |- ( ~ ( ( Ins2_k SSet_k (+)
+    dfop2lem2 $p |- ( ~ ( ( Ins2_k _S_k (+)
      Ins3_k ( ( `'_k Image_k ( ( Image_k
-      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-        ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
             "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V
         ) ) ) o._k
-              SSet_k ) u. ( { { 0c } } X._k _V ) ) ) "_k ~P1 ~P1 1c ) "_k B
+              _S_k ) u. ( { { 0c } } X._k _V ) ) ) "_k ~P1 ~P1 1c ) "_k B
         )
      = { x | E. y e. B x = ( Phi y u. { 0c } ) } $=
       ( cv csn cun wrex cssetk cins2k cins3k cin cpw1 cimak ccompl csik csymdif
@@ -42335,23 +42360,23 @@ $)
        (Contributed by SF, 2-Jan-2015.) $)
     dfop2 $p |- <. A , B >. =
        ( ( Image_k ( ( Image_k
-      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-        ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
             "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V
         ) ) ) "_k A ) u.
-         ( ~ ( ( Ins2_k SSet_k (+) Ins3_k ( ( `'_k Image_k ( ( Image_k
-      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-        ( ( Ins2_k Ins2_k SSet_k
+         ( ~ ( ( Ins2_k _S_k (+) Ins3_k ( ( `'_k Image_k ( ( Image_k
+      ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
             "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-               ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u.
+               ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u.
                ( { { 0c } } X._k _V ) ) ) "_k ~P1 ~P1 1c ) "_k B ) ) $=
       ( vx vy cv wceq wrex cab csn cun cssetk cins3k cins2k cin cpw1 cimak csik
       ccompl cvv cxpk cop cphi c0c c1c csymdif cdif cnnc cidk ccnvk ccomk df-op
@@ -42368,11 +42393,11 @@ $)
        functors.  (Contributed by SF, 2-Jan-2015.) $)
     dfproj12 $p |- Proj1 A =
      ( `'_k Image_k ( ( Image_k
-      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-        ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
             "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V
         ) ) ) "_k A ) $=
@@ -42386,17 +42411,17 @@ $)
 
     $( Express the second projection operator via the set construction
        functors.  (Contributed by SF, 2-Jan-2015.) $)
-    dfproj22 $p |- Proj2 A = ( `'_k ~ ( ( Ins2_k SSet_k (+)
+    dfproj22 $p |- Proj2 A = ( `'_k ~ ( ( Ins2_k _S_k (+)
     Ins3_k ( ( `'_k Image_k ( ( Image_k
-      ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-        ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+        ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
             "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
             ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k
-    SSet_k ) u. ( { { 0c } } X._k _V ) ) ) "_k ~P1 ~P1 1c ) "_k A ) $=
+    _S_k ) u. ( { { 0c } } X._k _V ) ) ) "_k ~P1 ~P1 1c ) "_k A ) $=
       ( vx vy cv csn cun wcel cssetk cins2k cins3k cin cpw1 ccompl csik csymdif
       cimak cimagek cnnc cvv cxpk cproj2 cphi c0c cab c1c cdif cidk ccnvk ccomk
       df-proj2 copk wrex opkelcnvk dfop2lem1 bitri rexbii elimak risset 3bitr4i
@@ -43747,7 +43772,7 @@ $)
 
   $c 1st $. $( First member of an ordered pair $)
   $c Swap $.
-  $c SSet $.
+  $c _S $.
   $c o. $.
   $c " $.
   $c SI $.
@@ -43760,7 +43785,7 @@ $)
   cswap $a class Swap $.
 
   $( Extend the definition of a class to include the subset relationship. $)
-  csset $a class SSet $.
+  csset $a class _S $.
 
   $( Extend the definition of a class to include the singleton image. $)
   csi $a class SI A $.
@@ -43792,7 +43817,7 @@ $)
     $d x y $.
     $( Define a relationship that holds between subsets.  (Contributed by SF,
        5-Jan-2015.) $)
-    df-sset $a |- SSet = { <. x , y >. | x C_ y } $.
+    df-sset $a |- _S = { <. x , y >. | x C_ y } $.
   $}
 
   ${
@@ -43850,12 +43875,12 @@ $)
     $( Lemma for the set construction theorems.  (Contributed by SF,
        6-Jan-2015.) $)
     setconslem1 $p |- ( << { A } , B >> e.
-                 ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( (
-        Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+                 ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( (
+        Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) <->
@@ -43877,17 +43902,17 @@ $)
 
     $( Lemma for the set construction theorems.  (Contributed by SF,
        6-Jan-2015.) $)
-    setconslem2 $p |- ( << { A } , B >> e. ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+    setconslem2 $p |- ( << { A } , B >> e. ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) <->
@@ -43928,28 +43953,28 @@ $)
     $( Lemma for set construction functions.  Set up a mapping between
        Kuratowski and Quine ordered pairs.  (Contributed by SF, 7-Jan-2015.) $)
     setconslem3 $p |- ( << { { A } } , << B , C >> >> e.
-        ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+        ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -43977,28 +44002,28 @@ $)
     $( Lemma for set construction functions.  Create a mapping between the two
        types of ordered pair abstractions.  (Contributed by SF, 7-Jan-2015.) $)
     setconslem4 $p |- U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
-     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     `'_k ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -44023,28 +44048,28 @@ $)
 
   $( Lemma for set construction theorems.  The big expression in the middle of
      ~ setconslem4 forms a set.  (Contributed by SF, 7-Jan-2015.) $)
-  setconslem5 $p |- ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+  setconslem5 $p |- ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-      ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+      ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-      Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+      Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
       "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -44063,28 +44088,28 @@ $)
     $( Lemma for the set construction functions.  Invert the expression from
        ~ setconslem4 .  (Contributed by SF, 7-Jan-2015.) $)
     setconslem6 $p |- ( ( ( _V X._k ( _V X._k _V ) ) i^i
-     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -44117,27 +44142,27 @@ $)
     $( Lemma for the set construction theorems.  Reorganized version of
        ~ setconslem3 .  (Contributed by SF, 4-Feb-2015.) $)
     setconslem7 $p |- ( << { { C } } , << A , B >> >> e. ~ ( ( Ins2_k Ins3_k
-        SSet_k (+)
-        ( Ins2_k Ins2_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k
-        ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+        _S_k (+)
+        ( Ins2_k Ins2_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k
+        ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-          Ins3_k SI_k SI_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+          Ins3_k SI_k SI_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) )
@@ -44167,53 +44192,53 @@ $)
     $( Express the ` 1st ` function via the set construction functions.
        (Contributed by SF, 4-Feb-2015.) $)
     df1st2 $p |- 1st = U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
-     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     `'_k ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
           ~P1 ~P1 ~P1 ~P1 1c ) ) "_k (
-~ ( ( Ins2_k Ins3_k SSet_k (+)
-        ( Ins2_k Ins2_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k
-        ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+~ ( ( Ins2_k Ins3_k _S_k (+)
+        ( Ins2_k Ins2_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k
+        ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-          Ins3_k SI_k SI_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+          Ins3_k SI_k SI_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) )
@@ -44263,80 +44288,80 @@ $)
     $d x y z w t u v $.
     $( Express the ` Swap ` function via set construction operators.
        (Contributed by SF, 6-Jan-2015.) $)
-    dfswap2 $p |- Swap = ( ( ~ ( ( Ins2_k Ins2_k SSet_k (+)
+    dfswap2 $p |- Swap = ( ( ~ ( ( Ins2_k Ins2_k _S_k (+)
        ( ( ( Ins2_k
-( Ins2_k Ins3_k ( SSet_k o._k
+( Ins2_k Ins3_k ( _S_k o._k
               SI_k
-               `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+               `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-  Ins3_k SI_k SI_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+  Ins3_k SI_k SI_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) i^i
           Ins3_k SI_k SI_k SI_k SI_k SI_k
-          Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k
+          Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k
         ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V ) ) ) )
         "_k
            ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ) u.
          ( ( Ins2_k
 ( Ins3_k SI_k SI_k
-  ( SSet_k o._k
-    SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k
-        SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+  ( _S_k o._k
+    SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k
+        _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-  Ins2_k Ins3_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+  Ins2_k Ins3_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) i^i
             Ins3_k SI_k SI_k SI_k SI_k SI_k
-                 ~ ( ( Ins2_k SSet_k (+)
+                 ~ ( ( Ins2_k _S_k (+)
                        Ins3_k
-( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i Ins2_k SSet_k )
+( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i Ins2_k _S_k )
         "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u. ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k
-        SSet_k ) u.
+        _S_k ) u.
                               ( { { 0c } } X._k _V ) ) ) "_k
                    ~P1 ~P1 1c ) ) "_k
            ~P1 ~P1 ~P1 ~P1 ~P1 ~P1 1c ) ) )
@@ -44411,35 +44436,35 @@ $)
 
   ${
     $d x y $.
-    $( Express the ` SSet ` relationship via the set construction functors.
+    $( Express the ` _S ` relationship via the set construction functors.
        (Contributed by SF, 7-Jan-2015.) $)
-    dfsset2 $p |- SSet = U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
-     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+    dfsset2 $p |- _S = U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
+     `'_k ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
-          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k SSet_k ) $=
+          ~P1 ~P1 ~P1 ~P1 1c ) ) "_k _S_k ) $=
       ( vx vy cv cssetk wcel copab cvv cxpk csik cins3k cins2k cin cimak ccompl
       cpw1 cun csymdif cimagek cnnc ccnvk copk wss c1c cdif ccomk c0c csn cuni1
       cidk csset wb vex opkelssetkg mp2an opabbii setconslem4 df-sset 3eqtr4ri
@@ -44449,7 +44474,7 @@ $)
   $}
 
   $( The subset relationship is a set.  (Contributed by SF, 6-Jan-2015.) $)
-  ssetex $p |- SSet e. _V $=
+  ssetex $p |- _S e. _V $=
     ( cvv cxpk cssetk csik cins3k cins2k cin cpw1 cimak ccompl cun csymdif cnnc
     cimagek ccnvk ccomk csn cuni1 vvex xpkex csset c1c cdif dfsset2 setconslem5
     cidk c0c cnvkex inex ssetkex imakex uni1ex eqeltri ) UAAABZABZCDDEZCCEZCFZG
@@ -44462,28 +44487,28 @@ $)
        (Contributed by SF, 7-Jan-2015.) $)
     dfima2 $p |- ( A " B ) =
       ( ( ( ( _V X._k ( _V X._k _V ) ) i^i
-     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -44523,83 +44548,83 @@ $)
        SF, 7-Jan-2015.) $)
     dfco1 $p |- ( A o. B ) =
 U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
-     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     `'_k ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
           ~P1 ~P1 ~P1 ~P1 1c ) ) "_k
 ( ( ( ( _V X._k ( _V X._k _V ) ) i^i
-     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
           ~P1 ~P1 ~P1 ~P1 1c ) ) "_k ~P1 ~P1 A )
 o._k
 ( ( ( _V X._k ( _V X._k _V ) ) i^i
-     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -44644,55 +44669,55 @@ o._k
        (Contributed by SF, 7-Jan-2015.) $)
     dfsi2 $p |- SI A =
 U.1 U.1 ( ( ( ( _V X._k _V ) X._k _V ) i^i
-     `'_k ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     `'_k ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
           ~P1 ~P1 ~P1 ~P1 1c ) ) "_k
 SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
-     ~ ( ( Ins3_k SI_k SI_k SSet_k (+)
+     ~ ( ( Ins3_k SI_k SI_k _S_k (+)
           Ins2_k
-            ( Ins3_k ( SSet_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
-        ( Ins3_k SSet_k i^i Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+            ( Ins3_k ( _S_k o._k SI_k `'_k Image_k ( ( Image_k ( ( Ins3_k ~ (
+        ( Ins3_k _S_k i^i Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
   ( _I_k i^i ( ~ Nn X._k _V ) ) ) ) u.
-              Ins2_k ( ( Ins2_k SSet_k i^i
-    Ins3_k SI_k ~ ( ( Ins2_k SSet_k (+)
-         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k SSet_k i^i
-        Ins2_k SSet_k ) "_k ~P1 ~P1 1c ) \
-      ( ( Ins2_k Ins2_k SSet_k
+              Ins2_k ( ( Ins2_k _S_k i^i
+    Ins3_k SI_k ~ ( ( Ins2_k _S_k (+)
+         Ins3_k ( ( `'_k Image_k ( ( Image_k ( ( Ins3_k ~ ( ( Ins3_k _S_k i^i
+        Ins2_k _S_k ) "_k ~P1 ~P1 1c ) \
+      ( ( Ins2_k Ins2_k _S_k
           (+)
-          ( Ins2_k Ins3_k SSet_k u.
-            Ins3_k SI_k SI_k SSet_k ) )
+          ( Ins2_k Ins3_k _S_k u.
+            Ins3_k SI_k SI_k _S_k ) )
             "_k ~P1 ~P1 ~P1 ~P1 1c ) )
   "_k ~P1 ~P1 1c ) i^i ( Nn X._k _V ) ) u.
-  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k SSet_k ) u. ( { { 0c } } X._k _V ) ) )
+  ( _I_k i^i ( ~ Nn X._k _V ) ) ) o._k _S_k ) u. ( { { 0c } } X._k _V ) ) )
         "_k
          ~P1 ~P1 1c ) )
     "_k ~P1 ~P1 1c ) ) ) "_k
@@ -44755,7 +44780,7 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
     $d A x y $.  $d B x y $.
     $( Binary relationship form of the subset relationship.  (Contributed by
        SF, 11-Feb-2015.) $)
-    brssetg $p |- ( ( A e. V /\ B e. W ) -> ( A SSet B <-> A C_ B ) ) $=
+    brssetg $p |- ( ( A e. V /\ B e. W ) -> ( A _S B <-> A C_ B ) ) $=
       ( vx vy cv wss csset sseq1 sseq2 df-sset brabg ) EGZFGZHAOHABHEFABCDINAOJ
       OBAKEFLM $.
   $}
@@ -44765,7 +44790,7 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
     brsset.2 $e |- B e. _V $.
     $( Binary relationship form of the subset relationship.  (Contributed by
        SF, 11-Feb-2015.) $)
-    brsset $p |- ( A SSet B <-> A C_ B ) $=
+    brsset $p |- ( A _S B <-> A C_ B ) $=
       ( cvv wcel csset wbr wss wb brssetg mp2an ) AEFBEFABGHABIJCDABEEKL $.
   $}
 
@@ -44774,13 +44799,13 @@ SI_k ( ( ( _V X._k ( _V X._k _V ) ) i^i
     brssetsn.2 $e |- B e. _V $.
     $( Set membership in terms of the subset relationship.  (Contributed by SF,
        11-Feb-2015.) $)
-    brssetsn $p |- ( { A } SSet B <-> A e. B ) $=
+    brssetsn $p |- ( { A } _S B <-> A e. B ) $=
       ( csn csset wbr wss wcel snex brsset snss bitr4i ) AEZBFGNBHABINBAJDKABCL
       M $.
 
     $( Set membership in terms of the subset relationship.  (Contributed by SF,
        11-Feb-2015.) $)
-    opelssetsn $p |- ( <. { A } , B >. e. SSet <-> A e. B ) $=
+    opelssetsn $p |- ( <. { A } , B >. e. _S <-> A e. B ) $=
       ( csn cop csset wcel wbr df-br brssetsn bitr3i ) AEZBFGHMBGIABHMBGJABCDKL
       $.
   $}
@@ -52190,7 +52215,7 @@ $)
     $d x y $.
     $( The subset relationship is a relationship.  (Contributed by SF,
        11-Feb-2015.) $)
-    relsset $p |- Rel SSet $=
+    relsset $p |- Rel _S $=
       ( vx vy cv wss csset df-sset relopabi ) ACBCDABEABFG $.
   $}
 
@@ -52198,7 +52223,7 @@ $)
     $d x y $.
     $( Alternate definition of the identity relationship.  (Contributed by SF,
        11-Feb-2015.) $)
-    dfid4 $p |- _I = ( SSet i^i `' SSet ) $=
+    dfid4 $p |- _I = ( _S i^i `' _S ) $=
       ( vx vy cid csset ccnv cin reli wss inss1 relsset relss mp2 weq cv wa wbr
       wrel vex brsset bitri eqss ideq brin brcnv anbi12i 3bitr4i eqbrriv ) ABCD
       DEZFZGUIDHDQUIQDUHIJUIDKLABMANZBNZHZUKUJHZOZUJUKCPUJUKUIPZUJUKUAUJUKBRZUB
@@ -54984,7 +55009,7 @@ $)
 
   $( Define the image function of a class.  (Contributed by SF, 9-Feb-2015.) $)
   df-image $a |- Image A =
-     ( ( _V X. _V ) \ ( ( Ins2 SSet (+) Ins3 ( SSet o. `' SI A ) ) " 1c ) ) $.
+     ( ( _V X. _V ) \ ( ( Ins2 _S (+) Ins3 ( _S o. `' SI A ) ) " 1c ) ) $.
 
   $( Define the fourth insertion operation.  (Contributed by SF,
      9-Feb-2015.) $)
@@ -55086,6 +55111,19 @@ $)
       exbii breq1 ceqsexv 3bitri ) ABHZCDIJKUEGLZIKZUFCDKZMZGNUFBOZUHMZGNBCDKZG
       UECDIPUIUKGUGUJUHUGBUFOUJABUFEFQBUFRSTUAUHULGBFUFBCDUBUCUD $.
   $}
+
+
+  $( Equality theorem for tail cross product.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+  txpeq1 $p |- ( A = B -> ( A (x) C ) = ( B (x) C ) ) $=
+    ( wceq c1st ccnv ccom c2nd cin ctxp coeq2 ineq1d df-txp 3eqtr4g ) ABDZEFZAG
+    ZHFCGZIPBGZRIACJBCJOQSRABPKLACMBCMN $.
+
+  $( Equality theorem for tail cross product.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+  txpeq2 $p |- ( A = B -> ( C (x) A ) = ( C (x) B ) ) $=
+    ( wceq c1st ccnv ccom c2nd cin ctxp coeq2 ineq2d df-txp 3eqtr4g ) ABDZEFCGZ
+    HFZAGZIPQBGZICAJCBJORSPABQKLCAMCBMN $.
 
   ${
     $d A x $.  $d B x $.  $d B y $.  $d B z $.  $d C x $.  $d C z $.  $d R t $.
@@ -55483,7 +55521,7 @@ $)
     releqel.2 $e |- ( <. { y } , T >. e. R <-> y e. A ) $.
     $( Lemma to turn a membership condition into an equality condition.
        (Contributed by SF, 9-Mar-2015.) $)
-    releqel $p |- ( <. x , T >. e. ~ ( ( Ins3 SSet (+) Ins2 R ) " 1c ) <->
+    releqel $p |- ( <. x , T >. e. ~ ( ( Ins3 _S (+) Ins2 R ) " 1c ) <->
      x = A ) $=
       ( cv cop csset cins3 cins2 csymdif c1c wcel wn wb wex vex bitri cima wceq
       wel wal csn elima1c elsymdif otelins3 opelssetsn otelins2 bibi12i xchbinx
@@ -55512,7 +55550,7 @@ $)
     releqmpt.1 $e |- ( <. { y } , x >. e. R <-> y e. V ) $.
     $( Equality condition for a mapping.  (Contributed by SF, 9-Mar-2015.) $)
     releqmpt $p |- ( ( A X. _V ) i^i
-      `' ~ ( ( Ins3 SSet (+) Ins2 R ) " 1c ) ) = ( x e. A |-> V ) $=
+      `' ~ ( ( Ins3 _S (+) Ins2 R ) " 1c ) ) = ( x e. A |-> V ) $=
       ( vz cvv cxp csset cins3 cins2 cin cv wcel wceq wa cop vex bitri c1c cima
       csymdif ccompl ccnv copab cmpt inass xpss sseqin2 mpbi ineq1i elin opelxp
       wss mpbiran2 opelcnv releqel anbi12i releqopab 3eqtr3i df-mpt eqtr4i ) CH
@@ -55544,7 +55582,7 @@ $)
     $( Equality condition for a mapping operation.  (Contributed by SF,
        13-Feb-2015.) $)
     releqmpt2 $p |- ( ( ( A X. B ) X. _V ) \
-     ( ( Ins2 SSet (+) Ins3 R ) " 1c ) ) = ( x e. A , y e. B |-> V ) $=
+     ( ( Ins2 _S (+) Ins3 R ) " 1c ) ) = ( x e. A , y e. B |-> V ) $=
       ( vw cxp cvv csset cin cv wcel wa cop vex bitri wn cins2 csymdif c1c cima
       cins3 ccompl wceq coprab cdif cmpt2 inass xpss xpss1 ax-mp sseqin2 ineq1i
       wss mpbi elin opelxp mpbiran2 wel wal csn wex elima1c elsymdif opelssetsn
@@ -55565,7 +55603,7 @@ $)
     $( Lemma for the existence of a mapping.  (Contributed by SF,
        9-Mar-2015.) $)
     mptexlem $p |- ( ( A X. _V ) i^i
-      `' ~ ( ( Ins3 SSet (+) Ins2 R ) " 1c ) ) e. _V $=
+      `' ~ ( ( Ins3 _S (+) Ins2 R ) " 1c ) ) e. _V $=
       ( cvv cxp csset cins3 cins2 csymdif c1c cima ccompl ccnv vvex xpex ssetex
       ins3ex ins2ex symdifex 1cex imaex complex cnvex inex ) AEFGHZBIZJZKLZMZNA
       ECOPUJUIUHKUFUGGQRBDSTUAUBUCUDUE $.
@@ -55578,7 +55616,7 @@ $)
     $( Lemma for the existence of a double mapping.  (Contributed by SF,
        13-Feb-2015.) $)
     mpt2exlem $p |- ( ( ( A X. B ) X. _V ) \
-     ( ( Ins2 SSet (+) Ins3 R ) " 1c ) ) e. _V $=
+     ( ( Ins2 _S (+) Ins3 R ) " 1c ) ) e. _V $=
       ( cxp cvv csset cins2 cins3 csymdif cima xpex vvex ssetex ins2ex symdifex
       c1c ins3ex 1cex imaex difex ) ABGZHGIJZCKZLZSMUDHABDENONUGSUEUFIPQCFTRUAU
       BUC $.
@@ -55807,6 +55845,20 @@ $)
   $}
 
   ${
+     $d F f $.
+     $( Membership in the set of all functions.  (Contributed by Scott Fenton,
+     	31-Jul-2019.) $)
+     elfunsg $p |- ( F e. V -> ( F e. Funs <-> Fun F ) ) $=
+       ( vf cv cfuns wcel wfun eleq1 funeq vex elfuns vtoclbg ) CDZEFMGAEFAGCAB
+       MAEHMAIMCJKL $.
+  $}
+
+  $( Membership in the set of all functions implies functionhood.
+     (Contributed by Scott Fenton, 31-Jul-2019.) $)
+  elfunsi $p |- ( F e. Funs -> Fun F ) $=
+    ( cfuns wcel wfun elfunsg ibi ) ABCADABEF $.
+
+  ${
     $d f a $.
     $( The function with domain relationship exists.  (Contributed by SF,
        23-Feb-2015.) $)
@@ -55832,6 +55884,18 @@ $)
       ZBAKZUIBIJZUJBAGLMUKABNZIUKUMAABSOULUMIJCBIPQUABDTZGHBUNKZUIUKDAIUNABGUBU
       NABRETZFTZKBUQKUOEFBUNGCDUCUQUPBUDUQUNBREFUEUFUGUH $.
   $}
+
+  $( Equality theorem for parallel product.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+  pprodeq1 $p |- ( A = B -> PProd ( A , C ) = PProd ( B , C ) ) $=
+     ( wceq c1st ccom c2nd ctxp cpprod coeq1 txpeq1 syl df-pprod 3eqtr4g ) ABDZ
+     AEFZCGFZHZBEFZQHZACIBCIOPSDRTDABEJPSQKLACMBCMN $.
+
+  $( Equality theorem for parallel product.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+  pprodeq2 $p |- ( A = B -> PProd ( C , A ) = PProd ( C , B ) ) $=
+     ( wceq c1st ccom c2nd ctxp cpprod coeq1 txpeq2 syl df-pprod 3eqtr4g ) ABDZ
+     CEFZAGFZHZPBGFZHZCAICBIOQSDRTDABGJQSPKLCAMCBMN $.
 
   ${
     $d a w $.  $d a x $.  $d A x $.  $d a y $.  $d A y $.  $d a z $.  $d B y $.
@@ -56492,6 +56556,23 @@ $)
   $}
 
   ${
+    $d A x s r $.  $d S x s r $.  $d R x s r $.  $d C x s r $.
+    clos1basesucg.1 $e |- C = Clos1 ( S , R ) $.
+    $( A member of a closure is either in the base set or connected to another
+       member by ` R ` .  Theorem IX.5.16 of [Rosser] p. 248.  (Contributed by
+       Scott Fenton, 31-Jul-2019.) $)
+    clos1basesucg $p |- ( ( S e. V /\ R e. W ) ->
+       ( A e. C <-> ( A e. S \/ E. x e. C x R A ) ) ) $=
+       ( vs vr wcel cclos1 cv wbr wrex wo wb wceq eleq2d bibi12d clos1eq1 eleq2
+       rexeqdv orbi12d clos1eq2 breq rexeqbidv orbi2d eqid clos1basesuc vtocl2g
+       wa vex eleq2i rexeqi orbi2i 3bitr4g ) EFKDGKULBEDLZKZBEKZAMZBDNZAUROZPZB
+       CKUTVBACOZPBIMZJMZLZKZBVFKZVABVGNZAVHOZPZQBEVGLZKZUTVKAVNOZPZQUSVDQIJEDF
+       GVFERZVIVOVMVQVRVHVNBVGVFEUAZSVRVJUTVLVPVFEBUBVRVKAVHVNVSUCUDTVGDRZVOUSV
+       QVDVTVNURBVGEDUEZSVTVPVCUTVTVKVBAVNURWAVABVGDUFUGUHTABVHVGVFIUMJUMVHUIUJ
+       UKCURBHUNVEVCUTVBACURHUOUPUQ $.
+  $}
+
+  ${
     $d a x y z $.
     $( The finite cardinals as expressed via the closure operation.  Theorem
        X.1.3 of [Rosser] p. 276.  (Contributed by SF, 12-Feb-2015.) $)
@@ -56524,6 +56605,17 @@ $)
       TMCCSVHVIDCUOGHABCTCDEFULUPUMCASUTABCFUNUQUR $.
   $}
 
+  ${
+    $d R x y $.  $d C x y $.
+    clos10.1 $e |- R e. _V $.
+    clos10.2 $e |- C = Clos1 ( (/) , R ) $.
+    $( The value of a closure over an empty base set.  (Contributed by Scott
+       Fenton, 31-Jul-2019.) $)
+    clos10 $p |- C = (/) $=
+       ( vx vy c0 cvv wcel wss cv wbr wa wi wal wral 0ex 0ss noel pm2.21i rgenw
+       adantr ax-gen clos1induct mp3an eqssi ) AGGHIGGJEKZGIZUGFKZBLZMUIGIZNZFO
+       ZEAPAGJQGRUMEAULFUHUKUJUHUKUGSTUBUCUAEFABGHGQCDUDUEARUF $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -57362,7 +57454,7 @@ $)
     $d x y z $.
     $( The subset relationship partially orders the universe.  (Contributed by
        SF, 12-Mar-2015.) $)
-    ssetpov $p |- SSet Po _V $=
+    ssetpov $p |- _S Po _V $=
       ( vx vy vz csset cvv cpartial wbr wtru wcel ssetex a1i vvex cv wa wss vex
       ssid brsset anbi12i 3ad2ant3 w3a sstr 3imtr4i weq eqss bitr4i biimpri pod
       mpbir trud ) DEFGHABCEDEEDEIHJKEEIHLKAMZUKDGZHUKEIZNULUKUKOUKQUKUKAPZUNRU
@@ -58704,7 +58796,7 @@ $)
   ${
     ensn.1 $e |- A e. _V $.
     ensn.2 $e |- B e. _V $.
-    $( Two singletons are equinumerous.  Theorem XI.1.10 of {{Rosser}}.
+    $( Two singletons are equinumerous.  Theorem XI.1.10 of [Rosser] p. 348.
        (Contributed by SF, 25-Feb-2015.) $)
     ensn $p |- { A } ~~ { B } $=
       ( cvv wcel csn cen wbr en2sn mp2an ) AEFBEFAGBGHICDABEEJK $.
@@ -58735,7 +58827,7 @@ $)
     enadj.2 $e |- B e. _V $.
     enadj.3 $e |- X e. _V $.
     enadj.4 $e |- Y e. _V $.
-    $( Equivalence law for adjunction.  Theorem XI.1.13 of {{Rosser}}.
+    $( Equivalence law for adjunction.  Theorem XI.1.13 of [Rosser] p. 348.
        (Contributed by SF, 25-Feb-2015.) $)
     enadj $p |- ( ( ( A u. { X } ) = ( B u. { Y } ) /\
         -. X e. A /\ -. Y e. B ) -> A ~~ B ) $=
@@ -59274,8 +59366,8 @@ $)
     $d A r $.  $d B r $.  $d r x $.  $d r y $.
     enprmap.1 $e |- B e. _V $.
     $( A mapping from a two element pair onto a set is equinumerous with the
-       power class of the set.  Theorem XI.1.28 of {{Rosser}}.  (Contributed by
-       SF, 3-Mar-2015.) $)
+       power class of the set.  Theorem XI.1.28 of [Rosser] p. 360.
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmap $p |- ( ( x =/= y /\ A = { x , y } ) -> ( A ^m B ) ~~ ~P B ) $=
       ( vr cv wne cpr wceq wa cmap co cpw ccnv csn cima cmpt wf1o cen wfun eqid
       wbr wfn crn enprmaplem2 a1i enprmaplem3 enprmaplem6 syl3anbrc enprmaplem1
@@ -59291,8 +59383,8 @@ $)
     enprmapc.2 $e |- B e. _V $.
     enprmapc.3 $e |- C e. _V $.
     $( A mapping from a two element pair onto a set is equinumerous with the
-       power class of the set.  Theorem XI.1.28 of {{Rosser}}.  (Contributed by
-       SF, 3-Mar-2015.) $)
+       power class of the set.  Theorem XI.1.28 of [Rosser] p. 360.
+       (Contributed by SF, 3-Mar-2015.) $)
     enprmapc $p |- ( ( A =/= B /\ P = { A , B } ) -> ( P ^m C ) ~~ ~P C ) $=
       ( vx vy cv wne cpr wceq wa cmap wi eqeq2d anbi12d imbi1d vtocl co cpw cen
       wbr neeq1 preq1 neeq2 preq2 enprmap ) HJZBKZDUJBLZMZNZDCOUACUBUCUDZPZABKZ
@@ -59451,8 +59543,8 @@ $)
     $d A b x $.
     $( Define the type-raising operation on a cardinal number.  This is the
        unique cardinal containing the unit power classes of the elements of the
-       given cardinal.  Definition from [Rosser] p.  XXX. (Contributed by Scott
-       Fenton, 24-Feb-2015.) $)
+       given cardinal.  Definition adapted from [Rosser] p. 528.  (Contributed
+       by Scott Fenton, 24-Feb-2015.) $)
     df-tc $a |- T_c A = ( iota b ( b e. NC /\ E. x e. A b = Nc ~P1 x ) ) $.
   $}
 
@@ -59822,20 +59914,22 @@ $)
       UUHBOWNUUPUUIWPXIUUOUUIWQUUGAUUHBWRWSXOUUJXJMXCWTXAXDWIXEXFXG $.
   $}
 
-  $( Cardinal zero is the cardinality of the empty set.  (Contributed by SF,
-     24-Feb-2015.) $)
+  $( Cardinal zero is the cardinality of the empty set.  Theorem XI.2.7 of
+     [Rosser] p. 372.  (Contributed by SF, 24-Feb-2015.) $)
   df0c2 $p |- 0c = Nc (/) $=
     ( vx c0 cen cec cv wbr cab cnc c0c dfec2 df-nc wceq wcel en0 ensym 3bitr4ri
     el0c abbi2i 3eqtr4ri ) BCDBAEZCFZAGBHIABCJBKUAAITBCFTBLUATIMTNBTOTQPRS $.
 
-  $( Cardinal zero is a cardinal number.  (Contributed by SF, 24-Feb-2015.) $)
+  $( Cardinal zero is a cardinal number.  Corollary 1 to theorem XI.2.7 of
+     [Rosser] p. 373.  (Contributed by SF, 24-Feb-2015.) $)
   0cnc $p |- 0c e. NC $=
     ( c0c c0 cnc cncs df0c2 0ex ncelncsi eqeltri ) ABCDEBFGH $.
 
 
   ${
     $d f x $.  $d f y $.  $d f z $.  $d x y $.  $d x z $.  $d y z $.
-    $( Cardinal one is a cardinal number.  (Contributed by SF, 24-Feb-2015.) $)
+    $( Cardinal one is a cardinal number.  Corollary 2 to theorem XI.2.8 of
+       [Rosser] p. 373. (Contributed by SF, 24-Feb-2015.) $)
     1cnc $p |- 1c e. NC $=
       ( vx vy vz vf c1c wcel cv cnc wceq wex csn cen wbr cvv vex exlimiv eqeq2d
       crn spcev sylbi cncs cec cab dfec2 df-nc el1c en2sn mp2an breq2 wf1o bren
@@ -59853,8 +59947,8 @@ $)
 
   ${
     df1c3.1 $e |- A e. _V $.
-    $( Cardinal one is the cardinality of a singleton.  (Contributed by SF,
-       2-Mar-2015.) $)
+    $( Cardinal one is the cardinality of a singleton.  Theorem XI.2.8 of
+       [Rosser] p. 373.  (Contributed by SF, 2-Mar-2015.) $)
     df1c3 $p |- 1c = Nc { A } $=
       ( c1c csn cnc wceq wcel snel1c cncs wb 1cnc ncseqnc ax-mp mpbir ) CADZEFZ
       OCGZABHCIGPQJKCOLMN $.
@@ -59862,8 +59956,8 @@ $)
 
   ${
     $d A x $.
-    $( Cardinal one is the cardinality of a singleton.  (Contributed by SF,
-       13-Mar-2015.) $)
+    $( Cardinal one is the cardinality of a singleton.  Theorem XI.2.8 of
+       [Rosser] p. 373. (Contributed by SF, 13-Mar-2015.) $)
     df1c3g $p |- ( A e. V -> 1c = Nc { A } ) $=
       ( vx c1c cv csn cnc wceq sneq nceqd eqeq2d vex df1c3 vtoclg ) DCEZFZGZHDA
       FZGZHCABOAHZQSDTPROAIJKOCLMN $.
@@ -59893,8 +59987,8 @@ $)
 
   ${
     $d A x $.  $d A y $.  $d B x $.  $d B y $.  $d x y $.  $d x z $.  $d y z $.
-    $( The cardinals are closed under cardinal addition.  (Contributed by SF,
-       24-Feb-2015.) $)
+    $( The cardinals are closed under cardinal addition.  Theorem XI.2.10
+       of [Rosser] p. 374.  (Contributed by SF, 24-Feb-2015.) $)
     ncaddccl $p |- ( ( A e. NC /\ B e. NC ) -> ( A +c B ) e. NC ) $=
       ( vx vy vz cncs wcel cv cnc wceq wex elncs wa c0 csn cxp cen mpbir eqcomi
       cplc eeanv ccompl wbr vex 0ex complex xpsnen snex xpex eqnc eqtr addceq12
@@ -59922,8 +60016,8 @@ $)
       UBUDENUBUFENUBAENOUEUGRUDPFUDSTUA $.
   $}
 
-  $( The finite cardinals are a subset of the cardinals.  (Contributed by SF,
-     24-Feb-2015.) $)
+  $( The finite cardinals are a subset of the cardinals.  Theorem XI.2.11 of
+     [Rosser] p. 374. (Contributed by SF, 24-Feb-2015.) $)
   nnssnc $p |- Nn C_ NC $=
     ( vx cnnc cncs cv nnnc ssriv ) ABCADEF $.
 
@@ -60017,8 +60111,8 @@ $)
     ax-mp 3eqtr4i ) ABZCZDACZBZDECZDEDAFGUAREQHIJETEQTHSAKTQKLSAMONJP $.
 
   ${
-    $( One plus one equals two.  Theorem *110.64 of {{WhiteheadRussell}}.  This
-       theorem is occasionally useful.  (Contributed by SF, 2-Mar-2015.) $)
+    $( One plus one equals two.  Theorem *110.64 of [WhiteheadRussell] p. 86.
+       This theorem is occasionally useful.  (Contributed by SF, 2-Mar-2015.) $)
     1p1e2c $p |- ( 1c +c 1c ) = 2c $=
       ( c0 csn cvv cun cnc cplc c2c c1c cin wceq wcel 0ex n0i ax-mp elsnc mtbir
       wn vvex snex df1c3 disjsn mpbir ncdisjun df-2c df-pr nceqi eqtri 3eqtr4ri
@@ -60258,7 +60352,7 @@ $)
     $d t x $.  $d u x $.
     $( Lemma for ~ ceex .  Set up part of the stratification.  (Contributed by
        SF, 6-Mar-2015.) $)
-    ceexlem1 $p |- ( <. { { a } } , n >. e. ( SSet o. SI Pw1Fn ) <->
+    ceexlem1 $p |- ( <. { { a } } , n >. e. ( _S o. SI Pw1Fn ) <->
        ~P1 a e. n ) $=
       ( vu vt cv csn cpw1fn csi wbr csset wa wex cpw1 wceq wel wcel exbii bitri
       snex vex cop ccom brsnsi1 anbi1i 19.41v anass 3bitr2i excom breq1 ceqsexv
@@ -60597,7 +60691,7 @@ $)
     $d A p $.  $d A x $.  $d A y $.  $d p x $.  $d p y $.  $d x y $.
     ce2.1 $e |- A e. _V $.
     $( The value of base two cardinal exponentiation.  Theorem XI.2.70 of
-       {{Rosser}}.  (Contributed by SF, 3-Mar-2015.) $)
+       [Rosser] p. 389.  (Contributed by SF, 3-Mar-2015.) $)
     ce2 $p |- ( M = Nc ~P1 A -> ( 2c ^c M ) = Nc ~P A ) $=
       ( vx vy cpw1 cnc wceq c2c cce co cvv c0 cpr wcel csn cun eqtri wne mpbir
       cpw oveq2 cmap df-pr pw1eq ax-mp pw1un pw1sn 0ex uneq12i eqtr4i cv wa wex
@@ -60612,14 +60706,14 @@ $)
       VQVTZXNWHWHHXRVFWHURLMAWHUOUICVRVSWIWFWHAUCWAWBTRWC $.
   $}
 
-  $( Compute an exponent of the cardinality of one.  Theorem 4.3 of
-     {{Specker}}.  (Contributed by SF, 4-Mar-2015.) $)
+  $( Compute an exponent of the cardinality of one.  Theorem 4.3 of [Specker].
+     (Contributed by SF, 4-Mar-2015.) $)
   ce2nc1 $p |- ( 2c ^c Nc 1c ) = Nc _V $=
     ( c2c c1c cnc cce co cvv cpw cpw1 wceq df1c2 nceqi vvex ce2 ax-mp pwv eqtri
     ) ABCZDEZFGZCZFCQFHZCIRTIBUAJKFQLMNSFOKP $.
 
   $( Compute an exponent of the cardinality of the unit power class of one.
-     Theorem 4.4 of {{Specker}}.  (Contributed by SF, 4-Mar-2015.) $)
+     Theorem 4.4 of [Specker].  (Contributed by SF, 4-Mar-2015.) $)
   ce2ncpw11c $p |- ( 2c ^c Nc ~P1 1c ) = Nc 1c $=
     ( c2c c1c cpw1 cnc cce co cpw wceq eqid 1cex ce2 ax-mp ncpw1c eqtri ) ABCDZ
     EFZBGDZBDOOHPQHOIBOJKLMN $.
@@ -61112,18 +61206,18 @@ $)
   $}
 
   $( Compute the T-raising of the cardinality of the universe.  Part of Theorem
-     5.2 of {{Specker}}.  (Contributed by SF, 4-Mar-2015.) $)
+     5.2 of [Specker].  (Contributed by SF, 4-Mar-2015.) $)
   tcncv $p |- T_c Nc _V = Nc 1c $=
     ( cvv cnc ctc cpw1 c1c vvex tcnc df1c2 nceqi eqtr4i ) ABCADZBEBAFGEKHIJ $.
 
   $( Compute the T-raising of the cardinality of one.  Part of Theorem 5.2 of
-     {{Specker}}.  (Contributed by SF, 4-Mar-2015.) $)
+     [Specker].  (Contributed by SF, 4-Mar-2015.) $)
   tcnc1c $p |- T_c Nc 1c = Nc ~P1 1c $=
     ( c1c 1cex tcnc ) ABC $.
 
   ${
     $d M x $.  $d M y $.  $d N x $.  $d N y $.  $d x y $.
-    $( Cardinal T is one-to-one.  Based on theorem 2.4 of {{Specker}}.
+    $( Cardinal T is one-to-one.  Based on theorem 2.4 of [Specker].
        (Contributed by SF, 10-Mar-2015.) $)
     tc11 $p |- ( ( M e. NC /\ N e. NC ) -> ( T_c M = T_c N <-> M = N ) ) $=
       ( vx vy cncs wcel wa cv cnc wceq wex ctc elncs cpw1 vex tcnc cen wbr eqnc
@@ -61168,7 +61262,7 @@ $)
 
   ${
     $d M p q $.  $d N p q $.
-    $( T-raising perserves order for cardinals.  Theorem 5.5 of {{Specker}}.
+    $( T-raising perserves order for cardinals.  Theorem 5.5 of [Specker].
        (Contributed by SF, 11-Mar-2015.) $)
     tlecg $p |- ( ( M e. NC /\ N e. NC ) -> ( M <_c N <-> T_c M <_c T_c N ) )
         $=
@@ -61194,7 +61288,7 @@ $)
     $d m x $.  $d m y $.  $d N a $.  $d N b $.  $d N c $.  $d n p $.  $d N q $.
     $d n x $.  $d n y $.  $d p q $.  $d p x $.  $d p y $.  $d x y $.
     $( If a cardinal is less than or equal to a T-raising, then it is also a
-       T-raising.  Theorem 5.6 of {{Specker}}.  (Contributed by SF,
+       T-raising.  Theorem 5.6 of [Specker].  (Contributed by SF,
        11-Mar-2015.) $)
     letc $p |- ( ( M e. NC /\ N e. NC /\ M <_c T_c N ) ->
        E. p e. NC M = T_c p ) $=
@@ -61237,7 +61331,7 @@ $)
     $d p s $.  $d p x $.  $d p y $.  $d q r $.  $d q s $.  $d q x $.  $d q y $.
     $d r s $.  $d r x $.  $d r y $.  $d s y $.  $d x y $.
     $( Partial ordering law for base two cardinal exponentiation.  Theorem 4.8
-       of {{Specker}}.  (Contributed by SF, 16-Mar-2015.) $)
+       of [Specker].  (Contributed by SF, 16-Mar-2015.) $)
     ce2le $p |- ( ( ( M e. NC /\ N e. NC /\ ( N ^c 0c ) e. NC ) /\ M <_c N ) ->
        ( 2c ^c M ) <_c ( 2c ^c N ) ) $=
       ( vp vq vx vy vr cncs wcel cce co clec wbr wa cv wceq wrex c2c wi cnc c0c
@@ -61280,7 +61374,7 @@ $)
   $}
 
   $( The exponent of two to a T-raising is always a cardinal.  Theorem 5.8 of
-     {{Specker}}.  (Contributed by SF, 13-Mar-2015.) $)
+     [Specker].  (Contributed by SF, 13-Mar-2015.) $)
   ce2t $p |- ( M e. NC -> ( 2c ^c T_c M ) e. NC ) $=
     ( cncs wcel c2c ctc cce co tc2c oveq1i 2nc cet mpan syl5eqelr ) ABCZDAEZFGD
     EZOFGZBPDOFHIDBCNQBCJDAKLM $.
@@ -61492,21 +61586,169 @@ $)
   $}
 
   ${
-    $d t u $.  $d t x $.  $d u x $.
+     $d A x y z $. $d B x y z $. $d C x y z $.
+     $( Distributivity law for cardinal addition and multiplication.
+     	Theorem XI.2.31 of [Rosser] p. 379.  (Contributed by Scott Fenton,
+	31-Jul-2019.) $)
+     addcdi $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
+       ( A .c ( B +c C ) ) = ( ( A .c B ) +c ( A .c C ) ) ) $=
+       ( vx vy vz cncs wcel cplc cmuc co wceq cv cnc vex wa wi cxp mucnc oveq1
+       w3a ncaddccl 3adant1 wex elncs ncid eleq2 mpbiri cin c0 cun wrex ncseqnc
+       eladdc bi2anan9 ncdisjun oveq2d xpdisj2 xpex syl unex xpundi nceqi eqtri
+       addceq12i 3eqtr4g eqtr3d addceq12d eqeq12d syl5ibr exlimiv sylbi adantrd
+       addceq12 oveq2 adantr adantl imbi2d syl5ibrcom 3ad2ant1 rexlimdvv syl5bi
+       wb sylbird syl5 exlimdv mpd ) AGHZBGHZCGHZUAZBCIZGHZAWLJKZABJKZACJKZIZLZ
+       WIWJWMWHBCUBUCWMWLDMZNZLZDUDWKWRDWLUEWKXAWRDXAWSWLHZWKWRXAXBWSWTHWSDOZUF
+       WLWTWSUGUHXBEMZFMZUIUJLZWSXDXEUKZLZPZFCULEBULWKWRWSBCEFUNWKXIWREFBCWKXDB
+       HZXECHZPZBXDNZLZCXENZLZPZXIWRQZWIWJXQXLWCWHWIXNXJWJXPXKBXDUMCXEUMUOUCWHW
+       IXQXRQWJWHXRXQXIAXMXOIZJKZAXMJKZAXOJKZIZLZQWHXFYDXHWHAWTLZDUDXFYDQZDAUEY
+       EYFDXFYDYEWTXSJKZWTXMJKZWTXOJKZIZLXFWTXGNZJKZYGYJXFYKXSWTJXDXEEOZFOZUPUQ
+       XFWSXDRZWSXERZUKZNZYONZYPNZIZYLYJXFYOYPUIUJLYRUUALXDXEWSWSURYOYPWSXDXCYM
+       USWSXEXCYNUSUPUTYLWSXGRZNYRWSXGXCXDXEYMYNVASUUBYQWSXDXEVBVCVDYHYSYIYTWSX
+       DXCYMSWSXEXCYNSVEVFVGYEXTYGYCYJAWTXSJTYEYAYHYBYIAWTXMJTAWTXOJTVHVIVJVKVL
+       VMXQWRYDXIXQWNXTWQYCXQWLXSAJBCXMXOVNUQXQWOYAWPYBXNWOYALXPBXMAJVOVPXPWPYB
+       LXNCXOAJVOVQVHVIVRVSVTWDWAWBWEWFWBWG $.
+  $}
+
+  $( Distributivity law for cardinal addition and multiplication.
+     Theorem XI.2.30 of [Rosser] p. 379.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+  addcdir $p |- ( ( A e. NC /\ B e. NC /\ C e. NC ) ->
+       ( ( A +c B ) .c C ) = ( ( A .c C ) +c ( B .c C ) ) ) $=
+    ( cncs wcel w3a cplc cmuc wceq addcdi 3coml ncaddccl 3adant3 muccom syl2anc
+    co simp3 3adant2 3adant1 addceq12d 3eqtr4d ) ADEZBDEZCDEZFZCABGZHPZCAHPZCBH
+    PZGZUFCHPZACHPZBCHPZGUDUBUCUGUJICABJKUEUFDEZUDUKUGIUBUCUNUDABLMUBUCUDQUFCNO
+    UEULUHUMUIUBUDULUHIUCACNRUCUDUMUIIUBBCNSTUA $.
+
+  ${
+     $d A x y $. $d B x y $.
+     $( The cardinal product of two cardinal numbers is zero iff one
+     	of the numbers is zero.  Biconditional form of theorem XI.2.34 of
+     	[Rosser] p. 380.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+     muc0or $p |- ( ( A e. NC /\ B e. NC ) -> ( ( A .c B ) = 0c <->
+     	    ( A = 0c \/ B = 0c ) ) ) $=
+       ( vx vy cncs wcel wa cmuc co c0c wceq wo cv cnc wi c0 df0c2 sylbi eqeq1d
+       wex elncs anbi12i eeanv bitr4i cxp vex mucnc eqeq12i cen xpex eqnc bitri
+       wbr en0 xpeq0 nceq orim12i oveq12 wb adantr eqeq2i syl6bb adantl orbi12d
+       eqeq1 mpbiri exlimivv 0cnc muccom mpan muc0 eqtrd oveq1 syl5ibrcom oveq2
+       imbi12d jaod impbid ) AEFZBEFZGZABHIZJKZAJKZBJKZLZWAACMZNZKZBDMZNZKZGZDT
+       CTZWCWFOZWAWICTZWLDTZGWNVSWPVTWQCAUADBUAUBWIWLCDUCUDWMWOCDWMWOWHWKHIZJKZ
+       WHPNZKZWKWTKZLZOWSWGWJUEZNZWTKZXCWRXEJWTWGWJCUFZDUFZUGQUHXFXDPKZXCXFXDPU
+       IUMXIXDPWGWJXGXHUJUKXDUNULXIWGPKZWJPKZLXCWGWJUOXJXAXKXBWGPUPWJPUPUQRRRWM
+       WCWSWFXCWMWBWRJAWHBWKHURSWMWDXAWEXBWMWDWHJKZXAWIWDXLUSWLAWHJVEUTJWTWHQVA
+       VBWLWEXBUSWIWLWEWKJKXBBWKJVEJWTWKQVAVBVCVDVPVFVGRWAWDWCWEVTWDWCOVSVTWCWD
+       JBHIZJKVTXMBJHIZJJEFVTXMXNKVHJBVIVJBVKVLWDWBXMJAJBHVMSVNVCVSWEWCOVTVSWCW
+       EAJHIZJKAVKWEWBXOJBJAHVOSVNUTVQVR $.
+  $}
+
+  ${
+     $d A q $. $d B q $. $d C q $.
+     $( Multiplication law for cardinal less than.  Theorem XI.2.35 of 
+     	[Rosser] p. 380.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+     lemuc1 $p |- ( ( ( A e. NC /\ B e. NC /\ C e. NC ) /\ A <_c B ) ->
+       ( A .c C ) <_c ( B .c C ) ) $=
+       ( vq cncs wcel w3a clec wbr cmuc co cv cplc wceq wb dflec2 3adant3 muccl
+       wrex wa wi adantr ancoms adantll addlecncs syl2anc simpll simplr addcdir
+       simpr syl3anc breqtrrd oveq1 breq2d syl5ibrcom rexlimdva 3adant2 sylbid
+       imp ) AEFZBEFZCEFZGZABHIZACJKZBCJKZHIZVCVDBADLZMZNZDESZVGUTVAVDVKOVBABDP
+       QUTVBVKVGUAVAUTVBTZVJVGDEVLVHEFZTZVGVJVEVICJKZHIVNVEVEVHCJKZMZVOHVNVEEFZ
+       VPEFZVEVQHIVLVRVMACRUBVBVMVSUTVMVBVSVHCRUCUDVEVPUEUFVNUTVMVBVOVQNUTVBVMU
+       GVLVMUJUTVBVMUHAVHCUIUKULVJVFVOVEHBVICJUMUNUOUPUQURUS $.
+  $}
+
+  $( Multiplication law for cardinal less than.  (Contributed by Scott
+     Fenton, 31-Jul-2019.) $)
+  lemuc2 $p |- ( ( ( A e. NC /\ B e. NC /\ C e. NC ) /\ B <_c C ) ->
+    ( A .c B ) <_c ( A .c C ) ) $=
+    ( cncs wcel w3a clec wbr wa cmuc co 3anrot lemuc1 sylanb wceq simpl1 simpl2
+    muccom syl2anc simpl3 3brtr4d ) ADEZBDEZCDEZFZBCGHZIZBAJKZCAJKZABJKZACJKZGU
+    EUCUDUBFUFUHUIGHUBUCUDLBCAMNUGUBUCUJUHOUBUCUDUFPZUBUCUDUFQABRSUGUBUDUKUIOUL
+    UBUCUDUFTACRSUA $.
+
+  $( A cardinal is less than or equal to its product with another.
+     Theorem XI.2.36 of [Rosser] p. 381.  (Contributed by Scott
+     Fenton, 31-Jul-2019.) $)
+  ncslemuc $p |- ( ( M e. NC /\ N e. NC /\ N =/= 0c ) ->
+       M <_c ( M .c N ) ) $=
+    ( cncs wcel c0c wne w3a c1c clec wbr cmuc co wn df-ne nc0le1 ord syl5bi imp
+    wceq wa 3adant1 wi mucid1 ad2antrr 1cnc lemuc2 mp3anl2 eqbrtrrd 3adant3 mpd
+    ex ) ACDZBCDZBEFZGHBIJZAABKLZIJZUMUNUOULUMUNUOUNBESZMUMUOBENUMURUOBOPQRUAUL
+    UMUOUQUBUNULUMTZUOUQUSUOTAHKLZAUPIULUTASUMUOAUCUDULHCDUMUOUTUPIJUEAHBUFUGUH
+    UKUIUJ $.
+
+  $( The product of the cardinality of ` _V ` squared is just the cardinality
+     of ` _V ` .  Theorem XI.2.37 of [Rosser] p. 381.  (Contributed by
+     Scott Fenton, 31-Jul-2019.) $)
+  ncvsq $p |- ( Nc _V .c Nc _V ) = Nc _V $=
+    ( cvv cnc cmuc co clec wbr wceq wcel c0 ovex wn cncs vvex mp2an mpbii df-ne
+    wne mto mpbir c0c nulnnc ncelncsi muccl eleq1 lecncvg vn0 el0c nemtbir ncid
+    eleq2 ncslemuc mp3an wa wi sbth ) ABZUPCDZUPEFZUPUQEFZUQUPGZUQAHUQIQZURUPUP
+    CJVAUQIGZKVBILHZUAVBUQLHZVCUPLHZVEVDAMUBZVFUPUPUCNZUQILUDORUQIPSUQAUENVEVEU
+    PTQZUSVFVFVHUPTGZKVIATHZVJAIUFAUGUHVIAUPHVJAMUIUPTAUJORUPTPSUPUPUKULVDVEURU
+    SUMUTUNVGVFUQUPUONN $.
+
+  $( There are exactly as many ordered pairs as there are sets.  Corollary to
+     theorem XI.2.37 of [Rosser] p. 381.  (Contributed by Scott Fenton,
+     31-Jul-2019.) $)
+  vvsqenvv $p |- ( _V X. _V ) ~~ _V $=
+    ( cvv cxp cnc wceq cen wbr cmuc co vvex mucnc ncvsq eqtr3i xpex eqnc mpbi )
+    AABZCZACZDPAEFRRGHQRAAIIJKLPAAAIIMNO $.
+
+  ${
+     $( Cardinal one is strictly greater than cardinal zero.  (Contributed
+     	by Scott Fenton, 01-Aug-2019.) $)
+     0lt1c $p |- 0c <c 1c $=
+       ( vx c0c cv csn cnc c1c cltc wbr clec wne c0 df0c2 wss 0ss 0ex snex wceq
+       wn df-ne wcel nclec ax-mp eqbrtri snnz mpbi ncid eleq2 mpbiri el0c sylib
+       vex mto mpbir brltc mpbir2an df1c3 breqtrri ) BACZDZEZFGBUTGHBUTIHBUTJZB
+       KEZUTILKUSMVBUTIHUSNKUSOURPZUAUBUCVABUTQZRVDUSKQZUSKJVERURAUKZUDUSKSUEVD
+       USBTZVEVDVGUSUTTUSVCUFBUTUSUGUHUSUIUJULBUTSUMBUTUNUOURVFUPUQ $.
+  $}
+  
+
+  ${
+    $d x y z w $.
+    $( The function mapping ` x ` to its cardinal successor exists.
+       (Contributed by Scott Fenton, 30-Jul-2019.) $)
+    csucex $p |- ( x e. _V |-> ( x +c 1c ) ) e. _V $=
+       ( vy vz vw cvv cv c1c cplc caddcfn c1st wbr wa wex wceq wcel bitri exbii
+       cop vex syl6bb cmpt csn cxp cres ccnv ccom wfun wrel funmpt funrel ax-mp
+       relco brcnv br1st anbi1i 19.41v bitr4i excom breq1 brres braddcfn opelxp
+       opex mpbiran elsn anbi12ci ceqsexv 1cex addceq2 eqeq1d opelco copab mptv
+       eleq2i weq addceq1 eqeq1 eqcom opelopab 3bitr4ri eqrelriiv addcfnex vvex
+       eqeq2d snex xpex resex 1stex cnvex coex eqeltri ) AEAFZGHZUAZIEGUBZUCZUD
+       ZJUEZUFZEBCWNWSWNUGWNUHAEWMUIWNUJUKWQWRULBFZDFZWRKZXACFZWQKZLZDMZWTGHZXC
+       NZWTXCRZWSOXIWNOZXFWLGNZWTWLHZXCNZLZAMZXHXFXAWTWLRZNZXDLZAMZDMZXOXEXSDXE
+       XQAMZXDLXSXBYAXDXBXAWTJKYAWTXAJUMAXAWTBSZUNPUOXQXDAUPUQQXTXRDMZAMXOXRDAU
+       RYCXNAXDXNDXPWTWLYBASZVCXQXDXPXCWQKZXNXAXPXCWQUSYEXPXCIKZXPWPOZLXNXPXCIW
+       PUTYFXMYGXKWTWLXCYBYDVAYGWLWOOZXKYGWTEOYHYBWTWLEWOVBVDAGVEPVFPTVGQPPXMXH
+       AGVHXKXLXGXCWLGWTVIVJVGPDWTXCWQWRVKXJXIXAWMNZADVLZOXHWNYJXIADWMVMVNYIXAX
+       GNZXHADWTXCYBCSABVOWMXGXAWLWTGVPWDDCVOYKXCXGNXHXAXCXGVQXCXGVRTVSPVTWAWQW
+       RIWPWBEWOWCGWEWFWGJWHWIWJWK $.
+  $}
+
+  ${
+     $d A x y $. $d B x y $.
+     brcsuc.1 $e |- A e. _V $.
+     brcsuc.2 $e |- B e. _V $.
+     $( Binary relationship form of the successor mapping function. 
+     	(Contributed by Scott Fenton, 02-Aug-2019.) $)
+     brcsuc $p |- ( A ( x e. _V |-> ( x +c 1c ) ) B <-> B = ( A +c 1c ) ) $=
+       ( vy cv c1c cplc wceq cvv cmpt addceq1 eqeq2d eqeq1 mptv brab ) FGZAGZHI
+       ZJRBHIZJCUAJAFBCAKTLDESBJTUARSBHMNRCUAOAFTPQ $.
+  $}
+
+  ${
+    $d x y t w $.
     $( Lemma for ~ nnltp1c .  Set up stratification.  (Contributed by SF,
        25-Mar-2015.) $)
     nnltp1clem1 $p |- { x | x <c ( x +c 1c ) } e. _V $=
-      ( vt vu caddcfn c1st c2nd ccnv c1c ccom cltc cv wbr wcel wa wex brco wceq
-      1cex 3bitri cnvex csn cima cres cfix cplc cab cvv elfix exancom cop brcnv
-      brres eliniseg anbi2i bitri vex op1st2nd anbi1i exbii opex breq1 braddcfn
-      ceqsexv eqcom addcex breq2 abbi2i 1stex 2ndex snex imaex resex coex ltcex
-      addcfnex fixex eqeltrri ) DEFGZHUAZUBZUCZGZIZGZJIZUDZAKZWGHUEZJLZAUFUGWIA
-      WFWGWFMWGWGWELWGBKZJLZWJWGWDLZNBOZWIWGWEUHBWGWGWDJPWMWLWKNZBOWJWHQZWKNZBO
-      WIWKWLBUIWNWPBWLWOWKWLWGWJWCLZWGHUJZWJDLZWOWJWGWCUKWQWGCKZWBLZWTWJDLZNZCO
-      WTWRQZXBNZCOWSCWGWJDWBPXCXECXAXDXBXAWTWGWALZWTWGELZWTHFLZNZXDWGWTWAUKXFXG
-      WTVTMZNXIWTWGEVTULXJXHXGFHWTUMUNUOWGHWTAUPZRUQSURUSXBWSCWRWGHXKRUTWTWRWJD
-      VAVCSWSWHWJQWOWGHWJXKRVBWHWJVDUOSURUSWKWIBWHWGHXKRVEWJWHWGJVFVCSSVGWEWDJW
-      CDWBVOWAEVTVHVRVSFVITHVJVKVLTVMTVNVMVPVQ $.
+      ( vw vy cltc ccnv cvv cv c1c cplc cmpt ccom cfix wbr cab elfix wa wex vex
+      wcel bitri brco wceq brcsuc brcnv anbi12i exbii 1cex addcex breq2 ceqsexv
+      abbi2i ltcex cnvex csucex coex fixex eqeltrri ) DEZBFBGHIJZKZLZAGZVBHIZDM
+      ZANFVDAVAVBVASVBVBUTMZVDVBUTOVEVBCGZUSMZVFVBURMZPZCQZVDCVBVBURUSUAVJVFVCU
+      BZVBVFDMZPZCQVDVIVMCVGVKVHVLBVBVFARZCRUCVFVBDUDUEUFVLVDCVCVBHVNUGUHVFVCVB
+      DUIUJTTTUKUTURUSDULUMBUNUOUPUQ $.
   $}
 
   ${
@@ -61526,12 +61768,113 @@ $)
   $}
 
   ${
+     $d n p q x y z $.
+     $( Lemma for ~ addccan2nc .  Stratification helper theorem.  (Contributed
+     	by Scott Fenton, 02-Aug-2019.) $)
+     addccan2nclem1 $p |- ( x ( AddC o. `' ( 1st |` ( _V X. { n } ) ) ) y
+     		    <-> y = ( x +c n ) ) $=
+       ( vz vp vq cv caddcfn c1st cvv wbr cop wceq wex weq eqeq2d 3bitri anbi1i
+       wa opeq2 csn cxp cres ccnv ccom cplc brco wcel brcnv brres w3a wrex rexv
+       ancom elxp2 vex rexsn exbii bitri exancom 19.41v bitr4i br1st eqeq1 opth
+       syl6bb pm5.32ri equcom anbi2i equcoms adantl pm5.32i df-3an 2exbii opeq1
+       ceqsex2v opex breq1 ceqsexv braddcfn eqcom ) AGZBGZHIJCGZUAZUBZUCZUDZUEK
+       ZWBWDLZWCHKZWBWDUFZWCMWCWLMWIWBDGZWHKZWMWCHKZSZDNWMWJMZWOSZDNWKDWBWCHWHU
+       GWPWRDWNWQWOWNWMWBWGKWMWBIKZWMWFUHZSZWQWBWMWGUIWMWBIWFUJXAWSWMEGZWDLZMZS
+       ZENZEAOZFCOZWMXBFGZLZMZUKZFNENZWQXAXDENZWSSZXFXAWTWSSXOWSWTUNWTXNWSWTXKF
+       WEULZEJULXPENXNEFWMJWEUOXPEUMXPXDEXKXDFWDCUPZXHXJXCWMXIWDXBTPUQURQRUSXFX
+       DWSSENXOWSXDEUTXDWSEVAUSVBXFWMWBXILZMZXDSZFNZENXMXEYAEXEXSFNZXDSYAWSYBXD
+       FWMWBAUPZVCRXSXDFVAVBURXTXLEFXTXGXHSZXKSZXLXTXGCFOZSZXDSYDXDSYEXDXSYGXDX
+       SXCXRMYGWMXCXRVDXBWDWBXIVEVFVGYGYDXDYFXHXGCFVHVIRYDXDXKYDXCXJWMXHXCXJMZX
+       GYHCFWDXIXBTVJVKPVLQXGXHXKVMVBVNUSXKXSWQEFWBWDYCXQXGXJXRWMXBWBXIVOPXHXRW
+       JWMXIWDWBTPVPQQRURWOWKDWJWBWDYCXQVQWMWJWCHVRVSQWBWDWCYCXQVTWLWCWAQ $.
+  $}
+
+
+  ${
+     $d N n p x y $. $d P p x y $.
+     $( Lemma for ~ addccan2nc .  Establish stratification for induction.
+     	(Contributed by Scott Fenton, 02-Aug-2019.) $)
+     addccan2nclem2 $p |- ( ( N e. V /\ P e. W ) ->
+     		{ x | ( ( x +c N ) = ( x +c P ) -> N = P ) } e. _V ) $=
+       ( vn vp vy wcel wa cv cplc wceq cab cvv caddcfn c1st ccnv ccom wbr wi wn
+       ccompl cun unab complab uneq1i imor 3eqtr4i addceq2 eqeq1d abbidv eleq1d
+       abbii eqeq2d csn cxp cres cfix wex elfix brco addccan2nclem1 brcnv bitri
+       anbi12i exbii vex addcex eqeq1 ceqsexv 3bitri abbi2i addcfnex 1stex vvex
+       wo snex xpex resex cnvex fixex eqeltrri vtocl2g complexg syl abexv unexg
+       coex sylancl syl5eqelr ) CDIBEIJZAKZCLZWMBLZMZCBMZUAZANZWPANZUCZWQANZUDZ
+       OWPUBZANZXBUDXDWQVQZANXCWSXDWQAUEXAXEXBWPAUFUGWRXFAWPWQUHUNUIWLXAOIZXBOI
+       XCOIWLWTOIZXGWMFKZLZWMGKZLZMZANZOIWNXLMZANZOIXHFGCBDEXICMZXNXPOXQXMXOAXQ
+       XJWNXLXICWMUJUKULUMXKBMZXPWTOXRXOWPAXRXLWOWNXKBWMUJUOULUMPQOXKUPZUQZURZR
+       ZSZRZPQOXIUPZUQZURZRZSZSZUSZXNOXMAYKWMYKIWMWMYJTZHKZXJMZYMXLMZJZHUTZXMWM
+       YJVAYLWMYMYITZYMWMYDTZJZHUTYQHWMWMYDYIVBYTYPHYRYNYSYOAHFVCYSWMYMYCTYOYMW
+       MYCVDAHGVCVEVFVGVEYOXMHXJWMXIAVHFVHVIYMXJXLVJVKVLVMYJYDYIYCPYBVNYAQXTVOO
+       XSVPXKVRVSVTWAWIWAPYHVNYGQYFVOOYEVPXIVRVSVTWAWIWIWBWCWDWTOWEWFWQAWGXAXBO
+       OWHWJWK $.
+  $}
+
+  ${
+     $d M x m $. $d N x m $. $d P x m $.
+     $( Cancellation law for addition over the cardinal numbers.  Biconditional
+     	form of theorem XI.3.2 of [Rosser] p. 391.  (Contributed by Scott Fenton,
+	02-Aug-2019.) $)
+     addccan2nc $p |- ( ( M e. Nn /\ N e. NC /\ P e. NC ) ->
+     	( ( M +c N ) = ( M +c P ) <-> N = P ) ) $=
+       ( vx vm cnnc wcel cncs cplc wceq wi cv c0c c1c wa addceq1 eqeq12d imbi1d
+       addcid2 eqeq12i w3a cvv addccan2nclem2 biimpi addc32 nnnc ncaddccl sylan
+       weq a1i adantrr adantr adantrl peano4nc biimpd syl2anc simpr syld syl5bi
+       ex findsd 3impb addceq2 impbid1 ) BFGZCHGZAHGZUABCIZBAIZJZCAJZVEVFVGVJVK
+       KZDLZCIZVMAIZJZVKKMCIZMAIZJZVKKZELZCIZWAAIZJZVKKZWANIZCIZWFAIZJZVKKZVLVF
+       VGOZDEBUBDACHHUCVMMJZVPVSVKWLVNVQVOVRVMMCPVMMAPQRDEUIZVPWDVKWMVNWBVOWCVM
+       WACPVMWAAPQRVMWFJZVPWIVKWNVNWGVOWHVMWFCPVMWFAPQRVMBJZVPVJVKWOVNVHVOVIVMB
+       CPVMBAPQRVTWKVSVKVQCVRACSASTUDUJWAFGZWKOZWEWJWIWBNIZWCNIZJZWQWEOZVKWGWRW
+       HWSWANCUEWANAUETXAWTWDVKXAWBHGZWCHGZWTWDKWQXBWEWPVFXBVGWPWAHGZVFXBWAUFZW
+       ACUGUHUKULWQXCWEWPVGXCVFWPXDVGXCXEWAAUGUHUMULXBXCOWTWDWBWCUNUOUPWQWEUQUR
+       USUTVAVBCABVCVD $.
+  $}
+
+  ${
+     $d M q $. $d N q $. $d P q $.
+     $( Cardinal addition preserves cardinal less than.  Biconditional form of
+     	corollary 4 of theorem XI.3.2 of [Rosser] p 391.  (Contributed by
+	Scott Fenton, 02-Aug-2019.) $)
+     lecadd2 $p |- ( ( M e. Nn /\ N e. NC /\ P e. NC ) ->
+       ( ( M +c N ) <_c ( M +c P ) <-> N <_c P ) ) $=
+       ( vq cnnc wcel cncs w3a cplc clec wbr cv wceq wrex wb ncaddccl 3ad2antl2
+       nnnc sylan sylbid 3adant3 3adant2 dflec2 syl2anc wa eqeq2i simpl1 simpl3
+       addcass addccan2nc syl3anc addlecncs syl5ibrcom syl5bi rexlimdva leaddc2
+       breq2 wi ex syl3an1 impbid ) BEFZCGFZAGFZHZBCIZBAIZJKZCAJKZVEVHVGVFDLZIZ
+       MZDGNZVIVEVFGFZVGGFZVHVMOVBVCVNVDVBBGFZVCVNBRZBCPSUAVBVDVOVCVBVPVDVOVQBA
+       PSUBVFVGDUCUDVEVLVIDGVLVGBCVJIZIZMZVEVJGFZUEZVIVKVSVGBCVJUIUFWBVTAVRMZVI
+       WBVBVDVRGFZVTWCOVBVCVDWAUGVBVCVDWAUHVCVBWAWDVDCVJPQVRBAUJUKWBVIWCCVRJKZV
+       CVBWAWEVDCVJULQAVRCJUQUMTUNUOTVBVPVCVDVIVHURVQVPVCVDHVIVHABCUPUSUTVA $.
+  $}
+
+
+  ${
+     $d M p q $. $d N p q $.
+     $( Relationship between successor and cardinal less than or equal.  
+     	(Contributed by Scott Fenton, 03-Aug-2019.) $)
+     ncslesuc $p |- ( ( M e. NC /\ N e. NC ) -> ( M <_c ( N +c 1c ) <->
+       ( M <_c N \/ M = ( N +c 1c ) ) ) ) $=
+       ( vp vq cncs wcel wa c1c cplc clec wbr wceq wo cv wrex wb c0c wi addceq2
+       adantl peano2nc dflec2 sylan2 nc0suc addcid1 syl6eq eqeq2d eqcoms syl6bi
+       olc a1i addcass syl6eqr biimpa simplr ncaddccl adantlr syl2anc addlecncs
+       peano4nc breq2 syl5ibrcom syl6 sylbid syl5 exp3a rexlimdva jaod rexlimdv
+       orc 1cnc mpan2 lectr mpd3an3 mpan2d nclecid syl breq1 impbid ) AEFZBEFZG
+       ZABHIZJKZABJKZAWCLZMZWBWDWCACNZIZLZCEOZWGWAVTWCEFZWDWKPBUAZAWCCUBUCWBWJW
+       GCEWHEFWHQLZWHDNZHIZLZDEOZMWBWJWGRZDWHUDWBWNWSWRWNWSRWBWNWJWCALWGWNWIAWC
+       WNWIAQIAWHQASAUEUFUGWGAWCWFWEUJUHUIUKWBWQWSDEWBWOEFZGZWQWJWGWQWJGWCAWOIZ
+       HIZLZXAWGWQWJXDWQWIXCWCWQWIAWPIXCWHWPASAWOHULUMUGUNXAXDBXBLZWGXAWAXBEFZX
+       DXEPVTWAWTUOVTWTXFWAAWOUPUQBXBUTURXAXEWEWGXAWEXEAXBJKZVTWTXGWAAWOUSUQBXB
+       AJVAVBWEWFVJVCVDVEVFVGVHVEVIVDWBWEWDWFWBWEBWCJKZWDWAXHVTWAHEFXHVKBHUSVLT
+       VTWAWLWEXHGWDRWAWLVTWMTABWCVMVNVOWBWDWFWCWCJKZWAXIVTWAWLXIWMWCVPVQTAWCWC
+       JVRVBVHVS $.
+  $}
+
+  ${
     $d m p $.  $d m q $.  $d m x $.  $d m y $.  $d p q $.  $d p t $.  $d p x $.
     $d p y $.  $d q t $.  $d q x $.  $d t x $.  $d x y $.
-    $( 16-Apr-2015 NM I changed "~" to "~~?" to prevent erroneous
-       link to commented out theorem nmembers1.  Change it back when
-       nmembers1 is completed. $)
-    $( Lemma for ~~? nmembers1 .  Set up stratification.  (Contributed by SF,
+    $( Lemma for ~ nmembers1 .  Set up stratification.  (Contributed by SF,
        25-Mar-2015.) $)
     nmembers1lem1 $p |- { x | { m e. Nn | ( 1c <_c m /\ m <_c x ) } e. T_c
                                                   T_c x } e. _V $=
@@ -61570,58 +61913,72 @@ $)
       JYIUUIUUHUUHJYJXMZYEUYOYKYLXNUYNXNYHXLYMYOYOXP $.
   $}
 
+  $( Lemma for ~ nmembers1 .  The set of all elements between
+     one and zero is empty.  (Contributed by Scott Fenton, 01-Aug-2019.) $)
+  nmembers1lem2 $p |- { m e. Nn | ( 1c <_c m /\ m <_c 0c ) } e. 0c $=
+       ( c1c cv clec wbr wa cnnc crab wcel wn wral wi cltc 0lt1c cncs 0cnc 1cnc
+       c0c wb ltlenlec mp2an mpbi simpri nnnc lectr mp3an13 syl exp3a imp imnan
+       mtoi ex sylib rgen c0 wceq el0c rabeq0 bitri mpbir ) BACZDEZVARDEZFZAGHZ
+       RIZVDJZAGKZVGAGVAGIZVBVCJZLVGVIVBVJVIVBFVCBRDEZRBDEZVKJZRBMEZVLVMFZNROIZ
+       BOIZVNVOSPQRBTUAUBUCVIVBVCVKLVIVBVCVKVIVAOIZVDVKLZVAUDVQVRVPVSQPBVARUEUF
+       UGUHUIUKULVBVCUJUMUNVFVEUOUPVHVEUQVDAGURUSUT $.
+
   ${
-    $d m x $.  $d N m $.  $d m n $.  $d n x $.  $d N x $.  $d k m $.  $d k n $.
-     $( Count the number of elements in a natural interval.  This
-        theorem will take on a different form after we introduce the
-        Axiom of Counting. $)
-$( 16-Apr-2015 NM Commented out since incomplete proofs can't be used
-   for web pages. $)
-$(
+     $d A m x y $. $d B m x y $.
+     $( Lemma for ~ nmembers1 .  If the interval from one to a natural is
+     	in a given natural, extending it by one puts it in the next natural.
+	(Contributed by Scott Fenton, 03-Aug-2019.) $)
+     nmembers1lem3 $p |- ( ( A e. Nn /\ B e. Nn ) -> 
+     ( { m e. Nn | ( 1c <_c m /\ m <_c A ) } e. B ->
+       { m e. Nn | ( 1c <_c m /\ m <_c ( A +c 1c ) ) } e. ( B +c 1c ) ) ) $=
+       ( vx vy c1c cv clec wbr wa cnnc wcel cplc wceq wn cncs adantr anbi12d wo
+       cun crab csn ccompl wrex wi cltc nnltp1c wb nnnc peano2 ltlenlec syl2anc
+       syl mpbid simprd intnand breq2 breq1 elrab notbii bitr4i sylibr elcomplg
+       a1d imnan mpbird ncslesuc syl2an expcom adantrd pm5.32d anass andi bitri
+       orbi1i 3bitr3g 1cnc addlecncs sylancr addccom syl6breqr eleq1 syl5ibrcom
+       jca pm4.71rd bicomd orbi2d bitrd weq elun elsn orbi12i eqrdv sneq uneq2d
+       3bitr4g eqeq2d rspcev compleq uneq1 rexeqbidv sylan2 elsuc ) FCGZHIZXDAH
+       IZJZCKUAZBLZAKLZBKLZJZXEXDAFMZHIZJZCKUAZBFMLZXIXLJXPDGZEGZUBZTZNZEXRUCZU
+       DZDBUDZXQXLXIXPXHXTTZNZEXHUCZUDZYEXLXMYHLZXPXHXMUBZTZNZYIXLYJXMXHLZOZXLX
+       MKLZFXMHIZXMAHIZJZOZUEZYOXLYTYPXLYRYQXJYROZXKXJAXMHIZUUBXJAXMUFIZUUCUUBJ
+       ZAUGXJAPLZXMPLZUUDUUEUHAUIZXJYPUUGAUJZXMUIUMAXMUKULUNUOQUPVDYOYPYSJZOUUA
+       YNUUJXGYSCXMKXDXMNXEYQXFYRXDXMFHUQXDXMAHURRUSUTYPYSVEVAVBXLYPYJYOUHXJYPX
+       KUUIQXMXHKVCUMVFXLDXPYLXLXRKLZFXRHIZXRXMHIZJZJZUUKUULXRAHIZJZJZXRXMNZSZX
+       RXPLXRYLLZXLUUOUURUUKUULJZUUSJZSZUUTXLUVBUUMJUVBUUPUUSSZJZUUOUVDXLUVBUUM
+       UVEXJUVBUUMUVEUHZUEXKXJUUKUVGUULUUKXJUVGUUKXRPLUUFUVGXJXRUIUUHXRAVGVHVIV
+       JQVKUUKUULUUMVLUVFUVBUUPJZUVCSUVDUVBUUPUUSVMUVHUURUVCUUKUULUUPVLVOVNVPXL
+       UVCUUSUURXLUUSUVCXLUUSUVBXJUUSUVBUEXKXJUVBUUSYPYQJXJYPYQUUIXJFFAMZXMHXJF
+       PLUUFFUVIHIVQUUHFAVRVSAFVTWAWDUUSUUKYPUULYQXRXMKWBXRXMFHUQRWCQWEWFWGWHXO
+       UUNCXRKCDWIZXEUULXNUUMXDXRFHUQZXDXRXMHURRUSUVAXRXHLZXRYKLZSUUTXRXHYKWJUV
+       LUURUVMUUSXGUUQCXRKUVJXEUULXFUUPUVKXDXRAHURRUSDXMWKWLVNWPWMYGYMEXMYHXSXM
+       NZYFYLXPUVNXTYKXHXSXMWNWOWQWRULYDYIDXHBXRXHNZYBYGEYCYHXRXHWSUVOYAYFXPXRX
+       HXTWTWQXAWRXBEXPBDXCVBVI $.
+  $}
+
+  ${
+     $d N m n a $.  
+     $( Count the number of elements in a natural interval.  From 
+     	~ nmembers1lem2 and ~ nmembers1lem3 , we would expect to arrive
+	at ` { m e. Nn | ( 1c <_c m /\ m <_c N ) } e. N ` , but this
+	proposition is not stratifiable.  Instead, we arrive at the weaker
+	conclusion below.  We can arrive at the earlier proposition once
+	we add the Axiom of Counting, which we will do later.  (Contributed
+	by Scott Fenton, 03-Aug-2019.) $)
      nmembers1 $p |- ( N e. Nn ->
       { m e. Nn | ( 1c <_c m /\ m <_c N ) } e. T_c T_c N ) $=
-       ( vx c1c clec wbr wa cnnc crab ctc wcel c0c cplc wceq breq2 tceq wn cncs
-       syl wi vn vk cv nmembers1lem1 anbi2d rabbidv tc0c ax-mp eqtri syl6eq weq
-       eleq12d eqid c0 rabeq0 nnnc le0nc 0cnc sbth mpan2 mpan2d wrex wne 0cnsuc
-       addccom eqnetri necomi df-ne mpbi nrex wb 1cnc dflec2 mp2an mtbir mtbiri
-       a1i syl6 con2d imnan sylib mprgbir el0c mpbir csn wo simpl peano2 eleq1a
-       jaod addlecncs mpan syl6breq biimprd com12 adantr simp3 biantrurd orbi1d
-       cun w3a 3bitr3d 3expia pm5.21ndd simpr breq1 anbi12d elrab elun vex elsn
-       orbi12i bitri 3bitr4g eqrdv cltc nnltp1c ltlenlec syl2anc simprd intnand
-       ex mpbid a1d df-an con2bii 1cex addcex elsuci sylan2 ancoms eqeltrd tcdi
-       tc1c addceq2i tccl syl5eq eqtrd eleqtrrd finds ) DAUCZEFZUUACUCZEFZGZAHI
-       ZUUCJZJZKUUBUUALEFZGZAHIZLKZUUBUUAUAUCZEFZGZAHIZUUMJZJZKZUUBUUAUUMDMZEFZ
-       GZAHIZUUTJZJZKZUUBUUABEFZGZAHIZBJZJZKCUABCAUDUUCLNZUUFUUKUUHLUVLUUEUUJAH
-       UVLUUDUUIUUBUUCLUUAEOUEUFUVLUUHLJZJZLUVLUUGUVMNUUHUVNNUUCLPUUGUVMPSUVNUV
-       MLUVMLNUVNUVMNUGUVMLPUHUGUIUJULCUAUKZUUFUUPUUHUURUVOUUEUUOAHUVOUUDUUNUUB
-       UUCUUMUUAEOUEUFUVOUUGUUQNUUHUURNUUCUUMPUUGUUQPSULUUCUUTNZUUFUVCUUHUVEUVP
-       UUEUVBAHUVPUUDUVAUUBUUCUUTUUAEOUEUFUVPUUHUVEUVEUVPUUGUVDNUUHUVENUUCUUTPU
-       UGUVDPSUVEUMUJULUUCBNZUUFUVIUUHUVKUVQUUEUVHAHUVQUUDUVGUUBUUCBUUAEOUEUFUV
-       QUUGUVJNUUHUVKNUUCBPUUGUVJPSULUULUUKUNNZUVRUUJQZAHUUJAHUOUUAHKZUUBUUIQTU
-       VSUVTUUIUUBUVTUUIUUALNZUUBQUVTUUILUUAEFZUWAUVTUUARKZUWBUUAUPZUUAUQSUVTUW
-       CUUIUWBGUWATZUWDUWCLRKZUWEURUUALUSUTSVAUWAUUBDLEFZUWGLDUUCMZNZCRVBZUWICR
-       UWIQZUUCRKLUWHVCUWKUWHLUWHUUCDMLDUUCVEUUCVDVFVGLUWHVHVIVQVJDRKZUWFUWGUWJ
-       VKVLURDLCVMVNVOUUALDEOVPVRVSUUBUUIVTWAWBUUKWCWDUUMHKZUUSUVFUWMUUSGZUVCUU
-       RDMZUVEUWNUVCUUPUUTWEZWTZUWOUWMUVCUWQNUUSUWMUBUVCUWQUWMUBUCZHKZDUWREFZUW
-       RUUTEFZGZGZUWSUWTUWRUUMEFZGZGZUWRUUTNZWFZUWRUVCKUWRUWQKZUWMUWSUXCUXHUXCU
-       WSTUWMUWSUXBWGVQUWMUXFUWSUXGUXFUWSTUWMUWSUXEWGVQUWMUUTHKZUXGUWSTUUMWHZUU
-       THUWRWISWJUWMUWSUXCUXHVKUWMUWSGZUXBUXEUXGWFZUXCUXHUXLUWTUXBUXMUXBUWTTUXL
-       UWTUXAWGVQUXLUXEUWTUXGUXEUWTTUXLUWTUXDWGVQUWMUXGUWTTZUWSUWMDUUTEFZUXNUWM
-       DDUUMMZUUTEUWMUUMRKZDUXPEFZUUMUPZUWLUXQUXRVLDUUMWKWLSDUUMVEWMUXGUXOUWTUX
-       GUWTUXOUWRUUTDEOWNWOSWPWJUWMUWSUWTUXBUXMVKUWMUWSUWTXAZUXAUXDUXGWFUXBUXM?
-       UXTUWTUXAUWMUWSUWTWQZWRUXTUXDUXEUXGUXTUWTUXDUYAWRWSXBXCXDUXLUWSUXBUWMUWS
-       XEZWRUXLUXEUXFUXGUXLUWSUXEUYBWRWSXBYBXDUVBUXBAUWRHAUBUKZUUBUWTUVAUXAUUAU
-       WRDEOZUUAUWRUUTEXFXGXHUXIUWRUUPKZUWRUWPKZWFUXHUWRUUPUWPXIUYEUXFUYFUXGUUO
-       UXEAUWRHUYCUUBUWTUUNUXDUYDUUAUWRUUMEXFXGXHUWRUUTUBXJXKXLXMXNXOWPUUSUWMUW
-       QUWOKZUWMUUSUUTUUPKZQZUYGUWMUXJUXOUUTUUMEFZGZQZTZUYIUWMUYLUXJUWMUYJUXOUW
-       MUUMUUTEFZUYJQZUWMUUMUUTXPFZUYNUYOGZUUMXQUWMUXQUUTRKZUYPUYQVKUXSUWMUXJUY
-       RUXKUUTUPSUUMUUTXRXSYCXTYAYDUYHUYMUYHUXJUYKGUYMQUUOUYKAUUTHUUAUUTNUUBUXO
-       UUNUYJUUAUUTDEOUUAUUTUUMEXFXGXHUXJUYKYEXMYFWAUUPUURUUTUUMDUAXJYGYHYIYJYK
-       YLUWMUVEUWONUUSUWMUVEUUQDJZMZJZUWOUWMUVDUYTNZUVEVUANUWMUXQVUBUXSUXQUWLVU
-       BVLUUMDYMUTSUVDUYTPSUWMVUAUUQDMZJZUWOUYTVUCNVUAVUDNUYSDUUQYNYOUYTVUCPUHU
-       WMVUDUURUYSMZUWOUWMUUQRKZVUDVUENZUWMUXQVUFUXSUUMYPSVUFUWLVUGVLUUQDYMUTSU
-       YSDUURYNYOUJYQYRWPYSYBYT $.
-$)
+       ( vn c1c clec wbr wa cnnc crab ctc wcel c0c cplc wceq breq2 rabbidv tceq
+       anbi2d syl eleq12d va cv nmembers1lem1 nmembers1lem2 tc0c ax-mp eleqtrri
+       eqtri wi nntccl nmembers1lem3 wb cncs nnnc 1cnc tcdi mpan2 tc1c addceq2i
+       weq syl6eq tccl eqtrd eleq2d adantr sylibrd mpdan finds ) DAUBZEFZVICUBZ
+       EFZGZAHIZVKJZJZKVJVILEFZGZAHIZLJZJZKVJVIUAUBZEFZGZAHIZWBJZJZKZVJVIWBDMZE
+       FZGZAHIZWIJZJZKZVJVIBEFZGZAHIZBJZJZKCUABCAUCVKLNZVNVSVPWAXAVMVRAHXAVLVQV
+       JVKLVIEORPXAVOVTNVPWANVKLQVOVTQSTCUAUTZVNWEVPWGXBVMWDAHXBVLWCVJVKWBVIEOR
+       PXBVOWFNVPWGNVKWBQVOWFQSTVKWINZVNWLVPWNXCVMWKAHXCVLWJVJVKWIVIEORPXCVOWMN
+       VPWNNVKWIQVOWMQSTVKBNZVNWRVPWTXDVMWQAHXDVLWPVJVKBVIEORPXDVOWSNVPWTNVKBQV
+       OWSQSTVSLWAAUDWAVTLVTLNWAVTNUEVTLQUFUEUHUGWBHKZWGHKZWHWOUIXEWFHKXFWBUJWF
+       UJSXEXFGWHWLWGDMZKZWOWBWGAUKXEWOXHULXFXEWNXGWLXEWBUMKZWNXGNWBUNXIWNWFDMZ
+       JZXGXIWMXJNWNXKNXIWMWFDJZMZXJXIDUMKZWMXMNUOWBDUPUQXLDWFURUSVAWMXJQSXIXKW
+       GXLMZXGXIWFUMKZXKXONZWBVBXPXNXQUOWFDUPUQSXLDWGURUSVAVCSVDVEVFVGVH $.
   $}
 
 
@@ -62185,8 +62542,8 @@ $)
     nchoicelem10.2 $e |- X e. _V $.
     $( Lemma for ~ nchoice .  Stratification helper lemma.  (Contributed by SF,
        18-Mar-2015.) $)
-    nchoicelem10 $p |- ( <. c , X >. e. ~ ( ( Ins3 SSet (+) Ins2 ~ ran ( `' ~
-                     SSet (x) ( `' SSet |` Fix ( SSet o. Image S ) ) ) ) " 1c )
+    nchoicelem10 $p |- ( <. c , X >. e. ~ ( ( Ins3 _S (+) Ins2 ~ ran ( `' ~
+                     _S (x) ( `' _S |` Fix ( _S o. Image S ) ) ) ) " 1c )
         <-> c = Clos1 ( X , S ) ) $=
       ( vy vz vt csset cv wcel wn wss wa wbr wex vex 3bitri bitri anbi12i trtxp
       cclos1 ccompl ccnv cimage ccom cfix cres ctxp crn csn cop cima wel wi wal
@@ -62602,6 +62959,311 @@ m ) e. Fin /\ ( Nc ( Sp[ac] ` T_c m ) = ( T_c Nc ( Sp[ac] ` m ) +c 1c ) \/ Nc (
       $.
   $}
 
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Finite recursion
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new constants $)
+  $c FRec $. $( Finite recursion generator $)
+
+  $( Extend the definition of a class to include the finite recursive function
+     generator. $)
+  cfrec $a class FRec ( F , I ) $.
+
+  ${
+    $d F x $.  $d I x $.
+    $( Define the finite recursive function generator.  This is a function over
+       ` Nn ` that obeys the standard recursion relationship.  Definition
+       adapted from theorem XI.3.24 of [Rosser] p. 412.  (Contributed by Scott
+       Fenton, 30-Jul-2019.) $)
+    df-frec $a |- FRec ( F , I ) = 
+    Clos1 ( { <. 0c , I >. } , PProd ( ( x e. _V |-> ( x +c 1c ) ) , F ) ) $.
+  $}
+
+  ${
+    $d F x $.  $d G x $.  $d I x $.  $d J x $.
+    $( Equality theorem for finite recursive function generator.  (Contributed
+       by Scott Fenton, 31-Jul-2019.) $)
+    freceq12 $p |- ( ( F = G /\ I = J ) -> FRec ( F , I ) = FRec ( G , J ) ) $=
+       ( vx wceq wa c0c cop csn cvv cv c1c cplc cpprod cclos1 cfrec syl df-frec
+       cmpt opeq2 sneqd clos1eq1 pprodeq2 clos1eq2 sylan9eqr 3eqtr4g ) ABFZCDFZ
+       GHCIZJZEKELMNTZAOZPZHDIZJZULBOZPZACQBDQUIUHUNUPUMPZURUIUKUPFUNUSFUIUJUOC
+       DHUAUBUMUKUPUCRUHUMUQFUSURFABULUDUMUPUQUERUFEACSEBDSUG $.
+  $}
+
+  ${
+    $d G x y z w $.  $d I x y z w $.
+    frecex.1 $e |- F = FRec ( G , I ) $.
+    $( The finite recursive function generator preserves sethood.  (Contributed
+       by Scott Fenton, 30-Jul-2019.) $)
+    frecexg $p |- ( G e. V -> F e. _V ) $=
+      ( vx wcel c0c cop csn cvv c1c cplc cmpt cpprod cclos1 cfrec df-frec eqtri
+      cv snex csucex pprodexg mpan clos1exg sylancr syl5eqel ) BDGZAHCIZJZFKFT
+      LMNZBOZPZKABCQUMEFBCRSUHUJKGULKGZUMKGUIUAUKKGUHUNFUBUKBKDUCUDULUJKKUEUFUG
+      $.
+
+    frecex.2 $e |- G e. _V $.
+    $( The finite recursive function generator preserves sethood.  (Contributed
+       by Scott Fenton, 30-Jul-2019.) $)
+    frecex $p |- F e. _V $=
+      ( cvv wcel frecexg ax-mp ) BFGAFGEABCFDHI $.
+  $}
+
+  ${
+    $d F x y z w a b c d i $.  $d G x y z w a b c d i $.  $d I i x $.
+    frecxp.1 $e |- F = FRec ( G , I ) $.
+    frecxp.2 $e |- G e. _V $.
+    $( Subset relationship for the finite recursive function generator.
+       (Contributed by Scott Fenton, 30-Jul-2019.) $)
+    frecxp $p |- F C_ ( Nn X. ( ran G u. { I } ) ) $=
+      ( vy vz vx va vb vc vd cnnc cvv wcel cv wceq c0c wa c0 vi crn csn cun cxp
+      cfrec wss eqid freceq12 mpan sneq uneq2d xpeq2d sseq12d cop c1c cplc cmpt
+      cpprod wbr wal wral nncex rnex snex unex xpex peano1 vex snid elun2 ax-mp
+      0cex opex snss opelxp bitr3i mpbir2an w3a wex brpprod brcsuc brelrn elun1
+      wi syl peano2 anim12ci adantrr eleq1 anbi1d syl5ibr exp3a sylbi wb syl6bb
+      adantr adantl imbi12d 3impia exlimivv impcom ax-gen rgenw pprodex df-frec
+      csucex clos1induct mp3an vtoclg wn cclos1 opexb simprbi con3i snprc sylib
+      imp clos1eq1 clos10 syl6eq 0ss syl6eqss syl5eqss pm2.61i eqsstri ) ABCUFZ
+      MBUBZCUCZUDZUEZDCNOZYGYKUGZBUAPZUFZMYHYNUCZUDZUEZUGZYMUACNYNCQZYOYGYRYKBB
+      QYTYOYGQBUHBBYNCUIUJYTYQYJMYTYPYIYHYNCUKULUMUNYRNORYNUOZUCZYRUGZFPZYROZUU
+      DGPZHNHPUPUQURZBUSZUTZSUUFYROZWEZGVAZFYOVBYSMYQVCYHYPBEVDYNVEVFVGUUCRMOZY
+      NYQOZVHYNYPOUUNYNUAVIZVJYNYPYHVKVLUUCUUAYROUUMUUNSUUAYRRYNVMUUOVNVORYNMYQ
+      VPVQVRUULFYOUUKGUUIUUEUUJUUIUUDIPZJPZUOZQZUUFKPZLPZUOZQZUUPUUTUUGUTZUUQUV
+      ABUTZSZVSZLVTKVTZJVTIVTUUEUUJWEZIJKLUUDUUFUUGBWAUVHUVIIJUVGUVIKLUUSUVCUVF
+      UVIUVFUVIUUSUVCSZUUPMOZUUQYQOZSZUUTMOZUVAYQOZSZWEZUVDUVEUVQUVDUUTUUPUPUQZ
+      QZUVEUVQWEHUUPUUTIVIKVIWBUVSUVEUVMUVPUVEUVMSUVPUVSUVRMOZUVOSZUVEUVKUWAUVL
+      UVEUVOUVKUVTUVEUVAYHOUVOUUQUVABWCUVAYHYPWDWFUUPWGWHWIUVSUVNUVTUVOUUTUVRMW
+      JWKWLWMWNXRUVJUUEUVMUUJUVPUUSUUEUVMWOUVCUUSUUEUURYROUVMUUDUURYRWJUUPUUQMY
+      QVPWPWQUVCUUJUVPWOUUSUVCUUJUVBYROUVPUUFUVBYRWJUUTUVAMYQVPWPWRWSWLWTXAXAWN
+      XBXCXDFGYOUUHUUBNYRUUAVEUUGBHXGEXEZHBYNXFXHXIXJYLXKZYGRCUOZUCZUUHXLZYKHBC
+      XFUWCUWFTYKUWCUWFTUUHXLZTUWCUWETQZUWFUWGQUWCUWDNOZXKUWHUWIYLUWIRNOYLRCXMX
+      NXOUWDXPXQUUHUWETXSWFUWGUUHUWBUWGUHXTYAYKYBYCYDYEYF $.
+
+    $( The finite recursive function generator gives a relationship.
+       (Contributed by Scott Fenton, 30-Jul-2019.) $)
+    relfrec $p |- Rel F $=
+      ( cnnc crn csn cun cxp wss wrel frecxp relxp relss mp2 ) AFBGCHIZJZKRLALA
+      BCDEMFQNAROP $.
+  $}
+
+  ${
+    $d G g $.  $d I g $.
+    frecxpg.1 $e |- F = FRec ( G , I ) $.
+    $( Subset relationship for the finite recursive function generator.
+       (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    frecxpg $p |- ( G e. V -> F C_ ( Nn X. ( ran G u. { I } ) ) ) $=
+      ( vg wcel cfrec cnnc crn csn cun cxp cv wss wceq eqid freceq12 mpan2 rneq
+      uneq1d xpeq2d sseq12d vex frecxp vtoclg syl5eqss ) BDGABCHZIBJZCKZLZMZEFN
+      ZCHZIUMJZUJLZMZOUHULOFBDUMBPZUNUHUQULURCCPUNUHPCQUMBCCRSURUPUKIURUOUIUJUM
+      BTUAUBUCUNUMCUNQFUDUEUFUG $.
+
+    $( The finite recursive function generator gives a relationship.
+       (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    relfrecg $p |- ( G e. V -> Rel F ) $=
+      ( vg wcel cfrec wrel cv wceq eqid freceq12 mpan2 releqd vex vtoclg releqi
+      relfrec sylibr ) BDGBCHZIZAIFJZCHZIUBFBDUCBKZUDUAUECCKUDUAKCLUCBCCMNOUDUC
+      CUDLFPSQAUAERT $.
+  $}
+
+  ${
+    $d F w x y z a b t $.  $d G w x y z a b t $.  $d I w x y z a b t $.
+    $d ph w x y z a b t $.
+    dmfrec.1 $e |- F = FRec ( G , I ) $.
+    dmfrec.2 $e |- ( ph -> G e. V ) $.
+    dmfrec.3 $e |- ( ph -> I e. dom G ) $.
+    dmfrec.4 $e |- ( ph -> ran G C_ dom G ) $.
+    $( The domain of the finite recursive function generator is the naturals.
+       (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    dmfrec $p |- ( ph -> dom F = Nn ) $=
+      ( vx vt vw vz cnnc wcel cvv c0c cv wbr wex vy cdm crn csn cun cxp frecxpg
+      va vb wss dmss 3syl dmxpss syl6ss c1c cplc wi wral frecexg dmexg cop cmpt
+      cpprod wrex wo 0cex opexg sylancr snidg syl orcd wb csucex pprodexg cfrec
+      snex cclos1 df-frec eqtri clos1basesucg mpbird df-br sylibr eldm2 wa wceq
+      breldm vex opex elsnc opth bitri eleq1a adantld wrel relfrecg elrel sylan
+      syl5bi ex brelrn adantl a1i breq1 qrpprod syl6bb syl5ibrcom exlimdvv syld
+      imbi1d rexlimdv sseld jaod sylbid ancld clos1conn eldm eqid addcex brcsuc
+      eximi 1cex mpbir mpbiran bitr4i anbi2i 19.42v 3imtr4i syl6 exlimdv peano5
+      exbii ralrimivw syl3anc eqssd ) ABUBZNAYPNCUCZDUDUEZUFZUBZNACEOZBYSUJYPYT
+      UJGBCDEFUGBYSUKULNYRUMUNAYPPOZQYPOZJRZYPOZUUDUOUPZYPOZUQZJNURNYPUJAUUABPO
+      UUBGBCDEFUSBPUTULAQDBSZUUCAQDVAZBOZUUIAUUKUUJUUJUDZOZKRZUUJLPLRUOUPVBZCVC
+      ZSKBVDZVEZAUUMUUQAUUJPOZUUMAQPODCUBZOZUUSVFHQDPUUTVGVHUUJPVIVJVKAUULPOZUU
+      PPOZUUKUURVLUUJVPZAUUOPOUUAUVCLVMGUUOCPEVNVHZKUUJBUUPUULPPBCDVOUULUUPVQFL
+      CDVRVSZVTVHWAQDBWBWCQDBWGVJAUUHJNUUEUUDUARZVAZBOZUATAUUGUAUUDBWDAUVIUUGUA
+      AUVIUVIUVGUUTOZWEZUUGAUVIUVJAUVIUVHUULOZUUNUVHUUPSZKBVDZVEZUVJAUVBUVCUVIU
+      VOVLUVDUVEKUVHBUUPUULPPUVFVTVHAUVLUVJUVNUVLUUDQWFZUVGDWFZWEZAUVJUVLUVHUUJ
+      WFUVRUVHUUJUUDUVGJWHZUAWHWIWJUUDUVGQDWKWLAUVQUVJUVPAUVAUVQUVJUQHDUUTUVGWM
+      VJWNWSAUVNUVGYQOZUVJAUVMUVTKBAUUNBOZUUNUHRZUIRZVAZWFZUITUHTZUVMUVTUQZAUWA
+      UWFABWOZUWAUWFAUUAUWHGBCDEFWPVJUHUIUUNBWQWRWTAUWEUWGUHUIAUWGUWEUWBUUDUUOS
+      ZUWCUVGCSZWEZUVTUQZUWLAUWJUVTUWIUWCUVGCXAXBXCUWEUVMUWKUVTUWEUVMUWDUVHUUPS
+      UWKUUNUWDUVHUUPXDUWBUWCUUDUVGUUOCXEXFXJXGXHXIXKAYQUUTUVGIXLXIXMXNXOUVIUVH
+      UUFMRZVAZUUPSZWEZMTZUWNBOZMTUVKUUGUWPUWRMUVHUWNBUUPUULUVFXPYAUVKUVIUWOMTZ
+      WEUWQUVJUWSUVIUVJUVGUWMCSZMTUWSMUVGCXQUWOUWTMUWOUUDUUFUUOSZUWTUXAUUFUUFWF
+      UUFXRLUUDUUFUVSUUDUOUVSYBXSXTYCUUDUVGUUFUWMUUOCXEYDYLYEYFUVIUWOMYGYEMUUFB
+      WDYHYIYJWSYMJYPPYKYNYO $.
+  $}
+
+  ${
+    $d F w y z $.
+    $( Lemma for ~ fnfrec .  Establish stratification for induction.
+       (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    fnfreclem1 $p |- ( F e. V -> 
+                { w | A. y A. z ( ( w F y /\ w F z ) -> y = z ) } e. _V ) $=
+       ( wcel cv wbr wa weq wal cvv cid wn vex cop wex df-br bitri exbii wi cab
+       ccnv cxp cins2 cin cins3 cdif crn ccompl elcompl elrn2 eldif elin opelxp
+       opelcnv mpbiran 3bitr4i otelins2 anbi12i otelins3 equcom 3bitr2i exanali
+       ideq notbii exnal 3bitrri con1bii abbi2i vvex cnvexg sylancr ins2exg syl
+       xpexg inexg syl2anc idex ins3ex difexg mpan2 rnexg complexg syl5eqelr
+       3syl ) DEFZCGZAGZDHZWHBGZDHZIZABJZUABKZAKZCUBLDUCZUDZWQUEZUFZMUGZUHZUIZU
+       IZUJZLWPCXEWHXEFWHXDFZNWPWHXDCOZUKWPXFXFWIWHPZXCFZAQWMWNNZIZBQZAQZWPNZAW
+       HXCULXIXLAXIWKXHPZXBFZBQXLBXHXBULXPXKBXPXOWTFZXOXAFZNZIXKXOWTXAUMXQWMXSX
+       JXQXOWRFZXOWSFZIWMXOWRWSUNXTWJYAWLXHWQFZWHWIPDFXTWJWIWHDUPXTWKLFYBBOWKXH
+       LWQUOUQWHWIDRURWKWHPWQFWHWKPDFYAWLWKWHDUPWKWIWHWQAOZUSWHWKDRURUTSXRWNXRW
+       KWIPMFWKWIMHZWNWKWIWHMXGVAWKWIMRYDBAJWNWKWIYCVEBAVBSVCVFUTSTSTXMWONZAQXN
+       XLYEAWMWNBVDTWOAVGSVHVISVJWGXCLFZXDLFXELFWGWTLFZXBLFZYFWGWRLFZWSLFZYGWGL
+       LFWQLFZYIVKDEVLZLWQLLVPVMWGYKYJYLWQLVNVOWRWSLLVQVRYGXALFYHMVSVTWTXALLWAW
+       BXBLWCWFXCLWCXDLWDWFWE $.
+  $}
+
+  ${
+    $d G y w z a b $.  $d I y w z a b $.  $d X y w z a b $.  $d ph z $.
+    $d F z $.
+    fnfreclem2.1 $e |- F = FRec ( G , I ) $.
+    fnfreclem2.2 $e |- ( ph -> G e. V ) $.
+    fnfreclem2.3 $e |- ( ph -> I e. dom G ) $.
+    fnfreclem2.4 $e |- ( ph -> ran G C_ dom G ) $.
+    $( Lemma for ~ fnfrec .  Calculate the unique value of ` F ` at zero.
+       (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    fnfreclem2 $p |- ( ph -> ( 0c F X -> X = I ) ) $=
+      ( vz vw va vb c0c wbr wcel wceq cv cvv cop df-br csn c1c cplc cmpt cpprod
+      wrex wo wb snex csucex pprodexg sylancr cfrec df-frec eqtri clos1basesucg
+      cclos1 wi wa elsni opth sylib simprd a1i wex wn wrel relfrecg elrel sylan
+      syl 0cnsuc necomi 0cex brcsuc nemtbir intnanr breq1 qrpprod syl6bb mtbiri
+      vex exlimivv nrexdv pm2.21d jaod sylbid syl5bi ) OFBPOFUAZBQZAFDRZOFBUBAW
+      LWKODUAZUCZQZKSZWKLTLSUDUEUFZCUGZPZKBUHZUIZWMAWOTQWSTQZWLXBUJWNUKAWRTQCEQ
+      ZXCLULHWRCTEUMUNKWKBWSWOTTBCDUOWOWSUSGLCDUPUQURUNAWPWMXAWPWMUTAWPOORZWMWP
+      WKWNRXEWMVAWKWNVBOFODVCVDVEVFAXAWMAWTKBAWQBQZVAWQMSZNSZUAZRZNVGMVGZWTVHZA
+      BVIZXFXKAXDXMHBCDEGVJVMMNWQBVKVLXJXLMNXJWTXGOWRPZXHFCPZVAZXNXOXNOXGUDUEZX
+      QOXGVNVOLXGOMWDVPVQVRVSXJWTXIWKWSPXPWQXIWKWSVTXGXHOFWRCWAWBWCWEVMWFWGWHWI
+      WJ $.
+
+     $d ph a t $. $d F a t $. $d X t $. $d G t $. $d Y z t a $. $d a t y z w $.
+     fnfreclem3.5 $e |- ( ph -> X e. Nn ) $.
+     fnfreclem3.6 $e |- ( ph -> ( X +c 1c ) F Y ) $.
+     $( Lemma for ~ fnfrec .  The value of ` F ` at a successor is ` G `
+     	related to a previous element.  (Contributed by Scott Fenton,
+	31-Jul-2019.) $)
+     fnfreclem3 $p |- ( ph -> E. z ( X F z /\ z G Y ) ) $=
+       ( vw vt wcel wa cvv wceq va vy c1c cplc cop c0c csn cv wbr wex cmpt wrex
+       cpprod wi wne 0cnsuc df-ne mpbi elsni opth sylib simpld mto pm2.21i wrel
+       wn a1i relfrecg syl elrel excom sylan eleq1 anbi2d breq1 qrpprod anbi12d
+       syl6bb wb vex cnnc 1cex addcexg sylancl adantr addceq1 eqeq2d eqeq1 mptv
+       weq brabg sylancr cdm opeldm adantl dmfrec eleqtrd peano4 3expia syl2anc
+       df-br biimprcd sylbir syld sylbid anim1d imp syl6bi com12 exlimdv eximdv
+       ex mpid rexlimdva wo csucex pprodexg cfrec cclos1 df-frec clos1basesucg
+       snex eqtri syl5bb mpbid mpjaod ) AGUCUDZHUEZUFEUEZUGZQZGBUHZCUIZYLHDUIZR
+       ZBUJZUAUHZYHOSOUHZUCUDZUKZDUMZUIZUACULZYKYPUNAYKYPYKYGUFTZYGUFUOUUDVFGUP
+       YGUFUQURYKUUDHETZYKYHYITUUDUUERYHYIUSYGHUFEUTVAVBVCVDVGAUUBYPUACAYQCQZRZ
+       UUBYQPUHZYLUEZTZPUJZBUJZYPACVEZUUFUULADFQZUUMJCDEFIVHVIUUMUUFRUUJBUJPUJU
+       ULPBYQCVJUUJPBVKVAVLUUGUUBUULYPUNUUGUUBRZUUKYOBUUOUUJYOPUUJUUOYOUUJUUOAU
+       UICQZRZUUHYGYTUIZYNRZRYOUUJUUGUUQUUBUUSUUJUUFUUPAYQUUICVMVNUUJUUBUUIYHUU
+       AUIUUSYQUUIYHUUAVOUUHYLYGHYTDVPVRVQUUQUUSYOUUQUURYMYNUUQUURYGUUHUCUDZTZY
+       MUUQUUHSQYGSQZUURUVAVSPVTAUVBUUPAGWAQZUCSQUVBMWBGUCWASWCWDWEUBUHZYSTUVDU
+       UTTUVAOUBUUHYGSSYTOPWJYSUUTUVDYRUUHUCWFWGUVDYGUUTWHOUBYSWIWKWLUUQUVAGUUH
+       TZYMUUQUVCUUHWAQZUVAUVEUNAUVCUUPMWEUUQUUHCWMZWAUUPUUHUVGQAUUHYLCWNWOAUVG
+       WATUUPACDEFIJKLWPWEWQUVCUVFUVAUVEGUUHWRWSWTUUPUVEYMUNZAUUPUUHYLCUIZUVHUU
+       HYLCXAUVEYMUVIGUUHYLCVOXBXCWOXDXEXFXGXHXIXJXKXLXMXNAYGHCUIZYKUUCXOZNUVJY
+       HCQZAUVKYGHCXAAYJSQUUASQZUVLUVKVSYIYBAYTSQUUNUVMOXPJYTDSFXQWLUAYHCUUAYJS
+       SCDEXRYJUUAXSIODEXTYCYAWLYDYEYF $.
+  $}
+
+  ${ $d ph x y z w t a b $. $d F x y z w t a b  $. $d G x y z w t a b $.
+     $d I x y z w t a b $.
+    fnfrec.1 $e |- F = FRec ( G , I ) $.
+    fnfrec.2 $e |- ( ph -> G e. Funs ) $.
+    fnfrec.3 $e |- ( ph -> I e. dom G ) $.
+    fnfrec.4 $e |- ( ph -> ran G C_ dom G ) $.
+    $( The recursive function generator is a function over the finite 
+       cardinals.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    fnfrec $p |- ( ph -> F Fn Nn ) $=
+      ( vy vz wceq cv wbr wa wi wal cfuns wcel breq1 wex vx vw vt wfun cdm cnnc
+      wfn wrel weq relfrecg syl breldm adantl dmfrec adantr eleqtrd adantrr c0c
+      va vb c1c cplc cvv cab frecexg fnfreclem1 anbi12d imbi1d 2albidv bi2anan9
+      3syl breq2 eqeq12 imbi12d cbval2v syl6bb fnfreclem2 imp adantrl eqtr4d ex
+      alrimivv ad2antrr crn wss simpr fnfreclem3 adantlrr anim12d eeanv syl6ibr
+      simplr 19.29 eximi pm3.35 anbi1d biimpa elfunsi funbrfv eqtr2 syl56 exp3a
+      syl5 com34 imp3a com12 an4s com3l exlimdvv impr syld expr ancoms 19.21bbi
+      cfv findsd mpcom alrimiv dffun2 sylanbrc df-fn ) ABUDZBUEZUFKZBUFUGABUHZU
+      ALZILZBMZYFJLZBMZNZIJUIZOZJPIPZUAPYBACQRZYEFBCDQEUJUKAYNUAAYMIJAYKYLYFUFR
+      ZAYKNYLAYHYPYJAYHNYFYCUFYHYFYCRAYFYGBULUMAYDYHABCDQEFGHUNZUOUPUQYPAYKYLYP
+      AYMYPANYMIJUBLZYGBMZYRYIBMZNZYLOZJPIPZURYGBMZURYIBMZNZYLOZJPIPUCLZYGBMZUU
+      HYIBMZNZYLOZJPZIPZUUHVAVBZUSLZBMZUUOUTLZBMZNZUSUTUIZOZUTPUSPZYNAUBUCYFVCA
+      YOBVCRUUCUBVDVCRFBCDQEVEIJUBBVCVFVKYRURKZUUBUUGIJUVDUUAUUFYLUVDYSUUDYTUUE
+      YRURYGBSYRURYIBSVGVHVIUBUCUIZUUBUULIJUVEUUAUUKYLUVEYSUUIYTUUJYRUUHYGBSYRU
+      UHYIBSVGVHVIYRUUOKZUUCUUOYGBMZUUOYIBMZNZYLOZJPIPUVCUVFUUBUVJIJUVFUUAUVIYL
+      UVFYSUVGYTUVHYRUUOYGBSYRUUOYIBSVGVHVIUVJUVBIJUSUTIUSUIZJUTUIZNUVIUUTYLUVA
+      UVKUVGUUQUVLUVHUUSYGUUPUUOBVLYIUURUUOBVLVJYGUUPYIUURVMVNVOVPUBUAUIZUUBYMI
+      JUVMUUAYKYLUVMYSYHYTYJYRYFYGBSYRYFYIBSVGVHVIAUUGIJAUUFYLAUUFNYGDYIAUUDYGD
+      KZUUEAUUDUVNABCDQYGEFGHVQVRUQAUUEYIDKZUUDAUUEUVOABCDQYIEFGHVQVRVSVTWAWBAU
+      UHUFRZUUNUVCOAUVPUUNUVCAUVPUUNNNZUVBUSUTUVQUUTUUIYGUUPCMZNZUUJYIUURCMZNZN
+      ZJTZITZUVAUVQUUTUVSITZUWAJTZNUWDUVQUUQUWEUUSUWFUVQUUQUWEAUVPUUQUWEUUNAUVP
+      NZUUQNIBCDQUUHUUPEAYOUVPUUQFWCADCUEZRZUVPUUQGWCACWDUWHWEZUVPUUQHWCAUVPUUQ
+      WLUWGUUQWFWGWHWAUVQUUSUWFAUVPUUSUWFUUNUWGUUSNJBCDQUUHUUREAYOUVPUUSFWCAUWI
+      UVPUUSGWCAUWJUVPUUSHWCAUVPUUSWLUWGUUSWFWGWHWAWIUVSUWAIJWJWKAUVPUUNUWDUVAO
+      UWGUUNUWDUVAUUNUWDNZUULUWBNZJTZITZUWGUVAUWKUUMUWCNZITUWNUUMUWCIWMUWOUWMIU
+      ULUWBJWMWNUKAUWNUVAOUVPAUWLUVAIJAUULUWBUVAUWBAUULUVAUUIUUJUVRUVTAUULUVAOZ
+      OAUUKUVRUVTNZNUWPAUUKUWQUWPAUUKUULUWQUVAAUUKUULUWQUVAOZUUKUULNYLAUWRUUKYL
+      WOAYLUWQUVAYLUWQNYIUUPCMZUVTNZAYICXOZUUPKZUXAUURKZNUVAYLUWQUWTYLUVRUWSUVT
+      YGYIUUPCSWPWQAUWSUXBUVTUXCAYOCUDZUWSUXBOFCWRZYIUUPCWSVKAYOUXDUVTUXCOFUXEY
+      IUURCWSVKWIUXAUUPUURWTXAXBXCXBXDXEXFXGXHXEXIUOXCXBXJXKWBXLXMXPXNWAXEXQWAW
+      BXRUAIJBXSXTYQBUFYAXT $.
+  $}
+
+  ${
+    $d F x y $. $d G x y $. $d I x y $.
+    frec0.1 $e |- F = FRec ( G , I ) $.
+    frec0.2 $e |- ( ph -> G e. Funs ) $.
+    frec0.3 $e |- ( ph -> I e. dom G ) $.
+    frec0.4 $e |- ( ph -> ran G C_ dom G ) $.
+    $( Calculate the value of the finite recursive function generator at zero.
+       (Contributed by Scott Fenton, 31-Jul-2019.) $)
+    frec0 $p |- ( ph -> ( F ` 0c ) = I ) $=
+      ( vy vx c0c wcel cv cvv cnnc peano1 sylancr wb cfuns mpbird cfv wceq cplc
+      cop csn c1c cmpt cpprod wbr wrex wo cdm opexg snidg syl orcd snex csucex
+      pprodexg cfrec cclos1 df-frec eqtri clos1basesucg fnfrec fnopfvb sylancl
+      wfn ) AKBUADUBZKDUDZBLZAVKVJVJUEZLZIMVJJNJMUFUCUGZCUHZUIIBUJZUKZAVMVPAVJN
+      LZVMAKOLZDCULZLVRPGKDOVTUMQVJNUNUOUPAVLNLVONLZVKVQRVJUQAVNNLCSLWAJURFVNCN
+      SUSQIVJBVOVLNNBCDUTVLVOVAEJCDVBVCVDQTABOVHVSVIVKRABCDEFGHVEPOKDBVFVGT $.
+  $}
+
+  ${
+     $d F w y $. $d G w y $. $d I w y $. $d X w y $.
+     frecsuc.1 $e |- F = FRec ( G , I ) $.
+     frecsuc.2 $e |- ( ph -> G e. Funs ) $.
+     frecsuc.3 $e |- ( ph -> I e. dom G ) $.
+     frecsuc.4 $e |- ( ph -> ran G C_ dom G ) $.
+     frecsuc.5 $e |- ( ph -> X e. Nn ) $.
+     $( Calculate the value of the finite recursive function generator
+     	at a successor.  (Contributed by Scott Fenton, 31-Jul-2019.) $)
+     frecsuc $p |- ( ph -> ( F ` ( X +c 1c ) ) = ( G ` ( F ` X ) ) ) $=
+       ( vy vw wceq cop wcel cvv wbr cnnc syl syl2anc c1c cplc cfv c0c csn cmpt
+       cv cpprod wrex wo wfun cdm wfn fnfrec fnfun dmfrec eleqtrrd funfvop eqid
+       cfuns wb peano2 addceq1 eqeq2d eqeq1 mptv brabg mpbiri elfunsi crn snssd
+       cun unssd cxp wss frecxpg rnxpss syl6ss fvelrn sseldd df-br sylibr breq1
+       rnss wa qrpprod syl6bb syl12anc olcd snex csucex pprodexg sylancr cfrec
+       rspcev cclos1 df-frec eqtri clos1basesucg mpbird fnopfvb ) AEUAUBZBUCEBU
+       CZCUCZMZXBXDNZBOZAXGXFUDDNZUEZOZKUGZXFLPLUGZUAUBZUFZCUHZQZKBUIZUJZAXQXJA
+       EXCNZBOZEXBXNQZXCXDCQZXQABUKZEBULZOZXTABRUMZYCABCDFGHIUNZRBUOSZAERYDJABC
+       DUTFGHIUPUQZEBURTAYAXBXBMZXBUSAEROZXBROZYAYJVAJAYKYLJEVBSZXKXMMXKXBMYJLK
+       EXBRRXNXLEMXMXBXKXLEUAVCVDXKXBXBVELKXMVFVGTVHAXCXDNCOZYBACUKZXCCULZOYNAC
+       UTOZYOGCVISACVJZDUEZVLZYPXCAYRYSYPIADYPHVKVMABVJZYTXCAUUARYTVNZVJZYTABUU
+       BVOZUUAUUCVOAYQUUDGBCDUTFVPSBUUBWDSRYTVQVRAYCYEXCUUAOYHYIEBVSTVTVTXCCURT
+       XCXDCWAWBXPYAYBWEZKXSBXKXSMXPXSXFXOQUUEXKXSXFXOWCEXCXBXDXNCWFWGWOWHWIAXI
+       POXOPOZXGXRVAXHWJAXNPOYQUUFLWKGXNCPUTWLWMKXFBXOXIPPBCDWNXIXOWPFLCDWQWRWS
+       WMWTAYFYLXEXGVAYGYMRXBXDBXATWT $.
+  $}
+
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -62644,7 +63306,7 @@ htmlbibliography "mmnf.html";
 
 /* Variable color key at the bottom of each proof table */
 htmlvarcolor '<FONT COLOR="#0000FF">wff</FONT> '
-    + '<FONT COLOR="#FF0000">set</FONT> '
+    + '<FONT COLOR="#FF0000">setvar</FONT> '
     + '<FONT COLOR="#CC33CC">class</FONT>';
 
 /* GIF and Unicode HTML directories - these are used for the GIF version to
@@ -62757,10 +63419,10 @@ htmldef "A." as
     "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 TITLE='A.' ALIGN=TOP>";
   althtmldef "A." as '<FONT FACE=sans-serif>&forall;</FONT>'; /* &#8704; */
   latexdef "A." as "\forall";
-htmldef "set" as
-    "<IMG SRC='_set.gif' WIDTH=20 HEIGHT=19 TITLE='set' ALIGN=TOP> ";
-  althtmldef "set" as '<FONT COLOR="#808080">set </FONT>';
-  latexdef "set" as "{\rm set}";
+htmldef "setvar" as
+    "<IMG SRC='_setvar.gif' WIDTH=20 HEIGHT=19 TITLE='setvar' ALIGN=TOP> ";
+  althtmldef "setvar" as '<FONT COLOR="#808080">setvar </FONT>';
+  latexdef "setvar" as "{\rm setvar}";
 htmldef "x" as "<IMG SRC='_x.gif' WIDTH=10 HEIGHT=19 TITLE='x' ALIGN=TOP>";
   althtmldef "x" as '<I><FONT COLOR="#FF0000">x</FONT></I>';
   latexdef "x" as "x";
@@ -63045,10 +63707,13 @@ htmldef "C_" as
     " <IMG SRC='subseteq.gif' WIDTH=12 HEIGHT=19 TITLE='C_' ALIGN=TOP> ";
   althtmldef "C_" as ' <FONT FACE=sans-serif>&#8838;</FONT> '; /* &subE; */
   latexdef "C_" as "\subseteq";
+    /* 7-Jun-2019 changed gif, unicode and latex def of "C." from subset to
+    subsetneq (BJ) */
 htmldef "C." as
-    " <IMG SRC='subset.gif' WIDTH=12 HEIGHT=19 TITLE='C.' ALIGN=TOP> ";
-  althtmldef "C." as ' <FONT FACE=sans-serif>&sub;</FONT> ';
-  latexdef "C." as "\subset";
+    " <IMG SRC='subsetneq.gif' WIDTH=12 HEIGHT=19 TITLE='C.' ALIGN=TOP> ";
+    /* subset.gif */
+  althtmldef "C." as ' &#x228a; '; /* <FONT FACE=sans-serif>&sub;</FONT> */
+  latexdef "C." as "\subsetneq"; /* \subset */
 htmldef "~" as " &sim; ";
   althtmldef "~" as ' &sim; ';
   latexdef "~" as "\sim";
@@ -63436,10 +64101,10 @@ htmldef "Proj2" as
     "<FONT FACE=sans-serif> Proj2 </FONT>";
   althtmldef "Proj2" as '<FONT FACE=sans-serif> Proj2 </FONT>';
   latexdef "Proj2" as "{\rm Proj2}";
-htmldef "SSet" as
-    "<FONT FACE=sans-serif> SSet </FONT>";
-  althtmldef "SSet" as '<FONT FACE=sans-serif> SSet </FONT>';
-  latexdef "SSet" as "{\rm SSet}";
+htmldef "_S" as
+    "<FONT FACE=sans-serif> S </FONT>";
+  althtmldef "_S" as '<FONT FACE=sans-serif> S </FONT>';
+  latexdef "_S" as "{\rm S}";
 htmldef "U.1" as '&xcup;<SUB>1</SUB>';
   althtmldef "U.1" as '&xcup;<SUB>1</SUB>';
   latexdef "U.1" as "\bigcup_1";
@@ -63448,11 +64113,11 @@ htmldef "_I_k" as
     "<SUB><I>k</I></SUB> ";
   althtmldef "_I_k" as ' I<SUB><I>k</I></SUB> ';
   latexdef "_I_k" as "{\rm I}_k";
-htmldef "SSet_k" as
-    " <FONT FACE=sans-serif>SSet</FONT><SUB><I>k</I></SUB> ";
-  althtmldef "SSet_k" as
-    ' <FONT FACE=sans-serif>SSet</FONT><SUB><I>k</I></SUB> ';
-  latexdef "SSet_k" as "{\rm SSet}_k";
+htmldef "_S_k" as
+    " <FONT FACE=sans-serif>S</FONT><SUB><I>k</I></SUB> ";
+  althtmldef "_S_k" as
+    ' <FONT FACE=sans-serif>S</FONT><SUB><I>k</I></SUB> ';
+  latexdef "_S_k" as "{\rm S}_k";
 htmldef "Ins2_k" as
     " <FONT FACE=sans-serif>Ins2</FONT><SUB><I>k</I></SUB> ";
   althtmldef "Ins2_k" as
@@ -63682,4 +64347,8 @@ htmldef "Sp[ac]" as
 htmldef "TcFn" as "TcFn";
   althtmldef "TcFn" as "TcFn";
   latexdef "TcFn" as "{\rm TcFn}";
+
+htmldef "FRec" as " <FONT FACE=sans-serif>FRec</FONT> ";
+  althtmldef "FRec" as " <FONT FACE=sans-serif>FRec</FONT> ";
+  latexdef "FRec" as "{\rm FRec}";
 $)

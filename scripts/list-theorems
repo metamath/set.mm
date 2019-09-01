@@ -1,0 +1,14 @@
+#!/bin/sh
+# Store in 1.tmp a list all theorems ($p) with 2 spaces in front.
+# First parameter is the mmfile (default set.mm).
+# This can be a useful step to take before using scripts/min.cmd.
+
+mmfile="${1:-set.mm}"
+
+metamath "read \"${mmfile}\"" 'set scroll continuous' \
+         'open log 0.tmp' \
+         'show labels * /linear' \
+         'close log' quit > /dev/null
+
+grep -E ' \$p' < 0.tmp | \
+  sed -E -e 's/ \$p//' -e 's/^[0-9]+ /  /' > 1.tmp

@@ -1,0 +1,19 @@
+#!/bin/sh
+# Return # steps in metamath proof $1 in set.mm.
+# Requires a file named "beginning" with one line starting with "Beginning"
+# You must be in a directory with the "scripts/" subdirectory.
+
+statement="$1"
+strip_beginning='
+BEGIN {start=0}
+/^Beginning/ {start=1}
+start==1 {print}'
+
+# The $(...) forces completion
+count=$(./metamath 'read set.mm' 'more beginning' \
+  "show proof $statement /LEMMON /RENUMBER /NO_REPEATED_STEPS " quit quit |
+awk "$strip_beginning" |
+grep '^ *[1-9].*\$' |
+wc -l)
+
+echo "$count"

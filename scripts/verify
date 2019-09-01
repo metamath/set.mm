@@ -1,0 +1,43 @@
+#!/bin/sh
+
+# Verify mmfile $1 (default "set.mm")
+
+extra=''
+top_date_skip=''
+
+while [ $# -gt 0 ] ; do
+  case "$1" in
+    --top_date_skip) shift ; top_date_skip=' /top_date_skip' ;; # Extra command
+    --extra) shift ; extra="$1"; shift ;; # Extra command
+    --*) echo "Error, unknown option $1" ; exit 1 ;;
+    *) break ;;
+  esac
+done
+
+mmfile="${1:-'set.mm'}"
+
+# Run metamath's "verify" program.  This uses a here-document to handle
+# "extra" commands (since they can be blank).
+run_verify () {
+  metamath << COMMANDS
+read ${mmfile}
+set scroll continuous
+verify proof *
+${extra}
+verify markup *${top_date_skip}
+quit
+COMMANDS
+}
+
+# Run verify command, tee results to a separate file so we can examine it.
+run_verify | tee mm$$.log
+
+# Get status, which is false (nonzero) if an error or warning was found.
+! egrep -q '?Error|?Warning' < mm$$.log > /dev/null
+result=$?
+
+# Remove the log, or we'll have lots of useless logs
+rm mm$$.log
+
+# Return result, which is false (nonzero) if there was a problem.
+exit "$result"
