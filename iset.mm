@@ -57784,6 +57784,14 @@ $)
     UKVFVBVGJVAABPSVAVFVEVJJZVAUSUTVPVAUSKZVAUTKZKZVEVCVDEZVJVQVCDEVDDEVEVTJVRC
     AQCBQVCVDPOVSVCVHVDVIVQVCVHRVRCATSVRVDVIRVQCBTULUMUNUOUPUQUR $.
 
+  $( One is less than two (one plus one).  (Contributed by NM, 13-Mar-1996.)
+     (New usage is discouraged.) $)
+  1lt2pi $p |- 1o <N ( 1o +N 1o ) $=
+    ( c1o cpli co clti wbr wcel coa c0 com wceq 1onn nna0 ax-mp 0lt1o wb peano1
+    nnaord cnpi 1pi mp2an mp3an mpbi eqeltrri addpiord eleqtrri addclpi ltpiord
+    mpbir ) AAABCZDEZAUIFZAAAGCZUIAHGCZAULAIFZUMAJKALMHAFZUMULFZNHIFUNUNUOUPOPK
+    KHAAQUAUBUCARFZUQUIULJSSAAUDTUEUQUIRFZUJUKOSUQUQURSSAAUFTAUIUGTUH $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
