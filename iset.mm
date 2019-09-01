@@ -55700,6 +55700,26 @@ $)
       VOUJACVDRVJVIVRVMLZVKVIVJXGBCVDUEVAVEVFVGVH $.
   $}
 
+  $( Ordering property of addition.  Proposition 8.4 of [TakeutiZaring] p. 58,
+     limited to natural numbers, and its converse.  (Contributed by NM,
+     7-Mar-1996.)  (Revised by Mario Carneiro, 15-Nov-2014.) $)
+  nnaord $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                 ( A e. B <-> ( C +o A ) e. ( C +o B ) ) ) $=
+    ( com wcel w3a coa co wi nnaordi 3adant1 wo wn oveq2 a1i wa wb nnacl nntri2
+    wceq 3adant2 orim12d con3d df-3an ancom anandi 3bitri anim12i sylbi 3adant3
+    syl 3imtr4d impbid ) ADEZBDEZCDEZFZABEZCAGHZCBGHZEZUOUPURVAIUNABCJKUQUSUTTZ
+    UTUSEZLZMZABTZBAEZLZMZVAURUQVHVDUQVFVBVGVCVFVBIUQABCGNOUNUPVGVCIUOBACJUAUBU
+    CUQUSDEZUTDEZPZVAVEQUQUPUNPZUPUOPZPZVLUQUNUOPZUPPUPVPPVOUNUOUPUDVPUPUEUPUNU
+    OUFUGVMVJVNVKCARCBRUHUIUSUTSUKUNUOURVIQUPABSUJULUM $.
+
+  $( Ordering property of addition of natural numbers.  (Contributed by NM,
+     9-Nov-2002.) $)
+  nnaordr $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                 ( A e. B <-> ( A +o C ) e. ( B +o C ) ) ) $=
+    ( com wcel w3a coa nnaord wceq nnacom ancoms 3adant2 3adant1 eleq12d bitrd
+    co ) ADEZBDEZCDEZFZABECAGPZCBGPZEACGPZBCGPZEABCHTUAUCUBUDQSUAUCIZRSQUECAJKL
+    RSUBUDIZQSRUFCBJKMNO $.
+
   ${
     $d A x y $.  $d B x y $.  $d C x $.
 
@@ -55739,6 +55759,17 @@ $)
   $( Weak ordering property of addition.  (Contributed by NM, 9-Nov-2002.) $)
   nnaword2 $p |- ( ( A e. _om /\ B e. _om ) -> A C_ ( B +o A ) ) $=
     ( com wcel wa coa co nnaword1 nnacom sseqtrd ) ACDBCDEAABFGBAFGABHABIJ $.
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.
+    $( Adding to both sides of an inequality in ` _om ` (Contributed by Scott
+       Fenton, 16-Apr-2012.)  (Revised by Mario Carneiro, 12-May-2012.) $)
+    nnawordi $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+             ( A C_ B -> ( A +o C ) C_ ( B +o C ) ) ) $=
+      ( com wcel w3a wss coa nnaword biimpd wceq nnacom 3adant2 3adant1 sseq12d
+      co sylibrd ) ADEZBDEZCDEZFZABGZCAHPZCBHPZGZACHPZBCHPZGUAUBUEABCIJUAUFUCUG
+      UDRTUFUCKSACLMSTUGUDKRBCLNOQ $.
+  $}
 
   ${
     $d x y A $.  $d x B $.  $d x y C $.
@@ -55840,6 +55871,36 @@ $)
   nn2m $p |- ( A e. _om -> ( 2o .o A ) = ( A +o A ) ) $=
     ( com wcel c2o comu co coa wceq 2onn nnmcom mpan nnm2 eqtrd ) ABCZDAEFZADEF
     ZAAGFDBCNOPHIDAJKALM $.
+
+  ${
+    $d A b x y $.  $d A x y z $.  $d B b x y $.
+    $( Equivalence for ordering.  Compare Exercise 23 of [Enderton] p. 88.
+       (Contributed by NM, 5-Dec-1995.)  (Revised by Mario Carneiro,
+       15-Nov-2014.) $)
+    nnaordex $p |- ( ( A e. _om /\ B e. _om ) -> ( A e. B <->
+                  E. x e. _om ( (/) e. x /\ ( A +o x ) = B ) ) ) $=
+      ( vz com wcel wa c0 cv co wceq wrex wi eleq2 eqeq2 anbi2d rexbidv imbi12d
+      coa c1o vb vy imbi2d csuc noel pm2.21i a1i elsuci ax-ia2 ad2antlr elelsuc
+      wo peano2 nnasuc suceq sylan9eq anim12d imp eqeq1d anbi12d rspcev syl2anc
+      oveq2 rexlimdva cbvrexv syl6ib syld 0lt1o con0 nnon oa1suc 1onn mpan jaod
+      ex syl5 exp31 finds2 vtoclga impcom wb peano1 nnaord mp3an1 ancoms adantr
+      syl nna0 eleq1d bitrd anbi1d biimpac syl6bi impbid ) BEFZCEFZGBCFZHAIZFZB
+      WRSJZCKZGZAELZWPWOWQXCMZWOBUAIZFZWSWTXEKZGZAELZMZMWOXDMUACEXECKZXJXDWOXKX
+      FWQXIXCXECBNXKXHXBAEXKXGXAWSXECWTOPQRUCXJBHFZWSWTHKZGZAELZMZBUBIZFZWSWTXQ
+      KZGZAELZMZBXQUDZFZWSWTYCKZGZAELZMZWOUAUBXEHKZXFXLXIXOXEHBNYIXHXNAEYIXGXMW
+      SXEHWTOPQRXEXQKZXFXRXIYAXEXQBNYJXHXTAEYJXGXSWSXEXQWTOPQRXEYCKZXFYDXIYGXEY
+      CBNYKXHYFAEYKXGYEWSXEYCWTOPQRXPWOXLXOBUEUFUGXQEFZWOYBYHYDXRBXQKZULYLWOGZY
+      BGZYGBXQUHYOXRYGYMYOXRYAYGYNYBUIWOYAYGMYLYBWOYAHDIZFZBYPSJZYCKZGZDELZYGWO
+      XTUUAAEWOWREFZGZXTUUAUUCXTGWRUDZEFZHUUDFZBUUDSJZYCKZGZUUAUUBUUEWOXTWRUMUJ
+      UUCXTUUIUUCWSUUFXSUUHWSUUFMUUCHWRUKUGUUCXSUUHUUCXSUUGWTUDYCBWRUNWTXQUOUPV
+      OUQURYTUUIDUUDEYPUUDKZYQUUFYSUUHYPUUDHNUUJYRUUGYCYPUUDBSVCUSUTVAVBVOVDYTY
+      FDAEYPWRKZYQWSYSYEYPWRHNUUKYRWTYCYPWRBSVCUSUTVEVFUJVGWOYMYGMYLYBWOYMYGWOY
+      MGZHTFZBTSJZYCKZYGUUMUULVHUGWOYMUUNBUDZYCWOBVIFUUNUUPKBVJBVKWGBXQUOUPTEFU
+      UMUUOGZYGVLYFUUQATEWRTKZWSUUMYEUUOWRTHNUURWTUUNYCWRTBSVCUSUTVAVMVBVOUJVNV
+      PVQVRVSVTWOXCWQMWPWOXBWQAEUUCXBBWTFZXAGWQUUCWSUUSXAUUCWSBHSJZWTFZUUSUUBWO
+      WSUVAWAZHEFUUBWOUVBWBHWRBWCWDWEUUCUUTBWTWOUUTBKUUBBWHWFWIWJWKXAUUSWQWTCBN
+      WLWMVDWFWN $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -57679,6 +57740,20 @@ $)
     JDZURVBKZALURVCBJDZMBDZEVDBNVCVEVFVDVEVCVFVDOVEVCEVFAMIGZVADZVDMBAPVCVHVDOV
     EVCVHAVADZVDVCVGAVAAQRVCVBVIVCVIKVBAADZKZVCASVKATAUAUJVBVIVJVAAAUBUCUDUKUEU
     FUGUHULUIUMUSUTVAAABUNUOUP $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Ordering on positive integers in terms of existence of sum.
+       (Contributed by NM, 15-Mar-1996.)  (Revised by Mario Carneiro,
+       14-Jun-2013.)  (New usage is discouraged.) $)
+    ltexpi $p |- ( ( A e. N. /\ B e. N. ) ->
+               ( A <N B <-> E. x e. N. ( A +N x ) = B ) ) $=
+      ( cnpi wcel wa c0 cv coa wceq com wrex clti wbr cpli pinn nnaordex syl2an
+      co wb ltpiord addpiord eqeq1d pm5.32da elni2 anbi1i anass syl6bb rexbidv2
+      bitri adantr 3bitr4d ) BDEZCDEZFBCEZGAHZEZBUPISZCJZFZAKLZBCMNBUPOSZCJZADL
+      ZUMBKECKEUOVATUNBPCPABCQRBCUAUMVDVATUNUMVCUTADKUMUPDEZVCFVEUSFZUPKEZUTFZU
+      MVEVCUSUMVEFVBURCBUPUBUCUDVFVGUQFZUSFVHVEVIUSUPUEUFVGUQUSUGUJUHUIUKUL $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
