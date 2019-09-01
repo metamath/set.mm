@@ -57792,6 +57792,16 @@ $)
     mpbir ) AAABCZDEZAUIFZAAAGCZUIAHGCZAULAIFZUMAJKALMHAFZUMULFZNHIFUNUNUOUPOPK
     KHAAQUAUBUCARFZUQUIULJSSAAUDTUEUQUIRFZUJUKOSUQUQURSSAAUFTAUIUGTUH $.
 
+  $( No positive integer is less than one.  (Contributed by Jim Kingdon,
+     31-Aug-2019.)
+     (New usage is discouraged.) $)
+  nlt1pig $p |- ( A e. N. -> -. A <N 1o ) $=
+    ( cnpi wcel c0 wne c1o clti wbr wn com elni simprbi wceq wa wo wb
+    noel 1pi ltpiord mpan2 csuc df-1o eleq2i elsucg syl5bb biimpa ord
+    bitrd mpi ex necon3ad mpd ) ABCZADEZAFGHZIUMAJCUNAKLUMUOADUMUOADM
+    ZUMUONZADCZIUPAQUQURUPUMUOURUPOZUMUOAFCZUSUMFBCUOUTPRAFSTUTADUAZC
+    UMUSFVAAUBUCADBUDUEUHUFUGUIUJUKUL $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
