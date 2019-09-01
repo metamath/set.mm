@@ -1,4 +1,4 @@
-$( iset.mm - Version of 22-Aug-2019
+$( iset.mm - Version of 31-Aug-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -35220,6 +35220,26 @@ $)
     JLAEMABCDENO $.
 
   ${
+    $d x y z R $.  $d x y z A $.  $d x y z ph $.
+    issod.1 $e |- ( ph -> R Po A ) $.
+    issod.2 $e |- ( ( ph /\ ( x e. A /\ y e. A ) ) ->
+                    ( x R y \/ x = y \/ y R x ) ) $.
+    $( An irreflexive, transitive, trichotomous relation is a linear ordering
+       (in the sense of ~ df-iso ).  (Contributed by NM, 21-Jan-1996.)
+       (Revised by Mario Carneiro, 9-Jul-2014.) $)
+    issod $p |- ( ph -> R Or A ) $=
+      ( vz wpo cv wbr wo wi wral wor wcel wa w3a syl6 ralrimiva weq w3o 3adant3
+      orc a1i simp3r breq1 syl5ibcom simp1 simp2r simp2l simp3l 3jca potr sylan
+      olc exp3acom23 imp syl21anc 3jaod mpd 3expa anassrs ralcom sylib sylanbrc
+      expr df-iso ) ADEIZBJZHJZEKZVJCJZEKZVMVKEKZLZMZCDNHDNZBDNDEOFAVRBDAVJDPZQ
+      ZVQHDNZCDNVRVTWACDAVSVMDPZWAAVSWBQZQZVQHDWDVKDPZVLVPAWCWEVLQZVPAWCWFRZVNB
+      CUAZVMVJEKZUBZVPAWCWJWFGUCWGVNVPWHWIVNVPMWGVNVOUDUEWGWHVOVPWGVLWHVOAWCWEV
+      LUFZVJVMVKEUGUHVOVNUPZSWGWIVOVPWGAWBVSWERZVLWIVOMZAWCWFUIWGWBVSWEAVSWBWFU
+      JAVSWBWFUKAWCWEVLULUMWKAWMQZVLWNWOWIVLVOAVIWMWIVLQVOMFDVMVJVKEUNUOUQURUSW
+      LSUTVAVBVGTVCTVQCHDDVDVETBHCDEVHVF $.
+  $}
+
+  ${
     $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.  $d x y z R $.
     $( A strict order relation satisfies weak linearity.  (Contributed by Jim
        Kingdon, 6-Oct-2018.) $)
@@ -36508,9 +36528,10 @@ $)
       UEUHUBUDUGACUCCDUBUCJUDUGKUCPBUCCLMNOUBUFCDUIUFQBRAUFCSTUA $.
   $}
 
-  $( Membership is inherited by predecessors.  The converse implies excluded
-     middle, as shown at ~ onsucelsucexmid .  (Contributed by Jim Kingdon,
-     17-Jul-2019.) $)
+  $( Membership is inherited by predecessors.  The converse, for all ordinals,
+     implies excluded middle, as shown at ~ onsucelsucexmid .  However, the
+     converse does hold where ` B ` is a natural number, as seen at
+     ~ nnsucelsuc .  (Contributed by Jim Kingdon, 17-Jul-2019.) $)
   onsucelsucr $p |- ( B e. On -> ( suc A e. suc B -> A e. B ) ) $=
     ( csuc wcel con0 cvv wi elex sucexb sylibr wa wceq wo wss onelss eqimss a1i
     jaod adantl wb elsucg sylbi adantr ordelsuc sylan2 3imtr4d impancom mpancom
@@ -36699,8 +36720,10 @@ $)
     $d ph x y z $.
     onsucelsucexmid.1 $e |- A. x e. On A. y e. On
       ( x e. y -> suc x e. suc y ) $.
-    $( The converse of ~ onsucelsucr implies excluded middle.  (Contributed by
-       Jim Kingdon, 2-Aug-2019.) $)
+    $( The converse of ~ onsucelsucr implies excluded middle.  On the other
+       hand, if ` y ` is constrained to be a natural number, instead of an
+       arbitrary ordinal, then the converse of ~ onsucelsucr does hold, as seen
+       at ~ nnsucelsuc .  (Contributed by Jim Kingdon, 2-Aug-2019.) $)
     onsucelsucexmid $p |- ( ph \/ -. ph ) $=
       ( vz c0 csuc cv wceq wo wcel wn con0 wral suceq imbi12d eleq2 ax-mp suc0
       wi csn cpr crab onsucelsucexmidlem1 0elon onsucelsucexmidlem pm3.2i eleq1
@@ -37551,13 +37574,34 @@ $)
        natural numbers is a special case of the law of the excluded middle
        which holds in most constructive set theories including ours.
        (Contributed by Jim Kingdon, 5-Jan-2019.) $)
-    nndc $p |- ( A e. _om -> DECID A = (/) ) $=
+    nndceq0 $p |- ( A e. _om -> DECID A = (/) ) $=
       ( vx vy com wcel c0 wceq wn wo wdc cv csuc eqeq1 notbid orbi12d eqid orci
       peano3 neneqd olcd a1d finds df-dc sylibr ) ADEAFGZUEHZIZUEJBKZFGZUIHZIFF
       GZUKHZICKZFGZUNHZIZUMLZFGZURHZIZUGBCAUIUIUKUJULUHFFMZUIUIUKVANOUHUMGZUIUN
       UJUOUHUMFMZVBUIUNVCNOUHUQGZUIURUJUSUHUQFMZVDUIURVENOUHAGZUIUEUJUFUHAFMZVF
       UIUEVGNOUKULFPQUMDEZUTUPVHUSURVHUQFUMRSTUAUBUEUCUD $.
+
+    $( A natural number is either the empty set or has the empty set as an
+       element.  (Contributed by Jim Kingdon, 23-Aug-2019.) $)
+    0elnn $p |- ( A e. _om -> ( A = (/) \/ (/) e. A ) ) $=
+      ( vx vy cv c0 wceq wcel wo csuc eqeq1 eleq2 orbi12d eqid com wi 0ex sucid
+      orci suceq a1i syl5eleqr wss sssucid sseld jaod olc syl6 finds ) BDZEFZEU
+      IGZHEEFZEEGZHCDZEFZEUNGZHZUNIZEFZEURGZHZAEFZEAGZHBCAUJUJULUKUMUIEEJUIEEKL
+      UIUNFUJUOUKUPUIUNEJUIUNEKLUIURFUJUSUKUTUIUREJUIUREKLUIAFUJVBUKVCUIAEJUIAE
+      KLULUMEMRUNNGZUQUTVAVDUOUTUPUOUTOVDUOEEIUREPQUNESUATVDUNUREUNURUBVDUNUCTU
+      DUEUTUSUFUGUH $.
   $}
+
+  $( A natural number is nonempty iff it contains the empty set.  Although in
+     constructive mathematics it is generally more natural to work with
+     inhabited sets and ignore the whole concept of nonempty sets, in the
+     specific case of natural numbers this theorem may be helpful in converting
+     proofs which were written assuming excluded middle.  (Contributed by Jim
+     Kingdon, 28-Aug-2019.) $)
+  nn0eln0 $p |- ( A e. _om -> ( (/) e. A <-> A =/= (/) ) ) $=
+    ( com wcel c0 wceq wo wne wb 0elnn noel eleq2 mtbiri nner 2falsed ne0i 2thd
+    id jaoi syl ) ABCADEZDACZFUAADGZHZAITUCUATUAUBTUADDCDJADDKLADMNUAUAUBUAQADO
+    PRS $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -48736,26 +48780,24 @@ $)
     acexmidlem.c $e |- C = { A , B } $.
     $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
     acexmidlema $p |- ( { (/) } e. A -> ph ) $=
-      ( c0 csn wcel wceq wo cv cpr crab eleq2i wb p0ex ax-mp prid2 wn
-      eqeq1 orbi1d elrab3 bitri noel 0ex snid eleq2 mpbii orel1 sylbi
-      wi mto ) IJZCKZUPILZAMZAUQUPBNZILZAMZBIUPOZPZKZUSCVDUPFQUPVCKVE
-      USRIUPSUAVBUSBUPVCUTUPLVAURAUTUPIUCUDUETUFURUBUSAUNURIIKZIUGURI
-      UPKVFIUHUIUPIIUJUKUOURAULTUM $.
+      ( c0 csn wcel wceq wo cv cpr crab eleq2i wb p0ex ax-mp prid2 eqeq1 orbi1d
+      elrab3 bitri wn wi noel 0ex snid eleq2 mpbii mto orel1 sylbi ) IJZCKZUPIL
+      ZAMZAUQUPBNZILZAMZBIUPOZPZKZUSCVDUPFQUPVCKVEUSRIUPSUAVBUSBUPVCUTUPLVAURAU
+      TUPIUBUCUDTUEURUFUSAUGURIIKZIUHURIUPKVFIUIUJUPIIUKULUMURAUNTUO $.
 
     $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
     acexmidlemb $p |- ( (/) e. B -> ph ) $=
-      ( c0 wcel csn wceq wo cv cpr crab eleq2i wb 0ex ax-mp orbi1d wn
-      prid1 eqeq1 elrab3 bitri noel snid eleq2 mpbiri mto orel1 sylbi
-      wi ) IDJZIIKZLZAMZAUOIBNZUPLZAMZBIUPOZPZJZURDVCIGQIVBJVDURRIUPS
-      UCVAURBIVBUSILUTUQAUSIUPUDUAUETUFUQUBURAUNUQIIJZIUGUQVEIUPJISUH
-      IUPIUIUJUKUQAULTUM $.
+      ( c0 wcel csn wceq wo cv cpr crab eleq2i wb 0ex ax-mp prid1 orbi1d elrab3
+      eqeq1 bitri wn wi noel snid eleq2 mpbiri mto orel1 sylbi ) IDJZIIKZLZAMZA
+      UOIBNZUPLZAMZBIUPOZPZJZURDVCIGQIVBJVDURRIUPSUAVAURBIVBUSILUTUQAUSIUPUDUBU
+      CTUEUQUFURAUGUQIIJZIUHUQVEIUPJISUIIUPIUJUKULUQAUMTUN $.
 
     $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
     acexmidlemph $p |- ( ph -> A = B ) $=
-      ( c0 csn wceq wo wral ralrimivw crab eqeq2i rabid2 bitri sylibr
-      olc cpr cv eqtr3d ) AIIJZUAZCDABUBZIKZALZBUEMZUECKZAUHBUEAUGTNU
-      JUEUHBUEOZKUICUKUEFPUHBUEQRSAUFUDKZALZBUEMZUEDKZAUMBUEAULTNUOUE
-      UMBUEOZKUNDUPUEGPUMBUEQRSUC $.
+      ( c0 csn wceq wo wral olc ralrimivw crab eqeq2i rabid2 bitri sylibr cpr
+      cv eqtr3d ) AIIJZUAZCDABUBZIKZALZBUEMZUECKZAUHBUEAUGNOUJUEUHBUEPZKUICUKUE
+      FQUHBUERSTAUFUDKZALZBUEMZUEDKZAUMBUEAULNOUOUEUMBUEPZKUNDUPUEGQUMBUERSTUC
+      $.
 
     $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
     acexmidlemab $p |- (
@@ -54416,6 +54458,10 @@ $)
        properties for increasing and continuous ordinal functions, which
        include ordinal addition and multiplication.
 
+       For finite recursion we also define ~ df-frec and for suitable
+       characteristic functions ~ df-frec yields the same result as ` rec `
+       restricted to ` _om ` , as seen at ~ frecrdg .
+
        _Note:  We introduce_ ` rec ` _with the philosophical goal of being_
        _able to eliminate all definitions with direct mechanical substitution_
        _and to verify easily the soundness of definitions.  Metamath itself_
@@ -54599,9 +54645,8 @@ $)
        ` U_ x e. B ( F `` ( rec ( F , A ) `` x ) ) ` .
 
        If we add conditions on the characteristic function, we can show tighter
-       results such as ~ rdgisuc2 .  The eventual goal is
-       ` ( rec ( F , A ) `` suc B ) = ( F `` ( rec ( F , A ) `` B ) ) ` .
-       (Contributed by Jim Kingdon, 9-Jun-2019.) $)
+       results such as ~ rdgisucinc .  (Contributed by Jim Kingdon,
+       9-Jun-2019.) $)
     rdgisuc1 $p |- ( ph -> ( rec ( F , A ) ` suc B ) =
         ( A u. ( U_ x e. B ( F ` ( rec ( F , A ) ` x ) )
           u. ( F ` ( rec ( F , A ) ` B ) ) ) ) ) $=
@@ -54612,31 +54657,21 @@ $)
       BNZVNUQVORVCVPRDUFBUQVOVBUGUHBDVLVBUIUJVKVMVGVEBDVBVGQUTDRVAVFEUTDURUKULU
       MTUNTSUP $.
 
-    $( The initial value is a subset of the recursive definition generator
-       evaluated at any ordinal.  This is a consequence of the way that
-       ~ df-irdg handles the initial value.  (Contributed by Jim Kingdon,
-       11-Jun-2019.) $)
-    rdg0ss $p |- ( ph -> A C_ ( rec ( F , A ) ` B ) ) $=
-      ( vx cv crdg cfv ciun cun ssun1 cvv wfn wcel con0 wceq rdgival syl5sseqr
-      syl3anc ) ABICIJDBKZLDLMZNZBCUDLZBUEOADPQBERCSRUGUFTFGHIBCDEUAUCUB $.
-
     ${
       $d A x $.  $d B x $.  $d F x $.
-      rdgisuc2.inc $e |- ( ph -> A. x x C_ ( F ` x ) ) $.
-      $( The value of the recursive definition generator.
+      rdgisucinc.inc $e |- ( ph -> A. x x C_ ( F ` x ) ) $.
+      $( Value of the recursive definition generator at a successor.
 
-         Given the hypothesis that the characteristic function is increasing,
-         we can remove the initial value from ~ rdgisuc1 by using ~ rdg0ss .
-         (Contributed by Jim Kingdon, 15-Jun-2019.) $)
-      rdgisuc2 $p |- ( ph -> ( rec ( F , A ) ` suc B ) =
-          ( U_ x e. B ( F ` ( rec ( F , A ) ` x ) )
-            u. ( F ` ( rec ( F , A ) ` B ) ) ) ) $=
-        ( csuc cfv cun wss wceq cvv wcel con0 wfn syl2anc crdg cv ciun rdgisuc1
-        un12 rdg0ss rdgifnon funfvex funfni id fveq2 sseq12d spcgv sylc ssequn1
-        wal sstrd sylib uneq2d syl5eq eqtrd ) ADKECUAZLCBDBUBZVBLELUCZDVBLZELZM
-        ZMZVGABCDEFGHIUDAVHVDCVFMZMVGCVDVFUEAVIVFVDACVFNVIVFOACVEVFACDEFGHIUFAV
-        EPQZVCVCELZNZBUPVEVFNZAVBRSZDRQVJAEPSCFQVNGHCEFUGTIVJRDVBDVBUHUITJVLVMB
-        VEPVCVEOZVCVEVKVFVOUJVCVEEUKULUMUNUQCVFUOURUSUTVA $.
+         This can be thought of as a generalization of ~ oasuc and ~ omsuc .
+         (Contributed by Jim Kingdon, 29-Aug-2019.) $)
+      rdgisucinc $p |- ( ph -> ( rec ( F , A ) ` suc B ) =
+          ( F ` ( rec ( F , A ) ` B ) ) ) $=
+        ( csuc crdg cfv cun cvv wcel con0 wceq syl3anc wss cv ciun rdgisuc1 wfn
+        unass syl6eqr rdgival uneq1d wal rdgexggg id fveq2 sseq12d sylc ssequn1
+        spcgv sylib 3eqtr2d ) ADKECLZMZCBDBUAZUSMEMUBZNZDUSMZEMZNZVDVENZVEAUTCV
+        BVENNVFABCDEFGHIUCCVBVEUEUFAVDVCVEAEOUDZCFPZDQPZVDVCRGHIBCDEFUGSUHAVDVE
+        TZVGVERAVDOPZVAVAEMZTZBUIVKAVHVIVJVLGHICDEFQUJSJVNVKBVDOVAVDRZVAVDVMVEV
+        OUKVAVDEULUMUPUNVDVEUOUQUR $.
     $}
   $}
 
@@ -54728,7 +54763,9 @@ $)
        without excluded middle we have theorems such as ~ nn0suc .  The
        analogous situation with transfinite recursion - being able to say that
        an ordinal is zero, successor, or limit - is enabled by excluded middle
-       and thus is not available to us.
+       and thus is not available to us.  For the characteristic functions which
+       satisfy the conditions given at ~ frecrdg , this definition and
+       ~ df-irdg restricted to ` _om ` produce the same result.
 
        _Note:  We introduce_ ` frec ` _with the philosophical goal of being_
        _able to eliminate all definitions with direct mechanical substitution_
@@ -54890,6 +54927,31 @@ $)
       WHXPWIXACWEVHWRVCUHUIUJUNXPVSXFWNXPVIWSUDXQVBVDUQVFVEUSVG $.
   $}
 
+  ${
+    frecrdg.1 $e |- ( ph -> F Fn _V ) $.
+    frecrdg.2 $e |- ( ph -> A e. V ) $.
+    frecrdg.inc $e |- ( ph -> A. x x C_ ( F ` x ) ) $.
+    $d A x y $.  $d F x y $.  $d V x $.  $d ph x y $.
+    $( Transfinite recursion restricted to omega.
+
+       Given a suitable characteristic function, ~ df-frec produces the same
+       results as ~ df-irdg restricted to ` _om ` .  (Contributed by Jim
+       Kingdon, 29-Aug-2019.) $)
+    frecrdg $p |- ( ph -> frec ( F , A ) = ( rec ( F , A ) |` _om ) ) $=
+      ( com wfn wcel syl2anc con0 cfv wceq c0 fveq2 eqeq12d fvres adantr vy cvv
+      cfrec crdg cres frecfnom rdgifnon omsson fnssres sylancl cv frec0g peano1
+      wss ax-mp rdgi0g syl5eq eqtr4d wi wa ax-ia2 ad2antlr eqtrd fveq2d frecsuc
+      csuc jca 3expa sylan nnon syl wal rdgisucinc 3eqtr4d peano2 expcom finds2
+      ex impcom eqfnfvd ) ABIDCUCZDCUDZIUEZADUBJZCEKZWAIJFGCDEUFLAWBMJZIMUNWCIJ
+      AWDWEWFFGCDEUGLUHMIWBUIUJBUKZIKAWGWANZWGWCNZOZWJPWANZPWCNZOUAUKZWANZWMWCN
+      ZOZWMVFZWANZWQWCNZOZABUAWGPOWHWKWIWLWGPWAQWGPWCQRWGWMOWHWNWIWOWGWMWAQWGWM
+      WCQRWGWQOWHWRWIWSWGWQWAQWGWQWCQRAWKCWLAWDWEWKCOFGCDEULLAWLPWBNZCPIKWLXAOU
+      MPIWBSUOAWDWEXACOFGCDEUPLUQURAWMIKZWPWTUSAXBUTZWPWTXCWPUTZWRWQWBNZWSXDWND
+      NZWMWBNZDNZWRXEXDWNXGDXDWNWOXGXCWPVAXBWOXGOAWPWMIWBSVBVCVDXCWRXFOZWPAWDWE
+      UTXBXIAWDWEFGVGWDWEXBXICWMDEVEVHVITXCXEXHOWPXCBCWMDEAWDXBFTAWEXBGTXCXBWMM
+      KAXBVAWMVJVKAWGWGDNUNBVLXBHTVMTVNXBWSXEOZAWPXBWQIKXJWMVOWQIWBSVKVBURVRVPV
+      QVSVT $.
+  $}
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Ordinal arithmetic
@@ -55089,21 +55151,33 @@ $)
       ( vy vz vx cv cvv csuc cmpt crdg cfv wcel wal coa co vex oafnex con0 gen2
       rdgexg ax-mp df-oadd mpt2fvex mp3an1 ) EHZFIFHJKZGHZLMZINZEOGOACNBDNABPQI
       NUKGEUGINUKERUIUGUHIGRFSUBUCUAGETTUJABPICDGEFUDUEUF $.
+  $}
 
+  ${
+    $d x A $.  $d x V $.
+    $( The characteristic function for ordinal multiplication is defined
+       everywhere.  (Contributed by Jim Kingdon, 23-Aug-2019.) $)
+    omfnex $p |- ( A e. V -> ( x e. _V |-> ( x +o A ) ) Fn _V ) $=
+      ( wcel cv coa cvv wral cmpt wfn vex oaexg mpan ralrimivw eqid fnmpt syl
+      co ) BCDZAEZBFRZGDZAGHAGUAIZGJSUBAGTGDSUBAKTBGCLMNAGUAUCGUCOPQ $.
+  $}
+
+  ${
+    $d x y z $.
     $( Functionality and domain of ordinal multiplication.  (Contributed by NM,
        26-Aug-1995.)  (Revised by Mario Carneiro, 3-Jul-2019.) $)
     fnom $p |- .o Fn ( On X. On ) $=
-      ( vx vy vz con0 cv cvv coa co cmpt c0 crdg cfv comu df-omul vex 0ex oaexg
-      wcel mp2an eqid fnmpti rdgexg ax-mp fnmpt2i ) ABDDBEZCFCEZAEZGHZIZJKLZMAB
-      CNUEFRUJFRBOJUEUIFPCFUHUIUFFRUGFRUHFRCOAOUFUGFFQSUITUAUBUCUD $.
+      ( vx vy vz con0 cv cvv coa co cmpt crdg cfv comu df-omul wcel vex 0ex wfn
+      c0 omfnex ax-mp rdgexg fnmpt2i ) ABDDBEZCFCEAEZGHIZRJKZLABCMUCFNUFFNBORUC
+      UEFPUDFNUEFQAOCUDFSTUATUB $.
 
     $( Ordinal multiplication is a set.  (Contributed by Mario Carneiro,
        3-Jul-2019.) $)
     omexg $p |- ( ( A e. V /\ B e. W ) -> ( A .o B ) e. _V ) $=
-      ( vy vz vx cv cvv coa co cmpt c0 crdg cfv wcel wal comu vex con0 0ex eqid
-      oaexg mp2an fnmpti rdgexg ax-mp gen2 df-omul mpt2fvex mp3an1 ) EHZFIFHZGH
-      ZJKZLZMNOZIPZEQGQACPBDPABRKIPURGEULIPURESMULUPIUAFIUOUPUMIPUNIPUOIPFSGSUM
-      UNIIUCUDUPUBUEUFUGUHGETTUQABRICDGEFUIUJUK $.
+      ( vy vz vx cv cvv coa co cmpt c0 crdg wcel wal comu vex ax-mp con0 omfnex
+      cfv 0ex wfn rdgexg gen2 df-omul mpt2fvex mp3an1 ) EHZFIFHGHZJKLZMNUBZIOZE
+      PGPACOBDOABQKIOUNGEUJIOUNERMUJULIUCUKIOULIUDGRFUKIUASUESUFGETTUMABQICDGEF
+      UGUHUI $.
 
     $( Functionality and domain of ordinal exponentiation.  (Contributed by
        Mario Carneiro, 29-May-2015.)  (Revised by Mario Carneiro,
@@ -55137,12 +55211,11 @@ $)
        (Revised by Mario Carneiro, 23-Aug-2014.) $)
     omv $p |- ( ( A e. On /\ B e. On ) ->
      ( A .o B ) = ( rec ( ( x e. _V |-> ( x +o A ) ) , (/) ) ` B ) ) $=
-      ( vy vz con0 wcel cvv cv coa co cmpt c0 crdg cfv comu wceq 0elon wfn syl
-      wral vex oaexg mpan ralrimivw eqid fnmpt rdgexggg syl3an1 mp3an2 mpteq2dv
-      oveq2 rdgeq1 fveq1d fveq2 df-omul ovmpt2g mpd3an3 ) BFGZCFGZCAHAIZBJKZLZM
-      NZOZHGZBCPKVEQUSMFGZUTVFRUSVCHSZVGUTVFUSVBHGZAHUAVHUSVIAHVAHGUSVIAUBVABHF
-      UCUDUEAHVBVCHVCUFUGTMCVCFFUHUIUJDEBCFFEIZAHVADIZJKZLZMNZOVEPVJVDOHVKBQZVJ
-      VNVDVOVMVCQVNVDQVOAHVLVBVKBVAJULUKMVMVCUMTUNVJCVDUODEAUPUQUR $.
+      ( vy vz con0 wcel cvv cv coa co cmpt crdg cfv comu wceq 0elon wfn omfnex
+      c0 rdgexggg syl3an1 mp3an2 oveq2 mpteq2dv rdgeq1 syl fveq1d fveq2 df-omul
+      ovmpt2g mpd3an3 ) BFGZCFGZCAHAIZBJKZLZTMZNZHGZBCOKUSPUMTFGZUNUTQUMUQHRVAU
+      NUTABFSTCUQFFUAUBUCDEBCFFEIZAHUODIZJKZLZTMZNUSOVBURNHVCBPZVBVFURVGVEUQPVF
+      URPVGAHVDUPVCBUOJUDUETVEUQUFUGUHVBCURUIDEAUJUKUL $.
   $}
 
   ${
@@ -55173,10 +55246,9 @@ $)
        p. 62.  (Contributed by NM, 17-Sep-1995.)  (Revised by Mario Carneiro,
        8-Sep-2013.) $)
     om0 $p |- ( A e. On -> ( A .o (/) ) = (/) ) $=
-      ( vx con0 wcel c0 comu co cvv coa cmpt crdg cfv wceq 0elon omv mpan2 wral
-      cv wfn vex oaexg mpan ralrimivw eqid fnmpt 0ex rdgi0g 3syl eqtrd ) ACDZAE
-      FGZEBHBRZAIGZJZEKLZEUJECDUKUOMNBAEOPUJUMHDZBHQUNHSZUOEMZUJUPBHULHDUJUPBTU
-      LAHCUAUBUCBHUMUNHUNUDUEUQEHDURUFEUNHUGPUHUI $.
+      ( vx con0 wcel c0 comu co cvv cv coa cmpt crdg cfv 0elon omv mpan2 omfnex
+      wceq wfn 0ex rdgi0g sylancl eqtrd ) ACDZAEFGZEBHBIAJGKZELMZEUDECDUEUGRNBA
+      EOPUDUFHSEHDUGERBACQTEUFHUAUBUC $.
 
     $( Ordinal exponentiation with zero exponent.  Definition 8.30 of
        [TakeutiZaring] p. 67.  (Contributed by NM, 31-Dec-2004.)  (Revised by
@@ -55204,12 +55276,11 @@ $)
        [TakeutiZaring] p. 57.  (Contributed by NM, 3-Aug-2004.)  (Constructive
        proof by Jim Kingdon, 26-Jul-2019.) $)
     omcl $p |- ( ( A e. On /\ B e. On ) -> ( A .o B ) e. On ) $=
-      ( vx vy con0 wcel wa comu co cvv cv coa cmpt c0 crdg cfv vex mpan eqeltrd
-      syl omv wral wfn oaexg ralrimivw eqid fnmpt 0elon wceq oacl fvmptg ancoms
-      a1i oveq1 ralrimiva rdgon ) AEFZBEFGABHIBCJCKZALIZMZNOPECABUAUQDNBUTUQUSJ
-      FZCJUBUTJUCUQVACJURJFUQVACQURAJEUDRUECJUSUTJUTUFZUGTNEFUQUHUMUQDKZUTPZEFZ
-      DEVCEFZUQVEVFUQGZVDVCALIZEVGVHEFZVDVHUIZVCAUJZVCJFVIVJDQCVCUSVHJEUTURVCAL
-      UNVBUKRTVKSULUOUPS $.
+      ( vx vy con0 wcel wa comu co cvv cv coa cmpt c0 crdg cfv omv omfnex 0elon
+      eqeltrd a1i wceq oacl oveq1 eqid fvmptg sylancr ancoms ralrimiva rdgon
+      vex ) AEFZBEFGABHIBCJCKZALIZMZNOPECABQULDNBUOCAERNEFULSUAULDKZUOPZEFZDEUP
+      EFZULURUSULGZUQUPALIZEUTUPJFVAEFUQVAUBDUKUPAUCZCUPUNVAJEUOUMUPALUDUOUEUFU
+      GVBTUHUIUJT $.
 
     $( Closure law for ordinal exponentiation.  (Contributed by Jim Kingdon,
        26-Jul-2019.) $)
@@ -55251,14 +55322,27 @@ $)
   $}
 
   ${
-    $d x y A $.  $d x B $.
-    $( Addition with successor.  Theorem 4I(A2) of [Enderton] p. 79.
-       (Contributed by Mario Carneiro, 16-Nov-2014.) $)
-    onasuc $p |- ( ( A e. On /\ B e. _om ) ->
-                  ( A +o suc B ) = suc ( A +o B ) ) $=
-      ( com wcel con0 csuc coa co wceq nnon oasuc sylan2 ) BCDAEDBEDABFGHABGHFI
-      BJABKL $.
+    $d x y A $.  $d x y B $.
+    $( Value of ordinal multiplication.  (Contributed by Jim Kingdon,
+       23-Aug-2019.) $)
+    omv2 $p |- ( ( A e. On /\ B e. On ) ->
+        ( A .o B ) = U_ x e. B ( ( A .o x ) +o A ) ) $=
+      ( vy con0 wcel wa comu co c0 coa ciun cun cvv cmpt cfv wceq omv syl2anc
+      cv crdg wfn omfnex 0elon mp3an2 sylan onelon omexg omcl ax-ia1 oacl oveq1
+      rdgival fvmptg fveq2d eqtr3d sylan2 anassrs iuneq2dv uneq2d 3eqtr4d uncom
+      eqid un0 eqtri syl6eq ) BEFZCEFZGZBCHIZJACBATZHIZBKIZLZMZVNVICDNDTZBKIZOZ
+      JUAZPZJACVKVSPZVRPZLZMZVJVOVGVRNUBZVHVTWDQZDBEUCWEJEFVHWFUDAJCVREUMUEUFDB
+      CRVIVNWCJVIACVMWBVGVHVKCFZVMWBQZVHWGGVGVKEFZWHCVKUGVGWIGZVLVRPZVMWBWJVLNF
+      VMEFZWKVMQBVKEEUHWJVLEFVGWLBVKUIVGWIUJVLBUKSDVLVQVMNEVRVPVLBKULVRVCUNSWJV
+      LWAVRDBVKRUOUPUQURUSUTVAVOVNJMVNJVNVBVNVDVEVF $.
   $}
+
+  $( Addition with successor.  Theorem 4I(A2) of [Enderton] p. 79.
+     (Contributed by Mario Carneiro, 16-Nov-2014.) $)
+  onasuc $p |- ( ( A e. On /\ B e. _om ) ->
+                ( A +o suc B ) = suc ( A +o B ) ) $=
+    ( com wcel con0 csuc coa co wceq nnon oasuc sylan2 ) BCDAEDBEDABFGHABGHFIBJ
+    ABKL $.
 
   $( Addition with 1 is same as successor.  Proposition 4.34(a) of [Mendelson]
      p. 266.  (Contributed by NM, 29-Oct-1995.)  (Revised by Mario Carneiro,
@@ -55286,6 +55370,37 @@ $)
       RVCQUSUNUMVDVFRDCBSTUKUA $.
   $}
 
+  $( An ordinal is less than or equal to its sum with another.  Part of
+     Exercise 5 of [TakeutiZaring] p. 62.  (Contributed by NM, 6-Dec-2004.) $)
+  oaword1 $p |- ( ( A e. On /\ B e. On ) -> A C_ ( A +o B ) ) $=
+    ( con0 wcel wa c0 coa co wceq oa0 adantr wss wi 0elon oawordi 3com13 mp3an3
+    0ss mpi eqsstr3d ) ACDZBCDZEZAAFGHZABGHZUAUDAIUBAJKUCFBLZUDUELZBRUAUBFCDZUF
+    UGMZNUHUBUAUIFBAOPQST $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Multiplication with successor.  Definition 8.15 of [TakeutiZaring]
+       p. 62.  (Contributed by NM, 17-Sep-1995.)  (Revised by Mario Carneiro,
+       8-Sep-2013.) $)
+    omsuc $p |- ( ( A e. On /\ B e. On ) ->
+                ( A .o suc B ) = ( ( A .o B ) +o A ) ) $=
+      ( vx con0 wcel wa csuc comu co coa cun ciun wceq csn df-suc iuneq1 iunxun
+      cv ax-mp omv2 oveq1d iunxsng uneq2d syl5eq adantl suceloni sylan2 3eqtr4d
+      eqtri oveq2 uneq1d omcl ax-ia1 wss oaword1 ssequn1 sylib syl2anc eqtrd )
+      ADEZBDEZFZABGZHIZABHIZVEAJIZKZVFVBCVCACRZHIZAJIZLZCBVJLZVFKZVDVGVAVKVMMUT
+      VAVKVLCBNZVJLZKZVMVKCBVNKZVJLZVPVCVQMVKVRMBOCVCVQVJPSCBVNVJQUIVAVOVFVLCBV
+      JVFDVHBMVIVEAJVHBAHUJUAUBUCUDUEVAUTVCDEVDVKMBUFCAVCTUGVBVEVLVFCABTUKUHVBV
+      EDEZUTVGVFMZABULUTVAUMVSUTFVEVFUNVTVEAUOVEVFUPUQURUS $.
+  $}
+
+  $( Multiplication with successor.  Theorem 4J(A2) of [Enderton] p. 80.
+     (Contributed by NM, 20-Sep-1995.)  (Revised by Mario Carneiro,
+     14-Nov-2014.) $)
+  onmsuc $p |- ( ( A e. On /\ B e. _om ) ->
+                ( A .o suc B ) = ( ( A .o B ) +o A ) ) $=
+    ( com wcel con0 csuc comu co coa wceq nnon omsuc sylan2 ) BCDAEDBEDABFGHABG
+    HAIHJBKABLM $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                       Natural number arithmetic
@@ -55310,6 +55425,14 @@ $)
     ( com wcel con0 csuc coa co wceq nnon onasuc sylan ) ACDAEDBCDABFGHABGHFIAJ
     ABKL $.
 
+  $( Multiplication with successor.  Theorem 4J(A2) of [Enderton] p. 80.
+     (Contributed by NM, 20-Sep-1995.)  (Revised by Mario Carneiro,
+     14-Nov-2014.) $)
+  nnmsuc $p |- ( ( A e. _om /\ B e. _om ) ->
+                ( A .o suc B ) = ( ( A .o B ) +o A ) ) $=
+    ( com wcel con0 csuc comu co coa wceq nnon onmsuc sylan ) ACDAEDBCDABFGHABG
+    HAIHJAKABLM $.
+
   ${
     $d x y A $.  $d x B $.
     $( Addition to zero.  Remark in proof of Theorem 4K(2) of [Enderton]
@@ -55322,6 +55445,16 @@ $)
       FJURKLUFUMHZUGUNUFUMUFUMDFJUSKLUFAHZUGUPUFAUFADFJUTKLDMNUIODPQUJRNZUNUKIZ
       HZULUODRNVAVCSDUJTUAULVBUMUNUKUJUBUCUDUE $.
 
+    $( Multiplication with zero.  Exercise 16 of [Enderton] p. 82.
+       (Contributed by NM, 20-Sep-1995.)  (Revised by Mario Carneiro,
+       15-Nov-2014.) $)
+    nnm0r $p |- ( A e. _om -> ( (/) .o A ) = (/) ) $=
+      ( vx vy c0 cv comu co wceq csuc oveq2 eqeq1d con0 0elon om0 ax-mp com coa
+      wcel oveq1 oa0 syl6eq peano1 nnmsuc mpan syl5ibr finds ) DBEZFGZDHDDFGZDH
+      ZDCEZFGZDHZDUKIZFGZDHZDAFGZDHBCAUGDHUHUIDUGDDFJKUGUKHUHULDUGUKDFJKUGUNHUH
+      UODUGUNDFJKUGAHUHUQDUGADFJKDLRZUJMDNOUMUPUKPRZULDQGZDHUMUTDDQGZDULDDQSURV
+      ADHMDTOUAUSUOUTDDPRUSUOUTHUBDUKUCUDKUEUF $.
+
     $( Closure of addition of natural numbers.  Proposition 8.9 of
        [TakeutiZaring] p. 59.  (Contributed by NM, 20-Sep-1995.)  (Proof
        shortened by Andrew Salmon, 22-Oct-2011.) $)
@@ -55331,6 +55464,17 @@ $)
       CIZGHZEFZRUGUIRCBEUJBJZULUIUGUMUKUHEUJBAGKLMULASGHZEFZADIZGHZEFZAUPNZGHZE
       FZUGCDUJSJUKUNEUJSAGKLUJUPJUKUQEUJUPAGKLUJUSJUKUTEUJUSAGKLUGUOUGUNAEAOLPU
       GUPEFZURVARURVAUGVBTZUQNZEFUQQVCUTVDEAUPUALUBUCUDUEUF $.
+
+    $( Closure of multiplication of natural numbers.  Proposition 8.17 of
+       [TakeutiZaring] p. 63.  (Contributed by NM, 20-Sep-1995.)  (Proof
+       shortened by Andrew Salmon, 22-Oct-2011.) $)
+    nnmcl $p |- ( ( A e. _om /\ B e. _om ) -> ( A .o B ) e. _om ) $=
+      ( vx vy wcel comu co cv wi wceq oveq2 eleq1d imbi2d c0 csuc nnm0 syl6eqel
+      com peano1 expcom coa nnacl adantr nnmsuc sylibrd finds2 vtoclga impcom
+      wa ) BREAREZABFGZREZUJACHZFGZREZIUJULICBRUMBJZUOULUJUPUNUKRUMBAFKLMUOANFG
+      ZREADHZFGZREZAUROZFGZREZUJCDUMNJUNUQRUMNAFKLUMURJUNUSRUMURAFKLUMVAJUNVBRU
+      MVAAFKLUJUQNRAPSQUJURREZUTVCIUJVDUIZUTUSAUAGZREZVCUJUTVGIVDUTUJVGUSAUBTUC
+      VEVBVFRAURUDLUETUFUGUH $.
   $}
 
   ${
@@ -55341,6 +55485,13 @@ $)
        12-May-2012.) $)
     nnacli $p |- ( A +o B ) e. _om $=
       ( com wcel coa co nnacl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( ` _om ` is closed under multiplication.  Inference form of ~ nnmcl .
+       (Contributed by Scott Fenton, 20-Apr-2012.)  (Revised by Mario Carneiro,
+       12-May-2012.) $)
+    nnmcli $p |- ( A .o B ) e. _om $=
+      ( com wcel comu co nnmcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
   $}
 
   ${
@@ -55381,7 +55532,309 @@ $)
       KURVNUTJUQURVMBAHBUBOUCUDVEVOFGZVSWDMVSWDVEWJKZVPRZVRRZJVPVRUEWKWAWLWCWMV
       EWHWJWAWLJWIUTVOSUFUQURWJWCWMJUQURWJKZKWCAVQRZHIZWMWNWCWPJUQWNWBWOAHBVOSO
       UCWNUQVQFGWPWMJBVOTAVQSUGULUHPUIUJUMUNUOUP $.
+
+    $( Distributive law for natural numbers (left-distributivity).  Theorem
+       4K(3) of [Enderton] p. 81.  (Contributed by NM, 20-Sep-1995.)  (Revised
+       by Mario Carneiro, 15-Nov-2014.) $)
+    nndi $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                 ( A .o ( B +o C ) ) = ( ( A .o B ) +o ( A .o C ) ) ) $=
+      ( vx vy com wcel coa co comu wceq wa cv wi oveq2 oveq2d eqeq12d c0 eqtr4d
+      csuc imbi2d nna0 adantl nnmcl syl nnm0 adantr oveq1 nnasuc 3adant1 nnmsuc
+      w3a nnacl sylan2 3impb eqtrd 3adant2 nnaass syl3an1 syl3an2 exp4b pm2.43a
+      3exp com4r pm2.43i 3imp syl5ibr com3r imp3a finds2 vtoclga exp3acom3r ) A
+      FGZBFGZCFGZABCHIZJIZABJIZACJIZHIZKZVOVMVNWAVMVNLZABDMZHIZJIZVRAWCJIZHIZKZ
+      NWBWANDCFWCCKZWHWAWBWIWEVQWGVTWIWDVPAJWCCBHOPWIWFVSVRHWCCAJOPQUAWHABRHIZJ
+      IZVRARJIZHIZKABEMZHIZJIZVRAWNJIZHIZKZABWNTZHIZJIZVRAWTJIZHIZKZWBDEWCRKZWE
+      WKWGWMXFWDWJAJWCRBHOPXFWFWLVRHWCRAJOPQWCWNKZWEWPWGWRXGWDWOAJWCWNBHOPXGWFW
+      QVRHWCWNAJOPQWCWTKZWEXBWGXDXHWDXAAJWCWTBHOPXHWFXCVRHWCWTAJOPQWBWKVRRHIZWM
+      WBWKVRXIWBWJBAJVNWJBKVMBUBUCPWBVRFGZXIVRKABUDZVRUBUESWBWLRVRHVMWLRKVNAUFU
+      GPSWNFGZVMVNWSXENZVMVNXLXMVMVNXLXMWSXEVMVNXLULZWPAHIZWRAHIZKWPWRAHUHXNXBX
+      OXDXPXNXBAWOTZJIZXOXNXAXQAJVNXLXAXQKVMBWNUIUJPVMVNXLXRXOKZVNXLLVMWOFGXSBW
+      NUMAWOUKUNUOUPXNXDVRWQAHIZHIZXPXNXCXTVRHVMXLXCXTKVNAWNUKUQPVMVNXLXPYAKZVM
+      VNXLYBNNVMVNXLVMYBVNVMXLVMYBNZNVMVNVMXLYCWBVMXLLZVMYBYDWBWQFGZVMYBAWNUDWB
+      XJYEVMYBXKVRWQAURUSUTVCVAVBVDVEVFSQVGVCVHVIVJVKVLVF $.
+
+    $( Multiplication of natural numbers is associative.  Theorem 4K(4) of
+       [Enderton] p. 81.  (Contributed by NM, 20-Sep-1995.)  (Revised by Mario
+       Carneiro, 15-Nov-2014.) $)
+    nnmass $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                 ( ( A .o B ) .o C ) = ( A .o ( B .o C ) ) ) $=
+      ( vx vy com wcel comu co wceq wa cv wi oveq2 oveq2d eqeq12d c0 nnmcl nnm0
+      coa imbi2d csuc syl sylan9eqr eqtr4d w3a oveq1 nnmsuc sylan 3impa 3adant1
+      nndi syl3an2 exp3a com34 pm2.43d eqtrd syl5ibr com3r imp3a finds2 vtoclga
+      3exp 3imp exp3acom3r ) AFGZBFGZCFGZABHIZCHIZABCHIZHIZJZVHVFVGVMVFVGKZVIDL
+      ZHIZABVOHIZHIZJZMVNVMMDCFVOCJZVSVMVNVTVPVJVRVLVOCVIHNVTVQVKAHVOCBHNOPUAVS
+      VIQHIZABQHIZHIZJVIELZHIZABWDHIZHIZJZVIWDUBZHIZABWIHIZHIZJZVNDEVOQJZVPWAVR
+      WCVOQVIHNWNVQWBAHVOQBHNOPVOWDJZVPWEVRWGVOWDVIHNWOVQWFAHVOWDBHNOPVOWIJZVPW
+      JVRWLVOWIVIHNWPVQWKAHVOWIBHNOPVNWAQWCVNVIFGZWAQJABRZVISUCVGVFWCAQHIQVGWBQ
+      AHBSOASUDUEWDFGZVFVGWHWMMZVFVGWSWTVFVGWSWTWHWMVFVGWSUFZWEVITIZWGVITIZJWEW
+      GVITUGXAWJXBWLXCVFVGWSWJXBJZVNWQWSXDWRVIWDUHUIUJXAWLAWFBTIZHIZXCXAWKXEAHV
+      GWSWKXEJVFBWDUHUKOVFVGWSXFXCJZVFVGWSXGMVFVGWSVGXGVFVGWSVGXGMVFVGWSKZVGXGX
+      HVFWFFGVGXGBWDRAWFBULUMVCUNUOUPVDUQPURVCUSUTVAVBVEVD $.
+
+    $( Multiplication with successor.  Exercise 16 of [Enderton] p. 82.
+       (Contributed by NM, 21-Sep-1995.)  (Proof shortened by Andrew Salmon,
+       22-Oct-2011.) $)
+    nnmsucr $p |- ( ( A e. _om /\ B e. _om ) ->
+                  ( suc A .o B ) = ( ( A .o B ) +o B ) ) $=
+      ( vx vy com wcel csuc comu co coa wceq cv wi oveq2 id oveq12d eqeq12d syl
+      c0 eqtr4d imbi2d peano2 nnm0 peano1 nnmcl mpan2 nna0 oveq1 peano2b nnmsuc
+      wa sylanb nnaass syl3an3b syl3an1 3expb anidms oveq1d an42s nnacom nnasuc
+      suceq ancoms 3eqtr4d oveq2d syl5ibr expcom finds2 vtoclga impcom ) BEFAEF
+      ZAGZBHIZABHIZBJIZKZVKVLCLZHIZAVQHIZVQJIZKZMVKVPMCBEVQBKZWAVPVKWBVRVMVTVOV
+      QBVLHNWBVSVNVQBJVQBAHNWBOPQUAWAVLSHIZASHIZSJIZKVLDLZHIZAWFHIZWFJIZKZVLWFG
+      ZHIZAWKHIZWKJIZKZVKCDVQSKZVRWCVTWEVQSVLHNWPVSWDVQSJVQSAHNWPOPQVQWFKZVRWGV
+      TWIVQWFVLHNWQVSWHVQWFJVQWFAHNWQOPQVQWKKZVRWLVTWNVQWKVLHNWRVSWMVQWKJVQWKAH
+      NWROPQVKWCWDWEVKWCSWDVKVLEFZWCSKAUBVLUCRAUCTVKWDEFZWEWDKVKSEFWTUDASUEUFWD
+      UGRTVKWFEFZWJWOMWJWOVKXAUKZWGVLJIZWIVLJIZKWGWIVLJUHXBWLXCWNXDVKWSXAWLXCKA
+      UIZVLWFUJULXBWHAJIZWKJIZWHAWKJIZJIZWNXDXBXGXIKZXBVKXAXJXBWHEFZVKXAXJAWFUE
+      ZXAXKVKWKEFXJWFUIWHAWKUMUNUOUPUQXBWMXFWKJAWFUJURXBXDWHWFVLJIZJIZXIXBXDXNK
+      ZVKXAXAVKXOXBXAVKXOXBXKXAVKXOXLVKXKXAWSXOXEWHWFVLUMUNUOUPUSUQXBXHXMWHJXBA
+      WFJIZGZWFAJIZGZXHXMXBXPXRKXQXSKAWFUTXPXRVBRAWFVAXAVKXMXSKWFAVAVCVDVETVDQV
+      FVGVHVIVJ $.
+
+    $( Multiplication of natural numbers is commutative.  Theorem 4K(5) of
+       [Enderton] p. 81.  (Contributed by NM, 21-Sep-1995.)  (Proof shortened
+       by Andrew Salmon, 22-Oct-2011.) $)
+    nnmcom $p |- ( ( A e. _om /\ B e. _om ) -> ( A .o B ) = ( B .o A ) ) $=
+      ( vx vy com wcel comu co wceq cv wi oveq1 oveq2 eqeq12d imbi2d csuc nnm0r
+      c0 nnm0 coa eqtr4d wa nnmsucr nnmsuc ancoms syl5ibr ex finds2 vtoclga imp
+      ) AEFBEFZABGHZBAGHZIZUKCJZBGHZBUOGHZIZKUKUNKCAEUOAIZURUNUKUSUPULUQUMUOABG
+      LUOABGMNOURRBGHZBRGHZIDJZBGHZBVBGHZIZVBPZBGHZBVFGHZIZUKCDUORIUPUTUQVAUORB
+      GLUORBGMNUOVBIUPVCUQVDUOVBBGLUOVBBGMNUOVFIUPVGUQVHUOVFBGLUOVFBGMNUKUTRVAB
+      QBSUAVBEFZUKVEVIKVEVIVJUKUBZVCBTHZVDBTHZIVCVDBTLVKVGVLVHVMVBBUCUKVJVHVMIB
+      VBUDUENUFUGUHUIUJ $.
   $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( Membership is inherited by successors.  The reverse direction holds for
+       all ordinals, as seen at ~ onsucelsucr , but the forward direction, for
+       all ordinals, implies excluded middle as seen as ~ onsucelsucexmid .
+       (Contributed by Jim Kingdon, 25-Aug-2019.) $)
+    nnsucelsuc $p |- ( B e. _om -> ( A e. B <-> suc A e. suc B ) ) $=
+      ( vx vy com wcel csuc cv wi c0 wceq eleq2 suceq eleq2d imbi12d pm2.21i wa
+      noel wo a1i elsuci adantl ax-ia1 orim12d mpd sucex elsuc2 sylibr ex finds
+      vex con0 nnon onsucelsucr syl impbid ) BEFZABFZAGZBGZFZACHZFZUSVBGZFZIAJF
+      ZUSJGZFZIADHZFZUSVIGZFZIZAVKFZUSVKGZFZIZURVAICDBVBJKZVCVFVEVHVBJALVRVDVGU
+      SVBJMNOVBVIKZVCVJVEVLVBVIALVSVDVKUSVBVIMNOVBVKKZVCVNVEVPVBVKALVTVDVOUSVBV
+      KMNOVBBKZVCURVEVAVBBALWAVDUTUSVBBMNOVFVHARPVMVQIVIEFVMVNVPVMVNQZVLUSVKKZS
+      ZVPWBVJAVIKZSZWDVNWFVMAVIUAUBWBVJVLWEWCVMVNUCWEWCIWBAVIMTUDUEVKUSVIDUKUFU
+      GUHUITUJUQBULFVAURIBUMABUNUOUP $.
+
+    $( Membership is inherited by successors.  The reverse direction holds for
+       all ordinals, as seen at ~ onsucsssucr , but the forward direction, for
+       all ordinals, implies excluded middle as seen as ~ onsucsssucexmid .
+       (Contributed by Jim Kingdon, 25-Aug-2019.) $)
+    nnsucsssuc $p |- ( ( A e. _om /\ B e. _om ) ->
+        ( A C_ B <-> suc A C_ suc B ) ) $=
+      ( vx vy com wcel wa wss csuc wi wceq sseq1 suceq sseq1d imbi12d c0 syl wb
+      ordelsuc mpbid cv imbi2d wn peano3 neneqd peano2 0elnn ord mpd word nnord
+      ordsucim cvv 0ex mpan 3syl a1d w3a simp3 simp1l simp1r syl2anc nnsucelsuc
+      wo mpbird 3expia exp31 finds2 vtoclga con0 nnon onsucsssucr syl2an impbid
+      imp ) AEFZBEFZGABHZAIZBIZHZVPVQVRWAJZVQCUAZBHZWCIZVTHZJZJVQWBJCAEWCAKZWGW
+      BVQWHWDVRWFWAWCABLWHWEVSVTWCAMNOUBWGPBHZPIZVTHZJDUAZBHZWLIZVTHZJZWNBHZWNI
+      ZVTHZJZVQCDWCPKZWDWIWFWKWCPBLXAWEWJVTWCPMNOWCWLKZWDWMWFWOWCWLBLXBWEWNVTWC
+      WLMNOWCWNKZWDWQWFWSWCWNBLXCWEWRVTWCWNMNOVQWKWIVQPVTFZWKVQVTPKZUCXDVQVTPBU
+      DUEVQXEXDVQVTEFXEXDVDBUFVTUGQUHUIVQBUJZVTUJZXDWKRZBUKZBULZPUMFXGXHUNPVTUM
+      SUOUPTUQWLEFZVQWPWTXKVQGZWPWQWSXLWPWQURZWNVTFZWSXMWLBFZXNXMXOWQXLWPWQUSXM
+      XKXFXOWQRXKVQWPWQUTZXMVQXFXKVQWPWQVAZXIQZWLBESVBVEXMVQXOXNRXQWLBVCQTXMWNE
+      FZXGXNWSRXMXKXSXPWLUFQXMXFXGXRXJQWNVTESVBTVFVGVHVIVOVPAVJFXFWAVRJVQAVKXIA
+      BVLVMVN $.
+
+    $( Trichotomy for natural numbers.  (Contributed by Jim Kingdon,
+       25-Aug-2019.) $)
+    nntri3or $p |- ( ( A e. _om /\ B e. _om ) ->
+        ( A e. B \/ A = B \/ B e. A ) ) $=
+      ( vx vy com wcel wceq cv wi eleq2 eqeq2 eleq1 3orbi123d c0 csuc wo 3orass
+      w3o sylibr syl imbi2d 0elnn olc wa df-3or elex elsuc2g syl6bir nnsucelsuc
+      cvv 3mix1 elsuci syl6bi orbi2i biimpi orcomd olcd syl6 jaao syl5bi finds2
+      eqcom ex vtoclga impcom ) BEFAEFZABFZABGZBAFZRZVFACHZFZAVKGZVKAFZRZIVFVJI
+      CBEVKBGZVOVJVFVPVLVGVMVHVNVIVKBAJVKBAKVKBALMUAVOANFZANGZNAFZRZADHZFZAWAGZ
+      WAAFZRZAWAOZFZAWFGZWFAFZRZVFCDVKNGVLVQVMVRVNVSVKNAJVKNAKVKNALMVKWAGVLWBVM
+      WCVNWDVKWAAJVKWAAKVKWAALMVKWFGVLWGVMWHVNWIVKWFAJVKWFAKVKWFALMVFVRVSPZVTAU
+      BWKVQWKPVTWKVQUCVQVRVSQSTWAEFZVFWEWJIWEWBWCPZWDPWLVFUDWJWBWCWDUEWLWMWJVFW
+      DWLWAUJFZWMWJIWAEUFWNWMWGWJAWAUJUGWGWHWIUKUHTVFWDWIWFAGZPZWJVFWDWFAOFWPWA
+      AUIWFAULUMWPWGWHWIPZPWJWPWQWGWPWIWHWPWIWHPWOWHWIWFAVBUNUOUPUQWGWHWIQSURUS
+      UTVCVAVDVE $.
+
+    $( A trichotomy law for natural numbers.  (Contributed by Jim Kingdon,
+       28-Aug-2019.) $)
+    nntri2 $p |- ( ( A e. _om /\ B e. _om ) ->
+        ( A e. B <-> -. ( A = B \/ B e. A ) ) ) $=
+      ( com wcel wa wceq wo elirr eleq2 mtbii con2i en2lp imnani ioran sylanbrc
+      wn w3o nntri3or 3orass sylib orcomd ord impbid2 ) ACDBCDEZABDZABFZBADZGZP
+      ZUEUFPUGPUIUFUEUFAADUEAHABAIJKUEUGABLMUFUGNOUDUHUEUDUEUHUDUEUFUGQUEUHGABR
+      UEUFUGSTUAUBUC $.
+  $}
+
+  $( A trichotomy law for natural numbers.  (Contributed by Jim Kingdon,
+     28-Aug-2019.) $)
+  nntri1 $p |- ( ( A e. _om /\ B e. _om ) -> ( A C_ B <-> -. B e. A ) ) $=
+    ( com wcel wa wss wn ssnel wceq wo w3o wi nntri3or df-3or biimpi orcomd ord
+    syl word nnord ordelss sylan ex adantl eqimss a1i jaod syld impbid2 ) ACDZB
+    CDZEZABFZBADZGZABHULUOABDZABIZJZUMULUPUQUNKZUOURLABMUSUNURUSURUNUSURUNJUPUQ
+    UNNOPQRULUPUMUQUKUPUMLUJUKUPUMUKBSUPUMBTBAUAUBUCUDUQUMLULABUEUFUGUHUI $.
+
+  $( Equality of natural numbers is decidable.  Theorem 7.2.6 of [HoTT], p.
+     (varies).  For the specific case where ` B ` is zero, see ~ nndceq0 .
+     (Contributed by Jim Kingdon, 31-Aug-2019.) $)
+  nndceq $p |- ( ( A e. _om /\ B e. _om ) -> DECID A = B ) $=
+    ( com wcel wa wceq wn wo wdc w3o nntri3or elirr eleq2 mtbii olcd orc mtbiri
+    con2i 3jaoi syl df-dc sylibr ) ACDBCDEZABFZUDGZHZUDIUCABDZUDBADZJUFABKUGUFU
+    DUHUGUEUDUDUGUDAADUGALABAMNROUDUEPUHUEUDUDUHUDUHBBDBLABBMQROSTUDUAUB $.
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x $.
+
+    $( Ordering property of addition.  Proposition 8.4 of [TakeutiZaring]
+       p. 58, limited to natural numbers.  (Contributed by NM, 3-Feb-1996.)
+       (Revised by Mario Carneiro, 15-Nov-2014.) $)
+    nnaordi $p |- ( ( B e. _om /\ C e. _om ) ->
+                 ( A e. B -> ( C +o A ) e. ( C +o B ) ) ) $=
+      ( vx vy com wcel coa co wa wi wceq oveq2 eleq12d c0 csuc syl syl2anc con0
+      nnon cv imbi2d ax-ia2 elnn ancoms nna0 adantr 3eltr4d simprl ax-ia1 nnacl
+      nnsucelsuc adantl oasuc ad2antrl bitr4d biimpd finds2 vtoclga imp adantrr
+      wb ex nnacom 3eltr3d 3impb 3com12 3expia ) BFGZCFGZABGZCAHIZCBHIZGZVJVIVK
+      VNVJVIVKVNVJVIVKJZJZACHIZBCHIZVLVMVJVOVQVRGZVOADUAZHIZBVTHIZGZKVOVSKDCFVT
+      CLZWCVSVOWDWAVQWBVRVTCAHMVTCBHMNUBWCAOHIZBOHIZGAEUAZHIZBWGHIZGZAWGPZHIZBW
+      KHIZGZVODEVTOLWAWEWBWFVTOAHMVTOBHMNVTWGLWAWHWBWIVTWGAHMVTWGBHMNVTWKLWAWLW
+      BWMVTWKAHMVTWKBHMNVOABWEWFVIVKUCVOAFGZWEALVKVIWOABUDUEZAUFQVIWFBLVKBUFUGU
+      HWGFGZVOWJWNKWQVOJZWJWNWRWJWHPZWIPZGZWNWRWIFGZWJXAVBWRVIWQXBWQVIVKUIWQVOU
+      JBWGUKRWHWIULQWRWLWSWMWTWRASGZWGSGZWLWSLWRWOXCVOWOWQWPUMATQWQXDVOWGTUGZAW
+      GUNRWRBSGZXDWMWTLVIXFWQVKBTUOXEBWGUNRNUPUQVCURUSUTVPWOVJVQVLLVOWOVJWPUMVJ
+      VOUJACVDRVJVIVRVMLZVKVIVJXGBCVDUEVAVEVFVGVH $.
+  $}
+
+  $( Ordering property of addition.  Proposition 8.4 of [TakeutiZaring] p. 58,
+     limited to natural numbers, and its converse.  (Contributed by NM,
+     7-Mar-1996.)  (Revised by Mario Carneiro, 15-Nov-2014.) $)
+  nnaord $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                 ( A e. B <-> ( C +o A ) e. ( C +o B ) ) ) $=
+    ( com wcel w3a coa co wi nnaordi 3adant1 wo wn oveq2 a1i wa wb nnacl nntri2
+    wceq 3adant2 orim12d con3d df-3an ancom anandi 3bitri anim12i sylbi 3adant3
+    syl 3imtr4d impbid ) ADEZBDEZCDEZFZABEZCAGHZCBGHZEZUOUPURVAIUNABCJKUQUSUTTZ
+    UTUSEZLZMZABTZBAEZLZMZVAURUQVHVDUQVFVBVGVCVFVBIUQABCGNOUNUPVGVCIUOBACJUAUBU
+    CUQUSDEZUTDEZPZVAVEQUQUPUNPZUPUOPZPZVLUQUNUOPZUPPUPVPPVOUNUOUPUDVPUPUEUPUNU
+    OUFUGVMVJVNVKCARCBRUHUIUSUTSUKUNUOURVIQUPABSUJULUM $.
+
+  $( Ordering property of addition of natural numbers.  (Contributed by NM,
+     9-Nov-2002.) $)
+  nnaordr $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                 ( A e. B <-> ( A +o C ) e. ( B +o C ) ) ) $=
+    ( com wcel w3a coa nnaord wceq nnacom ancoms 3adant2 3adant1 eleq12d bitrd
+    co ) ADEZBDEZCDEZFZABECAGPZCBGPZEACGPZBCGPZEABCHTUAUCUBUDQSUAUCIZRSQUECAJKL
+    RSUBUDIZQSRUFCBJKMNO $.
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x $.
+
+    $( Weak ordering property of addition.  (Contributed by NM, 17-Sep-1995.)
+       (Revised by Mario Carneiro, 15-Nov-2014.) $)
+    nnaword $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                  ( A C_ B <-> ( C +o A ) C_ ( C +o B ) ) ) $=
+      ( vx vy com wcel wss co wb wa wi wceq oveq1 sseq12d bibi2d c0 csuc nnacom
+      coa cv imbi2d nna0r eqcomd adantr adantl nnacl 3adant3 3adant2 nnsucsssuc
+      w3a syl2anc nnasuc peano2 sylan2 syl 3eqtr3rd ancoms biimpd 3expib finds2
+      suceq bitrd vtoclga impcom 3impa ) AFGZBFGZCFGZABHZCATIZCBTIZHZJZVIVGVHKZ
+      VNVOVJDUAZATIZVPBTIZHZJZLVOVNLDCFVPCMZVTVNVOWAVSVMVJWAVQVKVRVLVPCATNVPCBT
+      NOPUBVTVJQATIZQBTIZHZJVJEUAZATIZWEBTIZHZJZVJWERZATIZWJBTIZHZJZVODEVPQMZVS
+      WDVJWOVQWBVRWCVPQATNVPQBTNOPVPWEMZVSWHVJWPVQWFVRWGVPWEATNVPWEBTNOPVPWJMZV
+      SWMVJWQVQWKVRWLVPWJATNVPWJBTNOPVOAWBBWCVGAWBMVHVGWBAAUCUDUEVHBWCMVGVHWCBB
+      UCUDUFOWEFGZVGVHWIWNLWRVGVHUKZWIWNWSWHWMVJWSWHWFRZWGRZHZWMWSWFFGZWGFGZWHX
+      BJWRVGXCVHWEAUGUHWRVHXDVGWEBUGUIWFWGUJULWSWTWKXAWLWRVGWTWKMZVHVGWRXEVGWRK
+      ZAWJTIZAWETIZRZWKWTAWEUMWRVGWJFGZXGWKMWEUNZAWJSUOXFXHWFMXIWTMAWESXHWFVBUP
+      UQURUHWRVHXAWLMZVGVHWRXLVHWRKZBWJTIZBWETIZRZWLXABWEUMWRVHXJXNWLMXKBWJSUOX
+      MXOWGMXPXAMBWESXOWGVBUPUQURUIOVCPUSUTVAVDVEVF $.
+  $}
+
+  $( Cancellation law for addition of natural numbers.  (Contributed by NM,
+     27-Oct-1995.)  (Revised by Mario Carneiro, 15-Nov-2014.) $)
+  nnacan $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+                   ( ( A +o B ) = ( A +o C ) <-> B = C ) ) $=
+    ( com wcel w3a coa co wss wa wb nnaword 3comr 3com13 anbi12d bicomd 3bitr4g
+    wceq eqss ) ADEZBDEZCDEZFZABGHZACGHZIZUEUDIZJZBCIZCBIZJZUDUERBCRUCUKUHUCUIU
+    FUJUGUAUBTUIUFKBCALMUBUATUJUGKCBALNOPUDUESBCSQ $.
+
+  $( Weak ordering property of addition.  (Contributed by NM, 9-Nov-2002.)
+     (Revised by Mario Carneiro, 15-Nov-2014.) $)
+  nnaword1 $p |- ( ( A e. _om /\ B e. _om ) -> A C_ ( A +o B ) ) $=
+    ( com wcel con0 coa co wss nnon oaword1 syl2an ) ACDAEDBEDAABFGHBCDAIBIABJK
+    $.
+
+  $( Weak ordering property of addition.  (Contributed by NM, 9-Nov-2002.) $)
+  nnaword2 $p |- ( ( A e. _om /\ B e. _om ) -> A C_ ( B +o A ) ) $=
+    ( com wcel wa coa co nnaword1 nnacom sseqtrd ) ACDBCDEAABFGBAFGABHABIJ $.
+
+  ${
+    $d A x y $.  $d B x y $.  $d C x y $.
+    $( Adding to both sides of an inequality in ` _om ` (Contributed by Scott
+       Fenton, 16-Apr-2012.)  (Revised by Mario Carneiro, 12-May-2012.) $)
+    nnawordi $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+             ( A C_ B -> ( A +o C ) C_ ( B +o C ) ) ) $=
+      ( com wcel w3a wss coa nnaword biimpd wceq nnacom 3adant2 3adant1 sseq12d
+      co sylibrd ) ADEZBDEZCDEZFZABGZCAHPZCBHPZGZACHPZBCHPZGUAUBUEABCIJUAUFUCUG
+      UDRTUFUCKSACLMSTUGUDKRBCLNOQ $.
+  $}
+
+  ${
+    $d x y A $.  $d x B $.  $d x y C $.
+    $( Ordering property of multiplication.  Half of Proposition 8.19 of
+       [TakeutiZaring] p. 63, limited to natural numbers.  (Contributed by NM,
+       18-Sep-1995.)  (Revised by Mario Carneiro, 15-Nov-2014.) $)
+    nnmordi $p |- ( ( ( B e. _om /\ C e. _om ) /\ (/) e. C ) ->
+                    ( A e. B -> ( C .o A ) e. ( C .o B ) ) ) $=
+      ( vx vy com wcel c0 comu co wi wa wceq eleq2 oveq2 eleq2d imbi12d coa imp
+      cv elnn expcom imbi2d csuc pm2.21i a1i wo elsuci nnmcl simpl jca nnaword1
+      noel sseld imim2d adantrl nna0 ad2antrr ancoms eqeltrrd eleq1d syl5ibrcom
+      nnaordi adantrr jaod sylan syl5 nnmsuc adantr sylibrd exp43 com12 adantld
+      wb imp3a finds2 vtoclga com23 exp4a mpdd com34 com24 imp31 ) BFGZCFGZHCGZ
+      ABGZCAIJZCBIJZGZKZWDWGWFWEWJWDWGWEWFWJWDWGAFGZWEWFWJKZKWGWDWLABUAUBWDWGWL
+      WEWMWDWGWLWELZWFWJWDWNWFLZWGWJWOADTZGZWHCWPIJZGZKZKWOWKKDBFWPBMZWTWKWOXAW
+      QWGWSWJWPBANXAWRWIWHWPBCIOPQUCWTAHGZWHCHIJZGZKZAETZGZWHCXFIJZGZKZAXFUDZGZ
+      WHCXKIJZGZKZWODEWPHMZWQXBWSXDWPHANXPWRXCWHWPHCIOPQWPXFMZWQXGWSXIWPXFANXQW
+      RXHWHWPXFCIOPQWPXKMZWQXLWSXNWPXKANXRWRXMWHWPXKCIOPQXEWOXBXDAUMUEUFXFFGZWN
+      WFXJXOKZXSWEWFXTKZWLWEXSYAWEXSWFXJXOWEXSLZWFXJLZLZXLWHXHCRJZGZXNXLXGAXFMZ
+      UGZYDYFAXFUHYBXHFGZWELZYCYHYFKYBYIWECXFUIWEXSUJUKYJYCLXGYFYGYJXJXGYFKZWFY
+      JXJYKYJXIYFXGYJXHYEWHXHCULUNUOSUPYJWFYGYFKXJYJWFLZYFYGXHYEGYLXHHRJZXHYEYI
+      YMXHMWEWFXHUQURYJWFYMYEGZWEYIWFYNKHCXHVCUSSUTYGWHXHYEAXFCIOVAVBVDVEVFVGYB
+      XNYFVNYCYBXMYEWHCXFVHPVIVJVKVLVMVOVPVQVRVSVSVTWAWBWC $.
+  $}
+
+  $( Ordering property of multiplication.  Proposition 8.19 of [TakeutiZaring]
+     p. 63, limited to natural numbers.  (Contributed by NM, 22-Jan-1996.)
+     (Revised by Mario Carneiro, 15-Nov-2014.) $)
+  nnmord $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+               ( ( A e. B /\ (/) e. C ) <-> ( C .o A ) e. ( C .o B ) ) ) $=
+    ( com wcel c0 wa comu co wi nnmordi ex com23 3adant1 wne wceq wb wo syl2anc
+    wn w3a imp3a ne0i nnm0r oveq1 eqeq1d syl5ibrcom necon3d syl5 adantr nn0eln0
+    adantl sylibrd oveq2 a1i 3adantl2 orim12d con3d simpl3 simpl1 simpl2 nntri2
+    nnmcl 3imtr4d mpdd jcad impbid ) ADEZBDEZCDEZUAZABEZFCEZGZCAHIZCBHIZEZVIVJV
+    NVQJVHVIVJGZVLVMVQVRVMVLVQVRVMVLVQJABCKLMUBNVKVQVLVMVKVQVMVLVIVJVQVMJVHVRVQ
+    CFOZVMVIVQVSJVJVQVPFOVIVSVPVOUCVICFVPFVIVPFPCFPZFBHIZFPBUDVTVPWAFCFBHUEUFUG
+    UHUIUJVJVMVSQVICUKULUMNZVKVMVQVLVKVMVQVLJVKVMGZVOVPPZVPVOEZRZTZABPZBAEZRZTZ
+    VQVLWCWJWFWCWHWDWIWEWHWDJWCABCHUNUOVHVJVMWIWEJVIBACKUPUQURWCVODEZVPDEZVQWGQ
+    WCVJVHWLVHVIVJVMUSZVHVIVJVMUTZCAVCSWCVJVIWMWNVHVIVJVMVAZCBVCSVOVPVBSWCVHVIV
+    LWKQWOWPABVBSVDLMVEWBVFVG $.
+
+  $( Weak ordering property of ordinal multiplication.  (Contributed by Mario
+     Carneiro, 17-Nov-2014.) $)
+  nnmword $p |- ( ( ( A e. _om /\ B e. _om /\ C e. _om ) /\ (/) e. C ) ->
+                  ( A C_ B <-> ( C .o A ) C_ ( C .o B ) ) ) $=
+    ( com wcel w3a c0 wa wn comu wss iba nnmord 3com12 sylan9bbr nntri1 syl2anc
+    co wb nnmcl notbid simpl1 simpl2 simpl3 3bitr4d ) ADEZBDEZCDEZFZGCEZHZBAEZI
+    ZCBJRZCAJRZEZIZABKZUOUNKZUKULUPUJULULUJHZUIUPUJULLUGUFUHUTUPSBACMNOUAUKUFUG
+    URUMSUFUGUHUJUBZUFUGUHUJUCZABPQUKUODEZUNDEZUSUQSUKUHUFVCUFUGUHUJUDZVACATQUK
+    UHUGVDVEVBCBTQUOUNPQUE $.
+
+  $( Cancellation law for multiplication of natural numbers.  (Contributed by
+     NM, 26-Oct-1995.)  (Revised by Mario Carneiro, 15-Nov-2014.) $)
+  nnmcan $p |- ( ( ( A e. _om /\ B e. _om /\ C e. _om ) /\ (/) e. A ) ->
+                   ( ( A .o B ) = ( A .o C ) <-> B = C ) ) $=
+    ( com wcel w3a c0 comu wss wceq 3anrot nnmword sylanb 3anrev anbi12d bicomd
+    wa co wb eqss 3bitr4g ) ADEZBDEZCDEZFZGAEZQZABHRZACHRZIZUIUHIZQZBCIZCBIZQZU
+    HUIJBCJUGUOULUGUMUJUNUKUEUCUDUBFUFUMUJSUBUCUDKBCALMUEUDUCUBFUFUNUKSUBUCUDNC
+    BALMOPUHUITBCTUA $.
 
   $( One is a natural number.  (Contributed by NM, 29-Oct-1995.) $)
   1onn $p |- 1o e. _om $=
@@ -55404,6 +55857,56 @@ $)
   4onn $p |- 4o e. _om $=
     ( c4o c3o csuc com df-4o wcel 3onn peano2 ax-mp eqeltri ) ABCZDEBDFKDFGBHIJ
     $.
+
+  $( Multiply an element of ` _om ` by ` 1o ` .  (Contributed by Mario
+     Carneiro, 17-Nov-2014.) $)
+  nnm1 $p |- ( A e. _om -> ( A .o 1o ) = A ) $=
+    ( com wcel c1o comu co c0 csuc df-1o oveq2i wceq peano1 nnmsuc mpan2 oveq1d
+    coa nnm0 nna0r 3eqtrd syl5eq ) ABCZADEFAGHZEFZADUBAEIJUAUCAGEFZAPFZGAPFAUAG
+    BCUCUEKLAGMNUAUDGAPAQOARST $.
+
+  $( Multiply an element of ` _om ` by ` 2o ` (Contributed by Scott Fenton,
+     18-Apr-2012.)  (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  nnm2 $p |- ( A e. _om -> ( A .o 2o ) = ( A +o A ) ) $=
+    ( com wcel c2o comu c1o csuc coa df-2o oveq2i wceq 1onn nnmsuc mpan2 oveq1d
+    co nnm1 eqtrd syl5eq ) ABCZADEPAFGZEPZAAHPZDUAAEIJTUBAFEPZAHPZUCTFBCUBUEKLA
+    FMNTUDAAHAQORS $.
+
+  $( Multiply an element of ` _om ` by ` 2o ` (Contributed by Scott Fenton,
+     16-Apr-2012.)  (Revised by Mario Carneiro, 17-Nov-2014.) $)
+  nn2m $p |- ( A e. _om -> ( 2o .o A ) = ( A +o A ) ) $=
+    ( com wcel c2o comu co coa wceq 2onn nnmcom mpan nnm2 eqtrd ) ABCZDAEFZADEF
+    ZAAGFDBCNOPHIDAJKALM $.
+
+  ${
+    $d A b x y $.  $d A x y z $.  $d B b x y $.
+    $( Equivalence for ordering.  Compare Exercise 23 of [Enderton] p. 88.
+       (Contributed by NM, 5-Dec-1995.)  (Revised by Mario Carneiro,
+       15-Nov-2014.) $)
+    nnaordex $p |- ( ( A e. _om /\ B e. _om ) -> ( A e. B <->
+                  E. x e. _om ( (/) e. x /\ ( A +o x ) = B ) ) ) $=
+      ( vz com wcel wa c0 cv co wceq wrex wi eleq2 eqeq2 anbi2d rexbidv imbi12d
+      coa c1o vb vy imbi2d csuc noel pm2.21i a1i elsuci ax-ia2 ad2antlr elelsuc
+      wo peano2 nnasuc suceq sylan9eq anim12d imp eqeq1d anbi12d rspcev syl2anc
+      oveq2 rexlimdva cbvrexv syl6ib syld 0lt1o con0 nnon oa1suc 1onn mpan jaod
+      ex syl5 exp31 finds2 vtoclga impcom wb peano1 nnaord mp3an1 ancoms adantr
+      syl nna0 eleq1d bitrd anbi1d biimpac syl6bi impbid ) BEFZCEFZGBCFZHAIZFZB
+      WRSJZCKZGZAELZWPWOWQXCMZWOBUAIZFZWSWTXEKZGZAELZMZMWOXDMUACEXECKZXJXDWOXKX
+      FWQXIXCXECBNXKXHXBAEXKXGXAWSXECWTOPQRUCXJBHFZWSWTHKZGZAELZMZBUBIZFZWSWTXQ
+      KZGZAELZMZBXQUDZFZWSWTYCKZGZAELZMZWOUAUBXEHKZXFXLXIXOXEHBNYIXHXNAEYIXGXMW
+      SXEHWTOPQRXEXQKZXFXRXIYAXEXQBNYJXHXTAEYJXGXSWSXEXQWTOPQRXEYCKZXFYDXIYGXEY
+      CBNYKXHYFAEYKXGYEWSXEYCWTOPQRXPWOXLXOBUEUFUGXQEFZWOYBYHYDXRBXQKZULYLWOGZY
+      BGZYGBXQUHYOXRYGYMYOXRYAYGYNYBUIWOYAYGMYLYBWOYAHDIZFZBYPSJZYCKZGZDELZYGWO
+      XTUUAAEWOWREFZGZXTUUAUUCXTGWRUDZEFZHUUDFZBUUDSJZYCKZGZUUAUUBUUEWOXTWRUMUJ
+      UUCXTUUIUUCWSUUFXSUUHWSUUFMUUCHWRUKUGUUCXSUUHUUCXSUUGWTUDYCBWRUNWTXQUOUPV
+      OUQURYTUUIDUUDEYPUUDKZYQUUFYSUUHYPUUDHNUUJYRUUGYCYPUUDBSVCUSUTVAVBVOVDYTY
+      FDAEYPWRKZYQWSYSYEYPWRHNUUKYRWTYCYPWRBSVCUSUTVEVFUJVGWOYMYGMYLYBWOYMYGWOY
+      MGZHTFZBTSJZYCKZYGUUMUULVHUGWOYMUUNBUDZYCWOBVIFUUNUUPKBVJBVKWGBXQUOUPTEFU
+      UMUUOGZYGVLYFUUQATEWRTKZWSUUMYEUUOWRTHNUURWTUUNYCWRTBSVCUSUTVAVMVBVOUJVNV
+      PVQVRVSVTWOXCWQMWPWOXBWQAEUUCXBBWTFZXAGWQUUCWSUUSXAUUCWSBHSJZWTFZUUSUUBWO
+      WSUVAWAZHEFUUBWOUVBWBHWRBWCWDWEUUCUUTBWTWOUUTBKUUBBWHWFWIWJWKXAUUSWQWTCBN
+      WLWMVDWFWN $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -55480,10 +55983,10 @@ $)
     $( An inhabited equivalence class implies the representative is a set.
        (Contributed by Mario Carneiro, 9-Jul-2014.) $)
     ecexr $p |- ( A e. [ B ] R -> B e. _V ) $=
-    ( vx cec wcel wceq wex cvv wbr csn wrex cima elimag ibi df-ec eleq2s df-rex
-    cv wa ax-ia1 elsn sylib eximi sylbi syl isset sylibr ) ABCEZFZDSZBGZDHZBIFU
-    JUKACJZDBKZLZUMUPACUOMZUIAUQFUPDACUOUQNOBCPQUPUKUOFZUNTZDHUMUNDUORUSULDUSUR
-    ULURUNUADBUBUCUDUEUFDBUGUH $.
+      ( vx cec wcel cv wceq wex cvv wbr csn wrex elimag ibi df-ec eleq2s df-rex
+      cima wa ax-ia1 elsn sylib eximi sylbi syl isset sylibr ) ABCEZFZDGZBHZDIZ
+      BJFUJUKACKZDBLZMZUMUPACUOSZUIAUQFUPDACUOUQNOBCPQUPUKUOFZUNTZDIUMUNDUORUSU
+      LDUSURULURUNUADBUBUCUDUEUFDBUGUH $.
   $}
 
   ${
@@ -57028,19 +57531,235 @@ $)
 
   $( Define 'less than' on positive integers.  This is a "temporary" set used
      in the construction of complex numbers, and is intended to be used only by
-     the construction.
+     the construction.  (Contributed by NM, 6-Feb-1996.)
+     (New usage is discouraged.) $)
+  df-lti $a |- <N = ( _E i^i ( N. X. N. ) ) $.
 
-     If we were assuming the law of the excluded middle, ` e. ` would serve as
-     a suitable definition of less-than.  If we wanted to make that work, we'd
-     need to prove statements such as the converse of ~ onsucelsucr restricted
-     to natural numbers (proving the converse for all ordinals is not possible
-     as seen at ~ onsucelsucexmid ).  Instead, we choose a definition which
-     just relies on Peano axioms, not on the details of the construction of
-     positive integers.
+  $( Membership in the class of positive integers.  (Contributed by NM,
+     15-Aug-1995.)  (New usage is discouraged.) $)
+  elni $p |- ( A e. N. <-> ( A e. _om /\ A =/= (/) ) ) $=
+    ( cnpi wcel com c0 csn cdif wne wa df-ni eleq2i eldifsn bitri ) ABCADEFGZCA
+    DCAEHIBNAJKADELM $.
 
-     (Contributed by Jim Kingdon, 20-Aug-2019.)  (New usage is discouraged.) $)
-  df-ilti $a |- <N = { <. n , m >. | ( n e. N. /\ m e. N. /\
-      E. k e. N. ( n +N k ) = m ) } $.
+  $( A positive integer is a natural number.  (Contributed by NM,
+     15-Aug-1995.)  (New usage is discouraged.) $)
+  pinn $p |- ( A e. N. -> A e. _om ) $=
+    ( cnpi com c0 csn cdif df-ni difss eqsstri sseli ) BCABCDEZFCGCKHIJ $.
+
+  $( A positive integer is an ordinal number.  (Contributed by NM,
+     23-Mar-1996.)  (New usage is discouraged.) $)
+  pion $p |- ( A e. N. -> A e. On ) $=
+    ( cnpi wcel com con0 pinn nnon syl ) ABCADCAECAFAGH $.
+
+  $( A positive integer is ordinal.  (Contributed by NM, 29-Jan-1996.)
+     (New usage is discouraged.) $)
+  piord $p |- ( A e. N. -> Ord A ) $=
+    ( cnpi wcel com word pinn nnord syl ) ABCADCAEAFAGH $.
+
+  $( The class of positive integers is a set.  (Contributed by NM,
+     15-Aug-1995.)  (New usage is discouraged.) $)
+  niex $p |- N. e. _V $=
+    ( cnpi com omex c0 csn cdif df-ni difss eqsstri ssexi ) ABCABDEZFBGBKHIJ $.
+
+  $( The empty set is not a positive integer.  (Contributed by NM,
+     26-Aug-1995.)  (New usage is discouraged.) $)
+  0npi $p |- -. (/) e. N. $=
+    ( c0 wceq cnpi wcel wn eqid com wne elni simprbi necon2bi ax-mp ) AABACDZEA
+    FMAAMAGDAAHAIJKL $.
+
+  ${
+    $d x y A $.
+    $( Membership in the class of positive integers.  (Contributed by NM,
+       27-Nov-1995.)  (New usage is discouraged.) $)
+    elni2 $p |- ( A e. N. <-> ( A e. _om /\ (/) e. A ) ) $=
+      ( cnpi wcel com c0 wa pinn wceq wn 0npi eleq1 mtbiri con2i wo syl ord mpd
+      0elnn sylib wi jca wdc nndceq0 df-dc anim1i ancom andi noel eleq2 pm2.21d
+      bitr3i impcom a1i df-ne elni simplbi2 syl5bir adantld jaod adantr impbii
+      wne ) ABCZADCZEACZFZVCVDVEAGZVCAEHZIZVEVHVCVHVCEBCJAEBKLMVCVHVEVCVDVHVENV
+      GAROPQUAVFVEVHFZVEVIFZNZVCVFVHVINZVEFZVLVDVMVEVDVHUBVMAUCVHUDSUEVNVEVMFVL
+      VEVMUFVEVHVIUGUKSVDVLVCTVEVDVJVCVKVJVCTVDVHVEVCVHVEVCVHVEEECEUHAEEUILUJUL
+      UMVDVIVCVEVIAEVBZVDVCAEUNVCVDVOAUOUPUQURUSUTQVA $.
+  $}
+
+  $( Ordinal 'one' is a positive integer.  (Contributed by NM, 29-Oct-1995.)
+     (New usage is discouraged.) $)
+  1pi $p |- 1o e. N. $=
+    ( c1o cnpi wcel com c0 wne 1onn 1n0 elni mpbir2an ) ABCADCAEFGHAIJ $.
+
+  $( Positive integer addition in terms of ordinal addition.  (Contributed by
+     NM, 27-Aug-1995.)  (New usage is discouraged.) $)
+  addpiord $p |- ( ( A e. N. /\ B e. N. ) -> ( A +N B ) = ( A +o B ) ) $=
+    ( cnpi wcel wa cop cxp cpli co coa wceq opelxpi cres cfv fvres df-ov df-pli
+    fveq1i eqtri 3eqtr4g syl ) ACDBCDEABFZCCGZDZABHIZABJIZKABCCLUDUBJUCMZNZUBJN
+    UEUFUBUCJOUEUBHNUHABHPUBHUGQRSABJPTUA $.
+
+  $( Positive integer multiplication in terms of ordinal multiplication.
+     (Contributed by NM, 27-Aug-1995.)  (New usage is discouraged.) $)
+  mulpiord $p |- ( ( A e. N. /\ B e. N. ) -> ( A .N B ) = ( A .o B ) ) $=
+    ( cnpi wcel wa cop cxp cmi co comu wceq opelxpi cres cfv fvres df-ov fveq1i
+    df-mi eqtri 3eqtr4g syl ) ACDBCDEABFZCCGZDZABHIZABJIZKABCCLUDUBJUCMZNZUBJNU
+    EUFUBUCJOUEUBHNUHABHPUBHUGRQSABJPTUA $.
+
+  $( 1 is an identity element for multiplication on positive integers.
+     (Contributed by NM, 4-Mar-1996.)  (Revised by Mario Carneiro,
+     17-Nov-2014.)  (New usage is discouraged.) $)
+  mulidpi $p |- ( A e. N. -> ( A .N 1o ) = A ) $=
+    ( cnpi wcel c1o cmi co comu wceq 1pi mulpiord mpan2 com pinn nnm1 syl eqtrd
+    ) ABCZADEFZADGFZAQDBCRSHIADJKQALCSAHAMANOP $.
+
+  $( Positive integer 'less than' in terms of ordinal membership.  (Contributed
+     by NM, 6-Feb-1996.)  (Revised by Mario Carneiro, 28-Apr-2015.)
+     (New usage is discouraged.) $)
+  ltpiord $p |- ( ( A e. N. /\ B e. N. ) -> ( A <N B <-> A e. B ) ) $=
+    ( clti wbr cep cnpi cxp cin wcel wa df-lti breqi brinxp epelg adantl bitr3d
+    wb syl5bb ) ABCDABEFFGHZDZAFIZBFIZJZABIZABCSKLUCABEDZTUDABFFEMUBUEUDQUAABFN
+    OPR $.
+
+  ${
+    $d x y z $.
+    $( Positive integer 'less than' is a strict ordering.  (Contributed by NM,
+       8-Feb-1996.)  (Proof shortened by Mario Carneiro, 10-Jul-2014.)
+       (New usage is discouraged.) $)
+    ltsopi $p |- <N Or N. $=
+      ( vx vy vz cnpi clti wor wtru cv wcel wbr wn wel wb ltpiord adantl wa w3o
+      wi com pinn elirrv anidms mtbiri w3a con0 pion ontr1 syl 3ad2ant3 3adant3
+      3adant1 anbi12d 3adant2 3imtr4d ispod weq nntri3or syl2an biidd 3orbi123d
+      ancoms mpbird issod trud ) DEFGABDEGABCDEAHZDIZVEVEEJZKGVFVGAALZAUAVFVGVH
+      MVEVENUBUCOVFBHZDIZCHZDIZUDZVEVIEJZVIVKEJZPZVEVKEJZRGVMABLZBCLZPZACLZVPVQ
+      VLVFVTWARZVJVLVKUEIWBVKUFVEVIVKUGUHUIVMVNVRVOVSVFVJVNVRMVLVEVINZUJVJVLVOV
+      SMVFVIVKNUKULVFVLVQWAMVJVEVKNUMUNOUOVFVJPZVNABUPZVIVEEJZQZGWDWGVRWEBALZQZ
+      VFVESIVISIWIVJVETVITVEVIUQURWDVNVRWEWEWFWHWCWDWEUSVJVFWFWHMVIVENVAUTVBOVC
+      VD $.
+  $}
+
+  $( Positive integer 'less than' is a relation on positive integers.
+     (Contributed by NM, 8-Feb-1996.)  (New usage is discouraged.) $)
+  ltrelpi $p |- <N C_ ( N. X. N. ) $=
+    ( clti cep cnpi cxp cin df-lti inss2 eqsstri ) ABCCDZEIFBIGH $.
+
+  $( Domain of addition on positive integers.  (Contributed by NM,
+     26-Aug-1995.)  (New usage is discouraged.) $)
+  dmaddpi $p |- dom +N = ( N. X. N. ) $=
+    ( coa cnpi cxp cres cdm con0 cin cpli dmres wfn wceq fnoa fndm ax-mp ineq2i
+    eqtri df-pli dmeqi wss com wa c0 csn df-ni difss eqsstri omsson sstri anidm
+    cdif mpbir xpss12 dfss mpbi 3eqtr4i ) ABBCZDZEZUPFFCZGZHEUPURUPAEZGUTAUPIVA
+    USUPAUSJVAUSKLUSAMNOPHUQQRUPUSSZUPUTKBFSZVCUAZVBVDVCBTFBTUBUCZUJTUDTVEUEUFU
+    GUHVCUIUKBFBFULNUPUSUMUNUO $.
+
+  $( Domain of multiplication on positive integers.  (Contributed by NM,
+     26-Aug-1995.)  (New usage is discouraged.) $)
+  dmmulpi $p |- dom .N = ( N. X. N. ) $=
+    ( comu cnpi cxp cres cdm con0 cin cmi dmres wfn wceq fnom fndm ax-mp ineq2i
+    eqtri df-mi dmeqi wss com wa c0 cdif df-ni difss eqsstri omsson sstri anidm
+    csn mpbir xpss12 dfss mpbi 3eqtr4i ) ABBCZDZEZUPFFCZGZHEUPURUPAEZGUTAUPIVAU
+    SUPAUSJVAUSKLUSAMNOPHUQQRUPUSSZUPUTKBFSZVCUAZVBVDVCBTFBTUBUJZUCTUDTVEUEUFUG
+    UHVCUIUKBFBFULNUPUSUMUNUO $.
+
+  $( Closure of addition of positive integers.  (Contributed by NM,
+     18-Oct-1995.)  (New usage is discouraged.) $)
+  addclpi $p |- ( ( A e. N. /\ B e. N. ) -> ( A +N B ) e. N. ) $=
+    ( cnpi wcel wa cpli co coa addpiord com pinn wne nnacl sylan2 elni2 nnaordi
+    c0 wi ne0i syl6 expcom imp32 sylan2b elni sylanbrc sylan eqeltrd ) ACDZBCDZ
+    EABFGABHGZCABIUHAJDZUIUJCDZAKUKUIEUJJDZUJQLZULUIUKBJDZUMBKABMNUIUKUOQBDZEUN
+    BOUKUOUPUNUOUKUPUNRUOUKEUPAQHGZUJDUNQBAPUJUQSTUAUBUCUJUDUEUFUG $.
+
+  $( Closure of multiplication of positive integers.  (Contributed by NM,
+     18-Oct-1995.)  (New usage is discouraged.) $)
+  mulclpi $p |- ( ( A e. N. /\ B e. N. ) -> ( A .N B ) e. N. ) $=
+    ( cnpi wcel wa cmi co comu mulpiord com wne pinn nnmcl syl2an elni2 simprbi
+    c0 adantl wi adantr nnmordi syl21anc mpd ne0i syl elni sylanbrc eqeltrd ) A
+    CDZBCDZEZABFGABHGZCABIUKULJDZULQKZULCDUIAJDZBJDZUMUJALZBLZABMNUKAQHGZULDZUN
+    UKQBDZUTUJVAUIUJUPVABOPRUKUPUOQADZVAUTSUJUPUIURRUIUOUJUQTUIVBUJUIUOVBAOPTQB
+    AUAUBUCULUSUDUEULUFUGUH $.
+
+  $( Addition of positive integers is commutative.  (Contributed by Jim
+     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+  addcompig $p |- ( ( A e. N. /\ B e. N. ) -> ( A +N B ) = ( B +N A ) ) $=
+    ( cnpi wcel wa coa cpli com wceq pinn nnacom syl2an addpiord ancoms 3eqtr4d
+    co ) ACDZBCDZEABFPZBAFPZABGPBAGPZQAHDBHDSTIRAJBJABKLABMRQUATIBAMNO $.
+
+  $( Addition of positive integers is associative.  (Contributed by Jim
+     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+  addasspig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
+      ( ( A +N B ) +N C ) = ( A +N ( B +N C ) ) ) $=
+    ( cnpi wcel w3a coa co cpli com wceq pinn nnaass syl3an wa addclpi addpiord
+    sylan oveq1d eqtrd adantr 3impa sylan2 oveq2d adantl 3impb 3eqtr4d ) ADEZBD
+    EZCDEZFABGHZCGHZABCGHZGHZABIHZCIHZABCIHZIHZUHAJEUIBJEUJCJEULUNKALBLCLABCMNU
+    HUIUJUPULKUHUIOZUJOUPUOCGHZULUSUODEUJUPUTKABPUOCQRUSUTULKUJUSUOUKCGABQSUATU
+    BUHUIUJURUNKUHUIUJOZOURAUQGHZUNVAUHUQDEURVBKBCPAUQQUCVAVBUNKUHVAUQUMAGBCQUD
+    UETUFUG $.
+
+  $( Multiplication of positive integers is commutative.  (Contributed by Jim
+     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+  mulcompig $p |- ( ( A e. N. /\ B e. N. ) -> ( A .N B ) = ( B .N A ) ) $=
+    ( cnpi wcel wa comu cmi com wceq pinn nnmcom syl2an mulpiord ancoms 3eqtr4d
+    co ) ACDZBCDZEABFPZBAFPZABGPBAGPZQAHDBHDSTIRAJBJABKLABMRQUATIBAMNO $.
+
+  $( Multiplication of positive integers is associative.  (Contributed by Jim
+     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+  mulasspig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. )
+      -> ( ( A .N B ) .N C ) = ( A .N ( B .N C ) ) ) $=
+    ( cnpi wcel w3a comu co cmi com wceq pinn nnmass syl3an wa mulclpi mulpiord
+    sylan oveq1d eqtrd adantr 3impa sylan2 oveq2d adantl 3impb 3eqtr4d ) ADEZBD
+    EZCDEZFABGHZCGHZABCGHZGHZABIHZCIHZABCIHZIHZUHAJEUIBJEUJCJEULUNKALBLCLABCMNU
+    HUIUJUPULKUHUIOZUJOUPUOCGHZULUSUODEUJUPUTKABPUOCQRUSUTULKUJUSUOUKCGABQSUATU
+    BUHUIUJURUNKUHUIUJOZOURAUQGHZUNVAUHUQDEURVBKBCPAUQQUCVAVBUNKUHVAUQUMAGBCQUD
+    UETUFUG $.
+
+  $( Multiplication of positive integers is distributive.  (Contributed by Jim
+     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+  distrpig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. )
+      -> ( A .N ( B +N C ) ) = ( ( A .N B ) +N ( A .N C ) ) ) $=
+    ( cnpi wcel w3a coa co comu cpli cmi wceq pinn nndi mulpiord addpiord eqtrd
+    com wa mulclpi syl3an addclpi sylan2 oveq2d adantl syl2an oveqan12d 3eqtr4d
+    3impb 3impdi ) ADEZBDEZCDEZFABCGHZIHZABIHZACIHZGHZABCJHZKHZABKHZACKHZJHZUKA
+    REULBREUMCREUOURLAMBMCMABCNUAUKULUMUTUOLUKULUMSZSUTAUSIHZUOVDUKUSDEUTVELBCU
+    BAUSOUCVDVEUOLUKVDUSUNAIBCPUDUEQUIUKULUMVCURLUKULSZUKUMSZSVCVAVBGHZURVFVADE
+    VBDEVCVHLVGABTACTVAVBPUFVFVGVAUPVBUQGABOACOUGQUJUH $.
+
+  $( Addition cancellation law for positive integers.  (Contributed by Jim
+     Kingdon, 27-Aug-2019.)  (New usage is discouraged.) $)
+  addcanpig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
+                 ( ( A +N B ) = ( A +N C ) <-> B = C ) ) $=
+    ( cnpi wcel w3a cpli co wceq coa addpiord 3adant3 3adant2 eqeq12d wi nnacan
+    com pinn biimpd syl3an sylbid oveq2 impbid1 ) ADEZBDEZCDEZFZABGHZACGHZIZBCI
+    ZUGUJABJHZACJHZIZUKUGUHULUIUMUDUEUHULIUFABKLUDUFUIUMIUEACKMNUDAQEZUEBQEZUFC
+    QEZUNUKOARBRCRUOUPUQFUNUKABCPSTUABCAGUBUC $.
+
+  $( Multiplication cancellation law for positive integers.  (Contributed by
+     Jim Kingdon, 29-Aug-2019.)  (New usage is discouraged.) $)
+  mulcanpig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
+                 ( ( A .N B ) = ( A .N C ) <-> B = C ) ) $=
+    ( cnpi wcel w3a cmi co wceq wi wa comu mulpiord adantr adantlr eqeq12d pinn
+    com c0 elni2 simprbi nnmcan biimpd sylan2 ex syl3an 3exp com4r imp31 sylbid
+    pm2.43i 3impa oveq2 impbid1 ) ADEZBDEZCDEZFABGHZACGHZIZBCIZUOUPUQUTVAJUOUPK
+    ZUQKZUTABLHZACLHZIZVAVCURVDUSVEVBURVDIUQABMNUOUQUSVEIUPACMOPUOUPUQVFVAJZUOU
+    PUQVGJJUOUPUQUOVGUOUPUQUOVGJZUOAREZUPBREZUQCREZVHAQBQCQVIVJVKFZUOVGUOVLSAEZ
+    VGUOVIVMATUAVLVMKVFVAABCUBUCUDUEUFUGUHUKUIUJULBCAGUMUN $.
+
+  $( There is no identity element for addition on positive integers.
+     (Contributed by NM, 28-Nov-1995.)  (New usage is discouraged.) $)
+  addnidpig $p |- ( ( A e. N. /\ B e. N. ) -> -. ( A +N B ) = A ) $=
+    ( cnpi wcel wa cpli co wceq coa com wn pinn c0 elni2 wi nnaordi nna0 eleq1d
+    word nnord ordirr eleq2 notbid syl5ibrcom sylbid adantl syld expcom sylan2b
+    syl con2d imp32 sylan addpiord eqeq1d mtbird ) ACDZBCDZEZABFGZAHABIGZAHZUQA
+    JDZURVBKZALURVCBJDZMBDZEVDBNVCVEVFVDVEVCVFVDOVEVCEVFAMIGZVADZVDMBAPVCVHVDOV
+    EVCVHAVADZVDVCVGAVAAQRVCVBVIVCVIKVBAADZKZVCASVKATAUAUJVBVIVJVAAAUBUCUDUKUEU
+    FUGUHULUIUMUSUTVAAABUNUOUP $.
+
+  ${
+    $d x A $.  $d x B $.
+    $( Ordering on positive integers in terms of existence of sum.
+       (Contributed by NM, 15-Mar-1996.)  (Revised by Mario Carneiro,
+       14-Jun-2013.)  (New usage is discouraged.) $)
+    ltexpi $p |- ( ( A e. N. /\ B e. N. ) ->
+               ( A <N B <-> E. x e. N. ( A +N x ) = B ) ) $=
+      ( cnpi wcel wa c0 cv coa wceq com wrex clti wbr cpli pinn nnaordex syl2an
+      co wb ltpiord addpiord eqeq1d pm5.32da elni2 anbi1i anass syl6bb rexbidv2
+      bitri adantr 3bitr4d ) BDEZCDEZFBCEZGAHZEZBUPISZCJZFZAKLZBCMNBUPOSZCJZADL
+      ZUMBKECKEUOVATUNBPCPABCQRBCUAUMVDVATUNUMVCUTADKUMUPDEZVCFVEUSFZUPKEZUTFZU
+      MVEVCUSUMVEFVBURCBUPUBUCUDVFVGUQFZUSFVHVEVIUSUPUEUFVGUQUSUGUJUHUIUKUL $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#

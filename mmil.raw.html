@@ -794,7 +794,7 @@ variables</A></LI>
 <A HREF="peano4.html">4</A>
 <A HREF="peano5.html">5</A></LI>
 
-<LI><A HREF="nndc.html">A natural number is either zero or nonzero</A> (a special case of the law of the excluded middle which we can prove).</LI>
+<LI><A HREF="nndceq.html">Two natural numbers are either equal or not equal</A> (a special case of the law of the excluded middle which we can prove).</LI>
 
 <LI><A HREF="nn0suc.html">A natural number is either zero or a successor</A></LI>
 
@@ -1081,7 +1081,21 @@ the biconditional from ordsseleq</TD>
 </TR>
 
 <TR>
-<TD>ordtri3or , ordtri2 , ordtri3 , ordtri4 ,
+<TD>ordtri3or</TD>
+<TD>~ nntri3or </TD>
+<TD>Ordinal trichotomy implies the law of the excluded middle as shown
+in ~ ordtriexmid .
+</TR>
+
+<TR>
+<TD>ordtri2</TD>
+<TD>~ nntri2 </TD>
+<TD>ordtri2 for all ordinals presumably implies excluded middle although
+we don't have a specific proof analogous to ~ ordtriexmid .</TD>
+</TR>
+
+<TR>
+<TD>ordtri3 , ordtri4 ,
 ordtri2or2 , ordtri2or3 , dford2
 </TD>
 <TD><I>none</I></TD>
@@ -1093,9 +1107,10 @@ excluded middle.</TD>
 
 <TR>
 <TD>ordtri1 , ontri1 , onssneli , onssnel2i</TD>
-<TD>~ ssnel </TD>
+<TD>~ ssnel , ~ nntri1 </TD>
 <TD>~ ssnel is a trichotomy-like theorem which does hold, although
-it is an implication whereas ordtri1 is a biconditional</TD>
+it is an implication whereas ordtri1 is a biconditional. ~ nntri1
+is biconditional, but just for natural numbers.</TD>
 </TR>
 
 <TR>
@@ -1105,8 +1120,8 @@ it is an implication whereas ordtri1 is a biconditional</TD>
 </TR>
 
 <TR>
-<TD>ord0eln0</TD>
-<TD>~ ne0i </TD>
+<TD>ord0eln0 , on0eln0</TD>
+<TD>~ ne0i , ~ nn0eln0 </TD>
 </TR>
 
 <TR>
@@ -1345,14 +1360,14 @@ middle as seen at ~ ordpwsucexmid .</TD>
 
 <TR>
 <TD>ordsucelsuc</TD>
-<TD>~ onsucelsucr </TD>
-<TD>The converse implies excluded middle, as shown at ~ onsucelsucexmid .</TD>
+<TD>~ onsucelsucr , ~ nnsucelsuc </TD>
+<TD>The converse of ~ onsucelsucr implies excluded middle, as shown at ~ onsucelsucexmid .</TD>
 </TR>
 
 <TR>
 <TD>ordsucsssuc</TD>
-<TD>~ onsucsssucr </TD>
-<TD>The converse implies excluded middle, as shown at ~ onsucsssucexmid .</TD>
+<TD>~ onsucsssucr , ~ nnsucsssuc </TD>
+<TD>The converse of ~ onsucsssucr implies excluded middle, as shown at ~ onsucsssucexmid .</TD>
 </TR>
 
 <TR>
@@ -1575,9 +1590,20 @@ characteristic function and initial value.</TD>
 </TR>
 
 <TR>
+<TD>om0x</TD>
+<TD>~ om0 </TD>
+</TR>
+
+<TR>
 <TD>oaword</TD>
 <TD>~ oawordi </TD>
 <TD>The other direction presumably could be proven but isn't yet.</TD>
+</TR>
+
+<TR>
+<TD>nnawordex</TD>
+<TD>~ nnaordex </TD>
+<TD>nnawordex is only used a few places in set.mm</TD>
 </TR>
 
 <TR>
@@ -1630,6 +1656,46 @@ important in constructing the reals.</TD>
 <TD>eceqoveq</TD>
 <TD><I>none</I></TD>
 <TD>Unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>addcompi</TD>
+<TD>~ addcompig </TD>
+</TR>
+
+<TR>
+<TD>addasspi</TD>
+<TD>~ addasspig </TD>
+</TR>
+
+<TR>
+<TD>mulcompi</TD>
+<TD>~ mulcompig </TD>
+</TR>
+
+<TR>
+<TD>mulasspi</TD>
+<TD>~ mulasspig </TD>
+</TR>
+
+<TR>
+<TD>distrpi</TD>
+<TD>~ distrpig </TD>
+</TR>
+
+<TR>
+<TD>addcanpi</TD>
+<TD>~ addcanpig </TD>
+</TR>
+
+<TR>
+<TD>mulcanpi</TD>
+<TD>~ mulcanpig </TD>
+</TR>
+
+<TR>
+<TD>addnidpi</TD>
+<TD>~ addnidpig </TD>
 </TR>
 
 </TABLE>
