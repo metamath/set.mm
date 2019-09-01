@@ -57802,6 +57802,102 @@ $)
     ZUMUONZADCZIUPAQUQURUPUMUOURUPOZUMUOAFCZUSUMFBCUOUTPRAFSTUTADUAZC
     UMUSFVAAUBUCADBUDUEUHUFUGUIUJUKUL $.
 
+  ${
+    $d x y z w v u f $.
+    $( Define pre-addition on positive fractions.  This is a "temporary" set
+       used in the construction of complex numbers ~ df-c , and is intended to
+       be used only by the construction.  This "pre-addition" operation works
+       directly with ordered pairs of integers.  The actual positive fraction
+       addition ` +Q ` ( ~ df-plq ) works with the equivalence classes of these
+       ordered pairs determined by the equivalence relation ` ~Q `
+       ( ~ df-enq ).  (Analogous remarks apply to the other "pre-" operations
+       in the complex number construction that follows.)  From Proposition
+       9-2.3 of [Gleason] p. 117.  (Contributed by NM, 28-Aug-1995.)
+       (New usage is discouraged.) $)
+    df-plpq $a |- +pQ = ( x e. ( N. X. N. ) , y e. ( N. X. N. ) |->
+      <. ( ( ( 1st ` x ) .N ( 2nd ` y ) ) +N
+           ( ( 1st ` y ) .N ( 2nd ` x ) ) ) ,
+           ( ( 2nd ` x ) .N ( 2nd ` y ) ) >. ) $.
+
+    $( Define pre-multiplication on positive fractions.  This is a "temporary"
+       set used in the construction of complex numbers ~ df-c , and is intended
+       to be used only by the construction.  From Proposition 9-2.4 of
+       [Gleason] p. 119.  (Contributed by NM, 28-Aug-1995.)
+       (New usage is discouraged.) $)
+    df-mpq $a |- .pQ = ( x e. ( N. X. N. ) , y e. ( N. X. N. ) |->
+        <. ( ( 1st ` x ) .N ( 1st ` y ) ) ,
+           ( ( 2nd ` x ) .N ( 2nd ` y ) ) >. ) $.
+
+    $( Define pre-ordering relation on positive fractions.  This is a
+       "temporary" set used in the construction of complex numbers ~ df-c , and
+       is intended to be used only by the construction.  Similar to Definition
+       5 of [Suppes] p. 162.  (Contributed by NM, 28-Aug-1995.)
+       (New usage is discouraged.) $)
+    df-ltpq $a |- <pQ = { <. x , y >. |
+      ( ( x e. ( N. X. N. ) /\ y e. ( N. X. N. ) ) /\
+        ( ( 1st ` x ) .N ( 2nd ` y ) ) <N ( ( 1st ` y ) .N ( 2nd ` x ) ) ) } $.
+
+    $( Define equivalence relation for positive fractions.  This is a
+       "temporary" set used in the construction of complex numbers ~ df-c , and
+       is intended to be used only by the construction.  From Proposition 9-2.1
+       of [Gleason] p. 117.  (Contributed by NM, 27-Aug-1995.)
+       (New usage is discouraged.) $)
+    df-enq $a |- ~Q = { <. x , y >. | ( ( x e. ( N. X. N. ) /\
+                   y e. ( N. X. N. ) ) /\ E. z E. w E. v E. u
+                   ( ( x = <. z , w >. /\ y = <. v , u >. ) /\
+                   ( z .N u ) = ( w .N v ) ) ) } $.
+
+    $( Define class of positive fractions.  This is a "temporary" set used in
+       the construction of complex numbers ~ df-c , and is intended to be used
+       only by the construction.  From Proposition 9-2.2 of [Gleason] p. 117.
+       (Contributed by NM, 16-Aug-1995.)  (New usage is discouraged.) $)
+    df-nq $a |- Q. = { x e. ( N. X. N. ) | A. y e. ( N. X. N. )
+      ( x ~Q y -> -. ( 2nd ` y ) <N ( 2nd ` x ) ) } $.
+
+    $( Define a convenience function that "reduces" a fraction to lowest
+       terms.  Note that in this form, it is not obviously a function; we prove
+       this in ~ nqerf .  (Contributed by NM, 27-Aug-1995.)
+       (New usage is discouraged.) $)
+    df-erq $a |- /Q = ( ~Q i^i ( ( N. X. N. ) X. Q. ) ) $.
+
+    $( Define addition on positive fractions.  This is a "temporary" set used
+       in the construction of complex numbers ~ df-c , and is intended to be
+       used only by the construction.  From Proposition 9-2.3 of [Gleason]
+       p. 117.  (Contributed by NM, 24-Aug-1995.)
+       (New usage is discouraged.) $)
+    df-plq $a |- +Q = ( ( /Q o. +pQ ) |` ( Q. X. Q. ) ) $.
+
+    $( Define multiplication on positive fractions.  This is a "temporary" set
+       used in the construction of complex numbers ~ df-c , and is intended to
+       be used only by the construction.  From Proposition 9-2.4 of [Gleason]
+       p. 119.  (Contributed by NM, 24-Aug-1995.)
+       (New usage is discouraged.) $)
+    df-mq $a |- .Q = ( ( /Q o. .pQ ) |` ( Q. X. Q. ) ) $.
+
+    $( Define positive fraction constant 1.  This is a "temporary" set used in
+       the construction of complex numbers ~ df-c , and is intended to be used
+       only by the construction.  From Proposition 9-2.2 of [Gleason] p. 117.
+       (Contributed by NM, 29-Oct-1995.)  (New usage is discouraged.) $)
+    df-1nq $a |- 1Q = <. 1o , 1o >. $.
+
+    $( Define reciprocal on positive fractions.  It means the same thing as one
+       divided by the argument (although we don't define full division since we
+       will never need it).  This is a "temporary" set used in the construction
+       of complex numbers ~ df-c , and is intended to be used only by the
+       construction.  From Proposition 9-2.5 of [Gleason] p. 119, who uses an
+       asterisk to denote this unary operation.  (Contributed by NM,
+       6-Mar-1996.)  (New usage is discouraged.) $)
+    df-rq $a |- *Q = ( `' .Q " { 1Q } ) $.
+
+    $( Define ordering relation on positive fractions.  This is a "temporary"
+       set used in the construction of complex numbers ~ df-c , and is intended
+       to be used only by the construction.  Similar to Definition 5 of
+       [Suppes] p. 162.  (Contributed by NM, 13-Feb-1996.)
+       (New usage is discouraged.) $)
+    df-ltnq $a |- <Q = ( <pQ i^i ( Q. X. Q. ) ) $.
+
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
