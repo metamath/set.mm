@@ -58041,6 +58041,38 @@ $)
       $.
   $}
 
+  ${
+    $d x y $.
+    $( The class of positive fractions exists.  (Contributed by NM,
+       16-Aug-1995.)  (Revised by Mario Carneiro, 27-Apr-2013.)
+       (New usage is discouraged.) $)
+    nqex $p |- Q. e. _V $=
+      ( vy vx cnq cv ceq wbr c2nd cfv clti wn cnpi cxp wral crab cvv df-nq niex
+      wi xpex rabex eqeltri ) CADZBDZEFUCGHUBGHIFJRBKKLZMZAUDNOABPUEAUDKKQQSTUA
+      $.
+
+    $( The empty set is not a positive fraction.  (Contributed by NM,
+       24-Aug-1995.)  (Revised by Mario Carneiro, 27-Apr-2013.)
+       (New usage is discouraged.) $)
+    0nnq $p |- -. (/) e. Q. $=
+      ( vy vx c0 cnq wcel cnpi cxp 0nelxp cv ceq wbr c2nd cfv clti wn wral crab
+      wi df-nq ssrab2 eqsstri sseli mto ) CDECFFGZEFFHDUDCDAIZBIZJKUFLMUELMNKOR
+      BUDPZAUDQUDABSUGAUDTUAUBUC $.
+
+    $( Each positive fraction is an ordered pair of positive integers (the
+       numerator and denominator, in "lowest terms".  (Contributed by Mario
+       Carneiro, 28-Apr-2013.)  (New usage is discouraged.) $)
+    elpqn $p |- ( A e. Q. -> A e. ( N. X. N. ) ) $=
+      ( vy vx cnq cnpi cxp cv ceq wbr c2nd cfv clti wn wral crab ssrab2 eqsstri
+      wi df-nq sseli ) DEEFZADBGZCGZHIUCJKUBJKLIMRCUANZBUAOUABCSUDBUAPQT $.
+
+    $( Positive fraction 'less than' is a relation on positive fractions.
+       (Contributed by NM, 14-Feb-1996.)  (Revised by Mario Carneiro,
+       27-Apr-2013.)  (New usage is discouraged.) $)
+    ltrelnq $p |- <Q C_ ( Q. X. Q. ) $=
+      ( cltq cltpq cnq cxp cin df-ltnq inss2 eqsstri ) ABCCDZEIFBIGH $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
