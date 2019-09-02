@@ -1,4 +1,4 @@
-$( iset.mm - Version of 31-Aug-2019
+$( iset.mm - Version of 1-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -57084,6 +57084,86 @@ $)
       $}
 
     $}
+
+    ${
+      ecopoprg.com $e |- ( ( x e. S /\ y e. S ) -> ( x .+ y ) = ( y .+ x ) ) $.
+      $( Assuming the operation ` F ` is commutative, show that the relation
+         ` .~ ` , specified by the first hypothesis, is symmetric.
+         (Contributed by Jim Kingdon, 1-Sep-2019.) $)
+      ecopovsymg $p |- ( A .~ B -> B .~ A ) $=
+        ( wbr wcel wa wb cv wceq co vf vg vh cxp cop wex copab opabssxp eqsstri
+        vt brel breq1 breq2 bibi12d adantl simpll simprr caovcomd simplr simprl
+        eqid eqeq12d eqcom syl6bb ecopoveq ancoms 3bitr4d 2optocl syl ibi ) GHJ
+        NZHGJNZVKGKKUDZOHVMOPVKVLQZGHVMVMJJARZVMOBRZVMOPVOCRZDRZUESVPERZFRZUESP
+        VQVTITVRVSITSPFUFEUFDUFCUFZPABUGVMVMUDLWAABVMVMUHUIUKUARZUBRZUEZUCRZUJR
+        ZUEZJNZWGWDJNZQGWGJNZWGGJNZQVNUAUBUCUJGHKKVMVMVAWDGSWHWJWIWKWDGWGJULWDG
+        WGJUMUNWGHSWJVKWKVLWGHGJUMWGHGJULUNWBKOZWCKOZPZWEKOZWFKOZPZPZWBWFITZWCW
+        EITZSZWEWCITZWFWBITZSZWHWIWRXAXCXBSXDWRWSXCWTXBWRABWBWFKIVOKOVPKOPVOVPI
+        TVPVOITSWRMUOZWLWMWQUPWNWOWPUQURWRABWCWEKIXEWLWMWQUSWNWOWPUTURVBXCXBVCV
+        DABCDEFWBWCWEWFIJKLVEWQWNWIXDQABCDEFWEWFWBWCIJKLVEVFVGVHVIVJ $.
+
+      ${
+        $( Assume the operation is closed. $)
+        ecopoprg.cl $e |- ( ( x e. S /\ y e. S ) -> ( x .+ y ) e. S ) $.
+        $( Assume the operation is associative. $)
+        ecopoprg.ass $e |- ( ( x e. S /\ y e. S /\ z e. S ) ->
+          ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
+        $( Assume the operation has the cancellation property. $)
+        ecopoprg.can $e |- ( ( x e. S /\ y e. S /\ z e. S ) ->
+                   ( ( x .+ y ) = ( x .+ z ) -> y = z ) ) $.
+        $( Assuming that operation ` F ` is commutative (second hypothesis),
+           closed (third hypothesis), associative (fourth hypothesis), and has
+           the cancellation property (fifth hypothesis), show that the relation
+           ` .~ ` , specified by the first hypothesis, is transitive.
+           (Contributed by NM, 11-Feb-1996.)  (Revised by Mario Carneiro,
+           26-Apr-2015.) $)
+        ecopovtrng $p |- ( ( A .~ B /\ B .~ C ) -> A .~ C ) $=
+          ( wcel wa co vf vg vh vt vs vr cxp w3a wbr cv cop wceq copab opabssxp
+          wex eqsstri brel simpld anim12i 3anass sylibr wi breq1 anbi1d imbi12d
+          breq2 anbi12d imbi1d anbi2d wb ecopoveq 3adant3 3adant1 oveq12 simp2l
+          eqid simp2r simp1l adantl simp3r caov411d simp1r simp3l caov4d eqtr3d
+          eqeq12d syl5ibr sylbid impbid1 caovcl syl2anc caovcld caovcand sylibd
+          oveq2 3adant2 sylibrd 3optocl mpcom ) GLLUGZRZHWTRZIWTRZUHZGHKUIZHIKU
+          IZSZGIKUIZXGXAXBXCSZSXDXEXAXFXIXEXAXBGHWTWTKKAUJZWTRBUJZWTRSXJCUJZDUJ
+          ZUKULXKEUJZFUJZUKULSXLXOJTXMXNJTULSFUOEUODUOCUOZSABUMWTWTUGMXPABWTWTU
+          NUPZUQURHIWTWTKXQUQUSXAXBXCUTVAUAUJZUBUJZUKZUCUJZUDUJZUKZKUIZYCUEUJZU
+          FUJZUKZKUIZSZXTYGKUIZVBGYCKUIZYHSZGYGKUIZVBXEHYGKUIZSZYMVBXGXHVBUAUBU
+          CUDUEUFGHILWTLWTVPXTGULZYIYLYJYMYPYDYKYHXTGYCKVCVDXTGYGKVCVEYCHULZYLY
+          OYMYQYKXEYHYNYCHGKVFYCHYGKVCVGVHYGIULZYOXGYMXHYRYNXFXEYGIHKVFVIYGIGKV
+          FVEXRLRZXSLRZSZYALRZYBLRZSZYELRZYFLRZSZUHZYIXRYFJTZXSYEJTZULZYJUUHYIY
+          AYBJTZUUIJTZUULUUJJTZULZUUKUUHYIXRYBJTZXSYAJTZULZYAYFJTZYBYEJTZULZSZU
+          UOUUHYDUURYHUVAUUAUUDYDUURVJUUGABCDEFXRXSYAYBJKLMVKVLUUDUUGYHUVAVJUUA
+          ABCDEFYAYBYEYFJKLMVKVMVGUVBUUOUUHUUPUUSJTZUUQUUTJTZULUUPUUQUUSUUTJVNU
+          UHUUMUVCUUNUVDUUHABCYAYBXRYFLJUUAUUBUUCUUGVOZUUAUUBUUCUUGVQZYSYTUUDUU
+          GVRZXJLRZXKLRZSZXJXKJTZXKXJJTULUUHNVSZUVHUVIXLLRUHZUVKXLJTXJXKXLJTJTU
+          LUUHPVSZUUAUUDUUEUUFVTZUVJUVKLRUUHOVSZWAUUHXSYBJTYAYEJTJTUUNUVDUUHABC
+          XSYBYAYELJYSYTUUDUUGWBZUVFUVEUVLUVNUUAUUDUUEUUFWCZUVPWAUUHABCXSYBYAYE
+          LJUVQUVFUVEUVLUVNUVRUVPWDWEWFWGWHUUHABCUULUUIUUJLLJUVMUVKXJXLJTULZXKX
+          LULZVJUUHUVMUVSUVTQXKXLXJJWOWIVSUUHUUBUUCUULLRUVEUVFABYAYBLJOWJWKUUHY
+          SUUFUUILRUVGUVOABXRYFLJOWJWKUUHABXSYELLLJUVPUVQUVRWLWMWNUUAUUGYJUUKVJ
+          UUDABCDEFXRXSYEYFJKLMVKWPWQWRWS $.
+
+        $( Assuming that operation ` F ` is commutative (second hypothesis),
+           closed (third hypothesis), associative (fourth hypothesis), and has
+           the cancellation property (fifth hypothesis), show that the relation
+           ` .~ ` , specified by the first hypothesis, is an equivalence
+           relation.  (Contributed by NM, 16-Feb-1996.)  (Revised by Mario
+           Carneiro, 12-Aug-2015.) $)
+        ecopoverg $p |- .~ Er ( S X. S ) $=
+          ( wtru cv wcel wa wceq wbr vf vg vh cxp wer wrel cop wex relopabi a1i
+          co ecopovsymg adantl ecopovtrng wi wral simpll simplr caovcomd mpbird
+          ecopoveq anidms rgen2a ralxp mpbir rspec copab opabssxp eqsstri ssbri
+          wb breq12 brxp simplbi syl impbid1 iserd trud ) IIUDZHUEOUAUBUCVSHHUF
+          OAPZVSQBPZVSQRVTCPZDPZUGSWAEPZFPZUGSRWBWEGUKWCWDGUKSRFUHEUHDUHCUHZRZA
+          BHJUIUJUAPZUBPZHTZWIWHHTOABCDEFWHWIGHIJKULUMWJWIUCPZHTRWHWKHTOABCDEFW
+          HWIWKGHIJKLMNUNUMOWHVSQZWHWHHTZWLWMUOOWMUAVSWMUAVSUPWIWKUGZWNHTZUCIUP
+          UBIUPWOUBUCIWIIQZWKIQZRZWOWRWRRZWOWIWKGUKWKWIGUKSWSABWIWKIGVTIQWAIQRV
+          TWAGUKWAVTGUKSWSKUMWPWQWRUQWPWQWRURUSABCDEFWIWKWIWKGHIJVAUTVBVCWMWOUA
+          UBUCIIWHWNSWMWOVKWHWNWHWNHVLVBVDVEVFUJWMWHWHVSVSUDZTZWLHWTWHWHHWGABVG
+          WTJWFABVSVSVHVIVJXAWLWLWHWHVSVSVMVNVOVPVQVR $.
+      $}
+
+    $}
   $}
 
   ${
@@ -57369,6 +57449,23 @@ $(
 ###############################################################################
 
 This section derives the basics of real and complex numbers.
+
+To construct the real numbers constructively, we follow two main sources.
+The first is Metamath Proof Explorer, which has the advantage of being
+already formalized in metamath. Its disadvantage, for our purposes, is that
+it assumes the law of the excluded middle throughout. Since we have already
+developed natural numbers ( for example, ~ nna0 and similar theorems ), going
+from there to positive integers ( ~ df-ni ) and then positive rational numbers
+( ~ df-nq ) does not involve any major change in approach compared with
+the Metamath Proof Explorer.
+
+It is when we proceed to Dedekind cuts that we bring in more material from
+Section 11.2 of [HoTT], which focuses on the aspects of Dedekind cuts which
+are different without excluded middle. With excluded middle, it is natural
+to define the cut as the lower set only (as Metamath Proof Explorer does),
+but we define the cut as a pair of both the lower and upper sets, as [HoTT]
+does. There are also differences in how we handle order and replacing
+"not equal to zero" with "apart from zero".
 $)
 
 $(
@@ -57759,6 +57856,247 @@ $)
       bitri adantr 3bitr4d ) BDEZCDEZFBCEZGAHZEZBUPISZCJZFZAKLZBCMNBUPOSZCJZADL
       ZUMBKECKEUOVATUNBPCPABCQRBCUAUMVDVATUNUMVCUTADKUMUPDEZVCFVEUSFZUPKEZUTFZU
       MVEVCUSUMVEFVBURCBUPUBUCUDVFVGUQFZUSFVHVEVIUSUPUEUFVGUQUSUGUJUHUIUKUL $.
+  $}
+
+  $( Ordering property of addition for positive integers.  (Contributed by Jim
+     Kingdon, 31-Aug-2019.)  (New usage is discouraged.) $)
+  ltapig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
+      ( A <N B <-> ( C +N A ) <N ( C +N B ) ) ) $=
+    ( cnpi wcel clti wbr cpli co wb wa coa com pinn nnaord ltpiord addclpi wceq
+    adantr addpiord syl3an 3expa syl2an adantl eleq12d anandis ancoms 3bitr4d
+    bitrd 3impa ) ADEZBDEZCDEZABFGZCAHIZCBHIZFGZJUKULKZUMKABEZCALIZCBLIZEZUNUQU
+    KULUMUSVBJZUKAMEULBMEUMCMEVCANBNCNABCOUAUBURUNUSJUMABPSUMURUQVBJZUMUKULVDUM
+    UKKZUMULKZKZUQUOUPEZVBVEUODEUPDEUQVHJVFCAQCBQUOUPPUCVGUOUTUPVAVEUOUTRVFCATS
+    VFUPVARVECBTUDUEUIUFUGUHUJ $.
+
+  $( Ordering property of multiplication for positive integers.  (Contributed
+     by Jim Kingdon, 31-Aug-2019.)  (New usage is discouraged.) $)
+  ltmpig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
+      ( A <N B <-> ( C .N A ) <N ( C .N B ) ) ) $=
+    ( cnpi wcel clti wbr cmi co wb wa comu com pinn syl2an ltpiord mulclpi wceq
+    adantr mulpiord wi c0 elni2 w3a iba nnmord sylan9bbr 3exp1 imp4b syl5bi imp
+    adantl eleq12d bitrd anandis ancoms 3bitr4d 3impa ) ADEZBDEZCDEZABFGZCAHIZC
+    BHIZFGZJUSUTKZVAKABEZCALIZCBLIZEZVBVEVFVAVGVJJZUSAMEZBMEZVAVKUAUTANBNVACMEZ
+    UBCEZKVLVMKVKCUCVLVMVNVOVKVLVMVNVOVKVOVGVGVOKVLVMVNUDVJVOVGUEABCUFUGUHUIUJO
+    UKVFVBVGJVAABPSVAVFVEVJJZVAUSUTVPVAUSKZVAUTKZKZVEVCVDEZVJVQVCDEVDDEVEVTJVRC
+    AQCBQVCVDPOVSVCVHVDVIVQVCVHRVRCATSVRVDVIRVQCBTULUMUNUOUPUQUR $.
+
+  $( One is less than two (one plus one).  (Contributed by NM, 13-Mar-1996.)
+     (New usage is discouraged.) $)
+  1lt2pi $p |- 1o <N ( 1o +N 1o ) $=
+    ( c1o cpli co clti wbr wcel coa c0 com wceq 1onn nna0 ax-mp 0lt1o wb peano1
+    nnaord cnpi 1pi mp2an mp3an mpbi eqeltrri addpiord eleqtrri addclpi ltpiord
+    mpbir ) AAABCZDEZAUIFZAAAGCZUIAHGCZAULAIFZUMAJKALMHAFZUMULFZNHIFUNUNUOUPOPK
+    KHAAQUAUBUCARFZUQUIULJSSAAUDTUEUQUIRFZUJUKOSUQUQURSSAAUFTAUIUGTUH $.
+
+  $( No positive integer is less than one.  (Contributed by Jim Kingdon,
+     31-Aug-2019.)  (New usage is discouraged.) $)
+  nlt1pig $p |- ( A e. N. -> -. A <N 1o ) $=
+    ( cnpi wcel c0 wne c1o clti wbr wn com elni simprbi wceq wa wo wb
+    noel 1pi ltpiord mpan2 csuc df-1o eleq2i elsucg syl5bb biimpa ord
+    bitrd mpi ex necon3ad mpd ) ABCZADEZAFGHZIUMAJCUNAKLUMUOADUMUOADM
+    ZUMUONZADCZIUPAQUQURUPUMUOURUPOZUMUOAFCZUSUMFBCUOUTPRAFSTUTADUAZC
+    UMUSFVAAUBUCADBUDUEUHUFUGUIUJUKUL $.
+
+  ${
+    $d x y z w v u f $.
+    $( Define pre-addition on positive fractions.  This is a "temporary" set
+       used in the construction of complex numbers, and is intended to be used
+       only by the construction.  This "pre-addition" operation works directly
+       with ordered pairs of integers.  The actual positive fraction addition
+       ` +Q ` ( ~ df-plq ) works with the equivalence classes of these ordered
+       pairs determined by the equivalence relation ` ~Q ` ( ~ df-enq ).
+       (Analogous remarks apply to the other "pre-" operations in the complex
+       number construction that follows.)  From Proposition 9-2.3 of [Gleason]
+       p. 117.  (Contributed by NM, 28-Aug-1995.)
+       (New usage is discouraged.) $)
+    df-plpq $a |- +pQ = ( x e. ( N. X. N. ) , y e. ( N. X. N. ) |->
+      <. ( ( ( 1st ` x ) .N ( 2nd ` y ) ) +N
+           ( ( 1st ` y ) .N ( 2nd ` x ) ) ) ,
+           ( ( 2nd ` x ) .N ( 2nd ` y ) ) >. ) $.
+
+    $( Define pre-multiplication on positive fractions.  This is a "temporary"
+       set used in the construction of complex numbers, and is intended to be
+       used only by the construction.  From Proposition 9-2.4 of [Gleason]
+       p. 119.  (Contributed by NM, 28-Aug-1995.)
+       (New usage is discouraged.) $)
+    df-mpq $a |- .pQ = ( x e. ( N. X. N. ) , y e. ( N. X. N. ) |->
+        <. ( ( 1st ` x ) .N ( 1st ` y ) ) ,
+           ( ( 2nd ` x ) .N ( 2nd ` y ) ) >. ) $.
+
+    $( Define pre-ordering relation on positive fractions.  This is a
+       "temporary" set used in the construction of complex numbers, and is
+       intended to be used only by the construction.  Similar to Definition 5
+       of [Suppes] p. 162.  (Contributed by NM, 28-Aug-1995.)
+       (New usage is discouraged.) $)
+    df-ltpq $a |- <pQ = { <. x , y >. |
+      ( ( x e. ( N. X. N. ) /\ y e. ( N. X. N. ) ) /\
+        ( ( 1st ` x ) .N ( 2nd ` y ) ) <N ( ( 1st ` y ) .N ( 2nd ` x ) ) ) } $.
+
+    $( Define equivalence relation for positive fractions.  This is a
+       "temporary" set used in the construction of complex numbers, and is
+       intended to be used only by the construction.  From Proposition 9-2.1 of
+       [Gleason] p. 117.  (Contributed by NM, 27-Aug-1995.)
+       (New usage is discouraged.) $)
+    df-enq $a |- ~Q = { <. x , y >. | ( ( x e. ( N. X. N. ) /\
+                   y e. ( N. X. N. ) ) /\ E. z E. w E. v E. u
+                   ( ( x = <. z , w >. /\ y = <. v , u >. ) /\
+                   ( z .N u ) = ( w .N v ) ) ) } $.
+
+    $( Define class of positive fractions.  This is a "temporary" set used in
+       the construction of complex numbers, and is intended to be used only by
+       the construction.  From Proposition 9-2.2 of [Gleason] p. 117.
+       (Contributed by NM, 16-Aug-1995.)  (New usage is discouraged.) $)
+    df-nq $a |- Q. = { x e. ( N. X. N. ) | A. y e. ( N. X. N. )
+      ( x ~Q y -> -. ( 2nd ` y ) <N ( 2nd ` x ) ) } $.
+
+    $( Define a convenience function that "reduces" a fraction to lowest
+       terms.  Note that in this form, it is not obviously a function; we will
+       prove this later.  (Contributed by NM, 27-Aug-1995.)
+       (New usage is discouraged.) $)
+    df-erq $a |- /Q = ( ~Q i^i ( ( N. X. N. ) X. Q. ) ) $.
+
+    $( Define addition on positive fractions.  This is a "temporary" set used
+       in the construction of complex numbers, and is intended to be used only
+       by the construction.  From Proposition 9-2.3 of [Gleason] p. 117.
+       (Contributed by NM, 24-Aug-1995.)  (New usage is discouraged.) $)
+    df-plq $a |- +Q = ( ( /Q o. +pQ ) |` ( Q. X. Q. ) ) $.
+
+    $( Define multiplication on positive fractions.  This is a "temporary" set
+       used in the construction of complex numbers, and is intended to be used
+       only by the construction.  From Proposition 9-2.4 of [Gleason] p. 119.
+       (Contributed by NM, 24-Aug-1995.)  (New usage is discouraged.) $)
+    df-mq $a |- .Q = ( ( /Q o. .pQ ) |` ( Q. X. Q. ) ) $.
+
+    $( Define positive fraction constant 1.  This is a "temporary" set used in
+       the construction of complex numbers, and is intended to be used only by
+       the construction.  From Proposition 9-2.2 of [Gleason] p. 117.
+       (Contributed by NM, 29-Oct-1995.)  (New usage is discouraged.) $)
+    df-1nq $a |- 1Q = <. 1o , 1o >. $.
+
+    $( Define reciprocal on positive fractions.  It means the same thing as one
+       divided by the argument (although we don't define full division since we
+       will never need it).  This is a "temporary" set used in the construction
+       of complex numbers, and is intended to be used only by the
+       construction.  From Proposition 9-2.5 of [Gleason] p. 119, who uses an
+       asterisk to denote this unary operation.  (Contributed by NM,
+       6-Mar-1996.)  (New usage is discouraged.) $)
+    df-rq $a |- *Q = ( `' .Q " { 1Q } ) $.
+
+    $( Define ordering relation on positive fractions.  This is a "temporary"
+       set used in the construction of complex numbers, and is intended to be
+       used only by the construction.  Similar to Definition 5 of [Suppes]
+       p. 162.  (Contributed by NM, 13-Feb-1996.)
+       (New usage is discouraged.) $)
+    df-ltnq $a |- <Q = ( <pQ i^i ( Q. X. Q. ) ) $.
+
+  $}
+
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $d x y z w v u D $.
+    $( Equivalence relation for positive fractions in terms of positive
+       integers.  (Contributed by NM, 27-Aug-1995.)
+       (New usage is discouraged.) $)
+    enqbreq $p |- ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. ) ) ->
+          ( <. A , B >. ~Q <. C , D >. <-> ( A .N D ) = ( B .N C ) ) ) $=
+      ( vx vy vz vw vv vu cmi ceq cnpi df-enq ecopoveq ) EFGHIJABCDKLMEFGHIJNO
+      $.
+  $}
+
+  ${
+    $( Equivalence relation for positive fractions in terms of positive
+       integers.  (Contributed by Mario Carneiro, 8-May-2013.)
+       (New usage is discouraged.) $)
+    enqbreq2 $p |- ( ( A e. ( N. X. N. ) /\ B e. ( N. X. N. ) ) ->
+          ( A ~Q B <-> ( ( 1st ` A ) .N ( 2nd ` B ) ) =
+                       ( ( 1st ` B ) .N ( 2nd ` A ) ) ) ) $=
+      ( cnpi cxp wcel wa ceq wbr c1st cfv c2nd cop cmi wceq 1st2nd2 xp1st xp2nd
+      co jca syl2an breqan12d wb enqbreq mulcompig eqeq2d 3bitrd ) ACCDZEZBUGEZ
+      FZABGHAIJZAKJZLZBIJZBKJZLZGHZUKUOMRZULUNMRZNZURUNULMRZNUHUIAUMBUPGACCOBCC
+      OUAUHUKCEZULCEZFUNCEZUOCEZFUQUTUBUIUHVBVCACCPACCQZSUIVDVEBCCPZBCCQSUKULUN
+      UOUCTUJUSVAURUHVCVDUSVANUIVFVGULUNUDTUEUF $.
+  $}
+
+  ${
+    $d x y z w v u $.
+    $( The equivalence relation for positive fractions is an equivalence
+       relation.  Proposition 9-2.1 of [Gleason] p. 117.  (Contributed by NM,
+       27-Aug-1995.)  (Revised by Mario Carneiro, 6-Jul-2015.)
+       (New usage is discouraged.) $)
+    enqer $p |- ~Q Er ( N. X. N. ) $=
+      ( vx vy vz vw vv cmi ceq cnpi df-enq mulcompig mulclpi mulasspig wcel w3a
+      vu cv co wceq mulcanpig biimpd ecopoverg ) ABCDEOFGHABCDEOIAPZBPZJUBUCKUB
+      UCCPZLUBHMUCHMUDHMNUBUCFQUBUDFQRUCUDRUBUCUDSTUA $.
+  $}
+
+  ${
+    $d x y z w v u $.
+    $( The equivalence relation for positive fractions exists.  (Contributed by
+       NM, 3-Sep-1995.)  (New usage is discouraged.) $)
+    enqex $p |- ~Q e. _V $=
+      ( vx vy vz vw vv vu ceq cnpi cxp niex xpex cv wcel wa cop wceq cmi co wex
+      copab df-enq opabssxp eqsstri ssexi ) GHHIZUEIZUEUEHHJJKZUGKGALZUEMBLZUEM
+      NUHCLZDLZOPUIELZFLZOPNUJUMQRUKULQRPNFSESDSCSZNABTUFABCDEFUAUNABUEUEUBUCUD
+      $.
+  $}
+
+  ${
+    $d x y $.
+    $( The class of positive fractions exists.  (Contributed by NM,
+       16-Aug-1995.)  (Revised by Mario Carneiro, 27-Apr-2013.)
+       (New usage is discouraged.) $)
+    nqex $p |- Q. e. _V $=
+      ( vy vx cnq cv ceq wbr c2nd cfv clti wn cnpi cxp wral crab cvv df-nq niex
+      wi xpex rabex eqeltri ) CADZBDZEFUCGHUBGHIFJRBKKLZMZAUDNOABPUEAUDKKQQSTUA
+      $.
+
+    $( The empty set is not a positive fraction.  (Contributed by NM,
+       24-Aug-1995.)  (Revised by Mario Carneiro, 27-Apr-2013.)
+       (New usage is discouraged.) $)
+    0nnq $p |- -. (/) e. Q. $=
+      ( vy vx c0 cnq wcel cnpi cxp 0nelxp cv ceq wbr c2nd cfv clti wn wral crab
+      wi df-nq ssrab2 eqsstri sseli mto ) CDECFFGZEFFHDUDCDAIZBIZJKUFLMUELMNKOR
+      BUDPZAUDQUDABSUGAUDTUAUBUC $.
+
+    $( Each positive fraction is an ordered pair of positive integers (the
+       numerator and denominator, in "lowest terms".  (Contributed by Mario
+       Carneiro, 28-Apr-2013.)  (New usage is discouraged.) $)
+    elpqn $p |- ( A e. Q. -> A e. ( N. X. N. ) ) $=
+      ( vy vx cnq cnpi cxp cv ceq wbr c2nd cfv clti wn wral crab ssrab2 eqsstri
+      wi df-nq sseli ) DEEFZADBGZCGZHIUCJKUBJKLIMRCUANZBUAOUABCSUDBUAPQT $.
+
+    $( Positive fraction 'less than' is a relation on positive fractions.
+       (Contributed by NM, 14-Feb-1996.)  (Revised by Mario Carneiro,
+       27-Apr-2013.)  (New usage is discouraged.) $)
+    ltrelnq $p |- <Q C_ ( Q. X. Q. ) $=
+      ( cltq cltpq cnq cxp cin df-ltnq inss2 eqsstri ) ABCCDZEIFBIGH $.
+  $}
+
+  ${
+    $d A x y $.
+    $( The representatives of positive integers as positive fractions.
+       (Contributed by NM, 29-Oct-1995.)  (Revised by Mario Carneiro,
+       6-May-2013.)  (New usage is discouraged.) $)
+    pinq $p |- ( A e. N. -> <. A , 1o >. e. Q. ) $=
+      ( vx vy cnpi wcel c1o cv ceq wbr c2nd cfv clti wn wral 1pi mpan2 cvv wceq
+      wi breq2d cop cxp cnq opelxpi wa xp2nd nlt1pig syl adantl wb elexi op2ndg
+      crab adantr mtbird a1d ralrimiva breq1 fveq2 notbid imbi12d ralbidv elrab
+      sylanbrc df-nq syl6eleqr ) ADEZAFUAZBGZCGZHIZVJJKZVIJKZLIZMZSZCDDUBZNZBVQ
+      UMZUCVGVHVQEZVHVJHIZVLVHJKZLIZMZSZCVQNZVHVSEVGFDEVTOAFDDUDPVGWECVQVGVJVQE
+      ZUEZWDWAWHWCVLFLIZWGWIMZVGWGVLDEWJVJDDUFVLUGUHUIVGWCWIUJWGVGWBFVLLVGFQEWB
+      FRFDOUKAFDQULPTUNUOUPUQVRWFBVHVQVIVHRZVPWECVQWKVKWAVOWDVIVHVJHURWKVNWCWKV
+      MWBVLLVIVHJUSTUTVAVBVCVDBCVEVF $.
+  $}
+
+  ${
+    $d x y $.
+    $( The positive fraction 'one'.  (Contributed by NM, 29-Oct-1995.)
+       (Revised by Mario Carneiro, 28-Apr-2013.)
+       (New usage is discouraged.) $)
+    1nq $p |- 1Q e. Q. $=
+      ( c1q c1o cop cnq df-1nq cnpi wcel 1pi pinq ax-mp eqeltri ) ABBCZDEBFGLDG
+      HBIJK $.
   $}
 
 $(
