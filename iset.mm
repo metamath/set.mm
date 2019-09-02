@@ -58018,6 +58018,18 @@ $)
       UOUCTUJUSVAURUHVCVDUSVANUIVFVGULUNUDTUEUF $.
   $}
 
+  ${
+    $d x y z w v u $.
+    $( The equivalence relation for positive fractions is an equivalence
+       relation.  Proposition 9-2.1 of [Gleason] p. 117.  (Contributed by NM,
+       27-Aug-1995.)  (Revised by Mario Carneiro, 6-Jul-2015.)
+       (New usage is discouraged.) $)
+    enqer $p |- ~Q Er ( N. X. N. ) $=
+      ( vx vy vz vw vv cmi ceq cnpi df-enq mulcompig mulclpi mulasspig wcel w3a
+      vu cv co wceq mulcanpig biimpd ecopoverg ) ABCDEOFGHABCDEOIAPZBPZJUBUCKUB
+      UCCPZLUBHMUCHMUDHMNUBUCFQUBUDFQRUCUDRUBUCUDSTUA $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
