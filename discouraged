@@ -6005,13 +6005,10 @@
 "flddivrng" is used by "isfld2".
 "flddivrng" is used by "isfldidl".
 "fnniniseg2OLD" is used by "fnsuppresOLD".
-"fnniniseg2OLD" is used by "fpwrelmapffslem".
 "fnniniseg2OLD" is used by "frlmbasOLD".
 "fnniniseg2OLD" is used by "frlmssuvc2OLD".
-"fnniniseg2OLD" is used by "fsumcvg4".
 "fnsuppresOLD" is used by "fnsuppeq0OLD".
 "fnsuppresOLD" is used by "frlmsslss2OLD".
-"fnsuppresOLD" is used by "resf1o".
 "frlmbasOLD" is used by "ellspdOLD".
 "frlmbasOLD" is used by "frlmelbasOLD".
 "frlmbasOLD" is used by "frlmpwfi".
@@ -9504,7 +9501,6 @@
 "mapdval4N" is used by "mapd1dim2lem1N".
 "mapdval4N" is used by "mapdval5N".
 "mapfien2OLD" is used by "frlmpwfi".
-"mapfienOLD" is used by "fcobijfs".
 "mapfienOLD" is used by "mapfien2OLD".
 "mapfienOLD" is used by "oef1oOLD".
 "mapfienOLD" is used by "wemapweOLD".
@@ -10298,10 +10294,6 @@
 "nmoxr" is used by "nmooge0".
 "nmoxr" is used by "nmoreltpnf".
 "nmoxr" is used by "ubthlem3".
-"nn0supp" is used by "eulerpartgbij".
-"nn0supp" is used by "eulerpartlemb".
-"nn0supp" is used by "eulerpartlemmf".
-"nn0supp" is used by "eulerpartlems".
 "nn0suppOLD" is used by "mplbas2OLD".
 "nn0suppOLD" is used by "mplcoe2OLD".
 "nn0suppOLD" is used by "mplcoe3OLD".
@@ -13023,7 +13015,6 @@
 "suppss2OLD" is used by "psrbasOLD".
 "suppss2OLD" is used by "psrlidmOLD".
 "suppss2OLD" is used by "psrridmOLD".
-"suppss2OLD" is used by "suppss3".
 "suppssOLD" is used by "cantnfp1lem1OLD".
 "suppssOLD" is used by "cantnfp1lem3OLD".
 "suppssOLD" is used by "frlmsslspOLD".
@@ -13039,7 +13030,6 @@
 "suppssOLD" is used by "psrbaglesuppOLD".
 "suppssOLD" is used by "psrlidmOLD".
 "suppssOLD" is used by "psrridmOLD".
-"suppssOLD" is used by "resf1o".
 "suppssfvOLD" is used by "evlslem6OLD".
 "suppssof1OLD" is used by "psrbagev1OLD".
 "suppssov1OLD" is used by "evlslem6OLD".
@@ -13053,7 +13043,6 @@
 "suppssrOLD" is used by "dpjidclOLD".
 "suppssrOLD" is used by "dprdfaddOLD".
 "suppssrOLD" is used by "dprdfinvOLD".
-"suppssrOLD" is used by "eulerpartlemb".
 "suppssrOLD" is used by "evlslem4OLD".
 "suppssrOLD" is used by "frlmsslspOLD".
 "suppssrOLD" is used by "gsum2dOLD".
@@ -15681,9 +15670,9 @@ New usage of "fisucdomOLD" is discouraged (0 uses).
 New usage of "flddivrng" is discouraged (2 uses).
 New usage of "fnexALT" is discouraged (0 uses).
 New usage of "fngid" is discouraged (0 uses).
-New usage of "fnniniseg2OLD" is discouraged (5 uses).
+New usage of "fnniniseg2OLD" is discouraged (3 uses).
 New usage of "fnsuppeq0OLD" is discouraged (0 uses).
-New usage of "fnsuppresOLD" is discouraged (3 uses).
+New usage of "fnsuppresOLD" is discouraged (2 uses).
 New usage of "frlmbasOLD" is discouraged (3 uses).
 New usage of "frlmbassup" is discouraged (1 uses).
 New usage of "frlmelbasOLD" is discouraged (1 uses).
@@ -16718,7 +16707,7 @@ New usage of "mapdval3N" is discouraged (0 uses).
 New usage of "mapdval4N" is discouraged (2 uses).
 New usage of "mapdval5N" is discouraged (0 uses).
 New usage of "mapfien2OLD" is discouraged (1 uses).
-New usage of "mapfienOLD" is discouraged (4 uses).
+New usage of "mapfienOLD" is discouraged (3 uses).
 New usage of "mappsrpr" is discouraged (2 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "max1ALT" is discouraged (0 uses).
@@ -17029,7 +17018,6 @@ New usage of "nmounbi" is discouraged (2 uses).
 New usage of "nmounbseqi" is discouraged (0 uses).
 New usage of "nmounbseqiOLD" is discouraged (0 uses).
 New usage of "nmoxr" is discouraged (7 uses).
-New usage of "nn0supp" is discouraged (4 uses).
 New usage of "nn0suppOLD" is discouraged (11 uses).
 New usage of "nnexALT" is discouraged (6 uses).
 New usage of "noinfepOLD" is discouraged (0 uses).
@@ -17990,12 +17978,12 @@ New usage of "superpos" is discouraged (1 uses).
 New usage of "supexpr" is discouraged (1 uses).
 New usage of "suplem1pr" is discouraged (1 uses).
 New usage of "suplem2pr" is discouraged (1 uses).
-New usage of "suppss2OLD" is discouraged (19 uses).
-New usage of "suppssOLD" is discouraged (16 uses).
+New usage of "suppss2OLD" is discouraged (18 uses).
+New usage of "suppssOLD" is discouraged (15 uses).
 New usage of "suppssfvOLD" is discouraged (1 uses).
 New usage of "suppssof1OLD" is discouraged (1 uses).
 New usage of "suppssov1OLD" is discouraged (2 uses).
-New usage of "suppssrOLD" is discouraged (31 uses).
+New usage of "suppssrOLD" is discouraged (30 uses).
 New usage of "supsr" is discouraged (1 uses).
 New usage of "supsrlem" is discouraged (1 uses).
 New usage of "syl5imp" is discouraged (0 uses).
