@@ -57924,6 +57924,20 @@ $)
       $.
   $}
 
+  ${
+    $( Equivalence relation for positive fractions in terms of positive
+       integers.  (Contributed by Mario Carneiro, 8-May-2013.)
+       (New usage is discouraged.) $)
+    enqbreq2 $p |- ( ( A e. ( N. X. N. ) /\ B e. ( N. X. N. ) ) ->
+          ( A ~Q B <-> ( ( 1st ` A ) .N ( 2nd ` B ) ) =
+                       ( ( 1st ` B ) .N ( 2nd ` A ) ) ) ) $=
+      ( cnpi cxp wcel wa ceq wbr c1st cfv c2nd cop cmi wceq 1st2nd2 xp1st xp2nd
+      co jca syl2an breqan12d wb enqbreq mulcompig eqeq2d 3bitrd ) ACCDZEZBUGEZ
+      FZABGHAIJZAKJZLZBIJZBKJZLZGHZUKUOMRZULUNMRZNZURUNULMRZNUHUIAUMBUPGACCOBCC
+      OUAUHUKCEZULCEZFUNCEZUOCEZFUQUTUBUIUHVBVCACCPACCQZSUIVDVEBCCPZBCCQSUKULUN
+      UOUCTUJUSVAURUHVCVDUSVANUIVFVGULUNUDTUEUF $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
