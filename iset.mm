@@ -58073,6 +58073,32 @@ $)
       ( cltq cltpq cnq cxp cin df-ltnq inss2 eqsstri ) ABCCDZEIFBIGH $.
   $}
 
+  ${
+    $d A x y $.
+    $( The representatives of positive integers as positive fractions.
+       (Contributed by NM, 29-Oct-1995.)  (Revised by Mario Carneiro,
+       6-May-2013.)  (New usage is discouraged.) $)
+    pinq $p |- ( A e. N. -> <. A , 1o >. e. Q. ) $=
+      ( vx vy cnpi wcel c1o cv ceq wbr c2nd cfv clti wn wral 1pi mpan2 cvv wceq
+      wi breq2d cop cxp cnq opelxpi wa xp2nd nlt1pig syl adantl wb elexi op2ndg
+      crab adantr mtbird a1d ralrimiva breq1 fveq2 notbid imbi12d ralbidv elrab
+      sylanbrc df-nq syl6eleqr ) ADEZAFUAZBGZCGZHIZVJJKZVIJKZLIZMZSZCDDUBZNZBVQ
+      UMZUCVGVHVQEZVHVJHIZVLVHJKZLIZMZSZCVQNZVHVSEVGFDEVTOAFDDUDPVGWECVQVGVJVQE
+      ZUEZWDWAWHWCVLFLIZWGWIMZVGWGVLDEWJVJDDUFVLUGUHUIVGWCWIUJWGVGWBFVLLVGFQEWB
+      FRFDOUKAFDQULPTUNUOUPUQVRWFBVHVQVIVHRZVPWECVQWKVKWAVOWDVIVHVJHURWKVNWCWKV
+      MWBVLLVIVHJUSTUTVAVBVCVDBCVEVF $.
+  $}
+
+  ${
+    $d x y $.
+    $( The positive fraction 'one'.  (Contributed by NM, 29-Oct-1995.)
+       (Revised by Mario Carneiro, 28-Apr-2013.)
+       (New usage is discouraged.) $)
+    1nq $p |- 1Q e. Q. $=
+      ( c1q c1o cop cnq df-1nq cnpi wcel 1pi pinq ax-mp eqeltri ) ABBCZDEBFGLDG
+      HBIJK $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
