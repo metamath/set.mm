@@ -1,4 +1,4 @@
-$( iset.mm - Version of 31-Aug-2019
+$( iset.mm - Version of 1-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -57081,6 +57081,86 @@ $)
           UEWJIUESZWNWOWOSWNWHWJGUKWJWHGUKUGABWHWJGOUPPUPKUQABCDEFWHWJWHWJGHIJU
           RUSUTVBWLWNUAOPIIWGWMUGWLWNVLWGWMWGWMHVMUTVCVDVEUJWLWGWGVRVRUBZTZWKHW
           PWGWGHWFABVFWPJWEABVRVRVGVHVIWQWKWKWGWGVRVRVJVKVNVOVPVQ $.
+      $}
+
+    $}
+
+    ${
+      ecopoprg.com $e |- ( ( x e. S /\ y e. S ) -> ( x .+ y ) = ( y .+ x ) ) $.
+      $( Assuming the operation ` F ` is commutative, show that the relation
+         ` .~ ` , specified by the first hypothesis, is symmetric.
+         (Contributed by Jim Kingdon, 1-Sep-2019.) $)
+      ecopovsymg $p |- ( A .~ B -> B .~ A ) $=
+        ( wbr wcel wa wb cv wceq co vf vg vh cxp cop wex copab opabssxp eqsstri
+        vt brel breq1 breq2 bibi12d adantl simpll simprr caovcomd simplr simprl
+        eqid eqeq12d eqcom syl6bb ecopoveq ancoms 3bitr4d 2optocl syl ibi ) GHJ
+        NZHGJNZVKGKKUDZOHVMOPVKVLQZGHVMVMJJARZVMOBRZVMOPVOCRZDRZUESVPERZFRZUESP
+        VQVTITVRVSITSPFUFEUFDUFCUFZPABUGVMVMUDLWAABVMVMUHUIUKUARZUBRZUEZUCRZUJR
+        ZUEZJNZWGWDJNZQGWGJNZWGGJNZQVNUAUBUCUJGHKKVMVMVAWDGSWHWJWIWKWDGWGJULWDG
+        WGJUMUNWGHSWJVKWKVLWGHGJUMWGHGJULUNWBKOZWCKOZPZWEKOZWFKOZPZPZWBWFITZWCW
+        EITZSZWEWCITZWFWBITZSZWHWIWRXAXCXBSXDWRWSXCWTXBWRABWBWFKIVOKOVPKOPVOVPI
+        TVPVOITSWRMUOZWLWMWQUPWNWOWPUQURWRABWCWEKIXEWLWMWQUSWNWOWPUTURVBXCXBVCV
+        DABCDEFWBWCWEWFIJKLVEWQWNWIXDQABCDEFWEWFWBWCIJKLVEVFVGVHVIVJ $.
+
+      ${
+        $( Assume the operation is closed. $)
+        ecopoprg.cl $e |- ( ( x e. S /\ y e. S ) -> ( x .+ y ) e. S ) $.
+        $( Assume the operation is associative. $)
+        ecopoprg.ass $e |- ( ( x e. S /\ y e. S /\ z e. S ) ->
+          ( ( x .+ y ) .+ z ) = ( x .+ ( y .+ z ) ) ) $.
+        $( Assume the operation has the cancellation property. $)
+        ecopoprg.can $e |- ( ( x e. S /\ y e. S /\ z e. S ) ->
+                   ( ( x .+ y ) = ( x .+ z ) -> y = z ) ) $.
+        $( Assuming that operation ` F ` is commutative (second hypothesis),
+           closed (third hypothesis), associative (fourth hypothesis), and has
+           the cancellation property (fifth hypothesis), show that the relation
+           ` .~ ` , specified by the first hypothesis, is transitive.
+           (Contributed by NM, 11-Feb-1996.)  (Revised by Mario Carneiro,
+           26-Apr-2015.) $)
+        ecopovtrng $p |- ( ( A .~ B /\ B .~ C ) -> A .~ C ) $=
+          ( wcel wa co vf vg vh vt vs vr cxp w3a wbr cv cop wceq copab opabssxp
+          wex eqsstri brel simpld anim12i 3anass sylibr wi breq1 anbi1d imbi12d
+          breq2 anbi12d imbi1d anbi2d wb ecopoveq 3adant3 3adant1 oveq12 simp2l
+          eqid simp2r simp1l adantl simp3r caov411d simp1r simp3l caov4d eqtr3d
+          eqeq12d syl5ibr sylbid impbid1 caovcl syl2anc caovcld caovcand sylibd
+          oveq2 3adant2 sylibrd 3optocl mpcom ) GLLUGZRZHWTRZIWTRZUHZGHKUIZHIKU
+          IZSZGIKUIZXGXAXBXCSZSXDXEXAXFXIXEXAXBGHWTWTKKAUJZWTRBUJZWTRSXJCUJZDUJ
+          ZUKULXKEUJZFUJZUKULSXLXOJTXMXNJTULSFUOEUODUOCUOZSABUMWTWTUGMXPABWTWTU
+          NUPZUQURHIWTWTKXQUQUSXAXBXCUTVAUAUJZUBUJZUKZUCUJZUDUJZUKZKUIZYCUEUJZU
+          FUJZUKZKUIZSZXTYGKUIZVBGYCKUIZYHSZGYGKUIZVBXEHYGKUIZSZYMVBXGXHVBUAUBU
+          CUDUEUFGHILWTLWTVPXTGULZYIYLYJYMYPYDYKYHXTGYCKVCVDXTGYGKVCVEYCHULZYLY
+          OYMYQYKXEYHYNYCHGKVFYCHYGKVCVGVHYGIULZYOXGYMXHYRYNXFXEYGIHKVFVIYGIGKV
+          FVEXRLRZXSLRZSZYALRZYBLRZSZYELRZYFLRZSZUHZYIXRYFJTZXSYEJTZULZYJUUHYIY
+          AYBJTZUUIJTZUULUUJJTZULZUUKUUHYIXRYBJTZXSYAJTZULZYAYFJTZYBYEJTZULZSZU
+          UOUUHYDUURYHUVAUUAUUDYDUURVJUUGABCDEFXRXSYAYBJKLMVKVLUUDUUGYHUVAVJUUA
+          ABCDEFYAYBYEYFJKLMVKVMVGUVBUUOUUHUUPUUSJTZUUQUUTJTZULUUPUUQUUSUUTJVNU
+          UHUUMUVCUUNUVDUUHABCYAYBXRYFLJUUAUUBUUCUUGVOZUUAUUBUUCUUGVQZYSYTUUDUU
+          GVRZXJLRZXKLRZSZXJXKJTZXKXJJTULUUHNVSZUVHUVIXLLRUHZUVKXLJTXJXKXLJTJTU
+          LUUHPVSZUUAUUDUUEUUFVTZUVJUVKLRUUHOVSZWAUUHXSYBJTYAYEJTJTUUNUVDUUHABC
+          XSYBYAYELJYSYTUUDUUGWBZUVFUVEUVLUVNUUAUUDUUEUUFWCZUVPWAUUHABCXSYBYAYE
+          LJUVQUVFUVEUVLUVNUVRUVPWDWEWFWGWHUUHABCUULUUIUUJLLJUVMUVKXJXLJTULZXKX
+          LULZVJUUHUVMUVSUVTQXKXLXJJWOWIVSUUHUUBUUCUULLRUVEUVFABYAYBLJOWJWKUUHY
+          SUUFUUILRUVGUVOABXRYFLJOWJWKUUHABXSYELLLJUVPUVQUVRWLWMWNUUAUUGYJUUKVJ
+          UUDABCDEFXRXSYEYFJKLMVKWPWQWRWS $.
+
+        $( Assuming that operation ` F ` is commutative (second hypothesis),
+           closed (third hypothesis), associative (fourth hypothesis), and has
+           the cancellation property (fifth hypothesis), show that the relation
+           ` .~ ` , specified by the first hypothesis, is an equivalence
+           relation.  (Contributed by NM, 16-Feb-1996.)  (Revised by Mario
+           Carneiro, 12-Aug-2015.) $)
+        ecopoverg $p |- .~ Er ( S X. S ) $=
+          ( wtru cv wcel wa wceq wbr vf vg vh cxp wer wrel cop wex relopabi a1i
+          co ecopovsymg adantl ecopovtrng wi wral simpll simplr caovcomd mpbird
+          ecopoveq anidms rgen2a ralxp mpbir rspec copab opabssxp eqsstri ssbri
+          wb breq12 brxp simplbi syl impbid1 iserd trud ) IIUDZHUEOUAUBUCVSHHUF
+          OAPZVSQBPZVSQRVTCPZDPZUGSWAEPZFPZUGSRWBWEGUKWCWDGUKSRFUHEUHDUHCUHZRZA
+          BHJUIUJUAPZUBPZHTZWIWHHTOABCDEFWHWIGHIJKULUMWJWIUCPZHTRWHWKHTOABCDEFW
+          HWIWKGHIJKLMNUNUMOWHVSQZWHWHHTZWLWMUOOWMUAVSWMUAVSUPWIWKUGZWNHTZUCIUP
+          UBIUPWOUBUCIWIIQZWKIQZRZWOWRWRRZWOWIWKGUKWKWIGUKSWSABWIWKIGVTIQWAIQRV
+          TWAGUKWAVTGUKSWSKUMWPWQWRUQWPWQWRURUSABCDEFWIWKWIWKGHIJVAUTVBVCWMWOUA
+          UBUCIIWHWNSWMWOVKWHWNWHWNHVLVBVDVEVFUJWMWHWHVSVSUDZTZWLHWTWHWHHWGABVG
+          WTJWFABVSVSVHVIVJXAWLWLWHWHVSVSVMVNVOVPVQVR $.
       $}
 
     $}
