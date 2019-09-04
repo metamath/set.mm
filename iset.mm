@@ -1,4 +1,4 @@
-$( iset.mm - Version of 1-Sep-2019
+$( iset.mm - Version of 3-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -36760,6 +36760,65 @@ $(
           IZF Set Theory - add the Axiom of Set Induction
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          The ZF Axiom of Foundation would imply Excluded Middle
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  ${
+    $d A y z $.  $d ph x y $.
+    regexmidlemm.a $e |-
+      A = { x e. { (/) , { (/) } } | ( x = { (/) } \/ ( x = (/) /\ ph ) ) } $.
+    $( Lemma for ~ regexmid . ` A ` is inhabited.  (Contributed by Jim Kingdon,
+       3-Sep-2019.) $)
+    regexmidlemm $p |- E. y y e. A $=
+      ( c0 csn wcel cv wex cpr wceq wa wo p0ex prid2 eqid orci eqeq1 anbi1d
+      orbi12d elrab2 mpbir2an elex2 ax-mp ) FGZDHZCIDHCJUGUFFUFKZHUFUFLZUFFLZAM
+      ZNZFUFOPUIUKUFQRBIZUFLZUMFLZAMZNULBUFUHDUNUNUIUPUKUMUFUFSUNUOUJAUMUFFSTUA
+      EUBUCCUFDUDUE $.
+
+    $( Lemma for ~ regexmid .  If ` A ` has a minimal element, excluded middle
+       follows.  (Contributed by Jim Kingdon, 3-Sep-2019.) $)
+    regexmidlem1 $p |- ( E. y ( y e. A /\ A. z ( z e. y -> -. z e. A ) ) ->
+        ( ph \/ -. ph ) ) $=
+      ( cv wcel wn wi wa wo c0 wceq eqeq1 anbi1d orbi12d elrab2 0ex eleq1 eleq2
+      wal csn cpr simprbi snid mpbiri notbid imbi12d spcv syl5com prid1 mpbiran
+      pm2.46 sylnbi eqid biantrur sylnibr olcd syl6 orc adantl a1d jaoi syl imp
+      exlimiv ) CGZEHZDGZVHHZVJEHZIZJZDUBZKAAIZLZCVIVOVQVIVHMUCZNZVHMNZAKZLZVOV
+      QJZVIVHMVRUDZHWBBGZVRNZWEMNZAKZLZWBBVHWDEWEVHNZWFVSWHWAWEVHVROWJWGVTAWEVH
+      MOPQFRUEVSWCWAVSVOMEHZIZVQVSMVHHZVOWLVSWMMVRHMSUFVHVRMUAUGVNWMWLJDMSVJMNZ
+      VKWMVMWLVJMVHTWNVLWKVJMETUHUIUJUKWLVPAWLMMNZAKZAWKMVRNZWPLZWPIWKMWDHWRMVR
+      SULWIWRBMWDEWGWFWQWHWPWEMVROWGWGWOAWEMMOPQFRUMWQWPUNUOWOAMUPUQURUSUTWAVQV
+      OAVQVTAVPVAVBVCVDVEVFVG $.
+  $}
+
+  ${
+    $d ph x y z w $.
+    regexmid.1 $e |- ( E. y y e. x ->
+      E. y ( y e. x /\ A. z ( z e. y -> -. z e. x ) ) ) $.
+    $( The axiom of foundation implies excluded middle.
+
+       By foundation (or regularity), we mean the principle that every
+       inhabited set has an element which is minimal (when arranged by
+       ` e. ` ).  The statement of foundation here is taken from Metamath Proof
+       Explorer's ax-reg, and is identical (modulo one unnecessary quantifier)
+       to the statement of foundation in Theorem "Foundation implies instances
+       of EM" of [Crosilla], p.  "Set-theoretic principles incompatible with
+       intuitionistic logic".
+
+       For this reason, IZF does not adopt foundation as an axiom and instead
+       replaces it with ~ ax-setind .  (Contributed by Jim Kingdon,
+       3-Sep-2019.) $)
+    regexmid $p |- ( ph \/ -. ph ) $=
+      ( vw cv c0 csn wceq wa wo wcel wex wel wn wi wal eleq2 exbidv pp0ex rabex
+      crab regexmidlemm notbid imbi2d albidv anbi12d imbi12d vtocl regexmidlem1
+      cpr eqid mp2b ) CGZFGZHIZJUPHJAKLZFHUQULZUCZMZCNZVADCOZDGZUTMZPZQZDRZKZCN
+      ZAAPLAFCUTUTUMZUDCBOZCNZVLVCDBOZPZQZDRZKZCNZQVBVJQBUTURFUSUAUBBGZUTJZVMVB
+      VSVJWAVLVACVTUTUOSZTWAVRVICWAVLVAVQVHWBWAVPVGDWAVOVFVCWAVNVEVTUTVDSUEUFUG
+      UHTUIEUJAFCDUTVKUKUN $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
