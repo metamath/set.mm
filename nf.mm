@@ -63273,7 +63273,7 @@ $(
 $)
 
   $( Declare new constants. $)
-  $c ~ord $. $( Ordinal similarity.$)
+  $c ~ord $. $( Ordinal similarity. $)
   
 
 $(
