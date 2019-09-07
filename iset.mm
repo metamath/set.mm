@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Sep-2019
+$( iset.mm - Version of 6-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -37661,6 +37661,27 @@ $)
     ( com wcel c0 wceq wo wne wb 0elnn noel eleq2 mtbiri nner 2falsed ne0i 2thd
     id jaoi syl ) ABCADEZDACZFUAADGZHZAITUCUATUAUBTUADDCDJADDKLADMNUAUAUBUAQADO
     PRS $.
+
+  ${
+    $d ph w x y z $.
+    nnregexmid.1 $e |- ( ( x C_ _om /\ E. y y e. x ) ->
+        E. y ( y e. x /\ A. z ( z e. y -> -. z e. x ) ) ) $.
+    $( If inhabited sets of natural numbers always have minimal elements,
+       excluded middle follows.  The argument is essentially the same as
+       ~ regexmid and the larger lesson is that although natural numbers may
+       behave "non-constructively" even in a constructive set theory (for
+       example see ~ nndceq or ~ nntri3or ), sets of natural numbers are a
+       different animal.  (Contributed by Jim Kingdon, 6-Sep-2019.) $)
+    nnregexmid $p |- ( ph \/ -. ph ) $=
+      ( vw cv c0 wceq wa wo wcel wel wn wi wal wex com wss peano1 csn crab csuc
+      cpr ssrab2 suc0 peano2 ax-mp eqeltrri prssi mp2an sstri eqid regexmidlemm
+      pp0ex rabex sseq1 eleq2 exbidv anbi12d notbid imbi2d albidv imbi12d vtocl
+      regexmidlem1 ) CGZFGZHUAZIVHHIAJKZFHVIUDZUBZLZDCMZDGZVLLZNZOZDPZJZCQZAANK
+      VLRSZVMCQZWAVLVKRVJFVKUEHRLZVIRLVKRSTHUCZVIRUFWDWERLTHUGUHUIHVIRUJUKULAFC
+      VLVLUMZUNBGZRSZCBMZCQZJZWIVNDBMZNZOZDPZJZCQZOWBWCJZWAOBVLVJFVKUOUPWGVLIZW
+      KWRWQWAWSWHWBWJWCWGVLRUQWSWIVMCWGVLVGURZUSUTWSWPVTCWSWIVMWOVSWTWSWNVRDWSW
+      MVQVNWSWLVPWGVLVOURVAVBVCUTUSVDEVEUKAFCDVLWFVFUH $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
