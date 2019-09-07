@@ -1,4 +1,4 @@
-$( iset.mm - Version of 6-Sep-2019
+$( iset.mm - Version of 7-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -5953,6 +5953,15 @@ $)
     dcbii $p |- ( DECID ph <-> DECID ps ) $=
       ( wn wo wdc notbii orbi12i df-dc 3bitr4i ) AADZEBBDZEAFBFABKLCABCGHAIBIJ
       $.
+  $}
+
+  ${
+    dcbid.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( The equivalent of a decidable proposition is decidable.  (Contributed by
+       Jim Kingdon, 7-Sep-2019.) $)
+    dcbid $p |- ( ph -> ( DECID ps <-> DECID ch ) ) $=
+      ( wn wo wdc notbid orbi12d df-dc 3bitr4g ) ABBEZFCCEZFBGCGABCLMDABCDHIBJC
+      JK $.
   $}
 
 $(
@@ -58127,6 +58136,24 @@ $)
       NUHCLZDLZOPUIELZFLZOPNUJUMQRUKULQRPNFSESDSCSZNABTUFABCDEFUAUNABUEUEUBUCUD
       $.
   $}
+
+  $( The equivalence relation for positive fractions is decidable.
+     (Contributed by Jim Kingdon, 7-Sep-2019.)  (New usage is discouraged.) $)
+  enqdc $p |- ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. ) ) ->
+      DECID <. A , B >. ~Q <. C , D >. ) $=
+    ( cnpi wcel wa cop ceq wbr wdc cmi co wceq mulclpi pinn nndceq syl2an an42s
+    com enqbreq dcbid mpbird ) AEFZBEFZGCEFZDEFZGGZABHCDHIJZKADLMZBCLMZNZKZUDUG
+    UEUFUMUDUGGUJEFZUKEFZUMUEUFGADOBCOUNUJTFUKTFUMUOUJPUKPUJUKQRRSUHUIULABCDUAU
+    BUC $.
+
+  $( The equivalence relation for positive fractions is decidable.
+     (Contributed by Jim Kingdon, 7-Sep-2019.)  (New usage is discouraged.) $)
+  enqdc1 $p |- ( ( ( A e. N. /\ B e. N. ) /\ C e. ( N. X. N. ) ) ->
+      DECID <. A , B >. ~Q C ) $=
+    ( cnpi wcel wa cxp cop ceq wbr wdc c1st cfv xp1st xp2nd jca enqdc sylan2 wb
+    c2nd 1st2nd2 breq2d dcbid adantl mpbird ) ADEBDEFZCDDGEZFABHZCIJZKZUHCLMZCT
+    MZHZIJZKZUGUFUKDEZULDEZFUOUGUPUQCDDNCDDOPABUKULQRUGUJUOSUFUGUIUNUGCUMUHICDD
+    UAUBUCUDUE $.
 
   ${
     $d x y $.
