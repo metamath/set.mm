@@ -1360,7 +1360,6 @@
 "axacndlem4" is used by "axacndlem5".
 "axacndlem5" is used by "axacnd".
 "axaddf" is used by "axaddcl".
-"axc16ALT2" is used by "ax16gALT".
 "axc4i-o" is used by "aev-o".
 "axc4i-o" is used by "ax12inda2ALT".
 "axc4i-o" is used by "ax12indalem".
@@ -13924,7 +13923,6 @@ New usage of "ax12v2-o" is discouraged (1 uses).
 New usage of "ax12vALT" is discouraged (0 uses).
 New usage of "ax13fromc9" is discouraged (0 uses).
 New usage of "ax16g-o" is discouraged (1 uses).
-New usage of "ax16gALT" is discouraged (0 uses).
 New usage of "ax16nfALT" is discouraged (0 uses).
 New usage of "ax1cn" is discouraged (0 uses).
 New usage of "ax1ne0" is discouraged (0 uses).
@@ -13960,8 +13958,9 @@ New usage of "axc11n-16" is discouraged (0 uses).
 New usage of "axc11next" is discouraged (0 uses).
 New usage of "axc11nfromc11" is discouraged (0 uses).
 New usage of "axc16ALT" is discouraged (0 uses).
-New usage of "axc16ALT2" is discouraged (1 uses).
+New usage of "axc16ALT2" is discouraged (0 uses).
 New usage of "axc16b" is discouraged (0 uses).
+New usage of "axc16gALT" is discouraged (0 uses).
 New usage of "axc4i-o" is discouraged (5 uses).
 New usage of "axc5" is discouraged (0 uses).
 New usage of "axc5c4c711to11" is discouraged (0 uses).
@@ -14798,6 +14797,7 @@ New usage of "chub2" is discouraged (14 uses).
 New usage of "chub2i" is discouraged (24 uses).
 New usage of "chunssji" is discouraged (0 uses).
 New usage of "circgrp" is discouraged (0 uses).
+New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "clmgm" is discouraged (1 uses).
 New usage of "cm0" is discouraged (1 uses).
 New usage of "cm2j" is discouraged (1 uses).
@@ -18302,7 +18302,6 @@ Proof modification of "ax12v2-o" is discouraged (107 steps).
 Proof modification of "ax12vALT" is discouraged (81 steps).
 Proof modification of "ax13fromc9" is discouraged (72 steps).
 Proof modification of "ax16g-o" is discouraged (40 steps).
-Proof modification of "ax16gALT" is discouraged (40 steps).
 Proof modification of "ax2" is discouraged (46 steps).
 Proof modification of "ax3" is discouraged (24 steps).
 Proof modification of "ax3h" is discouraged (21 steps).
@@ -18333,6 +18332,7 @@ Proof modification of "axc14" is discouraged (72 steps).
 Proof modification of "axc16ALT" is discouraged (20 steps).
 Proof modification of "axc16ALT2" is discouraged (62 steps).
 Proof modification of "axc16b" is discouraged (14 steps).
+Proof modification of "axc16gALT" is discouraged (40 steps).
 Proof modification of "axc16i" is discouraged (135 steps).
 Proof modification of "axc4" is discouraged (49 steps).
 Proof modification of "axc5" is discouraged (3 steps).
