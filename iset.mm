@@ -55764,6 +55764,13 @@ $)
     con2i 3jaoi syl df-dc sylibr ) ACDBCDEZABFZUDGZHZUDIUCABDZUDBADZJUFABKUGUFU
     DUHUGUEUDUDUGUDAADUGALABAMNROUDUEPUHUEUDUDUHUDUHBBDBLABBMQROSTUDUAUB $.
 
+  $( Set membership between two natural numbers is decidable.  (Contributed by
+     Jim Kingdon, 6-Sep-2019.) $)
+  nndcel $p |- ( ( A e. _om /\ B e. _om ) -> DECID A e. B ) $=
+    ( com wcel wa wn wo wdc wceq w3o nntri3or orc elirr eleq1 mtbiri olcd en2lp
+    imnani 3jaoi syl df-dc sylibr ) ACDBCDEZABDZUDFZGZUDHUCUDABIZBADZJUFABKUDUF
+    UGUHUDUELUGUEUDUGUDBBDBMABBNOPUHUEUDUHUDBAQRPSTUDUAUB $.
+
   ${
     $d A x y $.  $d B x y $.  $d C x $.
 
