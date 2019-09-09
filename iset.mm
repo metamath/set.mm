@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Sep-2019
+$( iset.mm - Version of 7-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -5953,6 +5953,15 @@ $)
     dcbii $p |- ( DECID ph <-> DECID ps ) $=
       ( wn wo wdc notbii orbi12i df-dc 3bitr4i ) AADZEBBDZEAFBFABKLCABCGHAIBIJ
       $.
+  $}
+
+  ${
+    dcbid.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( The equivalent of a decidable proposition is decidable.  (Contributed by
+       Jim Kingdon, 7-Sep-2019.) $)
+    dcbid $p |- ( ph -> ( DECID ps <-> DECID ch ) ) $=
+      ( wn wo wdc notbid orbi12d df-dc 3bitr4g ) ABBEZFCCEZFBGCGABCLMDABCDHIBJC
+      JK $.
   $}
 
 $(
@@ -37662,6 +37671,27 @@ $)
     id jaoi syl ) ABCADEZDACZFUAADGZHZAITUCUATUAUBTUADDCDJADDKLADMNUAUAUBUAQADO
     PRS $.
 
+  ${
+    $d ph w x y z $.
+    nnregexmid.1 $e |- ( ( x C_ _om /\ E. y y e. x ) ->
+        E. y ( y e. x /\ A. z ( z e. y -> -. z e. x ) ) ) $.
+    $( If inhabited sets of natural numbers always have minimal elements,
+       excluded middle follows.  The argument is essentially the same as
+       ~ regexmid and the larger lesson is that although natural numbers may
+       behave "non-constructively" even in a constructive set theory (for
+       example see ~ nndceq or ~ nntri3or ), sets of natural numbers are a
+       different animal.  (Contributed by Jim Kingdon, 6-Sep-2019.) $)
+    nnregexmid $p |- ( ph \/ -. ph ) $=
+      ( vw cv c0 wceq wa wo wcel wel wn wi wal wex com wss peano1 csn crab csuc
+      cpr ssrab2 suc0 peano2 ax-mp eqeltrri prssi mp2an sstri eqid regexmidlemm
+      pp0ex rabex sseq1 eleq2 exbidv anbi12d notbid imbi2d albidv imbi12d vtocl
+      regexmidlem1 ) CGZFGZHUAZIVHHIAJKZFHVIUDZUBZLZDCMZDGZVLLZNZOZDPZJZCQZAANK
+      VLRSZVMCQZWAVLVKRVJFVKUEHRLZVIRLVKRSTHUCZVIRUFWDWERLTHUGUHUIHVIRUJUKULAFC
+      VLVLUMZUNBGZRSZCBMZCQZJZWIVNDBMZNZOZDPZJZCQZOWBWCJZWAOBVLVJFVKUOUPWGVLIZW
+      KWRWQWAWSWHWBWJWCWGVLRUQWSWIVMCWGVLVGURZUSUTWSWPVTCWSWIVMWOVSWTWSWNVRDWSW
+      MVQVNWSWLVPWGVLVOURVAVBVCUTUSVDEVEUKAFCDVLWFVFUH $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                               Relations
@@ -55743,6 +55773,13 @@ $)
     con2i 3jaoi syl df-dc sylibr ) ACDBCDEZABFZUDGZHZUDIUCABDZUDBADZJUFABKUGUFU
     DUHUGUEUDUDUGUDAADUGALABAMNROUDUEPUHUEUDUDUHUDUHBBDBLABBMQROSTUDUAUB $.
 
+  $( Set membership between two natural numbers is decidable.  (Contributed by
+     Jim Kingdon, 6-Sep-2019.) $)
+  nndcel $p |- ( ( A e. _om /\ B e. _om ) -> DECID A e. B ) $=
+    ( com wcel wa wn wo wdc wceq w3o nntri3or orc elirr eleq1 mtbiri olcd en2lp
+    imnani 3jaoi syl df-dc sylibr ) ACDBCDEZABDZUDFZGZUDHUCUDABIZBADZJUFABKUDUF
+    UGUHUDUELUGUEUDUGUDBBDBMABBNOPUHUEUDUHUDBAQRPSTUDUAUB $.
+
   ${
     $d A x y $.  $d B x y $.  $d C x $.
 
@@ -58099,6 +58136,24 @@ $)
       NUHCLZDLZOPUIELZFLZOPNUJUMQRUKULQRPNFSESDSCSZNABTUFABCDEFUAUNABUEUEUBUCUD
       $.
   $}
+
+  $( The equivalence relation for positive fractions is decidable.
+     (Contributed by Jim Kingdon, 7-Sep-2019.)  (New usage is discouraged.) $)
+  enqdc $p |- ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. ) ) ->
+      DECID <. A , B >. ~Q <. C , D >. ) $=
+    ( cnpi wcel wa cop ceq wbr wdc cmi co wceq mulclpi pinn nndceq syl2an an42s
+    com enqbreq dcbid mpbird ) AEFZBEFZGCEFZDEFZGGZABHCDHIJZKADLMZBCLMZNZKZUDUG
+    UEUFUMUDUGGUJEFZUKEFZUMUEUFGADOBCOUNUJTFUKTFUMUOUJPUKPUJUKQRRSUHUIULABCDUAU
+    BUC $.
+
+  $( The equivalence relation for positive fractions is decidable.
+     (Contributed by Jim Kingdon, 7-Sep-2019.)  (New usage is discouraged.) $)
+  enqdc1 $p |- ( ( ( A e. N. /\ B e. N. ) /\ C e. ( N. X. N. ) ) ->
+      DECID <. A , B >. ~Q C ) $=
+    ( cnpi wcel wa cxp cop ceq wbr wdc c1st cfv xp1st xp2nd jca enqdc sylan2 wb
+    c2nd 1st2nd2 breq2d dcbid adantl mpbird ) ADEBDEFZCDDGEZFABHZCIJZKZUHCLMZCT
+    MZHZIJZKZUGUFUKDEZULDEZFUOUGUPUQCDDNCDDOPABUKULQRUGUJUOSUFUGUIUNUGCUMUHICDD
+    UAUBUCUDUE $.
 
   ${
     $d x y $.
