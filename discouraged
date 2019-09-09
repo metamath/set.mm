@@ -6498,7 +6498,6 @@
 "gsummhm2OLD" is used by "prdsgsumOLD".
 "gsummhmOLD" is used by "gsuminvOLD".
 "gsummhmOLD" is used by "gsummhm2OLD".
-"gsummhmOLD" is used by "gsummptmhm".
 "gsummulc1OLD" is used by "gsumdixpOLD".
 "gsummulc2OLD" is used by "gsumdixpOLD".
 "gsumptOLD" is used by "dprdfidOLD".
@@ -15796,7 +15795,7 @@ New usage of "gsumdixpOLD" is discouraged (0 uses).
 New usage of "gsumf1oOLD" is discouraged (2 uses).
 New usage of "gsuminvOLD" is discouraged (1 uses).
 New usage of "gsummhm2OLD" is discouraged (4 uses).
-New usage of "gsummhmOLD" is discouraged (3 uses).
+New usage of "gsummhmOLD" is discouraged (2 uses).
 New usage of "gsummptfsaddOLD" is discouraged (0 uses).
 New usage of "gsummulc1OLD" is discouraged (1 uses).
 New usage of "gsummulc2OLD" is discouraged (1 uses).
