@@ -57552,7 +57552,7 @@ already formalized in metamath. Its disadvantage, for our purposes, is that
 it assumes the law of the excluded middle throughout. Since we have already
 developed natural numbers ( for example, ~ nna0 and similar theorems ), going
 from there to positive integers ( ~ df-ni ) and then positive rational numbers
-( ~ df-nq ) does not involve any major change in approach compared with
+( ~ df-nqqs ) does not involve a major change in approach compared with
 the Metamath Proof Explorer.
 
 It is when we proceed to Dedekind cuts that we bring in more material from
@@ -57591,7 +57591,6 @@ $)
   $c ~Q $. $( Equivalence relation to construct positive fractions $)
   $c Q. $. $( Set of positive fractions $)
   $c 1Q $. $( Positive fraction constant 1 $)
-  $c /Q $. $( Positive fraction equivalence class $)
   $c +Q $. $( Positive fraction addition $)
   $c .Q $. $( Positive fraction multiplication $)
   $c *Q $. $( Positive fraction reciprocal $)
@@ -57655,8 +57654,6 @@ $)
   cnq $a class Q. $.
   $( The positive fraction constant 1. $)
   c1q $a class 1Q $.
-  $( Positive fraction equivalence class. $)
-  cerq $a class /Q $.
   $( Positive fraction addition. $)
   cplq $a class +Q $.
   $( Positive fraction multiplication. $)
@@ -58000,11 +57997,11 @@ $)
        used in the construction of complex numbers, and is intended to be used
        only by the construction.  This "pre-addition" operation works directly
        with ordered pairs of integers.  The actual positive fraction addition
-       ` +Q ` ( ~ df-plq ) works with the equivalence classes of these ordered
-       pairs determined by the equivalence relation ` ~Q ` ( ~ df-enq ).
-       (Analogous remarks apply to the other "pre-" operations in the complex
-       number construction that follows.)  From Proposition 9-2.3 of [Gleason]
-       p. 117.  (Contributed by NM, 28-Aug-1995.)
+       ` +Q ` ( ~ df-plqqs ) works with the equivalence classes of these
+       ordered pairs determined by the equivalence relation ` ~Q `
+       ( ~ df-enq ).  (Analogous remarks apply to the other "pre-" operations
+       in the complex number construction that follows.)  From Proposition
+       9-2.3 of [Gleason] p. 117.  (Contributed by NM, 28-Aug-1995.)
        (New usage is discouraged.) $)
     df-plpq $a |- +pQ = ( x e. ( N. X. N. ) , y e. ( N. X. N. ) |->
       <. ( ( ( 1st ` x ) .N ( 2nd ` y ) ) +N
@@ -58043,32 +58040,31 @@ $)
        the construction of complex numbers, and is intended to be used only by
        the construction.  From Proposition 9-2.2 of [Gleason] p. 117.
        (Contributed by NM, 16-Aug-1995.)  (New usage is discouraged.) $)
-    df-nq $a |- Q. = { x e. ( N. X. N. ) | A. y e. ( N. X. N. )
-      ( x ~Q y -> -. ( 2nd ` y ) <N ( 2nd ` x ) ) } $.
-
-    $( Define a convenience function that "reduces" a fraction to lowest
-       terms.  Note that in this form, it is not obviously a function; we will
-       prove this later.  (Contributed by NM, 27-Aug-1995.)
-       (New usage is discouraged.) $)
-    df-erq $a |- /Q = ( ~Q i^i ( ( N. X. N. ) X. Q. ) ) $.
+    df-nqqs $a |- Q. = ( ( N. X. N. ) /. ~Q ) $.
 
     $( Define addition on positive fractions.  This is a "temporary" set used
        in the construction of complex numbers, and is intended to be used only
        by the construction.  From Proposition 9-2.3 of [Gleason] p. 117.
        (Contributed by NM, 24-Aug-1995.)  (New usage is discouraged.) $)
-    df-plq $a |- +Q = ( ( /Q o. +pQ ) |` ( Q. X. Q. ) ) $.
+    df-plqqs $a |- +Q = { <. <. x , y >. , z >. | ( ( x e. Q. /\ y e. Q. ) /\
+      E. w E. v E. u E. f (
+         ( x = [ <. w , v >. ] ~Q /\ y = [ <. u , f >. ] ~Q ) /\
+               z = [ ( <. w , v >. +pQ <. u , f >. ) ] ~Q ) ) } $.
 
     $( Define multiplication on positive fractions.  This is a "temporary" set
        used in the construction of complex numbers, and is intended to be used
        only by the construction.  From Proposition 9-2.4 of [Gleason] p. 119.
        (Contributed by NM, 24-Aug-1995.)  (New usage is discouraged.) $)
-    df-mq $a |- .Q = ( ( /Q o. .pQ ) |` ( Q. X. Q. ) ) $.
+    df-mqqs $a |- .Q = { <. <. x , y >. , z >. | ( ( x e. Q. /\ y e. Q. ) /\
+      E. w E. v E. u E. f (
+         ( x = [ <. w , v >. ] ~Q /\ y = [ <. u , f >. ] ~Q ) /\
+               z = [ ( <. w , v >. .pQ <. u , f >. ) ] ~Q ) ) } $.
 
     $( Define positive fraction constant 1.  This is a "temporary" set used in
        the construction of complex numbers, and is intended to be used only by
        the construction.  From Proposition 9-2.2 of [Gleason] p. 117.
        (Contributed by NM, 29-Oct-1995.)  (New usage is discouraged.) $)
-    df-1nq $a |- 1Q = <. 1o , 1o >. $.
+    df-1nqqs $a |- 1Q = [ <. 1o , 1o >. ] ~Q $.
 
     $( Define reciprocal on positive fractions.  It means the same thing as one
        divided by the argument (although we don't define full division since we
@@ -58084,8 +58080,10 @@ $)
        used only by the construction.  Similar to Definition 5 of [Suppes]
        p. 162.  (Contributed by NM, 13-Feb-1996.)
        (New usage is discouraged.) $)
-    df-ltnq $a |- <Q = ( <pQ i^i ( Q. X. Q. ) ) $.
-
+    df-ltnqqs $a |- <Q = { <. x , y >. | ( ( x e. Q. /\ y e. Q. ) /\
+       E. z E. w E. v E. u
+       ( ( x = [ <. z , w >. ] ~Q /\ y = [ <. v , u >. ] ~Q ) /\
+                ( z +pQ u ) <pQ ( w +pQ v ) ) ) } $.
   $}
 
   ${
@@ -58156,51 +58154,30 @@ $)
     UAUBUCUDUE $.
 
   ${
-    $d x y $.
+    $d x y z w u v $.
     $( The class of positive fractions exists.  (Contributed by NM,
        16-Aug-1995.)  (Revised by Mario Carneiro, 27-Apr-2013.)
        (New usage is discouraged.) $)
     nqex $p |- Q. e. _V $=
-      ( vy vx cnq cv ceq wbr c2nd cfv clti wn cnpi cxp wral crab cvv df-nq niex
-      wi xpex rabex eqeltri ) CADZBDZEFUCGHUBGHIFJRBKKLZMZAUDNOABPUEAUDKKQQSTUA
-      $.
+      ( cnq cnpi cxp ceq cqs cvv df-nqqs niex xpex qsex eqeltri ) ABBCZDEFGLDBB
+      HHIJK $.
 
     $( The empty set is not a positive fraction.  (Contributed by NM,
        24-Aug-1995.)  (Revised by Mario Carneiro, 27-Apr-2013.)
        (New usage is discouraged.) $)
     0nnq $p |- -. (/) e. Q. $=
-      ( vy vx c0 cnq wcel cnpi cxp 0nelxp cv ceq wbr c2nd cfv clti wn wral crab
-      wi df-nq ssrab2 eqsstri sseli mto ) CDECFFGZEFFHDUDCDAIZBIZJKUFLMUELMNKOR
-      BUDPZAUDQUDABSUGAUDTUAUBUC $.
-
-    $( Each positive fraction is an ordered pair of positive integers (the
-       numerator and denominator, in "lowest terms".  (Contributed by Mario
-       Carneiro, 28-Apr-2013.)  (New usage is discouraged.) $)
-    elpqn $p |- ( A e. Q. -> A e. ( N. X. N. ) ) $=
-      ( vy vx cnq cnpi cxp cv ceq wbr c2nd cfv clti wn wral crab ssrab2 eqsstri
-      wi df-nq sseli ) DEEFZADBGZCGZHIUCJKUBJKLIMRCUANZBUAOUABCSUDBUAPQT $.
+      ( c0 cnq wcel cnpi cxp ceq cqs wne neirr cdm wceq enqer erdm ax-mp elqsn0
+      wer mpan mto df-nqqs eleq2i mtbir ) ABCADDEZFGZCZUDAAHZAIFJUBKZUDUEUBFPUF
+      LUBFMNUBAFOQRBUCASTUA $.
 
     $( Positive fraction 'less than' is a relation on positive fractions.
        (Contributed by NM, 14-Feb-1996.)  (Revised by Mario Carneiro,
        27-Apr-2013.)  (New usage is discouraged.) $)
     ltrelnq $p |- <Q C_ ( Q. X. Q. ) $=
-      ( cltq cltpq cnq cxp cin df-ltnq inss2 eqsstri ) ABCCDZEIFBIGH $.
-  $}
-
-  ${
-    $d A x y $.
-    $( The representatives of positive integers as positive fractions.
-       (Contributed by NM, 29-Oct-1995.)  (Revised by Mario Carneiro,
-       6-May-2013.)  (New usage is discouraged.) $)
-    pinq $p |- ( A e. N. -> <. A , 1o >. e. Q. ) $=
-      ( vx vy cnpi wcel c1o cv ceq wbr c2nd cfv clti wn wral 1pi mpan2 cvv wceq
-      wi breq2d cop cxp cnq opelxpi wa xp2nd nlt1pig syl adantl wb elexi op2ndg
-      crab adantr mtbird a1d ralrimiva breq1 fveq2 notbid imbi12d ralbidv elrab
-      sylanbrc df-nq syl6eleqr ) ADEZAFUAZBGZCGZHIZVJJKZVIJKZLIZMZSZCDDUBZNZBVQ
-      UMZUCVGVHVQEZVHVJHIZVLVHJKZLIZMZSZCVQNZVHVSEVGFDEVTOAFDDUDPVGWECVQVGVJVQE
-      ZUEZWDWAWHWCVLFLIZWGWIMZVGWGVLDEWJVJDDUFVLUGUHUIVGWCWIUJWGVGWBFVLLVGFQEWB
-      FRFDOUKAFDQULPTUNUOUPUQVRWFBVHVQVIVHRZVPWECVQWKVKWAVOWDVIVHVJHURWKVNWCWKV
-      MWBVLLVIVHJUSTUTVAVBVCVDBCVEVF $.
+      ( vx vy vz vw vv vu cltq cv cnq wcel wa cop ceq cec cplpq cltpq
+      wceq co wbr wex copab cxp df-ltnqqs opabssxp eqsstri ) GAHZIJBH
+      ZIJKUFCHZDHZLMNQUGEHZFHZLMNQKUHUKORUIUJORPSKFTETDTCTZKABUAIIUBA
+      BCDEFUCULABIIUDUE $.
   $}
 
   ${
@@ -59106,9 +59083,6 @@ htmldef "Q." as "<IMG SRC='calq.gif' WIDTH=12 HEIGHT=19 ALT=' Q.' TITLE='Q.'>";
 htmldef "1Q" as "<IMG SRC='_1q.gif' WIDTH=16 HEIGHT=19 ALT=' 1Q' TITLE='1Q'>";
   althtmldef "1Q" as '1<I><SUB><B>Q</B></SUB></I>';
   latexdef "1Q" as "1_{\cal Q}";
-htmldef "/Q" as "<IMG SRC='_erq.gif' WIDTH=17 HEIGHT=19 ALT=' /Q' TITLE='/Q'>";
-  althtmldef "/Q" as '[<I><B>Q</B></I>]';
-  latexdef "/Q" as "[{\cal Q}]";
 htmldef "+Q" as
     " <IMG SRC='_plq.gif' WIDTH=21 HEIGHT=19 ALT=' +Q' TITLE='+Q'> ";
   althtmldef "+Q" as ' +<I><SUB><B>Q</B></SUB></I> ';
