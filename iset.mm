@@ -58124,6 +58124,16 @@ $)
       UCCPZLUBHMUCHMUDHMNUBUCFQUBUDFQRUCUDRUBUCUDSTUA $.
   $}
 
+  $( Equivalence class equality of positive fractions in terms of positive
+     integers.  (Contributed by NM, 29-Nov-1995.)
+     (New usage is discouraged.) $)
+  enqeceq $p |- ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. ) ) ->
+                ( [ <. A , B >. ] ~Q = [ <. C , D >. ] ~Q <->
+                ( A .N D ) = ( B .N C ) ) ) $=
+    ( cnpi wcel wa cop ceq wbr cec wceq cmi co cxp wer enqer a1i opelxpi adantr
+    erth enqbreq bitr3d ) AEFBEFGZCEFDEFGZGZABHZCDHZIJUGIKUHIKLADMNBCMNLUFUGUHI
+    EEOZUIIPUFQRUDUGUIFUEABEESTUAABCDUBUC $.
+
   ${
     $d x y z w v u $.
     $( The equivalence relation for positive fractions exists.  (Contributed by
