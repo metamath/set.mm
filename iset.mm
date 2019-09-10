@@ -58193,11 +58193,11 @@ $)
   ${
     $d x y $.
     $( The positive fraction 'one'.  (Contributed by NM, 29-Oct-1995.)
-       (Revised by Mario Carneiro, 28-Apr-2013.)
        (New usage is discouraged.) $)
     1nq $p |- 1Q e. Q. $=
-      ( c1q c1o cop cnq df-1nq cnpi wcel 1pi pinq ax-mp eqeltri ) ABBCZDEBFGLDG
-      HBIJK $.
+      ( c1o cop ceq cec cnpi cxp cqs c1q cnq wcel 1pi opelxpi mp2an enqex ax-mp
+      ecelqsi df-1nqqs df-nqqs 3eltr4i ) AABZCDZEEFZCGZHITUBJZUAUCJAEJZUEUDKKAA
+      EELMUBTCNPOQRS $.
   $}
 
 $(
