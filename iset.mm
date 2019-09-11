@@ -58200,6 +58200,39 @@ $)
       EELMUBTCNPOQRS $.
   $}
 
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.  $d x y z F $.
+    $d x y z G $.  $d x y z R $.  $d x y z S $.
+
+    $( Lemma showing compatibility of addition.  (Contributed by NM,
+       27-Aug-1995.)  (New usage is discouraged.) $)
+    addcmpblnq $p |- ( ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. )
+             ) /\ ( ( F e. N. /\ G e. N. ) /\ ( R e. N. /\ S e. N. ) ) ) ->
+                ( ( ( A .N D ) = ( B .N C ) /\ ( F .N S ) = ( G .N R ) ) ->
+                 <. ( ( A .N G ) +N ( B .N F ) ) , ( B .N G ) >. ~Q
+                 <. ( ( C .N S ) +N ( D .N R ) ) , ( D .N S ) >. ) ) $=
+      ( vx vy vz cnpi wcel wa cmi co wceq cpli adantl mulclpi distrpig ad2ant2l
+      cop ceq wbr w3a simplll simprlr syl2anc simpllr simprll addclpi mulcompig
+      cv caovdir2d simplrr mulasspig simprrr caov4d eqtrd oveq1 oveq2 oveqan12d
+      oveq12d sylan9eq simplrl simprrl syl3anc adantr eqtr4d syl2an jca anim12i
+      wb an42s an4s enqbreq syl mpbird ex ) ALMZBLMZNZCLMZDLMZNZNZGLMZHLMZNZELM
+      ZFLMZNZNZNZADOPZBCOPZQZGFOPZHEOPZQZNZAHOPZBGOPZRPZBHOPZUCCFOPZDEOPZRPZDFO
+      PZUCUDUEZWOXBNZXKXEXJOPZXFXIOPZQZXLXMWQHFOPZOPZBDOPZWTOPZRPZXNWOXBXMWPXPO
+      PZXRWSOPZRPZXTWOXMXCXJOPZXDXJOPZRPYCWOIJKXCXDXJLROIUNZLMZJUNZLMZKUNZLMUFZ
+      YFYHYJRPOPYFYHOPZYFYJOPRPQWOYFYHYJUASWOWAWIXCLMZWAWBWFWNUGZWGWHWIWMUHZAHT
+      ZUIWOWBWHXDLMZWAWBWFWNUJZWGWHWIWMUKZBGTZUIWFWMXJLMZWCWJWEWLUUAWDWKDFTUBZU
+      BYGYINZYFYHRPLMWOYFYHULSUUCYLYHYFOPQWOYFYHUMSZUOWOYDYAYEYBRWOIJKAHDFLOYNY
+      OWCWDWEWNUPZUUDYKYLYJOPYFYHYJOPOPQWOYFYHYJUQSZWGWJWKWLURZUUCYLLMWOYFYHTSZ
+      USWOIJKBGDFLOYRYSUUEUUDUUFUUGUUHUSVDUTWRXAYAXQYBXSRWPWQXPOVAWSWTXROVBVCVE
+      WOXNXTQXBWOXNXFXGOPZXFXHOPZRPZXTWOXFLMZXGLMZXHLMZXNUUKQWOWBWIUULYRYOBHTZU
+      IWOWDWLUUMWCWDWEWNVFZUUGCFTZUIWOWEWKUUNUUEWGWJWKWLVGZDETZUIXFXGXHUAVHWOUU
+      IXQUUJXSRWOIJKBHCFLOYRYOUUPUUDUUFUUGUUHUSWOIJKBHDELOYRYOUUEUUDUUFUURUUHUS
+      VDUTVIVJWOXKXOVNZXBWOXELMZUULNZXILMZUUANZNZUUTWCWJWFWMUVEWCWJNZUVBWFWMNZU
+      VDUVFUVAUULWAWIWBWHUVAWAWINYMYQUVAWBWHNYPYTXCXDULVKVOWBWIUULWAWHUUOUBVLUV
+      GUVCUUAWDWLWEWKUVCWDWLNUUMUUNUVCWEWKNUUQUUSXGXHULVKVOUUBVLVMVPXEXFXIXJVQV
+      RVIVSVT $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
