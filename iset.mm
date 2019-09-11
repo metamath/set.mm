@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Sep-2019
+$( iset.mm - Version of 11-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -50487,33 +50487,35 @@ $)
     $d f t u v w x y z A $.  $d f t u v w x y z B $.  $d t F $.  $d x y z R $.
     $d f t u v w y z C $.  $d f t u v w y z D $.  $d f t u v w x y z H $.
     $d f t u v w z S $.
-    ov3.1 $e |- S e. _V $.
-    ov3.2 $e |- ( ( ( w = A /\ v = B ) /\ ( u = C /\ f = D ) ) ->
+    ovi3.1 $e |- ( ( ( A e. H /\ B e. H ) /\ ( C e. H /\ D e. H ) ) ->
+        S e. ( H X. H ) ) $.
+    ovi3.2 $e |- ( ( ( w = A /\ v = B ) /\ ( u = C /\ f = D ) ) ->
          R = S ) $.
-    ov3.3 $e |- F = { <. <. x , y >. , z >. | ( ( x e. ( H X. H ) /\
+    ovi3.3 $e |- F = { <. <. x , y >. , z >. | ( ( x e. ( H X. H ) /\
                       y e. ( H X. H ) ) /\
                       E. w E. v E. u E. f ( ( x = <. w , v >. /\
                       y = <. u , f >. ) /\ z = R ) ) } $.
     $( The value of an operation class abstraction.  Special case.
        (Contributed by NM, 28-May-1995.)  (Revised by Mario Carneiro,
        29-Dec-2014.) $)
-    ov3 $p |- ( ( ( A e. H /\ B e. H ) /\ ( C e. H /\ D e. H ) ) ->
+    ovi3 $p |- ( ( ( A e. H /\ B e. H ) /\ ( C e. H /\ D e. H ) ) ->
         ( <. A , B >. F <. C , D >. ) = S ) $=
-      ( wa wex wcel cv wceq cop isseti nfv nfcv cxp coprab nfoprab3 nfcxfr nfov
-      co nfeq1 eqeq2d copsex4g wi opelxpi nfoprab1 nfim nfoprab2 anbi1d 4exbidv
-      eqeq1 oveq1 eqeq1d imbi12d anbi2d oveq2 moeq mosubop anass 2exbii 19.42vv
-      wmo bitri mobii mpbir a1i ovidi vtocl2gaf syl2an sylbird eqeq2 mpbidi mpi
-      exlimd ) GOUAHOUASZIOUAJOUASZSZCUBZLUCZCTGHUDZIJUDZNUMZLUCZCLPUEWJWLWPCWJ
-      CUFCWOLCWMWNNCWMUGCNAUBZOOUHZUABUBZWRUASZWQDUBZEUBZUDZUCZWSFUBZMUBZUDZUCZ
-      SZWKKUCZSZMTFTZETDTZSZABCUIZRXNABCUJUKCWNUGULUNWLWOWKUCZWPWJWJWLWMXCUCZWN
-      XGUCZSZXJSZMTFTETDTZXPXJWLDEFMGHIJOOXAGUCXBHUCSXEIUCXFJUCSSKLWKQUOUPWHWMW
-      RUAWNWRUAYAXPUQZWIGHOOURIJOOURXMWQWSNUMZWKUCZUQXQXHSZXJSZMTFTETDTZWMWSNUM
-      ZWKUCZUQYBABWMWNWRWRAWMUGZBWMUGZBWNUGZYGYIAYGAUFAYHWKAWMWSNYJANXORXNABCUS
-      UKAWSUGULUNUTYAXPBYABUFBWOWKBWMWNNYKBNXORXNABCVAUKYLULUNUTWQWMUCZXMYGYDYI
-      YMXKYFDEFMYMXIYEXJYMXDXQXHWQWMXCVDVBVBVCYMYCYHWKWQWMWSNVEVFVGWSWNUCZYGYAY
-      IXPYNYFXTDEFMYNYEXSXJYNXHXRXQWSWNXGVDVHVBVCYNYHWOWKWSWNWMNVIVFVGXMABCWRWR
-      NXMCVOZWTYOXDXHXJSZMTFTZSZETDTZCVOYQCDEWQXJCFMWSCKVJVKVKXMYSCXLYRDEXLXDYP
-      SZMTFTYRXKYTFMXDXHXJVLVMXDYPFMVNVPVMVQVRVSRVTWAWBWCWKLWOWDWEWGWF $.
+      ( wa wex wcel cv wceq cop co cvv cxp elex syl isset sylib nfv nfcv coprab
+      nfoprab3 nfcxfr nfov nfeq1 eqeq2d copsex4g opelxpi nfoprab1 nfim nfoprab2
+      eqeq1 anbi1d 4exbidv oveq1 eqeq1d imbi12d anbi2d oveq2 moeq mosubop anass
+      wi wmo 2exbii 19.42vv bitri mobii mpbir a1i ovidi vtocl2gaf sylbird eqeq2
+      syl2an mpbidi exlimd mpd ) GOUAHOUASZIOUAJOUASZSZCUBZLUCZCTZGHUDZIJUDZNUE
+      ZLUCZWNLUFUAZWQWNLOOUGZUAXBPLXCUHUICLUJUKWNWPXACWNCULCWTLCWRWSNCWRUMCNAUB
+      ZXCUABUBZXCUASZXDDUBZEUBZUDZUCZXEFUBZMUBZUDZUCZSZWOKUCZSZMTFTZETDTZSZABCU
+      NZRXTABCUOUPCWSUMUQURWPWTWOUCZXAWNWNWPWRXIUCZWSXMUCZSZXPSZMTFTETDTZYBXPWP
+      DEFMGHIJOOXGGUCXHHUCSXKIUCXLJUCSSKLWOQUSUTWLWRXCUAWSXCUAYGYBVPZWMGHOOVAIJ
+      OOVAXSXDXENUEZWOUCZVPYCXNSZXPSZMTFTETDTZWRXENUEZWOUCZVPYHABWRWSXCXCAWRUMZ
+      BWRUMZBWSUMZYMYOAYMAULAYNWOAWRXENYPANYARXTABCVBUPAXEUMUQURVCYGYBBYGBULBWT
+      WOBWRWSNYQBNYARXTABCVDUPYRUQURVCXDWRUCZXSYMYJYOYSXQYLDEFMYSXOYKXPYSXJYCXN
+      XDWRXIVEVFVFVGYSYIYNWOXDWRXENVHVIVJXEWSUCZYMYGYOYBYTYLYFDEFMYTYKYEXPYTXNY
+      DYCXEWSXMVEVKVFVGYTYNWTWOXEWSWRNVLVIVJXSABCXCXCNXSCVQZXFUUAXJXNXPSZMTFTZS
+      ZETDTZCVQUUCCDEXDXPCFMXECKVMVNVNXSUUECXRUUDDEXRXJUUBSZMTFTUUDXQUUFFMXJXNX
+      PVOVRXJUUBFMVSVTVRWAWBWCRWDWEWHWFWOLWTWGWIWJWK $.
   $}
 
   ${
@@ -57375,61 +57377,64 @@ $)
     $d a b c d f g h u v w x y z B $.  $d f u v w x y z K $.  $d u v w z ps $.
     $d f u v w x y z L $.  $d x y ph $.  $d a b c d f g h s t u v w x y z S $.
     $d a b c d g h s t x y z .+ $.  $d a b c d g h s t x y z .~ $.
-    ovec.1 $e |- H e. _V $.
-    ovec.2 $e |- K e. _V $.
-    ovec.3 $e |- L e. _V $.
-    ovec.4 $e |- .~ e. _V $.
-    ovec.5 $e |- .~ Er ( S X. S ) $.
+    oviec.1 $e |- ( ( ( A e. S /\ B e. S ) /\ ( C e. S /\ D e. S ) ) ->
+        H e. ( S X. S ) ) $.
+    oviec.2 $e |- ( ( ( a e. S /\ b e. S ) /\ ( g e. S /\ h e. S ) ) ->
+        K e. ( S X. S ) ) $.
+    oviec.3 $e |- ( ( ( c e. S /\ d e. S ) /\ ( t e. S /\ s e. S ) ) ->
+        L e. ( S X. S ) ) $.
+    oviec.4 $e |- .~ e. _V $.
+    oviec.5 $e |- .~ Er ( S X. S ) $.
     $( Equivalence relation. $)
-    ovec.7 $e |- .~ = { <. x , y >. | ( ( x e. ( S X. S ) /\
+    oviec.7 $e |- .~ = { <. x , y >. | ( ( x e. ( S X. S ) /\
                       y e. ( S X. S ) ) /\
                       E. z E. w E. v E. u ( ( x = <. z , w >. /\
                       y = <. v , u >. ) /\ ph ) ) } $.
     $( Substitutions for equivalence relation. $)
-    ovec.8 $e |- ( ( ( z = a /\ w = b ) /\ ( v = c /\ u = d ) ) ->
+    oviec.8 $e |- ( ( ( z = a /\ w = b ) /\ ( v = c /\ u = d ) ) ->
                      ( ph <-> ps ) ) $.
-    ovec.9 $e |- ( ( ( z = g /\ w = h ) /\ ( v = t /\ u = s ) ) ->
+    oviec.9 $e |- ( ( ( z = g /\ w = h ) /\ ( v = t /\ u = s ) ) ->
                      ( ph <-> ch ) ) $.
     $( Pre-operation. $)
-    ovec.10 $e |- .+ = { <. <. x , y >. , z >. | ( ( x e. ( S X. S ) /\
+    oviec.10 $e |- .+ = { <. <. x , y >. , z >. | ( ( x e. ( S X. S ) /\
                       y e. ( S X. S ) ) /\
                       E. w E. v E. u E. f ( ( x = <. w , v >. /\
                       y = <. u , f >. ) /\ z = J ) ) } $.
     $( Substitutions for pre-operation. $)
-    ovec.11 $e |- ( ( ( w = a /\ v = b ) /\ ( u = g /\ f = h ) ) -> J = K ) $.
-    ovec.12 $e |- ( ( ( w = c /\ v = d ) /\ ( u = t /\ f = s ) ) -> J = L ) $.
-    ovec.13 $e |- ( ( ( w = A /\ v = B ) /\ ( u = C /\ f = D ) ) -> J = H ) $.
+    oviec.11 $e |- ( ( ( w = a /\ v = b ) /\ ( u = g /\ f = h ) ) -> J = K ) $.
+    oviec.12 $e |- ( ( ( w = c /\ v = d ) /\ ( u = t /\ f = s ) ) -> J = L ) $.
+    oviec.13 $e |- ( ( ( w = A /\ v = B ) /\ ( u = C /\ f = D ) ) -> J = H ) $.
     $( Main operation. $)
-    ovec.14 $e |- .+^ = { <. <. x , y >. , z >. | ( ( x e. Q /\ y e. Q ) /\
+    oviec.14 $e |- .+^ = { <. <. x , y >. , z >. | ( ( x e. Q /\ y e. Q ) /\
            E. a E. b E. c E. d ( (
            x = [ <. a , b >. ] .~ /\ y = [ <. c , d >. ] .~ ) /\
            z = [ ( <. a , b >. .+ <. c , d >. ) ] .~ ) ) } $.
     $( Quotient class for main operation. $)
-    ovec.15 $e |- Q = ( ( S X. S ) /. .~ ) $.
+    oviec.15 $e |- Q = ( ( S X. S ) /. .~ ) $.
     $( Lemma to establish compatibility of pre-operation. $)
-    ovec.16 $e |- ( ( ( ( a e. S /\ b e. S ) /\ ( c e. S /\ d e. S ) ) /\
+    oviec.16 $e |- ( ( ( ( a e. S /\ b e. S ) /\ ( c e. S /\ d e. S ) ) /\
                        ( ( g e. S /\ h e. S ) /\ ( t e. S /\ s e. S ) ) ) ->
                    ( ( ps /\ ch ) -> K .~ L ) ) $.
     $( Express an operation on equivalence classes of ordered pairs in terms of
-       equivalence class of operations on ordered pairs.  See set.mm for
+       equivalence class of operations on ordered pairs.  See iset.mm for
        additional comments describing the hypotheses.  (Unnecessary distinct
        variable restrictions were removed by David Abernethy, 4-Jun-2013.)
        (Contributed by NM, 6-Aug-1995.)  (Revised by Mario Carneiro,
        4-Jun-2013.) $)
-    ovec $p |- ( ( ( A e. S /\ B e. S ) /\ ( C e. S /\ D e. S ) ) ->
+    oviec $p |- ( ( ( A e. S /\ B e. S ) /\ ( C e. S /\ D e. S ) ) ->
                 ( [ <. A , B >. ] .~ .+^ [ <. C , D >. ] .~ ) =
                    [ H ] .~ ) $=
-      ( wcel wa cop cec co cv wbr opbrop bi2anan9 wb ov3 breqan12d an4s 3imtr4d
-      wceq wex coprab cxp eleq2i anbi12i anbi1i oprabbii eqtri th3q eceq1 eqtrd
-      cqs syl ) KSVGLSVGVHMSVGNSVGVHVHZKLVIZRVJMNVIZRVJPVKWPWQOVKZRVJZUCRVJZDEF
-      UHUIUJUKKLMNORSUBJUGPUAUOUPUHVLZSVGUIVLZSVGVHZUJVLZSVGUKVLZSVGVHZVHZUAVLZ
-      SVGUBVLZSVGVHZJVLZSVGUGVLZSVGVHZVHZVHBCVHUEUFRVMZXAXBVIZXDXEVIZRVMZXHXIVI
-      ZXKXLVIZRVMZVHXPXSOVKZXQXTOVKZRVMZVFXGXRBXNYACABDEFGHIXAXBXDXERSURUQVNACD
-      EFGHIXHXIXKXLRSUSUQVNVOXCXJXFXMYDXOVPXCXJVHXFXMVHYBUEYCUFRDEFGHIXAXBXHXIU
-      DUETOSUMVAUTVQDEFGHIXDXEXKXLUDUFTOSUNVBUTVQVRVSVTPDVLZQVGZEVLZQVGZVHZYEXP
-      RVJWAYGXQRVJWAVHFVLXPXQOVKRVJWAVHUKWBUJWBUIWBUHWBZVHZDEFWCYESSWDRWMZVGZYG
-      YLVGZVHZYJVHZDEFWCVDYKYPDEFYIYOYJYFYMYHYNQYLYEVEWEQYLYGVEWEWFWGWHWIWJWOWR
-      UCWAWSWTWADEFGHIKLMNUDUCTOSULVCUTVQWRUCRWKWNWL $.
+      ( wcel wa cop cec co wbr opbrop bi2anan9 ovi3 breqan12d an4s 3imtr4d wceq
+      cv wex coprab cxp cqs eleq2i anbi12i anbi1i oprabbii eqtri th3q eceq1 syl
+      wb eqtrd ) KSVGLSVGVHMSVGNSVGVHVHZKLVIZRVJMNVIZRVJPVKWPWQOVKZRVJZUCRVJZDE
+      FUHUIUJUKKLMNORSUBJUGPUAUOUPUHVTZSVGUIVTZSVGVHZUJVTZSVGUKVTZSVGVHZVHZUAVT
+      ZSVGUBVTZSVGVHZJVTZSVGUGVTZSVGVHZVHZVHBCVHUEUFRVLZXAXBVIZXDXEVIZRVLZXHXIV
+      IZXKXLVIZRVLZVHXPXSOVKZXQXTOVKZRVLZVFXGXRBXNYACABDEFGHIXAXBXDXERSURUQVMAC
+      DEFGHIXHXIXKXLRSUSUQVMVNXCXJXFXMYDXOWMXCXJVHXFXMVHYBUEYCUFRDEFGHIXAXBXHXI
+      UDUETOSUMVAUTVODEFGHIXDXEXKXLUDUFTOSUNVBUTVOVPVQVRPDVTZQVGZEVTZQVGZVHZYEX
+      PRVJVSYGXQRVJVSVHFVTXPXQOVKRVJVSVHUKWAUJWAUIWAUHWAZVHZDEFWBYESSWCRWDZVGZY
+      GYLVGZVHZYJVHZDEFWBVDYKYPDEFYIYOYJYFYMYHYNQYLYEVEWEQYLYGVEWEWFWGWHWIWJWOW
+      RUCVSWSWTVSDEFGHIKLMNUDUCTOSULVCUTVOWRUCRWKWLWN $.
   $}
 
   ${
