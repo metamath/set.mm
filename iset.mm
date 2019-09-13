@@ -57990,11 +57990,10 @@ $)
   $( No positive integer is less than one.  (Contributed by Jim Kingdon,
      31-Aug-2019.)  (New usage is discouraged.) $)
   nlt1pig $p |- ( A e. N. -> -. A <N 1o ) $=
-    ( cnpi wcel c0 wne c1o clti wbr wn com elni simprbi wceq wa wo wb
-    noel 1pi ltpiord mpan2 csuc df-1o eleq2i elsucg syl5bb biimpa ord
-    bitrd mpi ex necon3ad mpd ) ABCZADEZAFGHZIUMAJCUNAKLUMUOADUMUOADM
-    ZUMUONZADCZIUPAQUQURUPUMUOURUPOZUMUOAFCZUSUMFBCUOUTPRAFSTUTADUAZC
-    UMUSFVAAUBUCADBUDUEUHUFUGUIUJUKUL $.
+    ( cnpi wcel c0 wne c1o clti wbr wn com elni simprbi wceq wa noel wo ltpiord
+    wb 1pi mpan2 csuc df-1o eleq2i elsucg syl5bb biimpa ord mpi ex necon3ad mpd
+    bitrd ) ABCZADEZAFGHZIUMAJCUNAKLUMUOADUMUOADMZUMUONZADCZIUPAOUQURUPUMUOURUP
+    PZUMUOAFCZUSUMFBCUOUTRSAFQTUTADUAZCUMUSFVAAUBUCADBUDUEULUFUGUHUIUJUK $.
 
   ${
     $d x y z w v u f $.
@@ -58216,10 +58215,9 @@ $)
        (Contributed by NM, 14-Feb-1996.)  (Revised by Mario Carneiro,
        27-Apr-2013.)  (New usage is discouraged.) $)
     ltrelnq $p |- <Q C_ ( Q. X. Q. ) $=
-      ( vx vy vz vw vv vu cltq cv cnq wcel wa cop ceq cec cplpq cltpq
-      wceq co wbr wex copab cxp df-ltnqqs opabssxp eqsstri ) GAHZIJBH
-      ZIJKUFCHZDHZLMNQUGEHZFHZLMNQKUHUKORUIUJORPSKFTETDTCTZKABUAIIUBA
-      BCDEFUCULABIIUDUE $.
+      ( vx vy vz vw vv vu cltq cv cnq wcel wa cop ceq cec wceq cplpq co wbr wex
+      cltpq copab cxp df-ltnqqs opabssxp eqsstri ) GAHZIJBHZIJKUFCHZDHZLMNOUGEH
+      ZFHZLMNOKUHUKPQUIUJPQTRKFSESDSCSZKABUAIIUBABCDEFUCULABIIUDUE $.
   $}
 
   ${
