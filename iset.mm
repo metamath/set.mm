@@ -58118,6 +58118,27 @@ $)
   $}
 
   ${
+    $d x y z w v u f $.
+    $( Alternative definition of pre-multiplication on positive fractions.
+       (Contributed by Jim Kingdon, 13-Sep-2019.)
+       (New usage is discouraged.) $)
+    dfmpq2 $p |- .pQ = { <. <. x , y >. , z >. | ( ( x e. ( N. X. N. ) /\ y
+        e. ( N. X. N. ) ) /\ E. w E. v E. u E. f ( ( x = <. w , v >. /\ y = <. u
+        , f >. ) /\ z = <. ( w .N u ) , ( v .N f ) >. ) ) } $=
+      ( cnpi cv c1st cfv cmi co c2nd cop wcel wa wceq coprab wex cxp cmpt2 cmpq
+      df-mpt2 df-mpq 1st2nd2 eqeq1d bi2anan9 anbi1d bicomd 4exbidv wb xp1st jca
+      simpll simprl oveq12d simplr simprr opeq12d eqeq2d copsex4g syl2an bitr3d
+      xp2nd pm5.32i oprabbii 3eqtr4i ) ABHHUAZVIAIZJKZBIZJKZLMZVJNKZVLNKZLMZOZU
+      BVJVIPZVLVIPZQZCIZVRRZQZABCSUCWAVJDIZEIZOZRZVLFIZGIZOZRZQZWBWEWILMZWFWJLM
+      ZOZRZQZGTFTETDTZQZABCSABCVIVIVRUDABUEWTWDABCWAWSWCWAVKVOOZWGRZVMVPOZWKRZQ
+      ZWQQZGTFTETDTZWSWCWAXFWRDEFGWAWRXFWAWMXEWQVSWHXBVTWLXDVSVJXAWGVJHHUFUGVTV
+      LXCWKVLHHUFUGUHUIUJUKVSVKHPZVOHPZQVMHPZVPHPZQXGWCULVTVSXHXIVJHHUMVJHHVEUN
+      VTXJXKVLHHUMVLHHVEUNWQWCDEFGVKVOVMVPHHWEVKRZWFVORZQZWIVMRZWJVPRZQZQZWPVRW
+      BXRWNVNWOVQXRWEVKWIVMLXLXMXQUOXNXOXPUPUQXRWFVOWJVPLXLXMXQURXNXOXPUSUQUTVA
+      VBVCVDVFVGVH $.
+  $}
+
+  ${
     $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
     $d x y z w v u D $.
     $( Equivalence relation for positive fractions in terms of positive
