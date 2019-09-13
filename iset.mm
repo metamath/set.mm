@@ -1,4 +1,4 @@
-$( iset.mm - Version of 11-Sep-2019
+$( iset.mm - Version of 13-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -58092,6 +58092,33 @@ $)
   $}
 
   ${
+    $d x y z w v u f $.
+    $( Alternative definition of pre-addition on positive fractions.
+       (Contributed by Jim Kingdon, 12-Sep-2019.)
+       (New usage is discouraged.) $)
+    dfplpq2 $p |- +pQ = { <. <. x , y >. , z >. | ( ( x e. ( N. X. N. ) /\ y
+        e. ( N. X. N. ) ) /\ E. w E. v E. u E. f ( ( x = <. w , v >. /\ y = <. u
+        , f >. ) /\ z = <. ( ( w .N f ) +N ( v .N u ) ) , ( v .N f ) >. ) ) } $=
+      ( cnpi cv cfv cmi co cpli cop wcel wa wceq wex vex oveq12d cxp c1st cmpt2
+      c2nd coprab cplpq df-mpt2 df-plpq 1st2nd2 eqeq1d bi2anan9 anbi1d ad2antlr
+      xp1st biimpa simprd opth2 simplbi eleq1d syl mpbid xp2nd ad2antrr simprbi
+      simpld mulcompig syl2anc oveq2d opeq1d eqeq2d pm5.32da bitr3d 4exbidv jca
+      wb simpll simprr simprl simplr opeq12d copsex4g pm5.32i oprabbii 3eqtr4i
+      syl2an ) ABHHUAZWFAIZUBJZBIZUDJZKLZWIUBJZWGUDJZKLZMLZWMWJKLZNZUCWGWFOZWIW
+      FOZPZCIZWQQZPZABCUEUFWTWGDIZEIZNZQZWIFIZGIZNZQZPZXAXDXIKLZXEXHKLZMLZXEXIK
+      LZNZQZPZGRFRERDRZPZABCUEABCWFWFWQUGABUHYAXCABCWTXTXBWTWHWMNZXFQZWLWJNZXJQ
+      ZPZXAXMXHXEKLZMLZXPNZQZPZGRFRERDRZXTXBWTYKXSDEFGWTXLYJPYKXSWTXLYFYJWRXGYC
+      WSXKYEWRWGYBXFWGHHUIUJWSWIYDXJWIHHUIUJUKZULWTXLYJXRWTXLPZYIXQXAYNYHXOXPYN
+      YGXNXMMYNXHHOZXEHOZYGXNQYNWLHOZYOWSYQWRXLWIHHUNZUMYNYEYQYOVOYNYCYEWTXLYFY
+      MUOZUPYEWLXHHYEWLXHQWJXIQWLWJXHXIFSGSUQURUSUTVAYNWMHOZYPWRYTWSXLWGHHVBZVC
+      YNYCYTYPVOYNYCYEYSVEYCWMXEHYCWHXDQWMXEQWHWMXDXEDSESUQVDUSUTVAXHXEVFVGVHVI
+      VJVKVLVMWRWHHOZYTPYQWJHOZPYLXBVOWSWRUUBYTWGHHUNUUAVNWSYQUUCYRWIHHVBVNYJXB
+      DEFGWHWMWLWJHHXDWHQZXEWMQZPZXHWLQZXIWJQZPZPZYIWQXAUUJYHWOXPWPUUJXMWKYGWNM
+      UUJXDWHXIWJKUUDUUEUUIVPUUFUUGUUHVQZTUUJXHWLXEWMKUUFUUGUUHVRUUDUUEUUIVSZTT
+      UUJXEWMXIWJKUULUUKTVTVJWAWEVLWBWCWD $.
+  $}
+
+  ${
     $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
     $d x y z w v u D $.
     $( Equivalence relation for positive fractions in terms of positive
@@ -58254,6 +58281,41 @@ $)
       XBXDUKULZXCXEKUDZPQUPXGXILMXBXDXILMLMNWHXBXDXIUMULZVTWCWDWEUQXFXGPQWHXBXD
       RULZUNWHIJKBHCEPLVNVOVSWGURVTWAWBWFUSVPVQVRWGUTXHXJVTWCWDWEVAXKUNVBVCVD
       $.
+  $}
+
+  $( Lemma for ~ addpipqqs .  (Contributed by Jim Kingdon, 11-Sep-2019.) $)
+  addpipqqslem $p |- ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. ) ) ->
+      <. ( ( A .N D ) +N ( B .N C ) ) , ( B .N D ) >. e. ( N. X. N. ) ) $=
+    ( cnpi wcel wa cmi co cop cxp mulclpi addclpi syl2an an42s ad2ant2l opelxpi
+    cpli syl2anc ) AEFZBEFZGCEFZDEFZGGADHIZBCHIZRIZEFZBDHIZEFZUFUHJEEKFTUCUAUBU
+    GTUCGUDEFUEEFUGUAUBGADLBCLUDUEMNOUAUCUITUBBDLPUFUHEEQS $.
+
+  ${
+    $d x y z w v u t s f g h a b c d A $.
+    $d x y z w v u t s f g h a b c d B $.
+    $d x y z w v u t s f g h a b c d C $.
+    $d x y z w v u t s f g h a b c d D $.
+    $( Addition of positive fractions in terms of positive integers.
+       (Contributed by NM, 28-Aug-1995.)  (New usage is discouraged.) $)
+    addpipqqs $p |- ( ( ( A e. N. /\ B e. N. ) /\
+                     ( C e. N. /\ D e. N. ) ) ->
+                ( [ <. A , B >. ] ~Q +Q [ <. C , D >. ] ~Q ) =
+                   [ <. ( ( A .N D ) +N ( B .N C ) ) ,
+                              ( B .N D ) >. ] ~Q ) $=
+      ( vz vu vw vv va vd vb vc cv cmi co wceq cpli weq wa oveq12 vg vs vh cplq
+      vt vx vy cplpq cnq ceq cnpi cop addpipqqslem enqex enqer df-enq eqeqan12d
+      vf wb an42s dfplpq2 oveqan12d ad2ant2l opeq12d df-plqqs addcmpblnq oviec
+      df-nqqs ) EMZFMZNOZGMZHMZNOZPZIMZJMZNOZKMZLMZNOZPZUAMZUBMZNOZUCMZUEMZNOZP
+      ZUFUGEGHFUEABCDUHUDUIUJUKURUAUCADNOZBCNOZQOZBDNOZULVLURMZNOZVMVJNOZQOZVMW
+      NNOZULVPWFNOZVSWCNOZQOZVSWFNOZULVTWDNOZVQWGNOZQOZVQWDNOZULUBIKLJABCDUMVPV
+      SWCWFUMVTVQWGWDUMUNUOUFUGEGHFUPEIRZFJRZGKRZHLRZVOWBUSXGXHSXIXJSVKVRVNWAVI
+      VPVJVQNTVLVSVMVTNTUQUTEUARZFUBRZGUCRZHUERZVOWIUSXKXLSXMXNSVKWEVNWHVIWCVJW
+      DNTVLWFVMWGNTUQUTUFUGEGHFURVAGIRZHKRZSFUARZURUCRZSSWQXAWRXBXOXRXPXQWQXAPX
+      OXRSXPXQSWOWSWPWTQVLVPWNWFNTVMVSVJWCNTVBUTXPXRWRXBPXOXQVMVSWNWFNTVCVDGLRZ
+      HJRZSFUERZURUBRZSSWQXEWRXFXSYBXTYAWQXEPXSYBSXTYASWOXCWPXDQVLVTWNWDNTVMVQV
+      JWGNTVBUTXTYBWRXFPXSYAVMVQWNWDNTVCVDVLAPZVMBPZSVJCPZWNDPZSSWQWLWRWMYCYFYD
+      YEWQWLPYCYFSYDYESWOWJWPWKQVLAWNDNTVMBVJCNTVBUTYDYFWRWMPYCYEVMBWNDNTVCVDUF
+      UGEIKLJVEVHVPVSVTVQWGWDWCWFVFVG $.
   $}
 
 $(
