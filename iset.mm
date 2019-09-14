@@ -1,4 +1,4 @@
-$( iset.mm - Version of 13-Sep-2019
+$( iset.mm - Version of 14-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -58087,7 +58087,7 @@ $)
     df-ltnqqs $a |- <Q = { <. x , y >. | ( ( x e. Q. /\ y e. Q. ) /\
        E. z E. w E. v E. u
        ( ( x = [ <. z , w >. ] ~Q /\ y = [ <. v , u >. ] ~Q ) /\
-                ( z +pQ u ) <pQ ( w +pQ v ) ) ) } $.
+                ( z .N u ) <N ( w .N v ) ) ) } $.
   $}
 
   ${
@@ -58236,9 +58236,9 @@ $)
        (Contributed by NM, 14-Feb-1996.)  (Revised by Mario Carneiro,
        27-Apr-2013.)  (New usage is discouraged.) $)
     ltrelnq $p |- <Q C_ ( Q. X. Q. ) $=
-      ( vx vy vz vw vv vu cltq cv cnq wcel wa cop ceq cec wceq cplpq co wbr wex
-      cltpq copab cxp df-ltnqqs opabssxp eqsstri ) GAHZIJBHZIJKUFCHZDHZLMNOUGEH
-      ZFHZLMNOKUHUKPQUIUJPQTRKFSESDSCSZKABUAIIUBABCDEFUCULABIIUDUE $.
+      ( vx vy vz vw vv vu cltq cv cnq wcel wa cop ceq cec wceq cmi clti wbr wex
+      co copab cxp df-ltnqqs opabssxp eqsstri ) GAHZIJBHZIJKUFCHZDHZLMNOUGEHZFH
+      ZLMNOKUHUKPTUIUJPTQRKFSESDSCSZKABUAIIUBABCDEFUCULABIIUDUE $.
   $}
 
   ${
