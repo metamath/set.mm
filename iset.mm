@@ -58337,6 +58337,33 @@ $)
       UGEIKLJVEVHVPVSVTVQWGWDWCWFVFVG $.
   $}
 
+  ${
+    $d A x y z $.  $d B x y z $.  $d C y z $.  $d D y z $.
+    $( Multiplication of positive fractions in terms of positive integers.
+       (Contributed by Mario Carneiro, 8-May-2013.)
+       (New usage is discouraged.) $)
+    mulpipq2 $p |- ( ( A e. ( N. X. N. ) /\ B e. ( N. X. N. ) ) ->
+      ( A .pQ B ) = <. ( ( 1st ` A ) .N ( 1st ` B ) ) ,
+                       ( ( 2nd ` A ) .N ( 2nd ` B ) ) >. ) $=
+      ( vx vy cnpi wcel c1st cfv cmi co c2nd cop cmpq wceq xp1st mulclpi syl2an
+      cvv xp2nd fveq2 cxp wa opexg syl2anc oveq1d opeq12d oveq2d df-mpq ovmpt2g
+      cv mpd3an3 ) AEEUAZFZBULFZAGHZBGHZIJZAKHZBKHZIJZLZRFZABMJVANUMUNUBUQEFZUT
+      EFZVBUMUOEFUPEFVCUNAEEOBEEOUOUPPQUMUREFUSEFVDUNAEESBEESURUSPQUQUTEEUCUDCD
+      ABULULCUJZGHZDUJZGHZIJZVEKHZVGKHZIJZLVAMUOVHIJZURVKIJZLRVEANZVIVMVLVNVOVF
+      UOVHIVEAGTUEVOVJURVKIVEAKTUEUFVGBNZVMUQVNUTVPVHUPUOIVGBGTUGVPVKUSURIVGBKT
+      UGUFCDUHUIUK $.
+
+    $( Multiplication of positive fractions in terms of positive integers.
+       (Contributed by NM, 28-Aug-1995.)  (Revised by Mario Carneiro,
+       8-May-2013.)  (New usage is discouraged.) $)
+    mulpipq $p |- ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. ) ) ->
+          ( <. A , B >. .pQ <. C , D >. ) = <. ( A .N C ) , ( B .N D ) >. ) $=
+      ( cnpi wcel wa cop cmpq co c1st cfv cmi c2nd cxp opelxpi op1stg oveqan12d
+      wceq op2ndg mulpipq2 syl2an opeq12d eqtrd ) AEFBEFGZCEFDEFGZGZABHZCDHZIJZ
+      UHKLZUIKLZMJZUHNLZUINLZMJZHZACMJZBDMJZHUEUHEEOZFUIUTFUJUQSUFABEEPCDEEPUHU
+      IUAUBUGUMURUPUSUEUFUKAULCMABEEQCDEEQRUEUFUNBUODMABEETCDEETRUCUD $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
