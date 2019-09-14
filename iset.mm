@@ -58418,6 +58418,32 @@ $)
       IYLYMYNVOYGXBEFADNNNIYLYOYPVOVPVNVQ $.
   $}
 
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Closure of addition on positive fractions.  (Contributed by NM,
+       29-Aug-1995.)  (New usage is discouraged.) $)
+    addclnq $p |- ( ( A e. Q. /\ B e. Q. ) -> ( A +Q B ) e. Q. ) $=
+      ( vx vy vz vw cnq wcel wa cplq co cnpi ceq cv cop cec df-nqqs cmi mulclpi
+      wceq cxp cqs oveq1 eleq1d oveq2 cpli addpipqqs addclpi an42s ad2ant2l jca
+      syl2an opelxpi enqex ecelqsi 3syl eqeltrd 2ecoptocl syl6eleqr ) AGHBGHIAB
+      JKZLLUAZMUBZGCNZDNZOMPZENZFNZOMPZJKZVBHAVHJKZVBHUTVBHCDEFABLLMGQVEATVIVJV
+      BVEAVHJUCUDVHBTVJUTVBVHBAJUEUDVCLHZVDLHZIVFLHZVGLHZIIZVIVCVGRKZVDVFRKZUFK
+      ZVDVGRKZOZMPZVBVCVDVFVGUGVOVRLHZVSLHZIVTVAHWAVBHVOWBWCVKVNVLVMWBVKVNIVPLH
+      VQLHWBVLVMIVCVGSVDVFSVPVQUHULUIVLVNWCVKVMVDVGSUJUKVRVSLLUMVAVTMUNUOUPUQUR
+      QUS $.
+
+    $( Closure of multiplication on positive fractions.  (Contributed by NM,
+       29-Aug-1995.)  (New usage is discouraged.) $)
+    mulclnq $p |- ( ( A e. Q. /\ B e. Q. ) -> ( A .Q B ) e. Q. ) $=
+      ( vx vy vz vw cnq wcel wa cmq co cnpi ceq cop cec df-nqqs wceq eleq1d cmi
+      cv cxp oveq1 oveq2 mulpipqqs mulclpi anim12i an4s opelxpi ecelqsi eqeltrd
+      cqs enqex 3syl 2ecoptocl syl6eleqr ) AGHBGHIABJKZLLUAZMUKZGCTZDTZNMOZETZF
+      TZNMOZJKZURHAVDJKZURHUPURHCDEFABLLMGPVAAQVEVFURVAAVDJUBRVDBQVFUPURVDBAJUC
+      RUSLHZUTLHZIVBLHZVCLHZIIZVEUSVBSKZUTVCSKZNZMOZURUSUTVBVCUDVKVLLHZVMLHZIZV
+      NUQHVOURHVGVIVHVJVRVGVIIVPVHVJIVQUSVBUEUTVCUEUFUGVLVMLLUHUQVNMULUIUMUJUNP
+      UO $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
