@@ -58393,6 +58393,31 @@ $)
       LVCUUIUUJUUKVBTVGUGUHEIUAUBJVHVIVSWBWCVTWIWFWEWHVKVL $.
   $}
 
+  ${
+    $d A x y z w v u f $.  $d B x y z w v u f $.  $d C x y z w v u f $.
+    $d D x y z w v u f $.
+    $( Ordering of positive fractions in terms of positive integers.
+       (Contributed by Jim Kingdon, 14-Sep-2019.)
+       (New usage is discouraged.) $)
+    ordpipqqs $p |- ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. ) ) ->
+        ( [ <. A , B >. ] ~Q <Q [ <. C , D >. ] ~Q <->
+          ( A .N D ) <N ( B .N C ) ) ) $=
+      ( vx vy vf cv cmi co clti wbr ceq cnpi wcel wa cop cec wceq adantl vz cnq
+      vu vw vv cltq enqex enqer df-nqqs df-ltnqqs enqeceq eqcom syl6bb bi2anan9
+      wb oveq12 simplll simprlr simplrr mulcompig w3a mulasspig simprrl mulclpi
+      caov4d simpllr simprll simplrl simprrr eqeq12d syl5ibr sylbid ltmpig syld
+      caovcld caovord3d brecop ) UAHZUCHZIJZUDHZUEHZIJZKLZADIJZBCIJZKLZEFUAUDUE
+      UCABCDMNUBUFUGUHUIEFUAUDUEUCUJVRNOZWANOZPZANOZBNOZPZPZWBNOZVSNOZPZCNOZDNO
+      ZPZPZPZVRWAQMRABQMRSZWBVSQMRCDQMRSZPZVTWFIJZWCWEIJZSZWDWGUOXBXEVRBIJZWAAI
+      JZSZVSCIJZWBDIJZSZPZXHWNXCXKXAXDXNVRWAABUKXAXDXMXLSXNWBVSCDUKXMXLULUMUNXO
+      XHXBXIXLIJZXJXMIJZSXIXJXLXMIUPXBXFXPXGXQXBEFGVRVSBCNIWHWIWMXAUQZWNWOWPWTU
+      RZWJWKWLXAUSZEHZNOZFHZNOZPZYAYCIJZYCYAIJSXBYAYCUTTZYBYDGHZNOVAZYFYHIJYAYC
+      YHIJIJSXBYAYCYHVBTZWNWQWRWSVCZYEYFNOXBYAYCVDTZVEXBEFGWAWBADNIWHWIWMXAVFZW
+      NWOWPWTVGZWJWKWLXAVHZYGYJWNWQWRWSVIZYLVEVJVKVLXBEFGVTWFWCWEKNIYIYAYCKLYHY
+      AIJYHYCIJKLUOXBYAYCYHVMTXBEFVRVSNNNIYLXRXSVOXBEFBCNNNIYLXTYKVOXBEFWAWBNNN
+      IYLYMYNVOYGXBEFADNNNIYLYOYPVOVPVNVQ $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
