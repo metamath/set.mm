@@ -58364,6 +58364,35 @@ $)
       IUAUBUGUMURUPUSUEUFUKAULCMABEEQCDEEQRUEUFUNBUODMABEETCDEETRUCUD $.
   $}
 
+  ${
+    $d x y z w v u t s f g h a b c d A $.
+    $d x y z w v u t s f g h a b c d B $.
+    $d x y z w v u t s f g h a b c d C $.
+    $d x y z w v u t s f g h a b c d D $.
+    $( Multiplication of positive fractions in terms of positive integers.
+       (Contributed by NM, 28-Aug-1995.)  (New usage is discouraged.) $)
+    mulpipqqs $p |- ( ( ( A e. N. /\ B e. N. ) /\
+                     ( C e. N. /\ D e. N. ) ) ->
+                ( [ <. A , B >. ] ~Q .Q [ <. C , D >. ] ~Q ) =
+                   [ <. ( A .N C ) , ( B .N D ) >. ] ~Q ) $=
+      ( vz vu vw vv va vd cv cmi co wceq cnpi wcel wa mulclpi weq oveq12d vb vc
+      vg vs vh vt vx vy vf cmpq cmq cnq ceq cop opelxpi syl2an an4s enqex enqer
+      df-enq simpll simprr simplr simprl eqeq12d dfmpq2 opeq12d df-mqqs df-nqqs
+      cxp mulcmpblnq oviec ) EKZFKZLMZGKZHKZLMZNIKZJKZLMZUAKZUBKZLMZNUCKZUDKZLM
+      ZUEKZUFKZLMZNUGUHEGHFUFABCDUJUKULUMOUIUCUEACLMZBDLMZUNZVPVNLMZVQUIKZLMZUN
+      VSWELMZWBWHLMZUNZWCWILMZVTWFLMZUNZUDIUAUBJAOPZCOPZBOPZDOPZWMOOVJZPZXCXDQW
+      KOPWLOPXHXEXFQACRBDRWKWLOOUOUPUQVSOPZWEOPZWBOPZWHOPZWSXGPZXIXJQWQOPWROPXM
+      XKXLQVSWERWBWHRWQWROOUOUPUQWCOPZWIOPZVTOPZWFOPZXBXGPZXNXOQWTOPXAOPXRXPXQQ
+      WCWIRVTWFRWTXAOOUOUPUQURUSUGUHEGHFUTEISZGUASZQZHUBSZFJSZQZQZVOWAVRWDYEVMV
+      SVNVTLXSXTYDVAYAYBYCVBTYEVPWBVQWCLXSXTYDVCYAYBYCVDTVEEUCSZGUESZQZHUFSZFUD
+      SZQZQZVOWGVRWJYLVMWEVNWFLYFYGYKVAYHYIYJVBTYLVPWHVQWILYFYGYKVCYHYIYJVDTVEU
+      GUHEGHFUIVFGISZHUASZQZFUCSZUIUESZQZQZWNWQWPWRYSVPVSVNWELYMYNYRVAYOYPYQVDT
+      YSVQWBWOWHLYMYNYRVCYOYPYQVBTVGGUBSZHJSZQZFUFSZUIUDSZQZQZWNWTWPXAUUFVPWCVN
+      WILYTUUAUUEVAUUBUUCUUDVDTUUFVQVTWOWFLYTUUAUUEVCUUBUUCUUDVBTVGVPANZVQBNZQZ
+      VNCNZWODNZQZQZWNWKWPWLUUMVPAVNCLUUGUUHUULVAUUIUUJUUKVDTUUMVQBWODLUUGUUHUU
+      LVCUUIUUJUUKVBTVGUGUHEIUAUBJVHVIVSWBWCVTWIWFWEWHVKVL $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
