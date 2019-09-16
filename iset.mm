@@ -57450,14 +57450,38 @@ $)
     ecovcom.4 $e |- D = H $.
     ecovcom.5 $e |- G = J $.
     $( Lemma used to transfer a commutative law via an equivalence relation.
-       (Contributed by NM, 29-Aug-1995.)  (Revised by David Abernethy,
-       4-Jun-2013.) $)
+       Most uses will want ~ ecovicom instead.  (Contributed by NM,
+       29-Aug-1995.)  (Revised by David Abernethy, 4-Jun-2013.) $)
     ecovcom $p |- ( ( A e. C /\ B e. C ) -> ( A .+ B ) = ( B .+ A ) ) $=
       ( wceq cv cop cec co oveq1 oveq2 eqeq12d wa opeq12 eceq1 syl mp2an ancoms
       wcel 3eqtr4a 2ecoptocl ) AUAZBUAZUBJUCZCUAZDUAZUBJUCZIUDZVBUSIUDZTEVBIUDZ
       VBEIUDZTEFIUDZFEIUDZTABCDEFKKJGOUSETVCVEVDVFUSEVBIUEUSEVBIUFUGVBFTVEVGVFV
       HVBFEIUFVBFEIUEUGUQKUNURKUNUHZUTKUNVAKUNUHZUHHLUBZJUCZMNUBZJUCZVCVDHMTZLN
       TZVLVNTZRSVOVPUHVKVMTVQHLMNUIVKVMJUJUKULPVJVIVDVNTQUMUOUP $.
+  $}
+
+  ${
+    $d x y z w A $.  $d z w B $.  $d x y z w .+ $.  $d x y z w .~ $.
+    $d x y z w S $.  $d z w C $.
+    ecovicom.1 $e |- C = ( ( S X. S ) /. .~ ) $.
+    $( D,G for AFB $)
+    ecovicom.2 $e |- ( ( ( x e. S /\ y e. S ) /\ ( z e. S /\ w e. S ) ) ->
+ ( [ <. x , y >. ] .~ .+ [ <. z , w >. ] .~ ) = [ <. D , G >. ] .~ ) $.
+    $( H,J for BFA $)
+    ecovicom.3 $e |- ( ( ( z e. S /\ w e. S ) /\ ( x e. S /\ y e. S ) ) ->
+ ( [ <. z , w >. ] .~ .+ [ <. x , y >. ] .~ ) = [ <. H , J >. ] .~ ) $.
+    ecovicom.4 $e |- ( ( ( x e. S /\ y e. S ) /\ ( z e. S /\ w e. S ) ) ->
+      D = H ) $.
+    ecovicom.5 $e |- ( ( ( x e. S /\ y e. S ) /\ ( z e. S /\ w e. S ) ) ->
+      G = J ) $.
+    $( Lemma used to transfer a commutative law via an equivalence relation.
+       (Contributed by Jim Kingdon, 15-Sep-2019.) $)
+    ecovicom $p |- ( ( A e. C /\ B e. C ) -> ( A .+ B ) = ( B .+ A ) ) $=
+      ( wceq cv cop cec co oveq1 oveq2 eqeq12d wcel wa opeq12 eceq1 syl syl2anc
+      ancoms 3eqtr4d 2ecoptocl ) AUAZBUAZUBJUCZCUAZDUAZUBJUCZIUDZVBUSIUDZTEVBIU
+      DZVBEIUDZTEFIUDZFEIUDZTABCDEFKKJGOUSETVCVEVDVFUSEVBIUEUSEVBIUFUGVBFTVEVGV
+      FVHVBFEIUFVBFEIUEUGUQKUHURKUHUIZUTKUHVAKUHUIZUIZHLUBZJUCZMNUBZJUCZVCVDVKH
+      MTZLNTZVMVOTZRSVPVQUIVLVNTVRHLMNUJVLVNJUKULUMPVJVIVDVOTQUNUOUP $.
   $}
 
   ${
