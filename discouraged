@@ -13651,6 +13651,7 @@ New usage of "1sr" is discouraged (8 uses).
 New usage of "2atm2atN" is discouraged (0 uses).
 New usage of "2atnelvolN" is discouraged (0 uses).
 New usage of "2bornot2b" is discouraged (0 uses).
+New usage of "2eu4OLD" is discouraged (0 uses).
 New usage of "2exsbOLD" is discouraged (0 uses).
 New usage of "2llnjN" is discouraged (1 uses).
 New usage of "2llnjaN" is discouraged (1 uses).
@@ -16841,6 +16842,7 @@ New usage of "moaneuOLD" is discouraged (0 uses).
 New usage of "moanimOLD" is discouraged (0 uses).
 New usage of "moexexOLD" is discouraged (0 uses).
 New usage of "mopickOLD" is discouraged (0 uses).
+New usage of "mopickOLDOLD" is discouraged (0 uses).
 New usage of "morimOLD" is discouraged (0 uses).
 New usage of "morimvOLD" is discouraged (0 uses).
 New usage of "mp2OLD" is discouraged (0 uses).
@@ -17707,7 +17709,6 @@ New usage of "sbco2OLD" is discouraged (0 uses).
 New usage of "sbco3OLD" is discouraged (0 uses).
 New usage of "sbcoOLD" is discouraged (0 uses).
 New usage of "sbcom2OLD" is discouraged (0 uses).
-New usage of "sbcomOLD" is discouraged (0 uses).
 New usage of "sbcoreleleq" is discouraged (2 uses).
 New usage of "sbcoreleleqVD" is discouraged (0 uses).
 New usage of "sbcorgOLD" is discouraged (2 uses).
@@ -17725,7 +17726,6 @@ New usage of "sbieOLD" is discouraged (0 uses).
 New usage of "sbiedOLD" is discouraged (0 uses).
 New usage of "sbnOLD" is discouraged (0 uses).
 New usage of "sbnf2OLD" is discouraged (0 uses).
-New usage of "sbtOLD" is discouraged (0 uses).
 New usage of "sbtT" is discouraged (0 uses).
 New usage of "seq1hcau" is discouraged (0 uses).
 New usage of "sh0" is discouraged (13 uses).
@@ -18240,6 +18240,7 @@ Proof modification of "19.43OLD" is discouraged (72 steps).
 Proof modification of "1div0apr" is discouraged (77 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
 Proof modification of "2bornot2b" is discouraged (26 steps).
+Proof modification of "2eu4OLD" is discouraged (299 steps).
 Proof modification of "2exsbOLD" is discouraged (110 steps).
 Proof modification of "2moOLD" is discouraged (474 steps).
 Proof modification of "2pm13.193" is discouraged (91 steps).
@@ -19063,7 +19064,8 @@ Proof modification of "moOLD" is discouraged (254 steps).
 Proof modification of "moaneuOLD" is discouraged (37 steps).
 Proof modification of "moanimOLD" is discouraged (84 steps).
 Proof modification of "moexexOLD" is discouraged (132 steps).
-Proof modification of "mopickOLD" is discouraged (123 steps).
+Proof modification of "mopickOLD" is discouraged (103 steps).
+Proof modification of "mopickOLDOLD" is discouraged (123 steps).
 Proof modification of "morimOLD" is discouraged (17 steps).
 Proof modification of "morimvOLD" is discouraged (67 steps).
 Proof modification of "mp2" is discouraged (11 steps).
@@ -19257,7 +19259,6 @@ Proof modification of "sbco2OLD" is discouraged (82 steps).
 Proof modification of "sbco3OLD" is discouraged (96 steps).
 Proof modification of "sbcoOLD" is discouraged (48 steps).
 Proof modification of "sbcom2OLD" is discouraged (238 steps).
-Proof modification of "sbcomOLD" is discouraged (380 steps).
 Proof modification of "sbcoreleleq" is discouraged (91 steps).
 Proof modification of "sbcoreleleqVD" is discouraged (127 steps).
 Proof modification of "sbcorgOLD" is discouraged (61 steps).
@@ -19275,7 +19276,6 @@ Proof modification of "sbiedOLD" is discouraged (105 steps).
 Proof modification of "sbnOLD" is discouraged (127 steps).
 Proof modification of "sbnf2OLD" is discouraged (194 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
-Proof modification of "sbtOLD" is discouraged (15 steps).
 Proof modification of "sbtT" is discouraged (7 steps).
 Proof modification of "shmulclOLD" is discouraged (101 steps).
 Proof modification of "simplbi2VD" is discouraged (24 steps).
