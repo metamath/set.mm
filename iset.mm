@@ -58494,6 +58494,19 @@ $)
       AVCVNWFGVBVDVEVFABKKVGVH $.
   $}
 
+  ${
+    $d A w x y z $.  $d B w z $.
+    $( Addition of positive fractions is commutative.  (Contributed by Jim
+       Kingdon, 15-Sep-2019.)  (New usage is discouraged.) $)
+    addcomnqg $p |- ( ( A e. Q. /\ B e. Q. ) -> ( A +Q B ) = ( B +Q A ) ) $=
+    ( vx vy vz vw cnq cv cmi co cpli cplq cnpi addpipqqs wcel wa wceq mulcompig
+    mulclpi ancoms ceq df-nqqs oveqan12d ad2ant2rl ad2ant2lr addcompig ad2ant2l
+    an42s syl2anc eqtrd ecovicom ) CDEFABGCHZFHZIJZDHZEHZIJZKJZLUAMUOUMIJZUPUOI
+    JZUMULIJZKJZUMUOIJZUBULUOUPUMNUPUMULUONULMOZUOMOZPUPMOZUMMOZPPZURVAUTKJZVBV
+    DVGVEVFURVIQVDVGPVEVFPUNVAUQUTKULUMRUOUPRUCUHVHVAMOZUTMOZVIVBQVDVGVJVEVFVGV
+    DVJUMULSTUDVEVFVKVDVGVFVEVKUPUOSTUEVAUTUFUIUJVEVGUSVCQVDVFUOUMRUGUK $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
