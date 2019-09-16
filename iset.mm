@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Sep-2019
+$( iset.mm - Version of 16-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -57504,8 +57504,8 @@ $)
     ecovass.8 $e |- J = L $.
     ecovass.9 $e |- K = M $.
     $( Lemma used to transfer an associative law via an equivalence relation.
-       (Contributed by NM, 31-Aug-1995.)  (Revised by David Abernethy,
-       4-Jun-2013.) $)
+       In most cases ~ ecoviass will be more useful.  (Contributed by NM,
+       31-Aug-1995.)  (Revised by David Abernethy, 4-Jun-2013.) $)
     ecovass $p |- ( ( A e. D /\ B e. D /\ C e. D ) ->
                  ( ( A .+ B ) .+ C ) = ( A .+ ( B .+ C ) ) ) $=
       ( cv cop cec co wceq oveq1 oveq1d eqeq12d oveq2 oveq2d wcel wa w3a opeq12
@@ -57519,6 +57519,44 @@ $)
       MZWFKUNZXGXMWGXOUOXEXMWCXNWFKUCUQVHXMONVAPNVAVBXEXOXGUOUGUEVIVJVKXCXDXEWI
       XIUOXCXDXEVBZVBWIVSUALULMUMZKUNZXIXPWIXRUOXCXPWHXQVSKUDUTVLXPXCUANVALNVAV
       BXRXIUOUHUFVMVJVPVNVO $.
+  $}
+
+  ${
+    $d x y z w v u A $.  $d z w v u B $.  $d x y z w v u C $.
+    $d x y z w v u .+ $.  $d x y z w v u .~ $.  $d x y z w v u S $.
+    $d z w v u D $.
+    ecoviass.1 $e |- D = ( ( S X. S ) /. .~ ) $.
+    ecoviass.2 $e |- ( ( ( x e. S /\ y e. S ) /\ ( z e. S /\ w e. S ) ) ->
+ ( [ <. x , y >. ] .~ .+ [ <. z , w >. ] .~ ) = [ <. G , H >. ] .~ ) $.
+    ecoviass.3 $e |- ( ( ( z e. S /\ w e. S ) /\ ( v e. S /\ u e. S ) ) ->
+ ( [ <. z , w >. ] .~ .+ [ <. v , u >. ] .~ ) = [ <. N , Q >. ] .~ ) $.
+    ecoviass.4 $e |- ( ( ( G e. S /\ H e. S ) /\ ( v e. S /\ u e. S ) ) ->
+ ( [ <. G , H >. ] .~ .+ [ <. v , u >. ] .~ ) = [ <. J , K >. ] .~ ) $.
+    ecoviass.5 $e |- ( ( ( x e. S /\ y e. S ) /\ ( N e. S /\ Q e. S ) ) ->
+ ( [ <. x , y >. ] .~ .+ [ <. N , Q >. ] .~ ) = [ <. L , M >. ] .~ ) $.
+    ecoviass.6 $e |- ( ( ( x e. S /\ y e. S ) /\ ( z e. S /\ w e. S ) ) ->
+                     ( G e. S /\ H e. S ) ) $.
+    ecoviass.7 $e |- ( ( ( z e. S /\ w e. S ) /\ ( v e. S /\ u e. S ) ) ->
+                     ( N e. S /\ Q e. S ) ) $.
+    ecoviass.8 $e |- ( ( ( x e. S /\ y e. S ) /\ ( z e. S /\ w e. S )
+        /\ ( v e. S /\ u e. S ) ) -> J = L ) $.
+    ecoviass.9 $e |- ( ( ( x e. S /\ y e. S ) /\ ( z e. S /\ w e. S )
+        /\ ( v e. S /\ u e. S ) ) -> K = M ) $.
+    $( Lemma used to transfer an associative law via an equivalence relation.
+       (Contributed by Jim Kingdon, 16-Sep-2019.) $)
+    ecoviass $p |- ( ( A e. D /\ B e. D /\ C e. D ) ->
+                 ( ( A .+ B ) .+ C ) = ( A .+ ( B .+ C ) ) ) $=
+      ( cv cop cec co wceq oveq1 oveq1d eqeq12d oveq2 oveq2d wcel wa w3a opeq12
+      eceq1 syl syl2anc adantr sylan eqtrd 3impa adantl 3impb 3eqtr4d 3ecoptocl
+      sylan2 ) AUKZBUKZULMUMZCUKZDUKZULMUMZKUNZEUKZFUKZULMUMZKUNZVSWBWFKUNZKUNZ
+      UOGWBKUNZWFKUNZGWHKUNZUOGHKUNZWFKUNZGHWFKUNZKUNZUOWMIKUNZGHIKUNZKUNZUOABC
+      DEFGHINMJUBVSGUOZWGWKWIWLWTWCWJWFKVSGWBKUPUQVSGWHKUPURWBHUOZWKWNWLWPXAWJW
+      MWFKWBHGKUSUQXAWHWOGKWBHWFKUPUTURWFIUOZWNWQWPWSWFIWMKUSXBWOWRGKWFIHKUSUTU
+      RVQNVAVRNVAVBZVTNVAWANVAVBZWDNVAWENVAVBZVCZQRULZMUMZSTULZMUMZWGWIXFQSUOZR
+      TUOZXHXJUOZUIUJXKXLVBXGXIUOXMQRSTVDXGXIMVEVFVGXCXDXEWGXHUOXCXDVBZXEVBWGOP
+      ULMUMZWFKUNZXHXNWGXPUOXEXNWCXOWFKUCUQVHXNONVAPNVAVBXEXPXHUOUGUEVIVJVKXCXD
+      XEWIXJUOXCXDXEVBZVBWIVSUALULMUMZKUNZXJXQWIXSUOXCXQWHXRVSKUDUTVLXQXCUANVAL
+      NVAVBXSXJUOUHUFVPVJVMVNVO $.
   $}
 
   ${
