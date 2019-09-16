@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Sep-2019
+$( iset.mm - Version of 15-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -58442,6 +58442,32 @@ $)
       RUSLHZUTLHZIVBLHZVCLHZIIZVEUSVBSKZUTVCSKZNZMOZURUSUTVBVCUDVKVLLHZVMLHZIZV
       NUQHVOURHVGVIVHVJVRVGVIIVPVHVJIVQUSVBUEUTVCUEUFUGVLVMLLUHUQVNMULUIUMUJUNP
       UO $.
+  $}
+
+  ${
+    $d a x y z v w u f $.
+    $( Lemma for ~ dmaddpq .  (Contributed by Jim Kingdon, 15-Sep-2019.)
+       (New usage is discouraged.) $)
+    dmaddpqlem $p |- ( x e. Q. -> E. w E. v x = [ <. w , v >. ] ~Q ) $=
+      ( va cv cop ceq cec wceq wex cnpi cxp cqs cnq wcel wrex elqsi 2eximi syl
+      wa elxpi ax-ia1 anim1i 19.41vv sylibr ax-ia2 eceq1 adantr eqtrd rexlimiva
+      df-nqqs eleq2s ) AEZBEZCEZFZGHZIZCJBJZUMKKLZGMZNUMVAOUMDEZGHZIZDUTPUSDUTU
+      MGQVDUSDUTVBUTOZVDTZVBUPIZVDTZCJBJZUSVFVGCJBJZVDTVIVEVJVDVEVGUNKOUOKOTZTZ
+      CJBJVJBCVBKKUAVLVGBCVGVKUBRSUCVGVDBCUDUEVHURBCVHUMVCUQVGVDUFVGVCUQIVDVBUP
+      GUGUHUIRSUJSUKUL $.
+
+    $( Domain of addition on positive fractions.  (Contributed by NM,
+       24-Aug-1995.)  (New usage is discouraged.) $)
+    dmaddpq $p |- dom +Q = ( Q. X. Q. ) $=
+      ( vx vy vw vv vu vf vz cplq cdm cv cnq wcel copab ceq cec wceq wex sylibr
+      wa cvv cxp cop cplpq co coprab dmoprab df-plqqs dmaddpqlem anim12i ee4anv
+      dmeqi enqex ecexg ax-mp isseti ax-ia3 eximdv mpi 2eximi exrot3 syl 19.42v
+      pm4.71i bitr4i opabbii 3eqtr4i df-xp eqtr4i ) HIZAJZKLZBJZKLZSZABMZKKUAVN
+      VJCJDJUBZNOPZVLEJFJUBZNOPZSZGJVPVRUCUDZNOZPZSZFQEQZDQCQZSZABGUEZIWGGQZABM
+      VIVOWGABGUFHWHABGCDEFUGUKVNWIABVNVNWFGQZSWIVNWJVNVTFQEQZDQCQZWJVNVQDQCQZV
+      SFQEQZSWLVKWMVMWNACDUHBEFUHUIVQVSCDEFUJRWLWEGQZDQCQWJWKWOCDWKWDGQZFQEQWOV
+      TWPEFVTWCGQWPGWBNTLWBTLULWATNUMUNUOVTWCWDGVTWCUPUQURUSWDGEFUTRUSWEGCDUTRV
+      AVCVNWFGVBVDVEVFABKKVGVH $.
   $}
 
 $(
