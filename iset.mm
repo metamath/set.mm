@@ -58610,6 +58610,23 @@ $)
       A $.
   $}
 
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $d x y z w v u f g h $.
+    $( Multiplication of positive fractions is associative.  (Contributed by
+       Jim Kingdon, 17-Sep-2019.) $)
+    mulassnqg $p |- ( ( A e. Q. /\ B e. Q. /\ C e. Q. ) ->
+        ( ( A .Q B ) .Q C ) = ( A .Q ( B .Q C ) ) ) $=
+      ( vx vy vz vw vv vu cv cmi co cnpi mulpipqqs wa mulclpi ad2ant2r ad2ant2l
+      wcel jca cnq cmq ceq df-nqqs 3adant1r 3adant2r 3adant3r 3adant1l 3adant2l
+      wceq mulasspig 3adant3l ecoviass ) DEFGHIABCUAUBGJZIJZKLZUCMDJZFJZKLZEJZU
+      NKLZUSHJZKLZVAUOKLZUQURVBKLZKLZUTUPKLZVEUDUQUTURUNNURUNVBUONUSVAVBUONUQUT
+      VEUPNUQMSZUTMSZOZURMSZUNMSZOZOUSMSZVAMSZVHVKVNVIVLUQURPQVIVLVOVHVKUTUNPRT
+      VMVBMSZUOMSZOOVEMSZUPMSZVKVPVRVLVQURVBPQVLVQVSVKVPUNUOPRTVJVMVPVCVFUJZVQV
+      JVKVPVTVLVHVKVPVTVIUQURVBUKUEUFUGVJVMVQVDVGUJZVPVJVLVQWAVKVIVLVQWAVHUTUNU
+      OUKUHUIULUM $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
