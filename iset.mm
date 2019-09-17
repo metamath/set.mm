@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Sep-2019
+$( iset.mm - Version of 17-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -58597,6 +58597,17 @@ $)
       QYTYRVNXFXIXOWNYIQZXPXFXHXOUVDXGXEXHXOUVDXDWGWBWMTVOVPVQVKYFXAYKWQIYFXEYA
       YBXAYKQYSUUAUUBWGWRWSVEVDVRVSXFXIXPWPXCQZXOXFXHXPUVEXGXEXHXPUVEXDWGWBWCTV
       OVPVTWA $.
+  $}
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Multiplication of positive fractions is commutative.  (Contributed by
+       Jim Kingdon, 17-Sep-2019.) $)
+    mulcomnqg $p |- ( ( A e. Q. /\ B e. Q. ) -> ( A .Q B ) = ( B .Q A ) ) $=
+      ( vx vy vz vw cnq cv cmi co cmq ceq cnpi df-nqqs mulpipqqs wcel mulcompig
+      wceq ad2ant2r ad2ant2l ecovicom ) CDEFABGCHZEHZIJZKLMDHZFHZIJZUCUBIJZUFUE
+      IJZNUBUEUCUFOUCUFUBUEOUBMPZUCMPZUDUHRUEMPZUFMPZUBUCQSULUMUGUIRUJUKUEUFQTU
+      A $.
   $}
 
 $(
