@@ -51001,6 +51001,29 @@ $)
     $}
 
     ${
+      caovdilemd.com $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+        ( x G y ) = ( y G x ) ) $.
+      caovdilemd.distr $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
+        ( ( x F y ) G z ) = ( ( x G z ) F ( y G z ) ) ) $.
+      caovdilemd.ass $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
+        ( ( x G y ) G z ) = ( x G ( y G z ) ) ) $.
+      caovdilemd.cl $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+        ( x G y ) e. S ) $.
+      caovdilemd.a $e |- ( ph -> A e. S ) $.
+      caovdilemd.b $e |- ( ph -> B e. S ) $.
+      caovdilemd.c $e |- ( ph -> C e. S ) $.
+      caovdilemd.d $e |- ( ph -> D e. S ) $.
+      caovdilemd.h $e |- ( ph -> H e. S ) $.
+      $( Lemma used by real number construction.  (Contributed by Jim Kingdon,
+         16-Sep-2019.) $)
+      caovdilemd $p |- ( ph -> ( ( ( A G C ) F ( B G D ) ) G H ) =
+                       ( ( A G ( C G H ) ) F ( B G ( D G H ) ) ) ) $=
+        ( co caovcld caovdird caovassd oveq12d eqtrd ) AEGKUBZFHKUBZJUBLKUBUHLK
+        UBZUILKUBZJUBEGLKUBKUBZFHLKUBKUBZJUBABCDUHUILIJKJINABCEGIIIKPQSUCABCFHI
+        IIKPRTUCUAUDAUJULUKUMJABCDEGLIKOQSUAUEABCDFHLIKORTUAUEUFUG $.
+    $}
+
+    ${
       caovdi.1 $e |- A e. _V $.
       caovdi.2 $e |- B e. _V $.
       caovdi.3 $e |- C e. _V $.
