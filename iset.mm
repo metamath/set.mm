@@ -58642,6 +58642,15 @@ $)
       UQTZTVKVLVNVIVOVJABSACSUFUOUOUPUQVLUOUOTVLUGUHUIULUSUTBCUJUMUN $.
   $}
 
+  ${
+    $( Lemma for distributive law: cancellation of common factor.  (Contributed
+       by Jim Kingdon, 17-Sep-2019.) $)
+    mulcanenqec $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
+        [ <. ( A .N B ) , ( A .N C ) >. ] ~Q = [ <. B , C >. ] ~Q ) $=
+      ( cnpi wcel w3a cmi co cop ceq cxp wer enqer a1i mulcanenq erthi ) ADEBDE
+      CDEFZABGHACGHIBCIJDDKZRJLQMNABCOP $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
