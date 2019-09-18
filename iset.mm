@@ -57611,8 +57611,8 @@ $)
     ecovdi.10 $e |- H = K $.
     ecovdi.11 $e |- J = L $.
     $( Lemma used to transfer a distributive law via an equivalence relation.
-       (Contributed by NM, 2-Sep-1995.)  (Revised by David Abernethy,
-       4-Jun-2013.) $)
+       Most likely ~ ecovidi will be more helpful.  (Contributed by NM,
+       2-Sep-1995.)  (Revised by David Abernethy, 4-Jun-2013.) $)
     ecovdi $p |- ( ( A e. D /\ B e. D /\ C e. D ) ->
                  ( A .x. ( B .+ C ) ) = ( ( A .x. B ) .+ ( A .x. C ) ) ) $=
       ( cv cop co wceq oveq1 oveq12d eqeq12d oveq2d oveq2 oveq1d wcel wa opeq12
@@ -57627,6 +57627,54 @@ $)
       CWENUFVCVNYBXLSMVFTMVFVGYDXPUSUKUGVOVPVQXLXMXNWPXRUSXLXMVGZXLXNVGZVGWPUAU
       BUQLVIZUCUDUQLVIZKURZXRYEYFWNYGWOYHKUHUIVRYEUAMVFUBMVFVGUCMVFUDMVFVGYIXRU
       SYFULUMUJVSVPVTWAWB $.
+  $}
+
+  ${
+    $d x y z w v u A $.  $d z w v u B $.  $d w v u C $.  $d x y z w v u .+ $.
+    $d x y z w v u .~ $.  $d x y z w v u S $.  $d x y z w v u .x. $.
+    $d z w v u D $.
+    ecovidi.1 $e |- D = ( ( S X. S ) /. .~ ) $.
+    $( M,N for BFC $)
+    ecovidi.2 $e |- ( ( ( z e. S /\ w e. S ) /\ ( v e. S /\ u e. S ) ) ->
+ ( [ <. z , w >. ] .~ .+ [ <. v , u >. ] .~ ) = [ <. M , N >. ] .~ ) $.
+    $( H,J for AG(BFC) $)
+    ecovidi.3 $e |- ( ( ( x e. S /\ y e. S ) /\ ( M e. S /\ N e. S ) ) ->
+ ( [ <. x , y >. ] .~ .x. [ <. M , N >. ] .~ ) = [ <. H , J >. ] .~ ) $.
+    $( W,X for AGB $)
+    ecovidi.4 $e |- ( ( ( x e. S /\ y e. S ) /\ ( z e. S /\ w e. S ) ) ->
+ ( [ <. x , y >. ] .~ .x. [ <. z , w >. ] .~ ) = [ <. W , X >. ] .~ ) $.
+    $( Y,Z for AGC $)
+    ecovidi.5 $e |- ( ( ( x e. S /\ y e. S ) /\ ( v e. S /\ u e. S ) ) ->
+ ( [ <. x , y >. ] .~ .x. [ <. v , u >. ] .~ ) = [ <. Y , Z >. ] .~ ) $.
+    $( K,L for (AGB)F(AGC) $)
+    ecovidi.6 $e |- ( ( ( W e. S /\ X e. S ) /\ ( Y e. S /\ Z e. S ) ) ->
+ ( [ <. W , X >. ] .~ .+ [ <. Y , Z >. ] .~ ) = [ <. K , L >. ] .~ ) $.
+    ecovidi.7 $e |- ( ( ( z e. S /\ w e. S ) /\ ( v e. S /\ u e. S ) ) ->
+                     ( M e. S /\ N e. S ) ) $.
+    ecovidi.8 $e |- ( ( ( x e. S /\ y e. S ) /\ ( z e. S /\ w e. S ) ) ->
+                     ( W e. S /\ X e. S ) ) $.
+    ecovidi.9 $e |- ( ( ( x e. S /\ y e. S ) /\ ( v e. S /\ u e. S ) ) ->
+                     ( Y e. S /\ Z e. S ) ) $.
+    ecovidi.10 $e |- ( ( ( x e. S /\ y e. S ) /\ ( z e. S /\ w e. S )
+        /\ ( v e. S /\ u e. S ) ) -> H = K ) $.
+    ecovidi.11 $e |- ( ( ( x e. S /\ y e. S ) /\ ( z e. S /\ w e. S )
+        /\ ( v e. S /\ u e. S ) ) -> J = L ) $.
+    $( Lemma used to transfer a distributive law via an equivalence relation.
+       (Contributed by Jim Kingdon, 17-Sep-2019.) $)
+    ecovidi $p |- ( ( A e. D /\ B e. D /\ C e. D ) ->
+                 ( A .x. ( B .+ C ) ) = ( ( A .x. B ) .+ ( A .x. C ) ) ) $=
+      ( cv cop co wceq oveq1 oveq12d eqeq12d oveq2d oveq2 oveq1d wcel wa opeq12
+      cec w3a eceq1 syl syl2anc adantl sylan2 eqtrd 3impb syl2an 3impdi 3eqtr4d
+      oveqan12d 3ecoptocl ) AUPZBUPZUQLVIZCUPZDUPZUQLVIZEUPZFUPZUQLVIZKURZNURZW
+      EWHNURZWEWKNURZKURZUSGWLNURZGWHNURZGWKNURZKURZUSGHWKKURZNURZGHNURZWSKURZU
+      SGHIKURZNURZXCGINURZKURZUSABCDEFGHIMLJUEWEGUSZWMWQWPWTWEGWLNUTXIWNWRWOWSK
+      WEGWHNUTWEGWKNUTVAVBWHHUSZWQXBWTXDXJWLXAGNWHHWKKUTVCXJWRXCWSKWHHGNVDVEVBW
+      KIUSZXBXFXDXHXKXAXEGNWKIHKVDVCXKWSXGXCKWKIGNVDVCVBWCMVFWDMVFVGZWFMVFWGMVF
+      VGZWIMVFWJMVFVGZVJZOPUQZLVIZQRUQZLVIZWMWPXOOQUSZPRUSZXQXSUSZUNUOXTYAVGXPX
+      RUSYBOPQRVHXPXRLVKVLVMXLXMXNWMXQUSXLXMXNVGZVGWMWESTUQLVIZNURZXQYCWMYEUSXL
+      YCWLYDWENUFVCVNYCXLSMVFTMVFVGYEXQUSUKUGVOVPVQXLXMXNWPXSUSXLXMVGZXLXNVGZVG
+      WPUAUBUQLVIZUCUDUQLVIZKURZXSYFYGWNYHWOYIKUHUIWAYFUAMVFUBMVFVGUCMVFUDMVFVG
+      YJXSUSYGULUMUJVRVPVSVTWB $.
   $}
 
 $(
