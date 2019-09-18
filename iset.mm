@@ -58744,6 +58744,20 @@ $)
       ASUIUFGTUAUBUC $.
   $}
 
+  ${
+    $d x y A $.
+    $( Multiplication identity element for positive fractions.  (Contributed by
+       NM, 3-Mar-1996.)  (New usage is discouraged.) $)
+    mulidnq $p |- ( A e. Q. -> ( A .Q 1Q ) = A ) $=
+      ( vx vy cv cop ceq cec c1q cmq co wceq cnpi cnq df-nqqs c1o cmi mulcompig
+      wcel 1pi mpan oveq1 id eqeq12d wa df-1nqqs oveq2i mulpipqqs syl5eq adantr
+      mpanr12 adantl opeq12d eceq1 syl mulcanenqec mp3an1 3eqtr2d ecoptocl ) BD
+      ZCDZEFGZHIJZVAKAHIJZAKBCALLFMNVAAKZVBVCVAAVAAHIUAVDUBUCUSLRZUTLRZUDZVBUSO
+      PJZUTOPJZEZFGZOUSPJZOUTPJZEZFGZVAVGVBVAOOEFGZIJZVKHVPVAIUEUFVGOLRZVRVQVKK
+      SSUSUTOOUGUJUHVGVNVJKVOVKKVGVLVHVMVIVEVLVHKZVFVRVEVSSOUSQTUIVFVMVIKZVEVRV
+      FVTSOUTQTUKULVNVJFUMUNVRVEVFVOVAKSOUSUTUOUPUQUR $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
