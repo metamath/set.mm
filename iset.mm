@@ -58734,6 +58734,16 @@ $)
       UVPUUMUVQSUWEUVJUVSUUMUVTSWHWIWOWN $.
   $}
 
+  ${
+    $( The equivalence class of ratio 1.  (Contributed by NM, 4-Mar-1996.)
+       (New usage is discouraged.) $)
+    1qec $p |- ( A e. N. -> 1Q = [ <. A , A >. ] ~Q ) $=
+      ( cnpi wcel c1q c1o cop ceq cec df-1nqqs cmi wceq 1pi mulcanenqec mp3an23
+      co wa mulidpi jca opeq12 eceq1 3syl eqtr3d syl5eq ) ABCZDEEFGHZAAFZGHZIUD
+      AEJOZUHFZGHZUEUGUDEBCZUKUJUEKLLAEEMNUDUHAKZULPUIUFKUJUGKUDULULAQZUMRUHUHA
+      ASUIUFGTUAUBUC $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
