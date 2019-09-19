@@ -1,4 +1,4 @@
-$( iset.mm - Version of 17-Sep-2019
+$( iset.mm - Version of 18-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -51134,6 +51134,32 @@ $)
         ( co caov31 caovass 3eqtr3i ) DEGMFGMFEGMDGMDEFGMGMFEDGMGMABCDEFGHIJKLN
         ABCDEFGHIJLOABCFEDGJIHLOP $.
     $}
+  $}
+
+  ${
+    $d A v w x y z $.  $d B v w x y $.  $d F v w x y z $.  $d S v w x y z $.
+    caovimo.idel $e |- B e. S $.
+    caovimo.com $e |- ( ( x e. S /\ y e. S ) -> ( x F y ) = ( y F x ) ) $.
+    caovimo.ass $e |- ( ( x e. S /\ y e. S /\ z e. S ) ->
+      ( ( x F y ) F z ) = ( x F ( y F z ) ) ) $.
+    caovimo.id $e |- ( x e. S -> ( x F B ) = x ) $.
+    $( Uniqueness of inverse element in commutative, associative operation with
+       identity.  The identity element is ` B ` .  (Contributed by Jim Kingdon,
+       18-Sep-2019.) $)
+    caovimo $p |- ( A e. S -> E* w ( w e. S /\ ( A F w ) = B ) ) $=
+      ( vv wcel cv co wceq wa w3a adantl wi wal wmo oveq1 3ad2ant2 df-3an simp1
+      simp2 simp3 caovassd caov12d eqtrd adantr oveq2 eqeq12d vtoclga sylan9eqr
+      id 3ad2antl2 sylanbr anasss 3adant2r a1i caovcomd 3ad2ant3 3eqtr3d 3expib
+      3impa alrimivv eleq1 eqeq1d anbi12d mo4 sylibr ) EGNZDOZGNZEVPHPZFQZRZMOZ
+      GNZEWAHPZFQZRZRVPWAQZUAZMUBDUBVTDUCVOWGDMVOVTWEWFVOVTWESVRWAHPZFWAHPZVPWA
+      VTVOWHWIQZWEVSWJVQVRFWAHUDTUEVOVQWEWHVPQZVSVOVQWEWKVOVQRZWBWDWKWLWBRVOVQW
+      BSZWDWKVOVQWBUFWMWDRWHVPWCHPZVPWMWHWNQWDWMWHEVPWAHPHPWNWMABCEVPWAGHAOZGNZ
+      BOZGNZCOZGNSWOWQHPZWSHPWOWQWSHPHPQWMKTZVOVQWBUGZVOVQWBUHZVOVQWBUIZUJWMABC
+      EVPWAGHXBXCXDWPWRRZWTWQWOHPQZWMJTXAUKULUMVQVOWDWNVPQWBWDVQWNVPFHPZVPWCFVP
+      HUNWOFHPZWOQZXGVPQAVPGWOVPQZXHXGWOVPWOVPFHUDXJURUOLUPUQUSULUTVAVHVBWEVOWI
+      WAQZVTWBXKWDWBWIWAFHPZWAWBABFWAGHXEXFWBJTFGNWBIVCWBURVDXIXLWAQAWAGWOWAQZX
+      HXLWOWAWOWAFHUDXMURUOLUPULUMVEVFVGVIVTWEDMWFVQWBVSWDVPWAGVJWFVRWCFVPWAEHU
+      NVKVLVMVN $.
   $}
 
   ${
