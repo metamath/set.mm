@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Sep-2019
+$( iset.mm - Version of 20-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -58234,9 +58234,10 @@ $)
        will never need it).  This is a "temporary" set used in the construction
        of complex numbers, and is intended to be used only by the
        construction.  From Proposition 9-2.5 of [Gleason] p. 119, who uses an
-       asterisk to denote this unary operation.  (Contributed by NM,
-       6-Mar-1996.)  (New usage is discouraged.) $)
-    df-rq $a |- *Q = ( `' .Q " { 1Q } ) $.
+       asterisk to denote this unary operation.  (Contributed by Jim Kingdon,
+       20-Sep-2019.)  (New usage is discouraged.) $)
+    df-rq $a |- *Q = { <. x , y >. |
+        ( x e. Q. /\ y e. Q. /\ ( x .Q y ) = 1Q ) } $.
 
     $( Define ordering relation on positive fractions.  This is a "temporary"
        set used in the construction of complex numbers, and is intended to be
