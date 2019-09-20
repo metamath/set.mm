@@ -58605,8 +58605,9 @@ $)
   $}
 
   ${
-    $d a x y z v w u f $.
-    $( Lemma for ~ dmaddpq .  (Contributed by Jim Kingdon, 15-Sep-2019.)
+    $d A a v w x $.
+    $( Decomposition of a positive fraction into numerator and denominator.
+       Lemma for ~ dmaddpq .  (Contributed by Jim Kingdon, 15-Sep-2019.)
        (New usage is discouraged.) $)
     dmaddpqlem $p |- ( x e. Q. -> E. w E. v x = [ <. w , v >. ] ~Q ) $=
       ( va cv cop ceq cec wceq wex cnpi cxp cqs cnq wcel wrex elqsi 2eximi syl
@@ -58616,6 +58617,22 @@ $)
       CJBJVJBCVBKKUAVLVGBCVGVKUBRSUCVGVDBCUDUEVHURBCVHUMVCUQVGVDUFVGVCUQIVDVBUP
       GUGUHUIRSUJSUKUL $.
 
+    $( Decomposition of a positive fraction into numerator and denominator.
+       Similar to ~ dmaddpqlem but also shows that the numerator and
+       denominator are positive integers.  (Contributed by Jim Kingdon,
+       20-Sep-2019.)  (New usage is discouraged.) $)
+    nqpi $p |- ( A e. Q. ->
+        E. w E. v ( ( w e. N. /\ v e. N. ) /\ A = [ <. w , v >. ] ~Q ) ) $=
+      ( va cv cnpi wcel cop ceq cec wceq wex cxp cqs cnq wrex elqsi elxpi syl
+      wa anim1i 19.41vv sylibr simplr ax-ia2 eceq1 ad2antrr eqtrd jca rexlimiva
+      2eximi df-nqqs eleq2s ) AEZFGBEZFGTZCUNUOHZIJZKZTZBLALZCFFMZINZOCVCGCDEZI
+      JZKZDVBPVADVBCIQVFVADVBVDVBGZVFTZVDUQKZUPTZVFTZBLALZVAVHVJBLALZVFTVLVGVMV
+      FABVDFFRUAVJVFABUBUCVKUTABVKUPUSVIUPVFUDVKCVEURVJVFUEVIVEURKUPVFVDUQIUFUG
+      UHUIUKSUJSULUM $.
+  $}
+
+  ${
+    $d a x y z v w u f $.
     $( Domain of addition on positive fractions.  (Contributed by NM,
        24-Aug-1995.)  (New usage is discouraged.) $)
     dmaddpq $p |- dom +Q = ( Q. X. Q. ) $=
