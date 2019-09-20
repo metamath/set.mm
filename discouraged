@@ -15109,7 +15109,7 @@ New usage of "df-vs" is discouraged (1 uses).
 New usage of "df-wrecs" is discouraged (8 uses).
 New usage of "df0op2" is discouraged (3 uses).
 New usage of "dfadj2" is discouraged (7 uses).
-New usage of "dfbi1gb" is discouraged (0 uses).
+New usage of "dfbi1ALT" is discouraged (0 uses).
 New usage of "dfch2" is discouraged (0 uses).
 New usage of "dfcnqs" is discouraged (4 uses).
 New usage of "dfhnorm2" is discouraged (3 uses).
@@ -18574,7 +18574,7 @@ Proof modification of "csbxpgOLD" is discouraged (228 steps).
 Proof modification of "csbxpgVD" is discouraged (520 steps).
 Proof modification of "deg1valOLD" is discouraged (145 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
-Proof modification of "dfbi1gb" is discouraged (100 steps).
+Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfnotOLD" is discouraged (17 steps).
 Proof modification of "dfsup2OLD" is discouraged (307 steps).
 Proof modification of "dfsup3OLD" is discouraged (110 steps).
