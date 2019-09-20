@@ -1,4 +1,4 @@
-$( iset.mm - Version of 18-Sep-2019
+$( iset.mm - Version of 19-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -58627,6 +58627,19 @@ $)
       SFQEQZSWLVKWMVMWNACDUHBEFUHUIVQVSCDEFUJRWLWEGQZDQCQWJWKWOCDWKWDGQZFQEQWOV
       TWPEFVTWCGQWPGWBNTLWBTLULWATNUMUNUOVTWCWDGVTWCUPUQURUSWDGEFUTRUSWEGCDUTRV
       AVCVNWFGVBVDVEVFABKKVGVH $.
+
+    $( Domain of multiplication on positive fractions.  (Contributed by NM,
+       24-Aug-1995.)  (New usage is discouraged.) $)
+    dmmulpq $p |- dom .Q = ( Q. X. Q. ) $=
+      ( vx vy vw vv vu vf vz cmq cdm cv cnq wcel wa ceq cec wceq wex sylibr cvv
+      copab cxp cop cmpq coprab dmoprab df-mqqs dmeqi dmaddpqlem anim12i ee4anv
+      co enqex ecexg ax-mp isseti ax-ia3 eximdv mpi 2eximi exrot3 19.42v bitr4i
+      syl pm4.71i opabbii 3eqtr4i df-xp eqtr4i ) HIZAJZKLZBJZKLZMZABTZKKUAVNVJC
+      JDJUBZNOPZVLEJFJUBZNOPZMZGJVPVRUCUKZNOZPZMZFQEQZDQCQZMZABGUDZIWGGQZABTVIV
+      OWGABGUEHWHABGCDEFUFUGVNWIABVNVNWFGQZMWIVNWJVNVTFQEQZDQCQZWJVNVQDQCQZVSFQ
+      EQZMWLVKWMVMWNACDUHBEFUHUIVQVSCDEFUJRWLWEGQZDQCQWJWKWOCDWKWDGQZFQEQWOVTWP
+      EFVTWCGQWPGWBNSLWBSLULWASNUMUNUOVTWCWDGVTWCUPUQURUSWDGEFUTRUSWEGCDUTRVCVD
+      VNWFGVAVBVEVFABKKVGVH $.
   $}
 
   ${
