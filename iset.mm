@@ -58798,6 +58798,30 @@ $)
       FVTSOUTQTUKULVNVJFUMUNVRVEVFVOVAKSOUSUTUOUPUQUR $.
   $}
 
+  ${
+    $d x y A $.  $d x y B $.  $d x y z w v $.
+    $( Relationship between reciprocal and multiplication on positive
+       fractions.  (Contributed by Jim Kingdon, 19-Sep-2019.)
+       (New usage is discouraged.) $)
+    recmulnqg $p |- ( ( A e. Q. /\ B e. Q. ) ->
+      ( ( *Q ` A ) = B <-> ( A .Q B ) = 1Q ) ) $=
+      ( vy vx vz vw cnq wcel wa crq wceq cmq co c1q cv eqeq1d cop ceq cec cnpi
+      cfv oveq1 anbi2d eleq1 anbi12d wex wmo weu df-nqqs exbidv cxp cqs opelxpi
+      vv oveq2 ancoms enqex ecelqsi syl syl6eleqr mulcompig opeq2d mulclpi 1qec
+      cmi eceq1 mulpipqqs an42s anidms 3eqtr4rd jca sylc ecoptocl 1nq mulcomnqg
+      spcegv mulassnqg mulidnq caovimo eu5 w3a copab df-rq 3anass opabbii eqtri
+      sylanbrc fvopab3g wb ibar adantl bitr4d ) AGHZBGHZIAJUABKWNABLMZNKZIZWPCO
+      ZGHZDOZWRLMZNKZIZWSAWRLMZNKZIWQDCABGGJWTAKZXBXEWSXFXAXDNWTAWRLUBPUCWRBKZW
+      SWNXEWPWRBGUDXGXDWONWRBALUOPUEWTGHZXCCUFZXCCUGXCCUHWSEOZFOZQRSZWRLMZNKZIZ
+      CUFZXIEFWTTTRGUIXLWTKZXOXCCXQXNXBWSXQXMXANXLWTWRLUBPUCUJXJTHZXKTHZIZXKXJQ
+      ZRSZGHZYCXLYBLMZNKZIZXPXTYBTTUKZRULZGXTYAYGHZYBYHHXSXRYIXKXJTTUMUPYGYARUQ
+      URUSUIUTZXTYCYEYJXTXJXKVEMZYKQZRSZYKXKXJVEMZQZRSZNYDXTYLYOKYMYPKXTYKYNYKX
+      JXKVAVBYLYORVFUSXTYKTHNYMKXJXKVCYKVDUSXTYDYPKZXRXSXSXRYQXJXKXKXJVGVHVIVJV
+      KXOYFCYBGWRYBKZWSYCXNYEWRYBGUDYRXMYDNWRYBXLLUOPUEVPVLVMEFUNCWTNGLVNXJXKVO
+      XJXKUNOVQXJVRVSXCCVTWGJXHWSXBWAZDCWBXHXCIZDCWBDCWCYSYTDCXHWSXBWDWEWFWHWNW
+      PWQWIWMWNWPWJWKWL $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
