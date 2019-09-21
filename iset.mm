@@ -58847,6 +58847,24 @@ $)
       VOUPZDCSWAVPJZDCSDCUQWDWEDCWAVLVOURUSUTVAVGVIVJVCVFVGVIVDVBVE $.
   $}
 
+  ${
+    $d A x y z w $.
+    $( Closure law for positive fraction reciprocal.  (Contributed by NM,
+       6-Mar-1996.)  (Revised by Mario Carneiro, 8-May-2013.)
+       (New usage is discouraged.) $)
+    recclnq $p |- ( A e. Q. -> ( *Q ` A ) e. Q. ) $=
+      ( vy cnq wcel cv cmq co c1q wa wex crq cfv recex recmulnqg biimpar eleq1a
+      wceq wi ad2antlr mpd expl exlimdv ) ACDZBEZCDZAUDFGHQZIZBJAKLZCDZBAMUCUGU
+      IBUCUEUFUIUCUEIZUFIUHUDQZUIUJUKUFAUDNOUEUKUIRUCUFUDCUHPSTUAUBT $.
+  $}
+
+  $( A positive fraction times its reciprocal is 1.  (Contributed by NM,
+     6-Mar-1996.)  (Revised by Mario Carneiro, 8-May-2013.)
+     (New usage is discouraged.) $)
+  recidnq $p |- ( A e. Q. -> ( A .Q ( *Q ` A ) ) = 1Q ) $=
+    ( cnq wcel crq cfv cmq co wceq recclnq eqid recmulnqg mpbii mpdan
+    c1q wa ) ABCZADEZBCZAQFGNHZAIPROQQHSQJAQKLM $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
