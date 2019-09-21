@@ -58865,6 +58865,14 @@ $)
     ( cnq wcel crq cfv cmq co wceq recclnq eqid recmulnqg mpbii mpdan
     c1q wa ) ABCZADEZBCZAQFGNHZAIPROQQHSQJAQKLM $.
 
+  $( Reciprocal of reciprocal of positive fraction.  (Contributed by NM,
+     26-Apr-1996.)  (Revised by Mario Carneiro, 29-Apr-2013.)
+     (New usage is discouraged.) $)
+  recrecnq $p |- ( A e. Q. -> ( *Q ` ( *Q ` A ) ) = A ) $=
+    ( cnq wcel crq cfv wceq cmq c1q recclnq mulcomnqg mpancom recidnq recmulnqg
+    co eqtrd wb mpbird ) ABCZADEZDEAFZSAGNZHFZRUAASGNZHSBCZRUAUCFAIZSAJKALOUDRT
+    UBPUESAMKQ $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
