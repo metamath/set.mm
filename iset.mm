@@ -1,4 +1,4 @@
-$( iset.mm - Version of 20-Sep-2019
+$( iset.mm - Version of 21-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -57985,6 +57985,22 @@ $)
       VFVESIVISIWIVJVETVITVEVIUQURWDVNVRWEWEWFWHWCWDWEUSVJVFWFWHMVIVENVAUTVBOVC
       VD $.
   $}
+
+  $( Trichotomy for positive integers.  (Contributed by Jim Kingdon,
+     21-Sep-2019.)  (New usage is discouraged.) $)
+  pitric $p |- ( ( A e. N. /\ B e. N. ) ->
+      ( A <N B <-> -. ( A = B \/ B <N A ) ) ) $=
+    ( cnpi wcel wa wceq wo wn clti wbr wb nntri2 syl2an ltpiord ancoms orbi2d
+    com pinn notbid 3bitr4d ) ACDZBCDZEZABDZABFZBADZGZHZABIJUEBAIJZGZHUAAQDBQ
+    DUDUHKUBARBRABLMABNUCUJUGUCUIUFUEUBUAUIUFKBANOPST $.
+
+  $( Trichotomy for positive integers.  (Contributed by Jim Kingdon,
+     21-Sep-2019.)  (New usage is discouraged.) $)
+  pitri3or $p |- ( ( A e. N. /\ B e. N. ) ->
+      ( A <N B \/ A = B \/ B <N A ) ) $=
+    ( cnpi wcel clti wbr wceq w3o com pinn nntri3or syl2an ltpiord biidd ancoms
+    wa wb 3orbi123d mpbird ) ACDZBCDZPZABEFZABGZBAEFZHABDZUDBADZHZTAIDBIDUHUAAJ
+    BJABKLUBUCUFUDUDUEUGABMUBUDNUATUEUGQBAMORS $.
 
   $( Positive integer 'less than' is a relation on positive integers.
      (Contributed by NM, 8-Feb-1996.)  (New usage is discouraged.) $)
