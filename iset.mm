@@ -58271,9 +58271,10 @@ $)
     $( Alternative definition of pre-addition on positive fractions.
        (Contributed by Jim Kingdon, 12-Sep-2019.)
        (New usage is discouraged.) $)
-    dfplpq2 $p |- +pQ = { <. <. x , y >. , z >. | ( ( x e. ( N. X. N. ) /\ y
-        e. ( N. X. N. ) ) /\ E. w E. v E. u E. f ( ( x = <. w , v >. /\ y = <. u
-        , f >. ) /\ z = <. ( ( w .N f ) +N ( v .N u ) ) , ( v .N f ) >. ) ) } $=
+    dfplpq2 $p |- +pQ = { <. <. x , y >. , z >. | ( ( x e. ( N. X. N. ) /\
+        y e. ( N. X. N. ) ) /\ E. w E. v E. u E. f ( ( x = <. w , v >. /\
+        y = <. u , f >. ) /\ z = <. ( ( w .N f ) +N ( v .N u ) ) ,
+        ( v .N f ) >. ) ) } $=
       ( cnpi cv cfv cmi co cpli cop wcel wa wceq wex vex oveq12d cxp c1st cmpt2
       c2nd coprab cplpq df-mpt2 df-plpq 1st2nd2 eqeq1d bi2anan9 anbi1d ad2antlr
       xp1st biimpa simprd opth2 simplbi eleq1d syl mpbid xp2nd ad2antrr simprbi
@@ -58299,8 +58300,8 @@ $)
        (Contributed by Jim Kingdon, 13-Sep-2019.)
        (New usage is discouraged.) $)
     dfmpq2 $p |- .pQ = { <. <. x , y >. , z >. | ( ( x e. ( N. X. N. ) /\ y
-        e. ( N. X. N. ) ) /\ E. w E. v E. u E. f ( ( x = <. w , v >. /\ y = <. u
-        , f >. ) /\ z = <. ( w .N u ) , ( v .N f ) >. ) ) } $=
+        e. ( N. X. N. ) ) /\ E. w E. v E. u E. f ( ( x = <. w , v >. /\
+        y = <. u , f >. ) /\ z = <. ( w .N u ) , ( v .N f ) >. ) ) } $=
       ( cnpi cv c1st cfv cmi co c2nd cop wcel wa wceq coprab wex cxp cmpt2 cmpq
       df-mpt2 df-mpq 1st2nd2 eqeq1d bi2anan9 anbi1d bicomd 4exbidv wb xp1st jca
       simpll simprl oveq12d simplr simprr opeq12d eqeq2d copsex4g syl2an bitr3d
