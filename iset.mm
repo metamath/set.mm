@@ -59011,6 +59011,16 @@ $)
       NXTXQUUTWNWOWJWKWBVOWFUOVPWD $.
   $}
 
+  $( One is less than two (one plus one).  (Contributed by NM, 13-Mar-1996.)
+     (Revised by Mario Carneiro, 10-May-2013.)  (New usage is discouraged.) $)
+  1lt2nq $p |- 1Q <Q ( 1Q +Q 1Q ) $=
+    ( c1o cop ceq cec cmi co cpli c1q cplq cltq wbr clti cnpi wcel wceq oveq12i
+    1pi 3brtr4i wb df-1nqqs 1lt2pi mulidpi ax-mp mulclpi mp2an ltmpig ordpipqqs
+    addclpi mp3an mpbi mp4an mpbir addpipqqs eqtri ) AABCDZAAEFZUPGFZUPBCDZHHHI
+    FZJUOURJKZAUPEFAUQEFLKZUPUQLKZVAAAAGFUPUQLUAAMNZUPAOQAUBUCZUPAUPAGVDVDPRUPM
+    NZUQMNZVCVBVASVCVCVEQQAAUDUEZVEVEVFVGVGUPUPUHUEZQUPUQAUFUIUJVCVCVFVEUTVASQQ
+    VHVGAAUQUPUGUKULTUSUOUOIFZURHUOHUOITTPVCVCVCVCVIUROQQQQAAAAUMUKUNR $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
