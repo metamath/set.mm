@@ -59021,6 +59021,23 @@ $)
     NZUQMNZVCVBVASVCVCVEQQAAUDUEZVEVEVFVGVGUPUPUHUEZQUPUQAUFUIUJVCVCVFVEUTVASQQ
     VHVGAAUQUPUGUKULTUSUOUOIFZURHUOHUOITTPVCVCVCVCVIUROQQQQAAAAUMUKUNR $.
 
+  ${
+    $d A r s t $.  $d B r s t $.
+    $( The sum of two fractions is greater than one of them.  (Contributed by
+       NM, 14-Mar-1996.)  (Revised by Mario Carneiro, 10-May-2013.)
+       (New usage is discouraged.) $)
+    ltaddnq $p |- ( ( A e. Q. /\ B e. Q. ) -> A <Q ( A +Q B ) ) $=
+      ( vr vs vt cnq wcel wa cplq co cltq wbr c1q cmq wb addclnq wceq adantl cv
+      1nq 1lt2nq ltmnqg mp3an12 mulidnq distrnqg mp3an23 oveq12d 3brtr3d ax-ia2
+      mp2an mpbii eqtrd anidms ax-ia1 syl3anc mpbid addcomnqg addassnqg caov12d
+      ltanqg w3a mpbird ) AFGZBFGZHZAABIJZKLZBAIJZBVFIJZKLZVEVFABBIJZIJZVHVIKVE
+      BVKKLZVFVLKLZVDVMVCVDBMNJZBMMIJZNJZBVKKVDMVPKLZVOVQKLZUAMFGZVPFGZVDVRVSOT
+      VTVTWATTMMPUJMVPBUBUCUKBUDZVDVQVOVOIJZVKVDVTVTVQWCQTTBMMUEUFVDVOBVOBIWBWB
+      UGULUHRVEVDVKFGZVCVMVNOVCVDUIZVDWDVCVDWDBBPUMRVCVDUNZBVKAUTUOUPABUQVECDEA
+      BBFIWFWEWECSZFGZDSZFGZHWGWIIJZWIWGIJQVEWGWIUQRWHWJESZFGVAWKWLIJWGWIWLIJIJ
+      QVEWGWIWLURRUSUHVEVCVFFGVDVGVJOWFABPWEAVFBUTUOVB $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
