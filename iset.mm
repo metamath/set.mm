@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-Sep-2019
+$( iset.mm - Version of 24-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -59100,6 +59100,23 @@ $)
     halfnq $p |- ( A e. Q. -> E. x ( x +Q x ) = A ) $=
       ( cnq wcel cv cplq co wceq wrex wex halfnqq rexex syl ) BCDAEZNFGBHZACIOA
       JABKOACLM $.
+  $}
+
+  ${
+    $d x A $.
+    $( There is no smallest positive fraction.  (Contributed by Jim Kingdon,
+       24-Sep-2019.)  (New usage is discouraged.) $)
+    nsmallnqq $p |- ( A e. Q. -> E. x e. Q. x <Q A ) $=
+      ( cnq wcel cv cplq co wceq wrex cltq wbr halfnqq ltaddnq anidms syl5ibcom
+      breq2 reximia syl ) BCDAEZSFGZBHZACISBJKZACIABLUAUBACSCDZSTJKZUAUBUCUDSSM
+      NTBSJPOQR $.
+
+    $( There is no smallest positive fraction.  (Contributed by NM,
+       26-Apr-1996.)  (Revised by Mario Carneiro, 10-May-2013.)
+       (New usage is discouraged.) $)
+    nsmallnq $p |- ( A e. Q. -> E. x x <Q A ) $=
+      ( cnq wcel cv cltq wbr wrex wex nsmallnqq rexex syl ) BCDAEBFGZACHMAIABJM
+      ACKL $.
   $}
 
 $(
