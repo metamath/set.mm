@@ -16631,7 +16631,7 @@ $)
     $d x y z $.
     $( Axiom of Extensionality.  It states that two sets are identical if they
        contain the same elements.  Axiom 1 of [Crosilla] p.  "Axioms of CZF and
-       IZF" (with unnnecessary quantifiers removed).
+       IZF" (with unnecessary quantifiers removed).
 
        Set theory can also be formulated with a _single_ primitive predicate
        ` e. ` on top of traditional predicate calculus _without_ equality.  In
@@ -33236,12 +33236,12 @@ $)
     $d x y z w a b $.
     ax-coll.1 $e |- F/ b ph $.
     $( Axiom of Collection.  Axiom 7 of [Crosilla], p.  "Axioms of CZF and IZF"
-       (with unnnecessary quantifier removed).  (Contributed by Jim Kingdon,
+       (with unnecessary quantifier removed).  (Contributed by Jim Kingdon,
        23-Aug-2018.) $)
     ax-coll $a |- ( A. x e. a E. y ph -> E. b A. x e. a E. y e. b ph ) $.
 
     $( Axiom of Replacement.  Axiom 7' of [Crosilla], p.  "Axioms of CZF and
-       IZF" (with unnnecessary quantifier removed).  In our context this is not
+       IZF" (with unnecessary quantifier removed).  In our context this is not
        an axiom, but a theorem proved from ~ ax-coll .  It is identical to
        ~ zfrep6 except for the choice of a freeness hypothesis rather than a
        distinct variable constraint between ` b ` and ` ph ` .  (Contributed by
@@ -33271,7 +33271,7 @@ $)
   ${
     $d x y z $.  $d y z ph $.
     $( The Axiom of Separation of IZF set theory.  Axiom 6 of [Crosilla], p.
-       "Axioms of CZF and IZF" (with unnnecessary quantifier removed, and with
+       "Axioms of CZF and IZF" (with unnecessary quantifier removed, and with
        a ` F/ y ph ` condition replaced by a distinct variable constraint
        between ` y ` and ` ph ` ).
 
