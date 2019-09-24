@@ -16598,7 +16598,8 @@ $(
 
   Set theory uses the formalism of propositional and predicate calculus to
   assert properties of arbitrary mathematical objects called "sets."  A set can
-  be an element of another set, and this relationship is indicated by the ` e. `
+  be an element of another set, and this relationship is indicated by the
+  ` e. `
   symbol.  Starting with the simplest mathematical object, called the empty
   set, set theory builds up more and more complex structures whose existence
   follows from the axioms, eventually resulting in extremely complicated sets
@@ -33271,9 +33272,9 @@ $)
   ${
     $d x y z $.  $d y z ph $.
     $( The Axiom of Separation of IZF set theory.  Axiom 6 of [Crosilla], p.
-       "Axioms of CZF and IZF" (with unnecessary quantifier removed, and with
-       a ` F/ y ph ` condition replaced by a distinct variable constraint
-       between ` y ` and ` ph ` ).
+       "Axioms of CZF and IZF" (with unnecessary quantifier removed, and with a
+       ` F/ y ph ` condition replaced by a distinct variable constraint between
+       ` y ` and ` ph ` ).
 
        The Separation Scheme is a weak form of Frege's Axiom of Comprehension,
        conditioning it (with ` x e. z ` ) so that it asserts the existence of a
