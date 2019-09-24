@@ -59077,6 +59077,25 @@ $)
       UMXPXSVIXT $.
   $}
 
+  ${
+    $d A x $.
+    $( One-half of any positive fraction exists.  Lemma for Proposition
+       9-2.6(i) of [Gleason] p. 120.  (Contributed by NM, 16-Mar-1996.)
+       (Revised by Mario Carneiro, 10-May-2013.)
+       (New usage is discouraged.) $)
+    halfnq $p |- ( A e. Q. -> E. x ( x +Q x ) = A ) $=
+      ( cnq wcel c1q cplq co crq cmq wceq 1nq mp2an ax-mp distrnqg mp3an oveq1i
+      addclnq oveq2i mulidnq 3eqtr3i cfv cv wex recclnq mulclnq recidnq oveq12i
+      mpan2 eqtri mulassnqg mulcomnqg eqtr3i syl2anc mp3an23 3eqtr3a id oveq12d
+      mp2b eqeq1d spcegv sylc ) BCDZBEEFGZHUAZIGZCDZVEVEFGZBJZAUBZVIFGZBJZAUCVB
+      VDCDZVFVCCDZVLECDZVNVMKKEEQLZVCUDZMZBVDUEUHVBBVDVDFGZIGZBEIGVGBVREBIVCVRI
+      GZVDIGZVCVDIGZVREVTVCVDIVTWBWBFGZVCVMVLVLVTWCJVOVQVQVCVDVDNOWBEWBEFVMWBEJ
+      VOVCUFMZWDUGUIPVRWBIGZVREIGZWAVRWBEVRIWDRVRVCIGZVDIGZWEWAVRCDZVMVLWHWEJVL
+      VLWIVQVQVDVDQZLZVOVQVRVCVDUJOWGVTVDIWIVMWGVTJWKVOVRVCUKLPULVMWIWFVRJVOVMV
+      LVLWIVPVPWJUMVRSURTWDTRVBVLVLVSVGJVQVQBVDVDNUNBSUOVKVHAVECVIVEJZVJVGBWLVI
+      VEVIVEFWLUPZWMUQUSUTVA $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
