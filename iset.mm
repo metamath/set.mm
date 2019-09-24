@@ -59119,6 +59119,34 @@ $)
       ACKL $.
   $}
 
+  ${
+    $d A x y z $.  $d B x y z $.
+    $( There exists a number between any two positive fractions.  Proposition
+       9-2.6(i) of [Gleason] p. 120.  (Contributed by Jim Kingdon,
+       24-Sep-2019.)  (New usage is discouraged.) $)
+    ltbtwnnqq $p |- ( A <Q B <-> E. x e. Q. ( A <Q x /\ x <Q B ) ) $=
+      ( vy vz cltq wbr cv wa cnq wrex wcel cplq wceq ltrelnq brel simpld adantr
+      co wb ltexnqq syl ibi wex ltaddnq sylan2 ancoms ax-ia1 ltanqg 3expa sylan
+      nsmallnq mpbid breq2 adantl addclnq anbi12d rspcedv mp2and 3expia exlimdv
+      breq1 3impa 3coml syl5 impancom rexlimdva ltsonq sotri rexlimivw impbii
+      sylc ) BCFGZBAHZFGZVNCFGZIZAJKZVMBJLZBDHZMSZCNZDJKZVRVMVSCJLZBCJJFOPZQVMW
+      CVMVSWDIVMWCTWEDBCUAUBUCVSWBVRDJVSWBVTJLZVRWFEHZVTFGZEUDVSWBIZVREVTULWIWH
+      VREVSWBWHVRWHVSWBVRWHVSWBVRWHVSIZWBIZBBWGMSZFGZWLCFGZVRWJWMWBVSWHWMWHVSWG
+      JLZWMWHWOWFWGVTJJFOPZQZBWGUEUFUGRWKWLWAFGZWNWJWRWBWJWHWRWHVSUHWHWOWFIVSWH
+      WRTZWPWOWFVSWSWGVTBUIUJUKUMRWBWRWNTWJWACWLFUNUOUMWKVQWMWNIZAWLJWJWLJLZWBV
+      SWHXAWHVSWOXAWQBWGUPUFUGRVNWLNZVQWTTWKXBVOWMVPWNVNWLBFUNVNWLCFVBUQUOURUSV
+      CVDUTVAVEVFVGVLVQVMAJBVNCFJVHOVIVJVK $.
+
+    $( There exists a number between any two positive fractions.  Proposition
+       9-2.6(i) of [Gleason] p. 120.  (Contributed by NM, 17-Mar-1996.)
+       (Revised by Mario Carneiro, 10-May-2013.)
+       (New usage is discouraged.) $)
+    ltbtwnnq $p |- ( A <Q B <-> E. x ( A <Q x /\ x <Q B ) ) $=
+      ( cv cltq wbr wa cnq wrex wcel wex df-rex ltbtwnnqq ltrelnq simprd adantr
+      brel pm4.71ri exbii 3bitr4i ) BADZEFZUACEFZGZAHIUAHJZUDGZAKBCEFUDAKUDAHLA
+      BCMUDUFAUDUEUBUEUCUBBHJUEBUAHHENQOPRST $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
