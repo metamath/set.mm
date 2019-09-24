@@ -59147,6 +59147,27 @@ $)
       BCMUDUFAUDUEUBUEUCUBBHJUEBUAHHENQOPRST $.
   $}
 
+  ${
+    $d A x y $.  $d B y $.
+    $( Ordering property of reciprocal for positive fractions.  We do not
+       provide the converse as a theorem because we only need the forward
+       direction, but if we did need the converse it would be easy to prove
+       ` ( A e. Q. /\ B e. Q. ) -> ( A <Q B <-> ( *Q `` B ) <Q ( *Q `` A ) ) `
+       (Contributed by Jim Kingdon, 24-Sep-2019.)
+       (New usage is discouraged.) $)
+    ltrnqi $p |- ( A <Q B -> ( *Q ` B ) <Q ( *Q ` A ) ) $=
+      ( cltq wbr crq cfv cnq wcel wb cmq recclnq mulclnq wceq mulcomnqg syl2anc
+      co mulassnqg c1q oveq2d syl wa ltrelnq syl2an ltmnqg ax-ia1 adantr adantl
+      brel mpd3an3 syl3anc 3eqtr2d recidnq mulidnq sylan9eq eqtrd ax-ia2 3eqtrd
+      sylan9eqr breq12d bitrd ibi ) ABCDZBEFZAEFZCDZVBAGHZBGHZUAZVBVEIABGGCUBUH
+      VHVBVDVCJPZAJPZVIBJPZCDZVEVFVGVIGHZVBVLIVFVDGHZVCGHZVMVGAKZBKZVDVCLUCZABV
+      IUDUIVHVJVCVKVDCVHVJVCAVDJPZJPZVCVHVJAVIJPZVSVCJPZVTVHVMVFVJWAMVRVFVGUEZV
+      IANOVHVFVNVOWBWAMWCVFVNVGVPUFZVGVOVFVQUGZAVDVCQUJVHVSGHZVOWBVTMVHVFVNWFWC
+      WDAVDLOWEVSVCNOUKVFVGVTVCRJPZVCVFVSRVCJAULSVGVOWGVCMVQVCUMTUNUOVHVKVDVCBJ
+      PZJPZVDBVCJPZJPZVDVHVNVOVGVKWIMWDWEVFVGUPZVDVCBQUJVHWHWJVDJVHVOVGWHWJMWEW
+      LVCBNOSVGVFWKVDRJPZVDVGWJRVDJBULSVFVNWMVDMVPVDUMTURUQUSUTTVA $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
