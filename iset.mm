@@ -16598,7 +16598,7 @@ $(
 
   Set theory uses the formalism of propositional and predicate calculus to
   assert properties of arbitrary mathematical objects called "sets."  A set can
-  be contained in another set, and this relationship is indicated by the ` e. `
+  be an element of another set, and this relationship is indicated by the ` e. `
   symbol.  Starting with the simplest mathematical object, called the empty
   set, set theory builds up more and more complex structures whose existence
   follows from the axioms, eventually resulting in extremely complicated sets
