@@ -59974,8 +59974,16 @@ htmldef "DECID" as "<SMALL>DECID</SMALL> ";
   althtmldef "DECID" as "<SMALL>DECID</SMALL> ";
   latexdef "DECID" as "\mathrm{DECID} ";
 
-/* End of typesetting definition section */
+/* htmldef, althtmldef, latexdef for mathboxes */
+/* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
 
+/* Mathbox of BJ */
+htmldef "isBounded" as "isBounded ";
+  althtmldef "isBounded" as "isBounded ";
+  latexdef "isBounded" as "\mathrm{isBounded} ";
+/* End of BJ's mathbox */
+
+/* End of typesetting definition section */
 $)
 
 $(
@@ -60065,3 +60073,53 @@ $)
     ( wa ax-ia3 pm2.43i ) AAABAACD $.
 
 $( (End of Mykola Mostovenko's mathbox.) $)
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+                Mathbox for BJ
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+This is an experiment to define bounded formulas, following a discussion on
+GitHub between Jim Kingdom, Mario Carneiro and BJ.
+$)
+
+  $( Symbol for the predicate ` isBounded ` . $)
+  $c isBounded $.
+
+  $( Syntax for the predicate ` isBounded ` . $)
+  wbd $a wff isBounded ph $.
+
+  $( The truth value ` T. ` is bounded.  (Contributed by BJ, 25-Sep-2019.) $)
+  ax-bdtru $a |- isBounded T. $.
+
+  $( The truth value ` F. ` is bounded.  (Contributed by BJ, 25-Sep-2019.) $)
+  ax-bdfal $a |- isBounded F. $.
+
+  $( An implication between two bounded formulas is bounded.  (Contributed by
+     BJ, 25-Sep-2019.) $)
+  ax-bdim $a |-
+              ( ( isBounded ph /\ isBounded ps ) -> isBounded ( ph -> ps ) ) $.
+
+  $( The conjunction of two bounded formulas is bounded.  (Contributed by BJ,
+     25-Sep-2019.) $)
+  ax-bdan $a |-
+              ( ( isBounded ph /\ isBounded ps ) -> isBounded ( ph /\ ps ) ) $.
+
+  $( The disjunction of two bounded formulas is bounded.  (Contributed by BJ,
+     25-Sep-2019.) $)
+  ax-bdor $a |-
+              ( ( isBounded ph /\ isBounded ps ) -> isBounded ( ph \/ ps ) ) $.
+
+  $( The negation of a bounded formula is bounded.  (Contributed by BJ,
+     25-Sep-2019.) $)
+  ax-bdn $a |- ( isBounded ph -> isBounded -. ph ) $.
+
+  $( A bounded universal quantification of a bounded formula is bounded.
+     (Contributed by BJ, 25-Sep-2019.) $)
+  ax-bdal $a |- ( isBounded ph -> isBounded A. x e. y ph ) $.
+
+  $( A bounded existential quantification of a bounded formula is bounded.
+     (Contributed by BJ, 25-Sep-2019.) $)
+  ax-bdex $a |- ( isBounded ph -> isBounded E. x e. y ph ) $.
+
+
+$( (End of BJ's mathbox.) $)
