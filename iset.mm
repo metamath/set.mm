@@ -54891,7 +54891,7 @@ $)
   cfrec $a class frec ( F , I ) $.
 
   ${
-    $d x y f g F $.  $d x y f g I $.
+    $d x y f g m F $.  $d x y f g m I $.
     $( Define a recursive definition generator on ` _om ` (the class of finite
        ordinals) with characteristic function ` F ` and initial value ` I ` .
        This rather amazing operation allows us to define, with compact direct
