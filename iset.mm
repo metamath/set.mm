@@ -48865,7 +48865,7 @@ $)
     $d x y z w v u s A $.  $d x y z w v u s B $.  $d x y z w v u s C $.
     $d x y z w v u s ph $.
     acexmidlem.a $e |- A = { x e. { (/) , { (/) } } | ( x = (/) \/ ph ) } $.
-    acexmidlem.b $e |- B = { x e. { (/) , { (/) } } 
+    acexmidlem.b $e |- B = { x e. { (/) , { (/) } }
                                                 | ( x = { (/) } \/ ph ) } $.
     acexmidlem.c $e |- C = { A , B } $.
     $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
@@ -49014,6 +49014,13 @@ $)
        Essentially the same proof can also be found at "The axiom of choice
        implies instances of EM", [Crosilla], p.  "Set-theoretic principles
        incompatible with intuitionistic logic".
+
+       Often referred to as Diaconescu's theorem, or Diaconescu-Goodman-Myhill
+       theorem, after Radu Diaconescu who discovered it in 1975 in the
+       framework of topos theory and N. D. Goodman and John Myhill in 1978 in
+       the framework of set theory (although it already appeared as an exercise
+       in Errett Bishop's book _Foundations of Constructive Analysis_ from
+       1967).
 
        (Contributed by Jim Kingdon, 4-Aug-2019.) $)
     acexmid $p |- ( ph \/ -. ph ) $=
@@ -57991,9 +57998,9 @@ $)
      21-Sep-2019.)  (New usage is discouraged.) $)
   pitric $p |- ( ( A e. N. /\ B e. N. ) ->
       ( A <N B <-> -. ( A = B \/ B <N A ) ) ) $=
-    ( cnpi wcel wa wceq wo wn clti wbr wb nntri2 syl2an ltpiord ancoms orbi2d
-    com pinn notbid 3bitr4d ) ACDZBCDZEZABDZABFZBADZGZHZABIJUEBAIJZGZHUAAQDBQ
-    DUDUHKUBARBRABLMABNUCUJUGUCUIUFUEUBUAUIUFKBANOPST $.
+    ( cnpi wcel wa wceq wo wn clti wbr com wb pinn nntri2 syl2an ltpiord ancoms
+    orbi2d notbid 3bitr4d ) ACDZBCDZEZABDZABFZBADZGZHZABIJUEBAIJZGZHUAAKDBKDUDU
+    HLUBAMBMABNOABPUCUJUGUCUIUFUEUBUAUIUFLBAPQRST $.
 
   $( Trichotomy for positive integers.  (Contributed by Jim Kingdon,
      21-Sep-2019.)  (New usage is discouraged.) $)
@@ -58683,12 +58690,13 @@ $)
     $( Addition of positive fractions is commutative.  (Contributed by Jim
        Kingdon, 15-Sep-2019.)  (New usage is discouraged.) $)
     addcomnqg $p |- ( ( A e. Q. /\ B e. Q. ) -> ( A +Q B ) = ( B +Q A ) ) $=
-    ( vx vy vz vw cnq cv cmi co cpli cplq cnpi addpipqqs wcel wa wceq mulcompig
-    mulclpi ancoms ceq df-nqqs oveqan12d ad2ant2rl ad2ant2lr addcompig ad2ant2l
-    an42s syl2anc eqtrd ecovicom ) CDEFABGCHZFHZIJZDHZEHZIJZKJZLUAMUOUMIJZUPUOI
-    JZUMULIJZKJZUMUOIJZUBULUOUPUMNUPUMULUONULMOZUOMOZPUPMOZUMMOZPPZURVAUTKJZVBV
-    DVGVEVFURVIQVDVGPVEVFPUNVAUQUTKULUMRUOUPRUCUHVHVAMOZUTMOZVIVBQVDVGVJVEVFVGV
-    DVJUMULSTUDVEVFVKVDVGVFVEVKUPUOSTUEVAUTUFUIUJVEVGUSVCQVDVFUOUMRUGUK $.
+      ( vx vy vz vw cnq cv cmi co cpli cplq cnpi addpipqqs wcel wa wceq mulclpi
+      mulcompig ancoms ceq df-nqqs oveqan12d an42s ad2ant2rl ad2ant2lr ad2ant2l
+      addcompig syl2anc eqtrd ecovicom ) CDEFABGCHZFHZIJZDHZEHZIJZKJZLUAMUOUMIJ
+      ZUPUOIJZUMULIJZKJZUMUOIJZUBULUOUPUMNUPUMULUONULMOZUOMOZPUPMOZUMMOZPPZURVA
+      UTKJZVBVDVGVEVFURVIQVDVGPVEVFPUNVAUQUTKULUMSUOUPSUCUDVHVAMOZUTMOZVIVBQVDV
+      GVJVEVFVGVDVJUMULRTUEVEVFVKVDVGVFVEVKUPUORTUFVAUTUHUIUJVEVGUSVCQVDVFUOUMS
+      UGUK $.
   $}
 
   ${
@@ -58880,8 +58888,8 @@ $)
      6-Mar-1996.)  (Revised by Mario Carneiro, 8-May-2013.)
      (New usage is discouraged.) $)
   recidnq $p |- ( A e. Q. -> ( A .Q ( *Q ` A ) ) = 1Q ) $=
-    ( cnq wcel crq cfv cmq co wceq recclnq eqid recmulnqg mpbii mpdan
-    c1q wa ) ABCZADEZBCZAQFGNHZAIPROQQHSQJAQKLM $.
+    ( cnq wcel crq cfv cmq co c1q wceq recclnq wa eqid recmulnqg mpbii mpdan )
+    ABCZADEZBCZAQFGHIZAJPRKQQISQLAQMNO $.
 
   $( Reciprocal of reciprocal of positive fraction.  (Contributed by NM,
      26-Apr-1996.)  (Revised by Mario Carneiro, 29-Apr-2013.)
@@ -58897,17 +58905,15 @@ $)
        21-Sep-2019.)  (New usage is discouraged.) $)
     nqtri3or $p |- ( ( A e. Q. /\ B e. Q. ) ->
         ( A <Q B \/ A = B \/ B <Q A ) ) $=
-      ( vz vw vu vv cv cop ceq cltq wbr wceq w3o cnpi 3orbi123d wcel wa
-      cmi co clti cec df-nqqs breq1 eqeq1 breq2 eqeq2 mulclpi ad2ant2rl
-      cnq ad2ant2lr pitri3or syl2anc ordpipqqs enqeceq ancoms mulcompig
-      wb breq12d bitr4d mpbird 2ecoptocl ) CGZDGZHIUAZEGZFGZHIUAZJKZVDV
-      GLZVGVDJKZMZAVGJKZAVGLZVGAJKZMABJKZABLZBAJKZMCDEFABNNIUIUBVDALVHV
-      LVIVMVJVNVDAVGJUCVDAVGUDVDAVGJUEOVGBLVLVOVMVPVNVQVGBAJUEVGBAUFVGB
-      AJUCOVBNPZVCNPZQZVENPZVFNPZQZQZVKVBVFRSZVCVERSZTKZWEWFLZWFWETKZMZ
-      WDWENPZWFNPZWJVRWBWKVSWAVBVFUGUHVSWAWLVRWBVCVEUGUJWEWFUKULWDVHWGV
-      IWHVJWIVBVCVEVFUMVBVCVEVFUNWDVJVEVCRSZVFVBRSZTKZWIWCVTVJWOUQVEVFV
-      BVCUMUOWDWFWMWEWNTVSWAWFWMLVRWBVCVEUPUJVRWBWEWNLVSWAVBVFUPUHURUSO
-      UTVA $.
+      ( vz vw vu vv cv cop ceq cltq wbr wceq w3o cnpi 3orbi123d wcel wa co clti
+      cmi cec cnq df-nqqs breq1 eqeq1 breq2 mulclpi ad2ant2rl ad2ant2lr syl2anc
+      eqeq2 pitri3or ordpipqqs enqeceq ancoms mulcompig bitr4d mpbird 2ecoptocl
+      wb breq12d ) CGZDGZHIUAZEGZFGZHIUAZJKZVDVGLZVGVDJKZMZAVGJKZAVGLZVGAJKZMAB
+      JKZABLZBAJKZMCDEFABNNIUBUCVDALVHVLVIVMVJVNVDAVGJUDVDAVGUEVDAVGJUFOVGBLVLV
+      OVMVPVNVQVGBAJUFVGBAUKVGBAJUDOVBNPZVCNPZQZVENPZVFNPZQZQZVKVBVFTRZVCVETRZS
+      KZWEWFLZWFWESKZMZWDWENPZWFNPZWJVRWBWKVSWAVBVFUGUHVSWAWLVRWBVCVEUGUIWEWFUL
+      UJWDVHWGVIWHVJWIVBVCVEVFUMVBVCVEVFUNWDVJVEVCTRZVFVBTRZSKZWIWCVTVJWOUTVEVF
+      VBVCUMUOWDWFWMWEWNSVSWAWFWMLVRWBVCVEUPUIVRWBWEWNLVSWAVBVFUPUHVAUQOURUS $.
   $}
 
   ${
