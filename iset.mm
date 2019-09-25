@@ -48856,7 +48856,7 @@ $)
     $d x y z w v u s A $.  $d x y z w v u s B $.  $d x y z w v u s C $.
     $d x y z w v u s ph $.
     acexmidlem.a $e |- A = { x e. { (/) , { (/) } } | ( x = (/) \/ ph ) } $.
-    acexmidlem.b $e |- B = { x e. { (/) , { (/) } } 
+    acexmidlem.b $e |- B = { x e. { (/) , { (/) } }
                                                 | ( x = { (/) } \/ ph ) } $.
     acexmidlem.c $e |- C = { A , B } $.
     $( Lemma for ~ acexmid .  (Contributed by Jim Kingdon, 6-Aug-2019.) $)
@@ -49005,6 +49005,13 @@ $)
        Essentially the same proof can also be found at "The axiom of choice
        implies instances of EM", [Crosilla], p.  "Set-theoretic principles
        incompatible with intuitionistic logic".
+
+       Often referred to as Diaconescu's theorem, or Diaconescu-Goodman-Myhill
+       theorem, after Radu Diaconescu who discovered it in 1975 in the
+       framework of topos theory and N. D. Goodman and John Myhill in 1978 in
+       the framework of set theory (although it already appeared as an exercise
+       in Errett Bishop's book _Foundations of Constructive Analysis_ from
+       1967).
 
        (Contributed by Jim Kingdon, 4-Aug-2019.) $)
     acexmid $p |- ( ph \/ -. ph ) $=
@@ -54875,7 +54882,7 @@ $)
   cfrec $a class frec ( F , I ) $.
 
   ${
-    $d x y f g F $.  $d x y f g I $.
+    $d x y f g m F $.  $d x y f g m I $.
     $( Define a recursive definition generator on ` _om ` (the class of finite
        ordinals) with characteristic function ` F ` and initial value ` I ` .
        This rather amazing operation allows us to define, with compact direct
@@ -60178,8 +60185,16 @@ htmldef "DECID" as "<SMALL>DECID</SMALL> ";
   althtmldef "DECID" as "<SMALL>DECID</SMALL> ";
   latexdef "DECID" as "\mathrm{DECID} ";
 
-/* End of typesetting definition section */
+/* htmldef, althtmldef, latexdef for mathboxes */
+/* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
 
+/* Mathbox of BJ */
+htmldef "isBounded" as "isBounded ";
+  althtmldef "isBounded" as "isBounded ";
+  latexdef "isBounded" as "\mathrm{isBounded} ";
+/* End of BJ's mathbox */
+
+/* End of typesetting definition section */
 $)
 
 $(
@@ -60269,3 +60284,53 @@ $)
     ( wa ax-ia3 pm2.43i ) AAABAACD $.
 
 $( (End of Mykola Mostovenko's mathbox.) $)
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+                Mathbox for BJ
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+This is an experiment to define bounded formulas, following a discussion on
+GitHub between Jim Kingdom, Mario Carneiro and BJ.
+$)
+
+  $( Symbol for the predicate ` isBounded ` . $)
+  $c isBounded $.
+
+  $( Syntax for the predicate ` isBounded ` . $)
+  wbd $a wff isBounded ph $.
+
+  $( The truth value ` T. ` is bounded.  (Contributed by BJ, 25-Sep-2019.) $)
+  ax-bdtru $a |- isBounded T. $.
+
+  $( The truth value ` F. ` is bounded.  (Contributed by BJ, 25-Sep-2019.) $)
+  ax-bdfal $a |- isBounded F. $.
+
+  $( An implication between two bounded formulas is bounded.  (Contributed by
+     BJ, 25-Sep-2019.) $)
+  ax-bdim $a |-
+              ( ( isBounded ph /\ isBounded ps ) -> isBounded ( ph -> ps ) ) $.
+
+  $( The conjunction of two bounded formulas is bounded.  (Contributed by BJ,
+     25-Sep-2019.) $)
+  ax-bdan $a |-
+              ( ( isBounded ph /\ isBounded ps ) -> isBounded ( ph /\ ps ) ) $.
+
+  $( The disjunction of two bounded formulas is bounded.  (Contributed by BJ,
+     25-Sep-2019.) $)
+  ax-bdor $a |-
+              ( ( isBounded ph /\ isBounded ps ) -> isBounded ( ph \/ ps ) ) $.
+
+  $( The negation of a bounded formula is bounded.  (Contributed by BJ,
+     25-Sep-2019.) $)
+  ax-bdn $a |- ( isBounded ph -> isBounded -. ph ) $.
+
+  $( A bounded universal quantification of a bounded formula is bounded.
+     (Contributed by BJ, 25-Sep-2019.) $)
+  ax-bdal $a |- ( isBounded ph -> isBounded A. x e. y ph ) $.
+
+  $( A bounded existential quantification of a bounded formula is bounded.
+     (Contributed by BJ, 25-Sep-2019.) $)
+  ax-bdex $a |- ( isBounded ph -> isBounded E. x e. y ph ) $.
+
+
+$( (End of BJ's mathbox.) $)
