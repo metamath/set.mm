@@ -60290,7 +60290,7 @@ $(
                 Mathbox for BJ
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 This is an experiment to define bounded formulas, following a discussion on
-GitHub between Jim Kingdom, Mario Carneiro and BJ.
+GitHub between Jim Kingdon, Mario Carneiro and BJ.
 $)
 
   $( Symbol for the predicate ` isBounded ` . $)
