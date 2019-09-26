@@ -147,13 +147,17 @@ then extended without justification to statements about infinite collections.
 <LI> <A HREF="mmbiblio.html">Bibliographic Cross-Reference</A></LI>
 <LI> <A HREF="mmdefinitions.html">Definition List</A></LI>
 <LI> <A HREF="mmascii.html">ASCII Equivalents for Text-Only Browsers</A></LI>
-<LI> <A HREF="../metamath/iset.mm">Metamath database iset.mm (ASCII file)</A></LI>
+<LI>
+<A HREF="../metamath/iset.mm">Metamath database iset.mm (ASCII file)</A>
+</LI>
 </MENU>
 
 <B><FONT COLOR="#006633">External links</FONT></B>
 <MENU>
-<LI> <A HREF=" https://github.com/metamath/set.mm">Github repository</A>
-          [accessed 06-Jan-2018]</LI>
+<LI>
+<A HREF=" https://github.com/metamath/set.mm">GitHub repository</A>
+[accessed 06-Jan-2018]
+</LI>
 </MENU>
 
 </TD>
@@ -835,7 +839,9 @@ in converting classical proofs to intuitionistic ones.</P>
 
 <LI>If you see case elimination ( pm2.61 or its variants) you'll probably end up with two theorems for the two cases. In particular, if the cases were ` A e. _V ` and ` -. A e. _V ` you probably just care about the ` A e. _V ` case.</LI>
 
-<LI>Non-empty almost always needs to be changed to inhabited (those terms are defined at ~ n0rf ).</LI>
+<LI>
+Non-empty almost always needs to be changed to inhabited (those terms are defined at ~ n0rf ).
+</LI>
 
 <LI>If the original proof relied on propositional/predicate logic which isn't a theorem of intuitionistic logic, maybe there is a way of expressing the logic more directly. This is perhaps the hardest one to put in cookbook form: you might need to try some things and see if anything works.</LI>
 
@@ -847,52 +853,114 @@ in converting classical proofs to intuitionistic ones.</P>
 
 <LI>Sometimes one direction of a biconditional holds, or subset holds instead of equality. You might be able to keep the easy direction and worry about the other one later.</LI>
 
-<LI>If there is case elimination sometimes only one of the two cases is possible. For
-example, in ~ mosubopt the rest of the formula being proved constrains which case
-matters.</LI>
+<LI>
+If there is case elimination sometimes only one of the two cases is possible.
+For example, in ~ mosubopt the rest of the formula being proved constrains
+which case matters.
+</LI>
 
-<LI>If you need an additional condition (for example, because the original
-proof used case elimination) and you are proving a biconditional, consider whether
+<LI>
+If you need an additional condition (for example, because the original proof
+used case elimination) and you are proving a biconditional, consider whether
 both sides of the biconditional imply the condition. If so, you'll be able to
-prove the biconditional with that condition as an antecedent, and then use ~ pm5.21nii
-or one of its variants to remove the antecedent (example: ~ elxp4 ).</LI>
+prove the biconditional with that condition as an antecedent, and then use
+~ pm5.21nii or one of its variants to remove the antecedent (example:
+~ elxp4 ).
+</LI>
 
-<LI>If your proof relies on dveeq2 try ~ dveeq2or and likewise for the other things downstream of ~ ax-i12 or ~ ax-bnd .</LI>
+<LI>
+If your proof relies on dveeq2 try ~ dveeq2or and likewise for the other things
+downstream of ~ ax-i12 or ~ ax-bnd .
+</LI>
 
-<LI>If you have a disjunction, be reluctant to turn it into an implication using ~ ord and the like. Instead, show that each disjunct implies what you are trying to prove and use ~ jaoi to join those two implications into something which can hook up to the disjunction.</LI>
+<LI>
+If you have a disjunction, be reluctant to turn it into an implication using
+~ ord and the like. Instead, show that each disjunct implies what you are
+trying to prove and use ~ jaoi to join those two implications into something
+which can hook up to the disjunction.
+</LI>
 
-<LI>Disjunctive syllogism holds in intuitionistic logic and we state it a few ways (for example ~ orel1 and ~ ecased ) but we don't have a wide variety of convenience theorems. Unless we add those, you'll use ~ ord or something similar followed by ~ mpd or something similar. This may add a few steps but they are straightforward ones.</LI>
+<LI>
+Disjunctive syllogism holds in intuitionistic logic and we state it a few ways
+(for example ~ orel1 and ~ ecased ) but we don't have a wide variety of
+convenience theorems. Unless we add those, you'll use ~ ord or something
+similar followed by ~ mpd or something similar. This may add a few steps but
+they are straightforward ones.
+</LI>
 
-<LI>If your proof is doing tricky things perhaps in the interest of shortness, try just expanding the definitions and applying logic in a straightforward way. See if this gets you a working (although perhaps longer) proof.</LI>
+<LI>
+If your proof is doing tricky things perhaps in the interest of shortness, try
+just expanding the definitions and applying logic in a straightforward way. See
+if this gets you a working (although perhaps longer) proof.
+</LI>
 
-<LI>If your proof relies on a biconditional in set.mm which isn't in iset.mm, see if one direction is in iset.mm and see which direction your proof is using. For example ~ 19.35-1 or ~ exnalim .</LI>
+<LI>
+If your proof relies on a biconditional in set.mm which isn't in iset.mm, see
+if one direction is in iset.mm and see which direction your proof is using. For
+example ~ 19.35-1 or ~ exnalim .
+</LI>
 
-<LI>If you are doing things with inhabited classes (beyond just applying existing inhabited class theorems), you may be able to dig up some predicate logic you haven't used in a while (e.g. ~ raaan ).</LI>
+<LI>
+If you are doing things with inhabited classes (beyond just applying existing
+inhabited class theorems), you may be able to dig up some predicate logic you
+haven't used in a while (e.g. ~ raaan ).
+</LI>
 
-<LI>Consider the possibility of giving up. Some things just won't have intuitionistic proofs. The more it looks like excluded middle or other non-intuitionistic statements, the more likely you are dealing with one of these. But it can be hard to have good intuition about this. In some cases it may be possible to ask "can I use this statement to prove 'ph or not ph' for an arbitrary proposition" (see ~ ordtriexmid for example ), but this is not always an easy technique to apply.</LI>
+<LI>
+Consider the possibility of giving up. Some things just won't have
+intuitionistic proofs. The more it looks like excluded middle or other
+non-intuitionistic statements, the more likely you are dealing with one of
+these. But it can be hard to have good intuition about this. In some cases it
+may be possible to ask "can I use this statement to prove 'ph or not ph' for an
+arbitrary proposition" (see ~ ordtriexmid for example ), but this is not always
+an easy technique to apply.
+</LI>
 
-<LI>Switching between ~ 2th and ~ 2false might help (e.g. ~ dfnul2 , ~ dfnul3 , ~ rab0 ).</LI>
+<LI>
+Switching between ~ 2th and ~ 2false might help (e.g. ~ dfnul2 , ~ dfnul3 ,
+~ rab0 ).
+</LI>
 
-<LI>In many cases statements which are equivalent in classical logic become several non-equivalent statements (e.g. exclusive or, ordinals, non-empty versus inhabited, apartness versus negated equality). This is usually a good place to look for a literature reference, but don't be afraid to change the statement being proved to "what you really meant is X" as appropriate.</LI>
+<LI>
+In many cases statements which are equivalent in classical logic become several
+non-equivalent statements (e.g. exclusive or, ordinals, non-empty versus
+inhabited, apartness versus negated equality). This is usually a good place to
+look for a literature reference, but don't be afraid to change the statement
+being proved to "what you really meant is X" as appropriate.
+</LI>
 
-<LI>If a statement has multiple equivalences in set.mm (e.g. mo2 and mo3 , or dffun2 and dffun3 ) and only some of them in iset.mm, sometimes a pretty similar proof will work (that is, which one to use in the original proof may have been a fairly arbitrary choice).</LI>
+<LI>
+If a statement has multiple equivalences in set.mm (e.g. mo2 and mo3 , or
+dffun2 and dffun3 ) and only some of them in iset.mm, sometimes a pretty
+similar proof will work (that is, which one to use in the original proof may
+have been a fairly arbitrary choice).
+</LI>
 
-<LI>A number of theorems related to functions (especially ovex and fvex ) in
+<LI>
+A number of theorems related to functions (especially ovex and fvex ) in
 set.mm perform case elimination based on whether we are evaluating the function
-within its domain or outside it. The iset.mm replacements ( ~ fnovex and ~ funfvex )
-only work within the domain. This is rarely a problem but often means that
-logic must be rearranged, for example by changing ~ rexlimivw to ~ rexlimdva .
-(example: ~ ovelrn or indeed most uses of ~ fnovex and ~ funfvex ).</LI>
+within its domain or outside it. The iset.mm replacements ( ~ fnovex and
+~ funfvex ) only work within the domain. This is rarely a problem but often
+means that logic must be rearranged, for example by changing ~ rexlimivw to
+~ rexlimdva (example: ~ ovelrn or indeed most uses of ~ fnovex and ~ funfvex ).
+</LI>
 
-<LI>With excluded middle, ` (/) e. A ` and ` A =/= (/) ` are equivalent (where
+<LI>
+With excluded middle, ` (/) e. A ` and ` A =/= (/) ` are equivalent (where
 ` A ` is an ordinal). In such theorems, ` (/) e. A ` is generally the more
 interesting condition constructively.</LI>
 
-<LI>If you get stuck, ask! (for example in a github issue or on the mailing list). We have a number of contributors who have experience in constructive mathematics in general, or iset.mm in particular, and one of the best things about doing/learning mathematics in metamath is the collaborative nature of how we develop it.
+<LI>
+If you get stuck, ask! (for example in a GitHub issue or on the mailing list).
+We have a number of contributors who have experience in constructive
+mathematics in general, or iset.mm in particular, and one of the best things
+about doing/learning mathematics in metamath is the collaborative nature of how
+we develop it.
 </UL>
 
-<HR NOSHADE SIZE=1><A NAME="setmm"></A><B><FONT
-COLOR="#006633">Metamath Proof Explorer cross reference</FONT></B>&nbsp;&nbsp;&nbsp;
+<HR NOSHADE SIZE=1><A NAME="setmm"></A>
+<B><FONT COLOR="#006633">Metamath Proof Explorer cross
+reference</FONT></B>&nbsp;&nbsp;&nbsp;
 
 <P>This is a list of theorems from the Metamath Proof Explorer (which
 assumes the law of the excluded middle throughout) which we do not
@@ -2063,4 +2131,3 @@ HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
 
 </BODY>
 </HTML>
-
