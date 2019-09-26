@@ -1358,11 +1358,6 @@
 "axacndlem4" is used by "axacndlem5".
 "axacndlem5" is used by "axacnd".
 "axaddf" is used by "axaddcl".
-"axc11n" is used by "2sb5ndALT".
-"axc11n" is used by "2sb5ndVD".
-"axc11n" is used by "aecom".
-"axc11n" is used by "e2ebindALT".
-"axc11n" is used by "e2ebindVD".
 "axc4i-o" is used by "aev-o".
 "axc4i-o" is used by "ax12inda2ALT".
 "axc4i-o" is used by "ax12indalem".
@@ -13952,7 +13947,6 @@ New usage of "axaddcl" is discouraged (0 uses).
 New usage of "axaddf" is discouraged (1 uses).
 New usage of "axaddrcl" is discouraged (0 uses).
 New usage of "axc11-o" is discouraged (0 uses).
-New usage of "axc11n" is discouraged (5 uses).
 New usage of "axc11n-16" is discouraged (0 uses).
 New usage of "axc11next" is discouraged (0 uses).
 New usage of "axc11nfromc11" is discouraged (0 uses).
