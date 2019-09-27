@@ -59218,6 +59218,19 @@ $)
         s e. ( 2nd ` y ) /\ q = ( r +Q s ) ) } >. ) $.
   $}
 
+  ${
+    $d l q r u $.
+    $( The class of positive reals is a set.  (Contributed by NM,
+       31-Oct-1995.)  (New usage is discouraged.) $)
+    npex $p |- P. e. _V $=
+      ( vl vu vq vr cnp cv cnq cpw wcel wa copab nqex pwex cab cvv wrex wb wral
+      wss selpw abid2 eqeltri a1i opabex3 cltq wbr wn w3a df-inp simpll anbi12i
+      wo wi sylibr ssopab2i eqsstri ssexi ) EAFZGHZIZBFZUSIZJZABKZVBABUSGLMZVBB
+      NZOIUTVFUSOBUSUAVEUBUCUDEURGSZVAGSZJZCFZURIZCGPDFZVAIZDGPJZJVKVJVLUEUFZVL
+      URIJDGPQCGRVMVOVJVAIZJCGPQDGRJVKVPJUGCGRVOVKVMULUMDGRCGRUHZJZABKVDBDCAUIV
+      RVCABVRVIVCVIVNVQUJUTVGVBVHAGTBGTUKUNUOUPUQ $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
