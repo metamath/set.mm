@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Sep-2019
+$( iset.mm - Version of 26-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -59163,6 +59163,72 @@ $)
       WDAVDLOWEVSVCNOUKVFVGVTVCRJPZVCVFVSRVCJAULSVGVOWGVCMVQVCUMTUNUOVHVKVDVCBJ
       PZJPZVDBVCJPZJPZVDVHVNVOVGVKWIMWDWEVFVGUPZVDVCBQUJVHWHWJVDJVHVOVGWHWJMWEW
       LVCBNOSVGVFWKVDRJPZVDVGWJRVDJBULSVFVNWMVDMVPVDUMTURUQUSUTTVA $.
+  $}
+
+  ${
+    $d l u q r $.
+    $( Define the set of positive reals.  A "Dedekind cut" is a partition of
+       the positive rational numbers into two classes such that all the numbers
+       of one class are less than all the numbers of the other.
+
+       Here we follow the definition of a Dedekind cut from Definition 11.2.1
+       of [HoTT], p.  (varies) with the one exception that we define it over
+       positive rational numbers rather than all rational numbers.
+
+       A Dedekind cut is an ordered pair of a lower set ` l ` and an upper set
+       ` u ` which is inhabited ( ` E. q e. Q. q e. l /\ E. r e. Q. r e. u ` ),
+       rounded
+       ( ` A. q e. Q. ( q e. l <-> E. r e. Q. ( q <Q r /\ r e. l ) ) ` ) and
+       likewise for ` u ` , disjoint ( ` A. q e. Q. -. ( q e. l /\ q e. u ) ` )
+       and located
+       ( ` A. q e. Q. A. r e. Q. ( q <Q r -> ( q e. l \/ r e. u ) ) ` ).  See
+       HoTT for more discussion of those terms and different ways of defining
+       Dedkind cuts.
+
+       (Note:  This is a "temporary" definition used in the construction of
+       complex numbers, and is intended to be used only by the construction.)
+       (Contributed by Jim Kingdon, 25-Sep-2019.)
+       (New usage is discouraged.) $)
+    df-inp $a |- P. = { <. l , u >. | ( ( ( l C_ Q. /\ u C_ Q. ) /\
+      ( E. q e. Q. q e. l /\ E. r e. Q. r e. u ) ) /\ (
+      ( A. q e. Q. ( q e. l <-> E. r e. Q. ( q <Q r /\ r e. l ) ) /\
+        A. r e. Q. ( r e. u <-> E. q e. Q. ( q <Q r /\ q e. u ) ) ) /\
+      A. q e. Q. -. ( q e. l /\ q e. u ) /\
+      A. q e. Q. A. r e. Q. ( q <Q r -> ( q e. l \/ r e. u ) )
+      ) ) } $.
+  $}
+
+  $( Define the positive real constant 1.  This is a "temporary" set used in
+     the construction of complex numbers and is intended to be used only by the
+     construction.  (Contributed by Jim Kingdon, 25-Sep-2019.)
+     (New usage is discouraged.) $)
+  df-i1p $a |- 1P = <. { l | l <Q 1Q } , { u | 1Q <Q u } >. $.
+
+  ${
+    $d x y z w v u $.
+    $( Define addition on positive reals.  This is a "temporary" set used in
+       the construction of complex numbers, and is intended to be used only by
+       the construction.  From Section 11.2.1 of [HoTT], p.  (varies).
+       (Contributed by Jim Kingdon, 26-Sep-2019.)
+       (New usage is discouraged.) $)
+    df-iplp $a |- +P. = ( x e. P. , y e. P. |->
+      <. { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 1st ` x ) /\
+        s e. ( 1st ` y ) /\ q = ( r +Q s ) ) } ,
+        { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 2nd ` x ) /\
+        s e. ( 2nd ` y ) /\ q = ( r +Q s ) ) } >. ) $.
+  $}
+
+  ${
+    $d l q r u $.
+    $( The class of positive reals is a set.  (Contributed by NM,
+       31-Oct-1995.)  (New usage is discouraged.) $)
+    npex $p |- P. e. _V $=
+      ( vl vu vq vr cnp cv cnq cpw wcel wa copab nqex pwex cab cvv wrex wb wral
+      wss selpw abid2 eqeltri a1i opabex3 cltq wbr wn w3a df-inp simpll anbi12i
+      wo wi sylibr ssopab2i eqsstri ssexi ) EAFZGHZIZBFZUSIZJZABKZVBABUSGLMZVBB
+      NZOIUTVFUSOBUSUAVEUBUCUDEURGSZVAGSZJZCFZURIZCGPDFZVAIZDGPJZJVKVJVLUEUFZVL
+      URIJDGPQCGRVMVOVJVAIZJCGPQDGRJVKVPJUGCGRVOVKVMULUMDGRCGRUHZJZABKVDBDCAUIV
+      RVCABVRVIVCVIVNVQUJUTVGVBVHAGTBGTUKUNUOUPUQ $.
   $}
 
 $(
