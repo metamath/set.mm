@@ -63,6 +63,7 @@ script:
   # Verify and also generate 'discouraged.new', and do extra checking
   # (the 'printf' lets us insert multiple lines):
   - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,discouraged.new')" set.mm
+  - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,iset-discouraged.new')" iset.mm
   - echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
   # Use setparser to check that definitions don't create syntax ambiguities
   - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' iset.mm
