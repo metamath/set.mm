@@ -59204,6 +59204,20 @@ $)
      (New usage is discouraged.) $)
   df-i1p $a |- 1P = <. { l | l <Q 1Q } , { u | 1Q <Q u } >. $.
 
+  ${
+    $d x y z w v u $.
+    $( Define addition on positive reals.  This is a "temporary" set used in
+       the construction of complex numbers, and is intended to be used only by
+       the construction.  From Section 11.2.1 of [HoTT], p.  (varies).
+       (Contributed by Jim Kingdon, 26-Sep-2019.)
+       (New usage is discouraged.) $)
+    df-iplp $a |- +P. = ( x e. P. , y e. P. |->
+      <. { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 1st ` x ) /\
+        s e. ( 1st ` y ) /\ q = ( r +Q s ) ) } ,
+        { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 2nd ` x ) /\
+        s e. ( 2nd ` y ) /\ q = ( r +Q s ) ) } >. ) $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
