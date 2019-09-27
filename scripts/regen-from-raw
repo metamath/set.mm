@@ -12,7 +12,7 @@ else
   force=false
 fi
 
-markup_options="${1:-"/ALT_HTML"} /SYMBOLS"
+markup_options="${1:-"/ALT_HTML"} /SYMBOLS /LABELS"
 suffix="${2:-".html"}"
 
 # This is a list of the .raw.html files (omitting their suffix)
