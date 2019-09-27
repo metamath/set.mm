@@ -59177,10 +59177,9 @@ $)
 
        A Dedekind cut is an ordered pair of a lower set ` l ` and an upper set
        ` u ` which is inhabited ( ` E. q e. Q. q e. l /\ E. r e. Q. r e. u ` ),
-       rounded
-       ( ` A. q e. Q. ( q e. l <-> E. r e. Q. ( q <Q r /\ r e. l ) ) ` ) and
-       likewise for ` u ` , disjoint ( ` A. q e. Q. -. ( q e. l /\ q e. u ) ` )
-       and located
+       rounded ( ` A. q e. Q. ( q e. l <-> E. r e. Q. ( q <Q r /\ r e. l ) ) `
+       and likewise for ` u ` ), disjoint
+       ( ` A. q e. Q. -. ( q e. l /\ q e. u ) ` ) and located
        ( ` A. q e. Q. A. r e. Q. ( q <Q r -> ( q e. l \/ r e. u ) ) ` ).  See
        HoTT for more discussion of those terms and different ways of defining
        Dedkind cuts.
