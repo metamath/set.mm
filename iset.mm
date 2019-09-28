@@ -59230,6 +59230,13 @@ $)
   elprnqu $p |- ( ( <. L , U >. e. P. /\ B e. U ) -> B e. Q. ) $=
     ( cop cnp wcel cnq prssnqu sselda ) CBDEFBGABCHI $.
 
+  $( The empty set is not a positive real.  (Contributed by NM,
+     15-Nov-1995.) $)
+  0npr $p |- -. (/) e. P. $=
+    ( vx c0 cnp wcel c1st cfv c2nd cop cv cnq wrex noel 1st0 eleq2i mtbir rexex
+    wex nex mto prml prop ) BCDBEFZBGFZHCDZUDAIZUBDZAJKZUGUFAQUFAUFUEBDUELUBBUE
+    MNORUFAJPSAUCUBTSBUAS $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
