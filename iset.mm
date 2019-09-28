@@ -15834,15 +15834,6 @@ $)
   $}
 
   ${
-    $d x y $.  $d y ph $.  $d y ps $.
-    moanimh.1 $e |- ( ph -> A. x ph ) $.
-    $( Introduction of a conjunct into "at most one" quantifier.  (Contributed
-       by NM, 3-Dec-2001.)  (New usage is discouraged.) $)
-    moanimh $p |- ( E* x ( ph /\ ps ) <-> ( ph -> E* x ps ) ) $=
-      ( nfi moanim ) ABCACDEF $.
-  $}
-
-  ${
     $d x y ph $.  $d y ps $.
     $( Introduction of a conjunct into "at most one" quantifier.  (Contributed
        by NM, 23-Mar-1995.) $)
