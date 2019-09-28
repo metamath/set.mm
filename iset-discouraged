@@ -149,7 +149,6 @@ New usage of "ax9vsep" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
 New usage of "brabsbOLD" is discouraged (0 uses).
-New usage of "csbnestgOLD" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
@@ -190,7 +189,6 @@ Proof modification of "axi12" is discouraged (47 steps).
 Proof modification of "axnul" is discouraged (52 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "brabsbOLD" is discouraged (42 steps).
-Proof modification of "csbnestgOLD" is discouraged (31 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "dvelimALT" is discouraged (158 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).

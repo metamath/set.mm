@@ -25248,16 +25248,6 @@ $)
   $}
 
   ${
-    $d x C $.
-    $( Nest the composition of two substitutions.  (New usage is discouraged.)
-       (Proof modification is discouraged.)  (Contributed by NM,
-       23-Nov-2005.) $)
-    csbnestgOLD $p |- ( ( A e. V /\ A. x B e. W ) ->
-                  [_ A / x ]_ [_ B / y ]_ C = [_ [_ A / x ]_ B / y ]_ C ) $=
-      ( wcel csb wceq wal csbnestg adantr ) CFHACBDEIIBACDIEIJDGHAKABCDEFLM $.
-  $}
-
-  ${
     $d x y $.  $d y C $.
     $( Nest the composition of two substitutions.  (Contributed by NM,
        23-May-2006.)  (Proof shortened by Mario Carneiro, 11-Nov-2016.) $)
