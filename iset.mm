@@ -40165,13 +40165,6 @@ $)
 
   $( ` <. A , A >. ` belongs to a restriction of the identity class iff ` A `
      belongs to the restricting class.  (Contributed by FL, 27-Oct-2008.)
-     (Proof modification is discouraged.)  (New usage is discouraged.) $)
-  opelresiOLD $p |- ( A e. V -> ( A e. B <-> <. A , A >. e. ( _I |` B ) ) ) $=
-    ( wcel cop cid wa cres wbr ididg df-br sylib biantrurd opelresg bitr4d ) AC
-    DZABDZAAEZFDZQGRFBHDPSQPAAFISACJAAFKLMAAFBCNO $.
-
-  $( ` <. A , A >. ` belongs to a restriction of the identity class iff ` A `
-     belongs to the restricting class.  (Contributed by FL, 27-Oct-2008.)
      (Revised by NM, 30-Mar-2016.) $)
   opelresi $p |- ( A e. V -> ( <. A , A >. e. ( _I |` B ) <-> A e. B ) ) $=
     ( wcel cop cid cres wa opelresg wbr ididg df-br sylib biantrurd bitr4d ) AC
