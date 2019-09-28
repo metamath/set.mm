@@ -59220,6 +59220,16 @@ $)
       LOCHPUIUKUFAGZJCHLODHPJUGULJQCHPUKUGUIRSDHPCHPTZJUEABDCUAUDUEUJUMUBUC $.
   $}
 
+  $( An element of a positive real's lower cut is a positive fraction.
+     (Contributed by Jim Kingdon, 28-Sep-2019.) $)
+  elprnql $p |- ( ( <. L , U >. e. P. /\ B e. L ) -> B e. Q. ) $=
+    ( cop cnp wcel cnq prssnql sselda ) CBDEFCGABCHI $.
+
+  $( An element of a positive real's upper cut is a positive fraction.
+     (Contributed by Jim Kingdon, 28-Sep-2019.) $)
+  elprnqu $p |- ( ( <. L , U >. e. P. /\ B e. U ) -> B e. Q. ) $=
+    ( cop cnp wcel cnq prssnqu sselda ) CBDEFBGABCHI $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
