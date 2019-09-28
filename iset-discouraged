@@ -58,7 +58,6 @@
 "mo3h" is used by "moim".
 "mo3h" is used by "moimv".
 "mo3h" is used by "mopick".
-"opelopabsbOLD" is used by "brabsbOLD".
 "opelopabsbOLD" is used by "cnvopab".
 "opelopabsbOLD" is used by "inopab".
 "opexgOLD" is used by "elxp4".
@@ -148,7 +147,6 @@ New usage of "ax-16" is discouraged (0 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
-New usage of "brabsbOLD" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
@@ -158,7 +156,7 @@ New usage of "iunonOLD" is discouraged (0 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
 New usage of "moanimh" is discouraged (0 uses).
-New usage of "opelopabsbOLD" is discouraged (3 uses).
+New usage of "opelopabsbOLD" is discouraged (2 uses).
 New usage of "opelresiOLD" is discouraged (0 uses).
 New usage of "opexgOLD" is discouraged (12 uses).
 New usage of "prexgOLD" is discouraged (14 uses).
@@ -188,7 +186,6 @@ Proof modification of "ax9vsep" is discouraged (19 steps).
 Proof modification of "axi12" is discouraged (47 steps).
 Proof modification of "axnul" is discouraged (52 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
-Proof modification of "brabsbOLD" is discouraged (42 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "dvelimALT" is discouraged (158 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).

@@ -34564,14 +34564,6 @@ $)
       bitri 2exbii elopab 2sb5 3bitr4i ) DFZEFZGZBFZCFZGHZAIZCJBJZUIUFHZUHUEHZI
       ZAIZBJCJZUGABCKLABDMCEMULUKBJCJUQUKBCNUKUPCBUJUOAUJUEUHHZUFUIHZIUOUEUFUHU
       IDOEOPURUNUSUMDBQECQRTSUATABCUGUBACBEDUCUD $.
-
-    brabsbOLD.1 $e |- R = { <. x , y >. | ph } $.
-    $( The law of concretion in terms of substitutions.  (Contributed by NM,
-       17-Mar-2008.)  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    brabsbOLD $p |- ( z R w <-> [ w / y ] [ z / x ] ph ) $=
-      ( cv wbr copab cop wcel wsb breqi df-br opelopabsbOLD 3bitri ) DHZEHZFIRS
-      ABCJZIRSKTLABDMCEMRSFTGNRSTOABCDEPQ $.
   $}
 
   ${
