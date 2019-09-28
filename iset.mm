@@ -29967,15 +29967,6 @@ $)
     ( wcel wa cpw cpr wss prssg elpwg bi2anan9 bitr3d ) ADFZBEFZGACHZFZBQFZGABI
     QJACJZBCJZGABQDEKORTPSUAACDLBCELMN $.
 
-  $( Obsolete version of ~ prsspwg as of 18-Jan-2018.  (Contributed by Thierry
-     Arnoux, 3-Oct-2016.)  (New usage is discouraged.)
-     (Proof modification is discouraged.) $)
-  prsspwgOLD $p |- ( ( A e. _V /\ B e. _V ) -> ( { A , B } C_ ~P C <->
-    ( A C_ C /\ B C_ C ) ) ) $=
-    ( cvv wcel wa cpw cpr wss prssg wb elpwg anim12i pm4.38 syl bitr3d ) ADEZBD
-    EZFZACGZEZBTEZFZABHTIACIZBCIZFZABTDDJSUAUDKZUBUEKZFUCUFKQUGRUHACDLBCDLMUAUB
-    UDUENOP $.
-
   ${
     $d x A $.  $d x B $.
     $( Empty set and the singleton itself are subsets of a singleton.
