@@ -53686,15 +53686,6 @@ $)
       rnexg syl wf eqid fmpt frn sylbi ssonuni imp syl2an eqeltrd ) BDEZCFEABGZ
       HABCIZABCJZKZLZFUKULUOMUJABCFNOUJUNPEZUNFQZUOFEZUKUJUMPEUPABCDRUMPSTUKBFU
       MUAUQABFCUMUMUBUCBFUMUDUEUPUQURUNPUFUGUHUI $.
-
-    iunonOLD.1 $e |- A e. _V $.
-    iunonOLD.2 $e |- B e. _V $.
-    $( The indexed union of a set of ordinal numbers ` B ( x ) ` is an ordinal
-       number.  (Contributed by NM, 13-Oct-2003.)  (Revised by Mario Carneiro,
-       5-Dec-2016.)  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    iunonOLD $p |- ( A. x e. A B e. On -> U_ x e. A B e. On ) $=
-      ( cvv wcel con0 wral ciun iunon mpan ) BFGCHGABIABCJHGDABCFKL $.
   $}
 
   $c Smo $.
