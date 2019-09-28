@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Regenerate 'discouraged' values for $1 (default set.mm) using metamath.exe.
-# Place the results in 'discouraged' (unless --discouraged NAME changes that).
+# By default place the results in 'discouraged' (use --results NAME to change)
 # We sort "show discouraged" results to ignore benign reordering, and sort
 # using LC_ALL=C so that the current locale won't affect the reorder.
 
@@ -19,4 +19,4 @@ mmfile="${1:-'set.mm'}"
 
 metamath "read ${mmfile}" 'set width 9999' 'show discouraged' quit |
   grep '^SHOW DISCOURAGED.' | sed -E -e 's/^SHOW DISCOURAGED.  ?//' |
-  LC_ALL=C sort > discouraged
+  LC_ALL=C sort > "$result_file"

@@ -1,0 +1,624 @@
+"0npi" is used by "elni2".
+"19.21h" is used by "19.21-2".
+"19.21h" is used by "19.21v".
+"19.21h" is used by "hbim1".
+"19.21h" is used by "nf3".
+"19.21ht" is used by "19.21t".
+"19.21ht" is used by "sbal2".
+"19.9hd" is used by "sbiedh".
+"1lt2nq" is used by "ltaddnq".
+"1lt2pi" is used by "1lt2nq".
+"1nq" is used by "halfnqq".
+"1nq" is used by "ltaddnq".
+"1nq" is used by "recmulnqg".
+"1pi" is used by "1lt2nq".
+"1pi" is used by "1lt2pi".
+"1pi" is used by "1nq".
+"1pi" is used by "1qec".
+"1pi" is used by "mulidnq".
+"1pi" is used by "mulidpi".
+"1pi" is used by "nlt1pig".
+"1qec" is used by "recex".
+"4syl" is used by "f1ocnvfvrneq".
+"4syl" is used by "fcof1o".
+"4syl" is used by "isose".
+"4syl" is used by "isoselem".
+"4syl" is used by "smoiso".
+"4syl" is used by "tposss".
+"a9evsep" is used by "ax9vsep".
+"addassnqg" is used by "ltaddnq".
+"addasspig" is used by "addassnqg".
+"addclnq" is used by "halfnqq".
+"addclnq" is used by "ltaddnq".
+"addclnq" is used by "ltbtwnnqq".
+"addclpi" is used by "1lt2nq".
+"addclpi" is used by "1lt2pi".
+"addclpi" is used by "addassnqg".
+"addclpi" is used by "addasspig".
+"addclpi" is used by "addclnq".
+"addclpi" is used by "addcmpblnq".
+"addclpi" is used by "addpipqqslem".
+"addclpi" is used by "distrnqg".
+"addclpi" is used by "distrpig".
+"addclpi" is used by "ltanqg".
+"addclpi" is used by "ltapig".
+"addclpi" is used by "ltexnqq".
+"addcmpblnq" is used by "addpipqqs".
+"addcomnqg" is used by "ltaddnq".
+"addcompig" is used by "addcomnqg".
+"addpiord" is used by "1lt2pi".
+"addpiord" is used by "addasspig".
+"addpiord" is used by "addcanpig".
+"addpiord" is used by "addclpi".
+"addpiord" is used by "addcompig".
+"addpiord" is used by "addnidpig".
+"addpiord" is used by "distrpig".
+"addpiord" is used by "ltapig".
+"addpiord" is used by "ltexpi".
+"addpipqqs" is used by "1lt2nq".
+"addpipqqs" is used by "addassnqg".
+"addpipqqs" is used by "addclnq".
+"addpipqqs" is used by "addcomnqg".
+"addpipqqs" is used by "distrnqg".
+"addpipqqs" is used by "ltanqg".
+"addpipqqs" is used by "ltexnqq".
+"alrimih" is used by "19.12".
+"alrimih" is used by "19.21h".
+"alrimih" is used by "19.38".
+"alrimih" is used by "2moex".
+"alrimih" is used by "aev".
+"alrimih" is used by "albidh".
+"alrimih" is used by "alrimi".
+"alrimih" is used by "alrimiv".
+"alrimih" is used by "ax11i".
+"alrimih" is used by "equs5or".
+"alrimih" is used by "equsalh".
+"alrimih" is used by "eupicka".
+"alrimih" is used by "exbidh".
+"alrimih" is used by "eximdh".
+"alrimih" is used by "exlimd2".
+"alrimih" is used by "exlimdh".
+"alrimih" is used by "hbex".
+"alrimih" is used by "hbnd".
+"alrimih" is used by "nexd".
+"alrimih" is used by "nfald".
+"alrimih" is used by "nfd".
+"alrimih" is used by "nfexd".
+"alrimih" is used by "sb4or".
+"alrimih" is used by "sb6rf".
+"alrimih" is used by "sbbid".
+"ax-11o" is used by "ax11b".
+"df-1nqqs" is used by "1lt2nq".
+"df-1nqqs" is used by "1nq".
+"df-1nqqs" is used by "1qec".
+"df-1nqqs" is used by "mulidnq".
+"df-enq" is used by "addpipqqs".
+"df-enq" is used by "enqbreq".
+"df-enq" is used by "enqer".
+"df-enq" is used by "enqex".
+"df-enq" is used by "mulpipqqs".
+"df-inp" is used by "npex".
+"df-lti" is used by "ltpiord".
+"df-lti" is used by "ltrelpi".
+"df-ltnqqs" is used by "ltrelnq".
+"df-ltnqqs" is used by "ordpipqqs".
+"df-mi" is used by "dmmulpi".
+"df-mi" is used by "mulpiord".
+"df-mpq" is used by "dfmpq2".
+"df-mpq" is used by "mulpipq2".
+"df-mqqs" is used by "dmmulpq".
+"df-mqqs" is used by "mulpipqqs".
+"df-ni" is used by "dmaddpi".
+"df-ni" is used by "dmmulpi".
+"df-ni" is used by "elni".
+"df-ni" is used by "niex".
+"df-ni" is used by "pinn".
+"df-nqqs" is used by "0nnq".
+"df-nqqs" is used by "1nq".
+"df-nqqs" is used by "addassnqg".
+"df-nqqs" is used by "addclnq".
+"df-nqqs" is used by "addcomnqg".
+"df-nqqs" is used by "addpipqqs".
+"df-nqqs" is used by "distrnqg".
+"df-nqqs" is used by "dmaddpqlem".
+"df-nqqs" is used by "ltanqg".
+"df-nqqs" is used by "ltexnqq".
+"df-nqqs" is used by "ltmnqg".
+"df-nqqs" is used by "ltsonq".
+"df-nqqs" is used by "mulassnqg".
+"df-nqqs" is used by "mulclnq".
+"df-nqqs" is used by "mulcomnqg".
+"df-nqqs" is used by "mulidnq".
+"df-nqqs" is used by "mulpipqqs".
+"df-nqqs" is used by "nqex".
+"df-nqqs" is used by "nqpi".
+"df-nqqs" is used by "nqtri3or".
+"df-nqqs" is used by "ordpipqqs".
+"df-nqqs" is used by "recex".
+"df-pli" is used by "addpiord".
+"df-pli" is used by "dmaddpi".
+"df-plpq" is used by "dfplpq2".
+"df-plqqs" is used by "addpipqqs".
+"df-plqqs" is used by "dmaddpq".
+"df-rq" is used by "recmulnqg".
+"dfmpq2" is used by "mulpipqqs".
+"dfplpq2" is used by "addpipqqs".
+"distrnqg" is used by "halfnqq".
+"distrnqg" is used by "ltaddnq".
+"distrpig" is used by "addassnqg".
+"distrpig" is used by "addcmpblnq".
+"distrpig" is used by "distrnqg".
+"distrpig" is used by "ltanqg".
+"distrpig" is used by "ltexnqq".
+"dmaddpqlem" is used by "dmaddpq".
+"dmaddpqlem" is used by "dmmulpq".
+"elni" is used by "0npi".
+"elni" is used by "1pi".
+"elni" is used by "addclpi".
+"elni" is used by "elni2".
+"elni" is used by "mulclpi".
+"elni" is used by "nlt1pig".
+"elni2" is used by "addclpi".
+"elni2" is used by "addnidpig".
+"elni2" is used by "ltexpi".
+"elni2" is used by "ltmpig".
+"elni2" is used by "mulcanpig".
+"elni2" is used by "mulclpi".
+"enqbreq" is used by "addcmpblnq".
+"enqbreq" is used by "enqbreq2".
+"enqbreq" is used by "enqdc".
+"enqbreq" is used by "enqeceq".
+"enqbreq" is used by "mulcanenq".
+"enqbreq" is used by "mulcmpblnq".
+"enqdc" is used by "enqdc1".
+"enqeceq" is used by "nqtri3or".
+"enqeceq" is used by "ordpipqqs".
+"enqer" is used by "0nnq".
+"enqer" is used by "addpipqqs".
+"enqer" is used by "enqeceq".
+"enqer" is used by "mulcanenqec".
+"enqer" is used by "mulpipqqs".
+"enqer" is used by "ordpipqqs".
+"enqex" is used by "1nq".
+"enqex" is used by "addclnq".
+"enqex" is used by "addpipqqs".
+"enqex" is used by "dmaddpq".
+"enqex" is used by "dmmulpq".
+"enqex" is used by "ltexnqq".
+"enqex" is used by "mulclnq".
+"enqex" is used by "mulpipqqs".
+"enqex" is used by "ordpipqqs".
+"enqex" is used by "recex".
+"equsalh" is used by "dvelimALT".
+"equsalh" is used by "dvelimfALT2".
+"equsalh" is used by "dvelimfv".
+"equsalh" is used by "dvelimor".
+"equsalh" is used by "sb6x".
+"eu3h" is used by "2eu4".
+"eu3h" is used by "eu3".
+"eu3h" is used by "mo2r".
+"halfnqq" is used by "halfnq".
+"halfnqq" is used by "nsmallnqq".
+"hbs1" is used by "eu1".
+"hbs1" is used by "hbab1".
+"hbs1" is used by "mopick".
+"hbs1" is used by "nfs1v".
+"hbs1" is used by "sb9v".
+"ltaddnq" is used by "ltbtwnnqq".
+"ltaddnq" is used by "ltexnqq".
+"ltaddnq" is used by "nsmallnqq".
+"ltanqg" is used by "ltaddnq".
+"ltanqg" is used by "ltbtwnnqq".
+"ltapig" is used by "ltanqg".
+"ltbtwnnqq" is used by "ltbtwnnq".
+"ltexnqq" is used by "ltbtwnnqq".
+"ltexpi" is used by "ltexnqq".
+"ltmnqg" is used by "ltaddnq".
+"ltmnqg" is used by "ltrnqi".
+"ltmpig" is used by "1lt2nq".
+"ltmpig" is used by "ltanqg".
+"ltmpig" is used by "ltmnqg".
+"ltmpig" is used by "ltsonq".
+"ltmpig" is used by "ordpipqqs".
+"ltpiord" is used by "1lt2pi".
+"ltpiord" is used by "ltapig".
+"ltpiord" is used by "ltexpi".
+"ltpiord" is used by "ltmpig".
+"ltpiord" is used by "ltsopi".
+"ltpiord" is used by "nlt1pig".
+"ltpiord" is used by "pitri3or".
+"ltpiord" is used by "pitric".
+"ltrelnq" is used by "ltbtwnnq".
+"ltrelnq" is used by "ltbtwnnqq".
+"ltrelnq" is used by "ltrnqi".
+"ltrelpi" is used by "ltsonq".
+"ltsonq" is used by "ltbtwnnqq".
+"ltsopi" is used by "ltsonq".
+"mo3h" is used by "mo2dc".
+"mo3h" is used by "mo3".
+"mo3h" is used by "mo4f".
+"mo3h" is used by "moanim".
+"mo3h" is used by "moim".
+"mo3h" is used by "moimv".
+"mo3h" is used by "mopick".
+"mulasspig" is used by "addassnqg".
+"mulasspig" is used by "addcmpblnq".
+"mulasspig" is used by "distrnqg".
+"mulasspig" is used by "enqer".
+"mulasspig" is used by "ltanqg".
+"mulasspig" is used by "ltexnqq".
+"mulasspig" is used by "ltmnqg".
+"mulasspig" is used by "ltsonq".
+"mulasspig" is used by "mulassnqg".
+"mulasspig" is used by "mulcanenq".
+"mulasspig" is used by "mulcmpblnq".
+"mulasspig" is used by "ordpipqqs".
+"mulcanenq" is used by "mulcanenqec".
+"mulcanpig" is used by "enqer".
+"mulclnq" is used by "halfnqq".
+"mulclnq" is used by "ltrnqi".
+"mulclpi" is used by "1lt2nq".
+"mulclpi" is used by "addassnqg".
+"mulclpi" is used by "addclnq".
+"mulclpi" is used by "addcmpblnq".
+"mulclpi" is used by "addcomnqg".
+"mulclpi" is used by "addpipqqslem".
+"mulclpi" is used by "distrnqg".
+"mulclpi" is used by "distrpig".
+"mulclpi" is used by "enqdc".
+"mulclpi" is used by "enqer".
+"mulclpi" is used by "ltanqg".
+"mulclpi" is used by "ltexnqq".
+"mulclpi" is used by "ltmnqg".
+"mulclpi" is used by "ltmpig".
+"mulclpi" is used by "ltsonq".
+"mulclpi" is used by "mulassnqg".
+"mulclpi" is used by "mulasspig".
+"mulclpi" is used by "mulcanenq".
+"mulclpi" is used by "mulclnq".
+"mulclpi" is used by "mulcmpblnq".
+"mulclpi" is used by "mulpipq2".
+"mulclpi" is used by "mulpipqqs".
+"mulclpi" is used by "nqtri3or".
+"mulclpi" is used by "ordpipqqs".
+"mulclpi" is used by "recex".
+"mulcmpblnq" is used by "mulpipqqs".
+"mulcompig" is used by "addassnqg".
+"mulcompig" is used by "addcmpblnq".
+"mulcompig" is used by "addcomnqg".
+"mulcompig" is used by "dfplpq2".
+"mulcompig" is used by "distrnqg".
+"mulcompig" is used by "enqbreq2".
+"mulcompig" is used by "enqer".
+"mulcompig" is used by "ltanqg".
+"mulcompig" is used by "ltexnqq".
+"mulcompig" is used by "ltmnqg".
+"mulcompig" is used by "ltsonq".
+"mulcompig" is used by "mulcanenq".
+"mulcompig" is used by "mulcmpblnq".
+"mulcompig" is used by "mulcomnqg".
+"mulcompig" is used by "mulidnq".
+"mulcompig" is used by "nqtri3or".
+"mulcompig" is used by "ordpipqqs".
+"mulcompig" is used by "recex".
+"mulidnq" is used by "halfnqq".
+"mulidnq" is used by "ltaddnq".
+"mulidnq" is used by "ltrnqi".
+"mulidnq" is used by "recmulnqg".
+"mulidpi" is used by "1lt2nq".
+"mulidpi" is used by "1qec".
+"mulpiord" is used by "distrpig".
+"mulpiord" is used by "ltmpig".
+"mulpiord" is used by "mulasspig".
+"mulpiord" is used by "mulcanpig".
+"mulpiord" is used by "mulclpi".
+"mulpiord" is used by "mulcompig".
+"mulpiord" is used by "mulidpi".
+"mulpipq2" is used by "mulpipq".
+"mulpipqqs" is used by "distrnqg".
+"mulpipqqs" is used by "ltmnqg".
+"mulpipqqs" is used by "mulassnqg".
+"mulpipqqs" is used by "mulclnq".
+"mulpipqqs" is used by "mulcomnqg".
+"mulpipqqs" is used by "mulidnq".
+"mulpipqqs" is used by "recex".
+"niex" is used by "enqex".
+"niex" is used by "nqex".
+"nqex" is used by "npex".
+"nqtri3or" is used by "ltsonq".
+"nsmallnq" is used by "ltbtwnnqq".
+"nsmallnqq" is used by "nsmallnq".
+"opelopabsbOLD" is used by "brabsbOLD".
+"opelopabsbOLD" is used by "cnvopab".
+"opelopabsbOLD" is used by "inopab".
+"opexgOLD" is used by "elxp4".
+"opexgOLD" is used by "elxp5".
+"opexgOLD" is used by "fliftel".
+"opexgOLD" is used by "fvsn".
+"opexgOLD" is used by "op2ndb".
+"opexgOLD" is used by "opbrop".
+"opexgOLD" is used by "opeliunxp".
+"opexgOLD" is used by "opswapg".
+"opexgOLD" is used by "otexg".
+"opexgOLD" is used by "otth2".
+"opexgOLD" is used by "relsnop".
+"opexgOLD" is used by "resfunexg".
+"ordpipqqs" is used by "1lt2nq".
+"ordpipqqs" is used by "ltanqg".
+"ordpipqqs" is used by "ltexnqq".
+"ordpipqqs" is used by "ltmnqg".
+"ordpipqqs" is used by "ltsonq".
+"ordpipqqs" is used by "nqtri3or".
+"pinn" is used by "addasspig".
+"pinn" is used by "addcanpig".
+"pinn" is used by "addclpi".
+"pinn" is used by "addcompig".
+"pinn" is used by "addnidpig".
+"pinn" is used by "distrpig".
+"pinn" is used by "elni2".
+"pinn" is used by "enqdc".
+"pinn" is used by "ltapig".
+"pinn" is used by "ltexpi".
+"pinn" is used by "ltmpig".
+"pinn" is used by "ltsopi".
+"pinn" is used by "mulasspig".
+"pinn" is used by "mulcanpig".
+"pinn" is used by "mulclpi".
+"pinn" is used by "mulcompig".
+"pinn" is used by "mulidpi".
+"pinn" is used by "pion".
+"pinn" is used by "piord".
+"pinn" is used by "pitri3or".
+"pinn" is used by "pitric".
+"pion" is used by "ltsopi".
+"pitri3or" is used by "nqtri3or".
+"prexgOLD" is used by "op1stb".
+"prexgOLD" is used by "op1stbg".
+"prexgOLD" is used by "opeqpr".
+"prexgOLD" is used by "opeqsn".
+"prexgOLD" is used by "opexg".
+"prexgOLD" is used by "opexgOLD".
+"prexgOLD" is used by "opi2".
+"prexgOLD" is used by "opth".
+"prexgOLD" is used by "opthreg".
+"prexgOLD" is used by "prelpwi".
+"prexgOLD" is used by "relop".
+"prexgOLD" is used by "tpexg".
+"prexgOLD" is used by "unex".
+"prexgOLD" is used by "uniop".
+"r19.3rmOLD" is used by "r19.27m".
+"r19.3rmOLD" is used by "r19.28m".
+"r19.9rmvOLD" is used by "iunconstm".
+"r19.9rmvOLD" is used by "r19.45mv".
+"rdgivallem" is used by "rdgival".
+"rdgivallem" is used by "rdgon".
+"recclnq" is used by "halfnqq".
+"recclnq" is used by "ltrnqi".
+"recclnq" is used by "recidnq".
+"recclnq" is used by "recrecnq".
+"recex" is used by "recclnq".
+"recex" is used by "recmulnqg".
+"recidnq" is used by "halfnqq".
+"recidnq" is used by "ltrnqi".
+"recidnq" is used by "recrecnq".
+"recmulnqg" is used by "recclnq".
+"recmulnqg" is used by "recidnq".
+"recmulnqg" is used by "recrecnq".
+"rexsnsOLD" is used by "r19.12sn".
+"rexsnsOLD" is used by "rexsng".
+"sbiedh" is used by "sbcomxyyz".
+"sbiedh" is used by "sbied".
+"sbiedh" is used by "sbieh".
+"sbieh" is used by "dvelimf".
+"sbieh" is used by "elsb3".
+"sbieh" is used by "elsb4".
+"sbieh" is used by "equsb3lem".
+"sbieh" is used by "sbco2vlem".
+"sbieh" is used by "sbco2yz".
+"sbieh" is used by "sbie".
+"snexgOLD" is used by "1stvalg".
+"snexgOLD" is used by "2ndvalg".
+"snexgOLD" is used by "dtruex".
+"snexgOLD" is used by "elxp4".
+"snexgOLD" is used by "elxp5".
+"snexgOLD" is used by "euabex".
+"snexgOLD" is used by "exss".
+"snexgOLD" is used by "fo1st".
+"snexgOLD" is used by "fo2nd".
+"snexgOLD" is used by "funopg".
+"snexgOLD" is used by "intid".
+"snexgOLD" is used by "mss".
+"snexgOLD" is used by "op1stb".
+"snexgOLD" is used by "op1stbg".
+"snexgOLD" is used by "opeqpr".
+"snexgOLD" is used by "opeqsn".
+"snexgOLD" is used by "opexg".
+"snexgOLD" is used by "opexgOLD".
+"snexgOLD" is used by "opi1".
+"snexgOLD" is used by "opm".
+"snexgOLD" is used by "relop".
+"snexgOLD" is used by "rext".
+"snexgOLD" is used by "snelpw".
+"snexgOLD" is used by "snelpwi".
+"snexgOLD" is used by "snnex".
+"snexgOLD" is used by "sspwb".
+"snexgOLD" is used by "sucexb".
+"snexgOLD" is used by "tpexg".
+"snexgOLD" is used by "uniop".
+"spimeh" is used by "spimedh".
+"spimh" is used by "spim".
+"spimth" is used by "equveli".
+New usage of "0nnq" is discouraged (0 uses).
+New usage of "0npi" is discouraged (1 uses).
+New usage of "19.21h" is discouraged (4 uses).
+New usage of "19.21ht" is discouraged (2 uses).
+New usage of "19.9hd" is discouraged (1 uses).
+New usage of "1lt2nq" is discouraged (1 uses).
+New usage of "1lt2pi" is discouraged (1 uses).
+New usage of "1nq" is discouraged (3 uses).
+New usage of "1pi" is discouraged (7 uses).
+New usage of "1qec" is discouraged (1 uses).
+New usage of "4syl" is discouraged (6 uses).
+New usage of "a9evsep" is discouraged (1 uses).
+New usage of "addassnqg" is discouraged (1 uses).
+New usage of "addasspig" is discouraged (1 uses).
+New usage of "addcanpig" is discouraged (0 uses).
+New usage of "addclnq" is discouraged (3 uses).
+New usage of "addclpi" is discouraged (12 uses).
+New usage of "addcmpblnq" is discouraged (1 uses).
+New usage of "addcomnqg" is discouraged (1 uses).
+New usage of "addcompig" is discouraged (1 uses).
+New usage of "addnidpig" is discouraged (0 uses).
+New usage of "addpiord" is discouraged (9 uses).
+New usage of "addpipqqs" is discouraged (7 uses).
+New usage of "alrimih" is discouraged (25 uses).
+New usage of "ax-11o" is discouraged (1 uses).
+New usage of "ax-16" is discouraged (0 uses).
+New usage of "ax9vsep" is discouraged (0 uses).
+New usage of "axnul" is discouraged (0 uses).
+New usage of "bocardo" is discouraged (0 uses).
+New usage of "brabsbOLD" is discouraged (0 uses).
+New usage of "csbnestgOLD" is discouraged (0 uses).
+New usage of "df-1nqqs" is discouraged (4 uses).
+New usage of "df-enq" is discouraged (5 uses).
+New usage of "df-i1p" is discouraged (0 uses).
+New usage of "df-inp" is discouraged (1 uses).
+New usage of "df-iplp" is discouraged (0 uses).
+New usage of "df-lti" is discouraged (2 uses).
+New usage of "df-ltnqqs" is discouraged (2 uses).
+New usage of "df-ltpq" is discouraged (0 uses).
+New usage of "df-mi" is discouraged (2 uses).
+New usage of "df-mpq" is discouraged (2 uses).
+New usage of "df-mqqs" is discouraged (2 uses).
+New usage of "df-ni" is discouraged (5 uses).
+New usage of "df-nqqs" is discouraged (22 uses).
+New usage of "df-pli" is discouraged (2 uses).
+New usage of "df-plpq" is discouraged (1 uses).
+New usage of "df-plqqs" is discouraged (2 uses).
+New usage of "df-rq" is discouraged (1 uses).
+New usage of "dfmpq2" is discouraged (1 uses).
+New usage of "dfplpq2" is discouraged (1 uses).
+New usage of "difidALT" is discouraged (0 uses).
+New usage of "distrnqg" is discouraged (2 uses).
+New usage of "distrpig" is discouraged (5 uses).
+New usage of "dmaddpi" is discouraged (0 uses).
+New usage of "dmaddpq" is discouraged (0 uses).
+New usage of "dmaddpqlem" is discouraged (2 uses).
+New usage of "dmmulpi" is discouraged (0 uses).
+New usage of "dmmulpq" is discouraged (0 uses).
+New usage of "elni" is discouraged (6 uses).
+New usage of "elni2" is discouraged (6 uses).
+New usage of "enqbreq" is discouraged (6 uses).
+New usage of "enqbreq2" is discouraged (0 uses).
+New usage of "enqdc" is discouraged (1 uses).
+New usage of "enqdc1" is discouraged (0 uses).
+New usage of "enqeceq" is discouraged (2 uses).
+New usage of "enqer" is discouraged (6 uses).
+New usage of "enqex" is discouraged (10 uses).
+New usage of "equsalh" is discouraged (5 uses).
+New usage of "eu3h" is discouraged (3 uses).
+New usage of "fnexALT" is discouraged (0 uses).
+New usage of "halfnq" is discouraged (0 uses).
+New usage of "halfnqq" is discouraged (2 uses).
+New usage of "hbs1" is discouraged (5 uses).
+New usage of "iunonOLD" is discouraged (0 uses).
+New usage of "ltaddnq" is discouraged (3 uses).
+New usage of "ltanqg" is discouraged (2 uses).
+New usage of "ltapig" is discouraged (1 uses).
+New usage of "ltbtwnnq" is discouraged (0 uses).
+New usage of "ltbtwnnqq" is discouraged (1 uses).
+New usage of "ltexnqq" is discouraged (1 uses).
+New usage of "ltexpi" is discouraged (1 uses).
+New usage of "ltmnqg" is discouraged (2 uses).
+New usage of "ltmpig" is discouraged (5 uses).
+New usage of "ltpiord" is discouraged (8 uses).
+New usage of "ltrelnq" is discouraged (3 uses).
+New usage of "ltrelpi" is discouraged (1 uses).
+New usage of "ltrnqi" is discouraged (0 uses).
+New usage of "ltsonq" is discouraged (1 uses).
+New usage of "ltsopi" is discouraged (1 uses).
+New usage of "mathbox" is discouraged (0 uses).
+New usage of "mo3h" is discouraged (7 uses).
+New usage of "moanimh" is discouraged (0 uses).
+New usage of "mulasspig" is discouraged (12 uses).
+New usage of "mulcanenq" is discouraged (1 uses).
+New usage of "mulcanpig" is discouraged (1 uses).
+New usage of "mulclnq" is discouraged (2 uses).
+New usage of "mulclpi" is discouraged (25 uses).
+New usage of "mulcmpblnq" is discouraged (1 uses).
+New usage of "mulcompig" is discouraged (18 uses).
+New usage of "mulidnq" is discouraged (4 uses).
+New usage of "mulidpi" is discouraged (2 uses).
+New usage of "mulpiord" is discouraged (7 uses).
+New usage of "mulpipq" is discouraged (0 uses).
+New usage of "mulpipq2" is discouraged (1 uses).
+New usage of "mulpipqqs" is discouraged (7 uses).
+New usage of "niex" is discouraged (2 uses).
+New usage of "nlt1pig" is discouraged (0 uses).
+New usage of "npex" is discouraged (0 uses).
+New usage of "nqex" is discouraged (1 uses).
+New usage of "nqpi" is discouraged (0 uses).
+New usage of "nqtri3or" is discouraged (1 uses).
+New usage of "nsmallnq" is discouraged (1 uses).
+New usage of "nsmallnqq" is discouraged (1 uses).
+New usage of "opelopabsbOLD" is discouraged (3 uses).
+New usage of "opelresiOLD" is discouraged (0 uses).
+New usage of "opexgOLD" is discouraged (12 uses).
+New usage of "ordpipqqs" is discouraged (6 uses).
+New usage of "pinn" is discouraged (21 uses).
+New usage of "pion" is discouraged (1 uses).
+New usage of "piord" is discouraged (0 uses).
+New usage of "pitri3or" is discouraged (1 uses).
+New usage of "pitric" is discouraged (0 uses).
+New usage of "prexgOLD" is discouraged (14 uses).
+New usage of "prsspwgOLD" is discouraged (0 uses).
+New usage of "r19.3rmOLD" is discouraged (2 uses).
+New usage of "r19.9rmvOLD" is discouraged (2 uses).
+New usage of "ralxfrALT" is discouraged (0 uses).
+New usage of "rdgivallem" is discouraged (2 uses).
+New usage of "recclnq" is discouraged (4 uses).
+New usage of "recex" is discouraged (2 uses).
+New usage of "recidnq" is discouraged (3 uses).
+New usage of "recmulnqg" is discouraged (3 uses).
+New usage of "recrecnq" is discouraged (0 uses).
+New usage of "resfunexgALT" is discouraged (0 uses).
+New usage of "rexsnsOLD" is discouraged (2 uses).
+New usage of "riotaiotaOLD" is discouraged (0 uses).
+New usage of "riotaprcOLD" is discouraged (0 uses).
+New usage of "ruALT" is discouraged (0 uses).
+New usage of "sbcbiiOLD" is discouraged (0 uses).
+New usage of "sbcco3gOLD" is discouraged (0 uses).
+New usage of "sbf3t" is discouraged (0 uses).
+New usage of "sbiedh" is discouraged (3 uses).
+New usage of "sbieh" is discouraged (7 uses).
+New usage of "snexgOLD" is discouraged (29 uses).
+New usage of "spimedh" is discouraged (0 uses).
+New usage of "spimeh" is discouraged (1 uses).
+New usage of "spimh" is discouraged (1 uses).
+New usage of "spimth" is discouraged (1 uses).
+New usage of "xpexgALT" is discouraged (0 uses).
+Proof modification of "a9evsep" is discouraged (63 steps).
+Proof modification of "ax9vsep" is discouraged (19 steps).
+Proof modification of "axi12" is discouraged (47 steps).
+Proof modification of "axnul" is discouraged (52 steps).
+Proof modification of "brab2ga" is discouraged (79 steps).
+Proof modification of "brabsbOLD" is discouraged (42 steps).
+Proof modification of "csbnestgOLD" is discouraged (31 steps).
+Proof modification of "difidALT" is discouraged (20 steps).
+Proof modification of "dvelimALT" is discouraged (158 steps).
+Proof modification of "fnexALT" is discouraged (111 steps).
+Proof modification of "idref" is discouraged (94 steps).
+Proof modification of "iunonOLD" is discouraged (22 steps).
+Proof modification of "opelopabsbOLD" is discouraged (106 steps).
+Proof modification of "opelresiOLD" is discouraged (43 steps).
+Proof modification of "prsspwgOLD" is discouraged (64 steps).
+Proof modification of "ralxfrALT" is discouraged (85 steps).
+Proof modification of "resfunexgALT" is discouraged (76 steps).
+Proof modification of "rexsnsOLD" is discouraged (55 steps).
+Proof modification of "ruALT" is discouraged (35 steps).
+Proof modification of "sbc8g" is discouraged (55 steps).
+Proof modification of "sbcbiiOLD" is discouraged (19 steps).
+Proof modification of "sbcco3gOLD" is discouraged (30 steps).
+Proof modification of "sbsbc" is discouraged (21 steps).
+Proof modification of "suctr" is discouraged (153 steps).
+Proof modification of "xpexgALT" is discouraged (84 steps).
