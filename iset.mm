@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Sep-2019
+$( iset.mm - Version of 27-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -59177,10 +59177,9 @@ $)
 
        A Dedekind cut is an ordered pair of a lower set ` l ` and an upper set
        ` u ` which is inhabited ( ` E. q e. Q. q e. l /\ E. r e. Q. r e. u ` ),
-       rounded
-       ( ` A. q e. Q. ( q e. l <-> E. r e. Q. ( q <Q r /\ r e. l ) ) ` ) and
-       likewise for ` u ` , disjoint ( ` A. q e. Q. -. ( q e. l /\ q e. u ) ` )
-       and located
+       rounded ( ` A. q e. Q. ( q e. l <-> E. r e. Q. ( q <Q r /\ r e. l ) ) `
+       and likewise for ` u ` ), disjoint
+       ( ` A. q e. Q. -. ( q e. l /\ q e. u ) ` ) and located
        ( ` A. q e. Q. A. r e. Q. ( q <Q r -> ( q e. l \/ r e. u ) ) ` ).  See
        HoTT for more discussion of those terms and different ways of defining
        Dedkind cuts.
@@ -59198,14 +59197,17 @@ $)
       ) ) } $.
   $}
 
-  $( Define the positive real constant 1.  This is a "temporary" set used in
-     the construction of complex numbers and is intended to be used only by the
-     construction.  (Contributed by Jim Kingdon, 25-Sep-2019.)
-     (New usage is discouraged.) $)
-  df-i1p $a |- 1P = <. { l | l <Q 1Q } , { u | 1Q <Q u } >. $.
+  ${
+    $d l u $.
+    $( Define the positive real constant 1.  This is a "temporary" set used in
+       the construction of complex numbers and is intended to be used only by
+       the construction.  (Contributed by Jim Kingdon, 25-Sep-2019.)
+       (New usage is discouraged.) $)
+    df-i1p $a |- 1P = <. { l | l <Q 1Q } , { u | 1Q <Q u } >. $.
+  $}
 
   ${
-    $d x y z w v u $.
+    $d x y q r s $.
     $( Define addition on positive reals.  This is a "temporary" set used in
        the construction of complex numbers, and is intended to be used only by
        the construction.  From Section 11.2.1 of [HoTT], p.  (varies).
@@ -59219,16 +59221,54 @@ $)
   $}
 
   ${
+    $d l u q r $.
+    $( Lemma for proving existence of reals.  (Contributed by Jim Kingdon,
+       27-Sep-2019.)  (New usage is discouraged.) $)
+    npsspw $p |- P. C_ ( ~P Q. X. ~P Q. ) $=
+      ( vl vu vq vr cv cnq wss wa wcel wrex cltq wbr wb wral wn wo wi w3a copab
+      selpw cpw cnp cxp simpll anbi12i sylibr ssopab2i df-inp df-xp 3sstr4i ) A
+      EZFGZBEZFGZHZCEZUKIZCFJDEZUMIZDFJHZHUQUPURKLZURUKIHDFJMCFNUSVAUPUMIZHCFJM
+      DFNHUQVBHOCFNVAUQUSPQDFNCFNRZHZABSUKFUAZIZUMVEIZHZABSUBVEVEUCVDVHABVDUOVH
+      UOUTVCUDVFULVGUNAFTBFTUEUFUGBDCAUHABVEVEUIUJ $.
+  $}
+
+  ${
     $d l q r u $.
     $( The class of positive reals is a set.  (Contributed by NM,
        31-Oct-1995.)  (New usage is discouraged.) $)
     npex $p |- P. e. _V $=
-      ( vl vu vq vr cnp cv cnq cpw wcel wa copab nqex pwex cab cvv wrex wb wral
-      wss selpw abid2 eqeltri a1i opabex3 cltq wbr wn w3a df-inp simpll anbi12i
-      wo wi sylibr ssopab2i eqsstri ssexi ) EAFZGHZIZBFZUSIZJZABKZVBABUSGLMZVBB
-      NZOIUTVFUSOBUSUAVEUBUCUDEURGSZVAGSZJZCFZURIZCGPDFZVAIZDGPJZJVKVJVLUEUFZVL
-      URIJDGPQCGRVMVOVJVAIZJCGPQDGRJVKVPJUGCGRVOVKVMULUMDGRCGRUHZJZABKVDBDCAUIV
-      RVCABVRVIVCVIVNVQUJUTVGVBVHAGTBGTUKUNUOUPUQ $.
+      ( cnp cnq cpw cxp nqex pwex xpex npsspw ssexi ) ABCZJDJJBEFZKGHI $.
+  $}
+
+  ${
+    $d l u q r L $.  $d l u q r U $.
+    $( Membership in positive reals.  (Contributed by Jim Kingdon,
+       27-Sep-2019.)  (New usage is discouraged.) $)
+    elinp $p |- ( <. L , U >. e. P. <-> ( ( ( L C_ Q. /\ U C_ Q. ) /\
+        ( E. q e. Q. q e. L /\ E. r e. Q. r e. U ) ) /\ (
+        ( A. q e. Q. ( q e. L <-> E. r e. Q. ( q <Q r /\ r e. L ) ) /\
+          A. r e. Q. ( r e. U <-> E. q e. Q. ( q <Q r /\ q e. U ) ) ) /\
+        A. q e. Q. -. ( q e. L /\ q e. U ) /\
+        A. q e. Q. A. r e. Q. ( q <Q r -> ( q e. L \/ r e. U ) )
+        ) ) ) $=
+      ( vl vu wcel cvv wa cnq wss cv wrex wb wral anbi1d rexbidv anbi12d anbi2d
+      eleq2 cop cnp cltq wbr wn wo wi w3a cpw npsspw sseli opelxp sylib anim12i
+      cxp elex syl nqex ssex ad2antrr copab df-inp eleq2i sseq1 bibi12d ralbidv
+      notbid orbi1d imbi2d 2ralbidv 3anbi123d orbi2d opelopabg syl5bb pm5.21nii
+      wceq ) BAUAZUBGZBHGZAHGZIZBJKZAJKZIZDLZBGZDJMZCLZAGZCJMZIZIZWFWEWHUCUDZWH
+      BGZIZCJMZNZDJOZWIWMWEAGZIZDJMZNZCJOZIZWFWSIZUEZDJOZWMWFWIUFZUGZCJODJOZUHZ
+      IZVRBJUIZGZAXMGZIZWAVRVQXMXMUOZGXPUBXQVQUJUKBAXMXMULUMXNVSXOVTBXMUPAXMUPU
+      NUQWDWAWKXKWBVSWCVTBJURUSAJURUSUNUTVRVQELZJKZFLZJKZIZWEXRGZDJMZWHXTGZCJMZ
+      IZIZYCWMWHXRGZIZCJMZNZDJOZYEWMWEXTGZIZDJMZNZCJOZIZYCYNIZUEZDJOZWMYCYEUFZU
+      GZCJODJOZUHZIZEFVAZGWAXLUBUUHVQFCDEVBVCUUGWBYAIZWGYFIZIZWRYRIZWFYNIZUEZDJ
+      OZWMWFYEUFZUGZCJODJOZUHZIXLEFBAHHXRBVPZYHUUKUUFUUSUUTYBUUIYGUUJUUTXSWBYAX
+      RBJVDPUUTYDWGYFUUTYCWFDJXRBWETZQPRUUTYSUULUUBUUOUUEUURUUTYMWRYRUUTYLWQDJU
+      UTYCWFYKWPUVAUUTYJWOCJUUTYIWNWMXRBWHTSQVEVFPUUTUUAUUNDJUUTYTUUMUUTYCWFYNU
+      VAPVGVFUUTUUDUUQDCJJUUTUUCUUPWMUUTYCWFYEUVAVHVIVJVKRXTAVPZUUKWLUUSXKUVBUU
+      IWDUUJWKUVBYAWCWBXTAJVDSUVBYFWJWGUVBYEWICJXTAWHTZQSRUVBUULXDUUOXGUURXJUVB
+      YRXCWRUVBYQXBCJUVBYEWIYPXAUVCUVBYOWTDJUVBYNWSWMXTAWETZSQVEVFSUVBUUNXFDJUV
+      BUUMXEUVBYNWSWFUVDSVGVFUVBUUQXIDCJJUVBUUPXHWMUVBYEWIWFUVCVLVIVJVKRVMVNVO
+      $.
   $}
 
 $(
