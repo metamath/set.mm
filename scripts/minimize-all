@@ -12,11 +12,11 @@ scripts/list-theorems "$mmfile" 1.tmp
 # echo '  oppgval' > 1.tmp
 # echo '  oppgplus' >> 1.tmp
 
-./metamath "read ${mmfile}" \
-           'submit "scripts/min.cmd"' \
-           tools \
-           "substitute 1.tmp xxx $theorem a \"\"" \
-           exit \
-           'submit 1.tmp' \
-           "write source \"${mmfile}\"" \
-           quit
+metamath "read ${mmfile}" \
+         'submit "scripts/min.cmd"' \
+         tools \
+         "substitute 1.tmp xxx $theorem a \"\"" \
+         exit \
+         'submit 1.tmp' \
+         "write source \"${mmfile}\"" \
+         quit
