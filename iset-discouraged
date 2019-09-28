@@ -153,6 +153,8 @@
 "distrpig" is used by "ltexnqq".
 "dmaddpqlem" is used by "dmaddpq".
 "dmaddpqlem" is used by "dmmulpq".
+"elinp" is used by "prml".
+"elinp" is used by "prmu".
 "elni" is used by "0npi".
 "elni" is used by "1pi".
 "elni" is used by "addclpi".
@@ -327,6 +329,7 @@
 "niex" is used by "nqex".
 "npsspw" is used by "elinp".
 "npsspw" is used by "npex".
+"npsspw" is used by "prop".
 "nqex" is used by "elinp".
 "nqex" is used by "npex".
 "nqtri3or" is used by "ltsonq".
@@ -510,7 +513,7 @@ New usage of "dmaddpq" is discouraged (0 uses).
 New usage of "dmaddpqlem" is discouraged (2 uses).
 New usage of "dmmulpi" is discouraged (0 uses).
 New usage of "dmmulpq" is discouraged (0 uses).
-New usage of "elinp" is discouraged (0 uses).
+New usage of "elinp" is discouraged (2 uses).
 New usage of "elni" is discouraged (6 uses).
 New usage of "elni2" is discouraged (6 uses).
 New usage of "enqbreq" is discouraged (6 uses).
@@ -561,7 +564,7 @@ New usage of "mulpipqqs" is discouraged (7 uses).
 New usage of "niex" is discouraged (2 uses).
 New usage of "nlt1pig" is discouraged (0 uses).
 New usage of "npex" is discouraged (0 uses).
-New usage of "npsspw" is discouraged (2 uses).
+New usage of "npsspw" is discouraged (3 uses).
 New usage of "nqex" is discouraged (2 uses).
 New usage of "nqpi" is discouraged (0 uses).
 New usage of "nqtri3or" is discouraged (1 uses).
@@ -577,6 +580,9 @@ New usage of "piord" is discouraged (0 uses).
 New usage of "pitri3or" is discouraged (1 uses).
 New usage of "pitric" is discouraged (0 uses).
 New usage of "prexgOLD" is discouraged (14 uses).
+New usage of "prml" is discouraged (0 uses).
+New usage of "prmu" is discouraged (0 uses).
+New usage of "prop" is discouraged (0 uses).
 New usage of "prsspwgOLD" is discouraged (0 uses).
 New usage of "r19.3rmOLD" is discouraged (2 uses).
 New usage of "r19.9rmvOLD" is discouraged (2 uses).

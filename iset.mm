@@ -59271,6 +59271,36 @@ $)
       $.
   $}
 
+  ${
+    $( A positive real is an ordered pair of a lower cut and an upper cut.
+       (Contributed by Jim Kingdon, 27-Sep-2019.)
+       (New usage is discouraged.) $)
+    prop $p |- ( A e. P. -> <. ( 1st ` A ) , ( 2nd ` A ) >. e. P. ) $=
+      ( cnp wcel c1st cfv c2nd cop cnq cpw cxp npsspw sseli 1st2nd2 syl biimpcd
+      wceq eleq1 mpd ) ABCZAADEAFEGZPZTBCZSAHIZUCJZCUABUDAKLAUCUCMNUASUBATBQOR
+      $.
+  $}
+
+  ${
+    $d x y L $.  $d U x y $.
+    $( A positive real's lower cut is inhabited.  (Contributed by Jim Kingdon,
+       27-Sep-2019.)  (New usage is discouraged.) $)
+    prml $p |- ( <. L , U >. e. P. -> E. x e. Q. x e. L ) $=
+      ( vy cop cnp wcel cnq wss wa cv wrex cltq wbr wb wral wn wo wi w3a elinp
+      simplrl sylbi ) CBEFGCHIBHIJZAKZCGZAHLZDKZBGZDHLZJJUFUEUHMNZUHCGJDHLOAHPU
+      IUKUEBGZJAHLODHPJUFULJQAHPUKUFUIRSDHPAHPTZJUGBCDAUAUDUGUJUMUBUC $.
+  $}
+
+  ${
+    $d x y L $.  $d U x y $.
+    $( A positive real's upper cut is inhabited.  (Contributed by Jim Kingdon,
+       27-Sep-2019.)  (New usage is discouraged.) $)
+    prmu $p |- ( <. L , U >. e. P. -> E. x e. Q. x e. U ) $=
+      ( vy cop cnp wcel cnq wss wa cv wrex cltq wbr wb wral wn wo wi w3a elinp
+      simplrr sylbi ) CBEFGCHIBHIJZDKZCGZDHLZAKZBGZAHLZJJUFUEUHMNZUHCGJAHLODHPU
+      IUKUEBGZJDHLOAHPJUFULJQDHPUKUFUIRSAHPDHPTZJUJBCADUAUDUGUJUMUBUC $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
