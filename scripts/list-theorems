@@ -8,12 +8,12 @@
 mmfile="${1:-set.mm}"
 output="${2:-1.tmp}"
 
-./metamath "read \"${mmfile}\"" \
-           'set scroll continuous' \
-           'open log 0.tmp' \
-           'show labels * /linear' \
-           'close log' \
-           quit > /dev/null
+metamath "read \"${mmfile}\"" \
+         'set scroll continuous' \
+         'open log 0.tmp' \
+         'show labels * /linear' \
+         'close log' \
+         quit > /dev/null
 
 grep -E ' \$p' < 0.tmp | \
   sed -E -e 's/ \$p//' -e 's/^[0-9]+ /  /' > output
