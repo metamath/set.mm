@@ -1,4 +1,4 @@
-$( iset.mm - Version of 27-Sep-2019
+$( iset.mm - Version of 28-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -59289,16 +59289,31 @@ $)
       ( vy cop cnp wcel cnq wss wa cv wrex cltq wbr wb wral wn wo wi w3a elinp
       simplrl sylbi ) CBEFGCHIBHIJZAKZCGZAHLZDKZBGZDHLZJJUFUEUHMNZUHCGJDHLOAHPU
       IUKUEBGZJAHLODHPJUFULJQAHPUKUFUIRSDHPAHPTZJUGBCDAUAUDUGUJUMUBUC $.
-  $}
 
-  ${
-    $d x y L $.  $d U x y $.
     $( A positive real's upper cut is inhabited.  (Contributed by Jim Kingdon,
        27-Sep-2019.)  (New usage is discouraged.) $)
     prmu $p |- ( <. L , U >. e. P. -> E. x e. Q. x e. U ) $=
       ( vy cop cnp wcel cnq wss wa cv wrex cltq wbr wb wral wn wo wi w3a elinp
       simplrr sylbi ) CBEFGCHIBHIJZDKZCGZDHLZAKZBGZAHLZJJUFUEUHMNZUHCGJAHLODHPU
       IUKUEBGZJDHLOAHPJUFULJQDHPUKUFUIRSAHPDHPTZJUJBCADUAUDUGUJUMUBUC $.
+
+    $( A positive real's lower cut is a subset of the positive fractions.  It
+       would presumably be possible to also prove ` L C. Q. ` , but we only
+       need ` L C_ Q. ` so far.  (Contributed by Jim Kingdon, 28-Sep-2019.)
+       (New usage is discouraged.) $)
+    prssnql $p |- ( <. L , U >. e. P. -> L C_ Q. ) $=
+      ( vx vy cop cnp wcel cnq wss wa cv wrex cltq wbr wb wral wn wo wi w3a
+      elinp simplll sylbi ) BAEFGBHIZAHIZJCKZBGZCHLDKZAGZDHLJZJUGUFUHMNZUHBGJDH
+      LOCHPUIUKUFAGZJCHLODHPJUGULJQCHPUKUGUIRSDHPCHPTZJUDABDCUAUDUEUJUMUBUC $.
+
+    $( A positive real's upper cut is a subset of the positive fractions.  It
+       would presumably be possible to also prove ` U C. Q. ` , but we only
+       need ` U C_ Q. ` so far.  (Contributed by Jim Kingdon, 28-Sep-2019.)
+       (New usage is discouraged.) $)
+    prssnqu $p |- ( <. L , U >. e. P. -> U C_ Q. ) $=
+      ( vx vy cop cnp wcel cnq wss wa cv wrex cltq wbr wb wral wn wo wi w3a
+      elinp simpllr sylbi ) BAEFGBHIZAHIZJCKZBGZCHLDKZAGZDHLJZJUGUFUHMNZUHBGJDH
+      LOCHPUIUKUFAGZJCHLODHPJUGULJQCHPUKUGUIRSDHPCHPTZJUEABDCUAUDUEUJUMUBUC $.
   $}
 
 $(
