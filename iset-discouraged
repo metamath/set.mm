@@ -97,7 +97,8 @@
 "df-enq" is used by "enqer".
 "df-enq" is used by "enqex".
 "df-enq" is used by "mulpipqqs".
-"df-inp" is used by "npex".
+"df-inp" is used by "elinp".
+"df-inp" is used by "npsspw".
 "df-lti" is used by "ltpiord".
 "df-lti" is used by "ltrelpi".
 "df-ltnqqs" is used by "ltrelnq".
@@ -324,6 +325,9 @@
 "mulpipqqs" is used by "recex".
 "niex" is used by "enqex".
 "niex" is used by "nqex".
+"npsspw" is used by "elinp".
+"npsspw" is used by "npex".
+"nqex" is used by "elinp".
 "nqex" is used by "npex".
 "nqtri3or" is used by "ltsonq".
 "nsmallnq" is used by "ltbtwnnqq".
@@ -482,7 +486,7 @@ New usage of "csbnestgOLD" is discouraged (0 uses).
 New usage of "df-1nqqs" is discouraged (4 uses).
 New usage of "df-enq" is discouraged (5 uses).
 New usage of "df-i1p" is discouraged (0 uses).
-New usage of "df-inp" is discouraged (1 uses).
+New usage of "df-inp" is discouraged (2 uses).
 New usage of "df-iplp" is discouraged (0 uses).
 New usage of "df-lti" is discouraged (2 uses).
 New usage of "df-ltnqqs" is discouraged (2 uses).
@@ -506,6 +510,7 @@ New usage of "dmaddpq" is discouraged (0 uses).
 New usage of "dmaddpqlem" is discouraged (2 uses).
 New usage of "dmmulpi" is discouraged (0 uses).
 New usage of "dmmulpq" is discouraged (0 uses).
+New usage of "elinp" is discouraged (0 uses).
 New usage of "elni" is discouraged (6 uses).
 New usage of "elni2" is discouraged (6 uses).
 New usage of "enqbreq" is discouraged (6 uses).
@@ -556,7 +561,8 @@ New usage of "mulpipqqs" is discouraged (7 uses).
 New usage of "niex" is discouraged (2 uses).
 New usage of "nlt1pig" is discouraged (0 uses).
 New usage of "npex" is discouraged (0 uses).
-New usage of "nqex" is discouraged (1 uses).
+New usage of "npsspw" is discouraged (2 uses).
+New usage of "nqex" is discouraged (2 uses).
 New usage of "nqpi" is discouraged (0 uses).
 New usage of "nqtri3or" is discouraged (1 uses).
 New usage of "nsmallnq" is discouraged (1 uses).
