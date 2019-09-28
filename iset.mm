@@ -59197,14 +59197,17 @@ $)
       ) ) } $.
   $}
 
-  $( Define the positive real constant 1.  This is a "temporary" set used in
-     the construction of complex numbers and is intended to be used only by the
-     construction.  (Contributed by Jim Kingdon, 25-Sep-2019.)
-     (New usage is discouraged.) $)
-  df-i1p $a |- 1P = <. { l | l <Q 1Q } , { u | 1Q <Q u } >. $.
+  ${
+    $d l u $.
+    $( Define the positive real constant 1.  This is a "temporary" set used in
+       the construction of complex numbers and is intended to be used only by the
+       construction.  (Contributed by Jim Kingdon, 25-Sep-2019.)
+       (New usage is discouraged.) $)
+    df-i1p $a |- 1P = <. { l | l <Q 1Q } , { u | 1Q <Q u } >. $.
+  $}
 
   ${
-    $d x y z w v u $.
+    $d x y q r s $.
     $( Define addition on positive reals.  This is a "temporary" set used in
        the construction of complex numbers, and is intended to be used only by
        the construction.  From Section 11.2.1 of [HoTT], p.  (varies).
