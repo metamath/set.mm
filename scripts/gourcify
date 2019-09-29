@@ -1,0 +1,101 @@
+#!/bin/sh
+# gourcify - Generate video of set.mm history using Gource.
+# (C) 2019 David A. Wheeler
+# This script is released as open source software under the MIT license.
+# SPDX-License-Identifier: MIT
+
+# Need to install gource, ffmpeg, python3.
+# Ensure pip3 is installed by running "python3 -m ensurepip",
+# then install "ply" library by running "pip3 install ply".
+
+# If you recompile ffmpeg yourself, you'll need to install libx264 first.
+# Install nasm, then:
+# wget http://download.videolan.org/pub/x264/snapshots/last_x264.tar.bz2
+# tar xjvf last_x264.tar.bz2
+# cd x264-snapshot*
+# ./configure --prefix=/usr --enable-static --disable-opencl --disable-avs
+# make && make install
+# Then compile ffmpeg:
+# cd ~/ffmpeg
+# ./configure --enable-shared --disable-static --enable-gpl --enable-libx264
+# make && make install
+# https://stackoverflow.com/questions/45181102/ffmpeg-on-cygwin-failed-to-compile-libx264-error-unknown-type-name-hmodule
+
+set -e -x
+
+# To include music we must download some. Here's what I used:
+# Music by audionautix.com - "Threshold" by Jason Shaw, CC-BY-3.0 Unported.
+
+MUSIC_URL='https://audionautix.com/Music/Threshold.mp3'
+MUSIC='Threshold.mp3'
+
+if which cygstart > /dev/null ; then
+    RUN_COMMAND='cmd /C'
+else
+    RUN_COMMAND=''
+fi
+
+# Sanity check: We need set.mm
+test -f set.mm
+# Sanity check: We need a scripts directory
+test -d scripts
+
+# Download music file if we don't have it.
+if ! [ -f "$MUSIC" ] ; then
+    wget "$MUSIC_URL" || exit 1
+fi
+
+# Download images for people. We *only* use images that are already
+# publicly-available and associated with that person.
+# Most of these are GitHub avatars.
+if ! [ -d 'people' ] ; then
+	mkdir -p people
+	# Download images - be sure to put them in the "people" subdirectory.
+	# From Metamath book cover
+	curl 'https://raw.githubusercontent.com/metamath/metamath-book/master/cover/norm2011-408b.png' -o 'people/Norman Megill.png'
+	# https://github.com/raphlinus
+	curl 'https://avatars1.githubusercontent.com/u/242367?s=460&v=4' -o 'people/Raph Levien.png'
+	# dwheeler.com
+	curl 'https://dwheeler.com/dwheeler2003.jpg' -o 'people/David A. Wheeler.png'
+	# https://github.com/digama0
+	curl 'https://avatars2.githubusercontent.com/u/868588?s=460&v=4' -o 'people/Mario Carneiro.png'
+	# https://github.com/sorear
+	curl 'https://avatars2.githubusercontent.com/u/92735?s=460&v=4' -o "people/Stefan O'Rear.png"
+	# https://github.com/sctfn
+	curl 'https://avatars3.githubusercontent.com/u/996440?s=460&v=4' -o 'people/Scott Fenton.png'
+	# Using archive.org to ensure it stays around, via:
+	# https://www.legacy.com/obituaries/name/alan-sare-obituary?pid=191902853
+	curl 'https://web.archive.org/web/20190929153619if_/https://cache.legacy.net/legacy/images/cobrands/TheTimes-Tribune/photos/8128942_20190325.jpg' -o 'people/Alan Sare.jpg'
+	# https://github.com/Drahflow
+	curl 'https://avatars0.githubusercontent.com/u/609223?s=460&v=4' -o 'people/Drahflow.png'
+	# https://github.com/jkingdon
+	curl 'https://avatars3.githubusercontent.com/u/16878?s=460&v=4' -o 'people/Jim Kingdon.jpg'
+fi
+
+# Get changes in set.mm and record them in Gource log format
+scripts/report-changes.py > changes.log
+
+# Sort by datetime
+sort -n changes.log > changes-sorted.log
+
+# Use Gource to generate image sequence (.ppm format)
+rm -f gource.ppm
+$RUN_COMMAND gource --load-config scripts/gource.config \
+    -o gource.ppm changes-sorted.log
+
+# Convert .ppm image sequence into video
+rm -f gource.mp4
+# ffmpeg -y -r 30 -f image2pipe -vcodec ppm -i gource.ppm \
+#       -pix_fmt yuv420p -threads 0 -bf 0 gource.mp4
+ffmpeg -y -r 30 -f image2pipe -vcodec ppm -i gource.ppm \
+      -pix_fmt yuv420p -threads 0 -bf 0 \
+      -c:v libx264 -crf 18 -movflags +faststart \
+      gource.mp4
+
+# Add audio track
+rm -f gource-muxed.mp4
+ffmpeg -i gource.mp4 -i "$MUSIC" -c:v copy -c:a aac \
+       -strict experimental -filter:a "volume=0.6" gource-muxed.mp4
+
+# Success!
+echo 'Result is in gource-muxed.mp4'
