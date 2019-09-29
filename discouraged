@@ -14641,6 +14641,7 @@ New usage of "cdleml3N" is discouraged (1 uses).
 New usage of "cdleml4N" is discouraged (1 uses).
 New usage of "cdleml5N" is discouraged (0 uses).
 New usage of "cdlemm10N" is discouraged (0 uses).
+New usage of "ceqsalgALT" is discouraged (0 uses).
 New usage of "ceqsex3OLD" is discouraged (0 uses).
 New usage of "ceqsex3vOLD" is discouraged (0 uses).
 New usage of "cfilucfil2OLD" is discouraged (2 uses).
@@ -18531,6 +18532,7 @@ Proof modification of "cbv2OLD" is discouraged (17 steps).
 Proof modification of "cbv3hOLD" is discouraged (48 steps).
 Proof modification of "cbvex2OLD" is discouraged (94 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
+Proof modification of "ceqsalgALT" is discouraged (58 steps).
 Proof modification of "ceqsex3OLD" is discouraged (61 steps).
 Proof modification of "ceqsex3vOLD" is discouraged (7 steps).
 Proof modification of "cfilucfil2OLD" is discouraged (120 steps).
