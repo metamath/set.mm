@@ -4251,7 +4251,6 @@
 "csbingOLD" is used by "onfrALTlem4VD".
 "csbingOLD" is used by "onfrALTlem5VD".
 "csbiotagOLD" is used by "csbfv12gOLD".
-"csbopabgOLD" is used by "csbcnvgOLD".
 "csbresgOLD" is used by "csbima12gALTOLD".
 "csbresgOLD" is used by "csbima12gALTVD".
 "csbrngOLD" is used by "csbima12gALTOLD".
@@ -14890,7 +14889,6 @@ New usage of "conventions" is discouraged (0 uses).
 New usage of "copsexgOLD" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
 New usage of "csbabgOLD" is discouraged (10 uses).
-New usage of "csbcnvgOLD" is discouraged (0 uses).
 New usage of "csbcomgOLD" is discouraged (0 uses).
 New usage of "csbeq2gOLD" is discouraged (6 uses).
 New usage of "csbeq2gVD" is discouraged (0 uses).
@@ -14908,7 +14906,6 @@ New usage of "csbima12gOLD" is discouraged (2 uses).
 New usage of "csbingOLD" is discouraged (4 uses).
 New usage of "csbingVD" is discouraged (0 uses).
 New usage of "csbiotagOLD" is discouraged (1 uses).
-New usage of "csbopabgOLD" is discouraged (1 uses).
 New usage of "csbovgOLD" is discouraged (0 uses).
 New usage of "csbresgOLD" is discouraged (2 uses).
 New usage of "csbresgVD" is discouraged (0 uses).
@@ -17455,6 +17452,7 @@ New usage of "pl42lem2N" is discouraged (1 uses).
 New usage of "pl42lem3N" is discouraged (1 uses).
 New usage of "pl42lem4N" is discouraged (1 uses).
 New usage of "plpv" is discouraged (1 uses).
+New usage of "ply1coeOLD" is discouraged (0 uses).
 New usage of "pm10.252" is discouraged (0 uses).
 New usage of "pm11.07" is discouraged (0 uses).
 New usage of "pm110.643ALT" is discouraged (0 uses).
@@ -18544,7 +18542,6 @@ Proof modification of "con5i" is discouraged (13 steps).
 Proof modification of "conventions" is discouraged (1 steps).
 Proof modification of "copsexgOLD" is discouraged (358 steps).
 Proof modification of "csbabgOLD" is discouraged (93 steps).
-Proof modification of "csbcnvgOLD" is discouraged (112 steps).
 Proof modification of "csbcomgOLD" is discouraged (153 steps).
 Proof modification of "csbeq2gOLD" is discouraged (33 steps).
 Proof modification of "csbeq2gVD" is discouraged (61 steps).
@@ -18562,7 +18559,6 @@ Proof modification of "csbima12gOLD" is discouraged (100 steps).
 Proof modification of "csbingOLD" is discouraged (100 steps).
 Proof modification of "csbingVD" is discouraged (248 steps).
 Proof modification of "csbiotagOLD" is discouraged (78 steps).
-Proof modification of "csbopabgOLD" is discouraged (85 steps).
 Proof modification of "csbovgOLD" is discouraged (127 steps).
 Proof modification of "csbresgOLD" is discouraged (90 steps).
 Proof modification of "csbresgVD" is discouraged (187 steps).
