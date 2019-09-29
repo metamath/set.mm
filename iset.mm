@@ -35234,6 +35234,28 @@ $)
     ( wor wpo wcel w3a wbr wn sopo po3nr sylan ) AEFAEGBAHCAHDAHIBCEJCDEJDBEJIK
     AELABCDEMN $.
 
+  $( One direction of ~ sotritric holds for all weakly linear orders.
+     (Contributed by Jim Kingdon, 28-Sep-2019.) $)
+  sotricim $p |- ( ( R Or A /\ ( B e. A /\ C e. A ) ) ->
+      ( B R C -> -. ( B = C \/ C R B ) ) ) $=
+    ( wor wcel wa wbr wceq wn wo w3a adantrr 3adant3 wi breq2 biimprcd 3ad2ant3
+    sonr mtod 3expia so2nr imnan sylibr jcad ioran syl6ibr ) ADEZBAFZCAFZGZGZBC
+    DHZBCIZJZCBDHZJZGUNUPKJULUMUOUQUHUKUMUOUHUKUMLUNBBDHZUHUKURJZUMUHUIUSUJABDS
+    MNUMUHUNUROUKUNURUMBCBDPQRTUAULUMUPGJUMUQOABCDUBUMUPUCUDUEUNUPUFUG $.
+
+  ${
+    sotritric.or $e |- R Or A $.
+    sotritric.tri $e |- ( ( B e. A /\ C e. A ) ->
+      ( B R C \/ B = C \/ C R B ) ) $.
+    $( A trichotomy relationship, given a trichotomous order.  (Contributed by
+       Jim Kingdon, 28-Sep-2019.) $)
+    sotritric $p |- ( ( B e. A /\ C e. A ) ->
+        ( B R C <-> -. ( B = C \/ C R B ) ) ) $=
+      ( wcel wa wbr wceq wo wn wor wi sotricim mpan w3o 3orass ax-1 pm2.24 jaoi
+      sylbi syl impbid ) BAGCAGHZBCDIZBCJZCBDIZKZLZADMUEUFUJNEABCDOPUEUFUGUHQZU
+      JUFNZFUKUFUIKULUFUGUHRUFULUIUFUJSUIUFTUAUBUCUD $.
+  $}
+
   ${
     $d x y z R $.
     $( Any relation is a strict ordering of the empty set.  (Contributed by NM,
@@ -58859,6 +58881,12 @@ $)
       PQTUUSUUMUUNUXFUWGUWDYLYMQTUVAUVBUVDWAWBWGWQUUSUUAUVCRZYTUULUURUXGUUOYIYJ
       YPYQURWRWGWQWSWTSXAXGYCMYDXFYBLYBXFEIXBFXFYBXCSXDXE $.
   $}
+
+  $( Trichotomy for positive integers.  (Contributed by Jim Kingdon,
+     21-Sep-2019.) $)
+  nqtric $p |- ( ( A e. Q. /\ B e. Q. ) ->
+      ( A <Q B <-> -. ( A = B \/ B <Q A ) ) ) $=
+    ( cnq cltq ltsonq nqtri3or sotritric ) CABDEABFG $.
 
   ${
     $d A x y z w v u f g h $.  $d B x y z w v u f g h $.
