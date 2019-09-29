@@ -14641,6 +14641,7 @@ New usage of "cdleml3N" is discouraged (1 uses).
 New usage of "cdleml4N" is discouraged (1 uses).
 New usage of "cdleml5N" is discouraged (0 uses).
 New usage of "cdlemm10N" is discouraged (0 uses).
+New usage of "ceqsalgALT" is discouraged (0 uses).
 New usage of "ceqsex3OLD" is discouraged (0 uses).
 New usage of "ceqsex3vOLD" is discouraged (0 uses).
 New usage of "cfilucfil2OLD" is discouraged (2 uses).
@@ -18418,7 +18419,7 @@ Proof modification of "bj-cbvexdvav" is discouraged (22 steps).
 Proof modification of "bj-cbvexv" is discouraged (46 steps).
 Proof modification of "bj-cbvexvv" is discouraged (12 steps).
 Proof modification of "bj-ceqsalt" is discouraged (45 steps).
-Proof modification of "bj-ceqsaltlem" is discouraged (119 steps).
+Proof modification of "bj-ceqsaltlem" is discouraged (116 steps).
 Proof modification of "bj-ceqsaltv" is discouraged (45 steps).
 Proof modification of "bj-chvarv" is discouraged (18 steps).
 Proof modification of "bj-chvarvv" is discouraged (10 steps).
@@ -18440,8 +18441,11 @@ Proof modification of "bj-dtrucor" is discouraged (19 steps).
 Proof modification of "bj-dtrucor2v" is discouraged (44 steps).
 Proof modification of "bj-dvdemo1" is discouraged (28 steps).
 Proof modification of "bj-dvdemo2" is discouraged (16 steps).
+Proof modification of "bj-eeanvw" is discouraged (32 steps).
 Proof modification of "bj-el" is discouraged (48 steps).
 Proof modification of "bj-eleq1w" is discouraged (51 steps).
+Proof modification of "bj-eleq2w" is discouraged (51 steps).
+Proof modification of "bj-elequ12" is discouraged (24 steps).
 Proof modification of "bj-elisset" is discouraged (24 steps).
 Proof modification of "bj-elissetv" is discouraged (25 steps).
 Proof modification of "bj-equs45fv" is discouraged (43 steps).
@@ -18450,6 +18454,7 @@ Proof modification of "bj-equs5v" is discouraged (41 steps).
 Proof modification of "bj-equsal" is discouraged (31 steps).
 Proof modification of "bj-equsalhv" is discouraged (10 steps).
 Proof modification of "bj-equsalv" is discouraged (39 steps).
+Proof modification of "bj-equsb1v" is discouraged (17 steps).
 Proof modification of "bj-equsexhv" is discouraged (10 steps).
 Proof modification of "bj-equsexv" is discouraged (38 steps).
 Proof modification of "bj-eunex" is discouraged (53 steps).
@@ -18531,6 +18536,7 @@ Proof modification of "cbv2OLD" is discouraged (17 steps).
 Proof modification of "cbv3hOLD" is discouraged (48 steps).
 Proof modification of "cbvex2OLD" is discouraged (94 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
+Proof modification of "ceqsalgALT" is discouraged (58 steps).
 Proof modification of "ceqsex3OLD" is discouraged (61 steps).
 Proof modification of "ceqsex3vOLD" is discouraged (7 steps).
 Proof modification of "cfilucfil2OLD" is discouraged (120 steps).
