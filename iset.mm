@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Sep-2019
+$( iset.mm - Version of 29-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -59282,6 +59282,31 @@ $)
       UKVMWBWQSZEKVMDKULCKULHWBEKRWMCGZFKRHHZWREKTZWSWNVTCGZHEKRSFKTZHWBXBHUNEK
       TZWNWBWSUOOFKTEKTZUPHXACDFEUQXAXCXDXEWTURUSUTVAVBVCVEVDVFVGVHVIVJVDVKVL
       $.
+  $}
+
+  $( A positive fraction not in a lower cut is an upper bound.  (Contributed by
+     Jim Kingdon, 29-Sep-2019.) $)
+  prubl $p |- ( ( ( <. L , U >. e. P. /\ B e. L ) /\ C e. Q. ) ->
+      ( -. C e. L -> B <Q C ) ) $=
+    ( cop cnp wcel wa cnq wn wceq cltq wbr wo eleq1 biimpcd adantl prcdnql jaod
+    wi con3d adantr wb elprnql nqtric sylan sylibrd ) DCEFGZADGZHZBIGZHBDGZJZAB
+    KZBALMZNZJZABLMZUJUMUQTUKUJUPULUJUNULUOUIUNULTUHUNUIULABDOPQABCDRSUAUBUJAIG
+    UKURUQUCACDUDABUEUFUG $.
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y L $.  $d x y U $.
+    $( A lower cut has no largest member.  (Contributed by Jim Kingdon,
+       29-Sep-2019.) $)
+    prnmaxl $p |- ( ( <. L , U >. e. P. /\ B e. L ) -> E. x e. L B <Q x ) $=
+      ( vy cop wcel wa cv cltq wbr wex wrex cnq wb wral wi wss df-rex sylibr wn
+      cnp elprnql wo w3a elinp simpr1l sylbi eleq1 breq1 anbi1d rexbidv bibi12d
+      wceq rspcv bi1 syl56 impd mpcom sylib ltrelnq brel simprd pm4.71ri anbi1i
+      ancom anass 3bitr3i exbii ) DCFUBGZBDGZHZAIZDGZBVMJKZHZALZVOADMVLVMNGZVOV
+      NHZHZALZVQVLVSANMZWABNGZVLWBBCDUCWCVJVKWBVJEIZDGZWDVMJKZVNHZANMZOZENPZWCV
+      KWBOZVKWBQVJDNRCNRHWEENMVMCGZANMHHZWJWLWFWDCGZHENMOANPZHWEWNHUAENPZWFWEWL
+      UDQANPENPZUEHWJCDAEUFWJWOWPWQWMUGUHWIWKEBNWDBUNZWEVKWHWBWDBDUIWRWGVSANWRW
+      FVOVNWDBVMJUJUKULUMUOVKWBUPUQURUSVSANSUTVPVTAVSVRVOHZVNHVPVTVOWSVNVOVRVOW
+      CVRBVMNNJVAVBVCVDVEVOVNVFVRVOVNVGVHVITVOADST $.
   $}
 
 $(
