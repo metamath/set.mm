@@ -59156,6 +59156,20 @@ $)
   $}
 
   ${
+    $d x y q $.
+    $( Define ordering on positive reals.  We define ` x <P y ` if there is a
+       positive fraction ` q ` which is an element of the upper cut of ` x `
+       and the lower cut of ` y ` .  From the definition of < in Section 11.2.1
+       of [HoTT], p.  (varies).
+
+       This is a "temporary" set used in the construction of complex numbers,
+       and is intended to be used only by the construction.  (Contributed by
+       Jim Kingdon, 29-Sep-2019.) $)
+    df-iltp $a |- <P = { <. x , y >. | ( ( x e. P. /\ y e. P. ) /\
+      E. q e. Q. ( q e. ( 2nd ` x ) /\ q e. ( 1st ` y ) ) ) } $.
+  $}
+
+  ${
     $d l u q r $.
     $( Lemma for proving existence of reals.  (Contributed by Jim Kingdon,
        27-Sep-2019.) $)
