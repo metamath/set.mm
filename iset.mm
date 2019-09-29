@@ -59309,6 +59309,18 @@ $)
       CVRBVMNNJVAVBVCVDVEVOVNVFVRVOVNVGVHVITVOADST $.
   $}
 
+  ${
+    $d x y A $.  $d x y B $.  $d x y L $.  $d x y U $.
+    $( A lower cut has no largest member.  Addition version.  (Contributed by
+       Jim Kingdon, 29-Sep-2019.) $)
+    prnmaddl $p |- ( ( <. L , U >. e. P. /\ B e. L ) ->
+        E. x e. Q. ( B +Q x ) e. L ) $=
+      ( vy cop cnp wcel wa cv cltq wbr wrex cplq cnq prnmaxl wceq ltrelnq brel
+      co ltexnqq biimpcd mpd eleq1a reximdv syl5 rexlimiv syl ) DCFGHBDHIBEJZKL
+      ZEDMBAJNTZDHZAOMZEBCDPUJUMEDUJUKUIQZAOMZUIDHZUMUJBOHUIOHIZUOBUIOOKRSUQUJU
+      OABUIUAUBUCUPUNULAOUIDUKUDUEUFUGUH $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
