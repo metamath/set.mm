@@ -4253,6 +4253,7 @@
 "csbingOLD" is used by "onfrALTlem4VD".
 "csbingOLD" is used by "onfrALTlem5VD".
 "csbiotagOLD" is used by "csbfv12gOLD".
+"csbopabgALT" is used by "csbcnvgALT".
 "csbresgOLD" is used by "csbima12gALTOLD".
 "csbresgOLD" is used by "csbima12gALTVD".
 "csbrngOLD" is used by "csbima12gALTOLD".
@@ -11196,9 +11197,9 @@
 "onfrALTlem5" is used by "onfrALTlem3".
 "onfrALTlem5" is used by "onfrALTlem3VD".
 "opelcn" is used by "axicn".
-"opelopabsbOLD" is used by "brabsb2".
-"opelopabsbOLD" is used by "cnvopab".
-"opelopabsbOLD" is used by "inopab".
+"opelopabsbALT" is used by "brabsb2".
+"opelopabsbALT" is used by "cnvopab".
+"opelopabsbALT" is used by "inopab".
 "opelreal" is used by "ax1cn".
 "opelreal" is used by "axaddrcl".
 "opelreal" is used by "axcnre".
@@ -14891,6 +14892,7 @@ New usage of "conventions" is discouraged (0 uses).
 New usage of "copsexgOLD" is discouraged (0 uses).
 New usage of "counop" is discouraged (0 uses).
 New usage of "csbabgOLD" is discouraged (10 uses).
+New usage of "csbcnvgALT" is discouraged (0 uses).
 New usage of "csbcomgOLD" is discouraged (0 uses).
 New usage of "csbeq2gOLD" is discouraged (6 uses).
 New usage of "csbeq2gVD" is discouraged (0 uses).
@@ -14908,6 +14910,7 @@ New usage of "csbima12gOLD" is discouraged (2 uses).
 New usage of "csbingOLD" is discouraged (4 uses).
 New usage of "csbingVD" is discouraged (0 uses).
 New usage of "csbiotagOLD" is discouraged (1 uses).
+New usage of "csbopabgALT" is discouraged (1 uses).
 New usage of "csbovgOLD" is discouraged (0 uses).
 New usage of "csbresgOLD" is discouraged (2 uses).
 New usage of "csbresgVD" is discouraged (0 uses).
@@ -17212,7 +17215,7 @@ New usage of "onfrALTlem5" is discouraged (2 uses).
 New usage of "onfrALTlem5VD" is discouraged (0 uses).
 New usage of "opelcn" is discouraged (1 uses).
 New usage of "opelopab4" is discouraged (0 uses).
-New usage of "opelopabsbOLD" is discouraged (3 uses).
+New usage of "opelopabsbALT" is discouraged (3 uses).
 New usage of "opelreal" is discouraged (8 uses).
 New usage of "opidon" is discouraged (2 uses).
 New usage of "opidon2" is discouraged (1 uses).
@@ -18549,6 +18552,7 @@ Proof modification of "con5i" is discouraged (13 steps).
 Proof modification of "conventions" is discouraged (1 steps).
 Proof modification of "copsexgOLD" is discouraged (358 steps).
 Proof modification of "csbabgOLD" is discouraged (93 steps).
+Proof modification of "csbcnvgALT" is discouraged (112 steps).
 Proof modification of "csbcomgOLD" is discouraged (153 steps).
 Proof modification of "csbeq2gOLD" is discouraged (33 steps).
 Proof modification of "csbeq2gVD" is discouraged (61 steps).
@@ -18566,6 +18570,7 @@ Proof modification of "csbima12gOLD" is discouraged (100 steps).
 Proof modification of "csbingOLD" is discouraged (100 steps).
 Proof modification of "csbingVD" is discouraged (248 steps).
 Proof modification of "csbiotagOLD" is discouraged (78 steps).
+Proof modification of "csbopabgALT" is discouraged (85 steps).
 Proof modification of "csbovgOLD" is discouraged (127 steps).
 Proof modification of "csbresgOLD" is discouraged (90 steps).
 Proof modification of "csbresgVD" is discouraged (187 steps).
@@ -19124,7 +19129,7 @@ Proof modification of "onfrALTlem4VD" is discouraged (155 steps).
 Proof modification of "onfrALTlem5" is discouraged (320 steps).
 Proof modification of "onfrALTlem5VD" is discouraged (421 steps).
 Proof modification of "opelopab4" is discouraged (69 steps).
-Proof modification of "opelopabsbOLD" is discouraged (106 steps).
+Proof modification of "opelopabsbALT" is discouraged (106 steps).
 Proof modification of "opnmblALT" is discouraged (332 steps).
 Proof modification of "orbi1r" is discouraged (9 steps).
 Proof modification of "orbi1rVD" is discouraged (101 steps).
