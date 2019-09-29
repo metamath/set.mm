@@ -1,0 +1,53 @@
+#!/bin/sh
+# gourcify - Generate video of set.mm history using Gource.
+# (C) 2019 David A. Wheeler
+# This script is released as open source software under the MIT license.
+# SPDX-License-Identifier: MIT
+
+# Need to install gource, ffmpeg, python3.
+# Ensure pip3 is installed by running "python3 -m ensurepip",
+# then install "ply" library by running "pip3 install ply".
+
+set -e -x
+
+if which cygstart > /dev/null ; then
+    RUN_COMMAND='cmd /C'
+else
+    RUN_COMMAND=''
+fi
+
+# Get music if we don't already have it.
+# If you want music, you need to download some. Here's what I used:
+# Music by audionautix.com - "Threshold" by Jason Shaw, CC-BY-3.0 Unported.
+
+MUSIC_URL='https://audionautix.com/Music/Threshold.mp3'
+MUSIC='Threshold.mp3'
+
+# Download music file if we don't have it.
+if ! [ -f "$MUSIC" ] ; then
+    wget "$MUSIC_URL" || exit 1
+fi
+
+# Get changes in set.mm and record them in Gource log format
+scripts/report-changes.py > changes.log
+
+# Sort by datetime
+sort -n changes.log > changes-sorted.log
+
+# Use Gource to generate image sequence (.ppm format)
+rm -f gource.ppm
+$RUN_COMMAND gource --load-config scripts/gource.config \
+    -o gource.ppm changes-sorted.log
+
+# Convert .ppm image sequence into video
+rm -f gource.mp4
+ffmpeg -y -r 30 -f image2pipe -vcodec ppm -i gource.ppm \
+       -pix_fmt yuv420p -threads 0 -bf 0 gource.mp4
+
+# Add audio track
+rm -f gource-muxed.mp4
+ffmpeg -i gource.mp4 -i "$MUSIC" -c:v copy -c:a aac \
+       -strict experimental -filter:a "volume=0.6" gource-muxed.mp4
+
+# Success!
+echo 'Result is in gource-muxed.mp4'
