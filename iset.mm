@@ -59237,6 +59237,25 @@ $)
     wex nex mto prml prop ) BCDBEFZBGFZHCDZUDAIZUBDZAJKZUGUFAQUFAUFUEBDUELUBBUE
     MNORUFAJPSAUCUBTSBUAS $.
 
+  ${
+    $d b c L $.  $d b c U $.  $d b c B $.  $d b c C $.
+    $( A lower cut is closed downwards under the positive fractions.
+       (Contributed by Jim Kingdon, 28-Sep-2019.) $)
+    prcdnql $p |- ( ( <. L , U >. e. P. /\ B e. L ) ->
+        ( C <Q B -> C e. L ) ) $=
+      ( vc vb wcel wa cltq wbr cnq ltrelnq brel cv wi wceq eleq1 wrex wb wral
+      cop cnp simpld adantl breq1 imbi12d imbi2d ancomd an42 anbi12d rspcev wss
+      breq2 wn wo w3a elinp simpr1l sylbi r19.21bi syl5ibrcom 3impb 3com12 impd
+      3expib syl5bi mpand com12 ancoms vtoclg mpcom ex ) DCUAUBGZADGZHZBAIJZBDG
+      ZBKGZVOVPHVQVPVRVOVPVRAKGZBAKKILMUCUDVRVOVPVQVOENZAIJZVTDGZOZOVOVPVQOZOEB
+      KVTBPZWCWDVOWEWAVPWBVQVTBAIUEVTBDQUFUGVNVMWCWAVNVMHZWBWAVSVTKGZHZWFWBWAWG
+      VSVTAKKILMUHWHWFHVSVNHZVMWGHZHWAWBVSWGVNVMUIWAWIWJWBWAVSVNWJWBOZVSWAVNWKV
+      SWAVNWKVSWAVNHZHWBWJVTFNZIJZWMDGZHZFKRZWPWLFAKWMAPWNWAWOVNWMAVTIUMWMADQUJ
+      UKVMWBWQSZEKVMDKULCKULHWBEKRWMCGZFKRHHZWREKTZWSWNVTCGZHEKRSFKTZHWBXBHUNEK
+      TZWNWBWSUOOFKTEKTZUPHXACDFEUQXAXCXDXEWTURUSUTVAVBVCVEVDVFVGVHVIVJVDVKVL
+      $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
