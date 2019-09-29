@@ -59335,6 +59335,15 @@ $)
       OABUIUAUBUCUPUNULAOUIDUKUDUEUFUGUH $.
   $}
 
+  ${
+    $d q x y $.
+    $( Positive real 'less than' is a relation on positive reals.  (Contributed
+       by NM, 14-Feb-1996.) $)
+    ltrelpr $p |- <P C_ ( P. X. P. ) $=
+      ( vx vy vq cltp cv cnp wcel c2nd cfv c1st cnq wrex copab df-iltp opabssxp
+      wa cxp eqsstri ) DAEZFGBEZFGPCEZSHIGUATJIGPCKLZPABMFFQABCNUBABFFOR $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
