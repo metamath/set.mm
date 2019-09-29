@@ -59153,6 +59153,23 @@ $)
         s e. ( 1st ` y ) /\ q = ( r +Q s ) ) } ,
         { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 2nd ` x ) /\
         s e. ( 2nd ` y ) /\ q = ( r +Q s ) ) } >. ) $.
+
+    $( Define multiplication on positive reals.  Here we use a simple
+       definition which is similar to ~ df-iplp or the definition of
+       multiplication on positive reals in Metamath Proof Explorer.  This is as
+       opposed to the more complicated definition of multiplication given in
+       Section 11.2.1 of [HoTT], p.  (varies), which appears to be motivated by
+       handling negative numbers or handling modified Dedekind cuts in which
+       locatedness is omitted.
+
+       This is a "temporary" set used in the construction of complex numbers,
+       and is intended to be used only by the construction.  (Contributed by
+       Jim Kingdon, 29-Sep-2019.) $)
+    df-imp $a |- .P. = ( x e. P. , y e. P. |->
+      <. { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 1st ` x ) /\
+        s e. ( 1st ` y ) /\ q = ( r .Q s ) ) } ,
+        { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 2nd ` x ) /\
+        s e. ( 2nd ` y ) /\ q = ( r .Q s ) ) } >. ) $.
   $}
 
   ${
