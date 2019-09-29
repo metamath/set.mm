@@ -9,32 +9,17 @@
 # Then install "ply" library: "pip3 install ply"
 # We use "ply" to implement easy lexing of the data.
 
-# To use this to generate a Gource presentation:
-# scripts/report-changes.py > changes.log
-# sort -n changes.log > changes-sorted.log
-# gource --load-config scripts/gource.config changes-sorted.log
-#
-# For a video file, modify the "gource" command to add "-o gource.ppm", then:
-# ffmpeg -y -r 30 -f image2pipe -vcodec ppm -i gource.ppm -pix_fmt yuv420p \
-#        -threads 0 -bf 0 gource.mp4
-#
-# If you want music, you need to download some. Here's what I used:
-# Music by audionautix.com - "Threshold" by Jason Shaw, CC-BY-3.0 Unported.
-# wget https://audionautix.com/Music/Threshold.mp3
-# ffmpeg -i gource.mp4 -i Threshold.mp3 -c:v copy -c:a aac \
-#        -strict experimental -filter:a "volume=0.6" gource-muxed.mp4
-#
-#
-# This was recommended but it did not work for me:
-# ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i gource.ppm -vcodec libx264 \
-#        -preset medium -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource.mp4
-
 # By default, output the Gource custom log format.
 # https://github.com/acaudwell/Gource/wiki/Custom-Log-Format
 # timestamp|username|type ((A)dded, (M)odified, (D)eleted)|file path|color
+# See "gourcify" which uses this script.
 
 # Be sure to "sort -n" its output.
-# Also get: http://us.metamath.org/mmlogo.svg
+
+# Note: This program looks at a .mm file to get all the information, *not* at
+# repository.  This means that it *cannot* report old deleted assertions
+# (since they are not present).  Similarly, it only reports the
+# *current* structure and names of assertions, not what was there historically.
 
 # TODO: This doesn't handle multiple-person contributions well (and or "/")
 
@@ -42,6 +27,7 @@ import ply.lex as lex
 
 import datetime
 import re
+import hashlib
 
 OUTPUT_FORMAT = 'gource'
 MMFILE = 'set.mm'
@@ -72,7 +58,7 @@ def t_ACTION(t):
 
 def t_ASSERTION(t):
     r'[^ ]+\s+\$[ap]\s\|-\s'
-    t.value = t.value.split()[0] # Return just the label
+    t.value = t.value.split()[0:2] # Return label and $a/$p
     return t
 
 def t_HEADING1(t):
@@ -121,9 +107,17 @@ def t_error(t):
     t.lexer.skip(1)
 
 def section_name(heading):
+    """Turn headings into directory format."""
     # Like join, but skip [0] and ignore None
     result = heading[1]
-    for next_part in heading[2:]:
+    #
+    # Simplify directory structure for Gource
+    if OUTPUT_FORMAT == 'gource':
+        end_at = 3
+    else:
+        end_at = None
+    #
+    for next_part in heading[2:end_at]:
         if next_part is not None:
             result += '/'
             result += next_part
@@ -181,6 +175,20 @@ def cleanup_name(name):
         name = NAME_ABBREVIATIONS[name]
     return name
 
+# Different "scrambler" values produce different colors in pick_color
+HASH_SCRAMBLER = 'Z'.encode('utf-8')
+
+def pick_color(key):
+    """Pick a color given a key, return as HTML text."""
+    # We *cannot* use Python's hash() method, because that is not stable
+    # between executions. Instead, we'll use MD5; MD5 is no longer adequate
+    # for cryptographic security, but we aren't using it for security
+    # so it's fine.
+    h = hashlib.md5()
+    h.update(key.encode('utf-8'))
+    h.update(HASH_SCRAMBLER)
+    return h.hexdigest()[:6]
+
 # Begin
 
 lexer = lex.lex()
@@ -215,7 +223,8 @@ for tok in lexer:
         contributed = cleanup_whitespace(contributed)
         who = cleanup_name(who)
         date = cleanup_date(date)
-        label = tok.value.strip()
+        label = tok.value[0].strip()
+        assertion_type = tok.value[1].strip()
         section = section_name(heading)
         if OUTPUT_FORMAT == 'gource':
             timestamp = timestamp_of(date)
@@ -224,10 +233,15 @@ for tok in lexer:
                 contribution_type = 'A'
             else:
                 contribution_type = 'M'
+            # Use a special color for $a
+            if assertion_type == '$a':
+                color = '|8080ff'
+            else:
+                color = pick_color(heading[1])
             # timestamp|username|type ((A)dded, (M)odified, (D)eleted)|
             # file path|color
-            print(f'{timestamp}|{who}|{contribution_type}|{local_name}')
+            print(f'{timestamp}|{who}|{contribution_type}|{local_name}|{color}')
         else:
-            print(f'{date}|{who}|{contributed}|{label}|{section}')
+            print(f'{date}|{who}|{contributed}|{label}|{assertion_type}|{section}')
     else:
         print('UNKNOWN', tok)
