@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Sep-2019
+$( iset.mm - Version of 28-Sep-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -15834,15 +15834,6 @@ $)
   $}
 
   ${
-    $d x y $.  $d y ph $.  $d y ps $.
-    moanimh.1 $e |- ( ph -> A. x ph ) $.
-    $( Introduction of a conjunct into "at most one" quantifier.  (Contributed
-       by NM, 3-Dec-2001.)  (New usage is discouraged.) $)
-    moanimh $p |- ( E* x ( ph /\ ps ) <-> ( ph -> E* x ps ) ) $=
-      ( nfi moanim ) ABCACDEF $.
-  $}
-
-  ${
     $d x y ph $.  $d y ps $.
     $( Introduction of a conjunct into "at most one" quantifier.  (Contributed
        by NM, 23-Mar-1995.) $)
@@ -25248,16 +25239,6 @@ $)
   $}
 
   ${
-    $d x C $.
-    $( Nest the composition of two substitutions.  (New usage is discouraged.)
-       (Proof modification is discouraged.)  (Contributed by NM,
-       23-Nov-2005.) $)
-    csbnestgOLD $p |- ( ( A e. V /\ A. x B e. W ) ->
-                  [_ A / x ]_ [_ B / y ]_ C = [_ [_ A / x ]_ B / y ]_ C ) $=
-      ( wcel csb wceq wal csbnestg adantr ) CFHACBDEIIBACDIEIJDGHAKABCDEFLM $.
-  $}
-
-  ${
     $d x y $.  $d y C $.
     $( Nest the composition of two substitutions.  (Contributed by NM,
        23-May-2006.)  (Proof shortened by Mario Carneiro, 11-Nov-2016.) $)
@@ -29986,15 +29967,6 @@ $)
     ( wcel wa cpw cpr wss prssg elpwg bi2anan9 bitr3d ) ADFZBEFZGACHZFZBQFZGABI
     QJACJZBCJZGABQDEKORTPSUAACDLBCELMN $.
 
-  $( Obsolete version of ~ prsspwg as of 18-Jan-2018.  (Contributed by Thierry
-     Arnoux, 3-Oct-2016.)  (New usage is discouraged.)
-     (Proof modification is discouraged.) $)
-  prsspwgOLD $p |- ( ( A e. _V /\ B e. _V ) -> ( { A , B } C_ ~P C <->
-    ( A C_ C /\ B C_ C ) ) ) $=
-    ( cvv wcel wa cpw cpr wss prssg wb elpwg anim12i pm4.38 syl bitr3d ) ADEZBD
-    EZFZACGZEZBTEZFZABHTIACIZBCIZFZABTDDJSUAUDKZUBUEKZFUCUFKQUGRUHACDLBCDLMUAUB
-    UDUENOP $.
-
   ${
     $d x A $.  $d x B $.
     $( Empty set and the singleton itself are subsets of a singleton.
@@ -34574,14 +34546,6 @@ $)
       bitri 2exbii elopab 2sb5 3bitr4i ) DFZEFZGZBFZCFZGHZAIZCJBJZUIUFHZUHUEHZI
       ZAIZBJCJZUGABCKLABDMCEMULUKBJCJUQUKBCNUKUPCBUJUOAUJUEUHHZUFUIHZIUOUEUFUHU
       IDOEOPURUNUSUMDBQECQRTSUATABCUGUBACBEDUCUD $.
-
-    brabsbOLD.1 $e |- R = { <. x , y >. | ph } $.
-    $( The law of concretion in terms of substitutions.  (Contributed by NM,
-       17-Mar-2008.)  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    brabsbOLD $p |- ( z R w <-> [ w / y ] [ z / x ] ph ) $=
-      ( cv wbr copab cop wcel wsb breqi df-br opelopabsbOLD 3bitri ) DHZEHZFIRS
-      ABCJZIRSKTLABDMCEMRSFTGNRSTOABCDEPQ $.
   $}
 
   ${
@@ -40180,13 +40144,6 @@ $)
       UGHZBUKIZJZLUFUJLDCAUKCIZUNUJUFUOULUHUMUIUKCBUGMUKCBNOPUFBUKQZUGEUPFEZULU
       MBUKFADSZRBUKUGTUMBUKFHUQBUKURUABUKFTUBUCUDUE $.
   $}
-
-  $( ` <. A , A >. ` belongs to a restriction of the identity class iff ` A `
-     belongs to the restricting class.  (Contributed by FL, 27-Oct-2008.)
-     (Proof modification is discouraged.)  (New usage is discouraged.) $)
-  opelresiOLD $p |- ( A e. V -> ( A e. B <-> <. A , A >. e. ( _I |` B ) ) ) $=
-    ( wcel cop cid wa cres wbr ididg df-br sylib biantrurd opelresg bitr4d ) AC
-    DZABDZAAEZFDZQGRFBHDPSQPAAFISACJAAFKLMAAFBCNO $.
 
   $( ` <. A , A >. ` belongs to a restriction of the identity class iff ` A `
      belongs to the restricting class.  (Contributed by FL, 27-Oct-2008.)
@@ -53704,15 +53661,6 @@ $)
       rnexg syl wf eqid fmpt frn sylbi ssonuni imp syl2an eqeltrd ) BDEZCFEABGZ
       HABCIZABCJZKZLZFUKULUOMUJABCFNOUJUNPEZUNFQZUOFEZUKUJUMPEUPABCDRUMPSTUKBFU
       MUAUQABFCUMUMUBUCBFUMUDUEUPUQURUNPUFUGUHUI $.
-
-    iunonOLD.1 $e |- A e. _V $.
-    iunonOLD.2 $e |- B e. _V $.
-    $( The indexed union of a set of ordinal numbers ` B ( x ) ` is an ordinal
-       number.  (Contributed by NM, 13-Oct-2003.)  (Revised by Mario Carneiro,
-       5-Dec-2016.)  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    iunonOLD $p |- ( A. x e. A B e. On -> U_ x e. A B e. On ) $=
-      ( cvv wcel con0 wral ciun iunon mpan ) BFGCHGABIABCJHGDABCFKL $.
   $}
 
   $c Smo $.
@@ -57866,56 +57814,51 @@ $)
 
   $( Define the class of positive integers.  This is a "temporary" set used in
      the construction of complex numbers, and is intended to be used only by
-     the construction.  (Contributed by NM, 15-Aug-1995.)
-     (New usage is discouraged.) $)
+     the construction.  (Contributed by NM, 15-Aug-1995.) $)
   df-ni $a |- N. = ( _om \ { (/) } ) $.
 
   $( Define addition on positive integers.  This is a "temporary" set used in
      the construction of complex numbers, and is intended to be used only by
-     the construction.  (Contributed by NM, 26-Aug-1995.)
-     (New usage is discouraged.) $)
+     the construction.  (Contributed by NM, 26-Aug-1995.) $)
   df-pli $a |- +N = ( +o |` ( N. X. N. ) ) $.
 
   $( Define multiplication on positive integers.  This is a "temporary" set
      used in the construction of complex numbers and is intended to be used
-     only by the construction.  (Contributed by NM, 26-Aug-1995.)
-     (New usage is discouraged.) $)
+     only by the construction.  (Contributed by NM, 26-Aug-1995.) $)
   df-mi $a |- .N = ( .o |` ( N. X. N. ) ) $.
 
   $( Define 'less than' on positive integers.  This is a "temporary" set used
      in the construction of complex numbers, and is intended to be used only by
-     the construction.  (Contributed by NM, 6-Feb-1996.)
-     (New usage is discouraged.) $)
+     the construction.  (Contributed by NM, 6-Feb-1996.) $)
   df-lti $a |- <N = ( _E i^i ( N. X. N. ) ) $.
 
   $( Membership in the class of positive integers.  (Contributed by NM,
-     15-Aug-1995.)  (New usage is discouraged.) $)
+     15-Aug-1995.) $)
   elni $p |- ( A e. N. <-> ( A e. _om /\ A =/= (/) ) ) $=
     ( cnpi wcel com c0 csn cdif wne wa df-ni eleq2i eldifsn bitri ) ABCADEFGZCA
     DCAEHIBNAJKADELM $.
 
   $( A positive integer is a natural number.  (Contributed by NM,
-     15-Aug-1995.)  (New usage is discouraged.) $)
+     15-Aug-1995.) $)
   pinn $p |- ( A e. N. -> A e. _om ) $=
     ( cnpi com c0 csn cdif df-ni difss eqsstri sseli ) BCABCDEZFCGCKHIJ $.
 
   $( A positive integer is an ordinal number.  (Contributed by NM,
-     23-Mar-1996.)  (New usage is discouraged.) $)
+     23-Mar-1996.) $)
   pion $p |- ( A e. N. -> A e. On ) $=
     ( cnpi wcel com con0 pinn nnon syl ) ABCADCAECAFAGH $.
 
-  $( A positive integer is ordinal.  (Contributed by NM, 29-Jan-1996.)
-     (New usage is discouraged.) $)
+  $( A positive integer is ordinal.  (Contributed by NM, 29-Jan-1996.) $)
   piord $p |- ( A e. N. -> Ord A ) $=
     ( cnpi wcel com word pinn nnord syl ) ABCADCAEAFAGH $.
 
   $( The class of positive integers is a set.  (Contributed by NM,
-     15-Aug-1995.)  (New usage is discouraged.) $)
+     15-Aug-1995.) $)
   niex $p |- N. e. _V $=
     ( cnpi com omex c0 csn cdif df-ni difss eqsstri ssexi ) ABCABDEZFBGBKHIJ $.
 
   $( The empty set is not a positive integer.  (Contributed by NM,
-     26-Aug-1995.)  (New usage is discouraged.) $)
+     26-Aug-1995.) $)
   0npi $p |- -. (/) e. N. $=
     ( c0 wceq cnpi wcel wn eqid com wne elni simprbi necon2bi ax-mp ) AABACDZEA
     FMAAMAGDAAHAIJKL $.
@@ -57923,7 +57866,7 @@ $)
   ${
     $d x y A $.
     $( Membership in the class of positive integers.  (Contributed by NM,
-       27-Nov-1995.)  (New usage is discouraged.) $)
+       27-Nov-1995.) $)
     elni2 $p |- ( A e. N. <-> ( A e. _om /\ (/) e. A ) ) $=
       ( cnpi wcel com c0 wa pinn wceq wn 0npi eleq1 mtbiri con2i wo syl ord mpd
       0elnn sylib wi jca wdc nndceq0 df-dc anim1i ancom andi noel eleq2 pm2.21d
@@ -57934,20 +57877,19 @@ $)
       UMVDVIVCVEVIAEVBZVDVCAEUNVCVDVOAUOUPUQURUSUTQVA $.
   $}
 
-  $( Ordinal 'one' is a positive integer.  (Contributed by NM, 29-Oct-1995.)
-     (New usage is discouraged.) $)
+  $( Ordinal 'one' is a positive integer.  (Contributed by NM, 29-Oct-1995.) $)
   1pi $p |- 1o e. N. $=
     ( c1o cnpi wcel com c0 wne 1onn 1n0 elni mpbir2an ) ABCADCAEFGHAIJ $.
 
   $( Positive integer addition in terms of ordinal addition.  (Contributed by
-     NM, 27-Aug-1995.)  (New usage is discouraged.) $)
+     NM, 27-Aug-1995.) $)
   addpiord $p |- ( ( A e. N. /\ B e. N. ) -> ( A +N B ) = ( A +o B ) ) $=
     ( cnpi wcel wa cop cxp cpli co coa wceq opelxpi cres cfv fvres df-ov df-pli
     fveq1i eqtri 3eqtr4g syl ) ACDBCDEABFZCCGZDZABHIZABJIZKABCCLUDUBJUCMZNZUBJN
     UEUFUBUCJOUEUBHNUHABHPUBHUGQRSABJPTUA $.
 
   $( Positive integer multiplication in terms of ordinal multiplication.
-     (Contributed by NM, 27-Aug-1995.)  (New usage is discouraged.) $)
+     (Contributed by NM, 27-Aug-1995.) $)
   mulpiord $p |- ( ( A e. N. /\ B e. N. ) -> ( A .N B ) = ( A .o B ) ) $=
     ( cnpi wcel wa cop cxp cmi co comu wceq opelxpi cres cfv fvres df-ov fveq1i
     df-mi eqtri 3eqtr4g syl ) ACDBCDEABFZCCGZDZABHIZABJIZKABCCLUDUBJUCMZNZUBJNU
@@ -57955,14 +57897,13 @@ $)
 
   $( 1 is an identity element for multiplication on positive integers.
      (Contributed by NM, 4-Mar-1996.)  (Revised by Mario Carneiro,
-     17-Nov-2014.)  (New usage is discouraged.) $)
+     17-Nov-2014.) $)
   mulidpi $p |- ( A e. N. -> ( A .N 1o ) = A ) $=
     ( cnpi wcel c1o cmi co comu wceq 1pi mulpiord mpan2 com pinn nnm1 syl eqtrd
     ) ABCZADEFZADGFZAQDBCRSHIADJKQALCSAHAMANOP $.
 
   $( Positive integer 'less than' in terms of ordinal membership.  (Contributed
-     by NM, 6-Feb-1996.)  (Revised by Mario Carneiro, 28-Apr-2015.)
-     (New usage is discouraged.) $)
+     by NM, 6-Feb-1996.)  (Revised by Mario Carneiro, 28-Apr-2015.) $)
   ltpiord $p |- ( ( A e. N. /\ B e. N. ) -> ( A <N B <-> A e. B ) ) $=
     ( clti wbr cep cnpi cxp cin wcel wa df-lti breqi brinxp epelg adantl bitr3d
     wb syl5bb ) ABCDABEFFGHZDZAFIZBFIZJZABIZABCSKLUCABEDZTUDABFFEMUBUEUDQUAABFN
@@ -57971,8 +57912,7 @@ $)
   ${
     $d x y z $.
     $( Positive integer 'less than' is a strict ordering.  (Contributed by NM,
-       8-Feb-1996.)  (Proof shortened by Mario Carneiro, 10-Jul-2014.)
-       (New usage is discouraged.) $)
+       8-Feb-1996.)  (Proof shortened by Mario Carneiro, 10-Jul-2014.) $)
     ltsopi $p |- <N Or N. $=
       ( vx vy vz cnpi clti wor wtru cv wcel wbr wn wel wb ltpiord adantl wa w3o
       wi com pinn elirrv anidms mtbiri w3a con0 pion ontr1 syl 3ad2ant3 3adant3
@@ -57986,7 +57926,7 @@ $)
   $}
 
   $( Trichotomy for positive integers.  (Contributed by Jim Kingdon,
-     21-Sep-2019.)  (New usage is discouraged.) $)
+     21-Sep-2019.) $)
   pitric $p |- ( ( A e. N. /\ B e. N. ) ->
       ( A <N B <-> -. ( A = B \/ B <N A ) ) ) $=
     ( cnpi wcel wa wceq wo wn clti wbr com wb pinn nntri2 syl2an ltpiord ancoms
@@ -57994,7 +57934,7 @@ $)
     HLUBAMBMABNOABPUCUJUGUCUIUFUEUBUAUIUFLBAPQRST $.
 
   $( Trichotomy for positive integers.  (Contributed by Jim Kingdon,
-     21-Sep-2019.)  (New usage is discouraged.) $)
+     21-Sep-2019.) $)
   pitri3or $p |- ( ( A e. N. /\ B e. N. ) ->
       ( A <N B \/ A = B \/ B <N A ) ) $=
     ( cnpi wcel clti wbr wceq w3o com pinn nntri3or syl2an ltpiord biidd ancoms
@@ -58002,12 +57942,12 @@ $)
     BJABKLUBUCUFUDUDUEUGABMUBUDNUATUEUGQBAMORS $.
 
   $( Positive integer 'less than' is a relation on positive integers.
-     (Contributed by NM, 8-Feb-1996.)  (New usage is discouraged.) $)
+     (Contributed by NM, 8-Feb-1996.) $)
   ltrelpi $p |- <N C_ ( N. X. N. ) $=
     ( clti cep cnpi cxp cin df-lti inss2 eqsstri ) ABCCDZEIFBIGH $.
 
   $( Domain of addition on positive integers.  (Contributed by NM,
-     26-Aug-1995.)  (New usage is discouraged.) $)
+     26-Aug-1995.) $)
   dmaddpi $p |- dom +N = ( N. X. N. ) $=
     ( coa cnpi cxp cres cdm con0 cin cpli dmres wfn wceq fnoa fndm ax-mp ineq2i
     eqtri df-pli dmeqi wss com wa c0 csn df-ni difss eqsstri omsson sstri anidm
@@ -58016,7 +57956,7 @@ $)
     GUHVCUIUKBFBFULNUPUSUMUNUO $.
 
   $( Domain of multiplication on positive integers.  (Contributed by NM,
-     26-Aug-1995.)  (New usage is discouraged.) $)
+     26-Aug-1995.) $)
   dmmulpi $p |- dom .N = ( N. X. N. ) $=
     ( comu cnpi cxp cres cdm con0 cin cmi dmres wfn wceq fnom fndm ax-mp ineq2i
     eqtri df-mi dmeqi wss com wa c0 cdif df-ni difss eqsstri omsson sstri anidm
@@ -58025,7 +57965,7 @@ $)
     UHVCUIUKBFBFULNUPUSUMUNUO $.
 
   $( Closure of addition of positive integers.  (Contributed by NM,
-     18-Oct-1995.)  (New usage is discouraged.) $)
+     18-Oct-1995.) $)
   addclpi $p |- ( ( A e. N. /\ B e. N. ) -> ( A +N B ) e. N. ) $=
     ( cnpi wcel wa cpli co coa addpiord com pinn wne nnacl sylan2 elni2 nnaordi
     c0 wi ne0i syl6 expcom imp32 sylan2b elni sylanbrc sylan eqeltrd ) ACDZBCDZ
@@ -58033,7 +57973,7 @@ $)
     BOUKUOUPUNUOUKUPUNRUOUKEUPAQHGZUJDUNQBAPUJUQSTUAUBUCUJUDUEUFUG $.
 
   $( Closure of multiplication of positive integers.  (Contributed by NM,
-     18-Oct-1995.)  (New usage is discouraged.) $)
+     18-Oct-1995.) $)
   mulclpi $p |- ( ( A e. N. /\ B e. N. ) -> ( A .N B ) e. N. ) $=
     ( cnpi wcel wa cmi co comu mulpiord com wne pinn nnmcl syl2an elni2 simprbi
     c0 adantl wi adantr nnmordi syl21anc mpd ne0i syl elni sylanbrc eqeltrd ) A
@@ -58042,13 +57982,13 @@ $)
     AUAUBUCULUSUDUEULUFUGUH $.
 
   $( Addition of positive integers is commutative.  (Contributed by Jim
-     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+     Kingdon, 26-Aug-2019.) $)
   addcompig $p |- ( ( A e. N. /\ B e. N. ) -> ( A +N B ) = ( B +N A ) ) $=
     ( cnpi wcel wa coa cpli com wceq pinn nnacom syl2an addpiord ancoms 3eqtr4d
     co ) ACDZBCDZEABFPZBAFPZABGPBAGPZQAHDBHDSTIRAJBJABKLABMRQUATIBAMNO $.
 
   $( Addition of positive integers is associative.  (Contributed by Jim
-     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+     Kingdon, 26-Aug-2019.) $)
   addasspig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
       ( ( A +N B ) +N C ) = ( A +N ( B +N C ) ) ) $=
     ( cnpi wcel w3a coa co cpli com wceq pinn nnaass syl3an wa addclpi addpiord
@@ -58059,13 +57999,13 @@ $)
     UETUFUG $.
 
   $( Multiplication of positive integers is commutative.  (Contributed by Jim
-     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+     Kingdon, 26-Aug-2019.) $)
   mulcompig $p |- ( ( A e. N. /\ B e. N. ) -> ( A .N B ) = ( B .N A ) ) $=
     ( cnpi wcel wa comu cmi com wceq pinn nnmcom syl2an mulpiord ancoms 3eqtr4d
     co ) ACDZBCDZEABFPZBAFPZABGPBAGPZQAHDBHDSTIRAJBJABKLABMRQUATIBAMNO $.
 
   $( Multiplication of positive integers is associative.  (Contributed by Jim
-     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+     Kingdon, 26-Aug-2019.) $)
   mulasspig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. )
       -> ( ( A .N B ) .N C ) = ( A .N ( B .N C ) ) ) $=
     ( cnpi wcel w3a comu co cmi com wceq pinn nnmass syl3an wa mulclpi mulpiord
@@ -58076,7 +58016,7 @@ $)
     UETUFUG $.
 
   $( Multiplication of positive integers is distributive.  (Contributed by Jim
-     Kingdon, 26-Aug-2019.)  (New usage is discouraged.) $)
+     Kingdon, 26-Aug-2019.) $)
   distrpig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. )
       -> ( A .N ( B +N C ) ) = ( ( A .N B ) +N ( A .N C ) ) ) $=
     ( cnpi wcel w3a coa co comu cpli cmi wceq pinn nndi mulpiord addpiord eqtrd
@@ -58087,7 +58027,7 @@ $)
     VBDEVCVHLVGABTACTVAVBPUFVFVGVAUPVBUQGABOACOUGQUJUH $.
 
   $( Addition cancellation law for positive integers.  (Contributed by Jim
-     Kingdon, 27-Aug-2019.)  (New usage is discouraged.) $)
+     Kingdon, 27-Aug-2019.) $)
   addcanpig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
                  ( ( A +N B ) = ( A +N C ) <-> B = C ) ) $=
     ( cnpi wcel w3a cpli co wceq coa addpiord 3adant3 3adant2 eqeq12d wi nnacan
@@ -58096,7 +58036,7 @@ $)
     QEZUNUKOARBRCRUOUPUQFUNUKABCPSTUABCAGUBUC $.
 
   $( Multiplication cancellation law for positive integers.  (Contributed by
-     Jim Kingdon, 29-Aug-2019.)  (New usage is discouraged.) $)
+     Jim Kingdon, 29-Aug-2019.) $)
   mulcanpig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
                  ( ( A .N B ) = ( A .N C ) <-> B = C ) ) $=
     ( cnpi wcel w3a cmi co wceq wi wa comu mulpiord adantr adantlr eqeq12d pinn
@@ -58107,7 +58047,7 @@ $)
     VGUOVIVMATUAVLVMKVFVAABCUBUCUDUEUFUGUHUKUIUJULBCAGUMUN $.
 
   $( There is no identity element for addition on positive integers.
-     (Contributed by NM, 28-Nov-1995.)  (New usage is discouraged.) $)
+     (Contributed by NM, 28-Nov-1995.) $)
   addnidpig $p |- ( ( A e. N. /\ B e. N. ) -> -. ( A +N B ) = A ) $=
     ( cnpi wcel wa cpli co wceq coa com wn pinn c0 elni2 wi nnaordi nna0 eleq1d
     word nnord ordirr eleq2 notbid syl5ibrcom sylbid adantl syld expcom sylan2b
@@ -58120,7 +58060,7 @@ $)
     $d x A $.  $d x B $.
     $( Ordering on positive integers in terms of existence of sum.
        (Contributed by NM, 15-Mar-1996.)  (Revised by Mario Carneiro,
-       14-Jun-2013.)  (New usage is discouraged.) $)
+       14-Jun-2013.) $)
     ltexpi $p |- ( ( A e. N. /\ B e. N. ) ->
                ( A <N B <-> E. x e. N. ( A +N x ) = B ) ) $=
       ( cnpi wcel wa c0 cv coa wceq com wrex clti wbr cpli pinn nnaordex syl2an
@@ -58131,7 +58071,7 @@ $)
   $}
 
   $( Ordering property of addition for positive integers.  (Contributed by Jim
-     Kingdon, 31-Aug-2019.)  (New usage is discouraged.) $)
+     Kingdon, 31-Aug-2019.) $)
   ltapig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
       ( A <N B <-> ( C +N A ) <N ( C +N B ) ) ) $=
     ( cnpi wcel clti wbr cpli co wb wa coa com pinn nnaord ltpiord addclpi wceq
@@ -58142,7 +58082,7 @@ $)
     VFUPVARVECBTUDUEUIUFUGUHUJ $.
 
   $( Ordering property of multiplication for positive integers.  (Contributed
-     by Jim Kingdon, 31-Aug-2019.)  (New usage is discouraged.) $)
+     by Jim Kingdon, 31-Aug-2019.) $)
   ltmpig $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
       ( A <N B <-> ( C .N A ) <N ( C .N B ) ) ) $=
     ( cnpi wcel clti wbr cmi co wb wa comu com pinn syl2an ltpiord mulclpi wceq
@@ -58153,8 +58093,7 @@ $)
     UKVFVBVGJVAABPSVAVFVEVJJZVAUSUTVPVAUSKZVAUTKZKZVEVCVDEZVJVQVCDEVDDEVEVTJVRC
     AQCBQVCVDPOVSVCVHVDVIVQVCVHRVRCATSVRVDVIRVQCBTULUMUNUOUPUQUR $.
 
-  $( One is less than two (one plus one).  (Contributed by NM, 13-Mar-1996.)
-     (New usage is discouraged.) $)
+  $( One is less than two (one plus one).  (Contributed by NM, 13-Mar-1996.) $)
   1lt2pi $p |- 1o <N ( 1o +N 1o ) $=
     ( c1o cpli co clti wbr wcel coa c0 com wceq 1onn nna0 ax-mp 0lt1o wb peano1
     nnaord cnpi 1pi mp2an mp3an mpbi eqeltrri addpiord eleqtrri addclpi ltpiord
@@ -58162,7 +58101,7 @@ $)
     KHAAQUAUBUCARFZUQUIULJSSAAUDTUEUQUIRFZUJUKOSUQUQURSSAAUFTAUIUGTUH $.
 
   $( No positive integer is less than one.  (Contributed by Jim Kingdon,
-     31-Aug-2019.)  (New usage is discouraged.) $)
+     31-Aug-2019.) $)
   nlt1pig $p |- ( A e. N. -> -. A <N 1o ) $=
     ( cnpi wcel c0 wne c1o clti wbr wn com elni simprbi wceq wa noel wo ltpiord
     wb 1pi mpan2 csuc df-1o eleq2i elsucg syl5bb biimpa ord mpi ex necon3ad mpd
@@ -58179,8 +58118,7 @@ $)
        ordered pairs determined by the equivalence relation ` ~Q `
        ( ~ df-enq ).  (Analogous remarks apply to the other "pre-" operations
        in the complex number construction that follows.)  From Proposition
-       9-2.3 of [Gleason] p. 117.  (Contributed by NM, 28-Aug-1995.)
-       (New usage is discouraged.) $)
+       9-2.3 of [Gleason] p. 117.  (Contributed by NM, 28-Aug-1995.) $)
     df-plpq $a |- +pQ = ( x e. ( N. X. N. ) , y e. ( N. X. N. ) |->
       <. ( ( ( 1st ` x ) .N ( 2nd ` y ) ) +N
            ( ( 1st ` y ) .N ( 2nd ` x ) ) ) ,
@@ -58189,8 +58127,7 @@ $)
     $( Define pre-multiplication on positive fractions.  This is a "temporary"
        set used in the construction of complex numbers, and is intended to be
        used only by the construction.  From Proposition 9-2.4 of [Gleason]
-       p. 119.  (Contributed by NM, 28-Aug-1995.)
-       (New usage is discouraged.) $)
+       p. 119.  (Contributed by NM, 28-Aug-1995.) $)
     df-mpq $a |- .pQ = ( x e. ( N. X. N. ) , y e. ( N. X. N. ) |->
         <. ( ( 1st ` x ) .N ( 1st ` y ) ) ,
            ( ( 2nd ` x ) .N ( 2nd ` y ) ) >. ) $.
@@ -58198,8 +58135,7 @@ $)
     $( Define pre-ordering relation on positive fractions.  This is a
        "temporary" set used in the construction of complex numbers, and is
        intended to be used only by the construction.  Similar to Definition 5
-       of [Suppes] p. 162.  (Contributed by NM, 28-Aug-1995.)
-       (New usage is discouraged.) $)
+       of [Suppes] p. 162.  (Contributed by NM, 28-Aug-1995.) $)
     df-ltpq $a |- <pQ = { <. x , y >. |
       ( ( x e. ( N. X. N. ) /\ y e. ( N. X. N. ) ) /\
         ( ( 1st ` x ) .N ( 2nd ` y ) ) <N ( ( 1st ` y ) .N ( 2nd ` x ) ) ) } $.
@@ -58207,8 +58143,7 @@ $)
     $( Define equivalence relation for positive fractions.  This is a
        "temporary" set used in the construction of complex numbers, and is
        intended to be used only by the construction.  From Proposition 9-2.1 of
-       [Gleason] p. 117.  (Contributed by NM, 27-Aug-1995.)
-       (New usage is discouraged.) $)
+       [Gleason] p. 117.  (Contributed by NM, 27-Aug-1995.) $)
     df-enq $a |- ~Q = { <. x , y >. | ( ( x e. ( N. X. N. ) /\
                    y e. ( N. X. N. ) ) /\ E. z E. w E. v E. u
                    ( ( x = <. z , w >. /\ y = <. v , u >. ) /\
@@ -58217,13 +58152,13 @@ $)
     $( Define class of positive fractions.  This is a "temporary" set used in
        the construction of complex numbers, and is intended to be used only by
        the construction.  From Proposition 9-2.2 of [Gleason] p. 117.
-       (Contributed by NM, 16-Aug-1995.)  (New usage is discouraged.) $)
+       (Contributed by NM, 16-Aug-1995.) $)
     df-nqqs $a |- Q. = ( ( N. X. N. ) /. ~Q ) $.
 
     $( Define addition on positive fractions.  This is a "temporary" set used
        in the construction of complex numbers, and is intended to be used only
        by the construction.  From Proposition 9-2.3 of [Gleason] p. 117.
-       (Contributed by NM, 24-Aug-1995.)  (New usage is discouraged.) $)
+       (Contributed by NM, 24-Aug-1995.) $)
     df-plqqs $a |- +Q = { <. <. x , y >. , z >. | ( ( x e. Q. /\ y e. Q. ) /\
       E. w E. v E. u E. f (
          ( x = [ <. w , v >. ] ~Q /\ y = [ <. u , f >. ] ~Q ) /\
@@ -58232,7 +58167,7 @@ $)
     $( Define multiplication on positive fractions.  This is a "temporary" set
        used in the construction of complex numbers, and is intended to be used
        only by the construction.  From Proposition 9-2.4 of [Gleason] p. 119.
-       (Contributed by NM, 24-Aug-1995.)  (New usage is discouraged.) $)
+       (Contributed by NM, 24-Aug-1995.) $)
     df-mqqs $a |- .Q = { <. <. x , y >. , z >. | ( ( x e. Q. /\ y e. Q. ) /\
       E. w E. v E. u E. f (
          ( x = [ <. w , v >. ] ~Q /\ y = [ <. u , f >. ] ~Q ) /\
@@ -58241,7 +58176,7 @@ $)
     $( Define positive fraction constant 1.  This is a "temporary" set used in
        the construction of complex numbers, and is intended to be used only by
        the construction.  From Proposition 9-2.2 of [Gleason] p. 117.
-       (Contributed by NM, 29-Oct-1995.)  (New usage is discouraged.) $)
+       (Contributed by NM, 29-Oct-1995.) $)
     df-1nqqs $a |- 1Q = [ <. 1o , 1o >. ] ~Q $.
 
     $( Define reciprocal on positive fractions.  It means the same thing as one
@@ -58250,15 +58185,14 @@ $)
        of complex numbers, and is intended to be used only by the
        construction.  From Proposition 9-2.5 of [Gleason] p. 119, who uses an
        asterisk to denote this unary operation.  (Contributed by Jim Kingdon,
-       20-Sep-2019.)  (New usage is discouraged.) $)
+       20-Sep-2019.) $)
     df-rq $a |- *Q = { <. x , y >. |
         ( x e. Q. /\ y e. Q. /\ ( x .Q y ) = 1Q ) } $.
 
     $( Define ordering relation on positive fractions.  This is a "temporary"
        set used in the construction of complex numbers, and is intended to be
        used only by the construction.  Similar to Definition 5 of [Suppes]
-       p. 162.  (Contributed by NM, 13-Feb-1996.)
-       (New usage is discouraged.) $)
+       p. 162.  (Contributed by NM, 13-Feb-1996.) $)
     df-ltnqqs $a |- <Q = { <. x , y >. | ( ( x e. Q. /\ y e. Q. ) /\
        E. z E. w E. v E. u
        ( ( x = [ <. z , w >. ] ~Q /\ y = [ <. v , u >. ] ~Q ) /\
@@ -58268,8 +58202,7 @@ $)
   ${
     $d x y z w v u f $.
     $( Alternative definition of pre-addition on positive fractions.
-       (Contributed by Jim Kingdon, 12-Sep-2019.)
-       (New usage is discouraged.) $)
+       (Contributed by Jim Kingdon, 12-Sep-2019.) $)
     dfplpq2 $p |- +pQ = { <. <. x , y >. , z >. | ( ( x e. ( N. X. N. ) /\
         y e. ( N. X. N. ) ) /\ E. w E. v E. u E. f ( ( x = <. w , v >. /\
         y = <. u , f >. ) /\ z = <. ( ( w .N f ) +N ( v .N u ) ) ,
@@ -58296,8 +58229,7 @@ $)
   ${
     $d x y z w v u f $.
     $( Alternative definition of pre-multiplication on positive fractions.
-       (Contributed by Jim Kingdon, 13-Sep-2019.)
-       (New usage is discouraged.) $)
+       (Contributed by Jim Kingdon, 13-Sep-2019.) $)
     dfmpq2 $p |- .pQ = { <. <. x , y >. , z >. | ( ( x e. ( N. X. N. ) /\ y
         e. ( N. X. N. ) ) /\ E. w E. v E. u E. f ( ( x = <. w , v >. /\
         y = <. u , f >. ) /\ z = <. ( w .N u ) , ( v .N f ) >. ) ) } $=
@@ -58318,8 +58250,7 @@ $)
     $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
     $d x y z w v u D $.
     $( Equivalence relation for positive fractions in terms of positive
-       integers.  (Contributed by NM, 27-Aug-1995.)
-       (New usage is discouraged.) $)
+       integers.  (Contributed by NM, 27-Aug-1995.) $)
     enqbreq $p |- ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. ) ) ->
           ( <. A , B >. ~Q <. C , D >. <-> ( A .N D ) = ( B .N C ) ) ) $=
       ( vx vy vz vw vv vu cmi ceq cnpi df-enq ecopoveq ) EFGHIJABCDKLMEFGHIJNO
@@ -58328,8 +58259,7 @@ $)
 
   ${
     $( Equivalence relation for positive fractions in terms of positive
-       integers.  (Contributed by Mario Carneiro, 8-May-2013.)
-       (New usage is discouraged.) $)
+       integers.  (Contributed by Mario Carneiro, 8-May-2013.) $)
     enqbreq2 $p |- ( ( A e. ( N. X. N. ) /\ B e. ( N. X. N. ) ) ->
           ( A ~Q B <-> ( ( 1st ` A ) .N ( 2nd ` B ) ) =
                        ( ( 1st ` B ) .N ( 2nd ` A ) ) ) ) $=
@@ -58344,8 +58274,7 @@ $)
     $d x y z w v u $.
     $( The equivalence relation for positive fractions is an equivalence
        relation.  Proposition 9-2.1 of [Gleason] p. 117.  (Contributed by NM,
-       27-Aug-1995.)  (Revised by Mario Carneiro, 6-Jul-2015.)
-       (New usage is discouraged.) $)
+       27-Aug-1995.)  (Revised by Mario Carneiro, 6-Jul-2015.) $)
     enqer $p |- ~Q Er ( N. X. N. ) $=
       ( vx vy vz vw vv cmi ceq cnpi df-enq mulcompig mulclpi mulasspig wcel w3a
       vu cv co wceq mulcanpig biimpd ecopoverg ) ABCDEOFGHABCDEOIAPZBPZJUBUCKUB
@@ -58353,8 +58282,7 @@ $)
   $}
 
   $( Equivalence class equality of positive fractions in terms of positive
-     integers.  (Contributed by NM, 29-Nov-1995.)
-     (New usage is discouraged.) $)
+     integers.  (Contributed by NM, 29-Nov-1995.) $)
   enqeceq $p |- ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. ) ) ->
                 ( [ <. A , B >. ] ~Q = [ <. C , D >. ] ~Q <->
                 ( A .N D ) = ( B .N C ) ) ) $=
@@ -58365,7 +58293,7 @@ $)
   ${
     $d x y z w v u $.
     $( The equivalence relation for positive fractions exists.  (Contributed by
-       NM, 3-Sep-1995.)  (New usage is discouraged.) $)
+       NM, 3-Sep-1995.) $)
     enqex $p |- ~Q e. _V $=
       ( vx vy vz vw vv vu ceq cnpi cxp niex xpex cv wcel wa cop wceq cmi co wex
       copab df-enq opabssxp eqsstri ssexi ) GHHIZUEIZUEUEHHJJKZUGKGALZUEMBLZUEM
@@ -58374,7 +58302,7 @@ $)
   $}
 
   $( The equivalence relation for positive fractions is decidable.
-     (Contributed by Jim Kingdon, 7-Sep-2019.)  (New usage is discouraged.) $)
+     (Contributed by Jim Kingdon, 7-Sep-2019.) $)
   enqdc $p |- ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. ) ) ->
       DECID <. A , B >. ~Q <. C , D >. ) $=
     ( cnpi wcel wa cop ceq wbr wdc cmi co wceq mulclpi pinn nndceq syl2an an42s
@@ -58383,7 +58311,7 @@ $)
     BUC $.
 
   $( The equivalence relation for positive fractions is decidable.
-     (Contributed by Jim Kingdon, 7-Sep-2019.)  (New usage is discouraged.) $)
+     (Contributed by Jim Kingdon, 7-Sep-2019.) $)
   enqdc1 $p |- ( ( ( A e. N. /\ B e. N. ) /\ C e. ( N. X. N. ) ) ->
       DECID <. A , B >. ~Q C ) $=
     ( cnpi wcel wa cxp cop ceq wbr wdc c1st cfv xp1st xp2nd jca enqdc sylan2 wb
@@ -58394,15 +58322,13 @@ $)
   ${
     $d x y z w u v $.
     $( The class of positive fractions exists.  (Contributed by NM,
-       16-Aug-1995.)  (Revised by Mario Carneiro, 27-Apr-2013.)
-       (New usage is discouraged.) $)
+       16-Aug-1995.)  (Revised by Mario Carneiro, 27-Apr-2013.) $)
     nqex $p |- Q. e. _V $=
       ( cnq cnpi cxp ceq cqs cvv df-nqqs niex xpex qsex eqeltri ) ABBCZDEFGLDBB
       HHIJK $.
 
     $( The empty set is not a positive fraction.  (Contributed by NM,
-       24-Aug-1995.)  (Revised by Mario Carneiro, 27-Apr-2013.)
-       (New usage is discouraged.) $)
+       24-Aug-1995.)  (Revised by Mario Carneiro, 27-Apr-2013.) $)
     0nnq $p |- -. (/) e. Q. $=
       ( c0 cnq wcel cnpi cxp ceq cqs wne neirr cdm wceq enqer erdm ax-mp elqsn0
       wer mpan mto df-nqqs eleq2i mtbir ) ABCADDEZFGZCZUDAAHZAIFJUBKZUDUEUBFPUF
@@ -58410,7 +58336,7 @@ $)
 
     $( Positive fraction 'less than' is a relation on positive fractions.
        (Contributed by NM, 14-Feb-1996.)  (Revised by Mario Carneiro,
-       27-Apr-2013.)  (New usage is discouraged.) $)
+       27-Apr-2013.) $)
     ltrelnq $p |- <Q C_ ( Q. X. Q. ) $=
       ( vx vy vz vw vv vu cltq cv cnq wcel wa cop ceq cec wceq cmi clti wbr wex
       co copab cxp df-ltnqqs opabssxp eqsstri ) GAHZIJBHZIJKUFCHZDHZLMNOUGEHZFH
@@ -58419,8 +58345,7 @@ $)
 
   ${
     $d x y $.
-    $( The positive fraction 'one'.  (Contributed by NM, 29-Oct-1995.)
-       (New usage is discouraged.) $)
+    $( The positive fraction 'one'.  (Contributed by NM, 29-Oct-1995.) $)
     1nq $p |- 1Q e. Q. $=
       ( c1o cop ceq cec cnpi cxp cqs c1q cnq wcel 1pi opelxpi mp2an enqex ax-mp
       ecelqsi df-1nqqs df-nqqs 3eltr4i ) AABZCDZEEFZCGZHITUBJZUAUCJAEJZUEUDKKAA
@@ -58432,7 +58357,7 @@ $)
     $d x y z G $.  $d x y z R $.  $d x y z S $.
 
     $( Lemma showing compatibility of addition.  (Contributed by NM,
-       27-Aug-1995.)  (New usage is discouraged.) $)
+       27-Aug-1995.) $)
     addcmpblnq $p |- ( ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. )
              ) /\ ( ( F e. N. /\ G e. N. ) /\ ( R e. N. /\ S e. N. ) ) ) ->
                 ( ( ( A .N D ) = ( B .N C ) /\ ( F .N S ) = ( G .N R ) ) ->
@@ -58460,7 +58385,7 @@ $)
       RVIVSVT $.
 
     $( Lemma showing compatibility of multiplication.  (Contributed by NM,
-       27-Aug-1995.)  (New usage is discouraged.) $)
+       27-Aug-1995.) $)
     mulcmpblnq $p |- ( ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. )
              ) /\ ( ( F e. N. /\ G e. N. ) /\ ( R e. N. /\ S e. N. ) ) ) ->
                 ( ( ( A .N D ) = ( B .N C ) /\ ( F .N S ) = ( G .N R ) ) ->
@@ -58491,7 +58416,7 @@ $)
     $d x y z w v u t s f g h a b c d C $.
     $d x y z w v u t s f g h a b c d D $.
     $( Addition of positive fractions in terms of positive integers.
-       (Contributed by NM, 28-Aug-1995.)  (New usage is discouraged.) $)
+       (Contributed by NM, 28-Aug-1995.) $)
     addpipqqs $p |- ( ( ( A e. N. /\ B e. N. ) /\
                      ( C e. N. /\ D e. N. ) ) ->
                 ( [ <. A , B >. ] ~Q +Q [ <. C , D >. ] ~Q ) =
@@ -58516,8 +58441,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.  $d C y z $.  $d D y z $.
     $( Multiplication of positive fractions in terms of positive integers.
-       (Contributed by Mario Carneiro, 8-May-2013.)
-       (New usage is discouraged.) $)
+       (Contributed by Mario Carneiro, 8-May-2013.) $)
     mulpipq2 $p |- ( ( A e. ( N. X. N. ) /\ B e. ( N. X. N. ) ) ->
       ( A .pQ B ) = <. ( ( 1st ` A ) .N ( 1st ` B ) ) ,
                        ( ( 2nd ` A ) .N ( 2nd ` B ) ) >. ) $=
@@ -58531,7 +58455,7 @@ $)
 
     $( Multiplication of positive fractions in terms of positive integers.
        (Contributed by NM, 28-Aug-1995.)  (Revised by Mario Carneiro,
-       8-May-2013.)  (New usage is discouraged.) $)
+       8-May-2013.) $)
     mulpipq $p |- ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. ) ) ->
           ( <. A , B >. .pQ <. C , D >. ) = <. ( A .N C ) , ( B .N D ) >. ) $=
       ( cnpi wcel wa cop cmpq co c1st cfv cmi c2nd cxp opelxpi op1stg oveqan12d
@@ -58546,7 +58470,7 @@ $)
     $d x y z w v u t s f g h a b c d C $.
     $d x y z w v u t s f g h a b c d D $.
     $( Multiplication of positive fractions in terms of positive integers.
-       (Contributed by NM, 28-Aug-1995.)  (New usage is discouraged.) $)
+       (Contributed by NM, 28-Aug-1995.) $)
     mulpipqqs $p |- ( ( ( A e. N. /\ B e. N. ) /\
                      ( C e. N. /\ D e. N. ) ) ->
                 ( [ <. A , B >. ] ~Q .Q [ <. C , D >. ] ~Q ) =
@@ -58573,8 +58497,7 @@ $)
     $d A x y z w v u f $.  $d B x y z w v u f $.  $d C x y z w v u f $.
     $d D x y z w v u f $.
     $( Ordering of positive fractions in terms of positive integers.
-       (Contributed by Jim Kingdon, 14-Sep-2019.)
-       (New usage is discouraged.) $)
+       (Contributed by Jim Kingdon, 14-Sep-2019.) $)
     ordpipqqs $p |- ( ( ( A e. N. /\ B e. N. ) /\ ( C e. N. /\ D e. N. ) ) ->
         ( [ <. A , B >. ] ~Q <Q [ <. C , D >. ] ~Q <->
           ( A .N D ) <N ( B .N C ) ) ) $=
@@ -58597,7 +58520,7 @@ $)
   ${
     $d x y z w A $.  $d x y z w B $.
     $( Closure of addition on positive fractions.  (Contributed by NM,
-       29-Aug-1995.)  (New usage is discouraged.) $)
+       29-Aug-1995.) $)
     addclnq $p |- ( ( A e. Q. /\ B e. Q. ) -> ( A +Q B ) e. Q. ) $=
       ( vx vy vz vw cnq wcel wa cplq co cnpi ceq cv cop cec df-nqqs cmi mulclpi
       wceq cxp cqs oveq1 eleq1d oveq2 cpli addpipqqs addclpi an42s ad2ant2l jca
@@ -58609,7 +58532,7 @@ $)
       QUS $.
 
     $( Closure of multiplication on positive fractions.  (Contributed by NM,
-       29-Aug-1995.)  (New usage is discouraged.) $)
+       29-Aug-1995.) $)
     mulclnq $p |- ( ( A e. Q. /\ B e. Q. ) -> ( A .Q B ) e. Q. ) $=
       ( vx vy vz vw cnq wcel wa cmq co cnpi ceq cop cec df-nqqs wceq eleq1d cmi
       cv cxp oveq1 oveq2 mulpipqqs mulclpi anim12i an4s opelxpi ecelqsi eqeltrd
@@ -58623,8 +58546,7 @@ $)
   ${
     $d A a v w x $.
     $( Decomposition of a positive fraction into numerator and denominator.
-       Lemma for ~ dmaddpq .  (Contributed by Jim Kingdon, 15-Sep-2019.)
-       (New usage is discouraged.) $)
+       Lemma for ~ dmaddpq .  (Contributed by Jim Kingdon, 15-Sep-2019.) $)
     dmaddpqlem $p |- ( x e. Q. -> E. w E. v x = [ <. w , v >. ] ~Q ) $=
       ( va cv cop ceq cec wceq wex cnpi cxp cqs cnq wcel wrex elqsi 2eximi syl
       wa elxpi ax-ia1 anim1i 19.41vv sylibr ax-ia2 eceq1 adantr eqtrd rexlimiva
@@ -58636,7 +58558,7 @@ $)
     $( Decomposition of a positive fraction into numerator and denominator.
        Similar to ~ dmaddpqlem but also shows that the numerator and
        denominator are positive integers.  (Contributed by Jim Kingdon,
-       20-Sep-2019.)  (New usage is discouraged.) $)
+       20-Sep-2019.) $)
     nqpi $p |- ( A e. Q. ->
         E. w E. v ( ( w e. N. /\ v e. N. ) /\ A = [ <. w , v >. ] ~Q ) ) $=
       ( va cv cnpi wcel cop ceq cec wceq wex cxp cqs cnq wrex elqsi elxpi syl
@@ -58650,7 +58572,7 @@ $)
   ${
     $d a x y z v w u f $.
     $( Domain of addition on positive fractions.  (Contributed by NM,
-       24-Aug-1995.)  (New usage is discouraged.) $)
+       24-Aug-1995.) $)
     dmaddpq $p |- dom +Q = ( Q. X. Q. ) $=
       ( vx vy vw vv vu vf vz cplq cdm cv cnq wcel copab ceq cec wceq wex sylibr
       wa cvv cxp cop cplpq co coprab dmoprab df-plqqs dmaddpqlem anim12i ee4anv
@@ -58663,7 +58585,7 @@ $)
       AVCVNWFGVBVDVEVFABKKVGVH $.
 
     $( Domain of multiplication on positive fractions.  (Contributed by NM,
-       24-Aug-1995.)  (New usage is discouraged.) $)
+       24-Aug-1995.) $)
     dmmulpq $p |- dom .Q = ( Q. X. Q. ) $=
       ( vx vy vw vv vu vf vz cmq cdm cv cnq wcel wa ceq cec wceq wex sylibr cvv
       copab cxp cop cmpq coprab dmoprab df-mqqs dmeqi dmaddpqlem anim12i ee4anv
@@ -58679,7 +58601,7 @@ $)
   ${
     $d A w x y z $.  $d B w z $.
     $( Addition of positive fractions is commutative.  (Contributed by Jim
-       Kingdon, 15-Sep-2019.)  (New usage is discouraged.) $)
+       Kingdon, 15-Sep-2019.) $)
     addcomnqg $p |- ( ( A e. Q. /\ B e. Q. ) -> ( A +Q B ) = ( B +Q A ) ) $=
       ( vx vy vz vw cnq cv cmi co cpli cplq cnpi addpipqqs wcel wa wceq mulclpi
       mulcompig ancoms ceq df-nqqs oveqan12d an42s ad2ant2rl ad2ant2lr ad2ant2l
@@ -58694,7 +58616,7 @@ $)
     $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
     $d x y z w v u f g h $.
     $( Addition of positive fractions is associative.  (Contributed by Jim
-       Kingdon, 16-Sep-2019.)  (New usage is discouraged.) $)
+       Kingdon, 16-Sep-2019.) $)
     addassnqg $p |- ( ( A e. Q. /\ B e. Q. /\ C e. Q. ) ->
         ( ( A +Q B ) +Q C ) = ( A +Q ( B +Q C ) ) ) $=
       ( vx cv cmi co cnpi cpli addpipqqs wcel mulclpi addclpi syl2anc mulcompig
@@ -58752,8 +58674,7 @@ $)
   ${
     $d A x y z $.  $d B x y z $.  $d C x y z $.
     $( Lemma for distributive law: cancellation of common factor.  (Contributed
-       by NM, 2-Sep-1995.)  (Revised by Mario Carneiro, 8-May-2013.)
-       (New usage is discouraged.) $)
+       by NM, 2-Sep-1995.)  (Revised by Mario Carneiro, 8-May-2013.) $)
     mulcanenq $p |- ( ( A e. N. /\ B e. N. /\ C e. N. ) ->
       <. ( A .N B ) , ( A .N C ) >. ~Q <. B , C >. ) $=
       ( vx vy vz cnpi wcel w3a cmi co cop ceq wbr wceq simp1 cv adantl mulclpi
@@ -58777,7 +58698,7 @@ $)
     $d A u v w x y z $.  $d B u v w x y z $.  $d C u v w x y z $.
     $d f g h u v w x y z $.
     $( Multiplication of positive fractions is distributive.  (Contributed by
-       Jim Kingdon, 17-Sep-2019.)  (New usage is discouraged.) $)
+       Jim Kingdon, 17-Sep-2019.) $)
     distrnqg $p |- ( ( A e. Q. /\ B e. Q. /\ C e. Q. ) ->
         ( A .Q ( B +Q C ) ) = ( ( A .Q B ) +Q ( A .Q C ) ) ) $=
       ( vf vg vh ceq cnpi cv cmi co cpli wcel cop cec w3a wceq mulclpi adantl
@@ -58809,8 +58730,7 @@ $)
   $}
 
   ${
-    $( The equivalence class of ratio 1.  (Contributed by NM, 4-Mar-1996.)
-       (New usage is discouraged.) $)
+    $( The equivalence class of ratio 1.  (Contributed by NM, 4-Mar-1996.) $)
     1qec $p |- ( A e. N. -> 1Q = [ <. A , A >. ] ~Q ) $=
       ( cnpi wcel c1q c1o cop ceq cec df-1nqqs cmi wceq 1pi mulcanenqec mp3an23
       co wa mulidpi jca opeq12 eceq1 3syl eqtr3d syl5eq ) ABCZDEEFGHZAAFZGHZIUD
@@ -58821,7 +58741,7 @@ $)
   ${
     $d x y A $.
     $( Multiplication identity element for positive fractions.  (Contributed by
-       NM, 3-Mar-1996.)  (New usage is discouraged.) $)
+       NM, 3-Mar-1996.) $)
     mulidnq $p |- ( A e. Q. -> ( A .Q 1Q ) = A ) $=
       ( vx vy cv cop ceq cec c1q cmq co wceq cnpi cnq df-nqqs c1o cmi mulcompig
       wcel 1pi mpan oveq1 id eqeq12d wa df-1nqqs oveq2i mulpipqqs syl5eq adantr
@@ -58835,7 +58755,7 @@ $)
   ${
     $d x y z A $.
     $( Existence of positive fraction reciprocal.  (Contributed by Jim Kingdon,
-       20-Sep-2019.)  (New usage is discouraged.) $)
+       20-Sep-2019.) $)
     recex $p |- ( A e. Q. -> E. y ( y e. Q. /\ ( A .Q y ) = 1Q ) ) $=
       ( vx vz cv cnq wcel cop ceq cec cmq co c1q wceq wa wex df-nqqs eqeq1d syl
       cnpi oveq1 anbi2d exbidv cxp cqs opelxpi ancoms enqex syl6eleqr mulcompig
@@ -58851,8 +58771,7 @@ $)
   ${
     $d x y A $.  $d x y B $.  $d x y z w v $.
     $( Relationship between reciprocal and multiplication on positive
-       fractions.  (Contributed by Jim Kingdon, 19-Sep-2019.)
-       (New usage is discouraged.) $)
+       fractions.  (Contributed by Jim Kingdon, 19-Sep-2019.) $)
     recmulnqg $p |- ( ( A e. Q. /\ B e. Q. ) ->
       ( ( *Q ` A ) = B <-> ( A .Q B ) = 1Q ) ) $=
       ( vy vx vz vw vv cnq wcel wa crq cfv wceq cmq co c1q oveq1 eqeq1d copab
@@ -58867,8 +58786,7 @@ $)
   ${
     $d A x y z w $.
     $( Closure law for positive fraction reciprocal.  (Contributed by NM,
-       6-Mar-1996.)  (Revised by Mario Carneiro, 8-May-2013.)
-       (New usage is discouraged.) $)
+       6-Mar-1996.)  (Revised by Mario Carneiro, 8-May-2013.) $)
     recclnq $p |- ( A e. Q. -> ( *Q ` A ) e. Q. ) $=
       ( vy cnq wcel cv cmq co c1q wa wex crq cfv recex recmulnqg biimpar eleq1a
       wceq wi ad2antlr mpd expl exlimdv ) ACDZBEZCDZAUDFGHQZIZBJAKLZCDZBAMUCUGU
@@ -58876,15 +58794,13 @@ $)
   $}
 
   $( A positive fraction times its reciprocal is 1.  (Contributed by NM,
-     6-Mar-1996.)  (Revised by Mario Carneiro, 8-May-2013.)
-     (New usage is discouraged.) $)
+     6-Mar-1996.)  (Revised by Mario Carneiro, 8-May-2013.) $)
   recidnq $p |- ( A e. Q. -> ( A .Q ( *Q ` A ) ) = 1Q ) $=
     ( cnq wcel crq cfv cmq co c1q wceq recclnq wa eqid recmulnqg mpbii mpdan )
     ABCZADEZBCZAQFGHIZAJPRKQQISQLAQMNO $.
 
   $( Reciprocal of reciprocal of positive fraction.  (Contributed by NM,
-     26-Apr-1996.)  (Revised by Mario Carneiro, 29-Apr-2013.)
-     (New usage is discouraged.) $)
+     26-Apr-1996.)  (Revised by Mario Carneiro, 29-Apr-2013.) $)
   recrecnq $p |- ( A e. Q. -> ( *Q ` ( *Q ` A ) ) = A ) $=
     ( cnq wcel crq cfv wceq cmq c1q recclnq mulcomnqg mpancom recidnq recmulnqg
     co eqtrd wb mpbird ) ABCZADEZDEAFZSAGNZHFZRUAASGNZHSBCZRUAUCFAIZSAJKALOUDRT
@@ -58893,7 +58809,7 @@ $)
   ${
     $d A u v w z $.  $d B u v $.
     $( Trichotomy for positive fractions.  (Contributed by Jim Kingdon,
-       21-Sep-2019.)  (New usage is discouraged.) $)
+       21-Sep-2019.) $)
     nqtri3or $p |- ( ( A e. Q. /\ B e. Q. ) ->
         ( A <Q B \/ A = B \/ B <Q A ) ) $=
       ( vz vw vu vv cv cop ceq cltq wbr wceq w3o cnpi 3orbi123d wcel wa co clti
@@ -58910,8 +58826,7 @@ $)
   ${
     $d a b c d e f x y z w $.
     $( 'Less than' is a strict ordering on positive fractions.  (Contributed by
-       NM, 19-Feb-1996.)  (Revised by Mario Carneiro, 4-May-2013.)
-       (New usage is discouraged.) $)
+       NM, 19-Feb-1996.)  (Revised by Mario Carneiro, 4-May-2013.) $)
     ltsonq $p |- <Q Or Q. $=
       ( vx vy vz cnq cltq wtru cv wcel wbr ceq cnpi wceq wa cmi co clti mulclpi
       wb adantl syl2anc vw va vb vc vd ve vf wor cop cec df-nqqs breq12d notbid
@@ -58950,7 +58865,7 @@ $)
     $d C x y z w v u f g h $.
     $( Ordering property of addition for positive fractions.  Proposition
        9-2.6(ii) of [Gleason] p. 120.  (Contributed by Jim Kingdon,
-       22-Sep-2019.)  (New usage is discouraged.) $)
+       22-Sep-2019.) $)
     ltanqg $p |- ( ( A e. Q. /\ B e. Q. /\ C e. Q. ) ->
         ( A <Q B <-> ( C +Q A ) <Q ( C +Q B ) ) ) $=
       ( vf vg vh cv cltq wbr cplq co wb cnpi wceq wcel cmi cpli mulclpi syl2anc
@@ -58983,7 +58898,7 @@ $)
 
     $( Ordering property of multiplication for positive fractions.  Proposition
        9-2.6(iii) of [Gleason] p. 120.  (Contributed by Jim Kingdon,
-       22-Sep-2019.)  (New usage is discouraged.) $)
+       22-Sep-2019.) $)
     ltmnqg $p |- ( ( A e. Q. /\ B e. Q. /\ C e. Q. ) ->
       ( A <Q B <-> ( C .Q A ) <Q ( C .Q B ) ) ) $=
       ( vf vg cv cop ceq cec cltq wbr cmq co wb cnpi wceq wcel wa cmi caovcld
@@ -59009,7 +58924,7 @@ $)
   $}
 
   $( One is less than two (one plus one).  (Contributed by NM, 13-Mar-1996.)
-     (Revised by Mario Carneiro, 10-May-2013.)  (New usage is discouraged.) $)
+     (Revised by Mario Carneiro, 10-May-2013.) $)
   1lt2nq $p |- 1Q <Q ( 1Q +Q 1Q ) $=
     ( c1o cop ceq cec cmi co cpli c1q cplq cltq wbr clti cnpi wcel wceq oveq12i
     1pi 3brtr4i wb df-1nqqs 1lt2pi mulidpi ax-mp mulclpi mp2an ltmpig ordpipqqs
@@ -59021,8 +58936,7 @@ $)
   ${
     $d A r s t $.  $d B r s t $.
     $( The sum of two fractions is greater than one of them.  (Contributed by
-       NM, 14-Mar-1996.)  (Revised by Mario Carneiro, 10-May-2013.)
-       (New usage is discouraged.) $)
+       NM, 14-Mar-1996.)  (Revised by Mario Carneiro, 10-May-2013.) $)
     ltaddnq $p |- ( ( A e. Q. /\ B e. Q. ) -> A <Q ( A +Q B ) ) $=
       ( vr vs vt cnq wcel wa cplq co cltq wbr c1q cmq wb addclnq wceq adantl cv
       1nq 1lt2nq ltmnqg mp3an12 mulidnq distrnqg mp3an23 oveq12d 3brtr3d ax-ia2
@@ -59039,7 +58953,7 @@ $)
     $d f g h x y z w v u A $.  $d x y z w v u B $.
     $( Ordering on positive fractions in terms of existence of sum.  Definition
        in Proposition 9-2.6 of [Gleason] p. 119.  (Contributed by Jim Kingdon,
-       23-Sep-2019.)  (New usage is discouraged.) $)
+       23-Sep-2019.) $)
     ltexnqq $p |- ( ( A e. Q. /\ B e. Q. ) ->
         ( A <Q B <-> E. x e. Q. ( A +Q x ) = B ) ) $=
       ( vu cnq wcel wa cltq wbr cv cplq co wceq wrex cop ceq cec cnpi cmi syl
@@ -59077,7 +58991,7 @@ $)
   ${
     $d A x $.
     $( One-half of any positive fraction is a fraction.  (Contributed by Jim
-       Kingdon, 23-Sep-2019.)  (New usage is discouraged.) $)
+       Kingdon, 23-Sep-2019.) $)
     halfnqq $p |- ( A e. Q. -> E. x e. Q. ( x +Q x ) = A ) $=
       ( cnq wcel c1q cplq co crq cmq wceq 1nq mp2an ax-mp distrnqg mp3an oveq1i
       addclnq oveq2i mulidnq 3eqtr3i cfv wrex recclnq recidnq oveq12i mulassnqg
@@ -59092,8 +59006,7 @@ $)
 
     $( One-half of any positive fraction exists.  Lemma for Proposition
        9-2.6(i) of [Gleason] p. 120.  (Contributed by NM, 16-Mar-1996.)
-       (Revised by Mario Carneiro, 10-May-2013.)
-       (New usage is discouraged.) $)
+       (Revised by Mario Carneiro, 10-May-2013.) $)
     halfnq $p |- ( A e. Q. -> E. x ( x +Q x ) = A ) $=
       ( cnq wcel cv cplq co wceq wrex wex halfnqq rexex syl ) BCDAEZNFGBHZACIOA
       JABKOACLM $.
@@ -59102,15 +59015,14 @@ $)
   ${
     $d x A $.
     $( There is no smallest positive fraction.  (Contributed by Jim Kingdon,
-       24-Sep-2019.)  (New usage is discouraged.) $)
+       24-Sep-2019.) $)
     nsmallnqq $p |- ( A e. Q. -> E. x e. Q. x <Q A ) $=
       ( cnq wcel cv cplq co wceq wrex cltq wbr halfnqq ltaddnq anidms syl5ibcom
       breq2 reximia syl ) BCDAEZSFGZBHZACISBJKZACIABLUAUBACSCDZSTJKZUAUBUCUDSSM
       NTBSJPOQR $.
 
     $( There is no smallest positive fraction.  (Contributed by NM,
-       26-Apr-1996.)  (Revised by Mario Carneiro, 10-May-2013.)
-       (New usage is discouraged.) $)
+       26-Apr-1996.)  (Revised by Mario Carneiro, 10-May-2013.) $)
     nsmallnq $p |- ( A e. Q. -> E. x x <Q A ) $=
       ( cnq wcel cv cltq wbr wrex wex nsmallnqq rexex syl ) BCDAEBFGZACHMAIABJM
       ACKL $.
@@ -59120,7 +59032,7 @@ $)
     $d A x y z $.  $d B x y z $.
     $( There exists a number between any two positive fractions.  Proposition
        9-2.6(i) of [Gleason] p. 120.  (Contributed by Jim Kingdon,
-       24-Sep-2019.)  (New usage is discouraged.) $)
+       24-Sep-2019.) $)
     ltbtwnnqq $p |- ( A <Q B <-> E. x e. Q. ( A <Q x /\ x <Q B ) ) $=
       ( vy vz cltq wbr cv wa cnq wrex wcel cplq wceq ltrelnq brel simpld adantr
       co wb ltexnqq syl ibi wex ltaddnq sylan2 ancoms ax-ia1 ltanqg 3expa sylan
@@ -59136,8 +59048,7 @@ $)
 
     $( There exists a number between any two positive fractions.  Proposition
        9-2.6(i) of [Gleason] p. 120.  (Contributed by NM, 17-Mar-1996.)
-       (Revised by Mario Carneiro, 10-May-2013.)
-       (New usage is discouraged.) $)
+       (Revised by Mario Carneiro, 10-May-2013.) $)
     ltbtwnnq $p |- ( A <Q B <-> E. x ( A <Q x /\ x <Q B ) ) $=
       ( cv cltq wbr wa cnq wrex wcel wex df-rex ltbtwnnqq ltrelnq simprd adantr
       brel pm4.71ri exbii 3bitr4i ) BADZEFZUACEFZGZAHIUAHJZUDGZAKBCEFUDAKUDAHLA
@@ -59150,8 +59061,7 @@ $)
        provide the converse as a theorem because we only need the forward
        direction, but if we did need the converse it would be easy to prove
        ` ( A e. Q. /\ B e. Q. ) -> ( A <Q B <-> ( *Q `` B ) <Q ( *Q `` A ) ) `
-       (Contributed by Jim Kingdon, 24-Sep-2019.)
-       (New usage is discouraged.) $)
+       (Contributed by Jim Kingdon, 24-Sep-2019.) $)
     ltrnqi $p |- ( A <Q B -> ( *Q ` B ) <Q ( *Q ` A ) ) $=
       ( cltq wbr crq cfv cnq wcel wb cmq recclnq mulclnq wceq mulcomnqg syl2anc
       co mulassnqg c1q oveq2d syl wa ltrelnq syl2an ltmnqg ax-ia1 adantr adantl
@@ -59177,18 +59087,16 @@ $)
 
        A Dedekind cut is an ordered pair of a lower set ` l ` and an upper set
        ` u ` which is inhabited ( ` E. q e. Q. q e. l /\ E. r e. Q. r e. u ` ),
-       rounded
-       ( ` A. q e. Q. ( q e. l <-> E. r e. Q. ( q <Q r /\ r e. l ) ) ` ) and
-       likewise for ` u ` , disjoint ( ` A. q e. Q. -. ( q e. l /\ q e. u ) ` )
-       and located
+       rounded ( ` A. q e. Q. ( q e. l <-> E. r e. Q. ( q <Q r /\ r e. l ) ) `
+       and likewise for ` u ` ), disjoint
+       ( ` A. q e. Q. -. ( q e. l /\ q e. u ) ` ) and located
        ( ` A. q e. Q. A. r e. Q. ( q <Q r -> ( q e. l \/ r e. u ) ) ` ).  See
        HoTT for more discussion of those terms and different ways of defining
        Dedkind cuts.
 
        (Note:  This is a "temporary" definition used in the construction of
        complex numbers, and is intended to be used only by the construction.)
-       (Contributed by Jim Kingdon, 25-Sep-2019.)
-       (New usage is discouraged.) $)
+       (Contributed by Jim Kingdon, 25-Sep-2019.) $)
     df-inp $a |- P. = { <. l , u >. | ( ( ( l C_ Q. /\ u C_ Q. ) /\
       ( E. q e. Q. q e. l /\ E. r e. Q. r e. u ) ) /\ (
       ( A. q e. Q. ( q e. l <-> E. r e. Q. ( q <Q r /\ r e. l ) ) /\
@@ -59198,19 +59106,20 @@ $)
       ) ) } $.
   $}
 
-  $( Define the positive real constant 1.  This is a "temporary" set used in
-     the construction of complex numbers and is intended to be used only by the
-     construction.  (Contributed by Jim Kingdon, 25-Sep-2019.)
-     (New usage is discouraged.) $)
-  df-i1p $a |- 1P = <. { l | l <Q 1Q } , { u | 1Q <Q u } >. $.
+  ${
+    $d l u $.
+    $( Define the positive real constant 1.  This is a "temporary" set used in
+       the construction of complex numbers and is intended to be used only by
+       the construction.  (Contributed by Jim Kingdon, 25-Sep-2019.) $)
+    df-i1p $a |- 1P = <. { l | l <Q 1Q } , { u | 1Q <Q u } >. $.
+  $}
 
   ${
-    $d x y z w v u $.
+    $d x y q r s $.
     $( Define addition on positive reals.  This is a "temporary" set used in
        the construction of complex numbers, and is intended to be used only by
        the construction.  From Section 11.2.1 of [HoTT], p.  (varies).
-       (Contributed by Jim Kingdon, 26-Sep-2019.)
-       (New usage is discouraged.) $)
+       (Contributed by Jim Kingdon, 26-Sep-2019.) $)
     df-iplp $a |- +P. = ( x e. P. , y e. P. |->
       <. { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 1st ` x ) /\
         s e. ( 1st ` y ) /\ q = ( r +Q s ) ) } ,
@@ -59219,16 +59128,96 @@ $)
   $}
 
   ${
+    $d l u q r $.
+    $( Lemma for proving existence of reals.  (Contributed by Jim Kingdon,
+       27-Sep-2019.) $)
+    npsspw $p |- P. C_ ( ~P Q. X. ~P Q. ) $=
+      ( vl vu vq vr cv cnq wss wa wcel wrex cltq wbr wb wral wn wo wi w3a copab
+      selpw cpw cnp cxp simpll anbi12i sylibr ssopab2i df-inp df-xp 3sstr4i ) A
+      EZFGZBEZFGZHZCEZUKIZCFJDEZUMIZDFJHZHUQUPURKLZURUKIHDFJMCFNUSVAUPUMIZHCFJM
+      DFNHUQVBHOCFNVAUQUSPQDFNCFNRZHZABSUKFUAZIZUMVEIZHZABSUBVEVEUCVDVHABVDUOVH
+      UOUTVCUDVFULVGUNAFTBFTUEUFUGBDCAUHABVEVEUIUJ $.
+  $}
+
+  ${
     $d l q r u $.
     $( The class of positive reals is a set.  (Contributed by NM,
-       31-Oct-1995.)  (New usage is discouraged.) $)
+       31-Oct-1995.) $)
     npex $p |- P. e. _V $=
-      ( vl vu vq vr cnp cv cnq cpw wcel wa copab nqex pwex cab cvv wrex wb wral
-      wss selpw abid2 eqeltri a1i opabex3 cltq wbr wn w3a df-inp simpll anbi12i
-      wo wi sylibr ssopab2i eqsstri ssexi ) EAFZGHZIZBFZUSIZJZABKZVBABUSGLMZVBB
-      NZOIUTVFUSOBUSUAVEUBUCUDEURGSZVAGSZJZCFZURIZCGPDFZVAIZDGPJZJVKVJVLUEUFZVL
-      URIJDGPQCGRVMVOVJVAIZJCGPQDGRJVKVPJUGCGRVOVKVMULUMDGRCGRUHZJZABKVDBDCAUIV
-      RVCABVRVIVCVIVNVQUJUTVGVBVHAGTBGTUKUNUOUPUQ $.
+      ( cnp cnq cpw cxp nqex pwex xpex npsspw ssexi ) ABCZJDJJBEFZKGHI $.
+  $}
+
+  ${
+    $d l u q r L $.  $d l u q r U $.
+    $( Membership in positive reals.  (Contributed by Jim Kingdon,
+       27-Sep-2019.) $)
+    elinp $p |- ( <. L , U >. e. P. <-> ( ( ( L C_ Q. /\ U C_ Q. ) /\
+        ( E. q e. Q. q e. L /\ E. r e. Q. r e. U ) ) /\ (
+        ( A. q e. Q. ( q e. L <-> E. r e. Q. ( q <Q r /\ r e. L ) ) /\
+          A. r e. Q. ( r e. U <-> E. q e. Q. ( q <Q r /\ q e. U ) ) ) /\
+        A. q e. Q. -. ( q e. L /\ q e. U ) /\
+        A. q e. Q. A. r e. Q. ( q <Q r -> ( q e. L \/ r e. U ) )
+        ) ) ) $=
+      ( vl vu wcel cvv wa cnq wss cv wrex wb wral anbi1d rexbidv anbi12d anbi2d
+      eleq2 cop cnp cltq wbr wn wo wi w3a cpw npsspw sseli opelxp sylib anim12i
+      cxp elex syl nqex ssex ad2antrr copab df-inp eleq2i sseq1 bibi12d ralbidv
+      notbid orbi1d imbi2d 2ralbidv 3anbi123d orbi2d opelopabg syl5bb pm5.21nii
+      wceq ) BAUAZUBGZBHGZAHGZIZBJKZAJKZIZDLZBGZDJMZCLZAGZCJMZIZIZWFWEWHUCUDZWH
+      BGZIZCJMZNZDJOZWIWMWEAGZIZDJMZNZCJOZIZWFWSIZUEZDJOZWMWFWIUFZUGZCJODJOZUHZ
+      IZVRBJUIZGZAXMGZIZWAVRVQXMXMUOZGXPUBXQVQUJUKBAXMXMULUMXNVSXOVTBXMUPAXMUPU
+      NUQWDWAWKXKWBVSWCVTBJURUSAJURUSUNUTVRVQELZJKZFLZJKZIZWEXRGZDJMZWHXTGZCJMZ
+      IZIZYCWMWHXRGZIZCJMZNZDJOZYEWMWEXTGZIZDJMZNZCJOZIZYCYNIZUEZDJOZWMYCYEUFZU
+      GZCJODJOZUHZIZEFVAZGWAXLUBUUHVQFCDEVBVCUUGWBYAIZWGYFIZIZWRYRIZWFYNIZUEZDJ
+      OZWMWFYEUFZUGZCJODJOZUHZIXLEFBAHHXRBVPZYHUUKUUFUUSUUTYBUUIYGUUJUUTXSWBYAX
+      RBJVDPUUTYDWGYFUUTYCWFDJXRBWETZQPRUUTYSUULUUBUUOUUEUURUUTYMWRYRUUTYLWQDJU
+      UTYCWFYKWPUVAUUTYJWOCJUUTYIWNWMXRBWHTSQVEVFPUUTUUAUUNDJUUTYTUUMUUTYCWFYNU
+      VAPVGVFUUTUUDUUQDCJJUUTUUCUUPWMUUTYCWFYEUVAVHVIVJVKRXTAVPZUUKWLUUSXKUVBUU
+      IWDUUJWKUVBYAWCWBXTAJVDSUVBYFWJWGUVBYEWICJXTAWHTZQSRUVBUULXDUUOXGUURXJUVB
+      YRXCWRUVBYQXBCJUVBYEWIYPXAUVCUVBYOWTDJUVBYNWSWMXTAWETZSQVEVFSUVBUUNXFDJUV
+      BUUMXEUVBYNWSWFUVDSVGVFUVBUUQXIDCJJUVBUUPXHWMUVBYEWIWFUVCVLVIVJVKRVMVNVO
+      $.
+  $}
+
+  ${
+    $( A positive real is an ordered pair of a lower cut and an upper cut.
+       (Contributed by Jim Kingdon, 27-Sep-2019.) $)
+    prop $p |- ( A e. P. -> <. ( 1st ` A ) , ( 2nd ` A ) >. e. P. ) $=
+      ( cnp wcel c1st cfv c2nd cop cnq cpw cxp npsspw sseli 1st2nd2 syl biimpcd
+      wceq eleq1 mpd ) ABCZAADEAFEGZPZTBCZSAHIZUCJZCUABUDAKLAUCUCMNUASUBATBQOR
+      $.
+  $}
+
+  ${
+    $d x y L $.  $d U x y $.
+    $( A positive real's lower cut is inhabited.  (Contributed by Jim Kingdon,
+       27-Sep-2019.) $)
+    prml $p |- ( <. L , U >. e. P. -> E. x e. Q. x e. L ) $=
+      ( vy cop cnp wcel cnq wss wa cv wrex cltq wbr wb wral wn wo wi w3a elinp
+      simplrl sylbi ) CBEFGCHIBHIJZAKZCGZAHLZDKZBGZDHLZJJUFUEUHMNZUHCGJDHLOAHPU
+      IUKUEBGZJAHLODHPJUFULJQAHPUKUFUIRSDHPAHPTZJUGBCDAUAUDUGUJUMUBUC $.
+
+    $( A positive real's upper cut is inhabited.  (Contributed by Jim Kingdon,
+       27-Sep-2019.) $)
+    prmu $p |- ( <. L , U >. e. P. -> E. x e. Q. x e. U ) $=
+      ( vy cop cnp wcel cnq wss wa cv wrex cltq wbr wb wral wn wo wi w3a elinp
+      simplrr sylbi ) CBEFGCHIBHIJZDKZCGZDHLZAKZBGZAHLZJJUFUEUHMNZUHCGJAHLODHPU
+      IUKUEBGZJDHLOAHPJUFULJQDHPUKUFUIRSAHPDHPTZJUJBCADUAUDUGUJUMUBUC $.
+
+    $( A positive real's lower cut is a subset of the positive fractions.  It
+       would presumably be possible to also prove ` L C. Q. ` , but we only
+       need ` L C_ Q. ` so far.  (Contributed by Jim Kingdon, 28-Sep-2019.) $)
+    prssnql $p |- ( <. L , U >. e. P. -> L C_ Q. ) $=
+      ( vx vy cop cnp wcel cnq wss wa cv wrex cltq wbr wb wral wn wo wi w3a
+      elinp simplll sylbi ) BAEFGBHIZAHIZJCKZBGZCHLDKZAGZDHLJZJUGUFUHMNZUHBGJDH
+      LOCHPUIUKUFAGZJCHLODHPJUGULJQCHPUKUGUIRSDHPCHPTZJUDABDCUAUDUEUJUMUBUC $.
+
+    $( A positive real's upper cut is a subset of the positive fractions.  It
+       would presumably be possible to also prove ` U C. Q. ` , but we only
+       need ` U C_ Q. ` so far.  (Contributed by Jim Kingdon, 28-Sep-2019.) $)
+    prssnqu $p |- ( <. L , U >. e. P. -> U C_ Q. ) $=
+      ( vx vy cop cnp wcel cnq wss wa cv wrex cltq wbr wb wral wn wo wi w3a
+      elinp simpllr sylbi ) BAEFGBHIZAHIZJCKZBGZCHLDKZAGZDHLJZJUGUFUHMNZUHBGJDH
+      LOCHPUIUKUFAGZJCHLODHPJUGULJQCHPUKUGUIRSDHPCHPTZJUEABDCUAUDUEUJUMUBUC $.
   $}
 
 $(
