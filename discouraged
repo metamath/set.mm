@@ -14060,6 +14060,7 @@ New usage of "bitr3" is discouraged (6 uses).
 New usage of "bitr3VD" is discouraged (0 uses).
 New usage of "bj-0" is discouraged (1 uses).
 New usage of "bj-1" is discouraged (0 uses).
+New usage of "bj-con3ALT" is discouraged (0 uses).
 New usage of "bj-csbsnlem" is discouraged (1 uses).
 New usage of "bj-df-clel" is discouraged (1 uses).
 New usage of "bj-df-cleq" is discouraged (1 uses).
@@ -14071,6 +14072,7 @@ New usage of "bj-rabtrAUTO" is discouraged (0 uses).
 New usage of "bj-sbeqALT" is discouraged (0 uses).
 New usage of "bj-vexw" is discouraged (1 uses).
 New usage of "bj-vexwt" is discouraged (1 uses).
+New usage of "bj-vtoclgfALT" is discouraged (0 uses).
 New usage of "bj-xpima1snALT" is discouraged (0 uses).
 New usage of "blo3i" is discouraged (1 uses).
 New usage of "blocn" is discouraged (1 uses).
@@ -18427,6 +18429,7 @@ Proof modification of "bj-clabel" is discouraged (43 steps).
 Proof modification of "bj-cleljust" is discouraged (25 steps).
 Proof modification of "bj-clelsb3" is discouraged (63 steps).
 Proof modification of "bj-cleqh" is discouraged (108 steps).
+Proof modification of "bj-con3ALT" is discouraged (63 steps).
 Proof modification of "bj-denotes" is discouraged (76 steps).
 Proof modification of "bj-df-clel" is discouraged (4 steps).
 Proof modification of "bj-df-cleq" is discouraged (4 steps).
@@ -18522,6 +18525,7 @@ Proof modification of "bj-vjust" is discouraged (51 steps).
 Proof modification of "bj-vtoclg1f" is discouraged (23 steps).
 Proof modification of "bj-vtoclg1f1" is discouraged (26 steps).
 Proof modification of "bj-vtoclg1fv" is discouraged (23 steps).
+Proof modification of "bj-vtoclgfALT" is discouraged (48 steps).
 Proof modification of "bj-xpima1snALT" is discouraged (34 steps).
 Proof modification of "bj-xpima2sn" is discouraged (23 steps).
 Proof modification of "bj-xpnzex" is discouraged (71 steps).
