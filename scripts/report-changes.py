@@ -9,7 +9,8 @@
 # Then install "ply" library: "pip3 install ply"
 # We use "ply" to implement easy lexing of the data.
 
-# By default, output the Gource custom log format.
+# By default, outputs a simply-parseable output.
+# Use "--gource" option to output the Gource custom log format.
 # https://github.com/acaudwell/Gource/wiki/Custom-Log-Format
 # timestamp|username|type ((A)dded, (M)odified, (D)eleted)|file path|color
 # See "gourcify" which uses this script.
@@ -21,20 +22,25 @@
 # (since they are not present).  Similarly, it only reports the
 # *current* structure and names of assertions, not what was there historically.
 
-# TODO: This doesn't handle multiple-person contributions well (and or "/")
+# This handles multiple different actions (e.g., contributes, modifies, etc.)
+# for a single assertion, and also handles multi-person contributions
+# if they are separated with "/" or " and ".
 
 import ply.lex as lex
 
 import datetime
 import re
-import hashlib
+import hashlib # to generate colors from section names
+import sys # to print to sys.stderr
+from functools import lru_cache # Memoize pure functions for performance
 
-OUTPUT_FORMAT = 'gource'
+OUTPUT_FORMAT = ''
 MMFILE = 'set.mm'
 
 tokens = (
     'ACTION',
     'ASSERTION',
+    'COMMENT',
     'HEADING1',
     'HEADING2',
     'HEADING3',
@@ -48,10 +54,10 @@ tokens = (
 def t_ACTION(t):
     r'''
       \(
-         (Contributed|Proof shortened|Modified|Revised)\s+
-         by\s+([^()]+),\s+
+         ([Cc]ontributed|[Pp]roof\s+[Ss]hortened|[Mm]odified|[Rr]evised)\s+
+         [Bb]y\s+([^()]+),\s+
          ([0-9]+-[A-Za-z]{3}-[0-9]{4,})\.?
-      \)'''
+      \)\s*'''
     # Contributed, Name, Date
     t.value = t.lexer.lexmatch.group(2,3,4)
     return t
@@ -59,6 +65,11 @@ def t_ACTION(t):
 def t_ASSERTION(t):
     r'[^ ]+\s+\$[ap]\s\|-\s'
     t.value = t.value.split()[0:2] # Return label and $a/$p
+    return t
+
+# Start of comment
+def t_COMMENT(t):
+    r'\$\('
     return t
 
 def t_HEADING1(t):
@@ -103,7 +114,7 @@ t_ignore  = ' \t\n'
 
 # Skip everything else
 def t_error(t):
-    print("Illegal character '%s'" % t.value[0])
+    print("Illegal character '%s'" % t.value[0], file=sys.stderr)
     t.lexer.skip(1)
 
 def section_name(heading):
@@ -171,13 +182,14 @@ def cleanup_name(name):
     name = REMOVE_DEPENDENCY.sub('', name)
     # Remove extra by
     name = EXTRA_BY.sub('', name)
-    if name in NAME_ABBREVIATIONS:
-        name = NAME_ABBREVIATIONS[name]
+    # Replace abbreviation if we know it
+    name = NAME_ABBREVIATIONS.get(name, name)
     return name
 
 # Different "scrambler" values produce different colors in pick_color
 HASH_SCRAMBLER = 'Z'.encode('utf-8')
 
+@lru_cache()
 def pick_color(key):
     """Pick a color given a key, return as HTML text."""
     # We *cannot* use Python's hash() method, because that is not stable
@@ -189,43 +201,24 @@ def pick_color(key):
     h.update(HASH_SCRAMBLER)
     return h.hexdigest()[:6]
 
-# Begin
+SPLIT_PEOPLE = re.compile('(/| and )')
 
-lexer = lex.lex()
+def all_people(people_text):
+    "Given text describing people, return people as a list"
+    return SPLIT_PEOPLE.split(people_text)[::2]
 
-# Read in data & pass to lexer
-with open(MMFILE, 'r') as content_file:
-    data = content_file.read()
-lexer.input(data)
-
-# We'll ignore heading[0] and count from 1.
-heading = [None, None, None, None, None]
-
-# Tokenize
-for tok in lexer:
-    if tok.type == 'HEADING1':
-        heading[1] = tok.value
-        heading[2] = heading[3] = heading[4] = None
-    elif tok.type == 'HEADING2':
-        heading[2] = tok.value
-        heading[3] = heading[4] = None
-    elif tok.type == 'HEADING3':
-        heading[3] = tok.value
-        heading[4] = None
-    elif tok.type == 'HEADING4':
-        heading[4] = tok.value
-    elif tok.type == 'ACTION':
-        last_action = tok.value
-    elif tok.type == 'ASSERTION':
-        # Generate output for this assertion.
-        # print(heading[1], '|', last_action, '|', tok.value)
-        contributed, who, date = last_action
-        contributed = cleanup_whitespace(contributed)
-        who = cleanup_name(who)
-        date = cleanup_date(date)
-        label = tok.value[0].strip()
-        assertion_type = tok.value[1].strip()
-        section = section_name(heading)
+def generate_output(label, assertion_type, action, heading):
+    "Generate output for given action"
+    section = section_name(heading) # heading is an array of sections
+    contributed, people_text, date = action
+    contributed = cleanup_whitespace(contributed) # Type of contribution
+    date = cleanup_date(date)
+    people_text = cleanup_name(people_text)
+    people = all_people(people_text)
+    for person in people: # Generate output for each person with this action
+        person = cleanup_name(person)
+        if not person:
+            continue
         if OUTPUT_FORMAT == 'gource':
             timestamp = timestamp_of(date)
             local_name = section + '/' + label
@@ -240,8 +233,56 @@ for tok in lexer:
                 color = pick_color(heading[1])
             # timestamp|username|type ((A)dded, (M)odified, (D)eleted)|
             # file path|color
-            print(f'{timestamp}|{who}|{contribution_type}|{local_name}|{color}')
+            print(f'{timestamp}|{person}|{contribution_type}|{local_name}|{color}')
         else:
-            print(f'{date}|{who}|{contributed}|{label}|{assertion_type}|{section}')
+            print(f'{date}|{person}|{contributed}|{label}|{assertion_type}|{section}')
+
+# Begin
+
+if len(sys.argv) > 1 and sys.argv[1] == '--gource':
+    OUTPUT_FORMAT = 'gource'
+
+lexer = lex.lex()
+
+# Read in data & pass to lexer
+with open(MMFILE, 'r') as content_file:
+    data = content_file.read()
+lexer.input(data)
+
+# We'll ignore heading[0] and count from 1.
+heading = [None, None, None, None, None]
+
+# list of action tuples we have found so far.
+# Must be emptied after we generate their output.
+current_actions = []
+
+# Process input as tokens
+for tok in lexer:
+    if tok.type == 'HEADING1':
+        heading[1] = tok.value
+        heading[2] = heading[3] = heading[4] = None
+    elif tok.type == 'HEADING2':
+        heading[2] = tok.value
+        heading[3] = heading[4] = None
+    elif tok.type == 'HEADING3':
+        heading[3] = tok.value
+        heading[4] = None
+    elif tok.type == 'HEADING4':
+        heading[4] = tok.value
+    elif tok.type == 'ACTION':
+        current_actions.append(tok.value)
+    elif tok.type == 'COMMENT':
+        # On comment start, reset the list of actions.
+        # If we don't do something like this, actions on
+        # commented-out assertions will
+        # be assigned to later unrelated assertions.
+        current_actions = []
+    elif tok.type == 'ASSERTION':
+        # Generate output for this assertion.
+        label = tok.value[0].strip()
+        assertion_type = tok.value[1].strip()
+        for action in current_actions:
+            generate_output(label, assertion_type, action, heading)
+        current_actions = []
     else:
-        print('UNKNOWN', tok)
+        print('UNKNOWN TOKEN', tok, file=sys.stderr)
