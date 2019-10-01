@@ -73,7 +73,7 @@ if ! [ -d 'people' ] ; then
 fi
 
 # Get changes in set.mm and record them in Gource log format
-scripts/report-changes.py > changes.log
+scripts/report-changes.py --gource > changes.log
 
 # Sort by datetime
 sort -n changes.log > changes-sorted.log
