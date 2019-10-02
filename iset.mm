@@ -59447,6 +59447,31 @@ $)
       BUWCWFWGWHWIWJ $.
   $}
 
+  ${
+    $d x y z f g h A $.  $d x y z f g h B $.  $d x y z f g h w v G $.
+    $d f g F $.  $d f g h C $.
+    genpelvl.1 $e |- F = ( w e. P. , v e. P. |->
+      <. { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 1st ` w ) /\
+        z e. ( 1st ` v ) /\ x = ( y G z ) ) } ,
+        { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 2nd ` w ) /\
+        z e. ( 2nd ` v ) /\ x = ( y G z ) ) } >. ) $.
+    genpelvl.2 $e |- ( ( y e. Q. /\ z e. Q. ) -> ( y G z ) e. Q. ) $.
+    $( Membership in lower cut of general operation (addition or
+       multiplication) on positive reals.  (Contributed by Jim Kingdon,
+       2-Oct-2019.) $)
+    genpelvl $p |- ( ( A e. P. /\ B e. P. ) -> ( C e. ( 1st ` ( A F B ) ) <->
+        E. g e. ( 1st ` A ) E. h e. ( 1st ` B ) C = ( g G h ) ) ) $=
+      ( vf wcel wa cnq cfv wrex cnp co c1st cv wceq crab c2nd cop genipv fveq2d
+      rabex op1st syl6eq eleq2d elrabi syl6bi elprnql sylan caovcl syl2an eleq1
+      nqex prop an4s syl5ibrcom rexlimdvva wb eqeq1 2rexbidv elrab3 sylan9bb ex
+      pm5.21ndd ) FUAPZGUAPZQZHRPZHFGKUBZUCSZPZHIUDZJUDZLUBZUEZJGUCSZTIFUCSZTZV
+      PVTHOUDZWCUEZJWETIWFTZORUFZPZVQVPVSWKHVPVSWKWIJGUGSZTIFUGSZTZORUFZUHZUCSW
+      KVPVRWQUCABCDEFGKLJIOMNUIUJWKWPWJORVBUKWOORVBUKULUMUNZWJOHRUOUPVPWDVQIJWF
+      WEVPWAWFPZWBWEPZQQVQWDWCRPZVNWSVOWTXAVNWSQWARPZWBRPZXAVOWTQVNWFWNUHUAPWSX
+      BFVCWAWNWFUQURVOWEWMUHUAPWTXCGVCWBWMWEUQURBCWAWBRLNUSUTVDHWCRVAVEVFVPVQVT
+      WGVGVPVTWLVQWGWRWJWGOHRWHHUEWIWDIJWFWEWHHWCVHVIVJVKVLVM $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
