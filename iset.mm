@@ -60383,9 +60383,9 @@ htmldef "DECID" as "<SMALL>DECID</SMALL> ";
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
 
 /* Mathbox of BJ */
-htmldef "isBounded" as "isBounded ";
-  althtmldef "isBounded" as "isBounded ";
-  latexdef "isBounded" as "\mathrm{isBounded} ";
+htmldef "Bdd" as "Bdd ";
+  althtmldef "Bdd" as "Bdd ";
+  latexdef "Bdd" as "\mathrm{Bdd} ";
 /* End of BJ's mathbox */
 
 /* End of typesetting definition section */
@@ -60479,52 +60479,118 @@ $)
 
 $( (End of Mykola Mostovenko's mathbox.) $)
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
                 Mathbox for BJ
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
 This is an experiment to define bounded formulas, following a discussion on
 GitHub between Jim Kingdon, Mario Carneiro and BJ.
+
+It is necessary to be able to distinguish bounded, or Delta_0 , formulas in
+order to state some axioms of Constructive Zermelo--Fraenkel (CZF), set theory,
+like the axiom scheme of bounded separation.  This is also the case for certain
+axiom schemes of bounded arithmetic, like Delta_0 -induction.
+
+To formalize this in Metamath, one has to first choose among two alternatives.
+Either, create a new type "wff0" with a new set of metavariables (ph_0 ...) and
+an axiom "$a wff ph_0" ensuring that bounded formulas are formulas, so that one
+can reuse existing theorems, and then axioms like "$a wff0 ( ph_0 -> ps_0 )".
+Or, introduce a predicate " ` Bdd ` " with the intended meaning that
+" ` Bdd ph ` " is a formula meaning that ` ph ` is a bounded formula.
+We choose the second option, since the first would complicate the grammar,
+risking to make it ambiguous.
+(TODO: elaborate)
+
+The second choice is to view "bounded" either as a syntactic or a semantic
+property.
+For instance, ` A. x T. ` is not syntactically bounded since it has an
+unbounded universal quantifier, but it is semantically bounded since it is
+equivalent to ` T. ` which is bounded.
+We choose the second option, so that formulas using defined symbols can be
+proved bounded.
+
+Finally, note that the axioms have to be written in closed form, rather than
+as inferences, since formulas may have free variables and be semantically
+bounded for some values (but not all) of these variables.
+On the other hand, a formula is bounded if it is equivalent *for all values of
+the free variables* to a bounded one.
+That is why ~ ax-bd0 is an inference: if we posited it in closed form, then we
+could prove for instance ` |- ( ph -> Bdd ph ) ` and ` |- ( -. ph -> Bdd ph ) `
+which is problematic (with the law of excluded middle, this would entail that
+all formulas are bounded, but even without it... TODO: complete).
 $)
 
-  $( Symbol for the predicate ` isBounded ` . $)
-  $c isBounded $.
+  $( Symbol for the predicate ` Bdd ` . $)
+  $c Bdd $.
 
-  $( Syntax for the predicate ` isBounded ` . $)
-  wbd $a wff isBounded ph $.
+  $( Syntax for the predicate ` Bdd ` . $)
+  wbd $a wff Bdd ph $.
 
-  $( The truth value ` T. ` is bounded.  (Contributed by BJ, 25-Sep-2019.) $)
-  ax-bdtru $a |- isBounded T. $.
-
-  $( The truth value ` F. ` is bounded.  (Contributed by BJ, 25-Sep-2019.) $)
-  ax-bdfal $a |- isBounded F. $.
+  ${
+    bd0.1 $e |- ( ph <-> ps ) $.
+    $( A formula equivalent to a bounded one is bounded.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    ax-bd0 $a |- ( Bdd ph -> Bdd ps ) $.
+  $}
 
   $( An implication between two bounded formulas is bounded.  (Contributed by
      BJ, 25-Sep-2019.) $)
-  ax-bdim $a |-
-              ( ( isBounded ph /\ isBounded ps ) -> isBounded ( ph -> ps ) ) $.
+  ax-bdim $a |- ( ( Bdd ph /\ Bdd ps ) -> Bdd ( ph -> ps ) ) $.
 
   $( The conjunction of two bounded formulas is bounded.  (Contributed by BJ,
      25-Sep-2019.) $)
-  ax-bdan $a |-
-              ( ( isBounded ph /\ isBounded ps ) -> isBounded ( ph /\ ps ) ) $.
+  ax-bdan $a |- ( ( Bdd ph /\ Bdd ps ) -> Bdd ( ph /\ ps ) ) $.
 
   $( The disjunction of two bounded formulas is bounded.  (Contributed by BJ,
      25-Sep-2019.) $)
-  ax-bdor $a |-
-              ( ( isBounded ph /\ isBounded ps ) -> isBounded ( ph \/ ps ) ) $.
+  ax-bdor $a |- ( ( Bdd ph /\ Bdd ps ) -> Bdd ( ph \/ ps ) ) $.
 
   $( The negation of a bounded formula is bounded.  (Contributed by BJ,
      25-Sep-2019.) $)
-  ax-bdn $a |- ( isBounded ph -> isBounded -. ph ) $.
+  ax-bdn $a |- ( Bdd ph -> Bdd -. ph ) $.
 
   $( A bounded universal quantification of a bounded formula is bounded.
      (Contributed by BJ, 25-Sep-2019.) $)
-  ax-bdal $a |- ( isBounded ph -> isBounded A. x e. y ph ) $.
+  ax-bdal $a |- ( Bdd ph -> Bdd A. x e. y ph ) $.
 
   $( A bounded existential quantification of a bounded formula is bounded.
      (Contributed by BJ, 25-Sep-2019.) $)
-  ax-bdex $a |- ( isBounded ph -> isBounded E. x e. y ph ) $.
+  ax-bdex $a |- ( Bdd ph -> Bdd E. x e. y ph ) $.
 
+  $( An atomic formula is bounded (equality predicate).  (Contributed by BJ,
+     3-Oct-2019.) $)
+  ax-bdeq $a |- Bdd x = y $.
+
+  $( An atomic formula is bounded (membership predicate).  (Contributed by BJ,
+     3-Oct-2019.) $)
+  ax-bdel $a |- Bdd x e. y $.
+
+  ${
+    bd0r.1 $e |- ( ps <-> ph ) $.
+    $( A formula equivalent to a bounded one is bounded; stated with commuted
+       biconditional in antecedent, to work better with definitions ( ` ps ` is
+       the definiens that one wants to prove bounded).  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bd0r $p |- ( Bdd ph -> Bdd ps ) $=
+      ( bicomi ax-bd0 ) ABBACDE $.
+  $}
+
+  $( A biconditional between two bounded formulas is bounded.  (Contributed by
+     BJ, 3-Oct-2019.) $)
+  bj-bdbi $p |- ( ( Bdd ph /\ Bdd ps ) -> Bdd ( ph <-> ps ) ) $=
+    ( wbd wa wi wb ax-bdim ancoms ax-bdan syl2anc dfbi2 bd0r syl ) ACZBCZDZABEZ
+    BAEZDZCZABFZCPQCRCZTABGONUBBAGHQRIJSUAABKLM $.
+
+  $( The truth value ` T. ` is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
+$(  bdtru $p |- Bdd T. $=
+? $.
+$)
+
+  $( The truth value ` F. ` is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
+$(  bdfal $p |- Bdd F. $=
+? $.
+$)
 
 $( (End of BJ's mathbox.) $)
