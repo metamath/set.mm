@@ -59449,7 +59449,7 @@ $)
 
   ${
     $d x y z f g h A $.  $d x y z f g h B $.  $d x y z f g h w v G $.
-    $d f g F $.  $d f g h C $.
+    $d f g F $.  $d f g h C $.  $d f g h D $.
     genpelvl.1 $e |- F = ( w e. P. , v e. P. |->
       <. { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 1st ` w ) /\
         z e. ( 1st ` v ) /\ x = ( y G z ) ) } ,
@@ -59470,6 +59470,15 @@ $)
       WEVPWAWFPZWBWEPZQQVQWDWCRPZVNWSVOWTXAVNWSQWARPZWBRPZXAVOWTQVNWFWNUHUAPWSX
       BFVCWAWNWFUQURVOWEWMUHUAPWTXCGVCWBWMWEUQURBCWAWBRLNUSUTVDHWCRVAVEVFVPVQVT
       WGVGVPVTWLVQWGWRWJWGOHRWHHUEWIWDIJWFWEWHHWCVHVIVJVKVLVM $.
+
+    $( Pre-closure law for general operation on lower cuts.  (Contributed by
+       Jim Kingdon, 2-Oct-2019.) $)
+    genpprecll $p |- ( ( A e. P. /\ B e. P. ) ->
+        ( ( C e. ( 1st ` A ) /\ D e. ( 1st ` B ) ) ->
+        ( C G D ) e. ( 1st ` ( A F B ) ) ) ) $=
+      ( vg vh c1st cfv wcel wa co cnp cv wceq wrex eqid rspceov mp3an3 genpelvl
+      syl5ibr ) HFPQZRZIGPQZRZSHIKTZFGJTPQRFUARGUARSUNNUBOUBKTUCOULUDNUJUDZUKUM
+      UNUNUCUOUNUENOUJULHIUNKUFUGABCDEFGUNNOJKLMUHUI $.
   $}
 
 $(
