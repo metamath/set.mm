@@ -45,36 +45,12 @@ if ! [ -f "$MUSIC" ] ; then
     wget "$MUSIC_URL" || exit 1
 fi
 
-# Download images for people. We *only* use images that are already
-# publicly-available and associated with that person.
-# Most of these are GitHub avatars.
+# Make sure we have people avatars, else provide a useful error message.
 if ! [ -d 'people' ] ; then
-    mkdir -p people
-    # Download images - be sure to put them in the "people" subdirectory.
-    # From Metamath book cover
-    curl 'https://raw.githubusercontent.com/metamath/metamath-book/master/cover/norm2011-408b.png' -o 'people/Norman Megill.png'
-    # https://github.com/raphlinus
-    curl 'https://avatars1.githubusercontent.com/u/242367?s=460&v=4' -o 'people/Raph Levien.png'
-    # dwheeler.com
-    curl 'https://dwheeler.com/dwheeler2003.jpg' -o 'people/David A. Wheeler.png'
-    # https://github.com/digama0
-    curl 'https://avatars2.githubusercontent.com/u/868588?s=460&v=4' -o 'people/Mario Carneiro.png'
-    # https://github.com/sorear
-    curl 'https://avatars2.githubusercontent.com/u/92735?s=460&v=4' -o "people/Stefan O'Rear.png"
-    # https://github.com/sctfn
-    curl 'https://avatars3.githubusercontent.com/u/996440?s=460&v=4' -o 'people/Scott Fenton.png'
-    # Using archive.org to ensure it stays around, via:
-    # https://www.legacy.com/obituaries/name/alan-sare-obituary?pid=191902853
-    curl 'https://cache.legacy.net/legacy/images/cobrands/TheTimes-Tribune/photos/8128942_20190325.jpg' -o 'people/Alan Sare.jpg'
-    # https://github.com/Drahflow
-    curl 'https://avatars0.githubusercontent.com/u/609223?s=460&v=4' -o 'people/Drahflow.png'
-    # https://github.com/jkingdon
-    curl 'https://avatars3.githubusercontent.com/u/16878?s=460&v=4' -o 'people/Jim Kingdon.jpg'
-    # From https://twitter.com/igblan per email
-    # from Paul Chapman dated Tue, 1 Oct 2019 18:01:34 +0100
-    # subject Re: [Metamath] Looking for publicly-acknowledged avatars for Gource
-    # on Metamath mailing list
-    curl 'https://dwheeler.com/images/Paul Chapman.png' -o 'people/Paul Chapman.png'
+    echo "Must create 'people' directory. Recommended approach:" >&2
+    echo "  mkdir -p people" >&2
+    echo "  scripts/download-avatars people" >&2
+    exit 1
 fi
 
 # Get changes in set.mm and record them in Gource log format
