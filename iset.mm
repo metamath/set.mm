@@ -59479,6 +59479,13 @@ $)
       ( vg vh c1st cfv wcel wa co cnp cv wceq wrex eqid rspceov mp3an3 genpelvl
       syl5ibr ) HFPQZRZIGPQZRZSHIKTZFGJTPQRFUARGUARSUNNUBOUBKTUCOULUDNUJUDZUKUM
       UNUNUCUOUNUENOUJULHIUNKUFUGABCDEFGUNNOJKLMUHUI $.
+
+    $( Domain of general operation on positive reals.  (Contributed by Jim
+       Kingdon, 2-Oct-2019.) $)
+    genipdm $p |- dom F = ( P. X. P. ) $=
+      ( cnp cv c1st cfv wcel w3a cnq wrex crab c2nd nqex co wceq cop rabex opex
+      dmmpt2 ) DEJJBKZDKZLMNCKZEKZLMNAKUGUIGUAUBZOCPQBPQZAPRZUGUHSMNUIUJSMNUKOC
+      PQBPQZAPRZUCFHUMUOULAPTUDUNAPTUDUEUF $.
   $}
 
 $(
