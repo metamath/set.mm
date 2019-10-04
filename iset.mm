@@ -25263,12 +25263,6 @@ $)
       ) DGIZACEJBDJACBDEKZJZACFJZABCDEGLUBDMIZUCFNUDUEODGPBDEFMUFBFQHRACUCFSTUA
       $.
 
-    $( Composition of two substitutions.  (Contributed by NM, 27-Nov-2005.)
-       (New usage is discouraged.)  (Proof modification is discouraged.) $)
-    sbcco3gOLD $p |- ( ( A e. V /\ A. x B e. W ) ->
-                ( [. A / x ]. [. B / y ]. ph <-> [. C / y ]. ph ) ) $=
-      ( wcel wsbc wb wal sbcco3g adantr ) DGJACEKBDKACFKLEHJBMABCDEFGINO $.
-
     $( Composition of two class substitutions.  (Contributed by NM,
        27-Nov-2005.)  (Revised by Mario Carneiro, 11-Nov-2016.) $)
     csbco3g $p |- ( A e. V ->
