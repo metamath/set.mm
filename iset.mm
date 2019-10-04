@@ -48814,14 +48814,6 @@ $)
     riotaund $p |- ( -. E! x e. A ph -> ( iota_ x e. A ph ) = (/) ) $=
       ( wreu wn crio cv wcel cio df-riota weu wceq df-reu iotanul sylnbi syl5eq
       wa c0 ) ABCDZEABCFBGCHAQZBIZRABCJSTBKUARLABCMTBNOP $.
-
-    $( For proper classes, restricted and unrestricted iota are the same.
-       (Contributed by NM, 15-Sep-2011.)  Obsolete as of 2-Sep-2018.  Use
-       ~ df-riota instead.  (New usage is discouraged.) $)
-    riotaprcOLD $p |- ( -. A e. _V
-           -> ( iota_ x e. A ph ) = ( iota x ( x e. A /\ ph ) ) ) $=
-      ( crio cv wcel wa cio wceq cvv wn df-riota a1i ) ABCDBECFAGBHICJFKABCLM
-      $.
   $}
 
   ${
