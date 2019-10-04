@@ -1,0 +1,13 @@
+#!/bin/sh
+# Output caption information given Metamath 100 input
+# Problem: Metamath 100 sometimes uses old names, we may need to
+# udpate things
+
+tab="$(printf '\t')"
+
+while IFS="$tab" read -r date sequence item name author url misc; do
+  label=$(printf '%s' "$url" | sed -e 's/.*\///' -e 's/\.html$//')
+  timestamp=$(grep -E "/$label[|][^|]*$" changes-sorted.log | head -n 1 | \
+            cut -d '|' -f 1)
+  printf '%s\n' "$timestamp|Proved $label - $name ($author), Metamath 100 #$item ($sequence/100)"
+done < ,mm100
