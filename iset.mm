@@ -12457,17 +12457,6 @@ $)
   $}
 
   ${
-    spimedh.1 $e |- ( ch -> A. x ch ) $.
-    spimedh.2 $e |- ( ch -> ( ph -> A. x ph ) ) $.
-    spimedh.3 $e |- ( x = y -> ( ph -> ps ) ) $.
-    $( Deduction version of ~ spime .  (Contributed by NM, 5-Aug-1993.)
-       (New usage is discouraged.) $)
-    spimedh $p |- ( ch -> ( ph -> E. x ps ) ) $=
-      ( wex wa wal adantr imp 19.26 sylanbrc weq adantld spimeh ex ) CABDICAJZB
-      DETCDKZADKZTDKCUAAFLCAUBGMCADNODEPABCHQRS $.
-  $}
-
-  ${
     cbv3.1 $e |- F/ y ph $.
     cbv3.2 $e |- F/ x ps $.
     cbv3.3 $e |- ( x = y -> ( ph -> ps ) ) $.
@@ -13454,12 +13443,6 @@ $)
   sbft $p |- ( F/ x ph -> ( [ y / x ] ph <-> ph ) ) $=
     ( wnf wsb wex spsbe 19.9t syl5ib wal nfr stdpc4 syl6 impbid ) ABDZABCEZAPAB
     FOAABCGABHIOAABJPABKABCLMN $.
-
-  $( Substitution has no effect on a non-free variable.  (Contributed by NM,
-     30-May-2009.)  (New usage is discouraged.) $)
-  sbf3t $p |- ( A. x ( ph -> A. x ph ) -> ( [ y / x ] ph <-> ph ) ) $=
-    ( wal wi wsb spsbim sbf2 ax-4 sylbi syl6 stdpc4 imim2i sps impbid ) AABDZEZ
-    BDZABCFZARSPBCFZAAPBCGTPAABCHABIJKQASEBPSAABCLMNO $.
 
   ${
     sbid2h.1 $e |- ( ph -> A. x ph ) $.
@@ -24378,12 +24361,6 @@ $)
        NM, 11-Nov-2005.) $)
     sbcbii $p |- ( [. A / x ]. ph <-> [. A / x ]. ps ) $=
       ( wsbc wb wtru a1i sbcbidv trud ) ACDFBCDFGHABCDABGHEIJK $.
-
-    $( Formula-building inference rule for class substitution.  (Contributed by
-       NM, 11-Nov-2005.)  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    sbcbiiOLD $p |- ( A e. V -> ( [. A / x ]. ph <-> [. A / x ]. ps ) ) $=
-      ( wsbc wb wcel sbcbii a1i ) ACDGBCDGHDEIABCDFJK $.
   $}
 
   ${
@@ -25268,12 +25245,6 @@ $)
       ( wcel wsbc csb sbcnestg cvv wceq wb elex nfcvd csbiegf dfsbcq 3syl bitrd
       ) DGIZACEJBDJACBDEKZJZACFJZABCDEGLUBDMIZUCFNUDUEODGPBDEFMUFBFQHRACUCFSTUA
       $.
-
-    $( Composition of two substitutions.  (Contributed by NM, 27-Nov-2005.)
-       (New usage is discouraged.)  (Proof modification is discouraged.) $)
-    sbcco3gOLD $p |- ( ( A e. V /\ A. x B e. W ) ->
-                ( [. A / x ]. [. B / y ]. ph <-> [. C / y ]. ph ) ) $=
-      ( wcel wsbc wb wal sbcco3g adantr ) DGJACEKBDKACFKLEHJBMABCDEFGINO $.
 
     $( Composition of two class substitutions.  (Contributed by NM,
        27-Nov-2005.)  (Revised by Mario Carneiro, 11-Nov-2016.) $)
@@ -48494,13 +48465,6 @@ $)
     ( cvv crio cv wcel wa cio df-riota vex biantrur iotabii eqtr4i ) ABCDBECFZA
     GZBHABHABCIAOBNABJKLM $.
 
-  $( Restricted iota in terms of iota.  (Contributed by NM, 15-Sep-2011.)
-     Obsolete as of 2-Sep-2019.  Use ~ df-riota instead.
-     (New usage is discouraged.) $)
-  riotaiotaOLD $p |- ( E! x e. A ph
-         -> ( iota_ x e. A ph ) = ( iota x ( x e. A /\ ph ) ) ) $=
-    ( crio cv wcel wa cio wceq wreu df-riota a1i ) ABCDBECFAGBHIABCJABCKL $.
-
   $( Restricted iota in terms of class union.  (Contributed by NM,
      11-Oct-2011.) $)
   riotauni $p |- ( E! x e. A ph
@@ -48821,14 +48785,6 @@ $)
     riotaund $p |- ( -. E! x e. A ph -> ( iota_ x e. A ph ) = (/) ) $=
       ( wreu wn crio cv wcel cio df-riota weu wceq df-reu iotanul sylnbi syl5eq
       wa c0 ) ABCDZEABCFBGCHAQZBIZRABCJSTBKUARLABCMTBNOP $.
-
-    $( For proper classes, restricted and unrestricted iota are the same.
-       (Contributed by NM, 15-Sep-2011.)  Obsolete as of 2-Sep-2018.  Use
-       ~ df-riota instead.  (New usage is discouraged.) $)
-    riotaprcOLD $p |- ( -. A e. _V
-           -> ( iota_ x e. A ph ) = ( iota x ( x e. A /\ ph ) ) ) $=
-      ( crio cv wcel wa cio wceq cvv wn df-riota a1i ) ABCDBECFAGBHICJFKABCLM
-      $.
   $}
 
   ${

@@ -133,7 +133,6 @@
 "snexgOLD" is used by "sucexb".
 "snexgOLD" is used by "tpexg".
 "snexgOLD" is used by "uniop".
-"spimeh" is used by "spimedh".
 "spimh" is used by "spim".
 "spimth" is used by "equveli".
 New usage of "19.21h" is discouraged (4 uses).
@@ -163,17 +162,11 @@ New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rdgivallem" is discouraged (2 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
 New usage of "rexsnsOLD" is discouraged (2 uses).
-New usage of "riotaiotaOLD" is discouraged (0 uses).
-New usage of "riotaprcOLD" is discouraged (0 uses).
 New usage of "ruALT" is discouraged (0 uses).
-New usage of "sbcbiiOLD" is discouraged (0 uses).
-New usage of "sbcco3gOLD" is discouraged (0 uses).
-New usage of "sbf3t" is discouraged (0 uses).
 New usage of "sbiedh" is discouraged (3 uses).
 New usage of "sbieh" is discouraged (7 uses).
 New usage of "snexgOLD" is discouraged (29 uses).
-New usage of "spimedh" is discouraged (0 uses).
-New usage of "spimeh" is discouraged (1 uses).
+New usage of "spimeh" is discouraged (0 uses).
 New usage of "spimh" is discouraged (1 uses).
 New usage of "spimth" is discouraged (1 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
@@ -192,8 +185,6 @@ Proof modification of "resfunexgALT" is discouraged (76 steps).
 Proof modification of "rexsnsOLD" is discouraged (55 steps).
 Proof modification of "ruALT" is discouraged (35 steps).
 Proof modification of "sbc8g" is discouraged (55 steps).
-Proof modification of "sbcbiiOLD" is discouraged (19 steps).
-Proof modification of "sbcco3gOLD" is discouraged (30 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "suctr" is discouraged (153 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
