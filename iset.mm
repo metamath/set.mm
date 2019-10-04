@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Sep-2019
+$( iset.mm - Version of 3-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -35234,6 +35234,28 @@ $)
     ( wor wpo wcel w3a wbr wn sopo po3nr sylan ) AEFAEGBAHCAHDAHIBCEJCDEJDBEJIK
     AELABCDEMN $.
 
+  $( One direction of ~ sotritric holds for all weakly linear orders.
+     (Contributed by Jim Kingdon, 28-Sep-2019.) $)
+  sotricim $p |- ( ( R Or A /\ ( B e. A /\ C e. A ) ) ->
+      ( B R C -> -. ( B = C \/ C R B ) ) ) $=
+    ( wor wcel wa wbr wceq wn wo w3a adantrr 3adant3 wi breq2 biimprcd 3ad2ant3
+    sonr mtod 3expia so2nr imnan sylibr jcad ioran syl6ibr ) ADEZBAFZCAFZGZGZBC
+    DHZBCIZJZCBDHZJZGUNUPKJULUMUOUQUHUKUMUOUHUKUMLUNBBDHZUHUKURJZUMUHUIUSUJABDS
+    MNUMUHUNUROUKUNURUMBCBDPQRTUAULUMUPGJUMUQOABCDUBUMUPUCUDUEUNUPUFUG $.
+
+  ${
+    sotritric.or $e |- R Or A $.
+    sotritric.tri $e |- ( ( B e. A /\ C e. A ) ->
+      ( B R C \/ B = C \/ C R B ) ) $.
+    $( A trichotomy relationship, given a trichotomous order.  (Contributed by
+       Jim Kingdon, 28-Sep-2019.) $)
+    sotritric $p |- ( ( B e. A /\ C e. A ) ->
+        ( B R C <-> -. ( B = C \/ C R B ) ) ) $=
+      ( wcel wa wbr wceq wo wn wor wi sotricim mpan w3o 3orass ax-1 pm2.24 jaoi
+      sylbi syl impbid ) BAGCAGHZBCDIZBCJZCBDIZKZLZADMUEUFUJNEABCDOPUEUFUGUHQZU
+      JUFNZFUKUFUIKULUFUGUHRUFULUIUFUJSUIUFTUAUBUCUD $.
+  $}
+
   ${
     $d x y z R $.
     $( Any relation is a strict ordering of the empty set.  (Contributed by NM,
@@ -55568,14 +55590,12 @@ $)
     nncli.1 $e |- A e. _om $.
     nncli.2 $e |- B e. _om $.
     $( ` _om ` is closed under addition.  Inference form of ~ nnacl .
-       (Contributed by Scott Fenton, 20-Apr-2012.)  (Revised by Mario Carneiro,
-       12-May-2012.) $)
+       (Contributed by Scott Fenton, 20-Apr-2012.) $)
     nnacli $p |- ( A +o B ) e. _om $=
       ( com wcel coa co nnacl mp2an ) AEFBEFABGHEFCDABIJ $.
 
     $( ` _om ` is closed under multiplication.  Inference form of ~ nnmcl .
-       (Contributed by Scott Fenton, 20-Apr-2012.)  (Revised by Mario Carneiro,
-       12-May-2012.) $)
+       (Contributed by Scott Fenton, 20-Apr-2012.) $)
     nnmcli $p |- ( A .o B ) e. _om $=
       ( com wcel comu co nnmcl mp2an ) AEFBEFABGHEFCDABIJ $.
 
@@ -58860,6 +58880,12 @@ $)
       YPYQURWRWGWQWSWTSXAXGYCMYDXFYBLYBXFEIXBFXFYBXCSXDXE $.
   $}
 
+  $( Trichotomy for positive integers.  (Contributed by Jim Kingdon,
+     21-Sep-2019.) $)
+  nqtric $p |- ( ( A e. Q. /\ B e. Q. ) ->
+      ( A <Q B <-> -. ( A = B \/ B <Q A ) ) ) $=
+    ( cnq cltq ltsonq nqtri3or sotritric ) CABDEABFG $.
+
   ${
     $d A x y z w v u f g h $.  $d B x y z w v u f g h $.
     $d C x y z w v u f g h $.
@@ -59125,6 +59151,37 @@ $)
         s e. ( 1st ` y ) /\ q = ( r +Q s ) ) } ,
         { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 2nd ` x ) /\
         s e. ( 2nd ` y ) /\ q = ( r +Q s ) ) } >. ) $.
+
+    $( Define multiplication on positive reals.  Here we use a simple
+       definition which is similar to ~ df-iplp or the definition of
+       multiplication on positive reals in Metamath Proof Explorer.  This is as
+       opposed to the more complicated definition of multiplication given in
+       Section 11.2.1 of [HoTT], p.  (varies), which appears to be motivated by
+       handling negative numbers or handling modified Dedekind cuts in which
+       locatedness is omitted.
+
+       This is a "temporary" set used in the construction of complex numbers,
+       and is intended to be used only by the construction.  (Contributed by
+       Jim Kingdon, 29-Sep-2019.) $)
+    df-imp $a |- .P. = ( x e. P. , y e. P. |->
+      <. { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 1st ` x ) /\
+        s e. ( 1st ` y ) /\ q = ( r .Q s ) ) } ,
+        { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 2nd ` x ) /\
+        s e. ( 2nd ` y ) /\ q = ( r .Q s ) ) } >. ) $.
+  $}
+
+  ${
+    $d x y q $.
+    $( Define ordering on positive reals.  We define ` x <P y ` if there is a
+       positive fraction ` q ` which is an element of the upper cut of ` x `
+       and the lower cut of ` y ` .  From the definition of < in Section 11.2.1
+       of [HoTT], p.  (varies).
+
+       This is a "temporary" set used in the construction of complex numbers,
+       and is intended to be used only by the construction.  (Contributed by
+       Jim Kingdon, 29-Sep-2019.) $)
+    df-iltp $a |- <P = { <. x , y >. | ( ( x e. P. /\ y e. P. ) /\
+      E. q e. Q. ( q e. ( 2nd ` x ) /\ q e. ( 1st ` y ) ) ) } $.
   $}
 
   ${
@@ -59218,6 +59275,88 @@ $)
       ( vx vy cop cnp wcel cnq wss wa cv wrex cltq wbr wb wral wn wo wi w3a
       elinp simpllr sylbi ) BAEFGBHIZAHIZJCKZBGZCHLDKZAGZDHLJZJUGUFUHMNZUHBGJDH
       LOCHPUIUKUFAGZJCHLODHPJUGULJQCHPUKUGUIRSDHPCHPTZJUEABDCUAUDUEUJUMUBUC $.
+  $}
+
+  $( An element of a positive real's lower cut is a positive fraction.
+     (Contributed by Jim Kingdon, 28-Sep-2019.) $)
+  elprnql $p |- ( ( <. L , U >. e. P. /\ B e. L ) -> B e. Q. ) $=
+    ( cop cnp wcel cnq prssnql sselda ) CBDEFCGABCHI $.
+
+  $( An element of a positive real's upper cut is a positive fraction.
+     (Contributed by Jim Kingdon, 28-Sep-2019.) $)
+  elprnqu $p |- ( ( <. L , U >. e. P. /\ B e. U ) -> B e. Q. ) $=
+    ( cop cnp wcel cnq prssnqu sselda ) CBDEFBGABCHI $.
+
+  $( The empty set is not a positive real.  (Contributed by NM,
+     15-Nov-1995.) $)
+  0npr $p |- -. (/) e. P. $=
+    ( vx c0 cnp wcel c1st cfv c2nd cop cv cnq wrex noel 1st0 eleq2i mtbir rexex
+    wex nex mto prml prop ) BCDBEFZBGFZHCDZUDAIZUBDZAJKZUGUFAQUFAUFUEBDUELUBBUE
+    MNORUFAJPSAUCUBTSBUAS $.
+
+  ${
+    $d b c L $.  $d b c U $.  $d b c B $.  $d b c C $.
+    $( A lower cut is closed downwards under the positive fractions.
+       (Contributed by Jim Kingdon, 28-Sep-2019.) $)
+    prcdnql $p |- ( ( <. L , U >. e. P. /\ B e. L ) ->
+        ( C <Q B -> C e. L ) ) $=
+      ( vc vb wcel wa cltq wbr cnq ltrelnq brel cv wi wceq eleq1 wrex wb wral
+      cop cnp simpld adantl breq1 imbi12d imbi2d ancomd an42 anbi12d rspcev wss
+      breq2 wn wo w3a elinp simpr1l sylbi r19.21bi syl5ibrcom 3impb 3com12 impd
+      3expib syl5bi mpand com12 ancoms vtoclg mpcom ex ) DCUAUBGZADGZHZBAIJZBDG
+      ZBKGZVOVPHVQVPVRVOVPVRAKGZBAKKILMUCUDVRVOVPVQVOENZAIJZVTDGZOZOVOVPVQOZOEB
+      KVTBPZWCWDVOWEWAVPWBVQVTBAIUEVTBDQUFUGVNVMWCWAVNVMHZWBWAVSVTKGZHZWFWBWAWG
+      VSVTAKKILMUHWHWFHVSVNHZVMWGHZHWAWBVSWGVNVMUIWAWIWJWBWAVSVNWJWBOZVSWAVNWKV
+      SWAVNWKVSWAVNHZHWBWJVTFNZIJZWMDGZHZFKRZWPWLFAKWMAPWNWAWOVNWMAVTIUMWMADQUJ
+      UKVMWBWQSZEKVMDKULCKULHWBEKRWMCGZFKRHHZWREKTZWSWNVTCGZHEKRSFKTZHWBXBHUNEK
+      TZWNWBWSUOOFKTEKTZUPHXACDFEUQXAXCXDXEWTURUSUTVAVBVCVEVDVFVGVHVIVJVDVKVL
+      $.
+  $}
+
+  $( A positive fraction not in a lower cut is an upper bound.  (Contributed by
+     Jim Kingdon, 29-Sep-2019.) $)
+  prubl $p |- ( ( ( <. L , U >. e. P. /\ B e. L ) /\ C e. Q. ) ->
+      ( -. C e. L -> B <Q C ) ) $=
+    ( cop cnp wcel wa cnq wn wceq cltq wbr wo eleq1 biimpcd adantl prcdnql jaod
+    wi con3d adantr wb elprnql nqtric sylan sylibrd ) DCEFGZADGZHZBIGZHBDGZJZAB
+    KZBALMZNZJZABLMZUJUMUQTUKUJUPULUJUNULUOUIUNULTUHUNUIULABDOPQABCDRSUAUBUJAIG
+    UKURUQUCACDUDABUEUFUG $.
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y L $.  $d x y U $.
+    $( A lower cut has no largest member.  (Contributed by Jim Kingdon,
+       29-Sep-2019.) $)
+    prnmaxl $p |- ( ( <. L , U >. e. P. /\ B e. L ) -> E. x e. L B <Q x ) $=
+      ( vy cop wcel wa cv cltq wbr wex wrex cnq wb wral wi wss df-rex sylibr wn
+      cnp elprnql wo w3a elinp simpr1l sylbi eleq1 breq1 anbi1d rexbidv bibi12d
+      wceq rspcv bi1 syl56 impd mpcom sylib ltrelnq brel simprd pm4.71ri anbi1i
+      ancom anass 3bitr3i exbii ) DCFUBGZBDGZHZAIZDGZBVMJKZHZALZVOADMVLVMNGZVOV
+      NHZHZALZVQVLVSANMZWABNGZVLWBBCDUCWCVJVKWBVJEIZDGZWDVMJKZVNHZANMZOZENPZWCV
+      KWBOZVKWBQVJDNRCNRHWEENMVMCGZANMHHZWJWLWFWDCGZHENMOANPZHWEWNHUAENPZWFWEWL
+      UDQANPENPZUEHWJCDAEUFWJWOWPWQWMUGUHWIWKEBNWDBUNZWEVKWHWBWDBDUIWRWGVSANWRW
+      FVOVNWDBVMJUJUKULUMUOVKWBUPUQURUSVSANSUTVPVTAVSVRVOHZVNHVPVTVOWSVNVOVRVOW
+      CVRBVMNNJVAVBVCVDVEVOVNVFVRVOVNVGVHVITVOADST $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x y L $.  $d x y U $.
+    $( A lower cut has no largest member.  Addition version.  (Contributed by
+       Jim Kingdon, 29-Sep-2019.) $)
+    prnmaddl $p |- ( ( <. L , U >. e. P. /\ B e. L ) ->
+        E. x e. Q. ( B +Q x ) e. L ) $=
+      ( vy cop cnp wcel wa cv cltq wbr wrex cplq cnq prnmaxl wceq ltrelnq brel
+      co ltexnqq biimpcd mpd eleq1a reximdv syl5 rexlimiv syl ) DCFGHBDHIBEJZKL
+      ZEDMBAJNTZDHZAOMZEBCDPUJUMEDUJUKUIQZAOMZUIDHZUMUJBOHUIOHIZUOBUIOOKRSUQUJU
+      OABUIUAUBUCUPUNULAOUIDUKUDUEUFUGUH $.
+  $}
+
+  ${
+    $d q x y $.
+    $( Positive real 'less than' is a relation on positive reals.  (Contributed
+       by NM, 14-Feb-1996.) $)
+    ltrelpr $p |- <P C_ ( P. X. P. ) $=
+      ( vx vy vq cltp cv cnp wcel c2nd cfv c1st cnq wrex copab df-iltp opabssxp
+      wa cxp eqsstri ) DAEZFGBEZFGPCEZSHIGUATJIGPCKLZPABMFFQABCNUBABFFOR $.
   $}
 
 $(
@@ -60244,9 +60383,9 @@ htmldef "DECID" as "<SMALL>DECID</SMALL> ";
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
 
 /* Mathbox of BJ */
-htmldef "isBounded" as "isBounded ";
-  althtmldef "isBounded" as "isBounded ";
-  latexdef "isBounded" as "\mathrm{isBounded} ";
+htmldef "Bdd" as "Bdd ";
+  althtmldef "Bdd" as "Bdd ";
+  latexdef "Bdd" as "\mathrm{Bdd} ";
 /* End of BJ's mathbox */
 
 /* End of typesetting definition section */
@@ -60340,52 +60479,118 @@ $)
 
 $( (End of Mykola Mostovenko's mathbox.) $)
 
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
                 Mathbox for BJ
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+
 This is an experiment to define bounded formulas, following a discussion on
 GitHub between Jim Kingdon, Mario Carneiro and BJ.
+
+It is necessary to be able to distinguish bounded, or Delta_0 , formulas in
+order to state some axioms of Constructive Zermelo--Fraenkel (CZF), set theory,
+like the axiom scheme of bounded separation.  This is also the case for certain
+axiom schemes of bounded arithmetic, like Delta_0 -induction.
+
+To formalize this in Metamath, one has to first choose among two alternatives.
+Either, create a new type "wff0" with a new set of metavariables (ph_0 ...) and
+an axiom "$a wff ph_0" ensuring that bounded formulas are formulas, so that one
+can reuse existing theorems, and then axioms like "$a wff0 ( ph_0 -> ps_0 )".
+Or, introduce a predicate " ` Bdd ` " with the intended meaning that
+" ` Bdd ph ` " is a formula meaning that ` ph ` is a bounded formula.
+We choose the second option, since the first would complicate the grammar,
+risking to make it ambiguous.
+(TODO: elaborate)
+
+The second choice is to view "bounded" either as a syntactic or a semantic
+property.
+For instance, ` A. x T. ` is not syntactically bounded since it has an
+unbounded universal quantifier, but it is semantically bounded since it is
+equivalent to ` T. ` which is bounded.
+We choose the second option, so that formulas using defined symbols can be
+proved bounded.
+
+Finally, note that the axioms have to be written in closed form, rather than
+as inferences, since formulas may have free variables and be semantically
+bounded for some values (but not all) of these variables.
+On the other hand, a formula is bounded if it is equivalent *for all values of
+the free variables* to a bounded one.
+That is why ~ ax-bd0 is an inference: if we posited it in closed form, then we
+could prove for instance ` |- ( ph -> Bdd ph ) ` and ` |- ( -. ph -> Bdd ph ) `
+which is problematic (with the law of excluded middle, this would entail that
+all formulas are bounded, but even without it... TODO: complete).
 $)
 
-  $( Symbol for the predicate ` isBounded ` . $)
-  $c isBounded $.
+  $( Symbol for the predicate ` Bdd ` . $)
+  $c Bdd $.
 
-  $( Syntax for the predicate ` isBounded ` . $)
-  wbd $a wff isBounded ph $.
+  $( Syntax for the predicate ` Bdd ` . $)
+  wbd $a wff Bdd ph $.
 
-  $( The truth value ` T. ` is bounded.  (Contributed by BJ, 25-Sep-2019.) $)
-  ax-bdtru $a |- isBounded T. $.
-
-  $( The truth value ` F. ` is bounded.  (Contributed by BJ, 25-Sep-2019.) $)
-  ax-bdfal $a |- isBounded F. $.
+  ${
+    bd0.1 $e |- ( ph <-> ps ) $.
+    $( A formula equivalent to a bounded one is bounded.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    ax-bd0 $a |- ( Bdd ph -> Bdd ps ) $.
+  $}
 
   $( An implication between two bounded formulas is bounded.  (Contributed by
      BJ, 25-Sep-2019.) $)
-  ax-bdim $a |-
-              ( ( isBounded ph /\ isBounded ps ) -> isBounded ( ph -> ps ) ) $.
+  ax-bdim $a |- ( ( Bdd ph /\ Bdd ps ) -> Bdd ( ph -> ps ) ) $.
 
   $( The conjunction of two bounded formulas is bounded.  (Contributed by BJ,
      25-Sep-2019.) $)
-  ax-bdan $a |-
-              ( ( isBounded ph /\ isBounded ps ) -> isBounded ( ph /\ ps ) ) $.
+  ax-bdan $a |- ( ( Bdd ph /\ Bdd ps ) -> Bdd ( ph /\ ps ) ) $.
 
   $( The disjunction of two bounded formulas is bounded.  (Contributed by BJ,
      25-Sep-2019.) $)
-  ax-bdor $a |-
-              ( ( isBounded ph /\ isBounded ps ) -> isBounded ( ph \/ ps ) ) $.
+  ax-bdor $a |- ( ( Bdd ph /\ Bdd ps ) -> Bdd ( ph \/ ps ) ) $.
 
   $( The negation of a bounded formula is bounded.  (Contributed by BJ,
      25-Sep-2019.) $)
-  ax-bdn $a |- ( isBounded ph -> isBounded -. ph ) $.
+  ax-bdn $a |- ( Bdd ph -> Bdd -. ph ) $.
 
   $( A bounded universal quantification of a bounded formula is bounded.
      (Contributed by BJ, 25-Sep-2019.) $)
-  ax-bdal $a |- ( isBounded ph -> isBounded A. x e. y ph ) $.
+  ax-bdal $a |- ( Bdd ph -> Bdd A. x e. y ph ) $.
 
   $( A bounded existential quantification of a bounded formula is bounded.
      (Contributed by BJ, 25-Sep-2019.) $)
-  ax-bdex $a |- ( isBounded ph -> isBounded E. x e. y ph ) $.
+  ax-bdex $a |- ( Bdd ph -> Bdd E. x e. y ph ) $.
 
+  $( An atomic formula is bounded (equality predicate).  (Contributed by BJ,
+     3-Oct-2019.) $)
+  ax-bdeq $a |- Bdd x = y $.
+
+  $( An atomic formula is bounded (membership predicate).  (Contributed by BJ,
+     3-Oct-2019.) $)
+  ax-bdel $a |- Bdd x e. y $.
+
+  ${
+    bd0r.1 $e |- ( ps <-> ph ) $.
+    $( A formula equivalent to a bounded one is bounded; stated with commuted
+       biconditional in antecedent, to work better with definitions ( ` ps ` is
+       the definiens that one wants to prove bounded).  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bd0r $p |- ( Bdd ph -> Bdd ps ) $=
+      ( bicomi ax-bd0 ) ABBACDE $.
+  $}
+
+  $( A biconditional between two bounded formulas is bounded.  (Contributed by
+     BJ, 3-Oct-2019.) $)
+  bj-bdbi $p |- ( ( Bdd ph /\ Bdd ps ) -> Bdd ( ph <-> ps ) ) $=
+    ( wbd wa wi wb ax-bdim ancoms ax-bdan syl2anc dfbi2 bd0r syl ) ACZBCZDZABEZ
+    BAEZDZCZABFZCPQCRCZTABGONUBBAGHQRIJSUAABKLM $.
+
+  $( The truth value ` T. ` is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
+$(  bdtru $p |- Bdd T. $=
+? $.
+$)
+
+  $( The truth value ` F. ` is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
+$(  bdfal $p |- Bdd F. $=
+? $.
+$)
 
 $( (End of BJ's mathbox.) $)

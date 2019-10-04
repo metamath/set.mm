@@ -1,0 +1,82 @@
+#!/bin/sh
+# gourcify - Generate video of set.mm history using Gource.
+# (C) 2019 David A. Wheeler
+# This script is released as open source software under the MIT license.
+# SPDX-License-Identifier: MIT
+
+# Need to install gource, ffmpeg, python3.
+# Ensure pip3 is installed by running "python3 -m ensurepip",
+# then install "ply" library by running "pip3 install ply".
+
+# If you recompile ffmpeg yourself, you'll need to install libx264 first.
+# Install nasm, then:
+# wget http://download.videolan.org/pub/x264/snapshots/last_x264.tar.bz2
+# tar xjvf last_x264.tar.bz2
+# cd x264-snapshot*
+# ./configure --prefix=/usr --enable-static --disable-opencl --disable-avs
+# make && make install
+# Then compile ffmpeg:
+# cd ~/ffmpeg
+# ./configure --enable-shared --disable-static --enable-gpl --enable-libx264
+# make && make install
+# https://stackoverflow.com/questions/45181102/ffmpeg-on-cygwin-failed-to-compile-libx264-error-unknown-type-name-hmodule
+
+set -e -x
+
+# To include music we must download some. Here's what I used:
+# Music by audionautix.com - "Threshold" by Jason Shaw, CC-BY-3.0 Unported.
+
+MUSIC_URL='https://audionautix.com/Music/Threshold.mp3'
+MUSIC='Threshold.mp3'
+
+if which cygstart > /dev/null ; then
+    RUN_COMMAND='cmd /C'
+else
+    RUN_COMMAND=''
+fi
+
+# Sanity check: We need set.mm
+test -f set.mm
+# Sanity check: We need a scripts directory
+test -d scripts
+
+# Download music file if we don't have it.
+if ! [ -f "$MUSIC" ] ; then
+    wget "$MUSIC_URL" || exit 1
+fi
+
+# Make sure we have people avatars, else provide a useful error message.
+if ! [ -d 'people' ] ; then
+    echo "Must create 'people' directory. Recommended approach:" >&2
+    echo "  mkdir -p people" >&2
+    echo "  scripts/download-avatars people" >&2
+    exit 1
+fi
+
+# Get changes in set.mm and record them in Gource log format
+scripts/report-changes.py --gource > changes.log
+
+# Sort by datetime
+sort -n changes.log > changes-sorted.log
+
+# Use Gource to generate image sequence (.ppm format)
+rm -f gource.ppm
+$RUN_COMMAND gource --load-config scripts/gource.config \
+    -o gource.ppm changes-sorted.log
+
+# Convert .ppm image sequence into video
+rm -f gource.mp4
+# ffmpeg -y -r 30 -f image2pipe -vcodec ppm -i gource.ppm \
+#       -pix_fmt yuv420p -threads 0 -bf 0 gource.mp4
+ffmpeg -y -r 30 -f image2pipe -vcodec ppm -i gource.ppm \
+      -pix_fmt yuv420p -threads 0 -bf 0 \
+      -c:v libx264 -crf 18 -movflags +faststart \
+      gource.mp4
+
+# Add audio track
+rm -f gource-muxed.mp4
+ffmpeg -i gource.mp4 -i "$MUSIC" -c:v copy -c:a aac \
+       -strict experimental -filter:a "volume=0.6" gource-muxed.mp4
+
+# Success!
+echo 'Result is in gource-muxed.mp4'
