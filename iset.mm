@@ -12457,17 +12457,6 @@ $)
   $}
 
   ${
-    spimedh.1 $e |- ( ch -> A. x ch ) $.
-    spimedh.2 $e |- ( ch -> ( ph -> A. x ph ) ) $.
-    spimedh.3 $e |- ( x = y -> ( ph -> ps ) ) $.
-    $( Deduction version of ~ spime .  (Contributed by NM, 5-Aug-1993.)
-       (New usage is discouraged.) $)
-    spimedh $p |- ( ch -> ( ph -> E. x ps ) ) $=
-      ( wex wa wal adantr imp 19.26 sylanbrc weq adantld spimeh ex ) CABDICAJZB
-      DETCDKZADKZTDKCUAAFLCAUBGMCADNODEPABCHQRS $.
-  $}
-
-  ${
     cbv3.1 $e |- F/ y ph $.
     cbv3.2 $e |- F/ x ps $.
     cbv3.3 $e |- ( x = y -> ( ph -> ps ) ) $.
