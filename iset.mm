@@ -59311,6 +59311,31 @@ $)
   $}
 
   ${
+    $d l u q r A $.
+    $( Membership in positive reals, using ` 1st ` and ` 2nd ` to refer to the
+       lower and upper cut.  (Contributed by Jim Kingdon, 3-Oct-2019.) $)
+    elnp1st2nd $p |- ( A e. P. <-> ( (
+        A e. ( ~P Q. X. ~P Q. ) /\
+        ( ( 1st ` A ) C_ Q. /\ ( 2nd ` A ) C_ Q. ) /\
+        ( E. q e. Q. q e. ( 1st ` A ) /\ E. r e. Q. r e. ( 2nd ` A ) ) ) /\ (
+        ( A. q e. Q. ( q e. ( 1st ` A ) <->
+            E. r e. Q. ( q <Q r /\ r e. ( 1st ` A ) ) ) /\
+          A. r e. Q. ( r e. ( 2nd ` A ) <->
+            E. q e. Q. ( q <Q r /\ q e. ( 2nd ` A ) ) ) ) /\
+        A. q e. Q. -. ( q e. ( 1st ` A ) /\ q e. ( 2nd ` A ) ) /\
+        A. q e. Q. A. r e. Q. ( q <Q r ->
+          ( q e. ( 1st ` A ) \/ r e. ( 2nd ` A ) ) )
+        ) ) ) $=
+      ( cnp wcel cnq cpw cxp c1st cfv wss c2nd wa cv wrex w3a wral jca sylibr
+      wb cltq wbr wn wo wi npsspw sseli cop prop elinp sylib simpld 3anass wceq
+      simprd simpl1 1st2nd2 syl 3simpc anim1i eqeltrd impbii ) ADEZAFGZVDHZEZAI
+      JZFKALJZFKMZCNZVGEZCFOBNZVHEZBFOMZPZVKVJVLUAUBZVLVGEMBFOTCFQVMVPVJVHEZMCF
+      OTBFQMVKVQMUCCFQVPVKVMUDUEBFQCFQPZMZVCVOVRVCVFVIVNMZMVOVCVFVTDVEAUFUGVCVT
+      VRVCVGVHUHZDEZVTVRMZAUIVHVGBCUJZUKZULRVFVIVNUMSVCVTVRWEUORVSAWADVSVFAWAUN
+      VFVIVNVRUPAVDVDUQURVSWCWBVOVTVRVFVIVNUSUTWDSVAVB $.
+  $}
+
+  ${
     $d x y L $.  $d U x y $.
     $( A positive real's lower cut is inhabited.  (Contributed by Jim Kingdon,
        27-Sep-2019.) $)
@@ -59508,7 +59533,7 @@ $)
   $}
 
   ${
-    $d x y z f g h A $.  $d x y z f g h B $.  $d x y z f g h w v G $.
+    $d x y z f g h w v A $.  $d x y z f g h w v B $.  $d x y z f g h w v G $.
     $d f g F $.  $d f g h C $.  $d f g h D $.
     genpelvl.1 $e |- F = ( w e. P. , v e. P. |->
       <. { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 1st ` w ) /\
@@ -59546,6 +59571,22 @@ $)
       ( cnp cv c1st cfv wcel w3a cnq wrex crab c2nd nqex co wceq cop rabex opex
       dmmpt2 ) DEJJBKZDKZLMNCKZEKZLMNAKUGUIGUAUBZOCPQBPQZAPRZUGUHSMNUIUJSMNUKOC
       PQBPQZAPRZUCFHUMUOULAPTUDUNAPTUDUEUF $.
+
+    $( Result of general operation on positive reals is an ordered pair of sets
+       of positive fractions.  (Contributed by Jim Kingdon, 4-Oct-2019.) $)
+    genpelpw $p |- ( ( A e. P. /\ B e. P. ) ->
+        ( A F B ) e. ( ~P Q. X. ~P Q. ) ) $=
+      ( wcel cv c1st cfv w3a cnq wrex crab c2nd cnp wa co wceq cop fveq2 eleq2d
+      cpw cxp 3anbi1d 2rexbidv rabbidv opeq12d 3anbi2d nqex rabex ovmpt2 ssrab2
+      opex wss elpw2 mpbir opelxpi mp2an syl6eqel ) FUALGUALUBFGHUCBMZFNOZLZCMZ
+      GNOZLZAMVFVIIUCUDZPZCQRBQRZAQSZVFFTOZLZVIGTOZLZVLPZCQRBQRZAQSZUEZQUHZWDUI
+      ZDEFGUAUAVFDMZNOZLZVIEMZNOZLZVLPZCQRBQRZAQSZVFWFTOZLZVIWITOZLZVLPZCQRBQRZ
+      AQSZUEWCHVHWKVLPZCQRBQRZAQSZVQWRVLPZCQRBQRZAQSZUEWFFUDZWNXDXAXGXHWMXCAQXH
+      WLXBBCQQXHWHVHWKVLXHWGVGVFWFFNUFUGUJUKULXHWTXFAQXHWSXEBCQQXHWPVQWRVLXHWOV
+      PVFWFFTUFUGUJUKULUMWIGUDZXDVOXGWBXIXCVNAQXIXBVMBCQQXIWKVKVHVLXIWJVJVIWIGN
+      UFUGUNUKULXIXFWAAQXIXEVTBCQQXIWRVSVQVLXIWQVRVIWIGTUFUGUNUKULUMJVOWBVNAQUO
+      UPWAAQUOUPUSUQVOWDLZWBWDLZWCWELXJVOQUTVNAQURVOQUOVAVBXKWBQUTWAAQURWBQUOVA
+      VBVOWBWDWDVCVDVE $.
   $}
 
 $(
