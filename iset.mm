@@ -48494,13 +48494,6 @@ $)
     ( cvv crio cv wcel wa cio df-riota vex biantrur iotabii eqtr4i ) ABCDBECFZA
     GZBHABHABCIAOBNABJKLM $.
 
-  $( Restricted iota in terms of iota.  (Contributed by NM, 15-Sep-2011.)
-     Obsolete as of 2-Sep-2019.  Use ~ df-riota instead.
-     (New usage is discouraged.) $)
-  riotaiotaOLD $p |- ( E! x e. A ph
-         -> ( iota_ x e. A ph ) = ( iota x ( x e. A /\ ph ) ) ) $=
-    ( crio cv wcel wa cio wceq wreu df-riota a1i ) ABCDBECFAGBHIABCJABCKL $.
-
   $( Restricted iota in terms of class union.  (Contributed by NM,
      11-Oct-2011.) $)
   riotauni $p |- ( E! x e. A ph
