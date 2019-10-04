@@ -13455,12 +13455,6 @@ $)
     ( wnf wsb wex spsbe 19.9t syl5ib wal nfr stdpc4 syl6 impbid ) ABDZABCEZAPAB
     FOAABCGABHIOAABJPABKABCLMN $.
 
-  $( Substitution has no effect on a non-free variable.  (Contributed by NM,
-     30-May-2009.)  (New usage is discouraged.) $)
-  sbf3t $p |- ( A. x ( ph -> A. x ph ) -> ( [ y / x ] ph <-> ph ) ) $=
-    ( wal wi wsb spsbim sbf2 ax-4 sylbi syl6 stdpc4 imim2i sps impbid ) AABDZEZ
-    BDZABCFZARSPBCFZAAPBCGTPAABCHABIJKQASEBPSAABCLMNO $.
-
   ${
     sbid2h.1 $e |- ( ph -> A. x ph ) $.
     $( An identity law for substitution.  (Contributed by NM, 5-Aug-1993.) $)
