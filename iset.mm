@@ -11794,22 +11794,27 @@ $)
       ( wal wi wn alrimih hbnt syl ) ABBCFGZCFBHZMCFGALCDEIBCJK $.
   $}
 
+  $( If ` x ` is not free in ` ph ` , then it is not free in ` -. ph ` .
+     (Contributed by Mario Carneiro, 24-Sep-2016.)  (Proof shortened by Wolf
+     Lammen, 28-Dec-2017.)  (Revised by BJ, 24-Jul-2019.) $)
+  nfnt $p |- ( F/ x ph -> F/ x -. ph ) $=
+    ( wnf wn nfnf1 wal wi df-nf hbnt sylbi nfd ) ABCZADZBABELAABFGBFMMBFGABHABI
+    JK $.
+
   ${
     nfnd.1 $e |- ( ph -> F/ x ps ) $.
-    $( If in a context ` x ` is not free in ` ps ` , it is not free in
-       ` -. ps ` .  (Contributed by Mario Carneiro, 24-Sep-2016.)  (Proof
-       shortened by Wolf Lammen, 28-Dec-2017.) $)
+    $( Deduction associated with ~ nfnt .  (Contributed by Mario Carneiro,
+       24-Sep-2016.) $)
     nfnd $p |- ( ph -> F/ x -. ps ) $=
-      ( wnf wn nfnf1 wal wi df-nf hbnt sylbi nfd syl ) ABCEZBFZCEDOPCBCGOBBCHIC
-      HPPCHIBCJBCKLMN $.
+      ( wnf wn nfnt syl ) ABCEBFCEDBCGH $.
   $}
 
   ${
     nfn.1 $e |- F/ x ph $.
-    $( If ` x ` is not free in ` ph ` , it is not free in ` -. ph ` .
-       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    $( Inference associated with ~ nfnt .  (Contributed by Mario Carneiro,
+       11-Aug-2016.) $)
     nfn $p |- F/ x -. ph $=
-      ( wn wnf wtru a1i nfnd trud ) ADBEFABABEFCGHI $.
+      ( wnf wn nfnt ax-mp ) ABDAEBDCABFG $.
   $}
 
   ${
