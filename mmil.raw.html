@@ -951,6 +951,14 @@ With excluded middle, ` (/) e. A ` and ` A =/= (/) ` are equivalent (where
 interesting condition constructively.</LI>
 
 <LI>
+Reverse closure in set.mm uses excluded middle (for example ovrcl or ndmfvrcl
+). In iset.mm we add more conditions that we are evaluating operations within
+their domains (for example set.mm's addasspi versus iset.mm's ~ addasspig in
+which conditions such as ` A e. N. ` are added, or set.mm's ltbtwnnq versus
+iset.mm's ~ ltbtwnnqq , in which ` E. x ` is changed to ` E. x e. Q. ` ).
+</LI>
+
+<LI>
 If you get stuck, ask! (for example in a GitHub issue or on the mailing list).
 We have a number of contributors who have experience in constructive
 mathematics in general, or iset.mm in particular, and one of the best things
@@ -989,6 +997,16 @@ in intutionistic logic.</TD>
 <TD>See for example [Bauer] who uses the terminology "proof of negation"
 versus "proof by contradiction" to distinguish these.</TD>
 <TR>
+
+<TR>
+<TD>mt3d</TD>
+<TD>~ mtod </TD>
+</TR>
+
+<TR>
+<TD>nyl2</TD>
+<TD>~ nsyl </TD>
+</TR>
 
 <TR>
 <TD>pm4.63</TD>
@@ -1637,6 +1655,28 @@ middle as seen at ~ ordpwsucexmid .</TD>
 </TR>
 
 <TR>
+<TD>1stval</TD>
+<TD>~ 1stvalg </TD>
+</TR>
+
+<TR>
+<TD>2ndval</TD>
+<TD>~ 2ndvalg </TD>
+</TR>
+
+<TR>
+<TD>1stnpr</TD>
+<TD><I>none</I></TD>
+<TD>May be intuitionizable, but very lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>2ndnpr</TD>
+<TD><I>none</I></TD>
+<TD>May be intuitionizable, but very lightly used in set.mm.</TD>
+</TR>
+
+<TR>
 <TD>brtpos</TD>
 <TD>~ brtposg </TD>
 </TR>
@@ -2044,6 +2084,11 @@ so far there hasn't been a need to do so.</TD>
 <TR>
 <TD>prnadd</TD>
 <TD>~ prnaddl </TD>
+</TR>
+
+<TR>
+<TD>genpv</TD>
+<TD>~ genipv </TD>
 </TR>
 
 </TABLE>

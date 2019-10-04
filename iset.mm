@@ -59142,10 +59142,15 @@ $)
 
   ${
     $d x y q r s $.
-    $( Define addition on positive reals.  This is a "temporary" set used in
-       the construction of complex numbers, and is intended to be used only by
-       the construction.  From Section 11.2.1 of [HoTT], p.  (varies).
-       (Contributed by Jim Kingdon, 26-Sep-2019.) $)
+    $( Define addition on positive reals.  From Section 11.2.1 of [HoTT], p.
+       (varies).  We write this definition to closely resemble the definition
+       in HoTT although some of the conditions (for example, ` r e. Q. ` and
+       ` r e. ( 1st `` x ) ` ) conditions are redundant and can be simplified
+       as shown at ~ genpdf .
+
+       This is a "temporary" set used in the construction of complex numbers,
+       and is intended to be used only by the construction.  (Contributed by
+       Jim Kingdon, 26-Sep-2019.) $)
     df-iplp $a |- +P. = ( x e. P. , y e. P. |->
       <. { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 1st ` x ) /\
         s e. ( 1st ` y ) /\ q = ( r +Q s ) ) } ,
@@ -59357,6 +59362,129 @@ $)
     ltrelpr $p |- <P C_ ( P. X. P. ) $=
       ( vx vy vq cltp cv cnp wcel c2nd cfv c1st cnq wrex copab df-iltp opabssxp
       wa cxp eqsstri ) DAEZFGBEZFGPCEZSHIGUATJIGPCKLZPABMFFQABCNUBABFFOR $.
+  $}
+
+  ${
+    $d A s $.  $d ph q r s $.
+    genpdflem.r $e |- ( ( ph /\ r e. A ) -> r e. Q. ) $.
+    genpdflem.s $e |- ( ( ph /\ s e. B ) -> s e. Q. ) $.
+    $( Simplification of upper or lower cut expression.  Lemma for ~ genpdf .
+       (Contributed by Jim Kingdon, 30-Sep-2019.) $)
+    genpdflem $p |- ( ph -> { q e. Q. | E. r e. Q. E. s e. Q.
+        ( r e. A /\ s e. B /\ q = ( r G s ) ) } =
+        { q e. Q. | E. r e. A E. s e. B q = ( r G s ) } ) $=
+      ( cv wcel cnq wrex wa wex ex pm4.71rd anbi1d exbidv df-rex co wceq 3anass
+      w3a rexbii r19.42v bitri anass exbii bitr4i syl6bbr rexbidv bitrd rabbidv
+      syl6rbbr ) AFJZBKZEJZCKZGJUPURDUAUBZUDZELMZFLMZUTECMZFBMZGLAVCUSUTNZELMZF
+      BMZVEAVCUQVGNZFOZVHAVJUPLKZUQNZVGNZFOZVCAVIVMFAUQVLVGAUQVKAUQVKHPQRSVCVKV
+      INZFOZVNVCVIFLMVPVBVIFLVBUQVFNZELMVIVAVQELUQUSUTUCUEUQVFELUFUGUEVIFLTUGVM
+      VOFVKUQVGUHUIUJUOVGFBTUKAVGVDFBAVGVFEOZVDAVRURLKZUSNZUTNZEOZVGAVFWAEAUSVT
+      UTAUSVSAUSVSIPQRSVGVSVFNZEOWBVFELTWAWCEVSUSUTUHUIUJUOUTECTUKULUMUN $.
+  $}
+
+  ${
+    $d q r s v w $.
+    genpdf.1 $e |- F = ( w e. P. , v e. P. |->
+      <. { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 1st ` w ) /\
+        s e. ( 1st ` v ) /\ q = ( r G s ) ) } ,
+        { q e. Q. | E. r e. Q. E. s e. Q. ( r e. ( 2nd ` w ) /\
+        s e. ( 2nd ` v ) /\ q = ( r G s ) ) } >. ) $.
+    $( Simplified definition of addition or multiplication on positive reals.
+       (Contributed by Jim Kingdon, 30-Sep-2019.) $)
+    genpdf $p |- F = ( w e. P. , v e. P. |-> <.
+        { q e. Q. | E. r e. ( 1st ` w ) E. s e. ( 1st ` v ) q = ( r G s ) } ,
+        { q e. Q. | E. r e. ( 2nd ` w ) E. s e. ( 2nd ` v ) q = ( r G s ) }
+        >. ) $=
+      ( cnp cv c1st cfv wcel w3a cnq wrex crab c2nd cop sylan wceq prop elprnql
+      co cmpt2 wa adantlr adantll genpdflem elprnqu opeq12d mpt2eq3ia eqtri ) C
+      ABIIFJZAJZKLZMZEJZBJZKLZMZGJUNURDUDUAZNEOPFOPGOQZUNUORLZMZURUSRLZMZVBNEOP
+      FOPGOQZSZUEABIIVBEUTPFUPPGOQZVBEVFPFVDPGOQZSZUEHABIIVIVLUOIMZUSIMZUFZVCVJ
+      VHVKVOUPUTDEFGVMUQUNOMZVNVMUPVDSIMZUQVPUOUBZUNVDUPUCTUGVNVAUROMZVMVNUTVFS
+      IMZVAVSUSUBZURVFUTUCTUHUIVOVDVFDEFGVMVEVPVNVMVQVEVPVRUNVDUPUJTUGVNVGVSVMV
+      NVTVGVSWAURVFUTUJTUHUIUKULUM $.
+  $}
+
+  ${
+    $d x y z f g q r s A $.  $d x y z f g q r s B $.
+    $d x y z f g w v q r s G $.  $d f g F $.
+    genp.1 $e |- F = ( w e. P. , v e. P. |->
+      <. { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 1st ` w ) /\
+        z e. ( 1st ` v ) /\ x = ( y G z ) ) } ,
+        { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 2nd ` w ) /\
+        z e. ( 2nd ` v ) /\ x = ( y G z ) ) } >. ) $.
+    genp.2 $e |- ( ( y e. Q. /\ z e. Q. ) -> ( y G z ) e. Q. ) $.
+    $( Value of general operation (addition or multiplication) on positive
+       reals.  (Contributed by Jim Kingon, 3-Oct-2019.) $)
+    genipv $p |- ( ( A e. P. /\ B e. P. ) -> ( A F B ) = <.
+        { q e. Q. | E. r e. ( 1st ` A ) E. s e. ( 1st ` B ) q = ( r G s ) } ,
+        { q e. Q. | E. r e. ( 2nd ` A ) E. s e. ( 2nd ` B ) q = ( r G s ) }
+        >. ) $=
+      ( wcel wceq cfv wrex cnq crab vf vg cnp wa co c1st c2nd cop oveq1 rexeqdv
+      cv fveq2 rabbidv opeq12d eqeq12d oveq2 rexbidv cvv cxp a1i cab rabssab wi
+      nqex elprnql sylan eleq1 syl5ibrcom syl2an rexlimdvva abssdv syl5ss ssexd
+      prop an4s elprnqu opelxp sylanbrc ovmpt2g mpd3an3 vtocl2ga eqeq1 2rexbidv
+      genpdf eqeq2d cbvrex2v syl6bb cbvrabv opeq12i syl6eq ) FUCOGUCOUDFGHUEZAU
+      KZBUKZCUKZIUEZPZCGUFQZRZBFUFQZRZASTZWPCGUGQZRZBFUGQZRZASTZUHZLUKZKUKZJUKZ
+      IUEZPZJWQRKWSRZLSTZXLJXBRKXDRZLSTZUHUAUKZUBUKZHUEZWPCXRUFQZRZBXQUFQZRZAST
+      ZWPCXRUGQZRZBXQUGQZRZASTZUHZPZFXRHUEZYABWSRZASTZYFBXDRZASTZUHZPWKXGPUAUBF
+      GUCUCXQFPZXSYLYJYQXQFXRHUIYRYDYNYIYPYRYCYMASYRYABYBWSXQFUFULUJUMYRYHYOASY
+      RYFBYGXDXQFUGULUJUMUNUOXRGPZYLWKYQXGXRGFHUPYSYNXAYPXFYSYMWTASYSYAWRBWSYSW
+      PCXTWQXRGUFULUJUQUMYSYOXEASYSYFXCBXDYSWPCYEXBXRGUGULUJUQUMUNUOXQUCOZXRUCO
+      ZYJURURUSZOZYKYTUUAUDZYDUROYIUROUUCUUDYDSURSUROUUDVDUTZUUDYDYCAVASYCASVBU
+      UDYCASUUDWPWLSOZBCYBXTYTWMYBOZUUAWNXTOZWPUUFVCZYTUUGUDWMSOZWNSOZUUIUUAUUH
+      UDYTYBYGUHUCOZUUGUUJXQVNZWMYGYBVEVFUUAXTYEUHUCOZUUHUUKXRVNZWNYEXTVEVFUUJU
+      UKUDUUFWPWOSONWLWOSVGVHZVIVOVJVKVLVMUUDYISURUUEUUDYIYHAVASYHASVBUUDYHASUU
+      DWPUUFBCYGYEYTWMYGOZUUAWNYEOZUUIYTUUQUDUUJUUKUUIUUAUURUDYTUULUUQUUJUUMWMY
+      GYBVPVFUUAUUNUURUUKUUOWNYEXTVPVFUUPVIVOVJVKVLVMYDYIURURVQVRDEXQXRUCUCWPCE
+      UKZUFQZRZBDUKZUFQZRZASTZWPCUUSUGQZRZBUVBUGQZRZASTZUHYJHUVABYBRZASTZUVGBYG
+      RZASTZUHUUBUVBXQPZUVEUVLUVJUVNUVOUVDUVKASUVOUVABUVCYBUVBXQUFULUJUMUVOUVIU
+      VMASUVOUVGBUVHYGUVBXQUGULUJUMUNUUSXRPZUVLYDUVNYIUVPUVKYCASUVPUVAYABYBUVPW
+      PCUUTXTUUSXRUFULUJUQUMUVPUVMYHASUVPUVGYFBYGUVPWPCUVFYEUUSXRUGULUJUQUMUNDE
+      HICBAMWDVSVTWAXAXNXFXPWTXMALSWLXHPZWTXHWOPZCWQRBWSRXMUVQWPUVRBCWSWQWLXHWO
+      WBZWCUVRXLXHXIWNIUEZPZBCKJWSWQWMXIPWOUVTXHWMXIWNIUIWEZWNXJPUVTXKXHWNXJXII
+      UPWEZWFWGWHXEXOALSUVQXEUVRCXBRBXDRXOUVQWPUVRBCXDXBUVSWCUVRXLUWABCKJXDXBUW
+      BUWCWFWGWHWIWJ $.
+  $}
+
+  ${
+    $d x y z f g h A $.  $d x y z f g h B $.  $d x y z f g h w v G $.
+    $d f g F $.  $d f g h C $.  $d f g h D $.
+    genpelvl.1 $e |- F = ( w e. P. , v e. P. |->
+      <. { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 1st ` w ) /\
+        z e. ( 1st ` v ) /\ x = ( y G z ) ) } ,
+        { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 2nd ` w ) /\
+        z e. ( 2nd ` v ) /\ x = ( y G z ) ) } >. ) $.
+    genpelvl.2 $e |- ( ( y e. Q. /\ z e. Q. ) -> ( y G z ) e. Q. ) $.
+    $( Membership in lower cut of general operation (addition or
+       multiplication) on positive reals.  (Contributed by Jim Kingdon,
+       2-Oct-2019.) $)
+    genpelvl $p |- ( ( A e. P. /\ B e. P. ) -> ( C e. ( 1st ` ( A F B ) ) <->
+        E. g e. ( 1st ` A ) E. h e. ( 1st ` B ) C = ( g G h ) ) ) $=
+      ( vf wcel wa cnq cfv wrex cnp co c1st cv wceq crab c2nd cop genipv fveq2d
+      rabex op1st syl6eq eleq2d elrabi syl6bi elprnql sylan caovcl syl2an eleq1
+      nqex prop an4s syl5ibrcom rexlimdvva wb eqeq1 2rexbidv elrab3 sylan9bb ex
+      pm5.21ndd ) FUAPZGUAPZQZHRPZHFGKUBZUCSZPZHIUDZJUDZLUBZUEZJGUCSZTIFUCSZTZV
+      PVTHOUDZWCUEZJWETIWFTZORUFZPZVQVPVSWKHVPVSWKWIJGUGSZTIFUGSZTZORUFZUHZUCSW
+      KVPVRWQUCABCDEFGKLJIOMNUIUJWKWPWJORVBUKWOORVBUKULUMUNZWJOHRUOUPVPWDVQIJWF
+      WEVPWAWFPZWBWEPZQQVQWDWCRPZVNWSVOWTXAVNWSQWARPZWBRPZXAVOWTQVNWFWNUHUAPWSX
+      BFVCWAWNWFUQURVOWEWMUHUAPWTXCGVCWBWMWEUQURBCWAWBRLNUSUTVDHWCRVAVEVFVPVQVT
+      WGVGVPVTWLVQWGWRWJWGOHRWHHUEWIWDIJWFWEWHHWCVHVIVJVKVLVM $.
+
+    $( Pre-closure law for general operation on lower cuts.  (Contributed by
+       Jim Kingdon, 2-Oct-2019.) $)
+    genpprecll $p |- ( ( A e. P. /\ B e. P. ) ->
+        ( ( C e. ( 1st ` A ) /\ D e. ( 1st ` B ) ) ->
+        ( C G D ) e. ( 1st ` ( A F B ) ) ) ) $=
+      ( vg vh c1st cfv wcel wa co cnp cv wceq wrex eqid rspceov mp3an3 genpelvl
+      syl5ibr ) HFPQZRZIGPQZRZSHIKTZFGJTPQRFUARGUARSUNNUBOUBKTUCOULUDNUJUDZUKUM
+      UNUNUCUOUNUENOUJULHIUNKUFUGABCDEFGUNNOJKLMUHUI $.
+
+    $( Domain of general operation on positive reals.  (Contributed by Jim
+       Kingdon, 2-Oct-2019.) $)
+    genipdm $p |- dom F = ( P. X. P. ) $=
+      ( cnp cv c1st cfv wcel w3a cnq wrex crab c2nd nqex co wceq cop rabex opex
+      dmmpt2 ) DEJJBKZDKZLMNCKZEKZLMNAKUGUIGUAUBZOCPQBPQZAPRZUGUHSMNUIUJSMNUKOC
+      PQBPQZAPRZUCFHUMUOULAPTUDUNAPTUDUEUF $.
   $}
 
 $(
