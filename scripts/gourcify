@@ -8,6 +8,20 @@
 # Ensure pip3 is installed by running "python3 -m ensurepip",
 # then install "ply" library by running "pip3 install ply".
 
+# E.g., on Ubuntu:
+# sudo apt-get install python3 ffmpeg python3-pip
+# pip3 install ply
+# # Setup to compile Gource:
+# sudo apt-get install build-essential # includes g++
+# sudo apt-get install libsdl2-dev libsdl2-image-dev libpcre3-dev \
+#   libfreetype6-dev libglew-dev libglm-dev ibboost-filesystem-dev libpng-dev
+# cd; git clone --depth 1 https://github.com/acaudwell/Gource.git
+# cd Gource
+# ./autogen.sh
+# ./configure && make
+# sudo make install
+# sudo apt-get install ffmpeg x264
+
 # If you recompile ffmpeg yourself, you'll need to install libx264 first.
 # Install nasm, then:
 # wget http://download.videolan.org/pub/x264/snapshots/last_x264.tar.bz2

@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/usr/bin/env python3
 # iset-match.py: Report where iset.mm statements differ from set.mm.
 # Author: David A. Wheeler
 # SPDX-License-Identifier: MIT
