@@ -59414,8 +59414,7 @@ $)
         z e. ( 2nd ` v ) /\ x = ( y G z ) ) } >. ) $.
     genp.2 $e |- ( ( y e. Q. /\ z e. Q. ) -> ( y G z ) e. Q. ) $.
     $( Value of general operation (addition or multiplication) on positive
-       reals.  (Contributed by NM, 10-Mar-1996.)  (Revised by Mario Carneiro,
-       17-Nov-2014.)  (New usage is discouraged.) $)
+       reals.  (Contributed by Jim Kingon, 3-Oct-2019.) $)
     genipv $p |- ( ( A e. P. /\ B e. P. ) -> ( A F B ) = <.
         { q e. Q. | E. r e. ( 1st ` A ) E. s e. ( 1st ` B ) q = ( r G s ) } ,
         { q e. Q. | E. r e. ( 2nd ` A ) E. s e. ( 2nd ` B ) q = ( r G s ) }
