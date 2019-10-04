@@ -24378,12 +24378,6 @@ $)
        NM, 11-Nov-2005.) $)
     sbcbii $p |- ( [. A / x ]. ph <-> [. A / x ]. ps ) $=
       ( wsbc wb wtru a1i sbcbidv trud ) ACDFBCDFGHABCDABGHEIJK $.
-
-    $( Formula-building inference rule for class substitution.  (Contributed by
-       NM, 11-Nov-2005.)  (New usage is discouraged.)
-       (Proof modification is discouraged.) $)
-    sbcbiiOLD $p |- ( A e. V -> ( [. A / x ]. ph <-> [. A / x ]. ps ) ) $=
-      ( wsbc wb wcel sbcbii a1i ) ACDGBCDGHDEIABCDFJK $.
   $}
 
   ${
