@@ -60581,6 +60581,10 @@ htmldef "DECID" as "<SMALL>DECID</SMALL> ";
 htmldef "Bdd" as "<SMALL>BOUNDED</SMALL> ";
   althtmldef "Bdd" as "&#665;&#7439;&#7452;&#628;&#7429;&#7431;&#7429; ";
   latexdef "Bdd" as "\normalfont\textsc{bounded}} ";
+htmldef "Bddc" as "<SMALL><U>BOUNDED</U></SMALL> ";
+  althtmldef "Bddc" as
+                     "<U>&#665;&#7439;&#7452;&#628;&#7429;&#7431;&#7429;</U> ";
+  latexdef "Bddc" as "\normalfont\textsc{\underline{bounded}}} ";
 /* End of BJ's mathbox */
 
 /* End of typesetting definition section */
@@ -60920,12 +60924,12 @@ $)
      recall that here, "bounded" means "Delta_0 ".  (Contributed by BJ,
      3-Oct-2019.) $)
   bdcvv $p |- Bddc _V $=
-      ( vx cvv wbdc cv wcel wbd wtru bdtru vex tru 2th bd0r df-bdc mpbir ) BCAD
-      BEZFGOHOGAIJKLABMN $.
+    ( vx cvv wbdc cv wcel wbd wtru bdtru vex tru 2th bd0r df-bdc mpbir ) BCADBE
+    ZFGOHOGAIJKLABMN $.
 
   ${
     bd0STRONG.maj $e |- ( ph <-> ps ) $.
-    $( A stronger form of ~ ax-bd0 .  Seems to be needed to prove ~ bdcs .
+    $( A stronger form of ~ ax-bd0 .  Seems to be needed to prove bdcs .
        (Contributed by BJ, 3-Oct-2019.) $)
     ax-bd0STRONG $a |- ( Bdd ph -> Bdd ps ) $.
   $}
