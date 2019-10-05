@@ -12,7 +12,7 @@ while IFS="$sep" read -r date sequence tie item name author url misc; do
   match=$(grep -E "/$label[|][^|]*$" changes-sorted.log | head -n 1)
   timestamp=$(printf '%s' "$match" | cut -d '|' -f 1)
   author_match=$(printf '%s' "$match" | cut -d '|' -f 2)
-  printf '%s\n' "$timestamp|Proved $label - $name ($author), Metamath 100 #${item} ($sequence/100)"
+  printf '%s\n' "$timestamp|Proved $label - $name ($author), Metamath 100 #${item}"
   if [ "$author" != "$author_match" ]; then
     echo "WARNING: Author does not match: $author_match"
   fi
