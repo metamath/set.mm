@@ -6,13 +6,10 @@
 938822400|Proved abstrii - The Triangle Inequality (Norman Megill), Metamath 100 #91
 978048000|Second external contributor (Josh Purinton)
 1010448000|Proved sqr2irr - The Irrationality of the Square Root of 2 (Norman Megill), Metamath 100 #1
-1075334400|Proved pw2en - The Number of Subsets of a Set (Norman Megill), Metamath 100 #52
-1091232000|Proved qnnen - The Denumerability of the Rational Numbers (Mario Carneiro), Metamath 100 #3
+1091232000|Proved qnnen - The Denumerability of the Rational Numbers (Norman Megill, later revised by Mario Carneiro), Metamath 100 #3
 1097625600|Proved ruc - The Non-Denumerability of the Continuum (Norman Megill), Metamath 100 #22
 1110758400|Definition of the cosine function, df-cos
 1115251200|Proved infpn2 - The Infinitude of Primes (Norman Megill), Metamath 100 #11
-1133913600|Proved binom - The Binomial Theorem (Norman Megill), Metamath 100 #44
-1147392000|Proved geoser - Sum of a Geometric Series (Norman Megill), Metamath 100 #66
 1163116800|Proved demoivreALT - De Moivre's Theorem (Steve Rodriguez), Metamath 100 #17
 1163635200|Proved arisum - Sum of an arithmetic series (Frédéric Liné), Metamath 100 #68
 1200096000|Proved sii - The Cauchy-Schwarz Inequality (Norman Megill), Metamath 100 #78
@@ -20,60 +17,16 @@
 1208390400|Proved pythi - Pythagorean Theorem (Norman Megill), Metamath 100 #4
 1301529600|Proved eucalgval - Greatest Common Divisor Algorithm (Paul Chapman), Metamath 100 #69
 1336780800|Mario Carneiro begins contributing
-1345420800|Proved dath - Desargues's Theorem (Norman Megill), Metamath 100 #87
 1353110400|Proved 1arith2 - Fundamental Theorem of Arithmetic (Paul Chapman), Metamath 100 #80
 1393027200|Proved bezout - Bezout's Theorem (Mario Carneiro), Metamath 100 #60
 1393545600|Proved eulerth - Euler's Generalization of Fermat's Little Theorem (Mario Carneiro), Metamath 100 #10
 1394755200|David A. Wheeler begins contributing
 1394755200|Proved bpos - Bertrand's Postulate (Mario Carneiro), Metamath 100 #98
-1397865600|Proved pythagtrip - Formula for Pythagorean Triples (Scott Fenton), Metamath 100 #23
-1398211200|Proved trirecip - Sum of the Reciprocals of the Triangular Numbers (Scott Fenton), Metamath 100 #42
-1400198400|Proved fsumkthpow - Sum of kth powers (Scott Fenton), Metamath 100 #77
-1404000000|Proved itgcl - Lebesgue Measure and Integration (Mario Carneiro), Metamath 100 #86
-1405036800|Proved harmonic - Divergence of the Harmonic Series (Mario Carneiro), Metamath 100 #34
-1405036800|Proved lagsubg - Order of a Subgroup (Mario Carneiro), Metamath 100 #71
-1405209600|Proved hashbc - Formula for the Number of Combinations (Mario Carneiro), Metamath 100 #58
-1405296000|Proved 3dvds - Divisibility by 3 Rule (Mario Carneiro), Metamath 100 #85
-1405468800|Proved 4sq - Four Squares Theorem (Mario Carneiro), Metamath 100 #19
-1406332800|Proved plyrem - The Factor and Remainder Theorems (Mario Carneiro), Metamath 100 #89
-1406678400|Proved basel - Euler's Summation of 1 + (1/2)^2 + (1/3)^2 + .... (Mario Carneiro), Metamath 100 #14
-1407283200|Proved prmrec - Erdős's proof of the divergence of the inverse prime series (Mario Carneiro), Metamath 100 #81
-1409529600|Proved mvth - The Mean Value Theorem (Mario Carneiro), Metamath 100 #75
-1409616000|Proved ftc2 - The Fundamental Theorem of Integral Calculus (Mario Carneiro), Metamath 100 #15
-1410739200|Proved fta - The Fundamental Theorem of Algebra (Mario Carneiro), Metamath 100 #2
-1411344000|Proved rmxycomplete - Solutions to Pell's Equation (Stefan O'Rear), Metamath 100 #39
-1411430400|Proved ang180 - Sum of the Angles of a Triangle (Mario Carneiro), Metamath 100 #27
-1416096000|Proved aaliou - Liouville's Theorem and the Construction of Transcendental Numbers (Stefan O'Rear), Metamath 100 #18
-1421625600|Proved sylow3 - Sylow's Theorem (Mario Carneiro), Metamath 100 #72
-1421884800|Proved erdsze2 - Ascending or Descending Sequences (Mario Carneiro), Metamath 100 #73
-1421971200|Proved subfaclim - Derangements Formula (Mario Carneiro), Metamath 100 #88
-1422057600|Proved wilth - Wilson's Theorem (Mario Carneiro), Metamath 100 #51
-1426032000|Proved konigsberg - The Konigsberg Bridge Problem (Mario Carneiro), Metamath 100 #54
-1428364800|Proved leibpi - Leibniz' Series for Pi (Mario Carneiro), Metamath 100 #26
+1397865600|Large number of Metamath 100 proofs begin being completed
 1429228800|Decimal constructor df-dec added
-1429228800|Proved birthday - The Birthday Problem (Mario Carneiro), Metamath 100 #93
-1429747200|Proved ramsey - Ramsey's Theorem (Mario Carneiro), Metamath 100 #31
-1430006400|Proved cubic - The Solution of a Cubic (Mario Carneiro), Metamath 100 #37
-1430870400|Proved quart - The Solution of the General Quartic Equation (Mario Carneiro), Metamath 100 #46
-1433030400|Proved ptolemy - Ptolemy's Theorem (David A. Wheeler), Metamath 100 #95
-1434067200|Proved lawcos - The Law of Cosines (David A. Wheeler), Metamath 100 #94
-1434672000|Proved lgsquad - Law of Quadratic Reciprocity (Mario Carneiro), Metamath 100 #7
-1434758400|Proved 2sq - All Primes (1 mod 4) Equal the Sum of Two Squares (Mario Carneiro), Metamath 100 #20
-1434758400|Proved amgm - Arithmetic Mean/Geometric Mean (Mario Carneiro), Metamath 100 #38
-1463011200|Proved dirith - Dirichlet's Theorem (Mario Carneiro), Metamath 100 #48
-1463443200|Proved perfect - The Perfect Number Theorem (Mario Carneiro), Metamath 100 #70
-1464739200|Proved pnt - The Prime Number Theorem (Mario Carneiro), Metamath 100 #5
-1481068800|Proved ballotth - The Ballot Problem (aka Bertrand's ballot problem) (Thierry Arnoux), Metamath 100 #30
-1483056000|Proved lhop - L'Hôpital's Rule (Mario Carneiro), Metamath 100 #64
-1483228800|Proved isosctr - Isosceles Triangle Theorem (Saveliy Skresanov), Metamath 100 #65
-1483228800|Proved taylth - Taylor's Theorem (Mario Carneiro), Metamath 100 #35
-1488240000|Proved chordthm - The intersecting chords theorem (David Moews), Metamath 100 #55
-1498694400|Proved stirling - Stirling's approximation formula for n! (Glauco Siliprandi), Metamath 100 #90
-1502064000|Proved incexc - Principle of Inclusion/Exclusion (Mario Carneiro), Metamath 100 #96
 1503532800|Definition of Tarskian geometry using extensible structures, df-trkg
-1504137600|Proved areacirc - The Area of a Circle (Brendan Leahy), Metamath 100 #9
-1506211200|Proved cevath - Theorem of Ceva (Saveliy Skresanov), Metamath 100 #61
-1534204800|Proved eulerpart - The Partition Theorem (by Euler) (Thierry Arnoux), Metamath 100 #45
-1539043200|Proved friendship - The Friendship Theorem (Alexander van der Vekens), Metamath 100 #83
+1534204800|proved eulerpart - The Partition Theorem (by Euler) (Thierry Arnoux), metamath 100 #45
+1539043200|proved friendship - The Friendship Theorem (Alexander van der Vekens), metamath 100 #83
 1550707200|Proved cramer - Cramer's Rule (Alexander van der Vekens), Metamath 100 #97
 1552176000|Proved heron - Heron's Formula (Mario Carneiro), Metamath 100 #57
+1559448000|Publication of "Metamath: A Computer Language for Mathematical Proofs" book
