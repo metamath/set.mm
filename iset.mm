@@ -59533,8 +59533,8 @@ $)
   $}
 
   ${
-    $d x y z f g h w v A $.  $d x y z f g h w v B $.  $d x y z f g h w v G $.
-    $d f g F $.  $d f g h C $.  $d f g h D $.
+    $d x y z f g h w v q A $.  $d x y z f g h w v q B $.
+    $d x y z f g h w v q G $.  $d f g q F $.  $d f g h C $.  $d f g h D $.
     genpelvl.1 $e |- F = ( w e. P. , v e. P. |->
       <. { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 1st ` w ) /\
         z e. ( 1st ` v ) /\ x = ( y G z ) ) } ,
@@ -59587,6 +59587,19 @@ $)
       UFUGUNUKULXIXFWAAQXIXEVTBCQQXIWRVSVQVLXIWQVRVIWIGTUFUGUNUKULUMJVOWBVNAQUO
       UPWAAQUOUPUSUQVOWDLZWBWDLZWCWELXJVOQUTVNAQURVOQUOVAVBXKWBQUTWAAQURWBQUOVA
       VBVOWBWDWDVCVDVE $.
+
+    $( The lower cut produced by addition or multiplication on positive reals
+       is inhabited.  (Contributed by Jim Kingdon, 5-Oct-2019.) $)
+    genpml $p |- ( ( A e. P. /\ B e. P. ) ->
+        E. q e. Q. q e. ( 1st ` ( A F B ) ) ) $=
+      ( vf vg cnp wcel wa cv cfv cnq c1st co wrex wex c2nd prop prml rexex 3syl
+      cop adantr ad2antlr genpprecll imp elprnql sylan anim12i an4s caovcl wceq
+      syl ax-ia2 eleq1d rspcedv mpd anassrs exlimddv ) FOPZGOPZQZMRZFUASZPZJRZF
+      GHUBUASZPZJTUCZMVHVMMUDZVIVHVLFUESZUJOPZVMMTUCVRFUFZMVSVLUGVMMTUHUIUKVJVM
+      QNRZGUASZPZVQNVIWDNUDZVHVMVIWCGUESZUJOPZWDNTUCWEGUFZNWFWCUGWDNTUHUIULVJVM
+      WDVQVJVMWDQZQZVKWBIUBZVOPZVQVJWIWLABCDEFGVKWBHIKLUMUNWJVPWLJWKTWJVKTPZWBT
+      PZQZWKTPVHVMVIWDWOVHVMQWMVIWDQWNVHVTVMWMWAVKVSVLUOUPVIWGWDWNWHWBWFWCUOUPU
+      QURBCVKWBTILUSVAWJVNWKUTZQVNWKVOWJWPVBVCVDVEVFVGVG $.
   $}
 
 $(
