@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Oct-2019
+$( iset.mm - Version of 5-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -60956,6 +60956,47 @@ MM-PA> sh n
 27   mpbir.maj=df-bdc $a |- ( Bddc A <-> Bdd x e. A )
 28 bdcs=mpbir       $p |- Bddc A
 $)
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Bounded separation
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+In this section, we state the axiom scheme of bounded separation, which is part
+of CZF set theory.
+
+$)
+
+  ${
+    $d a b x $.  $d a b ph $.
+    bdsep.1 $e |- Bdd ph $.
+    $( Axiom scheme of bounded (or restricted, or Demta_0 ) separation.  It is
+       stated with all possible disjoint variable conditions, to show that this
+       weak form is sufficient.  For the full axiom of separation, see
+       ~ ax-sep .  (Contributed by BJ, 5-Oct-2019.) $)
+    ax-bdsep $a |- A. a E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          Strong collection
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+In this section, we state the axiom scheme of strong collection, which is part
+of CZF set theory.
+
+$)
+
+  ${
+    $d a b x y $.  $d a b ph $.
+    $( Axiom scheme of strong collection.  It is stated with all possible
+       disjoint variable conditions, to show that this weak form is
+       sufficient.  (Contributed by BJ, 5-Oct-2019.) $)
+    ax-strcoll $a |- A. a ( A. x e. a E. y ph ->
+                                     E. b A. y ( y e. b <-> E. x e. a ph ) ) $.
+  $}
 
 
 $( (End of BJ's mathbox.) $)
