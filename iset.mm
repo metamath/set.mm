@@ -60971,7 +60971,7 @@ $)
   ${
     $d a b x $.  $d a b ph $.
     bdsep.1 $e |- Bdd ph $.
-    $( Axiom scheme of bounded (or restricted, or Demta_0 ) separation.  It is
+    $( Axiom scheme of bounded (or restricted, or Delta_0 ) separation.  It is
        stated with all possible disjoint variable conditions, to show that this
        weak form is sufficient.  For the full axiom of separation, see
        ~ ax-sep .  (Contributed by BJ, 5-Oct-2019.) $)
