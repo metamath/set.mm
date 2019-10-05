@@ -355,6 +355,14 @@ $)
   $c |- $. $( Turnstile (read:  "the following symbol sequence is provable" or
               'a proof exists for") $)
 
+  $( Declare typographical constant symbols that are not directly used
+     in the formalism, but *are* symbols we find useful when
+     explaining the formalism. It is much easier to consistently use
+     a single typographical system when generating text. $)
+
+  $c & $. $( Ampersand (read: "and-also") $)
+  $c => $. $( Big-to (read: "proves") $)
+
   $( wff variable sequence:  ph ps ch th ta et ze si rh mu la ka $)
   $( Introduce some variable names we will use to represent well-formed
      formulas (wff's). $)
@@ -59637,6 +59645,14 @@ htmldef "|-" as
     '<FONT COLOR="#808080" FACE=sans-serif>&#8866; </FONT>'; /* &vdash; */
     /* Without sans-serif, way too big in FF3 */
   latexdef "|-" as "\vdash";
+htmldef "&" as
+    " <IMG SRC='amp.gif' WIDTH=12 HEIGHT=19 ALT='&amp;'> ";
+  althtmldef "&" as " &amp; ";
+  latexdef "&" as " & ";
+htmldef "=>" as
+  " <IMG SRC='bigto.gif' WIDTH=15 HEIGHT=19 ALT='=&gt;'> ";
+  althtmldef "=>" as " &rArr; ";
+  latexdef "=>" as " \Rightarrow ";
 htmldef "ph" as
     "<IMG SRC='_varphi.gif' WIDTH=11 HEIGHT=19 TITLE='ph' ALIGN=TOP>";
   althtmldef "ph" as '<FONT COLOR="#0000FF"><I>&phi;</I></FONT>';
@@ -60562,9 +60578,9 @@ htmldef "DECID" as "<SMALL>DECID</SMALL> ";
 /* Note the "Mathbox of" instead of "Mathbox for" to make searching easier. */
 
 /* Mathbox of BJ */
-htmldef "Bdd" as "Bdd ";
-  althtmldef "Bdd" as "Bdd ";
-  latexdef "Bdd" as "\mathrm{Bdd} ";
+htmldef "Bdd" as "<SMALL>BOUNDED</SMALL> ";
+  althtmldef "Bdd" as "&#665;&#7439;&#7452;&#628;&#7429;&#7431;&#7429; ";
+  latexdef "Bdd" as "\normalfont\textsc{bounded}} ";
 /* End of BJ's mathbox */
 
 /* End of typesetting definition section */
@@ -60663,26 +60679,38 @@ $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
                 Mathbox for BJ
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Bounded formulas
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 This is an experiment to define bounded formulas, following a discussion on
 GitHub between Jim Kingdon, Mario Carneiro and BJ.
 
-It is necessary to be able to distinguish bounded, or Delta_0 , formulas in
-order to state some axioms of Constructive Zermelo--Fraenkel (CZF), set theory,
-like the axiom scheme of bounded separation.  This is also the case for certain
+In order to state certain axiom schemes of Constructive Zermelo&ndash;Fraenkel
+(CZF) set theory, like the axiom scheme of bounded (or restricted, or Delta_0 )
+separation, it is necessary to distinguish certain formulas, called bounded
+(or restricted, or Delta_0 ) formulas.  This is also the case for certain
 axiom schemes of bounded arithmetic, like Delta_0 -induction.
 
-To formalize this in Metamath, one has to first choose among two alternatives.
-Either, create a new type "wff0" with a new set of metavariables (ph_0 ...) and
-an axiom "$a wff ph_0" ensuring that bounded formulas are formulas, so that one
-can reuse existing theorems, and then axioms like "$a wff0 ( ph_0 -> ps_0 )".
-Or, introduce a predicate " ` Bdd ` " with the intended meaning that
-" ` Bdd ph ` " is a formula meaning that ` ph ` is a bounded formula.
+To formalize this in Metamath, there are several choices to make.
+
+A first choice is to either create a new type for bounded formulas, or to
+create a predicate on formulas that indicates whether they are bounded.
+In the first case, one creates a new type "wff0" with a new set of
+metavariables (ph_0 ...) and an axiom "$a wff ph_0" ensuring that bounded
+formulas are formulas, so that one can reuse existing theorems, and then axioms
+like "$a wff0 ( ph_0 -> ps_0 )", etc.
+In the second case, one introduces a predicate " ` Bdd ` " with the intended
+meaning that " ` Bdd ph ` " is a formula meaning that ` ph ` is a bounded
+formula.
 We choose the second option, since the first would complicate the grammar,
 risking to make it ambiguous.
-(TODO: elaborate)
+(TODO: elaborate.)
 
-The second choice is to view "bounded" either as a syntactic or a semantic
+A second choice is to view "bounded" either as a syntactic or a semantic
 property.
 For instance, ` A. x T. ` is not syntactically bounded since it has an
 unbounded universal quantifier, but it is semantically bounded since it is
@@ -60690,15 +60718,29 @@ equivalent to ` T. ` which is bounded.
 We choose the second option, so that formulas using defined symbols can be
 proved bounded.
 
-Finally, note that the axioms have to be written in closed form, rather than
-as inferences, since formulas may have free variables and be semantically
-bounded for some values (but not all) of these variables.
-On the other hand, a formula is bounded if it is equivalent *for all values of
-the free variables* to a bounded one.
-That is why ~ ax-bd0 is an inference: if we posited it in closed form, then we
-could prove for instance ` |- ( ph -> Bdd ph ) ` and ` |- ( -. ph -> Bdd ph ) `
-which is problematic (with the law of excluded middle, this would entail that
-all formulas are bounded, but even without it... TODO: complete).
+A third choice is in the form of the axioms, either in closed form or in
+inference form.
+One cannot state all the axioms in closed form, especially ~ ax-bd0 .
+Indeed, if we posited it in closed form, then we could prove for instance
+` |- ( ph -> Bdd ph ) ` and ` |- ( -. ph -> Bdd ph ) ` which is problematic
+(with the law of excluded middle, this would entail that all formulas are
+bounded, but even without it, too many formulas could be proved bounded...
+(TODO: elaborate.)
+
+Having ~ ax-bd0 in inference form ensures that a formula can be proved bounded
+only if it is equivalent *for all values of the free variables* to a
+syntactically bounded one.  Actually, it could be stated as the inference
+` |- ( ph <-> ps ) => |- ( Bdd ph -> Bdd ps ) ` .
+
+The other axioms (~ ax-bdim through ~ ax-bdsb ) can be written either in
+closed or inference form.  The fact that ~ ax-bd0 is an inference is enough to
+ensure that the closed forms cannot be "exploited" to prove that some unbounded
+formulas are bounded, since ~ ax-bd0 is in inference form.
+(TODO: check.)
+
+However, we state them in inference form here to make it clear that we do not
+exploit any over-permissivity of the axioms.
+
 $)
 
   $( Symbol for the predicate ` Bdd ` . $)
@@ -60708,35 +60750,43 @@ $)
   wbd $a wff Bdd ph $.
 
   ${
-    bd0.1 $e |- ( ph <-> ps ) $.
+    bd0.min $e |- Bdd ph $.
+    bd0.maj $e |- ( ph <-> ps ) $.
     $( A formula equivalent to a bounded one is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
-    ax-bd0 $a |- ( Bdd ph -> Bdd ps ) $.
+    ax-bd0 $a |- Bdd ps $.
   $}
 
-  $( An implication between two bounded formulas is bounded.  (Contributed by
-     BJ, 25-Sep-2019.) $)
-  ax-bdim $a |- ( ( Bdd ph /\ Bdd ps ) -> Bdd ( ph -> ps ) ) $.
+  ${
+    bdim.1 $e |- Bdd ph $.
+    bdim.2 $e |- Bdd ps $.
+    $( An implication between two bounded formulas is bounded.  (Contributed by
+       BJ, 25-Sep-2019.) $)
+    ax-bdim $a |- Bdd ( ph -> ps ) $.
 
-  $( The conjunction of two bounded formulas is bounded.  (Contributed by BJ,
-     25-Sep-2019.) $)
-  ax-bdan $a |- ( ( Bdd ph /\ Bdd ps ) -> Bdd ( ph /\ ps ) ) $.
+    $( The conjunction of two bounded formulas is bounded.  (Contributed by BJ,
+       25-Sep-2019.) $)
+    ax-bdan $a |- Bdd ( ph /\ ps ) $.
 
-  $( The disjunction of two bounded formulas is bounded.  (Contributed by BJ,
-     25-Sep-2019.) $)
-  ax-bdor $a |- ( ( Bdd ph /\ Bdd ps ) -> Bdd ( ph \/ ps ) ) $.
+    $( The disjunction of two bounded formulas is bounded.  (Contributed by BJ,
+       25-Sep-2019.) $)
+    ax-bdor $a |- Bdd ( ph \/ ps ) $.
+  $}
 
-  $( The negation of a bounded formula is bounded.  (Contributed by BJ,
-     25-Sep-2019.) $)
-  ax-bdn $a |- ( Bdd ph -> Bdd -. ph ) $.
+  ${
+    bdn.1 $e |- Bdd ph $.
+    $( The negation of a bounded formula is bounded.  (Contributed by BJ,
+       25-Sep-2019.) $)
+    ax-bdn $a |- Bdd -. ph $.
 
-  $( A bounded universal quantification of a bounded formula is bounded.
-     (Contributed by BJ, 25-Sep-2019.) $)
-  ax-bdal $a |- ( Bdd ph -> Bdd A. x e. y ph ) $.
+    $( A bounded universal quantification of a bounded formula is bounded.
+       (Contributed by BJ, 25-Sep-2019.) $)
+    ax-bdal $a |- Bdd A. x e. y ph $.
 
-  $( A bounded existential quantification of a bounded formula is bounded.
-     (Contributed by BJ, 25-Sep-2019.) $)
-  ax-bdex $a |- ( Bdd ph -> Bdd E. x e. y ph ) $.
+    $( A bounded existential quantification of a bounded formula is bounded.
+       (Contributed by BJ, 25-Sep-2019.) $)
+    ax-bdex $a |- Bdd E. x e. y ph $.
+  $}
 
   $( An atomic formula is bounded (equality predicate).  (Contributed by BJ,
      3-Oct-2019.) $)
@@ -60747,29 +60797,161 @@ $)
   ax-bdel $a |- Bdd x e. y $.
 
   ${
-    bd0r.1 $e |- ( ps <-> ph ) $.
+    bdsb.1 $e |- Bdd ph $.
+    $( The proposition resulting of proper substitution in a bounded formula is
+       bounded.  Apparently, this cannot be proved from other axioms, since
+       neither the definiendum in ~ df-sb , nor any other equivalent formula,
+       is syntactically bounded.  (Contributed by BJ, 3-Oct-2019.) $)
+    ax-bdsb $a |- Bdd [ y / x ] ph $.
+  $}
+
+  ${
+    bd0r.min $e |- Bdd ph $.
+    bd0r.maj $e |- ( ps <-> ph ) $.
     $( A formula equivalent to a bounded one is bounded; stated with commuted
        biconditional in antecedent, to work better with definitions ( ` ps ` is
        the definiens that one wants to prove bounded).  (Contributed by BJ,
        3-Oct-2019.) $)
-    bd0r $p |- ( Bdd ph -> Bdd ps ) $=
-      ( bicomi ax-bd0 ) ABBACDE $.
+    bd0r $p |- Bdd ps $=
+      ( bicomi ax-bd0 ) ABCBADEF $.
   $}
 
-  $( A biconditional between two bounded formulas is bounded.  (Contributed by
-     BJ, 3-Oct-2019.) $)
-  bj-bdbi $p |- ( ( Bdd ph /\ Bdd ps ) -> Bdd ( ph <-> ps ) ) $=
-    ( wbd wa wi wb ax-bdim ancoms ax-bdan syl2anc dfbi2 bd0r syl ) ACZBCZDZABEZ
-    BAEZDZCZABFZCPQCRCZTABGONUBBAGHQRIJSUAABKLM $.
+  ${
+    bdbi.1 $e |- Bdd ph $.
+    bdbi.2 $e |- Bdd ps $.
+    $( A biconditional between two bounded formulas is bounded.  (Contributed
+       by BJ, 3-Oct-2019.) $)
+    bj-bdbi $p |- Bdd ( ph <-> ps ) $=
+      ( wi wa wb ax-bdim ax-bdan dfbi2 bd0r ) ABEZBAEZFABGLMABCDHBADCHIABJK $.
 
-  $( The truth value ` T. ` is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
-$(  bdtru $p |- Bdd T. $=
-? $.
-$)
+    bd3or.3 $e |- Bdd ch $.
+    $( A disjunction of three bounded formulas is bounded.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bj-bd3or $p |- Bdd ( ph \/ ps \/ ch ) $=
+      ( wo w3o ax-bdor df-3or bd0r ) ABGZCGABCHLCABDEIFIABCJK $.
+
+    $( A conjunction of three bounded formulas is bounded.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bj-bd3an $p |- Bdd ( ph /\ ps /\ ch ) $=
+      ( wa w3a ax-bdan df-3an bd0r ) ABGZCGABCHLCABDEIFIABCJK $.
+  $}
+
+  $( The truth value ` T. ` is bounded.  Note that the proof uses ~ dftru2
+     since in the definition ~ df-tru , the definiens is not syntactically
+     bounded.  (Contributed by BJ, 3-Oct-2019.) $)
+  bdtru $p |- Bdd T. $=
+    ( vx weq wi wtru ax-bdeq ax-bdim dftru2 bd0r ) AABZICDIIAAEZJFIGH $.
 
   $( The truth value ` F. ` is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
-$(  bdfal $p |- Bdd F. $=
-? $.
+  bdfal $p |- Bdd F. $=
+    ( wtru wn wfal bdtru ax-bdn df-fal bd0r ) ABCADEFG $.
+
+  ${
+    bdxor.1 $e |- Bdd ph $.
+    bdxor.2 $e |- Bdd ps $.
+    $( The exclusive disjunction of two bounded formulas is bounded.
+       (Contributed by BJ, 3-Oct-2019.) $)
+    bdxor $p |- Bdd ( ph \/_ ps ) $=
+      ( wo wa wn wxo ax-bdor ax-bdan ax-bdn df-xor bd0r ) ABEZABFZGZFABHNPABCDI
+      OABCDJKJABLM $.
+  $}
+
+  ${
+    bdclab.1 $e |- Bdd ph $.
+    $( Membership in a class defined by class abstraction using a bounded
+       formula, is a bounded formula.  (Contributed by BJ, 3-Oct-2019.) $)
+    bdclab $p |- Bdd x e. { y | ph } $=
+      ( wsb cv cab wcel ax-bdsb df-clab bd0r ) ACBEBFACGHACBDIABCJK $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Bounded formulas
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+In line with our definitions of classes as extensions of predicates, it is
+useful to define a predicate for bounded classes, which is done in ~ df-bdc .
+
 $)
+
+  $( Symbol for the predicate ` Bddc ` . $)
+  $c Bddc $.
+
+  $( Syntax for the predicate ` Bddc ` . $)
+  wbdc $a wff Bddc A $.
+
+  ${
+    $d x A $.
+    $( Define a bounded class as one such that membership in this class is a
+       bounded formula.  (Contributed by BJ, 3-Oct-2019.) $)
+    df-bdc $a |- ( Bddc A <-> Bdd x e. A ) $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    bdceq.min $e |- Bddc A $.
+    bdceq.maj $e |- A = B $.
+    $( A class equal to a bounded class is bounded.  Note the use of
+       ~ ax-ext .  (Contributed by BJ, 3-Oct-2019.) $)
+    bdceq $p |- Bddc B $=
+      ( vx wbdc cv wcel wbd df-bdc mpbi eleq2i ax-bd0 mpbir ) BFEGZBHZIOAHZPAFQ
+      ICEAJKABODLMEBJN $.
+  $}
+
+  ${
+    bdceqr.min $e |- Bddc A $.
+    bdceqr.maj $e |- B = A $.
+    $( A class equal to a bounded class is bounded.  Commuted hypothesis to
+       work better with definitions (see comment of ~ bd0r ).  (Contributed by
+       BJ, 3-Oct-2019.) $)
+    bdceqr $p |- Bddc B $=
+      ( eqcomi bdceq ) ABCBADEF $.
+  $}
+
+  ${
+    $d x y $.
+    $( A setvar is a bounded class.  (Contributed by BJ, 3-Oct-2019.) $)
+    bdcv $p |- Bddc x $=
+      ( vy cv wbdc wel wbd ax-bdel df-bdc mpbir ) ACZDBAEFBAGBJHI $.
+  $}
+
+  $( The universal class is bounded.  The formulation may sound strange, but
+     recall that here, "bounded" means "Delta_0 ".  (Contributed by BJ,
+     3-Oct-2019.) $)
+  bdcvv $p |- Bddc _V $=
+      ( vx cvv wbdc cv wcel wbd wtru bdtru vex tru 2th bd0r df-bdc mpbir ) BCAD
+      BEZFGOHOGAIJKLABMN $.
+
+  ${
+    bd0STRONG.maj $e |- ( ph <-> ps ) $.
+    $( A stronger form of ~ ax-bd0 .  Seems to be needed to prove ~ bdcs .
+       (Contributed by BJ, 3-Oct-2019.) $)
+    ax-bd0STRONG $a |- ( Bdd ph -> Bdd ps ) $.
+  $}
+
+  ${
+    bdeq.maj $e |- ( ph <-> ps ) $.
+    $( Equality property for ` Bdd ` .  (Contributed by BJ, 3-Oct-2019.) $)
+    bdeq $p |- ( Bdd ph <-> Bdd ps ) $=
+      ( wbd ax-bd0STRONG bicomi impbii ) ADBDABCEBAABCFEG $.
+  $}
+
+$(
+  ${
+    bdcs.1 $e |- A e. _V $.
+    @( A set is a bounded class.  (Contributed by BJ, 3-Oct-2019.) @)
+    bdcs $p |- Bddc A $=
+       ? $.
+  $}
+MM-PA> sh n
+19     vtocl.1=bdcs.1   $? |- A e. _V
+20     vtocl.2=?        $? |- ( y = A -> ( Bdd x e. y <-> Bdd x e. A ) )
+23     vtocl.3=ax-bdel  $a |- Bdd x e. y
+24   mpbir.min=vtocl  $p |- Bdd x e. A
+27   mpbir.maj=df-bdc $a |- ( Bddc A <-> Bdd x e. A )
+28 bdcs=mpbir       $p |- Bddc A
+$)
+
 
 $( (End of BJ's mathbox.) $)
