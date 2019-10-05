@@ -9193,54 +9193,207 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+       Universal quantifier for use by df-tru
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+  Even though it isn't ordinarily part of propositional calculus, the universal
+  quantifier ` A. ` is introduced here so that the soundness of definition
+  ~ df-tru can be checked by the same algorithm that is used for predicate
+  calculus.  Its first real use is in axiom ~ ax-5 in the predicate
+  calculus section below.  For those who want propositional calculus to be
+  self-contained i.e. to use wff variables only, the alternate definition
+  ~ dftru2 may be adopted and this subsection moved down to the start of the
+  subsection with ~ wex below.  However, the use of ~ dftru2 as a definition
+  requires a more elaborate definition checking algorithm that we prefer to
+  avoid.
+
+$)
+
+  $( Declare new symbols needed for predicate calculus. $)
+  $c A. $. $( "inverted A" universal quantifier (read:  "for all") $)
+  $c setvar $. $( Individual variable type (read:  "the following is an
+             individual (set) variable" $)
+
+  $( Add 'setvar' as a typecode for bound variables. $)
+  $( $j syntax 'setvar'; bound 'setvar'; $)
+
+  ${
+    $v x $.
+    $( Let ` x ` be an individual variable (temporary declaration). $)
+    vx.wal $f setvar x $.
+    $( Extend wff definition to include the universal quantifier ('for all').
+       ` A. x ph ` is read " ` ph ` (phi) is true for all ` x ` ."  Typically,
+       in its final application ` ph ` would be replaced with a wff containing
+       a (free) occurrence of the variable ` x ` , for example ` x = y ` .  In
+       a universe with a finite number of objects, "for all" is equivalent to a
+       big conjunction (AND) with one wff for each possible case of ` x ` .
+       When the universe is infinite (as with set theory), such a
+       propositional-calculus equivalent is not possible because an infinitely
+       long formula has no meaning, but conceptually the idea is the same. $)
+    wal $a wff A. x ph $.
+  $}
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+        Equality predicate for use by df-tru
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+  Even though it isn't ordinarily part of propositional calculus, the equality
+  predicate ` = ` is introduced here so that the soundness of definition
+  ~ df-tru can be checked by the same algorithm as is used for predicate
+  calculus.  Its first real use is in axiom ~ ax-8 in the predicate calculus
+  section below.  For those who want propositional calculus to be
+  self-contained i.e. to use wff variables only, the alternate definition
+  ~ dftru2 may be adopted and this subsection moved down to just above ~ weq
+  below.  However, the use of ~ dftru2 as a definition requires a more
+  elaborate definition checking algorithm that we prefer to avoid.
+$)
+
+  $c class $.
+
+  $( Add 'class' as a typecode. $)
+  $( $j syntax 'class'; $)
+
+  ${
+    $v x $.
+    $( Let ` x ` be an individual variable (temporary declaration). $)
+    vx.cv $f setvar x $.
+    $( This syntax construction states that a variable ` x ` , which has been
+       declared to be a setvar variable by $f statement vx, is also a class
+       expression.  This can be justified informally as follows.  We know that
+       the class builder ` { y | y e. x } ` is a class by ~ cab .  Since (when
+       ` y ` is distinct from ` x ` ) we have ` x = { y | y e. x } ` by
+       ~ cvjust , we can argue that the syntax " ` class x ` " can be viewed as
+       an abbreviation for " ` class { y | y e. x } ` ".  See the discussion
+       under the definition of class in [Jech] p. 4 showing that "Every set can
+       be considered to be a class."
+
+       While it is tempting and perhaps occasionally useful to view ~ cv as a
+       "type conversion" from a setvar variable to a class variable, keep in
+       mind that ~ cv is intrinsically no different from any other
+       class-building syntax such as ~ cab , ~ cun , or ~ c0 .
+
+       For a general discussion of the theory of classes and the role of ~ cv ,
+       see ~ http://us.metamath.org/mpeuni/mmset.html#class .
+
+       (The description above applies to set theory, not predicate calculus.
+       The purpose of introducing ` class x ` here, and not in set theory where
+       it belongs, is to allow us to express i.e.  "prove" the ~ weq of
+       predicate calculus from the ~ wceq of set theory, so that we don't
+       overload the ` = ` connective with two syntax definitions.  This is done
+       to prevent ambiguity that would complicate some Metamath parsers.) $)
+    cv $a class x $.
+  $}
+
+  $( Declare the equality predicate symbol. $)
+  $c = $.  $( Equal sign (read:  'is equal to') $)
+
+  ${
+    $v A $.
+    $v B $.
+    $( Temporary declarations of ` A ` and ` B ` . $)
+    cA.wceq $f class A $.
+    cB.wceq $f class B $.
+    $( Extend wff definition to include class equality.
+
+       For a general discussion of the theory of classes, see
+       ~ http://us.metamath.org/mpeuni/mmset.html#class .
+
+       (The purpose of introducing ` wff A = B ` here, and not in set theory
+       where it belongs, is to allow us to express i.e.  "prove" the ~ weq of
+       predicate calculus in terms of the ~ wceq of set theory, so that we
+       don't "overload" the ` = ` connective with two syntax definitions.  This
+       is done to prevent ambiguity that would complicate some Metamath
+       parsers.  For example, some parsers - although not the Metamath program
+       - stumble on the fact that the ` = ` in ` x = y ` could be the ` = ` of
+       either ~ weq or ~ wceq , although mathematically it makes no
+       difference.  The class variables ` A ` and ` B ` are introduced
+       temporarily for the purpose of this definition but otherwise not used in
+       predicate calculus.  See ~ df-cleq for more information on the set
+       theory usage of ~ wceq .) $)
+    wceq $a wff A = B $.
+  $}
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+                Define the true and false constants
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
   $c T. $.
-  $c F. $.
 
   $( ` T. ` is a wff. $)
   wtru $a wff T. $.
 
+  ${
+    $v x $.
+    $v y $.
+    $( Temporary declarations of ` x ` and ` y ` for local use by ~ df-tru .
+       These will be redeclared globally in the predicate calculus section. $)
+    vx.tru $f setvar x $.
+    vy.tru $f setvar y $.
+    $( Soundness justification theorem for ~ df-tru .  (Contributed by Mario
+       Carneiro, 17-Nov-2013.)  (Revised by NM, 11-Jul-2019.) $)
+    trujust $p |- ( ( A. x x = x -> A. x x = x )
+              <-> ( A. y y = y -> A. y y = y ) ) $=
+      ( cv wceq wal wi id 2th ) ACZIDAEZJFBCZKDBEZLFJGLGH $.
+
+    $( Definition of the truth value "true", or "verum", denoted by ` T. ` .
+       This is a tautology, as proved by ~ tru .  In this definition, an
+       instance of ~ id is used as the definiens, although any tautology, such
+       as an axiom, can be used in its place.  This particular ~ id instance
+       was chosen so this definition can be checked by the same algorithm that
+       is used for predicate calculus.  This definition should be referenced
+       directly only by ~ tru , and other proofs should depend on ~ tru
+       (directly or indirectly) instead of this definition, since there are
+       many alternative ways to define ` T. ` .  (Contributed by Anthony Hart,
+       13-Oct-2010.)  (Revised by NM, 11-Jul-2019.)
+       (New usage is discouraged.) $)
+    df-tru $a |- ( T. <-> ( A. x x = x -> A. x x = x ) ) $.
+
+    $( The truth value ` T. ` is provable.  (Contributed by Anthony Hart,
+       13-Oct-2010.) $)
+    tru $p |- T. $=
+      ( vx.tru wtru cv wceq wal wi id df-tru mpbir ) BACZJDAEZKFKGAHI $.
+  $}
+
+  $c F. $.
+
   $( ` F. ` is a wff. $)
   wfal $a wff F. $.
 
-  $( Soundness justification theorem for ~ df-tru .  (Contributed by NM,
-     17-Nov-2013.) $)
-  trujust $p |- ( ( ph <-> ph ) <-> ( ps <-> ps ) ) $=
-    ( wb biid 2th ) AACBBCADBDE $.
-
-  $( Definition of ` T. ` , a tautology. ` T. ` is a constant true.  In this
-     definition ~ biid is used as an antecedent, however, any true wff, such as
-     an axiom, can be used in its place.  (Contributed by Anthony Hart,
-     13-Oct-2010.) $)
-  df-tru $a |- ( T. <-> ( ph <-> ph ) ) $.
-
-  $( Definition of ` F. ` , a contradiction. ` F. ` is a constant false.
-     (Contributed by Anthony Hart, 13-Oct-2010.) $)
+  $( Definition of the truth value "false", or "falsum", denoted by ` F. ` .
+     See also ~ df-tru .  (Contributed by Anthony Hart, 22-Oct-2010.) $)
   df-fal $a |- ( F. <-> -. T. ) $.
 
-  $( ` T. ` is provable.  (Contributed by Anthony Hart, 13-Oct-2010.) $)
-  tru $p |- T. $=
-    ( wph wtru wb biid df-tru mpbir ) BAACADAEF $.
-
-  $( ` F. ` is not provable.  (Contributed by Anthony Hart, 22-Oct-2010.)
-     (Proof shortened by Mel L. O'Cat, 11-Mar-2012.) $)
+  $( The truth value ` F. ` is refutable.  (Contributed by Anthony Hart,
+     22-Oct-2010.)  (Proof shortened by Mel L. O'Cat, 11-Mar-2012.) $)
   fal $p |- -. F. $=
     ( wfal wtru wn tru notnoti df-fal mtbir ) ABCBDEFG $.
 
+  $( An alternate definition of "true".  (Contributed by Anthony Hart,
+     13-Oct-2010.)  (Revised by BJ, 12-Jul-2019.)
+     (New usage is discouraged.) $)
+  dftru2 $p |- ( T. <-> ( ph -> ph ) ) $=
+    ( wtru wi tru id 2th ) BAACDAEF $.
+
   ${
     trud.1 $e |- ( T. -> ph ) $.
-    $( Eliminate ` T. ` as an antecedent.  (Contributed by Mario Carneiro,
-       13-Mar-2014.) $)
+    $( Eliminate ` T. ` as an antecedent.  A proposition implied by ` T. ` is
+       true.  (Contributed by Mario Carneiro, 13-Mar-2014.) $)
     trud $p |- ph $=
       ( wtru tru ax-mp ) CADBE $.
   $}
 
-  $( If something is true, it outputs ` T. ` .  (Contributed by Anthony Hart,
-     14-Aug-2011.) $)
+  $( A proposition is equivalent to itself being equivalent to ` T. ` .
+     (Contributed by Anthony Hart, 14-Aug-2011.) $)
   tbtru $p |- ( ph <-> ( ph <-> T. ) ) $=
     ( wtru tru tbt ) BACD $.
 
-  $( If something is not true, it outputs ` F. ` .  (Contributed by Anthony
-     Hart, 14-Aug-2011.) $)
+  $( The negation of a proposition is equivalent to itself being equivalent to
+     ` F. ` .  (Contributed by Anthony Hart, 14-Aug-2011.) $)
   nbfal $p |- ( -. ph <-> ( ph <-> F. ) ) $=
     ( wfal fal nbn ) BACD $.
 
@@ -9260,12 +9413,14 @@ $)
       ( wfal fal 2false ) ACBDE $.
   $}
 
-  $( ` F. ` implies anything.  (Contributed by FL, 20-Mar-2011.)  (Proof
-     shortened by Anthony Hart, 1-Aug-2011.) $)
+  $( The truth value ` F. ` implies anything.  Also called the principle of
+     explosion, or "ex falso quodlibet".  (Contributed by FL, 20-Mar-2011.)
+     (Proof shortened by Anthony Hart, 1-Aug-2011.) $)
   falim $p |- ( F. -> ph ) $=
     ( wfal fal pm2.21i ) BACD $.
 
-  $( ` F. ` implies anything.  (Contributed by Mario Carneiro, 9-Feb-2017.) $)
+  $( The truth value ` F. ` implies anything.  (Contributed by Mario Carneiro,
+     9-Feb-2017.) $)
   falimd $p |- ( ( ph /\ F. ) -> ps ) $=
     ( wfal falim adantl ) CBABDE $.
 
@@ -9275,13 +9430,19 @@ $)
     ( wtru tru a1i ) BACD $.
 
   $( True can be removed from a conjunction.  (Contributed by FL,
-     20-Mar-2011.) $)
+     20-Mar-2011.)  (Proof shortened by Wolf Lammen, 21-Jul-2019.) $)
   truan $p |- ( ( T. /\ ph ) <-> ph ) $=
+    ( wtru wa tru biantrur bicomi ) ABACBADEF $.
+
+  $( Obsolete proof of ~ truan as of 21-Jul-2019.  (Contributed by FL,
+     20-Mar-2011.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  truanOLD $p |- ( ( T. /\ ph ) <-> ph ) $=
     ( wtru wa simpr a1tru ancri impbii ) BACABADABAEFG $.
 
-  $( One definition of negation in logics that take ` F. ` as axiomatic is via
-     "implies contradiction", i.e. ` ph -> F. ` .  (Contributed by Mario
-     Carneiro, 2-Feb-2015.) $)
+  $( Given falsum, we can define the negation of a wff ` ph ` as the statement
+     that a contradiction follows from assuming ` ph ` .  (Contributed by Mario
+     Carneiro, 9-Feb-2017.)  (Proof shortened by Wolf Lammen, 21-Jul-2019.) $)
   dfnot $p |- ( -. ph <-> ( ph -> F. ) ) $=
     ( wfal wn wi wb fal mtt ax-mp ) BCACABDEFBAGH $.
 
@@ -9887,14 +10048,13 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-  Equality-free predicate calculus axioms ax-5, ax-7, ax-gen
+    Universal quantifier (continued)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-$)
 
-  $( Declare new symbols needed for predicate calculus. $)
-  $c A. $. $( "inverted A" universal quantifier (read:  "for all") $)
-  $c setvar $. $( Individual variable type (read:  "the following is an
-             individual (set) variable" $)
+  The universal quantifier was introduced above in ~ wal for use by ~ df-tru .
+  See the comments in that section.  In this section, we continue with the
+  first "real" use of it.
+$)
 
   $( Declare some names for individual variables. $)
   $v x $.
@@ -9918,17 +10078,6 @@ $)
   vu $f setvar u $.
   $( Let ` t ` be an individual variable. $)
   vt $f setvar t $.
-
-  $( Extend wff definition to include the universal quantifier ('for all').
-     ` A. x ph ` is read " ` ph ` (phi) is true for all ` x ` ."  Typically, in
-     its final application ` ph ` would be replaced with a wff containing a
-     (free) occurrence of the variable ` x ` , for example ` x = y ` .  In a
-     universe with a finite number of objects, "for all" is equivalent to a big
-     conjunction (AND) with one wff for each possible case of ` x ` .  When the
-     universe is infinite (as with set theory), such a propositional-calculus
-     equivalent is not possible because an infinitely long formula has no
-     meaning, but conceptually the idea is the same. $)
-  wal $a wff A. x ph $.
 
   $( Axiom of Quantified Implication.  Axiom C4 of [Monk2] p. 105.
      (Contributed by NM, 5-Aug-1993.) $)
@@ -10368,58 +10517,12 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-    Introduce equality axioms
+          Equality predicate (continued)
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+  The equality predicate was introduced above in ~ wceq for use by ~ df-tru .
+  See the comments in that section.  In this section, we continue with the
+  first "real" use of it.
 $)
-
-  $( --- Start of patch to prevent connective overloading $)
-  $c class $.
-  $( This syntax construction states that a variable ` x ` , which has been
-     declared to be a setvar variable by $f statement vx, is also a class
-     expression.  See comments in set.mm for justification.
-
-     While it is tempting and perhaps occasionally useful to view ~ cv as a
-     "type conversion" from a setvar variable to a class variable, keep in mind
-     that ~ cv is intrinsically no different from any other class-building
-     syntax.
-
-     (The description above applies to set theory, not predicate calculus.  The
-     purpose of introducing ` class x ` here, and not in set theory where it
-     belongs, is to allow us to express i.e.  "prove" the ~ weq of predicate
-     calculus from the ~ wceq of set theory, so that we don't "overload" the
-     ` = ` connective with two syntax definitions.  This is done to prevent
-     ambiguity that would complicate some Metamath parsers.) $)
-  cv $a class x $.
-  $( --- End of patch to prevent connective overloading $)
-
-  $( --- Start of old code before overloading prevention patch. $)
-  $(          (None - the above patch had no old code.) $)
-  $( --- End of old code before overloading prevention patch. $)
-
-  $( Declare the equality predicate symbol. $)
-  $c = $.  $( Equal sign (read:  'is equal to') $)
-
-  $( --- Start of patch to prevent connective overloading $)
-  ${
-    $v A $.
-    $v B $.
-    wceq.cA $f class A $.
-    wceq.cB $f class B $.
-    $( Extend wff definition to include class equality.
-
-       (The purpose of introducing ` wff A = B ` here, and not in set theory
-       where it belongs, is to allow us to express i.e.  "prove" the ~ weq of
-       predicate calculus in terms of the ~ wceq of set theory, so that we
-       don't "overload" the ` = ` connective with two syntax definitions.  This
-       is done to prevent ambiguity that would complicate some Metamath
-       parsers.  For example, some parsers - although not the Metamath program
-       - stumble on the fact that the ` = ` in ` x = y ` could be the ` = ` of
-       either ~ weq or ~ wceq , although mathematically it makes no
-       difference.  The class variables ` A ` and ` B ` are introduced
-       temporarily for the purpose of this definition but otherwise not used in
-       predicate calculus.) $)
-    wceq $a wff A = B $.
-  $}
 
   $( Extend wff definition to include atomic formulas using the equality
      predicate.
@@ -10435,19 +10538,6 @@ $)
      24-Jan-2006.) $)
   weq $p wff x = y $=
     ( cv wceq ) ACBCD $.
-  $( --- End of patch to prevent connective overloading $)
-
-  $( --- Start of old code before overloading prevention patch. $)
-  $(
-  @( Extend wff definition to include atomic formulas using the equality
-     predicate.
-
-     After we introduce ~ cv and ~ wceq in set theory, this syntax construction
-     becomes redundant, since it can be derived with the proof
-     "vx cv vy cv wceq". @)
-  weq @a wff x = y @.
-  $)
-  $( --- End of old code before overloading prevention patch. $)
 
   $( Declare the membership predicate symbol. $)
   $c e. $. $( Stylized epsilon $)
@@ -11794,22 +11884,27 @@ $)
       ( wal wi wn alrimih hbnt syl ) ABBCFGZCFBHZMCFGALCDEIBCJK $.
   $}
 
+  $( If ` x ` is not free in ` ph ` , then it is not free in ` -. ph ` .
+     (Contributed by Mario Carneiro, 24-Sep-2016.)  (Proof shortened by Wolf
+     Lammen, 28-Dec-2017.)  (Revised by BJ, 24-Jul-2019.) $)
+  nfnt $p |- ( F/ x ph -> F/ x -. ph ) $=
+    ( wnf wn nfnf1 wal wi df-nf hbnt sylbi nfd ) ABCZADZBABELAABFGBFMMBFGABHABI
+    JK $.
+
   ${
     nfnd.1 $e |- ( ph -> F/ x ps ) $.
-    $( If in a context ` x ` is not free in ` ps ` , it is not free in
-       ` -. ps ` .  (Contributed by Mario Carneiro, 24-Sep-2016.)  (Proof
-       shortened by Wolf Lammen, 28-Dec-2017.) $)
+    $( Deduction associated with ~ nfnt .  (Contributed by Mario Carneiro,
+       24-Sep-2016.) $)
     nfnd $p |- ( ph -> F/ x -. ps ) $=
-      ( wnf wn nfnf1 wal wi df-nf hbnt sylbi nfd syl ) ABCEZBFZCEDOPCBCGOBBCHIC
-      HPPCHIBCJBCKLMN $.
+      ( wnf wn nfnt syl ) ABCEBFCEDBCGH $.
   $}
 
   ${
     nfn.1 $e |- F/ x ph $.
-    $( If ` x ` is not free in ` ph ` , it is not free in ` -. ph ` .
-       (Contributed by Mario Carneiro, 11-Aug-2016.) $)
+    $( Inference associated with ~ nfnt .  (Contributed by Mario Carneiro,
+       11-Aug-2016.) $)
     nfn $p |- F/ x -. ph $=
-      ( wn wnf wtru a1i nfnd trud ) ADBEFABABEFCGHI $.
+      ( wnf wn nfnt ax-mp ) ABDAEBDCABFG $.
   $}
 
   ${
