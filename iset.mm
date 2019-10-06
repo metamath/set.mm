@@ -1,4 +1,4 @@
-$( iset.mm - Version of 5-Oct-2019
+$( iset.mm - Version of 6-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -60598,7 +60598,7 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                Mathboxes for user contributions
+                 Mathboxes for user contributions
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -60667,7 +60667,7 @@ $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                Mathbox for Mykola Mostovenko
+                 Mathbox for Mykola Mostovenko
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -60681,7 +60681,7 @@ $( (End of Mykola Mostovenko's mathbox.) $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-                Mathbox for BJ
+                 Mathbox for BJ
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
@@ -60802,8 +60802,8 @@ $)
 
   ${
     bdsb.1 $e |- Bdd ph $.
-    $( The proposition resulting of proper substitution in a bounded formula is
-       bounded.  Apparently, this cannot be proved from other axioms, since
+    $( The formula resulting of proper substitution in a bounded formula is
+       bounded.  This probably cannot be proved from the other axioms, since
        neither the definiendum in ~ df-sb , nor any other equivalent formula,
        is syntactically bounded.  (Contributed by BJ, 3-Oct-2019.) $)
     ax-bdsb $a |- Bdd [ y / x ] ph $.
@@ -60812,10 +60812,10 @@ $)
   ${
     bd0r.min $e |- Bdd ph $.
     bd0r.maj $e |- ( ps <-> ph ) $.
-    $( A formula equivalent to a bounded one is bounded; stated with commuted
-       biconditional in antecedent, to work better with definitions ( ` ps ` is
-       the definiens that one wants to prove bounded).  (Contributed by BJ,
-       3-Oct-2019.) $)
+    $( A formula equivalent to a bounded one is bounded.  Stated with a
+       commuted (compared to ~ ax-bd0 ) biconditional in the hypothesis, to
+       work better with definitions ( ` ps ` is the definiens that one wants to
+       prove bounded).  (Contributed by BJ, 3-Oct-2019.) $)
     bd0r $p |- Bdd ps $=
       ( bicomi ax-bd0 ) ABCBADEF $.
   $}
@@ -60840,15 +60840,35 @@ $)
       ( wa w3a ax-bdan df-3an bd0r ) ABGZCGABCHLCABDEIFIABCJK $.
   $}
 
-  $( The truth value ` T. ` is bounded.  Note that the proof uses ~ dftru2
-     since in the definition ~ df-tru , the definiens is not syntactically
-     bounded.  (Contributed by BJ, 3-Oct-2019.) $)
+  ${
+    bdth.1 $e |- ph $.
+    $( A truth (a (closed) theorem) is a bounded formula.  (Contributed by BJ,
+       6-Oct-2019.) $)
+    bdth $p |- Bdd ph $=
+      ( vx weq wi ax-bdeq ax-bdim id 2th ax-bd0 ) CCDZKEZAKKCCFZMGLAKHBIJ $.
+  $}
+
+  $( The truth value ` T. ` is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
   bdtru $p |- Bdd T. $=
-    ( vx weq wi wtru ax-bdeq ax-bdim dftru2 bd0r ) AABZICDIIAAEZJFIGH $.
+    ( wtru tru bdth ) ABC $.
 
   $( The truth value ` F. ` is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
   bdfal $p |- Bdd F. $=
     ( wtru wn wfal bdtru ax-bdn df-fal bd0r ) ABCADEFG $.
+
+  ${
+    bdnth.1 $e |- -. ph $.
+    $( A falsity is a bounded formula.  (Contributed by BJ, 6-Oct-2019.) $)
+    bdnth $p |- Bdd ph $=
+      ( wfal bdfal fal 2false ax-bd0 ) CADCAEBFG $.
+
+    $( Alternate proof of ~ bdnth not using ~ bdfal .  Then, ~ bdfal can be
+       proved from this theorem, using ~ fal .  The total number of proof steps
+       would be 17 (for ~ bdnthALT ) + 3 = 20, which is more than 8 (for
+       ~ bdfal ) + 9 (for ~ bdnth ) = 17.  (Contributed by BJ, 6-Oct-2019.) $)
+    bdnthALT $p |- Bdd ph $=
+      ( wtru wn bdtru ax-bdn notnot1 trud 2false ax-bd0 ) CDZACEFKAKDCGHBIJ $.
+  $}
 
   ${
     bdxor.1 $e |- Bdd ph $.
@@ -60871,7 +60891,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-                 Bounded formulas
+                 Bounded classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 In line with our definitions of classes as extensions of predicates, it is
@@ -60889,26 +60909,27 @@ $)
     $d x A $.
     $( Define a bounded class as one such that membership in this class is a
        bounded formula.  (Contributed by BJ, 3-Oct-2019.) $)
-    df-bdc $a |- ( Bddc A <-> Bdd x e. A ) $.
+    df-bdc $a |- ( Bddc A <-> A. x Bdd x e. A ) $.
   $}
 
   ${
     $d x A $.  $d x B $.
     bdceq.min $e |- Bddc A $.
     bdceq.maj $e |- A = B $.
-    $( A class equal to a bounded class is bounded.  Note the use of
-       ~ ax-ext .  (Contributed by BJ, 3-Oct-2019.) $)
+    $( A class equal to a bounded one is bounded.  Note the use of ~ ax-ext .
+       (Contributed by BJ, 3-Oct-2019.) $)
     bdceq $p |- Bddc B $=
-      ( vx wbdc cv wcel wbd df-bdc mpbi eleq2i ax-bd0 mpbir ) BFEGZBHZIOAHZPAFQ
-      ICEAJKABODLMEBJN $.
+      ( vx wbdc cv wcel wbd df-bdc wal mpbi spi eleq2i ax-bd0 mpgbir ) BFEGZBHZ
+      IEEBJQAHZRSIZEAFTEKCEAJLMABQDNOP $.
   $}
 
   ${
     bdceqr.min $e |- Bddc A $.
     bdceqr.maj $e |- B = A $.
-    $( A class equal to a bounded class is bounded.  Commuted hypothesis to
-       work better with definitions (see comment of ~ bd0r ).  (Contributed by
-       BJ, 3-Oct-2019.) $)
+    $( A class equal to a bounded one is bounded.  Stated with a commuted
+       (compared to ~ bdceq ) equality in the hypothesis, to work better with
+       definitions ( ` B ` is the definiens that one wants to prove bounded;
+       see comment of ~ bd0r ).  (Contributed by BJ, 3-Oct-2019.) $)
     bdceqr $p |- Bddc B $=
       ( eqcomi bdceq ) ABCBADEF $.
   $}
@@ -60917,15 +60938,34 @@ $)
     $d x y $.
     $( A setvar is a bounded class.  (Contributed by BJ, 3-Oct-2019.) $)
     bdcv $p |- Bddc x $=
-      ( vy cv wbdc wel wbd ax-bdel df-bdc mpbir ) ACZDBAEFBAGBJHI $.
+      ( vy cv wbdc wel wbd df-bdc ax-bdel mpgbir ) ACZDBAEFBBJGBAHI $.
   $}
 
   $( The universal class is bounded.  The formulation may sound strange, but
      recall that here, "bounded" means "Delta_0 ".  (Contributed by BJ,
      3-Oct-2019.) $)
   bdcvv $p |- Bddc _V $=
-    ( vx cvv wbdc cv wcel wbd wtru bdtru vex tru 2th bd0r df-bdc mpbir ) BCADBE
-    ZFGOHOGAIJKLABMN $.
+    ( vx cvv wbdc cv wcel wbd df-bdc vex bdth mpgbir ) BCADBEZFAABGKAHIJ $.
+
+  ${
+    $d y x $.  $d y ph $.
+    bdcclab.1 $e |- Bdd ph $.
+    $( A class defined by class abstraction using a bounded formula is
+       bounded.  Remark: if bounded separation ~ ax-bdsep is available, then
+       this is actually a set.  (Contributed by BJ, 6-Oct-2019.) $)
+    bdcclab $p |- Bddc { x | ph } $=
+      ( vy cab wbdc cv wcel wbd df-bdc bdclab mpgbir ) ABEZFDGMHIDDMJADBCKL $.
+  $}
+
+  ${
+    $d y x $.  $d y ph $.
+    bdph.1 $e |- Bddc { x | ph } $.
+    $( A formula which defines (by class abstraction) a bounded class is
+       bounded.  (Contributed by BJ, 6-Oct-2019.) $)
+    bdph $p |- Bdd ph $=
+      ( wsb cab wcel wbd wbdc wal df-bdc mpbi spi df-clab ax-bd0 ax-bdsb sbid2v
+      vy cv ) ABQDZQBDASQBQRABEZFZSUAGZQTHUBQICQTJKLAQBMNOAQBPN $.
+  $}
 
   ${
     bd0STRONG.maj $e |- ( ph <-> ps ) $.
@@ -60981,7 +61021,7 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-          Strong collection
+                 Strong collection
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 In this section, we state the axiom scheme of strong collection, which is part
@@ -60996,6 +61036,26 @@ $)
        sufficient.  (Contributed by BJ, 5-Oct-2019.) $)
     ax-strcoll $a |- A. a ( A. x e. a E. y ph ->
                                      E. b A. y ( y e. b <-> E. x e. a ph ) ) $.
+  $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Subset collection
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+In this section, we state the axiom scheme of subset collection, which is part
+of CZF set theory.
+
+$)
+
+  ${
+    $d a b c d x y t $.  $d a b c d ph $.
+    $( Axiom scheme of subset collection.  It is stated with all possible
+       disjoint variable conditions, to show that this weak form is
+       sufficient.  (Contributed by BJ, 5-Oct-2019.) $)
+    ax-sscoll $a |- A. a A. b E. c A. t ( A. x e. a E. y e. b ph ->
+                                     E. d e. c ( y e. d <-> E. x e. a ph ) ) $.
   $}
 
 
