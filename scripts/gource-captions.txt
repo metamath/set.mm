@@ -25,8 +25,8 @@
 1397865600|Large number of Metamath 100 proofs begin being completed
 1429228800|Decimal constructor df-dec added
 1503532800|Definition of Tarskian geometry using extensible structures, df-trkg
-1534204800|proved eulerpart - The Partition Theorem (by Euler) (Thierry Arnoux), metamath 100 #45
-1539043200|proved friendship - The Friendship Theorem (Alexander van der Vekens), metamath 100 #83
+1534204800|Proved eulerpart - The Partition Theorem (by Euler) (Thierry Arnoux), metamath 100 #45
+1539043200|Proved friendship - The Friendship Theorem (Alexander van der Vekens), metamath 100 #83
 1550707200|Proved cramer - Cramer's Rule (Alexander van der Vekens), Metamath 100 #97
 1552176000|Proved heron - Heron's Formula (Mario Carneiro), Metamath 100 #57
 1559448000|Publication of "Metamath: A Computer Language for Mathematical Proofs" book
