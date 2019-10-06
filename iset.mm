@@ -59316,7 +59316,6 @@ $)
        lower and upper cut.  (Contributed by Jim Kingdon, 3-Oct-2019.) $)
     elnp1st2nd $p |- ( A e. P. <-> ( (
         A e. ( ~P Q. X. ~P Q. ) /\
-        ( ( 1st ` A ) C_ Q. /\ ( 2nd ` A ) C_ Q. ) /\
         ( E. q e. Q. q e. ( 1st ` A ) /\ E. r e. Q. r e. ( 2nd ` A ) ) ) /\ (
         ( A. q e. Q. ( q e. ( 1st ` A ) <->
             E. r e. Q. ( q <Q r /\ r e. ( 1st ` A ) ) ) /\
@@ -59326,13 +59325,13 @@ $)
         A. q e. Q. A. r e. Q. ( q <Q r ->
           ( q e. ( 1st ` A ) \/ r e. ( 2nd ` A ) ) )
         ) ) ) $=
-      ( cnp wcel cnq cpw cxp c1st cfv wss c2nd wa cv wrex w3a wral jca sylibr
-      wb cltq wbr wn wo wi npsspw sseli cop prop elinp sylib simpld 3anass wceq
-      simprd simpl1 1st2nd2 syl 3simpc anim1i eqeltrd impbii ) ADEZAFGZVDHZEZAI
-      JZFKALJZFKMZCNZVGEZCFOBNZVHEZBFOMZPZVKVJVLUAUBZVLVGEMBFOTCFQVMVPVJVHEZMCF
-      OTBFQMVKVQMUCCFQVPVKVMUDUEBFQCFQPZMZVCVOVRVCVFVIVNMZMVOVCVFVTDVEAUFUGVCVT
-      VRVCVGVHUHZDEZVTVRMZAUIVHVGBCUJZUKZULRVFVIVNUMSVCVTVRWEUORVSAWADVSVFAWAUN
-      VFVIVNVRUPAVDVDUQURVSWCWBVOVTVRVFVIVNUSUTWDSVAVB $.
+      ( cnp wcel cnq cpw cxp cv c1st cfv wrex wral wss simprd jca elpwid anim1i
+      wa wb c2nd cltq wbr wn wo wi w3a npsspw sseli cop prop elinp sylib simpld
+      wceq 1st2nd2 ad2antrr xp1st xp2nd sylibr eqeltrd impbii ) ADEZAFGZVDHZEZC
+      IZAJKZEZCFLBIZAUAKZEZBFLSZSZVIVGVJUBUCZVJVHESBFLTCFMVLVOVGVKEZSCFLTBFMSVI
+      VPSUDCFMVOVIVLUEUFBFMCFMUGZSZVCVNVQVCVFVMDVEAUHUIVCVHFNZVKFNZSZVMVCWAVMSZ
+      VQVCVHVKUJZDEZWBVQSZAUKVKVHBCULZUMZUNOPVCWBVQWGOPVRAWCDVFAWCUOVMVQAVDVDUP
+      UQVRWEWDVNWBVQVFWAVMVFVSVTVFVHFAVDVDURQVFVKFAVDVDUSQPRRWFUTVAVB $.
   $}
 
   ${
