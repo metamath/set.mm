@@ -79,6 +79,9 @@ scripts/report-changes.py --gource > changes.log
 sort -n changes.log > changes-sorted.log
 
 # Use Gource to generate image sequence (.ppm format)
+# The default "output-framerate" is 60 fps, but we will later encode
+# as 30 fps. That way, we can review and regenerate at a higher speed
+# (shorter time when debugging) yet have a reasonable final length.
 rm -f gource.ppm
 $RUN_COMMAND gource --load-config scripts/gource.config \
     -o gource.ppm changes-sorted.log
