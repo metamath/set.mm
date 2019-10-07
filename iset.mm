@@ -60704,9 +60704,9 @@ To formalize this in Metamath, there are several choices to make.
 A first choice is to either create a new type for bounded formulas, or to
 create a predicate on formulas that indicates whether they are bounded.
 In the first case, one creates a new type "wff0" with a new set of
-metavariables (ph_0 ...) and an axiom "$a wff ph_0" ensuring that bounded
+metavariables (ph_0 ...) and an axiom "$a wff ph_0 " ensuring that bounded
 formulas are formulas, so that one can reuse existing theorems, and then axioms
-like "$a wff0 ( ph_0 -> ps_0 )", etc.
+take the form "$a wff0 ( ph_0 -> ps_0 )", etc.
 In the second case, one introduces a predicate " ` Bdd ` " with the intended
 meaning that " ` Bdd ph ` " is a formula meaning that ` ph ` is a bounded
 formula.
@@ -60739,11 +60739,10 @@ syntactically bounded one.  Actually, it could be stated as the inference
 The other axioms (~ ax-bdim through ~ ax-bdsb ) can be written either in
 closed or inference form.  The fact that ~ ax-bd0 is an inference is enough to
 ensure that the closed forms cannot be "exploited" to prove that some unbounded
-formulas are bounded, since ~ ax-bd0 is in inference form.
+formulas are bounded.
 (TODO: check.)
-
-However, we state them in inference form here to make it clear that we do not
-exploit any over-permissivity of the axioms.
+However, we state all the axioms in inference form to make it clear that we do
+not exploit any over-permissiveness.
 
 $)
 
@@ -60782,13 +60781,19 @@ $)
     $( The negation of a bounded formula is bounded.  (Contributed by BJ,
        25-Sep-2019.) $)
     ax-bdn $a |- Bdd -. ph $.
+  $}
 
+  ${
+    $d x y $.
+    bdal.1 $e |- Bdd ph $.
     $( A bounded universal quantification of a bounded formula is bounded.
-       (Contributed by BJ, 25-Sep-2019.) $)
+       Note the DV condition on ` x , y ` .  (Contributed by BJ,
+       25-Sep-2019.) $)
     ax-bdal $a |- Bdd A. x e. y ph $.
 
     $( A bounded existential quantification of a bounded formula is bounded.
-       (Contributed by BJ, 25-Sep-2019.) $)
+       Note the DV condition on ` x , y ` .  (Contributed by BJ,
+       25-Sep-2019.) $)
     ax-bdex $a |- Bdd E. x e. y ph $.
   $}
 
@@ -60825,18 +60830,40 @@ $)
     bdbi.2 $e |- Bdd ps $.
     $( A biconditional between two bounded formulas is bounded.  (Contributed
        by BJ, 3-Oct-2019.) $)
-    bj-bdbi $p |- Bdd ( ph <-> ps ) $=
+    bdbi $p |- Bdd ( ph <-> ps ) $=
       ( wi wa wb ax-bdim ax-bdan dfbi2 bd0r ) ABEZBAEZFABGLMABCDHBADCHIABJK $.
+  $}
 
+  ${
+    bdstab.1 $e |- Bdd ph $.
+    $( Stability of a bounded formula is bounded.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bdstab $p |- Bdd STAB ph $=
+      ( wn wi wstab ax-bdn ax-bdim df-stab bd0r ) ACZCZADAEKAJABFFBGAHI $.
+
+    $( Testability of a bounded formula is bounded.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bdtest $p |- Bdd TEST ph $=
+      ( wn wo wtest ax-bdn ax-bdor df-test bd0r ) ACZJCZDAEJKABFZJLFGAHI $.
+
+    $( Decidability of a bounded formula is bounded.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bddc $p |- Bdd DECID ph $=
+      ( wn wo wdc ax-bdn ax-bdor df-dc bd0r ) AACZDAEAJBABFGAHI $.
+  $}
+
+  ${
+    bd3or.1 $e |- Bdd ph $.
+    bd3or.2 $e |- Bdd ps $.
     bd3or.3 $e |- Bdd ch $.
     $( A disjunction of three bounded formulas is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
-    bj-bd3or $p |- Bdd ( ph \/ ps \/ ch ) $=
+    bd3or $p |- Bdd ( ph \/ ps \/ ch ) $=
       ( wo w3o ax-bdor df-3or bd0r ) ABGZCGABCHLCABDEIFIABCJK $.
 
     $( A conjunction of three bounded formulas is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
-    bj-bd3an $p |- Bdd ( ph /\ ps /\ ch ) $=
+    bd3an $p |- Bdd ( ph /\ ps /\ ch ) $=
       ( wa w3a ax-bdan df-3an bd0r ) ABGZCGABCHLCABDEIFIABCJK $.
   $}
 
@@ -60913,14 +60940,23 @@ $)
   $}
 
   ${
+    $d x A $.
+    bdeli.1 $e |- Bddc A $.
+    $( The belonging of a setvar in a bounded class is a bounded formula.
+       (Contributed by BJ, 3-Oct-2019.) $)
+    bdeli $p |- Bdd x e. A $=
+  ( cv wcel wbd wbdc wal df-bdc mpbi spi ) ADBEFZABGLAHCABIJK $.
+  $}
+
+  ${
     $d x A $.  $d x B $.
     bdceq.min $e |- Bddc A $.
     bdceq.maj $e |- A = B $.
     $( A class equal to a bounded one is bounded.  Note the use of ~ ax-ext .
        (Contributed by BJ, 3-Oct-2019.) $)
     bdceq $p |- Bddc B $=
-      ( vx wbdc cv wcel wbd df-bdc wal mpbi spi eleq2i ax-bd0 mpgbir ) BFEGZBHZ
-      IEEBJQAHZRSIZEAFTEKCEAJLMABQDNOP $.
+      ( vx wbdc cv wcel wbd df-bdc bdeli eleq2i ax-bd0 mpgbir ) BFEGZBHZIEEBJOA
+      HPEACKABODLMN $.
   $}
 
   ${
@@ -60941,12 +60977,6 @@ $)
       ( vy cv wbdc wel wbd df-bdc ax-bdel mpgbir ) ACZDBAEFBBJGBAHI $.
   $}
 
-  $( The universal class is bounded.  The formulation may sound strange, but
-     recall that here, "bounded" means "Delta_0 ".  (Contributed by BJ,
-     3-Oct-2019.) $)
-  bdcvv $p |- Bddc _V $=
-    ( vx cvv wbdc cv wcel wbd df-bdc vex bdth mpgbir ) BCADBEZFAABGKAHIJ $.
-
   ${
     $d y x $.  $d y ph $.
     bdcclab.1 $e |- Bdd ph $.
@@ -60963,22 +60993,97 @@ $)
     $( A formula which defines (by class abstraction) a bounded class is
        bounded.  (Contributed by BJ, 6-Oct-2019.) $)
     bdph $p |- Bdd ph $=
-      ( wsb cab wcel wbd wbdc wal df-bdc mpbi spi df-clab ax-bd0 ax-bdsb sbid2v
-      vy cv ) ABQDZQBDASQBQRABEZFZSUAGZQTHUBQICQTJKLAQBMNOAQBPN $.
+      ( vy wsb cv cab wcel bdeli df-clab ax-bd0 ax-bdsb sbid2v ) ABDEZDBEANDBDF
+      ABGZHNDOCIADBJKLADBMK $.
+  $}
+
+  ${
+    $d x A $.
+    bdcrab.1 $e |- Bddc A $.
+    bdcrab.2 $e |- Bdd ph $.
+    $( A class defined by restricted abstraction from a bounded class and a
+       bounded formula is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
+    bdcrab $p |- Bddc { x e. A | ph } $=
+      ( cv wcel wa cab crab bdeli ax-bdan bdcclab df-rab bdceqr ) BFCGZAHZBIABC
+      JQBPABCDKELMABCNO $.
+  $}
+
+  $( The universal class is bounded.  The formulation may sound strange, but
+     recall that here, "bounded" means "Delta_0 ".  (Contributed by BJ,
+     3-Oct-2019.) $)
+  bdcvv $p |- Bddc _V $=
+    ( vx cvv wbdc cv wcel wbd df-bdc vex bdth mpgbir ) BCADBEZFAABGKAHIJ $.
+
+  ${
+    $d y x $.  $d y A $.
+    bdss.1 $e |- Bddc A $.
+    $( The inclusion of a setvar in a bounded class is a bounded formula.
+       Note: apparently, we cannot prove from the present axioms that equality
+       of two bounded classes is a bounded formula.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bdss $p |- Bdd x C_ A $=
+      ( vy cv wcel wral wss bdeli ax-bdal dfss3 bd0r ) DEBFZDAEZGNBHMDADBCIJDNB
+      KL $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    bdcdif.1 $e |- Bddc A $.
+    bdcdif.2 $e |- Bddc B $.
+    $( The difference of two bounded classes is bounded.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bdcdif $p |- Bddc ( A \ B ) $=
+      ( vx cv wcel wn wa cab cdif bdeli ax-bdn ax-bdan bdcclab df-dif bdceqr )
+      EFZAGZRBGZHZIZEJABKUBESUAEACLTEBDLMNOEABPQ $.
+
+    $( The union of two bounded classes is bounded.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bdcun $p |- Bddc ( A u. B ) $=
+      ( vx cv wcel wo cab cun bdeli ax-bdor bdcclab df-un bdceqr ) EFZAGZPBGZHZ
+      EIABJSEQREACKEBDKLMEABNO $.
+
+    $( The intersection of two bounded classes is bounded.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bdcin $p |- Bddc ( A i^i B ) $=
+      ( vx cv wcel wa cab cin bdeli ax-bdan bdcclab df-in bdceqr ) EFZAGZPBGZHZ
+      EIABJSEQREACKEBDKLMEABNO $.
+  $}
+
+  $( The empty class is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
+  bdcnul $p |- Bddc (/) $=
+  ( cvv cdif c0 bdcvv bdcdif df-nul bdceqr ) AABCAADDEFG $.
+
+  ${
+    $d x A $.
+    bdcpw.1 $e |- Bddc A $.
+    $( The power class of a bounded class is bounded.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bdcpw $p |- Bddc ~P A $=
+  ( vx cv wss cab cpw bdss bdcclab df-pw bdceqr ) CDAEZCFAGLCCABHICAJK $.
   $}
 
   ${
     bd0STRONG.maj $e |- ( ph <-> ps ) $.
-    $( A stronger form of ~ ax-bd0 .  Seems to be needed to prove bdcs .
-       (Contributed by BJ, 3-Oct-2019.) $)
+    $( A stronger form of ~ ax-bd0 .  (Contributed by BJ, 3-Oct-2019.) $)
     ax-bd0STRONG $a |- ( Bdd ph -> Bdd ps ) $.
   $}
 
   ${
-    bdeq.maj $e |- ( ph <-> ps ) $.
-    $( Equality property for ` Bdd ` .  (Contributed by BJ, 3-Oct-2019.) $)
+    bdeq.1 $e |- ( ph <-> ps ) $.
+    $( Equality property for the predicate ` Bdd ` .  (Contributed by BJ,
+       3-Oct-2019.) $)
     bdeq $p |- ( Bdd ph <-> Bdd ps ) $=
       ( wbd ax-bd0STRONG bicomi impbii ) ADBDABCEBAABCFEG $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    bdceq2.1 $e |- A = B $.
+    $( Equality property for the predicate ` Bddc ` .  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bdceq2 $p |- ( Bddc A <-> Bddc B ) $=
+      ( vx cv wcel wbd wal wbdc eleq2i bdeq albii df-bdc 3bitr4i ) DEZAFZGZDHOB
+      FZGZDHAIBIQSDPRABOCJKLDAMDBMN $.
   $}
 
 $(
@@ -60988,6 +61093,7 @@ $(
     bdcs $p |- Bddc A $=
        ? $.
   $}
+Would need ax-bd0 in closed form...
 MM-PA> sh n
 19     vtocl.1=bdcs.1   $? |- A e. _V
 20     vtocl.2=?        $? |- ( y = A -> ( Bdd x e. y <-> Bdd x e. A ) )
@@ -61016,6 +61122,17 @@ $)
        weak form is sufficient.  For the full axiom of separation, see
        ~ ax-sep .  (Contributed by BJ, 5-Oct-2019.) $)
     ax-bdsep $a |- A. a E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $.
+  $}
+
+  ${
+    $d a b x y $.  $d b y ph $.
+    bdsep2.1 $e |- Bdd ph $.
+    $( Version of ~ ax-bdsep with one DV condition removed.  (Contributed by
+       BJ, 5-Oct-2019.) $)
+    bdsep2 $p |- A. a E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $=
+      ( vy wel wa wb wal wex weq elequ2 anbi1d bibi2d albidv exbidv ax-bdsep
+      spi chvarv ax-gen ) BDGZBCGZAHZIZBJZDKZCUBBFGZAHZIZBJZDKZUGFCFCLZUKUFDUMU
+      JUEBUMUIUDUBUMUHUCAFCBMNOPQULFABFDERSTUA $.
   $}
 
 
@@ -61055,7 +61172,7 @@ $)
        disjoint variable conditions, to show that this weak form is
        sufficient.  (Contributed by BJ, 5-Oct-2019.) $)
     ax-sscoll $a |- A. a A. b E. c A. t ( A. x e. a E. y e. b ph ->
-                                     E. d e. c ( y e. d <-> E. x e. a ph ) ) $.
+                                E. d e. c A. y ( y e. d <-> E. x e. a ph ) ) $.
   $}
 
 
