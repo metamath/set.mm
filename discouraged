@@ -18394,12 +18394,14 @@ Proof modification of "bj-axc16g" is discouraged (30 steps).
 Proof modification of "bj-axd2d" is discouraged (16 steps).
 Proof modification of "bj-axdd2" is discouraged (28 steps).
 Proof modification of "bj-axext3" is discouraged (57 steps).
+Proof modification of "bj-axext4" is discouraged (21 steps).
 Proof modification of "bj-axrep1" is discouraged (190 steps).
 Proof modification of "bj-axrep2" is discouraged (181 steps).
 Proof modification of "bj-axrep3" is discouraged (122 steps).
 Proof modification of "bj-axrep4" is discouraged (130 steps).
 Proof modification of "bj-axrep5" is discouraged (125 steps).
 Proof modification of "bj-axsep" is discouraged (135 steps).
+Proof modification of "bj-axsep2" is discouraged (68 steps).
 Proof modification of "bj-axtd" is discouraged (26 steps).
 Proof modification of "bj-cbv1hv" is discouraged (62 steps).
 Proof modification of "bj-cbv1v" is discouraged (66 steps).
@@ -18482,7 +18484,12 @@ Proof modification of "bj-issetw" is discouraged (21 steps).
 Proof modification of "bj-issetwt" is discouraged (63 steps).
 Proof modification of "bj-naecomsv" is discouraged (19 steps).
 Proof modification of "bj-nalset" is discouraged (100 steps).
+Proof modification of "bj-nfab1" is discouraged (10 steps).
 Proof modification of "bj-nfcjust" is discouraged (29 steps).
+Proof modification of "bj-nfcri" is discouraged (11 steps).
+Proof modification of "bj-nfcrii" is discouraged (23 steps).
+Proof modification of "bj-nfcsym" is discouraged (38 steps).
+Proof modification of "bj-nfnfc" is discouraged (30 steps).
 Proof modification of "bj-nfs1v" is discouraged (10 steps).
 Proof modification of "bj-nfsab1" is discouraged (12 steps).
 Proof modification of "bj-nfsb2v" is discouraged (19 steps).
@@ -18525,6 +18532,8 @@ Proof modification of "bj-vexwt" is discouraged (22 steps).
 Proof modification of "bj-vexwv" is discouraged (14 steps).
 Proof modification of "bj-vexwvt" is discouraged (22 steps).
 Proof modification of "bj-vjust" is discouraged (51 steps).
+Proof modification of "bj-vtocl" is discouraged (12 steps).
+Proof modification of "bj-vtoclf" is discouraged (29 steps).
 Proof modification of "bj-vtoclg1f" is discouraged (23 steps).
 Proof modification of "bj-vtoclg1f1" is discouraged (26 steps).
 Proof modification of "bj-vtoclg1fv" is discouraged (23 steps).
