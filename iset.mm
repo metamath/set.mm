@@ -61127,8 +61127,8 @@ $)
   ${
     $d a b x y $.  $d b y ph $.
     bdsep2.1 $e |- Bdd ph $.
-    $( Version of ~ bdsep with one DV condition removed.  (Contributed by BJ,
-       5-Oct-2019.) $)
+    $( Version of ~ ax-bdsep with one DV condition removed.  (Contributed by
+       BJ, 5-Oct-2019.) $)
     bdsep2 $p |- A. a E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $=
       ( vy wel wa wb wal wex weq elequ2 anbi1d bibi2d albidv exbidv ax-bdsep
       spi chvarv ax-gen ) BDGZBCGZAHZIZBJZDKZCUBBFGZAHZIZBJZDKZUGFCFCLZUKUFDUMU
