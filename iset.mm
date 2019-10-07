@@ -37511,7 +37511,8 @@ $)
     $( Principle of Finite Induction (inference schema), using implicit
        substitutions.  The first four hypotheses establish the substitutions we
        need.  The last two are the basis and the induction hypothesis.  Theorem
-       Schema 22 of [Suppes] p. 136.  (Contributed by NM, 14-Apr-1995.) $)
+       Schema 22 of [Suppes] p. 136.  This is Metamath 100 proof #74.
+       (Contributed by NM, 14-Apr-1995.) $)
     finds $p |- ( A e. _om -> ta ) $=
       ( com wcel cab c0 cv elab csuc wi wral wss 0ex mpbir sucex 3imtr4g peano5
       vex rgen mp2an sseli elabg mpbid ) HOPHAFQZPEOUPHRUPPZGSZUPPZURUAZUPPZUBZ
@@ -37568,7 +37569,8 @@ $)
     findes.2 $e |- ( x e. _om -> ( ph -> [. suc x / x ]. ph ) ) $.
     $( Finite induction with explicit substitution.  The first hypothesis is
        the basis and the second is the induction hypothesis.  Theorem Schema 22
-       of [Suppes] p. 136.  (Contributed by Raph Levien, 9-Jul-2003.) $)
+       of [Suppes] p. 136.  This is an alternative for Metamath 100 proof #74.
+       (Contributed by Raph Levien, 9-Jul-2003.) $)
     findes $p |- ( x e. _om -> ph ) $=
       ( vz vy wsb c0 wsbc csuc dfsbcq2 sbequ sbequ12r com wcel nfv nfim imbi12d
       cv wi nfs1v nfsbc1v weq eleq1 sbequ12 wceq suceq dfsbcq syl chvar finds
