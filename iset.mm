@@ -61115,13 +61115,24 @@ of CZF set theory.
 $)
 
   ${
-    $d a b x $.  $d b ph $.
+    $d a b x $.  $d a b ph $.
     bdsep.1 $e |- Bdd ph $.
     $( Axiom scheme of bounded (or restricted, or Delta_0 ) separation.  It is
        stated with all possible disjoint variable conditions, to show that this
        weak form is sufficient.  For the full axiom of separation, see
        ~ ax-sep .  (Contributed by BJ, 5-Oct-2019.) $)
     ax-bdsep $a |- A. a E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $.
+  $}
+
+  ${
+    $d a b x y $.  $d b y ph $.
+    bdsep2.1 $e |- Bdd ph $.
+    $( Version of ~ bdsep with one DV condition removed.  (Contributed by BJ,
+       5-Oct-2019.) $)
+    bdsep2 $p |- A. a E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $=
+      ( vy wel wa wb wal wex weq elequ2 anbi1d bibi2d albidv exbidv ax-bdsep
+      spi chvarv ax-gen ) BDGZBCGZAHZIZBJZDKZCUBBFGZAHZIZBJZDKZUGFCFCLZUKUFDUMU
+      JUEBUMUIUDUBUMUHUCAFCBMNOPQULFABFDERSTUA $.
   $}
 
 
@@ -61136,7 +61147,7 @@ of CZF set theory.
 $)
 
   ${
-    $d a b x y $.  $d b ph $.
+    $d a b x y $.  $d a b ph $.
     $( Axiom scheme of strong collection.  It is stated with all possible
        disjoint variable conditions, to show that this weak form is
        sufficient.  (Contributed by BJ, 5-Oct-2019.) $)
@@ -61156,7 +61167,7 @@ of CZF set theory.
 $)
 
   ${
-    $d a b c d x y t $.  $d c d ph $.
+    $d a b c d x y t $.  $d a b c d ph $.
     $( Axiom scheme of subset collection.  It is stated with all possible
        disjoint variable conditions, to show that this weak form is
        sufficient.  (Contributed by BJ, 5-Oct-2019.) $)
