@@ -59532,6 +59532,23 @@ $)
   $}
 
   ${
+    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d D x y z $.  $d G x y z $.
+    genplt2i.ord $e |- ( ( x e. Q. /\ y e. Q. /\ z e. Q. ) ->
+      ( x <Q y <-> ( z G x ) <Q ( z G y ) ) ) $.
+    genplt2i.com $e |- ( ( x e. Q. /\ y e. Q. ) -> ( x G y ) = ( y G x ) ) $.
+    $( Operating on both sides of two inequalities, when the operation is
+       consistent with ` <Q ` .  (Contributed by Jim Kingdon, 6-Oct-2019.) $)
+    genplt2i $p |- ( ( A <Q B /\ C <Q D ) -> ( A G C ) <Q ( B G D ) ) $=
+      ( cltq wbr wa co cnq cv wcel adantl ltrelnq syl2an ax-ia1 w3a brel simpll
+      wb simplr simprl wceq caovord2d mpbid ax-ia2 simprr caovordd ltsonq sotri
+      syl2anc ) DEKLZFGKLZMZDFHNZEFHNZKLZVAEGHNZKLZUTVCKLUSUQVBUQURUAUSABCDEFKO
+      HAPZOQZBPZOQZCPZOQUBVEVGKLVIVEHNVIVGHNKLUEUSIRZUQDOQZEOQZMZFOQZGOQZMZVKUR
+      DEOOKSUCZFGOOKSUCZVKVLVPUDTUQVMVPVLURVQVRVKVLVPUFTZUQVMVPVNURVQVRVMVNVOUG
+      TZVFVHMVEVGHNVGVEHNUHUSJRUIUJUSURVDUQURUKUSABCFGEKOHVJVTUQVMVPVOURVQVRVMV
+      NVOULTVSUMUJUTVAVCKOUNSUOUP $.
+  $}
+
+  ${
     $d x y z f g h w v q A $.  $d x y z f g h w v q B $.
     $d x y z f g h w v q G $.  $d f g q F $.  $d f g h C $.  $d f g h D $.
     genpelvl.1 $e |- F = ( w e. P. , v e. P. |->
