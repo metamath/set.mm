@@ -60581,11 +60581,10 @@ htmldef "DECID" as "<SMALL>DECID</SMALL> ";
 
 /* Mathbox of BJ */
 htmldef "Bdd" as "<SMALL>BOUNDED</SMALL> ";
-  althtmldef "Bdd" as "&#665;&#7439;&#7452;&#628;&#7429;&#7431;&#7429; ";
+  althtmldef "Bdd" as "<SMALL>BOUNDED</SMALL> ";
   latexdef "Bdd" as "\normalfont\textsc{bounded}} ";
 htmldef "Bddc" as "<SMALL><U>BOUNDED</U></SMALL> ";
-  althtmldef "Bddc" as
-                     "<U>&#665;&#7439;&#7452;&#628;&#7429;&#7431;&#7429;</U> ";
+  althtmldef "Bddc" as "<SMALL><U>BOUNDED</U></SMALL> ";
   latexdef "Bddc" as "\normalfont\textsc{\underline{bounded}}} ";
 /* End of BJ's mathbox */
 
