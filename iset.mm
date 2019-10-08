@@ -60810,8 +60810,8 @@ $)
     bdsb.1 $e |- Bdd ph $.
     $( The formula resulting of proper substitution in a bounded formula is
        bounded.  This probably cannot be proved from the other axioms, since
-       neither the definiendum in ~ df-sb , nor any other equivalent formula,
-       is syntactically bounded.  (Contributed by BJ, 3-Oct-2019.) $)
+       neither the definiens in ~ df-sb , nor any other equivalent formula, is
+       syntactically bounded.  (Contributed by BJ, 3-Oct-2019.) $)
     ax-bdsb $a |- Bdd [ y / x ] ph $.
   $}
 
@@ -60820,8 +60820,8 @@ $)
     bd0r.maj $e |- ( ps <-> ph ) $.
     $( A formula equivalent to a bounded one is bounded.  Stated with a
        commuted (compared to ~ ax-bd0 ) biconditional in the hypothesis, to
-       work better with definitions ( ` ps ` is the definiens that one wants to
-       prove bounded).  (Contributed by BJ, 3-Oct-2019.) $)
+       work better with definitions ( ` ps ` is the definiendum that one wants
+       to prove bounded).  (Contributed by BJ, 3-Oct-2019.) $)
     bd0r $p |- Bdd ps $=
       ( bicomi ax-bd0 ) ABCBADEF $.
   $}
@@ -60966,7 +60966,7 @@ $)
     bdceqr.maj $e |- B = A $.
     $( A class equal to a bounded one is bounded.  Stated with a commuted
        (compared to ~ bdceq ) equality in the hypothesis, to work better with
-       definitions ( ` B ` is the definiens that one wants to prove bounded;
+       definitions ( ` B ` is the definiendum that one wants to prove bounded;
        see comment of ~ bd0r ).  (Contributed by BJ, 3-Oct-2019.) $)
     bdceqr $p |- Bddc B $=
       ( eqcomi bdceq ) ABCBADEF $.
