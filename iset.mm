@@ -1,4 +1,4 @@
-$( iset.mm - Version of 6-Oct-2019
+$( iset.mm - Version of 7-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -60894,7 +60894,8 @@ $)
     $( Alternate proof of ~ bdnth not using ~ bdfal .  Then, ~ bdfal can be
        proved from this theorem, using ~ fal .  The total number of proof steps
        would be 17 (for ~ bdnthALT ) + 3 = 20, which is more than 8 (for
-       ~ bdfal ) + 9 (for ~ bdnth ) = 17.  (Contributed by BJ, 6-Oct-2019.) $)
+       ~ bdfal ) + 9 (for ~ bdnth ) = 17.  (Contributed by BJ, 6-Oct-2019.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     bdnthALT $p |- Bdd ph $=
       ( wtru wn bdtru ax-bdn notnot1 trud 2false ax-bd0 ) CDZACEFKAKDCGHBIJ $.
   $}
@@ -60947,7 +60948,7 @@ $)
     $( The belonging of a setvar in a bounded class is a bounded formula.
        (Contributed by BJ, 3-Oct-2019.) $)
     bdeli $p |- Bdd x e. A $=
-  ( cv wcel wbd wbdc wal df-bdc mpbi spi ) ADBEFZABGLAHCABIJK $.
+      ( cv wcel wbd wbdc wal df-bdc mpbi spi ) ADBEFZABGLAHCABIJK $.
   $}
 
   ${
@@ -61053,7 +61054,7 @@ $)
 
   $( The empty class is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
   bdcnul $p |- Bddc (/) $=
-  ( cvv cdif c0 bdcvv bdcdif df-nul bdceqr ) AABCAADDEFG $.
+    ( cvv cdif c0 bdcvv bdcdif df-nul bdceqr ) AABCAADDEFG $.
 
   ${
     $d x A $.
@@ -61061,7 +61062,7 @@ $)
     $( The power class of a bounded class is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
     bdcpw $p |- Bddc ~P A $=
-  ( vx cv wss cab cpw bdss bdcclab df-pw bdceqr ) CDAEZCFAGLCCABHICAJK $.
+      ( vx cv wss cab cpw bdss bdcclab df-pw bdceqr ) CDAEZCFAGLCCABHICAJK $.
   $}
 
   ${
@@ -61129,12 +61130,25 @@ $)
   ${
     $d a b x y $.  $d b y ph $.
     bdsep2.1 $e |- Bdd ph $.
-    $( Version of ~ ax-bdsep with one DV condition removed.  (Contributed by
-       BJ, 5-Oct-2019.) $)
-    bdsep2 $p |- A. a E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $=
-      ( vy wel wa wb wal wex weq elequ2 anbi1d bibi2d albidv exbidv ax-bdsep
-      spi chvarv ax-gen ) BDGZBCGZAHZIZBJZDKZCUBBFGZAHZIZBJZDKZUGFCFCLZUKUFDUMU
-      JUEBUMUIUDUBUMUHUCAFCBMNOPQULFABFDERSTUA $.
+    $( Version of ~ ax-bdsep with one DV condition removed and without initial
+       universal quantifier.  (Contributed by BJ, 5-Oct-2019.) $)
+    bdsep2 $p |- E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $=
+      ( vy wel wa wb wal wex weq eleq2 anbi1d bibi2d albidv exbidv ax-bdsep spi
+      cv chvarv ) BDGZBFGZAHZIZBJZDKZUBBCGZAHZIZBJZDKFCFCLZUFUKDULUEUJBULUDUIUB
+      ULUCUHAFTCTBTMNOPQUGFABFDERSUA $.
+  $}
+
+  ${
+    $d a b x y $.  $d y ph $.
+    bdsepnf.nf $e |- F/ b ph $.
+    bdsepnf.1 $e |- Bdd ph $.
+    $( Version of ~ ax-bdsep with one DV condition removed, the other DV
+       condition replaced by a non-freeness hypothesis, and without initial
+       universal quantifier.  (Contributed by BJ, 5-Oct-2019.) $)
+    bdsepnf $p |- E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $=
+      ( vy wel wa wb wal wex bdsep2 nfv nfan nfbi nfal weq elequ2 bibi1d albidv
+      cbvex mpbi ) BGHZBCHZAIZJZBKZGLBDHZUFJZBKZDLABCGFMUHUKGDUGDBUDUFDUDDNUEAD
+      UEDNEOPQUKGNGDRZUGUJBULUDUIUFGDBSTUAUBUC $.
   $}
 
 
@@ -61157,6 +61171,43 @@ $)
                                      E. b A. y ( y e. b <-> E. x e. a ph ) ) $.
   $}
 
+  ${
+    $d a b x y z $.  $d b z ph $.
+    $( Version of ~ ax-strcoll with one DV condition removed and without
+       initial universal quantifier.  (Contributed by BJ, 5-Oct-2019.) $)
+    strcoll2 $p |- ( A. x e. a E. y ph ->
+                                     E. b A. y ( y e. b <-> E. x e. a ph ) ) $=
+      ( vz wex cv wral wel wrex wb wal wi weq raleq rexeq bibi2d albidv exbidv
+      imbi12d ax-strcoll spi chvarv ) ACGZBFHZIZCEJZABUFKZLZCMZEGZNZUEBDHZIZUHA
+      BUNKZLZCMZEGZNFDFDOZUGUOULUSUEBUFUNPUTUKUREUTUJUQCUTUIUPUHABUFUNQRSTUAUMF
+      ABCFEUBUCUD $.
+  $}
+
+  ${
+    $d y x $.  $d y A $.
+    nfrex.1 $e |- F/_ x A $.
+    nfrex.2 $e |- F/ x ph $.
+    $( Bound-variable hypothesis builder for restricted quantification.
+       Remark: could use nfcri from set.mm.  (Contributed by BJ,
+       8-Oct-2019.) $)
+    nfrex $p |- F/ x E. y e. A ph $=
+      ( wrex cv wcel wa wex df-rex wnf wnfc wal df-nfc mpbi spi nfan nfex nfxfr
+      ) ACDGCHDIZAJZCKBACDLUCBCUBABUBBMZCBDNUDCOEBCDPQRFSTUA $.
+  $}
+
+  ${
+    $d a b x y z $.  $d z ph $.
+    strcollnf.nf $e |- F/ b ph $.
+    $( Version of ~ ax-strcoll with one DV condition removed, the other DV
+       condition replaced be a non-freeness hypothesis, and without initial
+       universal quantifier.  (Contributed by BJ, 5-Oct-2019.) $)
+    strcollnf $p |- ( A. x e. a E. y ph ->
+                                     E. b A. y ( y e. b <-> E. x e. a ph ) ) $=
+      ( vz wex cv wral wel wrex wb wal strcoll2 nfv nfcv nfrex nfbi nfal elequ2
+      weq bibi1d albidv cbvex sylib ) ACHBDIZJCGKZABUGLZMZCNZGHCEKZUIMZCNZEHABC
+      DGOUKUNGEUJECUHUIEUHEPAEBUGEUGQFRSTUNGPGEUBZUJUMCUOUHULUIGECUAUCUDUEUF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -61176,6 +61227,29 @@ $)
     ax-sscoll $a |- A. a A. b E. c A. t ( A. x e. a E. y e. b ph ->
                                 E. d e. c A. y ( y e. d <-> E. x e. a ph ) ) $.
   $}
+
+$(
+  ${
+    $d a b c d x y t z u $.  $d c d z u ph $.
+    @( Version of ~ ax-sscoll with two DV conditions removed and without
+       initial universal quantifiers.  (Contributed by BJ, 5-Oct-2019.) @)
+    sscoll2 $p |- E. c A. t ( A. x e. a E. y e. b ph ->
+                                E. d e. c A. y ( y e. d <-> E. x e. a ph ) ) $=
+      ? $.
+  $}
+
+  ${
+    $d a b c d x y t z u $.  $d z u ph $.
+    sscollnf.1 $e |- F/ c ph $.
+    sscollnf.2 $e |- F/ d ph $.
+    @( Version of ~ ax-sscoll with two DV conditions removed, the other two DV
+       conditions replaced be non-freeness hypotheses, and without initial
+       universal quantifiers.  (Contributed by BJ, 5-Oct-2019.) @)
+    sscollnf $p |- E. c A. t ( A. x e. a E. y e. b ph ->
+                                E. d e. c A. y ( y e. d <-> E. x e. a ph ) ) $=
+      ? $.
+  $}
+$)
 
 
 $( (End of BJ's mathbox.) $)
