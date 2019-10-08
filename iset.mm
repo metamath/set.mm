@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Oct-2019
+$( iset.mm - Version of 8-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -34028,7 +34028,7 @@ $(
 $)
 
   ${
-    $d x z w v $.  $d y z w v $.
+    $d x z w $.  $d y z w $.
     $( The Axiom of Pairing of IZF set theory.  Axiom 2 of [Crosilla] p.
        "Axioms of CZF and IZF", except (a) unnecessary quantifiers are removed,
        and (b) Crosilla has a biconditional rather than an implication (but the
@@ -61149,6 +61149,46 @@ $)
       cbvex mpbi ) BGHZBCHZAIZJZBKZGLBDHZUFJZBKZDLABCGFMUHUKGDUGDBUDUFDUDDNUEAD
       UEDNEOPQUKGNGDRZUGUJBULUDUIUFGDBSTUAUBUC $.
   $}
+
+  ${
+    $d x ph z $.  $d x y z $.
+    bdbm1.3ii.bd $e |- Bdd ph $.
+    bdbm1.3ii.1 $e |- E. x A. y ( ph -> y e. x ) $.
+    $( Bounded version of ~ bm1.3ii (with essentially the same proof).
+       (Contributed by BJ, 5-Oct-2019.) $)
+    bdbm1.3ii $p |- E. x A. y ( y e. x <-> ph ) $=
+      ( vz wel wi wal wa wex weq elequ2 imbi2d albidv cbvexv mpbi bdsep2 pm3.2i
+      wb exan 19.42v bimsc1 alanimi eximi sylbir exlimiv ax-mp ) ACFGZHZCIZCBGZ
+      UIAJTZCIZBKZJZFKULATZCIZBKZUKUOFUKFKZUOAULHZCIZBKUTEVBUKBFBFLZVAUJCVCULUI
+      ABFCMNOPQACFBDRSUAUPUSFUPUKUNJZBKUSUKUNBUBVDURBUJUMUQCAUIULUCUDUEUFUGUH
+      $.
+  $}
+
+  ${
+    $d x z w $.  $d y z w $.
+    $( ~ zfpair2 from bounded separation.  (Contributed by BJ, 5-Oct-2019.) $)
+    bj-zfpair2 $p |- { x , y } e. _V $=
+      ( vz vw cv cpr wceq wex wel weq wo wb wal ax-bdeq ax-bdor ax-pr bdbm1.3ii
+      wcel dfcleq vex elpr bibi2i albii bitri exbii mpbir issetri ) CAEZBEZFZCE
+      ZUJGZCHDCIZDAJZDBJZKZLZDMZCHUPCDUNUODANDBNOABCDPQULURCULUMDEZUJRZLZDMURDU
+      KUJSVAUQDUTUPUMUSUHUIDTUAUBUCUDUEUFUG $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x W $.
+    $( ~ prexg from bounded separation.  (Contributed by BJ, 5-Oct-2019.) $)
+    bj-prexg $p |- ( ( A e. V /\ B e. W ) -> { A , B } e. _V ) $=
+      ( vx vy wcel cpr cvv wi cv wceq preq2 eleq1d zfpair2 vtoclg preq1 vtocleg
+      syl5ib imp ) ACGBDGZABHZIGZUAUCJEACUAEKZBHZIGZUDALZUCUDFKZHZIGUFFBDUHBLUI
+      UEIUHBUDMNEFOPUGUEUBIUDABQNSRT $.
+  $}
+
+  $( ~ snexg from bounded separation.  Note: same thing doable with ~ uniex2 ,
+     ~ uniex , ~ unex , ~ unexg , hence ~ sucex , ~ sucexg .  (Contributed by
+     BJ, 5-Oct-2019.) $)
+  bj-snexg $p |- ( A e. V -> { A } e. _V ) $=
+     ( wcel csn cpr cvv dfsn2 bj-prexg anidms syl5eqel ) ABCZADAAEZFAGKLFCAABB
+      HIJ $.
 
 
 $(
