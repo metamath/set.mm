@@ -1,4 +1,4 @@
-$( iset.mm - Version of 6-Oct-2019
+$( iset.mm - Version of 8-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -34028,7 +34028,7 @@ $(
 $)
 
   ${
-    $d x z w v $.  $d y z w v $.
+    $d x z w $.  $d y z w $.
     $( The Axiom of Pairing of IZF set theory.  Axiom 2 of [Crosilla] p.
        "Axioms of CZF and IZF", except (a) unnecessary quantifiers are removed,
        and (b) Crosilla has a biconditional rather than an implication (but the
@@ -60581,11 +60581,10 @@ htmldef "DECID" as "<SMALL>DECID</SMALL> ";
 
 /* Mathbox of BJ */
 htmldef "Bdd" as "<SMALL>BOUNDED</SMALL> ";
-  althtmldef "Bdd" as "&#665;&#7439;&#7452;&#628;&#7429;&#7431;&#7429; ";
+  althtmldef "Bdd" as "<SMALL>BOUNDED</SMALL> ";
   latexdef "Bdd" as "\normalfont\textsc{bounded}} ";
 htmldef "Bddc" as "<SMALL><U>BOUNDED</U></SMALL> ";
-  althtmldef "Bddc" as
-                     "<U>&#665;&#7439;&#7452;&#628;&#7429;&#7431;&#7429;</U> ";
+  althtmldef "Bddc" as "<SMALL><U>BOUNDED</U></SMALL> ";
   latexdef "Bddc" as "\normalfont\textsc{\underline{bounded}}} ";
 /* End of BJ's mathbox */
 
@@ -60811,8 +60810,8 @@ $)
     bdsb.1 $e |- Bdd ph $.
     $( The formula resulting of proper substitution in a bounded formula is
        bounded.  This probably cannot be proved from the other axioms, since
-       neither the definiendum in ~ df-sb , nor any other equivalent formula,
-       is syntactically bounded.  (Contributed by BJ, 3-Oct-2019.) $)
+       neither the definiens in ~ df-sb , nor any other equivalent formula, is
+       syntactically bounded.  (Contributed by BJ, 3-Oct-2019.) $)
     ax-bdsb $a |- Bdd [ y / x ] ph $.
   $}
 
@@ -60821,8 +60820,8 @@ $)
     bd0r.maj $e |- ( ps <-> ph ) $.
     $( A formula equivalent to a bounded one is bounded.  Stated with a
        commuted (compared to ~ ax-bd0 ) biconditional in the hypothesis, to
-       work better with definitions ( ` ps ` is the definiens that one wants to
-       prove bounded).  (Contributed by BJ, 3-Oct-2019.) $)
+       work better with definitions ( ` ps ` is the definiendum that one wants
+       to prove bounded).  (Contributed by BJ, 3-Oct-2019.) $)
     bd0r $p |- Bdd ps $=
       ( bicomi ax-bd0 ) ABCBADEF $.
   $}
@@ -60894,7 +60893,8 @@ $)
     $( Alternate proof of ~ bdnth not using ~ bdfal .  Then, ~ bdfal can be
        proved from this theorem, using ~ fal .  The total number of proof steps
        would be 17 (for ~ bdnthALT ) + 3 = 20, which is more than 8 (for
-       ~ bdfal ) + 9 (for ~ bdnth ) = 17.  (Contributed by BJ, 6-Oct-2019.) $)
+       ~ bdfal ) + 9 (for ~ bdnth ) = 17.  (Contributed by BJ, 6-Oct-2019.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     bdnthALT $p |- Bdd ph $=
       ( wtru wn bdtru ax-bdn notnot1 trud 2false ax-bd0 ) CDZACEFKAKDCGHBIJ $.
   $}
@@ -60947,7 +60947,7 @@ $)
     $( The belonging of a setvar in a bounded class is a bounded formula.
        (Contributed by BJ, 3-Oct-2019.) $)
     bdeli $p |- Bdd x e. A $=
-  ( cv wcel wbd wbdc wal df-bdc mpbi spi ) ADBEFZABGLAHCABIJK $.
+      ( cv wcel wbd wbdc wal df-bdc mpbi spi ) ADBEFZABGLAHCABIJK $.
   $}
 
   ${
@@ -60966,7 +60966,7 @@ $)
     bdceqr.maj $e |- B = A $.
     $( A class equal to a bounded one is bounded.  Stated with a commuted
        (compared to ~ bdceq ) equality in the hypothesis, to work better with
-       definitions ( ` B ` is the definiens that one wants to prove bounded;
+       definitions ( ` B ` is the definiendum that one wants to prove bounded;
        see comment of ~ bd0r ).  (Contributed by BJ, 3-Oct-2019.) $)
     bdceqr $p |- Bddc B $=
       ( eqcomi bdceq ) ABCBADEF $.
@@ -61053,7 +61053,7 @@ $)
 
   $( The empty class is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
   bdcnul $p |- Bddc (/) $=
-  ( cvv cdif c0 bdcvv bdcdif df-nul bdceqr ) AABCAADDEFG $.
+    ( cvv cdif c0 bdcvv bdcdif df-nul bdceqr ) AABCAADDEFG $.
 
   ${
     $d x A $.
@@ -61061,7 +61061,7 @@ $)
     $( The power class of a bounded class is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
     bdcpw $p |- Bddc ~P A $=
-  ( vx cv wss cab cpw bdss bdcclab df-pw bdceqr ) CDAEZCFAGLCCABHICAJK $.
+      ( vx cv wss cab cpw bdss bdcclab df-pw bdceqr ) CDAEZCFAGLCCABHICAJK $.
   $}
 
   ${
@@ -61129,13 +61129,66 @@ $)
   ${
     $d a b x y $.  $d b y ph $.
     bdsep2.1 $e |- Bdd ph $.
-    $( Version of ~ ax-bdsep with one DV condition removed.  (Contributed by
-       BJ, 5-Oct-2019.) $)
-    bdsep2 $p |- A. a E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $=
-      ( vy wel wa wb wal wex weq elequ2 anbi1d bibi2d albidv exbidv ax-bdsep
-      spi chvarv ax-gen ) BDGZBCGZAHZIZBJZDKZCUBBFGZAHZIZBJZDKZUGFCFCLZUKUFDUMU
-      JUEBUMUIUDUBUMUHUCAFCBMNOPQULFABFDERSTUA $.
+    $( Version of ~ ax-bdsep with one DV condition removed and without initial
+       universal quantifier.  (Contributed by BJ, 5-Oct-2019.) $)
+    bdsep2 $p |- E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $=
+      ( vy wel wa wb wal wex weq eleq2 anbi1d bibi2d albidv exbidv ax-bdsep spi
+      cv chvarv ) BDGZBFGZAHZIZBJZDKZUBBCGZAHZIZBJZDKFCFCLZUFUKDULUEUJBULUDUIUB
+      ULUCUHAFTCTBTMNOPQUGFABFDERSUA $.
   $}
+
+  ${
+    $d a b x y $.  $d y ph $.
+    bdsepnf.nf $e |- F/ b ph $.
+    bdsepnf.1 $e |- Bdd ph $.
+    $( Version of ~ ax-bdsep with one DV condition removed, the other DV
+       condition replaced by a non-freeness hypothesis, and without initial
+       universal quantifier.  (Contributed by BJ, 5-Oct-2019.) $)
+    bdsepnf $p |- E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $=
+      ( vy wel wa wb wal wex bdsep2 nfv nfan nfbi nfal weq elequ2 bibi1d albidv
+      cbvex mpbi ) BGHZBCHZAIZJZBKZGLBDHZUFJZBKZDLABCGFMUHUKGDUGDBUDUFDUDDNUEAD
+      UEDNEOPQUKGNGDRZUGUJBULUDUIUFGDBSTUAUBUC $.
+  $}
+
+  ${
+    $d x ph z $.  $d x y z $.
+    bdbm1.3ii.bd $e |- Bdd ph $.
+    bdbm1.3ii.1 $e |- E. x A. y ( ph -> y e. x ) $.
+    $( Bounded version of ~ bm1.3ii (with essentially the same proof).
+       (Contributed by BJ, 5-Oct-2019.) $)
+    bdbm1.3ii $p |- E. x A. y ( y e. x <-> ph ) $=
+      ( vz wel wi wal wa wex weq elequ2 imbi2d albidv cbvexv mpbi bdsep2 pm3.2i
+      wb exan 19.42v bimsc1 alanimi eximi sylbir exlimiv ax-mp ) ACFGZHZCIZCBGZ
+      UIAJTZCIZBKZJZFKULATZCIZBKZUKUOFUKFKZUOAULHZCIZBKUTEVBUKBFBFLZVAUJCVCULUI
+      ABFCMNOPQACFBDRSUAUPUSFUPUKUNJZBKUSUKUNBUBVDURBUJUMUQCAUIULUCUDUEUFUGUH
+      $.
+  $}
+
+  ${
+    $d x z w $.  $d y z w $.
+    $( ~ zfpair2 from bounded separation.  (Contributed by BJ, 5-Oct-2019.) $)
+    bj-zfpair2 $p |- { x , y } e. _V $=
+      ( vz vw cv cpr wceq wex wel weq wo wb wal ax-bdeq ax-bdor ax-pr bdbm1.3ii
+      wcel dfcleq vex elpr bibi2i albii bitri exbii mpbir issetri ) CAEZBEZFZCE
+      ZUJGZCHDCIZDAJZDBJZKZLZDMZCHUPCDUNUODANDBNOABCDPQULURCULUMDEZUJRZLZDMURDU
+      KUJSVAUQDUTUPUMUSUHUIDTUAUBUCUDUEUFUG $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.  $d x W $.
+    $( ~ prexg from bounded separation.  (Contributed by BJ, 5-Oct-2019.) $)
+    bj-prexg $p |- ( ( A e. V /\ B e. W ) -> { A , B } e. _V ) $=
+      ( vx vy wcel cpr cvv wi cv wceq preq2 eleq1d zfpair2 vtoclg preq1 vtocleg
+      syl5ib imp ) ACGBDGZABHZIGZUAUCJEACUAEKZBHZIGZUDALZUCUDFKZHZIGUFFBDUHBLUI
+      UEIUHBUDMNEFOPUGUEUBIUDABQNSRT $.
+  $}
+
+  $( ~ snexg from bounded separation.  Note: same thing doable with ~ uniex2 ,
+     ~ uniex , ~ unex , ~ unexg , hence ~ sucex , ~ sucexg .  (Contributed by
+     BJ, 5-Oct-2019.) $)
+  bj-snexg $p |- ( A e. V -> { A } e. _V ) $=
+     ( wcel csn cpr cvv dfsn2 bj-prexg anidms syl5eqel ) ABCZADAAEZFAGKLFCAABB
+      HIJ $.
 
 
 $(
@@ -61157,6 +61210,43 @@ $)
                                      E. b A. y ( y e. b <-> E. x e. a ph ) ) $.
   $}
 
+  ${
+    $d a b x y z $.  $d b z ph $.
+    $( Version of ~ ax-strcoll with one DV condition removed and without
+       initial universal quantifier.  (Contributed by BJ, 5-Oct-2019.) $)
+    strcoll2 $p |- ( A. x e. a E. y ph ->
+                                     E. b A. y ( y e. b <-> E. x e. a ph ) ) $=
+      ( vz wex cv wral wel wrex wb wal wi weq raleq rexeq bibi2d albidv exbidv
+      imbi12d ax-strcoll spi chvarv ) ACGZBFHZIZCEJZABUFKZLZCMZEGZNZUEBDHZIZUHA
+      BUNKZLZCMZEGZNFDFDOZUGUOULUSUEBUFUNPUTUKUREUTUJUQCUTUIUPUHABUFUNQRSTUAUMF
+      ABCFEUBUCUD $.
+  $}
+
+  ${
+    $d y x $.  $d y A $.
+    nfrex.1 $e |- F/_ x A $.
+    nfrex.2 $e |- F/ x ph $.
+    $( Bound-variable hypothesis builder for restricted quantification.
+       Remark: could use nfcri from set.mm.  (Contributed by BJ,
+       8-Oct-2019.) $)
+    nfrex $p |- F/ x E. y e. A ph $=
+      ( wrex cv wcel wa wex df-rex wnf wnfc wal df-nfc mpbi spi nfan nfex nfxfr
+      ) ACDGCHDIZAJZCKBACDLUCBCUBABUBBMZCBDNUDCOEBCDPQRFSTUA $.
+  $}
+
+  ${
+    $d a b x y z $.  $d z ph $.
+    strcollnf.nf $e |- F/ b ph $.
+    $( Version of ~ ax-strcoll with one DV condition removed, the other DV
+       condition replaced be a non-freeness hypothesis, and without initial
+       universal quantifier.  (Contributed by BJ, 5-Oct-2019.) $)
+    strcollnf $p |- ( A. x e. a E. y ph ->
+                                     E. b A. y ( y e. b <-> E. x e. a ph ) ) $=
+      ( vz wex cv wral wel wrex wb wal strcoll2 nfv nfcv nfrex nfbi nfal elequ2
+      weq bibi1d albidv cbvex sylib ) ACHBDIZJCGKZABUGLZMZCNZGHCEKZUIMZCNZEHABC
+      DGOUKUNGEUJECUHUIEUHEPAEBUGEUGQFRSTUNGPGEUBZUJUMCUOUHULUIGECUAUCUDUEUF $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -61176,6 +61266,29 @@ $)
     ax-sscoll $a |- A. a A. b E. c A. t ( A. x e. a E. y e. b ph ->
                                 E. d e. c A. y ( y e. d <-> E. x e. a ph ) ) $.
   $}
+
+$(
+  ${
+    $d a b c d x y t z u $.  $d c d z u ph $.
+    @( Version of ~ ax-sscoll with two DV conditions removed and without
+       initial universal quantifiers.  (Contributed by BJ, 5-Oct-2019.) @)
+    sscoll2 $p |- E. c A. t ( A. x e. a E. y e. b ph ->
+                                E. d e. c A. y ( y e. d <-> E. x e. a ph ) ) $=
+      ? $.
+  $}
+
+  ${
+    $d a b c d x y t z u $.  $d z u ph $.
+    sscollnf.1 $e |- F/ c ph $.
+    sscollnf.2 $e |- F/ d ph $.
+    @( Version of ~ ax-sscoll with two DV conditions removed, the other two DV
+       conditions replaced be non-freeness hypotheses, and without initial
+       universal quantifiers.  (Contributed by BJ, 5-Oct-2019.) @)
+    sscollnf $p |- E. c A. t ( A. x e. a E. y e. b ph ->
+                                E. d e. c A. y ( y e. d <-> E. x e. a ph ) ) $=
+      ? $.
+  $}
+$)
 
 
 $( (End of BJ's mathbox.) $)
