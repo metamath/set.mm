@@ -12334,7 +12334,7 @@ $)
 
      Normally, ~ ax10o should be used rather than ~ ax-10o , except by theorems
      specifically studying the latter's properties.  (Contributed by NM,
-     5-Aug-1993.) $)
+     5-Aug-1993.)  (New usage is discouraged.) $)
   ax-10o $a |- ( A. x x = y -> ( A. x ph -> A. y ph ) ) $.
 
   $( Rederivation of ~ ax-10 from original version ~ ax-10o .  See theorem
@@ -12342,7 +12342,7 @@ $)
 
      This theorem should not be referenced in any proof.  Instead, use ~ ax-10
      above so that uses of ~ ax-10 can be more easily identified.  (Contributed
-     by NM, 16-May-2008.) $)
+     by NM, 16-May-2008.)  (New usage is discouraged.) $)
   ax10 $p |- ( A. x x = y -> A. y y = x ) $=
     ( weq wal ax-10o pm2.43i equcomi alimi syl ) ABCZADZJBDZBACZBDKLJABEFJMBABG
     HI $.
@@ -13366,8 +13366,8 @@ $)
      30-Jun-2006.) $)
   ax11b $p |- ( ( -. A. x x = y /\ x = y ) ->
               ( ph <-> A. x ( x = y -> ph ) ) ) $=
-    ( weq wal wn wa wi ax-11o imp ax-4 com12 adantl impbid ) BCDZBEFZOGAOAHZBEZ
-    POARHABCIJORAHPROAQBKLMN $.
+    ( weq wal wn wa wi ax11o imp ax-4 com12 adantl impbid ) BCDZBEFZOGAOAHZBEZP
+    OARHABCIJORAHPROAQBKLMN $.
 
   ${
     $d x y $.  $d x z $.  $d y z $.  $d ph z $.
@@ -61187,8 +61187,8 @@ $)
      ~ uniex , ~ unex , ~ unexg , hence ~ sucex , ~ sucexg .  (Contributed by
      BJ, 5-Oct-2019.) $)
   bj-snexg $p |- ( A e. V -> { A } e. _V ) $=
-     ( wcel csn cpr cvv dfsn2 bj-prexg anidms syl5eqel ) ABCZADAAEZFAGKLFCAABB
-      HIJ $.
+    ( wcel csn cpr cvv dfsn2 bj-prexg anidms syl5eqel ) ABCZADAAEZFAGKLFCAABBHI
+    J $.
 
 
 $(
