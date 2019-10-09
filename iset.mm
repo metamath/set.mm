@@ -1,4 +1,4 @@
-$( iset.mm - Version of 8-Oct-2019
+$( iset.mm - Version of 9-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -60770,8 +60770,7 @@ bounded, but even without it, too many formulas could be proved bounded...
 
 Having ~ ax-bd0 in inference form ensures that a formula can be proved bounded
 only if it is equivalent *for all values of the free variables* to a
-syntactically bounded one.  Actually, it could be stated as the inference
-` |- ( ph <-> ps ) => |- ( Bdd ph -> Bdd ps ) ` .
+syntactically bounded one.
 
 The other axioms (~ ax-bdim through ~ ax-bdsb ) can be written either in
 closed or inference form.  The fact that ~ ax-bd0 is an inference is enough to
@@ -60790,11 +60789,10 @@ $)
   wbd $a wff Bdd ph $.
 
   ${
-    bd0.min $e |- Bdd ph $.
-    bd0.maj $e |- ( ph <-> ps ) $.
-    $( A formula equivalent to a bounded one is bounded.  (Contributed by BJ,
-       3-Oct-2019.) $)
-    ax-bd0 $a |- Bdd ps $.
+    ax-bd0.1 $e |- ( ph <-> ps ) $.
+    $( If two formulas are equivalent, then boundedness of one implies
+       boundedness of the other.  (Contributed by BJ, 3-Oct-2019.) $)
+    ax-bd0 $a |- ( Bdd ph -> Bdd ps ) $.
   $}
 
   ${
@@ -60852,14 +60850,31 @@ $)
   $}
 
   ${
+    bdeq.1 $e |- ( ph <-> ps ) $.
+    $( Equality property for the predicate ` Bdd ` .  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bdeq $p |- ( Bdd ph <-> Bdd ps ) $=
+      ( wbd ax-bd0 bicomi impbii ) ADBDABCEBAABCFEG $.
+  $}
+
+  ${
+    bd0.min $e |- Bdd ph $.
+    bd0.maj $e |- ( ph <-> ps ) $.
+    $( A formula equivalent to a bounded one is bounded.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bd0 $p |- Bdd ps $=
+      ( wbd ax-bd0 ax-mp ) AEBECABDFG $.
+  $}
+
+  ${
     bd0r.min $e |- Bdd ph $.
     bd0r.maj $e |- ( ps <-> ph ) $.
     $( A formula equivalent to a bounded one is bounded.  Stated with a
-       commuted (compared to ~ ax-bd0 ) biconditional in the hypothesis, to
-       work better with definitions ( ` ps ` is the definiendum that one wants
-       to prove bounded).  (Contributed by BJ, 3-Oct-2019.) $)
+       commuted (compared to ~ bd0 ) biconditional in the hypothesis, to work
+       better with definitions ( ` ps ` is the definiendum that one wants to
+       prove bounded).  (Contributed by BJ, 3-Oct-2019.) $)
     bd0r $p |- Bdd ps $=
-      ( bicomi ax-bd0 ) ABCBADEF $.
+      ( bicomi bd0 ) ABCBADEF $.
   $}
 
   ${
@@ -60909,7 +60924,7 @@ $)
     $( A truth (a (closed) theorem) is a bounded formula.  (Contributed by BJ,
        6-Oct-2019.) $)
     bdth $p |- Bdd ph $=
-      ( vx weq wi ax-bdeq ax-bdim id 2th ax-bd0 ) CCDZKEZAKKCCFZMGLAKHBIJ $.
+      ( vx weq wi ax-bdeq ax-bdim id 2th bd0 ) CCDZKEZAKKCCFZMGLAKHBIJ $.
   $}
 
   $( The truth value ` T. ` is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
@@ -60924,7 +60939,7 @@ $)
     bdnth.1 $e |- -. ph $.
     $( A falsity is a bounded formula.  (Contributed by BJ, 6-Oct-2019.) $)
     bdnth $p |- Bdd ph $=
-      ( wfal bdfal fal 2false ax-bd0 ) CADCAEBFG $.
+      ( wfal bdfal fal 2false bd0 ) CADCAEBFG $.
 
     $( Alternate proof of ~ bdnth not using ~ bdfal .  Then, ~ bdfal can be
        proved from this theorem, using ~ fal .  The total number of proof steps
@@ -60932,7 +60947,7 @@ $)
        ~ bdfal ) + 9 (for ~ bdnth ) = 17.  (Contributed by BJ, 6-Oct-2019.)
        (Proof modification is discouraged.)  (New usage is discouraged.) $)
     bdnthALT $p |- Bdd ph $=
-      ( wtru wn bdtru ax-bdn notnot1 trud 2false ax-bd0 ) CDZACEFKAKDCGHBIJ $.
+      ( wtru wn bdtru ax-bdn notnot1 trud 2false bd0 ) CDZACEFKAKDCGHBIJ $.
   $}
 
   ${
@@ -60978,34 +60993,43 @@ $)
   $}
 
   ${
+    $d x A $.  $d x B $.
+    bdceq.1 $e |- A = B $.
+    $( Equality property for the predicate ` Bddc ` .  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bdceq $p |- ( Bddc A <-> Bddc B ) $=
+      ( vx cv wcel wbd wal wbdc eleq2i bdeq albii df-bdc 3bitr4i ) DEZAFZGZDHOB
+      FZGZDHAIBIQSDPRABOCJKLDAMDBMN $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    bdceqi.min $e |- Bddc A $.
+    bdceqi.maj $e |- A = B $.
+    $( A class equal to a bounded one is bounded.  Note the use of ~ ax-ext .
+       (Contributed by BJ, 3-Oct-2019.) $)
+    bdceqi $p |- Bddc B $=
+      ( wbdc bdceq mpbi ) AEBECABDFG $.
+  $}
+
+  ${
+    bdceqir.min $e |- Bddc A $.
+    bdceqir.maj $e |- B = A $.
+    $( A class equal to a bounded one is bounded.  Stated with a commuted
+       (compared to ~ bdceqi ) equality in the hypothesis, to work better with
+       definitions ( ` B ` is the definiendum that one wants to prove bounded;
+       see comment of ~ bd0r ).  (Contributed by BJ, 3-Oct-2019.) $)
+    bdceqir $p |- Bddc B $=
+      ( eqcomi bdceqi ) ABCBADEF $.
+  $}
+
+  ${
     $d x A $.
     bdeli.1 $e |- Bddc A $.
     $( The belonging of a setvar in a bounded class is a bounded formula.
        (Contributed by BJ, 3-Oct-2019.) $)
     bdeli $p |- Bdd x e. A $=
       ( cv wcel wbd wbdc wal df-bdc mpbi spi ) ADBEFZABGLAHCABIJK $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    bdceq.min $e |- Bddc A $.
-    bdceq.maj $e |- A = B $.
-    $( A class equal to a bounded one is bounded.  Note the use of ~ ax-ext .
-       (Contributed by BJ, 3-Oct-2019.) $)
-    bdceq $p |- Bddc B $=
-      ( vx wbdc cv wcel wbd df-bdc bdeli eleq2i ax-bd0 mpgbir ) BFEGZBHZIEEBJOA
-      HPEACKABODLMN $.
-  $}
-
-  ${
-    bdceqr.min $e |- Bddc A $.
-    bdceqr.maj $e |- B = A $.
-    $( A class equal to a bounded one is bounded.  Stated with a commuted
-       (compared to ~ bdceq ) equality in the hypothesis, to work better with
-       definitions ( ` B ` is the definiendum that one wants to prove bounded;
-       see comment of ~ bd0r ).  (Contributed by BJ, 3-Oct-2019.) $)
-    bdceqr $p |- Bddc B $=
-      ( eqcomi bdceq ) ABCBADEF $.
   $}
 
   ${
@@ -61031,7 +61055,7 @@ $)
     $( A formula which defines (by class abstraction) a bounded class is
        bounded.  (Contributed by BJ, 6-Oct-2019.) $)
     bdph $p |- Bdd ph $=
-      ( vy wsb cv cab wcel bdeli df-clab ax-bd0 ax-bdsb sbid2v ) ABDEZDBEANDBDF
+      ( vy wsb cv cab wcel bdeli df-clab bd0 ax-bdsb sbid2v ) ABDEZDBEANDBDF
       ABGZHNDOCIADBJKLADBMK $.
   $}
 
@@ -61042,7 +61066,7 @@ $)
     $( A class defined by restricted abstraction from a bounded class and a
        bounded formula is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
     bdcrab $p |- Bddc { x e. A | ph } $=
-      ( cv wcel wa cab crab bdeli ax-bdan bdcclab df-rab bdceqr ) BFCGZAHZBIABC
+      ( cv wcel wa cab crab bdeli ax-bdan bdcclab df-rab bdceqir ) BFCGZAHZBIABC
       JQBPABCDKELMABCNO $.
   $}
 
@@ -61071,25 +61095,25 @@ $)
     $( The difference of two bounded classes is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
     bdcdif $p |- Bddc ( A \ B ) $=
-      ( vx cv wcel wn wa cab cdif bdeli ax-bdn ax-bdan bdcclab df-dif bdceqr )
+      ( vx cv wcel wn wa cab cdif bdeli ax-bdn ax-bdan bdcclab df-dif bdceqir )
       EFZAGZRBGZHZIZEJABKUBESUAEACLTEBDLMNOEABPQ $.
 
     $( The union of two bounded classes is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
     bdcun $p |- Bddc ( A u. B ) $=
-      ( vx cv wcel wo cab cun bdeli ax-bdor bdcclab df-un bdceqr ) EFZAGZPBGZHZ
+      ( vx cv wcel wo cab cun bdeli ax-bdor bdcclab df-un bdceqir ) EFZAGZPBGZHZ
       EIABJSEQREACKEBDKLMEABNO $.
 
     $( The intersection of two bounded classes is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
     bdcin $p |- Bddc ( A i^i B ) $=
-      ( vx cv wcel wa cab cin bdeli ax-bdan bdcclab df-in bdceqr ) EFZAGZPBGZHZ
+      ( vx cv wcel wa cab cin bdeli ax-bdan bdcclab df-in bdceqir ) EFZAGZPBGZHZ
       EIABJSEQREACKEBDKLMEABNO $.
   $}
 
   $( The empty class is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
   bdcnul $p |- Bddc (/) $=
-    ( cvv cdif c0 bdcvv bdcdif df-nul bdceqr ) AABCAADDEFG $.
+    ( cvv cdif c0 bdcvv bdcdif df-nul bdceqir ) AABCAADDEFG $.
 
   ${
     $d x A $.
@@ -61097,49 +61121,8 @@ $)
     $( The power class of a bounded class is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
     bdcpw $p |- Bddc ~P A $=
-      ( vx cv wss cab cpw bdss bdcclab df-pw bdceqr ) CDAEZCFAGLCCABHICAJK $.
+      ( vx cv wss cab cpw bdss bdcclab df-pw bdceqir ) CDAEZCFAGLCCABHICAJK $.
   $}
-
-  ${
-    bd0STRONG.maj $e |- ( ph <-> ps ) $.
-    $( A stronger form of ~ ax-bd0 .  (Contributed by BJ, 3-Oct-2019.) $)
-    ax-bd0STRONG $a |- ( Bdd ph -> Bdd ps ) $.
-  $}
-
-  ${
-    bdeq.1 $e |- ( ph <-> ps ) $.
-    $( Equality property for the predicate ` Bdd ` .  (Contributed by BJ,
-       3-Oct-2019.) $)
-    bdeq $p |- ( Bdd ph <-> Bdd ps ) $=
-      ( wbd ax-bd0STRONG bicomi impbii ) ADBDABCEBAABCFEG $.
-  $}
-
-  ${
-    $d x A $.  $d x B $.
-    bdceq2.1 $e |- A = B $.
-    $( Equality property for the predicate ` Bddc ` .  (Contributed by BJ,
-       3-Oct-2019.) $)
-    bdceq2 $p |- ( Bddc A <-> Bddc B ) $=
-      ( vx cv wcel wbd wal wbdc eleq2i bdeq albii df-bdc 3bitr4i ) DEZAFZGZDHOB
-      FZGZDHAIBIQSDPRABOCJKLDAMDBMN $.
-  $}
-
-$(
-  ${
-    bdcs.1 $e |- A e. _V $.
-    @( A set is a bounded class.  (Contributed by BJ, 3-Oct-2019.) @)
-    bdcs $p |- Bddc A $=
-       ? $.
-  $}
-Would need ax-bd0 in closed form...
-MM-PA> sh n
-19     vtocl.1=bdcs.1   $? |- A e. _V
-20     vtocl.2=?        $? |- ( y = A -> ( Bdd x e. y <-> Bdd x e. A ) )
-23     vtocl.3=ax-bdel  $a |- Bdd x e. y
-24   mpbir.min=vtocl  $p |- Bdd x e. A
-27   mpbir.maj=df-bdc $a |- ( Bddc A <-> Bdd x e. A )
-28 bdcs=mpbir       $p |- Bddc A
-$)
 
 
 $(
