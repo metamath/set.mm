@@ -61223,18 +61223,6 @@ $)
   $}
 
   ${
-    $d y x $.  $d y A $.
-    nfrex.1 $e |- F/_ x A $.
-    nfrex.2 $e |- F/ x ph $.
-    $( Bound-variable hypothesis builder for restricted quantification.
-       Remark: could use nfcri from set.mm.  (Contributed by BJ,
-       8-Oct-2019.) $)
-    nfrex $p |- F/ x E. y e. A ph $=
-      ( wrex cv wcel wa wex df-rex wnf wnfc wal df-nfc mpbi spi nfan nfex nfxfr
-      ) ACDGCHDIZAJZCKBACDLUCBCUBABUBBMZCBDNUDCOEBCDPQRFSTUA $.
-  $}
-
-  ${
     $d a b x y z $.  $d z ph $.
     strcollnf.nf $e |- F/ b ph $.
     $( Version of ~ ax-strcoll with one DV condition removed, the other DV
@@ -61242,9 +61230,10 @@ $)
        universal quantifier.  (Contributed by BJ, 5-Oct-2019.) $)
     strcollnf $p |- ( A. x e. a E. y ph ->
                                      E. b A. y ( y e. b <-> E. x e. a ph ) ) $=
-      ( vz wex cv wral wel wrex wb wal strcoll2 nfv nfcv nfrex nfbi nfal elequ2
-      weq bibi1d albidv cbvex sylib ) ACHBDIZJCGKZABUGLZMZCNZGHCEKZUIMZCNZEHABC
-      DGOUKUNGEUJECUHUIEUHEPAEBUGEUGQFRSTUNGPGEUBZUJUMCUOUHULUIGECUAUCUDUEUF $.
+      ( vz wex cv wral wel wrex wb wal strcoll2 nfv nfcv nfrexxy nfbi nfal weq
+      elequ2 bibi1d albidv cbvex sylib ) ACHBDIZJCGKZABUGLZMZCNZGHCEKZUIMZCNZEH
+      ABCDGOUKUNGEUJECUHUIEUHEPAEBUGEUGQFRSTUNGPGEUAZUJUMCUOUHULUIGECUBUCUDUEUF
+      $.
   $}
 
 
