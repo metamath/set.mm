@@ -61055,8 +61055,8 @@ $)
     $( A formula which defines (by class abstraction) a bounded class is
        bounded.  (Contributed by BJ, 6-Oct-2019.) $)
     bdph $p |- Bdd ph $=
-      ( vy wsb cv cab wcel bdeli df-clab bd0 ax-bdsb sbid2v ) ABDEZDBEANDBDF
-      ABGZHNDOCIADBJKLADBMK $.
+      ( vy wsb cv cab wcel bdeli df-clab bd0 ax-bdsb sbid2v ) ABDEZDBEANDBDFABG
+      ZHNDOCIADBJKLADBMK $.
   $}
 
   ${
@@ -61066,8 +61066,8 @@ $)
     $( A class defined by restricted abstraction from a bounded class and a
        bounded formula is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
     bdcrab $p |- Bddc { x e. A | ph } $=
-      ( cv wcel wa cab crab bdeli ax-bdan bdcclab df-rab bdceqir ) BFCGZAHZBIABC
-      JQBPABCDKELMABCNO $.
+      ( cv wcel wa cab crab bdeli ax-bdan bdcclab df-rab bdceqir ) BFCGZAHZBIAB
+      CJQBPABCDKELMABCNO $.
   $}
 
   $( The universal class is bounded.  The formulation may sound strange, but
@@ -61101,14 +61101,14 @@ $)
     $( The union of two bounded classes is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
     bdcun $p |- Bddc ( A u. B ) $=
-      ( vx cv wcel wo cab cun bdeli ax-bdor bdcclab df-un bdceqir ) EFZAGZPBGZHZ
-      EIABJSEQREACKEBDKLMEABNO $.
+      ( vx cv wcel wo cab cun bdeli ax-bdor bdcclab df-un bdceqir ) EFZAGZPBGZH
+      ZEIABJSEQREACKEBDKLMEABNO $.
 
     $( The intersection of two bounded classes is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
     bdcin $p |- Bddc ( A i^i B ) $=
-      ( vx cv wcel wa cab cin bdeli ax-bdan bdcclab df-in bdceqir ) EFZAGZPBGZHZ
-      EIABJSEQREACKEBDKLMEABNO $.
+      ( vx cv wcel wa cab cin bdeli ax-bdan bdcclab df-in bdceqir ) EFZAGZPBGZH
+      ZEIABJSEQREACKEBDKLMEABNO $.
   $}
 
   $( The empty class is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
