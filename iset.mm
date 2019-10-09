@@ -60688,6 +60688,42 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Miscellaneous
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Double negation of excluded middle.  (Contributed by BJ, 9-Oct-2019.) $)
+  bj-notnotdc1 $p |- -. -. ( ph \/ -. ph ) $=
+    ( wn wo wa pm3.24 ioran mtbir ) AABZCBHHBDHEAHFG $.
+
+  $( Double negation of excluded middle.  Intuitionistic logic refutes
+     refutability of decidability of a formula.  (Contributed by BJ,
+     9-Oct-2019.) $)
+  bj-notnotdc $p |- -. -. DECID ph $=
+    ( wdc wn wo bj-notnotdc1 df-dc notbii mtbir ) ABZCAACDZCAEIJAFGH $.
+
+  $( Proposed definition of ` TEST ` .  (Remark:  I'm not even sure it is
+     useful to introduce the predicate ` TEST ` ; " ` DECID -. ph ` " should do
+     as well.  Testability can be mentioned in the comment of ~ df-dc .)
+     (Contributed by BJ, 9-Oct-2019.) $)
+  bj-df-test $p |- ( TEST ph <-> DECID -. ph ) $=
+    ( wtest wn wo wdc df-test df-dc bitr4i ) ABACZICDIEAFIGH $.
+
+  $( The definition of ` TEST ` unravelled.  (Once ~ bj-df-test is the
+     definition of ` TEST ` .)  (Contributed by BJ, 9-Oct-2019.) $)
+  bj-dftest2 $p |- ( TEST ph <-> ( -. ph \/ -. -. ph ) ) $=
+    ( wtest wn wdc wo bj-df-test df-dc bitri ) ABACZDIICEAFIGH $.
+
+  $( Decidability of a proposition is decidable if and only if that proposition
+     is decidable. ` DECID ` is idempotent.  (Contributed by BJ,
+     9-Oct-2019.) $)
+  bj-dcdc $p |- ( DECID DECID ph <-> DECID ph ) $=
+    ( wdc wn wo df-dc bj-notnotdc1 biorfi bicomi notbii orbi12i 3bitri bitr4i )
+    ABZBMMCZDZMMEMAACDZPPCZDOAEZQPAFGPMQNMPRHNQMPRIHJKL $.
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                  Bounded formulas
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
