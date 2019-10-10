@@ -167,6 +167,7 @@ NAME_ABBREVIATIONS = {
     'Frederic Line': 'Frédéric Liné',
     'GL': 'Gérard Lang',
     'G&eacute;rard Lang': 'Gérard Lang',
+    'Gerard Lang': 'Gérard Lang',
     'JJ': 'Jerry James',
     'NM': 'Norman Megill',
     'SF': 'Scott Fenton',
