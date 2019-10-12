@@ -29,7 +29,7 @@ PC  Paul Chapman         RL  Raph Levien           GS  Glauco Siliprandi
 DF  Drahflow             FL  Frederic Line         SS  Saveliy Skresanov
 GD  Georgy Dunaev        RFL Roy F. Longton        JU  Jarvin Udandy
 SF  Scott Fenton         JM  Jeff Madsen           AV  Alexander van der Vekens
-JGH Jeffrey Hankins      RM  Rodolfo Medina        DAW David A. Wheeler
+JGH Jeff Hankins         RM  Rodolfo Medina        DAW David A. Wheeler
 AH  Anthony Hart         NM  Norman Megill         JY  Jonathan Yan
 DH  David Harvey         MO  Mel L. O'Cat          FZ  Fan Zheng
 CH  Chen-Pang He         MM  Mykola Mostovenko
@@ -22125,7 +22125,7 @@ $)
     gencbvex2.3 $e |- ( A = y -> ( ch <-> th ) ) $.
     gencbvex2.4 $e |- ( th -> E. x ( ch /\ A = y ) ) $.
     $( Restatement of ~ gencbvex with weaker hypotheses.  (Contributed by
-       Jeffrey Hankins, 6-Dec-2006.) $)
+       Jeff Hankins, 6-Dec-2006.) $)
     gencbvex2 $p |- ( E. x ( ch /\ ph ) <-> E. y ( th /\ ps ) ) $=
       ( cv wceq wa wex biimpac exlimiv impbii gencbvex ) ABCDEFGHIJDCGFLMZNZEOK
       UADETCDJPQRS $.
@@ -44780,7 +44780,7 @@ $)
     UBCUSVBUCSVFVCVCUDZIVCUEZVDCVCUFVFVGUSVCUSCVCUGUHVFUSCVCUIVHCMUSCVCUKUSCVCU
     LSUJSUMUN $.
 
-  $( A reverse version of ~ f1imacnv .  (Contributed by Jeffrey Hankins,
+  $( A reverse version of ~ f1imacnv .  (Contributed by Jeff Hankins,
      16-Jul-2009.) $)
   foimacnv $p |- ( ( F : A -onto-> B /\ C C_ B )
                  -> ( F " ( `' F " C ) ) = C ) $=
