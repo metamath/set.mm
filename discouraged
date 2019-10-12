@@ -14063,6 +14063,8 @@ New usage of "bj-1" is discouraged (0 uses).
 New usage of "bj-axd2d" is discouraged (0 uses).
 New usage of "bj-axdd2" is discouraged (0 uses).
 New usage of "bj-axtd" is discouraged (0 uses).
+New usage of "bj-ceqsalgALT" is discouraged (0 uses).
+New usage of "bj-ceqsalgvALT" is discouraged (0 uses).
 New usage of "bj-con3ALT" is discouraged (0 uses).
 New usage of "bj-csbsnlem" is discouraged (1 uses).
 New usage of "bj-df-clel" is discouraged (1 uses).
@@ -18424,9 +18426,18 @@ Proof modification of "bj-cbvexdv" is discouraged (65 steps).
 Proof modification of "bj-cbvexdvav" is discouraged (22 steps).
 Proof modification of "bj-cbvexv" is discouraged (46 steps).
 Proof modification of "bj-cbvexvv" is discouraged (12 steps).
+Proof modification of "bj-cdeqab" is discouraged (24 steps).
+Proof modification of "bj-ceqsal" is discouraged (23 steps).
+Proof modification of "bj-ceqsalg" is discouraged (28 steps).
+Proof modification of "bj-ceqsalg0" is discouraged (31 steps).
+Proof modification of "bj-ceqsalgALT" is discouraged (35 steps).
+Proof modification of "bj-ceqsalgv" is discouraged (28 steps).
+Proof modification of "bj-ceqsalgvALT" is discouraged (35 steps).
 Proof modification of "bj-ceqsalt" is discouraged (45 steps).
-Proof modification of "bj-ceqsaltlem" is discouraged (116 steps).
+Proof modification of "bj-ceqsalt0" is discouraged (116 steps).
+Proof modification of "bj-ceqsalt1" is discouraged (118 steps).
 Proof modification of "bj-ceqsaltv" is discouraged (45 steps).
+Proof modification of "bj-ceqsalv" is discouraged (10 steps).
 Proof modification of "bj-chvarv" is discouraged (18 steps).
 Proof modification of "bj-chvarvv" is discouraged (10 steps).
 Proof modification of "bj-clabel" is discouraged (43 steps).
@@ -18503,6 +18514,7 @@ Proof modification of "bj-rexcom4a" is discouraged (37 steps).
 Proof modification of "bj-rexcom4b" is discouraged (43 steps).
 Proof modification of "bj-rexcom4bv" is discouraged (43 steps).
 Proof modification of "bj-rexvwv" is discouraged (34 steps).
+Proof modification of "bj-ru" is discouraged (75 steps).
 Proof modification of "bj-sb2v" is discouraged (29 steps).
 Proof modification of "bj-sb3v" is discouraged (29 steps).
 Proof modification of "bj-sb4bv" is discouraged (24 steps).
