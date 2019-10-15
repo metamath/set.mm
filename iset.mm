@@ -59409,6 +59409,21 @@ $)
     UKURUQUCACDUDABUEUFUG $.
 
   ${
+    $d C q $.  $d L q r $.  $d U q r $.
+    $( An element of a lower cut is less than an element of the corresponding
+       upper cut.  (Contributed by Jim Kingdon, 15-Oct-2019.) $)
+    prltlu $p |- ( ( <. L , U >. e. P. /\ B e. L /\ C e. U ) -> B <Q C ) $=
+      ( vq vr wcel w3a wn cltq wbr wa wi cnq cv wral wss wrex wb eleq1 simp3 wo
+      cop elprnqu 3adant2 elinp simpr2 sylbi 3ad2ant1 wceq anbi12d notbid rspcv
+      cnp sylc ancom notbii imnan bitr4i sylib mpd 3simpa prubl syl2anc ) DCUCU
+      NGZADGZBCGZHZBDGZIZABJKZVHVGVJVEVFVGUAVHVIVGLZIZVGVJMZVHBNGZEOZDGZVPCGZLZ
+      IZENPZVMVEVGVOVFBCDUDUEZVEVFWAVGVEDNQCNQLVQENRFOZCGZFNRLLZVQVPWCJKZWCDGLF
+      NRSENPWDWFVRLENRSFNPLZWAWFVQWDUBMFNPENPZHLWACDFEUFWEWGWAWHUGUHUIVTVMEBNVP
+      BUJZVSVLWIVQVIVRVGVPBDTVPBCTUKULUMUOVMVGVILZIVNVLWJVIVGUPUQVGVIURUSUTVAVH
+      VEVFLVOVJVKMVEVFVGVBWBABCDVCVDVA $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d x y L $.  $d x y U $.
     $( A lower cut has no largest member.  (Contributed by Jim Kingdon,
        29-Sep-2019.) $)
