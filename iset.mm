@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-Oct-2019
+$( iset.mm - Version of 14-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -59616,6 +59616,24 @@ $)
       WDVQVJVMWDQZQZVKWBIUBZVOPZVQVJWIWLABCDEFGVKWBHIKLUMUNWJVPWLJWKTWJVKTPZWBT
       PZQZWKTPVHVMVIWDWOVHVMQWMVIWDQWNVHVTVMWMWAVKVSVLUOUPVIWGWDWNWHWBWFWCUOUPU
       QURBCVKWBTILUSVAWJVNWKUTZQVNWKVOWJWPVBVCVDVEVFVGVG $.
+
+    ${
+      $d F h $.
+      genpcdl.2 $e |- ( ( ( ( A e. P. /\ g e. ( 1st ` A ) ) /\
+                       ( B e. P. /\ h e. ( 1st ` B ) ) ) /\ x e. Q. ) ->
+                       ( x <Q ( g G h ) -> x e. ( 1st ` ( A F B ) ) ) ) $.
+      $( Downward closure of an operation on positive reals.  (Contributed by
+         Jim Kingdon, 14-Oct-2019.) $)
+      genpcdl $p |- ( ( A e. P. /\ B e. P. ) -> ( f e. ( 1st ` ( A F B ) ) ->
+                   ( x <Q f -> x e. ( 1st ` ( A F B ) ) ) ) ) $=
+        ( wcel wa cv cltq wi cnp wbr c1st cfv cnq ltrelnq brel simpld wceq wrex
+        co genpelvl adantr breq2 biimpd sylan9r exp31 impancom rexlimdvv sylbid
+        wb an4s ex syl5 com34 pm2.43d com23 ) FUAPZGUAPZQZARZHRZSUBZVLFGKUKUCUD
+        ZPZVKVNPZVJVMVOVPTVJVMVOVMVPVMVKUEPZVJVOVMVPTZTZVMVQVLUEPVKVLUEUESUFUGU
+        HVJVQVSVJVQQZVOVLIRZJRZLUKZUIZJGUCUDZUJIFUCUDZUJZVRVJVOWGVAVQABCDEFGVLI
+        JKLMNULUMVTWDVRIJWFWEVJWAWFPZWBWEPZQVQWDVRTZVHWHVIWIVQWJTVHWHQVIWIQQZVQ
+        WDVRWDVMVKWCSUBZWKVQQVPWDVMWLVLWCVKSUNUOOUPUQVBURUSUTVCVDVEVFVG $.
+    $}
 
     ${
       $d A x y z $.  $d B x y z $.  $d C x y z $.  $d D x y z $.  $d G x y z $.
