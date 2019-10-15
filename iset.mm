@@ -59639,7 +59639,7 @@ $)
         ( x <Q y <-> ( z G x ) <Q ( z G y ) ) ) $.
       genprndl.com $e |- ( ( x e. Q. /\ y e. Q. ) ->
         ( x G y ) = ( y G x ) ) $.
-      genprndl.l $e |- ( ( ( ( A e. P. /\ g e. ( 1st ` A ) ) /\
+      genprndl.lower $e |- ( ( ( ( A e. P. /\ g e. ( 1st ` A ) ) /\
                        ( B e. P. /\ h e. ( 1st ` B ) ) ) /\ x e. Q. ) ->
                        ( x <Q ( g G h ) -> x e. ( 1st ` ( A F B ) ) ) ) $.
       $( The lower cut produced by addition or multiplication on positive reals
