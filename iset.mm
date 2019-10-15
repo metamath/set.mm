@@ -5405,15 +5405,11 @@ $)
     ( wo wn wa pm2.45 pm2.46 jca simpl con2i simpr jaoi impbii ) ABCZDZADZBDZEZ
     OPQABFABGHNRARDBRAPQIJRBPQKJLJM $.
 
-  $( Negated conjunction in terms of disjunction (one direction of De Morgan's
+  $( Theorem *3.14 of [WhiteheadRussell] p. 111.  One direction of De Morgan's
      law).  The biconditional holds for decidable propositions as seen at
-     ~ ianordc .  (Contributed by Jim Kingdon, 1-Dec-2018.) $)
-  ianorr $p |- ( ( -. ph \/ -. ps ) -> -. ( ph /\ ps ) ) $=
-    ( wn wa ax-ia1 con3i ax-ia2 jaoi ) ACABDZCBCIAABEFIBABGFH $.
-
-  $( Theorem *3.14 of [WhiteheadRussell] p. 111.  The converse holds for
-     decidable propositions, as seen at ~ pm3.13dc .  (Contributed by NM,
-     3-Jan-2005.)  (Revised by Mario Carneiro, 31-Jan-2015.) $)
+     ~ ianordc .  The converse holds for decidable propositions, as seen at
+     ~ pm3.13dc .  (Contributed by NM, 3-Jan-2005.)  (Revised by Mario
+     Carneiro, 31-Jan-2015.) $)
   pm3.14 $p |- ( ( -. ph \/ -. ps ) -> -. ( ph /\ ps ) ) $=
     ( wn wa simpl con3i simpr jaoi ) ACABDZCBCIAABEFIBABGFH $.
 
