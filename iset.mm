@@ -61220,7 +61220,7 @@ $)
 
   ${
     $d w x y z $.
-    $( ~ axun from bounded separation.  (Contributed by BJ, 15-Oct-2019.)
+    $( ~ axun2 from bounded separation.  (Contributed by BJ, 15-Oct-2019.)
        (Proof modification is discouraged.) $)
     bj-axun2 $p |- E. y A. z ( z e. y <-> E. w ( z e. w /\ w e. x ) ) $=
       ( wel wa wex cv wrex ax-bdel ax-bdex df-rex exancom bitri ax-un bdbm1.3ii
