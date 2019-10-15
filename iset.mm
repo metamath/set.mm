@@ -1,4 +1,4 @@
-$( iset.mm - Version of 9-Oct-2019
+$( iset.mm - Version of 14-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -22124,8 +22124,8 @@ $)
     gencbvex2.2 $e |- ( A = y -> ( ph <-> ps ) ) $.
     gencbvex2.3 $e |- ( A = y -> ( ch <-> th ) ) $.
     gencbvex2.4 $e |- ( th -> E. x ( ch /\ A = y ) ) $.
-    $( Restatement of ~ gencbvex with weaker hypotheses.  (Contributed by
-       Jeff Hankins, 6-Dec-2006.) $)
+    $( Restatement of ~ gencbvex with weaker hypotheses.  (Contributed by Jeff
+       Hankins, 6-Dec-2006.) $)
     gencbvex2 $p |- ( E. x ( ch /\ ph ) <-> E. y ( th /\ ps ) ) $=
       ( cv wceq wa wex biimpac exlimiv impbii gencbvex ) ABCDEFGHIJDCGFLMZNZEOK
       UADETCDJPQRS $.
@@ -59311,6 +59311,30 @@ $)
   $}
 
   ${
+    $d l u q r A $.
+    $( Membership in positive reals, using ` 1st ` and ` 2nd ` to refer to the
+       lower and upper cut.  (Contributed by Jim Kingdon, 3-Oct-2019.) $)
+    elnp1st2nd $p |- ( A e. P. <-> ( (
+        A e. ( ~P Q. X. ~P Q. ) /\
+        ( E. q e. Q. q e. ( 1st ` A ) /\ E. r e. Q. r e. ( 2nd ` A ) ) ) /\ (
+        ( A. q e. Q. ( q e. ( 1st ` A ) <->
+            E. r e. Q. ( q <Q r /\ r e. ( 1st ` A ) ) ) /\
+          A. r e. Q. ( r e. ( 2nd ` A ) <->
+            E. q e. Q. ( q <Q r /\ q e. ( 2nd ` A ) ) ) ) /\
+        A. q e. Q. -. ( q e. ( 1st ` A ) /\ q e. ( 2nd ` A ) ) /\
+        A. q e. Q. A. r e. Q. ( q <Q r ->
+          ( q e. ( 1st ` A ) \/ r e. ( 2nd ` A ) ) )
+        ) ) ) $=
+      ( cnp wcel cnq cpw cxp cv c1st cfv wrex wral wss simprd jca elpwid anim1i
+      wa wb c2nd cltq wbr wn wo wi w3a npsspw sseli cop prop elinp sylib simpld
+      wceq 1st2nd2 ad2antrr xp1st xp2nd sylibr eqeltrd impbii ) ADEZAFGZVDHZEZC
+      IZAJKZEZCFLBIZAUAKZEZBFLSZSZVIVGVJUBUCZVJVHESBFLTCFMVLVOVGVKEZSCFLTBFMSVI
+      VPSUDCFMVOVIVLUEUFBFMCFMUGZSZVCVNVQVCVFVMDVEAUHUIVCVHFNZVKFNZSZVMVCWAVMSZ
+      VQVCVHVKUJZDEZWBVQSZAUKVKVHBCULZUMZUNOPVCWBVQWGOPVRAWCDVFAWCUOVMVQAVDVDUP
+      UQVRWEWDVNWBVQVFWAVMVFVSVTVFVHFAVDVDURQVFVKFAVDVDUSQPRRWFUTVAVB $.
+  $}
+
+  ${
     $d x y L $.  $d U x y $.
     $( A positive real's lower cut is inhabited.  (Contributed by Jim Kingdon,
        27-Sep-2019.) $)
@@ -59508,8 +59532,25 @@ $)
   $}
 
   ${
-    $d x y z f g h A $.  $d x y z f g h B $.  $d x y z f g h w v G $.
-    $d f g F $.  $d f g h C $.  $d f g h D $.
+    $d A x y z $.  $d B x y z $.  $d C x y z $.  $d D x y z $.  $d G x y z $.
+    genplt2i.ord $e |- ( ( x e. Q. /\ y e. Q. /\ z e. Q. ) ->
+      ( x <Q y <-> ( z G x ) <Q ( z G y ) ) ) $.
+    genplt2i.com $e |- ( ( x e. Q. /\ y e. Q. ) -> ( x G y ) = ( y G x ) ) $.
+    $( Operating on both sides of two inequalities, when the operation is
+       consistent with ` <Q ` .  (Contributed by Jim Kingdon, 6-Oct-2019.) $)
+    genplt2i $p |- ( ( A <Q B /\ C <Q D ) -> ( A G C ) <Q ( B G D ) ) $=
+      ( cltq wbr wa co cnq cv wcel adantl ltrelnq syl2an ax-ia1 w3a brel simpll
+      wb simplr simprl wceq caovord2d mpbid ax-ia2 simprr caovordd ltsonq sotri
+      syl2anc ) DEKLZFGKLZMZDFHNZEFHNZKLZVAEGHNZKLZUTVCKLUSUQVBUQURUAUSABCDEFKO
+      HAPZOQZBPZOQZCPZOQUBVEVGKLVIVEHNVIVGHNKLUEUSIRZUQDOQZEOQZMZFOQZGOQZMZVKUR
+      DEOOKSUCZFGOOKSUCZVKVLVPUDTUQVMVPVLURVQVRVKVLVPUFTZUQVMVPVNURVQVRVMVNVOUG
+      TZVFVHMVEVGHNVGVEHNUHUSJRUIUJUSURVDUQURUKUSABCFGEKOHVJVTUQVMVPVOURVQVRVMV
+      NVOULTVSUMUJUTVAVCKOUNSUOUP $.
+  $}
+
+  ${
+    $d x y z f g h w v q A $.  $d x y z f g h w v q B $.
+    $d x y z f g h w v q G $.  $d f g q F $.  $d f g h C $.  $d f g h D $.
     genpelvl.1 $e |- F = ( w e. P. , v e. P. |->
       <. { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 1st ` w ) /\
         z e. ( 1st ` v ) /\ x = ( y G z ) ) } ,
@@ -59546,6 +59587,93 @@ $)
       ( cnp cv c1st cfv wcel w3a cnq wrex crab c2nd nqex co wceq cop rabex opex
       dmmpt2 ) DEJJBKZDKZLMNCKZEKZLMNAKUGUIGUAUBZOCPQBPQZAPRZUGUHSMNUIUJSMNUKOC
       PQBPQZAPRZUCFHUMUOULAPTUDUNAPTUDUEUF $.
+
+    $( Result of general operation on positive reals is an ordered pair of sets
+       of positive fractions.  (Contributed by Jim Kingdon, 4-Oct-2019.) $)
+    genpelpw $p |- ( ( A e. P. /\ B e. P. ) ->
+        ( A F B ) e. ( ~P Q. X. ~P Q. ) ) $=
+      ( wcel cv c1st cfv w3a cnq wrex crab c2nd cnp wa co wceq cop fveq2 eleq2d
+      cpw cxp 3anbi1d 2rexbidv rabbidv opeq12d 3anbi2d nqex rabex ovmpt2 ssrab2
+      opex wss elpw2 mpbir opelxpi mp2an syl6eqel ) FUALGUALUBFGHUCBMZFNOZLZCMZ
+      GNOZLZAMVFVIIUCUDZPZCQRBQRZAQSZVFFTOZLZVIGTOZLZVLPZCQRBQRZAQSZUEZQUHZWDUI
+      ZDEFGUAUAVFDMZNOZLZVIEMZNOZLZVLPZCQRBQRZAQSZVFWFTOZLZVIWITOZLZVLPZCQRBQRZ
+      AQSZUEWCHVHWKVLPZCQRBQRZAQSZVQWRVLPZCQRBQRZAQSZUEWFFUDZWNXDXAXGXHWMXCAQXH
+      WLXBBCQQXHWHVHWKVLXHWGVGVFWFFNUFUGUJUKULXHWTXFAQXHWSXEBCQQXHWPVQWRVLXHWOV
+      PVFWFFTUFUGUJUKULUMWIGUDZXDVOXGWBXIXCVNAQXIXBVMBCQQXIWKVKVHVLXIWJVJVIWIGN
+      UFUGUNUKULXIXFWAAQXIXEVTBCQQXIWRVSVQVLXIWQVRVIWIGTUFUGUNUKULUMJVOWBVNAQUO
+      UPWAAQUOUPUSUQVOWDLZWBWDLZWCWELXJVOQUTVNAQURVOQUOVAVBXKWBQUTWAAQURWBQUOVA
+      VBVOWBWDWDVCVDVE $.
+
+    $( The lower cut produced by addition or multiplication on positive reals
+       is inhabited.  (Contributed by Jim Kingdon, 5-Oct-2019.) $)
+    genpml $p |- ( ( A e. P. /\ B e. P. ) ->
+        E. q e. Q. q e. ( 1st ` ( A F B ) ) ) $=
+      ( vf vg cnp wcel wa cv cfv cnq c1st co wrex wex c2nd prop prml rexex 3syl
+      cop adantr ad2antlr genpprecll imp elprnql sylan anim12i an4s caovcl wceq
+      syl ax-ia2 eleq1d rspcedv mpd anassrs exlimddv ) FOPZGOPZQZMRZFUASZPZJRZF
+      GHUBUASZPZJTUCZMVHVMMUDZVIVHVLFUESZUJOPZVMMTUCVRFUFZMVSVLUGVMMTUHUIUKVJVM
+      QNRZGUASZPZVQNVIWDNUDZVHVMVIWCGUESZUJOPZWDNTUCWEGUFZNWFWCUGWDNTUHUIULVJVM
+      WDVQVJVMWDQZQZVKWBIUBZVOPZVQVJWIWLABCDEFGVKWBHIKLUMUNWJVPWLJWKTWJVKTPZWBT
+      PZQZWKTPVHVMVIWDWOVHVMQWMVIWDQWNVHVTVMWMWAVKVSVLUOUPVIWGWDWNWHWBWFWCUOUPU
+      QURBCVKWBTILUSVAWJVNWKUTZQVNWKVOWJWPVBVCVDVEVFVGVG $.
+
+    ${
+      $d F h $.
+      genpcdl.2 $e |- ( ( ( ( A e. P. /\ g e. ( 1st ` A ) ) /\
+                       ( B e. P. /\ h e. ( 1st ` B ) ) ) /\ x e. Q. ) ->
+                       ( x <Q ( g G h ) -> x e. ( 1st ` ( A F B ) ) ) ) $.
+      $( Downward closure of an operation on positive reals.  (Contributed by
+         Jim Kingdon, 14-Oct-2019.) $)
+      genpcdl $p |- ( ( A e. P. /\ B e. P. ) -> ( f e. ( 1st ` ( A F B ) ) ->
+                   ( x <Q f -> x e. ( 1st ` ( A F B ) ) ) ) ) $=
+        ( wcel wa cv cltq wi cnp wbr c1st cfv cnq ltrelnq brel simpld wceq wrex
+        co genpelvl adantr breq2 biimpd sylan9r exp31 impancom rexlimdvv sylbid
+        wb an4s ex syl5 com34 pm2.43d com23 ) FUAPZGUAPZQZARZHRZSUBZVLFGKUKUCUD
+        ZPZVKVNPZVJVMVOVPTVJVMVOVMVPVMVKUEPZVJVOVMVPTZTZVMVQVLUEPVKVLUEUESUFUGU
+        HVJVQVSVJVQQZVOVLIRZJRZLUKZUIZJGUCUDZUJIFUCUDZUJZVRVJVOWGVAVQABCDEFGVLI
+        JKLMNULUMVTWDVRIJWFWEVJWAWFPZWBWEPZQVQWDVRTZVHWHVIWIVQWJTVHWHQVIWIQQZVQ
+        WDVRWDVMVKWCSUBZWKVQQVPWDVMWLVLWCVKSUNUOOUPUQVBURUSUTVCVDVEVFVG $.
+    $}
+
+    ${
+      $d A a b c d q r v w x y z $.  $d B a b c d f g h q r v w x y z $.
+      $d C f g h x y z $.  $d D f g h x y z $.
+      $d F a b c d f g h q r v w x y z $.  $d G a b c d f g h q r v w x y z $.
+      genprndl.ord $e |- ( ( x e. Q. /\ y e. Q. /\ z e. Q. ) ->
+        ( x <Q y <-> ( z G x ) <Q ( z G y ) ) ) $.
+      genprndl.com $e |- ( ( x e. Q. /\ y e. Q. ) ->
+        ( x G y ) = ( y G x ) ) $.
+      genprndl.l $e |- ( ( ( ( A e. P. /\ g e. ( 1st ` A ) ) /\
+                       ( B e. P. /\ h e. ( 1st ` B ) ) ) /\ x e. Q. ) ->
+                       ( x <Q ( g G h ) -> x e. ( 1st ` ( A F B ) ) ) ) $.
+      $( The lower cut produced by addition or multiplication on positive reals
+         is rounded.  (Contributed by Jim Kingdon, 7-Oct-2019.) $)
+      genprndl $p |- ( ( A e. P. /\ B e. P. ) ->
+          A. q e. Q. ( q e. ( 1st ` ( A F B ) ) <->
+            E. r e. Q. ( q <Q r /\ r e. ( 1st ` ( A F B ) ) ) ) ) $=
+        ( wcel wa vc vd va vb cnp cv co c1st cfv cltq wbr wrex wb wceq genpelvl
+        cnq wex r2ex syl6bb biimpa adantrl c2nd prop prnmaxl sylan anim12i an4s
+        wi cop reeanv sylibr genplt2i reximi syl adantrr breq1 biimprd ad2antll
+        reximdv mpd exlimdvv adantr genpprecll imp elprnql caovcl breq2 anbi12d
+        eleq1 adantl rspcedv mpan2d rexlimdvva expr wal genpcdl alrimdv imbi12d
+        ex cbvalv syl6ib syl6 impd ancomsd ad2antrr rexlimdva impbid ralrimiva
+        sp ) FUESZGUESZTZMUFZFGJUGUHUIZSZXMLUFZUJUKZXPXNSZTZLUPULZUMMUPXLXMUPSZ
+        TZXOXTXLYAXOXTXLYAXOTZTZXMUAUFZUBUFZKUGZUJUKZUBGUHUIZULZUAFUHUIZULZXTYD
+        UCUFZYKSZUDUFZYISZTZXMYMYOKUGZUNZTZUDUQUCUQZYLXLXOUUAYAXLXOUUAXLXOYSUDY
+        IULUCYKULUUAABCDEFGXMUCUDJKNOUOYSUCUDYKYIURUSUTVAXLUUAYLVHYCXLYTYLUCUDX
+        LYTYLXLYTTYRYGUJUKZUBYIULZUAYKULZYLXLYQUUDYSXLYQTZYMYEUJUKZYOYFUJUKZTZU
+        BYIULZUAYKULZUUDUUEUUFUAYKULZUUGUBYIULZTZUUJXJYNXKYPUUMXJYNTUUKXKYPTUUL
+        XJYKFVBUIZVIUESZYNUUKFVCZUAYMUUNYKVDVEXKYIGVBUIZVIUESZYPUULGVCZUBYOUUQY
+        IVDVEVFVGUUFUUGUAUBYKYIVJVKUUIUUCUAYKUUHUUBUBYIABCYMYEYOYFKPQVLVMVMVNVO
+        YSUUDYLVHXLYQYSUUCYJUAYKYSUUBYHUBYIYSYHUUBXMYRYGUJVPVQVSVSVRVTWSWAWBVTX
+        LYLXTVHYCXLYHXTUAUBYKYIXLYEYKSZYFYISZTZTZYHYGXNSZXTXLUVBUVDABCDEFGYEYFJ
+        KNOWCWDUVCXSYHUVDTZLYGUPUVCYEUPSZYFUPSZTZYGUPSXJUUTXKUVAUVHXJUUTTUVFXKU
+        VATUVGXJUUOUUTUVFUUPYEUUNYKWEVEXKUURUVAUVGUUSYFUUQYIWEVEVFVGBCYEYFUPKOW
+        FVNXPYGUNZXSUVEUMUVCUVIXQYHXRUVDXPYGXMUJWGXPYGXNWIWHWJWKWLWMWBVTWNYBXSX
+        OLUPXLXSXOVHYAXPUPSXLXRXQXOXLXRXQXOXLXRXQXOVHZMWOZUVJXLXRAUFZXPUJUKZUVL
+        XNSZVHZAWOUVKXLXRUVOAABCDEFGLHIJKNORWPWQUVOUVJAMUVLXMUNUVMXQUVNXOUVLXMX
+        PUJVPUVLXMXNWIWRWTXAUVJMXIXBXCXDXEXFXGXH $.
+    $}
   $}
 
 $(
