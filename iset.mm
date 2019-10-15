@@ -59700,6 +59700,35 @@ $)
         XNSZVHZAWOUVKXLXRUVOAABCDEFGLHIJKNORWPWQUVOUVJAMUVLXMUNUVMXQUVNXOUVLXMX
         PUJVPUVLXMXNWIWRWTXAUVJMXIXBXCXDXEXFXGXH $.
     $}
+
+    ${
+      $d A a b c d f g h q v w x y z $.  $d B a b c d f g h q v w x y z $.
+      $d C f g h $.  $d D f g h $.  $d F a b c d f g q $.
+      $d G a b c d f g h q v w x y z $.
+      genpdisj.ord $e |- ( ( x e. Q. /\ y e. Q. /\ z e. Q. ) ->
+        ( x <Q y <-> ( z G x ) <Q ( z G y ) ) ) $.
+      genpdisj.com $e |-
+        ( ( x e. Q. /\ y e. Q. ) -> ( x G y ) = ( y G x ) ) $.
+      $( The lower and upper cuts produced by addition or multiplication on
+         positive reals are disjoint.  (Contributed by Jim Kingdon,
+         15-Oct-2019.) $)
+      genpdisj $p |- ( ( A e. P. /\ B e. P. ) -> A. q e. Q.
+          -. ( q e. ( 1st ` ( A F B ) ) /\ q e. ( 2nd ` ( A F B ) ) ) ) $=
+        ( va vb vc vd wcel wa cnp cv co c1st cfv c2nd wn cnq wceq wex wfal wrex
+        genpelvl r2ex syl6bb genpelvu anbi12d ee4anv syl6bbr biimpa wbr an4 cop
+        cltq prop prltlu 3expib syl im2anan9 genplt2i syl6 syl5bir imp adantrlr
+        wi adantlr adantrrr eqtr2 ad2ant2l adantl ltsonq soirri breq2 pm2.21fal
+        ltrelnq mtbii ex exlimdvv mpd inegd ralrimivw ) FUASZGUASZTZJUBZFGHUCZU
+        DUESZWOWPUFUESZTZUGJUHWNWSWNWSTZOUBZFUDUEZSZPUBZGUDUEZSZTZWOXAXDIUCZUIZ
+        TZQUBZFUFUEZSZRUBZGUFUEZSZTZWOXKXNIUCZUIZTZTZRUJQUJZPUJOUJZUKWNWSYCWNWS
+        XJPUJOUJZXTRUJQUJZTYCWNWQYDWRYEWNWQXIPXEULOXBULYDABCDEFGWOOPHIKLUMXIOPX
+        BXEUNUOWNWRXSRXOULQXLULYEABCDEFGWOQRHIKLUPXSQRXLXOUNUOUQXJXTOPQRURUSUTW
+        TYBUKOPWTYAUKQRWTYAUKWTYATZXHXRVDVAZWTXJXQYGXSWTXGXQYGXIWNXGXQTZYGWSWNY
+        HYGYHXCXMTZXFXPTZTZWNYGXCXMXFXPVBWNYKXAXKVDVAZXDXNVDVAZTYGWLYIYLWMYJYMW
+        LXBXLVCUASZYIYLVOFVEYNXCXMYLXAXKXLXBVFVGVHWMXEXOVCUASZYJYMVOGVEYOXFXPYM
+        XDXNXOXEVFVGVHVIABCXAXKXDXNIMNVJVKVLVMVPVNVQYFXHXRUIZYGUGYAYPWTXIXSYPXG
+        XQWOXHXRVRVSVTYPXHXHVDVAYGXHVDUHWAWEWBXHXRXHVDWCWFVHWDWGWHWHWIWJWK $.
+    $}
   $}
 
 $(
