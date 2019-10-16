@@ -61314,7 +61314,7 @@ $)
 
   ${
     bdcdeq.1 $e |- Bdd ph $.
-    $( Conditional equality of a bounded formula is a bounded formula
+    $( Conditional equality of a bounded formula is a bounded formula.
        (Contributed by BJ, 16-Oct-2019.) $)
     bdcdeq $p |- Bdd CondEq ( x = y -> ph ) $=
       ( weq wi wcdeq ax-bdeq ax-bdim df-cdeq bd0r ) BCEZAFABCGLABCHDIABCJK $.
