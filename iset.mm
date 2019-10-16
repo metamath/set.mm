@@ -60821,8 +60821,8 @@ $)
     ( wn wo wa pm3.24 ioran mtbir ) AABZCBHHBDHEAHFG $.
 
   $( Double negation of excluded middle.  Intuitionistic logic refutes
-     refutability of decidability of a formula.  (Contributed by BJ,
-     9-Oct-2019.) $)
+     undecidability (but, of course, does not prove decidability) of any
+     formula.  (Contributed by BJ, 9-Oct-2019.) $)
   nndc $p |- -. -. DECID ph $=
     ( wdc wn wo nnexmid df-dc notbii mtbir ) ABZCAACDZCAEIJAFGH $.
 
@@ -61244,6 +61244,16 @@ $)
       ( vx cv wss cab cpw bdss bdcclab df-pw bdceqir ) CDAEZCFAGLCCABHICAJK $.
   $}
 
+  ${
+    $d x y z $.
+    $( The union of a set is a bounded class.  (Contributed by BJ,
+       15-Oct-2019.) $)
+    bdcuni $p |- Bddc U. x $=
+      ( vy vz wel wa wex cab cv cuni wrex ax-bdel ax-bdex bdcclab exancom bitri
+      df-rex abbii bdceqi df-uni bdceqir ) BCDZCADZECFZBGZAHZIUACUEJZBGUDUFBUAC
+      ABCKLMUFUCBUFUBUAECFUCUACUEPUBUACNOQRBCUEST $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -61294,7 +61304,8 @@ $)
     bdbm1.3ii.bd $e |- Bdd ph $.
     bdbm1.3ii.1 $e |- E. x A. y ( ph -> y e. x ) $.
     $( Bounded version of ~ bm1.3ii (with essentially the same proof).
-       (Contributed by BJ, 5-Oct-2019.) $)
+       (Contributed by BJ, 5-Oct-2019.)
+       (Proof modification is discouraged.) $)
     bdbm1.3ii $p |- E. x A. y ( y e. x <-> ph ) $=
       ( vz wel wi wal wa wex weq elequ2 imbi2d albidv cbvexv mpbi bdsep2 pm3.2i
       wb exan 19.42v bimsc1 alanimi eximi sylbir exlimiv ax-mp ) ACFGZHZCIZCBGZ
@@ -61305,7 +61316,8 @@ $)
 
   ${
     $d x z w $.  $d y z w $.
-    $( ~ zfpair2 from bounded separation.  (Contributed by BJ, 5-Oct-2019.) $)
+    $( ~ zfpair2 from bounded separation.  (Contributed by BJ, 5-Oct-2019.)
+       (Proof modification is discouraged.) $)
     bj-zfpair2 $p |- { x , y } e. _V $=
       ( vz vw cv cpr wceq wex wel weq wo wb wal ax-bdeq ax-bdor ax-pr bdbm1.3ii
       wcel dfcleq vex elpr bibi2i albii bitri exbii mpbir issetri ) CAEZBEZFZCE
@@ -61315,19 +61327,40 @@ $)
 
   ${
     $d x y A $.  $d x y B $.  $d x W $.
-    $( ~ prexg from bounded separation.  (Contributed by BJ, 5-Oct-2019.) $)
+    $( ~ prexg from bounded separation.  (Contributed by BJ, 5-Oct-2019.)
+       (Proof modification is discouraged.) $)
     bj-prexg $p |- ( ( A e. V /\ B e. W ) -> { A , B } e. _V ) $=
-      ( vx vy wcel cpr cvv wi cv wceq preq2 eleq1d zfpair2 vtoclg preq1 vtocleg
-      syl5ib imp ) ACGBDGZABHZIGZUAUCJEACUAEKZBHZIGZUDALZUCUDFKZHZIGUFFBDUHBLUI
-      UEIUHBUDMNEFOPUGUEUBIUDABQNSRT $.
+      ( vx vy wcel cpr cvv wi wceq preq2 eleq1d bj-zfpair2 vtoclg preq1 vtocleg
+      cv syl5ib imp ) ACGBDGZABHZIGZUAUCJEACUAERZBHZIGZUDAKZUCUDFRZHZIGUFFBDUHB
+      KUIUEIUHBUDLMEFNOUGUEUBIUDABPMSQT $.
   $}
 
   $( ~ snexg from bounded separation.  Note: same thing doable with ~ uniex2 ,
      ~ uniex , ~ unex , ~ unexg , hence ~ sucex , ~ sucexg .  (Contributed by
-     BJ, 5-Oct-2019.) $)
+     BJ, 5-Oct-2019.)  (Proof modification is discouraged.) $)
   bj-snexg $p |- ( A e. V -> { A } e. _V ) $=
     ( wcel csn cpr cvv dfsn2 bj-prexg anidms syl5eqel ) ABCZADAAEZFAGKLFCAABBHI
     J $.
+
+  ${
+    $d w x y z $.
+    $( ~ axun2 from bounded separation.  (Contributed by BJ, 15-Oct-2019.)
+       (Proof modification is discouraged.) $)
+    bj-axun2 $p |- E. y A. z ( z e. y <-> E. w ( z e. w /\ w e. x ) ) $=
+      ( wel wa wex cv wrex ax-bdel ax-bdex df-rex exancom bitri ax-un bdbm1.3ii
+      bd0 ) CDEZDAEZFDGZBCRDAHZIZTRDACDJKUBSRFDGTRDUALSRDMNQABCDOP $.
+  $}
+
+  ${
+    $d x y z $.
+    $( ~ uniex2 from bounded separation.  (Contributed by BJ, 15-Oct-2019.)
+       (Proof modification is discouraged.) $)
+    bj-uniex2 $p |- E. y y = U. x $=
+      ( vz cv cuni wceq wex wel wcel wb wal bdcuni bdeli wi wa zfun eluni exbii
+      imbi1i mpbir albii bdbm1.3ii dfcleq ) BDZADZEZFZBGCBHZCDZUFIZJCKZBGUJBCCU
+      FALMUJUHNZCKZBGUHBAHOBGZUHNZCKZBGBCAPUMUPBULUOCUJUNUHBUIUEQSUARTUBUGUKBCU
+      DUFUCRT $.
+  $}
 
 
 $(
