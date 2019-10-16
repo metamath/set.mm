@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Oct-2019
+$( iset.mm - Version of 15-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -59409,6 +59409,21 @@ $)
     UKURUQUCACDUDABUEUFUG $.
 
   ${
+    $d C q $.  $d L q r $.  $d U q r $.
+    $( An element of a lower cut is less than an element of the corresponding
+       upper cut.  (Contributed by Jim Kingdon, 15-Oct-2019.) $)
+    prltlu $p |- ( ( <. L , U >. e. P. /\ B e. L /\ C e. U ) -> B <Q C ) $=
+      ( vq vr wcel w3a wn cltq wbr wa wi cnq cv wral wss wrex wb eleq1 simp3 wo
+      cop elprnqu 3adant2 elinp simpr2 sylbi 3ad2ant1 wceq anbi12d notbid rspcv
+      cnp sylc ancom notbii imnan bitr4i sylib mpd 3simpa prubl syl2anc ) DCUCU
+      NGZADGZBCGZHZBDGZIZABJKZVHVGVJVEVFVGUAVHVIVGLZIZVGVJMZVHBNGZEOZDGZVPCGZLZ
+      IZENPZVMVEVGVOVFBCDUDUEZVEVFWAVGVEDNQCNQLVQENRFOZCGZFNRLLZVQVPWCJKZWCDGLF
+      NRSENPWDWFVRLENRSFNPLZWAWFVQWDUBMFNPENPZHLWACDFEUFWEWGWAWHUGUHUIVTVMEBNVP
+      BUJZVSVLWIVQVIVRVGVPBDTVPBCTUKULUMUOVMVGVILZIVNVLWJVIVGUPUQVGVIURUSUTVAVH
+      VEVFLVOVJVKMVEVFVGVBWBABCDVCVDVA $.
+  $}
+
+  ${
     $d x y A $.  $d x y B $.  $d x y L $.  $d x y U $.
     $( A lower cut has no largest member.  (Contributed by Jim Kingdon,
        29-Sep-2019.) $)
@@ -59568,6 +59583,21 @@ $)
       BFVCWAWNWFUQURVOWEWMUHUAPWTXCGVCWBWMWEUQURBCWAWBRLNUSUTVDHWCRVAVEVFVPVQVT
       WGVGVPVTWLVQWGWRWJWGOHRWHHUEWIWDIJWFWEWHHWCVHVIVJVKVLVM $.
 
+    $( Membership in upper cut of general operation (addition or
+       multiplication) on positive reals.  (Contributed by Jim Kingdon,
+       15-Oct-2019.) $)
+    genpelvu $p |- ( ( A e. P. /\ B e. P. ) -> ( C e. ( 2nd ` ( A F B ) ) <->
+        E. g e. ( 2nd ` A ) E. h e. ( 2nd ` B ) C = ( g G h ) ) ) $=
+      ( vf wcel wa cnq cfv wrex cnp co c2nd cv wceq crab c1st cop genipv fveq2d
+      rabex op2nd syl6eq eleq2d elrabi syl6bi elprnqu sylan caovcl syl2an eleq1
+      nqex prop an4s syl5ibrcom rexlimdvva wb eqeq1 2rexbidv elrab3 sylan9bb ex
+      pm5.21ndd ) FUAPZGUAPZQZHRPZHFGKUBZUCSZPZHIUDZJUDZLUBZUEZJGUCSZTIFUCSZTZV
+      PVTHOUDZWCUEZJWETIWFTZORUFZPZVQVPVSWKHVPVSWIJGUGSZTIFUGSZTZORUFZWKUHZUCSW
+      KVPVRWQUCABCDEFGKLJIOMNUIUJWPWKWOORVBUKWJORVBUKULUMUNZWJOHRUOUPVPWDVQIJWF
+      WEVPWAWFPZWBWEPZQQVQWDWCRPZVNWSVOWTXAVNWSQWARPZWBRPZXAVOWTQVNWNWFUHUAPWSX
+      BFVCWAWFWNUQURVOWMWEUHUAPWTXCGVCWBWEWMUQURBCWAWBRLNUSUTVDHWCRVAVEVFVPVQVT
+      WGVGVPVTWLVQWGWRWJWGOHRWHHUEWIWDIJWFWEWHHWCVHVIVJVKVLVM $.
+
     $( Pre-closure law for general operation on lower cuts.  (Contributed by
        Jim Kingdon, 2-Oct-2019.) $)
     genpprecll $p |- ( ( A e. P. /\ B e. P. ) ->
@@ -59639,7 +59669,7 @@ $)
         ( x <Q y <-> ( z G x ) <Q ( z G y ) ) ) $.
       genprndl.com $e |- ( ( x e. Q. /\ y e. Q. ) ->
         ( x G y ) = ( y G x ) ) $.
-      genprndl.l $e |- ( ( ( ( A e. P. /\ g e. ( 1st ` A ) ) /\
+      genprndl.lower $e |- ( ( ( ( A e. P. /\ g e. ( 1st ` A ) ) /\
                        ( B e. P. /\ h e. ( 1st ` B ) ) ) /\ x e. Q. ) ->
                        ( x <Q ( g G h ) -> x e. ( 1st ` ( A F B ) ) ) ) $.
       $( The lower cut produced by addition or multiplication on positive reals
@@ -59669,6 +59699,35 @@ $)
         OLUPXLXSXOVHYAXPUPSXLXRXQXOXLXRXQXOXLXRXQXOVHZMWOZUVJXLXRAUFZXPUJUKZUVL
         XNSZVHZAWOUVKXLXRUVOAABCDEFGLHIJKNORWPWQUVOUVJAMUVLXMUNUVMXQUVNXOUVLXMX
         PUJVPUVLXMXNWIWRWTXAUVJMXIXBXCXDXEXFXGXH $.
+    $}
+
+    ${
+      $d A a b c d f g h q v w x y z $.  $d B a b c d f g h q v w x y z $.
+      $d C f g h $.  $d D f g h $.  $d F a b c d f g q $.
+      $d G a b c d f g h q v w x y z $.
+      genpdisj.ord $e |- ( ( x e. Q. /\ y e. Q. /\ z e. Q. ) ->
+        ( x <Q y <-> ( z G x ) <Q ( z G y ) ) ) $.
+      genpdisj.com $e |-
+        ( ( x e. Q. /\ y e. Q. ) -> ( x G y ) = ( y G x ) ) $.
+      $( The lower and upper cuts produced by addition or multiplication on
+         positive reals are disjoint.  (Contributed by Jim Kingdon,
+         15-Oct-2019.) $)
+      genpdisj $p |- ( ( A e. P. /\ B e. P. ) -> A. q e. Q.
+          -. ( q e. ( 1st ` ( A F B ) ) /\ q e. ( 2nd ` ( A F B ) ) ) ) $=
+        ( va vb vc vd wcel wa cnp cv co c1st cfv c2nd wn cnq wceq wex wfal wrex
+        genpelvl r2ex syl6bb genpelvu anbi12d ee4anv syl6bbr biimpa wbr an4 cop
+        cltq prop prltlu 3expib syl im2anan9 genplt2i syl6 syl5bir imp adantrlr
+        wi adantlr adantrrr eqtr2 ad2ant2l adantl ltsonq soirri breq2 pm2.21fal
+        ltrelnq mtbii ex exlimdvv mpd inegd ralrimivw ) FUASZGUASZTZJUBZFGHUCZU
+        DUESZWOWPUFUESZTZUGJUHWNWSWNWSTZOUBZFUDUEZSZPUBZGUDUEZSZTZWOXAXDIUCZUIZ
+        TZQUBZFUFUEZSZRUBZGUFUEZSZTZWOXKXNIUCZUIZTZTZRUJQUJZPUJOUJZUKWNWSYCWNWS
+        XJPUJOUJZXTRUJQUJZTYCWNWQYDWRYEWNWQXIPXEULOXBULYDABCDEFGWOOPHIKLUMXIOPX
+        BXEUNUOWNWRXSRXOULQXLULYEABCDEFGWOQRHIKLUPXSQRXLXOUNUOUQXJXTOPQRURUSUTW
+        TYBUKOPWTYAUKQRWTYAUKWTYATZXHXRVDVAZWTXJXQYGXSWTXGXQYGXIWNXGXQTZYGWSWNY
+        HYGYHXCXMTZXFXPTZTZWNYGXCXMXFXPVBWNYKXAXKVDVAZXDXNVDVAZTYGWLYIYLWMYJYMW
+        LXBXLVCUASZYIYLVOFVEYNXCXMYLXAXKXLXBVFVGVHWMXEXOVCUASZYJYMVOGVEYOXFXPYM
+        XDXNXOXEVFVGVHVIABCXAXKXDXNIMNVJVKVLVMVPVNVQYFXHXRUIZYGUGYAYPWTXIXSYPXG
+        XQWOXHXRVRVSVTYPXHXHVDVAYGXHVDUHWAWEWBXHXRXHVDWCWFVHWDWGWHWHWIWJWK $.
     $}
   $}
 
