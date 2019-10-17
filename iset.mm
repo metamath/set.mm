@@ -60930,7 +60930,7 @@ $)
     ch2var.nfz $e |- F/ z ps $.
     ch2var.maj $e |- ( ( x = y /\ z = t ) -> ( ph <-> ps ) ) $.
     ch2var.min $e |- ph $.
-    $( Implicit substitution of ` y ` for ` x ` and ` z ` for ` t ` into a
+    $( Implicit substitution of ` y ` for ` x ` and ` t ` for ` z ` into a
        theorem.  (Contributed by BJ, 17-Oct-2019.) $)
     ch2var $p |- ps $=
       ( wal weq wa biimpd 2spim ax-gen mpg ) ACKBEABCDEFGHCDLEFLMABINOACJPQ $.
