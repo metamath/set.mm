@@ -61425,7 +61425,7 @@ $)
   bdcnul $p |- Bddc (/) $=
     ( vx c0 cv wcel noel bdnth bdelir ) ABACZBDHEFG $.
 
-  $( Alternate proof of ~ bdcnulALT .  Similarly, for the next few theorems
+  $( Alternate proof of ~ bdcnul .  Similarly, for the next few theorems
      proving boundedness of a class, one can either use their definition
      followed by ~ bdceqir , or use the corresponding characterizations of its
      elements followed by ~ bdelir .  (Contributed by BJ, 3-Oct-2019.)
