@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Oct-2019
+$( iset.mm - Version of 16-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -60895,8 +60895,7 @@ $)
      is decidable. ` DECID ` is idempotent.  (Contributed by BJ,
      9-Oct-2019.) $)
   dcdc $p |- ( DECID DECID ph <-> DECID ph ) $=
-    ( wdc wn wo df-dc nnexmid biorfi bicomi notbii orbi12i 3bitri bitr4i ) ABZB
-    MMCZDZMMEMAACDZPPCZDOAEZQPAFGPMQNMPRHNQMPRIHJKL $.
+    ( wdc wn wo df-dc nndc biorfi bitr4i ) ABZBIICZDIIEJIAFGH $.
 
   $( Definition of ` TEST ` .  This definition is not very useful in terms of
      number of tokens saved and readibility added, since one can mentally
@@ -60955,7 +60954,6 @@ bounded, but even without it, too many formulas could be proved bounded...
 Having ~ ax-bd0 in inference form ensures that a formula can be proved bounded
 only if it is equivalent *for all values of the free variables* to a
 syntactically bounded one.
-
 The other axioms (~ ax-bdim through ~ ax-bdsb ) can be written either in
 closed or inference form.  The fact that ~ ax-bd0 is an inference is enough to
 ensure that the closed forms cannot be "exploited" to prove that some unbounded
@@ -61026,10 +61024,10 @@ $)
 
   ${
     bdsb.1 $e |- Bdd ph $.
-    $( The formula resulting of proper substitution in a bounded formula is
+    $( A formula resulting from proper substitution in a bounded formula is
        bounded.  This probably cannot be proved from the other axioms, since
-       neither the definiens in ~ df-sb , nor any other equivalent formula, is
-       syntactically bounded.  (Contributed by BJ, 3-Oct-2019.) $)
+       neither the definiens in ~ df-sb , nor probably any other equivalent
+       formula, is syntactically bounded.  (Contributed by BJ, 3-Oct-2019.) $)
     ax-bdsb $a |- Bdd [ y / x ] ph $.
   $}
 
@@ -61155,6 +61153,8 @@ $(
 
 In line with our definitions of classes as extensions of predicates, it is
 useful to define a predicate for bounded classes, which is done in ~ df-bdc .
+Note that this notion is only a technical device which can be used to shorten
+proofs of (semantic) boundedness of formulas.
 
 $)
 
@@ -61204,11 +61204,26 @@ $)
 
   ${
     $d x A $.
-    bdeli.1 $e |- Bddc A $.
     $( The belonging of a setvar in a bounded class is a bounded formula.
        (Contributed by BJ, 3-Oct-2019.) $)
+    bdelt $p |- ( Bddc A -> Bdd x e. A ) $=
+      ( wbdc cv wcel wbd wal df-bdc sp sylbi ) BCADBEFZAGKABHKAIJ $.
+  $}
+
+  ${
+    $d x A $.
+    bdeli.1 $e |- Bddc A $.
+    $( Inference associated with ~ bdelt .  (Contributed by BJ, 3-Oct-2019.) $)
     bdeli $p |- Bdd x e. A $=
-      ( cv wcel wbd wbdc wal df-bdc mpbi spi ) ADBEFZABGLAHCABIJK $.
+      ( wbdc cv wcel wbd bdelt ax-mp ) BDAEBFGCABHI $.
+  $}
+
+  ${
+    $d x A $.
+    bdelir.1 $e |- Bdd x e. A $.
+    $( Inference associated with ~ bdelt .  (Contributed by BJ, 3-Oct-2019.) $)
+    bdelir $p |- Bddc A $=
+      ( wbdc cv wcel wbd df-bdc mpgbir ) BDAEBFGAABHCI $.
   $}
 
   ${
@@ -61249,6 +61264,48 @@ $)
       CJQBPABCDKELMABCNO $.
   $}
 
+  $( Inequality of two setvars is a bounded formula.  (Contributed by BJ,
+     16-Oct-2019.) $)
+  bdne $p |- Bdd x =/= y $=
+    ( weq wn cv wne ax-bdeq ax-bdn df-ne bd0r ) ABCZDAEZBEZFKABGHLMIJ $.
+
+  ${
+    $d x A $.
+    bdnel.1 $e |- Bddc A $.
+    $( Non-membership of a setvar in a bounded formula is a bounded formula.
+       (Contributed by BJ, 16-Oct-2019.) $)
+    bdnel $p |- Bdd x e/ A $=
+      ( cv wcel wn wnel bdeli ax-bdn df-nel bd0r ) ADZBEZFLBGMABCHILBJK $.
+  $}
+
+  ${
+    $d x y z $.  $d ph z $.
+    bdreu.1 $e |- Bdd ph $.
+    $( Boundedness of existential uniqueness.
+
+       A note regarding restricted quantifier: ` A. x e. A ph ` need not be
+       bounded even if ` A ` and ` ph ` are.  Indeed, ` _V ` is bounded by
+       ~ bdcvv , and ` |- ( A. x e. _V ph <-> A. x ph ) ` (in minimal
+       propositional calculus), so by ~ bd0 , if ` A. x e. _V ph ` were bounded
+       when ` ph ` is bounded, then ` A. x ph ` would be bounded as well when
+       ` ph ` is bounded, so by induction every formula without wff
+       metavariable would be bounded.  (Contributed by BJ, 16-Oct-2019.) $)
+    bdreu $p |- Bdd E! x e. y ph $=
+      ( vz cv wrex wi wral wa wreu ax-bdex ax-bdeq ax-bdim ax-bdal ax-bdan reu3
+      weq bd0r ) ABCFZGZABERZHZBTIZETGZJABTKUAUEABCDLUDECUCBCAUBDBEMNOLPABETQS
+      $.
+  $}
+
+  ${
+    $d x y $.
+    bdrmo.1 $e |- Bdd ph $.
+    $( Boundedness of existential at-most-one.  (Contributed by BJ,
+       16-Oct-2019.) $)
+    bdrmo $p |- Bdd E* x e. y ph $=
+      ( cv wrex wreu wi wrmo ax-bdex bdreu ax-bdim rmo5 bd0r ) ABCEZFZABOGZHABO
+      IPQABCDJABCDKLABOMN $.
+  $}
+
   $( The universal class is bounded.  The formulation may sound strange, but
      recall that here, "bounded" means "Delta_0 ".  (Contributed by BJ,
      3-Oct-2019.) $)
@@ -61256,15 +61313,34 @@ $)
     ( vx cvv wbdc cv wcel wbd df-bdc vex bdth mpgbir ) BCADBEZFAABGKAHIJ $.
 
   ${
-    $d y x $.  $d y A $.
-    bdss.1 $e |- Bddc A $.
-    $( The inclusion of a setvar in a bounded class is a bounded formula.
-       Note: apparently, we cannot prove from the present axioms that equality
-       of two bounded classes is a bounded formula.  (Contributed by BJ,
-       3-Oct-2019.) $)
-    bdss $p |- Bdd x C_ A $=
-      ( vy cv wcel wral wss bdeli ax-bdal dfss3 bd0r ) DEBFZDAEZGNBHMDADBCIJDNB
-      KL $.
+    bdcdeq.1 $e |- Bdd ph $.
+    $( Conditional equality of a bounded formula is a bounded formula.
+       (Contributed by BJ, 16-Oct-2019.) $)
+    bdcdeq $p |- Bdd CondEq ( x = y -> ph ) $=
+      ( weq wi wcdeq ax-bdeq ax-bdim df-cdeq bd0r ) BCEZAFABCGLABCHDIABCJK $.
+  $}
+
+  ${
+    bdcsbc.1 $e |- Bdd ph $.
+    $( A formula resulting from proper substitution of a setvar for a setvar in
+       a bounded formula is bounded.  See also ~ bdsbcALT .  (Contributed by
+       BJ, 16-Oct-2019.) $)
+    bdsbc $p |- Bdd [. y / x ]. ph $=
+      ( wsb cv wsbc ax-bdsb sbsbc bd0 ) ABCEABCFGABCDHABCIJ $.
+
+    $( Alternate proof of ~ bdsbc .  (Contributed by BJ, 16-Oct-2019.) $)
+    bdsbcALT $p |- Bdd [. y / x ]. ph $=
+      ( cv cab wcel wsbc bdclab df-sbc bd0r ) CEZABFGABLHACBDIABLJK $.
+  $}
+
+  ${
+    $d x z $.  $d y z $.  $d A z $.
+    bdccsb.1 $e |- Bddc A $.
+    $( A class resulting from proper substitution of a setvar for a setvar in a
+       bounded class is bounded.  (Contributed by BJ, 16-Oct-2019.) $)
+    bdccsb $p |- Bddc [_ y / x ]_ A $=
+      ( vz cv wcel wsbc cab csb bdeli bdsbc bdcclab df-csb bdceqir ) EFCGZABFZH
+      ZEIAQCJREPABECDKLMAEQCNO $.
   $}
 
   ${
@@ -61290,6 +61366,18 @@ $)
       ZEIABJSEQREACKEBDKLMEABNO $.
   $}
 
+  ${
+    $d y x $.  $d y A $.
+    bdss.1 $e |- Bddc A $.
+    $( The inclusion of a setvar in a bounded class is a bounded formula.
+       Note: apparently, we cannot prove from the present axioms that equality
+       of two bounded classes is a bounded formula.  (Contributed by BJ,
+       3-Oct-2019.) $)
+    bdss $p |- Bdd x C_ A $=
+      ( vy cv wcel wral wss bdeli ax-bdal dfss3 bd0r ) DEBFZDAEZGNBHMDADBCIJDNB
+      KL $.
+  $}
+
   $( The empty class is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
   bdcnul $p |- Bddc (/) $=
     ( cvv cdif c0 bdcvv bdcdif df-nul bdceqir ) AABCAADDEFG $.
@@ -61304,14 +61392,68 @@ $)
   $}
 
   ${
+    $d x y $.
+    $( The singleton of a setvar is bounded.  (Contributed by BJ,
+       16-Oct-2019.) $)
+    bdcsn $p |- Bddc { x } $=
+      ( vy weq cab cv csn ax-bdeq bdcclab df-sn bdceqir ) BACZBDAEZFKBBAGHBLIJ
+      $.
+  $}
+
+  ${
+    $( The pair of two setvars is bounded.  (Contributed by BJ,
+       16-Oct-2019.) $)
+    bdcpr $p |- Bddc { x , y } $=
+      ( cv csn cun cpr bdcsn bdcun df-pr bdceqir ) ACZDZBCZDZEKMFLNAGBGHKMIJ $.
+  $}
+
+  ${
+    $( The unordered triple of three setvars is bounded.  (Contributed by BJ,
+       16-Oct-2019.) $)
+    bdctp $p |- Bddc { x , y , z } $=
+      ( cv cpr csn cun ctp bdcpr bdcsn bdcun df-tp bdceqir ) ADZBDZEZCDZFZGNOQH
+      PRABICJKNOQLM $.
+  $}
+
+  ${
     $d x y z $.
-    $( The union of a set is a bounded class.  (Contributed by BJ,
+    $( The union of a setvar is a bounded class.  (Contributed by BJ,
        15-Oct-2019.) $)
     bdcuni $p |- Bddc U. x $=
       ( vy vz wel wa wex cab cv cuni wrex ax-bdel ax-bdex bdcclab exancom bitri
       df-rex abbii bdceqi df-uni bdceqir ) BCDZCADZECFZBGZAHZIUACUEJZBGUDUFBUAC
       ABCKLMUFUCBUFUBUAECFUCUACUEPUBUACNOQRBCUEST $.
   $}
+
+  ${
+    $d x y z $.
+    $( The intersection of a setvar is a bounded class.  (Contributed by BJ,
+       16-Oct-2019.) $)
+    bdcint $p |- Bddc |^| x $=
+      ( vz vy wel wi wal cab cv cint wral ax-bdel ax-bdal df-ral bdcclab df-int
+      bd0 bdceqir ) BADCBDZEBFZCGAHZISCRBTJSRBACBKLRBTMPNCBTOQ $.
+  $}
+
+  ${
+    $d x y z $.  $d z A $.
+    bdciun.1 $e |- Bddc A $.
+    $( The indexed union of a bounded class with a setvar indexing set is a
+       bounded class.  (Contributed by BJ, 16-Oct-2019.) $)
+    bdciun $p |- Bddc U_ x e. y A $=
+      ( vz cv wcel wrex cab ciun bdeli ax-bdex bdcclab df-iun bdceqir ) EFCGZAB
+      FZHZEIAQCJREPABECDKLMAEQCNO $.
+
+    $( The indexed intersection of a bounded class with a setvar indexing set
+       is a bounded class.  (Contributed by BJ, 16-Oct-2019.) $)
+    bdciin $p |- Bddc |^|_ x e. y A $=
+      ( vz cv wcel wral cab ciin bdeli ax-bdal bdcclab df-iin bdceqir ) EFCGZAB
+      FZHZEIAQCJREPABECDKLMAEQCNO $.
+  $}
+
+  $( The successor of a setvar is a bounded class.  (Contributed by BJ,
+     16-Oct-2019.) $)
+  bdcsuc $p |- Bddc suc x $=
+    ( cv csn cun csuc bdcv bdcsn bdcun df-suc bdceqir ) ABZKCZDKEKLAFAGHKIJ $.
 
 
 $(
