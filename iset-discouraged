@@ -148,6 +148,7 @@ New usage of "ax-16" is discouraged (0 uses).
 New usage of "ax10" is discouraged (0 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
+New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
 New usage of "df-tru" is discouraged (1 uses).
@@ -182,6 +183,7 @@ Proof modification of "ax9vsep" is discouraged (19 steps).
 Proof modification of "axi12" is discouraged (47 steps).
 Proof modification of "axnul" is discouraged (52 steps).
 Proof modification of "bdbm1.3ii" is discouraged (104 steps).
+Proof modification of "bdcnulALT" is discouraged (11 steps).
 Proof modification of "bdnthALT" is discouraged (16 steps).
 Proof modification of "bj-axun2" is discouraged (47 steps).
 Proof modification of "bj-prexg" is discouraged (65 steps).

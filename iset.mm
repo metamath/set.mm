@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Oct-2019
+$( iset.mm - Version of 17-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -60904,6 +60904,48 @@ $)
   bj-df-test $p |- ( TEST ph <-> DECID -. ph ) $=
     ( wtest wn wo wdc df-test df-dc bitr4i ) ABACZICDIEAFIGH $.
 
+  ${
+    spimd.nf $e |- ( ph -> F/ x ch ) $.
+    spimd.1 $e |- ( ph -> A. x ( x = y -> ( ps -> ch ) ) ) $.
+    $( Deduction form of ~ spim .  (Contributed by BJ, 17-Oct-2019.) $)
+    spimd $p |- ( ph -> ( A. x ps -> ch ) ) $=
+      ( wnf weq wi wal spimt syl2anc ) ACDHDEIBCJJDKBDKCJFGBCDELM $.
+  $}
+
+  ${
+    $d x z $.  $d x t $.
+    2spim.nfx $e |- F/ x ch $.
+    2spim.nfz $e |- F/ z ch $.
+    2spim.1 $e |- ( ( x = y /\ z = t ) -> ( ps -> ch ) ) $.
+    $( Double substitution, as in ~ spim .  (Contributed by BJ,
+       17-Oct-2019.) $)
+    2spim $p |- ( A. z A. x ps -> ch ) $=
+      ( wal weq wnf a1i wi expcom alrimiv spimd spim ) ACJBEFHEFKZABCDBCLSGMSCD
+      KZABNZNCTSUAIOPQR $.
+  $}
+
+  ${
+    $d x z $.  $d x t $.
+    ch2var.nfx $e |- F/ x ps $.
+    ch2var.nfz $e |- F/ z ps $.
+    ch2var.maj $e |- ( ( x = y /\ z = t ) -> ( ph <-> ps ) ) $.
+    ch2var.min $e |- ph $.
+    $( Implicit substitution of ` y ` for ` x ` and ` t ` for ` z ` into a
+       theorem.  (Contributed by BJ, 17-Oct-2019.) $)
+    ch2var $p |- ps $=
+      ( wal weq wa biimpd 2spim ax-gen mpg ) ACKBEABCDEFGHCDLEFLMABINOACJPQ $.
+  $}
+
+  ${
+    $d x z ps $.  $d x t $.
+    ch2varv.maj $e |- ( ( x = y /\ z = t ) -> ( ph <-> ps ) ) $.
+    ch2varv.min $e |- ph $.
+    $( Version of ~ ch2var with non-freeness hypotheses replaced by DV
+       conditions.  (Contributed by BJ, 17-Oct-2019.) $)
+    ch2varv $p |- ps $=
+      ( nfv ch2var ) ABCDEFBCIBEIGHJ $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -60948,7 +60990,7 @@ One cannot state all the axioms in closed form, especially ~ ax-bd0 .
 Indeed, if we posited it in closed form, then we could prove for instance
 ` |- ( ph -> Bdd ph ) ` and ` |- ( -. ph -> Bdd ph ) ` which is problematic
 (with the law of excluded middle, this would entail that all formulas are
-bounded, but even without it, too many formulas could be proved bounded...
+bounded, but even without it, too many formulas could be proved bounded...).
 (TODO: elaborate.)
 
 Having ~ ax-bd0 in inference form ensures that a formula can be proved bounded
@@ -61230,7 +61272,7 @@ $)
     $d x y $.
     $( A setvar is a bounded class.  (Contributed by BJ, 3-Oct-2019.) $)
     bdcv $p |- Bddc x $=
-      ( vy cv wbdc wel wbd df-bdc ax-bdel mpgbir ) ACZDBAEFBBJGBAHI $.
+      ( vy cv ax-bdel bdelir ) BACBADE $.
   $}
 
   ${
@@ -61240,7 +61282,7 @@ $)
        bounded.  Remark: if bounded separation ~ ax-bdsep is available, then
        this is actually a set.  (Contributed by BJ, 6-Oct-2019.) $)
     bdcclab $p |- Bddc { x | ph } $=
-      ( vy cab wbdc cv wcel wbd df-bdc bdclab mpgbir ) ABEZFDGMHIDDMJADBCKL $.
+      ( vy cab bdclab bdelir ) DABEADBCFG $.
   $}
 
   ${
@@ -61310,7 +61352,7 @@ $)
      recall that here, "bounded" means "Delta_0 ".  (Contributed by BJ,
      3-Oct-2019.) $)
   bdcvv $p |- Bddc _V $=
-    ( vx cvv wbdc cv wcel wbd df-bdc vex bdth mpgbir ) BCADBEZFAABGKAHIJ $.
+    ( vx cvv cv wcel vex bdth bdelir ) ABACBDAEFG $.
 
   ${
     bdcdeq.1 $e |- Bdd ph $.
@@ -61378,8 +61420,17 @@ $)
       KL $.
   $}
 
-  $( The empty class is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
+  $( The empty class is bounded.  See also ~ bdcnulALT .  (Contributed by BJ,
+     3-Oct-2019.) $)
   bdcnul $p |- Bddc (/) $=
+    ( vx c0 cv wcel noel bdnth bdelir ) ABACZBDHEFG $.
+
+  $( Alternate proof of ~ bdcnul .  Similarly, for the next few theorems
+     proving boundedness of a class, one can either use their definition
+     followed by ~ bdceqir , or use the corresponding characterizations of its
+     elements followed by ~ bdelir .  (Contributed by BJ, 3-Oct-2019.)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
+  bdcnulALT $p |- Bddc (/) $=
     ( cvv cdif c0 bdcvv bdcdif df-nul bdceqir ) AABCAADDEFG $.
 
   ${
@@ -61599,7 +61650,7 @@ $)
     $d a b x y z $.  $d z ph $.
     strcollnf.nf $e |- F/ b ph $.
     $( Version of ~ ax-strcoll with one DV condition removed, the other DV
-       condition replaced be a non-freeness hypothesis, and without initial
+       condition replaced by a non-freeness hypothesis, and without initial
        universal quantifier.  (Contributed by BJ, 5-Oct-2019.) $)
     strcollnf $p |- ( A. x e. a E. y ph ->
                                      E. b A. y ( y e. b <-> E. x e. a ph ) ) $=
@@ -61629,22 +61680,28 @@ $)
                                 E. d e. c A. y ( y e. d <-> E. x e. a ph ) ) $.
   $}
 
-$(
-  ${
-    $d a b c d x y t z u $.  $d c d z u ph $.
-    @( Version of ~ ax-sscoll with two DV conditions removed and without
-       initial universal quantifiers.  (Contributed by BJ, 5-Oct-2019.) @)
-    sscoll2 $p |- E. c A. t ( A. x e. a E. y e. b ph ->
-                                E. d e. c A. y ( y e. d <-> E. x e. a ph ) ) $=
-      ? $.
-  $}
 
   ${
-    $d a b c d x y t z u $.  $d z u ph $.
+    $d a b c d x y t u v $.  $d c d u v ph $.
+    $( Version of ~ ax-sscoll with two DV conditions removed and without
+       initial universal quantifiers.  (Contributed by BJ, 5-Oct-2019.) $)
+    sscoll2 $p |- E. c A. t ( A. x e. a E. y e. b ph ->
+                                E. d e. c A. y ( y e. d <-> E. x e. a ph ) ) $=
+      ( vv vu cv wrex wral wb wal wi wex weq nfv rexeq wel adantl adantr bibi2d
+      wa simpl raleqbidv albid rexbid imbi12d exbid ax-sscoll spi ch2varv ) ACI
+      KZLZBJKZMZCHUAZABUQLZNZCOZHGKZLZPZDOZGQZACFKZLZBEKZMZUSABVJLZNZCOZHVCLZPZ
+      DOZGQJEIFJERZIFRZUEZVFVQGVTGSVTVEVPDVTDSVTURVKVDVOVTUPVIBUQVJVRVSUFVSUPVI
+      NVRACUOVHTUBUGVTVBVNHVCVTHSVTVAVMCVTCSVTUTVLUSVRUTVLNVSABUQVJTUCUDUHUIUJU
+      HUKVGIVGIOJABCDJIGHULUMUMUN $.
+  $}
+
+$(
+  ${
+    $d a b c d x y t u v $.  $d z u v ph $.
     sscollnf.1 $e |- F/ c ph $.
     sscollnf.2 $e |- F/ d ph $.
     @( Version of ~ ax-sscoll with two DV conditions removed, the other two DV
-       conditions replaced be non-freeness hypotheses, and without initial
+       conditions replaced by non-freeness hypotheses, and without initial
        universal quantifiers.  (Contributed by BJ, 5-Oct-2019.) @)
     sscollnf $p |- E. c A. t ( A. x e. a E. y e. b ph ->
                                 E. d e. c A. y ( y e. d <-> E. x e. a ph ) ) $=
