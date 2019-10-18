@@ -1,0 +1,35 @@
+717811200|Norman Megill hand develops first set.mm entries (ax-1, ax-2, ax-3, ax-mp, id1, syl)
+725414400|Norman Megill adds entries using early metamath.exe (com23, con1d, df-bi, df-or, pm2.04, syl5)
+757296000|Norman Megill adds df-br (define a general binary relationship)
+767577600|Set difference and set intersection defined (df-dif, df-in)
+797817600|Proved finds - The Principle of Mathematical Induction (Norman Megill), Metamath 100 #74
+824947200|Definition of the set of complex numbers, df-c
+897264000|Proved sbth - Schroeder-Bernstein Theorem (Norman Megill), Metamath 100 #25
+936489600|First external contributor (David Harvey)
+938822400|Proved abstrii - The Triangle Inequality (Norman Megill), Metamath 100 #91
+978048000|Second external contributor (Josh Purinton)
+1010448000|Proved sqr2irr - The Irrationality of the Square Root of 2 (Norman Megill), Metamath 100 #1
+1091232000|Proved qnnen - The Denumerability of the Rational Numbers (Norman Megill, later revised by Mario Carneiro), Metamath 100 #3
+1097625600|Proved ruc - The Non-Denumerability of the Continuum (Norman Megill), Metamath 100 #22
+1110758400|Definition of the cosine function, df-cos
+1115251200|Proved infpn2 - The Infinitude of Primes (Norman Megill), Metamath 100 #11
+1163116800|Proved demoivreALT - De Moivre's Theorem (Steve Rodriguez), Metamath 100 #17
+1163635200|Proved arisum - Sum of an arithmetic series (Frédéric Liné), Metamath 100 #68
+1200096000|Proved sii - The Cauchy-Schwarz Inequality (Norman Megill), Metamath 100 #78
+1200960000|Proved ivth - The Intermediate Value Theorem (Paul Chapman), Metamath 100 #79
+1208390400|Proved pythi - Pythagorean Theorem (Norman Megill), Metamath 100 #4
+1301529600|Proved eucalgval - Greatest Common Divisor Algorithm (Paul Chapman), Metamath 100 #69
+1336780800|Mario Carneiro begins contributing
+1353110400|Proved 1arith2 - Fundamental Theorem of Arithmetic (Paul Chapman), Metamath 100 #80
+1393027200|Proved bezout - Bezout's Theorem (Mario Carneiro), Metamath 100 #60
+1393545600|Proved eulerth - Euler's Generalization of Fermat's Little Theorem (Mario Carneiro), Metamath 100 #10
+1394755200|David A. Wheeler begins contributing
+1394755200|Proved bpos - Bertrand's Postulate (Mario Carneiro), Metamath 100 #98
+1397865600|Large number of Metamath 100 proofs begin being completed
+1429228800|Decimal constructor df-dec added
+1503532800|Definition of Tarskian geometry using extensible structures, df-trkg
+1534204800|Proved eulerpart - The Partition Theorem (by Euler) (Thierry Arnoux), metamath 100 #45
+1539043200|Proved friendship - The Friendship Theorem (Alexander van der Vekens), metamath 100 #83
+1550707200|Proved cramer - Cramer's Rule (Alexander van der Vekens), Metamath 100 #97
+1552176000|Proved heron - Heron's Formula (Mario Carneiro), Metamath 100 #57
+1559448000|Publication of "Metamath: A Computer Language for Mathematical Proofs" book

@@ -951,6 +951,14 @@ With excluded middle, ` (/) e. A ` and ` A =/= (/) ` are equivalent (where
 interesting condition constructively.</LI>
 
 <LI>
+Reverse closure in set.mm uses excluded middle (for example ovrcl or ndmfvrcl
+). In iset.mm we add more conditions that we are evaluating operations within
+their domains (for example set.mm's addasspi versus iset.mm's ~ addasspig in
+which conditions such as ` A e. N. ` are added, or set.mm's ltbtwnnq versus
+iset.mm's ~ ltbtwnnqq , in which ` E. x ` is changed to ` E. x e. Q. ` ).
+</LI>
+
+<LI>
 If you get stuck, ask! (for example in a GitHub issue or on the mailing list).
 We have a number of contributors who have experience in constructive
 mathematics in general, or iset.mm in particular, and one of the best things
@@ -991,6 +999,23 @@ versus "proof by contradiction" to distinguish these.</TD>
 <TR>
 
 <TR>
+<TD>notnotrd , notnotri , notnot2 , notnot</TD>
+<TD>~ notnot1 </TD>
+<TD>Double negation introduction holds but not double negation
+elimination.</TD>
+<TR>
+
+<TR>
+<TD>mt3d</TD>
+<TD>~ mtod </TD>
+</TR>
+
+<TR>
+<TD>nyl2</TD>
+<TD>~ nsyl </TD>
+</TR>
+
+<TR>
 <TD>pm4.63</TD>
 <TD>~ pm3.2im </TD>
 </TR>
@@ -1008,6 +1033,16 @@ versus "proof by contradiction" to distinguish these.</TD>
 <TR>
 <TD>oran</TD>
 <TD>~ oranim </TD>
+</TR>
+
+<TR>
+<TD>ianor</TD>
+<TD>~ pm3.14 </TD>
+</TR>
+
+<TR>
+<TD>3ianor</TD>
+<TD>~ 3ianorr </TD>
 </TR>
 
 <TR>
@@ -1041,6 +1076,11 @@ versus "proof by contradiction" to distinguish these.</TD>
 </TR>
 
 <TR>
+<TD>19.30</TD>
+<TD><I>none</I>
+</TR>
+
+<TR>
 <TD>19.36</TD>
 <TD>~ 19.36-1 </TD>
 </TR>
@@ -1066,8 +1106,63 @@ versus "proof by contradiction" to distinguish these.</TD>
 </TR>
 
 <TR>
+<TD>rexnal</TD>
+<TD>~ rexnalim </TD>
+</TR>
+
+<TR>
+<TD>dfral2</TD>
+<TD>~ ralexim </TD>
+</TR>
+
+<TR>
 <TD>dfrex2</TD>
 <TD>~ rexalim </TD>
+</TR>
+
+<TR>
+<TD>r19.30</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>rexanali</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>nrexralim</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>nfrald</TD>
+<TD>~ nfraldxy , ~ nfraldya </TD>
+</TR>
+
+<TR>
+<TD>nfrexd</TD>
+<TD>~ nfrexdxy , ~ nfrexdya </TD>
+</TR>
+
+<TR>
+<TD>nfral</TD>
+<TD>~ nfralxy , ~ nfralya </TD>
+</TR>
+
+<TR>
+<TD>nfra2</TD>
+<TD>~ nfra1 , ~ nfralya </TD>
+</TR>
+
+<TR>
+<TD>nfrex</TD>
+<TD>~ nfrexxy , ~ nfrexya </TD>
+</TR>
+
+<TR>
+<TD>ralcom2</TD>
+<TD>~ ralcom </TD>
 </TR>
 
 <TR>
@@ -1637,6 +1732,28 @@ middle as seen at ~ ordpwsucexmid .</TD>
 </TR>
 
 <TR>
+<TD>1stval</TD>
+<TD>~ 1stvalg </TD>
+</TR>
+
+<TR>
+<TD>2ndval</TD>
+<TD>~ 2ndvalg </TD>
+</TR>
+
+<TR>
+<TD>1stnpr</TD>
+<TD><I>none</I></TD>
+<TD>May be intuitionizable, but very lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>2ndnpr</TD>
+<TD><I>none</I></TD>
+<TD>May be intuitionizable, but very lightly used in set.mm.</TD>
+</TR>
+
+<TR>
 <TD>brtpos</TD>
 <TD>~ brtposg </TD>
 </TR>
@@ -2044,6 +2161,16 @@ so far there hasn't been a need to do so.</TD>
 <TR>
 <TD>prnadd</TD>
 <TD>~ prnaddl </TD>
+</TR>
+
+<TR>
+<TD>genpv</TD>
+<TD>~ genipv </TD>
+</TR>
+
+<TR>
+<TD>genpcd</TD>
+<TD>~ genpcdl </TD>
 </TR>
 
 </TABLE>

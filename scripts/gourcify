@@ -4,9 +4,23 @@
 # This script is released as open source software under the MIT license.
 # SPDX-License-Identifier: MIT
 
-# Need to install gource, ffmpeg, python3.
+# Need to install gource, ffmpeg, python3, Imagemagick.
 # Ensure pip3 is installed by running "python3 -m ensurepip",
 # then install "ply" library by running "pip3 install ply".
+
+# E.g., on Ubuntu:
+# sudo apt-get install python3 ffmpeg python3-pip
+# pip3 install ply
+# # Setup to compile Gource:
+# sudo apt-get install build-essential # includes g++
+# sudo apt-get install libsdl2-dev libsdl2-image-dev libpcre3-dev \
+#   libfreetype6-dev libglew-dev libglm-dev ibboost-filesystem-dev libpng-dev
+# cd; git clone --depth 1 https://github.com/acaudwell/Gource.git
+# cd Gource
+# ./autogen.sh
+# ./configure && make
+# sudo make install
+# sudo apt-get install ffmpeg x264
 
 # If you recompile ffmpeg yourself, you'll need to install libx264 first.
 # Install nasm, then:
@@ -45,6 +59,11 @@ if ! [ -f "$MUSIC" ] ; then
     wget "$MUSIC_URL" || exit 1
 fi
 
+if ! [ -f 'mmlogo-small.png' ] ; then
+    wget http://us.metamath.org/mmlogo.svg
+    convert -transparent white -scale 25%x25% mmlogo.svg mmlog-small.png
+fi
+
 # Make sure we have people avatars, else provide a useful error message.
 if ! [ -d 'people' ] ; then
     echo "Must create 'people' directory. Recommended approach:" >&2
@@ -60,6 +79,9 @@ scripts/report-changes.py --gource > changes.log
 sort -n changes.log > changes-sorted.log
 
 # Use Gource to generate image sequence (.ppm format)
+# The default "output-framerate" is 60 fps, but we will later encode
+# as 30 fps. That way, we can review and regenerate at a higher speed
+# (shorter time when debugging) yet have a reasonable final length.
 rm -f gource.ppm
 $RUN_COMMAND gource --load-config scripts/gource.config \
     -o gource.ppm changes-sorted.log

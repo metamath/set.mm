@@ -37,7 +37,8 @@
 "alrimih" is used by "sb4or".
 "alrimih" is used by "sb6rf".
 "alrimih" is used by "sbbid".
-"ax-11o" is used by "ax11b".
+"ax-10o" is used by "ax10".
+"df-tru" is used by "tru".
 "equsalh" is used by "dvelimALT".
 "equsalh" is used by "dvelimfALT2".
 "equsalh" is used by "dvelimfv".
@@ -133,7 +134,6 @@
 "snexgOLD" is used by "sucexb".
 "snexgOLD" is used by "tpexg".
 "snexgOLD" is used by "uniop".
-"spimeh" is used by "spimedh".
 "spimh" is used by "spim".
 "spimth" is used by "equveli".
 New usage of "19.21h" is discouraged (4 uses).
@@ -142,11 +142,17 @@ New usage of "19.9hd" is discouraged (1 uses).
 New usage of "4syl" is discouraged (6 uses).
 New usage of "a9evsep" is discouraged (1 uses).
 New usage of "alrimih" is discouraged (25 uses).
-New usage of "ax-11o" is discouraged (1 uses).
+New usage of "ax-10o" is discouraged (1 uses).
+New usage of "ax-11o" is discouraged (0 uses).
 New usage of "ax-16" is discouraged (0 uses).
+New usage of "ax10" is discouraged (0 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
+New usage of "bdcnulALT" is discouraged (0 uses).
+New usage of "bdnthALT" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
+New usage of "df-tru" is discouraged (1 uses).
+New usage of "dftru2" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
 New usage of "equsalh" is discouraged (5 uses).
 New usage of "eu3h" is discouraged (3 uses).
@@ -163,24 +169,27 @@ New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rdgivallem" is discouraged (2 uses).
 New usage of "resfunexgALT" is discouraged (0 uses).
 New usage of "rexsnsOLD" is discouraged (2 uses).
-New usage of "riotaiotaOLD" is discouraged (0 uses).
-New usage of "riotaprcOLD" is discouraged (0 uses).
 New usage of "ruALT" is discouraged (0 uses).
-New usage of "sbcbiiOLD" is discouraged (0 uses).
-New usage of "sbcco3gOLD" is discouraged (0 uses).
-New usage of "sbf3t" is discouraged (0 uses).
 New usage of "sbiedh" is discouraged (3 uses).
 New usage of "sbieh" is discouraged (7 uses).
 New usage of "snexgOLD" is discouraged (29 uses).
-New usage of "spimedh" is discouraged (0 uses).
-New usage of "spimeh" is discouraged (1 uses).
+New usage of "spimeh" is discouraged (0 uses).
 New usage of "spimh" is discouraged (1 uses).
 New usage of "spimth" is discouraged (1 uses).
+New usage of "truanOLD" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 Proof modification of "a9evsep" is discouraged (63 steps).
 Proof modification of "ax9vsep" is discouraged (19 steps).
 Proof modification of "axi12" is discouraged (47 steps).
 Proof modification of "axnul" is discouraged (52 steps).
+Proof modification of "bdbm1.3ii" is discouraged (104 steps).
+Proof modification of "bdcnulALT" is discouraged (11 steps).
+Proof modification of "bdnthALT" is discouraged (16 steps).
+Proof modification of "bj-axun2" is discouraged (47 steps).
+Proof modification of "bj-prexg" is discouraged (65 steps).
+Proof modification of "bj-snexg" is discouraged (22 steps).
+Proof modification of "bj-uniex2" is discouraged (79 steps).
+Proof modification of "bj-zfpair2" is discouraged (80 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "dvelimALT" is discouraged (158 steps).
@@ -192,8 +201,7 @@ Proof modification of "resfunexgALT" is discouraged (76 steps).
 Proof modification of "rexsnsOLD" is discouraged (55 steps).
 Proof modification of "ruALT" is discouraged (35 steps).
 Proof modification of "sbc8g" is discouraged (55 steps).
-Proof modification of "sbcbiiOLD" is discouraged (19 steps).
-Proof modification of "sbcco3gOLD" is discouraged (30 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
 Proof modification of "suctr" is discouraged (153 steps).
+Proof modification of "truanOLD" is discouraged (13 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).

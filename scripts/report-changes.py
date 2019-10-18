@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/env python3
 # Report changes to Metamath .mm file
 # (C) 2019 David A. Wheeler
 # This script is released as open source software under the MIT license.
@@ -167,6 +167,7 @@ NAME_ABBREVIATIONS = {
     'Frederic Line': 'Frédéric Liné',
     'GL': 'Gérard Lang',
     'G&eacute;rard Lang': 'Gérard Lang',
+    'Gerard Lang': 'Gérard Lang',
     'JJ': 'Jerry James',
     'NM': 'Norman Megill',
     'SF': 'Scott Fenton',
