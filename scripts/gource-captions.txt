@@ -1,4 +1,7 @@
-744508800|Norman Megill begins developing set.mm
+717811200|Norman Megill hand develops first set.mm entries (ax-1, ax-2, ax-3, ax-mp, id1, syl)
+725414400|Norman Megill adds entries using early metamath.exe (com23, con1d, df-bi, df-or, pm2.04, syl5)
+757296000|Norman Megill adds df-br (define a general binary relationship)
+767577600|Set difference and set intersection defined (df-dif, df-in)
 797817600|Proved finds - The Principle of Mathematical Induction (Norman Megill), Metamath 100 #74
 824947200|Definition of the set of complex numbers, df-c
 897264000|Proved sbth - Schroeder-Bernstein Theorem (Norman Megill), Metamath 100 #25
