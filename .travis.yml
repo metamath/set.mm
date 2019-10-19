@@ -20,9 +20,9 @@
 #
 # We typically rewrap the file using scripts/rewrap.
 #
-# TODO: Update to a more recent version of Linux.
+# Declare Linux distribution version.
 # "xenial" is Ubuntu 16; "trusty" is Ubuntu 14.
-dist: trusty
+dist: xenial
 
 # TODO: We aren't caching many old results; add caches
 # (e.g., of unchanged compiled programs) to speed things further.
@@ -57,7 +57,7 @@ jobs:
     - # mmj2, a Java verifier (and more) by Mel O'Cat and Mario Carneiro
       language: java
       jdk:
-        - oraclejdk8
+        - openjdk8
       before_install:
         - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
         - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then jdk_switcher use "$CUSTOM_JDK"; fi
