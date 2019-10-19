@@ -60,7 +60,8 @@ jobs:
         - openjdk8
       before_install:
         - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
-        - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then jdk_switcher use "$CUSTOM_JDK"; fi
+          # Old switching system for Ubuntu 14:
+          # - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then jdk_switcher use "$CUSTOM_JDK"; fi
       install:
         # Get mmj2, a Java verifier (and more) by Mel O'Cat and Mario Carneiro
         - wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
