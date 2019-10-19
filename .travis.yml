@@ -17,65 +17,96 @@
 #
 # We typically rewrap the file using scripts/rewrap.
 #
+# TODO: "Trusty" is Ubuntu 14, and thus old. We need to upgrade.
 dist: trusty
 
-language: rust
-jdk:
-  - oraclejdk8
 git:
   depth: 3
 sudo: false
-cache:
-  cargo: true # Cache Rust source/executables (takes time to get and recompile)
-  timeout: 3600 # Cache for 1 hour (unit is seconds)
-before_install:
-  - gcc --version
-  - g++ --version
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
-  - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then jdk_switcher use "$CUSTOM_JDK"; fi
-install:
-  # Download, build, and install what we need.
-  # NOTE: We install programs in $HOME/bin, so ensure that's on the PATH
-  # (usually it is on any non-Windows system).
-  # Get metamath C program and supporting files (to validate against them)
-  - scripts/download-metamath
-  # Build/install metamath, a C verifier (and more) by Norm Megill.
-  - scripts/build-metamath
-  # Get mmj2, a Java verifier (and more) by Mel O'Cat and Mario Carneiro
-  - wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
-  - unzip -q mmj2jar.zip
-  - jdk_switcher use oraclejdk8
-  # Install smetamath-rs (smm3), a Rust verifier by Stefan O'Rear
-  # See: https://github.com/sorear/smetamath-rs
-  - "[ -x  ~/.cargo/bin/smetamath ] || cargo install smetamath --vers 3.0.0"
-  # Get and compile checkmm, a C++ verifier by Eric Schmidt
-  - wget -N -q http://us.metamath.org/downloads/checkmm.cpp
-  - g++ -O2 -o checkmm checkmm.cpp
-script:
-  # Create mmset.html and mmil.html so we can verify against them.
-  - metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
-  - metamath 'read iset.mm' 'markup mmil.raw.html mmil.html /ALT /CSS' quit
-  - scripts/verify --top_date_skip --extra 'write bibliography mmbiblio.html' set.mm
-  - scripts/verify iset.mm
-  # Do extra checking and generate the '*discouraged.new' file
-  # (the 'printf' lets us insert multiple lines).
-  # We use setparser to check that definitions don't create syntax ambiguities
-  - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,discouraged.new')" set.mm
-  - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,iset-discouraged.new')" iset.mm
-  - echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
-  - echo 'Checking iset-discouraged file:' && diff -U 0 iset-discouraged iset-discouraged.new
-  - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
-  - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
-  - scripts/check-raw-html set.mm mmcomplex.raw.html mmdeduction.raw.html mmnatded.raw.html mmnf.raw.html mmset.raw.html mmzfcnd.raw.html
-  - scripts/check-raw-html iset.mm mmil.raw.html
-  - echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
-  - echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
-  - ./checkmm set.mm
-  - ./checkmm iset.mm
-  # Generate HTML from raw files into mpegif-html/ and mpeuni-html/
-  - scripts/regen-from-raw --force '/HTML' .regened.html
-  - mkdir -p mpegif-html/
-  - for f in *.regened.html; do mv $f mpegif-html/${f%.regened.html}.html ; done
-  - scripts/regen-from-raw --force '/ALT_HTML' .regened.html
-  - mkdir -p mpeuni-html/
-  - for f in *.regened.html; do mv $f mpeuni-html/${f%.regened.html}.html ; done
+
+# In each job we download, build, and install what we need.
+# NOTE: We generally install programs in $HOME/bin, so ensure that's on the
+# PATH (usually it is on any non-Windows system).
+
+# We use different jobs to install and run verifiers.  See:
+# https://docs.travis-ci.com/user/build-matrix/
+
+jobs:
+  include:
+    ###########################################################
+    - # smetamath-rs (smm3), a Rust verifier by Stefan O'Rear.
+      language: rust
+      cache:
+        # Cache Rust source/executables (takes time to get and recompile)
+        cargo: true
+        timeout: 3600 # Cache for 1 hour (unit is seconds)
+      install:
+        # See https://github.com/sorear/smetamath-rs
+        - "[ -x  ~/.cargo/bin/smetamath ] || cargo install smetamath --vers 3.0.0"
+      script:
+        - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
+        - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
+    ###########################################################
+    - # mmj2, a Java verifier (and more) by Mel O'Cat and Mario Carneiro
+      language: java
+      jdk:
+        - oraclejdk8
+      before_install:
+        - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
+        - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then jdk_switcher use "$CUSTOM_JDK"; fi
+      install:
+        # Get mmj2, a Java verifier (and more) by Mel O'Cat and Mario Carneiro
+        - wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
+        - unzip -q mmj2jar.zip
+        - jdk_switcher use oraclejdk8
+      script:
+        # Do extra checking and generate the '*discouraged.new' file
+        # (the 'printf' lets us insert multiple lines).
+        # We use setparser to check that definitions don't create syntax ambiguities
+        - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,discouraged.new')" set.mm
+        - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' --extra "$(printf 'RunMacro,definitionCheck,ax-*,df-bi,df-clab,df-cleq,df-clel\nRunMacro,showDiscouraged,iset-discouraged.new')" iset.mm
+        - echo 'Checking discouraged file:' && diff -U 0 discouraged discouraged.new
+        - echo 'Checking iset-discouraged file:' && diff -U 0 iset-discouraged iset-discouraged.new
+    ###########################################################
+    - # Metamath.exe, the original C verifier by Norman Megill
+      # language: c
+      compiler: gcc
+      before_install:
+        - gcc --version
+      install:
+        # Get metamath C program and supporting files (to validate against them)
+        - scripts/download-metamath
+        # Build/install metamath, a C verifier (and more) by Norm Megill.
+        - scripts/build-metamath
+      script:
+        # Create mmset.html and mmil.html so we can verify against them.
+        - metamath 'read set.mm' 'markup mmset.raw.html mmset.html /ALT /CSS' quit
+        - metamath 'read iset.mm' 'markup mmil.raw.html mmil.html /ALT /CSS' quit
+        - scripts/verify --top_date_skip --extra 'write bibliography mmbiblio.html' set.mm
+        - scripts/verify iset.mm
+        - scripts/check-raw-html set.mm mmcomplex.raw.html mmdeduction.raw.html mmnatded.raw.html mmnf.raw.html mmset.raw.html mmzfcnd.raw.html
+        - scripts/check-raw-html iset.mm mmil.raw.html
+        # Generate HTML from raw files into mpegif-html/ and mpeuni-html/
+        - scripts/regen-from-raw --force '/HTML' .regened.html
+        - mkdir -p mpegif-html/
+        - for f in *.regened.html; do mv $f mpegif-html/${f%.regened.html}.html ; done
+        - scripts/regen-from-raw --force '/ALT_HTML' .regened.html
+        - mkdir -p mpeuni-html/
+        - for f in *.regened.html; do mv $f mpeuni-html/${f%.regened.html}.html ; done
+        # The following checks are arbitrarily included in the metamath job.
+        - echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
+        - echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
+    ###########################################################
+    - # checkmm, a C++ verifier by Eric Schmidt
+      language: cpp
+      compiler: gcc
+      before_install:
+        - g++ --version
+      install:
+        # Get and compile checkmm, a C++ verifier by Eric Schmidt
+        - wget -N -q http://us.metamath.org/downloads/checkmm.cpp
+        - g++ -O2 -o checkmm checkmm.cpp
+      script:
+        - ./checkmm set.mm
+        - ./checkmm iset.mm
+# End of jobs
