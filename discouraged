@@ -15540,6 +15540,12 @@ New usage of "elghom" is discouraged (10 uses).
 New usage of "elghomlem1" is discouraged (1 uses).
 New usage of "elghomlem2" is discouraged (1 uses).
 New usage of "elhmop" is discouraged (10 uses).
+New usage of "eliminable1" is discouraged (0 uses).
+New usage of "eliminable2a" is discouraged (0 uses).
+New usage of "eliminable2b" is discouraged (0 uses).
+New usage of "eliminable2c" is discouraged (0 uses).
+New usage of "eliminable3a" is discouraged (0 uses).
+New usage of "eliminable3b" is discouraged (0 uses).
 New usage of "elimnv" is discouraged (1 uses).
 New usage of "elimnvu" is discouraged (5 uses).
 New usage of "elimph" is discouraged (3 uses).
@@ -18837,6 +18843,12 @@ Proof modification of "eldprdOLD" is discouraged (112 steps).
 Proof modification of "eldprdiOLD" is discouraged (81 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
 Proof modification of "elex2VD" is discouraged (59 steps).
+Proof modification of "eliminable1" is discouraged (4 steps).
+Proof modification of "eliminable2a" is discouraged (7 steps).
+Proof modification of "eliminable2b" is discouraged (7 steps).
+Proof modification of "eliminable2c" is discouraged (8 steps).
+Proof modification of "eliminable3a" is discouraged (7 steps).
+Proof modification of "eliminable3b" is discouraged (8 steps).
 Proof modification of "ellspdOLD" is discouraged (269 steps).
 Proof modification of "elpwgded" is discouraged (23 steps).
 Proof modification of "elpwgdedVD" is discouraged (23 steps).
