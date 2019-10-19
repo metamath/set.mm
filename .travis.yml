@@ -20,8 +20,9 @@
 #
 # We typically rewrap the file using scripts/rewrap.
 #
+# TODO: Update to a more recent version of Linux.
 # "xenial" is Ubuntu 16; "trusty" is Ubuntu 14.
-dist: xenial
+dist: trusty
 
 # TODO: We aren't caching many old results; add caches
 # (e.g., of unchanged compiled programs) to speed things further.
