@@ -1,4 +1,7 @@
 # Run many verifiers on metamath files.
+# We *primarily* check set.mm and iset.mm, but we also run some checks on
+# other files (in particular on some HTML files).
+#
 # Only one verifier is necessary, but using multiple verifiers counters
 # the risk that a verifier might have a defect in its implementation.
 # With 4 verifiers, all 4 would have to have a defect involving an
@@ -20,11 +23,14 @@
 # TODO: "Trusty" is Ubuntu 14, and thus old. We need to upgrade.
 dist: trusty
 
+# TODO: We aren't caching many old results; add caches
+# (e.g., of unchanged compiled programs) to speed things further.
+
 git:
   depth: 3
 sudo: false
 
-# In each job we download, build, and install what we need.
+# In each job we download, build, install, and run a verifier.
 # NOTE: We generally install programs in $HOME/bin, so ensure that's on the
 # PATH (usually it is on any non-Windows system).
 
@@ -69,7 +75,7 @@ jobs:
         - echo 'Checking iset-discouraged file:' && diff -U 0 iset-discouraged iset-discouraged.new
     ###########################################################
     - # Metamath.exe, the original C verifier by Norman Megill
-      # language: c
+      language: c
       compiler: gcc
       before_install:
         - gcc --version
