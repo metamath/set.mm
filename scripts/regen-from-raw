@@ -47,4 +47,6 @@ generate_files_using_convention 'iset.mm' 'mmil' | metamath | tee -a ,errs
 generate_files_using_convention 'nf.mm' 'mmnf' | metamath | tee -a ,errs
 
 # Return nonzero error code if "Warning" or "Error" found in the output.
+echo
+echo 'RECAP: The following warnings and errors were found:'
 ! grep -E '^\?(Warning|Error): ' ,errs
