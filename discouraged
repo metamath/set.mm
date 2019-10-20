@@ -1339,7 +1339,6 @@
 "ax12indn" is used by "ax12indi".
 "ax12v2-o" is used by "ax12a2-o".
 "ax16g-o" is used by "ax12inda2".
-"ax1cn" is used by "quad3".
 "ax5el" is used by "dveel2ALT".
 "ax5eq" is used by "dveeq1-o16".
 "ax6e2eq" is used by "ax6e2ndeq".
@@ -13930,7 +13929,7 @@ New usage of "ax12vALT" is discouraged (0 uses).
 New usage of "ax13fromc9" is discouraged (0 uses).
 New usage of "ax16g-o" is discouraged (1 uses).
 New usage of "ax16nfALT" is discouraged (0 uses).
-New usage of "ax1cn" is discouraged (1 uses).
+New usage of "ax1cn" is discouraged (0 uses).
 New usage of "ax1ne0" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax2" is discouraged (0 uses).
