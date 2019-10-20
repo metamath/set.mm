@@ -21,8 +21,8 @@
 # We typically rewrap the file using scripts/rewrap.
 #
 # Declare Linux distribution version.
-# "xenial" is Ubuntu 16; "trusty" is Ubuntu 14.
-dist: xenial
+# "bionic" is Ubuntu 18.04 LTS, "xenial" is Ubuntu 16, "trusty" is Ubuntu 14.
+dist: bionic
 
 # TODO: We aren't caching many old results; add caches
 # (e.g., of unchanged compiled programs) to speed things further.
