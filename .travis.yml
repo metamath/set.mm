@@ -159,8 +159,9 @@ jobs:
       # you'll see the output from the last *valid* date followed by
       # an exception.
       # TODO: Check other .mm files, currently this only checks set.mm.
-      name: Date verification (of set.mm)
+      name: Date validation (of set.mm)
       language: python
+      cache: pip
       install:
         - pip3 install ply
       script:
