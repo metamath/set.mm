@@ -1339,6 +1339,7 @@
 "ax12indn" is used by "ax12indi".
 "ax12v2-o" is used by "ax12a2-o".
 "ax16g-o" is used by "ax12inda2".
+"ax1cn" is used by "quad3".
 "ax5el" is used by "dveel2ALT".
 "ax5eq" is used by "dveeq1-o16".
 "ax6e2eq" is used by "ax6e2ndeq".
@@ -8229,6 +8230,18 @@
 "idhmop" is used by "leopnmid".
 "idhmop" is used by "nmopleid".
 "idhmop" is used by "opsqrlem6".
+"idiALT" is used by "ax6e2nd".
+"idiALT" is used by "ax6e2ndALT".
+"idiALT" is used by "ax6e2ndeqALT".
+"idiALT" is used by "isosctrlem1ALT".
+"idiALT" is used by "iunconlem2".
+"idiALT" is used by "sineq0ALT".
+"idiALT" is used by "sspwimpALT".
+"idiALT" is used by "sspwtrALT".
+"idiALT" is used by "sstrALT2".
+"idiALT" is used by "suctrALT".
+"idiALT" is used by "suctrALT3".
+"idiALT" is used by "trsspwALT2".
 "idleop" is used by "opsqrlem6".
 "idlnop" is used by "elunop2".
 "idlnop" is used by "lnopcon".
@@ -13917,7 +13930,7 @@ New usage of "ax12vALT" is discouraged (0 uses).
 New usage of "ax13fromc9" is discouraged (0 uses).
 New usage of "ax16g-o" is discouraged (1 uses).
 New usage of "ax16nfALT" is discouraged (0 uses).
-New usage of "ax1cn" is discouraged (0 uses).
+New usage of "ax1cn" is discouraged (1 uses).
 New usage of "ax1ne0" is discouraged (0 uses).
 New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax2" is discouraged (0 uses).
@@ -16290,6 +16303,7 @@ New usage of "id1" is discouraged (0 uses).
 New usage of "idcnop" is discouraged (2 uses).
 New usage of "iden2" is discouraged (0 uses).
 New usage of "idhmop" is discouraged (6 uses).
+New usage of "idiALT" is discouraged (12 uses).
 New usage of "idiVD" is discouraged (0 uses).
 New usage of "idleop" is discouraged (1 uses).
 New usage of "idlnop" is discouraged (5 uses).
@@ -17562,6 +17576,7 @@ New usage of "qlaxr2i" is discouraged (0 uses).
 New usage of "qlaxr3i" is discouraged (0 uses).
 New usage of "qlaxr4i" is discouraged (0 uses).
 New usage of "qlaxr5i" is discouraged (0 uses).
+New usage of "quantriv" is discouraged (0 uses).
 New usage of "quoremnn0ALT" is discouraged (0 uses).
 New usage of "r1omALT" is discouraged (0 uses).
 New usage of "r1pwOLD" is discouraged (0 uses).
@@ -18489,6 +18504,7 @@ Proof modification of "bj-exlimmpi" is discouraged (11 steps).
 Proof modification of "bj-godellob" is discouraged (21 steps).
 Proof modification of "bj-hbab1" is discouraged (20 steps).
 Proof modification of "bj-hblem" is discouraged (33 steps).
+Proof modification of "bj-hbntbi" is discouraged (31 steps).
 Proof modification of "bj-hbs1" is discouraged (22 steps).
 Proof modification of "bj-hbsb2av" is discouraged (32 steps).
 Proof modification of "bj-hbsb2v" is discouraged (31 steps).
@@ -18982,6 +18998,7 @@ Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hirstL-ax3" is discouraged (34 steps).
 Proof modification of "id1" is discouraged (26 steps).
 Proof modification of "iden2" is discouraged (18 steps).
+Proof modification of "idiALT" is discouraged (1 steps).
 Proof modification of "idiVD" is discouraged (6 steps).
 Proof modification of "idn1" is discouraged (5 steps).
 Proof modification of "idn2" is discouraged (7 steps).
