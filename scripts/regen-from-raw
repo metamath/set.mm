@@ -42,5 +42,8 @@ generate_files_using_convention() {
   echo quit
 }
 
-generate_files_using_convention 'set.mm' "$setmm_raw" | metamath
-generate_files_using_convention 'iset.mm' 'mmil' | metamath
+generate_files_using_convention 'set.mm' "$setmm_raw" | metamath | tee ,errs
+generate_files_using_convention 'iset.mm' 'mmil' | metamath | tee -a ,errs
+
+# Return nonzero error code if "Warning" or "Error" found in the output.
+! grep -E '^\?(Warning|Error): ' ,errs
