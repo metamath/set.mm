@@ -131,6 +131,7 @@ jobs:
         # Python3 is very slow.  We can speed it up by deleting all
         # logging calls, since we don't use the logging anyway.
         - sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
+        - chmod a+x mmverify.faster.py
       script:
         - ./mmverify.faster.py < set.mm
     ###########################################################
@@ -142,6 +143,7 @@ jobs:
         # Python3 is very slow.  We can speed it up by deleting all
         # logging calls, since we don't use the logging anyway.
         - sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
+        - chmod a+x mmverify.faster.py
       script:
         - ./mmverify.faster.py < iset.mm
 # End of jobs
