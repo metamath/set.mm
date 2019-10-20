@@ -60,6 +60,9 @@ jobs:
       language: java
       jdk:
         - openjdk10
+      cache:
+        directories:
+          - $HOME/.m2
       before_install:
         - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then export JAVA_HOME=$(/usr/libexec/java_home); fi
           # Old switching system for Ubuntu 14:
