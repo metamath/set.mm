@@ -132,7 +132,7 @@ jobs:
         # logging calls, since we don't use the logging anyway.
         - sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
       script:
-        - ./mmverify.faster.py < set.mm 2> set.log
+        - ./mmverify.faster.py < set.mm
     ###########################################################
     - # mmverify.py, a Python3 verifier by Raph Levien, for iset.mm
       name: mmverify.py (Python3) iset.mm verification
@@ -143,5 +143,5 @@ jobs:
         # logging calls, since we don't use the logging anyway.
         - sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
       script:
-        - ./mmverify.faster.py < iset.mm 2> iset.log
+        - ./mmverify.faster.py < iset.mm
 # End of jobs
