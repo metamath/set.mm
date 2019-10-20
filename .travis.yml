@@ -171,4 +171,5 @@ jobs:
         - pip3 install ply
       script:
         - scripts/report-changes.py --gource
+# TEMPORARY: Force rebuild
 # End of jobs
