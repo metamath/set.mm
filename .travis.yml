@@ -145,9 +145,10 @@ jobs:
       name: mm-scala (Scala)
       language: scala
       install:
-        - git clone --depth 1 https://github.com/digama0/mm-scala.git ./
+        - git clone --depth 1 https://github.com/digama0/mm-scala.git
       script:
-        - sbt ++$TRAVIS_SCALA_VERSION test
+        - cd mm-scala; sbt ++$TRAVIS_SCALA_VERSION test
         - ls
-        - mm-scala set.mm
+        - ls mm-scala
+        - mm-scala/mm-scala set.mm
 # End of jobs
