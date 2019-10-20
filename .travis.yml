@@ -141,14 +141,14 @@ jobs:
       script:
         - ./mmverify.faster.py < iset.mm
     ###########################################################
-    - # mm-scala, a Scala verifier by Mario Caneiro
-      name: mm-scala (Scala)
-      language: scala
-      install:
-        - git clone --depth 1 https://github.com/digama0/mm-scala.git
-      script:
-        - cd mm-scala; sbt ++$TRAVIS_SCALA_VERSION test
-        - ls
-        - ls mm-scala
-        - mm-scala/mm-scala set.mm
+    # - # mm-scala, a Scala verifier by Mario Caneiro
+    #   name: mm-scala (Scala)
+    #   language: scala
+    #   install:
+    #     - git clone --depth 1 https://github.com/digama0/mm-scala.git
+    #   script:
+    #     - cd mm-scala; sbt ++$TRAVIS_SCALA_VERSION test
+    #     - ls
+    #     - ls mm-scala
+    #     - mm-scala/mm-scala set.mm
 # End of jobs
