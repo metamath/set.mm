@@ -83,6 +83,7 @@ jobs:
       name: Metamath.exe (ISO C, Norman Megill) verification
       language: c
       compiler: gcc
+      cache: ccache
       before_install:
         - gcc --version
       install:
@@ -113,6 +114,7 @@ jobs:
       name: checkmm (C++, Eric Schmidt) verification
       language: cpp
       compiler: gcc
+      cache: ccache
       before_install:
         - g++ --version
       install:
