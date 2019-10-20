@@ -151,4 +151,13 @@ jobs:
     #     - ls
     #     - ls mm-scala
     #     - mm-scala/mm-scala set.mm
+    ###########################################################
+    - # Check for valid dates (detect nonsense like "June 31")
+      # We scripts/report-changes.py to convert dates to Unix timestamps;
+      # this will raise an exception if the conversion can't occur.
+      # TODO: Check other .mm files, currently only checks set.mm.
+      name: Verify dates are valid in set.mm
+      language: python
+      script:
+        - scripts/report-changes.py --gource
 # End of jobs
