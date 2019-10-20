@@ -162,9 +162,7 @@ jobs:
       name: Date verification (of set.mm)
       language: python
       install:
-        # We won't bother with a virtualenv, since this container is
-        # used for one purpose and then abandoned.
-        - pip3 install --user ply
+        - pip3 install ply
       script:
         - scripts/report-changes.py --gource
 # End of jobs
