@@ -132,7 +132,7 @@ jobs:
       name: mmverify.py (PyPy3/Python3, Raph Levien) iset.mm verification
       language: python
       python:
-        - "pypy3.5-6.0"
+        - 'pypy3.5-7.0'
       install:
         - wget -N -q http://us.metamath.org/downloads/mmverify.py
         # Python3 is very slow.  We can speed it up by deleting all
