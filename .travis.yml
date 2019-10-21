@@ -128,6 +128,20 @@ jobs:
         - ./checkmm set.mm
         - ./checkmm iset.mm
     ###########################################################
+    - # mmverify.py via Pypy3, a Python3 verifier by Raph Levien, for iset.mm
+      name: mmverify.py (PyPy3/Python3, Raph Levien) iset.mm verification
+      language: python
+      python:
+        - pypy3
+      install:
+        - wget -N -q http://us.metamath.org/downloads/mmverify.py
+        # Python3 is very slow.  We can speed it up by deleting all
+        # logging calls, since we don't use the logging anyway.
+        - sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
+        - chmod a+x mmverify.faster.py
+      script:
+        - pypy3 ./mmverify.faster.py < iset.mm
+    ###########################################################
     - # mmverify.py, a Python3 verifier by Raph Levien, for iset.mm
       # We could create another job to verify set.mm, but it takes longer
       # than all the other verifiers (2min 14 sec).
