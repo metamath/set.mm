@@ -170,8 +170,19 @@ involves 3014 theorems to derive starting from the ZFC axioms.)</p>
 <p id="done">Here is the list of the <a
 href="http://www.metamath.org/">Metamath</a> proofs that are available
 from this list of 100, along with credit to the individual(s) who
-created the Metamath formalization.  Please email missing entries to <a
+created the Metamath formalization.
+Almost all of these proofs are from the <a
+href="http://us.metamath.org/mpeuni/mmset.html">Metamath Proof Explorer</a>,
+aka database set.mm, which is based on classical logic.
+However, there are some proofs available in the <a
+href="http://us.metamath.org/ileuni/mmil.html">Intuitionistic Logic Explorer</a>,
+aka database iset.mm, which uses intuitionistic logic instead.
+Please email missing entries to <a
 href="email.html">Norm Megill</a>!
+
+The intuitionistic logic explorer (iset.mm) database also includes <a
+href="http://us.metamath.org/ileuni/finds.html">finds</a> and <a
+href="http://us.metamath.org/ileuni/findes.html">findes</a>.
 
 <p><a name="developers"></a><font size=-1>Note for potential
 contributors:  The development tools most people use, in addition to a
@@ -248,7 +259,10 @@ by Mario Carneiro, 2014-09-03)</li>
 
 <!-- 11th added to list -->
 <li><a name="17">17</a>.  De Moivre's Theorem (<a
-href="mpeuni/demoivre.html">demoivre</a>, by Steve Rodriguez, 2006-11-1)</li>
+href="mpeuni/demoivreALT.html">demoivreALT</a>, by Steve Rodriguez, 2006-11-10).
+See also the later proof <a
+href="mpeuni/demoivre.html">demoivre</a> (by Norman Megill, 2007-07-24),
+which is shorter and more general but uses the exponential function.</li>
 
 <!-- 40th added to list -->
 <li><a name="18">18</a>. Liouville's Theorem and the Construction
@@ -401,8 +415,9 @@ by Saveliy Skresanov, 2017-01-01)</li>
 href="mpeuni/geoser.html">geoser</a>, by Norman Megill, 2006-05-09)</li>
 
 <!-- 12th added to list -->
+<!-- Note: arisum was originally named fnsmnt -->
 <li><a name="68">68</a>.  Sum of an arithmetic series (<a
-href="mpeuni/arisum.html">arisum</a>, by Norman Megill, 2006-11-16) - arisum
+href="mpeuni/arisum.html">arisum</a>, by Frédéric Liné, 2006-11-16) - arisum
 is not fully general, but it would be straightforward to enhance.</li>
 
 <!-- 16th added to list -->
@@ -434,10 +449,18 @@ by Mario Carneiro, 2015-01-28)</li>
 
 <!-- 2nd added to list -->
 <li><a name="74">74</a>.  The Principle of Mathematical Induction (<a
-href="mpeuni/findes.html">findes</a>, by Raph Levien, 2003-07-09) - there
-are many versions of Mathematical Induction in set.mm; another version
-is <a href="mpeuni/nnind.html">nnind</a> (by Norman
-Megill, 1997-01-10).</li>
+href="mpeuni/finds.html">finds</a>, by Norman Megill, 1995-04-14).
+There are many versions of Mathematical Induction in set.mm. Theorem <a
+href="mpeuni/findes.html">findes</a> (by Raph Levien, 9-Jul-2003)
+is a compact and more traditional-looking version with explicit substitution.
+Another alternative is <a
+href="mpeuni/nnind.html">nnind</a> (by Norman Megill, 10-Jan-1997),
+which uses natural numbers instead of ordinal numbers and might be
+less obscure for non-mathematicians.
+The intuitionistic logic explorer (iset.mm) database also includes <a
+href="http://us.metamath.org/ileuni/finds.html">finds</a> and <a
+href="http://us.metamath.org/ileuni/findes.html">findes</a>.
+</li>
 
 <!-- 36th added to list -->
 <li><a name="75">75</a>. The Mean Value Theorem (<a
