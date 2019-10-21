@@ -10323,6 +10323,13 @@ $)
   $}
 
   ${
+    alcoms.1 $e |- ( A. x A. y ph -> ps ) $.
+    $( Swap quantifiers in an antecedent.  (Contributed by NM, 11-May-1993.) $)
+    alcoms $p |- ( A. y A. x ph -> ps ) $=
+      ( wal ax-7 syl ) ACFDFADFCFBADCGEH $.
+  $}
+
+  ${
     hbal.1 $e |- ( ph -> A. x ph ) $.
     $( If ` x ` is not free in ` ph ` , it is not free in ` A. y ph ` .
        (Contributed by NM, 5-Aug-1993.) $)
@@ -60913,14 +60920,6 @@ $(
                  Predicate calculus
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
-
-  ${
-    alcoms.1 $e |- ( A. x A. y ph -> ps ) $.
-    $( Swap quantifiers in an antecedent (copied from set.mm).  (Contributed by
-       NM, 11-May-1993.) $)
-    alcoms $p |- ( A. y A. x ph -> ps ) $=
-      ( wal ax-7 syl ) ACFDFADFCFBADCGEH $.
-  $}
 
   $( Closed form of ~ hbal (copied from set.mm).  (Contributed by BJ,
      2-May-2019.) $)
