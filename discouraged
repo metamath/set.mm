@@ -1761,7 +1761,6 @@
 "bnj1213" is used by "bnj1452".
 "bnj1213" is used by "bnj1523".
 "bnj1219" is used by "bnj1379".
-"bnj1224" is used by "bj-inftyexpidisj".
 "bnj1224" is used by "bnj1204".
 "bnj1224" is used by "bnj1279".
 "bnj1228" is used by "bnj1204".
@@ -14089,7 +14088,6 @@ New usage of "bj-inftyexpiinv" is discouraged (1 uses).
 New usage of "bj-rabtrALT" is discouraged (0 uses).
 New usage of "bj-rabtrAUTO" is discouraged (0 uses).
 New usage of "bj-sbeqALT" is discouraged (0 uses).
-New usage of "bj-termab" is discouraged (0 uses).
 New usage of "bj-vexw" is discouraged (1 uses).
 New usage of "bj-vexwt" is discouraged (1 uses).
 New usage of "bj-vtoclgfALT" is discouraged (0 uses).
@@ -14183,7 +14181,7 @@ New usage of "bnj1211" is discouraged (3 uses).
 New usage of "bnj1212" is discouraged (7 uses).
 New usage of "bnj1213" is discouraged (6 uses).
 New usage of "bnj1219" is discouraged (1 uses).
-New usage of "bnj1224" is discouraged (3 uses).
+New usage of "bnj1224" is discouraged (2 uses).
 New usage of "bnj1228" is discouraged (3 uses).
 New usage of "bnj1230" is discouraged (1 uses).
 New usage of "bnj1232" is discouraged (11 uses).
@@ -18509,6 +18507,7 @@ Proof modification of "bj-hbsb2av" is discouraged (32 steps).
 Proof modification of "bj-hbsb2v" is discouraged (31 steps).
 Proof modification of "bj-hbsb3v" is discouraged (24 steps).
 Proof modification of "bj-imim2ALT" is discouraged (10 steps).
+Proof modification of "bj-imn3ani" is discouraged (18 steps).
 Proof modification of "bj-inrab2" is discouraged (48 steps).
 Proof modification of "bj-isseti" is discouraged (15 steps).
 Proof modification of "bj-issetiv" is discouraged (15 steps).
