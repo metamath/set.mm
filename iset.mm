@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Oct-2019
+$( iset.mm - Version of 21-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -61618,7 +61618,8 @@ $)
       ( wnf wel wa wb wal wex bdsepnft mpg ) ADGBDHBCHAIJBKDLBABCDFMEN $.
 
     $( Alternate proof of ~ bdsepnf , not using ~ bdsepnft .  (Contributed by
-       BJ, 5-Oct-2019.) $)
+       BJ, 5-Oct-2019.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     bdsepnfALT $p |- E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $=
       ( vy wel wa wb wal wex bdsep2 nfv nfan nfbi nfal weq elequ2 bibi1d albidv
       cbvex mpbi ) BGHZBCHZAIZJZBKZGLBDHZUFJZBKZDLABCGFMUHUKGDUGDBUDUFDUDDNUEAD
@@ -61720,58 +61721,37 @@ $)
       ABCFEUBUCUD $.
   $}
 
-$(
-  BETTER TO FIRST PROVE "nfrext"
   ${
     $d a b x y z $.  $d z ph $.
-    @( Closed form of ~ strcollnf .  Version of ~ ax-strcoll with one DV
-       condition removed, the other DV
-       condition replaced by a non-freeness antecedent, and without initial
-       universal quantifier.  (Contributed by BJ, 19-Oct-2019.) @)
+    $( Closed form of ~ strcollnf .  Version of ~ ax-strcoll with one DV
+       condition removed, the other DV condition replaced by a non-freeness
+       antecedent, and without initial universal quantifier.  (Contributed by
+       BJ, 21-Oct-2019.) $)
     strcollnft $p |- ( A. x A. y F/ b ph -> ( A. x e. a E. y ph ->
                                    E. b A. y ( y e. b <-> E. x e. a ph ) ) ) $=
-      wph=wph vx=vy wph=wex vx=vx vx.cv=va cA=cv wph=wral vx=vy vy=vz wph=wel
-      wph=wph vx=vx vx.cv=va cA=cv wps=wrex wph=wb vx.wal=vy wph=wal vx=vz
-      wps=wex wph=wph vx=vb wph=wnf vx.wal=vy wph=wal vx.wal=vx wch=wal vx=vy
-      vy=vb wph=wel wph=wph vx=vx vx.cv=va cA=cv wps=wrex wph=wb vx.wal=vy
-      wph=wal vx=vb wth=wex wph=wph vx=vx vy=vy va=va vb=vz syl5ib.1=strcoll2
-      wph=wph vx=vb wph=wnf vx.wal=vy wph=wal vx.wal=vx wph=wal vx=vy vy=vz
-      wph=wel wph=wph vx=vx vx.cv=va cA=cv wps=wrex wph=wb vx.wal=vy wps=wal
-      vx=vy vy=vb wph=wel wph=wph vx=vx vx.cv=va cA=cv wps=wrex wph=wb
-      vx.wal=vy wch=wal vx=vz vy=vb wph=wph vx=vb wph=wnf vx.wal=vy wph=wal
-      vx=vb vy=vx wph=wph vx=vb wph=wnf vx=vb vy=vy wph=wph vx=vb nfal.1=nfnf1
-      nfal.1=nfal cbvexd.1=nfal wph=wph vx=vb wph=wnf vx.wal=vy wph=wal
-      vx.wal=vx wph=wal vx=vy vy=vz wph=wel wph=wph vx=vx vx.cv=va cA=cv
-      wps=wrex wps=wb vx=vb vy=vy wph=wph vx=vb wph=wnf vx=vy vy=vx
-      nfald.1=nfa2 wph=? wps=? wch=? vx=? wph=? wps=? vx=? nfbid.1=nfvd wph=?
-      wps=? wch=? wph=? vx=? vy=? syl.1=ax-7 wph=? wps=? wch=? wph=? vx=?
-      syl.1=sp syl.2=? syl.2=syl nfbid.2=syl nfald.2=nfbid cbvexd.2=nfald
-      wph=wph vx=vb wph=wnf vx.wal=vy wph=wal vx.wal=vx wph=wal vx=vz vy=vb
-      wps=weq vx=vy vy=vz wph=wel wph=wph vx=vx vx.cv=va cA=cv wps=wrex wph=wb
-      vx.wal=vy wph=wal vx=vy vy=vb wph=wel wph=wph vx=vx vx.cv=va cA=cv
-      wps=wrex wph=wb vx.wal=vy wps=wal wch=wb wph=wph vx=vb wph=wnf vx.wal=vy
-      wph=wal vx.wal=vx wph=wal vx=vz vy=vb wps=weq wph=wa vx=vy vy=vz wph=wel
-      wph=wph vx=vx vx.cv=va cA=cv wps=wrex wps=wb vx=vy vy=vb wph=wel wph=wph
-      vx=vx vx.cv=va cA=cv wps=wrex wch=wb vx=vy wph=wph vx=vb wph=wnf
-      vx.wal=vy wph=wal vx.wal=vx wph=wal vx=vz vy=vb wps=weq vx=vy wph=wph
-      vx=vb wph=wnf vx=vy vy=vx nfan.1=nfa2 vx=vz vy=vb wph=weq vx=vy
-      nfan.2=nfv albid.1=nfan wph=wph vx=vb wph=wnf vx.wal=vy wph=wal vx.wal=vx
-      wph=wal vx=vz vy=vb wps=weq wph=wa vx=vy vy=vz wps=wel vx=vy vy=vb
-      wch=wel wph=wph vx=vx vx.cv=va cA=cv wth=wrex vx=vz vy=vb wph=weq vx=vy
-      vy=vz wph=wel vx=vy vy=vb wps=wel wps=wb wph=wph vx=vb wph=wnf vx.wal=vy
-      wph=wal vx.wal=vx wch=wal vx=vz vy=vb vz=vy adantl.1=elequ2
-      imbid.1=adantl albid.2=bibi1d exp.1=albid cbvexd.3=ex syl5ib.2=cbvexd
-      strcollnft=syl5ib $.
+      ( vz wex cv wral wel wrex wb wal wnf strcoll2 nfnf1 nfal nfa2 nfvd nfa1
+      nfcvd sp nfrexdxy sps alcoms nfbid nfald weq wa nfan elequ2 adantl bibi1d
+      nfv albid ex cbvexd syl5ib ) ACGBDHZICFJZABUSKZLZCMZFGAENZCMZBMZCEJZVALZC
+      MZEGABCDFOVFVCVIFEVEEBVDECAEPQQVFVBECVDCBRZVFUTVAEVFUTESVDVAENZCBVDBMZVKC
+      VLAEBUSVDBTVLEUSUAVDBUBUCUDUEUFUGVFFEUHZVCVILVFVMUIZVBVHCVFVMCVJVMCUNUJVN
+      UTVGVAVMUTVGLVFFECUKULUMUOUPUQUR $.
   $}
-$)
 
   ${
     $d a b x y z $.  $d z ph $.
     strcollnf.nf $e |- F/ b ph $.
     $( Version of ~ ax-strcoll with one DV condition removed, the other DV
        condition replaced by a non-freeness hypothesis, and without initial
-       universal quantifier.  (Contributed by BJ, 5-Oct-2019.) $)
+       universal quantifier.  (Contributed by BJ, 21-Oct-2019.) $)
     strcollnf $p |- ( A. x e. a E. y ph ->
+                                     E. b A. y ( y e. b <-> E. x e. a ph ) ) $=
+      ( wnf wal wex cv wral wel wrex wb wi strcollnft ax-gen mpg ) AEGZCHACIBDJ
+      ZKCELABTMNCHEIOBABCDEPSCFQR $.
+
+    $( Alternate proof of ~ strcollnf , not using ~ strcollnft .  (Contributed
+       by BJ, 5-Oct-2019.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
+    strcollnfALT $p |- ( A. x e. a E. y ph ->
                                      E. b A. y ( y e. b <-> E. x e. a ph ) ) $=
       ( vz wex cv wral wel wrex wb wal strcoll2 nfv nfcv nfrexxy nfbi nfal weq
       elequ2 bibi1d albidv cbvex sylib ) ACHBDIZJCGKZABUGLZMZCNZGHCEKZUIMZCNZEH

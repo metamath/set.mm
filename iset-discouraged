@@ -150,6 +150,7 @@ New usage of "ax9vsep" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
 New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
+New usage of "bdsepnfALT" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
 New usage of "df-tru" is discouraged (1 uses).
 New usage of "dftru2" is discouraged (0 uses).
@@ -176,6 +177,7 @@ New usage of "snexgOLD" is discouraged (29 uses).
 New usage of "spimeh" is discouraged (0 uses).
 New usage of "spimh" is discouraged (1 uses).
 New usage of "spimth" is discouraged (1 uses).
+New usage of "strcollnfALT" is discouraged (0 uses).
 New usage of "truanOLD" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
 Proof modification of "a9evsep" is discouraged (63 steps).
@@ -185,6 +187,7 @@ Proof modification of "axnul" is discouraged (52 steps).
 Proof modification of "bdbm1.3ii" is discouraged (104 steps).
 Proof modification of "bdcnulALT" is discouraged (11 steps).
 Proof modification of "bdnthALT" is discouraged (16 steps).
+Proof modification of "bdsepnfALT" is discouraged (72 steps).
 Proof modification of "bj-axun2" is discouraged (47 steps).
 Proof modification of "bj-prexg" is discouraged (65 steps).
 Proof modification of "bj-snexg" is discouraged (22 steps).
@@ -202,6 +205,7 @@ Proof modification of "rexsnsOLD" is discouraged (55 steps).
 Proof modification of "ruALT" is discouraged (35 steps).
 Proof modification of "sbc8g" is discouraged (55 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
+Proof modification of "strcollnfALT" is discouraged (79 steps).
 Proof modification of "suctr" is discouraged (153 steps).
 Proof modification of "truanOLD" is discouraged (13 steps).
 Proof modification of "xpexgALT" is discouraged (84 steps).
