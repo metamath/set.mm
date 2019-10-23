@@ -140,7 +140,7 @@ jobs:
         - wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
         # Python3 is very slow.  We can speed it up by deleting all
         # logging calls, since we don't use the logging anyway.
-        - sed -E '/^ *vprint\(/d' mmverify.daw.py > mmverify.faster.py
+        - sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
         - chmod a+x mmverify.faster.py
       script:
         - ./mmverify.faster.py --stop-label mathbox < set.mm
@@ -152,7 +152,7 @@ jobs:
         - wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
         # Python3 is very slow.  We can speed it up by deleting all
         # logging calls, since we don't use the logging anyway.
-        - sed -E '/^ *vprint\(/d' mmverify.daw.py > mmverify.faster.py
+        - sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
         - chmod a+x mmverify.faster.py
       script:
         - ./mmverify.faster.py --begin-label mathbox < set.mm
