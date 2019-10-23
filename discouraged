@@ -1761,7 +1761,6 @@
 "bnj1213" is used by "bnj1452".
 "bnj1213" is used by "bnj1523".
 "bnj1219" is used by "bnj1379".
-"bnj1224" is used by "bj-inftyexpidisj".
 "bnj1224" is used by "bnj1204".
 "bnj1224" is used by "bnj1279".
 "bnj1228" is used by "bnj1204".
@@ -8229,6 +8228,18 @@
 "idhmop" is used by "leopnmid".
 "idhmop" is used by "nmopleid".
 "idhmop" is used by "opsqrlem6".
+"idiALT" is used by "ax6e2nd".
+"idiALT" is used by "ax6e2ndALT".
+"idiALT" is used by "ax6e2ndeqALT".
+"idiALT" is used by "isosctrlem1ALT".
+"idiALT" is used by "iunconlem2".
+"idiALT" is used by "sineq0ALT".
+"idiALT" is used by "sspwimpALT".
+"idiALT" is used by "sspwtrALT".
+"idiALT" is used by "sstrALT2".
+"idiALT" is used by "suctrALT".
+"idiALT" is used by "suctrALT3".
+"idiALT" is used by "trsspwALT2".
 "idleop" is used by "opsqrlem6".
 "idlnop" is used by "elunop2".
 "idlnop" is used by "lnopcon".
@@ -14170,7 +14181,7 @@ New usage of "bnj1211" is discouraged (3 uses).
 New usage of "bnj1212" is discouraged (7 uses).
 New usage of "bnj1213" is discouraged (6 uses).
 New usage of "bnj1219" is discouraged (1 uses).
-New usage of "bnj1224" is discouraged (3 uses).
+New usage of "bnj1224" is discouraged (2 uses).
 New usage of "bnj1228" is discouraged (3 uses).
 New usage of "bnj1230" is discouraged (1 uses).
 New usage of "bnj1232" is discouraged (11 uses).
@@ -15540,6 +15551,12 @@ New usage of "elghom" is discouraged (10 uses).
 New usage of "elghomlem1" is discouraged (1 uses).
 New usage of "elghomlem2" is discouraged (1 uses).
 New usage of "elhmop" is discouraged (10 uses).
+New usage of "eliminable1" is discouraged (0 uses).
+New usage of "eliminable2a" is discouraged (0 uses).
+New usage of "eliminable2b" is discouraged (0 uses).
+New usage of "eliminable2c" is discouraged (0 uses).
+New usage of "eliminable3a" is discouraged (0 uses).
+New usage of "eliminable3b" is discouraged (0 uses).
 New usage of "elimnv" is discouraged (1 uses).
 New usage of "elimnvu" is discouraged (5 uses).
 New usage of "elimph" is discouraged (3 uses).
@@ -16284,6 +16301,7 @@ New usage of "id1" is discouraged (0 uses).
 New usage of "idcnop" is discouraged (2 uses).
 New usage of "iden2" is discouraged (0 uses).
 New usage of "idhmop" is discouraged (6 uses).
+New usage of "idiALT" is discouraged (12 uses).
 New usage of "idiVD" is discouraged (0 uses).
 New usage of "idleop" is discouraged (1 uses).
 New usage of "idlnop" is discouraged (5 uses).
@@ -18483,11 +18501,13 @@ Proof modification of "bj-exlimmpi" is discouraged (11 steps).
 Proof modification of "bj-godellob" is discouraged (21 steps).
 Proof modification of "bj-hbab1" is discouraged (20 steps).
 Proof modification of "bj-hblem" is discouraged (33 steps).
+Proof modification of "bj-hbntbi" is discouraged (31 steps).
 Proof modification of "bj-hbs1" is discouraged (22 steps).
 Proof modification of "bj-hbsb2av" is discouraged (32 steps).
 Proof modification of "bj-hbsb2v" is discouraged (31 steps).
 Proof modification of "bj-hbsb3v" is discouraged (24 steps).
 Proof modification of "bj-imim2ALT" is discouraged (10 steps).
+Proof modification of "bj-imn3ani" is discouraged (18 steps).
 Proof modification of "bj-inrab2" is discouraged (48 steps).
 Proof modification of "bj-isseti" is discouraged (15 steps).
 Proof modification of "bj-issetiv" is discouraged (15 steps).
@@ -18539,6 +18559,7 @@ Proof modification of "bj-spimvv" is discouraged (9 steps).
 Proof modification of "bj-spvv" is discouraged (12 steps).
 Proof modification of "bj-stdpc4v" is discouraged (26 steps).
 Proof modification of "bj-stdpc5" is discouraged (20 steps).
+Proof modification of "bj-termab" is discouraged (9 steps).
 Proof modification of "bj-vecmod" is discouraged (18 steps).
 Proof modification of "bj-vecmoda" is discouraged (5 steps).
 Proof modification of "bj-vexw" is discouraged (14 steps).
@@ -18837,6 +18858,12 @@ Proof modification of "eldprdOLD" is discouraged (112 steps).
 Proof modification of "eldprdiOLD" is discouraged (81 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
 Proof modification of "elex2VD" is discouraged (59 steps).
+Proof modification of "eliminable1" is discouraged (4 steps).
+Proof modification of "eliminable2a" is discouraged (7 steps).
+Proof modification of "eliminable2b" is discouraged (7 steps).
+Proof modification of "eliminable2c" is discouraged (8 steps).
+Proof modification of "eliminable3a" is discouraged (7 steps).
+Proof modification of "eliminable3b" is discouraged (8 steps).
 Proof modification of "ellspdOLD" is discouraged (269 steps).
 Proof modification of "elpwgded" is discouraged (23 steps).
 Proof modification of "elpwgdedVD" is discouraged (23 steps).
@@ -18970,6 +18997,7 @@ Proof modification of "helloworld" is discouraged (29 steps).
 Proof modification of "hirstL-ax3" is discouraged (34 steps).
 Proof modification of "id1" is discouraged (26 steps).
 Proof modification of "iden2" is discouraged (18 steps).
+Proof modification of "idiALT" is discouraged (1 steps).
 Proof modification of "idiVD" is discouraged (6 steps).
 Proof modification of "idn1" is discouraged (5 steps).
 Proof modification of "idn2" is discouraged (7 steps).
