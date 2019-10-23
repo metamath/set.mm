@@ -18098,8 +18098,8 @@ $)
     cleqh.1 $e |- ( y e. A -> A. x y e. A ) $.
     cleqh.2 $e |- ( y e. B -> A. x y e. B ) $.
     $( Establish equality between classes, using bound-variable hypotheses
-       instead of distinct variable conditions.  (Contributed by NM,
-       5-Aug-1993.) $)
+       instead of distinct variable conditions.  See also ~ cleqf .
+       (Contributed by NM, 5-Aug-1993.) $)
     cleqh $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
       ( wceq cv wcel wb wal dfcleq ax-17 wi wa dfbi2 hbim weq eleq1 cbv3h hban
       hbxfrbi bibi12d biimpd equcoms biimprd impbii bitr4i ) CDGBHZCIZUIDIZJZBK
@@ -18676,8 +18676,9 @@ $)
     cleqf.1 $e |- F/_ x A $.
     cleqf.2 $e |- F/_ x B $.
     $( Establish equality between classes, using bound-variable hypotheses
-       instead of distinct variable conditions.  (Contributed by NM,
-       5-Aug-1993.)  (Revised by Mario Carneiro, 7-Oct-2016.) $)
+       instead of distinct variable conditions.  See also ~ cleqh .
+       (Contributed by NM, 5-Aug-1993.)  (Revised by Mario Carneiro,
+       7-Oct-2016.) $)
     cleqf $p |- ( A = B <-> A. x ( x e. A <-> x e. B ) ) $=
       ( vy wceq cv wcel wb wal dfcleq nfv nfcri nfbi eleq1 bibi12d cbval bitr4i
       ) BCGFHZBIZTCIZJZFKAHZBIZUDCIZJZAKFBCLUGUCAFUGFMUAUBAAFBDNAFCENOUDTGUEUAU
