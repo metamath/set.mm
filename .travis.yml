@@ -20,6 +20,8 @@
 #
 # We typically rewrap the file using scripts/rewrap.
 #
+# TEMPORARY: Use 173.76.107.169 instead of us.metamath.org due to DNS issues.
+#
 # Declare Linux distribution version.
 # "bionic" is Ubuntu 18.04 LTS, "xenial" is Ubuntu 16, "trusty" is Ubuntu 14.
 dist: bionic
@@ -69,7 +71,7 @@ jobs:
           # - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then jdk_switcher use "$CUSTOM_JDK"; fi
       install:
         # Get mmj2, a Java verifier (and more) by Mel O'Cat and Mario Carneiro
-        - wget -N -q http://us.metamath.org/ocat/mmj2/mmj2jar.zip
+        - wget -N -q http://173.76.107.169/ocat/mmj2/mmj2jar.zip
         - unzip -q mmj2jar.zip
         # Old switching system for Ubuntu 14:
         # - jdk_switcher use oraclejdk8
@@ -122,7 +124,7 @@ jobs:
         - g++ --version
       install:
         # Get and compile checkmm, a C++ verifier by Eric Schmidt
-        - wget -N -q http://us.metamath.org/downloads/checkmm.cpp
+        - wget -N -q http://173.76.107.169/downloads/checkmm.cpp
         - g++ -O2 -o checkmm checkmm.cpp
       script:
         - ./checkmm set.mm
@@ -132,7 +134,7 @@ jobs:
       name: mmverify.py (Python3, Raph Levien) iset.mm verification
       language: python
       install:
-        - wget -N -q http://us.metamath.org/downloads/mmverify.py
+        - wget -N -q http://173.76.107.169/downloads/mmverify.py
         # Python3 is very slow.  We can speed it up by deleting all
         # logging calls, since we don't use the logging anyway.
         - sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
