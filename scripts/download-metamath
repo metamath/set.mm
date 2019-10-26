@@ -11,14 +11,14 @@ set -v -e
 
 # Download the main metamath.exe program.
 rm -f metamath-program.zip
-wget -N -q http://173.76.107.169/downloads/metamath-program.zip
+wget -N -q http://us.metamath.org/downloads/metamath-program.zip
 
 # Extract into a different directory to prevent overwriting .mm's
 # This will be updated, but we need a starting point:
 mkdir -p metamath/
 cd metamath/
-wget -N -q http://173.76.107.169/mpegif/mmbiblio.html
+wget -N -q http://us.metamath.org/mpegif/mmbiblio.html
 cd ..
 
 rm -f symbols.tar.bz2
-wget -N -q http://173.76.107.169/downloads/symbols.tar.bz2
+wget -N -q http://us.metamath.org/downloads/symbols.tar.bz2
