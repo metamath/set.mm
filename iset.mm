@@ -28803,18 +28803,11 @@ $)
        ` ph ` then ` A ` else ` B ` ."  See ~ iftrue and ~ iffalse for its
        values.  In mathematical literature, this operator is rarely defined
        formally but is implicit in informal definitions such as "let f(x)=0 if
-       x=0 and 1/x otherwise."  (In older versions of this database, this
-       operator was denoted "ded" and called the "deduction class.")
+       x=0 and 1/x otherwise."
 
-       An important use for us is in conjunction with the weak deduction
-       theorem, which converts a hypothesis into an antecedent.  In that role,
-       ` A ` is a class variable in the hypothesis and ` B ` is a class
-       (usually a constant) that makes the hypothesis true when it is
-       substituted for ` A ` .  See ~ dedth for the main part of the weak
-       deduction theorem, ~ elimhyp to eliminate a hypothesis, and ~ keephyp to
-       keep a hypothesis.  See the Deduction Theorem link on the Metamath Proof
-       Explorer Home Page for a description of the weak deduction theorem.
-       (Contributed by NM, 15-May-1999.) $)
+       In the absence of excluded middle, this will tend to be useful where
+       ` ph ` is decidable (in the sense of ~df-dc ).  (Contributed by NM,
+       15-May-1999.) $)
     df-if $a |- if ( ph , A , B ) =
                  { x | ( ( x e. A /\ ph ) \/ ( x e. B /\ -. ph ) ) } $.
   $}
