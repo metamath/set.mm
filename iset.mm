@@ -29143,25 +29143,6 @@ $)
     ( cif wceq wn iftrue con3i iffalse syl orri ) ABCDZBEZLCEZMFAFNAMABCGHABCIJ
     K $.
 
-  $( Negating the first argument swaps the last two arguments of a conditional
-     operator.  (Contributed by NM, 21-Jun-2007.) $)
-  ifnot $p |- if ( -. ph , A , B ) = if ( ph , B , A ) $=
-    ( wn cif wceq notnot1 iffalse syl iftrue eqtr4d pm2.61i ) AADZBCEZACBEZFANC
-    OAMDNCFAGMBCHIACBJKMNBOMBCJACBHKL $.
-
-  $( Rewrite a conjunction in an if statement as two nested conditionals.
-     (Contributed by Mario Carneiro, 28-Jul-2014.) $)
-  ifan $p |- if ( ( ph /\ ps ) , A , B ) = if ( ph , if ( ps , A , B ) , B ) $=
-    ( wa cif wceq iftrue ifbid eqtr2d wn simpl con3i iffalse syl eqtr4d pm2.61i
-    ibar ) AABEZCDFZABCDFZDFZGAUBUATAUADHABSCDABRIJAKZTDUBUCSKTDGSAABLMSCDNOAUA
-    DNPQ $.
-
-  $( Rewrite a disjunction in an if statement as two nested conditionals.
-     (Contributed by Mario Carneiro, 28-Jul-2014.) $)
-  ifor $p |- if ( ( ph \/ ps ) , A , B ) = if ( ph , A , if ( ps , A , B ) ) $=
-    ( wo cif wceq iftrue orcs eqtr4d wn iffalse biorf ifbid eqtr2d pm2.61i ) AA
-    BEZCDFZACBCDFZFZGARCTABRCGQCDHIACSHJAKZTSRACSLUABQCDABMNOP $.
-
   ${
     2if2.1 $e |- ( ( ph /\ ps ) -> D = A ) $.
     2if2.2 $e |- ( ( ph /\ -. ps /\ th ) -> D = B ) $.
