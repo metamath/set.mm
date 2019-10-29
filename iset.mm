@@ -28785,79 +28785,12 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-           "Weak deduction theorem" for set theory
+           Conditional operator
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-  In a Hilbert system of logic (which consists of a set of axioms, modus
-  ponens, and the generalization rule), converting a deduction to a proof using
-  the Deduction Theorem (taught in introductory logic books) involves an
-  exponential increase of the number of steps as hypotheses are successively
-  eliminated.  Here is a trick that is not as general as the Deduction Theorem
-  but requires only a linear increase in the number of steps.
-
-  The general problem:  We want to convert a deduction
-    P |- Q
-  into a proof of the theorem
-    |- P -> Q
-  i.e. we want to eliminate the hypothesis P.  Normally this is done using the
-  Deduction (meta)Theorem, which looks at the microscopic steps of the
-  deduction and usually doubles or triples the number of these microscopic
-  steps for each hypothesis that is eliminated.  We will look at a special case
-  of this problem, without appealing to the Deduction Theorem.
-
-  We assume ZF with class notation.  A and B are arbitrary (possibly
-  proper) classes.  P, Q, R, S and T are wffs.
-
-  We define the conditional operator, if(P, A, B), as follows:
-    if(P, A, B) =def= { x | (x \in A & P) v (x \in B & -. P) }
-  (where x does not occur in A, B, or P).
-
-  Lemma 1.
-    A = if(P, A, B) -> (P <-> R), B = if(P, A, B) -> (S <-> R), S |- R
-  Proof:  Logic and Axiom of Extensionality.
-
-  Lemma 2.
-    A = if(P, A, B) -> (Q <-> T), T |- P -> Q
-  Proof:  Logic and Axiom of Extensionality.
-
-  Here's a simple example that illustrates how it works.  Suppose we have
-  a deduction
-    Ord A |- Tr A
-  which means, "Assume A is an ordinal class.  Then A is a transitive class."
-  Note that A is a class variable that may be substituted with any class
-  expression, so this is really a deduction scheme.
-
-  We want to convert this to a proof of the theorem (scheme)
-    |- Ord A -> Tr A.
-
-  The catch is that we must be able to prove "Ord A" for at least one
-  object A (and this is what makes it weaker than the ordinary Deduction
-  Theorem).  However, it is easy to prove |- Ord 0 (the empty set is
-  ordinal).  (For a typical textbook "theorem," i.e. deduction, there is
-  usually at least one object satisfying each hypothesis, otherwise the
-  theorem would not be very useful.  We can always go back to the standard
-  Deduction Theorem for those hypotheses where this is not the case.)
-  Continuing with the example:
-
-  Equality axioms (and Extensionality) yield
-    |- A = if(Ord A, A, 0) -> (Ord A <-> Ord if(Ord A, A, 0))  (1)
-    |- 0 = if(Ord A, A, 0) -> (Ord 0 <-> Ord if(Ord A, A, 0))  (2)
-  From (1), (2) and |- Ord 0, Lemma 1 yields
-    |- Ord if(Ord A, A, 0)                                       (3)
-  From (3) and substituting if(Ord A, A, 0) for
-  A in the original deduction,
-    |- Tr if(Ord A, A, 0)                                        (4)
-  Equality axioms (and Extensionality) yield
-    |- A = if(Ord A, A, 0) -> (Tr A <-> Tr if(Ord A, A, 0))    (5)
-  From (4) and (5), Lemma 2 yields
-    |- Ord A -> Tr A                                               (Q.E.D.)
-
 $)
 
-  $( These lemmas are used to convert hypotheses into antecedents,
-     when there is at least one class making the hypothesis true. $)
-
   $( Declare new constant symbols. $)
+  $c , $.  $( Comma (also used for unordered pair notation later) $)
   $c if $.  $( Conditional operator (was "ded" for "deduction class"). $)
 
   $( Extend class notation to include the conditional operator.  See ~ df-if
@@ -29697,7 +29630,6 @@ $)
   $( Declare new symbols needed. $)
   $c <. $.  $( Bracket (the period distinguishes it from 'less than') $)
   $c >. $.  $( Bracket (the period distinguishes it from 'greater than') $)
-  $c , $.  $( Comma $)
 
   $( Extend class notation to include singleton. $)
   csn $a class { A } $.
