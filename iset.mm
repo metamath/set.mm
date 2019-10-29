@@ -28814,15 +28814,6 @@ $)
 
   ${
     $d x ph $.  $d x A $.  $d x B $.  $d x C $.
-    $( An alternate definition of the conditional operator ~ df-if with one
-       fewer connectives (but probably less intuitive to understand).
-       (Contributed by NM, 30-Jan-2006.) $)
-    dfif2 $p |- if ( ph , A , B ) =
-                 { x | ( ( x e. B -> ph ) -> ( x e. A /\ ph ) ) } $=
-      ( cif cv wcel wa wn wo cab wi df-if df-or orcom iman imbi1i 3bitr4i abbii
-      eqtri ) ACDEBFZCGAHZUADGZAIHZJZBKUCALZUBLZBKABCDMUEUGBUDUBJUDIZUBLUEUGUDU
-      BNUBUDOUFUHUBUCAPQRST $.
-
     $( An alternate definition of the conditional operator ~ df-if as a simple
        class abstraction.  (Contributed by Mario Carneiro, 8-Sep-2013.) $)
     dfif6 $p |- if ( ph , A , B ) =
