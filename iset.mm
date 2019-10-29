@@ -28933,12 +28933,15 @@ $)
       ( cif ifeq1d ifeq2d eqtrd ) ABCEIBDEIBDFIABCDEGJABEFDHKL $.
   $}
 
-  $( Equivalence theorem for conditional operators.  (Contributed by Raph
-     Levien, 15-Jan-2004.) $)
-  ifbi $p |- ( ( ph <-> ps ) -> if ( ph , A , B ) = if ( ps , A , B ) ) $=
-    ( wb wa wn wo cif wceq dfbi3 iftrue eqcomd sylan9eq iffalse jaoi sylbi ) AB
-    EABFZAGZBGZFZHACDIZBCDIZJZABKRUDUAABUBCUCACDLBUCCBCDLMNSTUBDUCACDOTUCDBCDOM
-    NPQ $.
+  ${
+    $d A x $.  $d B x $.  $d ph x $.  $d ps x $.
+    $( Equivalence theorem for conditional operators.  (Contributed by Raph
+       Levien, 15-Jan-2004.) $)
+    ifbi $p |- ( ( ph <-> ps ) -> if ( ph , A , B ) = if ( ps , A , B ) ) $=
+      ( vx wb cv wcel wa wn wo cab cif anbi2 notbid anbi2d orbi12d abbidv df-if
+      id 3eqtr4g ) ABFZEGZCHZAIZUCDHZAJZIZKZELUDBIZUFBJZIZKZELACDMBCDMUBUIUMEUB
+      UEUJUHULABUDNUBUGUKUFUBABUBTOPQRAECDSBECDSUA $.
+  $}
 
   ${
     ifbid.1 $e |- ( ph -> ( ps <-> ch ) ) $.
