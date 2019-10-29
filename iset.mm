@@ -28894,17 +28894,6 @@ $)
     ( wne wceq wn cif df-ne iffalse sylbi ) ABEABFZGLCDHDFABILCDJK $.
 
   ${
-    $d A x y $.  $d B x y $.  $d C y $.
-    ifsb.1 $e |- ( if ( ph , A , B ) = A -> C = D ) $.
-    ifsb.2 $e |- ( if ( ph , A , B ) = B -> C = E ) $.
-    $( Distribute a function over an if-clause.  (Contributed by Mario
-       Carneiro, 14-Aug-2013.) $)
-    ifsb $p |- C = if ( ph , D , E ) $=
-      ( cif wceq iftrue syl eqtr4d wn iffalse pm2.61i ) ADAEFIZJADEQAABCIZBJDEJ
-      ABCKGLAEFKMANZDFQSRCJDFJABCOHLAEFOMP $.
-  $}
-
-  ${
     $d y A $.  $d y B $.  $d x y ph $.
     dfif3.1 $e |- C = { x | ph } $.
     $( Alternate definition of the conditional operator ~ df-if .  Note that
