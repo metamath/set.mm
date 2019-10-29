@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Oct-2019
+$( iset.mm - Version of 29-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -11214,6 +11214,18 @@ $)
        11-Aug-2016.) $)
     nf3an $p |- F/ x ( ph /\ ps /\ ch ) $=
       ( w3a wa df-3an nfan nfxfr ) ABCHABIZCIDABCJMCDABDEFKGKL $.
+  $}
+
+  ${
+    nford.1 $e |- ( ph -> F/ x ps ) $.
+    nford.2 $e |- ( ph -> F/ x ch ) $.
+    $( If in a context ` x ` is not free in ` ps ` and ` ch ` , it is not free
+       in ` ( ps \/ ch ) ` .  (Contributed by Jim Kingdon, 29-Oct-2019.) $)
+    nford $p |- ( ph -> F/ x ( ps \/ ch ) ) $=
+      ( wo wal wi wnf wa df-nf anbi12i biimpi syl2anc 19.26 sylibr alimi imim2i
+      orc olc jaao syl ) ABCGZUDDHZIZDHZUDDJABBDHZIZCCDHZIZKZDHZUGAUIDHZUKDHZKZ
+      UMABDJZCDJZUPEFUQURKUPUQUNURUOBDLCDLMNOUIUKDPQULUFDUIBUEUKCUHUEBBUDDBCTRS
+      UJUECCUDDCBUARSUBRUCUDDLQ $.
   $}
 
   ${
