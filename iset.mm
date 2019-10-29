@@ -28785,6 +28785,776 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           "Weak deduction theorem" for set theory
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  In a Hilbert system of logic (which consists of a set of axioms, modus
+  ponens, and the generalization rule), converting a deduction to a proof using
+  the Deduction Theorem (taught in introductory logic books) involves an
+  exponential increase of the number of steps as hypotheses are successively
+  eliminated.  Here is a trick that is not as general as the Deduction Theorem
+  but requires only a linear increase in the number of steps.
+
+  The general problem:  We want to convert a deduction
+    P |- Q
+  into a proof of the theorem
+    |- P -> Q
+  i.e. we want to eliminate the hypothesis P.  Normally this is done using the
+  Deduction (meta)Theorem, which looks at the microscopic steps of the
+  deduction and usually doubles or triples the number of these microscopic
+  steps for each hypothesis that is eliminated.  We will look at a special case
+  of this problem, without appealing to the Deduction Theorem.
+
+  We assume ZF with class notation.  A and B are arbitrary (possibly
+  proper) classes.  P, Q, R, S and T are wffs.
+
+  We define the conditional operator, if(P, A, B), as follows:
+    if(P, A, B) =def= { x | (x \in A & P) v (x \in B & -. P) }
+  (where x does not occur in A, B, or P).
+
+  Lemma 1.
+    A = if(P, A, B) -> (P <-> R), B = if(P, A, B) -> (S <-> R), S |- R
+  Proof:  Logic and Axiom of Extensionality.
+
+  Lemma 2.
+    A = if(P, A, B) -> (Q <-> T), T |- P -> Q
+  Proof:  Logic and Axiom of Extensionality.
+
+  Here's a simple example that illustrates how it works.  Suppose we have
+  a deduction
+    Ord A |- Tr A
+  which means, "Assume A is an ordinal class.  Then A is a transitive class."
+  Note that A is a class variable that may be substituted with any class
+  expression, so this is really a deduction scheme.
+
+  We want to convert this to a proof of the theorem (scheme)
+    |- Ord A -> Tr A.
+
+  The catch is that we must be able to prove "Ord A" for at least one
+  object A (and this is what makes it weaker than the ordinary Deduction
+  Theorem).  However, it is easy to prove |- Ord 0 (the empty set is
+  ordinal).  (For a typical textbook "theorem," i.e. deduction, there is
+  usually at least one object satisfying each hypothesis, otherwise the
+  theorem would not be very useful.  We can always go back to the standard
+  Deduction Theorem for those hypotheses where this is not the case.)
+  Continuing with the example:
+
+  Equality axioms (and Extensionality) yield
+    |- A = if(Ord A, A, 0) -> (Ord A <-> Ord if(Ord A, A, 0))  (1)
+    |- 0 = if(Ord A, A, 0) -> (Ord 0 <-> Ord if(Ord A, A, 0))  (2)
+  From (1), (2) and |- Ord 0, Lemma 1 yields
+    |- Ord if(Ord A, A, 0)                                       (3)
+  From (3) and substituting if(Ord A, A, 0) for
+  A in the original deduction,
+    |- Tr if(Ord A, A, 0)                                        (4)
+  Equality axioms (and Extensionality) yield
+    |- A = if(Ord A, A, 0) -> (Tr A <-> Tr if(Ord A, A, 0))    (5)
+  From (4) and (5), Lemma 2 yields
+    |- Ord A -> Tr A                                               (Q.E.D.)
+
+$)
+
+  $( These lemmas are used to convert hypotheses into antecedents,
+     when there is at least one class making the hypothesis true. $)
+
+  $( Declare new constant symbols. $)
+  $c if $.  $( Conditional operator (was "ded" for "deduction class"). $)
+
+  $( Extend class notation to include the conditional operator.  See ~ df-if
+     for a description.  (In older databases this was denoted "ded".) $)
+  cif $a class if ( ph , A , B ) $.
+
+  ${
+    $d x ph $.  $d x A $.  $d x B $.
+    $( Define the conditional operator.  Read ` if ( ph , A , B ) ` as "if
+       ` ph ` then ` A ` else ` B ` ."  See ~ iftrue and ~ iffalse for its
+       values.  In mathematical literature, this operator is rarely defined
+       formally but is implicit in informal definitions such as "let f(x)=0 if
+       x=0 and 1/x otherwise."  (In older versions of this database, this
+       operator was denoted "ded" and called the "deduction class.")
+
+       An important use for us is in conjunction with the weak deduction
+       theorem, which converts a hypothesis into an antecedent.  In that role,
+       ` A ` is a class variable in the hypothesis and ` B ` is a class
+       (usually a constant) that makes the hypothesis true when it is
+       substituted for ` A ` .  See ~ dedth for the main part of the weak
+       deduction theorem, ~ elimhyp to eliminate a hypothesis, and ~ keephyp to
+       keep a hypothesis.  See the Deduction Theorem link on the Metamath Proof
+       Explorer Home Page for a description of the weak deduction theorem.
+       (Contributed by NM, 15-May-1999.) $)
+    df-if $a |- if ( ph , A , B ) =
+                 { x | ( ( x e. A /\ ph ) \/ ( x e. B /\ -. ph ) ) } $.
+  $}
+
+  ${
+    $d x ph $.  $d x A $.  $d x B $.  $d x C $.
+    $( An alternate definition of the conditional operator ~ df-if with one
+       fewer connectives (but probably less intuitive to understand).
+       (Contributed by NM, 30-Jan-2006.) $)
+    dfif2 $p |- if ( ph , A , B ) =
+                 { x | ( ( x e. B -> ph ) -> ( x e. A /\ ph ) ) } $=
+      ( cif cv wcel wa wn wo cab wi df-if df-or orcom iman imbi1i 3bitr4i abbii
+      eqtri ) ACDEBFZCGAHZUADGZAIHZJZBKUCALZUBLZBKABCDMUEUGBUDUBJUDIZUBLUEUGUDU
+      BNUBUDOUFUHUBUCAPQRST $.
+
+    $( An alternate definition of the conditional operator ~ df-if as a simple
+       class abstraction.  (Contributed by Mario Carneiro, 8-Sep-2013.) $)
+    dfif6 $p |- if ( ph , A , B ) =
+                 ( { x e. A | ph } u. { x e. B | -. ph } ) $=
+      ( cv wcel wa cab wn cun wo crab cif unab df-rab uneq12i df-if 3eqtr4ri )
+      BEZCFAGZBHZSDFAIZGZBHZJTUCKBHABCLZUBBDLZJACDMTUCBNUEUAUFUDABCOUBBDOPABCDQ
+      R $.
+
+    $( Equality theorem for conditional operator.  (Contributed by NM,
+       1-Sep-2004.)  (Revised by Mario Carneiro, 8-Sep-2013.) $)
+    ifeq1 $p |- ( A = B -> if ( ph , A , C ) = if ( ph , B , C ) ) $=
+      ( vx wceq crab wn cun cif rabeq uneq1d dfif6 3eqtr4g ) BCFZAEBGZAHEDGZIAE
+      CGZQIABDJACDJOPRQAEBCKLAEBDMAECDMN $.
+
+    $( Equality theorem for conditional operator.  (Contributed by NM,
+       1-Sep-2004.)  (Revised by Mario Carneiro, 8-Sep-2013.) $)
+    ifeq2 $p |- ( A = B -> if ( ph , C , A ) = if ( ph , C , B ) ) $=
+      ( vx wceq crab wn cun cif rabeq uneq2d dfif6 3eqtr4g ) BCFZAEDGZAHZEBGZIP
+      QECGZIADBJADCJORSPQEBCKLAEDBMAEDCMN $.
+
+    $( Value of the conditional operator when its first argument is true.
+       (Contributed by NM, 15-May-1999.)  (Proof shortened by Andrew Salmon,
+       26-Jun-2011.) $)
+    iftrue $p |- ( ph -> if ( ph , A , B ) = A ) $=
+      ( vx cv wcel wi wa cab cif dedlem0a abbi2dv dfif2 syl6reqr ) ABDEZCFZAGOB
+      FZAHGZDIABCJARDBAQPKLADBCMN $.
+  $}
+
+  ${
+    iftruei.1 $e |- ph $.
+    $( Inference associated with ~ iftrue .  (Contributed by BJ,
+       7-Oct-2018.) $)
+    iftruei $p |- if ( ph , A , B ) = A $=
+      ( cif wceq iftrue ax-mp ) AABCEBFDABCGH $.
+  $}
+
+  ${
+    $d x ph $.  $d x A $.  $d x B $.
+    $( Value of the conditional operator when its first argument is false.
+       (Contributed by NM, 14-Aug-1999.) $)
+    iffalse $p |- ( -. ph -> if ( ph , A , B ) = B ) $=
+      ( vx wn cv wcel wa wo cab cif dedlemb abbi2dv df-if syl6reqr ) AEZCDFZBGZ
+      AHQCGZPHIZDJABCKPTDCARSLMADBCNO $.
+  $}
+
+  ${
+    iffalsei.1 $e |- -. ph $.
+    $( Inference associated with ~ iffalse .  (Contributed by BJ,
+       7-Oct-2018.) $)
+    iffalsei $p |- if ( ph , A , B ) = B $=
+      ( wn cif wceq iffalse ax-mp ) AEABCFCGDABCHI $.
+  $}
+
+  $( When values are unequal, but an "if" condition checks if they are equal,
+     then the "false" branch results.  This is a simple utility to provide a
+     slight shortening and simplification of proofs vs. applying ~ iffalse
+     directly in this case.  It happens, e.g., in ~ oevn0 .  (Contributed by
+     David A. Wheeler, 15-May-2015.) $)
+  ifnefalse $p |- ( A =/= B -> if ( A = B , C , D ) = D ) $=
+    ( wne wceq wn cif df-ne iffalse sylbi ) ABEABFZGLCDHDFABILCDJK $.
+
+  ${
+    $d A x y $.  $d B x y $.  $d C y $.
+    ifsb.1 $e |- ( if ( ph , A , B ) = A -> C = D ) $.
+    ifsb.2 $e |- ( if ( ph , A , B ) = B -> C = E ) $.
+    $( Distribute a function over an if-clause.  (Contributed by Mario
+       Carneiro, 14-Aug-2013.) $)
+    ifsb $p |- C = if ( ph , D , E ) $=
+      ( cif wceq iftrue syl eqtr4d wn iffalse pm2.61i ) ADAEFIZJADEQAABCIZBJDEJ
+      ABCKGLAEFKMANZDFQSRCJDFJABCOHLAEFOMP $.
+  $}
+
+  ${
+    $d y A $.  $d y B $.  $d x y ph $.
+    dfif3.1 $e |- C = { x | ph } $.
+    $( Alternate definition of the conditional operator ~ df-if .  Note that
+       ` ph ` is independent of ` x ` i.e. a constant true or false.
+       (Contributed by NM, 25-Aug-2013.)  (Revised by Mario Carneiro,
+       8-Sep-2013.) $)
+    dfif3 $p |- if ( ph , A , B )
+                  = ( ( A i^i C ) u. ( B i^i ( _V \ C ) ) ) $=
+      ( vy cif crab wn cun cin cvv cdif dfif6 cab weq ineq2i dfrab3 eqtr4i
+      biidd cbvabv eqtri notab difeq2i eqtr2i uneq12i ) ACDHAGCIZAJZGDIZKCELZDM
+      ENZLZKAGCDOUKUHUMUJUKCAGPZLUHEUNCEABPUNFAABGBGQAUAUBUCZRAGCSTUJDUIGPZLUMU
+      IGDSUPULDUPMUNNULAGUDEUNMUOUETRUFUGT $.
+
+    $( Alternate definition of the conditional operator ~ df-if .  Note that
+       ` ph ` is independent of ` x ` i.e. a constant true or false.
+       (Contributed by NM, 25-Aug-2013.) $)
+    dfif4 $p |- if ( ph , A , B )
+        = ( ( A u. B ) i^i ( ( A u. ( _V \ C ) ) i^i ( B u. C ) ) ) $=
+      ( cif cin cvv cdif cun dfif3 undir undi uncom unvdif ineq12i 3eqtri inass
+      inv1 eqtri ) ACDGCEHDIEJZHZKCUCKZEUCKZHZCDKZCUBKZDEKZHHZABCDEFLCEUCMUFUGU
+      HHZUIHUJUDUKUEUICDUBNUEEDKZEUBKZHUIIHUIEDUBNULUIUMIEDOEPQUITRQUGUHUISUAR
+      $.
+
+    $( Alternate definition of the conditional operator ~ df-if .  Note that
+       ` ph ` is independent of ` x ` i.e. a constant true or false (see also
+       ~ abvor0 ).  (Contributed by G&eacute;rard Lang, 18-Aug-2013.) $)
+    dfif5 $p |- if ( ph , A , B ) = ( ( A i^i B )
+          u. ( ( ( A \ B ) i^i C ) u. ( ( B \ A ) i^i ( _V \ C ) ) ) ) $=
+      ( cun cdif undir unidm unass undi 3eqtr3ri undifabs ineq1i undif2 3eqtr4i
+      cin inabs eqtr4i cvv cif inindi dfif4 uneq1i 3eqtri uneq12i uncom 3eqtrri
+      unundi uneq2i ineq2i ineq12i ) CDGZCUAEHZGZDEGZRRUNUPRZUNUQRZRZACDUBCDRCD
+      HZERZDCHZUORZGZGZUNUPUQUCABCDEFUDVFCVEGZDVEGZRUTCDVEIURVGUSVHURCVBGZCVDGZ
+      GZVGURCCDUORZGZGZVKCCGZVLGVMVNURVOCVLCJUECCVLKCDUOLZMVICVJVMVICVAGZCEGZRC
+      VRRCCVAELVQCVRCDNOCESUFCVCGZUPRURVJVMVSUNUPCDPOCVCUOLVPQUGTCVBVDUJTCERZDG
+      ZDVBGZDVDGZGZUSVHWADGVTDDGZGWDWAVTDDKWAWBDWCWADVAGZUQRZWBDVTGDCGZUQRWAWGD
+      CELVTDUHWFWHUQDCPOQDVAELTWCDVCGZDUOGZRDWJRDDVCUOLWIDWJDCNODUOSUIUGWEDVTDJ
+      UKMUSUNEDGZRWAUQWKUNDEUHULCEDITDVBVDUJQUMTQ $.
+  $}
+
+  $( Equality theorem for conditional operators.  (Contributed by NM,
+     1-Sep-2004.) $)
+  ifeq12 $p |- ( ( A = B /\ C = D ) ->
+                if ( ph , A , C ) = if ( ph , B , D ) ) $=
+    ( wceq cif ifeq1 ifeq2 sylan9eq ) BCFDEFABDGACDGACEGABCDHADECIJ $.
+
+  ${
+    ifeq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for conditional operator.  (Contributed by NM,
+       16-Feb-2005.) $)
+    ifeq1d $p |- ( ph -> if ( ps , A , C ) = if ( ps , B , C ) ) $=
+      ( wceq cif ifeq1 syl ) ACDGBCEHBDEHGFBCDEIJ $.
+
+    $( Equality deduction for conditional operator.  (Contributed by NM,
+       16-Feb-2005.) $)
+    ifeq2d $p |- ( ph -> if ( ps , C , A ) = if ( ps , C , B ) ) $=
+      ( wceq cif ifeq2 syl ) ACDGBECHBEDHGFBCDEIJ $.
+
+    ifeq12d.2 $e |- ( ph -> C = D ) $.
+    $( Equality deduction for conditional operator.  (Contributed by NM,
+       24-Mar-2015.) $)
+    ifeq12d $p |- ( ph -> if ( ps , A , C ) = if ( ps , B , D ) ) $=
+      ( cif ifeq1d ifeq2d eqtrd ) ABCEIBDEIBDFIABCDEGJABEFDHKL $.
+  $}
+
+  $( Equivalence theorem for conditional operators.  (Contributed by Raph
+     Levien, 15-Jan-2004.) $)
+  ifbi $p |- ( ( ph <-> ps ) -> if ( ph , A , B ) = if ( ps , A , B ) ) $=
+    ( wb wa wn wo cif wceq dfbi3 iftrue eqcomd sylan9eq iffalse jaoi sylbi ) AB
+    EABFZAGZBGZFZHACDIZBCDIZJZABKRUDUAABUBCUCACDLBUCCBCDLMNSTUBDUCACDOTUCDBCDOM
+    NPQ $.
+
+  ${
+    ifbid.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equivalence deduction for conditional operators.  (Contributed by NM,
+       18-Apr-2005.) $)
+    ifbid $p |- ( ph -> if ( ps , A , B ) = if ( ch , A , B ) ) $=
+      ( wb cif wceq ifbi syl ) ABCGBDEHCDEHIFBCDEJK $.
+  $}
+
+  ${
+    ifbieq1d.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    ifbieq1d.2 $e |- ( ph -> A = B ) $.
+    $( Equivalence/equality deduction for conditional operators.  (Contributed
+       by JJ, 25-Sep-2018.) $)
+    ifbieq1d $p |- ( ph -> if ( ps , A , C ) = if ( ch , B , C ) ) $=
+      ( cif ifbid ifeq1d eqtrd ) ABDFICDFICEFIABCDFGJACDEFHKL $.
+  $}
+
+  ${
+    ifbieq2i.1 $e |- ( ph <-> ps ) $.
+    ifbieq2i.2 $e |- A = B $.
+    $( Equivalence/equality inference for conditional operators.  (Contributed
+       by Paul Chapman, 22-Jun-2011.) $)
+    ifbieq2i $p |- if ( ph , C , A ) = if ( ps , C , B ) $=
+      ( cif wb wceq ifbi ax-mp ifeq2 eqtri ) AECHZBECHZBEDHZABIOPJFABECKLCDJPQJ
+      GBCDEMLN $.
+  $}
+
+  ${
+    ifbieq2d.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    ifbieq2d.2 $e |- ( ph -> A = B ) $.
+    $( Equivalence/equality deduction for conditional operators.  (Contributed
+       by Paul Chapman, 22-Jun-2011.) $)
+    ifbieq2d $p |- ( ph -> if ( ps , C , A ) = if ( ch , C , B ) ) $=
+      ( cif ifbid ifeq2d eqtrd ) ABFDICFDICFEIABCFDGJACDEFHKL $.
+  $}
+
+  ${
+    ifbieq12i.1 $e |- ( ph <-> ps ) $.
+    ifbieq12i.2 $e |- A = C $.
+    ifbieq12i.3 $e |- B = D $.
+    $( Equivalence deduction for conditional operators.  (Contributed by NM,
+       18-Mar-2013.) $)
+    ifbieq12i $p |- if ( ph , A , B ) = if ( ps , C , D ) $=
+      ( cif wceq ifeq1 ax-mp ifbieq2i eqtri ) ACDJZAEDJZBEFJCEKPQKHACEDLMABDFEG
+      INO $.
+  $}
+
+  ${
+    ifbieq12d.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    ifbieq12d.2 $e |- ( ph -> A = C ) $.
+    ifbieq12d.3 $e |- ( ph -> B = D ) $.
+    $( Equivalence deduction for conditional operators.  (Contributed by Jeff
+       Madsen, 2-Sep-2009.) $)
+    ifbieq12d $p |- ( ph -> if ( ps , A , B ) = if ( ch , C , D ) ) $=
+      ( cif ifbid ifeq12d eqtrd ) ABDEKCDEKCFGKABCDEHLACDFEGIJMN $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y ph $.  $d y ps $.
+    nfifd.2 $e |- ( ph -> F/ x ps ) $.
+    nfifd.3 $e |- ( ph -> F/_ x A ) $.
+    nfifd.4 $e |- ( ph -> F/_ x B ) $.
+    $( Deduction version of ~ nfif .  (Contributed by NM, 15-Feb-2013.)
+       (Revised by Mario Carneiro, 13-Oct-2016.) $)
+    nfifd $p |- ( ph -> F/_ x if ( ps , A , B ) ) $=
+      ( vy cif cv wcel wi wa cab dfif2 nfv nfcrd nfimd nfand nfabd nfcxfrd ) AC
+      BDEJIKZELZBMZUCDLZBNZMZIOBIDEPAUHCIAIQAUEUGCAUDBCACIEHRFSAUFBCACIDGRFTSUA
+      UB $.
+  $}
+
+  ${
+    $d x y z $.  $d y z A $.  $d y z B $.  $d z ph $.
+    nfif.1 $e |- F/ x ph $.
+    nfif.2 $e |- F/_ x A $.
+    nfif.3 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for a conditional operator.
+       (Contributed by NM, 16-Feb-2005.)  (Proof shortened by Andrew Salmon,
+       26-Jun-2011.) $)
+    nfif $p |- F/_ x if ( ph , A , B ) $=
+      ( cif wnfc wtru wnf a1i nfifd trud ) BACDHIJABCDABKJELBCIJFLBDIJGLMN $.
+  $}
+
+  ${
+    ifeq1da.1 $e |- ( ( ph /\ ps ) -> A = B ) $.
+    $( Conditional equality.  (Contributed by Jeff Madsen, 2-Sep-2009.) $)
+    ifeq1da $p |- ( ph -> if ( ps , A , C ) = if ( ps , B , C ) ) $=
+      ( cif wceq wa ifeq1d wn iffalse eqtr4d adantl pm2.61dan ) ABBCEGZBDEGZHZA
+      BIBCDEFJBKZRASPEQBCELBDELMNO $.
+  $}
+
+  ${
+    ifeq2da.1 $e |- ( ( ph /\ -. ps ) -> A = B ) $.
+    $( Conditional equality.  (Contributed by Jeff Madsen, 2-Sep-2009.) $)
+    ifeq2da $p |- ( ph -> if ( ps , C , A ) = if ( ps , C , B ) ) $=
+      ( cif wceq iftrue eqtr4d adantl wn wa ifeq2d pm2.61dan ) ABBECGZBEDGZHZBR
+      ABPEQBECIBEDIJKABLMBCDEFNO $.
+  $}
+
+  ${
+    ifclda.1 $e |- ( ( ph /\ ps ) -> A e. C ) $.
+    ifclda.2 $e |- ( ( ph /\ -. ps ) -> B e. C ) $.
+    $( Conditional closure.  (Contributed by Jeff Madsen, 2-Sep-2009.) $)
+    ifclda $p |- ( ph -> if ( ps , A , B ) e. C ) $=
+      ( cif wcel wa wceq iftrue adantl eqeltrd wn iffalse pm2.61dan ) ABBCDHZEI
+      ABJRCEBRCKABCDLMFNABOZJRDESRDKABCDPMGNQ $.
+  $}
+
+  ${
+    ifeqda.1 $e |- ( ( ph /\ ps ) -> A = C ) $.
+    ifeqda.2 $e |- ( ( ph /\ -. ps ) -> B = C ) $.
+    $( Separation of the values of the conditional operator.  (Contributed by
+       Alexander van der Vekens, 13-Apr-2018.) $)
+    ifeqda $p |- ( ph -> if ( ps , A , B ) = C ) $=
+      ( cif wceq wa iftrue adantl eqtrd wn iffalse pm2.61dan ) ABBCDHZEIABJQCEB
+      QCIABCDKLFMABNZJQDERQDIABCDOLGMP $.
+  $}
+
+  ${
+    elimif.1 $e |- ( if ( ph , A , B ) = A -> ( ps <-> ch ) ) $.
+    elimif.2 $e |- ( if ( ph , A , B ) = B -> ( ps <-> th ) ) $.
+    $( Elimination of a conditional operator contained in a wff ` ps ` .
+       (Contributed by NM, 15-Feb-2005.)  (Proof shortened by NM,
+       25-Apr-2019.) $)
+    elimif $p |- ( ps <-> ( ( ph /\ ch ) \/ ( -. ph /\ th ) ) ) $=
+      ( cif wceq wb iftrue syl wn iffalse cases ) ABCDAAEFIZEJBCKAEFLGMANQFJBDK
+      AEFOHMP $.
+  $}
+
+  ${
+    ifboth.1 $e |- ( A = if ( ph , A , B ) -> ( ps <-> th ) ) $.
+    ifboth.2 $e |- ( B = if ( ph , A , B ) -> ( ch <-> th ) ) $.
+    ${
+      ifbothda.3 $e |- ( ( et /\ ph ) -> ps ) $.
+      ifbothda.4 $e |- ( ( et /\ -. ph ) -> ch ) $.
+      $( A wff ` th ` containing a conditional operator is true when both of
+         its cases are true.  (Contributed by NM, 15-Feb-2015.) $)
+      ifbothda $p |- ( et -> th ) $=
+        ( wa wb cif wceq iftrue eqcomd syl adantl mpbid wn iffalse pm2.61dan )
+        EADEALBDJABDMZEAFAFGNZOUDAUEFAFGPQHRSTEAUAZLCDKUFCDMZEUFGUEOUGUFUEGAFGU
+        BQIRSTUC $.
+    $}
+
+    $( A wff ` th ` containing a conditional operator is true when both of its
+       cases are true.  (Contributed by NM, 3-Sep-2006.)  (Revised by Mario
+       Carneiro, 15-Feb-2015.) $)
+    ifboth $p |- ( ( ps /\ ch ) -> th ) $=
+      ( wa simpll wn simplr ifbothda ) ABCDBCIEFGHBCAJBCAKLM $.
+  $}
+
+  $( Identical true and false arguments in the conditional operator.
+     (Contributed by NM, 18-Apr-2005.) $)
+  ifid $p |- if ( ph , A , A ) = A $=
+    ( cif wceq iftrue iffalse pm2.61i ) AABBCBDABBEABBFG $.
+
+  $( Expansion of an equality with a conditional operator.  (Contributed by NM,
+     14-Feb-2005.) $)
+  eqif $p |- ( A = if ( ph , B , C ) <->
+             ( ( ph /\ A = B ) \/ ( -. ph /\ A = C ) ) ) $=
+    ( cif wceq eqeq2 elimif ) ABACDEZFBCFBDFCDICBGIDBGH $.
+
+  $( Another expression of the value of the ` if ` predicate, analogous to
+     ~ eqif .  See also the more specialized ~ iftrue and ~ iffalse .
+     (Contributed by BJ, 6-Apr-2019.) $)
+  ifval $p |- ( A = if ( ph , B , C )
+                             <-> ( ( ph -> A = B ) /\ ( -. ph -> A = C ) ) ) $=
+    ( cif wceq wa wn wo wi eqif cases2 bitri ) BACDEFABCFZGAHZBDFZGIANJOPJGABCD
+    KANPLM $.
+
+  $( Membership in a conditional operator.  (Contributed by NM,
+     14-Feb-2005.) $)
+  elif $p |- ( A e. if ( ph , B , C ) <->
+             ( ( ph /\ A e. B ) \/ ( -. ph /\ A e. C ) ) ) $=
+    ( cif wcel eleq2 elimif ) ABACDEZFBCFBDFCDICBGIDBGH $.
+
+  $( Membership of a conditional operator.  (Contributed by NM,
+     10-Sep-2005.) $)
+  ifel $p |- ( if ( ph , A , B ) e. C <->
+             ( ( ph /\ A e. C ) \/ ( -. ph /\ B e. C ) ) ) $=
+    ( cif wcel eleq1 elimif ) AABCEZDFBDFCDFBCIBDGICDGH $.
+
+  $( Membership (closure) of a conditional operator.  (Contributed by NM,
+     4-Apr-2005.) $)
+  ifcl $p |- ( ( A e. C /\ B e. C ) -> if ( ph , A , B ) e. C ) $=
+    ( wcel cif eleq1 ifboth ) ABDECDEABCFZDEBCBIDGCIDGH $.
+
+  ${
+    ifcld.a $e |- ( ph -> A e. C ) $.
+    ifcld.b $e |- ( ph -> B e. C ) $.
+    $( Membership (closure) of a conditional operator, deduction form.
+       (Contributed by SO, 16-Jul-2018.) $)
+    ifcld $p |- ( ph -> if ( ps , A , B ) e. C ) $=
+      ( wcel cif ifcl syl2anc ) ACEHDEHBCDIEHFGBCDEJK $.
+  $}
+
+  $( The possible values of a conditional operator.  (Contributed by NM,
+     17-Jun-2007.)  (Proof shortened by Andrew Salmon, 26-Jun-2011.) $)
+  ifeqor $p |- ( if ( ph , A , B ) = A \/ if ( ph , A , B ) = B ) $=
+    ( cif wceq wn iftrue con3i iffalse syl orri ) ABCDZBEZLCEZMFAFNAMABCGHABCIJ
+    K $.
+
+  $( Negating the first argument swaps the last two arguments of a conditional
+     operator.  (Contributed by NM, 21-Jun-2007.) $)
+  ifnot $p |- if ( -. ph , A , B ) = if ( ph , B , A ) $=
+    ( wn cif wceq notnot1 iffalse syl iftrue eqtr4d pm2.61i ) AADZBCEZACBEZFANC
+    OAMDNCFAGMBCHIACBJKMNBOMBCJACBHKL $.
+
+  $( Rewrite a conjunction in an if statement as two nested conditionals.
+     (Contributed by Mario Carneiro, 28-Jul-2014.) $)
+  ifan $p |- if ( ( ph /\ ps ) , A , B ) = if ( ph , if ( ps , A , B ) , B ) $=
+    ( wa cif wceq iftrue ifbid eqtr2d wn simpl con3i iffalse syl eqtr4d pm2.61i
+    ibar ) AABEZCDFZABCDFZDFZGAUBUATAUADHABSCDABRIJAKZTDUBUCSKTDGSAABLMSCDNOAUA
+    DNPQ $.
+
+  $( Rewrite a disjunction in an if statement as two nested conditionals.
+     (Contributed by Mario Carneiro, 28-Jul-2014.) $)
+  ifor $p |- if ( ( ph \/ ps ) , A , B ) = if ( ph , A , if ( ps , A , B ) ) $=
+    ( wo cif wceq iftrue orcs eqtr4d wn iffalse biorf ifbid eqtr2d pm2.61i ) AA
+    BEZCDFZACBCDFZFZGARCTABRCGQCDHIACSHJAKZTSRACSLUABQCDABMNOP $.
+
+  ${
+    2if2.1 $e |- ( ( ph /\ ps ) -> D = A ) $.
+    2if2.2 $e |- ( ( ph /\ -. ps /\ th ) -> D = B ) $.
+    2if2.3 $e |- ( ( ph /\ -. ps /\ -. th ) -> D = C ) $.
+    $( Resolve two nested conditionals.  (Contributed by Alexander van der
+       Vekens, 27-Mar-2018.) $)
+    2if2 $p |- ( ph -> D = if ( ps , A , if ( th , B , C ) ) ) $=
+      ( cif wceq wa iftrue adantl eqtr4d wn 3expa iffalse pm2.61dan eqcomd
+      eqtrd ) ABGBDCEFKZKZLABMGDUDHBUDDLABDUCNOPABQZMZGUCUDUFCGUCLUFCMGEUCAUECG
+      ELIRCUCELUFCEFNOPUFCQZMGFUCAUEUGGFLJRUGFUCLUFUGUCFCEFSUAOUBTUEUDUCLABDUCS
+      OPT $.
+  $}
+
+  $( Commute the conditions in two nested conditionals if both conditions are
+     not simultaneously true.  (Contributed by SO, 15-Jul-2018.) $)
+  ifcomnan $p |- ( -. ( ph /\ ps ) -> if ( ph , A , if ( ps , B , C ) ) =
+      if ( ps , B , if ( ph , A , C ) ) ) $=
+    ( wa wn wo cif wceq pm3.13 iffalse ifeq2d eqtr4d jaoi syl ) ABFGAGZBGZHACBD
+    EIZIZBDACEIZIZJZABKQUCRQTSUBACSLQBUAEDACELMNRTUAUBRASECBDELMBDUALNOP $.
+
+  ${
+    $d y A $.  $d y z B $.  $d y z C $.  $d y z ph $.  $d x y z $.
+    $( Distribute proper substitution through the conditional operator.
+       (Contributed by NM, 24-Feb-2013.)  (Revised by NM, 19-Aug-2018.) $)
+    csbif $p |- [_ A / x ]_ if ( ph , B , C )
+          = if ( [. A / x ]. ph , [_ A / x ]_ B , [_ A / x ]_ C ) $=
+      ( vy cvv wcel cif csb wsbc cv wsb csbeq1 ifbieq12d nfcsb1v csbeq1a csbprc
+      wceq c0 dfsbcq2 eqeq12d vex nfs1v nfif sbequ12 csbief vtoclg ifeq12d ifid
+      weq wn syl6req eqtrd pm2.61i ) CGHZBCADEIZJZABCKZBCDJZBCEJZIZSZBFLZUQJZAB
+      FMZBVDDJZBVDEJZIZSVCFCGVDCSZVEURVIVBBVDCUQNVJVFUSVGVHUTVAABFCUABVDCDNBVDC
+      ENOUBBVDUQVIFUCVFBVGVHABFUDBVDDPBVDEPUEBFUKAVFDEVGVHABFUFBVDDQBVDEQOUGUHU
+      PULZURTVBBCUQRVKVBUSTTITVKUSUTTVATBCDRBCERUIUSTUJUMUNUO $.
+
+    $( Distribute proper substitution through the conditional operator.
+       (Contributed by NM, 24-Feb-2013.)  (Revised by Mario Carneiro,
+       14-Nov-2016.)  Obsolete as of 19-Aug-2018.  Use ~ csbif instead.
+       (New usage is discouraged.)  (Proof modification is discouraged.) $)
+    csbifgOLD $p |- ( A e. V -> [_ A / x ]_ if ( ph , B , C )
+          = if ( [. A / x ]. ph , [_ A / x ]_ B , [_ A / x ]_ C ) ) $=
+      ( vy cv cif csb wsb wceq csbeq1 dfsbcq2 ifbieq12d eqeq12d nfcsb1v csbeq1a
+      wsbc vex nfs1v nfif weq sbequ12 csbief vtoclg ) BGHZADEIZJZABGKZBUGDJZBUG
+      EJZIZLBCUHJZABCSZBCDJZBCEJZIZLGCFUGCLZUIUNUMURBUGCUHMUSUJUOUKULUPUQABGCNB
+      UGCDMBUGCEMOPBUGUHUMGTUJBUKULABGUABUGDQBUGEQUBBGUCAUJDEUKULABGUDBUGDRBUGE
+      ROUEUF $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.  $d x ph $.
+    dedth.1 $e |- ( A = if ( ph , A , B ) -> ( ps <-> ch ) ) $.
+    dedth.2 $e |- ch $.
+    $( Weak deduction theorem that eliminates a hypothesis ` ph ` , making it
+       become an antecedent.  We assume that a proof exists for ` ph ` when the
+       class variable ` A ` is replaced with a specific class ` B ` .  The
+       hypothesis ` ch ` should be assigned to the inference, and the
+       inference's hypothesis eliminated with ~ elimhyp .  If the inference has
+       other hypotheses with class variable ` A ` , these can be kept by
+       assigning ~ keephyp to them.  For more information, see the Deduction
+       Theorem ~ http://us.metamath.org/mpeuni/mmdeduction.html .  (Contributed
+       by NM, 15-May-1999.) $)
+    dedth $p |- ( ph -> ps ) $=
+      ( cif wceq wb iftrue eqcomd syl mpbiri ) ABCGADADEHZIBCJAODADEKLFMN $.
+  $}
+
+  ${
+    dedth2h.1 $e |- ( A = if ( ph , A , C ) -> ( ch <-> th ) ) $.
+    dedth2h.2 $e |- ( B = if ( ps , B , D ) -> ( th <-> ta ) ) $.
+    dedth2h.3 $e |- ta $.
+    $( Weak deduction theorem eliminating two hypotheses.  This theorem is
+       simpler to use than ~ dedth2v but requires that each hypothesis has
+       exactly one class variable.  See also comments in ~ dedth .
+       (Contributed by NM, 15-May-1999.) $)
+    dedth2h $p |- ( ( ph /\ ps ) -> ch ) $=
+      ( wi cif wceq imbi2d dedth imp ) ABCABCMBDMFHFAFHNOCDBJPBDEGIKLQQR $.
+  $}
+
+  ${
+    dedth3h.1 $e |- ( A = if ( ph , A , D ) -> ( th <-> ta ) ) $.
+    dedth3h.2 $e |- ( B = if ( ps , B , R ) -> ( ta <-> et ) ) $.
+    dedth3h.3 $e |- ( C = if ( ch , C , S ) -> ( et <-> ze ) ) $.
+    dedth3h.4 $e |- ze $.
+    $( Weak deduction theorem eliminating three hypotheses.  See comments in
+       ~ dedth2h .  (Contributed by NM, 15-May-1999.) $)
+    dedth3h $p |- ( ( ph /\ ps /\ ch ) -> th ) $=
+      ( wa wi cif wceq imbi2d dedth2h dedth 3impib ) ABCDABCRZDSUFESHKHAHKTUADE
+      UFNUBBCEFGIJLMOPQUCUDUE $.
+  $}
+
+  ${
+    dedth4h.1 $e |- ( A = if ( ph , A , R ) -> ( ta <-> et ) ) $.
+    dedth4h.2 $e |- ( B = if ( ps , B , S ) -> ( et <-> ze ) ) $.
+    dedth4h.3 $e |- ( C = if ( ch , C , F ) -> ( ze <-> si ) ) $.
+    dedth4h.4 $e |- ( D = if ( th , D , G ) -> ( si <-> rh ) ) $.
+    dedth4h.5 $e |- rh $.
+    $( Weak deduction theorem eliminating four hypotheses.  See comments in
+       ~ dedth2h .  (Contributed by NM, 16-May-1999.) $)
+    dedth4h $p |- ( ( ( ph /\ ps ) /\ ( ch /\ th ) ) -> ta ) $=
+      ( wa wi cif wceq imbi2d dedth2h imp ) ABUCCDUCZEABUJEUDUJFUDUJGUDJKNOJAJN
+      UEUFEFUJRUGKBKOUEUFFGUJSUGCDGHILMPQTUAUBUHUHUI $.
+  $}
+
+  ${
+    dedth2v.1 $e |- ( A = if ( ph , A , C ) -> ( ps <-> ch ) ) $.
+    dedth2v.2 $e |- ( B = if ( ph , B , D ) -> ( ch <-> th ) ) $.
+    dedth2v.3 $e |- th $.
+    $( Weak deduction theorem for eliminating a hypothesis with 2 class
+       variables.  Note: if the hypothesis can be separated into two
+       hypotheses, each with one class variable, then ~ dedth2h is simpler to
+       use.  See also comments in ~ dedth .  (Contributed by NM, 13-Aug-1999.)
+       (Proof shortened by Eric Schmidt, 28-Jul-2009.) $)
+    dedth2v $p |- ( ph -> ps ) $=
+      ( dedth2h anidms ) ABAABCDEFGHIJKLM $.
+  $}
+
+  ${
+    dedth3v.1 $e |- ( A = if ( ph , A , D ) -> ( ps <-> ch ) ) $.
+    dedth3v.2 $e |- ( B = if ( ph , B , R ) -> ( ch <-> th ) ) $.
+    dedth3v.3 $e |- ( C = if ( ph , C , S ) -> ( th <-> ta ) ) $.
+    dedth3v.4 $e |- ta $.
+    $( Weak deduction theorem for eliminating a hypothesis with 3 class
+       variables.  See comments in ~ dedth2v .  (Contributed by NM,
+       13-Aug-1999.)  (Proof shortened by Eric Schmidt, 28-Jul-2009.) $)
+    dedth3v $p |- ( ph -> ps ) $=
+      ( dedth3h 3anidm12 anidms ) ABAABAAABCDEFGHIJKLMNOPQR $.
+  $}
+
+  ${
+    dedth4v.1 $e |- ( A = if ( ph , A , R ) -> ( ps <-> ch ) ) $.
+    dedth4v.2 $e |- ( B = if ( ph , B , S ) -> ( ch <-> th ) ) $.
+    dedth4v.3 $e |- ( C = if ( ph , C , T ) -> ( th <-> ta ) ) $.
+    dedth4v.4 $e |- ( D = if ( ph , D , U ) -> ( ta <-> et ) ) $.
+    dedth4v.5 $e |- et $.
+    $( Weak deduction theorem for eliminating a hypothesis with 4 class
+       variables.  See comments in ~ dedth2v .  (Contributed by NM,
+       21-Apr-2007.)  (Proof shortened by Eric Schmidt, 28-Jul-2009.) $)
+    dedth4v $p |- ( ph -> ps ) $=
+      ( anidms wa dedth4h ) ABAAUABAAAABCDEFGHIJKLMNOPQRSUBTT $.
+  $}
+
+  ${
+    elimhyp.1 $e |- ( A = if ( ph , A , B ) -> ( ph <-> ps ) ) $.
+    elimhyp.2 $e |- ( B = if ( ph , A , B ) -> ( ch <-> ps ) ) $.
+    elimhyp.3 $e |- ch $.
+    $( Eliminate a hypothesis containing class variable ` A ` when it is known
+       for a specific class ` B ` .  For more information, see comments in
+       ~ dedth .  (Contributed by NM, 15-May-1999.) $)
+    elimhyp $p |- ps $=
+      ( cif wceq wb iftrue eqcomd syl ibi wn iffalse mpbii pm2.61i ) ABABADADEI
+      ZJABKATDADELMFNOAPZCBHUAETJCBKUATEADEQMGNRS $.
+  $}
+
+  ${
+    elimhyp2v.1 $e |- ( A = if ( ph , A , C ) -> ( ph <-> ch ) ) $.
+    elimhyp2v.2 $e |- ( B = if ( ph , B , D ) -> ( ch <-> th ) ) $.
+    elimhyp2v.3 $e |- ( C = if ( ph , A , C ) -> ( ta <-> et ) ) $.
+    elimhyp2v.4 $e |- ( D = if ( ph , B , D ) -> ( et <-> th ) ) $.
+    elimhyp2v.5 $e |- ta $.
+    $( Eliminate a hypothesis containing 2 class variables.  (Contributed by
+       NM, 14-Aug-1999.) $)
+    elimhyp2v $p |- th $=
+      ( cif wceq wb iftrue eqcomd syl bitrd ibi wn iffalse mpbii pm2.61i ) ACAC
+      AABCAFAFHOZPABQAUGFAFHRSJTAGAGIOZPBCQAUHGAGIRSKTUAUBAUCZDCNUIDECUIHUGPDEQ
+      UIUGHAFHUDSLTUIIUHPECQUIUHIAGIUDSMTUAUEUF $.
+  $}
+
+  ${
+    elimhyp3v.1 $e |- ( A = if ( ph , A , D ) -> ( ph <-> ch ) ) $.
+    elimhyp3v.2 $e |- ( B = if ( ph , B , R ) -> ( ch <-> th ) ) $.
+    elimhyp3v.3 $e |- ( C = if ( ph , C , S ) -> ( th <-> ta ) ) $.
+    elimhyp3v.4 $e |- ( D = if ( ph , A , D ) -> ( et <-> ze ) ) $.
+    elimhyp3v.5 $e |- ( R = if ( ph , B , R ) -> ( ze <-> si ) ) $.
+    elimhyp3v.6 $e |- ( S = if ( ph , C , S ) -> ( si <-> ta ) ) $.
+    elimhyp3v.7 $e |- et $.
+    $( Eliminate a hypothesis containing 3 class variables.  (Contributed by
+       NM, 14-Aug-1999.) $)
+    elimhyp3v $p |- ta $=
+      ( cif wceq wb iftrue eqcomd syl 3bitrd ibi wn iffalse mpbii pm2.61i ) ADA
+      DAABCDAHAHKUAZUBABUCAUMHAHKUDUENUFAIAILUAZUBBCUCAUNIAILUDUEOUFAJAJMUAZUBC
+      DUCAUOJAJMUDUEPUFUGUHAUIZEDTUPEFGDUPKUMUBEFUCUPUMKAHKUJUEQUFUPLUNUBFGUCUP
+      UNLAILUJUERUFUPMUOUBGDUCUPUOMAJMUJUESUFUGUKUL $.
+  $}
+
+  ${
+    elimhyp4v.1 $e |- ( A = if ( ph , A , D ) -> ( ph <-> ch ) ) $.
+    elimhyp4v.2 $e |- ( B = if ( ph , B , R ) -> ( ch <-> th ) ) $.
+    elimhyp4v.3 $e |- ( C = if ( ph , C , S ) -> ( th <-> ta ) ) $.
+    elimhyp4v.4 $e |- ( F = if ( ph , F , G ) -> ( ta <-> ps ) ) $.
+    elimhyp4v.5 $e |- ( D = if ( ph , A , D ) -> ( et <-> ze ) ) $.
+    elimhyp4v.6 $e |- ( R = if ( ph , B , R ) -> ( ze <-> si ) ) $.
+    elimhyp4v.7 $e |- ( S = if ( ph , C , S ) -> ( si <-> rh ) ) $.
+    elimhyp4v.8 $e |- ( G = if ( ph , F , G ) -> ( rh <-> ps ) ) $.
+    elimhyp4v.9 $e |- et $.
+    $( Eliminate a hypothesis containing 4 class variables (for use with the
+       weak deduction theorem ~ dedth ).  (Contributed by NM, 16-Apr-2005.) $)
+    elimhyp4v $p |- ps $=
+      ( cif wceq wb iftrue eqcomd syl bitrd 3bitrd ibi wn iffalse mpbii pm2.61i
+      ) ABABAADEBAACDAJAJMUGZUHACUIAUTJAJMUJUKRULAKAKNUGZUHCDUIAVAKAKNUJUKSULUM
+      ALALOUGZUHDEUIAVBLALOUJUKTULAPAPQUGZUHEBUIAVCPAPQUJUKUAULUNUOAUPZFBUFVDFH
+      IBVDFGHVDMUTUHFGUIVDUTMAJMUQUKUBULVDNVAUHGHUIVDVANAKNUQUKUCULUMVDOVBUHHIU
+      IVDVBOALOUQUKUDULVDQVCUHIBUIVDVCQAPQUQUKUEULUNURUS $.
+  $}
+
+  ${
+    elimel.1 $e |- B e. C $.
+    $( Eliminate a membership hypothesis for weak deduction theorem, when
+       special case ` B e. C ` is provable.  (Contributed by NM,
+       15-May-1999.) $)
+    elimel $p |- if ( A e. C , A , B ) e. C $=
+      ( wcel cif eleq1 elimhyp ) ACEZIABFZCEBCEABAJCGBJCGDH $.
+  $}
+
+  ${
+    elimdhyp.1 $e |- ( ph -> ps ) $.
+    elimdhyp.2 $e |- ( A = if ( ph , A , B ) -> ( ps <-> ch ) ) $.
+    elimdhyp.3 $e |- ( B = if ( ph , A , B ) -> ( th <-> ch ) ) $.
+    elimdhyp.4 $e |- th $.
+    $( Version of ~ elimhyp where the hypothesis is deduced from the final
+       antecedent.  See ~ ghomgrplem for an example of its use.  (Contributed
+       by Paul Chapman, 25-Mar-2008.) $)
+    elimdhyp $p |- ch $=
+      ( cif wceq wb iftrue eqcomd syl mpbid wn iffalse mpbii pm2.61i ) ACABCGAE
+      AEFKZLBCMAUBEAEFNOHPQARZDCJUCFUBLDCMUCUBFAEFSOIPTUA $.
+  $}
+
+  ${
+    keephyp.1 $e |- ( A = if ( ph , A , B ) -> ( ps <-> th ) ) $.
+    keephyp.2 $e |- ( B = if ( ph , A , B ) -> ( ch <-> th ) ) $.
+    keephyp.3 $e |- ps $.
+    keephyp.4 $e |- ch $.
+    $( Transform a hypothesis ` ps ` that we want to keep (but contains the
+       same class variable ` A ` used in the eliminated hypothesis) for use
+       with the weak deduction theorem.  (Contributed by NM, 15-May-1999.) $)
+    keephyp $p |- th $=
+      ( ifboth mp2an ) BCDIJABCDEFGHKL $.
+  $}
+
+  ${
+    keephyp2v.1 $e |- ( A = if ( ph , A , C ) -> ( ps <-> ch ) ) $.
+    keephyp2v.2 $e |- ( B = if ( ph , B , D ) -> ( ch <-> th ) ) $.
+    keephyp2v.3 $e |- ( C = if ( ph , A , C ) -> ( ta <-> et ) ) $.
+    keephyp2v.4 $e |- ( D = if ( ph , B , D ) -> ( et <-> th ) ) $.
+    keephyp2v.5 $e |- ps $.
+    keephyp2v.6 $e |- ta $.
+    $( Keep a hypothesis containing 2 class variables (for use with the weak
+       deduction theorem ~ dedth ).  (Contributed by NM, 16-Apr-2005.) $)
+    keephyp2v $p |- th $=
+      ( wceq wb eqcomd syl cif iftrue bitrd mpbii wn iffalse pm2.61i ) ADABDOAB
+      CDAGAGIUAZQBCRAUHGAGIUBSKTAHAHJUAZQCDRAUIHAHJUBSLTUCUDAUEZEDPUJEFDUJIUHQE
+      FRUJUHIAGIUFSMTUJJUIQFDRUJUIJAHJUFSNTUCUDUG $.
+  $}
+
+  ${
+    keephyp3v.1 $e |- ( A = if ( ph , A , D ) -> ( rh <-> ch ) ) $.
+    keephyp3v.2 $e |- ( B = if ( ph , B , R ) -> ( ch <-> th ) ) $.
+    keephyp3v.3 $e |- ( C = if ( ph , C , S ) -> ( th <-> ta ) ) $.
+    keephyp3v.4 $e |- ( D = if ( ph , A , D ) -> ( et <-> ze ) ) $.
+    keephyp3v.5 $e |- ( R = if ( ph , B , R ) -> ( ze <-> si ) ) $.
+    keephyp3v.6 $e |- ( S = if ( ph , C , S ) -> ( si <-> ta ) ) $.
+    keephyp3v.7 $e |- rh $.
+    keephyp3v.8 $e |- et $.
+    $( Keep a hypothesis containing 3 class variables.  (Contributed by NM,
+       27-Sep-1999.) $)
+    keephyp3v $p |- ta $=
+      ( cif wceq wb iftrue eqcomd syl 3bitrd mpbii wn iffalse pm2.61i ) ADAHDUA
+      AHBCDAIAILUCZUDHBUEAUNIAILUFUGOUHAJAJMUCZUDBCUEAUOJAJMUFUGPUHAKAKNUCZUDCD
+      UEAUPKAKNUFUGQUHUIUJAUKZEDUBUQEFGDUQLUNUDEFUEUQUNLAILULUGRUHUQMUOUDFGUEUQ
+      UOMAJMULUGSUHUQNUPUDGDUEUQUPNAKNULUGTUHUIUJUM $.
+  $}
+
+  ${
+    keepel.1 $e |- A e. C $.
+    keepel.2 $e |- B e. C $.
+    $( Keep a membership hypothesis for weak deduction theorem, when special
+       case ` B e. C ` is provable.  (Contributed by NM, 14-Aug-1999.) $)
+    keepel $p |- if ( ph , A , B ) e. C $=
+      ( wcel cif eleq1 keephyp ) ABDGCDGABCHZDGBCBKDICKDIEFJ $.
+  $}
+
+  ${
+    dedex.1 $e |- A e. _V $.
+    dedex.2 $e |- B e. _V $.
+    $( Conditional operator existence.  (Contributed by NM, 2-Sep-2004.) $)
+    ifex $p |- if ( ph , A , B ) e. _V $=
+      ( cvv keepel ) ABCFDEG $.
+  $}
+
+  ${
+    $d A x y $.  $d B y $.  $d ph x y $.
+    $( Conditional operator existence.  (Contributed by NM, 21-Mar-2011.) $)
+    ifexg $p |- ( ( A e. V /\ B e. W ) -> if ( ph , A , B ) e. _V ) $=
+      ( vx vy cv cif cvv wcel wceq ifeq1 eleq1d ifeq2 vex ifex vtocl2g ) AFHZGH
+      ZIZJKABTIZJKABCIZJKFGBCDESBLUAUBJASBTMNTCLUBUCJATCBONASTFPGPQR $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                           Power classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -60338,6 +61108,9 @@ htmldef "(/)" as
     /*althtmldef "(/)" as '&#8960;';*/
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "(/)" as "\varnothing";
+htmldef "if" as "<IMG SRC='_if.gif' WIDTH=11 HEIGHT=19 ALT=' if' TITLE='if'>";
+  althtmldef "if" as 'if';
+  latexdef "if" as "{\rm if}";
 htmldef "," as "<IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=' ,' TITLE=','> ";
   althtmldef "," as ', ';
   latexdef "," as ",";
