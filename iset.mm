@@ -28856,8 +28856,8 @@ $)
        (Contributed by NM, 15-May-1999.)  (Proof shortened by Andrew Salmon,
        26-Jun-2011.) $)
     iftrue $p |- ( ph -> if ( ph , A , B ) = A ) $=
-      ( vx cv wcel wi wa cab cif dedlem0a abbi2dv dfif2 syl6reqr ) ABDEZCFZAGOB
-      FZAHGZDIABCJARDBAQPKLADBCMN $.
+      ( vx cv wcel wa wn wo cab cif dedlema abbi2dv df-if syl6reqr ) ABDEZBFZAG
+      PCFZAHGIZDJABCKASDBAQRLMADBCNO $.
   $}
 
   ${
