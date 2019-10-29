@@ -6978,6 +6978,24 @@ $)
       ( wa wn simpr pm2.24i pm5.21ni ) CBEBAFCBGABDHI $.
   $}
 
+  $( Alternate version of ~ dedlema .  (Contributed by NM, 2-Apr-1994.)  (Proof
+     shortened by Andrew Salmon, 7-May-2011.)  (Proof shortened by Wolf Lammen,
+     4-Dec-2012.) $)
+  dedlem0a $p |- ( ph -> ( ps <-> ( ( ch -> ph ) -> ( ps /\ ph ) ) ) ) $=
+    ( wa wi iba wb ax-1 biimt syl bitrd ) ABBADZCAEZLEZABFAMLNGACHMLIJK $.
+
+  $( Lemma for ~ iftrue .  (Contributed by NM, 26-Jun-2002.)  (Proof shortened
+     by Andrew Salmon, 7-May-2011.) $)
+  dedlema $p |- ( ph -> ( ps <-> ( ( ps /\ ph ) \/ ( ch /\ -. ph ) ) ) ) $=
+    ( wa wn wo orc expcom wi simpl a1i pm2.24 adantld jaod impbid ) ABBADZCAEZD
+    ZFZBASPRGHAPBRPBIABAJKAQBCABLMNO $.
+
+  $( Lemma for ~ iffalse .  (Contributed by NM, 15-May-1999.)  (Proof shortened
+     by Andrew Salmon, 7-May-2011.) $)
+  dedlemb $p |- ( -. ph -> ( ch <-> ( ( ps /\ ph ) \/ ( ch /\ -. ph ) ) ) ) $=
+    ( wn wa wo olc expcom pm2.21 adantld wi simpl a1i jaod impbid ) ADZCBAEZCPE
+    ZFZCPSRQGHPQCRPACBACIJRCKPCPLMNO $.
+
   $( One direction of Theorem *4.42 of [WhiteheadRussell] p. 119.  (Contributed
      by Jim Kingdon, 4-Aug-2018.) $)
   pm4.42r $p |- ( ( ( ph /\ ps ) \/ ( ph /\ -. ps ) ) -> ph ) $=
