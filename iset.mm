@@ -28906,31 +28906,6 @@ $)
       biidd cbvabv eqtri notab difeq2i eqtr2i uneq12i ) ACDHAGCIZAJZGDIZKCELZDM
       ENZLZKAGCDOUKUHUMUJUKCAGPZLUHEUNCEABPUNFAABGBGQAUAUBUCZRAGCSTUJDUIGPZLUMU
       IGDSUPULDUPMUNNULAGUDEUNMUOUETRUFUGT $.
-
-    $( Alternate definition of the conditional operator ~ df-if .  Note that
-       ` ph ` is independent of ` x ` i.e. a constant true or false.
-       (Contributed by NM, 25-Aug-2013.) $)
-    dfif4 $p |- if ( ph , A , B )
-        = ( ( A u. B ) i^i ( ( A u. ( _V \ C ) ) i^i ( B u. C ) ) ) $=
-      ( cif cin cvv cdif cun dfif3 undir undi uncom unvdif ineq12i 3eqtri inass
-      inv1 eqtri ) ACDGCEHDIEJZHZKCUCKZEUCKZHZCDKZCUBKZDEKZHHZABCDEFLCEUCMUFUGU
-      HHZUIHUJUDUKUEUICDUBNUEEDKZEUBKZHUIIHUIEDUBNULUIUMIEDOEPQUITRQUGUHUISUAR
-      $.
-
-    $( Alternate definition of the conditional operator ~ df-if .  Note that
-       ` ph ` is independent of ` x ` i.e. a constant true or false (see also
-       ~ abvor0 ).  (Contributed by G&eacute;rard Lang, 18-Aug-2013.) $)
-    dfif5 $p |- if ( ph , A , B ) = ( ( A i^i B )
-          u. ( ( ( A \ B ) i^i C ) u. ( ( B \ A ) i^i ( _V \ C ) ) ) ) $=
-      ( cun cdif undir unidm unass undi 3eqtr3ri undifabs ineq1i undif2 3eqtr4i
-      cin inabs eqtr4i cvv cif inindi dfif4 uneq1i 3eqtri uneq12i uncom 3eqtrri
-      unundi uneq2i ineq2i ineq12i ) CDGZCUAEHZGZDEGZRRUNUPRZUNUQRZRZACDUBCDRCD
-      HZERZDCHZUORZGZGZUNUPUQUCABCDEFUDVFCVEGZDVEGZRUTCDVEIURVGUSVHURCVBGZCVDGZ
-      GZVGURCCDUORZGZGZVKCCGZVLGVMVNURVOCVLCJUECCVLKCDUOLZMVICVJVMVICVAGZCEGZRC
-      VRRCCVAELVQCVRCDNOCESUFCVCGZUPRURVJVMVSUNUPCDPOCVCUOLVPQUGTCVBVDUJTCERZDG
-      ZDVBGZDVDGZGZUSVHWADGVTDDGZGWDWAVTDDKWAWBDWCWADVAGZUQRZWBDVTGDCGZUQRWAWGD
-      CELVTDUHWFWHUQDCPOQDVAELTWCDVCGZDUOGZRDWJRDDVCUOLWIDWJDCNODUOSUIUGWEDVTDJ
-      UKMUSUNEDGZRWAUQWKUNDEUHULCEDITDVBVDUJQUMTQ $.
   $}
 
   $( Equality theorem for conditional operators.  (Contributed by NM,
