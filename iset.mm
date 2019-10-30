@@ -36033,10 +36033,10 @@ $)
 
   $( An unordered triple of classes exists.  (Contributed by NM,
      10-Apr-1994.) $)
-  tpexg $p |- ( ( A e. _V /\ B e. _V /\ C e. _V ) -> { A , B , C } e. _V ) $=
-    ( cvv wcel w3a ctp cpr csn cun df-tp wa prexg snexg anim12i 3impa unexg syl
-    syl5eqel ) ADEZBDEZCDEZFZABCGABHZCIZJZDABCKUCUDDEZUEDEZLZUFDETUAUBUITUALUGU
-    BUHABDDMCDNOPUDUEDDQRS $.
+  tpexg $p |- ( ( A e. U /\ B e. V /\ C e. W ) -> { A , B , C } e. _V ) $=
+    ( wcel w3a ctp cpr csn cun cvv df-tp wa prexg snexg anim12i 3impa unexg syl
+    syl5eqel ) ADGZBEGZCFGZHZABCIABJZCKZLZMABCNUFUGMGZUHMGZOZUIMGUCUDUEULUCUDOU
+    JUEUKABDEPCFQRSUGUHMMTUAUB $.
 
   ${
     $d x A $.  $d x B $.
