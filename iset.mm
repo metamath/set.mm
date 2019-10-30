@@ -29038,22 +29038,6 @@ $)
   $}
 
   ${
-    ifeq1da.1 $e |- ( ( ph /\ ps ) -> A = B ) $.
-    $( Conditional equality.  (Contributed by Jeff Madsen, 2-Sep-2009.) $)
-    ifeq1da $p |- ( ph -> if ( ps , A , C ) = if ( ps , B , C ) ) $=
-      ( cif wceq wa ifeq1d wn iffalse eqtr4d adantl pm2.61dan ) ABBCEGZBDEGZHZA
-      BIBCDEFJBKZRASPEQBCELBDELMNO $.
-  $}
-
-  ${
-    ifeq2da.1 $e |- ( ( ph /\ -. ps ) -> A = B ) $.
-    $( Conditional equality.  (Contributed by Jeff Madsen, 2-Sep-2009.) $)
-    ifeq2da $p |- ( ph -> if ( ps , C , A ) = if ( ps , C , B ) ) $=
-      ( cif wceq iftrue eqtr4d adantl wn wa ifeq2d pm2.61dan ) ABBECGZBEDGZHZBR
-      ABPEQBECIBEDIJKABLMBCDEFNO $.
-  $}
-
-  ${
     ifclda.1 $e |- ( ( ph /\ ps ) -> A e. C ) $.
     ifclda.2 $e |- ( ( ph /\ -. ps ) -> B e. C ) $.
     $( Conditional closure.  (Contributed by Jeff Madsen, 2-Sep-2009.) $)
