@@ -29038,16 +29038,6 @@ $)
   $}
 
   ${
-    ifeqda.1 $e |- ( ( ph /\ ps ) -> A = C ) $.
-    ifeqda.2 $e |- ( ( ph /\ -. ps ) -> B = C ) $.
-    $( Separation of the values of the conditional operator.  (Contributed by
-       Alexander van der Vekens, 13-Apr-2018.) $)
-    ifeqda $p |- ( ph -> if ( ps , A , B ) = C ) $=
-      ( cif wceq wa iftrue adantl eqtrd wn iffalse pm2.61dan ) ABBCDHZEIABJQCEB
-      QCIABCDKLFMABNZJQDERQDIABCDOLGMP $.
-  $}
-
-  ${
     elimif.1 $e |- ( if ( ph , A , B ) = A -> ( ps <-> ch ) ) $.
     elimif.2 $e |- ( if ( ph , A , B ) = B -> ( ps <-> th ) ) $.
     $( Elimination of a conditional operator contained in a wff ` ps ` .
