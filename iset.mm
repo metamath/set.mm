@@ -28900,8 +28900,7 @@ $)
   $( When values are unequal, but an "if" condition checks if they are equal,
      then the "false" branch results.  This is a simple utility to provide a
      slight shortening and simplification of proofs vs. applying ~ iffalse
-     directly in this case.  It happens, e.g., in ~ oevn0 .  (Contributed by
-     David A. Wheeler, 15-May-2015.) $)
+     directly in this case.  (Contributed by David A. Wheeler, 15-May-2015.) $)
   ifnefalse $p |- ( A =/= B -> if ( A = B , C , D ) = D ) $=
     ( wne wceq wn cif df-ne iffalse sylbi ) ABEABFZGLCDHDFABILCDJK $.
 
