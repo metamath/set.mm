@@ -36031,9 +36031,9 @@ $)
 
   $( A triple of classes exists.  (Contributed by NM, 10-Apr-1994.) $)
   tpexg $p |- ( ( A e. _V /\ B e. _V /\ C e. _V ) -> { A , B , C } e. _V ) $=
-    ( cvv wcel w3a ctp cpr csn cun df-tp wa prexgOLD snexgOLD anim12i 3impa syl
-    unexg syl5eqel ) ADEZBDEZCDEZFZABCGABHZCIZJZDABCKUCUDDEZUEDEZLZUFDETUAUBUIT
-    UALUGUBUHABMCNOPUDUEDDRQS $.
+    ( cvv wcel w3a ctp cpr csn cun df-tp wa prexg snexg anim12i 3impa unexg syl
+    syl5eqel ) ADEZBDEZCDEZFZABCGABHZCIZJZDABCKUCUDDEZUEDEZLZUFDETUAUBUITUALUGU
+    BUHABDDMCDNOPUDUEDDQRS $.
 
   ${
     $d x A $.  $d x B $.
