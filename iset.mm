@@ -29020,9 +29020,9 @@ $)
     $( Deduction version of ~ nfif .  (Contributed by NM, 15-Feb-2013.)
        (Revised by Mario Carneiro, 13-Oct-2016.) $)
     nfifd $p |- ( ph -> F/_ x if ( ps , A , B ) ) $=
-      ( vy cif cv wcel wi wa cab dfif2 nfv nfcrd nfimd nfand nfabd nfcxfrd ) AC
-      BDEJIKZELZBMZUCDLZBNZMZIOBIDEPAUHCIAIQAUEUGCAUDBCACIEHRFSAUFBCACIDGRFTSUA
-      UB $.
+      ( vy cif cv wcel wa wn wo cab df-if nfv nfcrd nfand nford nfabd nfcxfrd
+      nfnd ) ACBDEJIKZDLZBMZUEELZBNZMZOZIPBIDEQAUKCIAIRAUGUJCAUFBCACIDGSFTAUHUI
+      CACIEHSABCFUDTUAUBUC $.
   $}
 
   ${
