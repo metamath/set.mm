@@ -29038,15 +29038,6 @@ $)
   $}
 
   ${
-    ifclda.1 $e |- ( ( ph /\ ps ) -> A e. C ) $.
-    ifclda.2 $e |- ( ( ph /\ -. ps ) -> B e. C ) $.
-    $( Conditional closure.  (Contributed by Jeff Madsen, 2-Sep-2009.) $)
-    ifclda $p |- ( ph -> if ( ps , A , B ) e. C ) $=
-      ( cif wcel wa wceq iftrue adantl eqeltrd wn iffalse pm2.61dan ) ABBCDHZEI
-      ABJRCEBRCKABCDLMFNABOZJRDESRDKABCDPMGNQ $.
-  $}
-
-  ${
     ifeqda.1 $e |- ( ( ph /\ ps ) -> A = C ) $.
     ifeqda.2 $e |- ( ( ph /\ -. ps ) -> B = C ) $.
     $( Separation of the values of the conditional operator.  (Contributed by
