@@ -34619,7 +34619,7 @@ $)
   ${
     $d x y z v $.  $d x y w v $.  $d v ph $.
     $( The law of concretion in terms of substitutions.  Less general than
-       ~ opelopabsb , but having a much shorter proof. (Contributed by NM,
+       ~ opelopabsb , but having a much shorter proof.  (Contributed by NM,
        30-Sep-2002.)  (Proof shortened by Andrew Salmon, 25-Jul-2011.)
        (New usage is discouraged.)  (Proof modification is discouraged.) $)
     opelopabsbALT $p |- ( <. z , w >. e. { <. x , y >. | ph }
