@@ -60984,7 +60984,7 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 This is an ongoing project to define bounded formulas, following a discussion
-on GitHub between Jim Kingdon, Mario Carneiro and I, which I initiated
+on GitHub between Jim Kingdon, Mario Carneiro and I, started
 23-Sept-2019 (see ~ https://github.com/metamath/set.mm/issues/1173 and links
 therein).
 
