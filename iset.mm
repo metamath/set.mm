@@ -1,4 +1,4 @@
-$( iset.mm - Version of 21-Oct-2019
+$( iset.mm - Version of 29-Oct-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -6978,6 +6978,24 @@ $)
       ( wa wn simpr pm2.24i pm5.21ni ) CBEBAFCBGABDHI $.
   $}
 
+  $( Alternate version of ~ dedlema .  (Contributed by NM, 2-Apr-1994.)  (Proof
+     shortened by Andrew Salmon, 7-May-2011.)  (Proof shortened by Wolf Lammen,
+     4-Dec-2012.) $)
+  dedlem0a $p |- ( ph -> ( ps <-> ( ( ch -> ph ) -> ( ps /\ ph ) ) ) ) $=
+    ( wa wi iba wb ax-1 biimt syl bitrd ) ABBADZCAEZLEZABFAMLNGACHMLIJK $.
+
+  $( Lemma for ~ iftrue .  (Contributed by NM, 26-Jun-2002.)  (Proof shortened
+     by Andrew Salmon, 7-May-2011.) $)
+  dedlema $p |- ( ph -> ( ps <-> ( ( ps /\ ph ) \/ ( ch /\ -. ph ) ) ) ) $=
+    ( wa wn wo orc expcom wi simpl a1i pm2.24 adantld jaod impbid ) ABBADZCAEZD
+    ZFZBASPRGHAPBRPBIABAJKAQBCABLMNO $.
+
+  $( Lemma for ~ iffalse .  (Contributed by NM, 15-May-1999.)  (Proof shortened
+     by Andrew Salmon, 7-May-2011.) $)
+  dedlemb $p |- ( -. ph -> ( ch <-> ( ( ps /\ ph ) \/ ( ch /\ -. ph ) ) ) ) $=
+    ( wn wa wo olc expcom pm2.21 adantld wi simpl a1i jaod impbid ) ADZCBAEZCPE
+    ZFZCPSRQGHPQCRPACBACIJRCKPCPLMNO $.
+
   $( One direction of Theorem *4.42 of [WhiteheadRussell] p. 119.  (Contributed
      by Jim Kingdon, 4-Aug-2018.) $)
   pm4.42r $p |- ( ( ( ph /\ ps ) \/ ( ph /\ -. ps ) ) -> ph ) $=
@@ -11196,6 +11214,18 @@ $)
        11-Aug-2016.) $)
     nf3an $p |- F/ x ( ph /\ ps /\ ch ) $=
       ( w3a wa df-3an nfan nfxfr ) ABCHABIZCIDABCJMCDABDEFKGKL $.
+  $}
+
+  ${
+    nford.1 $e |- ( ph -> F/ x ps ) $.
+    nford.2 $e |- ( ph -> F/ x ch ) $.
+    $( If in a context ` x ` is not free in ` ps ` and ` ch ` , it is not free
+       in ` ( ps \/ ch ) ` .  (Contributed by Jim Kingdon, 29-Oct-2019.) $)
+    nford $p |- ( ph -> F/ x ( ps \/ ch ) ) $=
+      ( wo wal wi wnf wa df-nf anbi12i biimpi syl2anc 19.26 sylibr alimi imim2i
+      orc olc jaao syl ) ABCGZUDDHZIZDHZUDDJABBDHZIZCCDHZIZKZDHZUGAUIDHZUKDHZKZ
+      UMABDJZCDJZUPEFUQURKUPUQUNURUOBDLCDLMNOUIUKDPQULUFDUIBUEUKCUHUEBBUDDBCTRS
+      UJUECCUDDCBUARSUBRUCUDDLQ $.
   $}
 
   ${
@@ -28785,6 +28815,229 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Conditional operator
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare new constant symbols. $)
+  $c , $.  $( Comma (also used for unordered pair notation later) $)
+  $c if $.  $( Conditional operator (was "ded" for "deduction class"). $)
+
+  $( Extend class notation to include the conditional operator.  See ~ df-if
+     for a description.  (In older databases this was denoted "ded".) $)
+  cif $a class if ( ph , A , B ) $.
+
+  ${
+    $d x ph $.  $d x A $.  $d x B $.
+    $( Define the conditional operator.  Read ` if ( ph , A , B ) ` as "if
+       ` ph ` then ` A ` else ` B ` ."  See ~ iftrue and ~ iffalse for its
+       values.  In mathematical literature, this operator is rarely defined
+       formally but is implicit in informal definitions such as "let f(x)=0 if
+       x=0 and 1/x otherwise."
+
+       In the absence of excluded middle, this will tend to be useful where
+       ` ph ` is decidable (in the sense of ~df-dc ).  (Contributed by NM,
+       15-May-1999.) $)
+    df-if $a |- if ( ph , A , B ) =
+                 { x | ( ( x e. A /\ ph ) \/ ( x e. B /\ -. ph ) ) } $.
+  $}
+
+  ${
+    $d x ph $.  $d x A $.  $d x B $.  $d x C $.
+    $( An alternate definition of the conditional operator ~ df-if as a simple
+       class abstraction.  (Contributed by Mario Carneiro, 8-Sep-2013.) $)
+    dfif6 $p |- if ( ph , A , B ) =
+                 ( { x e. A | ph } u. { x e. B | -. ph } ) $=
+      ( cv wcel wa cab wn cun wo crab cif unab df-rab uneq12i df-if 3eqtr4ri )
+      BEZCFAGZBHZSDFAIZGZBHZJTUCKBHABCLZUBBDLZJACDMTUCBNUEUAUFUDABCOUBBDOPABCDQ
+      R $.
+
+    $( Equality theorem for conditional operator.  (Contributed by NM,
+       1-Sep-2004.)  (Revised by Mario Carneiro, 8-Sep-2013.) $)
+    ifeq1 $p |- ( A = B -> if ( ph , A , C ) = if ( ph , B , C ) ) $=
+      ( vx wceq crab wn cun cif rabeq uneq1d dfif6 3eqtr4g ) BCFZAEBGZAHEDGZIAE
+      CGZQIABDJACDJOPRQAEBCKLAEBDMAECDMN $.
+
+    $( Equality theorem for conditional operator.  (Contributed by NM,
+       1-Sep-2004.)  (Revised by Mario Carneiro, 8-Sep-2013.) $)
+    ifeq2 $p |- ( A = B -> if ( ph , C , A ) = if ( ph , C , B ) ) $=
+      ( vx wceq crab wn cun cif rabeq uneq2d dfif6 3eqtr4g ) BCFZAEDGZAHZEBGZIP
+      QECGZIADBJADCJORSPQEBCKLAEDBMAEDCMN $.
+
+    $( Value of the conditional operator when its first argument is true.
+       (Contributed by NM, 15-May-1999.)  (Proof shortened by Andrew Salmon,
+       26-Jun-2011.) $)
+    iftrue $p |- ( ph -> if ( ph , A , B ) = A ) $=
+      ( vx cv wcel wa wn wo cab cif dedlema abbi2dv df-if syl6reqr ) ABDEZBFZAG
+      PCFZAHGIZDJABCKASDBAQRLMADBCNO $.
+  $}
+
+  ${
+    iftruei.1 $e |- ph $.
+    $( Inference associated with ~ iftrue .  (Contributed by BJ,
+       7-Oct-2018.) $)
+    iftruei $p |- if ( ph , A , B ) = A $=
+      ( cif wceq iftrue ax-mp ) AABCEBFDABCGH $.
+  $}
+
+  ${
+    $d x ph $.  $d x A $.  $d x B $.
+    $( Value of the conditional operator when its first argument is false.
+       (Contributed by NM, 14-Aug-1999.) $)
+    iffalse $p |- ( -. ph -> if ( ph , A , B ) = B ) $=
+      ( vx wn cv wcel wa wo cab cif dedlemb abbi2dv df-if syl6reqr ) AEZCDFZBGZ
+      AHQCGZPHIZDJABCKPTDCARSLMADBCNO $.
+  $}
+
+  ${
+    iffalsei.1 $e |- -. ph $.
+    $( Inference associated with ~ iffalse .  (Contributed by BJ,
+       7-Oct-2018.) $)
+    iffalsei $p |- if ( ph , A , B ) = B $=
+      ( wn cif wceq iffalse ax-mp ) AEABCFCGDABCHI $.
+  $}
+
+  $( When values are unequal, but an "if" condition checks if they are equal,
+     then the "false" branch results.  This is a simple utility to provide a
+     slight shortening and simplification of proofs vs. applying ~ iffalse
+     directly in this case.  (Contributed by David A. Wheeler, 15-May-2015.) $)
+  ifnefalse $p |- ( A =/= B -> if ( A = B , C , D ) = D ) $=
+    ( wne wceq wn cif df-ne iffalse sylbi ) ABEABFZGLCDHDFABILCDJK $.
+
+  ${
+    $d y A $.  $d y B $.  $d x y ph $.
+    dfif3.1 $e |- C = { x | ph } $.
+    $( Alternate definition of the conditional operator ~ df-if .  Note that
+       ` ph ` is independent of ` x ` i.e. a constant true or false.
+       (Contributed by NM, 25-Aug-2013.)  (Revised by Mario Carneiro,
+       8-Sep-2013.) $)
+    dfif3 $p |- if ( ph , A , B )
+                  = ( ( A i^i C ) u. ( B i^i ( _V \ C ) ) ) $=
+      ( vy cif crab wn cun cin cvv cdif dfif6 cab weq ineq2i dfrab3 eqtr4i
+      biidd cbvabv eqtri notab difeq2i eqtr2i uneq12i ) ACDHAGCIZAJZGDIZKCELZDM
+      ENZLZKAGCDOUKUHUMUJUKCAGPZLUHEUNCEABPUNFAABGBGQAUAUBUCZRAGCSTUJDUIGPZLUMU
+      IGDSUPULDUPMUNNULAGUDEUNMUOUETRUFUGT $.
+  $}
+
+  $( Equality theorem for conditional operators.  (Contributed by NM,
+     1-Sep-2004.) $)
+  ifeq12 $p |- ( ( A = B /\ C = D ) ->
+                if ( ph , A , C ) = if ( ph , B , D ) ) $=
+    ( wceq cif ifeq1 ifeq2 sylan9eq ) BCFDEFABDGACDGACEGABCDHADECIJ $.
+
+  ${
+    ifeq1d.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for conditional operator.  (Contributed by NM,
+       16-Feb-2005.) $)
+    ifeq1d $p |- ( ph -> if ( ps , A , C ) = if ( ps , B , C ) ) $=
+      ( wceq cif ifeq1 syl ) ACDGBCEHBDEHGFBCDEIJ $.
+
+    $( Equality deduction for conditional operator.  (Contributed by NM,
+       16-Feb-2005.) $)
+    ifeq2d $p |- ( ph -> if ( ps , C , A ) = if ( ps , C , B ) ) $=
+      ( wceq cif ifeq2 syl ) ACDGBECHBEDHGFBCDEIJ $.
+
+    ifeq12d.2 $e |- ( ph -> C = D ) $.
+    $( Equality deduction for conditional operator.  (Contributed by NM,
+       24-Mar-2015.) $)
+    ifeq12d $p |- ( ph -> if ( ps , A , C ) = if ( ps , B , D ) ) $=
+      ( cif ifeq1d ifeq2d eqtrd ) ABCEIBDEIBDFIABCDEGJABEFDHKL $.
+  $}
+
+  ${
+    $d A x $.  $d B x $.  $d ph x $.  $d ps x $.
+    $( Equivalence theorem for conditional operators.  (Contributed by Raph
+       Levien, 15-Jan-2004.) $)
+    ifbi $p |- ( ( ph <-> ps ) -> if ( ph , A , B ) = if ( ps , A , B ) ) $=
+      ( vx wb cv wcel wa wn wo cab cif anbi2 notbid anbi2d orbi12d abbidv df-if
+      id 3eqtr4g ) ABFZEGZCHZAIZUCDHZAJZIZKZELUDBIZUFBJZIZKZELACDMBCDMUBUIUMEUB
+      UEUJUHULABUDNUBUGUKUFUBABUBTOPQRAECDSBECDSUA $.
+  $}
+
+  ${
+    ifbid.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    $( Equivalence deduction for conditional operators.  (Contributed by NM,
+       18-Apr-2005.) $)
+    ifbid $p |- ( ph -> if ( ps , A , B ) = if ( ch , A , B ) ) $=
+      ( wb cif wceq ifbi syl ) ABCGBDEHCDEHIFBCDEJK $.
+  $}
+
+  ${
+    ifbieq1d.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    ifbieq1d.2 $e |- ( ph -> A = B ) $.
+    $( Equivalence/equality deduction for conditional operators.  (Contributed
+       by JJ, 25-Sep-2018.) $)
+    ifbieq1d $p |- ( ph -> if ( ps , A , C ) = if ( ch , B , C ) ) $=
+      ( cif ifbid ifeq1d eqtrd ) ABDFICDFICEFIABCDFGJACDEFHKL $.
+  $}
+
+  ${
+    ifbieq2i.1 $e |- ( ph <-> ps ) $.
+    ifbieq2i.2 $e |- A = B $.
+    $( Equivalence/equality inference for conditional operators.  (Contributed
+       by Paul Chapman, 22-Jun-2011.) $)
+    ifbieq2i $p |- if ( ph , C , A ) = if ( ps , C , B ) $=
+      ( cif wb wceq ifbi ax-mp ifeq2 eqtri ) AECHZBECHZBEDHZABIOPJFABECKLCDJPQJ
+      GBCDEMLN $.
+  $}
+
+  ${
+    ifbieq2d.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    ifbieq2d.2 $e |- ( ph -> A = B ) $.
+    $( Equivalence/equality deduction for conditional operators.  (Contributed
+       by Paul Chapman, 22-Jun-2011.) $)
+    ifbieq2d $p |- ( ph -> if ( ps , C , A ) = if ( ch , C , B ) ) $=
+      ( cif ifbid ifeq2d eqtrd ) ABFDICFDICFEIABCFDGJACDEFHKL $.
+  $}
+
+  ${
+    ifbieq12i.1 $e |- ( ph <-> ps ) $.
+    ifbieq12i.2 $e |- A = C $.
+    ifbieq12i.3 $e |- B = D $.
+    $( Equivalence deduction for conditional operators.  (Contributed by NM,
+       18-Mar-2013.) $)
+    ifbieq12i $p |- if ( ph , A , B ) = if ( ps , C , D ) $=
+      ( cif wceq ifeq1 ax-mp ifbieq2i eqtri ) ACDJZAEDJZBEFJCEKPQKHACEDLMABDFEG
+      INO $.
+  $}
+
+  ${
+    ifbieq12d.1 $e |- ( ph -> ( ps <-> ch ) ) $.
+    ifbieq12d.2 $e |- ( ph -> A = C ) $.
+    ifbieq12d.3 $e |- ( ph -> B = D ) $.
+    $( Equivalence deduction for conditional operators.  (Contributed by Jeff
+       Madsen, 2-Sep-2009.) $)
+    ifbieq12d $p |- ( ph -> if ( ps , A , B ) = if ( ch , C , D ) ) $=
+      ( cif ifbid ifeq12d eqtrd ) ABDEKCDEKCFGKABCDEHLACDFEGIJMN $.
+  $}
+
+  ${
+    $d x y $.  $d y A $.  $d y B $.  $d y ph $.  $d y ps $.
+    nfifd.2 $e |- ( ph -> F/ x ps ) $.
+    nfifd.3 $e |- ( ph -> F/_ x A ) $.
+    nfifd.4 $e |- ( ph -> F/_ x B ) $.
+    $( Deduction version of ~ nfif .  (Contributed by NM, 15-Feb-2013.)
+       (Revised by Mario Carneiro, 13-Oct-2016.) $)
+    nfifd $p |- ( ph -> F/_ x if ( ps , A , B ) ) $=
+      ( vy cif cv wcel wa wn wo cab df-if nfv nfcrd nfand nford nfabd nfcxfrd
+      nfnd ) ACBDEJIKZDLZBMZUEELZBNZMZOZIPBIDEQAUKCIAIRAUGUJCAUFBCACIDGSFTAUHUI
+      CACIEHSABCFUDTUAUBUC $.
+  $}
+
+  ${
+    $d x y z $.  $d y z A $.  $d y z B $.  $d z ph $.
+    nfif.1 $e |- F/ x ph $.
+    nfif.2 $e |- F/_ x A $.
+    nfif.3 $e |- F/_ x B $.
+    $( Bound-variable hypothesis builder for a conditional operator.
+       (Contributed by NM, 16-Feb-2005.)  (Proof shortened by Andrew Salmon,
+       26-Jun-2011.) $)
+    nfif $p |- F/_ x if ( ph , A , B ) $=
+      ( cif wnfc wtru wnf a1i nfifd trud ) BACDHIJABCDABKJELBCIJFLBDIJGLMN $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                           Power classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -28927,7 +29180,6 @@ $)
   $( Declare new symbols needed. $)
   $c <. $.  $( Bracket (the period distinguishes it from 'less than') $)
   $c >. $.  $( Bracket (the period distinguishes it from 'greater than') $)
-  $c , $.  $( Comma $)
 
   $( Extend class notation to include singleton. $)
   csn $a class { A } $.
@@ -60338,6 +60590,9 @@ htmldef "(/)" as
     /*althtmldef "(/)" as '&#8960;';*/
     /* 2-Jan-2016 reverted sans-serif */
   latexdef "(/)" as "\varnothing";
+htmldef "if" as "<IMG SRC='_if.gif' WIDTH=11 HEIGHT=19 ALT=' if' TITLE='if'>";
+  althtmldef "if" as 'if';
+  latexdef "if" as "{\rm if}";
 htmldef "," as "<IMG SRC='comma.gif' WIDTH=4 HEIGHT=19 ALT=' ,' TITLE=','> ";
   althtmldef "," as ', ';
   latexdef "," as ",";
