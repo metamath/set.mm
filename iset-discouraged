@@ -59,8 +59,8 @@
 "mo3h" is used by "moim".
 "mo3h" is used by "moimv".
 "mo3h" is used by "mopick".
-"opelopabsbOLD" is used by "cnvopab".
-"opelopabsbOLD" is used by "inopab".
+"opelopabsbALT" is used by "cnvopab".
+"opelopabsbALT" is used by "inopab".
 "opexgOLD" is used by "elxp4".
 "opexgOLD" is used by "elxp5".
 "opexgOLD" is used by "fliftel".
@@ -69,7 +69,6 @@
 "opexgOLD" is used by "opbrop".
 "opexgOLD" is used by "opeliunxp".
 "opexgOLD" is used by "opswapg".
-"opexgOLD" is used by "otexg".
 "opexgOLD" is used by "otth2".
 "opexgOLD" is used by "relsnop".
 "opexgOLD" is used by "resfunexg".
@@ -77,14 +76,12 @@
 "prexgOLD" is used by "op1stbg".
 "prexgOLD" is used by "opeqpr".
 "prexgOLD" is used by "opeqsn".
-"prexgOLD" is used by "opexg".
 "prexgOLD" is used by "opexgOLD".
 "prexgOLD" is used by "opi2".
 "prexgOLD" is used by "opth".
 "prexgOLD" is used by "opthreg".
 "prexgOLD" is used by "prelpwi".
 "prexgOLD" is used by "relop".
-"prexgOLD" is used by "tpexg".
 "prexgOLD" is used by "unex".
 "prexgOLD" is used by "uniop".
 "r19.3rmOLD" is used by "r19.27m".
@@ -121,7 +118,6 @@
 "snexgOLD" is used by "op1stbg".
 "snexgOLD" is used by "opeqpr".
 "snexgOLD" is used by "opeqsn".
-"snexgOLD" is used by "opexg".
 "snexgOLD" is used by "opexgOLD".
 "snexgOLD" is used by "opi1".
 "snexgOLD" is used by "opm".
@@ -132,7 +128,6 @@
 "snexgOLD" is used by "snnex".
 "snexgOLD" is used by "sspwb".
 "snexgOLD" is used by "sucexb".
-"snexgOLD" is used by "tpexg".
 "snexgOLD" is used by "uniop".
 "spimh" is used by "spim".
 "spimth" is used by "equveli".
@@ -161,9 +156,9 @@ New usage of "fnexALT" is discouraged (0 uses).
 New usage of "hbs1" is discouraged (5 uses).
 New usage of "mathbox" is discouraged (0 uses).
 New usage of "mo3h" is discouraged (7 uses).
-New usage of "opelopabsbOLD" is discouraged (2 uses).
-New usage of "opexgOLD" is discouraged (12 uses).
-New usage of "prexgOLD" is discouraged (14 uses).
+New usage of "opelopabsbALT" is discouraged (2 uses).
+New usage of "opexgOLD" is discouraged (11 uses).
+New usage of "prexgOLD" is discouraged (12 uses).
 New usage of "r19.3rmOLD" is discouraged (2 uses).
 New usage of "r19.9rmvOLD" is discouraged (2 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
@@ -173,7 +168,7 @@ New usage of "rexsnsOLD" is discouraged (2 uses).
 New usage of "ruALT" is discouraged (0 uses).
 New usage of "sbiedh" is discouraged (3 uses).
 New usage of "sbieh" is discouraged (7 uses).
-New usage of "snexgOLD" is discouraged (29 uses).
+New usage of "snexgOLD" is discouraged (27 uses).
 New usage of "spimeh" is discouraged (0 uses).
 New usage of "spimh" is discouraged (1 uses).
 New usage of "spimth" is discouraged (1 uses).
@@ -198,7 +193,7 @@ Proof modification of "difidALT" is discouraged (20 steps).
 Proof modification of "dvelimALT" is discouraged (158 steps).
 Proof modification of "fnexALT" is discouraged (111 steps).
 Proof modification of "idref" is discouraged (94 steps).
-Proof modification of "opelopabsbOLD" is discouraged (106 steps).
+Proof modification of "opelopabsbALT" is discouraged (106 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
 Proof modification of "resfunexgALT" is discouraged (76 steps).
 Proof modification of "rexsnsOLD" is discouraged (55 steps).
