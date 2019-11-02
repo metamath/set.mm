@@ -61042,6 +61042,13 @@ htmldef "Bddc" as "<SMALL><U>BOUNDED</U></SMALL> ";
   latexdef "Bddc" as "\normalfont\textsc{\underline{bounded}}} ";
 /* End of BJ's mathbox */
 
+/* Mathbox of David A. Wheeler */
+htmldef "A!" as
+  "<IMG SRC='forall.gif' WIDTH=10 HEIGHT=19 ALT=' A.' TITLE='A.'>!";
+  althtmldef "A!" as '&forall;!'; /* &#8704; */
+  latexdef "A!" as "\forall !";
+/* End of David A. Wheeler's mathbox */
+
 /* End of typesetting definition section */
 $)
 
@@ -62070,3 +62077,136 @@ $)
 
 
 $( (End of BJ's mathbox.) $)
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+                 Mathbox for David A. Wheeler
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                Allsome quantifier
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+  These are definitions and proofs involving an experimental
+  "allsome" quantifier (aka "all some").
+
+  In informal language, statements like
+  "All Martians are green" imply that there is at least one Martian.
+  But it's easy to mistranslate informal language into formal notations
+  because similar statements like ` A. x ph -> ps ` do _not_
+  imply that ` ph ` is ever true, leading to vacuous truths.
+  Some systems include a mechanism to counter this, e.g., PVS allows
+  types to be appended with "+" to declare that they are nonempty.
+  This section presents a different solution to the same problem.
+
+  The "allsome" quantifier expressly includes the notion of both
+  "all" and "there exists at least one" (aka some), and is defined
+  to make it easier to more directly express both notions.
+  The hope is that if a quantifier more directly expresses this concept,
+  it will be used instead and reduce the risk of creating formal expressions
+  that look okay but in fact are mistranslations.
+  The term "allsome" was chosen because it's short, easy to say, and
+  clearly hints at the two concepts it combines.
+
+  I do not expect this to be used much in metamath, because in metamath
+  there's a general policy of avoiding the use of new definitions
+  unless there are very strong reasons to do so.  Instead, my goal is to
+  rigorously define this quantifier and demonstrate a few
+  basic properties of it.
+
+  The syntax allows two forms that look like they would be problematic,
+  but they are fine.  When applied to a top-level implication we allow
+  ` A! x ( ph -> ps ) ` , and when restricted (applied to a class) we allow
+  ` A! x e. A ph ` .
+  The first symbol after the setvar variable must
+  always be ` e. ` if it is the form applied to a class, and since
+  ` e. ` cannot begin a wff, it is unambiguous.
+  The ` -> ` looks like it would be a problem because ` ph ` or ` ps `
+  might include implications, but any implication arrow
+  ` -> ` within any wff must be surrounded by parentheses, so only the
+  implication arrow of ` A! ` can follow the wff.
+  The implication syntax would work fine without the parentheses, but
+  I added the parentheses because it makes things clearer inside
+  larger complex expressions, and it's also more consistent with
+  the rest of the syntax.
+
+  For more, see "The Allsome Quantifier" by David A. Wheeler at
+  https://dwheeler.com/essays/allsome.html
+  I hope that others will eventually agree that allsome is awesome.
+$)
+
+  $c A! $. $( "inverted A" exclamation point (read: "all some"
+    or more briefly "allsome") $)
+
+  $( Extend wff definition to include "all some" applied to a top-level
+     implication, which means ` ps ` is true whenever ` ph ` is true, and there
+     is at least least one ` x ` where ` ph ` is true.  (Contributed by David
+     A. Wheeler, 20-Oct-2018.) $)
+  walsi $a wff A! x ( ph -> ps ) $.
+
+  $( Extend wff definition to include "all some" applied to a class, which
+     means ` ph ` is true for all ` x ` in ` A ` , and there is at least one
+     ` x ` in ` A ` .  (Contributed by David A. Wheeler, 20-Oct-2018.) $)
+  walsc $a wff A! x e. A ph $.
+
+  ${
+    $( Define "all some" applied to a top-level implication, which means ` ps `
+       is true whenever ` ph ` is true and there is at least one ` x ` where
+       ` ph ` is true.  (Contributed by David A. Wheeler, 20-Oct-2018.) $)
+    df-alsi $a |- ( A! x ( ph -> ps ) <-> ( A. x ( ph -> ps ) /\ E. x ph ) ) $.
+  $}
+
+  ${
+    $( Define "all some" applied to a class, which means ` ph ` is true for all
+       ` x ` in ` A ` and there is at least one ` x ` in ` A ` .  (Contributed
+       by David A. Wheeler, 20-Oct-2018.) $)
+    df-alsc $a |- ( A! x e. A ph <-> ( A. x e. A ph /\ E. x x e. A ) ) $.
+  $}
+
+  $( There is an equivalence between the two "all some" forms.  (Contributed by
+     David A. Wheeler, 22-Oct-2018.) $)
+  alsconv $p |- ( A! x ( x e. A -> ph ) <-> A! x e. A ph ) $=
+    ( wral cv wcel wex wa wi walsc walsi df-ral anbi1i df-alsc df-alsi 3bitr4ri
+    wal ) ABCDZBECFZBGZHSAIBQZTHABCJSABKRUATABCLMABCNSABOP $.
+
+  ${
+    alsi1d.1 $e |- ( ph -> A! x ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some" applied to a top-level inference, you
+       can extract the "for all" part.  (Contributed by David A. Wheeler,
+       20-Oct-2018.) $)
+    alsi1d $p |- ( ph -> A. x ( ps -> ch ) ) $=
+      ( wi wal wex walsi wa df-alsi sylib simpld ) ABCFDGZBDHZABCDINOJEBCDKLM
+      $.
+  $}
+
+  ${
+    alsi2d.1 $e |- ( ph -> A! x ( ps -> ch ) ) $.
+    $( Deduction rule:  Given "all some" applied to a top-level inference, you
+       can extract the "exists" part.  (Contributed by David A. Wheeler,
+       20-Oct-2018.) $)
+    alsi2d $p |- ( ph -> E. x ps ) $=
+      ( wi wal wex walsi wa df-alsi sylib simprd ) ABCFDGZBDHZABCDINOJEBCDKLM
+      $.
+  $}
+
+  ${
+    alsc1d.1 $e |- ( ph -> A! x e. A ps ) $.
+    $( Deduction rule:  Given "all some" applied to a class, you can extract
+       the "for all" part.  (Contributed by David A. Wheeler, 20-Oct-2018.) $)
+    alsc1d $p |- ( ph -> A. x e. A ps ) $=
+      ( wral cv wcel wex walsc wa df-alsc sylib simpld ) ABCDFZCGDHCIZABCDJOPKE
+      BCDLMN $.
+  $}
+
+  ${
+    alsc2d.1 $e |- ( ph -> A! x e. A ps ) $.
+    $( Deduction rule:  Given "all some" applied to a class, you can extract
+       the "there exists" part.  (Contributed by David A. Wheeler,
+       20-Oct-2018.) $)
+    alsc2d $p |- ( ph -> E. x x e. A ) $=
+      ( wral cv wcel wex walsc wa df-alsc sylib simprd ) ABCDFZCGDHCIZABCDJOPKE
+      BCDLMN $.
+  $}
+
+$( (End of David A. Wheeler's mathbox.) $)
