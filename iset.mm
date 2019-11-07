@@ -56342,6 +56342,22 @@ $)
       WLWMVDWFWN $.
   $}
 
+  ${
+    $d x A $.  $d x B $.
+    $( Equivalence for weak ordering of natural numbers.  (Contributed by NM,
+       8-Nov-2002.)  (Revised by Mario Carneiro, 15-Nov-2014.) $)
+    nnawordex $p |- ( ( A e. _om /\ B e. _om ) -> ( A C_ B <->
+                  E. x e. _om ( A +o x ) = B ) ) $=
+      ( com wcel wa wss cv coa co wceq wrex w3a nntri3or 3adant3 wi c0 nnaordex
+      w3o syl5ibcom ax-ia2 reximi syl6bi nna0 3ad2ant1 eqeq2 peano1 eqeq1d mpan
+      oveq2 rspcev syl6 wn nntri1 biimp3a pm2.21d mpd 3expia nnaword1 rexlimdva
+      3jaod sseq2 adantr impbid ) BDEZCDEZFZBCGZBAHZIJZCKZADLZVEVFVHVLVEVFVHMZB
+      CEZBCKZCBEZSZVLVEVFVQVHBCNOVMVNVLVOVPVEVFVNVLPVHVGVNQVIEZVKFZADLVLABCRVSV
+      KADVRVKUAUBUCOVMVOBQIJZCKZVLVMVTBKZVOWAVEVFWBVHBUDUEBCVTUFTQDEWAVLUGVKWAA
+      QDVIQKVJVTCVIQBIUJUHUKUIULVMVPVLVEVFVHVPUMBCUNUOUPVAUQURVEVLVHPVFVEVKVHAD
+      VEVIDEFBVJGVKVHBVIUSVJCBVBTUTVCVD $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Equivalence relations and classes
