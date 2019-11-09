@@ -37718,9 +37718,8 @@ $)
        successor operation contains all natural numbers.  One of Peano's 5
        postulates for arithmetic.  Proposition 7.30(5) of [TakeutiZaring]
        p. 43.  The more traditional statement of mathematical induction as a
-       theorem schema, with a basis and an induction step, is derived
-       from this theorem as theorem ~ findes .  (Contributed by NM,
-       18-Feb-2004.) $)
+       theorem schema, with a basis and an induction step, is derived from this
+       theorem as theorem ~ findes .  (Contributed by NM, 18-Feb-2004.) $)
     peano5 $p |- ( ( (/) e. A /\
                  A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) $=
       ( vy c0 wcel cv csuc wi com wral wa cin wss cint elin df-ral sylibr eleq2
@@ -37793,9 +37792,8 @@ $)
     finds2.5 $e |- ( y e. _om -> ( ta -> ( ch -> th ) ) ) $.
     $( Principle of Finite Induction (inference schema), using implicit
        substitutions.  The first three hypotheses establish the substitutions
-       we need.  The last two are the basis and the induction step.
-       Theorem Schema 22 of [Suppes] p. 136.  (Contributed by NM,
-       29-Nov-2002.) $)
+       we need.  The last two are the basis and the induction step.  Theorem
+       Schema 22 of [Suppes] p. 136.  (Contributed by NM, 29-Nov-2002.) $)
     finds2 $p |- ( x e. _om -> ( ta -> ph ) ) $=
       ( cv com wcel wi c0 wceq imbi2d elab cab csuc wss 0ex mpbir a2d vex sucex
       wral 3imtr4g rgen peano5 mp2an sseli abid sylib ) FMZNOUQEAPZFUAZOURNUSUQ
@@ -37816,9 +37814,8 @@ $)
     finds1.5 $e |- ( y e. _om -> ( ch -> th ) ) $.
     $( Principle of Finite Induction (inference schema), using implicit
        substitutions.  The first three hypotheses establish the substitutions
-       we need.  The last two are the basis and the induction step.
-       Theorem Schema 22 of [Suppes] p. 136.  (Contributed by NM,
-       22-Mar-2006.) $)
+       we need.  The last two are the basis and the induction step.  Theorem
+       Schema 22 of [Suppes] p. 136.  (Contributed by NM, 22-Mar-2006.) $)
     finds1 $p |- ( x e. _om -> ph ) $=
       ( cv com wcel c0 wceq eqid a1i wi a1d finds2 mpi ) ELMNOOPZAOQABCDUCEFGHI
       BUCJRFLMNCDSUCKTUAUB $.
@@ -37829,8 +37826,8 @@ $)
     findes.1 $e |- [. (/) / x ]. ph $.
     findes.2 $e |- ( x e. _om -> ( ph -> [. suc x / x ]. ph ) ) $.
     $( Finite induction with explicit substitution.  The first hypothesis is
-       the basis and the second is the induction step.  Theorem Schema 22
-       of [Suppes] p. 136.  This is an alternative for Metamath 100 proof #74.
+       the basis and the second is the induction step.  Theorem Schema 22 of
+       [Suppes] p. 136.  This is an alternative for Metamath 100 proof #74.
        (Contributed by Raph Levien, 9-Jul-2003.) $)
     findes $p |- ( x e. _om -> ph ) $=
       ( vz vy wsb c0 wsbc csuc dfsbcq2 sbequ sbequ12r com wcel nfv nfim imbi12d
