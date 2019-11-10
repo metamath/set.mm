@@ -58464,6 +58464,13 @@ $)
     bitrd ) ABCZADEZAFGHZIUMAJCUNAKLUMUOADUMUOADMZUMUONZADCZIUPAOUQURUPUMUOURUP
     PZUMUOAFCZUSUMFBCUOUTRSAFQTUTADUAZCUMUSFVAAUBUCADBUDUEULUFUGUHUIUJUK $.
 
+  $( A natural number plus a positive integer is a positive integer.
+     (Contributed by Jim Kingdon, 10-Nov-2019.) $)
+  nnppipi $p |- ( ( A e. _om /\ B e. N. ) -> ( A +o B ) e. N. ) $=
+    ( com wcel cnpi wa coa co pinn nnacl sylan2 wss nnaword2 sylan ancoms elni2
+    c0 simprbi adantl sseldd sylanbrc ) ACDZBEDZFZABGHZCDZQUEDUEEDUCUBBCDZUFBIZ
+    ABJKUDBUEQUCUBBUELZUCUGUBUIUHBAMNOUCQBDZUBUCUGUJBPRSTUEPUA $.
+
   ${
     $d x y z w v u f $.
     $( Define pre-addition on positive fractions.  This is a "temporary" set
