@@ -59461,7 +59461,7 @@ $)
        ( ` A. q e. Q. -. ( q e. l /\ q e. u ) ` ) and located
        ( ` A. q e. Q. A. r e. Q. ( q <Q r -> ( q e. l \/ r e. u ) ) ` ).  See
        HoTT for more discussion of those terms and different ways of defining
-       Dedkind cuts.
+       Dedekind cuts.
 
        (Note:  This is a "temporary" definition used in the construction of
        complex numbers, and is intended to be used only by the construction.)
