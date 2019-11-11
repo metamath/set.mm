@@ -9759,22 +9759,6 @@
 "mndomgmid" is used by "isdrngo2".
 "mndomgmid" is used by "ismndo2".
 "mndomgmid" is used by "rngoidmlem".
-"mo2v" is used by "2mo2".
-"mo2v" is used by "dffun3".
-"mo2v" is used by "dffun6f".
-"mo2v" is used by "eu3v".
-"mo2v" is used by "grothprim".
-"mo2v" is used by "mo2".
-"mo2v" is used by "mo2icl".
-"mo2v" is used by "mo3".
-"mo2v" is used by "mo3OLD".
-"mo2v" is used by "moabex".
-"mo2v" is used by "moim".
-"mo2v" is used by "mopick".
-"mo2v" is used by "sbmo".
-"mo2v" is used by "wl-mo2dnae".
-"mo2v" is used by "wl-mo2t".
-"mo2v" is used by "wl-mo3t".
 "mplbasOLD" is used by "mplbasss".
 "mplbasOLD" is used by "mplelbasOLD".
 "mplelbasOLD" is used by "mplbas2OLD".
@@ -16872,7 +16856,6 @@ New usage of "mndoismgm" is discouraged (3 uses).
 New usage of "mndoissmgrp" is discouraged (1 uses).
 New usage of "mndomgmid" is discouraged (3 uses).
 New usage of "mo2OLD" is discouraged (0 uses).
-New usage of "mo2v" is discouraged (16 uses).
 New usage of "mo2vOLD" is discouraged (0 uses).
 New usage of "mo2vOLDOLD" is discouraged (0 uses).
 New usage of "mo3OLD" is discouraged (0 uses).
@@ -19150,7 +19133,6 @@ Proof modification of "metutopOLD" is discouraged (627 steps).
 Proof modification of "metuustOLD" is discouraged (78 steps).
 Proof modification of "metuvalOLD" is discouraged (244 steps).
 Proof modification of "mo2OLD" is discouraged (69 steps).
-Proof modification of "mo2v" is discouraged (142 steps).
 Proof modification of "mo2vOLD" is discouraged (147 steps).
 Proof modification of "mo2vOLDOLD" is discouraged (147 steps).
 Proof modification of "mo3OLD" is discouraged (206 steps).
