@@ -13540,7 +13540,9 @@
 "wl-impchain-1-syl" is used by "wl-impchain-2-syl".
 "wl-impchain-1-syl" is used by "wl-impchain-3-com1x".
 "wl-impchain-2-com1x" is used by "wl-impchain-3-com1x".
+"wl-impchain-2-com1x" is used by "wl-impchain-3-com2x".
 "wl-impchain-2-syl" is used by "wl-impchain-4-com1x".
+"wl-impchain-3-com1x" is used by "wl-impchain-3-com2x".
 "wl-impchain-3-com1x" is used by "wl-impchain-4-com1x".
 "wl-ja" is used by "wl-ax2".
 "wl-mpi" is used by "wl-imim2i".
@@ -18176,9 +18178,10 @@ New usage of "wl-impchain-0-com1x" is discouraged (0 uses).
 New usage of "wl-impchain-0-syl" is discouraged (2 uses).
 New usage of "wl-impchain-1-com1x" is discouraged (1 uses).
 New usage of "wl-impchain-1-syl" is discouraged (2 uses).
-New usage of "wl-impchain-2-com1x" is discouraged (1 uses).
+New usage of "wl-impchain-2-com1x" is discouraged (2 uses).
 New usage of "wl-impchain-2-syl" is discouraged (1 uses).
-New usage of "wl-impchain-3-com1x" is discouraged (1 uses).
+New usage of "wl-impchain-3-com1x" is discouraged (2 uses).
+New usage of "wl-impchain-3-com2x" is discouraged (0 uses).
 New usage of "wl-impchain-4-com1x" is discouraged (0 uses).
 New usage of "wl-ja" is discouraged (1 uses).
 New usage of "wl-jarli" is discouraged (0 uses).
@@ -19505,6 +19508,7 @@ Proof modification of "wl-impchain-1-syl" is discouraged (13 steps).
 Proof modification of "wl-impchain-2-com1x" is discouraged (22 steps).
 Proof modification of "wl-impchain-2-syl" is discouraged (14 steps).
 Proof modification of "wl-impchain-3-com1x" is discouraged (25 steps).
+Proof modification of "wl-impchain-3-com2x" is discouraged (18 steps).
 Proof modification of "wl-impchain-4-com1x" is discouraged (28 steps).
 Proof modification of "wl-ja" is discouraged (20 steps).
 Proof modification of "wl-jarli" is discouraged (11 steps).
