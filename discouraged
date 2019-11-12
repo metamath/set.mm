@@ -13655,6 +13655,7 @@ New usage of "1sr" is discouraged (8 uses).
 New usage of "2atm2atN" is discouraged (0 uses).
 New usage of "2atnelvolN" is discouraged (0 uses).
 New usage of "2bornot2b" is discouraged (0 uses).
+New usage of "2eu1OLD" is discouraged (0 uses).
 New usage of "2eu4OLD" is discouraged (0 uses).
 New usage of "2eu6OLD" is discouraged (0 uses).
 New usage of "2exsbOLD" is discouraged (0 uses).
@@ -13667,6 +13668,7 @@ New usage of "2llnne2N" is discouraged (1 uses).
 New usage of "2llnneN" is discouraged (0 uses).
 New usage of "2lplnm2N" is discouraged (0 uses).
 New usage of "2lplnmN" is discouraged (0 uses).
+New usage of "2moOLD" is discouraged (0 uses).
 New usage of "2moOLDOLD" is discouraged (0 uses).
 New usage of "2pm13.193" is discouraged (3 uses).
 New usage of "2pm13.193VD" is discouraged (0 uses).
@@ -18258,9 +18260,11 @@ Proof modification of "19.43OLD" is discouraged (72 steps).
 Proof modification of "1div0apr" is discouraged (77 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
 Proof modification of "2bornot2b" is discouraged (26 steps).
+Proof modification of "2eu1OLD" is discouraged (200 steps).
 Proof modification of "2eu4OLD" is discouraged (299 steps).
 Proof modification of "2eu6OLD" is discouraged (613 steps).
 Proof modification of "2exsbOLD" is discouraged (110 steps).
+Proof modification of "2moOLD" is discouraged (365 steps).
 Proof modification of "2moOLDOLD" is discouraged (474 steps).
 Proof modification of "2pm13.193" is discouraged (91 steps).
 Proof modification of "2pm13.193VD" is discouraged (223 steps).
