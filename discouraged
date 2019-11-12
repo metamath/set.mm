@@ -13540,7 +13540,9 @@
 "wl-impchain-1-syl" is used by "wl-impchain-2-syl".
 "wl-impchain-1-syl" is used by "wl-impchain-3-com1x".
 "wl-impchain-2-com1x" is used by "wl-impchain-3-com1x".
+"wl-impchain-2-com1x" is used by "wl-impchain-3-com2x".
 "wl-impchain-2-syl" is used by "wl-impchain-4-com1x".
+"wl-impchain-3-com1x" is used by "wl-impchain-3-com2x".
 "wl-impchain-3-com1x" is used by "wl-impchain-4-com1x".
 "wl-ja" is used by "wl-ax2".
 "wl-mpi" is used by "wl-imim2i".
@@ -14103,6 +14105,7 @@ New usage of "blof" is discouraged (5 uses).
 New usage of "bloln" is discouraged (6 uses).
 New usage of "blometi" is discouraged (1 uses).
 New usage of "bloval" is discouraged (2 uses).
+New usage of "bm1.1OLD" is discouraged (0 uses).
 New usage of "bnj1000" is discouraged (1 uses).
 New usage of "bnj1001" is discouraged (1 uses).
 New usage of "bnj1006" is discouraged (1 uses).
@@ -18176,9 +18179,10 @@ New usage of "wl-impchain-0-com1x" is discouraged (0 uses).
 New usage of "wl-impchain-0-syl" is discouraged (2 uses).
 New usage of "wl-impchain-1-com1x" is discouraged (1 uses).
 New usage of "wl-impchain-1-syl" is discouraged (2 uses).
-New usage of "wl-impchain-2-com1x" is discouraged (1 uses).
+New usage of "wl-impchain-2-com1x" is discouraged (2 uses).
 New usage of "wl-impchain-2-syl" is discouraged (1 uses).
-New usage of "wl-impchain-3-com1x" is discouraged (1 uses).
+New usage of "wl-impchain-3-com1x" is discouraged (2 uses).
+New usage of "wl-impchain-3-com2x" is discouraged (0 uses).
 New usage of "wl-impchain-4-com1x" is discouraged (0 uses).
 New usage of "wl-ja" is discouraged (1 uses).
 New usage of "wl-jarli" is discouraged (0 uses).
@@ -18591,6 +18595,7 @@ Proof modification of "bj-xpima1snALT" is discouraged (34 steps).
 Proof modification of "bj-xpima2sn" is discouraged (23 steps).
 Proof modification of "bj-xpnzex" is discouraged (71 steps).
 Proof modification of "bj-zfpow" is discouraged (71 steps).
+Proof modification of "bm1.1OLD" is discouraged (119 steps).
 Proof modification of "bnj142OLD" is discouraged (51 steps).
 Proof modification of "bnj145OLD" is discouraged (112 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
@@ -19505,6 +19510,7 @@ Proof modification of "wl-impchain-1-syl" is discouraged (13 steps).
 Proof modification of "wl-impchain-2-com1x" is discouraged (22 steps).
 Proof modification of "wl-impchain-2-syl" is discouraged (14 steps).
 Proof modification of "wl-impchain-3-com1x" is discouraged (25 steps).
+Proof modification of "wl-impchain-3-com2x" is discouraged (18 steps).
 Proof modification of "wl-impchain-4-com1x" is discouraged (28 steps).
 Proof modification of "wl-ja" is discouraged (20 steps).
 Proof modification of "wl-jarli" is discouraged (11 steps).
