@@ -35735,10 +35735,12 @@ $)
      [BellMachover] p. 471 and Exercise 1 of [TakeutiZaring] p. 42, and then
      changes ` A =/= (/) ` to ` (/) e. A ` (which would be equivalent given the
      law of the excluded middle, but which is not for us).  (Contributed by Jim
-     Kingdon, 11-Nov-2018.) $)
+     Kingdon, 11-Nov-2018.)  Use its alias ~ dflim2 instead for naming
+     consistency with set.mm.  (New usage is discouraged.) $)
   df-ilim $a |- ( Lim A <-> ( Ord A /\ (/) e. A /\ A = U. A ) ) $.
 
-  $( Another name for ~ df-ilim .  (Contributed by NM, 4-Nov-2004.) $)
+  $( Alias for ~ df-ilim .  Use it instead of ~ df-ilim for naming consistency
+     with set.mm.  (Contributed by NM, 4-Nov-2004.) $)
   dflim2 $p |- ( Lim A <-> ( Ord A /\ (/) e. A /\ A = U. A ) ) $=
     ( df-ilim ) AB $.
 
@@ -37641,13 +37643,15 @@ $)
        ~ df-on .  Later, when we define complex numbers, we will be able to
        also define a subset of the complex numbers with analogous properties
        and operations, but they will be different sets.  (Contributed by NM,
-       6-Aug-1994.) $)
+       6-Aug-1994.)  Use its alias ~ dfom3 instead for naming consistency with
+       set.mm.  (New usage is discouraged.) $)
     df-iom $a |- _om = |^| { x | ( (/) e. x /\ A. y e. x suc y e. x ) } $.
   $}
 
   ${
     $d x y z $.
-    $( Another name for ~ df-iom .  (Contributed by NM, 6-Aug-1994.) $)
+    $( Alias for ~ df-iom .  Use it instead of ~ df-iom for naming consistency
+       with set.mm.  (Contributed by NM, 6-Aug-1994.) $)
     dfom3 $p |- _om = |^| { x | ( (/) e. x /\ A. y e. x suc y e. x ) } $=
       ( df-iom ) ABC $.
   $}
@@ -37927,10 +37931,10 @@ $)
     limom $p |- Lim _om $=
       ( vx vz com wlim word c0 wcel cuni wceq ordom peano1 cv wa wex csuc sucex
       wi vex isseti peano2 sucid jctil eleq2 eleq1 anbi12d syl5ibr eximii eluni
-      19.37aiv sylibr ssriv wss orduniss ax-mp eqssi df-ilim mpbir3an ) CDCEZFC
-      GCCHZIJKCUSACUSALZCGZUTBLZGZVBCGZMZBNUTUSGVAVEBVBUTOZIZVAVEQBBVFUTARZPSVA
-      VEVGUTVFGZVFCGZMVAVJVIUTTUTVHUAUBVGVCVIVDVJVBVFUTUCVBVFCUDUEUFUGUIBUTCUHU
-      JUKURUSCULJCUMUNUOCUPUQ $.
+      19.37aiv sylibr ssriv wss orduniss ax-mp eqssi dflim2 mpbir3an ) CDCEZFCG
+      CCHZIJKCUSACUSALZCGZUTBLZGZVBCGZMZBNUTUSGVAVEBVBUTOZIZVAVEQBBVFUTARZPSVAV
+      EVGUTVFGZVFCGZMVAVJVIUTTUTVHUAUBVGVCVIVDVJVBVFUTUCVBVFCUDUEUFUGUIBUTCUHUJ
+      UKURUSCULJCUMUNUOCUPUQ $.
   $}
 
   $( A class belongs to omega iff its successor does.  (Contributed by NM,
