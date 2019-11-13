@@ -62243,8 +62243,24 @@ $(
   $}
 $)
 
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Axiom of infinity
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+In the absence of full separation, the axiom of infinity has to be stated more
+precisely, as the existence of the smallest class containing the empty set and
+the successor of each of its elements.
+
+$)
+
+  $( Axiom of infinity in a constructive setting.  See ~ omex for a proof from
+     ~ ax-iinf (using full separation).  (Contributed by BJ, 13-Nov-2019.) $)
+  ax-omex $a |- _om e. _V $.
 
 $( (End of BJ's mathbox.) $)
+
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
                  Mathbox for David A. Wheeler
