@@ -33599,9 +33599,7 @@ $)
     $( Separation Scheme (Aussonderung) using a class variable.  To derive this
        from ~ ax-sep , we invoke the Axiom of Extensionality (indirectly via
        ~ vtocl ), which is needed for the justification of class variable
-       notation.
-
-       (Contributed by NM, 5-Aug-1993.) $)
+       notation.  (Contributed by NM, 5-Aug-1993.) $)
     zfauscl $p |- E. y A. x ( x e. y <-> ( x e. A /\ ph ) ) $=
       ( vz cv wcel wa wb wal wex eleq2 anbi1d bibi2d albidv exbidv ax-sep vtocl
       wceq ) BGZCGHZUAFGZHZAIZJZBKZCLUBUADHZAIZJZBKZCLFDEUCDTZUGUKCULUFUJBULUEU
@@ -61038,9 +61036,9 @@ htmldef "Delta0" as "&Delta;<sub>0</sub>";
 htmldef "Bdd" as "<SMALL>BOUNDED</SMALL> ";
   althtmldef "Bdd" as "<SMALL>BOUNDED</SMALL> ";
   latexdef "Bdd" as "\normalfont\textsc{bounded}} ";
-htmldef "Bddc" as "<SMALL><U>BOUNDED</U></SMALL> ";
-  althtmldef "Bddc" as "<SMALL><U>BOUNDED</U></SMALL> ";
-  latexdef "Bddc" as "\normalfont\textsc{\underline{bounded}}} ";
+htmldef "Bdd_" as "<SMALL><U>BOUNDED</U></SMALL> ";
+  althtmldef "Bdd_" as "<SMALL><U>BOUNDED</U></SMALL> ";
+  latexdef "Bdd_" as "\normalfont\textsc{\underline{bounded}}} ";
 /* End of BJ's mathbox */
 
 /* Mathbox of David A. Wheeler */
@@ -61503,47 +61501,47 @@ proofs of (semantic) boundedness of formulas.
 
 $)
 
-  $( Symbol for the predicate ` Bddc ` . $)
-  $c Bddc $.
+  $( Symbol for the predicate ` Bdd_ ` . $)
+  $c Bdd_ $.
 
-  $( Syntax for the predicate ` Bddc ` . $)
-  wbdc $a wff Bddc A $.
+  $( Syntax for the predicate ` Bdd_ ` . $)
+  wbdc $a wff Bdd_ A $.
 
   ${
     $d x A $.
     $( Define a bounded class as one such that membership in this class is a
        bounded formula.  (Contributed by BJ, 3-Oct-2019.) $)
-    df-bdc $a |- ( Bddc A <-> A. x Bdd x e. A ) $.
+    df-bdc $a |- ( Bdd_ A <-> A. x Bdd x e. A ) $.
   $}
 
   ${
     $d x A $.  $d x B $.
     bdceq.1 $e |- A = B $.
-    $( Equality property for the predicate ` Bddc ` .  (Contributed by BJ,
+    $( Equality property for the predicate ` Bdd_ ` .  (Contributed by BJ,
        3-Oct-2019.) $)
-    bdceq $p |- ( Bddc A <-> Bddc B ) $=
+    bdceq $p |- ( Bdd_ A <-> Bdd_ B ) $=
       ( vx cv wcel wbd wal wbdc eleq2i bdeq albii df-bdc 3bitr4i ) DEZAFZGZDHOB
       FZGZDHAIBIQSDPRABOCJKLDAMDBMN $.
   $}
 
   ${
     $d x A $.  $d x B $.
-    bdceqi.min $e |- Bddc A $.
+    bdceqi.min $e |- Bdd_ A $.
     bdceqi.maj $e |- A = B $.
     $( A class equal to a bounded one is bounded.  Note the use of ~ ax-ext .
        (Contributed by BJ, 3-Oct-2019.) $)
-    bdceqi $p |- Bddc B $=
+    bdceqi $p |- Bdd_ B $=
       ( wbdc bdceq mpbi ) AEBECABDFG $.
   $}
 
   ${
-    bdceqir.min $e |- Bddc A $.
+    bdceqir.min $e |- Bdd_ A $.
     bdceqir.maj $e |- B = A $.
     $( A class equal to a bounded one is bounded.  Stated with a commuted
        (compared to ~ bdceqi ) equality in the hypothesis, to work better with
        definitions ( ` B ` is the definiendum that one wants to prove bounded;
        see comment of ~ bd0r ).  (Contributed by BJ, 3-Oct-2019.) $)
-    bdceqir $p |- Bddc B $=
+    bdceqir $p |- Bdd_ B $=
       ( eqcomi bdceqi ) ABCBADEF $.
   $}
 
@@ -61551,13 +61549,13 @@ $)
     $d x A $.
     $( The belonging of a setvar in a bounded class is a bounded formula.
        (Contributed by BJ, 3-Oct-2019.) $)
-    bdelt $p |- ( Bddc A -> Bdd x e. A ) $=
+    bdelt $p |- ( Bdd_ A -> Bdd x e. A ) $=
       ( wbdc cv wcel wbd wal df-bdc sp sylbi ) BCADBEFZAGKABHKAIJ $.
   $}
 
   ${
     $d x A $.
-    bdeli.1 $e |- Bddc A $.
+    bdeli.1 $e |- Bdd_ A $.
     $( Inference associated with ~ bdelt .  (Contributed by BJ, 3-Oct-2019.) $)
     bdeli $p |- Bdd x e. A $=
       ( wbdc cv wcel wbd bdelt ax-mp ) BDAEBFGCABHI $.
@@ -61567,14 +61565,14 @@ $)
     $d x A $.
     bdelir.1 $e |- Bdd x e. A $.
     $( Inference associated with ~ bdelt .  (Contributed by BJ, 3-Oct-2019.) $)
-    bdelir $p |- Bddc A $=
+    bdelir $p |- Bdd_ A $=
       ( wbdc cv wcel wbd df-bdc mpgbir ) BDAEBFGAABHCI $.
   $}
 
   ${
     $d x y $.
     $( A setvar is a bounded class.  (Contributed by BJ, 3-Oct-2019.) $)
-    bdcv $p |- Bddc x $=
+    bdcv $p |- Bdd_ x $=
       ( vy cv ax-bdel bdelir ) BACBADE $.
   $}
 
@@ -61584,13 +61582,13 @@ $)
     $( A class defined by class abstraction using a bounded formula is
        bounded.  Remark: if bounded separation ~ ax-bdsep is available, then
        this is actually a set.  (Contributed by BJ, 6-Oct-2019.) $)
-    bdcclab $p |- Bddc { x | ph } $=
+    bdcclab $p |- Bdd_ { x | ph } $=
       ( vy cab bdclab bdelir ) DABEADBCFG $.
   $}
 
   ${
     $d y x $.  $d y ph $.
-    bdph.1 $e |- Bddc { x | ph } $.
+    bdph.1 $e |- Bdd_ { x | ph } $.
     $( A formula which defines (by class abstraction) a bounded class is
        bounded.  (Contributed by BJ, 6-Oct-2019.) $)
     bdph $p |- Bdd ph $=
@@ -61600,11 +61598,11 @@ $)
 
   ${
     $d x A $.
-    bdcrab.1 $e |- Bddc A $.
+    bdcrab.1 $e |- Bdd_ A $.
     bdcrab.2 $e |- Bdd ph $.
     $( A class defined by restricted abstraction from a bounded class and a
        bounded formula is bounded.  (Contributed by BJ, 3-Oct-2019.) $)
-    bdcrab $p |- Bddc { x e. A | ph } $=
+    bdcrab $p |- Bdd_ { x e. A | ph } $=
       ( cv wcel wa cab crab bdeli ax-bdan bdcclab df-rab bdceqir ) BFCGZAHZBIAB
       CJQBPABCDKELMABCNO $.
   $}
@@ -61616,7 +61614,7 @@ $)
 
   ${
     $d x A $.
-    bdnel.1 $e |- Bddc A $.
+    bdnel.1 $e |- Bdd_ A $.
     $( Non-membership of a setvar in a bounded formula is a bounded formula.
        (Contributed by BJ, 16-Oct-2019.) $)
     bdnel $p |- Bdd x e/ A $=
@@ -61654,7 +61652,7 @@ $)
   $( The universal class is bounded.  The formulation may sound strange, but
      recall that here, "bounded" means " ` Delta0 ` ".  (Contributed by BJ,
      3-Oct-2019.) $)
-  bdcvv $p |- Bddc _V $=
+  bdcvv $p |- Bdd_ _V $=
     ( vx cvv cv wcel vex bdth bdelir ) ABACBDAEFG $.
 
   ${
@@ -61680,40 +61678,40 @@ $)
 
   ${
     $d x z $.  $d y z $.  $d A z $.
-    bdccsb.1 $e |- Bddc A $.
+    bdccsb.1 $e |- Bdd_ A $.
     $( A class resulting from proper substitution of a setvar for a setvar in a
        bounded class is bounded.  (Contributed by BJ, 16-Oct-2019.) $)
-    bdccsb $p |- Bddc [_ y / x ]_ A $=
+    bdccsb $p |- Bdd_ [_ y / x ]_ A $=
       ( vz cv wcel wsbc cab csb bdeli bdsbc bdcclab df-csb bdceqir ) EFCGZABFZH
       ZEIAQCJREPABECDKLMAEQCNO $.
   $}
 
   ${
     $d x A $.  $d x B $.
-    bdcdif.1 $e |- Bddc A $.
-    bdcdif.2 $e |- Bddc B $.
+    bdcdif.1 $e |- Bdd_ A $.
+    bdcdif.2 $e |- Bdd_ B $.
     $( The difference of two bounded classes is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
-    bdcdif $p |- Bddc ( A \ B ) $=
+    bdcdif $p |- Bdd_ ( A \ B ) $=
       ( vx cv wcel wn wa cab cdif bdeli ax-bdn ax-bdan bdcclab df-dif bdceqir )
       EFZAGZRBGZHZIZEJABKUBESUAEACLTEBDLMNOEABPQ $.
 
     $( The union of two bounded classes is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
-    bdcun $p |- Bddc ( A u. B ) $=
+    bdcun $p |- Bdd_ ( A u. B ) $=
       ( vx cv wcel wo cab cun bdeli ax-bdor bdcclab df-un bdceqir ) EFZAGZPBGZH
       ZEIABJSEQREACKEBDKLMEABNO $.
 
     $( The intersection of two bounded classes is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
-    bdcin $p |- Bddc ( A i^i B ) $=
+    bdcin $p |- Bdd_ ( A i^i B ) $=
       ( vx cv wcel wa cab cin bdeli ax-bdan bdcclab df-in bdceqir ) EFZAGZPBGZH
       ZEIABJSEQREACKEBDKLMEABNO $.
   $}
 
   ${
     $d y x $.  $d y A $.
-    bdss.1 $e |- Bddc A $.
+    bdss.1 $e |- Bdd_ A $.
     $( The inclusion of a setvar in a bounded class is a bounded formula.
        Note: apparently, we cannot prove from the present axioms that equality
        of two bounded classes is a bounded formula.  (Contributed by BJ,
@@ -61725,7 +61723,7 @@ $)
 
   $( The empty class is bounded.  See also ~ bdcnulALT .  (Contributed by BJ,
      3-Oct-2019.) $)
-  bdcnul $p |- Bddc (/) $=
+  bdcnul $p |- Bdd_ (/) $=
     ( vx c0 cv wcel noel bdnth bdelir ) ABACZBDHEFG $.
 
   $( Alternate proof of ~ bdcnul .  Similarly, for the next few theorems
@@ -61733,15 +61731,15 @@ $)
      followed by ~ bdceqir , or use the corresponding characterizations of its
      elements followed by ~ bdelir .  (Contributed by BJ, 3-Oct-2019.)
      (Proof modification is discouraged.)  (New usage is discouraged.) $)
-  bdcnulALT $p |- Bddc (/) $=
+  bdcnulALT $p |- Bdd_ (/) $=
     ( cvv cdif c0 bdcvv bdcdif df-nul bdceqir ) AABCAADDEFG $.
 
   ${
     $d x A $.
-    bdcpw.1 $e |- Bddc A $.
+    bdcpw.1 $e |- Bdd_ A $.
     $( The power class of a bounded class is bounded.  (Contributed by BJ,
        3-Oct-2019.) $)
-    bdcpw $p |- Bddc ~P A $=
+    bdcpw $p |- Bdd_ ~P A $=
       ( vx cv wss cab cpw bdss bdcclab df-pw bdceqir ) CDAEZCFAGLCCABHICAJK $.
   $}
 
@@ -61749,7 +61747,7 @@ $)
     $d x y $.
     $( The singleton of a setvar is bounded.  (Contributed by BJ,
        16-Oct-2019.) $)
-    bdcsn $p |- Bddc { x } $=
+    bdcsn $p |- Bdd_ { x } $=
       ( vy weq cab cv csn ax-bdeq bdcclab df-sn bdceqir ) BACZBDAEZFKBBAGHBLIJ
       $.
   $}
@@ -61757,21 +61755,21 @@ $)
   ${
     $( The pair of two setvars is bounded.  (Contributed by BJ,
        16-Oct-2019.) $)
-    bdcpr $p |- Bddc { x , y } $=
+    bdcpr $p |- Bdd_ { x , y } $=
       ( cv csn cun cpr bdcsn bdcun df-pr bdceqir ) ACZDZBCZDZEKMFLNAGBGHKMIJ $.
   $}
 
   ${
     $( The unordered triple of three setvars is bounded.  (Contributed by BJ,
        16-Oct-2019.) $)
-    bdctp $p |- Bddc { x , y , z } $=
+    bdctp $p |- Bdd_ { x , y , z } $=
       ( cv cpr csn cun ctp bdcpr bdcsn bdcun df-tp bdceqir ) ADZBDZEZCDZFZGNOQH
       PRABICJKNOQLM $.
   $}
 
   ${
     $d x A $.
-    bdsnss.1 $e |- Bddc A $.
+    bdsnss.1 $e |- Bdd_ A $.
     $( Inclusion of a singleton of a setvar in a bounded class is a bounded
        formula.  (Contributed by BJ, 16-Oct-2019.) $)
     bdsnss $p |- Bdd { x } C_ A $=
@@ -61791,7 +61789,7 @@ $)
     $d x y z $.
     $( The union of a setvar is a bounded class.  (Contributed by BJ,
        15-Oct-2019.) $)
-    bdcuni $p |- Bddc U. x $=
+    bdcuni $p |- Bdd_ U. x $=
       ( vy vz wel wa wex cab cv cuni wrex ax-bdel ax-bdex bdcclab exancom bitri
       df-rex abbii bdceqi df-uni bdceqir ) BCDZCADZECFZBGZAHZIUACUEJZBGUDUFBUAC
       ABCKLMUFUCBUFUBUAECFUCUACUEPUBUACNOQRBCUEST $.
@@ -61801,30 +61799,30 @@ $)
     $d x y z $.
     $( The intersection of a setvar is a bounded class.  (Contributed by BJ,
        16-Oct-2019.) $)
-    bdcint $p |- Bddc |^| x $=
+    bdcint $p |- Bdd_ |^| x $=
       ( vz vy wel wi wal cab cv cint wral ax-bdel ax-bdal df-ral bdcclab df-int
       bd0 bdceqir ) BADCBDZEBFZCGAHZISCRBTJSRBACBKLRBTMPNCBTOQ $.
   $}
 
   ${
     $d x y z $.  $d z A $.
-    bdciun.1 $e |- Bddc A $.
+    bdciun.1 $e |- Bdd_ A $.
     $( The indexed union of a bounded class with a setvar indexing set is a
        bounded class.  (Contributed by BJ, 16-Oct-2019.) $)
-    bdciun $p |- Bddc U_ x e. y A $=
+    bdciun $p |- Bdd_ U_ x e. y A $=
       ( vz cv wcel wrex cab ciun bdeli ax-bdex bdcclab df-iun bdceqir ) EFCGZAB
       FZHZEIAQCJREPABECDKLMAEQCNO $.
 
     $( The indexed intersection of a bounded class with a setvar indexing set
        is a bounded class.  (Contributed by BJ, 16-Oct-2019.) $)
-    bdciin $p |- Bddc |^|_ x e. y A $=
+    bdciin $p |- Bdd_ |^|_ x e. y A $=
       ( vz cv wcel wral cab ciin bdeli ax-bdal bdcclab df-iin bdceqir ) EFCGZAB
       FZHZEIAQCJREPABECDKLMAEQCNO $.
   $}
 
   $( The successor of a setvar is a bounded class.  (Contributed by BJ,
      16-Oct-2019.) $)
-  bdcsuc $p |- Bddc suc x $=
+  bdcsuc $p |- Bdd_ suc x $=
     ( cv csn cun csuc bdcv bdcsn bdcun df-suc bdceqir ) ABZKCZDKEKLAFAGHKIJ $.
 
 
@@ -61896,11 +61894,21 @@ $)
   $}
 
   ${
+    $d x y z A $.  $d y z ph $.
+    bdzfauscl.bd $e |- Bdd ph $.
+    $( Closed form of the version of ~ zfauscl for bounded formulas using
+       bounded separation.  (Contributed by BJ, 13-Nov-2019.) $)
+    bdzfauscl $p |- ( A e. V -> E. y A. x ( x e. y <-> ( x e. A /\ ph ) ) ) $=
+      ( vz wel wa wb wal wex cv wcel wceq eleq2 anbi1d bibi2d albidv exbidv
+      bdsep2 vtoclg ) BCHZBGHZAIZJZBKZCLUCBMZDNZAIZJZBKZCLGDEGMZDOZUGULCUNUFUKB
+      UNUEUJUCUNUDUIAUMDUHPQRSTABGCFUAUB $.
+  $}
+
+  ${
     $d x ph z $.  $d x y z $.
     bdbm1.3ii.bd $e |- Bdd ph $.
     bdbm1.3ii.1 $e |- E. x A. y ( ph -> y e. x ) $.
-    $( Bounded version of ~ bm1.3ii (with essentially the same proof).
-       (Contributed by BJ, 5-Oct-2019.)
+    $( Bounded version of ~ bm1.3ii .  (Contributed by BJ, 5-Oct-2019.)
        (Proof modification is discouraged.) $)
     bdbm1.3ii $p |- E. x A. y ( y e. x <-> ph ) $=
       ( vz wel wi wal wa wex weq elequ2 imbi2d albidv cbvexv mpbi bdsep2 pm3.2i
@@ -61911,9 +61919,71 @@ $)
   $}
 
   ${
-    $d x z w $.  $d y z w $.
-    $( ~ zfpair2 from bounded separation.  (Contributed by BJ, 5-Oct-2019.)
+    $d A x y $.  $d B x y $.
+    bdinex1.bd $e |- Bdd_ B $.
+    bdinex1.1 $e |- A e. _V $.
+    $( Bounded version of ~ inex1 .  (Contributed by BJ, 13-Nov-2019.)
        (Proof modification is discouraged.) $)
+    bdinex1 $p |- ( A i^i B ) e. _V $=
+      ( vx vy cin cv wceq wex wel wcel wa wal cvv bdeli bdzfauscl ax-mp dfcleq
+      wb elin bibi2i albii bitri exbii mpbir issetri ) EABGZEHZUHIZEJFEKZFHZALU
+      LBLZMZTZFNZEJZAOLUQDUMFEAOFBCPQRUJUPEUJUKULUHLZTZFNUPFUIUHSUSUOFURUNUKULA
+      BUAUBUCUDUEUFUG $.
+  $}
+
+  ${
+    bdinex2.bd $e |- Bdd_ B $.
+    bdinex2.1 $e |- A e. _V $.
+    $( Bounded version of ~ inex2 .  (Contributed by BJ, 13-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdinex2 $p |- ( B i^i A ) e. _V $=
+      ( cin cvv incom bdinex1 eqeltri ) BAEABEFBAGABCDHI $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    bdinex1g.bd $e |- Bdd_ B $.
+    $( Bounded version of ~ inex1g .  (Contributed by BJ, 13-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdinex1g $p |- ( A e. V -> ( A i^i B ) e. _V ) $=
+      ( vx cv cin cvv wcel wceq ineq1 eleq1d vex bdinex1 vtoclg ) EFZBGZHIABGZH
+      IEACPAJQRHPABKLPBDEMNO $.
+  $}
+
+  ${
+    bdssex.bd $e |- Bdd_ A $.
+    bdssex.1 $e |- B e. _V $.
+    $( Bounded version of ~ ssex .  (Contributed by BJ, 13-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdssex $p |- ( A C_ B -> A e. _V ) $=
+      ( wss cin wceq cvv wcel df-ss bdinex2 eleq1 mpbii sylbi ) ABEABFZAGZAHIZA
+      BJPOHIQBACDKOAHLMN $.
+  $}
+
+  ${
+    bdssexi.bd $e |- Bdd_ A $.
+    bdssexi.1 $e |- B e. _V $.
+    bdssexi.2 $e |- A C_ B $.
+    $( Bounded version of ~ ssexi .  (Contributed by BJ, 13-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdssexi $p |- A e. _V $=
+      ( wss cvv wcel bdssex ax-mp ) ABFAGHEABCDIJ $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    bdssexg.bd $e |- Bdd_ A $.
+    $( Bounded version of ~ ssexg .  (Contributed by BJ, 13-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdssexg $p |- ( ( A C_ B /\ B e. C ) -> A e. _V ) $=
+      ( vx wcel wss cvv cv wi wceq sseq2 imbi1d vex bdssex vtoclg impcom ) BCFA
+      BGZAHFZAEIZGZSJRSJEBCTBKUARSTBALMATDENOPQ $.
+  $}
+
+  ${
+    $d x z w $.  $d y z w $.
+    $( Proof of ~ zfpair2 using only bounded separation.  (Contributed by BJ,
+       5-Oct-2019.)  (Proof modification is discouraged.) $)
     bj-zfpair2 $p |- { x , y } e. _V $=
       ( vz vw cv cpr wceq wex wel weq wo wb wal ax-bdeq ax-bdor ax-pr bdbm1.3ii
       wcel dfcleq vex elpr bibi2i albii bitri exbii mpbir issetri ) CAEZBEZFZCE
@@ -61923,20 +61993,52 @@ $)
 
   ${
     $d x y A $.  $d x y B $.  $d x W $.
-    $( ~ prexg from bounded separation.  (Contributed by BJ, 5-Oct-2019.)
-       (Proof modification is discouraged.) $)
+    $( Proof of ~ prexg using only bounded separation.  (Contributed by BJ,
+       5-Oct-2019.)  (Proof modification is discouraged.) $)
     bj-prexg $p |- ( ( A e. V /\ B e. W ) -> { A , B } e. _V ) $=
       ( vx vy wcel cpr cvv wi wceq preq2 eleq1d bj-zfpair2 vtoclg preq1 vtocleg
       cv syl5ib imp ) ACGBDGZABHZIGZUAUCJEACUAERZBHZIGZUDAKZUCUDFRZHZIGUFFBDUHB
       KUIUEIUHBUDLMEFNOUGUEUBIUDABPMSQT $.
   $}
 
-  $( ~ snexg from bounded separation.  Note: same thing doable with ~ uniex2 ,
-     ~ uniex , ~ unex , ~ unexg , hence ~ sucex , ~ sucexg .  (Contributed by
-     BJ, 5-Oct-2019.)  (Proof modification is discouraged.) $)
+  $( ~ snexg from bounded separation.  (Contributed by BJ, 5-Oct-2019.)
+     (Proof modification is discouraged.) $)
   bj-snexg $p |- ( A e. V -> { A } e. _V ) $=
     ( wcel csn cpr cvv dfsn2 bj-prexg anidms syl5eqel ) ABCZADAAEZFAGKLFCAABBHI
     J $.
+
+  ${
+    bj-snex.1 $e |- A e. _V $.
+    $( ~ snex from bounded separation.  (Contributed by BJ, 5-Oct-2019.)
+       (Proof modification is discouraged.) $)
+    bj-snex $p |- { A } e. _V $=
+      ( cvv wcel csn bj-snexg ax-mp ) ACDAECDBACFG $.
+  $}
+
+  ${
+    $d x A $.
+    $( If a class is a set, then it is a member of a set.  (Copied from
+       set.mm.)  (Contributed by BJ, 3-Apr-2019.) $)
+    bj-sels $p |- ( A e. V -> E. x A e. x ) $=
+      ( wcel cv csn wsbc snidg csb cvv bj-snexg sbcel2g syl wceq csbvarg eleq2d
+      wb bitrd mpbird spesbcd ) BCDZBAEZDZABFZUAUCAUDGZBUDDZBCHUAUEBAUDUBIZDZUF
+      UAUDJDZUEUHQBCKZAUDBUBJLMUAUGUDBUAUIUGUDNUJAUDJOMPRST $.
+  $}
+
+$(
+  ${
+    $d x y $.
+    bdiinex.bd $e |- Bdd_ A $.
+    @( Bounded version of a strengthening of ~ iinexgm .  (Contributed by BJ,
+       13-Nov-2019.)  (Proof modification is discouraged.) @)
+    bdiinex $p |- ( E. x e. y A e. V -> |^|_ x e. y A e. _V ) $=
+    wcel.cA=cA wcel.cB=cV wph=wcel vx=vx vx.cv=vy cA=cv wph=wrex wps=? vx=vx
+    vx.cv=vy cA=cv cB=cA wcel.cA=ciin wcel.cB=cvv wch=wcel wph=? wps=? wch=?
+    wph=? wps=? wch=? syl.1=? vx=? cA=? cB=? cC=? syl.2=iinss jca.1=syl jca.2=?
+    syl.1=jca vx=vx vx.cv=vy cA=cv cB=cA cA=ciin cB=? cC=? vx=vx vy=vy cA=cA
+    bdciun.1=bdiinex.bd bdssexg.bd=bdciin syl.2=bdssexg bdiinex=syl $.
+  $}
+$)
 
   ${
     $d w x y z $.
@@ -61958,6 +62060,71 @@ $)
       DUFUCRT $.
   $}
 
+  ${
+    $d x y A $.
+    bj-uniex.1 $e |- A e. _V $.
+    $( ~ uniex from bounded separation.  (Contributed by BJ, 13-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-uniex $p |- U. A e. _V $=
+      ( vx vy cv cuni cvv wcel wceq unieq eleq1d bj-uniex2 issetri vtocl ) CEZF
+      ZGHAFZGHCABOAIPQGOAJKDPCDLMN $.
+  $}
+
+  ${
+    $d x A $.
+    $( ~ uniexg from bounded separation.  (Contributed by BJ, 13-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-uniexg $p |- ( A e. V -> U. A e. _V ) $=
+      ( vx cv cuni cvv wcel wceq unieq eleq1d vex bj-uniex vtoclg ) CDZEZFGAEZF
+      GCABNAHOPFNAIJNCKLM $.
+  $}
+
+  ${
+    bj-unex.1 $e |- A e. _V $.
+    bj-unex.2 $e |- B e. _V $.
+    $( ~ unex from bounded separation.  (Contributed by BJ, 13-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-unex $p |- ( A u. B ) e. _V $=
+      ( cpr cuni cun cvv unipr wcel bj-prexg mp2an bj-uniex eqeltrri ) ABEZFABG
+      HABCDIOAHJBHJOHJCDABHHKLMN $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    bdunex.bd1 $e |- Bdd_ A $.
+    bdunex.bd2 $e |- Bdd_ B $.
+    $( Bounded version of ~ unexb .  (Contributed by BJ, 13-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdunexb $p |- ( ( A e. _V /\ B e. _V ) <-> ( A u. B ) e. _V ) $=
+      ( vx vy cvv wcel wa cun cv wceq uneq1 eleq1d vex bj-unex wss bdssexg mpan
+      uneq2 vtocl2g ssun1 ssun2 jca impbii ) AGHZBGHZIABJZGHZEKZFKZJZGHAUKJZGHU
+      IEFABGGUJALULUMGUJAUKMNUKBLUMUHGUKBATNUJUKEOFOPUAUIUFUGAUHQUIUFABUBAUHGCR
+      SBUHQUIUGBAUCBUHGDRSUDUE $.
+  $}
+
+  ${
+    $d x y A $.  $d y B $.
+    $( ~ unexg from bounded separation.  (Contributed by BJ, 13-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-unexg $p |- ( ( A e. V /\ B e. W ) -> ( A u. B ) e. _V ) $=
+      ( vx vy cv cun cvv wcel wceq wb uneq1 eleq1 syl uneq2 vex bj-unex vtocl2g
+      ) EGZFGZHZIJZAUAHZIJZABHZIJZEFABCDTAKUBUDKUCUELTAUAMUBUDINOUABKUDUFKUEUGL
+      UABAPUDUFINOTUAEQFQRS $.
+  $}
+
+  $( ~ sucexg from bounded separation.  (Contributed by BJ, 13-Nov-2019.)
+     (Proof modification is discouraged.) $)
+  bj-sucexg $p |- ( A e. V -> suc A e. _V ) $=
+    ( wcel csn cvv cun csuc bj-snexg pm4.71i biimpi bj-unexg df-suc eleq1i 3syl
+    wa biimpri ) ABCZQADZECZOZARFZECZAGZECZQTQSABHIJARBEKUDUBUCUAEALMPN $.
+
+  ${
+    bj-sucex.1 $e |- A e. _V $.
+    $( ~ sucex from bounded separation.  (Contributed by BJ, 13-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-sucex $p |- suc A e. _V $=
+      ( cvv wcel csuc bj-sucexg ax-mp ) ACDAECDBACFG $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
