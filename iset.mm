@@ -62254,9 +62254,31 @@ the successor of each of its elements.
 
 $)
 
-  $( Axiom of infinity in a constructive setting.  See ~ omex for a proof from
-     ~ ax-iinf (using full separation).  (Contributed by BJ, 13-Nov-2019.) $)
-  ax-omex $a |- _om e. _V $.
+  ${
+    $d x y z $.
+    $( Axiom of infinity in a constructive setting.  This asserts the existence
+       of the special set we want (the set of natural numbers), instead of the
+       existence of a set with some properties ( ~ ax-iinf ) from which one
+       then proves ( ~ omex ) using full separation that the wanted set
+       exists.  (Contributed by BJ, 14-Nov-2019.) $)
+    ax-infc $a |- E. x ( ( (/) e. x /\ A. y e. x suc y e. x ) /\
+                   A. z ( ( (/) e. z /\ A. y e. z suc y e. z ) -> x C_ z ) ) $.
+  $}
+
+  ${
+    $d x y z $.
+    $( Proof of ~ omex from ~ ax-infc .  (Contributed by BJ, 14-Nov-2019.)
+       (Proof omdification is discouraged.) $)
+    bj-omex $p |- _om e. _V $=
+      ( vx vy vz com cv wceq wex wss wa c0 wcel csuc wral wi wal cab cint dfom3
+      cvv syl5eqss ax-infc crab rabab eqcomi inteqi rabid intss1 sylbir ssintab
+      vex mpan biimpri syl6sseqr anim12ci eximii eqss exbii mpbir issetri ) ADA
+      EZDFZAGUTDHZDUTHZIZAGJUTKBELZUTKBUTMIZJCEZKVEVGKBVGMIZUTVGHNCOZIVDAABCUAV
+      FVCVIVBVFDVFAPZQZUTABRUTSKZVFVKUTHAUJVLVFIZVKVFASUBZQZUTVJVNVNVJVFAUCUDUE
+      VMUTVNKVOUTHVFASUFUTVNUGUHTUKTVIUTVHCPQZDUTVPHVIVHCUTUIULCBRUMUNUOVAVDAUT
+      DUPUQURUS $.
+  $}
+
 
 $( (End of BJ's mathbox.) $)
 
