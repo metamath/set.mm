@@ -13730,6 +13730,7 @@ New usage of "5oalem6" is discouraged (1 uses).
 New usage of "5oalem7" is discouraged (1 uses).
 New usage of "a1iiOLD" is discouraged (0 uses).
 New usage of "abeq1iOLD" is discouraged (0 uses).
+New usage of "abeq2iOLD" is discouraged (0 uses).
 New usage of "ablo32" is discouraged (5 uses).
 New usage of "ablo4" is discouraged (5 uses).
 New usage of "ablocom" is discouraged (9 uses).
@@ -18305,6 +18306,7 @@ Proof modification of "3ornot23VD" is discouraged (74 steps).
 Proof modification of "a1ii" is discouraged (9 steps).
 Proof modification of "a1iiOLD" is discouraged (8 steps).
 Proof modification of "abeq1iOLD" is discouraged (19 steps).
+Proof modification of "abeq2iOLD" is discouraged (19 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
