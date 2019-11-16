@@ -14540,6 +14540,7 @@ New usage of "cbv1OLD" is discouraged (0 uses).
 New usage of "cbv1hOLD" is discouraged (1 uses).
 New usage of "cbv2OLD" is discouraged (0 uses).
 New usage of "cbv3hOLD" is discouraged (0 uses).
+New usage of "cbvabOLD" is discouraged (0 uses).
 New usage of "cbvex2OLD" is discouraged (0 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
 New usage of "cdj1i" is discouraged (0 uses).
@@ -18615,6 +18616,7 @@ Proof modification of "cbv1OLD" is discouraged (17 steps).
 Proof modification of "cbv1hOLD" is discouraged (89 steps).
 Proof modification of "cbv2OLD" is discouraged (17 steps).
 Proof modification of "cbv3hOLD" is discouraged (48 steps).
+Proof modification of "cbvabOLD" is discouraged (77 steps).
 Proof modification of "cbvex2OLD" is discouraged (94 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
 Proof modification of "ceqsalgALT" is discouraged (58 steps).
