@@ -13729,6 +13729,8 @@ New usage of "5oalem5" is discouraged (1 uses).
 New usage of "5oalem6" is discouraged (1 uses).
 New usage of "5oalem7" is discouraged (1 uses).
 New usage of "a1iiOLD" is discouraged (0 uses).
+New usage of "abbi1dvOLD" is discouraged (0 uses).
+New usage of "abbiOLD" is discouraged (0 uses).
 New usage of "abeq1iOLD" is discouraged (0 uses).
 New usage of "abeq2iOLD" is discouraged (0 uses).
 New usage of "ablo32" is discouraged (5 uses).
@@ -14538,6 +14540,7 @@ New usage of "cbv1OLD" is discouraged (0 uses).
 New usage of "cbv1hOLD" is discouraged (1 uses).
 New usage of "cbv2OLD" is discouraged (0 uses).
 New usage of "cbv3hOLD" is discouraged (0 uses).
+New usage of "cbvabOLD" is discouraged (0 uses).
 New usage of "cbvex2OLD" is discouraged (0 uses).
 New usage of "cbvexsv" is discouraged (2 uses).
 New usage of "cdj1i" is discouraged (0 uses).
@@ -18305,6 +18308,8 @@ Proof modification of "3ornot23" is discouraged (28 steps).
 Proof modification of "3ornot23VD" is discouraged (74 steps).
 Proof modification of "a1ii" is discouraged (9 steps).
 Proof modification of "a1iiOLD" is discouraged (8 steps).
+Proof modification of "abbi1dvOLD" is discouraged (24 steps).
+Proof modification of "abbiOLD" is discouraged (88 steps).
 Proof modification of "abeq1iOLD" is discouraged (19 steps).
 Proof modification of "abeq2iOLD" is discouraged (19 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
@@ -18611,6 +18616,7 @@ Proof modification of "cbv1OLD" is discouraged (17 steps).
 Proof modification of "cbv1hOLD" is discouraged (89 steps).
 Proof modification of "cbv2OLD" is discouraged (17 steps).
 Proof modification of "cbv3hOLD" is discouraged (48 steps).
+Proof modification of "cbvabOLD" is discouraged (77 steps).
 Proof modification of "cbvex2OLD" is discouraged (94 steps).
 Proof modification of "cbvexsv" is discouraged (29 steps).
 Proof modification of "ceqsalgALT" is discouraged (58 steps).
