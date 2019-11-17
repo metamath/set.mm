@@ -14821,6 +14821,7 @@ New usage of "chub2" is discouraged (14 uses).
 New usage of "chub2i" is discouraged (24 uses).
 New usage of "chunssji" is discouraged (0 uses).
 New usage of "circgrp" is discouraged (0 uses).
+New usage of "clelabOLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
 New usage of "cleqhOLD" is discouraged (0 uses).
 New usage of "clmgm" is discouraged (1 uses).
@@ -16935,7 +16936,10 @@ New usage of "natded" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "neleqtrrdOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
+New usage of "nfceqiOLD" is discouraged (0 uses).
 New usage of "nfdiOLD" is discouraged (0 uses).
+New usage of "nfelOLD" is discouraged (0 uses).
+New usage of "nfeqOLD" is discouraged (0 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfeud2OLD" is discouraged (0 uses).
 New usage of "nic-ax" is discouraged (7 uses).
@@ -18625,6 +18629,7 @@ Proof modification of "ceqsex3vOLD" is discouraged (7 steps).
 Proof modification of "cfilucfil2OLD" is discouraged (120 steps).
 Proof modification of "cfilucfilOLD" is discouraged (805 steps).
 Proof modification of "chordthmALT" is discouraged (440 steps).
+Proof modification of "clelabOLD" is discouraged (83 steps).
 Proof modification of "cleljust" is discouraged (25 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
 Proof modification of "cleqhOLD" is discouraged (108 steps).
@@ -19178,7 +19183,10 @@ Proof modification of "mvridlemOLD" is discouraged (129 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "neleqtrrdOLD" is discouraged (15 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
+Proof modification of "nfceqiOLD" is discouraged (43 steps).
 Proof modification of "nfdiOLD" is discouraged (26 steps).
+Proof modification of "nfelOLD" is discouraged (40 steps).
+Proof modification of "nfeqOLD" is discouraged (37 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfeud2OLD" is discouraged (83 steps).
 Proof modification of "nic-ax" is discouraged (142 steps).
