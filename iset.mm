@@ -12138,8 +12138,9 @@ $)
 
   ${
     19.41h.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.41 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.)
-       (Proof shortened by Andrew Salmon, 25-May-2011.) $)
+    $( Theorem 19.41 of [Margaris] p. 90.  New proofs should use ~ 19.41
+       instead.  (Contributed by NM, 5-Aug-1993.)  (Proof shortened by Andrew
+       Salmon, 25-May-2011.)  (New usage is discouraged.) $)
     19.41h $p |- ( E. x ( ph /\ ps ) <-> ( E. x ph /\ ps ) ) $=
       ( wa wex 19.40 id exlimih anim2i syl pm3.21 eximdh impcom impbii ) ABEZCF
       ZACFZBEZQRBCFZESABCGTBRBBCDBHIJKBRQBAPCDBALMNO $.
@@ -12157,7 +12158,9 @@ $)
 
   ${
     19.42h.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.42 of [Margaris] p. 90.  (Contributed by NM, 18-Aug-1993.) $)
+    $( Theorem 19.42 of [Margaris] p. 90.  New proofs should use ~ 19.42
+       instead.  (Contributed by NM, 18-Aug-1993.)
+       (New usage is discouraged.) $)
     19.42h $p |- ( E. x ( ph /\ ps ) <-> ( ph /\ E. x ps ) ) $=
       ( wa wex 19.41h exancom ancom 3bitr4i ) BAECFBCFZAEABECFAKEBACDGABCHAKIJ
       $.
