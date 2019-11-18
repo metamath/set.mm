@@ -13532,24 +13532,30 @@
 "wl-con4i" is used by "wl-a1i".
 "wl-id" is used by "wl-notnot2".
 "wl-imim2" is used by "wl-ax2".
+"wl-imim2i" is used by "wl-impchain-mp-1".
+"wl-imim2i" is used by "wl-impchain-mp-2".
 "wl-imim2i" is used by "wl-ja".
 "wl-imim2i" is used by "wl-syl6".
-"wl-impchain-0-syl" is used by "wl-impchain-1-syl".
-"wl-impchain-0-syl" is used by "wl-impchain-2-com1x".
-"wl-impchain-1-com1x" is used by "wl-impchain-2-com1x".
-"wl-impchain-1-syl" is used by "wl-impchain-2-syl".
-"wl-impchain-1-syl" is used by "wl-impchain-3-com1x".
-"wl-impchain-2-com1x" is used by "wl-impchain-3-com1x".
-"wl-impchain-2-com1x" is used by "wl-impchain-3-com2x".
-"wl-impchain-2-syl" is used by "wl-impchain-4-com1x".
-"wl-impchain-3-com1x" is used by "wl-impchain-3-com2x".
-"wl-impchain-3-com1x" is used by "wl-impchain-4-com1x".
+"wl-impchain-com-1.1" is used by "wl-impchain-com-1.2".
+"wl-impchain-com-1.2" is used by "wl-impchain-com-1.3".
+"wl-impchain-com-1.2" is used by "wl-impchain-com-2.3".
+"wl-impchain-com-1.2" is used by "wl-impchain-com-2.4".
+"wl-impchain-com-1.2" is used by "wl-impchain-com-3.2.1".
+"wl-impchain-com-1.3" is used by "wl-impchain-com-1.4".
+"wl-impchain-com-1.3" is used by "wl-impchain-com-2.3".
+"wl-impchain-com-1.4" is used by "wl-impchain-com-2.4".
+"wl-impchain-com-2.3" is used by "wl-impchain-com-3.2.1".
+"wl-impchain-mp-0" is used by "wl-impchain-com-1.2".
+"wl-impchain-mp-0" is used by "wl-impchain-mp-1".
+"wl-impchain-mp-1" is used by "wl-impchain-com-1.3".
+"wl-impchain-mp-1" is used by "wl-impchain-mp-2".
+"wl-impchain-mp-2" is used by "wl-impchain-com-1.4".
 "wl-ja" is used by "wl-ax2".
 "wl-mpi" is used by "wl-imim2i".
 "wl-mps" is used by "wl-syls1".
-"wl-pm2.04" is used by "wl-impchain-2-com1x".
-"wl-pm2.04" is used by "wl-impchain-3-com1x".
-"wl-pm2.04" is used by "wl-impchain-4-com1x".
+"wl-pm2.04" is used by "wl-impchain-com-1.2".
+"wl-pm2.04" is used by "wl-impchain-com-1.3".
+"wl-pm2.04" is used by "wl-impchain-com-1.4".
 "wl-pm2.18d" is used by "wl-con1i".
 "wl-pm2.18d" is used by "wl-con4i".
 "wl-pm2.18d" is used by "wl-ja".
@@ -13733,6 +13739,7 @@ New usage of "abbi1dvOLD" is discouraged (0 uses).
 New usage of "abbiOLD" is discouraged (0 uses).
 New usage of "abeq1iOLD" is discouraged (0 uses).
 New usage of "abeq2iOLD" is discouraged (0 uses).
+New usage of "abid2fOLD" is discouraged (0 uses).
 New usage of "ablo32" is discouraged (5 uses).
 New usage of "ablo4" is discouraged (5 uses).
 New usage of "ablocom" is discouraged (9 uses).
@@ -14823,6 +14830,7 @@ New usage of "chunssji" is discouraged (0 uses).
 New usage of "circgrp" is discouraged (0 uses).
 New usage of "clelabOLD" is discouraged (0 uses).
 New usage of "cleljustALT" is discouraged (0 uses).
+New usage of "cleqfOLD" is discouraged (0 uses).
 New usage of "cleqhOLD" is discouraged (0 uses).
 New usage of "clmgm" is discouraged (1 uses).
 New usage of "cm0" is discouraged (1 uses).
@@ -15692,6 +15700,7 @@ New usage of "exinst" is discouraged (1 uses).
 New usage of "exinst01" is discouraged (1 uses).
 New usage of "exinst11" is discouraged (1 uses).
 New usage of "exlimexi" is discouraged (2 uses).
+New usage of "exmidneOLD" is discouraged (0 uses).
 New usage of "exmoeuOLD" is discouraged (0 uses).
 New usage of "expcomdg" is discouraged (0 uses).
 New usage of "expghmOLD" is discouraged (0 uses).
@@ -18186,16 +18195,17 @@ New usage of "wl-embantALT" is discouraged (0 uses).
 New usage of "wl-embantd" is discouraged (0 uses).
 New usage of "wl-id" is discouraged (1 uses).
 New usage of "wl-imim2" is discouraged (1 uses).
-New usage of "wl-imim2i" is discouraged (2 uses).
-New usage of "wl-impchain-0-com1x" is discouraged (0 uses).
-New usage of "wl-impchain-0-syl" is discouraged (2 uses).
-New usage of "wl-impchain-1-com1x" is discouraged (1 uses).
-New usage of "wl-impchain-1-syl" is discouraged (2 uses).
-New usage of "wl-impchain-2-com1x" is discouraged (2 uses).
-New usage of "wl-impchain-2-syl" is discouraged (1 uses).
-New usage of "wl-impchain-3-com1x" is discouraged (2 uses).
-New usage of "wl-impchain-3-com2x" is discouraged (0 uses).
-New usage of "wl-impchain-4-com1x" is discouraged (0 uses).
+New usage of "wl-imim2i" is discouraged (4 uses).
+New usage of "wl-impchain-com-1.1" is discouraged (1 uses).
+New usage of "wl-impchain-com-1.2" is discouraged (4 uses).
+New usage of "wl-impchain-com-1.3" is discouraged (2 uses).
+New usage of "wl-impchain-com-1.4" is discouraged (1 uses).
+New usage of "wl-impchain-com-2.3" is discouraged (1 uses).
+New usage of "wl-impchain-com-2.4" is discouraged (0 uses).
+New usage of "wl-impchain-com-3.2.1" is discouraged (0 uses).
+New usage of "wl-impchain-mp-0" is discouraged (2 uses).
+New usage of "wl-impchain-mp-1" is discouraged (2 uses).
+New usage of "wl-impchain-mp-2" is discouraged (1 uses).
 New usage of "wl-ja" is discouraged (1 uses).
 New usage of "wl-jarli" is discouraged (0 uses).
 New usage of "wl-jarri" is discouraged (0 uses).
@@ -18316,6 +18326,7 @@ Proof modification of "abbi1dvOLD" is discouraged (24 steps).
 Proof modification of "abbiOLD" is discouraged (88 steps).
 Proof modification of "abeq1iOLD" is discouraged (19 steps).
 Proof modification of "abeq2iOLD" is discouraged (19 steps).
+Proof modification of "abid2fOLD" is discouraged (49 steps).
 Proof modification of "abscncfALT" is discouraged (71 steps).
 Proof modification of "ackm" is discouraged (71 steps).
 Proof modification of "addltmulALT" is discouraged (497 steps).
@@ -18632,6 +18643,7 @@ Proof modification of "chordthmALT" is discouraged (440 steps).
 Proof modification of "clelabOLD" is discouraged (83 steps).
 Proof modification of "cleljust" is discouraged (25 steps).
 Proof modification of "cleljustALT" is discouraged (25 steps).
+Proof modification of "cleqfOLD" is discouraged (66 steps).
 Proof modification of "cleqhOLD" is discouraged (108 steps).
 Proof modification of "cnaddcom" is discouraged (71 steps).
 Proof modification of "cnexALT" is discouraged (52 steps).
@@ -18960,6 +18972,7 @@ Proof modification of "exinst" is discouraged (12 steps).
 Proof modification of "exinst01" is discouraged (16 steps).
 Proof modification of "exinst11" is discouraged (21 steps).
 Proof modification of "exlimexi" is discouraged (15 steps).
+Proof modification of "exmidneOLD" is discouraged (21 steps).
 Proof modification of "exmoeuOLD" is discouraged (44 steps).
 Proof modification of "f1oweALT" is discouraged (805 steps).
 Proof modification of "fisucdomOLD" is discouraged (90 steps).
@@ -19527,15 +19540,16 @@ Proof modification of "wl-embantd" is discouraged (11 steps).
 Proof modification of "wl-id" is discouraged (12 steps).
 Proof modification of "wl-imim2" is discouraged (14 steps).
 Proof modification of "wl-imim2i" is discouraged (15 steps).
-Proof modification of "wl-impchain-0-com1x" is discouraged (1 steps).
-Proof modification of "wl-impchain-0-syl" is discouraged (5 steps).
-Proof modification of "wl-impchain-1-com1x" is discouraged (1 steps).
-Proof modification of "wl-impchain-1-syl" is discouraged (13 steps).
-Proof modification of "wl-impchain-2-com1x" is discouraged (22 steps).
-Proof modification of "wl-impchain-2-syl" is discouraged (14 steps).
-Proof modification of "wl-impchain-3-com1x" is discouraged (25 steps).
-Proof modification of "wl-impchain-3-com2x" is discouraged (18 steps).
-Proof modification of "wl-impchain-4-com1x" is discouraged (28 steps).
+Proof modification of "wl-impchain-com-1.1" is discouraged (1 steps).
+Proof modification of "wl-impchain-com-1.2" is discouraged (22 steps).
+Proof modification of "wl-impchain-com-1.3" is discouraged (25 steps).
+Proof modification of "wl-impchain-com-1.4" is discouraged (28 steps).
+Proof modification of "wl-impchain-com-2.3" is discouraged (18 steps).
+Proof modification of "wl-impchain-com-2.4" is discouraged (23 steps).
+Proof modification of "wl-impchain-com-3.2.1" is discouraged (12 steps).
+Proof modification of "wl-impchain-mp-0" is discouraged (5 steps).
+Proof modification of "wl-impchain-mp-1" is discouraged (13 steps).
+Proof modification of "wl-impchain-mp-2" is discouraged (14 steps).
 Proof modification of "wl-ja" is discouraged (20 steps).
 Proof modification of "wl-jarli" is discouraged (11 steps).
 Proof modification of "wl-jarri" is discouraged (10 steps).
