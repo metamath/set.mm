@@ -37672,9 +37672,9 @@ $)
 
   ${
     $d x y z $.
-    $( Zero is a natural number.  One of Peano's 5 postulates for arithmetic.
-       Proposition 7.30(1) of [TakeutiZaring] p. 42.  (Contributed by NM,
-       15-May-1994.) $)
+    $( Zero is a natural number.  One of Peano's five postulates for
+       arithmetic.  Proposition 7.30(1) of [TakeutiZaring] p. 42.  (Contributed
+       by NM, 15-May-1994.) $)
     peano1 $p |- (/) e. _om $=
       ( vy vx vz c0 cv wcel csuc wral wa cab cint com wi 0ex wsb df-clab ax-ia1
       elint sbimi clelsb4 sylib sylbi mpgbir dfom3 eleqtrri ) DDAEZFZBEGUFFBUFH
@@ -37685,7 +37685,7 @@ $)
   ${
     $d x y z A $.
     $( The successor of any natural number is a natural number.  One of Peano's
-       5 postulates for arithmetic.  Proposition 7.30(2) of [TakeutiZaring]
+       five postulates for arithmetic.  Proposition 7.30(2) of [TakeutiZaring]
        p. 42.  (Contributed by NM, 3-Sep-2003.) $)
     peano2 $p |- ( A e. _om -> suc A e. _om ) $=
       ( vy vx vz cvv wcel com csuc cv wa wi wb imbi12d adantl wsb wal sylib nfv
@@ -37701,14 +37701,14 @@ $)
       AWIEVIVRVTEFWLXMLAEVJDVTWIEVIVKMVLVMGWJABCVNZVOGWJVTXNVOVPVQ $.
   $}
 
-  $( The successor of any natural number is not zero.  One of Peano's 5
+  $( The successor of any natural number is not zero.  One of Peano's five
      postulates for arithmetic.  Proposition 7.30(3) of [TakeutiZaring] p. 42.
      (Contributed by NM, 3-Sep-2003.) $)
   peano3 $p |- ( A e. _om -> suc A =/= (/) ) $=
     ( com nsuceq0g ) ABC $.
 
   $( Two natural numbers are equal iff their successors are equal, i.e. the
-     successor function is one-to-one.  One of Peano's 5 postulates for
+     successor function is one-to-one.  One of Peano's five postulates for
      arithmetic.  Proposition 7.30(4) of [TakeutiZaring] p. 43.  (Contributed
      by NM, 3-Sep-2003.) $)
   peano4 $p |- ( ( A e. _om /\ B e. _om ) -> ( suc A = suc B <-> A = B ) ) $=
@@ -37717,7 +37717,7 @@ $)
   ${
     $d x y A $.
     $( The induction postulate: any class containing zero and closed under the
-       successor operation contains all natural numbers.  One of Peano's 5
+       successor operation contains all natural numbers.  One of Peano's five
        postulates for arithmetic.  Proposition 7.30(5) of [TakeutiZaring]
        p. 43.  The more traditional statement of mathematical induction as a
        theorem schema, with a basis and an induction step, is derived from this
@@ -61152,13 +61152,15 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
-  $( Double negation of excluded middle.  (Contributed by BJ, 9-Oct-2019.) $)
+  $( Double negation of excluded middle.  Intuitionistic logic refutes the
+     negation of excluded middle (but, of course, does not prove excluded
+     middle) for any formula.  (Contributed by BJ, 9-Oct-2019.) $)
   nnexmid $p |- -. -. ( ph \/ -. ph ) $=
     ( wn wo wa pm3.24 ioran mtbir ) AABZCBHHBDHEAHFG $.
 
-  $( Double negation of excluded middle.  Intuitionistic logic refutes
-     undecidability (but, of course, does not prove decidability) of any
-     formula.  (Contributed by BJ, 9-Oct-2019.) $)
+  $( Double negation of decidability of a formula.  Intuitionistic logic
+     refutes undecidability (but, of course, does not prove decidability) of
+     any formula.  (Contributed by BJ, 9-Oct-2019.) $)
   nndc $p |- -. -. DECID ph $=
     ( wdc wn wo nnexmid df-dc notbii mtbir ) ABZCAACDZCAEIJAFGH $.
 
@@ -61919,6 +61921,37 @@ $)
   $}
 
   ${
+    $d x y z $.
+    $( ~ nalset from bounded separation.  (Contributed by BJ, 18-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-nalset $p |- -. E. x A. y y e. x $=
+      ( vz wel wn wex wal alexnim wa wb ax-bdel ax-bdn bdsep2 weq elequ1 elequ2
+      bitrd notbid anbi12d bibi12d spv pclem6 syl eximii mpg ) BADZEZBFUFBGAFEA
+      UFABHCBDZCADZCCDZEZIZJZCGZUGBUKCABUJCCKLMUNBBDZUFUOEZIZJZUGUMURCBCBNZUHUO
+      ULUQCBBOUSUIUFUKUPCBAOUSUJUOUSUJBCDUOCBCOCBBPQRSTUAUOUFUBUCUDUE $.
+  $}
+
+  ${
+    $d x y $.
+    $( ~ vprc from bounded separation.  (Contributed by BJ, 18-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-vprc $p |- -. _V e. _V $=
+      ( vx vy cvv wcel cv wceq wex wal bj-nalset wb vex tbt albii dfcleq bitr4i
+      exbii mtbi isset mtbir ) CCDAEZCFZAGZBEZTDZBHZAGUBABIUEUAAUEUDUCCDZJZBHUA
+      UDUGBUFUDBKLMBTCNOPQACRS $.
+  $}
+
+  $( ~ nvel from bounded separation.  (Contributed by BJ, 18-Nov-2019.)
+     (Proof modification is discouraged.) $)
+  bj-nvel $p |- -. _V e. A $=
+    ( cvv wcel bj-vprc elex mto ) BACBBCDBAEF $.
+
+  $( ~ vnex from bounded separation.  (Contributed by BJ, 18-Nov-2019.)
+     (Proof modification is discouraged.) $)
+  bj-vnex $p |- -. E. x x = _V $=
+    ( cvv wcel cv wceq wex bj-vprc isset mtbi ) BBCADBEAFGABHI $.
+
+  ${
     $d A x y $.  $d B x y $.
     bdinex1.bd $e |- Bdd_ B $.
     bdinex1.1 $e |- A e. _V $.
@@ -61979,6 +62012,30 @@ $)
       ( vx wcel wss cvv cv wi wceq sseq2 imbi1d vex bdssex vtoclg impcom ) BCFA
       BGZAHFZAEIZGZSJRSJEBCTBKUARSTBALMATDENOPQ $.
   $}
+
+  ${
+    bdssexd.1 $e |- ( ph -> B e. C ) $.
+    bdssexd.2 $e |- ( ph -> A C_ B ) $.
+    bdssexd.bd $e |- Bdd_ A $.
+    $( Bounded version of ~ ssexd .  (Contributed by BJ, 13-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdssexd $p |- ( ph -> A e. _V ) $=
+      ( wss wcel cvv bdssexg syl2anc ) ABCHCDIBJIFEBCDGKL $.
+  $}
+
+  ${
+    $d x A $.
+    $( ~ vnex from bounded separation.  (Contributed by BJ, 18-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-intexr $p |- ( |^| A e. _V -> A =/= (/) ) $=
+      ( cint cvv wcel c0 wceq bj-vprc inteq int0 syl6eq eleq1d mtbiri necon2ai
+      ) ABZCDZAEAEFZOCCDGPNCCPNEBCAEHIJKLM $.
+  $}
+
+  $( ~ vnex from bounded separation.  (Contributed by BJ, 18-Nov-2019.)
+     (Proof modification is discouraged.) $)
+  bj-intnexr $p |- ( |^| A = _V -> -. |^| A e. _V ) $=
+    ( cint cvv wceq wcel bj-vprc eleq1 mtbiri ) ABZCDICECCEFICCGH $.
 
   ${
     $d x z w $.  $d y z w $.
@@ -62268,7 +62325,7 @@ $)
   ${
     $d x y z $.
     $( Proof of ~ omex from ~ ax-infc .  (Contributed by BJ, 14-Nov-2019.)
-       (Proof omdification is discouraged.) $)
+       (Proof modification is discouraged.) $)
     bj-omex $p |- _om e. _V $=
       ( vx vy vz com cv wceq wex wss wa c0 wcel csuc wral wi wal cab cint dfom3
       cvv syl5eqss ax-infc crab rabab eqcomi inteqi rabid intss1 sylbir ssintab
@@ -62277,6 +62334,131 @@ $)
       FVCVIVBVFDVFAPZQZUTABRUTSKZVFVKUTHAUJVLVFIZVKVFASUBZQZUTVJVNVNVJVFAUCUDUE
       VMUTVNKVOUTHVFASUFUTVNUGUHTUKTVIUTVHCPQZDUTVPHVIVHCUTUIULCBRUMUNUOVAVDAUT
       DUPUQURUS $.
+  $}
+
+  ${
+    $d x y z A $.
+    $( Constructive proof of ~ peano2 .  (Contributed by BJ, 18-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-peano2 $p |- ( A e. _om -> suc A e. _om ) $=
+      ( vy vx vz cvv wcel com csuc cv wa wi wb imbi12d adantl wsb wal sylib nfv
+      wral nfan elex c0 cab cint ax-ia1 wceq eleq1 eleq1d df-clab ax-ia2 df-ral
+      suceq sbimi sbim elsb4 clelsb4 imbi12i bitri sbalv sylbi nfra1 nfsab nfvd
+      19.21bi nfcvd vtocldf ralrimiva ralim elintg bj-sucexg syl syl5ibr eleq2i
+      mpd dfom3 3imtr4g mpcom ) AEFZAGFZAHZGFZAGUAVRAUBBIZFZCIZHZWBFZCWBSZJZBUC
+      ZUDZFZVTWJFZVSWAVRADIZFZVTWMFZKZDWISZWKWLKZVRWPDWIVRWMWIFZJZWDWMFZWEWMFZK
+      ZWPCAEVRWSUEWDAUFZXCWPLWTXDXAWNXBWOWDAWMUGXDWEVTWMWDAULUHMNWSXCVRWSXCCWSW
+      HBDOZXCCPZWHDBUIXEWDWBFZWFKZCPZBDOXFWHXIBDWHWGXIWCWGUJWFCWBUKQUMXHXCBDCXH
+      BDOXGBDOZWFBDOZKXCXGWFBDUNXJXAXKXBDBCUODBWEUPUQURUSQUTVDNVRWSCVRCRWHCBDWC
+      WGCWCCRWFCWBVATVBTWTCAVEWTWPCVCVFVGWQWRVRWNDWISZWODWISZKWNWODWIVHVRWKXLWL
+      XMDAWIEVIVRVTEFWLXMLAEVJDVTWIEVIVKMVLVNGWJABCVOZVMGWJVTXNVMVPVQ $.
+  $}
+
+  ${
+    $d x y A $.
+    bdpeano5.1 $e |- Bdd_ A $.
+    $( Bounded version of ~ peano5 .  (Contributed by BJ, 18-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdpeano5 $p |- ( ( (/) e. A /\
+                 A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) $=
+      ( vy c0 wcel cv csuc wi com wral cin wss cab elin wal df-ral sylibr eleq2
+      wa cint dfom3 peano1 mpbiran biimpri bj-peano2 adantr pm3.31 jcad imbi12i
+      a1i alimi albii 3imtr4i anim12i bj-omex bdinex1 raleqbi1dv anbi12d intss1
+      wceq elab syl syl5eqss ssid biantrur ssin bitri ) EBFZAGZBFZVJHZBFZIZAJKZ
+      TZJJBLZMZJBMZVPJEDGZFZVLVTFZAVTKZTZDNZUAZVQDAUBVPVQWEFZWFVQMVPEVQFZVLVQFZ
+      AVQKZTZWGVIWHVOWJWHVIWHEJFVIUCEJBOUDUEVOVJVQFZWIIZAPZWJVJJFZVNIZAPWOVKTZV
+      LJFZVMTZIZAPVOWNWPWTAWPWQWRVMWQWRIWPWOWRVKVJUFUGUKWOVKVMUHUIULVNAJQWMWTAW
+      LWQWIWSVJJBOVLJBOUJUMUNWIAVQQRUOWDWKDVQJBCUPUQVTVQVAWAWHWCWJVTVQESWBWIAVT
+      VQVTVQVLSURUSVBRVQWEUTVCVDVSJJMZVSTVRXAVSJVEVFJJBVGVHR $.
+  $}
+
+  ${
+    $d x A $.
+    bdfind.bd $e |- Bdd_ A $.
+    bdfind.1 $e |- ( A C_ _om /\ (/) e. A /\ A. x e. A suc x e. A ) $.
+    $( Bounded version of ~ find .  (Contributed by BJ, 18-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdfind $p |- A = _om $=
+      ( com wss c0 wcel cv csuc wral simp1i wi wa w3a 3simpc ax-mp df-ral alral
+      wal sylbi anim2i bdpeano5 eqssi ) BEBEFZGBHZAIZJBHZABKZDLUFUGBHUHMZAEKZNZ
+      EBFUFUINZULUEUFUIOUMDUEUFUIPQUIUKUFUIUJATUKUHABRUJAESUAUBQABCUCQUD $.
+  $}
+
+  ${
+    $d x y $.  $d x A $.  $d x ps $.  $d x ch $.  $d x th $.  $d x ta $.
+    $d y ph $.
+    bdfinds.bd $e |- Bdd ph $.
+    $( Substitutions. $)
+    bdfinds.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.
+    bdfinds.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    bdfinds.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.
+    bdfinds.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
+    $( Basis. $)
+    bdfinds.5 $e |- ps $.
+    $( Induction step. $)
+    bdfinds.6 $e |- ( y e. _om -> ( ch -> th ) ) $.
+    $( Bounded version of ~ finds .  (Contributed by BJ, 18-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdfinds $p |- ( A e. _om -> ta ) $=
+      ( com wcel cab c0 elab cv csuc wi wral wss 0ex mpbir vex bj-sucex 3imtr4g
+      rgen bdcclab bdpeano5 mp2an sseli elabg mpbid ) HPQHAFRZQEPURHSURQZGUAZUR
+      QZUTUBZURQZUCZGPUDPURUEUSBNABFSUFJTUGVDGPUTPQCDVAVCOACFUTGUHZKTADFVBUTVEU
+      ILTUJUKGURAFIULUMUNUOAEFHPMUPUQ $.
+  $}
+
+  ${
+    $d x y ta $.  $d x ps $.  $d x ch $.  $d x th $.  $d y ph $.
+    bdfinds2.bd $e |- Bdd ph $.
+    bdfinds2.bd2 $e |- Bdd ta $.
+    $( Substitutions. $)
+    bdfinds2.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.
+    bdfinds2.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    bdfinds2.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.
+    $( Basis. $)
+    bdfinds2.4 $e |- ( ta -> ps ) $.
+    $( Induction step. $)
+    bdfinds2.5 $e |- ( y e. _om -> ( ta -> ( ch -> th ) ) ) $.
+    $( Bounded version of ~ finds2 .  (Contributed by BJ, 18-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdfinds2 $p |- ( x e. _om -> ( ta -> ph ) ) $=
+      ( com wcel wi c0 wceq imbi2d cv cab csuc wral wss 0ex elab mpbir bj-sucex
+      a2d vex 3imtr4g rgen ax-bdim bdcclab bdpeano5 mp2an sseli abid sylib ) FU
+      AZOPVAEAQZFUBZPVBOVCVARVCPZGUAZVCPZVEUCZVCPZQZGOUDOVCUEVDEBQZMVBVJFRUFVAR
+      SABEJTUGUHVIGOVEOPZECQZEDQZVFVHVKECDNUJVBVLFVEGUKZVAVESACEKTUGVBVMFVGVEVN
+      UIVAVGSADELTUGULUMGVCVBFEAIHUNUOUPUQURVBFUSUT $.
+  $}
+
+  ${
+    $d x y $.  $d x ps $.  $d x ch $.  $d x th $.  $d y ph $.
+    bdfinds1.bd $e |- Bdd ph $.
+    $( Substitutions. $)
+    bdfinds1.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.
+    bdfinds1.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
+    bdfinds1.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.
+    $( Basis. $)
+    bdfinds1.4 $e |- ps $.
+    $( Induction step. $)
+    bdfinds1.5 $e |- ( y e. _om -> ( ch -> th ) ) $.
+    $( Bounded version of ~ finds1 .  (Contributed by BJ, 18-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdfinds1 $p |- ( x e. _om -> ph ) $=
+      ( cv com wcel wtru tru bdtru a1i wi a1d bdfinds2 mpi ) EMNOPAQABCDPEFGRHI
+      JBPKSFMNOCDTPLUAUBUC $.
+  $}
+
+  ${
+    $d x y z $.  $d y z ph $.
+    bdfindes.bd $e |- Bdd ph $.
+    bdfindes.1 $e |- [. (/) / x ]. ph $.
+    bdfindes.2 $e |- ( x e. _om -> ( ph -> [. suc x / x ]. ph ) ) $.
+    $( Bounded version of ~ findes .  (Contributed by BJ, 18-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdfindes $p |- ( x e. _om -> ph ) $=
+      ( vz vy wsb c0 wsbc cv csuc ax-bdsb dfsbcq2 sbequ com wcel nfim imbi12d
+      wi sbequ12r nfv nfs1v nfsbc1v weq eleq1 sbequ12 wb suceq dfsbcq syl chvar
+      wceq bdfinds ) ABFHABIJABGHZABGKZLZJZAFGBKZABFCMABFINAFGBOABFUQNAFBUADUSP
+      QZAABUSLZJZTZTUPPQZUOURTZTBGVDVEBVDBUBUOURBABGUCABUQUDRRBGUEZUTVDVCVEUSUP
+      PUFVFAUOVBURABGUGVFVAUQUMVBURUHUSUPUIABVAUQUJUKSSEULUN $.
   $}
 
 
