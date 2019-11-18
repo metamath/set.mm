@@ -16945,6 +16945,7 @@ New usage of "natded" is discouraged (0 uses).
 New usage of "neeq1OLD" is discouraged (0 uses).
 New usage of "neeq1dOLD" is discouraged (0 uses).
 New usage of "neeq2OLD" is discouraged (0 uses).
+New usage of "neeq2dOLD" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "neleqtrrdOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
@@ -19200,6 +19201,7 @@ Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "neeq1OLD" is discouraged (32 steps).
 Proof modification of "neeq1dOLD" is discouraged (17 steps).
 Proof modification of "neeq2OLD" is discouraged (32 steps).
+Proof modification of "neeq2dOLD" is discouraged (17 steps).
 Proof modification of "neleqtrrdOLD" is discouraged (15 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfceqiOLD" is discouraged (43 steps).
