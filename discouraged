@@ -16942,6 +16942,7 @@ New usage of "mvridlemOLD" is discouraged (1 uses).
 New usage of "mzpmfpOLD" is discouraged (0 uses).
 New usage of "naecoms-o" is discouraged (1 uses).
 New usage of "natded" is discouraged (0 uses).
+New usage of "neeq2OLD" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "neleqtrrdOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
@@ -19194,6 +19195,7 @@ Proof modification of "mplsubrglemOLD" is discouraged (947 steps).
 Proof modification of "mulge0OLD" is discouraged (25 steps).
 Proof modification of "mvridlemOLD" is discouraged (129 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
+Proof modification of "neeq2OLD" is discouraged (32 steps).
 Proof modification of "neleqtrrdOLD" is discouraged (15 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfceqiOLD" is discouraged (43 steps).
