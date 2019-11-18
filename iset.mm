@@ -6739,54 +6739,6 @@ $)
       ( wa jca mpbird ) ABCDHACDEFIGJ $.
   $}
 
-  ${
-    mpbiranOLD.1 $e |- ( ph <-> ( ps /\ ch ) ) $.
-    ${
-      mpbiranOLD.2 $e |- ps $.
-      $( Obsolete version of ~ mpbiran as of 9-Jan-2015.  (Contributed by NM,
-         27-Feb-1996.) $)
-      mpbiranOLD $p |- ( ph <-> ch ) $=
-        ( mpbiran ) ABCEDF $.
-    $}
-
-    ${
-      mpbiran2OLD.2 $e |- ch $.
-      $( Obsolete version of ~ mpbiran2 as of 9-Jan-2015.  (Contributed by NM,
-         22-Feb-1996.) $)
-      mpbiran2OLD $p |- ( ph <-> ps ) $=
-        ( mpbiran2 ) ABCEDF $.
-    $}
-
-    ${
-      mpbir2anOLD.2 $e |- ps $.
-      mpbir2anOLD.3 $e |- ch $.
-      $( Obsolete version of ~ mpbir2an as of 9-Jan-2015.  (Contributed by NM,
-         10-May-2005.) $)
-      mpbir2anOLD $p |- ph $=
-        ( mpbir2an ) ABCEFDG $.
-    $}
-  $}
-
-  ${
-    mpbi2andOLD.1 $e |- ( ph -> ( ( ps /\ ch ) <-> th ) ) $.
-    mpbi2andOLD.2 $e |- ( ph -> ps ) $.
-    mpbi2andOLD.3 $e |- ( ph -> ch ) $.
-    $( Obsolete version of ~ mpbi2and as of 9-Jan-2015.  (Contributed by NM,
-       6-Nov-2011.)  (Revised by NM, 24-Nov-2012.) $)
-    mpbi2andOLD $p |- ( ph -> th ) $=
-      ( mpbi2and ) ABCDFGEH $.
-  $}
-
-  ${
-    mpbir2andOLD.1 $e |- ( ph -> ( ps <-> ( ch /\ th ) ) ) $.
-    mpbir2andOLD.2 $e |- ( ph -> ch ) $.
-    mpbir2andOLD.3 $e |- ( ph -> th ) $.
-    $( Obsolete version of ~ mpbir2and as of 9-Jan-2015.  (Contributed by NM,
-       6-Nov-2011.)  (Revised by NM, 24-Nov-2012.) $)
-    mpbir2andOLD $p |- ( ph -> ps ) $=
-      ( mpbir2and ) ABCDFGEH $.
-  $}
-
   $( Theorem *5.62 of [WhiteheadRussell] p. 125, for a decidable proposition.
      (Contributed by Jim Kingdon, 12-May-2018.) $)
   pm5.62dc $p |- ( DECID ps ->
