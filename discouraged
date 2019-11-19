@@ -15631,6 +15631,8 @@ New usage of "enrbreq" is discouraged (3 uses).
 New usage of "enreceq" is discouraged (9 uses).
 New usage of "enrer" is discouraged (7 uses).
 New usage of "enrex" is discouraged (9 uses).
+New usage of "eqcomOLD" is discouraged (0 uses).
+New usage of "eqcomdOLD" is discouraged (0 uses).
 New usage of "eqeq1OLD" is discouraged (1 uses).
 New usage of "eqeq1dOLD" is discouraged (0 uses).
 New usage of "eqid1" is discouraged (0 uses).
@@ -18935,6 +18937,8 @@ Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "en3lpVD" is discouraged (147 steps).
 Proof modification of "en3lplem1VD" is discouraged (95 steps).
 Proof modification of "en3lplem2VD" is discouraged (267 steps).
+Proof modification of "eqcomOLD" is discouraged (37 steps).
+Proof modification of "eqcomdOLD" is discouraged (12 steps).
 Proof modification of "eqeq1OLD" is discouraged (60 steps).
 Proof modification of "eqeq1dOLD" is discouraged (17 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
