@@ -5941,6 +5941,7 @@
 "enrex" is used by "mulclsr".
 "enrex" is used by "mulsrpr".
 "enrex" is used by "recexsrlem".
+"eqeq1OLD" is used by "eqeq1dOLD".
 "eqresr" is used by "ax1ne0".
 "eqresr" is used by "axpre-lttri".
 "eqresr" is used by "axrrecex".
@@ -15630,6 +15631,8 @@ New usage of "enrbreq" is discouraged (3 uses).
 New usage of "enreceq" is discouraged (9 uses).
 New usage of "enrer" is discouraged (7 uses).
 New usage of "enrex" is discouraged (9 uses).
+New usage of "eqeq1OLD" is discouraged (1 uses).
+New usage of "eqeq1dOLD" is discouraged (0 uses).
 New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqneltrrdOLD" is discouraged (0 uses).
 New usage of "eqrdavOLD" is discouraged (0 uses).
@@ -18932,6 +18935,8 @@ Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "en3lpVD" is discouraged (147 steps).
 Proof modification of "en3lplem1VD" is discouraged (95 steps).
 Proof modification of "en3lplem2VD" is discouraged (267 steps).
+Proof modification of "eqeq1OLD" is discouraged (60 steps).
+Proof modification of "eqeq1dOLD" is discouraged (17 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
 Proof modification of "eqneltrrdOLD" is discouraged (15 steps).
 Proof modification of "eqrdavOLD" is discouraged (59 steps).
