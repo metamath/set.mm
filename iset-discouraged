@@ -185,7 +185,7 @@ Proof modification of "axi12" is discouraged (47 steps).
 Proof modification of "axnul" is discouraged (52 steps).
 Proof modification of "bdbm1.3ii" is discouraged (104 steps).
 Proof modification of "bdcnulALT" is discouraged (11 steps).
-Proof modification of "bdfind" is discouraged (71 steps).
+Proof modification of "bdfind" is discouraged (88 steps).
 Proof modification of "bdfindes" is discouraged (128 steps).
 Proof modification of "bdfinds" is discouraged (88 steps).
 Proof modification of "bdfinds1" is discouraged (35 steps).
@@ -195,6 +195,7 @@ Proof modification of "bdinex1g" is discouraged (32 steps).
 Proof modification of "bdinex2" is discouraged (16 steps).
 Proof modification of "bdnthALT" is discouraged (16 steps).
 Proof modification of "bdpeano5" is discouraged (218 steps).
+Proof modification of "bdrabexg" is discouraged (27 steps).
 Proof modification of "bdsepnfALT" is discouraged (72 steps).
 Proof modification of "bdssex" is discouraged (30 steps).
 Proof modification of "bdssexd" is discouraged (18 steps).
@@ -202,6 +203,7 @@ Proof modification of "bdssexg" is discouraged (40 steps).
 Proof modification of "bdssexi" is discouraged (13 steps).
 Proof modification of "bdunexb" is discouraged (94 steps).
 Proof modification of "bj-axun2" is discouraged (47 steps).
+Proof modification of "bj-inex12" is discouraged (151 steps).
 Proof modification of "bj-intexr" is discouraged (31 steps).
 Proof modification of "bj-intnexr" is discouraged (16 steps).
 Proof modification of "bj-nalset" is discouraged (105 steps).
@@ -233,6 +235,8 @@ Proof modification of "rexsnsOLD" is discouraged (55 steps).
 Proof modification of "ruALT" is discouraged (35 steps).
 Proof modification of "sbc8g" is discouraged (55 steps).
 Proof modification of "sbsbc" is discouraged (21 steps).
+Proof modification of "sfind" is discouraged (91 steps).
+Proof modification of "speano5" is discouraged (254 steps).
 Proof modification of "strcollnfALT" is discouraged (79 steps).
 Proof modification of "suctr" is discouraged (153 steps).
 Proof modification of "truanOLD" is discouraged (13 steps).

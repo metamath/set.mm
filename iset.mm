@@ -1,4 +1,4 @@
-$( iset.mm - Version of 18-Nov-2019
+$( iset.mm - Version of 19-Nov-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -61599,6 +61599,19 @@ $)
   $}
 
   ${
+    $d x ps $.  $d y ph $.
+    bds.bd $e |- Bdd ph $.
+    bds.1 $e |- ( x = y -> ( ph <-> ps ) ) $.
+    $( Boundedness of a formula resulting from implicit substitution in a
+       bounded formula.  Note that the proof does not use ~ ax-bdsb ;
+       therefore, using implicit instead of explicit substitution when
+       boundedness is important, one might avoid using ~ ax-bdsb . (Contributed
+       by BJ, 19-Nov-2019.) $)
+    bds $p |- Bdd ps $=
+      ( cab bdcclab cbvabv bdceqi bdph ) BDACGBDGACEHABCDFIJK $.
+  $}
+
+  ${
     $d x A $.
     bdcrab.1 $e |- Bdd_ A $.
     bdcrab.2 $e |- Bdd ph $.
@@ -62025,6 +62038,31 @@ $)
 
   ${
     $d x A $.
+    bdrabexg.bd $e |- Bdd ph $.
+    bdrabexg.bdc $e |- Bdd_ A $.
+    $( Bounded version of ~ rabexg .  (Contributed by BJ, 19-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bdrabexg $p |- ( A e. V -> { x e. A | ph } e. _V ) $=
+      ( crab wss wcel cvv ssrab2 bdcrab bdssexg mpan ) ABCGZCHCDIOJIABCKOCDABCF
+      ELMN $.
+  $}
+
+  ${
+    $d x y z t A $.  $d x y z t B $.
+    $( The intersection of two sets is a set, from bounded separation.
+       (Contributed by BJ, 19-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-inex12 $p |- ( ( A e. V /\ B e. W ) -> ( A i^i B ) e. _V ) $=
+      ( vx vy vz wcel cv wceq wex cin cvv elisset wal ax-17 19.29r sylan2 19.29
+      wa sylan eximi ineq12 2eximi crab dfin5 vex ax-bdel bdcv bdrabexg eqeltri
+      ax-mp eleq1 mpbii exlimivv syl 3syl syl2an ) ACHEIZAJZEKZFIZBJZFKZABLZMHZ
+      BDHEACNFBDNVAVDTUTVDTZEKZUTVCTZFKZEKZVFVDVAVDEOVHVDEPUTVDEQRVGVJEUTUTFOVD
+      VJUTFPUTVCFSUAUBVKUSVBLZVEJZFKEKVFVIVMEFUSAVBBUCUDVMVFEFVMVLMHVFVLGIVBHZG
+      USUEZMGUSVBUFUSMHVOMHEUGVNGUSMGFUHEUIUJULUKVLVEMUMUNUOUPUQUR $.
+  $}
+
+  ${
+    $d x A $.
     $( ~ vnex from bounded separation.  (Contributed by BJ, 18-Nov-2019.)
        (Proof modification is discouraged.) $)
     bj-intexr $p |- ( |^| A e. _V -> A =/= (/) ) $=
@@ -62356,11 +62394,11 @@ $)
 
   ${
     $d x y A $.
-    bdpeano5.1 $e |- Bdd_ A $.
+    bdpeano5.bd $e |- Bdd_ A $.
     $( Bounded version of ~ peano5 .  (Contributed by BJ, 18-Nov-2019.)
        (Proof modification is discouraged.) $)
-    bdpeano5 $p |- ( ( (/) e. A /\
-                 A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) $=
+    bdpeano5 $p |- ( ( (/) e. A /\ A. x e. _om ( x e. A -> suc x e. A ) ) ->
+                                                                  _om C_ A ) $=
       ( vy c0 wcel cv csuc wi com wral cin wss cab elin wal df-ral sylibr eleq2
       wa cint dfom3 peano1 mpbiran biimpri bj-peano2 adantr pm3.31 jcad imbi12i
       a1i alimi albii 3imtr4i anim12i bj-omex bdinex1 raleqbi1dv anbi12d intss1
@@ -62373,15 +62411,50 @@ $)
   $}
 
   ${
+    $d x y A $.
+    $( Version of ~ peano5 when ` A ` is assumed to be a set, allowing a proof
+       from basic constructive axioms.  (Contributed by BJ, 19-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    speano5 $p |- ( ( A e. V /\ (/) e. A /\
+                        A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) $=
+      ( vy wcel c0 cv csuc wi com wral wss elin wal df-ral sylibr cvv eleq2 syl
+      wa w3a cin cab cint 3anass peano1 mpbiran biimpri bj-peano2 adantr pm3.31
+      dfom3 a1i jcad alimi imbi12i albii 3imtr4i anim12i bj-omex bj-inex12 mpan
+      wb wceq raleqbi1dv anbi12d elabg syl5ibr imp sylbi syl5eqss ssid biantrur
+      intss1 ssin bitri ) BCEZFBEZAGZBEZVSHZBEZIZAJKZUAZJJBUBZLZJBLZWEJFDGZEZWA
+      WIEZAWIKZTZDUCZUDZWFDAULWEWFWNEZWOWFLWEVQVRWDTZTWPVQVRWDUEVQWQWPWQWPVQFWF
+      EZWAWFEZAWFKZTZVRWRWDWTWRVRWRFJEVRUFFJBMUGUHWDVSWFEZWSIZANZWTVSJEZWCIZANX
+      EVTTZWAJEZWBTZIZANWDXDXFXJAXFXGXHWBXGXHIXFXEXHVTVSUIUJUMXEVTWBUKUNUOWCAJO
+      XCXJAXBXGWSXIVSJBMWAJBMUPUQURWSAWFOPUSVQWFQEZWPXAVCJQEVQXKUTJBQCVAVBWMXAD
+      WFQWIWFVDWJWRWLWTWIWFFRWKWSAWIWFWIWFWARVEVFVGSVHVIVJWFWNVNSVKWHJJLZWHTWGX
+      LWHJVLVMJJBVOVPP $.
+  $}
+
+  ${
     $d x A $.
     bdfind.bd $e |- Bdd_ A $.
-    bdfind.1 $e |- ( A C_ _om /\ (/) e. A /\ A. x e. A suc x e. A ) $.
-    $( Bounded version of ~ find .  (Contributed by BJ, 18-Nov-2019.)
+    $( Closed form of bounded version of ~ find , constructive proof.
+       (Contributed by BJ, 18-Nov-2019.)
        (Proof modification is discouraged.) $)
-    bdfind $p |- A = _om $=
-      ( com wss c0 wcel cv csuc wral simp1i wi wa w3a 3simpc ax-mp df-ral alral
-      wal sylbi anim2i bdpeano5 eqssi ) BEBEFZGBHZAIZJBHZABKZDLUFUGBHUHMZAEKZNZ
-      EBFUFUINZULUEUFUIOUMDUEUFUIPQUIUKUFUIUJATUKUHABRUJAESUAUBQABCUCQUD $.
+    bdfind $p |-
+             ( ( A C_ _om /\ (/) e. A /\ A. x e. A suc x e. A ) -> A = _om ) $=
+      ( com wss c0 wcel cv csuc wral w3a wa 3anass biimpi simpl syl wi simpr id
+      wal df-ral alral sylbi anim12i bdpeano5 eqssd ) BDEZFBGZAHZIBGZABJZKZBDUL
+      UGUHUKLZLZUGULUNUGUHUKMNZUGUMOPULUHUIBGUJQZADJZLZDBEULUNURUOUNUMURUGUMRUH
+      UHUKUQUHSUKUPATUQUJABUAUPADUBUCUDPPABCUEPUF $.
+  $}
+
+  ${
+    $d x A $.
+    $( Closed form of version of ~ find when ` A ` is a set, constructive
+       proof.  (Contributed by BJ, 19-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    sfind $p |- ( ( ( A e. V /\ A C_ _om ) /\
+                         ( (/) e. A /\ A. x e. A suc x e. A ) ) -> A = _om ) $=
+      ( wcel com wss wa c0 cv csuc simplr wi w3a simpll simprl wal df-ral alral
+      wral sylbi ad2antll 3anass biimpri syl12anc speano5 syl eqssd ) BCDZBEFZG
+      ZHBDZAIZJBDZABSZGZGZBEUHUIUOKUPUHUKULBDUMLZAESZMZEBFUPUHUKURUSUHUIUONUJUK
+      UNOUNURUJUKUNUQAPURUMABQUQAERTUAUSUHUKURGGUHUKURUBUCUDABCUEUFUG $.
   $}
 
   ${
