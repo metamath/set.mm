@@ -5941,7 +5941,9 @@
 "enrex" is used by "mulclsr".
 "enrex" is used by "mulsrpr".
 "enrex" is used by "recexsrlem".
+"eqcomOLD" is used by "eqcomdOLD".
 "eqeq1OLD" is used by "eqeq1dOLD".
+"eqeq2OLD" is used by "eqeq2dOLD".
 "eqresr" is used by "ax1ne0".
 "eqresr" is used by "axpre-lttri".
 "eqresr" is used by "axrrecex".
@@ -15631,10 +15633,12 @@ New usage of "enrbreq" is discouraged (3 uses).
 New usage of "enreceq" is discouraged (9 uses).
 New usage of "enrer" is discouraged (7 uses).
 New usage of "enrex" is discouraged (9 uses).
-New usage of "eqcomOLD" is discouraged (0 uses).
+New usage of "eqcomOLD" is discouraged (1 uses).
 New usage of "eqcomdOLD" is discouraged (0 uses).
 New usage of "eqeq1OLD" is discouraged (1 uses).
 New usage of "eqeq1dOLD" is discouraged (0 uses).
+New usage of "eqeq2OLD" is discouraged (1 uses).
+New usage of "eqeq2dOLD" is discouraged (0 uses).
 New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqneltrrdOLD" is discouraged (0 uses).
 New usage of "eqrdavOLD" is discouraged (0 uses).
@@ -18941,6 +18945,8 @@ Proof modification of "eqcomOLD" is discouraged (37 steps).
 Proof modification of "eqcomdOLD" is discouraged (12 steps).
 Proof modification of "eqeq1OLD" is discouraged (60 steps).
 Proof modification of "eqeq1dOLD" is discouraged (17 steps).
+Proof modification of "eqeq2OLD" is discouraged (26 steps).
+Proof modification of "eqeq2dOLD" is discouraged (17 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
 Proof modification of "eqneltrrdOLD" is discouraged (15 steps).
 Proof modification of "eqrdavOLD" is discouraged (59 steps).
