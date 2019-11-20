@@ -15569,6 +15569,10 @@ New usage of "eldprdiOLD" is discouraged (3 uses).
 New usage of "eleigvec" is discouraged (2 uses).
 New usage of "eleigvec2" is discouraged (2 uses).
 New usage of "eleigveccl" is discouraged (3 uses).
+New usage of "eleq1OLD" is discouraged (0 uses).
+New usage of "eleq1dOLD" is discouraged (0 uses).
+New usage of "eleq2OLD" is discouraged (0 uses).
+New usage of "eleq2dOLD" is discouraged (0 uses).
 New usage of "elex22VD" is discouraged (0 uses).
 New usage of "elex2VD" is discouraged (0 uses).
 New usage of "elghom" is discouraged (10 uses).
@@ -15635,10 +15639,12 @@ New usage of "enrer" is discouraged (7 uses).
 New usage of "enrex" is discouraged (9 uses).
 New usage of "eqcomOLD" is discouraged (1 uses).
 New usage of "eqcomdOLD" is discouraged (0 uses).
+New usage of "eqeq12iOLD" is discouraged (0 uses).
 New usage of "eqeq1OLD" is discouraged (1 uses).
 New usage of "eqeq1dOLD" is discouraged (0 uses).
 New usage of "eqeq2OLD" is discouraged (1 uses).
 New usage of "eqeq2dOLD" is discouraged (0 uses).
+New usage of "eqeqan12dOLD" is discouraged (0 uses).
 New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqneltrrdOLD" is discouraged (0 uses).
 New usage of "eqrdavOLD" is discouraged (0 uses).
@@ -18925,6 +18931,10 @@ Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (27 steps).
 Proof modification of "eldprdOLD" is discouraged (112 steps).
 Proof modification of "eldprdiOLD" is discouraged (81 steps).
+Proof modification of "eleq1OLD" is discouraged (49 steps).
+Proof modification of "eleq1dOLD" is discouraged (17 steps).
+Proof modification of "eleq2OLD" is discouraged (60 steps).
+Proof modification of "eleq2dOLD" is discouraged (17 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
 Proof modification of "elex2VD" is discouraged (59 steps).
 Proof modification of "eliminable1" is discouraged (4 steps).
@@ -18943,10 +18953,12 @@ Proof modification of "en3lplem1VD" is discouraged (95 steps).
 Proof modification of "en3lplem2VD" is discouraged (267 steps).
 Proof modification of "eqcomOLD" is discouraged (37 steps).
 Proof modification of "eqcomdOLD" is discouraged (12 steps).
+Proof modification of "eqeq12iOLD" is discouraged (21 steps).
 Proof modification of "eqeq1OLD" is discouraged (60 steps).
 Proof modification of "eqeq1dOLD" is discouraged (17 steps).
 Proof modification of "eqeq2OLD" is discouraged (26 steps).
 Proof modification of "eqeq2dOLD" is discouraged (17 steps).
+Proof modification of "eqeqan12dOLD" is discouraged (23 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
 Proof modification of "eqneltrrdOLD" is discouraged (15 steps).
 Proof modification of "eqrdavOLD" is discouraged (59 steps).
