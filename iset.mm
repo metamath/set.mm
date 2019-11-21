@@ -37847,7 +37847,6 @@ $)
 
   ${
     $d x y z A $.
-
     $( A natural number is either 0 or a successor.  Similar theorems for
        arbitrary sets or real numbers will not be provable (without the law of
        the excluded middle), but equality of natural numbers is decidable.
@@ -37863,7 +37862,6 @@ $)
 
   ${
     $d x y B $.
-
     $( A member of a natural number is a natural number.  (Contributed by NM,
        21-Jun-1998.) $)
     elnn $p |- ( ( A e. B /\ B e. _om ) -> A e. _om ) $=
@@ -62532,6 +62530,14 @@ $)
       wceq bdfinds ) ABFHABIJABGHZABGKZLZJZAFGBKZABFCMABFINAFGBOABFUQNAFBUADUSP
       QZAABUSLZJZTZTUPPQZUOURTZTBGVDVEBVDBUBUOURBABGUCABUQUDRRBGUEZUTVDVCVEUSUP
       PUFVFAUOVBURABGUGVFVAUQUMVBURUHUSUPUIABVAUQUJUKSSEULUN $.
+  $}
+
+  ${
+    $d x y z A $.
+    $( Constructive proof of an adaptation of ~ nn0suc .  (Contributed by BJ,
+       19-Nov-2019.)  (Proof modification is discouraged.) $)
+    bj-nn0suc $p |- ( x e. _om -> ( x = (/) \/ E. y e. x x = suc y ) ) $=
+      ? $.
   $}
 
 
