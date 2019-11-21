@@ -5941,6 +5941,9 @@
 "enrex" is used by "mulclsr".
 "enrex" is used by "mulsrpr".
 "enrex" is used by "recexsrlem".
+"eqcomOLD" is used by "eqcomdOLD".
+"eqeq1OLD" is used by "eqeq1dOLD".
+"eqeq2OLD" is used by "eqeq2dOLD".
 "eqresr" is used by "ax1ne0".
 "eqresr" is used by "axpre-lttri".
 "eqresr" is used by "axrrecex".
@@ -13708,6 +13711,7 @@ New usage of "3impexpVD" is discouraged (0 uses).
 New usage of "3impexpbicomVD" is discouraged (0 uses).
 New usage of "3impexpbicomiVD" is discouraged (0 uses).
 New usage of "3netr3dOLD" is discouraged (0 uses).
+New usage of "3netr4dOLD" is discouraged (0 uses).
 New usage of "3noncolr1N" is discouraged (1 uses).
 New usage of "3oai" is discouraged (0 uses).
 New usage of "3oalem1" is discouraged (1 uses).
@@ -15566,6 +15570,10 @@ New usage of "eldprdiOLD" is discouraged (3 uses).
 New usage of "eleigvec" is discouraged (2 uses).
 New usage of "eleigvec2" is discouraged (2 uses).
 New usage of "eleigveccl" is discouraged (3 uses).
+New usage of "eleq1OLD" is discouraged (0 uses).
+New usage of "eleq1dOLD" is discouraged (0 uses).
+New usage of "eleq2OLD" is discouraged (0 uses).
+New usage of "eleq2dOLD" is discouraged (0 uses).
 New usage of "elex22VD" is discouraged (0 uses).
 New usage of "elex2VD" is discouraged (0 uses).
 New usage of "elghom" is discouraged (10 uses).
@@ -15630,8 +15638,17 @@ New usage of "enrbreq" is discouraged (3 uses).
 New usage of "enreceq" is discouraged (9 uses).
 New usage of "enrer" is discouraged (7 uses).
 New usage of "enrex" is discouraged (9 uses).
+New usage of "eqcomOLD" is discouraged (1 uses).
+New usage of "eqcomdOLD" is discouraged (0 uses).
+New usage of "eqeq12iOLD" is discouraged (0 uses).
+New usage of "eqeq1OLD" is discouraged (1 uses).
+New usage of "eqeq1dOLD" is discouraged (0 uses).
+New usage of "eqeq2OLD" is discouraged (1 uses).
+New usage of "eqeq2dOLD" is discouraged (0 uses).
+New usage of "eqeqan12dOLD" is discouraged (0 uses).
 New usage of "eqid1" is discouraged (0 uses).
 New usage of "eqneltrrdOLD" is discouraged (0 uses).
+New usage of "eqrdavOLD" is discouraged (0 uses).
 New usage of "eqresr" is discouraged (4 uses).
 New usage of "eqsbc3rVD" is discouraged (0 uses).
 New usage of "equid1" is discouraged (0 uses).
@@ -16945,8 +16962,10 @@ New usage of "naecoms-o" is discouraged (1 uses).
 New usage of "natded" is discouraged (0 uses).
 New usage of "neeq1OLD" is discouraged (0 uses).
 New usage of "neeq1dOLD" is discouraged (0 uses).
+New usage of "neeq1iOLD" is discouraged (0 uses).
 New usage of "neeq2OLD" is discouraged (0 uses).
 New usage of "neeq2dOLD" is discouraged (0 uses).
+New usage of "neeq2iOLD" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "neleqtrrdOLD" is discouraged (0 uses).
 New usage of "nfa1-o" is discouraged (4 uses).
@@ -18323,6 +18342,7 @@ Proof modification of "3impexpVD" is discouraged (104 steps).
 Proof modification of "3impexpbicomVD" is discouraged (89 steps).
 Proof modification of "3impexpbicomiVD" is discouraged (28 steps).
 Proof modification of "3netr3dOLD" is discouraged (17 steps).
+Proof modification of "3netr4dOLD" is discouraged (17 steps).
 Proof modification of "3orbi123" is discouraged (29 steps).
 Proof modification of "3orbi123VD" is discouraged (134 steps).
 Proof modification of "3ornot23" is discouraged (28 steps).
@@ -18913,6 +18933,10 @@ Proof modification of "el2122old" is discouraged (25 steps).
 Proof modification of "elALT" is discouraged (27 steps).
 Proof modification of "eldprdOLD" is discouraged (112 steps).
 Proof modification of "eldprdiOLD" is discouraged (81 steps).
+Proof modification of "eleq1OLD" is discouraged (49 steps).
+Proof modification of "eleq1dOLD" is discouraged (17 steps).
+Proof modification of "eleq2OLD" is discouraged (60 steps).
+Proof modification of "eleq2dOLD" is discouraged (17 steps).
 Proof modification of "elex22VD" is discouraged (111 steps).
 Proof modification of "elex2VD" is discouraged (59 steps).
 Proof modification of "eliminable1" is discouraged (4 steps).
@@ -18929,8 +18953,17 @@ Proof modification of "elunirnALT" is discouraged (38 steps).
 Proof modification of "en3lpVD" is discouraged (147 steps).
 Proof modification of "en3lplem1VD" is discouraged (95 steps).
 Proof modification of "en3lplem2VD" is discouraged (267 steps).
+Proof modification of "eqcomOLD" is discouraged (37 steps).
+Proof modification of "eqcomdOLD" is discouraged (12 steps).
+Proof modification of "eqeq12iOLD" is discouraged (21 steps).
+Proof modification of "eqeq1OLD" is discouraged (60 steps).
+Proof modification of "eqeq1dOLD" is discouraged (17 steps).
+Proof modification of "eqeq2OLD" is discouraged (26 steps).
+Proof modification of "eqeq2dOLD" is discouraged (17 steps).
+Proof modification of "eqeqan12dOLD" is discouraged (23 steps).
 Proof modification of "eqid1" is discouraged (9 steps).
 Proof modification of "eqneltrrdOLD" is discouraged (15 steps).
+Proof modification of "eqrdavOLD" is discouraged (59 steps).
 Proof modification of "eqsbc3rVD" is discouraged (129 steps).
 Proof modification of "equid1" is discouraged (50 steps).
 Proof modification of "equid1ALT" is discouraged (36 steps).
@@ -19203,8 +19236,10 @@ Proof modification of "mvridlemOLD" is discouraged (129 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "neeq1OLD" is discouraged (32 steps).
 Proof modification of "neeq1dOLD" is discouraged (17 steps).
+Proof modification of "neeq1iOLD" is discouraged (16 steps).
 Proof modification of "neeq2OLD" is discouraged (32 steps).
 Proof modification of "neeq2dOLD" is discouraged (17 steps).
+Proof modification of "neeq2iOLD" is discouraged (16 steps).
 Proof modification of "neleqtrrdOLD" is discouraged (15 steps).
 Proof modification of "nfa1-o" is discouraged (8 steps).
 Proof modification of "nfceqiOLD" is discouraged (43 steps).
