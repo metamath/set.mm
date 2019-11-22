@@ -61268,19 +61268,19 @@ $)
     ( cv cab wcel wceq abid eleq1 syl5rbbr ) ABDZABEZFKCGCLFABHKCLIJ $.
 
   ${
-    elabgf1.1 $e |- F/_ x A $.
-    elabgf1.2 $e |- F/ x ps $.
-    elabgf1.3 $e |- ( x = A -> ( ph -> ps ) ) $.
+    elabgf1.nf1 $e |- F/_ x A $.
+    elabgf1.nf2 $e |- F/ x ps $.
+    elabgf1.1 $e |- ( x = A -> ( ph -> ps ) ) $.
     $( One implication of ~ elabgf .  (Contributed by BJ, 21-Nov-2019.) $)
-    elabgf1 $p |- ( A e. B -> ( A e. { x | ph } -> ps ) ) $=
-      ( cab wcel wb wi nfab1 nfel nfim cv wceq bi1 syl9r elabgf0 bj-vtoclgf ) D
-      ACIZJZAKZUCBLCDEFUCBCCDUBFACMNGOUDUCACPDQBUCARHSACDTUA $.
+    elabgf1 $p |- ( A e. { x | ph } -> ps ) $=
+      ( cab wcel wb wi nfab1 nfel nfim cv wceq bi1 syl9r elabgf0 bj-vtoclgf
+      pm2.43i ) DACHZIZBUCAJZUCBKCDUBEUCBCCDUBEACLMFNUDUCACODPBUCAQGRACDSTUA $.
   $}
 
   ${
-    elabgf2.1 $e |- F/_ x A $.
-    elabgf2.2 $e |- F/ x ps $.
-    elabgf2.3 $e |- ( x = A -> ( ps -> ph ) ) $.
+    elabgf2.nf1 $e |- F/_ x A $.
+    elabgf2.nf2 $e |- F/ x ps $.
+    elabgf2.1 $e |- ( x = A -> ( ps -> ph ) ) $.
     $( One implication of ~ elabgf .  (Contributed by BJ, 21-Nov-2019.) $)
     elabgf2 $p |- ( A e. B -> ( ps -> A e. { x | ph } ) ) $=
       ( cab wcel wb wi nfab1 nfel nfim cv wceq bicom1 bi1 syl9 syl5 bj-vtoclgf
@@ -61290,19 +61290,18 @@ $)
 
   ${
     $d ps y $.  $d x A y $.  $d y ph $.
-    elabf1.1 $e |- F/ x ps $.
-    elabf1.2 $e |- A e. _V $.
-    elabf1.3 $e |- ( x = A -> ( ph -> ps ) ) $.
+    elabf1.nf $e |- F/ x ps $.
+    elabf1.1 $e |- ( x = A -> ( ph -> ps ) ) $.
     $( One implication of ~ elabf .  (Contributed by BJ, 21-Nov-2019.) $)
     elabf1 $p |- ( A e. { x | ph } -> ps ) $=
-      ( cvv wcel cab wi nfcv elabgf1 ax-mp ) DHIDACJIBKFABCDHCDLEGMN $.
+      ( nfcv elabgf1 ) ABCDCDGEFH $.
   $}
 
   ${
     $d ps y $.  $d x A y $.  $d y ph $.
-    elabf2.1 $e |- F/ x ps $.
-    elabf2.2 $e |- A e. _V $.
-    elabf2.3 $e |- ( x = A -> ( ps -> ph ) ) $.
+    elabf2.nf $e |- F/ x ps $.
+    elabf2.s $e |- A e. _V $.
+    elabf2.1 $e |- ( x = A -> ( ps -> ph ) ) $.
     $( One implication of ~ elabf .  (Contributed by BJ, 21-Nov-2019.) $)
     elabf2 $p |- ( ps -> A e. { x | ph } ) $=
       ( cvv wcel cab wi nfcv elabgf2 ax-mp ) DHIBDACJIKFABCDHCDLEGMN $.
@@ -61310,17 +61309,16 @@ $)
 
   ${
     $d x ps $.  $d x A $.
-    elab1.1 $e |- A e. _V $.
-    elab1.2 $e |- ( x = A -> ( ph -> ps ) ) $.
+    elab1.1 $e |- ( x = A -> ( ph -> ps ) ) $.
     $( One implication of ~ elab .  (Contributed by BJ, 21-Nov-2019.) $)
     elab1 $p |- ( A e. { x | ph } -> ps ) $=
-      ( nfv elabf1 ) ABCDBCGEFH $.
+      ( nfv elabf1 ) ABCDBCFEG $.
   $}
 
   ${
     $d x ps $.  $d x A $.
-    elab2a.1 $e |- A e. _V $.
-    elab2a.2 $e |- ( x = A -> ( ps -> ph ) ) $.
+    elab2a.s $e |- A e. _V $.
+    elab2a.1 $e |- ( x = A -> ( ps -> ph ) ) $.
     $( One implication of ~ elab .  (Contributed by BJ, 21-Nov-2019.) $)
     elab2a $p |- ( ps -> A e. { x | ph } ) $=
       ( nfv elabf2 ) ABCDBCGEFH $.
@@ -61330,8 +61328,8 @@ $)
     $d x ps $.  $d x y A $.
     elabg1.1 $e |- ( x = A -> ( ph -> ps ) ) $.
     $( One implication of ~ elabg .  (Contributed by BJ, 21-Nov-2019.) $)
-    elabg1 $p |- ( A e. V -> ( A e. { x | ph } -> ps ) ) $=
-      ( nfcv nfv elabgf1 ) ABCDECDGBCHFI $.
+    elabg1 $p |- ( A e. { x | ph } -> ps ) $=
+      ( nfcv nfv elabgf1 ) ABCDCDFBCGEH $.
   $}
 
   ${
@@ -61343,7 +61341,7 @@ $)
   $}
 
 
-$( This is simply to be able to display Delta0 in comments. $)
+$( This declaration is simply to be able to display Delta0 in comments. $)
   $c Delta0 $.
 
 $(
@@ -62520,15 +62518,16 @@ $)
        (Proof modification is discouraged.) $)
     bdpeano5 $p |- ( ( (/) e. A /\ A. x e. _om ( x e. A -> suc x e. A ) ) ->
                                                                   _om C_ A ) $=
-      ( vy c0 wcel cv csuc wi com wral cin wss cab elin wal df-ral sylibr eleq2
-      wa cint dfom3 peano1 mpbiran biimpri bj-peano2 adantr pm3.31 jcad imbi12i
+      ( vy c0 wcel cv csuc wi com wral wa cin cab cint elin df-ral sylibr eleq2
+      wal dfom3 wss peano1 mpbiran biimpri bj-peano2 adantr pm3.31 jcad imbi12i
       a1i alimi albii 3imtr4i anim12i bj-omex bdinex1 raleqbi1dv anbi12d intss1
-      wceq elab syl syl5eqss ssid biantrur ssin bitri ) EBFZAGZBFZVJHZBFZIZAJKZ
-      TZJJBLZMZJBMZVPJEDGZFZVLVTFZAVTKZTZDNZUAZVQDAUBVPVQWEFZWFVQMVPEVQFZVLVQFZ
-      AVQKZTZWGVIWHVOWJWHVIWHEJFVIUCEJBOUDUEVOVJVQFZWIIZAPZWJVJJFZVNIZAPWOVKTZV
-      LJFZVMTZIZAPVOWNWPWTAWPWQWRVMWQWRIWPWOWRVKVJUFUGUKWOVKVMUHUIULVNAJQWMWTAW
-      LWQWIWSVJJBOVLJBOUJUMUNWIAVQQRUOWDWKDVQJBCUPUQVTVQVAWAWHWCWJVTVQESWBWIAVT
-      VQVTVQVLSURUSVBRVQWEUTVCVDVSJJMZVSTVRXAVSJVEVFJJBVGVHR $.
+      wceq elab syl syl5eqss inss2 syl6ss ) EBFZAGZBFZVHHZBFZIZAJKZLZJJBMZBVNJE
+      DGZFZVJVPFZAVPKZLZDNZOZVODAUAVNVOWAFZWBVOUBVNEVOFZVJVOFZAVOKZLZWCVGWDVMWF
+      WDVGWDEJFVGUCEJBPUDUEVMVHVOFZWEIZATZWFVHJFZVLIZATWKVILZVJJFZVKLZIZATVMWJW
+      LWPAWLWMWNVKWMWNIWLWKWNVIVHUFUGUKWKVIVKUHUIULVLAJQWIWPAWHWMWEWOVHJBPVJJBP
+      UJUMUNWEAVOQRUOVTWGDVOJBCUPUQVPVOVAVQWDVSWFVPVOESVRWEAVPVOVPVOVJSURUSVBRV
+      OWAUTVCVDJBVEVF $.
+
   $}
 
   ${
@@ -62538,17 +62537,16 @@ $)
        (Proof modification is discouraged.) $)
     speano5 $p |- ( ( A e. V /\ (/) e. A /\
                         A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) $=
-      ( vy wcel c0 cv csuc wi com wral wss elin wal df-ral sylibr cvv eleq2 syl
-      wa w3a cin cab cint 3anass peano1 mpbiran biimpri bj-peano2 adantr pm3.31
-      dfom3 a1i jcad alimi imbi12i 3imtr4i anim12i wb bj-omex bj-inex mpan wceq
-      albii raleqbi1dv anbi12d elabg syl5ibr imp sylbi intss1 syl5eqss biantrur
-      ssid ssin bitri ) BCEZFBEZAGZBEZVSHZBEZIZAJKZUAZJJBUBZLZJBLZWEJFDGZEZWAWI
-      EZAWIKZTZDUCZUDZWFDAULWEWFWNEZWOWFLWEVQVRWDTZTWPVQVRWDUEVQWQWPWQWPVQFWFEZ
-      WAWFEZAWFKZTZVRWRWDWTWRVRWRFJEVRUFFJBMUGUHWDVSWFEZWSIZANZWTVSJEZWCIZANXEV
-      TTZWAJEZWBTZIZANWDXDXFXJAXFXGXHWBXGXHIXFXEXHVTVSUIUJUMXEVTWBUKUNUOWCAJOXC
-      XJAXBXGWSXIVSJBMWAJBMUPVDUQWSAWFOPURVQWFQEZWPXAUSJQEVQXKUTJBQCVAVBWMXADWF
-      QWIWFVCWJWRWLWTWIWFFRWKWSAWIWFWIWFWARVEVFVGSVHVIVJWFWNVKSVLWHJJLZWHTWGXLW
-      HJVNVMJJBVOVPP $.
+      ( vy wcel c0 cv csuc wi com wral w3a cin wa elin wal df-ral cvv eleq2 syl
+      cab cint dfom3 wss peano1 mpbiran biimpri bj-peano2 adantr a1i jcad alimi
+      pm3.31 imbi12i albii 3imtr4i sylibr anim12i wb bj-omex bj-inex raleqbi1dv
+      mpan wceq anbi12d elabg syl5ibr 3impib intss1 syl5eqss inss2 syl6ss ) BCE
+      ZFBEZAGZBEZVOHZBEZIZAJKZLZJJBMZBWAJFDGZEZVQWCEZAWCKZNZDUAZUBZWBDAUCWAWBWH
+      EZWIWBUDVMVNVTWJVNVTNWJVMFWBEZVQWBEZAWBKZNZVNWKVTWMWKVNWKFJEVNUEFJBOUFUGV
+      TVOWBEZWLIZAPZWMVOJEZVSIZAPWRVPNZVQJEZVRNZIZAPVTWQWSXCAWSWTXAVRWTXAIWSWRX
+      AVPVOUHUIUJWRVPVRUMUKULVSAJQWPXCAWOWTWLXBVOJBOVQJBOUNUOUPWLAWBQUQURVMWBRE
+      ZWJWNUSJREVMXDUTJBRCVAVCWGWNDWBRWCWBVDWDWKWFWMWCWBFSWEWLAWCWBWCWBVQSVBVEV
+      FTVGVHWBWHVITVJJBVKVL $.
   $}
 
   ${
@@ -62615,10 +62613,10 @@ $)
        (Proof modification is discouraged.) $)
     bj-bdfinds $p |-
                     ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $=
-      ( wi com wral wa cab wss c0 wcel cv elab2a 0ex vex elab1 bj-sucex imim12i
+      ( wi com wral wa cab wss c0 wcel cv elab2a 0ex elab1 vex bj-sucex imim12i
       csuc ralimi bdcab bdpeano5 syl2an ssabral sylib ) BCDKZFLMZNLAEOZPZAELMBQ
-      UORFSZUORZUQUFZUORZKZFLMUPUNABEQUAHTUMVAFLURCDUTACEUQFUBZIUCADEUSUQVBUDJT
-      UEUGFUOAEGUHUIUJAELUKUL $.
+      UORFSZUORZUQUFZUORZKZFLMUPUNABEQUAHTUMVAFLURCDUTACEUQIUBADEUSUQFUCUDJTUEU
+      GFUOAEGUHUIUJAELUKUL $.
   $}
 
   ${
