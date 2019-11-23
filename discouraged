@@ -9995,6 +9995,89 @@
 "mulsrpr" is used by "recexsrlem".
 "mvridlemOLD" is used by "mplcoe3OLD".
 "naecoms-o" is used by "ax12inda2ALT".
+"necon3ad" is used by "0nnei".
+"necon3ad" is used by "2f1fvneq".
+"necon3ad" is used by "2llnjaN".
+"necon3ad" is used by "2llnma3r".
+"necon3ad" is used by "2lplnja".
+"necon3ad" is used by "2sqlem8a".
+"necon3ad" is used by "ablfac1eulem".
+"necon3ad" is used by "atbtwn".
+"necon3ad" is used by "atlatmstc".
+"necon3ad" is used by "atnle".
+"necon3ad" is used by "atnlt".
+"necon3ad" is used by "bcth".
+"necon3ad" is used by "bcthlem5".
+"necon3ad" is used by "canthp1lem2".
+"necon3ad" is used by "cdlemblem".
+"necon3ad" is used by "cdleme22cN".
+"necon3ad" is used by "cdlemednpq".
+"necon3ad" is used by "cdlemg18b".
+"necon3ad" is used by "cdlemg42".
+"necon3ad" is used by "cntotbnd".
+"necon3ad" is used by "coeaddlem".
+"necon3ad" is used by "colperplem2".
+"necon3ad" is used by "dalem-cly".
+"necon3ad" is used by "dalem44".
+"necon3ad" is used by "dchrisum0flblem1".
+"necon3ad" is used by "dcubic".
+"necon3ad" is used by "dgrnznn".
+"necon3ad" is used by "dia2dimlem1".
+"necon3ad" is used by "disjpss".
+"necon3ad" is used by "dochkrshp".
+"necon3ad" is used by "dvdseq".
+"necon3ad" is used by "dvloglem".
+"necon3ad" is used by "enp1i".
+"necon3ad" is used by "eucalglt".
+"necon3ad" is used by "expnprm".
+"necon3ad" is used by "frgpnabllem1".
+"necon3ad" is used by "fta1".
+"necon3ad" is used by "fta1g".
+"necon3ad" is used by "gsumval3a".
+"necon3ad" is used by "gsumval3aOLD".
+"necon3ad" is used by "hatomistici".
+"necon3ad" is used by "hausflim".
+"necon3ad" is used by "heiborlem6".
+"necon3ad" is used by "hgmapval0".
+"necon3ad" is used by "intnatN".
+"necon3ad" is used by "lfl1".
+"necon3ad" is used by "lhp2atnle".
+"necon3ad" is used by "lhpm0atN".
+"necon3ad" is used by "lkrpssN".
+"necon3ad" is used by "lkrshp".
+"necon3ad" is used by "llnnlt".
+"necon3ad" is used by "logcnlem3".
+"necon3ad" is used by "lplnnlt".
+"necon3ad" is used by "lshpcmp".
+"necon3ad" is used by "lshpnel".
+"necon3ad" is used by "lspdisj2".
+"necon3ad" is used by "lspdisjb".
+"necon3ad" is used by "lvolnltN".
+"necon3ad" is used by "mblfinlem1".
+"necon3ad" is used by "mumullem2".
+"necon3ad" is used by "necon3d".
+"necon3ad" is used by "nlt1pi".
+"necon3ad" is used by "nprm".
+"necon3ad" is used by "obselocv".
+"necon3ad" is used by "ocnel".
+"necon3ad" is used by "oeeulem".
+"necon3ad" is used by "ordthauslem".
+"necon3ad" is used by "outsideofrflx".
+"necon3ad" is used by "pcmpt".
+"necon3ad" is used by "pcprmpw2".
+"necon3ad" is used by "pgpfaclem2".
+"necon3ad" is used by "pgpfi".
+"necon3ad" is used by "pltnle".
+"necon3ad" is used by "plyco0".
+"necon3ad" is used by "prmlem0".
+"necon3ad" is used by "psgnunilem1".
+"necon3ad" is used by "rpnnen2lem11".
+"necon3ad" is used by "sibfof".
+"necon3ad" is used by "sqreulem".
+"necon3ad" is used by "t0dist".
+"necon3ad" is used by "t1sep".
+"necon3ad" is used by "vieta1lem2".
+"necon3ad" is used by "winalim2".
 "nfa1-o" is used by "ax12el".
 "nfa1-o" is used by "ax12eq".
 "nfa1-o" is used by "ax12v2-o".
@@ -16963,6 +17046,7 @@ New usage of "natded" is discouraged (0 uses).
 New usage of "necon1aiOLD" is discouraged (0 uses).
 New usage of "necon1biOLD" is discouraged (0 uses).
 New usage of "necon2aiOLD" is discouraged (0 uses).
+New usage of "necon3ad" is discouraged (83 uses).
 New usage of "necon3biOLD" is discouraged (0 uses).
 New usage of "necon3iOLD" is discouraged (0 uses).
 New usage of "necon4aiOLD" is discouraged (0 uses).
@@ -19244,6 +19328,7 @@ Proof modification of "naecoms-o" is discouraged (19 steps).
 Proof modification of "necon1aiOLD" is discouraged (16 steps).
 Proof modification of "necon1biOLD" is discouraged (17 steps).
 Proof modification of "necon2aiOLD" is discouraged (17 steps).
+Proof modification of "necon3ad" is discouraged (18 steps).
 Proof modification of "necon3biOLD" is discouraged (16 steps).
 Proof modification of "necon3iOLD" is discouraged (24 steps).
 Proof modification of "neeq1OLD" is discouraged (32 steps).
