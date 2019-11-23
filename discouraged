@@ -13706,6 +13706,8 @@ New usage of "3ax4" is discouraged (1 uses).
 New usage of "3ax4VD" is discouraged (0 uses).
 New usage of "3dimlem3OLDN" is discouraged (0 uses).
 New usage of "3dimlem4OLDN" is discouraged (0 uses).
+New usage of "3eltr3gOLD" is discouraged (0 uses).
+New usage of "3eltr4gOLD" is discouraged (0 uses).
 New usage of "3impdirp1" is discouraged (0 uses).
 New usage of "3impexpVD" is discouraged (0 uses).
 New usage of "3impexpbicomVD" is discouraged (0 uses).
@@ -18348,6 +18350,8 @@ Proof modification of "3ax4" is discouraged (29 steps).
 Proof modification of "3ax4VD" is discouraged (48 steps).
 Proof modification of "3dimlem3OLDN" is discouraged (335 steps).
 Proof modification of "3dimlem4OLDN" is discouraged (338 steps).
+Proof modification of "3eltr3gOLD" is discouraged (16 steps).
+Proof modification of "3eltr4gOLD" is discouraged (16 steps).
 Proof modification of "3imp21" is discouraged (11 steps).
 Proof modification of "3imp31" is discouraged (11 steps).
 Proof modification of "3impdirp1" is discouraged (21 steps).
