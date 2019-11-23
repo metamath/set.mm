@@ -61242,25 +61242,37 @@ $)
   $}
 
   ${
-    bj-exlimmpi.nf $e |- F/ x ps $.
+    bj-exlimmp.nf $e |- F/ x ps $.
+    bj-exlimmp.min $e |- ( ch -> ph ) $.
+    $( Lemma for ~ bj-vtoclgf .  (Contributed by BJ, 21-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-exlimmp $p |- ( A. x ( ch -> ( ph -> ps ) ) -> ( E. x ch -> ps ) ) $=
+      ( wi wal nfa1 idd embantd a2i sps exlimd ) CABGZGZDHCBDPDIEPCBGDCOBCABBFC
+      BJKLMN $.
+
     bj-exlimmpi.maj $e |- ( ch -> ( ph -> ps ) ) $.
-    bj-exlimmpi.min $e |- ( ch -> ph ) $.
     $( Lemma for ~ bj-vtoclgf .  (Contributed by BJ, 21-Nov-2019.)
        (Proof modification is discouraged.) $)
     bj-exlimmpi $p |- ( E. x ch -> ps ) $=
-      ( mpd exlimi ) CBDECABGFHI $.
+      ( mpd exlimi ) CBDECABFGHI $.
   $}
 
   ${
     bj-vtoclgf.nf1 $e |- F/_ x A $.
     bj-vtoclgf.nf2 $e |- F/ x ps $.
-    bj-vtoclgf.maj $e |- ( x = A -> ( ph -> ps ) ) $.
     bj-vtoclgf.min $e |- ( x = A -> ph ) $.
     $( Weakening two hypotheses of ~ vtoclgf .  (Contributed by BJ,
        21-Nov-2019.) $)
+    bj-vtoclgft $p |- ( A. x ( x = A -> ( ph -> ps ) ) -> ( A e. V -> ps ) ) $=
+      ( wcel cvv cv wceq wi wal elex wex issetf bj-exlimmp syl5bi syl5 ) DEIDJI
+      ZCKDLZABMMCNZBDEOUAUBCPUCBCDFQABUBCGHRST $.
+
+    $( Weakening two hypotheses of ~ vtoclgf .  (Contributed by BJ,
+       21-Nov-2019.) $)
+    bj-vtoclgf.maj $e |- ( x = A -> ( ph -> ps ) ) $.
+    $( PLEASE PUT DESCRIPTION HERE. (Contributed by ?who?, 24-Nov-2019.) $)
     bj-vtoclgf $p |- ( A e. V -> ps ) $=
-      ( wcel cvv elex cv wceq wex issetf bj-exlimmpi sylbi syl ) DEJDKJZBDELTCM
-      DNZCOBCDFPABUACGHIQRS $.
+      ( cv wceq wi wcel bj-vtoclgft mpg ) CJDKABLLDEMBLCABCDEFGHNIO $.
   $}
 
   $( Lemma for ~ elabgf .  (Contributed by BJ, 21-Nov-2019.) $)
@@ -61270,11 +61282,19 @@ $)
   ${
     elabgf1.nf1 $e |- F/_ x A $.
     elabgf1.nf2 $e |- F/ x ps $.
+    $( One implication of ~ elabgf , in closed form.  (Contributed by BJ,
+       21-Nov-2019.) $)
+    elabgft1 $p |-
+             ( A. x ( x = A -> ( ph -> ps ) ) -> ( A e. { x | ph } -> ps ) ) $=
+      ( cv wceq wi wal cab wcel wb bi1 imim2 syl5 imim2i alimi nfab1 nfel nfim
+      elabgf0 bj-vtoclgft syl pm2.43d ) CGDHZABIZIZCJZDACKZLZBUIUFUKAMZUKBIZIZI
+      ZCJUKUMIUHUOCUGUNUFULUKAIUGUMUKANABUKOPQRULUMCDUJEUKBCCDUJEACSTFUAACDUBUC
+      UDUE $.
+
     elabgf1.1 $e |- ( x = A -> ( ph -> ps ) ) $.
     $( One implication of ~ elabgf .  (Contributed by BJ, 21-Nov-2019.) $)
     elabgf1 $p |- ( A e. { x | ph } -> ps ) $=
-      ( cab wcel wb wi nfab1 nfel nfim cv wceq bi1 syl9r elabgf0 bj-vtoclgf
-      pm2.43i ) DACHZIZBUCAJZUCBKCDUBEUCBCCDUBEACLMFNUDUCACODPBUCAQGRACDSTUA $.
+      ( cv wceq wi cab wcel elabgft1 mpg ) CHDIABJJDACKLBJCABCDEFMGN $.
   $}
 
   ${
@@ -61283,9 +61303,9 @@ $)
     elabgf2.1 $e |- ( x = A -> ( ps -> ph ) ) $.
     $( One implication of ~ elabgf .  (Contributed by BJ, 21-Nov-2019.) $)
     elabgf2 $p |- ( A e. B -> ( ps -> A e. { x | ph } ) ) $=
-      ( cab wcel wb wi nfab1 nfel nfim cv wceq bicom1 bi1 syl9 syl5 bj-vtoclgf
-      elabgf0 ) DACIZJZAKZBUELZCDEFBUECGCDUDFACMNOUFAUEKZCPDQZUGUEARUIBAUHUEHAU
-      ESTUAACDUCUB $.
+      ( cab wcel wb wi nfab1 nfel nfim elabgf0 cv wceq bicom1 bi1 bj-vtoclgf
+      syl9 syl5 ) DACIZJZAKZBUELZCDEFBUECGCDUDFACMNOACDPUFAUEKZCQDRZUGUEASUIBAU
+      HUEHAUETUBUCUA $.
   $}
 
   ${
@@ -61326,18 +61346,33 @@ $)
 
   ${
     $d x ps $.  $d x y A $.
-    elabg1.1 $e |- ( x = A -> ( ph -> ps ) ) $.
-    $( One implication of ~ elabg .  (Contributed by BJ, 21-Nov-2019.) $)
-    elabg1 $p |- ( A e. { x | ph } -> ps ) $=
-      ( nfcv nfv elabgf1 ) ABCDCDFBCGEH $.
-  $}
-
-  ${
-    $d x ps $.  $d x y A $.
     elabg2.1 $e |- ( x = A -> ( ps -> ph ) ) $.
     $( One implication of ~ elabg .  (Contributed by BJ, 21-Nov-2019.) $)
     elabg2 $p |- ( A e. V -> ( ps -> A e. { x | ph } ) ) $=
       ( nfcv nfv elabgf2 ) ABCDECDGBCHFI $.
+  $}
+
+  ${
+    bj-rspg.nfa $e |- F/_ x A $.
+    bj-rspg.nfb $e |- F/_ x B $.
+    bj-rspg.nf2 $e |- F/ x ps $.
+    $( Restricted specialization, generalized.  Weakens a hypothesis of
+       ~ rspccv and seems to have a shorter proof.  (Contributed by BJ,
+       21-Nov-2019.) $)
+    bj-rspgt $p |- ( A. x ( x = A -> ( ph -> ps ) ) ->
+                                      ( A. x e. B ph -> ( A e. B -> ps ) ) ) $=
+      ( cv wceq wi wal wcel wral eleq1 imbi1d biimpd imim2 nfim com23 a2i alimi
+      imim2d syl9 nfel nfra1 rsp a1i bj-vtoclgft syl pm2.43d ) CIZDJZABKZKZCLZD
+      EMZACENZBUPUQURBKZUPUMULEMZURAKZKZUQUSKZKZKZCLUQVCKUOVECUMUNVDUMVBUQVAKZU
+      NVCUMVBVFUMUTUQVAULDEOPQUNVAUSUQABURRUCUDUAUBVBVCCDEFUQUSCCDEFGUEURBCACEU
+      FHSSUMURUTAURUTAKKUMACEUGUHTUIUJUKT $.
+
+    bj-rspg.is $e |- ( x = A -> ( ph -> ps ) ) $.
+    $( Restricted specialization, generalized.  Weakens a hypothesis of
+       ~ rspccv and seems to have a shorter proof.  (Contributed by BJ,
+       21-Nov-2019.) $)
+    bj-rspg $p |- ( A. x e. B ph -> ( A e. B -> ps ) ) $=
+      ( cv wceq wi wral wcel bj-rspgt mpg ) CJDKABLLACEMDENBLLCABCDEFGHOIP $.
   $}
 
 
@@ -62340,6 +62375,23 @@ $)
       ( cvv wcel csuc bj-sucexg ax-mp ) ACDAECDBACFG $.
   $}
 
+  ${
+    $( Boundedness lemma.  (Contributed by BJ, 21-Nov-2019.) $)
+    bdeq0 $p |- Bdd x = (/) $=
+      ( cv c0 wss wceq bdcnul bdss 0ss eqss mpbiran2 bd0r ) ABZCDZLCEZACFGNMCLD
+      LHLCIJK $.
+  $}
+
+  ${
+    $d x y $.
+    $( Boundedness lemma.  (Contributed by BJ, 21-Nov-2019.) $)
+    bdeqsuc $p |- Bdd x = suc y $=
+      ( cv csuc wss wa wceq bdcsuc bdss csn cun bdcv bdsnss ax-bdan unss df-suc
+      bd0 sseq1i bd0r eqss ) ACZBCZDZEZUCUAEZFUAUCGUDUEAUCBHIUBUBJZKZUAEZUEUBUA
+      EZUFUAEZFUHUIUJBUAALZIBUAUKMNUBUFUAOQUCUGUAUBPRSNUAUCTS $.
+  $}
+
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                  Strong collection
@@ -62468,6 +62520,17 @@ the successor of each of its elements.
 
 $)
 
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+       The set of natural numbers (finite ordinals)
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+In this section, we introduced the axiom of infinity in a constructive setting
+( ~ ax-infc ) and deduce that the class ` _om ` of finite ordinals is a set
+( ~ bj-omex ).
+
+$)
+
   ${
     $d x y z $.
     $( Axiom of infinity in a constructive setting.  This asserts the existence
@@ -62493,6 +62556,18 @@ $)
       DUPUQURUS $.
   $}
 
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+       Peano postulates
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+In this section, we give constructive proofs of the Peano postulates.  More
+precisely, we prove that the set of finite ordinals defined using the basic
+axioms of CZF satisfies the Peano postulates and thus provides a model for the
+set of natural numbers.
+
+$)
+
   ${
     $d x y z A $.
     $( Constructive proof of ~ peano2 .  (Contributed by BJ, 18-Nov-2019.)
@@ -62513,21 +62588,31 @@ $)
 
   ${
     $d x y A $.
+    $( Version of ~ peano5 when ` _om i^i A ` is assumed to be a set, allowing
+       a proof from basic constructive axioms.  (Contributed by BJ,
+       19-Nov-2019.)  (Proof modification is discouraged.) $)
+    peano5set $p |- ( ( _om i^i A ) e. V ->
+      ( ( (/) e. A /\ A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) ) $=
+      ( vy com cin wcel c0 cv csuc wi wral wss cab cint elin wal df-ral eleq2
+      wa dfom3 peano1 mpbiran biimpri bj-peano2 adantr a1i pm3.31 alimi imbi12i
+      jcad albii 3imtr4i sylibr anim12i raleqbi1dv anbi12d elabg syl5ibr intss1
+      wceq imp syl syl5eqss inss2 syl6ss ex ) EBFZCGZHBGZAIZBGZVKJZBGZKZAELZTZE
+      BMVIVQTZEVHBVREHDIZGZVMVSGZAVSLZTZDNZOZVHDAUAVRVHWDGZWEVHMVIVQWFVQWFVIHVH
+      GZVMVHGZAVHLZTZVJWGVPWIWGVJWGHEGVJUBHEBPUCUDVPVKVHGZWHKZAQZWIVKEGZVOKZAQW
+      NVLTZVMEGZVNTZKZAQVPWMWOWSAWOWPWQVNWPWQKWOWNWQVLVKUEUFUGWNVLVNUHUKUIVOAER
+      WLWSAWKWPWHWRVKEBPVMEBPUJULUMWHAVHRUNUOWCWJDVHCVSVHVAVTWGWBWIVSVHHSWAWHAV
+      SVHVSVHVMSUPUQURUSVBVHWDUTVCVDEBVEVFVG $.
+  $}
+
+  ${
+    $d x y A $.
     bdpeano5.bd $e |- Bdd_ A $.
-    $( Bounded version of ~ peano5 .  (Contributed by BJ, 18-Nov-2019.)
+    $( Bounded version of ~ peano5 .  (Contributed by BJ, 19-Nov-2019.)
        (Proof modification is discouraged.) $)
     bdpeano5 $p |- ( ( (/) e. A /\ A. x e. _om ( x e. A -> suc x e. A ) ) ->
                                                                   _om C_ A ) $=
-      ( vy c0 wcel cv csuc wi com wral wa cin cab cint elin df-ral sylibr eleq2
-      wal dfom3 wss peano1 mpbiran biimpri bj-peano2 adantr pm3.31 jcad imbi12i
-      a1i alimi albii 3imtr4i anim12i bj-omex bdinex1 raleqbi1dv anbi12d intss1
-      wceq elab syl syl5eqss inss2 syl6ss ) EBFZAGZBFZVHHZBFZIZAJKZLZJJBMZBVNJE
-      DGZFZVJVPFZAVPKZLZDNZOZVODAUAVNVOWAFZWBVOUBVNEVOFZVJVOFZAVOKZLZWCVGWDVMWF
-      WDVGWDEJFVGUCEJBPUDUEVMVHVOFZWEIZATZWFVHJFZVLIZATWKVILZVJJFZVKLZIZATVMWJW
-      LWPAWLWMWNVKWMWNIWLWKWNVIVHUFUGUKWKVIVKUHUIULVLAJQWIWPAWHWMWEWOVHJBPVJJBP
-      UJUMUNWEAVOQRUOVTWGDVOJBCUPUQVPVOVAVQWDVSWFVPVOESVRWEAVPVOVPVOVJSURUSVBRV
-      OWAUTVCVDJBVEVF $.
-
+      ( com cin cvv wcel c0 cv csuc wi wral wss bj-omex bdinex1 peano5set ax-mp
+      wa ) DBEFGHBGAIZBGSJBGKADLRDBMKDBCNOABFPQ $.
   $}
 
   ${
@@ -62537,164 +62622,357 @@ $)
        (Proof modification is discouraged.) $)
     speano5 $p |- ( ( A e. V /\ (/) e. A /\
                         A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) $=
-      ( vy wcel c0 cv csuc wi com wral w3a cin wa elin wal df-ral cvv eleq2 syl
-      cab cint dfom3 wss peano1 mpbiran biimpri bj-peano2 adantr a1i jcad alimi
-      pm3.31 imbi12i albii 3imtr4i sylibr anim12i wb bj-omex bj-inex raleqbi1dv
-      mpan wceq anbi12d elabg syl5ibr 3impib intss1 syl5eqss inss2 syl6ss ) BCE
-      ZFBEZAGZBEZVOHZBEZIZAJKZLZJJBMZBWAJFDGZEZVQWCEZAWCKZNZDUAZUBZWBDAUCWAWBWH
-      EZWIWBUDVMVNVTWJVNVTNWJVMFWBEZVQWBEZAWBKZNZVNWKVTWMWKVNWKFJEVNUEFJBOUFUGV
-      TVOWBEZWLIZAPZWMVOJEZVSIZAPWRVPNZVQJEZVRNZIZAPVTWQWSXCAWSWTXAVRWTXAIWSWRX
-      AVPVOUHUIUJWRVPVRUMUKULVSAJQWPXCAWOWTWLXBVOJBOVQJBOUNUOUPWLAWBQUQURVMWBRE
-      ZWJWNUSJREVMXDUTJBRCVAVCWGWNDWBRWCWBVDWDWKWFWMWCWBFSWEWLAWCWBWCWBVQSVBVEV
-      FTVGVHWBWHVITVJJBVKVL $.
+      ( wcel c0 cv csuc com wral wss cin cvv bj-omex bj-inex mpan peano5set syl
+      wi wa 3impib ) BCDZEBDZAFZBDUCGBDRAHIZHBJZUAHBKLDZUBUDSUERHLDUAUFMHBLCNOA
+      BLPQT $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+       Bounded induction
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+In this section, we prove various versions of bounded induction from
+the basic axioms of CZF (in particular, without the axiom of set induction).
+
+$)
+
+  ${
+    $d x A $.
+    $( Bounded induction (principle of induction when ` A ` is assumed to be a
+       set) allowing a proof from basic constructive axioms.  See ~ find for a
+       nonconstructive proof of the general case.  See ~ bdfind for a proof
+       when ` A ` is assumed to be bounded.  (Contributed by BJ, 22-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    findset $p |- ( A e. V ->
+           ( ( A C_ _om /\ (/) e. A /\ A. x e. A suc x e. A ) -> A = _om ) ) $=
+      ( wcel com wss c0 cv csuc wral wceq wa simpr1 wi simp2 df-ral alral sylbi
+      w3a wal 3ad2ant3 jca 3anass biimpri sylan2 speano5 syl eqssd ex ) BCDZBEF
+      ZGBDZAHZIBDZABJZSZBEKUJUPLZBEUJUKULUOMUQUJULUMBDUNNZAEJZSZEBFUPUJULUSLZUT
+      UPULUSUKULUOOUOUKUSULUOURATUSUNABPURAEQRUAUBUTUJVALUJULUSUCUDUEABCUFUGUHU
+      I $.
   $}
 
   ${
     $d x A $.
     bdfind.bd $e |- Bdd_ A $.
-    $( Closed form of bounded version of ~ find , constructive proof.
-       (Contributed by BJ, 18-Nov-2019.)
+    $( Bounded induction (principle of induction when ` A ` is assumed to be
+       bounded), proved from basic constructive axioms.  See ~ find for a
+       nonconstructive proof of the general case.  See ~ findset for a proof
+       when ` A ` is assumed to be a set.  (Contributed by BJ, 22-Nov-2019.)
        (Proof modification is discouraged.) $)
     bdfind $p |-
              ( ( A C_ _om /\ (/) e. A /\ A. x e. A suc x e. A ) -> A = _om ) $=
-      ( com wss c0 wcel cv csuc wral w3a wa 3anass biimpi simpl syl wi simpr id
-      wal df-ral alral sylbi anim12i bdpeano5 eqssd ) BDEZFBGZAHZIBGZABJZKZBDUL
-      UGUHUKLZLZUGULUNUGUHUKMNZUGUMOPULUHUIBGUJQZADJZLZDBEULUNURUOUNUMURUGUMRUH
-      UHUKUQUHSUKUPATUQUJABUAUPADUBUCUDPPABCUEPUF $.
+      ( cvv wcel com wss c0 cv csuc wral w3a wceq bj-omex bdssex 3ad2ant1 mpcom
+      findset ) BDEZBFGZHBEZAIJBEABKZLBFMTUASUBBFCNOPABDRQ $.
   $}
 
   ${
-    $d x A $.
-    $( Closed form of version of ~ find when ` A ` is a set, constructive
-       proof.  (Contributed by BJ, 19-Nov-2019.)
-       (Proof modification is discouraged.) $)
-    sfind $p |- ( ( ( A e. V /\ A C_ _om ) /\
-                         ( (/) e. A /\ A. x e. A suc x e. A ) ) -> A = _om ) $=
-      ( wcel com wss wa c0 cv csuc simplr wi w3a simpll simprl wal df-ral alral
-      wral sylbi ad2antll 3anass biimpri syl12anc speano5 syl eqssd ) BCDZBEFZG
-      ZHBDZAIZJBDZABSZGZGZBEUHUIUOKUPUHUKULBDUMLZAESZMZEBFUPUHUKURUSUHUIUONUJUK
-      UNOUNURUJUKUNUQAPURUMABQUQAERTUAUSUHUKURGGUHUKURUBUCUDABCUEUFUG $.
-  $}
-
-  ${
-    $d x y $.  $d x A $.  $d x ps $.  $d x ch $.  $d x th $.  $d x ta $.
-    $d y ph $.
-    bdfinds.bd $e |- Bdd ph $.
-    $( Substitutions. $)
-    bdfinds.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.
-    bdfinds.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
-    bdfinds.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.
-    bdfinds.4 $e |- ( x = A -> ( ph <-> ta ) ) $.
-    $( Basis. $)
-    bdfinds.5 $e |- ps $.
-    $( Induction step. $)
-    bdfinds.6 $e |- ( y e. _om -> ( ch -> th ) ) $.
-    $( Bounded version of ~ finds .  (Contributed by BJ, 18-Nov-2019.)
-       (Proof modification is discouraged.) $)
-    bdfinds $p |- ( A e. _om -> ta ) $=
-      ( com wcel cab c0 elab cv csuc wi wral wss 0ex mpbir vex bj-sucex 3imtr4g
-      rgen bdcab bdpeano5 mp2an sseli elabg mpbid ) HPQHAFRZQEPURHSURQZGUAZURQZ
-      UTUBZURQZUCZGPUDPURUEUSBNABFSUFJTUGVDGPUTPQCDVAVCOACFUTGUHZKTADFVBUTVEUIL
-      TUJUKGURAFIULUMUNUOAEFHPMUPUQ $.
-  $}
-
-  ${
-    $d x y $.  $d x ps $.  $d x ch $.  $d x th $.  $d y ph $.
-    bj-bdfinds.bd $e |- Bdd ph $.
-    $( Substitutions. $)
-    bj-bdfinds.1 $e |- ( x = (/) -> ( ps -> ph ) ) $.
-    bj-bdfinds.2 $e |- ( x = y -> ( ph -> ch ) ) $.
-    bj-bdfinds.3 $e |- ( x = suc y -> ( th -> ph ) ) $.
-    $( Principle of induction for bounded formulas, using implicit
-       substitutions (the biconditional versions of the hypotheses are implicit
-       substitutions, and we have weakend them to implications).  See
+    $d x y $.  $d y ph $.
+    bj-bdfindis.bd $e |- Bdd ph $.
+    bj-bdfindis.nf0 $e |- F/ x ps $.
+    bj-bdfindis.nf1 $e |- F/ x ch $.
+    bj-bdfindis.nfsuc $e |- F/ x th $.
+    bj-bdfindis.0 $e |- ( x = (/) -> ( ps -> ph ) ) $.
+    bj-bdfindis.1 $e |- ( x = y -> ( ph -> ch ) ) $.
+    bj-bdfindis.suc $e |- ( x = suc y -> ( th -> ph ) ) $.
+    $( Bounded induction (principle of induction for bounded formulas), using
+       implicit substitutions (the biconditional versions of the hypotheses are
+       implicit substitutions, and we have weakened them to implications).  See
        ~ finds .  From this version, it is easy to prove bounded versions of
        ~ finds , ~ finds2 , ~ finds1 .  (Contributed by BJ, 21-Nov-2019.)
        (Proof modification is discouraged.) $)
-    bj-bdfinds $p |-
+    bj-bdfindis $p |-
                     ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $=
-      ( wi com wral wa cab wss c0 wcel cv elab2a 0ex elab1 vex bj-sucex imim12i
-      csuc ralimi bdcab bdpeano5 syl2an ssabral sylib ) BCDKZFLMZNLAEOZPZAELMBQ
-      UORFSZUORZUQUFZUORZKZFLMUPUNABEQUAHTUMVAFLURCDUTACEUQIUBADEUSUQFUCUDJTUEU
-      GFUOAEGUHUIUJAELUKUL $.
-  $}
+      ( wi com wral wa c0 wcel elabf2 cab wss cv 0ex elabf1 vex bj-sucex ralimi
+      csuc imim12i bdcab bdpeano5 syl2an ssabral sylib ) BCDNZFOPZQOAEUAZUBZAEO
+      PBRURSFUCZURSZUTUIZURSZNZFOPUSUQABERHUDKTUPVDFOVACDVCACEUTILUEADEVBJUTFUF
+      UGMTUJUHFURAEGUKULUMAEOUNUO $.
 
-  ${
-    $d x y ta $.  $d x ps $.  $d x ch $.  $d x th $.  $d y ph $.
-    bdfinds2.bd $e |- Bdd ph $.
-    bdfinds2.bd2 $e |- Bdd ta $.
-    $( Substitutions. $)
-    bdfinds2.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.
-    bdfinds2.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
-    bdfinds2.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.
-    $( Basis. $)
-    bdfinds2.4 $e |- ( ta -> ps ) $.
-    $( Induction step. $)
-    bdfinds2.5 $e |- ( y e. _om -> ( ta -> ( ch -> th ) ) ) $.
-    $( Bounded version of ~ finds2 .  (Contributed by BJ, 18-Nov-2019.)
+    bj-bdfindisg.nfa $e |- F/_ x A $.
+    bj-bdfindisg.nfterm $e |- F/ x ta $.
+    bj-bdfindisg.term $e |- ( x = A -> ( ph -> ta ) ) $.
+    $( Bounded induction (principle of induction for bounded formulas), using
+       implicit substitutions (the biconditional versions of the hypotheses are
+       implicit substitutions, and we have weakened them to implications).  See
+       ~ finds .  From this version, it is easy to prove bounded versions of
+       ~ finds , ~ finds2 , ~ finds1 .  (Contributed by BJ, 21-Nov-2019.)
        (Proof modification is discouraged.) $)
-    bdfinds2 $p |- ( x e. _om -> ( ta -> ph ) ) $=
-      ( com wcel wi c0 wceq imbi2d cv cab csuc wral wss 0ex elab mpbir bj-sucex
-      a2d vex 3imtr4g rgen ax-bdim bdcab bdpeano5 mp2an sseli abid sylib ) FUAZ
-      OPVAEAQZFUBZPVBOVCVARVCPZGUAZVCPZVEUCZVCPZQZGOUDOVCUEVDEBQZMVBVJFRUFVARSA
-      BEJTUGUHVIGOVEOPZECQZEDQZVFVHVKECDNUJVBVLFVEGUKZVAVESACEKTUGVBVMFVGVEVNUI
-      VAVGSADELTUGULUMGVCVBFEAIHUNUOUPUQURVBFUSUT $.
-  $}
-
-  ${
-    $d x y $.  $d x ps $.  $d x ch $.  $d x th $.  $d y ph $.
-    bdfinds1.bd $e |- Bdd ph $.
-    $( Substitutions. $)
-    bdfinds1.1 $e |- ( x = (/) -> ( ph <-> ps ) ) $.
-    bdfinds1.2 $e |- ( x = y -> ( ph <-> ch ) ) $.
-    bdfinds1.3 $e |- ( x = suc y -> ( ph <-> th ) ) $.
-    $( Basis. $)
-    bdfinds1.4 $e |- ps $.
-    $( Induction step. $)
-    bdfinds1.5 $e |- ( y e. _om -> ( ch -> th ) ) $.
-    $( Bounded version of ~ finds1 .  (Contributed by BJ, 18-Nov-2019.)
-       (Proof modification is discouraged.) $)
-    bdfinds1 $p |- ( x e. _om -> ph ) $=
-      ( cv com wcel wtru tru bdtru a1i wi a1d bdfinds2 mpi ) EMNOPAQABCDPEFGRHI
-      JBPKSFMNOCDTPLUAUBUC $.
+    bj-bdfindisg $p |-
+                ( ( ps /\ A. y e. _om ( ch -> th ) ) -> ( A e. _om -> ta ) ) $=
+      ( wi com wral wa wcel bj-bdfindis nfcv bj-rspg syl ) BCDSGTUAUBAFTUAHTUCE
+      SABCDFGIJKLMNOUDAEFHTPFTUEQRUFUG $.
   $}
 
   ${
     $d x y z $.  $d y z ph $.
-    bdfindes.bd $e |- Bdd ph $.
-    bdfindes.1 $e |- [. (/) / x ]. ph $.
-    bdfindes.2 $e |- ( x e. _om -> ( ph -> [. suc x / x ]. ph ) ) $.
-    $( Bounded version of ~ findes .  (Contributed by BJ, 18-Nov-2019.)
+    bj-bdfindes.bd $e |- Bdd ph $.
+    $( Bounded induction, using explicit substitutions.  Constructive proof.
+       (Contributed by BJ, 21-Nov-2019.)
        (Proof modification is discouraged.) $)
-    bdfindes $p |- ( x e. _om -> ph ) $=
-      ( vz vy wsb c0 wsbc cv csuc ax-bdsb dfsbcq2 sbequ com wcel nfim imbi12d
-      wi sbequ12r nfv nfs1v nfsbc1v weq eleq1 sbequ12 wb suceq dfsbcq syl chvar
-      wceq bdfinds ) ABFHABIJABGHZABGKZLZJZAFGBKZABFCMABFINAFGBOABFUQNAFBUADUSP
-      QZAABUSLZJZTZTUPPQZUOURTZTBGVDVEBVDBUBUOURBABGUCABUQUDRRBGUEZUTVDVCVEUSUP
-      PUFVFAUOVBURABGUGVFVAUQUMVBURUHUSUPUIABVAUQUJUKSSEULUN $.
+    bj-bdfindes $p |- ( ( [. (/) / x ]. ph /\
+              A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x e. _om ph ) $=
+      ( vy cv csuc wsbc wi com wral wsb nfv nfim nfs1v nfsbc1v weq wceq sbceq1a
+      c0 biimprd sbequ12 sbceq1d imbi12d cbvral sbequ1 bj-bdfindis sylan2b
+      suceq ) AABBEZFZGZHZBIJABSGZABDKZABDEZFZGZHZDIJABIJULURBDIAUKDADLUKDLMUNU
+      QBABDNZABUPOZMBDPZAUNUKUQABDUAVAABUJUPUIUOUHUBUCUDAUMUNUQBDCABSOUSUTUISQA
+      UMABSRTABDUEUIUPQAUQABUPRTUFUG $.
   $}
 
-$(
   ${
-   $d x y z $. $d y z ph $.
-    bj-bdfindes.bd $e |- Bdd ph $. @( Principle of
-     induction for bounded formulas, using explicit substitutions.
-     (Contributed by BJ, 21-Nov-2019.)  (Proof modification is discouraged.) @)
-  bj-bdfindes $p |- ( ( [. (/) / x ]. ph /\
-              A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x e. _om ph ) $=
-    (  ) ? $.
+    $d x y z $.
+    $( Constructive proof of an adaptation of ~ nn0suc .  (Contributed by BJ,
+       19-Nov-2019.)  (Proof modification is discouraged.) $)
+    bj-nn0suc0 $p |- A. x e. _om ( x = (/) \/ E. y e. x x = suc y ) $=
+      ( vz wtru wi com wral cv c0 wceq csuc wrex wo tru wcel wex wa a1d weq wn
+      idd rgenm bdeq0 bdeqsuc ax-bdex ax-bdor nfv orc a1tru wel vex sucid eleq2
+      expi mpbiri suceq eqeq2d rspcev mpancom olcd bj-bdfindis mp2an ) DDDEZCFG
+      AHZIJZVDBHZKZJZBVDLZMZAFGNVCCFCHZFOZCPVLQDUAUBVJDDDACVEVIAUCVHBAABUDUEUFD
+      AUGZVMVMVEVJDVEVIUHRACSZVJDVNVJTETUIUNVDVKKZJZVJDVPVIVECAUJZVPVIVPVQVKVOO
+      VKCUKULVDVOVKUMUOVHVPBVKVDBCSVGVOVDVFVKUPUQURUSUTRVAVB $.
+  $}
+
+${
+$d x y z A $.
+$( A natural number is a transitive set.  (Contributed by BJ,
+   22-Nov-2019.)  (Proof modification is discouraged.) $)
+bj-nntrans $p |- ( A e. _om -> A. x e. A x C_ A ) $=
+  ( vz vy cv c0 wss wral csuc wi com wcel syl5bi nfv wceq id1 raleqbidv biimprd
+  sseq2 biimpd ral0 csn cun wel df-suc eleq2i wo sssucid sstr2 mpi imim2i elsni
+  elun syl6eqss a1i jaod ralimi2 rgenw bdcv bdss ax-bdal weq bj-bdfindisg mp2an
+  nfcv ) AEZFGZAFHZVFCEZGZAVIHZVFVIIZGZAVLHZJZCKHBKLVFBGZABHZJVGAUAVOCKVJVMAVIV
+  LVFVLLVFVIVIUBZUCZLZACUDZVJJZVMVLVSVFVIUEUFVTWAVFVRLZUGWBVMVFVIVRUMWBWAVMWCVJ
+  VMWAVJVIVLGVMVIUHZVFVIVLUIUJUKWCVMJWBWCVFVIVLVFVIULWDUNUOUPMMUQURVFDEZGZAWEHZ
+  VHVKVNVQDCBWFADAWEDUSUTVAVHDNVKDNVNDNWEFOZWGVHWHWFVGAWEFWHPWEFVFSQRDCVBZWGVKW
+  IWFVJAWEVIWIPWEVIVFSQTWEVLOZWGVNWJWFVMAWEVLWJPWEVLVFSQRDBVEVQDNWEBOZWGVQWKWFV
+  PAWEBWKPWEBVFSQTVCVD $.
 $}
-$)
+
+${
+$d x A $.
+$( A natural number is included in ` om ` .  (Contributed by BJ,
+   22-Nov-2019.)  (Proof modification is discouraged.) $)
+bj-nntrans2 $p |- ( A e. _om -> A C_ _om ) $=
+  ? $.
+$}
+
 
 $(
   ${
-    $d x y z A $.
-    @( Constructive proof of an adaptation of ~ nn0suc .  (Contributed by BJ,
-       19-Nov-2019.)  (Proof modification is discouraged.) @)
-    bj-nn0suc $p |- ( x e. _om -> ( x = (/) \/ E. y e. x x = suc y ) ) $=
+    @( Proof of ~ nn0suc .  NOT YET constructive because of ~ omelon
+       (Contributed by BJ, 19-Nov-2019.)  (Proof modification is
+       discouraged.) @)
+    bj-nn0suc $p |- ( A e. _om -> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
+      ( vy cv wceq c0 csuc wrex wo com wi wral wa wcel eqeq1 rexeqbi1dv orbi12d
+      wal biimpd nfcv a1i wss omelon onelssi ssrexv adantr orim2d syldd alrimiv
+      syl ex bj-nn0suc0 jctir nfv bj-rspgt imp mpcom ) CDZBEZURFEZURADGZEZAURHZ
+      IZBFEZBVAEZAJHZIZKKZCRZVDCJLZMBJNZVHVLVJVKVLVICVLUSVDVEVFABHZIZVHUSVDVNKK
+      VLUSVDVNUSUTVEVCVMURBFOVBVFAURBURBVAOPQSUAVLUSVNVHKVLUSMVMVGVEVLVMVGKZUSV
+      LBJUBVOJBUCUDVFABJUEUJUFUGUKUHUICAULUMVJVKVLVHKVDVHCBJCBTCJTVHCUNUOUPUQ
+      $.
+  $}
+$)
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+       Full induction
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+In this section, using the axiom of set induction, we prove full induction on
+the set of natural numbers.
+
+$)
+
+  ${
+    $d x z A $.  $d y z A $.  $d z ph $.  $d z ps $.  $d z ch $.
+    cbvrald.nf0 $e |- F/ x ph $.
+    cbvrald.nf1 $e |- F/ y ph $.
+    cbvrald.nf2 $e |- ( ph -> F/ y ps ) $.
+    cbvrald.nf3 $e |- ( ph -> F/ x ch ) $.
+    cbvrald.is $e |- ( ph -> ( x = y -> ( ps <-> ch ) ) ) $.
+    $( Rule used to change bound variables, using implicit substitution.
+       (Contributed by BJ, 22-Nov-2019.) $)
+    cbvrald $p |- ( ph -> ( A. x e. A ps <-> A. y e. A ch ) ) $=
+      ( vz cv wcel wi nfv wnf a1i nfimd wb wal wral wsb nfs1v weq eleq1 sbequ12
+      wa adantl imbi12d cbv2 nfsbd sbequ sbied sylan9bbr bitrd df-ral 3bitr4g
+      ex ) ADMZFNZBOZDUAZEMZFNZCOZEUAZBDFUBCEFUBAVCLMZFNZBDLUCZOZLUAVGAVBVKDLGA
+      LPZAVABLVALQAVALPRBLQABLPRSAVIVJDVIDQAVIDPRVJDQABDLUDRSADLUEZVBVKTAVMUHVA
+      VIBVJVMVAVITAUTVHFUFUIVMBVJTABDLUGUIUJUSUKAVKVFLEVLHAVIVJEVIEQAVIEPRABDLE
+      GIULSAVECLVELQAVELPRCLQACLPRSALEUEZVKVFTAVNUHVIVEVJCVNVIVETAVHVDFUFUIVNVJ
+      BDEUCACBLEDUMABCDEGJKUNUOUJUSUKUPBDFUQCEFUQUR $.
+  $}
+
+  ${
+    $d x y z $.  $d ph z $.
+    $( Axiom of set-induction with a DV condition replaced with a non-freeness
+       hypothesis (Contributed by BJ, 22-Nov-2019.) $)
+    setindft $p |- ( A. x F/ y ph ->
+                      ( A. x ( A. y e. x [ y / x ] ph -> ph ) -> A. x ph ) ) $=
+      ( vz wnf wal wsb cv wral wi nfa1 nfv nfnf1 nfsbt a1i weq wb sbequ cbvrald
+      nfal biimpd imim1d alimd ax-setind syl6 ) ACEZBFZABCGZCBHZIZAJZBFABDGZDUI
+      IZAJZBFABFUGUKUNBUFBKUGUMUJAUGUMUJUGULUHDCUIUGDLUFCBACMTABDCNUHDEUGUHDLOD
+      CPULUHQJUGADCBROSUAUBUCADBUDUE $.
+  $}
+
+  ${
+    $d x y z $.  $d ph z $.
+    setindf.nf $e |- F/ y ph $.
+    $( Axiom of set-induction with a DV condition replaced with a non-freeness
+       hypothesis (Contributed by BJ, 22-Nov-2019.) $)
+    setindf $p |- ( A. x ( A. y e. x [ y / x ] ph -> ph ) -> A. x ph ) $=
+      ( wnf wsb cv wral wi wal setindft mpg ) ACEABCFCBGHAIBJABJIBABCKDL $.
+  $}
+
+  ${
+    $d x y z $.  $d ph z $.
+    setindis.nf0 $e |- F/ x ps $.
+    setindis.nf1 $e |- F/ x ch $.
+    setindis.nf2 $e |- F/ y ph $.
+    setindis.nf3 $e |- F/ y ps $.
+    setindis.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
+    setindis.2 $e |- ( x = y -> ( ch <-> ph ) ) $.
+    $( Axiom of set induction using implicit substitutions.  (Contributed by
+       BJ, 22-Nov-2019.) $)
+    setindis $p |- ( A. y ( A. z e. y ps -> ch ) -> A. x ph ) $=
+      ( cv wral wi wal wsb nfcv nfralxy nfim weq raleq wb equcoms imbi12d cbval
+      sbie biimpi ralimi imim1i alimi sylbi ax-setind syl ) BFEMZNZCOZEPZADFQZF
+      DMZNZAOZDPZADPURBFUTNZAOZDPVCUQVEEDUPCDBDFUODUORGSHTVDAEBEFUTEUTRJSITEDUA
+      UPVDCABFUOUTUBCAUCDELUDUEUFVEVBDVAVDAUSBFUTUSBABDFGKUGUHUIUJUKULAFDUMUN
+      $.
+  $}
+
+  ${
+    $d x y $.  $d y ph $.
+    bj-findis.nf0 $e |- F/ x ps $.
+    bj-findis.nf1 $e |- F/ x ch $.
+    bj-findis.nfsuc $e |- F/ x th $.
+    bj-findis.0 $e |- ( x = (/) -> ( ps -> ph ) ) $.
+    bj-findis.1 $e |- ( x = y -> ( ph -> ch ) ) $.
+    bj-findis.suc $e |- ( x = suc y -> ( th -> ph ) ) $.
+    $( Full induction (principle of induction), using implicit substitutions.
+       Constructive proof.  (Contributed by BJ, 22-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-findis $p |-
+                    ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $=
       (  ) ? $.
   $}
+
+  ${
+    $d x y z $.  $d y z ph $.
+    bj-findeslem.dummy $e |- ( ps <-> ( x e. _om -> ph ) ) $.
+  $( Lemma.     (Contributed by BJ, 24-Nov-2019.)
+     (Proof modification is discouraged.) $)
+    bj-findeslem0 $p |- ( [. (/) / x ]. ph <-> [. (/) / x ]. ps ) $=
+      ( c0 wsbc cv com wcel wi 0ex eleq1 sbcie bicomi imbi1i peano1 a1bi cvv wb
+      sbcimg ax-mp 3bitr4i sbcbii bitri ) ACEFZCGZHIZAJZCEFZBCEFEHIZUEJUGCEFZUE
+      JZUEUIUJUKUEUKUJUGUJCEKUFEHLMNOUJUEPQERIUIULSKUGACERTUAUBUHBCEBUHDNUCUD
+      $.
+
+$( Lemma.  NOT YET constructive because of ~ peano2b .  (Contributed by BJ, 24-Nov-2019.)
+   (Proof modification is discouraged.) $)
+  bj-findeslem1BAD $p |-
+               ( ( x e. _om -> [. suc x / x ]. ph ) <-> [. suc x / x ]. ps ) $=
+    ( cv com wcel csuc wsbc wi peano2b cvv wb vex bj-sucex sbcel1gv ax-mp bitri
+    bicomi imbi1i sbcimg sbcbii ) CEZFGZACUCHZIZJZUDAJZCUEIZBCUEIUGUDCUEIZUFJZU
+    IUDUJUFUDUEFGZUJUCKUJULUELGZUJULMUCCNOZCUEFLPQSRTUIUKUMUIUKMUNUDACUELUAQSRU
+    HBCUEBUHDSUBR $.
+
+$( Lemma.  NOT YET constructive because of ~ peano2b .  (Contributed by BJ, 24-Nov-2019.)
+   (Proof modification is discouraged.) $)
+  bj-findeslem1 $p |-
+               ( [. suc x / x ]. ps -> ( x e. _om -> [. suc x / x ]. ph ) ) $=
+    ( cv csuc wsbc com wcel wi sbcbii biimpi bj-peano2 cvv wb bj-sucex sbcel1gv
+    vex ax-mp sylibr sbcimg syl2im ) BCCEZFZGZUCHIZAJZCUDGZUFUFCUDGZACUDGZUEUHB
+    UGCUDDKLUFUDHIZUIUCMUDNIZUIUKOUCCRPZCUDHNQSTUHUIUJJZULUHUNOUMUFACUDNUASLUB
+    $.
+
+  $( Full induction, using explicit substitutions.  Constructive proof.
+     (Contributed by BJ, 24-Nov-2019.)
+     (Proof modification is discouraged.) $)
+    bj-findeslem2 $p |- ( ( [. (/) / x ]. ph /\
+            A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x e. _om ph ) $=
+      (  ) ? $.
+$(
+13         bj-findeslem.dummy=bj-findeslem.dummy $e |- ( ps <-> ( x e. _om -> ph ) )
+14       biimpi.1=bj-findeslem0                $p |- ( [. (/) / x ]. ph <-> [. (/) / x ]. ps )
+15     anim12i.1=biimpi                      $p |- ( [. (/) / x ]. ph -> [. (/) / x ]. ps )
+24         biimpi.1=df-ral                       $a |- ( A. x e. _om ( ph -> [. suc x / x ]. ph ) <-> A. x ( x e. _om -> ( ph -> [. suc x / x ]. ph ) ) )
+25       syl.1=biimpi                          $p |- ( A. x e. _om ( ph -> [. suc x / x ]. ph ) -> A. x ( x e. _om -> ( ph -> [. suc x / x ]. ph ) ) )
+35           syl.1=ax-2                            $a |- ( ( x e. _om -> ( ph -> [. suc x / x ]. ph ) ) -> ( ( x e. _om -> ph ) -> ( x e. _om -> [. suc x / x ]. ph ) ) )
+42               biimpi.1=bj-findeslem.dummy           $e |- ( ps <-> ( x e. _om -> ph ) )
+43             imim12i.1=biimpi                      $p |- ( ps -> ( x e. _om -> ph ) )
+44             imim12i.2=?                           $? |- ( ( x e. _om -> [. suc x / x ]. ph ) -> $95 )
+45           syl.2=imim12i                         $p |- ( ( ( x e. _om -> ph ) -> ( x e. _om -> [. suc x / x ]. ph ) ) -> ( ps -> $95 ) )
+46         alimi.1=syl                           $p |- ( ( x e. _om -> ( ph -> [. suc x / x ]. ph ) ) -> ( ps -> $95 ) )
+47       syl.2=alimi                           $p |- ( A. x ( x e. _om -> ( ph -> [. suc x / x ]. ph ) ) -> A. x ( ps -> $95 ) )
+48     anim12i.2=syl                         $p |- ( A. x e. _om ( ph -> [. suc x / x ]. ph ) -> A. x ( ps -> $95 ) )
+49   syl.1=anim12i                         $p |- ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> ( [. (/) / x ]. ps /\ A. x ( ps -> $95 ) ) )
+53     sylib.1=?                             $? |- ( ( [. (/) / x ]. ps /\ A. x ( ps -> $95 ) ) -> A. x ps )
+60         albii.1=bj-findeslem.dummy            $e |- ( ps <-> ( x e. _om -> ph ) )
+61       bitri.1=albii                         $p |- ( A. x ps <-> A. x ( x e. _om -> ph ) )
+67         bicomi.1=df-ral                       $a |- ( A. x e. _om ph <-> A. x ( x e. _om -> ph ) )
+68       bitri.2=bicomi                        $p |- ( A. x ( x e. _om -> ph ) <-> A. x e. _om ph )
+69     sylib.2=bitri                         $p |- ( A. x ps <-> A. x e. _om ph )
+70   syl.2=sylib                           $p |- ( ( [. (/) / x ]. ps /\ A. x ( ps -> $95 ) ) -> A. x e. _om ph )
+71 bj-findeslem=syl                      $p |- ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x e. _om ph )
 $)
+  $}
+
+  ${
+    $d x y z $.  $d y z ph $.
+    $( Full induction, using explicit substitutions.  Constructive proof.
+       (Contributed by BJ, 24-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-findes $p |- ( ( [. (/) / x ]. ph /\
+              A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x e. _om ph ) $=
+      (  ) ? $.
+$(
+50::bj-nn0suc0                       |- A. x e. _om ( x = (/) \/ E. z e. x x = suc z )
+51::df-ral                           |- ( A. x e. _om ( x = (/) \/ E. z e. x x = suc z ) <-> A. x ( x e. _om -> ( x = (/) \/ E. z e. x x = suc z ) ) )
+52:50,51:mpbi                     |- A. x ( x e. _om -> ( x = (/) \/ E. z e. x x = suc z ) )
+53:52:a1i                      |- ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x ( x e. _om -> ( x = (/) \/ E. z e. x x = suc z ) ) )
+d3::nfsbc1v                                |- F/ x [. (/) / x ]. ph
+d4::nfra1                                  |- F/ x A. x e. _om ( ph -> [. suc x / x ]. ph )
+d1:d3,d4:nfan                           |- F/ x ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) )
+d20::0ex                                                                          |- (/) e. _V
+d18:d20:sbc6                                                                   |- ( [. (/) / x ]. ph <-> A. x ( x = (/) -> ph ) )
+d19::ax-4                                                                      |- ( A. x ( x = (/) -> ph ) -> ( x = (/) -> ph ) )
+d17:d18,d19:sylbi                                                           |- ( [. (/) / x ]. ph -> ( x = (/) -> ph ) )
+d16:d17:imp                                                              |- ( ( [. (/) / x ]. ph /\ x = (/) ) -> ph )
+d15:d16:a1i                                                           |- ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ( ( [. (/) / x ]. ph /\ x = (/) ) -> ph ) )
+d14:d15:com12                                                      |- ( ( [. (/) / x ]. ph /\ x = (/) ) -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) )
+d13:d14:ex                                                      |- ( [. (/) / x ]. ph -> ( x = (/) -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) )
+d12:d13:a1i                                                  |- ( A. x e. _om ( ph -> [. suc x / x ]. ph ) -> ( [. (/) / x ]. ph -> ( x = (/) -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) ) )
+d11:d12:imp                                               |- ( ( A. x e. _om ( ph -> [. suc x / x ]. ph ) /\ [. (/) / x ]. ph ) -> ( x = (/) -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) )
+d10:d11:ancoms                                         |- ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> ( x = (/) -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) )
+d9:d10:a1i                                          |- ( x e. _om -> ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> ( x = (/) -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) ) )
+d8:d9:imp                                        |- ( ( x e. _om /\ ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) ) -> ( x = (/) -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) )
+d6:d8:ancoms                                  |- ( ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) /\ x e. _om ) -> ( x = (/) -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) )
+!d7::                                         |- ( ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) /\ x e. _om ) -> ( E. z e. x x = suc z -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) )
+d5:d6,d7:jaod                              |- ( ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) /\ x e. _om ) -> ( ( x = (/) \/ E. z e. x x = suc z ) -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) )
+d2:d5:ex                                |- ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> ( x e. _om -> ( ( x = (/) \/ E. z e. x x = suc z ) -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) ) )
+54:d1,d2:alrimi                      |- ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x ( x e. _om -> ( ( x = (/) \/ E. z e. x x = suc z ) -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) ) )
+55::ax-2                                |- ( ( x e. _om -> ( ( x = (/) \/ E. z e. x x = suc z ) -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) ) -> ( ( x e. _om -> ( x = (/) \/ E. z e. x x = suc z ) ) -> ( x e. _om -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) ) )
+56:55:alimi                          |- ( A. x ( x e. _om -> ( ( x = (/) \/ E. z e. x x = suc z ) -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) ) -> A. x ( ( x e. _om -> ( x = (/) \/ E. z e. x x = suc z ) ) -> ( x e. _om -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) ) )
+57:54,56:syl                      |- ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x ( ( x e. _om -> ( x = (/) \/ E. z e. x x = suc z ) ) -> ( x e. _om -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) ) )
+58::ax-5                          |- ( A. x ( ( x e. _om -> ( x = (/) \/ E. z e. x x = suc z ) ) -> ( x e. _om -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) ) -> ( A. x ( x e. _om -> ( x = (/) \/ E. z e. x x = suc z ) ) -> A. x ( x e. _om -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) ) )
+59:57,58:syl                   |- ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> ( A. x ( x e. _om -> ( x = (/) \/ E. z e. x x = suc z ) ) -> A. x ( x e. _om -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) ) )
+60:53,59:mpd                |- ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x ( x e. _om -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) )
+61::bi2.04                     |- ( ( x e. _om -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) <-> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ( x e. _om -> ph ) ) )
+62:61:albii                 |- ( A. x ( x e. _om -> ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ph ) ) <-> A. x ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ( x e. _om -> ph ) ) )
+63:60,62:sylib           |- ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ( x e. _om -> ph ) ) )
+64::ax-setind            |- ( A. x ( A. y e. x [ y / x ] ( x e. _om -> ph ) -> ( x e. _om -> ph ) ) -> A. x ( x e. _om -> ph ) )
+65:63,64:syl          |- ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x ( x e. _om -> ph ) )
+66::df-ral               |- ( A. x e. _om ph <-> A. x ( x e. _om -> ph ) )
+67:66:biimpri         |- ( A. x ( x e. _om -> ph ) -> A. x e. _om ph )
+qed:65,67:syl      |- ( ( [. (/) / x ]. ph /\ A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x e. _om ph )
+$)
+
+
+  $}
+
 
 $( (End of BJ's mathbox.) $)
 
