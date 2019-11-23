@@ -14054,6 +14054,16 @@ $)
   $}
 
   ${
+    $d w ph $.  $d x ph $.  $d y ph $.  $d z ph $.
+    $( Theorem 19.42 of [Margaris] p. 90 with 4 quantifiers.  (Contributed by
+       Jim Kingdon, 23-Nov-2019.) $)
+    19.42vvvv $p |- ( E. w E. x E. y E. z ( ph /\ ps ) <->
+                     ( ph /\ E. w E. x E. y E. z ps ) ) $=
+      ( wa wex 19.42vv 2exbii bitri ) ABGEHDHZCHFHABEHDHZGZCHFHAMCHFHGLNFCABDEI
+      JAMFCIK $.
+  $}
+
+  ${
     $d y ph $.  $d z ph $.
     $( Distribution of existential quantifiers.  (Contributed by NM,
        17-Mar-1995.) $)
@@ -14246,6 +14256,24 @@ $)
                   ( E. x E. y ph /\ E. z E. w ps ) ) $=
       ( wa wex excom exbii eeanv 2exbii 3bitri ) ABGFHZEHDHZCHNDHZEHZCHADHZBFHZ
       GZEHCHRCHSEHGOQCNDEIJPTCEABDFKLRSCEKM $.
+  $}
+
+  ${
+    $v s $.
+    $( Define a temporary individual variable. $)
+    ee8anv.vs $f setvar s $.
+
+    $d v ph $.  $d u ph $.  $d t ph $.  $d s ph $.  $d x ps $.  $d y ps $.
+    $d z ps $.  $d w ps $.  $d s x $.  $d s y $.  $d s z $.  $d t w $.
+    $d t x $.  $d t y $.  $d u w $.  $d u x $.  $d u z $.  $d v w $.  $d v y $.
+    $d v z $.
+    $( Rearrange existential quantifiers.  (Contributed by Jim Kingdon,
+       23-Nov-2019.) $)
+    ee8anv $p |- ( E. x E. y E. z E. w E. v E. u E. t E. s ( ph /\ ps ) <->
+                  ( E. x E. y E. z E. w ph /\ E. v E. u E. t E. s ps ) ) $=
+      ( wa wex exrot4 2exbii ee4anv 3bitri ) ABKJLILZHLGLFLELZDLCLQFLELZHLGLZDL
+      CLAFLELZBJLILZKZHLGLZDLCLUADLCLUBHLGLKRTCDQEFGHMNTUDCDSUCGHABEFIJONNUAUBC
+      DGHOP $.
   $}
 
   ${
@@ -22080,16 +22108,15 @@ $)
     ceqsex8v $p |- ( E. x E. y E. z E. w E. v E. u E. t E. s
               ( ( ( x = A /\ y = B ) /\ ( z = C /\ w = D ) )
          /\ ( ( v = E /\ u = F ) /\ ( t = G /\ s = H ) ) /\ ph ) <-> rh ) $=
-      ( cv wceq wa w3a 19.42vv 2exbii bitri 3anass df-3an anbi2i bitr4i 3bitr4i
-      wex 3anbi3d 4exbidv ceqsex4v ) JVBQVCZKVBRVCZVDZLVBSVCZMVBTVCZVDZVDZNVBUA
-      VCOVBUBVCVDZPVBUCVCUEVBUDVCVDZVDZAVEZUEVNPVNZOVNNVNZMVNLVNZKVNJVNVTWCWEWF
-      AVEZUEVNPVNZOVNNVNZVEZMVNLVNZKVNJVNZIWKWPJKWJWOLMWDWLVDZUEVNPVNZOVNNVNZWD
-      WNVDZWJWOWTWDWMVDZOVNNVNXAWSXBNOWDWLPUEVFVGWDWMNOVFVHWIWSNOWHWRPUEWHWDWGA
-      VDZVDWRWDWGAVIWLXCWDWEWFAVJVKVLVGVGVTWCWNVJVMVGVGWQWEWFEVEZUEVNPVNOVNNVNZ
-      IWNWEWFBVEZUEVNPVNOVNNVNWEWFCVEZUEVNPVNOVNNVNWEWFDVEZUEVNPVNOVNNVNXEJKLMQ
-      RSTUFUGUHUIVRWLXFNOPUEVRABWEWFUNVOVPVSXFXGNOPUEVSBCWEWFUOVOVPWAXGXHNOPUEW
-      ACDWEWFUPVOVPWBXHXDNOPUEWBDEWEWFUQVOVPVQEFGHINOPUEUAUBUCUDUJUKULUMURUSUTV
-      AVQVHVH $.
+      ( cv wceq wa w3a wex 19.42vvvv 3anass df-3an anbi2i bitr4i 2exbii 3bitr4i
+      3anbi3d 4exbidv ceqsex4v bitri ) JVBQVCZKVBRVCZVDZLVBSVCZMVBTVCZVDZVDZNVB
+      UAVCOVBUBVCVDZPVBUCVCUEVBUDVCVDZVDZAVEZUEVFPVFZOVFNVFZMVFLVFZKVFJVFVTWCWE
+      WFAVEZUEVFPVFOVFNVFZVEZMVFLVFZKVFJVFZIWKWOJKWJWNLMWDWLVDZUEVFPVFZOVFNVFWD
+      WMVDWJWNWDWLOPUENVGWIWRNOWHWQPUEWHWDWGAVDZVDWQWDWGAVHWLWSWDWEWFAVIVJVKVLV
+      LVTWCWMVIVMVLVLWPWEWFEVEZUEVFPVFOVFNVFZIWMWEWFBVEZUEVFPVFOVFNVFWEWFCVEZUE
+      VFPVFOVFNVFWEWFDVEZUEVFPVFOVFNVFXAJKLMQRSTUFUGUHUIVRWLXBNOPUEVRABWEWFUNVN
+      VOVSXBXCNOPUEVSBCWEWFUOVNVOWAXCXDNOPUEWACDWEWFUPVNVOWBXDWTNOPUEWBDEWEWFUQ
+      VNVOVPEFGHINOPUEUAUBUCUDUJUKULUMURUSUTVAVPVQVQ $.
   $}
 
   ${
