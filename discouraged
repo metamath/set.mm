@@ -16993,6 +16993,7 @@ New usage of "neeq2iOLD" is discouraged (0 uses).
 New usage of "negexsr" is discouraged (0 uses).
 New usage of "neleq12dOLD" is discouraged (0 uses).
 New usage of "neleq1OLD" is discouraged (0 uses).
+New usage of "neleq2OLD" is discouraged (0 uses).
 New usage of "neleqtrrdOLD" is discouraged (0 uses).
 New usage of "neneqadOLD" is discouraged (0 uses).
 New usage of "nesymiOLD" is discouraged (0 uses).
@@ -19299,6 +19300,7 @@ Proof modification of "neeq2dOLD" is discouraged (17 steps).
 Proof modification of "neeq2iOLD" is discouraged (16 steps).
 Proof modification of "neleq12dOLD" is discouraged (37 steps).
 Proof modification of "neleq1OLD" is discouraged (32 steps).
+Proof modification of "neleq2OLD" is discouraged (32 steps).
 Proof modification of "neleqtrrdOLD" is discouraged (15 steps).
 Proof modification of "neneqadOLD" is discouraged (10 steps).
 Proof modification of "nesymiOLD" is discouraged (12 steps).
