@@ -17122,6 +17122,7 @@ New usage of "nmounbseqi" is discouraged (0 uses).
 New usage of "nmounbseqiOLD" is discouraged (0 uses).
 New usage of "nmoxr" is discouraged (7 uses).
 New usage of "nn0suppOLD" is discouraged (11 uses).
+New usage of "nnelOLD" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (6 uses).
 New usage of "noinfepOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
@@ -19333,6 +19334,7 @@ Proof modification of "nic-swap" is discouraged (28 steps).
 Proof modification of "nmobndseqiOLD" is discouraged (189 steps).
 Proof modification of "nmounbseqiOLD" is discouraged (146 steps).
 Proof modification of "nn0suppOLD" is discouraged (91 steps).
+Proof modification of "nnelOLD" is discouraged (18 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "noinfepOLD" is discouraged (267 steps).
 Proof modification of "notnot2ALT" is discouraged (12 steps).
