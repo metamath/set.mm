@@ -109,11 +109,12 @@ headway various proof systems have made in mathematics, Coq and Mizar
 are two of the most successful systems in use today (Wiedijk,
 2007)".</p>
 
-<p>Currently there are <b>71</b> proofs proven by Metamath from this list of
-100.  As of 2019-03-10 this number of proofs is more than
+<p>Currently there are <b>72</b> proofs proven by Metamath from this list of
+100.  As of 2019-11-25 this number of proofs is more than
 Coq (69), Mizar (69),
-ProofPower (43), nqthm/ACL2 (18), PVS (16), and NuPRL/MetaPRL (8);
-it is short of only Isabelle (81) and HOL Light (86).
+ProofPower (43), Lean (29),
+nqthm/ACL2 (18), PVS (17), and NuPRL/MetaPRL (8);
+it is short of only Isabelle (82) and HOL Light (86).
 This is very good, especially considering that there had been no significant
 effort until 2014 to prove theorems from this list of 100.
 In this page, you can see the
@@ -125,18 +126,38 @@ metamath proofs.
 href="https://docs.google.com/spreadsheets/d/1jcLOp_jF4sPrVPdPedL_ZWebXp8oYEQOSmbWb168YHE"
 >Some graphs showing Metamath 100 progress are available</a> (click the
 Authors tab for a pie chart).
-
 </p>
 
-<p> Like all Metamath proofs, all reasoning is done directly in the
+<p>Like all Metamath proofs, all reasoning is done directly in the
 proof itself rather than by algorithms embedded in the verification
 program.  As a result, the proofs are completely transparent with
 nothing hidden from the user, and every step can be followed through a
-hyperlink to its corresponding proof or definition.  What's more, all of
+hyperlink to its corresponding proof or definition.
+Therefore, the Metamath Proof Explorer (MPE aka set.mm) database
+is the <i>largest</i> database of formally-verified mathematics
+that records every step of a proof by directly
+referring to only an axiom or previous proof
+(many competing databases listed above
+only record tactics that record how to
+rediscover the proof, instead of recording
+the specific proven steps actually used in the proof).
+</p>
+
+<p>
+The theorems in MPE are routinely verified by 5 different programs
+written in 5 different programming languages by more than 5 different people.
+This provides very strong justification in believing
+that the proofs are correct.
+</p>
+
+<p>
+What's more, all of
 the proofs listed here are current and verified with the current
-versions of Metamath tools.  This is not the case with some
+versions of Metamath tools.
+This is not the case with some
 other systems, where older proofs have not always been kept synchronized
 with the current system and thus have become essentially lost.
+</p>
 
 <!--
 This is different from some other systems.
@@ -146,12 +167,12 @@ formal proofs), so its proof is uncheckable with current tools and
 essentially lost.
 -->
 
+<p>
 Since the kernel of Metamath is extremely small and rarely changes, the
-underlying Metamath language (as implemented by a dozen
-independently-written verifiers) is very stable over time.
-</p>
-
-<p>The entire
+underlying Metamath language (as implemented by over a dozen
+independently-written verifiers) is very stable over time
+and can be verified very rapidly.
+The entire
 content of  <A HREF="index.html#mmprog">set.mm</A>
 set theory database can be verified in less than 5 sec
 with the <A HREF="index.html#mmprog">metamath program</A> and in 0.7 sec
@@ -358,6 +379,11 @@ by Mario Carneiro, 2015-05-06)</li>
 <li><a name="48">48</a>.  Dirichlet's Theorem (<a
 href="mpeuni/dirith.html">dirith</a>,
 by Mario Carneiro, 2016-05-12)</li>
+
+<!-- 72nd added to list -->
+<li><a name="49">49</a>.  The Cayley-Hamilton Theorem (<a
+href="mpeuni/cayleyhamilton.html">cayleyhamilton</a>,
+by Alexander van der Vekens, 2019-11-25)</li>
 
 <!-- 42th added to list -->
 <li><a name="51">51</a>.  Wilson's Theorem (<a
@@ -601,7 +627,6 @@ href="mpeuni/stowei.html">stowei</a>, by Glauco Siliprandi,
 <li><a name="41">41</a>.  Puiseux's Theorem</li>
 <li><a name="43">43</a>.  The Isoperimetric Theorem</li>
 <li><a name="47">47</a>.  The Central Limit Theorem</li>
-<li><a name="49">49</a>.  The Cayley-Hamilton Theorem</li>
 <li><a name="50">50</a>.  The Number of Platonic Solids</li>
 <li><a name="53">53</a>.  <i>&pi;</i> is Transcendental</li>
 <li><a name="56">56</a>.  The Hermite-Lindemann Transcendence Theorem</li>
