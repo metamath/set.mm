@@ -689,7 +689,7 @@ $)
      ~ http://www.mathsci.appstate.edu/~~jlh/primer/hirst.pdf .  For a shorter
      version of the proof that takes advantage of previously proved theorems,
      see ~ id .  (Contributed by NM, 5-Aug-1993.)  Use ~ id instead.  (New
-     usage is disouraged. ) $)
+     usage is discouraged.) $)
   id1 $p |- ( ph -> ph ) $=
     ( wi ax-1 ax-2 ax-mp ) AAABZBZFAACAFABBGFBAFCAFADEE $.
 
