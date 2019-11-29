@@ -1,4 +1,4 @@
-$( iset.mm - Version of 25-Nov-2019
+$( iset.mm - Version of 28-Nov-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -688,8 +688,8 @@ $)
      Primer for Logic and Proof_ p. 17 (PDF p. 23) at
      ~ http://www.mathsci.appstate.edu/~~jlh/primer/hirst.pdf .  For a shorter
      version of the proof that takes advantage of previously proved theorems,
-     see ~ id .  (Contributed by NM, 5-Aug-1993.)  Use ~ id instead.  (New
-     usage is discouraged.) $)
+     see ~ id .  (Contributed by NM, 5-Aug-1993.)  Use ~ id instead.
+     (New usage is discouraged.) $)
   id1 $p |- ( ph -> ph ) $=
     ( wi ax-1 ax-2 ax-mp ) AAABZBZFAACAFABBGFBAFCAFADEE $.
 
@@ -61663,7 +61663,8 @@ proofs of (semantic) boundedness of formulas.
 As will be clear by the end of this subsection (see for instance ~ bdop ), one
 can prove the boundedness of any concrete term using only setvars and bounded
 formulas, for instance,
-` |- Bdd ph => |- Bdd_ <. { x | ph } , { y , suc z } X. <. t , (/) >. >. ` .
+` |- Bdd ph => `
+` |- Bdd_ <. { x | ph } , ( { y , suc z } X. <. t , (/) >. ) >. ` .
 The proofs are long since one has to prove boundedness at each step of the
 construction, without being able to prove general theorems like
 ` |- Bdd_ A => |- Bdd_ { A } ` .
@@ -62450,28 +62451,36 @@ In this section, we introduced the axiom of infinity in a constructive setting
 $)
 
   ${
-    $d x y z $.
+    $d a b x $.
     $( Axiom of infinity in a constructive setting.  This asserts the existence
        of the special set we want (the set of natural numbers), instead of the
        existence of a set with some properties ( ~ ax-iinf ) from which one
        then proves ( ~ omex ) using full separation that the wanted set
-       exists.  (Contributed by BJ, 14-Nov-2019.) $)
-    ax-infc $a |- E. x ( ( (/) e. x /\ A. y e. x suc y e. x ) /\
-                   A. z ( ( (/) e. z /\ A. y e. z suc y e. z ) -> x C_ z ) ) $.
+       exists.  See also ~ ax-infc2 .  (Contributed by BJ, 14-Nov-2019.) $)
+    ax-infc $a |- E. a ( ( (/) e. a /\ A. x e. a suc x e. a ) /\
+                   A. b ( ( (/) e. b /\ A. x e. b suc x e. b ) -> a C_ b ) ) $.
+  $}
+
+  ${
+    $d a b x $.
+    $( Proof of ~ omex from ~ ax-infc .  (Contributed by BJ, 14-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-omex $p |- _om e. _V $=
+      ( va vx vb com cv wceq wex wss wa c0 wcel csuc wral wi wal cab cint dfom3
+      cvv syl5eqss ax-infc crab rabab eqcomi inteqi rabid intss1 sylbir ssintab
+      vex mpan biimpri syl6sseqr anim12ci eximii eqss exbii mpbir issetri ) ADA
+      EZDFZAGUTDHZDUTHZIZAGJUTKBELZUTKBUTMIZJCEZKVEVGKBVGMIZUTVGHNCOZIVDABACUAV
+      FVCVIVBVFDVFAPZQZUTABRUTSKZVFVKUTHAUJVLVFIZVKVFASUBZQZUTVJVNVNVJVFAUCUDUE
+      VMUTVNKVOUTHVFASUFUTVNUGUHTUKTVIUTVHCPQZDUTVPHVIVHCUTUIULCBRUMUNUOVAVDAUT
+      DUPUQURUS $.
   $}
 
   ${
     $d x y z $.
-    $( Proof of ~ omex from ~ ax-infc .  (Contributed by BJ, 14-Nov-2019.)
-       (Proof modification is discouraged.) $)
-    bj-omex $p |- _om e. _V $=
-      ( vx vy vz com cv wceq wex wss wa c0 wcel csuc wral wi wal cab cint dfom3
-      cvv syl5eqss ax-infc crab rabab eqcomi inteqi rabid intss1 sylbir ssintab
-      vex mpan biimpri syl6sseqr anim12ci eximii eqss exbii mpbir issetri ) ADA
-      EZDFZAGUTDHZDUTHZIZAGJUTKBELZUTKBUTMIZJCEZKVEVGKBVGMIZUTVGHNCOZIVDAABCUAV
-      FVCVIVBVFDVFAPZQZUTABRUTSKZVFVKUTHAUJVLVFIZVKVFASUBZQZUTVJVNVNVJVFAUCUDUE
-      VMUTVNKVOUTHVFASUFUTVNUGUHTUKTVIUTVHCPQZDUTVPHVIVHCUTUIULCBRUMUNUOVAVDAUT
-      DUPUQURUS $.
+    $( Another axiom of infinity in a constructive setting (see ~ ax-infc ).
+       (Contributed by BJ, 14-Nov-2019.) $)
+    ax-infc2 $a |-
+                 E. a A. x ( x e. a <-> ( x = (/) \/ E. y e. a x = suc y ) ) $.
   $}
 
 
@@ -62669,9 +62678,19 @@ $)
   $}
 
   ${
-    $d x y z A $.
-    $( A natural number does not belong to itself.  (Contributed by BJ,
-       24-Nov-2019.)  (Proof modification is discouraged.) $)
+    $d x A $.  $d x B $.
+    $( A natural number is a transitive set.  (Contributed by BJ,
+       22-Nov-2019.)  (Proof modification is discouraged.) $)
+    bj-nntrans2 $p |- ( A e. _om -> ( B e. A -> B C_ A ) ) $=
+      ( vx com wcel cv wss wral bj-nntrans nfv sseq1 rspc syl5com ) ADECFZAGZCA
+      HBAEBAGZCAIOPCBAPCJNBAKLM $.
+  $}
+
+  ${
+    $d x A $.  $d x y $.  $d y z $.
+    $( A natural number does not belong to itself.  Version of ~ elirr for
+       natural numbers, which does not require ~ ax-setind .  (Contributed by
+       BJ, 24-Nov-2019.)  (Proof modification is discouraged.) $)
     bj-nnelirr $p |- ( A e. _om -> -. A e. A ) $=
       ( vy vz vx c0 wcel wn cv com wral wss syl5bi nfv eleq1 eleq2 bitrd notbid
       wi wceq biimprd csuc noel csn cun df-suc eleq2i wo elun bj-nntrans rspccv
@@ -62684,6 +62703,33 @@ $)
       WKVMSZWMVOWOWLVNWOWLVMWKFVNDBDVEDBBVFPQVGWKVPSZWMVRWPWLVQWPWLVPWKFVQWKVPW
       KNWKVPVPOPQTDAVHWADMWKASZWMWAWQWLVTWQWLAWKFVTWKAWKNWKAAOPQVGVIVJ $.
   $}
+
+  ${
+    $( A version of ~ en2lp for natural numbers, which does not require
+       ~ ax-setind .
+
+       Note: using this theorem and ~ bj-nnelirr , one can remove dependency on
+       ~ ax-setind from ~ nntri2 and ~ nndcel ; one can actually remove more
+       dependencies from these.  (Contributed by BJ, 28-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-nnen2lp $p |- ( ( A e. _om /\ B e. _om ) -> -. ( A e. B /\ B e. A ) ) $=
+      ( com wcel wa wn bj-nnelirr adantl wss wi bj-nntrans2 ssel syl6 impd mtod
+      ) ACDZBCDZEZABDZBADZEBBDZQUAFPBGHRSTUARSABIZTUAJQSUBJPBAKHABBLMNO $.
+  $}
+
+  $( Remove from ~ peano4 dependency on ~ ax-setind .  Therefore, it only
+     requires core constructive axioms (albeit more of them).  (Contributed by
+     BJ, 28-Nov-2019.)  (Proof modification is discouraged.) $)
+  bj-peano4 $p |-
+                 ( ( A e. _om /\ B e. _om ) -> ( suc A = suc B <-> A = B ) ) $=
+    ( com wcel wa csuc wceq w3a 3simpa pm3.22 bj-nnen2lp 3syl sucidg syl5ibrcom
+    wn wo eleq2 elsucg sylibd imp 3adant1 syl5ibcom 3adant2 eqcom orbi2i anbi1i
+    jca sylib ordir sylibr ord mpd 3expia suceq impbid1 ) ACDZBCDZEZAFZBFZGZABG
+    ZUPUQVAVBUPUQVAHZBADZABDZEZOZVBVCURUQUPEVGUPUQVAIUPUQJBAKLVCVFVBVCVDVBPZVEV
+    BPZEZVFVBPVCVDBAGZPZVIEVJVCVLVIUQVAVLUPUQVAVLUQVABUSDZVLUQVMVABUTDBCMUSUTBQ
+    NBACRSTUAUPVAVIUQUPVAVIUPVAAUTDZVIUPAUSDVAVNACMUSUTAQUBABCRSTUCUGVLVHVIVKVB
+    VDBAUDUEUFUHVDVEVBUIUJUKULUMABUNUO $.
+
 
 $(
 ${
@@ -62712,12 +62758,20 @@ $)
 
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+       Set induction
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+In this section, we add the axiom of set induction to the core axioms of CZF.
+
+$)
+
+$(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-       Full induction
+       Set induction
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-In this section, using the axiom of set induction, we prove full induction on
-the set of natural numbers.
+In this section, we prove some variants of the axiom of set induction.
 
 $)
 
@@ -62759,6 +62813,24 @@ $)
       UPVDCABFUOUTUBCAUCDELUDUEUFVEVBDVAVDAUSBFUTUSBABDFGKUGUHUIUJUKULAFDUMUN
       $.
   $}
+
+  ${
+    $d y a $.  $d ph y $.
+    ax-bdsetind.bd $e |- Bdd ph $.
+    $( Axiom of bounded set induction.  (Contributed by BJ, 28-Nov-2019.) $)
+    ax-bdsetind $a |- ( A. a ( A. y e. a [ y / a ] ph -> ph ) -> A. a ph ) $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+       Full induction
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+In this section, using the axiom of set induction, we prove full induction on
+the set of natural numbers.
+
+$)
 
 $(
   ${

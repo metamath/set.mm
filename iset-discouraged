@@ -215,10 +215,13 @@ Proof modification of "bj-nalset" is discouraged (105 steps).
 Proof modification of "bj-nn0suc" is discouraged (148 steps).
 Proof modification of "bj-nn0suc0" is discouraged (129 steps).
 Proof modification of "bj-nnelirr" is discouraged (261 steps).
+Proof modification of "bj-nnen2lp" is discouraged (52 steps).
 Proof modification of "bj-nntrans" is discouraged (222 steps).
+Proof modification of "bj-nntrans2" is discouraged (33 steps).
 Proof modification of "bj-nvel" is discouraged (11 steps).
 Proof modification of "bj-omex" is discouraged (144 steps).
 Proof modification of "bj-peano2" is discouraged (283 steps).
+Proof modification of "bj-peano4" is discouraged (168 steps).
 Proof modification of "bj-prexg" is discouraged (65 steps).
 Proof modification of "bj-snex" is discouraged (12 steps).
 Proof modification of "bj-snexg" is discouraged (22 steps).
