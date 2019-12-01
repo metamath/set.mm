@@ -193,5 +193,5 @@ jobs:
       install:
         - pip3 install ply
       script:
-        - scripts/report-changes.py --gource
+        - scripts/report-changes.py --gource > /dev/null
 # End of jobs
