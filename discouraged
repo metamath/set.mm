@@ -11963,6 +11963,7 @@
 "qexALT" is used by "rpnnen1lem3".
 "qexALT" is used by "rpnnen1lem4".
 "qexALT" is used by "rpnnen1lem5".
+"ralimOLD" is used by "ral2imiOLD".
 "rb-ax1" is used by "rblem1".
 "rb-ax1" is used by "rblem2".
 "rb-ax1" is used by "rblem4".
@@ -17672,6 +17673,7 @@ New usage of "quoremnn0ALT" is discouraged (0 uses).
 New usage of "r1omALT" is discouraged (0 uses).
 New usage of "r1pwOLD" is discouraged (0 uses).
 New usage of "ralbii2OLD" is discouraged (0 uses).
+New usage of "ralimOLD" is discouraged (1 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rb-ax1" is discouraged (5 uses).
 New usage of "rb-ax2" is discouraged (9 uses).
@@ -19418,6 +19420,7 @@ Proof modification of "quoremnn0ALT" is discouraged (360 steps).
 Proof modification of "r1omALT" is discouraged (13 steps).
 Proof modification of "r1pwOLD" is discouraged (151 steps).
 Proof modification of "ralbii2OLD" is discouraged (37 steps).
+Proof modification of "ralimOLD" is discouraged (59 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
 Proof modification of "rb-ax1" is discouraged (32 steps).
 Proof modification of "rb-ax2" is discouraged (17 steps).
