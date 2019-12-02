@@ -358,8 +358,7 @@ $s class TarskiG $: <msub href="df-trkg.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi>
 $s class TarskiGC $: <msubsup href="df-trkgc.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi> <mi>C</mi></msubsup> $.
 $s class TarskiGB $: <msubsup href="df-trkgb.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi> <mi>B</mi></msubsup> $.
 $s class TarskiGCB $: <msubsup href="df-trkgcb.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi> <mi>CB</mi></msubsup> $.
-$s class TarskiGLD $: <msubsup href="df-trkgld.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi> <mi>LD</mi></msubsup> $.
-$s class TarskiGUD $: <msubsup href="df-trkgud.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi> <mi>UD</mi></msubsup> $.
+$s class TarskiGDim>= $: <mrow href="df-trkgld.html"><msub><mi>Dim</mi> <mi>&#x1d4a2;</mi></msub> <mo>&ge;</mo></mrow> $.
 $s class TarskiG2D $: <msubsup href="df-trkg2d.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi> <mi>2D</mi></msubsup> $.
 $s class TarskiGE $: <msubsup href="df-trkge.html"><mo>&#x1d4a2;</mo> <mi>Tarski</mi> <mi>E</mi></msubsup> $.
 $s class Itv $: <mi href="df-itv.html"> Itv </mi> $.
@@ -370,6 +369,8 @@ $s class midG $: <msub href="df-mid.html"><mo>mid</mo> <mo>&#x1d4a2;</mo></msub>
 $s class pInvG $: <msub href="df-mir.html"><mo>pInv</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class raG $: <msub href="df-rag.html"><mo>&angrt;</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class perpG $: <msub href="df-perp.html"><mo>&#x27C2;</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class cgrA $: <msubsup href="df-cgra.html"><mo>&#x223C;</mo> <mo>&#x1d4a2;</mo> <mo>&ang;</mo></msubsup> $.
+$s class eqltrG $: <msub href="df-eqlg.html"><mo>Equilaterals</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class toTG $: <msub href="df-ttg.html"><mo>to&#x1d4a2;</mo> <mi>Tarski</mi></msub> $.
 $s class EEG $: <msub href="df-eeg.html"><mo>&Eopf;</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class AFS $: <mo href="df-afs.html">AFS</mo> $.
@@ -1231,6 +1232,10 @@ $s class linC $: <mi href="df-linc.html">linC</mi> $.
 $s class LinCo $: <mi href="df-lco.html">LinCo</mi> $.
 $s class linIndS $: <mi href="df-lininds.html">linIndS</mi> $.
 $s class linDepS $: <mi href="df-lindeps.html">linDepS</mi> $.
+
+$s class ConstPolyMat $: <mi href="df-cnstpmat.html">ConstPolyMat</mi> $.
+$s class matToPolyMat $: <mi href="df-mat2pmat.html">matToPolyMat</mi> $.
+$s class CharPlyMat $: <mi href="df-chpmat.html">CharPlyMat</mi> $.
 
 $( David A. Wheeler $)
 $s class >_ $: <mi href="df-gte.html"> &ge; </mi> $.
