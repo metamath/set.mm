@@ -28,7 +28,7 @@ dist: bionic
 # (e.g., of unchanged compiled programs) to speed things further.
 
 git:
-  depth: 3
+  depth: 1
 sudo: false
 
 # In each job we download, build, install, and run a verifier.
