@@ -1361,6 +1361,7 @@
 "axaddf" is used by "axaddcl".
 "axc11nlemOLD" is used by "aevlem1OLD".
 "axc11nlemOLD" is used by "axc11nOLD".
+"axc16ALT" is used by "axc16gALT".
 "axc4i-o" is used by "aev-o".
 "axc4i-o" is used by "ax12inda2ALT".
 "axc4i-o" is used by "ax12indalem".
@@ -11963,6 +11964,7 @@
 "qexALT" is used by "rpnnen1lem3".
 "qexALT" is used by "rpnnen1lem4".
 "qexALT" is used by "rpnnen1lem5".
+"ralimOLD" is used by "ral2imiOLD".
 "rb-ax1" is used by "rblem1".
 "rb-ax1" is used by "rblem2".
 "rb-ax1" is used by "rblem4".
@@ -13988,7 +13990,7 @@ New usage of "axc11nOLD" is discouraged (0 uses).
 New usage of "axc11next" is discouraged (0 uses).
 New usage of "axc11nfromc11" is discouraged (0 uses).
 New usage of "axc11nlemOLD" is discouraged (2 uses).
-New usage of "axc16ALT" is discouraged (0 uses).
+New usage of "axc16ALT" is discouraged (1 uses).
 New usage of "axc16b" is discouraged (0 uses).
 New usage of "axc16gALT" is discouraged (0 uses).
 New usage of "axc16gOLD" is discouraged (0 uses).
@@ -17671,7 +17673,12 @@ New usage of "qlaxr5i" is discouraged (0 uses).
 New usage of "quoremnn0ALT" is discouraged (0 uses).
 New usage of "r1omALT" is discouraged (0 uses).
 New usage of "r1pwOLD" is discouraged (0 uses).
-New usage of "ralbii2OLD" is discouraged (0 uses).
+New usage of "ralbidaOLD" is discouraged (0 uses).
+New usage of "ralbiiOLD" is discouraged (0 uses).
+New usage of "ralimOLD" is discouraged (1 uses).
+New usage of "ralimdaaOLD" is discouraged (0 uses).
+New usage of "ralrimiOLD" is discouraged (0 uses).
+New usage of "ralrimivOLD" is discouraged (0 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
 New usage of "rb-ax1" is discouraged (5 uses).
 New usage of "rb-ax2" is discouraged (9 uses).
@@ -19417,7 +19424,11 @@ Proof modification of "qexALT" is discouraged (64 steps).
 Proof modification of "quoremnn0ALT" is discouraged (360 steps).
 Proof modification of "r1omALT" is discouraged (13 steps).
 Proof modification of "r1pwOLD" is discouraged (151 steps).
-Proof modification of "ralbii2OLD" is discouraged (37 steps).
+Proof modification of "ralbidaOLD" is discouraged (43 steps).
+Proof modification of "ralimOLD" is discouraged (59 steps).
+Proof modification of "ralimdaaOLD" is discouraged (49 steps).
+Proof modification of "ralrimiOLD" is discouraged (24 steps).
+Proof modification of "ralrimivOLD" is discouraged (9 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
 Proof modification of "rb-ax1" is discouraged (32 steps).
 Proof modification of "rb-ax2" is discouraged (17 steps).
