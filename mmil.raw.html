@@ -973,8 +973,8 @@ reference</FONT></B>&nbsp;&nbsp;&nbsp;
 <P>This is a list of theorems from the Metamath Proof Explorer (which
 assumes the law of the excluded middle throughout) which we do not
 have in the Intuitionistic Logic Explorer (generally because they
-are not provable without the law of the excluded middle, perhaps a
-few which could be proved but aren't yet), together
+are not provable without the law of the excluded middle, although some
+could be proved but aren't for a variety of reasons), together
 with the closest replacements.</P>
 
 <TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
@@ -1797,6 +1797,11 @@ middle as seen at ~ ordpwsucexmid .</TD>
 </TR>
 
 <TR>
+<TD>tfinds</TD>
+<TD>~ tfis3 </TD>
+</TR>
+
+<TR>
 <TD>1stval</TD>
 <TD>~ 1stvalg </TD>
 </TR>
@@ -1899,6 +1904,21 @@ middle as seen at ~ ordpwsucexmid .</TD>
 </TR>
 
 <TR>
+<TD>om0r</TD>
+<TD>~ om0 , ~ nnm0r </TD>
+</TR>
+
+<TR>
+<TD>om00</TD>
+<TD>~ nnm00 </TD>
+</TR>
+
+<TR>
+<TD>om00el</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
 <TD>suc11reg</TD>
 <TD>~ suc11g </TD>
 </TR>
@@ -1930,9 +1950,25 @@ characteristic function and initial value.</TD>
 </TR>
 
 <TR>
+<TD>oaord1</TD>
+<TD><I>none yet</I></TD>
+</TR>
+
+<TR>
 <TD>oaword</TD>
 <TD>~ oawordi </TD>
 <TD>The other direction presumably could be proven but isn't yet.</TD>
+</TR>
+
+<TR>
+<TD>omwordi</TD>
+<TD>~ nnmword</TD>
+<TD>The set.mm proof of omwordi relies on case elimination.</TD>
+</TR>
+
+<TR>
+<TD>omword1</TD>
+<TD>~ nnmword</TD>
 </TR>
 
 <TR>
@@ -2160,7 +2196,7 @@ so far there hasn't been a need to do so.</TD>
 
 <TR>
 <TD>archnq</TD>
-<TD><I>none yet</I></TD>
+<TD>~ archnqq </TD>
 </TR>
 
 <TR>
@@ -2205,7 +2241,7 @@ so far there hasn't been a need to do so.</TD>
 
 <TR>
 <TD>prcdnq</TD>
-<TD>~ prcdnql </TD>
+<TD>~ prcdnql , ~ prcunqu </TD>
 </TR>
 
 <TR>
@@ -2249,6 +2285,13 @@ COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
 accepting constructive mathematics,&quot; <I>Bulletin (New Series) of
 the American Mathematical Society</I>, 54:481-498 (2017),
 DOI: <A HREF="http://dx.doi.org/10.1090/bull/1556">10.1090/bull/1556</A> .</LI>
+
+<LI><A NAME="BauerTaylor"></A> [BauerTaylor] Andrej Bauer and Paul Taylor,
+"The Dedekind Reals in Abstract Stone Duality",
+<I>Mathematical structures in computer science</I>, 19(4):757&#x2013;838, 2009,
+<A HREF="http://www.paultaylor.eu/ASD/dedras.pdf">
+http://www.paultaylor.eu/ASD/dedras.pdf</A>
+</LI>
 
 <LI><A NAME="BellMachover"></A> [BellMachover] Bell, J. L., and M.
 Machover, <I>A Course in Mathematical Logic,</I> North-Holland,

@@ -4,6 +4,12 @@
 "19.21h" is used by "nf3".
 "19.21ht" is used by "19.21t".
 "19.21ht" is used by "sbal2".
+"19.41h" is used by "19.41v".
+"19.41h" is used by "19.42h".
+"19.41h" is used by "2exeu".
+"19.41h" is used by "sbh".
+"19.41h" is used by "sbidm".
+"19.42h" is used by "19.42v".
 "19.9hd" is used by "sbiedh".
 "4syl" is used by "f1ocnvfvrneq".
 "4syl" is used by "fcof1o".
@@ -135,6 +141,8 @@
 "spimth" is used by "equveli".
 New usage of "19.21h" is discouraged (4 uses).
 New usage of "19.21ht" is discouraged (2 uses).
+New usage of "19.41h" is discouraged (5 uses).
+New usage of "19.42h" is discouraged (1 uses).
 New usage of "19.9hd" is discouraged (1 uses).
 New usage of "4syl" is discouraged (6 uses).
 New usage of "a9evsep" is discouraged (1 uses).
