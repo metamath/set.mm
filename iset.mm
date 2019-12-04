@@ -1,4 +1,4 @@
-$( iset.mm - Version of 28-Nov-2019
+$( iset.mm - Version of 3-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -56014,6 +56014,15 @@ $)
       QBSUAVBEFZUKVEVIKVEVIVJUKUBZVCBTHZVDBTHZIVCVDBTLVKVGVLVHVMVBBUCUKVJVHVMIB
       VBUDUENUFUGUHUIUJ $.
   $}
+
+  $( Distributive law for natural numbers (right-distributivity).  (Contributed
+     by Jim Kingdon, 3-Dec-2019.) $)
+  nndir $p |- ( ( A e. _om /\ B e. _om /\ C e. _om ) ->
+               ( ( A +o B ) .o C ) = ( ( A .o C ) +o ( B .o C ) ) ) $=
+    ( com wcel w3a coa co comu wceq nndi 3coml nnacl nnmcom sylan2 ancoms 3impa
+    wa 3adant2 3adant1 oveq12d 3eqtr3d ) ADEZBDEZCDEZFZCABGHZIHZCAIHZCBIHZGHZUG
+    CIHZACIHZBCIHZGHUEUCUDUHUKJCABKLUCUDUEUHULJZUEUCUDRZUOUPUEUGDEUOABMCUGNOPQU
+    FUIUMUJUNGUCUEUIUMJZUDUEUCUQCANPSUDUEUJUNJZUCUEUDURCBNPTUAUB $.
 
   ${
     $d x y A $.  $d x y B $.
