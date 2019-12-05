@@ -17674,9 +17674,12 @@ New usage of "quoremnn0ALT" is discouraged (0 uses).
 New usage of "r1omALT" is discouraged (0 uses).
 New usage of "r1pwOLD" is discouraged (0 uses).
 New usage of "ralbidaOLD" is discouraged (0 uses).
+New usage of "ralbidvaOLD" is discouraged (0 uses).
+New usage of "ralbii2OLD" is discouraged (0 uses).
 New usage of "ralbiiOLD" is discouraged (0 uses).
 New usage of "ralimOLD" is discouraged (1 uses).
 New usage of "ralimdaaOLD" is discouraged (0 uses).
+New usage of "ralimdvaOLD" is discouraged (0 uses).
 New usage of "ralrimiOLD" is discouraged (0 uses).
 New usage of "ralrimivOLD" is discouraged (0 uses).
 New usage of "ralxfrALT" is discouraged (0 uses).
@@ -17993,6 +17996,7 @@ New usage of "spanunsni" is discouraged (1 uses).
 New usage of "spanval" is discouraged (6 uses).
 New usage of "speccl" is discouraged (0 uses).
 New usage of "specval" is discouraged (1 uses).
+New usage of "speimfwOLD" is discouraged (0 uses).
 New usage of "sps-o" is discouraged (7 uses).
 New usage of "sqgt0sr" is discouraged (1 uses).
 New usage of "ssdmd1" is discouraged (1 uses).
@@ -19425,8 +19429,11 @@ Proof modification of "quoremnn0ALT" is discouraged (360 steps).
 Proof modification of "r1omALT" is discouraged (13 steps).
 Proof modification of "r1pwOLD" is discouraged (151 steps).
 Proof modification of "ralbidaOLD" is discouraged (43 steps).
+Proof modification of "ralbidvaOLD" is discouraged (10 steps).
+Proof modification of "ralbii2OLD" is discouraged (37 steps).
 Proof modification of "ralimOLD" is discouraged (59 steps).
 Proof modification of "ralimdaaOLD" is discouraged (49 steps).
+Proof modification of "ralimdvaOLD" is discouraged (10 steps).
 Proof modification of "ralrimiOLD" is discouraged (24 steps).
 Proof modification of "ralrimivOLD" is discouraged (9 steps).
 Proof modification of "ralxfrALT" is discouraged (85 steps).
@@ -19554,6 +19561,7 @@ Proof modification of "snsslVD" is discouraged (24 steps).
 Proof modification of "soirriOLD" is discouraged (36 steps).
 Proof modification of "son2lpiOLD" is discouraged (28 steps).
 Proof modification of "sotriOLD" is discouraged (83 steps).
+Proof modification of "speimfwOLD" is discouraged (35 steps).
 Proof modification of "sps-o" is discouraged (10 steps).
 Proof modification of "sseliALT" is discouraged (152 steps).
 Proof modification of "sspwimp" is discouraged (87 steps).
