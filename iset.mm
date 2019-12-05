@@ -17292,10 +17292,10 @@ $)
     $( Law of identity (reflexivity of class equality).  Theorem 6.4 of [Quine]
        p. 41.
 
-       This law is thought to have originated with
-       Aristotle (_Metaphysics_, Zeta, 17, 1041 a, 10-20).  (Thanks to Stefan
-       Allan and BJ for this information.)  (Contributed by NM, 5-Aug-1993.)
-       (Revised by BJ, 14-Oct-2017.) $)
+       This law is thought to have originated with Aristotle (_Metaphysics_,
+       Zeta, 17, 1041 a, 10-20).  (Thanks to Stefan Allan and BJ for this
+       information.)  (Contributed by NM, 5-Aug-1993.)  (Revised by BJ,
+       14-Oct-2017.) $)
     eqid $p |- A = A $=
       ( vx cv wcel biid eqriv ) BAABCADEF $.
   $}
@@ -35699,8 +35699,18 @@ $)
     $( Define the ordinal predicate, which is true for a class that is
        transitive and whose elements are transitive.  Definition of ordinal in
        [Crosilla], p.  "Set-theoretic principles incompatible with
-       intuitionistic logic".  (Contributed by Jim Kingdon, 10-Oct-2018.) $)
+       intuitionistic logic".  (Contributed by Jim Kingdon, 10-Oct-2018.)  Use
+       its alias ~ dford3 instead for naming consistency with set.mm.
+       (New usage is discouraged.) $)
     df-iord $a |- ( Ord A <-> ( Tr A /\ A. x e. A Tr x ) ) $.
+  $}
+
+  ${
+    $d x A $.
+    $( Alias for ~ df-iord .  Use it instead of ~ df-iord for naming
+       consistency with set.mm.  (Contributed by Jim Kingdon, 10-Oct-2018.) $)
+    dford3 $p |- ( Ord A <-> ( Tr A /\ A. x e. A Tr x ) ) $=
+      ( df-iord ) ABC $.
   $}
 
   $( Define the class of all ordinal numbers.  Definition 7.11 of
@@ -35740,8 +35750,8 @@ $)
     $( Equality theorem for the ordinal predicate.  (Contributed by NM,
        17-Sep-1993.) $)
     ordeq $p |- ( A = B -> ( Ord A <-> Ord B ) ) $=
-      ( vx wceq wtr cv wral wa word treq raleq anbi12d df-iord 3bitr4g ) ABDZAE
-      ZCFEZCAGZHBEZQCBGZHAIBIOPSRTABJQCABKLCAMCBMN $.
+      ( vx wceq wtr cv wral wa word treq raleq anbi12d dford3 3bitr4g ) ABDZAEZ
+      CFEZCAGZHBEZQCBGZHAIBIOPSRTABJQCABKLCAMCBMN $.
   $}
 
   ${
@@ -35781,7 +35791,7 @@ $)
     $d x A $.
     $( An ordinal class is transitive.  (Contributed by NM, 3-Apr-1994.) $)
     ordtr $p |- ( Ord A -> Tr A ) $=
-      ( vx word wtr cv wral df-iord simplbi ) ACADBEDBAFBAGH $.
+      ( vx word wtr cv wral dford3 simplbi ) ACADBEDBAFBAGH $.
   $}
 
   $( An element of an ordinal class is a subset of it.  (Contributed by NM,
@@ -35794,9 +35804,9 @@ $)
     $( A transitive subclass of an ordinal class is ordinal.  (Contributed by
        NM, 29-May-1994.) $)
     trssord $p |- ( ( Tr A /\ A C_ B /\ Ord B ) -> Ord A ) $=
-      ( vx wtr wss word w3a cv wral wa df-iord simprbi ssralv syl5 anim2i 3impb
-      imp sylibr ) ADZABEZBFZGSCHDZCAIZJZAFSTUAUDTUAJUCSTUAUCUAUBCBIZTUCUABDUEC
-      BKLUBCABMNQOPCAKR $.
+      ( vx wtr wss word w3a cv wral dford3 simprbi ssralv syl5 imp anim2i 3impb
+      wa sylibr ) ADZABEZBFZGSCHDZCAIZQZAFSTUAUDTUAQUCSTUAUCUAUBCBIZTUCUABDUECB
+      JKUBCABLMNOPCAJR $.
   $}
 
   ${
@@ -35804,10 +35814,10 @@ $)
     $( An element of an ordinal class is ordinal.  Proposition 7.6 of
        [TakeutiZaring] p. 36.  (Contributed by NM, 23-Apr-1994.) $)
     ordelord $p |- ( ( Ord A /\ B e. A ) -> Ord B ) $=
-      ( vx word wcel cv wa wceq eleq1 anbi2d ordeq imbi12d wtr wss wral df-iord
-      wi simprbi r19.21bi ordelss ax-ia1 trssord syl3anc vtoclg anabsi7 ) ADZBA
-      EZBDZUFCFZAEZGZUIDZQUFUGGZUHQCBAUIBHZUKUMULUHUNUJUGUFUIBAIJUIBKLUKUIMZUIA
-      NUFULUFUOCAUFAMUOCAOCAPRSAUITUFUJUAUIAUBUCUDUE $.
+      ( vx word wcel cv wa wceq eleq1 anbi2d ordeq imbi12d wtr wss wral simprbi
+      wi dford3 r19.21bi ordelss ax-ia1 trssord syl3anc vtoclg anabsi7 ) ADZBAE
+      ZBDZUFCFZAEZGZUIDZQUFUGGZUHQCBAUIBHZUKUMULUHUNUJUGUFUIBAIJUIBKLUKUIMZUIAN
+      UFULUFUOCAUFAMUOCAOCARPSAUITUFUJUAUIAUBUCUDUE $.
   $}
 
   ${
@@ -35872,7 +35882,7 @@ $)
 
   $( The empty set is an ordinal class.  (Contributed by NM, 11-May-1994.) $)
   ord0 $p |- Ord (/) $=
-    ( vx c0 word wtr cv wral tr0 ral0 df-iord mpbir2an ) BCBDAEDZABFGKAHABIJ $.
+    ( vx c0 word wtr cv wral tr0 ral0 dford3 mpbir2an ) BCBDAEDZABFGKAHABIJ $.
 
   $( The empty set is an ordinal number.  Corollary 7N(b) of [Enderton]
      p. 193.  (Contributed by NM, 17-Sep-1993.) $)
@@ -36669,8 +36679,8 @@ $)
        [TakeutiZaring] p. 38, but without using the Axiom of Regularity.
        (Contributed by NM, 17-May-1994.) $)
     ordon $p |- Ord On $=
-      ( vx con0 word wtr cv wral tron df-on abeq2i ordtr sylbi df-iord mpbir2an
-      wcel rgen ) BCBDAEZDZABFGQABPBNPCZQRABAHIPJKOABLM $.
+      ( vx con0 word wtr cv wral tron wcel df-on abeq2i ordtr sylbi rgen dford3
+      mpbir2an ) BCBDAEZDZABFGQABPBHPCZQRABAIJPKLMABNO $.
   $}
 
   ${
@@ -36777,11 +36787,11 @@ $)
        Kingdon, 8-Nov-2018.) $)
     ordsucim $p |- ( Ord A -> Ord suc A ) $=
       ( vx word csuc wtr cv wral ordtr suctr syl wcel wceq wo csn df-suc eleq2i
-      cun elun elsn df-iord orbi2i 3bitri wal simprbi df-ral sylib 19.21bi treq
-      wi syl5ibrcom jaod syl5bi ralrimiv sylanbrc ) ACZADZEZBFZEZBUPGUPCUOAEZUQ
-      AHZAIJUOUSBUPURUPKZURAKZURALZMZUOUSVBURAANZQZKVCURVFKZMVEUPVGURAOPURAVFRV
-      HVDVCBASUAUBUOVCUSVDUOVCUSUIZBUOUSBAGZVIBUCUOUTVJBATUDUSBAUEUFUGUOUSVDUTV
-      AURAUHUJUKULUMBUPTUN $.
+      cun elun elsn dford3 orbi2i 3bitri wi wal simprbi df-ral sylib syl5ibrcom
+      19.21bi treq jaod syl5bi ralrimiv sylanbrc ) ACZADZEZBFZEZBUPGUPCUOAEZUQA
+      HZAIJUOUSBUPURUPKZURAKZURALZMZUOUSVBURAANZQZKVCURVFKZMVEUPVGURAOPURAVFRVH
+      VDVCBASUAUBUOVCUSVDUOVCUSUCZBUOUSBAGZVIBUDUOUTVJBATUEUSBAUFUGUIUOUSVDUTVA
+      URAUJUHUKULUMBUPTUN $.
   $}
 
   ${
@@ -37858,9 +37868,9 @@ $)
        by NM, 18-Oct-1995.) $)
     ordom $p |- Ord _om $=
       ( vx vy com word wtr cv wral wcel wa wi wal elnn gen2 dftr2 mpbir c0 csuc
-      treq tr0 suctr a1i finds rgen df-iord mpbir2an ) CDCEZAFZEZACGUFUGBFZHUIC
-      HIUGCHZJZBKAKUKABUGUILMABCNOUHACUIEPEUHUGQZEZUHBAUGUIPRUIUGRZUIULRUNSUHUM
-      JUJUGTUAUBUCACUDUE $.
+      treq tr0 suctr a1i finds rgen dford3 mpbir2an ) CDCEZAFZEZACGUFUGBFZHUICH
+      IUGCHZJZBKAKUKABUGUILMABCNOUHACUIEPEUHUGQZEZUHBAUGUIPRUIUGRZUIULRUNSUHUMJ
+      UJUGTUAUBUCACUDUE $.
   $}
 
   ${

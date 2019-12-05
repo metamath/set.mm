@@ -46,6 +46,7 @@
 "ax-10o" is used by "ax10".
 "df-ilim" is used by "dflim2".
 "df-iom" is used by "dfom3".
+"df-iord" is used by "dford3".
 "df-tru" is used by "tru".
 "equsalh" is used by "dvelimALT".
 "equsalh" is used by "dvelimfALT2".
@@ -160,6 +161,7 @@ New usage of "bj-omexALT" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
+New usage of "df-iord" is discouraged (1 uses).
 New usage of "df-tru" is discouraged (1 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
