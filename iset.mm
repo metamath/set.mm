@@ -1839,9 +1839,7 @@ $)
   $}
 
   $( Principle of identity for logical equivalence.  Theorem *4.2 of
-     [WhiteheadRussell] p. 117.  This is part of Frege's eighth axiom per
-     Proposition 54 of [Frege1879] p. 50; see also ~ eqid .  (Contributed by
-     NM, 5-Aug-1993.) $)
+     [WhiteheadRussell] p. 117.  (Contributed by NM, 5-Aug-1993.) $)
   biid $p |- ( ph <-> ph ) $=
     ( id impbii ) AAABZDC $.
 
@@ -17294,8 +17292,7 @@ $)
     $( Law of identity (reflexivity of class equality).  Theorem 6.4 of [Quine]
        p. 41.
 
-       This is part of Frege's eighth axiom per Proposition 54 of [Frege1879]
-       p. 50; see also ~ biid .  This law is thought to have originated with
+       This law is thought to have originated with
        Aristotle (_Metaphysics_, Zeta, 17, 1041 a, 10-20).  (Thanks to Stefan
        Allan and BJ for this information.)  (Contributed by NM, 5-Aug-1993.)
        (Revised by BJ, 14-Oct-2017.) $)
