@@ -17293,12 +17293,9 @@ $)
        p. 41.
 
        This law is thought to have originated with Aristotle (_Metaphysics_,
-       Zeta, 17, 1041 a, 10-20:  "Therefore, inquiring why a thing is itself,
-       it's inquiring nothing; ... saying that the thing is itself constitutes
-       the sole reasoning and the sole cause, in every case, to the question of
-       why the man is man or the musician musician.").  (Thanks to Stefan Allan
-       and Beno&icirc;t Jubin for this information.)  (Contributed by NM,
-       5-Aug-1993.)  (Revised by Beno&icirc;t Jubin, 14-Oct-2017.) $)
+       Zeta, 17, 1041 a, 10-20).  (Thanks to Stefan Allan and BJ for this
+       information.)  (Contributed by NM, 5-Aug-1993.)  (Revised by BJ,
+       14-Oct-2017.) $)
     eqid $p |- A = A $=
       ( vx cv wcel biid eqriv ) BAABCADEF $.
   $}
@@ -35702,8 +35699,18 @@ $)
     $( Define the ordinal predicate, which is true for a class that is
        transitive and whose elements are transitive.  Definition of ordinal in
        [Crosilla], p.  "Set-theoretic principles incompatible with
-       intuitionistic logic".  (Contributed by Jim Kingdon, 10-Oct-2018.) $)
+       intuitionistic logic".  (Contributed by Jim Kingdon, 10-Oct-2018.)  Use
+       its alias ~ dford3 instead for naming consistency with set.mm.
+       (New usage is discouraged.) $)
     df-iord $a |- ( Ord A <-> ( Tr A /\ A. x e. A Tr x ) ) $.
+  $}
+
+  ${
+    $d x A $.
+    $( Alias for ~ df-iord .  Use it instead of ~ df-iord for naming
+       consistency with set.mm.  (Contributed by Jim Kingdon, 10-Oct-2018.) $)
+    dford3 $p |- ( Ord A <-> ( Tr A /\ A. x e. A Tr x ) ) $=
+      ( df-iord ) ABC $.
   $}
 
   $( Define the class of all ordinal numbers.  Definition 7.11 of
@@ -35743,8 +35750,8 @@ $)
     $( Equality theorem for the ordinal predicate.  (Contributed by NM,
        17-Sep-1993.) $)
     ordeq $p |- ( A = B -> ( Ord A <-> Ord B ) ) $=
-      ( vx wceq wtr cv wral wa word treq raleq anbi12d df-iord 3bitr4g ) ABDZAE
-      ZCFEZCAGZHBEZQCBGZHAIBIOPSRTABJQCABKLCAMCBMN $.
+      ( vx wceq wtr cv wral wa word treq raleq anbi12d dford3 3bitr4g ) ABDZAEZ
+      CFEZCAGZHBEZQCBGZHAIBIOPSRTABJQCABKLCAMCBMN $.
   $}
 
   ${
@@ -35784,7 +35791,7 @@ $)
     $d x A $.
     $( An ordinal class is transitive.  (Contributed by NM, 3-Apr-1994.) $)
     ordtr $p |- ( Ord A -> Tr A ) $=
-      ( vx word wtr cv wral df-iord simplbi ) ACADBEDBAFBAGH $.
+      ( vx word wtr cv wral dford3 simplbi ) ACADBEDBAFBAGH $.
   $}
 
   $( An element of an ordinal class is a subset of it.  (Contributed by NM,
@@ -35797,9 +35804,9 @@ $)
     $( A transitive subclass of an ordinal class is ordinal.  (Contributed by
        NM, 29-May-1994.) $)
     trssord $p |- ( ( Tr A /\ A C_ B /\ Ord B ) -> Ord A ) $=
-      ( vx wtr wss word w3a cv wral wa df-iord simprbi ssralv syl5 anim2i 3impb
-      imp sylibr ) ADZABEZBFZGSCHDZCAIZJZAFSTUAUDTUAJUCSTUAUCUAUBCBIZTUCUABDUEC
-      BKLUBCABMNQOPCAKR $.
+      ( vx wtr wss word w3a cv wral dford3 simprbi ssralv syl5 imp anim2i 3impb
+      wa sylibr ) ADZABEZBFZGSCHDZCAIZQZAFSTUAUDTUAQUCSTUAUCUAUBCBIZTUCUABDUECB
+      JKUBCABLMNOPCAJR $.
   $}
 
   ${
@@ -35807,10 +35814,10 @@ $)
     $( An element of an ordinal class is ordinal.  Proposition 7.6 of
        [TakeutiZaring] p. 36.  (Contributed by NM, 23-Apr-1994.) $)
     ordelord $p |- ( ( Ord A /\ B e. A ) -> Ord B ) $=
-      ( vx word wcel cv wa wceq eleq1 anbi2d ordeq imbi12d wtr wss wral df-iord
-      wi simprbi r19.21bi ordelss ax-ia1 trssord syl3anc vtoclg anabsi7 ) ADZBA
-      EZBDZUFCFZAEZGZUIDZQUFUGGZUHQCBAUIBHZUKUMULUHUNUJUGUFUIBAIJUIBKLUKUIMZUIA
-      NUFULUFUOCAUFAMUOCAOCAPRSAUITUFUJUAUIAUBUCUDUE $.
+      ( vx word wcel cv wa wceq eleq1 anbi2d ordeq imbi12d wtr wss wral simprbi
+      wi dford3 r19.21bi ordelss ax-ia1 trssord syl3anc vtoclg anabsi7 ) ADZBAE
+      ZBDZUFCFZAEZGZUIDZQUFUGGZUHQCBAUIBHZUKUMULUHUNUJUGUFUIBAIJUIBKLUKUIMZUIAN
+      UFULUFUOCAUFAMUOCAOCARPSAUITUFUJUAUIAUBUCUDUE $.
   $}
 
   ${
@@ -35875,7 +35882,7 @@ $)
 
   $( The empty set is an ordinal class.  (Contributed by NM, 11-May-1994.) $)
   ord0 $p |- Ord (/) $=
-    ( vx c0 word wtr cv wral tr0 ral0 df-iord mpbir2an ) BCBDAEDZABFGKAHABIJ $.
+    ( vx c0 word wtr cv wral tr0 ral0 dford3 mpbir2an ) BCBDAEDZABFGKAHABIJ $.
 
   $( The empty set is an ordinal number.  Corollary 7N(b) of [Enderton]
      p. 193.  (Contributed by NM, 17-Sep-1993.) $)
@@ -36672,8 +36679,8 @@ $)
        [TakeutiZaring] p. 38, but without using the Axiom of Regularity.
        (Contributed by NM, 17-May-1994.) $)
     ordon $p |- Ord On $=
-      ( vx con0 word wtr cv wral tron df-on abeq2i ordtr sylbi df-iord mpbir2an
-      wcel rgen ) BCBDAEZDZABFGQABPBNPCZQRABAHIPJKOABLM $.
+      ( vx con0 word wtr cv wral tron wcel df-on abeq2i ordtr sylbi rgen dford3
+      mpbir2an ) BCBDAEZDZABFGQABPBHPCZQRABAIJPKLMABNO $.
   $}
 
   ${
@@ -36780,11 +36787,11 @@ $)
        Kingdon, 8-Nov-2018.) $)
     ordsucim $p |- ( Ord A -> Ord suc A ) $=
       ( vx word csuc wtr cv wral ordtr suctr syl wcel wceq wo csn df-suc eleq2i
-      cun elun elsn df-iord orbi2i 3bitri wal simprbi df-ral sylib 19.21bi treq
-      wi syl5ibrcom jaod syl5bi ralrimiv sylanbrc ) ACZADZEZBFZEZBUPGUPCUOAEZUQ
-      AHZAIJUOUSBUPURUPKZURAKZURALZMZUOUSVBURAANZQZKVCURVFKZMVEUPVGURAOPURAVFRV
-      HVDVCBASUAUBUOVCUSVDUOVCUSUIZBUOUSBAGZVIBUCUOUTVJBATUDUSBAUEUFUGUOUSVDUTV
-      AURAUHUJUKULUMBUPTUN $.
+      cun elun elsn dford3 orbi2i 3bitri wi wal simprbi df-ral sylib syl5ibrcom
+      19.21bi treq jaod syl5bi ralrimiv sylanbrc ) ACZADZEZBFZEZBUPGUPCUOAEZUQA
+      HZAIJUOUSBUPURUPKZURAKZURALZMZUOUSVBURAANZQZKVCURVFKZMVEUPVGURAOPURAVFRVH
+      VDVCBASUAUBUOVCUSVDUOVCUSUCZBUOUSBAGZVIBUDUOUTVJBATUEUSBAUFUGUIUOUSVDUTVA
+      URAUJUHUKULUMBUPTUN $.
   $}
 
   ${
@@ -37861,9 +37868,9 @@ $)
        by NM, 18-Oct-1995.) $)
     ordom $p |- Ord _om $=
       ( vx vy com word wtr cv wral wcel wa wi wal elnn gen2 dftr2 mpbir c0 csuc
-      treq tr0 suctr a1i finds rgen df-iord mpbir2an ) CDCEZAFZEZACGUFUGBFZHUIC
-      HIUGCHZJZBKAKUKABUGUILMABCNOUHACUIEPEUHUGQZEZUHBAUGUIPRUIUGRZUIULRUNSUHUM
-      JUJUGTUAUBUCACUDUE $.
+      treq tr0 suctr a1i finds rgen dford3 mpbir2an ) CDCEZAFZEZACGUFUGBFZHUICH
+      IUGCHZJZBKAKUKABUGUILMABCNOUHACUIEPEUHUGQZEZUHBAUGUIPRUIUGRZUIULRUNSUHUMJ
+      UJUGTUAUBUCACUDUE $.
   $}
 
   ${
@@ -62398,6 +62405,9 @@ htmldef "Bdd" as "<SMALL>BOUNDED</SMALL> ";
 htmldef "Bdd_" as "<SMALL><U>BOUNDED</U></SMALL> ";
   althtmldef "Bdd_" as "<SMALL><U>BOUNDED</U></SMALL> ";
   latexdef "Bdd_" as "\normalfont\textsc{\underline{bounded}}} ";
+htmldef "Ind" as "Ind ";
+  althtmldef "Ind" as "Ind ";
+  latexdef "Ind" as "\mathrm{Ind} ";
 /* End of BJ's mathbox */
 
 /* Mathbox of David A. Wheeler */
@@ -62752,6 +62762,48 @@ $)
       VIBVJVMVAVITAUTVHFUFUIVMBVJTABDLUGUIUJUSUKAVKVFLEVLHAVIVJEVIEQAVIEPRABDLE
       GIULSAVECLVELQAVELPRCLQACLPRSALEUEZVKVFTAVNUHVIVEVJCVNVIVETAVHVDFUFUIVNVJ
       BDEUCACBLEDUMABCDEGJKUNUOUJUSUKUPBDFUQCEFUQUR $.
+  $}
+
+  ${
+    bj-intabssel.nf $e |- F/_ x A $.
+    $( Version of ~ intss1 using a class abstraction and explicit
+       substitution.  (Contributed by BJ, 29-Nov-2019.) $)
+    bj-intabssel $p |-
+                     ( A e. V -> ( [. A / x ]. ph -> |^| { x | ph } C_ A ) ) $=
+      ( wcel wsbc cab cint wss nfsbc1 sbceq1a elabgf intss1 syl6bir ) CDFABCGZC
+      ABHZFQICJAPBCDEABCEKABCLMCQNO $.
+  $}
+
+  ${
+    bj-intabssel1.nf $e |- F/_ x A $.
+    bj-intabssel1.nf2 $e |- F/ x ps $.
+    bj-intabssel1.is $e |- ( x = A -> ( ps -> ph ) ) $.
+    $( Version of ~ intss1 using a class abstraction and implicit
+       substitution.  Closed form of ~ intmin3 .  (Contributed by BJ,
+       29-Nov-2019.) $)
+    bj-intabssel1 $p |-
+                     ( A e. V -> ( ps -> |^| { x | ph } C_ A ) ) $=
+      ( wcel cab cint wss elabgf2 intss1 syl6 ) DEIBDACJZIPKDLABCDEFGHMDPNO $.
+  $}
+
+  ${
+    bj-elssuniab.nf $e |- F/_ x A $.
+    $( Version of ~ elssuni using a class abstraction and explicit
+       substitution.  (Contributed by BJ, 29-Nov-2019.) $)
+    bj-elssuniab $p |-
+                     ( A e. V -> ( [. A / x ]. ph -> A C_ U. { x | ph } ) ) $=
+      ( wcel wsbc cab cuni wss sbc8g elssuni syl6bi ) CDFABCGCABHZFCNIJABCDKCNL
+      M $.
+  $}
+
+  ${
+    bj-sseq.1 $e |- ( ph -> ( ps <-> A C_ B ) ) $.
+    bj-sseq.2 $e |- ( ph -> ( ch <-> B C_ A ) ) $.
+    $( If two converse inclusions are characterized each by a formula, then
+       equality is characterized by the conjunction of these formulas.
+       (Contributed by BJ, 30-Nov-2019.) $)
+    bj-sseq $p |- ( ph -> ( ( ps /\ ch ) <-> A = B ) ) $=
+      ( wa wss wceq anbi12d eqss syl6bbr ) ABCHDEIZEDIZHDEJABNCOFGKDELM $.
   $}
 
 $( This declaration is simply to be able to display Delta0 in comments. $)
@@ -63789,6 +63841,136 @@ $)
 
 
 $(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+       Inductive classes and the class of natural numbers (finite ordinals)
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  $( Introduce constant for inductive classes. $)
+  $c Ind $.
+
+  $( Syntax for inductive classes. $)
+  wind $a wff Ind A $.
+
+  ${
+    $d x A $.
+    $( Define the property of being an inductive class.  (Contributed by BJ,
+       30-Nov-2019.) $)
+    df-bj-ind $a |- ( Ind A <-> ( (/) e. A /\ A. x e. A suc x e. A ) ) $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( A direct consequence of the definition of ` Ind ` .  (Contributed by BJ,
+       30-Nov-2019.) $)
+    bj-indsuc $p |- ( Ind A -> ( B e. A -> suc B e. A ) ) $=
+      ( vx wind cv csuc wcel wral c0 df-bj-ind simprbi wceq suceq rspcv syl5com
+      eleq1d ) ADZCEZFZAGZCAHZBAGBFZAGZQIAGUACAJKTUCCBARBLSUBARBMPNO $.
+  $}
+
+  ${
+    $d x A $.  $d x B $.
+    $( Equality property for ` Ind ` .  (Contributed by BJ, 30-Nov-2019.) $)
+    bj-indeq $p |- ( A = B -> ( Ind A <-> Ind B ) ) $=
+      ( vx wind c0 wcel cv csuc wral wa wceq df-bj-ind eleq2 raleqbi1dv anbi12d
+      bicomd syl5rbb syl5bb ) ADEAFZCGHZAFZCAIZJZABKZBDZCALUEEBFZTBFZCBIZJUDUCC
+      BLUDUFSUHUBUDSUFABEMPUDUBUHUAUGCABABTMNPOQR $.
+  $}
+
+  ${
+    $d x y A $.
+    $( The property of being an inductive class is closed under intersections.
+       (Contributed by BJ, 30-Nov-2019.) $)
+    bj-indint $p |- Ind |^| { x e. A | Ind x } $=
+      ( vy cv wind crab cint c0 wcel csuc wral df-bj-ind simplbi rgenw elintrab
+      wi 0ex mpbir wa rsp adantl sylbi a2i ralimi vex bj-sucex 3imtr4i mpbir2an
+      rgen ) ADZEZABFGZEHULIZCDZJZULIZCULKUMUKHUJIZPZABKURABUKUQUOUJIZCUJKZCUJL
+      ZMNUKAHBQORUPCULUKUNUJIZPZABKUKUSPZABKUNULIUPVCVDABUKVBUSUKUQUTSVBUSPZVAU
+      TVEUQUSCUJTUAUBUCUDUKAUNBCUEZOUKAUOBUNVFUFOUGUICULLUH $.
+  $}
+
+  ${
+    $d x y $.
+    $( Alternate definition of ` _om ` , as the intersection of all the
+       inductive sets.  Proposal: make this the definition.  (Contributed by
+       BJ, 30-Nov-2019.) $)
+    bj-dfom $p |- _om = |^| { x | Ind x } $=
+      ( vy com c0 cv wcel csuc wral cab cint wind dfom3 df-bj-ind bicomi inteqi
+      wa abbii eqtri ) CDAEZFBEGSFBSHPZAIZJSKZAIZJABLUAUCTUBAUBTBSMNQOR $.
+  $}
+
+  $( ` _om ` is an inductive class.  (Contributed by BJ, 30-Nov-2019.) $)
+  bj-omind $p |- Ind _om $=
+    ( vx com wind cv cvv crab cint bj-indint wb cab bj-dfom rabab inteqi eqtr4i
+    wceq bj-indeq ax-mp mpbir ) BCZADCZAEFZGZCZAEHBUBOSUCIBTAJZGUBAKUAUDTALMNBU
+    BPQR $.
+
+  ${
+    $d x A $.
+    $( ` _om ` is included in all the inductive sets (but for the moment, we
+       cannot prove that it is included in all the inductive classes).
+       (Contributed by BJ, 30-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-omssind $p |- ( A e. V -> ( Ind A -> _om C_ A ) ) $=
+      ( wcel wind cab cint wss com nfcv nfv wceq bj-indeq biimprd bj-intabssel1
+      vx cv bj-dfom sseq1i syl6ibr ) ABCADZOPZDZOEFZAGHAGUBTOABOAITOJUAAKUBTUAA
+      LMNHUCAOQRS $.
+  $}
+
+  ${
+    $d A x y $.
+    $( A set is equal to ` _om ` if and only if it is the smallest inductive
+       set.  (Contributed by BJ, 30-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-om $p |- ( A e. V ->
+                    ( A = _om <-> ( Ind A /\ A. x ( Ind x -> A C_ x ) ) ) ) $=
+      ( vy wcel com wceq wind cv wss wi wal wa bj-omind bj-indeq mpbiri cvv vex
+      bj-omssind ax-mp sseq1 syl5ibr alrimiv cint wral ssint df-ral elab imbi1i
+      jca cab albii 3bitri biimpri bj-dfom syl6sseqr adantl a1i adantrd syl6ibr
+      jcad eqss impbid2 ) BCEZBFGZBHZAIZHZBVGJZKZALZMZVEVFVKVEVFFHNBFOPVEVJAVHV
+      IVEFVGJZVGQEVHVMKARZVGQSTBFVGUAUBUCUJVDVLBFJZFBJZMVEVDVLVOVPVLVOKVDVKVOVF
+      VKBDIZHZDUKZUDZFBVTJZVKWAVIAVSUEVGVSEZVIKZALVKABVSUFVIAVSUGWCVJAWBVHVIVRV
+      HDVGVNVQVGOUHUIULUMUNDUOUPUQURVDVFVPVKBCSUSVABFVBUTVC $.
+  $}
+
+  ${
+    $d x y $.
+    $( Two formulations of the axiom of infinity (see ~ ax-infc and
+       ~ bj-omex ) .  (Contributed by BJ, 30-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-2inf $p |- ( _om e. _V <->
+                                E. x ( Ind x /\ A. y ( Ind y -> x C_ y ) ) ) $=
+      ( com cvv wcel cv wind wss wi wal wa wceq eqid bj-om mpbii bj-indeq sseq1
+      wex nfv imbi2d albid anbi12d spcegv mpd wb vex ax-mp biimpri eximi sylibr
+      isset impbii ) CDEZAFZGZBFZGZUNUPHZIZBJZKZARZUMCGZUQCUPHZIZBJZKZVBUMCCLVG
+      CMBCDNOVAVGACDUNCLZUOVCUTVFUNCPVHUSVEBVHBSVHURVDUQUNCUPQTUAUBUCUDVBVHARUM
+      VAVHAVHVAUNDEVHVAUEAUFBUNDNUGUHUIACUKUJUL $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+                 The first three Peano postulates
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+
+The first three Peano postulates do not require the axiom of infinity.  We
+give constructive proofs (only the proof of the second postulate has to be
+modified).
+
+$)
+
+  ${
+    $d x y z A $.
+    $( Constructive proof of ~ peano2 .  Temporary note: another possibility is
+       to simply replace ~ sucexg with ~ bj-sucexg in the proof of ~ peano2 .
+       (Contributed by BJ, 18-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-peano2 $p |- ( A e. _om -> suc A e. _om ) $=
+      ( com wind wcel csuc wi bj-omind bj-indsuc ax-mp ) BCABDAEBDFGBAHI $.
+  $}
+
+
+$(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                  Axiom of infinity
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -63804,11 +63986,21 @@ $(
        The set of natural numbers (finite ordinals)
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-In this section, we introduced the axiom of infinity in a constructive setting
+In this section, we introduce the axiom of infinity in a constructive setting
 ( ~ ax-infc ) and deduce that the class ` _om ` of finite ordinals is a set
 ( ~ bj-omex ).
 
 $)
+
+  ${
+    $d x y $.
+    $( Axiom of infinity in a constructive setting.  This asserts the existence
+       of the special set we want (the set of natural numbers), instead of the
+       existence of a set with some properties ( ~ ax-iinf ) from which one
+       then proves ( ~ omex ) using full separation that the wanted set
+       exists.  See also ~ ax-infc2 .  (Contributed by BJ, 14-Nov-2019.) $)
+    ax-infc $a |- E. x ( Ind x /\ A. y ( Ind y -> x C_ y ) ) $.
+  $}
 
   ${
     $d a b x $.
@@ -63817,22 +64009,31 @@ $)
        existence of a set with some properties ( ~ ax-iinf ) from which one
        then proves ( ~ omex ) using full separation that the wanted set
        exists.  See also ~ ax-infc2 .  (Contributed by BJ, 14-Nov-2019.) $)
-    ax-infc $a |- E. a ( ( (/) e. a /\ A. x e. a suc x e. a ) /\
+    ax-infcALT $a |- E. a ( ( (/) e. a /\ A. x e. a suc x e. a ) /\
                    A. b ( ( (/) e. b /\ A. x e. b suc x e. b ) -> a C_ b ) ) $.
   $}
 
   ${
-    $d a b x $.
+    $d x y $.
     $( Proof of ~ omex from ~ ax-infc .  (Contributed by BJ, 14-Nov-2019.)
        (Proof modification is discouraged.) $)
     bj-omex $p |- _om e. _V $=
+      ( vx vy com cvv wcel cv wind wss wi wal wa wex ax-infc bj-2inf mpbir ) CD
+      EAFZGBFZGPQHIBJKALABMABNO $.
+  $}
+
+  ${
+    $d a b x $.
+    $( Alternate proof of ~ bj-omex .  (Contributed by BJ, 14-Nov-2019.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    bj-omexALT $p |- _om e. _V $=
       ( va vx vb com cv wceq wex wss wa c0 wcel csuc wral wi wal cab cint dfom3
-      cvv syl5eqss ax-infc crab rabab eqcomi inteqi rabid intss1 sylbir ssintab
-      vex mpan biimpri syl6sseqr anim12ci eximii eqss exbii mpbir issetri ) ADA
-      EZDFZAGUTDHZDUTHZIZAGJUTKBELZUTKBUTMIZJCEZKVEVGKBVGMIZUTVGHNCOZIVDABACUAV
-      FVCVIVBVFDVFAPZQZUTABRUTSKZVFVKUTHAUJVLVFIZVKVFASUBZQZUTVJVNVNVJVFAUCUDUE
-      VMUTVNKVOUTHVFASUFUTVNUGUHTUKTVIUTVHCPQZDUTVPHVIVHCUTUIULCBRUMUNUOVAVDAUT
-      DUPUQURUS $.
+      cvv syl5eqss ax-infcALT crab rabab eqcomi inteqi rabid intss1 sylbir mpan
+      vex ssintab biimpri syl6sseqr anim12ci eximii eqss exbii mpbir issetri )
+      ADAEZDFZAGUTDHZDUTHZIZAGJUTKBELZUTKBUTMIZJCEZKVEVGKBVGMIZUTVGHNCOZIVDABAC
+      UAVFVCVIVBVFDVFAPZQZUTABRUTSKZVFVKUTHAUJVLVFIZVKVFASUBZQZUTVJVNVNVJVFAUCU
+      DUEVMUTVNKVOUTHVFASUFUTVNUGUHTUITVIUTVHCPQZDUTVPHVIVHCUTUKULCBRUMUNUOVAVD
+      AUTDUPUQURUS $.
   $}
 
   ${
@@ -63846,39 +64047,21 @@ $)
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-       Peano postulates
+       The remaining two Peano postulates
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-In this section, we give constructive proofs of the Peano postulates.  More
-precisely, we prove that the set of finite ordinals defined using the basic
-axioms of CZF satisfies the Peano postulates and thus provides a model for the
-set of natural numbers.
+In this section, we give constructive proofs of the remaining two (the fourth
+and fifth) Peano postulates.  More precisely, we prove from the core axioms of
+CZF that the set of finite ordinals satisfies the Peano postulates and thus
+provides a model for the set of natural numbers.
 
 $)
 
   ${
-    $d x y z A $.
-    $( Constructive proof of ~ peano2 .  (Contributed by BJ, 18-Nov-2019.)
-       (Proof modification is discouraged.) $)
-    bj-peano2 $p |- ( A e. _om -> suc A e. _om ) $=
-      ( vy vx vz cvv wcel com csuc cv wa wi wb imbi12d adantl wsb wal sylib nfv
-      wral nfan elex c0 cab cint ax-ia1 wceq eleq1 eleq1d df-clab ax-ia2 df-ral
-      suceq sbimi sbim elsb4 clelsb4 imbi12i bitri sbalv sylbi nfra1 nfsab nfvd
-      19.21bi nfcvd vtocldf ralrimiva ralim elintg bj-sucexg syl syl5ibr eleq2i
-      mpd dfom3 3imtr4g mpcom ) AEFZAGFZAHZGFZAGUAVRAUBBIZFZCIZHZWBFZCWBSZJZBUC
-      ZUDZFZVTWJFZVSWAVRADIZFZVTWMFZKZDWISZWKWLKZVRWPDWIVRWMWIFZJZWDWMFZWEWMFZK
-      ZWPCAEVRWSUEWDAUFZXCWPLWTXDXAWNXBWOWDAWMUGXDWEVTWMWDAULUHMNWSXCVRWSXCCWSW
-      HBDOZXCCPZWHDBUIXEWDWBFZWFKZCPZBDOXFWHXIBDWHWGXIWCWGUJWFCWBUKQUMXHXCBDCXH
-      BDOXGBDOZWFBDOZKXCXGWFBDUNXJXAXKXBDBCUODBWEUPUQURUSQUTVDNVRWSCVRCRWHCBDWC
-      WGCWCCRWFCWBVATVBTWTCAVEWTWPCVCVFVGWQWRVRWNDWISZWODWISZKWNWODWIVHVRWKXLWL
-      XMDAWIEVIVRVTEFWLXMLAEVJDVTWIEVIVKMVLVNGWJABCVOZVMGWJVTXNVMVPVQ $.
-  $}
-
-  ${
     $d x y A $.
     $( Version of ~ peano5 when ` _om i^i A ` is assumed to be a set, allowing
-       a proof from basic constructive axioms.  (Contributed by BJ,
-       19-Nov-2019.)  (Proof modification is discouraged.) $)
+       a proof from the core axioms of CZF. (Contributed by BJ, 19-Nov-2019.)
+       (Proof modification is discouraged.) $)
     peano5set $p |- ( ( _om i^i A ) e. V ->
       ( ( (/) e. A /\ A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) ) $=
       ( vy com cin wcel c0 cv csuc wi wral wss cab cint elin wal df-ral eleq2
@@ -63906,7 +64089,7 @@ $)
   ${
     $d x y A $.
     $( Version of ~ peano5 when ` A ` is assumed to be a set, allowing a proof
-       from basic constructive axioms.  (Contributed by BJ, 19-Nov-2019.)
+       from the core axioms of CZF. (Contributed by BJ, 19-Nov-2019.)
        (Proof modification is discouraged.) $)
     speano5 $p |- ( ( A e. V /\ (/) e. A /\
                         A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) $=
@@ -64013,12 +64196,12 @@ $)
     $( Constructive proof of an adaptation of ~ nn0suc .  (Contributed by BJ,
        19-Nov-2019.)  (Proof modification is discouraged.) $)
     bj-nn0suc0 $p |- A. x e. _om ( x = (/) \/ E. y e. x x = suc y ) $=
-      ( vz wtru wi com wral cv c0 wceq csuc wrex wo tru wcel wex wa a1d weq wn
-      idd rgenm bdeq0 bdeqsuc ax-bdex ax-bdor nfv orc a1tru wel vex sucid eleq2
-      expi mpbiri suceq eqeq2d rspcev mpancom olcd bj-bdfindis mp2an ) DDDEZCFG
-      AHZIJZVDBHZKZJZBVDLZMZAFGNVCCFCHZFOZCPVLQDUAUBVJDDDACVEVIAUCVHBAABUDUEUFD
-      AUGZVMVMVEVJDVEVIUHRACSZVJDVNVJTETUIUNVDVKKZJZVJDVPVIVECAUJZVPVIVPVQVKVOO
-      VKCUKULVDVOVKUMUOVHVPBVKVDBCSVGVOVDVFVKUPUQURUSUTRVAVB $.
+      ( vz wtru wi com wral cv c0 wceq csuc wo tru a1tru rgenw bdeq0 a1d weq wn
+      wrex bdeqsuc ax-bdex ax-bdor nfv orc expi wel wcel vex sucid eleq2 mpbiri
+      suceq eqeq2d rspcev mpancom olcd bj-bdfindis mp2an ) DDDEZCFGAHZIJZVABHZK
+      ZJZBVATZLZAFGMUTCFDNOVGDDDACVBVFAPVEBAABUAUBUCDAUDZVHVHVBVGDVBVFUEQACRZVG
+      DVIVGSESNUFVACHZKZJZVGDVLVFVBCAUGZVLVFVLVMVJVKUHVJCUIUJVAVKVJUKULVEVLBVJV
+      ABCRVDVKVAVCVJUMUNUOUPUQQURUS $.
   $}
 
   ${
