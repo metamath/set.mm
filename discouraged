@@ -17680,7 +17680,6 @@ New usage of "r1pwOLD" is discouraged (0 uses).
 New usage of "ralbidaOLD" is discouraged (0 uses).
 New usage of "ralbidvOLD" is discouraged (0 uses).
 New usage of "ralbidvaOLD" is discouraged (0 uses).
-New usage of "ralbii2OLD" is discouraged (0 uses).
 New usage of "ralbiiOLD" is discouraged (0 uses).
 New usage of "ralimOLD" is discouraged (1 uses).
 New usage of "ralimdaaOLD" is discouraged (0 uses).
@@ -17741,6 +17740,7 @@ New usage of "retpsOLD" is discouraged (0 uses).
 New usage of "reusv5OLD" is discouraged (0 uses).
 New usage of "reusv6OLD" is discouraged (0 uses).
 New usage of "reusv7OLD" is discouraged (0 uses).
+New usage of "rexbidvaALT" is discouraged (0 uses).
 New usage of "rexnalOLD" is discouraged (0 uses).
 New usage of "rexsnsOLD" is discouraged (1 uses).
 New usage of "rexsuppOLD" is discouraged (0 uses).
@@ -19441,7 +19441,6 @@ Proof modification of "r1pwOLD" is discouraged (151 steps).
 Proof modification of "ralbidaOLD" is discouraged (43 steps).
 Proof modification of "ralbidvOLD" is discouraged (10 steps).
 Proof modification of "ralbidvaOLD" is discouraged (10 steps).
-Proof modification of "ralbii2OLD" is discouraged (37 steps).
 Proof modification of "ralimOLD" is discouraged (59 steps).
 Proof modification of "ralimdaaOLD" is discouraged (49 steps).
 Proof modification of "ralimdvaOLD" is discouraged (10 steps).
