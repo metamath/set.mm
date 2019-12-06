@@ -147,13 +147,17 @@ then extended without justification to statements about infinite collections.
 <LI> <A HREF="mmbiblio.html">Bibliographic Cross-Reference</A></LI>
 <LI> <A HREF="mmdefinitions.html">Definition List</A></LI>
 <LI> <A HREF="mmascii.html">ASCII Equivalents for Text-Only Browsers</A></LI>
-<LI> <A HREF="../metamath/iset.mm">Metamath database iset.mm (ASCII file)</A></LI>
+<LI>
+<A HREF="../metamath/iset.mm">Metamath database iset.mm (ASCII file)</A>
+</LI>
 </MENU>
 
 <B><FONT COLOR="#006633">External links</FONT></B>
 <MENU>
-<LI> <A HREF=" https://github.com/metamath/set.mm">Github repository</A>
-          [accessed 06-Jan-2018]</LI>
+<LI>
+<A HREF=" https://github.com/metamath/set.mm">GitHub repository</A>
+[accessed 06-Jan-2018]
+</LI>
 </MENU>
 
 </TD>
@@ -572,7 +576,7 @@ COLOR="#0000FF"><I>&phi;</I></FONT></TD></TR>
 <P><A NAME="staxioms"></A><B><FONT COLOR="#006633">Set theory</FONT></B>
 uses the formalism of propositional and predicate calculus to assert
 properties of arbitrary mathematical objects called "sets."  A set can
-be contained in another set, and this relationship is indicated by the
+be an element of another set, and this relationship is indicated by the
 <IMG SRC='in.gif' WIDTH=10 HEIGHT=19 ALT='e.'> symbol.
 Starting with the simplest mathematical object, called the empty set,
 set theory builds up more and more complex structures whose existence
@@ -702,6 +706,14 @@ FACE=sans-serif>&isin;</FONT> <I><FONT COLOR="#FF0000">x</FONT></I> &rarr; suc
 
 </TABLE></CENTER>
 
+<P>We develop set theory based on the Intuitionistic Zermelo-Fraenkel
+(IZF) system, mostly following the IZF axioms as laid out in [Crosilla].
+Constructive Zermelo-Fraenkel (CZF), also described in Crosilla, is not
+as easy to formalize in metamath because the Axiom of Restricted Separation
+would require us to develop the ability to classify formulas as bounded
+formulas, similar to the machinery we have built up for asserting on
+whether variables are free in formulas.</P>
+
 <P><HR NOSHADE SIZE=1><A NAME="theorems"></A><B><FONT COLOR="#006633">A
 Theorem Sampler</FONT></B>&nbsp;&nbsp;&nbsp;
 
@@ -827,7 +839,9 @@ in converting classical proofs to intuitionistic ones.</P>
 
 <LI>If you see case elimination ( pm2.61 or its variants) you'll probably end up with two theorems for the two cases. In particular, if the cases were ` A e. _V ` and ` -. A e. _V ` you probably just care about the ` A e. _V ` case.</LI>
 
-<LI>Non-empty almost always needs to be changed to inhabited (those terms are defined at ~ n0rf ).</LI>
+<LI>
+Non-empty almost always needs to be changed to inhabited (those terms are defined at ~ n0rf ).
+</LI>
 
 <LI>If the original proof relied on propositional/predicate logic which isn't a theorem of intuitionistic logic, maybe there is a way of expressing the logic more directly. This is perhaps the hardest one to put in cookbook form: you might need to try some things and see if anything works.</LI>
 
@@ -839,58 +853,128 @@ in converting classical proofs to intuitionistic ones.</P>
 
 <LI>Sometimes one direction of a biconditional holds, or subset holds instead of equality. You might be able to keep the easy direction and worry about the other one later.</LI>
 
-<LI>If there is case elimination sometimes only one of the two cases is possible. For
-example, in ~ mosubopt the rest of the formula being proved constrains which case
-matters.</LI>
+<LI>
+If there is case elimination sometimes only one of the two cases is possible.
+For example, in ~ mosubopt the rest of the formula being proved constrains
+which case matters.
+</LI>
 
-<LI>If you need an additional condition (for example, because the original
-proof used case elimination) and you are proving a biconditional, consider whether
+<LI>
+If you need an additional condition (for example, because the original proof
+used case elimination) and you are proving a biconditional, consider whether
 both sides of the biconditional imply the condition. If so, you'll be able to
-prove the biconditional with that condition as an antecedent, and then use ~ pm5.21nii
-or one of its variants to remove the antecedent (example: ~ elxp4 ).</LI>
+prove the biconditional with that condition as an antecedent, and then use
+~ pm5.21nii or one of its variants to remove the antecedent (example:
+~ elxp4 ).
+</LI>
 
-<LI>If your proof relies on dveeq2 try ~ dveeq2or and likewise for the other things downstream of ~ ax-i12 or ~ ax-bnd .</LI>
+<LI>
+If your proof relies on dveeq2 try ~ dveeq2or and likewise for the other things
+downstream of ~ ax-i12 or ~ ax-bnd .
+</LI>
 
-<LI>If you have a disjunction, be reluctant to turn it into an implication using ~ ord and the like. Instead, show that each disjunct implies what you are trying to prove and use ~ jaoi to join those two implications into something which can hook up to the disjunction.</LI>
+<LI>
+If you have a disjunction, be reluctant to turn it into an implication using
+~ ord and the like. Instead, show that each disjunct implies what you are
+trying to prove and use ~ jaoi to join those two implications into something
+which can hook up to the disjunction.
+</LI>
 
-<LI>Disjunctive syllogism holds in intuitionistic logic and we state it a few ways (for example ~ orel1 and ~ ecased ) but we don't have a wide variety of convenience theorems. Unless we add those, you'll use ~ ord or something similar followed by ~ mpd or something similar. This may add a few steps but they are straightforward ones.</LI>
+<LI>
+Disjunctive syllogism holds in intuitionistic logic and we state it a few ways
+(for example ~ orel1 and ~ ecased ) but we don't have a wide variety of
+convenience theorems. Unless we add those, you'll use ~ ord or something
+similar followed by ~ mpd or something similar. This may add a few steps but
+they are straightforward ones.
+</LI>
 
-<LI>If your proof is doing tricky things perhaps in the interest of shortness, try just expanding the definitions and applying logic in a straightforward way. See if this gets you a working (although perhaps longer) proof.</LI>
+<LI>
+If your proof is doing tricky things perhaps in the interest of shortness, try
+just expanding the definitions and applying logic in a straightforward way. See
+if this gets you a working (although perhaps longer) proof.
+</LI>
 
-<LI>If your proof relies on a biconditional in set.mm which isn't in iset.mm, see if one direction is in iset.mm and see which direction your proof is using. For example ~ 19.35-1 or ~ exnalim .</LI>
+<LI>
+If your proof relies on a biconditional in set.mm which isn't in iset.mm, see
+if one direction is in iset.mm and see which direction your proof is using. For
+example ~ 19.35-1 or ~ exnalim .
+</LI>
 
-<LI>If you are doing things with inhabited classes (beyond just applying existing inhabited class theorems), you may be able to dig up some predicate logic you haven't used in a while (e.g. ~ raaan ).</LI>
+<LI>
+If you are doing things with inhabited classes (beyond just applying existing
+inhabited class theorems), you may be able to dig up some predicate logic you
+haven't used in a while (e.g. ~ raaan ).
+</LI>
 
-<LI>Consider the possibility of giving up. Some things just won't have intuitionistic proofs. The more it looks like excluded middle or other non-intuitionistic statements, the more likely you are dealing with one of these. But it can be hard to have good intuition about this. In some cases it may be possible to ask "can I use this statement to prove 'ph or not ph' for an arbitrary proposition" (see ~ ordtriexmid for example ), but this is not always an easy technique to apply.</LI>
+<LI>
+Consider the possibility of giving up. Some things just won't have
+intuitionistic proofs. The more it looks like excluded middle or other
+non-intuitionistic statements, the more likely you are dealing with one of
+these. But it can be hard to have good intuition about this. In some cases it
+may be possible to ask "can I use this statement to prove 'ph or not ph' for an
+arbitrary proposition" (see ~ ordtriexmid for example ), but this is not always
+an easy technique to apply.
+</LI>
 
-<LI>Switching between ~ 2th and ~ 2false might help (e.g. ~ dfnul2 , ~ dfnul3 , ~ rab0 ).</LI>
+<LI>
+Switching between ~ 2th and ~ 2false might help (e.g. ~ dfnul2 , ~ dfnul3 ,
+~ rab0 ).
+</LI>
 
-<LI>In many cases statements which are equivalent in classical logic become several non-equivalent statements (e.g. exclusive or, ordinals, non-empty versus inhabited, apartness versus negated equality). This is usually a good place to look for a literature reference, but don't be afraid to change the statement being proved to "what you really meant is X" as appropriate.</LI>
+<LI>
+In many cases statements which are equivalent in classical logic become several
+non-equivalent statements (e.g. exclusive or, ordinals, non-empty versus
+inhabited, apartness versus negated equality). This is usually a good place to
+look for a literature reference, but don't be afraid to change the statement
+being proved to "what you really meant is X" as appropriate.
+</LI>
 
-<LI>If a statement has multiple equivalences in set.mm (e.g. mo2 and mo3 , or dffun2 and dffun3 ) and only some of them in iset.mm, sometimes a pretty similar proof will work (that is, which one to use in the original proof may have been a fairly arbitrary choice).</LI>
+<LI>
+If a statement has multiple equivalences in set.mm (e.g. mo2 and mo3 , or
+dffun2 and dffun3 ) and only some of them in iset.mm, sometimes a pretty
+similar proof will work (that is, which one to use in the original proof may
+have been a fairly arbitrary choice).
+</LI>
 
-<LI>A number of theorems related to functions (especially ovex and fvex ) in
+<LI>
+A number of theorems related to functions (especially ovex and fvex ) in
 set.mm perform case elimination based on whether we are evaluating the function
-within its domain or outside it. The iset.mm replacements ( ~ fnovex and ~ funfvex )
-only work within the domain. This is rarely a problem but often means that
-logic must be rearranged, for example by changing ~ rexlimivw to ~ rexlimdva .
-(example: ~ ovelrn or indeed most uses of ~ fnovex and ~ funfvex ).</LI>
+within its domain or outside it. The iset.mm replacements ( ~ fnovex and
+~ funfvex ) only work within the domain. This is rarely a problem but often
+means that logic must be rearranged, for example by changing ~ rexlimivw to
+~ rexlimdva (example: ~ ovelrn or indeed most uses of ~ fnovex and ~ funfvex ).
+</LI>
 
-<LI>With excluded middle, ` (/) e. A ` and ` A =/= (/) ` are equivalent (where
+<LI>
+With excluded middle, ` (/) e. A ` and ` A =/= (/) ` are equivalent (where
 ` A ` is an ordinal). In such theorems, ` (/) e. A ` is generally the more
 interesting condition constructively.</LI>
 
-<LI>If you get stuck, ask! (for example in a github issue or on the mailing list). We have a number of contributors who have experience in constructive mathematics in general, or iset.mm in particular, and one of the best things about doing/learning mathematics in metamath is the collaborative nature of how we develop it.
+<LI>
+Reverse closure in set.mm uses excluded middle (for example ovrcl or ndmfvrcl
+). In iset.mm we add more conditions that we are evaluating operations within
+their domains (for example set.mm's addasspi versus iset.mm's ~ addasspig in
+which conditions such as ` A e. N. ` are added, or set.mm's ltbtwnnq versus
+iset.mm's ~ ltbtwnnqq , in which ` E. x ` is changed to ` E. x e. Q. ` ).
+</LI>
+
+<LI>
+If you get stuck, ask! (for example in a GitHub issue or on the mailing list).
+We have a number of contributors who have experience in constructive
+mathematics in general, or iset.mm in particular, and one of the best things
+about doing/learning mathematics in metamath is the collaborative nature of how
+we develop it.
 </UL>
 
-<HR NOSHADE SIZE=1><A NAME="setmm"></A><B><FONT
-COLOR="#006633">Metamath Proof Explorer cross reference</FONT></B>&nbsp;&nbsp;&nbsp;
+<HR NOSHADE SIZE=1><A NAME="setmm"></A>
+<B><FONT COLOR="#006633">Metamath Proof Explorer cross
+reference</FONT></B>&nbsp;&nbsp;&nbsp;
 
 <P>This is a list of theorems from the Metamath Proof Explorer (which
 assumes the law of the excluded middle throughout) which we do not
 have in the Intuitionistic Logic Explorer (generally because they
-are not provable without the law of the excluded middle, perhaps a
-few which could be proved but aren't yet), together
+are not provable without the law of the excluded middle, although some
+could be proved but aren't for a variety of reasons), together
 with the closest replacements.</P>
 
 <TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
@@ -915,6 +999,23 @@ versus "proof by contradiction" to distinguish these.</TD>
 <TR>
 
 <TR>
+<TD>notnotrd , notnotri , notnot2 , notnot</TD>
+<TD>~ notnot1 </TD>
+<TD>Double negation introduction holds but not double negation
+elimination.</TD>
+<TR>
+
+<TR>
+<TD>mt3d</TD>
+<TD>~ mtod </TD>
+</TR>
+
+<TR>
+<TD>nyl2</TD>
+<TD>~ nsyl </TD>
+</TR>
+
+<TR>
 <TD>pm4.63</TD>
 <TD>~ pm3.2im </TD>
 </TR>
@@ -932,6 +1033,21 @@ versus "proof by contradiction" to distinguish these.</TD>
 <TR>
 <TD>oran</TD>
 <TD>~ oranim </TD>
+</TR>
+
+<TR>
+<TD>ianor</TD>
+<TD>~ pm3.14 </TD>
+</TR>
+
+<TR>
+<TD>dedlem0b</TD>
+<TD>~ dedlemb </TD>
+</TR>
+
+<TR>
+<TD>3ianor</TD>
+<TD>~ 3ianorr </TD>
 </TR>
 
 <TR>
@@ -965,6 +1081,11 @@ versus "proof by contradiction" to distinguish these.</TD>
 </TR>
 
 <TR>
+<TD>19.30</TD>
+<TD><I>none</I>
+</TR>
+
+<TR>
 <TD>19.36</TD>
 <TD>~ 19.36-1 </TD>
 </TR>
@@ -990,8 +1111,63 @@ versus "proof by contradiction" to distinguish these.</TD>
 </TR>
 
 <TR>
+<TD>rexnal</TD>
+<TD>~ rexnalim </TD>
+</TR>
+
+<TR>
+<TD>dfral2</TD>
+<TD>~ ralexim </TD>
+</TR>
+
+<TR>
 <TD>dfrex2</TD>
 <TD>~ rexalim </TD>
+</TR>
+
+<TR>
+<TD>r19.30</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>rexanali</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>nrexralim</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>nfrald</TD>
+<TD>~ nfraldxy , ~ nfraldya </TD>
+</TR>
+
+<TR>
+<TD>nfrexd</TD>
+<TD>~ nfrexdxy , ~ nfrexdya </TD>
+</TR>
+
+<TR>
+<TD>nfral</TD>
+<TD>~ nfralxy , ~ nfralya </TD>
+</TR>
+
+<TR>
+<TD>nfra2</TD>
+<TD>~ nfra1 , ~ nfralya </TD>
+</TR>
+
+<TR>
+<TD>nfrex</TD>
+<TD>~ nfrexxy , ~ nfrexya </TD>
+</TR>
+
+<TR>
+<TD>ralcom2</TD>
+<TD>~ ralcom </TD>
 </TR>
 
 <TR>
@@ -1020,12 +1196,72 @@ versus "proof by contradiction" to distinguish these.</TD>
 </TR>
 
 <TR>
-<TD>df-if and all theorems using <TT>if</TT></TD>
+<TD>dfif2</TD>
+<TD>~ df-if </TD>
+</TR>
+
+<TR>
+<TD>ifsb</TD>
 <TD><I>none</I></TD>
-<TD>This could be made to work in constructive logic if the
-condition is a decidable proposition. The development in set.mm,
-however, would require extensive changes as would most theroems
-which use <TT>if</TT>.</TD>
+</TR>
+
+<TR>
+<TD>dfif4</TD>
+<TD><I>none</I></TD>
+<TD>Unused in set.mm</TD>
+</TR>
+
+<TR>
+<TD>dfif5</TD>
+<TD><I>none</I></TD>
+<TD>Unused in set.mm</TD>
+</TR>
+
+<TR>
+<TD>ifnot</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ifan</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ifor</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ifeq1da, ifeq2da</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ifclda</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ifeqda</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>elimif , ifbothda , ifboth , ifid , eqif , ifval , elif ,
+ifel , ifcl , ifcld , ifeqor , 2if2 , ifcomnan , csbif ,
+csbifgOLD</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>dedth , dedth2h , dedth3h , dedth4h , dedth2v , dedth3v ,
+dedth4v , elimhyp , elimhyp2v , elimhyp3v , elimhyp4v ,
+elimel , elimdhyp , keephyp , keephyp2v , keephyp3v , keepel ,
+ifex , ifexg</TD>
+<TD><I>none</I></TD>
+<TD>Even in set.mm, the weak deduction theorem is discouraged in
+favor of theorems in deduction form.</TD>
 </TR>
 
 <TR>
@@ -1056,6 +1292,40 @@ set exists or it does not"</TD>
 <TD>opex</TD>
 <TD>~ opexg , ~ opex </TD>
 <TD>The iset.mm version of ~ opex has additional hypotheses</TD>
+</TR>
+
+<TR>
+<TD>df-so</TD>
+<TD>~ df-iso </TD>
+<TD>Although we define ` Or ` to describe a weakly linear order (such
+as real numbers), there are some orders which are also trichotomous, for
+example ~ nntri3or , ~ pitri3or , and ~ nqtri3or .
+</TR>
+
+<TR>
+<TD ROWSPAN="5">sotric</TD>
+<TD>~ sotricim </TD>
+<TD>One direction, for any weak linear order.</TD>
+</TR>
+
+<TR>
+<TD>~ sotritric </TD>
+<TD>For a trichotomous order.</TD>
+</TR>
+
+<TR>
+<TD>~ nntri2 </TD>
+<TD>For the specific order ` _E Or _om `</TD>
+</TR>
+
+<TR>
+<TD>~ pitric </TD>
+<TD>For the specific order ` <N Or N. `</TD>
+</TR>
+
+<TR>
+<TD>~ nqtric </TD>
+<TD>For the specific order ` <Q Or Q. `</TD>
 </TR>
 
 <TR>
@@ -1190,10 +1460,12 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 <TD>when evaluating a function within its domain</TD>
 </TR>
 
+<TR>
 <TD>~ fvexg , ~ fvex </TD>
 <TD>when the function is a set and is evaluated at a set</TD>
 </TR>
 
+<TR>
 <TD>~ relrnfvex </TD>
 <TD>when evaluating a relation whose range is a set</TD>
 </TR>
@@ -1257,6 +1529,19 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 </TR>
 
 <TR>
+<TD>ov3</TD>
+<TD>~ ovi3 </TD>
+<TD>Although set.mm's ov3 could be proved, it is only used a few places
+in set.mm, and in iset.mm those places need the modified form
+found in ~ ovi3 .</TD>
+</TR>
+
+<TR>
+<TD>oprssdm</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
 <TD>ndmovg , ndmov , ndmovcl ,
     ndmovrcl , ndmovcom , ndmovass , ndmovdistr , ndmovord ,
     and ndmovordi</TD>
@@ -1284,7 +1569,7 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 <TR>
 <TD>caov42</TD>
 <TD>~ caov42d </TD>
-<TD>Note that ~ caov411d has a closure hypothesis.</TD>
+<TD>Note that ~ caov42d has a closure hypothesis.</TD>
 </TR>
 
 <TR>
@@ -1295,12 +1580,17 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 
 <TR>
 <TD>caovdilem</TD>
-<TD>?</TD>
+<TD>~ caovdilemd </TD>
 </TR>
 
 <TR>
 <TD>caovlem2</TD>
 <TD>?</TD>
+</TR>
+
+<TR>
+<TD>caovmo</TD>
+<TD>~ caovimo </TD>
 </TR>
 
 <TR>
@@ -1507,6 +1797,33 @@ middle as seen at ~ ordpwsucexmid .</TD>
 </TR>
 
 <TR>
+<TD>tfinds</TD>
+<TD>~ tfis3 </TD>
+</TR>
+
+<TR>
+<TD>1stval</TD>
+<TD>~ 1stvalg </TD>
+</TR>
+
+<TR>
+<TD>2ndval</TD>
+<TD>~ 2ndvalg </TD>
+</TR>
+
+<TR>
+<TD>1stnpr</TD>
+<TD><I>none</I></TD>
+<TD>May be intuitionizable, but very lightly used in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>2ndnpr</TD>
+<TD><I>none</I></TD>
+<TD>May be intuitionizable, but very lightly used in set.mm.</TD>
+</TR>
+
+<TR>
 <TD>brtpos</TD>
 <TD>~ brtposg </TD>
 </TR>
@@ -1519,6 +1836,11 @@ middle as seen at ~ ordpwsucexmid .</TD>
 <TR>
 <TD>ovtpos</TD>
 <TD>~ ovtposg </TD>
+</TR>
+
+<TR>
+<TD>iunonOLD</TD>
+<TD>~ iunon </TD>
 </TR>
 
 <TR>
@@ -1582,6 +1904,21 @@ middle as seen at ~ ordpwsucexmid .</TD>
 </TR>
 
 <TR>
+<TD>om0r</TD>
+<TD>~ om0 , ~ nnm0r </TD>
+</TR>
+
+<TR>
+<TD>om00</TD>
+<TD>~ nnm00 </TD>
+</TR>
+
+<TR>
+<TD>om00el</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
 <TD>suc11reg</TD>
 <TD>~ suc11g </TD>
 </TR>
@@ -1613,9 +1950,25 @@ characteristic function and initial value.</TD>
 </TR>
 
 <TR>
+<TD>oaord1</TD>
+<TD><I>none yet</I></TD>
+</TR>
+
+<TR>
 <TD>oaword</TD>
 <TD>~ oawordi </TD>
 <TD>The other direction presumably could be proven but isn't yet.</TD>
+</TR>
+
+<TR>
+<TD>omwordi</TD>
+<TD>~ nnmword</TD>
+<TD>The set.mm proof of omwordi relies on case elimination.</TD>
+</TR>
+
+<TR>
+<TD>omword1</TD>
+<TD>~ nnmword</TD>
 </TR>
 
 <TR>
@@ -1674,6 +2027,14 @@ important in constructing the reals.</TD>
 <TD>eceqoveq</TD>
 <TD><I>none</I></TD>
 <TD>Unused in set.mm.</TD>
+</TR>
+
+<TR>
+<TD>ovec</TD>
+<TD>~ oviec </TD>
+<TD>Although set.mm's ovec could be proved, it is only used in
+a few places, and the corresponding places in iset.mm need the
+modified form at ~ oviec .</TD>
 </TR>
 
 <TR>
@@ -1744,6 +2105,175 @@ important in constructing the reals.</TD>
 in set.mm</TD>
 </TR>
 
+<TR>
+<TD>df-nq</TD>
+<TD>~ df-nqqs </TD>
+</TR>
+
+<TR>
+<TD>df-nq</TD>
+<TD>~ df-nqqs </TD>
+</TR>
+
+<TR>
+<TD>df-erq</TD>
+<TD><I>none</I></TD>
+<TD>Not needed given ~ df-nqqs </TD>
+</TR>
+
+<TR>
+<TD>df-plq</TD>
+<TD>~ df-plqqs </TD>
+</TR>
+
+<TR>
+<TD>df-mq</TD>
+<TD>~ df-mqqs </TD>
+</TR>
+
+<TR>
+<TD>df-1nq</TD>
+<TD>~ df-1nqqs </TD>
+</TR>
+
+<TR>
+<TD>df-ltnq</TD>
+<TD>~ df-ltnqqs </TD>
+</TR>
+
+<TR>
+<TD>elpqn</TD>
+<TD><I>none</I></TD>
+<TD>Not needed given ~ df-nqqs </TD>
+</TR>
+
+<TR>
+<TD>ordpipq</TD>
+<TD>~ ordpipqqs </TD>
+</TR>
+
+<TR>
+<TD>addnqf</TD>
+<TD>~ dmaddpq , ~ addclnq </TD>
+<TD>It should be possible to prove that ` +Q ` is a function, but
+so far there hasn't been a need to do so.</TD>
+</TR>
+
+<TR>
+<TD>addcomnq</TD>
+<TD>~ addcomnqg </TD>
+</TR>
+
+<TR>
+<TD>mulcomnq</TD>
+<TD>~ mulcomnqg </TD>
+</TR>
+
+<TR>
+<TD>mulassnq</TD>
+<TD>~ mulassnqg </TD>
+</TR>
+
+<TR>
+<TD>recmulnq</TD>
+<TD>~ recmulnqg </TD>
+</TR>
+
+<TR>
+<TD>ltanq</TD>
+<TD>~ ltanqg </TD>
+</TR>
+
+<TR>
+<TD>ltmnq</TD>
+<TD>~ ltmnqg </TD>
+</TR>
+
+<TR>
+<TD>ltexnq</TD>
+<TD>~ ltexnqq </TD>
+</TR>
+
+<TR>
+<TD>archnq</TD>
+<TD>~ archnqq </TD>
+</TR>
+
+<TR>
+<TD>df-np</TD>
+<TD>~ df-inp </TD>
+</TR>
+
+<TR>
+<TD>df-1p</TD>
+<TD>~ df-i1p </TD>
+</TR>
+
+<TR>
+<TD>df-plp</TD>
+<TD>~ df-iplp </TD>
+</TR>
+
+<TR>
+<TD>df-ltp</TD>
+<TD>~ df-iltp </TD>
+</TR>
+
+<TR>
+<TD>elnp , elnpi</TD>
+<TD>~ elinp </TD>
+</TR>
+
+<TR>
+<TD>prn0</TD>
+<TD>~ prml , ~ prmu </TD>
+</TR>
+
+<TR>
+<TD>prpssnq</TD>
+<TD>~ prssnql , ~ prssnqu </TD>
+</TR>
+
+<TR>
+<TD>elprnq</TD>
+<TD>~ elprnql , ~ elprnqu </TD>
+</TR>
+
+<TR>
+<TD>prcdnq</TD>
+<TD>~ prcdnql , ~ prcunqu </TD>
+</TR>
+
+<TR>
+<TD>prub</TD>
+<TD>~ prubl </TD>
+</TR>
+
+<TR>
+<TD>prnmax</TD>
+<TD>~ prnmaxl </TD>
+</TR>
+
+<TR>
+<TD>npomex</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>prnmadd</TD>
+<TD>~ prnmaddl </TD>
+</TR>
+
+<TR>
+<TD>genpv</TD>
+<TD>~ genipv </TD>
+</TR>
+
+<TR>
+<TD>genpcd</TD>
+<TD>~ genpcdl </TD>
+</TR>
+
 </TABLE>
 
 <HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
@@ -1755,6 +2285,13 @@ COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
 accepting constructive mathematics,&quot; <I>Bulletin (New Series) of
 the American Mathematical Society</I>, 54:481-498 (2017),
 DOI: <A HREF="http://dx.doi.org/10.1090/bull/1556">10.1090/bull/1556</A> .</LI>
+
+<LI><A NAME="BauerTaylor"></A> [BauerTaylor] Andrej Bauer and Paul Taylor,
+"The Dedekind Reals in Abstract Stone Duality",
+<I>Mathematical structures in computer science</I>, 19(4):757&#x2013;838, 2009,
+<A HREF="http://www.paultaylor.eu/ASD/dedras.pdf">
+http://www.paultaylor.eu/ASD/dedras.pdf</A>
+</LI>
 
 <LI><A NAME="BellMachover"></A> [BellMachover] Bell, J. L., and M.
 Machover, <I>A Course in Mathematical Logic,</I> North-Holland,
@@ -1935,4 +2472,3 @@ HREF="http://validator.w3.org/check?uri=referer">W3C HTML validation</A>
 
 </BODY>
 </HTML>
-

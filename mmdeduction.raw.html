@@ -7,7 +7,7 @@
 <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
 
 <META HTTP-EQUIV="Content-Type"
- CONTENT="text/html; charset=iso-8859-1">
+ CONTENT="text/html; charset=UTF-8">
  <TITLE>The Weak Deduction Theorem - Metamath Proof Explorer</TITLE>
 <LINK REL="shortcut icon" HREF="favicon.ico" TYPE="image/x-icon">
 
@@ -893,7 +893,7 @@ Our lemmas <A HREF="elimh.html">elimh</A> and <A
 HREF="dedt.html">dedt</A> implement this construction into a more
 compact form for practical application.  This proof was adapted from an
 email I wrote, and I left it in its original ASCII form, where
-<TT>~</TT> means
+<TT>&#126;</TT> means
 ` -. ` ,
 <TT>^</TT> means
 ` /\ ` ,
@@ -923,9 +923,9 @@ kind of self-reference wherein a formula is substituted into itself.
 It is important to note that this version does not replace the standard
 one because it is weaker.  In particular, we can't eliminate a hypothesis
 that is a contradiction:  for example we can't use the theorem to derive
-|- (~A ^ A) -&gt; B from ~A ^ A |- B.  We must be able to prove separately
+|- (&not;A ^ A) -&gt; B from &not;A ^ A |- B.  We must be able to prove separately
 a special case of the hypothesis.  For example, if we are given
-(A -&gt; B) |- (~B -&gt; ~A) and want to prove |- (A -&gt; B) -&gt; (~B -&gt; ~A), the
+(A -&gt; B) |- (&not;B -&gt; &not;A) and want to prove |- (A -&gt; B) -&gt; (&not;B -&gt; &not;A), the
 theorem will give us the proof provided we also have a proof for the
 special case |- (B -&gt; B), where wff "(B -&gt; B)" is the hypothesis
 "(A -&gt; B)" with B substituted for A.
@@ -958,61 +958,61 @@ G(A).
 
 In classical logic we have
 
-    |- F -&gt; (A &lt;-&gt; ((A ^ F) v (B ^ ~F)))             (1)
-    |- ~F -&gt; (B &lt;-&gt; ((A ^ F) v (B ^ ~F)))            (2)
+    |- F -&gt; (A &lt;-&gt; ((A ^ F) v (B ^ &not;F)))             (1)
+    |- &not;F -&gt; (B &lt;-&gt; ((A ^ F) v (B ^ &not;F)))            (2)
 
 Also in classical logic, for any wffs P,Q,R,S,T we have
 
-    If  |- P -&gt; (Q &lt;-&gt; R)  then  |- P -&gt; (~Q &lt;-&gt; ~R)
+    If  |- P -&gt; (Q &lt;-&gt; R)  then  |- P -&gt; (&not;Q &lt;-&gt; &not;R)
 
     If  |- P -&gt; (Q &lt;-&gt; R)  and   |- P -&gt; (S &lt;-&gt; T)
          then  |- P -&gt; ((Q -&gt; S) &lt;-&gt; (R -&gt; T))
 
-corresponding to the primitive connectives ~ and -&gt;.  Using these, and
+corresponding to the primitive connectives &not; and -&gt;.  Using these, and
 (1) and (2) as the basis, we derive by induction on the formula length
-of F (with ^, v, etc. implicitly expanded into ~ and -&gt; primitives)
+of F (with ^, v, etc. implicitly expanded into &not; and -&gt; primitives)
 
-    |- F -&gt; (F(A) &lt;-&gt; F((A ^ F) v (B ^ ~F)))         (3)
-    |- ~F -&gt; (F(B) &lt;-&gt; F((A ^ F) v (B ^ ~F)))        (4)
+    |- F -&gt; (F(A) &lt;-&gt; F((A ^ F) v (B ^ &not;F)))         (3)
+    |- &not;F -&gt; (F(B) &lt;-&gt; F((A ^ F) v (B ^ &not;F)))        (4)
 
 From (3) we have (since F = F(A) by definition)
 
-    |- F -&gt; F((A ^ F) v (B ^ ~F))                    (5)
+    |- F -&gt; F((A ^ F) v (B ^ &not;F))                    (5)
 
 Since |- F(B) by hypothesis, from (4) we have
 
-    |- ~F -&gt; F((A ^ F) v (B ^ ~F))                   (6)
+    |- &not;F -&gt; F((A ^ F) v (B ^ &not;F))                   (6)
 
 Combining (5) and (6), we obtain
 
-    |- F((A ^ F) v (B ^ ~F))                         (7)
+    |- F((A ^ F) v (B ^ &not;F))                         (7)
 
-By hypothesis F(A) |- G(A).  Substituting ((A ^ F) v (B ^ ~F)) for A
+By hypothesis F(A) |- G(A).  Substituting ((A ^ F) v (B ^ &not;F)) for A
 gives
 
-    F((A ^ F) v (B ^ ~F)) |- G((A ^ F) v (B ^ ~F))   (8)
+    F((A ^ F) v (B ^ &not;F)) |- G((A ^ F) v (B ^ &not;F))   (8)
 
 Since (7) satisfies the hypothesis of (8) we have
 
-    |- G((A ^ F) v (B ^ ~F))                         (9)
+    |- G((A ^ F) v (B ^ &not;F))                         (9)
 
 By induction on the formula length of G, from (1) we derive
 
-    |- F -&gt; (G(A) &lt;-&gt; G((A ^ F) v (B ^ ~F)))         (10)
+    |- F -&gt; (G(A) &lt;-&gt; G((A ^ F) v (B ^ &not;F)))         (10)
 
 From (9) and (10) we finally obtain
 
     |- F -&gt; G            Q.E.D.
 
 
-Example:  Suppose we have a proof for (A -&gt; B) |- (~B -&gt; ~A) and also a
+Example:  Suppose we have a proof for (A -&gt; B) |- (&not;B -&gt; &not;A) and also a
 proof of |- (B -&gt; B), which is a special case of the hypothesis.  Let
-F(A) = (A -&gt; B) and G(A) = (~B -&gt; ~A).  Then F(B) = (B -&gt; B), and the
-theorem gives us |- (A -&gt; B) -&gt; (~B -&gt; ~A).
+F(A) = (A -&gt; B) and G(A) = (&not;B -&gt; &not;A).  Then F(B) = (B -&gt; B), and the
+theorem gives us |- (A -&gt; B) -&gt; (&not;B -&gt; &not;A).
 
 The theorem provides us with the algorithm for constructing the proof in
 detail if we wish.  For example the proof step corresponding to (7)
-becomes |- (A ^ (A -&gt; B)) v (B ^ ~(A -&gt; B))) -&gt; B.  It is easy to see
+becomes |- (A ^ (A -&gt; B)) v (B ^ &not;(A -&gt; B))) -&gt; B.  It is easy to see
 that the number of steps in the final proof is equal to the number of
 steps in the proof of the original deduction and the special case, plus
 (primarily) a number of steps proportional to formula length used to

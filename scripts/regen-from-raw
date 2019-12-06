@@ -12,12 +12,12 @@ else
   force=false
 fi
 
-markup_options="${1:-"/ALT_HTML"} /SYMBOLS"
+markup_options="${1:-"/ALT_HTML"} /SYMBOLS /LABELS"
 suffix="${2:-".html"}"
 
 # This is a list of the .raw.html files (omitting their suffix)
 # that use set.mm conventions to generate non-raw versions (most of them)
-setmm_raw='mmcomplex mmnatded mmset mmdeduction mmzfcnd mmnf'
+setmm_raw='mmcomplex mmnatded mmset mmdeduction mmzfcnd'
 
 # Echo the metamath commands necessary to
 # generate files from .raw files listed in $2 using db conventions of $1
@@ -42,5 +42,11 @@ generate_files_using_convention() {
   echo quit
 }
 
-generate_files_using_convention 'set.mm' "$setmm_raw" | metamath
-generate_files_using_convention 'iset.mm' 'mmil' | metamath
+generate_files_using_convention 'set.mm' "$setmm_raw" | metamath | tee ,errs
+generate_files_using_convention 'iset.mm' 'mmil' | metamath | tee -a ,errs
+generate_files_using_convention 'nf.mm' 'mmnf' | metamath | tee -a ,errs
+
+# Return nonzero error code if "Warning" or "Error" found in the output.
+echo
+echo 'RECAP: The following warnings and errors were found:'
+! grep -E '^\?(Warning|Error): ' ,errs

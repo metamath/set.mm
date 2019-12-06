@@ -109,11 +109,12 @@ headway various proof systems have made in mathematics, Coq and Mizar
 are two of the most successful systems in use today (Wiedijk,
 2007)".</p>
 
-<p>Currently there are <b>71</b> proofs proven by Metamath from this list of
-100.  As of 2019-03-10 this number of proofs is more than
+<p>Currently there are <b>72</b> proofs proven by Metamath from this list of
+100.  As of 2019-11-25 this number of proofs is more than
 Coq (69), Mizar (69),
-ProofPower (43), nqthm/ACL2 (18), PVS (16), and NuPRL/MetaPRL (8);
-it is short of only Isabelle (81) and HOL Light (86).
+ProofPower (43), Lean (29),
+nqthm/ACL2 (18), PVS (17), and NuPRL/MetaPRL (8);
+it is short of only Isabelle (82) and HOL Light (86).
 This is very good, especially considering that there had been no significant
 effort until 2014 to prove theorems from this list of 100.
 In this page, you can see the
@@ -125,18 +126,38 @@ metamath proofs.
 href="https://docs.google.com/spreadsheets/d/1jcLOp_jF4sPrVPdPedL_ZWebXp8oYEQOSmbWb168YHE"
 >Some graphs showing Metamath 100 progress are available</a> (click the
 Authors tab for a pie chart).
-
 </p>
 
-<p> Like all Metamath proofs, all reasoning is done directly in the
+<p>Like all Metamath proofs, all reasoning is done directly in the
 proof itself rather than by algorithms embedded in the verification
 program.  As a result, the proofs are completely transparent with
 nothing hidden from the user, and every step can be followed through a
-hyperlink to its corresponding proof or definition.  What's more, all of
+hyperlink to its corresponding proof or definition.
+Therefore, the Metamath Proof Explorer (MPE aka set.mm) database
+is the <i>largest</i> database of formally-verified mathematics
+that records every step of a proof by directly
+referring to only an axiom or previous proof
+(many competing databases listed above
+only record tactics that record how to
+rediscover the proof, instead of recording
+the specific proven steps actually used in the proof).
+</p>
+
+<p>
+The theorems in MPE are routinely verified by 5 different programs
+written in 5 different programming languages by more than 5 different people.
+This provides very strong justification in believing
+that the proofs are correct.
+</p>
+
+<p>
+What's more, all of
 the proofs listed here are current and verified with the current
-versions of Metamath tools.  This is not the case with some
+versions of Metamath tools.
+This is not the case with some
 other systems, where older proofs have not always been kept synchronized
 with the current system and thus have become essentially lost.
+</p>
 
 <!--
 This is different from some other systems.
@@ -146,12 +167,12 @@ formal proofs), so its proof is uncheckable with current tools and
 essentially lost.
 -->
 
+<p>
 Since the kernel of Metamath is extremely small and rarely changes, the
-underlying Metamath language (as implemented by a dozen
-independently-written verifiers) is very stable over time.
-</p>
-
-<p>The entire
+underlying Metamath language (as implemented by over a dozen
+independently-written verifiers) is very stable over time
+and can be verified very rapidly.
+The entire
 content of  <A HREF="index.html#mmprog">set.mm</A>
 set theory database can be verified in less than 5 sec
 with the <A HREF="index.html#mmprog">metamath program</A> and in 0.7 sec
@@ -170,8 +191,19 @@ involves 3014 theorems to derive starting from the ZFC axioms.)</p>
 <p id="done">Here is the list of the <a
 href="http://www.metamath.org/">Metamath</a> proofs that are available
 from this list of 100, along with credit to the individual(s) who
-created the Metamath formalization.  Please email missing entries to <a
+created the Metamath formalization.
+Almost all of these proofs are from the <a
+href="http://us.metamath.org/mpeuni/mmset.html">Metamath Proof Explorer</a>,
+aka database set.mm, which is based on classical logic.
+However, there are some proofs available in the <a
+href="http://us.metamath.org/ileuni/mmil.html">Intuitionistic Logic Explorer</a>,
+aka database iset.mm, which uses intuitionistic logic instead.
+Please email missing entries to <a
 href="email.html">Norm Megill</a>!
+
+The intuitionistic logic explorer (iset.mm) database also includes <a
+href="http://us.metamath.org/ileuni/finds.html">finds</a> and <a
+href="http://us.metamath.org/ileuni/findes.html">findes</a>.
 
 <p><a name="developers"></a><font size=-1>Note for potential
 contributors:  The development tools most people use, in addition to a
@@ -248,7 +280,10 @@ by Mario Carneiro, 2014-09-03)</li>
 
 <!-- 11th added to list -->
 <li><a name="17">17</a>.  De Moivre's Theorem (<a
-href="mpeuni/demoivre.html">demoivre</a>, by Steve Rodriguez, 2006-11-1)</li>
+href="mpeuni/demoivreALT.html">demoivreALT</a>, by Steve Rodriguez, 2006-11-10).
+See also the later proof <a
+href="mpeuni/demoivre.html">demoivre</a> (by Norman Megill, 2007-07-24),
+which is shorter and more general but uses the exponential function.</li>
 
 <!-- 40th added to list -->
 <li><a name="18">18</a>. Liouville's Theorem and the Construction
@@ -345,6 +380,11 @@ by Mario Carneiro, 2015-05-06)</li>
 href="mpeuni/dirith.html">dirith</a>,
 by Mario Carneiro, 2016-05-12)</li>
 
+<!-- 72nd added to list -->
+<li><a name="49">49</a>.  The Cayley-Hamilton Theorem (<a
+href="mpeuni/cayleyhamilton.html">cayleyhamilton</a>,
+by Alexander van der Vekens, 2019-11-25)</li>
+
 <!-- 42th added to list -->
 <li><a name="51">51</a>.  Wilson's Theorem (<a
 href="mpeuni/wilth.html">wilth</a>,
@@ -401,8 +441,9 @@ by Saveliy Skresanov, 2017-01-01)</li>
 href="mpeuni/geoser.html">geoser</a>, by Norman Megill, 2006-05-09)</li>
 
 <!-- 12th added to list -->
+<!-- Note: arisum was originally named fnsmnt -->
 <li><a name="68">68</a>.  Sum of an arithmetic series (<a
-href="mpeuni/arisum.html">arisum</a>, by Norman Megill, 2006-11-16) - arisum
+href="mpeuni/arisum.html">arisum</a>, by Frédéric Liné, 2006-11-16) - arisum
 is not fully general, but it would be straightforward to enhance.</li>
 
 <!-- 16th added to list -->
@@ -434,10 +475,18 @@ by Mario Carneiro, 2015-01-28)</li>
 
 <!-- 2nd added to list -->
 <li><a name="74">74</a>.  The Principle of Mathematical Induction (<a
-href="mpeuni/findes.html">findes</a>, by Raph Levien, 2003-07-09) - there
-are many versions of Mathematical Induction in set.mm; another version
-is <a href="mpeuni/nnind.html">nnind</a> (by Norman
-Megill, 1997-01-10).</li>
+href="mpeuni/finds.html">finds</a>, by Norman Megill, 1995-04-14).
+There are many versions of Mathematical Induction in set.mm. Theorem <a
+href="mpeuni/findes.html">findes</a> (by Raph Levien, 9-Jul-2003)
+is a compact and more traditional-looking version with explicit substitution.
+Another alternative is <a
+href="mpeuni/nnind.html">nnind</a> (by Norman Megill, 10-Jan-1997),
+which uses natural numbers instead of ordinal numbers and might be
+less obscure for non-mathematicians.
+The intuitionistic logic explorer (iset.mm) database also includes <a
+href="http://us.metamath.org/ileuni/finds.html">finds</a> and <a
+href="http://us.metamath.org/ileuni/findes.html">findes</a>.
+</li>
 
 <!-- 36th added to list -->
 <li><a name="75">75</a>. The Mean Value Theorem (<a
@@ -578,7 +627,6 @@ href="mpeuni/stowei.html">stowei</a>, by Glauco Siliprandi,
 <li><a name="41">41</a>.  Puiseux's Theorem</li>
 <li><a name="43">43</a>.  The Isoperimetric Theorem</li>
 <li><a name="47">47</a>.  The Central Limit Theorem</li>
-<li><a name="49">49</a>.  The Cayley-Hamilton Theorem</li>
 <li><a name="50">50</a>.  The Number of Platonic Solids</li>
 <li><a name="53">53</a>.  <i>&pi;</i> is Transcendental</li>
 <li><a name="56">56</a>.  The Hermite-Lindemann Transcendence Theorem</li>

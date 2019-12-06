@@ -1,0 +1,38 @@
+#!/bin/sh
+# download-avatars - Reload files given by "url" file
+# (C) 2019 David A. Wheeler
+# This script is released as open source software under the MIT license.
+# SPDX-License-Identifier: MIT
+#
+# Typical execution:
+# scripts/download-avatars people
+#
+# If an avatar in an external location has updated, but is listed in 'urls',
+# just remove the old avatar and run this program to reload it.
+
+# Protect against common shell script mistakes
+set -e -u
+
+if [ "$#" -ne 1 ] || ! [ -d "$1" ] ; then
+  echo 'Requires directory name' >&2
+  exit 1
+fi
+
+cd "$1"
+if ! [ -f 'urls' ] ; then
+  echo 'Directory must have a file named "urls"' >&2
+  exit 1
+fi
+
+# Process "urls" file line-by-line, skipping "#..." comments and empty lines.
+# Each line should say URL <space> result-filename
+sed -e '/^#/d' -e '/^$/d' urls | while read url result; do
+  if [ -z "$url" ] || [ -z "$result" ]; then
+    echo "Error: URL ($url) and result ($result) must both be non-blank" >&2
+    exit 1
+  fi
+  if ! [ -f "$result" ] ; then
+    echo "Loading <$url> into <$result>"
+    curl "$url" > "$result"
+  fi
+done

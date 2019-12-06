@@ -64,6 +64,8 @@ img { margin-bottom: -4px }
 <MENU>
 <LI> <A HREF="#introduction">Introduction to deduction</A></LI>
 <LI> <A HREF="#current">Current approach to deductions</A></LI>
+<LI> <A HREF="#conversion">Conversion</A></LI>
+<LI> <A HREF="#special-cases">Special cases</A></LI>
 <LI> <A HREF="#introduction-natural-deduction">Introduction to natural deduction</A></LI>
 <LI> <A HREF="#natural-deduction-metamath">Natural deduction in the Metamath Proof Explorer (MPE)</A></LI>
 <LI> <A HREF="#other-natural-deduction">Other Approaches to Natural Deduction in Metamath</A></LI>
@@ -252,7 +254,7 @@ You can see this by comparing
 <A HREF="pm2.43i.html">pm2.43i</A> (inference form), and
 <A HREF="pm2.43d.html">pm2.43d</A> (deduction form).
 
-<P id="conversion">
+<P><HR NOSHADE SIZE=1><A NAME="conversion"></A><B><FONT COLOR="#006633">Conversion</FONT></B> &nbsp;&nbsp;&nbsp;
 Once you have an assertion in deduction form, you can easily convert it
 to inference form or closed form:
 <UL>
@@ -314,8 +316,96 @@ the context necessary to support
 For example, if the antecedent is a conjunction, the other terms can
 represent the temporary assumptions that are sometimes used in
 natural deduction.
-Before we discuss how to do natural deduction in MPE, we will first
-explain what natural deduction is.
+Below we provide an
+<A HREF="#introduction-natural-deduction">introduction to
+natural deduction</A>, and then discussion how
+<A HREF="#natural-deduction-metamath">natural deduction is implemented
+in Metamath set.mm (and iset.mm)</A>.
+
+<P><HR NOSHADE SIZE=1><A NAME="special-cases"></A><B><FONT COLOR="#006633">Special cases</FONT></B> &nbsp;&nbsp;&nbsp;
+There are some types of hypotheses where we usually do not use
+a ` ph -> ` antecedent in a theorem's deduction form.
+Although this may weaken the theorem slightly, omitting this
+antecedent where it is not normally needed can make proofs using the theorem
+slightly shorter by not having to apply ~ a1i in order to match its
+hypotheses.
+Here they are, along with a discussion of possible methods to strengthen the
+deduction form with ` ph -> ` on one of these hypotheses if needed.
+
+<OL>
+<LI>Existence (sethood) hypothesis, e.g., a $e of the form ` |- A e. _V ` .
+To add ` ph -> ` if desired,
+first turn the ` A e. _V ` into an antecedent using ~ vtoclg
+and friends as in e.g. ~ unisng , then convert from this (semi-)closed form
+back to deduction form.
+
+<LI>Not-free-in hypothesis, e.g., a $e of the form
+` |- F/ x ps ` or ` |- F/_ x A ` .
+It is very rare that you really need something of the form
+` ph -> F/ x ps ` instead in set.mm, because of the
+` A e. V ` , ` B e. V `
+assumptions that are needed in order to substitute a variable for a class.
+(You can substitute a wff for a variable, if the universe has at least two
+elements; for example you can use ` (/) e. x ` as a substitute for
+variable ` ph ` ,
+where we take ` x ` to be the set ` { y e. 1o | ph } ` .)
+The special case where ` ps ` is ` ph ` is given by ~ nfdi .
+<BR>
+It is possible to prove the not-free theorem for a term constructor given
+the equality theorem, provided you can substitute the terms for variables.
+Mario demonstrates this in
+<A HREF="https://github.com/digama0/mm0/blob/master/examples/peano.mm1#L1019-L1024"
+>nfnlem of peano.mm1</A>, as follows.
+Suppose we have a constructor "foo ` ( A , B )`" and we want to prove
+` ( A e. V /\ B e. V /\ F/_ x A /\ F/_ x B ) -> F/_ x ` foo ` ( A , B ) ` .
+We can let ` y = A ` and ` z = B ` be new dummies, then
+` F/_ x ` foo ` ( A , B ) <-> F/_ x ` foo ` ( y , z ) ` , but
+the latter is true by ~ nfv .
+The ` F/_ x A ` and ` F/_ B ` theorems come up when we want to prove
+` ( y = A /\ z = B ) -> ( F/_ x ` foo ` ( y , z ) <-> F/_ x ` foo ` ( A , B ) ) ` ;
+the nf equality step here requires that the context be free from
+` x ` , so you need a special version of the theorem so that this can be given
+as a hypothesis.
+In the worst case, the
+theorem may have to be reproved back through a number of previous
+theorems. We do have many "nf*d" theorems that will assist this.
+In practice this is practically never needed.
+
+<LI>Definitional hypothesis, e.g., a $e of the form
+` |- ( ps <-> ( ch /\ th ) ) ` or ` |- A = ( B + C ) ` .
+To prepend ` ph -> ` , eliminate the original hypothesis with ~ biid or ~ eqid ,
+then rewrite the proof where the steps are simplified with the new ` ph -> `
+prefix form of the definitional hypotheses. See
+<A HREF="https://groups.google.com/d/msg/metamath/V6QPBWzqvu4/jmY9kwLWCgAJ"
+>Mario's discussion about this</A>.
+
+<LI>Implicit substitution hypothesis, e.g., a $e of the form
+` |- ( x = y -> ( ph <-> ps ) ) ` or ` |- ( x = y -> A = B ) ` .
+To prepend ` ph -> ` ,
+convert the theorem to explicit substitution form, then convert
+back to implicit substitution form.
+This can be somewhat tedious, but at
+least it can be done in principle. See ~ fsumshftd for an example,
+<A HREF="https://groups.google.com/d/msg/metamath/vt6SqLrxEfo/tmogkcRPEgAJ"
+>as discussed in the mailing list</A>.
+<BR>
+This conversion is considerably less tedious if ` A ` and ` B `
+are closed terms already, i.e., you are applying the theorem in some context
+rather than just trying to prove ~ fsumshftd itself
+(which doesn't know what ` A ` and ` B ` are).
+For instance, if you want to prove
+` |- sum_ x e. ( 1 ... 3 ) ( ( x + 1 ) ^ 2 ) = sum_ y e. ( 2 ... 4 ) ( y ^ 2 ) `
+by shifting the left sum to the right, you first apply ~ fsumshft without any
+funny business in the substitution to prove
+` |- sum_ x e. ( 1 ... 3 ) ( ( x + 1 ) ^ 2 ) = sum_ y e. ( 2 ... 4 ) ( ( ( y - 1 ) + 1 ) ^ 2 ) ` ,
+then use ~ sumeq2dv and equality theorems to prove
+` ( ( ( y - 1 ) + 1 ) ^ 2 ) = ( y ^ 2 ) ` in the current context.
+</OL>
+
+<P>
+As mentioned earlier, the ` ph -> ` prefix can be used to support
+natural deduction.
+To understand that, let's first briefly examine natural deduction.
 
 <P><HR NOSHADE SIZE=1><A NAME="introduction-natural-deduction"></A><B><FONT COLOR="#006633">Introduction to Natural Deduction</FONT></B> &nbsp;&nbsp;&nbsp;
 Natural deduction is a widely-taught approach to logic.
@@ -503,7 +593,7 @@ HREF="https://web.archive.org/web/20120402081711/http://wiki.planetmath.org/cgi-
 deduction</A> [retrieved 24-Aug-2018].
 
 He reports that his system was inspired by a slide show,
-<A HREF="http://web.archive.org/web/20070206192038/http://www.ags.uni-sb.de/~chris/papers/2002-pisa.pdf">"From Natural Deduction to Sequent Calculus (and back)"</A>.
+<A HREF="http://web.archive.org/web/20070206192038/http://www.ags.uni-sb.de/%7Echris/papers/2002-pisa.pdf">"From Natural Deduction to Sequent Calculus (and back)"</A>.
 Practically this system is equivalent to Mario Carneiro's work.
 
 <P><HR NOSHADE SIZE=1><A NAME="when-use-deduction-theorem-instead"></A><B><FONT COLOR="#006633">When to use deduction form instead</FONT></B> &nbsp;&nbsp;&nbsp;
