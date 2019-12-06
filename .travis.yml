@@ -68,7 +68,8 @@ script:
   - scripts/verify-mmj2 --setparser 'mmj.verify.LRParser' iset.mm
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./set.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
   - ~/.cargo/bin/smetamath --verify --split --jobs 4 --timing ./iset.mm 2>&1 | tee smm.log && [ `egrep '(:Error:|:Warning:)' < smm.log; echo $?` -eq 1 ]
-  - scripts/check-raw-html set.mm *.raw.html
+  - scripts/check-raw-html set.mm mmcomplex.raw.html mmdeduction.raw.html mmnatded.raw.html mmnf.raw.html mmset.raw.html mmzfcnd.raw.html
+  - scripts/check-raw-html iset.mm mmil.raw.html
   - echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" set.mm
   - echo 'Looking for tabs (not allowed)...' && ! grep "$(printf '\t')" iset.mm
   - ./checkmm set.mm
