@@ -62545,10 +62545,10 @@ $)
   dcdc $p |- ( DECID DECID ph <-> DECID ph ) $=
     ( wdc wn wo df-dc nndc biorfi bitr4i ) ABZBIICZDIIEJIAFGH $.
 
-  $( Definition of the testability predicate ` TEST ` .  This definition is not very useful in terms of
-     number of tokens saved and readability added, since one can
-     replace everywhere the string ` TEST ` with the string ` DECID -. ` .
-     (Contributed by BJ, 9-Oct-2019.) $)
+  $( Definition of the testability predicate ` TEST ` .  This definition is not
+     very useful in terms of number of tokens saved and readability added,
+     since one can replace everywhere the string ` TEST ` with the string
+     ` DECID -. ` .  (Contributed by BJ, 9-Oct-2019.) $)
   bj-df-test $p |- ( TEST ph <-> DECID -. ph ) $=
     ( wtest wn wo wdc df-test df-dc bitr4i ) ABACZICDIEAFIGH $.
 
@@ -63260,7 +63260,8 @@ $)
     bdsbc $p |- Bdd [. y / x ]. ph $=
       ( wsb cv wsbc ax-bdsb sbsbc bd0 ) ABCEABCFGABCDHABCIJ $.
 
-    $( Alternate proof of ~ bdsbc .  (Contributed by BJ, 16-Oct-2019.)  (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    $( Alternate proof of ~ bdsbc .  (Contributed by BJ, 16-Oct-2019.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     bdsbcALT $p |- Bdd [. y / x ]. ph $=
       ( cv cab wcel wsbc bdab df-sbc bd0r ) CEZABFGABLHACBDIABLJK $.
   $}
