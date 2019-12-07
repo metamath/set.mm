@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Dec-2019
+$( iset.mm - Version of 7-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -59320,6 +59320,17 @@ $)
       UUHTYBYCYEYFVRVTWAYAWQYDWRYGJXNXTWQYDPZXQXTXNUUSWNWOWGWHWBVOWCXQXTWRYGPZX
       NXTXQUUTWNWOWJWKWBVOWFUOVPWD $.
   $}
+
+  $( Ordering property of addition for positive fractions.  (Contributed by Jim
+     Kingdon, 7-Dec-2019.) $)
+  lt2addnq $p |- ( ( ( A e. Q. /\ B e. Q. ) /\ ( C e. Q. /\ D e. Q. ) ) ->
+      ( ( A <Q B /\ C <Q D ) -> ( A +Q C ) <Q ( B +Q D ) ) ) $=
+    ( cnq wcel wa cltq wbr cplq co ltanqg 3expa adantrr wceq addcomnqg ad2ant2r
+    wb ancoms ad2ant2lr breq12d bitrd adantll anbi12d ltsonq ltrelnq syl6bi
+    sotri ) AEFZBEFZGZCEFZDEFZGZGZABHIZCDHIZGACJKZBCJKZHIZUSBDJKZHIZGURVAHIUOUP
+    UTUQVBUOUPCAJKZCBJKZHIZUTUKULUPVERZUMUIUJULVFABCLMNUOVCURVDUSHUIULVCUROZUJU
+    MULUIVGCAPSQUJULVDUSOZUIUMULUJVHCBPSTUAUBUJUNUQVBRZUIUNUJVIULUMUJVICDBLMSUC
+    UDURUSVAHEUEUFUHUG $.
 
   $( One is less than two (one plus one).  (Contributed by NM, 13-Mar-1996.)
      (Revised by Mario Carneiro, 10-May-2013.) $)
