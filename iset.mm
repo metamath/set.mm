@@ -61689,6 +61689,18 @@ $)
         >. ) $=
       ( vf vg vh vw vv cmp cmq df-imp cv mulclnq genipv ) FGHIJDEKLCBAIJHGFMGNH
       NOP $.
+
+    $( Domain of addition on positive reals.  (Contributed by NM,
+       18-Nov-1995.) $)
+    dmplp $p |- dom +P. = ( P. X. P. ) $=
+      ( vv vw vz vx vy cpp cplq df-iplp cv addclnq genipdm ) ABCDEFGDECBAHBICIJ
+      K $.
+
+    $( Domain of multiplication on positive reals.  (Contributed by NM,
+       18-Nov-1995.) $)
+    dmmp $p |- dom .P. = ( P. X. P. ) $=
+      ( vv vw vz vx vy cmp cmq df-imp cv mulclnq genipdm ) ABCDEFGDECBAHBICIJK
+      $.
   $}
 
 $(
