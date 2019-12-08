@@ -1,4 +1,4 @@
-$( iset.mm - Version of 3-Dec-2019
+$( iset.mm - Version of 7-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -59321,6 +59321,17 @@ $)
       NXTXQUUTWNWOWJWKWBVOWFUOVPWD $.
   $}
 
+  $( Ordering property of addition for positive fractions.  (Contributed by Jim
+     Kingdon, 7-Dec-2019.) $)
+  lt2addnq $p |- ( ( ( A e. Q. /\ B e. Q. ) /\ ( C e. Q. /\ D e. Q. ) ) ->
+      ( ( A <Q B /\ C <Q D ) -> ( A +Q C ) <Q ( B +Q D ) ) ) $=
+    ( cnq wcel wa cltq wbr cplq co ltanqg 3expa adantrr wceq addcomnqg ad2ant2r
+    wb ancoms ad2ant2lr breq12d bitrd adantll anbi12d ltsonq ltrelnq syl6bi
+    sotri ) AEFZBEFZGZCEFZDEFZGZGZABHIZCDHIZGACJKZBCJKZHIZUSBDJKZHIZGURVAHIUOUP
+    UTUQVBUOUPCAJKZCBJKZHIZUTUKULUPVERZUMUIUJULVFABCLMNUOVCURVDUSHUIULVCUROZUJU
+    MULUIVGCAPSQUJULVDUSOZUIUMULUJVHCBPSTUAUBUJUNUQVBRZUIUNUJVIULUMUJVICDBLMSUC
+    UDURUSVAHEUEUFUHUG $.
+
   $( One is less than two (one plus one).  (Contributed by NM, 13-Mar-1996.)
      (Revised by Mario Carneiro, 10-May-2013.) $)
   1lt2nq $p |- 1Q <Q ( 1Q +Q 1Q ) $=
@@ -60723,6 +60734,19 @@ $)
       UDQANPENPZUEHWJCDAEUFWJWOWPWQWMUGUHWIWKEBNWDBUNZWEVKWHWBWDBDUIWRWGVSANWRW
       FVOVNWDBVMJUJUKULUMUOVKWBUPUQURUSVSANSUTVPVTAVSVRVOHZVNHVPVTVOWSVNVOVRVOW
       CVRBVMNNJVAVBVCVDVEVOVNVFVRVOVNVGVHVITVOADST $.
+
+    $( An upper cut has no smallest member.  (Contributed by Jim Kingdon,
+       7-Nov-2019.) $)
+    prnminu $p |- ( ( <. L , U >. e. P. /\ B e. U ) -> E. x e. U x <Q B ) $=
+      ( vy cop wcel wa cv cltq wbr wex wrex cnq wb wral wi wss df-rex sylibr wn
+      cnp elprnqu wo w3a elinp simpr1r sylbi eleq1 breq2 anbi1d rexbidv bibi12d
+      wceq rspcv bi1 syl56 impd mpcom sylib ltrelnq brel simpld pm4.71ri anbi1i
+      ancom anass 3bitr3i exbii ) DCFUBGZBCGZHZAIZCGZVMBJKZHZALZVOACMVLVMNGZVOV
+      NHZHZALZVQVLVSANMZWABNGZVLWBBCDUCWCVJVKWBVJEIZCGZVMWDJKZVNHZANMZOZENPZWCV
+      KWBOZVKWBQVJDNRCNRHVMDGZANMWEENMHHZWLWFWDDGHENMOANPZWJHWLVNHUAANPZWFWLWEU
+      DQENPANPZUEHWJCDEAUFWNWJWOWPWMUGUHWIWKEBNWDBUNZWEVKWHWBWDBCUIWQWGVSANWQWF
+      VOVNWDBVMJUJUKULUMUOVKWBUPUQURUSVSANSUTVPVTAVSVRVOHZVNHVPVTVOWRVNVOVRVOVR
+      WCVMBNNJVAVBVCVDVEVOVNVFVRVOVNVGVHVITVOACST $.
   $}
 
   ${
@@ -61182,6 +61206,22 @@ $)
         z e. ( 1st ` v ) /\ x = ( y G z ) ) } ,
         { x e. Q. | E. y e. Q. E. z e. Q. ( y e. ( 2nd ` w ) /\
         z e. ( 2nd ` v ) /\ x = ( y G z ) ) } >. ) $.
+    $( Set containing the result of adding or multiplying positive reals.
+       (Contributed by Jim Kingdon, 5-Dec-2019.) $)
+    genpelxp $p |- ( ( A e. P. /\ B e. P. ) ->
+        ( A F B ) e. ( ~P Q. X. ~P Q. ) ) $=
+      ( cnp wcel cv c1st cfv w3a cnq wrex crab c2nd wceq cop cpw cxp wss ssrab2
+      wa co nqex elpw2 mpbir opelxpi mp2an fveq2 eleq2d 3anbi1d rabbidv opeq12d
+      2rexbidv 3anbi2d ovmpt2g mp3an3 syl6eqel ) FKLZGKLZUGFGHUHZBMZFNOZLZCMZGN
+      OZLZAMVGVJIUHUAZPZCQRBQRZAQSZVGFTOZLZVJGTOZLZVMPZCQRBQRZAQSZUBZQUCZWEUDZV
+      DVEWDWFLZVFWDUAVPWELZWCWELZWGWHVPQUEVOAQUFVPQUIUJUKWIWCQUEWBAQUFWCQUIUJUK
+      VPWCWEWEULUMZDEFGKKVGDMZNOZLZVJEMZNOZLZVMPZCQRBQRZAQSZVGWKTOZLZVJWNTOZLZV
+      MPZCQRBQRZAQSZUBWDHVIWPVMPZCQRBQRZAQSZVRXCVMPZCQRBQRZAQSZUBWFWKFUAZWSXIXF
+      XLXMWRXHAQXMWQXGBCQQXMWMVIWPVMXMWLVHVGWKFNUNUOUPUSUQXMXEXKAQXMXDXJBCQQXMX
+      AVRXCVMXMWTVQVGWKFTUNUOUPUSUQURWNGUAZXIVPXLWCXNXHVOAQXNXGVNBCQQXNWPVLVIVM
+      XNWOVKVJWNGNUNUOUTUSUQXNXKWBAQXNXJWABCQQXNXCVTVRVMXNXBVSVJWNGTUNUOUTUSUQU
+      RJVAVBWJVC $.
+
     genpelvl.2 $e |- ( ( y e. Q. /\ z e. Q. ) -> ( y G z ) e. Q. ) $.
     $( Membership in lower cut of general operation (addition or
        multiplication) on positive reals.  (Contributed by Jim Kingdon,
@@ -61222,6 +61262,15 @@ $)
       syl5ibr ) HFPQZRZIGPQZRZSHIKTZFGJTPQRFUARGUARSUNNUBOUBKTUCOULUDNUJUDZUKUM
       UNUNUCUOUNUENOUJULHIUNKUFUGABCDEFGUNNOJKLMUHUI $.
 
+    $( Pre-closure law for general operation on upper cuts.  (Contributed by
+       Jim Kingdon, 7-Nov-2019.) $)
+    genppreclu $p |- ( ( A e. P. /\ B e. P. ) ->
+        ( ( C e. ( 2nd ` A ) /\ D e. ( 2nd ` B ) ) ->
+        ( C G D ) e. ( 2nd ` ( A F B ) ) ) ) $=
+      ( vg vh c2nd cfv wcel wa co cnp cv wceq wrex eqid rspceov mp3an3 genpelvu
+      syl5ibr ) HFPQZRZIGPQZRZSHIKTZFGJTPQRFUARGUARSUNNUBOUBKTUCOULUDNUJUDZUKUM
+      UNUNUCUOUNUENOUJULHIUNKUFUGABCDEFGUNNOJKLMUHUI $.
+
     $( Domain of general operation on positive reals.  (Contributed by Jim
        Kingdon, 2-Oct-2019.) $)
     genipdm $p |- dom F = ( P. X. P. ) $=
@@ -61258,6 +61307,19 @@ $)
       PZQZWKTPVHVMVIWDWOVHVMQWMVIWDQWNVHVTVMWMWAVKVSVLUOUPVIWGWDWNWHWBWFWCUOUPU
       QURBCVKWBTILUSVAWJVNWKUTZQVNWKVOWJWPVBVCVDVEVFVGVG $.
 
+    $( The upper cut produced by addition or multiplication on positive reals
+       is inhabited.  (Contributed by Jim Kingdon, 5-Dec-2019.) $)
+    genpmu $p |- ( ( A e. P. /\ B e. P. ) ->
+        E. q e. Q. q e. ( 2nd ` ( A F B ) ) ) $=
+      ( vf vg cnp wcel wa cv cfv cnq c2nd co wrex wex c1st prop prmu rexex 3syl
+      cop adantr ad2antlr genppreclu imp elprnqu sylan anim12i an4s caovcl wceq
+      syl simpr eleq1d rspcedv mpd anassrs exlimddv ) FOPZGOPZQZMRZFUASZPZJRZFG
+      HUBUASZPZJTUCZMVHVMMUDZVIVHFUESZVLUJOPZVMMTUCVRFUFZMVLVSUGVMMTUHUIUKVJVMQ
+      NRZGUASZPZVQNVIWDNUDZVHVMVIGUESZWCUJOPZWDNTUCWEGUFZNWCWFUGWDNTUHUIULVJVMW
+      DVQVJVMWDQZQZVKWBIUBZVOPZVQVJWIWLABCDEFGVKWBHIKLUMUNWJVPWLJWKTWJVKTPZWBTP
+      ZQZWKTPVHVMVIWDWOVHVMQWMVIWDQWNVHVTVMWMWAVKVLVSUOUPVIWGWDWNWHWBWCWFUOUPUQ
+      URBCVKWBTILUSVAWJVNWKUTZQVNWKVOWJWPVBVCVDVEVFVGVG $.
+
     ${
       $d F h $.
       genpcdl.2 $e |- ( ( ( ( A e. P. /\ g e. ( 1st ` A ) ) /\
@@ -61274,6 +61336,24 @@ $)
         HVJVQVSVJVQQZVOVLIRZJRZLUKZUIZJGUCUDZUJIFUCUDZUJZVRVJVOWGVAVQABCDEFGVLI
         JKLMNULUMVTWDVRIJWFWEVJWAWFPZWBWEPZQVQWDVRTZVHWHVIWIVQWJTVHWHQVIWIQQZVQ
         WDVRWDVMVKWCSUBZWKVQQVPWDVMWLVLWCVKSUNUOOUPUQVBURUSUTVCVDVEVFVG $.
+    $}
+
+    ${
+      $d F h $.
+      genpcuu.2 $e |- ( ( ( ( A e. P. /\ g e. ( 2nd ` A ) ) /\
+                       ( B e. P. /\ h e. ( 2nd ` B ) ) ) /\ x e. Q. ) ->
+                       ( ( g G h ) <Q x -> x e. ( 2nd ` ( A F B ) ) ) ) $.
+      $( Upward closure of an operation on positive reals.  (Contributed by Jim
+         Kingdon, 8-Nov-2019.) $)
+      genpcuu $p |- ( ( A e. P. /\ B e. P. ) -> ( f e. ( 2nd ` ( A F B ) ) ->
+                   ( f <Q x -> x e. ( 2nd ` ( A F B ) ) ) ) ) $=
+        ( wcel wa cv cltq wi cnp wbr c2nd cfv cnq ltrelnq brel simprd wceq wrex
+        co genpelvu adantr breq1 biimpd sylan9r exp31 impancom rexlimdvv sylbid
+        wb an4s ex syl5 com34 pm2.43d com23 ) FUAPZGUAPZQZHRZARZSUBZVKFGKUKUCUD
+        ZPZVLVNPZVJVMVOVPTVJVMVOVMVPVMVLUEPZVJVOVMVPTZTZVMVKUEPVQVKVLUEUESUFUGU
+        HVJVQVSVJVQQZVOVKIRZJRZLUKZUIZJGUCUDZUJIFUCUDZUJZVRVJVOWGVAVQABCDEFGVKI
+        JKLMNULUMVTWDVRIJWFWEVJWAWFPZWBWEPZQVQWDVRTZVHWHVIWIVQWJTVHWHQVIWIQQZVQ
+        WDVRWDVMWCVLSUBZWKVQQVPWDVMWLVKWCVLSUNUOOUPUQVBURUSUTVCVDVEVFVG $.
     $}
 
     ${
@@ -61317,6 +61397,46 @@ $)
     $}
 
     ${
+      $d A a b c d q r v w x y z $.  $d B a b c d f g h q r v w x y z $.
+      $d C f g h x y z $.  $d D f g h x y z $.
+      $d F a b c d f g h q r v w x y z $.  $d G a b c d f g h q r v w x y z $.
+      genprndu.ord $e |- ( ( x e. Q. /\ y e. Q. /\ z e. Q. ) ->
+        ( x <Q y <-> ( z G x ) <Q ( z G y ) ) ) $.
+      genprndu.com $e |- ( ( x e. Q. /\ y e. Q. ) ->
+        ( x G y ) = ( y G x ) ) $.
+      genprndu.upper $e |- ( ( ( ( A e. P. /\ g e. ( 2nd ` A ) ) /\
+                       ( B e. P. /\ h e. ( 2nd ` B ) ) ) /\ x e. Q. ) ->
+                       ( ( g G h ) <Q x -> x e. ( 2nd ` ( A F B ) ) ) ) $.
+      $( The upper cut produced by addition or multiplication on positive reals
+         is rounded.  (Contributed by Jim Kingdon, 7-Oct-2019.) $)
+      genprndu $p |- ( ( A e. P. /\ B e. P. ) ->
+          A. r e. Q. ( r e. ( 2nd ` ( A F B ) ) <->
+            E. q e. Q. ( q <Q r /\ q e. ( 2nd ` ( A F B ) ) ) ) ) $=
+        ( wcel wa vc vd va vb cnp cv co c2nd cfv cltq wbr wrex wb wceq genpelvu
+        cnq wex r2ex syl6bb biimpa adantrl c1st prop prnminu sylan anim12i an4s
+        wi cop reeanv sylibr genplt2i reximi syl adantrr breq2 biimprd ad2antll
+        reximdv mpd exlimdvv adantr genppreclu imp elprnqu caovcl breq1 anbi12d
+        eleq1 adantl rspcedv mpan2d rexlimdvva expr wal genpcuu alrimdv imbi12d
+        ex cbvalv syl6ib syl6 impd ancomsd ad2antrr rexlimdva impbid ralrimiva
+        sp ) FUESZGUESZTZLUFZFGJUGUHUIZSZMUFZXMUJUKZXPXNSZTZMUPULZUMLUPXLXMUPSZ
+        TZXOXTXLYAXOXTXLYAXOTZTZUAUFZUBUFZKUGZXMUJUKZUBGUHUIZULZUAFUHUIZULZXTYD
+        UCUFZYKSZUDUFZYISZTZXMYMYOKUGZUNZTZUDUQUCUQZYLXLXOUUAYAXLXOUUAXLXOYSUDY
+        IULUCYKULUUAABCDEFGXMUCUDJKNOUOYSUCUDYKYIURUSUTVAXLUUAYLVHYCXLYTYLUCUDX
+        LYTYLXLYTTYGYRUJUKZUBYIULZUAYKULZYLXLYQUUDYSXLYQTZYEYMUJUKZYFYOUJUKZTZU
+        BYIULZUAYKULZUUDUUEUUFUAYKULZUUGUBYIULZTZUUJXJYNXKYPUUMXJYNTUUKXKYPTUUL
+        XJFVBUIZYKVIUESZYNUUKFVCZUAYMYKUUNVDVEXKGVBUIZYIVIUESZYPUULGVCZUBYOYIUU
+        QVDVEVFVGUUFUUGUAUBYKYIVJVKUUIUUCUAYKUUHUUBUBYIABCYEYMYFYOKPQVLVMVMVNVO
+        YSUUDYLVHXLYQYSUUCYJUAYKYSUUBYHUBYIYSYHUUBXMYRYGUJVPVQVSVSVRVTWSWAWBVTX
+        LYLXTVHYCXLYHXTUAUBYKYIXLYEYKSZYFYISZTZTZYHYGXNSZXTXLUVBUVDABCDEFGYEYFJ
+        KNOWCWDUVCXSYHUVDTZMYGUPUVCYEUPSZYFUPSZTZYGUPSXJUUTXKUVAUVHXJUUTTUVFXKU
+        VATUVGXJUUOUUTUVFUUPYEYKUUNWEVEXKUURUVAUVGUUSYFYIUUQWEVEVFVGBCYEYFUPKOW
+        FVNXPYGUNZXSUVEUMUVCUVIXQYHXRUVDXPYGXMUJWGXPYGXNWIWHWJWKWLWMWBVTWNYBXSX
+        OMUPXLXSXOVHYAXPUPSXLXRXQXOXLXRXQXOXLXRXQXOVHZLWOZUVJXLXRXPAUFZUJUKZUVL
+        XNSZVHZAWOUVKXLXRUVOAABCDEFGMHIJKNORWPWQUVOUVJALUVLXMUNUVMXQUVNXOUVLXMX
+        PUJVPUVLXMXNWIWRWTXAUVJLXIXBXCXDXEXFXGXH $.
+    $}
+
+    ${
       $d A a b c d f g h q v w x y z $.  $d B a b c d f g h q v w x y z $.
       $d C f g h $.  $d D f g h $.  $d F a b c d f g q $.
       $d G a b c d f g h q v w x y z $.
@@ -61344,6 +61464,210 @@ $)
         XDXNXOXEVFVGVHVIABCXAXKXDXNIMNVJVKVLVMVPVNVQYFXHXRUIZYGUGYAYPWTXIXSYPXG
         XQWOXHXRVRVSVTYPXHXHVDVAYGXHVDUHWAWEWBXHXRXHVDWCWFVHWDWGWHWHWIWJWK $.
     $}
+  $}
+
+  ${
+    $d A x y z $.  $d B x y z $.  $d G w y z $.  $d L w y z $.  $d S w y z $.
+    $d U w y z $.  $d X w y z $.  $d g h u v w x y z $.
+    $( Lemma to prove downward closure in positive real addition.  (Contributed
+       by Jim Kingdon, 7-Dec-2019.) $)
+    addnqprllem $p |- ( ( ( <. L , U >. e. P. /\ G e. L ) /\ X e. Q. ) ->
+        ( X <Q S -> ( ( X .Q ( *Q ` S ) ) .Q G ) e. L ) ) $=
+      ( vy vz vw wcel wa cnq cltq wbr cmq co wb adantl cv syl2anc c1q cop simpr
+      cnp crq cfv ltrnqi ltrelnq brel simprd recclnq syl simplr syl3anc mulclnq
+      ltmnqg w3a elprnql ad2antrr wceq mulcomnqg caovord2d bitrd syl5ib recidnq
+      mpd oveq1d 1nq mpan mulidnq eqtrd sylan9eqr breq2d mpbid wi prcdnql ex )
+      DBUAUCICDIJZEKIZJZEALMZEAUDUEZNOZCNOZDIZVSVTJZWCCLMZWDWEWCEEUDUEZNOZCNOZL
+      MZWFWEVTWJVSVTUBVTWAWGLMZWEWJEAUFWEWKWBWHLMZWJWEWAKIZWGKIZVRWKWLPWEAKIZWM
+      WEVRWOVTVRWOJVSEAKKLUGUHQUIAUJUKZWEVRWNVQVRVTULZEUJUKZWQWAWGEUOUMWEFGHWBW
+      HCLKNFRZKIZGRZKIZHRZKIUPWSXALMXCWSNOXCXANOLMPWEWSXAXCUOQWEVRWMWBKIWQWPEWA
+      UNSWEVRWNWHKIWQWREWGUNSVQCKIZVRVTCBDUQURZWTXBJWSXANOXAWSNOUSWEWSXAUTQVAVB
+      VCVEWEXDVRWJWFPXEWQXDVRJWICWCLVRXDWITCNOZCVRWHTCNEVDVFXDXFCTNOZCTKIXDXFXG
+      USVGTCUTVHCVIVJVKVLSVMVQWFWDVNVRVTCWCBDVOURVEVP $.
+
+    $( Lemma to prove upward closure in positive real addition.  (Contributed
+       by Jim Kingdon, 7-Dec-2019.) $)
+    addnqprulem $p |- ( ( ( <. L , U >. e. P. /\ G e. U ) /\ X e. Q. ) ->
+        ( S <Q X -> ( ( X .Q ( *Q ` S ) ) .Q G ) e. U ) ) $=
+      ( vy vz vw wcel wa cnq cltq wbr cmq co wb adantl cv syl2anc c1q cop simpr
+      cnp crq cfv ltrnqi simplr recclnq syl ltrelnq brel simpld syl3anc mulclnq
+      ltmnqg w3a elprnqu ad2antrr wceq mulcomnqg caovord2d bitrd syl5ib recidnq
+      mpd oveq1d 1nq mpan mulidnq eqtrd sylan9eqr breq1d mpbid wi prcunqu ex )
+      DBUAUCICBIJZEKIZJZAELMZEAUDUEZNOZCNOZBIZVSVTJZCWCLMZWDWEEEUDUEZNOZCNOZWCL
+      MZWFWEVTWJVSVTUBVTWGWALMZWEWJAEUFWEWKWHWBLMZWJWEWGKIZWAKIZVRWKWLPWEVRWMVQ
+      VRVTUGZEUHUIZWEAKIZWNWEWQVRVTWQVRJVSAEKKLUJUKQULAUHUIZWOWGWAEUOUMWEFGHWHW
+      BCLKNFRZKIZGRZKIZHRZKIUPWSXALMXCWSNOXCXANOLMPWEWSXAXCUOQWEVRWMWHKIWOWPEWG
+      UNSWEVRWNWBKIWOWREWAUNSVQCKIZVRVTCBDUQURZWTXBJWSXANOXAWSNOUSWEWSXAUTQVAVB
+      VCVEWEXDVRWJWFPXEWOXDVRJWICWCLVRXDWITCNOZCVRWHTCNEVDVFXDXFCTNOZCTKIXDXFXG
+      USVGTCUTVHCVIVJVKVLSVMVQWFWDVNVRVTWCCBDVOURVEVP $.
+  $}
+
+  ${
+    $d x y z w v u g h $.  $d q r s x y A $.  $d q r s x y B $.
+    $( Lemma to prove downward closure in positive real addition.  (Contributed
+       by Jim Kingdon, 5-Dec-2019.) $)
+    addnqprl $p |- ( ( ( ( A e. P. /\ G e. ( 1st ` A ) ) /\
+                       ( B e. P. /\ H e. ( 1st ` B ) ) ) /\ X e. Q. ) ->
+                       ( X <Q ( G +Q H ) -> X e. ( 1st ` ( A +P. B ) ) ) ) $=
+      ( vr vs cnp wcel c1st cfv wa cnq cplq co cmq wi simpl wceq c1q vq vx cltq
+      vy wbr crq cpp c2nd prop addnqprllem sylanl1 adantlr adantll jcad anim12i
+      cop df-iplp cv addclnq genpprecll 3syl syld simpr sylan ad2antrr ad2antlr
+      elprnql syl2anc recclnq mulassnqg syl3anc mulclnq mulcomnqg recidnq eqtrd
+      syl distrnqg oveq2d mulidnq adantl 3eqtr3d eleq1d sylibd ) AHIZCAJKZIZLZB
+      HIZDBJKZIZLZLZEMIZLZECDNOZUCUEZEWOUFKZPOZCPOZWRDPOZNOZABUGOJKZIZEXBIWNWPW
+      SWEIZWTWIIZLZXCWNWPXDXEWGWMWPXDQZWKWDWEAUHKZUPHIZWFWMXGAUIZWOXHCWEEUJUKUL
+      WKWMWPXEQZWGWHWIBUHKZUPHIZWJWMXKBUIZWOXLDWIEUJUKUMUNWNWLWDWHLXFXCQWLWMRWG
+      WDWKWHWDWFRWHWJRUOUAFGUBUDABWSWTUGNUBUDGFUAUQFURGURUSUTVAVBWNXAEXBWNWRWOP
+      OZEWQWOPOZPOZXAEWNWMWQMIZWOMIZXOXQSWLWMVCZWNXSXRWNCMIZDMIZXSWGYAWKWMWDXIW
+      FYAXJCXHWEVGVDVEZWKYBWGWMWHXMWJYBXNDXLWIVGVDVFZCDUSVHZWOVIVPZYEEWQWOVJVKW
+      NWRMIZYAYBXOXASWNWMXRYGXTYFEWQVLVHYCYDWRCDVQVKWNXQETPOZEWNXPTEPWNXPWOWQPO
+      ZTWNXRXSXPYISYFYEWQWOVMVHWNXSYITSYEWOVNVPVOVRWMYHESWLEVSVTVOWAWBWC $.
+
+    $( Lemma to prove upward closure in positive real addition.  (Contributed
+       by Jim Kingdon, 5-Dec-2019.) $)
+    addnqpru $p |- ( ( ( ( A e. P. /\ G e. ( 2nd ` A ) ) /\
+                       ( B e. P. /\ H e. ( 2nd ` B ) ) ) /\ X e. Q. ) ->
+                       ( ( G +Q H ) <Q X -> X e. ( 2nd ` ( A +P. B ) ) ) ) $=
+      ( vr vs cnp wcel c2nd cfv wa cnq cplq co cmq wi simpl wceq c1q vq vx cltq
+      vy wbr crq cpp c1st prop addnqprulem sylanl1 adantlr adantll jcad anim12i
+      cop df-iplp cv addclnq genppreclu 3syl syld simpr sylan ad2antrr ad2antlr
+      elprnqu syl2anc recclnq mulassnqg syl3anc mulclnq mulcomnqg recidnq eqtrd
+      syl distrnqg oveq2d mulidnq adantl 3eqtr3d eleq1d sylibd ) AHIZCAJKZIZLZB
+      HIZDBJKZIZLZLZEMIZLZCDNOZEUCUEZEWOUFKZPOZCPOZWRDPOZNOZABUGOJKZIZEXBIWNWPW
+      SWEIZWTWIIZLZXCWNWPXDXEWGWMWPXDQZWKWDAUHKZWEUPHIZWFWMXGAUIZWOWECXHEUJUKUL
+      WKWMWPXEQZWGWHBUHKZWIUPHIZWJWMXKBUIZWOWIDXLEUJUKUMUNWNWLWDWHLXFXCQWLWMRWG
+      WDWKWHWDWFRWHWJRUOUAFGUBUDABWSWTUGNUBUDGFUAUQFURGURUSUTVAVBWNXAEXBWNWRWOP
+      OZEWQWOPOZPOZXAEWNWMWQMIZWOMIZXOXQSWLWMVCZWNXSXRWNCMIZDMIZXSWGYAWKWMWDXIW
+      FYAXJCWEXHVGVDVEZWKYBWGWMWHXMWJYBXNDWIXLVGVDVFZCDUSVHZWOVIVPZYEEWQWOVJVKW
+      NWRMIZYAYBXOXASWNWMXRYGXTYFEWQVLVHYCYDWRCDVQVKWNXQETPOZEWNXPTEPWNXPWOWQPO
+      ZTWNXRXSXPYISYFYEWQWOVMVHWNXSYITSYEWOVNVPVOVRWMYHESWLEVSVTVOWAWBWC $.
+  $}
+
+  ${
+    $d D f g h $.  $d E f g h $.  $d P f g h $.  $d f g h ph $.
+    addlocprlem.a $e |- ( ph -> A e. P. ) $.
+    addlocprlem.b $e |- ( ph -> B e. P. ) $.
+    addlocprlem.qr $e |- ( ph -> Q <Q R ) $.
+    addlocprlem.p $e |- ( ph -> P e. Q. ) $.
+    addlocprlem.qppr $e |- ( ph -> ( Q +Q ( P +Q P ) ) = R ) $.
+    addlocprlem.dlo $e |- ( ph -> D e. ( 1st ` A ) ) $.
+    addlocprlem.uup $e |- ( ph -> U e. ( 2nd ` A ) ) $.
+    addlocprlem.du $e |- ( ph -> U <Q ( D +Q P ) ) $.
+    addlocprlem.elo $e |- ( ph -> E e. ( 1st ` B ) ) $.
+    addlocprlem.tup $e |- ( ph -> T e. ( 2nd ` B ) ) $.
+    addlocprlem.et $e |- ( ph -> T <Q ( E +Q P ) ) $.
+    $( Lemma for ~ addlocpr .  The ` Q <Q ( D +Q E ) ` case.  (Contributed by
+       Jim Kingdon, 6-Dec-2019.) $)
+    addlocprlemlt $p |- ( ph ->
+        ( Q <Q ( D +Q E ) -> Q e. ( 1st ` ( A +P. B ) ) ) ) $=
+      ( cnp wcel c1st cfv wa cnq cplq co cltq wbr cpp wi jca ltrelnq simpld syl
+      brel addnqprl syl21anc ) ABUBUCZDBUDUEUCZUFCUBUCZJCUDUEUCZUFFUGUCZFDJUHUI
+      UJUKFBCULUIUDUEUCUMAVAVBKPUNAVCVDLSUNAFGUJUKZVEMVFVEGUGUCFGUGUGUJUOURUPUQ
+      BCDJFUSUT $.
+
+    $( Lemma for ~ addlocpr .  This is a step used in both the
+       ` Q = ( D +Q E ) ` and ` ( D +Q E ) <Q Q ` cases.  (Contributed by Jim
+       Kingdon, 7-Dec-2019.) $)
+    addlocprlemeqgt $p |- ( ph ->
+        ( U +Q T ) <Q ( ( D +Q E ) +Q ( P +Q P ) ) ) $=
+      ( vf vg vh cplq co cltq wbr cnq wcel wa wi c1st cfv c2nd cop cnp prop syl
+      elprnqu syl2anc elprnql addclnq lt2addnq syl22anc mp2and addcomnqg adantl
+      cv wceq w3a addassnqg caov4d breqtrd ) AIHUEUFZDEUEUFZJEUEUFZUEUFZDJUEUFE
+      EUEUFUEUFUGAIVPUGUHZHVQUGUHZVOVRUGUHZRUAAIUIUJZVPUIUJZHUIUJZVQUIUJZVSVTUK
+      WAULABUMUNZBUOUNZUPUQUJZIWGUJWBABUQUJWHKBURUSZQIWGWFUTVAADUIUJZEUIUJZWCAW
+      HDWFUJWJWIPDWGWFVBVAZNDEVCVAACUMUNZCUOUNZUPUQUJZHWNUJWDACUQUJWOLCURUSZTHW
+      NWMUTVAAJUIUJZWKWEAWOJWMUJWQWPSJWNWMVBVAZNJEVCVAIVPHVQVDVEVFAUBUCUDDEJEUI
+      UEWLNWRUBVIZUIUJZUCVIZUIUJZUKZWSXAUEUFZXAWSUEUFVJAWSXAVGVHWTXBUDVIZUIUJVK
+      XDXEUEUFWSXAXEUEUFUEUFVJAWSXAXEVLVHNXCXDUIUJAWSXAVCVHVMVN $.
+
+    $( Lemma for ~ addlocpr .  The ` Q = ( D +Q E ) ` case.  (Contributed by
+       Jim Kingdon, 6-Dec-2019.) $)
+    addlocprlemeq $p |- ( ph ->
+        ( Q = ( D +Q E ) -> R e. ( 2nd ` ( A +P. B ) ) ) ) $=
+      ( cplq co wceq cpp c2nd cfv wcel wa cltq wbr addlocprlemeqgt adantr oveq1
+      sylan9req breqtrrd wi cnp cnq jca ltrelnq simprd syl addnqpru syl21anc ex
+      brel mpd ) AFDJUBUCZUDZGBCUEUCUFUGUHZAVJUIZIHUBUCZGUJUKZVKVLVMVIEEUBUCZUB
+      UCZGUJAVMVPUJUKVJABCDEFGHIJKLMNOPQRSTUAULUMAVJGFVOUBUCVPOFVIVOUBUNUOUPAVN
+      VKUQZVJABURUHZIBUFUGUHZUICURUHZHCUFUGUHZUIGUSUHZVQAVRVSKQUTAVTWALTUTAFGUJ
+      UKZWBMWCFUSUHWBFGUSUSUJVAVGVBVCBCIHGVDVEUMVHVF $.
+
+    $( Lemma for ~ addlocpr .  The ` ( D +Q E ) <Q Q ` case.  (Contributed by
+       Jim Kingdon, 6-Dec-2019.) $)
+    addlocprlemgt $p |- ( ph ->
+        ( ( D +Q E ) <Q Q -> R e. ( 2nd ` ( A +P. B ) ) ) ) $=
+      ( cplq co cltq wbr cpp c2nd cfv wcel wa addlocprlemeqgt adantr cnq wb cop
+      c1st cnp prop syl elprnql syl2anc addclnq ltrelnq brel simpld ltanqg wceq
+      syl3anc addcomnqg breq12d bitrd biimpa breq2d mpbid ltsonq sotri addnqpru
+      jca wi simprd syl21anc mpd ex ) ADJUBUCZFUDUEZGBCUFUCUGUHUIZAWEUJZIHUBUCZ
+      GUDUEZWFWGWHWDEEUBUCZUBUCZUDUEZWKGUDUEZUJWIWGWLWMAWLWEABCDEFGHIJKLMNOPQRS
+      TUAUKULWGWKFWJUBUCZUDUEZWMAWEWOAWEWJWDUBUCZWJFUBUCZUDUEZWOAWDUMUIZFUMUIZW
+      JUMUIZWEWRUNADUMUIZJUMUIZWSABUPUHZBUGUHZUOUQUIZDXDUIXBABUQUIZXFKBURUSPDXE
+      XDUTVAACUPUHZCUGUHZUOUQUIZJXHUIXCACUQUIZXJLCURUSSJXIXHUTVADJVBVAZAWTGUMUI
+      ZAFGUDUEWTXMUJMFGUMUMUDVCVDUSZVEZAEUMUIZXPXANNEEVBVAZWDFWJVFVHAWPWKWQWNUD
+      AXAWSWPWKVGXQXLWJWDVIVAAXAWTWQWNVGXQXOWJFVIVAVJVKVLAWOWMUNWEAWNGWKUDOVMUL
+      VNVRWHWKGUDUMVOVCVPUSAWIWFVSZWEAXGIXEUIZUJXKHXIUIZUJXMXRAXGXSKQVRAXKXTLTV
+      RAWTXMXNVTBCIHGVQWAULWBWC $.
+
+    $( Lemma for ~ addlocpr .  The result, in deduction form.  (Contributed by
+       Jim Kingdon, 6-Dec-2019.) $)
+    addlocprlem $p |- ( ph ->
+        ( Q e. ( 1st ` ( A +P. B ) ) \/ R e. ( 2nd ` ( A +P. B ) ) ) ) $=
+      ( cplq co cltq wbr wceq w3o cpp c1st cfv wcel c2nd wo ltrelnq brel simpld
+      cnq syl cop cnp prop elprnql syl2anc nqtri3or addlocprlemlt addlocprlemeq
+      addclnq orc syl6 olc addlocprlemgt 3jaod mpd ) AFDJUBUCZUDUEZFVNUFZVNFUDU
+      EZUGZFBCUHUCZUIUJUKZGVSULUJUKZUMZAFUQUKZVNUQUKZVRAFGUDUEZWCMWEWCGUQUKFGUQ
+      UQUDUNUOUPURADUQUKZJUQUKZWDABUIUJZBULUJZUSUTUKZDWHUKWFABUTUKWJKBVAURPDWIW
+      HVBVCACUIUJZCULUJZUSUTUKZJWKUKWGACUTUKWMLCVAURSJWLWKVBVCDJVGVCFVNVDVCAVOW
+      BVPVQAVOVTWBABCDEFGHIJKLMNOPQRSTUAVEVTWAVHVIAVPWAWBABCDEFGHIJKLMNOPQRSTUA
+      VFWAVTVJZVIAVQWAWBABCDEFGHIJKLMNOPQRSTUAVKWNVIVLVM $.
+  $}
+
+  ${
+    $d A d e h p q r t u $.  $d B d e h p q r t u $.
+    $( Locatedness of addition on positive reals.  Lemma 11.16 in
+       [BauerTaylor], p. 53.  The proof in BauerTaylor relies on signed
+       rationals, so we replace it with another proof which applies ~ prarloc
+       to both ` A ` and ` B ` , and uses ~ nqtri3or rather than ~ prloc to
+       decide whether ` q ` is too big to be in the lower cut of ` A +P. B `
+       (and deduce that if it is, then ` r ` must be in the upper cut).  What
+       the two proofs have in common is that they take the difference between
+       ` q ` and ` r ` to determine how tight a range they need around the real
+       numbers.  (Contributed by Jim Kingdon, 5-Dec-2019.) $)
+    addlocpr $p |- ( ( A e. P. /\ B e. P. ) ->
+        A. q e. Q. A. r e. Q. ( q <Q r ->
+          ( q e. ( 1st ` ( A +P. B ) ) \/ r e. ( 2nd ` ( A +P. B ) ) ) ) ) $=
+      ( vp vh vu vd vt ve cnp wcel wa cv co cfv cnq cplq wrex adantr wbr cpp wo
+      cltq c1st c2nd wi w3a ltexnqq biimpa 3adant1 halfnqq ad2antrl cop prarloc
+      wceq prop sylan adantlr 3ad2antl1 ad2ant2r adantll ad2antrr simpld simprd
+      simpll1 simpll3 simplrl simplrr wb eqeq1d ad2antll mpbird simprll simprlr
+      oveq2 simprr addlocprlem expr rexlimdvva mpd rexlimddv 3expia ralrimivva
+      ) AKLZBKLZMZDNZCNZUDUAZWHABUBOZUEPLWIWKUFPLUCZUGDCQQWGWHQLWIQLMZWJWLWGWMW
+      JUHZWHENZROZWIUPZWLEQWMWJWQEQSZWGWMWJWREWHWIUIUJUKWNWOQLZWQMZMZFNZXBROZWO
+      UPZWLFQWSXDFQSWNWQFWOULUMXAXBQLZXDMZMZGNZHNZXBROUDUAZGAUFPZSHAUEPZSZWLWNX
+      EXMWTXDWGWMXEXMWJWEXEXMWFWEXLXKUNKLXEXMAUQXBXKXLHGUOURUSUTVAXGXJWLHGXLXKX
+      GXIXLLZXHXKLZMZXJWLXGXPXJMZMZINZJNZXBROUDUAZIBUFPZSJBUEPZSZWLXGYDXQWNXEYD
+      WTXDWGWMXEYDWJWFXEYDWEWFYCYBUNKLXEYDBUQXBYBYCJIUOURVBUTVATXRYAWLJIYCYBXRX
+      TYCLZXSYBLZMZYAWLXRYGYAMZMZABXIXBWHWIXSXHXTYIWEWFXGWGXQYHWGWMWJWTXFVFVCZV
+      DYIWEWFYJVEXGWJXQYHWGWMWJWTXFVGVCXRXEYHXAXEXDXQVHTXGWHXCROZWIUPZXQYHXGYLW
+      QWNWSWQXFVIXDYLWQVJXAXEXDYKWPWIXCWOWHRVPVKVLVMVCXRXNYHXGXNXOXJVNTXRXOYHXG
+      XNXOXJVOTXGXPXJYHVIXRYEYFYAVNXRYEYFYAVOXRYGYAVQVRVSVTWAVSVTWAWBWBWCWD $.
+  $}
+
+  ${
+    $d x y z w v f g h q r A $.  $d x y z w v f g h q r B $.
+    $( Closure of addition on positive reals.  First statement of Proposition
+       9-3.5 of [Gleason] p. 123.  Combination of Lemma 11.13 and Lemma 11.16
+       in [BauerTaylor], p. 53.  (Contributed by NM, 13-Mar-1996.) $)
+    addclpr $p |- ( ( A e. P. /\ B e. P. ) -> ( A +P. B ) e. P. ) $=
+      ( vq vr vx vy vz vw vv vg vh cnp wcel wa cpp cnq cv wrex wral cplq co cpw
+      cxp c1st cfv c2nd cltq wbr wb wn wo wi w3a df-iplp genpelxp genpml genpmu
+      addclnq ltanqg addcomnqg addnqprl genprndl addnqpru genprndu jca genpdisj
+      jca32 addlocpr 3jca elnp1st2nd sylanbrc ) ALMBLMNZABOUAZPUBZVNUCMZCQZVMUD
+      UEZMZCPRZDQZVMUFUEZMZDPRZNNVRVPVTUGUHZVTVQMNDPRUICPSZWBWDVPWAMZNCPRUIDPSZ
+      NZVRWFNUJCPSZWDVRWBUKULDPSCPSZUMVMLMVLVOVSWCEFGHIABOTHIGFEUNZUOEFGHIABOTC
+      WKFQZGQZURZUPEFGHIABOTDWKWNUQVGVLWHWIWJVLWEWGEFGHIABJKOTDCWKWNEQZWLWMUSZW
+      OWLUTZABJQZKQZWOVAVBEFGHIABJKOTDCWKWNWPWQABWRWSWOVCVDVEEFGHIABOTCWKWNWPWQ
+      VFABDCVHVIVMDCVJVK $.
   $}
 
 $(
