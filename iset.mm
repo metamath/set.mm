@@ -61703,6 +61703,65 @@ $)
       $.
   $}
 
+  ${
+    $d A x y z n r q $.
+    $( A cut produced from a rational is inhabited.  Lemma for ~ nqprlu .
+       (Contributed by Jim Kingdon, 8-Dec-2019.) $)
+    nqprm $p |- ( A e. Q. -> ( E. q e. Q. q e. { x | x <Q A }
+        /\ E. r e. Q. r e. { x | A <Q x } ) ) $=
+      ( vn cnq wcel cv cltq wbr cab wrex vex elab rexbii sylibr cnpi c1o ceq wa
+      nsmallnqq breq1 cop cec wex archnqq sylib cxp cqs 1pi opelxpi ecelqsi syl
+      df-rex enqex mpan2 df-nqqs syl6eleqr breq2 rspcev sylan exlimiv jca ) BFG
+      ZDHZAHZBIJZAKGZDFLZCHZBVFIJZAKGZCFLZVDVEBIJZDFLVIDBUAVHVNDFVGVNAVEDMVFVEB
+      IUBNOPVDBVJIJZCFLZVMVDEHZQGZBVQRUCZSUDZIJZTZEUEZVPVDWAEQLWCEBUFWAEQUNUGWB
+      VPEVRVTFGWAVPVRVTQQUHZSUIZFVRRQGZVTWEGZUJVRWFTVSWDGWGVQRQQUKWDVSSUOULUMUP
+      UQURVOWACVTFVJVTBIUSUTVAVBUMVLVOCFVKVOAVJCMVFVJBIUSNOPVC $.
+
+    $( A cut produced from a rational is rounded.  Lemma for ~ nqprlu .
+       (Contributed by Jim Kingdon, 8-Dec-2019.) $)
+    nqprrnd $p |- ( A e. Q. -> ( A. q e. Q. ( q e. { x | x <Q A }
+        <-> E. r e. Q. ( q <Q r /\ r e. { x | x <Q A } ) )
+        /\ A. r e. Q. ( r e. { x | A <Q x }
+        <-> E. q e. Q. ( q <Q r /\ q e. { x | A <Q x } ) ) ) ) $=
+      ( cnq wcel cv cltq wbr cab wa wrex wral ltbtwnnqq rexbii vex breq2 anbi2i
+      wb elab ancom bitri 3bitr4i rgenw a1i breq1 jctil ) BEFZCGZBAGZHIZAJZFZDG
+      ZUIHIZUNULFZKZDELZSZCEMZUNUJBHIZAJZFZUOUIVBFZKZCELZSZDEMUTUHUSCEBUIHIZUOB
+      UNHIZKZDELZUMURVHVIUOKZDELVKDBUINVLVJDEVIUOUAOUBUKVHAUICPZUJUIBHQTUQVJDEU
+      PVIUOUKVIAUNDPZUJUNBHQTROUCUDUEVGDEUNBHIZUOUIBHIZKZCELVCVFCUNBNVAVOAUNVNU
+      JUNBHUFTVEVQCEVDVPUOVAVPAUIVMUJUIBHUFTROUCUDUG $.
+
+    $( A cut produced from a rational is disjoint.  Lemma for ~ nqprlu .
+       (Contributed by Jim Kingdon, 8-Dec-2019.) $)
+    nqprdisj $p |- ( A e. Q. -> A. q e. Q.
+        -. ( q e. { x | x <Q A } /\ q e. { x | A <Q x } ) ) $=
+      ( cv cltq wbr cab wcel wa cnq wral ltsonq ltrelnq son2lpi vex breq1 breq2
+      wn elab anbi12i mtbir rgenw a1i ) CDZADZBEFZAGHZUDBUEEFZAGHZIZRZCJKBJHUKC
+      JUJUDBEFZBUDEFZIUDBEJLMNUGULUIUMUFULAUDCOZUEUDBEPSUHUMAUDUNUEUDBEQSTUAUBU
+      C $.
+
+    $( A cut produced from a rational is located.  Lemma for ~ nqprlu .
+       (Contributed by Jim Kingdon, 8-Dec-2019.) $)
+    nqprloc $p |- ( A e. Q. -> A. q e. Q. A. r e. Q. ( q <Q r
+        -> ( q e. { x | x <Q A } \/ r e. { x | A <Q x } ) ) ) $=
+      ( cnq wcel cv cltq wbr cab wo wi wral wceq w3o vex breq1 elab ralrimiva
+      wa nqtri3or ancoms ad2antrr biimpri orcd a1i simpr syl5ibcom breq2 sylbir
+      olc syl6 ltsonq ltrelnq sotri syl expcom adantl 3jaod mpd ex ) BEFZDGZCGZ
+      HIZVCAGZBHIZAJFZVDBVFHIZAJFZKZLZCEMDEVBVCEFZTZVLCEVNVDEFZTZVEVKVPVETZVCBH
+      IZVCBNZBVCHIZOZVKVNWAVOVEVMVBWAVCBUAUBUCVQVRVKVSVTVRVKLVQVRVHVJVHVRVGVRAV
+      CDPVFVCBHQRUDUEUFVQVSBVDHIZVKVQVEVSWBVPVEUGVCBVDHQUHWBVJVKVIWBAVDCPVFVDBH
+      UIRVJVHUKUJZULVEVTVKLVPVTVEVKVTVETWBVKBVCVDHEUMUNUOWCUPUQURUSUTVASS $.
+
+    $( The canonical embedding of the rationals into the reals.  (Contributed
+       by Jim Kingdon, 8-Dec-2019.) $)
+    nqprlu $p |- ( A e. Q. -> <. { x | x <Q A } , { x | A <Q x } >. e. P. ) $=
+      ( vq vr cnq wcel cv cltq wbr cab wa wrex wb wral wn wo ltrelnq brel abssi
+      wss w3a cop cnp nqprm simpld simprd pm3.2i jctil nqprrnd nqprdisj nqprloc
+      wi 3jca elinp sylanbrc ) BEFZAGZBHIZAJZETZBUQHIZAJZETZKZCGZUSFZCELDGZVBFZ
+      DELKZKVFVEVGHIZVGUSFKDELMCENVHVJVEVBFZKCELMDENKZVFVKKOCENZVJVFVHPULDENCEN
+      ZUAUSVBUBUCFUPVIVDABDCUDUTVCURAEURUQEFZUPUQBEEHQRUESVAAEVAUPVOBUQEEHQRUFS
+      UGUHUPVLVMVNABDCUIABCUJABDCUKUMVBUSDCUNUO $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
