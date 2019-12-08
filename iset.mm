@@ -61680,6 +61680,15 @@ $)
         >. ) $=
       ( vf vg vh vw vv cpp cplq df-iplp cv addclnq genipv ) FGHIJDEKLCBAIJHGFMG
       NHNOP $.
+
+    $( Value of multiplication on positive reals.  (Contributed by Jim Kingdon,
+       8-Dec-2019.) $)
+    mpvlu $p |- ( ( A e. P. /\ B e. P. ) -> ( A .P. B ) = <.
+        { x e. Q. | E. y e. ( 1st ` A ) E. z e. ( 1st ` B ) x = ( y .Q z ) } ,
+        { x e. Q. | E. y e. ( 2nd ` A ) E. z e. ( 2nd ` B ) x = ( y .Q z ) }
+        >. ) $=
+      ( vf vg vh vw vv cmp cmq df-imp cv mulclnq genipv ) FGHIJDEKLCBAIJHGFMGNH
+      NOP $.
   $}
 
 $(
