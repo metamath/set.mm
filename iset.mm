@@ -62559,6 +62559,17 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
+${
+$d x ph $.
+$( Existential generalization. (Contributed by BJ, 8-Dec-2019.)  Proof
+ modification is discouraged because there are shorter proofs, but using less
+ basic results (like ~ exlimiv and ~ 19.9ht or ~ 19.23ht ).
+(Proof modification is discouraged.) $)
+bj-ex $p |- ( E. x ph -> ph ) $=
+  ( wi wex wal wb ax-ie2 ax-17 mpg id mpgbi ) AACZABDACZBAABECLBEMFBAABGABHIAJK
+  $.
+$}
+
   $( Closed form of ~ hbal (copied from set.mm).  (Contributed by BJ,
      2-May-2019.) $)
   bj-hbalt $p |- ( A. y ( ph -> A. x ph ) -> ( A. y ph -> A. x A. y ph ) ) $=
@@ -62627,6 +62638,16 @@ $)
     bj-exlimmpi $p |- ( E. x ch -> ps ) $=
       ( mpd exlimi ) CBDECABFGHI $.
   $}
+
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                 Extensionality
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Various utility theorems using FOL and extensionality.
+
+$)
 
   ${
     bj-vtoclgf.nf1 $e |- F/_ x A $.
@@ -63046,6 +63067,15 @@ $)
   $}
 
   ${
+    $d x y $.  $d A y $.
+    bj-bdcel.bd $e |- Bdd y = A $.
+    $( Boundedness of a membership formula.  (Contributed by BJ,
+       8-Dec-2019.) $)
+    bj-bdcel $p |- Bdd A e. x $=
+      ( cv wceq wrex wcel ax-bdex risset bd0r ) BECFZBAEZGCMHLBADIBCMJK $.
+  $}
+
+  ${
     bdab.1 $e |- Bdd ph $.
     $( Membership in a class defined by class abstraction using a bounded
        formula, is a bounded formula.  (Contributed by BJ, 3-Oct-2019.) $)
@@ -63164,8 +63194,7 @@ $)
     $d y x $.  $d y ph $.
     bdcab.1 $e |- Bdd ph $.
     $( A class defined by class abstraction using a bounded formula is
-       bounded.  Remark: if bounded separation ~ ax-bdsep is available, then
-       this is actually a set.  (Contributed by BJ, 6-Oct-2019.) $)
+       bounded.  (Contributed by BJ, 6-Oct-2019.) $)
     bdcab $p |- Bdd_ { x | ph } $=
       ( vy cab bdab bdelir ) DABEADBCFG $.
   $}
@@ -63325,6 +63354,21 @@ $)
     ( cvv cdif c0 bdcvv bdcdif df-nul bdceqir ) AABCAADDEFG $.
 
   ${
+    $( Boundedness lemma.  (Contributed by BJ, 21-Nov-2019.) $)
+    bdeq0 $p |- Bdd x = (/) $=
+      ( cv c0 wss wceq bdcnul bdss 0ss eqss mpbiran2 bd0r ) ABZCDZLCEZACFGNMCLD
+      LHLCIJK $.
+  $}
+
+  ${
+    $d x y $.
+    $( Boundedness of the formula "the empty set belongs to the setvar
+       ` x ` ".  (Contributed by BJ, 30-Nov-2019.) $)
+    bj-bd0el $p |- Bdd (/) e. x $=
+      ( vy c0 bdeq0 bj-bdcel ) ABCBDE $.
+  $}
+
+  ${
     $d x A $.
     bdcpw.1 $e |- Bdd_ A $.
     $( The power class of a bounded class is bounded.  (Contributed by BJ,
@@ -63427,6 +63471,23 @@ $)
     ( cv csn cun csuc bdcv bdcsn bdcun df-suc bdceqir ) ABZKCZDKEKLAFAGHKIJ $.
 
   ${
+    $d x y $.
+    $( Boundedness lemma.  (Contributed by BJ, 21-Nov-2019.) $)
+    bdeqsuc $p |- Bdd x = suc y $=
+      ( cv csuc wss wa wceq bdcsuc bdss csn cun bdcv bdsnss ax-bdan unss df-suc
+      bd0 sseq1i bd0r eqss ) ACZBCZDZEZUCUAEZFUAUCGUDUEAUCBHIUBUBJZKZUAEZUEUBUA
+      EZUFUAEZFUHUIUJBUAALZIBUAUKMNUBUFUAOQUCUGUAUBPRSNUAUCTS $.
+  $}
+
+  ${
+$d x z $. $d y z $.
+    $( Boundedness of the formula "the successor of the setvar ` x ` belongs to
+       the setvar ` y ` ".  (Contributed by BJ, 30-Nov-2019.) $)
+    bj-bdsucel $p |- Bdd suc x e. y $=
+      ( vz cv csuc bdeqsuc bj-bdcel ) BCADECAFG $.
+  $}
+
+  ${
     $d x y z t $.  $d z t ph $.
     bdcriota.bd $e |- Bdd ph $.
     bdcriota.ex $e |- E! x e. y ph $.
@@ -63497,7 +63558,7 @@ $)
     bdsepnf.1 $e |- Bdd ph $.
     $( Version of ~ ax-bdsep with one DV condition removed, the other DV
        condition replaced by a non-freeness hypothesis, and without initial
-       universal quantifier.  See also ~ bdsepnfALT .  (Contributed by BJ,
+       universal quantifier.  See also ~ bdsepnf .  (Contributed by BJ,
        5-Oct-2019.) $)
     bdsepnf $p |- E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $=
       ( wnf wel wa wb wal wex bdsepnft mpg ) ADGBDHBCHAIJBKDLBABCDFMEN $.
@@ -63824,22 +63885,6 @@ $)
       ( cvv wcel csuc bj-sucexg ax-mp ) ACDAECDBACFG $.
   $}
 
-  ${
-    $( Boundedness lemma.  (Contributed by BJ, 21-Nov-2019.) $)
-    bdeq0 $p |- Bdd x = (/) $=
-      ( cv c0 wss wceq bdcnul bdss 0ss eqss mpbiran2 bd0r ) ABZCDZLCEZACFGNMCLD
-      LHLCIJK $.
-  $}
-
-  ${
-    $d x y $.
-    $( Boundedness lemma.  (Contributed by BJ, 21-Nov-2019.) $)
-    bdeqsuc $p |- Bdd x = suc y $=
-      ( cv csuc wss wa wceq bdcsuc bdss csn cun bdcv bdsnss ax-bdan unss df-suc
-      bd0 sseq1i bd0r eqss ) ACZBCZDZEZUCUAEZFUAUCGUDUEAUCBHIUBUBJZKZUAEZUEUBUA
-      EZUFUAEZFUHUIUJBUAALZIBUAUKMNUBUFUAOQUCUGUAUBPRSNUAUCTS $.
-  $}
-
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
@@ -63876,6 +63921,15 @@ $)
       ( vx wind c0 wcel cv csuc wral wa wceq df-bj-ind eleq2 raleqbi1dv anbi12d
       bicomd syl5rbb syl5bb ) ADEAFZCGHZAFZCAIZJZABKZBDZCALUEEBFZTBFZCBIZJUDUCC
       BLUDUFSUHUBUDSUFABEMPUDUBUHUAUGCABABTMNPOQR $.
+  $}
+
+  ${
+    $d x y $.
+    $( Boundedness of the formula "the setvar ` x ` is an inductive class".
+       (Contributed by BJ, 30-Nov-2019.) $)
+    bj-bdind $p |- Bdd Ind x $=
+      ( vy c0 wcel csuc wral wind bj-bd0el bj-bdsucel ax-bdal ax-bdan df-bj-ind
+      cv wa bd0r ) CAMZDZBMEPDZBPFZNPGQSAHRBABAIJKBPLO $.
   $}
 
   ${
@@ -63919,24 +63973,33 @@ $)
   $}
 
   ${
+    $d x y A $.
+    $( A Characterization of subclasses of ` _om ` .  (Contributed by BJ,
+       30-Nov-2019.)  (Proof modification is discouraged.) $)
+    bj-ssom $p |- ( A. x ( Ind x -> A C_ x ) <-> A C_ _om ) $=
+      ( vy cv wind wss wi wal cab cint com wral wcel ssint df-ral bj-indeq elab
+      vex imbi1i albii 3bitrri bj-dfom eqcomi sseq2i bitri ) ADZEZBUFFZGZAHZBCD
+      ZEZCIZJZFZBKFUOUHAUMLUFUMMZUHGZAHUJABUMNUHAUMOUQUIAUPUGUHULUGCUFARUKUFPQS
+      TUAUNKBKUNCUBUCUDUE $.
+  $}
+
+  ${
     $d A x y $.
     $( A set is equal to ` _om ` if and only if it is the smallest inductive
        set.  (Contributed by BJ, 30-Nov-2019.)
        (Proof modification is discouraged.) $)
     bj-om $p |- ( A e. V ->
                     ( A = _om <-> ( Ind A /\ A. x ( Ind x -> A C_ x ) ) ) ) $=
-      ( vy wcel com wceq wind cv wss wi wal wa bj-omind bj-indeq mpbiri cvv vex
-      bj-omssind ax-mp sseq1 syl5ibr alrimiv cint wral ssint df-ral elab imbi1i
-      jca cab albii 3bitri biimpri bj-dfom syl6sseqr adantl a1i adantrd syl6ibr
-      jcad eqss impbid2 ) BCEZBFGZBHZAIZHZBVGJZKZALZMZVEVFVKVEVFFHNBFOPVEVJAVHV
-      IVEFVGJZVGQEVHVMKARZVGQSTBFVGUAUBUCUJVDVLBFJZFBJZMVEVDVLVOVPVLVOKVDVKVOVF
-      VKBDIZHZDUKZUDZFBVTJZVKWAVIAVSUEVGVSEZVIKZALVKABVSUFVIAVSUGWCVJAWBVHVIVRV
-      HDVGVNVQVGOUHUIULUMUNDUOUPUQURVDVFVPVKBCSUSVABFVBUTVC $.
+      ( wcel com wceq wind cv wss wi wal wa bj-omind bj-indeq mpbiri bj-omssind
+      cvv vex ax-mp sseq1 syl5ibr alrimiv jca bj-ssom biimpi adantl a1i adantrd
+      jcad eqss syl6ibr impbid2 ) BCDZBEFZBGZAHZGZBUPIZJZAKZLZUNUOUTUNUOEGMBENO
+      UNUSAUQURUNEUPIZUPQDUQVBJARUPQPSBEUPTUAUBUCUMVABEIZEBIZLUNUMVAVCVDVAVCJUM
+      UTVCUOUTVCABUDUEUFUGUMUOVDUTBCPUHUIBEUJUKUL $.
   $}
 
   ${
     $d x y $.
-    $( Two formulations of the axiom of infinity (see ~ ax-infc and
+    $( Two formulations of the axiom of infinity (see ~ ax-infvn and
        ~ bj-omex ) .  (Contributed by BJ, 30-Nov-2019.)
        (Proof modification is discouraged.) $)
     bj-2inf $p |- ( _om e. _V <->
@@ -63988,7 +64051,7 @@ $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
 In this section, we introduce the axiom of infinity in a constructive setting
-( ~ ax-infc ) and deduce that the class ` _om ` of finite ordinals is a set
+( ~ ax-infvn ) and deduce that the class ` _om ` of finite ordinals is a set
 ( ~ bj-omex ).
 
 $)
@@ -63999,8 +64062,9 @@ $)
        of the special set we want (the set of natural numbers), instead of the
        existence of a set with some properties ( ~ ax-iinf ) from which one
        then proves ( ~ omex ) using full separation that the wanted set
-       exists.  See also ~ ax-infc2 .  (Contributed by BJ, 14-Nov-2019.) $)
-    ax-infc $a |- E. x ( Ind x /\ A. y ( Ind y -> x C_ y ) ) $.
+       exists.  "vn" is for "NVon Neumann".  See also ~ ax-infvn2 .
+       (Contributed by BJ, 14-Nov-2019.) $)
+    ax-infvn $a |- E. x ( Ind x /\ A. y ( Ind y -> x C_ y ) ) $.
   $}
 
   ${
@@ -64009,17 +64073,18 @@ $)
        of the special set we want (the set of natural numbers), instead of the
        existence of a set with some properties ( ~ ax-iinf ) from which one
        then proves ( ~ omex ) using full separation that the wanted set
-       exists.  See also ~ ax-infc2 .  (Contributed by BJ, 14-Nov-2019.) $)
-    ax-infcALT $a |- E. a ( ( (/) e. a /\ A. x e. a suc x e. a ) /\
+       exists.  See also ~ ax-infvn2 .  (Contributed by BJ, 14-Nov-2019.)
+       (New usage is discouraged.) $)
+    ax-infvnALT $a |- E. a ( ( (/) e. a /\ A. x e. a suc x e. a ) /\
                    A. b ( ( (/) e. b /\ A. x e. b suc x e. b ) -> a C_ b ) ) $.
   $}
 
   ${
     $d x y $.
-    $( Proof of ~ omex from ~ ax-infc .  (Contributed by BJ, 14-Nov-2019.)
+    $( Proof of ~ omex from ~ ax-infvn .  (Contributed by BJ, 14-Nov-2019.)
        (Proof modification is discouraged.) $)
     bj-omex $p |- _om e. _V $=
-      ( vx vy com cvv wcel cv wind wss wi wal wa wex ax-infc bj-2inf mpbir ) CD
+      ( vx vy com cvv wcel cv wind wss wi wal wa wex ax-infvn bj-2inf mpbir ) CD
       EAFZGBFZGPQHIBJKALABMABNO $.
   $}
 
@@ -64029,7 +64094,7 @@ $)
        (Proof modification is discouraged.)  (New usage is discouraged.) $)
     bj-omexALT $p |- _om e. _V $=
       ( va vx vb com cv wceq wex wss wa c0 wcel csuc wral wi wal cab cint dfom3
-      cvv syl5eqss ax-infcALT crab rabab eqcomi inteqi rabid intss1 sylbir mpan
+      cvv syl5eqss ax-infvnALT crab rabab eqcomi inteqi rabid intss1 sylbir mpan
       vex ssintab biimpri syl6sseqr anim12ci eximii eqss exbii mpbir issetri )
       ADAEZDFZAGUTDHZDUTHZIZAGJUTKBELZUTKBUTMIZJCEZKVEVGKBVGMIZUTVGHNCOZIVDABAC
       UAVFVCVIVBVFDVFAPZQZUTABRUTSKZVFVKUTHAUJVLVFIZVKVFASUBZQZUTVJVNVNVJVFAUCU
@@ -64039,9 +64104,9 @@ $)
 
   ${
     $d x y z $.
-    $( Another axiom of infinity in a constructive setting (see ~ ax-infc ).
+    $( Another axiom of infinity in a constructive setting (see ~ ax-infvn ).
        (Contributed by BJ, 14-Nov-2019.) $)
-    ax-infc2 $a |-
+    ax-infvn2 $a |-
                  E. a A. x ( x e. a <-> ( x = (/) \/ E. y e. a x = suc y ) ) $.
   $}
 
@@ -64206,6 +64271,18 @@ $)
   $}
 
   ${
+    $d x y A $.
+    $( Constructive proof of an adaptation of ~ nn0suc .  (Contributed by BJ,
+       19-Nov-2019.)  (Proof modification is discouraged.) $)
+    bj-nn0suc1 $p |- ( A e. _om -> ( A = (/) \/ E. x e. A A = suc x ) ) $=
+    ( vy cv wceq c0 csuc wrex wo wi wal com wcel rexeqbi1dv orbi12d
+      eqeq1 biimpd ax-gen nfcv ax-mp wral bj-nn0suc0 bj-rspgt com12
+      nfv ) CDZBEZUFFEZUFADGZEZAUFHZIZBFEZBUIEZABHZIZJJZCKZBLMUPJZUQC
+      UGULUPUGUHUMUKUOUFBFPUJUNAUFBUFBUIPNOQRULCLUAZURUSJCAUBURUTUSUL
+      UPCBLCBSCLSUPCUEUCUDTT $.
+  $}
+
+  ${
     $d x y z A $.
     $( A natural number is a transitive set.  (Contributed by BJ,
        22-Nov-2019.)  (Proof modification is discouraged.) $)
@@ -64287,17 +64364,13 @@ $)
 
   ${
     $d x y A $.
-    $( Proof of ~ nn0suc .  NOT YET constructive because of ~ omelon
+    $( Proof of ~ nn0suc .  NOT YET constructive because of ~ omelon .
        (Contributed by BJ, 19-Nov-2019.)
        (Proof modification is discouraged.) $)
     bj-nn0suc $p |- ( A e. _om -> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
-      ( vy cv wceq c0 csuc wrex wo com wi wral wa wcel eqeq1 rexeqbi1dv orbi12d
-      wal biimpd nfcv a1i wss omelon onelssi ssrexv adantr orim2d syldd alrimiv
-      syl ex bj-nn0suc0 jctir nfv bj-rspgt imp mpcom ) CDZBEZURFEZURADGZEZAURHZ
-      IZBFEZBVAEZAJHZIZKKZCRZVDCJLZMBJNZVHVLVJVKVLVICVLUSVDVEVFABHZIZVHUSVDVNKK
-      VLUSVDVNUSUTVEVCVMURBFOVBVFAURBURBVAOPQSUAVLUSVNVHKVLUSMVMVGVEVLVMVGKZUSV
-      LBJUBVOJBUCUDVFABJUEUJUFUGUKUHUICAULUMVJVKVLVHKVDVHCBJCBTCJTVHCUNUOUPUQ
-      $.
+      ( com wcel c0 wceq cv csuc wo bj-nn0suc1 wss wi omelon onelssi ssrexv syl
+      wrex orim2d mpd ) BCDZBEFZBAGHFZABQZIUAUBACQZIABJTUCUDUATBCKUCUDLCBMNUBAB
+      COPRS $.
   $}
 
 
@@ -64365,6 +64438,138 @@ $)
     ax-bdsetind $a |- ( A. a ( A. y e. a [ y / a ] ph -> ph ) -> A. a ph ) $.
   $}
 
+  ${
+    $d x y z $.  $d ph z $.
+    bdsetindis.bd $e |- Bdd ph $.
+    bdsetindis.nf0 $e |- F/ x ps $.
+    bdsetindis.nf1 $e |- F/ x ch $.
+    bdsetindis.nf2 $e |- F/ y ph $.
+    bdsetindis.nf3 $e |- F/ y ps $.
+    bdsetindis.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
+    bdsetindis.2 $e |- ( x = y -> ( ch <-> ph ) ) $.
+    $( Axiom of bounded set induction using implicit substitutions.  (Contributed by
+       BJ, 22-Nov-2019.) $)
+    bdsetindis $p |- ( A. y ( A. z e. y ps -> ch ) -> A. x ph ) $=
+      ( cv wral wi wal nfcv nfralxy nfim wsb weq raleq wb equcoms imbi12d cbval
+      sbie biimpi ralimi imim1i alimi sylbi ax-bdsetind syl ) BFENZOZCPZEQZADFU
+      AZFDNZOZAPZDQZADQUSBFVAOZAPZDQVDURVFEDUQCDBDFUPDUPRHSITVEAEBEFVAEVARKSJTE
+      DUBUQVECABFUPVAUCCAUDDEMUEUFUGVFVCDVBVEAUTBFVAUTBABDFHLUHUIUJUKULUMAFDGUN
+      UO $.
+  $}
+
+${
+$d a x $.
+$( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (use more deduction
+   style) .  (Contributed by BJ, 8-Dec-2019.) $)
+bj-inf2vnlem1 $p |-
+ ( A. x ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> Ind A ) $=
+  ? $.
+$(
+50::bi2                           |- ( ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> ( ( x = (/) \/ E. y e. A x = suc y ) -> x e. A ) )
+51::ax-io                               |- ( ( ( x = (/) \/ E. y e. A x = suc y ) -> x e. A ) <-> ( ( x = (/) -> x e. A ) /\ ( E. y e. A x = suc y -> x e. A ) ) )
+52:51:biimpi                         |- ( ( ( x = (/) \/ E. y e. A x = suc y ) -> x e. A ) -> ( ( x = (/) -> x e. A ) /\ ( E. y e. A x = suc y -> x e. A ) ) )
+53::ax-ia1                              |- ( ( ( x = (/) -> x e. A ) /\ ( E. y e. A x = suc y -> x e. A ) ) -> ( x = (/) -> x e. A ) )
+54::eleq1                                     |- ( x = (/) -> ( x e. A <-> (/) e. A ) )
+55:54:biimpd                               |- ( x = (/) -> ( x e. A -> (/) e. A ) )
+56:55:a2i                               |- ( ( x = (/) -> x e. A ) -> ( x = (/) -> (/) e. A ) )
+57:53,56:syl                         |- ( ( ( x = (/) -> x e. A ) /\ ( E. y e. A x = suc y -> x e. A ) ) -> ( x = (/) -> (/) e. A ) )
+58:52,57:syl                      |- ( ( ( x = (/) \/ E. y e. A x = suc y ) -> x e. A ) -> ( x = (/) -> (/) e. A ) )
+59:50,58:syl                   |- ( ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> ( x = (/) -> (/) e. A ) )
+60:59:alimi                 |- ( A. x ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> A. x ( x = (/) -> (/) e. A ) )
+61::exim                       |- ( A. x ( x = (/) -> (/) e. A ) -> ( E. x x = (/) -> E. x (/) e. A ) )
+62::0ex                                 |- (/) e. _V
+63:62:isseti                         |- E. x x = (/)
+64::pm2.27                           |- ( E. x x = (/) -> ( ( E. x x = (/) -> E. x (/) e. A ) -> E. x (/) e. A ) )
+65:63,64:ax-mp                    |- ( ( E. x x = (/) -> E. x (/) e. A ) -> E. x (/) e. A )
+66::bj-ex                         |- ( E. x (/) e. A -> (/) e. A )
+67:65,66:syl                   |- ( ( E. x x = (/) -> E. x (/) e. A ) -> (/) e. A )
+68:61,67:syl                |- ( A. x ( x = (/) -> (/) e. A ) -> (/) e. A )
+69:60,68:syl             |- ( A. x ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> (/) e. A )
+70::                        |- ( A. x ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> ( z e. A -> suc z e. A ) )
+71:70:ralrimiv           |- ( A. x ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> A. z e. A suc z e. A )
+72:69,71:jca          |- ( A. x ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> ( (/) e. A /\ A. z e. A suc z e. A ) )
+73::df-bj-ind         |- ( Ind A <-> ( (/) e. A /\ A. z e. A suc z e. A ) )
+qed:72,73:sylibr   |- ( A. x ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> Ind A )
+$)
+$}
+
+${
+$d a x y z t u v w $.
+$( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (use more deduction
+   style); TODO: replace the setvar ` a ` with a class term ` A ` .  (Contributed by BJ, 8-Dec-2019.) $)
+bj-inf2vnlem2 $p |- ( A. x ( x e. a <-> ( x = (/) \/ E. y e. a x = suc y ) ) ->
+              ( Ind z -> a C_ z ) ) $=
+  ( vv vu vw vt cv wcel c0 wceq wal wa wi wral elequ1 imbi12d ex nfv csuc wo wb
+  wrex wind wss alimi df-ral bicomi eqeq1 rexbidv orbi12d rspccv sylbi ad2antrr
+  bi1 syl ax-ia2 simplr df-bj-ind simplbi eleq1 syl5ibrcom 3ad2ant1 sucid eleq2
+  w3a vex mpbiri a1i rspcv com3l 3ad2ant2 bj-indsuc adantr 3syld biimprd sylcom
+  imp rexlimdva jca syl3anc ax-io sylibr mpdd alrimiv ax-bdel bicomd bdsetindis
+  ax-bdim dfss2 ) AIZDIZJZWLKLZWLBIZUAZLZBWMUDZUBZUCZAMZCIZUEZWMXCUFZXBXDNZEIZW
+  MJZXGXCJZOZEFIZPZXKWMJZXKXCJZOZOZFMZXEXFXPFXFXLXOXFXLNZXMXKKLZXKWQLZBWMUDZUBZ
+  XNXBXMYBOZXDXLXBWNWTOZAMZYCXAYDAWNWTUPUGYEWTAWMPZYCYFYEWTAWMUHUIWTYBAXKWMWLXK
+  LZWOXSWSYAWLXKKUJYGWRXTBWMWLXKWQUJUKULUMUNUQUOXRXMYBXNOZXRXMNZXSXNOZYAXNOZNZY
+  HYIXDXLXMYLXFXDXLXMXBXDURUOXFXLXMUSXRXMURXDXLXMVGZYJYKXDXLYJXMXDXNXSKXCJZXDYN
+  GIUAXCJGXCPGXCUTVAXKKXCVBVCVDYMXTXNBWMYMWPWMJZNZXTWQXCJZXNYPXTWPXKJZWPXCJZYQX
+  TYROYPXTYRWPWQJWPBVHVEXKWQWPVFVIVJYMYOYRYSOZXLXDYOYTOXMYRXLYOYSXJYOYSOEWPXKXG
+  WPLXHYOXIYSEBDQEBCQRVKVLVMVSYMYSYQOZYOXDXLUUAXMXCWPVNVDVOVPXTXNYQXKWQXCVBVQVR
+  VTWAWBXSXNYAWCWDSWESWFXQHIZWMJZUUBXCJZOZHMXEUUEXJXOHFEUUCUUDHDWGHCWGWJXJHTXOH
+  TUUEFTXJFTUUBXGLUUCXHUUDXIHEDQHECQRUUBXKLZXMUUCXNUUDUUFUUCXMHFDQWHUUFUUDXNHFC
+  QWHRWIHWMXCWKWDUQS $.
+$}
+
+${
+$d x y z t u v w A $.  $d x y z t u v w Z $.
+bj-inf2vnlem3.bd1 $e |- Bdd_ A $.
+bj-inf2vnlem3.bd2 $e |- Bdd_ Z $.
+$( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (use more deduction
+   style); TODO: compare with ~ bj-inf2vnlem2 and keep only one.  (Contributed by BJ, 8-Dec-2019.) $)
+bj-inf2vnlem3 $p |- ( A. x e. A ( x = (/) \/ E. y e. A x = suc y ) ->
+                                                       ( Ind Z -> A C_ Z ) ) $=
+  ( vz vt vu vv cv c0 wceq wral wcel wi wal eleq1 imbi12d nfv csuc wrex wo wind
+  wss eqeq1 rexbidv orbi12d rspcv df-bj-ind simplbi syl5ibr a1dd sucid wb eleq2
+  vex eqcoms mpbii bj-indsuc eleq1a syl6com syl8 com13 com25 mpdi rexlimiv jaoi
+  syl6 com3l alrimdv bi2.04 albii syl6ib bdeli ax-bdim bdsetindis dfss2 syl6ibr
+  ) AKZLMZVTBKZUAZMZBCUBZUCZACNZDUDZGKZCOZWIDOZPZGQZCDUEWGWHHKZCOZWNDOZPZHIKZNZ
+  WRCOZWRDOZPZPZIQZWMWGWHWTWSXAPZPZIQXDWGWHXFIWTWGWHXEWTWGWRLMZWRWCMZBCUBZUCZWH
+  XEPZWFXJAWRCVTWRMZWAXGWEXIVTWRLUFXLWDXHBCVTWRWCUFUGUHUIXGXKXIXGWHXAWSWHXAXGLD
+  OZWHXMJKUADOJDNJDUJUKWRLDRULUMXHXKBCWBCOZXHWBWROZXKXHWBWCOZXOWBBUQUNXPXOUOWCW
+  RWCWRWBUPURUSXNWSXOWHXHXAXOWSXNWHXHXAPZPZXOWSXNWBDOZXRWQXNXSPHWBWRWNWBMWOXNWP
+  XSWNWBCRWNWBDRSUIWHXSWCDOXQDWBUTWCDWRVAVBVCVDVEVFVGVHVIVJVKXFXCIWTWSXAVLVMVNW
+  LWQXBGIHWJWKGCEVOGDFVOVPWQGTXBGTWLITWQITWIWNMWJWOWKWPWIWNCRWIWNDRSXBWLUOWRWIW
+  RWIMWTWJXAWKWRWICRWRWIDRSURVQVIGCDVRVS $.
+$}
+
+  ${
+    $d x y z a $.
+    $( A sufficient condition for ` _om ` to be a set. TODO: replace the setvar
+    ` a ` with a class term ` A ` (which is a set).  (Contributed by BJ,
+    8-Dec-2019.) $)
+  bj-inf2vn $p |-
+       ( A. x ( x e. a <-> ( x = (/) \/ E. y e. a x = suc y ) ) -> a = _om ) $=
+  ( vz wel cv c0 wceq csuc wrex wo wb wal wind wss wi wa com bj-inf2vnlem1 cvv
+  bj-inf2vnlem2 alrimiv jca wcel vex bj-om ax-mp bicomi sylib ) ACEAFZGHUJBFIHB
+  CFZJKLAMZUKNZDFZNUKUNOPZDMZQZUKRHZULUMUPABUKSULUODABDCUAUBUCURUQUKTUDURUQLCUE
+  DUKTUFUGUHUI $.
+  $}
+
+  ${
+    $d x y z a $.
+    $( Using bounded set induction and the strong axiom of infinity, ` _om ` is
+       a set, that is, we recover ~ ax-infvn .  (Contributed by BJ,
+    8-Dec-2019.)  (Proof modification is discouraged.) $)
+  bj-omex2 $p |- _om e. _V $=
+    ( va vx vy com wel cv c0 wceq csuc wo wb ax-infvn2 bj-inf2vn eximii issetri
+    wrex wal ) ADBAEBFZGHRCFIHCAFZPJKBQSDHABCALBCAMNO $.
+  $}
+
+  ${
+    $d x y A $.
+    $( Constructive proof of (biconditional form of) ~ nn0suc .
+       (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.) $)
+    bj-nn0suc3 $p |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
+      ? $.
+  $}
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
