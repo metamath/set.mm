@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Dec-2019
+$( iset.mm - Version of 8-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -61668,6 +61668,18 @@ $)
       WKFQZGQZURZUPEFGHIABOTDWKWNUQVGVLWHWIWJVLWEWGEFGHIABJKOTDCWKWNEQZWLWMUSZW
       OWLUTZABJQZKQZWOVAVBEFGHIABJKOTDCWKWNWPWQABWRWSWOVCVDVEEFGHIABOTCWKWNWPWQ
       VFABDCVHVIVMDCVJVK $.
+  $}
+
+  ${
+    $d x y z f g h A $.  $d x y z f g h B $.  $d x y z w v u f g h $.
+    $( Value of addition on positive reals.  (Contributed by Jim Kingdon,
+       8-Dec-2019.) $)
+    plpvlu $p |- ( ( A e. P. /\ B e. P. ) -> ( A +P. B ) = <.
+        { x e. Q. | E. y e. ( 1st ` A ) E. z e. ( 1st ` B ) x = ( y +Q z ) } ,
+        { x e. Q. | E. y e. ( 2nd ` A ) E. z e. ( 2nd ` B ) x = ( y +Q z ) }
+        >. ) $=
+      ( vf vg vh vw vv cpp cplq df-iplp cv addclnq genipv ) FGHIJDEKLCBAIJHGFMG
+      NHNOP $.
   $}
 
 $(
