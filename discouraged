@@ -13655,6 +13655,7 @@ New usage of "19.35OLD" is discouraged (0 uses).
 New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
 New usage of "19.43OLD" is discouraged (0 uses).
+New usage of "19.8aOLD" is discouraged (0 uses).
 New usage of "1dimN" is discouraged (0 uses).
 New usage of "1div0" is discouraged (0 uses).
 New usage of "1div0apr" is discouraged (0 uses).
@@ -18372,6 +18373,7 @@ Proof modification of "19.35OLD" is discouraged (64 steps).
 Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
 Proof modification of "19.43OLD" is discouraged (72 steps).
+Proof modification of "19.8aOLD" is discouraged (56 steps).
 Proof modification of "1div0apr" is discouraged (77 steps).
 Proof modification of "1p1e2apr1" is discouraged (7 steps).
 Proof modification of "2bornot2b" is discouraged (26 steps).
@@ -18450,7 +18452,7 @@ Proof modification of "ax12indalem" is discouraged (272 steps).
 Proof modification of "ax12indi" is discouraged (83 steps).
 Proof modification of "ax12indn" is discouraged (70 steps).
 Proof modification of "ax12v2-o" is discouraged (107 steps).
-Proof modification of "ax12vALT" is discouraged (81 steps).
+Proof modification of "ax12vALT" is discouraged (35 steps).
 Proof modification of "ax13fromc9" is discouraged (72 steps).
 Proof modification of "ax16g-o" is discouraged (40 steps).
 Proof modification of "ax2" is discouraged (46 steps).
