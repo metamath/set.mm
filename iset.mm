@@ -2286,7 +2286,7 @@ $)
 
   ${
     bi3ant.1 $e |- ( ph -> ( ps -> ch ) ) $.
-    $( Construct a bi-conditional in antecedent position.  (Contributed by Wolf
+    $( Construct a biconditional in antecedent position.  (Contributed by Wolf
        Lammen, 14-May-2013.) $)
     bi3ant $p |- ( ( ( th -> ta ) -> ph ) -> ( ( ( ta -> th ) -> ps ) ->
                                                 ( ( th <-> ta ) -> ch ) ) ) $=
@@ -6213,7 +6213,7 @@ $)
   ${
     bijadc.1 $e |- ( ph -> ( ps -> ch ) ) $.
     bijadc.2 $e |- ( -. ph -> ( -. ps -> ch ) ) $.
-    $( Combine antecedents into a single bi-conditional.  This inference is
+    $( Combine antecedents into a single biconditional.  This inference is
        reminiscent of ~ jadc .  (Contributed by Jim Kingdon, 4-May-2018.) $)
     bijadc $p |- ( DECID ps -> ( ( ph <-> ps ) -> ch ) ) $=
       ( wb bi2 syli wn bi1 con3d pm2.61ddc ) ABFZBCBMACABGDHBIMAICMABABJKEHL $.
@@ -62545,10 +62545,10 @@ $)
   dcdc $p |- ( DECID DECID ph <-> DECID ph ) $=
     ( wdc wn wo df-dc nndc biorfi bitr4i ) ABZBIICZDIIEJIAFGH $.
 
-  $( Definition of ` TEST ` .  This definition is not very useful in terms of
-     number of tokens saved and readability added, since one can mentally
-     replace everywhere the string ` TEST ` with the string ` DECID -. ` .
-     (Contributed by BJ, 9-Oct-2019.) $)
+  $( Definition of the testability predicate ` TEST ` .  This definition is not
+     very useful in terms of number of tokens saved and readability added,
+     since one can replace everywhere the string ` TEST ` with the string
+     ` DECID -. ` .  (Contributed by BJ, 9-Oct-2019.) $)
   bj-df-test $p |- ( TEST ph <-> DECID -. ph ) $=
     ( wtest wn wo wdc df-test df-dc bitr4i ) ABACZICDIEAFIGH $.
 
@@ -63260,7 +63260,8 @@ $)
     bdsbc $p |- Bdd [. y / x ]. ph $=
       ( wsb cv wsbc ax-bdsb sbsbc bd0 ) ABCEABCFGABCDHABCIJ $.
 
-    $( Alternate proof of ~ bdsbc .  (Contributed by BJ, 16-Oct-2019.) $)
+    $( Alternate proof of ~ bdsbc .  (Contributed by BJ, 16-Oct-2019.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     bdsbcALT $p |- Bdd [. y / x ]. ph $=
       ( cv cab wcel wsbc bdab df-sbc bd0r ) CEZABFGABLHACBDIABLJK $.
   $}
