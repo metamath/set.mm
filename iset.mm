@@ -61762,6 +61762,16 @@ $)
       UGUHUPVLVMVNABDCUIABCUJABDCUKUMVBUSDCUNUO $.
   $}
 
+  ${
+    $d x y $.
+    $( The positive real number 'one'.  (Contributed by NM, 13-Mar-1996.)
+       (Revised by Mario Carneiro, 12-Jun-2013.) $)
+    1pr $p |- 1P e. P. $=
+      ( vx vy c1p c1q cltq wbr cab cop cnp df-i1p breq2 cbvabv opeq2i eqtri cnq
+      cv wcel 1nq nqprlu ax-mp eqeltri ) CAPZDEFAGZDUBEFZAGZHZICUCDBPZEFZBGZHUF
+      BAJUIUEUCUHUDBAUGUBDEKLMNDOQUFIQRADSTUA $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
