@@ -15186,6 +15186,7 @@ New usage of "dfiop2" is discouraged (3 uses).
 New usage of "dfnotOLD" is discouraged (0 uses).
 New usage of "dfpjop" is discouraged (4 uses).
 New usage of "dfprm2OLD" is discouraged (0 uses).
+New usage of "dfral2OLD" is discouraged (0 uses).
 New usage of "dfsup2OLD" is discouraged (1 uses).
 New usage of "dfsup3OLD" is discouraged (0 uses).
 New usage of "dftru2" is discouraged (0 uses).
@@ -18802,6 +18803,7 @@ Proof modification of "deg1valOLD" is discouraged (145 steps).
 Proof modification of "demoivreALT" is discouraged (1087 steps).
 Proof modification of "dfbi1ALT" is discouraged (100 steps).
 Proof modification of "dfnotOLD" is discouraged (17 steps).
+Proof modification of "dfral2OLD" is discouraged (14 steps).
 Proof modification of "dfsup2OLD" is discouraged (307 steps).
 Proof modification of "dfsup3OLD" is discouraged (110 steps).
 Proof modification of "dfvd1imp" is discouraged (10 steps).
