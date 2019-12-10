@@ -63780,7 +63780,8 @@ $)
     ( cvv cdif c0 bdcvv bdcdif df-nul bdceqir ) AABCAADDEFG $.
 
   ${
-    $( Boundedness lemma.  (Contributed by BJ, 21-Nov-2019.) $)
+    $( Boundedness of the formula expressing that a setvar is equal to the
+       empty class.  (Contributed by BJ, 21-Nov-2019.) $)
     bdeq0 $p |- Bdd x = (/) $=
       ( cv c0 wss wceq bdcnul bdss 0ss eqss mpbiran2 bd0r ) ABZCDZLCEZACFGNMCLD
       LHLCIJK $.
@@ -63898,7 +63899,8 @@ $)
 
   ${
     $d x y $.
-    $( Boundedness lemma.  (Contributed by BJ, 21-Nov-2019.) $)
+    $( Boundedness of the formula expressing that a setvar is equal to the
+       successor of another.  (Contributed by BJ, 21-Nov-2019.) $)
     bdeqsuc $p |- Bdd x = suc y $=
       ( cv csuc wss wa wceq bdcsuc bdss csn cun bdcv bdsnss ax-bdan unss df-suc
       bd0 sseq1i bd0r eqss ) ACZBCZDZEZUCUAEZFUAUCGUDUEAUCBHIUBUBJZKZUAEZUEUBUA
@@ -63984,7 +63986,7 @@ $)
     bdsepnf.1 $e |- Bdd ph $.
     $( Version of ~ ax-bdsep with one DV condition removed, the other DV
        condition replaced by a non-freeness hypothesis, and without initial
-       universal quantifier.  See also ~ bdsepnf .  (Contributed by BJ,
+       universal quantifier.  See also ~ bdsepnfALT .  (Contributed by BJ,
        5-Oct-2019.) $)
     bdsepnf $p |- E. b A. x ( x e. b <-> ( x e. a /\ ph ) ) $=
       ( wnf wel wa wb wal wex bdsepnft mpg ) ADGBDHBCHAIJBKDLBABCDFMEN $.
@@ -64488,7 +64490,7 @@ $)
        of the special set we want (the set of natural numbers), instead of the
        existence of a set with some properties ( ~ ax-iinf ) from which one
        then proves ( ~ omex ) using full separation that the wanted set
-       exists.  "vn" is for "NVon Neumann".  See also ~ ax-inf2 .  (Contributed
+       exists.  "vn" is for "Von Neumann".  See also ~ ax-inf2 .  (Contributed
        by BJ, 14-Nov-2019.) $)
     ax-infvn $a |- E. x ( Ind x /\ A. y ( Ind y -> x C_ y ) ) $.
   $}
@@ -64885,9 +64887,9 @@ $)
   ${
     $d A x y z $.
     $( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (use more deduction
-       style) .  (Contributed by BJ, 8-Dec-2019.) $)
+       style).  (Contributed by BJ, 8-Dec-2019.) $)
     bj-inf2vnlem1 $p |-
- ( A. x ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> Ind A ) $=
+         ( A. x ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> Ind A ) $=
       ( vz cv wcel c0 wceq csuc wrex wo wb wal wral wi wex eleq1 3syl alimi syl
       wind wa bi2 ax-io biimpi ax-ia1 mpbidi exim 0ex isseti pm2.27 ax-mp bj-ex
       simprd eqid suceq eqeq2d rspcev mpan2 bj-sucex eqeq1 rexbidv imbi12d spcv
