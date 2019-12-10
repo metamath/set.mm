@@ -59321,6 +59321,18 @@ $)
       NXTXQUUTWNWOWJWKWBVOWFUOVPWD $.
   $}
 
+  $( Ordering property of addition for positive fractions.  One direction of
+     ~ ltanqg .  (Contributed by Jim Kingdon, 9-Dec-2019.) $)
+  ltanqi $p |- ( ( A <Q B /\ C e. Q. ) -> ( C +Q A ) <Q ( C +Q B ) ) $=
+    ( cltq wbr cnq wcel wa cplq co simpl ltrelnq brel ltanqg 3expa sylan mpbid
+    wb ) ABDEZCFGZHSCAIJCBIJDEZSTKSAFGZBFGZHTSUARZABFFDLMUBUCTUDABCNOPQ $.
+
+  $( Ordering property of multiplication for positive fractions.  One direction
+     of ~ ltmnqg .  (Contributed by Jim Kingdon, 9-Dec-2019.) $)
+  ltmnqi $p |- ( ( A <Q B /\ C e. Q. ) -> ( C .Q A ) <Q ( C .Q B ) ) $=
+    ( cltq wbr cnq wcel wa cmq co simpl ltrelnq brel ltmnqg 3expa sylan mpbid
+    wb ) ABDEZCFGZHSCAIJCBIJDEZSTKSAFGZBFGZHTSUARZABFFDLMUBUCTUDABCNOPQ $.
+
   $( Ordering property of addition for positive fractions.  (Contributed by Jim
      Kingdon, 7-Dec-2019.) $)
   lt2addnq $p |- ( ( ( A e. Q. /\ B e. Q. ) /\ ( C e. Q. /\ D e. Q. ) ) ->
