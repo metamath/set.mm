@@ -14024,6 +14024,7 @@ New usage of "axcnex" is discouraged (0 uses).
 New usage of "axcnre" is discouraged (0 uses).
 New usage of "axdc" is discouraged (0 uses).
 New usage of "axdistr" is discouraged (0 uses).
+New usage of "axext3OLD" is discouraged (0 uses).
 New usage of "axhcompl-zf" is discouraged (0 uses).
 New usage of "axhfi-zf" is discouraged (0 uses).
 New usage of "axhfvadd-zf" is discouraged (0 uses).
@@ -18511,6 +18512,7 @@ Proof modification of "axc5sp1" is discouraged (11 steps).
 Proof modification of "axc711" is discouraged (37 steps).
 Proof modification of "axc711to11" is discouraged (32 steps).
 Proof modification of "axc711toc7" is discouraged (37 steps).
+Proof modification of "axext3OLD" is discouraged (57 steps).
 Proof modification of "axnul" is discouraged (52 steps).
 Proof modification of "axnulALT" is discouraged (95 steps).
 Proof modification of "axpowndlem2OLD" is discouraged (440 steps).
