@@ -1,4 +1,4 @@
-$( iset.mm - Version of 7-Dec-2019
+$( iset.mm - Version of 8-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -61668,6 +61668,108 @@ $)
       WKFQZGQZURZUPEFGHIABOTDWKWNUQVGVLWHWIWJVLWEWGEFGHIABJKOTDCWKWNEQZWLWMUSZW
       OWLUTZABJQZKQZWOVAVBEFGHIABJKOTDCWKWNWPWQABWRWSWOVCVDVEEFGHIABOTCWKWNWPWQ
       VFABDCVHVIVMDCVJVK $.
+  $}
+
+  ${
+    $d x y z f g h A $.  $d x y z f g h B $.  $d x y z w v u f g h $.
+    $( Value of addition on positive reals.  (Contributed by Jim Kingdon,
+       8-Dec-2019.) $)
+    plpvlu $p |- ( ( A e. P. /\ B e. P. ) -> ( A +P. B ) = <.
+        { x e. Q. | E. y e. ( 1st ` A ) E. z e. ( 1st ` B ) x = ( y +Q z ) } ,
+        { x e. Q. | E. y e. ( 2nd ` A ) E. z e. ( 2nd ` B ) x = ( y +Q z ) }
+        >. ) $=
+      ( vf vg vh vw vv cpp cplq df-iplp cv addclnq genipv ) FGHIJDEKLCBAIJHGFMG
+      NHNOP $.
+
+    $( Value of multiplication on positive reals.  (Contributed by Jim Kingdon,
+       8-Dec-2019.) $)
+    mpvlu $p |- ( ( A e. P. /\ B e. P. ) -> ( A .P. B ) = <.
+        { x e. Q. | E. y e. ( 1st ` A ) E. z e. ( 1st ` B ) x = ( y .Q z ) } ,
+        { x e. Q. | E. y e. ( 2nd ` A ) E. z e. ( 2nd ` B ) x = ( y .Q z ) }
+        >. ) $=
+      ( vf vg vh vw vv cmp cmq df-imp cv mulclnq genipv ) FGHIJDEKLCBAIJHGFMGNH
+      NOP $.
+
+    $( Domain of addition on positive reals.  (Contributed by NM,
+       18-Nov-1995.) $)
+    dmplp $p |- dom +P. = ( P. X. P. ) $=
+      ( vv vw vz vx vy cpp cplq df-iplp cv addclnq genipdm ) ABCDEFGDECBAHBICIJ
+      K $.
+
+    $( Domain of multiplication on positive reals.  (Contributed by NM,
+       18-Nov-1995.) $)
+    dmmp $p |- dom .P. = ( P. X. P. ) $=
+      ( vv vw vz vx vy cmp cmq df-imp cv mulclnq genipdm ) ABCDEFGDECBAHBICIJK
+      $.
+  $}
+
+  ${
+    $d A x y z n r q $.
+    $( A cut produced from a rational is inhabited.  Lemma for ~ nqprlu .
+       (Contributed by Jim Kingdon, 8-Dec-2019.) $)
+    nqprm $p |- ( A e. Q. -> ( E. q e. Q. q e. { x | x <Q A }
+        /\ E. r e. Q. r e. { x | A <Q x } ) ) $=
+      ( vn cnq wcel cv cltq wbr cab wrex vex elab rexbii sylibr cnpi c1o ceq wa
+      nsmallnqq breq1 cop cec wex archnqq sylib cxp cqs 1pi opelxpi ecelqsi syl
+      df-rex enqex mpan2 df-nqqs syl6eleqr breq2 rspcev sylan exlimiv jca ) BFG
+      ZDHZAHZBIJZAKGZDFLZCHZBVFIJZAKGZCFLZVDVEBIJZDFLVIDBUAVHVNDFVGVNAVEDMVFVEB
+      IUBNOPVDBVJIJZCFLZVMVDEHZQGZBVQRUCZSUDZIJZTZEUEZVPVDWAEQLWCEBUFWAEQUNUGWB
+      VPEVRVTFGWAVPVRVTQQUHZSUIZFVRRQGZVTWEGZUJVRWFTVSWDGWGVQRQQUKWDVSSUOULUMUP
+      UQURVOWACVTFVJVTBIUSUTVAVBUMVLVOCFVKVOAVJCMVFVJBIUSNOPVC $.
+
+    $( A cut produced from a rational is rounded.  Lemma for ~ nqprlu .
+       (Contributed by Jim Kingdon, 8-Dec-2019.) $)
+    nqprrnd $p |- ( A e. Q. -> ( A. q e. Q. ( q e. { x | x <Q A }
+        <-> E. r e. Q. ( q <Q r /\ r e. { x | x <Q A } ) )
+        /\ A. r e. Q. ( r e. { x | A <Q x }
+        <-> E. q e. Q. ( q <Q r /\ q e. { x | A <Q x } ) ) ) ) $=
+      ( cnq wcel cv cltq wbr cab wa wrex wral ltbtwnnqq rexbii vex breq2 anbi2i
+      wb elab ancom bitri 3bitr4i rgenw a1i breq1 jctil ) BEFZCGZBAGZHIZAJZFZDG
+      ZUIHIZUNULFZKZDELZSZCEMZUNUJBHIZAJZFZUOUIVBFZKZCELZSZDEMUTUHUSCEBUIHIZUOB
+      UNHIZKZDELZUMURVHVIUOKZDELVKDBUINVLVJDEVIUOUAOUBUKVHAUICPZUJUIBHQTUQVJDEU
+      PVIUOUKVIAUNDPZUJUNBHQTROUCUDUEVGDEUNBHIZUOUIBHIZKZCELVCVFCUNBNVAVOAUNVNU
+      JUNBHUFTVEVQCEVDVPUOVAVPAUIVMUJUIBHUFTROUCUDUG $.
+
+    $( A cut produced from a rational is disjoint.  Lemma for ~ nqprlu .
+       (Contributed by Jim Kingdon, 8-Dec-2019.) $)
+    nqprdisj $p |- ( A e. Q. -> A. q e. Q.
+        -. ( q e. { x | x <Q A } /\ q e. { x | A <Q x } ) ) $=
+      ( cv cltq wbr cab wcel wa cnq wral ltsonq ltrelnq son2lpi vex breq1 breq2
+      wn elab anbi12i mtbir rgenw a1i ) CDZADZBEFZAGHZUDBUEEFZAGHZIZRZCJKBJHUKC
+      JUJUDBEFZBUDEFZIUDBEJLMNUGULUIUMUFULAUDCOZUEUDBEPSUHUMAUDUNUEUDBEQSTUAUBU
+      C $.
+
+    $( A cut produced from a rational is located.  Lemma for ~ nqprlu .
+       (Contributed by Jim Kingdon, 8-Dec-2019.) $)
+    nqprloc $p |- ( A e. Q. -> A. q e. Q. A. r e. Q. ( q <Q r
+        -> ( q e. { x | x <Q A } \/ r e. { x | A <Q x } ) ) ) $=
+      ( cnq wcel cv cltq wbr cab wo wi wral wceq w3o vex breq1 elab ralrimiva
+      wa nqtri3or ancoms ad2antrr biimpri orcd a1i simpr syl5ibcom breq2 sylbir
+      olc syl6 ltsonq ltrelnq sotri syl expcom adantl 3jaod mpd ex ) BEFZDGZCGZ
+      HIZVCAGZBHIZAJFZVDBVFHIZAJFZKZLZCEMDEVBVCEFZTZVLCEVNVDEFZTZVEVKVPVETZVCBH
+      IZVCBNZBVCHIZOZVKVNWAVOVEVMVBWAVCBUAUBUCVQVRVKVSVTVRVKLVQVRVHVJVHVRVGVRAV
+      CDPVFVCBHQRUDUEUFVQVSBVDHIZVKVQVEVSWBVPVEUGVCBVDHQUHWBVJVKVIWBAVDCPVFVDBH
+      UIRVJVHUKUJZULVEVTVKLVPVTVEVKVTVETWBVKBVCVDHEUMUNUOWCUPUQURUSUTVASS $.
+
+    $( The canonical embedding of the rationals into the reals.  (Contributed
+       by Jim Kingdon, 8-Dec-2019.) $)
+    nqprlu $p |- ( A e. Q. -> <. { x | x <Q A } , { x | A <Q x } >. e. P. ) $=
+      ( vq vr cnq wcel cv cltq wbr cab wa wrex wb wral wn wo ltrelnq brel abssi
+      wss w3a cop cnp nqprm simpld simprd pm3.2i jctil nqprrnd nqprdisj nqprloc
+      wi 3jca elinp sylanbrc ) BEFZAGZBHIZAJZETZBUQHIZAJZETZKZCGZUSFZCELDGZVBFZ
+      DELKZKVFVEVGHIZVGUSFKDELMCENVHVJVEVBFZKCELMDENKZVFVKKOCENZVJVFVHPULDENCEN
+      ZUAUSVBUBUCFUPVIVDABDCUDUTVCURAEURUQEFZUPUQBEEHQRUESVAAEVAUPVOBUQEEHQRUFS
+      UGUHUPVLVMVNABDCUIABCUJABDCUKUMVBUSDCUNUO $.
+  $}
+
+  ${
+    $d x y $.
+    $( The positive real number 'one'.  (Contributed by NM, 13-Mar-1996.)
+       (Revised by Mario Carneiro, 12-Jun-2013.) $)
+    1pr $p |- 1P e. P. $=
+      ( vx vy c1p c1q cltq wbr cab cop cnp df-i1p breq2 cbvabv opeq2i eqtri cnq
+      cv wcel 1nq nqprlu ax-mp eqeltri ) CAPZDEFAGZDUBEFZAGZHZICUCDBPZEFZBGZHUF
+      BAJUIUEUCUHUDBAUGUBDEKLMNDOQUFIQRADSTUA $.
   $}
 
 $(
