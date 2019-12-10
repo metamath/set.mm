@@ -64526,7 +64526,7 @@ $)
   ${
     $d x y z a $.
     $( A sufficient condition for ` _om ` to be a set.  TODO: replace the
-       setvar ` a ` with a class term ` A ` (which is a set).  (Contributed by
+       setvar ` a ` with a class term ` A ` (which is a set). TODO use lem3 instead of lem2.  (Contributed by
        BJ, 8-Dec-2019.) $)
     bj-inf2vn $p |-
        ( A. x ( x e. a <-> ( x = (/) \/ E. y e. a x = suc y ) ) -> a = _om ) $=
@@ -64554,6 +64554,26 @@ $)
       ( com wcel c0 wceq cv csuc wo nn0suc peano1 eleq1 mpbiri bj-peano2 eleq1a
       wrex imp sylan rexlimiva jaoi impbii ) BCDZBEFZBAGZHZFZACPZIABJUCUBUGUCUB
       ECDKBECLMUFUBACUDCDUECDZUFUBUDNUHUFUBUECBOQRSTUA $.
+$(
+50::ax-inf2              |- E. a A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) )
+51::bj-inf2vn                        |- ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) -> a = _om )
+52::ax-4                                      |- ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) -> ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) )
+53:52:a1i                                  |- ( a = _om -> ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) -> ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) ) )
+54::a17d                                   |- ( a = _om -> ( ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) -> A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) ) )
+55:53,54:impbid                         |- ( a = _om -> ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) <-> ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) ) )
+!56::                                      |- ( a = _om -> ( y e. a <-> A e. _om ) )
+!57::                                      |- ( a = _om -> ( ( y = (/) \/ E. z e. a y = suc z ) <-> ( A = (/) \/ E. x e. _om A = suc x ) ) )
+58:56,57:bibi12d                        |- ( a = _om -> ( ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) <-> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) )
+59:55,58:bitrd                       |- ( a = _om -> ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) <-> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) )
+60:51,59:syl                      |- ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) -> ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) <-> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) )
+61:60:biimpd                   |- ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) -> ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) -> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) )
+62::pm2.43                     |- ( ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) -> ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) -> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) ) -> ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) -> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) )
+63:61,62:ax-mp              |- ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) -> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) )
+64:63:eximi              |- ( E. a A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) -> E. a ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) )
+65:50,64:ax-mp        |- E. a ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) )
+66::bj-ex             |- ( E. a ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) -> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) )
+qed:65,66:ax-mp    |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) )
+$)
   $}
 
 $(
