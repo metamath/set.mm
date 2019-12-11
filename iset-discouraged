@@ -44,6 +44,7 @@
 "alrimih" is used by "sb6rf".
 "alrimih" is used by "sbbid".
 "ax-10o" is used by "ax10".
+"ax-infvnALT" is used by "bj-omexALT".
 "df-ilim" is used by "dflim2".
 "df-iom" is used by "dfom3".
 "df-iord" is used by "dford3".
@@ -151,6 +152,7 @@ New usage of "alrimih" is discouraged (25 uses).
 New usage of "ax-10o" is discouraged (1 uses).
 New usage of "ax-11o" is discouraged (0 uses).
 New usage of "ax-16" is discouraged (0 uses).
+New usage of "ax-infvnALT" is discouraged (1 uses).
 New usage of "ax10" is discouraged (0 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
@@ -217,6 +219,7 @@ Proof modification of "bj-axun2" is discouraged (47 steps).
 Proof modification of "bj-bdfindes" is discouraged (121 steps).
 Proof modification of "bj-bdfindis" is discouraged (84 steps).
 Proof modification of "bj-bdfindisg" is discouraged (44 steps).
+Proof modification of "bj-ex" is discouraged (31 steps).
 Proof modification of "bj-exlimmp" is discouraged (34 steps).
 Proof modification of "bj-exlimmpi" is discouraged (11 steps).
 Proof modification of "bj-findeslem0" is discouraged (76 steps).
@@ -226,15 +229,18 @@ Proof modification of "bj-inex" is discouraged (151 steps).
 Proof modification of "bj-intexr" is discouraged (31 steps).
 Proof modification of "bj-intnexr" is discouraged (16 steps).
 Proof modification of "bj-nalset" is discouraged (105 steps).
-Proof modification of "bj-nn0suc" is discouraged (148 steps).
+Proof modification of "bj-nn0suc" is discouraged (58 steps).
 Proof modification of "bj-nn0suc0" is discouraged (122 steps).
+Proof modification of "bj-nn0suc1" is discouraged (93 steps).
+Proof modification of "bj-nn0sucALT" is discouraged (47 steps).
 Proof modification of "bj-nnelirr" is discouraged (261 steps).
 Proof modification of "bj-nnen2lp" is discouraged (52 steps).
 Proof modification of "bj-nntrans" is discouraged (222 steps).
 Proof modification of "bj-nntrans2" is discouraged (33 steps).
 Proof modification of "bj-nvel" is discouraged (11 steps).
-Proof modification of "bj-om" is discouraged (151 steps).
+Proof modification of "bj-om" is discouraged (101 steps).
 Proof modification of "bj-omex" is discouraged (25 steps).
+Proof modification of "bj-omex2" is discouraged (36 steps).
 Proof modification of "bj-omexALT" is discouraged (144 steps).
 Proof modification of "bj-omssind" is discouraged (44 steps).
 Proof modification of "bj-peano2" is discouraged (15 steps).
@@ -242,6 +248,7 @@ Proof modification of "bj-peano4" is discouraged (168 steps).
 Proof modification of "bj-prexg" is discouraged (65 steps).
 Proof modification of "bj-snex" is discouraged (12 steps).
 Proof modification of "bj-snexg" is discouraged (22 steps).
+Proof modification of "bj-ssom" is discouraged (70 steps).
 Proof modification of "bj-sucex" is discouraged (12 steps).
 Proof modification of "bj-sucexg" is discouraged (42 steps).
 Proof modification of "bj-unex" is discouraged (33 steps).
