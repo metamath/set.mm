@@ -1,4 +1,4 @@
-$( iset.mm - Version of 10-Dec-2019
+$( iset.mm - Version of 11-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -61994,6 +61994,25 @@ $)
       FQZGQZUNZUOEFGHIABOTDWKWNUPUSVLWHWIWJVLWEWGEFGHIABJKOTDCWKWNEQZWLWMUTZWOW
       LVAZABJQZKQZWOVBVCEFGHIABJKOTDCWKWNWPWQABWRWSWOVDVEVGEFGHIABOTCWKWNWPWQVF
       ABDCVHVIVMDCVJVK $.
+  $}
+
+  ${
+    $d f g h v w x y z $.  $d f g h x y z A $.  $d f g h x y z B $.
+    $d f g h x y z C $.
+    $( Addition of positive reals is commutative.  Proposition 9-3.5(ii) of
+       [Gleason] p. 123.  (Contributed by Jim Kingdon, 11-Dec-2019.) $)
+    addcomprg $p |- ( ( A e. P. /\ B e. P. ) -> ( A +P. B ) = ( B +P. A ) ) $=
+      ( vx vy vz cnp wcel wa cv wceq cfv wrex cnq crab cop sylan sylan2 anassrs
+      co rexbidva cplq c1st c2nd wb prop elprnql addcomnqg eqeq2d ancoms rexcom
+      cpp syl6bb rabbidv elprnqu opeq12d plpvlu 3eqtr4rd ) AFGZBFGZHZCIZDIZEIZU
+      ASZJZEAUBKZLZDBUBKZLZCMNZVEEAUCKZLZDBUCKZLZCMNZOZVAVCVBUASZJZDVHLEVFLZCMN
+      ZVRDVMLEVKLZCMNZOBAUKSZABUKSUTVJVTVOWBUTVIVSCMUTVIVREVFLZDVHLVSUTVGWDDVHU
+      RUSVBVHGZVGWDUDZUSWEHURVBMGZWFUSVHVMOFGZWEWGBUEZVBVMVHUFPWGURWFWGURHZVEVR
+      EVFWGURVCVFGZVEVRUDZURWKHWGVCMGZWLURVFVKOFGZWKWMAUEZVCVKVFUFPWGWMHVDVQVAV
+      BVCUGUHZQRTUIQRTVRDEVHVFUJULUMUTVNWACMUTVNVREVKLZDVMLWAUTVLWQDVMURUSVBVMG
+      ZVLWQUDZUSWRHURWGWSUSWHWRWGWIVBVMVHUNPWGURWSWJVEVREVKWGURVCVKGZWLURWTHWGW
+      MWLURWNWTWMWOVCVKVFUNPWPQRTUIQRTVRDEVMVKUJULUMUOUSURWCVPJCDEBAUPUICEDABUP
+      UQ $.
   $}
 
 $(
