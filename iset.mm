@@ -1,4 +1,4 @@
-$( iset.mm - Version of 8-Dec-2019
+$( iset.mm - Version of 10-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -59321,6 +59321,18 @@ $)
       NXTXQUUTWNWOWJWKWBVOWFUOVPWD $.
   $}
 
+  $( Ordering property of addition for positive fractions.  One direction of
+     ~ ltanqg .  (Contributed by Jim Kingdon, 9-Dec-2019.) $)
+  ltanqi $p |- ( ( A <Q B /\ C e. Q. ) -> ( C +Q A ) <Q ( C +Q B ) ) $=
+    ( cltq wbr cnq wcel wa cplq co simpl ltrelnq brel ltanqg 3expa sylan mpbid
+    wb ) ABDEZCFGZHSCAIJCBIJDEZSTKSAFGZBFGZHTSUARZABFFDLMUBUCTUDABCNOPQ $.
+
+  $( Ordering property of multiplication for positive fractions.  One direction
+     of ~ ltmnqg .  (Contributed by Jim Kingdon, 9-Dec-2019.) $)
+  ltmnqi $p |- ( ( A <Q B /\ C e. Q. ) -> ( C .Q A ) <Q ( C .Q B ) ) $=
+    ( cltq wbr cnq wcel wa cmq co simpl ltrelnq brel ltmnqg 3expa sylan mpbid
+    wb ) ABDEZCFGZHSCAIJCBIJDEZSTKSAFGZBFGZHTSUARZABFFDLMUBUCTUDABCNOPQ $.
+
   $( Ordering property of addition for positive fractions.  (Contributed by Jim
      Kingdon, 7-Dec-2019.) $)
   lt2addnq $p |- ( ( ( A e. Q. /\ B e. Q. ) /\ ( C e. Q. /\ D e. Q. ) ) ->
@@ -61770,6 +61782,218 @@ $)
       ( vx vy c1p c1q cltq wbr cab cop cnp df-i1p breq2 cbvabv opeq2i eqtri cnq
       cv wcel 1nq nqprlu ax-mp eqeltri ) CAPZDEFAGZDUBEFZAGZHZICUCDBPZEFZBGZHUF
       BAJUIUEUCUHUDBAUGUBDEKLMNDOQUFIQRADSTUA $.
+  $}
+
+  ${
+    $d A m $.  $d B m $.  $d C m $.
+    $( Approximate division for positive rationals.  Proposition 12.7 of
+       [BauerTaylor], p. 55 (a special case where ` A ` and ` B ` are positive,
+       as well as ` C ` ).  Our proof is simpler than the one in BauerTaylor
+       because we have reciprocals.  (Contributed by Jim Kingdon,
+       8-Dec-2019.) $)
+    appdivnq $p |- ( ( A <Q B /\ C e. Q. ) ->
+        E. m e. Q. ( A <Q ( m .Q C ) /\ ( m .Q C ) <Q B ) ) $=
+      ( cltq wbr cnq wcel wa cmq co adantr ltmnqg syl3anc syl2anc c1q mulcomnqg
+      wb wceq bitrd crq cv wrex simpl ltrelnq brel simpld simprd recclnq adantl
+      cfv mpbid ltbtwnnqq sylib mulclnq simpr simplr recidnq ad2antlr mulassnqg
+      oveq1d 1nq mpan mulidnq syl 3eqtr3d breq1d breq2d anbi12d biimpd reximdva
+      eqtrd mpd ) ABEFZCGHZIZCUAUKZAJKZDUBZEFZVSVQBJKZEFZIZDGUCZAVSCJKZEFZWEBEF
+      ZIZDGUCVPVRWAEFZWDVPVNWIVNVOUDVPAGHZBGHZVQGHZVNWIRVPWJWKVNWJWKIVOABGGEUEU
+      FLZUGZVPWJWKWMUHZVOWLVNCUIUJZABVQMNULDVRWAUMUNVPWCWHDGVPVSGHZIZWCWHWRWCAC
+      VSJKZEFZWSBEFZIWHWRVTWTWBXAWRVTCVRJKZWSEFZWTWRVRGHZWQVOVTXCRWRWLWJXDVPWLW
+      QWPLZVPWJWQWNLZVQAUOOVPWQUPZVNVOWQUQZVRVSCMNWRXBAWSEWRCVQJKZAJKZPAJKZXBAV
+      OXJXKSVNWQVOXIPAJCURZVAUSWRVOWLWJXJXBSXHXEXFCVQAUTNWRWJXKASXFWJXKAPJKZAPG
+      HZWJXKXMSVBPAQVCAVDVLVEVFVGTWRWBWSCWAJKZEFZXAWRWQWAGHZVOWBXPRXGWRWLWKXQXE
+      VPWKWQWOLZVQBUOOXHVSWACMNWRXOBWSEWRXIBJKZPBJKZXOBVOXSXTSVNWQVOXIPBJXLVAUS
+      WRVOWLWKXSXOSXHXEXRCVQBUTNWRWKXTBSXRWKXTBPJKZBXNWKXTYASVBPBQVCBVDVLVEVFVH
+      TVIWRWTWFXAWGWRWSWEAEWRVOWQWSWESXHXGCVSQOZVHWRWSWEBEYBVGVITVJVKVM $.
+  $}
+
+  ${
+    $d B m x $.  $d C m x $.
+    $( Approximate division for positive rationals.  This can be thought of as
+       a variation of ~ appdivnq in which ` A ` is zero, although it can be
+       stated and proved in terms of positive rationals alone, without zero as
+       such.  (Contributed by Jim Kingdon, 9-Dec-2019.) $)
+    appdiv0nq $p |- ( ( B e. Q. /\ C e. Q. ) ->
+        E. m e. Q. ( m .Q C ) <Q B ) $=
+      ( vx cnq wcel wa cv cltq wbr cmq co wrex nsmallnqq adantr appdivnq reximi
+      simpr syl ancoms ad2ant2l rexlimddv ) AEFZBEFZGDHZAIJZCHBKLZAIJZCEMZDEUCU
+      FDEMUDDANOUDUFUIUCUEEFUFUDUIUFUDGUEUGIJZUHGZCEMUIUEABCPUKUHCEUJUHRQSTUAUB
+      $.
+  $}
+
+  ${
+    prmuloclemcalc.ru $e |- ( ph -> R <Q U ) $.
+    prmuloclemcalc.udp $e |- ( ph -> U <Q ( D +Q P ) ) $.
+    prmuloclemcalc.axb $e |- ( ph -> ( A +Q X ) = B ) $.
+    prmuloclemcalc.pbrx $e |- ( ph -> ( P .Q B ) <Q ( R .Q X ) ) $.
+    prmuloclemcalc.a $e |- ( ph -> A e. Q. ) $.
+    prmuloclemcalc.b $e |- ( ph -> B e. Q. ) $.
+    prmuloclemcalc.d $e |- ( ph -> D e. Q. ) $.
+    prmuloclemcalc.p $e |- ( ph -> P e. Q. ) $.
+    prmuloclemcalc.x $e |- ( ph -> X e. Q. ) $.
+    $( Calculations for ~ prmuloc .  (Contributed by Jim Kingdon,
+       9-Dec-2019.) $)
+    prmuloclemcalc $p |- ( ph -> ( U .Q A ) <Q ( D .Q B ) ) $=
+      ( co cltq syl2anc cmq wbr cplq oveq2d cnq wcel wceq wa ltrelnq syl simprd
+      brel distrnqg syl3anc eqtr3d ltmnqi breqtrd eqbrtrrd mulclnq ltanqi sotri
+      mulcomnqg ltsonq simpld 3brtr3d addcomnqg wb ltanqg mpbird ) AGBUARZCDUAR
+      ZDCUARZSAVJVKSUBZGHUARZVJUCRZVNVKUCRZSUBZAVJVNUCRZVKVNUCRZVOVPSAGCUARZVRV
+      SSAGBHUCRZUARZVTVRAWACGUAKUDAGUEUFZBUEUFZHUEUFZWBVRUGAFUEUFZWCAFGSUBZWFWC
+      UHIFGUEUESUIULUJZUKZMQGBHUMUNUOACGUARZVTVSSACUEUFZWCWJVTUGNWICGVBTAWJVKFH
+      UARZUCRZSUBZWMVSSUBZWJVSSUBAWJVKCEUARZUCRZSUBWQWMSUBZWNAWJCDEUCRZUARZWQSA
+      GWSSUBWKWJWTSUBJNGWSCUPTAWKDUEUFZEUEUFZWTWQUGNOPCDEUMUNUQAWPWLSUBVKUEUFZW
+      RAECUARZWPWLSAXBWKXDWPUGPNECVBTLURAWKXAXCNOCDUSTZWPWLVKUTTWJWQWMSUEVCUIVA
+      TAWLVNSUBXCWOAHFUARZHGUARZWLVNSAWGWEXFXGSUBIQFGHUPTAWEWFXFWLUGQAWFWCWHVDH
+      FVBTAWEWCXGVNUGQWIHGVBTVEXEWLVNVKUTTWJWMVSSUEVCUIVATURURAVJUEUFZVNUEUFZVR
+      VOUGAWCWDXHWIMGBUSTZAWCWEXIWIQGHUSTZVJVNVFTAXCXIVSVPUGXEXKVKVNVFTVEAXHXCX
+      IVMVQVGXJXEXKVJVKVNVHUNVIAWKXAVKVLUGNOCDVBTUQ $.
+  $}
+
+  ${
+    $d A d p r u x $.  $d B d p r u x $.  $d L d p r u x $.  $d U d p r u x $.
+    $( Positive reals are multiplicatively located.  Lemma 12.8 of
+       [BauerTaylor], p. 56.  (Contributed by Jim Kingdon, 8-Dec-2019.) $)
+    prmuloc $p |- ( ( <. L , U >. e. P. /\ A <Q B ) -> E. d e. Q. E. u e. Q.
+        ( d e. L /\ u e. U /\ ( u .Q A ) <Q ( d .Q B ) ) ) $=
+      ( vx vr vp wcel cltq wbr wa cv co cmq cnq wrex ad2antrr adantlr cplq wceq
+      cop cnp w3a ltrelnq brel ltexnqq biimpd mpcom adantl prml simplrl mulclnq
+      simprl syl2anc simprd appdiv0nq wex prarloc ad2ant2r r2ex elprnql adantrr
+      sylib simplll elprnqu prltlu 3adant1r 3expa simprr simplrr prmuloclemcalc
+      3adant2l 3adant3l simpld df-3an sylanbrc ex 2eximdv mpd sylibr rexlimddv
+      jca31 ) EDUCUDJZBCKLZMZBGNZUAOCUBZFNZEJZANZDJZWLBPOWJCPOKLZUEZAQRFQRZGQWF
+      WIGQRZWEBQJZCQJZMZWFWQBCQQKUFUGZWTWFWQGBCUHUIUJUKWGWHQJZWIMZMZHNZEJZWPHQW
+      EXFHQRWFXCHDEULSXDXEQJZXFMZMZINZCPOXEWHPOZKLZWPIQXIXKQJZWSXLIQRXIXGXBXMXD
+      XGXFUOWGXBWIXHUMZXEWHUNUPWGWSXCXHWFWSWEWFWRWSXAUQUKSZXKCIURUPXIXJQJZXLMZM
+      ZWJQJZWLQJZMWOMZAUSFUSZWPXRWKWMMZWLWJXJUAOKLZMZAUSFUSZYBXRYDADRFERZYFXDXP
+      YGXHXLWGXPYGXCWEXPYGWFXJDEFAUTTTVAYDFAEDVBVEXRYEYAFAXRYEYAXRYEMZXSXTWOXRY
+      CXSYDXIWKXSXQWMXDWKXSXHWGWKXSXCWEWKXSWFWJDEVCTTTVAVDZYHWEWMXTXIWEXQYEWEWF
+      XCXHVFSYHWKWMXRYCYDUOZUQWLDEVGUPYHYCWNWOYJYHBCWJXJXEWLWHXIYCXEWLKLZXQYDXD
+      XHYCYKWGXHYCYKXCWGXHWMYKWKWGXFWMYKXGWEXFWMYKWFXEWLDEVHVIVNVOVIVJVAXRYCYDV
+      KXIWIXQYEWGXBWIXHVLSXIXPXLYEVLXIWRXQYEWGWRXCXHWFWRWEWFWRWSXAVPUKSSXIWSXQY
+      EXOSYIXIXPXLYEUMXIXBXQYEXNSVMWKWMWNVQVRWDVSVTWAWOFAQQVBWBWCWCWC $.
+  $}
+
+  ${
+    $d A g h u v w x y z $.  $d B g h u v w x y z $.  $d G w y z $.
+    $d H w y z $.  $d X w y z $.
+    $( Lemma to prove downward closure in positive real multiplication.
+       (Contributed by Jim Kingdon, 10-Dec-2019.) $)
+    mulnqprl $p |- ( ( ( ( A e. P. /\ G e. ( 1st ` A ) ) /\
+                       ( B e. P. /\ H e. ( 1st ` B ) ) ) /\ X e. Q. ) ->
+                       ( X <Q ( G .Q H ) -> X e. ( 1st ` ( A .P. B ) ) ) ) $=
+      ( vy vz vw cnp wcel cfv wa cnq cmq co cltq wbr syl wceq c1q vx vv crq cmp
+      c1st cv w3a ltmnqg adantl simpr c2nd prop elprnql sylan ad2antrr ad2antlr
+      cop mulclnq syl2anc recclnq mulcomnqg caovord2d mulassnqg syl3anc recidnq
+      wb oveq2d mulidnq 3eqtrd breq2d bitrd wi prcdnql sylbid df-imp genpprecll
+      exp4b com34 imp32 adantlr adantr syld eqtrd eleq1d sylibd ) AIJZCAUEKZJZL
+      ZBIJZDBUEKZJZLZLZEMJZLZECDNOZPQZEDUCKZNOZDNOZABUDOUEKZJZEXBJWPWRWTWGJZXCW
+      PWRWTCPQZXDWPWRWTWQWSNOZPQXEWPFGHEWQWSPMNFUFZMJZGUFZMJZHUFZMJUGXGXIPQXKXG
+      NOXKXINOPQVFWPXGXIXKUHUIWNWOUJZWPCMJZDMJZWQMJWIXMWMWOWFWGAUKKZUQIJZWHXMAU
+      LZCXOWGUMUNUOZWMXNWIWOWJWKBUKKZUQIJWLXNBULDXSWKUMUNUPZCDURUSWPXNWSMJZXTDU
+      TRZXHXJLXGXINOXIXGNOSWPXGXIVAUIVBWPXFCWTPWPXFCDWSNOZNOZCTNOZCWPXMXNYAXFYD
+      SXRXTYBCDWSVCVDWPXNYDYESXTXNYCTCNDVEZVGRWPXMYECSXRCVHRVIVJVKWIXEXDVLZWMWO
+      WFXPWHYGXQCWTXOWGVMUNUOVNWNXDXCVLZWOWFWMYHWHWFWJWLYHWFWJXDWLXCWFWJXDWLXCU
+      AFGHUBABWTDUDNHUBGFUAVOXGXIURVPVQVRVSVTWAWBWPXAEXBWPXAEWSDNOZNOZETNOZEWPW
+      OYAXNXAYJSXLYBXTEWSDVCVDWPYITENWPYIYCTWPYAXNYIYCSYBXTWSDVAUSWPXNYCTSXTYFR
+      WCVGWOYKESWNEVHUIVIWDWE $.
+
+    $( Lemma to prove upward closure in positive real multiplication.
+       (Contributed by Jim Kingdon, 10-Dec-2019.) $)
+    mulnqpru $p |- ( ( ( ( A e. P. /\ G e. ( 2nd ` A ) ) /\
+                       ( B e. P. /\ H e. ( 2nd ` B ) ) ) /\ X e. Q. ) ->
+                       ( ( G .Q H ) <Q X -> X e. ( 2nd ` ( A .P. B ) ) ) ) $=
+      ( vy vz vw cnp wcel cfv wa cnq cmq co cltq wbr syl wceq c1q vx vv crq cmp
+      c2nd cv w3a wb ltmnqg adantl c1st cop prop elprnqu sylan ad2antrr mulclnq
+      ad2antlr syl2anc simpr recclnq mulcomnqg caovord2d syl3anc recidnq oveq2d
+      mulassnqg mulidnq 3eqtrd breq1d bitrd wi prcunqu sylbid df-imp genppreclu
+      exp4b com34 imp32 adantlr adantr syld eqtrd eleq1d sylibd ) AIJZCAUEKZJZL
+      ZBIJZDBUEKZJZLZLZEMJZLZCDNOZEPQZEDUCKZNOZDNOZABUDOUEKZJZEXBJWPWRWTWGJZXCW
+      PWRCWTPQZXDWPWRWQWSNOZWTPQXEWPFGHWQEWSPMNFUFZMJZGUFZMJZHUFZMJUGXGXIPQXKXG
+      NOXKXINOPQUHWPXGXIXKUIUJWPCMJZDMJZWQMJWIXLWMWOWFAUKKZWGULIJZWHXLAUMZCWGXN
+      UNUOUPZWMXMWIWOWJBUKKZWKULIJWLXMBUMDWKXRUNUOURZCDUQUSWNWOUTZWPXMWSMJZXSDV
+      ARZXHXJLXGXINOXIXGNOSWPXGXIVBUJVCWPXFCWTPWPXFCDWSNOZNOZCTNOZCWPXLXMYAXFYD
+      SXQXSYBCDWSVGVDWPXMYDYESXSXMYCTCNDVEZVFRWPXLYECSXQCVHRVIVJVKWIXEXDVLZWMWO
+      WFXOWHYGXPWTCWGXNVMUOUPVNWNXDXCVLZWOWFWMYHWHWFWJWLYHWFWJXDWLXCWFWJXDWLXCU
+      AFGHUBABWTDUDNHUBGFUAVOXGXIUQVPVQVRVSVTWAWBWPXAEXBWPXAEWSDNOZNOZETNOZEWPW
+      OYAXMXAYJSXTYBXSEWSDVGVDWPYITENWPYIYCTWPYAXMYIYCSYBXSWSDVBUSWPXMYCTSXSYFR
+      WCVFWOYKESWNEVHUJVIWDWE $.
+  $}
+
+  ${
+    $d D x y z $.  $d E x y z $.  $d T x y z $.  $d U x y z $.  $d ph x y z $.
+    mullocprlem.ab $e |- ( ph -> ( A e. P. /\ B e. P. ) ) $.
+    mullocprlem.uqedu $e |- ( ph -> ( U .Q Q ) <Q ( E .Q ( D .Q U ) ) ) $.
+    mullocprlem.edutdu $e |- ( ph ->
+      ( E .Q ( D .Q U ) ) <Q ( T .Q ( D .Q U ) ) ) $.
+    mullocprlem.tdudr $e |- ( ph -> ( T .Q ( D .Q U ) ) <Q ( D .Q R ) ) $.
+    mullocprlem.qr $e |- ( ph -> ( Q e. Q. /\ R e. Q. ) ) $.
+    mullocprlem.duq $e |- ( ph -> ( D e. Q. /\ U e. Q. ) ) $.
+    mullocprlem.du $e |- ( ph -> ( D e. ( 1st ` A ) /\ U e. ( 2nd ` A ) ) ) $.
+    mullocprlem.et $e |- ( ph -> ( E e. Q. /\ T e. Q. ) ) $.
+    $( Calculations for ~ mullocpr .  (Contributed by Jim Kingdon,
+       10-Dec-2019.) $)
+    mullocprlem $p |- ( ph -> ( Q e. ( 1st ` ( A .P. B ) ) \/
+        R e. ( 2nd ` ( A .P. B ) ) ) ) $=
+      ( wcel co cmq vx vy vz c1st cfv cmp c2nd wo wa cltq wbr cnq simpld simprd
+      cv wceq mulcomnqg adantl w3a mulassnqg caov13d breqtrd wb mulclnq syl2anc
+      ltmnqg syl3anc mpbird adantr cnp wi jca anim1i mulnqprl syl21anc mpd orcd
+      caov12d breq1d bitr4d eqbrtrrd mulnqpru olcd syl breq12d bitrd prop prloc
+      cop sylan mpjaodan ) AICUDUEZRZEBCUFSZUDUERZFWNUGUERZUHGCUGUEZRZAWMUIZWOW
+      PWSEDITSZUJUKZWOAXAWMAXAHETSZHWTTSZUJUKZAXBIDHTSZTSZXCUJKAUAUBUCIDHULTAIU
+      LRZGULRZQUMZADULRZHULRZOUMZAXJXKOUNZUAUOZULRZUBUOZULRZUIXNXPTSZXPXNTSUPAX
+      NXPUQURZXOXQUCUOZULRUSXRXTTSXNXPXTTSTSUPAXNXPXTUTURZVAVBAEULRZWTULRZXKXAX
+      DVCAYBFULRZNUMZAXJXGYCXLXIDIVDVEXMEWTHVFVGVHVIWSBVJRZDBUDUERZUIZCVJRZWMUI
+      YBXAWOVKAYHWMAYFYGAYFYIJUMZAYGHBUGUERZPUMVLVIAYIWMAYFYIJUNZVMAYBWMYEVIBCD
+      IEVNVOVPVQAWRUIZWPWOYMHGTSZFUJUKZWPAYOWRAGHTSZYNFUJAXHXKYPYNUPAXGXHQUNZXM
+      GHUQVEAYPFUJUKZGXETSZDFTSZUJUKZMAYRDYPTSZYTUJUKZUUAAYPULRZYDXJYRUUCVCAXHX
+      KUUDYQXMGHVDVEAYBYDNUNZXLYPFDVFVGAYSUUBYTUJAUAUBUCGDHULTYQXLXMXSYAVRVSVTV
+      HWAVIYMYFYKUIZYIWRUIYDYOWPVKAUUFWRAYFYKYJAYGYKPUNVLVIAYIWRYLVMAYDWRUUEVIB
+      CHGFWBVOVPWCAYIIGUJUKZWMWRUHZYLAUUGXFYSUJUKZLAUUGXEITSZXEGTSZUJUKZUUIAXGX
+      HXEULRZUUGUULVCXIYQAXJXKUIUUMODHVDWDZIGXEVFVGAUUJXFUUKYSUJAUUMXGUUJXFUPUU
+      NXIXEIUQVEAUUMXHUUKYSUPUUNYQXEGUQVEWEWFVHYIWLWQWIVJRUUGUUHCWGIGWQWLWHWJVE
+      WK $.
+  $}
+
+  ${
+    $d A d e h p q r t u $.  $d B d e h p q r t u $.
+    $( Locatedness of multiplication on positive reals.  Lemma 12.9 in
+       [BauerTaylor], p. 56 (but where both ` A ` and ` B ` are positive, not
+       just ` A ` ).  (Contributed by Jim Kingdon, 8-Dec-2019.) $)
+    mullocpr $p |- ( ( A e. P. /\ B e. P. ) ->
+        A. q e. Q. A. r e. Q. ( q <Q r ->
+          ( q e. ( 1st ` ( A .P. B ) ) \/ r e. ( 2nd ` ( A .P. B ) ) ) ) ) $=
+      ( vd vu ve vt cnp wcel wa cv cltq wbr co cfv cnq cmq wrex ad2antrr cmp wo
+      c1st c2nd wi w3a wex prop prmuloc sylan r2ex sylib adantlr simprr3 simprl
+      cop mulclnq syl appdivnq syl2anc simprrr simplll ad2antlr simprrl simpllr
+      adantr ad2antll simplrl jca mullocprlem rexlimddv exlimdvv mpd ralrimivva
+      3simpa ex ) AIJZBIJZKZDLZCLZMNZVTABUAOZUCPJWAWCUDPJUBZUEDCQQVSVTQJWAQJKZK
+      ZWBWDWFWBKZELZQJFLZQJKZWHAUCPZJZWIAUDPZJZWIVTROZWHWAROZMNZUFZKZFUGEUGZWDV
+      SWBWTWEVQWBWTVRVQWBKWRFQSEQSZWTVQWKWMUPIJWBXAAUHFVTWAWMWKEUIUJWREFQQUKULU
+      MUMWGWSWDEFWGWSWDWGWSKZWOGLZWHWIROZROZMNZXEWPMNZKZWDGQXBWQXDQJZXHGQSWLWNW
+      QWJWGUNXBWJXIWGWJWRUOZWHWIUQURZWOWPXDGUSUTXBXCQJZXHKZKZXEHLZXDROZMNZXPWPM
+      NZKZWDHQXNXGXIXSHQSXBXLXFXGVAXBXIXMXKVFXEWPXDHUSUTXNXOQJZXSKZKZABWHVTWAXO
+      WIXCXBVSXMYAVSWEWBWSVBTXMXFXBYAXLXFXGUOVCXNXTXQXRVDXNXTXQXRVAXBWEXMYAVSWE
+      WBWSVETXBWJXMYAXJTXBWLWNKZXMYAWRYCWGWJWLWNWQVOVGTYBXLXTXBXLXHYAVHXNXTXSUO
+      VIVJVKVKVPVLVMVPVN $.
+  $}
+
+  ${
+    $d A q r t u v w x y z $.  $d B q r t u v w x y z $.
+    $( Closure of multiplication on positive reals.  First statement of
+       Proposition 9-3.7 of [Gleason] p. 124.  (Contributed by NM,
+       13-Mar-1996.) $)
+    mulclpr $p |- ( ( A e. P. /\ B e. P. ) -> ( A .P. B ) e. P. ) $=
+      ( vq vr vx vy vz vw vv vu vt cnp wcel wa cmp cnq cv wrex wral cmq cpw cxp
+      co c1st cfv c2nd cltq wbr wb wn w3a df-imp genpelxp mulclnq genpml genpmu
+      wo wi jca32 ltmnqg mulcomnqg mulnqprl genprndl mulnqpru genprndu genpdisj
+      jca mullocpr 3jca elnp1st2nd sylanbrc ) ALMBLMNZABOUCZPUAZVNUBMZCQZVMUDUE
+      ZMZCPRZDQZVMUFUEZMZDPRZNNVRVPVTUGUHZVTVQMNDPRUICPSZWBWDVPWAMZNCPRUIDPSZNZ
+      VRWFNUJCPSZWDVRWBUQURDPSCPSZUKVMLMVLVOVSWCEFGHIABOTHIGFEULZUMEFGHIABOTCWK
+      FQZGQZUNZUOEFGHIABOTDWKWNUPUSVLWHWIWJVLWEWGEFGHIABJKOTDCWKWNEQZWLWMUTZWOW
+      LVAZABJQZKQZWOVBVCEFGHIABJKOTDCWKWNWPWQABWRWSWOVDVEVGEFGHIABOTCWKWNWPWQVF
+      ABDCVHVIVMDCVJVK $.
   $}
 
 $(
