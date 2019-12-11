@@ -61979,6 +61979,23 @@ $)
       VIVJVKVKVPVLVMVPVN $.
   $}
 
+  ${
+    $d A q r t u v w x y z $.  $d B q r t u v w x y z $.
+    $( Closure of multiplication on positive reals.  First statement of
+       Proposition 9-3.7 of [Gleason] p. 124.  (Contributed by NM,
+       13-Mar-1996.) $)
+    mulclpr $p |- ( ( A e. P. /\ B e. P. ) -> ( A .P. B ) e. P. ) $=
+      ( vq vr vx vy vz vw vv vu vt cnp wcel wa cmp cnq cv wrex wral cmq cpw cxp
+      co c1st cfv c2nd cltq wbr wb wn w3a df-imp genpelxp mulclnq genpml genpmu
+      wo wi jca32 ltmnqg mulcomnqg mulnqprl genprndl mulnqpru genprndu genpdisj
+      jca mullocpr 3jca elnp1st2nd sylanbrc ) ALMBLMNZABOUCZPUAZVNUBMZCQZVMUDUE
+      ZMZCPRZDQZVMUFUEZMZDPRZNNVRVPVTUGUHZVTVQMNDPRUICPSZWBWDVPWAMZNCPRUIDPSZNZ
+      VRWFNUJCPSZWDVRWBUQURDPSCPSZUKVMLMVLVOVSWCEFGHIABOTHIGFEULZUMEFGHIABOTCWK
+      FQZGQZUNZUOEFGHIABOTDWKWNUPUSVLWHWIWJVLWEWGEFGHIABJKOTDCWKWNEQZWLWMUTZWOW
+      LVAZABJQZKQZWOVBVCEFGHIABJKOTDCWKWNWPWQABWRWSWOVDVEVGEFGHIABOTCWKWNWPWQVF
+      ABDCVHVIVMDCVJVK $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
