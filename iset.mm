@@ -33510,8 +33510,9 @@ $)
     $d x y z w a b $.
     ax-coll.1 $e |- F/ b ph $.
     $( Axiom of Collection.  Axiom 7 of [Crosilla], p.  "Axioms of CZF and IZF"
-       (with unnecessary quantifier removed).  (Contributed by Jim Kingdon,
-       23-Aug-2018.) $)
+       (with unnecessary quantifier removed).  It is similar to ~ bnd but uses
+       a freeness hypothesis in place of one of the distinct variable
+       constraints.  (Contributed by Jim Kingdon, 23-Aug-2018.) $)
     ax-coll $a |- ( A. x e. a E. y ph -> E. b A. x e. a E. y e. b ph ) $.
 
     $( Axiom of Replacement.  Axiom 7' of [Crosilla], p.  "Axioms of CZF and
