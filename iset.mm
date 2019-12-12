@@ -63165,6 +63165,7 @@ $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                  Propositional calculus
@@ -63295,7 +63296,7 @@ $(
                  Extensionality
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-Various utility theorems using FOL and extensionality.
+  Various utility theorems using FOL and extensionality.
 
 $)
 
@@ -63480,66 +63481,67 @@ $)
 $( This declaration is simply to be able to display Delta0 in comments. $)
   $c Delta0 $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                  Bounded formulas
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-This is an ongoing project to define bounded formulas, following a discussion
-on GitHub between Jim Kingdon, Mario Carneiro and I, started
-23-Sept-2019 (see ~ https://github.com/metamath/set.mm/issues/1173 and links
-therein).
+  This is an ongoing project to define bounded formulas, following a discussion
+  on GitHub between Jim Kingdon, Mario Carneiro and I, started
+  23-Sept-2019 (see ~ https://github.com/metamath/set.mm/issues/1173 and links
+  therein).
 
-In order to state certain axiom schemes of Constructive Zermelo&ndash;Fraenkel
-(CZF) set theory, like the axiom scheme of bounded (or restricted, or
-` Delta0 ` ) separation, it is necessary to distinguish certain formulas,
-called bounded (or restricted, or ` Delta0 ` ) formulas.  The necessity of
-considering bounded formulas also arises in several theories of bounded
-arithmetic, both classical or intuitonistic, for instance to state the axiom
-scheme of ` Delta0 ` -induction.
+  In order to state certain axiom schemes of Constructive
+  Zermelo&ndash;Fraenkel (CZF) set theory, like the axiom scheme of bounded (or
+  restricted, or ` Delta0 ` ) separation, it is necessary to distinguish
+  certain formulas, called bounded (or restricted, or ` Delta0 ` ) formulas.
+  The necessity of considering bounded formulas also arises in several theories
+  of bounded arithmetic, both classical or intuitonistic, for instance to state
+  the axiom scheme of ` Delta0 ` -induction.
 
-To formalize this in Metamath, there are several choices to make.
+  To formalize this in Metamath, there are several choices to make.
 
-A first choice is to either create a new type for bounded formulas, or to
-create a predicate on formulas that indicates whether they are bounded.
-In the first case, one creates a new type "wff0" with a new set of
-metavariables (ph_0 ...) and an axiom "$a wff ph_0 " ensuring that bounded
-formulas are formulas, so that one can reuse existing theorems, and then axioms
-take the form "$a wff0 ( ph_0 -> ps_0 )", etc.
-In the second case, one introduces a predicate " ` Bdd ` " with the intended
-meaning that " ` Bdd ph ` " is a formula meaning that ` ph ` is a bounded
-formula.
-We choose the second option, since the first would complicate the grammar,
-risking to make it ambiguous.
-(TODO: elaborate.)
+  A first choice is to either create a new type for bounded formulas, or to
+  create a predicate on formulas that indicates whether they are bounded.
+  In the first case, one creates a new type "wff0" with a new set of
+  metavariables (ph_0 ...) and an axiom "$a wff ph_0 " ensuring that bounded
+  formulas are formulas, so that one can reuse existing theorems, and then
+  axioms take the form "$a wff0 ( ph_0 -> ps_0 )", etc.
+  In the second case, one introduces a predicate " ` Bdd ` " with the intended
+  meaning that " ` Bdd ph ` " is a formula meaning that ` ph ` is a bounded
+  formula.
+  We choose the second option, since the first would complicate the grammar,
+  risking to make it ambiguous.
+  (TODO: elaborate.)
 
-A second choice is to view "bounded" either as a syntactic or a semantic
-property.
-For instance, ` A. x T. ` is not syntactically bounded since it has an
-unbounded universal quantifier, but it is semantically bounded since it is
-equivalent to ` T. ` which is bounded.
-We choose the second option, so that formulas using defined symbols can be
-proved bounded.
+  A second choice is to view "bounded" either as a syntactic or a semantic
+  property.
+  For instance, ` A. x T. ` is not syntactically bounded since it has an
+  unbounded universal quantifier, but it is semantically bounded since it is
+  equivalent to ` T. ` which is bounded.
+  We choose the second option, so that formulas using defined symbols can be
+  proved bounded.
 
-A third choice is in the form of the axioms, either in closed form or in
-inference form.
-One cannot state all the axioms in closed form, especially ~ ax-bd0 .
-Indeed, if we posited it in closed form, then we could prove for instance
-` |- ( ph -> Bdd ph ) ` and ` |- ( -. ph -> Bdd ph ) ` which is problematic
-(with the law of excluded middle, this would entail that all formulas are
-bounded, but even without it, too many formulas could be proved bounded...).
-(TODO: elaborate.)
+  A third choice is in the form of the axioms, either in closed form or in
+  inference form.
+  One cannot state all the axioms in closed form, especially ~ ax-bd0 .
+  Indeed, if we posited it in closed form, then we could prove for instance
+  ` |- ( ph -> Bdd ph ) ` and ` |- ( -. ph -> Bdd ph ) ` which is problematic
+  (with the law of excluded middle, this would entail that all formulas are
+  bounded, but even without it, too many formulas could be proved bounded...).
+  (TODO: elaborate.)
 
-Having ~ ax-bd0 in inference form ensures that a formula can be proved bounded
-only if it is equivalent *for all values of the free variables* to a
-syntactically bounded one.
-The other axioms (~ ax-bdim through ~ ax-bdsb ) can be written either in
-closed or inference form.  The fact that ~ ax-bd0 is an inference is enough to
-ensure that the closed forms cannot be "exploited" to prove that some unbounded
-formulas are bounded.
-(TODO: check.)
-However, we state all the axioms in inference form to make it clear that we do
-not exploit any over-permissiveness.
+  Having ~ ax-bd0 in inference form ensures that a formula can be proved
+  bounded only if it is equivalent *for all values of the free variables* to a
+  syntactically bounded one.
+  The other axioms (~ ax-bdim through ~ ax-bdsb ) can be written either in
+  closed or inference form.  The fact that ~ ax-bd0 is an inference is enough
+  to ensure that the closed forms cannot be "exploited" to prove that some
+  unbounded formulas are bounded.
+  (TODO: check.)
+  However, we state all the axioms in inference form to make it clear that we
+  do not exploit any over-permissiveness.
 
 $)
 
@@ -63747,19 +63749,19 @@ $(
                  Bounded classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-In line with our definitions of classes as extensions of predicates, it is
-useful to define a predicate for bounded classes, which is done in ~ df-bdc .
-Note that this notion is only a technical device which can be used to shorten
-proofs of (semantic) boundedness of formulas.
+  In line with our definitions of classes as extensions of predicates, it is
+  useful to define a predicate for bounded classes, which is done in ~ df-bdc .
+  Note that this notion is only a technical device which can be used to shorten
+  proofs of (semantic) boundedness of formulas.
 
-As will be clear by the end of this subsection (see for instance ~ bdop ), one
-can prove the boundedness of any concrete term using only setvars and bounded
-formulas, for instance,
-` |- Bdd ph => `
-` |- Bdd_ <. { x | ph } , ( { y , suc z } X. <. t , (/) >. ) >. ` .
-The proofs are long since one has to prove boundedness at each step of the
-construction, without being able to prove general theorems like
-` |- Bdd_ A => |- Bdd_ { A } ` .
+  As will be clear by the end of this subsection (see for instance ~ bdop ),
+  one can prove the boundedness of any concrete term using only setvars and
+  bounded formulas, for instance,
+  ` |- Bdd ph => `
+  ` |- Bdd_ <. { x | ph } , ( { y , suc z } X. <. t , (/) >. ) >. ` .
+  The proofs are long since one has to prove boundedness at each step of the
+  construction, without being able to prove general theorems like
+  ` |- Bdd_ A => |- Bdd_ { A } ` .
 
 $)
 
@@ -64162,8 +64164,8 @@ $(
                  Bounded separation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-In this section, we state the axiom scheme of bounded separation, which is part
-of CZF set theory.
+  In this section, we state the axiom scheme of bounded separation, which is
+  part of CZF set theory.
 
 $)
 
@@ -64669,9 +64671,9 @@ $(
                  The first three Peano postulates
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-The first three Peano postulates do not require the axiom of infinity.  We
-give constructive proofs (only the proof of the second postulate has to be
-modified).
+  The first three Peano postulates do not require the axiom of infinity.  We
+  give constructive proofs (only the proof of the second postulate has to be
+  modified).
 
 $)
 
@@ -64691,20 +64693,21 @@ $(
                  Axiom of infinity
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-In the absence of full separation, the axiom of infinity has to be stated more
-precisely, as the existence of the smallest class containing the empty set and
-the successor of each of its elements.
+  In the absence of full separation, the axiom of infinity has to be stated
+  more precisely, as the existence of the smallest class containing the empty
+  set and the successor of each of its elements.
 
 $)
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
        The set of natural numbers (finite ordinals)
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-In this section, we introduce the axiom of infinity in a constructive setting
-( ~ ax-infvn ) and deduce that the class ` _om ` of finite ordinals is a set
-( ~ bj-omex ).
+  In this section, we introduce the axiom of infinity in a constructive setting
+  ( ~ ax-infvn ) and deduce that the class ` _om ` of finite ordinals is a set
+  ( ~ bj-omex ).
 
 $)
 
@@ -64768,10 +64771,10 @@ $(
        The remaining two Peano postulates
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-In this section, we give constructive proofs of the remaining two (the fourth
-and fifth) Peano postulates.  More precisely, we prove from the core axioms of
-CZF that the set of finite ordinals satisfies the Peano postulates and thus
-provides a model for the set of natural numbers.
+  In this section, we give constructive proofs of the remaining two (the fourth
+  and fifth) Peano postulates.  More precisely, we prove from the core axioms
+  of CZF that the set of finite ordinals satisfies the Peano postulates and
+  thus provides a model for the set of natural numbers.
 
 $)
 
@@ -64822,8 +64825,8 @@ $(
        Bounded induction
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-In this section, we prove various versions of bounded induction from
-the basic axioms of CZF (in particular, without the axiom of set induction).
+  In this section, we prove various versions of bounded induction from
+  the basic axioms of CZF (in particular, without the axiom of set induction).
 
 $)
 
@@ -65030,16 +65033,17 @@ $(
        Set induction
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-In this section, we add the axiom of set induction to the core axioms of CZF.
+  In this section, we add the axiom of set induction to the core axioms of CZF.
 
 $)
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
        Set induction
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-In this section, we prove some variants of the axiom of set induction.
+  In this section, we prove some variants of the axiom of set induction.
 
 $)
 
@@ -65257,13 +65261,14 @@ qed:65,66:ax-mp    |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) )
 $)
   $}
 
+
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
        Full induction
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-In this section, using the axiom of set induction, we prove full induction on
-the set of natural numbers.
+  In this section, using the axiom of set induction, we prove full induction on
+  the set of natural numbers.
 
 $)
 
@@ -65317,13 +65322,14 @@ $)
       ASKUB $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                  Strong collection
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-In this section, we state the axiom scheme of strong collection, which is part
-of CZF set theory.
+  In this section, we state the axiom scheme of strong collection, which is
+  part of CZF set theory.
 
 $)
 
@@ -65392,8 +65398,8 @@ $(
                  Subset collection
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-In this section, we state the axiom scheme of subset collection, which is part
-of CZF set theory.
+  In this section, we state the axiom scheme of subset collection, which is
+  part of CZF set theory.
 
 $)
 
