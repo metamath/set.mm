@@ -63164,9 +63164,8 @@ htmldef "+" as " <IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'> ";
   latexdef "+" as "+";
 htmldef "x." as
     " <IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT=' x.' TITLE='x.'> ";
-  althtmldef "x." as ' &middot; '; /* what is &#xb7; ? */
+  althtmldef "x." as ' &middot; '; /* unicode: &#xb7; */
   latexdef "x." as "\cdot";
-
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
@@ -63313,6 +63312,7 @@ $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 $)
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                  Propositional calculus
@@ -63443,7 +63443,7 @@ $(
                  Extensionality
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-Various utility theorems using FOL and extensionality.
+  Various utility theorems using FOL and extensionality.
 
 $)
 
@@ -63628,66 +63628,67 @@ $)
 $( This declaration is simply to be able to display Delta0 in comments. $)
   $c Delta0 $.
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                  Bounded formulas
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-This is an ongoing project to define bounded formulas, following a discussion
-on GitHub between Jim Kingdon, Mario Carneiro and I, started
-23-Sept-2019 (see ~ https://github.com/metamath/set.mm/issues/1173 and links
-therein).
+  This is an ongoing project to define bounded formulas, following a discussion
+  on GitHub between Jim Kingdon, Mario Carneiro and I, started
+  23-Sept-2019 (see ~ https://github.com/metamath/set.mm/issues/1173 and links
+  therein).
 
-In order to state certain axiom schemes of Constructive Zermelo&ndash;Fraenkel
-(CZF) set theory, like the axiom scheme of bounded (or restricted, or
-` Delta0 ` ) separation, it is necessary to distinguish certain formulas,
-called bounded (or restricted, or ` Delta0 ` ) formulas.  The necessity of
-considering bounded formulas also arises in several theories of bounded
-arithmetic, both classical or intuitonistic, for instance to state the axiom
-scheme of ` Delta0 ` -induction.
+  In order to state certain axiom schemes of Constructive
+  Zermelo&ndash;Fraenkel (CZF) set theory, like the axiom scheme of bounded (or
+  restricted, or ` Delta0 ` ) separation, it is necessary to distinguish
+  certain formulas, called bounded (or restricted, or ` Delta0 ` ) formulas.
+  The necessity of considering bounded formulas also arises in several theories
+  of bounded arithmetic, both classical or intuitonistic, for instance to state
+  the axiom scheme of ` Delta0 ` -induction.
 
-To formalize this in Metamath, there are several choices to make.
+  To formalize this in Metamath, there are several choices to make.
 
-A first choice is to either create a new type for bounded formulas, or to
-create a predicate on formulas that indicates whether they are bounded.
-In the first case, one creates a new type "wff0" with a new set of
-metavariables (ph_0 ...) and an axiom "$a wff ph_0 " ensuring that bounded
-formulas are formulas, so that one can reuse existing theorems, and then axioms
-take the form "$a wff0 ( ph_0 -> ps_0 )", etc.
-In the second case, one introduces a predicate " ` Bdd ` " with the intended
-meaning that " ` Bdd ph ` " is a formula meaning that ` ph ` is a bounded
-formula.
-We choose the second option, since the first would complicate the grammar,
-risking to make it ambiguous.
-(TODO: elaborate.)
+  A first choice is to either create a new type for bounded formulas, or to
+  create a predicate on formulas that indicates whether they are bounded.
+  In the first case, one creates a new type "wff0" with a new set of
+  metavariables (ph_0 ...) and an axiom "$a wff ph_0 " ensuring that bounded
+  formulas are formulas, so that one can reuse existing theorems, and then
+  axioms take the form "$a wff0 ( ph_0 -> ps_0 )", etc.
+  In the second case, one introduces a predicate " ` Bdd ` " with the intended
+  meaning that " ` Bdd ph ` " is a formula meaning that ` ph ` is a bounded
+  formula.
+  We choose the second option, since the first would complicate the grammar,
+  risking to make it ambiguous.
+  (TODO: elaborate.)
 
-A second choice is to view "bounded" either as a syntactic or a semantic
-property.
-For instance, ` A. x T. ` is not syntactically bounded since it has an
-unbounded universal quantifier, but it is semantically bounded since it is
-equivalent to ` T. ` which is bounded.
-We choose the second option, so that formulas using defined symbols can be
-proved bounded.
+  A second choice is to view "bounded" either as a syntactic or a semantic
+  property.
+  For instance, ` A. x T. ` is not syntactically bounded since it has an
+  unbounded universal quantifier, but it is semantically bounded since it is
+  equivalent to ` T. ` which is bounded.
+  We choose the second option, so that formulas using defined symbols can be
+  proved bounded.
 
-A third choice is in the form of the axioms, either in closed form or in
-inference form.
-One cannot state all the axioms in closed form, especially ~ ax-bd0 .
-Indeed, if we posited it in closed form, then we could prove for instance
-` |- ( ph -> Bdd ph ) ` and ` |- ( -. ph -> Bdd ph ) ` which is problematic
-(with the law of excluded middle, this would entail that all formulas are
-bounded, but even without it, too many formulas could be proved bounded...).
-(TODO: elaborate.)
+  A third choice is in the form of the axioms, either in closed form or in
+  inference form.
+  One cannot state all the axioms in closed form, especially ~ ax-bd0 .
+  Indeed, if we posited it in closed form, then we could prove for instance
+  ` |- ( ph -> Bdd ph ) ` and ` |- ( -. ph -> Bdd ph ) ` which is problematic
+  (with the law of excluded middle, this would entail that all formulas are
+  bounded, but even without it, too many formulas could be proved bounded...).
+  (TODO: elaborate.)
 
-Having ~ ax-bd0 in inference form ensures that a formula can be proved bounded
-only if it is equivalent *for all values of the free variables* to a
-syntactically bounded one.
-The other axioms (~ ax-bdim through ~ ax-bdsb ) can be written either in
-closed or inference form.  The fact that ~ ax-bd0 is an inference is enough to
-ensure that the closed forms cannot be "exploited" to prove that some unbounded
-formulas are bounded.
-(TODO: check.)
-However, we state all the axioms in inference form to make it clear that we do
-not exploit any over-permissiveness.
+  Having ~ ax-bd0 in inference form ensures that a formula can be proved
+  bounded only if it is equivalent *for all values of the free variables* to a
+  syntactically bounded one.
+  The other axioms (~ ax-bdim through ~ ax-bdsb ) can be written either in
+  closed or inference form.  The fact that ~ ax-bd0 is an inference is enough
+  to ensure that the closed forms cannot be "exploited" to prove that some
+  unbounded formulas are bounded.
+  (TODO: check.)
+  However, we state all the axioms in inference form to make it clear that we
+  do not exploit any over-permissiveness.
 
 $)
 
@@ -63895,19 +63896,19 @@ $(
                  Bounded classes
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-In line with our definitions of classes as extensions of predicates, it is
-useful to define a predicate for bounded classes, which is done in ~ df-bdc .
-Note that this notion is only a technical device which can be used to shorten
-proofs of (semantic) boundedness of formulas.
+  In line with our definitions of classes as extensions of predicates, it is
+  useful to define a predicate for bounded classes, which is done in ~ df-bdc .
+  Note that this notion is only a technical device which can be used to shorten
+  proofs of (semantic) boundedness of formulas.
 
-As will be clear by the end of this subsection (see for instance ~ bdop ), one
-can prove the boundedness of any concrete term using only setvars and bounded
-formulas, for instance,
-` |- Bdd ph => `
-` |- Bdd_ <. { x | ph } , ( { y , suc z } X. <. t , (/) >. ) >. ` .
-The proofs are long since one has to prove boundedness at each step of the
-construction, without being able to prove general theorems like
-` |- Bdd_ A => |- Bdd_ { A } ` .
+  As will be clear by the end of this subsection (see for instance ~ bdop ),
+  one can prove the boundedness of any concrete term using only setvars and
+  bounded formulas, for instance,
+  ` |- Bdd ph => `
+  ` |- Bdd_ <. { x | ph } , ( { y , suc z } X. <. t , (/) >. ) >. ` .
+  The proofs are long since one has to prove boundedness at each step of the
+  construction, without being able to prove general theorems like
+  ` |- Bdd_ A => |- Bdd_ { A } ` .
 
 $)
 
@@ -64310,8 +64311,8 @@ $(
                  Bounded separation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-In this section, we state the axiom scheme of bounded separation, which is part
-of CZF set theory.
+  In this section, we state the axiom scheme of bounded separation, which is
+  part of CZF set theory.
 
 $)
 
@@ -64817,9 +64818,9 @@ $(
                  The first three Peano postulates
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-The first three Peano postulates do not require the axiom of infinity.  We
-give constructive proofs (only the proof of the second postulate has to be
-modified).
+  The first three Peano postulates do not require the axiom of infinity.  We
+  give constructive proofs (only the proof of the second postulate has to be
+  modified).
 
 $)
 
@@ -64839,20 +64840,21 @@ $(
                  Axiom of infinity
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-In the absence of full separation, the axiom of infinity has to be stated more
-precisely, as the existence of the smallest class containing the empty set and
-the successor of each of its elements.
+  In the absence of full separation, the axiom of infinity has to be stated
+  more precisely, as the existence of the smallest class containing the empty
+  set and the successor of each of its elements.
 
 $)
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
        The set of natural numbers (finite ordinals)
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-In this section, we introduce the axiom of infinity in a constructive setting
-( ~ ax-infvn ) and deduce that the class ` _om ` of finite ordinals is a set
-( ~ bj-omex ).
+  In this section, we introduce the axiom of infinity in a constructive setting
+  ( ~ ax-infvn ) and deduce that the class ` _om ` of finite ordinals is a set
+  ( ~ bj-omex ).
 
 $)
 
@@ -64916,10 +64918,10 @@ $(
        The remaining two Peano postulates
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-In this section, we give constructive proofs of the remaining two (the fourth
-and fifth) Peano postulates.  More precisely, we prove from the core axioms of
-CZF that the set of finite ordinals satisfies the Peano postulates and thus
-provides a model for the set of natural numbers.
+  In this section, we give constructive proofs of the remaining two (the fourth
+  and fifth) Peano postulates.  More precisely, we prove from the core axioms
+  of CZF that the set of finite ordinals satisfies the Peano postulates and
+  thus provides a model for the set of natural numbers.
 
 $)
 
@@ -64970,8 +64972,8 @@ $(
        Bounded induction
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-In this section, we prove various versions of bounded induction from
-the basic axioms of CZF (in particular, without the axiom of set induction).
+  In this section, we prove various versions of bounded induction from
+  the basic axioms of CZF (in particular, without the axiom of set induction).
 
 $)
 
@@ -65163,9 +65165,11 @@ $)
 
   ${
     $d x y A $.
-    $( Proof of ~ nn0suc .  NOT constructive because of ~ omelon .
-       (Contributed by BJ, 19-Nov-2019.)
-       (Proof modification is discouraged.) $)
+    $( Proof of ~ nn0suc from ~ bj-nn0suc1 .  Note that contrary to
+       ~ bj-nn0suc1 , it is NOT constructive because of the use of ~ omelon .
+       For a constructive proof, see ~ bj-nn0suc .  (Contributed by BJ,
+       19-Nov-2019.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     bj-nn0sucALT $p |- ( A e. _om -> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
       ( com wcel c0 wceq cv csuc wo bj-nn0suc1 wss wi omelon onelssi ssrexv syl
       wrex orim2d mpd ) BCDZBEFZBAGHFZABQZIUAUBACQZIABJTUCUDUATBCKUCUDLCBMNUBAB
@@ -65178,16 +65182,17 @@ $(
        Set induction
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-In this section, we add the axiom of set induction to the core axioms of CZF.
+  In this section, we add the axiom of set induction to the core axioms of CZF.
 
 $)
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
        Set induction
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-In this section, we prove some variants of the axiom of set induction.
+  In this section, we prove some variants of the axiom of set induction.
 
 $)
 
@@ -65247,7 +65252,8 @@ $)
     bdsetindis.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
     bdsetindis.2 $e |- ( x = y -> ( ch <-> ph ) ) $.
     $( Axiom of bounded set induction using implicit substitutions.
-       (Contributed by BJ, 22-Nov-2019.) $)
+       (Contributed by BJ, 22-Nov-2019.)
+       (Proof modification is discouraged.) $)
     bdsetindis $p |- ( A. y ( A. z e. y ps -> ch ) -> A. x ph ) $=
       ( cv wral wi wal nfcv nfralxy nfim wsb weq raleq wb equcoms imbi12d cbval
       sbie biimpi ralimi imim1i alimi sylbi ax-bdsetind syl ) BFENZOZCPZEQZADFU
@@ -65258,8 +65264,9 @@ $)
 
   ${
     $d A x y z $.
-    $( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (use more deduction
-       style).  (Contributed by BJ, 8-Dec-2019.) $)
+    $( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (have to use more
+       deduction style).  (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.) $)
     bj-inf2vnlem1 $p |-
          ( A. x ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> Ind A ) $=
       ( vz cv wcel c0 wceq csuc wrex wo wb wal wral wi wex eleq1 3syl alimi syl
@@ -65274,66 +65281,82 @@ $)
   $}
 
   ${
-    $d a x y z t u v w $.
-    $( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (use more deduction
-       style).  TODO: replace the setvar ` a ` with a class term ` A ` .
-       (Contributed by BJ, 8-Dec-2019.) $)
-    bj-inf2vnlem2 $p |- ( A. x ( x e. a <->
-               ( x = (/) \/ E. y e. a x = suc y ) ) -> ( Ind z -> a C_ z ) ) $=
-      ( vv vu vw vt cv wcel c0 wceq wal wa wi wral elequ1 imbi12d ex nfv wo wss
-      csuc wrex wind bi1 alimi df-ral bicomi eqeq1 rexbidv orbi12d rspccv sylbi
-      wb syl ad2antrr ax-ia2 simplr df-bj-ind simplbi eleq1 syl5ibrcom 3ad2ant1
-      w3a vex sucid eleq2 mpbiri a1i rspcv com3l 3ad2ant2 imp bj-indsuc biimprd
-      adantr 3syld sylcom rexlimdva syl3anc sylibr mpdd alrimiv ax-bdel ax-bdim
-      jca ax-io bicomd bdsetindis dfss2 ) AIZDIZJZWLKLZWLBIZUCZLZBWMUDZUAZUOZAM
-      ZCIZUEZWMXCUBZXBXDNZEIZWMJZXGXCJZOZEFIZPZXKWMJZXKXCJZOZOZFMZXEXFXPFXFXLXO
-      XFXLNZXMXKKLZXKWQLZBWMUDZUAZXNXBXMYBOZXDXLXBWNWTOZAMZYCXAYDAWNWTUFUGYEWTA
-      WMPZYCYFYEWTAWMUHUIWTYBAXKWMWLXKLZWOXSWSYAWLXKKUJYGWRXTBWMWLXKWQUJUKULUMU
-      NUPUQXRXMYBXNOZXRXMNZXSXNOZYAXNOZNZYHYIXDXLXMYLXFXDXLXMXBXDURUQXFXLXMUSXR
-      XMURXDXLXMVEZYJYKXDXLYJXMXDXNXSKXCJZXDYNGIUCXCJGXCPGXCUTVAXKKXCVBVCVDYMXT
-      XNBWMYMWPWMJZNZXTWQXCJZXNYPXTWPXKJZWPXCJZYQXTYROYPXTYRWPWQJWPBVFVGXKWQWPV
-      HVIVJYMYOYRYSOZXLXDYOYTOXMYRXLYOYSXJYOYSOEWPXKXGWPLXHYOXIYSEBDQEBCQRVKVLV
-      MVNYMYSYQOZYOXDXLUUAXMXCWPVOVDVQVRXTXNYQXKWQXCVBVPVSVTWGWAXSXNYAWHWBSWCSW
-      DXQHIZWMJZUUBXCJZOZHMXEUUEXJXOHFEUUCUUDHDWEHCWEWFXJHTXOHTUUEFTXJFTUUBXGLU
-      UCXHUUDXIHEDQHECQRUUBXKLZXMUUCXNUUDUUFUUCXMHFDQWIUUFUUDXNHFCQWIRWJHWMXCWK
-      WBUPS $.
+    $d x y z t u A $.  $d x y z t u v Z $.
+    $( Lemma for ~ bj-inf2vnlem3 and ~ bj-inf2vnlem4 .  Remark: unoptimized
+       proof (have to use more deduction style).  (Contributed by BJ,
+       8-Dec-2019.)  (Proof modification is discouraged.) $)
+    bj-inf2vnlem2 $p |- ( A. x e. A ( x = (/) \/ E. y e. A x = suc y ) ->
+         ( Ind Z ->
+         A. u ( A. t e. u ( t e. A -> t e. Z ) -> ( u e. A -> u e. Z ) ) ) ) $=
+      ( vv cv c0 wceq csuc wrex wo wral wcel wi wal eqeq1 rspcv eleq1 df-bj-ind
+      wind rexbidv orbi12d simplbi syl5ibr a1dd vex sucid wb eleq2 eqcoms mpbii
+      imbi12d bj-indsuc eleq1a syl6com syl8 com13 com25 mpdi rexlimiv jaoi syl6
+      com3l alrimdv bi2.04 albii syl6ib ) AHZIJZVJBHZKZJZBELZMZAENZFUBZCHZEOZDH
+      ZEOZWAFOZPZDVSNZVSFOZPZPZCQWEVTWFPPZCQVQVRWHCVTVQVRWGVTVQVSIJZVSVMJZBELZM
+      ZVRWGPZVPWMAVSEVJVSJZVKWJVOWLVJVSIRWOVNWKBEVJVSVMRUCUDSWJWNWLWJVRWFWEVRWF
+      WJIFOZVRWPGHKFOGFNGFUAUEVSIFTUFUGWKWNBEVLEOZWKVLVSOZWNWKVLVMOZWRVLBUHUIWS
+      WRUJVMVSVMVSVLUKULUMWQWEWRVRWKWFWRWEWQVRWKWFPZPZWRWEWQVLFOZXAWDWQXBPDVLVS
+      WAVLJWBWQWCXBWAVLETWAVLFTUNSVRXBVMFOWTFVLUOVMFVSUPUQURUSUTVAVBVCVDVEVFWHW
+      ICVTWEWFVGVHVI $.
   $}
 
   ${
     $d x y z t u v w A $.  $d x y z t u v w Z $.
     bj-inf2vnlem3.bd1 $e |- Bdd_ A $.
     bj-inf2vnlem3.bd2 $e |- Bdd_ Z $.
-    $( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (use more deduction
-       style); TODO: compare with ~ bj-inf2vnlem2 and keep only one.
-       (Contributed by BJ, 8-Dec-2019.) $)
+    $( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (have to use more
+       deduction style).  (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.) $)
     bj-inf2vnlem3 $p |- ( A. x e. A ( x = (/) \/ E. y e. A x = suc y ) ->
                                                        ( Ind Z -> A C_ Z ) ) $=
-      ( vz vt vu vv cv c0 wceq wral wcel wi wal eleq1 imbi12d nfv csuc wrex wss
-      wind eqeq1 rexbidv orbi12d rspcv df-bj-ind simplbi syl5ibr a1dd vex sucid
-      wo wb eleq2 eqcoms mpbii bj-indsuc syl6com syl8 com13 com25 mpdi rexlimiv
-      eleq1a jaoi syl6 com3l alrimdv bi2.04 albii syl6ib bdeli bdsetindis dfss2
-      ax-bdim syl6ibr ) AKZLMZVTBKZUAZMZBCUBZUOZACNZDUDZGKZCOZWIDOZPZGQZCDUCWGW
-      HHKZCOZWNDOZPZHIKZNZWRCOZWRDOZPZPZIQZWMWGWHWTWSXAPZPZIQXDWGWHXFIWTWGWHXEW
-      TWGWRLMZWRWCMZBCUBZUOZWHXEPZWFXJAWRCVTWRMZWAXGWEXIVTWRLUEXLWDXHBCVTWRWCUE
-      UFUGUHXGXKXIXGWHXAWSWHXAXGLDOZWHXMJKUADOJDNJDUIUJWRLDRUKULXHXKBCWBCOZXHWB
-      WROZXKXHWBWCOZXOWBBUMUNXPXOUPWCWRWCWRWBUQURUSXNWSXOWHXHXAXOWSXNWHXHXAPZPZ
-      XOWSXNWBDOZXRWQXNXSPHWBWRWNWBMWOXNWPXSWNWBCRWNWBDRSUHWHXSWCDOXQDWBUTWCDWR
-      VGVAVBVCVDVEVFVHVIVJVKXFXCIWTWSXAVLVMVNWLWQXBGIHWJWKGCEVOGDFVOVRWQGTXBGTW
-      LITWQITWIWNMWJWOWKWPWIWNCRWIWNDRSXBWLUPWRWIWRWIMWTWJXAWKWRWICRWRWIDRSURVP
-      VIGCDVQVS $.
+      ( vz vt vu cv c0 wceq wral wcel wi wal bdeli nfv eleq1 imbi12d wo ax-bdim
+      csuc wrex wind wss bj-inf2vnlem2 wb equcoms bdsetindis syl6 dfss2 syl6ibr
+      ) AJZKLUNBJUCLBCUDUAACMZDUEZGJZCNZUQDNZOZGPZCDUFUOUPHJZCNZVBDNZOZHIJZMVFC
+      NZVFDNZOZOIPVAABIHCDUGUTVEVIGIHURUSGCEQGDFQUBVEGRVIGRUTIRVEIRUQVBLURVCUSV
+      DUQVBCSUQVBDSTVIUTUHIGVFUQLVGURVHUSVFUQCSVFUQDSTUIUJUKGCDULUM $.
   $}
 
   ${
-    $d x y z a $.
-    $( A sufficient condition for ` _om ` to be a set.  TODO: replace the
-       setvar ` a ` with a class term ` A ` (which is a set).  TODO use lem3
-       instead of lem2.  (Contributed by BJ, 8-Dec-2019.) $)
-    bj-inf2vn $p |-
-       ( A. x ( x e. a <-> ( x = (/) \/ E. y e. a x = suc y ) ) -> a = _om ) $=
-      ( vz wel cv c0 wceq csuc wrex wo wb wal wind wss wi com bj-inf2vnlem1 cvv
-      wa bj-inf2vnlem2 alrimiv jca wcel vex bj-om ax-mp bicomi sylib ) ACEAFZGH
-      UJBFIHBCFZJKLAMZUKNZDFZNUKUNOPZDMZTZUKQHZULUMUPABUKRULUODABDCUAUBUCURUQUK
-      SUDURUQLCUEDUKSUFUGUHUI $.
+    $d x y z t u v w A $.  $d x y z t u v w Z $.
+    $( Lemma for ~ bj-inf2vn2 .  Remark: unoptimized proof (have to use more
+       deduction style).  (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.) $)
+    bj-inf2vnlem4 $p |- ( A. x e. A ( x = (/) \/ E. y e. A x = suc y ) ->
+                                                       ( Ind Z -> A C_ Z ) ) $=
+      ( vz vt vu cv c0 wceq csuc wrex wral wcel wi wal nfv weq eleq1 imbi12d wo
+      wind wss bj-inf2vnlem2 wb equcoms setindis syl6 dfss2 syl6ibr ) AHZIJUKBH
+      KJBCLUAACMZDUBZEHZCNZUNDNZOZEPZCDUCULUMFHZCNZUSDNZOZFGHZMVCCNZVCDNZOZOGPU
+      RABGFCDUDUQVBVFEGFVBEQVFEQUQGQVBGQEFRUOUTUPVAUNUSCSUNUSDSTVFUQUEGEGERVDUO
+      VEUPVCUNCSVCUNDSTUFUGUHECDUIUJ $.
+  $}
+
+  ${
+    $d x y z A $.
+    bj-inf2vn.1 $e |- Bdd_ A $.
+    $( A sufficient condition for ` _om ` to be a set.  See ~ bj-inf2vn for the
+       unbounded version from full set induction.  (Contributed by BJ,
+       8-Dec-2019.)  (Proof modification is discouraged.) $)
+    bj-inf2vn $p |- ( A e. V -> ( A. x ( x e. A <->
+                         ( x = (/) \/ E. y e. A x = suc y ) ) -> A = _om ) ) $=
+      ( vz wcel cv c0 wceq csuc wrex wo wb wal wind wss wi wa com bj-inf2vnlem1
+      wral bi1 alimi df-ral sylibr bdcv bj-inf2vnlem3 syl alrimiv jca a1i bj-om
+      sylibrd ) CDGZAHZCGZUPIJUPBHKJBCLMZNZAOZCPZFHZPCVBQRZFOZSZCTJUTVERUOUTVAV
+      DABCUAUTVCFUTURACUBZVCUTUQURRZAOVFUSVGAUQURUCUDURACUEUFABCVBEFUGUHUIUJUKU
+      LFCDUMUN $.
+  $}
+
+  ${
+    $d x y z A $.
+    $( A sufficient condition for ` _om ` to be a set; unbounded version of
+       ~ bj-inf2vn .  (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.) $)
+    bj-inf2vn2 $p |- ( A e. V -> ( A. x ( x e. A <->
+                         ( x = (/) \/ E. y e. A x = suc y ) ) -> A = _om ) ) $=
+      ( vz wcel cv c0 wceq csuc wrex wo wb wal wind wss wi wa com bj-inf2vnlem1
+      wral bi1 alimi df-ral sylibr bj-inf2vnlem4 syl alrimiv jca bj-om sylibrd
+      a1i ) CDFZAGZCFZUNHIUNBGJIBCKLZMZANZCOZEGZOCUTPQZENZRZCSIURVCQUMURUSVBABC
+      TURVAEURUPACUAZVAURUOUPQZANVDUQVEAUOUPUBUCUPACUDUEABCUTUFUGUHUIULECDUJUK
+      $.
   $}
 
   ${
@@ -65342,76 +65365,36 @@ $)
        a set, that is, we recover ~ ax-infvn .  (Contributed by BJ,
        8-Dec-2019.)  (Proof modification is discouraged.) $)
     bj-omex2 $p |- _om e. _V $=
-      ( va vx vy com wel cv c0 wceq csuc wo wb ax-inf2 bj-inf2vn eximii issetri
-      wrex wal ) ADBAEBFZGHRCFIHCAFZPJKBQSDHABCALBCAMNO $.
+      ( va vx vy com wel cv c0 wceq csuc wrex wo wb wal ax-inf2 cvv wcel wi vex
+      bdcv bj-inf2vn ax-mp eximii issetri ) ADBAEBFZGHUDCFIHCAFZJKLBMZUEDHZABCA
+      NUEOPUFUGQARBCUEOASTUAUBUC $.
   $}
 
   ${
-    $d x y A $.
-    $( Constructive proof of (biconditional form of) ~ nn0suc .  NOT YET
-       constructive (Contributed by BJ, 8-Dec-2019.)
-       (Proof modification is discouraged.) $)
+    $d a x y z A $.
+    $( Constructive proof of (biconditional form of) ~ nn0suc .  (Contributed
+       by BJ, 8-Dec-2019.)  (Proof modification is discouraged.) $)
     bj-nn0suc $p |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
-      ( com wcel c0 wceq cv csuc wo nn0suc peano1 eleq1 mpbiri bj-peano2 eleq1a
-      wrex imp sylan rexlimiva jaoi impbii ) BCDZBEFZBAGZHZFZACPZIABJUCUBUGUCUB
-      ECDKBECLMUFUBACUDCDUECDZUFUBUDNUHUFUBUECBOQRSTUA $.
-$(
-50::ax-inf2              |- E. a A. y ( y e. a <-> ( y = (/) \/ E. z e. a y =
- suc z ) )
-51::bj-inf2vn                        |- ( A. y ( y e. a <-> ( y = (/) \/ E. z
- e. a y = suc z ) ) -> a = _om )
-52::ax-4                                      |- ( A. y ( y e. a <-> ( y = (/)
- \/ E. z e. a y = suc z ) ) -> ( y e. a <-> ( y = (/) \/ E. z e. a
- y = suc z ) ) )
-53:52:a1i                                  |- ( a = _om -> ( A. y ( y e. a <->
- ( y = (/) \/ E. z e. a y = suc z ) ) -> ( y e. a <-> ( y = (/) \/
- E. z e. a y = suc z ) ) ) )
-54::a17d                                   |- ( a = _om -> ( ( y e. a <->
- ( y = (/) \/ E. z e. a y = suc z ) ) -> A. y ( y e. a <-> ( y = (/) \/
- E. z e. a y = suc z ) ) ) )
-55:53,54:impbid                         |- ( a = _om -> ( A. y ( y e. a <->
- ( y = (/) \/ E. z e. a y = suc z ) ) <-> ( y e. a <-> ( y = (/) \/
- E. z e. a y = suc z ) ) ) )
-!56::                                      |- ( a = _om -> ( y e. a <->
- A e. _om ) )
-!57::                                      |- ( a = _om -> ( ( y = (/) \/
- E. z e. a y = suc z ) <-> ( A = (/) \/ E. x e. _om A = suc x ) ) )
-58:56,57:bibi12d                        |- ( a = _om -> ( ( y e. a <->
- ( y = (/) \/ E. z e. a y = suc z ) ) <-> ( A e. _om <-> ( A = (/) \/
- E. x e. _om A = suc x ) ) ) )
-59:55,58:bitrd                       |- ( a = _om -> ( A. y ( y e. a <->
- ( y = (/) \/ E. z e. a y = suc z ) ) <-> ( A e. _om <-> ( A = (/) \/
- E. x e. _om A = suc x ) ) ) )
-60:51,59:syl                      |- ( A. y ( y e. a <-> ( y = (/) \/
- E. z e. a y = suc z ) ) -> ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a
- y = suc z ) ) <-> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) )
-61:60:biimpd                   |- ( A. y ( y e. a <-> ( y = (/) \/
- E. z e. a y = suc z ) ) -> ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a
- y = suc z ) ) -> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) )
-62::pm2.43                     |- ( ( A. y ( y e. a <-> ( y = (/) \/
- E. z e. a y = suc z ) ) -> ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a
- y = suc z ) ) -> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) ) ->
- ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) ->
- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) )
-63:61,62:ax-mp              |- ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a
- y = suc z ) ) -> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) )
-64:63:eximi              |- ( E. a A. y ( y e. a <-> ( y = (/) \/ E. z e. a
- y = suc z ) ) -> E. a ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) )
-65:50,64:ax-mp        |- E. a ( A e. _om <-> ( A = (/) \/
- E. x e. _om A = suc x ) )
-66::bj-ex             |- ( E. a ( A e. _om <-> ( A = (/) \/ E. x e. _om A =
- suc x ) ) -> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) )
-qed:65,66:ax-mp    |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) )
-$)
+      ( va vy vz com wcel c0 wceq cv csuc wrex wo wb wal wi ax-mp bibi12d eleq1
+      cvv wex ax-inf2 bdcv bj-inf2vn eleq2 rexeq orbi2d albidv nfcv eqeq1 suceq
+      vex nfv eqeq2d cbvrexv rexbidv syl5bb orbi12d bi1 syl6bi peano1 bj-peano2
+      spcimgf pm2.43b mpbiri eleq1a imp sylan rexlimiva jaoi mpcom eximii bj-ex
+      impbid1 ) BFGZBHIZBAJZKZIZAFLZMZNZCUAWBDJZCJZGZWCHIZWCEJZKZIZEWDLZMZNZDOZ
+      WBCDECUBWDFIZWMWBWDTGWMWNPCULDEWDTCUCUDQWNWMWCFGZWFWIEFLZMZNZDOZWBWNWLWRD
+      WNWEWOWKWQWDFWCUEWNWJWPWFWIEWDFUFUGRUHWSVOWAWSVOWAWRVOWAPZDBFDBUIWTDUMWCB
+      IZWRWBWTXAWOVOWQWAWCBFSXAWFVPWPVTWCBHUJWPWCVRIZAFLXAVTWIXBEAFWGVQIWHVRWCW
+      GVQUKUNUOXAXBVSAFWCBVRUJUPUQURRVOWAUSUTVCVDVPVOVTVPVOHFGVABHFSVEVSVOAFVQF
+      GVRFGZVSVOVQVBXCVSVOVRFBVFVGVHVIVJVNUTVKVLWBCVMQ $.
   $}
+
 
 $(
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
        Full induction
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
-In this section, using the axiom of set induction, we prove full induction on
-the set of natural numbers.
+  In this section, using the axiom of set induction, we prove full induction on
+  the set of natural numbers.
 
 $)
 
@@ -65465,13 +65448,14 @@ $)
       ASKUB $.
   $}
 
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
                  Strong collection
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-In this section, we state the axiom scheme of strong collection, which is part
-of CZF set theory.
+  In this section, we state the axiom scheme of strong collection, which is
+  part of CZF set theory.
 
 $)
 
@@ -65540,8 +65524,8 @@ $(
                  Subset collection
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-In this section, we state the axiom scheme of subset collection, which is part
-of CZF set theory.
+  In this section, we state the axiom scheme of subset collection, which is
+  part of CZF set theory.
 
 $)
 
