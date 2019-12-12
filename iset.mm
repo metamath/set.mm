@@ -62098,8 +62098,7 @@ $)
   $}
 
   ${
-    $d f g h v w x y z $.  $d f g h x y z A $.  $d f g h x y z B $.
-    $d f g h x y z C $.
+    $d f g h v w x y z A $.  $d f g h v w x y z B $.  $d f g h v w x y z C $.
     $( Addition of positive reals is commutative.  Proposition 9-3.5(ii) of
        [Gleason] p. 123.  (Contributed by Jim Kingdon, 11-Dec-2019.) $)
     addcomprg $p |- ( ( A e. P. /\ B e. P. ) -> ( A +P. B ) = ( B +P. A ) ) $=
@@ -62114,6 +62113,13 @@ $)
       ZVLWQUDZUSWRHURWGWSUSWHWRWGWIVBVMVHUNPWGURWSWJVEVREVKWGURVCVKGZWLURWTHWGW
       MWLURWNWTWMWOVCVKVFUNPWPQRTUIQRTVRDEVMVKUJULUMUOUSURWCVPJCDEBAUPUICEDABUP
       UQ $.
+
+    $( Addition of positive reals is associative.  Proposition 9-3.5(i) of
+       [Gleason] p. 123.  (Contributed by Jim Kingdon, 11-Dec-2019.) $)
+    addassprg $p |- ( ( A e. P. /\ B e. P. /\ C e. P. ) -> 
+        ( ( A +P. B ) +P. C ) = ( A +P. ( B +P. C ) ) ) $=
+      ( vx vy vz vw vv vf vg vh cplq df-iplp cv addclnq dmplp addclpr addassnqg
+      cpp genpassg ) DEFGHABCIJKSLGHFEDMENFNOPINZJNZQUAUBKNRT $.
   $}
 
 $(
