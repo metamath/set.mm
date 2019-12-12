@@ -62116,10 +62116,32 @@ $)
 
     $( Addition of positive reals is associative.  Proposition 9-3.5(i) of
        [Gleason] p. 123.  (Contributed by Jim Kingdon, 11-Dec-2019.) $)
-    addassprg $p |- ( ( A e. P. /\ B e. P. /\ C e. P. ) -> 
+    addassprg $p |- ( ( A e. P. /\ B e. P. /\ C e. P. ) ->
         ( ( A +P. B ) +P. C ) = ( A +P. ( B +P. C ) ) ) $=
       ( vx vy vz vw vv vf vg vh cplq df-iplp cv addclnq dmplp addclpr addassnqg
       cpp genpassg ) DEFGHABCIJKSLGHFEDMENFNOPINZJNZQUAUBKNRT $.
+
+    $( Multiplication of positive reals is commutative.  Proposition 9-3.7(ii)
+       of [Gleason] p. 124.  (Contributed by Jim Kingdon, 11-Dec-2019.) $)
+    mulcomprg $p |- ( ( A e. P. /\ B e. P. ) -> ( A .P. B ) = ( B .P. A ) ) $=
+      ( vx vz vy cnp wcel wa cv wceq cfv wrex cnq crab cop sylan sylan2 anassrs
+      co rexbidva cmq c1st c2nd cmp prop elprnql mulcomnqg eqeq2d ancoms rexcom
+      wb syl6bb rabbidv elprnqu opeq12d mpvlu 3eqtr4rd ) AFGZBFGZHZCIZDIZEIZUAS
+      ZJZEAUBKZLZDBUBKZLZCMNZVEEAUCKZLZDBUCKZLZCMNZOZVAVCVBUASZJZDVHLEVFLZCMNZV
+      RDVMLEVKLZCMNZOBAUDSZABUDSUTVJVTVOWBUTVIVSCMUTVIVREVFLZDVHLVSUTVGWDDVHURU
+      SVBVHGZVGWDUKZUSWEHURVBMGZWFUSVHVMOFGZWEWGBUEZVBVMVHUFPWGURWFWGURHZVEVREV
+      FWGURVCVFGZVEVRUKZURWKHWGVCMGZWLURVFVKOFGZWKWMAUEZVCVKVFUFPWGWMHVDVQVAVBV
+      CUGUHZQRTUIQRTVRDEVHVFUJULUMUTVNWACMUTVNVREVKLZDVMLWAUTVLWQDVMURUSVBVMGZV
+      LWQUKZUSWRHURWGWSUSWHWRWGWIVBVMVHUNPWGURWSWJVEVREVKWGURVCVKGZWLURWTHWGWMW
+      LURWNWTWMWOVCVKVFUNPWPQRTUIQRTVRDEVMVKUJULUMUOUSURWCVPJCDEBAUPUICEDABUPUQ
+      $.
+
+    $( Multiplication of positive reals is associative.  Proposition 9-3.7(i)
+       of [Gleason] p. 124.  (Contributed by Jim Kingdon, 11-Dec-2019.) $)
+    mulassprg $p |- ( ( A e. P. /\ B e. P. /\ C e. P. ) ->
+        ( ( A .P. B ) .P. C ) = ( A .P. ( B .P. C ) ) ) $=
+      ( vx vy vz vw vv vf vg vh cmp cmq df-imp cv mulclnq dmmp mulclpr genpassg
+      mulassnqg ) DEFGHABCIJKLMGHFEDNEOFOPQIOZJOZRUAUBKOTS $.
   $}
 
 $(
