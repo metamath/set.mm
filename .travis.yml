@@ -28,7 +28,7 @@ dist: bionic
 # (e.g., of unchanged compiled programs) to speed things further.
 
 git:
-  depth: 3
+  depth: 1
 sudo: false
 
 # In each job we download, build, install, and run a verifier.
@@ -128,34 +128,46 @@ jobs:
         - ./checkmm set.mm
         - ./checkmm iset.mm
     ###########################################################
-    - # mmverify.py, a Python3 verifier by Raph Levien, for iset.mm
-      name: mmverify.py (Python3, Raph Levien) iset.mm verification
-      language: python
-      install:
-        - wget -N -q http://us.metamath.org/downloads/mmverify.py
-        # Python3 is very slow.  We can speed it up by deleting all
-        # logging calls, since we don't use the logging anyway.
-        - sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
-        - chmod a+x mmverify.faster.py
-      script:
-        - ./mmverify.faster.py < iset.mm
-    ###########################################################
-    - # mmverify.py, a Python3 verifier by Raph Levien, for set.mm
+    - # mmverify.py, a Python3 verifier by Raph Levien, for set.mm pre-mathbox
       # This verifier takes longer than all the other verifiers (2min 14 sec).
-      # So we skip "mathbox" and later
+      # So we do "mathboxes" separately
       # We should try to speed up the main mmverify.py culprits, e.g.,
       # ./mmverify.py:299(verify), ./mmverify.py:223(apply_subst), or
       # ./mmverify.py:237(decompress_proof)
       name: mmverify.py (Python3, Raph Levien) set.mm verification (skipping mathboxes)
       language: python
       install:
-        - wget -N -q https://dwheeler.com/misc/mmverify.daw.py
+        - wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
         # Python3 is very slow.  We can speed it up by deleting all
         # logging calls, since we don't use the logging anyway.
-        - sed -E '/^ *vprint\(/d' mmverify.daw.py > mmverify.faster.py
+        - sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
         - chmod a+x mmverify.faster.py
       script:
         - ./mmverify.faster.py --stop-label mathbox < set.mm
+    ###########################################################
+    - # mmverify.py, a Python3 verifier by Raph Levien, for set.mm mathboxes
+      name: mmverify.py (Python3, Raph Levien) set.mm verification (just mathboxes)
+      language: python
+      install:
+        - wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
+        # Python3 is very slow.  We can speed it up by deleting all
+        # logging calls, since we don't use the logging anyway.
+        - sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
+        - chmod a+x mmverify.faster.py
+      script:
+        - ./mmverify.faster.py --begin-label mathbox < set.mm
+    ###########################################################
+    - # mmverify.py, a Python3 verifier by Raph Levien, for iset.mm
+      name: mmverify.py (Python3, Raph Levien) iset.mm verification
+      language: python
+      install:
+        - wget -N -q https://raw.githubusercontent.com/david-a-wheeler/mmverify.py/master/mmverify.py
+        # Python3 is very slow.  We can speed it up by deleting all
+        # logging calls, since we don't use the logging anyway.
+        - sed -E '/^ *vprint\(/d' mmverify.py > mmverify.faster.py
+        - chmod a+x mmverify.faster.py
+      script:
+        - ./mmverify.faster.py < iset.mm
     ###########################################################
     # - # mm-scala, a Scala verifier by Mario Caneiro
     #   name: mm-scala (Scala)
@@ -181,5 +193,5 @@ jobs:
       install:
         - pip3 install ply
       script:
-        - scripts/report-changes.py --gource
+        - scripts/report-changes.py --gource > /dev/null
 # End of jobs
