@@ -63016,9 +63016,8 @@ htmldef "+" as " <IMG SRC='plus.gif' WIDTH=13 HEIGHT=19 ALT=' +' TITLE='+'> ";
   latexdef "+" as "+";
 htmldef "x." as
     " <IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT=' x.' TITLE='x.'> ";
-  althtmldef "x." as ' &middot; '; /* what is &#xb7; ? */
+  althtmldef "x." as ' &middot; '; /* unicode: &#xb7; */
   latexdef "x." as "\cdot";
-
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
@@ -65018,9 +65017,11 @@ $)
 
   ${
     $d x y A $.
-    $( Proof of ~ nn0suc .  NOT constructive because of ~ omelon .
-       (Contributed by BJ, 19-Nov-2019.)
-       (Proof modification is discouraged.) $)
+    $( Proof of ~ nn0suc from ~ bj-nn0suc1 .  Note that contrary to
+       ~ bj-nn0suc1 , it is NOT constructive because of the use of ~ omelon .
+       For a constructive proof, see ~ bj-nn0suc .  (Contributed by BJ,
+       19-Nov-2019.)  (Proof modification is discouraged.)
+       (New usage is discouraged.) $)
     bj-nn0sucALT $p |- ( A e. _om -> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
       ( com wcel c0 wceq cv csuc wo bj-nn0suc1 wss wi omelon onelssi ssrexv syl
       wrex orim2d mpd ) BCDZBEFZBAGHFZABQZIUAUBACQZIABJTUCUDUATBCKUCUDLCBMNUBAB
@@ -65103,7 +65104,8 @@ $)
     bdsetindis.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
     bdsetindis.2 $e |- ( x = y -> ( ch <-> ph ) ) $.
     $( Axiom of bounded set induction using implicit substitutions.
-       (Contributed by BJ, 22-Nov-2019.) $)
+       (Contributed by BJ, 22-Nov-2019.)
+       (Proof modification is discouraged.) $)
     bdsetindis $p |- ( A. y ( A. z e. y ps -> ch ) -> A. x ph ) $=
       ( cv wral wi wal nfcv nfralxy nfim wsb weq raleq wb equcoms imbi12d cbval
       sbie biimpi ralimi imim1i alimi sylbi ax-bdsetind syl ) BFENZOZCPZEQZADFU
@@ -65114,8 +65116,9 @@ $)
 
   ${
     $d A x y z $.
-    $( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (use more deduction
-       style).  (Contributed by BJ, 8-Dec-2019.) $)
+    $( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (have to use more
+       deduction style).  (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.) $)
     bj-inf2vnlem1 $p |-
          ( A. x ( x e. A <-> ( x = (/) \/ E. y e. A x = suc y ) ) -> Ind A ) $=
       ( vz cv wcel c0 wceq csuc wrex wo wb wal wral wi wex eleq1 3syl alimi syl
@@ -65130,66 +65133,82 @@ $)
   $}
 
   ${
-    $d a x y z t u v w $.
-    $( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (use more deduction
-       style).  TODO: replace the setvar ` a ` with a class term ` A ` .
-       (Contributed by BJ, 8-Dec-2019.) $)
-    bj-inf2vnlem2 $p |- ( A. x ( x e. a <->
-               ( x = (/) \/ E. y e. a x = suc y ) ) -> ( Ind z -> a C_ z ) ) $=
-      ( vv vu vw vt cv wcel c0 wceq wal wa wi wral elequ1 imbi12d ex nfv wo wss
-      csuc wrex wind bi1 alimi df-ral bicomi eqeq1 rexbidv orbi12d rspccv sylbi
-      wb syl ad2antrr ax-ia2 simplr df-bj-ind simplbi eleq1 syl5ibrcom 3ad2ant1
-      w3a vex sucid eleq2 mpbiri a1i rspcv com3l 3ad2ant2 imp bj-indsuc biimprd
-      adantr 3syld sylcom rexlimdva syl3anc sylibr mpdd alrimiv ax-bdel ax-bdim
-      jca ax-io bicomd bdsetindis dfss2 ) AIZDIZJZWLKLZWLBIZUCZLZBWMUDZUAZUOZAM
-      ZCIZUEZWMXCUBZXBXDNZEIZWMJZXGXCJZOZEFIZPZXKWMJZXKXCJZOZOZFMZXEXFXPFXFXLXO
-      XFXLNZXMXKKLZXKWQLZBWMUDZUAZXNXBXMYBOZXDXLXBWNWTOZAMZYCXAYDAWNWTUFUGYEWTA
-      WMPZYCYFYEWTAWMUHUIWTYBAXKWMWLXKLZWOXSWSYAWLXKKUJYGWRXTBWMWLXKWQUJUKULUMU
-      NUPUQXRXMYBXNOZXRXMNZXSXNOZYAXNOZNZYHYIXDXLXMYLXFXDXLXMXBXDURUQXFXLXMUSXR
-      XMURXDXLXMVEZYJYKXDXLYJXMXDXNXSKXCJZXDYNGIUCXCJGXCPGXCUTVAXKKXCVBVCVDYMXT
-      XNBWMYMWPWMJZNZXTWQXCJZXNYPXTWPXKJZWPXCJZYQXTYROYPXTYRWPWQJWPBVFVGXKWQWPV
-      HVIVJYMYOYRYSOZXLXDYOYTOXMYRXLYOYSXJYOYSOEWPXKXGWPLXHYOXIYSEBDQEBCQRVKVLV
-      MVNYMYSYQOZYOXDXLUUAXMXCWPVOVDVQVRXTXNYQXKWQXCVBVPVSVTWGWAXSXNYAWHWBSWCSW
-      DXQHIZWMJZUUBXCJZOZHMXEUUEXJXOHFEUUCUUDHDWEHCWEWFXJHTXOHTUUEFTXJFTUUBXGLU
-      UCXHUUDXIHEDQHECQRUUBXKLZXMUUCXNUUDUUFUUCXMHFDQWIUUFUUDXNHFCQWIRWJHWMXCWK
-      WBUPS $.
+    $d x y z t u A $.  $d x y z t u v Z $.
+    $( Lemma for ~ bj-inf2vnlem3 and ~ bj-inf2vnlem4 .  Remark: unoptimized
+       proof (have to use more deduction style).  (Contributed by BJ,
+       8-Dec-2019.)  (Proof modification is discouraged.) $)
+    bj-inf2vnlem2 $p |- ( A. x e. A ( x = (/) \/ E. y e. A x = suc y ) ->
+         ( Ind Z ->
+         A. u ( A. t e. u ( t e. A -> t e. Z ) -> ( u e. A -> u e. Z ) ) ) ) $=
+      ( vv cv c0 wceq csuc wrex wo wral wcel wi wal eqeq1 rspcv eleq1 df-bj-ind
+      wind rexbidv orbi12d simplbi syl5ibr a1dd vex sucid wb eleq2 eqcoms mpbii
+      imbi12d bj-indsuc eleq1a syl6com syl8 com13 com25 mpdi rexlimiv jaoi syl6
+      com3l alrimdv bi2.04 albii syl6ib ) AHZIJZVJBHZKZJZBELZMZAENZFUBZCHZEOZDH
+      ZEOZWAFOZPZDVSNZVSFOZPZPZCQWEVTWFPPZCQVQVRWHCVTVQVRWGVTVQVSIJZVSVMJZBELZM
+      ZVRWGPZVPWMAVSEVJVSJZVKWJVOWLVJVSIRWOVNWKBEVJVSVMRUCUDSWJWNWLWJVRWFWEVRWF
+      WJIFOZVRWPGHKFOGFNGFUAUEVSIFTUFUGWKWNBEVLEOZWKVLVSOZWNWKVLVMOZWRVLBUHUIWS
+      WRUJVMVSVMVSVLUKULUMWQWEWRVRWKWFWRWEWQVRWKWFPZPZWRWEWQVLFOZXAWDWQXBPDVLVS
+      WAVLJWBWQWCXBWAVLETWAVLFTUNSVRXBVMFOWTFVLUOVMFVSUPUQURUSUTVAVBVCVDVEVFWHW
+      ICVTWEWFVGVHVI $.
   $}
 
   ${
     $d x y z t u v w A $.  $d x y z t u v w Z $.
     bj-inf2vnlem3.bd1 $e |- Bdd_ A $.
     bj-inf2vnlem3.bd2 $e |- Bdd_ Z $.
-    $( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (use more deduction
-       style); TODO: compare with ~ bj-inf2vnlem2 and keep only one.
-       (Contributed by BJ, 8-Dec-2019.) $)
+    $( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (have to use more
+       deduction style).  (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.) $)
     bj-inf2vnlem3 $p |- ( A. x e. A ( x = (/) \/ E. y e. A x = suc y ) ->
                                                        ( Ind Z -> A C_ Z ) ) $=
-      ( vz vt vu vv cv c0 wceq wral wcel wi wal eleq1 imbi12d nfv csuc wrex wss
-      wind eqeq1 rexbidv orbi12d rspcv df-bj-ind simplbi syl5ibr a1dd vex sucid
-      wo wb eleq2 eqcoms mpbii bj-indsuc syl6com syl8 com13 com25 mpdi rexlimiv
-      eleq1a jaoi syl6 com3l alrimdv bi2.04 albii syl6ib bdeli bdsetindis dfss2
-      ax-bdim syl6ibr ) AKZLMZVTBKZUAZMZBCUBZUOZACNZDUDZGKZCOZWIDOZPZGQZCDUCWGW
-      HHKZCOZWNDOZPZHIKZNZWRCOZWRDOZPZPZIQZWMWGWHWTWSXAPZPZIQXDWGWHXFIWTWGWHXEW
-      TWGWRLMZWRWCMZBCUBZUOZWHXEPZWFXJAWRCVTWRMZWAXGWEXIVTWRLUEXLWDXHBCVTWRWCUE
-      UFUGUHXGXKXIXGWHXAWSWHXAXGLDOZWHXMJKUADOJDNJDUIUJWRLDRUKULXHXKBCWBCOZXHWB
-      WROZXKXHWBWCOZXOWBBUMUNXPXOUPWCWRWCWRWBUQURUSXNWSXOWHXHXAXOWSXNWHXHXAPZPZ
-      XOWSXNWBDOZXRWQXNXSPHWBWRWNWBMWOXNWPXSWNWBCRWNWBDRSUHWHXSWCDOXQDWBUTWCDWR
-      VGVAVBVCVDVEVFVHVIVJVKXFXCIWTWSXAVLVMVNWLWQXBGIHWJWKGCEVOGDFVOVRWQGTXBGTW
-      LITWQITWIWNMWJWOWKWPWIWNCRWIWNDRSXBWLUPWRWIWRWIMWTWJXAWKWRWICRWRWIDRSURVP
-      VIGCDVQVS $.
+      ( vz vt vu cv c0 wceq wral wcel wi wal bdeli nfv eleq1 imbi12d wo ax-bdim
+      csuc wrex wind wss bj-inf2vnlem2 wb equcoms bdsetindis syl6 dfss2 syl6ibr
+      ) AJZKLUNBJUCLBCUDUAACMZDUEZGJZCNZUQDNZOZGPZCDUFUOUPHJZCNZVBDNZOZHIJZMVFC
+      NZVFDNZOZOIPVAABIHCDUGUTVEVIGIHURUSGCEQGDFQUBVEGRVIGRUTIRVEIRUQVBLURVCUSV
+      DUQVBCSUQVBDSTVIUTUHIGVFUQLVGURVHUSVFUQCSVFUQDSTUIUJUKGCDULUM $.
   $}
 
   ${
-    $d x y z a $.
-    $( A sufficient condition for ` _om ` to be a set.  TODO: replace the
-       setvar ` a ` with a class term ` A ` (which is a set).  TODO use lem3
-       instead of lem2.  (Contributed by BJ, 8-Dec-2019.) $)
-    bj-inf2vn $p |-
-       ( A. x ( x e. a <-> ( x = (/) \/ E. y e. a x = suc y ) ) -> a = _om ) $=
-      ( vz wel cv c0 wceq csuc wrex wo wb wal wind wss wi com bj-inf2vnlem1 cvv
-      wa bj-inf2vnlem2 alrimiv jca wcel vex bj-om ax-mp bicomi sylib ) ACEAFZGH
-      UJBFIHBCFZJKLAMZUKNZDFZNUKUNOPZDMZTZUKQHZULUMUPABUKRULUODABDCUAUBUCURUQUK
-      SUDURUQLCUEDUKSUFUGUHUI $.
+    $d x y z t u v w A $.  $d x y z t u v w Z $.
+    $( Lemma for ~ bj-inf2vn2 .  Remark: unoptimized proof (have to use more
+       deduction style).  (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.) $)
+    bj-inf2vnlem4 $p |- ( A. x e. A ( x = (/) \/ E. y e. A x = suc y ) ->
+                                                       ( Ind Z -> A C_ Z ) ) $=
+      ( vz vt vu cv c0 wceq csuc wrex wral wcel wi wal nfv weq eleq1 imbi12d wo
+      wind wss bj-inf2vnlem2 wb equcoms setindis syl6 dfss2 syl6ibr ) AHZIJUKBH
+      KJBCLUAACMZDUBZEHZCNZUNDNZOZEPZCDUCULUMFHZCNZUSDNZOZFGHZMVCCNZVCDNZOZOGPU
+      RABGFCDUDUQVBVFEGFVBEQVFEQUQGQVBGQEFRUOUTUPVAUNUSCSUNUSDSTVFUQUEGEGERVDUO
+      VEUPVCUNCSVCUNDSTUFUGUHECDUIUJ $.
+  $}
+
+  ${
+    $d x y z A $.
+    bj-inf2vn.1 $e |- Bdd_ A $.
+    $( A sufficient condition for ` _om ` to be a set.  See ~ bj-inf2vn for the
+       unbounded version from full set induction.  (Contributed by BJ,
+       8-Dec-2019.)  (Proof modification is discouraged.) $)
+    bj-inf2vn $p |- ( A e. V -> ( A. x ( x e. A <->
+                         ( x = (/) \/ E. y e. A x = suc y ) ) -> A = _om ) ) $=
+      ( vz wcel cv c0 wceq csuc wrex wo wb wal wind wss wi wa com bj-inf2vnlem1
+      wral bi1 alimi df-ral sylibr bdcv bj-inf2vnlem3 syl alrimiv jca a1i bj-om
+      sylibrd ) CDGZAHZCGZUPIJUPBHKJBCLMZNZAOZCPZFHZPCVBQRZFOZSZCTJUTVERUOUTVAV
+      DABCUAUTVCFUTURACUBZVCUTUQURRZAOVFUSVGAUQURUCUDURACUEUFABCVBEFUGUHUIUJUKU
+      LFCDUMUN $.
+  $}
+
+  ${
+    $d x y z A $.
+    $( A sufficient condition for ` _om ` to be a set; unbounded version of
+       ~ bj-inf2vn .  (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.) $)
+    bj-inf2vn2 $p |- ( A e. V -> ( A. x ( x e. A <->
+                         ( x = (/) \/ E. y e. A x = suc y ) ) -> A = _om ) ) $=
+      ( vz wcel cv c0 wceq csuc wrex wo wb wal wind wss wi wa com bj-inf2vnlem1
+      wral bi1 alimi df-ral sylibr bj-inf2vnlem4 syl alrimiv jca bj-om sylibrd
+      a1i ) CDFZAGZCFZUNHIUNBGJIBCKLZMZANZCOZEGZOCUTPQZENZRZCSIURVCQUMURUSVBABC
+      TURVAEURUPACUAZVAURUOUPQZANVDUQVEAUOUPUBUCUPACUDUEABCUTUFUGUHUIULECDUJUK
+      $.
   $}
 
   ${
@@ -65198,67 +65217,26 @@ $)
        a set, that is, we recover ~ ax-infvn .  (Contributed by BJ,
        8-Dec-2019.)  (Proof modification is discouraged.) $)
     bj-omex2 $p |- _om e. _V $=
-      ( va vx vy com wel cv c0 wceq csuc wo wb ax-inf2 bj-inf2vn eximii issetri
-      wrex wal ) ADBAEBFZGHRCFIHCAFZPJKBQSDHABCALBCAMNO $.
+      ( va vx vy com wel cv c0 wceq csuc wrex wo wb wal ax-inf2 cvv wcel wi vex
+      bdcv bj-inf2vn ax-mp eximii issetri ) ADBAEBFZGHUDCFIHCAFZJKLBMZUEDHZABCA
+      NUEOPUFUGQARBCUEOASTUAUBUC $.
   $}
 
   ${
-    $d x y A $.
-    $( Constructive proof of (biconditional form of) ~ nn0suc .  NOT YET
-       constructive (Contributed by BJ, 8-Dec-2019.)
-       (Proof modification is discouraged.) $)
+    $d a x y z A $.
+    $( Constructive proof of (biconditional form of) ~ nn0suc .  (Contributed
+       by BJ, 8-Dec-2019.)  (Proof modification is discouraged.) $)
     bj-nn0suc $p |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
-      ( com wcel c0 wceq cv csuc wo nn0suc peano1 eleq1 mpbiri bj-peano2 eleq1a
-      wrex imp sylan rexlimiva jaoi impbii ) BCDZBEFZBAGZHZFZACPZIABJUCUBUGUCUB
-      ECDKBECLMUFUBACUDCDUECDZUFUBUDNUHUFUBUECBOQRSTUA $.
-$(
-50::ax-inf2              |- E. a A. y ( y e. a <-> ( y = (/) \/ E. z e. a y =
- suc z ) )
-51::bj-inf2vn                        |- ( A. y ( y e. a <-> ( y = (/) \/ E. z
- e. a y = suc z ) ) -> a = _om )
-52::ax-4                                      |- ( A. y ( y e. a <-> ( y = (/)
- \/ E. z e. a y = suc z ) ) -> ( y e. a <-> ( y = (/) \/ E. z e. a
- y = suc z ) ) )
-53:52:a1i                                  |- ( a = _om -> ( A. y ( y e. a <->
- ( y = (/) \/ E. z e. a y = suc z ) ) -> ( y e. a <-> ( y = (/) \/
- E. z e. a y = suc z ) ) ) )
-54::a17d                                   |- ( a = _om -> ( ( y e. a <->
- ( y = (/) \/ E. z e. a y = suc z ) ) -> A. y ( y e. a <-> ( y = (/) \/
- E. z e. a y = suc z ) ) ) )
-55:53,54:impbid                         |- ( a = _om -> ( A. y ( y e. a <->
- ( y = (/) \/ E. z e. a y = suc z ) ) <-> ( y e. a <-> ( y = (/) \/
- E. z e. a y = suc z ) ) ) )
-!56::                                      |- ( a = _om -> ( y e. a <->
- A e. _om ) )
-!57::                                      |- ( a = _om -> ( ( y = (/) \/
- E. z e. a y = suc z ) <-> ( A = (/) \/ E. x e. _om A = suc x ) ) )
-58:56,57:bibi12d                        |- ( a = _om -> ( ( y e. a <->
- ( y = (/) \/ E. z e. a y = suc z ) ) <-> ( A e. _om <-> ( A = (/) \/
- E. x e. _om A = suc x ) ) ) )
-59:55,58:bitrd                       |- ( a = _om -> ( A. y ( y e. a <->
- ( y = (/) \/ E. z e. a y = suc z ) ) <-> ( A e. _om <-> ( A = (/) \/
- E. x e. _om A = suc x ) ) ) )
-60:51,59:syl                      |- ( A. y ( y e. a <-> ( y = (/) \/
- E. z e. a y = suc z ) ) -> ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a
- y = suc z ) ) <-> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) )
-61:60:biimpd                   |- ( A. y ( y e. a <-> ( y = (/) \/
- E. z e. a y = suc z ) ) -> ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a
- y = suc z ) ) -> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) )
-62::pm2.43                     |- ( ( A. y ( y e. a <-> ( y = (/) \/
- E. z e. a y = suc z ) ) -> ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a
- y = suc z ) ) -> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) ) ->
- ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a y = suc z ) ) ->
- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) ) )
-63:61,62:ax-mp              |- ( A. y ( y e. a <-> ( y = (/) \/ E. z e. a
- y = suc z ) ) -> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) )
-64:63:eximi              |- ( E. a A. y ( y e. a <-> ( y = (/) \/ E. z e. a
- y = suc z ) ) -> E. a ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) )
-65:50,64:ax-mp        |- E. a ( A e. _om <-> ( A = (/) \/
- E. x e. _om A = suc x ) )
-66::bj-ex             |- ( E. a ( A e. _om <-> ( A = (/) \/ E. x e. _om A =
- suc x ) ) -> ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) )
-qed:65,66:ax-mp    |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) )
-$)
+      ( va vy vz com wcel c0 wceq cv csuc wrex wo wb wal wi ax-mp bibi12d eleq1
+      cvv wex ax-inf2 bdcv bj-inf2vn eleq2 rexeq orbi2d albidv nfcv eqeq1 suceq
+      vex nfv eqeq2d cbvrexv rexbidv syl5bb orbi12d bi1 syl6bi peano1 bj-peano2
+      spcimgf pm2.43b mpbiri eleq1a imp sylan rexlimiva jaoi mpcom eximii bj-ex
+      impbid1 ) BFGZBHIZBAJZKZIZAFLZMZNZCUAWBDJZCJZGZWCHIZWCEJZKZIZEWDLZMZNZDOZ
+      WBCDECUBWDFIZWMWBWDTGWMWNPCULDEWDTCUCUDQWNWMWCFGZWFWIEFLZMZNZDOZWBWNWLWRD
+      WNWEWOWKWQWDFWCUEWNWJWPWFWIEWDFUFUGRUHWSVOWAWSVOWAWRVOWAPZDBFDBUIWTDUMWCB
+      IZWRWBWTXAWOVOWQWAWCBFSXAWFVPWPVTWCBHUJWPWCVRIZAFLXAVTWIXBEAFWGVQIWHVRWCW
+      GVQUKUNUOXAXBVSAFWCBVRUJUPUQURRVOWAUSUTVCVDVPVOVTVPVOHFGVABHFSVEVSVOAFVQF
+      GVRFGZVSVOVQVBXCVSVOVRFBVFVGVHVIVJVNUTVKVLWBCVMQ $.
   $}
 
 
