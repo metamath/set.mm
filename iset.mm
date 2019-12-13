@@ -58327,6 +58327,12 @@ $)
     wa wb 3orbi123d mpbird ) ACDZBCDZPZABEFZABGZBAEFZHABDZUDBADZHZTAIDBIDUHUAAJ
     BJABKLUBUCUFUDUDUEUGABMUBUDNUATUEUGQBAMORS $.
 
+  $( Less-than for positive integers is decidable.  (Contributed by Jim
+     Kingdon, 12-Dec-2019.) $)
+  ltdcpi $p |- ( ( A e. N. /\ B e. N. ) -> DECID A <N B ) $=
+    ( cnpi wcel wa clti wbr wdc com pinn nndcel syl2an ltpiord dcbid mpbird ) A
+    CDZBCDZEZABFGZHABDZHZPAIDBIDUAQAJBJABKLRSTABMNO $.
+
   $( Positive integer 'less than' is a relation on positive integers.
      (Contributed by NM, 8-Feb-1996.) $)
   ltrelpi $p |- <N C_ ( N. X. N. ) $=
@@ -59214,6 +59220,21 @@ $)
       KZWEWFLZWFWESKZMZWDWENPZWFNPZWJVRWBWKVSWAVBVFUGUHVSWAWLVRWBVCVEUGUIWEWFUL
       UJWDVHWGVIWHVJWIVBVCVEVFUMVBVCVEVFUNWDVJVEVCTRZVFVBTRZSKZWIWCVTVJWOUTVEVF
       VBVCUMUOWDWFWMWEWNSVSWAWFWMLVRWBVCVEUPUIVRWBWEWNLVSWAVBVFUPUHVAUQOURUS $.
+  $}
+
+  ${
+    $d A w x y z $.  $d B w x y z $.
+    $( Less-than for positive fractions is decidable.  (Contributed by Jim
+       Kingdon, 12-Dec-2019.) $)
+    ltdcnq $p |- ( ( A e. Q. /\ B e. Q. ) -> DECID A <Q B ) $=
+      ( vx vy vz vw cnq wcel wa cv cnpi cop ceq cec wceq wex cltq wbr wdc nqpi
+      anim12i ee4anv sylibr co clti mulclpi ltdcpi syl2an an42s ordpipqqs dcbid
+      cmi mpbird ad2ant2r wb breq12 ad2ant2l exlimivv syl ) AGHZBGHZIZCJZKHZDJZ
+      KHZIZAVCVELMNZOZIZEJZKHZFJZKHZIZBVKVMLMNZOZIZIZFPEPZDPCPZABQRZSZVBVJDPCPZ
+      VRFPEPZIWAUTWDVAWECDATEFBTUAVJVRCDEFUBUCVTWCCDVSWCEFVSWCVHVPQRZSZVGVOWGVI
+      VQVGVOIZWGVCVMULUDZVEVKULUDZUERZSZVDVNVFVLWLVDVNIWIKHWJKHWLVFVLIVCVMUFVEV
+      KUFWIWJUGUHUIWHWFWKVCVEVKVMUJUKUMUNVSWBWFVIVQWBWFUOVGVOAVHBVPQUPUQUKUMURU
+      RUS $.
   $}
 
   ${
