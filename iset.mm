@@ -64739,10 +64739,10 @@ $)
        (Contributed by BJ, 30-Nov-2019.) $)
     bj-indint $p |- Ind |^| { x e. A | Ind x } $=
       ( vy cv wind crab cint c0 wcel csuc wral df-bj-ind simplbi rgenw elintrab
-      wi 0ex mpbir wa rsp adantl sylbi a2i ralimi vex bj-sucex 3imtr4i mpbir2an
-      rgen ) ADZEZABFGZEHULIZCDZJZULIZCULKUMUKHUJIZPZABKURABUKUQUOUJIZCUJKZCUJL
-      ZMNUKAHBQORUPCULUKUNUJIZPZABKUKUSPZABKUNULIUPVCVDABUKVBUSUKUQUTSVBUSPZVAU
-      TVEUQUSCUJTUAUBUCUDUKAUNBCUEZOUKAUOBUNVFUFOUGUICULLUH $.
+      wi 0ex mpbir bj-indsuc a2i ralimi vex bj-sucex 3imtr4i rgen mpbir2an ) AD
+      ZEZABFGZEHUIIZCDZJZUIIZCUIKUJUHHUGIZPZABKUOABUHUNULUGIZCUGKCUGLMNUHAHBQOR
+      UMCUIUHUKUGIZPZABKUHUPPZABKUKUIIUMURUSABUHUQUPUGUKSTUAUHAUKBCUBZOUHAULBUK
+      UTUCOUDUECUILUF $.
   $}
 
   ${
@@ -64775,7 +64775,7 @@ $)
 
   ${
     $d x y A $.
-    $( A Characterization of subclasses of ` _om ` .  (Contributed by BJ,
+    $( A characterization of subclasses of ` _om ` .  (Contributed by BJ,
        30-Nov-2019.)  (Proof modification is discouraged.) $)
     bj-ssom $p |- ( A. x ( Ind x -> A C_ x ) <-> A C_ _om ) $=
       ( vy cv wind wss wi wal cab cint com wral wcel ssint df-ral bj-indeq elab
@@ -64806,10 +64806,10 @@ $)
     bj-2inf $p |- ( _om e. _V <->
                                 E. x ( Ind x /\ A. y ( Ind y -> x C_ y ) ) ) $=
       ( com cvv wcel cv wind wss wi wal wa wceq eqid bj-om mpbii bj-indeq sseq1
-      wex nfv imbi2d albid anbi12d spcegv mpd wb vex ax-mp biimpri eximi sylibr
-      isset impbii ) CDEZAFZGZBFZGZUNUPHZIZBJZKZARZUMCGZUQCUPHZIZBJZKZVBUMCCLVG
-      CMBCDNOVAVGACDUNCLZUOVCUTVFUNCPVHUSVEBVHBSVHURVDUQUNCUPQTUAUBUCUDVBVHARUM
-      VAVHAVHVAUNDEVHVAUEAUFBUNDNUGUHUIACUKUJUL $.
+      wex imbi2d albidv anbi12d spcegv mpd vex ax-mp biimpri eximi isset sylibr
+      wb impbii ) CDEZAFZGZBFZGZUMUOHZIZBJZKZARZULCGZUPCUOHZIZBJZKZVAULCCLVFCMB
+      CDNOUTVFACDUMCLZUNVBUSVEUMCPVGURVDBVGUQVCUPUMCUOQSTUAUBUCVAVGARULUTVGAVGU
+      TUMDEVGUTUJAUDBUMDNUEUFUGACUHUIUK $.
   $}
 
 
@@ -64870,38 +64870,12 @@ $)
   $}
 
   ${
-    $d a b x $.
-    $( Axiom of infinity in a constructive setting.  This asserts the existence
-       of the special set we want (the set of natural numbers), instead of the
-       existence of a set with some properties ( ~ ax-iinf ) from which one
-       then proves ( ~ omex ) using full separation that the wanted set
-       exists.  See also ~ ax-inf2 .  (Contributed by BJ, 14-Nov-2019.)
-       (New usage is discouraged.) $)
-    ax-infvnALT $a |- E. a ( ( (/) e. a /\ A. x e. a suc x e. a ) /\
-                   A. b ( ( (/) e. b /\ A. x e. b suc x e. b ) -> a C_ b ) ) $.
-  $}
-
-  ${
     $d x y $.
     $( Proof of ~ omex from ~ ax-infvn .  (Contributed by BJ, 14-Nov-2019.)
        (Proof modification is discouraged.) $)
     bj-omex $p |- _om e. _V $=
       ( vx vy com cvv wcel cv wind wss wi wal wa wex ax-infvn bj-2inf mpbir ) C
       DEAFZGBFZGPQHIBJKALABMABNO $.
-  $}
-
-  ${
-    $d a b x $.
-    $( Alternate proof of ~ bj-omex .  (Contributed by BJ, 14-Nov-2019.)
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
-    bj-omexALT $p |- _om e. _V $=
-      ( va vx vb com cv wceq wex wss wa c0 wcel csuc wral wi wal cab cint dfom3
-      cvv syl5eqss ax-infvnALT vex crab rabab eqcomi inteqi rabid intss1 sylbir
-      mpan ssintab biimpri syl6sseqr anim12ci eximii eqss exbii mpbir issetri )
-      ADAEZDFZAGUTDHZDUTHZIZAGJUTKBELZUTKBUTMIZJCEZKVEVGKBVGMIZUTVGHNCOZIVDABAC
-      UAVFVCVIVBVFDVFAPZQZUTABRUTSKZVFVKUTHAUBVLVFIZVKVFASUCZQZUTVJVNVNVJVFAUDU
-      EUFVMUTVNKVOUTHVFASUGUTVNUHUITUJTVIUTVHCPQZDUTVPHVIVHCUTUKULCBRUMUNUOVAVD
-      AUTDUPUQURUS $.
   $}
 
   ${
@@ -65338,11 +65312,10 @@ $)
        8-Dec-2019.)  (Proof modification is discouraged.) $)
     bj-inf2vn $p |- ( A e. V -> ( A. x ( x e. A <->
                          ( x = (/) \/ E. y e. A x = suc y ) ) -> A = _om ) ) $=
-      ( vz wcel cv c0 wceq csuc wrex wo wb wal wind wss wi wa com bj-inf2vnlem1
-      wral bi1 alimi df-ral sylibr bdcv bj-inf2vnlem3 syl alrimiv jca a1i bj-om
-      sylibrd ) CDGZAHZCGZUPIJUPBHKJBCLMZNZAOZCPZFHZPCVBQRZFOZSZCTJUTVERUOUTVAV
-      DABCUAUTVCFUTURACUBZVCUTUQURRZAOVFUSVGAUQURUCUDURACUEUFABCVBEFUGUHUIUJUKU
-      LFCDUMUN $.
+      ( vz cv wcel c0 wceq csuc wrex wo wb wal com wind wss wi wa bj-inf2vnlem1
+      wral bi1 alimi df-ral sylibr bdcv bj-inf2vnlem3 syl alrimiv bj-om syl5ibr
+      jca ) AGZCHZUNIJUNBGKJBCLMZNZAOZCPJCDHCQZFGZQCUTRSZFOZTURUSVBABCUAURVAFUR
+      UPACUBZVAURUOUPSZAOVCUQVDAUOUPUCUDUPACUEUFABCUTEFUGUHUIUJUMFCDUKUL $.
   $}
 
   ${
@@ -65352,18 +65325,18 @@ $)
        (Proof modification is discouraged.) $)
     bj-inf2vn2 $p |- ( A e. V -> ( A. x ( x e. A <->
                          ( x = (/) \/ E. y e. A x = suc y ) ) -> A = _om ) ) $=
-      ( vz wcel cv c0 wceq csuc wrex wo wb wal wind wss wi wa com bj-inf2vnlem1
-      wral bi1 alimi df-ral sylibr bj-inf2vnlem4 syl alrimiv jca bj-om sylibrd
-      a1i ) CDFZAGZCFZUNHIUNBGJIBCKLZMZANZCOZEGZOCUTPQZENZRZCSIURVCQUMURUSVBABC
-      TURVAEURUPACUAZVAURUOUPQZANVDUQVEAUOUPUBUCUPACUDUEABCUTUFUGUHUIULECDUJUK
-      $.
+      ( vz cv wcel c0 wceq csuc wrex wo wb wal com wind wss wi wa bj-inf2vnlem1
+      wral bi1 alimi df-ral sylibr bj-inf2vnlem4 syl alrimiv jca bj-om syl5ibr
+      ) AFZCGZULHIULBFJIBCKLZMZANZCOICDGCPZEFZPCURQRZENZSUPUQUTABCTUPUSEUPUNACU
+      AZUSUPUMUNRZANVAUOVBAUMUNUBUCUNACUDUEABCURUFUGUHUIECDUJUK $.
   $}
 
   ${
     $d x y z a $.
     $( Using bounded set induction and the strong axiom of infinity, ` _om ` is
-       a set, that is, we recover ~ ax-infvn .  (Contributed by BJ,
-       8-Dec-2019.)  (Proof modification is discouraged.) $)
+       a set, that is, we recover ~ ax-infvn (see ~ bj-2inf for the equivalence
+       of the latter with ~ bj-omex ).  (Contributed by BJ, 8-Dec-2019.)
+      (Proof modification is discouraged.) $)
     bj-omex2 $p |- _om e. _V $=
       ( va vx vy com wel cv c0 wceq csuc wrex wo wb wal ax-inf2 cvv wcel wi vex
       bdcv bj-inf2vn ax-mp eximii issetri ) ADBAEBFZGHUDCFIHCAFZJKLBMZUEDHZABCA
