@@ -1,4 +1,4 @@
-$( iset.mm - Version of 11-Dec-2019
+$( iset.mm - Version of 13-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -35567,6 +35567,17 @@ $)
       ( wcel wa wbr wceq wo wn wor wi sotricim mpan w3o 3orass ax-1 pm2.24 jaoi
       sylbi syl impbid ) BAGCAGHZBCDIZBCJZCBDIZKZLZADMUEUFUJNEABCDOPUEUFUGUHQZU
       JUFNZFUKUFUIKULUFUGUHRUFULUIUFUJSUIUFTUAUBUCUD $.
+
+    $( A trichotomy relationship, given a trichotomous order.  (Contributed by
+       Jim Kingdon, 13-Dec-2019.) $)
+    sotritrieq $p |- ( ( B e. A /\ C e. A ) ->
+        ( B = C <-> -. ( B R C \/ C R B ) ) ) $=
+      ( wcel wa wceq wbr wo wn wi wor sonr mpan breq2 notbid syl5ibcom w3o jcad
+      breq1 ioran syl6ibr adantr 3orrot 3orcomb 3orass 3bitri biimpi orcomd ord
+      syl impbid ) BAGZCAGZHZBCIZBCDJZCBDJZKZLZUOURVBMUPUOURUSLZUTLZHVBUOURVCVD
+      UOBBDJZLZURVCADNUOVFEABDOPZURVEUSBCBDQRSUOVFURVDVGURVEUTBCBDUBRSUAUSUTUCU
+      DUEUQUSURUTTZVBURMFVHVAURVHURVAVHURVAKZVHURUTUSTURUSUTTVIUSURUTUFURUTUSUG
+      URUSUTUHUIUJUKULUMUN $.
   $}
 
   ${
