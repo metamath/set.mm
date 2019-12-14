@@ -359,6 +359,7 @@ $s class cgrG $: <msub href="df-cgrg.html"><mo>&#x223C;</mo> <mo>&#x1d4a2;</mo><
 $s class leG $: <msub href="df-leg.html"><mo>&le;</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class midG $: <msub href="df-mid.html"><mo>mid</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class pInvG $: <msub href="df-mir.html"><mo>pInv</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class lInvG $: <msub href="df-lmi.html"><mo>lInv</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class raG $: <msub href="df-rag.html"><mo>&angrt;</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class perpG $: <msub href="df-perp.html"><mo>&#x27C2;</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class cgrA $: <msubsup href="df-cgra.html"><mo>&#x223C;</mo> <mo>&#x1d4a2;</mo> <mo>&ang;</mo></msubsup> $.
@@ -1300,8 +1301,8 @@ $s class RRVec $: <mi href="df-bj-rrvec.html">&Ropf;Vec</mi> $.
 
 $s wff Prv ph $: <mrow><mo href="ax-prv1.html">Prv</mo> #ph#</mrow> $.
 $s wff FF/ x ph $: <mrow> <mo href="df-bj-nf.html">&#8498;&#8498;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
-$s wff if- ( ph , ps , ch ) $: <mrow> <mo href="df-bj-if.html">if</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
-$s class ( A Proj B ) $: <mfenced>#A# <mo href="df-bj-proj.html">Proj</mo> #B#</mfenced> $.
+$s wff if- ( ph , ps , ch ) $: <mrow> <mo href="df-bj-if.html">if-</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
+$s class ( A Proj B ) $: <mfenced><mrow>#A# <mo href="df-bj-proj.html">Proj</mo> #B#</mrow></mfenced> $.
 $s class (| A |) $: <mfenced open="&#x2985;" close="&#x2986;">#A#</mfenced> $.
 $s class FinSum $: <mo href="df-bj-finsum.html">FinSum</mo> $.
 
