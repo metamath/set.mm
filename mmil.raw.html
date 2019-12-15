@@ -973,8 +973,8 @@ reference</FONT></B>&nbsp;&nbsp;&nbsp;
 <P>This is a list of theorems from the Metamath Proof Explorer (which
 assumes the law of the excluded middle throughout) which we do not
 have in the Intuitionistic Logic Explorer (generally because they
-are not provable without the law of the excluded middle, perhaps a
-few which could be proved but aren't yet), together
+are not provable without the law of the excluded middle, although some
+could be proved but aren't for a variety of reasons), together
 with the closest replacements.</P>
 
 <TABLE BORDER CELLSPACING=0 BGCOLOR="#EEFFFA">
@@ -1016,6 +1016,14 @@ elimination.</TD>
 </TR>
 
 <TR>
+<TD>pm2.61 , pm2.61d , pm2.61d1 , pm2.61d2 , pm2.61i , pm2.61ii , pm2.61nii ,
+pm2.61iii , pm2.61ian , pm2.61dan , pm2.61ddan , pm2.61dda , pm2.61ine , pm2.61ne ,
+pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
+</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
 <TD>pm4.63</TD>
 <TD>~ pm3.2im </TD>
 </TR>
@@ -1038,6 +1046,12 @@ elimination.</TD>
 <TR>
 <TD>ianor</TD>
 <TD>~ pm3.14 </TD>
+</TR>
+
+<TR>
+<TD>ecase3d</TD>
+<TD><I>none</I></TD>
+<TD>This is a form of case elimination.<TD>
 </TR>
 
 <TR>
@@ -1326,6 +1340,17 @@ example ~ nntri3or , ~ pitri3or , and ~ nqtri3or .
 <TR>
 <TD>~ nqtric </TD>
 <TD>For the specific order ` <Q Or Q. `</TD>
+</TR>
+
+<TR>
+<TD>sotrieq</TD>
+<TD>~ sotritrieq </TD>
+<TD>For a trichotomous order</TD>
+</TR>
+
+<TR>
+<TD>sotrieq2</TD>
+<TD>see sotrieq and then apply ~ ioran </TD>
 </TR>
 
 <TR>
@@ -1797,6 +1822,11 @@ middle as seen at ~ ordpwsucexmid .</TD>
 </TR>
 
 <TR>
+<TD>tfinds</TD>
+<TD>~ tfis3 </TD>
+</TR>
+
+<TR>
 <TD>1stval</TD>
 <TD>~ 1stvalg </TD>
 </TR>
@@ -1899,6 +1929,21 @@ middle as seen at ~ ordpwsucexmid .</TD>
 </TR>
 
 <TR>
+<TD>om0r</TD>
+<TD>~ om0 , ~ nnm0r </TD>
+</TR>
+
+<TR>
+<TD>om00</TD>
+<TD>~ nnm00 </TD>
+</TR>
+
+<TR>
+<TD>om00el</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
 <TD>suc11reg</TD>
 <TD>~ suc11g </TD>
 </TR>
@@ -1930,9 +1975,25 @@ characteristic function and initial value.</TD>
 </TR>
 
 <TR>
+<TD>oaord1</TD>
+<TD><I>none yet</I></TD>
+</TR>
+
+<TR>
 <TD>oaword</TD>
 <TD>~ oawordi </TD>
 <TD>The other direction presumably could be proven but isn't yet.</TD>
+</TR>
+
+<TR>
+<TD>omwordi</TD>
+<TD>~ nnmword</TD>
+<TD>The set.mm proof of omwordi relies on case elimination.</TD>
+</TR>
+
+<TR>
+<TD>omword1</TD>
+<TD>~ nnmword</TD>
 </TR>
 
 <TR>
@@ -2160,7 +2221,7 @@ so far there hasn't been a need to do so.</TD>
 
 <TR>
 <TD>archnq</TD>
-<TD><I>none yet</I></TD>
+<TD>~ archnqq </TD>
 </TR>
 
 <TR>
@@ -2205,7 +2266,7 @@ so far there hasn't been a need to do so.</TD>
 
 <TR>
 <TD>prcdnq</TD>
-<TD>~ prcdnql </TD>
+<TD>~ prcdnql , ~ prcunqu </TD>
 </TR>
 
 <TR>
@@ -2238,6 +2299,91 @@ so far there hasn't been a need to do so.</TD>
 <TD>~ genpcdl </TD>
 </TR>
 
+<TR>
+<TD>genpnmax</TD>
+<TD>~ genprndl</TD>
+</TR>
+
+<TR>
+<TD>ltrnq</TD>
+<TD>~ ltrnqi </TD>
+</TR>
+
+<TR>
+<TD>genpcl</TD>
+<TD>~ addclpr , ~ mulclpr </TD>
+</TR>
+
+<TR>
+<TD>genpass</TD>
+<TD>~ genpassg </TD>
+</TR>
+
+<TR>
+<TD>addclprlem1</TD>
+<TD>~ addnqprllem , ~ addnqprulem </TD>
+</TR>
+
+<TR>
+<TD>addclprlem2</TD>
+<TD>~ addnqprl , ~ addnqpru </TD>
+</TR>
+
+<TR>
+<TD>plpv</TD>
+<TD>~ plpvlu </TD>
+</TR>
+
+<TR>
+<TD>mpv</TD>
+<TD>~ mpvlu </TD>
+</TR>
+
+<TR>
+<TD>mulclprlem</TD>
+<TD>~ mulnqprl , ~ mulnqpru </TD>
+</TR>
+
+<TR>
+<TD>addcompr</TD>
+<TD>~ addcomprg </TD>
+</TR>
+
+<TR>
+<TD>addasspr</TD>
+<TD>~ addassprg </TD>
+</TR>
+
+<TR>
+<TD>mulcompr</TD>
+<TD>~ mulcomprg </TD>
+</TR>
+
+<TR>
+<TD>mulasspr</TD>
+<TD>~ mulassprg </TD>
+</TR>
+
+<TR>
+<TD>distrlem1pr</TD>
+<TD>~ distrlem1prl , ~ distrlem1pru </TD>
+</TR>
+
+<TR>
+<TD>distrlem4pr</TD>
+<TD>~ distrlem4prl , ~ distrlem4pru </TD>
+</TR>
+
+<TR>
+<TD>distrlem5pr</TD>
+<TD>~ distrlem5prl , ~ distrlem5pru </TD>
+</TR>
+
+<TR>
+<TD>distrpr</TD>
+<TD>~ distrprg </TD>
+</TR>
+
 </TABLE>
 
 <HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
@@ -2249,6 +2395,13 @@ COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
 accepting constructive mathematics,&quot; <I>Bulletin (New Series) of
 the American Mathematical Society</I>, 54:481-498 (2017),
 DOI: <A HREF="http://dx.doi.org/10.1090/bull/1556">10.1090/bull/1556</A> .</LI>
+
+<LI><A NAME="BauerTaylor"></A> [BauerTaylor] Andrej Bauer and Paul Taylor,
+"The Dedekind Reals in Abstract Stone Duality",
+<I>Mathematical structures in computer science</I>, 19(4):757&#x2013;838, 2009,
+<A HREF="http://www.paultaylor.eu/ASD/dedras.pdf">
+http://www.paultaylor.eu/ASD/dedras.pdf</A>
+</LI>
 
 <LI><A NAME="BellMachover"></A> [BellMachover] Bell, J. L., and M.
 Machover, <I>A Course in Mathematical Logic,</I> North-Holland,
