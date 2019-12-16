@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Dec-2019
+$( iset.mm - Version of 16-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -62478,7 +62478,8 @@ $)
     $d q r s t u $.
     $( Positive real 'less than' is a partial ordering.  Remark ("< is
        transitive and irreflexive") preceding Proposition 11.2.3 of [HoTT], p.
-       (varies).  (Contributed by Jim Kingdon, 15-Dec-2019.) $)
+       (varies).  Lemma for ~ ltsopr .  (Contributed by Jim Kingdon,
+       15-Dec-2019.) $)
     ltpopr $p |- <P Po P. $=
       ( vq vr cnp cltp wtru cv wcel wbr c2nd cfv c1st wa cnq wrex cop wb ltdfpr
       prop wi mpd vs vt vu wpo wn prdisj sylnib nrexdv anidms mtbird adantl w3a
@@ -62494,6 +62495,34 @@ $)
       BXNWOXHXLOCGXIXMYBWNRWEXKXLXHVDVBVEVFVLVGVHWRXPYBXESZXAWQWCXPYCWOWQXOYCXJ
       WQXNYCXMWQXDWPIJZOCGXNYCWPRXKWEYDXDVIUMVJVJVKVHTVMVNVOVPTWRXGXBSXAWRXBXGW
       CWQXBXGPWOWBWPAQVQVRVSTVNUKVTWA $.
+  $}
+
+  ${
+    $d q r s x y z $.
+    $( Positive real 'less than' is a weak linear order (in the sense of
+       ~ df-iso ).  Proposition 11.2.3 of [HoTT], p.  (varies).  (Contributed
+       by Jim Kingdon, 16-Dec-2019.) $)
+    ltsopr $p |- <P Or P. $=
+      ( vx vy vz vq vr vs cnp cltp cv wbr wi wcel cfv wa cnq wrex cltq sylan ex
+      mpd wor wpo wo wral ltpopr w3a c2nd wb ltdfpr 3adant3 cop prnminu prnmaxl
+      c1st prop anim12i an4s reeanv sylibr 3adantl3 ltsonq ltrelnq sotri adantl
+      prloc 3ad2antl3 adantr ad2antrr wex elprnqu ax-ia3 19.8a ee12an 3ad2antl1
+      imp df-rex biimprd 3adant2 adantrr elprnql pm3.21 3adant1 adantrl orim12d
+      3ad2antl2 ancoms adantlr rexlimdvva rexlimdvw sylbid df-iso mpbir2an
+      rgen3 ) GHUAGHUBAIZBIZHJZWNCIZHJZWQWOHJZUCZKZCGUDBGUDAGUDUEXAABCGGGWNGLZW
+      OGLZWQGLZUFZWPDIZWNUGMZLZXFWOUNMZLZNZDOPZWTXBXCWPXLUHXDWNWODUIUJXEXKWTDOX
+      EXKWTXEXKNZEIZXFQJZXFFIZQJZNZFXIPEXGPZWTXBXCXKXSXDXBXCNXKNXOEXGPZXQFXIPZN
+      ZXSXBXHXCXJYBXBXHNXTXCXJNYAXBWNUNMZXGUKGLZXHXTWNUOZEXFXGYCULRXCXIWOUGMZUK
+      GLZXJYAWOUOZFXFYFXIUMRUPUQXOXQEFXGXIURUSUTXMXRWTEFXGXIXMXNXGLZXPXILZNZNZX
+      RWTYLXRNZXNWQUNMZLZXPWQUGMZLZUCZWTYMXNXPQJZYRXRYSYLXNXFXPQOVAVBVCVDXMYSYR
+      KZYKXRXEYTXKXEYSYRXDXBYSYRXCXDYNYPUKGLYSYRWQUOXNXPYPYNVERVFSVGVHTYLYRWTKZ
+      XRXEYKUUAXKXEYKNYOWRYQWSXEYIYOWRKYJXEYINZYOWRUUBYONZYIYONZEOPZWRUUCXNOLZU
+      UDNZEVIZUUEUUBYOUUHXBXCYIYOUUHKXDXBYINUUFYOUUDUUHXBYDYIUUFYEXNXGYCVJRYIYO
+      UUDKXBYIYOVKVDUUGEVLVMVNVOUUDEOVPUSXEUUEWRKZYIYOXBXDUUIXCXBXDNWRUUEWNWQEU
+      IVQVRVHTSVSXEYJYQWSKYIXEYJNZYQWSUUJYQNZYQYJNZFOPZWSUUKXPOLZUULNZFVIZUUMUU
+      JYQUUPXCXBYJYQUUPKXDXCYJNUUNYQUULUUPXCYGYJUUNYHXPYFXIVTRYJYQUULKXCYJYQWAV
+      DUUOFVLVMWEVOUULFOVPUSXEUUMWSKZYJYQXCXDUUQXBXDXCUUQXDXCNWSUUMWQWOFUIVQWFW
+      BVHTSWCWDWGVGTSWHTSWIWJWMABCGHWKWL $.
   $}
 
 $(
