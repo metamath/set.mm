@@ -62525,6 +62525,26 @@ $)
       BVHTSWCWDWGVGTSWHTSWIWJWMABCGHWKWL $.
   $}
 
+  ${
+    $d A f g h x y p q r $.  $d B f g h x y p q r $.
+    $( The sum of two positive reals is greater than one of them.  Proposition
+       9-3.5(iii) of [Gleason] p. 123.  (Contributed by NM, 26-Mar-1996.)
+       (Revised by Mario Carneiro, 12-Jun-2013.) $)
+    ltaddpr $p |- ( ( A e. P. /\ B e. P. ) -> A <P ( A +P. B ) ) $=
+      ( vp vq vr vf vg vh cnp wcel wa cv c1st cfv cnq wrex c2nd cop prop sylan
+      vx vy cpp co cltp wbr prml syl cplq cltq prarloc ad2ant2r elprnqu adantlr
+      adantl ad2ant2rl adantr simplrr wi simprl simplr jca df-iplp addclnq syl5
+      genpprecll imdistani addclpr prcdnql anassrs imp rspe wb ltdfpr ad3antrrr
+      syl12anc syldan mpbird ex rexlimdvva mpd rexlimddv ) AIJZBIJZKZCLZBMNZJZA
+      ABUCUDZUEUFZCOWDWHCOPZWCWDWGBQNZRIJWKBSCWLWGUGUHUOWEWFOJZWHKZKZDLZELZWFUI
+      UDZUJUFZDAQNZPEAMNZPZWJWCWMXBWDWHWCXAWTRIJZWMXBASZWFWTXAEDUKTULWOWSWJEDXA
+      WTWOWQXAJZWPWTJZKZKZWSWJXHWSKZWJXFWPWIMNZJZKZDOPZXIWPOJZXFXKXMXHXNWSWEXFX
+      NWNXEWCXFXNWDWCXCXFXNXDWPWTXAUMTUNUPUQWOXEXFWSURXHWSXKWEWNXGWSXKUSZWEWNXG
+      KZKWEWRXJJZKXOWEXPXQXPXEWHKWEXQXPXEWHWNXEXFUTWMWHXGVAVBFGHUAUBABWQWFUCUIU
+      AUBHGFVCGLHLVDVFVEVGWEWIIJZXQXOABVHZXRXJWIQNZRIJXQXOWISWRWPXTXJVITTUHVJVK
+      XLDOVLVPWEWJXMVMZWNXGWSWCWDXRYAXSAWIDVNVQVOVRVSVTWAWB $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
