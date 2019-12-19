@@ -1,4 +1,4 @@
-$( iset.mm - Version of 13-Dec-2019
+$( iset.mm - Version of 16-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -60833,6 +60833,20 @@ $)
   $}
 
   ${
+    $d A q r $.  $d B q r $.  $d L q r $.  $d U q r $.
+    $( A Dedekind cut is disjoint.  (Contributed by Jim Kingdon,
+       15-Dec-2019.) $)
+    prdisj $p |- ( ( <. L , U >. e. P. /\ A e. Q. ) ->
+        -. ( A e. L /\ A e. U ) ) $=
+      ( vq vr cop cnp wcel cnq wa wn cv wi wceq eleq1 anbi2d wss wrex wb wral
+      anbi12d notbid imbi12d cltq wbr wo w3a elinp simpr2 sylbi r19.21bi vtoclg
+      anabsi7 ) CBFGHZAIHZACHZABHZJZKZUNDLZIHZJZUTCHZUTBHZJZKZMUNUOJZUSMDAIUTAN
+      ZVBVGVFUSVHVAUOUNUTAIOPVHVEURVHVCUPVDUQUTACOUTABOUAUBUCUNVFDIUNCIQBIQJVCD
+      IRELZBHZEIRJJZVCUTVIUDUEZVICHJEIRSDITVJVLVDJDIRSEITJZVFDITZVLVCVJUFMEITDI
+      TZUGJVNBCEDUHVKVMVNVOUIUJUKULUM $.
+  $}
+
+  ${
     $( Two possible ways of contracting an interval which straddles a Dedekind
        cut.  Lemma for ~ prarloc .  (Contributed by Jim Kingdon,
        10-Nov-2019.) $)
@@ -61152,6 +61166,19 @@ $)
     ltrelpr $p |- <P C_ ( P. X. P. ) $=
       ( vx vy vq cltp cv cnp wcel c2nd cfv c1st cnq wrex copab df-iltp opabssxp
       wa cxp eqsstri ) DAEZFGBEZFGPCEZSHIGUATJIGPCKLZPABMFFQABCNUBABFFOR $.
+  $}
+
+  ${
+    $d A q x y $.  $d B q x y $.
+    $( More convenient form of ~ df-iltp .  (Contributed by Jim Kingdon,
+       15-Dec-2019.) $)
+    ltdfpr $p |- ( ( A e. P. /\ B e. P. ) -> ( A <P B <->
+        E. q e. Q. ( q e. ( 2nd ` A ) /\ q e. ( 1st ` B ) ) ) ) $=
+      ( vx vy cltp wbr cop cv cnp wcel wa c2nd cfv c1st wrex wceq fveq2d eleq2d
+      cnq copab df-br df-iltp eleq2i bitri ax-ia1 ax-ia2 anbi12d rexbidv syl5bb
+      opelopab2a ) ABFGZABHZDIZJKEIZJKLCIZUNMNZKZUPUOONZKZLZCTPZLDEUAZKZAJKBJKL
+      UPAMNZKZUPBONZKZLZCTPZULUMFKVDABFUBFVCUMDECUCUDUEVBVJDEABJJUNAQZUOBQZLZVA
+      VICTVMURVFUTVHVMUQVEUPVMUNAMVKVLUFRSVMUSVGUPVMUOBOVKVLUGRSUHUIUKUJ $.
   $}
 
   ${
@@ -62445,6 +62472,77 @@ $)
       ( cnp wcel c1p cmp co wceq c1st cfv 1idprl 1idpru wa wb 1pr mulclpr mpan2
       c2nd preqlu mpancom mpbir2and ) ABCZADEFZAGZUBHIAHIGZUBQIAQIGZAJAKUBBCZUA
       UCUDUELMUADBCUFNADOPUBARST $.
+  $}
+
+  ${
+    $d q r s t u $.
+    $( Positive real 'less than' is a partial ordering.  Remark ("< is
+       transitive and irreflexive") preceding Proposition 11.2.3 of [HoTT], p.
+       (varies).  Lemma for ~ ltsopr .  (Contributed by Jim Kingdon,
+       15-Dec-2019.) $)
+    ltpopr $p |- <P Po P. $=
+      ( vq vr cnp cltp wtru cv wcel wbr c2nd cfv c1st wa cnq wrex cop wb ltdfpr
+      prop wi mpd vs vt vu wpo wn prdisj sylnib nrexdv anidms mtbird adantl w3a
+      sylan ancom 3adant3 3adant1 anbi12d reeanv syl6bbr biimpa simprll syl3an1
+      cltq prltlu 3adant3r 3adant2l 3ad2antl2 adantlr prcdnql adantrl 3ad2antl3
+      3expb jca ex rexlimdvw reximdv 3adant2 biimprd adantr ispod trud ) CDUDEU
+      AUBUCCDUAFZCGZWBWBDHZUEEWCWDAFZWBIJZGZWEWBKJZGZLZAMNZWCWJAMWCWEMGZLWIWGLZ
+      WJWCWHWFOCGWLWMUEWBRWEWFWHUFUMWIWGUNUGUHWCWDWKPWBWBAQUIUJUKWCUBFZCGZUCFZC
+      GZULZWBWNDHZWNWPDHZLZWBWPDHZSEWRXAXBWRXALZWGWEWPKJZGZLZAMNZXBXCWGWEWNKJZG
+      ZLZBFZWNIJZGZXKXDGZLZLZBMNZAMNZXGWRXAXRWRXAXJAMNZXOBMNZLXRWRWSXSWTXTWCWOW
+      SXSPWQWBWNAQUOWOWQWTXTPWCWNWPBQUPUQXJXOABMMURUSUTXCXQXFAMXCXPXFBMXCXPXFXC
+      XPLZWGXEXCWGXIXOVAYAWEXKVCHZXEWRXPYBXAWOWCXPYBWQWOXJXOYBWOXIXOYBWGWOXIXMY
+      BXNWOXHXLOCGXIXMYBWNRWEXKXLXHVDVBVEVFVLVGVHWRXPYBXESZXAWQWCXPYCWOWQXOYCXJ
+      WQXNYCXMWQXDWPIJZOCGXNYCWPRXKWEYDXDVIUMVJVJVKVHTVMVNVOVPTWRXGXBSXAWRXBXGW
+      CWQXBXGPWOWBWPAQVQVRVSTVNUKVTWA $.
+  $}
+
+  ${
+    $d q r s x y z $.
+    $( Positive real 'less than' is a weak linear order (in the sense of
+       ~ df-iso ).  Proposition 11.2.3 of [HoTT], p.  (varies).  (Contributed
+       by Jim Kingdon, 16-Dec-2019.) $)
+    ltsopr $p |- <P Or P. $=
+      ( vx vy vz vq vr vs cnp cltp cv wbr wi wcel cfv wa cnq wrex cltq sylan ex
+      mpd wor wpo wo wral ltpopr w3a c2nd wb ltdfpr 3adant3 cop prnminu prnmaxl
+      c1st prop anim12i an4s reeanv sylibr 3adantl3 ltsonq ltrelnq sotri adantl
+      prloc 3ad2antl3 adantr ad2antrr wex elprnqu ax-ia3 19.8a ee12an 3ad2antl1
+      imp df-rex biimprd 3adant2 adantrr elprnql pm3.21 3adant1 adantrl orim12d
+      3ad2antl2 ancoms adantlr rexlimdvva rexlimdvw sylbid df-iso mpbir2an
+      rgen3 ) GHUAGHUBAIZBIZHJZWNCIZHJZWQWOHJZUCZKZCGUDBGUDAGUDUEXAABCGGGWNGLZW
+      OGLZWQGLZUFZWPDIZWNUGMZLZXFWOUNMZLZNZDOPZWTXBXCWPXLUHXDWNWODUIUJXEXKWTDOX
+      EXKWTXEXKNZEIZXFQJZXFFIZQJZNZFXIPEXGPZWTXBXCXKXSXDXBXCNXKNXOEXGPZXQFXIPZN
+      ZXSXBXHXCXJYBXBXHNXTXCXJNYAXBWNUNMZXGUKGLZXHXTWNUOZEXFXGYCULRXCXIWOUGMZUK
+      GLZXJYAWOUOZFXFYFXIUMRUPUQXOXQEFXGXIURUSUTXMXRWTEFXGXIXMXNXGLZXPXILZNZNZX
+      RWTYLXRNZXNWQUNMZLZXPWQUGMZLZUCZWTYMXNXPQJZYRXRYSYLXNXFXPQOVAVBVCVDXMYSYR
+      KZYKXRXEYTXKXEYSYRXDXBYSYRXCXDYNYPUKGLYSYRWQUOXNXPYPYNVERVFSVGVHTYLYRWTKZ
+      XRXEYKUUAXKXEYKNYOWRYQWSXEYIYOWRKYJXEYINZYOWRUUBYONZYIYONZEOPZWRUUCXNOLZU
+      UDNZEVIZUUEUUBYOUUHXBXCYIYOUUHKXDXBYINUUFYOUUDUUHXBYDYIUUFYEXNXGYCVJRYIYO
+      UUDKXBYIYOVKVDUUGEVLVMVNVOUUDEOVPUSXEUUEWRKZYIYOXBXDUUIXCXBXDNWRUUEWNWQEU
+      IVQVRVHTSVSXEYJYQWSKYIXEYJNZYQWSUUJYQNZYQYJNZFOPZWSUUKXPOLZUULNZFVIZUUMUU
+      JYQUUPXCXBYJYQUUPKXDXCYJNUUNYQUULUUPXCYGYJUUNYHXPYFXIVTRYJYQUULKXCYJYQWAV
+      DUUOFVLVMWEVOUULFOVPUSXEUUMWSKZYJYQXCXDUUQXBXDXCUUQXDXCNWSUUMWQWOFUIVQWFW
+      BVHTSWCWDWGVGTSWHTSWIWJWMABCGHWKWL $.
+  $}
+
+  ${
+    $d A f g h x y p q r $.  $d B f g h x y p q r $.
+    $( The sum of two positive reals is greater than one of them.  Proposition
+       9-3.5(iii) of [Gleason] p. 123.  (Contributed by NM, 26-Mar-1996.)
+       (Revised by Mario Carneiro, 12-Jun-2013.) $)
+    ltaddpr $p |- ( ( A e. P. /\ B e. P. ) -> A <P ( A +P. B ) ) $=
+      ( vp vq vr vf vg vh cnp wcel wa cv c1st cfv cnq wrex c2nd cop prop sylan
+      vx vy cpp co cltp wbr prml syl cplq cltq prarloc ad2ant2r elprnqu adantlr
+      adantl ad2ant2rl adantr simplrr wi simprl simplr jca df-iplp addclnq syl5
+      genpprecll imdistani addclpr prcdnql anassrs imp rspe wb ltdfpr ad3antrrr
+      syl12anc syldan mpbird ex rexlimdvva mpd rexlimddv ) AIJZBIJZKZCLZBMNZJZA
+      ABUCUDZUEUFZCOWDWHCOPZWCWDWGBQNZRIJWKBSCWLWGUGUHUOWEWFOJZWHKZKZDLZELZWFUI
+      UDZUJUFZDAQNZPEAMNZPZWJWCWMXBWDWHWCXAWTRIJZWMXBASZWFWTXAEDUKTULWOWSWJEDXA
+      WTWOWQXAJZWPWTJZKZKZWSWJXHWSKZWJXFWPWIMNZJZKZDOPZXIWPOJZXFXKXMXHXNWSWEXFX
+      NWNXEWCXFXNWDWCXCXFXNXDWPWTXAUMTUNUPUQWOXEXFWSURXHWSXKWEWNXGWSXKUSZWEWNXG
+      KZKWEWRXJJZKXOWEXPXQXPXEWHKWEXQXPXEWHWNXEXFUTWMWHXGVAVBFGHUAUBABWQWFUCUIU
+      AUBHGFVCGLHLVDVFVEVGWEWIIJZXQXOABVHZXRXJWIQNZRIJXQXOWISWRWPXTXJVITTUHVJVK
+      XLDOVLVPWEWJXMVMZWNXGWSWCWDXRYAXSAWIDVNVQVOVRVSVTWAWB $.
   $}
 
 $(
