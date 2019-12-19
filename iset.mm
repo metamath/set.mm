@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Dec-2019
+$( iset.mm - Version of 19-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -63842,7 +63842,8 @@ $)
     bj-sbimedh.1 $e |- ( ph -> A. x ph ) $.
     bj-sbimedh.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
     bj-sbimedh.3 $e |- ( ph -> ( x = y -> ( ps -> ch ) ) ) $.
-    $( A strengthening of ~ sbiedh (same proof).  (Contributed by BJ, 16-Dec-2019.) $)
+    $( A strengthening of ~ sbiedh (same proof).  (Contributed by BJ,
+       16-Dec-2019.) $)
     bj-sbimedh $p |- ( ph -> ( [ y / x ] ps -> ch ) ) $=
       ( wsb wex weq wa sb1 impd eximdh syl5 19.9hd syld ) ABDEIZCDJZCSDEKZBLZDJ
       ATBDEMAUBCDFAUABCHNOPCADFGQR $.
@@ -63851,19 +63852,21 @@ $)
   ${
     bj-sbimeh.1 $e |- ( ps -> A. x ps ) $.
     bj-sbimeh.2 $e |- ( x = y -> ( ph -> ps ) ) $.
-    $( A strengthening of ~ sbieh (same proof).  (Contributed by BJ, 16-Dec-2019.) $)
+    $( A strengthening of ~ sbieh (same proof).  (Contributed by BJ,
+       16-Dec-2019.) $)
     bj-sbimeh $p |- ( [ y / x ] ph -> ps ) $=
       ( wsb wi wtru tru hbth wal a1i weq bj-sbimedh trud ) ACDGBHIABCDICJKBBCLH
       IEMCDNABHHIFMOP $.
   $}
 
-${
-bj-sbime.nf $e |- F/ x ps $.
-bj-sbime.1 $e |- ( x = y -> ( ph -> ps ) ) $.
-    $( A strengthening of ~ sbie (same proof).  (Contributed by BJ, 16-Dec-2019.) $)
-bj-sbime $p |- ( [ y / x ] ph -> ps ) $=
-  ( nfri bj-sbimeh ) ABCDBCEGFH $.
-$}
+  ${
+    bj-sbime.nf $e |- F/ x ps $.
+    bj-sbime.1 $e |- ( x = y -> ( ph -> ps ) ) $.
+    $( A strengthening of ~ sbie (same proof).  (Contributed by BJ,
+       16-Dec-2019.) $)
+    bj-sbime $p |- ( [ y / x ] ph -> ps ) $=
+      ( nfri bj-sbimeh ) ABCDBCEGFH $.
+  $}
 
 
 $(
@@ -65709,11 +65712,11 @@ $)
     bj-inf2vnlem3 $p |- ( A. x e. A ( x = (/) \/ E. y e. A x = suc y ) ->
                                                        ( Ind Z -> A C_ Z ) ) $=
       ( vz vt vu cv wceq wral wcel wi wal bdeli nfv weq eleq1 imbi12d csuc wrex
-      c0 wind wss bj-inf2vnlem2 ax-bdim biimpd biimprd bdsetindis syl6 syl6ibr
-      wo dfss2 ) AJZUCKUOBJUAKBCUBUMACLZDUDZGJZCMZURDMZNZGOZCDUEUPUQHJZCMZVCDMZ
-      NZHIJZLVGCMZVGDMZNZNIOVBABIHCDUFVAVFVJGIHUSUTGCEPGDFPUGVFGQVJGQVAIQVFIQGH
-      RZVAVFVKUSVDUTVEURVCCSURVCDSTUHGIRZVAVJVLUSVHUTVIURVGCSURVGDSTUIUJUKGCDUN
-      UL $.
+      c0 wo wind wss bj-inf2vnlem2 ax-bdim biimpd biimprd bdsetindis syl6 dfss2
+      syl6ibr ) AJZUCKUOBJUAKBCUBUDACLZDUEZGJZCMZURDMZNZGOZCDUFUPUQHJZCMZVCDMZN
+      ZHIJZLVGCMZVGDMZNZNIOVBABIHCDUGVAVFVJGIHUSUTGCEPGDFPUHVFGQVJGQVAIQVFIQGHR
+      ZVAVFVKUSVDUTVEURVCCSURVCDSTUIGIRZVAVJVLUSVHUTVIURVGCSURVGDSTUJUKULGCDUMU
+      N $.
   $}
 
   ${
@@ -65723,10 +65726,10 @@ $)
     bj-inf2vnlem4 $p |- ( A. x e. A ( x = (/) \/ E. y e. A x = suc y ) ->
                                                        ( Ind Z -> A C_ Z ) ) $=
       ( vz vt vu cv c0 wceq csuc wrex wral wcel wi wal nfv weq eleq1 imbi12d wo
-      wind wss bj-inf2vnlem2 biimpd biimprd setindis syl6 dfss2 syl6ibr ) AHZI
-      JUKBHKJBCLUAACMZDUBZEHZCNZUNDNZOZEPZCDUCULUMFHZCNZUSDNZOZFGHZMVCCNZVCDNZO
-      ZOGPURABGFCDUDUQVBVFEGFVBEQVFEQUQGQVBGQEFRZUQVBVGUOUTUPVAUNUSCSUNUSDSTUEE
-      GRZUQVFVHUOVDUPVEUNVCCSUNVCDSTUFUGUHECDUIUJ $.
+      wind wss bj-inf2vnlem2 biimpd biimprd setindis syl6 dfss2 syl6ibr ) AHZIJ
+      UKBHKJBCLUAACMZDUBZEHZCNZUNDNZOZEPZCDUCULUMFHZCNZUSDNZOZFGHZMVCCNZVCDNZOZ
+      OGPURABGFCDUDUQVBVFEGFVBEQVFEQUQGQVBGQEFRZUQVBVGUOUTUPVAUNUSCSUNUSDSTUEEG
+      RZUQVFVHUOVDUPVEUNVCCSUNVCDSTUFUGUHECDUIUJ $.
   $}
 
   ${
@@ -65761,7 +65764,7 @@ $)
     $( Using bounded set induction and the strong axiom of infinity, ` _om ` is
        a set, that is, we recover ~ ax-infvn (see ~ bj-2inf for the equivalence
        of the latter with ~ bj-omex ).  (Contributed by BJ, 8-Dec-2019.)
-      (Proof modification is discouraged.) $)
+       (Proof modification is discouraged.) $)
     bj-omex2 $p |- _om e. _V $=
       ( va vx vy com wel cv c0 wceq csuc wrex wo wb wal ax-inf2 cvv wcel wi vex
       bdcv bj-inf2vn ax-mp eximii issetri ) ADBAEBFZGHUDCFIHCAFZJKLBMZUEDHZABCA
@@ -65796,6 +65799,7 @@ $(
 
 $)
 
+$(
   ${
     $d x y $.  $d y ph $.
     bj-findis.nf0 $e |- F/ x ps $.
@@ -65804,140 +65808,14 @@ $)
     bj-findis.0 $e |- ( x = (/) -> ( ps -> ph ) ) $.
     bj-findis.1 $e |- ( x = y -> ( ph -> ch ) ) $.
     bj-findis.suc $e |- ( x = suc y -> ( th -> ph ) ) $.
-    $( Full induction (principle of induction), using implicit substitutions.
+    @( Full induction (principle of induction), using implicit substitutions.
        Constructive proof.  (Contributed by BJ, 22-Nov-2019.)
-       (Proof modification is discouraged.) $)
+       (Proof modification is discouraged.) @)
     bj-findis $p |-
                     ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $=
       (  ) ? $.
-$(
-h50::bj-findis.nf0 |- F/ x ps
-h51::bj-findis.nf1 |- F/ x ch
-h52::bj-findis.nfsuc
-                   |- F/ x th
-h53::bj-findis.0   |- ( x = (/) -> ( ps -> ph ) )
-h54::bj-findis.1   |- ( x = y -> ( ph -> ch ) )
-h55::bj-findis.suc |- ( x = suc y -> ( th -> ph ) )
-56::bj-nn0suc                           |- ( z e. _om <-> ( z = (/) \/ E. y e. _om z = suc y ) )
-57:56:biimpi                         |- ( z e. _om -> ( z = (/) \/ E. y e. _om z = suc y ) )
-58:57:a1i                         |- ( ( ( ps /\ A. y e. _om ( ch -> th ) ) /\ A. &S2 e. z ( &S2 e. _om -> &W8 ) ) -> ( z e. _om -> ( z = (/) \/ E. y e. _om z = suc y ) ) )
-!59::                                                  |- ( z = (/) -> ( ps -> &W6 ) )
-60:59:com12                                         |- ( ps -> ( z = (/) -> &W6 ) )
-61:60:a1d                                        |- ( ps -> ( A. y e. _om ( ch -> th ) -> ( z = (/) -> &W6 ) ) )
-62:61:imp                                     |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> ( z = (/) -> &W6 ) )
-63:62:a1d                                  |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> ( A. &S2 e. z ( &S2 e. _om -> &W8 ) -> ( z = (/) -> &W6 ) ) )
-64:63:imp                               |- ( ( ( ps /\ A. y e. _om ( ch -> th ) ) /\ A. &S2 e. z ( &S2 e. _om -> &W8 ) ) -> ( z = (/) -> &W6 ) )
-!65::                                   |- ( ( ( ps /\ A. y e. _om ( ch -> th ) ) /\ A. &S2 e. z ( &S2 e. _om -> &W8 ) ) -> ( E. y e. _om z = suc y -> &W6 ) )
-66:64,65:jca                         |- ( ( ( ps /\ A. y e. _om ( ch -> th ) ) /\ A. &S2 e. z ( &S2 e. _om -> &W8 ) ) -> ( ( z = (/) -> &W6 ) /\ ( E. y e. _om z = suc y -> &W6 ) ) )
-67::ax-io                            |- ( ( ( z = (/) \/ E. y e. _om z = suc y ) -> &W6 ) <-> ( ( z = (/) -> &W6 ) /\ ( E. y e. _om z = suc y -> &W6 ) ) )
-68:66,67:sylibr                   |- ( ( ( ps /\ A. y e. _om ( ch -> th ) ) /\ A. &S2 e. z ( &S2 e. _om -> &W8 ) ) -> ( ( z = (/) \/ E. y e. _om z = suc y ) -> &W6 ) )
-69:58,68:syld                  |- ( ( ( ps /\ A. y e. _om ( ch -> th ) ) /\ A. &S2 e. z ( &S2 e. _om -> &W8 ) ) -> ( z e. _om -> &W6 ) )
-70:69:ex                    |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> ( A. &S2 e. z ( &S2 e. _om -> &W8 ) -> ( z e. _om -> &W6 ) ) )
-71:70:alrimiv            |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. z ( A. &S2 e. z ( &S2 e. _om -> &W8 ) -> ( z e. _om -> &W6 ) ) )
-!72::                       |- F/ x ( &S2 e. _om -> &W8 )
-!73::                       |- F/ x ( z e. _om -> &W6 )
-74::nfv                     |- F/ z ( x e. _om -> ph )
-75::nfv                     |- F/ z ( &S2 e. _om -> &W8 )
-76::eleq1                         |- ( x = &S2 -> ( x e. _om <-> &S2 e. _om ) )
-77:76:biimprd                  |- ( x = &S2 -> ( &S2 e. _om -> x e. _om ) )
-!78::                          |- ( x = &S2 -> ( ph -> &W8 ) )
-79:77,78:imim12d            |- ( x = &S2 -> ( ( x e. _om -> ph ) -> ( &S2 e. _om -> &W8 ) ) )
-80::eleq1                         |- ( x = z -> ( x e. _om <-> z e. _om ) )
-81:80:biimpd                   |- ( x = z -> ( x e. _om -> z e. _om ) )
-!82::                          |- ( x = z -> ( &W6 -> ph ) )
-83:81,82:imim12d            |- ( x = z -> ( ( z e. _om -> &W6 ) -> ( x e. _om -> ph ) ) )
-84:72,73,74,75,79,83:setindis
-                         |- ( A. z ( A. &S2 e. z ( &S2 e. _om -> &W8 ) -> ( z e. _om -> &W6 ) ) -> A. x ( x e. _om -> ph ) )
-85:71,84:syl          |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x ( x e. _om -> ph ) )
-86::df-ral            |- ( A. x e. _om ph <-> A. x ( x e. _om -> ph ) )
-qed:85,86:sylibr   |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph )
-
-===========================
-&W6 should be [ z / x ] ph
-&W8           [ &S2 / x ] ph
-========================
-TRY &S2 = y and &W8 = ch
-======================
-
-h50::bj-findis.nf0 |- F/ x ps
-h51::bj-findis.nf1 |- F/ x ch
-h52::bj-findis.nfsuc
-                   |- F/ x th
-h53::bj-findis.0   |- ( x = (/) -> ( ps -> ph ) )
-h54::bj-findis.1               |- ( x = y -> ( ph -> ch ) )
-h55::bj-findis.suc |- ( x = suc y -> ( th -> ph ) )
-56::bj-nn0suc                           |- ( z e. _om <-> ( z = (/) \/ E. y e. _om z = suc y ) )
-57:56:biimpi                         |- ( z e. _om -> ( z = (/) \/ E. y e. _om z = suc y ) )
-58:57:a1i                         |- ( ( ( ps /\ A. y e. _om ( ch -> th ) ) /\ A. y e. z ( y e. _om -> ch ) ) -> ( z e. _om -> ( z = (/) \/ E. y e. _om z = suc y ) ) )
-!59::                                                  |- ( z = (/) -> ( ps -> &W6 ) )
-60:59:com12                                         |- ( ps -> ( z = (/) -> &W6 ) )
-61:60:a1d                                        |- ( ps -> ( A. y e. _om ( ch -> th ) -> ( z = (/) -> &W6 ) ) )
-62:61:imp                                     |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> ( z = (/) -> &W6 ) )
-63:62:a1d                                  |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> ( A. y e. z ( y e. _om -> ch ) -> ( z = (/) -> &W6 ) ) )
-64:63:imp                               |- ( ( ( ps /\ A. y e. _om ( ch -> th ) ) /\ A. y e. z ( y e. _om -> ch ) ) -> ( z = (/) -> &W6 ) )
-65::df-ral                                                |- ( A. y e. z ( y e. _om -> ch ) <-> A. y ( y e. z -> ( y e. _om -> ch ) ) )
-66:65:biimpi                                           |- ( A. y e. z ( y e. _om -> ch ) -> A. y ( y e. z -> ( y e. _om -> ch ) ) )
-67:66:a1i                                           |- ( A. y e. _om ( ch -> th ) -> ( A. y e. z ( y e. _om -> ch ) -> A. y ( y e. z -> ( y e. _om -> ch ) ) ) )
-68::pm2.04                                                      |- ( ( y e. z -> ( y e. _om -> ch ) ) -> ( y e. _om -> ( y e. z -> ch ) ) )
-69:68:alimi                                                  |- ( A. y ( y e. z -> ( y e. _om -> ch ) ) -> A. y ( y e. _om -> ( y e. z -> ch ) ) )
-70::df-ral                                                         |- ( A. y e. _om ( ch -> th ) <-> A. y ( y e. _om -> ( ch -> th ) ) )
-71::simpl                                                                   |- ( ( y e. _om /\ y e. z ) -> y e. _om )
-72:71:imim1i                                                             |- ( ( y e. _om -> ( ch -> th ) ) -> ( ( y e. _om /\ y e. z ) -> ( ch -> th ) ) )
-73::pm3.31                                                                     |- ( ( y e. _om -> ( y e. z -> ch ) ) -> ( ( y e. _om /\ y e. z ) -> ch ) )
-74::ax-2                                                                          |- ( ( ( y e. _om /\ y e. z ) -> ( ch -> th ) ) -> ( ( ( y e. _om /\ y e. z ) -> ch ) -> ( ( y e. _om /\ y e. z ) -> th ) ) )
-75:74:com12                                                                    |- ( ( ( y e. _om /\ y e. z ) -> ch ) -> ( ( ( y e. _om /\ y e. z ) -> ( ch -> th ) ) -> ( ( y e. _om /\ y e. z ) -> th ) ) )
-76:73,75:syl                                                                |- ( ( y e. _om -> ( y e. z -> ch ) ) -> ( ( ( y e. _om /\ y e. z ) -> ( ch -> th ) ) -> ( ( y e. _om /\ y e. z ) -> th ) ) )
-77:76:com12                                                              |- ( ( ( y e. _om /\ y e. z ) -> ( ch -> th ) ) -> ( ( y e. _om -> ( y e. z -> ch ) ) -> ( ( y e. _om /\ y e. z ) -> th ) ) )
-78:72,77:syl                                                          |- ( ( y e. _om -> ( ch -> th ) ) -> ( ( y e. _om -> ( y e. z -> ch ) ) -> ( ( y e. _om /\ y e. z ) -> th ) ) )
-79:78:al2imi                                                       |- ( A. y ( y e. _om -> ( ch -> th ) ) -> ( A. y ( y e. _om -> ( y e. z -> ch ) ) -> A. y ( ( y e. _om /\ y e. z ) -> th ) ) )
-80:70,79:sylbi                                                  |- ( A. y e. _om ( ch -> th ) -> ( A. y ( y e. _om -> ( y e. z -> ch ) ) -> A. y ( ( y e. _om /\ y e. z ) -> th ) ) )
-81:80:com12                                                  |- ( A. y ( y e. _om -> ( y e. z -> ch ) ) -> ( A. y e. _om ( ch -> th ) -> A. y ( ( y e. _om /\ y e. z ) -> th ) ) )
-82:69,81:syl                                              |- ( A. y ( y e. z -> ( y e. _om -> ch ) ) -> ( A. y e. _om ( ch -> th ) -> A. y ( ( y e. _om /\ y e. z ) -> th ) ) )
-83:82:com12                                            |- ( A. y e. _om ( ch -> th ) -> ( A. y ( y e. z -> ( y e. _om -> ch ) ) -> A. y ( ( y e. _om /\ y e. z ) -> th ) ) )
-d10::vex                                                                       |- y e. _V
-d9:d10:sucid                                                                |- y e. suc y
-d7:d9:a1i                                                                |- ( z = suc y -> y e. suc y )
-d8::eleq2                                                                |- ( z = suc y -> ( y e. z <-> y e. suc y ) )
-d6:d7,d8:mpbird                                                       |- ( z = suc y -> y e. z )
-d5:d6:ancri                                                        |- ( z = suc y -> ( y e. z /\ z = suc y ) )
-d3:d5:reximi                                                    |- ( E. y e. _om z = suc y -> E. y e. _om ( y e. z /\ z = suc y ) )
-!d11::             |- ( E. y e. _om ( y e. z /\ z = suc y ) -> ( A. y ( ( y e. _om /\ y e. z ) -> th ) -> &W7 ) )
-!d12::             |- ( E. y e. _om ( y e. z /\ z = suc y ) -> ( &W7 -> &W6 ) )
-d4:d11,d12:syld                                                     |- ( E. y e. _om ( y e. z /\ z = suc y ) -> ( A. y ( ( y e. _om /\ y e. z ) -> th ) -> &W6 ) )
-d2:d3,d4:syl                                                 |- ( E. y e. _om z = suc y -> ( A. y ( ( y e. _om /\ y e. z ) -> th ) -> &W6 ) )
-d1:d2:com12                                               |- ( A. y ( ( y e. _om /\ y e. z ) -> th ) -> ( E. y e. _om z = suc y -> &W6 ) )
-100:d1:a1i                                             |- ( A. y e. _om ( ch -> th ) -> ( A. y ( ( y e. _om /\ y e. z ) -> th ) -> ( E. y e. _om z = suc y -> &W6 ) ) )
-101:83,100:syld                                     |- ( A. y e. _om ( ch -> th ) -> ( A. y ( y e. z -> ( y e. _om -> ch ) ) -> ( E. y e. _om z = suc y -> &W6 ) ) )
-102:67,101:syld                                  |- ( A. y e. _om ( ch -> th ) -> ( A. y e. z ( y e. _om -> ch ) -> ( E. y e. _om z = suc y -> &W6 ) ) )
-103:102:a1i                                   |- ( ps -> ( A. y e. _om ( ch -> th ) -> ( A. y e. z ( y e. _om -> ch ) -> ( E. y e. _om z = suc y -> &W6 ) ) ) )
-104:103:imp                                |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> ( A. y e. z ( y e. _om -> ch ) -> ( E. y e. _om z = suc y -> &W6 ) ) )
-105:104:imp                             |- ( ( ( ps /\ A. y e. _om ( ch -> th ) ) /\ A. y e. z ( y e. _om -> ch ) ) -> ( E. y e. _om z = suc y -> &W6 ) )
-106:64,105:jca                       |- ( ( ( ps /\ A. y e. _om ( ch -> th ) ) /\ A. y e. z ( y e. _om -> ch ) ) -> ( ( z = (/) -> &W6 ) /\ ( E. y e. _om z = suc y -> &W6 ) ) )
-107::ax-io                           |- ( ( ( z = (/) \/ E. y e. _om z = suc y ) -> &W6 ) <-> ( ( z = (/) -> &W6 ) /\ ( E. y e. _om z = suc y -> &W6 ) ) )
-108:106,107:sylibr                |- ( ( ( ps /\ A. y e. _om ( ch -> th ) ) /\ A. y e. z ( y e. _om -> ch ) ) -> ( ( z = (/) \/ E. y e. _om z = suc y ) -> &W6 ) )
-109:58,108:syld                |- ( ( ( ps /\ A. y e. _om ( ch -> th ) ) /\ A. y e. z ( y e. _om -> ch ) ) -> ( z e. _om -> &W6 ) )
-110:109:ex                  |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> ( A. y e. z ( y e. _om -> ch ) -> ( z e. _om -> &W6 ) ) )
-111:110:alrimiv          |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. z ( A. y e. z ( y e. _om -> ch ) -> ( z e. _om -> &W6 ) ) )
-112::nfv                    |- F/ x ( y e. _om -> ch )
-!113::                      |- F/ x ( z e. _om -> &W6 )
-114::nfv                    |- F/ z ( x e. _om -> ph )
-115::nfv                    |- F/ z ( y e. _om -> ch )
-116::eleq1                        |- ( x = y -> ( x e. _om <-> y e. _om ) )
-117:116:biimprd                |- ( x = y -> ( y e. _om -> x e. _om ) )
-118:117,54:imim12d          |- ( x = y -> ( ( x e. _om -> ph ) -> ( y e. _om -> ch ) ) )
-119::eleq1                        |- ( x = z -> ( x e. _om <-> z e. _om ) )
-120:119:biimpd                 |- ( x = z -> ( x e. _om -> z e. _om ) )
-!121::                         |- ( x = z -> ( &W6 -> ph ) )
-122:120,121:imim12d         |- ( x = z -> ( ( z e. _om -> &W6 ) -> ( x e. _om -> ph ) ) )
-123:112,113,114,115,118,122:setindis
-                         |- ( A. z ( A. y e. z ( y e. _om -> ch ) -> ( z e. _om -> &W6 ) ) -> A. x ( x e. _om -> ph ) )
-124:111,123:syl       |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x ( x e. _om -> ph ) )
-125::df-ral           |- ( A. x e. _om ph <-> A. x ( x e. _om -> ph ) )
-qed:124,125:sylibr |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph )
-
-
+  $}
 $)
-$}
 
   ${
     $d x y z $.  $d y z ph $.
