@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Dec-2019
+$( iset.mm - Version of 19-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -63838,6 +63838,36 @@ $)
       ( mpd exlimi ) CBDECABFGHI $.
   $}
 
+  ${
+    bj-sbimedh.1 $e |- ( ph -> A. x ph ) $.
+    bj-sbimedh.2 $e |- ( ph -> ( ch -> A. x ch ) ) $.
+    bj-sbimedh.3 $e |- ( ph -> ( x = y -> ( ps -> ch ) ) ) $.
+    $( A strengthening of ~ sbiedh (same proof).  (Contributed by BJ,
+       16-Dec-2019.) $)
+    bj-sbimedh $p |- ( ph -> ( [ y / x ] ps -> ch ) ) $=
+      ( wsb wex weq wa sb1 impd eximdh syl5 19.9hd syld ) ABDEIZCDJZCSDEKZBLZDJ
+      ATBDEMAUBCDFAUABCHNOPCADFGQR $.
+  $}
+
+  ${
+    bj-sbimeh.1 $e |- ( ps -> A. x ps ) $.
+    bj-sbimeh.2 $e |- ( x = y -> ( ph -> ps ) ) $.
+    $( A strengthening of ~ sbieh (same proof).  (Contributed by BJ,
+       16-Dec-2019.) $)
+    bj-sbimeh $p |- ( [ y / x ] ph -> ps ) $=
+      ( wsb wi wtru tru hbth wal a1i weq bj-sbimedh trud ) ACDGBHIABCDICJKBBCLH
+      IEMCDNABHHIFMOP $.
+  $}
+
+  ${
+    bj-sbime.nf $e |- F/ x ps $.
+    bj-sbime.1 $e |- ( x = y -> ( ph -> ps ) ) $.
+    $( A strengthening of ~ sbie (same proof).  (Contributed by BJ,
+       16-Dec-2019.) $)
+    bj-sbime $p |- ( [ y / x ] ph -> ps ) $=
+      ( nfri bj-sbimeh ) ABCDBCEGFH $.
+  $}
+
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -65140,10 +65170,10 @@ $)
        (Contributed by BJ, 30-Nov-2019.) $)
     bj-indint $p |- Ind |^| { x e. A | Ind x } $=
       ( vy cv wind crab cint c0 wcel csuc wral df-bj-ind simplbi rgenw elintrab
-      wi 0ex mpbir wa rsp adantl sylbi a2i ralimi vex bj-sucex 3imtr4i mpbir2an
-      rgen ) ADZEZABFGZEHULIZCDZJZULIZCULKUMUKHUJIZPZABKURABUKUQUOUJIZCUJKZCUJL
-      ZMNUKAHBQORUPCULUKUNUJIZPZABKUKUSPZABKUNULIUPVCVDABUKVBUSUKUQUTSVBUSPZVAU
-      TVEUQUSCUJTUAUBUCUDUKAUNBCUEZOUKAUOBUNVFUFOUGUICULLUH $.
+      wi 0ex mpbir bj-indsuc a2i ralimi vex bj-sucex 3imtr4i rgen mpbir2an ) AD
+      ZEZABFGZEHUIIZCDZJZUIIZCUIKUJUHHUGIZPZABKUOABUHUNULUGIZCUGKCUGLMNUHAHBQOR
+      UMCUIUHUKUGIZPZABKUHUPPZABKUKUIIUMURUSABUHUQUPUGUKSTUAUHAUKBCUBZOUHAULBUK
+      UTUCOUDUECUILUF $.
   $}
 
   ${
@@ -65176,7 +65206,7 @@ $)
 
   ${
     $d x y A $.
-    $( A Characterization of subclasses of ` _om ` .  (Contributed by BJ,
+    $( A characterization of subclasses of ` _om ` .  (Contributed by BJ,
        30-Nov-2019.)  (Proof modification is discouraged.) $)
     bj-ssom $p |- ( A. x ( Ind x -> A C_ x ) <-> A C_ _om ) $=
       ( vy cv wind wss wi wal cab cint com wral wcel ssint df-ral bj-indeq elab
@@ -65207,10 +65237,10 @@ $)
     bj-2inf $p |- ( _om e. _V <->
                                 E. x ( Ind x /\ A. y ( Ind y -> x C_ y ) ) ) $=
       ( com cvv wcel cv wind wss wi wal wa wceq eqid bj-om mpbii bj-indeq sseq1
-      wex nfv imbi2d albid anbi12d spcegv mpd wb vex ax-mp biimpri eximi sylibr
-      isset impbii ) CDEZAFZGZBFZGZUNUPHZIZBJZKZARZUMCGZUQCUPHZIZBJZKZVBUMCCLVG
-      CMBCDNOVAVGACDUNCLZUOVCUTVFUNCPVHUSVEBVHBSVHURVDUQUNCUPQTUAUBUCUDVBVHARUM
-      VAVHAVHVAUNDEVHVAUEAUFBUNDNUGUHUIACUKUJUL $.
+      wex imbi2d albidv anbi12d spcegv mpd vex ax-mp biimpri eximi isset sylibr
+      wb impbii ) CDEZAFZGZBFZGZUMUOHZIZBJZKZARZULCGZUPCUOHZIZBJZKZVAULCCLVFCMB
+      CDNOUTVFACDUMCLZUNVBUSVEUMCPVGURVDBVGUQVCUPUMCUOQSTUAUBUCVAVGARULUTVGAVGU
+      TUMDEVGUTUJAUDBUMDNUEUFUGACUHUIUK $.
   $}
 
 
@@ -65271,38 +65301,12 @@ $)
   $}
 
   ${
-    $d a b x $.
-    $( Axiom of infinity in a constructive setting.  This asserts the existence
-       of the special set we want (the set of natural numbers), instead of the
-       existence of a set with some properties ( ~ ax-iinf ) from which one
-       then proves ( ~ omex ) using full separation that the wanted set
-       exists.  See also ~ ax-inf2 .  (Contributed by BJ, 14-Nov-2019.)
-       (New usage is discouraged.) $)
-    ax-infvnALT $a |- E. a ( ( (/) e. a /\ A. x e. a suc x e. a ) /\
-                   A. b ( ( (/) e. b /\ A. x e. b suc x e. b ) -> a C_ b ) ) $.
-  $}
-
-  ${
     $d x y $.
     $( Proof of ~ omex from ~ ax-infvn .  (Contributed by BJ, 14-Nov-2019.)
        (Proof modification is discouraged.) $)
     bj-omex $p |- _om e. _V $=
       ( vx vy com cvv wcel cv wind wss wi wal wa wex ax-infvn bj-2inf mpbir ) C
       DEAFZGBFZGPQHIBJKALABMABNO $.
-  $}
-
-  ${
-    $d a b x $.
-    $( Alternate proof of ~ bj-omex .  (Contributed by BJ, 14-Nov-2019.)
-       (Proof modification is discouraged.)  (New usage is discouraged.) $)
-    bj-omexALT $p |- _om e. _V $=
-      ( va vx vb com cv wceq wex wss wa c0 wcel csuc wral wi wal cab cint dfom3
-      cvv syl5eqss ax-infvnALT vex crab rabab eqcomi inteqi rabid intss1 sylbir
-      mpan ssintab biimpri syl6sseqr anim12ci eximii eqss exbii mpbir issetri )
-      ADAEZDFZAGUTDHZDUTHZIZAGJUTKBELZUTKBUTMIZJCEZKVEVGKBVGMIZUTVGHNCOZIVDABAC
-      UAVFVCVIVBVFDVFAPZQZUTABRUTSKZVFVKUTHAUBVLVFIZVKVFASUCZQZUTVJVNVNVJVFAUDU
-      EUFVMUTVNKVOUTHVFASUGUTVNUHUITUJTVIUTVHCPQZDUTVPHVIVHCUTUKULCBRUMUNUOVAVD
-      AUTDUPUQURUS $.
   $}
 
   ${
@@ -65624,16 +65628,15 @@ $)
     setindis.nf1 $e |- F/ x ch $.
     setindis.nf2 $e |- F/ y ph $.
     setindis.nf3 $e |- F/ y ps $.
-    setindis.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
-    setindis.2 $e |- ( x = y -> ( ch <-> ph ) ) $.
+    setindis.1 $e |- ( x = z -> ( ph -> ps ) ) $.
+    setindis.2 $e |- ( x = y -> ( ch -> ph ) ) $.
     $( Axiom of set induction using implicit substitutions.  (Contributed by
        BJ, 22-Nov-2019.) $)
     setindis $p |- ( A. y ( A. z e. y ps -> ch ) -> A. x ph ) $=
-      ( cv wral wi wal wsb nfcv nfralxy nfim weq raleq wb equcoms imbi12d cbval
-      sbie biimpi ralimi imim1i alimi sylbi ax-setind syl ) BFEMZNZCOZEPZADFQZF
-      DMZNZAOZDPZADPURBFUTNZAOZDPVCUQVEEDUPCDBDFUODUORGSHTVDAEBEFUTEUTRJSITEDUA
-      UPVDCABFUOUTUBCAUCDELUDUEUFVEVBDVAVDAUSBFUTUSBABDFGKUGUHUIUJUKULAFDUMUN
-      $.
+      ( cv wral wi wal wsb nfcv nfralxy nfim raleq biimprd equcoms imim12d cbv3
+      weq bj-sbime ralimi imim1i alimi ax-setind 3syl ) BFEMZNZCOZEPBFDMZNZAOZD
+      PADFQZFUPNZAOZDPADPUOUREDUNCDBDFUMDUMRGSHTUQAEBEFUPEUPRJSITEDUFZUQUNCAVBU
+      NUQBFUMUPUAUBCAODELUCUDUEURVADUTUQAUSBFUPABDFGKUGUHUIUJAFDUKUL $.
   $}
 
   ${
@@ -65650,17 +65653,16 @@ $)
     bdsetindis.nf1 $e |- F/ x ch $.
     bdsetindis.nf2 $e |- F/ y ph $.
     bdsetindis.nf3 $e |- F/ y ps $.
-    bdsetindis.1 $e |- ( x = z -> ( ph <-> ps ) ) $.
-    bdsetindis.2 $e |- ( x = y -> ( ch <-> ph ) ) $.
+    bdsetindis.1 $e |- ( x = z -> ( ph -> ps ) ) $.
+    bdsetindis.2 $e |- ( x = y -> ( ch -> ph ) ) $.
     $( Axiom of bounded set induction using implicit substitutions.
        (Contributed by BJ, 22-Nov-2019.)
        (Proof modification is discouraged.) $)
     bdsetindis $p |- ( A. y ( A. z e. y ps -> ch ) -> A. x ph ) $=
-      ( cv wral wi wal nfcv nfralxy nfim wsb weq raleq wb equcoms imbi12d cbval
-      sbie biimpi ralimi imim1i alimi sylbi ax-bdsetind syl ) BFENZOZCPZEQZADFU
-      AZFDNZOZAPZDQZADQUSBFVAOZAPZDQVDURVFEDUQCDBDFUPDUPRHSITVEAEBEFVAEVARKSJTE
-      DUBUQVECABFUPVAUCCAUDDEMUEUFUGVFVCDVBVEAUTBFVAUTBABDFHLUHUIUJUKULUMAFDGUN
-      UO $.
+      ( cv wral wi wal nfcv nfralxy nfim wsb raleq biimprd equcoms imim12d cbv3
+      weq bj-sbime ralimi imim1i alimi ax-bdsetind 3syl ) BFENZOZCPZEQBFDNZOZAP
+      ZDQADFUAZFUQOZAPZDQADQUPUSEDUOCDBDFUNDUNRHSITURAEBEFUQEUQRKSJTEDUGZURUOCA
+      VCUOURBFUNUQUBUCCAPDEMUDUEUFUSVBDVAURAUTBFUQABDFHLUHUIUJUKAFDGULUM $.
   $}
 
   ${
@@ -65705,30 +65707,29 @@ $)
     $d x y z t u v w A $.  $d x y z t u v w Z $.
     bj-inf2vnlem3.bd1 $e |- Bdd_ A $.
     bj-inf2vnlem3.bd2 $e |- Bdd_ Z $.
-    $( Lemma for ~ bj-inf2vn .  Remark: unoptimized proof (have to use more
-       deduction style).  (Contributed by BJ, 8-Dec-2019.)
+    $( Lemma for ~ bj-inf2vn .  (Contributed by BJ, 8-Dec-2019.)
        (Proof modification is discouraged.) $)
     bj-inf2vnlem3 $p |- ( A. x e. A ( x = (/) \/ E. y e. A x = suc y ) ->
                                                        ( Ind Z -> A C_ Z ) ) $=
-      ( vz vt vu cv c0 wceq wral wcel wi wal bdeli nfv eleq1 imbi12d wo ax-bdim
-      csuc wrex wind wss bj-inf2vnlem2 wb equcoms bdsetindis syl6 dfss2 syl6ibr
-      ) AJZKLUNBJUCLBCUDUAACMZDUEZGJZCNZUQDNZOZGPZCDUFUOUPHJZCNZVBDNZOZHIJZMVFC
-      NZVFDNZOZOIPVAABIHCDUGUTVEVIGIHURUSGCEQGDFQUBVEGRVIGRUTIRVEIRUQVBLURVCUSV
-      DUQVBCSUQVBDSTVIUTUHIGVFUQLVGURVHUSVFUQCSVFUQDSTUIUJUKGCDULUM $.
+      ( vz vt vu cv wceq wral wcel wi wal bdeli nfv weq eleq1 imbi12d csuc wrex
+      c0 wo wind wss bj-inf2vnlem2 ax-bdim biimpd biimprd bdsetindis syl6 dfss2
+      syl6ibr ) AJZUCKUOBJUAKBCUBUDACLZDUEZGJZCMZURDMZNZGOZCDUFUPUQHJZCMZVCDMZN
+      ZHIJZLVGCMZVGDMZNZNIOVBABIHCDUGVAVFVJGIHUSUTGCEPGDFPUHVFGQVJGQVAIQVFIQGHR
+      ZVAVFVKUSVDUTVEURVCCSURVCDSTUIGIRZVAVJVLUSVHUTVIURVGCSURVGDSTUJUKULGCDUMU
+      N $.
   $}
 
   ${
     $d x y z t u v w A $.  $d x y z t u v w Z $.
-    $( Lemma for ~ bj-inf2vn2 .  Remark: unoptimized proof (have to use more
-       deduction style).  (Contributed by BJ, 8-Dec-2019.)
+    $( Lemma for ~ bj-inf2vn2 .  (Contributed by BJ, 8-Dec-2019.)
        (Proof modification is discouraged.) $)
     bj-inf2vnlem4 $p |- ( A. x e. A ( x = (/) \/ E. y e. A x = suc y ) ->
                                                        ( Ind Z -> A C_ Z ) ) $=
       ( vz vt vu cv c0 wceq csuc wrex wral wcel wi wal nfv weq eleq1 imbi12d wo
-      wind wss bj-inf2vnlem2 wb equcoms setindis syl6 dfss2 syl6ibr ) AHZIJUKBH
-      KJBCLUAACMZDUBZEHZCNZUNDNZOZEPZCDUCULUMFHZCNZUSDNZOZFGHZMVCCNZVCDNZOZOGPU
-      RABGFCDUDUQVBVFEGFVBEQVFEQUQGQVBGQEFRUOUTUPVAUNUSCSUNUSDSTVFUQUEGEGERVDUO
-      VEUPVCUNCSVCUNDSTUFUGUHECDUIUJ $.
+      wind wss bj-inf2vnlem2 biimpd biimprd setindis syl6 dfss2 syl6ibr ) AHZIJ
+      UKBHKJBCLUAACMZDUBZEHZCNZUNDNZOZEPZCDUCULUMFHZCNZUSDNZOZFGHZMVCCNZVCDNZOZ
+      OGPURABGFCDUDUQVBVFEGFVBEQVFEQUQGQVBGQEFRZUQVBVGUOUTUPVAUNUSCSUNUSDSTUEEG
+      RZUQVFVHUOVDUPVEUNVCCSUNVCDSTUFUGUHECDUIUJ $.
   $}
 
   ${
@@ -65739,11 +65740,10 @@ $)
        8-Dec-2019.)  (Proof modification is discouraged.) $)
     bj-inf2vn $p |- ( A e. V -> ( A. x ( x e. A <->
                          ( x = (/) \/ E. y e. A x = suc y ) ) -> A = _om ) ) $=
-      ( vz wcel cv c0 wceq csuc wrex wo wb wal wind wss wi wa com bj-inf2vnlem1
-      wral bi1 alimi df-ral sylibr bdcv bj-inf2vnlem3 syl alrimiv jca a1i bj-om
-      sylibrd ) CDGZAHZCGZUPIJUPBHKJBCLMZNZAOZCPZFHZPCVBQRZFOZSZCTJUTVERUOUTVAV
-      DABCUAUTVCFUTURACUBZVCUTUQURRZAOVFUSVGAUQURUCUDURACUEUFABCVBEFUGUHUIUJUKU
-      LFCDUMUN $.
+      ( vz cv wcel c0 wceq csuc wrex wo wb wal com wind wss wi wa bj-inf2vnlem1
+      wral bi1 alimi df-ral sylibr bdcv bj-inf2vnlem3 syl alrimiv bj-om syl5ibr
+      jca ) AGZCHZUNIJUNBGKJBCLMZNZAOZCPJCDHCQZFGZQCUTRSZFOZTURUSVBABCUAURVAFUR
+      UPACUBZVAURUOUPSZAOVCUQVDAUOUPUCUDUPACUEUFABCUTEFUGUHUIUJUMFCDUKUL $.
   $}
 
   ${
@@ -65753,18 +65753,18 @@ $)
        (Proof modification is discouraged.) $)
     bj-inf2vn2 $p |- ( A e. V -> ( A. x ( x e. A <->
                          ( x = (/) \/ E. y e. A x = suc y ) ) -> A = _om ) ) $=
-      ( vz wcel cv c0 wceq csuc wrex wo wb wal wind wss wi wa com bj-inf2vnlem1
-      wral bi1 alimi df-ral sylibr bj-inf2vnlem4 syl alrimiv jca bj-om sylibrd
-      a1i ) CDFZAGZCFZUNHIUNBGJIBCKLZMZANZCOZEGZOCUTPQZENZRZCSIURVCQUMURUSVBABC
-      TURVAEURUPACUAZVAURUOUPQZANVDUQVEAUOUPUBUCUPACUDUEABCUTUFUGUHUIULECDUJUK
-      $.
+      ( vz cv wcel c0 wceq csuc wrex wo wb wal com wind wss wi wa bj-inf2vnlem1
+      wral bi1 alimi df-ral sylibr bj-inf2vnlem4 syl alrimiv jca bj-om syl5ibr
+      ) AFZCGZULHIULBFJIBCKLZMZANZCOICDGCPZEFZPCURQRZENZSUPUQUTABCTUPUSEUPUNACU
+      AZUSUPUMUNRZANVAUOVBAUMUNUBUCUNACUDUEABCURUFUGUHUIECDUJUK $.
   $}
 
   ${
     $d x y z a $.
     $( Using bounded set induction and the strong axiom of infinity, ` _om ` is
-       a set, that is, we recover ~ ax-infvn .  (Contributed by BJ,
-       8-Dec-2019.)  (Proof modification is discouraged.) $)
+       a set, that is, we recover ~ ax-infvn (see ~ bj-2inf for the equivalence
+       of the latter with ~ bj-omex ).  (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.) $)
     bj-omex2 $p |- _om e. _V $=
       ( va vx vy com wel cv c0 wceq csuc wrex wo wb wal ax-inf2 cvv wcel wi vex
       bdcv bj-inf2vn ax-mp eximii issetri ) ADBAEBFZGHUDCFIHCAFZJKLBMZUEDHZABCA
