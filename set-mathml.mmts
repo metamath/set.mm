@@ -359,6 +359,7 @@ $s class cgrG $: <msub href="df-cgrg.html"><mo>&#x223C;</mo> <mo>&#x1d4a2;</mo><
 $s class leG $: <msub href="df-leg.html"><mo>&le;</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class midG $: <msub href="df-mid.html"><mo>mid</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class pInvG $: <msub href="df-mir.html"><mo>pInv</mo> <mo>&#x1d4a2;</mo></msub> $.
+$s class lInvG $: <msub href="df-lmi.html"><mo>lInv</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class raG $: <msub href="df-rag.html"><mo>&angrt;</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class perpG $: <msub href="df-perp.html"><mo>&#x27C2;</mo> <mo>&#x1d4a2;</mo></msub> $.
 $s class cgrA $: <msubsup href="df-cgra.html"><mo>&#x223C;</mo> <mo>&#x1d4a2;</mo> <mo>&ang;</mo></msubsup> $.
@@ -1300,8 +1301,8 @@ $s class RRVec $: <mi href="df-bj-rrvec.html">&Ropf;Vec</mi> $.
 
 $s wff Prv ph $: <mrow><mo href="ax-prv1.html">Prv</mo> #ph#</mrow> $.
 $s wff FF/ x ph $: <mrow> <mo href="df-bj-nf.html">&#8498;&#8498;</mo> #x# <mspace width=.4em /> #ph# </mrow> $.
-$s wff if- ( ph , ps , ch ) $: <mrow> <mo href="df-bj-if.html">if</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
-$s class ( A Proj B ) $: <mfenced>#A# <mo href="df-bj-proj.html">Proj</mo> #B#</mfenced> $.
+$s wff if- ( ph , ps , ch ) $: <mrow> <mo href="df-bj-if.html">if-</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
+$s class ( A Proj B ) $: <mfenced><mrow>#A# <mo href="df-bj-proj.html">Proj</mo> #B#</mrow></mfenced> $.
 $s class (| A |) $: <mfenced open="&#x2985;" close="&#x2986;">#A#</mfenced> $.
 $s class FinSum $: <mo href="df-bj-finsum.html">FinSum</mo> $.
 
@@ -1724,7 +1725,7 @@ $s wff F e. ( A -cn-> B ) $: <mrow> #F# <mo>:</mo> #A# <munder href="df-cncf.htm
 $s wff hadd ( ph , ps , ch ) $: <mrow> <mo href="df-had.html">hadd</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
 $s wff cadd ( ph , ps , ch ) $: <mrow> <mo href="df-cad.html">cadd</mo> <mfenced>#ph# #ps# #ch#</mfenced></mrow> $.
 $s wff CondEq ( x = y -> ph ) $: <mrow> <mo href="df-cdeq.html">CondEq</mo> <mfenced><mrow>#x# <mo>=</mo> #y# <mo>&rarr;</mo> #ph#</mrow></mfenced></mrow> $.
-$s wff H Isom O , P ( Q , S ) $: <mrow> #H# <mo href="df-isom.html">Isom</mo> #O# <mo>,</mo> #P# <mfenced>#Q# #S#</mfenced></mrow> $.
+$s wff H Isom O , P ( Q , S ) $: <mrow> #H# <msub><mo href="df-isom.html">Isom</mo> <mrow>#O# <mo>,</mo> #P#</mrow></msub> <mfenced>#Q# #S#</mfenced></mrow> $.
 $s class OrdIso ( O , P ) $: <mrow> <mo href="df-oi.html">OrdIso</mo> <mfenced>#O# #P#</mfenced></mrow> $.
 $s class seqom ( O , P ) $: <mrow> <msub href="df-seqom.html"><mo>seq</mo> <mi>&omega;</mi></msub> <mfenced>#O# #P#</mfenced></mrow> $.
 
