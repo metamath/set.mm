@@ -17168,6 +17168,7 @@ New usage of "nnelOLD" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (6 uses).
 New usage of "noinfepOLD" is discouraged (0 uses).
 New usage of "nonbooli" is discouraged (0 uses).
+New usage of "nonconneOLD" is discouraged (0 uses).
 New usage of "norm-i" is discouraged (13 uses).
 New usage of "norm-i-i" is discouraged (2 uses).
 New usage of "norm-ii" is discouraged (3 uses).
@@ -19419,6 +19420,7 @@ Proof modification of "nn0suppOLD" is discouraged (91 steps).
 Proof modification of "nnelOLD" is discouraged (18 steps).
 Proof modification of "nnexALT" is discouraged (34 steps).
 Proof modification of "noinfepOLD" is discouraged (267 steps).
+Proof modification of "nonconneOLD" is discouraged (21 steps).
 Proof modification of "notnot2ALT" is discouraged (12 steps).
 Proof modification of "notnot2ALT2" is discouraged (2 steps).
 Proof modification of "notnot2ALTVD" is discouraged (34 steps).
