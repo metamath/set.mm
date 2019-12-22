@@ -12070,17 +12070,17 @@ $)
   $}
 
   ${
-    19.44.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.44 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.44.1 $e |- F/ x ps $.
+    $( Theorem 19.44 of [Margaris] p. 90.  (Contributed by NM, 12-Mar-1993.) $)
     19.44 $p |- ( E. x ( ph \/ ps ) <-> ( E. x ph \/ ps ) ) $=
-      ( wo wex 19.43 19.9h orbi2i bitri ) ABECFACFZBCFZEKBEABCGLBKBCDHIJ $.
+      ( wo wex 19.43 19.9 orbi2i bitri ) ABECFACFZBCFZEKBEABCGLBKBCDHIJ $.
   $}
 
   ${
-    19.45.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.45 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.45.1 $e |- F/ x ph $.
+    $( Theorem 19.45 of [Margaris] p. 90.  (Contributed by NM, 12-Mar-1993.) $)
     19.45 $p |- ( E. x ( ph \/ ps ) <-> ( ph \/ E. x ps ) ) $=
-      ( wo wex 19.43 19.9h orbi1i bitri ) ABECFACFZBCFZEALEABCGKALACDHIJ $.
+      ( wo wex 19.43 19.9 orbi1i bitri ) ABECFACFZBCFZEALEABCGKALACDHIJ $.
   $}
 
   $( Theorem 19.34 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
@@ -12166,11 +12166,11 @@ $)
   $}
 
   ${
-    eeor.1 $e |- ( ph -> A. y ph ) $.
-    eeor.2 $e |- ( ps -> A. x ps ) $.
+    eeor.1 $e |- F/ y ph $.
+    eeor.2 $e |- F/ x ps $.
     $( Rearrange existential quantifiers.  (Contributed by NM, 8-Aug-1994.) $)
     eeor $p |- ( E. x E. y ( ph \/ ps ) <-> ( E. x ph \/ E. y ps ) ) $=
-      ( wo wex 19.45 exbii hbex 19.44 bitri ) ABGDHZCHABDHZGZCHACHOGNPCABDEIJAO
+      ( wo wex 19.45 exbii nfex 19.44 bitri ) ABGDHZCHABDHZGZCHACHOGNPCABDEIJAO
       CBCDFKLM $.
   $}
 
