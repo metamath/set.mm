@@ -11066,36 +11066,28 @@ $)
   $}
 
   ${
-    19.16.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.16 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.16.1 $e |- F/ x ph $.
+    $( Theorem 19.16 of [Margaris] p. 90.  (Contributed by NM, 12-Mar-1993.) $)
     19.16 $p |- ( A. x ( ph <-> ps ) -> ( ph <-> A. x ps ) ) $=
-      ( wal wb 19.3h albi syl5bbr ) AACEABFCEBCEACDGABCHI $.
+      ( wal wb 19.3 albi syl5bbr ) AACEABFCEBCEACDGABCHI $.
   $}
 
   ${
-    19.17.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.17 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.17.1 $e |- F/ x ps $.
+    $( Theorem 19.17 of [Margaris] p. 90.  (Contributed by NM, 12-Mar-1993.) $)
     19.17 $p |- ( A. x ( ph <-> ps ) -> ( A. x ph <-> ps ) ) $=
-      ( wb wal albi 19.3h syl6bb ) ABECFACFBCFBABCGBCDHI $.
+      ( wb wal albi 19.3 syl6bb ) ABECFACFBCFBABCGBCDHI $.
   $}
 
   ${
     19.21h.1 $e |- ( ph -> A. x ph ) $.
     $( Theorem 19.21 of [Margaris] p. 90.  The hypothesis can be thought of
-       as " ` x ` is not free in ` ph ` ."  (Contributed by NM, 5-Aug-1993.)
+       as " ` x ` is not free in ` ph ` ."  New proofs should use ~ 19.21
+       instead.  (Contributed by NM, 5-Aug-1993.)
        (New usage is discouraged.) $)
     19.21h $p |- ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) $=
       ( wi wal alim syl5 hba1 hbim ax-4 imim2i alrimih impbii ) ABEZCFZABCFZEZA
       ACFPQDABCGHROCAQCDBCIJQBABCKLMN $.
-  $}
-
-  ${
-    19.21-2.1 $e |- ( ph -> A. x ph ) $.
-    19.21-2.2 $e |- ( ph -> A. y ph ) $.
-    $( Theorem 19.21 of [Margaris] p. 90 but with 2 quantifiers.  (Contributed
-       by NM, 4-Feb-2005.) $)
-    19.21-2 $p |- ( A. x A. y ( ph -> ps ) <-> ( ph -> A. x A. y ps ) ) $=
-      ( wi wal 19.21h albii bitri ) ABGDHZCHABDHZGZCHAMCHGLNCABDFIJAMCEIK $.
   $}
 
   ${
@@ -11948,10 +11940,19 @@ $)
     ( wal wex hba1 hbex ax-4 eximi alrimih ) ACDZBEABECKCBACFGKABACHIJ $.
 
   ${
-    19.19.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.19 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.19.1 $e |- F/ x ph $.
+    $( Theorem 19.19 of [Margaris] p. 90.  (Contributed by NM, 12-Mar-1993.) $)
     19.19 $p |- ( A. x ( ph <-> ps ) -> ( ph <-> E. x ps ) ) $=
-      ( wex wb wal 19.9h exbi syl5bbr ) AACEABFCGBCEACDHABCIJ $.
+      ( wex wb wal 19.9 exbi syl5bbr ) AACEABFCGBCEACDHABCIJ $.
+  $}
+
+  ${
+    19.21-2.1 $e |- F/ x ph $.
+    19.21-2.2 $e |- F/ y ph $.
+    $( Theorem 19.21 of [Margaris] p. 90 but with 2 quantifiers.  (Contributed
+       by NM, 4-Feb-2005.) $)
+    19.21-2 $p |- ( A. x A. y ( ph -> ps ) <-> ( ph -> A. x A. y ps ) ) $=
+      ( wi wal 19.21 albii bitri ) ABGDHZCHABDHZGZCHAMCHGLNCABDFIJAMCEIK $.
   $}
 
   $( An alternative definition of ~ df-nf , which does not involve nested
