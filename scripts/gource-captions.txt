@@ -13,6 +13,7 @@
 1097625600|Proved ruc - The Non-Denumerability of the Continuum (Norman Megill), Metamath 100 #22
 1110758400|Definition of the cosine function, df-cos
 1115251200|Proved infpn2 - The Infinitude of Primes (Norman Megill), Metamath 100 #11
+1141171200|Publication of "The Seventeen Provers of the World" (including Metamath), ISBN 9783540307044
 1163116800|Proved demoivreALT - De Moivre's Theorem (Steve Rodriguez), Metamath 100 #17
 1163635200|Proved arisum - Sum of an arithmetic series (Frédéric Liné), Metamath 100 #68
 1200096000|Proved sii - The Cauchy-Schwarz Inequality (Norman Megill), Metamath 100 #78
