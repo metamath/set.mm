@@ -65465,27 +65465,18 @@ $)
   $}
 
   ${
-    $d x y z $.
-    $( Constructive proof of an adaptation of ~ nn0suc .  (Contributed by BJ,
-       19-Nov-2019.)  (Proof modification is discouraged.) $)
-    bj-nn0suc0 $p |- A. x e. _om ( x = (/) \/ E. y e. x x = suc y ) $=
-      ( vz wtru wi com wral cv c0 wceq csuc wo tru a1tru rgenw bdeq0 a1d weq wn
-      wrex bdeqsuc ax-bdex ax-bdor nfv orc expi wel wcel vex sucid eleq2 mpbiri
-      suceq eqeq2d rspcev mpancom olcd bj-bdfindis mp2an ) DDDEZCFGAHZIJZVABHZK
-      ZJZBVATZLZAFGMUTCFDNOVGDDDACVBVFAPVEBAABUAUBUCDAUDZVHVHVBVGDVBVFUEQACRZVG
-      DVIVGSESNUFVACHZKZJZVGDVLVFVBCAUGZVLVFVLVMVJVKUHVJCUIUJVAVKVJUKULVEVLBVJV
-      ABCRVDVKVAVCVJUMUNUOUPUQQURUS $.
-  $}
-
-  ${
-    $d x y A $.
-    $( Constructive proof of an adaptation of ~ nn0suc .  (Contributed by BJ,
-       19-Nov-2019.)  (Proof modification is discouraged.) $)
-    bj-nn0suc1 $p |- ( A e. _om -> ( A = (/) \/ E. x e. A A = suc x ) ) $=
-      ( vy cv wceq c0 csuc wrex wo wal com wcel eqeq1 rexeqbi1dv orbi12d biimpd
-      wi ax-gen nfcv ax-mp wral bj-nn0suc0 nfv bj-rspgt com12 ) CDZBEZUFFEZUFAD
-      GZEZAUFHZIZBFEZBUIEZABHZIZQQZCJZBKLUPQZUQCUGULUPUGUHUMUKUOUFBFMUJUNAUFBUF
-      BUIMNOPRULCKUAZURUSQCAUBURUTUSULUPCBKCBSCKSUPCUCUDUETT $.
+    $d x y z A $.
+    $( Constructive proof of a variant of ~ nn0suc .  For a constructive proof
+       of ~ nn0suc , see ~ bj-nn0suc .  (Contributed by BJ, 19-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-nn0suc0 $p |- ( A e. _om -> ( A = (/) \/ E. x e. A A = suc x ) ) $=
+      ( vy vz cv c0 wceq csuc wrex wo com eqeq1 rexeqbi1dv wtru wi wral a1d weq
+      a1tru wn orbi12d tru rgenw bdeq0 bdeqsuc ax-bdex ax-bdor nfv orc expi wel
+      wcel vex sucid eleq2 mpbiri suceq eqeq2d rspcev mpancom bj-bdfindis mp2an
+      olcd vtoclri ) CEZFGZVEAEZHZGZAVEIZJZBFGZBVHGZABIZJCBKVEBGVFVLVJVNVEBFLVI
+      VMAVEBVEBVHLMUANNNOZDKPVKCKPUBVODKNSUCVKNNNCDVFVJCUDVIACCAUEUFUGNCUHZVPVP
+      VFVKNVFVJUIQCDRZVKNVQVKTOTSUJVEDEZHZGZVKNVTVJVFDCUKZVTVJVTWAVRVSULVRDUMUN
+      VEVSVRUOUPVIVTAVRVEADRVHVSVEVGVRUQURUSUTVCQVAVBVD $.
   $}
 
   ${
@@ -65570,13 +65561,13 @@ $)
 
   ${
     $d x y A $.
-    $( Proof of ~ nn0suc from ~ bj-nn0suc1 .  Note that contrary to
-       ~ bj-nn0suc1 , it is NOT constructive because of the use of ~ omelon .
+    $( Proof of ~ nn0suc from ~ bj-nn0suc0 .  Note that contrary to
+       ~ bj-nn0suc0 , it is NOT constructive because of the use of ~ omelon .
        For a constructive proof, see ~ bj-nn0suc .  (Contributed by BJ,
        19-Nov-2019.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
     bj-nn0sucALT $p |- ( A e. _om -> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
-      ( com wcel c0 wceq cv csuc wo bj-nn0suc1 wss wi omelon onelssi ssrexv syl
+      ( com wcel c0 wceq cv csuc wo bj-nn0suc0 wss wi omelon onelssi ssrexv syl
       wrex orim2d mpd ) BCDZBEFZBAGHFZABQZIUAUBACQZIABJTUCUDUATBCKUCUDLCBMNUBAB
       COPRS $.
   $}
@@ -65773,8 +65764,11 @@ $)
 
   ${
     $d a x y z A $.
-    $( Constructive proof of (biconditional form of) ~ nn0suc .  (Contributed
-       by BJ, 8-Dec-2019.)  (Proof modification is discouraged.) $)
+    $( Constructive proof of (the biconditional form of) ~ nn0suc .  As a
+       characterization of the elements of ` _om ` , this could be labelled
+       "elom".  See also ~ bj-nn0suc0 for a proof of a (less useful) variant
+       from ~ ax-infvn .  (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.) $)
     bj-nn0suc $p |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
       ( va vy vz com wcel c0 wceq cv csuc wrex wo wb wal wi ax-mp bibi12d eleq1
       cvv wex ax-inf2 bdcv bj-inf2vn eleq2 rexeq orbi2d albidv nfcv eqeq1 suceq
