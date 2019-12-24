@@ -65793,38 +65793,48 @@ $(
 
 $)
 
-$(
   ${
-    $d x y $.  $d y ph $.
+    $d x y z $.  $d y z ph $.  $d ps z $.  $d ch z $.  $d th z $.
     bj-findis.nf0 $e |- F/ x ps $.
     bj-findis.nf1 $e |- F/ x ch $.
     bj-findis.nfsuc $e |- F/ x th $.
     bj-findis.0 $e |- ( x = (/) -> ( ps -> ph ) ) $.
     bj-findis.1 $e |- ( x = y -> ( ph -> ch ) ) $.
     bj-findis.suc $e |- ( x = suc y -> ( th -> ph ) ) $.
-    @( Full induction (principle of induction), using implicit substitutions.
-       Constructive proof.  (Contributed by BJ, 22-Nov-2019.)
-       (Proof modification is discouraged.) @)
-    bj-findis $p |-
-                    ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $=
-      (  ) ? $.
+    $( Full induction (principle of induction), using implicit substitutions.
+       Constructive proof.  (Contributed by BJ, 22-Dec-2019.)
+       (Proof modification is discouraged.) $)
+    bj-findis $p |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $=
+      ( vz wi com wral wa wcel wceq nfv cv wal c0 csuc wrex wo bj-nn0suc pm3.21
+      ad2antrr pm2.04 ralimi2 imim2 ral2imi imp sylan2 r19.29 sucid mpbiri ax-1
+      vex eleq2 pm2.27 anim12ii mpdan impcom reximi syl adantll orim12d alrimiv
+      ex syl7bi nfim nfan nfcv nfrexxy nfor biimprd imim12d biimpd eqtr expimpd
+      eleq1 rexlimdvw jaod setindis df-ral sylibr ) BCDNZFOPZQZEUAZORZANZEUBZAE
+      OPWKFUAZORZCNZFMUAZPZWSORZWSUCSZBQZWSWPUDZSZDQZFOUEZUFZNZNZMUBWOWKXJMXAXB
+      XEFOUEZUFZWKWTXHFWSUGWKWTXLXHNWKWTQXBXCXKXGBXBXCNWJWTBXBUHUIWJWTXKXGNZBWJ
+      WTQWPWSRZDNZFOPZXMWTWJXNCNZFOPZXPWRXQFWSOXNWQCUJUKWJXRXPWIXQXOFOCDXNULUMU
+      NUOXPXKXGXPXKQXOXEQZFOUEXGXOXEFOUPXSXFFOXEXOXFXEXNXOXFNXEXNWPXDRWPFUTUQWS
+      XDWPVAURXEXOXEXNDXEXOUSXNDVBVCVDVEVFVGVKVGVHVIVKVLVJWNWRXIEMFWQCEWQETHVMX
+      AXHEXAETXCXGEXBBEXBETGVNXFEFOEOVOXEDEXEETIVNVPVQVMWNMTWRMTWLWPSZWQWMACXTW
+      MWQWLWPOWCVRKVSWLWSSZWMXAXHAYAWMXAWLWSOWCVTYAXCAXGYAXBBAYAXBQWLUCSBANWLWS
+      UCWAJVGWBYAXFAFOYAXEDAYAXEQWLXDSDANWLWSXDWALVGWBWDWEVSWFVGAEOWGWH $.
   $}
-$)
 
+$(
   ${
     $d x y z $.  $d y z ph $.
     bj-findeslem.dummy $e |- ( ps <-> ( x e. _om -> ph ) ) $.
-    $( Lemma for bj-findes .  (Contributed by BJ, 24-Nov-2019.)
-       (Proof modification is discouraged.) $)
+    @( Lemma for bj-findes .  (Contributed by BJ, 24-Nov-2019.)
+       (Proof modification is discouraged.) @)
     bj-findeslem0 $p |- ( [. (/) / x ]. ph <-> [. (/) / x ]. ps ) $=
       ( c0 wsbc cv com wcel wi 0ex eleq1 sbcie bicomi imbi1i peano1 a1bi cvv wb
       sbcimg ax-mp 3bitr4i sbcbii bitri ) ACEFZCGZHIZAJZCEFZBCEFEHIZUEJUGCEFZUE
       JZUEUIUJUKUEUKUJUGUJCEKUFEHLMNOUJUEPQERIUIULSKUGACERTUAUBUHBCEBUHDNUCUD
       $.
 
-    $( Lemma for bj-findes .  NOT YET constructive because of ~ peano2b .
+    @( Lemma for bj-findes .  NOT YET constructive because of ~ peano2b .
        (Contributed by BJ, 24-Nov-2019.)
-       (Proof modification is discouraged.) $)
+       (Proof modification is discouraged.) @)
     bj-findeslem1BAD $p |-
                ( ( x e. _om -> [. suc x / x ]. ph ) <-> [. suc x / x ]. ps ) $=
       ( cv com wcel csuc wsbc wi peano2b cvv vex bj-sucex sbcel1gv ax-mp bitr4i
@@ -65832,9 +65842,9 @@ $)
       UFIZBCUFIUEUHUGUEUFFGZUHUDKUFLGZUHULRUDCMNZCUFFLOPQSUMUKUIRUNUEACUFLTPUJB
       CUFBUJDUAUBUC $.
 
-    $( Lemma for bj-findes (but probably useless).  Constructive proof.
+    @( Lemma for bj-findes (but probably useless).  Constructive proof.
        (Contributed by BJ, 24-Nov-2019.)
-       (Proof modification is discouraged.) $)
+       (Proof modification is discouraged.) @)
     bj-findeslem1 $p |-
                ( [. suc x / x ]. ps -> ( x e. _om -> [. suc x / x ]. ph ) ) $=
       ( cv csuc wsbc com wcel sbcbii biimpi bj-peano2 cvv vex bj-sucex sbcel1gv
@@ -65842,6 +65852,7 @@ $)
       EUHBUGCUDDJKUFUDHIZUIUCLUDMIZUIUKRUCCNOZCUDHMPSTUHUIUJQZULUHUNRUMUFACUDMU
       ASKUB $.
   $}
+$)
 
 
 $(
