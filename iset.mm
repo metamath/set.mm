@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Dec-2019
+$( iset.mm - Version of 23-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -62387,6 +62387,22 @@ $)
       NLKZUQLKZIZULUSUTABCMABCNOULVBVCABCQABCUAOULUNDEZUQDEZURVAVDUBUFULUIUMDEZ
       VEUIUJUKUCZULUJUKVGUIUJUKUDZUIUJUKUEZBCRSAUMTSULUODEZUPDEZVFULUIUJVKVHVIA
       BTSULUIUKVLVHVJACTSUOUPRSUNUQUGSUH $.
+  $}
+
+  ${
+    $d A x y $.  $d B x y $.
+    $( If a positive real is less than a second positive real, its lower cut is
+       a subset of the second's lower cut.  (Contributed by Jim Kingdon,
+       23-Dec-2019.) $)
+    ltprordil $p |- ( A <P B -> ( 1st ` A ) C_ ( 1st ` B ) ) $=
+      ( vx vy cltp wbr cv c2nd cfv wcel c1st wa wss cnq cnp wrex adantr cop syl
+      prop ltrelpr brel ltdfpr biimpd mpcom simpll simpr simprrl simpld syl3an1
+      cltq prltlu syl3anc wi simprrr simprd prcdnql sylan syl2anc mpd rexlimddv
+      ex ssrdv ) ABEFZCGZAHIZJZVEBKIZJZLZAKIZVHMCNAOJZBOJZLZVDVJCNPZABOOEUAUBZV
+      NVDVOABCUCUDUEVDVENJZVJLZLZDVKVHVSDGZVKJZVTVHJZVSWALZVTVEUKFZWBWCVDWAVGWD
+      VDVRWAUFZVSWAUGVSVGWAVDVQVGVIUHQVDVKVFROJZWAVGWDVDVLWFVDVLVMVPUIATSVTVEVF
+      VKULUJUMWCVDVIWDWBUNZWEVSVIWAVDVQVGVIUOQVDVHBHIZROJZVIWGVDVMWIVDVLVMVPUPB
+      TSVEVTWHVHUQURUSUTVBVCVA $.
   $}
 
   ${
