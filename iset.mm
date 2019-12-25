@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Dec-2019
+$( iset.mm - Version of 22-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -65465,27 +65465,18 @@ $)
   $}
 
   ${
-    $d x y z $.
-    $( Constructive proof of an adaptation of ~ nn0suc .  (Contributed by BJ,
-       19-Nov-2019.)  (Proof modification is discouraged.) $)
-    bj-nn0suc0 $p |- A. x e. _om ( x = (/) \/ E. y e. x x = suc y ) $=
-      ( vz wtru wi com wral cv c0 wceq csuc wo tru a1tru rgenw bdeq0 a1d weq wn
-      wrex bdeqsuc ax-bdex ax-bdor nfv orc expi wel wcel vex sucid eleq2 mpbiri
-      suceq eqeq2d rspcev mpancom olcd bj-bdfindis mp2an ) DDDEZCFGAHZIJZVABHZK
-      ZJZBVATZLZAFGMUTCFDNOVGDDDACVBVFAPVEBAABUAUBUCDAUDZVHVHVBVGDVBVFUEQACRZVG
-      DVIVGSESNUFVACHZKZJZVGDVLVFVBCAUGZVLVFVLVMVJVKUHVJCUIUJVAVKVJUKULVEVLBVJV
-      ABCRVDVKVAVCVJUMUNUOUPUQQURUS $.
-  $}
-
-  ${
-    $d x y A $.
-    $( Constructive proof of an adaptation of ~ nn0suc .  (Contributed by BJ,
-       19-Nov-2019.)  (Proof modification is discouraged.) $)
-    bj-nn0suc1 $p |- ( A e. _om -> ( A = (/) \/ E. x e. A A = suc x ) ) $=
-      ( vy cv wceq c0 csuc wrex wo wal com wcel eqeq1 rexeqbi1dv orbi12d biimpd
-      wi ax-gen nfcv ax-mp wral bj-nn0suc0 nfv bj-rspgt com12 ) CDZBEZUFFEZUFAD
-      GZEZAUFHZIZBFEZBUIEZABHZIZQQZCJZBKLUPQZUQCUGULUPUGUHUMUKUOUFBFMUJUNAUFBUF
-      BUIMNOPRULCKUAZURUSQCAUBURUTUSULUPCBKCBSCKSUPCUCUDUETT $.
+    $d x y z A $.
+    $( Constructive proof of a variant of ~ nn0suc .  For a constructive proof
+       of ~ nn0suc , see ~ bj-nn0suc .  (Contributed by BJ, 19-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-nn0suc0 $p |- ( A e. _om -> ( A = (/) \/ E. x e. A A = suc x ) ) $=
+      ( vy vz cv c0 wceq csuc wrex wo com eqeq1 rexeqbi1dv wtru wi wral a1d weq
+      a1tru wn orbi12d tru rgenw bdeq0 bdeqsuc ax-bdex ax-bdor nfv orc expi wel
+      wcel vex sucid eleq2 mpbiri suceq eqeq2d rspcev mpancom bj-bdfindis mp2an
+      olcd vtoclri ) CEZFGZVEAEZHZGZAVEIZJZBFGZBVHGZABIZJCBKVEBGVFVLVJVNVEBFLVI
+      VMAVEBVEBVHLMUANNNOZDKPVKCKPUBVODKNSUCVKNNNCDVFVJCUDVIACCAUEUFUGNCUHZVPVP
+      VFVKNVFVJUIQCDRZVKNVQVKTOTSUJVEDEZHZGZVKNVTVJVFDCUKZVTVJVTWAVRVSULVRDUMUN
+      VEVSVRUOUPVIVTAVRVEADRVHVSVEVGVRUQURUSUTVCQVAVBVD $.
   $}
 
   ${
@@ -65570,13 +65561,13 @@ $)
 
   ${
     $d x y A $.
-    $( Proof of ~ nn0suc from ~ bj-nn0suc1 .  Note that contrary to
-       ~ bj-nn0suc1 , it is NOT constructive because of the use of ~ omelon .
+    $( Proof of ~ nn0suc from ~ bj-nn0suc0 .  Note that contrary to
+       ~ bj-nn0suc0 , it is NOT constructive because of the use of ~ omelon .
        For a constructive proof, see ~ bj-nn0suc .  (Contributed by BJ,
        19-Nov-2019.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
     bj-nn0sucALT $p |- ( A e. _om -> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
-      ( com wcel c0 wceq cv csuc wo bj-nn0suc1 wss wi omelon onelssi ssrexv syl
+      ( com wcel c0 wceq cv csuc wo bj-nn0suc0 wss wi omelon onelssi ssrexv syl
       wrex orim2d mpd ) BCDZBEFZBAGHFZABQZIUAUBACQZIABJTUCUDUATBCKUCUDLCBMNUBAB
       COPRS $.
   $}
@@ -65773,8 +65764,11 @@ $)
 
   ${
     $d a x y z A $.
-    $( Constructive proof of (biconditional form of) ~ nn0suc .  (Contributed
-       by BJ, 8-Dec-2019.)  (Proof modification is discouraged.) $)
+    $( Constructive proof of (the biconditional form of) ~ nn0suc .  As a
+       characterization of the elements of ` _om ` , this could be labelled
+       "elom".  See also ~ bj-nn0suc0 for a proof of a (less useful) variant
+       from ~ ax-infvn .  (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.) $)
     bj-nn0suc $p |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
       ( va vy vz com wcel c0 wceq cv csuc wrex wo wb wal wi ax-mp bibi12d eleq1
       cvv wex ax-inf2 bdcv bj-inf2vn eleq2 rexeq orbi2d albidv nfcv eqeq1 suceq
@@ -65799,38 +65793,48 @@ $(
 
 $)
 
-$(
   ${
-    $d x y $.  $d y ph $.
+    $d x y z $.  $d y z ph $.  $d ps z $.  $d ch z $.  $d th z $.
     bj-findis.nf0 $e |- F/ x ps $.
     bj-findis.nf1 $e |- F/ x ch $.
     bj-findis.nfsuc $e |- F/ x th $.
     bj-findis.0 $e |- ( x = (/) -> ( ps -> ph ) ) $.
     bj-findis.1 $e |- ( x = y -> ( ph -> ch ) ) $.
     bj-findis.suc $e |- ( x = suc y -> ( th -> ph ) ) $.
-    @( Full induction (principle of induction), using implicit substitutions.
-       Constructive proof.  (Contributed by BJ, 22-Nov-2019.)
-       (Proof modification is discouraged.) @)
-    bj-findis $p |-
-                    ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $=
-      (  ) ? $.
+    $( Full induction (principle of induction), using implicit substitutions.
+       Constructive proof.  (Contributed by BJ, 22-Dec-2019.)
+       (Proof modification is discouraged.) $)
+    bj-findis $p |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $=
+      ( vz wi com wral wa wcel wceq nfv cv wal c0 csuc wrex wo bj-nn0suc pm3.21
+      ad2antrr pm2.04 ralimi2 imim2 ral2imi imp sylan2 r19.29 sucid mpbiri ax-1
+      vex eleq2 pm2.27 anim12ii mpdan impcom reximi syl adantll orim12d alrimiv
+      ex syl7bi nfim nfan nfcv nfrexxy nfor biimprd imim12d biimpd eqtr expimpd
+      eleq1 rexlimdvw jaod setindis df-ral sylibr ) BCDNZFOPZQZEUAZORZANZEUBZAE
+      OPWKFUAZORZCNZFMUAZPZWSORZWSUCSZBQZWSWPUDZSZDQZFOUEZUFZNZNZMUBWOWKXJMXAXB
+      XEFOUEZUFZWKWTXHFWSUGWKWTXLXHNWKWTQXBXCXKXGBXBXCNWJWTBXBUHUIWJWTXKXGNZBWJ
+      WTQWPWSRZDNZFOPZXMWTWJXNCNZFOPZXPWRXQFWSOXNWQCUJUKWJXRXPWIXQXOFOCDXNULUMU
+      NUOXPXKXGXPXKQXOXEQZFOUEXGXOXEFOUPXSXFFOXEXOXFXEXNXOXFNXEXNWPXDRWPFUTUQWS
+      XDWPVAURXEXOXEXNDXEXOUSXNDVBVCVDVEVFVGVKVGVHVIVKVLVJWNWRXIEMFWQCEWQETHVMX
+      AXHEXAETXCXGEXBBEXBETGVNXFEFOEOVOXEDEXEETIVNVPVQVMWNMTWRMTWLWPSZWQWMACXTW
+      MWQWLWPOWCVRKVSWLWSSZWMXAXHAYAWMXAWLWSOWCVTYAXCAXGYAXBBAYAXBQWLUCSBANWLWS
+      UCWAJVGWBYAXFAFOYAXEDAYAXEQWLXDSDANWLWSXDWALVGWBWDWEVSWFVGAEOWGWH $.
   $}
-$)
 
+$(
   ${
     $d x y z $.  $d y z ph $.
     bj-findeslem.dummy $e |- ( ps <-> ( x e. _om -> ph ) ) $.
-    $( Lemma for bj-findes .  (Contributed by BJ, 24-Nov-2019.)
-       (Proof modification is discouraged.) $)
+    @( Lemma for bj-findes .  (Contributed by BJ, 24-Nov-2019.)
+       (Proof modification is discouraged.) @)
     bj-findeslem0 $p |- ( [. (/) / x ]. ph <-> [. (/) / x ]. ps ) $=
       ( c0 wsbc cv com wcel wi 0ex eleq1 sbcie bicomi imbi1i peano1 a1bi cvv wb
       sbcimg ax-mp 3bitr4i sbcbii bitri ) ACEFZCGZHIZAJZCEFZBCEFEHIZUEJUGCEFZUE
       JZUEUIUJUKUEUKUJUGUJCEKUFEHLMNOUJUEPQERIUIULSKUGACERTUAUBUHBCEBUHDNUCUD
       $.
 
-    $( Lemma for bj-findes .  NOT YET constructive because of ~ peano2b .
+    @( Lemma for bj-findes .  NOT YET constructive because of ~ peano2b .
        (Contributed by BJ, 24-Nov-2019.)
-       (Proof modification is discouraged.) $)
+       (Proof modification is discouraged.) @)
     bj-findeslem1BAD $p |-
                ( ( x e. _om -> [. suc x / x ]. ph ) <-> [. suc x / x ]. ps ) $=
       ( cv com wcel csuc wsbc wi peano2b cvv vex bj-sucex sbcel1gv ax-mp bitr4i
@@ -65838,9 +65842,9 @@ $)
       UFIZBCUFIUEUHUGUEUFFGZUHUDKUFLGZUHULRUDCMNZCUFFLOPQSUMUKUIRUNUEACUFLTPUJB
       CUFBUJDUAUBUC $.
 
-    $( Lemma for bj-findes (but probably useless).  Constructive proof.
+    @( Lemma for bj-findes (but probably useless).  Constructive proof.
        (Contributed by BJ, 24-Nov-2019.)
-       (Proof modification is discouraged.) $)
+       (Proof modification is discouraged.) @)
     bj-findeslem1 $p |-
                ( [. suc x / x ]. ps -> ( x e. _om -> [. suc x / x ]. ph ) ) $=
       ( cv csuc wsbc com wcel sbcbii biimpi bj-peano2 cvv vex bj-sucex sbcel1gv
@@ -65848,6 +65852,7 @@ $)
       EUHBUGCUDDJKUFUDHIZUIUCLUDMIZUIUKRUCCNOZCUDHMPSTUHUIUJQZULUHUNRUMUFACUDMU
       ASKUB $.
   $}
+$)
 
 
 $(
