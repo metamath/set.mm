@@ -1,4 +1,4 @@
-$( iset.mm - Version of 23-Dec-2019
+$( iset.mm - Version of 26-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -61158,6 +61158,20 @@ $)
       BYMUUAUUBUWDUWRXAYMUUAUUBUWDUWRXBXGUWSYMUVGYMUUAUUBUWDUWRXCUWRUVEUVGUWCWC
       XGXTYBAYTUVFYLXDXEXGXGXFXIVIXJXKXJXLXLXMYFEDXNSYHYAYIMZDPYJYGUWTDYGYAYEEP
       ZMUWTYAYEEUSYIUXAYAYDEBRXOXPWTYIDCRXPS $.
+  $}
+
+  ${
+    $d L a b m n q x y $.  $d P a b m n q x y $.  $d U a b m n q x y $.
+    $( A Dedekind cut is arithmetically located.  This is a variation of
+       ~ prarloc which only constructs one (named) point and is therefore often
+       easier to work with.  It states that given a tolerance ` P ` , there are
+       elements of the lower and upper cut which are exactly that tolerance
+       from each other.  (Contributed by Jim Kingdon, 26-Dec-2019.) $)
+    prarloc2 $p |- ( ( <. L , U >. e. P. /\ P e. Q. ) ->
+        E. a e. L ( a +Q P ) e. U ) $=
+      ( vb cop cnp wcel cnq wa cv cplq co cltq wbr prarloc wi prcunqu rexlimdva
+      wrex reximdv adantr mpd ) CBFGHZAIHZJEKZDKALMZNOZEBTZDCTZUGBHZDCTZABCDEPU
+      DUJULQUEUDUIUKDCUDUHUKEBUGUFBCRSUAUBUC $.
   $}
 
   ${
