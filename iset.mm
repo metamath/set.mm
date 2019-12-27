@@ -63014,6 +63014,34 @@ $)
     OUMUNQUAZACBMRSUQVAVBABCTUQVGVBVANVHACBTRSUFULUPVDUBZUOUJUKVIUIBC
     UCUGUDUEUH $.
 
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Lemma for Proposition 9-3.5(v) of [Gleason] p. 123.  (Contributed by NM,
+       8-Apr-1996.) $)
+    ltaprlem $p |- ( C e. P. -> ( A <P B ->
+                    ( C +P. A ) <P ( C +P. B ) ) ) $=
+      ( vx cltp wbr cnp wcel cpp co wa cv wceq wrex ltexpri adantr ltrelpr brel
+      simplr syl2anc simpld addclpr simprl ltaddpr syl3anc oveq2 ad2antll eqtrd
+      addassprg breqtrd rexlimddv expcom ) ABEFZCGHZCAIJZCBIJZEFZUMUNKZADLZIJZB
+      MZUQDGUMVADGNUNDABOPURUSGHZVAKZKZUOUOUSIJZUPEVDUOGHZVBUOVEEFVDUNAGHZVFUMU
+      NVCSZURVGVCUMVGUNUMVGBGHABGGEQRUAPPZCAUBTURVBVAUCZUOUSUDTVDVECUTIJZUPVDUN
+      VGVBVEVKMVHVIVJCAUSUIUEVAVKUPMURVBUTBCIUFUGUHUJUKUL $.
+
+    $( Ordering property of addition.  Proposition 9-3.5(v) of [Gleason]
+       p. 123.  Part of Definition 11.2.7(vi) of [[HoTT]], p.  (varies).
+       (Contributed by Jim Kingdon, 26-Dec-2019.) $)
+    ltaprg $p |- ( ( A e. P. /\ B e. P. /\ C e. P. ) ->
+        ( A <P B <-> ( C +P. A ) <P ( C +P. B ) ) ) $=
+      ( vx cnp wcel w3a cltp wbr cpp co wi ltaprlem 3ad2ant3 wa cv wceq ltexpri
+      wrex syl2anc adantl simpl1 simprl ltaddpr addassprg 3com12 adantrr simprr
+      3expa eqtr3d 3adantl2 simpl3 addclpr simpl2 addcanprg syl3anc mpd breqtrd
+      adantlr rexlimddv ex impbid ) AEFZBEFZCEFZGZABHIZCAJKZCBJKZHIZVEVCVGVJLVD
+      ABCMNVFVJVGVFVJOVHDPZJKZVIQZVGDEVJVMDESVFDVHVIRUAVFVKEFZVMOZVGVJVFVOOZAAV
+      KJKZBHVPVCVNAVQHIVCVDVEVOUBZVFVNVMUCZAVKUDTVPCVQJKZVIQZVQBQZVCVEVOWAVDVCV
+      EOZVOOVLVTVIWCVNVLVTQZVMVCVEVNWDVEVCVNWDCAVKUEUFUIUGWCVNVMUHUJUKVPVEVQEFZ
+      VDWAWBLVCVDVEVOULVPVCVNWEVRVSAVKUMTVCVDVEVOUNCVQBUOUPUQURUSUTVAVB $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
