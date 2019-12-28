@@ -62072,6 +62072,24 @@ $)
   $}
 
   ${
+    $d B x y $.  $d L x y $.  $d U x y $.
+    $( Positive reals are multiplicatively located.  This is a variation of
+       ~ prmuloc which only constructs one (named) point and is therefore often
+       easier to work with.  It states that given a ratio ` B ` , there are
+       elements of the lower and upper cut which have exactly that ratio
+       between them.  (Contributed by Jim Kingdon, 28-Dec-2019.) $)
+    prmuloc2 $p |- ( ( <. L , U >. e. P. /\ 1Q <Q B ) ->
+        E. x e. L ( x .Q B ) e. U ) $=
+      ( vy cop wcel c1q cltq wbr wa cv cmq co cnq wrex wi syl2anc mpd ex simpr1
+      cnp w3a prmuloc nfv nfre1 simpr3 wceq wb simplrr mulidnq breq1 3syl mpbid
+      simplll simpr2 prcunqu rspe anassrs rexlimdva rexlimd ) DCFUBGZHBIJZKZALZ
+      DGZELZCGZVGHMNZVEBMNZIJZUCZEOPZAOPVJCGZADPZEHBCDAUDVDVMVOAOVDAUEVNADUFVDV
+      EOGZVMVOQVDVPKVLVOEOVDVPVGOGZVLVOQVDVPVQKZKZVLVOVSVLKZVFVNVOVSVFVHVKUAVTV
+      GVJIJZVNVTVKWAVSVFVHVKUGVTVQVIVGUHVKWAUIVDVPVQVLUJVGUKVIVGVJIULUMUNVTVBVH
+      WAVNQVBVCVRVLUOVSVFVHVKUPVJVGCDUQRSVNADURRTUSUTTVAS $.
+  $}
+
+  ${
     $d A g h u v w x y z $.  $d B g h u v w x y z $.  $d G w y z $.
     $d H w y z $.  $d X w y z $.
     $( Lemma to prove downward closure in positive real multiplication.
