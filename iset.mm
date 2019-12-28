@@ -62665,8 +62665,8 @@ $)
       FXGDUMWDWLXHWEVARUOVBVCVGWQVMWIBPZMWKVRXIVMVRVOWHBPZMXIVQXJVOVQVTWGBPMXJA
       BCDEFHVDVTWGBSTVEVOWHBSTVEVMWIBSTVSVLWNBPMWPABCDEGHVDVLWNBSTVFVHVI $.
 
-    $( The upper cut of our constructed difference is open.  (Contributed by
-       Jim Kingdon, 21-Dec-2019.) $)
+    $( The upper cut of our constructed difference is open.  Lemma for
+       ~ ltexpri .  (Contributed by Jim Kingdon, 21-Dec-2019.) $)
     ltexprlemopu $p |- ( ( A <P B /\ r e. Q. /\ r e. ( 2nd ` C ) )
         -> E. q e. Q. ( q <Q r /\ q e. ( 2nd ` C ) ) ) $=
       ( vs wbr cv cnq wcel cfv cltq wa wrex wex cnp adantr vt cltp c2nd c1st co
