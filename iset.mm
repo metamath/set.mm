@@ -10338,12 +10338,6 @@ $)
     ( wa wal simpl alimi simpr jca id alanimi impbii ) ABDZCEZACEZBCEZDNOPMACAB
     FGMBCABHGIABMCMJKL $.
 
-  $( Obsolete proof of ~ 19.26 as of 4-Jul-2014.  (Contributed by NM,
-     5-Aug-1993.) $)
-  19.26OLD $p |- ( A. x ( ph /\ ps ) <-> ( A. x ph /\ A. x ps ) ) $=
-    ( wa wal simpl alimi simpr jca pm3.2 al2imi imp impbii ) ABDZCEZACEZBCEZDOP
-    QNACABFGNBCABHGIPQOABNCABJKLM $.
-
   $( Theorem 19.26 of [Margaris] p. 90 with two quantifiers.  (Contributed by
      NM, 3-Feb-2005.) $)
   19.26-2 $p |- ( A. x A. y ( ph /\ ps ) <->
