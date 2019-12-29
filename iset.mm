@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Dec-2019
+$( iset.mm - Version of 29-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -59619,22 +59619,27 @@ $)
 
   ${
     $d A x y $.  $d B y $.
-    $( Ordering property of reciprocal for positive fractions.  We do not
-       provide the converse as a theorem because we only need the forward
-       direction, but if we did need the converse it would be easy to prove
-       ` ( A e. Q. /\ B e. Q. ) -> ( A <Q B <-> ( *Q `` B ) <Q ( *Q `` A ) ) `
-       (Contributed by Jim Kingdon, 24-Sep-2019.) $)
+    $( Ordering property of reciprocal for positive fractions.  For a
+       simplified version of the forward implication, see ~ ltrnqi .
+       (Contributed by Jim Kingdon, 29-Dec-2019.) $)
+    ltrnqg $p |- ( ( A e. Q. /\ B e. Q. ) ->
+        ( A <Q B <-> ( *Q ` B ) <Q ( *Q ` A ) ) ) $=
+      ( cnq wcel cltq wbr crq cfv cmq co recclnq mulclnq wceq mulcomnqg syl2anc
+      mulassnqg syl3anc c1q recidnq oveq2d syl2an ltmnqg mpd3an3 ax-ia1 3eqtr2d
+      wa adantr adantl mulidnq syl sylan9eq eqtrd ax-ia2 sylan9eqr 3eqtrd bitrd
+      wb breq12d ) ACDZBCDZUFZABEFZAGHZBGHZIJZAIJZVEBIJZEFZVDVCEFUSUTVECDZVBVHU
+      QUSVCCDZVDCDZVIUTAKZBKZVCVDLUAZABVEUBUCVAVFVDVGVCEVAVFVDAVCIJZIJZVDVAVFAV
+      EIJZVOVDIJZVPVAVIUSVFVQMVNUSUTUDZVEANOVAUSVJVKVRVQMVSUSVJUTVLUGZUTVKUSVMU
+      HZAVCVDPQVAVOCDZVKVRVPMVAUSVJWBVSVTAVCLOWAVOVDNOUEUSUTVPVDRIJZVDUSVORVDIA
+      STUTVKWCVDMVMVDUIUJUKULVAVGVCVDBIJZIJZVCBVDIJZIJZVCVAVJVKUTVGWEMVTWAUSUTU
+      MZVCVDBPQVAWDWFVCIVAVKUTWDWFMWAWHVDBNOTUTUSWGVCRIJZVCUTWFRVCIBSTUSVJWIVCM
+      VLVCUIUJUNUOURUP $.
+
+    $( Ordering property of reciprocal for positive fractions.  For the
+       converse, see ~ ltrnqg .  (Contributed by Jim Kingdon, 24-Sep-2019.) $)
     ltrnqi $p |- ( A <Q B -> ( *Q ` B ) <Q ( *Q ` A ) ) $=
-      ( cltq wbr crq cfv cnq wcel wb cmq recclnq mulclnq wceq mulcomnqg syl2anc
-      co mulassnqg c1q oveq2d syl wa ltrelnq syl2an ltmnqg ax-ia1 adantr adantl
-      brel mpd3an3 syl3anc 3eqtr2d recidnq mulidnq sylan9eq eqtrd ax-ia2 3eqtrd
-      sylan9eqr breq12d bitrd ibi ) ABCDZBEFZAEFZCDZVBAGHZBGHZUAZVBVEIABGGCUBUH
-      VHVBVDVCJPZAJPZVIBJPZCDZVEVFVGVIGHZVBVLIVFVDGHZVCGHZVMVGAKZBKZVDVCLUCZABV
-      IUDUIVHVJVCVKVDCVHVJVCAVDJPZJPZVCVHVJAVIJPZVSVCJPZVTVHVMVFVJWAMVRVFVGUEZV
-      IANOVHVFVNVOWBWAMWCVFVNVGVPUFZVGVOVFVQUGZAVDVCQUJVHVSGHZVOWBVTMVHVFVNWFWC
-      WDAVDLOWEVSVCNOUKVFVGVTVCRJPZVCVFVSRVCJAULSVGVOWGVCMVQVCUMTUNUOVHVKVDVCBJ
-      PZJPZVDBVCJPZJPZVDVHVNVOVGVKWIMWDWEVFVGUPZVDVCBQUJVHWHWJVDJVHVOVGWHWJMWEW
-      LVCBNOSVGVFWKVDRJPZVDVGWJRVDJBULSVFVNWMVDMVPVDUMTURUQUSUTTVA $.
+      ( cltq wbr crq cfv cnq wcel wa wb ltrelnq brel ltrnqg syl ibi ) ABCDZBEFA
+      EFCDZPAGHBGHIPQJABGGCKLABMNO $.
   $}
 
   ${
