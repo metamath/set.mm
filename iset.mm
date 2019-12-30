@@ -1,4 +1,4 @@
-$( iset.mm - Version of 26-Dec-2019
+$( iset.mm - Version of 29-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -10337,12 +10337,6 @@ $)
   19.26 $p |- ( A. x ( ph /\ ps ) <-> ( A. x ph /\ A. x ps ) ) $=
     ( wa wal simpl alimi simpr jca id alanimi impbii ) ABDZCEZACEZBCEZDNOPMACAB
     FGMBCABHGIABMCMJKL $.
-
-  $( Obsolete proof of ~ 19.26 as of 4-Jul-2014.  (Contributed by NM,
-     5-Aug-1993.) $)
-  19.26OLD $p |- ( A. x ( ph /\ ps ) <-> ( A. x ph /\ A. x ps ) ) $=
-    ( wa wal simpl alimi simpr jca pm3.2 al2imi imp impbii ) ABDZCEZACEZBCEZDOP
-    QNACABFGNBCABHGIPQOABNCABJKLM $.
 
   $( Theorem 19.26 of [Margaris] p. 90 with two quantifiers.  (Contributed by
      NM, 3-Feb-2005.) $)
@@ -59217,6 +59211,13 @@ $)
     co eqtrd wb mpbird ) ABCZADEZDEAFZSAGNZHFZRUAASGNZHSBCZRUAUCFAIZSAJKALOUDRT
     UBPUESAMKQ $.
 
+  $( Reciprocal of positive fraction one.  (Contributed by Jim Kingdon,
+     29-Dec-2019.) $)
+  rec1nq $p |- ( *Q ` 1Q ) = 1Q $=
+    ( c1q crq cfv cmq co cnq wcel wceq 1nq recclnq ax-mp mulcomnqg mulidnq mp2b
+    mp2an recidnq 3eqtr3i ) ABCZADEZARDEZRARFGZAFGZSTHUBUAIAJZKIRALOUBUASRHIUCR
+    MNUBTAHIAPKQ $.
+
   ${
     $d A u v w z $.  $d B u v $.
     $( Trichotomy for positive fractions.  (Contributed by Jim Kingdon,
@@ -59625,22 +59626,27 @@ $)
 
   ${
     $d A x y $.  $d B y $.
-    $( Ordering property of reciprocal for positive fractions.  We do not
-       provide the converse as a theorem because we only need the forward
-       direction, but if we did need the converse it would be easy to prove
-       ` ( A e. Q. /\ B e. Q. ) -> ( A <Q B <-> ( *Q `` B ) <Q ( *Q `` A ) ) `
-       (Contributed by Jim Kingdon, 24-Sep-2019.) $)
+    $( Ordering property of reciprocal for positive fractions.  For a
+       simplified version of the forward implication, see ~ ltrnqi .
+       (Contributed by Jim Kingdon, 29-Dec-2019.) $)
+    ltrnqg $p |- ( ( A e. Q. /\ B e. Q. ) ->
+        ( A <Q B <-> ( *Q ` B ) <Q ( *Q ` A ) ) ) $=
+      ( cnq wcel cltq wbr crq cfv cmq co recclnq mulclnq wceq mulcomnqg syl2anc
+      mulassnqg syl3anc c1q recidnq oveq2d syl2an ltmnqg mpd3an3 ax-ia1 3eqtr2d
+      wa adantr adantl mulidnq syl sylan9eq eqtrd ax-ia2 sylan9eqr 3eqtrd bitrd
+      wb breq12d ) ACDZBCDZUFZABEFZAGHZBGHZIJZAIJZVEBIJZEFZVDVCEFUSUTVECDZVBVHU
+      QUSVCCDZVDCDZVIUTAKZBKZVCVDLUAZABVEUBUCVAVFVDVGVCEVAVFVDAVCIJZIJZVDVAVFAV
+      EIJZVOVDIJZVPVAVIUSVFVQMVNUSUTUDZVEANOVAUSVJVKVRVQMVSUSVJUTVLUGZUTVKUSVMU
+      HZAVCVDPQVAVOCDZVKVRVPMVAUSVJWBVSVTAVCLOWAVOVDNOUEUSUTVPVDRIJZVDUSVORVDIA
+      STUTVKWCVDMVMVDUIUJUKULVAVGVCVDBIJZIJZVCBVDIJZIJZVCVAVJVKUTVGWEMVTWAUSUTU
+      MZVCVDBPQVAWDWFVCIVAVKUTWDWFMWAWHVDBNOTUTUSWGVCRIJZVCUTWFRVCIBSTUSVJWIVCM
+      VLVCUIUJUNUOURUP $.
+
+    $( Ordering property of reciprocal for positive fractions.  For the
+       converse, see ~ ltrnqg .  (Contributed by Jim Kingdon, 24-Sep-2019.) $)
     ltrnqi $p |- ( A <Q B -> ( *Q ` B ) <Q ( *Q ` A ) ) $=
-      ( cltq wbr crq cfv cnq wcel wb cmq recclnq mulclnq wceq mulcomnqg syl2anc
-      co mulassnqg c1q oveq2d syl wa ltrelnq syl2an ltmnqg ax-ia1 adantr adantl
-      brel mpd3an3 syl3anc 3eqtr2d recidnq mulidnq sylan9eq eqtrd ax-ia2 3eqtrd
-      sylan9eqr breq12d bitrd ibi ) ABCDZBEFZAEFZCDZVBAGHZBGHZUAZVBVEIABGGCUBUH
-      VHVBVDVCJPZAJPZVIBJPZCDZVEVFVGVIGHZVBVLIVFVDGHZVCGHZVMVGAKZBKZVDVCLUCZABV
-      IUDUIVHVJVCVKVDCVHVJVCAVDJPZJPZVCVHVJAVIJPZVSVCJPZVTVHVMVFVJWAMVRVFVGUEZV
-      IANOVHVFVNVOWBWAMWCVFVNVGVPUFZVGVOVFVQUGZAVDVCQUJVHVSGHZVOWBVTMVHVFVNWFWC
-      WDAVDLOWEVSVCNOUKVFVGVTVCRJPZVCVFVSRVCJAULSVGVOWGVCMVQVCUMTUNUOVHVKVDVCBJ
-      PZJPZVDBVCJPZJPZVDVHVNVOVGVKWIMWDWEVFVGUPZVDVCBQUJVHWHWJVDJVHVOVGWHWJMWEW
-      LVCBNOSVGVFWKVDRJPZVDVGWJRVDJBULSVFVNWMVDMVPVDUMTURUQUSUTTVA $.
+      ( cltq wbr crq cfv cnq wcel wa wb ltrelnq brel ltrnqg syl ibi ) ABCDZBEFA
+      EFCDZPAGHBGHIPQJABGGCKLABMNO $.
   $}
 
   ${
@@ -61951,6 +61957,20 @@ $)
   $}
 
   ${
+    $( The class of rationals less than a given rational is a set.
+       (Contributed by Jim Kingdon, 13-Dec-2019.) $)
+    ltnqex $p |- { x | x <Q A } e. _V $=
+      ( cv cltq wbr cab cnq nqex wcel ltrelnq brel simpld abssi ssexi ) ACZBDEZ
+      AFGHPAGPOGIBGIOBGGDJKLMN $.
+
+    $( The class of rationals greater than a given rational is a set.
+       (Contributed by Jim Kingdon, 13-Dec-2019.) $)
+    gtnqex $p |- { x | A <Q x } e. _V $=
+      ( cv cltq wbr cab cnq nqex wcel ltrelnq brel simprd abssi ssexi ) BACZDEZ
+      AFGHPAGPBGIOGIBOGGDJKLMN $.
+  $}
+
+  ${
     $d x y $.
     $( The positive real number 'one'.  (Contributed by NM, 13-Mar-1996.)
        (Revised by Mario Carneiro, 12-Jun-2013.) $)
@@ -61958,6 +61978,18 @@ $)
       ( vx vy c1p c1q cltq wbr cab cop cnp df-i1p breq2 cbvabv opeq2i eqtri cnq
       cv wcel 1nq nqprlu ax-mp eqeltri ) CAPZDEFAGZDUBEFZAGZHZICUCDBPZEFZBGZHUF
       BAJUIUEUCUHUDBAUGUBDEKLMNDOQUFIQRADSTUA $.
+
+    $( The lower cut of the positive real number 'one'.  (Contributed by Jim
+       Kingdon, 28-Dec-2019.) $)
+    1prl $p |- ( 1st ` 1P ) = { x | x <Q 1Q } $=
+      ( vy c1p c1st cfv cv c1q cltq wbr df-i1p fveq2i ltnqex gtnqex op1st eqtri
+      cab cop ) CDEAFGHIAPZGBFHIBPZQZDERCTDBAJKRSAGLBGMNO $.
+
+    $( The upper cut of the positive real number 'one'.  (Contributed by Jim
+       Kingdon, 28-Dec-2019.) $)
+    1pru $p |- ( 2nd ` 1P ) = { x | 1Q <Q x } $=
+      ( vy c1p c2nd cfv cv c1q cltq wbr df-i1p fveq2i ltnqex gtnqex op2nd eqtri
+      cab cop ) CDEBFGHIBPZGAFHIAPZQZDESCTDABJKRSBGLAGMNO $.
   $}
 
   ${
@@ -62049,6 +62081,24 @@ $)
       XHYCYKWGXHYCYKXCWGXHWMYKWKWGXFWMYKXGWEXFWMYKWFXEWLDEVHVIVNVOVIVJVAXRYCYDV
       KXIWIXQYEWGXBWIXHVLSXIXPXLYEVLXIWRXQYEWGWRXCXHWFWRWEWFWRWSXAVPUKSSXIWSXQY
       EXOSYIXIXPXLYEUMXIXBXQYEXNSVMWKWMWNVQVRWDVSVTWAWOFAQQVBWBWCWCWC $.
+  $}
+
+  ${
+    $d B x y $.  $d L x y $.  $d U x y $.
+    $( Positive reals are multiplicatively located.  This is a variation of
+       ~ prmuloc which only constructs one (named) point and is therefore often
+       easier to work with.  It states that given a ratio ` B ` , there are
+       elements of the lower and upper cut which have exactly that ratio
+       between them.  (Contributed by Jim Kingdon, 28-Dec-2019.) $)
+    prmuloc2 $p |- ( ( <. L , U >. e. P. /\ 1Q <Q B ) ->
+        E. x e. L ( x .Q B ) e. U ) $=
+      ( vy cop wcel c1q cltq wbr wa cv cmq co cnq wrex wi syl2anc mpd ex simpr1
+      cnp w3a prmuloc nfv nfre1 simpr3 wceq wb simplrr mulidnq breq1 3syl mpbid
+      simplll simpr2 prcunqu rspe anassrs rexlimdva rexlimd ) DCFUBGZHBIJZKZALZ
+      DGZELZCGZVGHMNZVEBMNZIJZUCZEOPZAOPVJCGZADPZEHBCDAUDVDVMVOAOVDAUEVNADUFVDV
+      EOGZVMVOQVDVPKVLVOEOVDVPVGOGZVLVOQVDVPVQKZKZVLVOVSVLKZVFVNVOVSVFVHVKUAVTV
+      GVJIJZVNVTVKWAVSVFVHVKUGVTVQVIVGUHVKWAUIVDVPVQVLUJVGUKVIVGVJIULUMUNVTVBVH
+      WAVNQVBVCVRVLUOVSVFVHVKUPVJVGCDUQRSVNADURRTUSUTTVAS $.
   $}
 
   ${
@@ -62420,82 +62470,65 @@ $)
   $}
 
   ${
-    $( The class of rationals less than a given rational is a set.
-       (Contributed by Jim Kingdon, 13-Dec-2019.) $)
-    ltnqex $p |- { x | x <Q A } e. _V $=
-      ( cv cltq wbr cab cnq nqex wcel ltrelnq brel simpld abssi ssexi ) ACZBDEZ
-      AFGHPAGPOGIBGIOBGGDJKLMN $.
-
-    $( The class of rationals greater than a given rational is a set.
-       (Contributed by Jim Kingdon, 13-Dec-2019.) $)
-    gtnqex $p |- { x | A <Q x } e. _V $=
-      ( cv cltq wbr cab cnq nqex wcel ltrelnq brel simprd abssi ssexi ) BACZDEZ
-      AFGHPAGPBGIOGIBOGGDJKLMN $.
-  $}
-
-  ${
     $d x y z w v u f g h A $.
     $( Lemma for ~ 1idpr .  (Contributed by Jim Kingdon, 13-Dec-2019.) $)
     1idprl $p |- ( A e. P. -> ( 1st ` ( A .P. 1P ) ) = ( 1st ` A ) ) $=
       ( vf vg vw vy wcel c1p co cfv cv cmq wceq wrex cltq wbr wa cnq c1q adantl
-      wb vx vh vu vv vz cnp cmp c1st wss ssid rexss ax-mp r19.42v 1pr c2nd prop
-      cop elprnql sylan mpan w3a breq1 3ad2ant3 cab df-i1p fveq2i ltnqex gtnqex
-      op1st eqtri abeq2i 1nq ltmnqg mp3an2 ancoms mulidnq breq2d adantr syl5rbb
-      3adant3 syl3an1 syl3an2 3expia pm5.32rd rexbidva syl5rbbr syl5bb genpelvl
-      bitrd df-imp mulclnq mpan2 prnmaxl crq ltrelnq brel simpl simpr mulcomnqg
-      recclnq caovord2d recidnq biimpd mpcom sylan2 syl elab2g mpbird mulassnqg
-      wi caov12d oveq2d 3eqtrrd oveq2 eqeq2d rspcev syl2anc a1i reximia prcdnql
-      ancld ex adantrd rexlimdva impbid 3bitr4d eqrdv ) AUFFZUAAGUGHUHIZAUHIZYH
-      UAJZBJZCJZKHZLZCGUHIZMZBYJMZYKYLNOZYQPZBYJMZYKYIFZYKYJFZYHYQYTBYJYQYMYPFZ
-      YOPZCYPMZYHYLYJFZPZYTYPYPUIYQUUFTYPUJYOCYPYPUKULYTYSYOPZCYPMUUHUUFYSYOCYP
-      UMUUHUUIUUECYPUUHUUDPYOYSUUDUUHUUDYOYSUUDTZUUDUUHYMQFZYOUUJGUFFZUUDUUKUNU
-      ULYPGUOIZUQUFFUUDUUKGUPYMUUMYPURUSUTUUHYLQFZUUKYOUUJYHYJAUOIZUQUFFZUUGUUN
-      AUPZYLUUOYJURUSUUNUUKYOVAYSYNYLNOZUUDYOUUNYSUURTUUKYKYNYLNVBVCUUNUUKUURUU
-      DTYOUUDYMRNOZUUNUUKPZUURUUSCYPYPUUSCVDZRUBJNOUBVDZUQZUHIUVAGUVCUHUBCVEVFU
-      VAUVBCRVGUBRVHVIVJZVKUUTUUSYNYLRKHZNOZUURUUKUUNUUSUVFTZUUKRQFUUNUVGVLYMRY
-      LVMVNVOUUNUVFUURTUUKUUNUVEYLYNNYLVPVQVRWIVSVTWIWAWBWCWDWEWFWGWEYHUULUUBYR
-      TUNDUCUDEUEAGYKBCUGKEUEUDUCDWJUCJUDJWKWHWLYHUUCUUAYHUUCUUAYHUUCPYSBYJMZUU
-      AYHUUPUUCUVHUUQBYKUUOYJWMUSYSYTBYJUUGYSYQYSYQXJUUGYSYKYLWNIZKHZYPFZYKYLUV
-      JKHZLZYQYSUVKUVJRNOZYKQFZUUNPZYSUVNYKYLQQNWOWPZUVPYSUVNUVPYSUVJYLUVIKHZNO
-      ZUVNUVPEUEDYKYLUVINQKEJZQFZUEJZQFZDJZQFVAZUVTUWBNOUWDUVTKHUWDUWBKHNOTUVPU
-      VTUWBUWDVMSUVOUUNWQZUVOUUNWRZUUNUVIQFZUVOYLWTZSZUWAUWCPUVTUWBKHZUWBUVTKHL
-      UVPUVTUWBWSSZXAUUNUVSUVNTUVOUUNUVRRUVJNYLXBZVQSWIXCXDYSUVJQFZUVKUVNTYSUVP
-      UWNUVQUUNUVOUWHUWNUWIYKUVIWKXEXFUUSUVNCUVJYPQYMUVJRNVBUVDXGXFXHYSUVPUVMUV
-      QUVPUVLYKUVRKHZYKRKHZYKUVPEUEDYLYKUVIQKUWGUWFUWJUWLUWEUWKUWDKHUVTUWBUWDKH
-      KHLUVPUVTUWBUWDXISXKUUNUWOUWPLUVOUUNUVRRYKKUWMXLSUVOUWPYKLUUNYKVPVRXMXFYO
-      UVMCUVJYPYMUVJLYNUVLYKYMUVJYLKXNXOXPXQXRYAXSXFYBYHYTUUCBYJUUHYSUUCYQYHUUP
-      UUGYSUUCXJUUQYLYKUUOYJXTUSYCYDYEYFYG $.
+      wb vx vu vv vz cnp cmp c1st wss ssid rexss ax-mp r19.42v 1pr c2nd elprnql
+      cop prop sylan mpan w3a 3ad2ant3 1prl abeq2i ltmnqg mp3an2 ancoms mulidnq
+      breq1 breq2d adantr bitrd syl5rbb 3adant3 syl3an1 syl3an2 3expia pm5.32rd
+      1nq rexbidva syl5rbbr syl5bb df-imp mulclnq genpelvl mpan2 prnmaxl wi crq
+      ltrelnq brel simpl simpr recclnq mulcomnqg caovord2d recidnq biimpd mpcom
+      sylan2 elab2g mpbird mulassnqg caov12d oveq2d 3eqtrrd oveq2 eqeq2d rspcev
+      syl syl2anc a1i ancld reximia ex prcdnql adantrd rexlimdva impbid 3bitr4d
+      eqrdv ) AUEFZUAAGUFHUGIZAUGIZYAUAJZBJZCJZKHZLZCGUGIZMZBYCMZYDYENOZYJPZBYC
+      MZYDYBFZYDYCFZYAYJYMBYCYJYFYIFZYHPZCYIMZYAYEYCFZPZYMYIYIUHYJYSTYIUIYHCYIY
+      IUJUKYMYLYHPZCYIMUUAYSYLYHCYIULUUAUUBYRCYIUUAYQPYHYLYQUUAYQYHYLYQTZYQUUAY
+      FQFZYHUUCGUEFZYQUUDUMUUEYIGUNIZUPUEFYQUUDGUQYFUUFYIUOURUSUUAYEQFZUUDYHUUC
+      YAYCAUNIZUPUEFZYTUUGAUQZYEUUHYCUOURUUGUUDYHUTYLYGYENOZYQYHUUGYLUUKTUUDYDY
+      GYENVHVAUUGUUDUUKYQTYHYQYFRNOZUUGUUDPZUUKUULCYICVBZVCUUMUULYGYERKHZNOZUUK
+      UUDUUGUULUUPTZUUDRQFUUGUUQVRYFRYEVDVEVFUUGUUPUUKTUUDUUGUUOYEYGNYEVGVIVJVK
+      VLVMVKVNVOVPVQVSVTWAVSYAUUEYOYKTUMDUBUCEUDAGYDBCUFKEUDUCUBDWBUBJUCJWCWDWE
+      YAYPYNYAYPYNYAYPPYLBYCMZYNYAUUIYPUURUUJBYDUUHYCWFURYLYMBYCYTYLYJYLYJWGYTY
+      LYDYEWHIZKHZYIFZYDYEUUTKHZLZYJYLUVAUUTRNOZYDQFZUUGPZYLUVDYDYEQQNWIWJZUVFY
+      LUVDUVFYLUUTYEUUSKHZNOZUVDUVFEUDDYDYEUUSNQKEJZQFZUDJZQFZDJZQFUTZUVJUVLNOU
+      VNUVJKHUVNUVLKHNOTUVFUVJUVLUVNVDSUVEUUGWKZUVEUUGWLZUUGUUSQFZUVEYEWMZSZUVK
+      UVMPUVJUVLKHZUVLUVJKHLUVFUVJUVLWNSZWOUUGUVIUVDTUVEUUGUVHRUUTNYEWPZVISVKWQ
+      WRYLUUTQFZUVAUVDTYLUVFUWDUVGUUGUVEUVRUWDUVSYDUUSWCWSXIUULUVDCUUTYIQYFUUTR
+      NVHUUNWTXIXAYLUVFUVCUVGUVFUVBYDUVHKHZYDRKHZYDUVFEUDDYEYDUUSQKUVQUVPUVTUWB
+      UVOUWAUVNKHUVJUVLUVNKHKHLUVFUVJUVLUVNXBSXCUUGUWEUWFLUVEUUGUVHRYDKUWCXDSUV
+      EUWFYDLUUGYDVGVJXEXIYHUVCCUUTYIYFUUTLYGUVBYDYFUUTYEKXFXGXHXJXKXLXMXIXNYAY
+      MYPBYCUUAYLYPYJYAUUIYTYLYPWGUUJYEYDUUHYCXOURXPXQXRXSXT $.
 
     $( Lemma for ~ 1idpr .  (Contributed by Jim Kingdon, 13-Dec-2019.) $)
     1idpru $p |- ( A e. P. -> ( 2nd ` ( A .P. 1P ) ) = ( 2nd ` A ) ) $=
       ( vf vh vw vy wcel c1p co cfv cv cmq wceq wrex cltq wbr wa cnq c1q adantl
-      wb vx vg vu vv vz cnp cmp c2nd wss ssid rexss ax-mp r19.42v 1pr c1st prop
-      cop elprnqu sylan mpan w3a breq2 3ad2ant3 cab df-i1p fveq2i ltnqex gtnqex
-      op2nd eqtri abeq2i 1nq ltmnqg mp3an1 ancoms mulidnq breq1d adantr syl5rbb
-      3adant3 syl3an1 syl3an2 3expia pm5.32rd rexbidva syl5rbbr syl5bb genpelvu
-      bitrd df-imp mulclnq mpan2 prnminu wi crq ltrelnq brel ancomd simpr simpl
-      recclnq mulcomnqg caovord2d recidnq biimpd mpcom sylan2 syl elab2g mpbird
-      mulassnqg caov12d oveq2d 3eqtrrd oveq2 eqeq2d rspcev syl2anc a1i ancld ex
-      reximia prcunqu adantrd rexlimdva impbid 3bitr4d eqrdv ) AUFFZUAAGUGHUHIZ
-      AUHIZYIUAJZBJZCJZKHZLZCGUHIZMZBYKMZYMYLNOZYRPZBYKMZYLYJFZYLYKFZYIYRUUABYK
-      YRYNYQFZYPPZCYQMZYIYMYKFZPZUUAYQYQUIYRUUGTYQUJYPCYQYQUKULUUAYTYPPZCYQMUUI
-      UUGYTYPCYQUMUUIUUJUUFCYQUUIUUEPYPYTUUEUUIUUEYPYTUUETZUUEUUIYNQFZYPUUKGUFF
-      ZUUEUULUNUUMGUOIZYQUQUFFUUEUULGUPYNYQUUNURUSUTUUIYMQFZUULYPUUKYIAUOIZYKUQ
-      UFFZUUHUUOAUPZYMYKUUPURUSUUOUULYPVAYTYMYONOZUUEYPUUOYTUUSTUULYLYOYMNVBVCU
-      UOUULUUSUUETYPUUERYNNOZUUOUULPZUUSUUTCYQYQUBJRNOUBVDZUUTCVDZUQZUHIUVCGUVD
-      UHCUBVEVFUVBUVCUBRVGCRVHVIVJZVKUVAUUTYMRKHZYONOZUUSUULUUOUUTUVGTZRQFUULUU
-      OUVHVLRYNYMVMVNVOUUOUVGUUSTUULUUOUVFYMYONYMVPVQVRWIVSVTWIWAWBWCWDWEWFWGWE
-      YIUUMUUCYSTUNDUCUDEUEAGYLBCUGKEUEUDUCDWJUCJUDJWKWHWLYIUUDUUBYIUUDUUBYIUUD
-      PYTBYKMZUUBYIUUQUUDUVIUURBYLYKUUPWMUSYTUUABYKUUHYTYRYTYRWNUUHYTYLYMWOIZKH
-      ZYQFZYLYMUVKKHZLZYRYTUVLRUVKNOZYLQFZUUOPZYTUVOYTUUOUVPYMYLQQNWPWQWRZUVQYT
-      UVOUVQYTYMUVJKHZUVKNOZUVOUVQEUEDYMYLUVJNQKEJZQFZUEJZQFZDJZQFVAZUWAUWCNOUW
-      EUWAKHUWEUWCKHNOTUVQUWAUWCUWEVMSUVPUUOWSZUVPUUOWTZUUOUVJQFZUVPYMXAZSZUWBU
-      WDPUWAUWCKHZUWCUWAKHLUVQUWAUWCXBSZXCUUOUVTUVOTUVPUUOUVSRUVKNYMXDZVQSWIXEX
-      FYTUVKQFZUVLUVOTYTUVQUWOUVRUUOUVPUWIUWOUWJYLUVJWKXGXHUUTUVOCUVKYQQYNUVKRN
-      VBUVEXIXHXJYTUVQUVNUVRUVQUVMYLUVSKHZYLRKHZYLUVQEUEDYMYLUVJQKUWGUWHUWKUWMU
-      WFUWLUWEKHUWAUWCUWEKHKHLUVQUWAUWCUWEXKSXLUUOUWPUWQLUVPUUOUVSRYLKUWNXMSUVP
-      UWQYLLUUOYLVPVRXNXHYPUVNCUVKYQYNUVKLYOUVMYLYNUVKYMKXOXPXQXRXSXTYBXHYAYIUU
-      AUUDBYKUUIYTUUDYRYIUUQUUHYTUUDWNUURYLYMYKUUPYCUSYDYEYFYGYH $.
+      wb vx vu vv vz cnp cmp c2nd wss ssid rexss ax-mp r19.42v 1pr c1st elprnqu
+      cop prop sylan mpan w3a 3ad2ant3 1pru abeq2i ltmnqg mp3an1 ancoms mulidnq
+      breq2 breq1d adantr bitrd syl5rbb 3adant3 syl3an1 syl3an2 3expia pm5.32rd
+      1nq rexbidva syl5rbbr syl5bb df-imp mulclnq genpelvu mpan2 prnminu wi crq
+      ltrelnq brel ancomd simpr simpl recclnq mulcomnqg caovord2d recidnq mpcom
+      biimpd sylan2 elab2g mpbird mulassnqg caov12d oveq2d 3eqtrrd oveq2 eqeq2d
+      3syl syl rspcev syl2anc ancld reximia ex prcunqu adantrd rexlimdva impbid
+      a1i 3bitr4d eqrdv ) AUEFZUAAGUFHUGIZAUGIZYCUAJZBJZCJZKHZLZCGUGIZMZBYEMZYG
+      YFNOZYLPZBYEMZYFYDFZYFYEFZYCYLYOBYEYLYHYKFZYJPZCYKMZYCYGYEFZPZYOYKYKUHYLU
+      UATYKUIYJCYKYKUJUKYOYNYJPZCYKMUUCUUAYNYJCYKULUUCUUDYTCYKUUCYSPYJYNYSUUCYS
+      YJYNYSTZYSUUCYHQFZYJUUEGUEFZYSUUFUMUUGGUNIZYKUPUEFYSUUFGUQYHYKUUHUOURUSUU
+      CYGQFZUUFYJUUEYCAUNIZYEUPUEFZUUBUUIAUQZYGYEUUJUOURUUIUUFYJUTYNYGYINOZYSYJ
+      UUIYNUUMTUUFYFYIYGNVHVAUUIUUFUUMYSTYJYSRYHNOZUUIUUFPZUUMUUNCYKCVBZVCUUOUU
+      NYGRKHZYINOZUUMUUFUUIUUNUURTZRQFUUFUUIUUSVRRYHYGVDVEVFUUIUURUUMTUUFUUIUUQ
+      YGYINYGVGVIVJVKVLVMVKVNVOVPVQVSVTWAVSYCUUGYQYMTUMDUBUCEUDAGYFBCUFKEUDUCUB
+      DWBUBJUCJWCWDWEYCYRYPYCYRYPYCYRPYNBYEMZYPYCUUKYRUUTUULBYFYEUUJWFURYNYOBYE
+      UUBYNYLYNYLWGUUBYNYFYGWHIZKHZYKFZYFYGUVBKHZLZYLYNUVCRUVBNOZYFQFZUUIPZYNUV
+      FYNUUIUVGYGYFQQNWIWJWKZUVHYNUVFUVHYNYGUVAKHZUVBNOZUVFUVHEUDDYGYFUVANQKEJZ
+      QFZUDJZQFZDJZQFUTZUVLUVNNOUVPUVLKHUVPUVNKHNOTUVHUVLUVNUVPVDSUVGUUIWLZUVGU
+      UIWMZUUIUVAQFZUVGYGWNZSZUVMUVOPUVLUVNKHZUVNUVLKHLUVHUVLUVNWOSZWPUUIUVKUVF
+      TUVGUUIUVJRUVBNYGWQZVISVKWSWRYNUVHUVBQFZUVCUVFTUVIUUIUVGUVTUWFUWAYFUVAWCW
+      TUUNUVFCUVBYKQYHUVBRNVHUUPXAXIXBYNUVHUVEUVIUVHUVDYFUVJKHZYFRKHZYFUVHEUDDY
+      GYFUVAQKUVRUVSUWBUWDUVQUWCUVPKHUVLUVNUVPKHKHLUVHUVLUVNUVPXCSXDUUIUWGUWHLU
+      VGUUIUVJRYFKUWEXESUVGUWHYFLUUIYFVGVJXFXJYJUVECUVBYKYHUVBLYIUVDYFYHUVBYGKX
+      GXHXKXLXTXMXNXJXOYCYOYRBYEUUCYNYRYLYCUUKUUBYNYRWGUULYFYGYEUUJXPURXQXRXSYA
+      YB $.
 
     $( 1 is an identity element for positive real multiplication.  Theorem
        9-3.7(iv) of [Gleason] p. 124.  (Contributed by NM, 2-Apr-1996.) $)
@@ -62671,8 +62704,8 @@ $)
       FXGDUMWDWLXHWEVARUOVBVCVGWQVMWIBPZMWKVRXIVMVRVOWHBPZMXIVQXJVOVQVTWGBPMXJA
       BCDEFHVDVTWGBSTVEVOWHBSTVEVMWIBSTVSVLWNBPMWPABCDEGHVDVLWNBSTVFVHVI $.
 
-    $( The upper cut of our constructed difference is open.  (Contributed by
-       Jim Kingdon, 21-Dec-2019.) $)
+    $( The upper cut of our constructed difference is open.  Lemma for
+       ~ ltexpri .  (Contributed by Jim Kingdon, 21-Dec-2019.) $)
     ltexprlemopu $p |- ( ( A <P B /\ r e. Q. /\ r e. ( 2nd ` C ) )
         -> E. q e. Q. ( q <Q r /\ q e. ( 2nd ` C ) ) ) $=
       ( vs wbr cv cnq wcel cfv cltq wa wrex wex cnp adantr vt cltp c2nd c1st co
@@ -63040,6 +63073,305 @@ $)
       KJKZBHVPVCVNAVQHIVCVDVEVOUBZVFVNVMUCZAVKUDTVPCVQJKZVIQZVQBQZVCVEVOWAVDVCV
       EOZVOOVLVTVIWCVNVLVTQZVMVCVEVNWDVEVCVNWDCAVKUEUFUIUGWCVNVMUHUJUKVPVEVQEFZ
       VDWAWBLVCVDVEVOULVPVCVNWEVRVSAVKUMTVCVDVEVOUNCVQBUOUPUQURUSUTVAVB $.
+  $}
+
+  ${
+    $d q r x y z w v u f g h A $.  $d q r x y z w v u f g B $.  $d x y C $.
+    recexpr.1 $e |- B = <.
+      { x | E. y ( x <Q y /\ ( *Q ` y ) e. ( 2nd ` A ) ) } ,
+      { x | E. y ( y <Q x /\ ( *Q ` y ) e. ( 1st ` A ) ) } >. $.
+    $( Membership in the lower cut of ` B ` .  Lemma for ~ recexpr .
+       (Contributed by Jim Kingdon, 27-Dec-2019.) $)
+    recexprlemell $p |- ( C e. ( 1st ` B ) <-> 
+        E. y ( C <Q y /\ ( *Q ` y ) e. ( 2nd ` A ) ) ) $=
+      ( c1st cfv wcel cvv cv cltq wbr wa wex cnq ltrelnq brel adantr exlimiv
+      crq c2nd elex simpld syl wceq breq1 anbi1d exbidv fveq2i nqex abssi ssexi
+      cab cop simprd op1st eqtri elab2g pm5.21nii ) EDGHZIEJIZEBKZLMZVCUAHZCUBH
+      IZNZBOZEVAUCVGVBBVDVBVFVDEPIZVBVDVIVCPIZEVCPPLQRUDEPUCUESTAKZVCLMZVFNZBOZ
+      VHAEVAJVKEUFZVMVGBVOVLVDVFVKEVCLUGUHUIVAVNAUNZVCVKLMZVECGHIZNZBOZAUNZUOZG
+      HVPDWBGFUJVPWAVPPUKVNAPVMVKPIZBVLWCVFVLWCVJVKVCPPLQRUDSTULUMWAPUKVTAPVSWC
+      BVQWCVRVQVJWCVCVKPPLQRUPSTULUMUQURUSUT $.
+
+    $( Membership in the upper cut of ` B ` .  Lemma for ~ recexpr .
+       (Contributed by Jim Kingdon, 27-Dec-2019.) $)
+    recexprlemelu $p |- ( C e. ( 2nd ` B ) <->
+        E. y ( y <Q C /\ ( *Q ` y ) e. ( 1st ` A ) ) ) $=
+      ( c2nd cfv wcel cvv cv cltq wbr wa wex cnq ltrelnq brel adantr exlimiv
+      crq c1st elex simprd syl wceq breq2 anbi1d exbidv cab fveq2i simpld abssi
+      cop nqex ssexi op2nd eqtri elab2g pm5.21nii ) EDGHZIEJIZBKZELMZVCUAHZCUBH
+      IZNZBOZEVAUCVGVBBVDVBVFVDEPIZVBVDVCPIZVIVCEPPLQRUDEPUCUESTVCAKZLMZVFNZBOZ
+      VHAEVAJVKEUFZVMVGBVOVLVDVFVKEVCLUGUHUIVAVKVCLMZVECGHIZNZBOZAUJZVNAUJZUNZG
+      HWADWBGFUKVTWAVTPUOVSAPVRVKPIZBVPWCVQVPWCVJVKVCPPLQRULSTUMUPWAPUOVNAPVMWC
+      BVLWCVFVLVJWCVCVKPPLQRUDSTUMUPUQURUSUT $.
+
+    $( ` B ` is inhabited.  Lemma for ~ recexpr .  (Contributed by Jim Kingdon,
+       27-Dec-2019.) $)
+    recexprlemm $p |- ( A e. P. -> ( E. q e. Q. q e. ( 1st ` B ) /\
+        E. r e. Q. r e. ( 2nd ` B ) ) ) $=
+      ( wcel cv cfv cnq wrex wa crq cltq wbr syl wi eleq1d c1q cnp c1st recclnq
+      c2nd cop prop prmu nsmallnqq adantr wex recrecnq wceq breq2 fveq2 anbi12d
+      anbi2d spcegv sylbird recexprlemell syl6ibr expcomd imp reximdv rexlimiva
+      mpd 3syl prml co 1nq addclnq sylancl ltaddnq rspcev syl2anc recexprlemelu
+      cplq breq1 jca ) CUAHZFIZDUBJHZFKLZEIZDUDJHZEKLZVSCUBJZCUDJZUEUAHZAIZWGHZ
+      AKLWBCUFZAWGWFUGWJWBAKWIKHZWJMZVTWINJZOPZFKLZWBWLWPWJWLWNKHZWPWIUCZFWNUHQ
+      UIWMWOWAFKWLWJWOWARWLWOWJWAWLWOWJMZVTBIZOPZWTNJZWGHZMZBUJZWAWLWSWOWNNJZWG
+      HZMZXEWLXGWJWOWLXFWIWGWIUKZSUPWLWQXHXERWRXDXHBWNKWTWNULZXAWOXCXGWTWNVTOUM
+      XJXBXFWGWTWNNUNZSUOUQQURABCDVTGUSUTVAVBVCVEVDVFVSWHWIWFHZAKLWEWKAWGWFVGXL
+      WEAKWLXLMZWNWCOPZEKLZWEWLXOXLWLWNTVPVHZKHZWNXPOPZXOWLWQTKHZXQWRVIWNTVJVKW
+      LWQXSXRWRVIWNTVLVKXNXREXPKWCXPWNOUMVMVNUIXMXNWDEKWLXLXNWDRWLXNXLWDWLXNXLM
+      ZWTWCOPZXBWFHZMZBUJZWDWLXTXNXFWFHZMZYDWLYEXLXNWLXFWIWFXISUPWLWQYFYDRWRYCY
+      FBWNKXJYAXNYBYEWTWNWCOVQXJXBXFWFXKSUOUQQURABCDWCGVOUTVAVBVCVEVDVFVR $.
+
+    $( The lower cut of ` B ` is open.  Lemma for ~ recexpr .  (Contributed by
+       Jim Kingdon, 28-Dec-2019.) $)
+    recexprlemopl $p |- ( ( A e. P. /\ q e. Q. /\ q e. ( 1st ` B ) )
+        -> E. r e. Q. ( q <Q r /\ r e. ( 1st ` B ) ) ) $=
+      ( cv c1st cfv wcel cnp cltq wbr wa cnq wrex crq wex recexprlemell adantll
+      c2nd ltbtwnnqq biimpi simpll 19.8a sylibr jca reximdv mpan9 exlimiv sylbi
+      expcom 3ad2ant3 ) FHZDIJZKZCLKUOEHZMNZURUPKZOZEPQZUOPKUQUOBHZMNZVCRJCUBJK
+      ZOZBSVBABCDUOGTVFVBBVDUSURVCMNZOZEPQZVEVBVDVIEUOVCUCUDVEVHVAEPVHVEVAVHVEO
+      USUTUSVGVEUEVGVEUTUSVGVEOZVJBSUTVJBUFABCDURGTUGUAUHUMUIUJUKULUN $.
+
+    $( The lower cut of ` B ` is lower.  Lemma for ~ recexpr .  (Contributed by
+       Jim Kingdon, 28-Dec-2019.) $)
+    recexprlemlol $p |- ( ( A e. P. /\ q e. Q. ) ->
+        ( E. r e. Q. ( q <Q r /\ r e. ( 1st ` B ) ) -> q e. ( 1st ` B ) ) ) $=
+      ( cv cltq wbr c1st cfv wcel wa cnq wrex wi cnp wex recexprlemell crq c2nd
+      ltsonq ltrelnq sotri ex anim1d eximdv 3imtr4g imp rexlimivw a1i ) FHZEHZI
+      JZUNDKLZMZNZEOPUMUPMZQCRMUMOMNURUSEOUOUQUSUOUNBHZIJZUTUALCUBLMZNZBSUMUTIJ
+      ZVBNZBSUQUSUOVCVEBUOVAVDVBUOVAVDUMUNUTIOUCUDUEUFUGUHABCDUNGTABCDUMGTUIUJU
+      KUL $.
+
+    $( The upper cut of ` B ` is open.  Lemma for ~ recexpr .  (Contributed by
+       Jim Kingdon, 28-Dec-2019.) $)
+    recexprlemopu $p |- ( ( A e. P. /\ r e. Q. /\ r e. ( 2nd ` B ) )
+        -> E. q e. Q. ( q <Q r /\ q e. ( 2nd ` B ) ) ) $=
+      ( cv c2nd cfv wcel cnp cltq wbr wa cnq wrex crq wex recexprlemelu adantlr
+      c1st ltbtwnnqq biimpi simplr 19.8a sylibr jca reximdv mpan9 exlimiv sylbi
+      expcom 3ad2ant3 ) EHZDIJZKZCLKFHZUOMNZURUPKZOZFPQZUOPKUQBHZUOMNZVCRJCUBJK
+      ZOZBSVBABCDUOGTVFVBBVDVCURMNZUSOZFPQZVEVBVDVIFVCUOUCUDVEVHVAFPVHVEVAVHVEO
+      USUTVGUSVEUEVGVEUTUSVGVEOZVJBSUTVJBUFABCDURGTUGUAUHUMUIUJUKULUN $.
+
+    $( The upper cut of ` B ` is upper.  Lemma for ~ recexpr .  (Contributed by
+       Jim Kingdon, 28-Dec-2019.) $)
+    recexprlemupu $p |- ( ( A e. P. /\ r e. Q. ) -> (
+        E. q e. Q. ( q <Q r /\ q e. ( 2nd ` B ) ) -> r e. ( 2nd ` B ) ) ) $=
+      ( cv cltq wbr c2nd cfv wcel wa cnq wrex wi cnp wex recexprlemelu crq c1st
+      ltsonq ltrelnq sotri expcom anim1d eximdv 3imtr4g imp rexlimivw a1i ) FHZ
+      EHZIJZUMDKLZMZNZFOPUNUPMZQCRMUNOMNURUSFOUOUQUSUOBHZUMIJZUTUALCUBLMZNZBSUT
+      UNIJZVBNZBSUQUSUOVCVEBUOVAVDVBVAUOVDUTUMUNIOUCUDUEUFUGUHABCDUMGTABCDUNGTU
+      IUJUKUL $.
+
+    $( ` B ` is rounded.  Lemma for ~ recexpr .  (Contributed by Jim Kingdon,
+       27-Dec-2019.) $)
+    recexprlemrnd $p |- ( A e. P. -> ( A. q e. Q. ( q e. ( 1st ` B )
+        <-> E. r e. Q. ( q <Q r /\ r e. ( 1st ` B ) ) )
+        /\ A. r e. Q. ( r e. ( 2nd ` B )
+        <-> E. q e. Q. ( q <Q r /\ q e. ( 2nd ` B ) ) ) ) ) $=
+      ( cnp wcel cv c1st cfv wa cnq wrex wb wral 3expia impbid ralrimiva cltq
+      wbr c2nd recexprlemopl recexprlemlol recexprlemopu recexprlemupu jca ) CH
+      IZFJZDKLZIZUJEJZUAUBZUMUKIMENOZPZFNQUMDUCLZIZUNUJUQIMFNOZPZENQUIUPFNUIUJN
+      IZMULUOUIVAULUOABCDEFGUDRABCDEFGUESTUIUTENUIUMNIZMURUSUIVBURUSABCDEFGUFRA
+      BCDEFGUGSTUH $.
+
+    $( ` B ` is disjoint.  Lemma for ~ recexpr .  (Contributed by Jim Kingdon,
+       27-Dec-2019.) $)
+    recexprlemdisj $p |- ( A e. P. -> A. q e. Q.
+        -. ( q e. ( 1st ` B ) /\ q e. ( 2nd ` B ) ) ) $=
+      ( vz cnp wcel cv c1st cfv wa wn cnq cltq wbr crq wal wex ltsonq wi simprr
+      c2nd ltrelnq son2lpi simplr jca prltlu syl3an1 3expb sylan2 simprl simpll
+      cop prop sotri syl2anc ltrnqi syl adantl ex adantr alrimivv recexprlemell
+      mtoi recexprlemelu anbi12i breq1 fveq2 eleq1d anbi12d cbvexv anbi2i bitri
+      wceq eeanv bitr4i notbii alnex albii sylibr ralrimiva ) CHIZEJZDKLIZWEDUD
+      LIZMZNZEOWDWEOIZMZWEBJZPQZWLRLZCUDLZIZMZGJZWEPQZWRRLZCKLZIZMZMZNZGSZBSZWI
+      WKXEBGWKXDWTWNPQZWNWTPQZMZWTWNPOUAUEUFWDXDXJUBWJWDXDXJWDXDMXHXIXDWDXBWPMX
+      HXDXBWPWQWSXBUCWMWPXCUGUHWDXBWPXHWDXAWOUOHIXBWPXHCUPWTWNWOXAUIUJUKULXDXIW
+      DXDWRWLPQZXIXDWSWMXKWQWSXBUMWMWPXCUNWRWEWLPOUAUEUQURWRWLUSUTVAUHVBVCVFVDW
+      IXDGTZBTZNZXGWHXMWHWQBTZXCGTZMZXMWHXOWLWEPQZWNXAIZMZBTZMXQWFXOWGYAABCDWEF
+      VEABCDWEFVGVHYAXPXOXTXCBGWLWRVPZXRWSXSXBWLWRWEPVIYBWNWTXAWLWRRVJVKVLVMVNV
+      OWQXCBGVQVRVSXGXLNZBSXNXFYCBXDGVTWAXLBVTVOVRWBWC $.
+
+    $( ` B ` is located.  Lemma for ~ recexpr .  (Contributed by Jim Kingdon,
+       27-Dec-2019.) $)
+    recexprlemloc $p |- ( A e. P. -> A. q e. Q. A. r e. Q. ( q <Q r
+        -> ( q e. ( 1st ` B ) \/ r e. ( 2nd ` B ) ) ) ) $=
+      ( vu vv wcel cv cltq wbr cfv cnq wa crq sylan adantlr syl c1st c2nd wo wi
+      cnp wral wrex prop prnmaxl simprr wceq elprnql ad2ant2r recrecnq breqtrrd
+      cop wb recclnq ltrelnq brel adantl ad2antrr simprd ltrnqg syl2anc eqeltrd
+      mpbird simprl wex breq1 fveq2 eleq1d anbi12d spcegv recexprlemelu syl6ibr
+      mp2and rexlimddv olcd prnminu elprnqu eqbrtrd simpld recexprlemell ltrnqi
+      breq2 orcd prloc syl2an mpjaodan ex ralrimivw ) CUEJZFKZEKZLMZWNDUANJZWOD
+      UBNJZUCZUDZEOUFFOWMWTEOWMWPWSWMWPPZWOQNZCUANZJZWSWNQNZCUBNZJZXAXDPZWRWQXH
+      XBHKZLMZWRHXCWMXDXJHXCUGZWPWMXCXFUPUEJZXDXKCUHZHXBXFXCUIRSXHXIXCJZXJPZPZX
+      IQNZWOLMZXQQNZXCJZWRXPXRXBXSLMZXPXBXIXSLXHXNXJUJXPXIOJZXSXIUKXAXOYBXDWMXN
+      YBWPXJWMXLXNYBXMXIXFXCULRUMSZXIUNTZUOXPXQOJZWOOJZXRYAUQXPYBYEYCXIURTZXPWN
+      OJZYFXAYHYFPZXDXOWPYIWMWNWOOOLUSUTVAZVBVCXQWOVDVEVGXPXSXIXCYDXHXNXJVHVFXP
+      YEXRXTPZWRUDYGYEYKBKZWOLMZYLQNZXCJZPZBVIWRYPYKBXQOYLXQUKZYMXRYOXTYLXQWOLV
+      JYQYNXSXCYLXQQVKVLVMVNABCDWOGVOVPTVQVRVSXAXGPZWQWRYRIKZXELMZWQIXFWMXGYTIX
+      FUGZWPWMXLXGUUAXMIXEXFXCVTRSYRYSXFJZYTPZPZWNYSQNZLMZUUEQNZXFJZWQUUDUUFUUG
+      XELMZUUDUUGYSXELUUDYSOJZUUGYSUKXAUUBUUJXGYTWMUUBUUJWPWMXLUUBUUJXMYSXFXCWA
+      RSUMZYSUNTZYRUUBYTUJWBUUDYHUUEOJZUUFUUIUQUUDYHYFXAYIXGUUCYJVBWCUUDUUJUUMU
+      UKYSURTZWNUUEVDVEVGUUDUUGYSXFUULYRUUBYTVHVFUUDUUMUUFUUHPZWQUDUUNUUMUUOWNY
+      LLMZYNXFJZPZBVIWQUURUUOBUUEOYLUUEUKZUUPUUFUUQUUHYLUUEWNLWFUUSYNUUGXFYLUUE
+      QVKVLVMVNABCDWNGWDVPTVQVRWGWMXLXBXELMXDXGUCWPXMWNWOWEXBXEXFXCWHWIWJWKWLWL
+      $.
+
+    $( ` B ` is a positive real.  Lemma for ~ recexpr .  (Contributed by Jim
+       Kingdon, 27-Dec-2019.) $)
+    recexprlempr $p |- ( A e. P. -> B e. P. ) $=
+      ( vq vr cnp wcel cnq cv c1st cfv wrex c2nd wa cltq wbr wb wral cpw cxp wn
+      wo w3a recexprlemm crq wex cab cop wss ltrelnq brel simpld adantr exlimiv
+      abssi nqex elpw2 mpbir opelxpi mp2an eqeltri recexprlemrnd recexprlemdisj
+      wi simprd jctil recexprlemloc 3jca elnp1st2nd sylanbrc ) CHIZDJUAZVNUBZIZ
+      FKZDLMZIZFJNGKZDOMZIZGJNPZPVSVQVTQRZVTVRIPGJNSFJTWBWDVQWAIZPFJNSGJTPZVSWE
+      PUCFJTZWDVSWBUDVFGJTFJTZUEDHIVMWCVPABCDGFEUFDAKZBKZQRZWJUGMZCOMIZPZBUHZAU
+      IZWJWIQRZWLCLMIZPZBUHZAUIZUJZVOEWPVNIZXAVNIZXBVOIXCWPJUKWOAJWNWIJIZBWKXEW
+      MWKXEWJJIZWIWJJJQULUMUNUOUPUQWPJURUSUTXDXAJUKWTAJWSXEBWQXEWRWQXFXEWJWIJJQ
+      ULUMVGUOUPUQXAJURUSUTWPXAVNVNVAVBVCVHVMWFWGWHABCDGFEVDABCDFEVEABCDGFEVIVJ
+      DGFVKVL $.
+
+    $( The lower cut of one is a subset of the lower cut of ` A .P. B ` .
+       Lemma for ~ recexpr .  (Contributed by Jim Kingdon, 27-Dec-2019.) $)
+    recexprlem1ssl $p |- ( A e. P. ->
+        ( 1st ` 1P ) C_ ( 1st ` ( A .P. B ) ) ) $=
+      ( vw vz vf wcel cfv co cv c1q cltq wbr wa crq cmq wceq cnq vv vg cnp c1st
+      vh vu c1p cmp 1prl abeq2i c2nd wrex rec1nq ltrnqi syl5eqbrr prop prmuloc2
+      cop sylan sylan2 prnmaxl ad2ant2r w3a elprnql 3adant3 simp1r ltrelnq brel
+      simpld syl simp3 simp2r simpr wb ltmnqg adantl simprl simprd recclnq 3syl
+      ad2antrr simplr mulcomnqg caovord2d syl5ib 1nq mulidnq ax-mp mpdan eqtr3d
+      recidnq oveqan12d adantr simpll mulassnqg mulclnq caov4d syl5reqr syl2anc
+      recmulnqg mpbird eleq1d biimprd wi wex breq2 anbi12d spcegv recexprlemell
+      fveq2 syl6ibr syl2and mpd syl22anc 3ad2ant3 mpan2 oveq1d syl3an2 3anidm12
+      3eqtr2d eqeq2d rspcev 3expia reximdv recexprlempr df-imp genpelvl sylibrd
+      oveq2 rexlimddv ex syl5bi ssrdv ) CUCIZFUGUDJZCDUHKUDJZFLZYOIYQMNOZYNYQYP
+      IZYRFYOFUIUJYNYRYSYNYRPZUALZYQQJZRKZCUKJZIZYSUACUDJZYRYNMUUBNOZUUEUAUUFUL
+      ZYRMMQJUUBNUMYQMUNUOYNUUFUUDURUCIZUUGUUHCUPZUAUUBUUDUUFUQUSUTYTUUAUUFIZUU
+      EPZPZUUAGLZNOZGUUFULZYSYNUUKUUPYRUUEYNUUIUUKUUPUUJGUUAUUDUUFVAUSVBUUMUUPY
+      QUUNALZRKZSZADUDJZULZGUUFULZYSUUMUUOUVAGUUFYTUULUUOUVAYTUULUUOVCZUUNQJZYQ
+      RKZUUTIZYQUUNUVERKZSZUVAUVCUUATIZYQTIZUUOUUEUVFYTUULUVIUUOYNUUKUVIYRUUEYN
+      UUIUUKUVIUUJUUAUUDUUFVDUSVBVEUVCYRUVJYNYRUULUUOVFYRUVJMTIZYQMTTNVGVHVIVJZ
+      YTUULUUOVKYTUUKUUEUUOVLUVIUVJPZUUOUUEPZPZUVNUVFUVMUVNVMUVOUUOUVEUUAQJZYQR
+      KZNOZUUEUVQQJZUUDIZUVFUUOUVDUVPNOUVOUVRUUAUUNUNUVOHUBUEUVDUVPYQNTRHLZTIZU
+      BLZTIZUELZTIVCZUWAUWCNOUWEUWARKUWEUWCRKNOVNUVOUWAUWCUWEVOVPUVOUUOUUNTIZUV
+      DTIZUVMUUOUUEVQUUOUVIUWGUUAUUNTTNVGVHVRZUUNVSZVTUVIUVPTIZUVJUVNUUAVSZWAZU
+      VIUVJUVNWBZUWBUWDPZUWAUWCRKZUWCUWARKSUVOUWAUWCWCVPZWDWEUVOUVTUUEUVOUVSUUC
+      UUDUVOUVSUUCSZUVQUUCRKZMSZUVOMMMRKZUWSUVKUXAMSWFMWGWHUVOUVPUUARKZYQUUBRKZ
+      RKZUXAUWSUVMUXDUXASUVNUVIUVJUXBMUXCMRUVIUUAUVPRKZUXBMUVIUWKUXEUXBSUWLUUAU
+      VPWCWIUUAWKWJYQWKWLWMUVOHUBUEUVPUUAYQUUBTRUWMUVIUVJUVNWNUWNUWQUWFUWPUWERK
+      UWAUWCUWERKRKSUVOUWAUWCUWEWOVPUVOUVJUUBTIZUWNYQVSZVJUWOUWPTIUVOUWAUWCWPZV
+      PWQWJWRUVMUWRUWTVNZUVNUVMUVQTIZUUCTIZUXIUVIUWKUVJUXJUWLUVPYQWPUSZUVJUVIUX
+      FUXKUXGUUAUUBWPUTUVQUUCWTWSWMXAXBXCUVMUVRUVTPZUVFXDUVNUVMUXMUVEBLZNOZUXNQ
+      JZUUDIZPZBXEZUVFUVMUXJUXMUXSXDUXLUXRUXMBUVQTUXNUVQSZUXOUVRUXQUVTUXNUVQUVE
+      NXFUXTUXPUVSUUDUXNUVQQXJXBXGXHVJABCDUVEEXIXKWMXLXMXNUVCUWGUVJUVHUUOYTUWGU
+      ULUWIXOUVLUWGUVJPYQMYQRKZUUNUVDRKZYQRKZUVGUVJYQUYASUWGUVJYQMRKZYQUYAYQWGU
+      VJUVKUYDUYASWFYQMWCXPWJVPUWGUYCUYASUVJUWGUYBMYQRUUNWKXQWMUWGUVJUYCUVGSZUW
+      GUWGUWHUVJUYEUWJUUNUVDYQWOXRXSXTWSUUSUVHAUVEUUTUUQUVESUURUVGYQUUQUVEUUNRY
+      IYAYBWSYCYDYNYSUVBVNZYRUULYNDUCIUYFABCDEYEUFHUBBFCDYQGAUHRBFUBHUFYFUXHYGW
+      IWAYHXMYJYKYLYM $.
+
+    $( The upper cut of one is a subset of the upper cut of ` A .P. B ` .
+       Lemma for ~ recexpr .  (Contributed by Jim Kingdon, 27-Dec-2019.) $)
+    recexprlem1ssu $p |- ( A e. P. ->
+        ( 2nd ` 1P ) C_ ( 2nd ` ( A .P. B ) ) ) $=
+      ( vw vf vg wcel cfv co cv c1q cltq wbr wa cmq wceq cnq syl vv vz cnp c2nd
+      vh vu c1p cmp 1pru abeq2i c1st wrex prop prmuloc2 sylan prnminu ad2ant2rl
+      cop w3a simp3 simp2l elprnql ad2ant2r 3adant3 simp1r ltrelnq brel recclnq
+      crq simprd mulassnqg syl3anc oveq2d 3eqtrd eleq1d mpbird ltrnqi wb ltmnqg
+      recidnq mulidnq adantl mulclnq simpld mulcomnqg caovord2d 1nq ax-mp mpdan
+      syl2anc syl5ib eqtr3d oveqan12d caov4d syl5reqr caovcld recmulnqg biimprd
+      wex breq1 fveq2 anbi12d spcegv recexprlemelu syl6ibr syl2and mp2and mpan2
+      oveq1d adantr syl3an2 3anidm12 3eqtr2d oveq2 eqeq2d rspcev 3expia reximdv
+      wi recexprlempr df-imp genpelvu ad2antrr sylibrd mpd rexlimddv ex syl5bi
+      ssrdv ) CUCIZFUGUDJZCDUHKUDJZFLZYKIMYMNOZYJYMYLIZYNFYKFUIUJYJYNYOYJYNPZUA
+      LZYMQKZCUDJZIZYOUACUKJZYJUUAYSURUCIZYNYTUAUUAULCUMZUAYMYSUUAUNUOYPYQUUAIZ
+      YTPZPZUBLZYRNOZUBYSULZYOYJYTUUIYNUUDYJUUBYTUUIUUCUBYRYSUUAUPUOUQUUFUUIYMU
+      UGALZQKZRZADUDJZULZUBYSULZYOUUFUUHUUNUBYSYPUUEUUHUUNYPUUEUUHUSZUUGVIJZYMQ
+      KZUUMIZYMUUGUURQKZRZUUNUUPUUHYRYMVIJZQKZUUAIZUUSYPUUEUUHUTZUUPUVDUUDYPUUD
+      YTUUHVAUUPUVCYQUUAUUPUVCYQYMUVBQKZQKZYQMQKZYQUUPYQSIZYMSIZUVBSIZUVCUVGRYP
+      UUEUVIUUHYJUUDUVIYNYTYJUUBUUDUVIUUCYQYSUUAVBUOVCVDZUUPYNUVJYJYNUUEUUHVEYN
+      MSIZUVJMYMSSNVFVGVJTZUUPUVJUVKUVNYMVHTZYQYMUVBVKVLUUPUVFMYQQUUPUVJUVFMRUV
+      NYMVTZTVMUUPUVIUVHYQRUVLYQWATVNVOVPUUPUUHYRVIJZYMQKZUURNOZUVDUVRVIJZUUAIZ
+      UUSUUHUVQUUQNOUUPUVSUUGYRVQUUPGHUEUVQUUQYMNSQGLZSIZHLZSIZUELZSIUSZUWBUWDN
+      OUWFUWBQKUWFUWDQKNOVRUUPUWBUWDUWFVSWBUUPYRSIZUVQSIZUUPUVIUVJUWHUVLUVNYQYM
+      WCWJZYRVHZTZUUPUUGSIZUUQSIZUUPUUHUWMUVEUUHUWMUWHUUGYRSSNVFVGWDTZUUGVHZTUV
+      NUWCUWEPZUWBUWDQKZUWDUWBQKRUUPUWBUWDWEWBZWFWKUUPUWAUVDUUPUVTUVCUUAUUPUVTU
+      VCRZUVRUVCQKZMRZUUPMMMQKZUXAUVMUXCMRWGMWAWHUUPUVQYRQKZUVFQKZUXCUXAUUPUWHU
+      VJUXEUXCRUWJUVNUWHUVJUXDMUVFMQUWHYRUVQQKZUXDMUWHUWIUXFUXDRUWKYRUVQWEWIYRV
+      TWLUVPWMWJUUPGHUEUVQYRYMUVBSQUWLUWJUVNUWSUWGUWRUWFQKUWBUWDUWFQKQKRUUPUWBU
+      WDUWFVKWBUVOUWQUWRSIUUPUWBUWDWCZWBZWNWLWOUUPUVRSIZUVCSIUWTUXBVRUUPGHUVQYM
+      SSSQUXHUWLUVNWPZUUPGHYRUVBSSSQUXHUWJUVOWPUVRUVCWQWJVPVOWRUUPUVSUWAPZBLZUU
+      RNOZUXLVIJZUUAIZPZBWSZUUSUUPUXIUXKUXQXSUXJUXPUXKBUVRSUXLUVRRZUXMUVSUXOUWA
+      UXLUVRUURNWTUXRUXNUVTUUAUXLUVRVIXAVOXBXCTABCDUUREXDXEXFXGUUPUWMUVJUVAUWOU
+      VNUWMUVJPYMMYMQKZUUGUUQQKZYMQKZUUTUVJYMUXSRUWMUVJYMMQKZYMUXSYMWAUVJUVMUYB
+      UXSRWGYMMWEXHWLWBUWMUYAUXSRUVJUWMUXTMYMQUUGVTXIXJUWMUVJUYAUUTRZUWMUWMUWNU
+      VJUYCUWPUUGUUQYMVKXKXLXMWJUULUVAAUURUUMUUJUURRUUKUUTYMUUJUURUUGQXNXOXPWJX
+      QXRYJYOUUOVRZYNUUEYJDUCIUYDABCDEXTUFGHBFCDYMUBAUHQBFHGUFYAUXGYBWIYCYDYEYF
+      YGYHYI $.
+
+    $( The lower cut of ` A .P. B ` is a subset of the lower cut of one.  Lemma
+       for ~ recexpr .  (Contributed by Jim Kingdon, 27-Dec-2019.) $)
+    recexprlemss1l $p |- ( A e. P. ->
+        ( 1st ` ( A .P. B ) ) C_ ( 1st ` 1P ) ) $=
+      ( vw vz vq wcel co c1st cfv cv c1q cltq wbr cmq wi wa cnq vu cnp cmp wceq
+      vf vg c1p wrex wb recexprlempr df-imp mulclnq genpelvl mpdan crq c2nd wex
+      recexprlemell ltrelnq brel simprd prop elprnql sylan ltmnqi expcom adantr
+      cop prltlu syl3an1 3expia mulcomnqg recidnq breq12d sylibd ancoms anim12d
+      syl syld ltsonq sotri syl6 exp4b syl5 pm2.43d impd exlimdv breq1 biimprcd
+      syl5bi expimpd rexlimdvv sylbid 1prl abeq2i syl6ibr ssrdv ) CUBIZFCDUCJKL
+      ZUGKLZWRFMZWSIZXANOPZXAWTIWRXBXAGMZHMZQJZUDZHDKLZUHGCKLZUHZXCWRDUBIXBXJUI
+      ABCDEUJUAUEUFBFCDXAGHUCQBFUFUEUAUKUEMUFMULUMUNWRXGXCGHXIXHWRXDXIIZXEXHIZX
+      GXCRZWRXKSZXLXFNOPZXMXLXEBMZOPZXPUOLZCUPLZIZSZBUQXNXOABCDXEEURXNYAXOBXNXQ
+      XTXOXNXQXTXORZXQXPTIZXNXQYBRXQXETIYCXEXPTTOUSUTVAXNYCXQXTXOXNYCSZYAXFXDXP
+      QJZOPZYENOPZSXOYDXQYFXTYGXNXQYFRZYCXNXDTIZYHWRXIXSVHUBIZXKYICVBZXDXSXIVCV
+      DZXQYIYFXEXPXDVEVFVRVGYDXTXDXROPZYGXNXTYMRYCWRXKXTYMWRYJXKXTYMYKXDXRXSXIV
+      IVJVKVGXNYIYCYMYGRZYLYCYIYNYCYISZYMXPXDQJZXPXRQJZOPZYGYCYMYRRYIYMYCYRXDXR
+      XPVEVFVGYOYPYEYQNOXPXDVLYCYQNUDYIXPVMVGVNVOVPVDVSVQXFYENOTVTUSWAWBWCWDWEW
+      FWGWJXGXCXOXAXFNOWHWIWBWKWLWMXCFWTFWNWOWPWQ $.
+
+    $( The upper cut of ` A .P. B ` is a subset of the upper cut of one.  Lemma
+       for ~ recexpr .  (Contributed by Jim Kingdon, 27-Dec-2019.) $)
+    recexprlemss1u $p |- ( A e. P. ->
+        ( 2nd ` ( A .P. B ) ) C_ ( 2nd ` 1P ) ) $=
+      ( vw vz vq wcel co c2nd cfv cv c1q cltq wbr cmq wi wa cnq vu cnp cmp wceq
+      vf vg c1p wrex wb recexprlempr df-imp mulclnq genpelvu mpdan crq c1st wex
+      recexprlemelu ltrelnq brel simpld prop elprnqu sylan ltmnqi expcom adantr
+      cop syl prltlu syl3an1 3com23 3expia recidnq mulcomnqg sylibd ancoms syld
+      breq12d anim12d ltsonq sotri syl6 exp4b syl5 pm2.43d exlimdv syl5bi breq2
+      impd biimprcd expimpd rexlimdvv sylbid 1pru abeq2i syl6ibr ssrdv ) CUBIZF
+      CDUCJKLZUGKLZWSFMZWTIZNXBOPZXBXAIWSXCXBGMZHMZQJZUDZHDKLZUHGCKLZUHZXDWSDUB
+      IXCXKUIABCDEUJUAUEUFBFCDXBGHUCQBFUFUEUAUKUEMUFMULUMUNWSXHXDGHXJXIWSXEXJIZ
+      XFXIIZXHXDRZWSXLSZXMNXGOPZXNXMBMZXFOPZXQUOLZCUPLZIZSZBUQXOXPABCDXFEURXOYB
+      XPBXOXRYAXPXOXRYAXPRZXRXQTIZXOXRYCRXRYDXFTIXQXFTTOUSUTVAXOYDXRYAXPXOYDSZY
+      BXEXQQJZXGOPZNYFOPZSXPYEXRYGYAYHXOXRYGRZYDXOXETIZYIWSXTXJVHUBIZXLYJCVBZXE
+      XJXTVCVDZXRYJYGXQXFXEVEVFVIVGYEYAXSXEOPZYHXOYAYNRYDWSXLYAYNWSYAXLYNWSYKYA
+      XLYNYLXSXEXJXTVJVKVLVMVGXOYJYDYNYHRZYMYDYJYOYDYJSZYNXQXSQJZXQXEQJZOPZYHYD
+      YNYSRYJYNYDYSXSXEXQVEVFVGYPYQNYRYFOYDYQNUDYJXQVNVGXQXEVOVSVPVQVDVRVTYHYGX
+      PNYFXGOTWAUSWBVQWCWDWEWFWJWGWHXHXDXPXBXGNOWIWKWCWLWMWNXDFXAFWOWPWQWR $.
+
+    $( ` B ` is the reciprocal of ` A ` .  Lemma for ~ recexpr .  (Contributed
+       by Jim Kingdon, 27-Dec-2019.) $)
+    recexprlemex $p |- ( A e. P. -> ( A .P. B ) = 1P ) $=
+      ( cnp wcel cmp c1p wceq c1st cfv c2nd recexprlemss1l recexprlem1ssl eqssd
+      co recexprlemss1u recexprlem1ssu wa recexprlempr mulclpr mpdan 1pr preqlu
+      wb sylancl mpbir2and ) CFGZCDHQZIJZUJKLZIKLZJZUJMLZIMLZJZUIULUMABCDENABCD
+      EOPUIUOUPABCDERABCDESPUIUJFGZIFGUKUNUQTUFUIDFGURABCDEUACDUBUCUDUJIUEUGUH
+      $.
+  $}
+
+  ${
+    $d A x u v w z $.
+    $( The reciprocal of a positive real exists.  Part of Proposition 9-3.7(v)
+       of [Gleason] p. 124.  (Contributed by NM, 15-May-1996.)  (Revised by
+       Mario Carneiro, 12-Jun-2013.) $)
+    recexpr $p |- ( A e. P. -> E. x e. P. ( A .P. x ) = 1P ) $=
+      ( vz vw vu vv cnp wcel cv cltq wbr crq cfv wa wex cab cmp co c1p wceq cop
+      c2nd c1st wrex breq12 simpr fveq2d eleq1d anbi12d cbvexdva cbvabv breq12d
+      simpl opeq12i recexprlempr recexprlemex oveq2 eqeq1d rspcev syl2anc ) BGH
+      CIZDIZJKZVBLMZBUBMZHZNZDOZCPZVBVAJKZVDBUCMZHZNZDOZCPZUAZGHBVPQRZSTZBAIZQR
+      ZSTZAGUDEFBVPVIEIZFIZJKZWCLMZVEHZNZFOZEPVOWCWBJKZWEVKHZNZFOZEPVHWHCEVAWBT
+      ZVGWGDFWMVBWCTZNZVCWDVFWFVAWBVBWCJUEWOVDWEVEWOVBWCLWMWNUFZUGZUHUIUJUKVNWL
+      CEWMVMWKDFWOVJWIVLWJWOVBWCVAWBJWPWMWNUMULWOVDWEVKWQUHUIUJUKUNZUOEFBVPWRUP
+      WAVRAVPGVSVPTVTVQSVSVPBQUQURUSUT $.
   $}
 
 $(
