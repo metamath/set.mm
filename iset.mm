@@ -1,4 +1,4 @@
-$( iset.mm - Version of 19-Dec-2019
+$( iset.mm - Version of 26-Dec-2019
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -11066,36 +11066,28 @@ $)
   $}
 
   ${
-    19.16.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.16 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.16.1 $e |- F/ x ph $.
+    $( Theorem 19.16 of [Margaris] p. 90.  (Contributed by NM, 12-Mar-1993.) $)
     19.16 $p |- ( A. x ( ph <-> ps ) -> ( ph <-> A. x ps ) ) $=
-      ( wal wb 19.3h albi syl5bbr ) AACEABFCEBCEACDGABCHI $.
+      ( wal wb 19.3 albi syl5bbr ) AACEABFCEBCEACDGABCHI $.
   $}
 
   ${
-    19.17.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.17 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.17.1 $e |- F/ x ps $.
+    $( Theorem 19.17 of [Margaris] p. 90.  (Contributed by NM, 12-Mar-1993.) $)
     19.17 $p |- ( A. x ( ph <-> ps ) -> ( A. x ph <-> ps ) ) $=
-      ( wb wal albi 19.3h syl6bb ) ABECFACFBCFBABCGBCDHI $.
+      ( wb wal albi 19.3 syl6bb ) ABECFACFBCFBABCGBCDHI $.
   $}
 
   ${
     19.21h.1 $e |- ( ph -> A. x ph ) $.
     $( Theorem 19.21 of [Margaris] p. 90.  The hypothesis can be thought of
-       as " ` x ` is not free in ` ph ` ."  (Contributed by NM, 5-Aug-1993.)
+       as " ` x ` is not free in ` ph ` ."  New proofs should use ~ 19.21
+       instead.  (Contributed by NM, 5-Aug-1993.)
        (New usage is discouraged.) $)
     19.21h $p |- ( A. x ( ph -> ps ) <-> ( ph -> A. x ps ) ) $=
       ( wi wal alim syl5 hba1 hbim ax-4 imim2i alrimih impbii ) ABEZCFZABCFZEZA
       ACFPQDABCGHROCAQCDBCIJQBABCKLMN $.
-  $}
-
-  ${
-    19.21-2.1 $e |- ( ph -> A. x ph ) $.
-    19.21-2.2 $e |- ( ph -> A. y ph ) $.
-    $( Theorem 19.21 of [Margaris] p. 90 but with 2 quantifiers.  (Contributed
-       by NM, 4-Feb-2005.) $)
-    19.21-2 $p |- ( A. x A. y ( ph -> ps ) <-> ( ph -> A. x A. y ps ) ) $=
-      ( wi wal 19.21h albii bitri ) ABGDHZCHABDHZGZCHAMCHGLNCABDFIJAMCEIK $.
   $}
 
   ${
@@ -11948,10 +11940,19 @@ $)
     ( wal wex hba1 hbex ax-4 eximi alrimih ) ACDZBEABECKCBACFGKABACHIJ $.
 
   ${
-    19.19.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.19 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.19.1 $e |- F/ x ph $.
+    $( Theorem 19.19 of [Margaris] p. 90.  (Contributed by NM, 12-Mar-1993.) $)
     19.19 $p |- ( A. x ( ph <-> ps ) -> ( ph <-> E. x ps ) ) $=
-      ( wex wb wal 19.9h exbi syl5bbr ) AACEABFCGBCEACDHABCIJ $.
+      ( wex wb wal 19.9 exbi syl5bbr ) AACEABFCGBCEACDHABCIJ $.
+  $}
+
+  ${
+    19.21-2.1 $e |- F/ x ph $.
+    19.21-2.2 $e |- F/ y ph $.
+    $( Theorem 19.21 of [Margaris] p. 90 but with 2 quantifiers.  (Contributed
+       by NM, 4-Feb-2005.) $)
+    19.21-2 $p |- ( A. x A. y ( ph -> ps ) <-> ( ph -> A. x A. y ps ) ) $=
+      ( wi wal 19.21 albii bitri ) ABGDHZCHABDHZGZCHAMCHGLNCABDFIJAMCEIK $.
   $}
 
   $( An alternative definition of ~ df-nf , which does not involve nested
@@ -12070,17 +12071,17 @@ $)
   $}
 
   ${
-    19.44.1 $e |- ( ps -> A. x ps ) $.
-    $( Theorem 19.44 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.44.1 $e |- F/ x ps $.
+    $( Theorem 19.44 of [Margaris] p. 90.  (Contributed by NM, 12-Mar-1993.) $)
     19.44 $p |- ( E. x ( ph \/ ps ) <-> ( E. x ph \/ ps ) ) $=
-      ( wo wex 19.43 19.9h orbi2i bitri ) ABECFACFZBCFZEKBEABCGLBKBCDHIJ $.
+      ( wo wex 19.43 19.9 orbi2i bitri ) ABECFACFZBCFZEKBEABCGLBKBCDHIJ $.
   $}
 
   ${
-    19.45.1 $e |- ( ph -> A. x ph ) $.
-    $( Theorem 19.45 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
+    19.45.1 $e |- F/ x ph $.
+    $( Theorem 19.45 of [Margaris] p. 90.  (Contributed by NM, 12-Mar-1993.) $)
     19.45 $p |- ( E. x ( ph \/ ps ) <-> ( ph \/ E. x ps ) ) $=
-      ( wo wex 19.43 19.9h orbi1i bitri ) ABECFACFZBCFZEALEABCGKALACDHIJ $.
+      ( wo wex 19.43 19.9 orbi1i bitri ) ABECFACFZBCFZEALEABCGKALACDHIJ $.
   $}
 
   $( Theorem 19.34 of [Margaris] p. 90.  (Contributed by NM, 5-Aug-1993.) $)
@@ -12166,11 +12167,11 @@ $)
   $}
 
   ${
-    eeor.1 $e |- ( ph -> A. y ph ) $.
-    eeor.2 $e |- ( ps -> A. x ps ) $.
+    eeor.1 $e |- F/ y ph $.
+    eeor.2 $e |- F/ x ps $.
     $( Rearrange existential quantifiers.  (Contributed by NM, 8-Aug-1994.) $)
     eeor $p |- ( E. x E. y ( ph \/ ps ) <-> ( E. x ph \/ E. y ps ) ) $=
-      ( wo wex 19.45 exbii hbex 19.44 bitri ) ABGDHZCHABDHZGZCHACHOGNPCABDEIJAO
+      ( wo wex 19.45 exbii nfex 19.44 bitri ) ABGDHZCHABDHZGZCHACHOGNPCABDEIJAO
       CBCDFKLM $.
   $}
 
@@ -61160,6 +61161,20 @@ $)
   $}
 
   ${
+    $d L a b m n q x y $.  $d P a b m n q x y $.  $d U a b m n q x y $.
+    $( A Dedekind cut is arithmetically located.  This is a variation of
+       ~ prarloc which only constructs one (named) point and is therefore often
+       easier to work with.  It states that given a tolerance ` P ` , there are
+       elements of the lower and upper cut which are exactly that tolerance
+       from each other.  (Contributed by Jim Kingdon, 26-Dec-2019.) $)
+    prarloc2 $p |- ( ( <. L , U >. e. P. /\ P e. Q. ) ->
+        E. a e. L ( a +Q P ) e. U ) $=
+      ( vb cop cnp wcel cnq wa cv cplq co cltq wbr prarloc wi prcunqu rexlimdva
+      wrex reximdv adantr mpd ) CBFGHZAIHZJEKZDKALMZNOZEBTZDCTZUGBHZDCTZABCDEPU
+      DUJULQUEUDUIUKDCUDUHUKEBUGUFBCRSUAUBUC $.
+  $}
+
+  ${
     $d q x y $.
     $( Positive real 'less than' is a relation on positive reals.  (Contributed
        by NM, 14-Feb-1996.) $)
@@ -62389,6 +62404,22 @@ $)
   $}
 
   ${
+    $d A x y $.  $d B x y $.
+    $( If a positive real is less than a second positive real, its lower cut is
+       a subset of the second's lower cut.  (Contributed by Jim Kingdon,
+       23-Dec-2019.) $)
+    ltprordil $p |- ( A <P B -> ( 1st ` A ) C_ ( 1st ` B ) ) $=
+      ( vx vy cltp wbr cv c2nd cfv wcel c1st wa wss cnq cnp wrex adantr cop syl
+      prop ltrelpr brel ltdfpr biimpd mpcom simpll simpr simprrl simpld syl3an1
+      cltq prltlu syl3anc wi simprrr simprd prcdnql sylan syl2anc mpd rexlimddv
+      ex ssrdv ) ABEFZCGZAHIZJZVEBKIZJZLZAKIZVHMCNAOJZBOJZLZVDVJCNPZABOOEUAUBZV
+      NVDVOABCUCUDUEVDVENJZVJLZLZDVKVHVSDGZVKJZVTVHJZVSWALZVTVEUKFZWBWCVDWAVGWD
+      VDVRWAUFZVSWAUGVSVGWAVDVQVGVIUHQVDVKVFROJZWAVGWDVDVLWFVDVLVMVPUIATSVTVEVF
+      VKULUJUMWCVDVIWDWBUNZWEVSVIWAVDVQVGVIUOQVDVHBHIZROJZVIWGVDVMWIVDVLVMVPUPB
+      TSVEVTWHVHUQURUSUTVBVCVA $.
+  $}
+
+  ${
     $( The class of rationals less than a given rational is a set.
        (Contributed by Jim Kingdon, 13-Dec-2019.) $)
     ltnqex $p |- { x | x <Q A } e. _V $=
@@ -62543,6 +62574,472 @@ $)
       KZKWEWRXJJZKXOWEXPXQXPXEWHKWEXQXPXEWHWNXEXFUTWMWHXGVAVBFGHUAUBABWQWFUCUIU
       AUBHGFVCGLHLVDVFVEVGWEWIIJZXQXOABVHZXRXJWIQNZRIJXQXOWISWRWPXTXJVITTUHVJVK
       XLDOVLVPWEWJXMVMZWNXGWSWCWDXRYAXSAWIDVNVQVOVRVSVTWAWB $.
+  $}
+
+  ${
+    $d x y z w u v f g h q r s t A $.  $d x y z w u v f g h q r s t B $.
+    $d x y z w u v f g h q r s t C $.
+    ltexprlem.1 $e |- C = <. { x e. Q. | E. y (
+      y e. ( 2nd ` A ) /\ ( y +Q x ) e. ( 1st ` B ) ) } , { x e. Q. | E. y (
+      y e. ( 1st ` A ) /\ ( y +Q x ) e. ( 2nd ` B ) ) } >. $.
+    $( Element in lower cut of the constructed difference.  Lemma for
+       ~ ltexpri .  (Contributed by Jim Kingdon, 21-Dec-2019.) $)
+    ltexprlemell $p |- ( q e. ( 1st ` C ) <-> ( q e. Q. /\
+        E. y ( y e. ( 2nd ` A ) /\ ( y +Q q ) e. ( 1st ` B ) ) ) ) $=
+      ( cv c2nd cfv wcel cplq co c1st wa wex cnq crab nqex rabex wceq oveq2 cop
+      eleq1d anbi2d exbidv fveq2i op1st eqtri elrab2 ) BHZCIJKZUKAHZLMZDNJZKZOZ
+      BPZULUKFHZLMZUOKZOZBPAUSQENJZUMUSUAZUQVBBVDUPVAULVDUNUTUOUMUSUKLUBUDUEUFV
+      CURAQRZUKCNJKUNDIJKOBPZAQRZUCZNJVEEVHNGUGVEVGURAQSTVFAQSTUHUIUJ $.
+
+    $( Element in upper cut of the constructed difference.  Lemma for
+       ~ ltexpri .  (Contributed by Jim Kingdon, 21-Dec-2019.) $)
+    ltexprlemelu $p |- ( r e. ( 2nd ` C ) <-> ( r e. Q. /\
+        E. y ( y e. ( 1st ` A ) /\ ( y +Q r ) e. ( 2nd ` B ) ) ) ) $=
+      ( cv c1st cfv wcel cplq co c2nd wa wex cnq crab nqex rabex wceq oveq2 cop
+      eleq1d anbi2d exbidv fveq2i op2nd eqtri elrab2 ) BHZCIJKZUKAHZLMZDNJZKZOZ
+      BPZULUKFHZLMZUOKZOZBPAUSQENJZUMUSUAZUQVBBVDUPVAULVDUNUTUOUMUSUKLUBUDUEUFV
+      CUKCNJKUNDIJKOBPZAQRZURAQRZUCZNJVGEVHNGUGVFVGVEAQSTURAQSTUHUIUJ $.
+
+    $( Our constructed difference is inhabited.  Lemma for ~ ltexpri .
+       (Contributed by Jim Kingdon, 17-Dec-2019.) $)
+    ltexprlemm $p |- ( A <P B -> ( E. q e. Q. q e. ( 1st ` C ) /\
+        E. r e. Q. r e. ( 2nd ` C ) ) ) $=
+      ( vw cv cfv wcel cnq wrex wa wex cnp sylan syl sylibr cltp c1st c2nd cplq
+      wbr co ltrelpr brel ltdfpr biimpd mpcom simprrl simprd wceq cltq cop prop
+      prnmaxl ltrelnq ltexnqq reximi sylib r19.42v exbii eleq1 biimparc exlimiv
+      df-rex adantrl jca expr reximdva rexbii rexcom simpld elprnqu ex pm4.71rd
+      mpd anbi1d anass syl6bb exbidv rexbidv syl6bbr mpbird ltexprlemell wss wb
+      ssid rexss ax-mp bitr4i nfv nfre1 prmu rexex 3syl prml adantr w3a 3adant3
+      simp3 elprnql 3adant2 addcomnqg syl2anc ltaddnq wi prcunqu eqeltrrd 19.8a
+      ltexprlemelu 3expa exlimddv exlimdd ) CDUAUEZGJZEUBKLZGMNZFJZEUCKLZFMNZXQ
+      BJZCUCKZLZYDXRUDUFZDUBKZLZOZBPZGMNZXTXQYLYJBMNZGMNZXQYJGMNZBMNZYNXQYFYIGM
+      NZOZBMNZYPXQYFYDYHLZOZBMNZYSCQLZDQLZOZXQUUBCDQQUAUGUHZUUEXQUUBCDBUIUJUKXQ
+      UUAYRBMXQYDMLZUUAYRXQUUGUUAOOYFYQXQUUGYFYTULXQUUAYQUUGXQYTYQYFXQUUDYTYQXQ
+      UUCUUDUUFUMZUUDYTOZIJZYHLZYGUUJUNZOZGMNZIPZYQUUIUUKUULGMNZOZIPZUUOUUIUUPI
+      YHNZUURUUIYDUUJUOUEZIYHNZUUSUUDYHDUCKZUPQLZYTUVADUQZIYDUVBYHURRUUTUUPIYHU
+      UGUUJMLOZUUTUUPYDUUJMMUOUSUHUVEUUTUUPGYDUUJUTUJUKVASUUPIYHVHVBUUNUUQIUUKU
+      ULGMVCVDTUUNYQIUUMYIGMUULYIUUKYGUUJYHVEVFVAVGSRVIVIVJVKVLVSYOYRBMYFYIGMVC
+      VMTYJBGMMVNVBXQYLUUGYJOZBPZGMNYNXQYKUVGGMXQYJUVFBXQYJUUGYFOZYIOUVFXQYFUVH
+      YIXQYFUUGXQYFUUGXQUUCYFUUGXQUUCUUDUUFVOZUUCCUBKZYEUPQLZYFUUGCUQZYDYEUVJVP
+      RRVQVRVTUUGYFYIWAWBWCWDYMUVGGMYJBMVHVMWEWFXTXRMLYKOZGMNZYLXSUVMGMABCDEGHW
+      GVMMMWHYLUVNWIMWJYKGMMWKWLWMTXQYAUVBLZYCFXQFWNYBFMWOXQUUDUVCUVOFPZUUHUVDU
+      VCUVOFMNUVPFUVBYHWPUVOFMWQSWRXQUVOOZYAMLZYBOZFPZYCUVQUVRYBUVTXQUUDUVOUVRU
+      UHUUDUVCUVOUVRUVDYAUVBYHVPRRZUVQYDUVJLZYBBXQUWBBPZUVOXQUUCUWBBMNZUWCUVIUU
+      CUVKUWDUVLBYEUVJWSSUWBBMWQWRWTXQUVOUWBYBXQUVOUWBXAZUVRUWBYDYAUDUFZUVBLZOZ
+      BPZOYBUWEUVRUWIXQUVOUVRUWBUWAXBZUWEUWBUWGUWIXQUVOUWBXCUWEYAYDUDUFZUWFUVBU
+      WEUVRUUGUWKUWFUNUWJXQUWBUUGUVOXQUUCUWBUUGUVIUUCUVKUWBUUGUVLYDYEUVJXDRRXEZ
+      YAYDXFXGUWEYAUWKUOUEZUWKUVBLZUWEUVRUUGUWMUWJUWLYAYDXHXGXQUVOUWMUWNXIZUWBX
+      QUUDUVOUWOUUHUUDUVCUVOUWOUVDUWKYAUVBYHXJRRXBVSXKUWHBXLXGVJABCDEFHXMTXNXOU
+      VSFXLXGYBFMVHTXPVJ $.
+
+    $( The lower cut of our constructed difference is open.  Lemma for
+       ~ ltexpri .  (Contributed by Jim Kingdon, 21-Dec-2019.) $)
+    ltexprlemopl $p |- ( ( A <P B /\ q e. Q. /\ q e. ( 1st ` C ) )
+        -> E. r e. Q. ( q <Q r /\ r e. ( 1st ` C ) ) ) $=
+      ( vs wbr cv cnq wcel cfv cltq wa wrex wex cnp syl2anc cltp c1st c2nd cplq
+      ltexprlemell simprbi 19.42v anbi2i bitri ltrelpr brel simprd prop prnmaxl
+      co cop sylan adantrl wceq simpld ad2antrr simplrr elprnqu simplrl ltaddnq
+      simprr ltsonq ltrelnq sotri wb simprl elprnql ltexnqq mpbid adantr ltanqg
+      breqtrrd syl3anc mpbird eqeltrd jca jca32 reximdva rexlimddv eximi sylbir
+      expr mpd rexcom4 sylibr rexbii sylib sylanr2 3impb ) CDUAJZGKZLMZWPEUBNZM
+      ZWPFKZOJZWTWRMZPZFLQZWSWOWQBKZCUCNZMZXEWPUDUOZDUBNZMZPZBRZXDWSWQXLABCDEGH
+      UEUFWOWQXLPZPZXAWTLMZXGXEWTUDUOZXIMZPZBRPZPZFLQZXDXNXAXOXRPZPZBRZFLQZYAXN
+      YCFLQZBRZYEXNWOWQXKPZPZBRZYGYJWOYHBRZPXNWOYHBUGYKXMWOWQXKBUGUHUIYIYFBYIXH
+      IKZOJZYFIXIWOXKYMIXIQZWQWOXJYNXGWODSMZXJYNWOCSMZYOCDSSUAUJUKZULZYOXIDUCNZ
+      UPSMZXJYNDUMZIXHYSXIUNUQUQURURYIYLXIMZYMPZPZXPYLUSZFLQZYFUUDXEYLOJZUUFUUD
+      XEXHOJZYMUUGUUDXELMZWQUUHUUDYPXGUUIWOYPYHUUCWOYPYOYQUTVAUUDXGXJWOWQXKUUCV
+      BUTZYPCUBNZXFUPSMXGUUICUMXEXFUUKVCUQTZWOWQXKUUCVDZXEWPVETYIUUBYMVFXEXHYLO
+      LVGVHVITUUDUUIYLLMZUUGUUFVJUULUUDYOUUBUUNWOYOYHUUCYRVAYIUUBYMVKYOYTUUBUUN
+      UUAYLYSXIVLUQTFXEYLVMTVNUUDUUEYCFLUUDXOUUEYCUUDXOUUEPZPZXAXOXRUUPXAXHXPOJ
+      ZUUPXHYLXPOYIUUBYMUUOVBUUDXOUUEVFZVQUUPWQXOUUIXAUUQVJUUDWQUUOUUMVOUUDXOUU
+      EVKZUUDUUIUUOUULVOWPWTXEVPVRVSUUSUUPXGXQUUDXGUUOUUJVOUUPXPYLXIUURYIUUBYMU
+      UOVDVTWAWBWGWCWHWDWEWFYCFBLWIWJYDXTFLYDXAYBBRZPXTXAYBBUGUUTXSXAXOXRBUGUHU
+      IWKWLXCXTFLXBXSXAABCDEFHUEUHWKWJWMWN $.
+
+    $( The lower cut of our constructed difference is lower.  Lemma for
+       ~ ltexpri .  (Contributed by Jim Kingdon, 21-Dec-2019.) $)
+    ltexprlemlol $p |- ( ( A <P B /\ q e. Q. ) ->
+        ( E. r e. Q. ( q <Q r /\ r e. ( 1st ` C ) ) -> q e. ( 1st ` C ) ) ) $=
+      ( wbr cv cnq wcel wa c1st cfv wex cnp sylan 19.42v bitr4i cltp co simprrr
+      cltq c2nd cplq simplr simpld simprl ltrelpr brel cop prop elprnqu syl2anc
+      simpll ltanqi wi simprd syl prcdnql mpd jca32 ltexprlemell anbi2i 3imtr4i
+      eximi ex rexlimdvw ) CDUAIZGJZKLZMZVKFJZUDIZVNENOZLZMZVKVPLZFKVMVRVSVMVOV
+      NKLZBJZCUEOZLZWAVNUFUBZDNOZLZMZMZMZMZBPZVLWCWAVKUFUBZWELZMZMZBPZVMVRMZVSW
+      JWOBWJVLWCWMVJVLWIUGWJWCWFVMVOVTWGUCZUHZWJWLWDUDIZWMWJVOWAKLZWTVMVOWHUIWJ
+      VJWCXAVJVLWIUPZWSVJCQLZWCXAVJXCDQLZCDQQUAUJUKZUHXCCNOZWBULQLWCXACUMWAWBXF
+      UNRRUOVKVNWAUQUOWJXDWFWTWMURZWJVJXDXBVJXCXDXEUSUTWJWCWFWRUSXDWEDUEOZULQLW
+      FXGDUMWDWLXHWEVARUOVBVCVGWQVMWIBPZMWKVRXIVMVRVOWHBPZMXIVQXJVOVQVTWGBPMXJA
+      BCDEFHVDVTWGBSTVEVOWHBSTVEVMWIBSTVSVLWNBPMWPABCDEGHVDVLWNBSTVFVHVI $.
+
+    $( The upper cut of our constructed difference is open.  (Contributed by
+       Jim Kingdon, 21-Dec-2019.) $)
+    ltexprlemopu $p |- ( ( A <P B /\ r e. Q. /\ r e. ( 2nd ` C ) )
+        -> E. q e. Q. ( q <Q r /\ q e. ( 2nd ` C ) ) ) $=
+      ( vs wbr cv cnq wcel cfv cltq wa wrex wex cnp adantr vt cltp c2nd c1st co
+      cplq ltexprlemelu simprbi 19.42v anbi2i bitri cop ltrelpr brel simprd syl
+      prnminu sylan adantrl ltdfpr biimpd mpcom ad2antrr simpld simplrr simprrl
+      prop prltlu syl3an1 syl3anc simplll simprrr simplrl ltrelnq sotri syl2anc
+      ltsonq rexlimddv wb elprnql elprnqu ad2ant2r ltexnqq mpbid simprr eqbrtrd
+      wceq simprl ltanqg mpbird eqeltrd jca jca32 reximdva eximi sylbir rexcom4
+      expr mpd sylibr rexbii sylib sylanr2 3impb ) CDUBJZFKZLMZXFEUCNZMZGKZXFOJ
+      ZXJXHMZPZGLQZXIXEXGBKZCUDNZMZXOXFUFUEZDUCNZMZPZBRZXNXIXGYBABCDEFHUGUHXEXG
+      YBPZPZXKXJLMZXQXOXJUFUEZXSMZPZBRPZPZGLQZXNYDXKYEYHPZPZBRZGLQZYKYDYMGLQZBR
+      ZYOYDXEXGYAPZPZBRZYQYTXEYRBRZPYDXEYRBUIUUAYCXEXGYABUIUJUKYSYPBYSIKZXROJZY
+      PIXSXEYAUUCIXSQZXGXEXTUUDXQXEDUDNZXSULSMZXTUUDXEDSMZUUFXECSMZUUGCDSSUBUMU
+      NZUODVGUPZIXRXSUUEUQURUSUSYSUUBXSMZUUCPZPZYFUUBWGZGLQZYPUUMXOUUBOJZUUOUUM
+      UAKZCUCNZMZUUQUUEMZPZUUPUALXEUVAUALQZYRUULUUHUUGPZXEUVBUUIUVCXEUVBCDUAUTV
+      AVBVCUUMUUQLMZUVAPZPZXOUUQOJZUUQUUBOJZUUPUVFUUHXQUUSUVGUUMUUHUVEXEUUHYRUU
+      LXEUUHUUGUUIVDVCZTUUMXQUVEUUMXQXTXEXGYAUULVEVDZTUUMUVDUUSUUTVFUUHXPUURULS
+      MZXQUUSUVGCVGZXOUUQUURXPVHVIVJUVFXEUUTUUKUVHXEYRUULUVEVKUUMUVDUUSUUTVLYSU
+      UKUUCUVEVMXEUUFUUTUUKUVHUUJUUQUUBXSUUEVHVIVJXOUUQUUBOLVQVNVOVPVRUUMXOLMZU
+      UBLMZUUPUUOVSUUMUUHXQUVMUVIUVJUUHUVKXQUVMUVLXOUURXPVTURVPZXEUUKUVNYRUUCXE
+      UUFUUKUVNUUJUUBXSUUEWAURWBGXOUUBWCVPWDUUMUUNYMGLUUMYEUUNYMUUMYEUUNPZPZXKY
+      EYHUVQXKYFXROJZUVQYFUUBXROUUMYEUUNWEZYSUUKUUCUVPVEWFUVQYEXGUVMXKUVRVSUUMY
+      EUUNWHZUUMXGUVPXEXGYAUULVMTUUMUVMUVPUVOTXJXFXOWIVJWJUVTUVQXQYGUUMXQUVPUVJ
+      TUVQYFUUBXSUVSYSUUKUUCUVPVMWKWLWMWRWNWSVRWOWPYMGBLWQWTYNYJGLYNXKYLBRZPYJX
+      KYLBUIUWAYIXKYEYHBUIUJUKXAXBXMYJGLXLYIXKABCDEGHUGUJXAWTXCXD $.
+
+    $( The upper cut of our constructed difference is upper.  Lemma for
+       ~ ltexpri .  (Contributed by Jim Kingdon, 21-Dec-2019.) $)
+    ltexprlemupu $p |- ( ( A <P B /\ r e. Q. ) -> (
+        E. q e. Q. ( q <Q r /\ q e. ( 2nd ` C ) ) ->
+        r e. ( 2nd ` C ) ) ) $=
+      ( wbr cv cnq wcel wa c2nd cfv wex cnp syl2anc 19.42v bitr4i simplr simpld
+      cltp cltq c1st cplq simprrr simprl simpll simprrl adantl cop ltrelpr brel
+      co prop syl elprnql sylan ltanqi wi simprd prcunqu mpd jca32 ltexprlemelu
+      eximi anbi2i 3imtr4i ex rexlimdvw ) CDUCIZFJZKLZMZGJZVMUDIZVPENOZLZMZVMVR
+      LZGKVOVTWAVOVQVPKLZBJZCUEOZLZWCVPUFUOZDNOZLZMZMZMZMZBPZVNWEWCVMUFUOZWGLZM
+      ZMZBPZVOVTMZWAWLWQBWLVNWEWOVLVNWKUAWLWEWHVOVQWBWIUGZUBWLWFWNUDIZWOWLVQWCK
+      LZXAVOVQWJUHWLVLWEXBVLVNWKUIZWKWEVOVQWBWEWHUJUKVLWDCNOZULQLZWEXBVLCQLZXEV
+      LXFDQLZCDQQUCUMUNZUBCUPUQWCXDWDURUSRVPVMWCUTRWLXGWHXAWOVAZWLVLXGXCVLXFXGX
+      HVBUQWLWEWHWTVBXGDUEOZWGULQLWHXIDUPWNWFWGXJVCUSRVDVEVGWSVOWKBPZMWMVTXKVOV
+      TVQWJBPZMXKVSXLVQVSWBWIBPMXLABCDEGHVFWBWIBSTVHVQWJBSTVHVOWKBSTWAVNWPBPMWR
+      ABCDEFHVFVNWPBSTVIVJVK $.
+
+    $( Our constructed difference is rounded.  Lemma for ~ ltexpri .
+       (Contributed by Jim Kingdon, 17-Dec-2019.) $)
+    ltexprlemrnd $p |- ( A <P B -> ( A. q e. Q. ( q e. ( 1st ` C )
+        <-> E. r e. Q. ( q <Q r /\ r e. ( 1st ` C ) ) )
+        /\ A. r e. Q. ( r e. ( 2nd ` C )
+        <-> E. q e. Q. ( q <Q r /\ q e. ( 2nd ` C ) ) ) ) ) $=
+      ( wbr cv cfv wcel wa cnq wrex wb wral 3expia impbid ralrimiva cltp c1st
+      cltq c2nd ltexprlemopl ltexprlemlol ltexprlemopu ltexprlemupu jca ) CDUAI
+      ZGJZEUBKZLZUKFJZUCIZUNULLMFNOZPZGNQUNEUDKZLZUOUKURLMGNOZPZFNQUJUQGNUJUKNL
+      ZMUMUPUJVBUMUPABCDEFGHUERABCDEFGHUFSTUJVAFNUJUNNLZMUSUTUJVCUSUTABCDEFGHUG
+      RABCDEFGHUHSTUI $.
+
+    $( Our constructed difference is disjoint.  Lemma for ~ ltexpri .
+       (Contributed by Jim Kingdon, 17-Dec-2019.) $)
+    ltexprlemdisj $p |- ( A <P B -> A. q e. Q.
+        -. ( q e. ( 1st ` C ) /\ q e. ( 2nd ` C ) ) ) $=
+      ( vz wbr cv cfv wcel wa wn cnq cplq co cltq cnp wex vf cltp c1st c2nd wal
+      vg ltsonq ltrelnq son2lpi cop ltrelpr brel simprd prop syl prltlu syl3an1
+      vh 3expb adantlr adantrll adantrrl w3a ltanqg adantl simpld elprnqu sylan
+      ad2ant2r adantrr elprnql adantrl simplr addcomnqg caovord2d mpbird 3com23
+      wb wceq adantrlr adantrrr mtoi alrimivv ltexprlemell ltexprlemelu anbi12i
+      jca ex anandi bitr4i baib eleq1 oveq1 eleq1d anbi12d cbvexv anbi2i syl6bb
+      eeanv syl6bbr notbid alnex albii bitri ralrimiva ) CDUBIZFJZEUCKLZXGEUDKL
+      ZMZNZFOXFXGOLZMZXKBJZCUDKZLZXNXGPQZDUCKZLZMZHJZCUCKZLZYAXGPQZDUDKZLZMZMZN
+      ZHUEZBUEZXMYIBHXMYHXNYARIZYAXNRIZMZXNYAROUGUHUIXMYHYNXMYHMZYLYMYOYLXQYDRI
+      ZXMXTYFYPYCXMXSYFYPXPXFXSYFMYPXLXFXSYFYPXFXRYEUJSLZXSYFYPXFDSLZYQXFCSLZYR
+      CDSSUBUKULZUMDUNUOXQYDYEXRUPUQUSUTVAVBYOUAUFURXNYAXGROPUAJZOLZUFJZOLZURJZ
+      OLVCUUAUUCRIUUEUUAPQUUEUUCPQRIVRYOUUAUUCUUEVDVEXMXTXNOLZYGXFXPUUFXLXSXFYB
+      XOUJSLZXPUUFXFYSUUGXFYSYRYTVFCUNUOZXNXOYBVGVHVIVJXMYGYAOLZXTXFYCUUIXLYFXF
+      UUGYCUUIUUHYAXOYBVKVHVIVLXFXLYHVMUUBUUDMUUAUUCPQUUCUUAPQVSYOUUAUUCVNVEVOV
+      PXMXTYCYMYFXMXPYCYMXSXFXPYCMYMXLXFXPYCYMXFYCXPYMXFUUGYCXPYMUUHYAXNXOYBUPU
+      QVQUSUTVTWAWGWHWBWCXLXKYKVRXFXLXKYHHTZBTZNZYKXLXJUUKXLXJXTBTZYGHTZMZUUKXL
+      XJUUMXNYBLZXQYELZMZBTZMZUUOXJXLUUTXJXLUUMMZXLUUSMZMXLUUTMXHUVAXIUVBABCDEF
+      GWDABCDEFGWEWFXLUUMUUSWIWJWKUUSUUNUUMUURYGBHXNYAVSZUUPYCUUQYFXNYAYBWLUVCX
+      QYDYEXNYAXGPWMWNWOWPWQWRXTYGBHWSWTXAYKUUJNZBUEUULYJUVDBYHHXBXCUUJBXBXDWTV
+      EVPXE $.
+
+    $( Our constructed difference is located.  Lemma for ~ ltexpri .
+       (Contributed by Jim Kingdon, 17-Dec-2019.) $)
+    ltexprlemloc $p |- ( A <P B -> A. q e. Q. A. r e. Q. ( q <Q r
+        -> ( q e. ( 1st ` C ) \/ r e. ( 2nd ` C ) ) ) ) $=
+      ( vz wbr cv cltq wcel wo cnq wa cplq co wrex wb vw vf vg vh cltp c1st cfv
+      c2nd wi wral wceq ltrelnq brel ltexnqq biimpd mpcom adantl ltrelpr simpld
+      cnp cop prarloc sylan ad2ant2r simprd ad2antrr w3a ltanqg elprnqu adantlr
+      prop ad2ant2rl elprnql simplrl addclnq syl2anc addcomnqg caovord2d oveq2d
+      addassnqg syl3anc simplrr 3eqtrd breq2d bitrd biimpa prloc ex anassrs wex
+      reximdva prml rexex 3syl r19.45mv adantr r19.9rmv orbi2d syl6rbbr rexbidv
+      prmu r19.43 ibar orbi12d syl ltexprlemell ltexprlemelu eleq1 oveq1 eleq1d
+      anbi12d cbvexv anbi2i bitri orbi12i df-rex syl6bbr 3bitr4rd mpd rexlimddv
+      sylibrd ralrimivw ) CDUEJZGKZFKZLJZYDEUFUGMZYEEUHUGMZNZUIZFOUJGOYCYJFOYCY
+      FYIYCYFPZYDUAKZQRZYEUKZYIUAOYFYNUAOSZYCYDOMZYEOMZPZYFYOYDYEOOLULUMZYRYFYO
+      UAYDYEUNUOUPUQYKYLOMZYNPZPZBKZIKZYLQRZLJZBCUHUGZSZICUFUGZSZYIYCYTUUJYFYNY
+      CCUTMZYTUUJYCUUKDUTMZCDUTUTUEURUMZUSZUUKUUIUUGVAUTMZYTUUJCVKZYLUUGUUIIBVB
+      VCVCVDUUBUUJUUCYDQRZDUFUGZMZUUDYEQRZDUHUGZMZNZBUUGSZIUUISZYIUUBUUHUVDIUUI
+      UUBUUDUUIMZPUUFUVCBUUGUUBUVFUUCUUGMZUUFUVCUIUUBUVFUVGPZPZUUFUVCUVIUUFPUUL
+      UUQUUTLJZUVCUUBUULUVHUUFYCUULYFUUAYCUUKUULUUMVEVFVFUVIUUFUVJUVIUUFUUQUUEY
+      DQRZLJUVJUVIUBUCUDUUCUUEYDLOQUBKZOMZUCKZOMZUDKZOMVGUVLUVNLJUVPUVLQRUVPUVN
+      QRLJTUVIUVLUVNUVPVHUQYKUVGUUCOMZUUAUVFYCUVGUVQYFYCUUKUVGUVQUUNUUKUUOUVGUV
+      QUUPUUCUUGUUIVIVCVCVJVLUVIUUDOMZYTUUEOMYKUVFUVRUUAUVGYCUVFUVRYFYCUUKUVFUV
+      RUUNUUKUUOUVFUVRUUPUUDUUGUUIVMVCVCVJVDZYKYTYNUVHVNZUUDYLVOVPYKYPUUAUVHYFY
+      PYCYFYPYQYSUSUQVFZUVMUVOPUVLUVNQRUVNUVLQRUKUVIUVLUVNVQUQVRUVIUVKUUTUUQLUV
+      IUVKUUDYLYDQRZQRZUUDYMQRUUTUVIUVRYTYPUVKUWCUKUVSUVTUWAUUDYLYDVTWAUVIUWBYM
+      UUDQUVIYTYPUWBYMUKUVTUWAYLYDVQVPVSUVIYMYEUUDQYKYTYNUVHWBVSWCWDWEWFUULUURU
+      VAVAUTMUVJUVCDVKUUQUUTUVAUURWGVCVPWHWIWKWKYKYIUVETUUAYKUUSBUUGSZUVBNZIUUI
+      SZUWDUVBIUUISZNZUVEYIYCUWFUWHTZYFYCUUKUVFIWJZUWIUUNUUKUUOUVFIOSUWJUUPIUUG
+      UUIWLUVFIOWMWNUWDUVBIUUIWOWNWPYCUVEUWFTYFYCUVDUWEIUUIYCUUKAKUUGMZAWJZUVDU
+      WETUUNUUKUUOUWKAOSUWLUUPAUUGUUIXAUWKAOWMWNUWLUWEUWDUVBBUUGSZNUVDUWLUVBUWM
+      UWDUVBBAUUGWQWRUUSUVBBUUGXBWSWNWTWPYFYIUWHTYCYFYIUVGUUSPBWJZUVFUVBPZIWJZN
+      ZUWHYFUWQYPUWNPZYQUWPPZNZYIYFYRUWQUWTTYSYRUWNUWRUWPUWSYPUWNUWRTYQYPUWNXCW
+      PYQUWPUWSTYPYQUWPXCUQXDXEYGUWRYHUWSABCDEGHXFYHYQUUCUUIMZUUCYEQRZUVAMZPZBW
+      JZPUWSABCDEFHXGUXEUWPYQUXDUWOBIUUCUUDUKZUXAUVFUXCUVBUUCUUDUUIXHUXFUXBUUTU
+      VAUUCUUDYEQXIXJXKXLXMXNXOWSUWDUWNUWGUWPUUSBUUGXPUVBIUUIXPXOXQUQXRWPYAXSXT
+      WHYBYB $.
+
+    $( Our constructed difference is a positive real.  Lemma for ~ ltexpri .
+       (Contributed by Jim Kingdon, 17-Dec-2019.) $)
+    ltexprlempr $p |- ( A <P B -> C e. P. ) $=
+      ( vq vr wbr cnq wcel cv c1st cfv wrex c2nd wa wb wral wex cltp cpw cxp wn
+      cltq wo wi w3a cnp ltexprlemm cplq crab cop wss ssrab2 nqex elpw2 opelxpi
+      co mpbir mp2an eqeltri jctil ltexprlemrnd ltexprlemdisj ltexprlemloc 3jca
+      elnp1st2nd sylanbrc ) CDUAIZEJUBZVKUCZKZGLZEMNZKZGJOHLZEPNZKZHJOQZQVPVNVQ
+      UEIZVQVOKQHJORGJSVSWAVNVRKZQGJORHJSQZVPWBQUDGJSZWAVPVSUFUGHJSGJSZUHEUIKVJ
+      VTVMABCDEHGFUJEBLZCPNKWFALUKUSZDMNKQBTZAJULZWFCMNKWGDPNKQBTZAJULZUMZVLFWI
+      VKKZWKVKKZWLVLKWMWIJUNWHAJUOWIJUPUQUTWNWKJUNWJAJUOWKJUPUQUTWIWKVKVKURVAVB
+      VCVJWCWDWEABCDEHGFVDABCDEGFVEABCDEHGFVFVGEHGVHVI $.
+
+    $( Lemma for ~ ltexpri .  One directon of our result for lower cuts.
+       (Contributed by Jim Kingdon, 17-Dec-2019.) $)
+    ltexprlemfl $p |- ( A <P B -> ( 1st ` ( A +P. C ) ) C_ ( 1st ` B ) ) $=
+      ( vz vw vu vf wbr co cfv cv wcel cplq cnp wa cnq cltq vg vh cltp cpp c1st
+      wceq wrex ltrelpr brel simpld ltexprlempr df-iplp addclnq genpelvl simprr
+      wb syl2anc c2nd wex ltexprlemell biimpi ad2antlr adantl simprd w3a prltlu
+      cop prop syl3an1 3adant2r 3adant3r ltanqg ltrelnq elprnql adantrl adantrr
+      syl sylan 3adant3 addcomnqg caovord2d wi prcdnql 3adant2 sylbid mpd 3expa
+      exlimddv eqeltrd expr rexlimdvva ssrdv ) CDUCKZGCEUDLUEMZDUEMZWMGNZWNOZWP
+      HNZINZPLZUFZIEUEMZUGHCUEMZUGZWPWOOZWMCQOZEQOZWQXDUPWMXFDQOZCDQQUCUHUIZUJZ
+      ABCDEFUKZJUAUBGBCEWPHIUDPGBUBUAJULUANZUBNZUMUNUQWMXAXEHIXCXBWMWRXCOZWSXBO
+      ZRZXAXEWMXPXARZRZWPWTWOWMXPXAUOXRBNZCURMZOZXSWSPLZWOOZRZWTWOOZBXRWSSOZYDB
+      USZXQYFYGRZWMXOYHXNXAXOYHABCDEIFUTVAVBVCVDWMXQYDYEWMXQYDVEZWRXSTKZYEWMXQY
+      AYJYCWMXPYAYJXAWMXNYAYJXOWMXCXTVGQOZXNYAYJWMXFYKXJCVHVQWRXSXTXCVFVIVJVJVK
+      ZYIYJWTYBTKZYEYIJUAUBWRXSWSTSPJNZSOZXLSOZXMSOVEYNXLTKXMYNPLXMXLPLTKUPYIYN
+      XLXMVLVCYIWRSOZXSSOZYIYJYQYRRYLWRXSSSTVMUIVQZUJYIYQYRYSVDWMXQYFYDWMXPYFXA
+      WMXOYFXNWMXBEURMZVGQOZXOYFWMXGUUAXKEVHVQWSYTXBVNVRVOVPVSYOYPRYNXLPLXLYNPL
+      UFYIYNXLVTVCWAWMYDYMYEWBZXQWMYCUUBYAWMWODURMZVGQOZYCUUBWMXHUUDWMXFXHXIVDD
+      VHVQYBWTUUCWOWCVRVOWDWEWFWGWHWIWJWKWEWL $.
+
+    $( Lemma for ~ ltexpri .  Reverse directon of our result for lower cuts.
+       (Contributed by Jim Kingdon, 17-Dec-2019.) $)
+    ltexprlemrl $p |- ( A <P B -> ( 1st ` B ) C_ ( 1st ` ( A +P. C ) ) ) $=
+      ( vv vz cfv co cv wcel wa cplq cnq cnp syl sylan syl2anc ad2antrr vw cltp
+      vu vs vf vg vh wbr c1st cpp c2nd cop wrex ltrelpr brel prop prnmaddl cltq
+      simprd simpld prarloc ad2ant2r wceq w3o simplll simplrl elprnql ad3antrrr
+      adantr nqtri3or wb ltexnqq biimpa simprr wex simprl simpr simplrr prcunqu
+      wi mpd addcomnqg adantl w3a addassnqg caov32d oveq1 eleq1d mpbird eqeltrd
+      eleq1 anbi12d spcegv anabsi5 ltexprlemell sylanbrc ltexprlempr genpprecll
+      df-iplp addclnq mp2and eqeltrrd rexlimddv ex ltaddpr ltprordil sseld sylc
+      prcdnql sylsyld 3jaod rexlimdvva ssrdv ) CDUBUHZUADUIIZCEUJJZUIIZXNUAKZXO
+      LZXRXQLZXNXSMZXRGKZNJZXOLZXTGOXNXODUKIZULPLZXSYDGOUMXNDPLZYFXNCPLZYGCDPPU
+      BUNUOZUSDUPQZGXRYEXOUQRYAYBOLZYDMZMZUCKZHKZYBNJZURUHZUCCUKIZUMHCUIIZUMZXT
+      XNYKYTXSYDXNYSYRULPLZYKYTXNYHUUAXNYHYGYIUTZCUPQZYBYRYSHUCVARVBYMYQXTHUCYS
+      YRYMYOYSLZYNYRLZMZMZYQXTUUGYQMZYOXRURUHZYOXRVCZXRYOURUHZVDZXTUUHYOOLZXROL
+      ZUULUUHXNUUDUUMUUGXNYQXNXSYLUUFVEZVIZYMUUDUUEYQVFZXNUUAUUDUUMUUCYOYRYSVGR
+      SZYAUUNYLUUFYQXNYFXSUUNYJXRYEXOVGRVHZYOXRVJSUUHUUIXTUUJUUKUUHUUIXTUUHUUIM
+      ZYOUDKZNJZXRVCZXTUDOUUHUUIUVCUDOUMZUUHUUMUUNUUIUVDVKUURUUSUDYOXRVLSVMUUTU
+      VAOLZUVCMZMZUVBXRXQUUTUVEUVCVNZUVGUUDUVAEUIILZUVBXQLZUUHUUDUUIUVFUUQTUVGU
+      VEBKZYRLZUVKUVANJZXOLZMZBVOZUVIUUTUVEUVCVPZUVGYPYRLZYPUVANJZXOLZUVPUUHUVR
+      UUIUVFUUHYQUVRUUGYQVQUUHXNUUEYQUVRVTZUUPYMUUDUUEYQVRXNUUAUUEUWAUUCYPYNYRY
+      SVSRSWATUVGUVSUVBYBNJZXOUVGUEUFUGYOYBUVAONUUHUUMUUIUVFUURTUUGYKYQUUIUVFYA
+      YKYDUUFVFVHUVQUEKZOLZUFKZOLZMUWCUWENJZUWEUWCNJVCUVGUWCUWEWBWCUWDUWFUGKZOL
+      WDUWGUWHNJUWCUWEUWHNJNJVCUVGUWCUWEUWHWEWCWFUVGUWBXOLZYDUUGYDYQUUIUVFYAYKY
+      DUUFVRVHUVGUVCUWIYDVKUVHUVCUWBYCXOUVBXRYBNWGWHQWIWJUVRUVTUVPUVOUVRUVTMBYP
+      YRUVKYPVCZUVLUVRUVNUVTUVKYPYRWKUWJUVMUVSXOUVKYPUVANWGWHWLWMWNSABCDEUDFWOW
+      PUVGYHEPLZUUDUVIMUVJVTUUHYHUUIUVFUUHXNYHUUPUUBQTUUHUWKUUIUVFUUHXNUWKUUPAB
+      CDEFWQZQTHUEGAUACEYOUVAUJNAUAGUEHWSUWCYBWTWRSXAXBXCXDUUHUUJXTUUHUUJMZXNXR
+      YSLZXTUUGXNYQUUJUUOTUWMYOXRYSUUHUUJVQUUHUUDUUJUUQVIXBXNCXPUBUHZUWNXTVTXNY
+      HUWKUWOUUBUWLCEXESUWOYSXQXRCXPXFXGQZXHXDUUHXNUUKUWNXTUUPUUHXNUUDUUKUWNVTZ
+      UUPUUQXNUUAUUDUWQUUCYOXRYRYSXIRSUWPXJXKWAXDXLWAXCXDXM $.
+
+    $( Lemma for ~ ltexpri .  One direction of our result for upper cuts.
+       (Contributed by Jim Kingdon, 17-Dec-2019.) $)
+    ltexprlemfu $p |- ( A <P B -> ( 2nd ` ( A +P. C ) ) C_ ( 2nd ` B ) ) $=
+      ( vz vw vu vf wbr co cfv cv wcel cplq cnp wa cnq cltq vg vh cltp cpp c2nd
+      wceq wrex ltrelpr brel simpld ltexprlempr df-iplp addclnq genpelvu simprr
+      wb syl2anc c1st wex ltexprlemelu biimpi ad2antlr simprd adantl w3a prltlu
+      cop prop syl syl3an1 3com23 3adant2r ltanqg elprnql sylan adantrr 3adant2
+      3adant3r elprnqu 3adant3 adantrl addcomnqg caovord2d prcunqu sylbid 3expa
+      wi mpd exlimddv eqeltrd expr rexlimdvva ssrdv ) CDUCKZGCEUDLUEMZDUEMZWNGN
+      ZWOOZWQHNZINZPLZUFZIEUEMZUGHCUEMZUGZWQWPOZWNCQOZEQOZWRXEUPWNXGDQOZCDQQUCU
+      HUIZUJZABCDEFUKZJUAUBGBCEWQHIUDPGBUBUAJULUANZUBNZUMUNUQWNXBXFHIXDXCWNWSXD
+      OZWTXCOZRZXBXFWNXQXBRZRZWQXAWPWNXQXBUOXSBNZCURMZOZXTWTPLZWPOZRZXAWPOZBXRY
+      EBUSZWNXRWTSOZYGXPYHYGRZXOXBXPYIABCDEIFUTVAVBVCVDWNXRYEYFWNXRYEVEZXTWSTKZ
+      YFWNXRYBYKYDWNXQYBYKXBWNXOYBYKXPWNYBXOYKWNYAXDVGQOZYBXOYKWNXGYLXKCVHVIZXT
+      WSXDYAVFVJVKVLVLVRYJYKYCXATKZYFYJJUAUBXTWSWTTSPJNZSOZXMSOZXNSOVEYOXMTKXNY
+      OPLXNXMPLTKUPYJYOXMXNVMVDWNYEXTSOZXRWNYBYRYDWNYLYBYRYMXTXDYAVNVOVPVQWNXRW
+      SSOZYEWNXQYSXBWNXOYSXPWNYLXOYSYMWSXDYAVSVOVPVPVTWNXRYHYEWNXQYHXBWNXPYHXOW
+      NEURMZXCVGQOZXPYHWNXHUUAXLEVHVIWTXCYTVSVOWAVPVTYPYQRYOXMPLXMYOPLUFYJYOXMW
+      BVDWCWNYEYNYFWGZXRWNYDUUBYBWNDURMZWPVGQOZYDUUBWNXIUUDWNXGXIXJVCDVHVIXAYCW
+      PUUCWDVOWAVQWEWHWFWIWJWKWLWEWM $.
+
+    $( Lemma for ~ ltexpri .  One direction of our result for upper cuts.
+       (Contributed by Jim Kingdon, 17-Dec-2019.) $)
+    ltexprlemru $p |- ( A <P B -> ( 2nd ` B ) C_ ( 2nd ` ( A +P. C ) ) ) $=
+      ( vv vz wbr cfv co cv wcel wa cltq cnp syl cplq cnq ad2antrr vw cltp c2nd
+      vt vu vs vq vf vg vh cpp c1st wrex ltrelpr brel simprd prop prnminu sylan
+      cop wceq simprr wb elprnqu ad2ant2r adantr ltexnqq syl2anc simpld prarloc
+      mpbid adantlr simplll ltdfpr biimpd mpcom simplrl simprrl syl3an1 syl3anc
+      prltlu simprrr ltsonq ltrelnq sotri rexlimddv simplrr oveq1 eqeq1d mpbird
+      elprnql simprl addcomnqg adantl w3a addassnqg caov32d prcunqu mpd eqeltrd
+      simpr wi wex eleq1 eleq1d anbi12d spcegv anabsi5 ltexprlemelu ltexprlempr
+      sylanbrc df-iplp addclnq genppreclu mp2and eqeltrrd ex rexlimdvva ssrdv )
+      CDUBIZUADUCJZCEUKKUCJZXTUALZYAMZYCYBMZXTYDNZUDLZYCOIZYEUDYAXTDULJZYAUTPMZ
+      YDYHUDYAUMXTDPMZYJXTCPMZYKCDPPUBUNUOZUPDUQQZUDYCYAYIURUSYFYGYAMZYHNZNZYGG
+      LZRKZYCVAZYEGSYQYHYTGSUMZYFYOYHVBYQYGSMZYCSMZYHUUAVCXTYOUUBYDYHXTYJYOUUBY
+      NYGYAYIVDUSVEYFUUCYPXTYJYDUUCYNYCYAYIVDUSVFGYGYCVGVHVKYQYRSMZYTNZNZUELZHL
+      ZYRRKZOIZUECUCJZUMHCULJZUMZYEYFUUDUUMYPYTXTUUDUUMYDXTUULUUKUTPMZUUDUUMXTY
+      LUUNXTYLYKYMVIZCUQQZYRUUKUULHUEVJUSVLVEUUFUUJYEHUEUULUUKUUFUUHUULMZUUGUUK
+      MZNZNZUUJYEUUTUUJNZUUHUFLZRKZYGVAZYEUFSUVAUUHYGOIZUVDUFSUMZUVAUGLZUUKMZUV
+      GYIMZNZUVEUGSUVAXTUVJUGSUMZUUFXTUUSUUJXTYDYPUUEVMZTZYLYKNZXTUVKYMUVNXTUVK
+      CDUGVNVOVPQUVAUVGSMZUVJNZNZUUHUVGOIZUVGYGOIZUVEUVQXTUUQUVHUVRUUTXTUUJUVPU
+      UFXTUUSUVLVFZTZUVAUUQUVPUUFUUQUURUUJVQZVFUVAUVOUVHUVIVRXTUUNUUQUVHUVRUUPU
+      UHUVGUUKUULWAVSVTUVQXTUVIYOUVSUWAUVAUVOUVHUVIWBUUTYOUUJUVPUUFYOUUSYFYOYHU
+      UEVQVFZTXTYJUVIYOUVSYNUVGYGYAYIWAVSVTUUHUVGYGOSWCWDWEVHWFUUHSMZUUBNZUVEUV
+      FUUHYGSSOWDUOUWEUVEUVFUFUUHYGVGVOVPQUVAUVBSMZUVDNZNZUVCYRRKZYCYBUWHUWIYCV
+      AZYTUUTYTUUJUWGYQUUDYTUUSWGTUWHUVDUWJYTVCUVAUWFUVDVBZUVDUWIYSYCUVCYGYRRWH
+      WIQWJUWHUUIUVBRKZUWIYBUWHUHUIUJUUHYRUVBSRUUTUWDUUJUWGYQUUSUWDUUEYFUUQUWDY
+      PUURXTUUQUWDYDXTUUNUUQUWDUUPUUHUUKUULWKUSVLVEVLTUUTUUDUUJUWGYQUUDYTUUSVQT
+      UVAUWFUVDWLZUHLZSMZUILZSMZNUWNUWPRKZUWPUWNRKVAUWHUWNUWPWMWNUWOUWQUJLZSMWO
+      UWRUWSRKUWNUWPUWSRKRKVAUWHUWNUWPUWSWPWNWQUWHUUIUUKMZUVBEUCJMZUWLYBMZUVAUW
+      TUWGUVAUUJUWTUUTUUJXAUVAXTUURUUJUWTXBZUVMUUFUUQUURUUJWGXTUUNUURUXCUUPUUIU
+      UGUUKUULWRUSVHWSVFUWHUWFBLZUULMZUXDUVBRKZYAMZNZBXCZUXAUWMUWHUUQUVCYAMZUXI
+      UVAUUQUWGUWBVFUWHUVCYGYAUWKUUTYOUUJUWGUWCTWTUUQUXJUXIUXHUUQUXJNBUUHUULUXD
+      UUHVAZUXEUUQUXGUXJUXDUUHUULXDUXKUXFUVCYAUXDUUHUVBRWHXEXFXGXHVHABCDEUFFXIX
+      KUWHYLEPMZUWTUXANUXBXBUWHXTYLUUTXTUUJUWGUVTTZUUOQUWHXTUXLUXMABCDEFXJQHUHG
+      AUACEUUIUVBUKRAUAGUHHXLUWNYRXMXNVHXOXPXPWFXQXRWSWFWFXQXS $.
+  $}
+
+  ${
+    $d x y z u v A $.  $d x y z u v B $.
+    $( Proposition 9-3.5(iv) of [Gleason] p. 123.  (Contributed by NM,
+       13-May-1996.)  (Revised by Mario Carneiro, 14-Jun-2013.) $)
+    ltexpri $p |- ( A <P B -> E. x e. P. ( A +P. x ) = B ) $=
+      ( vz vy vu vv cv c2nd cfv wcel cplq co wa wex cnq crab cnp wceq eleq1d wb
+      cltp wbr c1st cop cpp wrex simpr oveq12d anbi12d cbvexdva cbvrabv opeq12i
+      simpl ltexprlempr ltexprlemfl ltexprlemrl ltexprlemfu ltexprlemru ltrelpr
+      eqssd simpld addclpr syl2anc simprd preqlu mpbir2and oveq2 eqeq1d rspcev
+      brel ) BCUBUCZDHZBIJZKZVMEHZLMZCUDJZKZNZDOZEPQZVMBUDJZKZVQCIJZKZNZDOZEPQZ
+      UEZRKZBWJUFMZCSZBAHZUFMZCSZARUGFGBCWJWBGHZVNKZWQFHZLMZVRKZNZGOZFPQWIWQWCK
+      ZWTWEKZNZGOZFPQWAXCEFPVPWSSZVTXBDGXHVMWQSZNZVOWRVSXAXJVMWQVNXHXIUHZTXJVQW
+      TVRXJVMWQVPWSLXKXHXIUNUIZTUJUKULWHXGEFPXHWGXFDGXJWDXDWFXEXJVMWQWCXKTXJVQW
+      TWEXLTUJUKULUMZUOZVLWMWLUDJZVRSZWLIJZWESZVLXOVRFGBCWJXMUPFGBCWJXMUQVAVLXQ
+      WEFGBCWJXMURFGBCWJXMUSVAVLWLRKZCRKZWMXPXRNUAVLBRKZWKXSVLYAXTBCRRUBUTVKZVB
+      XNBWJVCVDVLYAXTYBVEWLCVFVDVGWPWMAWJRWNWJSWOWLCWNWJBUFVHVIVJVD $.
+  $}
+
+  ${
+    $d A f g h q r s t u v w $.  $d B f g h q r s t u v w $.
+    $d C f g h q r s t u v w $.
+    $( Lemma for ~ addcanprg .  (Contributed by Jim Kingdon, 25-Dec-2019.) $)
+    addcanprleml $p |- ( ( ( A e. P. /\ B e. P. /\ C e. P. ) /\
+        ( A +P. B ) = ( A +P. C ) ) -> ( 1st ` B ) C_ ( 1st ` C ) ) $=
+      ( vf vg vh cnp wcel co wceq wa cfv cv cplq cnq c2nd syl ad3antrrr syl2anc
+      adantr vv vw vt vq vu vr vs w3a cpp c1st wrex cop prop prnmaddl 3ad2antl2
+      adantlr simprl halfnqq cltq wbr prarloc 3ad2antl1 ad2ant2r simplll simp1d
+      sylan wn simp2d addclpr simplrl elprnql simplr ad2antrr addclnq prdisj wi
+      df-iplp genpprecll 3adant3 ancomsd imp anassrs addcomnqg adantl addassnqg
+      adantrll caov4d simprr oveq2d syl3anc 3eqtrd simpr simplrr prcunqu simp3d
+      mpd genppreclu mp2and eqeltrrd wb fveq2 eleq2d mpbird mtand ltaddnq prloc
+      jca wo ecased ex rexlimdvva rexlimddv ssrdv ) AGHZBGHZCGHZUHZABUIIZACUIIZ
+      JZKZUABUJLZCUJLZYAUAMZYBHZYDYCHZYAYEKZYDUBMZNIZYBHZYFUBOXQYEYJUBOUKZXTXOX
+      NYEYKXPXOYBBPLZULGHZYEYKBUMZUBYDYLYBUNVFUOUPYGYHOHZYJKZKZUCMZYRNIZYHJZYFU
+      COYQYOYTUCOUKYGYOYJUQUCYHURQYQYROHZYTKZKZUDMZUEMZYRNIZUSUTZUDAPLZUKUEAUJL
+      ZUKZYFYGUUBUUJYPYAUUBUUJYEXQUUAUUJXTYTXNXOUUAUUJXPXNUUIUUHULGHZUUAUUJAUMZ
+      YRUUHUUIUEUDVAVFVBVCUPUPUUCUUGYFUEUDUUIUUHUUCUUEUUIHZUUDUUHHZKZKZUUGYFUUP
+      UUGKZYFYDYRNIZCPLZHZUUQUUTUUEYINIZXRUJLZHZUVAXRPLZHZKZUUQUVBUVDULGHZUVAOH
+      ZUVFVGUUQXRGHZUVGUUQXNXOUVIUUQXNXOXPYQXQUUBUUOUUGXQXTYEYPVDRZVEZUUQXNXOXP
+      UVJVHZABVISXRUMQUUQUUEOHZYIOHZUVHUUQUUKUUMUVMUUQXNUUKUVKUULQUUCUUMUUNUUGV
+      JUUEUUHUUIVKSZUUQYDOHZYOUVNUUQYMYEUVPUUQXOYMUVLYNQYQYEUUBUUOUUGYAYEYPVLRY
+      DYLYBVKSZUUCYOUUOUUGYGYOYJUUBVJZVMYDYHVNSUUEYIVNSUVAUVDUVBVOSUUQUUTKZUVCU
+      VEUUPUVCUUGUUTYQUUMUVCUUBUUNYGYPUUMUVCYGYJUUMUVCYOYGYJUUMKUVCYGUUMYJUVCXQ
+      UUMYJKUVCVPZXTYEXNXOUVTXPDEFUFUGABUUEYIUINUFUGFEDVQZEMZFMZVNZVRVSVMVTWAWF
+      WBVCVMUVSUVEUVAXSPLZHZUVSUUFUURNIZUVAUWEUVSUWGUUEYDNIZYSNIUWHYHNIZUVAUVSD
+      EFUUEYRYDYRONUUQUVMUUTUVOTZUUQUUAUUTUUCUUAUUOUUGYQUUAYTUQVMZTZUUQUVPUUTUV
+      QTZDMZOHZUWBOHZKZUWNUWBNIZUWBUWNNIJUVSUWNUWBWCWDUWOUWPUWCOHUHUWRUWCNIUWNU
+      WBUWCNINIJUVSUWNUWBUWCWEWDUWLUWQUWROHUVSUWNUWBVNWDWGUVSYSYHUWHNUUCYTUUOUU
+      GUUTYQUUAYTWHRWIUVSUVMUVPYOUWIUVAJUWJUWMUUCYOUUOUUGUUTUVRRUUEYDYHWEWJWKUV
+      SUUFUUHHZUUTUWGUWEHZUUQUWSUUTUUQUUGUWSUUPUUGWLUUQXNUUNUUGUWSVPZUVKUUCUUMU
+      UNUUGWMXNUUKUUNUXAUULUUFUUDUUHUUIWNVFSWPTUUQUUTWLUVSXNXPUWSUUTKUWTVPUUQXN
+      UUTUVKTUUQXPUUTUUQXNXOXPUVJWOZTDEFUFUGACUUFUURUINUWAUWDWQSWRWSUVSXTUVEUWF
+      WTUUCXTUUOUUGUUTYAXTYEYPUUBXQXTWLRRXTUVDUWEUVAXRXSPXAXBQXCXGXDUUQYCUUSULG
+      HZYDUURUSUTZYFUUTXHUUQXPUXCUXBCUMQUUQUVPUUAUXDUVQUWKYDYRXESYDUURUUSYCXFSX
+      IXJXKWPXLXLXJXM $.
+
+    $( Lemma for ~ addcanprg .  (Contributed by Jim Kingdon, 25-Dec-2019.) $)
+    addcanprlemu $p |- ( ( ( A e. P. /\ B e. P. /\ C e. P. ) /\
+        ( A +P. B ) = ( A +P. C ) ) -> ( 2nd ` B ) C_ ( 2nd ` C ) ) $=
+      ( vr vw cnp wcel co wceq wa cfv cv cltq wbr c1st adantlr cplq cnq syl2anc
+      syl vv vt vu vf vg vh vq vs w3a cpp c2nd wrex cop prnminu sylan 3ad2antl2
+      prop simprr ltrelnq brel ltexnqq biimpd simprl halfnqq prarloc2 3ad2antl1
+      mpcom adantrr wn simplll ad3antrrr simp1d addclpr elprnql simplrl addclnq
+      simp2d elprnqu prdisj addassnqg syl3anc addcomnqg oveq2d adantr wi simp3d
+      eqtrd simpr df-iplp genpprecll mp2and eqeltrd wb eleq2d mpbird genppreclu
+      fveq2 ancomsd 3adant3 ad2antrr imp adantrlr anassrs ad2ant2rl jca ltaddnq
+      mtand wo simplrr breqtrd ltanqi prloc orcomd ecased rexlimddv ex ssrdv )
+      AFGZBFGZCFGZUIZABUJHZACUJHZIZJZUABUKKZCUKKZYEUALZYFGZYHYGGZYEYIJZDLZYHMNZ
+      YJDYFYAYIYMDYFULZYDXSXRYIYNXTXSBOKZYFUMFGZYIYNBUQZDYHYFYOUNUOUPPYKYLYFGZY
+      MJZJZYLELZQHZYHIZYJERYTYMUUCERULZYKYRYMURYLRGZYHRGJZYMUUDYLYHRRMUSUTUUFYM
+      UUDEYLYHVAVBVGTYTUUARGZUUCJZJZUBLZUUJQHZUUAIZYJUBRUUIUUGUULUBRULYTUUGUUCV
+      CUBUUAVDTUUIUUJRGZUULJZJZUCLZUUJQHZAUKKZGZYJUCAOKZYTUUNUUSUCUUTULZUUHYKUU
+      NUVAYSYEUUNUVAYIYAUUNUVAYDXRXSUUNUVAXTXRUUMUVAUULXRUUTUURUMFGZUUMUVAAUQZU
+      UJUURUUTUCVEUOVHVFPPPPUUOUUPUUTGZUUSJZJZYJYLUUJQHZCOKZGZUVFUVIUUQYLQHZYBO
+      KZGZUVJYBUKKZGZJZUVFUVKUVMUMFGZUVJRGZUVOVIUVFYBFGZUVPUVFXRXSUVRUVFXRXSXTY
+      TYAUUHUUNUVEYAYDYIYSVJVKZVLZUVFXRXSXTUVSVQZABVMSYBUQTUVFUUQRGZUUEUVQUVFUU
+      PRGZUUMUWBUVFUVBUVDUWCUVFXRUVBUVTUVCTUUOUVDUUSVCUUPUURUUTVNSZUUIUUMUULUVE
+      VOZUUPUUJVPSUVFYPYRUUEUVFXSYPUWAYQTYTYRUUHUUNUVEYKYRYMVCVKYLYFYOVRSZUUQYL
+      VPSUVJUVMUVKVSSUVFUVIJZUVLUVNUWGUVLUVJYCOKZGZUWGUVJUUPUVGQHZUWHUVFUVJUWJI
+      UVIUVFUVJUUPUUJYLQHZQHZUWJUVFUWCUUMUUEUVJUWLIUWDUWEUWFUUPUUJYLVTWAUVFUUMU
+      UEUWLUWJIUWEUWFUUMUUEJUWKUVGUUPQUUJYLWBWCSWGWDUWGUVDUVIUWJUWHGZUUOUVDUUSU
+      VIVOUVFUVIWHUWGXRXTUVDUVIJUWMWEUVFXRUVIUVTWDUVFXTUVIUVFXRXSXTUVSWFZWDUDUE
+      UFUGUHACUUPUVGUJQUGUHUFUEUDWIZUELUFLVPZWJSWKWLUWGYDUVLUWIWMUUIYDUUNUVEUVI
+      YEYDYIYSUUHYAYDWHVKVKYDUVKUWHUVJYBYCOWQWNTWOUVFUVNUVIUUIUVEUVNUUNYTUUSUVN
+      UUHUVDYKYSUUSUVNYKYRUUSUVNYMYKYRUUSJZUVNYAUWQUVNWEZYDYIXRXSUWRXTXRXSJUUSY
+      RUVNUDUEUFUGUHABUUQYLUJQUWOUWPWPWRWSWTXAXBXCXDPWDXEXGUVFUVIYJUVFUVHYGUMFG
+      ZUVGYHMNUVIYJXHUVFXTUWSUWNCUQTUVFUVGUUBYHMUVFUUJUUAMNUUEUVGUUBMNUVFUUJUUK
+      UUAMUVFUUMUUMUUJUUKMNUWEUWEUUJUUJXFSUUIUUMUULUVEXIXJUWFUUJUUAYLXKSUUIUUCU
+      UNUVEYTUUGUUCURWTXJUVGYHYGUVHXLSXMXNXOXOXOXOXPXQ $.
+  $}
+
+  $( Addition cancellation law for positive reals.  Proposition 9-3.5(vi) of
+     [Gleason] p. 123.  (Contributed by Jim Kingdon, 24-Dec-2019.) $)
+  addcanprg $p |- ( ( A e. P. /\ B e. P. /\ C e. P. ) ->
+                 ( ( A +P. B ) = ( A +P. C ) -> B = C ) ) $=
+    ( cnp wcel w3a cpp co wceq c1st cfv c2nd addcanprleml wss 3ancomb
+    wa eqcom sylbi eqssd addcanprlemu anbi12i wb preqlu adantr mpbird
+    jca 3adant1 ex ) ADEZBDEZCDEZFZABGHZACGHZIZBCIZULUOPZUPBJKZCJKZIZ
+    BLKZCLKZIZPZUQUTVCUQURUSABCMUQUIUKUJFZUNUMIZPZUSURNULVEUOVFUIUJUK
+    OUMUNQUAZACBMRSUQVAVBABCTUQVGVBVANVHACBTRSUFULUPVDUBZUOUJUKVIUIBC
+    UCUGUDUEUH $.
+
+  ${
+    $d x A $.  $d x B $.  $d x C $.
+    $( Lemma for Proposition 9-3.5(v) of [Gleason] p. 123.  (Contributed by NM,
+       8-Apr-1996.) $)
+    ltaprlem $p |- ( C e. P. -> ( A <P B ->
+                    ( C +P. A ) <P ( C +P. B ) ) ) $=
+      ( vx cltp wbr cnp wcel cpp co wa cv wceq wrex ltexpri adantr ltrelpr brel
+      simplr syl2anc simpld addclpr simprl ltaddpr syl3anc oveq2 ad2antll eqtrd
+      addassprg breqtrd rexlimddv expcom ) ABEFZCGHZCAIJZCBIJZEFZUMUNKZADLZIJZB
+      MZUQDGUMVADGNUNDABOPURUSGHZVAKZKZUOUOUSIJZUPEVDUOGHZVBUOVEEFVDUNAGHZVFUMU
+      NVCSZURVGVCUMVGUNUMVGBGHABGGEQRUAPPZCAUBTURVBVAUCZUOUSUDTVDVECUTIJZUPVDUN
+      VGVBVEVKMVHVIVJCAUSUIUEVAVKUPMURVBUTBCIUFUGUHUJUKUL $.
+
+    $( Ordering property of addition.  Proposition 9-3.5(v) of [Gleason]
+       p. 123.  Part of Definition 11.2.7(vi) of [[HoTT]], p.  (varies).
+       (Contributed by Jim Kingdon, 26-Dec-2019.) $)
+    ltaprg $p |- ( ( A e. P. /\ B e. P. /\ C e. P. ) ->
+        ( A <P B <-> ( C +P. A ) <P ( C +P. B ) ) ) $=
+      ( vx cnp wcel w3a cltp wbr cpp co wi ltaprlem 3ad2ant3 wa cv wceq ltexpri
+      wrex syl2anc adantl simpl1 simprl ltaddpr addassprg 3com12 adantrr simprr
+      3expa eqtr3d 3adantl2 simpl3 addclpr simpl2 addcanprg syl3anc mpd breqtrd
+      adantlr rexlimddv ex impbid ) AEFZBEFZCEFZGZABHIZCAJKZCBJKZHIZVEVCVGVJLVD
+      ABCMNVFVJVGVFVJOVHDPZJKZVIQZVGDEVJVMDESVFDVHVIRUAVFVKEFZVMOZVGVJVFVOOZAAV
+      KJKZBHVPVCVNAVQHIVCVDVEVOUBZVFVNVMUCZAVKUDTVPCVQJKZVIQZVQBQZVCVEVOWAVDVCV
+      EOZVOOVLVTVIWCVNVLVTQZVMVCVEVNWDVEVCVNWDCAVKUEUFUIUGWCVNVMUHUJUKVPVEVQEFZ
+      VDWAWBLVCVDVEVOULVPVCVNWEVRVSAVKUMTVCVDVEVOUNCVQBUOUPUQURUSUTVAVB $.
   $}
 
 $(
@@ -65465,27 +65962,18 @@ $)
   $}
 
   ${
-    $d x y z $.
-    $( Constructive proof of an adaptation of ~ nn0suc .  (Contributed by BJ,
-       19-Nov-2019.)  (Proof modification is discouraged.) $)
-    bj-nn0suc0 $p |- A. x e. _om ( x = (/) \/ E. y e. x x = suc y ) $=
-      ( vz wtru wi com wral cv c0 wceq csuc wo tru a1tru rgenw bdeq0 a1d weq wn
-      wrex bdeqsuc ax-bdex ax-bdor nfv orc expi wel wcel vex sucid eleq2 mpbiri
-      suceq eqeq2d rspcev mpancom olcd bj-bdfindis mp2an ) DDDEZCFGAHZIJZVABHZK
-      ZJZBVATZLZAFGMUTCFDNOVGDDDACVBVFAPVEBAABUAUBUCDAUDZVHVHVBVGDVBVFUEQACRZVG
-      DVIVGSESNUFVACHZKZJZVGDVLVFVBCAUGZVLVFVLVMVJVKUHVJCUIUJVAVKVJUKULVEVLBVJV
-      ABCRVDVKVAVCVJUMUNUOUPUQQURUS $.
-  $}
-
-  ${
-    $d x y A $.
-    $( Constructive proof of an adaptation of ~ nn0suc .  (Contributed by BJ,
-       19-Nov-2019.)  (Proof modification is discouraged.) $)
-    bj-nn0suc1 $p |- ( A e. _om -> ( A = (/) \/ E. x e. A A = suc x ) ) $=
-      ( vy cv wceq c0 csuc wrex wo wal com wcel eqeq1 rexeqbi1dv orbi12d biimpd
-      wi ax-gen nfcv ax-mp wral bj-nn0suc0 nfv bj-rspgt com12 ) CDZBEZUFFEZUFAD
-      GZEZAUFHZIZBFEZBUIEZABHZIZQQZCJZBKLUPQZUQCUGULUPUGUHUMUKUOUFBFMUJUNAUFBUF
-      BUIMNOPRULCKUAZURUSQCAUBURUTUSULUPCBKCBSCKSUPCUCUDUETT $.
+    $d x y z A $.
+    $( Constructive proof of a variant of ~ nn0suc .  For a constructive proof
+       of ~ nn0suc , see ~ bj-nn0suc .  (Contributed by BJ, 19-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    bj-nn0suc0 $p |- ( A e. _om -> ( A = (/) \/ E. x e. A A = suc x ) ) $=
+      ( vy vz cv c0 wceq csuc wrex wo com eqeq1 rexeqbi1dv wtru wi wral a1d weq
+      a1tru wn orbi12d tru rgenw bdeq0 bdeqsuc ax-bdex ax-bdor nfv orc expi wel
+      wcel vex sucid eleq2 mpbiri suceq eqeq2d rspcev mpancom bj-bdfindis mp2an
+      olcd vtoclri ) CEZFGZVEAEZHZGZAVEIZJZBFGZBVHGZABIZJCBKVEBGVFVLVJVNVEBFLVI
+      VMAVEBVEBVHLMUANNNOZDKPVKCKPUBVODKNSUCVKNNNCDVFVJCUDVIACCAUEUFUGNCUHZVPVP
+      VFVKNVFVJUIQCDRZVKNVQVKTOTSUJVEDEZHZGZVKNVTVJVFDCUKZVTVJVTWAVRVSULVRDUMUN
+      VEVSVRUOUPVIVTAVRVEADRVHVSVEVGVRUQURUSUTVCQVAVBVD $.
   $}
 
   ${
@@ -65570,13 +66058,13 @@ $)
 
   ${
     $d x y A $.
-    $( Proof of ~ nn0suc from ~ bj-nn0suc1 .  Note that contrary to
-       ~ bj-nn0suc1 , it is NOT constructive because of the use of ~ omelon .
+    $( Proof of ~ nn0suc from ~ bj-nn0suc0 .  Note that contrary to
+       ~ bj-nn0suc0 , it is NOT constructive because of the use of ~ omelon .
        For a constructive proof, see ~ bj-nn0suc .  (Contributed by BJ,
        19-Nov-2019.)  (Proof modification is discouraged.)
        (New usage is discouraged.) $)
     bj-nn0sucALT $p |- ( A e. _om -> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
-      ( com wcel c0 wceq cv csuc wo bj-nn0suc1 wss wi omelon onelssi ssrexv syl
+      ( com wcel c0 wceq cv csuc wo bj-nn0suc0 wss wi omelon onelssi ssrexv syl
       wrex orim2d mpd ) BCDZBEFZBAGHFZABQZIUAUBACQZIABJTUCUDUATBCKUCUDLCBMNUBAB
       COPRS $.
   $}
@@ -65773,8 +66261,11 @@ $)
 
   ${
     $d a x y z A $.
-    $( Constructive proof of (biconditional form of) ~ nn0suc .  (Contributed
-       by BJ, 8-Dec-2019.)  (Proof modification is discouraged.) $)
+    $( Constructive proof of (the biconditional form of) ~ nn0suc .  As a
+       characterization of the elements of ` _om ` , this could be labelled
+       "elom".  See also ~ bj-nn0suc0 for a proof of a (less useful) variant
+       from ~ ax-infvn .  (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.) $)
     bj-nn0suc $p |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
       ( va vy vz com wcel c0 wceq cv csuc wrex wo wb wal wi ax-mp bibi12d eleq1
       cvv wex ax-inf2 bdcv bj-inf2vn eleq2 rexeq orbi2d albidv nfcv eqeq1 suceq
@@ -65799,38 +66290,48 @@ $(
 
 $)
 
-$(
   ${
-    $d x y $.  $d y ph $.
+    $d x y z $.  $d y z ph $.  $d ps z $.  $d ch z $.  $d th z $.
     bj-findis.nf0 $e |- F/ x ps $.
     bj-findis.nf1 $e |- F/ x ch $.
     bj-findis.nfsuc $e |- F/ x th $.
     bj-findis.0 $e |- ( x = (/) -> ( ps -> ph ) ) $.
     bj-findis.1 $e |- ( x = y -> ( ph -> ch ) ) $.
     bj-findis.suc $e |- ( x = suc y -> ( th -> ph ) ) $.
-    @( Full induction (principle of induction), using implicit substitutions.
-       Constructive proof.  (Contributed by BJ, 22-Nov-2019.)
-       (Proof modification is discouraged.) @)
-    bj-findis $p |-
-                    ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $=
-      (  ) ? $.
+    $( Full induction (principle of induction), using implicit substitutions.
+       Constructive proof.  (Contributed by BJ, 22-Dec-2019.)
+       (Proof modification is discouraged.) $)
+    bj-findis $p |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $=
+      ( vz wi com wral wa wcel wceq nfv cv wal c0 csuc wrex wo bj-nn0suc pm3.21
+      ad2antrr pm2.04 ralimi2 imim2 ral2imi imp sylan2 r19.29 sucid mpbiri ax-1
+      vex eleq2 pm2.27 anim12ii mpdan impcom reximi syl adantll orim12d alrimiv
+      ex syl7bi nfim nfan nfcv nfrexxy nfor biimprd imim12d biimpd eqtr expimpd
+      eleq1 rexlimdvw jaod setindis df-ral sylibr ) BCDNZFOPZQZEUAZORZANZEUBZAE
+      OPWKFUAZORZCNZFMUAZPZWSORZWSUCSZBQZWSWPUDZSZDQZFOUEZUFZNZNZMUBWOWKXJMXAXB
+      XEFOUEZUFZWKWTXHFWSUGWKWTXLXHNWKWTQXBXCXKXGBXBXCNWJWTBXBUHUIWJWTXKXGNZBWJ
+      WTQWPWSRZDNZFOPZXMWTWJXNCNZFOPZXPWRXQFWSOXNWQCUJUKWJXRXPWIXQXOFOCDXNULUMU
+      NUOXPXKXGXPXKQXOXEQZFOUEXGXOXEFOUPXSXFFOXEXOXFXEXNXOXFNXEXNWPXDRWPFUTUQWS
+      XDWPVAURXEXOXEXNDXEXOUSXNDVBVCVDVEVFVGVKVGVHVIVKVLVJWNWRXIEMFWQCEWQETHVMX
+      AXHEXAETXCXGEXBBEXBETGVNXFEFOEOVOXEDEXEETIVNVPVQVMWNMTWRMTWLWPSZWQWMACXTW
+      MWQWLWPOWCVRKVSWLWSSZWMXAXHAYAWMXAWLWSOWCVTYAXCAXGYAXBBAYAXBQWLUCSBANWLWS
+      UCWAJVGWBYAXFAFOYAXEDAYAXEQWLXDSDANWLWSXDWALVGWBWDWEVSWFVGAEOWGWH $.
   $}
-$)
 
+$(
   ${
     $d x y z $.  $d y z ph $.
     bj-findeslem.dummy $e |- ( ps <-> ( x e. _om -> ph ) ) $.
-    $( Lemma for bj-findes .  (Contributed by BJ, 24-Nov-2019.)
-       (Proof modification is discouraged.) $)
+    @( Lemma for bj-findes .  (Contributed by BJ, 24-Nov-2019.)
+       (Proof modification is discouraged.) @)
     bj-findeslem0 $p |- ( [. (/) / x ]. ph <-> [. (/) / x ]. ps ) $=
       ( c0 wsbc cv com wcel wi 0ex eleq1 sbcie bicomi imbi1i peano1 a1bi cvv wb
       sbcimg ax-mp 3bitr4i sbcbii bitri ) ACEFZCGZHIZAJZCEFZBCEFEHIZUEJUGCEFZUE
       JZUEUIUJUKUEUKUJUGUJCEKUFEHLMNOUJUEPQERIUIULSKUGACERTUAUBUHBCEBUHDNUCUD
       $.
 
-    $( Lemma for bj-findes .  NOT YET constructive because of ~ peano2b .
+    @( Lemma for bj-findes .  NOT YET constructive because of ~ peano2b .
        (Contributed by BJ, 24-Nov-2019.)
-       (Proof modification is discouraged.) $)
+       (Proof modification is discouraged.) @)
     bj-findeslem1BAD $p |-
                ( ( x e. _om -> [. suc x / x ]. ph ) <-> [. suc x / x ]. ps ) $=
       ( cv com wcel csuc wsbc wi peano2b cvv vex bj-sucex sbcel1gv ax-mp bitr4i
@@ -65838,9 +66339,9 @@ $)
       UFIZBCUFIUEUHUGUEUFFGZUHUDKUFLGZUHULRUDCMNZCUFFLOPQSUMUKUIRUNUEACUFLTPUJB
       CUFBUJDUAUBUC $.
 
-    $( Lemma for bj-findes (but probably useless).  Constructive proof.
+    @( Lemma for bj-findes (but probably useless).  Constructive proof.
        (Contributed by BJ, 24-Nov-2019.)
-       (Proof modification is discouraged.) $)
+       (Proof modification is discouraged.) @)
     bj-findeslem1 $p |-
                ( [. suc x / x ]. ps -> ( x e. _om -> [. suc x / x ]. ph ) ) $=
       ( cv csuc wsbc com wcel sbcbii biimpi bj-peano2 cvv vex bj-sucex sbcel1gv
@@ -65848,6 +66349,7 @@ $)
       EUHBUGCUDDJKUFUDHIZUIUCLUDMIZUIUKRUCCNOZCUDHMPSTUHUIUJQZULUHUNRUMUFACUDMU
       ASKUB $.
   $}
+$)
 
 
 $(
