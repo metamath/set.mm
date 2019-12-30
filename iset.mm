@@ -59692,7 +59692,7 @@ $)
   ${
     $d x y z w v u f $.
     $( Multiplication on non-negative fractions.  This definition is similar to
-       ~ df-mq0 but exapands ` Q0. ` (Contributed by Jim Kingdon,
+       ~ df-mq0 but expands ` Q0. ` (Contributed by Jim Kingdon,
        22-Nov-2019.) $)
     dfmq0qs $p |- .Q0 = { <. <. x , y >. , z >. |
       ( ( x e. ( ( _om X. N. ) /. ~Q0 ) /\ y e. ( ( _om X. N. ) /. ~Q0 ) ) /\
