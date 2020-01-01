@@ -57591,8 +57591,7 @@ $)
            closed (third hypothesis), associative (fourth hypothesis), and has
            the cancellation property (fifth hypothesis), show that the relation
            ` .~ ` , specified by the first hypothesis, is transitive.
-           (Contributed by NM, 11-Feb-1996.)  (Revised by Mario Carneiro,
-           26-Apr-2015.) $)
+           (Contributed by Jim Kingdon, 1-Sep-2019.) $)
         ecopovtrng $p |- ( ( A .~ B /\ B .~ C ) -> A .~ C ) $=
           ( wcel wa co vf vg vh vt vs vr cxp w3a wbr cv cop wceq copab opabssxp
           wex eqsstri brel simpld anim12i 3anass sylibr wi breq1 anbi1d imbi12d
@@ -57623,8 +57622,7 @@ $)
            closed (third hypothesis), associative (fourth hypothesis), and has
            the cancellation property (fifth hypothesis), show that the relation
            ` .~ ` , specified by the first hypothesis, is an equivalence
-           relation.  (Contributed by NM, 16-Feb-1996.)  (Revised by Mario
-           Carneiro, 12-Aug-2015.) $)
+           relation.  (Contributed by Jim Kingdon, 1-Sep-2019.) $)
         ecopoverg $p |- .~ Er ( S X. S ) $=
           ( wtru cv wcel wa wceq wbr vf vg vh cxp wer wrel cop wex relopabi a1i
           co ecopovsymg adantl ecopovtrng wi wral simpll simplr caovcomd mpbird
