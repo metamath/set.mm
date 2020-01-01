@@ -63040,12 +63040,11 @@ $)
      [Gleason] p. 123.  (Contributed by Jim Kingdon, 24-Dec-2019.) $)
   addcanprg $p |- ( ( A e. P. /\ B e. P. /\ C e. P. ) ->
                  ( ( A +P. B ) = ( A +P. C ) -> B = C ) ) $=
-    ( cnp wcel w3a cpp co wceq c1st cfv c2nd addcanprleml wss 3ancomb
-    wa eqcom sylbi eqssd addcanprlemu anbi12i wb preqlu adantr mpbird
-    jca 3adant1 ex ) ADEZBDEZCDEZFZABGHZACGHZIZBCIZULUOPZUPBJKZCJKZIZ
-    BLKZCLKZIZPZUQUTVCUQURUSABCMUQUIUKUJFZUNUMIZPZUSURNULVEUOVFUIUJUK
-    OUMUNQUAZACBMRSUQVAVBABCTUQVGVBVANVHACBTRSUFULUPVDUBZUOUJUKVIUIBC
-    UCUGUDUEUH $.
+    ( cnp wcel w3a cpp co wceq wa c1st cfv addcanprleml wss 3ancomb eqcom sylbi
+    c2nd eqssd addcanprlemu anbi12i jca wb preqlu 3adant1 adantr mpbird ex ) AD
+    EZBDEZCDEZFZABGHZACGHZIZBCIZULUOJZUPBKLZCKLZIZBRLZCRLZIZJZUQUTVCUQURUSABCMU
+    QUIUKUJFZUNUMIZJZUSURNULVEUOVFUIUJUKOUMUNPUAZACBMQSUQVAVBABCTUQVGVBVANVHACB
+    TQSUBULUPVDUCZUOUJUKVIUIBCUDUEUFUGUH $.
 
   ${
     $d x A $.  $d x B $.  $d x C $.
@@ -63082,7 +63081,7 @@ $)
       { x | E. y ( y <Q x /\ ( *Q ` y ) e. ( 1st ` A ) ) } >. $.
     $( Membership in the lower cut of ` B ` .  Lemma for ~ recexpr .
        (Contributed by Jim Kingdon, 27-Dec-2019.) $)
-    recexprlemell $p |- ( C e. ( 1st ` B ) <-> 
+    recexprlemell $p |- ( C e. ( 1st ` B ) <->
         E. y ( C <Q y /\ ( *Q ` y ) e. ( 2nd ` A ) ) ) $=
       ( c1st cfv wcel cvv cv cltq wbr wa wex cnq ltrelnq brel adantr exlimiv
       crq c2nd elex simpld syl wceq breq1 anbi1d exbidv fveq2i nqex abssi ssexi
@@ -66080,7 +66079,7 @@ $(
 
   The first three Peano postulates do not require the axiom of infinity.  We
   give constructive proofs (only the proof of the second postulate has to be
-  modified).
+  modified).  We also prove a preliminary version of the fifth Peano postulate.
 
 $)
 
@@ -66094,6 +66093,23 @@ $)
       ( com wind wcel csuc wi bj-omind bj-indsuc ax-mp ) BCABDAEBDFGBAHI $.
   $}
 
+  ${
+    $d x y A $.
+    $( Version of ~ peano5 when ` _om i^i A ` is assumed to be a set, allowing
+       a proof from the core axioms of CZF. (Contributed by BJ, 19-Nov-2019.)
+       (Proof modification is discouraged.) $)
+    peano5set $p |- ( ( _om i^i A ) e. V ->
+      ( ( (/) e. A /\ A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) ) $=
+      ( vy com cin wcel c0 cv csuc wi wral wss cab cint elin wal df-ral eleq2
+      wa dfom3 peano1 mpbiran biimpri bj-peano2 adantr a1i pm3.31 alimi imbi12i
+      jcad albii 3imtr4i sylibr anim12i raleqbi1dv anbi12d elabg syl5ibr intss1
+      wceq imp syl syl5eqss inss2 syl6ss ex ) EBFZCGZHBGZAIZBGZVKJZBGZKZAELZTZE
+      BMVIVQTZEVHBVREHDIZGZVMVSGZAVSLZTZDNZOZVHDAUAVRVHWDGZWEVHMVIVQWFVQWFVIHVH
+      GZVMVHGZAVHLZTZVJWGVPWIWGVJWGHEGVJUBHEBPUCUDVPVKVHGZWHKZAQZWIVKEGZVOKZAQW
+      NVLTZVMEGZVNTZKZAQVPWMWOWSAWOWPWQVNWPWQKWOWNWQVLVKUEUFUGWNVLVNUHUKUIVOAER
+      WLWSAWKWPWHWRVKEBPVMEBPUJULUMWHAVHRUNUOWCWJDVHCVSVHVAVTWGWBWIVSVHHSWAWHAV
+      SVHVSVHVMSUPUQURUSVBVHWDUTVCVDEBVEVFVG $.
+  $}
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -66158,24 +66174,6 @@ $(
   thus provides a model for the set of natural numbers.
 
 $)
-
-  ${
-    $d x y A $.
-    $( Version of ~ peano5 when ` _om i^i A ` is assumed to be a set, allowing
-       a proof from the core axioms of CZF. (Contributed by BJ, 19-Nov-2019.)
-       (Proof modification is discouraged.) $)
-    peano5set $p |- ( ( _om i^i A ) e. V ->
-      ( ( (/) e. A /\ A. x e. _om ( x e. A -> suc x e. A ) ) -> _om C_ A ) ) $=
-      ( vy com cin wcel c0 cv csuc wi wral wss cab cint elin wal df-ral eleq2
-      wa dfom3 peano1 mpbiran biimpri bj-peano2 adantr a1i pm3.31 alimi imbi12i
-      jcad albii 3imtr4i sylibr anim12i raleqbi1dv anbi12d elabg syl5ibr intss1
-      wceq imp syl syl5eqss inss2 syl6ss ex ) EBFZCGZHBGZAIZBGZVKJZBGZKZAELZTZE
-      BMVIVQTZEVHBVREHDIZGZVMVSGZAVSLZTZDNZOZVHDAUAVRVHWDGZWEVHMVIVQWFVQWFVIHVH
-      GZVMVHGZAVHLZTZVJWGVPWIWGVJWGHEGVJUBHEBPUCUDVPVKVHGZWHKZAQZWIVKEGZVOKZAQW
-      NVLTZVMEGZVNTZKZAQVPWMWOWSAWOWPWQVNWPWQKWOWNWQVLVKUEUFUGWNVLVNUHUKUIVOAER
-      WLWSAWKWPWHWRVKEBPVMEBPUJULUMWHAVHRUNUOWCWJDVHCVSVHVAVTWGWBWIVSVHHSWAWHAV
-      SVHVSVHVMSUPUQURUSVBVHWDUTVCVDEBVEVFVG $.
-  $}
 
   ${
     $d x y A $.
@@ -66309,28 +66307,29 @@ $)
   $}
 
   ${
-    $d x y z A $.
+    $d x y A $.  $d x B $.  $d x y z $.
     $( A natural number is a transitive set.  (Contributed by BJ,
        22-Nov-2019.)  (Proof modification is discouraged.) $)
-    bj-nntrans $p |- ( A e. _om -> A. x e. A x C_ A ) $=
-      ( vz vy cv c0 wss wral csuc wi com wcel ral0 syl5bi wceq sseq2 raleqbi1dv
-      nfv biimprd biimpd csn cun wel df-suc eleq2i wo elun sssucid sstr2 imim2i
-      mpi elsni syl6eqss jaod ralimi2 rgenw bdcv bdss ax-bdal nfcv bj-bdfindisg
-      a1i weq mp2an ) AEZFGZAFHZVECEZGZAVHHZVEVHIZGZAVKHZJZCKHBKLVEBGZABHZJVFAM
-      VNCKVIVLAVHVKVEVKLVEVHVHUAZUBZLZACUCZVIJZVLVKVRVEVHUDUEVSVTVEVQLZUFWAVLVE
-      VHVQUGWAVTVLWBVIVLVTVIVHVKGVLVHUHZVEVHVKUIUKUJWBVLJWAWBVEVHVKVEVHULWCUMVB
-      UNNNUOUPVEDEZGZAWDHZVGVJVMVPDCBWEADAWDDUQURUSVGDRVJDRVMDRWDFOWFVGWEVFAWDF
-      WDFVEPQSDCVCWFVJWEVIAWDVHWDVHVEPQTWDVKOWFVMWEVLAWDVKWDVKVEPQSDBUTVPDRWDBO
-      WFVPWEVOAWDBWDBVEPQTVAVD $.
+    bj-nntrans $p |- ( A e. _om -> ( B e. A -> B C_ A ) ) $=
+      ( vx vz vy com wcel cv wss wral c0 csuc wi syl5bi wceq raleqbi1dv biimprd
+      nfv sseq2 biimpd ral0 csn cun wel df-suc eleq2i wo elun sssucid sstr2 mpi
+      imim2i elsni syl6eqss a1i jaod ralimi2 bdcv bdss ax-bdal weq bj-bdfindisg
+      rgenw nfcv mp2an sseq1 rspc syl5com ) AFGZCHZAIZCAJZBAGBAIZVJKIZCKJZVJDHZ
+      IZCVPJZVJVPLZIZCVSJZMZDFJVIVLMVNCUAWBDFVQVTCVPVSVJVSGVJVPVPUBZUCZGZCDUDZV
+      QMZVTVSWDVJVPUEUFWEWFVJWCGZUGWGVTVJVPWCUHWGWFVTWHVQVTWFVQVPVSIVTVPUIZVJVP
+      VSUJUKULWHVTMWGWHVJVPVSVJVPUMWIUNUOUPNNUQVCVJEHZIZCWJJZVOVRWAVLEDAWKCECWJ
+      EURUSUTVOERVRERWAERWJKOWLVOWKVNCWJKWJKVJSPQEDVAWLVRWKVQCWJVPWJVPVJSPTWJVS
+      OWLWAWKVTCWJVSWJVSVJSPQEAVDVLERWJAOWLVLWKVKCWJAWJAVJSPTVBVEVKVMCBAVMCRVJB
+      AVFVGVH $.
   $}
 
   ${
-    $d x A $.  $d x B $.
+    $d A x $.
     $( A natural number is a transitive set.  (Contributed by BJ,
        22-Nov-2019.)  (Proof modification is discouraged.) $)
-    bj-nntrans2 $p |- ( A e. _om -> ( B e. A -> B C_ A ) ) $=
-      ( vx com wcel cv wss wral bj-nntrans nfv sseq1 rspc syl5com ) ADECFZAGZCA
-      HBAEBAGZCAIOPCBAPCJNBAKLM $.
+    bj-nntrans2 $p |- ( A e. _om -> Tr A ) $=
+      ( vx com wcel cv wss wral wtr bj-nntrans ralrimiv dftr3 sylibr ) ACDZBEZA
+      FZBAGAHMOBAANIJBAKL $.
   $}
 
   ${
@@ -66339,16 +66338,16 @@ $)
        natural numbers, which does not require ~ ax-setind .  (Contributed by
        BJ, 24-Nov-2019.)  (Proof modification is discouraged.) $)
     bj-nnelirr $p |- ( A e. _om -> -. A e. A ) $=
-      ( vy vz vx c0 wcel wn cv com wral wss syl5bi nfv eleq1 eleq2 bitrd notbid
-      wi wceq biimprd csuc noel csn cun df-suc eleq2i wo elun bj-nntrans rspccv
-      sseq1 syl sucssel syld vex sucid elsni syl5eleq jaod con3d ax-bdel ax-bdn
-      a1i rgen elequ1 elequ2 biimpd nfcv bj-bdfindisg mp2an ) EEFZGZBHZVMFZGZVM
-      UAZVPFZGZRZBIJAIFAAFZGZREUBVSBIVMIFZVQVNVQVPVMVMUCZUDZFZWBVNVPWDVPVMUEUFW
-      EVPVMFZVPWCFZUGWBVNVPVMWCUHWBWFVNWGWBWFVPVMKZVNWBCHZVMKZCVMJWFWHRCVMUIWJW
-      HCVPVMWIVPVMUKUJULVMVMIUMUNWGVNRWBWGVMVPVMVMBUOUPVPVMUQURVCUSLLUTVDDHZWKF
-      ZGZVLVOVRWADBAWLDDVAVBVLDMVODMVRDMWKESZWMVLWNWLVKWNWLEWKFVKWKEWKNWKEEOPQT
-      WKVMSZWMVOWOWLVNWOWLVMWKFVNDBDVEDBBVFPQVGWKVPSZWMVRWPWLVQWPWLVPWKFVQWKVPW
-      KNWKVPVPOPQTDAVHWADMWKASZWMWAWQWLVTWQWLAWKFVTWKAWKNWKAAOPQVGVIVJ $.
+      ( vy vx c0 wcel wn cv csuc wi com wral syl5bi nfv wceq eleq1 eleq2 notbid
+      bitrd biimprd biimpd noel csn cun df-suc eleq2i wo wss bj-nntrans sucssel
+      elun syld vex sucid elsni syl5eleq a1i con3d ax-bdel ax-bdn elequ1 elequ2
+      jaod rgen nfcv bj-bdfindisg mp2an ) DDEZFZBGZVIEZFZVIHZVLEZFZIZBJKAJEAAEZ
+      FZIDUAVOBJVIJEZVMVJVMVLVIVIUBZUCZEZVRVJVLVTVLVIUDUEWAVLVIEZVLVSEZUFVRVJVL
+      VIVSUJVRWBVJWCVRWBVLVIUGVJVIVLUHVIVIJUIUKWCVJIVRWCVIVLVIVIBULUMVLVIUNUOUP
+      VBLLUQVCCGZWDEZFZVHVKVNVQCBAWECCURUSVHCMVKCMVNCMWDDNZWFVHWGWEVGWGWEDWDEVG
+      WDDWDOWDDDPRQSWDVINZWFVKWHWEVJWHWEVIWDEVJCBCUTCBBVARQTWDVLNZWFVNWIWEVMWIW
+      EVLWDEVMWDVLWDOWDVLVLPRQSCAVDVQCMWDANZWFVQWJWEVPWJWEAWDEVPWDAWDOWDAAPRQTV
+      EVF $.
   $}
 
   ${
@@ -66360,7 +66359,7 @@ $)
        dependencies from these.  (Contributed by BJ, 28-Nov-2019.)
        (Proof modification is discouraged.) $)
     bj-nnen2lp $p |- ( ( A e. _om /\ B e. _om ) -> -. ( A e. B /\ B e. A ) ) $=
-      ( com wcel wa wn bj-nnelirr adantl wss wi bj-nntrans2 ssel syl6 impd mtod
+      ( com wcel wa wn bj-nnelirr adantl wss wi bj-nntrans ssel syl6 impd mtod
       ) ACDZBCDZEZABDZBADZEBBDZQUAFPBGHRSTUARSABIZTUAJQSUBJPBAKHABBLMNO $.
   $}
 
@@ -66377,28 +66376,58 @@ $)
     NBACRSTUAUPVAVIUQUPVAVIUPVAAUTDZVIUPAUSDVAVNACMUSUTAQUBABCRSTUCUGVLVHVIVKVB
     VDBAUDUEUFUHVDVEVBUIUJUKULUMABUNUO $.
 
+  ${
+    $d a x y A $.
+    $( The set ` _om ` is transitive.  A natural number is included in
+       ` _om ` .  (Contributed by BJ, 29-Dec-2019.)
+       (Proof modification is discouraged.) $)
+    bj-omtrans $p |- ( A e. _om -> A C_ _om ) $=
+      ( vy va vx cv com wss wi wral wcel wal wa syl sylib nfv sseq1 sseq2 ax-mp
+      c0 wceq csuc csn cun ax-ia2 ax-ia1 snssi jca unss df-suc eqcomi sseq1i ex
+      ax-gen df-ral 0ss jctl bdcv bdss biimprd biimpd nfcv bj-bdfindisg bj-omex
+      mpbir cvv imbi12d ralbid imbi2d spcgf ) BEZFGZVJUAZFGZHZBFIZAFJZAFGZHZVOV
+      JFJZVNHZBKVTBVSVKVMVSVKLZVJVJUBZUCZFGZVMWAVKWBFGZLWDWAVKWEVSVKUDWAVSWEVSV
+      KUEVJFUFMUGVJWBFUHNWCVLFVLWCVJUIUJUKNULUMVNBFUNVDVJCEZGZVLWFGZHZBFIZVPAWF
+      GZHZHZCKZVOVRHZWMCWJSWFGZWJLWLWJWPWFUOUPDEZWFGZWPWGWHWKDBADWFCUQURWPDOWGD
+      OWHDOWQSTWRWPWQSWFPUSWQVJTWRWGWQVJWFPUTWQVLTWRWHWQVLWFPUSDAVAWKDOWQATWRWK
+      WQAWFPUTVBMUMFVEJWNWOHVCWMWOCFVECFVAWOCOWFFTZWJVOWLVRWSWIVNBFWSBOWSWGVKWH
+      VMWFFVJQWFFVLQVFVGWSWKVQVPWFFAQVHVFVIRRR $.
+  $}
 
-$(
-${
-$d x A $.
-@( A natural number is included in ` om ` .  (Contributed by BJ,
-   22-Nov-2019.)  (Proof modification is discouraged.) @)
-bj-nntrans2 $p |- ( A e. _om -> A C_ _om ) $=
-  ? $.
-$}
-$)
+  ${
+    $( The set ` _om ` is transitive.  (Contributed by BJ, 29-Dec-2019.)
+       (Proof modification is discouraged.) $)
+    bj-omtrans2 $p |- Tr _om $=
+      ( vx com wtr cv wss dftr3 bj-omtrans mprgbir ) BCADZBEABABFIGH $.
+  $}
+
+  ${
+    $( The set ` _om ` is an ordinal.  (Contributed by BJ, 29-Dec-2019.)
+       (Proof modification is discouraged.) $)
+    bj-omord $p |- Ord _om $=
+      ( vx com word wtr cv wral bj-omtrans2 bj-nntrans2 rgen dford3 mpbir2an )
+      BCBDAEZDZABFGMABLHIABJK $.
+  $}
+
+  ${
+    $( The set ` _om ` is an ordinal.  Constructive proof of ~ omelon .
+       (Contributed by BJ, 29-Dec-2019.)
+       (Proof modification is discouraged.) $)
+    bj-omelon $p |- _om e. On $=
+      ( com con0 wcel word bj-omord bj-omex elon mpbir ) ABCADEAFGH $.
+  $}
 
   ${
     $d x y A $.
-    $( Proof of ~ nn0suc from ~ bj-nn0suc0 .  Note that contrary to
-       ~ bj-nn0suc0 , it is NOT constructive because of the use of ~ omelon .
-       For a constructive proof, see ~ bj-nn0suc .  (Contributed by BJ,
-       19-Nov-2019.)  (Proof modification is discouraged.)
-       (New usage is discouraged.) $)
-    bj-nn0sucALT $p |- ( A e. _om -> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
-      ( com wcel c0 wceq cv csuc wo bj-nn0suc0 wss wi omelon onelssi ssrexv syl
-      wrex orim2d mpd ) BCDZBEFZBAGHFZABQZIUAUBACQZIABJTUCUDUATBCKUCUDLCBMNUBAB
-      COPRS $.
+    $( Proof of (biconditional form of) ~ nn0suc from the core axioms of CZF.
+       See also ~ bj-nn0sucALT .  As a characterization of the elements of
+       ` _om ` , this could be labeled "elom".  (Contributed by BJ,
+       19-Nov-2019.)  (Proof modification is discouraged.) $)
+    bj-nn0suc $p |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
+      ( com wcel c0 wceq cv csuc wrex wo bj-nn0suc0 wi bj-omtrans ssrexv orim2d
+      wss syl mpd peano1 eleq1 mpbiri bj-peano2 eleq1a imp sylan rexlimiva jaoi
+      impbii ) BCDZBEFZBAGZHZFZACIZJZUIUJUMABIZJUOABKUIUPUNUJUIBCPUPUNLBMUMABCN
+      QORUJUIUNUJUIECDSBECTUAUMUIACUKCDULCDZUMUIUKUBUQUMUIULCBUCUDUEUFUGUH $.
   $}
 
 
@@ -66593,12 +66622,10 @@ $)
 
   ${
     $d a x y z A $.
-    $( Constructive proof of (the biconditional form of) ~ nn0suc .  As a
-       characterization of the elements of ` _om ` , this could be labelled
-       "elom".  See also ~ bj-nn0suc0 for a proof of a (less useful) variant
-       from ~ ax-infvn .  (Contributed by BJ, 8-Dec-2019.)
-       (Proof modification is discouraged.) $)
-    bj-nn0suc $p |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
+    $( Alternate proof of ~ bj-nn0suc , also constructive but from
+       ~ bj-inf2vn .  (Contributed by BJ, 8-Dec-2019.)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
+    bj-nn0sucALT $p |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
       ( va vy vz com wcel c0 wceq cv csuc wrex wo wb wal wi ax-mp bibi12d eleq1
       cvv wex ax-inf2 bdcv bj-inf2vn eleq2 rexeq orbi2d albidv nfcv eqeq1 suceq
       vex nfv eqeq2d cbvrexv rexbidv syl5bb orbi12d bi1 syl6bi peano1 bj-peano2
@@ -66630,9 +66657,10 @@ $)
     bj-findis.0 $e |- ( x = (/) -> ( ps -> ph ) ) $.
     bj-findis.1 $e |- ( x = y -> ( ph -> ch ) ) $.
     bj-findis.suc $e |- ( x = suc y -> ( th -> ph ) ) $.
-    $( Full induction (principle of induction), using implicit substitutions.
-       Constructive proof.  (Contributed by BJ, 22-Dec-2019.)
-       (Proof modification is discouraged.) $)
+    $( Principle of induction, using implicit substitutions (the biconditional
+       versions of the hypotheses are implicit substitutions, and we have
+       weakened them to implications).  Constructive proof.  (Contributed by
+       BJ, 22-Dec-2019.)  (Proof modification is discouraged.) $)
     bj-findis $p |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $=
       ( vz wi com wral wa wcel wceq nfv cv wal c0 csuc wrex wo bj-nn0suc pm3.21
       ad2antrr pm2.04 ralimi2 imim2 ral2imi imp sylan2 r19.29 sucid mpbiri ax-1
@@ -66647,6 +66675,19 @@ $)
       AXHEXAETXCXGEXBBEXBETGVNXFEFOEOVOXEDEXEETIVNVPVQVMWNMTWRMTWLWPSZWQWMACXTW
       MWQWLWPOWCVRKVSWLWSSZWMXAXHAYAWMXAWLWSOWCVTYAXCAXGYAXBBAYAXBQWLUCSBANWLWS
       UCWAJVGWBYAXFAFOYAXEDAYAXEQWLXDSDANWLWSXDWALVGWBWDWEVSWFVGAEOWGWH $.
+
+    bj-findisg.nfa $e |- F/_ x A $.
+    bj-findisg.nfterm $e |- F/ x ta $.
+    bj-findisg.term $e |- ( x = A -> ( ph -> ta ) ) $.
+    $( Principle of induction, using implicit substitutions (the biconditional
+       versions of the hypotheses are implicit substitutions, and we have
+       weakened them to implications).  See ~ finds .  From this version, it is
+       easy to prove ~ finds , ~ finds2 , ~ finds1 .  (Contributed by BJ,
+       21-Nov-2019.)  (Proof modification is discouraged.) $)
+    bj-findisg $p |-
+                ( ( ps /\ A. y e. _om ( ch -> th ) ) -> ( A e. _om -> ta ) ) $=
+      ( wi com wral wa wcel bj-findis nfcv bj-rspg syl ) BCDRGSTUAAFSTHSUBERABC
+      DFGIJKLMNUCAEFHSOFSUDPQUEUF $.
   $}
 
 $(
