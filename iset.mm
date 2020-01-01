@@ -63369,6 +63369,69 @@ $)
       WAVRAVPGVSVPTVTVQSVSVPBQUQURUSUT $.
   $}
 
+  ${
+    $d x y z w v u f $.
+    $( Define equivalence relation for signed reals.  This is a "temporary" set
+       used in the construction of complex numbers, and is intended to be used
+       only by the construction.  From Proposition 9-4.1 of [Gleason] p. 126.
+       (Contributed by NM, 25-Jul-1995.) $)
+    df-enr $a |- ~R = { <. x , y >. | ( ( x e. ( P. X. P. ) /\
+                   y e. ( P. X. P. ) ) /\ E. z E. w E. v E. u
+                   ( ( x = <. z , w >. /\ y = <. v , u >. ) /\
+                   ( z +P. u ) = ( w +P. v ) ) ) } $.
+
+    $( Define class of signed reals.  This is a "temporary" set used in the
+       construction of complex numbers, and is intended to be used only by the
+       construction.  From Proposition 9-4.2 of [Gleason] p. 126.  (Contributed
+       by NM, 25-Jul-1995.) $)
+    df-nr $a |- R. = ( ( P. X. P. ) /. ~R ) $.
+
+    $( Define addition on signed reals.  This is a "temporary" set used in the
+       construction of complex numbers, and is intended to be used only by the
+       construction.  From Proposition 9-4.3 of [Gleason] p. 126.  (Contributed
+       by NM, 25-Aug-1995.) $)
+    df-plr $a |- +R = { <. <. x , y >. , z >. | ( ( x e. R. /\ y e. R. ) /\
+      E. w E. v E. u E. f (
+         ( x = [ <. w , v >. ] ~R /\ y = [ <. u , f >. ] ~R ) /\
+               z = [ <. ( w +P. u ) , ( v +P. f ) >. ] ~R ) ) } $.
+
+    $( Define multiplication on signed reals.  This is a "temporary" set used
+       in the construction of complex numbers, and is intended to be used only
+       by the construction.  From Proposition 9-4.3 of [Gleason] p. 126.
+       (Contributed by NM, 25-Aug-1995.) $)
+    df-mr $a |- .R = { <. <. x , y >. , z >. | ( ( x e. R. /\ y e. R. ) /\
+      E. w E. v E. u E. f (
+         ( x = [ <. w , v >. ] ~R /\ y = [ <. u , f >. ] ~R ) /\
+           z = [ <. ( ( w .P. u ) +P. ( v .P. f ) ) ,
+             ( ( w .P. f ) +P. ( v .P. u ) ) >. ] ~R ) ) } $.
+
+    $( Define ordering relation on signed reals.  This is a "temporary" set
+       used in the construction of complex numbers, and is intended to be used
+       only by the construction.  From Proposition 9-4.4 of [Gleason] p. 127.
+       (Contributed by NM, 14-Feb-1996.) $)
+    df-ltr $a |- <R = { <. x , y >. | ( ( x e. R. /\ y e. R. ) /\
+       E. z E. w E. v E. u
+       ( ( x = [ <. z , w >. ] ~R /\ y = [ <. v , u >. ] ~R ) /\
+                ( z +P. u ) <P ( w +P. v ) ) ) } $.
+
+    $( Define signed real constant 0.  This is a "temporary" set used in the
+       construction of complex numbers, and is intended to be used only by the
+       construction.  From Proposition 9-4.2 of [Gleason] p. 126.  (Contributed
+       by NM, 9-Aug-1995.) $)
+    df-0r $a |- 0R = [ <. 1P , 1P >. ] ~R $.
+
+    $( Define signed real constant 1.  This is a "temporary" set used in the
+       construction of complex numbers, and is intended to be used only by the
+       construction.  From Proposition 9-4.2 of [Gleason] p. 126.  (Contributed
+       by NM, 9-Aug-1995.) $)
+    df-1r $a |- 1R = [ <. ( 1P +P. 1P ) , 1P >. ] ~R $.
+
+    $( Define signed real constant -1.  This is a "temporary" set used in the
+       construction of complex numbers, and is intended to be used only by the
+       construction.  (Contributed by NM, 9-Aug-1995.) $)
+    df-m1r $a |- -1R = [ <. 1P , ( 1P +P. 1P ) >. ] ~R $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
