@@ -612,7 +612,7 @@
 "addclsr" is used by "axmulf".
 "addclsr" is used by "dmaddsr".
 "addclsr" is used by "map2psrpr".
-"addcmpblnr" is used by "addsrpr".
+"addcmpblnr" is used by "addsrmo".
 "addcnsr" is used by "addcnsrec".
 "addcnsr" is used by "addresr".
 "addcnsr" is used by "axaddf".
@@ -4530,11 +4530,10 @@
 "df-enq" is used by "enqbreq".
 "df-enq" is used by "enqer".
 "df-enq" is used by "enqex".
-"df-enr" is used by "addsrpr".
 "df-enr" is used by "enrbreq".
 "df-enr" is used by "enrer".
 "df-enr" is used by "enrex".
-"df-enr" is used by "mulsrpr".
+"df-enr" is used by "prsrlem1".
 "df-erq" is used by "nqerf".
 "df-erq" is used by "nqerid".
 "df-erq" is used by "nqerrel".
@@ -4667,7 +4666,6 @@
 "df-mpq" is used by "mulpipq2".
 "df-mpq" is used by "mulpqf".
 "df-mpq" is used by "mulpqnq".
-"df-mpr" is used by "mulsrpr".
 "df-mq" is used by "mulnqf".
 "df-mq" is used by "mulpqnq".
 "df-mr" is used by "dmmulsr".
@@ -4742,7 +4740,6 @@
 "df-plpq" is used by "addpipq2".
 "df-plpq" is used by "addpqf".
 "df-plpq" is used by "addpqnq".
-"df-plpr" is used by "addsrpr".
 "df-plq" is used by "addnqf".
 "df-plq" is used by "addpqnq".
 "df-plr" is used by "addsrpr".
@@ -5956,11 +5953,12 @@
 "enreceq" is used by "map2psrpr".
 "enreceq" is used by "recexsrlem".
 "enrer" is used by "0nsr".
-"enrer" is used by "addsrpr".
+"enrer" is used by "addsrmo".
 "enrer" is used by "axcnex".
 "enrer" is used by "enreceq".
 "enrer" is used by "ltsrpr".
-"enrer" is used by "mulsrpr".
+"enrer" is used by "mulsrmo".
+"enrer" is used by "prsrlem1".
 "enrer" is used by "wuncn".
 "enrex" is used by "0r".
 "enrex" is used by "1sr".
@@ -9906,7 +9904,7 @@
 "mulclsr" is used by "negexsr".
 "mulclsr" is used by "recexsr".
 "mulclsr" is used by "sqgt0sr".
-"mulcmpblnr" is used by "mulsrpr".
+"mulcmpblnr" is used by "mulsrmo".
 "mulcmpblnrlem" is used by "mulcmpblnr".
 "mulcnsr" is used by "axcnre".
 "mulcnsr" is used by "axi2m1".
@@ -15113,7 +15111,7 @@ New usage of "df-drngo" is discouraged (3 uses).
 New usage of "df-eigval" is discouraged (1 uses).
 New usage of "df-eigvec" is discouraged (1 uses).
 New usage of "df-enq" is discouraged (3 uses).
-New usage of "df-enr" is discouraged (5 uses).
+New usage of "df-enr" is discouraged (4 uses).
 New usage of "df-erq" is discouraged (3 uses).
 New usage of "df-exid" is discouraged (1 uses).
 New usage of "df-fld" is discouraged (3 uses).
@@ -15167,7 +15165,6 @@ New usage of "df-mndo" is discouraged (3 uses).
 New usage of "df-mnf" is discouraged (3 uses).
 New usage of "df-mp" is discouraged (11 uses).
 New usage of "df-mpq" is discouraged (3 uses).
-New usage of "df-mpr" is discouraged (1 uses).
 New usage of "df-mq" is discouraged (2 uses).
 New usage of "df-mr" is discouraged (2 uses).
 New usage of "df-mul" is discouraged (2 uses).
@@ -15187,7 +15184,6 @@ New usage of "df-pjh" is discouraged (2 uses).
 New usage of "df-pli" is discouraged (2 uses).
 New usage of "df-plp" is discouraged (11 uses).
 New usage of "df-plpq" is discouraged (3 uses).
-New usage of "df-plpr" is discouraged (1 uses).
 New usage of "df-plq" is discouraged (2 uses).
 New usage of "df-plr" is discouraged (2 uses).
 New usage of "df-pnf" is discouraged (3 uses).
@@ -15699,7 +15695,7 @@ New usage of "enqer" is discouraged (8 uses).
 New usage of "enqex" is discouraged (0 uses).
 New usage of "enrbreq" is discouraged (3 uses).
 New usage of "enreceq" is discouraged (9 uses).
-New usage of "enrer" is discouraged (7 uses).
+New usage of "enrer" is discouraged (8 uses).
 New usage of "enrex" is discouraged (9 uses).
 New usage of "eqcomOLD" is discouraged (1 uses).
 New usage of "eqcomdOLD" is discouraged (0 uses).
@@ -17071,6 +17067,7 @@ New usage of "nfeqOLD" is discouraged (0 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfeud2OLD" is discouraged (0 uses).
 New usage of "nfnfcALT" is discouraged (0 uses).
+New usage of "nfrexOLD" is discouraged (0 uses).
 New usage of "nic-ax" is discouraged (7 uses).
 New usage of "nic-axALT" is discouraged (0 uses).
 New usage of "nic-bi1" is discouraged (3 uses).
@@ -19428,6 +19425,7 @@ Proof modification of "nfelOLD" is discouraged (40 steps).
 Proof modification of "nfeqOLD" is discouraged (37 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfeud2OLD" is discouraged (83 steps).
+Proof modification of "nfrexOLD" is discouraged (29 steps).
 Proof modification of "nic-ax" is discouraged (142 steps).
 Proof modification of "nic-axALT" is discouraged (245 steps).
 Proof modification of "nic-bi1" is discouraged (22 steps).
