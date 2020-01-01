@@ -63432,6 +63432,37 @@ $)
     df-m1r $a |- -1R = [ <. 1P , ( 1P +P. 1P ) >. ] ~R $.
   $}
 
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $d x y z w v u D $.
+    $( Equivalence relation for signed reals in terms of positive reals.
+       (Contributed by NM, 3-Sep-1995.) $)
+    enrbreq $p |- ( ( ( A e. P. /\ B e. P. ) /\
+                     ( C e. P. /\ D e. P. ) ) ->
+          ( <. A , B >. ~R <. C , D >. <-> ( A +P. D ) = ( B +P. C ) ) ) $=
+      ( vx vy vz vw vv vu cpp cer cnp df-enr ecopoveq ) EFGHIJABCDKLMEFGHIJNO
+      $.
+  $}
+
+  ${
+    $d x y z w v u $.
+    $( The equivalence relation for signed reals is an equivalence relation.
+       Proposition 9-4.1 of [Gleason] p. 126.  (Contributed by NM,
+       3-Sep-1995.)  (Revised by Mario Carneiro, 6-Jul-2015.) $)
+    enrer $p |- ~R Er ( P. X. P. ) $=
+      ( vx vy vz vw vv cpp cer cnp df-enr addcomprg addclpr addassprg addcanprg
+      vu cv ecopoverg ) ABCDENFGHABCDENIAOZBOZJQRKQRCOZLQRSMP $.
+  $}
+
+  $( Equivalence class equality of positive fractions in terms of positive
+     integers.  (Contributed by NM, 29-Nov-1995.) $)
+  enreceq $p |- ( ( ( A e. P. /\ B e. P. ) /\ ( C e. P. /\ D e. P. ) ) ->
+                ( [ <. A , B >. ] ~R = [ <. C , D >. ] ~R <->
+                ( A +P. D ) = ( B +P. C ) ) ) $=
+    ( cnp wcel wa cop cer wbr cec wceq cpp co cxp wer enrer a1i opelxpi adantr
+    erth enrbreq bitr3d ) AEFBEFGZCEFDEFGZGZABHZCDHZIJUGIKUHIKLADMNBCMNLUFUGUHI
+    EEOZUIIPUFQRUDUGUIFUEABEESTUAABCDUBUC $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
