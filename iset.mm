@@ -66140,8 +66140,8 @@ $)
        of the special set we want (the set of natural numbers), instead of the
        existence of a set with some properties ( ~ ax-iinf ) from which one
        then proves ( ~ omex ) using full separation that the wanted set
-       exists.  "vn" is for "Von Neumann".  See also ~ ax-inf2 .  (Contributed
-       by BJ, 14-Nov-2019.) $)
+       exists.  "vn" is for "Von Neumann".  (Contributed by BJ,
+       14-Nov-2019.) $)
     ax-infvn $a |- E. x ( Ind x /\ A. y ( Ind y -> x C_ y ) ) $.
   $}
 
@@ -66152,14 +66152,6 @@ $)
     bj-omex $p |- _om e. _V $=
       ( vx vy com cvv wcel cv wind wss wi wal wa wex ax-infvn bj-2inf mpbir ) C
       DEAFZGBFZGPQHIBJKALABMABNO $.
-  $}
-
-  ${
-    $d x y z $.
-    $( Another axiom of infinity in a constructive setting (see ~ ax-infvn ).
-       (Contributed by BJ, 14-Nov-2019.) $)
-    ax-inf2 $a |-
-                 E. a A. x ( x e. a <-> ( x = (/) \/ E. y e. a x = suc y ) ) $.
   $}
 
 
@@ -66250,10 +66242,11 @@ $)
     bj-bdfindis.suc $e |- ( x = suc y -> ( th -> ph ) ) $.
     $( Bounded induction (principle of induction for bounded formulas), using
        implicit substitutions (the biconditional versions of the hypotheses are
-       implicit substitutions, and we have weakened them to implications).  See
-       ~ finds .  From this version, it is easy to prove bounded versions of
-       ~ finds , ~ finds2 , ~ finds1 .  (Contributed by BJ, 21-Nov-2019.)
-       (Proof modification is discouraged.) $)
+       implicit substitutions, and we have weakened them to implications).
+       Constructive proof (from CZF).  See ~ finds for a proof of full
+       induction in IZF. From this version, it is easy to prove bounded
+       versions of ~ finds , ~ finds2 , ~ finds1 .  (Contributed by BJ,
+       21-Nov-2019.)  (Proof modification is discouraged.) $)
     bj-bdfindis $p |-
                     ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $=
       ( wi com wral wa c0 wcel elabf2 cab wss cv 0ex elabf1 vex bj-sucex ralimi
@@ -66264,11 +66257,9 @@ $)
     bj-bdfindisg.nfa $e |- F/_ x A $.
     bj-bdfindisg.nfterm $e |- F/ x ta $.
     bj-bdfindisg.term $e |- ( x = A -> ( ph -> ta ) ) $.
-    $( Bounded induction (principle of induction for bounded formulas), using
-       implicit substitutions (the biconditional versions of the hypotheses are
-       implicit substitutions, and we have weakened them to implications).  See
-       ~ finds .  From this version, it is easy to prove bounded versions of
-       ~ finds , ~ finds2 , ~ finds1 .  (Contributed by BJ, 21-Nov-2019.)
+    $( Version of ~ bj-bdfindis using a class term in the consequent.
+       Constructive proof (from CZF).  See the comment of ~ bj-bdfindis for
+       explanations.  (Contributed by BJ, 21-Nov-2019.)
        (Proof modification is discouraged.) $)
     bj-bdfindisg $p |-
                 ( ( ps /\ A. y e. _om ( ch -> th ) ) -> ( A e. _om -> ta ) ) $=
@@ -66277,11 +66268,13 @@ $)
   $}
 
   ${
-    $d x y z $.  $d y z ph $.
+    $d x y $.  $d y ph $.
     bj-bdfindes.bd $e |- Bdd ph $.
-    $( Bounded induction, using explicit substitutions.  Constructive proof.
-       (Contributed by BJ, 21-Nov-2019.)
-       (Proof modification is discouraged.) $)
+    $( Bounded induction (principle of induction for bounded formulas), using
+       explicit substitutions.  Constructive proof (from CZF).  See the comment
+       of ~ bj-bdfindis for explanations.  From this version, it is easy to
+       prove the bounded version of ~ findes .  (Contributed by BJ,
+       21-Nov-2019.)  (Proof modification is discouraged.) $)
     bj-bdfindes $p |- ( ( [. (/) / x ]. ph /\
               A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x e. _om ph ) $=
       ( vy cv csuc wsbc wi com wral wsb nfv nfim nfs1v nfsbc1v weq wceq sbceq1a
@@ -66584,8 +66577,8 @@ $)
   ${
     $d x y z A $.
     bj-inf2vn.1 $e |- Bdd_ A $.
-    $( A sufficient condition for ` _om ` to be a set.  See ~ bj-inf2vn for the
-       unbounded version from full set induction.  (Contributed by BJ,
+    $( A sufficient condition for ` _om ` to be a set.  See ~ bj-inf2vn2 for
+       the unbounded version from full set induction.  (Contributed by BJ,
        8-Dec-2019.)  (Proof modification is discouraged.) $)
     bj-inf2vn $p |- ( A e. V -> ( A. x ( x e. A <->
                          ( x = (/) \/ E. y e. A x = suc y ) ) -> A = _om ) ) $=
@@ -66609,11 +66602,19 @@ $)
   $}
 
   ${
+    $d x y z $.
+    $( Another axiom of infinity in a constructive setting (see ~ ax-infvn ).
+       (Contributed by BJ, 14-Nov-2019.)  (New usage is discouraged.) $)
+    ax-inf2 $a |-
+                 E. a A. x ( x e. a <-> ( x = (/) \/ E. y e. a x = suc y ) ) $.
+  $}
+
+  ${
     $d x y z a $.
     $( Using bounded set induction and the strong axiom of infinity, ` _om ` is
        a set, that is, we recover ~ ax-infvn (see ~ bj-2inf for the equivalence
        of the latter with ~ bj-omex ).  (Contributed by BJ, 8-Dec-2019.)
-       (Proof modification is discouraged.) $)
+       (Proof modification is discouraged.)  (New usage is discouraged.) $)
     bj-omex2 $p |- _om e. _V $=
       ( va vx vy com wel cv c0 wceq csuc wrex wo wb wal ax-inf2 cvv wcel wi vex
       bdcv bj-inf2vn ax-mp eximii issetri ) ADBAEBFZGHUDCFIHCAFZJKLBMZUEDHZABCA
@@ -66622,8 +66623,8 @@ $)
 
   ${
     $d a x y z A $.
-    $( Alternate proof of ~ bj-nn0suc , also constructive but from
-       ~ bj-inf2vn .  (Contributed by BJ, 8-Dec-2019.)
+    $( Alternate proof of ~ bj-nn0suc , also constructive but from ~ ax-inf2 ,
+       hence requiring ~ ax-bdsetind .  (Contributed by BJ, 8-Dec-2019.)
        (Proof modification is discouraged.)  (New usage is discouraged.) $)
     bj-nn0sucALT $p |- ( A e. _om <-> ( A = (/) \/ E. x e. _om A = suc x ) ) $=
       ( va vy vz com wcel c0 wceq cv csuc wrex wo wb wal wi ax-mp bibi12d eleq1
@@ -66659,8 +66660,11 @@ $)
     bj-findis.suc $e |- ( x = suc y -> ( th -> ph ) ) $.
     $( Principle of induction, using implicit substitutions (the biconditional
        versions of the hypotheses are implicit substitutions, and we have
-       weakened them to implications).  Constructive proof.  (Contributed by
-       BJ, 22-Dec-2019.)  (Proof modification is discouraged.) $)
+       weakened them to implications).  Constructive proof (from CZF).  See
+       ~ bj-bdfindis for a bounded version not requiring ~ ax-setind .  See
+       ~ finds for a proof in IZF. From this version, it is easy to prove of
+       ~ finds , ~ finds2 , ~ finds1 .  (Contributed by BJ, 22-Dec-2019.)
+       (Proof modification is discouraged.) $)
     bj-findis $p |- ( ( ps /\ A. y e. _om ( ch -> th ) ) -> A. x e. _om ph ) $=
       ( vz wi com wral wa wcel wceq nfv cv wal c0 csuc wrex wo bj-nn0suc pm3.21
       ad2antrr pm2.04 ralimi2 imim2 ral2imi imp sylan2 r19.29 sucid mpbiri ax-1
@@ -66679,50 +66683,30 @@ $)
     bj-findisg.nfa $e |- F/_ x A $.
     bj-findisg.nfterm $e |- F/ x ta $.
     bj-findisg.term $e |- ( x = A -> ( ph -> ta ) ) $.
-    $( Principle of induction, using implicit substitutions (the biconditional
-       versions of the hypotheses are implicit substitutions, and we have
-       weakened them to implications).  See ~ finds .  From this version, it is
-       easy to prove ~ finds , ~ finds2 , ~ finds1 .  (Contributed by BJ,
-       21-Nov-2019.)  (Proof modification is discouraged.) $)
+    $( Version of ~ bj-findis using a class term in the consequent.
+       Constructive proof (from CZF).  See the comment of ~ bj-findis for
+       explanations.  (Contributed by BJ, 21-Nov-2019.)
+       (Proof modification is discouraged.) $)
     bj-findisg $p |-
                 ( ( ps /\ A. y e. _om ( ch -> th ) ) -> ( A e. _om -> ta ) ) $=
       ( wi com wral wa wcel bj-findis nfcv bj-rspg syl ) BCDRGSTUAAFSTHSUBERABC
       DFGIJKLMNUCAEFHSOFSUDPQUEUF $.
   $}
 
-$(
   ${
-    $d x y z $.  $d y z ph $.
-    bj-findeslem.dummy $e |- ( ps <-> ( x e. _om -> ph ) ) $.
-    @( Lemma for bj-findes .  (Contributed by BJ, 24-Nov-2019.)
-       (Proof modification is discouraged.) @)
-    bj-findeslem0 $p |- ( [. (/) / x ]. ph <-> [. (/) / x ]. ps ) $=
-      ( c0 wsbc cv com wcel wi 0ex eleq1 sbcie bicomi imbi1i peano1 a1bi cvv wb
-      sbcimg ax-mp 3bitr4i sbcbii bitri ) ACEFZCGZHIZAJZCEFZBCEFEHIZUEJUGCEFZUE
-      JZUEUIUJUKUEUKUJUGUJCEKUFEHLMNOUJUEPQERIUIULSKUGACERTUAUBUHBCEBUHDNUCUD
-      $.
-
-    @( Lemma for bj-findes .  NOT YET constructive because of ~ peano2b .
-       (Contributed by BJ, 24-Nov-2019.)
-       (Proof modification is discouraged.) @)
-    bj-findeslem1BAD $p |-
-               ( ( x e. _om -> [. suc x / x ]. ph ) <-> [. suc x / x ]. ps ) $=
-      ( cv com wcel csuc wsbc wi peano2b cvv vex bj-sucex sbcel1gv ax-mp bitr4i
-      wb imbi1i sbcimg bicomi sbcbii 3bitr2i ) CEZFGZACUDHZIZJUECUFIZUGJZUEAJZC
-      UFIZBCUFIUEUHUGUEUFFGZUHUDKUFLGZUHULRUDCMNZCUFFLOPQSUMUKUIRUNUEACUFLTPUJB
-      CUFBUJDUAUBUC $.
-
-    @( Lemma for bj-findes (but probably useless).  Constructive proof.
-       (Contributed by BJ, 24-Nov-2019.)
-       (Proof modification is discouraged.) @)
-    bj-findeslem1 $p |-
-               ( [. suc x / x ]. ps -> ( x e. _om -> [. suc x / x ]. ph ) ) $=
-      ( cv csuc wsbc com wcel sbcbii biimpi bj-peano2 cvv vex bj-sucex sbcel1gv
-      wi wb ax-mp sylibr sbcimg syl2im ) BCCEZFZGZUCHIZAQZCUDGZUFUFCUDGZACUDGZU
-      EUHBUGCUDDJKUFUDHIZUIUCLUDMIZUIUKRUCCNOZCUDHMPSTUHUIUJQZULUHUNRUMUFACUDMU
-      ASKUB $.
+    $d x y $.  $d y ph $.
+    $( Principle of induction, using explicit substitutions.  Constructive
+       proof (from CZF).  See the comment of ~ bj-findis for explanations.
+       From this version, it is easy to prove ~ findes .  (Contributed by BJ,
+       21-Nov-2019.)  (Proof modification is discouraged.) $)
+    bj-findes $p |- ( ( [. (/) / x ]. ph /\
+              A. x e. _om ( ph -> [. suc x / x ]. ph ) ) -> A. x e. _om ph ) $=
+      ( vy cv csuc wsbc wi com wral c0 wsb nfv nfim nfs1v nfsbc1v sbequ12 suceq
+      wceq sbceq1a biimprd sbceq1d imbi12d cbvral sbequ1 bj-findis sylan2b ) AA
+      BBDZEZFZGZBHIABJFZABCKZABCDZEZFZGZCHIABHIUJUPBCHAUICACLUICLMULUOBABCNZABU
+      NOZMUGUMRZAULUIUOABCPUSABUHUNUGUMQUAUBUCAUKULUOBCABJOUQURUGJRAUKABJSTABCU
+      DUGUNRAUOABUNSTUEUF $.
   $}
-$)
 
 
 $(

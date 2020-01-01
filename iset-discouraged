@@ -44,6 +44,8 @@
 "alrimih" is used by "sb6rf".
 "alrimih" is used by "sbbid".
 "ax-10o" is used by "ax10".
+"ax-inf2" is used by "bj-nn0sucALT".
+"ax-inf2" is used by "bj-omex2".
 "df-ilim" is used by "dflim2".
 "df-iom" is used by "dfom3".
 "df-iord" is used by "dford3".
@@ -151,6 +153,7 @@ New usage of "alrimih" is discouraged (25 uses).
 New usage of "ax-10o" is discouraged (1 uses).
 New usage of "ax-11o" is discouraged (0 uses).
 New usage of "ax-16" is discouraged (0 uses).
+New usage of "ax-inf2" is discouraged (2 uses).
 New usage of "ax10" is discouraged (0 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
@@ -159,6 +162,7 @@ New usage of "bdnthALT" is discouraged (0 uses).
 New usage of "bdsbcALT" is discouraged (0 uses).
 New usage of "bdsepnfALT" is discouraged (0 uses).
 New usage of "bj-nn0sucALT" is discouraged (0 uses).
+New usage of "bj-omex2" is discouraged (0 uses).
 New usage of "bocardo" is discouraged (0 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
@@ -221,6 +225,7 @@ Proof modification of "bj-bdfindisg" is discouraged (44 steps).
 Proof modification of "bj-ex" is discouraged (31 steps).
 Proof modification of "bj-exlimmp" is discouraged (34 steps).
 Proof modification of "bj-exlimmpi" is discouraged (11 steps).
+Proof modification of "bj-findes" is discouraged (120 steps).
 Proof modification of "bj-findis" is discouraged (357 steps).
 Proof modification of "bj-findisg" is discouraged (43 steps).
 Proof modification of "bj-inex" is discouraged (151 steps).
