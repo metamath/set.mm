@@ -63484,6 +63484,32 @@ $)
       NOKUHUKPTUIUJPTQRKFSESDSCSZKABUAIIUBABCDEFUCULABIIUDUE $.
   $}
 
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.  $d x y z F $.
+    $d x y z G $.  $d x y z R $.  $d x y z S $.
+    $( Lemma showing compatibility of addition.  (Contributed by NM,
+       3-Sep-1995.) $)
+    addcmpblnr $p |- ( ( ( ( A e. P. /\ B e. P. ) /\ ( C e. P. /\ D e. P. ) )
+               /\ ( ( F e. P. /\ G e. P. ) /\ ( R e. P. /\ S e. P. ) ) ) ->
+                ( ( ( A +P. D ) = ( B +P. C ) /\ ( F +P. S ) = ( G +P. R ) ) ->
+     <. ( A +P. F ) , ( B +P. G ) >. ~R <. ( C +P. R ) , ( D +P. S ) >. ) ) $=
+      ( cpp co wceq wa cnp wcel addclpr anim12i an4s syl2anc addassprg syl3anc
+      cop cer wbr oveq12 wb enrbreq syl simprll simplrr addcomprg oveq1d oveq2d
+      simprrr 3eqtr3d simplll 3eqtr4d simprlr simplrl simprrl simpllr eqeq12d
+      bitrd syl5ibr ) ADIJZBCIJZKGFIJZHEIJZKLAGIJZBHIJZUACEIJZDFIJZUAUBUCZAMNZB
+      MNZLZCMNZDMNZLZLZGMNZHMNZLZEMNZFMNZLZLZLZVDVFIJZVEVGIJZKZVDVEVFVGIUDWGVLV
+      HVKIJZVIVJIJZKZWJWGVHMNZVIMNZLZVJMNZVKMNZLZLZVLWMUEVOWBVRWEWTVOWBLWPVRWEL
+      WSVMVTVNWAWPVMVTLWNVNWALWOAGOBHOPQVPWCVQWDWSVPWCLWQVQWDLWRCEOZDFOZPQPQVHV
+      IVJVKUFUGWGWKWHWLWIWGAGVKIJZIJZADVFIJZIJZWKWHWGXCXEAIWGGDIJZFIJZDGIJZFIJZ
+      XCXEWGXGXIFIWGVTVQXGXIKVSVTWAWEUHZVOVPVQWFUIZGDUJRUKWGVTVQWDXHXCKXKXLVSWB
+      WCWDUMZGDFSTWGVQVTWDXJXEKXLXKXMDGFSTUNULWGVMVTWRWKXDKVMVNVRWFUOZXKWGVQWDW
+      RXLXMXBRAGVKSTWGVMVQVFMNZWHXFKXNXLWGVTWDXOXKXMGFORADVFSTUPWGBHVJIJZIJZBCV
+      GIJZIJZWLWIWGXPXRBIWGHCIJZEIJZCHIJZEIJZXPXRWGXTYBEIWGWAVPXTYBKVSVTWAWEUQZ
+      VOVPVQWFURZHCUJRUKWGWAVPWCYAXPKYDYEVSWBWCWDUSZHCESTWGVPWAWCYCXRKYEYDYFCHE
+      STUNULWGVNWAWQWLXQKVMVNVRWFUTZYDWGVPWCWQYEYFXARBHVJSTWGVNVPVGMNZWIXSKYGYE
+      WGWAWCYHYDYFHEORBCVGSTUPVAVBVC $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
