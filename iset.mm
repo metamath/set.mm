@@ -63463,6 +63463,27 @@ $)
     erth enrbreq bitr3d ) AEFBEFGZCEFDEFGZGZABHZCDHZIJUGIKUHIKLADMNBCMNLUFUGUHI
     EEOZUIIPUFQRUDUGUIFUEABEESTUAABCDUBUC $.
 
+  ${
+    $d x y z w v u $.
+    $( The equivalence relation for signed reals exists.  (Contributed by NM,
+       25-Jul-1995.) $)
+    enrex $p |- ~R e. _V $=
+      ( vx vy vz vw vv vu cer cnp cxp npex xpex cv wcel wa cop cpp co wex copab
+      wceq df-enr opabssxp eqsstri ssexi ) GHHIZUEIZUEUEHHJJKZUGKGALZUEMBLZUEMN
+      UHCLZDLZOTUIELZFLZOTNUJUMPQUKULPQTNFRERDRCRZNABSUFABCDEFUAUNABUEUEUBUCUD
+      $.
+  $}
+
+  ${
+    $d x y z w v u $.
+    $( Signed real 'less than' is a relation on signed reals.  (Contributed by
+       NM, 14-Feb-1996.) $)
+    ltrelsr $p |- <R C_ ( R. X. R. ) $=
+      ( vx vy vz vw vv vu cltr cv cnr wcel wa cop cer cec wceq cpp cltp wbr wex
+      co copab cxp df-ltr opabssxp eqsstri ) GAHZIJBHZIJKUFCHZDHZLMNOUGEHZFHZLM
+      NOKUHUKPTUIUJPTQRKFSESDSCSZKABUAIIUBABCDEFUCULABIIUDUE $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
