@@ -1,4 +1,4 @@
-$( iset.mm - Version of 1-Jan-2020
+$( iset.mm - Version of 2-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -66149,6 +66149,34 @@ $)
        (Proof modification is discouraged.) $)
     bj-sucex $p |- suc A e. _V $=
       ( cvv wcel csuc bj-sucexg ax-mp ) ACDAECDBACFG $.
+  $}
+
+
+$(
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+       Delta_0-classical logic
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+$)
+
+  ${
+    ax-bj-d0class.bd $e |- Bdd ph $.
+    $( Axiom for ` Delta0 ` -classical logic.  (Contributed by BJ,
+       2-Jan-2020.) $)
+    ax-bj-d0cl $a |- ( ph \/ -. ph ) $.
+  $}
+
+  ${
+    $d a x ph $.
+    $( ` Delta0 ` -classical logic and separation implies classical logic.
+       (Contributed by BJ, 2-Jan-2020.)
+       (Proof modification is discouraged.) $)
+    bj-d0clsepcl $p |- ( ph \/ -. ph ) $=
+      ( va vx wn wo wex c0 cv wcel wb csn wa wal 0ex bj-snex zfauscl wceq eleq1
+      anbi1d eximii bibi12d spcv snid biantrur bicomi exbii bj-bd0el ax-bj-d0cl
+      bibi2i mpbi id notbid orbi12d mpbii bj-ex ax-mp ) AADZEZBFURGBHZIZAJZURBU
+      TGGKZIZALZJZBFVABFCHZUSIZVFVBIZALZJZCMVEBACBVBGNOPVJVECGNVFGQZVGUTVIVDVFG
+      USRVKVHVCAVFGVBRSUAUBTVEVABVDAUTAVDVCAGNUCUDUEUIUFUJVAUTUTDZEURUTBUGUHVAU
+      TAVLUQVAUKZVAUTAVMULUMUNTURBUOUP $.
   $}
 
 
