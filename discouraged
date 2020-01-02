@@ -17803,6 +17803,7 @@ New usage of "rexbiiOLD" is discouraged (0 uses).
 New usage of "rexnalOLD" is discouraged (0 uses).
 New usage of "rexsnsOLD" is discouraged (1 uses).
 New usage of "rexsuppOLD" is discouraged (0 uses).
+New usage of "rgen2aOLD" is discouraged (0 uses).
 New usage of "riesz1" is discouraged (1 uses).
 New usage of "riesz2" is discouraged (0 uses).
 New usage of "riesz3i" is discouraged (2 uses).
@@ -19585,7 +19586,8 @@ Proof modification of "rexanaliOLD" is discouraged (32 steps).
 Proof modification of "rexbiiOLD" is discouraged (22 steps).
 Proof modification of "rexnalOLD" is discouraged (39 steps).
 Proof modification of "rexsnsOLD" is discouraged (55 steps).
-Proof modification of "rgen2a" is discouraged (86 steps).
+Proof modification of "rgen2a" is discouraged (81 steps).
+Proof modification of "rgen2aOLD" is discouraged (86 steps).
 Proof modification of "rmo4fOLD" is discouraged (198 steps).
 Proof modification of "rmoxfrdOLD" is discouraged (126 steps).
 Proof modification of "rrgsuppOLD" is discouraged (228 steps).
@@ -19822,7 +19824,6 @@ Proof modification of "wl-pm2.18d" is discouraged (10 steps).
 Proof modification of "wl-pm2.21" is discouraged (8 steps).
 Proof modification of "wl-pm2.24i" is discouraged (10 steps).
 Proof modification of "wl-pm2.27" is discouraged (27 steps).
-Proof modification of "wl-rgen2a" is discouraged (81 steps).
 Proof modification of "wl-sbcom3" is discouraged (93 steps).
 Proof modification of "wl-section-boot" is discouraged (1 steps).
 Proof modification of "wl-section-impchain" is discouraged (1 steps).
