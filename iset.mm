@@ -63560,7 +63560,7 @@ $)
       UYLVQVBSUOVR $.
 
     $( Lemma showing compatibility of multiplication.  (Contributed by NM,
-       5-Sep-1995.)  (New usage is discouraged.) $)
+       5-Sep-1995.) $)
     mulcmpblnr $p |- ( ( ( ( A e. P. /\ B e. P. ) /\ ( C e. P. /\ D e. P. ) )
                /\ ( ( F e. P. /\ G e. P. ) /\ ( R e. P. /\ S e. P. ) ) ) ->
                 ( ( ( A +P. D ) = ( B +P. C ) /\ ( F +P. S ) = ( G +P. R ) ) ->
