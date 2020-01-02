@@ -1,4 +1,4 @@
-$( iset.mm - Version of 31-Dec-2019
+$( iset.mm - Version of 1-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -57591,8 +57591,7 @@ $)
            closed (third hypothesis), associative (fourth hypothesis), and has
            the cancellation property (fifth hypothesis), show that the relation
            ` .~ ` , specified by the first hypothesis, is transitive.
-           (Contributed by NM, 11-Feb-1996.)  (Revised by Mario Carneiro,
-           26-Apr-2015.) $)
+           (Contributed by Jim Kingdon, 1-Sep-2019.) $)
         ecopovtrng $p |- ( ( A .~ B /\ B .~ C ) -> A .~ C ) $=
           ( wcel wa co vf vg vh vt vs vr cxp w3a wbr cv cop wceq copab opabssxp
           wex eqsstri brel simpld anim12i 3anass sylibr wi breq1 anbi1d imbi12d
@@ -57623,8 +57622,7 @@ $)
            closed (third hypothesis), associative (fourth hypothesis), and has
            the cancellation property (fifth hypothesis), show that the relation
            ` .~ ` , specified by the first hypothesis, is an equivalence
-           relation.  (Contributed by NM, 16-Feb-1996.)  (Revised by Mario
-           Carneiro, 12-Aug-2015.) $)
+           relation.  (Contributed by Jim Kingdon, 1-Sep-2019.) $)
         ecopoverg $p |- .~ Er ( S X. S ) $=
           ( wtru cv wcel wa wceq wbr vf vg vh cxp wer wrel cop wex relopabi a1i
           co ecopovsymg adantl ecopovtrng wi wral simpll simplr caovcomd mpbird
@@ -63367,6 +63365,218 @@ $)
       ZVGWGDFWMVBWCTZNZVCWDVFWFVAWBVBWCJUEWOVDWEVEWOVBWCLWMWNUFZUGZUHUIUJUKVNWL
       CEWMVMWKDFWOVJWIVLWJWOVBWCVAWBJWPWMWNUMULWOVDWEVKWQUHUIUJUKUNZUOEFBVPWRUP
       WAVRAVPGVSVPTVTVQSVSVPBQUQURUSUT $.
+  $}
+
+  ${
+    $d x y z w v u f $.
+    $( Define equivalence relation for signed reals.  This is a "temporary" set
+       used in the construction of complex numbers, and is intended to be used
+       only by the construction.  From Proposition 9-4.1 of [Gleason] p. 126.
+       (Contributed by NM, 25-Jul-1995.) $)
+    df-enr $a |- ~R = { <. x , y >. | ( ( x e. ( P. X. P. ) /\
+                   y e. ( P. X. P. ) ) /\ E. z E. w E. v E. u
+                   ( ( x = <. z , w >. /\ y = <. v , u >. ) /\
+                   ( z +P. u ) = ( w +P. v ) ) ) } $.
+
+    $( Define class of signed reals.  This is a "temporary" set used in the
+       construction of complex numbers, and is intended to be used only by the
+       construction.  From Proposition 9-4.2 of [Gleason] p. 126.  (Contributed
+       by NM, 25-Jul-1995.) $)
+    df-nr $a |- R. = ( ( P. X. P. ) /. ~R ) $.
+
+    $( Define addition on signed reals.  This is a "temporary" set used in the
+       construction of complex numbers, and is intended to be used only by the
+       construction.  From Proposition 9-4.3 of [Gleason] p. 126.  (Contributed
+       by NM, 25-Aug-1995.) $)
+    df-plr $a |- +R = { <. <. x , y >. , z >. | ( ( x e. R. /\ y e. R. ) /\
+      E. w E. v E. u E. f (
+         ( x = [ <. w , v >. ] ~R /\ y = [ <. u , f >. ] ~R ) /\
+               z = [ <. ( w +P. u ) , ( v +P. f ) >. ] ~R ) ) } $.
+
+    $( Define multiplication on signed reals.  This is a "temporary" set used
+       in the construction of complex numbers, and is intended to be used only
+       by the construction.  From Proposition 9-4.3 of [Gleason] p. 126.
+       (Contributed by NM, 25-Aug-1995.) $)
+    df-mr $a |- .R = { <. <. x , y >. , z >. | ( ( x e. R. /\ y e. R. ) /\
+      E. w E. v E. u E. f (
+         ( x = [ <. w , v >. ] ~R /\ y = [ <. u , f >. ] ~R ) /\
+           z = [ <. ( ( w .P. u ) +P. ( v .P. f ) ) ,
+             ( ( w .P. f ) +P. ( v .P. u ) ) >. ] ~R ) ) } $.
+
+    $( Define ordering relation on signed reals.  This is a "temporary" set
+       used in the construction of complex numbers, and is intended to be used
+       only by the construction.  From Proposition 9-4.4 of [Gleason] p. 127.
+       (Contributed by NM, 14-Feb-1996.) $)
+    df-ltr $a |- <R = { <. x , y >. | ( ( x e. R. /\ y e. R. ) /\
+       E. z E. w E. v E. u
+       ( ( x = [ <. z , w >. ] ~R /\ y = [ <. v , u >. ] ~R ) /\
+                ( z +P. u ) <P ( w +P. v ) ) ) } $.
+
+    $( Define signed real constant 0.  This is a "temporary" set used in the
+       construction of complex numbers, and is intended to be used only by the
+       construction.  From Proposition 9-4.2 of [Gleason] p. 126.  (Contributed
+       by NM, 9-Aug-1995.) $)
+    df-0r $a |- 0R = [ <. 1P , 1P >. ] ~R $.
+
+    $( Define signed real constant 1.  This is a "temporary" set used in the
+       construction of complex numbers, and is intended to be used only by the
+       construction.  From Proposition 9-4.2 of [Gleason] p. 126.  (Contributed
+       by NM, 9-Aug-1995.) $)
+    df-1r $a |- 1R = [ <. ( 1P +P. 1P ) , 1P >. ] ~R $.
+
+    $( Define signed real constant -1.  This is a "temporary" set used in the
+       construction of complex numbers, and is intended to be used only by the
+       construction.  (Contributed by NM, 9-Aug-1995.) $)
+    df-m1r $a |- -1R = [ <. 1P , ( 1P +P. 1P ) >. ] ~R $.
+  $}
+
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $d x y z w v u D $.
+    $( Equivalence relation for signed reals in terms of positive reals.
+       (Contributed by NM, 3-Sep-1995.) $)
+    enrbreq $p |- ( ( ( A e. P. /\ B e. P. ) /\
+                     ( C e. P. /\ D e. P. ) ) ->
+          ( <. A , B >. ~R <. C , D >. <-> ( A +P. D ) = ( B +P. C ) ) ) $=
+      ( vx vy vz vw vv vu cpp cer cnp df-enr ecopoveq ) EFGHIJABCDKLMEFGHIJNO
+      $.
+  $}
+
+  ${
+    $d x y z w v u $.
+    $( The equivalence relation for signed reals is an equivalence relation.
+       Proposition 9-4.1 of [Gleason] p. 126.  (Contributed by NM,
+       3-Sep-1995.)  (Revised by Mario Carneiro, 6-Jul-2015.) $)
+    enrer $p |- ~R Er ( P. X. P. ) $=
+      ( vx vy vz vw vv cpp cer cnp df-enr addcomprg addclpr addassprg addcanprg
+      vu cv ecopoverg ) ABCDENFGHABCDENIAOZBOZJQRKQRCOZLQRSMP $.
+  $}
+
+  $( Equivalence class equality of positive fractions in terms of positive
+     integers.  (Contributed by NM, 29-Nov-1995.) $)
+  enreceq $p |- ( ( ( A e. P. /\ B e. P. ) /\ ( C e. P. /\ D e. P. ) ) ->
+                ( [ <. A , B >. ] ~R = [ <. C , D >. ] ~R <->
+                ( A +P. D ) = ( B +P. C ) ) ) $=
+    ( cnp wcel wa cop cer wbr cec wceq cpp co cxp wer enrer a1i opelxpi adantr
+    erth enrbreq bitr3d ) AEFBEFGZCEFDEFGZGZABHZCDHZIJUGIKUHIKLADMNBCMNLUFUGUHI
+    EEOZUIIPUFQRUDUGUIFUEABEESTUAABCDUBUC $.
+
+  ${
+    $d x y z w v u $.
+    $( The equivalence relation for signed reals exists.  (Contributed by NM,
+       25-Jul-1995.) $)
+    enrex $p |- ~R e. _V $=
+      ( vx vy vz vw vv vu cer cnp cxp npex xpex cv wcel wa cop cpp co wex copab
+      wceq df-enr opabssxp eqsstri ssexi ) GHHIZUEIZUEUEHHJJKZUGKGALZUEMBLZUEMN
+      UHCLZDLZOTUIELZFLZOTNUJUMPQUKULPQTNFRERDRCRZNABSUFABCDEFUAUNABUEUEUBUCUD
+      $.
+  $}
+
+  ${
+    $d x y z w v u $.
+    $( Signed real 'less than' is a relation on signed reals.  (Contributed by
+       NM, 14-Feb-1996.) $)
+    ltrelsr $p |- <R C_ ( R. X. R. ) $=
+      ( vx vy vz vw vv vu cltr cv cnr wcel wa cop cer cec wceq cpp cltp wbr wex
+      co copab cxp df-ltr opabssxp eqsstri ) GAHZIJBHZIJKUFCHZDHZLMNOUGEHZFHZLM
+      NOKUHUKPTUIUJPTQRKFSESDSCSZKABUAIIUBABCDEFUCULABIIUDUE $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.  $d x y z F $.
+    $d x y z G $.  $d x y z R $.  $d x y z S $.
+    $( Lemma showing compatibility of addition.  (Contributed by NM,
+       3-Sep-1995.) $)
+    addcmpblnr $p |- ( ( ( ( A e. P. /\ B e. P. ) /\ ( C e. P. /\ D e. P. ) )
+               /\ ( ( F e. P. /\ G e. P. ) /\ ( R e. P. /\ S e. P. ) ) ) ->
+                ( ( ( A +P. D ) = ( B +P. C ) /\ ( F +P. S ) = ( G +P. R ) ) ->
+     <. ( A +P. F ) , ( B +P. G ) >. ~R <. ( C +P. R ) , ( D +P. S ) >. ) ) $=
+      ( cpp co wceq wa cnp wcel addclpr anim12i an4s syl2anc addassprg syl3anc
+      cop cer wbr oveq12 wb enrbreq syl simprll simplrr addcomprg oveq1d oveq2d
+      simprrr 3eqtr3d simplll 3eqtr4d simprlr simplrl simprrl simpllr eqeq12d
+      bitrd syl5ibr ) ADIJZBCIJZKGFIJZHEIJZKLAGIJZBHIJZUACEIJZDFIJZUAUBUCZAMNZB
+      MNZLZCMNZDMNZLZLZGMNZHMNZLZEMNZFMNZLZLZLZVDVFIJZVEVGIJZKZVDVEVFVGIUDWGVLV
+      HVKIJZVIVJIJZKZWJWGVHMNZVIMNZLZVJMNZVKMNZLZLZVLWMUEVOWBVRWEWTVOWBLWPVRWEL
+      WSVMVTVNWAWPVMVTLWNVNWALWOAGOBHOPQVPWCVQWDWSVPWCLWQVQWDLWRCEOZDFOZPQPQVHV
+      IVJVKUFUGWGWKWHWLWIWGAGVKIJZIJZADVFIJZIJZWKWHWGXCXEAIWGGDIJZFIJZDGIJZFIJZ
+      XCXEWGXGXIFIWGVTVQXGXIKVSVTWAWEUHZVOVPVQWFUIZGDUJRUKWGVTVQWDXHXCKXKXLVSWB
+      WCWDUMZGDFSTWGVQVTWDXJXEKXLXKXMDGFSTUNULWGVMVTWRWKXDKVMVNVRWFUOZXKWGVQWDW
+      RXLXMXBRAGVKSTWGVMVQVFMNZWHXFKXNXLWGVTWDXOXKXMGFORADVFSTUPWGBHVJIJZIJZBCV
+      GIJZIJZWLWIWGXPXRBIWGHCIJZEIJZCHIJZEIJZXPXRWGXTYBEIWGWAVPXTYBKVSVTWAWEUQZ
+      VOVPVQWFURZHCUJRUKWGWAVPWCYAXPKYDYEVSWBWCWDUSZHCESTWGVPWAWCYCXRKYEYDYFCHE
+      STUNULWGVNWAWQWLXQKVMVNVRWFUTZYDWGVPWCWQYEYFXARBHVJSTWGVNVPVGMNZWIXSKYGYE
+      WGWAWCYHYDYFHEORBCVGSTUPVAVBVC $.
+
+    $( Lemma used in lemma showing compatibility of multiplication.
+       (Contributed by Jim Kingdon, 1-Jan-2020.) $)
+    mulcmpblnrlemg $p |- (
+        ( ( ( A e. P. /\ B e. P. ) /\ ( C e. P. /\ D e. P. ) )
+        /\ ( ( F e. P. /\ G e. P. ) /\ ( R e. P. /\ S e. P. ) ) ) ->
+          ( ( ( A +P. D ) = ( B +P. C ) /\
+              ( F +P. S ) = ( G +P. R ) ) ->
+            ( ( D .P. F ) +P. ( ( ( A .P. F ) +P. ( B .P. G ) ) +P.
+              ( ( C .P. S ) +P. ( D .P. R ) ) ) ) =
+              ( ( D .P. F ) +P. ( ( ( A .P. G ) +P. ( B .P. F ) ) +P.
+              ( ( C .P. R ) +P. ( D .P. S ) ) ) ) ) ) $=
+      ( cnp wcel wa cpp co wceq cmp mulclpr syl2anc syl3anc adantr mulcomprg vx
+      vy simpllr simprlr simplrr simprrl addclpr simplrl simprll oveq2 ad2antll
+      addassprg simprrr distrprg 3eqtr3d simplll oveq1 ad2antrl oveq12d 3eqtr4d
+      vz oveq2d oveq1d 3eqtr2d addcomprg adantl caov12d caov32d adantrr adantrl
+      cv w3a eqtrd 3eqtr4rd caov13d caov4d caov42d ex ) AIJZBIJZKZCIJZDIJZKZKZG
+      IJZHIJZKZEIJZFIJZKZKZKZADLMZBCLMZNZGFLMZHELMZNZKZDGOMZAGOMZBHOMZLMCFOMZDE
+      OMZLMLMZLMZXAAHOMZBGOMZLMCEOMZDFOMZLMLMZLMZNWMWTKZXAXBXDLMZXCXELMZLMZLMZX
+      AXHXKLMZXIXJLMZLMZLMZXGXMXNXPXOXALMZLMZXAXSLMZXTLMZXRYBXNXPCHOMZLMZXTLMZX
+      PYGXTLMZLMZYFYDWMYIYKNZWTWMXPIJZYGIJZXTIJZYLWMXCIJZXEIJZYMWMVTWGYPVSVTWDW
+      LUCZWEWFWGWKUDZBHPQZWMWCWIYQWAWBWCWLUEZWEWHWIWJUFZDEPQZXCXEUGQZWMWBWGYNWA
+      WBWCWLUHZYSCHPQZWMXIIJZXJIJZYOWMVTWFUUGYRWEWFWGWKUIZBGPQZWMWBWIUUHUUEUUBC
+      EPQZXIXJUGQZXPYGXTULRSXNYEYHXTLXNXHXAXKLMZLMZXCYGLMZXELMZYEYHXNUUNXHDHOMZ
+      XELMZLMZXHUUQLMZXELMZUUPXNUUMUURXHLXNDWQOMZDWROMZUUMUURWSUVBUVCNWMWPWQWRD
+      OUJUKWMUVBUUMNZWTWMWCWFWJUVDUUAUUIWEWHWIWJUMZDGFUNRSWMUVCUURNZWTWMWCWGWIU
+      VFUUAYSUUBDHEUNRSUOVBWMUVAUUSNZWTWMXHIJZUUQIJZYQUVGWMVSWGUVHVSVTWDWLUPZYS
+      AHPQZWMWCWGUVIUUAYSDHPQUUCXHUUQXEULRSXNUUTUUOXELXNWNHOMZWOHOMZUUTUUOWPUVL
+      UVMNWMWSWNWOHOUQURWMUVLUUTNWTWMHWNOMZHAOMZHDOMZLMZUVLUUTWMWGVSWCUVNUVQNYS
+      UVJUUAHADUNRWMWNIJZWGUVLUVNNWMVSWCUVRUVJUUAADUGQZYSWNHTQWMXHUVOUUQUVPLWMV
+      SWGXHUVONUVJYSAHTQWMWCWGUUQUVPNUUAYSDHTQUSUTSWMUVMUUONWTWMHWOOMZHBOMZHCOM
+      ZLMZUVMUUOWMWGVTWBUVTUWCNYSYRUUEHBCUNRWMWOIJZWGUVMUVTNWMVTWBUWDYRUUEBCUGQ
+      ZYSWOHTQWMXCUWAYGUWBLWMVTWGXCUWANYRYSBHTQWMWBWGYGUWBNUUEYSCHTQUSUTSUOVCVD
+      WMUUNYENWTWMUAUBVAXHXAXKILUVKWMWCWFXAIJZUUAUUIDGPQZWMWCWJXKIJZUUAUVEDFPQZ
+      UAVKZIJZUBVKZIJZKZUWJUWLLMZUWLUWJLMNWMUWJUWLVEVFZUWKUWMVAVKZIJVLUWOUWQLMU
+      WJUWLUWQLMLMNWMUWJUWLUWQULVFZVGSWMUUPYHNWTWMUAUBVAXCYGXEILYTUUFUUCUWPUWRV
+      HSUOVCXNYCYJXPLXNXBXALMZXDLMZXIYGXJLMZLMZYCYJXNUWTXICGOMZLMZXDLMZUXBWMWPU
+      WTUXENWSWMWPKZUWSUXDXDLUXFWNGOMZWOGOMZUWSUXDWPUXGUXHNWMWNWOGOUQVFWMUXGUWS
+      NWPWMGWNOMZGAOMZGDOMZLMZUXGUWSWMWFVSWCUXIUXLNUUIUVJUUAGADUNRWMUVRWFUXGUXI
+      NUVSUUIWNGTQWMXBUXJXAUXKLWMVSWFXBUXJNUVJUUIAGTQWMWCWFXAUXKNUUAUUIDGTQUSUT
+      SWMUXHUXDNWPWMGWOOMZGBOMZGCOMZLMZUXHUXDWMWFVTWBUXMUXPNUUIYRUUEGBCUNRWMUWD
+      WFUXHUXMNUWEUUIWOGTQWMXIUXNUXCUXOLWMVTWFXIUXNNYRUUIBGTQWMWBWFUXCUXONUUEUU
+      ICGTQUSUTSUOVCVIWMWSUXEUXBNWPWMWSKZUXEXIUXCXDLMZLMZUXBWMUXEUXSNZWSWMUUGUX
+      CIJZXDIJZUXTUUJWMWBWFUYAUUEUUICGPQWMWBWJUYBUUEUVECFPQZXIUXCXDULRSUXQUXRUX
+      AXILUXQCWQOMZCWROMZUXRUXAWSUYDUYENWMWQWRCOUJVFWMUYDUXRNZWSWMWBWFWJUYFUUEU
+      UIUVECGFUNRSWMUYEUXANZWSWMWBWGWIUYGUUEYSUUBCHEUNRSUOVBVMVJVMWMUWTYCNWTWMU
+      AUBVAXBXAXDILWMVSWFXBIJZUVJUUIAGPQZUWGUYCUWPUWRVHSWMUXBYJNWTWMUAUBVAXIYGX
+      JILUUJUUFUUKUWPUWRVGSUOVBVNWMYDXRNWTWMUAUBVAXPXOXAILUUDWMUYHUYBXOIJUYIUYC
+      XBXDUGQUWGUWPUWRVOSWMYFYBNZWTWMUWFXSIJZYOUYJUWGWMUVHUWHUYKUVKUWIXHXKUGQUU
+      LXAXSXTULRSUOWMXRXGNWTWMXQXFXALWMUAUBVAXBXDXCXEILUYIUYCYTUWPUWRUUCUWNUWOI
+      JWMUWJUWLUGVFZVPVBSWMYBXMNWTWMYAXLXALWMUAUBVAXHXKXIXJILUVKUWIUUJUWPUWRUUK
+      UYLVQVBSUOVR $.
+
+    $( Lemma showing compatibility of multiplication.  (Contributed by NM,
+       5-Sep-1995.) $)
+    mulcmpblnr $p |- ( ( ( ( A e. P. /\ B e. P. ) /\ ( C e. P. /\ D e. P. ) )
+               /\ ( ( F e. P. /\ G e. P. ) /\ ( R e. P. /\ S e. P. ) ) ) ->
+                ( ( ( A +P. D ) = ( B +P. C ) /\ ( F +P. S ) = ( G +P. R ) ) ->
+    <. ( ( A .P. F ) +P. ( B .P. G ) ) , ( ( A .P. G ) +P. ( B .P. F ) ) >. ~R
+ <. ( ( C .P. R ) +P. ( D .P. S ) ) , ( ( C .P. S ) +P. ( D .P. R ) ) >. ) ) $=
+      ( cnp wcel wa cpp co wceq cmp cop cer mulclpr syl2anc addclpr wbr simplrr
+      mulcmpblnrlemg wi simprll simplll simpllr simprlr simplrl simprrr simprrl
+      addcanprg syl3anc syld wb enrbreq syl22anc sylibrd ) AIJZBIJZKZCIJZDIJZKZ
+      KZGIJZHIJZKZEIJZFIJZKZKZKZADLMBCLMNGFLMHELMNKZAGOMZBHOMZLMZCFOMZDEOMZLMZL
+      MZAHOMZBGOMZLMZCEOMZDFOMZLMZLMZNZVQWDPWGVTPQUAZVMVNDGOMZWALMWKWHLMNZWIABC
+      DEFGHUCVMWKIJZWAIJZWHIJZWLWIUDVMVCVFWMVAVBVCVLUBZVEVFVGVKUEZDGRSVMVQIJZVT
+      IJZWNVMVOIJZVPIJZWRVMUSVFWTUSUTVDVLUFZWQAGRSVMUTVGXAUSUTVDVLUGZVEVFVGVKUH
+      ZBHRSVOVPTSZVMVRIJZVSIJZWSVMVBVJXFVAVBVCVLUIZVEVHVIVJUJZCFRSVMVCVIXGWPVEV
+      HVIVJUKZDERSVRVSTSZVQVTTSVMWDIJZWGIJZWOVMWBIJZWCIJZXLVMUSVGXNXBXDAHRSVMUT
+      VFXOXCWQBGRSWBWCTSZVMWEIJZWFIJZXMVMVBVIXQXHXJCERSVMVCVJXRWPXIDFRSWEWFTSZW
+      DWGTSWKWAWHULUMUNVMWRXLXMWSWJWIUOXEXPXSXKVQWDWGVTUPUQUR $.
   $}
 
 $(
