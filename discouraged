@@ -13685,6 +13685,7 @@ New usage of "0r" is discouraged (11 uses).
 New usage of "0reALT" is discouraged (1 uses).
 New usage of "0vfval" is discouraged (9 uses).
 New usage of "19.21a3con13vVD" is discouraged (0 uses).
+New usage of "19.21vOLD" is discouraged (0 uses).
 New usage of "19.35OLD" is discouraged (0 uses).
 New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
@@ -17024,6 +17025,7 @@ New usage of "mzpmfpOLD" is discouraged (0 uses).
 New usage of "nabbiOLD" is discouraged (0 uses).
 New usage of "naecoms-o" is discouraged (1 uses).
 New usage of "natded" is discouraged (0 uses).
+New usage of "nbgraopALT" is discouraged (0 uses).
 New usage of "necon1abidOLD" is discouraged (0 uses).
 New usage of "necon1abiiOLD" is discouraged (0 uses).
 New usage of "necon1adOLD" is discouraged (0 uses).
@@ -17725,6 +17727,8 @@ New usage of "qlaxr4i" is discouraged (0 uses).
 New usage of "qlaxr5i" is discouraged (0 uses).
 New usage of "quoremnn0ALT" is discouraged (0 uses).
 New usage of "r19.21biOLD" is discouraged (0 uses).
+New usage of "r19.21tOLD" is discouraged (0 uses).
+New usage of "r19.21vOLD" is discouraged (0 uses).
 New usage of "r1omALT" is discouraged (0 uses).
 New usage of "r1pwOLD" is discouraged (0 uses).
 New usage of "r3alOLD" is discouraged (0 uses).
@@ -17849,6 +17853,7 @@ New usage of "rngosn3" is discouraged (1 uses).
 New usage of "rngosn4" is discouraged (1 uses).
 New usage of "rngosn6" is discouraged (1 uses).
 New usage of "rngoueqz" is discouraged (2 uses).
+New usage of "rnlemOLD" is discouraged (0 uses).
 New usage of "rrgsuppOLD" is discouraged (0 uses).
 New usage of "rspsbc2" is discouraged (2 uses).
 New usage of "rspsbc2VD" is discouraged (0 uses).
@@ -18421,6 +18426,7 @@ New usage of "zzsnmOLD" is discouraged (0 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
+Proof modification of "19.21vOLD" is discouraged (7 steps).
 Proof modification of "19.35OLD" is discouraged (64 steps).
 Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
@@ -19385,6 +19391,7 @@ Proof modification of "mulge0OLD" is discouraged (25 steps).
 Proof modification of "mvridlemOLD" is discouraged (129 steps).
 Proof modification of "nabbiOLD" is discouraged (63 steps).
 Proof modification of "naecoms-o" is discouraged (19 steps).
+Proof modification of "nbgraopALT" is discouraged (271 steps).
 Proof modification of "necon1abidOLD" is discouraged (18 steps).
 Proof modification of "necon1abiiOLD" is discouraged (16 steps).
 Proof modification of "necon1adOLD" is discouraged (18 steps).
@@ -19515,6 +19522,8 @@ Proof modification of "pwtrrVD" is discouraged (110 steps).
 Proof modification of "qexALT" is discouraged (64 steps).
 Proof modification of "quoremnn0ALT" is discouraged (360 steps).
 Proof modification of "r19.21biOLD" is discouraged (27 steps).
+Proof modification of "r19.21tOLD" is discouraged (64 steps).
+Proof modification of "r19.21vOLD" is discouraged (8 steps).
 Proof modification of "r1omALT" is discouraged (13 steps).
 Proof modification of "r1pwOLD" is discouraged (151 steps).
 Proof modification of "r3alOLD" is discouraged (120 steps).
