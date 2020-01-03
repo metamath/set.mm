@@ -63775,6 +63775,27 @@ $)
     wn mpan df-nr eleq2s necon2bi ) AABACDZQAEUBAAAAFZAGGHZIJZCIKUDBZAUEDUCUDIL
     UFMUDINOUDAIPRSTUAO $.
 
+  $( The constant ` 0R ` is a signed real.  (Contributed by NM, 9-Aug-1995.)
+     (New usage is discouraged.) $)
+  0r $p |- 0R e. R. $=
+    ( c1p cop cer cec cnp cxp cqs c0r cnr 1pr opelxpi mp2an enrex ecelqsi ax-mp
+    wcel df-0r df-nr 3eltr4i ) AABZCDZEEFZCGZHITUBPZUAUCPAEPZUEUDJJAAEEKLUBTCMN
+    OQRS $.
+
+  $( The constant ` 1R ` is a signed real.  (Contributed by NM, 9-Aug-1995.)
+     (New usage is discouraged.) $)
+  1sr $p |- 1R e. R. $=
+    ( c1p cpp co cop cer cec cnp cxp cqs c1r cnr wcel 1pr addclpr mp2an opelxpi
+    enrex ecelqsi ax-mp df-1r df-nr 3eltr4i ) AABCZADZEFZGGHZEIZJKUDUFLZUEUGLUC
+    GLZAGLZUHUJUJUIMMAANOMUCAGGPOUFUDEQRSTUAUB $.
+
+  $( The constant ` -1R ` is a signed real.  (Contributed by NM, 9-Aug-1995.)
+     (New usage is discouraged.) $)
+  m1r $p |- -1R e. R. $=
+    ( c1p cpp cop cer cec cnp cxp cqs cm1r cnr wcel addclpr mp2an opelxpi enrex
+    co 1pr ecelqsi ax-mp df-m1r df-nr 3eltr4i ) AAABPZCZDEZFFGZDHZIJUDUFKZUEUGK
+    AFKZUCFKZUHQUIUIUJQQAALMAUCFFNMUFUDDORSTUAUB $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
