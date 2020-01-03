@@ -63796,6 +63796,35 @@ $)
     co 1pr ecelqsi ax-mp df-m1r df-nr 3eltr4i ) AAABPZCZDEZFFGZDHZIJUDUFKZUEUGK
     AFKZUCFKZUHQUIUIUJQQAALMAUCFFNMUFUDDORSTUAUB $.
 
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Closure of addition on signed reals.  (Contributed by NM, 25-Jul-1995.)
+       (New usage is discouraged.) $)
+    addclsr $p |- ( ( A e. R. /\ B e. R. ) -> ( A +R B ) e. R. ) $=
+      ( vx vy vz vw cnr wcel wa cplr co cnp cer cop cec df-nr wceq eleq1d cpp
+      cv cxp cqs oveq1 oveq2 addsrpr addclpr anim12i an4s opelxpi enrex ecelqsi
+      3syl eqeltrd 2ecoptocl syl6eleqr ) AGHBGHIABJKZLLUAZMUBZGCTZDTZNMOZETZFTZ
+      NMOZJKZURHAVDJKZURHUPURHCDEFABLLMGPVAAQVEVFURVAAVDJUCRVDBQVFUPURVDBAJUDRU
+      SLHZUTLHZIVBLHZVCLHZIIZVEUSVBSKZUTVCSKZNZMOZURUSUTVBVCUEVKVLLHZVMLHZIZVNU
+      QHVOURHVGVIVHVJVRVGVIIVPVHVJIVQUSVBUFUTVCUFUGUHVLVMLLUIUQVNMUJUKULUMUNPUO
+      $.
+  $}
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Closure of multiplication on signed reals.  (Contributed by NM,
+       10-Aug-1995.)  (New usage is discouraged.) $)
+    mulclsr $p |- ( ( A e. R. /\ B e. R. ) -> ( A .R B ) e. R. ) $=
+      ( vx vy vz vw cnr wcel wa cmr co cnp cer cop cec df-nr wceq cmp mulclpr
+      cv cxp cqs oveq1 eleq1d oveq2 cpp mulsrpr addclpr syl2an an4s jca opelxpi
+      an42s enrex ecelqsi 3syl eqeltrd 2ecoptocl syl6eleqr ) AGHBGHIABJKZLLUAZM
+      UBZGCTZDTZNMOZETZFTZNMOZJKZVBHAVHJKZVBHUTVBHCDEFABLLMGPVEAQVIVJVBVEAVHJUC
+      UDVHBQVJUTVBVHBAJUEUDVCLHZVDLHZIVFLHZVGLHZIIZVIVCVFRKZVDVGRKZUFKZVCVGRKZV
+      DVFRKZUFKZNZMOZVBVCVDVFVGUGVOVRLHZWALHZIWBVAHWCVBHVOWDWEVKVMVLVNWDVKVMIVP
+      LHVQLHWDVLVNIVCVFSVDVGSVPVQUHUIUJVKVNVLVMWEVKVNIVSLHVTLHWEVLVMIVCVGSVDVFS
+      VSVTUHUIUMUKVRWALLULVAWBMUNUOUPUQURPUS $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
