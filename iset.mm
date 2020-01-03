@@ -63757,6 +63757,17 @@ $)
       YOWGWHTQUUBXKYRYTUUAWBUUTUVBOUUSUVAHIUVAUUSHIPXKUUSUVAVAVFUUQWCWFWD $.
   $}
 
+  $( Greater than zero in terms of positive reals.  (Contributed by NM,
+     13-May-1996.)  (New usage is discouraged.) $)
+  gt0srpr $p |- ( 0R <R [ <. A , B >. ] ~R <-> B <P A ) $=
+    ( c0r cop cer cec cltr wbr cnp wcel wa cltp cxp cnr brel c1p cpp co wb 1pr
+    cdm wceq cqs wer enrer ax-mp ltrelsr simprd df-nr syl6eleq ecelqsdm sylancr
+    erdm opelxp sylib ltrelpr ancomd df-0r breq1i ltsrprg mpanl12 syl5bb ltaprg
+    mp3an3 ancoms bitr4d pm5.21nii ) CABDZEFZGHZAIJZBIJZKZBALHZVJVHIIMZJZVMVJEU
+    AVOUBZVIVOEUCZJVPVOEUDVQUEVOEUMUFVJVINVRVJCNJVINJCVINNGUGOUHUIUJVOVHEUKULAB
+    IIUNUOVNVLVKBAIILUPOUQVMVJPBQRPAQRLHZVNVJPPDEFZVIGHZVMVSCVTVIGURUSPIJZWBVMW
+    AVSSTTPPABUTVAVBVLVKVNVSSZVLVKWBWCTBAPVCVDVEVFVG $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
