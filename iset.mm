@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Jan-2020
+$( iset.mm - Version of 3-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -63819,6 +63819,16 @@ $)
       DVFRKZUFKZNZMOZVBVCVDVFVGUGVOVRLHZWALHZIWBVAHWCVBHVOWDWEVKVMVLVNWDVKVMIVP
       LHVQLHWDVLVNIVCVFSVDVGSVPVQUHUIUJVKVNVLVMWEVKVNIVSLHVTLHWEVLVMIVCVGSVDVFS
       VSVTUHUIUMUKVRWALLULVAWBMUNUOUPUQURPUS $.
+  $}
+
+  ${
+    $d f g h u v w x y z A $.  $d u v w z B $.  $d u v w x y z C $.
+    $( Addition of signed reals is commutative.  (Contributed by Jim Kingdon,
+       3-Jan-2020.) $)
+    addcomsrg $p |- ( ( A e. R. /\ B e. R. ) -> ( A +R B ) = ( B +R A ) ) $=
+      ( vx vy vz vw cnr cv cpp co cplr cer cnp df-nr addsrpr wcel wceq ad2ant2r
+      addcomprg ad2ant2l ecovicom ) CDEFABGCHZEHZIJZKLMDHZFHZIJZUCUBIJZUFUEIJZN
+      UBUEUCUFOUCUFUBUEOUBMPZUCMPZUDUHQUEMPZUFMPZUBUCSRULUMUGUIQUJUKUEUFSTUA $.
   $}
 
 $(
