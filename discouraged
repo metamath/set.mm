@@ -13685,6 +13685,7 @@ New usage of "0r" is discouraged (11 uses).
 New usage of "0reALT" is discouraged (1 uses).
 New usage of "0vfval" is discouraged (9 uses).
 New usage of "19.21a3con13vVD" is discouraged (0 uses).
+New usage of "19.21vOLD" is discouraged (0 uses).
 New usage of "19.35OLD" is discouraged (0 uses).
 New usage of "19.41rg" is discouraged (3 uses).
 New usage of "19.41rgVD" is discouraged (0 uses).
@@ -14604,6 +14605,7 @@ New usage of "cantnfsOLD" is discouraged (19 uses).
 New usage of "cantnfsucOLD" is discouraged (6 uses).
 New usage of "cantnfval2OLD" is discouraged (0 uses).
 New usage of "cantnfvalOLD" is discouraged (7 uses).
+New usage of "cases2OLD" is discouraged (0 uses).
 New usage of "cayleyhamiltonALT" is discouraged (0 uses).
 New usage of "cba" is discouraged (88 uses).
 New usage of "cbncms" is discouraged (5 uses).
@@ -17068,6 +17070,7 @@ New usage of "nfeqOLD" is discouraged (0 uses).
 New usage of "nfequid-o" is discouraged (0 uses).
 New usage of "nfeud2OLD" is discouraged (0 uses).
 New usage of "nfnfcALT" is discouraged (0 uses).
+New usage of "nfrexOLD" is discouraged (0 uses).
 New usage of "nic-ax" is discouraged (7 uses).
 New usage of "nic-axALT" is discouraged (0 uses).
 New usage of "nic-bi1" is discouraged (3 uses).
@@ -17724,6 +17727,9 @@ New usage of "qlaxr3i" is discouraged (0 uses).
 New usage of "qlaxr4i" is discouraged (0 uses).
 New usage of "qlaxr5i" is discouraged (0 uses).
 New usage of "quoremnn0ALT" is discouraged (0 uses).
+New usage of "r19.21biOLD" is discouraged (0 uses).
+New usage of "r19.21tOLD" is discouraged (0 uses).
+New usage of "r19.21vOLD" is discouraged (0 uses).
 New usage of "r1omALT" is discouraged (0 uses).
 New usage of "r1pwOLD" is discouraged (0 uses).
 New usage of "r3alOLD" is discouraged (0 uses).
@@ -17797,6 +17803,7 @@ New usage of "rexbiiOLD" is discouraged (0 uses).
 New usage of "rexnalOLD" is discouraged (0 uses).
 New usage of "rexsnsOLD" is discouraged (1 uses).
 New usage of "rexsuppOLD" is discouraged (0 uses).
+New usage of "rgen2aOLD" is discouraged (0 uses).
 New usage of "riesz1" is discouraged (1 uses).
 New usage of "riesz2" is discouraged (0 uses).
 New usage of "riesz3i" is discouraged (2 uses).
@@ -17848,6 +17855,7 @@ New usage of "rngosn3" is discouraged (1 uses).
 New usage of "rngosn4" is discouraged (1 uses).
 New usage of "rngosn6" is discouraged (1 uses).
 New usage of "rngoueqz" is discouraged (2 uses).
+New usage of "rnlemOLD" is discouraged (0 uses).
 New usage of "rrgsuppOLD" is discouraged (0 uses).
 New usage of "rspsbc2" is discouraged (2 uses).
 New usage of "rspsbc2VD" is discouraged (0 uses).
@@ -18420,6 +18428,7 @@ New usage of "zzsnmOLD" is discouraged (0 uses).
 Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "0reALT" is discouraged (15 steps).
 Proof modification of "19.21a3con13vVD" is discouraged (107 steps).
+Proof modification of "19.21vOLD" is discouraged (7 steps).
 Proof modification of "19.35OLD" is discouraged (64 steps).
 Proof modification of "19.41rg" is discouraged (58 steps).
 Proof modification of "19.41rgVD" is discouraged (127 steps).
@@ -18790,6 +18799,7 @@ Proof modification of "bnj142OLD" is discouraged (51 steps).
 Proof modification of "bnj145OLD" is discouraged (112 steps).
 Proof modification of "brab2ga" is discouraged (79 steps).
 Proof modification of "cadanOLD" is discouraged (224 steps).
+Proof modification of "cases2OLD" is discouraged (103 steps).
 Proof modification of "cayleyhamiltonALT" is discouraged (657 steps).
 Proof modification of "cbv1OLD" is discouraged (17 steps).
 Proof modification of "cbv1hOLD" is discouraged (89 steps).
@@ -19426,6 +19436,7 @@ Proof modification of "nfelOLD" is discouraged (40 steps).
 Proof modification of "nfeqOLD" is discouraged (37 steps).
 Proof modification of "nfequid-o" is discouraged (8 steps).
 Proof modification of "nfeud2OLD" is discouraged (83 steps).
+Proof modification of "nfrexOLD" is discouraged (29 steps).
 Proof modification of "nic-ax" is discouraged (142 steps).
 Proof modification of "nic-axALT" is discouraged (245 steps).
 Proof modification of "nic-bi1" is discouraged (22 steps).
@@ -19513,6 +19524,9 @@ Proof modification of "pwtrVD" is discouraged (110 steps).
 Proof modification of "pwtrrVD" is discouraged (110 steps).
 Proof modification of "qexALT" is discouraged (64 steps).
 Proof modification of "quoremnn0ALT" is discouraged (360 steps).
+Proof modification of "r19.21biOLD" is discouraged (27 steps).
+Proof modification of "r19.21tOLD" is discouraged (64 steps).
+Proof modification of "r19.21vOLD" is discouraged (8 steps).
 Proof modification of "r1omALT" is discouraged (13 steps).
 Proof modification of "r1pwOLD" is discouraged (151 steps).
 Proof modification of "r3alOLD" is discouraged (120 steps).
@@ -19572,7 +19586,8 @@ Proof modification of "rexanaliOLD" is discouraged (32 steps).
 Proof modification of "rexbiiOLD" is discouraged (22 steps).
 Proof modification of "rexnalOLD" is discouraged (39 steps).
 Proof modification of "rexsnsOLD" is discouraged (55 steps).
-Proof modification of "rgen2a" is discouraged (86 steps).
+Proof modification of "rgen2a" is discouraged (81 steps).
+Proof modification of "rgen2aOLD" is discouraged (86 steps).
 Proof modification of "rmo4fOLD" is discouraged (198 steps).
 Proof modification of "rmoxfrdOLD" is discouraged (126 steps).
 Proof modification of "rrgsuppOLD" is discouraged (228 steps).
