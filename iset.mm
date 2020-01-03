@@ -63668,8 +63668,7 @@ $)
     $d x y z w v u t s f g h a b c d C $.
     $d x y z w v u t s f g h a b c d D $.
     $( Addition of signed reals in terms of positive reals.  (Contributed by
-       NM, 3-Sep-1995.)  (Revised by Mario Carneiro, 12-Aug-2015.)
-       (New usage is discouraged.) $)
+       NM, 3-Sep-1995.)  (Revised by Mario Carneiro, 12-Aug-2015.) $)
     addsrpr $p |- ( ( ( A e. P. /\ B e. P. ) /\
                      ( C e. P. /\ D e. P. ) ) ->
                 ( [ <. A , B >. ] ~R +R [ <. C , D >. ] ~R ) =
@@ -63695,8 +63694,7 @@ $)
       WDWEWFWGWHWI $.
 
     $( Multiplication of signed reals in terms of positive reals.  (Contributed
-       by NM, 3-Sep-1995.)  (Revised by Mario Carneiro, 12-Aug-2015.)
-       (New usage is discouraged.) $)
+       by NM, 3-Sep-1995.)  (Revised by Mario Carneiro, 12-Aug-2015.) $)
     mulsrpr $p |- ( ( ( A e. P. /\ B e. P. ) /\
                      ( C e. P. /\ D e. P. ) ) ->
                 ( [ <. A , B >. ] ~R .R [ <. C , D >. ] ~R ) =
@@ -63758,7 +63756,7 @@ $)
   $}
 
   $( Greater than zero in terms of positive reals.  (Contributed by NM,
-     13-May-1996.)  (New usage is discouraged.) $)
+     13-May-1996.) $)
   gt0srpr $p |- ( 0R <R [ <. A , B >. ] ~R <-> B <P A ) $=
     ( c0r cop cer cec cltr wbr cnp wcel wa cltp cxp cnr brel c1p cpp co wb 1pr
     cdm wceq cqs wer enrer ax-mp ltrelsr simprd df-nr syl6eleq ecelqsdm sylancr
@@ -63769,28 +63767,26 @@ $)
     AVSSTTPPABUTVAVBVLVKVNVSSZVLVKWBWCTBAPVCVDVEVFVG $.
 
   $( The empty set is not a signed real.  (Contributed by NM, 25-Aug-1995.)
-     (Revised by Mario Carneiro, 10-Jul-2014.)  (New usage is discouraged.) $)
+     (Revised by Mario Carneiro, 10-Jul-2014.) $)
   0nsr $p |- -. (/) e. R. $=
     ( c0 wceq cnr wcel eqid wne cnp cxp cer cqs cdm wer enrer erdm ax-mp elqsn0
     wn mpan df-nr eleq2s necon2bi ) AABACDZQAEUBAAAAFZAGGHZIJZCIKUDBZAUEDUCUDIL
     UFMUDINOUDAIPRSTUAO $.
 
-  $( The constant ` 0R ` is a signed real.  (Contributed by NM, 9-Aug-1995.)
-     (New usage is discouraged.) $)
+  $( The constant ` 0R ` is a signed real.  (Contributed by NM, 9-Aug-1995.) $)
   0r $p |- 0R e. R. $=
     ( c1p cop cer cec cnp cxp cqs c0r cnr 1pr opelxpi mp2an enrex ecelqsi ax-mp
     wcel df-0r df-nr 3eltr4i ) AABZCDZEEFZCGZHITUBPZUAUCPAEPZUEUDJJAAEEKLUBTCMN
     OQRS $.
 
-  $( The constant ` 1R ` is a signed real.  (Contributed by NM, 9-Aug-1995.)
-     (New usage is discouraged.) $)
+  $( The constant ` 1R ` is a signed real.  (Contributed by NM, 9-Aug-1995.) $)
   1sr $p |- 1R e. R. $=
     ( c1p cpp co cop cer cec cnp cxp cqs c1r cnr wcel 1pr addclpr mp2an opelxpi
     enrex ecelqsi ax-mp df-1r df-nr 3eltr4i ) AABCZADZEFZGGHZEIZJKUDUFLZUEUGLUC
     GLZAGLZUHUJUJUIMMAANOMUCAGGPOUFUDEQRSTUAUB $.
 
-  $( The constant ` -1R ` is a signed real.  (Contributed by NM, 9-Aug-1995.)
-     (New usage is discouraged.) $)
+  $( The constant ` -1R ` is a signed real.  (Contributed by NM,
+     9-Aug-1995.) $)
   m1r $p |- -1R e. R. $=
     ( c1p cpp cop cer cec cnp cxp cqs cm1r cnr wcel addclpr mp2an opelxpi enrex
     co 1pr ecelqsi ax-mp df-m1r df-nr 3eltr4i ) AAABPZCZDEZFFGZDHZIJUDUFKZUEUGK
@@ -63798,8 +63794,8 @@ $)
 
   ${
     $d x y z w A $.  $d x y z w B $.
-    $( Closure of addition on signed reals.  (Contributed by NM, 25-Jul-1995.)
-       (New usage is discouraged.) $)
+    $( Closure of addition on signed reals.  (Contributed by NM,
+       25-Jul-1995.) $)
     addclsr $p |- ( ( A e. R. /\ B e. R. ) -> ( A +R B ) e. R. ) $=
       ( vx vy vz vw cnr wcel wa cplr co cnp cer cop cec df-nr wceq eleq1d cpp
       cv cxp cqs oveq1 oveq2 addsrpr addclpr anim12i an4s opelxpi enrex ecelqsi
@@ -63813,7 +63809,7 @@ $)
   ${
     $d x y z w A $.  $d x y z w B $.
     $( Closure of multiplication on signed reals.  (Contributed by NM,
-       10-Aug-1995.)  (New usage is discouraged.) $)
+       10-Aug-1995.) $)
     mulclsr $p |- ( ( A e. R. /\ B e. R. ) -> ( A .R B ) e. R. ) $=
       ( vx vy vz vw cnr wcel wa cmr co cnp cer cop cec df-nr wceq cmp mulclpr
       cv cxp cqs oveq1 eleq1d oveq2 cpp mulsrpr addclpr syl2an an4s jca opelxpi
