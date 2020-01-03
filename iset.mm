@@ -63768,6 +63768,13 @@ $)
     IIUNUOVNVLVKBAIILUPOUQVMVJPBQRPAQRLHZVNVJPPDEFZVIGHZVMVSCVTVIGURUSPIJZWBVMW
     AVSSTTPPABUTVAVBVLVKVNVSSZVLVKWBWCTBAPVCVDVEVFVG $.
 
+  $( The empty set is not a signed real.  (Contributed by NM, 25-Aug-1995.)
+     (Revised by Mario Carneiro, 10-Jul-2014.)  (New usage is discouraged.) $)
+  0nsr $p |- -. (/) e. R. $=
+    ( c0 wceq cnr wcel eqid wne cnp cxp cer cqs cdm wer enrer erdm ax-mp elqsn0
+    wn mpan df-nr eleq2s necon2bi ) AABACDZQAEUBAAAAFZAGGHZIJZCIKUDBZAUEDUCUDIL
+    UFMUDINOUDAIPRSTUAO $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
