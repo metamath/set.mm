@@ -63579,6 +63579,248 @@ $)
       DWGTSWKWAWHULUMUNVMWRXLXMWSWJWIUOXEXPXSXKVQWDWGVTUPUQUR $.
   $}
 
+  ${
+    $d a b c d f g h s t u v w x y $.
+    $( Decomposing signed reals into positive reals.  Lemma for ~ addsrpr and
+       ~ mulsrpr .  (Contributed by Jim Kingdon, 30-Dec-2019.) $)
+    prsrlem1 $p |- ( (
+        ( A e. ( ( P. X. P. ) /. ~R ) /\ B e. ( ( P. X. P. ) /. ~R ) )
+        /\ ( ( A = [ <. w , v >. ] ~R /\ B = [ <. u , t >. ] ~R )
+        /\ ( A = [ <. s , f >. ] ~R /\ B = [ <. g , h >. ] ~R ) ) ) -> (
+        ( ( ( w e. P. /\ v e. P. ) /\ ( s e. P. /\ f e. P. ) )
+          /\ ( ( u e. P. /\ t e. P. ) /\ ( g e. P. /\ h e. P. ) ) )
+        /\ ( ( w +P. f ) = ( v +P. s ) /\ ( u +P. h ) = ( t +P. g ) ) ) ) $=
+      ( cnp cer wcel wa cv cop cec wceq cpp co vx vy va vb vc cxp cqs cdm enrer
+      vd wer erdm ax-mp simprll simpll eqeltrrd ecelqsdm sylancr opelxp simprrl
+      sylib jca simprlr simplr simprrr wbr eqtr3d a1i mpbird wb df-enr ecopoveq
+      erth syl2anc mpbid jca31 ) EKKUFZLUGZMZFVRMZNZEAOZBOZPZLQZRZFCOZDOZPZLQZR
+      ZNZEJOZGOZPZLQZRZFHOZIOZPZLQZRZNZNZNZWBKMWCKMNZWMKMWNKMNZNWGKMWHKMNZWRKMW
+      SKMNZNWBWNSTWCWMSTRZWGWSSTWHWRSTRZNXEXFXGXEWDVQMZXFXELUHVQRZWEVRMXLVQLUKZ
+      XMUIVQLULUMZXEEWEVRWAWFWKXCUNZVSVTXDUOZUPVQWDLUQURZWBWCKKUSVAZXEWOVQMZXGX
+      EXMWPVRMXTXOXEEWPVRWAWLWQXBUTZXQUPVQWOLUQURWMWNKKUSVAZVBXEXHXIXEWIVQMZXHX
+      EXMWJVRMYCXOXEFWJVRWAWFWKXCVCZVSVTXDVDZUPVQWILUQURZWGWHKKUSVAZXEWTVQMZXIX
+      EXMXAVRMYHXOXEFXAVRWAWLWQXBVEZYEUPVQWTLUQURWRWSKKUSVAZVBXEXJXKXEWDWOLVFZX
+      JXEYKWEWPRXEEWEWPXPYAVGXEWDWOLVQXNXEUIVHZXRVMVIXEXFXGYKXJVJXSYBUAUBUCUDUE
+      UJWBWCWMWNSLKUAUBUCUDUEUJVKZVLVNVOXEWIWTLVFZXKXEYNWJXARXEFWJXAYDYIVGXEWIW
+      TLVQYLYFVMVIXEXHXIYNXKVJYGYJUAUBUCUDUEUJWGWHWRWSSLKYMVLVNVOVBVP $.
+  $}
+
+  ${
+    $d A f g h q s t u v w z $.  $d B f g h q s t u v w z $.
+    $( There is at most one result from adding signed reals.  (Contributed by
+       Jim Kingdon, 30-Dec-2019.) $)
+    addsrmo $p |- ( ( A e. ( ( P. X. P. ) /. ~R ) /\
+        B e. ( ( P. X. P. ) /. ~R ) ) -> E* z E. w E. v E. u E. t
+        ( ( A = [ <. w , v >. ] ~R /\ B = [ <. u , t >. ] ~R )
+        /\ z = [ <. ( w +P. u ) , ( v +P. t ) >. ] ~R ) ) $=
+      ( vq vs cnp cer wcel wa cv cop cec wceq cpp co wex vf cxp cqs wal wmo wer
+      vg vh wi enrer a1i wbr prsrlem1 addcmpblnr imp syl erthi adantrlr simprlr
+      adantrrr simprrr 3eqtr4d expr exlimdvv impd alrimivv opeq12 eceq1d eqeq2d
+      ex anbi1d simpl oveq1d simpr opeq12d anbi12d anbi2d oveq2d cbvex4v anbi2i
+      imbi1i 2albii sylibr eqeq1 4exbidv mo4 ) FJJUBZKUCZLGWHLMZFBNZCNZOZKPZQZG
+      DNZENZOZKPZQZMZANZWJWORSZWKWPRSZOZKPZQZMZETDTZCTBTZWTHNZXEQZMZETDTCTBTZMZ
+      XAXJQZUIZHUDAUDZXIAUEWIXIFINZUANZOZKPZQZGUGNZUHNZOZKPZQZMZXJXRYCRSZXSYDRS
+      ZOZKPZQZMZUHTUGTZUATITZMZXOUIZHUDAUDXQWIYRAHWIXIYPXOWIXHYPXOUIZBCWIXGYSDE
+      WIXGYSWIXGMZYOXOIUAYTYNXOUGUHWIXGYNXOWIXGYNMMXEYLXAXJWIXGYHXEYLQZYMWIWTYH
+      UUAXFWIWTYHMMZXDYKKWGWGKUFUUBUJUKUUBWJJLWKJLMXRJLXSJLMMWOJLWPJLMYCJLYDJLM
+      MMZWJXSRSWKXRRSQWOYDRSWPYCRSQMZMXDYKKULZBCDEFGUAUGUHIUMUUCUUDUUEWJWKXRXSY
+      CYDWOWPUNUOUPUQURUTWIWTXFYNUSWIXGYHYMVAVBVCVDVDVJVDVDVEVFXPYRAHXNYQXOXMYP
+      XIXLYBWSMZXJXRWORSZXSWPRSZOZKPZQZMYNBCDEIUAUGUHWJXRQZWKXSQZMZWTUUFXKUUKUU
+      NWNYBWSUUNWMYAFUUNWLXTKWJWKXRXSVGVHVIVKUUNXEUUJXJUUNXDUUIKUUNXBUUGXCUUHUU
+      NWJXRWORUULUUMVLVMUUNWKXSWPRUULUUMVNVMVOVHVIVPWOYCQZWPYDQZMZUUFYHUUKYMUUQ
+      WSYGYBUUQWRYFGUUQWQYEKWOWPYCYDVGVHVIVQUUQUUJYLXJUUQUUIYKKUUQUUGYIUUHYJUUQ
+      WOYCXRRUUOUUPVLVRUUQWPYDXSRUUOUUPVNVRVOVHVIVPVSVTWAWBWCXIXMAHXOXGXLBCDEXO
+      XFXKWTXAXJXEWDVQWEWFWC $.
+
+    $( There is at most one result from multiplying signed reals.  (Contributed
+       by Jim Kingdon, 30-Dec-2019.) $)
+    mulsrmo $p |- ( ( A e. ( ( P. X. P. ) /. ~R ) /\
+        B e. ( ( P. X. P. ) /. ~R ) ) -> E* z E. w E. v E. u E. t
+        ( ( A = [ <. w , v >. ] ~R /\ B = [ <. u , t >. ] ~R )
+        /\ z = [ <. ( ( w .P. u ) +P. ( v .P. t ) ) ,
+          ( ( w .P. t ) +P. ( v .P. u ) ) >. ] ~R ) ) $=
+      ( vq cnp cer wcel wa cv cop cec wceq cmp co cpp wex vs vf cxp cqs wal wmo
+      vg vh wi wer enrer a1i wbr prsrlem1 mulcmpblnr imp erthi adantrlr simprlr
+      syl adantrrr simprrr 3eqtr4d expr exlimdvv ex impd alrimivv opeq12 eceq1d
+      eqeq2d anbi1d oveq1d oveq12d opeq12d anbi12d anbi2d oveq2d cbvex4v anbi2i
+      simpl simpr imbi1i 2albii sylibr eqeq1 4exbidv mo4 ) FIIUCZJUDZKGWJKLZFBM
+      ZCMZNZJOZPZGDMZEMZNZJOZPZLZAMZWLWQQRZWMWRQRZSRZWLWRQRZWMWQQRZSRZNZJOZPZLZ
+      ETDTZCTBTZXBHMZXKPZLZETDTCTBTZLZXCXPPZUIZHUEAUEZXOAUFWKXOFUAMZUBMZNZJOZPZ
+      GUGMZUHMZNZJOZPZLZXPYDYIQRZYEYJQRZSRZYDYJQRZYEYIQRZSRZNZJOZPZLZUHTUGTZUBT
+      UATZLZYAUIZHUEAUEYCWKUUHAHWKXOUUFYAWKXNUUFYAUIZBCWKXMUUIDEWKXMUUIWKXMLZUU
+      EYAUAUBUUJUUDYAUGUHWKXMUUDYAWKXMUUDLLXKUUBXCXPWKXMYNXKUUBPZUUCWKXBYNUUKXL
+      WKXBYNLLZXJUUAJWIWIJUJUULUKULUULWLIKWMIKLYDIKYEIKLLWQIKWRIKLYIIKYJIKLLLZW
+      LYESRWMYDSRPWQYJSRWRYISRPLZLXJUUAJUMZBCDEFGUBUGUHUAUNUUMUUNUUOWLWMYDYEYIY
+      JWQWRUOUPUTUQURVAWKXBXLUUDUSWKXMYNUUCVBVCVDVEVEVFVEVEVGVHYBUUHAHXTUUGYAXS
+      UUFXOXRYHXALZXPYDWQQRZYEWRQRZSRZYDWRQRZYEWQQRZSRZNZJOZPZLUUDBCDEUAUBUGUHW
+      LYDPZWMYEPZLZXBUUPXQUVEUVHWPYHXAUVHWOYGFUVHWNYFJWLWMYDYEVIVJVKVLUVHXKUVDX
+      PUVHXJUVCJUVHXFUUSXIUVBUVHXDUUQXEUURSUVHWLYDWQQUVFUVGWAZVMUVHWMYEWRQUVFUV
+      GWBZVMVNUVHXGUUTXHUVASUVHWLYDWRQUVIVMUVHWMYEWQQUVJVMVNVOVJVKVPWQYIPZWRYJP
+      ZLZUUPYNUVEUUCUVMXAYMYHUVMWTYLGUVMWSYKJWQWRYIYJVIVJVKVQUVMUVDUUBXPUVMUVCU
+      UAJUVMUUSYQUVBYTUVMUUQYOUURYPSUVMWQYIYDQUVKUVLWAZVRUVMWRYJYEQUVKUVLWBZVRV
+      NUVMUUTYRUVAYSSUVMWRYJYDQUVOVRUVMWQYIYEQUVNVRVNVOVJVKVPVSVTWCWDWEXOXSAHYA
+      XMXRBCDEYAXLXQXBXCXPXKWFVQWGWHWE $.
+  $}
+
+  ${
+    $d x y z w v u t s f g h a b c d A $.
+    $d x y z w v u t s f g h a b c d B $.
+    $d x y z w v u t s f g h a b c d C $.
+    $d x y z w v u t s f g h a b c d D $.
+    $( Addition of signed reals in terms of positive reals.  (Contributed by
+       NM, 3-Sep-1995.)  (Revised by Mario Carneiro, 12-Aug-2015.) $)
+    addsrpr $p |- ( ( ( A e. P. /\ B e. P. ) /\
+                     ( C e. P. /\ D e. P. ) ) ->
+                ( [ <. A , B >. ] ~R +R [ <. C , D >. ] ~R ) =
+                   [ <. ( A +P. C ) , ( B +P. D ) >. ] ~R ) $=
+      ( vw vv vu vt vz cnp wcel wa cop cer cec cv wceq cpp co wex vx vy cxp cqs
+      cplr opelxpi enrex ecelqsi syl anim12i pm3.2i opeq12 eceq1d eqeq2d anbi1d
+      eqid simpl oveq1d simpr opeq12d anbi12d spc2egv anbi2d oveq2d 2eximdv cvv
+      sylan9 mp2ani wi ecexg ax-mp w3a simp1 eqeq1d simp2 simp3 4exbidv addsrmo
+      coprab df-plr df-nr eleq2i anbi12i anbi1i oprabbii eqtri ovig mp3an3 sylc
+      cnr ) AJKBJKLZCJKDJKLZLZABMZNOZJJUCZNUDZKZCDMZNOZWQKZLWOEPZFPZMZNOZQZWTGP
+      ZHPZMZNOZQZLZACRSZBDRSZMZNOZXBXGRSZXCXHRSZMZNOZQZLZHTGTZFTETZWOWTUESXPQZW
+      KWRWLXAWKWNWPKWRABJJUFWPWNNUGUHUIWLWSWPKXACDJJUFWPWSNUGUHUIUJWMWOWOQZWTWT
+      QZLZXPXPQZYDYFYGWOUPWTUPUKXPUPWKYHYILZXFYGLZXPXBCRSZXCDRSZMZNOZQZLZFTETWL
+      YDYQYJEFABJJXBAQZXCBQZLZYKYHYPYIYTXFYFYGYTXEWOWOYTXDWNNXBXCABULUMUNUOYTYO
+      XPXPYTYNXONYTYLXMYMXNYTXBACRYRYSUQURYTXCBDRYRYSUSURUTUMUNVAVBWLYQYCEFYBYQ
+      GHCDJJXGCQZXHDQZLZXLYKYAYPUUCXKYGXFUUCXJWTWTUUCXIWSNXGXHCDULUMUNVCUUCXTYO
+      XPUUCXSYNNUUCXQYLXRYMUUCXGCXBRUUAUUBUQVDUUCXHDXCRUUAUUBUSVDUTUMUNVAVBVEVG
+      VHWRXAXPVFKZYDYEVINVFKUUDUGXOVFNVJVKUAPZXEQZUBPZXJQZLZIPZXTQZLZHTGTFTETZY
+      DUAUBIWOWTXPVFWQWQUEUUEWOQZUUGWTQZUUJXPQZVLZUULYBEFGHUUQUUIXLUUKYAUUQUUFX
+      FUUHXKUUQUUEWOXEUUNUUOUUPVMVNUUQUUGWTXJUUNUUOUUPVOVNVAUUQUUJXPXTUUNUUOUUP
+      VPVNVAVQIEFGHUUEUUGVRUEUUEWJKZUUGWJKZLZUUMLZUAUBIVSUUEWQKZUUGWQKZLZUUMLZU
+      AUBIVSUAUBIEFGHVTUVAUVEUAUBIUUTUVDUUMUURUVBUUSUVCWJWQUUEWAWBWJWQUUGWAWBWC
+      WDWEWFWGWHWI $.
+
+    $( Multiplication of signed reals in terms of positive reals.  (Contributed
+       by NM, 3-Sep-1995.)  (Revised by Mario Carneiro, 12-Aug-2015.) $)
+    mulsrpr $p |- ( ( ( A e. P. /\ B e. P. ) /\
+                     ( C e. P. /\ D e. P. ) ) ->
+                ( [ <. A , B >. ] ~R .R [ <. C , D >. ] ~R ) =
+                   [ <. ( ( A .P. C ) +P. ( B .P. D ) ) ,
+                              ( ( A .P. D ) +P. ( B .P. C ) ) >. ] ~R ) $=
+      ( vw vv vu vt vz cnp wcel wa cop cer cec wceq cmp co cpp wex vx vy cxp cv
+      cqs cmr opelxpi enrex ecelqsi syl eqid pm3.2i opeq12 eceq1d eqeq2d anbi1d
+      anim12i simpl oveq1d simpr oveq12d opeq12d anbi12d spc2egv anbi2d 2eximdv
+      oveq2d sylan9 mp2ani cvv ecexg ax-mp w3a simp1 eqeq1d simp2 simp3 4exbidv
+      wi mulsrmo coprab df-mr df-nr eleq2i anbi12i anbi1i oprabbii eqtri mp3an3
+      cnr ovig sylc ) AJKBJKLZCJKDJKLZLZABMZNOZJJUCZNUEZKZCDMZNOZWSKZLWQEUDZFUD
+      ZMZNOZPZXBGUDZHUDZMZNOZPZLZACQRZBDQRZSRZADQRZBCQRZSRZMZNOZXDXIQRZXEXJQRZS
+      RZXDXJQRZXEXIQRZSRZMZNOZPZLZHTGTZFTETZWQXBUFRYBPZWMWTWNXCWMWPWRKWTABJJUGW
+      RWPNUHUIUJWNXAWRKXCCDJJUGWRXANUHUIUJUQWOWQWQPZXBXBPZLZYBYBPZYNYPYQWQUKXBU
+      KULYBUKWMYRYSLZXHYQLZYBXDCQRZXEDQRZSRZXDDQRZXECQRZSRZMZNOZPZLZFTETWNYNUUK
+      YTEFABJJXDAPZXEBPZLZUUAYRUUJYSUUNXHYPYQUUNXGWQWQUUNXFWPNXDXEABUMUNUOUPUUN
+      UUIYBYBUUNUUHYANUUNUUDXQUUGXTUUNUUBXOUUCXPSUUNXDACQUULUUMURZUSUUNXEBDQUUL
+      UUMUTZUSVAUUNUUEXRUUFXSSUUNXDADQUUOUSUUNXEBCQUUPUSVAVBUNUOVCVDWNUUKYMEFYL
+      UUKGHCDJJXICPZXJDPZLZXNUUAYKUUJUUSXMYQXHUUSXLXBXBUUSXKXANXIXJCDUMUNUOVEUU
+      SYJUUIYBUUSYIUUHNUUSYEUUDYHUUGUUSYCUUBYDUUCSUUSXICXDQUUQUURURZVGUUSXJDXEQ
+      UUQUURUTZVGVAUUSYFUUEYGUUFSUUSXJDXDQUVAVGUUSXICXEQUUTVGVAVBUNUOVCVDVFVHVI
+      WTXCYBVJKZYNYOVSNVJKUVBUHYAVJNVKVLUAUDZXGPZUBUDZXLPZLZIUDZYJPZLZHTGTFTETZ
+      YNUAUBIWQXBYBVJWSWSUFUVCWQPZUVEXBPZUVHYBPZVMZUVJYLEFGHUVOUVGXNUVIYKUVOUVD
+      XHUVFXMUVOUVCWQXGUVLUVMUVNVNVOUVOUVEXBXLUVLUVMUVNVPVOVCUVOUVHYBYJUVLUVMUV
+      NVQVOVCVRIEFGHUVCUVEVTUFUVCWJKZUVEWJKZLZUVKLZUAUBIWAUVCWSKZUVEWSKZLZUVKLZ
+      UAUBIWAUAUBIEFGHWBUVSUWCUAUBIUVRUWBUVKUVPUVTUVQUWAWJWSUVCWCWDWJWSUVEWCWDW
+      EWFWGWHWKWIWL $.
+  $}
+
+  ${
+    $d A x y z w v u f $.  $d B x y z w v u f $.  $d C x y z w v u f $.
+    $d D x y z w v u f $.
+    $( Ordering of signed reals in terms of positive reals.  (Contributed by
+       Jim Kingdon, 2-Jan-2019.) $)
+    ltsrprg $p |- ( ( ( A e. P. /\ B e. P. ) /\ ( C e. P. /\ D e. P. ) ) ->
+        ( [ <. A , B >. ] ~R <R [ <. C , D >. ] ~R <->
+        ( A +P. D ) <P ( B +P. C ) ) ) $=
+      ( vx vy cv cpp co cltp wbr cer cnp wcel wa wceq syl2anc addassprg syl3anc
+      addclpr vz vu vw vv vf cnr cltr enrex enrer df-nr df-ltr cop cec wb eqcom
+      enreceq syl6bb bi2anan9 simprlr simplrr addcomprg simprrl 3eqtr3d simplll
+      oveq12 adantl oveq1d oveq2d ad2ant2lr anim12ci an4s simpld 3eqtr4d adantr
+      simprll simplrl simprrr simpllr sylbid w3a ltaprg simprd caovord3d brecop
+      ex syld ) UAGZUBGZHIZUCGZUDGZHIZJKZADHIZBCHIZJKZEFUAUCUDUBABCDLMUFUGUHUIU
+      JEFUAUCUDUBUKWGMNZWJMNZOZAMNZBMNZOZOZWKMNZWHMNZOZCMNZDMNZOZOZOZWGWJULLUMA
+      BULLUMPZWKWHULLUMCDULLUMPZOZWIWOHIZWLWNHIZPZWMWPUNXKXNWGBHIZWJAHIZPZWHCHI
+      ZWKDHIZPZOZXQXCXLXTXJXMYCWGWJABUPXJXMYBYAPYCWKWHCDUPYBYAUOUQURXKYDXQXKYDO
+      XRYAHIZXSYBHIZXOXPYDYEYFPXKXRXSYAYBHVEVFXKXOYEPYDXKWGWHWOHIZHIZWGBYAHIZHI
+      ZXOYEXKYGYIWGHXKWHBHIZCHIZBWHHIZCHIZYGYIXKXEXAYLYNPXCXDXEXIUSZWSWTXAXJUTZ
+      XEXAOYKYMCHWHBVAVGQXKXEXAXGYLYGPYOYPXCXFXGXHVBZWHBCRSXKXAXEXGYNYIPYPYOYQB
+      WHCRSVCVHXKWQXEWOMNZXOYHPWQWRXBXJVDZYOXKYRWLMNZWSXFXBXIYRYTOWSXFOYTXBXIOY
+      RWRXDYTWQXEWJWKTVIXAXGYRWTXHBCTVIVJVKZVLZWGWHWORSXKWQXAYAMNZYEYJPYSYPXKXE
+      XGUUCYOYQWHCTQWGBYARSVMVNXKXPYFPYDXKWJWKWNHIZHIZWJAYBHIZHIZXPYFXKUUDUUFWJ
+      HXKWKAHIZDHIZAWKHIZDHIZUUDUUFXKUUHUUJDHXKXDWTUUHUUJPXCXDXEXIVOZWSWTXAXJVP
+      ZWKAVAQVGXKXDWTXHUUIUUDPUULUUMXCXFXGXHVQZWKADRSXKWTXDXHUUKUUFPUUMUULUUNAW
+      KDRSVCVHXKWRXDWNMNZXPUUEPWQWRXBXJVRZUULXKWTXHUUOUUMUUNADTQZWJWKWNRSXKWRWT
+      YBMNZYFUUGPUUPUUMXKXDXHUURUULUUNWKDTQWJAYBRSVMVNVMWEVSXKEFUEWIWOWLWNJMHEG
+      ZMNZFGZMNZUEGZMNVTUUSUVAJKUVCUUSHIUVCUVAHIJKUNXKUUSUVAUVCWAVFXKWQXEWIMNYS
+      YOWGWHTQUUBXKYRYTUUAWBUUTUVBOUUSUVAHIUVAUUSHIPXKUUSUVAVAVFUUQWCWFWD $.
+  $}
+
+  $( Greater than zero in terms of positive reals.  (Contributed by NM,
+     13-May-1996.) $)
+  gt0srpr $p |- ( 0R <R [ <. A , B >. ] ~R <-> B <P A ) $=
+    ( c0r cop cer cec cltr wbr cnp wcel wa cltp cxp cnr brel c1p cpp co wb 1pr
+    cdm wceq cqs wer enrer ax-mp ltrelsr simprd df-nr syl6eleq ecelqsdm sylancr
+    erdm opelxp sylib ltrelpr ancomd df-0r breq1i ltsrprg mpanl12 syl5bb ltaprg
+    mp3an3 ancoms bitr4d pm5.21nii ) CABDZEFZGHZAIJZBIJZKZBALHZVJVHIIMZJZVMVJEU
+    AVOUBZVIVOEUCZJVPVOEUDVQUEVOEUMUFVJVINVRVJCNJVINJCVINNGUGOUHUIUJVOVHEUKULAB
+    IIUNUOVNVLVKBAIILUPOUQVMVJPBQRPAQRLHZVNVJPPDEFZVIGHZVMVSCVTVIGURUSPIJZWBVMW
+    AVSSTTPPABUTVAVBVLVKVNVSSZVLVKWBWCTBAPVCVDVEVFVG $.
+
+  $( The empty set is not a signed real.  (Contributed by NM, 25-Aug-1995.)
+     (Revised by Mario Carneiro, 10-Jul-2014.) $)
+  0nsr $p |- -. (/) e. R. $=
+    ( c0 wceq cnr wcel eqid wne cnp cxp cer cqs cdm wer enrer erdm ax-mp elqsn0
+    wn mpan df-nr eleq2s necon2bi ) AABACDZQAEUBAAAAFZAGGHZIJZCIKUDBZAUEDUCUDIL
+    UFMUDINOUDAIPRSTUAO $.
+
+  $( The constant ` 0R ` is a signed real.  (Contributed by NM, 9-Aug-1995.) $)
+  0r $p |- 0R e. R. $=
+    ( c1p cop cer cec cnp cxp cqs c0r cnr 1pr opelxpi mp2an enrex ecelqsi ax-mp
+    wcel df-0r df-nr 3eltr4i ) AABZCDZEEFZCGZHITUBPZUAUCPAEPZUEUDJJAAEEKLUBTCMN
+    OQRS $.
+
+  $( The constant ` 1R ` is a signed real.  (Contributed by NM, 9-Aug-1995.) $)
+  1sr $p |- 1R e. R. $=
+    ( c1p cpp co cop cer cec cnp cxp cqs c1r cnr wcel 1pr addclpr mp2an opelxpi
+    enrex ecelqsi ax-mp df-1r df-nr 3eltr4i ) AABCZADZEFZGGHZEIZJKUDUFLZUEUGLUC
+    GLZAGLZUHUJUJUIMMAANOMUCAGGPOUFUDEQRSTUAUB $.
+
+  $( The constant ` -1R ` is a signed real.  (Contributed by NM,
+     9-Aug-1995.) $)
+  m1r $p |- -1R e. R. $=
+    ( c1p cpp cop cer cec cnp cxp cqs cm1r cnr wcel addclpr mp2an opelxpi enrex
+    co 1pr ecelqsi ax-mp df-m1r df-nr 3eltr4i ) AAABPZCZDEZFFGZDHZIJUDUFKZUEUGK
+    AFKZUCFKZUHQUIUIUJQQAALMAUCFFNMUFUDDORSTUAUB $.
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Closure of addition on signed reals.  (Contributed by NM,
+       25-Jul-1995.) $)
+    addclsr $p |- ( ( A e. R. /\ B e. R. ) -> ( A +R B ) e. R. ) $=
+      ( vx vy vz vw cnr wcel wa cplr co cnp cer cop cec df-nr wceq eleq1d cpp
+      cv cxp cqs oveq1 oveq2 addsrpr addclpr anim12i an4s opelxpi enrex ecelqsi
+      3syl eqeltrd 2ecoptocl syl6eleqr ) AGHBGHIABJKZLLUAZMUBZGCTZDTZNMOZETZFTZ
+      NMOZJKZURHAVDJKZURHUPURHCDEFABLLMGPVAAQVEVFURVAAVDJUCRVDBQVFUPURVDBAJUDRU
+      SLHZUTLHZIVBLHZVCLHZIIZVEUSVBSKZUTVCSKZNZMOZURUSUTVBVCUEVKVLLHZVMLHZIZVNU
+      QHVOURHVGVIVHVJVRVGVIIVPVHVJIVQUSVBUFUTVCUFUGUHVLVMLLUIUQVNMUJUKULUMUNPUO
+      $.
+  $}
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Closure of multiplication on signed reals.  (Contributed by NM,
+       10-Aug-1995.) $)
+    mulclsr $p |- ( ( A e. R. /\ B e. R. ) -> ( A .R B ) e. R. ) $=
+      ( vx vy vz vw cnr wcel wa cmr co cnp cer cop cec df-nr wceq cmp mulclpr
+      cv cxp cqs oveq1 eleq1d oveq2 cpp mulsrpr addclpr syl2an an4s jca opelxpi
+      an42s enrex ecelqsi 3syl eqeltrd 2ecoptocl syl6eleqr ) AGHBGHIABJKZLLUAZM
+      UBZGCTZDTZNMOZETZFTZNMOZJKZVBHAVHJKZVBHUTVBHCDEFABLLMGPVEAQVIVJVBVEAVHJUC
+      UDVHBQVJUTVBVHBAJUEUDVCLHZVDLHZIVFLHZVGLHZIIZVIVCVFRKZVDVGRKZUFKZVCVGRKZV
+      DVFRKZUFKZNZMOZVBVCVDVFVGUGVOVRLHZWALHZIWBVAHWCVBHVOWDWEVKVMVLVNWDVKVMIVP
+      LHVQLHWDVLVNIVCVFSVDVGSVPVQUHUIUJVKVNVLVMWEVKVNIVSLHVTLHWEVLVMIVCVGSVDVFS
+      VSVTUHUIUMUKVRWALLULVAWBMUNUOUPUQURPUS $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
