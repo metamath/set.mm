@@ -63829,6 +63829,18 @@ $)
       ( vx vy vz vw cnr cv cpp co cplr cer cnp df-nr addsrpr wcel wceq ad2ant2r
       addcomprg ad2ant2l ecovicom ) CDEFABGCHZEHZIJZKLMDHZFHZIJZUCUBIJZUFUEIJZN
       UBUEUCUFOUCUFUBUEOUBMPZUCMPZUDUHQUEMPZUFMPZUBUCSRULUMUGUIQUJUKUEUFSTUA $.
+
+    $( Addition of signed reals is associative.  (Contributed by Jim Kingdon,
+       3-Jan-2020.) $)
+    addasssrg $p |- ( ( A e. R. /\ B e. R. /\ C e. R. ) ->
+        ( ( A +R B ) +R C ) = ( A +R ( B +R C ) ) ) $=
+      ( vx vy vz vw vv vu cv cpp co cnp addsrpr wcel addclpr anim12i an4s wceq
+      wa cnr cer 3adant1r 3adant2r 3adant3r 3adant1l 3adant2l 3adant3l ecoviass
+      cplr df-nr addassprg ) DEFGHIABCUAUJGJZIJZKLZUBMDJZFJZKLZEJZUMKLZURHJZKLZ
+      UTUNKLZUPUQVAKLZKLZUSUOKLZVDUKUPUSUQUMNUQUMVAUNNURUTVAUNNUPUSVDUONUPMOZUQ
+      MOZUSMOZUMMOZURMOZUTMOZTVGVHTVKVIVJTVLUPUQPUSUMPQRVHVAMOZVJUNMOZVDMOZUOMO
+      ZTVHVMTVOVJVNTVPUQVAPUMUNPQRVGVITZVHVJTZVMVBVESZVNVQVHVMVSVJVGVHVMVSVIUPU
+      QVAULUCUDUEVQVRVNVCVFSZVMVQVJVNVTVHVIVJVNVTVGUSUMUNULUFUGUHUI $.
   $}
 
 $(
