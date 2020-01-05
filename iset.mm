@@ -64040,6 +64040,12 @@ $)
     AABCDZAAEFZABCDZGHIUHUJIJZUIAUIEFZKJZUIUIAEFZULKUILMZALMZUIUNKJUPUPUONNAAOQ
     ZNUIAPQUPUOULUNRNUQAUISQTUPUPUOUPUKUMUANNUQNAAUIAUBUCUDUEUFUG $.
 
+  $( 1 and 0 are distinct for signed reals.  (Contributed by NM,
+     26-Mar-1996.) $)
+  1ne0sr $p |- -. 1R = 0R $=
+    ( c1r c0r wceq cltr wbr cnr wor wcel wn ltsosr 1sr sonr mp2an 0lt1sr mpbiri
+    breq1 mto ) ABCZAADEZFDGAFHSIJKFADLMRSBADENABADPOQ $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
