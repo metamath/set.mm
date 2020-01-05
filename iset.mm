@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Jan-2020
+$( iset.mm - Version of 4-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -51295,29 +51295,6 @@ $)
     $}
 
     ${
-      caovdilemd.com $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
-        ( x G y ) = ( y G x ) ) $.
-      caovdilemd.distr $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
-        ( ( x F y ) G z ) = ( ( x G z ) F ( y G z ) ) ) $.
-      caovdilemd.ass $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
-        ( ( x G y ) G z ) = ( x G ( y G z ) ) ) $.
-      caovdilemd.cl $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
-        ( x G y ) e. S ) $.
-      caovdilemd.a $e |- ( ph -> A e. S ) $.
-      caovdilemd.b $e |- ( ph -> B e. S ) $.
-      caovdilemd.c $e |- ( ph -> C e. S ) $.
-      caovdilemd.d $e |- ( ph -> D e. S ) $.
-      caovdilemd.h $e |- ( ph -> H e. S ) $.
-      $( Lemma used by real number construction.  (Contributed by Jim Kingdon,
-         16-Sep-2019.) $)
-      caovdilemd $p |- ( ph -> ( ( ( A G C ) F ( B G D ) ) G H ) =
-                       ( ( A G ( C G H ) ) F ( B G ( D G H ) ) ) ) $=
-        ( co caovcld caovdird caovassd oveq12d eqtrd ) AEGKUBZFHKUBZJUBLKUBUHLK
-        UBZUILKUBZJUBEGLKUBKUBZFHLKUBKUBZJUBABCDUHUILIJKJINABCEGIIIKPQSUCABCFHI
-        IIKPRTUCUAUDAUJULUKUMJABCDEGLIKOQSUAUEABCDFHLIKORTUAUEUFUG $.
-    $}
-
-    ${
       caovdi.1 $e |- A e. _V $.
       caovdi.2 $e |- B e. _V $.
       caovdi.3 $e |- C e. _V $.
@@ -51428,6 +51405,61 @@ $)
         ( co caov31 caovass 3eqtr3i ) DEGMFGMFEGMDGMDEFGMGMFEDGMGMABCDEFGHIJKLN
         ABCDEFGHIJLOABCFEDGJIHLOP $.
     $}
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.
+    $d r s t x y z ph $.  $d r s t x y z F $.  $d r s t x y z G $.
+    $d x y z H $.  $d x y z K $.  $d x y z R $.  $d r s t x y z S $.
+    $d x y z T $.
+    caovdilemd.com $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+      ( x G y ) = ( y G x ) ) $.
+    caovdilemd.distr $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
+      ( ( x F y ) G z ) = ( ( x G z ) F ( y G z ) ) ) $.
+    caovdilemd.ass $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
+      ( ( x G y ) G z ) = ( x G ( y G z ) ) ) $.
+    caovdilemd.cl $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+      ( x G y ) e. S ) $.
+    caovdilemd.a $e |- ( ph -> A e. S ) $.
+    caovdilemd.b $e |- ( ph -> B e. S ) $.
+    caovdilemd.c $e |- ( ph -> C e. S ) $.
+    caovdilemd.d $e |- ( ph -> D e. S ) $.
+    caovdilemd.h $e |- ( ph -> H e. S ) $.
+    $( Lemma used by real number construction.  (Contributed by Jim Kingdon,
+       16-Sep-2019.) $)
+    caovdilemd $p |- ( ph -> ( ( ( A G C ) F ( B G D ) ) G H ) =
+                     ( ( A G ( C G H ) ) F ( B G ( D G H ) ) ) ) $=
+      ( co caovcld caovdird caovassd oveq12d eqtrd ) AEGKUBZFHKUBZJUBLKUBUHLK
+      UBZUILKUBZJUBEGLKUBKUBZFHLKUBKUBZJUBABCDUHUILIJKJINABCEGIIIKPQSUCABCFHI
+      IIKPRTUCUAUDAUJULUKUMJABCDEGLIKOQSUAUEABCDFHLIKORTUAUEUFUG $.
+
+    caovdl2.6 $e |- ( ph -> R e. S ) $.
+    caovdl2.com $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+      ( x F y ) = ( y F x ) ) $.
+    caovdl2.ass $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
+      ( ( x F y ) F z ) = ( x F ( y F z ) ) ) $.
+    caovdl2.cl $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+      ( x F y ) e. S ) $.
+    $( Rearrangement of expression involving multiplication ( ` G ` ) and
+       addition ( ` F ` ).  (Contributed by Jim Kingdon, 3-Jan-2020.) $)
+    caovlem2d $p |- ( ph -> ( ( ( ( A G C ) F ( B G D ) ) G H ) F
+          ( ( ( A G D ) F ( B G C ) ) G R ) ) =
+        ( ( A G ( ( C G H ) F ( D G R ) ) ) F
+          ( B G ( ( C G R ) F ( D G H ) ) ) ) ) $=
+      ( vr vs vt co caovcld caov42d caovdilemd oveq12d cv wcel w3a wceq caovclg
+      wa simpr1 3adantr1 caovcomg syldan 3anrot caovdirg sylan2b eqcomd ancom2s
+      jca 3adantr3 3adantr2 3eqtrd caovdid 3eqtr4d ) AEGMLUJZLUJZFHMLUJZLUJZKUJ
+      ZEHILUJZLUJZFGILUJZLUJZKUJZKUJVQWBKUJZWDVSKUJZKUJEGLUJFHLUJKUJMLUJZEHLUJF
+      GLUJKUJILUJZKUJEVPWAKUJLUJZFWCVRKUJLUJZKUJABCDVQVSWBWDJKABCEVPJJJLQRABCGM
+      JJJLQTUBUKZUKABCFVRJJJLQSABCHMJJJLQUAUBUKZUKABCEWAJJJLQRABCHIJJJLQUAUCUKZ
+      UKUDUEABCFWCJJJLQSABCGIJJJLQTUCUKZUKUFULAWHVTWIWEKABCDEFGHJKLMNOPQRSTUAUB
+      UMABCDEFHGJKLINOPQRSUATUCUMUNAWJWFWKWGKABCDEVPWAJKLKJABUOZJUPZCUOZJUPZDUO
+      ZJUPZUQZUTZWPWRWTKUJZLUJZXDWPLUJZWRWPLUJZWTWPLUJZKUJZWPWRLUJZWPWTLUJZKUJA
+      XBWQXDJUPZUTXEXFURXCWQXLAWQWSXAVAAWSXAXLWQAUGUHWRWTJJJKABCUGUOZUHUOZJJJKU
+      FUSUSVBVJAUGUHWPXDJLABCXMXNJLNVCZVCVDXBAWSXAWQUQXFXIURWQWSXAVEAUGUHUIWRWT
+      WPJKLKJABCDXMXNUIUOJKLKJOVFVFVGXCXGXJXHXKKAWQWSXGXJURXAAWQWSUTUTXJXGNVHVK
+      AWQXAXHXKURZWSAXAWQXPAUGUHWTWPJLXOVCVIVLUNVMZRWLWNVNABCDFWCVRJKLKJXQSWOWM
+      VNUNVO $.
   $}
 
   ${
@@ -63819,6 +63851,86 @@ $)
       DVFRKZUFKZNZMOZVBVCVDVFVGUGVOVRLHZWALHZIWBVAHWCVBHVOWDWEVKVMVLVNWDVKVMIVP
       LHVQLHWDVLVNIVCVFSVDVGSVPVQUHUIUJVKVNVLVMWEVKVNIVSLHVTLHWEVLVMIVCVGSVDVFS
       VSVTUHUIUMUKVRWALLULVAWBMUNUOUPUQURPUS $.
+  $}
+
+  ${
+    $d f g h r s t u v w x y z A $.  $d u v w z B $.  $d u v w x y z C $.
+    $( Addition of signed reals is commutative.  (Contributed by Jim Kingdon,
+       3-Jan-2020.) $)
+    addcomsrg $p |- ( ( A e. R. /\ B e. R. ) -> ( A +R B ) = ( B +R A ) ) $=
+      ( vx vy vz vw cnr cv cpp co cplr cer cnp df-nr addsrpr wcel wceq ad2ant2r
+      addcomprg ad2ant2l ecovicom ) CDEFABGCHZEHZIJZKLMDHZFHZIJZUCUBIJZUFUEIJZN
+      UBUEUCUFOUCUFUBUEOUBMPZUCMPZUDUHQUEMPZUFMPZUBUCSRULUMUGUIQUJUKUEUFSTUA $.
+
+    $( Addition of signed reals is associative.  (Contributed by Jim Kingdon,
+       3-Jan-2020.) $)
+    addasssrg $p |- ( ( A e. R. /\ B e. R. /\ C e. R. ) ->
+        ( ( A +R B ) +R C ) = ( A +R ( B +R C ) ) ) $=
+      ( vx vy vz vw vv vu cv cpp co cnp addsrpr wcel addclpr anim12i an4s wceq
+      wa cnr cer 3adant1r 3adant2r 3adant3r 3adant1l 3adant2l 3adant3l ecoviass
+      cplr df-nr addassprg ) DEFGHIABCUAUJGJZIJZKLZUBMDJZFJZKLZEJZUMKLZURHJZKLZ
+      UTUNKLZUPUQVAKLZKLZUSUOKLZVDUKUPUSUQUMNUQUMVAUNNURUTVAUNNUPUSVDUONUPMOZUQ
+      MOZUSMOZUMMOZURMOZUTMOZTVGVHTVKVIVJTVLUPUQPUSUMPQRVHVAMOZVJUNMOZVDMOZUOMO
+      ZTVHVMTVOVJVNTVPUQVAPUMUNPQRVGVITZVHVJTZVMVBVESZVNVQVHVMVSVJVGVHVMVSVIUPU
+      QVAULUCUDUEVQVRVNVCVFSZVMVQVJVNVTVHVIVJVNVTVGUSUMUNULUFUGUHUI $.
+
+    $( Multiplication of signed reals is commutative.  (Contributed by Jim
+       Kingdon, 3-Jan-2020.) $)
+    mulcomsrg $p |- ( ( A e. R. /\ B e. R. ) -> ( A .R B ) = ( B .R A ) ) $=
+      ( vx vy vz vw cv cmp co cpp mulsrpr wcel wceq mulcomprg oveq12d ad2ant2rl
+      cnp wa ad2ant2lr mulclpr cnr cmr df-nr ad2ant2r ad2ant2l ancoms addcomprg
+      cer syl2anc eqtrd ecovicom ) CDEFABUACGZEGZHIZDGZFGZHIZJIUBUHQULUPHIZUOUM
+      HIZJIZUMULHIZUPUOHIZJIUMUOHIZUPULHIZJIZUCULUOUMUPKUMUPULUOKULQLZUOQLZRUMQ
+      LZUPQLZRRZUNVAUQVBJVFVHUNVAMVGVIULUMNUDVGVIUQVBMVFVHUOUPNUEOVJUTVDVCJIZVE
+      VJURVDUSVCJVFVIURVDMVGVHULUPNPVGVHUSVCMVFVIUOUMNSOVJVDQLZVCQLZVKVEMVFVIVL
+      VGVHVIVFVLUPULTUFPVGVHVMVFVIVHVGVMUMUOTUFSVDVCUGUIUJUK $.
+
+    $( Multiplication of signed reals is associative.  (Contributed by Jim
+       Kingdon, 3-Jan-2020.) $)
+    mulasssrg $p |- ( ( A e. R. /\ B e. R. /\ C e. R. ) ->
+        ( ( A .R B ) .R C ) = ( A .R ( B .R C ) ) ) $=
+      ( vf vg vh cv cmp co cpp cnp mulsrpr wcel wa mulclpr addclpr syl2anc wceq
+      w3a adantl vx vy vz vw vv vu vr vs vt cnr cmr cer df-nr ad2ant2r ad2ant2l
+      ad2ant2rl ad2ant2lr mulcomprg distrprg simp1 simp2 simp3 caovdir2d simp1l
+      mulassprg simp1r simp2l simp2r simp3l simp3r addcomprg addassprg ecoviass
+      jca caovlem2d ) UAUBUCUDUEUFABCUJUKUCGZUFGZHIZUDGZUEGZHIZJIZULKUAGZVPHIZU
+      BGZVSHIZJIZWCVSHIZWEVPHIZJIZWGVTHIWJVQHIJIWGVQHIWJVTHIJIWCVPVTHIZVSVQHIZJ
+      IZHIWEWBHIJIWCWBHIWEWMHIJIWMUMWCWEVPVSLVPVSVTVQLWGWJVTVQLWCWEWMWBLWCKMZWE
+      KMZNZVPKMZVSKMZNZNZWGKMZWJKMZWTWDKMZWFKMZXAWNWQXCWOWRWCVPOUNWOWRXDWNWQWEV
+      SOUOWDWFPQWTWHKMZWIKMZXBWNWRXEWOWQWCVSOUPWOWQXFWNWRWEVPOUQWHWIPQVNWSVTKMZ
+      VQKMZNZNZWMKMZWBKMZXJWKKMZWLKMZXKWQXGXMWRXHVPVTOUNWRXHXNWQXGVSVQOUOWKWLPQ
+      XJVRKMZWAKMZXLWQXHXOWRXGVPVQOUPWRXGXPWQXHVSVTOUQVRWAPQVNWPWSXISZDEFWCWEVP
+      VSVQKJHVTDGZKMZEGZKMZNZXRXTHIZXTXRHIRXQXRXTURTZXSYAFGZKMZSZXRXTJIZYEHIXRY
+      EHIXTYEHIZJIRXQYGUGUHUIXRXTYEKJHUGGZKMZUHGZKMZUIGZKMSYJYLYNJIHIYJYLHIZYJY
+      NHIJIRYGYJYLYNUSTXSYAYFUTXSYAYFVAXSYAYFVBYKYMNZYJYLJIKMYGYJYLPTYPYOYLYJHI
+      RYGYJYLURTVCTZYGYCYEHIXRYIHIRXQXRXTYEVETZYBYCKMXQXRXTOTZWNWOWSXIVDZWNWOWS
+      XIVFZWPWQWRXIVGZWPWQWRXIVHZWPWSXGXHVIZWPWSXGXHVJZYBYHXTXRJIRXQXRXTVKTZYGY
+      HYEJIXRXTYEJIJIRXQXRXTYEVLTZYBYHKMXQXRXTPTZVOXQDEFWCWEVPVSVTKJHVQYDYQYRYS
+      YTUUAUUBUUCUUEUUDUUFUUGUUHVOVM $.
+
+    $( Multiplication of signed reals is distributive.  (Contributed by Jim
+       Kingdon, 4-Jan-2020.) $)
+    distrsrg $p |- ( ( A e. R. /\ B e. R. /\ C e. R. ) ->
+        ( A .R ( B +R C ) ) = ( ( A .R B ) +R ( A .R C ) ) ) $=
+      ( vf vg vh cnp cv cpp co cmp mulsrpr wcel wa addclpr mulclpr syl2anc wceq
+      distrprg syl3anc vx vy vz vw vv vu cnr cplr cer addsrpr ad2ant2r ad2ant2l
+      cmr jca ad2ant2rl ad2ant2lr w3a simp1l simp2l simp3l simp1r simp2r simp3r
+      df-nr oveq12d addcomprg adantl addassprg caov4d eqtrd ecovidi ) UAUBUCUDU
+      EUFABCUGUHUIGUMUAHZUCHZUEHZIJZKJZUBHZUDHZUFHZIJZKJZIJZVLVTKJZVQVOKJZIJZVL
+      VMKJZVQVRKJZIJZVLVNKJZVQVSKJZIJZIJZVLVRKJZVQVMKJZIJZVLVSKJZVQVNKJZIJZIJZV
+      OVTWHWOWKWRVDVMVRVNVSUJVLVQVOVTLVLVQVMVRLVLVQVNVSLWHWOWKWRUJVMGMZVRGMZNZV
+      NGMZVSGMZNZNVOGMZVTGMZWTXCXFXAXDVMVNOUKXAXDXGWTXCVRVSOULUNVLGMZVQGMZNZXBN
+      ZWHGMZWOGMZXKWFGMZWGGMZXLXHWTXNXIXAVLVMPZUKXIXAXOXHWTVQVRPZULWFWGOQXKWMGM
+      ZWNGMZXMXHXAXRXIWTVLVRPZUOXIWTXSXHXAVQVMPZUPWMWNOQUNXJXENZWKGMZWRGMZYBWIG
+      MZWJGMZYCXHXCYEXIXDVLVNPZUKXIXDYFXHXCVQVSPZULWIWJOQYBWPGMZWQGMZYDXHXDYIXI
+      XCVLVSPZUOXIXCYJXHXDVQVNPZUPWPWQOQUNXJXBXEUQZWBWFWIIJZWGWJIJZIJWLYMVPYNWA
+      YOIYMXHWTXCVPYNRXHXIXBXEURZXJWTXAXEUSZXJXBXCXDUTZVLVMVNSTYMXIXAXDWAYORXHX
+      IXBXEVAZXJWTXAXEVBZXJXBXCXDVCZVQVRVSSTVEYMDEFWFWIWGWJGIYMXHWTXNYPYQXPQYMX
+      HXCYEYPYRYGQYMXIXAXOYSYTXQQDHZGMZEHZGMZNZUUBUUDIJZUUDUUBIJRYMUUBUUDVFVGZU
+      UCUUEFHZGMUQUUGUUIIJUUBUUDUUIIJIJRYMUUBUUDUUIVHVGZYMXIXDYFYSUUAYHQUUFUUGG
+      MYMUUBUUDOVGZVIVJYMWEWMWPIJZWNWQIJZIJWSYMWCUULWDUUMIYMXHXAXDWCUULRYPYTUUA
+      VLVRVSSTYMXIWTXCWDUUMRYSYQYRVQVMVNSTVEYMDEFWMWPWNWQGIYMXHXAXRYPYTXTQYMXHX
+      DYIYPUUAYKQYMXIWTXSYSYQYAQUUHUUJYMXIXCYJYSYRYLQUUKVIVJVK $.
   $}
 
 $(
