@@ -63933,6 +63933,16 @@ $)
       DYIYPUUAYKQYMXIWTXSYSYQYAQUUHUUJYMXIXCYJYSYRYLQUUKVIVJVK $.
   $}
 
+  $( Minus one plus one is zero for signed reals.  (Contributed by NM,
+     5-May-1996.) $)
+  m1p1sr $p |- ( -1R +R 1R ) = 0R $=
+    ( cm1r c1r cplr co c1p cpp cop cer cec c0r df-m1r cnp wcel wceq 1pr addclpr
+    df-1r mp2an mp4an eqtr4i oveq12i df-0r addsrpr addassprg mp3an oveq2i mpbir
+    wb enreceq ) ABCDEEEFDZGHIZUJEGHIZCDZJAUKBULCKQUAJEEGHIZUMUBUMEUJFDZUJEFDZG
+    HIZUNELMZUJLMZUSURUMUQNOURURUSOOEEPRZUTOEUJUJEUCSUNUQNZEUPFDEUOFDNZUPUOEFUR
+    URURUPUONOOOEEEUDUEUFURURUOLMZUPLMZVAVBUHOOURUSVCOUTEUJPRUSURVDUTOUJEPREEUO
+    UPUISUGTTT $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
