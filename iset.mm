@@ -64033,6 +64033,13 @@ $)
       WKWPWRABUAFGWSWT $.
   $}
 
+  $( 0 is less than 1 for signed reals.  (Contributed by NM, 26-Mar-1996.) $)
+  0lt1sr $p |- 0R <R 1R $=
+    ( c1p cop cer cec cpp co c0r c1r cltr wbr cltp cnp wcel 1pr addclpr ltaddpr
+    mp2an wceq addcomprg breqtrri wb ltsrprg mp4an mpbir df-0r df-1r 3brtr4i )
+    AABCDZAAEFZABCDZGHIUHUJIJZUIAUIEFZKJZUIUIAEFZULKUILMZALMZUIUNKJUPUPUONNAAOQ
+    ZNUIAPQUPUOULUNRNUQAUISQTUPUPUOUPUKUMUANNUQNAAUIAUBUCUDUEUFUG $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
