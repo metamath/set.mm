@@ -63943,6 +63943,19 @@ $)
     URURUPUONOOOEEEUDUEUFURURUOLMZUPLMZVAVBUHOOURUSVCOUTEUJPRUSURVDUTOUJEPREEUO
     UPUISUGTTT $.
 
+  $( Minus one times minus one is plus one for signed reals.  (Contributed by
+     NM, 14-May-1996.) $)
+  m1m1sr $p |- ( -1R .R -1R ) = 1R $=
+    ( cm1r cmr c1p cpp cop cer cec c1r df-m1r oveq12i cmp cnp wcel wceq addclpr
+    co 1pr mp2an mulclpr eqtr4i df-1r mulsrpr mp4an addassprg mp3an 1idpr ax-mp
+    distrprg mulcomprg oveq1i oveq2i wb enreceq mpbir ) AABPCCCDPZEFGZUPBPZHAUP
+    AUPBIIJHUOCEFGZUQUAUQCCKPZUOUOKPZDPZCUOKPZUOCKPZDPZEFGZURCLMZUOLMZVFVGUQVEN
+    QVFVFVGQQCCORZQVHCUOCUOUBUCURVENZUOVDDPZCVADPZNZVJCCVDDPZDPZVKVFVFVDLMZVJVN
+    NQQVBLMZVCLMZVOVFVGVPQVHCUOSRVGVFVQVHQUOCSRVBVCORZCCVDUDUEVAVMCDUSCUTVDDVFU
+    SCNQCUFUGUTVCVCDPZVDVGVFVFUTVSNVHQQUOCCUHUEVBVCVCDVFVGVBVCNQVHCUOUIRUJTJUKT
+    VGVFVALMZVOVIVLULVHQUSLMZUTLMZVTVFVFWAQQCCSRVGVGWBVHVHUOUOSRUSUTORVRUOCVAVD
+    UMUCUNTTT $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
