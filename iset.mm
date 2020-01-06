@@ -64134,6 +64134,16 @@ $)
     MUHJUGULDAENOQUGUJBCZUIBCZUNUKJUGUOUQKAHRSUGUPURPAGRSUJUITUAUBAUCUGUIAUJIAU
     DUEUF $.
 
+  ${
+    $d x A $.
+    $( Existence of negative signed real.  Part of Proposition 9-4.3 of
+       [Gleason] p. 126.  (Contributed by NM, 2-May-1996.) $)
+    negexsr $p |- ( A e. R. -> E. x e. R. ( A +R x ) = 0R ) $=
+      ( cnr wcel cm1r cmr co cplr c0r wceq cv wrex m1r mpan2 pn0sr oveq2 eqeq1d
+      mulclsr rspcev syl2anc ) BCDZBEFGZCDZBUBHGZIJZBAKZHGZIJZACLUAECDUCMBERNBO
+      UHUEAUBCUFUBJUGUDIUFUBBHPQST $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
