@@ -17190,6 +17190,7 @@ New usage of "nmounbi" is discouraged (2 uses).
 New usage of "nmounbseqi" is discouraged (0 uses).
 New usage of "nmounbseqiOLD" is discouraged (0 uses).
 New usage of "nmoxr" is discouraged (7 uses).
+New usage of "nn0ge2m1nnALT" is discouraged (0 uses).
 New usage of "nn0suppOLD" is discouraged (11 uses).
 New usage of "nnelOLD" is discouraged (0 uses).
 New usage of "nnexALT" is discouraged (6 uses).
@@ -17259,6 +17260,7 @@ New usage of "nqerid" is discouraged (8 uses).
 New usage of "nqerrel" is discouraged (4 uses).
 New usage of "nqex" is discouraged (4 uses).
 New usage of "nqpr" is discouraged (1 uses).
+New usage of "nrexOLD" is discouraged (0 uses).
 New usage of "nsmallnq" is discouraged (3 uses).
 New usage of "nv0" is discouraged (5 uses).
 New usage of "nv0lid" is discouraged (6 uses).
@@ -19472,6 +19474,7 @@ Proof modification of "nonconneOLD" is discouraged (21 steps).
 Proof modification of "notnot2ALT" is discouraged (12 steps).
 Proof modification of "notnot2ALT2" is discouraged (2 steps).
 Proof modification of "notnot2ALTVD" is discouraged (34 steps).
+Proof modification of "nrexOLD" is discouraged (20 steps).
 Proof modification of "omsucdomOLD" is discouraged (76 steps).
 Proof modification of "ondomon" is discouraged (287 steps).
 Proof modification of "onfrALT" is discouraged (88 steps).
