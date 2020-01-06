@@ -64125,6 +64125,15 @@ $)
       WRWBWDUKWGWEWH $.
   $}
 
+  $( A signed real plus its negative is zero.  (Contributed by NM,
+     14-May-1996.) $)
+  pn0sr $p |- ( A e. R. -> ( A +R ( A .R -1R ) ) = 0R ) $=
+    ( cnr wcel c0r cmr co c1r cm1r cplr wceq m1r distrsrg mp3an23 m1p1sr oveq2i
+    1sr a1i mulclsr mpan2 addcomsrg syl2anc 3eqtr3d 00sr 1idsr oveq1d 3eqtr3rd
+    ) ABCZADEFZAGEFZAHEFZIFZDAUJIFUGAHGIFZEFZUJUIIFZUHUKUGHBCZGBCZUMUNJKPAHGLMU
+    MUHJUGULDAENOQUGUJBCZUIBCZUNUKJUGUOUQKAHRSUGUPURPAGRSUJUITUAUBAUCUGUIAUJIAU
+    DUEUF $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
