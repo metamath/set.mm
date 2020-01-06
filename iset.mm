@@ -64002,7 +64002,7 @@ $)
   ${
     $d a b c d e f r s t x y z w v u $.
     $( Signed real 'less than' is a strict ordering.  (Contributed by NM,
-       19-Feb-1996.)  (New usage is discouraged.) $)
+       19-Feb-1996.) $)
     ltsosr $p |- <R Or R. $=
       ( vx vy vr vs vt cnr cltr cv wbr wo wi cnp wceq wcel cltp addclpr syl2anc
       cpp co wb vz va vb vc vd ve vf wor wpo wral ltposr cop df-nr breq1 orbi1d
