@@ -64084,6 +64084,19 @@ $)
       HXBXMOXPTXQWQWRPVNVLWBWCWPWSVOVPVQVRVSVTWA $.
   $}
 
+  ${
+    $d x y A $.
+    $( A signed real times 0 is 0.  (Contributed by NM, 10-Apr-1996.) $)
+    00sr $p |- ( A e. R. -> ( A .R 0R ) = 0R ) $=
+      ( vx vy cv cop cer cec c0r cmr co wceq cnp wa c1p cmp cpp mpanr12 mulclpr
+      wcel 1pr cnr df-nr oveq1 eqeq1d mulsrpr mpan2 addclpr syl2an anim12i eqid
+      enreceq mpbiri sylan anidms eqtrd df-0r oveq2i 3eqtr4g ecoptocl ) BDZCDZE
+      FGZHIJZHKAHIJZHKBCALLFUAUBVBAKVCVDHVBAHIUCUDUTLSZVALSZMZVBNNEFGZIJZVHVCHV
+      GVIUTNOJZVANOJZPJZVLEFGZVHVGNLSZVNVIVMKTTUTVANNUEQVGVMVHKZVGVGMZVNVNVOTTV
+      PVLLSZVQMZVNVNMZVOVGVQVGVQVEVJLSZVKLSZVQVFVEVNVTTUTNRUFVFVNWATVANRUFVJVKU
+      GUHZWBUIVRVSMVOVLNPJZWCKWCUJVLVLNNUKULUMQUNUOHVHVBIUPUQUPURUS $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
