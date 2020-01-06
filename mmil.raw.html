@@ -1110,6 +1110,16 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TR>
 
 <TR>
+<TD>19.32</TD>
+<TD>~ 19.32r </TD>
+</TR>
+
+<TR>
+<TD>19.31</TD>
+<TD>~ 19.31r </TD>
+</TR>
+
+<TR>
 <TD>exdistrf</TD>
 <TD>~ exdistrfor </TD>
 </TR>
@@ -1137,11 +1147,6 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 <TR>
 <TD>dfrex2</TD>
 <TD>~ rexalim </TD>
-</TR>
-
-<TR>
-<TD>r19.30</TD>
-<TD><I>none</I></TD>
 </TR>
 
 <TR>
@@ -1180,6 +1185,11 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 </TR>
 
 <TR>
+<TD>r19.30</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
 <TD>ralcom2</TD>
 <TD>~ ralcom </TD>
 </TR>
@@ -1207,6 +1217,11 @@ pm2.61dne , pm2.61dane , pm2.61da2ne , pm2.61da3ne , pm2.61iine
 <TR>
 <TD>reximdva0</TD>
 <TD>~ reximdva0m </TD>
+</TR>
+
+<TR>
+<TD>r19.45zv</TD>
+<TD>~ r19.45mv </TD>
 </TR>
 
 <TR>
@@ -1351,6 +1366,13 @@ example ~ nntri3or , ~ pitri3or , and ~ nqtri3or .
 <TR>
 <TD>sotrieq2</TD>
 <TD>see sotrieq and then apply ~ ioran </TD>
+</TR>
+
+<TR>
+<TD>issoi</TD>
+<TD>~ issod , ~ ispod </TD>
+<TD>Many of the set.mm usages of issoi don't carry over, so
+there is less need for this convenience theorem.<TD>
 </TR>
 
 <TR>
@@ -1610,7 +1632,7 @@ found in ~ ovi3 .</TD>
 
 <TR>
 <TD>caovlem2</TD>
-<TD>?</TD>
+<TD>~ caovlem2d </TD>
 </TR>
 
 <TR>
@@ -2038,8 +2060,8 @@ used in set.mm</TD>
 <TR>
 <TD>brecop2</TD>
 <TD><I>none</I></TD>
-<TD>This is used only one place in set.mm but it may prove to be
-important in constructing the reals.</TD>
+<TD>This is a form of reverse closure and uses excluded
+middle in its proof.</TD>
 </TR>
 
 <TR>
@@ -2306,7 +2328,7 @@ so far there hasn't been a need to do so.</TD>
 
 <TR>
 <TD>ltrnq</TD>
-<TD>~ ltrnqi </TD>
+<TD>~ltrnqg , ~ ltrnqi </TD>
 </TR>
 
 <TR>
@@ -2382,6 +2404,130 @@ so far there hasn't been a need to do so.</TD>
 <TR>
 <TD>distrpr</TD>
 <TD>~ distrprg </TD>
+</TR>
+
+<TR>
+<TD>ltprord</TD>
+<TD>~ ltprordil </TD>
+<TD>There hasn't yet been a need to investigate versions which are
+biconditional or which involve proper subsets.</TD>
+</TR>
+
+<TR>
+<TD>psslinpr</TD>
+<TD>~ ltsopr </TD>
+</TR>
+
+<TR>
+<TD>prlem934</TD>
+<TD>~ prarloc2 </TD>
+</TR>
+
+<TR>
+<TD>ltaddpr2</TD>
+<TD>~ ltaddpr </TD>
+</TR>
+
+<TR>
+<TD>ltexprlem1 , ltexprlem2 , ltexprlem3 , ltexprlem4</TD>
+<TD><I>none</I></TD>
+<TD>See the lemmas for ~ ltexpri generally.</TD>
+</TR>
+
+<TR>
+<TD>ltexprlem5</TD>
+<TD>~ ltexprlempr </TD>
+</TR>
+
+<TR>
+<TD>ltexprlem6</TD>
+<TD>~ ltexprlemfl , ~ ltexprlemfu </TD>
+</TR>
+
+<TR>
+<TD>ltexprlem7</TD>
+<TD>~ ltexprlemrl , ~ ltexprlemru </TD>
+</TR>
+
+<TR>
+<TD>ltapr</TD>
+<TD>~ ltaprg </TD>
+</TR>
+
+<TR>
+<TD>addcanpr</TD>
+<TD>~ addcanprg </TD>
+</TR>
+
+<TR>
+<TD>prlem936</TD>
+<TD>~ prmuloc2 </TD>
+</TR>
+
+<TR>
+<TD>reclem2pr</TD>
+<TD>~ recexprlempr </TD>
+</TR>
+
+<TR>
+<TD>reclem3pr</TD>
+<TD>~ recexprlem1ssl , ~ recexprlem1ssu </TD>
+</TR>
+
+<TR>
+<TD>reclem4pr</TD>
+<TD>~ recexprlemss1l , ~ recexprlemss1u , ~ recexprlemex </TD>
+</TR>
+
+<TR>
+<TD>supexpr , suplem1pr , suplem2pr</TD>
+<TD><I>none</I></TD>
+<TD>The Least Upper Bound property for sets of real numbers does not hold,
+in general, without excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>mulcmpblnrlem</TD>
+<TD>~ mulcmpblnrlemg </TD>
+</TR>
+
+<TR>
+<TD>ltsrpr</TD>
+<TD>~ ltsrprg </TD>
+</TR>
+
+<TR>
+<TD>dmaddsr , dmmulsr</TD>
+<TD><I>none</I></TD>
+<TD>Although these presumably could be proved in a way similar
+to ~ dmaddpq and ~dmmulpq (in fact ~ dmaddpqlem would seem to
+be easily generalizable to anything of the form
+` ( ( S X. T ) /. R ) ` ), we haven't yet had a need to do so.
+</TR>
+
+<TR>
+<TD>addcomsr</TD>
+<TD>~ addcomsrg </TD>
+</TR>
+
+<TR>
+<TD>addasssr</TD>
+<TD>~ addasssrg </TD>
+</TR>
+
+<TR>
+<TD>mulcomsr</TD>
+<TD>~ mulcomsrg </TD>
+</TR>
+
+<TR>
+<TD>mulasssr</TD>
+<TD>~ mulasssrg </TD>
+</TR>
+
+<TR>
+<TD>distrsr</TD>
+<TD>~ distrsrg </TD>
 </TR>
 
 </TABLE>
