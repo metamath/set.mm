@@ -64046,6 +64046,22 @@ $)
     ( c1r c0r wceq cltr wbr cnr wor wcel wn ltsosr 1sr sonr mp2an 0lt1sr mpbiri
     breq1 mto ) ABCZAADEZFDGAFHSIJKFADLMRSBADENABADPOQ $.
 
+  ${
+    $d x y z w v $.  $d x y A $.
+    $( The signed real number 0 is an identity element for addition of signed
+       reals.  (Contributed by NM, 10-Apr-1996.) $)
+    0idsr $p |- ( A e. R. -> ( A +R 0R ) = A ) $=
+      ( vx vy vz vw vv cv cop cer cec c0r cplr co wceq cnp wcel wa c1p cpp 1pr
+      df-nr oveq1 id eqeq12d df-0r oveq2i addsrpr mpanr12 simpl simpr addcomprg
+      cnr a1i adantl w3a addassprg caov12d addclpr mpan2 anim12i enreceq mpbird
+      wb mpdan eqtr4d syl5eq ecoptocl ) BGZCGZHIJZKLMZVJNAKLMZANBCAOOIULUAVJANZ
+      VKVLVJAVJAKLUBVMUCUDVHOPZVIOPZQZVKVJRRHIJZLMZVJKVQVJLUEUFVPVRVHRSMZVIRSMZ
+      HIJZVJVPROPZWBVRWANTTVHVIRRUGUHVPVJWANZVHVTSMVIVSSMNZVPDEFVHVIROSVNVOUIVN
+      VOUJWBVPTUMDGZOPZEGZOPZQWEWGSMZWGWESMNVPWEWGUKUNWFWHFGZOPUOWIWJSMWEWGWJSM
+      SMNVPWEWGWJUPUNUQVPVSOPZVTOPZQWCWDVCVNWKVOWLVNWBWKTVHRURUSVOWBWLTVIRURUSU
+      TVHVIVSVTVAVDVBVEVFVG $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
