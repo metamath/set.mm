@@ -64260,48 +64260,42 @@ $)
   $( Multiplication on complex numbers.  The token ` x. ` is a center dot. $)
   cmul $a class x. $.
 
-  $( Define the set of complex numbers.  The 23 axioms for complex numbers
-     start at ~ axresscn .  (Contributed by NM, 22-Feb-1996.)
-     (New usage is discouraged.) $)
+  $( Define the set of complex numbers.  (Contributed by NM, 22-Feb-1996.) $)
   df-c $a |- CC = ( R. X. R. ) $.
 
-  $( Define the complex number 0.  (Contributed by NM, 22-Feb-1996.)
-     (New usage is discouraged.) $)
+  $( Define the complex number 0.  (Contributed by NM, 22-Feb-1996.) $)
   df-0 $a |- 0 = <. 0R , 0R >. $.
 
-  $( Define the complex number 1.  (Contributed by NM, 22-Feb-1996.)
-     (New usage is discouraged.) $)
+  $( Define the complex number 1.  (Contributed by NM, 22-Feb-1996.) $)
   df-1 $a |- 1 = <. 1R , 0R >. $.
 
   $( Define the complex number ` _i ` (the imaginary unit).  (Contributed by
-     NM, 22-Feb-1996.)  (New usage is discouraged.) $)
+     NM, 22-Feb-1996.) $)
   df-i $a |- _i = <. 0R , 1R >. $.
 
   ${
     $d x y $.
-    $( Define the set of real numbers.  (Contributed by NM, 22-Feb-1996.)
-       (New usage is discouraged.) $)
+    $( Define the set of real numbers.  (Contributed by NM, 22-Feb-1996.) $)
     df-r $a |- RR = ( R. X. { 0R } ) $.
   $}
 
   ${
     $d x y z w v u f $.
     $( Define addition over complex numbers.  (Contributed by NM,
-       28-May-1995.)  (New usage is discouraged.) $)
+       28-May-1995.) $)
     df-add $a |- + = { <. <. x , y >. , z >. | ( ( x e. CC /\ y e. CC ) /\
                   E. w E. v E. u E. f ( ( x = <. w , v >. /\ y = <. u , f >. )
                   /\ z = <. ( w +R u ) , ( v +R f ) >. ) ) } $.
 
     $( Define multiplication over complex numbers.  (Contributed by NM,
-       9-Aug-1995.)  (New usage is discouraged.) $)
+       9-Aug-1995.) $)
     df-mul $a |- x. = { <. <. x , y >. , z >. | ( ( x e. CC /\ y e. CC ) /\
                E. w E. v E. u E. f ( ( x = <. w , v >. /\ y = <. u , f >. )
                   /\ z = <. ( ( w .R u ) +R ( -1R .R ( v .R f ) ) ) ,
                   ( ( v .R u ) +R ( w .R f ) ) >. ) ) } $.
 
-    $( Define 'less than' on the real subset of complex numbers.  Proofs should
-       typically use ` < ` instead; see ~ df-ltxr .  (Contributed by NM,
-       22-Feb-1996.)  (New usage is discouraged.) $)
+    $( Define 'less than' on the real subset of complex numbers.  (Contributed
+       by NM, 22-Feb-1996.) $)
     df-lt $a |- <RR = { <. x , y >. | ( ( x e. RR /\ y e. RR ) /\
      E. z E. w ( ( x = <. z , 0R >. /\ y = <. w , 0R >. ) /\ z <R w ) ) } $.
   $}
