@@ -64189,6 +64189,15 @@ $)
       HUUTYNUOWOVAXQQXSXTYAYBYAYCYDYE $.
   $}
 
+  $( The sum of two positive signed reals is positive.  (Contributed by NM,
+     14-May-1996.) $)
+  addgt0sr $p |- ( ( 0R <R A /\ 0R <R B ) -> 0R <R ( A +R B ) ) $=
+    ( c0r cltr wbr cplr co wa simpr cnr wcel wb ltrelsr simprd 0r ltasrg mp3an1
+    brel syl2anr mpbid adantr 0idsr breq1d syl ltsosr sotri syldan ) CADEZCBDEZ
+    AABFGZDEZCUJDEUHUIHZACFGZUJDEZUKULUIUNUHUIIUIBJKZAJKZUIUNLZUHUICJKZUOCBJJDM
+    RNUHURUPCAJJDMRNZURUOUPUQOCBAPQSTULUPUNUKLUHUPUIUSUAUPUMAUJDAUBUCUDTCAUJDJU
+    EMUFUG $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
