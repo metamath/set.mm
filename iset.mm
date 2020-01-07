@@ -64300,6 +64300,59 @@ $)
      E. z E. w ( ( x = <. z , 0R >. /\ y = <. w , 0R >. ) /\ z <R w ) ) } $.
   $}
 
+  $( Ordered pair membership in the class of complex numbers.  (Contributed by
+     NM, 14-May-1996.) $)
+  opelcn $p |- ( <. A , B >. e. CC <-> ( A e. R. /\ B e. R. ) ) $=
+    ( cop cc wcel cnr cxp wa df-c eleq2i opelxp bitri ) ABCZDEMFFGZEAFEBFEHDNMI
+    JABFFKL $.
+
+  $( Ordered pair membership in class of real subset of complex numbers.
+     (Contributed by NM, 22-Feb-1996.) $)
+  opelreal $p |- ( <. A , 0R >. e. RR <-> A e. R. ) $=
+    ( c0r cop cr wcel cnr wceq eqid csn cxp wa eleq2i opelxp elexi elsnc anbi2i
+    df-r 0r 3bitri mpbiran2 ) ABCZDEZAFEZBBGZBHUBUAFBIZJZEUCBUEEZKUCUDKDUFUAQLA
+    BFUEMUGUDUCBBBFRNOPST $.
+
+  ${
+    $d x y A $.
+    $( Membership in class of real numbers.  (Contributed by NM,
+       31-Mar-1996.) $)
+    elreal $p |- ( A e. RR <-> E. x e. R. <. x , 0R >. = A ) $=
+      ( vy cr wcel cnr c0r csn cxp cv cop wceq wrex eleq2i elxp2 0r elexi opeq2
+      df-r bitri eqeq2d rexsn eqcom rexbii ) BDEBFGHZIZEZAJZGKZBLZAFMZDUFBSNUGB
+      UHCJZKZLZCUEMZAFMUKACBFUEOUOUJAFUOBUILZUJUNUPCGGFPQULGLUMUIBULGUHRUAUBBUI
+      UCTUDTT $.
+  $}
+
+  ${
+    $( Ordered pair membership in the class of complex numbers.  (Contributed
+       by Mario Carneiro, 15-Jun-2013.) $)
+    elreal2 $p |- ( A e. RR <->
+        ( ( 1st ` A ) e. R. /\ A = <. ( 1st ` A ) , 0R >. ) ) $=
+      ( cr wcel cnr c0r csn cxp c1st cfv wceq wa df-r eleq2i xp1st c2nd 1st2nd2
+      cop xp2nd elsni syl opeq2d eqtrd jca eleq1 0r snid opelxp mpbiran2 syl6bb
+      elexi biimparc impbii bitri ) ABCADEFZGZCZAHIZDCZAUQEQZJZKZBUOALMUPVAUPUR
+      UTADUNNUPAUQAOIZQUSADUNPUPVBEUQUPVBUNCVBEJADUNRVBESTUAUBUCUTUPURUTUPUSUOC
+      ZURAUSUOUDVCUREUNCEEDUEUJUFUQEDUNUGUHUIUKULUM $.
+  $}
+
+  $( The empty set is not a complex number.  Note: do not use this after the
+     real number axioms are developed, since it is a construction-dependent
+     property.  (Contributed by NM, 2-May-1996.) $)
+  0ncn $p |- -. (/) e. CC $=
+    ( c0 cc wcel cnr cxp 0nelxp df-c eleq2i mtbir ) ABCADDEZCDDFBJAGHI $.
+
+  ${
+    $d x y z w $.
+    $( 'Less than' is a relation on real numbers.  (Contributed by NM,
+       22-Feb-1996.) $)
+    ltrelre $p |- <RR C_ ( RR X. RR ) $=
+      ( vx vy vz vw cltrr cv cr wcel wa c0r cop wceq wbr wex copab cxp opabssxp
+      cltr df-lt eqsstri ) EAFZGHBFZGHIUACFZJKLUBDFZJKLIUCUDRMIDNCNZIABOGGPABCD
+      SUEABGGQT $.
+  $}
+
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
