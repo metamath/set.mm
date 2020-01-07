@@ -6046,6 +6046,11 @@
 "funadj" is used by "adjeq".
 "funadj" is used by "funcnvadj".
 "funcnvadj" is used by "adj1o".
+"fzossrbm1OLD" is used by "clwlkisclwwlklem1".
+"fzossrbm1OLD" is used by "redwlk".
+"fzossrbm1OLD" is used by "redwlklem".
+"fzossrbm1OLD" is used by "signsvtn0".
+"fzossrbm1OLD" is used by "wwlkm1edg".
 "gen11" is used by "ax6e2eqVD".
 "gen11" is used by "ax6e2ndeqVD".
 "gen11" is used by "csbfv12gALTVD".
@@ -15814,6 +15819,7 @@ New usage of "funcnvadj" is discouraged (1 uses).
 New usage of "funcnvmptOLD" is discouraged (0 uses).
 New usage of "funsnfsupOLD" is discouraged (0 uses).
 New usage of "fvimacnvALT" is discouraged (0 uses).
+New usage of "fzossrbm1OLD" is discouraged (5 uses).
 New usage of "gen11" is discouraged (19 uses).
 New usage of "gen11nv" is discouraged (5 uses).
 New usage of "gen12" is discouraged (7 uses).
