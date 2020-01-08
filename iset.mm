@@ -64388,6 +64388,23 @@ $)
       YEYAXQYCXSYDVDWSXPVCVFVDWSXRVCVFVGVHVIVJVK $.
   $}
 
+  ${
+    eqresr.1 $e |- A e. _V $.
+    $( Equality of real numbers in terms of intermediate signed reals.
+       (Contributed by NM, 10-May-1996.) $)
+    eqresr $p |- ( <. A , 0R >. = <. B , 0R >. <-> A = B ) $=
+      ( c0r cop wceq eqid cnr 0r elexi opth mpbiran2 ) ADEBDEFABFDDFDGADBDCDHIJ
+      KL $.
+  $}
+
+  $( Addition of real numbers in terms of intermediate signed reals.
+     (Contributed by NM, 10-May-1996.) $)
+  addresr $p |- ( ( A e. R. /\ B e. R. ) ->
+           ( <. A , 0R >. + <. B , 0R >. ) = <. ( A +R B ) , 0R >. ) $=
+    ( cnr wcel wa c0r cop caddc co cplr wceq 0r addcnsr an4s 0idsr ax-mp opeq2i
+    mpanr12 syl6eq ) ACDZBCDZEZAFGBFGHIZABJIZFFJIZGZUDFGUBFCDZUGUCUFKZLLTUGUAUG
+    UHAFBFMNRUEFUDUGUEFKLFOPQS $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
