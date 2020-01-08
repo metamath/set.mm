@@ -64352,6 +64352,41 @@ $)
       SUEABGGQT $.
   $}
 
+  ${
+    $d x y z w v u f A $.  $d x y z w v u f B $.  $d x y z w v u f C $.
+    $d x y z w v u f D $.
+    $( Addition of complex numbers in terms of signed reals.  (Contributed by
+       NM, 28-May-1995.) $)
+    addcnsr $p |- ( ( ( A e. R. /\ B e. R. ) /\ ( C e. R. /\ D e. R. ) ) ->
+           ( <. A , B >. + <. C , D >. ) = <. ( A +R C ) , ( B +R D ) >. ) $=
+      ( vx vy vz vw vv vu vf cv cplr co cop cnr wcel wa wceq cc addclsr opelxpi
+      cxp ad2ant2r ad2ant2l syl2anc simpll simprl oveq12d simplr simprr opeq12d
+      caddc wex coprab df-add df-c eleq2i anbi12i anbi1i oprabbii eqtri ovi3 )
+      EFGHIJABCDHLZJLZMNZILZKLZMNZOZACMNZBDMNZOZKUMPAPQZBPQZRCPQZDPQZRRVKPQZVLP
+      QZVMPPUCZQVNVPVRVOVQACUAUDVOVQVSVNVPBDUAUEVKVLPPUBUFVDASZVGBSZRZVECSZVHDS
+      ZRZRZVFVKVIVLWGVDAVECMWAWBWFUGWCWDWEUHUIWGVGBVHDMWAWBWFUJWCWDWEUKUIULUMEL
+      ZTQZFLZTQZRZWHVDVGOSWJVEVHOSRGLVJSRKUNJUNIUNHUNZRZEFGUOWHVTQZWJVTQZRZWMRZ
+      EFGUOEFGHIJKUPWNWREFGWLWQWMWIWOWKWPTVTWHUQURTVTWJUQURUSUTVAVBVC $.
+
+    $( Multiplication of complex numbers in terms of signed reals.
+       (Contributed by NM, 9-Aug-1995.) $)
+    mulcnsr $p |- ( ( ( A e. R. /\ B e. R. ) /\ ( C e. R. /\ D e. R. ) ) ->
+               ( <. A , B >. x. <. C , D >. ) =
+                   <. ( ( A .R C ) +R ( -1R .R ( B .R D ) ) ) ,
+                          ( ( B .R C ) +R ( A .R D ) ) >. ) $=
+      ( vx vy vz vw vv cv cmr co cm1r cplr cnr wcel wa mulclsr wceq oveq12d cop
+      vu cmul cxp ad2ant2r ad2ant2l sylancr addclsr syl2anc ad2ant2lr ad2ant2rl
+      vf m1r opelxpi simpll simprl simplr simprr oveq2d opeq12d wex coprab df-c
+      cc df-mul eleq2i anbi12i anbi1i oprabbii eqtri ovi3 ) EFGHIUBABCDHJZUBJZK
+      LZMIJZULJZKLZKLZNLZVOVMKLZVLVPKLZNLZUAZACKLZMBDKLZKLZNLZBCKLZADKLZNLZUAZU
+      LUCOAOPZBOPZQCOPZDOPZQQZWGOPZWJOPZWKOOUDZPWPWDOPZWFOPZWQWLWNWTWMWOACRUEWP
+      MOPWEOPZXAUMWMWOXBWLWNBDRUFMWERUGWDWFUHUIWPWHOPZWIOPZWRWMWNXCWLWOBCRUJWLW
+      OXDWMWNADRUKWHWIUHUIWGWJOOUNUIVLASZVOBSZQZVMCSZVPDSZQZQZVSWGWBWJXKVNWDVRW
+      FNXKVLAVMCKXEXFXJUOZXGXHXIUPZTXKVQWEMKXKVOBVPDKXEXFXJUQZXGXHXIURZTUSTXKVT
+      WHWAWINXKVOBVMCKXNXMTXKVLAVPDKXLXOTTUTUCEJZVDPZFJZVDPZQZXPVLVOUASXRVMVPUA
+      SQGJWCSQULVAUBVAIVAHVAZQZEFGVBXPWSPZXRWSPZQZYAQZEFGVBEFGHIUBULVEYBYFEFGXT
+      YEYAXQYCXSYDVDWSXPVCVFVDWSXRVCVFVGVHVIVJVK $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
