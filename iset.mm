@@ -1,4 +1,4 @@
-$( iset.mm - Version of 5-Jan-2020
+$( iset.mm - Version of 8-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -57050,6 +57050,17 @@ $)
     ecid $p |- [ A ] `' _E = A $=
       ( vy cep ccnv cec cv wcel wbr vex elec brcnv epelc 3bitri eqriv ) CADEZFZ
       ACGZQHARPIRADIRAHRAPCJZBKARDBSLRABMNO $.
+  $}
+
+  ${
+    $d y A $.  $d y V $.
+    $( A set is equal to its converse epsilon coset.  (Note: converse epsilon
+       is not an equivalence relation.)  (Contributed by Jim Kingdon,
+       8-Jan-2020.) $)
+    ecidg $p |- ( A e. V -> [ A ] `' _E = A ) $=
+      ( vy wcel cep ccnv cec cv wbr cvv wb elecg mpan brcnvg mpan2 epelg 3bitrd
+      vex eqrdv ) ABDZCAEFZGZATCHZUBDZAUCUAIZUCAEIZUCADUCJDZTUDUEKCRZUCAUAJBLMT
+      UGUEUFKUHAUCBJENOUCABPQS $.
   $}
 
   ${
