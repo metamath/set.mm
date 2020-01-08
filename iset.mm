@@ -64435,6 +64435,17 @@ $)
       AAWBBNVEVFVGVH $.
   $}
 
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Ordering of real subset of complex numbers in terms of signed reals.
+       (Contributed by NM, 22-Feb-1996.) $)
+    ltresr2 $p |- ( ( A e. RR /\ B e. RR ) ->
+        ( A <RR B <-> ( 1st ` A ) <R ( 1st ` B ) ) ) $=
+      ( cr wcel wa wbr c1st cfv c0r cop cltr cnr wceq elreal2 simprbi breqan12d
+      cltrr ltresr syl6bb ) ACDZBCDZEABQFAGHZIJZBGHZIJZQFUBUDKFTUAAUCBUEQTUBLDA
+      UCMANOUAUDLDBUEMBNOPUBUDRS $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
