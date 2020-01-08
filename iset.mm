@@ -64416,6 +64416,25 @@ $)
     FKJVEURFMRFSOPKCDVHFMUCKSOUJPUOUQCDVGUQMABUDUQQUEUFUOVCFFLIZFUNUMVAFVBFLUNV
     ABFJIZFVEUNVAVJMRFBUGUHBSTASUIVEVIFMRFQOUKULT $.
 
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Ordering of real subset of complex numbers in terms of signed reals.
+       (Contributed by NM, 22-Feb-1996.) $)
+    ltresr $p |- ( <. A , 0R >. <RR <. B , 0R >. <-> A <R B ) $=
+      ( vz vw vx vy c0r cop cltrr wbr cnr wcel wa cltr cr wceq wex anbi1d eqcom
+      cv ltrelre brel opelreal anbi12i sylib ltrelsr eleq1 eqeq1 2exbidv anbi2d
+      anbi12d df-lt brabg bianabs vex eqresr 3bitr4i opth2 bitr4i anbi1i 2exbii
+      wb syl6bb syl2anbr breq12 copsex2g bitrd pm5.21nii ) AGHZBGHZIJZAKLZBKLZM
+      ZABNJZVKVIOLZVJOLZMZVNVIVJOOIUAUBVPVLVQVMAUCZBUCZUDUEABKKNUFUBVNVKABHCTZD
+      TZHPZWAWBNJZMZDQCQZVOVLVPVQVKWFVBVMVSVTVRVKVIWAGHZPZVJWBGHZPZMZWDMZDQCQZW
+      FVRVKWMETZOLZFTZOLZMZWNWGPZWPWIPZMZWDMZDQCQZMVPWQMZWHWTMZWDMZDQCQZMVRWMME
+      FVIVJOOIWNVIPZWRXDXCXGXHWOVPWQWNVIOUGRXHXBXFCDXHXAXEWDXHWSWHWTWNVIWGUHRRU
+      IUKWPVJPZXDVRXGWMXIWQVQVPWPVJOUGUJXIXFWLCDXIXEWKWDXIWTWJWHWPVJWIUHUJRUIUK
+      EFCDULUMUNWLWECDWKWCWDWKAWAPZBWBPZMWCWHXJWJXKWGVIPWAAPWHXJWAACUOZUPVIWGSA
+      WASUQWIVJPWBBPWJXKWBBDUOZUPVJWISBWBSUQUDABWAWBXLXMURUSUTVAVCVDWDVOCDABKKW
+      AAWBBNVEVFVGVH $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
