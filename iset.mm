@@ -64511,6 +64511,15 @@ $)
     enrer qsss eqeltri trud ssexi ) ABBCDEBBBFFCZGHZDIUDUCJZUCFFKKLMUDUENOUCGUC
     GPORQSUAUBTZUFLT $.
 
+  $( The real numbers are a subset of the complex numbers.  Axiom 1 of 22 for
+     real and complex numbers, derived from ZF set theory.  This
+     construction-dependent theorem should not be referenced directly; instead,
+     use ~ ax-resscn .  (Contributed by NM, 1-Mar-1995.)  (Proof shortened by
+     Andrew Salmon, 12-Aug-2011.)  (New usage is discouraged.) $)
+  axresscn $p |- RR C_ CC $=
+    ( cnr c0r csn cxp cr cc wcel wss 0r snssi xpss2 mp2b df-r df-c 3sstr4i ) AB
+    CZDZAADZEFBAGPAHQRHIBAJPAAKLMNO $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64521,6 +64530,12 @@ $)
      instead.  (New usage is discouraged.)  (Contributed by NM, 1-Mar-1995.) $)
   ax-cnex $a |- CC e. _V $.
   $( $j restatement 'ax-cnex' of 'axcnex'; $)
+
+  $( The real numbers are a subset of the complex numbers.  Axiom 1 of 22 for
+     real and complex numbers, justified by theorem ~ axresscn .  (Contributed
+     by NM, 1-Mar-1995.) $)
+  ax-resscn $a |- RR C_ CC $.
+  $( $j restatement 'ax-resscn' of 'axresscn'; $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#

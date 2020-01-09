@@ -47,6 +47,7 @@
 "ax-cnex" is used by "cnex".
 "ax-inf2" is used by "bj-nn0sucALT".
 "ax-inf2" is used by "bj-omex2".
+"axresscn" is used by "ax1cn".
 "df-ilim" is used by "dflim2".
 "df-iom" is used by "dfom3".
 "df-iord" is used by "dford3".
@@ -160,6 +161,7 @@ New usage of "ax10" is discouraged (0 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
+New usage of "axresscn" is discouraged (1 uses).
 New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
 New usage of "bdsbcALT" is discouraged (0 uses).
