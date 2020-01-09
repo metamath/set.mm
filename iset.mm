@@ -64457,6 +64457,47 @@ $)
       UCMANOUAUDLDBUEMBNOPUBUDRS $.
   $}
 
+  $( Technical trick to permit reuse of previous lemmas to prove arithmetic
+     operation laws in ` CC ` from those in ` R. ` .  The trick involves
+     ~ qsid , which shows that the coset of the converse epsilon relation
+     (which is not an equivalence relation) acts as an identity divisor for the
+     quotient set operation.  This lets us "pretend" that ` CC ` is a quotient
+     set, even though it is not (compare ~ df-c ), and allows us to reuse some
+     of the equivalence class lemmas we developed for the transition from
+     positive reals to signed reals, etc.  (Contributed by NM, 13-Aug-1995.) $)
+  dfcnqs $p |- CC = ( ( R. X. R. ) /. `' _E ) $=
+    ( cc cnr cxp cep ccnv cqs df-c qsid eqtr4i ) ABBCZJDEFGJHI $.
+
+  $( Technical trick to permit re-use of some equivalence class lemmas for
+     operation laws.  See ~ dfcnqs and ~ mulcnsrec .  (Contributed by NM,
+     13-Aug-1995.) $)
+  addcnsrec $p |- ( ( ( A e. R. /\ B e. R. ) /\ ( C e. R. /\ D e. R. ) ) ->
+                 ( [ <. A , B >. ] `' _E + [ <. C , D >. ] `' _E ) =
+                   [ <. ( A +R C ) , ( B +R D ) >. ] `' _E ) $=
+    ( cnr wcel wa cop caddc co cplr cep ccnv cec addcnsr wceq opelxpi ecidg syl
+    addclsr cxp oveqan12d ad2ant2r ad2ant2l syl2anc 3eqtr4d ) AEFZBEFZGZCEFZDEF
+    ZGZGZABHZCDHZIJACKJZBDKJZHZUNLMZNZUOUSNZIJURUSNZABCDOUIULUTUNVAUOIUIUNEEUAZ
+    FUTUNPABEEQUNVCRSULUOVCFVAUOPCDEEQUOVCRSUBUMURVCFZVBURPUMUPEFZUQEFZVDUGUJVE
+    UHUKACTUCUHUKVFUGUJBDTUDUPUQEEQUEURVCRSUF $.
+
+  $( Technical trick to permit re-use of some equivalence class lemmas for
+     operation laws.  The trick involves ~ ecidg , which shows that the coset
+     of the converse epsilon relation (which is not an equivalence relation)
+     leaves a set unchanged.  See also ~ dfcnqs .  (Contributed by NM,
+     13-Aug-1995.) $)
+  mulcnsrec $p |- ( ( ( A e. R. /\ B e. R. ) /\ ( C e. R. /\ D e. R. ) ) ->
+               ( [ <. A , B >. ] `' _E x. [ <. C , D >. ] `' _E ) =
+                    [ <. ( ( A .R C ) +R ( -1R .R ( B .R D ) ) ) ,
+                          ( ( B .R C ) +R ( A .R D ) ) >. ] `' _E ) $=
+    ( cnr wcel wa cop cmul cmr cm1r cplr cec wceq opelxpi ecidg mulclsr syl2anc
+    co syl cep ccnv mulcnsr cxp simpll simprl m1r simplr simprr sylancr addclsr
+    oveqan12d 3eqtr4d ) AEFZBEFZGZCEFZDEFZGZGZABHZCDHZISACJSZKBDJSZJSZLSZBCJSZA
+    DJSZLSZHZVAUAUBZMZVBVKMZISVJVKMZABCDUCUPUSVLVAVMVBIUPVAEEUDZFVLVANABEEOVAVO
+    PTUSVBVOFVMVBNCDEEOVBVOPTULUTVJVOFZVNVJNUTVFEFZVIEFZVPUTVCEFZVEEFZVQUTUNUQV
+    SUNUOUSUEZUPUQURUFZACQRUTKEFVDEFZVTUGUTUOURWCUNUOUSUHZUPUQURUIZBDQRKVDQUJVC
+    VEUKRUTVGEFZVHEFZVRUTUOUQWFWDWBBCQRUTUNURWGWAWEADQRVGVHUKRVFVIEEORVJVOPTUM
+    $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
