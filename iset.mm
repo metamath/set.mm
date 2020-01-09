@@ -1,4 +1,4 @@
-$( iset.mm - Version of 5-Jan-2020
+$( iset.mm - Version of 8-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -57053,6 +57053,17 @@ $)
   $}
 
   ${
+    $d y A $.  $d y V $.
+    $( A set is equal to its converse epsilon coset.  (Note: converse epsilon
+       is not an equivalence relation.)  (Contributed by Jim Kingdon,
+       8-Jan-2020.) $)
+    ecidg $p |- ( A e. V -> [ A ] `' _E = A ) $=
+      ( vy wcel cep ccnv cec cv wbr cvv wb elecg mpan brcnvg mpan2 epelg 3bitrd
+      vex eqrdv ) ABDZCAEFZGZATCHZUBDZAUCUAIZUCAEIZUCADUCJDZTUDUEKCRZUCAUAJBLMT
+      UGUEUFKUHAUCBJENOUCABPQS $.
+  $}
+
+  ${
     $d x y A $.
     $( A set is equal to its quotient set mod converse epsilon.  (Note:
        converse epsilon is not an equivalence relation.)  (Contributed by NM,
@@ -64242,6 +64253,250 @@ $)
       LUNUXTUYHUVCCDUUFUVDNNNQUVMUWEUWGVNUWHUUIUVEWRWFXDWSWTXEWTXEXFUUCYHIUUIUU
       FUKULUMZJKUUJUUCYGUYMIJXRXSYBYCXAUTUUIUUFVDXBXCXGXHXI $.
   $}
+
+  $( Class of complex numbers. $)
+  cc $a class CC $.
+  $( Class of real numbers. $)
+  cr $a class RR $.
+  $( Extend class notation to include the complex number 0. $)
+  cc0 $a class 0 $.
+  $( Extend class notation to include the complex number 1. $)
+  c1 $a class 1 $.
+  $( Extend class notation to include the complex number i. $)
+  ci $a class _i $.
+  $( Addition on complex numbers. $)
+  caddc $a class + $.
+  $( 'Less than' predicate (defined over real subset of complex numbers). $)
+  cltrr $a class <RR $.
+  $( Multiplication on complex numbers.  The token ` x. ` is a center dot. $)
+  cmul $a class x. $.
+
+  $( Define the set of complex numbers.  (Contributed by NM, 22-Feb-1996.) $)
+  df-c $a |- CC = ( R. X. R. ) $.
+
+  $( Define the complex number 0.  (Contributed by NM, 22-Feb-1996.) $)
+  df-0 $a |- 0 = <. 0R , 0R >. $.
+
+  $( Define the complex number 1.  (Contributed by NM, 22-Feb-1996.) $)
+  df-1 $a |- 1 = <. 1R , 0R >. $.
+
+  $( Define the complex number ` _i ` (the imaginary unit).  (Contributed by
+     NM, 22-Feb-1996.) $)
+  df-i $a |- _i = <. 0R , 1R >. $.
+
+  ${
+    $d x y $.
+    $( Define the set of real numbers.  (Contributed by NM, 22-Feb-1996.) $)
+    df-r $a |- RR = ( R. X. { 0R } ) $.
+  $}
+
+  ${
+    $d x y z w v u f $.
+    $( Define addition over complex numbers.  (Contributed by NM,
+       28-May-1995.) $)
+    df-add $a |- + = { <. <. x , y >. , z >. | ( ( x e. CC /\ y e. CC ) /\
+                  E. w E. v E. u E. f ( ( x = <. w , v >. /\ y = <. u , f >. )
+                  /\ z = <. ( w +R u ) , ( v +R f ) >. ) ) } $.
+
+    $( Define multiplication over complex numbers.  (Contributed by NM,
+       9-Aug-1995.) $)
+    df-mul $a |- x. = { <. <. x , y >. , z >. | ( ( x e. CC /\ y e. CC ) /\
+               E. w E. v E. u E. f ( ( x = <. w , v >. /\ y = <. u , f >. )
+                  /\ z = <. ( ( w .R u ) +R ( -1R .R ( v .R f ) ) ) ,
+                  ( ( v .R u ) +R ( w .R f ) ) >. ) ) } $.
+
+    $( Define 'less than' on the real subset of complex numbers.  (Contributed
+       by NM, 22-Feb-1996.) $)
+    df-lt $a |- <RR = { <. x , y >. | ( ( x e. RR /\ y e. RR ) /\
+     E. z E. w ( ( x = <. z , 0R >. /\ y = <. w , 0R >. ) /\ z <R w ) ) } $.
+  $}
+
+  $( Ordered pair membership in the class of complex numbers.  (Contributed by
+     NM, 14-May-1996.) $)
+  opelcn $p |- ( <. A , B >. e. CC <-> ( A e. R. /\ B e. R. ) ) $=
+    ( cop cc wcel cnr cxp wa df-c eleq2i opelxp bitri ) ABCZDEMFFGZEAFEBFEHDNMI
+    JABFFKL $.
+
+  $( Ordered pair membership in class of real subset of complex numbers.
+     (Contributed by NM, 22-Feb-1996.) $)
+  opelreal $p |- ( <. A , 0R >. e. RR <-> A e. R. ) $=
+    ( c0r cop cr wcel cnr wceq eqid csn cxp wa eleq2i opelxp elexi elsnc anbi2i
+    df-r 0r 3bitri mpbiran2 ) ABCZDEZAFEZBBGZBHUBUAFBIZJZEUCBUEEZKUCUDKDUFUAQLA
+    BFUEMUGUDUCBBBFRNOPST $.
+
+  ${
+    $d x y A $.
+    $( Membership in class of real numbers.  (Contributed by NM,
+       31-Mar-1996.) $)
+    elreal $p |- ( A e. RR <-> E. x e. R. <. x , 0R >. = A ) $=
+      ( vy cr wcel cnr c0r csn cxp cv cop wceq wrex eleq2i elxp2 0r elexi opeq2
+      df-r bitri eqeq2d rexsn eqcom rexbii ) BDEBFGHZIZEZAJZGKZBLZAFMZDUFBSNUGB
+      UHCJZKZLZCUEMZAFMUKACBFUEOUOUJAFUOBUILZUJUNUPCGGFPQULGLUMUIBULGUHRUAUBBUI
+      UCTUDTT $.
+  $}
+
+  ${
+    $( Ordered pair membership in the class of complex numbers.  (Contributed
+       by Mario Carneiro, 15-Jun-2013.) $)
+    elreal2 $p |- ( A e. RR <->
+        ( ( 1st ` A ) e. R. /\ A = <. ( 1st ` A ) , 0R >. ) ) $=
+      ( cr wcel cnr c0r csn cxp c1st cfv wceq wa df-r eleq2i xp1st c2nd 1st2nd2
+      cop xp2nd elsni syl opeq2d eqtrd jca eleq1 0r snid opelxp mpbiran2 syl6bb
+      elexi biimparc impbii bitri ) ABCADEFZGZCZAHIZDCZAUQEQZJZKZBUOALMUPVAUPUR
+      UTADUNNUPAUQAOIZQUSADUNPUPVBEUQUPVBUNCVBEJADUNRVBESTUAUBUCUTUPURUTUPUSUOC
+      ZURAUSUOUDVCUREUNCEEDUEUJUFUQEDUNUGUHUIUKULUM $.
+  $}
+
+  $( The empty set is not a complex number.  Note: do not use this after the
+     real number axioms are developed, since it is a construction-dependent
+     property.  (Contributed by NM, 2-May-1996.) $)
+  0ncn $p |- -. (/) e. CC $=
+    ( c0 cc wcel cnr cxp 0nelxp df-c eleq2i mtbir ) ABCADDEZCDDFBJAGHI $.
+
+  ${
+    $d x y z w $.
+    $( 'Less than' is a relation on real numbers.  (Contributed by NM,
+       22-Feb-1996.) $)
+    ltrelre $p |- <RR C_ ( RR X. RR ) $=
+      ( vx vy vz vw cltrr cv cr wcel wa c0r cop wceq wbr wex copab cxp opabssxp
+      cltr df-lt eqsstri ) EAFZGHBFZGHIUACFZJKLUBDFZJKLIUCUDRMIDNCNZIABOGGPABCD
+      SUEABGGQT $.
+  $}
+
+  ${
+    $d x y z w v u f A $.  $d x y z w v u f B $.  $d x y z w v u f C $.
+    $d x y z w v u f D $.
+    $( Addition of complex numbers in terms of signed reals.  (Contributed by
+       NM, 28-May-1995.) $)
+    addcnsr $p |- ( ( ( A e. R. /\ B e. R. ) /\ ( C e. R. /\ D e. R. ) ) ->
+           ( <. A , B >. + <. C , D >. ) = <. ( A +R C ) , ( B +R D ) >. ) $=
+      ( vx vy vz vw vv vu vf cv cplr co cop cnr wcel wa wceq cc addclsr opelxpi
+      cxp ad2ant2r ad2ant2l syl2anc simpll simprl oveq12d simplr simprr opeq12d
+      caddc wex coprab df-add df-c eleq2i anbi12i anbi1i oprabbii eqtri ovi3 )
+      EFGHIJABCDHLZJLZMNZILZKLZMNZOZACMNZBDMNZOZKUMPAPQZBPQZRCPQZDPQZRRVKPQZVLP
+      QZVMPPUCZQVNVPVRVOVQACUAUDVOVQVSVNVPBDUAUEVKVLPPUBUFVDASZVGBSZRZVECSZVHDS
+      ZRZRZVFVKVIVLWGVDAVECMWAWBWFUGWCWDWEUHUIWGVGBVHDMWAWBWFUJWCWDWEUKUIULUMEL
+      ZTQZFLZTQZRZWHVDVGOSWJVEVHOSRGLVJSRKUNJUNIUNHUNZRZEFGUOWHVTQZWJVTQZRZWMRZ
+      EFGUOEFGHIJKUPWNWREFGWLWQWMWIWOWKWPTVTWHUQURTVTWJUQURUSUTVAVBVC $.
+
+    $( Multiplication of complex numbers in terms of signed reals.
+       (Contributed by NM, 9-Aug-1995.) $)
+    mulcnsr $p |- ( ( ( A e. R. /\ B e. R. ) /\ ( C e. R. /\ D e. R. ) ) ->
+               ( <. A , B >. x. <. C , D >. ) =
+                   <. ( ( A .R C ) +R ( -1R .R ( B .R D ) ) ) ,
+                          ( ( B .R C ) +R ( A .R D ) ) >. ) $=
+      ( vx vy vz vw vv cv cmr co cm1r cplr cnr wcel wa mulclsr wceq oveq12d cop
+      vu cmul cxp ad2ant2r ad2ant2l sylancr addclsr syl2anc ad2ant2lr ad2ant2rl
+      vf m1r opelxpi simpll simprl simplr simprr oveq2d opeq12d wex coprab df-c
+      cc df-mul eleq2i anbi12i anbi1i oprabbii eqtri ovi3 ) EFGHIUBABCDHJZUBJZK
+      LZMIJZULJZKLZKLZNLZVOVMKLZVLVPKLZNLZUAZACKLZMBDKLZKLZNLZBCKLZADKLZNLZUAZU
+      LUCOAOPZBOPZQCOPZDOPZQQZWGOPZWJOPZWKOOUDZPWPWDOPZWFOPZWQWLWNWTWMWOACRUEWP
+      MOPWEOPZXAUMWMWOXBWLWNBDRUFMWERUGWDWFUHUIWPWHOPZWIOPZWRWMWNXCWLWOBCRUJWLW
+      OXDWMWNADRUKWHWIUHUIWGWJOOUNUIVLASZVOBSZQZVMCSZVPDSZQZQZVSWGWBWJXKVNWDVRW
+      FNXKVLAVMCKXEXFXJUOZXGXHXIUPZTXKVQWEMKXKVOBVPDKXEXFXJUQZXGXHXIURZTUSTXKVT
+      WHWAWINXKVOBVMCKXNXMTXKVLAVPDKXLXOTTUTUCEJZVDPZFJZVDPZQZXPVLVOUASXRVMVPUA
+      SQGJWCSQULVAUBVAIVAHVAZQZEFGVBXPWSPZXRWSPZQZYAQZEFGVBEFGHIUBULVEYBYFEFGXT
+      YEYAXQYCXSYDVDWSXPVCVFVDWSXRVCVFVGVHVIVJVK $.
+  $}
+
+  ${
+    eqresr.1 $e |- A e. _V $.
+    $( Equality of real numbers in terms of intermediate signed reals.
+       (Contributed by NM, 10-May-1996.) $)
+    eqresr $p |- ( <. A , 0R >. = <. B , 0R >. <-> A = B ) $=
+      ( c0r cop wceq eqid cnr 0r elexi opth mpbiran2 ) ADEBDEFABFDDFDGADBDCDHIJ
+      KL $.
+  $}
+
+  $( Addition of real numbers in terms of intermediate signed reals.
+     (Contributed by NM, 10-May-1996.) $)
+  addresr $p |- ( ( A e. R. /\ B e. R. ) ->
+           ( <. A , 0R >. + <. B , 0R >. ) = <. ( A +R B ) , 0R >. ) $=
+    ( cnr wcel wa c0r cop caddc co cplr wceq 0r addcnsr an4s 0idsr ax-mp opeq2i
+    mpanr12 syl6eq ) ACDZBCDZEZAFGBFGHIZABJIZFFJIZGZUDFGUBFCDZUGUCUFKZLLTUGUAUG
+    UHAFBFMNRUEFUDUGUEFKLFOPQS $.
+
+  $( Multiplication of real numbers in terms of intermediate signed reals.
+     (Contributed by NM, 10-May-1996.) $)
+  mulresr $p |- ( ( A e. R. /\ B e. R. ) ->
+         ( <. A , 0R >. x. <. B , 0R >. ) = <. ( A .R B ) , 0R >. ) $=
+    ( cnr wcel wa c0r cop cmul co cmr cm1r cplr wceq mulcnsr ax-mp oveq2i 0idsr
+    0r 00sr eqtrd an4s mpanr12 m1r mulclsr syl syl5eq mulcomsrg mpan oveqan12rd
+    eqtri syl6eq opeq12d ) ACDZBCDZEZAFGBFGHIZABJIZKFFJIZJIZLIZFBJIZAFJIZLIZGZU
+    QFGUOFCDZVEUPVDMZRRUMVEUNVEVFAFBFNUAUBUOUTUQVCFUOUTUQFLIZUQUSFUQLUSKFJIZFUR
+    FKJVEURFMRFSOPKCDVHFMUCKSOUJPUOUQCDVGUQMABUDUQQUEUFUOVCFFLIZFUNUMVAFVBFLUNV
+    ABFJIZFVEUNVAVJMRFBUGUHBSTASUIVEVIFMRFQOUKULT $.
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Ordering of real subset of complex numbers in terms of signed reals.
+       (Contributed by NM, 22-Feb-1996.) $)
+    ltresr $p |- ( <. A , 0R >. <RR <. B , 0R >. <-> A <R B ) $=
+      ( vz vw vx vy c0r cop cltrr wbr cnr wcel wa cltr cr wceq wex anbi1d eqcom
+      cv ltrelre brel opelreal anbi12i sylib ltrelsr eleq1 eqeq1 2exbidv anbi2d
+      anbi12d df-lt brabg bianabs vex eqresr 3bitr4i opth2 bitr4i anbi1i 2exbii
+      wb syl6bb syl2anbr breq12 copsex2g bitrd pm5.21nii ) AGHZBGHZIJZAKLZBKLZM
+      ZABNJZVKVIOLZVJOLZMZVNVIVJOOIUAUBVPVLVQVMAUCZBUCZUDUEABKKNUFUBVNVKABHCTZD
+      TZHPZWAWBNJZMZDQCQZVOVLVPVQVKWFVBVMVSVTVRVKVIWAGHZPZVJWBGHZPZMZWDMZDQCQZW
+      FVRVKWMETZOLZFTZOLZMZWNWGPZWPWIPZMZWDMZDQCQZMVPWQMZWHWTMZWDMZDQCQZMVRWMME
+      FVIVJOOIWNVIPZWRXDXCXGXHWOVPWQWNVIOUGRXHXBXFCDXHXAXEWDXHWSWHWTWNVIWGUHRRU
+      IUKWPVJPZXDVRXGWMXIWQVQVPWPVJOUGUJXIXFWLCDXIXEWKWDXIWTWJWHWPVJWIUHUJRUIUK
+      EFCDULUMUNWLWECDWKWCWDWKAWAPZBWBPZMWCWHXJWJXKWGVIPWAAPWHXJWAACUOZUPVIWGSA
+      WASUQWIVJPWBBPWJXKWBBDUOZUPVJWISBWBSUQUDABWAWBXLXMURUSUTVAVCVDWDVOCDABKKW
+      AAWBBNVEVFVGVH $.
+  $}
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Ordering of real subset of complex numbers in terms of signed reals.
+       (Contributed by NM, 22-Feb-1996.) $)
+    ltresr2 $p |- ( ( A e. RR /\ B e. RR ) ->
+        ( A <RR B <-> ( 1st ` A ) <R ( 1st ` B ) ) ) $=
+      ( cr wcel wa wbr c1st cfv c0r cop cltr cnr wceq elreal2 simprbi breqan12d
+      cltrr ltresr syl6bb ) ACDZBCDZEABQFAGHZIJZBGHZIJZQFUBUDKFTUAAUCBUEQTUBLDA
+      UCMANOUAUDLDBUEMBNOPUBUDRS $.
+  $}
+
+  $( Technical trick to permit reuse of previous lemmas to prove arithmetic
+     operation laws in ` CC ` from those in ` R. ` .  The trick involves
+     ~ qsid , which shows that the coset of the converse epsilon relation
+     (which is not an equivalence relation) acts as an identity divisor for the
+     quotient set operation.  This lets us "pretend" that ` CC ` is a quotient
+     set, even though it is not (compare ~ df-c ), and allows us to reuse some
+     of the equivalence class lemmas we developed for the transition from
+     positive reals to signed reals, etc.  (Contributed by NM, 13-Aug-1995.) $)
+  dfcnqs $p |- CC = ( ( R. X. R. ) /. `' _E ) $=
+    ( cc cnr cxp cep ccnv cqs df-c qsid eqtr4i ) ABBCZJDEFGJHI $.
+
+  $( Technical trick to permit re-use of some equivalence class lemmas for
+     operation laws.  See ~ dfcnqs and ~ mulcnsrec .  (Contributed by NM,
+     13-Aug-1995.) $)
+  addcnsrec $p |- ( ( ( A e. R. /\ B e. R. ) /\ ( C e. R. /\ D e. R. ) ) ->
+                 ( [ <. A , B >. ] `' _E + [ <. C , D >. ] `' _E ) =
+                   [ <. ( A +R C ) , ( B +R D ) >. ] `' _E ) $=
+    ( cnr wcel wa cop caddc co cplr cep ccnv cec addcnsr wceq opelxpi ecidg syl
+    addclsr cxp oveqan12d ad2ant2r ad2ant2l syl2anc 3eqtr4d ) AEFZBEFZGZCEFZDEF
+    ZGZGZABHZCDHZIJACKJZBDKJZHZUNLMZNZUOUSNZIJURUSNZABCDOUIULUTUNVAUOIUIUNEEUAZ
+    FUTUNPABEEQUNVCRSULUOVCFVAUOPCDEEQUOVCRSUBUMURVCFZVBURPUMUPEFZUQEFZVDUGUJVE
+    UHUKACTUCUHUKVFUGUJBDTUDUPUQEEQUEURVCRSUF $.
+
+  $( Technical trick to permit re-use of some equivalence class lemmas for
+     operation laws.  The trick involves ~ ecidg , which shows that the coset
+     of the converse epsilon relation (which is not an equivalence relation)
+     leaves a set unchanged.  See also ~ dfcnqs .  (Contributed by NM,
+     13-Aug-1995.) $)
+  mulcnsrec $p |- ( ( ( A e. R. /\ B e. R. ) /\ ( C e. R. /\ D e. R. ) ) ->
+               ( [ <. A , B >. ] `' _E x. [ <. C , D >. ] `' _E ) =
+                    [ <. ( ( A .R C ) +R ( -1R .R ( B .R D ) ) ) ,
+                          ( ( B .R C ) +R ( A .R D ) ) >. ] `' _E ) $=
+    ( cnr wcel wa cop cmul cmr cm1r cplr cec wceq opelxpi ecidg mulclsr syl2anc
+    co syl cep ccnv mulcnsr cxp simpll simprl m1r simplr simprr sylancr addclsr
+    oveqan12d 3eqtr4d ) AEFZBEFZGZCEFZDEFZGZGZABHZCDHZISACJSZKBDJSZJSZLSZBCJSZA
+    DJSZLSZHZVAUAUBZMZVBVKMZISVJVKMZABCDUCUPUSVLVAVMVBIUPVAEEUDZFVLVANABEEOVAVO
+    PTUSVBVOFVMVBNCDEEOVBVOPTULUTVJVOFZVNVJNUTVFEFZVIEFZVPUTVCEFZVEEFZVQUTUNUQV
+    SUNUOUSUEZUPUQURUFZACQRUTKEFVDEFZVTUGUTUOURWCUNUOUSUHZUPUQURUIZBDQRKVDQUJVC
+    VEUKRUTVGEFZVHEFZVRUTUOUQWFWDWBBCQRUTUNURWGWAWEADQRVGVHUKRVFVIEEORVJVOPTUM
+    $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
