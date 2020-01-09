@@ -64499,6 +64499,46 @@ $)
     $.
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+         Final derivation of real and complex number postulates
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The complex numbers form a set.  Use ~ cnex instead.  (Contributed by
+     Mario Carneiro, 17-Nov-2014.)  (New usage is discouraged.) $)
+  axcnex $p |- CC e. _V $=
+    ( cc cnr cxp cvv df-c cnp cer cqs df-nr cpw npex xpex pwex wss wtru wer a1i
+    enrer qsss eqeltri trud ssexi ) ABBCDEBBBFFCZGHZDIUDUCJZUCFFKKLMUDUENOUCGUC
+    GPORQSUAUBTZUFLT $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          Real and complex number postulates restated as axioms
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The complex numbers form a set.  Proofs should normally use ~ cnex
+     instead.  (New usage is discouraged.)  (Contributed by NM, 1-Mar-1995.) $)
+  ax-cnex $a |- CC e. _V $.
+  $( $j restatement 'ax-cnex' of 'axcnex'; $)
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+           Derive the basic properties from the field axioms
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Some deductions from the field axioms for complex numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Alias for ~ ax-cnex .  (Contributed by Mario Carneiro, 17-Nov-2014.) $)
+  cnex $p |- CC e. _V $=
+    ( ax-cnex ) A $.
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
