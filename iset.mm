@@ -64520,6 +64520,22 @@ $)
     ( cnr c0r csn cxp cr cc wcel wss 0r snssi xpss2 mp2b df-r df-c 3sstr4i ) AB
     CZDZAADZEFBAGPAHQRHIBAJPAAKLMNO $.
 
+  $( 1 is a complex number.  Axiom 2 of 22 for real and complex numbers,
+     derived from ZF set theory.  This construction-dependent theorem should
+     not be referenced directly; instead, use ~ ax-1cn .  (Contributed by NM,
+     12-Apr-2007.)  (New usage is discouraged.) $)
+  ax1cn $p |- 1 e. CC $=
+    ( cr cc c1 axresscn c1r c0r cop df-1 wcel cnr opelreal mpbir eqeltri sselii
+    1sr ) ABCDCEFGZAHPAIEJIOEKLMN $.
+
+  $( ` _i ` is a complex number.  Axiom 3 of 22 for real and complex numbers,
+     derived from ZF set theory.  This construction-dependent theorem should
+     not be referenced directly; instead, use ~ ax-icn .  (Contributed by NM,
+     23-Feb-1996.)  (New usage is discouraged.) $)
+  axicn $p |- _i e. CC $=
+    ( ci cc wcel c0r cnr c1r 0r 1sr cop wa df-i eleq1i opelcn bitri mpbir2an )
+    ABCZDECZFECZGHPDFIZBCQRJASBKLDFMNO $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64536,6 +64552,16 @@ $)
      by NM, 1-Mar-1995.) $)
   ax-resscn $a |- RR C_ CC $.
   $( $j restatement 'ax-resscn' of 'axresscn'; $)
+
+  $( 1 is a complex number.  Axiom 2 of 22 for real and complex numbers,
+     justified by theorem ~ ax1cn .  (Contributed by NM, 1-Mar-1995.) $)
+  ax-1cn $a |- 1 e. CC $.
+  $( $j restatement 'ax-1cn' of 'ax1cn'; $)
+
+  $( ` _i ` is a complex number.  Axiom 3 of 22 for real and complex numbers,
+     justified by theorem ~ axicn .  (Contributed by NM, 1-Mar-1995.) $)
+  ax-icn $a |- _i e. CC $.
+  $( $j restatement 'ax-icn' of 'axicn'; $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
