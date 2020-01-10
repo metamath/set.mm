@@ -44,6 +44,8 @@
 "alrimih" is used by "sb6rf".
 "alrimih" is used by "sbbid".
 "ax-10o" is used by "ax10".
+"ax-addcl" is used by "addcl".
+"ax-addrcl" is used by "readdcl".
 "ax-cnex" is used by "cnex".
 "ax-inf2" is used by "bj-nn0sucALT".
 "ax-inf2" is used by "bj-omex2".
@@ -155,11 +157,15 @@ New usage of "alrimih" is discouraged (25 uses).
 New usage of "ax-10o" is discouraged (1 uses).
 New usage of "ax-11o" is discouraged (0 uses).
 New usage of "ax-16" is discouraged (0 uses).
+New usage of "ax-addcl" is discouraged (1 uses).
+New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-inf2" is discouraged (2 uses).
 New usage of "ax10" is discouraged (0 uses).
 New usage of "ax1cn" is discouraged (0 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
+New usage of "axaddcl" is discouraged (0 uses).
+New usage of "axaddrcl" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (0 uses).
 New usage of "axicn" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).

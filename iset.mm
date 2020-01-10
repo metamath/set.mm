@@ -64553,6 +64553,18 @@ $)
       SWBCDVRWBEFVRWAVBVJUEPZVCVKUEPZKZGVRWAVDVLOPZWHVRAVDBVLOVEVHVQUFVIVMVPUGU
       HVHVPWIWHLVEVMVBVCVJVKUISUJVHVPWHGHVEVMVHVPIZWHWEGWJWFMHZWGMHZWHWEHVFVNWK
       VGVOVBVJUKULVGVOWLVFVNVCVKUKSWFWGMMUMUNRUOSUPUQUQUR $.
+
+    $( Closure law for addition in the real subfield of complex numbers.  Axiom
+       5 of 22 for real and complex numbers, derived from ZF set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-addrcl be used later.  Instead, in most
+       cases use ~ readdcl .  (Contributed by NM, 31-Mar-1996.)
+       (New usage is discouraged.) $)
+    axaddrcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A + B ) e. RR ) $=
+      ( vx vy cv c0r cop caddc co cr wcel cnr elreal wceq oveq1 eleq1d oveq2 wa
+      cplr addresr addclsr opelreal sylibr eqeltrd 2gencl ) CEZFGZDEZFGZHIZJKAU
+      IHIZJKABHIZJKCDUGUIABLJCAMDBMUGANUJUKJUGAUIHOPUIBNUKULJUIBAHQPUFLKUHLKRZU
+      JUFUHSIZFGZJUFUHTUMUNLKUOJKUFUHUAUNUBUCUDUE $.
   $}
 
 $(
@@ -64590,6 +64602,13 @@ $)
   ax-addcl $a |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) $.
   $( $j restatement 'ax-addcl' of 'axaddcl'; $)
 
+  $( Closure law for addition in the real subfield of complex numbers.  Axiom 6
+     of 23 for real and complex numbers, justified by theorem ~ axaddrcl .
+     Proofs should normally use ~ readdcl instead.
+     (New usage is discouraged.)  (Contributed by NM, 22-Nov-1994.) $)
+  ax-addrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A + B ) e. RR ) $.
+  $( $j restatement 'ax-addrcl' of 'axaddrcl'; $)
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
            Derive the basic properties from the field axioms
@@ -64611,6 +64630,19 @@ $)
      10-Mar-2008.) $)
   addcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) $=
     ( ax-addcl ) ABC $.
+
+  $( Alias for ~ ax-addrcl , for naming consistency with ~ readdcli .
+     (Contributed by NM, 10-Mar-2008.) $)
+  readdcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A + B ) e. RR ) $=
+    ( ax-addrcl ) ABC $.
+
+  ${
+    recni.1 $e |- A e. RR $.
+    axri.2 $e |- B e. RR $.
+    $( Closure law for addition of reals.  (Contributed by NM, 17-Jan-1997.) $)
+    readdcli $p |- ( A + B ) e. RR $=
+      ( cr wcel caddc co readdcl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
 
   ${
     axi.1 $e |- A e. CC $.
