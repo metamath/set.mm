@@ -17743,6 +17743,7 @@ New usage of "r1pwOLD" is discouraged (0 uses).
 New usage of "r2alOLD" is discouraged (0 uses).
 New usage of "r2alfOLD" is discouraged (0 uses).
 New usage of "r2exOLD" is discouraged (0 uses).
+New usage of "r2exfOLD" is discouraged (0 uses).
 New usage of "r3alOLD" is discouraged (0 uses).
 New usage of "ralbidvOLD" is discouraged (0 uses).
 New usage of "ralbidvaOLD" is discouraged (0 uses).
@@ -19546,6 +19547,7 @@ Proof modification of "r1pwOLD" is discouraged (151 steps).
 Proof modification of "r2alOLD" is discouraged (9 steps).
 Proof modification of "r2alfOLD" is discouraged (76 steps).
 Proof modification of "r2exOLD" is discouraged (9 steps).
+Proof modification of "r2exfOLD" is discouraged (76 steps).
 Proof modification of "r3alOLD" is discouraged (120 steps).
 Proof modification of "ralbidvOLD" is discouraged (10 steps).
 Proof modification of "ralbidvaOLD" is discouraged (10 steps).
