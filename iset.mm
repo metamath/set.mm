@@ -64565,6 +64565,27 @@ $)
       cplr addresr addclsr opelreal sylibr eqeltrd 2gencl ) CEZFGZDEZFGZHIZJKAU
       IHIZJKABHIZJKCDUGUIABLJCAMDBMUGANUJUKJUGAUIHOPUIBNUKULJUIBAHQPUFLKUHLKRZU
       JUFUHSIZFGZJUFUHTUMUNLKUOJKUFUHUAUNUBUCUDUE $.
+
+    $( Closure law for multiplication of complex numbers.  Axiom 6 of 22 for
+       real and complex numbers, derived from ZF set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-mulcl be used later.  Instead, in most
+       cases use ~ mulcl .  (Contributed by NM, 10-Aug-1995.)
+       (New usage is discouraged.) $)
+    axmulcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $=
+      ( vx vy vz vw cc wcel wa cop wceq cnr wex cmul df-c cmr mulclsr
+      cv co syl2anc cxp eleq2s anim12i ee4anv sylibr cm1r cplr simpll
+      elxpi simprl oveq12d mulcnsr ad2ant2l eqtrd simplrl simprrl m1r
+      a1i simplrr simprrr addclsr opelxpi syl6eleqr eqeltrd exlimivv
+      syl ) AGHZBGHZIZACRZDRZJZKZVJLHZVKLHZIZIZBERZFRZJZKZVRLHZVSLHZI
+      ZIZIZFMEMZDMCMZABNSZGHZVIVQDMCMZWEFMEMZIWHVGWKVHWLWKALLUAZGCDAL
+      LUIOUBWLBWMGEFBLLUIOUBUCVQWECDEFUDUEWGWJCDWFWJEFWFWIVJVRPSZUFVK
+      VSPSZPSZUGSZVKVRPSZVJVSPSZUGSZJZGWFWIVLVTNSZXAWFAVLBVTNVMVPWEUH
+      VQWAWDUJUKVPWDXBXAKVMWAVJVKVRVSULUMUNWFXAWMGWFWQLHZWTLHZXAWMHWF
+      WNLHZWPLHZXCWFVNWBXEVMVNVOWEUOZVQWAWBWCUPZVJVRQTWFUFLHZWOLHZXFX
+      IWFUQURWFVOWCXJVMVNVOWEUSZVQWAWBWCUTZVKVSQTUFWOQTWNWPVATWFWRLHZ
+      WSLHZXDWFVOWBXMXKXHVKVRQTWFVNWCXNXGXLVJVSQTWRWSVATWQWTLLVBTOVCV
+      DVEVEVF $.
   $}
 
 $(
@@ -64609,6 +64630,13 @@ $)
   ax-addrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A + B ) e. RR ) $.
   $( $j restatement 'ax-addrcl' of 'axaddrcl'; $)
 
+  $( Closure law for multiplication of complex numbers.  Axiom 6 of 22 for real
+     and complex numbers, justified by theorem ~ axmulcl .  Proofs should
+     normally use ~ mulcl instead.  (New usage is discouraged.)  (Contributed
+     by NM, 22-Nov-1994.) $)
+  ax-mulcl $a |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $.
+  $( $j restatement 'ax-mulcl' of 'axmulcl'; $)
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
            Derive the basic properties from the field axioms
@@ -64636,6 +64664,11 @@ $)
   readdcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A + B ) e. RR ) $=
     ( ax-addrcl ) ABC $.
 
+  $( Alias for ~ ax-mulcl , for naming consistency with ~ mulcli .
+     (Contributed by NM, 10-Mar-2008.) $)
+  mulcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $=
+    ( ax-mulcl ) ABC $.
+
   ${
     recni.1 $e |- A e. RR $.
     axri.2 $e |- B e. RR $.
@@ -64650,6 +64683,10 @@ $)
     $( Closure law for addition.  (Contributed by NM, 23-Nov-1994.) $)
     addcli $p |- ( A + B ) e. CC $=
       ( cc wcel caddc co addcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Closure law for multiplication.  (Contributed by NM, 23-Nov-1994.) $)
+    mulcli $p |- ( A x. B ) e. CC $=
+      ( cc wcel cmul co mulcl mp2an ) AEFBEFABGHEFCDABIJ $.
   $}
 
 $(
