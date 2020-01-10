@@ -64536,6 +64536,25 @@ $)
     ( ci cc wcel c0r cnr c1r 0r 1sr cop wa df-i eleq1i opelcn bitri mpbir2an )
     ABCZDECZFECZGHPDFIZBCQRJASBKLDFMNO $.
 
+  ${
+    $d A w x y z $.  $d B w x y z $.
+    $( Closure law for addition of complex numbers.  Axiom 4 of 22 for real and
+       complex numbers, derived from ZF set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-addcl be used later.  Instead, in most
+       cases use ~ addcl .  (Contributed by NM, 14-Jun-1995.)
+       (New usage is discouraged.) $)
+    axaddcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) $=
+      ( vx vy vz vw cc wcel wa cv cop wceq cnr wex caddc co elxpi df-c ad2ant2l
+      eleq2s cxp anim12i ee4anv sylibr cplr simpll simprl oveq12d addcnsr eqtrd
+      addclsr ad2ant2r opelxpi syl2anc syl6eleqr eqeltrd exlimivv syl ) AGHZBGH
+      ZIZACJZDJZKZLZVBMHZVCMHZIZIZBEJZFJZKZLZVJMHZVKMHZIZIZIZFNENZDNCNZABOPZGHZ
+      VAVIDNCNZVQFNENZIVTUSWCUTWDWCAMMUAZGCDAMMQRTWDBWEGEFBMMQRTUBVIVQCDEFUCUDV
+      SWBCDVRWBEFVRWAVBVJUEPZVCVKUEPZKZGVRWAVDVLOPZWHVRAVDBVLOVEVHVQUFVIVMVPUGU
+      HVHVPWIWHLVEVMVBVCVJVKUISUJVHVPWHGHVEVMVHVPIZWHWEGWJWFMHZWGMHZWHWEHVFVNWK
+      VGVOVBVJUKULVGVOWLVFVNVCVKUKSWFWGMMUMUNRUOSUPUQUQUR $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64563,6 +64582,14 @@ $)
   ax-icn $a |- _i e. CC $.
   $( $j restatement 'ax-icn' of 'axicn'; $)
 
+  $( Closure law for addition of complex numbers.  Axiom 4 of 22 for real and
+     complex numbers, justified by theorem ~ axaddcl .  Proofs should normally
+     use ~ addcl instead, which asserts the same thing but follows our naming
+     conventions for closures.  (New usage is discouraged.)  (Contributed by
+     NM, 22-Nov-1994.) $)
+  ax-addcl $a |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) $.
+  $( $j restatement 'ax-addcl' of 'axaddcl'; $)
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
            Derive the basic properties from the field axioms
@@ -64578,6 +64605,20 @@ $)
   $( Alias for ~ ax-cnex .  (Contributed by Mario Carneiro, 17-Nov-2014.) $)
   cnex $p |- CC e. _V $=
     ( ax-cnex ) A $.
+
+  $( Alias for ~ ax-addcl , for naming consistency with ~ addcli .  Use this
+     theorem instead of ~ ax-addcl or ~ axaddcl .  (Contributed by NM,
+     10-Mar-2008.) $)
+  addcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) $=
+    ( ax-addcl ) ABC $.
+
+  ${
+    axi.1 $e |- A e. CC $.
+    axi.2 $e |- B e. CC $.
+    $( Closure law for addition.  (Contributed by NM, 23-Nov-1994.) $)
+    addcli $p |- ( A + B ) e. CC $=
+      ( cc wcel caddc co addcl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
