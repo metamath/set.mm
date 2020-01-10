@@ -64586,6 +64586,18 @@ $)
       IWFUQURWFVOWCXJVMVNVOWEUSZVQWAWBWCUTZVKVSQTUFWOQTWNWPVATWFWRLHZ
       WSLHZXDWFVOWBXMXKXHVKVRQTWFVNWCXNXGXLVJVSQTWRWSVATWQWTLLVBTOVCV
       DVEVEVF $.
+
+    $( Closure law for multiplication in the real subfield of complex numbers.
+       Axiom 7 of 22 for real and complex numbers, derived from ZF set theory.
+       This construction-dependent theorem should not be referenced directly,
+       nor should the proven axiom ~ ax-mulrcl be used later.  Instead, in most
+       cases use ~ remulcl .  (New usage is discouraged.)  (Contributed by NM,
+       31-Mar-1996.) $)
+    axmulrcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $=
+      ( vx vy cv c0r cop cmul co cr wcel cnr elreal wceq oveq1 eleq1d oveq2 cmr
+      wa mulresr mulclsr opelreal sylibr eqeltrd 2gencl ) CEZFGZDEZFGZHIZJKAUIH
+      IZJKABHIZJKCDUGUIABLJCAMDBMUGANUJUKJUGAUIHOPUIBNUKULJUIBAHQPUFLKUHLKSZUJU
+      FUHRIZFGZJUFUHTUMUNLKUOJKUFUHUAUNUBUCUDUE $.
   $}
 
 $(
@@ -64637,6 +64649,13 @@ $)
   ax-mulcl $a |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $.
   $( $j restatement 'ax-mulcl' of 'axmulcl'; $)
 
+  $( Closure law for multiplication in the real subfield of complex numbers.
+     Axiom 7 of 22 for real and complex numbers, justified by theorem
+     ~ axmulrcl .  Proofs should normally use ~ remulcl instead.
+     (New usage is discouraged.)  (Contributed by NM, 22-Nov-1994.) $)
+  ax-mulrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $.
+  $( $j restatement 'ax-mulrcl' of 'axmulrcl'; $)
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
            Derive the basic properties from the field axioms
@@ -64669,12 +64688,22 @@ $)
   mulcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $=
     ( ax-mulcl ) ABC $.
 
+  $( Alias for ~ ax-mulrcl , for naming consistency with ~ remulcli .
+     (Contributed by NM, 10-Mar-2008.) $)
+  remulcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $=
+    ( ax-mulrcl ) ABC $.
+
   ${
     recni.1 $e |- A e. RR $.
     axri.2 $e |- B e. RR $.
     $( Closure law for addition of reals.  (Contributed by NM, 17-Jan-1997.) $)
     readdcli $p |- ( A + B ) e. RR $=
       ( cr wcel caddc co readdcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Closure law for multiplication of reals.  (Contributed by NM,
+       17-Jan-1997.) $)
+    remulcli $p |- ( A x. B ) e. RR $=
+      ( cr wcel cmul co remulcl mp2an ) AEFBEFABGHEFCDABIJ $.
   $}
 
   ${
