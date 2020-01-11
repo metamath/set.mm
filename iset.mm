@@ -64600,6 +64600,25 @@ $)
       FUHRIZFGZJUFUHTUMUNLKUOJKUFUHUAUNUBUCUDUE $.
   $}
 
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Multiplication of complex numbers is commutative.  Axiom 8 of 22 for
+       real and complex numbers, derived from ZF set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-mulcom be used later.  Instead, use
+       ~ mulcom .  (Contributed by NM, 31-Aug-1995.)
+       (New usage is discouraged.) $)
+    axmulcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) $=
+      ( vx vy vz vw cv cmr co cm1r cplr cnr mulcnsrec wcel wa mulcomsrg syl2anc
+      wceq oveq12d mulclsr cc cmul dfcnqs simpll simprl simplr simprr addcomsrg
+      cep ccnv oveq2d eqtrd ecovicom ) CDEFABUACGZEGZHIZJDGZFGZHIZHIZKIUBUIUJLU
+      QUOHIZUNURHIZKIZUOUNHIZJURUQHIZHIZKIURUNHIZUOUQHIZKIZUCUNUQUOURMUOURUNUQM
+      UNLNZUQLNZOZUOLNZURLNZOZOZUPVDUTVFKVPVJVMUPVDRVJVKVOUDZVLVMVNUEZUNUOPQVPU
+      SVEJHVPVKVNUSVERVJVKVOUFZVLVMVNUGZUQURPQUKSVPVCVHVGKIZVIVPVAVHVBVGKVPVKVM
+      VAVHRVSVRUQUOPQVPVJVNVBVGRVQVTUNURPQSVPVHLNZVGLNZWAVIRVPVMVKWBVRVSUOUQTQV
+      PVNVJWCVTVQURUNTQVHVGUHQULUM $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64656,6 +64675,13 @@ $)
   ax-mulrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $.
   $( $j restatement 'ax-mulrcl' of 'axmulrcl'; $)
 
+  $( Multiplication of complex numbers is commutative.  Axiom 8 of 22 for real
+     and complex numbers, justified by theorem ~ axmulcom .  Proofs should
+     normally use ~ mulcom instead.  (New usage is discouraged.)  (Contributed
+     by NM, 22-Nov-1994.) $)
+  ax-mulcom $a |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) $.
+  $( $j restatement 'ax-mulcom' of 'axmulcom'; $)
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
            Derive the basic properties from the field axioms
@@ -64693,6 +64719,11 @@ $)
   remulcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $=
     ( ax-mulrcl ) ABC $.
 
+  $( Alias for ~ ax-mulcom , for naming consistency with ~ mulcomi .
+     (Contributed by NM, 10-Mar-2008.) $)
+  mulcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) $=
+    ( ax-mulcom ) ABC $.
+
   ${
     recni.1 $e |- A e. RR $.
     axri.2 $e |- B e. RR $.
@@ -64716,6 +64747,11 @@ $)
     $( Closure law for multiplication.  (Contributed by NM, 23-Nov-1994.) $)
     mulcli $p |- ( A x. B ) e. CC $=
       ( cc wcel cmul co mulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Commutative law for multiplication.  (Contributed by NM,
+       23-Nov-1994.) $)
+    mulcomi $p |- ( A x. B ) = ( B x. A ) $=
+      ( cc wcel cmul co wceq mulcom mp2an ) AEFBEFABGHBAGHICDABJK $.
   $}
 
 $(
