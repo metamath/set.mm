@@ -64619,6 +64619,29 @@ $)
       PVNVJWCVTVQURUNTQVHVGUHQULUM $.
   $}
 
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $( Addition of complex numbers is associative.  This theorem transfers the
+       associative laws for the real and imaginary signed real components of
+       complex number pairs, to complex number addition itself.  Axiom 9 of 22
+       for real and complex numbers, derived from ZF set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-addass be used later.  Instead, use
+       ~ addass .  (Contributed by NM, 2-Sep-1995.)
+       (New usage is discouraged.) $)
+    axaddass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $=
+      ( vx vy vz vw vv vu cv cplr co cnr addcnsrec wa addclsr anim12i
+      wcel an4s wceq cc caddc ccnv dfcnqs addasssrg 3adant3r 3adant2r
+      cep 3adant1r 3adant3l 3adant2l 3adant1l ecoviass ) DEFGHIABCUAU
+      BGJZIJZKLZUHUCMDJZFJZKLZEJZUNKLZUSHJZKLZVAUOKLZUQURVBKLZKLZUTUP
+      KLZVEUDUQUTURUNNURUNVBUONUSVAVBUONUQUTVEUPNUQMRZURMRZUTMRZUNMRZ
+      USMRZVAMRZOVHVIOVLVJVKOVMUQURPUTUNPQSVIVBMRZVKUOMRZVEMRZUPMRZOV
+      IVNOVPVKVOOVQURVBPUNUOPQSVHVIVKOZVNVOOZVCVFTZVJVHVIVSVTVKVHVIVN
+      VTVOUQURVBUEUFUGUIVJVRVSVDVGTZVHVJVKVSWAVIVJVKVOWAVNUTUNUOUEUJU
+      KULUM $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64682,6 +64705,14 @@ $)
   ax-mulcom $a |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) $.
   $( $j restatement 'ax-mulcom' of 'axmulcom'; $)
 
+  $( Addition of complex numbers is associative.  Axiom 9 of 22 for real and
+     complex numbers, justified by theorem ~ axaddass .  Proofs should normally
+     use ~ addass instead.  (New usage is discouraged.)  (Contributed by NM,
+     22-Nov-1994.) $)
+  ax-addass $a |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $.
+  $( $j restatement 'ax-addass' of 'axaddass'; $)
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
            Derive the basic properties from the field axioms
@@ -64724,6 +64755,12 @@ $)
   mulcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) $=
     ( ax-mulcom ) ABC $.
 
+  $( Alias for ~ ax-addass , for naming consistency with ~ addassi .
+     (Contributed by NM, 10-Mar-2008.) $)
+  addass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $=
+    ( ax-addass ) ABCD $.
+
   ${
     recni.1 $e |- A e. RR $.
     axri.2 $e |- B e. RR $.
@@ -64752,6 +64789,12 @@ $)
        23-Nov-1994.) $)
     mulcomi $p |- ( A x. B ) = ( B x. A ) $=
       ( cc wcel cmul co wceq mulcom mp2an ) AEFBEFABGHBAGHICDABJK $.
+
+    axi.3 $e |- C e. CC $.
+    $( Associative law for addition.  (Contributed by NM, 23-Nov-1994.) $)
+    addassi $p |- ( ( A + B ) + C ) = ( A + ( B + C ) ) $=
+      ( cc wcel caddc co wceq addass mp3an ) AGHBGHCGHABIJCIJABCIJIJKDEFABCLM
+      $.
   $}
 
 $(
