@@ -64790,6 +64790,30 @@ $)
       T $.
   $}
 
+  ${
+    $d x y A $.  $d x y z $.
+    $( Existence of reciprocal of positive real number.  Axiom 16 of 22 for
+       real and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly;
+       instead, use ~ ax-precex .
+
+       In treatments which assume excluded middle, the ` 0 <RR A ` condition is
+       generally replaced by ` A =/= 0 ` .  (Contributed by Jim Kingdon,
+       12-Jan-2020.)  (New usage is discouraged.) $)
+    axprecex $p |- ( ( A e. RR /\ 0 <RR A ) -> E. x e. RR ( A x. x ) = 1 ) $=
+      ( vy vz cr wcel cc0 cltrr wbr cv cmul co c1 wceq wrex c0r cop cnr wa c1r
+      wi wex elreal df-rex bitri breq2 oveq1 eqeq1d rexbidv imbi12d cltr breq1i
+      df-0 ltresr cmr recexsrlem opelreal anbi1i mulresr df-1 eqeq2i eqid wb 0r
+      opthg2 mp2an mpbiran2 syl6bb pm5.32da syl5bb rspcev syl6bir expd rexlimdv
+      1sr oveq2 syl5 syl5bi gencl imp ) BEFZGBHIZBAJZKLZMNZAEOZGCJZPQZHIZWHWCKL
+      ZMNZAEOZUAWBWFUAWGRFZWACWHBWAWHBNZCROWMWNSCUBCBUCWNCRUDUEWNWIWBWLWFWHBGHU
+      FWNWKWEAEWNWJWDMWHBWCKUGUHUIUJWIPWGUKIZWMWLWIPPQZWHHIWOGWPWHHUMULPWGUNUEW
+      OWGDJZUOLZTNZDROWMWLDWGUPWMWSWLDRWMWQRFZWSWLWMWTWSSZWQPQZEFZWHXBKLZMNZSZW
+      LXFWTXESWMXAXCWTXEWQUQURWMWTXEWSWMWTSZXEWRPQZMNZWSXGXDXHMWGWQUSUHXIXHTPQZ
+      NZWSMXJXHUTVAXKWSPPNZPVBTRFPRFXKWSXLSVCVOVDWRPTPRRVEVFVGUEVHVIVJWKXEAXBEW
+      CXBNWJXDMWCXBWHKVPUHVKVLVMVNVQVRVSVT $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64903,6 +64927,18 @@ $)
        Schmidt, 21-May-2007.) $)
     ax-rnegex $a |- ( A e. RR -> E. x e. RR ( A + x ) = 0 ) $.
     $( $j restatement 'ax-rnegex' of 'axrnegex'; $)
+  $}
+
+  ${
+    $d x A $.
+    $( Existence of reciprocal of positive real number.  Axiom 16 of 22 for
+       real and complex numbers, justified by theorem ~ axprecex .
+
+       In treatments which assume excluded middle, the ` 0 <RR A ` condition is
+       generally replaced by ` A =/= 0 ` .  (Contributed by Jim Kingdon,
+       12-Jan-2020.) $)
+    ax-precex $a |- ( ( A e. RR /\ 0 <RR A ) -> E. x e. RR ( A x. x ) = 1 ) $.
+    $( $j restatement 'ax-precex' of 'axprecex'; $)
   $}
 
 $(
