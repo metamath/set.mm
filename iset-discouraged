@@ -50,6 +50,7 @@
 "ax-cnex" is used by "cnex".
 "ax-inf2" is used by "bj-nn0sucALT".
 "ax-inf2" is used by "bj-omex2".
+"ax-mulass" is used by "mulass".
 "ax-mulcl" is used by "mulcl".
 "ax-mulcom" is used by "mulcom".
 "ax-mulrcl" is used by "remulcl".
@@ -166,6 +167,7 @@ New usage of "ax-addcl" is discouraged (1 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-inf2" is discouraged (2 uses).
+New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
 New usage of "ax-mulrcl" is discouraged (1 uses).
@@ -176,7 +178,9 @@ New usage of "axaddass" is discouraged (0 uses).
 New usage of "axaddcl" is discouraged (0 uses).
 New usage of "axaddrcl" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (0 uses).
+New usage of "axdistr" is discouraged (0 uses).
 New usage of "axicn" is discouraged (0 uses).
+New usage of "axmulass" is discouraged (0 uses).
 New usage of "axmulcl" is discouraged (0 uses).
 New usage of "axmulcom" is discouraged (0 uses).
 New usage of "axmulrcl" is discouraged (0 uses).

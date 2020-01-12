@@ -64642,6 +64642,58 @@ $)
       KULUM $.
   $}
 
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $d x y z w v u f g h $.
+    $( Multiplication of complex numbers is associative.  Axiom 10 of 22 for
+       real and complex numbers, derived from ZF set theory.  This
+       construction-dependent theorem should not be referenced directly;
+       instead, use ~ ax-mulass .  (Contributed by NM, 3-Sep-1995.)
+       (New usage is discouraged.) $)
+    axmulass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $=
+      ( vf vg vh cv cmr cplr cnr cm1r wcel mulclsr syl2anc wceq adantl distrsrg
+      co wa syl3anc vx vy vz vw vv vu cc cmul cep ccnv dfcnqs mulcnsrec sylancr
+      m1r addclsr syl2an an4s syl2anr an42s jca w3a simp1l simp2l simp3l simp2r
+      simp3r simp1r addcomsrg addasssrg caov42d a1i eqtrd mulcomsrg 3coml simp3
+      oveq2d oveq12d 3adant3 simp1 3eqtr3d mulasssrg caovdilemd caovcld caov12d
+      simp2 3eqtrd 3eqtr4rd ecoviass ) UAUBUCUDUEUFABCUGUHUDGZUEGZHRZUCGZUFGZHR
+      ZIRZUIUJJUAGZWLHRZKUBGZWIHRZHRZIRZWRWLHRZWPWIHRZIRZXAWJHRZKXDWMHRZHRZIRZX
+      DWJHRZXAWMHRZIRZWPWLWJHRZKWIWMHRZHRZIRZHRZKWRWOHRZHRZIRZWRXOHRZWPWOHRZIRZ
+      XOUKWPWRWLWIULWLWIWJWMULXAXDWJWMULWPWRXOWOULWPJLZWRJLZSZWLJLZWIJLZSZSXAJL
+      ZXDJLZYCYFYDYGYIYCYFSWQJLWTJLZYIYDYGSZWPWLMYLKJLZWSJLZYKUNWRWIMZKWSMUMWQW
+      TUOUPUQYCYGYDYFYJYDYFSXBJLXCJLYJYCYGSWRWLMWPWIMXBXCUOURUSUTYHWJJLZWMJLZSZ
+      SXOJLZWOJLZYFYPYGYQYSYFYPSXLJLZXNJLZYSYGYQSZWLWJMZUUCYMXMJLZUUBUNWIWMMZKX
+      MMZUMXLXNUOUPUQYFYQYGYPYTYGYPSWKJLZWNJLZYTYFYQSWIWJMZWLWMMZWKWNUOURUSUTYE
+      YHYRVAZWPXLHRZWPXNHRZIRZKWRWKHRZHRZKWRWNHRZHRZIRZIRUUMUUQIRZUUSUUNIRZIRXS
+      XHUULDEFUUMUUNUUQUUSJIUULYCUUAUUMJLYCYDYHYRVBZUULYFYPUUAYEYFYGYRVCZYEYHYP
+      YQVDZUUDNZWPXLMNUULYCUUBUUNJLUVCUULYMUUEUUBUNUULYGYQUUEYEYFYGYRVEZYEYHYPY
+      QVFZUUFNZUUGUMZWPXNMNUULYMUUPJLZUUQJLUNUULYDUUHUVKYCYDYHYRVGZUULYGYPUUHUV
+      GUVEUUJNZWRWKMNZKUUPMUMDGZJLZEGZJLZSZUVOUVQIRZUVQUVOIROUULUVOUVQVHPZUVPUV
+      RFGZJLZVAZUVTUWBIRUVOUVQUWBIRIROUULUVOUVQUWBVIPZUULYMUURJLZUUSJLUNUULYDUU
+      IUWFUVLUULYFYQUUIUVDUVHUUKNZWRWNMNZKUURMUMUVSUVTJLZUULUVOUVQUOZPZVJUULXPU
+      UOXRUUTIUULYCUUAUUBXPUUOOUVCUVFUVJWPXLXNQTUULXRKUUPUURIRZHRZUUTUULXQUWLKH
+      UULYDUUHUUIXQUWLOUVLUVMUWGWRWKWNQTVPUULYMUVKUWFUWMUUTOYMUULUNVKZUVNUWHKUU
+      PUURQTVLVQUULXEUVAXGUVBIUULXEUUMKWSWJHRZHRZIRUVAUULDEFWPKWLWSJIHWJUVSUVOU
+      VQHRZUVQUVOHROUULUVOUVQVMPZUWDUVTUWBHRZUVOUWBHRZUVQUWBHRZIRZOUULUWDUWBUVT
+      HRZUWBUVOHRZUWBUVQHRZIRZUWSUXBUWCUVPUVRUXCUXFOUWBUVOUVQQVNUWDUWCUWIUXCUWS
+      OUVPUVRUWCVOZUVPUVRUWIUWCUWJVRUWBUVTVMNUWDUXDUWTUXEUXAIUWDUWCUVPUXDUWTOUX
+      GUVPUVRUWCVSUWBUVOVMNUWDUWCUVRUXEUXAOUXGUVPUVRUWCWEUWBUVQVMNVQVTPZUWDUWQU
+      WBHRUVOUXAHROUULUVOUVQUWBWAPZUVSUWQJLUULUVOUVQMPZUVCUWNUVDUULYDYGYNUVLUVG
+      YONZUVEWBUULUWPUUQUUMIUULUWOUUPKHUULYDYGYPUWOUUPOUVLUVGUVEWRWIWJWATVPVPVL
+      UULXGKUURWPXMHRZIRZHRZUUSKUXLHRZIRZUVBUULXFUXMKHUULDEFWRWPWLWIJIHWMUWRUXH
+      UXIUXJUVLUVCUVDUVGUVHWBVPUULYMUWFUXLJLUXNUXPOUWNUWHUULDEWPXMJJJHUXJUVCUVI
+      WCKUURUXLQTUULUXOUUNUUSIUULDEFKWPXMJHUWNUVCUVIUWRUXIWDVPWFVQWGUULWRXLHRZW
+      RXNHRZIRZWPWKHRZWPWNHRZIRZIRUXQUXTIRZUYAUXRIRZIRYBXKUULDEFUXQUXRUXTUYAJIU
+      ULDEWRXLJJJHUXJUVLUVFWCUULDEWRXNJJJHUXJUVLUVJWCUULDEWPWKJJJHUXJUVCUVMWCUW
+      AUWEUULDEWPWNJJJHUXJUVCUWGWCUWKVJUULXTUXSYAUYBIUULYDUUAUUBXTUXSOUVLUVFUVJ
+      WRXLXNQTUULYCUUHUUIYAUYBOUVCUVMUWGWPWKWNQTVQUULXIUYCXJUYDIUULDEFWRWPWLWIJ
+      IHWJUWRUXHUXIUXJUVLUVCUVDUVGUVEWBUULXJUYAKWSWMHRZHRZIRUYDUULDEFWPKWLWSJIH
+      WMUWRUXHUXIUXJUVCUWNUVDUXKUVHWBUULUYFUXRUYAIUULUYFKWRXMHRZHRUXRUULUYEUYGK
+      HUULYDYGYQUYEUYGOUVLUVGUVHWRWIWMWATVPUULDEFKWRXMJHUWNUVLUVIUWRUXIWDVLVPVL
+      VQWGWH $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64713,6 +64765,14 @@ $)
                ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $.
   $( $j restatement 'ax-addass' of 'axaddass'; $)
 
+  $( Multiplication of complex numbers is associative.  Axiom 10 of 22 for real
+     and complex numbers, justified by theorem ~ axmulass .  Proofs should
+     normally use ~ mulass instead.  (New usage is discouraged.)  (Contributed
+     by NM, 22-Nov-1994.) $)
+  ax-mulass $a |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $.
+  $( $j restatement 'ax-mulass' of 'axmulass'; $)
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
            Derive the basic properties from the field axioms
@@ -64761,6 +64821,12 @@ $)
                  ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $=
     ( ax-addass ) ABCD $.
 
+  $( Alias for ~ ax-mulass , for naming consistency with ~ mulassi .
+     (Contributed by NM, 10-Mar-2008.) $)
+  mulass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $=
+    ( ax-mulass ) ABCD $.
+
   ${
     recni.1 $e |- A e. RR $.
     axri.2 $e |- B e. RR $.
@@ -64795,6 +64861,11 @@ $)
     addassi $p |- ( ( A + B ) + C ) = ( A + ( B + C ) ) $=
       ( cc wcel caddc co wceq addass mp3an ) AGHBGHCGHABIJCIJABCIJIJKDEFABCLM
       $.
+
+    $( Associative law for multiplication.  (Contributed by NM,
+       23-Nov-1994.) $)
+    mulassi $p |- ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) $=
+      ( cc wcel cmul co wceq mulass mp3an ) AGHBGHCGHABIJCIJABCIJIJKDEFABCLM $.
   $}
 
 $(
