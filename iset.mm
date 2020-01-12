@@ -64729,6 +64729,21 @@ $)
       KUUDUUPUUMUUFTUUHXPXLYKUUKUUQYMTUVGUVIUUHXPXMUUEUUKUURUUGTUVJVOVPVR $.
   $}
 
+  $( i-squared equals -1 (expressed as i-squared plus 1 is 0).  Axiom 12 of 22
+     for real and complex numbers, derived from ZF set theory.  This
+     construction-dependent theorem should not be referenced directly; instead,
+     use ~ ax-i2m1 .  (Contributed by NM, 5-May-1996.)
+     (New usage is discouraged.) $)
+  axi2m1 $p |- ( ( _i x. _i ) + 1 ) = 0 $=
+    ( c0r c1r cop cmul co caddc ci cm1r cplr cmr cnr wcel wceq 0r 1sr ax-mp m1r
+    1idsr eqtri oveq12i c1 cc0 mulcnsr mp4an 00sr oveq2i addcomsrg mp2an 3eqtri
+    0idsr opeq12i oveq1i addresr m1p1sr opeq1i df-i df-1 df-0 3eqtr4i ) ABCZUTD
+    EZBACZFEZAACZGGDEZUAFEUBVCHACZVBFEZHBIEZACZVDVAVFVBFVAAAJEZHBBJEZJEZIEZBAJE
+    ZABJEZIEZCZVFAKLZBKLZVRVSVAVQMNONOABABUCUDVMHVPAVMAHIEZHAIEZHVJAVLHIVRVJAMN
+    AUEPVLHBJEZHVKBHJVSVKBMOBRPUFHKLZWBHMQHRPSTVRWCVTWAMNQAHUGUHWCWAHMQHUJPUIVP
+    AAIEZAVNAVOAIVSVNAMOBUEPVRVOAMNARPTVRWDAMNAUJPSUKSULWCVSVGVIMQOHBUMUHVHAAUN
+    UOUIVEVAUAVBFGUTGUTDUPUPTUQTURUS $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64815,6 +64830,12 @@ $)
   ax-distr $a |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
               ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $.
   $( $j restatement 'ax-distr' of 'axdistr'; $)
+
+  $( i-squared equals -1 (expressed as i-squared plus 1 is 0).  Axiom 12 of 22
+     for real and complex numbers, justified by theorem ~ axi2m1 .
+     (Contributed by NM, 29-Jan-1995.) $)
+  ax-i2m1 $a |- ( ( _i x. _i ) + 1 ) = 0 $.
+  $( $j restatement 'ax-i2m1' of 'axi2m1'; $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
