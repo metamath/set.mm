@@ -64773,6 +64773,23 @@ $)
       VHUSVGVFUSVGFGURKUQUJZUKVMQUMUNUOUP $.
   $}
 
+  ${
+    $d x y A $.  $d x y z $.
+    $( Existence of negative of real number.  Axiom 15 of 22 for real and
+       complex numbers, derived from ZF set theory.  This
+       construction-dependent theorem should not be referenced directly;
+       instead, use ~ ax-rnegex .  (Contributed by NM, 15-May-1996.)
+       (New usage is discouraged.) $)
+    axrnegex $p |- ( A e. RR -> E. x e. RR ( A + x ) = 0 ) $=
+      ( cr wcel c1st cfv cm1r cmr co c0r cop caddc cc0 wceq cv wrex cnr elreal2
+      simplbi syl2anc mulclsr sylancl opelreal sylibr cplr simprbi oveq1d pn0sr
+      m1r addresr opeq1d df-0 syl6eqr syl 3eqtrd oveq2 eqeq1d rspcev ) BCDZBEFZ
+      GHIZJKZCDZBVBLIZMNZBAOZLIZMNZACPUSVAQDZVCUSUTQDZGQDVIUSVJBUTJKZNZBRZSZUIU
+      TGUAUBZVAUCUDUSVDVKVBLIZUTVAUEIZJKZMUSBVKVBLUSVJVLVMUFUGUSVJVIVPVRNVNVOUT
+      VAUJTUSVJVRMNVNVJVRJJKMVJVQJJUTUHUKULUMUNUOVHVEAVBCVFVBNVGVDMVFVBBLUPUQUR
+      T $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64878,6 +64895,15 @@ $)
      NM, 29-Jan-1995.) $)
   ax-1rid $a |- ( A e. RR -> ( A x. 1 ) = A ) $.
   $( $j restatement 'ax-1rid' of 'ax1rid'; $)
+
+  ${
+    $d x A $.
+    $( Existence of negative of real number.  Axiom 15 of 22 for real and
+       complex numbers, justified by theorem ~ axrnegex .  (Contributed by Eric
+       Schmidt, 21-May-2007.) $)
+    ax-rnegex $a |- ( A e. RR -> E. x e. RR ( A + x ) = 0 ) $.
+    $( $j restatement 'ax-rnegex' of 'axrnegex'; $)
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
