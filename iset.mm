@@ -1,4 +1,4 @@
-$( iset.mm - Version of 8-Jan-2020
+$( iset.mm - Version of 12-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -64744,6 +64744,19 @@ $)
     AAIEZAVNAVOAIVSVNAMOBUEPVRVOAMNARPTVRWDAMNAUJPSUKSULWCVSVGVIMQOHBUMUHVHAAUN
     UOUIVEVAUAVBFGUTGUTDUPUPTUQTURUS $.
 
+  $( 0 is less than 1.  Axiom 13 of 22 for real and complex numbers, derived
+     from set theory.  This construction-dependent theorem should not be
+     referenced directly; instead, use ~ ax-0lt1 .
+
+     The version of this axiom in the Metamath Proof Explorer reads
+     ` 1 =/= 0 ` ; here we change it to ` 0 <RR 1 ` .  The proof of ` 0 <RR 1 `
+     from ` 1 =/= 0 ` in the Metamath Proof Explorer (accessed 12-Jan-2020)
+     relies on real number trichotomy.  (Contributed by Jim Kingdon,
+     12-Jan-2020.)  (New usage is discouraged.) $)
+  ax0lt1 $p |- 0 <RR 1 $=
+    ( c0r cop c1r cc0 c1 cltrr wbr cltr 0lt1sr ltresr mpbir df-0 df-1 3brtr4i )
+    AABZCABZDEFOPFGACHGIACJKLMN $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64836,6 +64849,13 @@ $)
      (Contributed by NM, 29-Jan-1995.) $)
   ax-i2m1 $a |- ( ( _i x. _i ) + 1 ) = 0 $.
   $( $j restatement 'ax-i2m1' of 'axi2m1'; $)
+
+  $( 0 is less than 1.  Axiom 13 of 22 for real and complex numbers, justified
+     by theorem ~ ax0lt1 .  (Contributed by Jim Kingdon, 12-Jan-2020.) $)
+  ax-0lt1 $p |- 0 <RR 1 $=
+    ( c0r cop c1r cc0 c1 cltrr wbr cltr 0lt1sr ltresr mpbir df-0 df-1 3brtr4i )
+    AABZCABZDEFOPFGACHGIACJKLMN $.
+  $( $j restatement 'ax-0lt1' of 'ax0lt1'; $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
