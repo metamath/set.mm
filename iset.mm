@@ -64694,6 +64694,41 @@ $)
       VQWGWH $.
   $}
 
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $d x y z w v u f g h $.
+    $( Distributive law for complex numbers (left-distributivity).  Axiom 11 of
+       22 for real and complex numbers, derived from ZF set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-distr be used later.  Instead, use
+       ~ adddi .  (Contributed by NM, 2-Sep-1995.)
+       (New usage is discouraged.) $)
+    axdistr $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $=
+      ( vf cnr cv cplr co cmr cm1r wcel wa addclsr mulclsr m1r sylancr distrsrg
+      wceq syl3anc syl2anc vx vy vz vw vv vu vg vh cc caddc ccnv cmul addcnsrec
+      cep dfcnqs mulcnsrec anim12i an4s syl2an syl2anr jca simp1l simp2l simp3l
+      an42s w3a simp1r simp2r simp3r oveq2d a1i oveq12d addcomsrg adantl caov4d
+      eqtrd addasssrg ecovidi ) UAUBUCUDUEUFABCUIUJUNUKEULUAFZUCFZUEFZGHZIHZJUB
+      FZUDFZUFFZGHZIHZIHZGHZWDWBIHZVSWGIHZGHZVSVTIHZJWDWEIHZIHZGHZVSWAIHZJWDWFI
+      HZIHZGHZGHZWDVTIHZVSWEIHZGHZWDWAIHZVSWFIHZGHZGHZWBWGWQXEXAXHUOVTWEWAWFUMV
+      SWDWBWGUPVSWDVTWEUPVSWDWAWFUPWQXEXAXHUMVTEKZWAEKZWEEKZWFEKZWBEKZWGEKZLXJX
+      KLXNXLXMLXOVTWAMWEWFMUQURVSEKZWDEKZLZXJXLLZLWQEKZXEEKZXPXJXQXLXTXPXJLWNEK
+      ZWPEKZXTXQXLLZVSVTNZYDJEKZWOEKZYCOWDWENZJWONZPWNWPMUSURXPXLXQXJYAXQXJLXCE
+      KZXDEKZYAXPXLLWDVTNZVSWENZXCXDMUTVEVAXRXKXMLZLXAEKZXHEKZXPXKXQXMYOXPXKLWR
+      EKZWTEKZYOXQXMLZVSWANZYSYFWSEKZYROWDWFNZJWSNZPWRWTMUSURXPXMXQXKYPXQXKLXFE
+      KZXGEKZYPXPXMLWDWANZVSWFNZXFXGMUTVEVAXRXSYNVFZWJWNWRGHZWPWTGHZGHXBUUHWCUU
+      IWIUUJGUUHXPXJXKWCUUIRXPXQXSYNVBZXRXJXLYNVCZXRXSXKXMVDZVSVTWAQSUUHWIJWOWS
+      GHZIHZUUJUUHWHUUNJIUUHXQXLXMWHUUNRXPXQXSYNVGZXRXJXLYNVHZXRXSXKXMVIZWDWEWF
+      QSVJUUHYFYGUUAUUOUUJRYFUUHOVKUUHXQXLYGUUPUUQYHTZUUHXQXMUUAUUPUURUUBTZJWOW
+      SQSVPVLUUHDUGUHWNWRWPWTEGUUHXPXJYBUUKUULYETUUHXPXKYQUUKUUMYTTUUHYFYGYCOUU
+      SYIPDFZEKZUGFZEKZLZUVAUVCGHZUVCUVAGHRUUHUVAUVCVMVNZUVBUVDUHFZEKVFUVFUVHGH
+      UVAUVCUVHGHGHRUUHUVAUVCUVHVQVNZUUHYFUUAYROUUTUUCPUVEUVFEKUUHUVAUVCMVNZVOV
+      PUUHWMXCXFGHZXDXGGHZGHXIUUHWKUVKWLUVLGUUHXQXJXKWKUVKRUUPUULUUMWDVTWAQSUUH
+      XPXLXMWLUVLRUUKUUQUURVSWEWFQSVLUUHDUGUHXCXFXDXGEGUUHXQXJYJUUPUULYLTUUHXQX
+      KUUDUUPUUMUUFTUUHXPXLYKUUKUUQYMTUVGUVIUUHXPXMUUEUUKUURUUGTUVJVOVPVR $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64773,6 +64808,14 @@ $)
                ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $.
   $( $j restatement 'ax-mulass' of 'axmulass'; $)
 
+  $( Distributive law for complex numbers (left-distributivity).  Axiom 11 of
+     22 for real and complex numbers, justified by theorem ~ axdistr .  Proofs
+     should normally use ~ adddi instead.  (New usage is discouraged.)
+     (Contributed by NM, 22-Nov-1994.) $)
+  ax-distr $a |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+              ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $.
+  $( $j restatement 'ax-distr' of 'axdistr'; $)
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
            Derive the basic properties from the field axioms
@@ -64827,6 +64870,12 @@ $)
                  ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $=
     ( ax-mulass ) ABCD $.
 
+  $( Alias for ~ ax-distr , for naming consistency with ~ adddii .
+     (Contributed by NM, 10-Mar-2008.) $)
+  adddi $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $=
+    ( ax-distr ) ABCD $.
+
   ${
     recni.1 $e |- A e. RR $.
     axri.2 $e |- B e. RR $.
@@ -64866,6 +64915,12 @@ $)
        23-Nov-1994.) $)
     mulassi $p |- ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) $=
       ( cc wcel cmul co wceq mulass mp3an ) AGHBGHCGHABIJCIJABCIJIJKDEFABCLM $.
+
+    $( Distributive law (left-distributivity).  (Contributed by NM,
+       23-Nov-1994.) $)
+    adddii $p |- ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) $=
+      ( cc wcel caddc co cmul wceq adddi mp3an ) AGHBGHCGHABCIJKJABKJACKJIJLDEF
+      ABCMN $.
   $}
 
 $(
