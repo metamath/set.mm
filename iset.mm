@@ -64814,6 +64814,36 @@ $)
       CXBNWJXDMWCXBWHKVPUHVKVLVMVNVQVRVSVT $.
   $}
 
+  ${
+    $d x y z w A $.
+    $( A complex number can be expressed in terms of two reals.  Definition
+       10-1.1(v) of [Gleason] p. 130.  Axiom 17 of 22 for real and complex
+       numbers, derived from ZF set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use ~ ax-cnre .
+       (Contributed by NM, 13-May-1996.)  (New usage is discouraged.) $)
+    axcnre $p |- ( A e. CC ->
+                      E. x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $=
+      ( cop cmul co caddc wceq cr cnr wcel wa c0r cplr c1r cmr cm1r eqtrd cvv
+      0r vz vw cv ci wrex df-c eqeq1 2rexbidv wex opelreal anbi12i biimpri df-i
+      cc oveq1i 1sr mulcnsr mpanl12 mpan2 mulcomsrg mpan 00sr oveq1d oveq2i m1r
+      ax-mp eqtri 0idsr syl6eq 1idsr syl5eq opeq12d oveq2d adantl mpanl2 mpanr1
+      addcnsr addcomsrg opeq12 syl2an 3eqtrrd vex opexg mp2an eleq1 oveq1 oveq2
+      bi2anan9 sylan9eq eqeq2d anbi12d spc2ev syl2anc r2ex sylibr optocl ) UAUC
+      ZUBUCZDZAUCZUDBUCZEFZGFZHZBIUEAIUEZCXCHZBIUEAIUEUAUBCJJUNUFWSCHXDXFABIIWS
+      CXCUGUHWQJKZWRJKZLZWTIKZXAIKZLZXDLZBUIAUIZXEXIWQMDZIKZWRMDZIKZLZWSXOUDXQE
+      FZGFZHZXNXSXIXPXGXRXHWQUJWRUJUKULXIYAXOMWRDZGFZWQMNFZMWRNFZDZWSXHYAYDHXGX
+      HXTYCXOGXHXTMODZXQEFZYCUDYHXQEUMUOXHYIMWRPFZQOMPFZPFZNFZOWRPFZMMPFZNFZDZY
+      CXHMJKZYIYQHZTYROJKZXHYRLYSTUPMOWRMUQURUSXHYMMYPWRXHYMMYLNFZMXHYJMYLNXHYJ
+      WRMPFZMYRXHYJUUBHTMWRUTVAWRVBRVCUUAMMNFZMYLMMNYLQMPFZMYKMQPYTYKMHUPOVBVFV
+      DQJKUUDMHVEQVBVFVGVDYRUUCMHTMVHVFVGVIXHYPWRYONFZWRXHYNWRYONXHYNWROPFZWRYT
+      XHYNUUFHUPOWRUTVAWRVJRVCXHUUEWRMNFZWRYOMWRNYRYOMHTMVBVFVDWRVHZVKRVLRVKVMV
+      NXGYRXHYDYGHZTXGYRYRXHLUUITWQMMWRVQVOVPXGYEWQHYFWRHYGWSHXHWQVHXHYFUUGWRYR
+      XHYFUUGHTMWRVRVAUUHRYEYFWQWRVSVTWAXMXSYBLABXOXQWQSKYRXOSKUAWBTWQMSJWCWDWR
+      SKYRXQSKUBWBTWRMSJWCWDWTXOHZXAXQHZLZXLXSXDYBUUJXJXPUUKXKXRWTXOIWEXAXQIWEW
+      HUULXCYAWSUUJUUKXCXOXBGFYAWTXOXBGWFUUKXBXTXOGXAXQUDEWGVMWIWJWKWLWMXDABIIW
+      NWOWP $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64941,6 +64971,18 @@ $)
     $( $j restatement 'ax-precex' of 'axprecex'; $)
   $}
 
+  ${
+    $d x y A $.
+    $( A complex number can be expressed in terms of two reals.  Definition
+       10-1.1(v) of [Gleason] p. 130.  Axiom 17 of 22 for real and complex
+       numbers, justified by theorem ~ axcnre .  For naming consistency, use
+       ~ cnre for new proofs.  (New usage is discouraged.)  (Contributed by NM,
+       9-May-1999.) $)
+    ax-cnre $a |- ( A e. CC ->
+                      E. x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $.
+    $( $j restatement 'ax-cnre' of 'axcnre'; $)
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
            Derive the basic properties from the field axioms
@@ -65000,6 +65042,14 @@ $)
   adddi $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
                 ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $=
     ( ax-distr ) ABCD $.
+
+  ${
+    $d A x y $.
+    $( Alias for ~ ax-cnre , for naming consistency.  (Contributed by NM,
+       3-Jan-2013.) $)
+    cnre $p |- ( A e. CC -> E. x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $=
+      ( ax-cnre ) ABCD $.
+  $}
 
   ${
     recni.1 $e |- A e. RR $.

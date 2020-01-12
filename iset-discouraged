@@ -48,6 +48,7 @@
 "ax-addcl" is used by "addcl".
 "ax-addrcl" is used by "readdcl".
 "ax-cnex" is used by "cnex".
+"ax-cnre" is used by "cnre".
 "ax-distr" is used by "adddi".
 "ax-inf2" is used by "bj-nn0sucALT".
 "ax-inf2" is used by "bj-omex2".
@@ -167,6 +168,7 @@ New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
+New usage of "ax-cnre" is discouraged (1 uses).
 New usage of "ax-distr" is discouraged (1 uses).
 New usage of "ax-inf2" is discouraged (2 uses).
 New usage of "ax-mulass" is discouraged (1 uses).
@@ -182,6 +184,7 @@ New usage of "axaddass" is discouraged (0 uses).
 New usage of "axaddcl" is discouraged (0 uses).
 New usage of "axaddrcl" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (0 uses).
+New usage of "axcnre" is discouraged (0 uses).
 New usage of "axdistr" is discouraged (0 uses).
 New usage of "axi2m1" is discouraged (0 uses).
 New usage of "axicn" is discouraged (0 uses).
