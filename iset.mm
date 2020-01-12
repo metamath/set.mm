@@ -64757,6 +64757,22 @@ $)
     ( c0r cop c1r cc0 c1 cltrr wbr cltr 0lt1sr ltresr mpbir df-0 df-1 3brtr4i )
     AABZCABZDEFOPFGACHGIACJKLMN $.
 
+  ${
+    $d A x y $.
+    $( ` 1 ` is an identity element for real multiplication.  Axiom 14 of 22
+       for real and complex numbers, derived from ZF set theory.  This
+       construction-dependent theorem should not be referenced directly;
+       instead, use ~ ax-1rid .  (Contributed by Scott Fenton, 3-Jan-2013.)
+       (New usage is discouraged.) $)
+    ax1rid $p |- ( A e. RR -> ( A x. 1 ) = A ) $=
+      ( vx vy cv cop c1 cmul co wceq cnr c0r csn cr df-r oveq1 id eqeq12d elsni
+      wcel c1r df-1 oveq2i cmr 1sr mpan2 1idsr opeq1d eqtrd syl5eq opeq2 oveq1d
+      mulresr syl5ibr impcom sylan2 optocl ) BDZCDZEZFGHZUSIZAFGHZAIBCAJKLZMNUS
+      AIZUTVBUSAUSAFGOVDPQURVCSUQJSZURKIZVAURKRVFVEVAVEVAVFUQKEZFGHZVGIVEVHVGTK
+      EZGHZVGFVIVGGUAUBVEVJUQTUCHZKEZVGVETJSVJVLIUDUQTULUEVEVKUQKUQUFUGUHUIVFUT
+      VHUSVGVFUSVGFGURKUQUJZUKVMQUMUNUOUP $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64856,6 +64872,12 @@ $)
     ( c0r cop c1r cc0 c1 cltrr wbr cltr 0lt1sr ltresr mpbir df-0 df-1 3brtr4i )
     AABZCABZDEFOPFGACHGIACJKLMN $.
   $( $j restatement 'ax-0lt1' of 'ax0lt1'; $)
+
+  $( ` 1 ` is an identity element for real multiplication.  Axiom 14 of 22 for
+     real and complex numbers, justified by theorem ~ ax1rid .  (Contributed by
+     NM, 29-Jan-1995.) $)
+  ax-1rid $a |- ( A e. RR -> ( A x. 1 ) = A ) $.
+  $( $j restatement 'ax-1rid' of 'ax1rid'; $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
