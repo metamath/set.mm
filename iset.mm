@@ -64915,6 +64915,25 @@ $)
       WMWNUKVAVBVDVE $.
   $}
 
+  ${
+    $d x y A $.  $d x y B $.
+    $( The product of two positive reals is positive.  Axiom 21 of 22 for real
+       and complex numbers, derived from ZF set theory.  This
+       construction-dependent theorem should not be referenced directly;
+       instead, use ~ ax-pre-mulgt0 .  (Contributed by NM, 13-May-1996.)
+       (New usage is discouraged.) $)
+    axpre-mulgt0 $p |- ( ( A e. RR /\ B e. RR ) ->
+                  ( ( 0 <RR A /\ 0 <RR B ) -> 0 <RR ( A x. B ) ) ) $=
+      ( vx vy cc0 cv c0r cop cltrr wbr wa cmul cnr elreal wceq cltr df-0 ltresr
+      co wi cr breq2 anbi1d oveq1 breq2d imbi12d anbi2d oveq2 wcel breq1i bitri
+      cmr mulgt0sr syl2anb a1i mulresr breq12d syl6bb syl5ibr 2gencl ) ECFZGHZI
+      JZEDFZGHZIJZKZEVBVELSZIJZTEAIJZVFKZEAVELSZIJZTVJEBIJZKZEABLSZIJZTCDVBVEAB
+      MUACANDBNVBAOZVGVKVIVMVRVCVJVFVBAEIUBUCVRVHVLEIVBAVELUDUEUFVEBOZVKVOVMVQV
+      SVFVNVJVEBEIUBUGVSVLVPEIVEBALUHUEUFVGVIVAMUIVDMUIKZGVAVDULSZPJZVCGVAPJZGV
+      DPJZWBVFVCGGHZVBIJWCEWEVBIQUJGVARUKVFWEVEIJWDEWEVEIQUJGVDRUKVAVDUMUNVTVIW
+      EWAGHZIJWBVTEWEVHWFIEWEOVTQUOVAVDUPUQGWARURUSUT $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -65080,6 +65099,13 @@ $)
   ax-pre-ltadd $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
                 ( A <RR B -> ( C + A ) <RR ( C + B ) ) ) $.
   $( $j restatement 'ax-pre-ltadd' of 'axpre-ltadd'; $)
+
+  $( The product of two positive reals is positive.  Axiom 21 of 22 for real
+     and complex numbers, justified by theorem ~ axpre-mulgt0 .  (Contributed
+     by NM, 13-Oct-2005.) $)
+  ax-pre-mulgt0 $a |- ( ( A e. RR /\ B e. RR ) ->
+                ( ( 0 <RR A /\ 0 <RR B ) -> 0 <RR ( A x. B ) ) ) $.
+  $( $j restatement 'ax-pre-mulgt0' of 'axpre-mulgt0'; $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
