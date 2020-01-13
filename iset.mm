@@ -64876,6 +64876,24 @@ $)
       MSUGVRVSWBTUHMUPURVASUIUJUPURUKVCVTVDWAUPVAUKVAURUKUMUNUO $.
   $}
 
+  ${
+    $d x y z A $.  $d y z B $.  $d z C $.
+    $( Ordering on reals is transitive.  Axiom 19 of 22 for real and complex
+       numbers, derived from ZF set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use
+       ~ ax-pre-lttrn .  (Contributed by NM, 19-May-1996.)  (Revised by Mario
+       Carneiro, 16-Jun-2013.)  (New usage is discouraged.) $)
+    axpre-lttrn $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+               ( ( A <RR B /\ B <RR C ) -> A <RR C ) ) $=
+      ( vx vy vz cv c0r cop cltrr wbr wa cnr elreal wceq breq1 breq2 wcel cltr
+      wi anbi1d imbi12d anbi12d imbi1d anbi2d w3a ltresr ltsosr ltrelsr syl2anb
+      cr sotri sylibr a1i 3gencl ) DGZHIZEGZHIZJKZUSFGZHIZJKZLZUQVBJKZTZAUSJKZV
+      CLZAVBJKZTABJKZBVBJKZLZVITVJBCJKZLZACJKZTDEFUQUSVBAMUKBCDANEBNFCNUQAOZVDV
+      HVEVIVPUTVGVCUQAUSJPUAUQAVBJPUBUSBOZVHVLVIVQVGVJVCVKUSBAJQUSBVBJPUCUDVBCO
+      ZVLVNVIVOVRVKVMVJVBCBJQUEVBCAJQUBVFUPMRURMRVAMRUFVDUPVASKZVEUTUPURSKURVAS
+      KVSVCUPURUGURVAUGUPURVASMUHUIULUJUPVAUGUMUNUO $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -65027,6 +65045,13 @@ $)
   ax-pre-ltwlin $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
     ( A <RR B -> ( A <RR C \/ C <RR B ) ) ) $.
   $( $j restatement 'ax-pre-ltwlin' of 'axpre-ltwlin'; $)
+
+  $( Ordering on reals is transitive.  Axiom 19 of 22 for real and complex
+     numbers, justified by theorem ~ axpre-lttrn .  (Contributed by NM,
+     13-Oct-2005.) $)
+  ax-pre-lttrn $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A <RR B /\ B <RR C ) -> A <RR C ) ) $.
+  $( $j restatement 'ax-pre-lttrn' of 'axpre-lttrn'; $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
