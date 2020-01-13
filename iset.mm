@@ -64894,6 +64894,27 @@ $)
       KVSVCUPURUGURVAUGUPURVASMUHUIULUJUPVAUGUMUNUO $.
   $}
 
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.
+    $( Ordering property of addition on reals.  Axiom 20 of 22 for real and
+       complex numbers, derived from ZF set theory.  This
+       construction-dependent theorem should not be referenced directly;
+       instead, use ~ ax-pre-ltadd .  (Contributed by NM, 11-May-1996.)
+       (New usage is discouraged.) $)
+    axpre-ltadd $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                  ( A <RR B -> ( C + A ) <RR ( C + B ) ) ) $=
+      ( vx vy vz cr wcel w3a cltrr wbr caddc co cv c0r cop wb cnr elreal wceq
+      breq1 oveq2 breq1d bibi12d breq2 breq2d breq12d bibi2d cltr ltasrg ltresr
+      oveq1 cplr simp3 simp1 simp2 wa addresr breqan12d syl22anc syl6bb 3bitr4d
+      a1i 3gencl biimpd ) AGHBGHCGHIABJKZCALMZCBLMZJKZDNZOPZENZOPZJKZFNZOPZVKLM
+      ZVPVMLMZJKZQAVMJKZVPALMZVRJKZQVFWAVPBLMZJKZQVFVIQDEFVKVMVPARGBCDASEBSFCSV
+      KATZVNVTVSWBVKAVMJUAWEVQWAVRJVKAVPLUBUCUDVMBTZVTVFWBWDVMBAJUEWFVRWCWAJVMB
+      VPLUBUFUDVPCTZWDVIVFWGWAVGWCVHJVPCALULVPCBLULUGUHVJRHZVLRHZVORHZIZVJVLUIK
+      ZVOVJUMMZVOVLUMMZUIKZVNVSVJVLVOUJVNWLQWKVJVLUKVCWKVSWMOPZWNOPZJKZWOWKWJWH
+      WJWIVSWRQWHWIWJUNZWHWIWJUOWSWHWIWJUPWJWHUQWJWIUQVQWPVRWQJVOVJURVOVLURUSUT
+      WMWNUKVAVBVDVE $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -65052,6 +65073,13 @@ $)
   ax-pre-lttrn $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
              ( ( A <RR B /\ B <RR C ) -> A <RR C ) ) $.
   $( $j restatement 'ax-pre-lttrn' of 'axpre-lttrn'; $)
+
+  $( Ordering property of addition on reals.  Axiom 20 of 22 for real and
+     complex numbers, justified by theorem ~ axpre-ltadd .  (Contributed by NM,
+     13-Oct-2005.) $)
+  ax-pre-ltadd $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A <RR B -> ( C + A ) <RR ( C + B ) ) ) $.
+  $( $j restatement 'ax-pre-ltadd' of 'axpre-ltadd'; $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
