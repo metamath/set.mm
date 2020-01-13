@@ -64511,26 +64511,26 @@ $)
     enrer qsss eqeltri trud ssexi ) ABBCDEBBBFFCZGHZDIUDUCJZUCFFKKLMUDUENOUCGUC
     GPORQSUAUBTZUFLT $.
 
-  $( The real numbers are a subset of the complex numbers.  Axiom 1 of 22 for
-     real and complex numbers, derived from ZF set theory.  This
-     construction-dependent theorem should not be referenced directly; instead,
-     use ~ ax-resscn .  (Contributed by NM, 1-Mar-1995.)  (Proof shortened by
-     Andrew Salmon, 12-Aug-2011.)  (New usage is discouraged.) $)
+  $( The real numbers are a subset of the complex numbers.  Axiom for real and
+     complex numbers, derived from set theory.  This construction-dependent
+     theorem should not be referenced directly; instead, use ~ ax-resscn .
+     (Contributed by NM, 1-Mar-1995.)  (Proof shortened by Andrew Salmon,
+     12-Aug-2011.)  (New usage is discouraged.) $)
   axresscn $p |- RR C_ CC $=
     ( cnr c0r csn cxp cr cc wcel wss 0r snssi xpss2 mp2b df-r df-c 3sstr4i ) AB
     CZDZAADZEFBAGPAHQRHIBAJPAAKLMNO $.
 
-  $( 1 is a complex number.  Axiom 2 of 22 for real and complex numbers,
-     derived from ZF set theory.  This construction-dependent theorem should
-     not be referenced directly; instead, use ~ ax-1cn .  (Contributed by NM,
-     12-Apr-2007.)  (New usage is discouraged.) $)
+  $( 1 is a complex number.  Axiom for real and complex numbers, derived from
+     set theory.  This construction-dependent theorem should not be referenced
+     directly; instead, use ~ ax-1cn .  (Contributed by NM, 12-Apr-2007.)
+     (New usage is discouraged.) $)
   ax1cn $p |- 1 e. CC $=
     ( cr cc c1 axresscn c1r c0r cop df-1 wcel cnr opelreal mpbir eqeltri sselii
     1sr ) ABCDCEFGZAHPAIEJIOEKLMN $.
 
-  $( ` _i ` is a complex number.  Axiom 3 of 22 for real and complex numbers,
-     derived from ZF set theory.  This construction-dependent theorem should
-     not be referenced directly; instead, use ~ ax-icn .  (Contributed by NM,
+  $( ` _i ` is a complex number.  Axiom for real and complex numbers, derived
+     from set theory.  This construction-dependent theorem should not be
+     referenced directly; instead, use ~ ax-icn .  (Contributed by NM,
      23-Feb-1996.)  (New usage is discouraged.) $)
   axicn $p |- _i e. CC $=
     ( ci cc wcel c0r cnr c1r 0r 1sr cop wa df-i eleq1i opelcn bitri mpbir2an )
@@ -64538,12 +64538,11 @@ $)
 
   ${
     $d A w x y z $.  $d B w x y z $.
-    $( Closure law for addition of complex numbers.  Axiom 4 of 22 for real and
-       complex numbers, derived from ZF set theory.  This
-       construction-dependent theorem should not be referenced directly, nor
-       should the proven axiom ~ ax-addcl be used later.  Instead, in most
-       cases use ~ addcl .  (Contributed by NM, 14-Jun-1995.)
-       (New usage is discouraged.) $)
+    $( Closure law for addition of complex numbers.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly, nor should the proven axiom
+       ~ ax-addcl be used later.  Instead, in most cases use ~ addcl .
+       (Contributed by NM, 14-Jun-1995.)  (New usage is discouraged.) $)
     axaddcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) $=
       ( vx vy vz vw cc wcel wa cv cop wceq cnr wex caddc co elxpi df-c ad2ant2l
       eleq2s cxp anim12i ee4anv sylibr cplr simpll simprl oveq12d addcnsr eqtrd
@@ -64555,7 +64554,7 @@ $)
       VGVOVBVJUKULVGVOWLVFVNVCVKUKSWFWGMMUMUNRUOSUPUQUQUR $.
 
     $( Closure law for addition in the real subfield of complex numbers.  Axiom
-       5 of 22 for real and complex numbers, derived from ZF set theory.  This
+       for real and complex numbers, derived from set theory.  This
        construction-dependent theorem should not be referenced directly, nor
        should the proven axiom ~ ax-addrcl be used later.  Instead, in most
        cases use ~ readdcl .  (Contributed by NM, 31-Mar-1996.)
@@ -64566,12 +64565,11 @@ $)
       IHIZJKABHIZJKCDUGUIABLJCAMDBMUGANUJUKJUGAUIHOPUIBNUKULJUIBAHQPUFLKUHLKRZU
       JUFUHSIZFGZJUFUHTUMUNLKUOJKUFUHUAUNUBUCUDUE $.
 
-    $( Closure law for multiplication of complex numbers.  Axiom 6 of 22 for
-       real and complex numbers, derived from ZF set theory.  This
-       construction-dependent theorem should not be referenced directly, nor
-       should the proven axiom ~ ax-mulcl be used later.  Instead, in most
-       cases use ~ mulcl .  (Contributed by NM, 10-Aug-1995.)
-       (New usage is discouraged.) $)
+    $( Closure law for multiplication of complex numbers.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly, nor should the proven axiom
+       ~ ax-mulcl be used later.  Instead, in most cases use ~ mulcl .
+       (Contributed by NM, 10-Aug-1995.)  (New usage is discouraged.) $)
     axmulcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $=
       ( vx vy vz vw cc wcel wa cop wceq cnr wex cmul df-c cmr mulclsr
       cv co syl2anc cxp eleq2s anim12i ee4anv sylibr cm1r cplr simpll
@@ -64588,9 +64586,9 @@ $)
       DVEVEVF $.
 
     $( Closure law for multiplication in the real subfield of complex numbers.
-       Axiom 7 of 22 for real and complex numbers, derived from ZF set theory.
-       This construction-dependent theorem should not be referenced directly,
-       nor should the proven axiom ~ ax-mulrcl be used later.  Instead, in most
+       Axiom for real and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-mulrcl be used later.  Instead, in most
        cases use ~ remulcl .  (New usage is discouraged.)  (Contributed by NM,
        31-Mar-1996.) $)
     axmulrcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $=
@@ -64602,12 +64600,11 @@ $)
 
   ${
     $d x y z w A $.  $d x y z w B $.
-    $( Multiplication of complex numbers is commutative.  Axiom 8 of 22 for
-       real and complex numbers, derived from ZF set theory.  This
-       construction-dependent theorem should not be referenced directly, nor
-       should the proven axiom ~ ax-mulcom be used later.  Instead, use
-       ~ mulcom .  (Contributed by NM, 31-Aug-1995.)
-       (New usage is discouraged.) $)
+    $( Multiplication of complex numbers is commutative.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly, nor should the proven axiom
+       ~ ax-mulcom be used later.  Instead, use ~ mulcom .  (Contributed by NM,
+       31-Aug-1995.)  (New usage is discouraged.) $)
     axmulcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) $=
       ( vx vy vz vw cv cmr co cm1r cplr cnr mulcnsrec wcel wa mulcomsrg syl2anc
       wceq oveq12d mulclsr cc cmul dfcnqs simpll simprl simplr simprr addcomsrg
@@ -64623,8 +64620,8 @@ $)
     $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
     $( Addition of complex numbers is associative.  This theorem transfers the
        associative laws for the real and imaginary signed real components of
-       complex number pairs, to complex number addition itself.  Axiom 9 of 22
-       for real and complex numbers, derived from ZF set theory.  This
+       complex number pairs, to complex number addition itself.  Axiom for real
+       and complex numbers, derived from set theory.  This
        construction-dependent theorem should not be referenced directly, nor
        should the proven axiom ~ ax-addass be used later.  Instead, use
        ~ addass .  (Contributed by NM, 2-Sep-1995.)
@@ -64645,11 +64642,10 @@ $)
   ${
     $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
     $d x y z w v u f g h $.
-    $( Multiplication of complex numbers is associative.  Axiom 10 of 22 for
-       real and complex numbers, derived from ZF set theory.  This
-       construction-dependent theorem should not be referenced directly;
-       instead, use ~ ax-mulass .  (Contributed by NM, 3-Sep-1995.)
-       (New usage is discouraged.) $)
+    $( Multiplication of complex numbers is associative.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use ~ ax-mulass .
+       (Contributed by NM, 3-Sep-1995.)  (New usage is discouraged.) $)
     axmulass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
                  ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $=
       ( vf vg vh cv cmr cplr cnr cm1r wcel mulclsr syl2anc wceq adantl distrsrg
@@ -64697,8 +64693,8 @@ $)
   ${
     $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
     $d x y z w v u f g h $.
-    $( Distributive law for complex numbers (left-distributivity).  Axiom 11 of
-       22 for real and complex numbers, derived from ZF set theory.  This
+    $( Distributive law for complex numbers (left-distributivity).  Axiom for
+       real and complex numbers, derived from set theory.  This
        construction-dependent theorem should not be referenced directly, nor
        should the proven axiom ~ ax-distr be used later.  Instead, use
        ~ adddi .  (Contributed by NM, 2-Sep-1995.)
@@ -64729,11 +64725,10 @@ $)
       KUUDUUPUUMUUFTUUHXPXLYKUUKUUQYMTUVGUVIUUHXPXMUUEUUKUURUUGTUVJVOVPVR $.
   $}
 
-  $( i-squared equals -1 (expressed as i-squared plus 1 is 0).  Axiom 12 of 22
-     for real and complex numbers, derived from ZF set theory.  This
-     construction-dependent theorem should not be referenced directly; instead,
-     use ~ ax-i2m1 .  (Contributed by NM, 5-May-1996.)
-     (New usage is discouraged.) $)
+  $( i-squared equals -1 (expressed as i-squared plus 1 is 0).  Axiom for real
+     and complex numbers, derived from set theory.  This construction-dependent
+     theorem should not be referenced directly; instead, use ~ ax-i2m1 .
+     (Contributed by NM, 5-May-1996.)  (New usage is discouraged.) $)
   axi2m1 $p |- ( ( _i x. _i ) + 1 ) = 0 $=
     ( c0r c1r cop cmul co caddc ci cm1r cplr cmr cnr wcel wceq 0r 1sr ax-mp m1r
     1idsr eqtri oveq12i c1 cc0 mulcnsr mp4an 00sr oveq2i addcomsrg mp2an 3eqtri
@@ -64744,9 +64739,9 @@ $)
     AAIEZAVNAVOAIVSVNAMOBUEPVRVOAMNARPTVRWDAMNAUJPSUKSULWCVSVGVIMQOHBUMUHVHAAUN
     UOUIVEVAUAVBFGUTGUTDUPUPTUQTURUS $.
 
-  $( 0 is less than 1.  Axiom 13 of 22 for real and complex numbers, derived
-     from set theory.  This construction-dependent theorem should not be
-     referenced directly; instead, use ~ ax-0lt1 .
+  $( 0 is less than 1.  Axiom for real and complex numbers, derived from set
+     theory.  This construction-dependent theorem should not be referenced
+     directly; instead, use ~ ax-0lt1 .
 
      The version of this axiom in the Metamath Proof Explorer reads
      ` 1 =/= 0 ` ; here we change it to ` 0 <RR 1 ` .  The proof of ` 0 <RR 1 `
@@ -64759,8 +64754,8 @@ $)
 
   ${
     $d A x y $.
-    $( ` 1 ` is an identity element for real multiplication.  Axiom 14 of 22
-       for real and complex numbers, derived from ZF set theory.  This
+    $( ` 1 ` is an identity element for real multiplication.  Axiom for real
+       and complex numbers, derived from set theory.  This
        construction-dependent theorem should not be referenced directly;
        instead, use ~ ax-1rid .  (Contributed by Scott Fenton, 3-Jan-2013.)
        (New usage is discouraged.) $)
@@ -64775,11 +64770,10 @@ $)
 
   ${
     $d x y A $.  $d x y z $.
-    $( Existence of negative of real number.  Axiom 15 of 22 for real and
-       complex numbers, derived from ZF set theory.  This
-       construction-dependent theorem should not be referenced directly;
-       instead, use ~ ax-rnegex .  (Contributed by NM, 15-May-1996.)
-       (New usage is discouraged.) $)
+    $( Existence of negative of real number.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly; instead, use ~ ax-rnegex .
+       (Contributed by NM, 15-May-1996.)  (New usage is discouraged.) $)
     axrnegex $p |- ( A e. RR -> E. x e. RR ( A + x ) = 0 ) $=
       ( cr wcel c1st cfv cm1r cmr co c0r cop caddc cc0 wceq cv wrex cnr elreal2
       simplbi syl2anc mulclsr sylancl opelreal sylibr cplr simprbi oveq1d pn0sr
@@ -64792,10 +64786,9 @@ $)
 
   ${
     $d x y A $.  $d x y z $.
-    $( Existence of reciprocal of positive real number.  Axiom 16 of 22 for
-       real and complex numbers, derived from set theory.  This
-       construction-dependent theorem should not be referenced directly;
-       instead, use ~ ax-precex .
+    $( Existence of reciprocal of positive real number.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use ~ ax-precex .
 
        In treatments which assume excluded middle, the ` 0 <RR A ` condition is
        generally replaced by ` A =/= 0 ` .  (Contributed by Jim Kingdon,
@@ -64817,10 +64810,10 @@ $)
   ${
     $d x y z w A $.
     $( A complex number can be expressed in terms of two reals.  Definition
-       10-1.1(v) of [Gleason] p. 130.  Axiom 17 of 22 for real and complex
-       numbers, derived from ZF set theory.  This construction-dependent
-       theorem should not be referenced directly; instead, use ~ ax-cnre .
-       (Contributed by NM, 13-May-1996.)  (New usage is discouraged.) $)
+       10-1.1(v) of [Gleason] p. 130.  Axiom for real and complex numbers,
+       derived from set theory.  This construction-dependent theorem should not
+       be referenced directly; instead, use ~ ax-cnre .  (Contributed by NM,
+       13-May-1996.)  (New usage is discouraged.) $)
     axcnre $p |- ( A e. CC ->
                       E. x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $=
       ( cop cmul co caddc wceq cr cnr wcel wa c0r cplr c1r cmr cm1r eqtrd cvv
@@ -64878,11 +64871,11 @@ $)
 
   ${
     $d x y z A $.  $d y z B $.  $d z C $.
-    $( Ordering on reals is transitive.  Axiom 19 of 22 for real and complex
-       numbers, derived from ZF set theory.  This construction-dependent
-       theorem should not be referenced directly; instead, use
-       ~ ax-pre-lttrn .  (Contributed by NM, 19-May-1996.)  (Revised by Mario
-       Carneiro, 16-Jun-2013.)  (New usage is discouraged.) $)
+    $( Ordering on reals is transitive.  Axiom for real and complex numbers,
+       derived from set theory.  This construction-dependent theorem should not
+       be referenced directly; instead, use ~ ax-pre-lttrn .  (Contributed by
+       NM, 19-May-1996.)  (Revised by Mario Carneiro, 16-Jun-2013.)
+       (New usage is discouraged.) $)
     axpre-lttrn $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
                ( ( A <RR B /\ B <RR C ) -> A <RR C ) ) $=
       ( vx vy vz cv c0r cop cltrr wbr wa cnr elreal wceq breq1 breq2 wcel cltr
@@ -64896,11 +64889,10 @@ $)
 
   ${
     $d x y z A $.  $d x y z B $.  $d x y z C $.
-    $( Ordering property of addition on reals.  Axiom 20 of 22 for real and
-       complex numbers, derived from ZF set theory.  This
-       construction-dependent theorem should not be referenced directly;
-       instead, use ~ ax-pre-ltadd .  (Contributed by NM, 11-May-1996.)
-       (New usage is discouraged.) $)
+    $( Ordering property of addition on reals.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly; instead, use ~ ax-pre-ltadd .
+       (Contributed by NM, 11-May-1996.)  (New usage is discouraged.) $)
     axpre-ltadd $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
                   ( A <RR B -> ( C + A ) <RR ( C + B ) ) ) $=
       ( vx vy vz cr wcel w3a cltrr wbr caddc co cv c0r cop wb cnr elreal wceq
@@ -64917,10 +64909,10 @@ $)
 
   ${
     $d x y A $.  $d x y B $.
-    $( The product of two positive reals is positive.  Axiom 21 of 22 for real
-       and complex numbers, derived from ZF set theory.  This
-       construction-dependent theorem should not be referenced directly;
-       instead, use ~ ax-pre-mulgt0 .  (Contributed by NM, 13-May-1996.)
+    $( The product of two positive reals is positive.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use
+       ~ ax-pre-mulgt0 .  (Contributed by NM, 13-May-1996.)
        (New usage is discouraged.) $)
     axpre-mulgt0 $p |- ( ( A e. RR /\ B e. RR ) ->
                   ( ( 0 <RR A /\ 0 <RR B ) -> 0 <RR ( A x. B ) ) ) $=
@@ -64945,105 +64937,105 @@ $)
   ax-cnex $a |- CC e. _V $.
   $( $j restatement 'ax-cnex' of 'axcnex'; $)
 
-  $( The real numbers are a subset of the complex numbers.  Axiom 1 of 22 for
-     real and complex numbers, justified by theorem ~ axresscn .  (Contributed
-     by NM, 1-Mar-1995.) $)
+  $( The real numbers are a subset of the complex numbers.  Axiom for real and
+     complex numbers, justified by theorem ~ axresscn .  (Contributed by NM,
+     1-Mar-1995.) $)
   ax-resscn $a |- RR C_ CC $.
   $( $j restatement 'ax-resscn' of 'axresscn'; $)
 
-  $( 1 is a complex number.  Axiom 2 of 22 for real and complex numbers,
-     justified by theorem ~ ax1cn .  (Contributed by NM, 1-Mar-1995.) $)
+  $( 1 is a complex number.  Axiom for real and complex numbers, justified by
+     theorem ~ ax1cn .  (Contributed by NM, 1-Mar-1995.) $)
   ax-1cn $a |- 1 e. CC $.
   $( $j restatement 'ax-1cn' of 'ax1cn'; $)
 
-  $( ` _i ` is a complex number.  Axiom 3 of 22 for real and complex numbers,
-     justified by theorem ~ axicn .  (Contributed by NM, 1-Mar-1995.) $)
+  $( ` _i ` is a complex number.  Axiom for real and complex numbers, justified
+     by theorem ~ axicn .  (Contributed by NM, 1-Mar-1995.) $)
   ax-icn $a |- _i e. CC $.
   $( $j restatement 'ax-icn' of 'axicn'; $)
 
-  $( Closure law for addition of complex numbers.  Axiom 4 of 22 for real and
-     complex numbers, justified by theorem ~ axaddcl .  Proofs should normally
-     use ~ addcl instead, which asserts the same thing but follows our naming
+  $( Closure law for addition of complex numbers.  Axiom for real and complex
+     numbers, justified by theorem ~ axaddcl .  Proofs should normally use
+     ~ addcl instead, which asserts the same thing but follows our naming
      conventions for closures.  (New usage is discouraged.)  (Contributed by
      NM, 22-Nov-1994.) $)
   ax-addcl $a |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) $.
   $( $j restatement 'ax-addcl' of 'axaddcl'; $)
 
-  $( Closure law for addition in the real subfield of complex numbers.  Axiom 6
-     of 23 for real and complex numbers, justified by theorem ~ axaddrcl .
-     Proofs should normally use ~ readdcl instead.
-     (New usage is discouraged.)  (Contributed by NM, 22-Nov-1994.) $)
+  $( Closure law for addition in the real subfield of complex numbers.  Axiom
+     for real and complex numbers, justified by theorem ~ axaddrcl .  Proofs
+     should normally use ~ readdcl instead.  (New usage is discouraged.)
+     (Contributed by NM, 22-Nov-1994.) $)
   ax-addrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A + B ) e. RR ) $.
   $( $j restatement 'ax-addrcl' of 'axaddrcl'; $)
 
-  $( Closure law for multiplication of complex numbers.  Axiom 6 of 22 for real
-     and complex numbers, justified by theorem ~ axmulcl .  Proofs should
-     normally use ~ mulcl instead.  (New usage is discouraged.)  (Contributed
-     by NM, 22-Nov-1994.) $)
+  $( Closure law for multiplication of complex numbers.  Axiom for real and
+     complex numbers, justified by theorem ~ axmulcl .  Proofs should normally
+     use ~ mulcl instead.  (New usage is discouraged.)  (Contributed by NM,
+     22-Nov-1994.) $)
   ax-mulcl $a |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $.
   $( $j restatement 'ax-mulcl' of 'axmulcl'; $)
 
   $( Closure law for multiplication in the real subfield of complex numbers.
-     Axiom 7 of 22 for real and complex numbers, justified by theorem
-     ~ axmulrcl .  Proofs should normally use ~ remulcl instead.
+     Axiom for real and complex numbers, justified by theorem ~ axmulrcl .
+     Proofs should normally use ~ remulcl instead.
      (New usage is discouraged.)  (Contributed by NM, 22-Nov-1994.) $)
   ax-mulrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $.
   $( $j restatement 'ax-mulrcl' of 'axmulrcl'; $)
 
-  $( Multiplication of complex numbers is commutative.  Axiom 8 of 22 for real
-     and complex numbers, justified by theorem ~ axmulcom .  Proofs should
-     normally use ~ mulcom instead.  (New usage is discouraged.)  (Contributed
-     by NM, 22-Nov-1994.) $)
+  $( Multiplication of complex numbers is commutative.  Axiom for real and
+     complex numbers, justified by theorem ~ axmulcom .  Proofs should normally
+     use ~ mulcom instead.  (New usage is discouraged.)  (Contributed by NM,
+     22-Nov-1994.) $)
   ax-mulcom $a |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) $.
   $( $j restatement 'ax-mulcom' of 'axmulcom'; $)
 
-  $( Addition of complex numbers is associative.  Axiom 9 of 22 for real and
-     complex numbers, justified by theorem ~ axaddass .  Proofs should normally
-     use ~ addass instead.  (New usage is discouraged.)  (Contributed by NM,
+  $( Addition of complex numbers is associative.  Axiom for real and complex
+     numbers, justified by theorem ~ axaddass .  Proofs should normally use
+     ~ addass instead.  (New usage is discouraged.)  (Contributed by NM,
      22-Nov-1994.) $)
   ax-addass $a |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
                ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $.
   $( $j restatement 'ax-addass' of 'axaddass'; $)
 
-  $( Multiplication of complex numbers is associative.  Axiom 10 of 22 for real
-     and complex numbers, justified by theorem ~ axmulass .  Proofs should
-     normally use ~ mulass instead.  (New usage is discouraged.)  (Contributed
-     by NM, 22-Nov-1994.) $)
+  $( Multiplication of complex numbers is associative.  Axiom for real and
+     complex numbers, justified by theorem ~ axmulass .  Proofs should normally
+     use ~ mulass instead.  (New usage is discouraged.)  (Contributed by NM,
+     22-Nov-1994.) $)
   ax-mulass $a |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
                ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $.
   $( $j restatement 'ax-mulass' of 'axmulass'; $)
 
-  $( Distributive law for complex numbers (left-distributivity).  Axiom 11 of
-     22 for real and complex numbers, justified by theorem ~ axdistr .  Proofs
-     should normally use ~ adddi instead.  (New usage is discouraged.)
-     (Contributed by NM, 22-Nov-1994.) $)
+  $( Distributive law for complex numbers (left-distributivity).  Axiom for
+     real and complex numbers, justified by theorem ~ axdistr .  Proofs should
+     normally use ~ adddi instead.  (New usage is discouraged.)  (Contributed
+     by NM, 22-Nov-1994.) $)
   ax-distr $a |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
               ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $.
   $( $j restatement 'ax-distr' of 'axdistr'; $)
 
-  $( i-squared equals -1 (expressed as i-squared plus 1 is 0).  Axiom 12 of 22
-     for real and complex numbers, justified by theorem ~ axi2m1 .
-     (Contributed by NM, 29-Jan-1995.) $)
+  $( i-squared equals -1 (expressed as i-squared plus 1 is 0).  Axiom for real
+     and complex numbers, justified by theorem ~ axi2m1 .  (Contributed by NM,
+     29-Jan-1995.) $)
   ax-i2m1 $a |- ( ( _i x. _i ) + 1 ) = 0 $.
   $( $j restatement 'ax-i2m1' of 'axi2m1'; $)
 
-  $( 0 is less than 1.  Axiom 13 of 22 for real and complex numbers, justified
-     by theorem ~ ax0lt1 .  (Contributed by Jim Kingdon, 12-Jan-2020.) $)
+  $( 0 is less than 1.  Axiom for real and complex numbers, justified by
+     theorem ~ ax0lt1 .  (Contributed by Jim Kingdon, 12-Jan-2020.) $)
   ax-0lt1 $p |- 0 <RR 1 $=
     ( c0r cop c1r cc0 c1 cltrr wbr cltr 0lt1sr ltresr mpbir df-0 df-1 3brtr4i )
     AABZCABZDEFOPFGACHGIACJKLMN $.
   $( $j restatement 'ax-0lt1' of 'ax0lt1'; $)
 
-  $( ` 1 ` is an identity element for real multiplication.  Axiom 14 of 22 for
-     real and complex numbers, justified by theorem ~ ax1rid .  (Contributed by
-     NM, 29-Jan-1995.) $)
+  $( ` 1 ` is an identity element for real multiplication.  Axiom for real and
+     complex numbers, justified by theorem ~ ax1rid .  (Contributed by NM,
+     29-Jan-1995.) $)
   ax-1rid $a |- ( A e. RR -> ( A x. 1 ) = A ) $.
   $( $j restatement 'ax-1rid' of 'ax1rid'; $)
 
   ${
     $d x A $.
-    $( Existence of negative of real number.  Axiom 15 of 22 for real and
-       complex numbers, justified by theorem ~ axrnegex .  (Contributed by Eric
+    $( Existence of negative of real number.  Axiom for real and complex
+       numbers, justified by theorem ~ axrnegex .  (Contributed by Eric
        Schmidt, 21-May-2007.) $)
     ax-rnegex $a |- ( A e. RR -> E. x e. RR ( A + x ) = 0 ) $.
     $( $j restatement 'ax-rnegex' of 'axrnegex'; $)
@@ -65051,8 +65043,8 @@ $)
 
   ${
     $d x A $.
-    $( Existence of reciprocal of positive real number.  Axiom 16 of 22 for
-       real and complex numbers, justified by theorem ~ axprecex .
+    $( Existence of reciprocal of positive real number.  Axiom for real and
+       complex numbers, justified by theorem ~ axprecex .
 
        In treatments which assume excluded middle, the ` 0 <RR A ` condition is
        generally replaced by ` A =/= 0 ` .  (Contributed by Jim Kingdon,
@@ -65064,9 +65056,9 @@ $)
   ${
     $d x y A $.
     $( A complex number can be expressed in terms of two reals.  Definition
-       10-1.1(v) of [Gleason] p. 130.  Axiom 17 of 22 for real and complex
-       numbers, justified by theorem ~ axcnre .  For naming consistency, use
-       ~ cnre for new proofs.  (New usage is discouraged.)  (Contributed by NM,
+       10-1.1(v) of [Gleason] p. 130.  Axiom for real and complex numbers,
+       justified by theorem ~ axcnre .  For naming consistency, use ~ cnre for
+       new proofs.  (New usage is discouraged.)  (Contributed by NM,
        9-May-1999.) $)
     ax-cnre $a |- ( A e. CC ->
                       E. x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $.
@@ -65086,23 +65078,22 @@ $)
     ( A <RR B -> ( A <RR C \/ C <RR B ) ) ) $.
   $( $j restatement 'ax-pre-ltwlin' of 'axpre-ltwlin'; $)
 
-  $( Ordering on reals is transitive.  Axiom 19 of 22 for real and complex
-     numbers, justified by theorem ~ axpre-lttrn .  (Contributed by NM,
-     13-Oct-2005.) $)
+  $( Ordering on reals is transitive.  Axiom for real and complex numbers,
+     justified by theorem ~ axpre-lttrn .  (Contributed by NM, 13-Oct-2005.) $)
   ax-pre-lttrn $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
              ( ( A <RR B /\ B <RR C ) -> A <RR C ) ) $.
   $( $j restatement 'ax-pre-lttrn' of 'axpre-lttrn'; $)
 
-  $( Ordering property of addition on reals.  Axiom 20 of 22 for real and
-     complex numbers, justified by theorem ~ axpre-ltadd .  (Contributed by NM,
+  $( Ordering property of addition on reals.  Axiom for real and complex
+     numbers, justified by theorem ~ axpre-ltadd .  (Contributed by NM,
      13-Oct-2005.) $)
   ax-pre-ltadd $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
                 ( A <RR B -> ( C + A ) <RR ( C + B ) ) ) $.
   $( $j restatement 'ax-pre-ltadd' of 'axpre-ltadd'; $)
 
-  $( The product of two positive reals is positive.  Axiom 21 of 22 for real
-     and complex numbers, justified by theorem ~ axpre-mulgt0 .  (Contributed
-     by NM, 13-Oct-2005.) $)
+  $( The product of two positive reals is positive.  Axiom for real and complex
+     numbers, justified by theorem ~ axpre-mulgt0 .  (Contributed by NM,
+     13-Oct-2005.) $)
   ax-pre-mulgt0 $a |- ( ( A e. RR /\ B e. RR ) ->
                 ( ( 0 <RR A /\ 0 <RR B ) -> 0 <RR ( A x. B ) ) ) $.
   $( $j restatement 'ax-pre-mulgt0' of 'axpre-mulgt0'; $)
