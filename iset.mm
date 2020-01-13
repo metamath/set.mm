@@ -64858,6 +64858,24 @@ $)
       UQSZURUAUBUMUOULUJUJTGUJTIUCUDUEUJUJUFUGUHUI $.
   $}
 
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.
+    $( Real number less-than is weakly linear.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly; instead, use ~ ax-pre-ltwlin .
+       (Contributed by Jim Kingdon, 12-Jan-2020.)
+       (New usage is discouraged.) $)
+    axpre-ltwlin $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+        ( A <RR B -> ( A <RR C \/ C <RR B ) ) ) $=
+      ( vx vy vz cv c0r cop cltrr wbr wo cnr elreal wceq breq1 breq2 wcel cltr
+      wi orbi1d imbi12d orbi2d orbi12d imbi2d w3a wor ltsosr sowlin mpan ltresr
+      cr orbi12i 3imtr4g 3gencl ) DGZHIZEGZHIZJKZUQFGZHIZJKZVBUSJKZLZTAUSJKZAVB
+      JKZVDLZTABJKZVGVBBJKZLZTVIACJKZCBJKZLZTDEFUQUSVBAMULBCDANEBNFCNUQAOZUTVFV
+      EVHUQAUSJPVOVCVGVDUQAVBJPUAUBUSBOZVFVIVHVKUSBAJQVPVDVJVGUSBVBJQUCUBVBCOZV
+      KVNVIVQVGVLVJVMVBCAJQVBCBJPUDUEUPMRURMRVAMRUFZUPURSKZUPVASKZVAURSKZLZUTVE
+      MSUGVRVSWBTUHMUPURVASUIUJUPURUKVCVTVDWAUPVAUKVAURUKUMUNUO $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -65002,6 +65020,13 @@ $)
      12-Jan-2020.) $)
   ax-pre-ltirr $a |- ( A e. RR -> -. A <RR A ) $.
   $( $j restatement 'ax-pre-ltirr' of 'axpre-ltirr'; $)
+
+  $( Real number less-than is weakly linear.  Axiom for real and complex
+     numbers, justified by theorem ~ axpre-ltwlin .  (Contributed by Jim
+     Kingdon, 12-Jan-2020.) $)
+  ax-pre-ltwlin $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+    ( A <RR B -> ( A <RR C \/ C <RR B ) ) ) $.
+  $( $j restatement 'ax-pre-ltwlin' of 'axpre-ltwlin'; $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
