@@ -64844,6 +64844,20 @@ $)
       NWOWP $.
   $}
 
+  ${
+    $d x A $.
+    $( Real number less-than is irreflexive.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly; instead, use ~ ax-pre-ltirr .
+       (Contributed by Jim Kingdon, 12-Jan-2020.)
+       (New usage is discouraged.) $)
+    axpre-ltirr $p |- ( A e. RR -> -. A <RR A ) $=
+      ( vx cv c0r cop cltrr wbr wn cnr wcel cr wceq wrex wa elreal df-rex bitri
+      wex id cltr breq12d notbid ltsosr ltrelsr soirri ltresr mtbir a1i gencl )
+      BCZDEZUKFGZHZAAFGZHUJIJZAKJZBUKAUPUKALZBIMUOUQNBRBAOUQBIPQUQULUNUQUKAUKAF
+      UQSZURUAUBUMUOULUJUJTGUJTIUCUDUEUJUJUFUGUHUI $.
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
           Real and complex number postulates restated as axioms
@@ -64982,6 +64996,12 @@ $)
                       E. x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $.
     $( $j restatement 'ax-cnre' of 'axcnre'; $)
   $}
+
+  $( Real number less-than is irreflexive.  Axiom for real and complex numbers,
+     justified by theorem ~ ax-pre-ltirr .  (Contributed by Jim Kingdon,
+     12-Jan-2020.) $)
+  ax-pre-ltirr $a |- ( A e. RR -> -. A <RR A ) $.
+  $( $j restatement 'ax-pre-ltirr' of 'axpre-ltirr'; $)
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
