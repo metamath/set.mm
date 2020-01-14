@@ -65435,6 +65435,220 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Infinity and the extended real number system
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c <_ $. $( 'Less than or equal to' relation. $)
+  $c +oo $. $( Plus infinity $)
+  $c -oo $. $( Minus infinity $)
+  $c RR* $. $( The set of extended reals $)
+  $c < $. $( 'Less than' relation (over extended reals) $)
+
+  $( Plus infinity. $)
+  cpnf $a class +oo $.
+  $( Minus infinity. $)
+  cmnf $a class -oo $.
+  $( The set of extended reals (includes plus and minus infinity). $)
+  cxr $a class RR* $.
+  $( 'Less than' predicate (extended to include the extended reals). $)
+  clt $a class < $.
+  $( Extend wff notation to include the 'less than or equal to' relation. $)
+  cle $a class <_ $.
+
+  $( Define plus infinity.  Note that the definition is arbitrary, requiring
+     only that ` +oo ` be a set not in ` RR ` and different from ` -oo `
+     ( ~ df-mnf ).  We use ` ~P U. CC ` to make it independent of the
+     construction of ` CC ` , and Cantor's Theorem will show that it is
+     different from any member of ` CC ` and therefore ` RR ` .  See ~ pnfnre ,
+     ~ mnfnre , and ~ pnfnemnf .
+
+     A simpler possibility is to define ` +oo ` as ` CC ` and ` -oo ` as
+     ` { CC } ` , but that approach requires the Axiom of Regularity to show
+     that ` +oo ` and ` -oo ` are different from each other and from all
+     members of ` RR ` .  (Contributed by NM, 13-Oct-2005.)
+     (New usage is discouraged.) $)
+  df-pnf $a |- +oo = ~P U. CC $.
+
+  $( Define minus infinity as the power set of plus infinity.  Note that the
+     definition is arbitrary, requiring only that ` -oo ` be a set not in
+     ` RR ` and different from ` +oo ` (see ~ mnfnre and ~ pnfnemnf ).
+     (Contributed by NM, 13-Oct-2005.)  (New usage is discouraged.) $)
+  df-mnf $a |- -oo = ~P +oo $.
+
+  $( Define the set of extended reals that includes plus and minus infinity.
+     Definition 12-3.1 of [Gleason] p. 173.  (Contributed by NM,
+     13-Oct-2005.) $)
+  df-xr $a |- RR* = ( RR u. { +oo , -oo } ) $.
+
+  ${
+    $d x y $.
+    $( Define 'less than' on the set of extended reals.  Definition 12-3.1 of
+       [Gleason] p. 173.  Note that in our postulates for complex numbers,
+       ` <RR ` is primitive and not necessarily a relation on ` RR ` .
+       (Contributed by NM, 13-Oct-2005.) $)
+    df-ltxr $a |- < = ( { <. x , y >. | ( x e. RR /\ y e. RR /\ x <RR y ) }
+      u. ( ( ( RR u. { -oo } ) X. { +oo } ) u. ( { -oo } X. RR ) ) ) $.
+  $}
+
+  $( Define 'less than or equal to' on the extended real subset of complex
+     numbers.  Theorem ~ leloe relates it to 'less than' for reals.
+     (Contributed by NM, 13-Oct-2005.) $)
+  df-le $a |- <_ = ( ( RR* X. RR* ) \ `' < ) $.
+
+  $( Plus infinity is not a real number.  (Contributed by NM, 13-Oct-2005.) $)
+  pnfnre $p |- +oo e/ RR $=
+    ( cpnf cr wcel cc cuni cpw pwuninel df-pnf eleq1i mtbir recn mto nelir ) AB
+    ABCADCZNDEFZDCDGAODHIJAKLM $.
+
+  $( Minus infinity is not a real number.  (Contributed by NM, 13-Oct-2005.) $)
+  mnfnre $p |- -oo e/ RR $=
+    ( cmnf cr wcel cc cuni cpw 2pwuninel df-mnf df-pnf pweqi eqtri eleq1i mtbir
+    cpnf recn mto nelir ) ABABCADCZRDEFZFZDCDGATDANFTHNSIJKLMAOPQ $.
+
+  $( The standard reals are a subset of the extended reals.  (Contributed by
+     NM, 14-Oct-2005.) $)
+  ressxr $p |- RR C_ RR* $=
+    ( cr cpnf cmnf cpr cun cxr ssun1 df-xr sseqtr4i ) AABCDZEFAJGHI $.
+
+  $( The Cartesian product of standard reals are a subset of the Cartesian
+     product of extended reals (common case).  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  rexpssxrxp $p |- ( RR X. RR ) C_ ( RR* X. RR* ) $=
+    ( cr cxr wss cxp ressxr xpss12 mp2an ) ABCZHAADBBDCEEABABFG $.
+
+  $( A standard real is an extended real.  (Contributed by NM, 14-Oct-2005.) $)
+  rexr $p |- ( A e. RR -> A e. RR* ) $=
+    ( cr cxr ressxr sseli ) BCADE $.
+
+  $( Zero is an extended real.  (Contributed by Mario Carneiro,
+     15-Jun-2014.) $)
+  0xr $p |- 0 e. RR* $=
+    ( cr cxr cc0 ressxr 0re sselii ) ABCDEF $.
+
+  $( No (finite) real equals plus infinity.  (Contributed by NM, 14-Oct-2005.)
+     (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  renepnf $p |- ( A e. RR -> A =/= +oo ) $=
+    ( cr wcel cpnf wceq pnfnre neli eleq1 mtbiri necon2ai ) ABCZADADEKDBCDBFGAD
+    BHIJ $.
+
+  $( No real equals minus infinity.  (Contributed by NM, 14-Oct-2005.)  (Proof
+     shortened by Andrew Salmon, 19-Nov-2011.) $)
+  renemnf $p |- ( A e. RR -> A =/= -oo ) $=
+    ( cr wcel cmnf wceq mnfnre neli eleq1 mtbiri necon2ai ) ABCZADADEKDBCDBFGAD
+    BHIJ $.
+
+  ${
+    rexrd.1 $e |- ( ph -> A e. RR ) $.
+    $( A standard real is an extended real.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    rexrd $p |- ( ph -> A e. RR* ) $=
+      ( cr cxr ressxr sseldi ) ADEBFCG $.
+
+    $( No (finite) real equals plus infinity.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    renepnfd $p |- ( ph -> A =/= +oo ) $=
+      ( cr wcel cpnf wne renepnf syl ) ABDEBFGCBHI $.
+
+    $( No real equals minus infinity.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    renemnfd $p |- ( ph -> A =/= -oo ) $=
+      ( cr wcel cmnf wne renemnf syl ) ABDEBFGCBHI $.
+  $}
+
+  ${
+    rexri.1 $e |- A e. RR $.
+    $( A standard real is an extended real (inference form.)  (Contributed by
+       David Moews, 28-Feb-2017.) $)
+    rexri $p |- A e. RR* $=
+      ( cr wcel cxr rexr ax-mp ) ACDAEDBAFG $.
+  $}
+
+  $( The reals and the infinities are disjoint.  (Contributed by NM,
+     25-Oct-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  renfdisj $p |- ( RR i^i { +oo , -oo } ) = (/) $=
+    ( vx cr cpnf cmnf cpr cin c0 wceq cv wcel wn disj vex elpr renepnf necon2bi
+    wo renemnf jaoi sylbi con2i mprgbir ) BCDEZFGHAIZUCJZKABABUCLUEUDBJZUEUDCHZ
+    UDDHZQUFKZUDCDAMNUGUIUHUFUDCUDOPUFUDDUDRPSTUAUB $.
+
+  ${
+    $d x y $.
+    $( 'Less than' is a relation on extended reals.  (Contributed by Mario
+       Carneiro, 28-Apr-2015.) $)
+    ltrelxr $p |- < C_ ( RR* X. RR* ) $=
+      ( vx vy cv cr wcel copab cmnf csn cun cxp cxr wa eqsstri sstri wss ressxr
+      cpnf unssi xpss12 mp2an clt cltrr wbr w3a df-ltxr df-3an opabbii opabssxp
+      rexpssxrxp cpr snsspr2 ssun2 df-xr sseqtr4i snsspr1 ) UAACZDEZBCZDEZUPURU
+      BUCZUDZABFZDGHZIZQHZJZVCDJZIZIKKJZABUEVBVHVIVBDDJZVIVBUQUSLUTLZABFVJVAVKA
+      BUQUSUTUFUGUTABDDUHMUINVFVGVIVDKOVEKOVFVIODVCKPVCQGUJZKQGUKVLDVLIKVLDULUM
+      UNZNZRVEVLKQGUOVMNVDKVEKSTVCKODKOVGVIOVNPVCKDKSTRRM $.
+  $}
+
+  $( 'Less than' is a relation.  (Contributed by NM, 14-Oct-2005.) $)
+  ltrel $p |- Rel < $=
+    ( clt cxr cxp wss wrel ltrelxr relxp relss mp2 ) ABBCZDJEAEFBBGAJHI $.
+
+  $( 'Less than or equal' is a relation on extended reals.  (Contributed by
+     Mario Carneiro, 28-Apr-2015.) $)
+  lerelxr $p |- <_ C_ ( RR* X. RR* ) $=
+    ( cle cxr cxp clt ccnv cdif df-le difss eqsstri ) ABBCZDEZFJGJKHI $.
+
+  $( 'Less or equal to' is a relation.  (Contributed by FL, 2-Aug-2009.)
+     (Revised by Mario Carneiro, 28-Apr-2015.) $)
+  lerel $p |- Rel <_ $=
+    ( cle cxr cxp wss wrel lerelxr relxp relss mp2 ) ABBCZDJEAEFBBGAJHI $.
+
+  $( 'Less than or equal to' expressed in terms of 'less than', for extended
+     reals.  (Contributed by NM, 14-Oct-2005.) $)
+  xrlenlt $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A <_ B <-> -. B < A ) ) $=
+    ( cxr wcel wa cle wbr cop clt ccnv wn df-br cxp wb opelxpi cdif df-le eldif
+    eleq2i bitri baib syl syl5bb opelcnvg syl6rbbr notbid bitr4d ) ACDBCDEZABFG
+    ZABHZIJZDZKZBAIGZKUIUJFDZUHUMABFLUHUJCCMZDZUOUMNABCCOUOUQUMUOUJUPUKPZDUQUME
+    FURUJQSUJUPUKRTUAUBUCUHUNULUHULBAHIDUNABCCIUDBAILUEUFUG $.
+
+  $( 'Less than' expressed in terms of 'less than or equal to', for extended
+     reals.  (Contributed by NM, 6-Feb-2007.) $)
+  xrltnle $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A < B <-> -. B <_ A ) ) $=
+    ( cxr wcel clt wbr cle wn wb wa xrlenlt con2bid ancoms ) BCDZACDZABEFZBAGFZ
+    HINOJQPBAKLM $.
+
+  ${
+    $d x A $.
+    $( The three (non-exclusive) possibilities implied by a subset of extended
+       reals.  (Contributed by NM, 25-Oct-2005.)  (Proof shortened by Andrew
+       Salmon, 19-Nov-2011.) $)
+    ssxr $p |- ( A C_ RR* -> ( A C_ RR \/ +oo e. A \/ -oo e. A ) ) $=
+      ( cr cpnf cmnf cpr cun wss wcel wo cxr w3o wn cin c0 wceq csn disjsn cdif
+      wa sseq2i df-pr ineq2i indi anbi12i biimpri pm4.56 3imtr3i syl5eq reldisj
+      eqtri un00 renfdisj disj3 mpbi difun2 eqtr4i syl6bbr syl5ib 3orrot df-3or
+      orrd df-xr bitri 3imtr4i ) ABCDEZFZGZCAHZDAHZIZABGZIZAJGVKVHVIKZVGVJVKVJL
+      ZAVEMZNOZVGVKVNVOACPZMZADPZMZFZNVOAVQVSFZMWAVEWBACDUAUBAVQVSUCUJVHLZVILZS
+      ZVRNOZVTNOZSZVNWANOWHWEWFWCWGWDACQADQUDUEVHVIUFVRVTUKUGUHVGVPAVFVERZGVKAV
+      EVFUIBWIABBVERZWIBVEMNOBWJOULBVEUMUNBVEUOUPTUQURVAJVFAVBTVMVHVIVKKVLVKVHV
+      IUSVHVIVKUTVCVD $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The standard less-than ` <RR ` and the extended real less-than ` < ` are
+       identical when restricted to the non-extended reals ` RR ` .
+       (Contributed by NM, 13-Oct-2005.)  (Revised by Mario Carneiro,
+       28-Apr-2015.) $)
+    ltxrlt $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B <-> A <RR B ) ) $=
+      ( vx vy cr wcel wa clt wbr cv cltrr cmnf csn cun cpnf cxp wn wo syl sylbi
+      w3a copab brun brxp wceq elsni pnfnre neli simpr eleq1 syl5ib mtoi adantl
+      wb mnfnre simpl adantr con2i wi biimt df-ltxr equncomi breqi df-or 3bitri
+      jaoi syl6rbbr breq12 df-3an opabbii brab2ga baibr bitr4d ) AEFZBEFZGZABHI
+      ZABCJZEFZDJZEFZVRVTKIZUAZCDUBZIZABKIZVPABELMZNZOMZPZWGEPZNZIZQZVQWEUNWMVP
+      WMABWJIZABWKIZRVPQZABWJWKUCWOWQWPWOAWHFZBWIFZGWQABWHWIUDWSWQWRWSBOUEZWQBO
+      UFWTVPOEFZOEUGUHVPVOWTXAVNVOUIBOEUJUKULSUMTWPAWGFZVOGWQABWGEUDXBWQVOXBALU
+      EZWQALUFXCVPLEFZLEUOUHVPVNXCXDVNVOUPALEUJUKULSUQTVFTURWNWEWNWEUSZVQWNWEUT
+      VQABWLWDNZIWMWERXEABHXFHWDWLCDVAVBVCABWLWDUCWMWEVDVEVGSWEVPWFWBWFCDABEEWD
+      VRAVTBKVHWCVSWAGWBGCDVSWAWBVIVJVKVLVM $.
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -66456,6 +66670,27 @@ htmldef "x." as
     " <IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT=' x.' TITLE='x.'> ";
   althtmldef "x." as ' &middot; '; /* unicode: &#xb7; */
   latexdef "x." as "\cdot";
+htmldef "<_" as
+    " <IMG SRC='le.gif' WIDTH=11 HEIGHT=19 ALT=' &lt;_' TITLE='&lt;_'> ";
+  althtmldef "<_" as ' &le; ';
+  latexdef "<_" as "\le";
+htmldef "+oo" as " <IMG SRC='_pinf.gif' WIDTH=29 HEIGHT=19 ALT='+oo' " +
+    "TITLE='+oo'>";
+  althtmldef "+oo" as '+&infin;';
+  latexdef "+oo" as "+\infty";
+htmldef "-oo" as " <IMG SRC='_minf.gif' WIDTH=24 HEIGHT=19 ALT='-oo' " +
+    "TITLE='-oo'>";
+  althtmldef "-oo" as '-&infin;';
+  latexdef "-oo" as "-\infty";
+htmldef "RR*" as "<IMG SRC='_bbrast.gif' WIDTH=18 HEIGHT=19 ALT=' RR*' " +
+    "TITLE='RR*'>";
+  althtmldef "RR*" as '&#8477;<SUP>*</SUP>';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "RR*" as "\mathbb{R}^*";
+htmldef "<" as
+    " <IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT=' &lt;' TITLE='&lt;'> ";
+  althtmldef "<" as ' &lt; ';
+  latexdef "<" as "<";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
