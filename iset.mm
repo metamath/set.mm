@@ -65339,6 +65339,89 @@ $)
       ( cr wcel cmul co remulcl mp2an ) AEFBEFABGHEFCDABIJ $.
   $}
 
+  $( 1 is an real number, deductive form (common case).  (Contributed by David
+     A. Wheeler, 6-Dec-2018.) $)
+  1red $p |- ( ph -> 1 e. RR ) $=
+    ( c1 cr wcel 1re a1i ) BCDAEF $.
+
+  $( 1 is a complex number, deductive form (common case).  (Contributed by
+     David A. Wheeler, 6-Dec-2018.) $)
+  1cnd $p |- ( ph -> 1 e. CC ) $=
+    ( c1 cc wcel ax-1cn a1i ) BCDAEF $.
+
+  ${
+    addcld.1 $e |- ( ph -> A e. CC ) $.
+    $( Identity law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulid1d $p |- ( ph -> ( A x. 1 ) = A ) $=
+      ( cc wcel c1 cmul co wceq mulid1 syl ) ABDEBFGHBICBJK $.
+
+    $( Identity law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulid2d $p |- ( ph -> ( 1 x. A ) = A ) $=
+      ( cc wcel c1 cmul co wceq mulid2 syl ) ABDEFBGHBICBJK $.
+
+    addcld.2 $e |- ( ph -> B e. CC ) $.
+    $( Closure law for addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addcld $p |- ( ph -> ( A + B ) e. CC ) $=
+      ( cc wcel caddc co addcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulcld $p |- ( ph -> ( A x. B ) e. CC ) $=
+      ( cc wcel cmul co mulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Commutative law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulcomd $p |- ( ph -> ( A x. B ) = ( B x. A ) ) $=
+      ( cc wcel cmul co wceq mulcom syl2anc ) ABFGCFGBCHICBHIJDEBCKL $.
+
+    addassd.3 $e |- ( ph -> C e. CC ) $.
+    $( Associative law for addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addassd $p |- ( ph -> ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $=
+      ( cc wcel caddc co wceq addass syl3anc ) ABHICHIDHIBCJKDJKBCDJKJKLEFGBCDM
+      N $.
+
+    $( Associative law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulassd $p |- ( ph -> ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $=
+      ( cc wcel cmul co wceq mulass syl3anc ) ABHICHIDHIBCJKDJKBCDJKJKLEFGBCDMN
+      $.
+
+    $( Distributive law (left-distributivity).  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    adddid $p |- ( ph -> ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $=
+      ( cc wcel caddc co cmul wceq adddi syl3anc ) ABHICHIDHIBCDJKLKBCLKBDLKJKM
+      EFGBCDNO $.
+
+    $( Distributive law (right-distributivity).  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    adddird $p |- ( ph -> ( ( A + B ) x. C ) = ( ( A x. C ) + ( B x. C ) ) ) $=
+      ( cc wcel caddc co cmul wceq adddir syl3anc ) ABHICHIDHIBCJKDLKBDLKCDLKJK
+      MEFGBCDNO $.
+  $}
+
+  ${
+    recnd.1 $e |- ( ph -> A e. RR ) $.
+    $( Deduction from real number to complex number.  (Contributed by NM,
+       26-Oct-1999.) $)
+    recnd $p |- ( ph -> A e. CC ) $=
+      ( cr wcel cc recn syl ) ABDEBFECBGH $.
+
+    readdcld.2 $e |- ( ph -> B e. RR ) $.
+    $( Closure law for addition of reals.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    readdcld $p |- ( ph -> ( A + B ) e. RR ) $=
+      ( cr wcel caddc co readdcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure law for multiplication of reals.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    remulcld $p |- ( ph -> ( A x. B ) e. RR ) $=
+      ( cr wcel cmul co remulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
