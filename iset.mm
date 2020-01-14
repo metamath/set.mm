@@ -65512,8 +65512,9 @@ $)
 
   $( Minus infinity is not a real number.  (Contributed by NM, 13-Oct-2005.) $)
   mnfnre $p |- -oo e/ RR $=
-    ( cmnf cr wcel cc cuni cpw 2pwuninel df-mnf df-pnf pweqi eqtri eleq1i mtbir
-    cpnf recn mto nelir ) ABABCADCZRDEFZFZDCDGATDANFTHNSIJKLMAOPQ $.
+    ( cmnf cr wcel cc cuni cpw cvv wn cnex 2pwuninelg ax-mp df-mnf df-pnf pweqi
+    cpnf eqtri eleq1i mtbir recn mto nelir ) ABABCADCZUBDEFZFZDCZDGCUEHIDGJKAUD
+    DAOFUDLOUCMNPQRASTUA $.
 
   $( The standard reals are a subset of the extended reals.  (Contributed by
      NM, 14-Oct-2005.) $)
