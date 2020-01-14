@@ -65174,6 +65174,35 @@ $)
   cnelprrecn $p |- CC e. { RR , CC } $=
     ( cr cc cnex prid2 ) ABCD $.
 
+  $( Distributive law for complex numbers (right-distributivity).  (Contributed
+     by NM, 10-Oct-2004.) $)
+  adddir $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+              ( ( A + B ) x. C ) = ( ( A x. C ) + ( B x. C ) ) ) $=
+    ( cc wcel w3a caddc co cmul adddi 3coml wa addcl mulcom sylan 3impa 3adant2
+    wceq 3adant1 oveq12d 3eqtr4d ) ADEZBDEZCDEZFZCABGHZIHZCAIHZCBIHZGHZUFCIHZAC
+    IHZBCIHZGHUDUBUCUGUJRCABJKUBUCUDUKUGRZUBUCLUFDEUDUNABMUFCNOPUEULUHUMUIGUBUD
+    ULUHRUCACNQUCUDUMUIRUBBCNSTUA $.
+
+  $( 0 is a complex number.  (Contributed by NM, 19-Feb-2005.) $)
+  0cn $p |- 0 e. CC $=
+    ( ci cmul co c1 caddc cc0 cc ax-i2m1 wcel ax-icn mulcl mp2an addcl eqeltrri
+    ax-1cn ) AABCZDECZFGHPGIZDGIQGIAGIZSRJJAAKLOPDMLN $.
+
+  $( 0 is a complex number, deductive form.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  0cnd $p |- ( ph -> 0 e. CC ) $=
+    ( cc0 cc wcel 0cn a1i ) BCDAEF $.
+
+  $( 0 is a set (common case).  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  c0ex $p |- 0 e. _V $=
+    ( cc0 cc 0cn elexi ) ABCD $.
+
+  $( 1 is a set.  Common special case.  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  1ex $p |- 1 e. _V $=
+    ( c1 cc ax-1cn elexi ) ABCD $.
+
   ${
     $d A x y $.
     $( Alias for ~ ax-cnre , for naming consistency.  (Contributed by NM,
