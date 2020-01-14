@@ -17261,7 +17261,6 @@ New usage of "nqerid" is discouraged (8 uses).
 New usage of "nqerrel" is discouraged (4 uses).
 New usage of "nqex" is discouraged (4 uses).
 New usage of "nqpr" is discouraged (1 uses).
-New usage of "nrexOLD" is discouraged (0 uses).
 New usage of "nsmallnq" is discouraged (3 uses).
 New usage of "nv0" is discouraged (5 uses).
 New usage of "nv0lid" is discouraged (6 uses).
@@ -17809,6 +17808,9 @@ New usage of "rexanaliOLD" is discouraged (0 uses).
 New usage of "rexbidvaALT" is discouraged (0 uses).
 New usage of "rexbiiOLD" is discouraged (0 uses).
 New usage of "reximdvaiOLD" is discouraged (0 uses).
+New usage of "rexlimdOLD" is discouraged (0 uses).
+New usage of "rexlimdvOLD" is discouraged (0 uses).
+New usage of "rexlimivOLD" is discouraged (0 uses).
 New usage of "rexnalOLD" is discouraged (0 uses).
 New usage of "rexsnsOLD" is discouraged (1 uses).
 New usage of "rexsuppOLD" is discouraged (0 uses).
@@ -19483,7 +19485,6 @@ Proof modification of "nonconneOLD" is discouraged (21 steps).
 Proof modification of "notnot2ALT" is discouraged (12 steps).
 Proof modification of "notnot2ALT2" is discouraged (2 steps).
 Proof modification of "notnot2ALTVD" is discouraged (34 steps).
-Proof modification of "nrexOLD" is discouraged (20 steps).
 Proof modification of "omsucdomOLD" is discouraged (76 steps).
 Proof modification of "ondomon" is discouraged (287 steps).
 Proof modification of "onfrALT" is discouraged (88 steps).
@@ -19602,6 +19603,9 @@ Proof modification of "reusv7OLD" is discouraged (297 steps).
 Proof modification of "rexanaliOLD" is discouraged (32 steps).
 Proof modification of "rexbiiOLD" is discouraged (22 steps).
 Proof modification of "reximdvaiOLD" is discouraged (10 steps).
+Proof modification of "rexlimdOLD" is discouraged (27 steps).
+Proof modification of "rexlimdvOLD" is discouraged (13 steps).
+Proof modification of "rexlimivOLD" is discouraged (9 steps).
 Proof modification of "rexnalOLD" is discouraged (39 steps).
 Proof modification of "rexsnsOLD" is discouraged (55 steps).
 Proof modification of "rgen2a" is discouraged (81 steps).
