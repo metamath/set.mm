@@ -65254,6 +65254,18 @@ $)
   1re $p |- 1 e. RR $=
     ( ax-1re ) A $.
 
+  $( ` 0 ` is a real number.  (Contributed by Eric Schmidt, 21-May-2007.)
+     (Revised by Scott Fenton, 3-Jan-2013.) $)
+  0re $p |- 0 e. RR $=
+    ( vx c1 cr wcel cv caddc cc0 wceq wrex 1re ax-rnegex readdcl mpan syl5ibcom
+    co eleq1 rexlimiv mp2b ) BCDZBAEZFOZGHZACIGCDZJABKUBUCACTCDZUACDZUBUCSUDUEJ
+    BTLMUAGCPNQR $.
+
+  $( ` 0 ` is a real number, deductive form.  (Contributed by David A. Wheeler,
+     6-Dec-2018.) $)
+  0red $p |- ( ph -> 0 e. RR ) $=
+    ( cc0 cr wcel 0re a1i ) BCDAEF $.
+
   ${
     recni.1 $e |- A e. RR $.
     axri.2 $e |- B e. RR $.
