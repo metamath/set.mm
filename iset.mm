@@ -65499,8 +65499,8 @@ $)
 
   $( Plus infinity is not a real number.  (Contributed by NM, 13-Oct-2005.) $)
   pnfnre $p |- +oo e/ RR $=
-    ( cpnf cr wcel cc cuni cpw pwuninel df-pnf eleq1i mtbir recn mto nelir ) AB
-    ABCADCZNDEFZDCDGAODHIJAKLM $.
+    ( cpnf cr wcel cc cuni cpw cvv wn uniex pwuninel2 ax-mp df-pnf eleq1i mtbir
+    cnex recn mto nelir ) ABABCADCZSDEZFZDCZTGCUBHDOIDGJKAUADLMNAPQR $.
 
   $( Minus infinity is not a real number.  (Contributed by NM, 13-Oct-2005.) $)
   mnfnre $p |- -oo e/ RR $=
