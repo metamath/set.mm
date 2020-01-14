@@ -65616,12 +65616,6 @@ $)
     ZABHZIJZDZKZBAIGZKUIUJFDZUHUMABFLUHUJCCMZDZUOUMNABCCOUOUQUMUOUJUPUKPZDUQUME
     FURUJQSUJUPUKRTUAUBUCUHUNULUHULBAHIDUNABCCIUDBAILUEUFUG $.
 
-  $( 'Less than' expressed in terms of 'less than or equal to', for extended
-     reals.  (Contributed by NM, 6-Feb-2007.) $)
-  xrltnle $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A < B <-> -. B <_ A ) ) $=
-    ( cxr wcel clt wbr cle wn wb wa xrlenlt con2bid ancoms ) BCDZACDZABEFZBAGFZ
-    HINOJQPBAKLM $.
-
   ${
     $d x A $.
     $( The three (non-exclusive) possibilities implied by a subset of extended
