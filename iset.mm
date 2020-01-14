@@ -1,4 +1,4 @@
-$( iset.mm - Version of 8-Jan-2020
+$( iset.mm - Version of 12-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -64497,6 +64497,721 @@ $)
     SUNUOUSUEZUPUQURUFZACQRUTKEFVDEFZVTUGUTUOURWCUNUOUSUHZUPUQURUIZBDQRKVDQUJVC
     VEUKRUTVGEFZVHEFZVRUTUOUQWFWDWBBCQRUTUNURWGWAWEADQRVGVHUKRVFVIEEORVJVOPTUM
     $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+         Final derivation of real and complex number postulates
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The complex numbers form a set.  Use ~ cnex instead.  (Contributed by
+     Mario Carneiro, 17-Nov-2014.)  (New usage is discouraged.) $)
+  axcnex $p |- CC e. _V $=
+    ( cc cnr cxp cvv df-c cnp cer cqs df-nr cpw npex xpex pwex wss wtru wer a1i
+    enrer qsss eqeltri trud ssexi ) ABBCDEBBBFFCZGHZDIUDUCJZUCFFKKLMUDUENOUCGUC
+    GPORQSUAUBTZUFLT $.
+
+  $( The real numbers are a subset of the complex numbers.  Axiom for real and
+     complex numbers, derived from set theory.  This construction-dependent
+     theorem should not be referenced directly; instead, use ~ ax-resscn .
+     (Contributed by NM, 1-Mar-1995.)  (Proof shortened by Andrew Salmon,
+     12-Aug-2011.)  (New usage is discouraged.) $)
+  axresscn $p |- RR C_ CC $=
+    ( cnr c0r csn cxp cr cc wcel wss 0r snssi xpss2 mp2b df-r df-c 3sstr4i ) AB
+    CZDZAADZEFBAGPAHQRHIBAJPAAKLMNO $.
+
+  $( 1 is a complex number.  Axiom for real and complex numbers, derived from
+     set theory.  This construction-dependent theorem should not be referenced
+     directly; instead, use ~ ax-1cn .  (Contributed by NM, 12-Apr-2007.)
+     (New usage is discouraged.) $)
+  ax1cn $p |- 1 e. CC $=
+    ( cr cc c1 axresscn c1r c0r cop df-1 wcel cnr opelreal mpbir eqeltri sselii
+    1sr ) ABCDCEFGZAHPAIEJIOEKLMN $.
+
+  $( ` _i ` is a complex number.  Axiom for real and complex numbers, derived
+     from set theory.  This construction-dependent theorem should not be
+     referenced directly; instead, use ~ ax-icn .  (Contributed by NM,
+     23-Feb-1996.)  (New usage is discouraged.) $)
+  axicn $p |- _i e. CC $=
+    ( ci cc wcel c0r cnr c1r 0r 1sr cop wa df-i eleq1i opelcn bitri mpbir2an )
+    ABCZDECZFECZGHPDFIZBCQRJASBKLDFMNO $.
+
+  ${
+    $d A w x y z $.  $d B w x y z $.
+    $( Closure law for addition of complex numbers.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly, nor should the proven axiom
+       ~ ax-addcl be used later.  Instead, in most cases use ~ addcl .
+       (Contributed by NM, 14-Jun-1995.)  (New usage is discouraged.) $)
+    axaddcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) $=
+      ( vx vy vz vw cc wcel wa cv cop wceq cnr wex caddc co elxpi df-c ad2ant2l
+      eleq2s cxp anim12i ee4anv sylibr cplr simpll simprl oveq12d addcnsr eqtrd
+      addclsr ad2ant2r opelxpi syl2anc syl6eleqr eqeltrd exlimivv syl ) AGHZBGH
+      ZIZACJZDJZKZLZVBMHZVCMHZIZIZBEJZFJZKZLZVJMHZVKMHZIZIZIZFNENZDNCNZABOPZGHZ
+      VAVIDNCNZVQFNENZIVTUSWCUTWDWCAMMUAZGCDAMMQRTWDBWEGEFBMMQRTUBVIVQCDEFUCUDV
+      SWBCDVRWBEFVRWAVBVJUEPZVCVKUEPZKZGVRWAVDVLOPZWHVRAVDBVLOVEVHVQUFVIVMVPUGU
+      HVHVPWIWHLVEVMVBVCVJVKUISUJVHVPWHGHVEVMVHVPIZWHWEGWJWFMHZWGMHZWHWEHVFVNWK
+      VGVOVBVJUKULVGVOWLVFVNVCVKUKSWFWGMMUMUNRUOSUPUQUQUR $.
+
+    $( Closure law for addition in the real subfield of complex numbers.  Axiom
+       for real and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-addrcl be used later.  Instead, in most
+       cases use ~ readdcl .  (Contributed by NM, 31-Mar-1996.)
+       (New usage is discouraged.) $)
+    axaddrcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A + B ) e. RR ) $=
+      ( vx vy cv c0r cop caddc co cr wcel cnr elreal wceq oveq1 eleq1d oveq2 wa
+      cplr addresr addclsr opelreal sylibr eqeltrd 2gencl ) CEZFGZDEZFGZHIZJKAU
+      IHIZJKABHIZJKCDUGUIABLJCAMDBMUGANUJUKJUGAUIHOPUIBNUKULJUIBAHQPUFLKUHLKRZU
+      JUFUHSIZFGZJUFUHTUMUNLKUOJKUFUHUAUNUBUCUDUE $.
+
+    $( Closure law for multiplication of complex numbers.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly, nor should the proven axiom
+       ~ ax-mulcl be used later.  Instead, in most cases use ~ mulcl .
+       (Contributed by NM, 10-Aug-1995.)  (New usage is discouraged.) $)
+    axmulcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $=
+      ( vx vy vz vw cc wcel wa cop wceq cnr wex cmul df-c cmr mulclsr
+      cv co syl2anc cxp eleq2s anim12i ee4anv sylibr cm1r cplr simpll
+      elxpi simprl oveq12d mulcnsr ad2ant2l eqtrd simplrl simprrl m1r
+      a1i simplrr simprrr addclsr opelxpi syl6eleqr eqeltrd exlimivv
+      syl ) AGHZBGHZIZACRZDRZJZKZVJLHZVKLHZIZIZBERZFRZJZKZVRLHZVSLHZI
+      ZIZIZFMEMZDMCMZABNSZGHZVIVQDMCMZWEFMEMZIWHVGWKVHWLWKALLUAZGCDAL
+      LUIOUBWLBWMGEFBLLUIOUBUCVQWECDEFUDUEWGWJCDWFWJEFWFWIVJVRPSZUFVK
+      VSPSZPSZUGSZVKVRPSZVJVSPSZUGSZJZGWFWIVLVTNSZXAWFAVLBVTNVMVPWEUH
+      VQWAWDUJUKVPWDXBXAKVMWAVJVKVRVSULUMUNWFXAWMGWFWQLHZWTLHZXAWMHWF
+      WNLHZWPLHZXCWFVNWBXEVMVNVOWEUOZVQWAWBWCUPZVJVRQTWFUFLHZWOLHZXFX
+      IWFUQURWFVOWCXJVMVNVOWEUSZVQWAWBWCUTZVKVSQTUFWOQTWNWPVATWFWRLHZ
+      WSLHZXDWFVOWBXMXKXHVKVRQTWFVNWCXNXGXLVJVSQTWRWSVATWQWTLLVBTOVCV
+      DVEVEVF $.
+
+    $( Closure law for multiplication in the real subfield of complex numbers.
+       Axiom for real and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-mulrcl be used later.  Instead, in most
+       cases use ~ remulcl .  (New usage is discouraged.)  (Contributed by NM,
+       31-Mar-1996.) $)
+    axmulrcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $=
+      ( vx vy cv c0r cop cmul co cr wcel cnr elreal wceq oveq1 eleq1d oveq2 cmr
+      wa mulresr mulclsr opelreal sylibr eqeltrd 2gencl ) CEZFGZDEZFGZHIZJKAUIH
+      IZJKABHIZJKCDUGUIABLJCAMDBMUGANUJUKJUGAUIHOPUIBNUKULJUIBAHQPUFLKUHLKSZUJU
+      FUHRIZFGZJUFUHTUMUNLKUOJKUFUHUAUNUBUCUDUE $.
+  $}
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Multiplication of complex numbers is commutative.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly, nor should the proven axiom
+       ~ ax-mulcom be used later.  Instead, use ~ mulcom .  (Contributed by NM,
+       31-Aug-1995.)  (New usage is discouraged.) $)
+    axmulcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) $=
+      ( vx vy vz vw cv cmr co cm1r cplr cnr mulcnsrec wcel wa mulcomsrg syl2anc
+      wceq oveq12d mulclsr cc cmul dfcnqs simpll simprl simplr simprr addcomsrg
+      cep ccnv oveq2d eqtrd ecovicom ) CDEFABUACGZEGZHIZJDGZFGZHIZHIZKIUBUIUJLU
+      QUOHIZUNURHIZKIZUOUNHIZJURUQHIZHIZKIURUNHIZUOUQHIZKIZUCUNUQUOURMUOURUNUQM
+      UNLNZUQLNZOZUOLNZURLNZOZOZUPVDUTVFKVPVJVMUPVDRVJVKVOUDZVLVMVNUEZUNUOPQVPU
+      SVEJHVPVKVNUSVERVJVKVOUFZVLVMVNUGZUQURPQUKSVPVCVHVGKIZVIVPVAVHVBVGKVPVKVM
+      VAVHRVSVRUQUOPQVPVJVNVBVGRVQVTUNURPQSVPVHLNZVGLNZWAVIRVPVMVKWBVRVSUOUQTQV
+      PVNVJWCVTVQURUNTQVHVGUHQULUM $.
+  $}
+
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $( Addition of complex numbers is associative.  This theorem transfers the
+       associative laws for the real and imaginary signed real components of
+       complex number pairs, to complex number addition itself.  Axiom for real
+       and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-addass be used later.  Instead, use
+       ~ addass .  (Contributed by NM, 2-Sep-1995.)
+       (New usage is discouraged.) $)
+    axaddass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $=
+      ( vx vy vz vw vv vu cv cplr co cnr addcnsrec wa addclsr anim12i
+      wcel an4s wceq cc caddc ccnv dfcnqs addasssrg 3adant3r 3adant2r
+      cep 3adant1r 3adant3l 3adant2l 3adant1l ecoviass ) DEFGHIABCUAU
+      BGJZIJZKLZUHUCMDJZFJZKLZEJZUNKLZUSHJZKLZVAUOKLZUQURVBKLZKLZUTUP
+      KLZVEUDUQUTURUNNURUNVBUONUSVAVBUONUQUTVEUPNUQMRZURMRZUTMRZUNMRZ
+      USMRZVAMRZOVHVIOVLVJVKOVMUQURPUTUNPQSVIVBMRZVKUOMRZVEMRZUPMRZOV
+      IVNOVPVKVOOVQURVBPUNUOPQSVHVIVKOZVNVOOZVCVFTZVJVHVIVSVTVKVHVIVN
+      VTVOUQURVBUEUFUGUIVJVRVSVDVGTZVHVJVKVSWAVIVJVKVOWAVNUTUNUOUEUJU
+      KULUM $.
+  $}
+
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $d x y z w v u f g h $.
+    $( Multiplication of complex numbers is associative.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use ~ ax-mulass .
+       (Contributed by NM, 3-Sep-1995.)  (New usage is discouraged.) $)
+    axmulass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $=
+      ( vf vg vh cv cmr cplr cnr cm1r wcel mulclsr syl2anc wceq adantl distrsrg
+      co wa syl3anc vx vy vz vw vv vu cc cmul cep ccnv dfcnqs mulcnsrec sylancr
+      m1r addclsr syl2an an4s syl2anr an42s jca w3a simp1l simp2l simp3l simp2r
+      simp3r simp1r addcomsrg addasssrg caov42d a1i eqtrd mulcomsrg 3coml simp3
+      oveq2d oveq12d 3adant3 simp1 3eqtr3d mulasssrg caovdilemd caovcld caov12d
+      simp2 3eqtrd 3eqtr4rd ecoviass ) UAUBUCUDUEUFABCUGUHUDGZUEGZHRZUCGZUFGZHR
+      ZIRZUIUJJUAGZWLHRZKUBGZWIHRZHRZIRZWRWLHRZWPWIHRZIRZXAWJHRZKXDWMHRZHRZIRZX
+      DWJHRZXAWMHRZIRZWPWLWJHRZKWIWMHRZHRZIRZHRZKWRWOHRZHRZIRZWRXOHRZWPWOHRZIRZ
+      XOUKWPWRWLWIULWLWIWJWMULXAXDWJWMULWPWRXOWOULWPJLZWRJLZSZWLJLZWIJLZSZSXAJL
+      ZXDJLZYCYFYDYGYIYCYFSWQJLWTJLZYIYDYGSZWPWLMYLKJLZWSJLZYKUNWRWIMZKWSMUMWQW
+      TUOUPUQYCYGYDYFYJYDYFSXBJLXCJLYJYCYGSWRWLMWPWIMXBXCUOURUSUTYHWJJLZWMJLZSZ
+      SXOJLZWOJLZYFYPYGYQYSYFYPSXLJLZXNJLZYSYGYQSZWLWJMZUUCYMXMJLZUUBUNWIWMMZKX
+      MMZUMXLXNUOUPUQYFYQYGYPYTYGYPSWKJLZWNJLZYTYFYQSWIWJMZWLWMMZWKWNUOURUSUTYE
+      YHYRVAZWPXLHRZWPXNHRZIRZKWRWKHRZHRZKWRWNHRZHRZIRZIRUUMUUQIRZUUSUUNIRZIRXS
+      XHUULDEFUUMUUNUUQUUSJIUULYCUUAUUMJLYCYDYHYRVBZUULYFYPUUAYEYFYGYRVCZYEYHYP
+      YQVDZUUDNZWPXLMNUULYCUUBUUNJLUVCUULYMUUEUUBUNUULYGYQUUEYEYFYGYRVEZYEYHYPY
+      QVFZUUFNZUUGUMZWPXNMNUULYMUUPJLZUUQJLUNUULYDUUHUVKYCYDYHYRVGZUULYGYPUUHUV
+      GUVEUUJNZWRWKMNZKUUPMUMDGZJLZEGZJLZSZUVOUVQIRZUVQUVOIROUULUVOUVQVHPZUVPUV
+      RFGZJLZVAZUVTUWBIRUVOUVQUWBIRIROUULUVOUVQUWBVIPZUULYMUURJLZUUSJLUNUULYDUU
+      IUWFUVLUULYFYQUUIUVDUVHUUKNZWRWNMNZKUURMUMUVSUVTJLZUULUVOUVQUOZPZVJUULXPU
+      UOXRUUTIUULYCUUAUUBXPUUOOUVCUVFUVJWPXLXNQTUULXRKUUPUURIRZHRZUUTUULXQUWLKH
+      UULYDUUHUUIXQUWLOUVLUVMUWGWRWKWNQTVPUULYMUVKUWFUWMUUTOYMUULUNVKZUVNUWHKUU
+      PUURQTVLVQUULXEUVAXGUVBIUULXEUUMKWSWJHRZHRZIRUVAUULDEFWPKWLWSJIHWJUVSUVOU
+      VQHRZUVQUVOHROUULUVOUVQVMPZUWDUVTUWBHRZUVOUWBHRZUVQUWBHRZIRZOUULUWDUWBUVT
+      HRZUWBUVOHRZUWBUVQHRZIRZUWSUXBUWCUVPUVRUXCUXFOUWBUVOUVQQVNUWDUWCUWIUXCUWS
+      OUVPUVRUWCVOZUVPUVRUWIUWCUWJVRUWBUVTVMNUWDUXDUWTUXEUXAIUWDUWCUVPUXDUWTOUX
+      GUVPUVRUWCVSUWBUVOVMNUWDUWCUVRUXEUXAOUXGUVPUVRUWCWEUWBUVQVMNVQVTPZUWDUWQU
+      WBHRUVOUXAHROUULUVOUVQUWBWAPZUVSUWQJLUULUVOUVQMPZUVCUWNUVDUULYDYGYNUVLUVG
+      YONZUVEWBUULUWPUUQUUMIUULUWOUUPKHUULYDYGYPUWOUUPOUVLUVGUVEWRWIWJWATVPVPVL
+      UULXGKUURWPXMHRZIRZHRZUUSKUXLHRZIRZUVBUULXFUXMKHUULDEFWRWPWLWIJIHWMUWRUXH
+      UXIUXJUVLUVCUVDUVGUVHWBVPUULYMUWFUXLJLUXNUXPOUWNUWHUULDEWPXMJJJHUXJUVCUVI
+      WCKUURUXLQTUULUXOUUNUUSIUULDEFKWPXMJHUWNUVCUVIUWRUXIWDVPWFVQWGUULWRXLHRZW
+      RXNHRZIRZWPWKHRZWPWNHRZIRZIRUXQUXTIRZUYAUXRIRZIRYBXKUULDEFUXQUXRUXTUYAJIU
+      ULDEWRXLJJJHUXJUVLUVFWCUULDEWRXNJJJHUXJUVLUVJWCUULDEWPWKJJJHUXJUVCUVMWCUW
+      AUWEUULDEWPWNJJJHUXJUVCUWGWCUWKVJUULXTUXSYAUYBIUULYDUUAUUBXTUXSOUVLUVFUVJ
+      WRXLXNQTUULYCUUHUUIYAUYBOUVCUVMUWGWPWKWNQTVQUULXIUYCXJUYDIUULDEFWRWPWLWIJ
+      IHWJUWRUXHUXIUXJUVLUVCUVDUVGUVEWBUULXJUYAKWSWMHRZHRZIRUYDUULDEFWPKWLWSJIH
+      WMUWRUXHUXIUXJUVCUWNUVDUXKUVHWBUULUYFUXRUYAIUULUYFKWRXMHRZHRUXRUULUYEUYGK
+      HUULYDYGYQUYEUYGOUVLUVGUVHWRWIWMWATVPUULDEFKWRXMJHUWNUVLUVIUWRUXIWDVLVPVL
+      VQWGWH $.
+  $}
+
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $d x y z w v u f g h $.
+    $( Distributive law for complex numbers (left-distributivity).  Axiom for
+       real and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-distr be used later.  Instead, use
+       ~ adddi .  (Contributed by NM, 2-Sep-1995.)
+       (New usage is discouraged.) $)
+    axdistr $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $=
+      ( vf cnr cv cplr co cmr cm1r wcel wa addclsr mulclsr m1r sylancr distrsrg
+      wceq syl3anc syl2anc vx vy vz vw vv vu vg vh cc caddc ccnv cmul addcnsrec
+      cep dfcnqs mulcnsrec anim12i an4s syl2an syl2anr jca simp1l simp2l simp3l
+      an42s w3a simp1r simp2r simp3r oveq2d a1i oveq12d addcomsrg adantl caov4d
+      eqtrd addasssrg ecovidi ) UAUBUCUDUEUFABCUIUJUNUKEULUAFZUCFZUEFZGHZIHZJUB
+      FZUDFZUFFZGHZIHZIHZGHZWDWBIHZVSWGIHZGHZVSVTIHZJWDWEIHZIHZGHZVSWAIHZJWDWFI
+      HZIHZGHZGHZWDVTIHZVSWEIHZGHZWDWAIHZVSWFIHZGHZGHZWBWGWQXEXAXHUOVTWEWAWFUMV
+      SWDWBWGUPVSWDVTWEUPVSWDWAWFUPWQXEXAXHUMVTEKZWAEKZWEEKZWFEKZWBEKZWGEKZLXJX
+      KLXNXLXMLXOVTWAMWEWFMUQURVSEKZWDEKZLZXJXLLZLWQEKZXEEKZXPXJXQXLXTXPXJLWNEK
+      ZWPEKZXTXQXLLZVSVTNZYDJEKZWOEKZYCOWDWENZJWONZPWNWPMUSURXPXLXQXJYAXQXJLXCE
+      KZXDEKZYAXPXLLWDVTNZVSWENZXCXDMUTVEVAXRXKXMLZLXAEKZXHEKZXPXKXQXMYOXPXKLWR
+      EKZWTEKZYOXQXMLZVSWANZYSYFWSEKZYROWDWFNZJWSNZPWRWTMUSURXPXMXQXKYPXQXKLXFE
+      KZXGEKZYPXPXMLWDWANZVSWFNZXFXGMUTVEVAXRXSYNVFZWJWNWRGHZWPWTGHZGHXBUUHWCUU
+      IWIUUJGUUHXPXJXKWCUUIRXPXQXSYNVBZXRXJXLYNVCZXRXSXKXMVDZVSVTWAQSUUHWIJWOWS
+      GHZIHZUUJUUHWHUUNJIUUHXQXLXMWHUUNRXPXQXSYNVGZXRXJXLYNVHZXRXSXKXMVIZWDWEWF
+      QSVJUUHYFYGUUAUUOUUJRYFUUHOVKUUHXQXLYGUUPUUQYHTZUUHXQXMUUAUUPUURUUBTZJWOW
+      SQSVPVLUUHDUGUHWNWRWPWTEGUUHXPXJYBUUKUULYETUUHXPXKYQUUKUUMYTTUUHYFYGYCOUU
+      SYIPDFZEKZUGFZEKZLZUVAUVCGHZUVCUVAGHRUUHUVAUVCVMVNZUVBUVDUHFZEKVFUVFUVHGH
+      UVAUVCUVHGHGHRUUHUVAUVCUVHVQVNZUUHYFUUAYROUUTUUCPUVEUVFEKUUHUVAUVCMVNZVOV
+      PUUHWMXCXFGHZXDXGGHZGHXIUUHWKUVKWLUVLGUUHXQXJXKWKUVKRUUPUULUUMWDVTWAQSUUH
+      XPXLXMWLUVLRUUKUUQUURVSWEWFQSVLUUHDUGUHXCXFXDXGEGUUHXQXJYJUUPUULYLTUUHXQX
+      KUUDUUPUUMUUFTUUHXPXLYKUUKUUQYMTUVGUVIUUHXPXMUUEUUKUURUUGTUVJVOVPVR $.
+  $}
+
+  $( i-squared equals -1 (expressed as i-squared plus 1 is 0).  Axiom for real
+     and complex numbers, derived from set theory.  This construction-dependent
+     theorem should not be referenced directly; instead, use ~ ax-i2m1 .
+     (Contributed by NM, 5-May-1996.)  (New usage is discouraged.) $)
+  axi2m1 $p |- ( ( _i x. _i ) + 1 ) = 0 $=
+    ( c0r c1r cop cmul co caddc ci cm1r cplr cmr cnr wcel wceq 0r 1sr ax-mp m1r
+    1idsr eqtri oveq12i c1 cc0 mulcnsr mp4an 00sr oveq2i addcomsrg mp2an 3eqtri
+    0idsr opeq12i oveq1i addresr m1p1sr opeq1i df-i df-1 df-0 3eqtr4i ) ABCZUTD
+    EZBACZFEZAACZGGDEZUAFEUBVCHACZVBFEZHBIEZACZVDVAVFVBFVAAAJEZHBBJEZJEZIEZBAJE
+    ZABJEZIEZCZVFAKLZBKLZVRVSVAVQMNONOABABUCUDVMHVPAVMAHIEZHAIEZHVJAVLHIVRVJAMN
+    AUEPVLHBJEZHVKBHJVSVKBMOBRPUFHKLZWBHMQHRPSTVRWCVTWAMNQAHUGUHWCWAHMQHUJPUIVP
+    AAIEZAVNAVOAIVSVNAMOBUEPVRVOAMNARPTVRWDAMNAUJPSUKSULWCVSVGVIMQOHBUMUHVHAAUN
+    UOUIVEVAUAVBFGUTGUTDUPUPTUQTURUS $.
+
+  $( 0 is less than 1.  Axiom for real and complex numbers, derived from set
+     theory.  This construction-dependent theorem should not be referenced
+     directly; instead, use ~ ax-0lt1 .
+
+     The version of this axiom in the Metamath Proof Explorer reads
+     ` 1 =/= 0 ` ; here we change it to ` 0 <RR 1 ` .  The proof of ` 0 <RR 1 `
+     from ` 1 =/= 0 ` in the Metamath Proof Explorer (accessed 12-Jan-2020)
+     relies on real number trichotomy.  (Contributed by Jim Kingdon,
+     12-Jan-2020.)  (New usage is discouraged.) $)
+  ax0lt1 $p |- 0 <RR 1 $=
+    ( c0r cop c1r cc0 c1 cltrr wbr cltr 0lt1sr ltresr mpbir df-0 df-1 3brtr4i )
+    AABZCABZDEFOPFGACHGIACJKLMN $.
+
+  ${
+    $d A x y $.
+    $( ` 1 ` is an identity element for real multiplication.  Axiom for real
+       and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly;
+       instead, use ~ ax-1rid .  (Contributed by Scott Fenton, 3-Jan-2013.)
+       (New usage is discouraged.) $)
+    ax1rid $p |- ( A e. RR -> ( A x. 1 ) = A ) $=
+      ( vx vy cv cop c1 cmul co wceq cnr c0r csn cr df-r oveq1 id eqeq12d elsni
+      wcel c1r df-1 oveq2i cmr 1sr mpan2 1idsr opeq1d eqtrd syl5eq opeq2 oveq1d
+      mulresr syl5ibr impcom sylan2 optocl ) BDZCDZEZFGHZUSIZAFGHZAIBCAJKLZMNUS
+      AIZUTVBUSAUSAFGOVDPQURVCSUQJSZURKIZVAURKRVFVEVAVEVAVFUQKEZFGHZVGIVEVHVGTK
+      EZGHZVGFVIVGGUAUBVEVJUQTUCHZKEZVGVETJSVJVLIUDUQTULUEVEVKUQKUQUFUGUHUIVFUT
+      VHUSVGVFUSVGFGURKUQUJZUKVMQUMUNUOUP $.
+  $}
+
+  ${
+    $d x y A $.  $d x y z $.
+    $( Existence of negative of real number.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly; instead, use ~ ax-rnegex .
+       (Contributed by NM, 15-May-1996.)  (New usage is discouraged.) $)
+    axrnegex $p |- ( A e. RR -> E. x e. RR ( A + x ) = 0 ) $=
+      ( cr wcel c1st cfv cm1r cmr co c0r cop caddc cc0 wceq cv wrex cnr elreal2
+      simplbi syl2anc mulclsr sylancl opelreal sylibr cplr simprbi oveq1d pn0sr
+      m1r addresr opeq1d df-0 syl6eqr syl 3eqtrd oveq2 eqeq1d rspcev ) BCDZBEFZ
+      GHIZJKZCDZBVBLIZMNZBAOZLIZMNZACPUSVAQDZVCUSUTQDZGQDVIUSVJBUTJKZNZBRZSZUIU
+      TGUAUBZVAUCUDUSVDVKVBLIZUTVAUEIZJKZMUSBVKVBLUSVJVLVMUFUGUSVJVIVPVRNVNVOUT
+      VAUJTUSVJVRMNVNVJVRJJKMVJVQJJUTUHUKULUMUNUOVHVEAVBCVFVBNVGVDMVFVBBLUPUQUR
+      T $.
+  $}
+
+  ${
+    $d x y A $.  $d x y z $.
+    $( Existence of reciprocal of positive real number.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use ~ ax-precex .
+
+       In treatments which assume excluded middle, the ` 0 <RR A ` condition is
+       generally replaced by ` A =/= 0 ` .  (Contributed by Jim Kingdon,
+       12-Jan-2020.)  (New usage is discouraged.) $)
+    axprecex $p |- ( ( A e. RR /\ 0 <RR A ) -> E. x e. RR ( A x. x ) = 1 ) $=
+      ( vy vz cr wcel cc0 cltrr wbr cv cmul co c1 wceq wrex c0r cop cnr wa c1r
+      wi wex elreal df-rex bitri breq2 oveq1 eqeq1d rexbidv imbi12d cltr breq1i
+      df-0 ltresr cmr recexsrlem opelreal anbi1i mulresr df-1 eqeq2i eqid wb 0r
+      opthg2 mp2an mpbiran2 syl6bb pm5.32da syl5bb rspcev syl6bir expd rexlimdv
+      1sr oveq2 syl5 syl5bi gencl imp ) BEFZGBHIZBAJZKLZMNZAEOZGCJZPQZHIZWHWCKL
+      ZMNZAEOZUAWBWFUAWGRFZWACWHBWAWHBNZCROWMWNSCUBCBUCWNCRUDUEWNWIWBWLWFWHBGHU
+      FWNWKWEAEWNWJWDMWHBWCKUGUHUIUJWIPWGUKIZWMWLWIPPQZWHHIWOGWPWHHUMULPWGUNUEW
+      OWGDJZUOLZTNZDROWMWLDWGUPWMWSWLDRWMWQRFZWSWLWMWTWSSZWQPQZEFZWHXBKLZMNZSZW
+      LXFWTXESWMXAXCWTXEWQUQURWMWTXEWSWMWTSZXEWRPQZMNZWSXGXDXHMWGWQUSUHXIXHTPQZ
+      NZWSMXJXHUTVAXKWSPPNZPVBTRFPRFXKWSXLSVCVOVDWRPTPRRVEVFVGUEVHVIVJWKXEAXBEW
+      CXBNWJXDMWCXBWHKVPUHVKVLVMVNVQVRVSVT $.
+  $}
+
+  ${
+    $d x y z w A $.
+    $( A complex number can be expressed in terms of two reals.  Definition
+       10-1.1(v) of [Gleason] p. 130.  Axiom for real and complex numbers,
+       derived from set theory.  This construction-dependent theorem should not
+       be referenced directly; instead, use ~ ax-cnre .  (Contributed by NM,
+       13-May-1996.)  (New usage is discouraged.) $)
+    axcnre $p |- ( A e. CC ->
+                      E. x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $=
+      ( cop cmul co caddc wceq cr cnr wcel wa c0r cplr c1r cmr cm1r eqtrd cvv
+      0r vz vw cv ci wrex df-c eqeq1 2rexbidv wex opelreal anbi12i biimpri df-i
+      cc oveq1i 1sr mulcnsr mpanl12 mpan2 mulcomsrg mpan 00sr oveq1d oveq2i m1r
+      ax-mp eqtri 0idsr syl6eq 1idsr syl5eq opeq12d oveq2d adantl mpanl2 mpanr1
+      addcnsr addcomsrg opeq12 syl2an 3eqtrrd vex opexg mp2an eleq1 oveq1 oveq2
+      bi2anan9 sylan9eq eqeq2d anbi12d spc2ev syl2anc r2ex sylibr optocl ) UAUC
+      ZUBUCZDZAUCZUDBUCZEFZGFZHZBIUEAIUEZCXCHZBIUEAIUEUAUBCJJUNUFWSCHXDXFABIIWS
+      CXCUGUHWQJKZWRJKZLZWTIKZXAIKZLZXDLZBUIAUIZXEXIWQMDZIKZWRMDZIKZLZWSXOUDXQE
+      FZGFZHZXNXSXIXPXGXRXHWQUJWRUJUKULXIYAXOMWRDZGFZWQMNFZMWRNFZDZWSXHYAYDHXGX
+      HXTYCXOGXHXTMODZXQEFZYCUDYHXQEUMUOXHYIMWRPFZQOMPFZPFZNFZOWRPFZMMPFZNFZDZY
+      CXHMJKZYIYQHZTYROJKZXHYRLYSTUPMOWRMUQURUSXHYMMYPWRXHYMMYLNFZMXHYJMYLNXHYJ
+      WRMPFZMYRXHYJUUBHTMWRUTVAWRVBRVCUUAMMNFZMYLMMNYLQMPFZMYKMQPYTYKMHUPOVBVFV
+      DQJKUUDMHVEQVBVFVGVDYRUUCMHTMVHVFVGVIXHYPWRYONFZWRXHYNWRYONXHYNWROPFZWRYT
+      XHYNUUFHUPOWRUTVAWRVJRVCXHUUEWRMNFZWRYOMWRNYRYOMHTMVBVFVDWRVHZVKRVLRVKVMV
+      NXGYRXHYDYGHZTXGYRYRXHLUUITWQMMWRVQVOVPXGYEWQHYFWRHYGWSHXHWQVHXHYFUUGWRYR
+      XHYFUUGHTMWRVRVAUUHRYEYFWQWRVSVTWAXMXSYBLABXOXQWQSKYRXOSKUAWBTWQMSJWCWDWR
+      SKYRXQSKUBWBTWRMSJWCWDWTXOHZXAXQHZLZXLXSXDYBUUJXJXPUUKXKXRWTXOIWEXAXQIWEW
+      HUULXCYAWSUUJUUKXCXOXBGFYAWTXOXBGWFUUKXBXTXOGXAXQUDEWGVMWIWJWKWLWMXDABIIW
+      NWOWP $.
+  $}
+
+  ${
+    $d x A $.
+    $( Real number less-than is irreflexive.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly; instead, use ~ ax-pre-ltirr .
+       (Contributed by Jim Kingdon, 12-Jan-2020.)
+       (New usage is discouraged.) $)
+    axpre-ltirr $p |- ( A e. RR -> -. A <RR A ) $=
+      ( vx cv c0r cop cltrr wbr wn cnr wcel cr wceq wrex wa elreal df-rex bitri
+      wex id cltr breq12d notbid ltsosr ltrelsr soirri ltresr mtbir a1i gencl )
+      BCZDEZUKFGZHZAAFGZHUJIJZAKJZBUKAUPUKALZBIMUOUQNBRBAOUQBIPQUQULUNUQUKAUKAF
+      UQSZURUAUBUMUOULUJUJTGUJTIUCUDUEUJUJUFUGUHUI $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.
+    $( Real number less-than is weakly linear.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly; instead, use ~ ax-pre-ltwlin .
+       (Contributed by Jim Kingdon, 12-Jan-2020.)
+       (New usage is discouraged.) $)
+    axpre-ltwlin $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+        ( A <RR B -> ( A <RR C \/ C <RR B ) ) ) $=
+      ( vx vy vz cv c0r cop cltrr wbr wo cnr elreal wceq breq1 breq2 wcel cltr
+      wi orbi1d imbi12d orbi2d orbi12d imbi2d w3a wor ltsosr sowlin mpan ltresr
+      cr orbi12i 3imtr4g 3gencl ) DGZHIZEGZHIZJKZUQFGZHIZJKZVBUSJKZLZTAUSJKZAVB
+      JKZVDLZTABJKZVGVBBJKZLZTVIACJKZCBJKZLZTDEFUQUSVBAMULBCDANEBNFCNUQAOZUTVFV
+      EVHUQAUSJPVOVCVGVDUQAVBJPUAUBUSBOZVFVIVHVKUSBAJQVPVDVJVGUSBVBJQUCUBVBCOZV
+      KVNVIVQVGVLVJVMVBCAJQVBCBJPUDUEUPMRURMRVAMRUFZUPURSKZUPVASKZVAURSKZLZUTVE
+      MSUGVRVSWBTUHMUPURVASUIUJUPURUKVCVTVDWAUPVAUKVAURUKUMUNUO $.
+  $}
+
+  ${
+    $d x y z A $.  $d y z B $.  $d z C $.
+    $( Ordering on reals is transitive.  Axiom for real and complex numbers,
+       derived from set theory.  This construction-dependent theorem should not
+       be referenced directly; instead, use ~ ax-pre-lttrn .  (Contributed by
+       NM, 19-May-1996.)  (Revised by Mario Carneiro, 16-Jun-2013.)
+       (New usage is discouraged.) $)
+    axpre-lttrn $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+               ( ( A <RR B /\ B <RR C ) -> A <RR C ) ) $=
+      ( vx vy vz cv c0r cop cltrr wbr wa cnr elreal wceq breq1 breq2 wcel cltr
+      wi anbi1d imbi12d anbi12d imbi1d anbi2d w3a ltresr ltsosr ltrelsr syl2anb
+      cr sotri sylibr a1i 3gencl ) DGZHIZEGZHIZJKZUSFGZHIZJKZLZUQVBJKZTZAUSJKZV
+      CLZAVBJKZTABJKZBVBJKZLZVITVJBCJKZLZACJKZTDEFUQUSVBAMUKBCDANEBNFCNUQAOZVDV
+      HVEVIVPUTVGVCUQAUSJPUAUQAVBJPUBUSBOZVHVLVIVQVGVJVCVKUSBAJQUSBVBJPUCUDVBCO
+      ZVLVNVIVOVRVKVMVJVBCBJQUEVBCAJQUBVFUPMRURMRVAMRUFVDUPVASKZVEUTUPURSKURVAS
+      KVSVCUPURUGURVAUGUPURVASMUHUIULUJUPVAUGUMUNUO $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.
+    $( Ordering property of addition on reals.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly; instead, use ~ ax-pre-ltadd .
+       (Contributed by NM, 11-May-1996.)  (New usage is discouraged.) $)
+    axpre-ltadd $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                  ( A <RR B -> ( C + A ) <RR ( C + B ) ) ) $=
+      ( vx vy vz cr wcel w3a cltrr wbr caddc co cv c0r cop wb cnr elreal wceq
+      breq1 oveq2 breq1d bibi12d breq2 breq2d breq12d bibi2d cltr ltasrg ltresr
+      oveq1 cplr simp3 simp1 simp2 wa addresr breqan12d syl22anc syl6bb 3bitr4d
+      a1i 3gencl biimpd ) AGHBGHCGHIABJKZCALMZCBLMZJKZDNZOPZENZOPZJKZFNZOPZVKLM
+      ZVPVMLMZJKZQAVMJKZVPALMZVRJKZQVFWAVPBLMZJKZQVFVIQDEFVKVMVPARGBCDASEBSFCSV
+      KATZVNVTVSWBVKAVMJUAWEVQWAVRJVKAVPLUBUCUDVMBTZVTVFWBWDVMBAJUEWFVRWCWAJVMB
+      VPLUBUFUDVPCTZWDVIVFWGWAVGWCVHJVPCALULVPCBLULUGUHVJRHZVLRHZVORHZIZVJVLUIK
+      ZVOVJUMMZVOVLUMMZUIKZVNVSVJVLVOUJVNWLQWKVJVLUKVCWKVSWMOPZWNOPZJKZWOWKWJWH
+      WJWIVSWRQWHWIWJUNZWHWIWJUOWSWHWIWJUPWJWHUQWJWIUQVQWPVRWQJVOVJURVOVLURUSUT
+      WMWNUKVAVBVDVE $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The product of two positive reals is positive.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use
+       ~ ax-pre-mulgt0 .  (Contributed by NM, 13-May-1996.)
+       (New usage is discouraged.) $)
+    axpre-mulgt0 $p |- ( ( A e. RR /\ B e. RR ) ->
+                  ( ( 0 <RR A /\ 0 <RR B ) -> 0 <RR ( A x. B ) ) ) $=
+      ( vx vy cc0 cv c0r cop cltrr wbr wa cmul cnr elreal wceq cltr df-0 ltresr
+      co wi cr breq2 anbi1d oveq1 breq2d imbi12d anbi2d oveq2 wcel breq1i bitri
+      cmr mulgt0sr syl2anb a1i mulresr breq12d syl6bb syl5ibr 2gencl ) ECFZGHZI
+      JZEDFZGHZIJZKZEVBVELSZIJZTEAIJZVFKZEAVELSZIJZTVJEBIJZKZEABLSZIJZTCDVBVEAB
+      MUACANDBNVBAOZVGVKVIVMVRVCVJVFVBAEIUBUCVRVHVLEIVBAVELUDUEUFVEBOZVKVOVMVQV
+      SVFVNVJVEBEIUBUGVSVLVPEIVEBALUHUEUFVGVIVAMUIVDMUIKZGVAVDULSZPJZVCGVAPJZGV
+      DPJZWBVFVCGGHZVBIJWCEWEVBIQUJGVARUKVFWEVEIJWDEWEVEIQUJGVDRUKVAVDUMUNVTVIW
+      EWAGHZIJWBVTEWEVHWFIEWEOVTQUOVAVDUPUQGWARURUSUT $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          Real and complex number postulates restated as axioms
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The complex numbers form a set.  Proofs should normally use ~ cnex
+     instead.  (New usage is discouraged.)  (Contributed by NM, 1-Mar-1995.) $)
+  ax-cnex $a |- CC e. _V $.
+  $( $j restatement 'ax-cnex' of 'axcnex'; $)
+
+  $( The real numbers are a subset of the complex numbers.  Axiom for real and
+     complex numbers, justified by theorem ~ axresscn .  (Contributed by NM,
+     1-Mar-1995.) $)
+  ax-resscn $a |- RR C_ CC $.
+  $( $j restatement 'ax-resscn' of 'axresscn'; $)
+
+  $( 1 is a complex number.  Axiom for real and complex numbers, justified by
+     theorem ~ ax1cn .  (Contributed by NM, 1-Mar-1995.) $)
+  ax-1cn $a |- 1 e. CC $.
+  $( $j restatement 'ax-1cn' of 'ax1cn'; $)
+
+  $( ` _i ` is a complex number.  Axiom for real and complex numbers, justified
+     by theorem ~ axicn .  (Contributed by NM, 1-Mar-1995.) $)
+  ax-icn $a |- _i e. CC $.
+  $( $j restatement 'ax-icn' of 'axicn'; $)
+
+  $( Closure law for addition of complex numbers.  Axiom for real and complex
+     numbers, justified by theorem ~ axaddcl .  Proofs should normally use
+     ~ addcl instead, which asserts the same thing but follows our naming
+     conventions for closures.  (New usage is discouraged.)  (Contributed by
+     NM, 22-Nov-1994.) $)
+  ax-addcl $a |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) $.
+  $( $j restatement 'ax-addcl' of 'axaddcl'; $)
+
+  $( Closure law for addition in the real subfield of complex numbers.  Axiom
+     for real and complex numbers, justified by theorem ~ axaddrcl .  Proofs
+     should normally use ~ readdcl instead.  (New usage is discouraged.)
+     (Contributed by NM, 22-Nov-1994.) $)
+  ax-addrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A + B ) e. RR ) $.
+  $( $j restatement 'ax-addrcl' of 'axaddrcl'; $)
+
+  $( Closure law for multiplication of complex numbers.  Axiom for real and
+     complex numbers, justified by theorem ~ axmulcl .  Proofs should normally
+     use ~ mulcl instead.  (New usage is discouraged.)  (Contributed by NM,
+     22-Nov-1994.) $)
+  ax-mulcl $a |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $.
+  $( $j restatement 'ax-mulcl' of 'axmulcl'; $)
+
+  $( Closure law for multiplication in the real subfield of complex numbers.
+     Axiom for real and complex numbers, justified by theorem ~ axmulrcl .
+     Proofs should normally use ~ remulcl instead.
+     (New usage is discouraged.)  (Contributed by NM, 22-Nov-1994.) $)
+  ax-mulrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $.
+  $( $j restatement 'ax-mulrcl' of 'axmulrcl'; $)
+
+  $( Multiplication of complex numbers is commutative.  Axiom for real and
+     complex numbers, justified by theorem ~ axmulcom .  Proofs should normally
+     use ~ mulcom instead.  (New usage is discouraged.)  (Contributed by NM,
+     22-Nov-1994.) $)
+  ax-mulcom $a |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) $.
+  $( $j restatement 'ax-mulcom' of 'axmulcom'; $)
+
+  $( Addition of complex numbers is associative.  Axiom for real and complex
+     numbers, justified by theorem ~ axaddass .  Proofs should normally use
+     ~ addass instead.  (New usage is discouraged.)  (Contributed by NM,
+     22-Nov-1994.) $)
+  ax-addass $a |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $.
+  $( $j restatement 'ax-addass' of 'axaddass'; $)
+
+  $( Multiplication of complex numbers is associative.  Axiom for real and
+     complex numbers, justified by theorem ~ axmulass .  Proofs should normally
+     use ~ mulass instead.  (New usage is discouraged.)  (Contributed by NM,
+     22-Nov-1994.) $)
+  ax-mulass $a |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $.
+  $( $j restatement 'ax-mulass' of 'axmulass'; $)
+
+  $( Distributive law for complex numbers (left-distributivity).  Axiom for
+     real and complex numbers, justified by theorem ~ axdistr .  Proofs should
+     normally use ~ adddi instead.  (New usage is discouraged.)  (Contributed
+     by NM, 22-Nov-1994.) $)
+  ax-distr $a |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+              ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $.
+  $( $j restatement 'ax-distr' of 'axdistr'; $)
+
+  $( i-squared equals -1 (expressed as i-squared plus 1 is 0).  Axiom for real
+     and complex numbers, justified by theorem ~ axi2m1 .  (Contributed by NM,
+     29-Jan-1995.) $)
+  ax-i2m1 $a |- ( ( _i x. _i ) + 1 ) = 0 $.
+  $( $j restatement 'ax-i2m1' of 'axi2m1'; $)
+
+  $( 0 is less than 1.  Axiom for real and complex numbers, justified by
+     theorem ~ ax0lt1 .  (Contributed by Jim Kingdon, 12-Jan-2020.) $)
+  ax-0lt1 $p |- 0 <RR 1 $=
+    ( c0r cop c1r cc0 c1 cltrr wbr cltr 0lt1sr ltresr mpbir df-0 df-1 3brtr4i )
+    AABZCABZDEFOPFGACHGIACJKLMN $.
+  $( $j restatement 'ax-0lt1' of 'ax0lt1'; $)
+
+  $( ` 1 ` is an identity element for real multiplication.  Axiom for real and
+     complex numbers, justified by theorem ~ ax1rid .  (Contributed by NM,
+     29-Jan-1995.) $)
+  ax-1rid $a |- ( A e. RR -> ( A x. 1 ) = A ) $.
+  $( $j restatement 'ax-1rid' of 'ax1rid'; $)
+
+  ${
+    $d x A $.
+    $( Existence of negative of real number.  Axiom for real and complex
+       numbers, justified by theorem ~ axrnegex .  (Contributed by Eric
+       Schmidt, 21-May-2007.) $)
+    ax-rnegex $a |- ( A e. RR -> E. x e. RR ( A + x ) = 0 ) $.
+    $( $j restatement 'ax-rnegex' of 'axrnegex'; $)
+  $}
+
+  ${
+    $d x A $.
+    $( Existence of reciprocal of positive real number.  Axiom for real and
+       complex numbers, justified by theorem ~ axprecex .
+
+       In treatments which assume excluded middle, the ` 0 <RR A ` condition is
+       generally replaced by ` A =/= 0 ` .  (Contributed by Jim Kingdon,
+       12-Jan-2020.) $)
+    ax-precex $a |- ( ( A e. RR /\ 0 <RR A ) -> E. x e. RR ( A x. x ) = 1 ) $.
+    $( $j restatement 'ax-precex' of 'axprecex'; $)
+  $}
+
+  ${
+    $d x y A $.
+    $( A complex number can be expressed in terms of two reals.  Definition
+       10-1.1(v) of [Gleason] p. 130.  Axiom for real and complex numbers,
+       justified by theorem ~ axcnre .  For naming consistency, use ~ cnre for
+       new proofs.  (New usage is discouraged.)  (Contributed by NM,
+       9-May-1999.) $)
+    ax-cnre $a |- ( A e. CC ->
+                      E. x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $.
+    $( $j restatement 'ax-cnre' of 'axcnre'; $)
+  $}
+
+  $( Real number less-than is irreflexive.  Axiom for real and complex numbers,
+     justified by theorem ~ ax-pre-ltirr .  (Contributed by Jim Kingdon,
+     12-Jan-2020.) $)
+  ax-pre-ltirr $a |- ( A e. RR -> -. A <RR A ) $.
+  $( $j restatement 'ax-pre-ltirr' of 'axpre-ltirr'; $)
+
+  $( Real number less-than is weakly linear.  Axiom for real and complex
+     numbers, justified by theorem ~ axpre-ltwlin .  (Contributed by Jim
+     Kingdon, 12-Jan-2020.) $)
+  ax-pre-ltwlin $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+    ( A <RR B -> ( A <RR C \/ C <RR B ) ) ) $.
+  $( $j restatement 'ax-pre-ltwlin' of 'axpre-ltwlin'; $)
+
+  $( Ordering on reals is transitive.  Axiom for real and complex numbers,
+     justified by theorem ~ axpre-lttrn .  (Contributed by NM, 13-Oct-2005.) $)
+  ax-pre-lttrn $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A <RR B /\ B <RR C ) -> A <RR C ) ) $.
+  $( $j restatement 'ax-pre-lttrn' of 'axpre-lttrn'; $)
+
+  $( Ordering property of addition on reals.  Axiom for real and complex
+     numbers, justified by theorem ~ axpre-ltadd .  (Contributed by NM,
+     13-Oct-2005.) $)
+  ax-pre-ltadd $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A <RR B -> ( C + A ) <RR ( C + B ) ) ) $.
+  $( $j restatement 'ax-pre-ltadd' of 'axpre-ltadd'; $)
+
+  $( The product of two positive reals is positive.  Axiom for real and complex
+     numbers, justified by theorem ~ axpre-mulgt0 .  (Contributed by NM,
+     13-Oct-2005.) $)
+  ax-pre-mulgt0 $a |- ( ( A e. RR /\ B e. RR ) ->
+                ( ( 0 <RR A /\ 0 <RR B ) -> 0 <RR ( A x. B ) ) ) $.
+  $( $j restatement 'ax-pre-mulgt0' of 'axpre-mulgt0'; $)
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+           Derive the basic properties from the field axioms
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Some deductions from the field axioms for complex numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Alias for ~ ax-cnex .  (Contributed by Mario Carneiro, 17-Nov-2014.) $)
+  cnex $p |- CC e. _V $=
+    ( ax-cnex ) A $.
+
+  $( Alias for ~ ax-addcl , for naming consistency with ~ addcli .  Use this
+     theorem instead of ~ ax-addcl or ~ axaddcl .  (Contributed by NM,
+     10-Mar-2008.) $)
+  addcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) $=
+    ( ax-addcl ) ABC $.
+
+  $( Alias for ~ ax-addrcl , for naming consistency with ~ readdcli .
+     (Contributed by NM, 10-Mar-2008.) $)
+  readdcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A + B ) e. RR ) $=
+    ( ax-addrcl ) ABC $.
+
+  $( Alias for ~ ax-mulcl , for naming consistency with ~ mulcli .
+     (Contributed by NM, 10-Mar-2008.) $)
+  mulcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $=
+    ( ax-mulcl ) ABC $.
+
+  $( Alias for ~ ax-mulrcl , for naming consistency with ~ remulcli .
+     (Contributed by NM, 10-Mar-2008.) $)
+  remulcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $=
+    ( ax-mulrcl ) ABC $.
+
+  $( Alias for ~ ax-mulcom , for naming consistency with ~ mulcomi .
+     (Contributed by NM, 10-Mar-2008.) $)
+  mulcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) $=
+    ( ax-mulcom ) ABC $.
+
+  $( Alias for ~ ax-addass , for naming consistency with ~ addassi .
+     (Contributed by NM, 10-Mar-2008.) $)
+  addass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $=
+    ( ax-addass ) ABCD $.
+
+  $( Alias for ~ ax-mulass , for naming consistency with ~ mulassi .
+     (Contributed by NM, 10-Mar-2008.) $)
+  mulass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $=
+    ( ax-mulass ) ABCD $.
+
+  $( Alias for ~ ax-distr , for naming consistency with ~ adddii .
+     (Contributed by NM, 10-Mar-2008.) $)
+  adddi $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $=
+    ( ax-distr ) ABCD $.
+
+  ${
+    $d A x y $.
+    $( Alias for ~ ax-cnre , for naming consistency.  (Contributed by NM,
+       3-Jan-2013.) $)
+    cnre $p |- ( A e. CC -> E. x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $=
+      ( ax-cnre ) ABCD $.
+  $}
+
+  ${
+    recni.1 $e |- A e. RR $.
+    axri.2 $e |- B e. RR $.
+    $( Closure law for addition of reals.  (Contributed by NM, 17-Jan-1997.) $)
+    readdcli $p |- ( A + B ) e. RR $=
+      ( cr wcel caddc co readdcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Closure law for multiplication of reals.  (Contributed by NM,
+       17-Jan-1997.) $)
+    remulcli $p |- ( A x. B ) e. RR $=
+      ( cr wcel cmul co remulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
+
+  ${
+    axi.1 $e |- A e. CC $.
+    axi.2 $e |- B e. CC $.
+    $( Closure law for addition.  (Contributed by NM, 23-Nov-1994.) $)
+    addcli $p |- ( A + B ) e. CC $=
+      ( cc wcel caddc co addcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Closure law for multiplication.  (Contributed by NM, 23-Nov-1994.) $)
+    mulcli $p |- ( A x. B ) e. CC $=
+      ( cc wcel cmul co mulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Commutative law for multiplication.  (Contributed by NM,
+       23-Nov-1994.) $)
+    mulcomi $p |- ( A x. B ) = ( B x. A ) $=
+      ( cc wcel cmul co wceq mulcom mp2an ) AEFBEFABGHBAGHICDABJK $.
+
+    axi.3 $e |- C e. CC $.
+    $( Associative law for addition.  (Contributed by NM, 23-Nov-1994.) $)
+    addassi $p |- ( ( A + B ) + C ) = ( A + ( B + C ) ) $=
+      ( cc wcel caddc co wceq addass mp3an ) AGHBGHCGHABIJCIJABCIJIJKDEFABCLM
+      $.
+
+    $( Associative law for multiplication.  (Contributed by NM,
+       23-Nov-1994.) $)
+    mulassi $p |- ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) $=
+      ( cc wcel cmul co wceq mulass mp3an ) AGHBGHCGHABIJCIJABCIJIJKDEFABCLM $.
+
+    $( Distributive law (left-distributivity).  (Contributed by NM,
+       23-Nov-1994.) $)
+    adddii $p |- ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) $=
+      ( cc wcel caddc co cmul wceq adddi mp3an ) AGHBGHCGHABCIJKJABKJACKJIJLDEF
+      ABCMN $.
+  $}
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#

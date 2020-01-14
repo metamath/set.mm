@@ -44,8 +44,19 @@
 "alrimih" is used by "sb6rf".
 "alrimih" is used by "sbbid".
 "ax-10o" is used by "ax10".
+"ax-addass" is used by "addass".
+"ax-addcl" is used by "addcl".
+"ax-addrcl" is used by "readdcl".
+"ax-cnex" is used by "cnex".
+"ax-cnre" is used by "cnre".
+"ax-distr" is used by "adddi".
 "ax-inf2" is used by "bj-nn0sucALT".
 "ax-inf2" is used by "bj-omex2".
+"ax-mulass" is used by "mulass".
+"ax-mulcl" is used by "mulcl".
+"ax-mulcom" is used by "mulcom".
+"ax-mulrcl" is used by "remulcl".
+"axresscn" is used by "ax1cn".
 "df-ilim" is used by "dflim2".
 "df-iom" is used by "dfom3".
 "df-iord" is used by "dford3".
@@ -153,10 +164,43 @@ New usage of "alrimih" is discouraged (25 uses).
 New usage of "ax-10o" is discouraged (1 uses).
 New usage of "ax-11o" is discouraged (0 uses).
 New usage of "ax-16" is discouraged (0 uses).
+New usage of "ax-addass" is discouraged (1 uses).
+New usage of "ax-addcl" is discouraged (1 uses).
+New usage of "ax-addrcl" is discouraged (1 uses).
+New usage of "ax-cnex" is discouraged (1 uses).
+New usage of "ax-cnre" is discouraged (1 uses).
+New usage of "ax-distr" is discouraged (1 uses).
 New usage of "ax-inf2" is discouraged (2 uses).
+New usage of "ax-mulass" is discouraged (1 uses).
+New usage of "ax-mulcl" is discouraged (1 uses).
+New usage of "ax-mulcom" is discouraged (1 uses).
+New usage of "ax-mulrcl" is discouraged (1 uses).
+New usage of "ax0lt1" is discouraged (0 uses).
 New usage of "ax10" is discouraged (0 uses).
+New usage of "ax1cn" is discouraged (0 uses).
+New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
+New usage of "axaddass" is discouraged (0 uses).
+New usage of "axaddcl" is discouraged (0 uses).
+New usage of "axaddrcl" is discouraged (0 uses).
+New usage of "axcnex" is discouraged (0 uses).
+New usage of "axcnre" is discouraged (0 uses).
+New usage of "axdistr" is discouraged (0 uses).
+New usage of "axi2m1" is discouraged (0 uses).
+New usage of "axicn" is discouraged (0 uses).
+New usage of "axmulass" is discouraged (0 uses).
+New usage of "axmulcl" is discouraged (0 uses).
+New usage of "axmulcom" is discouraged (0 uses).
+New usage of "axmulrcl" is discouraged (0 uses).
 New usage of "axnul" is discouraged (0 uses).
+New usage of "axpre-ltadd" is discouraged (0 uses).
+New usage of "axpre-ltirr" is discouraged (0 uses).
+New usage of "axpre-lttrn" is discouraged (0 uses).
+New usage of "axpre-ltwlin" is discouraged (0 uses).
+New usage of "axpre-mulgt0" is discouraged (0 uses).
+New usage of "axprecex" is discouraged (0 uses).
+New usage of "axresscn" is discouraged (1 uses).
+New usage of "axrnegex" is discouraged (0 uses).
 New usage of "bdcnulALT" is discouraged (0 uses).
 New usage of "bdnthALT" is discouraged (0 uses).
 New usage of "bdsbcALT" is discouraged (0 uses).
