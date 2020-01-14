@@ -65617,22 +65617,6 @@ $)
     FURUJQSUJUPUKRTUAUBUCUHUNULUHULBAHIDUNABCCIUDBAILUEUFUG $.
 
   ${
-    $d x A $.
-    $( The three (non-exclusive) possibilities implied by a subset of extended
-       reals.  (Contributed by NM, 25-Oct-2005.)  (Proof shortened by Andrew
-       Salmon, 19-Nov-2011.) $)
-    ssxr $p |- ( A C_ RR* -> ( A C_ RR \/ +oo e. A \/ -oo e. A ) ) $=
-      ( cr cpnf cmnf cpr cun wss wcel wo cxr w3o wn cin c0 wceq csn disjsn cdif
-      wa sseq2i df-pr ineq2i indi anbi12i biimpri pm4.56 3imtr3i syl5eq reldisj
-      eqtri un00 renfdisj disj3 mpbi difun2 eqtr4i syl6bbr syl5ib 3orrot df-3or
-      orrd df-xr bitri 3imtr4i ) ABCDEZFZGZCAHZDAHZIZABGZIZAJGVKVHVIKZVGVJVKVJL
-      ZAVEMZNOZVGVKVNVOACPZMZADPZMZFZNVOAVQVSFZMWAVEWBACDUAUBAVQVSUCUJVHLZVILZS
-      ZVRNOZVTNOZSZVNWANOWHWEWFWCWGWDACQADQUDUEVHVIUFVRVTUKUGUHVGVPAVFVERZGVKAV
-      EVFUIBWIABBVERZWIBVEMNOBWJOULBVEUMUNBVEUOUPTUQURVAJVFAVBTVMVHVIVKKVLVKVHV
-      IUSVHVIVKUTVCVD $.
-  $}
-
-  ${
     $d x y A $.  $d x y B $.
     $( The standard less-than ` <RR ` and the extended real less-than ` < ` are
        identical when restricted to the non-extended reals ` RR ` .
