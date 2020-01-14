@@ -1,4 +1,4 @@
-$( iset.mm - Version of 12-Jan-2020
+$( iset.mm - Version of 13-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -64528,6 +64528,19 @@ $)
     ( cr cc c1 axresscn c1r c0r cop df-1 wcel cnr opelreal mpbir eqeltri sselii
     1sr ) ABCDCEFGZAHPAIEJIOEKLMN $.
 
+  $( 1 is a real number.  Axiom for real and complex numbers, derived from set
+     theory.  This construction-dependent theorem should not be referenced
+     directly; instead, use ~ ax-1re .
+
+     In the Metamath Proof Explorer, this is not a complex number axiom but is
+     proved from ~ ax-1cn and the other axioms.  It is not known whether we can
+     do so here, but the Metamath Proof Explorer proof (accessed 13-Jan-2020)
+     uses excluded middle.  (Contributed by Jim Kingdon, 13-Jan-2020.)
+     (New usage is discouraged.) $)
+  ax1re $p |- 1 e. RR $=
+    ( c1 c1r c0r cop cr df-1 wcel cnr 1sr opelreal mpbir eqeltri ) ABCDZEFMEGBH
+    GIBJKL $.
+
   $( ` _i ` is a complex number.  Axiom for real and complex numbers, derived
      from set theory.  This construction-dependent theorem should not be
      referenced directly; instead, use ~ ax-icn .  (Contributed by NM,
@@ -64945,6 +64958,12 @@ $)
   ax-1cn $a |- 1 e. CC $.
   $( $j restatement 'ax-1cn' of 'ax1cn'; $)
 
+  $( 1 is a real number.  Axiom for real and complex numbers, justified by
+     theorem ~ ax1re .  Proofs should use ~ 1re instead.  (Contributed by Jim
+     Kingdon, 13-Jan-2020.)  (New usage is discouraged.) $)
+  ax-1re $a |- 1 e. RR $.
+  $( $j restatement 'ax-1re' of 'ax1re'; $)
+
   $( ` _i ` is a complex number.  Axiom for real and complex numbers, justified
      by theorem ~ axicn .  (Contributed by NM, 1-Mar-1995.) $)
   ax-icn $a |- _i e. CC $.
@@ -65230,6 +65249,10 @@ $)
   mulid2 $p |- ( A e. CC -> ( 1 x. A ) = A ) $=
     ( cc wcel c1 cmul co wceq ax-1cn mulcom mpan mulid1 eqtrd ) ABCZDAEFZADEFZA
     DBCMNOGHDAIJAKL $.
+
+  $( ` 1 ` is a real number.  (Contributed by Jim Kingdon, 13-Jan-2020.) $)
+  1re $p |- 1 e. RR $=
+    ( ax-1re ) A $.
 
   ${
     recni.1 $e |- A e. RR $.
