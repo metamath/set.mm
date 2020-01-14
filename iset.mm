@@ -65267,19 +65267,6 @@ $)
     ( cc0 cr wcel 0re a1i ) BCDAEF $.
 
   ${
-    recni.1 $e |- A e. RR $.
-    axri.2 $e |- B e. RR $.
-    $( Closure law for addition of reals.  (Contributed by NM, 17-Jan-1997.) $)
-    readdcli $p |- ( A + B ) e. RR $=
-      ( cr wcel caddc co readdcl mp2an ) AEFBEFABGHEFCDABIJ $.
-
-    $( Closure law for multiplication of reals.  (Contributed by NM,
-       17-Jan-1997.) $)
-    remulcli $p |- ( A x. B ) e. RR $=
-      ( cr wcel cmul co remulcl mp2an ) AEFBEFABGHEFCDABIJ $.
-  $}
-
-  ${
     axi.1 $e |- A e. CC $.
     axi.2 $e |- B e. CC $.
     $( Closure law for addition.  (Contributed by NM, 23-Nov-1994.) $)
@@ -65311,6 +65298,19 @@ $)
     adddii $p |- ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) $=
       ( cc wcel caddc co cmul wceq adddi mp3an ) AGHBGHCGHABCIJKJABKJACKJIJLDEF
       ABCMN $.
+  $}
+
+  ${
+    recni.1 $e |- A e. RR $.
+    axri.2 $e |- B e. RR $.
+    $( Closure law for addition of reals.  (Contributed by NM, 17-Jan-1997.) $)
+    readdcli $p |- ( A + B ) e. RR $=
+      ( cr wcel caddc co readdcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Closure law for multiplication of reals.  (Contributed by NM,
+       17-Jan-1997.) $)
+    remulcli $p |- ( A x. B ) e. RR $=
+      ( cr wcel cmul co remulcl mp2an ) AEFBEFABGHEFCDABIJ $.
   $}
 
 $(
