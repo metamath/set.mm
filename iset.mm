@@ -54017,6 +54017,18 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      Undefined values
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The power set of the union of a set does not belong to the set.  This
+     theorem provides a way of constructing a new set that doesn't belong to a
+     given set.  (Contributed by Stefan O'Rear, 22-Feb-2015.) $)
+  pwuninel2 $p |- ( U. A e. V -> -. ~P U. A e. A ) $=
+    ( cuni wcel cpw wss pwnss elssuni nsyl ) ACZBDJEZJFKADJBGKAHI $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Functions on ordinals; strictly monotone ordinal functions
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
