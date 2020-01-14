@@ -65212,6 +65212,26 @@ $)
   $}
 
   ${
+    $d A x y $.
+    $( ` 1 ` is an identity element for multiplication.  Based on ideas by Eric
+       Schmidt.  (Contributed by Scott Fenton, 3-Jan-2013.) $)
+    mulid1 $p |- ( A e. CC -> ( A x. 1 ) = A ) $=
+      ( vx vy cc wcel cv ci cmul co caddc wceq cr wrex c1 ax-icn ax-1cn ax-1rid
+      recn syl eqtrd cnre wa sylancr adddir mp3an3 syl2an mulass mp3an13 oveq2d
+      mulcl oveqan12d oveq1 id eqeq12d syl5ibrcom rexlimivv ) ADEABFZGCFZHIZJIZ
+      KZCLMBLMANHIZAKZBCAUAVAVCBCLLUQLEZURLEZUBZVCVAUTNHIZUTKVFVGUQNHIZUSNHIZJI
+      ZUTVDUQDEZUSDEZVGVJKZVEUQRVEGDEZURDEZVLOURRZGURUJUCVKVLNDEZVMPUQUSNUDUEUF
+      VDVEVHUQVIUSJUQQVEVIGURNHIZHIZUSVEVOVIVSKZVPVNVOVQVTOPGURNUGUHSVEVRURGHUR
+      QUITUKTVAVBVGAUTAUTNHULVAUMUNUOUPS $.
+  $}
+
+  $( Identity law for multiplication.  Note: see ~ mulid1 for commuted
+     version.  (Contributed by NM, 8-Oct-1999.) $)
+  mulid2 $p |- ( A e. CC -> ( 1 x. A ) = A ) $=
+    ( cc wcel c1 cmul co wceq ax-1cn mulcom mpan mulid1 eqtrd ) ABCZDAEFZADEFZA
+    DBCMNOGHDAIJAKL $.
+
+  ${
     recni.1 $e |- A e. RR $.
     axri.2 $e |- B e. RR $.
     $( Closure law for addition of reals.  (Contributed by NM, 17-Jan-1997.) $)
