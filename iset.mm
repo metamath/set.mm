@@ -65268,6 +65268,14 @@ $)
 
   ${
     axi.1 $e |- A e. CC $.
+    $( Identity law for multiplication.  (Contributed by NM, 14-Feb-1995.) $)
+    mulid1i $p |- ( A x. 1 ) = A $=
+      ( cc wcel c1 cmul co wceq mulid1 ax-mp ) ACDAEFGAHBAIJ $.
+
+    $( Identity law for multiplication.  (Contributed by NM, 14-Feb-1995.) $)
+    mulid2i $p |- ( 1 x. A ) = A $=
+      ( cc wcel c1 cmul co wceq mulid2 ax-mp ) ACDEAFGAHBAIJ $.
+
     axi.2 $e |- B e. CC $.
     $( Closure law for addition.  (Contributed by NM, 23-Nov-1994.) $)
     addcli $p |- ( A + B ) e. CC $=
