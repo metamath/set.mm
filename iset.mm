@@ -65155,6 +65155,25 @@ $)
                 ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $=
     ( ax-distr ) ABCD $.
 
+  $( A real number is a complex number.  (Contributed by NM, 10-Aug-1999.) $)
+  recn $p |- ( A e. RR -> A e. CC ) $=
+    ( cr cc ax-resscn sseli ) BCADE $.
+
+  $( The real numbers form a set.  (Contributed by Mario Carneiro,
+     17-Nov-2014.) $)
+  reex $p |- RR e. _V $=
+    ( cr cc cnex ax-resscn ssexi ) ABCDE $.
+
+  $( Reals are a subset of the pair of real and complex numbers (common case).
+     (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  reelprrecn $p |- RR e. { RR , CC } $=
+    ( cr cc reex prid1 ) ABCD $.
+
+  $( Complex numbers are a subset of the pair of real and complex numbers
+     (common case).  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  cnelprrecn $p |- CC e. { RR , CC } $=
+    ( cr cc cnex prid2 ) ABCD $.
+
   ${
     $d A x y $.
     $( Alias for ~ ax-cnre , for naming consistency.  (Contributed by NM,
