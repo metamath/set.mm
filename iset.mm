@@ -65290,6 +65290,14 @@ $)
     mulcomi $p |- ( A x. B ) = ( B x. A ) $=
       ( cc wcel cmul co wceq mulcom mp2an ) AEFBEFABGHBAGHICDABJK $.
 
+    ${
+      mulcomli.3 $e |- ( A x. B ) = C $.
+      $( Commutative law for multiplication.  (Contributed by NM,
+         23-Nov-1994.) $)
+      mulcomli $p |- ( B x. A ) = C $=
+        ( cmul co mulcomi eqtri ) BAGHABGHCBAEDIFJ $.
+    $}
+
     axi.3 $e |- C e. CC $.
     $( Associative law for addition.  (Contributed by NM, 23-Nov-1994.) $)
     addassi $p |- ( ( A + B ) + C ) = ( A + ( B + C ) ) $=
@@ -65306,6 +65314,12 @@ $)
     adddii $p |- ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) $=
       ( cc wcel caddc co cmul wceq adddi mp3an ) AGHBGHCGHABCIJKJABKJACKJIJLDEF
       ABCMN $.
+
+    $( Distributive law (right-distributivity).  (Contributed by NM,
+       16-Feb-1995.) $)
+    adddiri $p |- ( ( A + B ) x. C ) = ( ( A x. C ) + ( B x. C ) ) $=
+      ( cc wcel caddc co cmul wceq adddir mp3an ) AGHBGHCGHABIJCKJACKJBCKJIJLDE
+      FABCMN $.
   $}
 
   ${
