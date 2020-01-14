@@ -65324,6 +65324,10 @@ $)
 
   ${
     recni.1 $e |- A e. RR $.
+    $( A real number is a complex number.  (Contributed by NM, 1-Mar-1995.) $)
+    recni $p |- A e. CC $=
+      ( cr cc ax-resscn sselii ) CDAEBF $.
+
     axri.2 $e |- B e. RR $.
     $( Closure law for addition of reals.  (Contributed by NM, 17-Jan-1997.) $)
     readdcli $p |- ( A + B ) e. RR $=
