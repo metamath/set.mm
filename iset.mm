@@ -1,4 +1,4 @@
-$( iset.mm - Version of 13-Jan-2020
+$( iset.mm - Version of 14-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54026,6 +54026,14 @@ $)
      given set.  (Contributed by Stefan O'Rear, 22-Feb-2015.) $)
   pwuninel2 $p |- ( U. A e. V -> -. ~P U. A e. A ) $=
     ( cuni wcel cpw wss pwnss elssuni nsyl ) ACZBDJEZJFKADJBGKAHI $.
+
+  $( The power set of the power set of the union of a set does not belong to
+     the set.  This theorem provides a way of constructing a new set that
+     doesn't belong to a given set.  (Contributed by Jim Kingdon,
+     14-Jan-2020.) $)
+  2pwuninelg $p |- ( A e. V -> -. ~P ~P U. A e. A ) $=
+    ( wcel cuni cpw wa en2lp wi wss pwuni elpwg mpbiri ax-ia3 syl mtoi ) ABCZAD
+    EZEZACZARCZSFZARGPTSUAHPTAQIAJAQBKLTSMNO $.
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
