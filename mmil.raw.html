@@ -1372,7 +1372,13 @@ example ~ nntri3or , ~ pitri3or , and ~ nqtri3or .
 <TD>issoi</TD>
 <TD>~ issod , ~ ispod </TD>
 <TD>Many of the set.mm usages of issoi don't carry over, so
-there is less need for this convenience theorem.<TD>
+there is less need for this convenience theorem.</TD>
+</TR>
+
+<TR>
+<TD>isso2i</TD>
+<TD>~ issod </TD>
+<TD>Presumably this could be proved if we need it.</TD>
 </TR>
 
 <TR>
@@ -1632,7 +1638,7 @@ found in ~ ovi3 .</TD>
 
 <TR>
 <TD>caovlem2</TD>
-<TD>?</TD>
+<TD>~ caovlem2d </TD>
 </TR>
 
 <TR>
@@ -2060,8 +2066,8 @@ used in set.mm</TD>
 <TR>
 <TD>brecop2</TD>
 <TD><I>none</I></TD>
-<TD>This is used only one place in set.mm but it may prove to be
-important in constructing the reals.</TD>
+<TD>This is a form of reverse closure and uses excluded
+middle in its proof.</TD>
 </TR>
 
 <TR>
@@ -2489,6 +2495,124 @@ in general, without excluded middle.</TD>
 <TR>
 <TD>mulcmpblnrlem</TD>
 <TD>~ mulcmpblnrlemg </TD>
+</TR>
+
+<TR>
+<TD>ltsrpr</TD>
+<TD>~ ltsrprg </TD>
+</TR>
+
+<TR>
+<TD>dmaddsr , dmmulsr</TD>
+<TD><I>none</I></TD>
+<TD>Although these presumably could be proved in a way similar
+to ~ dmaddpq and ~dmmulpq (in fact ~ dmaddpqlem would seem to
+be easily generalizable to anything of the form
+` ( ( S X. T ) /. R ) ` ), we haven't yet had a need to do so.
+</TR>
+
+<TR>
+<TD>addcomsr</TD>
+<TD>~ addcomsrg </TD>
+</TR>
+
+<TR>
+<TD>addasssr</TD>
+<TD>~ addasssrg </TD>
+</TR>
+
+<TR>
+<TD>mulcomsr</TD>
+<TD>~ mulcomsrg </TD>
+</TR>
+
+<TR>
+<TD>mulasssr</TD>
+<TD>~ mulasssrg </TD>
+</TR>
+
+<TR>
+<TD>distrsr</TD>
+<TD>~ distrsrg </TD>
+</TR>
+
+<TR>
+<TD>ltasr</TD>
+<TD>~ ltasrg </TD>
+</TR>
+
+<TR>
+<TD>sqgt0sr</TD>
+<TD>~ mulgt0sr </TD>
+<TD>The ` A <R 0R ` case would also intuitionize (looks like this part
+of set.mm's sqgt0sr proof would intuitionize well), but for the theorem
+as a whole, "not equal to zero" would need to be changed to "apart from
+zero".</TD>
+</TR>
+
+<TR>
+<TD>recexsr</TD>
+<TD>~ recexsrlem </TD>
+<TD>This would follow from sqgt0sr (as in the set.mm proof of recexsr),
+but as noted there "not equal to zero" would need to be changed to
+"apart from zero".</TD>
+</TR>
+
+<TR>
+<TD>mappsrpr , ltpsrpr , map2psrpr</TD>
+<TD><I>none</I></TD>
+<TD>Although variants of these theorems could be intuitionized, in
+set.mm they are only used for supremum theorems, so we can consider
+this in more detail when we tackle what kind of supremum theorems
+to prove.</TD>
+</TR>
+
+<TR>
+<TD>supsrlem , supsr</TD>
+<TD><I>none</I></TD>
+<TD>The Least Upper Bound property for sets of real numbers does not hold,
+in general, without excluded middle.</TD>
+</TR>
+
+<TR>
+<TD>axaddf , ax-addf , axmulf , ax-mulf</TD>
+<TD><I>none</I></TD>
+<TD>Because these are described as deprecated in set.mm, we haven't
+figured out what would be involved in proving them for iset.mm.</TD>
+</TR>
+
+<TR>
+<TD>ax1ne0 , ax-1ne0</TD>
+<TD>~ ax0lt1 , ~ ax-0lt1 </TD>
+</TR>
+
+<TR>
+<TD>axrrecex , ax-rrecex</TD>
+<TD>~ axprecex , ~ ax-precex </TD>
+</TR>
+
+<TR>
+<TD>axpre-lttri , ax-pre-lttri</TD>
+<TD>~ axpre-ltirr , ~ axpre-ltwlin , ~ ax-pre-ltirr , ~ ax-pre-ltwlin </TD>
+</TR>
+
+<TR>
+<TD>axpre-sup , axpre-sup</TD>
+<TD><I>none yet</I></TD>
+<TD>The Least Upper Bound property for sets of real numbers does not hold,
+in general, without excluded middle. If we want a set of axioms for real
+numbers which allows us to avoid construction-dependent theorems beyond
+this point, we'll need a modified Least Upper Bound property, a statement
+concerning Dedekind cuts or something similar, or some other axiom(s).</TD>
+</TR>
+
+<TR>
+<TD>df-xr , df-ltxr</TD>
+<TD><I>none yet</I></TD>
+<TD>It is not yet determined whether we can (or should) use a definition for
+extended reals similar to Metamath Proof Explorer or whether we'll need
+to define them the way the [HoTT] book does (as two-sided Dedekind cuts
+in which the lower or upper cut can be empty).</TD>
 </TR>
 
 </TABLE>

@@ -4,7 +4,7 @@ contributing changes to set.mm are described in the wiki,
 (Feel free to enhance the wiki.)
 
 The rest of this note shows how to achieve the recommended
-formatting for set.mm prior to submitting your changes.
+formatting for set.mm and iset.mm prior to submitting your changes.
 
 ### Formatting recommendation prior to submitting a pull request
 

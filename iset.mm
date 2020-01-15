@@ -1,4 +1,4 @@
-$( iset.mm - Version of 2-Jan-2020
+$( iset.mm - Version of 12-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -51295,29 +51295,6 @@ $)
     $}
 
     ${
-      caovdilemd.com $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
-        ( x G y ) = ( y G x ) ) $.
-      caovdilemd.distr $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
-        ( ( x F y ) G z ) = ( ( x G z ) F ( y G z ) ) ) $.
-      caovdilemd.ass $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
-        ( ( x G y ) G z ) = ( x G ( y G z ) ) ) $.
-      caovdilemd.cl $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
-        ( x G y ) e. S ) $.
-      caovdilemd.a $e |- ( ph -> A e. S ) $.
-      caovdilemd.b $e |- ( ph -> B e. S ) $.
-      caovdilemd.c $e |- ( ph -> C e. S ) $.
-      caovdilemd.d $e |- ( ph -> D e. S ) $.
-      caovdilemd.h $e |- ( ph -> H e. S ) $.
-      $( Lemma used by real number construction.  (Contributed by Jim Kingdon,
-         16-Sep-2019.) $)
-      caovdilemd $p |- ( ph -> ( ( ( A G C ) F ( B G D ) ) G H ) =
-                       ( ( A G ( C G H ) ) F ( B G ( D G H ) ) ) ) $=
-        ( co caovcld caovdird caovassd oveq12d eqtrd ) AEGKUBZFHKUBZJUBLKUBUHLK
-        UBZUILKUBZJUBEGLKUBKUBZFHLKUBKUBZJUBABCDUHUILIJKJINABCEGIIIKPQSUCABCFHI
-        IIKPRTUCUAUDAUJULUKUMJABCDEGLIKOQSUAUEABCDFHLIKORTUAUEUFUG $.
-    $}
-
-    ${
       caovdi.1 $e |- A e. _V $.
       caovdi.2 $e |- B e. _V $.
       caovdi.3 $e |- C e. _V $.
@@ -51428,6 +51405,61 @@ $)
         ( co caov31 caovass 3eqtr3i ) DEGMFGMFEGMDGMDEFGMGMFEDGMGMABCDEFGHIJKLN
         ABCDEFGHIJLOABCFEDGJIHLOP $.
     $}
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.  $d x y z D $.
+    $d r s t x y z ph $.  $d r s t x y z F $.  $d r s t x y z G $.
+    $d x y z H $.  $d x y z K $.  $d x y z R $.  $d r s t x y z S $.
+    $d x y z T $.
+    caovdilemd.com $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+      ( x G y ) = ( y G x ) ) $.
+    caovdilemd.distr $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
+      ( ( x F y ) G z ) = ( ( x G z ) F ( y G z ) ) ) $.
+    caovdilemd.ass $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
+      ( ( x G y ) G z ) = ( x G ( y G z ) ) ) $.
+    caovdilemd.cl $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+      ( x G y ) e. S ) $.
+    caovdilemd.a $e |- ( ph -> A e. S ) $.
+    caovdilemd.b $e |- ( ph -> B e. S ) $.
+    caovdilemd.c $e |- ( ph -> C e. S ) $.
+    caovdilemd.d $e |- ( ph -> D e. S ) $.
+    caovdilemd.h $e |- ( ph -> H e. S ) $.
+    $( Lemma used by real number construction.  (Contributed by Jim Kingdon,
+       16-Sep-2019.) $)
+    caovdilemd $p |- ( ph -> ( ( ( A G C ) F ( B G D ) ) G H ) =
+                     ( ( A G ( C G H ) ) F ( B G ( D G H ) ) ) ) $=
+      ( co caovcld caovdird caovassd oveq12d eqtrd ) AEGKUBZFHKUBZJUBLKUBUHLKUB
+      ZUILKUBZJUBEGLKUBKUBZFHLKUBKUBZJUBABCDUHUILIJKJINABCEGIIIKPQSUCABCFHIIIKP
+      RTUCUAUDAUJULUKUMJABCDEGLIKOQSUAUEABCDFHLIKORTUAUEUFUG $.
+
+    caovdl2.6 $e |- ( ph -> R e. S ) $.
+    caovdl2.com $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+      ( x F y ) = ( y F x ) ) $.
+    caovdl2.ass $e |- ( ( ph /\ ( x e. S /\ y e. S /\ z e. S ) ) ->
+      ( ( x F y ) F z ) = ( x F ( y F z ) ) ) $.
+    caovdl2.cl $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
+      ( x F y ) e. S ) $.
+    $( Rearrangement of expression involving multiplication ( ` G ` ) and
+       addition ( ` F ` ).  (Contributed by Jim Kingdon, 3-Jan-2020.) $)
+    caovlem2d $p |- ( ph -> ( ( ( ( A G C ) F ( B G D ) ) G H ) F
+          ( ( ( A G D ) F ( B G C ) ) G R ) ) =
+        ( ( A G ( ( C G H ) F ( D G R ) ) ) F
+          ( B G ( ( C G R ) F ( D G H ) ) ) ) ) $=
+      ( vr vs vt co caovcld caov42d caovdilemd oveq12d cv wcel w3a wceq caovclg
+      wa simpr1 3adantr1 caovcomg syldan 3anrot caovdirg sylan2b eqcomd ancom2s
+      jca 3adantr3 3adantr2 3eqtrd caovdid 3eqtr4d ) AEGMLUJZLUJZFHMLUJZLUJZKUJ
+      ZEHILUJZLUJZFGILUJZLUJZKUJZKUJVQWBKUJZWDVSKUJZKUJEGLUJFHLUJKUJMLUJZEHLUJF
+      GLUJKUJILUJZKUJEVPWAKUJLUJZFWCVRKUJLUJZKUJABCDVQVSWBWDJKABCEVPJJJLQRABCGM
+      JJJLQTUBUKZUKABCFVRJJJLQSABCHMJJJLQUAUBUKZUKABCEWAJJJLQRABCHIJJJLQUAUCUKZ
+      UKUDUEABCFWCJJJLQSABCGIJJJLQTUCUKZUKUFULAWHVTWIWEKABCDEFGHJKLMNOPQRSTUAUB
+      UMABCDEFHGJKLINOPQRSUATUCUMUNAWJWFWKWGKABCDEVPWAJKLKJABUOZJUPZCUOZJUPZDUO
+      ZJUPZUQZUTZWPWRWTKUJZLUJZXDWPLUJZWRWPLUJZWTWPLUJZKUJZWPWRLUJZWPWTLUJZKUJA
+      XBWQXDJUPZUTXEXFURXCWQXLAWQWSXAVAAWSXAXLWQAUGUHWRWTJJJKABCUGUOZUHUOZJJJKU
+      FUSUSVBVJAUGUHWPXDJLABCXMXNJLNVCZVCVDXBAWSXAWQUQXFXIURWQWSXAVEAUGUHUIWRWT
+      WPJKLKJABCDXMXNUIUOJKLKJOVFVFVGXCXGXJXHXKKAWQWSXGXJURXAAWQWSUTUTXJXGNVHVK
+      AWQXAXHXKURZWSAXAWQXPAUGUHWTWPJLXOVCVIVLUNVMZRWLWNVNABCDFWCVRJKLKJXQSWOWM
+      VNUNVO $.
   $}
 
   ${
@@ -57018,6 +57050,17 @@ $)
     ecid $p |- [ A ] `' _E = A $=
       ( vy cep ccnv cec cv wcel wbr vex elec brcnv epelc 3bitri eqriv ) CADEZFZ
       ACGZQHARPIRADIRAHRAPCJZBKARDBSLRABMNO $.
+  $}
+
+  ${
+    $d y A $.  $d y V $.
+    $( A set is equal to its converse epsilon coset.  (Note: converse epsilon
+       is not an equivalence relation.)  (Contributed by Jim Kingdon,
+       8-Jan-2020.) $)
+    ecidg $p |- ( A e. V -> [ A ] `' _E = A ) $=
+      ( vy wcel cep ccnv cec cv wbr cvv wb elecg mpan brcnvg mpan2 epelg 3bitrd
+      vex eqrdv ) ABDZCAEFZGZATCHZUBDZAUCUAIZUCAEIZUCADUCJDZTUDUEKCRZUCAUAJBLMT
+      UGUEUFKUHAUCBJENOUCABPQS $.
   $}
 
   ${
@@ -63579,6 +63622,1594 @@ $)
       DWGTSWKWAWHULUMUNVMWRXLXMWSWJWIUOXEXPXSXKVQWDWGVTUPUQUR $.
   $}
 
+  ${
+    $d a b c d f g h s t u v w x y $.
+    $( Decomposing signed reals into positive reals.  Lemma for ~ addsrpr and
+       ~ mulsrpr .  (Contributed by Jim Kingdon, 30-Dec-2019.) $)
+    prsrlem1 $p |- ( (
+        ( A e. ( ( P. X. P. ) /. ~R ) /\ B e. ( ( P. X. P. ) /. ~R ) )
+        /\ ( ( A = [ <. w , v >. ] ~R /\ B = [ <. u , t >. ] ~R )
+        /\ ( A = [ <. s , f >. ] ~R /\ B = [ <. g , h >. ] ~R ) ) ) -> (
+        ( ( ( w e. P. /\ v e. P. ) /\ ( s e. P. /\ f e. P. ) )
+          /\ ( ( u e. P. /\ t e. P. ) /\ ( g e. P. /\ h e. P. ) ) )
+        /\ ( ( w +P. f ) = ( v +P. s ) /\ ( u +P. h ) = ( t +P. g ) ) ) ) $=
+      ( cnp cer wcel wa cv cop cec wceq cpp co vx vy va vb vc cxp cqs cdm enrer
+      vd wer erdm ax-mp simprll simpll eqeltrrd ecelqsdm sylancr opelxp simprrl
+      sylib jca simprlr simplr simprrr wbr eqtr3d a1i mpbird wb df-enr ecopoveq
+      erth syl2anc mpbid jca31 ) EKKUFZLUGZMZFVRMZNZEAOZBOZPZLQZRZFCOZDOZPZLQZR
+      ZNZEJOZGOZPZLQZRZFHOZIOZPZLQZRZNZNZNZWBKMWCKMNZWMKMWNKMNZNWGKMWHKMNZWRKMW
+      SKMNZNWBWNSTWCWMSTRZWGWSSTWHWRSTRZNXEXFXGXEWDVQMZXFXELUHVQRZWEVRMXLVQLUKZ
+      XMUIVQLULUMZXEEWEVRWAWFWKXCUNZVSVTXDUOZUPVQWDLUQURZWBWCKKUSVAZXEWOVQMZXGX
+      EXMWPVRMXTXOXEEWPVRWAWLWQXBUTZXQUPVQWOLUQURWMWNKKUSVAZVBXEXHXIXEWIVQMZXHX
+      EXMWJVRMYCXOXEFWJVRWAWFWKXCVCZVSVTXDVDZUPVQWILUQURZWGWHKKUSVAZXEWTVQMZXIX
+      EXMXAVRMYHXOXEFXAVRWAWLWQXBVEZYEUPVQWTLUQURWRWSKKUSVAZVBXEXJXKXEWDWOLVFZX
+      JXEYKWEWPRXEEWEWPXPYAVGXEWDWOLVQXNXEUIVHZXRVMVIXEXFXGYKXJVJXSYBUAUBUCUDUE
+      UJWBWCWMWNSLKUAUBUCUDUEUJVKZVLVNVOXEWIWTLVFZXKXEYNWJXARXEFWJXAYDYIVGXEWIW
+      TLVQYLYFVMVIXEXHXIYNXKVJYGYJUAUBUCUDUEUJWGWHWRWSSLKYMVLVNVOVBVP $.
+  $}
+
+  ${
+    $d A f g h q s t u v w z $.  $d B f g h q s t u v w z $.
+    $( There is at most one result from adding signed reals.  (Contributed by
+       Jim Kingdon, 30-Dec-2019.) $)
+    addsrmo $p |- ( ( A e. ( ( P. X. P. ) /. ~R ) /\
+        B e. ( ( P. X. P. ) /. ~R ) ) -> E* z E. w E. v E. u E. t
+        ( ( A = [ <. w , v >. ] ~R /\ B = [ <. u , t >. ] ~R )
+        /\ z = [ <. ( w +P. u ) , ( v +P. t ) >. ] ~R ) ) $=
+      ( vq vs cnp cer wcel wa cv cop cec wceq cpp co wex vf cxp cqs wal wmo wer
+      vg vh wi enrer a1i wbr prsrlem1 addcmpblnr imp syl erthi adantrlr simprlr
+      adantrrr simprrr 3eqtr4d expr exlimdvv impd alrimivv opeq12 eceq1d eqeq2d
+      ex anbi1d simpl oveq1d simpr opeq12d anbi12d anbi2d oveq2d cbvex4v anbi2i
+      imbi1i 2albii sylibr eqeq1 4exbidv mo4 ) FJJUBZKUCZLGWHLMZFBNZCNZOZKPZQZG
+      DNZENZOZKPZQZMZANZWJWORSZWKWPRSZOZKPZQZMZETDTZCTBTZWTHNZXEQZMZETDTCTBTZMZ
+      XAXJQZUIZHUDAUDZXIAUEWIXIFINZUANZOZKPZQZGUGNZUHNZOZKPZQZMZXJXRYCRSZXSYDRS
+      ZOZKPZQZMZUHTUGTZUATITZMZXOUIZHUDAUDXQWIYRAHWIXIYPXOWIXHYPXOUIZBCWIXGYSDE
+      WIXGYSWIXGMZYOXOIUAYTYNXOUGUHWIXGYNXOWIXGYNMMXEYLXAXJWIXGYHXEYLQZYMWIWTYH
+      UUAXFWIWTYHMMZXDYKKWGWGKUFUUBUJUKUUBWJJLWKJLMXRJLXSJLMMWOJLWPJLMYCJLYDJLM
+      MMZWJXSRSWKXRRSQWOYDRSWPYCRSQMZMXDYKKULZBCDEFGUAUGUHIUMUUCUUDUUEWJWKXRXSY
+      CYDWOWPUNUOUPUQURUTWIWTXFYNUSWIXGYHYMVAVBVCVDVDVJVDVDVEVFXPYRAHXNYQXOXMYP
+      XIXLYBWSMZXJXRWORSZXSWPRSZOZKPZQZMYNBCDEIUAUGUHWJXRQZWKXSQZMZWTUUFXKUUKUU
+      NWNYBWSUUNWMYAFUUNWLXTKWJWKXRXSVGVHVIVKUUNXEUUJXJUUNXDUUIKUUNXBUUGXCUUHUU
+      NWJXRWORUULUUMVLVMUUNWKXSWPRUULUUMVNVMVOVHVIVPWOYCQZWPYDQZMZUUFYHUUKYMUUQ
+      WSYGYBUUQWRYFGUUQWQYEKWOWPYCYDVGVHVIVQUUQUUJYLXJUUQUUIYKKUUQUUGYIUUHYJUUQ
+      WOYCXRRUUOUUPVLVRUUQWPYDXSRUUOUUPVNVRVOVHVIVPVSVTWAWBWCXIXMAHXOXGXLBCDEXO
+      XFXKWTXAXJXEWDVQWEWFWC $.
+
+    $( There is at most one result from multiplying signed reals.  (Contributed
+       by Jim Kingdon, 30-Dec-2019.) $)
+    mulsrmo $p |- ( ( A e. ( ( P. X. P. ) /. ~R ) /\
+        B e. ( ( P. X. P. ) /. ~R ) ) -> E* z E. w E. v E. u E. t
+        ( ( A = [ <. w , v >. ] ~R /\ B = [ <. u , t >. ] ~R )
+        /\ z = [ <. ( ( w .P. u ) +P. ( v .P. t ) ) ,
+          ( ( w .P. t ) +P. ( v .P. u ) ) >. ] ~R ) ) $=
+      ( vq cnp cer wcel wa cv cop cec wceq cmp co cpp wex vs vf cxp cqs wal wmo
+      vg vh wi wer enrer a1i wbr prsrlem1 mulcmpblnr imp erthi adantrlr simprlr
+      syl adantrrr simprrr 3eqtr4d expr exlimdvv ex impd alrimivv opeq12 eceq1d
+      eqeq2d anbi1d oveq1d oveq12d opeq12d anbi12d anbi2d oveq2d cbvex4v anbi2i
+      simpl simpr imbi1i 2albii sylibr eqeq1 4exbidv mo4 ) FIIUCZJUDZKGWJKLZFBM
+      ZCMZNZJOZPZGDMZEMZNZJOZPZLZAMZWLWQQRZWMWRQRZSRZWLWRQRZWMWQQRZSRZNZJOZPZLZ
+      ETDTZCTBTZXBHMZXKPZLZETDTCTBTZLZXCXPPZUIZHUEAUEZXOAUFWKXOFUAMZUBMZNZJOZPZ
+      GUGMZUHMZNZJOZPZLZXPYDYIQRZYEYJQRZSRZYDYJQRZYEYIQRZSRZNZJOZPZLZUHTUGTZUBT
+      UATZLZYAUIZHUEAUEYCWKUUHAHWKXOUUFYAWKXNUUFYAUIZBCWKXMUUIDEWKXMUUIWKXMLZUU
+      EYAUAUBUUJUUDYAUGUHWKXMUUDYAWKXMUUDLLXKUUBXCXPWKXMYNXKUUBPZUUCWKXBYNUUKXL
+      WKXBYNLLZXJUUAJWIWIJUJUULUKULUULWLIKWMIKLYDIKYEIKLLWQIKWRIKLYIIKYJIKLLLZW
+      LYESRWMYDSRPWQYJSRWRYISRPLZLXJUUAJUMZBCDEFGUBUGUHUAUNUUMUUNUUOWLWMYDYEYIY
+      JWQWRUOUPUTUQURVAWKXBXLUUDUSWKXMYNUUCVBVCVDVEVEVFVEVEVGVHYBUUHAHXTUUGYAXS
+      UUFXOXRYHXALZXPYDWQQRZYEWRQRZSRZYDWRQRZYEWQQRZSRZNZJOZPZLUUDBCDEUAUBUGUHW
+      LYDPZWMYEPZLZXBUUPXQUVEUVHWPYHXAUVHWOYGFUVHWNYFJWLWMYDYEVIVJVKVLUVHXKUVDX
+      PUVHXJUVCJUVHXFUUSXIUVBUVHXDUUQXEUURSUVHWLYDWQQUVFUVGWAZVMUVHWMYEWRQUVFUV
+      GWBZVMVNUVHXGUUTXHUVASUVHWLYDWRQUVIVMUVHWMYEWQQUVJVMVNVOVJVKVPWQYIPZWRYJP
+      ZLZUUPYNUVEUUCUVMXAYMYHUVMWTYLGUVMWSYKJWQWRYIYJVIVJVKVQUVMUVDUUBXPUVMUVCU
+      UAJUVMUUSYQUVBYTUVMUUQYOUURYPSUVMWQYIYDQUVKUVLWAZVRUVMWRYJYEQUVKUVLWBZVRV
+      NUVMUUTYRUVAYSSUVMWRYJYDQUVOVRUVMWQYIYEQUVNVRVNVOVJVKVPVSVTWCWDWEXOXSAHYA
+      XMXRBCDEYAXLXQXBXCXPXKWFVQWGWHWE $.
+  $}
+
+  ${
+    $d x y z w v u t s f g h a b c d A $.
+    $d x y z w v u t s f g h a b c d B $.
+    $d x y z w v u t s f g h a b c d C $.
+    $d x y z w v u t s f g h a b c d D $.
+    $( Addition of signed reals in terms of positive reals.  (Contributed by
+       NM, 3-Sep-1995.)  (Revised by Mario Carneiro, 12-Aug-2015.) $)
+    addsrpr $p |- ( ( ( A e. P. /\ B e. P. ) /\
+                     ( C e. P. /\ D e. P. ) ) ->
+                ( [ <. A , B >. ] ~R +R [ <. C , D >. ] ~R ) =
+                   [ <. ( A +P. C ) , ( B +P. D ) >. ] ~R ) $=
+      ( vw vv vu vt vz cnp wcel wa cop cer cec cv wceq cpp co wex vx vy cxp cqs
+      cplr opelxpi enrex ecelqsi syl anim12i pm3.2i opeq12 eceq1d eqeq2d anbi1d
+      eqid simpl oveq1d simpr opeq12d anbi12d spc2egv anbi2d oveq2d 2eximdv cvv
+      sylan9 mp2ani wi ecexg ax-mp w3a simp1 eqeq1d simp2 simp3 4exbidv addsrmo
+      coprab df-plr df-nr eleq2i anbi12i anbi1i oprabbii eqtri ovig mp3an3 sylc
+      cnr ) AJKBJKLZCJKDJKLZLZABMZNOZJJUCZNUDZKZCDMZNOZWQKZLWOEPZFPZMZNOZQZWTGP
+      ZHPZMZNOZQZLZACRSZBDRSZMZNOZXBXGRSZXCXHRSZMZNOZQZLZHTGTZFTETZWOWTUESXPQZW
+      KWRWLXAWKWNWPKWRABJJUFWPWNNUGUHUIWLWSWPKXACDJJUFWPWSNUGUHUIUJWMWOWOQZWTWT
+      QZLZXPXPQZYDYFYGWOUPWTUPUKXPUPWKYHYILZXFYGLZXPXBCRSZXCDRSZMZNOZQZLZFTETWL
+      YDYQYJEFABJJXBAQZXCBQZLZYKYHYPYIYTXFYFYGYTXEWOWOYTXDWNNXBXCABULUMUNUOYTYO
+      XPXPYTYNXONYTYLXMYMXNYTXBACRYRYSUQURYTXCBDRYRYSUSURUTUMUNVAVBWLYQYCEFYBYQ
+      GHCDJJXGCQZXHDQZLZXLYKYAYPUUCXKYGXFUUCXJWTWTUUCXIWSNXGXHCDULUMUNVCUUCXTYO
+      XPUUCXSYNNUUCXQYLXRYMUUCXGCXBRUUAUUBUQVDUUCXHDXCRUUAUUBUSVDUTUMUNVAVBVEVG
+      VHWRXAXPVFKZYDYEVINVFKUUDUGXOVFNVJVKUAPZXEQZUBPZXJQZLZIPZXTQZLZHTGTFTETZY
+      DUAUBIWOWTXPVFWQWQUEUUEWOQZUUGWTQZUUJXPQZVLZUULYBEFGHUUQUUIXLUUKYAUUQUUFX
+      FUUHXKUUQUUEWOXEUUNUUOUUPVMVNUUQUUGWTXJUUNUUOUUPVOVNVAUUQUUJXPXTUUNUUOUUP
+      VPVNVAVQIEFGHUUEUUGVRUEUUEWJKZUUGWJKZLZUUMLZUAUBIVSUUEWQKZUUGWQKZLZUUMLZU
+      AUBIVSUAUBIEFGHVTUVAUVEUAUBIUUTUVDUUMUURUVBUUSUVCWJWQUUEWAWBWJWQUUGWAWBWC
+      WDWEWFWGWHWI $.
+
+    $( Multiplication of signed reals in terms of positive reals.  (Contributed
+       by NM, 3-Sep-1995.)  (Revised by Mario Carneiro, 12-Aug-2015.) $)
+    mulsrpr $p |- ( ( ( A e. P. /\ B e. P. ) /\
+                     ( C e. P. /\ D e. P. ) ) ->
+                ( [ <. A , B >. ] ~R .R [ <. C , D >. ] ~R ) =
+                   [ <. ( ( A .P. C ) +P. ( B .P. D ) ) ,
+                              ( ( A .P. D ) +P. ( B .P. C ) ) >. ] ~R ) $=
+      ( vw vv vu vt vz cnp wcel wa cop cer cec wceq cmp co cpp wex vx vy cxp cv
+      cqs cmr opelxpi enrex ecelqsi syl eqid pm3.2i opeq12 eceq1d eqeq2d anbi1d
+      anim12i simpl oveq1d simpr oveq12d opeq12d anbi12d spc2egv anbi2d 2eximdv
+      oveq2d sylan9 mp2ani cvv ecexg ax-mp w3a simp1 eqeq1d simp2 simp3 4exbidv
+      wi mulsrmo coprab df-mr df-nr eleq2i anbi12i anbi1i oprabbii eqtri mp3an3
+      cnr ovig sylc ) AJKBJKLZCJKDJKLZLZABMZNOZJJUCZNUEZKZCDMZNOZWSKZLWQEUDZFUD
+      ZMZNOZPZXBGUDZHUDZMZNOZPZLZACQRZBDQRZSRZADQRZBCQRZSRZMZNOZXDXIQRZXEXJQRZS
+      RZXDXJQRZXEXIQRZSRZMZNOZPZLZHTGTZFTETZWQXBUFRYBPZWMWTWNXCWMWPWRKWTABJJUGW
+      RWPNUHUIUJWNXAWRKXCCDJJUGWRXANUHUIUJUQWOWQWQPZXBXBPZLZYBYBPZYNYPYQWQUKXBU
+      KULYBUKWMYRYSLZXHYQLZYBXDCQRZXEDQRZSRZXDDQRZXECQRZSRZMZNOZPZLZFTETWNYNUUK
+      YTEFABJJXDAPZXEBPZLZUUAYRUUJYSUUNXHYPYQUUNXGWQWQUUNXFWPNXDXEABUMUNUOUPUUN
+      UUIYBYBUUNUUHYANUUNUUDXQUUGXTUUNUUBXOUUCXPSUUNXDACQUULUUMURZUSUUNXEBDQUUL
+      UUMUTZUSVAUUNUUEXRUUFXSSUUNXDADQUUOUSUUNXEBCQUUPUSVAVBUNUOVCVDWNUUKYMEFYL
+      UUKGHCDJJXICPZXJDPZLZXNUUAYKUUJUUSXMYQXHUUSXLXBXBUUSXKXANXIXJCDUMUNUOVEUU
+      SYJUUIYBUUSYIUUHNUUSYEUUDYHUUGUUSYCUUBYDUUCSUUSXICXDQUUQUURURZVGUUSXJDXEQ
+      UUQUURUTZVGVAUUSYFUUEYGUUFSUUSXJDXDQUVAVGUUSXICXEQUUTVGVAVBUNUOVCVDVFVHVI
+      WTXCYBVJKZYNYOVSNVJKUVBUHYAVJNVKVLUAUDZXGPZUBUDZXLPZLZIUDZYJPZLZHTGTFTETZ
+      YNUAUBIWQXBYBVJWSWSUFUVCWQPZUVEXBPZUVHYBPZVMZUVJYLEFGHUVOUVGXNUVIYKUVOUVD
+      XHUVFXMUVOUVCWQXGUVLUVMUVNVNVOUVOUVEXBXLUVLUVMUVNVPVOVCUVOUVHYBYJUVLUVMUV
+      NVQVOVCVRIEFGHUVCUVEVTUFUVCWJKZUVEWJKZLZUVKLZUAUBIWAUVCWSKZUVEWSKZLZUVKLZ
+      UAUBIWAUAUBIEFGHWBUVSUWCUAUBIUVRUWBUVKUVPUVTUVQUWAWJWSUVCWCWDWJWSUVEWCWDW
+      EWFWGWHWKWIWL $.
+  $}
+
+  ${
+    $d A x y z w v u f $.  $d B x y z w v u f $.  $d C x y z w v u f $.
+    $d D x y z w v u f $.
+    $( Ordering of signed reals in terms of positive reals.  (Contributed by
+       Jim Kingdon, 2-Jan-2019.) $)
+    ltsrprg $p |- ( ( ( A e. P. /\ B e. P. ) /\ ( C e. P. /\ D e. P. ) ) ->
+        ( [ <. A , B >. ] ~R <R [ <. C , D >. ] ~R <->
+        ( A +P. D ) <P ( B +P. C ) ) ) $=
+      ( vx vy cv cpp co cltp wbr cer cnp wcel wa wceq syl2anc addassprg syl3anc
+      addclpr vz vu vw vv vf cnr cltr enrex enrer df-nr df-ltr cop cec wb eqcom
+      enreceq syl6bb bi2anan9 simprlr simplrr addcomprg simprrl 3eqtr3d simplll
+      oveq12 adantl oveq1d oveq2d ad2ant2lr anim12ci an4s simpld 3eqtr4d adantr
+      simprll simplrl simprrr simpllr sylbid w3a ltaprg simprd caovord3d brecop
+      ex syld ) UAGZUBGZHIZUCGZUDGZHIZJKZADHIZBCHIZJKZEFUAUCUDUBABCDLMUFUGUHUIU
+      JEFUAUCUDUBUKWGMNZWJMNZOZAMNZBMNZOZOZWKMNZWHMNZOZCMNZDMNZOZOZOZWGWJULLUMA
+      BULLUMPZWKWHULLUMCDULLUMPZOZWIWOHIZWLWNHIZPZWMWPUNXKXNWGBHIZWJAHIZPZWHCHI
+      ZWKDHIZPZOZXQXCXLXTXJXMYCWGWJABUPXJXMYBYAPYCWKWHCDUPYBYAUOUQURXKYDXQXKYDO
+      XRYAHIZXSYBHIZXOXPYDYEYFPXKXRXSYAYBHVEVFXKXOYEPYDXKWGWHWOHIZHIZWGBYAHIZHI
+      ZXOYEXKYGYIWGHXKWHBHIZCHIZBWHHIZCHIZYGYIXKXEXAYLYNPXCXDXEXIUSZWSWTXAXJUTZ
+      XEXAOYKYMCHWHBVAVGQXKXEXAXGYLYGPYOYPXCXFXGXHVBZWHBCRSXKXAXEXGYNYIPYPYOYQB
+      WHCRSVCVHXKWQXEWOMNZXOYHPWQWRXBXJVDZYOXKYRWLMNZWSXFXBXIYRYTOWSXFOYTXBXIOY
+      RWRXDYTWQXEWJWKTVIXAXGYRWTXHBCTVIVJVKZVLZWGWHWORSXKWQXAYAMNZYEYJPYSYPXKXE
+      XGUUCYOYQWHCTQWGBYARSVMVNXKXPYFPYDXKWJWKWNHIZHIZWJAYBHIZHIZXPYFXKUUDUUFWJ
+      HXKWKAHIZDHIZAWKHIZDHIZUUDUUFXKUUHUUJDHXKXDWTUUHUUJPXCXDXEXIVOZWSWTXAXJVP
+      ZWKAVAQVGXKXDWTXHUUIUUDPUULUUMXCXFXGXHVQZWKADRSXKWTXDXHUUKUUFPUUMUULUUNAW
+      KDRSVCVHXKWRXDWNMNZXPUUEPWQWRXBXJVRZUULXKWTXHUUOUUMUUNADTQZWJWKWNRSXKWRWT
+      YBMNZYFUUGPUUPUUMXKXDXHUURUULUUNWKDTQWJAYBRSVMVNVMWEVSXKEFUEWIWOWLWNJMHEG
+      ZMNZFGZMNZUEGZMNVTUUSUVAJKUVCUUSHIUVCUVAHIJKUNXKUUSUVAUVCWAVFXKWQXEWIMNYS
+      YOWGWHTQUUBXKYRYTUUAWBUUTUVBOUUSUVAHIUVAUUSHIPXKUUSUVAVAVFUUQWCWFWD $.
+  $}
+
+  $( Greater than zero in terms of positive reals.  (Contributed by NM,
+     13-May-1996.) $)
+  gt0srpr $p |- ( 0R <R [ <. A , B >. ] ~R <-> B <P A ) $=
+    ( c0r cop cer cec cltr wbr cnp wcel wa cltp cxp cnr brel c1p cpp co wb 1pr
+    cdm wceq cqs wer enrer ax-mp ltrelsr simprd df-nr syl6eleq ecelqsdm sylancr
+    erdm opelxp sylib ltrelpr ancomd df-0r breq1i ltsrprg mpanl12 syl5bb ltaprg
+    mp3an3 ancoms bitr4d pm5.21nii ) CABDZEFZGHZAIJZBIJZKZBALHZVJVHIIMZJZVMVJEU
+    AVOUBZVIVOEUCZJVPVOEUDVQUEVOEUMUFVJVINVRVJCNJVINJCVINNGUGOUHUIUJVOVHEUKULAB
+    IIUNUOVNVLVKBAIILUPOUQVMVJPBQRPAQRLHZVNVJPPDEFZVIGHZVMVSCVTVIGURUSPIJZWBVMW
+    AVSSTTPPABUTVAVBVLVKVNVSSZVLVKWBWCTBAPVCVDVEVFVG $.
+
+  $( The empty set is not a signed real.  (Contributed by NM, 25-Aug-1995.)
+     (Revised by Mario Carneiro, 10-Jul-2014.) $)
+  0nsr $p |- -. (/) e. R. $=
+    ( c0 wceq cnr wcel eqid wne cnp cxp cer cqs cdm wer enrer erdm ax-mp elqsn0
+    wn mpan df-nr eleq2s necon2bi ) AABACDZQAEUBAAAAFZAGGHZIJZCIKUDBZAUEDUCUDIL
+    UFMUDINOUDAIPRSTUAO $.
+
+  $( The constant ` 0R ` is a signed real.  (Contributed by NM, 9-Aug-1995.) $)
+  0r $p |- 0R e. R. $=
+    ( c1p cop cer cec cnp cxp cqs c0r cnr 1pr opelxpi mp2an enrex ecelqsi ax-mp
+    wcel df-0r df-nr 3eltr4i ) AABZCDZEEFZCGZHITUBPZUAUCPAEPZUEUDJJAAEEKLUBTCMN
+    OQRS $.
+
+  $( The constant ` 1R ` is a signed real.  (Contributed by NM, 9-Aug-1995.) $)
+  1sr $p |- 1R e. R. $=
+    ( c1p cpp co cop cer cec cnp cxp cqs c1r cnr wcel 1pr addclpr mp2an opelxpi
+    enrex ecelqsi ax-mp df-1r df-nr 3eltr4i ) AABCZADZEFZGGHZEIZJKUDUFLZUEUGLUC
+    GLZAGLZUHUJUJUIMMAANOMUCAGGPOUFUDEQRSTUAUB $.
+
+  $( The constant ` -1R ` is a signed real.  (Contributed by NM,
+     9-Aug-1995.) $)
+  m1r $p |- -1R e. R. $=
+    ( c1p cpp cop cer cec cnp cxp cqs cm1r cnr wcel addclpr mp2an opelxpi enrex
+    co 1pr ecelqsi ax-mp df-m1r df-nr 3eltr4i ) AAABPZCZDEZFFGZDHZIJUDUFKZUEUGK
+    AFKZUCFKZUHQUIUIUJQQAALMAUCFFNMUFUDDORSTUAUB $.
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Closure of addition on signed reals.  (Contributed by NM,
+       25-Jul-1995.) $)
+    addclsr $p |- ( ( A e. R. /\ B e. R. ) -> ( A +R B ) e. R. ) $=
+      ( vx vy vz vw cnr wcel wa cplr co cnp cer cop cec df-nr wceq eleq1d cpp
+      cv cxp cqs oveq1 oveq2 addsrpr addclpr anim12i an4s opelxpi enrex ecelqsi
+      3syl eqeltrd 2ecoptocl syl6eleqr ) AGHBGHIABJKZLLUAZMUBZGCTZDTZNMOZETZFTZ
+      NMOZJKZURHAVDJKZURHUPURHCDEFABLLMGPVAAQVEVFURVAAVDJUCRVDBQVFUPURVDBAJUDRU
+      SLHZUTLHZIVBLHZVCLHZIIZVEUSVBSKZUTVCSKZNZMOZURUSUTVBVCUEVKVLLHZVMLHZIZVNU
+      QHVOURHVGVIVHVJVRVGVIIVPVHVJIVQUSVBUFUTVCUFUGUHVLVMLLUIUQVNMUJUKULUMUNPUO
+      $.
+  $}
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Closure of multiplication on signed reals.  (Contributed by NM,
+       10-Aug-1995.) $)
+    mulclsr $p |- ( ( A e. R. /\ B e. R. ) -> ( A .R B ) e. R. ) $=
+      ( vx vy vz vw cnr wcel wa cmr co cnp cer cop cec df-nr wceq cmp mulclpr
+      cv cxp cqs oveq1 eleq1d oveq2 cpp mulsrpr addclpr syl2an an4s jca opelxpi
+      an42s enrex ecelqsi 3syl eqeltrd 2ecoptocl syl6eleqr ) AGHBGHIABJKZLLUAZM
+      UBZGCTZDTZNMOZETZFTZNMOZJKZVBHAVHJKZVBHUTVBHCDEFABLLMGPVEAQVIVJVBVEAVHJUC
+      UDVHBQVJUTVBVHBAJUEUDVCLHZVDLHZIVFLHZVGLHZIIZVIVCVFRKZVDVGRKZUFKZVCVGRKZV
+      DVFRKZUFKZNZMOZVBVCVDVFVGUGVOVRLHZWALHZIWBVAHWCVBHVOWDWEVKVMVLVNWDVKVMIVP
+      LHVQLHWDVLVNIVCVFSVDVGSVPVQUHUIUJVKVNVLVMWEVKVNIVSLHVTLHWEVLVMIVCVGSVDVFS
+      VSVTUHUIUMUKVRWALLULVAWBMUNUOUPUQURPUS $.
+  $}
+
+  ${
+    $d f g h r s t u v w x y z A $.  $d u v w z B $.  $d u v w x y z C $.
+    $( Addition of signed reals is commutative.  (Contributed by Jim Kingdon,
+       3-Jan-2020.) $)
+    addcomsrg $p |- ( ( A e. R. /\ B e. R. ) -> ( A +R B ) = ( B +R A ) ) $=
+      ( vx vy vz vw cnr cv cpp co cplr cer cnp df-nr addsrpr wcel wceq ad2ant2r
+      addcomprg ad2ant2l ecovicom ) CDEFABGCHZEHZIJZKLMDHZFHZIJZUCUBIJZUFUEIJZN
+      UBUEUCUFOUCUFUBUEOUBMPZUCMPZUDUHQUEMPZUFMPZUBUCSRULUMUGUIQUJUKUEUFSTUA $.
+
+    $( Addition of signed reals is associative.  (Contributed by Jim Kingdon,
+       3-Jan-2020.) $)
+    addasssrg $p |- ( ( A e. R. /\ B e. R. /\ C e. R. ) ->
+        ( ( A +R B ) +R C ) = ( A +R ( B +R C ) ) ) $=
+      ( vx vy vz vw vv vu cv cpp co cnp addsrpr wcel addclpr anim12i an4s wceq
+      wa cnr cer 3adant1r 3adant2r 3adant3r 3adant1l 3adant2l 3adant3l ecoviass
+      cplr df-nr addassprg ) DEFGHIABCUAUJGJZIJZKLZUBMDJZFJZKLZEJZUMKLZURHJZKLZ
+      UTUNKLZUPUQVAKLZKLZUSUOKLZVDUKUPUSUQUMNUQUMVAUNNURUTVAUNNUPUSVDUONUPMOZUQ
+      MOZUSMOZUMMOZURMOZUTMOZTVGVHTVKVIVJTVLUPUQPUSUMPQRVHVAMOZVJUNMOZVDMOZUOMO
+      ZTVHVMTVOVJVNTVPUQVAPUMUNPQRVGVITZVHVJTZVMVBVESZVNVQVHVMVSVJVGVHVMVSVIUPU
+      QVAULUCUDUEVQVRVNVCVFSZVMVQVJVNVTVHVIVJVNVTVGUSUMUNULUFUGUHUI $.
+
+    $( Multiplication of signed reals is commutative.  (Contributed by Jim
+       Kingdon, 3-Jan-2020.) $)
+    mulcomsrg $p |- ( ( A e. R. /\ B e. R. ) -> ( A .R B ) = ( B .R A ) ) $=
+      ( vx vy vz vw cv cmp co cpp mulsrpr wcel wceq mulcomprg oveq12d ad2ant2rl
+      cnp wa ad2ant2lr mulclpr cnr cmr df-nr ad2ant2r ad2ant2l ancoms addcomprg
+      cer syl2anc eqtrd ecovicom ) CDEFABUACGZEGZHIZDGZFGZHIZJIUBUHQULUPHIZUOUM
+      HIZJIZUMULHIZUPUOHIZJIUMUOHIZUPULHIZJIZUCULUOUMUPKUMUPULUOKULQLZUOQLZRUMQ
+      LZUPQLZRRZUNVAUQVBJVFVHUNVAMVGVIULUMNUDVGVIUQVBMVFVHUOUPNUEOVJUTVDVCJIZVE
+      VJURVDUSVCJVFVIURVDMVGVHULUPNPVGVHUSVCMVFVIUOUMNSOVJVDQLZVCQLZVKVEMVFVIVL
+      VGVHVIVFVLUPULTUFPVGVHVMVFVIVHVGVMUMUOTUFSVDVCUGUIUJUK $.
+
+    $( Multiplication of signed reals is associative.  (Contributed by Jim
+       Kingdon, 3-Jan-2020.) $)
+    mulasssrg $p |- ( ( A e. R. /\ B e. R. /\ C e. R. ) ->
+        ( ( A .R B ) .R C ) = ( A .R ( B .R C ) ) ) $=
+      ( vf vg vh cv cmp co cpp cnp mulsrpr wcel wa mulclpr addclpr syl2anc wceq
+      w3a adantl vx vy vz vw vv vu vr vs vt cnr cmr cer df-nr ad2ant2r ad2ant2l
+      ad2ant2rl ad2ant2lr mulcomprg distrprg simp1 simp2 simp3 caovdir2d simp1l
+      mulassprg simp1r simp2l simp2r simp3l simp3r addcomprg addassprg ecoviass
+      jca caovlem2d ) UAUBUCUDUEUFABCUJUKUCGZUFGZHIZUDGZUEGZHIZJIZULKUAGZVPHIZU
+      BGZVSHIZJIZWCVSHIZWEVPHIZJIZWGVTHIWJVQHIJIWGVQHIWJVTHIJIWCVPVTHIZVSVQHIZJ
+      IZHIWEWBHIJIWCWBHIWEWMHIJIWMUMWCWEVPVSLVPVSVTVQLWGWJVTVQLWCWEWMWBLWCKMZWE
+      KMZNZVPKMZVSKMZNZNZWGKMZWJKMZWTWDKMZWFKMZXAWNWQXCWOWRWCVPOUNWOWRXDWNWQWEV
+      SOUOWDWFPQWTWHKMZWIKMZXBWNWRXEWOWQWCVSOUPWOWQXFWNWRWEVPOUQWHWIPQVNWSVTKMZ
+      VQKMZNZNZWMKMZWBKMZXJWKKMZWLKMZXKWQXGXMWRXHVPVTOUNWRXHXNWQXGVSVQOUOWKWLPQ
+      XJVRKMZWAKMZXLWQXHXOWRXGVPVQOUPWRXGXPWQXHVSVTOUQVRWAPQVNWPWSXISZDEFWCWEVP
+      VSVQKJHVTDGZKMZEGZKMZNZXRXTHIZXTXRHIRXQXRXTURTZXSYAFGZKMZSZXRXTJIZYEHIXRY
+      EHIXTYEHIZJIRXQYGUGUHUIXRXTYEKJHUGGZKMZUHGZKMZUIGZKMSYJYLYNJIHIYJYLHIZYJY
+      NHIJIRYGYJYLYNUSTXSYAYFUTXSYAYFVAXSYAYFVBYKYMNZYJYLJIKMYGYJYLPTYPYOYLYJHI
+      RYGYJYLURTVCTZYGYCYEHIXRYIHIRXQXRXTYEVETZYBYCKMXQXRXTOTZWNWOWSXIVDZWNWOWS
+      XIVFZWPWQWRXIVGZWPWQWRXIVHZWPWSXGXHVIZWPWSXGXHVJZYBYHXTXRJIRXQXRXTVKTZYGY
+      HYEJIXRXTYEJIJIRXQXRXTYEVLTZYBYHKMXQXRXTPTZVOXQDEFWCWEVPVSVTKJHVQYDYQYRYS
+      YTUUAUUBUUCUUEUUDUUFUUGUUHVOVM $.
+
+    $( Multiplication of signed reals is distributive.  (Contributed by Jim
+       Kingdon, 4-Jan-2020.) $)
+    distrsrg $p |- ( ( A e. R. /\ B e. R. /\ C e. R. ) ->
+        ( A .R ( B +R C ) ) = ( ( A .R B ) +R ( A .R C ) ) ) $=
+      ( vf vg vh cnp cv cpp co cmp mulsrpr wcel wa addclpr mulclpr syl2anc wceq
+      distrprg syl3anc vx vy vz vw vv vu cnr cplr cer addsrpr ad2ant2r ad2ant2l
+      cmr jca ad2ant2rl ad2ant2lr w3a simp1l simp2l simp3l simp1r simp2r simp3r
+      df-nr oveq12d addcomprg adantl addassprg caov4d eqtrd ecovidi ) UAUBUCUDU
+      EUFABCUGUHUIGUMUAHZUCHZUEHZIJZKJZUBHZUDHZUFHZIJZKJZIJZVLVTKJZVQVOKJZIJZVL
+      VMKJZVQVRKJZIJZVLVNKJZVQVSKJZIJZIJZVLVRKJZVQVMKJZIJZVLVSKJZVQVNKJZIJZIJZV
+      OVTWHWOWKWRVDVMVRVNVSUJVLVQVOVTLVLVQVMVRLVLVQVNVSLWHWOWKWRUJVMGMZVRGMZNZV
+      NGMZVSGMZNZNVOGMZVTGMZWTXCXFXAXDVMVNOUKXAXDXGWTXCVRVSOULUNVLGMZVQGMZNZXBN
+      ZWHGMZWOGMZXKWFGMZWGGMZXLXHWTXNXIXAVLVMPZUKXIXAXOXHWTVQVRPZULWFWGOQXKWMGM
+      ZWNGMZXMXHXAXRXIWTVLVRPZUOXIWTXSXHXAVQVMPZUPWMWNOQUNXJXENZWKGMZWRGMZYBWIG
+      MZWJGMZYCXHXCYEXIXDVLVNPZUKXIXDYFXHXCVQVSPZULWIWJOQYBWPGMZWQGMZYDXHXDYIXI
+      XCVLVSPZUOXIXCYJXHXDVQVNPZUPWPWQOQUNXJXBXEUQZWBWFWIIJZWGWJIJZIJWLYMVPYNWA
+      YOIYMXHWTXCVPYNRXHXIXBXEURZXJWTXAXEUSZXJXBXCXDUTZVLVMVNSTYMXIXAXDWAYORXHX
+      IXBXEVAZXJWTXAXEVBZXJXBXCXDVCZVQVRVSSTVEYMDEFWFWIWGWJGIYMXHWTXNYPYQXPQYMX
+      HXCYEYPYRYGQYMXIXAXOYSYTXQQDHZGMZEHZGMZNZUUBUUDIJZUUDUUBIJRYMUUBUUDVFVGZU
+      UCUUEFHZGMUQUUGUUIIJUUBUUDUUIIJIJRYMUUBUUDUUIVHVGZYMXIXDYFYSUUAYHQUUFUUGG
+      MYMUUBUUDOVGZVIVJYMWEWMWPIJZWNWQIJZIJWSYMWCUULWDUUMIYMXHXAXDWCUULRYPYTUUA
+      VLVRVSSTYMXIWTXCWDUUMRYSYQYRVQVMVNSTVEYMDEFWMWPWNWQGIYMXHXAXRYPYTXTQYMXHX
+      DYIYPUUAYKQYMXIWTXSYSYQYAQUUHUUJYMXIXCYJYSYRYLQUUKVIVJVK $.
+  $}
+
+  $( Minus one plus one is zero for signed reals.  (Contributed by NM,
+     5-May-1996.) $)
+  m1p1sr $p |- ( -1R +R 1R ) = 0R $=
+    ( cm1r c1r cplr co c1p cpp cop cer cec c0r df-m1r cnp wcel wceq 1pr addclpr
+    df-1r mp2an mp4an eqtr4i oveq12i df-0r addsrpr addassprg mp3an oveq2i mpbir
+    wb enreceq ) ABCDEEEFDZGHIZUJEGHIZCDZJAUKBULCKQUAJEEGHIZUMUBUMEUJFDZUJEFDZG
+    HIZUNELMZUJLMZUSURUMUQNOURURUSOOEEPRZUTOEUJUJEUCSUNUQNZEUPFDEUOFDNZUPUOEFUR
+    URURUPUONOOOEEEUDUEUFURURUOLMZUPLMZVAVBUHOOURUSVCOUTEUJPRUSURVDUTOUJEPREEUO
+    UPUISUGTTT $.
+
+  $( Minus one times minus one is plus one for signed reals.  (Contributed by
+     NM, 14-May-1996.) $)
+  m1m1sr $p |- ( -1R .R -1R ) = 1R $=
+    ( cm1r cmr c1p cpp cop cer cec c1r df-m1r oveq12i cmp cnp wcel wceq addclpr
+    co 1pr mp2an mulclpr eqtr4i df-1r mulsrpr mp4an addassprg mp3an 1idpr ax-mp
+    distrprg mulcomprg oveq1i oveq2i wb enreceq mpbir ) AABPCCCDPZEFGZUPBPZHAUP
+    AUPBIIJHUOCEFGZUQUAUQCCKPZUOUOKPZDPZCUOKPZUOCKPZDPZEFGZURCLMZUOLMZVFVGUQVEN
+    QVFVFVGQQCCORZQVHCUOCUOUBUCURVENZUOVDDPZCVADPZNZVJCCVDDPZDPZVKVFVFVDLMZVJVN
+    NQQVBLMZVCLMZVOVFVGVPQVHCUOSRVGVFVQVHQUOCSRVBVCORZCCVDUDUEVAVMCDUSCUTVDDVFU
+    SCNQCUFUGUTVCVCDPZVDVGVFVFUTVSNVHQQUOCCUHUEVBVCVCDVFVGVBVCNQVHCUOUIRUJTJUKT
+    VGVFVALMZVOVIVLULVHQUSLMZUTLMZVTVFVFWAQQCCSRVGVGWBVHVHUOUOSRUSUTORVRUOCVAVD
+    UMUCUNTTT $.
+
+  ${
+    $d f g h r s t x y z w v u $.
+    $( Signed real 'less than' is a transitive relation.  (Contributed by Jim
+       Kingdon, 4-Jan-2019.) $)
+    lttrsr $p |- ( ( f e. R. /\ g e. R. /\ h e. R. ) ->
+        ( ( f <R g /\ g <R h ) -> f <R h ) ) $=
+      ( vr vs vt cv cer cltr wbr wa cnp wceq wcel cpp co cltp addclpr syl2anc
+      wb vx vy vz vw vv vu cop cec cnr df-nr breq1 anbi1d imbi12d breq2 anbi12d
+      wi imbi1d anbi2d ltsrprg ltaprg adantl simp1l simp2r simp1r simp2l simp3r
+      3adant3 addcomprg caovord2d addassprg syl3anc breq12d bitrd simp3l ltsopr
+      w3a 3adant1 ltrelpr biimprd caov12d 3adant2 3imtr4d syl5 sylbid 3ecoptocl
+      sotri ) UAGZUBGZUGHUHZUCGZUDGZUGHUHZIJZWLUEGZUFGZUGHUHZIJZKZWIWPIJZUPAGZW
+      LIJZWQKZWTWPIJZUPWTBGZIJZXDWPIJZKZXCUPXEXDCGZIJZKZWTXHIJZUPUAUBUCUDUEUFWT
+      XDXHLHUIUJWIWTMZWRXBWSXCXLWMXAWQWIWTWLIUKULWIWTWPIUKUMWLXDMZXBXGXCXMXAXEW
+      QXFWLXDWTIUNWLXDWPIUKUOUQWPXHMZXGXJXCXKXNXFXIXEWPXHXDIUNURWPXHWTIUNUMWGLN
+      ZWHLNZKZWJLNZWKLNZKZWNLNZWOLNZKZVPZWRWGWKWOOPOPZWHWJWOOPZOPZQJZYGWHWKWNOP
+      ZOPZQJZKZWSYDWMYHWQYKYDWMWGWKOPZWHWJOPZQJZYHXQXTWMYOTYCWGWHWJWKUSVGYDYOYM
+      WOOPZYNWOOPZQJYHYDDEFYMYNWOQLODGZLNZEGZLNZFGZLNVPZYRYTQJUUBYROPUUBYTOPQJT
+      YDYRYTUUBUTVAYDXOXSYMLNXOXPXTYCVBZXQXRXSYCVCZWGWKRSYDXPXRYNLNXOXPXTYCVDZX
+      QXRXSYCVEZWHWJRSXQXTYAYBVFZYSUUAKYRYTOPZYTYROPMYDYRYTVHVAZVIYDYPYEYQYGQYD
+      XOXSYBYPYEMUUDUUEUUHWGWKWOVJVKYDXPXRYBYQYGMUUFUUGUUHWHWJWOVJVKVLVMVMYDWQY
+      FYIQJZYKXTYCWQUUKTXQWJWKWNWOUSVQYDYFLNZYILNZXPUUKYKTYDXRYBUULUUGUUHWJWORS
+      YDXSYAUUMUUEXQXTYAYBVNZWKWNRSUUFYFYIWHUTVKVMUOYLYEYJQJZYDWSYEYGYJQLVOVRWF
+      YDWKWGWOOPZOPZWKWHWNOPZOPZQJZUUPUURQJZUUOWSYDUVAUUTYDUUPLNZUURLNZXSUVAUUT
+      TYDXOYBUVBUUDUUHWGWORSYDXPYAUVCUUFUUNWHWNRSUUEUUPUURWKUTVKVSYDYEUUQYJUUSQ
+      YDDEFWGWKWOLOUUDUUEUUHUUJUUCUUIUUBOPYRYTUUBOPOPMYDYRYTUUBVJVAZVTYDDEFWHWK
+      WNLOUUFUUEUUNUUJUVDVTVLXQYCWSUVATXTWGWHWNWOUSWAWBWCWDWE $.
+  $}
+
+  ${
+    $d x y z w v u f g h $.
+    $( Signed real 'less than' is a partial order.  (Contributed by Jim
+       Kingdon, 4-Jan-2019.) $)
+    ltposr $p |- <R Po R. $=
+      ( vf vg vh vx vy cnr cltr wpo wtru cv wcel wbr wn cer cnp cpp cltp adantl
+      wa co cop cec df-nr wceq id breq12d notbid ltsopr soirri addcomprg breq2d
+      ltrelpr mtbii wb ltsrprg anidms mtbird ecoptocl w3a wi lttrsr ispod trud
+      ) FGHIABCFGAJZFKZVDVDGLZMZIDJZEJZUANUBZVJGLZMVGDEVDOONFUCVJVDUDZVKVFVLVJV
+      DVJVDGVLUEZVMUFUGVHOKVIOKSZVKVHVIPTZVIVHPTZQLZVNVOVOQLVQVOQOUHULUIVNVOVPV
+      OQVHVIUJUKUMVNVKVQUNVHVIVHVIUOUPUQURRVEBJZFKCJZFKUSVDVRGLVRVSGLSVDVSGLUTI
+      ABCVARVBVC $.
+  $}
+
+  ${
+    $d a b c d e f r s t x y z w v u $.
+    $( Signed real 'less than' is a strict ordering.  (Contributed by NM,
+       19-Feb-1996.) $)
+    ltsosr $p |- <R Or R. $=
+      ( vx vy vr vs vt cnr cltr cv wbr wo wi cnp wceq wcel cltp addclpr syl2anc
+      cpp co wb vz va vb vc vd ve vf wor wpo wral ltposr cop df-nr breq1 orbi1d
+      cer cec imbi12d breq2 orbi2d imbi2d wa simp1l simp3r simp2r simp2l simp1r
+      orbi12d simp3l ltsopr sowlin mpan syl3anc ltaprg addcomprg adantl caov12d
+      addassprg caovassd eqtr4d caov32d eqtr3d breq12d bitrd caovord2d caovcomd
+      w3a eqtrd breq1d bitr4d 3imtr4d ltsrprg 3adant3 3adant2 3adant1 3ecoptocl
+      ancoms rgen3 df-iso mpbir2an ) FGUHFGUIAHZBHZGIZXAUAHZGIZXDXBGIZJZKZUAFUJ
+      BFUJAFUJUKXHABUAFFFUBHZUCHZULUPUQZUDHZUEHZULUPUQZGIZXKUFHZUGHZULUPUQZGIZX
+      RXNGIZJZKXAXNGIZXAXRGIZXTJZKXCYCXRXBGIZJZKXHUBUCUDUEUFUGXAXBXDLUPFUMXKXAM
+      ZXOYBYAYDXKXAXNGUNYGXSYCXTXKXAXRGUNUOURXNXBMZYBXCYDYFXNXBXAGUSYHXTYEYCXNX
+      BXRGUSUTURXRXDMZYFXGXCYIYCXEYEXFXRXDXAGUSXRXDXBGUNVHVAXILNZXJLNZVBZXLLNZX
+      MLNZVBZXPLNZXQLNZVBZWGZXIXMRSZXJXLRSZOIZXIXQRSZXJXPRSZOIZXPXMRSZXQXLRSZOI
+      ZJZXOYAYSUUCXMRSZUUGXJRSZOIZUUJUUDXMRSZOIZUUMUUKOIZJZUUBUUIYSUUJLNZUUKLNZ
+      UUMLNZUULUUPKZYSUUCLNZYNUUQYSYJYQUVAYJYKYOYRVCZYLYOYPYQVDZXIXQPQZYLYMYNYR
+      VEZUUCXMPQYSUUGLNZYKUURYSYQYMUVFUVCYLYMYNYRVFZXQXLPQZYJYKYOYRVGZUUGXJPQYS
+      UUDLNZYNUUSYSYKYPUVJUVIYLYOYPYQVIZXJXPPQZUVEUUDXMPQLOUHUUQUURUUSWGUUTVJLU
+      UJUUKUUMOVKVLVMYSUUBXQYTRSZXQUUARSZOIZUULYSYTLNZUUALNZYQUUBUVOTYSYJYNUVPU
+      VBUVEXIXMPQYSYKYMUVQUVIUVGXJXLPQUVCYTUUAXQVNVMYSUVMUUJUVNUUKOYSUVMXIXQXMR
+      SRSUUJYSCDEXQXIXMLRUVCUVBUVECHZLNZDHZLNZVBUVRUVTRSZUVTUVRRSMYSUVRUVTVOVPZ
+      UVSUWAEHZLNWGZUWBUWDRSUVRUVTUWDRSRSMYSUVRUVTUWDVRVPZVQYSCDEXIXQXMLRUWFUVB
+      UVCUVEVSVTYSXQXJRSXLRSUVNUUKYSCDEXQXJXLLRUWFUVCUVIUVGVSYSCDEXQXJXLLRUVCUV
+      IUVGUWCUWFWAWBWCWDYSUUEUUNUUHUUOYSCDEUUCUUDXMOLRUWEUVRUVTOIUWDUVRRSUWDUVT
+      RSOITYSUVRUVTUWDVNVPZUVDUVLUVEUWCWEYSUUHUUFXJRSZUUKOIUUOYSCDEUUFUUGXJOLRU
+      WGYSYPYNUUFLNUVKUVEXPXMPQZUVHUVIUWCWEYSUUMUWHUUKOYSUUMXJUUFRSUWHYSCDEXJXP
+      XMLRUWFUVIUVKUVEVSYSCDXJUUFLRUWCUVIUWIWFWHWIWJVHWKYLYOXOUUBTYRXIXJXLXMWLW
+      MYSXSUUEXTUUHYLYRXSUUETYOXIXJXPXQWLWNYOYRXTUUHTZYLYRYOUWJXPXQXLXMWLWQWOVH
+      WKWPWRABUAFGWSWT $.
+  $}
+
+  $( 0 is less than 1 for signed reals.  (Contributed by NM, 26-Mar-1996.) $)
+  0lt1sr $p |- 0R <R 1R $=
+    ( c1p cop cer cec cpp co c0r c1r cltr wbr cltp cnp wcel 1pr addclpr ltaddpr
+    mp2an wceq addcomprg breqtrri wb ltsrprg mp4an mpbir df-0r df-1r 3brtr4i )
+    AABCDZAAEFZABCDZGHIUHUJIJZUIAUIEFZKJZUIUIAEFZULKUILMZALMZUIUNKJUPUPUONNAAOQ
+    ZNUIAPQUPUOULUNRNUQAUISQTUPUPUOUPUKUMUANNUQNAAUIAUBUCUDUEUFUG $.
+
+  $( 1 and 0 are distinct for signed reals.  (Contributed by NM,
+     26-Mar-1996.) $)
+  1ne0sr $p |- -. 1R = 0R $=
+    ( c1r c0r wceq cltr wbr cnr wor wcel wn ltsosr 1sr sonr mp2an 0lt1sr mpbiri
+    breq1 mto ) ABCZAADEZFDGAFHSIJKFADLMRSBADENABADPOQ $.
+
+  ${
+    $d x y z w v $.  $d x y A $.
+    $( The signed real number 0 is an identity element for addition of signed
+       reals.  (Contributed by NM, 10-Apr-1996.) $)
+    0idsr $p |- ( A e. R. -> ( A +R 0R ) = A ) $=
+      ( vx vy vz vw vv cv cop cer cec c0r cplr co wceq cnp wcel wa c1p cpp 1pr
+      df-nr oveq1 id eqeq12d df-0r oveq2i addsrpr mpanr12 simpl simpr addcomprg
+      cnr a1i adantl w3a addassprg caov12d addclpr mpan2 anim12i enreceq mpbird
+      wb mpdan eqtr4d syl5eq ecoptocl ) BGZCGZHIJZKLMZVJNAKLMZANBCAOOIULUAVJANZ
+      VKVLVJAVJAKLUBVMUCUDVHOPZVIOPZQZVKVJRRHIJZLMZVJKVQVJLUEUFVPVRVHRSMZVIRSMZ
+      HIJZVJVPROPZWBVRWANTTVHVIRRUGUHVPVJWANZVHVTSMVIVSSMNZVPDEFVHVIROSVNVOUIVN
+      VOUJWBVPTUMDGZOPZEGZOPZQWEWGSMZWGWESMNVPWEWGUKUNWFWHFGZOPUOWIWJSMWEWGWJSM
+      SMNVPWEWGWJUPUNUQVPVSOPZVTOPZQWCWDVCVNWKVOWLVNWBWKTVHRURUSVOWBWLTVIRURUSU
+      TVHVIVSVTVAVDVBVEVFVG $.
+  $}
+
+  ${
+    $d x y A $.  $d x y z w v $.
+    $( 1 is an identity element for multiplication.  (Contributed by Jim
+       Kingdon, 5-Jan-2020.) $)
+    1idsr $p |- ( A e. R. -> ( A .R 1R ) = A ) $=
+      ( cv cop cer cec c1r cmr co wceq cnp wcel c1p cpp cmp 1pr addclpr mulclpr
+      wa sylancl mpan2 vx vy vz vw vv df-nr oveq1 id eqeq12d df-1r oveq2i mp2an
+      cnr mulsrpr mpanr12 distrprg mp3an23 1idpr oveq1d eqtr2d oveqan12d adantl
+      eqtrd simpl addassprg syl3anc simpr addcomprg w3a caov12d 3eqtr3d anim12i
+      wb syl2an enreceq syldan anidms mpbird eqtr4d syl5eq ecoptocl ) UABZUBBZC
+      DEZFGHZWDIAFGHZAIUAUBAJJDUMUFWDAIZWEWFWDAWDAFGUGWGUHUIWBJKZWCJKZRZWEWDLLM
+      HZLCDEZGHZWDFWLWDGUJUKWJWMWBWKNHZWCLNHZMHZWBLNHZWCWKNHZMHZCDEZWDWJWKJKZLJ
+      KZWMWTIXBXBXAOOLLPULZOWBWCWKLUNUOWJWDWTIZWBWSMHZWCWPMHZIZWJWBWQMHZWRMHZWN
+      WCWOMHZMHXEXFWHWIXHWNWRXJMWHWNWQWQMHZXHWHXBXBWNXKIOOWBLLUPUQWHWQWBWQMWBUR
+      USUTWIWRWOWOMHZXJWIXBXBWRXLIOOWCLLUPUQWIWOWCWOMWCURUSVCVAWJWHWQJKZWRJKZXI
+      XEIWHWIVDZWJWHXBXMXOOWBLQZSWIXNWHWIXAXNXCWCWKQTZVBWBWQWRVEVFWJUCUDUEWNWCW
+      OJMWJWHXAWNJKZXOXCWBWKQZSWHWIVGZWJWIXBWOJKZXTOWCLQZSUCBZJKZUDBZJKZRYCYEMH
+      ZYEYCMHIWJYCYEVHVBYDYFUEBZJKVIYGYHMHYCYEYHMHMHIWJYCYEYHVEVBVJVKWJXDXGVMZW
+      JWJWPJKZWSJKZRYIWJYJWJYKWHXRYAYJWIWHXAXRXCXSTWIXBYAOYBTWNWOPVNWHXMXNYKWIW
+      HXBXMOXPTXQWQWRPVNVLWBWCWPWSVOVPVQVRVSVTWA $.
+  $}
+
+  ${
+    $d x y A $.
+    $( A signed real times 0 is 0.  (Contributed by NM, 10-Apr-1996.) $)
+    00sr $p |- ( A e. R. -> ( A .R 0R ) = 0R ) $=
+      ( vx vy cv cop cer cec c0r cmr co wceq cnp wa c1p cmp cpp mpanr12 mulclpr
+      wcel 1pr cnr df-nr oveq1 eqeq1d mulsrpr mpan2 addclpr syl2an anim12i eqid
+      enreceq mpbiri sylan anidms eqtrd df-0r oveq2i 3eqtr4g ecoptocl ) BDZCDZE
+      FGZHIJZHKAHIJZHKBCALLFUAUBVBAKVCVDHVBAHIUCUDUTLSZVALSZMZVBNNEFGZIJZVHVCHV
+      GVIUTNOJZVANOJZPJZVLEFGZVHVGNLSZVNVIVMKTTUTVANNUEQVGVMVHKZVGVGMZVNVNVOTTV
+      PVLLSZVQMZVNVNMZVOVGVQVGVQVEVJLSZVKLSZVQVFVEVNVTTUTNRUFVFVNWATVANRUFVJVKU
+      GUHZWBUIVRVSMVOVLNPJZWCKWCUJVLVLNNUKULUMQUNUOHVHVBIUPUQUPURUS $.
+  $}
+
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $d r s t x y z w v u $.
+    $( Ordering property of addition.  (Contributed by NM, 10-May-1996.) $)
+    ltasrg $p |- ( ( A e. R. /\ B e. R. /\ C e. R. ) ->
+        ( A <R B <-> ( C +R A ) <R ( C +R B ) ) ) $=
+      ( vr vs wcel cltr wbr cplr co wb cop cer cec cnp wceq cpp addclpr syl2anc
+      cv vx vy vz vw vv vu vt cnr df-nr oveq1 breq12d bibi2d breq1 oveq2 breq1d
+      bibi12d breq2 breq2d w3a cltp simp2l simp3r simp2r simp3l 3ad2ant1 ltaprg
+      syl3anc ltsrprg 3adant1 simp1l simp1r syl22anc addcomprg adantl addassprg
+      wa caovcomd caov42d eqtrd bitrd 3bitr4d addsrpr 3adant3 3adant2 3ecoptocl
+      caov4d bitr4d 3coml ) CUHFAUHFBUHFABGHZCAIJZCBIJZGHZKZUATZUBTZLMNZUCTZUDT
+      ZLMNZGHZUETZUFTZLMNZWPIJZXCWSIJZGHZKWTCWPIJZCWSIJZGHZKAWSGHZWJXHGHZKWMUEU
+      FUAUBUCUDCABOMUHUIXCCPZXFXIWTXLXDXGXEXHGXCCWPIUJXCCWSIUJUKULWPAPZWTXJXIXK
+      WPAWSGUMXMXGWJXHGWPACIUNUOUPWSBPZXJWIXKWLWSBAGUQXNXHWKWJGWSBCIUNURUPXAOFZ
+      XBOFZVPZWNOFZWOOFZVPZWQOFZWROFZVPZUSZWTXAWNQJZXBWOQJZLMNZXAWQQJZXBWRQJZLM
+      NZGHZXFYDWNWRQJZWOWQQJZUTHZXAXBQJZYLQJZYOYMQJZUTHZWTYKYDYLOFZYMOFZYOOFZYN
+      YRKYDXRYBYSXQXRXSYCVAZXQXTYAYBVBZWNWRRSYDXSYAYTXQXRXSYCVCZXQXTYAYBVDZWOWQ
+      RSXQXTUUAYCXAXBRVEYLYMYOVFVGXTYCWTYNKXQWNWOWQWRVHVIYDYKYEYIQJZYFYHQJZUTHZ
+      YRYDYEOFZYFOFZYHOFZYIOFZYKUUHKYDXOXRUUIXOXPXTYCVJZUUBXAWNRSYDXPXSUUJXOXPX
+      TYCVKZUUDXBWORSZYDXOYAUUKUUMUUEXAWQRSZYDXPYBUULUUNUUCXBWRRSYEYFYHYIVHVLYD
+      UUFYPUUGYQUTYDDEUGXAWNXBWROQUUMUUBUUNDTZOFZETZOFZVPZUUQUUSQJZUUSUUQQJPYDU
+      UQUUSVMVNZUURUUTUGTZOFUSUVBUVDQJUUQUUSUVDQJQJPYDUUQUUSUVDVOVNZUUCUVAUVBOF
+      YDUUQUUSRVNZWFYDUUGYHYFQJYQYDDEYFYHOQUVCUUOUUPVQYDDEUGXAWQXBWOOQUUMUUEUUN
+      UVCUVEUUDUVFVRVSUKVTWAYDXDYGXEYJGXQXTXDYGPYCXAXBWNWOWBWCXQYCXEYJPXTXAXBWQ
+      WRWBWDUKWGWEWH $.
+  $}
+
+  $( A signed real plus its negative is zero.  (Contributed by NM,
+     14-May-1996.) $)
+  pn0sr $p |- ( A e. R. -> ( A +R ( A .R -1R ) ) = 0R ) $=
+    ( cnr wcel c0r cmr co c1r cm1r cplr wceq m1r distrsrg mp3an23 m1p1sr oveq2i
+    1sr a1i mulclsr mpan2 addcomsrg syl2anc 3eqtr3d 00sr 1idsr oveq1d 3eqtr3rd
+    ) ABCZADEFZAGEFZAHEFZIFZDAUJIFUGAHGIFZEFZUJUIIFZUHUKUGHBCZGBCZUMUNJKPAHGLMU
+    MUHJUGULDAENOQUGUJBCZUIBCZUNUKJUGUOUQKAHRSUGUPURPAGRSUJUITUAUBAUCUGUIAUJIAU
+    DUEUF $.
+
+  ${
+    $d x A $.
+    $( Existence of negative signed real.  Part of Proposition 9-4.3 of
+       [Gleason] p. 126.  (Contributed by NM, 2-May-1996.) $)
+    negexsr $p |- ( A e. R. -> E. x e. R. ( A +R x ) = 0R ) $=
+      ( cnr wcel cm1r cmr co cplr c0r wceq cv wrex m1r mpan2 pn0sr oveq2 eqeq1d
+      mulclsr rspcev syl2anc ) BCDZBEFGZCDZBUBHGZIJZBAKZHGZIJZACLUAECDUCMBERNBO
+      UHUEAUBCUFUBJUGUDIUFUBBHPQST $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z w v u f g h $.
+    $( The reciprocal of a positive signed real exists.  Part of Proposition
+       9-4.3 of [Gleason] p. 126.  (Contributed by NM, 15-May-1996.) $)
+    recexsrlem $p |- ( 0R <R A -> E. x e. R. ( A .R x ) = 1R ) $=
+      ( cnr wcel cv co c1r cer cnp cpp wa cmp c1p adantl addclpr adantr syl2anc
+      wceq 1pr eqtrd vy vz vw vv vf vg vh c0r cltr wbr wrex ltrelsr brel simprd
+      cmr cop cec df-nr breq2 oveq1 eqeq1d rexbidv imbi12d cltp gt0srpr ltexpri
+      wi sylbi recexpr mpan2 enrex ecopqsi sylancl ad2antlr simpr jctir mulsrpr
+      anim2i syl eqcomd ad2antll w3a mulcomprg 3adant2 3adant1 oveq12d distrprg
+      sylan 3coml simp3 3adant3 3eqtr2rd simplr caovdird oveq2 sylan9eq adantrr
+      simprl oveq1d mulclpr a1i simpll addcomprg caov32d syl3anc oveq2d caov12d
+      addassprg 3eqtr4d wb eqeltrd mp2an enreceq syl22anc mpbird syl6eqr rspcev
+      df-1r exp32 anassrs rexlimdva mpd syl5 ecoptocl mpcom ) BCDZUHBUIUJZBAEZU
+      OFZGRZACUKZYGUHCDYFUHBCCUIULUMUNUHUAEZUBEZUPHUQZUIUJZYNYHUOFZGRZACUKZVGYG
+      YKVGUAUBBIIHCURYNBRZYOYGYRYKYNBUHUIUSYSYQYJACYSYPYIGYNBYHUOUTVAVBVCYOYMUC
+      EZJFZYLRZUCIUKZYLIDZYMIDZKZYRYOYMYLVDUJUUCYLYMVEUCYMYLVFVHUUFUUBYRUCIUUFY
+      TIDZKZYTUDEZLFZMRZUDIUKZUUBYRVGZUUGUULUUFUDYTVINUUHUUKUUMUDIUUFUUGUUIIDZU
+      UKUUMVGUUFUUGUUNKZKZUUKUUBYRUUPUUKUUBKZKZUUIMJFZMUPHUQZCDZYNUUTUOFZGRZYRU
+      UOUVAUUFUUQUUNUVAUUGUUNUUSIDZMIDZUVAUUNUVEUVDSUUIMOZVJZSIUUSMHCVKURVLVMNV
+      NUURUVBMMJFZMUPHUQZGUURUVBYLUUSLFZYMMLFZJFZYLMLFZYMUUSLFZJFZUPHUQZUVIUUPU
+      UFUUNKZUUQUVBUVPRZUUOUUNUUFUUGUUNVOZVRUVQUUQKUUFUVDUVEKZKZUVRUVQUWAUUQUUN
+      UVTUUFUUNUVDUVEUVGSVPVRPYLYMUUSMVQVSWHUURUVPUVIRZUVLMJFZUVOUVHJFZRZUURYLU
+      UILFZUVMUVKJFZJFZMJFZYMUUILFZUWGJFZUVHJFZUWCUWDUURUWIUWKMJFZMJFZUWLUURUWH
+      UWMMJUURUWHUWJMJFZUWGJFZUWMUURUWFUWOUWGJUURUWFUUAUUILFZUWOUUBUWFUWQRUUPUU
+      KUUBUWQUWFUUAYLUUILUTVTWAUUPUUKUWQUWORUUBUUPUUKUWQUWJUUJJFUWOUUPUEUFUGYMY
+      TUUIIJLJIUEEZIDZUFEZIDZUGEZIDZWBZUWRUWTJFZUXBLFZUWRUXBLFZUWTUXBLFZJFZRUUP
+      UXDUXIUXBUWRLFZUXBUWTLFZJFZUXBUXELFZUXFUXDUXGUXJUXHUXKJUWSUXCUXGUXJRUXAUW
+      RUXBWCWDUXAUXCUXHUXKRUWSUWTUXBWCWEWFUXCUWSUXAUXMUXLRUXBUWRUWTWGWIUXDUXCUX
+      EIDZUXMUXFRUWSUXAUXCWJUWSUXAUXNUXCUWRUWTOWKUXBUXEWCQWLNUUDUUEUUOWMZUUFUUG
+      UUNWRUUOUUNUUFUVSNZWNUUJMUWJJWOWPWQTWSUUPUWPUWMRUUQUUPUEUFUGUWJMUWGIJUUPU
+      UEUUNUWJIDZUXOUXPYMUUIWTQZUVEUUPSXAZUUPUVMIDZUVKIDZUWGIDZUUPUUDUVEUXTUUDU
+      UEUUOXBZSYLMWTVMZUUPUUEUVEUYAUXOSYMMWTVMZUVMUVKOQZUWSUXAKUXEUWTUWRJFRUUPU
+      WRUWTXCNZUXDUXEUXBJFUWRUWTUXBJFJFRUUPUWRUWTUXBXHNZXDPTWSUURUWKIDZUVEUVEUW
+      NUWLRUUPUYIUUQUUPUXQUYBUYIUXRUYFUWJUWGOQZPUVEUURSXAZUYKUWKMMXHXETUUPUWCUW
+      IRUUQUUPUVLUWHMJUUPUVLUWFUVMJFZUVKJFZUWHUUPUVJUYLUVKJUUPUUDUUNUVEUVJUYLRU
+      YCUXPUXSYLUUIMWGXEWSUUPUWFIDZUXTUYAUYMUWHRUUPUUDUUNUYNUYCUXPYLUUIWTQUYDUY
+      EUWFUVMUVKXHXETWSPUUPUWDUWLRUUQUUPUVOUWKUVHJUUPUVOUVMUWJUVKJFZJFUWKUUPUVN
+      UYOUVMJUUPUUEUUNUVEUVNUYORUXOUXPUXSYMUUIMWGXEXFUUPUEUFUGUVMUWJUVKIJUYDUXR
+      UYEUYGUYHXGTZWSPXIUUPUWBUWEXJZUUQUUPUVLIDZUVOIDUVHIDZUVEUYQUUPUVJIDZUYAUY
+      RUUPUUDUVDUYTUYCUUPUUNUVEUVDUXPSUVFVMYLUUSWTQUYEUVJUVKOQUUPUVOUWKIUYPUYJX
+      KUYSUUPUVEUVEUYSSSMMOXLXAUXSUVLUVOUVHMXMXNPXOTXRXPYQUVCAUUTCYHUUTRYPUVBGY
+      HUUTYNUOWOVAXQQXSXTYAYBYAYCYDYE $.
+  $}
+
+  $( The sum of two positive signed reals is positive.  (Contributed by NM,
+     14-May-1996.) $)
+  addgt0sr $p |- ( ( 0R <R A /\ 0R <R B ) -> 0R <R ( A +R B ) ) $=
+    ( c0r cltr wbr cplr co wa simpr cnr wcel wb ltrelsr simprd 0r ltasrg mp3an1
+    brel syl2anr mpbid adantr 0idsr breq1d syl ltsosr sotri syldan ) CADEZCBDEZ
+    AABFGZDEZCUJDEUHUIHZACFGZUJDEZUKULUIUNUHUIIUIBJKZAJKZUIUNLZUHUICJKZUOCBJJDM
+    RNUHURUPCAJJDMRNZURUOUPUQOCBAPQSTULUPUNUKLUHUPUIUSUAUPUMAUJDAUBUCUDTCAUJDJU
+    EMUFUG $.
+
+  ${
+    $d x y z w A $.  $d x y z w B $.  $d x y z w v u f g h $.
+    $( The product of two positive signed reals is positive.  (Contributed by
+       NM, 13-May-1996.) $)
+    mulgt0sr $p |- ( ( 0R <R A /\ 0R <R B ) -> 0R <R ( A .R B ) ) $=
+      ( vf vg vh cnr wcel wa c0r cltr wbr co cv cnp wceq cmp cpp adantl mulclpr
+      syl2anc vx vy vz vw vv vu cmr ltrelsr simprd anim12i cop cer cec wi df-nr
+      brel breq2 anbi1d oveq1 breq2d imbi12d oveq2 cltp gt0srpr anbi12i ltexpri
+      anbi2d wrex addclpr simplrr simplr ad2antrr simplrl caovcld adantr simprl
+      eqeltrrd ltaddpr simprr oveq12 oveq1d distrprg eqtr3d mulcomprg caovdir2d
+      syl3anc oveq12d addcomprg addassprg caov4d 3eqtr4d caov12d caov32d oveq2d
+      w3a ad2antlr 3eqtr3d addcanprg breqtrrd rexlimdvaa mulsrpr syl6bb sylibrd
+      mpd syl5 impd syl5bi 2ecoptocl mpcom ) AFGZBFGZHIAJKZIBJKZHZIABUGLZJKZXLX
+      JXMXKXLIFGZXJIAFFJUHUPUIXMXQXKIBFFJUHUPUIUJIUAMZUBMZUKULUMZJKZIUCMZUDMZUK
+      ULUMZJKZHZIXTYDUGLZJKZUNXLYEHZIAYDUGLZJKZUNXNXPUNUAUBUCUDABNNULFUOXTAOZYF
+      YIYHYKYLYAXLYEXTAIJUQURYLYGYJIJXTAYDUGUSUTVAYDBOZYIXNYKXPYMYEXMXLYDBIJUQV
+      GYMYJXOIJYDBAUGVBUTVAYFXSXRVCKZYCYBVCKZHZXRNGZXSNGZHZYBNGZYCNGZHZHZYHYAYN
+      YEYOXRXSVDYBYCVDVEUUCYPXRYCPLZXSYBPLZQLZXRYBPLZXSYCPLZQLZVCKZYHUUCYNYOUUJ
+      YNXSUEMZQLZXROZUENVHUUCYOUUJUNZUEXSXRVFUUCUUMUUNUENYOYCUFMZQLZYBOZUFNVHUU
+      CUUKNGZUUMHZHZUUJUFYCYBVFUUTUUQUUJUFNUUTUUONGZUUQHZHZUUFUUFUUKUUOPLZQLZUU
+      IVCUVCUUFNGUVDNGZUUFUVEVCKUVCCDUUDUUENNNQCMZNGZDMZNGZHZUVGUVIQLZNGUVCUVGU
+      VIVIRZUVCYQUUAUUDNGZUVCUULXRNUUCUURUUMUVBVJZUVCCDXSUUKNNNQUVMUUCYRUUSUVBY
+      QYRUUBVKVLZUUCUURUUMUVBVMZVNZVQZUUTUUAUVBYSYTUUAUUSVJVOZXRYCSTZUVCYRYTUUE
+      NGZUVPUUTYTUVBYSYTUUAUUSVMVOZXSYBSTZVNZUVCUURUVAUVFUVQUUTUVAUUQVPZUUKUUOS
+      TZUUFUVDVRTUVCUUKYCPLZUUIQLZUWHUVEQLZOZUUIUVEOZUVCUUGUUHUWHQLZQLZUWHUUEUV
+      DQLZQLZUUDQLZUWIUWJUVCUULUUPPLZUWMQLZUWNUWQUVCUUMUUQUWSUWNOUVOUUTUVAUUQVS
+      UUMUUQHUWRUUGUWMQUULXRUUPYBPVTWATUVCUWRUWPUWMUUDQUVCUUHXSUUOPLZQLZUWHUVDQ
+      LZQLZUUEUXBQLUWRUWPUVCUXAUUEUXBQUVCXSUUPPLZUXAUUEUVCYRUUAUVAUXDUXAOUVPUVT
+      UWFXSYCUUOWBWFUVBUXDUUEOZUUTUUQUXEUVAUUPYBXSPVBRRWCWAUVCUULYCPLZUULUUOPLZ
+      QLZUWMUWTUVDQLZQLUWRUXCUVCUXFUWMUXGUXIQUVCCDEXSUUKYCNQPUVHUVJEMZNGWOZUVGU
+      VIUXJQLZPLUVGUVIPLZUVGUXJPLQLOUVCUVGUVIUXJWBRZUVPUVQUVTUVMUVKUXMUVIUVGPLO
+      UVCUVGUVIWDRZWEZUVCCDEXSUUKUUONQPUXNUVPUVQUWFUVMUXOWEWGUVCUULNGUUAUVAUWRU
+      XHOUVRUVTUWFUULYCUUOWBWFUVCCDEUUHUWTUWHUVDNQUVCYRUUAUUHNGZUVPUVTXSYCSTZUV
+      CYRUVAUWTNGUVPUWFXSUUOSTUVCUURUUAUWHNGZUVQUVTUUKYCSTZUVKUVLUVIUVGQLOUVCUV
+      GUVIWHRZUXKUVLUXJQLUVGUXLQLOUVCUVGUVIUXJWIRZUWGUVMWJWKUVCCDEUWHUUEUVDNQUX
+      TUWDUWGUYAUYBWLWKUVCUXFUWMUUDUXPUUSUXFUUDOZUUCUVBUUMUYCUURUULXRYCPUSRWPWC
+      WGWCUVCUUIUWHQLZUWNUWIUVCUUGNGZUXQUXSUYDUWNOUVCYQYTUYEUVSUWCXRYBSTZUXRUXT
+      UUGUUHUWHWIWFUVCUUINGZUXSUYDUWIOUVCUYEUXQUYGUYFUXRUUGUUHVITZUXTUUIUWHWHTW
+      CUVCUWHUUDQLUWOQLZUWHUUDUWOQLZQLZUWQUWJUVCUXSUVNUWONGUYIUYKOUXTUWAUVCCDUU
+      EUVDNNNQUVMUWDUWGVNZUWHUUDUWOWIWFUVCCDEUWHUWOUUDNQUXTUYLUWAUYAUYBWMUVCUVE
+      UYJUWHQUVCUVNUWBUVFUVEUYJOUWAUWDUWGUUDUUEUVDWIWFWNWKWQUVCUXSUYGUVENGUWKUW
+      LUNUXTUYHUVCCDUUFUVDNNNQUVMUWEUWGVNUWHUUIUVEWRWFXDWSWTXEWTXEXFUUCYHIUUIUU
+      FUKULUMZJKUUJUUCYGUYMIJXRXSYBYCXAUTUUIUUFVDXBXCXGXHXI $.
+  $}
+
+  $( Class of complex numbers. $)
+  cc $a class CC $.
+  $( Class of real numbers. $)
+  cr $a class RR $.
+  $( Extend class notation to include the complex number 0. $)
+  cc0 $a class 0 $.
+  $( Extend class notation to include the complex number 1. $)
+  c1 $a class 1 $.
+  $( Extend class notation to include the complex number i. $)
+  ci $a class _i $.
+  $( Addition on complex numbers. $)
+  caddc $a class + $.
+  $( 'Less than' predicate (defined over real subset of complex numbers). $)
+  cltrr $a class <RR $.
+  $( Multiplication on complex numbers.  The token ` x. ` is a center dot. $)
+  cmul $a class x. $.
+
+  $( Define the set of complex numbers.  (Contributed by NM, 22-Feb-1996.) $)
+  df-c $a |- CC = ( R. X. R. ) $.
+
+  $( Define the complex number 0.  (Contributed by NM, 22-Feb-1996.) $)
+  df-0 $a |- 0 = <. 0R , 0R >. $.
+
+  $( Define the complex number 1.  (Contributed by NM, 22-Feb-1996.) $)
+  df-1 $a |- 1 = <. 1R , 0R >. $.
+
+  $( Define the complex number ` _i ` (the imaginary unit).  (Contributed by
+     NM, 22-Feb-1996.) $)
+  df-i $a |- _i = <. 0R , 1R >. $.
+
+  ${
+    $d x y $.
+    $( Define the set of real numbers.  (Contributed by NM, 22-Feb-1996.) $)
+    df-r $a |- RR = ( R. X. { 0R } ) $.
+  $}
+
+  ${
+    $d x y z w v u f $.
+    $( Define addition over complex numbers.  (Contributed by NM,
+       28-May-1995.) $)
+    df-add $a |- + = { <. <. x , y >. , z >. | ( ( x e. CC /\ y e. CC ) /\
+                  E. w E. v E. u E. f ( ( x = <. w , v >. /\ y = <. u , f >. )
+                  /\ z = <. ( w +R u ) , ( v +R f ) >. ) ) } $.
+
+    $( Define multiplication over complex numbers.  (Contributed by NM,
+       9-Aug-1995.) $)
+    df-mul $a |- x. = { <. <. x , y >. , z >. | ( ( x e. CC /\ y e. CC ) /\
+               E. w E. v E. u E. f ( ( x = <. w , v >. /\ y = <. u , f >. )
+                  /\ z = <. ( ( w .R u ) +R ( -1R .R ( v .R f ) ) ) ,
+                  ( ( v .R u ) +R ( w .R f ) ) >. ) ) } $.
+
+    $( Define 'less than' on the real subset of complex numbers.  (Contributed
+       by NM, 22-Feb-1996.) $)
+    df-lt $a |- <RR = { <. x , y >. | ( ( x e. RR /\ y e. RR ) /\
+     E. z E. w ( ( x = <. z , 0R >. /\ y = <. w , 0R >. ) /\ z <R w ) ) } $.
+  $}
+
+  $( Ordered pair membership in the class of complex numbers.  (Contributed by
+     NM, 14-May-1996.) $)
+  opelcn $p |- ( <. A , B >. e. CC <-> ( A e. R. /\ B e. R. ) ) $=
+    ( cop cc wcel cnr cxp wa df-c eleq2i opelxp bitri ) ABCZDEMFFGZEAFEBFEHDNMI
+    JABFFKL $.
+
+  $( Ordered pair membership in class of real subset of complex numbers.
+     (Contributed by NM, 22-Feb-1996.) $)
+  opelreal $p |- ( <. A , 0R >. e. RR <-> A e. R. ) $=
+    ( c0r cop cr wcel cnr wceq eqid csn cxp wa eleq2i opelxp elexi elsnc anbi2i
+    df-r 0r 3bitri mpbiran2 ) ABCZDEZAFEZBBGZBHUBUAFBIZJZEUCBUEEZKUCUDKDUFUAQLA
+    BFUEMUGUDUCBBBFRNOPST $.
+
+  ${
+    $d x y A $.
+    $( Membership in class of real numbers.  (Contributed by NM,
+       31-Mar-1996.) $)
+    elreal $p |- ( A e. RR <-> E. x e. R. <. x , 0R >. = A ) $=
+      ( vy cr wcel cnr c0r csn cxp cv cop wceq wrex eleq2i elxp2 0r elexi opeq2
+      df-r bitri eqeq2d rexsn eqcom rexbii ) BDEBFGHZIZEZAJZGKZBLZAFMZDUFBSNUGB
+      UHCJZKZLZCUEMZAFMUKACBFUEOUOUJAFUOBUILZUJUNUPCGGFPQULGLUMUIBULGUHRUAUBBUI
+      UCTUDTT $.
+  $}
+
+  ${
+    $( Ordered pair membership in the class of complex numbers.  (Contributed
+       by Mario Carneiro, 15-Jun-2013.) $)
+    elreal2 $p |- ( A e. RR <->
+        ( ( 1st ` A ) e. R. /\ A = <. ( 1st ` A ) , 0R >. ) ) $=
+      ( cr wcel cnr c0r csn cxp c1st cfv wceq wa df-r eleq2i xp1st c2nd 1st2nd2
+      cop xp2nd elsni syl opeq2d eqtrd jca eleq1 0r snid opelxp mpbiran2 syl6bb
+      elexi biimparc impbii bitri ) ABCADEFZGZCZAHIZDCZAUQEQZJZKZBUOALMUPVAUPUR
+      UTADUNNUPAUQAOIZQUSADUNPUPVBEUQUPVBUNCVBEJADUNRVBESTUAUBUCUTUPURUTUPUSUOC
+      ZURAUSUOUDVCUREUNCEEDUEUJUFUQEDUNUGUHUIUKULUM $.
+  $}
+
+  $( The empty set is not a complex number.  Note: do not use this after the
+     real number axioms are developed, since it is a construction-dependent
+     property.  (Contributed by NM, 2-May-1996.) $)
+  0ncn $p |- -. (/) e. CC $=
+    ( c0 cc wcel cnr cxp 0nelxp df-c eleq2i mtbir ) ABCADDEZCDDFBJAGHI $.
+
+  ${
+    $d x y z w $.
+    $( 'Less than' is a relation on real numbers.  (Contributed by NM,
+       22-Feb-1996.) $)
+    ltrelre $p |- <RR C_ ( RR X. RR ) $=
+      ( vx vy vz vw cltrr cv cr wcel wa c0r cop wceq wbr wex copab cxp opabssxp
+      cltr df-lt eqsstri ) EAFZGHBFZGHIUACFZJKLUBDFZJKLIUCUDRMIDNCNZIABOGGPABCD
+      SUEABGGQT $.
+  $}
+
+  ${
+    $d x y z w v u f A $.  $d x y z w v u f B $.  $d x y z w v u f C $.
+    $d x y z w v u f D $.
+    $( Addition of complex numbers in terms of signed reals.  (Contributed by
+       NM, 28-May-1995.) $)
+    addcnsr $p |- ( ( ( A e. R. /\ B e. R. ) /\ ( C e. R. /\ D e. R. ) ) ->
+           ( <. A , B >. + <. C , D >. ) = <. ( A +R C ) , ( B +R D ) >. ) $=
+      ( vx vy vz vw vv vu vf cv cplr co cop cnr wcel wa wceq cc addclsr opelxpi
+      cxp ad2ant2r ad2ant2l syl2anc simpll simprl oveq12d simplr simprr opeq12d
+      caddc wex coprab df-add df-c eleq2i anbi12i anbi1i oprabbii eqtri ovi3 )
+      EFGHIJABCDHLZJLZMNZILZKLZMNZOZACMNZBDMNZOZKUMPAPQZBPQZRCPQZDPQZRRVKPQZVLP
+      QZVMPPUCZQVNVPVRVOVQACUAUDVOVQVSVNVPBDUAUEVKVLPPUBUFVDASZVGBSZRZVECSZVHDS
+      ZRZRZVFVKVIVLWGVDAVECMWAWBWFUGWCWDWEUHUIWGVGBVHDMWAWBWFUJWCWDWEUKUIULUMEL
+      ZTQZFLZTQZRZWHVDVGOSWJVEVHOSRGLVJSRKUNJUNIUNHUNZRZEFGUOWHVTQZWJVTQZRZWMRZ
+      EFGUOEFGHIJKUPWNWREFGWLWQWMWIWOWKWPTVTWHUQURTVTWJUQURUSUTVAVBVC $.
+
+    $( Multiplication of complex numbers in terms of signed reals.
+       (Contributed by NM, 9-Aug-1995.) $)
+    mulcnsr $p |- ( ( ( A e. R. /\ B e. R. ) /\ ( C e. R. /\ D e. R. ) ) ->
+               ( <. A , B >. x. <. C , D >. ) =
+                   <. ( ( A .R C ) +R ( -1R .R ( B .R D ) ) ) ,
+                          ( ( B .R C ) +R ( A .R D ) ) >. ) $=
+      ( vx vy vz vw vv cv cmr co cm1r cplr cnr wcel wa mulclsr wceq oveq12d cop
+      vu cmul cxp ad2ant2r ad2ant2l sylancr addclsr syl2anc ad2ant2lr ad2ant2rl
+      vf m1r opelxpi simpll simprl simplr simprr oveq2d opeq12d wex coprab df-c
+      cc df-mul eleq2i anbi12i anbi1i oprabbii eqtri ovi3 ) EFGHIUBABCDHJZUBJZK
+      LZMIJZULJZKLZKLZNLZVOVMKLZVLVPKLZNLZUAZACKLZMBDKLZKLZNLZBCKLZADKLZNLZUAZU
+      LUCOAOPZBOPZQCOPZDOPZQQZWGOPZWJOPZWKOOUDZPWPWDOPZWFOPZWQWLWNWTWMWOACRUEWP
+      MOPWEOPZXAUMWMWOXBWLWNBDRUFMWERUGWDWFUHUIWPWHOPZWIOPZWRWMWNXCWLWOBCRUJWLW
+      OXDWMWNADRUKWHWIUHUIWGWJOOUNUIVLASZVOBSZQZVMCSZVPDSZQZQZVSWGWBWJXKVNWDVRW
+      FNXKVLAVMCKXEXFXJUOZXGXHXIUPZTXKVQWEMKXKVOBVPDKXEXFXJUQZXGXHXIURZTUSTXKVT
+      WHWAWINXKVOBVMCKXNXMTXKVLAVPDKXLXOTTUTUCEJZVDPZFJZVDPZQZXPVLVOUASXRVMVPUA
+      SQGJWCSQULVAUBVAIVAHVAZQZEFGVBXPWSPZXRWSPZQZYAQZEFGVBEFGHIUBULVEYBYFEFGXT
+      YEYAXQYCXSYDVDWSXPVCVFVDWSXRVCVFVGVHVIVJVK $.
+  $}
+
+  ${
+    eqresr.1 $e |- A e. _V $.
+    $( Equality of real numbers in terms of intermediate signed reals.
+       (Contributed by NM, 10-May-1996.) $)
+    eqresr $p |- ( <. A , 0R >. = <. B , 0R >. <-> A = B ) $=
+      ( c0r cop wceq eqid cnr 0r elexi opth mpbiran2 ) ADEBDEFABFDDFDGADBDCDHIJ
+      KL $.
+  $}
+
+  $( Addition of real numbers in terms of intermediate signed reals.
+     (Contributed by NM, 10-May-1996.) $)
+  addresr $p |- ( ( A e. R. /\ B e. R. ) ->
+           ( <. A , 0R >. + <. B , 0R >. ) = <. ( A +R B ) , 0R >. ) $=
+    ( cnr wcel wa c0r cop caddc co cplr wceq 0r addcnsr an4s 0idsr ax-mp opeq2i
+    mpanr12 syl6eq ) ACDZBCDZEZAFGBFGHIZABJIZFFJIZGZUDFGUBFCDZUGUCUFKZLLTUGUAUG
+    UHAFBFMNRUEFUDUGUEFKLFOPQS $.
+
+  $( Multiplication of real numbers in terms of intermediate signed reals.
+     (Contributed by NM, 10-May-1996.) $)
+  mulresr $p |- ( ( A e. R. /\ B e. R. ) ->
+         ( <. A , 0R >. x. <. B , 0R >. ) = <. ( A .R B ) , 0R >. ) $=
+    ( cnr wcel wa c0r cop cmul co cmr cm1r cplr wceq mulcnsr ax-mp oveq2i 0idsr
+    0r 00sr eqtrd an4s mpanr12 m1r mulclsr syl syl5eq mulcomsrg mpan oveqan12rd
+    eqtri syl6eq opeq12d ) ACDZBCDZEZAFGBFGHIZABJIZKFFJIZJIZLIZFBJIZAFJIZLIZGZU
+    QFGUOFCDZVEUPVDMZRRUMVEUNVEVFAFBFNUAUBUOUTUQVCFUOUTUQFLIZUQUSFUQLUSKFJIZFUR
+    FKJVEURFMRFSOPKCDVHFMUCKSOUJPUOUQCDVGUQMABUDUQQUEUFUOVCFFLIZFUNUMVAFVBFLUNV
+    ABFJIZFVEUNVAVJMRFBUGUHBSTASUIVEVIFMRFQOUKULT $.
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Ordering of real subset of complex numbers in terms of signed reals.
+       (Contributed by NM, 22-Feb-1996.) $)
+    ltresr $p |- ( <. A , 0R >. <RR <. B , 0R >. <-> A <R B ) $=
+      ( vz vw vx vy c0r cop cltrr wbr cnr wcel wa cltr cr wceq wex anbi1d eqcom
+      cv ltrelre brel opelreal anbi12i sylib ltrelsr eleq1 eqeq1 2exbidv anbi2d
+      anbi12d df-lt brabg bianabs vex eqresr 3bitr4i opth2 bitr4i anbi1i 2exbii
+      wb syl6bb syl2anbr breq12 copsex2g bitrd pm5.21nii ) AGHZBGHZIJZAKLZBKLZM
+      ZABNJZVKVIOLZVJOLZMZVNVIVJOOIUAUBVPVLVQVMAUCZBUCZUDUEABKKNUFUBVNVKABHCTZD
+      TZHPZWAWBNJZMZDQCQZVOVLVPVQVKWFVBVMVSVTVRVKVIWAGHZPZVJWBGHZPZMZWDMZDQCQZW
+      FVRVKWMETZOLZFTZOLZMZWNWGPZWPWIPZMZWDMZDQCQZMVPWQMZWHWTMZWDMZDQCQZMVRWMME
+      FVIVJOOIWNVIPZWRXDXCXGXHWOVPWQWNVIOUGRXHXBXFCDXHXAXEWDXHWSWHWTWNVIWGUHRRU
+      IUKWPVJPZXDVRXGWMXIWQVQVPWPVJOUGUJXIXFWLCDXIXEWKWDXIWTWJWHWPVJWIUHUJRUIUK
+      EFCDULUMUNWLWECDWKWCWDWKAWAPZBWBPZMWCWHXJWJXKWGVIPWAAPWHXJWAACUOZUPVIWGSA
+      WASUQWIVJPWBBPWJXKWBBDUOZUPVJWISBWBSUQUDABWAWBXLXMURUSUTVAVCVDWDVOCDABKKW
+      AAWBBNVEVFVGVH $.
+  $}
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Ordering of real subset of complex numbers in terms of signed reals.
+       (Contributed by NM, 22-Feb-1996.) $)
+    ltresr2 $p |- ( ( A e. RR /\ B e. RR ) ->
+        ( A <RR B <-> ( 1st ` A ) <R ( 1st ` B ) ) ) $=
+      ( cr wcel wa wbr c1st cfv c0r cop cltr cnr wceq elreal2 simprbi breqan12d
+      cltrr ltresr syl6bb ) ACDZBCDZEABQFAGHZIJZBGHZIJZQFUBUDKFTUAAUCBUEQTUBLDA
+      UCMANOUAUDLDBUEMBNOPUBUDRS $.
+  $}
+
+  $( Technical trick to permit reuse of previous lemmas to prove arithmetic
+     operation laws in ` CC ` from those in ` R. ` .  The trick involves
+     ~ qsid , which shows that the coset of the converse epsilon relation
+     (which is not an equivalence relation) acts as an identity divisor for the
+     quotient set operation.  This lets us "pretend" that ` CC ` is a quotient
+     set, even though it is not (compare ~ df-c ), and allows us to reuse some
+     of the equivalence class lemmas we developed for the transition from
+     positive reals to signed reals, etc.  (Contributed by NM, 13-Aug-1995.) $)
+  dfcnqs $p |- CC = ( ( R. X. R. ) /. `' _E ) $=
+    ( cc cnr cxp cep ccnv cqs df-c qsid eqtr4i ) ABBCZJDEFGJHI $.
+
+  $( Technical trick to permit re-use of some equivalence class lemmas for
+     operation laws.  See ~ dfcnqs and ~ mulcnsrec .  (Contributed by NM,
+     13-Aug-1995.) $)
+  addcnsrec $p |- ( ( ( A e. R. /\ B e. R. ) /\ ( C e. R. /\ D e. R. ) ) ->
+                 ( [ <. A , B >. ] `' _E + [ <. C , D >. ] `' _E ) =
+                   [ <. ( A +R C ) , ( B +R D ) >. ] `' _E ) $=
+    ( cnr wcel wa cop caddc co cplr cep ccnv cec addcnsr wceq opelxpi ecidg syl
+    addclsr cxp oveqan12d ad2ant2r ad2ant2l syl2anc 3eqtr4d ) AEFZBEFZGZCEFZDEF
+    ZGZGZABHZCDHZIJACKJZBDKJZHZUNLMZNZUOUSNZIJURUSNZABCDOUIULUTUNVAUOIUIUNEEUAZ
+    FUTUNPABEEQUNVCRSULUOVCFVAUOPCDEEQUOVCRSUBUMURVCFZVBURPUMUPEFZUQEFZVDUGUJVE
+    UHUKACTUCUHUKVFUGUJBDTUDUPUQEEQUEURVCRSUF $.
+
+  $( Technical trick to permit re-use of some equivalence class lemmas for
+     operation laws.  The trick involves ~ ecidg , which shows that the coset
+     of the converse epsilon relation (which is not an equivalence relation)
+     leaves a set unchanged.  See also ~ dfcnqs .  (Contributed by NM,
+     13-Aug-1995.) $)
+  mulcnsrec $p |- ( ( ( A e. R. /\ B e. R. ) /\ ( C e. R. /\ D e. R. ) ) ->
+               ( [ <. A , B >. ] `' _E x. [ <. C , D >. ] `' _E ) =
+                    [ <. ( ( A .R C ) +R ( -1R .R ( B .R D ) ) ) ,
+                          ( ( B .R C ) +R ( A .R D ) ) >. ] `' _E ) $=
+    ( cnr wcel wa cop cmul cmr cm1r cplr cec wceq opelxpi ecidg mulclsr syl2anc
+    co syl cep ccnv mulcnsr cxp simpll simprl m1r simplr simprr sylancr addclsr
+    oveqan12d 3eqtr4d ) AEFZBEFZGZCEFZDEFZGZGZABHZCDHZISACJSZKBDJSZJSZLSZBCJSZA
+    DJSZLSZHZVAUAUBZMZVBVKMZISVJVKMZABCDUCUPUSVLVAVMVBIUPVAEEUDZFVLVANABEEOVAVO
+    PTUSVBVOFVMVBNCDEEOVBVOPTULUTVJVOFZVNVJNUTVFEFZVIEFZVPUTVCEFZVEEFZVQUTUNUQV
+    SUNUOUSUEZUPUQURUFZACQRUTKEFVDEFZVTUGUTUOURWCUNUOUSUHZUPUQURUIZBDQRKVDQUJVC
+    VEUKRUTVGEFZVHEFZVRUTUOUQWFWDWBBCQRUTUNURWGWAWEADQRVGVHUKRVFVIEEORVJVOPTUM
+    $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+         Final derivation of real and complex number postulates
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The complex numbers form a set.  Use ~ cnex instead.  (Contributed by
+     Mario Carneiro, 17-Nov-2014.)  (New usage is discouraged.) $)
+  axcnex $p |- CC e. _V $=
+    ( cc cnr cxp cvv df-c cnp cer cqs df-nr cpw npex xpex pwex wss wtru wer a1i
+    enrer qsss eqeltri trud ssexi ) ABBCDEBBBFFCZGHZDIUDUCJZUCFFKKLMUDUENOUCGUC
+    GPORQSUAUBTZUFLT $.
+
+  $( The real numbers are a subset of the complex numbers.  Axiom for real and
+     complex numbers, derived from set theory.  This construction-dependent
+     theorem should not be referenced directly; instead, use ~ ax-resscn .
+     (Contributed by NM, 1-Mar-1995.)  (Proof shortened by Andrew Salmon,
+     12-Aug-2011.)  (New usage is discouraged.) $)
+  axresscn $p |- RR C_ CC $=
+    ( cnr c0r csn cxp cr cc wcel wss 0r snssi xpss2 mp2b df-r df-c 3sstr4i ) AB
+    CZDZAADZEFBAGPAHQRHIBAJPAAKLMNO $.
+
+  $( 1 is a complex number.  Axiom for real and complex numbers, derived from
+     set theory.  This construction-dependent theorem should not be referenced
+     directly; instead, use ~ ax-1cn .  (Contributed by NM, 12-Apr-2007.)
+     (New usage is discouraged.) $)
+  ax1cn $p |- 1 e. CC $=
+    ( cr cc c1 axresscn c1r c0r cop df-1 wcel cnr opelreal mpbir eqeltri sselii
+    1sr ) ABCDCEFGZAHPAIEJIOEKLMN $.
+
+  $( ` _i ` is a complex number.  Axiom for real and complex numbers, derived
+     from set theory.  This construction-dependent theorem should not be
+     referenced directly; instead, use ~ ax-icn .  (Contributed by NM,
+     23-Feb-1996.)  (New usage is discouraged.) $)
+  axicn $p |- _i e. CC $=
+    ( ci cc wcel c0r cnr c1r 0r 1sr cop wa df-i eleq1i opelcn bitri mpbir2an )
+    ABCZDECZFECZGHPDFIZBCQRJASBKLDFMNO $.
+
+  ${
+    $d A w x y z $.  $d B w x y z $.
+    $( Closure law for addition of complex numbers.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly, nor should the proven axiom
+       ~ ax-addcl be used later.  Instead, in most cases use ~ addcl .
+       (Contributed by NM, 14-Jun-1995.)  (New usage is discouraged.) $)
+    axaddcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) $=
+      ( vx vy vz vw cc wcel wa cv cop wceq cnr wex caddc co elxpi df-c ad2ant2l
+      eleq2s cxp anim12i ee4anv sylibr cplr simpll simprl oveq12d addcnsr eqtrd
+      addclsr ad2ant2r opelxpi syl2anc syl6eleqr eqeltrd exlimivv syl ) AGHZBGH
+      ZIZACJZDJZKZLZVBMHZVCMHZIZIZBEJZFJZKZLZVJMHZVKMHZIZIZIZFNENZDNCNZABOPZGHZ
+      VAVIDNCNZVQFNENZIVTUSWCUTWDWCAMMUAZGCDAMMQRTWDBWEGEFBMMQRTUBVIVQCDEFUCUDV
+      SWBCDVRWBEFVRWAVBVJUEPZVCVKUEPZKZGVRWAVDVLOPZWHVRAVDBVLOVEVHVQUFVIVMVPUGU
+      HVHVPWIWHLVEVMVBVCVJVKUISUJVHVPWHGHVEVMVHVPIZWHWEGWJWFMHZWGMHZWHWEHVFVNWK
+      VGVOVBVJUKULVGVOWLVFVNVCVKUKSWFWGMMUMUNRUOSUPUQUQUR $.
+
+    $( Closure law for addition in the real subfield of complex numbers.  Axiom
+       for real and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-addrcl be used later.  Instead, in most
+       cases use ~ readdcl .  (Contributed by NM, 31-Mar-1996.)
+       (New usage is discouraged.) $)
+    axaddrcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A + B ) e. RR ) $=
+      ( vx vy cv c0r cop caddc co cr wcel cnr elreal wceq oveq1 eleq1d oveq2 wa
+      cplr addresr addclsr opelreal sylibr eqeltrd 2gencl ) CEZFGZDEZFGZHIZJKAU
+      IHIZJKABHIZJKCDUGUIABLJCAMDBMUGANUJUKJUGAUIHOPUIBNUKULJUIBAHQPUFLKUHLKRZU
+      JUFUHSIZFGZJUFUHTUMUNLKUOJKUFUHUAUNUBUCUDUE $.
+
+    $( Closure law for multiplication of complex numbers.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly, nor should the proven axiom
+       ~ ax-mulcl be used later.  Instead, in most cases use ~ mulcl .
+       (Contributed by NM, 10-Aug-1995.)  (New usage is discouraged.) $)
+    axmulcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $=
+      ( vx vy vz vw cc wcel wa cv cop wceq cnr wex cmul co df-c mulclsr syl2anc
+      cmr elxpi eleq2s anim12i ee4anv sylibr cm1r simpll simprl oveq12d mulcnsr
+      cxp cplr ad2ant2l simplrl simprrl m1r a1i simplrr simprrr addclsr opelxpi
+      eqtrd syl6eleqr eqeltrd exlimivv syl ) AGHZBGHZIZACJZDJZKZLZVJMHZVKMHZIZI
+      ZBEJZFJZKZLZVRMHZVSMHZIZIZIZFNENZDNCNZABOPZGHZVIVQDNCNZWEFNENZIWHVGWKVHWL
+      WKAMMUKZGCDAMMUAQUBWLBWMGEFBMMUAQUBUCVQWECDEFUDUEWGWJCDWFWJEFWFWIVJVRTPZU
+      FVKVSTPZTPZULPZVKVRTPZVJVSTPZULPZKZGWFWIVLVTOPZXAWFAVLBVTOVMVPWEUGVQWAWDU
+      HUIVPWDXBXALVMWAVJVKVRVSUJUMVBWFXAWMGWFWQMHZWTMHZXAWMHWFWNMHZWPMHZXCWFVNW
+      BXEVMVNVOWEUNZVQWAWBWCUOZVJVRRSWFUFMHZWOMHZXFXIWFUPUQWFVOWCXJVMVNVOWEURZV
+      QWAWBWCUSZVKVSRSUFWORSWNWPUTSWFWRMHZWSMHZXDWFVOWBXMXKXHVKVRRSWFVNWCXNXGXL
+      VJVSRSWRWSUTSWQWTMMVASQVCVDVEVEVF $.
+
+    $( Closure law for multiplication in the real subfield of complex numbers.
+       Axiom for real and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-mulrcl be used later.  Instead, in most
+       cases use ~ remulcl .  (New usage is discouraged.)  (Contributed by NM,
+       31-Mar-1996.) $)
+    axmulrcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $=
+      ( vx vy cv c0r cop cmul co cr wcel cnr elreal wceq oveq1 eleq1d oveq2 cmr
+      wa mulresr mulclsr opelreal sylibr eqeltrd 2gencl ) CEZFGZDEZFGZHIZJKAUIH
+      IZJKABHIZJKCDUGUIABLJCAMDBMUGANUJUKJUGAUIHOPUIBNUKULJUIBAHQPUFLKUHLKSZUJU
+      FUHRIZFGZJUFUHTUMUNLKUOJKUFUHUAUNUBUCUDUE $.
+  $}
+
+  ${
+    $d x y z w A $.  $d x y z w B $.
+    $( Multiplication of complex numbers is commutative.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly, nor should the proven axiom
+       ~ ax-mulcom be used later.  Instead, use ~ mulcom .  (Contributed by NM,
+       31-Aug-1995.)  (New usage is discouraged.) $)
+    axmulcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) $=
+      ( vx vy vz vw cv cmr co cm1r cplr cnr mulcnsrec wcel wa mulcomsrg syl2anc
+      wceq oveq12d mulclsr cc cmul dfcnqs simpll simprl simplr simprr addcomsrg
+      cep ccnv oveq2d eqtrd ecovicom ) CDEFABUACGZEGZHIZJDGZFGZHIZHIZKIUBUIUJLU
+      QUOHIZUNURHIZKIZUOUNHIZJURUQHIZHIZKIURUNHIZUOUQHIZKIZUCUNUQUOURMUOURUNUQM
+      UNLNZUQLNZOZUOLNZURLNZOZOZUPVDUTVFKVPVJVMUPVDRVJVKVOUDZVLVMVNUEZUNUOPQVPU
+      SVEJHVPVKVNUSVERVJVKVOUFZVLVMVNUGZUQURPQUKSVPVCVHVGKIZVIVPVAVHVBVGKVPVKVM
+      VAVHRVSVRUQUOPQVPVJVNVBVGRVQVTUNURPQSVPVHLNZVGLNZWAVIRVPVMVKWBVRVSUOUQTQV
+      PVNVJWCVTVQURUNTQVHVGUHQULUM $.
+  $}
+
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $( Addition of complex numbers is associative.  This theorem transfers the
+       associative laws for the real and imaginary signed real components of
+       complex number pairs, to complex number addition itself.  Axiom for real
+       and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-addass be used later.  Instead, use
+       ~ addass .  (Contributed by NM, 2-Sep-1995.)
+       (New usage is discouraged.) $)
+    axaddass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $=
+      ( vx vy vz vw vv vu cv cplr co cnr addcnsrec wcel wa addclsr anim12i an4s
+      wceq cc caddc ccnv addasssrg 3adant3r 3adant2r 3adant1r 3adant3l 3adant2l
+      cep dfcnqs 3adant1l ecoviass ) DEFGHIABCUAUBGJZIJZKLZUJUCMDJZFJZKLZEJZUNK
+      LZUSHJZKLZVAUOKLZUQURVBKLZKLZUTUPKLZVEUKUQUTURUNNURUNVBUONUSVAVBUONUQUTVE
+      UPNUQMOZURMOZUTMOZUNMOZUSMOZVAMOZPVHVIPVLVJVKPVMUQURQUTUNQRSVIVBMOZVKUOMO
+      ZVEMOZUPMOZPVIVNPVPVKVOPVQURVBQUNUOQRSVHVIVKPZVNVOPZVCVFTZVJVHVIVSVTVKVHV
+      IVNVTVOUQURVBUDUEUFUGVJVRVSVDVGTZVHVJVKVSWAVIVJVKVOWAVNUTUNUOUDUHUIULUM
+      $.
+  $}
+
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $d x y z w v u f g h $.
+    $( Multiplication of complex numbers is associative.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use ~ ax-mulass .
+       (Contributed by NM, 3-Sep-1995.)  (New usage is discouraged.) $)
+    axmulass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $=
+      ( vf vg vh cv cmr cplr cnr cm1r wcel mulclsr syl2anc wceq adantl distrsrg
+      co wa syl3anc vx vy vz vw vv vu cc cmul cep ccnv dfcnqs mulcnsrec sylancr
+      m1r addclsr syl2an an4s syl2anr an42s jca w3a simp1l simp2l simp3l simp2r
+      simp3r simp1r addcomsrg addasssrg caov42d a1i eqtrd mulcomsrg 3coml simp3
+      oveq2d oveq12d 3adant3 simp1 3eqtr3d mulasssrg caovdilemd caovcld caov12d
+      simp2 3eqtrd 3eqtr4rd ecoviass ) UAUBUCUDUEUFABCUGUHUDGZUEGZHRZUCGZUFGZHR
+      ZIRZUIUJJUAGZWLHRZKUBGZWIHRZHRZIRZWRWLHRZWPWIHRZIRZXAWJHRZKXDWMHRZHRZIRZX
+      DWJHRZXAWMHRZIRZWPWLWJHRZKWIWMHRZHRZIRZHRZKWRWOHRZHRZIRZWRXOHRZWPWOHRZIRZ
+      XOUKWPWRWLWIULWLWIWJWMULXAXDWJWMULWPWRXOWOULWPJLZWRJLZSZWLJLZWIJLZSZSXAJL
+      ZXDJLZYCYFYDYGYIYCYFSWQJLWTJLZYIYDYGSZWPWLMYLKJLZWSJLZYKUNWRWIMZKWSMUMWQW
+      TUOUPUQYCYGYDYFYJYDYFSXBJLXCJLYJYCYGSWRWLMWPWIMXBXCUOURUSUTYHWJJLZWMJLZSZ
+      SXOJLZWOJLZYFYPYGYQYSYFYPSXLJLZXNJLZYSYGYQSZWLWJMZUUCYMXMJLZUUBUNWIWMMZKX
+      MMZUMXLXNUOUPUQYFYQYGYPYTYGYPSWKJLZWNJLZYTYFYQSWIWJMZWLWMMZWKWNUOURUSUTYE
+      YHYRVAZWPXLHRZWPXNHRZIRZKWRWKHRZHRZKWRWNHRZHRZIRZIRUUMUUQIRZUUSUUNIRZIRXS
+      XHUULDEFUUMUUNUUQUUSJIUULYCUUAUUMJLYCYDYHYRVBZUULYFYPUUAYEYFYGYRVCZYEYHYP
+      YQVDZUUDNZWPXLMNUULYCUUBUUNJLUVCUULYMUUEUUBUNUULYGYQUUEYEYFYGYRVEZYEYHYPY
+      QVFZUUFNZUUGUMZWPXNMNUULYMUUPJLZUUQJLUNUULYDUUHUVKYCYDYHYRVGZUULYGYPUUHUV
+      GUVEUUJNZWRWKMNZKUUPMUMDGZJLZEGZJLZSZUVOUVQIRZUVQUVOIROUULUVOUVQVHPZUVPUV
+      RFGZJLZVAZUVTUWBIRUVOUVQUWBIRIROUULUVOUVQUWBVIPZUULYMUURJLZUUSJLUNUULYDUU
+      IUWFUVLUULYFYQUUIUVDUVHUUKNZWRWNMNZKUURMUMUVSUVTJLZUULUVOUVQUOZPZVJUULXPU
+      UOXRUUTIUULYCUUAUUBXPUUOOUVCUVFUVJWPXLXNQTUULXRKUUPUURIRZHRZUUTUULXQUWLKH
+      UULYDUUHUUIXQUWLOUVLUVMUWGWRWKWNQTVPUULYMUVKUWFUWMUUTOYMUULUNVKZUVNUWHKUU
+      PUURQTVLVQUULXEUVAXGUVBIUULXEUUMKWSWJHRZHRZIRUVAUULDEFWPKWLWSJIHWJUVSUVOU
+      VQHRZUVQUVOHROUULUVOUVQVMPZUWDUVTUWBHRZUVOUWBHRZUVQUWBHRZIRZOUULUWDUWBUVT
+      HRZUWBUVOHRZUWBUVQHRZIRZUWSUXBUWCUVPUVRUXCUXFOUWBUVOUVQQVNUWDUWCUWIUXCUWS
+      OUVPUVRUWCVOZUVPUVRUWIUWCUWJVRUWBUVTVMNUWDUXDUWTUXEUXAIUWDUWCUVPUXDUWTOUX
+      GUVPUVRUWCVSUWBUVOVMNUWDUWCUVRUXEUXAOUXGUVPUVRUWCWEUWBUVQVMNVQVTPZUWDUWQU
+      WBHRUVOUXAHROUULUVOUVQUWBWAPZUVSUWQJLUULUVOUVQMPZUVCUWNUVDUULYDYGYNUVLUVG
+      YONZUVEWBUULUWPUUQUUMIUULUWOUUPKHUULYDYGYPUWOUUPOUVLUVGUVEWRWIWJWATVPVPVL
+      UULXGKUURWPXMHRZIRZHRZUUSKUXLHRZIRZUVBUULXFUXMKHUULDEFWRWPWLWIJIHWMUWRUXH
+      UXIUXJUVLUVCUVDUVGUVHWBVPUULYMUWFUXLJLUXNUXPOUWNUWHUULDEWPXMJJJHUXJUVCUVI
+      WCKUURUXLQTUULUXOUUNUUSIUULDEFKWPXMJHUWNUVCUVIUWRUXIWDVPWFVQWGUULWRXLHRZW
+      RXNHRZIRZWPWKHRZWPWNHRZIRZIRUXQUXTIRZUYAUXRIRZIRYBXKUULDEFUXQUXRUXTUYAJIU
+      ULDEWRXLJJJHUXJUVLUVFWCUULDEWRXNJJJHUXJUVLUVJWCUULDEWPWKJJJHUXJUVCUVMWCUW
+      AUWEUULDEWPWNJJJHUXJUVCUWGWCUWKVJUULXTUXSYAUYBIUULYDUUAUUBXTUXSOUVLUVFUVJ
+      WRXLXNQTUULYCUUHUUIYAUYBOUVCUVMUWGWPWKWNQTVQUULXIUYCXJUYDIUULDEFWRWPWLWIJ
+      IHWJUWRUXHUXIUXJUVLUVCUVDUVGUVEWBUULXJUYAKWSWMHRZHRZIRUYDUULDEFWPKWLWSJIH
+      WMUWRUXHUXIUXJUVCUWNUVDUXKUVHWBUULUYFUXRUYAIUULUYFKWRXMHRZHRUXRUULUYEUYGK
+      HUULYDYGYQUYEUYGOUVLUVGUVHWRWIWMWATVPUULDEFKWRXMJHUWNUVLUVIUWRUXIWDVLVPVL
+      VQWGWH $.
+  $}
+
+  ${
+    $d x y z w v u A $.  $d x y z w v u B $.  $d x y z w v u C $.
+    $d x y z w v u f g h $.
+    $( Distributive law for complex numbers (left-distributivity).  Axiom for
+       real and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly, nor
+       should the proven axiom ~ ax-distr be used later.  Instead, use
+       ~ adddi .  (Contributed by NM, 2-Sep-1995.)
+       (New usage is discouraged.) $)
+    axdistr $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $=
+      ( vf cnr cv cplr co cmr cm1r wcel wa addclsr mulclsr m1r sylancr distrsrg
+      wceq syl3anc syl2anc vx vy vz vw vv vu vg vh cc caddc ccnv cmul addcnsrec
+      cep dfcnqs mulcnsrec anim12i an4s syl2an syl2anr jca simp1l simp2l simp3l
+      an42s w3a simp1r simp2r simp3r oveq2d a1i oveq12d addcomsrg adantl caov4d
+      eqtrd addasssrg ecovidi ) UAUBUCUDUEUFABCUIUJUNUKEULUAFZUCFZUEFZGHZIHZJUB
+      FZUDFZUFFZGHZIHZIHZGHZWDWBIHZVSWGIHZGHZVSVTIHZJWDWEIHZIHZGHZVSWAIHZJWDWFI
+      HZIHZGHZGHZWDVTIHZVSWEIHZGHZWDWAIHZVSWFIHZGHZGHZWBWGWQXEXAXHUOVTWEWAWFUMV
+      SWDWBWGUPVSWDVTWEUPVSWDWAWFUPWQXEXAXHUMVTEKZWAEKZWEEKZWFEKZWBEKZWGEKZLXJX
+      KLXNXLXMLXOVTWAMWEWFMUQURVSEKZWDEKZLZXJXLLZLWQEKZXEEKZXPXJXQXLXTXPXJLWNEK
+      ZWPEKZXTXQXLLZVSVTNZYDJEKZWOEKZYCOWDWENZJWONZPWNWPMUSURXPXLXQXJYAXQXJLXCE
+      KZXDEKZYAXPXLLWDVTNZVSWENZXCXDMUTVEVAXRXKXMLZLXAEKZXHEKZXPXKXQXMYOXPXKLWR
+      EKZWTEKZYOXQXMLZVSWANZYSYFWSEKZYROWDWFNZJWSNZPWRWTMUSURXPXMXQXKYPXQXKLXFE
+      KZXGEKZYPXPXMLWDWANZVSWFNZXFXGMUTVEVAXRXSYNVFZWJWNWRGHZWPWTGHZGHXBUUHWCUU
+      IWIUUJGUUHXPXJXKWCUUIRXPXQXSYNVBZXRXJXLYNVCZXRXSXKXMVDZVSVTWAQSUUHWIJWOWS
+      GHZIHZUUJUUHWHUUNJIUUHXQXLXMWHUUNRXPXQXSYNVGZXRXJXLYNVHZXRXSXKXMVIZWDWEWF
+      QSVJUUHYFYGUUAUUOUUJRYFUUHOVKUUHXQXLYGUUPUUQYHTZUUHXQXMUUAUUPUURUUBTZJWOW
+      SQSVPVLUUHDUGUHWNWRWPWTEGUUHXPXJYBUUKUULYETUUHXPXKYQUUKUUMYTTUUHYFYGYCOUU
+      SYIPDFZEKZUGFZEKZLZUVAUVCGHZUVCUVAGHRUUHUVAUVCVMVNZUVBUVDUHFZEKVFUVFUVHGH
+      UVAUVCUVHGHGHRUUHUVAUVCUVHVQVNZUUHYFUUAYROUUTUUCPUVEUVFEKUUHUVAUVCMVNZVOV
+      PUUHWMXCXFGHZXDXGGHZGHXIUUHWKUVKWLUVLGUUHXQXJXKWKUVKRUUPUULUUMWDVTWAQSUUH
+      XPXLXMWLUVLRUUKUUQUURVSWEWFQSVLUUHDUGUHXCXFXDXGEGUUHXQXJYJUUPUULYLTUUHXQX
+      KUUDUUPUUMUUFTUUHXPXLYKUUKUUQYMTUVGUVIUUHXPXMUUEUUKUURUUGTUVJVOVPVR $.
+  $}
+
+  $( i-squared equals -1 (expressed as i-squared plus 1 is 0).  Axiom for real
+     and complex numbers, derived from set theory.  This construction-dependent
+     theorem should not be referenced directly; instead, use ~ ax-i2m1 .
+     (Contributed by NM, 5-May-1996.)  (New usage is discouraged.) $)
+  axi2m1 $p |- ( ( _i x. _i ) + 1 ) = 0 $=
+    ( c0r c1r cop cmul co caddc ci cm1r cplr cmr cnr wcel wceq 0r 1sr ax-mp m1r
+    1idsr eqtri oveq12i c1 cc0 mulcnsr mp4an 00sr oveq2i addcomsrg mp2an 3eqtri
+    0idsr opeq12i oveq1i addresr m1p1sr opeq1i df-i df-1 df-0 3eqtr4i ) ABCZUTD
+    EZBACZFEZAACZGGDEZUAFEUBVCHACZVBFEZHBIEZACZVDVAVFVBFVAAAJEZHBBJEZJEZIEZBAJE
+    ZABJEZIEZCZVFAKLZBKLZVRVSVAVQMNONOABABUCUDVMHVPAVMAHIEZHAIEZHVJAVLHIVRVJAMN
+    AUEPVLHBJEZHVKBHJVSVKBMOBRPUFHKLZWBHMQHRPSTVRWCVTWAMNQAHUGUHWCWAHMQHUJPUIVP
+    AAIEZAVNAVOAIVSVNAMOBUEPVRVOAMNARPTVRWDAMNAUJPSUKSULWCVSVGVIMQOHBUMUHVHAAUN
+    UOUIVEVAUAVBFGUTGUTDUPUPTUQTURUS $.
+
+  $( 0 is less than 1.  Axiom for real and complex numbers, derived from set
+     theory.  This construction-dependent theorem should not be referenced
+     directly; instead, use ~ ax-0lt1 .
+
+     The version of this axiom in the Metamath Proof Explorer reads
+     ` 1 =/= 0 ` ; here we change it to ` 0 <RR 1 ` .  The proof of ` 0 <RR 1 `
+     from ` 1 =/= 0 ` in the Metamath Proof Explorer (accessed 12-Jan-2020)
+     relies on real number trichotomy.  (Contributed by Jim Kingdon,
+     12-Jan-2020.)  (New usage is discouraged.) $)
+  ax0lt1 $p |- 0 <RR 1 $=
+    ( c0r cop c1r cc0 c1 cltrr wbr cltr 0lt1sr ltresr mpbir df-0 df-1 3brtr4i )
+    AABZCABZDEFOPFGACHGIACJKLMN $.
+
+  ${
+    $d A x y $.
+    $( ` 1 ` is an identity element for real multiplication.  Axiom for real
+       and complex numbers, derived from set theory.  This
+       construction-dependent theorem should not be referenced directly;
+       instead, use ~ ax-1rid .  (Contributed by Scott Fenton, 3-Jan-2013.)
+       (New usage is discouraged.) $)
+    ax1rid $p |- ( A e. RR -> ( A x. 1 ) = A ) $=
+      ( vx vy cv cop c1 cmul co wceq cnr c0r csn cr df-r oveq1 id eqeq12d elsni
+      wcel c1r df-1 oveq2i cmr 1sr mpan2 1idsr opeq1d eqtrd syl5eq opeq2 oveq1d
+      mulresr syl5ibr impcom sylan2 optocl ) BDZCDZEZFGHZUSIZAFGHZAIBCAJKLZMNUS
+      AIZUTVBUSAUSAFGOVDPQURVCSUQJSZURKIZVAURKRVFVEVAVEVAVFUQKEZFGHZVGIVEVHVGTK
+      EZGHZVGFVIVGGUAUBVEVJUQTUCHZKEZVGVETJSVJVLIUDUQTULUEVEVKUQKUQUFUGUHUIVFUT
+      VHUSVGVFUSVGFGURKUQUJZUKVMQUMUNUOUP $.
+  $}
+
+  ${
+    $d x y A $.  $d x y z $.
+    $( Existence of negative of real number.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly; instead, use ~ ax-rnegex .
+       (Contributed by NM, 15-May-1996.)  (New usage is discouraged.) $)
+    axrnegex $p |- ( A e. RR -> E. x e. RR ( A + x ) = 0 ) $=
+      ( cr wcel c1st cfv cm1r cmr co c0r cop caddc cc0 wceq cv wrex cnr elreal2
+      simplbi syl2anc mulclsr sylancl opelreal sylibr cplr simprbi oveq1d pn0sr
+      m1r addresr opeq1d df-0 syl6eqr syl 3eqtrd oveq2 eqeq1d rspcev ) BCDZBEFZ
+      GHIZJKZCDZBVBLIZMNZBAOZLIZMNZACPUSVAQDZVCUSUTQDZGQDVIUSVJBUTJKZNZBRZSZUIU
+      TGUAUBZVAUCUDUSVDVKVBLIZUTVAUEIZJKZMUSBVKVBLUSVJVLVMUFUGUSVJVIVPVRNVNVOUT
+      VAUJTUSVJVRMNVNVJVRJJKMVJVQJJUTUHUKULUMUNUOVHVEAVBCVFVBNVGVDMVFVBBLUPUQUR
+      T $.
+  $}
+
+  ${
+    $d x y A $.  $d x y z $.
+    $( Existence of reciprocal of positive real number.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use ~ ax-precex .
+
+       In treatments which assume excluded middle, the ` 0 <RR A ` condition is
+       generally replaced by ` A =/= 0 ` .  (Contributed by Jim Kingdon,
+       12-Jan-2020.)  (New usage is discouraged.) $)
+    axprecex $p |- ( ( A e. RR /\ 0 <RR A ) -> E. x e. RR ( A x. x ) = 1 ) $=
+      ( vy vz cr wcel cc0 cltrr wbr cv cmul co c1 wceq wrex c0r cop cnr wa c1r
+      wi wex elreal df-rex bitri breq2 oveq1 eqeq1d rexbidv imbi12d cltr breq1i
+      df-0 ltresr cmr recexsrlem opelreal anbi1i mulresr df-1 eqeq2i eqid wb 0r
+      opthg2 mp2an mpbiran2 syl6bb pm5.32da syl5bb rspcev syl6bir expd rexlimdv
+      1sr oveq2 syl5 syl5bi gencl imp ) BEFZGBHIZBAJZKLZMNZAEOZGCJZPQZHIZWHWCKL
+      ZMNZAEOZUAWBWFUAWGRFZWACWHBWAWHBNZCROWMWNSCUBCBUCWNCRUDUEWNWIWBWLWFWHBGHU
+      FWNWKWEAEWNWJWDMWHBWCKUGUHUIUJWIPWGUKIZWMWLWIPPQZWHHIWOGWPWHHUMULPWGUNUEW
+      OWGDJZUOLZTNZDROWMWLDWGUPWMWSWLDRWMWQRFZWSWLWMWTWSSZWQPQZEFZWHXBKLZMNZSZW
+      LXFWTXESWMXAXCWTXEWQUQURWMWTXEWSWMWTSZXEWRPQZMNZWSXGXDXHMWGWQUSUHXIXHTPQZ
+      NZWSMXJXHUTVAXKWSPPNZPVBTRFPRFXKWSXLSVCVOVDWRPTPRRVEVFVGUEVHVIVJWKXEAXBEW
+      CXBNWJXDMWCXBWHKVPUHVKVLVMVNVQVRVSVT $.
+  $}
+
+  ${
+    $d x y z w A $.
+    $( A complex number can be expressed in terms of two reals.  Definition
+       10-1.1(v) of [Gleason] p. 130.  Axiom for real and complex numbers,
+       derived from set theory.  This construction-dependent theorem should not
+       be referenced directly; instead, use ~ ax-cnre .  (Contributed by NM,
+       13-May-1996.)  (New usage is discouraged.) $)
+    axcnre $p |- ( A e. CC ->
+                      E. x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $=
+      ( cop cmul co caddc wceq cr cnr wcel wa c0r cplr c1r cmr cm1r eqtrd cvv
+      0r vz vw cv ci wrex df-c eqeq1 2rexbidv wex opelreal anbi12i biimpri df-i
+      cc oveq1i 1sr mulcnsr mpanl12 mpan2 mulcomsrg mpan 00sr oveq1d oveq2i m1r
+      ax-mp eqtri 0idsr syl6eq 1idsr syl5eq opeq12d oveq2d adantl mpanl2 mpanr1
+      addcnsr addcomsrg opeq12 syl2an 3eqtrrd vex opexg mp2an eleq1 oveq1 oveq2
+      bi2anan9 sylan9eq eqeq2d anbi12d spc2ev syl2anc r2ex sylibr optocl ) UAUC
+      ZUBUCZDZAUCZUDBUCZEFZGFZHZBIUEAIUEZCXCHZBIUEAIUEUAUBCJJUNUFWSCHXDXFABIIWS
+      CXCUGUHWQJKZWRJKZLZWTIKZXAIKZLZXDLZBUIAUIZXEXIWQMDZIKZWRMDZIKZLZWSXOUDXQE
+      FZGFZHZXNXSXIXPXGXRXHWQUJWRUJUKULXIYAXOMWRDZGFZWQMNFZMWRNFZDZWSXHYAYDHXGX
+      HXTYCXOGXHXTMODZXQEFZYCUDYHXQEUMUOXHYIMWRPFZQOMPFZPFZNFZOWRPFZMMPFZNFZDZY
+      CXHMJKZYIYQHZTYROJKZXHYRLYSTUPMOWRMUQURUSXHYMMYPWRXHYMMYLNFZMXHYJMYLNXHYJ
+      WRMPFZMYRXHYJUUBHTMWRUTVAWRVBRVCUUAMMNFZMYLMMNYLQMPFZMYKMQPYTYKMHUPOVBVFV
+      DQJKUUDMHVEQVBVFVGVDYRUUCMHTMVHVFVGVIXHYPWRYONFZWRXHYNWRYONXHYNWROPFZWRYT
+      XHYNUUFHUPOWRUTVAWRVJRVCXHUUEWRMNFZWRYOMWRNYRYOMHTMVBVFVDWRVHZVKRVLRVKVMV
+      NXGYRXHYDYGHZTXGYRYRXHLUUITWQMMWRVQVOVPXGYEWQHYFWRHYGWSHXHWQVHXHYFUUGWRYR
+      XHYFUUGHTMWRVRVAUUHRYEYFWQWRVSVTWAXMXSYBLABXOXQWQSKYRXOSKUAWBTWQMSJWCWDWR
+      SKYRXQSKUBWBTWRMSJWCWDWTXOHZXAXQHZLZXLXSXDYBUUJXJXPUUKXKXRWTXOIWEXAXQIWEW
+      HUULXCYAWSUUJUUKXCXOXBGFYAWTXOXBGWFUUKXBXTXOGXAXQUDEWGVMWIWJWKWLWMXDABIIW
+      NWOWP $.
+  $}
+
+  ${
+    $d x A $.
+    $( Real number less-than is irreflexive.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly; instead, use ~ ax-pre-ltirr .
+       (Contributed by Jim Kingdon, 12-Jan-2020.)
+       (New usage is discouraged.) $)
+    axpre-ltirr $p |- ( A e. RR -> -. A <RR A ) $=
+      ( vx cv c0r cop cltrr wbr wn cnr wcel cr wceq wrex wa elreal df-rex bitri
+      wex id cltr breq12d notbid ltsosr ltrelsr soirri ltresr mtbir a1i gencl )
+      BCZDEZUKFGZHZAAFGZHUJIJZAKJZBUKAUPUKALZBIMUOUQNBRBAOUQBIPQUQULUNUQUKAUKAF
+      UQSZURUAUBUMUOULUJUJTGUJTIUCUDUEUJUJUFUGUHUI $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.
+    $( Real number less-than is weakly linear.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly; instead, use ~ ax-pre-ltwlin .
+       (Contributed by Jim Kingdon, 12-Jan-2020.)
+       (New usage is discouraged.) $)
+    axpre-ltwlin $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+        ( A <RR B -> ( A <RR C \/ C <RR B ) ) ) $=
+      ( vx vy vz cv c0r cop cltrr wbr wo cnr elreal wceq breq1 breq2 wcel cltr
+      wi orbi1d imbi12d orbi2d orbi12d imbi2d w3a wor ltsosr sowlin mpan ltresr
+      cr orbi12i 3imtr4g 3gencl ) DGZHIZEGZHIZJKZUQFGZHIZJKZVBUSJKZLZTAUSJKZAVB
+      JKZVDLZTABJKZVGVBBJKZLZTVIACJKZCBJKZLZTDEFUQUSVBAMULBCDANEBNFCNUQAOZUTVFV
+      EVHUQAUSJPVOVCVGVDUQAVBJPUAUBUSBOZVFVIVHVKUSBAJQVPVDVJVGUSBVBJQUCUBVBCOZV
+      KVNVIVQVGVLVJVMVBCAJQVBCBJPUDUEUPMRURMRVAMRUFZUPURSKZUPVASKZVAURSKZLZUTVE
+      MSUGVRVSWBTUHMUPURVASUIUJUPURUKVCVTVDWAUPVAUKVAURUKUMUNUO $.
+  $}
+
+  ${
+    $d x y z A $.  $d y z B $.  $d z C $.
+    $( Ordering on reals is transitive.  Axiom for real and complex numbers,
+       derived from set theory.  This construction-dependent theorem should not
+       be referenced directly; instead, use ~ ax-pre-lttrn .  (Contributed by
+       NM, 19-May-1996.)  (Revised by Mario Carneiro, 16-Jun-2013.)
+       (New usage is discouraged.) $)
+    axpre-lttrn $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+               ( ( A <RR B /\ B <RR C ) -> A <RR C ) ) $=
+      ( vx vy vz cv c0r cop cltrr wbr wa cnr elreal wceq breq1 breq2 wcel cltr
+      wi anbi1d imbi12d anbi12d imbi1d anbi2d w3a ltresr ltsosr ltrelsr syl2anb
+      cr sotri sylibr a1i 3gencl ) DGZHIZEGZHIZJKZUSFGZHIZJKZLZUQVBJKZTZAUSJKZV
+      CLZAVBJKZTABJKZBVBJKZLZVITVJBCJKZLZACJKZTDEFUQUSVBAMUKBCDANEBNFCNUQAOZVDV
+      HVEVIVPUTVGVCUQAUSJPUAUQAVBJPUBUSBOZVHVLVIVQVGVJVCVKUSBAJQUSBVBJPUCUDVBCO
+      ZVLVNVIVOVRVKVMVJVBCBJQUEVBCAJQUBVFUPMRURMRVAMRUFVDUPVASKZVEUTUPURSKURVAS
+      KVSVCUPURUGURVAUGUPURVASMUHUIULUJUPVAUGUMUNUO $.
+  $}
+
+  ${
+    $d x y z A $.  $d x y z B $.  $d x y z C $.
+    $( Ordering property of addition on reals.  Axiom for real and complex
+       numbers, derived from set theory.  This construction-dependent theorem
+       should not be referenced directly; instead, use ~ ax-pre-ltadd .
+       (Contributed by NM, 11-May-1996.)  (New usage is discouraged.) $)
+    axpre-ltadd $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                  ( A <RR B -> ( C + A ) <RR ( C + B ) ) ) $=
+      ( vx vy vz cr wcel w3a cltrr wbr caddc co cv c0r cop wb cnr elreal wceq
+      breq1 oveq2 breq1d bibi12d breq2 breq2d breq12d bibi2d cltr ltasrg ltresr
+      oveq1 cplr simp3 simp1 simp2 wa addresr breqan12d syl22anc syl6bb 3bitr4d
+      a1i 3gencl biimpd ) AGHBGHCGHIABJKZCALMZCBLMZJKZDNZOPZENZOPZJKZFNZOPZVKLM
+      ZVPVMLMZJKZQAVMJKZVPALMZVRJKZQVFWAVPBLMZJKZQVFVIQDEFVKVMVPARGBCDASEBSFCSV
+      KATZVNVTVSWBVKAVMJUAWEVQWAVRJVKAVPLUBUCUDVMBTZVTVFWBWDVMBAJUEWFVRWCWAJVMB
+      VPLUBUFUDVPCTZWDVIVFWGWAVGWCVHJVPCALULVPCBLULUGUHVJRHZVLRHZVORHZIZVJVLUIK
+      ZVOVJUMMZVOVLUMMZUIKZVNVSVJVLVOUJVNWLQWKVJVLUKVCWKVSWMOPZWNOPZJKZWOWKWJWH
+      WJWIVSWRQWHWIWJUNZWHWIWJUOWSWHWIWJUPWJWHUQWJWIUQVQWPVRWQJVOVJURVOVLURUSUT
+      WMWNUKVAVBVDVE $.
+  $}
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The product of two positive reals is positive.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use
+       ~ ax-pre-mulgt0 .  (Contributed by NM, 13-May-1996.)
+       (New usage is discouraged.) $)
+    axpre-mulgt0 $p |- ( ( A e. RR /\ B e. RR ) ->
+                  ( ( 0 <RR A /\ 0 <RR B ) -> 0 <RR ( A x. B ) ) ) $=
+      ( vx vy cc0 cv c0r cop cltrr wbr wa cmul cnr elreal wceq cltr df-0 ltresr
+      co wi cr breq2 anbi1d oveq1 breq2d imbi12d anbi2d oveq2 wcel breq1i bitri
+      cmr mulgt0sr syl2anb a1i mulresr breq12d syl6bb syl5ibr 2gencl ) ECFZGHZI
+      JZEDFZGHZIJZKZEVBVELSZIJZTEAIJZVFKZEAVELSZIJZTVJEBIJZKZEABLSZIJZTCDVBVEAB
+      MUACANDBNVBAOZVGVKVIVMVRVCVJVFVBAEIUBUCVRVHVLEIVBAVELUDUEUFVEBOZVKVOVMVQV
+      SVFVNVJVEBEIUBUGVSVLVPEIVEBALUHUEUFVGVIVAMUIVDMUIKZGVAVDULSZPJZVCGVAPJZGV
+      DPJZWBVFVCGGHZVBIJWCEWEVBIQUJGVARUKVFWEVEIJWDEWEVEIQUJGVDRUKVAVDUMUNVTVIW
+      EWAGHZIJWBVTEWEVHWFIEWEOVTQUOVAVDUPUQGWARURUSUT $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+          Real and complex number postulates restated as axioms
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The complex numbers form a set.  Proofs should normally use ~ cnex
+     instead.  (New usage is discouraged.)  (Contributed by NM, 1-Mar-1995.) $)
+  ax-cnex $a |- CC e. _V $.
+  $( $j restatement 'ax-cnex' of 'axcnex'; $)
+
+  $( The real numbers are a subset of the complex numbers.  Axiom for real and
+     complex numbers, justified by theorem ~ axresscn .  (Contributed by NM,
+     1-Mar-1995.) $)
+  ax-resscn $a |- RR C_ CC $.
+  $( $j restatement 'ax-resscn' of 'axresscn'; $)
+
+  $( 1 is a complex number.  Axiom for real and complex numbers, justified by
+     theorem ~ ax1cn .  (Contributed by NM, 1-Mar-1995.) $)
+  ax-1cn $a |- 1 e. CC $.
+  $( $j restatement 'ax-1cn' of 'ax1cn'; $)
+
+  $( ` _i ` is a complex number.  Axiom for real and complex numbers, justified
+     by theorem ~ axicn .  (Contributed by NM, 1-Mar-1995.) $)
+  ax-icn $a |- _i e. CC $.
+  $( $j restatement 'ax-icn' of 'axicn'; $)
+
+  $( Closure law for addition of complex numbers.  Axiom for real and complex
+     numbers, justified by theorem ~ axaddcl .  Proofs should normally use
+     ~ addcl instead, which asserts the same thing but follows our naming
+     conventions for closures.  (New usage is discouraged.)  (Contributed by
+     NM, 22-Nov-1994.) $)
+  ax-addcl $a |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) $.
+  $( $j restatement 'ax-addcl' of 'axaddcl'; $)
+
+  $( Closure law for addition in the real subfield of complex numbers.  Axiom
+     for real and complex numbers, justified by theorem ~ axaddrcl .  Proofs
+     should normally use ~ readdcl instead.  (New usage is discouraged.)
+     (Contributed by NM, 22-Nov-1994.) $)
+  ax-addrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A + B ) e. RR ) $.
+  $( $j restatement 'ax-addrcl' of 'axaddrcl'; $)
+
+  $( Closure law for multiplication of complex numbers.  Axiom for real and
+     complex numbers, justified by theorem ~ axmulcl .  Proofs should normally
+     use ~ mulcl instead.  (New usage is discouraged.)  (Contributed by NM,
+     22-Nov-1994.) $)
+  ax-mulcl $a |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $.
+  $( $j restatement 'ax-mulcl' of 'axmulcl'; $)
+
+  $( Closure law for multiplication in the real subfield of complex numbers.
+     Axiom for real and complex numbers, justified by theorem ~ axmulrcl .
+     Proofs should normally use ~ remulcl instead.
+     (New usage is discouraged.)  (Contributed by NM, 22-Nov-1994.) $)
+  ax-mulrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $.
+  $( $j restatement 'ax-mulrcl' of 'axmulrcl'; $)
+
+  $( Multiplication of complex numbers is commutative.  Axiom for real and
+     complex numbers, justified by theorem ~ axmulcom .  Proofs should normally
+     use ~ mulcom instead.  (New usage is discouraged.)  (Contributed by NM,
+     22-Nov-1994.) $)
+  ax-mulcom $a |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) $.
+  $( $j restatement 'ax-mulcom' of 'axmulcom'; $)
+
+  $( Addition of complex numbers is associative.  Axiom for real and complex
+     numbers, justified by theorem ~ axaddass .  Proofs should normally use
+     ~ addass instead.  (New usage is discouraged.)  (Contributed by NM,
+     22-Nov-1994.) $)
+  ax-addass $a |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $.
+  $( $j restatement 'ax-addass' of 'axaddass'; $)
+
+  $( Multiplication of complex numbers is associative.  Axiom for real and
+     complex numbers, justified by theorem ~ axmulass .  Proofs should normally
+     use ~ mulass instead.  (New usage is discouraged.)  (Contributed by NM,
+     22-Nov-1994.) $)
+  ax-mulass $a |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $.
+  $( $j restatement 'ax-mulass' of 'axmulass'; $)
+
+  $( Distributive law for complex numbers (left-distributivity).  Axiom for
+     real and complex numbers, justified by theorem ~ axdistr .  Proofs should
+     normally use ~ adddi instead.  (New usage is discouraged.)  (Contributed
+     by NM, 22-Nov-1994.) $)
+  ax-distr $a |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+              ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $.
+  $( $j restatement 'ax-distr' of 'axdistr'; $)
+
+  $( i-squared equals -1 (expressed as i-squared plus 1 is 0).  Axiom for real
+     and complex numbers, justified by theorem ~ axi2m1 .  (Contributed by NM,
+     29-Jan-1995.) $)
+  ax-i2m1 $a |- ( ( _i x. _i ) + 1 ) = 0 $.
+  $( $j restatement 'ax-i2m1' of 'axi2m1'; $)
+
+  $( 0 is less than 1.  Axiom for real and complex numbers, justified by
+     theorem ~ ax0lt1 .  (Contributed by Jim Kingdon, 12-Jan-2020.) $)
+  ax-0lt1 $p |- 0 <RR 1 $=
+    ( c0r cop c1r cc0 c1 cltrr wbr cltr 0lt1sr ltresr mpbir df-0 df-1 3brtr4i )
+    AABZCABZDEFOPFGACHGIACJKLMN $.
+  $( $j restatement 'ax-0lt1' of 'ax0lt1'; $)
+
+  $( ` 1 ` is an identity element for real multiplication.  Axiom for real and
+     complex numbers, justified by theorem ~ ax1rid .  (Contributed by NM,
+     29-Jan-1995.) $)
+  ax-1rid $a |- ( A e. RR -> ( A x. 1 ) = A ) $.
+  $( $j restatement 'ax-1rid' of 'ax1rid'; $)
+
+  ${
+    $d x A $.
+    $( Existence of negative of real number.  Axiom for real and complex
+       numbers, justified by theorem ~ axrnegex .  (Contributed by Eric
+       Schmidt, 21-May-2007.) $)
+    ax-rnegex $a |- ( A e. RR -> E. x e. RR ( A + x ) = 0 ) $.
+    $( $j restatement 'ax-rnegex' of 'axrnegex'; $)
+  $}
+
+  ${
+    $d x A $.
+    $( Existence of reciprocal of positive real number.  Axiom for real and
+       complex numbers, justified by theorem ~ axprecex .
+
+       In treatments which assume excluded middle, the ` 0 <RR A ` condition is
+       generally replaced by ` A =/= 0 ` .  (Contributed by Jim Kingdon,
+       12-Jan-2020.) $)
+    ax-precex $a |- ( ( A e. RR /\ 0 <RR A ) -> E. x e. RR ( A x. x ) = 1 ) $.
+    $( $j restatement 'ax-precex' of 'axprecex'; $)
+  $}
+
+  ${
+    $d x y A $.
+    $( A complex number can be expressed in terms of two reals.  Definition
+       10-1.1(v) of [Gleason] p. 130.  Axiom for real and complex numbers,
+       justified by theorem ~ axcnre .  For naming consistency, use ~ cnre for
+       new proofs.  (New usage is discouraged.)  (Contributed by NM,
+       9-May-1999.) $)
+    ax-cnre $a |- ( A e. CC ->
+                      E. x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $.
+    $( $j restatement 'ax-cnre' of 'axcnre'; $)
+  $}
+
+  $( Real number less-than is irreflexive.  Axiom for real and complex numbers,
+     justified by theorem ~ ax-pre-ltirr .  (Contributed by Jim Kingdon,
+     12-Jan-2020.) $)
+  ax-pre-ltirr $a |- ( A e. RR -> -. A <RR A ) $.
+  $( $j restatement 'ax-pre-ltirr' of 'axpre-ltirr'; $)
+
+  $( Real number less-than is weakly linear.  Axiom for real and complex
+     numbers, justified by theorem ~ axpre-ltwlin .  (Contributed by Jim
+     Kingdon, 12-Jan-2020.) $)
+  ax-pre-ltwlin $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+    ( A <RR B -> ( A <RR C \/ C <RR B ) ) ) $.
+  $( $j restatement 'ax-pre-ltwlin' of 'axpre-ltwlin'; $)
+
+  $( Ordering on reals is transitive.  Axiom for real and complex numbers,
+     justified by theorem ~ axpre-lttrn .  (Contributed by NM, 13-Oct-2005.) $)
+  ax-pre-lttrn $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A <RR B /\ B <RR C ) -> A <RR C ) ) $.
+  $( $j restatement 'ax-pre-lttrn' of 'axpre-lttrn'; $)
+
+  $( Ordering property of addition on reals.  Axiom for real and complex
+     numbers, justified by theorem ~ axpre-ltadd .  (Contributed by NM,
+     13-Oct-2005.) $)
+  ax-pre-ltadd $a |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A <RR B -> ( C + A ) <RR ( C + B ) ) ) $.
+  $( $j restatement 'ax-pre-ltadd' of 'axpre-ltadd'; $)
+
+  $( The product of two positive reals is positive.  Axiom for real and complex
+     numbers, justified by theorem ~ axpre-mulgt0 .  (Contributed by NM,
+     13-Oct-2005.) $)
+  ax-pre-mulgt0 $a |- ( ( A e. RR /\ B e. RR ) ->
+                ( ( 0 <RR A /\ 0 <RR B ) -> 0 <RR ( A x. B ) ) ) $.
+  $( $j restatement 'ax-pre-mulgt0' of 'axpre-mulgt0'; $)
+
+$(
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+           Derive the basic properties from the field axioms
+#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+$)
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Some deductions from the field axioms for complex numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Alias for ~ ax-cnex .  (Contributed by Mario Carneiro, 17-Nov-2014.) $)
+  cnex $p |- CC e. _V $=
+    ( ax-cnex ) A $.
+
+  $( Alias for ~ ax-addcl , for naming consistency with ~ addcli .  Use this
+     theorem instead of ~ ax-addcl or ~ axaddcl .  (Contributed by NM,
+     10-Mar-2008.) $)
+  addcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) e. CC ) $=
+    ( ax-addcl ) ABC $.
+
+  $( Alias for ~ ax-addrcl , for naming consistency with ~ readdcli .
+     (Contributed by NM, 10-Mar-2008.) $)
+  readdcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A + B ) e. RR ) $=
+    ( ax-addrcl ) ABC $.
+
+  $( Alias for ~ ax-mulcl , for naming consistency with ~ mulcli .
+     (Contributed by NM, 10-Mar-2008.) $)
+  mulcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $=
+    ( ax-mulcl ) ABC $.
+
+  $( Alias for ~ ax-mulrcl , for naming consistency with ~ remulcli .
+     (Contributed by NM, 10-Mar-2008.) $)
+  remulcl $p |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $=
+    ( ax-mulrcl ) ABC $.
+
+  $( Alias for ~ ax-mulcom , for naming consistency with ~ mulcomi .
+     (Contributed by NM, 10-Mar-2008.) $)
+  mulcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) = ( B x. A ) ) $=
+    ( ax-mulcom ) ABC $.
+
+  $( Alias for ~ ax-addass , for naming consistency with ~ addassi .
+     (Contributed by NM, 10-Mar-2008.) $)
+  addass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $=
+    ( ax-addass ) ABCD $.
+
+  $( Alias for ~ ax-mulass , for naming consistency with ~ mulassi .
+     (Contributed by NM, 10-Mar-2008.) $)
+  mulass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                 ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $=
+    ( ax-mulass ) ABCD $.
+
+  $( Alias for ~ ax-distr , for naming consistency with ~ adddii .
+     (Contributed by NM, 10-Mar-2008.) $)
+  adddi $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $=
+    ( ax-distr ) ABCD $.
+
+  ${
+    $d A x y $.
+    $( Alias for ~ ax-cnre , for naming consistency.  (Contributed by NM,
+       3-Jan-2013.) $)
+    cnre $p |- ( A e. CC -> E. x e. RR E. y e. RR A = ( x + ( _i x. y ) ) ) $=
+      ( ax-cnre ) ABCD $.
+  $}
+
+  ${
+    recni.1 $e |- A e. RR $.
+    axri.2 $e |- B e. RR $.
+    $( Closure law for addition of reals.  (Contributed by NM, 17-Jan-1997.) $)
+    readdcli $p |- ( A + B ) e. RR $=
+      ( cr wcel caddc co readdcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Closure law for multiplication of reals.  (Contributed by NM,
+       17-Jan-1997.) $)
+    remulcli $p |- ( A x. B ) e. RR $=
+      ( cr wcel cmul co remulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
+
+  ${
+    axi.1 $e |- A e. CC $.
+    axi.2 $e |- B e. CC $.
+    $( Closure law for addition.  (Contributed by NM, 23-Nov-1994.) $)
+    addcli $p |- ( A + B ) e. CC $=
+      ( cc wcel caddc co addcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Closure law for multiplication.  (Contributed by NM, 23-Nov-1994.) $)
+    mulcli $p |- ( A x. B ) e. CC $=
+      ( cc wcel cmul co mulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Commutative law for multiplication.  (Contributed by NM,
+       23-Nov-1994.) $)
+    mulcomi $p |- ( A x. B ) = ( B x. A ) $=
+      ( cc wcel cmul co wceq mulcom mp2an ) AEFBEFABGHBAGHICDABJK $.
+
+    axi.3 $e |- C e. CC $.
+    $( Associative law for addition.  (Contributed by NM, 23-Nov-1994.) $)
+    addassi $p |- ( ( A + B ) + C ) = ( A + ( B + C ) ) $=
+      ( cc wcel caddc co wceq addass mp3an ) AGHBGHCGHABIJCIJABCIJIJKDEFABCLM
+      $.
+
+    $( Associative law for multiplication.  (Contributed by NM,
+       23-Nov-1994.) $)
+    mulassi $p |- ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) $=
+      ( cc wcel cmul co wceq mulass mp3an ) AGHBGHCGHABIJCIJABCIJIJKDEFABCLM $.
+
+    $( Distributive law (left-distributivity).  (Contributed by NM,
+       23-Nov-1994.) $)
+    adddii $p |- ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) $=
+      ( cc wcel caddc co cmul wceq adddi mp3an ) AGHBGHCGHABCIJKJABKJACKJIJLDEF
+      ABCMN $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
@@ -65155,6 +66786,31 @@ $(
   However, we state all the axioms in inference form to make it clear that we
   do not exploit any over-permissiveness.
 
+  Finally, note that our logic has no terms, only variables.  Therefore, we
+  cannot prove for instance that ` x e. _om ` is a bounded formula.  However,
+  since ` _om ` can be defined as "the ` y  ` such that PHI" a proof using the
+  fact that ` x e. _om ` is bounded can be converted to a proof in iset.mm by
+  replacing ` _om ` with ` y ` everywhere and prepending the antecedent PHI,
+  since ` x e. y ` is bounded by ~ ax-bdel .  For a similar method, see
+  ~ bj-omtrans .
+
+  Note that one cannot add an axiom ` |- Bdd x e. A ` since by ~ bdph it would
+  imply that every formula is bounded.
+
+  For CZF, a useful set of notes is
+
+  Peter Aczel and Michael Rathjen,
+  _CST Book draft_.
+  (available at ~ http://www1.maths.leeds.ac.uk/~~rathjen/book.pdf )
+
+  and an interesting article is
+
+  Michael Shulman,
+  _Comparing material and structural set theories_,
+  Annals of Pure and Applied Logic,
+  Volume 170, Issue 4 (Apr. 2019), 465--504.
+  (available at ~ https://arxiv.org/abs/1808.05204 )
+
 $)
 
   $( Symbol for the predicate ` Bdd ` . $)
@@ -66606,19 +68262,22 @@ $)
   ${
     $d a x y A $.
     $( The set ` _om ` is transitive.  A natural number is included in
-       ` _om ` .  (Contributed by BJ, 29-Dec-2019.)
+       ` _om ` .
+
+       The idea is to use bounded induction with the formula ` x C_ _om ` .
+       This formula, in a logic with terms, is bounded.  So in our logic
+       without terms, we need to temporarily replace it with ` x C_ a ` and
+       then deduce the original claim.  (Contributed by BJ, 29-Dec-2019.)
        (Proof modification is discouraged.) $)
     bj-omtrans $p |- ( A e. _om -> A C_ _om ) $=
-      ( vy va vx cv com wss wi wral wcel wal wa syl sylib nfv sseq1 sseq2 ax-mp
-      c0 wceq csuc csn cun ax-ia2 ax-ia1 snssi jca unss df-suc eqcomi sseq1i ex
-      ax-gen df-ral 0ss jctl bdcv bdss biimprd biimpd nfcv bj-bdfindisg bj-omex
-      mpbir cvv imbi12d ralbid imbi2d spcgf ) BEZFGZVJUAZFGZHZBFIZAFJZAFGZHZVOV
-      JFJZVNHZBKVTBVSVKVMVSVKLZVJVJUBZUCZFGZVMWAVKWBFGZLWDWAVKWEVSVKUDWAVSWEVSV
-      KUEVJFUFMUGVJWBFUHNWCVLFVLWCVJUIUJUKNULUMVNBFUNVDVJCEZGZVLWFGZHZBFIZVPAWF
-      GZHZHZCKZVOVRHZWMCWJSWFGZWJLWLWJWPWFUOUPDEZWFGZWPWGWHWKDBADWFCUQURWPDOWGD
-      OWHDOWQSTWRWPWQSWFPUSWQVJTWRWGWQVJWFPUTWQVLTWRWHWQVLWFPUSDAVAWKDOWQATWRWK
-      WQAWFPUTVBMUMFVEJWNWOHVCWMWOCFVECFVAWOCOWFFTZWJVOWLVRWSWIVNBFWSBOWSWGVKWH
-      VMWFFVJQWFFVLQVFVGWSWKVQVPWFFAQVHVFVIRRR $.
+      ( vy va vx cv com wss csuc wi wcel wral bj-omex wceq sseq2 imbi12d c0 nfv
+      sseq1 biimprd biimpd ralbidv imbi2d 0ss bdcv bdss nfcv bj-bdfindisg vtocl
+      mpan wa csn cun df-suc ax-ia2 ax-ia1 snssd unssd syl5eqss ex mprg ) BEZFG
+      ZVAHZFGZIZAFJZAFGZIZBFVACEZGZVCVIGZIZBFKZVFAVIGZIZIVEBFKZVHICFLVIFMZVMVPV
+      OVHVQVLVEBFVQVJVBVKVDVIFVANVIFVCNOUAVQVNVGVFVIFANUBOPVIGZVMVOVIUCDEZVIGZV
+      RVJVKVNDBADVICUDUEVRDQVJDQVKDQVSPMVTVRVSPVIRSVSVAMVTVJVSVAVIRTVSVCMVTVKVS
+      VCVIRSDAUFVNDQVSAMVTVNVSAVIRTUGUIUHVAFJZVBVDWAVBUJZVCVAVAUKZULFVAUMWBVAWC
+      FWAVBUNWBVAFWAVBUOUPUQURUSUT $.
   $}
 
   ${
