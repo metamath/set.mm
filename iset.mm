@@ -51429,9 +51429,9 @@ $)
        16-Sep-2019.) $)
     caovdilemd $p |- ( ph -> ( ( ( A G C ) F ( B G D ) ) G H ) =
                      ( ( A G ( C G H ) ) F ( B G ( D G H ) ) ) ) $=
-      ( co caovcld caovdird caovassd oveq12d eqtrd ) AEGKUBZFHKUBZJUBLKUBUHLK
-      UBZUILKUBZJUBEGLKUBKUBZFHLKUBKUBZJUBABCDUHUILIJKJINABCEGIIIKPQSUCABCFHI
-      IIKPRTUCUAUDAUJULUKUMJABCDEGLIKOQSUAUEABCDFHLIKORTUAUEUFUG $.
+      ( co caovcld caovdird caovassd oveq12d eqtrd ) AEGKUBZFHKUBZJUBLKUBUHLKUB
+      ZUILKUBZJUBEGLKUBKUBZFHLKUBKUBZJUBABCDUHUILIJKJINABCEGIIIKPQSUCABCFHIIIKP
+      RTUCUAUDAUJULUKUMJABCDEGLIKOQSUAUEABCDFHLIKORTUAUEUFUG $.
 
     caovdl2.6 $e |- ( ph -> R e. S ) $.
     caovdl2.com $e |- ( ( ph /\ ( x e. S /\ y e. S ) ) ->
@@ -64571,19 +64571,17 @@ $)
        ~ ax-mulcl be used later.  Instead, in most cases use ~ mulcl .
        (Contributed by NM, 10-Aug-1995.)  (New usage is discouraged.) $)
     axmulcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A x. B ) e. CC ) $=
-      ( vx vy vz vw cc wcel wa cop wceq cnr wex cmul df-c cmr mulclsr
-      cv co syl2anc cxp eleq2s anim12i ee4anv sylibr cm1r cplr simpll
-      elxpi simprl oveq12d mulcnsr ad2ant2l eqtrd simplrl simprrl m1r
-      a1i simplrr simprrr addclsr opelxpi syl6eleqr eqeltrd exlimivv
-      syl ) AGHZBGHZIZACRZDRZJZKZVJLHZVKLHZIZIZBERZFRZJZKZVRLHZVSLHZI
-      ZIZIZFMEMZDMCMZABNSZGHZVIVQDMCMZWEFMEMZIWHVGWKVHWLWKALLUAZGCDAL
-      LUIOUBWLBWMGEFBLLUIOUBUCVQWECDEFUDUEWGWJCDWFWJEFWFWIVJVRPSZUFVK
-      VSPSZPSZUGSZVKVRPSZVJVSPSZUGSZJZGWFWIVLVTNSZXAWFAVLBVTNVMVPWEUH
-      VQWAWDUJUKVPWDXBXAKVMWAVJVKVRVSULUMUNWFXAWMGWFWQLHZWTLHZXAWMHWF
-      WNLHZWPLHZXCWFVNWBXEVMVNVOWEUOZVQWAWBWCUPZVJVRQTWFUFLHZWOLHZXFX
-      IWFUQURWFVOWCXJVMVNVOWEUSZVQWAWBWCUTZVKVSQTUFWOQTWNWPVATWFWRLHZ
-      WSLHZXDWFVOWBXMXKXHVKVRQTWFVNWCXNXGXLVJVSQTWRWSVATWQWTLLVBTOVCV
-      DVEVEVF $.
+      ( vx vy vz vw cc wcel wa cv cop wceq cnr wex cmul co df-c mulclsr syl2anc
+      cmr elxpi eleq2s anim12i ee4anv sylibr cm1r simpll simprl oveq12d mulcnsr
+      cxp cplr ad2ant2l simplrl simprrl m1r a1i simplrr simprrr addclsr opelxpi
+      eqtrd syl6eleqr eqeltrd exlimivv syl ) AGHZBGHZIZACJZDJZKZLZVJMHZVKMHZIZI
+      ZBEJZFJZKZLZVRMHZVSMHZIZIZIZFNENZDNCNZABOPZGHZVIVQDNCNZWEFNENZIWHVGWKVHWL
+      WKAMMUKZGCDAMMUAQUBWLBWMGEFBMMUAQUBUCVQWECDEFUDUEWGWJCDWFWJEFWFWIVJVRTPZU
+      FVKVSTPZTPZULPZVKVRTPZVJVSTPZULPZKZGWFWIVLVTOPZXAWFAVLBVTOVMVPWEUGVQWAWDU
+      HUIVPWDXBXALVMWAVJVKVRVSUJUMVBWFXAWMGWFWQMHZWTMHZXAWMHWFWNMHZWPMHZXCWFVNW
+      BXEVMVNVOWEUNZVQWAWBWCUOZVJVRRSWFUFMHZWOMHZXFXIWFUPUQWFVOWCXJVMVNVOWEURZV
+      QWAWBWCUSZVKVSRSUFWORSWNWPUTSWFWRMHZWSMHZXDWFVOWBXMXKXHVKVRRSWFVNWCXNXGXL
+      VJVSRSWRWSUTSWQWTMMVASQVCVDVEVEVF $.
 
     $( Closure law for multiplication in the real subfield of complex numbers.
        Axiom for real and complex numbers, derived from set theory.  This
@@ -64628,15 +64626,14 @@ $)
        (New usage is discouraged.) $)
     axaddass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
                  ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $=
-      ( vx vy vz vw vv vu cv cplr co cnr addcnsrec wa addclsr anim12i
-      wcel an4s wceq cc caddc ccnv dfcnqs addasssrg 3adant3r 3adant2r
-      cep 3adant1r 3adant3l 3adant2l 3adant1l ecoviass ) DEFGHIABCUAU
-      BGJZIJZKLZUHUCMDJZFJZKLZEJZUNKLZUSHJZKLZVAUOKLZUQURVBKLZKLZUTUP
-      KLZVEUDUQUTURUNNURUNVBUONUSVAVBUONUQUTVEUPNUQMRZURMRZUTMRZUNMRZ
-      USMRZVAMRZOVHVIOVLVJVKOVMUQURPUTUNPQSVIVBMRZVKUOMRZVEMRZUPMRZOV
-      IVNOVPVKVOOVQURVBPUNUOPQSVHVIVKOZVNVOOZVCVFTZVJVHVIVSVTVKVHVIVN
-      VTVOUQURVBUEUFUGUIVJVRVSVDVGTZVHVJVKVSWAVIVJVKVOWAVNUTUNUOUEUJU
-      KULUM $.
+      ( vx vy vz vw vv vu cv cplr co cnr addcnsrec wcel wa addclsr anim12i an4s
+      wceq cc caddc ccnv addasssrg 3adant3r 3adant2r 3adant1r 3adant3l 3adant2l
+      cep dfcnqs 3adant1l ecoviass ) DEFGHIABCUAUBGJZIJZKLZUJUCMDJZFJZKLZEJZUNK
+      LZUSHJZKLZVAUOKLZUQURVBKLZKLZUTUPKLZVEUKUQUTURUNNURUNVBUONUSVAVBUONUQUTVE
+      UPNUQMOZURMOZUTMOZUNMOZUSMOZVAMOZPVHVIPVLVJVKPVMUQURQUTUNQRSVIVBMOZVKUOMO
+      ZVEMOZUPMOZPVIVNPVPVKVOPVQURVBQUNUOQRSVHVIVKPZVNVOPZVCVFTZVJVHVIVSVTVKVHV
+      IVNVTVOUQURVBUDUEUFUGVJVRVSVDVGTZVHVJVKVSWAVIVJVKVOWAVNUTUNUOUDUHUIULUM
+      $.
   $}
 
   ${
@@ -66789,6 +66786,31 @@ $(
   However, we state all the axioms in inference form to make it clear that we
   do not exploit any over-permissiveness.
 
+  Finally, note that our logic has no terms, only variables.  Therefore, we
+  cannot prove for instance that ` x e. _om ` is a bounded formula.  However,
+  since ` _om ` can be defined as "the ` y  ` such that PHI" a proof using the
+  fact that ` x e. _om ` is bounded can be converted to a proof in iset.mm by
+  replacing ` _om ` with ` y ` everywhere and prepending the antecedent PHI,
+  since ` x e. y ` is bounded by ~ ax-bdel .  For a similar method, see
+  ~ bj-omtrans .
+
+  Note that one cannot add an axiom ` |- Bdd x e. A ` since by ~ bdph it would
+  imply that every formula is bounded.
+
+  For CZF, a useful set of notes is
+
+  Peter Aczel and Michael Rathjen,
+  _CST Book draft_.
+  (available at ~ http://www1.maths.leeds.ac.uk/~~rathjen/book.pdf )
+
+  and an interesting article is
+
+  Michael Shulman,
+  _Comparing material and structural set theories_,
+  Annals of Pure and Applied Logic,
+  Volume 170, Issue 4 (Apr. 2019), 465--504.
+  (available at ~ https://arxiv.org/abs/1808.05204 )
+
 $)
 
   $( Symbol for the predicate ` Bdd ` . $)
@@ -68240,19 +68262,22 @@ $)
   ${
     $d a x y A $.
     $( The set ` _om ` is transitive.  A natural number is included in
-       ` _om ` .  (Contributed by BJ, 29-Dec-2019.)
+       ` _om ` .
+
+       The idea is to use bounded induction with the formula ` x C_ _om ` .
+       This formula, in a logic with terms, is bounded.  So in our logic
+       without terms, we need to temporarily replace it with ` x C_ a ` and
+       then deduce the original claim.  (Contributed by BJ, 29-Dec-2019.)
        (Proof modification is discouraged.) $)
     bj-omtrans $p |- ( A e. _om -> A C_ _om ) $=
-      ( vy va vx cv com wss wi wral wcel wal wa syl sylib nfv sseq1 sseq2 ax-mp
-      c0 wceq csuc csn cun ax-ia2 ax-ia1 snssi jca unss df-suc eqcomi sseq1i ex
-      ax-gen df-ral 0ss jctl bdcv bdss biimprd biimpd nfcv bj-bdfindisg bj-omex
-      mpbir cvv imbi12d ralbid imbi2d spcgf ) BEZFGZVJUAZFGZHZBFIZAFJZAFGZHZVOV
-      JFJZVNHZBKVTBVSVKVMVSVKLZVJVJUBZUCZFGZVMWAVKWBFGZLWDWAVKWEVSVKUDWAVSWEVSV
-      KUEVJFUFMUGVJWBFUHNWCVLFVLWCVJUIUJUKNULUMVNBFUNVDVJCEZGZVLWFGZHZBFIZVPAWF
-      GZHZHZCKZVOVRHZWMCWJSWFGZWJLWLWJWPWFUOUPDEZWFGZWPWGWHWKDBADWFCUQURWPDOWGD
-      OWHDOWQSTWRWPWQSWFPUSWQVJTWRWGWQVJWFPUTWQVLTWRWHWQVLWFPUSDAVAWKDOWQATWRWK
-      WQAWFPUTVBMUMFVEJWNWOHVCWMWOCFVECFVAWOCOWFFTZWJVOWLVRWSWIVNBFWSBOWSWGVKWH
-      VMWFFVJQWFFVLQVFVGWSWKVQVPWFFAQVHVFVIRRR $.
+      ( vy va vx cv com wss csuc wi wcel wral bj-omex wceq sseq2 imbi12d c0 nfv
+      sseq1 biimprd biimpd ralbidv imbi2d 0ss bdcv bdss nfcv bj-bdfindisg vtocl
+      mpan wa csn cun df-suc ax-ia2 ax-ia1 snssd unssd syl5eqss ex mprg ) BEZFG
+      ZVAHZFGZIZAFJZAFGZIZBFVACEZGZVCVIGZIZBFKZVFAVIGZIZIVEBFKZVHICFLVIFMZVMVPV
+      OVHVQVLVEBFVQVJVBVKVDVIFVANVIFVCNOUAVQVNVGVFVIFANUBOPVIGZVMVOVIUCDEZVIGZV
+      RVJVKVNDBADVICUDUEVRDQVJDQVKDQVSPMVTVRVSPVIRSVSVAMVTVJVSVAVIRTVSVCMVTVKVS
+      VCVIRSDAUFVNDQVSAMVTVNVSAVIRTUGUIUHVAFJZVBVDWAVBUJZVCVAVAUKZULFVAUMWBVAWC
+      FWAVBUNWBVAFWAVBUOUPUQURUSUT $.
   $}
 
   ${
