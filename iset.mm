@@ -65704,6 +65704,19 @@ $)
              ( ( A < B /\ B < C ) -> A < C ) ) $=
     ( axlttrn ) ABCD $.
 
+  $( The product of two positive numbers is positive.  (Contributed by NM,
+     10-Mar-2008.) $)
+  mulgt0 $p |- ( ( ( A e. RR /\ 0 < A ) /\
+                ( B e. RR /\ 0 < B ) ) -> 0 < ( A x. B ) ) $=
+    ( cr wcel cc0 clt wbr cmul co wa axmulgt0 imp an4s ) ACDZBCDZEAFGZEBFGZEABH
+    IFGZNOJPQJRABKLM $.
+
+  $( 'Less than or equal to' expressed in terms of 'less than'.  (Contributed
+     by NM, 13-May-1999.) $)
+  lenlt $p |- ( ( A e. RR /\ B e. RR ) -> ( A <_ B <-> -. B < A ) ) $=
+    ( cr wcel cxr cle wbr clt wn wb rexr xrlenlt syl2an ) ACDAEDBEDABFGBAHGIJBC
+    DAKBKABLM $.
+
   $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
   ltnr $p |- ( A e. RR -> -. A < A ) $=
     ( axltirr ) AB $.
