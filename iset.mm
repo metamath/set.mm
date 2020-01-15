@@ -65650,6 +65650,17 @@ $)
     ( cr wcel clt wbr cltrr ax-pre-ltirr wb ltxrlt anidms mtbird ) ABCZAADEZAAF
     EZAGLMNHAAIJK $.
 
+  $( Real number less-than is weakly linear.  Axiom for real and complex
+     numbers, derived from set theory.  This restates ~ ax-pre-ltwlin with
+     ordering on the extended reals.  (Contributed by Jim Kingdon,
+     15-Jan-2020.) $)
+  axltwlin $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+      ( A < B -> ( A < C \/ C < B ) ) ) $=
+    ( cr wcel w3a clt wbr wo wi cltrr ax-pre-ltwlin wb ltxrlt 3adant3
+    3adant2 ancoms 3adant1 orbi12d imbi12d mpbird ) ADEZBDEZCDEZFZABG
+    HZACGHZCBGHZIZJABKHZACKHZCBKHZIZJABCLUEUFUJUIUMUBUCUFUJMUDABNOUEU
+    GUKUHULUBUDUGUKMUCACNPUCUDUHULMZUBUDUCUNCBNQRSTUA $.
+
   $( Ordering on reals is transitive.  Axiom for real and complex numbers,
      derived from set theory.  This restates ~ ax-pre-lttrn with ordering on
      the extended reals.  New proofs should use ~ lttr instead for naming
