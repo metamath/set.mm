@@ -1,4 +1,4 @@
-$( iset.mm - Version of 12-Jan-2020
+$( iset.mm - Version of 14-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -54017,6 +54017,26 @@ $)
 
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      Undefined values
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( The power set of the union of a set does not belong to the set.  This
+     theorem provides a way of constructing a new set that doesn't belong to a
+     given set.  (Contributed by Stefan O'Rear, 22-Feb-2015.) $)
+  pwuninel2 $p |- ( U. A e. V -> -. ~P U. A e. A ) $=
+    ( cuni wcel cpw wss pwnss elssuni nsyl ) ACZBDJEZJFKADJBGKAHI $.
+
+  $( The power set of the power set of the union of a set does not belong to
+     the set.  This theorem provides a way of constructing a new set that
+     doesn't belong to a given set.  (Contributed by Jim Kingdon,
+     14-Jan-2020.) $)
+  2pwuninelg $p |- ( A e. V -> -. ~P ~P U. A e. A ) $=
+    ( wcel cuni cpw wa en2lp wi wss pwuni elpwg mpbiri ax-ia3 syl mtoi ) ABCZAD
+    EZEZACZARCZSFZARGPTSUAHPTAQIAJAQBKLTSMNO $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
   Functions on ordinals; strictly monotone ordinal functions
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
@@ -64528,6 +64548,19 @@ $)
     ( cr cc c1 axresscn c1r c0r cop df-1 wcel cnr opelreal mpbir eqeltri sselii
     1sr ) ABCDCEFGZAHPAIEJIOEKLMN $.
 
+  $( 1 is a real number.  Axiom for real and complex numbers, derived from set
+     theory.  This construction-dependent theorem should not be referenced
+     directly; instead, use ~ ax-1re .
+
+     In the Metamath Proof Explorer, this is not a complex number axiom but is
+     proved from ~ ax-1cn and the other axioms.  It is not known whether we can
+     do so here, but the Metamath Proof Explorer proof (accessed 13-Jan-2020)
+     uses excluded middle.  (Contributed by Jim Kingdon, 13-Jan-2020.)
+     (New usage is discouraged.) $)
+  ax1re $p |- 1 e. RR $=
+    ( c1 c1r c0r cop cr df-1 wcel cnr 1sr opelreal mpbir eqeltri ) ABCDZEFMEGBH
+    GIBJKL $.
+
   $( ` _i ` is a complex number.  Axiom for real and complex numbers, derived
      from set theory.  This construction-dependent theorem should not be
      referenced directly; instead, use ~ ax-icn .  (Contributed by NM,
@@ -64945,6 +64978,12 @@ $)
   ax-1cn $a |- 1 e. CC $.
   $( $j restatement 'ax-1cn' of 'ax1cn'; $)
 
+  $( 1 is a real number.  Axiom for real and complex numbers, justified by
+     theorem ~ ax1re .  Proofs should use ~ 1re instead.  (Contributed by Jim
+     Kingdon, 13-Jan-2020.)  (New usage is discouraged.) $)
+  ax-1re $a |- 1 e. RR $.
+  $( $j restatement 'ax-1re' of 'ax1re'; $)
+
   $( ` _i ` is a complex number.  Axiom for real and complex numbers, justified
      by theorem ~ axicn .  (Contributed by NM, 1-Mar-1995.) $)
   ax-icn $a |- _i e. CC $.
@@ -65155,6 +65194,54 @@ $)
                 ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $=
     ( ax-distr ) ABCD $.
 
+  $( A real number is a complex number.  (Contributed by NM, 10-Aug-1999.) $)
+  recn $p |- ( A e. RR -> A e. CC ) $=
+    ( cr cc ax-resscn sseli ) BCADE $.
+
+  $( The real numbers form a set.  (Contributed by Mario Carneiro,
+     17-Nov-2014.) $)
+  reex $p |- RR e. _V $=
+    ( cr cc cnex ax-resscn ssexi ) ABCDE $.
+
+  $( Reals are a subset of the pair of real and complex numbers (common case).
+     (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  reelprrecn $p |- RR e. { RR , CC } $=
+    ( cr cc reex prid1 ) ABCD $.
+
+  $( Complex numbers are a subset of the pair of real and complex numbers
+     (common case).  (Contributed by David A. Wheeler, 8-Dec-2018.) $)
+  cnelprrecn $p |- CC e. { RR , CC } $=
+    ( cr cc cnex prid2 ) ABCD $.
+
+  $( Distributive law for complex numbers (right-distributivity).  (Contributed
+     by NM, 10-Oct-2004.) $)
+  adddir $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+              ( ( A + B ) x. C ) = ( ( A x. C ) + ( B x. C ) ) ) $=
+    ( cc wcel w3a caddc co cmul adddi 3coml wa addcl mulcom sylan 3impa 3adant2
+    wceq 3adant1 oveq12d 3eqtr4d ) ADEZBDEZCDEZFZCABGHZIHZCAIHZCBIHZGHZUFCIHZAC
+    IHZBCIHZGHUDUBUCUGUJRCABJKUBUCUDUKUGRZUBUCLUFDEUDUNABMUFCNOPUEULUHUMUIGUBUD
+    ULUHRUCACNQUCUDUMUIRUBBCNSTUA $.
+
+  $( 0 is a complex number.  (Contributed by NM, 19-Feb-2005.) $)
+  0cn $p |- 0 e. CC $=
+    ( ci cmul co c1 caddc cc0 cc ax-i2m1 wcel ax-icn mulcl mp2an addcl eqeltrri
+    ax-1cn ) AABCZDECZFGHPGIZDGIQGIAGIZSRJJAAKLOPDMLN $.
+
+  $( 0 is a complex number, deductive form.  (Contributed by David A. Wheeler,
+     8-Dec-2018.) $)
+  0cnd $p |- ( ph -> 0 e. CC ) $=
+    ( cc0 cc wcel 0cn a1i ) BCDAEF $.
+
+  $( 0 is a set (common case).  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  c0ex $p |- 0 e. _V $=
+    ( cc0 cc 0cn elexi ) ABCD $.
+
+  $( 1 is a set.  Common special case.  (Contributed by David A. Wheeler,
+     7-Jul-2016.) $)
+  1ex $p |- 1 e. _V $=
+    ( c1 cc ax-1cn elexi ) ABCD $.
+
   ${
     $d A x y $.
     $( Alias for ~ ax-cnre , for naming consistency.  (Contributed by NM,
@@ -65164,20 +65251,51 @@ $)
   $}
 
   ${
-    recni.1 $e |- A e. RR $.
-    axri.2 $e |- B e. RR $.
-    $( Closure law for addition of reals.  (Contributed by NM, 17-Jan-1997.) $)
-    readdcli $p |- ( A + B ) e. RR $=
-      ( cr wcel caddc co readdcl mp2an ) AEFBEFABGHEFCDABIJ $.
-
-    $( Closure law for multiplication of reals.  (Contributed by NM,
-       17-Jan-1997.) $)
-    remulcli $p |- ( A x. B ) e. RR $=
-      ( cr wcel cmul co remulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+    $d A x y $.
+    $( ` 1 ` is an identity element for multiplication.  Based on ideas by Eric
+       Schmidt.  (Contributed by Scott Fenton, 3-Jan-2013.) $)
+    mulid1 $p |- ( A e. CC -> ( A x. 1 ) = A ) $=
+      ( vx vy cc wcel cv ci cmul co caddc wceq cr wrex c1 ax-icn ax-1cn ax-1rid
+      recn syl eqtrd cnre wa sylancr adddir mp3an3 syl2an mulass mp3an13 oveq2d
+      mulcl oveqan12d oveq1 id eqeq12d syl5ibrcom rexlimivv ) ADEABFZGCFZHIZJIZ
+      KZCLMBLMANHIZAKZBCAUAVAVCBCLLUQLEZURLEZUBZVCVAUTNHIZUTKVFVGUQNHIZUSNHIZJI
+      ZUTVDUQDEZUSDEZVGVJKZVEUQRVEGDEZURDEZVLOURRZGURUJUCVKVLNDEZVMPUQUSNUDUEUF
+      VDVEVHUQVIUSJUQQVEVIGURNHIZHIZUSVEVOVIVSKZVPVNVOVQVTOPGURNUGUHSVEVRURGHUR
+      QUITUKTVAVBVGAUTAUTNHULVAUMUNUOUPS $.
   $}
+
+  $( Identity law for multiplication.  Note: see ~ mulid1 for commuted
+     version.  (Contributed by NM, 8-Oct-1999.) $)
+  mulid2 $p |- ( A e. CC -> ( 1 x. A ) = A ) $=
+    ( cc wcel c1 cmul co wceq ax-1cn mulcom mpan mulid1 eqtrd ) ABCZDAEFZADEFZA
+    DBCMNOGHDAIJAKL $.
+
+  $( ` 1 ` is a real number.  (Contributed by Jim Kingdon, 13-Jan-2020.) $)
+  1re $p |- 1 e. RR $=
+    ( ax-1re ) A $.
+
+  $( ` 0 ` is a real number.  (Contributed by Eric Schmidt, 21-May-2007.)
+     (Revised by Scott Fenton, 3-Jan-2013.) $)
+  0re $p |- 0 e. RR $=
+    ( vx c1 cr wcel cv caddc cc0 wceq wrex 1re ax-rnegex readdcl mpan syl5ibcom
+    co eleq1 rexlimiv mp2b ) BCDZBAEZFOZGHZACIGCDZJABKUBUCACTCDZUACDZUBUCSUDUEJ
+    BTLMUAGCPNQR $.
+
+  $( ` 0 ` is a real number, deductive form.  (Contributed by David A. Wheeler,
+     6-Dec-2018.) $)
+  0red $p |- ( ph -> 0 e. RR ) $=
+    ( cc0 cr wcel 0re a1i ) BCDAEF $.
 
   ${
     axi.1 $e |- A e. CC $.
+    $( Identity law for multiplication.  (Contributed by NM, 14-Feb-1995.) $)
+    mulid1i $p |- ( A x. 1 ) = A $=
+      ( cc wcel c1 cmul co wceq mulid1 ax-mp ) ACDAEFGAHBAIJ $.
+
+    $( Identity law for multiplication.  (Contributed by NM, 14-Feb-1995.) $)
+    mulid2i $p |- ( 1 x. A ) = A $=
+      ( cc wcel c1 cmul co wceq mulid2 ax-mp ) ACDEAFGAHBAIJ $.
+
     axi.2 $e |- B e. CC $.
     $( Closure law for addition.  (Contributed by NM, 23-Nov-1994.) $)
     addcli $p |- ( A + B ) e. CC $=
@@ -65191,6 +65309,14 @@ $)
        23-Nov-1994.) $)
     mulcomi $p |- ( A x. B ) = ( B x. A ) $=
       ( cc wcel cmul co wceq mulcom mp2an ) AEFBEFABGHBAGHICDABJK $.
+
+    ${
+      mulcomli.3 $e |- ( A x. B ) = C $.
+      $( Commutative law for multiplication.  (Contributed by NM,
+         23-Nov-1994.) $)
+      mulcomli $p |- ( B x. A ) = C $=
+        ( cmul co mulcomi eqtri ) BAGHABGHCBAEDIFJ $.
+    $}
 
     axi.3 $e |- C e. CC $.
     $( Associative law for addition.  (Contributed by NM, 23-Nov-1994.) $)
@@ -65208,6 +65334,305 @@ $)
     adddii $p |- ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) $=
       ( cc wcel caddc co cmul wceq adddi mp3an ) AGHBGHCGHABCIJKJABKJACKJIJLDEF
       ABCMN $.
+
+    $( Distributive law (right-distributivity).  (Contributed by NM,
+       16-Feb-1995.) $)
+    adddiri $p |- ( ( A + B ) x. C ) = ( ( A x. C ) + ( B x. C ) ) $=
+      ( cc wcel caddc co cmul wceq adddir mp3an ) AGHBGHCGHABIJCKJACKJBCKJIJLDE
+      FABCMN $.
+  $}
+
+  ${
+    recni.1 $e |- A e. RR $.
+    $( A real number is a complex number.  (Contributed by NM, 1-Mar-1995.) $)
+    recni $p |- A e. CC $=
+      ( cr cc ax-resscn sselii ) CDAEBF $.
+
+    axri.2 $e |- B e. RR $.
+    $( Closure law for addition of reals.  (Contributed by NM, 17-Jan-1997.) $)
+    readdcli $p |- ( A + B ) e. RR $=
+      ( cr wcel caddc co readdcl mp2an ) AEFBEFABGHEFCDABIJ $.
+
+    $( Closure law for multiplication of reals.  (Contributed by NM,
+       17-Jan-1997.) $)
+    remulcli $p |- ( A x. B ) e. RR $=
+      ( cr wcel cmul co remulcl mp2an ) AEFBEFABGHEFCDABIJ $.
+  $}
+
+  $( 1 is an real number, deductive form (common case).  (Contributed by David
+     A. Wheeler, 6-Dec-2018.) $)
+  1red $p |- ( ph -> 1 e. RR ) $=
+    ( c1 cr wcel 1re a1i ) BCDAEF $.
+
+  $( 1 is a complex number, deductive form (common case).  (Contributed by
+     David A. Wheeler, 6-Dec-2018.) $)
+  1cnd $p |- ( ph -> 1 e. CC ) $=
+    ( c1 cc wcel ax-1cn a1i ) BCDAEF $.
+
+  ${
+    addcld.1 $e |- ( ph -> A e. CC ) $.
+    $( Identity law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulid1d $p |- ( ph -> ( A x. 1 ) = A ) $=
+      ( cc wcel c1 cmul co wceq mulid1 syl ) ABDEBFGHBICBJK $.
+
+    $( Identity law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulid2d $p |- ( ph -> ( 1 x. A ) = A ) $=
+      ( cc wcel c1 cmul co wceq mulid2 syl ) ABDEFBGHBICBJK $.
+
+    addcld.2 $e |- ( ph -> B e. CC ) $.
+    $( Closure law for addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addcld $p |- ( ph -> ( A + B ) e. CC ) $=
+      ( cc wcel caddc co addcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulcld $p |- ( ph -> ( A x. B ) e. CC ) $=
+      ( cc wcel cmul co mulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Commutative law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulcomd $p |- ( ph -> ( A x. B ) = ( B x. A ) ) $=
+      ( cc wcel cmul co wceq mulcom syl2anc ) ABFGCFGBCHICBHIJDEBCKL $.
+
+    addassd.3 $e |- ( ph -> C e. CC ) $.
+    $( Associative law for addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addassd $p |- ( ph -> ( ( A + B ) + C ) = ( A + ( B + C ) ) ) $=
+      ( cc wcel caddc co wceq addass syl3anc ) ABHICHIDHIBCJKDJKBCDJKJKLEFGBCDM
+      N $.
+
+    $( Associative law for multiplication.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mulassd $p |- ( ph -> ( ( A x. B ) x. C ) = ( A x. ( B x. C ) ) ) $=
+      ( cc wcel cmul co wceq mulass syl3anc ) ABHICHIDHIBCJKDJKBCDJKJKLEFGBCDMN
+      $.
+
+    $( Distributive law (left-distributivity).  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    adddid $p |- ( ph -> ( A x. ( B + C ) ) = ( ( A x. B ) + ( A x. C ) ) ) $=
+      ( cc wcel caddc co cmul wceq adddi syl3anc ) ABHICHIDHIBCDJKLKBCLKBDLKJKM
+      EFGBCDNO $.
+
+    $( Distributive law (right-distributivity).  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    adddird $p |- ( ph -> ( ( A + B ) x. C ) = ( ( A x. C ) + ( B x. C ) ) ) $=
+      ( cc wcel caddc co cmul wceq adddir syl3anc ) ABHICHIDHIBCJKDLKBDLKCDLKJK
+      MEFGBCDNO $.
+  $}
+
+  ${
+    recnd.1 $e |- ( ph -> A e. RR ) $.
+    $( Deduction from real number to complex number.  (Contributed by NM,
+       26-Oct-1999.) $)
+    recnd $p |- ( ph -> A e. CC ) $=
+      ( cr wcel cc recn syl ) ABDEBFECBGH $.
+
+    readdcld.2 $e |- ( ph -> B e. RR ) $.
+    $( Closure law for addition of reals.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    readdcld $p |- ( ph -> ( A + B ) e. RR ) $=
+      ( cr wcel caddc co readdcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Closure law for multiplication of reals.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    remulcld $p |- ( ph -> ( A x. B ) e. RR ) $=
+      ( cr wcel cmul co remulcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Infinity and the extended real number system
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $c <_ $. $( 'Less than or equal to' relation. $)
+  $c +oo $. $( Plus infinity $)
+  $c -oo $. $( Minus infinity $)
+  $c RR* $. $( The set of extended reals $)
+  $c < $. $( 'Less than' relation (over extended reals) $)
+
+  $( Plus infinity. $)
+  cpnf $a class +oo $.
+  $( Minus infinity. $)
+  cmnf $a class -oo $.
+  $( The set of extended reals (includes plus and minus infinity). $)
+  cxr $a class RR* $.
+  $( 'Less than' predicate (extended to include the extended reals). $)
+  clt $a class < $.
+  $( Extend wff notation to include the 'less than or equal to' relation. $)
+  cle $a class <_ $.
+
+  $( Define plus infinity.  Note that the definition is arbitrary, requiring
+     only that ` +oo ` be a set not in ` RR ` and different from ` -oo `
+     ( ~ df-mnf ).  We use ` ~P U. CC ` to make it independent of the
+     construction of ` CC ` , and Cantor's Theorem will show that it is
+     different from any member of ` CC ` and therefore ` RR ` .  See ~ pnfnre
+     and ~ mnfnre , and we'll also be able to prove ` +oo =/= -oo ` .
+
+     A simpler possibility is to define ` +oo ` as ` CC ` and ` -oo ` as
+     ` { CC } ` , but that approach requires the Axiom of Regularity to show
+     that ` +oo ` and ` -oo ` are different from each other and from all
+     members of ` RR ` .  (Contributed by NM, 13-Oct-2005.)
+     (New usage is discouraged.) $)
+  df-pnf $a |- +oo = ~P U. CC $.
+
+  $( Define minus infinity as the power set of plus infinity.  Note that the
+     definition is arbitrary, requiring only that ` -oo ` be a set not in
+     ` RR ` and different from ` +oo ` (see ~ mnfnre ).  (Contributed by NM,
+     13-Oct-2005.)  (New usage is discouraged.) $)
+  df-mnf $a |- -oo = ~P +oo $.
+
+  $( Define the set of extended reals that includes plus and minus infinity.
+     Definition 12-3.1 of [Gleason] p. 173.  (Contributed by NM,
+     13-Oct-2005.) $)
+  df-xr $a |- RR* = ( RR u. { +oo , -oo } ) $.
+
+  ${
+    $d x y $.
+    $( Define 'less than' on the set of extended reals.  Definition 12-3.1 of
+       [Gleason] p. 173.  Note that in our postulates for complex numbers,
+       ` <RR ` is primitive and not necessarily a relation on ` RR ` .
+       (Contributed by NM, 13-Oct-2005.) $)
+    df-ltxr $a |- < = ( { <. x , y >. | ( x e. RR /\ y e. RR /\ x <RR y ) }
+      u. ( ( ( RR u. { -oo } ) X. { +oo } ) u. ( { -oo } X. RR ) ) ) $.
+  $}
+
+  $( Define 'less than or equal to' on the extended real subset of complex
+     numbers.  (Contributed by NM, 13-Oct-2005.) $)
+  df-le $a |- <_ = ( ( RR* X. RR* ) \ `' < ) $.
+
+  $( Plus infinity is not a real number.  (Contributed by NM, 13-Oct-2005.) $)
+  pnfnre $p |- +oo e/ RR $=
+    ( cpnf cr wcel cc cuni cpw cvv wn uniex pwuninel2 ax-mp df-pnf eleq1i mtbir
+    cnex recn mto nelir ) ABABCADCZSDEZFZDCZTGCUBHDOIDGJKAUADLMNAPQR $.
+
+  $( Minus infinity is not a real number.  (Contributed by NM, 13-Oct-2005.) $)
+  mnfnre $p |- -oo e/ RR $=
+    ( cmnf cr wcel cc cuni cpw cvv wn cnex 2pwuninelg ax-mp df-mnf df-pnf pweqi
+    cpnf eqtri eleq1i mtbir recn mto nelir ) ABABCADCZUBDEFZFZDCZDGCUEHIDGJKAUD
+    DAOFUDLOUCMNPQRASTUA $.
+
+  $( The standard reals are a subset of the extended reals.  (Contributed by
+     NM, 14-Oct-2005.) $)
+  ressxr $p |- RR C_ RR* $=
+    ( cr cpnf cmnf cpr cun cxr ssun1 df-xr sseqtr4i ) AABCDZEFAJGHI $.
+
+  $( The Cartesian product of standard reals are a subset of the Cartesian
+     product of extended reals (common case).  (Contributed by David A.
+     Wheeler, 8-Dec-2018.) $)
+  rexpssxrxp $p |- ( RR X. RR ) C_ ( RR* X. RR* ) $=
+    ( cr cxr wss cxp ressxr xpss12 mp2an ) ABCZHAADBBDCEEABABFG $.
+
+  $( A standard real is an extended real.  (Contributed by NM, 14-Oct-2005.) $)
+  rexr $p |- ( A e. RR -> A e. RR* ) $=
+    ( cr cxr ressxr sseli ) BCADE $.
+
+  $( Zero is an extended real.  (Contributed by Mario Carneiro,
+     15-Jun-2014.) $)
+  0xr $p |- 0 e. RR* $=
+    ( cr cxr cc0 ressxr 0re sselii ) ABCDEF $.
+
+  $( No (finite) real equals plus infinity.  (Contributed by NM, 14-Oct-2005.)
+     (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  renepnf $p |- ( A e. RR -> A =/= +oo ) $=
+    ( cr wcel cpnf wceq pnfnre neli eleq1 mtbiri necon2ai ) ABCZADADEKDBCDBFGAD
+    BHIJ $.
+
+  $( No real equals minus infinity.  (Contributed by NM, 14-Oct-2005.)  (Proof
+     shortened by Andrew Salmon, 19-Nov-2011.) $)
+  renemnf $p |- ( A e. RR -> A =/= -oo ) $=
+    ( cr wcel cmnf wceq mnfnre neli eleq1 mtbiri necon2ai ) ABCZADADEKDBCDBFGAD
+    BHIJ $.
+
+  ${
+    rexrd.1 $e |- ( ph -> A e. RR ) $.
+    $( A standard real is an extended real.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    rexrd $p |- ( ph -> A e. RR* ) $=
+      ( cr cxr ressxr sseldi ) ADEBFCG $.
+
+    $( No (finite) real equals plus infinity.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    renepnfd $p |- ( ph -> A =/= +oo ) $=
+      ( cr wcel cpnf wne renepnf syl ) ABDEBFGCBHI $.
+
+    $( No real equals minus infinity.  (Contributed by Mario Carneiro,
+       28-May-2016.) $)
+    renemnfd $p |- ( ph -> A =/= -oo ) $=
+      ( cr wcel cmnf wne renemnf syl ) ABDEBFGCBHI $.
+  $}
+
+  ${
+    rexri.1 $e |- A e. RR $.
+    $( A standard real is an extended real (inference form.)  (Contributed by
+       David Moews, 28-Feb-2017.) $)
+    rexri $p |- A e. RR* $=
+      ( cr wcel cxr rexr ax-mp ) ACDAEDBAFG $.
+  $}
+
+  $( The reals and the infinities are disjoint.  (Contributed by NM,
+     25-Oct-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  renfdisj $p |- ( RR i^i { +oo , -oo } ) = (/) $=
+    ( vx cr cpnf cmnf cpr cin c0 wceq cv wcel wn disj vex elpr renepnf necon2bi
+    wo renemnf jaoi sylbi con2i mprgbir ) BCDEZFGHAIZUCJZKABABUCLUEUDBJZUEUDCHZ
+    UDDHZQUFKZUDCDAMNUGUIUHUFUDCUDOPUFUDDUDRPSTUAUB $.
+
+  ${
+    $d x y $.
+    $( 'Less than' is a relation on extended reals.  (Contributed by Mario
+       Carneiro, 28-Apr-2015.) $)
+    ltrelxr $p |- < C_ ( RR* X. RR* ) $=
+      ( vx vy cv cr wcel copab cmnf csn cun cxp cxr wa eqsstri sstri wss ressxr
+      cpnf unssi xpss12 mp2an clt cltrr wbr w3a df-ltxr df-3an opabbii opabssxp
+      rexpssxrxp cpr snsspr2 ssun2 df-xr sseqtr4i snsspr1 ) UAACZDEZBCZDEZUPURU
+      BUCZUDZABFZDGHZIZQHZJZVCDJZIZIKKJZABUEVBVHVIVBDDJZVIVBUQUSLUTLZABFVJVAVKA
+      BUQUSUTUFUGUTABDDUHMUINVFVGVIVDKOVEKOVFVIODVCKPVCQGUJZKQGUKVLDVLIKVLDULUM
+      UNZNZRVEVLKQGUOVMNVDKVEKSTVCKODKOVGVIOVNPVCKDKSTRRM $.
+  $}
+
+  $( 'Less than' is a relation.  (Contributed by NM, 14-Oct-2005.) $)
+  ltrel $p |- Rel < $=
+    ( clt cxr cxp wss wrel ltrelxr relxp relss mp2 ) ABBCZDJEAEFBBGAJHI $.
+
+  $( 'Less than or equal' is a relation on extended reals.  (Contributed by
+     Mario Carneiro, 28-Apr-2015.) $)
+  lerelxr $p |- <_ C_ ( RR* X. RR* ) $=
+    ( cle cxr cxp clt ccnv cdif df-le difss eqsstri ) ABBCZDEZFJGJKHI $.
+
+  $( 'Less or equal to' is a relation.  (Contributed by FL, 2-Aug-2009.)
+     (Revised by Mario Carneiro, 28-Apr-2015.) $)
+  lerel $p |- Rel <_ $=
+    ( cle cxr cxp wss wrel lerelxr relxp relss mp2 ) ABBCZDJEAEFBBGAJHI $.
+
+  $( 'Less than or equal to' expressed in terms of 'less than', for extended
+     reals.  (Contributed by NM, 14-Oct-2005.) $)
+  xrlenlt $p |- ( ( A e. RR* /\ B e. RR* ) -> ( A <_ B <-> -. B < A ) ) $=
+    ( cxr wcel wa cle wbr cop clt ccnv wn df-br cxp wb opelxpi cdif df-le eldif
+    eleq2i bitri baib syl syl5bb opelcnvg syl6rbbr notbid bitr4d ) ACDBCDEZABFG
+    ZABHZIJZDZKZBAIGZKUIUJFDZUHUMABFLUHUJCCMZDZUOUMNABCCOUOUQUMUOUJUPUKPZDUQUME
+    FURUJQSUJUPUKRTUAUBUCUHUNULUHULBAHIDUNABCCIUDBAILUEUFUG $.
+
+  ${
+    $d x y A $.  $d x y B $.
+    $( The standard less-than ` <RR ` and the extended real less-than ` < ` are
+       identical when restricted to the non-extended reals ` RR ` .
+       (Contributed by NM, 13-Oct-2005.)  (Revised by Mario Carneiro,
+       28-Apr-2015.) $)
+    ltxrlt $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B <-> A <RR B ) ) $=
+      ( vx vy cr wcel clt wbr cltrr cv w3a cmnf csn cun cpnf cxp wo brun wceq
+      wi wa copab df-ltxr breqi bitri eleq1 breq1 3anbi13d breq2 3anbi23d brabg
+      eqid simp3 syl6bi brxp simprbi elsni syl a1i renepnf neneqd pm2.24 adantl
+      ee21 simplbi renemnf adantr jaod syl5bi 3adant3 ibir sylibr 3expia impbid
+      wn wb orcd ) AEFZBEFZUAZABGHZABIHZWAABCJZEFZDJZEFZWCWEIHZKZCDUBZHZABELMZN
+      ZOMZPZWKEPZNZHZQZVTWBWAABWIWPNZHWRABGWSCDUCUDABWIWPRUEZVTWJWBWQVTWJVRVSWB
+      KZWBWHVRWFAWEIHZKXACDABEEWIWCASWDVRWGXBWFWCAEUFWCAWEIUGUHWEBSWFVSXBWBVRWE
+      BEUFWEBAIUIUJWIULUKZVRVSWBUMUNWQABWNHZABWOHZQVTWBABWNWORVTXDWBXEVSXDWBTVR
+      VSXDBOSZXFVOWBXDXFTVSXDBWMFZXFXDAWLFXGABWLWMUOUPBOUQURUSVSBOBUTVAXFWBVBVD
+      VCVRXEWBTVSVRXEALSZXHVOWBXEXHTVRXEAWKFZXHXEXIVSABWKEUOVEALUQURUSVRALAVFVA
+      XHWBVBVDVGVHVIVHVIVRVSWBWAXAWRWAXAWJWQXAWJVRVSWJXAVPWBXCVJVKVQWTVLVMVN $.
   $}
 
 $(
@@ -66232,6 +66657,27 @@ htmldef "x." as
     " <IMG SRC='cdot.gif' WIDTH=4 HEIGHT=19 ALT=' x.' TITLE='x.'> ";
   althtmldef "x." as ' &middot; '; /* unicode: &#xb7; */
   latexdef "x." as "\cdot";
+htmldef "<_" as
+    " <IMG SRC='le.gif' WIDTH=11 HEIGHT=19 ALT=' &lt;_' TITLE='&lt;_'> ";
+  althtmldef "<_" as ' &le; ';
+  latexdef "<_" as "\le";
+htmldef "+oo" as " <IMG SRC='_pinf.gif' WIDTH=29 HEIGHT=19 ALT='+oo' " +
+    "TITLE='+oo'>";
+  althtmldef "+oo" as '+&infin;';
+  latexdef "+oo" as "+\infty";
+htmldef "-oo" as " <IMG SRC='_minf.gif' WIDTH=24 HEIGHT=19 ALT='-oo' " +
+    "TITLE='-oo'>";
+  althtmldef "-oo" as '-&infin;';
+  latexdef "-oo" as "-\infty";
+htmldef "RR*" as "<IMG SRC='_bbrast.gif' WIDTH=18 HEIGHT=19 ALT=' RR*' " +
+    "TITLE='RR*'>";
+  althtmldef "RR*" as '&#8477;<SUP>*</SUP>';
+    /* 2-Jan-2016 reverted sans-serif */
+  latexdef "RR*" as "\mathbb{R}^*";
+htmldef "<" as
+    " <IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT=' &lt;' TITLE='&lt;'> ";
+  althtmldef "<" as ' &lt; ';
+  latexdef "<" as "<";
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
