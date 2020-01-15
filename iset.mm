@@ -65469,8 +65469,8 @@ $)
      only that ` +oo ` be a set not in ` RR ` and different from ` -oo `
      ( ~ df-mnf ).  We use ` ~P U. CC ` to make it independent of the
      construction of ` CC ` , and Cantor's Theorem will show that it is
-     different from any member of ` CC ` and therefore ` RR ` .  See ~ pnfnre ,
-     ~ mnfnre , and ~ pnfnemnf .
+     different from any member of ` CC ` and therefore ` RR ` .  See ~ pnfnre
+     and ~ mnfnre , and we'll also be able to prove ` +oo =/= -oo ` .
 
      A simpler possibility is to define ` +oo ` as ` CC ` and ` -oo ` as
      ` { CC } ` , but that approach requires the Axiom of Regularity to show
@@ -65481,8 +65481,8 @@ $)
 
   $( Define minus infinity as the power set of plus infinity.  Note that the
      definition is arbitrary, requiring only that ` -oo ` be a set not in
-     ` RR ` and different from ` +oo ` (see ~ mnfnre and ~ pnfnemnf ).
-     (Contributed by NM, 13-Oct-2005.)  (New usage is discouraged.) $)
+     ` RR ` and different from ` +oo ` (see ~ mnfnre ).  (Contributed by NM,
+     13-Oct-2005.)  (New usage is discouraged.) $)
   df-mnf $a |- -oo = ~P +oo $.
 
   $( Define the set of extended reals that includes plus and minus infinity.
@@ -65501,8 +65501,7 @@ $)
   $}
 
   $( Define 'less than or equal to' on the extended real subset of complex
-     numbers.  Theorem ~ leloe relates it to 'less than' for reals.
-     (Contributed by NM, 13-Oct-2005.) $)
+     numbers.  (Contributed by NM, 13-Oct-2005.) $)
   df-le $a |- <_ = ( ( RR* X. RR* ) \ `' < ) $.
 
   $( Plus infinity is not a real number.  (Contributed by NM, 13-Oct-2005.) $)
