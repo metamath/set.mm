@@ -65672,6 +65672,16 @@ $)
     wb ltxrlt 3imtr4d ) ADEZBDEZCDEZFZABGHZBCGHZIACGHZABJHZBCJHZIACJHZABCKUBUFU
     CUGUDSTUFUCPUAABQLTUAUGUDPSBCQMNSUAUHUEPTACQOR $.
 
+  $( Ordering property of addition on reals.  Axiom for real and complex
+     numbers, derived from set theory.  (This restates ~ ax-pre-ltadd with
+     ordering on the extended reals.)  (Contributed by NM, 13-Oct-2005.) $)
+  axltadd $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A < B -> ( C + A ) < ( C + B ) ) ) $=
+    ( cr wcel w3a cltrr wbr caddc co clt ax-pre-ltadd wb ltxrlt 3adant3 readdcl
+    wa syl2an 3impdi 3coml 3imtr4d ) ADEZBDEZCDEZFABGHZCAIJZCBIJZGHZABKHZUFUGKH
+    ZABCLUBUCUIUEMUDABNOUDUBUCUJUHMZUDUBUCUKUDUBQUFDEUGDEUKUDUCQCAPCBPUFUGNRSTU
+    A $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Ordering on reals
