@@ -61,6 +61,9 @@
 "df-ilim" is used by "dflim2".
 "df-iom" is used by "dfom3".
 "df-iord" is used by "dford3".
+"df-mnf" is used by "mnfnre".
+"df-pnf" is used by "mnfnre".
+"df-pnf" is used by "pnfnre".
 "df-tru" is used by "tru".
 "equsalh" is used by "dvelimALT".
 "equsalh" is used by "dvelimfALT2".
@@ -214,6 +217,8 @@ New usage of "bocardo" is discouraged (0 uses).
 New usage of "df-ilim" is discouraged (1 uses).
 New usage of "df-iom" is discouraged (1 uses).
 New usage of "df-iord" is discouraged (1 uses).
+New usage of "df-mnf" is discouraged (1 uses).
+New usage of "df-pnf" is discouraged (2 uses).
 New usage of "df-tru" is discouraged (1 uses).
 New usage of "dftru2" is discouraged (0 uses).
 New usage of "difidALT" is discouraged (0 uses).
