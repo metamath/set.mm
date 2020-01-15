@@ -65722,6 +65722,16 @@ $)
     ( axltirr ) AB $.
 
   ${
+    $d x y z $.
+    $( 'Less than' is a strict ordering.  (Contributed by NM, 19-Jan-1997.) $)
+    ltso $p |- < Or RR $=
+      ( vx vy vz cr clt wor wpo cv wbr wo wi wral wtru wcel wn ltnr adantl lttr
+      w3a wa ispod trud axltwlin rgen3 df-iso mpbir2an ) DEFDEGZAHZBHZEIZUHCHZE
+      IZUKUIEIJKZCDLBDLADLUGMABCDEUHDNZUHUHEIOMUHPQUNUIDNUKDNSUJUIUKEITULKMUHUI
+      UKRQUAUBUMABCDDDUHUIUKUCUDABCDEUEUF $.
+  $}
+
+  ${
     lt.1 $e |- A e. RR $.
     $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
     ltnri $p |- -. A < A $=
