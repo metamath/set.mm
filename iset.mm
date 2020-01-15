@@ -65682,6 +65682,15 @@ $)
     ZABCLUBUCUIUEMUDABNOUDUBUCUJUHMZUDUBUCUKUDUBQUFDEUGDEUKUDUCQCAPCBPUFUGNRSTU
     A $.
 
+  $( The product of two positive reals is positive.  Axiom for real and complex
+     numbers, derived from set theory.  (This restates ~ ax-pre-mulgt0 with
+     ordering on the extended reals.)  (Contributed by NM, 13-Oct-2005.) $)
+  axmulgt0 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( ( 0 < A /\ 0 < B ) -> 0 < ( A x. B ) ) ) $=
+    ( cr wcel wa cc0 cltrr wbr cmul co clt ax-pre-mulgt0 wb 0re ltxrlt bi2anan9
+    mpan remulcl sylancr 3imtr4d ) ACDZBCDZEZFAGHZFBGHZEFABIJZGHZFAKHZFBKHZEFUF
+    KHZABLUAUHUDUBUIUEFCDZUAUHUDMNFAOQUKUBUIUEMNFBOQPUCUKUFCDUJUGMNABRFUFOST $.
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
         Ordering on reals
