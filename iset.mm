@@ -65636,6 +65636,48 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      Restate the ordering postulates with extended real "less than"
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Ordering on reals is transitive.  Axiom for real and complex numbers,
+     derived from set theory.  This restates ~ ax-pre-lttrn with ordering on
+     the extended reals.  New proofs should use ~ lttr instead for naming
+     consistency.  (New usage is discouraged.)  (Contributed by NM,
+     13-Oct-2005.) $)
+  axlttrn $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A < B /\ B < C ) -> A < C ) ) $=
+    ( cr wcel w3a cltrr wbr wa clt ax-pre-lttrn 3adant3 3adant1 anbi12d 3adant2
+    wb ltxrlt 3imtr4d ) ADEZBDEZCDEZFZABGHZBCGHZIACGHZABJHZBCJHZIACJHZABCKUBUFU
+    CUGUDSTUFUCPUAABQLTUAUGUDPSBCQMNSUAUHUEPTACQOR $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordering on reals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Alias for ~ axlttrn , for naming consistency with ~ lttri .  New proofs
+     should generally use this instead of ~ ax-pre-lttrn .  (Contributed by NM,
+     10-Mar-2008.) $)
+  lttr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A < B /\ B < C ) -> A < C ) ) $=
+    ( axlttrn ) ABCD $.
+
+  ${
+    lt.1 $e |- A e. RR $.
+    lt.2 $e |- B e. RR $.
+    ${
+      lt.3 $e |- C e. RR $.
+      $( 'Less than' is transitive.  Theorem I.17 of [Apostol] p. 20.
+         (Contributed by NM, 14-May-1999.) $)
+      lttri $p |- ( ( A < B /\ B < C ) -> A < C ) $=
+        ( cr wcel clt wbr wa wi lttr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
+    $}
+  $}
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
