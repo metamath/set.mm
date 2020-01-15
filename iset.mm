@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Jan-2020
+$( iset.mm - Version of 15-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -65641,6 +65641,15 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
+  $( Real number less-than is irreflexive.  Axiom for real and complex numbers,
+     derived from set theory.  This restates ~ ax-pre-ltirr with ordering on
+     the extended reals.  New proofs should use ~ ltnr instead for naming
+     consistency.  (New usage is discouraged.)  (Contributed by Jim Kingdon,
+     15-Jan-2020.) $)
+  axltirr $p |- ( A e. RR -> -. A < A ) $=
+    ( cr wcel clt wbr cltrr ax-pre-ltirr wb ltxrlt anidms mtbird ) ABCZAADEZAAF
+    EZAGLMNHAAIJK $.
+
   $( Ordering on reals is transitive.  Axiom for real and complex numbers,
      derived from set theory.  This restates ~ ax-pre-lttrn with ordering on
      the extended reals.  New proofs should use ~ lttr instead for naming
@@ -65665,8 +65674,16 @@ $)
              ( ( A < B /\ B < C ) -> A < C ) ) $=
     ( axlttrn ) ABCD $.
 
+  $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
+  ltnr $p |- ( A e. RR -> -. A < A ) $=
+    ( axltirr ) AB $.
+
   ${
     lt.1 $e |- A e. RR $.
+    $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
+    ltnri $p |- -. A < A $=
+      ( cr wcel clt wbr wn ltnr ax-mp ) ACDAAEFGBAHI $.
+
     lt.2 $e |- B e. RR $.
     ${
       lt.3 $e |- C e. RR $.

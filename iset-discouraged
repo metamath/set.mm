@@ -57,6 +57,7 @@
 "ax-mulcl" is used by "mulcl".
 "ax-mulcom" is used by "mulcom".
 "ax-mulrcl" is used by "remulcl".
+"axltirr" is used by "ltnr".
 "axlttrn" is used by "lttr".
 "axresscn" is used by "ax1cn".
 "df-ilim" is used by "dflim2".
@@ -195,6 +196,7 @@ New usage of "axcnre" is discouraged (0 uses).
 New usage of "axdistr" is discouraged (0 uses).
 New usage of "axi2m1" is discouraged (0 uses).
 New usage of "axicn" is discouraged (0 uses).
+New usage of "axltirr" is discouraged (1 uses).
 New usage of "axlttrn" is discouraged (1 uses).
 New usage of "axmulass" is discouraged (0 uses).
 New usage of "axmulcl" is discouraged (0 uses).
