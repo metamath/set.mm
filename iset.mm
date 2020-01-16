@@ -65778,6 +65778,12 @@ $)
     ( cr wcel wa clt wbr wn cle ltnsym lenlt sylibrd ) ACDBCDEABFGBAFGHABIGABJA
     BKL $.
 
+  $( 'Less than' is antisymmetric and irreflexive.  (Contributed by NM,
+     13-Aug-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  ltnsym2 $p |- ( ( A e. RR /\ B e. RR ) -> -. ( A < B /\ B < A ) ) $=
+    ( cr clt wor wcel wa wbr wn ltso so2nr mpan ) CDEACFBCFGABDHBADHGIJCABDKL
+    $.
+
   ${
     lt.1 $e |- A e. RR $.
     $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
