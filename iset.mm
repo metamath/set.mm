@@ -65784,6 +65784,12 @@ $)
     ( cr clt wor wcel wa wbr wn ltso so2nr mpan ) CDEACFBCFGABDHBADHGIJCABDKL
     $.
 
+  $( Equality implies 'less than or equal to'.  (Contributed by NM,
+     4-Apr-2005.) $)
+  eqle $p |- ( ( A e. RR /\ A = B ) -> A <_ B ) $=
+    ( cr wcel cle wbr wceq leid breq2 biimpac sylan ) ACDAAEFZABGZABEFZAHMLNABA
+    EIJK $.
+
   ${
     lt.1 $e |- A e. RR $.
     $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
