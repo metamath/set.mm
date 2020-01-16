@@ -65731,6 +65731,11 @@ $)
       UKRQUAUBUMABCDDDUHUIUKUCUDABCDEUEUF $.
   $}
 
+  $( 'Greater than' is a strict ordering.  (Contributed by JJ, 11-Oct-2018.) $)
+  gtso $p |- `' < Or RR $=
+    ( vx cr clt wor ccnv ltso cc0 wcel cv wex wb 0re elex2 cnvsom mp2b mpbi ) B
+    CDZBCEDZFGBHAIBHAJQRKLAGBMABCNOP $.
+
   ${
     lt.1 $e |- A e. RR $.
     $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
