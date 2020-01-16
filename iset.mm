@@ -1,4 +1,4 @@
-$( iset.mm - Version of 15-Jan-2020
+$( iset.mm - Version of 16-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -64799,6 +64799,25 @@ $)
   $}
 
   ${
+    $d A x y $.
+    $( ` 0 ` is an identity element for real addition.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use ~ ax-0id .
+
+       In the Metamath Proof Explorer this is not a complex number axiom but is
+       instead proved from other axioms.  That proof relies on excluded middle
+       and it is not known whether it is possible to prove this from the other
+       axioms without excluded middle.  (Contributed by Jim Kingdon,
+       16-Jan-2020.)  (New usage is discouraged.) $)
+    ax0id $p |- ( A e. CC -> ( A + 0 ) = A ) $=
+      ( vx vy cv cop cc0 caddc co wceq cnr cc df-c oveq1 id eqeq12d wcel c0r 0r
+      cplr 0idsr wa addcnsr mpanr12 eqcomi oveq2d adantr adantl opeq12d 3eqtr3d
+      df-0 a1i optocl ) BDZCDZEZFGHZUOIAFGHZAIBCAJJKLUOAIZUPUQUOAUOAFGMURNOUMJP
+      ZUNJPZUAZUOQQEZGHZUMQSHZUNQSHZEZUPUOVAQJPZVGVCVFIRRUMUNQQUBUCVAVBFUOGVBFI
+      VAFVBUJUDUKUEVAVDUMVEUNUSVDUMIUTUMTUFUTVEUNIUSUNTUGUHUIUL $.
+  $}
+
+  ${
     $d x y A $.  $d x y z $.
     $( Existence of negative of real number.  Axiom for real and complex
        numbers, derived from set theory.  This construction-dependent theorem
@@ -65067,6 +65086,14 @@ $)
      29-Jan-1995.) $)
   ax-1rid $a |- ( A e. RR -> ( A x. 1 ) = A ) $.
   $( $j restatement 'ax-1rid' of 'ax1rid'; $)
+
+  $( ` 0 ` is an identity element for real addition.  Axiom for real and
+     complex numbers, justified by theorem ~ ax0id .
+
+     Proofs should normally use ~ addid1 instead.  (New usage is discouraged.)
+     (Contributed by Jim Kingdon, 16-Jan-2020.) $)
+  ax-0id $a |- ( A e. CC -> ( A + 0 ) = A ) $.
+  $( $j restatement 'ax-0id' of 'ax0id'; $)
 
   ${
     $d x A $.
@@ -65805,6 +65832,19 @@ $)
         ( cr wcel clt wbr wa wi lttr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
     $}
   $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Initial properties of the complex numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( ` 0 ` is an additive identity.  This used to be one of our complex number
+     axioms, until it was found to be dependent on the others.  Based on ideas
+     by Eric Schmidt.  (Contributed by Scott Fenton, 3-Jan-2013.)  (Proof
+     shortened by Mario Carneiro, 27-May-2016.) $)
+  addid1 $p |- ( A e. CC -> ( A + 0 ) = A ) $=
+    ( ax-0id ) AB $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
