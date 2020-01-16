@@ -65744,6 +65744,15 @@ $)
     cle lenlt ) ACDZBCDZEZABFGZBAFGZHZABRGUBUCUDAAFGZIUFHZUEUBUCUDUFTUAUCUDEUFI
     ABAJKLTUGUAAMNUDUFOPABSQ $.
 
+  $( Transitive law, weaker form of ` ( A < B /\ B <_ C ) -> A < C ` .
+     (Contributed by AV, 14-Oct-2018.) $)
+  ltleletr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A < B /\ B <_ C ) -> A <_ C ) ) $=
+    ( cr wcel w3a clt wbr cle wn wi wa lttr 3coml expcomd con3 wb lenlt 3adant1
+    syl6 3adant2 imbi12d sylibrd impd ) ADEZBDEZCDEZFZABGHZBCIHZACIHZUHUICBGHZJ
+    ZCAGHZJZKZUJUKKUHUIUNULKUPUHUNUIULUGUEUFUNUILULKCABMNOUNULPTUHUJUMUKUOUFUGU
+    JUMQUEBCRSUEUGUKUOQUFACRUAUBUCUD $.
+
   ${
     lt.1 $e |- A e. RR $.
     $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
