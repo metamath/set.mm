@@ -65753,6 +65753,15 @@ $)
     ZCAGHZJZKZUJUKKUHUIUNULKUPUHUNUIULUGUEUFUNUILULKCABMNOUNULPTUHUJUMUKUOUFUGU
     JUMQUEBCRSUEUGUKUOQUFACRUAUBUCUD $.
 
+  $( Transitive law.  (Contributed by NM, 12-Nov-1999.) $)
+  letr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A <_ B /\ B <_ C ) -> A <_ C ) ) $=
+    ( cr w3a clt wbr wo wn cle wa wi axltwlin 3coml orcom syl6ib con3d wb lenlt
+    wcel 3adant3 3adant1 anbi12d ioran syl6bbr 3adant2 3imtr4d ) ADTZBDTZCDTZEZ
+    BAFGZCBFGZHZIZCAFGZIZABJGZBCJGZKZACJGZUKUPUNUKUPUMULHZUNUJUHUIUPVBLCABMNUMU
+    LOPQUKUTULIZUMIZKUOUKURVCUSVDUHUIURVCRUJABSUAUIUJUSVDRUHBCSUBUCULUMUDUEUHUJ
+    VAUQRUIACSUFUG $.
+
   ${
     lt.1 $e |- A e. RR $.
     $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
