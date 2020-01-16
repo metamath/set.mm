@@ -65736,6 +65736,14 @@ $)
     ( vx cr clt wor ccnv ltso cc0 wcel cv wex wb 0re elex2 cnvsom mp2b mpbi ) B
     CDZBCEDZFGBHAIBHAJQRKLAGBMABCNOP $.
 
+  $( 'Less than' implies 'less than or equal to'.  (Contributed by NM,
+     25-Aug-1999.) $)
+  ltle $p |- ( ( A e. RR /\ B e. RR ) ->
+               ( A < B -> A <_ B ) ) $=
+    ( cr wcel wa clt wbr wn wi lttr 3anidm13 expd ltnr adantr con3 ee21 sylibrd
+    cle lenlt ) ACDZBCDZEZABFGZBAFGZHZABRGUBUCUDAAFGZIUFHZUEUBUCUDUFTUAUCUDEUFI
+    ABAJKLTUGUAAMNUDUFOPABSQ $.
+
   ${
     lt.1 $e |- A e. RR $.
     $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
