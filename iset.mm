@@ -65736,14 +65736,6 @@ $)
     ( vx cr clt wor ccnv ltso cc0 wcel cv wex wb 0re elex2 cnvsom mp2b mpbi ) B
     CDZBCEDZFGBHAIBHAJQRKLAGBMABCNOP $.
 
-  $( 'Less than' implies 'less than or equal to'.  (Contributed by NM,
-     25-Aug-1999.) $)
-  ltle $p |- ( ( A e. RR /\ B e. RR ) ->
-               ( A < B -> A <_ B ) ) $=
-    ( cr wcel wa clt wbr wn wi lttr 3anidm13 expd ltnr adantr con3 ee21 sylibrd
-    cle lenlt ) ACDZBCDZEZABFGZBAFGZHZABRGUBUCUDAAFGZIUFHZUEUBUCUDUFTUAUCUDEUFI
-    ABAJKLTUGUAAMNUDUFOPABSQ $.
-
   $( Transitive law, weaker form of ` ( A < B /\ B <_ C ) -> A < C ` .
      (Contributed by AV, 14-Oct-2018.) $)
   ltleletr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
@@ -65773,6 +65765,18 @@ $)
   ltne $p |- ( ( A e. RR /\ A < B ) -> B =/= A ) $=
     ( cr wcel clt wbr wne wn wceq ltnr breq2 notbid syl5ibrcom necon2ad imp ) A
     CDZABEFZBAGPQBAPQHBAIZAAEFZHAJRQSBAAEKLMNO $.
+
+  $( 'Less than' is not symmetric.  (Contributed by NM, 8-Jan-2002.) $)
+  ltnsym $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B -> -. B < A ) ) $=
+    ( cr wcel wa clt wbr wi wn lttr 3anidm13 expd ltnr adantr con3 ee21 ) ACDZB
+    CDZEZABFGZBAFGZAAFGZHUBIZUAISTUAUBQRTUAEUBHABAJKLQUCRAMNUAUBOP $.
+
+  $( 'Less than' implies 'less than or equal to'.  (Contributed by NM,
+     25-Aug-1999.) $)
+  ltle $p |- ( ( A e. RR /\ B e. RR ) ->
+               ( A < B -> A <_ B ) ) $=
+    ( cr wcel wa clt wbr wn cle ltnsym lenlt sylibrd ) ACDBCDEABFGBAFGHABIGABJA
+    BKL $.
 
   ${
     lt.1 $e |- A e. RR $.
