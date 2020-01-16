@@ -65762,6 +65762,18 @@ $)
     LOPQUKUTULIZUMIZKUOUKURVCUSVDUHUIURVCRUJABSUAUIUJUSVDRUHBCSUBUCULUMUDUEUHUJ
     VAUQRUIACSUFUG $.
 
+  $( 'Less than or equal to' is reflexive.  (Contributed by NM,
+     18-Aug-1999.) $)
+  leid $p |- ( A e. RR -> A <_ A ) $=
+    ( cr wcel cle wbr clt wn ltnr wb lenlt anidms mpbird ) ABCZAADEZAAFEGZAHMNO
+    IAAJKL $.
+
+  $( 'Less than' implies not equal.  (Contributed by NM, 9-Oct-1999.)  (Revised
+     by Mario Carneiro, 16-Sep-2015.) $)
+  ltne $p |- ( ( A e. RR /\ A < B ) -> B =/= A ) $=
+    ( cr wcel clt wbr wne wn wceq ltnr breq2 notbid syl5ibrcom necon2ad imp ) A
+    CDZABEFZBAGPQBAPQHBAIZAAEFZHAJRQSBAAEKLMNO $.
+
   ${
     lt.1 $e |- A e. RR $.
     $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
