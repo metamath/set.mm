@@ -66011,6 +66011,31 @@ $)
     IZUKBDHIHIZUDUEUJUMJZUFUBUCUEUPUBUCUEKUIULDHABCLMNOUDUHEFZUGUJUNJZABPUQUEUF
     URUHCDQRSUBUEUCUFUMUOJZUBUEGUKEFZUCUFGUSACPUTUCUFUSUKBDQRSTUA $.
 
+  $( A simple product of sums expansion.  (Contributed by NM, 21-Feb-2005.) $)
+  muladd11 $p |- ( ( A e. CC /\ B e. CC ) -> ( ( 1 + A ) x. ( 1 + B ) ) =
+                 ( ( 1 + A ) + ( B + ( A x. B ) ) ) ) $=
+    ( cc wcel wa c1 caddc cmul wceq ax-1cn addcl mpan adddi mp3an2 sylan adantr
+    co mulid1d adddir eqtrd mp3an1 mulid2 adantl oveq1d oveq12d ) ACDZBCDZEZFAG
+    QZFBGQHQZUIFHQZUIBHQZGQZUIBABHQZGQZGQUFUICDZUGUJUMIZFCDZUFUPJFAKLZUPURUGUQJ
+    UIFBMNOUHUKUIULUOGUFUKUIIUGUFUIUSRPUHULFBHQZUNGQZUOURUFUGULVAIJFABSUAUHUTBU
+    NGUGUTBIUFBUBUCUDTUET $.
+
+  $( Two times a number.  (Contributed by NM, 18-May-1999.)  (Revised by Mario
+     Carneiro, 27-May-2016.) $)
+  1p1times $p |- ( A e. CC -> ( ( 1 + 1 ) x. A ) = ( A + A ) ) $=
+    ( cc wcel c1 caddc co cmul ax-1cn a1i id adddird mulid2 oveq12d eqtrd ) ABC
+    ZDDEFAGFDAGFZPEFAAEFODDADBCOHIZQOJKOPAPAEALZRMN $.
+
+  $( A theorem for complex numbers analogous the second Peano postulate
+     ~ peano2 .  (Contributed by NM, 17-Aug-2005.) $)
+  peano2cn $p |- ( A e. CC -> ( A + 1 ) e. CC ) $=
+    ( cc wcel c1 caddc co ax-1cn addcl mpan2 ) ABCDBCADEFBCGADHI $.
+
+  $( A theorem for reals analogous the second Peano postulate ~ peano2 .
+     (Contributed by NM, 5-Jul-2005.) $)
+  peano2re $p |- ( A e. RR -> ( A + 1 ) e. RR ) $=
+    ( cr wcel c1 caddc co 1re readdcl mpan2 ) ABCDBCADEFBCGADHI $.
+
   $( ` 0 ` is an additive identity.  (Contributed by Jim Kingdon,
      16-Jan-2020.) $)
   addid1 $p |- ( A e. CC -> ( A + 0 ) = A ) $=
