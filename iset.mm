@@ -66011,10 +66011,8 @@ $)
     IZUKBDHIHIZUDUEUJUMJZUFUBUCUEUPUBUCUEKUIULDHABCLMNOUDUHEFZUGUJUNJZABPUQUEUF
     URUHCDQRSUBUEUCUFUMUOJZUBUEGUKEFZUCUFGUSACPUTUCUFUSUKBDQRSTUA $.
 
-  $( ` 0 ` is an additive identity.  This used to be one of our complex number
-     axioms, until it was found to be dependent on the others.  Based on ideas
-     by Eric Schmidt.  (Contributed by Scott Fenton, 3-Jan-2013.)  (Proof
-     shortened by Mario Carneiro, 27-May-2016.) $)
+  $( ` 0 ` is an additive identity.  (Contributed by Jim Kingdon,
+     16-Jan-2020.) $)
   addid1 $p |- ( A e. CC -> ( A + 0 ) = A ) $=
     ( ax-0id ) AB $.
 
