@@ -65834,6 +65834,19 @@ $)
       ( cr wcel wceq cle wbr eleq1 mpbiri eqle mpancom ) BDEZBAFZBAGHNMADECBADI
       JBAKL $.
 
+    ${
+      ltneii.2 $e |- A < B $.
+      $( 'Less than' implies not equal.  (Contributed by Mario Carneiro,
+         30-Sep-2013.) $)
+      gtneii $p |- B =/= A $=
+        ( cr wcel clt wbr wne ltne mp2an ) AEFABGHBAICDABJK $.
+
+      $( 'Greater than' implies not equal.  (Contributed by Mario Carneiro,
+         16-Sep-2015.) $)
+      ltneii $p |- A =/= B $=
+        ( gtneii necomi ) BAABCDEF $.
+    $}
+
     lt.2 $e |- B e. RR $.
     ${
       lt.3 $e |- C e. RR $.
