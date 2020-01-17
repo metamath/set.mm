@@ -65961,6 +65961,16 @@ $)
         ( cle wbr cr wcel wa wi letr syl3anc mp2and ) ABCJKZCDJKZBDJKZHIABLMCLM
         DLMSTNUAOEFGBCDPQR $.
     $}
+
+    ${
+      lttrd.4 $e |- ( ph -> A < B ) $.
+      lttrd.5 $e |- ( ph -> B < C ) $.
+      $( Transitive law deduction for 'less than'.  (Contributed by NM,
+         9-Jan-2006.) $)
+      lttrd $p |- ( ph -> A < C ) $=
+        ( clt wbr cr wcel wa wi lttr syl3anc mp2and ) ABCJKZCDJKZBDJKZHIABLMCLM
+        DLMSTNUAOEFGBCDPQR $.
+    $}
   $}
 
 $(
