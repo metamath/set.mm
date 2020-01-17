@@ -65926,6 +65926,20 @@ $)
        Carneiro, 27-May-2016.) $)
     lenltd $p |- ( ph -> ( A <_ B <-> -. B < A ) ) $=
       ( cr wcel cle wbr clt wn wb lenlt syl2anc ) ABFGCFGBCHICBJIKLDEBCMN $.
+
+    ${
+      ltled.1 $e |- ( ph -> A < B ) $.
+      $( 'Less than' implies 'less than or equal to'.  (Contributed by Mario
+         Carneiro, 27-May-2016.) $)
+      ltled $p |- ( ph -> A <_ B ) $=
+        ( clt wbr cle cr wcel wi ltle syl2anc mpd ) ABCGHZBCIHZFABJKCJKPQLDEBCM
+        NO $.
+
+      $( 'Less than' implies 'less than or equal to'.  (Contributed by Mario
+         Carneiro, 27-May-2016.) $)
+      ltnsymd $p |- ( ph -> -. B < A ) $=
+        ( cle wbr clt wn ltled lenltd mpbid ) ABCGHCBIHJABCDEFKABCDELM $.
+    $}
   $}
 
 $(
