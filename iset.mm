@@ -65848,6 +65848,10 @@ $)
     $}
 
     lt.2 $e |- B e. RR $.
+    $( 'Less than' is not symmetric.  (Contributed by NM, 6-May-1999.) $)
+    ltnsymi $p |- ( A < B -> -. B < A ) $=
+      ( cr wcel clt wbr wn wi ltnsym mp2an ) AEFBEFABGHBAGHIJCDABKL $.
+
     ${
       lt.3 $e |- C e. RR $.
       $( 'Less than' is transitive.  Theorem I.17 of [Apostol] p. 20.
