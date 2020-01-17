@@ -65979,6 +65979,38 @@ $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 $)
 
+  $( Commutative/associative law for multiplication.  (Contributed by NM,
+     30-Apr-2005.) $)
+  mul12 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( A x. ( B x. C ) ) = ( B x. ( A x. C ) ) ) $=
+    ( cc wcel w3a cmul co wceq wa mulcom oveq1d 3adant3 mulass 3com12 3eqtr3d )
+    ADEZBDEZCDEZFABGHZCGHZBAGHZCGHZABCGHGHBACGHGHZQRUAUCISQRJTUBCGABKLMABCNRQSU
+    CUDIBACNOP $.
+
+  $( Commutative/associative law.  (Contributed by NM, 8-Oct-1999.) $)
+  mul32 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+               ( ( A x. B ) x. C ) = ( ( A x. C ) x. B ) ) $=
+    ( cc wcel w3a cmul co wceq wa mulcom oveq2d 3adant1 mulass 3com23 3eqtr4d )
+    ADEZBDEZCDEZFABCGHZGHZACBGHZGHZABGHCGHACGHBGHZRSUAUCIQRSJTUBAGBCKLMABCNQSRU
+    DUCIACBNOP $.
+
+  $( Commutative/associative law.  (Contributed by Scott Fenton,
+     3-Jan-2013.) $)
+  mul31 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A x. B ) x. C ) = ( ( C x. B ) x. A ) ) $=
+    ( cc wcel cmul co wceq wa mulcom oveq2d 3adant1 mulass mulcl ancoms mulcomd
+    w3a simp1 3eqtr4d ) ADEZBDEZCDEZQZABCFGZFGZACBFGZFGZABFGCFGUFAFGUAUBUEUGHTU
+    AUBIUDUFAFBCJKLABCMUCUFAUAUBUFDEZTUBUAUHCBNOLTUAUBRPS $.
+
+  $( Rearrangement of 4 factors.  (Contributed by NM, 8-Oct-1999.) $)
+  mul4 $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+              ( ( A x. B ) x. ( C x. D ) ) =
+                 ( ( A x. C ) x. ( B x. D ) ) ) $=
+    ( cc wcel wa cmul co wceq w3a mul32 oveq1d 3expa adantrr mulcl mulass 3expb
+    sylan an4s 3eqtr3d ) AEFZBEFZGZCEFZDEFZGZGABHIZCHIZDHIZACHIZBHIZDHIZUHCDHIH
+    IZUKBDHIHIZUDUEUJUMJZUFUBUCUEUPUBUCUEKUIULDHABCLMNOUDUHEFZUGUJUNJZABPUQUEUF
+    URUHCDQRSUBUEUCUFUMUOJZUBUEGUKEFZUCUFGUSACPUTUCUFUSUKBDQRSTUA $.
+
   $( ` 0 ` is an additive identity.  This used to be one of our complex number
      axioms, until it was found to be dependent on the others.  Based on ideas
      by Eric Schmidt.  (Contributed by Scott Fenton, 3-Jan-2013.)  (Proof
