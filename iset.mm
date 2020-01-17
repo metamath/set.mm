@@ -65823,6 +65823,17 @@ $)
     ltnri $p |- -. A < A $=
       ( cr wcel clt wbr wn ltnr ax-mp ) ACDAAEFGBAHI $.
 
+    $( Equality implies 'less than or equal to'.  (Contributed by NM,
+       23-May-1999.)  (Revised by Alexander van der Vekens, 20-Mar-2018.) $)
+    eqlei $p |- ( A = B -> A <_ B ) $=
+      ( cr wcel wceq cle wbr eqle mpan ) ADEABFABGHCABIJ $.
+
+    $( Equality implies 'less than or equal to'.  (Contributed by Alexander van
+       der Vekens, 20-Mar-2018.) $)
+    eqlei2 $p |- ( B = A -> B <_ A ) $=
+      ( cr wcel wceq cle wbr eleq1 mpbiri eqle mpancom ) BDEZBAFZBAGHNMADECBADI
+      JBAKL $.
+
     lt.2 $e |- B e. RR $.
     ${
       lt.3 $e |- C e. RR $.
