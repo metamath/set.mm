@@ -65880,6 +65880,11 @@ $)
          (Contributed by NM, 14-May-1999.) $)
       lttri $p |- ( ( A < B /\ B < C ) -> A < C ) $=
         ( cr wcel clt wbr wa wi lttr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
+
+      $( 'Less than or equal to' is transitive.  (Contributed by NM,
+         14-May-1999.) $)
+      letri $p |- ( ( A <_ B /\ B <_ C ) -> A <_ C ) $=
+        ( cr wcel cle wbr wa wi letr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
     $}
   $}
 
