@@ -65901,6 +65901,27 @@ $)
       ( cc0 clt wbr cmul co mulgt0i mp2an ) GAHIGBHIGABJKHIEFABCDLM $.
   $}
 
+  ${
+    ltd.1 $e |- ( ph -> A e. RR ) $.
+    $( 'Less than' is irreflexive.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    ltnrd $p |- ( ph -> -. A < A ) $=
+      ( cr wcel clt wbr wn ltnr syl ) ABDEBBFGHCBIJ $.
+
+    ${
+      ltned.2 $e |- ( ph -> A < B ) $.
+      $( 'Less than' implies not equal.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      gtned $p |- ( ph -> B =/= A ) $=
+        ( cr wcel clt wbr wne ltne syl2anc ) ABFGBCHICBJDEBCKL $.
+
+      $( 'Greater than' implies not equal.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      ltned $p |- ( ph -> A =/= B ) $=
+        ( gtned necomd ) ACBABCDEFG $.
+    $}
+  $}
+
 $(
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
            Initial properties of the complex numbers
