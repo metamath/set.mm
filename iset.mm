@@ -65920,6 +65920,12 @@ $)
       ltned $p |- ( ph -> A =/= B ) $=
         ( gtned necomd ) ACBABCDEFG $.
     $}
+
+    ltd.2 $e |- ( ph -> B e. RR ) $.
+    $( 'Less than or equal to' in terms of 'less than'.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    lenltd $p |- ( ph -> ( A <_ B <-> -. B < A ) ) $=
+      ( cr wcel cle wbr clt wn wb lenlt syl2anc ) ABFGCFGBCHICBJIKLDEBCMN $.
   $}
 
 $(
