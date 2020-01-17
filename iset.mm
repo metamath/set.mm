@@ -65940,6 +65940,16 @@ $)
       ltnsymd $p |- ( ph -> -. B < A ) $=
         ( cle wbr clt wn ltled lenltd mpbid ) ABCGHCBIHJABCDEFKABCDELM $.
     $}
+
+    ${
+      mulgt0d.3 $e |- ( ph -> 0 < A ) $.
+      mulgt0d.4 $e |- ( ph -> 0 < B ) $.
+      $( The product of two positive numbers is positive.  (Contributed by
+         Mario Carneiro, 27-May-2016.) $)
+      mulgt0d $p |- ( ph -> 0 < ( A x. B ) ) $=
+        ( cr wcel cc0 clt wbr cmul co mulgt0 syl22anc ) ABHIJBKLCHIJCKLJBCMNKLD
+        FEGBCOP $.
+    $}
   $}
 
 $(
