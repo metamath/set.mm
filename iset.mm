@@ -65886,6 +65886,19 @@ $)
       letri $p |- ( ( A <_ B /\ B <_ C ) -> A <_ C ) $=
         ( cr wcel cle wbr wa wi letr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
     $}
+
+    $( The product of two positive numbers is positive.  (Contributed by NM,
+       16-May-1999.) $)
+    mulgt0i $p |- ( ( 0 < A /\ 0 < B ) -> 0 < ( A x. B ) ) $=
+      ( cr wcel cc0 clt wbr wa cmul co wi axmulgt0 mp2an ) AEFBEFGAHIGBHIJGABKL
+      HIMCDABNO $.
+
+    mulgt0i.3 $e |- 0 < A $.
+    mulgt0i.4 $e |- 0 < B $.
+    $( The product of two positive numbers is positive.  (Contributed by NM,
+       18-May-1999.) $)
+    mulgt0ii $p |- 0 < ( A x. B ) $=
+      ( cc0 clt wbr cmul co mulgt0i mp2an ) GAHIGBHIGABJKHIEFABCDLM $.
   $}
 
 $(
