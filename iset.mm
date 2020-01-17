@@ -65950,6 +65950,17 @@ $)
         ( cr wcel cc0 clt wbr cmul co mulgt0 syl22anc ) ABHIJBKLCHIJCKLJBCMNKLD
         FEGBCOP $.
     $}
+
+    letrd.3 $e |- ( ph -> C e. RR ) $.
+    ${
+      letrd.4 $e |- ( ph -> A <_ B ) $.
+      letrd.5 $e |- ( ph -> B <_ C ) $.
+      $( Transitive law deduction for 'less than or equal to'.  (Contributed by
+         NM, 20-May-2005.) $)
+      letrd $p |- ( ph -> A <_ C ) $=
+        ( cle wbr cr wcel wa wi letr syl3anc mp2and ) ABCJKZCDJKZBDJKZHIABLMCLM
+        DLMSTNUAOEFGBCDPQR $.
+    $}
   $}
 
 $(
