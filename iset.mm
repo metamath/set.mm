@@ -1,4 +1,4 @@
-$( iset.mm - Version of 16-Jan-2020
+$( iset.mm - Version of 17-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -64630,6 +64630,27 @@ $)
   $}
 
   ${
+    $d A w x y z $.  $d B w z $.
+    $( Addition commutes.  Axiom for real and complex numbers, derived from set
+       theory.  This construction-dependent theorem should not be referenced
+       directly, nor should the proven axiom ~ ax-addcom be used later.
+       Instead, use ~ addcom .
+
+       In the Metamath Proof Explorer this is not a complex number axiom but is
+       instead proved from other axioms.  That proof relies on real number
+       trichotomy and it is not known whether it is possible to prove this from
+       the other axioms without it.  (Contributed by Jim Kingdon,
+       17-Jan-2020.)  (New usage is discouraged.) $)
+    axaddcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) = ( B + A ) ) $=
+      ( vx vy vz vw cv cop caddc co wceq cnr oveq1 oveq2 eqeq12d wcel addcomsrg
+      wa cplr addcnsr cc df-c ad2ant2r ad2ant2l opeq12d ancoms 3eqtr4d 2optocl
+      ) CGZDGZHZEGZFGZHZIJZUNUKIJZKAUNIJZUNAIJZKABIJZBAIJZKCDEFABLLUAUBUKAKUOUQ
+      UPURUKAUNIMUKAUNINOUNBKUQUSURUTUNBAINUNBAIMOUILPZUJLPZRZULLPZUMLPZRZRZUIU
+      LSJZUJUMSJZHULUISJZUMUJSJZHZUOUPVGVHVJVIVKVAVDVHVJKVBVEUIULQUCVBVEVIVKKVA
+      VDUJUMQUDUEUIUJULUMTVFVCUPVLKULUMUIUJTUFUGUH $.
+  $}
+
+  ${
     $d x y z w A $.  $d x y z w B $.
     $( Multiplication of complex numbers is commutative.  Axiom for real and
        complex numbers, derived from set theory.  This construction-dependent
@@ -65036,6 +65057,12 @@ $)
      (New usage is discouraged.)  (Contributed by NM, 22-Nov-1994.) $)
   ax-mulrcl $a |- ( ( A e. RR /\ B e. RR ) -> ( A x. B ) e. RR ) $.
   $( $j restatement 'ax-mulrcl' of 'axmulrcl'; $)
+
+  $( Addition commutes.  Axiom for real and complex numbers, justified by
+     theorem ~ axaddcom .  Proofs should normally use ~ addcom instead.
+     (New usage is discouraged.)  (Contributed by Jim Kingdon, 17-Jan-2020.) $)
+  ax-addcom $a |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) = ( B + A ) ) $.
+  $( $j restatement 'ax-addcom' of 'axaddcom'; $)
 
   $( Multiplication of complex numbers is commutative.  Axiom for real and
      complex numbers, justified by theorem ~ axmulcom .  Proofs should normally
@@ -66035,6 +66062,10 @@ $)
      (Contributed by NM, 5-Jul-2005.) $)
   peano2re $p |- ( A e. RR -> ( A + 1 ) e. RR ) $=
     ( cr wcel c1 caddc co 1re readdcl mpan2 ) ABCDBCADEFBCGADHI $.
+
+  $( Addition commutes.  (Contributed by Jim Kingdon, 17-Jan-2020.) $)
+  addcom $p |- ( ( A e. CC /\ B e. CC ) -> ( A + B ) = ( B + A ) ) $=
+    ( ax-addcom ) ABC $.
 
   $( ` 0 ` is an additive identity.  (Contributed by Jim Kingdon,
      16-Jan-2020.) $)

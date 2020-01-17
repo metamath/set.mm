@@ -48,6 +48,7 @@
 "ax-1re" is used by "1re".
 "ax-addass" is used by "addass".
 "ax-addcl" is used by "addcl".
+"ax-addcom" is used by "addcom".
 "ax-addrcl" is used by "readdcl".
 "ax-cnex" is used by "cnex".
 "ax-cnre" is used by "cnre".
@@ -175,6 +176,7 @@ New usage of "ax-16" is discouraged (0 uses).
 New usage of "ax-1re" is discouraged (1 uses).
 New usage of "ax-addass" is discouraged (1 uses).
 New usage of "ax-addcl" is discouraged (1 uses).
+New usage of "ax-addcom" is discouraged (1 uses).
 New usage of "ax-addrcl" is discouraged (1 uses).
 New usage of "ax-cnex" is discouraged (1 uses).
 New usage of "ax-cnre" is discouraged (1 uses).
@@ -193,6 +195,7 @@ New usage of "ax1rid" is discouraged (0 uses).
 New usage of "ax9vsep" is discouraged (0 uses).
 New usage of "axaddass" is discouraged (0 uses).
 New usage of "axaddcl" is discouraged (0 uses).
+New usage of "axaddcom" is discouraged (0 uses).
 New usage of "axaddrcl" is discouraged (0 uses).
 New usage of "axcnex" is discouraged (0 uses).
 New usage of "axcnre" is discouraged (0 uses).
