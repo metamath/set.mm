@@ -65857,6 +65857,23 @@ $)
     lenlti $p |- ( A <_ B <-> -. B < A ) $=
       ( cr wcel cle wbr clt wn wb lenlt mp2an ) AEFBEFABGHBAIHJKCDABLM $.
 
+    $( 'Less than' implies 'less than or equal to'.  (Contributed by NM,
+       14-May-1999.) $)
+    ltlei $p |- ( A < B -> A <_ B ) $=
+      ( cr wcel clt wbr cle wi ltle mp2an ) AEFBEFABGHABIHJCDABKL $.
+
+    ${
+      ltlei.1 $e |- A < B $.
+      $( 'Less than' implies 'less than or equal to' (inference).  (Contributed
+         by NM, 22-Aug-1999.) $)
+      ltleii $p |- A <_ B $=
+        ( clt wbr cle ltlei ax-mp ) ABFGABHGEABCDIJ $.
+    $}
+
+    $( 'Less than' implies not equal.  (Contributed by NM, 28-Jul-1999.) $)
+    ltnei $p |- ( A < B -> B =/= A ) $=
+      ( cr wcel clt wbr wne ltne mpan ) AEFABGHBAICABJK $.
+
     ${
       lt.3 $e |- C e. RR $.
       $( 'Less than' is transitive.  Theorem I.17 of [Apostol] p. 20.
