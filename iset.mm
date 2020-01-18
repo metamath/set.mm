@@ -66145,6 +66145,52 @@ $)
       ABCDNO $.
   $}
 
+  ${
+    muld.1 $e |- ( ph -> A e. CC ) $.
+    $( ` 0 ` is an additive identity.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addid1d $p |- ( ph -> ( A + 0 ) = A ) $=
+      ( cc wcel cc0 caddc co wceq addid1 syl ) ABDEBFGHBICBJK $.
+
+    $( ` 0 ` is a left identity for addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addid2d $p |- ( ph -> ( 0 + A ) = A ) $=
+      ( cc wcel cc0 caddc co wceq addid2 syl ) ABDEFBGHBICBJK $.
+
+    addcomd.2 $e |- ( ph -> B e. CC ) $.
+    $( Addition commutes.  Based on ideas by Eric Schmidt.  (Contributed by
+       Scott Fenton, 3-Jan-2013.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+    addcomd $p |- ( ph -> ( A + B ) = ( B + A ) ) $=
+      ( cc wcel caddc co wceq addcom syl2anc ) ABFGCFGBCHICBHIJDEBCKL $.
+
+    addcand.3 $e |- ( ph -> C e. CC ) $.
+    $( Commutative/associative law that swaps the first two factors in a triple
+       product.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    mul12d $p |- ( ph -> ( A x. ( B x. C ) ) = ( B x. ( A x. C ) ) ) $=
+      ( cc wcel cmul co wceq mul12 syl3anc ) ABHICHIDHIBCDJKJKCBDJKJKLEFGBCDMN
+      $.
+
+    $( Commutative/associative law that swaps the last two factors in a triple
+       product.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    mul32d $p |- ( ph -> ( ( A x. B ) x. C ) = ( ( A x. C ) x. B ) ) $=
+      ( cc wcel cmul co wceq mul32 syl3anc ) ABHICHIDHIBCJKDJKBDJKCJKLEFGBCDMN
+      $.
+
+    $( Commutative/associative law.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mul31d $p |- ( ph -> ( ( A x. B ) x. C ) = ( ( C x. B ) x. A ) ) $=
+      ( cc wcel cmul co wceq mul31 syl3anc ) ABHICHIDHIBCJKDJKDCJKBJKLEFGBCDMN
+      $.
+
+    mul4d.4 $e |- ( ph -> D e. CC ) $.
+    $( Rearrangement of 4 factors.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    mul4d $p |- ( ph -> ( ( A x. B ) x. ( C x. D ) ) =
+                        ( ( A x. C ) x. ( B x. D ) ) ) $=
+      ( cc wcel cmul co wceq mul4 syl22anc ) ABJKCJKDJKEJKBCLMDELMLMBDLMCELMLMN
+      FGHIBCDEOP $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
