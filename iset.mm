@@ -66100,6 +66100,51 @@ $)
   00id $p |- ( 0 + 0 ) = 0 $=
     ( cc0 cc wcel caddc co wceq 0cn addid1 ax-mp ) ABCAADEAFGAHI $.
 
+  ${
+    mul.1 $e |- A e. CC $.
+    $( ` 0 ` is an additive identity.  (Contributed by NM, 23-Nov-1994.)
+       (Revised by Scott Fenton, 3-Jan-2013.) $)
+    addid1i $p |- ( A + 0 ) = A $=
+      ( cc wcel cc0 caddc co wceq addid1 ax-mp ) ACDAEFGAHBAIJ $.
+
+    $( ` 0 ` is a left identity for addition.  (Contributed by NM,
+       3-Jan-2013.) $)
+    addid2i $p |- ( 0 + A ) = A $=
+      ( cc wcel cc0 caddc co wceq addid2 ax-mp ) ACDEAFGAHBAIJ $.
+
+    mul.2 $e |- B e. CC $.
+    $( Addition commutes.  Based on ideas by Eric Schmidt.  (Contributed by
+       Scott Fenton, 3-Jan-2013.) $)
+    addcomi $p |- ( A + B ) = ( B + A ) $=
+      ( cc wcel caddc co wceq addcom mp2an ) AEFBEFABGHBAGHICDABJK $.
+
+    ${
+      addcomli.2 $e |- ( A + B ) = C $.
+      $( Addition commutes.  (Contributed by Mario Carneiro, 19-Apr-2015.) $)
+      addcomli $p |- ( B + A ) = C $=
+        ( caddc co addcomi eqtri ) BAGHABGHCBAEDIFJ $.
+    $}
+
+    mul.3 $e |- C e. CC $.
+    $( Commutative/associative law that swaps the first two factors in a triple
+       product.  (Contributed by NM, 11-May-1999.)  (Proof shortened by Andrew
+       Salmon, 19-Nov-2011.) $)
+    mul12i $p |- ( A x. ( B x. C ) ) = ( B x. ( A x. C ) ) $=
+      ( cc wcel cmul co wceq mul12 mp3an ) AGHBGHCGHABCIJIJBACIJIJKDEFABCLM $.
+
+    $( Commutative/associative law that swaps the last two factors in a triple
+       product.  (Contributed by NM, 11-May-1999.) $)
+    mul32i $p |- ( ( A x. B ) x. C ) = ( ( A x. C ) x. B ) $=
+      ( cc wcel cmul co wceq mul32 mp3an ) AGHBGHCGHABIJCIJACIJBIJKDEFABCLM $.
+
+    mul4.4 $e |- D e. CC $.
+    $( Rearrangement of 4 factors.  (Contributed by NM, 16-Feb-1995.) $)
+    mul4i $p |- ( ( A x. B ) x. ( C x. D ) ) =
+               ( ( A x. C ) x. ( B x. D ) ) $=
+      ( cc wcel cmul co wceq mul4 mp4an ) AIJBIJCIJDIJABKLCDKLKLACKLBDKLKLMEFGH
+      ABCDNO $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
