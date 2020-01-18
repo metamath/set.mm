@@ -1,4 +1,4 @@
-$( iset.mm - Version of 14-Jan-2020
+$( iset.mm - Version of 16-Jan-2020
 
 Created by Mario Carneiro, starting from the 21-Jan-2015 version of
 set.mm (with updates since then, including copying entire theorems
@@ -64799,6 +64799,25 @@ $)
   $}
 
   ${
+    $d A x y $.
+    $( ` 0 ` is an identity element for real addition.  Axiom for real and
+       complex numbers, derived from set theory.  This construction-dependent
+       theorem should not be referenced directly; instead, use ~ ax-0id .
+
+       In the Metamath Proof Explorer this is not a complex number axiom but is
+       instead proved from other axioms.  That proof relies on excluded middle
+       and it is not known whether it is possible to prove this from the other
+       axioms without excluded middle.  (Contributed by Jim Kingdon,
+       16-Jan-2020.)  (New usage is discouraged.) $)
+    ax0id $p |- ( A e. CC -> ( A + 0 ) = A ) $=
+      ( vx vy cv cop cc0 caddc co wceq cnr cc df-c oveq1 id eqeq12d wcel c0r 0r
+      cplr 0idsr wa addcnsr mpanr12 eqcomi oveq2d adantr adantl opeq12d 3eqtr3d
+      df-0 a1i optocl ) BDZCDZEZFGHZUOIAFGHZAIBCAJJKLUOAIZUPUQUOAUOAFGMURNOUMJP
+      ZUNJPZUAZUOQQEZGHZUMQSHZUNQSHZEZUPUOVAQJPZVGVCVFIRRUMUNQQUBUCVAVBFUOGVBFI
+      VAFVBUJUDUKUEVAVDUMVEUNUSVDUMIUTUMTUFUTVEUNIUSUNTUGUHUIUL $.
+  $}
+
+  ${
     $d x y A $.  $d x y z $.
     $( Existence of negative of real number.  Axiom for real and complex
        numbers, derived from set theory.  This construction-dependent theorem
@@ -65067,6 +65086,14 @@ $)
      29-Jan-1995.) $)
   ax-1rid $a |- ( A e. RR -> ( A x. 1 ) = A ) $.
   $( $j restatement 'ax-1rid' of 'ax1rid'; $)
+
+  $( ` 0 ` is an identity element for real addition.  Axiom for real and
+     complex numbers, justified by theorem ~ ax0id .
+
+     Proofs should normally use ~ addid1 instead.  (New usage is discouraged.)
+     (Contributed by Jim Kingdon, 16-Jan-2020.) $)
+  ax-0id $a |- ( A e. CC -> ( A + 0 ) = A ) $.
+  $( $j restatement 'ax-0id' of 'ax0id'; $)
 
   ${
     $d x A $.
@@ -65634,6 +65661,245 @@ $)
       VCVRXEWBTVSVRXEALSZXHVOWBXEXHTVRXEAWKFZXHXEXIVSABWKEUOVEALUQURUSVRALAVFVA
       XHWBVBVDVGVHVIVHVIVRVSWBWAXAWRWAXAWJWQXAWJVRVSWJXAVPWBXCVJVKVQWTVLVMVN $.
   $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+      Restate the ordering postulates with extended real "less than"
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Real number less-than is irreflexive.  Axiom for real and complex numbers,
+     derived from set theory.  This restates ~ ax-pre-ltirr with ordering on
+     the extended reals.  New proofs should use ~ ltnr instead for naming
+     consistency.  (New usage is discouraged.)  (Contributed by Jim Kingdon,
+     15-Jan-2020.) $)
+  axltirr $p |- ( A e. RR -> -. A < A ) $=
+    ( cr wcel clt wbr cltrr ax-pre-ltirr wb ltxrlt anidms mtbird ) ABCZAADEZAAF
+    EZAGLMNHAAIJK $.
+
+  $( Real number less-than is weakly linear.  Axiom for real and complex
+     numbers, derived from set theory.  This restates ~ ax-pre-ltwlin with
+     ordering on the extended reals.  (Contributed by Jim Kingdon,
+     15-Jan-2020.) $)
+  axltwlin $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+      ( A < B -> ( A < C \/ C < B ) ) ) $=
+    ( cr wcel w3a clt wbr wo wi cltrr ax-pre-ltwlin wb ltxrlt 3adant3
+    3adant2 ancoms 3adant1 orbi12d imbi12d mpbird ) ADEZBDEZCDEZFZABG
+    HZACGHZCBGHZIZJABKHZACKHZCBKHZIZJABCLUEUFUJUIUMUBUCUFUJMUDABNOUEU
+    GUKUHULUBUDUGUKMUCACNPUCUDUHULMZUBUDUCUNCBNQRSTUA $.
+
+  $( Ordering on reals is transitive.  Axiom for real and complex numbers,
+     derived from set theory.  This restates ~ ax-pre-lttrn with ordering on
+     the extended reals.  New proofs should use ~ lttr instead for naming
+     consistency.  (New usage is discouraged.)  (Contributed by NM,
+     13-Oct-2005.) $)
+  axlttrn $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A < B /\ B < C ) -> A < C ) ) $=
+    ( cr wcel w3a cltrr wbr wa clt ax-pre-lttrn 3adant3 3adant1 anbi12d 3adant2
+    wb ltxrlt 3imtr4d ) ADEZBDEZCDEZFZABGHZBCGHZIACGHZABJHZBCJHZIACJHZABCKUBUFU
+    CUGUDSTUFUCPUAABQLTUAUGUDPSBCQMNSUAUHUEPTACQOR $.
+
+  $( Ordering property of addition on reals.  Axiom for real and complex
+     numbers, derived from set theory.  (This restates ~ ax-pre-ltadd with
+     ordering on the extended reals.)  (Contributed by NM, 13-Oct-2005.) $)
+  axltadd $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                ( A < B -> ( C + A ) < ( C + B ) ) ) $=
+    ( cr wcel w3a cltrr wbr caddc co clt ax-pre-ltadd wb ltxrlt 3adant3 readdcl
+    wa syl2an 3impdi 3coml 3imtr4d ) ADEZBDEZCDEZFABGHZCAIJZCBIJZGHZABKHZUFUGKH
+    ZABCLUBUCUIUEMUDABNOUDUBUCUJUHMZUDUBUCUKUDUBQUFDEUGDEUKUDUCQCAPCBPUFUGNRSTU
+    A $.
+
+  $( The product of two positive reals is positive.  Axiom for real and complex
+     numbers, derived from set theory.  (This restates ~ ax-pre-mulgt0 with
+     ordering on the extended reals.)  (Contributed by NM, 13-Oct-2005.) $)
+  axmulgt0 $p |- ( ( A e. RR /\ B e. RR ) ->
+                ( ( 0 < A /\ 0 < B ) -> 0 < ( A x. B ) ) ) $=
+    ( cr wcel wa cc0 cltrr wbr cmul co clt ax-pre-mulgt0 wb 0re ltxrlt bi2anan9
+    mpan remulcl sylancr 3imtr4d ) ACDZBCDZEZFAGHZFBGHZEFABIJZGHZFAKHZFBKHZEFUF
+    KHZABLUAUHUDUBUIUEFCDZUAUHUDMNFAOQUKUBUIUEMNFBOQPUCUKUFCDUJUGMNABRFUFOST $.
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Ordering on reals
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Alias for ~ axlttrn , for naming consistency with ~ lttri .  New proofs
+     should generally use this instead of ~ ax-pre-lttrn .  (Contributed by NM,
+     10-Mar-2008.) $)
+  lttr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A < B /\ B < C ) -> A < C ) ) $=
+    ( axlttrn ) ABCD $.
+
+  $( The product of two positive numbers is positive.  (Contributed by NM,
+     10-Mar-2008.) $)
+  mulgt0 $p |- ( ( ( A e. RR /\ 0 < A ) /\
+                ( B e. RR /\ 0 < B ) ) -> 0 < ( A x. B ) ) $=
+    ( cr wcel cc0 clt wbr cmul co wa axmulgt0 imp an4s ) ACDZBCDZEAFGZEBFGZEABH
+    IFGZNOJPQJRABKLM $.
+
+  $( 'Less than or equal to' expressed in terms of 'less than'.  (Contributed
+     by NM, 13-May-1999.) $)
+  lenlt $p |- ( ( A e. RR /\ B e. RR ) -> ( A <_ B <-> -. B < A ) ) $=
+    ( cr wcel cxr cle wbr clt wn wb rexr xrlenlt syl2an ) ACDAEDBEDABFGBAHGIJBC
+    DAKBKABLM $.
+
+  $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
+  ltnr $p |- ( A e. RR -> -. A < A ) $=
+    ( axltirr ) AB $.
+
+  ${
+    $d x y z $.
+    $( 'Less than' is a strict ordering.  (Contributed by NM, 19-Jan-1997.) $)
+    ltso $p |- < Or RR $=
+      ( vx vy vz cr clt wor wpo cv wbr wo wi wral wtru wcel wn ltnr adantl lttr
+      w3a wa ispod trud axltwlin rgen3 df-iso mpbir2an ) DEFDEGZAHZBHZEIZUHCHZE
+      IZUKUIEIJKZCDLBDLADLUGMABCDEUHDNZUHUHEIOMUHPQUNUIDNUKDNSUJUIUKEITULKMUHUI
+      UKRQUAUBUMABCDDDUHUIUKUCUDABCDEUEUF $.
+  $}
+
+  $( 'Greater than' is a strict ordering.  (Contributed by JJ, 11-Oct-2018.) $)
+  gtso $p |- `' < Or RR $=
+    ( vx cr clt wor ccnv ltso cc0 wcel cv wex wb 0re elex2 cnvsom mp2b mpbi ) B
+    CDZBCEDZFGBHAIBHAJQRKLAGBMABCNOP $.
+
+  $( Transitive law, weaker form of ` ( A < B /\ B <_ C ) -> A < C ` .
+     (Contributed by AV, 14-Oct-2018.) $)
+  ltleletr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+                   ( ( A < B /\ B <_ C ) -> A <_ C ) ) $=
+    ( cr wcel w3a clt wbr cle wn wi wa lttr 3coml expcomd con3 wb lenlt 3adant1
+    syl6 3adant2 imbi12d sylibrd impd ) ADEZBDEZCDEZFZABGHZBCIHZACIHZUHUICBGHZJ
+    ZCAGHZJZKZUJUKKUHUIUNULKUPUHUNUIULUGUEUFUNUILULKCABMNOUNULPTUHUJUMUKUOUFUGU
+    JUMQUEBCRSUEUGUKUOQUFACRUAUBUCUD $.
+
+  $( Transitive law.  (Contributed by NM, 12-Nov-1999.) $)
+  letr $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+             ( ( A <_ B /\ B <_ C ) -> A <_ C ) ) $=
+    ( cr w3a clt wbr wo wn cle wa wi axltwlin 3coml orcom syl6ib con3d wb lenlt
+    wcel 3adant3 3adant1 anbi12d ioran syl6bbr 3adant2 3imtr4d ) ADTZBDTZCDTZEZ
+    BAFGZCBFGZHZIZCAFGZIZABJGZBCJGZKZACJGZUKUPUNUKUPUMULHZUNUJUHUIUPVBLCABMNUMU
+    LOPQUKUTULIZUMIZKUOUKURVCUSVDUHUIURVCRUJABSUAUIUJUSVDRUHBCSUBUCULUMUDUEUHUJ
+    VAUQRUIACSUFUG $.
+
+  $( 'Less than or equal to' is reflexive.  (Contributed by NM,
+     18-Aug-1999.) $)
+  leid $p |- ( A e. RR -> A <_ A ) $=
+    ( cr wcel cle wbr clt wn ltnr wb lenlt anidms mpbird ) ABCZAADEZAAFEGZAHMNO
+    IAAJKL $.
+
+  $( 'Less than' implies not equal.  (Contributed by NM, 9-Oct-1999.)  (Revised
+     by Mario Carneiro, 16-Sep-2015.) $)
+  ltne $p |- ( ( A e. RR /\ A < B ) -> B =/= A ) $=
+    ( cr wcel clt wbr wne wn wceq ltnr breq2 notbid syl5ibrcom necon2ad imp ) A
+    CDZABEFZBAGPQBAPQHBAIZAAEFZHAJRQSBAAEKLMNO $.
+
+  $( 'Less than' is not symmetric.  (Contributed by NM, 8-Jan-2002.) $)
+  ltnsym $p |- ( ( A e. RR /\ B e. RR ) -> ( A < B -> -. B < A ) ) $=
+    ( cr wcel wa clt wbr wi wn lttr 3anidm13 expd ltnr adantr con3 ee21 ) ACDZB
+    CDZEZABFGZBAFGZAAFGZHUBIZUAISTUAUBQRTUAEUBHABAJKLQUCRAMNUAUBOP $.
+
+  $( 'Less than' implies 'less than or equal to'.  (Contributed by NM,
+     25-Aug-1999.) $)
+  ltle $p |- ( ( A e. RR /\ B e. RR ) ->
+               ( A < B -> A <_ B ) ) $=
+    ( cr wcel wa clt wbr wn cle ltnsym lenlt sylibrd ) ACDBCDEABFGBAFGHABIGABJA
+    BKL $.
+
+  $( 'Less than' is antisymmetric and irreflexive.  (Contributed by NM,
+     13-Aug-2005.)  (Proof shortened by Andrew Salmon, 19-Nov-2011.) $)
+  ltnsym2 $p |- ( ( A e. RR /\ B e. RR ) -> -. ( A < B /\ B < A ) ) $=
+    ( cr clt wor wcel wa wbr wn ltso so2nr mpan ) CDEACFBCFGABDHBADHGIJCABDKL
+    $.
+
+  $( Equality implies 'less than or equal to'.  (Contributed by NM,
+     4-Apr-2005.) $)
+  eqle $p |- ( ( A e. RR /\ A = B ) -> A <_ B ) $=
+    ( cr wcel cle wbr wceq leid breq2 biimpac sylan ) ACDAAEFZABGZABEFZAHMLNABA
+    EIJK $.
+
+  ${
+    lt.1 $e |- A e. RR $.
+    $( 'Less than' is irreflexive.  (Contributed by NM, 18-Aug-1999.) $)
+    ltnri $p |- -. A < A $=
+      ( cr wcel clt wbr wn ltnr ax-mp ) ACDAAEFGBAHI $.
+
+    $( Equality implies 'less than or equal to'.  (Contributed by NM,
+       23-May-1999.)  (Revised by Alexander van der Vekens, 20-Mar-2018.) $)
+    eqlei $p |- ( A = B -> A <_ B ) $=
+      ( cr wcel wceq cle wbr eqle mpan ) ADEABFABGHCABIJ $.
+
+    $( Equality implies 'less than or equal to'.  (Contributed by Alexander van
+       der Vekens, 20-Mar-2018.) $)
+    eqlei2 $p |- ( B = A -> B <_ A ) $=
+      ( cr wcel wceq cle wbr eleq1 mpbiri eqle mpancom ) BDEZBAFZBAGHNMADECBADI
+      JBAKL $.
+
+    ${
+      ltneii.2 $e |- A < B $.
+      $( 'Less than' implies not equal.  (Contributed by Mario Carneiro,
+         30-Sep-2013.) $)
+      gtneii $p |- B =/= A $=
+        ( cr wcel clt wbr wne ltne mp2an ) AEFABGHBAICDABJK $.
+
+      $( 'Greater than' implies not equal.  (Contributed by Mario Carneiro,
+         16-Sep-2015.) $)
+      ltneii $p |- A =/= B $=
+        ( gtneii necomi ) BAABCDEF $.
+    $}
+
+    lt.2 $e |- B e. RR $.
+    $( 'Less than' is not symmetric.  (Contributed by NM, 6-May-1999.) $)
+    ltnsymi $p |- ( A < B -> -. B < A ) $=
+      ( cr wcel clt wbr wn wi ltnsym mp2an ) AEFBEFABGHBAGHIJCDABKL $.
+
+    $( 'Less than or equal to' in terms of 'less than'.  (Contributed by NM,
+       24-May-1999.) $)
+    lenlti $p |- ( A <_ B <-> -. B < A ) $=
+      ( cr wcel cle wbr clt wn wb lenlt mp2an ) AEFBEFABGHBAIHJKCDABLM $.
+
+    $( 'Less than' implies 'less than or equal to'.  (Contributed by NM,
+       14-May-1999.) $)
+    ltlei $p |- ( A < B -> A <_ B ) $=
+      ( cr wcel clt wbr cle wi ltle mp2an ) AEFBEFABGHABIHJCDABKL $.
+
+    ${
+      ltlei.1 $e |- A < B $.
+      $( 'Less than' implies 'less than or equal to' (inference).  (Contributed
+         by NM, 22-Aug-1999.) $)
+      ltleii $p |- A <_ B $=
+        ( clt wbr cle ltlei ax-mp ) ABFGABHGEABCDIJ $.
+    $}
+
+    $( 'Less than' implies not equal.  (Contributed by NM, 28-Jul-1999.) $)
+    ltnei $p |- ( A < B -> B =/= A ) $=
+      ( cr wcel clt wbr wne ltne mpan ) AEFABGHBAICABJK $.
+
+    ${
+      lt.3 $e |- C e. RR $.
+      $( 'Less than' is transitive.  Theorem I.17 of [Apostol] p. 20.
+         (Contributed by NM, 14-May-1999.) $)
+      lttri $p |- ( ( A < B /\ B < C ) -> A < C ) $=
+        ( cr wcel clt wbr wa wi lttr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
+
+      $( 'Less than or equal to' is transitive.  (Contributed by NM,
+         14-May-1999.) $)
+      letri $p |- ( ( A <_ B /\ B <_ C ) -> A <_ C ) $=
+        ( cr wcel cle wbr wa wi letr mp3an ) AGHBGHCGHABIJBCIJKACIJLDEFABCMN $.
+    $}
+  $}
+
+$(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+           Initial properties of the complex numbers
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( ` 0 ` is an additive identity.  This used to be one of our complex number
+     axioms, until it was found to be dependent on the others.  Based on ideas
+     by Eric Schmidt.  (Contributed by Scott Fenton, 3-Jan-2013.)  (Proof
+     shortened by Mario Carneiro, 27-May-2016.) $)
+  addid1 $p |- ( A e. CC -> ( A + 0 ) = A ) $=
+    ( ax-0id ) AB $.
 
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#

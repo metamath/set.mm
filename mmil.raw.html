@@ -1460,6 +1460,19 @@ is biconditional, but just for natural numbers.</TD>
 </TR>
 
 <TR>
+<TD>ordtr2 , ontr2</TD>
+<TD><I>none</I></TD>
+<TD>See also ordelpss in set.mm</TD>
+</TR>
+
+<TR>
+<TD>ordtr3</TD>
+<TD><I>none</I></TD>
+<TD>This is weak linearity of ordinals, which presumably
+implies excluded middle by ~ ordsoexmid .</TD>
+</TR>
+
+<TR>
 <TD>ordtri2or</TD>
 <TD><I>none</I></TD>
 <TD>Implies excluded middle as shown at ~ ordtri2orexmid .</TD>
@@ -1505,6 +1518,11 @@ a similar result via theorems such as ~ oneluni or ~ ssequn1 .</TD>
 <TR>
 <TD>opswap</TD>
 <TD>~ opswapg </TD>
+</TR>
+
+<TR>
+<TD>cnvso</TD>
+<TD>~ cnvsom </TD>
 </TR>
 
 <TR>
@@ -2605,7 +2623,7 @@ figured out what would be involved in proving them for iset.mm.</TD>
 </TR>
 
 <TR>
-<TD>axpre-sup , axpre-sup</TD>
+<TD>axpre-sup , ax-pre-sup , axsup</TD>
 <TD><I>none yet</I></TD>
 <TD>The Least Upper Bound property for sets of real numbers does not hold,
 in general, without excluded middle. If we want a set of axioms for real
@@ -2632,12 +2650,109 @@ favor of theorems in deduction form.</TD>
 <TD>Lightly used in set.mm</TD>
 </TR>
 
+<TR>
+<TD>ltnle , ltnlei</TD>
+<TD>~ lenlt </TD>
+</TR>
+
+<TR>
+<TD>lttri2 , lttri3 , lttri4 , letri3</TD>
+<TD><I>none</I></TD>
+<TD>Real number trichotomy is not provable.</TD>
+</TR>
+
+<TR>
+<TD>leloe , eqlelt , leloei</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>leltne</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>lelttr , lelttri</TD>
+<TD><I>none yet</I></TD>
+<TD>This should be provable, as it is part of Definition 11.2.7(vi) of
+[HoTT], p. (varies). But the set.mm proof does not work as-is.</TD>
+</TR>
+
+<TR>
+<TD>ltletr , ltletri</TD>
+<TD><I>none yet</I></TD>
+<TD>This should be provable, as it is part of Definition 11.2.7(vi) of
+[HoTT], p. (varies). But the set.mm proof does not work as-is.</TD>
+</TR>
+
+<TR>
+<TD>ltneOLD</TD>
+<TD>~ ltne </TD>
+</TR>
+
+<TR>
+<TD>letric , letrii</TD>
+<TD><I>none</I></TD>
+<TD>A form of real number trichotomy</TD>
+</TR>
+
+<TR>
+<TD>ltlen , ltleni</TD>
+<TD><I>none</I></TD>
+</TR>
+
+<TR>
+<TD>ltadd2</TD>
+<TD><I>none yet</I></TD>
+<TD>This will be provable based on additive inverse once we have
+addcom and a few other prerequisites. We'll probably end up moving
+it down to the "Ordering on reals (cont.)" section.
+</TR>
+
+<TR>
+<TD>ne0gt0</TD>
+<TD><I>none</I></TD>
+<TD>We presumably could prove this if we changed "not equal to zero"
+to "apart from zero".</TD>
+</TR>
+
+<TR>
+<TD>lecasei , lelttric , ltlecasei</TD>
+<TD><I>none</I></TD>
+<TD>These are real number trichotomy</TD>
+</TR>
+
+<TR>
+<TD>lttri2i</TD>
+<TD><I>none</I></TD>
+<TD>This can be read as "two real numbers are non-equal if and
+only if they are apart" which relies on excluded middle</TD>
+</TR>
+
+<TR>
+<TD>lttri3i</TD>
+<TD><I>none</I></TD>
+<TD>The ` ( -. A < B /\ -. B < A ) -> A = B ` direction (which can
+also be read as "if two real numbers are not apart, then they are
+equal) is proved via trichotomy in set.mm</TD>
+</TR>
+
+<TR>
+<TD>letri3i</TD>
+<TD><I>none</I></TD>
+<TD>Equivalent to lttri3i by ~ lenlt </TD>
+</TR>
+
 </TABLE>
 
 <HR NOSHADE SIZE=1><A NAME="bib"></A><B><FONT
 COLOR="#006633">Bibliography</FONT></B>&nbsp;&nbsp;&nbsp;
 
 <OL>
+
+<LI><A NAME="Apostol"></A> [Apostol] Apostol, Tom M.,
+<I>Calculus,</I> vol. 1, 2nd ed.,
+John Wiley &amp; Sons Inc. (1967) [QA300.A645 1967].</LI>
 
 <LI><A NAME="Bauer"></A> [Bauer] Bauer, Andrej, &quot;Five stages of
 accepting constructive mathematics,&quot; <I>Bulletin (New Series) of

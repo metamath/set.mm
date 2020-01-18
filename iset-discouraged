@@ -43,6 +43,7 @@
 "alrimih" is used by "sb4or".
 "alrimih" is used by "sb6rf".
 "alrimih" is used by "sbbid".
+"ax-0id" is used by "addid1".
 "ax-10o" is used by "ax10".
 "ax-1re" is used by "1re".
 "ax-addass" is used by "addass".
@@ -57,6 +58,8 @@
 "ax-mulcl" is used by "mulcl".
 "ax-mulcom" is used by "mulcom".
 "ax-mulrcl" is used by "remulcl".
+"axltirr" is used by "ltnr".
+"axlttrn" is used by "lttr".
 "axresscn" is used by "ax1cn".
 "df-ilim" is used by "dflim2".
 "df-iom" is used by "dfom3".
@@ -165,6 +168,7 @@ New usage of "19.9hd" is discouraged (2 uses).
 New usage of "4syl" is discouraged (6 uses).
 New usage of "a9evsep" is discouraged (1 uses).
 New usage of "alrimih" is discouraged (25 uses).
+New usage of "ax-0id" is discouraged (1 uses).
 New usage of "ax-10o" is discouraged (1 uses).
 New usage of "ax-11o" is discouraged (0 uses).
 New usage of "ax-16" is discouraged (0 uses).
@@ -180,6 +184,7 @@ New usage of "ax-mulass" is discouraged (1 uses).
 New usage of "ax-mulcl" is discouraged (1 uses).
 New usage of "ax-mulcom" is discouraged (1 uses).
 New usage of "ax-mulrcl" is discouraged (1 uses).
+New usage of "ax0id" is discouraged (0 uses).
 New usage of "ax0lt1" is discouraged (0 uses).
 New usage of "ax10" is discouraged (0 uses).
 New usage of "ax1cn" is discouraged (0 uses).
@@ -194,6 +199,8 @@ New usage of "axcnre" is discouraged (0 uses).
 New usage of "axdistr" is discouraged (0 uses).
 New usage of "axi2m1" is discouraged (0 uses).
 New usage of "axicn" is discouraged (0 uses).
+New usage of "axltirr" is discouraged (1 uses).
+New usage of "axlttrn" is discouraged (1 uses).
 New usage of "axmulass" is discouraged (0 uses).
 New usage of "axmulcl" is discouraged (0 uses).
 New usage of "axmulcom" is discouraged (0 uses).
