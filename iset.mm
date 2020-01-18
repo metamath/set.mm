@@ -66095,6 +66095,11 @@ $)
       AQSTVQVTRBGHZBVQVRRBGWLPVQBOFZWNBIVPWOVIWHNBQSTUQURUSABCGKUT $.
   $}
 
+  $( ` 0 ` is its own additive identity.  (Contributed by Scott Fenton,
+     3-Jan-2013.) $)
+  00id $p |- ( 0 + 0 ) = 0 $=
+    ( cc0 cc wcel caddc co wceq 0cn addid1 ax-mp ) ABCAADEAFGAHI $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
