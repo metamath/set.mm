@@ -66072,6 +66072,29 @@ $)
   addid1 $p |- ( A e. CC -> ( A + 0 ) = A ) $=
     ( ax-0id ) AB $.
 
+  $( ` 0 ` is a left identity for addition.  (Contributed by Scott Fenton,
+     3-Jan-2013.) $)
+  addid2 $p |- ( A e. CC -> ( 0 + A ) = A ) $=
+    ( cc wcel cc0 caddc co wceq 0cn addcom mpan2 addid1 eqtr3d ) ABCZADEFZDAEFZ
+    AMDBCNOGHADIJAKL $.
+
+  ${
+    $d A x $.  $d B x $.  $d C x $.
+    $( Cancellation law for addition over the reals.  (Contributed by Scott
+       Fenton, 3-Jan-2013.) $)
+    readdcan $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
+        ( ( C + A ) = ( C + B ) <-> A = B ) ) $=
+      ( vx cr wcel caddc co wceq wa oveq2 recnd addassd adantr cc oveq1d addid2
+      cc0 syl eqtrd w3a cv wi ax-rnegex 3ad2ant3 adantl wb simprl simpl3 simpl1
+      simpl2 eqeq12d mpbird addcom syl2anc simplrr 3eqtr3d ex rexlimddv impbid1
+      wrex eqtr3d ) AEFZBEFZCEFZUAZCAGHZCBGHZIZABIZVFCDUBZGHZRIZVIVJUCDEVEVCVMD
+      EVAVDDCUDUEVFVKEFZVMJZJZVIVJVPVIJZVKCGHZAGHZVRBGHZABVQVSVTIZVKVGGHZVKVHGH
+      ZIZVIWDVPVGVHVKGKUFVPWAWDUGVIVPVSWBVTWCVPVKCAVPVKVFVNVMUHLZVPCVCVDVEVOUIL
+      ZVPAVCVDVEVOUJLZMVPVKCBWEWFVPBVCVDVEVOUKLZMULNUMVQVSRAGHZAVQVRRAGVQVLVRRV
+      QCOFZVKOFZVLVRIVPWJVIWFNVPWKVIWENCVKUNUOVFVNVMVIUPVBZPVQAOFZWIAIVPWMVIWGN
+      AQSTVQVTRBGHZBVQVRRBGWLPVQBOFZWNBIVPWOVIWHNBQSTUQURUSABCGKUT $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
