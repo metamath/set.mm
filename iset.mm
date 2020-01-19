@@ -65710,10 +65710,9 @@ $)
      15-Jan-2020.) $)
   axltwlin $p |- ( ( A e. RR /\ B e. RR /\ C e. RR ) ->
       ( A < B -> ( A < C \/ C < B ) ) ) $=
-    ( cr wcel w3a clt wbr wo wi cltrr ax-pre-ltwlin wb ltxrlt 3adant3
-    3adant2 ancoms 3adant1 orbi12d imbi12d mpbird ) ADEZBDEZCDEZFZABG
-    HZACGHZCBGHZIZJABKHZACKHZCBKHZIZJABCLUEUFUJUIUMUBUCUFUJMUDABNOUEU
-    GUKUHULUBUDUGUKMUCACNPUCUDUHULMZUBUDUCUNCBNQRSTUA $.
+    ( cr wcel w3a cltrr wbr wo clt ax-pre-ltwlin ltxrlt 3adant3 3adant2 3adant1
+    wb ancoms orbi12d 3imtr4d ) ADEZBDEZCDEZFZABGHZACGHZCBGHZIABJHZACJHZCBJHZIA
+    BCKTUAUGUDPUBABLMUCUHUEUIUFTUBUHUEPUAACLNUAUBUIUFPZTUBUAUJCBLQORS $.
 
   $( Ordering on reals is transitive.  Axiom for real and complex numbers,
      derived from set theory.  This restates ~ ax-pre-lttrn with ordering on
