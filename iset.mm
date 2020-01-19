@@ -66560,6 +66560,44 @@ $)
       ZAFLFUPBKUQURAFUPBUOUARUNCKZURUKAFUSUOUJBUNCUIIUBUCRDEAUDUEUF $.
   $}
 
+  $( Equality theorem for negatives.  (Contributed by NM, 10-Feb-1995.) $)
+  negeq $p |- ( A = B -> -u A = -u B ) $=
+    ( wceq cc0 cmin co cneg oveq2 df-neg 3eqtr4g ) ABCDAEFDBEFAGBGABDEHAIBIJ $.
+
+  ${
+    negeqi.1 $e |- A = B $.
+    $( Equality inference for negatives.  (Contributed by NM, 14-Feb-1995.) $)
+    negeqi $p |- -u A = -u B $=
+      ( wceq cneg negeq ax-mp ) ABDAEBEDCABFG $.
+  $}
+
+  ${
+    negeqd.1 $e |- ( ph -> A = B ) $.
+    $( Equality deduction for negatives.  (Contributed by NM, 14-May-1999.) $)
+    negeqd $p |- ( ph -> -u A = -u B ) $=
+      ( wceq cneg negeq syl ) ABCEBFCFEDBCGH $.
+  $}
+
+  ${
+    $d y z A $.  $d y ph $.  $d x y z $.
+    nfnegd.1 $e |- ( ph -> F/_ x A ) $.
+    $( Deduction version of ~ nfneg .  (Contributed by NM, 29-Feb-2008.)
+       (Revised by Mario Carneiro, 15-Oct-2016.) $)
+    nfnegd $p |- ( ph -> F/_ x -u A ) $=
+      ( cneg cc0 cmin co df-neg nfcvd nfovd nfcxfrd ) ABCEFCGHCIABFCGABFJABGJDK
+      L $.
+  $}
+
+  ${
+    $d y A $.  $d x y $.
+    nfneg.1 $e |- F/_ x A $.
+    $( Bound-variable hypothesis builder for the negative of a complex number.
+       (Contributed by NM, 12-Jun-2005.)  (Revised by Mario Carneiro,
+       15-Oct-2016.) $)
+    nfneg $p |- F/_ x -u A $=
+      ( cneg wnfc wtru a1i nfnegd trud ) ABDEFABABEFCGHI $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
