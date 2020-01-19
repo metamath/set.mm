@@ -67284,6 +67284,490 @@ $)
       MLKLNEFGHABCDOP $.
   $}
 
+  $( Alternate proof of ~ 0re .  (Contributed by NM, 19-Feb-2005.)
+     (Proof modification is discouraged.)  (New usage is discouraged.) $)
+  0reALT $p |- 0 e. RR $=
+    ( c1 cmin co cc0 cr ax-1cn subidi 1re resubcli eqeltrri ) AABCDEAFGAAHHIJ
+    $.
+
+  ${
+    negidd.1 $e |- ( ph -> A e. CC ) $.
+    $( Closure law for negative.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    negcld $p |- ( ph -> -u A e. CC ) $=
+      ( cc wcel cneg negcl syl ) ABDEBFDECBGH $.
+
+    $( Subtraction of a number from itself.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subidd $p |- ( ph -> ( A - A ) = 0 ) $=
+      ( cc wcel cmin co cc0 wceq subid syl ) ABDEBBFGHICBJK $.
+
+    $( Identity law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subid1d $p |- ( ph -> ( A - 0 ) = A ) $=
+      ( cc wcel cc0 cmin co wceq subid1 syl ) ABDEBFGHBICBJK $.
+
+    $( Addition of a number and its negative.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    negidd $p |- ( ph -> ( A + -u A ) = 0 ) $=
+      ( cc wcel cneg caddc co cc0 wceq negid syl ) ABDEBBFGHIJCBKL $.
+
+    $( A number is equal to the negative of its negative.  Theorem I.4 of
+       [Apostol] p. 18.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    negnegd $p |- ( ph -> -u -u A = A ) $=
+      ( cc wcel cneg wceq negneg syl ) ABDEBFFBGCBHI $.
+
+    $( A number is zero iff its negative is zero.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    negeq0d $p |- ( ph -> ( A = 0 <-> -u A = 0 ) ) $=
+      ( cc wcel cc0 wceq cneg wb negeq0 syl ) ABDEBFGBHFGICBJK $.
+
+    $( A number is nonzero iff its negative is nonzero.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    negne0bd $p |- ( ph -> ( A =/= 0 <-> -u A =/= 0 ) ) $=
+      ( cc0 cneg negeq0d necon3bid ) ABDBEDABCFG $.
+
+    ${
+      negcon1d.2 $e |- ( ph -> B e. CC ) $.
+      $( Contraposition law for unary minus.  Deduction form of ~ negcon1 .
+         (Contributed by David Moews, 28-Feb-2017.) $)
+      negcon1d $p |- ( ph -> ( -u A = B <-> -u B = A ) ) $=
+        ( cc wcel cneg wceq wb negcon1 syl2anc ) ABFGCFGBHCICHBIJDEBCKL $.
+    $}
+
+    ${
+      negcon1ad.2 $e |- ( ph -> -u A = B ) $.
+      $( Contraposition law for unary minus.  One-way deduction form of
+         ~ negcon1 .  (Contributed by David Moews, 28-Feb-2017.) $)
+      negcon1ad $p |- ( ph -> -u B = A ) $=
+        ( cneg wceq cc negcld eqeltrrd negcon1d mpbid ) ABFZCGCFBGEABCDAMCHEABD
+        IJKL $.
+    $}
+
+    ${
+      neg11ad.2 $e |- ( ph -> B e. CC ) $.
+      $( The negatives of two complex numbers are equal iff they are equal.
+         Deduction form of ~ neg11 .  Generalization of ~ neg11d .
+         (Contributed by David Moews, 28-Feb-2017.) $)
+      neg11ad $p |- ( ph -> ( -u A = -u B <-> A = B ) ) $=
+        ( cc wcel cneg wceq wb neg11 syl2anc ) ABFGCFGBHCHIBCIJDEBCKL $.
+    $}
+
+    ${
+      negned.2 $e |- ( ph -> B e. CC ) $.
+      negned.3 $e |- ( ph -> A =/= B ) $.
+      $( If two complex numbers are unequal, so are their negatives.
+         Contrapositive of ~ neg11d .  (Contributed by David Moews,
+         28-Feb-2017.) $)
+      negned $p |- ( ph -> -u A =/= -u B ) $=
+        ( cneg wne neg11ad necon3bid mpbird ) ABGZCGZHBCHFALMBCABCDEIJK $.
+    $}
+
+    ${
+      negne0d.2 $e |- ( ph -> A =/= 0 ) $.
+      $( The negative of a nonzero number is nonzero.  (Contributed by Mario
+         Carneiro, 27-May-2016.) $)
+      negne0d $p |- ( ph -> -u A =/= 0 ) $=
+        ( cc0 wne cneg negne0bd mpbid ) ABEFBGEFDABCHI $.
+    $}
+
+    ${
+      negrebd.2 $e |- ( ph -> -u A e. RR ) $.
+      $( The negative of a real is real.  (Contributed by Mario Carneiro,
+         28-May-2016.) $)
+      negrebd $p |- ( ph -> A e. RR ) $=
+        ( cneg cr wcel cc wb negreb syl mpbid ) ABEFGZBFGZDABHGMNICBJKL $.
+    $}
+
+    pncand.2 $e |- ( ph -> B e. CC ) $.
+    $( Closure law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subcld $p |- ( ph -> ( A - B ) e. CC ) $=
+      ( cc wcel cmin co subcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    pncand $p |- ( ph -> ( ( A + B ) - B ) = A ) $=
+      ( cc wcel caddc co cmin wceq pncan syl2anc ) ABFGCFGBCHICJIBKDEBCLM $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    pncan2d $p |- ( ph -> ( ( A + B ) - A ) = B ) $=
+      ( cc wcel caddc co cmin wceq pncan2 syl2anc ) ABFGCFGBCHIBJICKDEBCLM $.
+
+    $( Subtraction and addition of equals.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    pncan3d $p |- ( ph -> ( A + ( B - A ) ) = B ) $=
+      ( cc wcel cmin co caddc wceq pncan3 syl2anc ) ABFGCFGBCBHIJICKDEBCLM $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    npcand $p |- ( ph -> ( ( A - B ) + B ) = A ) $=
+      ( cc wcel cmin co caddc wceq npcan syl2anc ) ABFGCFGBCHICJIBKDEBCLM $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nncand $p |- ( ph -> ( A - ( A - B ) ) = B ) $=
+      ( cc wcel cmin co wceq nncan syl2anc ) ABFGCFGBBCHIHICJDEBCKL $.
+
+    $( Relationship between subtraction and negative.  Theorem I.3 of [Apostol]
+       p. 18.  (Contributed by Mario Carneiro, 27-May-2016.) $)
+    negsubd $p |- ( ph -> ( A + -u B ) = ( A - B ) ) $=
+      ( cc wcel cneg caddc co cmin wceq negsub syl2anc ) ABFGCFGBCHIJBCKJLDEBCM
+      N $.
+
+    $( Relationship between subtraction and negative.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    subnegd $p |- ( ph -> ( A - -u B ) = ( A + B ) ) $=
+      ( cc wcel cneg cmin co caddc wceq subneg syl2anc ) ABFGCFGBCHIJBCKJLDEBCM
+      N $.
+
+    ${
+      subeq0d.3 $e |- ( ph -> ( A - B ) = 0 ) $.
+      $( If the difference between two numbers is zero, they are equal.
+         (Contributed by Mario Carneiro, 27-May-2016.) $)
+      subeq0d $p |- ( ph -> A = B ) $=
+        ( cmin co cc0 wceq cc wcel wb subeq0 syl2anc mpbid ) ABCGHIJZBCJZFABKLC
+        KLQRMDEBCNOP $.
+    $}
+
+    ${
+      subne0d.3 $e |- ( ph -> A =/= B ) $.
+      $( Two unequal numbers have nonzero difference.  (Contributed by Mario
+         Carneiro, 1-Jan-2017.) $)
+      subne0d $p |- ( ph -> ( A - B ) =/= 0 ) $=
+        ( cmin co cc0 wne cc wcel wceq wb subeq0 syl2anc necon3bid mpbird ) ABC
+        GHZIJBCJFASIBCABKLCKLSIMBCMNDEBCOPQR $.
+    $}
+
+    ${
+      $( The difference of two complex numbers is zero iff they are equal.
+         Deduction form of ~ subeq0 .  Generalization of ~ subeq0d .
+         (Contributed by David Moews, 28-Feb-2017.) $)
+      subeq0ad $p |- ( ph -> ( ( A - B ) = 0 <-> A = B ) ) $=
+        ( cc wcel cmin co cc0 wceq wb subeq0 syl2anc ) ABFGCFGBCHIJKBCKLDEBCMN
+        $.
+    $}
+
+    ${
+      subne0ad.3 $e |- ( ph -> ( A - B ) =/= 0 ) $.
+      $( If the difference of two complex numbers is nonzero, they are
+         unequal.  Converse of ~ subne0d .  Contrapositive of ~ subeq0bd .
+         (Contributed by David Moews, 28-Feb-2017.) $)
+      subne0ad $p |- ( ph -> A =/= B ) $=
+        ( cmin co cc0 wne subeq0ad necon3bid mpbid ) ABCGHZIJBCJFANIBCABCDEKLM
+        $.
+    $}
+
+    ${
+      neg11d.3 $e |- ( ph -> -u A = -u B ) $.
+      $( If the difference between two numbers is zero, they are equal.
+         (Contributed by Mario Carneiro, 27-May-2016.) $)
+      neg11d $p |- ( ph -> A = B ) $=
+        ( cneg wceq neg11ad mpbid ) ABGCGHBCHFABCDEIJ $.
+    $}
+
+    $( Distribution of negative over addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    negdid $p |- ( ph -> -u ( A + B ) = ( -u A + -u B ) ) $=
+      ( cc wcel caddc co cneg wceq negdi syl2anc ) ABFGCFGBCHIJBJCJHIKDEBCLM $.
+
+    $( Distribution of negative over addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    negdi2d $p |- ( ph -> -u ( A + B ) = ( -u A - B ) ) $=
+      ( cc wcel caddc co cneg cmin wceq negdi2 syl2anc ) ABFGCFGBCHIJBJCKILDEBC
+      MN $.
+
+    $( Distribution of negative over subtraction.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    negsubdid $p |- ( ph -> -u ( A - B ) = ( -u A + B ) ) $=
+      ( cc wcel cmin co cneg caddc wceq negsubdi syl2anc ) ABFGCFGBCHIJBJCKILDE
+      BCMN $.
+
+    $( Distribution of negative over subtraction.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    negsubdi2d $p |- ( ph -> -u ( A - B ) = ( B - A ) ) $=
+      ( cc wcel cmin co cneg wceq negsubdi2 syl2anc ) ABFGCFGBCHIJCBHIKDEBCLM
+      $.
+
+    $( Relationship between subtraction and negative.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    neg2subd $p |- ( ph -> ( -u A - -u B ) = ( B - A ) ) $=
+      ( cc wcel cneg cmin co wceq neg2sub syl2anc ) ABFGCFGBHCHIJCBIJKDEBCLM $.
+
+    subaddd.3 $e |- ( ph -> C e. CC ) $.
+    $( Relationship between subtraction and addition.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    subaddd $p |- ( ph -> ( ( A - B ) = C <-> ( B + C ) = A ) ) $=
+      ( cc wcel cmin co wceq caddc wb subadd syl3anc ) ABHICHIDHIBCJKDLCDMKBLNE
+      FGBCDOP $.
+
+    $( Relationship between subtraction and addition.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    subadd2d $p |- ( ph -> ( ( A - B ) = C <-> ( C + B ) = A ) ) $=
+      ( cc wcel cmin co wceq caddc wb subadd2 syl3anc ) ABHICHIDHIBCJKDLDCMKBLN
+      EFGBCDOP $.
+
+    $( Associative-type law for subtraction and addition.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    addsubassd $p |- ( ph -> ( ( A + B ) - C ) = ( A + ( B - C ) ) ) $=
+      ( cc wcel caddc co cmin wceq addsubass syl3anc ) ABHICHIDHIBCJKDLKBCDLKJK
+      MEFGBCDNO $.
+
+    $( Law for subtraction and addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addsubd $p |- ( ph -> ( ( A + B ) - C ) = ( ( A - C ) + B ) ) $=
+      ( cc wcel caddc co cmin wceq addsub syl3anc ) ABHICHIDHIBCJKDLKBDLKCJKMEF
+      GBCDNO $.
+
+    $( Commutative/associative law for addition and subtraction.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    subadd23d $p |- ( ph -> ( ( A - B ) + C ) = ( A + ( C - B ) ) ) $=
+      ( cc wcel cmin co caddc wceq subadd23 syl3anc ) ABHICHIDHIBCJKDLKBDCJKLKM
+      EFGBCDNO $.
+
+    $( Commutative/associative law for addition and subtraction.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    addsub12d $p |- ( ph -> ( A + ( B - C ) ) = ( B + ( A - C ) ) ) $=
+      ( cc wcel cmin co caddc wceq addsub12 syl3anc ) ABHICHIDHIBCDJKLKCBDJKLKM
+      EFGBCDNO $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    npncand $p |- ( ph -> ( ( A - B ) + ( B - C ) ) = ( A - C ) ) $=
+      ( cc wcel cmin co caddc wceq npncan syl3anc ) ABHICHIDHIBCJKCDJKLKBDJKMEF
+      GBCDNO $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nppcand $p |- ( ph -> ( ( ( A - B ) + C ) + B ) = ( A + C ) ) $=
+      ( cc wcel cmin co caddc wceq nppcan syl3anc ) ABHICHIDHIBCJKDLKCLKBDLKMEF
+      GBCDNO $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nppcan2d $p |- ( ph -> ( ( A - ( B + C ) ) + C ) = ( A - B ) ) $=
+      ( cc wcel caddc co cmin wceq nppcan2 syl3anc ) ABHICHIDHIBCDJKLKDJKBCLKME
+      FGBCDNO $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nppcan3d $p |- ( ph -> ( ( A - B ) + ( C + B ) ) = ( A + C ) ) $=
+      ( cc wcel cmin co caddc wceq nppcan3 syl3anc ) ABHICHIDHIBCJKDCLKLKBDLKME
+      FGBCDNO $.
+
+    $( Law for double subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subsubd $p |- ( ph -> ( A - ( B - C ) ) = ( ( A - B ) + C ) ) $=
+      ( cc wcel cmin co caddc wceq subsub syl3anc ) ABHICHIDHIBCDJKJKBCJKDLKMEF
+      GBCDNO $.
+
+    $( Law for double subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subsub2d $p |- ( ph -> ( A - ( B - C ) ) = ( A + ( C - B ) ) ) $=
+      ( cc wcel cmin co caddc wceq subsub2 syl3anc ) ABHICHIDHIBCDJKJKBDCJKLKME
+      FGBCDNO $.
+
+    $( Law for double subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subsub3d $p |- ( ph -> ( A - ( B - C ) ) = ( ( A + C ) - B ) ) $=
+      ( cc wcel cmin co caddc wceq subsub3 syl3anc ) ABHICHIDHIBCDJKJKBDLKCJKME
+      FGBCDNO $.
+
+    $( Law for double subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    subsub4d $p |- ( ph -> ( ( A - B ) - C ) = ( A - ( B + C ) ) ) $=
+      ( cc wcel cmin co caddc wceq subsub4 syl3anc ) ABHICHIDHIBCJKDJKBCDLKJKME
+      FGBCDNO $.
+
+    $( Swap the second and third terms in a double subtraction.  (Contributed
+       by Mario Carneiro, 27-May-2016.) $)
+    sub32d $p |- ( ph -> ( ( A - B ) - C ) = ( ( A - C ) - B ) ) $=
+      ( cc wcel cmin co wceq sub32 syl3anc ) ABHICHIDHIBCJKDJKBDJKCJKLEFGBCDMN
+      $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nnncand $p |- ( ph -> ( ( A - ( B - C ) ) - C ) = ( A - B ) ) $=
+      ( cc wcel cmin co wceq nnncan syl3anc ) ABHICHIDHIBCDJKJKDJKBCJKLEFGBCDMN
+      $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nnncan1d $p |- ( ph -> ( ( A - B ) - ( A - C ) ) = ( C - B ) ) $=
+      ( cc wcel cmin co wceq nnncan1 syl3anc ) ABHICHIDHIBCJKBDJKJKDCJKLEFGBCDM
+      N $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    nnncan2d $p |- ( ph -> ( ( A - C ) - ( B - C ) ) = ( A - B ) ) $=
+      ( cc wcel cmin co wceq nnncan2 syl3anc ) ABHICHIDHIBDJKCDJKJKBCJKLEFGBCDM
+      N $.
+
+    $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    npncan3d $p |- ( ph -> ( ( A - B ) + ( C - A ) ) = ( C - B ) ) $=
+      ( cc wcel cmin co caddc wceq npncan3 syl3anc ) ABHICHIDHIBCJKDBJKLKDCJKME
+      FGBCDNO $.
+
+    $( Cancellation law for mixed addition and subtraction.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    pnpcand $p |- ( ph -> ( ( A + B ) - ( A + C ) ) = ( B - C ) ) $=
+      ( cc wcel caddc co cmin wceq pnpcan syl3anc ) ABHICHIDHIBCJKBDJKLKCDLKMEF
+      GBCDNO $.
+
+    $( Cancellation law for mixed addition and subtraction.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    pnpcan2d $p |- ( ph -> ( ( A + C ) - ( B + C ) ) = ( A - B ) ) $=
+      ( cc wcel caddc co cmin wceq pnpcan2 syl3anc ) ABHICHIDHIBDJKCDJKLKBCLKME
+      FGBCDNO $.
+
+    $( Cancellation law for mixed addition and subtraction.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    pnncand $p |- ( ph -> ( ( A + B ) - ( A - C ) ) = ( B + C ) ) $=
+      ( cc wcel caddc co cmin wceq pnncan syl3anc ) ABHICHIDHIBCJKBDLKLKCDJKMEF
+      GBCDNO $.
+
+    $( Cancellation law for mixed addition and subtraction.  (Contributed by
+       Mario Carneiro, 27-May-2016.) $)
+    ppncand $p |- ( ph -> ( ( A + B ) + ( C - B ) ) = ( A + C ) ) $=
+      ( cc wcel caddc co cmin wceq ppncan syl3anc ) ABHICHIDHIBCJKDCLKJKBDJKMEF
+      GBCDNO $.
+
+    ${
+      subcand.4 $e |- ( ph -> ( A - B ) = ( A - C ) ) $.
+      $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+         27-May-2016.) $)
+      subcand $p |- ( ph -> B = C ) $=
+        ( cmin co wceq cc wcel wb subcan syl3anc mpbid ) ABCIJBDIJKZCDKZHABLMCL
+        MDLMRSNEFGBCDOPQ $.
+    $}
+
+    ${
+      subcan2d.4 $e |- ( ph -> ( A - C ) = ( B - C ) ) $.
+      $( Cancellation law for subtraction.  (Contributed by Mario Carneiro,
+         22-Sep-2016.) $)
+      subcan2d $p |- ( ph -> A = B ) $=
+        ( cmin co wceq cc wcel wb subcan2 syl3anc mpbid ) ABDIJCDIJKZBCKZHABLMC
+        LMDLMRSNEFGBCDOPQ $.
+    $}
+
+    $( Cancellation law for subtraction.  Deduction form of ~ subcan .
+       Generalization of ~ subcand .  (Contributed by David Moews,
+       28-Feb-2017.) $)
+    subcanad $p |- ( ph -> ( ( A - B ) = ( A - C ) <-> B = C ) ) $=
+      ( cc wcel cmin co wceq wb subcan syl3anc ) ABHICHIDHIBCJKBDJKLCDLMEFGBCDN
+      O $.
+
+    ${
+      subneintrd.4 $e |- ( ph -> B =/= C ) $.
+      $( Introducing subtraction on both sides of a statement of inequality.
+         Contrapositive of ~ subcand .  (Contributed by David Moews,
+         28-Feb-2017.) $)
+      subneintrd $p |- ( ph -> ( A - B ) =/= ( A - C ) ) $=
+        ( cmin co wne subcanad necon3bid mpbird ) ABCIJZBDIJZKCDKHAOPCDABCDEFGL
+        MN $.
+    $}
+
+    ${
+      $( Cancellation law for subtraction.  Deduction form of ~ subcan2 .
+         Generalization of ~ subcan2d .  (Contributed by David Moews,
+         28-Feb-2017.) $)
+      subcan2ad $p |- ( ph -> ( ( A - C ) = ( B - C ) <-> A = B ) ) $=
+        ( cc wcel cmin co wceq wb subcan2 syl3anc ) ABHICHIDHIBDJKCDJKLBCLMEFGB
+        CDNO $.
+    $}
+
+    ${
+      subneintr2d.4 $e |- ( ph -> A =/= B ) $.
+      $( Introducing subtraction on both sides of a statement of inequality.
+         Contrapositive of ~ subcan2d .  (Contributed by David Moews,
+         28-Feb-2017.) $)
+      subneintr2d $p |- ( ph -> ( A - C ) =/= ( B - C ) ) $=
+        ( cmin co wne subcan2ad necon3bid mpbird ) ABDIJZCDIJZKBCKHAOPBCABCDEFG
+        LMN $.
+    $}
+
+    addsub4d.4 $e |- ( ph -> D e. CC ) $.
+    $( Rearrangement of 4 terms in a mixed addition and subtraction.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    addsub4d $p |- ( ph ->
+                ( ( A + B ) - ( C + D ) ) = ( ( A - C ) + ( B - D ) ) ) $=
+      ( cc wcel caddc co cmin wceq addsub4 syl22anc ) ABJKCJKDJKEJKBCLMDELMNMBD
+      NMCENMLMOFGHIBCDEPQ $.
+
+    $( Rearrangement of 4 terms in a mixed addition and subtraction.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    subadd4d $p |- ( ph ->
+                ( ( A - B ) - ( C - D ) ) = ( ( A + D ) - ( B + C ) ) ) $=
+      ( cc wcel cmin co caddc wceq subadd4 syl22anc ) ABJKCJKDJKEJKBCLMDELMLMBE
+      NMCDNMLMOFGHIBCDEPQ $.
+
+    $( Rearrangement of 4 terms in a subtraction.  (Contributed by Mario
+       Carneiro, 27-May-2016.) $)
+    sub4d $p |- ( ph ->
+                ( ( A - B ) - ( C - D ) ) = ( ( A - C ) - ( B - D ) ) ) $=
+      ( cc wcel cmin co wceq sub4 syl22anc ) ABJKCJKDJKEJKBCLMDELMLMBDLMCELMLMN
+      FGHIBCDEOP $.
+
+    $( Law for subtraction and addition.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    2addsubd $p |- ( ph ->
+      ( ( ( A + B ) + C ) - D ) = ( ( ( A + C ) - D ) + B ) ) $=
+      ( cc wcel caddc co cmin wceq 2addsub syl22anc ) ABJKCJKDJKEJKBCLMDLMENMBD
+      LMENMCLMOFGHIBCDEPQ $.
+
+    $( Relation between sums and differences.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    addsubeq4d $p |- ( ph ->
+        ( ( A + B ) = ( C + D ) <-> ( C - A ) = ( B - D ) ) ) $=
+      ( cc wcel caddc co wceq cmin wb addsubeq4 syl22anc ) ABJKCJKDJKEJKBCLMDEL
+      MNDBOMCEOMNPFGHIBCDEQR $.
+  $}
+
+  $( Reverse the order of subtraction in an equality.  (Contributed by Scott
+     Fenton, 8-Jul-2013.) $)
+  subeqrev $p |- ( ( ( A e. CC /\ B e. CC ) /\ ( C e. CC /\ D e. CC ) ) ->
+    ( ( A - B ) = ( C - D ) <-> ( B - A ) = ( D - C ) ) ) $=
+    ( cc wcel wa cmin co cneg wb subcl neg11 syl2an negsubdi2 eqeqan12d bitr3d
+    wceq ) AEFBEFGZCEFDEFGZGABHIZJZCDHIZJZRZUAUCRZBAHIZDCHIZRSUAEFUCEFUEUFKTABL
+    CDLUAUCMNSTUBUGUDUHABOCDOPQ $.
+
+  $( Cancellation law for addition and subtraction with 1.  (Contributed by
+     Alexander van der Vekens, 3-Oct-2018.) $)
+  pncan1 $p |- ( A e. CC -> ( ( A + 1 ) - 1 ) = A ) $=
+    ( cc wcel c1 id ax-1cn a1i pncand ) ABCZADIEDBCIFGH $.
+
+  $( Cancellation law for subtraction and addition with 1.  (Contributed by
+     Alexander van der Vekens, 5-Oct-2018.) $)
+  npcan1 $p |- ( A e. CC -> ( ( A - 1 ) + 1 ) = A ) $=
+    ( cc wcel c1 id ax-1cn a1i npcand ) ABCZADIEDBCIFGH $.
+
+  ${
+    subeq0bd.1 $e |- ( ph -> A e. CC ) $.
+    subeq0bd.2 $e |- ( ph -> A = B ) $.
+    $( If two complex numbers are equal, their difference is zero.  Consequence
+       of ~ subeq0ad .  Converse of ~ subeq0d .  Contrapositive of
+       ~ subne0ad .  (Contributed by David Moews, 28-Feb-2017.) $)
+    subeq0bd $p |- ( ph -> ( A - B ) = 0 ) $=
+      ( cmin co cc0 wceq cc eqeltrrd subeq0ad mpbird ) ABCFGHIBCIEABCDABCJEDKLM
+      $.
+  $}
+
+  ${
+    renegcld.1 $e |- ( ph -> A e. RR ) $.
+    $( Closure law for negative of reals.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    renegcld $p |- ( ph -> -u A e. RR ) $=
+      ( cr wcel cneg renegcl syl ) ABDEBFDECBGH $.
+
+    resubcld.2 $e |- ( ph -> B e. RR ) $.
+    $( Closure law for subtraction of reals.  (Contributed by Mario Carneiro,
+       27-May-2016.) $)
+    resubcld $p |- ( ph -> ( A - B ) e. RR ) $=
+      ( cr wcel cmin co resubcl syl2anc ) ABFGCFGBCHIFGDEBCJK $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
