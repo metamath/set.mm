@@ -66598,6 +66598,16 @@ $)
       ( cneg wnfc wtru a1i nfnegd trud ) ABDEFABABEFCGHI $.
   $}
 
+  ${
+    $d y z A $.  $d y z B $.  $d y z C $.  $d x y z $.
+    $( Move class substitution in and out of the negative of a number.
+       (Contributed by NM, 1-Mar-2008.)  (Proof shortened by Andrew Salmon,
+       22-Oct-2011.) $)
+    csbnegg $p |- ( A e. V -> [_ A / x ]_ -u B = -u [_ A / x ]_ B ) $=
+      ( wcel cc0 cmin co csb cneg csbov2g df-neg csbeq2i 3eqtr4g ) BDEABFCGHZIF
+      ABCIZGHABCJZIPJABFCGDKABQOCLMPLN $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
