@@ -67064,6 +67064,35 @@ $)
     ( cc wcel wa cneg cmin co caddc wceq negcl sylan negsubdi negsubdi2 3eqtr2d
     subneg ) ACDZBCDZEAFZBFGHZSBIHZABGHFBAGHQSCDRTUAJAKSBPLABMABNO $.
 
+  ${
+    $d A x $.
+    $( Closure law for negative of reals.  (Contributed by NM, 20-Jan-1997.) $)
+    renegcl $p |- ( A e. RR -> -u A e. RR ) $=
+      ( vx cr wcel cv caddc co cc0 wceq wrex cneg ax-rnegex wa recn cmin df-neg
+      cc wb eqeq1i 0cn subadd mp3an1 syl5bb sylan2 wi eleq1a adantl sylbird mpd
+      sylan rexlimdva ) ACDZABEZFGHIZBCJAKZCDZBALULUNUPBCULUMCDZMUNUOUMIZUPUQUL
+      UMQDZURUNRUMNURHAOGZUMIZULUSMUNUOUTUMAPSULAQDZUSVAUNRZANHQDVBUSVCTHAUMUAU
+      BUJUCUDUQURUPUEULUMCUOUFUGUHUKUI $.
+  $}
+
+  ${
+    $d x A $.
+    renegcl.1 $e |- A e. RR $.
+    $( Closure law for negative of reals.  (Note: this inference proof style
+       and the deduction theorem usage in ~ renegcl is deprecated, but is
+       retained for its demonstration value.)  (Contributed by NM,
+       17-Jan-1997.)  (Proof shortened by Andrew Salmon, 22-Oct-2011.) $)
+    renegcli $p |- -u A e. RR $=
+      ( cr wcel cneg renegcl ax-mp ) ACDAECDBAFG $.
+
+    resubcl.2 $e |- B e. RR $.
+    $( Closure law for subtraction of reals.  (Contributed by NM,
+       17-Jan-1997.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+    resubcli $p |- ( A - B ) e. RR $=
+      ( cneg caddc co cmin cr cc wcel wceq recni negsub mp2an renegcli readdcli
+      eqeltrri ) ABEZFGZABHGZIAJKBJKTUALACMBDMABNOASCBDPQR $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
