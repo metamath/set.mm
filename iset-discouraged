@@ -161,6 +161,7 @@
 "snexgOLD" is used by "uniop".
 "spimh" is used by "spim".
 "spimth" is used by "equveli".
+New usage of "0cnALT" is discouraged (0 uses).
 New usage of "19.21h" is discouraged (3 uses).
 New usage of "19.21ht" is discouraged (2 uses).
 New usage of "19.41h" is discouraged (5 uses).
@@ -258,6 +259,7 @@ New usage of "spimth" is discouraged (1 uses).
 New usage of "strcollnfALT" is discouraged (0 uses).
 New usage of "truanOLD" is discouraged (0 uses).
 New usage of "xpexgALT" is discouraged (0 uses).
+Proof modification of "0cnALT" is discouraged (49 steps).
 Proof modification of "a9evsep" is discouraged (63 steps).
 Proof modification of "ax9vsep" is discouraged (19 steps).
 Proof modification of "axi12" is discouraged (47 steps).

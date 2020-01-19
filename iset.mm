@@ -66524,6 +66524,14 @@ $)
     $}
   $}
 
+  $( Alternate proof of ~ 0cn .  (Contributed by NM, 19-Feb-2005.)  (Revised by
+     Mario Carneiro, 27-May-2016.)  (Proof modification is discouraged.)
+     (New usage is discouraged.) $)
+  0cnALT $p |- 0 e. CC $=
+    ( vx ci cv caddc co cc0 wceq wrex wcel ax-icn cnegex ax-mp addcl mpan eleq1
+    cc syl5ibcom rexlimiv ) BACZDEZFGZAPHZFPIZBPIZUBJABKLUAUCAPSPIZTPIZUAUCUDUE
+    UFJBSMNTFPOQRL $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
