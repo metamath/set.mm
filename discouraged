@@ -6732,7 +6732,6 @@
 "h2hvs" is used by "h2hmetdval".
 "h2hvs" is used by "hhvs".
 "halfnq" is used by "nsmallnq".
-"hashiunOLD" is used by "hashuniOLD".
 "hatomic" is used by "atomli".
 "hatomici" is used by "atcvat4i".
 "hatomici" is used by "atcvatlem".
@@ -15808,7 +15807,6 @@ New usage of "frlmsslspOLD" is discouraged (0 uses).
 New usage of "frlmsslss2OLD" is discouraged (2 uses).
 New usage of "frlmssuvc1OLD" is discouraged (0 uses).
 New usage of "frlmssuvc2OLD" is discouraged (0 uses).
-New usage of "fsumiunOLD" is discouraged (0 uses).
 New usage of "fsuppeq" is discouraged (1 uses).
 New usage of "funadj" is discouraged (4 uses).
 New usage of "funcnvadj" is discouraged (1 uses).
@@ -15996,8 +15994,6 @@ New usage of "h2hsm" is discouraged (9 uses).
 New usage of "h2hva" is discouraged (9 uses).
 New usage of "h2hvs" is discouraged (2 uses).
 New usage of "halfnq" is discouraged (1 uses).
-New usage of "hashiunOLD" is discouraged (1 uses).
-New usage of "hashuniOLD" is discouraged (0 uses).
 New usage of "hatomic" is discouraged (1 uses).
 New usage of "hatomici" is discouraged (6 uses).
 New usage of "hatomistici" is discouraged (1 uses).
@@ -19196,9 +19192,9 @@ Proof modification of "frlmsslspOLD" is discouraged (1226 steps).
 Proof modification of "frlmsslss2OLD" is discouraged (183 steps).
 Proof modification of "frlmssuvc1OLD" is discouraged (307 steps).
 Proof modification of "frlmssuvc2OLD" is discouraged (383 steps).
-Proof modification of "fsumiunOLD" is discouraged (39 steps).
 Proof modification of "funcnvmptOLD" is discouraged (291 steps).
 Proof modification of "funsnfsupOLD" is discouraged (107 steps).
+Proof modification of "fusgraimpclALT2" is discouraged (106 steps).
 Proof modification of "fvimacnvALT" is discouraged (102 steps).
 Proof modification of "gen11" is discouraged (27 steps).
 Proof modification of "gen11nv" is discouraged (14 steps).
@@ -19243,8 +19239,6 @@ Proof modification of "gsumzresOLD" is discouraged (600 steps).
 Proof modification of "gsumzsplitOLD" is discouraged (1051 steps).
 Proof modification of "gsumzsubmclOLD" is discouraged (195 steps).
 Proof modification of "hashge3el3dif" is discouraged (226 steps).
-Proof modification of "hashiunOLD" is discouraged (36 steps).
-Proof modification of "hashuniOLD" is discouraged (40 steps).
 Proof modification of "haustsmsidOLD" is discouraged (46 steps).
 Proof modification of "hbae-o" is discouraged (85 steps).
 Proof modification of "hbalg" is discouraged (31 steps).
@@ -19772,8 +19766,12 @@ Proof modification of "unipwr" is discouraged (32 steps).
 Proof modification of "unipwrVD" is discouraged (41 steps).
 Proof modification of "unisnALT" is discouraged (146 steps).
 Proof modification of "usgfis" is discouraged (612 steps).
+Proof modification of "usgfisALT" is discouraged (496 steps).
 Proof modification of "usgra2adedgwlkonALT" is discouraged (389 steps).
+Proof modification of "usgrafiedgALT" is discouraged (68 steps).
 Proof modification of "usgrafisbaseALT" is discouraged (100 steps).
+Proof modification of "usgrafisbaseALT2" is discouraged (100 steps).
+Proof modification of "usgsizedgALT2" is discouraged (124 steps).
 Proof modification of "uun0.1" is discouraged (32 steps).
 Proof modification of "uun111" is discouraged (26 steps).
 Proof modification of "uun121" is discouraged (12 steps).
