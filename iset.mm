@@ -66638,6 +66638,66 @@ $)
       HJUCHJOUDUCMFUEHBUDUCPUDUCQRSCAHHUEHMCABTUAUB $.
   $}
 
+  ${
+    $d x y A $.  $d x y B $.  $d x y C $.
+    $( Relationship between subtraction and addition.  (Contributed by NM,
+       20-Jan-1997.)  (Revised by Mario Carneiro, 21-Dec-2013.) $)
+    subadd $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                  ( ( A - B ) = C <-> ( B + C ) = A ) ) $=
+      ( vx cc wcel w3a cmin co wceq cv caddc crio wb subval eqeq1d 3adant3 wreu
+      wa negeu oveq2 riota2 sylan2 3impb 3com13 bitr4d ) AEFZBEFZCEFZGABHIZCJZB
+      DKZLIZAJZDEMZCJZBCLIZAJZUGUHUKUPNUIUGUHSUJUOCDABOPQUIUHUGURUPNZUIUHUGUSUH
+      UGSUIUNDERUSDBATUNURDECULCJUMUQAULCBLUAPUBUCUDUEUF $.
+  $}
+
+  $( Relationship between subtraction and addition.  (Contributed by Scott
+     Fenton, 5-Jul-2013.)  (Proof shortened by Mario Carneiro, 27-May-2016.) $)
+  subadd2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+            ( ( A - B ) = C <-> ( C + B ) = A ) ) $=
+    ( cc wcel w3a cmin co wceq caddc subadd simp2 simp3 addcomd eqeq1d bitrd )
+    ADEZBDEZCDEZFZABGHCIBCJHZAICBJHZAIABCKTUAUBATBCQRSLQRSMNOP $.
+
+  $( Swap subtrahend and result of subtraction.  (Contributed by NM,
+     14-Dec-2007.) $)
+  subsub23 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                ( ( A - B ) = C <-> ( A - C ) = B ) ) $=
+    ( cc wcel caddc co wceq cmin addcom 3adant1 eqeq1d subadd wb 3com23 3bitr4d
+    w3a ) ADEZBDEZCDEZQZBCFGZAHCBFGZAHZABIGCHACIGBHZUAUBUCASTUBUCHRBCJKLABCMRTS
+    UEUDNACBMOP $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 10-May-2004.)
+     (Revised by Mario Carneiro, 27-May-2016.) $)
+  pncan $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A + B ) - B ) = A ) $=
+    ( cc wcel wa caddc co cmin wceq simpr simpl addcomd wb addcl subadd syl3anc
+    mpbird ) ACDZBCDZEZABFGZBHGAIZBAFGUAIZTBARSJZRSKZLTUACDSRUBUCMABNUDUEUABAOP
+    Q $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 17-Apr-2005.) $)
+  pncan2 $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A + B ) - A ) = B ) $=
+    ( cc wcel caddc co cmin wceq wa addcom oveq1d pncan eqtr3d ancoms ) BCDZACD
+    ZABEFZAGFZBHOPIZBAEFZAGFRBSTQAGBAJKBALMN $.
+
+  $( Subtraction and addition of equals.  (Contributed by NM, 14-Mar-2005.) $)
+  pncan3 $p |- ( ( A e. CC /\ B e. CC ) -> ( A + ( B - A ) ) = B ) $=
+    ( cc wcel wa cmin co wceq caddc eqid simpr simpl subcl ancoms syl3anc mpbii
+    wb subadd ) ACDZBCDZEZBAFGZUBHZAUBIGBHZUBJUATSUBCDZUCUDQSTKSTLTSUEBAMNBAUBR
+    OP $.
+
+  $( Cancellation law for subtraction.  (Contributed by NM, 10-May-2004.)
+     (Revised by Mario Carneiro, 27-May-2016.) $)
+  npcan $p |- ( ( A e. CC /\ B e. CC ) -> ( ( A - B ) + B ) = A ) $=
+    ( cc wcel wa cmin co caddc subcl simpr addcomd wceq pncan3 ancoms eqtrd ) A
+    CDZBCDZEZABFGZBHGBSHGZARSBABIPQJKQPTALBAMNO $.
+
+  $( Associative-type law for addition and subtraction.  (Contributed by NM,
+     6-Aug-2003.)  (Revised by Mario Carneiro, 27-May-2016.) $)
+  addsubass $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                   ( ( A + B ) - C ) = ( A + ( B - C ) ) ) $=
+    ( cc wcel cmin co caddc simp1 subcl 3adant1 simp3 addassd wceq npcan oveq2d
+    w3a eqtrd oveq1d addcld pncan syl2anc eqtr3d ) ADEZBDEZCDEZQZABCFGZHGZCHGZC
+    FGZABHGZCFGUIUGUJULCFUGUJAUHCHGZHGULUGAUHCUDUEUFIZUEUFUHDEUDBCJKZUDUEUFLZMU
+    GUMBAHUEUFUMBNUDBCOKPRSUGUIDEUFUKUINUGAUHUNUOTUPUICUAUBUC $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
