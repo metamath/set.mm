@@ -66301,6 +66301,47 @@ $)
   $}
 
 $(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+        Subtraction
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+$)
+
+  $( Declare symbols needed for some defined terms. $)
+  $c - $. $( Subtraction (binary minus). $)
+  $c -u $. $( Unary minus sign. $)
+
+  $( Extend class notation to include subtraction. $)
+  cmin $a class - $.
+
+  $( Extend class notation to include unary minus.  The symbol ` -u ` is not a
+     class by itself but part of a compound class definition.  We do this
+     rather than making it a formal function since it is so commonly used.
+     Note:  We use different symbols for unary minus ( ` -u ` ) and subtraction
+     ~ cmin ( ` - ` ) to prevent syntax ambiguity.  For example, looking at the
+     syntax definition ~ co , if we used the same symbol
+     then " ` ( - A - B ) ` " could mean either " ` - A ` " minus " ` B ` ", or
+     it could represent the (meaningless) operation of
+     classes " ` - ` " and " ` - B ` " connected with "operation" " ` A ` ".
+     On the other hand, " ` ( -u A - B ) ` " is unambiguous. $)
+  cneg $a class -u A $.
+
+  ${
+    $d x y z $.
+    $( Define subtraction.  Theorem ~ subval shows its value (and describes how
+       this definition works), theorem ~ subaddi relates it to addition, and
+       theorems ~ subcli and ~ resubcli prove its closure laws.  (Contributed
+       by NM, 26-Nov-1994.) $)
+    df-sub $a |- - = ( x e. CC , y e. CC |->
+                   ( iota_ z e. CC ( y + z ) = x ) ) $.
+  $}
+
+  $( Define the negative of a number (unary minus).  We use different symbols
+     for unary minus ( ` -u ` ) and subtraction ( ` - ` ) to prevent syntax
+     ambiguity.  See ~ cneg for a discussion of this.  (Contributed by NM,
+     10-Feb-1995.) $)
+  df-neg $a |- -u A = ( 0 - A ) $.
+
+$(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -67343,6 +67384,16 @@ htmldef "<" as
     " <IMG SRC='lt.gif' WIDTH=11 HEIGHT=19 ALT=' &lt;' TITLE='&lt;'> ";
   althtmldef "<" as ' &lt; ';
   latexdef "<" as "<";
+htmldef "-" as
+    " <IMG SRC='minus.gif' WIDTH=11 HEIGHT=19 ALT=' -' TITLE='-'> ";
+  althtmldef "-" as ' &minus; ';
+  latexdef "-" as "-";
+htmldef "-u" as
+    "<IMG SRC='shortminus.gif' WIDTH=8 HEIGHT=19 ALT=' -u' TITLE='-u'>";
+    /* use standard minus sign */
+  althtmldef "-u" as '-';
+  latexdef "-u" as "\textrm{-}"; /* short minus */
+    /*latexdef "-u" as "-_u";*/
 htmldef "\/_" as
     " <IMG SRC='veebar.gif' WIDTH=9 HEIGHT=19 ALT=' \/_' TITLE='\/_'> ";
   althtmldef "\/_" as " &#8891; ";
