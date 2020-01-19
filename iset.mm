@@ -66162,7 +66162,7 @@ $)
     addcomd $p |- ( ph -> ( A + B ) = ( B + A ) ) $=
       ( cc wcel caddc co wceq addcom syl2anc ) ABFGCFGBCHICBHIJDEBCKL $.
 
-    addcand.3 $e |- ( ph -> C e. CC ) $.
+    mul12d.3 $e |- ( ph -> C e. CC ) $.
     $( Commutative/associative law that swaps the first two factors in a triple
        product.  (Contributed by Mario Carneiro, 27-May-2016.) $)
     mul12d $p |- ( ph -> ( A x. ( B x. C ) ) = ( B x. ( A x. C ) ) ) $=
@@ -66420,6 +66420,108 @@ $)
     cnegex2 $p |- ( A e. CC -> E. x e. CC ( x + A ) = 0 ) $=
       ( cc wcel cv caddc co cc0 wceq wrex cnegex addcom eqeq1d rexbidva mpbid
       wa ) BCDZBAEZFGZHIZACJRBFGZHIZACJABKQTUBACQRCDPSUAHBRLMNO $.
+  $}
+
+  ${
+    $d x y A $.  $d x B $.  $d x C $.
+    $( Cancellation law for addition.  Theorem I.1 of [Apostol] p. 18.
+       (Contributed by NM, 22-Nov-1994.)  (Proof shortened by Mario Carneiro,
+       27-May-2016.) $)
+    addcan $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                   ( ( A + B ) = ( A + C ) <-> B = C ) ) $=
+      ( vx cc wcel w3a cv caddc co cc0 wceq wb wa oveq1d addassd addid2 3eqtr3d
+      oveq2 syl wrex cnegex2 3ad2ant1 simprr simprl simpl1 simpl2 simpl3 syl5ib
+      eqeq12d impbid1 rexlimddv ) AEFZBEFZCEFZGZDHZAIJZKLZABIJZACIJZLZBCLZMDEUM
+      UNUSDEUAUODAUBUCUPUQEFZUSNZNZVBVCVBUQUTIJZUQVAIJZLVFVCUTVAUQISVFVGBVHCVFU
+      RBIJKBIJZVGBVFURKBIUPVDUSUDZOVFUQABUPVDUSUEZUMUNUOVEUFZUMUNUOVEUGZPVFUNVI
+      BLVMBQTRVFURCIJKCIJZVHCVFURKCIVJOVFUQACVKVLUMUNUOVEUHZPVFUOVNCLVOCQTRUJUI
+      BCAISUKUL $.
+
+    $( Cancellation law for addition.  (Contributed by NM, 30-Jul-2004.)
+       (Revised by Scott Fenton, 3-Jan-2013.) $)
+    addcan2 $p |- ( ( A e. CC /\ B e. CC /\ C e. CC ) ->
+                    ( ( A + C ) = ( B + C ) <-> A = B ) ) $=
+      ( vx cc wcel w3a cv caddc co cc0 wb wa oveq1 addassd oveq2d addid1 3eqtrd
+      wceq syl wrex cnegex 3ad2ant3 simpl1 simpl3 simprl simprr eqeq12d impbid1
+      simpl2 syl5ib rexlimddv ) AEFZBEFZCEFZGZCDHZIJZKSZACIJZBCIJZSZABSZLDEUOUM
+      USDEUAUNDCUBUCUPUQEFZUSMZMZVBVCVBUTUQIJZVAUQIJZSVFVCUTVAUQINVFVGAVHBVFVGA
+      URIJAKIJZAVFACUQUMUNUOVEUDZUMUNUOVEUEZUPVDUSUFZOVFURKAIUPVDUSUGZPVFUMVIAS
+      VJAQTRVFVHBURIJBKIJZBVFBCUQUMUNUOVEUJZVKVLOVFURKBIVMPVFUNVNBSVOBQTRUHUKAB
+      CINUIUL $.
+  $}
+
+  ${
+    addcani.1 $e |- A e. CC $.
+    addcani.2 $e |- B e. CC $.
+    addcani.3 $e |- C e. CC $.
+    $( Cancellation law for addition.  Theorem I.1 of [Apostol] p. 18.
+       (Contributed by NM, 27-Oct-1999.)  (Revised by Scott Fenton,
+       3-Jan-2013.) $)
+    addcani $p |- ( ( A + B ) = ( A + C ) <-> B = C ) $=
+      ( cc wcel caddc co wceq wb addcan mp3an ) AGHBGHCGHABIJACIJKBCKLDEFABCMN
+      $.
+
+    $( Cancellation law for addition.  Theorem I.1 of [Apostol] p. 18.
+       (Contributed by NM, 14-May-2003.)  (Revised by Scott Fenton,
+       3-Jan-2013.) $)
+    addcan2i $p |- ( ( A + C ) = ( B + C ) <-> A = B ) $=
+      ( cc wcel caddc co wceq wb addcan2 mp3an ) AGHBGHCGHACIJBCIJKABKLDEFABCMN
+      $.
+  $}
+
+  ${
+    addcand.1 $e |- ( ph -> A e. CC ) $.
+    addcand.2 $e |- ( ph -> B e. CC ) $.
+    addcand.3 $e |- ( ph -> C e. CC ) $.
+    $( Cancellation law for addition.  Theorem I.1 of [Apostol] p. 18.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    addcand $p |- ( ph -> ( ( A + B ) = ( A + C ) <-> B = C ) ) $=
+      ( cc wcel caddc co wceq wb addcan syl3anc ) ABHICHIDHIBCJKBDJKLCDLMEFGBCD
+      NO $.
+
+    $( Cancellation law for addition.  Theorem I.1 of [Apostol] p. 18.
+       (Contributed by Mario Carneiro, 27-May-2016.) $)
+    addcan2d $p |- ( ph -> ( ( A + C ) = ( B + C ) <-> A = B ) ) $=
+      ( cc wcel caddc co wceq wb addcan2 syl3anc ) ABHICHIDHIBDJKCDJKLBCLMEFGBC
+      DNO $.
+
+    ${
+      addcanad.4 $e |- ( ph -> ( A + B ) = ( A + C ) ) $.
+      $( Cancelling a term on the left-hand side of a sum in an equality.
+         Consequence of ~ addcand .  (Contributed by David Moews,
+         28-Feb-2017.) $)
+      addcanad $p |- ( ph -> B = C ) $=
+        ( caddc co wceq addcand mpbid ) ABCIJBDIJKCDKHABCDEFGLM $.
+    $}
+
+    ${
+      addcan2ad.4 $e |- ( ph -> ( A + C ) = ( B + C ) ) $.
+      $( Cancelling a term on the right-hand side of a sum in an equality.
+         Consequence of ~ addcan2d .  (Contributed by David Moews,
+         28-Feb-2017.) $)
+      addcan2ad $p |- ( ph -> A = B ) $=
+        ( caddc co wceq addcan2d mpbid ) ABDIJCDIJKBCKHABCDEFGLM $.
+    $}
+
+    ${
+      addneintrd.4 $e |- ( ph -> B =/= C ) $.
+      $( Introducing a term on the left-hand side of a sum in a negated
+         equality.  Contrapositive of ~ addcanad .  Consequence of ~ addcand .
+         (Contributed by David Moews, 28-Feb-2017.) $)
+      addneintrd $p |- ( ph -> ( A + B ) =/= ( A + C ) ) $=
+        ( caddc co wne addcand necon3bid mpbird ) ABCIJZBDIJZKCDKHAOPCDABCDEFGL
+        MN $.
+    $}
+
+    ${
+      addneintr2d.4 $e |- ( ph -> A =/= B ) $.
+      $( Introducing a term on the right-hand side of a sum in a negated
+         equality.  Contrapositive of ~ addcan2ad .  Consequence of
+         ~ addcan2d .  (Contributed by David Moews, 28-Feb-2017.) $)
+      addneintr2d $p |- ( ph -> ( A + C ) =/= ( B + C ) ) $=
+        ( caddc co wne addcan2d necon3bid mpbird ) ABDIJZCDIJZKBCKHAOPBCABCDEFG
+        LMN $.
+    $}
   $}
 
 $(
