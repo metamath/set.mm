@@ -66341,6 +66341,88 @@ $)
      10-Feb-1995.) $)
   df-neg $a |- -u A = ( 0 - A ) $.
 
+  ${
+    $d a b c d x y z A $.  $d x B $.  $d x C $.
+    $( Addition cancellation of a real number from two complex numbers.  Lemma
+       for ~ cnegex .  (Contributed by Eric Schmidt, 22-May-2007.) $)
+    cnegexlem1 $p |- ( ( A e. RR /\ B e. CC /\ C e. CC ) ->
+                  ( ( A + B ) = ( A + C ) <-> B = C ) ) $=
+      ( vx cr wcel cc caddc co wceq cc0 wi recn wa oveq2 addassd eqeq12d adantl
+      wb oveq1 w3a wrex ax-rnegex 3ad2ant1 simpr simpll simplrl simplrr syl5ibr
+      cv adantr addcom eqeq1d adantlr addid2 eqeqan12d ad2antrr bitrd ex sylbid
+      imp sylibd sylan2 rexlimdva 3impb syl3an1 mpd impbid1 ) AEFZBGFZCGFZUAZAB
+      HIZACHIZJZBCJZVLADUJZHIZKJZDEUBZVOVPLZVIVJVTVKDAUCUDVIAGFZVJVKVTWALZAMWBV
+      JVKWCWBVJVKNZNZVSWADEVQEFWEVQGFZVSWALVQMWEWFNZVSWAWGVSNVOVQAHIZBHIZWHCHIZ
+      JZVPWGVOWKLVSVOWKWGVQVMHIZVQVNHIZJVMVNVQHOWGWIWLWJWMWGVQABWEWFUEZWBWDWFUF
+      ZWBVJVKWFUGPWGVQACWNWOWBVJVKWFUHPQUIUKWGVSWKVPSZWGVSWHKJZWPWBWFVSWQSWDWBW
+      FNVRWHKAVQULUMUNWGWQWPWGWQNWKKBHIZKCHIZJZVPWQWKWTSWGWQWIWRWJWSWHKBHTWHKCH
+      TQRWEWTVPSZWFWQWDXAWBVJVKWRBWSCBUOCUOUPRUQURUSUTVAVBUSVCVDVEVFVGBCAHOVH
+      $.
+
+    $( Existence of a real number which produces a real number when multiplied
+       by ` _i ` .  (Hint: zero is such a number, although we don't need to
+       prove that yet).  Lemma for ~ cnegex .  (Contributed by Eric Schmidt,
+       22-May-2007.) $)
+    cnegexlem2 $p |- E. y e. RR ( _i x. y ) e. RR $=
+      ( vx vz cc wcel cv ci cmul co caddc wceq cr wrex wa wi adantr recn addid2
+      cc0 oveq1 0cn cnre ax-rnegex ax-icn mulcl sylancr 3ad2ant3 ad2antrl add32
+      w3a 3com23 eqcomd sylan9eq adantrl 3ad2ant2 eqtr3d ex syl3an 3expa simplr
+      3eqtr3d imp eqeltrrd exp32 rexlimdva mpd reximdva rexlimiv mp2b ) SDESBFZ
+      GAFZHIZJIZKZALMZBLMVLLEZALMZUABASUBVOVQBLVJLEZVNVPALVRVKLEZNZVJCFZJIZSKZC
+      LMZVNVPOZVRWDVSCVJUCPVTWCWECLVTWALEZNZWCVNVPWGWCVNNZNWAVLLWGWHWAVLKZVRVSW
+      FWHWIOZVRVJDEZVSVLDEZWFWADEZWJVJQVSGDEVKDEWLUDVKQGVKUEUFWAQWKWLWMUJZWHWIW
+      NWHNZSWAJIZWAVLWNWPWAKZWHWMWKWQWLWARUGPWOWBVLJIZSVLJIZWPVLWCWRWSKWNVNWBSV
+      LJTUHWNVNWRWPKWCWNVNWRVMWAJIZWPWKWMWLWRWTKVJWAVLUIUKVNWPWTSVMWAJTULUMUNWN
+      WSVLKZWHWLWKXAWMVLRUOPVAUPUQURUSVBVTWFWHUTVCVDVEVFVGVHVI $.
+
+    $( Existence of real number difference.  Lemma for ~ cnegex .  (Contributed
+       by Eric Schmidt, 22-May-2007.) $)
+    cnegexlem3 $p |- ( ( b e. RR /\ y e. RR ) -> E. c e. RR ( b + c ) = y ) $=
+      ( vx cv cr wcel wa caddc co wceq wrex ax-rnegex adantlr adantr cc wb recn
+      cc0 anim1i readdcl anim12i add32 3expa addcl addcom sylan eqtr2d adantllr
+      syl sylanl2 ancoms sylan2 id sylan9eq adantlll eqeq12d simpllr cnegexlem1
+      an32s simplr syl3anc bitr3d syl2an rexbidva mpbid adantl r19.29a ) BEZFGZ
+      AEZFGZHZVKDEZIJZSKZVICEZIJZVKKZCFLZDFVMVNFGZHZVPHZVIVNIJZVQIJZSKZCFLZVTWB
+      WGVPVJWAWGVLVJWAHWDFGWGVIVNUACWDMUJNOWCWFVSCFWCVIPGZVKPGZHZWAHZVPHZVQPGZW
+      FVSQVQFGWBWKVPVMWJWAVJWHVLWIVIRVKRUBTTVQRWLWMHZVNVRIJZVNVKIJZKZWFVSWNWOWE
+      WPSWKWMWOWEKZVPWHWAWMWRWIWAWHVNPGZWMWRVNRZWHWSHWMHWEVRVNIJZWOWHWSWMWEXAKV
+      IVNVQUCUDWHWMWSXAWOKZWHWMHVRPGZWSXBVIVQUEZVRVNUFUGUTUHUKUINWLWPSKZWMWIWAV
+      PXEWHWIWAHVPWPVOSWAWIWSWPVOKZWTWSWIXFVNVKUFULUMVPUNUOUPOUQWKWMWQVSQZVPWKW
+      MHWAXCWIXGWJWAWMVAWJWMXCWAWHWMXCWIXDNNWHWIWAWMURVNVRVKUSVBNVCVDVEVFVLVPDF
+      LVJDVKMVGVH $.
+
+    $( Existence of the negative of a complex number.  (Contributed by Eric
+       Schmidt, 21-May-2007.) $)
+    cnegex $p |- ( A e. CC -> E. x e. CC ( A + x ) = 0 ) $=
+      ( va vb vy vc vd cc wcel cv ci cmul co caddc wceq cr wrex cc0 wa ax-icn
+      cnre cnegexlem2 cnegexlem3 ad2ant2lr mulcl sylancr syl2an adantlr adantll
+      addcl adantr anim12i sylan2 ad2antrr ad2antlr simpr addassd simpll adantl
+      recn mpan adddi mp3an1 oveq2d eqtr4d oveq1d eqtr3d adantlrr eqtr2d eqeq1d
+      oveq2 biimpa rspcev syl2anc readdcl ax-rnegex ad2ant2rl r19.29a rexlimddv
+      adantllr syl rexlimdvaa mpi oveq1 rexbidv syl5ibrcom rexlimivv ) BHIBCJZK
+      DJZLMZNMZOZDPQCPQBAJZNMZROZAHQZCDBUAWLWPCDPPWHPIZWIPIZSZWPWLWKWMNMZROZAHQ
+      ZWSKEJZLMZPIZEPQXBEUBWSXEXBEPWSXCPIZXESZSZWIFJZNMZXCOZXBFPWRXFXKFPQWQXEED
+      FUCUDXHXIPIZXKSZSZWHXDNMZGJZNMZROZXBGPXNXPPIZSZXRSKXILMZXPNMZHIZWKYBNMZRO
+      ZXBXTYCXRXMXSYCXHXLXSYCXKXLYAHIZXPHIZYCXSXLKHIZXIHIZYFTXIUTZKXIUEZUFXPUTZ
+      YAXPUJUGUHUIUKXTXRYEXTXQYDRWSXMXSXQYDOXGWSXMSXSSYDWHKXJLMZNMZXPNMZXQWSXLX
+      SYDYOOZXKWSXLSWHHIZWIHIZSZYISZYGYPXSWSYSXLYIWQYQWRYRWHUTWIUTULYJULYLYTYGS
+      ZWKYANMZXPNMYDYOUUAWKYAXPYSWKHIZYIYGYRYQWJHIZUUCYHYRUUDTKWIUEVAZWHWJUJUMU
+      NYIYFYSYGYHYIYFTYKVAZUOYTYGUPUQUUAUUBYNXPNYTUUBYNOYGYTUUBWHWJYANMZNMYNYTW
+      HWJYAYQYRYIURYRUUDYQYIUUEUOYIYFYSUUFUSUQYTYMUUGWHNYRYIYMUUGOZYQYHYRYIUUHT
+      KWIXIVBVCUIVDVEUKVFVGUGVHXMYOXQOZWSXSXKUUIXLXKYNXOXPNXKYMXDWHNXJXCKLVKVDV
+      FUSUOVIVTVJVLXAYEAYBHWMYBOWTYDRWMYBWKNVKVJVMVNXHXRGPQZXMWQXEUUJWRXFWQXESX
+      OPIUUJWHXDVOGXOVPWAVQUKVRVSWBWCWLWOXAAHWLWNWTRBWKWMNWDVJWEWFWGWA $.
+  $}
+
+  ${
+    $d A x $.
+    $( Existence of a left inverse for addition.  (Contributed by Scott Fenton,
+       3-Jan-2013.) $)
+    cnegex2 $p |- ( A e. CC -> E. x e. CC ( x + A ) = 0 ) $=
+      ( cc wcel cv caddc co cc0 wceq wrex cnegex addcom eqeq1d rexbidva mpbid
+      wa ) BCDZBAEZFGZHIZACJRBFGZHIZACJABKQTUBACQRCDPSUAHBRLMNO $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
