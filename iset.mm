@@ -66547,6 +66547,19 @@ $)
       UGZUJVQCWAUKULUHVQBVEVLVSVKVPRVQVBCVTWAUIUMUNUOVGAEVLUPUQUR $.
   $}
 
+  ${
+    $d x y z A $.  $d x y z B $.
+    $( Value of subtraction, which is the (unique) element ` x ` such that
+       ` B + x = A ` .  (Contributed by NM, 4-Aug-2007.)  (Revised by Mario
+       Carneiro, 2-Nov-2013.) $)
+    subval $p |- ( ( A e. CC /\ B e. CC ) ->
+                  ( A - B ) = ( iota_ x e. CC ( B + x ) = A ) ) $=
+      ( vy vz cc wcel cv caddc co wceq crio cmin wa negeu riotacl syl riotabidv
+      wreu ancoms eqeq2 oveq1 eqeq1d df-sub ovmpt2g mpd3an3 ) BFGZCFGZCAHZIJZBK
+      ZAFLZFGZBCMJULKUHUGUMUHUGNUKAFSUMACBOUKAFPQTDEBCFFEHZUIIJZDHZKZAFLULMUOBK
+      ZAFLFUPBKUQURAFUPBUOUARUNCKZURUKAFUSUOUJBUNCUIIUBUCRDEAUDUEUF $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
