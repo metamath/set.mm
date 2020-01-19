@@ -66623,6 +66623,21 @@ $)
     ( cc wcel cneg cc0 cmin co df-neg 0cn subcl mpan syl5eqel ) ABCZADEAFGZBAHE
     BCMNBCIEAJKL $.
 
+  $( ` -u _i ` is a complex number (common case).  (Contributed by David A.
+     Wheeler, 7-Dec-2018.) $)
+  negicn $p |- -u _i e. CC $=
+    ( ci cc wcel cneg ax-icn negcl ax-mp ) ABCADBCEAFG $.
+
+  ${
+    $d x y z $.
+    $( Subtraction is an operation on the complex numbers.  (Contributed by NM,
+       4-Aug-2007.)  (Revised by Mario Carneiro, 16-Nov-2013.) $)
+    subf $p |- - : ( CC X. CC ) --> CC $=
+      ( vy vz vx cv caddc co wceq cc crio wcel wral cxp cmin wf wa subval subcl
+      eqeltrrd rgen2a df-sub fmpt2 mpbi ) ADZBDEFCDZGBHIZHJZAHKCHKHHLHMNUFCAHUD
+      HJUCHJOUDUCMFUEHBUDUCPUDUCQRSCAHHUEHMCABTUAUB $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
