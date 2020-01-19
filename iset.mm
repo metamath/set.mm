@@ -66532,6 +66532,21 @@ $)
     cc syl5ibcom rexlimiv ) BACZDEZFGZAPHZFPIZBPIZUBJABKLUAUCAPSPIZTPIZUAUCUDUE
     UFJBSMNTFPOQRL $.
 
+  ${
+    $d x y A $.  $d x y B $.
+    $( Existential uniqueness of negatives.  Theorem I.2 of [Apostol] p. 18.
+       (Contributed by NM, 22-Nov-1994.)  (Proof shortened by Mario Carneiro,
+       27-May-2016.) $)
+    negeu $p |- ( ( A e. CC /\ B e. CC ) -> E! x e. CC ( A + x ) = B ) $=
+      ( vy cc wcel wa cv caddc co wceq wreu wrex cnegex adantr wral simpl simpr
+      cc0 wb addcl syl2anr simplrr oveq1d simplll simplrl simpllr eqeq2d addcld
+      addassd addid2d 3eqtr3rd addcand bitrd ralrimiva reu6i syl2anc rexlimddv
+      ) BEFZCEFZGZBDHZIJZSKZBAHZIJZCKZAELZDEUSVDDEMUTDBNOVAVBEFZVDGZGZVBCIJZEFZ
+      VGVEVLKZTZAEPVHVJVIUTVMVAVIVDQUSUTRVBCUAUBVKVOAEVKVEEFZGZVGVFBVLIJZKVNVQC
+      VRVFVQVCCIJSCIJVRCVQVCSCIVAVIVDVPUCUDVQBVBCUSUTVJVPUEZVAVIVDVPUFZUSUTVJVP
+      UGZUJVQCWAUKULUHVQBVEVLVSVKVPRVQVBCVTWAUIUMUNUOVGAEVLUPUQUR $.
+  $}
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
