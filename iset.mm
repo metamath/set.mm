@@ -66608,6 +66608,21 @@ $)
       ABCIZGHABCJZIPJABFCGDKABQOCLMPLN $.
   $}
 
+  ${
+    $d x A $.  $d x B $.
+    $( Closure law for subtraction.  (Contributed by NM, 10-May-1999.)
+       (Revised by Mario Carneiro, 21-Dec-2013.) $)
+    subcl $p |- ( ( A e. CC /\ B e. CC ) -> ( A - B ) e. CC ) $=
+      ( vx cc wcel wa cmin co cv caddc wceq crio subval wreu ancoms riotacl syl
+      negeu eqeltrd ) ADEZBDEZFZABGHBCIJHAKZCDLZDCABMUBUCCDNZUDDEUATUECBAROUCCD
+      PQS $.
+  $}
+
+  $( Closure law for negative.  (Contributed by NM, 6-Aug-2003.) $)
+  negcl $p |- ( A e. CC -> -u A e. CC ) $=
+    ( cc wcel cneg cc0 cmin co df-neg 0cn subcl mpan syl5eqel ) ABCZADEAFGZBAHE
+    BCMNBCIEAJKL $.
+
 $(
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
        Appendix:  Typesetting definitions for the tokens in this file
