@@ -17756,6 +17756,8 @@ New usage of "rb-ax3" is discouraged (8 uses).
 New usage of "rb-ax4" is discouraged (6 uses).
 New usage of "rb-bijust" is discouraged (1 uses).
 New usage of "rb-imdf" is discouraged (4 uses).
+New usage of "rbaibOLD" is discouraged (0 uses).
+New usage of "rbaibrOLD" is discouraged (0 uses).
 New usage of "rblem1" is discouraged (4 uses).
 New usage of "rblem2" is discouraged (3 uses).
 New usage of "rblem3" is discouraged (1 uses).
@@ -19566,6 +19568,8 @@ Proof modification of "rb-ax3" is discouraged (12 steps).
 Proof modification of "rb-ax4" is discouraged (14 steps).
 Proof modification of "rb-bijust" is discouraged (55 steps).
 Proof modification of "rb-imdf" is discouraged (27 steps).
+Proof modification of "rbaibOLD" is discouraged (16 steps).
+Proof modification of "rbaibrOLD" is discouraged (16 steps).
 Proof modification of "rblem1" is discouraged (57 steps).
 Proof modification of "rblem2" is discouraged (31 steps).
 Proof modification of "rblem3" is discouraged (29 steps).
